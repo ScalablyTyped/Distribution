@@ -13,7 +13,6 @@ object OptionBufferOutput {
   @scala.inline
   def apply(outputFormat: buffer): OptionBufferOutput = {
     val __obj = js.Dynamic.literal(outputFormat = outputFormat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OptionBufferOutput]
   }
 }

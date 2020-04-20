@@ -13,7 +13,6 @@ object DirectThreadFeedResponse300687565 {
   @scala.inline
   def apply(item_id: String, timestamp: String): DirectThreadFeedResponse300687565 = {
     val __obj = js.Dynamic.literal(item_id = item_id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectThreadFeedResponse300687565]
   }
 }

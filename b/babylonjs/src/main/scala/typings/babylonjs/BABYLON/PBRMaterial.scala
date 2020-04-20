@@ -280,7 +280,7 @@ class PBRMaterial protected () extends PBRBaseMaterial {
     * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
     * corresponding to low luminance, medium luminance, and high luminance areas respectively.
     */
-  def cameraColorCurves(): Nullable[ColorCurves] = js.native
+  def cameraColorCurves: Nullable[ColorCurves] = js.native
   /**
     * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
     * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
@@ -291,7 +291,7 @@ class PBRMaterial protected () extends PBRBaseMaterial {
   /**
     * Gets wether the color curves effect is enabled.
     */
-  def cameraColorCurvesEnabled(): Boolean = js.native
+  def cameraColorCurvesEnabled: Boolean = js.native
   /**
     * Sets wether the color curves effect is enabled.
     */
@@ -299,7 +299,7 @@ class PBRMaterial protected () extends PBRBaseMaterial {
   /**
     * Gets wether the color grading effect is enabled.
     */
-  def cameraColorGradingEnabled(): Boolean = js.native
+  def cameraColorGradingEnabled: Boolean = js.native
   /**
     * Gets wether the color grading effect is enabled.
     */
@@ -307,7 +307,7 @@ class PBRMaterial protected () extends PBRBaseMaterial {
   /**
     * Gets the Color Grading 2D Lookup Texture.
     */
-  def cameraColorGradingTexture(): Nullable[BaseTexture] = js.native
+  def cameraColorGradingTexture: Nullable[BaseTexture] = js.native
   /**
     * Sets the Color Grading 2D Lookup Texture.
     */
@@ -315,7 +315,7 @@ class PBRMaterial protected () extends PBRBaseMaterial {
   /**
     * Gets The camera contrast used on this material.
     */
-  def cameraContrast(): Double = js.native
+  def cameraContrast: Double = js.native
   /**
     * Sets The camera contrast used on this material.
     */
@@ -325,7 +325,7 @@ class PBRMaterial protected () extends PBRBaseMaterial {
     * This property is here and not in the camera to allow controlling exposure without full screen post process.
     * This corresponds to a photographic exposure.
     */
-  def cameraExposure(): Double = js.native
+  def cameraExposure: Double = js.native
   /**
     * The camera exposure used on this material.
     * This property is here and not in the camera to allow controlling exposure without full screen post process.
@@ -335,7 +335,7 @@ class PBRMaterial protected () extends PBRBaseMaterial {
   /**
     * Gets wether tonemapping is enabled or not.
     */
-  def cameraToneMappingEnabled(): Boolean = js.native
+  def cameraToneMappingEnabled: Boolean = js.native
   /**
     * Sets wether tonemapping is enabled or not
     */
@@ -343,7 +343,7 @@ class PBRMaterial protected () extends PBRBaseMaterial {
   /**
     * Gets the image processing configuration used either in this material.
     */
-  def imageProcessingConfiguration(): ImageProcessingConfiguration = js.native
+  def imageProcessingConfiguration: ImageProcessingConfiguration = js.native
   /**
     * Sets the Default image processing configuration used either in the this material.
     *
@@ -353,29 +353,29 @@ class PBRMaterial protected () extends PBRBaseMaterial {
   /**
     * source material index of refraction (IOR)' / 'destination material IOR.
     */
-  def indexOfRefraction(): Double = js.native
+  def indexOfRefraction: Double = js.native
   def indexOfRefraction(value: Double): js.Any = js.native
   /**
     * Controls if refraction needs to be inverted on Y. This could be useful for procedural texture.
     */
-  def invertRefractionY(): Boolean = js.native
+  def invertRefractionY: Boolean = js.native
   def invertRefractionY(value: Boolean): js.Any = js.native
   /**
     * This parameters will make the material used its opacity to control how much it is refracting aginst not.
     * Materials half opaque for instance using refraction could benefit from this control.
     */
-  def linkRefractionWithTransparency(): Boolean = js.native
+  def linkRefractionWithTransparency: Boolean = js.native
   def linkRefractionWithTransparency(value: Boolean): js.Any = js.native
   /**
     * Stores the refracted light information in a texture.
     */
-  def refractionTexture(): Nullable[BaseTexture] = js.native
+  def refractionTexture: Nullable[BaseTexture] = js.native
   def refractionTexture(value: Nullable[BaseTexture]): js.Any = js.native
   /**
     * In order to support the falloff compatibility with gltf, a special mode has been added
     * to reproduce the gltf light falloff.
     */
-  def useGLTFLightFalloff(): Boolean = js.native
+  def useGLTFLightFalloff: Boolean = js.native
   /**
     * In order to support the falloff compatibility with gltf, a special mode has been added
     * to reproduce the gltf light falloff.
@@ -386,7 +386,7 @@ class PBRMaterial protected () extends PBRBaseMaterial {
     * In PBR, one way to represents the fallof is to use the inverse squared root algorythm.
     * This parameter can help you switch back to the BJS mode in order to create scenes using both materials.
     */
-  def usePhysicalLightFalloff(): Boolean = js.native
+  def usePhysicalLightFalloff: Boolean = js.native
   /**
     * BJS is using an harcoded light falloff based on a manually sets up range.
     * In PBR, one way to represents the fallof is to use the inverse squared root algorythm.

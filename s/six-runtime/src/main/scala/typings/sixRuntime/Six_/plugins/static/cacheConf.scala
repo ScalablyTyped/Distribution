@@ -24,7 +24,6 @@ object cacheConf {
     maxAge: Double
   ): cacheConf = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], defer = defer.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], gzip = gzip.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], maxAge = maxAge.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[cacheConf]
   }
 }

@@ -15,7 +15,6 @@ object EventCall {
   @scala.inline
   def apply[T](headers: EventHttpHeaders, params: T, statusCode: Double, url: EventUrl): EventCall[T] = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventCall[T]]
   }
 }

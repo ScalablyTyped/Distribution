@@ -15,7 +15,6 @@ object AnonDefaultSequence {
   @scala.inline
   def apply(defaultSequence: String, enabled: Boolean, items: AnonKeystrokeSequence, obfuscation: Double): AnonDefaultSequence = {
     val __obj = js.Dynamic.literal(defaultSequence = defaultSequence.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], obfuscation = obfuscation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefaultSequence]
   }
 }

@@ -18,22 +18,20 @@ trait ScaleInterpolateEnum extends ScaleInterpolate
 
 object ScaleInterpolateEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cubehelix: typings.vegaTypings.vegaTypingsStrings.cubehelix = "cubehelix".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cubehelix]
   @scala.inline
-  def cubehelix: typings.vegaTypings.vegaTypingsStrings.cubehelix = this.cast("cubehelix")
+  def `cubehelix-long`: typings.vegaTypings.vegaTypingsStrings.`cubehelix-long` = "cubehelix-long".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`cubehelix-long`]
   @scala.inline
-  def `cubehelix-long`: typings.vegaTypings.vegaTypingsStrings.`cubehelix-long` = this.cast("cubehelix-long")
+  def hcl: typings.vegaTypings.vegaTypingsStrings.hcl = "hcl".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.hcl]
   @scala.inline
-  def hcl: typings.vegaTypings.vegaTypingsStrings.hcl = this.cast("hcl")
+  def `hcl-long`: typings.vegaTypings.vegaTypingsStrings.`hcl-long` = "hcl-long".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`hcl-long`]
   @scala.inline
-  def `hcl-long`: typings.vegaTypings.vegaTypingsStrings.`hcl-long` = this.cast("hcl-long")
+  def hsl: typings.vegaTypings.vegaTypingsStrings.hsl = "hsl".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.hsl]
   @scala.inline
-  def hsl: typings.vegaTypings.vegaTypingsStrings.hsl = this.cast("hsl")
+  def `hsl-long`: typings.vegaTypings.vegaTypingsStrings.`hsl-long` = "hsl-long".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`hsl-long`]
   @scala.inline
-  def `hsl-long`: typings.vegaTypings.vegaTypingsStrings.`hsl-long` = this.cast("hsl-long")
+  def lab: typings.vegaTypings.vegaTypingsStrings.lab = "lab".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.lab]
   @scala.inline
-  def lab: typings.vegaTypings.vegaTypingsStrings.lab = this.cast("lab")
-  @scala.inline
-  def rgb: typings.vegaTypings.vegaTypingsStrings.rgb = this.cast("rgb")
+  def rgb: typings.vegaTypings.vegaTypingsStrings.rgb = "rgb".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rgb]
 }
 

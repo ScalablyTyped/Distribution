@@ -26,38 +26,36 @@ trait ActivityType extends js.Object
 
 object ActivityType {
   @scala.inline
-  def addToReadingList: typings.reactNativeShare.reactNativeShareStrings.addToReadingList = this.cast("addToReadingList")
+  def addToReadingList: typings.reactNativeShare.reactNativeShareStrings.addToReadingList = "addToReadingList".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.addToReadingList]
   @scala.inline
-  def airDrop: typings.reactNativeShare.reactNativeShareStrings.airDrop = this.cast("airDrop")
+  def airDrop: typings.reactNativeShare.reactNativeShareStrings.airDrop = "airDrop".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.airDrop]
   @scala.inline
-  def assignToContact: typings.reactNativeShare.reactNativeShareStrings.assignToContact = this.cast("assignToContact")
+  def assignToContact: typings.reactNativeShare.reactNativeShareStrings.assignToContact = "assignToContact".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.assignToContact]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def copyToPasteBoard: typings.reactNativeShare.reactNativeShareStrings.copyToPasteBoard = "copyToPasteBoard".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.copyToPasteBoard]
   @scala.inline
-  def copyToPasteBoard: typings.reactNativeShare.reactNativeShareStrings.copyToPasteBoard = this.cast("copyToPasteBoard")
+  def mail: typings.reactNativeShare.reactNativeShareStrings.mail = "mail".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.mail]
   @scala.inline
-  def mail: typings.reactNativeShare.reactNativeShareStrings.mail = this.cast("mail")
+  def markupAsPDF: typings.reactNativeShare.reactNativeShareStrings.markupAsPDF = "markupAsPDF".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.markupAsPDF]
   @scala.inline
-  def markupAsPDF: typings.reactNativeShare.reactNativeShareStrings.markupAsPDF = this.cast("markupAsPDF")
+  def message: typings.reactNativeShare.reactNativeShareStrings.message = "message".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.message]
   @scala.inline
-  def message: typings.reactNativeShare.reactNativeShareStrings.message = this.cast("message")
+  def openInIBooks: typings.reactNativeShare.reactNativeShareStrings.openInIBooks = "openInIBooks".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.openInIBooks]
   @scala.inline
-  def openInIBooks: typings.reactNativeShare.reactNativeShareStrings.openInIBooks = this.cast("openInIBooks")
+  def postToFacebook: typings.reactNativeShare.reactNativeShareStrings.postToFacebook = "postToFacebook".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.postToFacebook]
   @scala.inline
-  def postToFacebook: typings.reactNativeShare.reactNativeShareStrings.postToFacebook = this.cast("postToFacebook")
+  def postToFlickr: typings.reactNativeShare.reactNativeShareStrings.postToFlickr = "postToFlickr".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.postToFlickr]
   @scala.inline
-  def postToFlickr: typings.reactNativeShare.reactNativeShareStrings.postToFlickr = this.cast("postToFlickr")
+  def postToTencentWeibo: typings.reactNativeShare.reactNativeShareStrings.postToTencentWeibo = "postToTencentWeibo".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.postToTencentWeibo]
   @scala.inline
-  def postToTencentWeibo: typings.reactNativeShare.reactNativeShareStrings.postToTencentWeibo = this.cast("postToTencentWeibo")
+  def postToTwitter: typings.reactNativeShare.reactNativeShareStrings.postToTwitter = "postToTwitter".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.postToTwitter]
   @scala.inline
-  def postToTwitter: typings.reactNativeShare.reactNativeShareStrings.postToTwitter = this.cast("postToTwitter")
+  def postToVimeo: typings.reactNativeShare.reactNativeShareStrings.postToVimeo = "postToVimeo".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.postToVimeo]
   @scala.inline
-  def postToVimeo: typings.reactNativeShare.reactNativeShareStrings.postToVimeo = this.cast("postToVimeo")
+  def postToWeibo: typings.reactNativeShare.reactNativeShareStrings.postToWeibo = "postToWeibo".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.postToWeibo]
   @scala.inline
-  def postToWeibo: typings.reactNativeShare.reactNativeShareStrings.postToWeibo = this.cast("postToWeibo")
+  def print: typings.reactNativeShare.reactNativeShareStrings.print = "print".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.print]
   @scala.inline
-  def print: typings.reactNativeShare.reactNativeShareStrings.print = this.cast("print")
-  @scala.inline
-  def saveToCameraRoll: typings.reactNativeShare.reactNativeShareStrings.saveToCameraRoll = this.cast("saveToCameraRoll")
+  def saveToCameraRoll: typings.reactNativeShare.reactNativeShareStrings.saveToCameraRoll = "saveToCameraRoll".asInstanceOf[typings.reactNativeShare.reactNativeShareStrings.saveToCameraRoll]
 }
 

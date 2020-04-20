@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactTwitterAuthProps {
   @scala.inline
-  def ReactTwitterAuthProps: TwitterLoginProps.type = typings.reactTwitterAuth.mod.TwitterLoginProps
+  def ReactTwitterAuthProps: TwitterLoginProps.type = TwitterLoginProps
   type ReactTwitterAuthProps = TwitterLoginProps
 }
 

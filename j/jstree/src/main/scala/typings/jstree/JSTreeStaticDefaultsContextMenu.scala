@@ -52,7 +52,6 @@ object JSTreeStaticDefaultsContextMenu {
   @scala.inline
   def apply(items: js.Any, select_node: Boolean, show_at_node: Boolean): JSTreeStaticDefaultsContextMenu = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], select_node = select_node.asInstanceOf[js.Any], show_at_node = show_at_node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSTreeStaticDefaultsContextMenu]
   }
 }

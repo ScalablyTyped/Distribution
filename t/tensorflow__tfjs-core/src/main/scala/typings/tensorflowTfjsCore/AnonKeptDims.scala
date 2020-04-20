@@ -13,7 +13,6 @@ object AnonKeptDims {
   @scala.inline
   def apply(keptDims: js.Array[Double], newShape: js.Array[Double]): AnonKeptDims = {
     val __obj = js.Dynamic.literal(keptDims = keptDims.asInstanceOf[js.Any], newShape = newShape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKeptDims]
   }
 }

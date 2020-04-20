@@ -5,6 +5,7 @@ import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.jsonSchema.mod.JSONSchema4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,13 +41,13 @@ object mod extends js.Object {
     ]
   ): Unit = js.native
   def validate(schemas: StringDictionary[JSONSchema4]): js.Function3[
-    /* req */ Request_[ParamsDictionary], 
+    /* req */ Request_[ParamsDictionary, _, _, Query], 
     /* res */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native
   def validate(schemas: StringDictionary[JSONSchema4], schemaDependencies: js.Array[JSONSchema4]): js.Function3[
-    /* req */ Request_[ParamsDictionary], 
+    /* req */ Request_[ParamsDictionary, _, _, Query], 
     /* res */ Response_[_], 
     /* next */ NextFunction, 
     Unit

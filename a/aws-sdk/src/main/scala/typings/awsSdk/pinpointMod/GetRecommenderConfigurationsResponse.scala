@@ -13,7 +13,6 @@ object GetRecommenderConfigurationsResponse {
   @scala.inline
   def apply(ListRecommenderConfigurationsResponse: ListRecommenderConfigurationsResponse): GetRecommenderConfigurationsResponse = {
     val __obj = js.Dynamic.literal(ListRecommenderConfigurationsResponse = ListRecommenderConfigurationsResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRecommenderConfigurationsResponse]
   }
 }

@@ -16,7 +16,6 @@ object DeleteProjectRequest {
   @scala.inline
   def apply(ProjectArn: ProjectArn): DeleteProjectRequest = {
     val __obj = js.Dynamic.literal(ProjectArn = ProjectArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteProjectRequest]
   }
 }

@@ -16,7 +16,6 @@ object GetJobUnlockCodeRequest {
   @scala.inline
   def apply(JobId: JobId): GetJobUnlockCodeRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetJobUnlockCodeRequest]
   }
 }

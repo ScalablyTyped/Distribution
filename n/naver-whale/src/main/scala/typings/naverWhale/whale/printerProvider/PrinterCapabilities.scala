@@ -13,7 +13,6 @@ object PrinterCapabilities {
   @scala.inline
   def apply(capabilities: js.Any): PrinterCapabilities = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrinterCapabilities]
   }
 }

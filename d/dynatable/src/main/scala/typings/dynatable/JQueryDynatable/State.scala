@@ -32,7 +32,6 @@ object State {
   @scala.inline
   def apply(init: () => Unit, initOnLoad: () => Boolean, pop: Event_ => Unit, push: js.Object => Unit): State = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), pop = js.Any.fromFunction1(pop), push = js.Any.fromFunction1(push))
-  
     __obj.asInstanceOf[State]
   }
 }

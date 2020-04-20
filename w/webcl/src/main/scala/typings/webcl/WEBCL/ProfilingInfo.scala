@@ -19,14 +19,12 @@ trait ProfilingInfo extends js.Object
 
 object ProfilingInfo {
   @scala.inline
-  def PROFILING_COMMAND_END: `0x1283` = this.cast(0x1283)
+  def PROFILING_COMMAND_END: `0x1283` = 0x1283.asInstanceOf[`0x1283`]
   @scala.inline
-  def PROFILING_COMMAND_QUEUED: `0x1280` = this.cast(0x1280)
+  def PROFILING_COMMAND_QUEUED: `0x1280` = 0x1280.asInstanceOf[`0x1280`]
   @scala.inline
-  def PROFILING_COMMAND_START: `0x1282` = this.cast(0x1282)
+  def PROFILING_COMMAND_START: `0x1282` = 0x1282.asInstanceOf[`0x1282`]
   @scala.inline
-  def PROFILING_COMMAND_SUBMIT: `0x1281` = this.cast(0x1281)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PROFILING_COMMAND_SUBMIT: `0x1281` = 0x1281.asInstanceOf[`0x1281`]
 }
 

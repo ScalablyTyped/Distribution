@@ -110,114 +110,112 @@ trait XlFileFormat extends js.Object
 
 object XlFileFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAddIn: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def xlAddIn: `18` = this.cast(18)
+  def xlAddIn8: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def xlAddIn8: `18` = this.cast(18)
+  def xlCSV: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlCSV: `6` = this.cast(6)
+  def xlCSVMSDOS: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def xlCSVMSDOS: `24` = this.cast(24)
+  def xlCSVMac: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def xlCSVMac: `22` = this.cast(22)
+  def xlCSVWindows: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def xlCSVWindows: `23` = this.cast(23)
+  def xlCurrentPlatformText: `-4158` = -4158.asInstanceOf[`-4158`]
   @scala.inline
-  def xlCurrentPlatformText: `-4158` = this.cast(-4158)
+  def xlDBF2: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlDBF2: `7` = this.cast(7)
+  def xlDBF3: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlDBF3: `8` = this.cast(8)
+  def xlDBF4: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlDBF4: `11` = this.cast(11)
+  def xlDIF: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlDIF: `9` = this.cast(9)
+  def xlExcel12: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def xlExcel12: `50` = this.cast(50)
+  def xlExcel2: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlExcel2: `16` = this.cast(16)
+  def xlExcel2FarEast: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def xlExcel2FarEast: `27` = this.cast(27)
+  def xlExcel3: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def xlExcel3: `29` = this.cast(29)
+  def xlExcel4: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def xlExcel4: `33` = this.cast(33)
+  def xlExcel4Workbook: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def xlExcel4Workbook: `35` = this.cast(35)
+  def xlExcel5: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def xlExcel5: `39` = this.cast(39)
+  def xlExcel7: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def xlExcel7: `39` = this.cast(39)
+  def xlExcel8: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def xlExcel8: `56` = this.cast(56)
+  def xlExcel9795: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def xlExcel9795: `43` = this.cast(43)
+  def xlHtml: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def xlHtml: `44` = this.cast(44)
+  def xlIntlAddIn: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def xlIntlAddIn: `26` = this.cast(26)
+  def xlIntlMacro: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def xlIntlMacro: `25` = this.cast(25)
+  def xlOpenDocumentSpreadsheet: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def xlOpenDocumentSpreadsheet: `60` = this.cast(60)
+  def xlOpenXMLAddIn: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def xlOpenXMLAddIn: `55` = this.cast(55)
+  def xlOpenXMLTemplate: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def xlOpenXMLTemplate: `54` = this.cast(54)
+  def xlOpenXMLTemplateMacroEnabled: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def xlOpenXMLTemplateMacroEnabled: `53` = this.cast(53)
+  def xlOpenXMLWorkbook: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def xlOpenXMLWorkbook: `51` = this.cast(51)
+  def xlOpenXMLWorkbookMacroEnabled: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def xlOpenXMLWorkbookMacroEnabled: `52` = this.cast(52)
+  def xlSYLK: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlSYLK: `2` = this.cast(2)
+  def xlTemplate: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xlTemplate: `17` = this.cast(17)
+  def xlTemplate8: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xlTemplate8: `17` = this.cast(17)
+  def xlTextMSDOS: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def xlTextMSDOS: `21` = this.cast(21)
+  def xlTextMac: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def xlTextMac: `19` = this.cast(19)
+  def xlTextPrinter: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def xlTextPrinter: `36` = this.cast(36)
+  def xlTextWindows: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def xlTextWindows: `20` = this.cast(20)
+  def xlUnicodeText: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def xlUnicodeText: `42` = this.cast(42)
+  def xlWJ2WD1: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlWJ2WD1: `14` = this.cast(14)
+  def xlWJ3: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def xlWJ3: `40` = this.cast(40)
+  def xlWJ3FJ3: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def xlWJ3FJ3: `41` = this.cast(41)
+  def xlWK1: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlWK1: `5` = this.cast(5)
+  def xlWK1ALL: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def xlWK1ALL: `31` = this.cast(31)
+  def xlWK1FMT: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def xlWK1FMT: `30` = this.cast(30)
+  def xlWK3: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlWK3: `15` = this.cast(15)
+  def xlWK3FM3: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def xlWK3FM3: `32` = this.cast(32)
+  def xlWK4: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def xlWK4: `38` = this.cast(38)
+  def xlWKS: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlWKS: `4` = this.cast(4)
+  def xlWQ1: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def xlWQ1: `34` = this.cast(34)
+  def xlWebArchive: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def xlWebArchive: `45` = this.cast(45)
+  def xlWorkbookDefault: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def xlWorkbookDefault: `51` = this.cast(51)
+  def xlWorkbookNormal: `-4143` = -4143.asInstanceOf[`-4143`]
   @scala.inline
-  def xlWorkbookNormal: `-4143` = this.cast(-4143)
+  def xlWorks2FarEast: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def xlWorks2FarEast: `28` = this.cast(28)
-  @scala.inline
-  def xlXMLSpreadsheet: `46` = this.cast(46)
+  def xlXMLSpreadsheet: `46` = 46.asInstanceOf[`46`]
 }
 

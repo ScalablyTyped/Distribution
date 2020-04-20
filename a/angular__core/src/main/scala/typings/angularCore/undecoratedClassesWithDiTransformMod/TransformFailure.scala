@@ -14,7 +14,6 @@ object TransformFailure {
   @scala.inline
   def apply(message: String, node: Node): TransformFailure = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransformFailure]
   }
 }

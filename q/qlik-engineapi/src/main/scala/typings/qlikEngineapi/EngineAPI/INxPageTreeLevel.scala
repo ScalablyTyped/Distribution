@@ -20,7 +20,6 @@ object INxPageTreeLevel {
   @scala.inline
   def apply(qDepth: Double, qLeft: Double): INxPageTreeLevel = {
     val __obj = js.Dynamic.literal(qDepth = qDepth.asInstanceOf[js.Any], qLeft = qLeft.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxPageTreeLevel]
   }
 }

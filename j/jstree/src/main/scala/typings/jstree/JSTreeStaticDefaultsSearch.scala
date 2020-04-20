@@ -82,7 +82,6 @@ object JSTreeStaticDefaultsSearch {
     show_only_matches_children: Boolean
   ): JSTreeStaticDefaultsSearch = {
     val __obj = js.Dynamic.literal(ajax = ajax.asInstanceOf[js.Any], case_sensitive = case_sensitive.asInstanceOf[js.Any], close_opened_onclear = close_opened_onclear.asInstanceOf[js.Any], fuzzy = fuzzy.asInstanceOf[js.Any], search_callback = search_callback.asInstanceOf[js.Any], search_leaves_only = search_leaves_only.asInstanceOf[js.Any], show_only_matches = show_only_matches.asInstanceOf[js.Any], show_only_matches_children = show_only_matches_children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSTreeStaticDefaultsSearch]
   }
 }

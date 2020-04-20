@@ -13,12 +13,10 @@ trait DefaultFormats extends js.Object
 
 object DefaultFormats {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = "long".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.long]
   @scala.inline
-  def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = this.cast("long")
+  def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = "narrow".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow]
   @scala.inline
-  def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = this.cast("narrow")
-  @scala.inline
-  def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = this.cast("short")
+  def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = "short".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.short]
 }
 

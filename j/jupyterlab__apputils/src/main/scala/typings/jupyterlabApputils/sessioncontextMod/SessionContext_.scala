@@ -114,7 +114,7 @@ class SessionContext_ protected () extends ISessionContext {
     * A signal emitted when the kernel status changes, proxied from the kernel.
     */
   @JSName("connectionStatusChanged")
-  def connectionStatusChanged_MSessionContext_(): ISignal[this.type, ConnectionStatus] = js.native
+  def connectionStatusChanged_MSessionContext_ : ISignal[this.type, ConnectionStatus] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -132,27 +132,27 @@ class SessionContext_ protected () extends ISessionContext {
     * A signal emitted when the poll is disposed.
     */
   @JSName("disposed")
-  def disposed_MSessionContext_(): ISignal[this.type, Unit] = js.native
+  def disposed_MSessionContext_ : ISignal[this.type, Unit] = js.native
   /**
     * A signal emitted for iopub kernel messages, proxied from the kernel.
     */
   @JSName("iopubMessage")
-  def iopubMessage_MSessionContext_(): ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
+  def iopubMessage_MSessionContext_ : ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
   /**
     * Test whether the context is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MSessionContext_(): Boolean = js.native
+  def isDisposed_MSessionContext_ : Boolean = js.native
   /**
     * Whether the context is ready.
     */
   @JSName("isReady")
-  def isReady_MSessionContext_(): Boolean = js.native
+  def isReady_MSessionContext_ : Boolean = js.native
   /**
     * A signal emitted when the kernel connection changes, proxied from the session connection.
     */
   @JSName("kernelChanged")
-  def kernelChanged_MSessionContext_(): ISignal[this.type, IKernelChangedArgs] = js.native
+  def kernelChanged_MSessionContext_ : ISignal[this.type, IKernelChangedArgs] = js.native
   /**
     * The display name of the current kernel, or a sensible alternative.
     *
@@ -161,7 +161,7 @@ class SessionContext_ protected () extends ISessionContext {
     * kernel.
     */
   @JSName("kernelDisplayName")
-  def kernelDisplayName_MSessionContext_(): String = js.native
+  def kernelDisplayName_MSessionContext_ : String = js.native
   /**
     * A sensible status to display
     *
@@ -170,7 +170,7 @@ class SessionContext_ protected () extends ISessionContext {
     * the user.
     */
   @JSName("kernelDisplayStatus")
-  def kernelDisplayStatus_MSessionContext_(): KernelDisplayStatus = js.native
+  def kernelDisplayStatus_MSessionContext_ : KernelDisplayStatus = js.native
   /**
     * The kernel preference of this client session.
     *
@@ -178,7 +178,7 @@ class SessionContext_ protected () extends ISessionContext {
     * kernel the activity prefers.
     */
   @JSName("kernelPreference")
-  def kernelPreference_MSessionContext_(): IKernelPreference = js.native
+  def kernelPreference_MSessionContext_ : IKernelPreference = js.native
   @JSName("kernelPreference")
   def kernelPreference_MSessionContext_(value: IKernelPreference): js.Any = js.native
   /**
@@ -189,7 +189,7 @@ class SessionContext_ protected () extends ISessionContext {
     * there is no current session.
     */
   @JSName("name")
-  def name_MSessionContext_(): String = js.native
+  def name_MSessionContext_ : String = js.native
   /**
     * The session path.
     *
@@ -198,17 +198,17 @@ class SessionContext_ protected () extends ISessionContext {
     * there is no current session.
     */
   @JSName("path")
-  def path_MSessionContext_(): String = js.native
+  def path_MSessionContext_ : String = js.native
   /**
     * The name of the previously started kernel.
     */
   @JSName("prevKernelName")
-  def prevKernelName_MSessionContext_(): String = js.native
+  def prevKernelName_MSessionContext_ : String = js.native
   /**
     * A signal emitted when a session property changes, proxied from the current session.
     */
   @JSName("propertyChanged")
-  def propertyChanged_MSessionContext_(): ISignal[
+  def propertyChanged_MSessionContext_ : ISignal[
     this.type, 
     typings.jupyterlabApputils.jupyterlabApputilsStrings.path | typings.jupyterlabApputils.jupyterlabApputilsStrings.name | typings.jupyterlabApputils.jupyterlabApputilsStrings.`type`
   ] = js.native
@@ -216,12 +216,12 @@ class SessionContext_ protected () extends ISessionContext {
     * A promise that is fulfilled when the context is ready.
     */
   @JSName("ready")
-  def ready_MSessionContext_(): js.Promise[Unit] = js.native
+  def ready_MSessionContext_ : js.Promise[Unit] = js.native
   /**
     * A signal emitted when the session connection changes.
     */
   @JSName("sessionChanged")
-  def sessionChanged_MSessionContext_(): ISignal[
+  def sessionChanged_MSessionContext_ : ISignal[
     this.type, 
     IChangedArgs[ISessionConnection | Null, ISessionConnection | Null, session]
   ] = js.native
@@ -229,12 +229,12 @@ class SessionContext_ protected () extends ISessionContext {
     * The current session connection.
     */
   @JSName("session")
-  def session_MSessionContext_(): ISessionConnection | Null = js.native
+  def session_MSessionContext_ : ISessionConnection | Null = js.native
   /**
     * A signal emitted when the kernel status changes, proxied from the kernel.
     */
   @JSName("statusChanged")
-  def statusChanged_MSessionContext_(): ISignal[this.type, Status] = js.native
+  def statusChanged_MSessionContext_ : ISignal[this.type, Status] = js.native
   /**
     * The session type.
     *
@@ -243,11 +243,11 @@ class SessionContext_ protected () extends ISessionContext {
     * there is no current session.
     */
   @JSName("type")
-  def type_MSessionContext_(): String = js.native
+  def type_MSessionContext_ : String = js.native
   /**
     * A signal emitted for an unhandled kernel message, proxied from the kernel.
     */
   @JSName("unhandledMessage")
-  def unhandledMessage_MSessionContext_(): ISignal[this.type, IMessage[MessageType]] = js.native
+  def unhandledMessage_MSessionContext_ : ISignal[this.type, IMessage[MessageType]] = js.native
 }
 

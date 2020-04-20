@@ -16,12 +16,10 @@ trait AcPrintRange extends js.Object
 
 object AcPrintRange {
   @scala.inline
-  def acPages: `2` = this.cast(2)
+  def acPages: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acPrintAll: `0` = this.cast(0)
+  def acPrintAll: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acSelection: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acSelection: `1` = 1.asInstanceOf[`1`]
 }
 

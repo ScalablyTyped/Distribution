@@ -15,7 +15,6 @@ object Guide {
   @scala.inline
   def apply(axis: X | Y, offset: Double): Guide = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Guide]
   }
 }

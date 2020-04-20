@@ -18,7 +18,6 @@ object MetricsFactory_ {
     resetCache: () => Unit
   ): MetricsFactory_ = {
     val __obj = js.Dynamic.literal(getAllMetrics = js.Any.fromFunction0(getAllMetrics), getOrCreate = js.Any.fromFunction1(getOrCreate), resetCache = js.Any.fromFunction0(resetCache))
-  
     __obj.asInstanceOf[MetricsFactory_]
   }
 }

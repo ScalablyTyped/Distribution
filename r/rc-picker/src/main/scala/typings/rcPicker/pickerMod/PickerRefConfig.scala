@@ -13,7 +13,6 @@ object PickerRefConfig {
   @scala.inline
   def apply(blur: () => Unit, focus: () => Unit): PickerRefConfig = {
     val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus))
-  
     __obj.asInstanceOf[PickerRefConfig]
   }
 }

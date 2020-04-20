@@ -32,7 +32,7 @@ abstract class ParameterType protected () extends Element {
   val containerAsCodeActionParameter_FParameterType: ICodeActionParameter = js.native
   @JSName("model")
   var model_FParameterType: IModel = js.native
-  def containerAsCodeActionParameter(): CodeActionParameter = js.native
+  def containerAsCodeActionParameter: CodeActionParameter = js.native
 }
 
 /* static members */

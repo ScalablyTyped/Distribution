@@ -27,18 +27,18 @@ class FormDataPart protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FFormDataPart: IModel = js.native
-  def containerAsFormDataRequestHandling(): FormDataRequestHandling = js.native
-  def key(): String = js.native
+  def containerAsFormDataRequestHandling: FormDataRequestHandling = js.native
+  def key: String = js.native
   def key(newValue: String): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def value(): String = js.native
+  def value: String = js.native
   def value(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  def valueModel(): Expression = js.native
+  def valueModel: Expression = js.native
   def valueModel(newValue: Expression): js.Any = js.native
 }
 

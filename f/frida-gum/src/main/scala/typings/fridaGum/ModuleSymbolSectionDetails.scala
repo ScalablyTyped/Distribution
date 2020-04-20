@@ -19,7 +19,6 @@ object ModuleSymbolSectionDetails {
   @scala.inline
   def apply(id: String, protection: PageProtection): ModuleSymbolSectionDetails = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModuleSymbolSectionDetails]
   }
 }

@@ -23,7 +23,6 @@ object Os {
   @scala.inline
   def OtherOs(os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin): Os = {
     val __obj = js.Dynamic.literal(os = os.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Os]
   }
   @scala.inline

@@ -14,7 +14,6 @@ object CoverageArea {
   @scala.inline
   def apply(bbox: js.Array[Double], zoomMax: Double, zoomMin: Double): CoverageArea = {
     val __obj = js.Dynamic.literal(bbox = bbox.asInstanceOf[js.Any], zoomMax = zoomMax.asInstanceOf[js.Any], zoomMin = zoomMin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CoverageArea]
   }
 }

@@ -34,7 +34,6 @@ object DeserializerOptions {
     reviver: (String, js.Any) => js.Any
   ): DeserializerOptions = {
     val __obj = js.Dynamic.literal(getConstructor = js.Any.fromFunction1(getConstructor), getTypeId = js.Any.fromFunction1(getTypeId), reviver = js.Any.fromFunction2(reviver))
-  
     __obj.asInstanceOf[DeserializerOptions]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeKeepAwakeProps {
   @scala.inline
-  def ReactNativeKeepAwakeProps: AnonChildren.type = typings.reactNativeKeepAwake.AnonChildren
+  def ReactNativeKeepAwakeProps: AnonChildren.type = AnonChildren
   type ReactNativeKeepAwakeProps = AnonChildren
 }
 

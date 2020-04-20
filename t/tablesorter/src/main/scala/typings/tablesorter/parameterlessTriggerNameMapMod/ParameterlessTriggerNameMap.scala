@@ -29,44 +29,42 @@ trait ParameterlessTriggerNameMap extends js.Object
 
 object ParameterlessTriggerNameMap {
   @scala.inline
-  def appendCache: typings.tablesorter.tablesorterStrings.appendCache = this.cast("appendCache")
+  def appendCache: typings.tablesorter.tablesorterStrings.appendCache = "appendCache".asInstanceOf[typings.tablesorter.tablesorterStrings.appendCache]
   @scala.inline
-  def applyWidgets: typings.tablesorter.tablesorterStrings.applyWidgets = this.cast("applyWidgets")
+  def applyWidgets: typings.tablesorter.tablesorterStrings.applyWidgets = "applyWidgets".asInstanceOf[typings.tablesorter.tablesorterStrings.applyWidgets]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def destroy: typings.tablesorter.tablesorterStrings.destroy = "destroy".asInstanceOf[typings.tablesorter.tablesorterStrings.destroy]
   @scala.inline
-  def destroy: typings.tablesorter.tablesorterStrings.destroy = this.cast("destroy")
+  def destroyPager: typings.tablesorter.tablesorterStrings.destroyPager = "destroyPager".asInstanceOf[typings.tablesorter.tablesorterStrings.destroyPager]
   @scala.inline
-  def destroyPager: typings.tablesorter.tablesorterStrings.destroyPager = this.cast("destroyPager")
+  def disablePager: typings.tablesorter.tablesorterStrings.disablePager = "disablePager".asInstanceOf[typings.tablesorter.tablesorterStrings.disablePager]
   @scala.inline
-  def disablePager: typings.tablesorter.tablesorterStrings.disablePager = this.cast("disablePager")
+  def enablePager: typings.tablesorter.tablesorterStrings.enablePager = "enablePager".asInstanceOf[typings.tablesorter.tablesorterStrings.enablePager]
   @scala.inline
-  def enablePager: typings.tablesorter.tablesorterStrings.enablePager = this.cast("enablePager")
+  def filterAndSortReset: typings.tablesorter.tablesorterStrings.filterAndSortReset = "filterAndSortReset".asInstanceOf[typings.tablesorter.tablesorterStrings.filterAndSortReset]
   @scala.inline
-  def filterAndSortReset: typings.tablesorter.tablesorterStrings.filterAndSortReset = this.cast("filterAndSortReset")
+  def filterReset: typings.tablesorter.tablesorterStrings.filterReset = "filterReset".asInstanceOf[typings.tablesorter.tablesorterStrings.filterReset]
   @scala.inline
-  def filterReset: typings.tablesorter.tablesorterStrings.filterReset = this.cast("filterReset")
+  def filterResetSaved: typings.tablesorter.tablesorterStrings.filterResetSaved = "filterResetSaved".asInstanceOf[typings.tablesorter.tablesorterStrings.filterResetSaved]
   @scala.inline
-  def filterResetSaved: typings.tablesorter.tablesorterStrings.filterResetSaved = this.cast("filterResetSaved")
+  def pagerUpdate: typings.tablesorter.tablesorterStrings.pagerUpdate = "pagerUpdate".asInstanceOf[typings.tablesorter.tablesorterStrings.pagerUpdate]
   @scala.inline
-  def pagerUpdate: typings.tablesorter.tablesorterStrings.pagerUpdate = this.cast("pagerUpdate")
+  def resetToLoadState: typings.tablesorter.tablesorterStrings.resetToLoadState = "resetToLoadState".asInstanceOf[typings.tablesorter.tablesorterStrings.resetToLoadState]
   @scala.inline
-  def resetToLoadState: typings.tablesorter.tablesorterStrings.resetToLoadState = this.cast("resetToLoadState")
+  def saveSortReset: typings.tablesorter.tablesorterStrings.saveSortReset = "saveSortReset".asInstanceOf[typings.tablesorter.tablesorterStrings.saveSortReset]
   @scala.inline
-  def saveSortReset: typings.tablesorter.tablesorterStrings.saveSortReset = this.cast("saveSortReset")
+  def search: typings.tablesorter.tablesorterStrings.search = "search".asInstanceOf[typings.tablesorter.tablesorterStrings.search]
   @scala.inline
-  def search: typings.tablesorter.tablesorterStrings.search = this.cast("search")
+  def sort: typings.tablesorter.tablesorterStrings.sort = "sort".asInstanceOf[typings.tablesorter.tablesorterStrings.sort]
   @scala.inline
-  def sort: typings.tablesorter.tablesorterStrings.sort = this.cast("sort")
+  def update: typings.tablesorter.tablesorterStrings.update = "update".asInstanceOf[typings.tablesorter.tablesorterStrings.update]
   @scala.inline
-  def update: typings.tablesorter.tablesorterStrings.update = this.cast("update")
+  def updateAll: typings.tablesorter.tablesorterStrings.updateAll = "updateAll".asInstanceOf[typings.tablesorter.tablesorterStrings.updateAll]
   @scala.inline
-  def updateAll: typings.tablesorter.tablesorterStrings.updateAll = this.cast("updateAll")
+  def updateCache: typings.tablesorter.tablesorterStrings.updateCache = "updateCache".asInstanceOf[typings.tablesorter.tablesorterStrings.updateCache]
   @scala.inline
-  def updateCache: typings.tablesorter.tablesorterStrings.updateCache = this.cast("updateCache")
+  def updateHeaders: typings.tablesorter.tablesorterStrings.updateHeaders = "updateHeaders".asInstanceOf[typings.tablesorter.tablesorterStrings.updateHeaders]
   @scala.inline
-  def updateHeaders: typings.tablesorter.tablesorterStrings.updateHeaders = this.cast("updateHeaders")
-  @scala.inline
-  def updateRows: typings.tablesorter.tablesorterStrings.updateRows = this.cast("updateRows")
+  def updateRows: typings.tablesorter.tablesorterStrings.updateRows = "updateRows".asInstanceOf[typings.tablesorter.tablesorterStrings.updateRows]
 }
 

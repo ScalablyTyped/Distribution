@@ -16,7 +16,6 @@ object AnonNModified {
   @scala.inline
   def apply(n: Double, nModified: Double, ok: `1` | `0`): AnonNModified = {
     val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any], nModified = nModified.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNModified]
   }
 }

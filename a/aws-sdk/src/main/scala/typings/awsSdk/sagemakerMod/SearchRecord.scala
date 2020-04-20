@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SearchRecord extends js.Object {
   /**
-    * A summary of the properties of an experiment.
+    * The properties of an experiment.
     */
   var Experiment: js.UndefOr[typings.awsSdk.sagemakerMod.Experiment] = js.native
   /**
-    * A TrainingJob object that is returned as part of a Search request.
+    * The properties of a training job.
     */
   var TrainingJob: js.UndefOr[typings.awsSdk.sagemakerMod.TrainingJob] = js.native
   /**
-    * A summary of the properties of a trial.
+    * The properties of a trial.
     */
   var Trial: js.UndefOr[typings.awsSdk.sagemakerMod.Trial] = js.native
   /**
-    * A summary of the properties of a trial component.
+    * The properties of a trial component.
     */
   var TrialComponent: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponent] = js.native
 }

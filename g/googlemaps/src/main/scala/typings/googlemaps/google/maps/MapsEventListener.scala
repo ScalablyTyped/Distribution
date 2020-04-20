@@ -17,7 +17,6 @@ object MapsEventListener {
   @scala.inline
   def apply(remove: () => Unit): MapsEventListener = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[MapsEventListener]
   }
 }

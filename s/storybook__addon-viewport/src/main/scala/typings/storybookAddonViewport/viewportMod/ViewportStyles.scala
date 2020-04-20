@@ -13,7 +13,6 @@ object ViewportStyles {
   @scala.inline
   def apply(height: String, width: String): ViewportStyles = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViewportStyles]
   }
 }

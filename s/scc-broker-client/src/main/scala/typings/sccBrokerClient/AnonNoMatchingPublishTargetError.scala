@@ -19,7 +19,6 @@ object AnonNoMatchingPublishTargetError {
     NoMatchingUnsubscribeTargetError: String => Error
   ): AnonNoMatchingPublishTargetError = {
     val __obj = js.Dynamic.literal(NoMatchingPublishTargetError = js.Any.fromFunction1(NoMatchingPublishTargetError), NoMatchingSubscribeTargetError = js.Any.fromFunction1(NoMatchingSubscribeTargetError), NoMatchingUnsubscribeTargetError = js.Any.fromFunction1(NoMatchingUnsubscribeTargetError))
-  
     __obj.asInstanceOf[AnonNoMatchingPublishTargetError]
   }
 }

@@ -45,17 +45,17 @@ class MicroflowActionInfo protected () extends Element {
   val icon_FMicroflowActionInfo: IImage | Null = js.native
   @JSName("model")
   var model_FMicroflowActionInfo: IModel = js.native
-  def caption(): String = js.native
+  def caption: String = js.native
   def caption(newValue: String): js.Any = js.native
-  def category(): String = js.native
+  def category: String = js.native
   def category(newValue: String): js.Any = js.native
-  def containerAsCodeAction(): CodeAction = js.native
-  def containerAsMicroflow(): Microflow = js.native
+  def containerAsCodeAction: CodeAction = js.native
+  def containerAsMicroflow: Microflow = js.native
   def icon(): js.Any = js.native
   def icon(newValue: IImage): js.Any = js.native
-  def iconQualifiedName(): String | Null = js.native
+  def iconQualifiedName: String | Null = js.native
   @JSName("icon")
-  def icon_Union(): IImage | Null = js.native
+  def icon_Union: IImage | Null = js.native
 }
 
 /* static members */

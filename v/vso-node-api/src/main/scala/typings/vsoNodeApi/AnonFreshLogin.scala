@@ -15,7 +15,6 @@ object AnonFreshLogin {
   @scala.inline
   def apply(freshLogin: Double, login: Double, noOption: Double, selectAccount: Double): AnonFreshLogin = {
     val __obj = js.Dynamic.literal(freshLogin = freshLogin.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], noOption = noOption.asInstanceOf[js.Any], selectAccount = selectAccount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFreshLogin]
   }
 }

@@ -13,7 +13,6 @@ object Array {
   @scala.inline
   def apply[T](abbrev: () => StringDictionary[String]): Array[T] = {
     val __obj = js.Dynamic.literal(abbrev = js.Any.fromFunction0(abbrev))
-  
     __obj.asInstanceOf[Array[T]]
   }
 }

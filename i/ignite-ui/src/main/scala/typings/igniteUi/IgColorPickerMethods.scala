@@ -47,7 +47,6 @@ object IgColorPickerMethods {
     standardColorsTable: () => js.Object
   ): IgColorPickerMethods = {
     val __obj = js.Dynamic.literal(colorFromElement = js.Any.fromFunction1(colorFromElement), colorTable = js.Any.fromFunction0(colorTable), customColorTable = js.Any.fromFunction0(customColorTable), selectColor = js.Any.fromFunction1(selectColor), selectedColor = js.Any.fromFunction0(selectedColor), standardColorsTable = js.Any.fromFunction0(standardColorsTable))
-  
     __obj.asInstanceOf[IgColorPickerMethods]
   }
 }

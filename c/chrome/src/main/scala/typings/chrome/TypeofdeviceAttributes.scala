@@ -20,7 +20,6 @@ object TypeofdeviceAttributes {
     getDirectoryDeviceId: js.Function1[/* deviceId */ String, Unit] => Unit
   ): TypeofdeviceAttributes = {
     val __obj = js.Dynamic.literal(getDeviceAnnotatedLocation = js.Any.fromFunction1(getDeviceAnnotatedLocation), getDeviceAssetId = js.Any.fromFunction1(getDeviceAssetId), getDeviceSerialNumber = js.Any.fromFunction1(getDeviceSerialNumber), getDirectoryDeviceId = js.Any.fromFunction1(getDirectoryDeviceId))
-  
     __obj.asInstanceOf[TypeofdeviceAttributes]
   }
 }

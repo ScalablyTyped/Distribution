@@ -20,7 +20,6 @@ object CreateByteMatchSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateByteMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateByteMatchSetRequest]
   }
 }

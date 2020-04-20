@@ -16,7 +16,6 @@ object Adapter {
   @scala.inline
   def apply(connect: () => Unit, disconnect: () => Unit, passthroughRequest: Request => js.Promise[AnonBody]): Adapter = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), disconnect = js.Any.fromFunction0(disconnect), passthroughRequest = js.Any.fromFunction1(passthroughRequest))
-  
     __obj.asInstanceOf[Adapter]
   }
 }

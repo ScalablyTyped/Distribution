@@ -13,7 +13,6 @@ object Animation {
   @scala.inline
   def apply(camera: (Camera, StringDictionary[js.Any], StringDictionary[js.Any]) => Double): Animation = {
     val __obj = js.Dynamic.literal(camera = js.Any.fromFunction3(camera))
-  
     __obj.asInstanceOf[Animation]
   }
 }

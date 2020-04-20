@@ -24,7 +24,6 @@ object DetachPolicyRequest {
   @scala.inline
   def apply(DirectoryArn: Arn, ObjectReference: ObjectReference, PolicyReference: ObjectReference): DetachPolicyRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any], PolicyReference = PolicyReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachPolicyRequest]
   }
 }

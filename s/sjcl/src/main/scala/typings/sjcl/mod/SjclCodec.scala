@@ -14,7 +14,6 @@ object SjclCodec {
   @scala.inline
   def apply[T](fromBits: BitArray_ => T, toBits: T => BitArray_): SjclCodec[T] = {
     val __obj = js.Dynamic.literal(fromBits = js.Any.fromFunction1(fromBits), toBits = js.Any.fromFunction1(toBits))
-  
     __obj.asInstanceOf[SjclCodec[T]]
   }
 }

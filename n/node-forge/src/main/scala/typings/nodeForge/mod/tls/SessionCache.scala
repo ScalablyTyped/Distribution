@@ -25,7 +25,6 @@ object SessionCache {
     setSession: (Bytes, Session) => Unit
   ): SessionCache = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], getSession = js.Any.fromFunction1(getSession), order = order.asInstanceOf[js.Any], setSession = js.Any.fromFunction2(setSession))
-  
     __obj.asInstanceOf[SessionCache]
   }
 }

@@ -20,7 +20,6 @@ object IRandomAccessStreamReferenceStatics {
     createFromUri: Uri => RandomAccessStreamReference
   ): IRandomAccessStreamReferenceStatics = {
     val __obj = js.Dynamic.literal(createFromFile = js.Any.fromFunction1(createFromFile), createFromStream = js.Any.fromFunction1(createFromStream), createFromUri = js.Any.fromFunction1(createFromUri))
-  
     __obj.asInstanceOf[IRandomAccessStreamReferenceStatics]
   }
 }

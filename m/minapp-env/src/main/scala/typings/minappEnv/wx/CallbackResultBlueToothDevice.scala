@@ -36,7 +36,6 @@ object CallbackResultBlueToothDevice {
     serviceData: js.Object
   ): CallbackResultBlueToothDevice = {
     val __obj = js.Dynamic.literal(RSSI = RSSI.asInstanceOf[js.Any], advertisData = advertisData.asInstanceOf[js.Any], advertisServiceUUIDs = advertisServiceUUIDs.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], serviceData = serviceData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CallbackResultBlueToothDevice]
   }
 }

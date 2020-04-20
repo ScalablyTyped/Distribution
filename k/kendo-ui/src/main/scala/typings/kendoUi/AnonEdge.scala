@@ -26,7 +26,6 @@ object AnonEdge {
     webkit: Boolean
   ): AnonEdge = {
     val __obj = js.Dynamic.literal(edge = edge.asInstanceOf[js.Any], mozilla = mozilla.asInstanceOf[js.Any], msie = msie.asInstanceOf[js.Any], opera = opera.asInstanceOf[js.Any], safari = safari.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], webkit = webkit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEdge]
   }
 }

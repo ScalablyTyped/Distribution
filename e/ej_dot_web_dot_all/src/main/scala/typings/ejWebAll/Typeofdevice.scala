@@ -22,7 +22,6 @@ object Typeofdevice {
     isWindows: () => Boolean
   ): Typeofdevice = {
     val __obj = js.Dynamic.literal(isAndroid = js.Any.fromFunction0(isAndroid), isFlat = js.Any.fromFunction0(isFlat), isIOS = js.Any.fromFunction0(isIOS), isIOS7 = js.Any.fromFunction0(isIOS7), isWindows = js.Any.fromFunction0(isWindows))
-  
     __obj.asInstanceOf[Typeofdevice]
   }
 }

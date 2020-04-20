@@ -18,7 +18,6 @@ object Anon26 {
     success: (KiiServerCodeEntry, T, KiiServerCodeExecResult) => js.Any
   ): Anon26[T] = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction4(failure), success = js.Any.fromFunction3(success))
-  
     __obj.asInstanceOf[Anon26[T]]
   }
 }

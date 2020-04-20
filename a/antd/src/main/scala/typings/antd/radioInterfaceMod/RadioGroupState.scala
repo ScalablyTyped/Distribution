@@ -13,7 +13,6 @@ object RadioGroupState {
   @scala.inline
   def apply(prevPropValue: js.Any, value: js.Any): RadioGroupState = {
     val __obj = js.Dynamic.literal(prevPropValue = prevPropValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RadioGroupState]
   }
 }

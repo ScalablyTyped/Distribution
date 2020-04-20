@@ -20,7 +20,6 @@ object Change {
   @scala.inline
   def apply(Action: ChangeAction, ResourceRecordSet: ResourceRecordSet): Change = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], ResourceRecordSet = ResourceRecordSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Change]
   }
 }

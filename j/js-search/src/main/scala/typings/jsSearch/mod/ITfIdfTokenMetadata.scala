@@ -17,7 +17,6 @@ object ITfIdfTokenMetadata {
   @scala.inline
   def apply($numDocumentOccurrences: Double, $totalNumOccurrences: Double, $uidMap: ITfIdfUidMap): ITfIdfTokenMetadata = {
     val __obj = js.Dynamic.literal($numDocumentOccurrences = $numDocumentOccurrences.asInstanceOf[js.Any], $totalNumOccurrences = $totalNumOccurrences.asInstanceOf[js.Any], $uidMap = $uidMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITfIdfTokenMetadata]
   }
 }

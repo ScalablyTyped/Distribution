@@ -16,7 +16,6 @@ object GetTopUserIDsResponse {
   @scala.inline
   def apply(topUsers: Record[String, js.Array[UserIDResponse]]): GetTopUserIDsResponse = {
     val __obj = js.Dynamic.literal(topUsers = topUsers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTopUserIDsResponse]
   }
 }

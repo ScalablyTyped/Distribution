@@ -16,7 +16,6 @@ object S3SnapshotAsset {
   @scala.inline
   def apply(Size: doubleMin0): S3SnapshotAsset = {
     val __obj = js.Dynamic.literal(Size = Size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3SnapshotAsset]
   }
 }

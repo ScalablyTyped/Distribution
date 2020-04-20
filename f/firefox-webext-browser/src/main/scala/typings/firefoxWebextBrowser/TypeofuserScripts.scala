@@ -29,7 +29,6 @@ object TypeofuserScripts {
     register: UserScriptOptions => js.Promise[RegisteredUserScript]
   ): TypeofuserScripts = {
     val __obj = js.Dynamic.literal(onBeforeScript = onBeforeScript.asInstanceOf[js.Any], register = js.Any.fromFunction1(register))
-  
     __obj.asInstanceOf[TypeofuserScripts]
   }
 }

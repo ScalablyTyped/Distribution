@@ -16,7 +16,6 @@ object GetSolutionMetricsRequest {
   @scala.inline
   def apply(solutionVersionArn: Arn): GetSolutionMetricsRequest = {
     val __obj = js.Dynamic.literal(solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSolutionMetricsRequest]
   }
 }

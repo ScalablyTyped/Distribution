@@ -15,7 +15,6 @@ object CookieStore {
   @scala.inline
   def apply(id: String, tabIds: js.Array[Double]): CookieStore = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], tabIds = tabIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CookieStore]
   }
 }

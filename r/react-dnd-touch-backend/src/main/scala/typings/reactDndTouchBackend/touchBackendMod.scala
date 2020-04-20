@@ -50,8 +50,8 @@ object touchBackendMod extends js.Object {
     def connectDragPreview(sourceId: String, node: HTMLElement, options: js.Any): js.Function0[Unit] = js.native
     def connectDragSource(sourceId: String, node: HTMLElement): js.Function0[Unit] = js.native
     def connectDropTarget(targetId: String, node: HTMLElement): Unsubscribe = js.native
-    def document(): js.Any = js.native
-    def window(): js.Any = js.native
+    def document: js.Any = js.native
+    def window: js.Any = js.native
   }
   
   @js.native

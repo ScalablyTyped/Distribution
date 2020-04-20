@@ -28,7 +28,6 @@ object IIcon {
   @scala.inline
   def apply(name: String, svgstr: String): IIcon = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], svgstr = svgstr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IIcon]
   }
 }

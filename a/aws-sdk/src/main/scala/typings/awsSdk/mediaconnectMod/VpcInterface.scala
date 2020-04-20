@@ -38,7 +38,6 @@ object VpcInterface {
     SubnetId: string
   ): VpcInterface = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], NetworkInterfaceIds = NetworkInterfaceIds.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], SecurityGroupIds = SecurityGroupIds.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcInterface]
   }
 }

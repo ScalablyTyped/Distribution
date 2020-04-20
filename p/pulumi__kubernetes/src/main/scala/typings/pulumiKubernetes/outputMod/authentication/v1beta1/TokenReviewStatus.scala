@@ -36,7 +36,6 @@ object TokenReviewStatus {
   @scala.inline
   def apply(audiences: js.Array[String], authenticated: Boolean, error: String, user: UserInfo): TokenReviewStatus = {
     val __obj = js.Dynamic.literal(audiences = audiences.asInstanceOf[js.Any], authenticated = authenticated.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TokenReviewStatus]
   }
 }

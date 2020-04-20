@@ -17,7 +17,6 @@ object SkEnumSkStrokeCapButtSkSt {
   @scala.inline
   def apply(Butt: SkStrokeCap, Round: SkStrokeCap, Square: SkStrokeCap, values: js.Array[SkStrokeCap]): SkEnumSkStrokeCapButtSkSt = {
     val __obj = js.Dynamic.literal(Butt = Butt.asInstanceOf[js.Any], Round = Round.asInstanceOf[js.Any], Square = Square.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkStrokeCapButtSkSt]
   }
 }

@@ -1,6 +1,7 @@
 package typings.typeFest.packageJsonMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.typeFest.AnonDictmoduleName
 import typings.typeFest.AnonType
 import typings.typeFest.AnonUrl
@@ -121,7 +122,7 @@ trait PackageJson_
   var engines: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ EngineName in 'npm' | 'node' | string ]: string}
-    */ typings.typeFest.typeFestStrings.PackageJson with js.Any
+    */ typings.typeFest.typeFestStrings.PackageJson with TopLevel[js.Any]
   ] = js.undefined
   /**
   		A module ID with untranspiled code that is the primary entry point to the program.
@@ -260,7 +261,7 @@ object PackageJson_ {
     engineStrict: js.UndefOr[Boolean] = js.undefined,
     engines: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ EngineName in 'npm' | 'node' | string ]: string}
-    */ typings.typeFest.typeFestStrings.PackageJson with js.Any = null,
+    */ typings.typeFest.typeFestStrings.PackageJson with TopLevel[js.Any] = null,
     esnext: String | AnonDictmoduleName = null,
     files: js.Array[String] = null,
     flat: js.UndefOr[Boolean] = js.undefined,

@@ -14,7 +14,6 @@ object IMetadataCardValueSuggestion {
   @scala.inline
   def apply(IsNewValue: Boolean, Name: String, Value: js.Any): IMetadataCardValueSuggestion = {
     val __obj = js.Dynamic.literal(IsNewValue = IsNewValue.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMetadataCardValueSuggestion]
   }
 }

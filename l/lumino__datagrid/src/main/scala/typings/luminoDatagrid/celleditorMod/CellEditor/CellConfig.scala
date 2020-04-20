@@ -27,7 +27,6 @@ object CellConfig {
   @scala.inline
   def apply(column: Double, grid: DataGrid, row: Double): CellConfig = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CellConfig]
   }
 }

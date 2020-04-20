@@ -16,7 +16,6 @@ object DescribeDominantLanguageDetectionJobRequest {
   @scala.inline
   def apply(JobId: JobId): DescribeDominantLanguageDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDominantLanguageDetectionJobRequest]
   }
 }

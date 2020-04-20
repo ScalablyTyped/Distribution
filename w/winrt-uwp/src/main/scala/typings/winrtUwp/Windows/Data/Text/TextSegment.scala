@@ -16,7 +16,6 @@ object TextSegment {
   @scala.inline
   def apply(length: Double, startPosition: Double): TextSegment = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], startPosition = startPosition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextSegment]
   }
 }

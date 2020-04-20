@@ -48,10 +48,10 @@ class Nanoflow protected () extends MicroflowBase {
   /**
     * In version 7.23.0: added public
     */
-  def allowedModuleRoles(): IList[IModuleRole] = js.native
-  def allowedModuleRolesQualifiedNames(): js.Array[String] = js.native
+  def allowedModuleRoles: IList[IModuleRole] = js.native
+  def allowedModuleRolesQualifiedNames: js.Array[String] = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MNanoflow(): FolderBase = js.native
+  def containerAsFolderBase_MNanoflow: FolderBase = js.native
 }
 
 /* static members */

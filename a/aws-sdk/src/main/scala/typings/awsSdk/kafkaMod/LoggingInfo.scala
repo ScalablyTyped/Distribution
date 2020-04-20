@@ -13,7 +13,6 @@ object LoggingInfo {
   @scala.inline
   def apply(BrokerLogs: BrokerLogs): LoggingInfo = {
     val __obj = js.Dynamic.literal(BrokerLogs = BrokerLogs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoggingInfo]
   }
 }

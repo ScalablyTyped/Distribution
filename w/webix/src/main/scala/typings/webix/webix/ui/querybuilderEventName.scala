@@ -14,14 +14,12 @@ trait querybuilderEventName extends js.Object
 
 object querybuilderEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   @scala.inline
-  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   @scala.inline
-  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  def onKeySelect: typings.webix.webixStrings.onKeySelect = "onKeySelect".asInstanceOf[typings.webix.webixStrings.onKeySelect]
   @scala.inline
-  def onKeySelect: typings.webix.webixStrings.onKeySelect = this.cast("onKeySelect")
-  @scala.inline
-  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }
 

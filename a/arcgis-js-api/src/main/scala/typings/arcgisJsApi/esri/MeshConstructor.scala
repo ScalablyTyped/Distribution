@@ -52,7 +52,7 @@ Instantiable0[Mesh]
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromGLTF)
     *
-    * @param location The location of the origin of the model. If the location doesn't contain a z value, z is assumed to be `0`.
+    * @param location The location of the origin of the model. If the location doesn't contain a z-value, z is assumed to be `0`.
     * @param url The URL of the glTF model. The URL should point to a glTF file (.gltf or .glb) which can reference additional binary (.bin) and image files (.jpg, .png).
     * @param params Additional parameters.
     * @param params.geographic Whether the model coordinates should be relative to the geographic or the projected coordinate system (PCS). This parameter is only relevant for spatial references that can be used in both local and global viewing modes (currently only WebMercator). This parameter defaults to `true` for WebMercator and WGS84, and `false` for any other PCS. When true, the mesh is created in a Cartesian system with respect to the local coordinate system on the globe and sizes are specified in meters.

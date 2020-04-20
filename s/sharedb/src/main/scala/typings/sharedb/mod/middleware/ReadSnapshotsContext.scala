@@ -35,7 +35,6 @@ object ReadSnapshotsContext {
     snapshots: js.Array[Snapshot]
   ): ReadSnapshotsContext = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], snapshotType = snapshotType.asInstanceOf[js.Any], snapshots = snapshots.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadSnapshotsContext]
   }
 }

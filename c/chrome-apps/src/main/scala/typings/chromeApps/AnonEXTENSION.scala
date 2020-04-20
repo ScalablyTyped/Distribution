@@ -27,7 +27,6 @@ object AnonEXTENSION {
     THEME: theme
   ): AnonEXTENSION = {
     val __obj = js.Dynamic.literal(EXTENSION = EXTENSION.asInstanceOf[js.Any], HOSTED_APP = HOSTED_APP.asInstanceOf[js.Any], LEGACY_PACKAGED_APP = LEGACY_PACKAGED_APP.asInstanceOf[js.Any], PACKAGED_APP = PACKAGED_APP.asInstanceOf[js.Any], THEME = THEME.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEXTENSION]
   }
 }

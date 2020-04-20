@@ -21,7 +21,6 @@ object NativeData {
     metadata: SnapshotMetadata
   ): NativeData = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], documents = documents.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeData]
   }
 }

@@ -27,7 +27,6 @@ object EventsResource {
   @scala.inline
   def apply(list: AnonAccesstoken => Request_[ListEventsResponse], report: AnonAlt => Request_[js.Object]): EventsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), report = js.Any.fromFunction1(report))
-  
     __obj.asInstanceOf[EventsResource]
   }
 }

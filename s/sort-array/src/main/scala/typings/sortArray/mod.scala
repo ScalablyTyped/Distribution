@@ -19,8 +19,8 @@ object mod extends js.Object {
   ): js.Array[js.Object] = js.native
   def apply[T](recordset: js.Array[T], columnNames: ColumnNames[T]): js.Array[T] = js.native
   def apply[T](recordset: js.Array[T], columnNames: ColumnNames[T], customOrder: Partial[CustomOrder[T]]): js.Array[T] = js.native
-  type ColumnNames[T] = String | js.Array[String]
-  type CustomOrder[T] = Record[String, CustomOrderTypes[T]]
+  type ColumnNames[T] = (/* keyof T */ String) | (js.Array[/* keyof T */ String])
+  type CustomOrder[T] = Record[/* keyof T */ String, CustomOrderTypes[T]]
   type CustomOrderTypes[T] = js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ]

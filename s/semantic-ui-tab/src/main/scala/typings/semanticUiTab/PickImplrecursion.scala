@@ -13,7 +13,6 @@ object PickImplrecursion {
   @scala.inline
   def apply(recursion: String): PickImplrecursion = {
     val __obj = js.Dynamic.literal(recursion = recursion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplrecursion]
   }
 }

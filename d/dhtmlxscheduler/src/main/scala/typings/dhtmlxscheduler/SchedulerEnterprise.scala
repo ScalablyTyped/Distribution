@@ -15,7 +15,6 @@ object SchedulerEnterprise {
   @scala.inline
   def apply(getSchedulerInstance: () => SchedulerStatic): SchedulerEnterprise = {
     val __obj = js.Dynamic.literal(getSchedulerInstance = js.Any.fromFunction0(getSchedulerInstance))
-  
     __obj.asInstanceOf[SchedulerEnterprise]
   }
 }

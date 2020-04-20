@@ -15,7 +15,6 @@ object ListPattern {
   @scala.inline
   def apply(end: String, middle: String, pair: String, start: String): ListPattern = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], middle = middle.asInstanceOf[js.Any], pair = pair.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListPattern]
   }
 }

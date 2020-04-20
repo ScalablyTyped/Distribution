@@ -20,7 +20,6 @@ object BatchCreateAttendeeRequest {
   @scala.inline
   def apply(Attendees: CreateAttendeeRequestItemList, MeetingId: GuidString): BatchCreateAttendeeRequest = {
     val __obj = js.Dynamic.literal(Attendees = Attendees.asInstanceOf[js.Any], MeetingId = MeetingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchCreateAttendeeRequest]
   }
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactNativeNavigationComponents extends reactNativeNavigationProps {
   @scala.inline
-  def TouchablePreview: ComponentType[TouchablePreviewProps] = js.constructorOf[typings.reactNativeNavigation.touchablePreviewMod.TouchablePreview].asInstanceOf[typings.react.mod.ComponentType[TouchablePreviewProps]]
+  def TouchablePreview: ComponentType[TouchablePreviewProps] = js.constructorOf[typings.reactNativeNavigation.touchablePreviewMod.TouchablePreview].asInstanceOf[ComponentType[TouchablePreviewProps]]
 }
 

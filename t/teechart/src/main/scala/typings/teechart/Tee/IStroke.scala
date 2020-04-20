@@ -26,7 +26,6 @@ object IStroke {
     size: Double
   ): IStroke = {
     val __obj = js.Dynamic.literal(cap = cap.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], dash = dash.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], join = join.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStroke]
   }
 }

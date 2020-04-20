@@ -13,7 +13,6 @@ object TimelineFeedResponsePaginationInfo {
   @scala.inline
   def apply(group_id: Null, source: Null): TimelineFeedResponsePaginationInfo = {
     val __obj = js.Dynamic.literal(group_id = group_id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimelineFeedResponsePaginationInfo]
   }
 }

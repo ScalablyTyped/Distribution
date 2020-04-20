@@ -18,7 +18,6 @@ object MylibraryResource {
     readingpositions: ReadingpositionsResource
   ): MylibraryResource = {
     val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], bookshelves = bookshelves.asInstanceOf[js.Any], readingpositions = readingpositions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MylibraryResource]
   }
 }

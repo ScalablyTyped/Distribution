@@ -20,7 +20,6 @@ object IAbstractUnitJson {
     contents: IAbstractElementJson
   ): IAbstractUnitJson = {
     val __obj = js.Dynamic.literal($ID = $ID.asInstanceOf[js.Any], $Type = $Type.asInstanceOf[js.Any], containerId = containerId.asInstanceOf[js.Any], containmentName = containmentName.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAbstractUnitJson]
   }
 }

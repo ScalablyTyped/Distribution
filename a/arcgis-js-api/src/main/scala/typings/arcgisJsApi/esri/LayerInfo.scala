@@ -14,6 +14,12 @@ trait LayerInfo extends Object {
     */
   var addEnabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * Indicates whether to display the attachments widget in the Editor's UI. By default, this is `true`, if the service [supportsAttachment](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+    */
+  var allowAttachments: js.UndefOr[Boolean] = js.undefined
+  /**
     * Indicates whether to enable the ability to delete features. Defaults to `true` if service supports it.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
@@ -54,6 +60,7 @@ object LayerInfo {
     layer: FeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     addEnabled: js.UndefOr[Boolean] = js.undefined,
+    allowAttachments: js.UndefOr[Boolean] = js.undefined,
     deleteEnabled: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     fieldConfig: js.Array[FieldConfig] = null,
@@ -61,6 +68,7 @@ object LayerInfo {
   ): LayerInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(addEnabled)) __obj.updateDynamic("addEnabled")(addEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAttachments)) __obj.updateDynamic("allowAttachments")(allowAttachments.asInstanceOf[js.Any])
     if (!js.isUndefined(deleteEnabled)) __obj.updateDynamic("deleteEnabled")(deleteEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])

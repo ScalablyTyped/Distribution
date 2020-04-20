@@ -13,7 +13,6 @@ object ISyndicationItemFactory {
   @scala.inline
   def apply(createSyndicationItem: (String, SyndicationContent, Uri) => SyndicationItem): ISyndicationItemFactory = {
     val __obj = js.Dynamic.literal(createSyndicationItem = js.Any.fromFunction3(createSyndicationItem))
-  
     __obj.asInstanceOf[ISyndicationItemFactory]
   }
 }

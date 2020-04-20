@@ -12,10 +12,8 @@ trait Russian extends _ALL
 
 object Russian {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ru: typings.qlik.qlikStrings.ru = "ru".asInstanceOf[typings.qlik.qlikStrings.ru]
   @scala.inline
-  def ru: typings.qlik.qlikStrings.ru = this.cast("ru")
-  @scala.inline
-  def `ru-RU`: typings.qlik.qlikStrings.`ru-RU` = this.cast("ru-RU")
+  def `ru-RU`: typings.qlik.qlikStrings.`ru-RU` = "ru-RU".asInstanceOf[typings.qlik.qlikStrings.`ru-RU`]
 }
 

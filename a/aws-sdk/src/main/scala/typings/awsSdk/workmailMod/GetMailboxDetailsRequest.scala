@@ -20,7 +20,6 @@ object GetMailboxDetailsRequest {
   @scala.inline
   def apply(OrganizationId: OrganizationId, UserId: WorkMailIdentifier): GetMailboxDetailsRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMailboxDetailsRequest]
   }
 }

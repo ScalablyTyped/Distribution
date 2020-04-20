@@ -41,7 +41,6 @@ object AnonAdditionaldocument {
     status: String
   ): AnonAdditionaldocument = {
     val __obj = js.Dynamic.literal(additional_document = additional_document.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], details_code = details_code.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAdditionaldocument]
   }
 }

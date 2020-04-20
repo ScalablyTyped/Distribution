@@ -17,7 +17,6 @@ object IonItemOptions {
   @scala.inline
   def apply(fireSwipeEvent: () => js.Promise[Unit], side: Side): IonItemOptions = {
     val __obj = js.Dynamic.literal(fireSwipeEvent = js.Any.fromFunction0(fireSwipeEvent), side = side.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IonItemOptions]
   }
 }

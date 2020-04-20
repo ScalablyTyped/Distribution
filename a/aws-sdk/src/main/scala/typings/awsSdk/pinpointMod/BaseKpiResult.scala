@@ -16,7 +16,6 @@ object BaseKpiResult {
   @scala.inline
   def apply(Rows: ListOfResultRow): BaseKpiResult = {
     val __obj = js.Dynamic.literal(Rows = Rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseKpiResult]
   }
 }

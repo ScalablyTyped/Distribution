@@ -12,7 +12,6 @@ object AcsTokenResult {
   @scala.inline
   def apply(parse: String => AcsTokenResponse): AcsTokenResult = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
-  
     __obj.asInstanceOf[AcsTokenResult]
   }
 }

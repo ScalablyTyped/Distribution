@@ -17,7 +17,6 @@ object FastFieldProps {
   @scala.inline
   def apply[V](field: FieldInputProps[V], form: FormikProps[V], meta: FieldMetaProps[V]): FastFieldProps[V] = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FastFieldProps[V]]
   }
 }

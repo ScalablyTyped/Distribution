@@ -13,7 +13,6 @@ object TypeofImagebuilder {
   @scala.inline
   def apply(Types: TypeofImagebuilder): TypeofImagebuilder = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofImagebuilder]
   }
 }

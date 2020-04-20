@@ -13,7 +13,6 @@ object ViewDocument {
   @scala.inline
   def apply[D](_id: String, views: StringDictionary[View[D]]): ViewDocument[D] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViewDocument[D]]
   }
 }

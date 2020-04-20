@@ -33,7 +33,6 @@ object GetSampledRequestsRequest {
     WebAclId: ResourceId
   ): GetSampledRequestsRequest = {
     val __obj = js.Dynamic.literal(MaxItems = MaxItems.asInstanceOf[js.Any], RuleId = RuleId.asInstanceOf[js.Any], TimeWindow = TimeWindow.asInstanceOf[js.Any], WebAclId = WebAclId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSampledRequestsRequest]
   }
 }

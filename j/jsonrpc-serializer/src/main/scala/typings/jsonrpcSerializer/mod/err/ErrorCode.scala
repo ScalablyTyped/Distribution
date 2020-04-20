@@ -22,16 +22,14 @@ trait ErrorCode extends js.Object
 
 object ErrorCode {
   @scala.inline
-  def `-32600`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32600` = this.cast(-32600)
+  def `-32600`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32600` = -32600.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32600`]
   @scala.inline
-  def `-32601`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32601` = this.cast(-32601)
+  def `-32601`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32601` = -32601.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32601`]
   @scala.inline
-  def `-32602`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32602` = this.cast(-32602)
+  def `-32602`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32602` = -32602.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32602`]
   @scala.inline
-  def `-32603`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32603` = this.cast(-32603)
+  def `-32603`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32603` = -32603.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32603`]
   @scala.inline
-  def `-32700`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32700` = this.cast(-32700)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `-32700`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32700` = -32700.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32700`]
 }
 

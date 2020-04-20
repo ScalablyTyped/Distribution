@@ -14,14 +14,12 @@ trait GatsbyStages extends js.Object
 
 object GatsbyStages {
   @scala.inline
-  def `build-html`: typings.gatsby.gatsbyStrings.`build-html` = this.cast("build-html")
+  def `build-html`: typings.gatsby.gatsbyStrings.`build-html` = "build-html".asInstanceOf[typings.gatsby.gatsbyStrings.`build-html`]
   @scala.inline
-  def `build-javascript`: typings.gatsby.gatsbyStrings.`build-javascript` = this.cast("build-javascript")
+  def `build-javascript`: typings.gatsby.gatsbyStrings.`build-javascript` = "build-javascript".asInstanceOf[typings.gatsby.gatsbyStrings.`build-javascript`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def develop: typings.gatsby.gatsbyStrings.develop = "develop".asInstanceOf[typings.gatsby.gatsbyStrings.develop]
   @scala.inline
-  def develop: typings.gatsby.gatsbyStrings.develop = this.cast("develop")
-  @scala.inline
-  def `develop-html`: typings.gatsby.gatsbyStrings.`develop-html` = this.cast("develop-html")
+  def `develop-html`: typings.gatsby.gatsbyStrings.`develop-html` = "develop-html".asInstanceOf[typings.gatsby.gatsbyStrings.`develop-html`]
 }
 

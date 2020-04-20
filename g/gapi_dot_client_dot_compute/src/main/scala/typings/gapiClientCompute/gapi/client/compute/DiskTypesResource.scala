@@ -25,7 +25,6 @@ object DiskTypesResource {
     list: AnonFields => Request_[DiskTypeList]
   ): DiskTypesResource = {
     val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[DiskTypesResource]
   }
 }

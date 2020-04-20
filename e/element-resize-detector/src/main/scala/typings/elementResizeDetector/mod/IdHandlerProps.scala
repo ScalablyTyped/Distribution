@@ -14,7 +14,6 @@ object IdHandlerProps {
   @scala.inline
   def apply(get: (HTMLElement, Boolean) => String, set: HTMLElement => String): IdHandlerProps = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[IdHandlerProps]
   }
 }

@@ -12,7 +12,6 @@ object Props {
   @scala.inline
   def apply(style: js.Array[_]): Props = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Props]
   }
 }

@@ -24,7 +24,6 @@ object CreateConditionalForwarderRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, DnsIpAddrs: DnsIpAddrs, RemoteDomainName: RemoteDomainName): CreateConditionalForwarderRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], DnsIpAddrs = DnsIpAddrs.asInstanceOf[js.Any], RemoteDomainName = RemoteDomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateConditionalForwarderRequest]
   }
 }

@@ -26,7 +26,6 @@ object IPromptStyle {
     message: TextStyle
   ): IPromptStyle = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], inputFirst = inputFirst.asInstanceOf[js.Any], inputGroup = inputGroup.asInstanceOf[js.Any], inputLast = inputLast.asInstanceOf[js.Any], inputWrapper = inputWrapper.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPromptStyle]
   }
 }

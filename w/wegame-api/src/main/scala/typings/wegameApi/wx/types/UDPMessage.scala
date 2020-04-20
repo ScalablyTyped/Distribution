@@ -21,7 +21,6 @@ object UDPMessage {
   @scala.inline
   def apply(message: ArrayBuffer, remoteInfo: AnonAddress): UDPMessage = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], remoteInfo = remoteInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UDPMessage]
   }
 }

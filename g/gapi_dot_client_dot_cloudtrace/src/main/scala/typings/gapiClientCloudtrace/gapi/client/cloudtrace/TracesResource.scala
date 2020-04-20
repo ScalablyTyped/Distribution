@@ -22,7 +22,6 @@ object TracesResource {
   @scala.inline
   def apply(batchWrite: AnonAccesstoken => Request_[js.Object], spans: SpansResource): TracesResource = {
     val __obj = js.Dynamic.literal(batchWrite = js.Any.fromFunction1(batchWrite), spans = spans.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TracesResource]
   }
 }

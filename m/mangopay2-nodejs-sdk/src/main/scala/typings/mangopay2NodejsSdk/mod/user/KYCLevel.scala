@@ -12,10 +12,8 @@ trait KYCLevel extends js.Object
 
 object KYCLevel {
   @scala.inline
-  def LIGHT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LIGHT = this.cast("LIGHT")
+  def LIGHT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LIGHT = "LIGHT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LIGHT]
   @scala.inline
-  def REGULAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR = this.cast("REGULAR")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def REGULAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR = "REGULAR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR]
 }
 

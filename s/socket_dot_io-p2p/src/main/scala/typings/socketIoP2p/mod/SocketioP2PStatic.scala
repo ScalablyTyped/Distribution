@@ -51,7 +51,6 @@ object SocketioP2PStatic {
     useSockets: Boolean
   ): SocketioP2PStatic = {
     val __obj = js.Dynamic.literal(binarySlice = js.Any.fromFunction3(binarySlice), cb = js.Any.fromFunction0(cb), decoder = decoder.asInstanceOf[js.Any], defaultOps = defaultOps.asInstanceOf[js.Any], disconnect = js.Any.fromFunction0(disconnect), emit = js.Any.fromFunction2(emit), numConnectedClients = numConnectedClients.asInstanceOf[js.Any], on = js.Any.fromFunction2(on), opts = opts.asInstanceOf[js.Any], peerOpts = peerOpts.asInstanceOf[js.Any], setupPeerEvents = js.Any.fromFunction1(setupPeerEvents), socket = socket.asInstanceOf[js.Any], upgrade = js.Any.fromFunction0(upgrade), usePeerConnection = usePeerConnection.asInstanceOf[js.Any], useSockets = useSockets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SocketioP2PStatic]
   }
 }

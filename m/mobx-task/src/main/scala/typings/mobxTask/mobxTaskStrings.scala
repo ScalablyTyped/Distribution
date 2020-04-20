@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 
 object mobxTaskStrings {
   @js.native
+  sealed trait args extends js.Object
+  
+  @js.native
   sealed trait error extends QueryableMethods
   
   @js.native
@@ -34,6 +37,11 @@ object mobxTaskStrings {
   @js.native
   sealed trait state extends QueryableMethods
   
+  @js.native
+  sealed trait swallow extends js.Object
+  
+  @scala.inline
+  def args: args = "args".asInstanceOf[args]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -48,5 +56,7 @@ object mobxTaskStrings {
   def result: result = "result".asInstanceOf[result]
   @scala.inline
   def state: state = "state".asInstanceOf[state]
+  @scala.inline
+  def swallow: swallow = "swallow".asInstanceOf[swallow]
 }
 

@@ -13,7 +13,6 @@ object GoogleOAuth2Client {
   @scala.inline
   def apply(getRequestMetadata: (String, js.Function2[/* err */ Error, /* headers */ js.Any, Unit]) => Unit): GoogleOAuth2Client = {
     val __obj = js.Dynamic.literal(getRequestMetadata = js.Any.fromFunction2(getRequestMetadata))
-  
     __obj.asInstanceOf[GoogleOAuth2Client]
   }
 }

@@ -12,10 +12,8 @@ trait HistoryActionType extends js.Object
 
 object HistoryActionType {
   @scala.inline
-  def POP: typings.reachRouter.reachRouterStrings.POP = this.cast("POP")
+  def POP: typings.reachRouter.reachRouterStrings.POP = "POP".asInstanceOf[typings.reachRouter.reachRouterStrings.POP]
   @scala.inline
-  def PUSH: typings.reachRouter.reachRouterStrings.PUSH = this.cast("PUSH")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUSH: typings.reachRouter.reachRouterStrings.PUSH = "PUSH".asInstanceOf[typings.reachRouter.reachRouterStrings.PUSH]
 }
 

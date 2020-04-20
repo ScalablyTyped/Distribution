@@ -22,7 +22,6 @@ object IVaultSharedLinkOperations {
     GetSharedLinksByObject: IObjID => ISharedLinkInfos
   ): IVaultSharedLinkOperations = {
     val __obj = js.Dynamic.literal(CreateSharedLink = js.Any.fromFunction1(CreateSharedLink), DeleteSharedLink = js.Any.fromFunction1(DeleteSharedLink), GetSharedLink = js.Any.fromFunction1(GetSharedLink), GetSharedLinks = js.Any.fromFunction1(GetSharedLinks), GetSharedLinksByObject = js.Any.fromFunction1(GetSharedLinksByObject))
-  
     __obj.asInstanceOf[IVaultSharedLinkOperations]
   }
 }

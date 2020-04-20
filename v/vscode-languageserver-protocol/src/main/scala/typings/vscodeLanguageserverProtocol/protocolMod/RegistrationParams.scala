@@ -12,7 +12,6 @@ object RegistrationParams {
   @scala.inline
   def apply(registrations: js.Array[Registration]): RegistrationParams = {
     val __obj = js.Dynamic.literal(registrations = registrations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegistrationParams]
   }
 }

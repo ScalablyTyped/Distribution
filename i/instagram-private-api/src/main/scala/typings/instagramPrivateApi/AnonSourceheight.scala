@@ -13,7 +13,6 @@ object AnonSourceheight {
   @scala.inline
   def apply(source_height: Double, source_width: Double): AnonSourceheight = {
     val __obj = js.Dynamic.literal(source_height = source_height.asInstanceOf[js.Any], source_width = source_width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSourceheight]
   }
 }

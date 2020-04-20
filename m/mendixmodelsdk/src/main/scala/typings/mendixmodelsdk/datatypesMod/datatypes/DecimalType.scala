@@ -47,21 +47,21 @@ class DecimalType protected () extends DataType {
   @JSName("model")
   var model_FDecimalType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  def containerAsAppServiceActionParameter_MDecimalType(): AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MDecimalType: AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  def containerAsAppServiceAction_MDecimalType(): AppServiceAction = js.native
+  def containerAsAppServiceAction_MDecimalType: AppServiceAction = js.native
   @JSName("containerAsConstant")
-  def containerAsConstant_MDecimalType(): Constant = js.native
+  def containerAsConstant_MDecimalType: Constant = js.native
   @JSName("containerAsDataSetParameter")
-  def containerAsDataSetParameter_MDecimalType(): DataSetParameter = js.native
+  def containerAsDataSetParameter_MDecimalType: DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  def containerAsDocumentTemplateParameter_MDecimalType(): DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MDecimalType: DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  def containerAsImportMapping_MDecimalType(): ImportMapping = js.native
+  def containerAsImportMapping_MDecimalType: ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  def containerAsMicroflowBase_MDecimalType(): MicroflowBase = js.native
+  def containerAsMicroflowBase_MDecimalType: MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  def containerAsMicroflowParameterBase_MDecimalType(): MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterBase_MDecimalType: MicroflowParameterBase = js.native
 }
 
 /* static members */

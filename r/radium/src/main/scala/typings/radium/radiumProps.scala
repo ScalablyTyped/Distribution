@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait radiumProps {
   @scala.inline
-  def RadiumStyleProps: StyleProps.type = typings.radium.mod.Radium.StyleProps
+  def RadiumStyleProps: StyleProps.type = StyleProps
   type RadiumStyleProps = StyleProps
   @scala.inline
-  def RadiumStyleRootProps: StyleRootProps.type = typings.radium.mod.Radium.StyleRootProps
+  def RadiumStyleRootProps: StyleRootProps.type = StyleRootProps
   type RadiumStyleRootProps = StyleRootProps
 }
 

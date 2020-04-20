@@ -43,7 +43,7 @@ class Uri () extends UriComponents {
     * namely the server name, would be missing. Therefore `Uri#fsPath` exists - it's sugar to ease working
     * with URIs that represent files on disk (`file` scheme).
     */
-  def fsPath(): String = js.native
+  def fsPath: String = js.native
   def toJSON(): UriComponents = js.native
   def toString(skipEncoding: Boolean): String = js.native
   def `with`(change: AnonAuthority): Uri = js.native

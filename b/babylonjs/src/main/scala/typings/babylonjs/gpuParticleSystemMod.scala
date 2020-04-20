@@ -102,7 +102,7 @@ object gpuParticleSystemMod extends js.Object {
     /**
       * Gets or set the number of active particles
       */
-    def activeParticleCount(): Double = js.native
+    def activeParticleCount: Double = js.native
     def activeParticleCount(value: Double): js.Any = js.native
     /**
       * Not supported by GPUParticleSystem
@@ -354,7 +354,7 @@ object gpuParticleSystemMod extends js.Object {
       * Specifies if the particles are updated in emitter local space or world space.
       * This is always false for GPU particles
       */
-    def isLocal(): Boolean = js.native
+    def isLocal: Boolean = js.native
     def isLocal(value: Boolean): js.Any = js.native
     /**
       * Is this system ready to be used/rendered
@@ -541,7 +541,7 @@ object gpuParticleSystemMod extends js.Object {
       * Gets or sets a boolean indicating that ramp gradients must be used
       * @see http://doc.babylonjs.com/babylon101/particles#ramp-gradients
       */
-    def useRampGradients(): Boolean = js.native
+    def useRampGradients: Boolean = js.native
     def useRampGradients(value: Boolean): js.Any = js.native
   }
   
@@ -551,7 +551,7 @@ object gpuParticleSystemMod extends js.Object {
     /**
       * Gets a boolean indicating if the GPU particles can be rendered on current browser
       */
-    def IsSupported(): Boolean = js.native
+    def IsSupported: Boolean = js.native
     /**
       * Parses a JSON object to create a GPU particle system.
       * @param parsedParticleSystem The JSON object to parse

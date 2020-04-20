@@ -14,10 +14,8 @@ trait WdCalendarTypeBi extends js.Object
 
 object WdCalendarTypeBi {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCalendarTypeBidi: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def wdCalendarTypeBidi: `99` = this.cast(99)
-  @scala.inline
-  def wdCalendarTypeGregorian: `100` = this.cast(100)
+  def wdCalendarTypeGregorian: `100` = 100.asInstanceOf[`100`]
 }
 

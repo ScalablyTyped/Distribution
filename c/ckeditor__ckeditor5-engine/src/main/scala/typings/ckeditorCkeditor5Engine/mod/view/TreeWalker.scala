@@ -14,7 +14,7 @@ class TreeWalker protected () extends js.Object {
   val boundaries: Range = js.native
   val direction: TreeWalkerDirection = js.native
   val ignoreElementEnd: Boolean = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[Iterator[TreeWalkerValue, _, js.UndefOr[scala.Nothing]]] = js.native
   val position: Position = js.native
   val shallow: Boolean = js.native

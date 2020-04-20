@@ -14,7 +14,6 @@ object RenderOptions {
   @scala.inline
   def apply(render: Fn0): RenderOptions = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderOptions]
   }
 }

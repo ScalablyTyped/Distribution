@@ -23,7 +23,6 @@ object SketchMSDocumentAssets {
     images: js.Array[_]
   ): SketchMSDocumentAssets = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], gradients = gradients.asInstanceOf[js.Any], imageCollection = imageCollection.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSDocumentAssets]
   }
 }

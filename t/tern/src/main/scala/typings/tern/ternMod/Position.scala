@@ -13,7 +13,6 @@ object Position {
   @scala.inline
   def apply(ch: Double, line: Double): Position = {
     val __obj = js.Dynamic.literal(ch = ch.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Position]
   }
 }

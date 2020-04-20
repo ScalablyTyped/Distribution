@@ -19,22 +19,20 @@ trait AbsoluteSize
 
 object AbsoluteSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def large: typings.csstype.csstypeStrings.large = "large".asInstanceOf[typings.csstype.csstypeStrings.large]
   @scala.inline
-  def large: typings.csstype.csstypeStrings.large = this.cast("large")
+  def medium: typings.csstype.csstypeStrings.medium = "medium".asInstanceOf[typings.csstype.csstypeStrings.medium]
   @scala.inline
-  def medium: typings.csstype.csstypeStrings.medium = this.cast("medium")
+  def small: typings.csstype.csstypeStrings.small = "small".asInstanceOf[typings.csstype.csstypeStrings.small]
   @scala.inline
-  def small: typings.csstype.csstypeStrings.small = this.cast("small")
+  def `x-large`: typings.csstype.csstypeStrings.`x-large` = "x-large".asInstanceOf[typings.csstype.csstypeStrings.`x-large`]
   @scala.inline
-  def `x-large`: typings.csstype.csstypeStrings.`x-large` = this.cast("x-large")
+  def `x-small`: typings.csstype.csstypeStrings.`x-small` = "x-small".asInstanceOf[typings.csstype.csstypeStrings.`x-small`]
   @scala.inline
-  def `x-small`: typings.csstype.csstypeStrings.`x-small` = this.cast("x-small")
+  def `xx-large`: typings.csstype.csstypeStrings.`xx-large` = "xx-large".asInstanceOf[typings.csstype.csstypeStrings.`xx-large`]
   @scala.inline
-  def `xx-large`: typings.csstype.csstypeStrings.`xx-large` = this.cast("xx-large")
+  def `xx-small`: typings.csstype.csstypeStrings.`xx-small` = "xx-small".asInstanceOf[typings.csstype.csstypeStrings.`xx-small`]
   @scala.inline
-  def `xx-small`: typings.csstype.csstypeStrings.`xx-small` = this.cast("xx-small")
-  @scala.inline
-  def `xxx-large`: typings.csstype.csstypeStrings.`xxx-large` = this.cast("xxx-large")
+  def `xxx-large`: typings.csstype.csstypeStrings.`xxx-large` = "xxx-large".asInstanceOf[typings.csstype.csstypeStrings.`xxx-large`]
 }
 

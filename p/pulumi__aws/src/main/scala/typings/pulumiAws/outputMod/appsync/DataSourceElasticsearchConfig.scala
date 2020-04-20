@@ -20,7 +20,6 @@ object DataSourceElasticsearchConfig {
   @scala.inline
   def apply(endpoint: String, region: String): DataSourceElasticsearchConfig = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataSourceElasticsearchConfig]
   }
 }

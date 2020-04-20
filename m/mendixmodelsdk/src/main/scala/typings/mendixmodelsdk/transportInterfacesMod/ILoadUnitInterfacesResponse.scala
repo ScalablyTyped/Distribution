@@ -13,7 +13,6 @@ object ILoadUnitInterfacesResponse {
   @scala.inline
   def apply(eventId: Double, units: js.Array[IAbstractUnitJson]): ILoadUnitInterfacesResponse = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], units = units.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILoadUnitInterfacesResponse]
   }
 }

@@ -13,7 +13,6 @@ object AnonClosed {
   @scala.inline
   def apply(closed: Boolean, closing: Boolean): AnonClosed = {
     val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], closing = closing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClosed]
   }
 }

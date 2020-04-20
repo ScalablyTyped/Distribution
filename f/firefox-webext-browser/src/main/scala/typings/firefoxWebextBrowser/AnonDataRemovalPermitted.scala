@@ -24,7 +24,6 @@ object AnonDataRemovalPermitted {
   @scala.inline
   def apply(dataRemovalPermitted: DataTypeSet, dataToRemove: DataTypeSet, options: RemovalOptions): AnonDataRemovalPermitted = {
     val __obj = js.Dynamic.literal(dataRemovalPermitted = dataRemovalPermitted.asInstanceOf[js.Any], dataToRemove = dataToRemove.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDataRemovalPermitted]
   }
 }

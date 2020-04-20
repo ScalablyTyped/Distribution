@@ -4,6 +4,7 @@ import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
@@ -25,12 +26,12 @@ object ^ extends js.Object {
   ] = js.native
   def apply(
     fn: js.Function3[
-      /* request */ Request_[ParamsDictionary], 
+      /* request */ Request_[ParamsDictionary, _, _, Query], 
       /* response */ Response_[_], 
       /* time */ Double, 
       _
     ]
-  ): RequestHandler[ParamsDictionary] = js.native
+  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(options: ResponseTimeOptions): js.Function3[
     /* request */ IncomingMessage, 
     /* response */ ServerResponse, 

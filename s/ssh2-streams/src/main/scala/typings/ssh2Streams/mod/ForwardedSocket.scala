@@ -12,7 +12,6 @@ object ForwardedSocket {
   @scala.inline
   def apply(socketPath: String): ForwardedSocket = {
     val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ForwardedSocket]
   }
 }

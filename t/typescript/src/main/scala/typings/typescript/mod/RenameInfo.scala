@@ -30,7 +30,6 @@ object RenameInfo {
   @scala.inline
   def RenameInfoFailure(canRename: `false`, localizedErrorMessage: java.lang.String): RenameInfo = {
     val __obj = js.Dynamic.literal(canRename = canRename.asInstanceOf[js.Any], localizedErrorMessage = localizedErrorMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenameInfo]
   }
 }

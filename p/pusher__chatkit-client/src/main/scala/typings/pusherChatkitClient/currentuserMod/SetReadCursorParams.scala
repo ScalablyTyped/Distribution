@@ -13,7 +13,6 @@ object SetReadCursorParams {
   @scala.inline
   def apply(position: Double, roomId: String): SetReadCursorParams = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], roomId = roomId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetReadCursorParams]
   }
 }

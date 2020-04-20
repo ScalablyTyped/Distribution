@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactCountdownCircleTimerComponents extends reactCountdownCircleTimerProps {
   @scala.inline
-  def CountdownCircleTimer: ComponentType[CountdownCircleTimerProps] = js.constructorOf[typings.reactCountdownCircleTimer.mod.CountdownCircleTimer].asInstanceOf[typings.react.mod.ComponentType[CountdownCircleTimerProps]]
+  def CountdownCircleTimer: ComponentType[CountdownCircleTimerProps] = js.constructorOf[typings.reactCountdownCircleTimer.mod.CountdownCircleTimer].asInstanceOf[ComponentType[CountdownCircleTimerProps]]
 }
 

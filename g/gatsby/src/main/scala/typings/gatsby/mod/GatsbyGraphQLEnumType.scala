@@ -15,7 +15,6 @@ object GatsbyGraphQLEnumType {
   @scala.inline
   def apply(config: ComposeEnumTypeConfig, kind: ENUM): GatsbyGraphQLEnumType = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GatsbyGraphQLEnumType]
   }
 }

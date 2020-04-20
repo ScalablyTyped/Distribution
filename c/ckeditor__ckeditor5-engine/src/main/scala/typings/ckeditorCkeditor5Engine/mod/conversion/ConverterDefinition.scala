@@ -23,7 +23,6 @@ object ConverterDefinition {
     view: ElementDefinition | js.Object
   ): ConverterDefinition = {
     val __obj = js.Dynamic.literal(converterPriority = converterPriority.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], upcastAlso = upcastAlso.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConverterDefinition]
   }
 }

@@ -14,10 +14,8 @@ trait PIN_STATE extends js.Object
 
 object PIN_STATE {
   @scala.inline
-  def HIGH: `1` = this.cast(1)
+  def HIGH: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def LOW: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def LOW: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -19,24 +19,22 @@ trait RubyAlignProperty extends js.Object
 
 object RubyAlignProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.csstype.csstypeStrings.center = "center".asInstanceOf[typings.csstype.csstypeStrings.center]
   @scala.inline
-  def center: typings.csstype.csstypeStrings.center = this.cast("center")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def `space-around`: typings.csstype.csstypeStrings.`space-around` = "space-around".asInstanceOf[typings.csstype.csstypeStrings.`space-around`]
   @scala.inline
-  def `space-around`: typings.csstype.csstypeStrings.`space-around` = this.cast("space-around")
+  def `space-between`: typings.csstype.csstypeStrings.`space-between` = "space-between".asInstanceOf[typings.csstype.csstypeStrings.`space-between`]
   @scala.inline
-  def `space-between`: typings.csstype.csstypeStrings.`space-between` = this.cast("space-between")
+  def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
   @scala.inline
-  def start: typings.csstype.csstypeStrings.start = this.cast("start")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

@@ -12,7 +12,6 @@ object AnonOverwrite {
   @scala.inline
   def apply(overwrite: Boolean): AnonOverwrite = {
     val __obj = js.Dynamic.literal(overwrite = overwrite.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOverwrite]
   }
 }

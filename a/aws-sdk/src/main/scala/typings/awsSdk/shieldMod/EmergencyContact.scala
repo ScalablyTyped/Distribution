@@ -16,7 +16,6 @@ object EmergencyContact {
   @scala.inline
   def apply(EmailAddress: EmailAddress): EmergencyContact = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EmergencyContact]
   }
 }

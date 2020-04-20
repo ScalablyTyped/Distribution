@@ -1,5 +1,6 @@
 package typings.tslint
 
+import org.scalablytyped.runtime.TopLevel
 import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRule
 import typings.tslint.ruleMod.IRuleMetadata
@@ -56,6 +57,6 @@ object abstractRuleMod extends js.Object {
     var metadata: IRuleMetadata = js.native
   }
   
-  type NoInfer[T] = T with typings.tslint.tslintStrings.NoInfer
+  type NoInfer[T] = T with typings.tslint.tslintStrings.NoInfer with TopLevel[T]
 }
 

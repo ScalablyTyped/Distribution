@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__ui-components"
-version := "2.1.0-ef1be9"
+version := "2.1.0-947004"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
-  "org.scalablytyped" %%% "free-style" % "3.1.0-811240",
-  "org.scalablytyped" %%% "lumino__algorithm" % "1.2.3-935244",
-  "org.scalablytyped" %%% "lumino__commands" % "1.10.1-857d11",
-  "org.scalablytyped" %%% "lumino__coreutils" % "1.4.2-dc12c7",
-  "org.scalablytyped" %%% "lumino__disposable" % "1.3.5-0b92af",
-  "org.scalablytyped" %%% "lumino__messaging" % "1.3.3-8057f4",
-  "org.scalablytyped" %%% "lumino__signaling" % "1.3.5-97c4b4",
-  "org.scalablytyped" %%% "lumino__virtualdom" % "1.6.1-57e815",
-  "org.scalablytyped" %%% "lumino__widgets" % "1.11.1-eab737",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "typestyle" % "2.1.0-006ad9")
+  "org.scalablytyped" %%% "csstype" % "2.6.9-313239",
+  "org.scalablytyped" %%% "free-style" % "3.1.0-742fcb",
+  "org.scalablytyped" %%% "lumino__algorithm" % "1.2.3-20681f",
+  "org.scalablytyped" %%% "lumino__commands" % "1.10.1-c3d523",
+  "org.scalablytyped" %%% "lumino__coreutils" % "1.4.2-769091",
+  "org.scalablytyped" %%% "lumino__disposable" % "1.3.5-4f5e15",
+  "org.scalablytyped" %%% "lumino__messaging" % "1.3.3-e98446",
+  "org.scalablytyped" %%% "lumino__signaling" % "1.3.5-4057d2",
+  "org.scalablytyped" %%% "lumino__virtualdom" % "1.6.1-2aab2c",
+  "org.scalablytyped" %%% "lumino__widgets" % "1.11.1-b1d647",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-11830c",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200409Z-0bc722",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470",
+  "org.scalablytyped" %%% "typestyle" % "2.1.0-f63237")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -16,7 +16,6 @@ object GetConfigurationSetRequest {
   @scala.inline
   def apply(ConfigurationSetName: ConfigurationSetName): GetConfigurationSetRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetConfigurationSetRequest]
   }
 }

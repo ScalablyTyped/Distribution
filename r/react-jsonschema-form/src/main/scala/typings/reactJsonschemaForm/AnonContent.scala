@@ -16,7 +16,6 @@ object AnonContent {
   @scala.inline
   def apply(content: ReactElement, disabled: Boolean, name: String, readonly: Boolean): AnonContent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContent]
   }
 }

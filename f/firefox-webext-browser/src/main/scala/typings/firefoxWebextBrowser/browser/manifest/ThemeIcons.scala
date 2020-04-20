@@ -17,7 +17,6 @@ object ThemeIcons {
   @scala.inline
   def apply(dark: ExtensionURL, light: ExtensionURL, size: Double): ThemeIcons = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThemeIcons]
   }
 }

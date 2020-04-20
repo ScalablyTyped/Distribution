@@ -16,12 +16,10 @@ trait Operation extends js.Object
 
 object Operation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def mutation: mutation_ = "mutation".asInstanceOf[mutation_]
   @scala.inline
-  def mutation: mutation_ = this.cast("mutation")
+  def query: query_ = "query".asInstanceOf[query_]
   @scala.inline
-  def query: query_ = this.cast("query")
-  @scala.inline
-  def subscription: subscription_ = this.cast("subscription")
+  def subscription: subscription_ = "subscription".asInstanceOf[subscription_]
 }
 

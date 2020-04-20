@@ -21,7 +21,6 @@ object AliasFieldPlugin {
     target: String
   ): AliasFieldPlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), field = field.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AliasFieldPlugin]
   }
 }

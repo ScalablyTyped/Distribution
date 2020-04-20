@@ -30,7 +30,6 @@ object IMetadataStructureSelector {
     StructureItemType: MFMetadataStructureItem
   ): IMetadataStructureSelector = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Flags = Flags.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], StructureItemGUID = StructureItemGUID.asInstanceOf[js.Any], StructureItemID = StructureItemID.asInstanceOf[js.Any], StructureItemSemanticAlias = StructureItemSemanticAlias.asInstanceOf[js.Any], StructureItemType = StructureItemType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMetadataStructureSelector]
   }
 }

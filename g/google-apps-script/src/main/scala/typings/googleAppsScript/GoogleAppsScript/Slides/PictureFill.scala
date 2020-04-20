@@ -24,7 +24,6 @@ object PictureFill {
     getSourceUrl: () => String
   ): PictureFill = {
     val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob), getContentUrl = js.Any.fromFunction0(getContentUrl), getSourceUrl = js.Any.fromFunction0(getSourceUrl))
-  
     __obj.asInstanceOf[PictureFill]
   }
 }

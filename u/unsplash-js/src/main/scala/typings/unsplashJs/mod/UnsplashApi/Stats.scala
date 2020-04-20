@@ -13,7 +13,6 @@ object Stats {
   @scala.inline
   def apply(total: () => js.Promise[Response]): Stats = {
     val __obj = js.Dynamic.literal(total = js.Any.fromFunction0(total))
-  
     __obj.asInstanceOf[Stats]
   }
 }

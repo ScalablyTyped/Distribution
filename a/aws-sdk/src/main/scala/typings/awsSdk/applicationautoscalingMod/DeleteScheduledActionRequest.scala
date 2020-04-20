@@ -33,7 +33,6 @@ object DeleteScheduledActionRequest {
     ServiceNamespace: ServiceNamespace
   ): DeleteScheduledActionRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ScheduledActionName = ScheduledActionName.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteScheduledActionRequest]
   }
 }

@@ -35,7 +35,6 @@ object ITextState {
   @scala.inline
   def apply(charWidth: Double, column: Double, line: Double, lineHeight: Double, text: String): ITextState = {
     val __obj = js.Dynamic.literal(charWidth = charWidth.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITextState]
   }
 }

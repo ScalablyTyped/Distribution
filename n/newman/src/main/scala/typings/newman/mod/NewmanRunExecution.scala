@@ -13,7 +13,6 @@ object NewmanRunExecution {
   @scala.inline
   def apply(assertions: js.Array[NewmanRunExecutionAssertion], item: NewmanRunExecutionItem): NewmanRunExecution = {
     val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NewmanRunExecution]
   }
 }

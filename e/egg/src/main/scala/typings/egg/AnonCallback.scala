@@ -21,7 +21,6 @@ object AnonCallback {
     whiteList: String | RegExp | (js.Array[String | RegExp])
   ): AnonCallback = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], csrf = csrf.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCallback]
   }
 }

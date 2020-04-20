@@ -20,7 +20,6 @@ object DescribePlacementRequest {
   @scala.inline
   def apply(placementName: PlacementName, projectName: ProjectName): DescribePlacementRequest = {
     val __obj = js.Dynamic.literal(placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePlacementRequest]
   }
 }

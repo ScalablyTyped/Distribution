@@ -13,7 +13,6 @@ object PickImplminLength {
   @scala.inline
   def apply(minLength: String): PickImplminLength = {
     val __obj = js.Dynamic.literal(minLength = minLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplminLength]
   }
 }

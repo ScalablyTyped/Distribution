@@ -41,7 +41,6 @@ object sorter {
     createSortFunction: (js.Object, Read) => js.Array[String]
   ): sorter = {
     val __obj = js.Dynamic.literal(basicComparator = js.Any.fromFunction2(basicComparator), createSortFunction = js.Any.fromFunction2(createSortFunction))
-  
     __obj.asInstanceOf[sorter]
   }
 }

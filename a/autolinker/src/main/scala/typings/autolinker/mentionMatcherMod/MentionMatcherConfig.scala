@@ -15,7 +15,6 @@ object MentionMatcherConfig {
   @scala.inline
   def apply(serviceName: MentionServices, tagBuilder: AnchorTagBuilder): MentionMatcherConfig = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MentionMatcherConfig]
   }
 }

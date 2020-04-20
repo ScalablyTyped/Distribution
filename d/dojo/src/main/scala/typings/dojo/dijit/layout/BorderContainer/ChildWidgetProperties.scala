@@ -58,7 +58,6 @@ object ChildWidgetProperties {
     splitter: Boolean
   ): ChildWidgetProperties = {
     val __obj = js.Dynamic.literal(layoutAlign = layoutAlign.asInstanceOf[js.Any], layoutPriority = layoutPriority.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], splitter = splitter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChildWidgetProperties]
   }
 }

@@ -32,7 +32,6 @@ object FrameBus {
     unsubscribe: (String, js.Function1[/* repeated */ js.Any, _]) => Boolean
   ): FrameBus = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), pub = js.Any.fromFunction2(pub), publish = js.Any.fromFunction2(publish), sub = js.Any.fromFunction2(sub), subscribe = js.Any.fromFunction2(subscribe), trigger = js.Any.fromFunction2(trigger), unsub = js.Any.fromFunction2(unsub), unsubscribe = js.Any.fromFunction2(unsubscribe))
-  
     __obj.asInstanceOf[FrameBus]
   }
 }

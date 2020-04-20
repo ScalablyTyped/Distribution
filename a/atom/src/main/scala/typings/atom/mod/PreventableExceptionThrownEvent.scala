@@ -20,7 +20,6 @@ object PreventableExceptionThrownEvent {
     url: String
   ): PreventableExceptionThrownEvent = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], originalError = originalError.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PreventableExceptionThrownEvent]
   }
 }

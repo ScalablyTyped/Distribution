@@ -16,7 +16,6 @@ object GetInstancePortStatesRequest {
   @scala.inline
   def apply(instanceName: ResourceName): GetInstancePortStatesRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInstancePortStatesRequest]
   }
 }

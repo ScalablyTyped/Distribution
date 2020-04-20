@@ -19,7 +19,6 @@ object TaskExecution {
   @scala.inline
   def apply(task: Task, terminate: () => Unit): TaskExecution = {
     val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any], terminate = js.Any.fromFunction0(terminate))
-  
     __obj.asInstanceOf[TaskExecution]
   }
 }

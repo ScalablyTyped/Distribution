@@ -24,7 +24,6 @@ object Network_ {
     webRTCNonProxiedUdpEnabled: ChromeSetting
   ): Network_ = {
     val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled.asInstanceOf[js.Any], webRTCIPHandlingPolicy = webRTCIPHandlingPolicy.asInstanceOf[js.Any], webRTCMultipleRoutesEnabled = webRTCMultipleRoutesEnabled.asInstanceOf[js.Any], webRTCNonProxiedUdpEnabled = webRTCNonProxiedUdpEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Network_]
   }
 }

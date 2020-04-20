@@ -19,8 +19,8 @@ class Users () extends js.Object {
   def archive(identifier: UserIdentifier, cb: callback[ApiResponse[User]]): Unit = js.native
   def create(user: PartialCreateUpdateUser): js.Promise[ApiResponse[User]] = js.native
   def create(user: PartialCreateUpdateUser, cb: callback[ApiResponse[User]]): Unit = js.native
-  def find(identifier: UserIdentifier): js.Promise[ApiResponse[List]] = js.native
-  def find(identifier: UserIdentifier, cb: callback[ApiResponse[List]]): Unit = js.native
+  def find(identifier: UserIdentifier): js.Promise[ApiResponse[User]] = js.native
+  def find(identifier: UserIdentifier, cb: callback[ApiResponse[User]]): Unit = js.native
   def list(): js.Promise[ApiResponse[List]] = js.native
   def list(cb: callback[ApiResponse[List]]): Unit = js.native
   def listBy(params: AnonSegmentid): js.Promise[ApiResponse[List]] = js.native

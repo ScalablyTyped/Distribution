@@ -14,14 +14,12 @@ trait GtinFormat extends js.Object
 
 object GtinFormat {
   @scala.inline
-  def `GTIN-12`: typings.gtin.gtinStrings.`GTIN-12` = this.cast("GTIN-12")
+  def `GTIN-12`: typings.gtin.gtinStrings.`GTIN-12` = "GTIN-12".asInstanceOf[typings.gtin.gtinStrings.`GTIN-12`]
   @scala.inline
-  def `GTIN-13`: typings.gtin.gtinStrings.`GTIN-13` = this.cast("GTIN-13")
+  def `GTIN-13`: typings.gtin.gtinStrings.`GTIN-13` = "GTIN-13".asInstanceOf[typings.gtin.gtinStrings.`GTIN-13`]
   @scala.inline
-  def `GTIN-14`: typings.gtin.gtinStrings.`GTIN-14` = this.cast("GTIN-14")
+  def `GTIN-14`: typings.gtin.gtinStrings.`GTIN-14` = "GTIN-14".asInstanceOf[typings.gtin.gtinStrings.`GTIN-14`]
   @scala.inline
-  def `GTIN-8`: typings.gtin.gtinStrings.`GTIN-8` = this.cast("GTIN-8")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `GTIN-8`: typings.gtin.gtinStrings.`GTIN-8` = "GTIN-8".asInstanceOf[typings.gtin.gtinStrings.`GTIN-8`]
 }
 

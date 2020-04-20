@@ -16,7 +16,6 @@ object DeleteRelationalDatabaseSnapshotRequest {
   @scala.inline
   def apply(relationalDatabaseSnapshotName: ResourceName): DeleteRelationalDatabaseSnapshotRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseSnapshotName = relationalDatabaseSnapshotName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRelationalDatabaseSnapshotRequest]
   }
 }

@@ -15,16 +15,14 @@ trait ResponseType extends js.Object
 
 object ResponseType {
   @scala.inline
-  def arrayBuffer: typings.reactRequest.reactRequestStrings.arrayBuffer = this.cast("arrayBuffer")
+  def arrayBuffer: typings.reactRequest.reactRequestStrings.arrayBuffer = "arrayBuffer".asInstanceOf[typings.reactRequest.reactRequestStrings.arrayBuffer]
   @scala.inline
-  def blob: typings.reactRequest.reactRequestStrings.blob = this.cast("blob")
+  def blob: typings.reactRequest.reactRequestStrings.blob = "blob".asInstanceOf[typings.reactRequest.reactRequestStrings.blob]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def formData: typings.reactRequest.reactRequestStrings.formData = "formData".asInstanceOf[typings.reactRequest.reactRequestStrings.formData]
   @scala.inline
-  def formData: typings.reactRequest.reactRequestStrings.formData = this.cast("formData")
+  def json: typings.reactRequest.reactRequestStrings.json = "json".asInstanceOf[typings.reactRequest.reactRequestStrings.json]
   @scala.inline
-  def json: typings.reactRequest.reactRequestStrings.json = this.cast("json")
-  @scala.inline
-  def text: typings.reactRequest.reactRequestStrings.text = this.cast("text")
+  def text: typings.reactRequest.reactRequestStrings.text = "text".asInstanceOf[typings.reactRequest.reactRequestStrings.text]
 }
 

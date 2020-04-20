@@ -15,7 +15,6 @@ object TemplateVariableAssignment {
   @scala.inline
   def apply(end: Double, node: PropertyWrite, start: Double): TemplateVariableAssignment = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TemplateVariableAssignment]
   }
 }

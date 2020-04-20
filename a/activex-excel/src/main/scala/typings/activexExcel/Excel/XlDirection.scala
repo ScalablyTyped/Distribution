@@ -18,14 +18,12 @@ trait XlDirection extends js.Object
 
 object XlDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlDown: `-4121` = -4121.asInstanceOf[`-4121`]
   @scala.inline
-  def xlDown: `-4121` = this.cast(-4121)
+  def xlToLeft: `-4159` = -4159.asInstanceOf[`-4159`]
   @scala.inline
-  def xlToLeft: `-4159` = this.cast(-4159)
+  def xlToRight: `-4161` = -4161.asInstanceOf[`-4161`]
   @scala.inline
-  def xlToRight: `-4161` = this.cast(-4161)
-  @scala.inline
-  def xlUp: `-4162` = this.cast(-4162)
+  def xlUp: `-4162` = -4162.asInstanceOf[`-4162`]
 }
 

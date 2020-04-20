@@ -53,7 +53,6 @@ object HistoriesResource {
     list: AnonFilterByName => Request_[ListHistoriesResponse]
   ): HistoriesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), executions = executions.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[HistoriesResource]
   }
 }

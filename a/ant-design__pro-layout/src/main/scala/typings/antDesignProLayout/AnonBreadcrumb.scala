@@ -21,7 +21,6 @@ object AnonBreadcrumb {
     menuData: js.Array[MenuDataItem]
   ): AnonBreadcrumb = {
     val __obj = js.Dynamic.literal(breadcrumb = breadcrumb.asInstanceOf[js.Any], breadcrumbMap = breadcrumbMap.asInstanceOf[js.Any], menuData = menuData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBreadcrumb]
   }
 }

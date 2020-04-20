@@ -14,7 +14,6 @@ object FitDatasetElement {
   @scala.inline
   def apply(xs: TensorOrArrayOrMap, ys: TensorOrArrayOrMap): FitDatasetElement = {
     val __obj = js.Dynamic.literal(xs = xs.asInstanceOf[js.Any], ys = ys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FitDatasetElement]
   }
 }

@@ -13,12 +13,10 @@ trait RequestedExecutionLevel extends js.Object
 
 object RequestedExecutionLevel {
   @scala.inline
-  def asInvoker: typings.appBuilderLib.appBuilderLibStrings.asInvoker = this.cast("asInvoker")
+  def asInvoker: typings.appBuilderLib.appBuilderLibStrings.asInvoker = "asInvoker".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.asInvoker]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def highestAvailable: typings.appBuilderLib.appBuilderLibStrings.highestAvailable = "highestAvailable".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.highestAvailable]
   @scala.inline
-  def highestAvailable: typings.appBuilderLib.appBuilderLibStrings.highestAvailable = this.cast("highestAvailable")
-  @scala.inline
-  def requireAdministrator: typings.appBuilderLib.appBuilderLibStrings.requireAdministrator = this.cast("requireAdministrator")
+  def requireAdministrator: typings.appBuilderLib.appBuilderLibStrings.requireAdministrator = "requireAdministrator".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.requireAdministrator]
 }
 

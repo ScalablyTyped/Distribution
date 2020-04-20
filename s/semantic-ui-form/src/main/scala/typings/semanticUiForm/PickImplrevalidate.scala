@@ -13,7 +13,6 @@ object PickImplrevalidate {
   @scala.inline
   def apply(revalidate: Boolean): PickImplrevalidate = {
     val __obj = js.Dynamic.literal(revalidate = revalidate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplrevalidate]
   }
 }

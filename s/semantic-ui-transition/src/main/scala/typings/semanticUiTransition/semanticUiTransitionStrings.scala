@@ -149,7 +149,7 @@ object semanticUiTransitionStrings {
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
-  def `clear queue`: `clear queue` = "clear queue".asInstanceOf[`clear queue`]
+  def `clear queue`: `clear queue` = ("clear queue").asInstanceOf[`clear queue`]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
@@ -165,23 +165,23 @@ object semanticUiTransitionStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def `force repaint`: `force repaint` = "force repaint".asInstanceOf[`force repaint`]
+  def `force repaint`: `force repaint` = ("force repaint").asInstanceOf[`force repaint`]
   @scala.inline
-  def `get animation event`: `get animation event` = "get animation event".asInstanceOf[`get animation event`]
+  def `get animation event`: `get animation event` = ("get animation event").asInstanceOf[`get animation event`]
   @scala.inline
-  def `get animation name`: `get animation name` = "get animation name".asInstanceOf[`get animation name`]
+  def `get animation name`: `get animation name` = ("get animation name").asInstanceOf[`get animation name`]
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
   @scala.inline
-  def `is animating`: `is animating` = "is animating".asInstanceOf[`is animating`]
+  def `is animating`: `is animating` = ("is animating").asInstanceOf[`is animating`]
   @scala.inline
-  def `is looping`: `is looping` = "is looping".asInstanceOf[`is looping`]
+  def `is looping`: `is looping` = ("is looping").asInstanceOf[`is looping`]
   @scala.inline
-  def `is supported`: `is supported` = "is supported".asInstanceOf[`is supported`]
+  def `is supported`: `is supported` = ("is supported").asInstanceOf[`is supported`]
   @scala.inline
-  def `is visible`: `is visible` = "is visible".asInstanceOf[`is visible`]
+  def `is visible`: `is visible` = ("is visible").asInstanceOf[`is visible`]
   @scala.inline
   def looping: looping = "looping".asInstanceOf[looping]
   @scala.inline
@@ -201,19 +201,19 @@ object semanticUiTransitionStrings {
   @scala.inline
   def queue: queue = "queue".asInstanceOf[queue]
   @scala.inline
-  def `remove looping`: `remove looping` = "remove looping".asInstanceOf[`remove looping`]
+  def `remove looping`: `remove looping` = ("remove looping").asInstanceOf[`remove looping`]
   @scala.inline
   def repaint: repaint = "repaint".asInstanceOf[repaint]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
-  def `restore conditions`: `restore conditions` = "restore conditions".asInstanceOf[`restore conditions`]
+  def `restore conditions`: `restore conditions` = ("restore conditions").asInstanceOf[`restore conditions`]
   @scala.inline
   def reverse: reverse = "reverse".asInstanceOf[reverse]
   @scala.inline
-  def `save conditions`: `save conditions` = "save conditions".asInstanceOf[`save conditions`]
+  def `save conditions`: `save conditions` = ("save conditions").asInstanceOf[`save conditions`]
   @scala.inline
-  def `set duration`: `set duration` = "set duration".asInstanceOf[`set duration`]
+  def `set duration`: `set duration` = ("set duration").asInstanceOf[`set duration`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline
@@ -223,7 +223,7 @@ object semanticUiTransitionStrings {
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
-  def `stop all`: `stop all` = "stop all".asInstanceOf[`stop all`]
+  def `stop all`: `stop all` = ("stop all").asInstanceOf[`stop all`]
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
   @scala.inline

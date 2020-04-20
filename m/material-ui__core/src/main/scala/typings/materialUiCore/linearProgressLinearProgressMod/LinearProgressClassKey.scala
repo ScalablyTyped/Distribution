@@ -28,42 +28,40 @@ trait LinearProgressClassKey extends js.Object
 
 object LinearProgressClassKey {
   @scala.inline
-  def bar: typings.materialUiCore.materialUiCoreStrings.bar = this.cast("bar")
+  def bar: typings.materialUiCore.materialUiCoreStrings.bar = "bar".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.bar]
   @scala.inline
-  def bar1Buffer: typings.materialUiCore.materialUiCoreStrings.bar1Buffer = this.cast("bar1Buffer")
+  def bar1Buffer: typings.materialUiCore.materialUiCoreStrings.bar1Buffer = "bar1Buffer".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.bar1Buffer]
   @scala.inline
-  def bar1Determinate: typings.materialUiCore.materialUiCoreStrings.bar1Determinate = this.cast("bar1Determinate")
+  def bar1Determinate: typings.materialUiCore.materialUiCoreStrings.bar1Determinate = "bar1Determinate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.bar1Determinate]
   @scala.inline
-  def bar1Indeterminate: typings.materialUiCore.materialUiCoreStrings.bar1Indeterminate = this.cast("bar1Indeterminate")
+  def bar1Indeterminate: typings.materialUiCore.materialUiCoreStrings.bar1Indeterminate = "bar1Indeterminate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.bar1Indeterminate]
   @scala.inline
-  def bar2Buffer: typings.materialUiCore.materialUiCoreStrings.bar2Buffer = this.cast("bar2Buffer")
+  def bar2Buffer: typings.materialUiCore.materialUiCoreStrings.bar2Buffer = "bar2Buffer".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.bar2Buffer]
   @scala.inline
-  def bar2Indeterminate: typings.materialUiCore.materialUiCoreStrings.bar2Indeterminate = this.cast("bar2Indeterminate")
+  def bar2Indeterminate: typings.materialUiCore.materialUiCoreStrings.bar2Indeterminate = "bar2Indeterminate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.bar2Indeterminate]
   @scala.inline
-  def barColorPrimary: typings.materialUiCore.materialUiCoreStrings.barColorPrimary = this.cast("barColorPrimary")
+  def barColorPrimary: typings.materialUiCore.materialUiCoreStrings.barColorPrimary = "barColorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.barColorPrimary]
   @scala.inline
-  def barColorSecondary: typings.materialUiCore.materialUiCoreStrings.barColorSecondary = this.cast("barColorSecondary")
+  def barColorSecondary: typings.materialUiCore.materialUiCoreStrings.barColorSecondary = "barColorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.barColorSecondary]
   @scala.inline
-  def buffer: typings.materialUiCore.materialUiCoreStrings.buffer = this.cast("buffer")
+  def buffer: typings.materialUiCore.materialUiCoreStrings.buffer = "buffer".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.buffer]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
   @scala.inline
-  def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = this.cast("colorPrimary")
+  def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = "colorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorSecondary]
   @scala.inline
-  def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = this.cast("colorSecondary")
+  def dashed: typings.materialUiCore.materialUiCoreStrings.dashed = "dashed".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dashed]
   @scala.inline
-  def dashed: typings.materialUiCore.materialUiCoreStrings.dashed = this.cast("dashed")
+  def dashedColorPrimary: typings.materialUiCore.materialUiCoreStrings.dashedColorPrimary = "dashedColorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dashedColorPrimary]
   @scala.inline
-  def dashedColorPrimary: typings.materialUiCore.materialUiCoreStrings.dashedColorPrimary = this.cast("dashedColorPrimary")
+  def dashedColorSecondary: typings.materialUiCore.materialUiCoreStrings.dashedColorSecondary = "dashedColorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dashedColorSecondary]
   @scala.inline
-  def dashedColorSecondary: typings.materialUiCore.materialUiCoreStrings.dashedColorSecondary = this.cast("dashedColorSecondary")
+  def determinate: typings.materialUiCore.materialUiCoreStrings.determinate = "determinate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.determinate]
   @scala.inline
-  def determinate: typings.materialUiCore.materialUiCoreStrings.determinate = this.cast("determinate")
+  def indeterminate: typings.materialUiCore.materialUiCoreStrings.indeterminate = "indeterminate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.indeterminate]
   @scala.inline
-  def indeterminate: typings.materialUiCore.materialUiCoreStrings.indeterminate = this.cast("indeterminate")
+  def query: typings.materialUiCore.materialUiCoreStrings.query = "query".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.query]
   @scala.inline
-  def query: typings.materialUiCore.materialUiCoreStrings.query = this.cast("query")
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

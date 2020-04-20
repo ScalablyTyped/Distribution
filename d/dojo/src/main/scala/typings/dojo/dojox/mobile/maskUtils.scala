@@ -47,7 +47,6 @@ object maskUtils {
     createRoundMask: (HTMLElement, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, Double, Double, js.Any) => Unit
   ): maskUtils = {
     val __obj = js.Dynamic.literal(createRoundMask = js.Any.fromFunction10(createRoundMask))
-  
     __obj.asInstanceOf[maskUtils]
   }
 }

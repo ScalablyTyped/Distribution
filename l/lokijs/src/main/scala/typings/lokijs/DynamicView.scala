@@ -40,7 +40,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
   var resultdata: js.Array[E with LokiObj] = js.native
   var resultsdirty: Boolean = js.native
   var resultset: Resultset[E] = js.native
-  var sortCriteria: (js.Array[js.Tuple2[String, Boolean]]) | Null = js.native
+  var sortCriteria: (js.Array[js.Tuple2[/* keyof E */ String, Boolean]]) | Null = js.native
   var sortDirty: Boolean = js.native
   var sortFunction: (js.Function2[/* a */ E with LokiObj, /* b */ E with LokiObj, Double]) | Null = js.native
   /**
@@ -91,9 +91,9 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [options.useJavascriptSorting] - whether results are sorted via basic javascript sort.
     * @returns this DynamicView object, for further chain ops.
     */
-  def applySimpleSort(propname: String): this.type = js.native
-  def applySimpleSort(propname: String, options: Boolean): this.type = js.native
-  def applySimpleSort(propname: String, options: PartialSimplesortOptions): this.type = js.native
+  def applySimpleSort(propname: /* keyof E */ String): this.type = js.native
+  def applySimpleSort(propname: /* keyof E */ String, options: Boolean): this.type = js.native
+  def applySimpleSort(propname: /* keyof E */ String, options: PartialSimplesortOptions): this.type = js.native
   /**
     * applySort() - Used to apply a sort to the dynamic view
     * @example
@@ -120,7 +120,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param criteria - array of property names or subarray of [propertyname, isdesc] used evaluate sort order
     * @returns Reference to this DynamicView, sorted, for future chain operations.
     */
-  def applySortCriteria(criteria: js.Array[js.Tuple2[String, Boolean]]): this.type = js.native
+  def applySortCriteria(criteria: js.Array[js.Tuple2[/* keyof E */ String, Boolean]]): this.type = js.native
   /**
     * applyWhere() - Adds or updates a javascript filter function in the DynamicView filter pipeline
     *

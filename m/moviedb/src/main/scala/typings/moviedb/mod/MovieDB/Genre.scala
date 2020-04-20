@@ -13,7 +13,6 @@ object Genre {
   @scala.inline
   def apply(id: Double, name: String): Genre = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Genre]
   }
 }

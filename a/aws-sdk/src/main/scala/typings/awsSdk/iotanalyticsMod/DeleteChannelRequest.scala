@@ -16,7 +16,6 @@ object DeleteChannelRequest {
   @scala.inline
   def apply(channelName: ChannelName): DeleteChannelRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteChannelRequest]
   }
 }

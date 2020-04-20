@@ -13,7 +13,6 @@ object AnonSerializableResolvers {
   @scala.inline
   def apply(serializableResolvers: js.Array[SerializableResolver]): AnonSerializableResolvers = {
     val __obj = js.Dynamic.literal(serializableResolvers = serializableResolvers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSerializableResolvers]
   }
 }

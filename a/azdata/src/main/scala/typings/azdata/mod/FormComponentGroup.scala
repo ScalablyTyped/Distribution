@@ -20,7 +20,6 @@ object FormComponentGroup {
   @scala.inline
   def apply(components: js.Array[FormComponentlayoutFormIt], title: String): FormComponentGroup = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FormComponentGroup]
   }
 }

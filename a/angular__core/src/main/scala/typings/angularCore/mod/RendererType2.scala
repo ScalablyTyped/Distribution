@@ -42,7 +42,6 @@ object RendererType2 {
     styles: js.Array[String | js.Array[_]]
   ): RendererType2 = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RendererType2]
   }
 }

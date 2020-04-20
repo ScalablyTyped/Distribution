@@ -27,7 +27,6 @@ object TextDocumentContentChangeEvent {
   @scala.inline
   def apply(range: Range, rangeLength: Double, rangeOffset: Double, text: String): TextDocumentContentChangeEvent = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], rangeLength = rangeLength.asInstanceOf[js.Any], rangeOffset = rangeOffset.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextDocumentContentChangeEvent]
   }
 }

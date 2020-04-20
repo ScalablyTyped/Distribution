@@ -30,7 +30,6 @@ object StepResultPayload {
     stepDefinition: StepDefinition
   ): StepResultPayload = {
     val __obj = js.Dynamic.literal(ambiguousStepDefinitions = ambiguousStepDefinitions.asInstanceOf[js.Any], attachments = attachments.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], failureException = failureException.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stepDefinition = stepDefinition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StepResultPayload]
   }
 }

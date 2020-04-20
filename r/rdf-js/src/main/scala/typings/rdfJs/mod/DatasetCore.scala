@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DatasetCore[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[Iterator[OutQuad, _, js.UndefOr[scala.Nothing]]] = js.native
   /**
     * A non-negative integer that specifies the number of quads in the set.

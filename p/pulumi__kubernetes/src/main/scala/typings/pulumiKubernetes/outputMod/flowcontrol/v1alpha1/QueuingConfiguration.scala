@@ -38,7 +38,6 @@ object QueuingConfiguration {
   @scala.inline
   def apply(handSize: Double, queueLengthLimit: Double, queues: Double): QueuingConfiguration = {
     val __obj = js.Dynamic.literal(handSize = handSize.asInstanceOf[js.Any], queueLengthLimit = queueLengthLimit.asInstanceOf[js.Any], queues = queues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueuingConfiguration]
   }
 }

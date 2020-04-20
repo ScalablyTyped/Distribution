@@ -8,125 +8,94 @@ import scala.scalajs.js.annotation._
 /**
 		 * A table view section is a container within a table used to organize table view rows.
 		 */
-trait TableViewSection extends Proxy {
+@JSGlobal("Titanium.UI.TableViewSection")
+@js.native
+class TableViewSection () extends Proxy {
   /**
   			 * Title of this section footer.
   			 */
-  var footerTitle: String
+  var footerTitle: String = js.native
   /**
   			 * View to use for this section footer.
   			 */
-  var footerView: View
+  var footerView: View = js.native
   /**
   			 * Title of this section header.
   			 */
-  var headerTitle: String
+  var headerTitle: String = js.native
   /**
   			 * View to use for this section header.
   			 */
-  var headerView: View
+  var headerView: View = js.native
   /**
   			 * Number of rows in this section.
   			 */
-  val rowCount: Double
+  val rowCount: Double = js.native
   /**
   			 * Rows in this section.
   			 */
-  val rows: js.Array[TableViewRow]
+  val rows: js.Array[TableViewRow] = js.native
   /**
   			 * Adds a table view row to this section.
   			 */
-  def add(row: TableViewRow): Unit
+  def add(row: TableViewRow): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TableViewSection.footerTitle> property.
+  			 * @deprecated Access <Titanium.UI.TableViewSection.footerTitle> instead.
   			 */
-  def getFooterTitle(): String
+  def getFooterTitle(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TableViewSection.footerView> property.
+  			 * @deprecated Access <Titanium.UI.TableViewSection.footerView> instead.
   			 */
-  def getFooterView(): View
+  def getFooterView(): View = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TableViewSection.headerTitle> property.
+  			 * @deprecated Access <Titanium.UI.TableViewSection.headerTitle> instead.
   			 */
-  def getHeaderTitle(): String
+  def getHeaderTitle(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TableViewSection.headerView> property.
+  			 * @deprecated Access <Titanium.UI.TableViewSection.headerView> instead.
   			 */
-  def getHeaderView(): View
+  def getHeaderView(): View = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TableViewSection.rowCount> property.
+  			 * @deprecated Access <Titanium.UI.TableViewSection.rowCount> instead.
   			 */
-  def getRowCount(): Double
+  def getRowCount(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TableViewSection.rows> property.
+  			 * @deprecated Access <Titanium.UI.TableViewSection.rows> instead.
   			 */
-  def getRows(): js.Array[TableViewRow]
+  def getRows(): js.Array[TableViewRow] = js.native
   /**
   			 * Removes a table view row from this section.
   			 */
-  def remove(row: TableViewRow): Unit
+  def remove(row: TableViewRow): Unit = js.native
   /**
   			 * Returns a row in this section.
   			 */
-  def rowAtIndex(index: Double): TableViewRow
+  def rowAtIndex(index: Double): TableViewRow = js.native
   /**
   			 * Sets the value of the <Titanium.UI.TableViewSection.footerTitle> property.
+  			 * @deprecated Set the value using <Titanium.UI.TableViewSection.footerTitle> instead.
   			 */
-  def setFooterTitle(footerTitle: String): Unit
+  def setFooterTitle(footerTitle: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.TableViewSection.footerView> property.
+  			 * @deprecated Set the value using <Titanium.UI.TableViewSection.footerView> instead.
   			 */
-  def setFooterView(footerView: js.Any): Unit
+  def setFooterView(footerView: View): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.TableViewSection.headerTitle> property.
+  			 * @deprecated Set the value using <Titanium.UI.TableViewSection.headerTitle> instead.
   			 */
-  def setHeaderTitle(headerTitle: String): Unit
+  def setHeaderTitle(headerTitle: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.TableViewSection.headerView> property.
+  			 * @deprecated Set the value using <Titanium.UI.TableViewSection.headerView> instead.
   			 */
-  def setHeaderView(headerView: js.Any): Unit
-}
-
-object TableViewSection {
-  @scala.inline
-  def apply(
-    add: TableViewRow => Unit,
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    fireEvent: (String, js.Any) => Unit,
-    footerTitle: String,
-    footerView: View,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getFooterTitle: () => String,
-    getFooterView: () => View,
-    getHeaderTitle: () => String,
-    getHeaderView: () => View,
-    getRowCount: () => Double,
-    getRows: () => js.Array[TableViewRow],
-    headerTitle: String,
-    headerView: View,
-    remove: TableViewRow => Unit,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    rowAtIndex: Double => TableViewRow,
-    rowCount: Double,
-    rows: js.Array[TableViewRow],
-    setBubbleParent: Boolean => Unit,
-    setFooterTitle: String => Unit,
-    setFooterView: js.Any => Unit,
-    setHeaderTitle: String => Unit,
-    setHeaderView: js.Any => Unit,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): TableViewSection = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), footerTitle = footerTitle.asInstanceOf[js.Any], footerView = footerView.asInstanceOf[js.Any], getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getFooterTitle = js.Any.fromFunction0(getFooterTitle), getFooterView = js.Any.fromFunction0(getFooterView), getHeaderTitle = js.Any.fromFunction0(getHeaderTitle), getHeaderView = js.Any.fromFunction0(getHeaderView), getRowCount = js.Any.fromFunction0(getRowCount), getRows = js.Any.fromFunction0(getRows), headerTitle = headerTitle.asInstanceOf[js.Any], headerView = headerView.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction2(removeEventListener), rowAtIndex = js.Any.fromFunction1(rowAtIndex), rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], setBubbleParent = js.Any.fromFunction1(setBubbleParent), setFooterTitle = js.Any.fromFunction1(setFooterTitle), setFooterView = js.Any.fromFunction1(setFooterView), setHeaderTitle = js.Any.fromFunction1(setHeaderTitle), setHeaderView = js.Any.fromFunction1(setHeaderView))
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TableViewSection]
-  }
+  def setHeaderView(headerView: View): Unit = js.native
 }
 

@@ -13,7 +13,6 @@ object VideoViewProfile {
   @scala.inline
   def apply(module_name: video_view_profile, user_id: String | Double, username: String): VideoViewProfile = {
     val __obj = js.Dynamic.literal(module_name = module_name.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VideoViewProfile]
   }
 }

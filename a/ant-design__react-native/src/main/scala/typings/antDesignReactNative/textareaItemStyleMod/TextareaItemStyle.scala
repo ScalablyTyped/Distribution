@@ -18,7 +18,6 @@ object TextareaItemStyle {
   @scala.inline
   def apply(container: ViewStyle, count: ViewStyle, errorIcon: ViewStyle, icon: ViewStyle, input: TextStyle): TextareaItemStyle = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], errorIcon = errorIcon.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextareaItemStyle]
   }
 }

@@ -19,7 +19,6 @@ object RetrieveMultipleResponse {
   @scala.inline
   def apply(entities: js.Array[Entity], nextLink: String): RetrieveMultipleResponse = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], nextLink = nextLink.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetrieveMultipleResponse]
   }
 }

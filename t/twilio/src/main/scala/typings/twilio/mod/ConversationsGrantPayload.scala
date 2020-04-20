@@ -12,7 +12,6 @@ object ConversationsGrantPayload {
   @scala.inline
   def apply(configuration_profile_sid: String): ConversationsGrantPayload = {
     val __obj = js.Dynamic.literal(configuration_profile_sid = configuration_profile_sid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConversationsGrantPayload]
   }
 }

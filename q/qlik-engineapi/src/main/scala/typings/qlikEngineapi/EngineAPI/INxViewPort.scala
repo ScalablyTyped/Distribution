@@ -26,7 +26,6 @@ object INxViewPort {
   @scala.inline
   def apply(qHeight: Double, qWidth: Double, qZoomLevel: Double): INxViewPort = {
     val __obj = js.Dynamic.literal(qHeight = qHeight.asInstanceOf[js.Any], qWidth = qWidth.asInstanceOf[js.Any], qZoomLevel = qZoomLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxViewPort]
   }
 }

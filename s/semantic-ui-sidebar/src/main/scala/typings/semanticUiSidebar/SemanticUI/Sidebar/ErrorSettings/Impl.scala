@@ -31,7 +31,6 @@ object Impl {
   @scala.inline
   def apply(method: String, movedSidebar: String, notFound: String, overlay: String, pusher: String): Impl = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], movedSidebar = movedSidebar.asInstanceOf[js.Any], notFound = notFound.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], pusher = pusher.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

@@ -37,11 +37,11 @@ class StringTemplateParameterType protected () extends ParameterType {
   @JSName("model")
   var model_FStringTemplateParameterType: IModel = js.native
   @JSName("containerAsCodeActionParameter")
-  def containerAsCodeActionParameter_MStringTemplateParameterType(): CodeActionParameter = js.native
+  def containerAsCodeActionParameter_MStringTemplateParameterType: CodeActionParameter = js.native
   /**
     * In version 8.8.0: introduced
     */
-  def grammar(): StringTemplateParameterGrammar = js.native
+  def grammar: StringTemplateParameterGrammar = js.native
   def grammar(newValue: StringTemplateParameterGrammar): js.Any = js.native
 }
 

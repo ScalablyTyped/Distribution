@@ -31,7 +31,6 @@ object InkStrokePointer {
   @scala.inline
   def apply(contentId: String, inkStrokeId: String): InkStrokePointer = {
     val __obj = js.Dynamic.literal(contentId = contentId.asInstanceOf[js.Any], inkStrokeId = inkStrokeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InkStrokePointer]
   }
 }

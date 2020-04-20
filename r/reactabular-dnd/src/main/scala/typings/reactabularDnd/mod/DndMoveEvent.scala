@@ -13,7 +13,6 @@ object DndMoveEvent {
   @scala.inline
   def apply(sourceLabel: String, targetLabel: String): DndMoveEvent = {
     val __obj = js.Dynamic.literal(sourceLabel = sourceLabel.asInstanceOf[js.Any], targetLabel = targetLabel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DndMoveEvent]
   }
 }

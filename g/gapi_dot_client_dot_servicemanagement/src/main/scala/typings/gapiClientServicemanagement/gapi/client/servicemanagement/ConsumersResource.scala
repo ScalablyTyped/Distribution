@@ -38,7 +38,6 @@ object ConsumersResource {
     testIamPermissions: AnonKey => Request_[TestIamPermissionsResponse]
   ): ConsumersResource = {
     val __obj = js.Dynamic.literal(getIamPolicy = js.Any.fromFunction1(getIamPolicy), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
-  
     __obj.asInstanceOf[ConsumersResource]
   }
 }

@@ -20,7 +20,6 @@ object BingMapsImageryMetadataResponse {
     statusDescription: String
   ): BingMapsImageryMetadataResponse = {
     val __obj = js.Dynamic.literal(authenticationResultCode = authenticationResultCode.asInstanceOf[js.Any], resourceSets = resourceSets.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusDescription = statusDescription.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BingMapsImageryMetadataResponse]
   }
 }

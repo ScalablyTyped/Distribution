@@ -12,10 +12,8 @@ trait LazyLoadingEvent extends js.Object
 
 object LazyLoadingEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lazyImageLoad: typings.swiper.swiperStrings.lazyImageLoad = "lazyImageLoad".asInstanceOf[typings.swiper.swiperStrings.lazyImageLoad]
   @scala.inline
-  def lazyImageLoad: typings.swiper.swiperStrings.lazyImageLoad = this.cast("lazyImageLoad")
-  @scala.inline
-  def lazyImageReady: typings.swiper.swiperStrings.lazyImageReady = this.cast("lazyImageReady")
+  def lazyImageReady: typings.swiper.swiperStrings.lazyImageReady = "lazyImageReady".asInstanceOf[typings.swiper.swiperStrings.lazyImageReady]
 }
 

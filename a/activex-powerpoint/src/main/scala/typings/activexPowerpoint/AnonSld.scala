@@ -13,7 +13,6 @@ object AnonSld {
   @scala.inline
   def apply(Sld: Slide): AnonSld = {
     val __obj = js.Dynamic.literal(Sld = Sld.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSld]
   }
 }

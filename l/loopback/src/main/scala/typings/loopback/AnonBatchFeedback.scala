@@ -15,7 +15,6 @@ object AnonBatchFeedback {
   @scala.inline
   def apply(batchFeedback: Boolean, gateway: String, interval: Double, port: Double): AnonBatchFeedback = {
     val __obj = js.Dynamic.literal(batchFeedback = batchFeedback.asInstanceOf[js.Any], gateway = gateway.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBatchFeedback]
   }
 }

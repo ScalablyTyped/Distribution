@@ -18,7 +18,6 @@ object QRow {
     measures: js.Array[QMeasureCell]
   ): QRow = {
     val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], measures = measures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QRow]
   }
 }

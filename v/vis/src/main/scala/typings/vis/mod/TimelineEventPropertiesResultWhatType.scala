@@ -16,18 +16,16 @@ trait TimelineEventPropertiesResultWhatType extends js.Object
 
 object TimelineEventPropertiesResultWhatType {
   @scala.inline
-  def axis: typings.vis.visStrings.axis = this.cast("axis")
+  def axis: typings.vis.visStrings.axis = "axis".asInstanceOf[typings.vis.visStrings.axis]
   @scala.inline
-  def background: typings.vis.visStrings.background = this.cast("background")
+  def background: typings.vis.visStrings.background = "background".asInstanceOf[typings.vis.visStrings.background]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `current-time`: typings.vis.visStrings.`current-time` = "current-time".asInstanceOf[typings.vis.visStrings.`current-time`]
   @scala.inline
-  def `current-time`: typings.vis.visStrings.`current-time` = this.cast("current-time")
+  def `custom-time`: typings.vis.visStrings.`custom-time` = "custom-time".asInstanceOf[typings.vis.visStrings.`custom-time`]
   @scala.inline
-  def `custom-time`: typings.vis.visStrings.`custom-time` = this.cast("custom-time")
+  def `group-label`: typings.vis.visStrings.`group-label` = "group-label".asInstanceOf[typings.vis.visStrings.`group-label`]
   @scala.inline
-  def `group-label`: typings.vis.visStrings.`group-label` = this.cast("group-label")
-  @scala.inline
-  def item: typings.vis.visStrings.item = this.cast("item")
+  def item: typings.vis.visStrings.item = "item".asInstanceOf[typings.vis.visStrings.item]
 }
 

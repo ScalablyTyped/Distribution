@@ -27,7 +27,6 @@ object TypeofBindingMode {
   @scala.inline
   def apply(Default: js.Any, OneTime: js.Any, OneWay: js.Any, TwoWay: js.Any): TypeofBindingMode = {
     val __obj = js.Dynamic.literal(Default = Default.asInstanceOf[js.Any], OneTime = OneTime.asInstanceOf[js.Any], OneWay = OneWay.asInstanceOf[js.Any], TwoWay = TwoWay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofBindingMode]
   }
 }

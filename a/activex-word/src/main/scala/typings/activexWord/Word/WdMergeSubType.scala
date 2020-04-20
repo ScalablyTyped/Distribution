@@ -28,24 +28,22 @@ trait WdMergeSubType extends js.Object
 
 object WdMergeSubType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdMergeSubTypeAccess: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdMergeSubTypeAccess: `1` = this.cast(1)
+  def wdMergeSubTypeOAL: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdMergeSubTypeOAL: `2` = this.cast(2)
+  def wdMergeSubTypeOLEDBText: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdMergeSubTypeOLEDBText: `5` = this.cast(5)
+  def wdMergeSubTypeOLEDBWord: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdMergeSubTypeOLEDBWord: `3` = this.cast(3)
+  def wdMergeSubTypeOther: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdMergeSubTypeOther: `0` = this.cast(0)
+  def wdMergeSubTypeOutlook: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdMergeSubTypeOutlook: `6` = this.cast(6)
+  def wdMergeSubTypeWord: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdMergeSubTypeWord: `7` = this.cast(7)
+  def wdMergeSubTypeWord2000: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdMergeSubTypeWord2000: `8` = this.cast(8)
-  @scala.inline
-  def wdMergeSubTypeWorks: `4` = this.cast(4)
+  def wdMergeSubTypeWorks: `4` = 4.asInstanceOf[`4`]
 }
 

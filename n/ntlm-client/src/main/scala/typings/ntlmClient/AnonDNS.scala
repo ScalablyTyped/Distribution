@@ -16,7 +16,6 @@ object AnonDNS {
   @scala.inline
   def apply(DNS: String, DOMAIN: String, FQDN: String, PARENT_DNS: String, SERVER: String): AnonDNS = {
     val __obj = js.Dynamic.literal(DNS = DNS.asInstanceOf[js.Any], DOMAIN = DOMAIN.asInstanceOf[js.Any], FQDN = FQDN.asInstanceOf[js.Any], PARENT_DNS = PARENT_DNS.asInstanceOf[js.Any], SERVER = SERVER.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDNS]
   }
 }

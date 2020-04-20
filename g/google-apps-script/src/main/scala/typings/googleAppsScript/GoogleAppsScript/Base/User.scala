@@ -16,7 +16,6 @@ object User {
   @scala.inline
   def apply(getEmail: () => String, getUserLoginId: () => String): User = {
     val __obj = js.Dynamic.literal(getEmail = js.Any.fromFunction0(getEmail), getUserLoginId = js.Any.fromFunction0(getUserLoginId))
-  
     __obj.asInstanceOf[User]
   }
 }

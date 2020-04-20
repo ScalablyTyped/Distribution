@@ -19,7 +19,6 @@ object NightwatchCallbackResultError {
   @scala.inline
   def apply(state: Error | String, status: `1`, value: AnonClass): NightwatchCallbackResultError = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NightwatchCallbackResultError]
   }
 }

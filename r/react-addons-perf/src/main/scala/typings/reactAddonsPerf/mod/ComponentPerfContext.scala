@@ -13,7 +13,6 @@ object ComponentPerfContext {
   @scala.inline
   def apply(current: String, owner: String): ComponentPerfContext = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComponentPerfContext]
   }
 }

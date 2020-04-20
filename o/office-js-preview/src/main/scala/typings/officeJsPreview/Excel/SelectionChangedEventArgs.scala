@@ -24,7 +24,6 @@ object SelectionChangedEventArgs {
   @scala.inline
   def apply(workbook: Workbook): SelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(workbook = workbook.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectionChangedEventArgs]
   }
 }

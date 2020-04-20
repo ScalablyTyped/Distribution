@@ -31,7 +31,7 @@ object windowControllerMod extends js.Object {
     var swRegistration: js.UndefOr[js.Any] = js.native
     var vapidKey: js.Any = js.native
     @JSName("app")
-    def app_MWindowController(): typings.firebaseMessaging.mod.FirebaseApp = js.native
+    def app_MWindowController: typings.firebaseMessaging.mod.FirebaseApp = js.native
     def deleteToken(): js.Promise[Boolean] = js.native
     def onTokenRefresh(): Unsubscribe = js.native
     def setBackgroundMessageHandler(): Unit = js.native

@@ -14,14 +14,12 @@ trait CrosshairsType extends js.Object
 
 object CrosshairsType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cross: typings.bizcharts.bizchartsStrings.cross = "cross".asInstanceOf[typings.bizcharts.bizchartsStrings.cross]
   @scala.inline
-  def cross: typings.bizcharts.bizchartsStrings.cross = this.cast("cross")
+  def rect: typings.bizcharts.bizchartsStrings.rect = "rect".asInstanceOf[typings.bizcharts.bizchartsStrings.rect]
   @scala.inline
-  def rect: typings.bizcharts.bizchartsStrings.rect = this.cast("rect")
+  def x: typings.bizcharts.bizchartsStrings.x = "x".asInstanceOf[typings.bizcharts.bizchartsStrings.x]
   @scala.inline
-  def x: typings.bizcharts.bizchartsStrings.x = this.cast("x")
-  @scala.inline
-  def y: typings.bizcharts.bizchartsStrings.y = this.cast("y")
+  def y: typings.bizcharts.bizchartsStrings.y = "y".asInstanceOf[typings.bizcharts.bizchartsStrings.y]
 }
 

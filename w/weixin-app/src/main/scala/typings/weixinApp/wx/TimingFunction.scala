@@ -18,20 +18,18 @@ trait TimingFunction extends js.Object
 
 object TimingFunction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ease: typings.weixinApp.weixinAppStrings.ease = "ease".asInstanceOf[typings.weixinApp.weixinAppStrings.ease]
   @scala.inline
-  def ease: typings.weixinApp.weixinAppStrings.ease = this.cast("ease")
+  def `ease-in`: typings.weixinApp.weixinAppStrings.`ease-in` = "ease-in".asInstanceOf[typings.weixinApp.weixinAppStrings.`ease-in`]
   @scala.inline
-  def `ease-in`: typings.weixinApp.weixinAppStrings.`ease-in` = this.cast("ease-in")
+  def `ease-in-out`: typings.weixinApp.weixinAppStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.weixinApp.weixinAppStrings.`ease-in-out`]
   @scala.inline
-  def `ease-in-out`: typings.weixinApp.weixinAppStrings.`ease-in-out` = this.cast("ease-in-out")
+  def `ease-out`: typings.weixinApp.weixinAppStrings.`ease-out` = "ease-out".asInstanceOf[typings.weixinApp.weixinAppStrings.`ease-out`]
   @scala.inline
-  def `ease-out`: typings.weixinApp.weixinAppStrings.`ease-out` = this.cast("ease-out")
+  def linear: typings.weixinApp.weixinAppStrings.linear = "linear".asInstanceOf[typings.weixinApp.weixinAppStrings.linear]
   @scala.inline
-  def linear: typings.weixinApp.weixinAppStrings.linear = this.cast("linear")
+  def `step-end`: typings.weixinApp.weixinAppStrings.`step-end` = "step-end".asInstanceOf[typings.weixinApp.weixinAppStrings.`step-end`]
   @scala.inline
-  def `step-end`: typings.weixinApp.weixinAppStrings.`step-end` = this.cast("step-end")
-  @scala.inline
-  def `step-start`: typings.weixinApp.weixinAppStrings.`step-start` = this.cast("step-start")
+  def `step-start`: typings.weixinApp.weixinAppStrings.`step-start` = "step-start".asInstanceOf[typings.weixinApp.weixinAppStrings.`step-start`]
 }
 

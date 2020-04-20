@@ -28,7 +28,6 @@ object PayPalAccountDetails {
     shippingAddress: PayPalShippingAddress
   ): PayPalAccountDetails = {
     val __obj = js.Dynamic.literal(billingAddress = billingAddress.asInstanceOf[js.Any], countryCode = countryCode.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], payerId = payerId.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], shippingAddress = shippingAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PayPalAccountDetails]
   }
 }

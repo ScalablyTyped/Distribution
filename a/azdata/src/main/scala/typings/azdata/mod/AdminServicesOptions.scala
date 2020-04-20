@@ -18,7 +18,6 @@ object AdminServicesOptions {
     fileGroupInfoOptions: js.Array[ServiceOption]
   ): AdminServicesOptions = {
     val __obj = js.Dynamic.literal(databaseFileInfoOptions = databaseFileInfoOptions.asInstanceOf[js.Any], databaseInfoOptions = databaseInfoOptions.asInstanceOf[js.Any], fileGroupInfoOptions = fileGroupInfoOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdminServicesOptions]
   }
 }

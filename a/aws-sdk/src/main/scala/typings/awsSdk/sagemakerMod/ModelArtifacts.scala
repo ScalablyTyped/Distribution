@@ -16,7 +16,6 @@ object ModelArtifacts {
   @scala.inline
   def apply(S3ModelArtifacts: S3Uri): ModelArtifacts = {
     val __obj = js.Dynamic.literal(S3ModelArtifacts = S3ModelArtifacts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModelArtifacts]
   }
 }

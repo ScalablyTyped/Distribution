@@ -13,7 +13,6 @@ object AnonForwardRef {
   @scala.inline
   def apply(forwardRef: `true`): AnonForwardRef = {
     val __obj = js.Dynamic.literal(forwardRef = forwardRef.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonForwardRef]
   }
 }

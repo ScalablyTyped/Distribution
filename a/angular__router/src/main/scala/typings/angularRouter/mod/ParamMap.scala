@@ -40,7 +40,6 @@ object ParamMap {
     keys: js.Array[String]
   ): ParamMap = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction1(getAll), has = js.Any.fromFunction1(has), keys = keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParamMap]
   }
 }

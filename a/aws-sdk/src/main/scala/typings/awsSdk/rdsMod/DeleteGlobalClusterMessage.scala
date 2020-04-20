@@ -16,7 +16,6 @@ object DeleteGlobalClusterMessage {
   @scala.inline
   def apply(GlobalClusterIdentifier: String): DeleteGlobalClusterMessage = {
     val __obj = js.Dynamic.literal(GlobalClusterIdentifier = GlobalClusterIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGlobalClusterMessage]
   }
 }

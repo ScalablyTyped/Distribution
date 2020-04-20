@@ -14,7 +14,6 @@ object AnonAutomatic {
   @scala.inline
   def apply(automatic: Double, deploymentSubmitter: Double, firstPreDeploymentApprover: Double): AnonAutomatic = {
     val __obj = js.Dynamic.literal(automatic = automatic.asInstanceOf[js.Any], deploymentSubmitter = deploymentSubmitter.asInstanceOf[js.Any], firstPreDeploymentApprover = firstPreDeploymentApprover.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutomatic]
   }
 }

@@ -13,7 +13,6 @@ object CustomerCount_ {
   @scala.inline
   def apply(customers: Double, date: String): CustomerCount_ = {
     val __obj = js.Dynamic.literal(customers = customers.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomerCount_]
   }
 }

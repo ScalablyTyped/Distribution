@@ -15,7 +15,6 @@ object DayPeriod {
   @scala.inline
   def apply(am: String, midnight: String, noon: String, pm: String): DayPeriod = {
     val __obj = js.Dynamic.literal(am = am.asInstanceOf[js.Any], midnight = midnight.asInstanceOf[js.Any], noon = noon.asInstanceOf[js.Any], pm = pm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DayPeriod]
   }
 }

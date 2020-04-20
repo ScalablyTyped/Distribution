@@ -10,10 +10,14 @@ import typings.chromeApps.chromeAppsNumbers.`-2`
 import typings.chromeApps.chromeAppsNumbers.`0`
 import typings.chromeApps.chromeAppsNumbers.`1`
 import typings.chromeApps.chromeAppsNumbers.`2`
-import typings.chromeApps.chromeAppsStrings.basic
-import typings.chromeApps.chromeAppsStrings.image
-import typings.chromeApps.chromeAppsStrings.list
-import typings.chromeApps.chromeAppsStrings.progress
+import typings.chromeApps.chromeAppsStrings.BASIC
+import typings.chromeApps.chromeAppsStrings.IMAGE
+import typings.chromeApps.chromeAppsStrings.LIST
+import typings.chromeApps.chromeAppsStrings.PROGRESS
+import typings.chromeApps.chromeAppsStrings.basic_
+import typings.chromeApps.chromeAppsStrings.image_
+import typings.chromeApps.chromeAppsStrings.list_
+import typings.chromeApps.chromeAppsStrings.progress_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +40,11 @@ trait PartialNotificationOption extends js.Object {
   var silent: js.UndefOr[Boolean] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[
-    ToStringLiteral[AnonBASIC, String, Exclude[String, basic | image | list | progress]]
+    ToStringLiteral[
+      AnonBASIC, 
+      BASIC | IMAGE | LIST | PROGRESS, 
+      Exclude[BASIC | IMAGE | LIST | PROGRESS, basic_ | image_ | list_ | progress_]
+    ]
   ] = js.undefined
 }
 
@@ -57,7 +65,11 @@ object PartialNotificationOption {
     requireInteraction: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
-    `type`: ToStringLiteral[AnonBASIC, String, Exclude[String, basic | image | list | progress]] = null
+    `type`: ToStringLiteral[
+      AnonBASIC, 
+      BASIC | IMAGE | LIST | PROGRESS, 
+      Exclude[BASIC | IMAGE | LIST | PROGRESS, basic_ | image_ | list_ | progress_]
+    ] = null
   ): PartialNotificationOption = {
     val __obj = js.Dynamic.literal()
     if (appIconMaskUrl != null) __obj.updateDynamic("appIconMaskUrl")(appIconMaskUrl.asInstanceOf[js.Any])

@@ -16,7 +16,6 @@ object SetRulePrioritiesInput {
   @scala.inline
   def apply(RulePriorities: RulePriorityList): SetRulePrioritiesInput = {
     val __obj = js.Dynamic.literal(RulePriorities = RulePriorities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetRulePrioritiesInput]
   }
 }

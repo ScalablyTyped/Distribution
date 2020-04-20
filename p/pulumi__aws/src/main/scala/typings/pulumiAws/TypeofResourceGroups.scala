@@ -13,7 +13,6 @@ object TypeofResourceGroups {
   @scala.inline
   def apply(Types: TypeofResourceGroups): TypeofResourceGroups = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofResourceGroups]
   }
 }

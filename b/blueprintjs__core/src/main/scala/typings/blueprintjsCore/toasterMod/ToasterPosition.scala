@@ -16,18 +16,16 @@ trait ToasterPosition extends js.Object
 
 object ToasterPosition {
   @scala.inline
-  def bottom: typings.blueprintjsCore.blueprintjsCoreStrings.bottom = this.cast("bottom")
+  def bottom: typings.blueprintjsCore.blueprintjsCoreStrings.bottom = "bottom".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.bottom]
   @scala.inline
-  def `bottom-left`: typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-left` = this.cast("bottom-left")
+  def `bottom-left`: typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-left`]
   @scala.inline
-  def `bottom-right`: typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-right` = this.cast("bottom-right")
+  def `bottom-right`: typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def top: typings.blueprintjsCore.blueprintjsCoreStrings.top = "top".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.top]
   @scala.inline
-  def top: typings.blueprintjsCore.blueprintjsCoreStrings.top = this.cast("top")
+  def `top-left`: typings.blueprintjsCore.blueprintjsCoreStrings.`top-left` = "top-left".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.`top-left`]
   @scala.inline
-  def `top-left`: typings.blueprintjsCore.blueprintjsCoreStrings.`top-left` = this.cast("top-left")
-  @scala.inline
-  def `top-right`: typings.blueprintjsCore.blueprintjsCoreStrings.`top-right` = this.cast("top-right")
+  def `top-right`: typings.blueprintjsCore.blueprintjsCoreStrings.`top-right` = "top-right".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.`top-right`]
 }
 

@@ -16,12 +16,10 @@ trait XlMeasurementUnits extends js.Object
 
 object XlMeasurementUnits {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCentimeters: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlCentimeters: `1` = this.cast(1)
+  def xlInches: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlInches: `0` = this.cast(0)
-  @scala.inline
-  def xlMillimeters: `2` = this.cast(2)
+  def xlMillimeters: `2` = 2.asInstanceOf[`2`]
 }
 

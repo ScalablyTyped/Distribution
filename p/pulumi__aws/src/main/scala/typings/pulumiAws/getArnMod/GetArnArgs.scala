@@ -16,7 +16,6 @@ object GetArnArgs {
   @scala.inline
   def apply(arn: String): GetArnArgs = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetArnArgs]
   }
 }

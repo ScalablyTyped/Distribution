@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TextTrackCueList extends /* index */ NumberDictionary[TextTrackCue] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[TextTrackCue]] = js.native
   val length: Double = js.native
   def getCueById(id: java.lang.String): TextTrackCue = js.native

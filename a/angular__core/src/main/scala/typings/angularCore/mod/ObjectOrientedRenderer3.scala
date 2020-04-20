@@ -29,7 +29,6 @@ object ObjectOrientedRenderer3 {
     querySelector: String => RElement | Null
   ): ObjectOrientedRenderer3 = {
     val __obj = js.Dynamic.literal(createComment = js.Any.fromFunction1(createComment), createElement = js.Any.fromFunction1(createElement), createElementNS = js.Any.fromFunction2(createElementNS), createTextNode = js.Any.fromFunction1(createTextNode), querySelector = js.Any.fromFunction1(querySelector))
-  
     __obj.asInstanceOf[ObjectOrientedRenderer3]
   }
 }

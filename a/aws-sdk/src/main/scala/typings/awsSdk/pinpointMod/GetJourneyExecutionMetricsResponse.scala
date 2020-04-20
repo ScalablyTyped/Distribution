@@ -13,7 +13,6 @@ object GetJourneyExecutionMetricsResponse {
   @scala.inline
   def apply(JourneyExecutionMetricsResponse: JourneyExecutionMetricsResponse): GetJourneyExecutionMetricsResponse = {
     val __obj = js.Dynamic.literal(JourneyExecutionMetricsResponse = JourneyExecutionMetricsResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetJourneyExecutionMetricsResponse]
   }
 }

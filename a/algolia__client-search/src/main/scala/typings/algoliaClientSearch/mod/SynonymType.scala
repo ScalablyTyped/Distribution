@@ -15,16 +15,14 @@ trait SynonymType extends js.Object
 
 object SynonymType {
   @scala.inline
-  def altCorrection1: typings.algoliaClientSearch.algoliaClientSearchStrings.altCorrection1 = this.cast("altCorrection1")
+  def altCorrection1: typings.algoliaClientSearch.algoliaClientSearchStrings.altCorrection1 = "altCorrection1".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.altCorrection1]
   @scala.inline
-  def altCorrection2: typings.algoliaClientSearch.algoliaClientSearchStrings.altCorrection2 = this.cast("altCorrection2")
+  def altCorrection2: typings.algoliaClientSearch.algoliaClientSearchStrings.altCorrection2 = "altCorrection2".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.altCorrection2]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def oneWaySynonym: typings.algoliaClientSearch.algoliaClientSearchStrings.oneWaySynonym = "oneWaySynonym".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.oneWaySynonym]
   @scala.inline
-  def oneWaySynonym: typings.algoliaClientSearch.algoliaClientSearchStrings.oneWaySynonym = this.cast("oneWaySynonym")
+  def placeholder: typings.algoliaClientSearch.algoliaClientSearchStrings.placeholder = "placeholder".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.placeholder]
   @scala.inline
-  def placeholder: typings.algoliaClientSearch.algoliaClientSearchStrings.placeholder = this.cast("placeholder")
-  @scala.inline
-  def synonym: typings.algoliaClientSearch.algoliaClientSearchStrings.synonym = this.cast("synonym")
+  def synonym: typings.algoliaClientSearch.algoliaClientSearchStrings.synonym = "synonym".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.synonym]
 }
 

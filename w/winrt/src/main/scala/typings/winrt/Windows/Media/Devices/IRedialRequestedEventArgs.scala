@@ -12,7 +12,6 @@ object IRedialRequestedEventArgs {
   @scala.inline
   def apply(handled: () => Unit): IRedialRequestedEventArgs = {
     val __obj = js.Dynamic.literal(handled = js.Any.fromFunction0(handled))
-  
     __obj.asInstanceOf[IRedialRequestedEventArgs]
   }
 }

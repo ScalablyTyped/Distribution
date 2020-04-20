@@ -13,7 +13,6 @@ object AnonResult {
   @scala.inline
   def apply[T /* <: ComponentType[_] */](_result: T): AnonResult[T] = {
     val __obj = js.Dynamic.literal(_result = _result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResult[T]]
   }
 }

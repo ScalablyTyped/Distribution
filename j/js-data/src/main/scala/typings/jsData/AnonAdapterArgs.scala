@@ -20,7 +20,6 @@ object AnonAdapterArgs {
     types: js.Array[_]
   ): AnonAdapterArgs = {
     val __obj = js.Dynamic.literal(adapterArgs = js.Any.fromFunction4(adapterArgs), beforeAssign = beforeAssign.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAdapterArgs]
   }
 }

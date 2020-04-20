@@ -16,18 +16,16 @@ trait ChartLegendPosition extends js.Object
 
 object ChartLegendPosition {
   @scala.inline
-  def bottom: typings.googleVisualization.googleVisualizationStrings.bottom = this.cast("bottom")
+  def bottom: typings.googleVisualization.googleVisualizationStrings.bottom = "bottom".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def in: typings.googleVisualization.googleVisualizationStrings.in = "in".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.in]
   @scala.inline
-  def in: typings.googleVisualization.googleVisualizationStrings.in = this.cast("in")
+  def left: typings.googleVisualization.googleVisualizationStrings.left = "left".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.left]
   @scala.inline
-  def left: typings.googleVisualization.googleVisualizationStrings.left = this.cast("left")
+  def none: typings.googleVisualization.googleVisualizationStrings.none = "none".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.none]
   @scala.inline
-  def none: typings.googleVisualization.googleVisualizationStrings.none = this.cast("none")
+  def right: typings.googleVisualization.googleVisualizationStrings.right = "right".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.right]
   @scala.inline
-  def right: typings.googleVisualization.googleVisualizationStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.googleVisualization.googleVisualizationStrings.top = this.cast("top")
+  def top: typings.googleVisualization.googleVisualizationStrings.top = "top".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.top]
 }
 

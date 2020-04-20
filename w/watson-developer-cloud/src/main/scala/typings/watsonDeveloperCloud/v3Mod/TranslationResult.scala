@@ -18,7 +18,6 @@ object TranslationResult {
   @scala.inline
   def apply(character_count: Double, translations: js.Array[Translation], word_count: Double): TranslationResult = {
     val __obj = js.Dynamic.literal(character_count = character_count.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], word_count = word_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TranslationResult]
   }
 }

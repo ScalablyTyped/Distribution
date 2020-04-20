@@ -15,7 +15,6 @@ object AnonClickLocation {
   @scala.inline
   def apply(ClickLocation: LinkClickLocation, Link: String, Summary: String): AnonClickLocation = {
     val __obj = js.Dynamic.literal(ClickLocation = ClickLocation.asInstanceOf[js.Any], Link = Link.asInstanceOf[js.Any], Summary = Summary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClickLocation]
   }
 }

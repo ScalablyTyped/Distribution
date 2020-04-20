@@ -32,11 +32,11 @@ class JupyterLab_ () extends JupyterFrontEnd[ILabShell] {
   /**
     * The JupyterLab application information dictionary.
     */
-  def info(): IInfo = js.native
+  def info: IInfo = js.native
   /**
     * The JupyterLab application paths dictionary.
     */
-  def paths(): IPaths = js.native
+  def paths: IPaths = js.native
   /**
     * Register plugins from a plugin module.
     *

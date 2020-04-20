@@ -20,7 +20,6 @@ object AdvancedSecurityOptionsStatus {
   @scala.inline
   def apply(Options: AdvancedSecurityOptions, Status: OptionStatus): AdvancedSecurityOptionsStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdvancedSecurityOptionsStatus]
   }
 }

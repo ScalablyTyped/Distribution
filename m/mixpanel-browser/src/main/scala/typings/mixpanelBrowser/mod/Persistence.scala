@@ -12,10 +12,8 @@ trait Persistence extends js.Object
 
 object Persistence {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cookie: typings.mixpanelBrowser.mixpanelBrowserStrings.cookie = "cookie".asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserStrings.cookie]
   @scala.inline
-  def cookie: typings.mixpanelBrowser.mixpanelBrowserStrings.cookie = this.cast("cookie")
-  @scala.inline
-  def localStorage: typings.mixpanelBrowser.mixpanelBrowserStrings.localStorage = this.cast("localStorage")
+  def localStorage: typings.mixpanelBrowser.mixpanelBrowserStrings.localStorage = "localStorage".asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserStrings.localStorage]
 }
 

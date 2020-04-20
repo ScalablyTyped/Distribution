@@ -14,14 +14,12 @@ trait UnifiedNumberFormatOptionsSignDisplay extends js.Object
 
 object UnifiedNumberFormatOptionsSignDisplay {
   @scala.inline
-  def always: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.always = this.cast("always")
+  def always: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.always = "always".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.always]
   @scala.inline
-  def auto: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.auto = this.cast("auto")
+  def auto: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.auto = "auto".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def exceptZero: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.exceptZero = "exceptZero".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.exceptZero]
   @scala.inline
-  def exceptZero: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.exceptZero = this.cast("exceptZero")
-  @scala.inline
-  def never: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.never = this.cast("never")
+  def never: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.never = "never".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.never]
 }
 

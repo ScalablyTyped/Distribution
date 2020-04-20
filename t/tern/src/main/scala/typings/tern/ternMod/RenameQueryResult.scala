@@ -14,7 +14,6 @@ object RenameQueryResult {
   @scala.inline
   def apply(changes: js.Array[AnonFile]): RenameQueryResult = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenameQueryResult]
   }
 }

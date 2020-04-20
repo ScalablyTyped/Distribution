@@ -16,18 +16,16 @@ trait SimpleMarkerSymbolStyle extends js.Object
 
 object SimpleMarkerSymbolStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def esriSMSCircle: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCircle = "esriSMSCircle".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCircle]
   @scala.inline
-  def esriSMSCircle: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCircle = this.cast("esriSMSCircle")
+  def esriSMSCross: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCross = "esriSMSCross".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCross]
   @scala.inline
-  def esriSMSCross: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCross = this.cast("esriSMSCross")
+  def esriSMSDiamond: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSDiamond = "esriSMSDiamond".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSDiamond]
   @scala.inline
-  def esriSMSDiamond: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSDiamond = this.cast("esriSMSDiamond")
+  def esriSMSSquare: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSSquare = "esriSMSSquare".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSSquare]
   @scala.inline
-  def esriSMSSquare: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSSquare = this.cast("esriSMSSquare")
+  def esriSMSTriangle: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSTriangle = "esriSMSTriangle".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSTriangle]
   @scala.inline
-  def esriSMSTriangle: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSTriangle = this.cast("esriSMSTriangle")
-  @scala.inline
-  def esriSMSX: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSX = this.cast("esriSMSX")
+  def esriSMSX: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSX = "esriSMSX".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSX]
 }
 

@@ -18,7 +18,6 @@ object RibbonUpdaterData {
   @scala.inline
   def apply(tabs: js.Array[Tab]): RibbonUpdaterData = {
     val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RibbonUpdaterData]
   }
 }

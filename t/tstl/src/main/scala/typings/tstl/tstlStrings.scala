@@ -21,6 +21,9 @@ object tstlStrings {
   sealed trait multiplies extends js.Object
   
   @js.native
+  sealed trait negate extends js.Object
+  
+  @js.native
   sealed trait plus extends js.Object
   
   @scala.inline
@@ -33,6 +36,8 @@ object tstlStrings {
   def modules: modules = "modules".asInstanceOf[modules]
   @scala.inline
   def multiplies: multiplies = "multiplies".asInstanceOf[multiplies]
+  @scala.inline
+  def negate: negate = "negate".asInstanceOf[negate]
   @scala.inline
   def plus: plus = "plus".asInstanceOf[plus]
 }

@@ -13,7 +13,6 @@ object PolarCoordinates {
   @scala.inline
   def apply(phi: Double, r: Double): PolarCoordinates = {
     val __obj = js.Dynamic.literal(phi = phi.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PolarCoordinates]
   }
 }

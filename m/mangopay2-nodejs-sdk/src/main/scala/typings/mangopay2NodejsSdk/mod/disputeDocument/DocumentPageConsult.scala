@@ -20,7 +20,6 @@ object DocumentPageConsult {
   @scala.inline
   def apply(ExpirationDate: Timestamp, Url: String): DocumentPageConsult = {
     val __obj = js.Dynamic.literal(ExpirationDate = ExpirationDate.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocumentPageConsult]
   }
 }

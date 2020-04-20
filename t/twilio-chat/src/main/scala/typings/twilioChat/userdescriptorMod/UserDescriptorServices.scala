@@ -13,7 +13,6 @@ object UserDescriptorServices {
   @scala.inline
   def apply(users: Users): UserDescriptorServices = {
     val __obj = js.Dynamic.literal(users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserDescriptorServices]
   }
 }

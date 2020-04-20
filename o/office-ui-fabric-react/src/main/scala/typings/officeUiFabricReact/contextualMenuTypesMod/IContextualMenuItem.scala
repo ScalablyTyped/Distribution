@@ -120,6 +120,10 @@ trait IContextualMenuItem
   var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   /**
     * Text description for the menu item to display
+    * If a standard dash (-) is passed in, then the item will be rendered as a divider
+    * If a dash must appear as text then the alternatives of
+    * emdash (—), figuredash (‒), or minus symbol (−)
+    * can be used instead
     * @deprecated Use `text` instead.
     */
   var name: js.UndefOr[String] = js.undefined
@@ -223,6 +227,10 @@ trait IContextualMenuItem
   var target: js.UndefOr[String] = js.undefined
   /**
     * Text description for the menu item to display
+    * If a standard dash (-) is passed in, then the item will be rendered as a divider
+    * If a dash must appear as text then the alternatives of
+    * emdash (—), figuredash (‒), or minus symbol (−)
+    * can be used instead
     */
   var text: js.UndefOr[String] = js.undefined
   /**

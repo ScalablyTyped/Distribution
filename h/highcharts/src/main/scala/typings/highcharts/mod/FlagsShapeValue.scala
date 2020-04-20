@@ -13,12 +13,10 @@ trait FlagsShapeValue extends js.Object
 
 object FlagsShapeValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circlepin: typings.highcharts.highchartsStrings.circlepin = "circlepin".asInstanceOf[typings.highcharts.highchartsStrings.circlepin]
   @scala.inline
-  def circlepin: typings.highcharts.highchartsStrings.circlepin = this.cast("circlepin")
+  def flag: typings.highcharts.highchartsStrings.flag = "flag".asInstanceOf[typings.highcharts.highchartsStrings.flag]
   @scala.inline
-  def flag: typings.highcharts.highchartsStrings.flag = this.cast("flag")
-  @scala.inline
-  def squarepin: typings.highcharts.highchartsStrings.squarepin = this.cast("squarepin")
+  def squarepin: typings.highcharts.highchartsStrings.squarepin = "squarepin".asInstanceOf[typings.highcharts.highchartsStrings.squarepin]
 }
 

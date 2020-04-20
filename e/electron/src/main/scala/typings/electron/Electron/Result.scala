@@ -31,7 +31,6 @@ object Result {
     selectionArea: Rectangle
   ): Result = {
     val __obj = js.Dynamic.literal(activeMatchOrdinal = activeMatchOrdinal.asInstanceOf[js.Any], finalUpdate = finalUpdate.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], selectionArea = selectionArea.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

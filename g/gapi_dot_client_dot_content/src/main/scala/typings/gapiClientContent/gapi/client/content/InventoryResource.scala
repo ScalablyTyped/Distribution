@@ -27,7 +27,6 @@ object InventoryResource {
     set: AnonProductId => Request_[InventorySetResponse]
   ): InventoryResource = {
     val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[InventoryResource]
   }
 }

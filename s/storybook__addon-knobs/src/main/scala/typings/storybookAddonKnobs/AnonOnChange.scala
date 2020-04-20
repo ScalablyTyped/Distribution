@@ -18,7 +18,6 @@ object AnonOnChange {
     onChange: Validator[js.Function1[/* value */ String, String]]
   ): AnonOnChange = {
     val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnChange]
   }
 }

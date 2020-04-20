@@ -12,7 +12,6 @@ object Functor {
   @scala.inline
   def apply[A](map: js.Function1[/* a */ A, js.Any] => Functor[js.Any]): Functor[A] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map))
-  
     __obj.asInstanceOf[Functor[A]]
   }
 }

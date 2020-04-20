@@ -13,7 +13,6 @@ object LineRange {
   @scala.inline
   def apply(contentLength: Double, end: Double, pos: Double): LineRange = {
     val __obj = js.Dynamic.literal(contentLength = contentLength.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LineRange]
   }
 }

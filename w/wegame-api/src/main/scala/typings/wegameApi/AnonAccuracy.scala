@@ -47,7 +47,6 @@ object AnonAccuracy {
     verticalAccuracy: Double
   ): AnonAccuracy = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], altitude = altitude.asInstanceOf[js.Any], horizontalAccuracy = horizontalAccuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], verticalAccuracy = verticalAccuracy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccuracy]
   }
 }

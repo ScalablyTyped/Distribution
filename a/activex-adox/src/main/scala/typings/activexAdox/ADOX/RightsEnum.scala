@@ -46,42 +46,40 @@ trait RightsEnum extends js.Object
 
 object RightsEnum {
   @scala.inline
-  def adRightCreate: `16384` = this.cast(16384)
+  def adRightCreate: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
-  def adRightDelete: `65536` = this.cast(65536)
+  def adRightDelete: `65536` = 65536.asInstanceOf[`65536`]
   @scala.inline
-  def adRightDrop: `256` = this.cast(256)
+  def adRightDrop: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def adRightExclusive: `512` = this.cast(512)
+  def adRightExclusive: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def adRightExecute: `536870912` = this.cast(536870912)
+  def adRightExecute: `536870912` = 536870912.asInstanceOf[`536870912`]
   @scala.inline
-  def adRightFull: `268435456` = this.cast(268435456)
+  def adRightFull: `268435456` = 268435456.asInstanceOf[`268435456`]
   @scala.inline
-  def adRightInsert: `32768` = this.cast(32768)
+  def adRightInsert: `32768` = 32768.asInstanceOf[`32768`]
   @scala.inline
-  def adRightMaximumAllowed: `33554432` = this.cast(33554432)
+  def adRightMaximumAllowed: `33554432` = 33554432.asInstanceOf[`33554432`]
   @scala.inline
-  def adRightNone: `0` = this.cast(0)
+  def adRightNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adRightRead: `-2147483648` = this.cast(-2147483648)
+  def adRightRead: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
   @scala.inline
-  def adRightReadDesign: `1024` = this.cast(1024)
+  def adRightReadDesign: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def adRightReadPermissions: `131072` = this.cast(131072)
+  def adRightReadPermissions: `131072` = 131072.asInstanceOf[`131072`]
   @scala.inline
-  def adRightReference: `8192` = this.cast(8192)
+  def adRightReference: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def adRightUpdate: `1073741824` = this.cast(1073741824)
+  def adRightUpdate: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
   @scala.inline
-  def adRightWithGrant: `4096` = this.cast(4096)
+  def adRightWithGrant: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def adRightWriteDesign: `2048` = this.cast(2048)
+  def adRightWriteDesign: `2048` = 2048.asInstanceOf[`2048`]
   @scala.inline
-  def adRightWriteOwner: `524288` = this.cast(524288)
+  def adRightWriteOwner: `524288` = 524288.asInstanceOf[`524288`]
   @scala.inline
-  def adRightWritePermissions: `262144` = this.cast(262144)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adRightWritePermissions: `262144` = 262144.asInstanceOf[`262144`]
 }
 

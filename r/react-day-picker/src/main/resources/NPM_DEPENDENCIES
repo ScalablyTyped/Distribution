@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-day-picker" : "7.4.0"
+      "react-day-picker" : "7.4.6"
     }
   ],
   "test-dependencies" : [
     {
-      "react-day-picker" : "7.4.0"
+      "react-day-picker" : "7.4.6"
     }
   ],
   "compile-devDependencies" : [

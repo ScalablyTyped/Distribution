@@ -13,7 +13,6 @@ object CancellationTokenData {
   @scala.inline
   def apply(cancellationFileName: String, isCancelled: Boolean): CancellationTokenData = {
     val __obj = js.Dynamic.literal(cancellationFileName = cancellationFileName.asInstanceOf[js.Any], isCancelled = isCancelled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancellationTokenData]
   }
 }

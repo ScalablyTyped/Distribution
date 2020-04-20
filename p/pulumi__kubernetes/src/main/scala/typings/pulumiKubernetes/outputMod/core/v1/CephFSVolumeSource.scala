@@ -51,7 +51,6 @@ object CephFSVolumeSource {
     user: String
   ): CephFSVolumeSource = {
     val __obj = js.Dynamic.literal(monitors = monitors.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], secretFile = secretFile.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CephFSVolumeSource]
   }
 }

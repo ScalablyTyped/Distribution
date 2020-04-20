@@ -26,22 +26,20 @@ trait svgFecompositeOperator extends js.Object
 
 object svgFecompositeOperator {
   @scala.inline
-  def SVG_FECOMPOSITE_OPERATOR_ARITHMETIC: `6` = this.cast(6)
+  def SVG_FECOMPOSITE_OPERATOR_ARITHMETIC: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def SVG_FECOMPOSITE_OPERATOR_ATOP: `4` = this.cast(4)
+  def SVG_FECOMPOSITE_OPERATOR_ATOP: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def SVG_FECOMPOSITE_OPERATOR_IN: `2` = this.cast(2)
+  def SVG_FECOMPOSITE_OPERATOR_IN: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SVG_FECOMPOSITE_OPERATOR_OUT: `3` = this.cast(3)
+  def SVG_FECOMPOSITE_OPERATOR_OUT: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def SVG_FECOMPOSITE_OPERATOR_OVER: `1` = this.cast(1)
+  def SVG_FECOMPOSITE_OPERATOR_OVER: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SVG_FECOMPOSITE_OPERATOR_UNKNOWN: `0` = this.cast(0)
+  def SVG_FECOMPOSITE_OPERATOR_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SVG_FECOMPOSITE_OPERATOR_XOR: `5` = this.cast(5)
+  def SVG_FECOMPOSITE_OPERATOR_XOR: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def svgFecompositeOperator_Max: `2147483647` = this.cast(2147483647)
+  def svgFecompositeOperator_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

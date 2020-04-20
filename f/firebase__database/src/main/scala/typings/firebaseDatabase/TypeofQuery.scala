@@ -39,7 +39,7 @@ trait TypeofQuery extends Instantiable4[
     * @private
     */
   var validateQueryEndpoints_ : js.Any = js.native
-  def __referenceConstructor(): Instantiable2[/* repo */ Repo, /* path */ Path, Query] = js.native
+  def __referenceConstructor: Instantiable2[/* repo */ Repo, /* path */ Path, Query] = js.native
   def __referenceConstructor(`val`: Instantiable2[/* repo */ Repo, /* path */ Path, Query]): js.Any = js.native
 }
 

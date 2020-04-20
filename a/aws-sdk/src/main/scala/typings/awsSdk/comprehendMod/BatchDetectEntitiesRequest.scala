@@ -20,7 +20,6 @@ object BatchDetectEntitiesRequest {
   @scala.inline
   def apply(LanguageCode: LanguageCode, TextList: StringList): BatchDetectEntitiesRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], TextList = TextList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDetectEntitiesRequest]
   }
 }

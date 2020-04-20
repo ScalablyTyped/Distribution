@@ -13,7 +13,6 @@ object IDBRequestEventMap {
   @scala.inline
   def apply(error: Event_, success: Event_): IDBRequestEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDBRequestEventMap]
   }
 }

@@ -13,7 +13,6 @@ object AnonAlt {
   @scala.inline
   def apply(noMeta: Anon186, shift: Anon186): AnonAlt = {
     val __obj = js.Dynamic.literal(noMeta = noMeta.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlt]
   }
 }

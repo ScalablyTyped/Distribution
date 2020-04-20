@@ -12,7 +12,6 @@ object Anon15 {
   @scala.inline
   def apply(attached: String => Unit): Anon15 = {
     val __obj = js.Dynamic.literal(attached = js.Any.fromFunction1(attached))
-  
     __obj.asInstanceOf[Anon15]
   }
 }

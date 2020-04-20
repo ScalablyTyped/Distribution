@@ -12,10 +12,8 @@ trait Action extends js.Object
 
 object Action {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def close: typings.reactFloater.reactFloaterStrings.close = "close".asInstanceOf[typings.reactFloater.reactFloaterStrings.close]
   @scala.inline
-  def close: typings.reactFloater.reactFloaterStrings.close = this.cast("close")
-  @scala.inline
-  def open: typings.reactFloater.reactFloaterStrings.open = this.cast("open")
+  def open: typings.reactFloater.reactFloaterStrings.open = "open".asInstanceOf[typings.reactFloater.reactFloaterStrings.open]
 }
 

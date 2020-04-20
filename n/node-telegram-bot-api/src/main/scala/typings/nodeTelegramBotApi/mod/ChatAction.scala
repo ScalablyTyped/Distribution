@@ -20,26 +20,24 @@ trait ChatAction extends js.Object
 
 object ChatAction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def find_location: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.find_location = "find_location".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.find_location]
   @scala.inline
-  def find_location: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.find_location = this.cast("find_location")
+  def record_audio: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_audio = "record_audio".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_audio]
   @scala.inline
-  def record_audio: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_audio = this.cast("record_audio")
+  def record_video: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video = "record_video".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video]
   @scala.inline
-  def record_video: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video = this.cast("record_video")
+  def record_video_note: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video_note = "record_video_note".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video_note]
   @scala.inline
-  def record_video_note: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video_note = this.cast("record_video_note")
+  def typing: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.typing = "typing".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.typing]
   @scala.inline
-  def typing: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.typing = this.cast("typing")
+  def upload_audio: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_audio = "upload_audio".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_audio]
   @scala.inline
-  def upload_audio: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_audio = this.cast("upload_audio")
+  def upload_document: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_document = "upload_document".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_document]
   @scala.inline
-  def upload_document: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_document = this.cast("upload_document")
+  def upload_photo: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_photo = "upload_photo".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_photo]
   @scala.inline
-  def upload_photo: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_photo = this.cast("upload_photo")
+  def upload_video: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video = "upload_video".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video]
   @scala.inline
-  def upload_video: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video = this.cast("upload_video")
-  @scala.inline
-  def upload_video_note: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video_note = this.cast("upload_video_note")
+  def upload_video_note: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video_note = "upload_video_note".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video_note]
 }
 

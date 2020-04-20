@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gatsby-core-utils" : "1.1.1"
+      "gatsby-core-utils" : "1.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "gatsby-core-utils" : "1.1.1"
+      "gatsby-core-utils" : "1.1.3"
     }
   ],
   "compile-devDependencies" : [

@@ -22,7 +22,6 @@ object ScrollIntoViewOptions {
     onlyScrollIfNeeded: Boolean
   ): ScrollIntoViewOptions = {
     val __obj = js.Dynamic.literal(alignToTop = alignToTop.asInstanceOf[js.Any], offsetBottom = offsetBottom.asInstanceOf[js.Any], offsetLeft = offsetLeft.asInstanceOf[js.Any], offsetTop = offsetTop.asInstanceOf[js.Any], onlyScrollIfNeeded = onlyScrollIfNeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollIntoViewOptions]
   }
 }

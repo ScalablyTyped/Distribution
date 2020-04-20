@@ -24,7 +24,6 @@ object JumpListSettings {
   @scala.inline
   def apply(minItems: Double, removedItems: js.Array[JumpListItem]): JumpListSettings = {
     val __obj = js.Dynamic.literal(minItems = minItems.asInstanceOf[js.Any], removedItems = removedItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JumpListSettings]
   }
 }

@@ -16,7 +16,6 @@ object IHashAlgorithmNamesStatics {
   @scala.inline
   def apply(md5: String, sha1: String, sha256: String, sha384: String, sha512: String): IHashAlgorithmNamesStatics = {
     val __obj = js.Dynamic.literal(md5 = md5.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], sha384 = sha384.asInstanceOf[js.Any], sha512 = sha512.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IHashAlgorithmNamesStatics]
   }
 }

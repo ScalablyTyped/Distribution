@@ -15,7 +15,6 @@ object AnonTargetCoordinates {
   @scala.inline
   def apply(returnValue: IPromiseWithIAsyncAction, targetCoordinates: Point): AnonTargetCoordinates = {
     val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], targetCoordinates = targetCoordinates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTargetCoordinates]
   }
 }

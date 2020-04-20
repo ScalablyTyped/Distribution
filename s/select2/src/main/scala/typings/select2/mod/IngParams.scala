@@ -17,7 +17,6 @@ object IngParams {
   @scala.inline
   def apply(name: select | open | close | unselect, prevented: Boolean): IngParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], prevented = prevented.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IngParams]
   }
 }

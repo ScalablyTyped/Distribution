@@ -17,20 +17,18 @@ trait Coders extends js.Object
 
 object Coders {
   @scala.inline
-  def aloneDecoder: typings.lzmaNative.lzmaNativeStrings.aloneDecoder = this.cast("aloneDecoder")
+  def aloneDecoder: typings.lzmaNative.lzmaNativeStrings.aloneDecoder = "aloneDecoder".asInstanceOf[typings.lzmaNative.lzmaNativeStrings.aloneDecoder]
   @scala.inline
-  def aloneEncoder: typings.lzmaNative.lzmaNativeStrings.aloneEncoder = this.cast("aloneEncoder")
+  def aloneEncoder: typings.lzmaNative.lzmaNativeStrings.aloneEncoder = "aloneEncoder".asInstanceOf[typings.lzmaNative.lzmaNativeStrings.aloneEncoder]
   @scala.inline
-  def autoDecoder: typings.lzmaNative.lzmaNativeStrings.autoDecoder = this.cast("autoDecoder")
+  def autoDecoder: typings.lzmaNative.lzmaNativeStrings.autoDecoder = "autoDecoder".asInstanceOf[typings.lzmaNative.lzmaNativeStrings.autoDecoder]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def easyEncoder: typings.lzmaNative.lzmaNativeStrings.easyEncoder = "easyEncoder".asInstanceOf[typings.lzmaNative.lzmaNativeStrings.easyEncoder]
   @scala.inline
-  def easyEncoder: typings.lzmaNative.lzmaNativeStrings.easyEncoder = this.cast("easyEncoder")
+  def rawEncoder: typings.lzmaNative.lzmaNativeStrings.rawEncoder = "rawEncoder".asInstanceOf[typings.lzmaNative.lzmaNativeStrings.rawEncoder]
   @scala.inline
-  def rawEncoder: typings.lzmaNative.lzmaNativeStrings.rawEncoder = this.cast("rawEncoder")
+  def streamDecoder: typings.lzmaNative.lzmaNativeStrings.streamDecoder = "streamDecoder".asInstanceOf[typings.lzmaNative.lzmaNativeStrings.streamDecoder]
   @scala.inline
-  def streamDecoder: typings.lzmaNative.lzmaNativeStrings.streamDecoder = this.cast("streamDecoder")
-  @scala.inline
-  def streamEncoder: typings.lzmaNative.lzmaNativeStrings.streamEncoder = this.cast("streamEncoder")
+  def streamEncoder: typings.lzmaNative.lzmaNativeStrings.streamEncoder = "streamEncoder".asInstanceOf[typings.lzmaNative.lzmaNativeStrings.streamEncoder]
 }
 

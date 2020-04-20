@@ -19,7 +19,6 @@ object IdentityDescriptor {
   @scala.inline
   def apply(identifier: String, identityType: String): IdentityDescriptor = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], identityType = identityType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdentityDescriptor]
   }
 }

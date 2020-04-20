@@ -22,18 +22,16 @@ trait WdAutoMacros extends js.Object
 
 object WdAutoMacros {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAutoClose: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdAutoClose: `3` = this.cast(3)
+  def wdAutoExec: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdAutoExec: `0` = this.cast(0)
+  def wdAutoExit: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdAutoExit: `4` = this.cast(4)
+  def wdAutoNew: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdAutoNew: `1` = this.cast(1)
+  def wdAutoOpen: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAutoOpen: `2` = this.cast(2)
-  @scala.inline
-  def wdAutoSync: `5` = this.cast(5)
+  def wdAutoSync: `5` = 5.asInstanceOf[`5`]
 }
 

@@ -13,7 +13,6 @@ object SourceBufferListEventMap {
   @scala.inline
   def apply(addsourcebuffer: Event_, removesourcebuffer: Event_): SourceBufferListEventMap = {
     val __obj = js.Dynamic.literal(addsourcebuffer = addsourcebuffer.asInstanceOf[js.Any], removesourcebuffer = removesourcebuffer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceBufferListEventMap]
   }
 }

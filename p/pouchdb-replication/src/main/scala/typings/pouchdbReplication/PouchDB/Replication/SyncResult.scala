@@ -15,7 +15,6 @@ object SyncResult {
   @scala.inline
   def apply[Content /* <: js.Object */](change: ReplicationResult[Content], direction: push | pull): SyncResult[Content] = {
     val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SyncResult[Content]]
   }
 }

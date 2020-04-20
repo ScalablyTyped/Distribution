@@ -13,12 +13,10 @@ trait CheckedStrategy extends js.Object
 
 object CheckedStrategy {
   @scala.inline
-  def SHOW_ALL: typings.rcTreeSelect.rcTreeSelectStrings.SHOW_ALL = this.cast("SHOW_ALL")
+  def SHOW_ALL: typings.rcTreeSelect.rcTreeSelectStrings.SHOW_ALL = "SHOW_ALL".asInstanceOf[typings.rcTreeSelect.rcTreeSelectStrings.SHOW_ALL]
   @scala.inline
-  def SHOW_CHILD: typings.rcTreeSelect.rcTreeSelectStrings.SHOW_CHILD = this.cast("SHOW_CHILD")
+  def SHOW_CHILD: typings.rcTreeSelect.rcTreeSelectStrings.SHOW_CHILD = "SHOW_CHILD".asInstanceOf[typings.rcTreeSelect.rcTreeSelectStrings.SHOW_CHILD]
   @scala.inline
-  def SHOW_PARENT: typings.rcTreeSelect.rcTreeSelectStrings.SHOW_PARENT = this.cast("SHOW_PARENT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SHOW_PARENT: typings.rcTreeSelect.rcTreeSelectStrings.SHOW_PARENT = "SHOW_PARENT".asInstanceOf[typings.rcTreeSelect.rcTreeSelectStrings.SHOW_PARENT]
 }
 

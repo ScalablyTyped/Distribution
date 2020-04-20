@@ -18,7 +18,6 @@ object MultipleAlbumsResponse {
   @scala.inline
   def apply(albums: js.Array[AlbumObjectFull]): MultipleAlbumsResponse = {
     val __obj = js.Dynamic.literal(albums = albums.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultipleAlbumsResponse]
   }
 }

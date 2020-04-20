@@ -22,26 +22,24 @@ trait RangeSelectorButtonTypeValue extends js.Object
 
 object RangeSelectorButtonTypeValue {
   @scala.inline
-  def all: typings.highcharts.highchartsStrings.all = this.cast("all")
+  def all: typings.highcharts.highchartsStrings.all = "all".asInstanceOf[typings.highcharts.highchartsStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def day: day_ = "day".asInstanceOf[day_]
   @scala.inline
-  def day: day_ = this.cast("day")
+  def hour: typings.highcharts.highchartsStrings.hour = "hour".asInstanceOf[typings.highcharts.highchartsStrings.hour]
   @scala.inline
-  def hour: typings.highcharts.highchartsStrings.hour = this.cast("hour")
+  def millisecond: typings.highcharts.highchartsStrings.millisecond = "millisecond".asInstanceOf[typings.highcharts.highchartsStrings.millisecond]
   @scala.inline
-  def millisecond: typings.highcharts.highchartsStrings.millisecond = this.cast("millisecond")
+  def minute: typings.highcharts.highchartsStrings.minute = "minute".asInstanceOf[typings.highcharts.highchartsStrings.minute]
   @scala.inline
-  def minute: typings.highcharts.highchartsStrings.minute = this.cast("minute")
+  def month: month_ = "month".asInstanceOf[month_]
   @scala.inline
-  def month: month_ = this.cast("month")
+  def second: typings.highcharts.highchartsStrings.second = "second".asInstanceOf[typings.highcharts.highchartsStrings.second]
   @scala.inline
-  def second: typings.highcharts.highchartsStrings.second = this.cast("second")
+  def week: typings.highcharts.highchartsStrings.week = "week".asInstanceOf[typings.highcharts.highchartsStrings.week]
   @scala.inline
-  def week: typings.highcharts.highchartsStrings.week = this.cast("week")
+  def year: typings.highcharts.highchartsStrings.year = "year".asInstanceOf[typings.highcharts.highchartsStrings.year]
   @scala.inline
-  def year: typings.highcharts.highchartsStrings.year = this.cast("year")
-  @scala.inline
-  def ytd: typings.highcharts.highchartsStrings.ytd = this.cast("ytd")
+  def ytd: typings.highcharts.highchartsStrings.ytd = "ytd".asInstanceOf[typings.highcharts.highchartsStrings.ytd]
 }
 

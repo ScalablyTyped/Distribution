@@ -57,7 +57,7 @@ object mobxStrings {
   sealed trait update extends js.Object
   
   @scala.inline
-  def `An invariant failedComma however the error is obfuscated because this is a production buildDot`: `An invariant failedComma however the error is obfuscated because this is a production buildDot` = "An invariant failed, however the error is obfuscated because this is a production build.".asInstanceOf[`An invariant failedComma however the error is obfuscated because this is a production buildDot`]
+  def `An invariant failedComma however the error is obfuscated because this is a production buildDot`: `An invariant failedComma however the error is obfuscated because this is a production buildDot` = ("An invariant failed, however the error is obfuscated because this is a production build.").asInstanceOf[`An invariant failedComma however the error is obfuscated because this is a production buildDot`]
   @scala.inline
   def IObservableFactories: IObservableFactories = "IObservableFactories".asInstanceOf[IObservableFactories]
   @scala.inline

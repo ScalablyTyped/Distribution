@@ -13,7 +13,6 @@ object FileAsset {
   @scala.inline
   def apply(dirPath: String, fileName: String): FileAsset = {
     val __obj = js.Dynamic.literal(dirPath = dirPath.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileAsset]
   }
 }

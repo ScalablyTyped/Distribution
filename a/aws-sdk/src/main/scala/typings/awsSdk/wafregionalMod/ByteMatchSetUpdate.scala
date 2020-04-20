@@ -20,7 +20,6 @@ object ByteMatchSetUpdate {
   @scala.inline
   def apply(Action: ChangeAction, ByteMatchTuple: ByteMatchTuple): ByteMatchSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], ByteMatchTuple = ByteMatchTuple.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ByteMatchSetUpdate]
   }
 }

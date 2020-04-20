@@ -16,12 +16,10 @@ trait PpUpdateOption extends js.Object
 
 object PpUpdateOption {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppUpdateOptionAutomatic: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppUpdateOptionAutomatic: `2` = this.cast(2)
+  def ppUpdateOptionManual: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppUpdateOptionManual: `1` = this.cast(1)
-  @scala.inline
-  def ppUpdateOptionMixed: `-2` = this.cast(-2)
+  def ppUpdateOptionMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

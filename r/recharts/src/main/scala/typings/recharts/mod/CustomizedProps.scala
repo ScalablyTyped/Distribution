@@ -13,7 +13,6 @@ object CustomizedProps {
   @scala.inline
   def apply(component: ContentRenderer[_] | ReactElement): CustomizedProps = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomizedProps]
   }
 }

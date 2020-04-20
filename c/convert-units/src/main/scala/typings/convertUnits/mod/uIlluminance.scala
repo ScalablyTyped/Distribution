@@ -12,10 +12,8 @@ trait uIlluminance extends js.Object
 
 object uIlluminance {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `ft-cd`: typings.convertUnits.convertUnitsStrings.`ft-cd` = "ft-cd".asInstanceOf[typings.convertUnits.convertUnitsStrings.`ft-cd`]
   @scala.inline
-  def `ft-cd`: typings.convertUnits.convertUnitsStrings.`ft-cd` = this.cast("ft-cd")
-  @scala.inline
-  def lx: typings.convertUnits.convertUnitsStrings.lx = this.cast("lx")
+  def lx: typings.convertUnits.convertUnitsStrings.lx = "lx".asInstanceOf[typings.convertUnits.convertUnitsStrings.lx]
 }
 

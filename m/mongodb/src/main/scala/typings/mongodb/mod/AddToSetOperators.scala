@@ -13,7 +13,6 @@ object AddToSetOperators {
   @scala.inline
   def apply[Type]($each: Type): AddToSetOperators[Type] = {
     val __obj = js.Dynamic.literal($each = $each.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddToSetOperators[Type]]
   }
 }

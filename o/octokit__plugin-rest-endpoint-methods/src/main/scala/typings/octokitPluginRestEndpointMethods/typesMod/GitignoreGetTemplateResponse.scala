@@ -13,7 +13,6 @@ object GitignoreGetTemplateResponse {
   @scala.inline
   def apply(name: String, source: String): GitignoreGetTemplateResponse = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitignoreGetTemplateResponse]
   }
 }

@@ -39,7 +39,6 @@ object BankAccountData {
     Type: ValueOf[IBankAccountType]
   ): BankAccountData = {
     val __obj = js.Dynamic.literal(BIC = BIC.asInstanceOf[js.Any], IBAN = IBAN.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BankAccountData]
   }
 }

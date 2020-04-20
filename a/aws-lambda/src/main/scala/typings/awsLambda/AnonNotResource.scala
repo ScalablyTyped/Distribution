@@ -12,7 +12,6 @@ object AnonNotResource {
   @scala.inline
   def apply(NotResource: String | js.Array[String]): AnonNotResource = {
     val __obj = js.Dynamic.literal(NotResource = NotResource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNotResource]
   }
 }

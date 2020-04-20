@@ -16,7 +16,6 @@ object EventCreateResponse {
   @scala.inline
   def apply(event: AnonDatehappened, ok: Boolean, status: ok): EventCreateResponse = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventCreateResponse]
   }
 }

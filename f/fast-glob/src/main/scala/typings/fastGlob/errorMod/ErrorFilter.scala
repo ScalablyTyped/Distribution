@@ -15,7 +15,6 @@ object ErrorFilter {
   @scala.inline
   def apply(_isNonFatalError: js.Any, _settings: js.Any, getFilter: () => ErrorFilterFunction): ErrorFilter = {
     val __obj = js.Dynamic.literal(_isNonFatalError = _isNonFatalError.asInstanceOf[js.Any], _settings = _settings.asInstanceOf[js.Any], getFilter = js.Any.fromFunction0(getFilter))
-  
     __obj.asInstanceOf[ErrorFilter]
   }
 }

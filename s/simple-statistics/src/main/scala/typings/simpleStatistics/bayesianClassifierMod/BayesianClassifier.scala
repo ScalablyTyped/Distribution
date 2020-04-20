@@ -18,7 +18,6 @@ object BayesianClassifier {
   @scala.inline
   def apply(data: Data, score: Item => OddsSums, totalCount: Double, train: (Item, String) => Unit): BayesianClassifier = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], score = js.Any.fromFunction1(score), totalCount = totalCount.asInstanceOf[js.Any], train = js.Any.fromFunction2(train))
-  
     __obj.asInstanceOf[BayesianClassifier]
   }
 }

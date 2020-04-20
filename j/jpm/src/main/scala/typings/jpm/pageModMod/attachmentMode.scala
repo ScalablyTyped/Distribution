@@ -13,12 +13,10 @@ trait attachmentMode extends js.Object
 
 object attachmentMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def existing: typings.jpm.jpmStrings.existing = "existing".asInstanceOf[typings.jpm.jpmStrings.existing]
   @scala.inline
-  def existing: typings.jpm.jpmStrings.existing = this.cast("existing")
+  def frame: typings.jpm.jpmStrings.frame = "frame".asInstanceOf[typings.jpm.jpmStrings.frame]
   @scala.inline
-  def frame: typings.jpm.jpmStrings.frame = this.cast("frame")
-  @scala.inline
-  def top: typings.jpm.jpmStrings.top = this.cast("top")
+  def top: typings.jpm.jpmStrings.top = "top".asInstanceOf[typings.jpm.jpmStrings.top]
 }
 

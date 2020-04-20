@@ -12,7 +12,6 @@ object ClientCredentialsGrantOptions {
   @scala.inline
   def apply(audience: String): ClientCredentialsGrantOptions = {
     val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientCredentialsGrantOptions]
   }
 }

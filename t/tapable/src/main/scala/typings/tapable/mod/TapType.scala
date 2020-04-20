@@ -13,12 +13,10 @@ trait TapType extends js.Object
 
 object TapType {
   @scala.inline
-  def async: typings.tapable.tapableStrings.async = this.cast("async")
+  def async: typings.tapable.tapableStrings.async = "async".asInstanceOf[typings.tapable.tapableStrings.async]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def promise: typings.tapable.tapableStrings.promise = "promise".asInstanceOf[typings.tapable.tapableStrings.promise]
   @scala.inline
-  def promise: typings.tapable.tapableStrings.promise = this.cast("promise")
-  @scala.inline
-  def sync: typings.tapable.tapableStrings.sync = this.cast("sync")
+  def sync: typings.tapable.tapableStrings.sync = "sync".asInstanceOf[typings.tapable.tapableStrings.sync]
 }
 

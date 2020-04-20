@@ -50,7 +50,6 @@ object OrganizationSettings {
     useSkypeProtocol: Boolean
   ): OrganizationSettings = {
     val __obj = js.Dynamic.literal(baseCurrencyId = baseCurrencyId.asInstanceOf[js.Any], defaultCountryCode = defaultCountryCode.asInstanceOf[js.Any], isAutoSaveEnabled = isAutoSaveEnabled.asInstanceOf[js.Any], languageId = languageId.asInstanceOf[js.Any], organizationId = organizationId.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], useSkypeProtocol = useSkypeProtocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OrganizationSettings]
   }
 }

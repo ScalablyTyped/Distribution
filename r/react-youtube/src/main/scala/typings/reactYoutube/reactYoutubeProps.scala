@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactYoutubeProps {
   @scala.inline
-  def ReactYoutubeProps: YouTubeProps.type = typings.reactYoutube.mod.YouTubeProps
+  def ReactYoutubeProps: YouTubeProps.type = YouTubeProps
   type ReactYoutubeProps = YouTubeProps
 }
 

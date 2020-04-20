@@ -1,6 +1,17 @@
 package typings.titanium.Titanium
 
 import typings.titanium.MessageReply
+import typings.titanium.titaniumStrings.activationCompleted
+import typings.titanium.titaniumStrings.deactivate
+import typings.titanium.titaniumStrings.finishfiletransfer
+import typings.titanium.titaniumStrings.finishuserinfotransfer
+import typings.titanium.titaniumStrings.inactive
+import typings.titanium.titaniumStrings.reachabilitychanged
+import typings.titanium.titaniumStrings.receiveapplicationcontext
+import typings.titanium.titaniumStrings.receivefile
+import typings.titanium.titaniumStrings.receivemessage
+import typings.titanium.titaniumStrings.receiveuserinfo
+import typings.titanium.titaniumStrings.watchstatechanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +19,11 @@ import scala.scalajs.js.annotation._
 /**
 	 * Used to enable data and file transfers between a watchOS and iOS application.
 	 */
+@JSGlobal("Titanium.WatchSession")
+@js.native
+class WatchSession () extends Module
+
+/* static members */
 @JSGlobal("Titanium.WatchSession")
 @js.native
 object WatchSession extends js.Object {
@@ -79,7 +95,65 @@ object WatchSession extends js.Object {
   /**
   		 * Adds the specified callback as an event listener for the named event.
   		 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  /**
+  		 * Adds the specified callback as an event listener for the named event.
+  		 */
+  @JSName("addEventListener")
+  def addEventListener_activationCompleted(
+    name: activationCompleted,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionActivationCompletedEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deactivate(
+    name: deactivate,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionDeactivateEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_finishfiletransfer(
+    name: finishfiletransfer,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionFinishfiletransferEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_finishuserinfotransfer(
+    name: finishuserinfotransfer,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionFinishuserinfotransferEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_inactive(
+    name: inactive,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionInactiveEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_reachabilitychanged(
+    name: reachabilitychanged,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReachabilitychangedEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_receiveapplicationcontext(
+    name: receiveapplicationcontext,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReceiveapplicationcontextEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_receivefile(
+    name: receivefile,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReceivefileEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_receivemessage(
+    name: receivemessage,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReceivemessageEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_receiveuserinfo(
+    name: receiveuserinfo,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReceiveuserinfoEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_watchstatechanged(
+    name: watchstatechanged,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionWatchstatechangedEvent, Unit]
+  ): Unit = js.native
   /**
   		 * Applies the properties to the proxy.
   		 */
@@ -99,66 +173,185 @@ object WatchSession extends js.Object {
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
+  		 * Fires a synthesized event to any registered listeners.
+  		 */
+  @JSName("fireEvent")
+  def fireEvent_activationCompleted(name: activationCompleted): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_activationCompleted(name: activationCompleted, event: WatchSessionActivationCompletedEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_deactivate(name: deactivate): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_deactivate(name: deactivate, event: WatchSessionDeactivateEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_finishfiletransfer(name: finishfiletransfer): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_finishfiletransfer(name: finishfiletransfer, event: WatchSessionFinishfiletransferEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_finishuserinfotransfer(name: finishuserinfotransfer): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_finishuserinfotransfer(name: finishuserinfotransfer, event: WatchSessionFinishuserinfotransferEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_inactive(name: inactive): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_inactive(name: inactive, event: WatchSessionInactiveEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_reachabilitychanged(name: reachabilitychanged): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_reachabilitychanged(name: reachabilitychanged, event: WatchSessionReachabilitychangedEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_receiveapplicationcontext(name: receiveapplicationcontext): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_receiveapplicationcontext(name: receiveapplicationcontext, event: WatchSessionReceiveapplicationcontextEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_receivefile(name: receivefile): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_receivefile(name: receivefile, event: WatchSessionReceivefileEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_receivemessage(name: receivemessage): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_receivemessage(name: receivemessage, event: WatchSessionReceivemessageEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_receiveuserinfo(name: receiveuserinfo): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_receiveuserinfo(name: receiveuserinfo, event: WatchSessionReceiveuserinfoEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_watchstatechanged(name: watchstatechanged): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_watchstatechanged(name: watchstatechanged, event: WatchSessionWatchstatechangedEvent): Unit = js.native
+  /**
   		 * Gets the value of the <Titanium.WatchSession.activationState> property.
+  		 * @deprecated Access <Titanium.WatchSession.activationState> instead.
   		 */
   def getActivationState(): Double = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.apiName> property.
+  		 * @deprecated Access <Titanium.WatchSession.apiName> instead.
   		 */
   def getApiName(): String = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.bubbleParent> property.
+  		 * @deprecated Access <Titanium.WatchSession.bubbleParent> instead.
   		 */
   def getBubbleParent(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.hasContentPending> property.
+  		 * @deprecated Access <Titanium.WatchSession.hasContentPending> instead.
   		 */
   def getHasContentPending(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.isActivated> property.
+  		 * @deprecated Access <Titanium.WatchSession.isActivated> instead.
   		 */
   def getIsActivated(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.isComplicationEnabled> property.
+  		 * @deprecated Access <Titanium.WatchSession.isComplicationEnabled> instead.
   		 */
   def getIsComplicationEnabled(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.isPaired> property.
+  		 * @deprecated Access <Titanium.WatchSession.isPaired> instead.
   		 */
   def getIsPaired(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.isReachable> property.
+  		 * @deprecated Access <Titanium.WatchSession.isReachable> instead.
   		 */
   def getIsReachable(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.isSupported> property.
+  		 * @deprecated Access <Titanium.WatchSession.isSupported> instead.
   		 */
   def getIsSupported(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.isWatchAppInstalled> property.
+  		 * @deprecated Access <Titanium.WatchSession.isWatchAppInstalled> instead.
   		 */
   def getIsWatchAppInstalled(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.recentApplicationContext> property.
+  		 * @deprecated Access <Titanium.WatchSession.recentApplicationContext> instead.
   		 */
   def getRecentApplicationContext(): js.Any = js.native
   /**
   		 * Gets the value of the <Titanium.WatchSession.remainingComplicationUserInfoTransfers> property.
+  		 * @deprecated Access <Titanium.WatchSession.remainingComplicationUserInfoTransfers> instead.
   		 */
   def getRemainingComplicationUserInfoTransfers(): Double = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  /**
+  		 * Removes the specified callback as an event listener for the named event.
+  		 */
+  @JSName("removeEventListener")
+  def removeEventListener_activationCompleted(
+    name: activationCompleted,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionActivationCompletedEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deactivate(
+    name: deactivate,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionDeactivateEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_finishfiletransfer(
+    name: finishfiletransfer,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionFinishfiletransferEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_finishuserinfotransfer(
+    name: finishuserinfotransfer,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionFinishuserinfotransferEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_inactive(
+    name: inactive,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionInactiveEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_reachabilitychanged(
+    name: reachabilitychanged,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReachabilitychangedEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_receiveapplicationcontext(
+    name: receiveapplicationcontext,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReceiveapplicationcontextEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_receivefile(
+    name: receivefile,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReceivefileEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_receivemessage(
+    name: receivemessage,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReceivemessageEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_receiveuserinfo(
+    name: receiveuserinfo,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionReceiveuserinfoEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_watchstatechanged(
+    name: watchstatechanged,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ WatchSessionWatchstatechangedEvent, Unit]
+  ): Unit = js.native
   /**
   		 * Sends a message to the apple watch.
   		 */
   def sendMessage(message: js.Any): Unit = js.native
-  def sendMessage(message: js.Any, reply: js.Function1[/* param0 */ MessageReply, _]): Unit = js.native
+  def sendMessage(message: js.Any, reply: js.Function1[/* param0 */ MessageReply, Unit]): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.WatchSession.bubbleParent> property.
+  		 * @deprecated Set the value using <Titanium.WatchSession.bubbleParent> instead.
   		 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
   /**

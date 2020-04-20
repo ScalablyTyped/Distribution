@@ -18,7 +18,6 @@ object AnonNoBubble {
   @scala.inline
   def apply(noBubble: Boolean): AnonNoBubble = {
     val __obj = js.Dynamic.literal(noBubble = noBubble.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNoBubble]
   }
 }

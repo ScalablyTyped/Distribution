@@ -13,7 +13,6 @@ object IPaymentMethodAttachOptions {
   @scala.inline
   def apply(customer: String): IPaymentMethodAttachOptions = {
     val __obj = js.Dynamic.literal(customer = customer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPaymentMethodAttachOptions]
   }
 }

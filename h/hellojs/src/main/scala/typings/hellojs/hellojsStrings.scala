@@ -42,15 +42,15 @@ object hellojsStrings {
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
-  def `code id_token`: `code id_token` = "code id_token".asInstanceOf[`code id_token`]
+  def `code id_token`: `code id_token` = ("code id_token").asInstanceOf[`code id_token`]
   @scala.inline
-  def `code id_token token`: `code id_token token` = "code id_token token".asInstanceOf[`code id_token token`]
+  def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
   @scala.inline
-  def `code token`: `code token` = "code token".asInstanceOf[`code token`]
+  def `code token`: `code token` = ("code token").asInstanceOf[`code token`]
   @scala.inline
   def id_token: id_token = "id_token".asInstanceOf[id_token]
   @scala.inline
-  def `id_token token`: `id_token token` = "id_token token".asInstanceOf[`id_token token`]
+  def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline

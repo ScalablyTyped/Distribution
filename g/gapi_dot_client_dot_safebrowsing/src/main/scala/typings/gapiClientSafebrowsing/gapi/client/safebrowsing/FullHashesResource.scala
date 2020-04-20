@@ -15,7 +15,6 @@ object FullHashesResource {
   @scala.inline
   def apply(find: AnonAlt => Request_[FindFullHashesResponse]): FullHashesResource = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
-  
     __obj.asInstanceOf[FullHashesResource]
   }
 }

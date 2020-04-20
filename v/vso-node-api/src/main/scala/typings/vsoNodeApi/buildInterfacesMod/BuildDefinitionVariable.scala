@@ -23,7 +23,6 @@ object BuildDefinitionVariable {
   @scala.inline
   def apply(allowOverride: Boolean, isSecret: Boolean, value: String): BuildDefinitionVariable = {
     val __obj = js.Dynamic.literal(allowOverride = allowOverride.asInstanceOf[js.Any], isSecret = isSecret.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildDefinitionVariable]
   }
 }

@@ -15,7 +15,6 @@ object TaskqueuesResource {
   @scala.inline
   def apply(get: AnonAlt => Request_[TaskQueue]): TaskqueuesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[TaskqueuesResource]
   }
 }

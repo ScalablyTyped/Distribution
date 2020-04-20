@@ -12,7 +12,6 @@ object LogoControlOptions {
   @scala.inline
   def apply(position: Position): LogoControlOptions = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogoControlOptions]
   }
 }

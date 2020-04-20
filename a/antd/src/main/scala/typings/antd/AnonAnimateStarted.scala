@@ -12,7 +12,6 @@ object AnonAnimateStarted {
   @scala.inline
   def apply(animateStarted: Boolean): AnonAnimateStarted = {
     val __obj = js.Dynamic.literal(animateStarted = animateStarted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimateStarted]
   }
 }

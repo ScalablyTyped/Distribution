@@ -16,7 +16,6 @@ object SetRiskConfigurationResponse {
   @scala.inline
   def apply(RiskConfiguration: RiskConfigurationType): SetRiskConfigurationResponse = {
     val __obj = js.Dynamic.literal(RiskConfiguration = RiskConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetRiskConfigurationResponse]
   }
 }

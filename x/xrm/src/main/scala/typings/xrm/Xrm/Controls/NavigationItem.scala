@@ -31,7 +31,6 @@ object NavigationItem {
     setVisible: Boolean => Unit
   ): NavigationItem = {
     val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getLabel = js.Any.fromFunction0(getLabel), getVisible = js.Any.fromFunction0(getVisible), setFocus = js.Any.fromFunction0(setFocus), setLabel = js.Any.fromFunction1(setLabel), setVisible = js.Any.fromFunction1(setVisible))
-  
     __obj.asInstanceOf[NavigationItem]
   }
 }

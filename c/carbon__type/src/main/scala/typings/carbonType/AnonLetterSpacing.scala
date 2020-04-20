@@ -14,7 +14,6 @@ object AnonLetterSpacing {
   @scala.inline
   def apply(fontSize: String, letterSpacing: String, lineHeight: String): AnonLetterSpacing = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLetterSpacing]
   }
 }

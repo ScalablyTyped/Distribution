@@ -17,7 +17,6 @@ object AnonMiddle {
   @scala.inline
   def apply(end: end, middle: middle, start: start): AnonMiddle = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], middle = middle.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMiddle]
   }
 }

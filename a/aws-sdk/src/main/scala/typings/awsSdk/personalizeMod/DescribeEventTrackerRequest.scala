@@ -16,7 +16,6 @@ object DescribeEventTrackerRequest {
   @scala.inline
   def apply(eventTrackerArn: Arn): DescribeEventTrackerRequest = {
     val __obj = js.Dynamic.literal(eventTrackerArn = eventTrackerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeEventTrackerRequest]
   }
 }

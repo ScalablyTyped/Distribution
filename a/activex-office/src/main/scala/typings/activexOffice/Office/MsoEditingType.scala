@@ -18,14 +18,12 @@ trait MsoEditingType extends js.Object
 
 object MsoEditingType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoEditingAuto: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoEditingAuto: `0` = this.cast(0)
+  def msoEditingCorner: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoEditingCorner: `1` = this.cast(1)
+  def msoEditingSmooth: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoEditingSmooth: `2` = this.cast(2)
-  @scala.inline
-  def msoEditingSymmetric: `3` = this.cast(3)
+  def msoEditingSymmetric: `3` = 3.asInstanceOf[`3`]
 }
 

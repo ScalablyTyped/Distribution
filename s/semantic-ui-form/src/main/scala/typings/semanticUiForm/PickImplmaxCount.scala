@@ -13,7 +13,6 @@ object PickImplmaxCount {
   @scala.inline
   def apply(maxCount: String): PickImplmaxCount = {
     val __obj = js.Dynamic.literal(maxCount = maxCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmaxCount]
   }
 }

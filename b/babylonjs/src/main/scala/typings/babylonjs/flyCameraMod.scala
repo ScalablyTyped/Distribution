@@ -90,7 +90,7 @@ object flyCameraMod extends js.Object {
       * Gets the input sensibility for mouse input.
       * Higher values reduce sensitivity.
       */
-    def angularSensibility(): Double = js.native
+    def angularSensibility: Double = js.native
     /**
       * Sets the input sensibility for a mouse input.
       * Higher values reduce sensitivity.
@@ -99,7 +99,7 @@ object flyCameraMod extends js.Object {
     /**
       * Get the mask that the camera ignores in collision events.
       */
-    def collisionMask(): Double = js.native
+    def collisionMask: Double = js.native
     /**
       * Set the mask that the camera ignores in collision events.
       */
@@ -107,12 +107,12 @@ object flyCameraMod extends js.Object {
     /**
       * Get the keys for camera movement backward.
       */
-    def keysBackward(): js.Array[Double] = js.native
+    def keysBackward: js.Array[Double] = js.native
     def keysBackward(value: js.Array[Double]): js.Any = js.native
     /**
       * Get the keys for camera movement down.
       */
-    def keysDown(): js.Array[Double] = js.native
+    def keysDown: js.Array[Double] = js.native
     /**
       * Set the keys for camera movement down.
       */
@@ -120,7 +120,7 @@ object flyCameraMod extends js.Object {
     /**
       * Get the keys for camera movement forward.
       */
-    def keysForward(): js.Array[Double] = js.native
+    def keysForward: js.Array[Double] = js.native
     /**
       * Set the keys for camera movement forward.
       */
@@ -128,7 +128,7 @@ object flyCameraMod extends js.Object {
     /**
       * Get the keys for camera movement left.
       */
-    def keysLeft(): js.Array[Double] = js.native
+    def keysLeft: js.Array[Double] = js.native
     /**
       * Set the keys for camera movement left.
       */
@@ -136,7 +136,7 @@ object flyCameraMod extends js.Object {
     /**
       * Set the keys for camera movement right.
       */
-    def keysRight(): js.Array[Double] = js.native
+    def keysRight: js.Array[Double] = js.native
     /**
       * Set the keys for camera movement right.
       */
@@ -144,7 +144,7 @@ object flyCameraMod extends js.Object {
     /**
       * Get the keys for camera movement up.
       */
-    def keysUp(): js.Array[Double] = js.native
+    def keysUp: js.Array[Double] = js.native
     /**
       * Set the keys for camera movement up.
       */

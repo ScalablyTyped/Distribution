@@ -50,7 +50,6 @@ object XLResize {
     setRowHeight: (Double, Double) => Unit
   ): XLResize = {
     val __obj = js.Dynamic.literal(fitHeight = js.Any.fromFunction1(fitHeight), fitWidth = js.Any.fromFunction1(fitWidth), getColWidth = js.Any.fromFunction1(getColWidth), getRowHeight = js.Any.fromFunction1(getRowHeight), setColWidth = js.Any.fromFunction2(setColWidth), setRowHeight = js.Any.fromFunction2(setRowHeight))
-  
     __obj.asInstanceOf[XLResize]
   }
 }

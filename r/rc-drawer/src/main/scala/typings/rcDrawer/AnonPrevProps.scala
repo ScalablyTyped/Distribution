@@ -15,7 +15,6 @@ object AnonPrevProps {
   @scala.inline
   def apply(_self: DrawerChild, prevProps: IDrawerChildProps): AnonPrevProps = {
     val __obj = js.Dynamic.literal(_self = _self.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrevProps]
   }
 }

@@ -12,10 +12,8 @@ trait KeyFormat extends js.Object
 
 object KeyFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def der: typings.node.nodeStrings.der = "der".asInstanceOf[typings.node.nodeStrings.der]
   @scala.inline
-  def der: typings.node.nodeStrings.der = this.cast("der")
-  @scala.inline
-  def pem: typings.node.nodeStrings.pem = this.cast("pem")
+  def pem: typings.node.nodeStrings.pem = "pem".asInstanceOf[typings.node.nodeStrings.pem]
 }
 

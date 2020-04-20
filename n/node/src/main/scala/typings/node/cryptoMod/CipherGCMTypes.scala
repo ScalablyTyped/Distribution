@@ -13,12 +13,10 @@ trait CipherGCMTypes extends js.Object
 
 object CipherGCMTypes {
   @scala.inline
-  def `aes-128-gcm`: typings.node.nodeStrings.`aes-128-gcm` = this.cast("aes-128-gcm")
+  def `aes-128-gcm`: typings.node.nodeStrings.`aes-128-gcm` = "aes-128-gcm".asInstanceOf[typings.node.nodeStrings.`aes-128-gcm`]
   @scala.inline
-  def `aes-192-gcm`: typings.node.nodeStrings.`aes-192-gcm` = this.cast("aes-192-gcm")
+  def `aes-192-gcm`: typings.node.nodeStrings.`aes-192-gcm` = "aes-192-gcm".asInstanceOf[typings.node.nodeStrings.`aes-192-gcm`]
   @scala.inline
-  def `aes-256-gcm`: typings.node.nodeStrings.`aes-256-gcm` = this.cast("aes-256-gcm")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `aes-256-gcm`: typings.node.nodeStrings.`aes-256-gcm` = "aes-256-gcm".asInstanceOf[typings.node.nodeStrings.`aes-256-gcm`]
 }
 

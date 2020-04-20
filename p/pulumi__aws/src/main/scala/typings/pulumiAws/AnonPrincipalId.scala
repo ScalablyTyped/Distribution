@@ -14,7 +14,6 @@ object AnonPrincipalId {
   @scala.inline
   def apply(PrincipalId: String, Type: String): AnonPrincipalId = {
     val __obj = js.Dynamic.literal(PrincipalId = PrincipalId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrincipalId]
   }
 }

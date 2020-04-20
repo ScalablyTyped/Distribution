@@ -14,7 +14,6 @@ object AnonCustom {
   @scala.inline
   def apply(custom: Double, latestOnBuild: Double, latestOnQueue: Double): AnonCustom = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], latestOnBuild = latestOnBuild.asInstanceOf[js.Any], latestOnQueue = latestOnQueue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCustom]
   }
 }

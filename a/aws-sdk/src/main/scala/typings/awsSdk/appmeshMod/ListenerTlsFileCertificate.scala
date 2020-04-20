@@ -20,7 +20,6 @@ object ListenerTlsFileCertificate {
   @scala.inline
   def apply(certificateChain: FilePath, privateKey: FilePath): ListenerTlsFileCertificate = {
     val __obj = js.Dynamic.literal(certificateChain = certificateChain.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListenerTlsFileCertificate]
   }
 }

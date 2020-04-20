@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactFilepondComponents extends reactFilepondProps {
   @scala.inline
-  def File: ComponentType[FileProps] = js.constructorOf[typings.reactFilepond.mod.File].asInstanceOf[typings.react.mod.ComponentType[FileProps]]
+  def File: ComponentType[FileProps] = js.constructorOf[typings.reactFilepond.mod.File].asInstanceOf[ComponentType[FileProps]]
   @scala.inline
-  def FilePond: ComponentType[FilePondProps] = js.constructorOf[typings.reactFilepond.mod.FilePond].asInstanceOf[typings.react.mod.ComponentType[FilePondProps]]
+  def FilePond: ComponentType[FilePondProps] = js.constructorOf[typings.reactFilepond.mod.FilePond].asInstanceOf[ComponentType[FilePondProps]]
 }
 

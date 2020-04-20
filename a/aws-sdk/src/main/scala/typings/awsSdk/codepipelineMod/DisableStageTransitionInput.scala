@@ -33,7 +33,6 @@ object DisableStageTransitionInput {
     transitionType: StageTransitionType
   ): DisableStageTransitionInput = {
     val __obj = js.Dynamic.literal(pipelineName = pipelineName.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any], transitionType = transitionType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableStageTransitionInput]
   }
 }

@@ -16,7 +16,6 @@ object CreateReceiptFilterRequest {
   @scala.inline
   def apply(Filter: ReceiptFilter): CreateReceiptFilterRequest = {
     val __obj = js.Dynamic.literal(Filter = Filter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateReceiptFilterRequest]
   }
 }

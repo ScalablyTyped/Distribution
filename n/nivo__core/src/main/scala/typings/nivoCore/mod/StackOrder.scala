@@ -15,16 +15,14 @@ trait StackOrder extends js.Object
 
 object StackOrder {
   @scala.inline
-  def ascending: typings.nivoCore.nivoCoreStrings.ascending = this.cast("ascending")
+  def ascending: typings.nivoCore.nivoCoreStrings.ascending = "ascending".asInstanceOf[typings.nivoCore.nivoCoreStrings.ascending]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def descending: typings.nivoCore.nivoCoreStrings.descending = "descending".asInstanceOf[typings.nivoCore.nivoCoreStrings.descending]
   @scala.inline
-  def descending: typings.nivoCore.nivoCoreStrings.descending = this.cast("descending")
+  def insideOut: typings.nivoCore.nivoCoreStrings.insideOut = "insideOut".asInstanceOf[typings.nivoCore.nivoCoreStrings.insideOut]
   @scala.inline
-  def insideOut: typings.nivoCore.nivoCoreStrings.insideOut = this.cast("insideOut")
+  def none: typings.nivoCore.nivoCoreStrings.none = "none".asInstanceOf[typings.nivoCore.nivoCoreStrings.none]
   @scala.inline
-  def none: typings.nivoCore.nivoCoreStrings.none = this.cast("none")
-  @scala.inline
-  def reverse: typings.nivoCore.nivoCoreStrings.reverse = this.cast("reverse")
+  def reverse: typings.nivoCore.nivoCoreStrings.reverse = "reverse".asInstanceOf[typings.nivoCore.nivoCoreStrings.reverse]
 }
 

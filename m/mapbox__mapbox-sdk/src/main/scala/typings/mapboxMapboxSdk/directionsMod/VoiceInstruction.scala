@@ -24,7 +24,6 @@ object VoiceInstruction {
   @scala.inline
   def apply(announcement: String, distanceAlongGeometry: Double, ssmlAnnouncement: String): VoiceInstruction = {
     val __obj = js.Dynamic.literal(announcement = announcement.asInstanceOf[js.Any], distanceAlongGeometry = distanceAlongGeometry.asInstanceOf[js.Any], ssmlAnnouncement = ssmlAnnouncement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoiceInstruction]
   }
 }

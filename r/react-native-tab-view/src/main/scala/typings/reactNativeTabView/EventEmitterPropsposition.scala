@@ -28,7 +28,6 @@ object EventEmitterPropsposition {
     render: ReactNode => ReactNode
   ): EventEmitterPropsposition = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), jumpTo = js.Any.fromFunction1(jumpTo), position = position.asInstanceOf[js.Any], removeListener = js.Any.fromFunction2(removeListener), render = js.Any.fromFunction1(render))
-  
     __obj.asInstanceOf[EventEmitterPropsposition]
   }
 }

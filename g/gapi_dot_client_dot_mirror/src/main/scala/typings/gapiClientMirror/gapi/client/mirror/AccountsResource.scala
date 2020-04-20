@@ -15,7 +15,6 @@ object AccountsResource {
   @scala.inline
   def apply(insert: AnonAccountName => Request_[Account]): AccountsResource = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
-  
     __obj.asInstanceOf[AccountsResource]
   }
 }

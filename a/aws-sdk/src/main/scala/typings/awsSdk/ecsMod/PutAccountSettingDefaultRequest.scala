@@ -20,7 +20,6 @@ object PutAccountSettingDefaultRequest {
   @scala.inline
   def apply(name: SettingName, value: String): PutAccountSettingDefaultRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutAccountSettingDefaultRequest]
   }
 }

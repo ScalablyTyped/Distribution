@@ -12,7 +12,6 @@ object TransitionEventNames {
   @scala.inline
   def apply(end: String): TransitionEventNames = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitionEventNames]
   }
 }

@@ -24,47 +24,47 @@ class CustomWidgetType protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FCustomWidgetType: IModel = js.native
-  def containerAsCustomWidget(): CustomWidget = js.native
-  def description(): String = js.native
+  def containerAsCustomWidget: CustomWidget = js.native
+  def description: String = js.native
   def description(newValue: String): js.Any = js.native
   /**
     * In version 7.1.0: deleted
     * In version 7.0.0: introduced
     */
-  def experimentalApi(): Boolean = js.native
+  def experimentalApi: Boolean = js.native
   def experimentalApi(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.3.0: introduced
     */
-  def helpUrl(): String = js.native
+  def helpUrl: String = js.native
   def helpUrl(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     * In version 7.23.0: introduced
     */
-  def labeled(): Boolean = js.native
+  def labeled: Boolean = js.native
   def labeled(newValue: Boolean): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
-  def needsEntityContext(): Boolean = js.native
+  def needsEntityContext: Boolean = js.native
   def needsEntityContext(newValue: Boolean): js.Any = js.native
-  def objectType(): WidgetObjectType = js.native
+  def objectType: WidgetObjectType = js.native
   def objectType(newValue: WidgetObjectType): js.Any = js.native
-  def offlineCapable(): Boolean = js.native
+  def offlineCapable: Boolean = js.native
   def offlineCapable(newValue: Boolean): js.Any = js.native
-  def phoneGapEnabled(): Boolean = js.native
+  def phoneGapEnabled: Boolean = js.native
   def phoneGapEnabled(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.19.0: introduced
     */
-  def pluginWidget(): Boolean = js.native
+  def pluginWidget: Boolean = js.native
   def pluginWidget(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def supportedPlatform(): SupportedPlatform = js.native
+  def supportedPlatform: SupportedPlatform = js.native
   def supportedPlatform(newValue: SupportedPlatform): js.Any = js.native
-  def widgetId(): String = js.native
+  def widgetId: String = js.native
   def widgetId(newValue: String): js.Any = js.native
 }
 

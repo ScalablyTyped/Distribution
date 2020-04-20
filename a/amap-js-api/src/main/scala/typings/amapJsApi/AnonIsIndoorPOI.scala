@@ -29,7 +29,6 @@ object AnonIsIndoorPOI {
   @scala.inline
   def apply(id: String, isIndoorPOI: Boolean, lnglat: LngLat, name: String): AnonIsIndoorPOI = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isIndoorPOI = isIndoorPOI.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsIndoorPOI]
   }
 }

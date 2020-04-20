@@ -12,6 +12,6 @@ class RawCellModel () extends AttachmentsCellModel {
     * The type of the cell.
     */
   @JSName("type")
-  def type_MRawCellModel(): raw = js.native
+  def type_MRawCellModel: raw = js.native
 }
 

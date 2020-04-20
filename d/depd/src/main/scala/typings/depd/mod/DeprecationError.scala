@@ -17,7 +17,6 @@ object DeprecationError {
   @scala.inline
   def apply(message: String, name: typings.depd.depdStrings.DeprecationError, namespace: String, stack: String): DeprecationError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeprecationError]
   }
 }

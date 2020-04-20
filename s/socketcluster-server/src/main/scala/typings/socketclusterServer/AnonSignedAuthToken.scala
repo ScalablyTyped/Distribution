@@ -12,7 +12,6 @@ object AnonSignedAuthToken {
   @scala.inline
   def apply(signedAuthToken: String): AnonSignedAuthToken = {
     val __obj = js.Dynamic.literal(signedAuthToken = signedAuthToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSignedAuthToken]
   }
 }

@@ -16,7 +16,6 @@ object Options {
   @scala.inline
   def apply[T](comparator: (T, T) => Double): Options[T] = {
     val __obj = js.Dynamic.literal(comparator = js.Any.fromFunction2(comparator))
-  
     __obj.asInstanceOf[Options[T]]
   }
 }

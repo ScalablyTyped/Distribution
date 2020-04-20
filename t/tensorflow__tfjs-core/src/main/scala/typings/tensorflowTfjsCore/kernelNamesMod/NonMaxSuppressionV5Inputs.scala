@@ -14,7 +14,6 @@ object NonMaxSuppressionV5Inputs {
   @scala.inline
   def apply(boxes: js.Any, scores: js.Any): NonMaxSuppressionV5Inputs = {
     val __obj = js.Dynamic.literal(boxes = boxes.asInstanceOf[js.Any], scores = scores.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NonMaxSuppressionV5Inputs]
   }
 }

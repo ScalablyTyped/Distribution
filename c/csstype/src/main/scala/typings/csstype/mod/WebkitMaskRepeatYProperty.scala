@@ -19,24 +19,22 @@ trait WebkitMaskRepeatYProperty extends js.Object
 
 object WebkitMaskRepeatYProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def `no-repeat`: typings.csstype.csstypeStrings.`no-repeat` = "no-repeat".asInstanceOf[typings.csstype.csstypeStrings.`no-repeat`]
   @scala.inline
-  def `no-repeat`: typings.csstype.csstypeStrings.`no-repeat` = this.cast("no-repeat")
+  def repeat: typings.csstype.csstypeStrings.repeat = "repeat".asInstanceOf[typings.csstype.csstypeStrings.repeat]
   @scala.inline
-  def repeat: typings.csstype.csstypeStrings.repeat = this.cast("repeat")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def round: typings.csstype.csstypeStrings.round = "round".asInstanceOf[typings.csstype.csstypeStrings.round]
   @scala.inline
-  def round: typings.csstype.csstypeStrings.round = this.cast("round")
+  def space: typings.csstype.csstypeStrings.space = "space".asInstanceOf[typings.csstype.csstypeStrings.space]
   @scala.inline
-  def space: typings.csstype.csstypeStrings.space = this.cast("space")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

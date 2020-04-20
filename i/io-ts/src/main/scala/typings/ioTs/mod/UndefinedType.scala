@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class UndefinedType ()
   extends Type_[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], js.Any] {
+  /**
+    * @since 1.0.0
+    */
   val _tag: typings.ioTs.ioTsStrings.UndefinedType = js.native
 }
 

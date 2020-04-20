@@ -17,10 +17,10 @@ trait reactNavigationStackProps {
   def CardStackProps: typings.reactNavigationStack.cardStackMod.Props.type = typings.reactNavigationStack.cardStackMod.Props
   type CardStackProps = typings.reactNavigationStack.cardStackMod.Props
   @scala.inline
-  def HeaderProps: StackHeaderProps.type = typings.reactNavigationStack.vendorTypesMod.StackHeaderProps
+  def HeaderProps: StackHeaderProps.type = StackHeaderProps
   type HeaderProps = StackHeaderProps
   @scala.inline
-  def HeaderBackButtonProps: StackHeaderLeftButtonProps.type = typings.reactNavigationStack.vendorTypesMod.StackHeaderLeftButtonProps
+  def HeaderBackButtonProps: StackHeaderLeftButtonProps.type = StackHeaderLeftButtonProps
   type HeaderBackButtonProps = typings.reactNavigationStack.headerBackButtonMod.Props
   @scala.inline
   def HeaderBackgroundProps: typings.reactNavigationStack.headerBackgroundMod.Props.type = typings.reactNavigationStack.headerBackgroundMod.Props

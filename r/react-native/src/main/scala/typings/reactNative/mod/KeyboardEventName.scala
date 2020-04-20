@@ -16,18 +16,16 @@ trait KeyboardEventName extends js.Object
 
 object KeyboardEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def keyboardDidChangeFrame: typings.reactNative.reactNativeStrings.keyboardDidChangeFrame = "keyboardDidChangeFrame".asInstanceOf[typings.reactNative.reactNativeStrings.keyboardDidChangeFrame]
   @scala.inline
-  def keyboardDidChangeFrame: typings.reactNative.reactNativeStrings.keyboardDidChangeFrame = this.cast("keyboardDidChangeFrame")
+  def keyboardDidHide: typings.reactNative.reactNativeStrings.keyboardDidHide = "keyboardDidHide".asInstanceOf[typings.reactNative.reactNativeStrings.keyboardDidHide]
   @scala.inline
-  def keyboardDidHide: typings.reactNative.reactNativeStrings.keyboardDidHide = this.cast("keyboardDidHide")
+  def keyboardDidShow: typings.reactNative.reactNativeStrings.keyboardDidShow = "keyboardDidShow".asInstanceOf[typings.reactNative.reactNativeStrings.keyboardDidShow]
   @scala.inline
-  def keyboardDidShow: typings.reactNative.reactNativeStrings.keyboardDidShow = this.cast("keyboardDidShow")
+  def keyboardWillChangeFrame: typings.reactNative.reactNativeStrings.keyboardWillChangeFrame = "keyboardWillChangeFrame".asInstanceOf[typings.reactNative.reactNativeStrings.keyboardWillChangeFrame]
   @scala.inline
-  def keyboardWillChangeFrame: typings.reactNative.reactNativeStrings.keyboardWillChangeFrame = this.cast("keyboardWillChangeFrame")
+  def keyboardWillHide: typings.reactNative.reactNativeStrings.keyboardWillHide = "keyboardWillHide".asInstanceOf[typings.reactNative.reactNativeStrings.keyboardWillHide]
   @scala.inline
-  def keyboardWillHide: typings.reactNative.reactNativeStrings.keyboardWillHide = this.cast("keyboardWillHide")
-  @scala.inline
-  def keyboardWillShow: typings.reactNative.reactNativeStrings.keyboardWillShow = this.cast("keyboardWillShow")
+  def keyboardWillShow: typings.reactNative.reactNativeStrings.keyboardWillShow = "keyboardWillShow".asInstanceOf[typings.reactNative.reactNativeStrings.keyboardWillShow]
 }
 

@@ -31,7 +31,6 @@ object GroupsResource {
     update: AnonFields => Request_[Group]
   ): GroupsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[GroupsResource]
   }
 }

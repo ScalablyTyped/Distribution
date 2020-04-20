@@ -14,7 +14,6 @@ object CustomAmount {
   @scala.inline
   def apply(amount: Currency, label: String): CustomAmount = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomAmount]
   }
 }

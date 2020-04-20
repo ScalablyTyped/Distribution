@@ -33,7 +33,6 @@ object CreateReservedInstancesListingRequest {
     ReservedInstancesId: ReservationId
   ): CreateReservedInstancesListingRequest = {
     val __obj = js.Dynamic.literal(ClientToken = ClientToken.asInstanceOf[js.Any], InstanceCount = InstanceCount.asInstanceOf[js.Any], PriceSchedules = PriceSchedules.asInstanceOf[js.Any], ReservedInstancesId = ReservedInstancesId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateReservedInstancesListingRequest]
   }
 }

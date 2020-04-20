@@ -1,5 +1,6 @@
 package typings.formol.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ReactNode
 import typings.std.Event_
 import scala.scalajs.js
@@ -24,7 +25,7 @@ trait FormolProps[V] extends js.Object {
       /* v */ V, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof V ]:? string | null}
-    */ typings.formol.formolStrings.FormolProps with js.Any
+    */ typings.formol.formolStrings.FormolProps with TopLevel[js.Any]
     ]
   ] = js.undefined
 }
@@ -46,7 +47,7 @@ object FormolProps {
     types: js.Array[String] = null,
     validator: /* v */ V => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof V ]:? string | null}
-    */ typings.formol.formolStrings.FormolProps with js.Any = null
+    */ typings.formol.formolStrings.FormolProps with TopLevel[js.Any] = null
   ): FormolProps[V] = {
     val __obj = js.Dynamic.literal()
     if (allowUnmodifiedSubmit != null) __obj.updateDynamic("allowUnmodifiedSubmit")(allowUnmodifiedSubmit.asInstanceOf[js.Any])

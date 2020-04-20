@@ -14,7 +14,6 @@ object AnonValue {
     value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<any> */ js.Any
   ): AnonValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValue]
   }
 }

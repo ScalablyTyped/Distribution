@@ -22,7 +22,6 @@ object Listener {
     onInit: Controller => Unit
   ): Listener = {
     val __obj = js.Dynamic.literal(onConnect = js.Any.fromFunction1(onConnect), onDisconnect = js.Any.fromFunction1(onDisconnect), onExit = js.Any.fromFunction1(onExit), onFrame = js.Any.fromFunction2(onFrame), onInit = js.Any.fromFunction1(onInit))
-  
     __obj.asInstanceOf[Listener]
   }
 }

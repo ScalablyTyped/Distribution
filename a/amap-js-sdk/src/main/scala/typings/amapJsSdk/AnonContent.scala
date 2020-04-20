@@ -14,7 +14,6 @@ object AnonContent {
   @scala.inline
   def apply(content: String, offset: Pixel): AnonContent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContent]
   }
 }

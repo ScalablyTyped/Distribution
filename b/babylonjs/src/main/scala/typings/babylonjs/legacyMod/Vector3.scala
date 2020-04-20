@@ -557,7 +557,7 @@ object Vector3 extends js.Object {
   /**
     * Gets a up Vector3 that must not be updated
     */
-  def UpReadOnly(): DeepImmutable[typings.babylonjs.mathVectorMod.Vector3] = js.native
+  def UpReadOnly: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3] = js.native
   /**
     * Returns a new Vector3 set to (0.0, 0.0, 0.0)
     * @returns a new empty Vector3
@@ -566,7 +566,7 @@ object Vector3 extends js.Object {
   /**
     * Gets a zero Vector3 that must not be updated
     */
-  def ZeroReadOnly(): DeepImmutable[typings.babylonjs.mathVectorMod.Vector3] = js.native
+  def ZeroReadOnly: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3] = js.native
   /** @hidden */
   def _UnprojectFromInvertedMatrixToRef(
     source: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],

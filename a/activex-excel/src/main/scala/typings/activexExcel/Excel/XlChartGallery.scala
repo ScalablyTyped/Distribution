@@ -16,12 +16,10 @@ trait XlChartGallery extends js.Object
 
 object XlChartGallery {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAnyGallery: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def xlAnyGallery: `23` = this.cast(23)
+  def xlBuiltIn: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def xlBuiltIn: `21` = this.cast(21)
-  @scala.inline
-  def xlUserDefined: `22` = this.cast(22)
+  def xlUserDefined: `22` = 22.asInstanceOf[`22`]
 }
 

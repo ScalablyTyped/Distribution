@@ -16,7 +16,6 @@ object DeleteCustomAvailabilityZoneMessage {
   @scala.inline
   def apply(CustomAvailabilityZoneId: String): DeleteCustomAvailabilityZoneMessage = {
     val __obj = js.Dynamic.literal(CustomAvailabilityZoneId = CustomAvailabilityZoneId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCustomAvailabilityZoneMessage]
   }
 }

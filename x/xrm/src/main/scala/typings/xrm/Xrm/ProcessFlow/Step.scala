@@ -30,7 +30,6 @@ object Step {
   @scala.inline
   def apply(getAttribute: () => String, getName: () => String, isRequired: () => Boolean): Step = {
     val __obj = js.Dynamic.literal(getAttribute = js.Any.fromFunction0(getAttribute), getName = js.Any.fromFunction0(getName), isRequired = js.Any.fromFunction0(isRequired))
-  
     __obj.asInstanceOf[Step]
   }
 }

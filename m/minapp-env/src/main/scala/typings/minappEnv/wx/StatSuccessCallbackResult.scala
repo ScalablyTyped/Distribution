@@ -15,7 +15,6 @@ object StatSuccessCallbackResult {
   @scala.inline
   def apply(stats: Stats | js.Object): StatSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatSuccessCallbackResult]
   }
 }

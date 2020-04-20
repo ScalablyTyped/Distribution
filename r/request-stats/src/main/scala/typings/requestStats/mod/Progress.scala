@@ -27,7 +27,6 @@ object Progress {
   @scala.inline
   def apply(completed: Boolean, req: AnonBytesDelta, res: AnonSpeed, time: Double, timeDelta: Double): Progress = {
     val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timeDelta = timeDelta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Progress]
   }
 }

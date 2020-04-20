@@ -13,7 +13,6 @@ object PickImplsearchFields {
   @scala.inline
   def apply(searchFields: js.Array[String]): PickImplsearchFields = {
     val __obj = js.Dynamic.literal(searchFields = searchFields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsearchFields]
   }
 }

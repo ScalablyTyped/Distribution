@@ -13,7 +13,6 @@ object AnonPostTransformNode {
   @scala.inline
   def apply(postTransformNode: ASTNode => Unit): AnonPostTransformNode = {
     val __obj = js.Dynamic.literal(postTransformNode = js.Any.fromFunction1(postTransformNode))
-  
     __obj.asInstanceOf[AnonPostTransformNode]
   }
 }

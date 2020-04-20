@@ -19,7 +19,6 @@ object UiCanGetDisabledElement {
   @scala.inline
   def apply(getDisabled: () => Boolean): UiCanGetDisabledElement = {
     val __obj = js.Dynamic.literal(getDisabled = js.Any.fromFunction0(getDisabled))
-  
     __obj.asInstanceOf[UiCanGetDisabledElement]
   }
 }

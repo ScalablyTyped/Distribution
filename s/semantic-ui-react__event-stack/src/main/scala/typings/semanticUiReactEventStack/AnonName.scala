@@ -30,7 +30,6 @@ object AnonName {
     target: Requireable[js.Object]
   ): AnonName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonName]
   }
 }

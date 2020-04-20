@@ -13,7 +13,6 @@ object RequiredPickIShimmeredDet {
   @scala.inline
   def apply(theme: js.Any): RequiredPickIShimmeredDet = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredPickIShimmeredDet]
   }
 }

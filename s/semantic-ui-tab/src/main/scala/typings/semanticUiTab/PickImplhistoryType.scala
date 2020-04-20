@@ -15,7 +15,6 @@ object PickImplhistoryType {
   @scala.inline
   def apply(historyType: hash | state): PickImplhistoryType = {
     val __obj = js.Dynamic.literal(historyType = historyType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplhistoryType]
   }
 }

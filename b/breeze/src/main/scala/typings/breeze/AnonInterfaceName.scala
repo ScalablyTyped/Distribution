@@ -13,7 +13,6 @@ object AnonInterfaceName {
   @scala.inline
   def apply(interfaceName: String, isDefault: Boolean): AnonInterfaceName = {
     val __obj = js.Dynamic.literal(interfaceName = interfaceName.asInstanceOf[js.Any], isDefault = isDefault.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInterfaceName]
   }
 }

@@ -17,7 +17,6 @@ object Types_ {
   @scala.inline
   def apply(ERROR: error, INFO: info, SUCCESS: success): Types_ = {
     val __obj = js.Dynamic.literal(ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], SUCCESS = SUCCESS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Types_]
   }
 }

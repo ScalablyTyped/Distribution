@@ -30,7 +30,6 @@ object AuthorizationException {
     throwException: () => Unit
   ): AuthorizationException = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson), setAuthorizationUrl = js.Any.fromFunction1(setAuthorizationUrl), setCustomUiCallback = js.Any.fromFunction1(setCustomUiCallback), setResourceDisplayName = js.Any.fromFunction1(setResourceDisplayName), throwException = js.Any.fromFunction0(throwException))
-  
     __obj.asInstanceOf[AuthorizationException]
   }
 }

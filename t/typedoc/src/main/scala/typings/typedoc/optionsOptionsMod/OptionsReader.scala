@@ -15,7 +15,6 @@ object OptionsReader {
   @scala.inline
   def apply(name: String, priority: Double, read: (Options, Logger) => Unit): OptionsReader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], read = js.Any.fromFunction2(read))
-  
     __obj.asInstanceOf[OptionsReader]
   }
 }

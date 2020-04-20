@@ -15,7 +15,6 @@ object IStaticContentList {
   @scala.inline
   def apply(qItems: IStaticContentListItem): IStaticContentList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStaticContentList]
   }
 }

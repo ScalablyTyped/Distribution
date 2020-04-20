@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 trait StackedAreaChartProps[T] extends ChartProps[T] {
   var colors: js.Array[String]
   var extras: js.UndefOr[js.Array[_]] = js.undefined
-  var keys: js.Array[String]
+  var keys: js.Array[/* keyof T */ String]
   var offset: js.UndefOr[OffsetFunction] = js.undefined
   var order: js.UndefOr[OrderFunction] = js.undefined
   var renderDecorator: js.UndefOr[js.Function0[js.Object]] = js.undefined
@@ -38,7 +38,7 @@ object StackedAreaChartProps {
   def apply[T](
     colors: js.Array[String],
     data: js.Array[T],
-    keys: js.Array[String],
+    keys: js.Array[/* keyof T */ String],
     animate: js.UndefOr[Boolean] = js.undefined,
     animationDuration: Int | Double = null,
     contentInset: AnonBottom = null,

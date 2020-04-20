@@ -12,7 +12,6 @@ object IToastFailedEventArgs {
   @scala.inline
   def apply(errorCode: Double): IToastFailedEventArgs = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IToastFailedEventArgs]
   }
 }

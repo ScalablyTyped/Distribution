@@ -16,7 +16,6 @@ object AnonRange {
   @scala.inline
   def apply(range: Double | Boolean, scale: Field): AnonRange = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRange]
   }
 }

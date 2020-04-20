@@ -18,7 +18,6 @@ object AnonActiveTabIndex {
   @scala.inline
   def apply(activeTabIndex: Double, event: SyntheticEvent[MouseEvent[Element, NativeMouseEvent], Event_]): AnonActiveTabIndex = {
     val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveTabIndex]
   }
 }

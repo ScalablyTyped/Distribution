@@ -15,7 +15,6 @@ object AnonIsWindowClosing {
   @scala.inline
   def apply(isWindowClosing: Boolean, windowId: Double): AnonIsWindowClosing = {
     val __obj = js.Dynamic.literal(isWindowClosing = isWindowClosing.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsWindowClosing]
   }
 }

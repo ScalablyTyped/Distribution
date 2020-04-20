@@ -40,7 +40,6 @@ object ValdrMessageProvider {
     setTemplateUrl: String => Unit
   ): ValdrMessageProvider = {
     val __obj = js.Dynamic.literal(addMessages = js.Any.fromFunction1(addMessages), getMessage = js.Any.fromFunction3(getMessage), setTemplate = js.Any.fromFunction1(setTemplate), setTemplateUrl = js.Any.fromFunction1(setTemplateUrl))
-  
     __obj.asInstanceOf[ValdrMessageProvider]
   }
 }

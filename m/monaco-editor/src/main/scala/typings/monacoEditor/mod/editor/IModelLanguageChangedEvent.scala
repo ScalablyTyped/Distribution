@@ -19,7 +19,6 @@ object IModelLanguageChangedEvent {
   @scala.inline
   def apply(newLanguage: String, oldLanguage: String): IModelLanguageChangedEvent = {
     val __obj = js.Dynamic.literal(newLanguage = newLanguage.asInstanceOf[js.Any], oldLanguage = oldLanguage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IModelLanguageChangedEvent]
   }
 }

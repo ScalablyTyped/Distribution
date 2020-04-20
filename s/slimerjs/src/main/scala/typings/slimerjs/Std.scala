@@ -13,7 +13,6 @@ object Std {
   @scala.inline
   def apply(read: () => js.Any, write: js.Any => Unit): Std = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction0(read), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[Std]
   }
 }

@@ -28,7 +28,6 @@ object UnityLauncher {
     setUrgent: Boolean => js.Any
   ): UnityLauncher = {
     val __obj = js.Dynamic.literal(addAction = js.Any.fromFunction2(addAction), clearCount = js.Any.fromFunction0(clearCount), clearProgress = js.Any.fromFunction0(clearProgress), removeAction = js.Any.fromFunction1(removeAction), removeActions = js.Any.fromFunction0(removeActions), setCount = js.Any.fromFunction1(setCount), setProgress = js.Any.fromFunction1(setProgress), setUrgent = js.Any.fromFunction1(setUrgent))
-  
     __obj.asInstanceOf[UnityLauncher]
   }
 }

@@ -68,7 +68,7 @@ class KernelManager_ () extends BaseManager {
     * A signal emitted when there is a connection failure.
     */
   @JSName("connectionFailure")
-  def connectionFailure_MKernelManager_(): ISignal[this.type, Error] = js.native
+  def connectionFailure_MKernelManager_ : ISignal[this.type, Error] = js.native
   /**
     * Find a kernel by id.
     *
@@ -88,12 +88,12 @@ class KernelManager_ () extends BaseManager {
     * Test whether the manager is ready.
     */
   @JSName("isReady")
-  def isReady_MKernelManager_(): Boolean = js.native
+  def isReady_MKernelManager_ : Boolean = js.native
   /**
     * A promise that fulfills when the manager is ready.
     */
   @JSName("ready")
-  def ready_MKernelManager_(): js.Promise[Unit] = js.native
+  def ready_MKernelManager_ : js.Promise[Unit] = js.native
   /**
     * Force a refresh of the running kernels.
     *
@@ -131,7 +131,7 @@ class KernelManager_ () extends BaseManager {
   /**
     * A signal emitted when the running kernels change.
     */
-  def runningChanged(): ISignal[this.type, js.Array[IModel]] = js.native
+  def runningChanged: ISignal[this.type, js.Array[IModel]] = js.native
   /**
     * Shut down a kernel by id.
     *

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDynamicNumberProps {
   @scala.inline
-  def ReactDynamicNumberProps: DynamicNumberProps.type = typings.reactDynamicNumber.mod.DynamicNumberProps
+  def ReactDynamicNumberProps: DynamicNumberProps.type = DynamicNumberProps
   type ReactDynamicNumberProps = DynamicNumberProps
 }
 

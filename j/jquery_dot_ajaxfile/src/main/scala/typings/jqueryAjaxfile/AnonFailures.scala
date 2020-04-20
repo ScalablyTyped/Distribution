@@ -16,7 +16,6 @@ object AnonFailures {
   @scala.inline
   def apply(failures: Double, passes: Double, pending: Double, suites: Double, tests: Double): AnonFailures = {
     val __obj = js.Dynamic.literal(failures = failures.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], suites = suites.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFailures]
   }
 }

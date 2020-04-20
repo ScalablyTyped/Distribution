@@ -2,12 +2,13 @@ package typings.expressUnless.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var custom: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary], Boolean]] = js.undefined
+  var custom: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], Boolean]] = js.undefined
   var ext: js.UndefOr[String | js.Array[String]] = js.undefined
   var method: js.UndefOr[String | js.Array[String]] = js.undefined
   var path: js.UndefOr[pathFilter | js.Array[pathFilter]] = js.undefined
@@ -17,7 +18,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    custom: /* req */ Request_[ParamsDictionary] => Boolean = null,
+    custom: /* req */ Request_[ParamsDictionary, _, _, Query] => Boolean = null,
     ext: String | js.Array[String] = null,
     method: String | js.Array[String] = null,
     path: pathFilter | js.Array[pathFilter] = null,

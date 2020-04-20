@@ -69,7 +69,6 @@ object Form {
     updateModel: (NgControl, js.Any) => Unit
   ): Form = {
     val __obj = js.Dynamic.literal(addControl = js.Any.fromFunction1(addControl), addFormGroup = js.Any.fromFunction1(addFormGroup), getControl = js.Any.fromFunction1(getControl), getFormGroup = js.Any.fromFunction1(getFormGroup), removeControl = js.Any.fromFunction1(removeControl), removeFormGroup = js.Any.fromFunction1(removeFormGroup), updateModel = js.Any.fromFunction2(updateModel))
-  
     __obj.asInstanceOf[Form]
   }
 }

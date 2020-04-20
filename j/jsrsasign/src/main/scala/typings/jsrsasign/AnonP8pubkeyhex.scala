@@ -12,7 +12,6 @@ object AnonP8pubkeyhex {
   @scala.inline
   def apply(p8pubkeyhex: String): AnonP8pubkeyhex = {
     val __obj = js.Dynamic.literal(p8pubkeyhex = p8pubkeyhex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonP8pubkeyhex]
   }
 }

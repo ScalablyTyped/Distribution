@@ -16,7 +16,6 @@ object GetCurrentUserRequest {
   @scala.inline
   def apply(AuthenticationToken: AuthenticationHeaderType): GetCurrentUserRequest = {
     val __obj = js.Dynamic.literal(AuthenticationToken = AuthenticationToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCurrentUserRequest]
   }
 }

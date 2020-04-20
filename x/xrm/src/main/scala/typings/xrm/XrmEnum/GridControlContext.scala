@@ -23,16 +23,14 @@ trait GridControlContext extends js.Object
 
 object GridControlContext {
   @scala.inline
-  def FormContextRelated: `4` = this.cast(4)
+  def FormContextRelated: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def FormContextUnrelated: `3` = this.cast(3)
+  def FormContextUnrelated: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def RibbonContextForm: `1` = this.cast(1)
+  def RibbonContextForm: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def RibbonContextListing: `2` = this.cast(2)
+  def RibbonContextListing: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Unknown: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Unknown: `0` = 0.asInstanceOf[`0`]
 }
 

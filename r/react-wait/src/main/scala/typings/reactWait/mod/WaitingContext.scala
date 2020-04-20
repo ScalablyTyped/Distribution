@@ -21,7 +21,6 @@ object WaitingContext {
     startWaiting: () => Unit
   ): WaitingContext = {
     val __obj = js.Dynamic.literal(Wait = Wait.asInstanceOf[js.Any], endWaiting = js.Any.fromFunction0(endWaiting), isWaiting = js.Any.fromFunction0(isWaiting), startWaiting = js.Any.fromFunction0(startWaiting))
-  
     __obj.asInstanceOf[WaitingContext]
   }
 }

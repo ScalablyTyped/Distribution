@@ -16,7 +16,6 @@ object MathConfig {
   @scala.inline
   def apply(config: String, mathjax: String): MathConfig = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], mathjax = mathjax.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MathConfig]
   }
 }

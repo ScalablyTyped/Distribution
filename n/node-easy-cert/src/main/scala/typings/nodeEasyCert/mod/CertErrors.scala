@@ -13,12 +13,10 @@ trait CertErrors extends js.Object
 
 object CertErrors {
   @scala.inline
-  def ROOT_CA_COMMON_NAME_UNSPECIFIED: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_COMMON_NAME_UNSPECIFIED = this.cast("ROOT_CA_COMMON_NAME_UNSPECIFIED")
+  def ROOT_CA_COMMON_NAME_UNSPECIFIED: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_COMMON_NAME_UNSPECIFIED = "ROOT_CA_COMMON_NAME_UNSPECIFIED".asInstanceOf[typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_COMMON_NAME_UNSPECIFIED]
   @scala.inline
-  def ROOT_CA_EXISTED: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_EXISTED = this.cast("ROOT_CA_EXISTED")
+  def ROOT_CA_EXISTED: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_EXISTED = "ROOT_CA_EXISTED".asInstanceOf[typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_EXISTED]
   @scala.inline
-  def ROOT_CA_NOT_EXISTS: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_NOT_EXISTS = this.cast("ROOT_CA_NOT_EXISTS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ROOT_CA_NOT_EXISTS: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_NOT_EXISTS = "ROOT_CA_NOT_EXISTS".asInstanceOf[typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_NOT_EXISTS]
 }
 

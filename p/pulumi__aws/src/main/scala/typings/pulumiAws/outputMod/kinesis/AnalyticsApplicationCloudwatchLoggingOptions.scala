@@ -24,7 +24,6 @@ object AnalyticsApplicationCloudwatchLoggingOptions {
   @scala.inline
   def apply(id: String, logStreamArn: String, roleArn: String): AnalyticsApplicationCloudwatchLoggingOptions = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], logStreamArn = logStreamArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyticsApplicationCloudwatchLoggingOptions]
   }
 }

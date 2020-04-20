@@ -30,7 +30,6 @@ object AnonNextupdate {
     this_update: Double
   ): AnonNextupdate = {
     val __obj = js.Dynamic.literal(next_update = next_update.asInstanceOf[js.Any], produced_at = produced_at.asInstanceOf[js.Any], revocation_reason = revocation_reason.asInstanceOf[js.Any], revoked_at = revoked_at.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], this_update = this_update.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNextupdate]
   }
 }

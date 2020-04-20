@@ -15,16 +15,14 @@ trait DirectionsClass extends js.Object
 
 object DirectionsClass {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ferry: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry = "ferry".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry]
   @scala.inline
-  def ferry: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry = this.cast("ferry")
+  def motorway: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.motorway = "motorway".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.motorway]
   @scala.inline
-  def motorway: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.motorway = this.cast("motorway")
+  def restricted: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.restricted = "restricted".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.restricted]
   @scala.inline
-  def restricted: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.restricted = this.cast("restricted")
+  def toll: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.toll = "toll".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.toll]
   @scala.inline
-  def toll: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.toll = this.cast("toll")
-  @scala.inline
-  def tunnel: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.tunnel = this.cast("tunnel")
+  def tunnel: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.tunnel = "tunnel".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.tunnel]
 }
 

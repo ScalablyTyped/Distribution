@@ -13,7 +13,6 @@ object TypeofManagedBlockchain {
   @scala.inline
   def apply(Types: TypeofManagedBlockchain): TypeofManagedBlockchain = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofManagedBlockchain]
   }
 }

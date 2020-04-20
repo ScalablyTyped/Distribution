@@ -65,21 +65,21 @@ class NotebookModel_ () extends DocumentModel {
   /**
     * Get the observable list of notebook cells.
     */
-  def cells(): IObservableUndoableList[ICellModel] = js.native
+  def cells: IObservableUndoableList[ICellModel] = js.native
   /**
     * The default kernel language of the document.
     */
   @JSName("defaultKernelLanguage")
-  def defaultKernelLanguage_MNotebookModel_(): String = js.native
+  def defaultKernelLanguage_MNotebookModel_ : String = js.native
   /**
     * The default kernel name of the document.
     */
   @JSName("defaultKernelName")
-  def defaultKernelName_MNotebookModel_(): String = js.native
+  def defaultKernelName_MNotebookModel_ : String = js.native
   /**
     * A list of deleted cells for the notebook..
     */
-  def deletedCells(): js.Array[String] = js.native
+  def deletedCells: js.Array[String] = js.native
   /**
     * Deserialize the model from JSON.
     *
@@ -90,14 +90,14 @@ class NotebookModel_ () extends DocumentModel {
   /**
     * The metadata associated with the notebook.
     */
-  def metadata(): IObservableJSON = js.native
+  def metadata: IObservableJSON = js.native
   /**
     * The major version number of the nbformat.
     */
-  def nbformat(): Double = js.native
+  def nbformat: Double = js.native
   /**
     * The minor version number of the nbformat.
     */
-  def nbformatMinor(): Double = js.native
+  def nbformatMinor: Double = js.native
 }
 

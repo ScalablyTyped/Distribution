@@ -13,7 +13,6 @@ object IAjaxFileJQueryExtension {
   @scala.inline
   def apply(ajaxWithFile: IJQueryOption => JQueryDeferred[_]): IAjaxFileJQueryExtension = {
     val __obj = js.Dynamic.literal(ajaxWithFile = js.Any.fromFunction1(ajaxWithFile))
-  
     __obj.asInstanceOf[IAjaxFileJQueryExtension]
   }
 }

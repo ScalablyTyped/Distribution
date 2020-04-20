@@ -19,7 +19,6 @@ object AccountMyWorkResult {
   @scala.inline
   def apply(querySizeLimitExceeded: Boolean, workItemDetails: js.Array[AccountWorkWorkItemModel]): AccountMyWorkResult = {
     val __obj = js.Dynamic.literal(querySizeLimitExceeded = querySizeLimitExceeded.asInstanceOf[js.Any], workItemDetails = workItemDetails.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountMyWorkResult]
   }
 }

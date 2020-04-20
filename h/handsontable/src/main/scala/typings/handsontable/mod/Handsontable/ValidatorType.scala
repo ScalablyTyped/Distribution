@@ -17,14 +17,12 @@ trait ValidatorType extends js.Object
 
 object ValidatorType {
   @scala.inline
-  def autocomplete: typings.handsontable.handsontableStrings.autocomplete = this.cast("autocomplete")
+  def autocomplete: typings.handsontable.handsontableStrings.autocomplete = "autocomplete".asInstanceOf[typings.handsontable.handsontableStrings.autocomplete]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.handsontable.handsontableStrings.date = "date".asInstanceOf[typings.handsontable.handsontableStrings.date]
   @scala.inline
-  def date: typings.handsontable.handsontableStrings.date = this.cast("date")
+  def numeric: typings.handsontable.handsontableStrings.numeric = "numeric".asInstanceOf[typings.handsontable.handsontableStrings.numeric]
   @scala.inline
-  def numeric: typings.handsontable.handsontableStrings.numeric = this.cast("numeric")
-  @scala.inline
-  def time: typings.handsontable.handsontableStrings.time = this.cast("time")
+  def time: typings.handsontable.handsontableStrings.time = "time".asInstanceOf[typings.handsontable.handsontableStrings.time]
 }
 

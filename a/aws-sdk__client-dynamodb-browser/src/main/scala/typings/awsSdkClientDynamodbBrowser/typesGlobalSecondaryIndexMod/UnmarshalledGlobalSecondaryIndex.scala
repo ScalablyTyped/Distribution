@@ -34,7 +34,6 @@ object UnmarshalledGlobalSecondaryIndex {
     ProvisionedThroughput: UnmarshalledProvisionedThroughput
   ): UnmarshalledGlobalSecondaryIndex = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], Projection = Projection.asInstanceOf[js.Any], ProvisionedThroughput = ProvisionedThroughput.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledGlobalSecondaryIndex]
   }
 }

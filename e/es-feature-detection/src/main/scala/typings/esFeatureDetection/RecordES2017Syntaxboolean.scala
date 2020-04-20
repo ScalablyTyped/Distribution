@@ -16,7 +16,7 @@ object RecordES2017Syntaxboolean {
   @scala.inline
   def apply(`Trailing parameter commas`: Boolean, __all: Boolean, asyncSlashawait: Boolean): RecordES2017Syntaxboolean = {
     val __obj = js.Dynamic.literal(__all = __all.asInstanceOf[js.Any])
-    __obj.updateDynamic("Trailing parameter commas")(`Trailing parameter commas`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Trailing parameter commas")((`Trailing parameter commas`).asInstanceOf[js.Any])
     __obj.updateDynamic("async/await")(asyncSlashawait.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordES2017Syntaxboolean]
   }

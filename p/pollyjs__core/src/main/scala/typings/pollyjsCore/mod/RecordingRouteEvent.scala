@@ -12,10 +12,8 @@ trait RecordingRouteEvent extends js.Object
 
 object RecordingRouteEvent {
   @scala.inline
-  def beforePersist: typings.pollyjsCore.pollyjsCoreStrings.beforePersist = this.cast("beforePersist")
+  def beforePersist: typings.pollyjsCore.pollyjsCoreStrings.beforePersist = "beforePersist".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.beforePersist]
   @scala.inline
-  def beforeReplay: typings.pollyjsCore.pollyjsCoreStrings.beforeReplay = this.cast("beforeReplay")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def beforeReplay: typings.pollyjsCore.pollyjsCoreStrings.beforeReplay = "beforeReplay".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.beforeReplay]
 }
 

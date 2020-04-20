@@ -12,7 +12,6 @@ object manifestLoadingData {
   @scala.inline
   def apply(url: String): manifestLoadingData = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[manifestLoadingData]
   }
 }

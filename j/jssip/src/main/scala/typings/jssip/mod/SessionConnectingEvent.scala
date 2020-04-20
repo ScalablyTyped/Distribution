@@ -12,7 +12,6 @@ object SessionConnectingEvent {
   @scala.inline
   def apply(request: IncomingRequest | OutgoingRequest): SessionConnectingEvent = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionConnectingEvent]
   }
 }

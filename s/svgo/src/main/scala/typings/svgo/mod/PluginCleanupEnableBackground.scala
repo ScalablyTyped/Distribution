@@ -12,7 +12,6 @@ object PluginCleanupEnableBackground {
   @scala.inline
   def apply(cleanupEnableBackground: Boolean | js.Object): PluginCleanupEnableBackground = {
     val __obj = js.Dynamic.literal(cleanupEnableBackground = cleanupEnableBackground.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginCleanupEnableBackground]
   }
 }

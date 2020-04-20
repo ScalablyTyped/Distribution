@@ -24,7 +24,6 @@ object GeoSpatialColumnGroup {
   @scala.inline
   def apply(Columns: ColumnList, CountryCode: GeoSpatialCountryCode, Name: ColumnGroupName): GeoSpatialColumnGroup = {
     val __obj = js.Dynamic.literal(Columns = Columns.asInstanceOf[js.Any], CountryCode = CountryCode.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeoSpatialColumnGroup]
   }
 }

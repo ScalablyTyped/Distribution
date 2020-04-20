@@ -13,7 +13,6 @@ object PickImplnotFound {
   @scala.inline
   def apply(notFound: String): PickImplnotFound = {
     val __obj = js.Dynamic.literal(notFound = notFound.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnotFound]
   }
 }

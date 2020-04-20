@@ -20,7 +20,6 @@ object DescribeActivityTypeInput {
   @scala.inline
   def apply(activityType: ActivityType, domain: DomainName): DescribeActivityTypeInput = {
     val __obj = js.Dynamic.literal(activityType = activityType.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeActivityTypeInput]
   }
 }

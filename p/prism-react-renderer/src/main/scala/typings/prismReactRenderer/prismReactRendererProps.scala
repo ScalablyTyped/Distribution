@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait prismReactRendererProps {
   @scala.inline
-  def PrismReactRendererProps: HighlightProps.type = typings.prismReactRenderer.mod.HighlightProps
+  def PrismReactRendererProps: HighlightProps.type = HighlightProps
   type PrismReactRendererProps = HighlightProps
 }
 

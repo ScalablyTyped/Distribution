@@ -18,7 +18,6 @@ object SwiftClickObject {
     useCssParser: Boolean => Unit
   ): SwiftClickObject = {
     val __obj = js.Dynamic.literal(addNodeNamesToTrack = js.Any.fromFunction1(addNodeNamesToTrack), replaceNodeNamesToTrack = js.Any.fromFunction1(replaceNodeNamesToTrack), useCssParser = js.Any.fromFunction1(useCssParser))
-  
     __obj.asInstanceOf[SwiftClickObject]
   }
 }

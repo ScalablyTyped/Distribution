@@ -1238,9 +1238,9 @@ object actionsOnGoogleStrings {
   @scala.inline
   def DISCOVER: DISCOVER = "DISCOVER".asInstanceOf[DISCOVER]
   @scala.inline
-  def `Default Fallback Intent`: `Default Fallback Intent` = "Default Fallback Intent".asInstanceOf[`Default Fallback Intent`]
+  def `Default Fallback Intent`: `Default Fallback Intent` = ("Default Fallback Intent").asInstanceOf[`Default Fallback Intent`]
   @scala.inline
-  def `Default Welcome Intent`: `Default Welcome Intent` = "Default Welcome Intent".asInstanceOf[`Default Welcome Intent`]
+  def `Default Welcome Intent`: `Default Welcome Intent` = ("Default Welcome Intent").asInstanceOf[`Default Welcome Intent`]
   @scala.inline
   def EMAIL: EMAIL = "EMAIL".asInstanceOf[EMAIL]
   @scala.inline

@@ -15,7 +15,6 @@ object AnonBackgroundColorBorderRadius {
   @scala.inline
   def apply(backgroundColor: String, borderRadius: Double, height: Double, width: Double): AnonBackgroundColorBorderRadius = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackgroundColorBorderRadius]
   }
 }

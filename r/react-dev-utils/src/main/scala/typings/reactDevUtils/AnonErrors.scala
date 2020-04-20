@@ -19,7 +19,6 @@ object AnonErrors {
   @scala.inline
   def apply(errors: js.Array[String] => Unit, warnings: js.Array[String] => Unit): AnonErrors = {
     val __obj = js.Dynamic.literal(errors = js.Any.fromFunction1(errors), warnings = js.Any.fromFunction1(warnings))
-  
     __obj.asInstanceOf[AnonErrors]
   }
 }

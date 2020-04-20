@@ -28,7 +28,6 @@ object Patient {
   @scala.inline
   def apply(api: Api, id: String, read: () => js.Promise[Response]): Patient = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], read = js.Any.fromFunction0(read))
-  
     __obj.asInstanceOf[Patient]
   }
 }

@@ -42,7 +42,6 @@ object HTTPIngressPath {
   @scala.inline
   def apply(backend: IngressBackend, path: String, pathType: String): HTTPIngressPath = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathType = pathType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HTTPIngressPath]
   }
 }

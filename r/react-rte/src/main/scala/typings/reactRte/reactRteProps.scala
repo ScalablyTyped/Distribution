@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactRteProps {
   @scala.inline
-  def ReactRteProps: Props.type = typings.reactRte.mod.Props
+  def ReactRteProps: Props.type = Props
   type ReactRteProps = Props
 }
 

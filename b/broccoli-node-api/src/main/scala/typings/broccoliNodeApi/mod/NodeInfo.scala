@@ -20,24 +20,22 @@ trait NodeInfo extends js.Object
 
 object NodeInfo {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def getCallbackObject: typings.broccoliNodeApi.broccoliNodeApiStrings.getCallbackObject = "getCallbackObject".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.getCallbackObject]
   @scala.inline
-  def getCallbackObject: typings.broccoliNodeApi.broccoliNodeApiStrings.getCallbackObject = this.cast("getCallbackObject")
+  def inputNodes: typings.broccoliNodeApi.broccoliNodeApiStrings.inputNodes = "inputNodes".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.inputNodes]
   @scala.inline
-  def inputNodes: typings.broccoliNodeApi.broccoliNodeApiStrings.inputNodes = this.cast("inputNodes")
+  def needsCache: typings.broccoliNodeApi.broccoliNodeApiStrings.needsCache = "needsCache".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.needsCache]
   @scala.inline
-  def needsCache: typings.broccoliNodeApi.broccoliNodeApiStrings.needsCache = this.cast("needsCache")
+  def persistentOutput: typings.broccoliNodeApi.broccoliNodeApiStrings.persistentOutput = "persistentOutput".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.persistentOutput]
   @scala.inline
-  def persistentOutput: typings.broccoliNodeApi.broccoliNodeApiStrings.persistentOutput = this.cast("persistentOutput")
+  def setup: typings.broccoliNodeApi.broccoliNodeApiStrings.setup = "setup".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.setup]
   @scala.inline
-  def setup: typings.broccoliNodeApi.broccoliNodeApiStrings.setup = this.cast("setup")
+  def sourceDirectory: typings.broccoliNodeApi.broccoliNodeApiStrings.sourceDirectory = "sourceDirectory".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.sourceDirectory]
   @scala.inline
-  def sourceDirectory: typings.broccoliNodeApi.broccoliNodeApiStrings.sourceDirectory = this.cast("sourceDirectory")
+  def trackInputChanges: typings.broccoliNodeApi.broccoliNodeApiStrings.trackInputChanges = "trackInputChanges".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.trackInputChanges]
   @scala.inline
-  def trackInputChanges: typings.broccoliNodeApi.broccoliNodeApiStrings.trackInputChanges = this.cast("trackInputChanges")
+  def volatile: typings.broccoliNodeApi.broccoliNodeApiStrings.volatile = "volatile".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.volatile]
   @scala.inline
-  def volatile: typings.broccoliNodeApi.broccoliNodeApiStrings.volatile = this.cast("volatile")
-  @scala.inline
-  def watched: typings.broccoliNodeApi.broccoliNodeApiStrings.watched = this.cast("watched")
+  def watched: typings.broccoliNodeApi.broccoliNodeApiStrings.watched = "watched".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.watched]
 }
 

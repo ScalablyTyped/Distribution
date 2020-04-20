@@ -22,7 +22,6 @@ object AnonCerData {
     pushOptions: AnonGateway
   ): AnonCerData = {
     val __obj = js.Dynamic.literal(cerData = cerData.asInstanceOf[js.Any], feedBackOptions = feedBackOptions.asInstanceOf[js.Any], keyData = keyData.asInstanceOf[js.Any], production = production.asInstanceOf[js.Any], pushOptions = pushOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCerData]
   }
 }

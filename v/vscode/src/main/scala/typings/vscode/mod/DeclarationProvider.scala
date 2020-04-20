@@ -21,7 +21,6 @@ object DeclarationProvider {
   @scala.inline
   def apply(provideDeclaration: (TextDocument, Position, CancellationToken) => ProviderResult[Declaration]): DeclarationProvider = {
     val __obj = js.Dynamic.literal(provideDeclaration = js.Any.fromFunction3(provideDeclaration))
-  
     __obj.asInstanceOf[DeclarationProvider]
   }
 }

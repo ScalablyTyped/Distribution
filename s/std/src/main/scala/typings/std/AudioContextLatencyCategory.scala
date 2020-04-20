@@ -13,12 +13,10 @@ trait AudioContextLatencyCategory extends js.Object
 
 object AudioContextLatencyCategory {
   @scala.inline
-  def balanced: typings.std.stdStrings.balanced = this.cast("balanced")
+  def balanced: typings.std.stdStrings.balanced = "balanced".asInstanceOf[typings.std.stdStrings.balanced]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def interactive: typings.std.stdStrings.interactive = "interactive".asInstanceOf[typings.std.stdStrings.interactive]
   @scala.inline
-  def interactive: typings.std.stdStrings.interactive = this.cast("interactive")
-  @scala.inline
-  def playback: typings.std.stdStrings.playback = this.cast("playback")
+  def playback: typings.std.stdStrings.playback = "playback".asInstanceOf[typings.std.stdStrings.playback]
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeDraggableFlatlistProps {
   @scala.inline
-  def ReactNativeDraggableFlatlistProps: DraggableFlatListProps.type = typings.reactNativeDraggableFlatlist.mod.DraggableFlatListProps
+  def ReactNativeDraggableFlatlistProps: DraggableFlatListProps.type = DraggableFlatListProps
   type ReactNativeDraggableFlatlistProps[Item] = DraggableFlatListProps[Item]
 }
 

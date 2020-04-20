@@ -13,12 +13,10 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def erase: typings.ecol.ecolStrings.erase = "erase".asInstanceOf[typings.ecol.ecolStrings.erase]
   @scala.inline
-  def erase: typings.ecol.ecolStrings.erase = this.cast("erase")
+  def insert: typings.ecol.ecolStrings.insert = "insert".asInstanceOf[typings.ecol.ecolStrings.insert]
   @scala.inline
-  def insert: typings.ecol.ecolStrings.insert = this.cast("insert")
-  @scala.inline
-  def refresh: typings.ecol.ecolStrings.refresh = this.cast("refresh")
+  def refresh: typings.ecol.ecolStrings.refresh = "refresh".asInstanceOf[typings.ecol.ecolStrings.refresh]
 }
 

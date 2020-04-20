@@ -16,18 +16,16 @@ trait ConnectionState extends js.Object
 
 object ConnectionState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def connected: typings.twilioSync.twilioSyncStrings.connected = "connected".asInstanceOf[typings.twilioSync.twilioSyncStrings.connected]
   @scala.inline
-  def connected: typings.twilioSync.twilioSyncStrings.connected = this.cast("connected")
+  def connecting: typings.twilioSync.twilioSyncStrings.connecting = "connecting".asInstanceOf[typings.twilioSync.twilioSyncStrings.connecting]
   @scala.inline
-  def connecting: typings.twilioSync.twilioSyncStrings.connecting = this.cast("connecting")
+  def denied: typings.twilioSync.twilioSyncStrings.denied = "denied".asInstanceOf[typings.twilioSync.twilioSyncStrings.denied]
   @scala.inline
-  def denied: typings.twilioSync.twilioSyncStrings.denied = this.cast("denied")
+  def disconnected: typings.twilioSync.twilioSyncStrings.disconnected = "disconnected".asInstanceOf[typings.twilioSync.twilioSyncStrings.disconnected]
   @scala.inline
-  def disconnected: typings.twilioSync.twilioSyncStrings.disconnected = this.cast("disconnected")
+  def disconnecting: typings.twilioSync.twilioSyncStrings.disconnecting = "disconnecting".asInstanceOf[typings.twilioSync.twilioSyncStrings.disconnecting]
   @scala.inline
-  def disconnecting: typings.twilioSync.twilioSyncStrings.disconnecting = this.cast("disconnecting")
-  @scala.inline
-  def error: typings.twilioSync.twilioSyncStrings.error = this.cast("error")
+  def error: typings.twilioSync.twilioSyncStrings.error = "error".asInstanceOf[typings.twilioSync.twilioSyncStrings.error]
 }
 

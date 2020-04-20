@@ -13,7 +13,6 @@ object GetScreenBrightnessSuccessCallbackOption {
   @scala.inline
   def apply(value: Double): GetScreenBrightnessSuccessCallbackOption = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetScreenBrightnessSuccessCallbackOption]
   }
 }

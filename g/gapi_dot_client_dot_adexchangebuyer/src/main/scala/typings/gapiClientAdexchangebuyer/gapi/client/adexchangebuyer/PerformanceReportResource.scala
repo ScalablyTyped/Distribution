@@ -15,7 +15,6 @@ object PerformanceReportResource {
   @scala.inline
   def apply(list: AnonEndDateTime => Request_[PerformanceReportList]): PerformanceReportResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[PerformanceReportResource]
   }
 }

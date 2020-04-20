@@ -26,12 +26,12 @@ trait MigrationHubConfig extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateHomeRegionControlResult, Unit]
   ): Request[CreateHomeRegionControlResult, AWSError] = js.native
   /**
-    * This API permits filtering on the ControlId, HomeRegion, and RegionControlScope fields.
+    * This API permits filtering on the ControlId and HomeRegion fields.
     */
   def describeHomeRegionControls(): Request[DescribeHomeRegionControlsResult, AWSError] = js.native
   def describeHomeRegionControls(callback: js.Function2[/* err */ AWSError, /* data */ DescribeHomeRegionControlsResult, Unit]): Request[DescribeHomeRegionControlsResult, AWSError] = js.native
   /**
-    * This API permits filtering on the ControlId, HomeRegion, and RegionControlScope fields.
+    * This API permits filtering on the ControlId and HomeRegion fields.
     */
   def describeHomeRegionControls(params: DescribeHomeRegionControlsRequest): Request[DescribeHomeRegionControlsResult, AWSError] = js.native
   def describeHomeRegionControls(

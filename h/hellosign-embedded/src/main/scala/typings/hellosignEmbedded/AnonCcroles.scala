@@ -20,7 +20,6 @@ object AnonCcroles {
     title: String
   ): AnonCcroles = {
     val __obj = js.Dynamic.literal(cc_roles = cc_roles.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], signer_roles = signer_roles.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCcroles]
   }
 }

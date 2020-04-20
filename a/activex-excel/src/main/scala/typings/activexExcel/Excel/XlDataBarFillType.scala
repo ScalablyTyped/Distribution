@@ -14,10 +14,8 @@ trait XlDataBarFillType extends js.Object
 
 object XlDataBarFillType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlDataBarFillGradient: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlDataBarFillGradient: `1` = this.cast(1)
-  @scala.inline
-  def xlDataBarFillSolid: `0` = this.cast(0)
+  def xlDataBarFillSolid: `0` = 0.asInstanceOf[`0`]
 }
 

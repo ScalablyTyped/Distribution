@@ -26,7 +26,6 @@ object ArrayMap {
     R6: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]]
   ): ArrayMap = {
     val __obj = js.Dynamic.literal(R0 = R0.asInstanceOf[js.Any], R1 = R1.asInstanceOf[js.Any], R2 = R2.asInstanceOf[js.Any], R3 = R3.asInstanceOf[js.Any], R4 = R4.asInstanceOf[js.Any], R5 = R5.asInstanceOf[js.Any], R6 = R6.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArrayMap]
   }
 }

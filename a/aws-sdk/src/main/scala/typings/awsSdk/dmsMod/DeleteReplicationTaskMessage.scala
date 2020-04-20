@@ -16,7 +16,6 @@ object DeleteReplicationTaskMessage {
   @scala.inline
   def apply(ReplicationTaskArn: String): DeleteReplicationTaskMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskArn = ReplicationTaskArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteReplicationTaskMessage]
   }
 }

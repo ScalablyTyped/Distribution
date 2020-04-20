@@ -23,7 +23,7 @@ trait Math extends js.Object {
   val SQRT1_2: Double = js.native
   /** The square root of 2. */
   val SQRT2: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
   /**
     * Returns the absolute value of a number (the value without regard to whether it is positive or negative).

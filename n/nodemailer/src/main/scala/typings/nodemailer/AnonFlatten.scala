@@ -13,7 +13,6 @@ object AnonFlatten {
   @scala.inline
   def apply(flatten: `true`): AnonFlatten = {
     val __obj = js.Dynamic.literal(flatten = flatten.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlatten]
   }
 }

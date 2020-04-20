@@ -15,7 +15,6 @@ object ApplicationsResource {
   @scala.inline
   def apply(listHidden: AnonApplicationId => Request_[HiddenPlayerList]): ApplicationsResource = {
     val __obj = js.Dynamic.literal(listHidden = js.Any.fromFunction1(listHidden))
-  
     __obj.asInstanceOf[ApplicationsResource]
   }
 }

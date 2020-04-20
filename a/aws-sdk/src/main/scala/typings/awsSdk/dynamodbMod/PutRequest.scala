@@ -16,7 +16,6 @@ object PutRequest {
   @scala.inline
   def apply(Item: PutItemInputAttributeMap): PutRequest = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutRequest]
   }
 }

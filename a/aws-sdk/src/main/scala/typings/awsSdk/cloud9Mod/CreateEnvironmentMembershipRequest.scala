@@ -24,7 +24,6 @@ object CreateEnvironmentMembershipRequest {
   @scala.inline
   def apply(environmentId: EnvironmentId, permissions: MemberPermissions, userArn: UserArn): CreateEnvironmentMembershipRequest = {
     val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateEnvironmentMembershipRequest]
   }
 }

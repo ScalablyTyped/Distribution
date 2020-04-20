@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ɵangularPackagesRouterRouterM[T] protected () extends js.Object {
   def this(root: ɵangularPackagesRouterRouterN[T]) = this()
-  def root(): T = js.native
+  def root: T = js.native
 }
 

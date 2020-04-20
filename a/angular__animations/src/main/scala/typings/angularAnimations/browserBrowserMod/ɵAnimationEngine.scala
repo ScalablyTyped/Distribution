@@ -30,7 +30,7 @@ class ɵAnimationEngine protected () extends js.Object {
   def onRemovalComplete(element: js.Any, context: js.Any): Unit = js.native
   def onRemove(namespaceId: String, element: js.Any, context: js.Any): Unit = js.native
   def onRemove(namespaceId: String, element: js.Any, context: js.Any, isHostElement: Boolean): Unit = js.native
-  def players(): js.Array[AnimationPlayer] = js.native
+  def players: js.Array[AnimationPlayer] = js.native
   def process(namespaceId: String, element: js.Any, property: String, value: js.Any): Unit = js.native
   def register(namespaceId: String, hostElement: js.Any): Unit = js.native
   def registerTrigger(

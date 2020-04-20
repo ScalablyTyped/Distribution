@@ -16,7 +16,6 @@ object ShuffleConfig {
   @scala.inline
   def apply(Seed: Seed): ShuffleConfig = {
     val __obj = js.Dynamic.literal(Seed = Seed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShuffleConfig]
   }
 }

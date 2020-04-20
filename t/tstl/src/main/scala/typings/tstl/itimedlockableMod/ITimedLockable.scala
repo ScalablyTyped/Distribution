@@ -33,7 +33,6 @@ object ITimedLockable {
     unlock: () => js.Promise[Unit]
   ): ITimedLockable = {
     val __obj = js.Dynamic.literal(lock = js.Any.fromFunction0(lock), try_lock = js.Any.fromFunction0(try_lock), try_lock_for = js.Any.fromFunction1(try_lock_for), try_lock_until = js.Any.fromFunction1(try_lock_until), unlock = js.Any.fromFunction0(unlock))
-  
     __obj.asInstanceOf[ITimedLockable]
   }
 }

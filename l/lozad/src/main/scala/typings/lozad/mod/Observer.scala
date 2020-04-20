@@ -16,7 +16,6 @@ object Observer {
   @scala.inline
   def apply(observe: () => Unit, observer: IntersectionObserver, triggerLoad: Element => Unit): Observer = {
     val __obj = js.Dynamic.literal(observe = js.Any.fromFunction0(observe), observer = observer.asInstanceOf[js.Any], triggerLoad = js.Any.fromFunction1(triggerLoad))
-  
     __obj.asInstanceOf[Observer]
   }
 }

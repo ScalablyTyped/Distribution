@@ -12,7 +12,6 @@ object AnonEnumValuesAnonNotSet {
   @scala.inline
   def apply(enumValues: AnonNotSet): AnonEnumValuesAnonNotSet = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonNotSet]
   }
 }

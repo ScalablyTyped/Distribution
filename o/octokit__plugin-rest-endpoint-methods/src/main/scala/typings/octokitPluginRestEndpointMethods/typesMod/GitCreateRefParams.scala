@@ -21,7 +21,6 @@ object GitCreateRefParams {
   @scala.inline
   def apply(owner: String, ref: String, repo: String, sha: String): GitCreateRefParams = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitCreateRefParams]
   }
 }

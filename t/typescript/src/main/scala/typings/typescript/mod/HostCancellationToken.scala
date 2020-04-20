@@ -12,7 +12,6 @@ object HostCancellationToken {
   @scala.inline
   def apply(isCancellationRequested: () => Boolean): HostCancellationToken = {
     val __obj = js.Dynamic.literal(isCancellationRequested = js.Any.fromFunction0(isCancellationRequested))
-  
     __obj.asInstanceOf[HostCancellationToken]
   }
 }

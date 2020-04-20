@@ -31,7 +31,6 @@ object JSTreeStaticDefaultsUnique {
   @scala.inline
   def apply(case_sensitive: Boolean, duplicate: (String, Double) => String, trim_whitespace: Boolean): JSTreeStaticDefaultsUnique = {
     val __obj = js.Dynamic.literal(case_sensitive = case_sensitive.asInstanceOf[js.Any], duplicate = js.Any.fromFunction2(duplicate), trim_whitespace = trim_whitespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSTreeStaticDefaultsUnique]
   }
 }

@@ -1,6 +1,7 @@
 package typings.storybookAddonKnobs
 
 import typings.storybookAddonKnobs.optionsMod.OptionsKnobOptionsDisplay
+import typings.storybookAddonKnobs.typesMod.KnobType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,25 +14,25 @@ object storybookAddonKnobsStrings {
   sealed trait Other extends js.Object
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array extends KnobType
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean extends KnobType
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button extends KnobType
   
   @js.native
   sealed trait check extends OptionsKnobOptionsDisplay
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait color extends KnobType
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date extends KnobType
   
   @js.native
-  sealed trait files extends js.Object
+  sealed trait files extends KnobType
   
   @js.native
   sealed trait `inline-check` extends OptionsKnobOptionsDisplay
@@ -46,28 +47,30 @@ object storybookAddonKnobsStrings {
   sealed trait `multi-select` extends OptionsKnobOptionsDisplay
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number extends KnobType
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object` extends KnobType
   
   @js.native
-  sealed trait options extends js.Object
+  sealed trait options extends KnobType
   
   @js.native
   sealed trait radio extends OptionsKnobOptionsDisplay
   
   @js.native
-  sealed trait radios extends js.Object
+  sealed trait radios extends KnobType
   
   @js.native
-  sealed trait select extends OptionsKnobOptionsDisplay
+  sealed trait select
+    extends KnobType
+       with OptionsKnobOptionsDisplay
   
   @js.native
   sealed trait storybookjsSlashknobs extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text extends KnobType
   
   @scala.inline
   def Mutable: Mutable = "Mutable".asInstanceOf[Mutable]

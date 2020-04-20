@@ -19,7 +19,6 @@ object OnChanges {
   @scala.inline
   def apply(ngOnChanges: SimpleChanges => Unit): OnChanges = {
     val __obj = js.Dynamic.literal(ngOnChanges = js.Any.fromFunction1(ngOnChanges))
-  
     __obj.asInstanceOf[OnChanges]
   }
 }

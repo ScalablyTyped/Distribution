@@ -16,7 +16,6 @@ object GetHostedZoneRequest {
   @scala.inline
   def apply(Id: ResourceId): GetHostedZoneRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHostedZoneRequest]
   }
 }

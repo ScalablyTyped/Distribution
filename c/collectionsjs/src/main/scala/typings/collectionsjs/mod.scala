@@ -49,14 +49,14 @@ object mod extends js.Object {
     def sortBy(property: String): Collection[T] = js.native
     def sortBy(property: String, order: String): Collection[T] = js.native
     def stringify(): String = js.native
-    def sum(property: String): Double = js.native
+    def sum(property: /* keyof T */ String): Double = js.native
     def take(count: Double): Collection[T] = js.native
     def unique(): Collection[T] = js.native
     def unique(callback: String): Collection[T] = js.native
     def unique(callback: js.Function1[/* item */ T, _]): Collection[T] = js.native
     def values(): Collection[T] = js.native
     def where(callback: js.Function1[/* item */ T, Boolean]): Collection[T] = js.native
-    def where[K /* <: String */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): Collection[T] = js.native
+    def where[K /* <: /* keyof T */ String */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): Collection[T] = js.native
     def zip(array: js.Array[T]): Collection[T] = js.native
     def zip(array: Collection[T]): Collection[T] = js.native
   }

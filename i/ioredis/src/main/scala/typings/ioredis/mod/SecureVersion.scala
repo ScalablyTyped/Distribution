@@ -14,14 +14,12 @@ trait SecureVersion extends js.Object
 
 object SecureVersion {
   @scala.inline
-  def TLSv1: typings.ioredis.ioredisStrings.TLSv1 = this.cast("TLSv1")
+  def TLSv1: typings.ioredis.ioredisStrings.TLSv1 = "TLSv1".asInstanceOf[typings.ioredis.ioredisStrings.TLSv1]
   @scala.inline
-  def TLSv1Dot1: typings.ioredis.ioredisStrings.TLSv1Dot1 = this.cast("TLSv1.1")
+  def TLSv1Dot1: typings.ioredis.ioredisStrings.TLSv1Dot1 = "TLSv1.1".asInstanceOf[typings.ioredis.ioredisStrings.TLSv1Dot1]
   @scala.inline
-  def TLSv1Dot2: typings.ioredis.ioredisStrings.TLSv1Dot2 = this.cast("TLSv1.2")
+  def TLSv1Dot2: typings.ioredis.ioredisStrings.TLSv1Dot2 = "TLSv1.2".asInstanceOf[typings.ioredis.ioredisStrings.TLSv1Dot2]
   @scala.inline
-  def TLSv1Dot3: typings.ioredis.ioredisStrings.TLSv1Dot3 = this.cast("TLSv1.3")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TLSv1Dot3: typings.ioredis.ioredisStrings.TLSv1Dot3 = "TLSv1.3".asInstanceOf[typings.ioredis.ioredisStrings.TLSv1Dot3]
 }
 

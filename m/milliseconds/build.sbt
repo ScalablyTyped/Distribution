@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "milliseconds"
-version := "0.0-unknown-dt-20200226Z-59589e"
+version := "0.0-unknown-dt-20200226Z-e81857"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

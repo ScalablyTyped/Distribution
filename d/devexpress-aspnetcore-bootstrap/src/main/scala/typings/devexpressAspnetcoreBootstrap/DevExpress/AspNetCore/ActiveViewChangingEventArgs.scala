@@ -19,7 +19,6 @@ object ActiveViewChangingEventArgs {
     sender: Control
   ): ActiveViewChangingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], newView = newView.asInstanceOf[js.Any], oldView = oldView.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActiveViewChangingEventArgs]
   }
 }

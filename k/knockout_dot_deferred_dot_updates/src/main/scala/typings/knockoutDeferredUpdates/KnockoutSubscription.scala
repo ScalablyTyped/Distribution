@@ -12,7 +12,6 @@ object KnockoutSubscription {
   @scala.inline
   def apply(deferUpdates: Boolean): KnockoutSubscription = {
     val __obj = js.Dynamic.literal(deferUpdates = deferUpdates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutSubscription]
   }
 }

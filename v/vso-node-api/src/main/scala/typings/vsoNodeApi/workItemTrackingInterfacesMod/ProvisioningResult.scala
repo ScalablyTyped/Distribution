@@ -15,7 +15,6 @@ object ProvisioningResult {
   @scala.inline
   def apply(provisioningImportEvents: js.Array[String]): ProvisioningResult = {
     val __obj = js.Dynamic.literal(provisioningImportEvents = provisioningImportEvents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProvisioningResult]
   }
 }

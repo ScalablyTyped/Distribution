@@ -45,7 +45,6 @@ object GetTaskDefinitionResult {
     taskRoleArn: String
   ): GetTaskDefinitionResult = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], networkMode = networkMode.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], taskDefinition = taskDefinition.asInstanceOf[js.Any], taskRoleArn = taskRoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTaskDefinitionResult]
   }
 }

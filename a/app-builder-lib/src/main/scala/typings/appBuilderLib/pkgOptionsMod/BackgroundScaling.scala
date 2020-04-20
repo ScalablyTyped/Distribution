@@ -14,12 +14,10 @@ trait BackgroundScaling extends js.Object
 
 object BackgroundScaling {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
+  def proportional: typings.appBuilderLib.appBuilderLibStrings.proportional = "proportional".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.proportional]
   @scala.inline
-  def proportional: typings.appBuilderLib.appBuilderLibStrings.proportional = this.cast("proportional")
-  @scala.inline
-  def tofit: typings.appBuilderLib.appBuilderLibStrings.tofit = this.cast("tofit")
+  def tofit: typings.appBuilderLib.appBuilderLibStrings.tofit = "tofit".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.tofit]
 }
 

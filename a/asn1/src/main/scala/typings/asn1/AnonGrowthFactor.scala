@@ -13,7 +13,6 @@ object AnonGrowthFactor {
   @scala.inline
   def apply(growthFactor: Double, size: Double): AnonGrowthFactor = {
     val __obj = js.Dynamic.literal(growthFactor = growthFactor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGrowthFactor]
   }
 }

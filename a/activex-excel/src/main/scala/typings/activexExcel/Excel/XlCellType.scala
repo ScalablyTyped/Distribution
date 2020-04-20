@@ -30,26 +30,24 @@ trait XlCellType extends js.Object
 
 object XlCellType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCellTypeAllFormatConditions: `-4172` = -4172.asInstanceOf[`-4172`]
   @scala.inline
-  def xlCellTypeAllFormatConditions: `-4172` = this.cast(-4172)
+  def xlCellTypeAllValidation: `-4174` = -4174.asInstanceOf[`-4174`]
   @scala.inline
-  def xlCellTypeAllValidation: `-4174` = this.cast(-4174)
+  def xlCellTypeBlanks: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlCellTypeBlanks: `4` = this.cast(4)
+  def xlCellTypeComments: `-4144` = -4144.asInstanceOf[`-4144`]
   @scala.inline
-  def xlCellTypeComments: `-4144` = this.cast(-4144)
+  def xlCellTypeConstants: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlCellTypeConstants: `2` = this.cast(2)
+  def xlCellTypeFormulas: `-4123` = -4123.asInstanceOf[`-4123`]
   @scala.inline
-  def xlCellTypeFormulas: `-4123` = this.cast(-4123)
+  def xlCellTypeLastCell: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlCellTypeLastCell: `11` = this.cast(11)
+  def xlCellTypeSameFormatConditions: `-4173` = -4173.asInstanceOf[`-4173`]
   @scala.inline
-  def xlCellTypeSameFormatConditions: `-4173` = this.cast(-4173)
+  def xlCellTypeSameValidation: `-4175` = -4175.asInstanceOf[`-4175`]
   @scala.inline
-  def xlCellTypeSameValidation: `-4175` = this.cast(-4175)
-  @scala.inline
-  def xlCellTypeVisible: `12` = this.cast(12)
+  def xlCellTypeVisible: `12` = 12.asInstanceOf[`12`]
 }
 

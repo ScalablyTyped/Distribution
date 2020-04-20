@@ -19,7 +19,6 @@ object SyncKeyValueROTransaction {
   @scala.inline
   def apply(get: String => js.UndefOr[Buffer]): SyncKeyValueROTransaction = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[SyncKeyValueROTransaction]
   }
 }

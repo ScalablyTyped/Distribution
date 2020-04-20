@@ -16,7 +16,6 @@ object RequestPaymentConfiguration {
   @scala.inline
   def apply(Payer: Payer): RequestPaymentConfiguration = {
     val __obj = js.Dynamic.literal(Payer = Payer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestPaymentConfiguration]
   }
 }

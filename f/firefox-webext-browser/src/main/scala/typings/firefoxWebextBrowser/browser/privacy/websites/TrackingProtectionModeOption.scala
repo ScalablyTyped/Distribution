@@ -15,12 +15,10 @@ trait TrackingProtectionModeOption extends js.Object
 
 object TrackingProtectionModeOption {
   @scala.inline
-  def always: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always = this.cast("always")
+  def always: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always = "always".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def never: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never = "never".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never]
   @scala.inline
-  def never: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never = this.cast("never")
-  @scala.inline
-  def private_browsing: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing = this.cast("private_browsing")
+  def private_browsing: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing = "private_browsing".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing]
 }
 

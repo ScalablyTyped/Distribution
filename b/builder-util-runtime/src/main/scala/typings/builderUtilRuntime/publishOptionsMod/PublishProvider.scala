@@ -17,20 +17,18 @@ trait PublishProvider extends js.Object
 
 object PublishProvider {
   @scala.inline
-  def bintray: typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray = this.cast("bintray")
+  def bintray: typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray = "bintray".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def custom: typings.builderUtilRuntime.builderUtilRuntimeStrings.custom = "custom".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.custom]
   @scala.inline
-  def custom: typings.builderUtilRuntime.builderUtilRuntimeStrings.custom = this.cast("custom")
+  def generic: typings.builderUtilRuntime.builderUtilRuntimeStrings.generic = "generic".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.generic]
   @scala.inline
-  def generic: typings.builderUtilRuntime.builderUtilRuntimeStrings.generic = this.cast("generic")
+  def github: typings.builderUtilRuntime.builderUtilRuntimeStrings.github = "github".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.github]
   @scala.inline
-  def github: typings.builderUtilRuntime.builderUtilRuntimeStrings.github = this.cast("github")
+  def s3: typings.builderUtilRuntime.builderUtilRuntimeStrings.s3 = "s3".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.s3]
   @scala.inline
-  def s3: typings.builderUtilRuntime.builderUtilRuntimeStrings.s3 = this.cast("s3")
+  def snapStore: typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore = "snapStore".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore]
   @scala.inline
-  def snapStore: typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore = this.cast("snapStore")
-  @scala.inline
-  def spaces: typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces = this.cast("spaces")
+  def spaces: typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces = "spaces".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces]
 }
 

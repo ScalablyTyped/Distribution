@@ -2,6 +2,7 @@ package typings.loopback.mod
 
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.loopback.AnonCookies
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,7 +42,7 @@ object token extends js.Object {
     * @property {string} [currentUserLiteral] string literal for the current user.
     * @header loopback.token([options])
     */
-  def apply(): RequestHandler[ParamsDictionary] = js.native
-  def apply(options: AnonCookies): RequestHandler[ParamsDictionary] = js.native
+  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(options: AnonCookies): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
 

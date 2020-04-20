@@ -30,7 +30,6 @@ object AnonAmountcharged {
     refund_attributes_status: missing | requested | available
   ): AnonAmountcharged = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], amount_charged = amount_charged.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], amount_returned = amount_returned.asInstanceOf[js.Any], refund_attributes_method = refund_attributes_method.asInstanceOf[js.Any], refund_attributes_status = refund_attributes_status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAmountcharged]
   }
 }

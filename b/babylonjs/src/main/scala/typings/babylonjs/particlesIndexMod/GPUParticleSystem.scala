@@ -29,7 +29,7 @@ object GPUParticleSystem extends js.Object {
   /**
     * Gets a boolean indicating if the GPU particles can be rendered on current browser
     */
-  def IsSupported(): Boolean = js.native
+  def IsSupported: Boolean = js.native
   /**
     * Parses a JSON object to create a GPU particle system.
     * @param parsedParticleSystem The JSON object to parse

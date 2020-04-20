@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactGamepadProps {
   @scala.inline
-  def ReactGamepadProps: Props.type = typings.reactGamepad.mod.Props
+  def ReactGamepadProps: Props.type = Props
   type ReactGamepadProps = Props
 }
 

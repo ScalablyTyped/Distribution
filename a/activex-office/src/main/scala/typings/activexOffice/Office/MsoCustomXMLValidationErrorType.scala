@@ -16,12 +16,10 @@ trait MsoCustomXMLValidationErrorType extends js.Object
 
 object MsoCustomXMLValidationErrorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoCustomXMLValidationErrorAutomaticallyCleared: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoCustomXMLValidationErrorAutomaticallyCleared: `1` = this.cast(1)
+  def msoCustomXMLValidationErrorManual: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoCustomXMLValidationErrorManual: `2` = this.cast(2)
-  @scala.inline
-  def msoCustomXMLValidationErrorSchemaGenerated: `0` = this.cast(0)
+  def msoCustomXMLValidationErrorSchemaGenerated: `0` = 0.asInstanceOf[`0`]
 }
 

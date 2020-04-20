@@ -14,7 +14,6 @@ object PickanyroutesitemRender {
   @scala.inline
   def apply(itemRender: js.Any, routes: js.Any): PickanyroutesitemRender = {
     val __obj = js.Dynamic.literal(itemRender = itemRender.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickanyroutesitemRender]
   }
 }

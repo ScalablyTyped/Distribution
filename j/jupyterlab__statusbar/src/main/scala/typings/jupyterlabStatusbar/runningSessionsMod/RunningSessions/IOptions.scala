@@ -24,7 +24,6 @@ object IOptions {
   @scala.inline
   def apply(onClick: () => Unit, serviceManager: ServiceManager): IOptions = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), serviceManager = serviceManager.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

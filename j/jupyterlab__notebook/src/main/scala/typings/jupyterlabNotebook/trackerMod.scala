@@ -104,7 +104,7 @@ object trackerMod extends js.Object {
       * If there is no cell with the focus, then `null` will be emitted.
       */
     @JSName("activeCellChanged")
-    def activeCellChanged_MNotebookTracker(): ISignal[this.type, Cell | Null] = js.native
+    def activeCellChanged_MNotebookTracker: ISignal[this.type, Cell | Null] = js.native
     /**
       * The currently focused cell.
       *
@@ -113,7 +113,7 @@ object trackerMod extends js.Object {
       * value is `null`.
       */
     @JSName("activeCell")
-    def activeCell_MNotebookTracker(): Cell | Null = js.native
+    def activeCell_MNotebookTracker: Cell | Null = js.native
     /**
       * Add a new widget to the tracker.
       *
@@ -135,7 +135,7 @@ object trackerMod extends js.Object {
       */
     /* InferMemberOverrides */
     @JSName("currentChanged")
-    override def currentChanged_MWidgetTracker_(): ISignal[this.type, NotebookPanel | Null] = js.native
+    override def currentChanged_MWidgetTracker_ : ISignal[this.type, NotebookPanel | Null] = js.native
     /**
       * The current widget is the most recently focused or added widget.
       *
@@ -145,7 +145,7 @@ object trackerMod extends js.Object {
       */
     /* InferMemberOverrides */
     @JSName("currentWidget")
-    override def currentWidget_MWidgetTracker_(): NotebookPanel | Null = js.native
+    override def currentWidget_MWidgetTracker_ : NotebookPanel | Null = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -209,7 +209,7 @@ object trackerMod extends js.Object {
       */
     /* InferMemberOverrides */
     @JSName("isDisposed")
-    override def isDisposed_MWidgetTracker_(): Boolean = js.native
+    override def isDisposed_MWidgetTracker_ : Boolean = js.native
     /* InferMemberOverrides */
     /* protected */ override def onCurrentChanged(): Unit = js.native
     /**
@@ -236,7 +236,7 @@ object trackerMod extends js.Object {
       */
     /* InferMemberOverrides */
     @JSName("restored")
-    override def restored_MWidgetTracker_(): js.Promise[Unit] = js.native
+    override def restored_MWidgetTracker_ : js.Promise[Unit] = js.native
     /**
       * Save the restore data for a given widget.
       *
@@ -248,13 +248,13 @@ object trackerMod extends js.Object {
       * A signal emitted when the selection state changes.
       */
     @JSName("selectionChanged")
-    def selectionChanged_MNotebookTracker(): ISignal[this.type, Unit] = js.native
+    def selectionChanged_MNotebookTracker: ISignal[this.type, Unit] = js.native
     /**
       * The number of widgets held by the tracker.
       */
     /* InferMemberOverrides */
     @JSName("size")
-    override def size_MWidgetTracker_(): Double = js.native
+    override def size_MWidgetTracker_ : Double = js.native
     /**
       * A signal emitted when a widget is added.
       *
@@ -264,13 +264,13 @@ object trackerMod extends js.Object {
       */
     /* InferMemberOverrides */
     @JSName("widgetAdded")
-    override def widgetAdded_MWidgetTracker_(): ISignal[this.type, NotebookPanel] = js.native
+    override def widgetAdded_MWidgetTracker_ : ISignal[this.type, NotebookPanel] = js.native
     /**
       * A signal emitted when a widget is updated.
       */
     /* InferMemberOverrides */
     @JSName("widgetUpdated")
-    override def widgetUpdated_MWidgetTracker_(): ISignal[this.type, NotebookPanel] = js.native
+    override def widgetUpdated_MWidgetTracker_ : ISignal[this.type, NotebookPanel] = js.native
   }
   
 }

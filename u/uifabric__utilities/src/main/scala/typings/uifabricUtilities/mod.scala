@@ -1,14 +1,18 @@
 package typings.uifabricUtilities
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
+import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
 import typings.react.mod.PropsWithoutRef
+import typings.react.mod.RefAttributes
 import typings.react.mod.RefObject
+import typings.react.mod.SyntheticEvent
 import typings.std.Document_
 import typings.std.Element
 import typings.std.Event_
@@ -270,7 +274,9 @@ object mod extends js.Object {
   def allowScrollOnElement(element: HTMLElement, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = js.native
   def appendFunction(parent: js.Any, functions: js.Any*): js.Function0[Unit] = js.native
   def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): Boolean = js.native
-  def asAsync[TProps](options: IAsAsyncOptions[TProps]): ForwardRefExoticComponent[PropsWithoutRef[TProps with AnonAsyncPlaceholder]] = js.native
+  def asAsync[TProps](options: IAsAsyncOptions[TProps]): ForwardRefExoticComponent[
+    (PropsWithoutRef[TProps with AnonAsyncPlaceholder]) with RefAttributes[ElementType[TProps]]
+  ] = js.native
   def assertNever(x: scala.Nothing): scala.Nothing = js.native
   def assign(target: js.Any, args: js.Any*): js.Any = js.native
   def calculatePrecision(value: String): Double = js.native
@@ -308,7 +314,7 @@ object mod extends js.Object {
     parent: T,
     methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? T[key]}
-    */ typings.uifabricUtilities.uifabricUtilitiesStrings.extendComponent with T
+    */ typings.uifabricUtilities.uifabricUtilitiesStrings.extendComponent with TopLevel[T]
   ): Unit = js.native
   def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: js.Any, args: js.Any*): js.Any = js.native
   def find[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
@@ -425,7 +431,7 @@ object mod extends js.Object {
   def initializeComponentRef[TProps /* <: IBaseProps[_] */, TState](obj: Component[TProps, TState, _]): Unit = js.native
   def initializeFocusRects(): Unit = js.native
   def initializeFocusRects(window: Window_): Unit = js.native
-  def isControlled[P](props: P, valueProp: String): Boolean = js.native
+  def isControlled[P](props: P, valueProp: /* keyof P */ String): Boolean = js.native
   def isDirectionalKeyCode(which: Double): Boolean = js.native
   def isElementFocusSubZone(): Boolean = js.native
   def isElementFocusSubZone(element: HTMLElement): Boolean = js.native
@@ -467,18 +473,26 @@ object mod extends js.Object {
   @JSName("merge")
   def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = js.native
   def nullRender(): typings.react.mod._Global_.JSX.Element | Null = js.native
-  def on(element: Element, eventName: String, callback: js.Function1[/* ev */ Event_, Unit]): js.Function0[Unit] = js.native
   def on(
     element: Element,
     eventName: String,
-    callback: js.Function1[/* ev */ Event_, Unit],
+    callback: js.Function1[/* ev */ Event_ | (SyntheticEvent[Element, Event_]), Unit]
+  ): js.Function0[Unit] = js.native
+  def on(
+    element: Element,
+    eventName: String,
+    callback: js.Function1[/* ev */ Event_ | (SyntheticEvent[Element, Event_]), Unit],
     options: Boolean
   ): js.Function0[Unit] = js.native
-  def on(element: Window_, eventName: String, callback: js.Function1[/* ev */ Event_, Unit]): js.Function0[Unit] = js.native
   def on(
     element: Window_,
     eventName: String,
-    callback: js.Function1[/* ev */ Event_, Unit],
+    callback: js.Function1[/* ev */ Event_ | (SyntheticEvent[Element, Event_]), Unit]
+  ): js.Function0[Unit] = js.native
+  def on(
+    element: Window_,
+    eventName: String,
+    callback: js.Function1[/* ev */ Event_ | (SyntheticEvent[Element, Event_]), Unit],
     options: Boolean
   ): js.Function0[Unit] = js.native
   def portalContainsElement(target: HTMLElement): Boolean = js.native

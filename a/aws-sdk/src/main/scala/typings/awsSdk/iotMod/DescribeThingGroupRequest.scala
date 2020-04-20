@@ -16,7 +16,6 @@ object DescribeThingGroupRequest {
   @scala.inline
   def apply(thingGroupName: ThingGroupName): DescribeThingGroupRequest = {
     val __obj = js.Dynamic.literal(thingGroupName = thingGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeThingGroupRequest]
   }
 }

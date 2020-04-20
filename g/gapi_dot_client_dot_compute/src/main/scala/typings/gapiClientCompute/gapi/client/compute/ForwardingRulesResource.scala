@@ -36,7 +36,6 @@ object ForwardingRulesResource {
     setTarget: AnonForwardingRule => Request_[Operation]
   ): ForwardingRulesResource = {
     val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setTarget = js.Any.fromFunction1(setTarget))
-  
     __obj.asInstanceOf[ForwardingRulesResource]
   }
 }

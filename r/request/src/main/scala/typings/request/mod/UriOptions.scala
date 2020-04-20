@@ -13,7 +13,6 @@ object UriOptions {
   @scala.inline
   def apply(uri: String | Url): UriOptions = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UriOptions]
   }
 }

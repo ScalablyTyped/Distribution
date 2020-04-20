@@ -20,7 +20,6 @@ object ObjectFieldValue {
     value: ArgumentValue
   ): ObjectFieldValue = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectFieldValue]
   }
 }

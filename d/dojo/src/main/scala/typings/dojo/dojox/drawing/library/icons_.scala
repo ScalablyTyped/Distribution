@@ -106,7 +106,6 @@ object icons_ {
     zoomOut: js.Object
   ): icons_ = {
     val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], axes = axes.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], equation = equation.asInstanceOf[js.Any], iconize = iconize.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], pan = pan.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pencil = pencil.asInstanceOf[js.Any], plus = plus.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], textBlock = textBlock.asInstanceOf[js.Any], triangle = triangle.asInstanceOf[js.Any], vector = vector.asInstanceOf[js.Any], zoom100 = zoom100.asInstanceOf[js.Any], zoomIn = zoomIn.asInstanceOf[js.Any], zoomOut = zoomOut.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[icons_]
   }
 }

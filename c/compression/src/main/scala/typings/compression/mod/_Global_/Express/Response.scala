@@ -15,7 +15,6 @@ object Response {
   @scala.inline
   def apply(flush: () => Unit): Response = {
     val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush))
-  
     __obj.asInstanceOf[Response]
   }
 }

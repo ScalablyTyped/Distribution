@@ -32,7 +32,6 @@ object Group {
   @scala.inline
   def apply(Arn: arnType, CreateDate: dateType, GroupId: idType, GroupName: groupNameType, Path: pathType): Group = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreateDate = CreateDate.asInstanceOf[js.Any], GroupId = GroupId.asInstanceOf[js.Any], GroupName = GroupName.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Group]
   }
 }

@@ -14,7 +14,6 @@ object AnonExpires {
   @scala.inline
   def apply(expires: Date, secure: Boolean): AnonExpires = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExpires]
   }
 }

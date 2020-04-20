@@ -34,30 +34,28 @@ trait PpViewType extends js.Object
 
 object PpViewType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppViewHandoutMaster: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppViewHandoutMaster: `4` = this.cast(4)
+  def ppViewMasterThumbnails: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def ppViewMasterThumbnails: `12` = this.cast(12)
+  def ppViewNormal: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def ppViewNormal: `9` = this.cast(9)
+  def ppViewNotesMaster: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppViewNotesMaster: `5` = this.cast(5)
+  def ppViewNotesPage: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppViewNotesPage: `3` = this.cast(3)
+  def ppViewOutline: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ppViewOutline: `6` = this.cast(6)
+  def ppViewPrintPreview: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def ppViewPrintPreview: `10` = this.cast(10)
+  def ppViewSlide: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppViewSlide: `1` = this.cast(1)
+  def ppViewSlideMaster: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppViewSlideMaster: `2` = this.cast(2)
+  def ppViewSlideSorter: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ppViewSlideSorter: `7` = this.cast(7)
+  def ppViewThumbnails: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def ppViewThumbnails: `11` = this.cast(11)
-  @scala.inline
-  def ppViewTitleMaster: `8` = this.cast(8)
+  def ppViewTitleMaster: `8` = 8.asInstanceOf[`8`]
 }
 

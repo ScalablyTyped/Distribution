@@ -20,7 +20,6 @@ object TestRenderTemplateRequest {
   @scala.inline
   def apply(TemplateData: TemplateData, TemplateName: TemplateName): TestRenderTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateData = TemplateData.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestRenderTemplateRequest]
   }
 }

@@ -27,12 +27,12 @@ class ProxyConfiguration protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FProxyConfiguration: IModel = js.native
-  def containerAsRestCallAction(): RestCallAction = js.native
-  def containerAsWebServiceCallAction(): WebServiceCallAction = js.native
+  def containerAsRestCallAction: RestCallAction = js.native
+  def containerAsWebServiceCallAction: WebServiceCallAction = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def hostExpression(): String = js.native
+  def hostExpression: String = js.native
   def hostExpression(newValue: String): js.Any = js.native
   def hostExpressionModel(): js.Any = js.native
   def hostExpressionModel(newValue: Expression): js.Any = js.native
@@ -40,11 +40,11 @@ class ProxyConfiguration protected () extends Element {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   @JSName("hostExpressionModel")
-  def hostExpressionModel_Union(): Expression | Null = js.native
+  def hostExpressionModel_Union: Expression | Null = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def passwordExpression(): String = js.native
+  def passwordExpression: String = js.native
   def passwordExpression(newValue: String): js.Any = js.native
   def passwordExpressionModel(): js.Any = js.native
   def passwordExpressionModel(newValue: Expression): js.Any = js.native
@@ -52,11 +52,11 @@ class ProxyConfiguration protected () extends Element {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   @JSName("passwordExpressionModel")
-  def passwordExpressionModel_Union(): Expression | Null = js.native
+  def passwordExpressionModel_Union: Expression | Null = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def portExpression(): String = js.native
+  def portExpression: String = js.native
   def portExpression(newValue: String): js.Any = js.native
   def portExpressionModel(): js.Any = js.native
   def portExpressionModel(newValue: Expression): js.Any = js.native
@@ -64,11 +64,11 @@ class ProxyConfiguration protected () extends Element {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   @JSName("portExpressionModel")
-  def portExpressionModel_Union(): Expression | Null = js.native
+  def portExpressionModel_Union: Expression | Null = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def useConfigurationExpression(): String = js.native
+  def useConfigurationExpression: String = js.native
   def useConfigurationExpression(newValue: String): js.Any = js.native
   def useConfigurationExpressionModel(): js.Any = js.native
   def useConfigurationExpressionModel(newValue: Expression): js.Any = js.native
@@ -76,11 +76,11 @@ class ProxyConfiguration protected () extends Element {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   @JSName("useConfigurationExpressionModel")
-  def useConfigurationExpressionModel_Union(): Expression | Null = js.native
+  def useConfigurationExpressionModel_Union: Expression | Null = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def usernameExpression(): String = js.native
+  def usernameExpression: String = js.native
   def usernameExpression(newValue: String): js.Any = js.native
   def usernameExpressionModel(): js.Any = js.native
   def usernameExpressionModel(newValue: Expression): js.Any = js.native
@@ -88,7 +88,7 @@ class ProxyConfiguration protected () extends Element {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   @JSName("usernameExpressionModel")
-  def usernameExpressionModel_Union(): Expression | Null = js.native
+  def usernameExpressionModel_Union: Expression | Null = js.native
 }
 
 /* static members */

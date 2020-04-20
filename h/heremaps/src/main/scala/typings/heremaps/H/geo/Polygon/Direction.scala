@@ -16,7 +16,6 @@ object Direction {
   @scala.inline
   def apply(NORTH: Double, SOUTH: Double): Direction = {
     val __obj = js.Dynamic.literal(NORTH = NORTH.asInstanceOf[js.Any], SOUTH = SOUTH.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Direction]
   }
 }

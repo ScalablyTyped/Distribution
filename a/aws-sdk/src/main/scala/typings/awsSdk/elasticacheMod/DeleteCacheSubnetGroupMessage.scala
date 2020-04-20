@@ -16,7 +16,6 @@ object DeleteCacheSubnetGroupMessage {
   @scala.inline
   def apply(CacheSubnetGroupName: String): DeleteCacheSubnetGroupMessage = {
     val __obj = js.Dynamic.literal(CacheSubnetGroupName = CacheSubnetGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCacheSubnetGroupMessage]
   }
 }

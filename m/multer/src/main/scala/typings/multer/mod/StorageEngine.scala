@@ -2,6 +2,7 @@ package typings.multer.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.multer.PartialFile
 import typings.multer.mod._Global_.Express.Multer.File
 import typings.std.Error
@@ -29,7 +30,7 @@ trait StorageEngine extends js.Object {
     * @param callback Callback to specify file information.
     */
   def _handleFile(
-    req: Request_[ParamsDictionary],
+    req: Request_[ParamsDictionary, _, _, Query],
     file: File,
     callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]
   ): Unit
@@ -43,17 +44,20 @@ trait StorageEngine extends js.Object {
     * @param file Object containing information about the processed file.
     * @param callback Callback to indicate completion.
     */
-  def _removeFile(req: Request_[ParamsDictionary], file: File, callback: js.Function1[/* error */ Error, Unit]): Unit
+  def _removeFile(
+    req: Request_[ParamsDictionary, _, _, Query],
+    file: File,
+    callback: js.Function1[/* error */ Error, Unit]
+  ): Unit
 }
 
 object StorageEngine {
   @scala.inline
   def apply(
-    _handleFile: (Request_[ParamsDictionary], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit,
-    _removeFile: (Request_[ParamsDictionary], File, js.Function1[/* error */ Error, Unit]) => Unit
+    _handleFile: (Request_[ParamsDictionary, _, _, Query], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit,
+    _removeFile: (Request_[ParamsDictionary, _, _, Query], File, js.Function1[/* error */ Error, Unit]) => Unit
   ): StorageEngine = {
     val __obj = js.Dynamic.literal(_handleFile = js.Any.fromFunction3(_handleFile), _removeFile = js.Any.fromFunction3(_removeFile))
-  
     __obj.asInstanceOf[StorageEngine]
   }
 }

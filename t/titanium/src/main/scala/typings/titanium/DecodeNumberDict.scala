@@ -24,12 +24,17 @@ trait DecodeNumberDict extends js.Object {
   /**
   	 * The encoding type to use.
   	 */
-  var `type`: String
+  var `type`: java.lang.String
 }
 
 object DecodeNumberDict {
   @scala.inline
-  def apply(source: Buffer, `type`: String, byteOrder: Int | Double = null, position: Int | Double = null): DecodeNumberDict = {
+  def apply(
+    source: Buffer,
+    `type`: java.lang.String,
+    byteOrder: Int | Double = null,
+    position: Int | Double = null
+  ): DecodeNumberDict = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (byteOrder != null) __obj.updateDynamic("byteOrder")(byteOrder.asInstanceOf[js.Any])

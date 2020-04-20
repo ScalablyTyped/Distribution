@@ -20,7 +20,7 @@ object MergeMeshesOptimization extends js.Object {
   /**
     * Gets or sets a boolean which defines if optimization octree has to be updated
     */
-  def UpdateSelectionTree(): Boolean = js.native
+  def UpdateSelectionTree: Boolean = js.native
   /**
     * Gets or sets a boolean which defines if optimization octree has to be updated
     */

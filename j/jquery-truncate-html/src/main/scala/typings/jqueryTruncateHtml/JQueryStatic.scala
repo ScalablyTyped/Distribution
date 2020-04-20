@@ -12,7 +12,6 @@ object JQueryStatic {
   @scala.inline
   def apply(truncate: (String, TruncateOptions) => String): JQueryStatic = {
     val __obj = js.Dynamic.literal(truncate = js.Any.fromFunction2(truncate))
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

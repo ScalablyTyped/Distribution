@@ -16,7 +16,6 @@ object TypeofauthXkeys {
     auth_xkeys_check: (String, String, String, String) => Double
   ): TypeofauthXkeys = {
     val __obj = js.Dynamic.literal(auth_xkeys_add = js.Any.fromFunction4(auth_xkeys_add), auth_xkeys_check = js.Any.fromFunction4(auth_xkeys_check))
-  
     __obj.asInstanceOf[TypeofauthXkeys]
   }
 }

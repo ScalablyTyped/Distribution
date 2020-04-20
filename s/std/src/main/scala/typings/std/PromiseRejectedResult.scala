@@ -15,7 +15,6 @@ object PromiseRejectedResult {
   @scala.inline
   def apply(reason: js.Any, status: rejected): PromiseRejectedResult = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromiseRejectedResult]
   }
 }

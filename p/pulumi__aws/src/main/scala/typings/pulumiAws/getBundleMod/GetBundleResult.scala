@@ -53,7 +53,6 @@ object GetBundleResult {
     userStorages: js.Array[GetBundleUserStorage]
   ): GetBundleResult = {
     val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any], computeTypes = computeTypes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], rootStorages = rootStorages.asInstanceOf[js.Any], userStorages = userStorages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBundleResult]
   }
 }

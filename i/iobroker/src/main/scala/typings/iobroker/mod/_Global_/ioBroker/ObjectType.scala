@@ -13,12 +13,10 @@ trait ObjectType extends js.Object
 
 object ObjectType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def channel: typings.iobroker.iobrokerStrings.channel = "channel".asInstanceOf[typings.iobroker.iobrokerStrings.channel]
   @scala.inline
-  def channel: typings.iobroker.iobrokerStrings.channel = this.cast("channel")
+  def device: typings.iobroker.iobrokerStrings.device = "device".asInstanceOf[typings.iobroker.iobrokerStrings.device]
   @scala.inline
-  def device: typings.iobroker.iobrokerStrings.device = this.cast("device")
-  @scala.inline
-  def state: typings.iobroker.iobrokerStrings.state = this.cast("state")
+  def state: typings.iobroker.iobrokerStrings.state = "state".asInstanceOf[typings.iobroker.iobrokerStrings.state]
 }
 

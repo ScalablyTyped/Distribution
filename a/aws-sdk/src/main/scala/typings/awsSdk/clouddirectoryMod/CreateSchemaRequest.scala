@@ -16,7 +16,6 @@ object CreateSchemaRequest {
   @scala.inline
   def apply(Name: SchemaName): CreateSchemaRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSchemaRequest]
   }
 }

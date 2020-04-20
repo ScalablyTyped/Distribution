@@ -22,7 +22,6 @@ object ICriteriaParts {
     whereClause: String
   ): ICriteriaParts = {
     val __obj = js.Dynamic.literal(noDatabaseProperties = noDatabaseProperties.asInstanceOf[js.Any], rawCriteriaObject = rawCriteriaObject.asInstanceOf[js.Any], selectFromClause = js.Any.fromFunction1(selectFromClause), tables = tables.asInstanceOf[js.Any], whereClause = whereClause.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICriteriaParts]
   }
 }

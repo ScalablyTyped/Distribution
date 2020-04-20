@@ -37,7 +37,6 @@ object Cubehelix {
     start: Double => Cubehelix
   ): Cubehelix = {
     val __obj = js.Dynamic.literal(gamma = js.Any.fromFunction1(gamma), lightness = js.Any.fromFunction1(lightness), rotations = js.Any.fromFunction1(rotations), scale = js.Any.fromFunction0(scale), start = js.Any.fromFunction1(start))
-  
     __obj.asInstanceOf[Cubehelix]
   }
 }

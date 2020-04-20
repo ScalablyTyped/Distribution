@@ -13,7 +13,6 @@ object PickImplhoverable {
   @scala.inline
   def apply(hoverable: Boolean): PickImplhoverable = {
     val __obj = js.Dynamic.literal(hoverable = hoverable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplhoverable]
   }
 }

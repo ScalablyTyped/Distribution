@@ -22,7 +22,6 @@ object SearchResult {
     videos: js.Array[VideoSearchResult]
   ): SearchResult = {
     val __obj = js.Dynamic.literal(accounts = accounts.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], lists = lists.asInstanceOf[js.Any], playlists = playlists.asInstanceOf[js.Any], videos = videos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchResult]
   }
 }

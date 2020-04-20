@@ -36,7 +36,6 @@ object DevicesResource {
     patch: AnonFields => Request_[Device]
   ): DevicesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), issueCommand = js.Any.fromFunction1(issueCommand), list = js.Any.fromFunction1(list), operations = operations.asInstanceOf[js.Any], patch = js.Any.fromFunction1(patch))
-  
     __obj.asInstanceOf[DevicesResource]
   }
 }

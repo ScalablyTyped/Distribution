@@ -19,7 +19,6 @@ object IOwnerToken {
   @scala.inline
   def apply(cancelAll: () => Unit): IOwnerToken = {
     val __obj = js.Dynamic.literal(cancelAll = js.Any.fromFunction0(cancelAll))
-  
     __obj.asInstanceOf[IOwnerToken]
   }
 }

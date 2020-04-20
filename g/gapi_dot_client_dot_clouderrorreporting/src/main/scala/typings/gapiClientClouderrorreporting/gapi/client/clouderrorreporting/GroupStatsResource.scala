@@ -15,7 +15,6 @@ object GroupStatsResource {
   @scala.inline
   def apply(list: AnonAlignment => Request_[ListGroupStatsResponse]): GroupStatsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[GroupStatsResource]
   }
 }

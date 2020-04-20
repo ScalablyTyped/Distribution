@@ -20,7 +20,6 @@ object TaskEndEvent {
   @scala.inline
   def apply(execution: TaskExecution): TaskEndEvent = {
     val __obj = js.Dynamic.literal(execution = execution.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskEndEvent]
   }
 }

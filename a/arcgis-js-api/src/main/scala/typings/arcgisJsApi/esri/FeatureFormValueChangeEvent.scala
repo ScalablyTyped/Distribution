@@ -22,7 +22,6 @@ object FeatureFormValueChangeEvent {
     value: Double | String | js.Any
   ): FeatureFormValueChangeEvent = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatureFormValueChangeEvent]
   }
 }

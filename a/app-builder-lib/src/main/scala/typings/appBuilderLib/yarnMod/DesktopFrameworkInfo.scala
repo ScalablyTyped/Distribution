@@ -13,7 +13,6 @@ object DesktopFrameworkInfo {
   @scala.inline
   def apply(useCustomDist: Boolean, version: String): DesktopFrameworkInfo = {
     val __obj = js.Dynamic.literal(useCustomDist = useCustomDist.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DesktopFrameworkInfo]
   }
 }

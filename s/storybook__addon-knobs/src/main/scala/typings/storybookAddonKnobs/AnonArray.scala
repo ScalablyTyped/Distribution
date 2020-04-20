@@ -22,7 +22,6 @@ object AnonArray {
     select: FunctionComponentSelectTy
   ): AnonArray = {
     val __obj = js.Dynamic.literal(boolean = boolean.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArray]
   }
 }

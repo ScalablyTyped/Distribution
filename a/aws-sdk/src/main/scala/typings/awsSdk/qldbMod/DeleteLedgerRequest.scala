@@ -16,7 +16,6 @@ object DeleteLedgerRequest {
   @scala.inline
   def apply(Name: LedgerName): DeleteLedgerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLedgerRequest]
   }
 }

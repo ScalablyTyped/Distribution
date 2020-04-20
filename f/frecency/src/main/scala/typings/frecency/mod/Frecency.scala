@@ -23,7 +23,6 @@ object Frecency {
     sort: (/* arg */ AnonKeepScores[T]) | (/* arg */ AnonSearchResults[T]) => js.Array[(T with AnonFrecencyScore) | T]
   ): Frecency[T] = {
     val __obj = js.Dynamic.literal(save = js.Any.fromFunction1(save), sort = js.Any.fromFunction1(sort))
-  
     __obj.asInstanceOf[Frecency[T]]
   }
 }

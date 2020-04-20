@@ -16,7 +16,6 @@ object DeleteCostCategoryDefinitionRequest {
   @scala.inline
   def apply(CostCategoryArn: Arn): DeleteCostCategoryDefinitionRequest = {
     val __obj = js.Dynamic.literal(CostCategoryArn = CostCategoryArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCostCategoryDefinitionRequest]
   }
 }

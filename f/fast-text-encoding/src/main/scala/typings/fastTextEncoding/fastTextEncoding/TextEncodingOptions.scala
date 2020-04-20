@@ -15,7 +15,6 @@ object TextEncodingOptions {
   @scala.inline
   def apply(stream: Boolean): TextEncodingOptions = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextEncodingOptions]
   }
 }

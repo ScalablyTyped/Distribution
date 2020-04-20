@@ -23,7 +23,6 @@ object AnonAddBaseLayer {
     removeLayerControl: /* layer */ Layer => Unit
   ): AnonAddBaseLayer = {
     val __obj = js.Dynamic.literal(addBaseLayer = js.Any.fromFunction3(addBaseLayer), addOverlay = js.Any.fromFunction3(addOverlay), removeLayer = js.Any.fromFunction1(removeLayer), removeLayerControl = js.Any.fromFunction1(removeLayerControl))
-  
     __obj.asInstanceOf[AnonAddBaseLayer]
   }
 }

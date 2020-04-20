@@ -14,7 +14,6 @@ object AnonFirstnote {
   @scala.inline
   def apply(first_note: Note, last_note: Note): AnonFirstnote = {
     val __obj = js.Dynamic.literal(first_note = first_note.asInstanceOf[js.Any], last_note = last_note.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFirstnote]
   }
 }

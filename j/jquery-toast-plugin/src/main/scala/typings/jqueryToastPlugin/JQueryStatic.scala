@@ -12,7 +12,6 @@ object JQueryStatic {
   @scala.inline
   def apply(toast: toastOptions => Unit): JQueryStatic = {
     val __obj = js.Dynamic.literal(toast = js.Any.fromFunction1(toast))
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

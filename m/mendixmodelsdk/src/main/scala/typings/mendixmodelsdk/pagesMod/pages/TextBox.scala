@@ -29,21 +29,21 @@ class TextBox protected () extends TextWidget {
   ) = this()
   @JSName("model")
   var model_FTextBox: IModel = js.native
-  def formattingInfo(): FormattingInfo = js.native
+  def formattingInfo: FormattingInfo = js.native
   def formattingInfo(newValue: FormattingInfo): js.Any = js.native
-  def inputMask(): String = js.native
+  def inputMask: String = js.native
   def inputMask(newValue: String): js.Any = js.native
-  def isPasswordBox(): Boolean = js.native
+  def isPasswordBox: Boolean = js.native
   def isPasswordBox(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def keyboardType(): KeyboardType = js.native
+  def keyboardType: KeyboardType = js.native
   def keyboardType(newValue: KeyboardType): js.Any = js.native
   /**
     * In version 8.7.0: introduced
     */
-  def onEnterKeyPressAction(): ClientAction = js.native
+  def onEnterKeyPressAction: ClientAction = js.native
   def onEnterKeyPressAction(newValue: ClientAction): js.Any = js.native
 }
 

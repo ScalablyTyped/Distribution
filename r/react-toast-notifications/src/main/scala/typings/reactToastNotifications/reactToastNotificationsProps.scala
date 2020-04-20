@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait reactToastNotificationsProps {
   type DefaultToastProps = ToastProps
   @scala.inline
-  def DefaultToastContainerProps: ToastContainerProps.type = typings.reactToastNotifications.mod.ToastContainerProps
+  def DefaultToastContainerProps: ToastContainerProps.type = ToastContainerProps
   type DefaultToastContainerProps = ToastContainerProps
   @scala.inline
   def ToastConsumerProps: typings.reactToastNotifications.mod.ToastConsumerProps.type = typings.reactToastNotifications.mod.ToastConsumerProps

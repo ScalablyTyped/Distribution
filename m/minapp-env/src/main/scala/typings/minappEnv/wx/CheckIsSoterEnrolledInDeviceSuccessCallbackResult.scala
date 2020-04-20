@@ -15,7 +15,6 @@ object CheckIsSoterEnrolledInDeviceSuccessCallbackResult {
   @scala.inline
   def apply(errMs: String, isEnrolled: Boolean): CheckIsSoterEnrolledInDeviceSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMs = errMs.asInstanceOf[js.Any], isEnrolled = isEnrolled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckIsSoterEnrolledInDeviceSuccessCallbackResult]
   }
 }

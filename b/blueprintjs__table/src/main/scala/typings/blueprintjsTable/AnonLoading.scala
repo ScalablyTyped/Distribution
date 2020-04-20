@@ -14,7 +14,6 @@ object AnonLoading {
   @scala.inline
   def apply(loading: Boolean, renderMode: RenderMode): AnonLoading = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLoading]
   }
 }

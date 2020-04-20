@@ -24,7 +24,6 @@ object AnonCalendar {
     year: String
   ): AnonCalendar = {
     val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCalendar]
   }
 }

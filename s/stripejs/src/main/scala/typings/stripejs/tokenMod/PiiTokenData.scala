@@ -15,7 +15,6 @@ object PiiTokenData {
   @scala.inline
   def apply(personal_id_number: String): PiiTokenData = {
     val __obj = js.Dynamic.literal(personal_id_number = personal_id_number.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PiiTokenData]
   }
 }

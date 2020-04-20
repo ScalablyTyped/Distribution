@@ -13,7 +13,6 @@ object InvalidPath {
   @scala.inline
   def apply(invalidate: Boolean, path: PathSet): InvalidPath = {
     val __obj = js.Dynamic.literal(invalidate = invalidate.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InvalidPath]
   }
 }

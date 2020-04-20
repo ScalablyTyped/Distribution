@@ -20,7 +20,7 @@ class CSVDelimiter protected () extends Widget {
   /**
     * A signal emitted when the delimiter selection has changed.
     */
-  def delimiterChanged(): ISignal[this.type, String] = js.native
+  def delimiterChanged: ISignal[this.type, String] = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -35,6 +35,6 @@ class CSVDelimiter protected () extends Widget {
   /**
     * The delimiter dropdown menu.
     */
-  def selectNode(): HTMLSelectElement = js.native
+  def selectNode: HTMLSelectElement = js.native
 }
 

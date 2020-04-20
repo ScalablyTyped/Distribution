@@ -12,10 +12,8 @@ trait RTCIceComponent extends js.Object
 
 object RTCIceComponent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def rtcp: typings.std.stdStrings.rtcp = "rtcp".asInstanceOf[typings.std.stdStrings.rtcp]
   @scala.inline
-  def rtcp: typings.std.stdStrings.rtcp = this.cast("rtcp")
-  @scala.inline
-  def rtp: typings.std.stdStrings.rtp = this.cast("rtp")
+  def rtp: typings.std.stdStrings.rtp = "rtp".asInstanceOf[typings.std.stdStrings.rtp]
 }
 

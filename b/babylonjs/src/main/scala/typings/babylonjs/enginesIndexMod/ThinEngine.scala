@@ -95,7 +95,7 @@ object ThinEngine extends js.Object {
   /**
     * Returns the current npm package of the sdk
     */
-  def NpmPackage(): String = js.native
+  def NpmPackage: String = js.native
   /**
     * Queue a new function into the requested animation frame pool (ie. this function will be executed byt the browser for the next frame)
     * @param func - the function to be called
@@ -107,12 +107,12 @@ object ThinEngine extends js.Object {
   /**
     * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
     */
-  def ShadersRepository(): String = js.native
+  def ShadersRepository: String = js.native
   def ShadersRepository(value: String): js.Any = js.native
   /**
     * Returns the current version of the framework
     */
-  def Version(): String = js.native
+  def Version: String = js.native
   /* protected */ def _ConcatenateShader(source: String, defines: Nullable[String]): String = js.native
   /* protected */ def _ConcatenateShader(source: String, defines: Nullable[String], shaderVersion: String): String = js.native
   /**

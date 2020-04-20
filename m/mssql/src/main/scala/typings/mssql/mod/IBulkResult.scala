@@ -12,7 +12,6 @@ object IBulkResult {
   @scala.inline
   def apply(rowsAffected: Double): IBulkResult = {
     val __obj = js.Dynamic.literal(rowsAffected = rowsAffected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBulkResult]
   }
 }

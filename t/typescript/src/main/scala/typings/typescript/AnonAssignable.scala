@@ -15,7 +15,6 @@ object AnonAssignable {
   @scala.inline
   def apply(assignable: Double, identity: Double, strictSubtype: Double, subtype: Double): AnonAssignable = {
     val __obj = js.Dynamic.literal(assignable = assignable.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], strictSubtype = strictSubtype.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAssignable]
   }
 }

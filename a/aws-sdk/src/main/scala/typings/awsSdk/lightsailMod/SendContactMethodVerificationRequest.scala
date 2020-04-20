@@ -16,7 +16,6 @@ object SendContactMethodVerificationRequest {
   @scala.inline
   def apply(protocol: ContactMethodVerificationProtocol): SendContactMethodVerificationRequest = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendContactMethodVerificationRequest]
   }
 }

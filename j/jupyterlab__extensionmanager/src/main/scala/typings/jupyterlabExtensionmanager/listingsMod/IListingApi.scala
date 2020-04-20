@@ -20,7 +20,6 @@ object IListingApi {
     whitelist_uris: js.Array[String]
   ): IListingApi = {
     val __obj = js.Dynamic.literal(blacklist = blacklist.asInstanceOf[js.Any], blacklist_uris = blacklist_uris.asInstanceOf[js.Any], whitelist = whitelist.asInstanceOf[js.Any], whitelist_uris = whitelist_uris.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IListingApi]
   }
 }

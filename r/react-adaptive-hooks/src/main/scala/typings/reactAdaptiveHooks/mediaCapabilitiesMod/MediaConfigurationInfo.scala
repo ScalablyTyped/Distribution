@@ -14,7 +14,6 @@ object MediaConfigurationInfo {
   @scala.inline
   def apply(powerEfficient: Boolean, smooth: Boolean, supported: Boolean): MediaConfigurationInfo = {
     val __obj = js.Dynamic.literal(powerEfficient = powerEfficient.asInstanceOf[js.Any], smooth = smooth.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaConfigurationInfo]
   }
 }

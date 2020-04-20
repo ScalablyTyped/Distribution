@@ -14,7 +14,6 @@ object AnonDataIndex {
   @scala.inline
   def apply[D, K](data: D, index: Double, key: K): AnonDataIndex[D, K] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDataIndex[D, K]]
   }
 }

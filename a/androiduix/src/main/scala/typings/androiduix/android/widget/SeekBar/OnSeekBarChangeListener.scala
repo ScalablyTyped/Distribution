@@ -18,7 +18,6 @@ object OnSeekBarChangeListener {
     onStopTrackingTouch: typings.androiduix.android.widget.SeekBar => Unit
   ): OnSeekBarChangeListener = {
     val __obj = js.Dynamic.literal(onProgressChanged = js.Any.fromFunction3(onProgressChanged), onStartTrackingTouch = js.Any.fromFunction1(onStartTrackingTouch), onStopTrackingTouch = js.Any.fromFunction1(onStopTrackingTouch))
-  
     __obj.asInstanceOf[OnSeekBarChangeListener]
   }
 }

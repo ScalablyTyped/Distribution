@@ -15,7 +15,6 @@ object ojSwipeActionsSettableProperties {
   @scala.inline
   def apply(translations: AnonAriaHideActionsDescription): ojSwipeActionsSettableProperties = {
     val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ojSwipeActionsSettableProperties]
   }
 }

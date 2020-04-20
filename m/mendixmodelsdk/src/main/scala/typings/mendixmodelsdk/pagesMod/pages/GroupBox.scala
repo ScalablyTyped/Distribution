@@ -33,8 +33,8 @@ class GroupBox protected () extends ConditionallyVisibleWidget {
   def caption(): js.Any = js.native
   def caption(newValue: ClientTemplate): js.Any = js.native
   @JSName("caption")
-  def caption_Union(): ClientTemplate | Null = js.native
-  def collapsible(): GroupBoxCollapsible = js.native
+  def caption_Union: ClientTemplate | Null = js.native
+  def collapsible: GroupBoxCollapsible = js.native
   def collapsible(newValue: GroupBoxCollapsible): js.Any = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
@@ -42,11 +42,11 @@ class GroupBox protected () extends ConditionallyVisibleWidget {
     * In version 7.15.0: deleted
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def widgets(): IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

@@ -56,7 +56,6 @@ object tree {
     getOpenState: js.Any => js.Any
   ): tree = {
     val __obj = js.Dynamic.literal(formatAggregate = js.Any.fromFunction3(formatAggregate), formatAtLevel = js.Any.fromFunction6(formatAtLevel), formatIndexes = js.Any.fromFunction2(formatIndexes), getOpenState = js.Any.fromFunction1(getOpenState))
-  
     __obj.asInstanceOf[tree]
   }
 }

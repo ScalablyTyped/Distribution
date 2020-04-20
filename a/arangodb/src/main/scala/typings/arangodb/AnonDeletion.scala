@@ -14,7 +14,6 @@ object AnonDeletion {
   @scala.inline
   def apply(count: Double, deletion: Double, size: Double): AnonDeletion = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], deletion = deletion.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDeletion]
   }
 }

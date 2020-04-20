@@ -19,24 +19,22 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  def all: typings.realm.realmStrings.all = this.cast("all")
+  def all: typings.realm.realmStrings.all = "all".asInstanceOf[typings.realm.realmStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.realm.realmStrings.debug = "debug".asInstanceOf[typings.realm.realmStrings.debug]
   @scala.inline
-  def debug: typings.realm.realmStrings.debug = this.cast("debug")
+  def detail: typings.realm.realmStrings.detail = "detail".asInstanceOf[typings.realm.realmStrings.detail]
   @scala.inline
-  def detail: typings.realm.realmStrings.detail = this.cast("detail")
+  def error: typings.realm.realmStrings.error = "error".asInstanceOf[typings.realm.realmStrings.error]
   @scala.inline
-  def error: typings.realm.realmStrings.error = this.cast("error")
+  def fatal: typings.realm.realmStrings.fatal = "fatal".asInstanceOf[typings.realm.realmStrings.fatal]
   @scala.inline
-  def fatal: typings.realm.realmStrings.fatal = this.cast("fatal")
+  def info: typings.realm.realmStrings.info = "info".asInstanceOf[typings.realm.realmStrings.info]
   @scala.inline
-  def info: typings.realm.realmStrings.info = this.cast("info")
+  def off: typings.realm.realmStrings.off = "off".asInstanceOf[typings.realm.realmStrings.off]
   @scala.inline
-  def off: typings.realm.realmStrings.off = this.cast("off")
+  def trace: typings.realm.realmStrings.trace = "trace".asInstanceOf[typings.realm.realmStrings.trace]
   @scala.inline
-  def trace: typings.realm.realmStrings.trace = this.cast("trace")
-  @scala.inline
-  def warn: typings.realm.realmStrings.warn = this.cast("warn")
+  def warn: typings.realm.realmStrings.warn = "warn".asInstanceOf[typings.realm.realmStrings.warn]
 }
 

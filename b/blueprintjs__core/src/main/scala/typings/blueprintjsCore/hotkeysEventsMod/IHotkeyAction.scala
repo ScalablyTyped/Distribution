@@ -15,7 +15,6 @@ object IHotkeyAction {
   @scala.inline
   def apply(combo: IKeyCombo, props: IHotkeyProps): IHotkeyAction = {
     val __obj = js.Dynamic.literal(combo = combo.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IHotkeyAction]
   }
 }

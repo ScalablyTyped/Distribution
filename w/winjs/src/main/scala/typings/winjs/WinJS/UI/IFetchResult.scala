@@ -46,7 +46,6 @@ object IFetchResult {
     totalCount: Double
   ): IFetchResult[T] = {
     val __obj = js.Dynamic.literal(absoluteIndex = absoluteIndex.asInstanceOf[js.Any], atEnd = atEnd.asInstanceOf[js.Any], atStart = atStart.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFetchResult[T]]
   }
 }

@@ -10,7 +10,7 @@ trait IArguments
   extends /* index */ NumberDictionary[js.Any] {
   var callee: Function = js.native
   /** Iterator */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[_]] = js.native
   var length: Double = js.native
 }

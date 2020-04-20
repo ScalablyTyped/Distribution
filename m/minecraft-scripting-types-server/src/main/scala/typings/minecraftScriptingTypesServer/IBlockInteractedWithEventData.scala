@@ -24,7 +24,6 @@ object IBlockInteractedWithEventData {
   @scala.inline
   def apply(block_position: VectorXYZ, player: IEntity): IBlockInteractedWithEventData = {
     val __obj = js.Dynamic.literal(block_position = block_position.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBlockInteractedWithEventData]
   }
 }

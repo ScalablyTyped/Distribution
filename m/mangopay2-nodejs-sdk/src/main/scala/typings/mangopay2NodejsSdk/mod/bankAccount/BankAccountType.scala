@@ -15,16 +15,14 @@ trait BankAccountType extends js.Object
 
 object BankAccountType {
   @scala.inline
-  def CA: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CA = this.cast("CA")
+  def CA: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CA = "CA".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CA]
   @scala.inline
-  def GB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GB = this.cast("GB")
+  def GB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GB = "GB".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GB]
   @scala.inline
-  def IBAN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IBAN = this.cast("IBAN")
+  def IBAN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IBAN = "IBAN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IBAN]
   @scala.inline
-  def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = this.cast("OTHER")
+  def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
   @scala.inline
-  def US: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.US = this.cast("US")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def US: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.US = "US".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.US]
 }
 

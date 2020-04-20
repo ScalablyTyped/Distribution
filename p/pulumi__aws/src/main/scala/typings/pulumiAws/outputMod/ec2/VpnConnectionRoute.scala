@@ -15,7 +15,6 @@ object VpnConnectionRoute {
   @scala.inline
   def apply(destinationCidrBlock: String, source: String, state: String): VpnConnectionRoute = {
     val __obj = js.Dynamic.literal(destinationCidrBlock = destinationCidrBlock.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpnConnectionRoute]
   }
 }

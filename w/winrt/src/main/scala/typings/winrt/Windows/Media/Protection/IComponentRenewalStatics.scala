@@ -15,7 +15,6 @@ object IComponentRenewalStatics {
     renewSystemComponentsAsync: RevocationAndRenewalInformation => IAsyncOperationWithProgress[RenewalStatus, Double]
   ): IComponentRenewalStatics = {
     val __obj = js.Dynamic.literal(renewSystemComponentsAsync = js.Any.fromFunction1(renewSystemComponentsAsync))
-  
     __obj.asInstanceOf[IComponentRenewalStatics]
   }
 }

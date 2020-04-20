@@ -152,49 +152,49 @@ import scala.scalajs.js.annotation._
 
 trait officeUiFabricReactProps {
   @scala.inline
-  def ActionButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+  def ActionButtonProps: IButtonProps.type = IButtonProps
   type ActionButtonProps = IButtonProps
   @scala.inline
-  def ActivityItemProps: IActivityItemProps.type = typings.officeUiFabricReact.activityItemTypesMod.IActivityItemProps
+  def ActivityItemProps: IActivityItemProps.type = IActivityItemProps
   type ActivityItemProps = IActivityItemProps
   @scala.inline
-  def AnnouncedProps: IAnnouncedProps.type = typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
+  def AnnouncedProps: IAnnouncedProps.type = IAnnouncedProps
   type AnnouncedProps = IAnnouncedProps
   @scala.inline
-  def AnnouncedBaseProps: IAnnouncedProps.type = typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
+  def AnnouncedBaseProps: IAnnouncedProps.type = IAnnouncedProps
   type AnnouncedBaseProps = IAnnouncedProps
   type AnnouncedLazyLoadingExampleProps = IAnnouncedLazyLoadingExampleProps
   @scala.inline
-  def AutofillProps: IAutofillProps.type = typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
+  def AutofillProps: IAutofillProps.type = IAutofillProps
   type AutofillProps = IAutofillProps
   @scala.inline
-  def BaseAutoFillProps: IAutofillProps.type = typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
+  def BaseAutoFillProps: IAutofillProps.type = IAutofillProps
   type BaseAutoFillProps = IAutofillProps
   @scala.inline
-  def BaseButtonProps: IBaseButtonProps.type = typings.officeUiFabricReact.baseButtonMod.IBaseButtonProps
+  def BaseButtonProps: IBaseButtonProps.type = IBaseButtonProps
   type BaseButtonProps = IBaseButtonProps
   @scala.inline
-  def BaseExtendedPeoplePickerProps: IBaseExtendedPickerProps.type = typings.officeUiFabricReact.baseExtendedPickerTypesMod.IBaseExtendedPickerProps
+  def BaseExtendedPeoplePickerProps: IBaseExtendedPickerProps.type = IBaseExtendedPickerProps
   type BaseExtendedPeoplePickerProps = IExtendedPeoplePickerProps
   type BaseFloatingPeoplePickerProps = IPeopleFloatingPickerProps
   type BasePeoplePickerProps = IPeoplePickerProps
   @scala.inline
-  def BasePeopleSelectedItemsListProps: ISelectedPeopleProps.type = typings.officeUiFabricReact.selectedPeopleListMod.ISelectedPeopleProps
+  def BasePeopleSelectedItemsListProps: ISelectedPeopleProps.type = ISelectedPeopleProps
   type BasePeopleSelectedItemsListProps = ISelectedPeopleProps
   @scala.inline
-  def BeakProps: IBeakProps.type = typings.officeUiFabricReact.beakTypesMod.IBeakProps
+  def BeakProps: IBeakProps.type = IBeakProps
   type BeakProps = IBeakProps
   @scala.inline
-  def BreadcrumbProps: IBreadcrumbProps.type = typings.officeUiFabricReact.breadcrumbTypesMod.IBreadcrumbProps
+  def BreadcrumbProps: IBreadcrumbProps.type = IBreadcrumbProps
   type BreadcrumbProps = IBreadcrumbProps
   @scala.inline
-  def BreadcrumbBaseProps: IBreadcrumbProps.type = typings.officeUiFabricReact.breadcrumbTypesMod.IBreadcrumbProps
+  def BreadcrumbBaseProps: IBreadcrumbProps.type = IBreadcrumbProps
   type BreadcrumbBaseProps = IBreadcrumbProps
   @scala.inline
-  def ButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+  def ButtonProps: IButtonProps.type = IButtonProps
   type ButtonProps = IButtonProps
   @scala.inline
-  def ButtonActionExampleProps: IButtonExampleProps.type = typings.officeUiFabricReact.buttonActionExampleMod.IButtonExampleProps
+  def ButtonActionExampleProps: IButtonExampleProps.type = IButtonExampleProps
   type ButtonActionExampleProps = IButtonExampleProps
   @scala.inline
   def ButtonAnchorExampleProps: typings.officeUiFabricReact.buttonAnchorExampleMod.IButtonExampleProps.type = typings.officeUiFabricReact.buttonAnchorExampleMod.IButtonExampleProps
@@ -233,695 +233,695 @@ trait officeUiFabricReactProps {
   def ButtonToggleExampleProps: typings.officeUiFabricReact.buttonToggleExampleMod.IButtonExampleProps.type = typings.officeUiFabricReact.buttonToggleExampleMod.IButtonExampleProps
   type ButtonToggleExampleProps = typings.officeUiFabricReact.buttonToggleExampleMod.IButtonExampleProps
   @scala.inline
-  def CalendarProps: ICalendarProps.type = typings.officeUiFabricReact.calendarTypesMod.ICalendarProps
+  def CalendarProps: ICalendarProps.type = ICalendarProps
   type CalendarProps = ICalendarProps
   @scala.inline
-  def CalendarButtonExampleProps: ICalendarButtonExampleProps.type = typings.officeUiFabricReact.calendarButtonExampleMod.ICalendarButtonExampleProps
+  def CalendarButtonExampleProps: ICalendarButtonExampleProps.type = ICalendarButtonExampleProps
   type CalendarButtonExampleProps = ICalendarButtonExampleProps
   type CalendarDayProps = ICalendarDayProps
   @scala.inline
-  def CalendarInlineExampleProps: ICalendarInlineExampleProps.type = typings.officeUiFabricReact.calendarInlineExampleMod.ICalendarInlineExampleProps
+  def CalendarInlineExampleProps: ICalendarInlineExampleProps.type = ICalendarInlineExampleProps
   type CalendarInlineExampleProps = ICalendarInlineExampleProps
   @scala.inline
-  def CalendarMonthProps: ICalendarMonthProps.type = typings.officeUiFabricReact.calendarMonthMod.ICalendarMonthProps
+  def CalendarMonthProps: ICalendarMonthProps.type = ICalendarMonthProps
   type CalendarMonthProps = ICalendarMonthProps
   @scala.inline
-  def CalendarYearProps: ICalendarYearProps.type = typings.officeUiFabricReact.calendarYearMod.ICalendarYearProps
+  def CalendarYearProps: ICalendarYearProps.type = ICalendarYearProps
   type CalendarYearProps = ICalendarYearProps
   @scala.inline
-  def CalloutProps: ICalloutProps.type = typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
+  def CalloutProps: ICalloutProps.type = ICalloutProps
   type CalloutProps = ICalloutProps
   @scala.inline
-  def CalloutContentProps: ICalloutProps.type = typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
+  def CalloutContentProps: ICalloutProps.type = ICalloutProps
   type CalloutContentProps = ICalloutProps
   @scala.inline
-  def CalloutContentBaseProps: ICalloutProps.type = typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
+  def CalloutContentBaseProps: ICalloutProps.type = ICalloutProps
   type CalloutContentBaseProps = ICalloutProps
   @scala.inline
-  def CardCalloutProps: ICardCalloutProps.type = typings.officeUiFabricReact.cardCalloutMod.ICardCalloutProps
+  def CardCalloutProps: ICardCalloutProps.type = ICardCalloutProps
   type CardCalloutProps = ICardCalloutProps
   @scala.inline
-  def CheckProps: ICheckProps.type = typings.officeUiFabricReact.checkTypesMod.ICheckProps
+  def CheckProps: ICheckProps.type = ICheckProps
   type CheckProps = ICheckProps
   @scala.inline
-  def CheckBaseProps: ICheckProps.type = typings.officeUiFabricReact.checkTypesMod.ICheckProps
+  def CheckBaseProps: ICheckProps.type = ICheckProps
   type CheckBaseProps = ICheckProps
   @scala.inline
-  def CheckboxProps: ICheckboxProps.type = typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
+  def CheckboxProps: ICheckboxProps.type = ICheckboxProps
   type CheckboxProps = ICheckboxProps
   @scala.inline
-  def CheckboxBaseProps: ICheckboxProps.type = typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
+  def CheckboxBaseProps: ICheckboxProps.type = ICheckboxProps
   type CheckboxBaseProps = ICheckboxProps
   @scala.inline
-  def ChoiceGroupProps: IChoiceGroupProps.type = typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupProps
+  def ChoiceGroupProps: IChoiceGroupProps.type = IChoiceGroupProps
   type ChoiceGroupProps = IChoiceGroupProps
   @scala.inline
-  def ChoiceGroupBaseProps: IChoiceGroupProps.type = typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupProps
+  def ChoiceGroupBaseProps: IChoiceGroupProps.type = IChoiceGroupProps
   type ChoiceGroupBaseProps = IChoiceGroupProps
   @scala.inline
-  def ChoiceGroupOptionProps: IChoiceGroupOptionProps.type = typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps
+  def ChoiceGroupOptionProps: IChoiceGroupOptionProps.type = IChoiceGroupOptionProps
   type ChoiceGroupOptionProps = IChoiceGroupOptionProps
   @scala.inline
-  def ChoiceGroupOptionBaseProps: IChoiceGroupOptionProps.type = typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps
+  def ChoiceGroupOptionBaseProps: IChoiceGroupOptionProps.type = IChoiceGroupOptionProps
   type ChoiceGroupOptionBaseProps = IChoiceGroupOptionProps
   @scala.inline
-  def CoachmarkProps: ICoachmarkProps.type = typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
+  def CoachmarkProps: ICoachmarkProps.type = ICoachmarkProps
   type CoachmarkProps = ICoachmarkProps
   @scala.inline
-  def CoachmarkBaseProps: ICoachmarkProps.type = typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
+  def CoachmarkBaseProps: ICoachmarkProps.type = ICoachmarkProps
   type CoachmarkBaseProps = ICoachmarkProps
   @scala.inline
-  def ColorPickerProps: IColorPickerProps.type = typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps
+  def ColorPickerProps: IColorPickerProps.type = IColorPickerProps
   type ColorPickerProps = IColorPickerProps
   @scala.inline
-  def ColorPickerBaseProps: IColorPickerProps.type = typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps
+  def ColorPickerBaseProps: IColorPickerProps.type = IColorPickerProps
   type ColorPickerBaseProps = IColorPickerProps
   @scala.inline
-  def ColorPickerGridCellProps: IColorPickerGridCellProps.type = typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps
+  def ColorPickerGridCellProps: IColorPickerGridCellProps.type = IColorPickerGridCellProps
   type ColorPickerGridCellProps = IColorPickerGridCellProps
   @scala.inline
-  def ColorPickerGridCellBaseProps: IColorPickerGridCellProps.type = typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps
+  def ColorPickerGridCellBaseProps: IColorPickerGridCellProps.type = IColorPickerGridCellProps
   type ColorPickerGridCellBaseProps = IColorPickerGridCellProps
   @scala.inline
-  def ColorRectangleProps: IColorRectangleProps.type = typings.officeUiFabricReact.colorRectangleTypesMod.IColorRectangleProps
+  def ColorRectangleProps: IColorRectangleProps.type = IColorRectangleProps
   type ColorRectangleProps = IColorRectangleProps
   @scala.inline
-  def ColorRectangleBaseProps: IColorRectangleProps.type = typings.officeUiFabricReact.colorRectangleTypesMod.IColorRectangleProps
+  def ColorRectangleBaseProps: IColorRectangleProps.type = IColorRectangleProps
   type ColorRectangleBaseProps = IColorRectangleProps
   @scala.inline
-  def ColorSliderProps: IColorSliderProps.type = typings.officeUiFabricReact.colorSliderTypesMod.IColorSliderProps
+  def ColorSliderProps: IColorSliderProps.type = IColorSliderProps
   type ColorSliderProps = IColorSliderProps
   @scala.inline
-  def ColorSliderBaseProps: IColorSliderProps.type = typings.officeUiFabricReact.colorSliderTypesMod.IColorSliderProps
+  def ColorSliderBaseProps: IColorSliderProps.type = IColorSliderProps
   type ColorSliderBaseProps = IColorSliderProps
   @scala.inline
-  def ComboBoxProps: IComboBoxProps.type = typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxProps
+  def ComboBoxProps: IComboBoxProps.type = IComboBoxProps
   type ComboBoxProps = IComboBoxProps
   @scala.inline
-  def CommandBarProps: ICommandBarProps.type = typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
+  def CommandBarProps: ICommandBarProps.type = ICommandBarProps
   type CommandBarProps = ICommandBarProps
   @scala.inline
-  def CommandBarBaseProps: ICommandBarProps.type = typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
+  def CommandBarBaseProps: ICommandBarProps.type = ICommandBarProps
   type CommandBarBaseProps = ICommandBarProps
   @scala.inline
-  def CommandBarButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+  def CommandBarButtonProps: IButtonProps.type = IButtonProps
   type CommandBarButtonProps = IButtonProps
   type CompactPeoplePickerProps = IPeoplePickerProps
   type CompactPeoplePickerBaseProps = IPeoplePickerProps
   @scala.inline
-  def CompoundButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+  def CompoundButtonProps: IButtonProps.type = IButtonProps
   type CompoundButtonProps = IButtonProps
   @scala.inline
-  def ContextualMenuProps: IContextualMenuProps.type = typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
+  def ContextualMenuProps: IContextualMenuProps.type = IContextualMenuProps
   type ContextualMenuProps = IContextualMenuProps
   @scala.inline
-  def ContextualMenuAnchorProps: IContextualMenuItemWrapperProps.type = typings.officeUiFabricReact.contextualMenuItemWrapperTypesMod.IContextualMenuItemWrapperProps
+  def ContextualMenuAnchorProps: IContextualMenuItemWrapperProps.type = IContextualMenuItemWrapperProps
   type ContextualMenuAnchorProps = IContextualMenuItemWrapperProps
   @scala.inline
-  def ContextualMenuBaseProps: IContextualMenuProps.type = typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
+  def ContextualMenuBaseProps: IContextualMenuProps.type = IContextualMenuProps
   type ContextualMenuBaseProps = IContextualMenuProps
   @scala.inline
-  def ContextualMenuButtonProps: IContextualMenuItemWrapperProps.type = typings.officeUiFabricReact.contextualMenuItemWrapperTypesMod.IContextualMenuItemWrapperProps
+  def ContextualMenuButtonProps: IContextualMenuItemWrapperProps.type = IContextualMenuItemWrapperProps
   type ContextualMenuButtonProps = IContextualMenuItemWrapperProps
   @scala.inline
-  def ContextualMenuItemProps: IContextualMenuItemProps.type = typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps
+  def ContextualMenuItemProps: IContextualMenuItemProps.type = IContextualMenuItemProps
   type ContextualMenuItemProps = IContextualMenuItemProps
   @scala.inline
-  def ContextualMenuItemBaseProps: IContextualMenuItemProps.type = typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps
+  def ContextualMenuItemBaseProps: IContextualMenuItemProps.type = IContextualMenuItemProps
   type ContextualMenuItemBaseProps = IContextualMenuItemProps
   @scala.inline
-  def ContextualMenuItemWrapperProps: IContextualMenuItemWrapperProps.type = typings.officeUiFabricReact.contextualMenuItemWrapperTypesMod.IContextualMenuItemWrapperProps
+  def ContextualMenuItemWrapperProps: IContextualMenuItemWrapperProps.type = IContextualMenuItemWrapperProps
   type ContextualMenuItemWrapperProps = IContextualMenuItemWrapperProps
   @scala.inline
-  def ContextualMenuSplitButtonProps: IContextualMenuItemWrapperProps.type = typings.officeUiFabricReact.contextualMenuItemWrapperTypesMod.IContextualMenuItemWrapperProps
+  def ContextualMenuSplitButtonProps: IContextualMenuItemWrapperProps.type = IContextualMenuItemWrapperProps
   type ContextualMenuSplitButtonProps = IContextualMenuItemWrapperProps
   type CustomizerProps = ICustomizerProps
   @scala.inline
-  def DatePickerProps: IDatePickerProps.type = typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps
+  def DatePickerProps: IDatePickerProps.type = IDatePickerProps
   type DatePickerProps = IDatePickerProps
   @scala.inline
-  def DatePickerBaseProps: IDatePickerProps.type = typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps
+  def DatePickerBaseProps: IDatePickerProps.type = IDatePickerProps
   type DatePickerBaseProps = IDatePickerProps
   @scala.inline
-  def DefaultButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+  def DefaultButtonProps: IButtonProps.type = IButtonProps
   type DefaultButtonProps = IButtonProps
   type DelayedRenderProps = IDelayedRenderProps
   @scala.inline
-  def DetailsColumnProps: IDetailsColumnProps.type = typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
+  def DetailsColumnProps: IDetailsColumnProps.type = IDetailsColumnProps
   type DetailsColumnProps = IDetailsColumnProps
   @scala.inline
-  def DetailsColumnBaseProps: IDetailsColumnProps.type = typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
+  def DetailsColumnBaseProps: IDetailsColumnProps.type = IDetailsColumnProps
   type DetailsColumnBaseProps = IDetailsColumnProps
   @scala.inline
-  def DetailsHeaderProps: IDetailsHeaderBaseProps.type = typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
+  def DetailsHeaderProps: IDetailsHeaderBaseProps.type = IDetailsHeaderBaseProps
   type DetailsHeaderProps = IDetailsHeaderBaseProps
   @scala.inline
-  def DetailsHeaderBaseProps: IDetailsHeaderBaseProps.type = typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
+  def DetailsHeaderBaseProps: IDetailsHeaderBaseProps.type = IDetailsHeaderBaseProps
   type DetailsHeaderBaseProps = IDetailsHeaderBaseProps
   @scala.inline
-  def DetailsListProps: IDetailsListProps.type = typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps
+  def DetailsListProps: IDetailsListProps.type = IDetailsListProps
   type DetailsListProps = IDetailsListProps
   @scala.inline
-  def DetailsListBaseProps: IDetailsListProps.type = typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps
+  def DetailsListBaseProps: IDetailsListProps.type = IDetailsListProps
   type DetailsListBaseProps = IDetailsListProps
   @scala.inline
-  def DetailsRowProps: IDetailsRowBaseProps.type = typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps
+  def DetailsRowProps: IDetailsRowBaseProps.type = IDetailsRowBaseProps
   type DetailsRowProps = IDetailsRowBaseProps
   @scala.inline
-  def DetailsRowBaseProps: IDetailsRowBaseProps.type = typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps
+  def DetailsRowBaseProps: IDetailsRowBaseProps.type = IDetailsRowBaseProps
   type DetailsRowBaseProps = IDetailsRowBaseProps
   @scala.inline
-  def DetailsRowCheckProps: IDetailsRowCheckProps.type = typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckProps
+  def DetailsRowCheckProps: IDetailsRowCheckProps.type = IDetailsRowCheckProps
   type DetailsRowCheckProps = IDetailsRowCheckProps
   @scala.inline
-  def DetailsRowFieldsProps: IDetailsRowFieldsProps.type = typings.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps
+  def DetailsRowFieldsProps: IDetailsRowFieldsProps.type = IDetailsRowFieldsProps
   type DetailsRowFieldsProps = IDetailsRowFieldsProps
   @scala.inline
-  def DialogProps: IDialogProps.type = typings.officeUiFabricReact.dialogTypesMod.IDialogProps
+  def DialogProps: IDialogProps.type = IDialogProps
   type DialogProps = IDialogProps
   @scala.inline
-  def DialogBaseProps: IDialogProps.type = typings.officeUiFabricReact.dialogTypesMod.IDialogProps
+  def DialogBaseProps: IDialogProps.type = IDialogProps
   type DialogBaseProps = IDialogProps
   @scala.inline
-  def DialogContentProps: IDialogContentProps.type = typings.officeUiFabricReact.dialogContentTypesMod.IDialogContentProps
+  def DialogContentProps: IDialogContentProps.type = IDialogContentProps
   type DialogContentProps = IDialogContentProps
   @scala.inline
-  def DialogContentBaseProps: IDialogContentProps.type = typings.officeUiFabricReact.dialogContentTypesMod.IDialogContentProps
+  def DialogContentBaseProps: IDialogContentProps.type = IDialogContentProps
   type DialogContentBaseProps = IDialogContentProps
   @scala.inline
-  def DialogFooterProps: IDialogFooterProps.type = typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps
+  def DialogFooterProps: IDialogFooterProps.type = IDialogFooterProps
   type DialogFooterProps = IDialogFooterProps
   @scala.inline
-  def DialogFooterBaseProps: IDialogFooterProps.type = typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps
+  def DialogFooterBaseProps: IDialogFooterProps.type = IDialogFooterProps
   type DialogFooterBaseProps = IDialogFooterProps
   @scala.inline
-  def DocumentCardProps: IDocumentCardProps.type = typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps
+  def DocumentCardProps: IDocumentCardProps.type = IDocumentCardProps
   type DocumentCardProps = IDocumentCardProps
   @scala.inline
-  def DocumentCardActionsProps: IDocumentCardActionsProps.type = typings.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsProps
+  def DocumentCardActionsProps: IDocumentCardActionsProps.type = IDocumentCardActionsProps
   type DocumentCardActionsProps = IDocumentCardActionsProps
   @scala.inline
-  def DocumentCardActionsBaseProps: IDocumentCardActionsProps.type = typings.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsProps
+  def DocumentCardActionsBaseProps: IDocumentCardActionsProps.type = IDocumentCardActionsProps
   type DocumentCardActionsBaseProps = IDocumentCardActionsProps
   @scala.inline
-  def DocumentCardActivityProps: IDocumentCardActivityProps.type = typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardActivityProps
+  def DocumentCardActivityProps: IDocumentCardActivityProps.type = IDocumentCardActivityProps
   type DocumentCardActivityProps = IDocumentCardActivityProps
   @scala.inline
-  def DocumentCardActivityBaseProps: IDocumentCardActivityProps.type = typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardActivityProps
+  def DocumentCardActivityBaseProps: IDocumentCardActivityProps.type = IDocumentCardActivityProps
   type DocumentCardActivityBaseProps = IDocumentCardActivityProps
   @scala.inline
-  def DocumentCardBaseProps: IDocumentCardProps.type = typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps
+  def DocumentCardBaseProps: IDocumentCardProps.type = IDocumentCardProps
   type DocumentCardBaseProps = IDocumentCardProps
   @scala.inline
-  def DocumentCardDetailsProps: IDocumentCardDetailsProps.type = typings.officeUiFabricReact.documentCardDetailsTypesMod.IDocumentCardDetailsProps
+  def DocumentCardDetailsProps: IDocumentCardDetailsProps.type = IDocumentCardDetailsProps
   type DocumentCardDetailsProps = IDocumentCardDetailsProps
   @scala.inline
-  def DocumentCardDetailsBaseProps: IDocumentCardDetailsProps.type = typings.officeUiFabricReact.documentCardDetailsTypesMod.IDocumentCardDetailsProps
+  def DocumentCardDetailsBaseProps: IDocumentCardDetailsProps.type = IDocumentCardDetailsProps
   type DocumentCardDetailsBaseProps = IDocumentCardDetailsProps
   @scala.inline
-  def DocumentCardImageProps: IDocumentCardImageProps.type = typings.officeUiFabricReact.documentCardImageTypesMod.IDocumentCardImageProps
+  def DocumentCardImageProps: IDocumentCardImageProps.type = IDocumentCardImageProps
   type DocumentCardImageProps = IDocumentCardImageProps
   @scala.inline
-  def DocumentCardImageBaseProps: IDocumentCardImageProps.type = typings.officeUiFabricReact.documentCardImageTypesMod.IDocumentCardImageProps
+  def DocumentCardImageBaseProps: IDocumentCardImageProps.type = IDocumentCardImageProps
   type DocumentCardImageBaseProps = IDocumentCardImageProps
   @scala.inline
-  def DocumentCardLocationProps: IDocumentCardLocationProps.type = typings.officeUiFabricReact.documentCardLocationTypesMod.IDocumentCardLocationProps
+  def DocumentCardLocationProps: IDocumentCardLocationProps.type = IDocumentCardLocationProps
   type DocumentCardLocationProps = IDocumentCardLocationProps
   @scala.inline
-  def DocumentCardLocationBaseProps: IDocumentCardLocationProps.type = typings.officeUiFabricReact.documentCardLocationTypesMod.IDocumentCardLocationProps
+  def DocumentCardLocationBaseProps: IDocumentCardLocationProps.type = IDocumentCardLocationProps
   type DocumentCardLocationBaseProps = IDocumentCardLocationProps
   @scala.inline
-  def DocumentCardLogoProps: IDocumentCardLogoProps.type = typings.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps
+  def DocumentCardLogoProps: IDocumentCardLogoProps.type = IDocumentCardLogoProps
   type DocumentCardLogoProps = IDocumentCardLogoProps
   @scala.inline
-  def DocumentCardLogoBaseProps: IDocumentCardLogoProps.type = typings.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps
+  def DocumentCardLogoBaseProps: IDocumentCardLogoProps.type = IDocumentCardLogoProps
   type DocumentCardLogoBaseProps = IDocumentCardLogoProps
   @scala.inline
-  def DocumentCardPreviewProps: IDocumentCardPreviewProps.type = typings.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewProps
+  def DocumentCardPreviewProps: IDocumentCardPreviewProps.type = IDocumentCardPreviewProps
   type DocumentCardPreviewProps = IDocumentCardPreviewProps
   @scala.inline
-  def DocumentCardPreviewBaseProps: IDocumentCardPreviewProps.type = typings.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewProps
+  def DocumentCardPreviewBaseProps: IDocumentCardPreviewProps.type = IDocumentCardPreviewProps
   type DocumentCardPreviewBaseProps = IDocumentCardPreviewProps
   @scala.inline
-  def DocumentCardStatusProps: IDocumentCardStatusProps.type = typings.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps
+  def DocumentCardStatusProps: IDocumentCardStatusProps.type = IDocumentCardStatusProps
   type DocumentCardStatusProps = IDocumentCardStatusProps
   @scala.inline
-  def DocumentCardStatusBaseProps: IDocumentCardStatusProps.type = typings.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps
+  def DocumentCardStatusBaseProps: IDocumentCardStatusProps.type = IDocumentCardStatusProps
   type DocumentCardStatusBaseProps = IDocumentCardStatusProps
   @scala.inline
-  def DocumentCardTitleProps: IDocumentCardTitleProps.type = typings.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps
+  def DocumentCardTitleProps: IDocumentCardTitleProps.type = IDocumentCardTitleProps
   type DocumentCardTitleProps = IDocumentCardTitleProps
   @scala.inline
-  def DocumentCardTitleBaseProps: IDocumentCardTitleProps.type = typings.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps
+  def DocumentCardTitleBaseProps: IDocumentCardTitleProps.type = IDocumentCardTitleProps
   type DocumentCardTitleBaseProps = IDocumentCardTitleProps
   @scala.inline
-  def DraggableZoneProps: IDraggableZoneProps.type = typings.officeUiFabricReact.draggableZoneTypesMod.IDraggableZoneProps
+  def DraggableZoneProps: IDraggableZoneProps.type = IDraggableZoneProps
   type DraggableZoneProps = IDraggableZoneProps
   @scala.inline
-  def DropdownProps: IDropdownProps.type = typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps
+  def DropdownProps: IDropdownProps.type = IDropdownProps
   type DropdownProps = IDropdownProps
   @scala.inline
-  def DropdownBaseProps: IDropdownInternalProps.type = typings.officeUiFabricReact.dropdownBaseMod.IDropdownInternalProps
+  def DropdownBaseProps: IDropdownInternalProps.type = IDropdownInternalProps
   type DropdownBaseProps = IDropdownInternalProps
   @scala.inline
-  def EditingItemProps: IEditingSelectedPeopleItemProps.type = typings.officeUiFabricReact.editingItemTypesMod.IEditingSelectedPeopleItemProps
+  def EditingItemProps: IEditingSelectedPeopleItemProps.type = IEditingSelectedPeopleItemProps
   type EditingItemProps = IEditingSelectedPeopleItemProps
   @scala.inline
-  def ExpandingCardProps: IExpandingCardProps.type = typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
+  def ExpandingCardProps: IExpandingCardProps.type = IExpandingCardProps
   type ExpandingCardProps = IExpandingCardProps
   @scala.inline
-  def ExpandingCardBaseProps: IExpandingCardProps.type = typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
+  def ExpandingCardBaseProps: IExpandingCardProps.type = IExpandingCardProps
   type ExpandingCardBaseProps = IExpandingCardProps
   @scala.inline
-  def ExtendedPeoplePickerProps: IBaseExtendedPickerProps.type = typings.officeUiFabricReact.baseExtendedPickerTypesMod.IBaseExtendedPickerProps
+  def ExtendedPeoplePickerProps: IBaseExtendedPickerProps.type = IBaseExtendedPickerProps
   type ExtendedPeoplePickerProps = IExtendedPeoplePickerProps
   @scala.inline
-  def ExtendedSelectedItemProps: ISelectedPeopleItemProps.type = typings.officeUiFabricReact.selectedPeopleListMod.ISelectedPeopleItemProps
+  def ExtendedSelectedItemProps: ISelectedPeopleItemProps.type = ISelectedPeopleItemProps
   type ExtendedSelectedItemProps = ISelectedPeopleItemProps
   @scala.inline
-  def FabricProps: IFabricProps.type = typings.officeUiFabricReact.fabricTypesMod.IFabricProps
+  def FabricProps: IFabricProps.type = IFabricProps
   type FabricProps = IFabricProps
   @scala.inline
-  def FabricBaseProps: IFabricProps.type = typings.officeUiFabricReact.fabricTypesMod.IFabricProps
+  def FabricBaseProps: IFabricProps.type = IFabricProps
   type FabricBaseProps = IFabricProps
   @scala.inline
-  def FacepileProps: IFacepileProps.type = typings.officeUiFabricReact.facepileTypesMod.IFacepileProps
+  def FacepileProps: IFacepileProps.type = IFacepileProps
   type FacepileProps = IFacepileProps
   @scala.inline
-  def FacepileBaseProps: IFacepileProps.type = typings.officeUiFabricReact.facepileTypesMod.IFacepileProps
+  def FacepileBaseProps: IFacepileProps.type = IFacepileProps
   type FacepileBaseProps = IFacepileProps
   @scala.inline
-  def FacepileButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+  def FacepileButtonProps: IButtonProps.type = IButtonProps
   type FacepileButtonProps = IButtonProps
   type FloatingPeoplePickerProps = IPeopleFloatingPickerProps
   type FocusRectsProps = AnonRootRef
   @scala.inline
-  def FocusTrapCalloutProps: IFocusTrapCalloutProps.type = typings.officeUiFabricReact.focusTrapCalloutTypesMod.IFocusTrapCalloutProps
+  def FocusTrapCalloutProps: IFocusTrapCalloutProps.type = IFocusTrapCalloutProps
   type FocusTrapCalloutProps = IFocusTrapCalloutProps
   @scala.inline
-  def FocusTrapZoneProps: IFocusTrapZoneProps.type = typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
+  def FocusTrapZoneProps: IFocusTrapZoneProps.type = IFocusTrapZoneProps
   type FocusTrapZoneProps = IFocusTrapZoneProps
   type FocusZoneProps = IFocusZoneProps
   @scala.inline
-  def FontIconProps: IFontIconProps.type = typings.officeUiFabricReact.iconTypesMod.IFontIconProps
+  def FontIconProps: IFontIconProps.type = IFontIconProps
   type FontIconProps = IFontIconProps
   @scala.inline
-  def GridProps: IGridProps.type = typings.officeUiFabricReact.gridTypesMod.IGridProps
+  def GridProps: IGridProps.type = IGridProps
   type GridProps = IGridProps
   @scala.inline
-  def GridBaseProps: IGridProps.type = typings.officeUiFabricReact.gridTypesMod.IGridProps
+  def GridBaseProps: IGridProps.type = IGridProps
   type GridBaseProps = IGridProps
   @scala.inline
-  def GroupFooterProps: IGroupFooterProps.type = typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps
+  def GroupFooterProps: IGroupFooterProps.type = IGroupFooterProps
   type GroupFooterProps = IGroupFooterProps
   @scala.inline
-  def GroupFooterBaseProps: IGroupFooterProps.type = typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps
+  def GroupFooterBaseProps: IGroupFooterProps.type = IGroupFooterProps
   type GroupFooterBaseProps = IGroupFooterProps
   @scala.inline
-  def GroupHeaderProps: IGroupHeaderProps.type = typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
+  def GroupHeaderProps: IGroupHeaderProps.type = IGroupHeaderProps
   type GroupHeaderProps = IGroupHeaderProps
   @scala.inline
-  def GroupHeaderBaseProps: IGroupHeaderProps.type = typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
+  def GroupHeaderBaseProps: IGroupHeaderProps.type = IGroupHeaderProps
   type GroupHeaderBaseProps = IGroupHeaderProps
   @scala.inline
-  def GroupShowAllProps: IGroupShowAllProps.type = typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps
+  def GroupShowAllProps: IGroupShowAllProps.type = IGroupShowAllProps
   type GroupShowAllProps = IGroupShowAllProps
   @scala.inline
-  def GroupShowAllBaseProps: IGroupShowAllProps.type = typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps
+  def GroupShowAllBaseProps: IGroupShowAllProps.type = IGroupShowAllProps
   type GroupShowAllBaseProps = IGroupShowAllProps
   @scala.inline
-  def GroupSpacerProps: IGroupSpacerProps.type = typings.officeUiFabricReact.groupSpacerTypesMod.IGroupSpacerProps
+  def GroupSpacerProps: IGroupSpacerProps.type = IGroupSpacerProps
   type GroupSpacerProps = IGroupSpacerProps
   type GroupedListProps = IGroupedListProps
   type GroupedListBaseProps = IGroupedListProps
   type GroupedListSectionProps = IGroupedListSectionProps
   @scala.inline
-  def HoverCardProps: IHoverCardProps.type = typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps
+  def HoverCardProps: IHoverCardProps.type = IHoverCardProps
   type HoverCardProps = IHoverCardProps
   @scala.inline
-  def HoverCardBaseProps: IHoverCardProps.type = typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps
+  def HoverCardBaseProps: IHoverCardProps.type = IHoverCardProps
   type HoverCardBaseProps = IHoverCardProps
   @scala.inline
-  def IconProps: IIconProps.type = typings.officeUiFabricReact.iconTypesMod.IIconProps
+  def IconProps: IIconProps.type = IIconProps
   type IconProps = IIconProps
   @scala.inline
-  def IconBaseProps: IIconProps.type = typings.officeUiFabricReact.iconTypesMod.IIconProps
+  def IconBaseProps: IIconProps.type = IIconProps
   type IconBaseProps = IIconProps
   @scala.inline
-  def IconButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+  def IconButtonProps: IButtonProps.type = IButtonProps
   type IconButtonProps = IButtonProps
   @scala.inline
-  def ImageProps: IImageProps.type = typings.officeUiFabricReact.imageTypesMod.IImageProps
+  def ImageProps: IImageProps.type = IImageProps
   type ImageProps = IImageProps
   @scala.inline
-  def ImageBaseProps: IImageProps.type = typings.officeUiFabricReact.imageTypesMod.IImageProps
+  def ImageBaseProps: IImageProps.type = IImageProps
   type ImageBaseProps = IImageProps
   @scala.inline
-  def ImageIconProps: IImageIconProps.type = typings.officeUiFabricReact.iconTypesMod.IImageIconProps
+  def ImageIconProps: IImageIconProps.type = IImageIconProps
   type ImageIconProps = IImageIconProps
   @scala.inline
-  def KeytipProps: IKeytipProps.type = typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
+  def KeytipProps: IKeytipProps.type = IKeytipProps
   type KeytipProps = IKeytipProps
   @scala.inline
-  def KeytipContentProps: IKeytipProps.type = typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
+  def KeytipContentProps: IKeytipProps.type = IKeytipProps
   type KeytipContentProps = IKeytipProps
   @scala.inline
-  def KeytipContentBaseProps: IKeytipProps.type = typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
+  def KeytipContentBaseProps: IKeytipProps.type = IKeytipProps
   type KeytipContentBaseProps = IKeytipProps
   @scala.inline
-  def KeytipLayerProps: IKeytipLayerProps.type = typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
+  def KeytipLayerProps: IKeytipLayerProps.type = IKeytipLayerProps
   type KeytipLayerProps = IKeytipLayerProps
   @scala.inline
-  def KeytipLayerBaseProps: IKeytipLayerProps.type = typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
+  def KeytipLayerBaseProps: IKeytipLayerProps.type = IKeytipLayerProps
   type KeytipLayerBaseProps = IKeytipLayerProps
   @scala.inline
-  def LabelProps: ILabelProps.type = typings.officeUiFabricReact.labelTypesMod.ILabelProps
+  def LabelProps: ILabelProps.type = ILabelProps
   type LabelProps = ILabelProps
   @scala.inline
-  def LabelBaseProps: ILabelProps.type = typings.officeUiFabricReact.labelTypesMod.ILabelProps
+  def LabelBaseProps: ILabelProps.type = ILabelProps
   type LabelBaseProps = ILabelProps
   @scala.inline
-  def LayerProps: ILayerProps.type = typings.officeUiFabricReact.layerTypesMod.ILayerProps
+  def LayerProps: ILayerProps.type = ILayerProps
   type LayerProps = ILayerProps
   @scala.inline
-  def LayerBaseProps: ILayerProps.type = typings.officeUiFabricReact.layerTypesMod.ILayerProps
+  def LayerBaseProps: ILayerProps.type = ILayerProps
   type LayerBaseProps = ILayerProps
   @scala.inline
-  def LayerHostProps: ILayerHostProps.type = typings.officeUiFabricReact.layerHostTypesMod.ILayerHostProps
+  def LayerHostProps: ILayerHostProps.type = ILayerHostProps
   type LayerHostProps = ILayerHostProps
   @scala.inline
-  def LinkProps: ILinkProps.type = typings.officeUiFabricReact.linkTypesMod.ILinkProps
+  def LinkProps: ILinkProps.type = ILinkProps
   type LinkProps = ILinkProps
   @scala.inline
-  def LinkBaseProps: ILinkProps.type = typings.officeUiFabricReact.linkTypesMod.ILinkProps
+  def LinkBaseProps: ILinkProps.type = ILinkProps
   type LinkBaseProps = ILinkProps
   @scala.inline
-  def ListProps: IListProps.type = typings.officeUiFabricReact.listTypesMod.IListProps
+  def ListProps: IListProps.type = IListProps
   type ListProps[T] = IListProps[T]
   @scala.inline
-  def ListBasicExampleProps: IListBasicExampleProps.type = typings.officeUiFabricReact.listBasicExampleMod.IListBasicExampleProps
+  def ListBasicExampleProps: IListBasicExampleProps.type = IListBasicExampleProps
   type ListBasicExampleProps = IListBasicExampleProps
   @scala.inline
-  def ListGhostingExampleProps: IListGhostingExampleProps.type = typings.officeUiFabricReact.listGhostingExampleMod.IListGhostingExampleProps
+  def ListGhostingExampleProps: IListGhostingExampleProps.type = IListGhostingExampleProps
   type ListGhostingExampleProps = IListGhostingExampleProps
   @scala.inline
-  def ListGridExampleProps: IListGridExampleProps.type = typings.officeUiFabricReact.listGridExampleMod.IListGridExampleProps
+  def ListGridExampleProps: IListGridExampleProps.type = IListGridExampleProps
   type ListGridExampleProps = IListGridExampleProps
   type ListPeoplePickerProps = IPeoplePickerProps
   type ListPeoplePickerBaseProps = IPeoplePickerProps
   @scala.inline
-  def ListScrollingExampleProps: IListScrollingExampleProps.type = typings.officeUiFabricReact.listScrollingExampleMod.IListScrollingExampleProps
+  def ListScrollingExampleProps: IListScrollingExampleProps.type = IListScrollingExampleProps
   type ListScrollingExampleProps = IListScrollingExampleProps
   @scala.inline
-  def MarqueeSelectionProps: IMarqueeSelectionProps.type = typings.officeUiFabricReact.marqueeSelectionTypesMod.IMarqueeSelectionProps
+  def MarqueeSelectionProps: IMarqueeSelectionProps.type = IMarqueeSelectionProps
   type MarqueeSelectionProps = IMarqueeSelectionProps
   @scala.inline
-  def MarqueeSelectionBaseProps: IMarqueeSelectionProps.type = typings.officeUiFabricReact.marqueeSelectionTypesMod.IMarqueeSelectionProps
+  def MarqueeSelectionBaseProps: IMarqueeSelectionProps.type = IMarqueeSelectionProps
   type MarqueeSelectionBaseProps = IMarqueeSelectionProps
   @scala.inline
-  def MaskedTextFieldProps: ITextFieldProps.type = typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
+  def MaskedTextFieldProps: ITextFieldProps.type = ITextFieldProps
   type MaskedTextFieldProps = ITextFieldProps
   type MemberListPeoplePickerProps = IPeoplePickerProps
   @scala.inline
-  def MessageBarProps: IMessageBarProps.type = typings.officeUiFabricReact.messageBarTypesMod.IMessageBarProps
+  def MessageBarProps: IMessageBarProps.type = IMessageBarProps
   type MessageBarProps = IMessageBarProps
   @scala.inline
-  def MessageBarBaseProps: IMessageBarProps.type = typings.officeUiFabricReact.messageBarTypesMod.IMessageBarProps
+  def MessageBarBaseProps: IMessageBarProps.type = IMessageBarProps
   type MessageBarBaseProps = IMessageBarProps
   @scala.inline
-  def MessageBarButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+  def MessageBarButtonProps: IButtonProps.type = IButtonProps
   type MessageBarButtonProps = IButtonProps
   @scala.inline
-  def ModalProps: IModalProps.type = typings.officeUiFabricReact.modalTypesMod.IModalProps
+  def ModalProps: IModalProps.type = IModalProps
   type ModalProps = IModalProps
   @scala.inline
-  def ModalBaseProps: IModalProps.type = typings.officeUiFabricReact.modalTypesMod.IModalProps
+  def ModalBaseProps: IModalProps.type = IModalProps
   type ModalBaseProps = IModalProps
   @scala.inline
-  def NavProps: INavProps.type = typings.officeUiFabricReact.navTypesMod.INavProps
+  def NavProps: INavProps.type = INavProps
   type NavProps = INavProps
   @scala.inline
-  def NavBaseProps: INavProps.type = typings.officeUiFabricReact.navTypesMod.INavProps
+  def NavBaseProps: INavProps.type = INavProps
   type NavBaseProps = INavProps
   type NormalPeoplePickerProps = IPeoplePickerProps
   type NormalPeoplePickerBaseProps = IPeoplePickerProps
   @scala.inline
-  def OverflowSetProps: IOverflowSetProps.type = typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps
+  def OverflowSetProps: IOverflowSetProps.type = IOverflowSetProps
   type OverflowSetProps = IOverflowSetProps
   @scala.inline
-  def OverflowSetBaseProps: IOverflowSetProps.type = typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps
+  def OverflowSetBaseProps: IOverflowSetProps.type = IOverflowSetProps
   type OverflowSetBaseProps = IOverflowSetProps
   @scala.inline
-  def OverlayProps: IOverlayProps.type = typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
+  def OverlayProps: IOverlayProps.type = IOverlayProps
   type OverlayProps = IOverlayProps
   @scala.inline
-  def OverlayBaseProps: IOverlayProps.type = typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
+  def OverlayBaseProps: IOverlayProps.type = IOverlayProps
   type OverlayBaseProps = IOverlayProps
   @scala.inline
-  def PanelProps: IPanelProps.type = typings.officeUiFabricReact.panelTypesMod.IPanelProps
+  def PanelProps: IPanelProps.type = IPanelProps
   type PanelProps = IPanelProps
   @scala.inline
-  def PanelBaseProps: IPanelProps.type = typings.officeUiFabricReact.panelTypesMod.IPanelProps
+  def PanelBaseProps: IPanelProps.type = IPanelProps
   type PanelBaseProps = IPanelProps
   @scala.inline
-  def PeoplePickerItemProps: IPeoplePickerItemSelectedProps.type = typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps
+  def PeoplePickerItemProps: IPeoplePickerItemSelectedProps.type = IPeoplePickerItemSelectedProps
   type PeoplePickerItemProps = IPeoplePickerItemSelectedProps
   @scala.inline
-  def PeoplePickerItemBaseProps: IPeoplePickerItemSelectedProps.type = typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps
+  def PeoplePickerItemBaseProps: IPeoplePickerItemSelectedProps.type = IPeoplePickerItemSelectedProps
   type PeoplePickerItemBaseProps = IPeoplePickerItemSelectedProps
   @scala.inline
-  def PeoplePickerItemSuggestionProps: IPeoplePickerItemSuggestionProps.type = typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps
+  def PeoplePickerItemSuggestionProps: IPeoplePickerItemSuggestionProps.type = IPeoplePickerItemSuggestionProps
   type PeoplePickerItemSuggestionProps = IPeoplePickerItemSuggestionProps
   @scala.inline
-  def PeoplePickerItemSuggestionBaseProps: IPeoplePickerItemSuggestionProps.type = typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps
+  def PeoplePickerItemSuggestionBaseProps: IPeoplePickerItemSuggestionProps.type = IPeoplePickerItemSuggestionProps
   type PeoplePickerItemSuggestionBaseProps = IPeoplePickerItemSuggestionProps
   @scala.inline
-  def PersonaProps: IPersonaProps.type = typings.officeUiFabricReact.personaTypesMod.IPersonaProps
+  def PersonaProps: IPersonaProps.type = IPersonaProps
   type PersonaProps = IPersonaProps
   @scala.inline
-  def PersonaBaseProps: IPersonaProps.type = typings.officeUiFabricReact.personaTypesMod.IPersonaProps
+  def PersonaBaseProps: IPersonaProps.type = IPersonaProps
   type PersonaBaseProps = IPersonaProps
   @scala.inline
-  def PersonaCoinProps: IPersonaCoinProps.type = typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
+  def PersonaCoinProps: IPersonaCoinProps.type = IPersonaCoinProps
   type PersonaCoinProps = IPersonaCoinProps
   @scala.inline
-  def PersonaCoinBaseProps: IPersonaCoinProps.type = typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
+  def PersonaCoinBaseProps: IPersonaCoinProps.type = IPersonaCoinProps
   type PersonaCoinBaseProps = IPersonaCoinProps
   @scala.inline
-  def PersonaPresenceProps: IPersonaPresenceProps.type = typings.officeUiFabricReact.personaTypesMod.IPersonaPresenceProps
+  def PersonaPresenceProps: IPersonaPresenceProps.type = IPersonaPresenceProps
   type PersonaPresenceProps = IPersonaPresenceProps
   @scala.inline
-  def PersonaPresenceBaseProps: IPersonaPresenceProps.type = typings.officeUiFabricReact.personaTypesMod.IPersonaPresenceProps
+  def PersonaPresenceBaseProps: IPersonaPresenceProps.type = IPersonaPresenceProps
   type PersonaPresenceBaseProps = IPersonaPresenceProps
   @scala.inline
-  def PivotProps: IPivotProps.type = typings.officeUiFabricReact.pivotTypesMod.IPivotProps
+  def PivotProps: IPivotProps.type = IPivotProps
   type PivotProps = IPivotProps
   @scala.inline
-  def PivotBaseProps: IPivotProps.type = typings.officeUiFabricReact.pivotTypesMod.IPivotProps
+  def PivotBaseProps: IPivotProps.type = IPivotProps
   type PivotBaseProps = IPivotProps
   @scala.inline
-  def PivotItemProps: IPivotItemProps.type = typings.officeUiFabricReact.pivotItemTypesMod.IPivotItemProps
+  def PivotItemProps: IPivotItemProps.type = IPivotItemProps
   type PivotItemProps = IPivotItemProps
   @scala.inline
-  def PlainCardProps: IPlainCardProps.type = typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps
+  def PlainCardProps: IPlainCardProps.type = IPlainCardProps
   type PlainCardProps = IPlainCardProps
   @scala.inline
-  def PlainCardBaseProps: IPlainCardProps.type = typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps
+  def PlainCardBaseProps: IPlainCardProps.type = IPlainCardProps
   type PlainCardBaseProps = IPlainCardProps
   @scala.inline
-  def PopupProps: IPopupProps.type = typings.officeUiFabricReact.popupTypesMod.IPopupProps
+  def PopupProps: IPopupProps.type = IPopupProps
   type PopupProps = IPopupProps
   @scala.inline
-  def PositioningContainerProps: IPositioningContainerProps.type = typings.officeUiFabricReact.positioningContainerTypesMod.IPositioningContainerProps
+  def PositioningContainerProps: IPositioningContainerProps.type = IPositioningContainerProps
   type PositioningContainerProps = IPositioningContainerProps
   @scala.inline
-  def PrimaryButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+  def PrimaryButtonProps: IButtonProps.type = IButtonProps
   type PrimaryButtonProps = IButtonProps
   @scala.inline
-  def ProgressIndicatorProps: IProgressIndicatorProps.type = typings.officeUiFabricReact.progressIndicatorTypesMod.IProgressIndicatorProps
+  def ProgressIndicatorProps: IProgressIndicatorProps.type = IProgressIndicatorProps
   type ProgressIndicatorProps = IProgressIndicatorProps
   @scala.inline
-  def ProgressIndicatorBaseProps: IProgressIndicatorProps.type = typings.officeUiFabricReact.progressIndicatorTypesMod.IProgressIndicatorProps
+  def ProgressIndicatorBaseProps: IProgressIndicatorProps.type = IProgressIndicatorProps
   type ProgressIndicatorBaseProps = IProgressIndicatorProps
   @scala.inline
-  def RatingProps: IRatingProps.type = typings.officeUiFabricReact.ratingTypesMod.IRatingProps
+  def RatingProps: IRatingProps.type = IRatingProps
   type RatingProps = IRatingProps
   @scala.inline
-  def RatingBaseProps: IRatingProps.type = typings.officeUiFabricReact.ratingTypesMod.IRatingProps
+  def RatingBaseProps: IRatingProps.type = IRatingProps
   type RatingBaseProps = IRatingProps
   @scala.inline
-  def ResizeGroupBaseProps: IResizeGroupProps.type = typings.officeUiFabricReact.resizeGroupTypesMod.IResizeGroupProps
+  def ResizeGroupBaseProps: IResizeGroupProps.type = IResizeGroupProps
   type ResizeGroupBaseProps = IResizeGroupProps
   @scala.inline
-  def ScrollablePaneProps: IScrollablePaneProps.type = typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneProps
+  def ScrollablePaneProps: IScrollablePaneProps.type = IScrollablePaneProps
   type ScrollablePaneProps = IScrollablePaneProps
   @scala.inline
-  def ScrollablePaneBaseProps: IScrollablePaneProps.type = typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneProps
+  def ScrollablePaneBaseProps: IScrollablePaneProps.type = IScrollablePaneProps
   type ScrollablePaneBaseProps = IScrollablePaneProps
   @scala.inline
-  def SearchBoxProps: ISearchBoxProps.type = typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
+  def SearchBoxProps: ISearchBoxProps.type = ISearchBoxProps
   type SearchBoxProps = ISearchBoxProps
   @scala.inline
-  def SearchBoxBaseProps: ISearchBoxProps.type = typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
+  def SearchBoxBaseProps: ISearchBoxProps.type = ISearchBoxProps
   type SearchBoxBaseProps = ISearchBoxProps
   @scala.inline
-  def SelectedItemDefaultProps: IPeoplePickerItemSelectedProps.type = typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps
+  def SelectedItemDefaultProps: IPeoplePickerItemSelectedProps.type = IPeoplePickerItemSelectedProps
   type SelectedItemDefaultProps = IPeoplePickerItemSelectedProps
   @scala.inline
-  def SelectedItemWithContextMenuProps: ISelectedItemWithContextMenuProps.type = typings.officeUiFabricReact.selectedItemWithContextMenuMod.ISelectedItemWithContextMenuProps
+  def SelectedItemWithContextMenuProps: ISelectedItemWithContextMenuProps.type = ISelectedItemWithContextMenuProps
   type SelectedItemWithContextMenuProps = ISelectedItemWithContextMenuProps
   @scala.inline
-  def SelectedPeopleListProps: ISelectedPeopleProps.type = typings.officeUiFabricReact.selectedPeopleListMod.ISelectedPeopleProps
+  def SelectedPeopleListProps: ISelectedPeopleProps.type = ISelectedPeopleProps
   type SelectedPeopleListProps = ISelectedPeopleProps
   @scala.inline
-  def SelectionZoneProps: ISelectionZoneProps.type = typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
+  def SelectionZoneProps: ISelectionZoneProps.type = ISelectionZoneProps
   type SelectionZoneProps = ISelectionZoneProps
   @scala.inline
-  def SeparatorProps: ISeparatorProps.type = typings.officeUiFabricReact.separatorTypesMod.ISeparatorProps
+  def SeparatorProps: ISeparatorProps.type = ISeparatorProps
   type SeparatorProps = ISeparatorProps
   @scala.inline
-  def SeparatorBaseProps: ISeparatorProps.type = typings.officeUiFabricReact.separatorTypesMod.ISeparatorProps
+  def SeparatorBaseProps: ISeparatorProps.type = ISeparatorProps
   type SeparatorBaseProps = ISeparatorProps
   @scala.inline
-  def ShimmerProps: IShimmerProps.type = typings.officeUiFabricReact.shimmerTypesMod.IShimmerProps
+  def ShimmerProps: IShimmerProps.type = IShimmerProps
   type ShimmerProps = IShimmerProps
   @scala.inline
-  def ShimmerBaseProps: IShimmerProps.type = typings.officeUiFabricReact.shimmerTypesMod.IShimmerProps
+  def ShimmerBaseProps: IShimmerProps.type = IShimmerProps
   type ShimmerBaseProps = IShimmerProps
   @scala.inline
-  def ShimmerCircleProps: IShimmerCircleProps.type = typings.officeUiFabricReact.shimmerCircleTypesMod.IShimmerCircleProps
+  def ShimmerCircleProps: IShimmerCircleProps.type = IShimmerCircleProps
   type ShimmerCircleProps = IShimmerCircleProps
   @scala.inline
-  def ShimmerCircleBaseProps: IShimmerCircleProps.type = typings.officeUiFabricReact.shimmerCircleTypesMod.IShimmerCircleProps
+  def ShimmerCircleBaseProps: IShimmerCircleProps.type = IShimmerCircleProps
   type ShimmerCircleBaseProps = IShimmerCircleProps
   @scala.inline
-  def ShimmerElementsGroupProps: IShimmerElementsGroupProps.type = typings.officeUiFabricReact.shimmerElementsGroupTypesMod.IShimmerElementsGroupProps
+  def ShimmerElementsGroupProps: IShimmerElementsGroupProps.type = IShimmerElementsGroupProps
   type ShimmerElementsGroupProps = IShimmerElementsGroupProps
   @scala.inline
-  def ShimmerElementsGroupBaseProps: IShimmerElementsGroupProps.type = typings.officeUiFabricReact.shimmerElementsGroupTypesMod.IShimmerElementsGroupProps
+  def ShimmerElementsGroupBaseProps: IShimmerElementsGroupProps.type = IShimmerElementsGroupProps
   type ShimmerElementsGroupBaseProps = IShimmerElementsGroupProps
   @scala.inline
-  def ShimmerGapProps: IShimmerGapProps.type = typings.officeUiFabricReact.shimmerGapTypesMod.IShimmerGapProps
+  def ShimmerGapProps: IShimmerGapProps.type = IShimmerGapProps
   type ShimmerGapProps = IShimmerGapProps
   @scala.inline
-  def ShimmerGapBaseProps: IShimmerGapProps.type = typings.officeUiFabricReact.shimmerGapTypesMod.IShimmerGapProps
+  def ShimmerGapBaseProps: IShimmerGapProps.type = IShimmerGapProps
   type ShimmerGapBaseProps = IShimmerGapProps
   @scala.inline
-  def ShimmerLineProps: IShimmerLineProps.type = typings.officeUiFabricReact.shimmerLineTypesMod.IShimmerLineProps
+  def ShimmerLineProps: IShimmerLineProps.type = IShimmerLineProps
   type ShimmerLineProps = IShimmerLineProps
   @scala.inline
-  def ShimmerLineBaseProps: IShimmerLineProps.type = typings.officeUiFabricReact.shimmerLineTypesMod.IShimmerLineProps
+  def ShimmerLineBaseProps: IShimmerLineProps.type = IShimmerLineProps
   type ShimmerLineBaseProps = IShimmerLineProps
   @scala.inline
-  def ShimmeredDetailsListProps: IShimmeredDetailsListProps.type = typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps
+  def ShimmeredDetailsListProps: IShimmeredDetailsListProps.type = IShimmeredDetailsListProps
   type ShimmeredDetailsListProps = IShimmeredDetailsListProps
   @scala.inline
-  def ShimmeredDetailsListBaseProps: IShimmeredDetailsListProps.type = typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps
+  def ShimmeredDetailsListBaseProps: IShimmeredDetailsListProps.type = IShimmeredDetailsListProps
   type ShimmeredDetailsListBaseProps = IShimmeredDetailsListProps
   @scala.inline
-  def SliderProps: ISliderProps.type = typings.officeUiFabricReact.sliderTypesMod.ISliderProps
+  def SliderProps: ISliderProps.type = ISliderProps
   type SliderProps = ISliderProps
   @scala.inline
-  def SliderBaseProps: ISliderProps.type = typings.officeUiFabricReact.sliderTypesMod.ISliderProps
+  def SliderBaseProps: ISliderProps.type = ISliderProps
   type SliderBaseProps = ISliderProps
   @scala.inline
-  def SpinButtonProps: ISpinButtonProps.type = typings.officeUiFabricReact.spinButtonTypesMod.ISpinButtonProps
+  def SpinButtonProps: ISpinButtonProps.type = ISpinButtonProps
   type SpinButtonProps = ISpinButtonProps
   @scala.inline
-  def SpinnerProps: ISpinnerProps.type = typings.officeUiFabricReact.spinnerTypesMod.ISpinnerProps
+  def SpinnerProps: ISpinnerProps.type = ISpinnerProps
   type SpinnerProps = ISpinnerProps
   @scala.inline
-  def SpinnerBaseProps: ISpinnerProps.type = typings.officeUiFabricReact.spinnerTypesMod.ISpinnerProps
+  def SpinnerBaseProps: ISpinnerProps.type = ISpinnerProps
   type SpinnerBaseProps = ISpinnerProps
   @scala.inline
-  def StackItemProps: IStackItemProps.type = typings.officeUiFabricReact.stackItemTypesMod.IStackItemProps
+  def StackItemProps: IStackItemProps.type = IStackItemProps
   type StackItemProps = IStackItemProps
   @scala.inline
-  def StickyProps: IStickyProps.type = typings.officeUiFabricReact.stickyTypesMod.IStickyProps
+  def StickyProps: IStickyProps.type = IStickyProps
   type StickyProps = IStickyProps
   @scala.inline
-  def SuggestionItemNormalProps: IPersonaProps.type = typings.officeUiFabricReact.personaTypesMod.IPersonaProps
+  def SuggestionItemNormalProps: IPersonaProps.type = IPersonaProps
   type SuggestionItemNormalProps = IPersonaProps
   @scala.inline
-  def SuggestionItemSmallProps: IPersonaProps.type = typings.officeUiFabricReact.personaTypesMod.IPersonaProps
+  def SuggestionItemSmallProps: IPersonaProps.type = IPersonaProps
   type SuggestionItemSmallProps = IPersonaProps
   type SuggestionsProps[T] = ISuggestionsProps[T]
   type SuggestionsControlProps[T] = ISuggestionsControlProps[T]
   type SuggestionsCoreProps[T] = ISuggestionsCoreProps[T]
   @scala.inline
-  def SuggestionsHeaderFooterItemProps: ISuggestionsHeaderFooterItemProps.type = typings.officeUiFabricReact.suggestionsDottypesMod.ISuggestionsHeaderFooterItemProps
+  def SuggestionsHeaderFooterItemProps: ISuggestionsHeaderFooterItemProps.type = ISuggestionsHeaderFooterItemProps
   type SuggestionsHeaderFooterItemProps = ISuggestionsHeaderFooterItemProps
   @scala.inline
-  def SuggestionsItemProps: ISuggestionItemProps.type = typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionItemProps
+  def SuggestionsItemProps: ISuggestionItemProps.type = ISuggestionItemProps
   type SuggestionsItemProps[T] = ISuggestionItemProps[T]
   @scala.inline
-  def SwatchColorPickerProps: ISwatchColorPickerProps.type = typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps
+  def SwatchColorPickerProps: ISwatchColorPickerProps.type = ISwatchColorPickerProps
   type SwatchColorPickerProps = ISwatchColorPickerProps
   @scala.inline
-  def SwatchColorPickerBaseProps: ISwatchColorPickerProps.type = typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps
+  def SwatchColorPickerBaseProps: ISwatchColorPickerProps.type = ISwatchColorPickerProps
   type SwatchColorPickerBaseProps = ISwatchColorPickerProps
   @scala.inline
-  def TagItemProps: ITagItemProps.type = typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps
+  def TagItemProps: ITagItemProps.type = ITagItemProps
   type TagItemProps = ITagItemProps
   @scala.inline
-  def TagItemBaseProps: ITagItemProps.type = typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps
+  def TagItemBaseProps: ITagItemProps.type = ITagItemProps
   type TagItemBaseProps = ITagItemProps
   @scala.inline
-  def TagItemSuggestionProps: ITagItemSuggestionProps.type = typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps
+  def TagItemSuggestionProps: ITagItemSuggestionProps.type = ITagItemSuggestionProps
   type TagItemSuggestionProps = ITagItemSuggestionProps
   @scala.inline
-  def TagItemSuggestionBaseProps: ITagItemSuggestionProps.type = typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps
+  def TagItemSuggestionBaseProps: ITagItemSuggestionProps.type = ITagItemSuggestionProps
   type TagItemSuggestionBaseProps = ITagItemSuggestionProps
   type TagPickerProps = ITagPickerProps
   type TagPickerBaseProps = ITagPickerProps
   @scala.inline
-  def TeachingBubbleProps: ITeachingBubbleProps.type = typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
+  def TeachingBubbleProps: ITeachingBubbleProps.type = ITeachingBubbleProps
   type TeachingBubbleProps = ITeachingBubbleProps
   @scala.inline
-  def TeachingBubbleBaseProps: ITeachingBubbleProps.type = typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
+  def TeachingBubbleBaseProps: ITeachingBubbleProps.type = ITeachingBubbleProps
   type TeachingBubbleBaseProps = ITeachingBubbleProps
   @scala.inline
-  def TeachingBubbleContentProps: ITeachingBubbleProps.type = typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
+  def TeachingBubbleContentProps: ITeachingBubbleProps.type = ITeachingBubbleProps
   type TeachingBubbleContentProps = ITeachingBubbleProps
   @scala.inline
-  def TeachingBubbleContentBaseProps: ITeachingBubbleProps.type = typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
+  def TeachingBubbleContentBaseProps: ITeachingBubbleProps.type = ITeachingBubbleProps
   type TeachingBubbleContentBaseProps = ITeachingBubbleProps
   @scala.inline
-  def TextProps: ITextProps.type = typings.officeUiFabricReact.textTypesMod.ITextProps
+  def TextProps: ITextProps.type = ITextProps
   type TextProps = ITextProps
   @scala.inline
-  def TextFieldProps: ITextFieldProps.type = typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
+  def TextFieldProps: ITextFieldProps.type = ITextFieldProps
   type TextFieldProps = ITextFieldProps
   @scala.inline
-  def TextFieldBaseProps: ITextFieldProps.type = typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
+  def TextFieldBaseProps: ITextFieldProps.type = ITextFieldProps
   type TextFieldBaseProps = ITextFieldProps
   type ThemeProviderProps = IThemeProviderProps
   @scala.inline
-  def ToggleProps: IToggleProps.type = typings.officeUiFabricReact.toggleTypesMod.IToggleProps
+  def ToggleProps: IToggleProps.type = IToggleProps
   type ToggleProps = IToggleProps
   @scala.inline
-  def ToggleBaseProps: IToggleProps.type = typings.officeUiFabricReact.toggleTypesMod.IToggleProps
+  def ToggleBaseProps: IToggleProps.type = IToggleProps
   type ToggleBaseProps = IToggleProps
   @scala.inline
-  def TooltipProps: ITooltipProps.type = typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
+  def TooltipProps: ITooltipProps.type = ITooltipProps
   type TooltipProps = ITooltipProps
   @scala.inline
-  def TooltipBaseProps: ITooltipProps.type = typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
+  def TooltipBaseProps: ITooltipProps.type = ITooltipProps
   type TooltipBaseProps = ITooltipProps
   @scala.inline
-  def TooltipHostProps: ITooltipHostProps.type = typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
+  def TooltipHostProps: ITooltipHostProps.type = ITooltipHostProps
   type TooltipHostProps = ITooltipHostProps
   @scala.inline
-  def TooltipHostBaseProps: ITooltipHostProps.type = typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
+  def TooltipHostBaseProps: ITooltipHostProps.type = ITooltipHostProps
   type TooltipHostBaseProps = ITooltipHostProps
   @scala.inline
-  def VerticalDividerProps: IVerticalDividerProps.type = typings.officeUiFabricReact.verticalDividerTypesMod.IVerticalDividerProps
+  def VerticalDividerProps: IVerticalDividerProps.type = IVerticalDividerProps
   type VerticalDividerProps = IVerticalDividerProps
   @scala.inline
-  def VerticalDividerBaseProps: IVerticalDividerProps.type = typings.officeUiFabricReact.verticalDividerTypesMod.IVerticalDividerProps
+  def VerticalDividerBaseProps: IVerticalDividerProps.type = IVerticalDividerProps
   type VerticalDividerBaseProps = IVerticalDividerProps
   @scala.inline
-  def VirtualizedComboBoxProps: IComboBoxProps.type = typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxProps
+  def VirtualizedComboBoxProps: IComboBoxProps.type = IComboBoxProps
   type VirtualizedComboBoxProps = IComboBoxProps
 }
 

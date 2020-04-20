@@ -14,7 +14,6 @@ object ValidatorContext {
   @scala.inline
   def apply(errors: Errors, fields: Fields, isDirty: Boolean): ValidatorContext = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], isDirty = isDirty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidatorContext]
   }
 }

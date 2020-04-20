@@ -34,7 +34,7 @@ class DataView protected () extends EntityWidget {
   /**
     * In version 6.7.0: deleted
     */
-  def closeOnSaveOrCancel(): Boolean = js.native
+  def closeOnSaveOrCancel: Boolean = js.native
   def closeOnSaveOrCancel(newValue: Boolean): js.Any = js.native
   def controlBar(): js.Any = js.native
   def controlBar(newValue: DataViewControlBar): js.Any = js.native
@@ -43,8 +43,8 @@ class DataView protected () extends EntityWidget {
     * In version 6.5.0: added optional
     */
   @JSName("controlBar")
-  def controlBar_Union(): DataViewControlBar | Null = js.native
-  def editable(): Boolean = js.native
+  def controlBar_Union: DataViewControlBar | Null = js.native
+  def editable: Boolean = js.native
   def editable(newValue: Boolean): js.Any = js.native
   def footerWidget(): js.Any = js.native
   def footerWidget(newValue: Widget): js.Any = js.native
@@ -53,34 +53,34 @@ class DataView protected () extends EntityWidget {
     * In version 6.7.0: introduced
     */
   @JSName("footerWidget")
-  def footerWidget_Union(): Widget | Null = js.native
+  def footerWidget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def footerWidgets(): IList[Widget] = js.native
-  def labelWidth(): Double = js.native
+  def footerWidgets: IList[Widget] = js.native
+  def labelWidth: Double = js.native
   def labelWidth(newValue: Double): js.Any = js.native
-  def noEntityMessage(): Text = js.native
+  def noEntityMessage: Text = js.native
   def noEntityMessage(newValue: Text): js.Any = js.native
   /**
     * In version 6.9.0: introduced
     */
-  def readOnlyStyle(): DataViewReadOnlyStyle = js.native
+  def readOnlyStyle: DataViewReadOnlyStyle = js.native
   def readOnlyStyle(newValue: DataViewReadOnlyStyle): js.Any = js.native
   /**
     * In version 6.7.0: deleted
     */
-  def showControlBar(): Boolean = js.native
+  def showControlBar: Boolean = js.native
   def showControlBar(newValue: Boolean): js.Any = js.native
   /**
     * In version 6.7.0: introduced
     */
-  def showFooter(): Boolean = js.native
+  def showFooter: Boolean = js.native
   def showFooter(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def useSchema(): Boolean = js.native
+  def useSchema: Boolean = js.native
   def useSchema(newValue: Boolean): js.Any = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
@@ -88,11 +88,11 @@ class DataView protected () extends EntityWidget {
     * In version 7.15.0: deleted
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def widgets(): IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

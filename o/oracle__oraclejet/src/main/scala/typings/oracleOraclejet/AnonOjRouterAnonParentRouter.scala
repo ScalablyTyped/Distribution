@@ -12,7 +12,6 @@ object AnonOjRouterAnonParentRouter {
   @scala.inline
   def apply(ojRouter: AnonParentRouter): AnonOjRouterAnonParentRouter = {
     val __obj = js.Dynamic.literal(ojRouter = ojRouter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOjRouterAnonParentRouter]
   }
 }

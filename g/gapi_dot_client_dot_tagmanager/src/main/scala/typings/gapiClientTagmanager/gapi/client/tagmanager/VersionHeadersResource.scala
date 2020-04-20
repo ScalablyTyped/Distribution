@@ -21,7 +21,6 @@ object VersionHeadersResource {
     list: AnonIncludeDeleted => Request_[ListContainerVersionsResponse]
   ): VersionHeadersResource = {
     val __obj = js.Dynamic.literal(latest = js.Any.fromFunction1(latest), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[VersionHeadersResource]
   }
 }

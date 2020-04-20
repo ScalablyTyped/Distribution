@@ -87,26 +87,24 @@ trait CardNetwork extends js.Object
 
 object CardNetwork {
   @scala.inline
-  def AMEX: typings.googlepay.googlepayStrings.AMEX = this.cast("AMEX")
+  def AMEX: typings.googlepay.googlepayStrings.AMEX = "AMEX".asInstanceOf[typings.googlepay.googlepayStrings.AMEX]
   @scala.inline
-  def DISCOVER: typings.googlepay.googlepayStrings.DISCOVER = this.cast("DISCOVER")
+  def DISCOVER: typings.googlepay.googlepayStrings.DISCOVER = "DISCOVER".asInstanceOf[typings.googlepay.googlepayStrings.DISCOVER]
   @scala.inline
-  def ELECTRON: typings.googlepay.googlepayStrings.ELECTRON = this.cast("ELECTRON")
+  def ELECTRON: typings.googlepay.googlepayStrings.ELECTRON = "ELECTRON".asInstanceOf[typings.googlepay.googlepayStrings.ELECTRON]
   @scala.inline
-  def ELO: typings.googlepay.googlepayStrings.ELO = this.cast("ELO")
+  def ELO: typings.googlepay.googlepayStrings.ELO = "ELO".asInstanceOf[typings.googlepay.googlepayStrings.ELO]
   @scala.inline
-  def ELO_DEBIT: typings.googlepay.googlepayStrings.ELO_DEBIT = this.cast("ELO_DEBIT")
+  def ELO_DEBIT: typings.googlepay.googlepayStrings.ELO_DEBIT = "ELO_DEBIT".asInstanceOf[typings.googlepay.googlepayStrings.ELO_DEBIT]
   @scala.inline
-  def INTERAC: typings.googlepay.googlepayStrings.INTERAC = this.cast("INTERAC")
+  def INTERAC: typings.googlepay.googlepayStrings.INTERAC = "INTERAC".asInstanceOf[typings.googlepay.googlepayStrings.INTERAC]
   @scala.inline
-  def JCB: typings.googlepay.googlepayStrings.JCB = this.cast("JCB")
+  def JCB: typings.googlepay.googlepayStrings.JCB = "JCB".asInstanceOf[typings.googlepay.googlepayStrings.JCB]
   @scala.inline
-  def MAESTRO: typings.googlepay.googlepayStrings.MAESTRO = this.cast("MAESTRO")
+  def MAESTRO: typings.googlepay.googlepayStrings.MAESTRO = "MAESTRO".asInstanceOf[typings.googlepay.googlepayStrings.MAESTRO]
   @scala.inline
-  def MASTERCARD: typings.googlepay.googlepayStrings.MASTERCARD = this.cast("MASTERCARD")
+  def MASTERCARD: typings.googlepay.googlepayStrings.MASTERCARD = "MASTERCARD".asInstanceOf[typings.googlepay.googlepayStrings.MASTERCARD]
   @scala.inline
-  def VISA: typings.googlepay.googlepayStrings.VISA = this.cast("VISA")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VISA: typings.googlepay.googlepayStrings.VISA = "VISA".asInstanceOf[typings.googlepay.googlepayStrings.VISA]
 }
 

@@ -20,7 +20,6 @@ object DeleteMultiplexProgramRequest {
   @scala.inline
   def apply(MultiplexId: string, ProgramName: string): DeleteMultiplexProgramRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any], ProgramName = ProgramName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMultiplexProgramRequest]
   }
 }

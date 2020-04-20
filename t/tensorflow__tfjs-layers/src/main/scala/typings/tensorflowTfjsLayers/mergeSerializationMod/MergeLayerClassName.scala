@@ -18,20 +18,18 @@ trait MergeLayerClassName extends js.Object
 
 object MergeLayerClassName {
   @scala.inline
-  def Add: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Add = this.cast("Add")
+  def Add: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Add = "Add".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Add]
   @scala.inline
-  def Average: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average = this.cast("Average")
+  def Average: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average = "Average".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average]
   @scala.inline
-  def Concatenate: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate = this.cast("Concatenate")
+  def Concatenate: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate = "Concatenate".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate]
   @scala.inline
-  def Dot: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot = this.cast("Dot")
+  def Dot: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot = "Dot".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot]
   @scala.inline
-  def Maximum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum = this.cast("Maximum")
+  def Maximum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum = "Maximum".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum]
   @scala.inline
-  def Minimum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum = this.cast("Minimum")
+  def Minimum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum = "Minimum".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum]
   @scala.inline
-  def Multiply: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply = this.cast("Multiply")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Multiply: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply = "Multiply".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply]
 }
 

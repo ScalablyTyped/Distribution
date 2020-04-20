@@ -21,7 +21,6 @@ object AnonDataTypes {
     dragStart: (Event_, js.Object) => Unit
   ): AnonDataTypes = {
     val __obj = js.Dynamic.literal(dataTypes = dataTypes.asInstanceOf[js.Any], drag = js.Any.fromFunction1(drag), dragEnd = js.Any.fromFunction1(dragEnd), dragStart = js.Any.fromFunction2(dragStart))
-  
     __obj.asInstanceOf[AnonDataTypes]
   }
 }

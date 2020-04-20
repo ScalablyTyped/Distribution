@@ -13,7 +13,6 @@ object GetBLEDeviceCharacteristicsSuccessCallbackResult {
   @scala.inline
   def apply(characteristics: BLECharacteristic): GetBLEDeviceCharacteristicsSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(characteristics = characteristics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsSuccessCallbackResult]
   }
 }

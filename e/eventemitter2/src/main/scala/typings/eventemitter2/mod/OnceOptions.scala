@@ -23,7 +23,6 @@ object OnceOptions {
   @scala.inline
   def apply(Promise: js.Function, overload: Boolean, timeout: Double): OnceOptions = {
     val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], overload = overload.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnceOptions]
   }
 }

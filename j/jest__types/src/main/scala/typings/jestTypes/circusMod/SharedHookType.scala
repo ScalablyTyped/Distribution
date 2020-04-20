@@ -12,10 +12,8 @@ trait SharedHookType extends js.Object
 
 object SharedHookType {
   @scala.inline
-  def afterAll: typings.jestTypes.jestTypesStrings.afterAll = this.cast("afterAll")
+  def afterAll: typings.jestTypes.jestTypesStrings.afterAll = "afterAll".asInstanceOf[typings.jestTypes.jestTypesStrings.afterAll]
   @scala.inline
-  def beforeAll: typings.jestTypes.jestTypesStrings.beforeAll = this.cast("beforeAll")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def beforeAll: typings.jestTypes.jestTypesStrings.beforeAll = "beforeAll".asInstanceOf[typings.jestTypes.jestTypesStrings.beforeAll]
 }
 

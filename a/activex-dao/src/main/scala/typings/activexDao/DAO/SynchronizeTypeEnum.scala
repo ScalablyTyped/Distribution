@@ -18,14 +18,12 @@ trait SynchronizeTypeEnum extends js.Object
 
 object SynchronizeTypeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbRepExportChanges: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbRepExportChanges: `1` = this.cast(1)
+  def dbRepImpExpChanges: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def dbRepImpExpChanges: `4` = this.cast(4)
+  def dbRepImportChanges: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbRepImportChanges: `2` = this.cast(2)
-  @scala.inline
-  def dbRepSyncInternet: `16` = this.cast(16)
+  def dbRepSyncInternet: `16` = 16.asInstanceOf[`16`]
 }
 

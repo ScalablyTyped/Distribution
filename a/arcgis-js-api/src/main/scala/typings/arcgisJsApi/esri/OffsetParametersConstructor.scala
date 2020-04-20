@@ -9,5 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait OffsetParametersConstructor
   extends Instantiable0[OffsetParameters]
-     with Instantiable1[/* properties */ OffsetParametersProperties, OffsetParameters]
+     with Instantiable1[/* properties */ OffsetParametersProperties, OffsetParameters] {
+  def fromJSON(json: js.Any): OffsetParameters = js.native
+}
 

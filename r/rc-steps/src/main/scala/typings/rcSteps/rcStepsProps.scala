@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rcStepsProps {
   @scala.inline
-  def RcStepsProps: StepsProps.type = typings.rcSteps.mod.StepsProps
+  def RcStepsProps: StepsProps.type = StepsProps
   type RcStepsProps = StepsProps
   @scala.inline
   def StepProps: typings.rcSteps.mod.StepProps.type = typings.rcSteps.mod.StepProps

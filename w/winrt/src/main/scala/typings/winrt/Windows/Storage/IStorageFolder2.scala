@@ -13,7 +13,6 @@ object IStorageFolder2 {
   @scala.inline
   def apply(tryGetItemAsync: String => IAsyncOperation[IStorageItem]): IStorageFolder2 = {
     val __obj = js.Dynamic.literal(tryGetItemAsync = js.Any.fromFunction1(tryGetItemAsync))
-  
     __obj.asInstanceOf[IStorageFolder2]
   }
 }

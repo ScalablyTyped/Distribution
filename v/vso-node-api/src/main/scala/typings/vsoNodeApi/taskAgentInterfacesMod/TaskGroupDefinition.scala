@@ -22,7 +22,6 @@ object TaskGroupDefinition {
     visibleRule: String
   ): TaskGroupDefinition = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], isExpanded = isExpanded.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], visibleRule = visibleRule.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskGroupDefinition]
   }
 }

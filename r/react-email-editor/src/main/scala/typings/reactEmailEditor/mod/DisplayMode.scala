@@ -12,10 +12,8 @@ trait DisplayMode extends js.Object
 
 object DisplayMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def email: typings.reactEmailEditor.reactEmailEditorStrings.email = "email".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.email]
   @scala.inline
-  def email: typings.reactEmailEditor.reactEmailEditorStrings.email = this.cast("email")
-  @scala.inline
-  def web: typings.reactEmailEditor.reactEmailEditorStrings.web = this.cast("web")
+  def web: typings.reactEmailEditor.reactEmailEditorStrings.web = "web".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.web]
 }
 

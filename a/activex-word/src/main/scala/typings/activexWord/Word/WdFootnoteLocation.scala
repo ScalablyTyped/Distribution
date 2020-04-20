@@ -14,10 +14,8 @@ trait WdFootnoteLocation extends js.Object
 
 object WdFootnoteLocation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdBeneathText: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdBeneathText: `1` = this.cast(1)
-  @scala.inline
-  def wdBottomOfPage: `0` = this.cast(0)
+  def wdBottomOfPage: `0` = 0.asInstanceOf[`0`]
 }
 

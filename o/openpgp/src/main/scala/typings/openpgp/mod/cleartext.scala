@@ -80,7 +80,7 @@ object cleartext extends js.Object {
     * @param armoredText text to be parsed
     * @returns new cleartext message object
     */
-  def readArmored(armoredText: String): CleartextMessage = js.native
-  def readArmored(armoredText: ReadableStream[String]): CleartextMessage = js.native
+  def readArmored(armoredText: String): js.Promise[CleartextMessage] = js.native
+  def readArmored(armoredText: ReadableStream[String]): js.Promise[CleartextMessage] = js.native
 }
 

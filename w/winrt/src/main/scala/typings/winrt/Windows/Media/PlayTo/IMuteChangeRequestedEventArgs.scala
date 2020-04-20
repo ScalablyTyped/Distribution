@@ -12,7 +12,6 @@ object IMuteChangeRequestedEventArgs {
   @scala.inline
   def apply(mute: Boolean): IMuteChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(mute = mute.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMuteChangeRequestedEventArgs]
   }
 }

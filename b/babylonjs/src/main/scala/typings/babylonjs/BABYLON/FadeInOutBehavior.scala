@@ -52,6 +52,6 @@ class FadeInOutBehavior () extends Behavior[Mesh] {
     *  The name of the behavior
     */
   @JSName("name")
-  def name_MFadeInOutBehavior(): String = js.native
+  def name_MFadeInOutBehavior: String = js.native
 }
 

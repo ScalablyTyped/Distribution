@@ -30,26 +30,24 @@ trait WdCharacterCase extends js.Object
 
 object WdCharacterCase {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdFullWidth: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdFullWidth: `7` = this.cast(7)
+  def wdHalfWidth: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdHalfWidth: `6` = this.cast(6)
+  def wdHiragana: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdHiragana: `9` = this.cast(9)
+  def wdKatakana: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdKatakana: `8` = this.cast(8)
+  def wdLowerCase: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdLowerCase: `0` = this.cast(0)
+  def wdNextCase: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdNextCase: `-1` = this.cast(-1)
+  def wdTitleSentence: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdTitleSentence: `4` = this.cast(4)
+  def wdTitleWord: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdTitleWord: `2` = this.cast(2)
+  def wdToggleCase: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdToggleCase: `5` = this.cast(5)
-  @scala.inline
-  def wdUpperCase: `1` = this.cast(1)
+  def wdUpperCase: `1` = 1.asInstanceOf[`1`]
 }
 

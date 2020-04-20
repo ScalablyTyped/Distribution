@@ -30,7 +30,6 @@ object ServicesResource {
     versions: VersionsResource
   ): ServicesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), versions = versions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServicesResource]
   }
 }

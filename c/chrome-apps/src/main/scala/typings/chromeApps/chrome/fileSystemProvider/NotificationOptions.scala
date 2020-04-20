@@ -16,7 +16,7 @@ trait NotificationOptions extends js.Object {
     * removed from the list of observed entries.
     * @see ChangeType
     */
-  var changeType: ToStringLiteral[AnonCHANGED, String, Exclude[String, CHANGED | DELETED]]
+  var changeType: ToStringLiteral[AnonCHANGED, CHANGED | DELETED, Exclude[CHANGED | DELETED, CHANGED | DELETED]]
   /** List of changes to entries within the observed directory (including the entry itself)  */
   var changes: js.UndefOr[js.Array[NotificationChange]] = js.undefined
   /** The identifier of the file system related to this change. */
@@ -37,7 +37,7 @@ trait NotificationOptions extends js.Object {
 object NotificationOptions {
   @scala.inline
   def apply(
-    changeType: ToStringLiteral[AnonCHANGED, String, Exclude[String, CHANGED | DELETED]],
+    changeType: ToStringLiteral[AnonCHANGED, CHANGED | DELETED, Exclude[CHANGED | DELETED, CHANGED | DELETED]],
     fileSystemId: String,
     observedPath: String,
     recursive: Boolean,

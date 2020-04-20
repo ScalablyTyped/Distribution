@@ -21,7 +21,6 @@ object AnonClear {
     set: (Element, String, js.Any) => Unit
   ): AnonClear = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), get = js.Any.fromFunction2(get), getAll = js.Any.fromFunction2(getAll), set = js.Any.fromFunction3(set))
-  
     __obj.asInstanceOf[AnonClear]
   }
 }

@@ -12,7 +12,6 @@ object INumberFormatter {
   @scala.inline
   def apply(format: Double => String): INumberFormatter = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format))
-  
     __obj.asInstanceOf[INumberFormatter]
   }
 }

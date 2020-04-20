@@ -14,7 +14,6 @@ object CloudflareAppsProxy {
   @scala.inline
   def apply(embedSiteId: String, hasRocketEmbed: Boolean, originalURL: OriginalURL): CloudflareAppsProxy = {
     val __obj = js.Dynamic.literal(embedSiteId = embedSiteId.asInstanceOf[js.Any], hasRocketEmbed = hasRocketEmbed.asInstanceOf[js.Any], originalURL = originalURL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudflareAppsProxy]
   }
 }

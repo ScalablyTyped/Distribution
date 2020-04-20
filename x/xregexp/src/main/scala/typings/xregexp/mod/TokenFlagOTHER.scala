@@ -15,10 +15,8 @@ trait TokenFlagOTHER extends js.Object
 
 object TokenFlagOTHER {
   @scala.inline
-  def $: typings.xregexp.xregexpStrings.$ = this.cast("$")
+  def $: typings.xregexp.xregexpStrings.$ = "$".asInstanceOf[typings.xregexp.xregexpStrings.$]
   @scala.inline
-  def _underscore: typings.xregexp.xregexpStrings._underscore = this.cast("_")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def _underscore: typings.xregexp.xregexpStrings._underscore = "_".asInstanceOf[typings.xregexp.xregexpStrings._underscore]
 }
 

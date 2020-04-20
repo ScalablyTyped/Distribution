@@ -19,7 +19,6 @@ object TeamsUpdateDiscussionCommentInOrgParams {
   @scala.inline
   def apply(body: String, comment_number: Double, discussion_number: Double, org: String, team_slug: String): TeamsUpdateDiscussionCommentInOrgParams = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], comment_number = comment_number.asInstanceOf[js.Any], discussion_number = discussion_number.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamsUpdateDiscussionCommentInOrgParams]
   }
 }

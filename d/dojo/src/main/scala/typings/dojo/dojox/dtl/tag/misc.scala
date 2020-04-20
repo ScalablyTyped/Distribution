@@ -127,7 +127,6 @@ object misc {
     with_ : (js.Any, js.Any) => js.Any
   ): misc = {
     val __obj = js.Dynamic.literal(DebugNode = js.Any.fromFunction1(DebugNode), FilterNode = js.Any.fromFunction2(FilterNode), FirstOfNode = js.Any.fromFunction2(FirstOfNode), SpacelessNode = js.Any.fromFunction2(SpacelessNode), TemplateTagNode = js.Any.fromFunction2(TemplateTagNode), WidthRatioNode = js.Any.fromFunction4(WidthRatioNode), WithNode = js.Any.fromFunction3(WithNode), comment = js.Any.fromFunction2(comment), debug = js.Any.fromFunction2(debug), filter = js.Any.fromFunction2(filter), firstof = js.Any.fromFunction2(firstof), spaceless = js.Any.fromFunction2(spaceless), templatetag = js.Any.fromFunction2(templatetag), widthratio = js.Any.fromFunction2(widthratio), with_ = js.Any.fromFunction2(with_))
-  
     __obj.asInstanceOf[misc]
   }
 }

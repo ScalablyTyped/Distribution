@@ -38,7 +38,6 @@ object GenericCollection {
     update: () => GenericCollection[T]
   ): GenericCollection[T] = {
     val __obj = js.Dynamic.literal(each = js.Any.fromFunction1(each), elements = elements.asInstanceOf[js.Any], randomize = js.Any.fromFunction1(randomize), rename = js.Any.fromFunction1(rename), select = js.Any.fromFunction0(select), toGrid = js.Any.fromFunction2(toGrid), update = js.Any.fromFunction0(update))
-  
     __obj.asInstanceOf[GenericCollection[T]]
   }
 }

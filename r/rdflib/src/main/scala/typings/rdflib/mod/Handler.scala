@@ -13,7 +13,6 @@ object Handler {
   @scala.inline
   def apply(dom: js.Any, response: js.Any): Handler = {
     val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Handler]
   }
 }

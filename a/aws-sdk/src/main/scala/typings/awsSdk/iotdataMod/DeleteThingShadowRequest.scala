@@ -16,7 +16,6 @@ object DeleteThingShadowRequest {
   @scala.inline
   def apply(thingName: ThingName): DeleteThingShadowRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteThingShadowRequest]
   }
 }

@@ -12,7 +12,6 @@ object UsersCheckBlockedParams {
   @scala.inline
   def apply(username: String): UsersCheckBlockedParams = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsersCheckBlockedParams]
   }
 }

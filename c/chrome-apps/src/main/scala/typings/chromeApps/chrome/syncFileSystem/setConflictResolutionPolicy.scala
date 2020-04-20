@@ -2,8 +2,10 @@ package typings.chromeApps.chrome.syncFileSystem
 
 import typings.chromeApps.AnonLASTWRITEWIN
 import typings.chromeApps.chrome.ToStringLiteral
-import typings.chromeApps.chromeAppsStrings.last_write_win
-import typings.chromeApps.chromeAppsStrings.manual_
+import typings.chromeApps.chromeAppsStrings.LAST_WRITE_WIN
+import typings.chromeApps.chromeAppsStrings.MANUAL
+import typings.chromeApps.chromeAppsStrings.last_write_win_
+import typings.chromeApps.chromeAppsStrings.manual__
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,9 +24,19 @@ object setConflictResolutionPolicy extends js.Object {
     * @see ConflictResolutionPolicy
     * @param [callback] A generic result callback to indicate success or failure.
     */
-  def apply(policy: ToStringLiteral[AnonLASTWRITEWIN, String, Exclude[String, last_write_win | manual_]]): Unit = js.native
   def apply(
-    policy: ToStringLiteral[AnonLASTWRITEWIN, String, Exclude[String, last_write_win | manual_]],
+    policy: ToStringLiteral[
+      AnonLASTWRITEWIN, 
+      LAST_WRITE_WIN | MANUAL, 
+      Exclude[LAST_WRITE_WIN | MANUAL, last_write_win_ | manual__]
+    ]
+  ): Unit = js.native
+  def apply(
+    policy: ToStringLiteral[
+      AnonLASTWRITEWIN, 
+      LAST_WRITE_WIN | MANUAL, 
+      Exclude[LAST_WRITE_WIN | MANUAL, last_write_win_ | manual__]
+    ],
     callback: js.Function0[Unit]
   ): Unit = js.native
 }

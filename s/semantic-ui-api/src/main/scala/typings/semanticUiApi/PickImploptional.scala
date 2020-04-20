@@ -14,7 +14,6 @@ object PickImploptional {
   @scala.inline
   def apply(optional: RegExp): PickImploptional = {
     val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImploptional]
   }
 }

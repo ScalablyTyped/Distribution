@@ -14,14 +14,12 @@ trait FlipPositionType extends js.Object
 
 object FlipPositionType {
   @scala.inline
-  def bottom: typings.atlaskitLayer.atlaskitLayerStrings.bottom = this.cast("bottom")
+  def bottom: typings.atlaskitLayer.atlaskitLayerStrings.bottom = "bottom".asInstanceOf[typings.atlaskitLayer.atlaskitLayerStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.atlaskitLayer.atlaskitLayerStrings.left = "left".asInstanceOf[typings.atlaskitLayer.atlaskitLayerStrings.left]
   @scala.inline
-  def left: typings.atlaskitLayer.atlaskitLayerStrings.left = this.cast("left")
+  def right: typings.atlaskitLayer.atlaskitLayerStrings.right = "right".asInstanceOf[typings.atlaskitLayer.atlaskitLayerStrings.right]
   @scala.inline
-  def right: typings.atlaskitLayer.atlaskitLayerStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.atlaskitLayer.atlaskitLayerStrings.top = this.cast("top")
+  def top: typings.atlaskitLayer.atlaskitLayerStrings.top = "top".asInstanceOf[typings.atlaskitLayer.atlaskitLayerStrings.top]
 }
 

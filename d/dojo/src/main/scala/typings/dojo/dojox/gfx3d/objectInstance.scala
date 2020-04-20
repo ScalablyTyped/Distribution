@@ -106,7 +106,6 @@ object objectInstance {
     toStdFill: (js.Any, js.Any) => js.Any
   ): objectInstance = {
     val __obj = js.Dynamic.literal(applyLeftTransform = js.Any.fromFunction1(applyLeftTransform), applyRightTransform = js.Any.fromFunction1(applyRightTransform), applyTransform = js.Any.fromFunction1(applyTransform), destroy = js.Any.fromFunction0(destroy), draw = js.Any.fromFunction1(draw), getOutline = js.Any.fromFunction0(getOutline), getZOrder = js.Any.fromFunction0(getZOrder), invalidate = js.Any.fromFunction0(invalidate), render = js.Any.fromFunction1(render), setFill = js.Any.fromFunction1(setFill), setObject = js.Any.fromFunction1(setObject), setStroke = js.Any.fromFunction1(setStroke), setTransform = js.Any.fromFunction1(setTransform), toStdFill = js.Any.fromFunction2(toStdFill))
-  
     __obj.asInstanceOf[objectInstance]
   }
 }

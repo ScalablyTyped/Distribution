@@ -22,7 +22,6 @@ object AnonAUDMOP {
     XXX: js.Array[scala.Nothing]
   ): AnonAUDMOP = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], MOP = MOP.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAUDMOP]
   }
 }

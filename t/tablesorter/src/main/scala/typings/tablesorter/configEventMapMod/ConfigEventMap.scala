@@ -12,10 +12,8 @@ trait ConfigEventMap extends js.Object
 
 object ConfigEventMap {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def filterEnd: typings.tablesorter.tablesorterStrings.filterEnd = "filterEnd".asInstanceOf[typings.tablesorter.tablesorterStrings.filterEnd]
   @scala.inline
-  def filterEnd: typings.tablesorter.tablesorterStrings.filterEnd = this.cast("filterEnd")
-  @scala.inline
-  def filterInit: typings.tablesorter.tablesorterStrings.filterInit = this.cast("filterInit")
+  def filterInit: typings.tablesorter.tablesorterStrings.filterInit = "filterInit".asInstanceOf[typings.tablesorter.tablesorterStrings.filterInit]
 }
 

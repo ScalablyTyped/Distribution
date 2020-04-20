@@ -14,7 +14,6 @@ object CreateLinkOptions {
   @scala.inline
   def apply(newWindow: Boolean, text: String, url: String): CreateLinkOptions = {
     val __obj = js.Dynamic.literal(newWindow = newWindow.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateLinkOptions]
   }
 }

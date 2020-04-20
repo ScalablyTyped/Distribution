@@ -12,7 +12,6 @@ object ConnectOpts {
   @scala.inline
   def apply(adapter: String): ConnectOpts = {
     val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectOpts]
   }
 }

@@ -235,6 +235,7 @@ trait geometryEngineAsync extends js.Object {
   def geodesicBuffer(geometry: Geometry_, distance: Double, unit: String, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
   def geodesicBuffer(geometry: Geometry_, distance: Double, unit: Double): js.Promise[Polygon | js.Array[Polygon]] = js.native
   def geodesicBuffer(geometry: Geometry_, distance: Double, unit: Double, unionResults: Boolean): js.Promise[Polygon | js.Array[Polygon]] = js.native
+  def geodesicDensify(geometry: Polygon, maxSegmentLength: Double): js.Promise[Geometry_] = js.native
   def geodesicDensify(geometry: Polygon, maxSegmentLength: Double, maxSegmentLengthUnit: String): js.Promise[Geometry_] = js.native
   def geodesicDensify(geometry: Polygon, maxSegmentLength: Double, maxSegmentLengthUnit: Double): js.Promise[Geometry_] = js.native
   /**
@@ -243,10 +244,11 @@ trait geometryEngineAsync extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html#geodesicDensify)
     *
     * @param geometry A polyline or polygon to densify.
-    * @param maxSegmentLength The maximum segment length allowed. This must be a positive value.
-    * @param maxSegmentLengthUnit Measurement unit for `maxSegmentLength`. If a unit is not specified, the units are considered to be the same as the units of the `geometry`. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
+    * @param maxSegmentLength The maximum segment length allowed (in meters if a `maxSegmentLengthUnit` is not provided). This must be a positive value.
+    * @param maxSegmentLengthUnit Measurement unit for `maxSegmentLength`. If not provided, the unit will default to `meters`. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
     *
     */
+  def geodesicDensify(geometry: Polyline, maxSegmentLength: Double): js.Promise[Geometry_] = js.native
   def geodesicDensify(geometry: Polyline, maxSegmentLength: Double, maxSegmentLengthUnit: String): js.Promise[Geometry_] = js.native
   def geodesicDensify(geometry: Polyline, maxSegmentLength: Double, maxSegmentLengthUnit: Double): js.Promise[Geometry_] = js.native
   /**
@@ -322,14 +324,14 @@ trait geometryEngineAsync extends js.Object {
     *
     */
   def nearestVertices(geometry: Geometry_, inputPoint: Point, searchRadius: Double, maxVertexCountToReturn: Double): js.Promise[NearestPointResult] = js.native
-  def offset(geometry: js.Array[Geometry_], offsetDistance: Double, offsetUnit: String, joinType: String): js.Promise[js.Array[Geometry_]] = js.native
+  def offset(geometry: js.Array[Geometry_], offsetDistance: Double, offsetUnit: String, joinType: String): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   def offset(
     geometry: js.Array[Geometry_],
     offsetDistance: Double,
     offsetUnit: String,
     joinType: String,
     bevelRatio: Double
-  ): js.Promise[js.Array[Geometry_]] = js.native
+  ): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   def offset(
     geometry: js.Array[Geometry_],
     offsetDistance: Double,
@@ -337,15 +339,15 @@ trait geometryEngineAsync extends js.Object {
     joinType: String,
     bevelRatio: Double,
     flattenError: Double
-  ): js.Promise[js.Array[Geometry_]] = js.native
-  def offset(geometry: js.Array[Geometry_], offsetDistance: Double, offsetUnit: Double, joinType: String): js.Promise[js.Array[Geometry_]] = js.native
+  ): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
+  def offset(geometry: js.Array[Geometry_], offsetDistance: Double, offsetUnit: Double, joinType: String): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   def offset(
     geometry: js.Array[Geometry_],
     offsetDistance: Double,
     offsetUnit: Double,
     joinType: String,
     bevelRatio: Double
-  ): js.Promise[js.Array[Geometry_]] = js.native
+  ): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   def offset(
     geometry: js.Array[Geometry_],
     offsetDistance: Double,
@@ -353,7 +355,7 @@ trait geometryEngineAsync extends js.Object {
     joinType: String,
     bevelRatio: Double,
     flattenError: Double
-  ): js.Promise[js.Array[Geometry_]] = js.native
+  ): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   /**
     * The offset operation creates a geometry that is a constant planar distance from an input polyline or polygon. It is similar to buffering, but produces a one-sided result.
     *
@@ -367,14 +369,14 @@ trait geometryEngineAsync extends js.Object {
     * @param flattenError Applicable when `joinType = 'round'`; flattenError determines the maximum distance of the resulting segments compared to the true circular arc. The algorithm never produces more than around 180 vertices for each round join.
     *
     */
-  def offset(geometry: Geometry_, offsetDistance: Double, offsetUnit: String, joinType: String): js.Promise[js.Array[Geometry_]] = js.native
+  def offset(geometry: Geometry_, offsetDistance: Double, offsetUnit: String, joinType: String): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   def offset(
     geometry: Geometry_,
     offsetDistance: Double,
     offsetUnit: String,
     joinType: String,
     bevelRatio: Double
-  ): js.Promise[js.Array[Geometry_]] = js.native
+  ): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   def offset(
     geometry: Geometry_,
     offsetDistance: Double,
@@ -382,15 +384,15 @@ trait geometryEngineAsync extends js.Object {
     joinType: String,
     bevelRatio: Double,
     flattenError: Double
-  ): js.Promise[js.Array[Geometry_]] = js.native
-  def offset(geometry: Geometry_, offsetDistance: Double, offsetUnit: Double, joinType: String): js.Promise[js.Array[Geometry_]] = js.native
+  ): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
+  def offset(geometry: Geometry_, offsetDistance: Double, offsetUnit: Double, joinType: String): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   def offset(
     geometry: Geometry_,
     offsetDistance: Double,
     offsetUnit: Double,
     joinType: String,
     bevelRatio: Double
-  ): js.Promise[js.Array[Geometry_]] = js.native
+  ): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   def offset(
     geometry: Geometry_,
     offsetDistance: Double,
@@ -398,7 +400,7 @@ trait geometryEngineAsync extends js.Object {
     joinType: String,
     bevelRatio: Double,
     flattenError: Double
-  ): js.Promise[js.Array[Geometry_]] = js.native
+  ): js.Promise[Geometry_ | js.Array[Geometry_]] = js.native
   /**
     * Indicates if one geometry overlaps another geometry.
     *

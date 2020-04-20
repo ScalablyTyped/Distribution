@@ -26,7 +26,6 @@ object IZoom {
     reset: () => Unit
   ): IZoom = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], mouseButton = mouseButton.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[IZoom]
   }
 }

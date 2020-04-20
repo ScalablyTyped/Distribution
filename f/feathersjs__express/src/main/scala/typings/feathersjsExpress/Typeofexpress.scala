@@ -11,6 +11,7 @@ import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.express.mod.RouterOptions
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.node.httpMod.IncomingMessage
@@ -40,7 +41,7 @@ trait Typeofexpress extends js.Object {
     */
   @JSName("raw")
   var raw_Original: Fn1 = js.native
-  var request: Request_[ParamsDictionary] = js.native
+  var request: Request_[ParamsDictionary, _, _, Query] = js.native
   var response: Response_[_] = js.native
   /**
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
@@ -68,11 +69,11 @@ trait Typeofexpress extends js.Object {
   /**
     * These are the exposed prototypes.
     */
-  def application(req: Request[ParamsDictionary, _, _], res: Response[_]): js.Any = js.native
+  def application(req: Request[ParamsDictionary, _, _, Query], res: Response[_]): js.Any = js.native
   /**
     * These are the exposed prototypes.
     */
-  def application(req: Request[ParamsDictionary, _, _], res: ServerResponse): js.Any = js.native
+  def application(req: Request[ParamsDictionary, _, _, Query], res: ServerResponse): js.Any = js.native
   /**
     * These are the exposed prototypes.
     */

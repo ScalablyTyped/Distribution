@@ -13,7 +13,6 @@ object AnonHasMediaConfig {
   @scala.inline
   def apply(hasMediaConfig: Boolean, supported: Boolean): AnonHasMediaConfig = {
     val __obj = js.Dynamic.literal(hasMediaConfig = hasMediaConfig.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHasMediaConfig]
   }
 }

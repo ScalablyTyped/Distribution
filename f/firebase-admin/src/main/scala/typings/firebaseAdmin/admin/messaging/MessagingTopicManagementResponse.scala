@@ -39,7 +39,6 @@ object MessagingTopicManagementResponse {
   @scala.inline
   def apply(errors: js.Array[FirebaseArrayIndexError], failureCount: Double, successCount: Double): MessagingTopicManagementResponse = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], failureCount = failureCount.asInstanceOf[js.Any], successCount = successCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessagingTopicManagementResponse]
   }
 }

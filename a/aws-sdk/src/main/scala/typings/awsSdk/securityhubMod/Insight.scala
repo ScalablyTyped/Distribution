@@ -33,7 +33,6 @@ object Insight {
     Name: NonEmptyString
   ): Insight = {
     val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any], GroupByAttribute = GroupByAttribute.asInstanceOf[js.Any], InsightArn = InsightArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Insight]
   }
 }

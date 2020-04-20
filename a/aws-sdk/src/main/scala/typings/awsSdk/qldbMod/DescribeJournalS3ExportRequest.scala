@@ -20,7 +20,6 @@ object DescribeJournalS3ExportRequest {
   @scala.inline
   def apply(ExportId: UniqueId, Name: LedgerName): DescribeJournalS3ExportRequest = {
     val __obj = js.Dynamic.literal(ExportId = ExportId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeJournalS3ExportRequest]
   }
 }

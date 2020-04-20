@@ -332,7 +332,7 @@ object azdataStrings {
   sealed trait `wrap-reverse` extends FlexWrapType
   
   @scala.inline
-  def `Spacetable-column-group`: `Spacetable-column-group` = " table-column-group".asInstanceOf[`Spacetable-column-group`]
+  def `Spacetable-column-group`: `Spacetable-column-group` = (" table-column-group").asInstanceOf[`Spacetable-column-group`]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
@@ -378,7 +378,7 @@ object azdataStrings {
   @scala.inline
   def executionPlan: executionPlan = "executionPlan".asInstanceOf[executionPlan]
   @scala.inline
-  def `first baseline`: `first baseline` = "first baseline".asInstanceOf[`first baseline`]
+  def `first baseline`: `first baseline` = ("first baseline").asInstanceOf[`first baseline`]
   @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   @scala.inline
@@ -410,7 +410,7 @@ object azdataStrings {
   @scala.inline
   def justify: justify = "justify".asInstanceOf[justify]
   @scala.inline
-  def `last baseline`: `last baseline` = "last baseline".asInstanceOf[`last baseline`]
+  def `last baseline`: `last baseline` = ("last baseline").asInstanceOf[`last baseline`]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -452,7 +452,7 @@ object azdataStrings {
   @scala.inline
   def `run-in`: `run-in` = "run-in".asInstanceOf[`run-in`]
   @scala.inline
-  def `safe center`: `safe center` = "safe center".asInstanceOf[`safe center`]
+  def `safe center`: `safe center` = ("safe center").asInstanceOf[`safe center`]
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   @scala.inline
@@ -502,7 +502,7 @@ object azdataStrings {
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   @scala.inline
-  def `unsafe center`: `unsafe center` = "unsafe center".asInstanceOf[`unsafe center`]
+  def `unsafe center`: `unsafe center` = ("unsafe center").asInstanceOf[`unsafe center`]
   @scala.inline
   def unset: unset = "unset".asInstanceOf[unset]
   @scala.inline

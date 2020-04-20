@@ -6,9 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait BatchGetValuesByDataFilterRequest extends js.Object {
   /**
-    * The data filters used to match the ranges of values to retrieve.  Ranges
-    * that match any of the specified data filters will be included in the
-    * response.
+    * The data filters used to match the ranges of values to retrieve. Ranges
+    * that match any of the specified data filters are included in the response.
     */
   var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
   /**
@@ -22,10 +21,9 @@ trait BatchGetValuesByDataFilterRequest extends js.Object {
     * The major dimension that results should use.
     *
     * For example, if the spreadsheet data is: `A1=1,B1=2,A2=3,B2=4`,
-    * then a request that selects that range and sets `majorDimension=ROWS` will
-    * return `[[1,2],[3,4]]`,
-    * whereas a request that sets `majorDimension=COLUMNS` will return
-    * `[[1,3],[2,4]]`.
+    * then a request that selects that range and sets `majorDimension=ROWS`
+    * returns `[[1,2],[3,4]]`, whereas a request that sets
+    * `majorDimension=COLUMNS` returns `[[1,3],[2,4]]`.
     */
   var majorDimension: js.UndefOr[String] = js.undefined
   /**

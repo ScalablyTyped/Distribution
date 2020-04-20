@@ -14,7 +14,6 @@ object AnonIndex {
   @scala.inline
   def apply(index: Double, nodesScope: IParentTreeNodeScope): AnonIndex = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], nodesScope = nodesScope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndex]
   }
 }

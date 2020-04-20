@@ -16,12 +16,10 @@ trait AcQuitOption extends js.Object
 
 object AcQuitOption {
   @scala.inline
-  def acQuitPrompt: `0` = this.cast(0)
+  def acQuitPrompt: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acQuitSaveAll: `1` = this.cast(1)
+  def acQuitSaveAll: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acQuitSaveNone: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acQuitSaveNone: `2` = 2.asInstanceOf[`2`]
 }
 

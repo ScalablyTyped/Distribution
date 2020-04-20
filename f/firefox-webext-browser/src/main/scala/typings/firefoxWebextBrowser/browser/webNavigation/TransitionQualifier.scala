@@ -14,14 +14,12 @@ trait TransitionQualifier extends js.Object
 
 object TransitionQualifier {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def client_redirect: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.client_redirect = "client_redirect".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.client_redirect]
   @scala.inline
-  def client_redirect: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.client_redirect = this.cast("client_redirect")
+  def forward_back: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.forward_back = "forward_back".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.forward_back]
   @scala.inline
-  def forward_back: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.forward_back = this.cast("forward_back")
+  def from_address_bar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.from_address_bar = "from_address_bar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.from_address_bar]
   @scala.inline
-  def from_address_bar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.from_address_bar = this.cast("from_address_bar")
-  @scala.inline
-  def server_redirect: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.server_redirect = this.cast("server_redirect")
+  def server_redirect: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.server_redirect = "server_redirect".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.server_redirect]
 }
 

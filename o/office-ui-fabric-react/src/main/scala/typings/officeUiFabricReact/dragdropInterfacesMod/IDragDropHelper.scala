@@ -30,7 +30,6 @@ object IDragDropHelper {
     unsubscribe: (HTMLElement, String) => Unit
   ): IDragDropHelper = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), subscribe = js.Any.fromFunction3(subscribe), unsubscribe = js.Any.fromFunction2(unsubscribe))
-  
     __obj.asInstanceOf[IDragDropHelper]
   }
 }

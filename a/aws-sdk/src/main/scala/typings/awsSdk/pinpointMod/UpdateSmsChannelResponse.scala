@@ -13,7 +13,6 @@ object UpdateSmsChannelResponse {
   @scala.inline
   def apply(SMSChannelResponse: SMSChannelResponse): UpdateSmsChannelResponse = {
     val __obj = js.Dynamic.literal(SMSChannelResponse = SMSChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSmsChannelResponse]
   }
 }

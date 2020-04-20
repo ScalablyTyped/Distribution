@@ -14,7 +14,6 @@ object TagsWithEmail {
   @scala.inline
   def apply(email: String, tags: Strings): TagsWithEmail = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagsWithEmail]
   }
 }

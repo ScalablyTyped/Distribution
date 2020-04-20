@@ -23,7 +23,6 @@ object LexGenericAttachment {
     title: String
   ): LexGenericAttachment = {
     val __obj = js.Dynamic.literal(attachmentLinkUrl = attachmentLinkUrl.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any], subTitle = subTitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LexGenericAttachment]
   }
 }

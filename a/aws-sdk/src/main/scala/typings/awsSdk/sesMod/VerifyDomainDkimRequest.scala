@@ -16,7 +16,6 @@ object VerifyDomainDkimRequest {
   @scala.inline
   def apply(Domain: Domain): VerifyDomainDkimRequest = {
     val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyDomainDkimRequest]
   }
 }

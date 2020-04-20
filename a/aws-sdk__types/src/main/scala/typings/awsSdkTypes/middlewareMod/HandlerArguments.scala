@@ -16,7 +16,6 @@ object HandlerArguments {
   @scala.inline
   def apply[Input /* <: js.Object */](input: Input): HandlerArguments[Input] = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HandlerArguments[Input]]
   }
 }

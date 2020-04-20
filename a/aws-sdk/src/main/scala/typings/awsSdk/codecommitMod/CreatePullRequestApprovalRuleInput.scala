@@ -28,7 +28,6 @@ object CreatePullRequestApprovalRuleInput {
     pullRequestId: PullRequestId
   ): CreatePullRequestApprovalRuleInput = {
     val __obj = js.Dynamic.literal(approvalRuleContent = approvalRuleContent.asInstanceOf[js.Any], approvalRuleName = approvalRuleName.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePullRequestApprovalRuleInput]
   }
 }

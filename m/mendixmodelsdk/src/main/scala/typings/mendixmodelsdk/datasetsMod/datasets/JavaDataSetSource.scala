@@ -23,11 +23,11 @@ class JavaDataSetSource protected () extends DataSetSource {
   ) = this()
   @JSName("model")
   var model_FJavaDataSetSource: IModel = js.native
-  def columns(): IList[DataSetColumn] = js.native
+  def columns: IList[DataSetColumn] = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def useLegacyCodeGeneration(): Boolean = js.native
+  def useLegacyCodeGeneration: Boolean = js.native
   def useLegacyCodeGeneration(newValue: Boolean): js.Any = js.native
 }
 

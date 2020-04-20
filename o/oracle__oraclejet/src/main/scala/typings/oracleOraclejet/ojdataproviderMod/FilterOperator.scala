@@ -15,7 +15,6 @@ object FilterOperator {
   @scala.inline
   def apply[D](filter: js.Array[_] => js.Array[_], op: AttributeOperator | CompoundOperator): FilterOperator[D] = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), op = op.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilterOperator[D]]
   }
 }

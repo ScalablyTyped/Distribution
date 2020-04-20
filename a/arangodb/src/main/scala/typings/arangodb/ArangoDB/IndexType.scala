@@ -15,16 +15,14 @@ trait IndexType extends js.Object
 
 object IndexType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fulltext: typings.arangodb.arangodbStrings.fulltext = "fulltext".asInstanceOf[typings.arangodb.arangodbStrings.fulltext]
   @scala.inline
-  def fulltext: typings.arangodb.arangodbStrings.fulltext = this.cast("fulltext")
+  def geo: typings.arangodb.arangodbStrings.geo = "geo".asInstanceOf[typings.arangodb.arangodbStrings.geo]
   @scala.inline
-  def geo: typings.arangodb.arangodbStrings.geo = this.cast("geo")
+  def hash: typings.arangodb.arangodbStrings.hash = "hash".asInstanceOf[typings.arangodb.arangodbStrings.hash]
   @scala.inline
-  def hash: typings.arangodb.arangodbStrings.hash = this.cast("hash")
+  def skiplist: typings.arangodb.arangodbStrings.skiplist = "skiplist".asInstanceOf[typings.arangodb.arangodbStrings.skiplist]
   @scala.inline
-  def skiplist: typings.arangodb.arangodbStrings.skiplist = this.cast("skiplist")
-  @scala.inline
-  def ttl: typings.arangodb.arangodbStrings.ttl = this.cast("ttl")
+  def ttl: typings.arangodb.arangodbStrings.ttl = "ttl".asInstanceOf[typings.arangodb.arangodbStrings.ttl]
 }
 

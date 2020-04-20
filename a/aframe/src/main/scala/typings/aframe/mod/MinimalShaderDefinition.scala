@@ -18,7 +18,6 @@ object MinimalShaderDefinition {
     ]
   ): MinimalShaderDefinition = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MinimalShaderDefinition]
   }
 }

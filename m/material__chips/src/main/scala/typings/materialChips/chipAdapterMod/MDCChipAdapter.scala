@@ -76,7 +76,6 @@ object MDCChipAdapter {
     setStyleProperty: (String, String) => Unit
   ): MDCChipAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), addClassToLeadingIcon = js.Any.fromFunction1(addClassToLeadingIcon), deregisterEventHandler = js.Any.fromFunction2(deregisterEventHandler), deregisterTrailingIconInteractionHandler = js.Any.fromFunction2(deregisterTrailingIconInteractionHandler), eventTargetHasClass = js.Any.fromFunction2(eventTargetHasClass), getComputedStyleValue = js.Any.fromFunction1(getComputedStyleValue), hasClass = js.Any.fromFunction1(hasClass), notifyInteraction = js.Any.fromFunction0(notifyInteraction), notifyRemoval = js.Any.fromFunction0(notifyRemoval), notifyTrailingIconInteraction = js.Any.fromFunction0(notifyTrailingIconInteraction), registerEventHandler = js.Any.fromFunction2(registerEventHandler), registerTrailingIconInteractionHandler = js.Any.fromFunction2(registerTrailingIconInteractionHandler), removeClass = js.Any.fromFunction1(removeClass), removeClassFromLeadingIcon = js.Any.fromFunction1(removeClassFromLeadingIcon), setStyleProperty = js.Any.fromFunction2(setStyleProperty))
-  
     __obj.asInstanceOf[MDCChipAdapter]
   }
 }

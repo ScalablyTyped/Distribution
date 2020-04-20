@@ -15,7 +15,6 @@ object ConverterResult {
   @scala.inline
   def apply(errors: js.Array[Diagnostic], project: ProjectReflection): ConverterResult = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConverterResult]
   }
 }

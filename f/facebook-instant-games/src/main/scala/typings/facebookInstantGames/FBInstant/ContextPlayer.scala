@@ -32,7 +32,6 @@ object ContextPlayer {
   @scala.inline
   def apply(getID: () => String, getName: () => String | Null, getPhoto: () => String | Null): ContextPlayer = {
     val __obj = js.Dynamic.literal(getID = js.Any.fromFunction0(getID), getName = js.Any.fromFunction0(getName), getPhoto = js.Any.fromFunction0(getPhoto))
-  
     __obj.asInstanceOf[ContextPlayer]
   }
 }

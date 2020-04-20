@@ -16,7 +16,6 @@ object GetVocabularyRequest {
   @scala.inline
   def apply(VocabularyName: VocabularyName): GetVocabularyRequest = {
     val __obj = js.Dynamic.literal(VocabularyName = VocabularyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVocabularyRequest]
   }
 }

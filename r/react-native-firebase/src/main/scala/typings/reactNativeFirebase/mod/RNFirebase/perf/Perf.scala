@@ -27,7 +27,6 @@ object Perf {
     setPerformanceCollectionEnabled: Boolean => Unit
   ): Perf = {
     val __obj = js.Dynamic.literal(newHttpMetric = js.Any.fromFunction2(newHttpMetric), newTrace = js.Any.fromFunction1(newTrace), setPerformanceCollectionEnabled = js.Any.fromFunction1(setPerformanceCollectionEnabled))
-  
     __obj.asInstanceOf[Perf]
   }
 }

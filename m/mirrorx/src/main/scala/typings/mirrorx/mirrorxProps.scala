@@ -19,7 +19,7 @@ trait mirrorxProps {
   def RedirectProps: typings.mirrorx.mod.RedirectProps.type = typings.mirrorx.mod.RedirectProps
   type RedirectProps = typings.mirrorx.mod.RedirectProps
   @scala.inline
-  def RouterProps: ConnectedRouterProps.type = typings.mirrorx.mod.ConnectedRouterProps
+  def RouterProps: ConnectedRouterProps.type = ConnectedRouterProps
   type RouterProps[State] = ConnectedRouterProps[State]
 }
 

@@ -50,7 +50,6 @@ object IgQRCodeBarcodeMethods {
     styleUpdated: () => Unit
   ): IgQRCodeBarcodeMethods = {
     val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction1(changeLocale), destroy = js.Any.fromFunction0(destroy), exportVisualData = js.Any.fromFunction0(exportVisualData), flush = js.Any.fromFunction0(flush), styleUpdated = js.Any.fromFunction0(styleUpdated))
-  
     __obj.asInstanceOf[IgQRCodeBarcodeMethods]
   }
 }

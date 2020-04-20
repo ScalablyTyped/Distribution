@@ -14,7 +14,6 @@ object IncludedPath {
   @scala.inline
   def apply(Indexes: js.Array[Index], Path: String): IncludedPath = {
     val __obj = js.Dynamic.literal(Indexes = Indexes.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IncludedPath]
   }
 }

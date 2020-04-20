@@ -13,12 +13,10 @@ trait LineCapType extends js.Object
 
 object LineCapType {
   @scala.inline
-  def butt: typings.weixinApp.weixinAppStrings.butt = this.cast("butt")
+  def butt: typings.weixinApp.weixinAppStrings.butt = "butt".asInstanceOf[typings.weixinApp.weixinAppStrings.butt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def round: typings.weixinApp.weixinAppStrings.round = "round".asInstanceOf[typings.weixinApp.weixinAppStrings.round]
   @scala.inline
-  def round: typings.weixinApp.weixinAppStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.weixinApp.weixinAppStrings.square = this.cast("square")
+  def square: typings.weixinApp.weixinAppStrings.square = "square".asInstanceOf[typings.weixinApp.weixinAppStrings.square]
 }
 

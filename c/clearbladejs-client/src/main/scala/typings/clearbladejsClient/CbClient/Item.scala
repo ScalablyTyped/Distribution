@@ -20,7 +20,6 @@ object Item {
     save: CbCallback => Unit
   ): Item = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], destroy = js.Any.fromFunction1(destroy), refresh = js.Any.fromFunction1(refresh), save = js.Any.fromFunction1(save))
-  
     __obj.asInstanceOf[Item]
   }
 }

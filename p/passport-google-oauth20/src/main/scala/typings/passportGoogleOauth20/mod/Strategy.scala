@@ -2,6 +2,7 @@ package typings.passportGoogleOauth20.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.passportOauth2.mod.OAuth2Strategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ class Strategy protected () extends OAuth2Strategy {
   def this(
     options: StrategyOptionsWithRequest,
     verify: js.Function5[
-        /* req */ Request_[ParamsDictionary], 
+        /* req */ Request_[ParamsDictionary, _, _, Query], 
         /* accessToken */ String, 
         /* refreshToken */ String, 
         /* profile */ Profile, 

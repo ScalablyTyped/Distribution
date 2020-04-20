@@ -14,14 +14,12 @@ trait SketchMSFillTypeEnum extends js.Object
 
 object SketchMSFillTypeEnum {
   @scala.inline
-  def `0`: typings.sketchapp.sketchappNumbers.`0` = this.cast(0)
+  def `0`: typings.sketchapp.sketchappNumbers.`0` = 0.asInstanceOf[typings.sketchapp.sketchappNumbers.`0`]
   @scala.inline
-  def `1`: typings.sketchapp.sketchappNumbers.`1` = this.cast(1)
+  def `1`: typings.sketchapp.sketchappNumbers.`1` = 1.asInstanceOf[typings.sketchapp.sketchappNumbers.`1`]
   @scala.inline
-  def `4`: typings.sketchapp.sketchappNumbers.`4` = this.cast(4)
+  def `4`: typings.sketchapp.sketchappNumbers.`4` = 4.asInstanceOf[typings.sketchapp.sketchappNumbers.`4`]
   @scala.inline
-  def `5`: typings.sketchapp.sketchappNumbers.`5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `5`: typings.sketchapp.sketchappNumbers.`5` = 5.asInstanceOf[typings.sketchapp.sketchappNumbers.`5`]
 }
 

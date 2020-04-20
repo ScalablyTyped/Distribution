@@ -16,7 +16,6 @@ object GetDevicesInPlacementResponse {
   @scala.inline
   def apply(devices: DeviceMap): GetDevicesInPlacementResponse = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDevicesInPlacementResponse]
   }
 }

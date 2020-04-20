@@ -18,22 +18,20 @@ trait HTTPMethod extends js.Object
 
 object HTTPMethod {
   @scala.inline
-  def DELETE: typings.swaggerStats.swaggerStatsStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.swaggerStats.swaggerStatsStrings.DELETE = "DELETE".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.DELETE]
   @scala.inline
-  def GET: typings.swaggerStats.swaggerStatsStrings.GET = this.cast("GET")
+  def GET: typings.swaggerStats.swaggerStatsStrings.GET = "GET".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.GET]
   @scala.inline
-  def HEAD: typings.swaggerStats.swaggerStatsStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.swaggerStats.swaggerStatsStrings.HEAD = "HEAD".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.HEAD]
   @scala.inline
-  def OPTIONS: typings.swaggerStats.swaggerStatsStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.swaggerStats.swaggerStatsStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.swaggerStats.swaggerStatsStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.swaggerStats.swaggerStatsStrings.PATCH = "PATCH".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PATCH]
   @scala.inline
-  def POST: typings.swaggerStats.swaggerStatsStrings.POST = this.cast("POST")
+  def POST: typings.swaggerStats.swaggerStatsStrings.POST = "POST".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.POST]
   @scala.inline
-  def PUT: typings.swaggerStats.swaggerStatsStrings.PUT = this.cast("PUT")
+  def PUT: typings.swaggerStats.swaggerStatsStrings.PUT = "PUT".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PUT]
   @scala.inline
-  def TRACE: typings.swaggerStats.swaggerStatsStrings.TRACE = this.cast("TRACE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TRACE: typings.swaggerStats.swaggerStatsStrings.TRACE = "TRACE".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.TRACE]
 }
 

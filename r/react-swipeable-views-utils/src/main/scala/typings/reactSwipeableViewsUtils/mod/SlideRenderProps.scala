@@ -13,7 +13,6 @@ object SlideRenderProps {
   @scala.inline
   def apply(index: Double, key: Double): SlideRenderProps = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SlideRenderProps]
   }
 }

@@ -26,7 +26,6 @@ object IDerivedFieldsInTableData {
   @scala.inline
   def apply(qActive: Boolean, qDefinitionName: String, qTags: js.Array[String]): IDerivedFieldsInTableData = {
     val __obj = js.Dynamic.literal(qActive = qActive.asInstanceOf[js.Any], qDefinitionName = qDefinitionName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDerivedFieldsInTableData]
   }
 }

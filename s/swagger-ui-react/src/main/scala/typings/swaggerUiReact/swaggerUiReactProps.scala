@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait swaggerUiReactProps {
   @scala.inline
-  def SwaggerUiReactProps: SwaggerUIProps.type = typings.swaggerUiReact.mod.SwaggerUIProps
+  def SwaggerUiReactProps: SwaggerUIProps.type = SwaggerUIProps
   type SwaggerUiReactProps = SwaggerUIProps
 }
 

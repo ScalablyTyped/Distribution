@@ -22,7 +22,6 @@ object IVaultUserSettingOperations {
     SetSubstituteUsers: IUserOrUserGroupIDs => Unit
   ): IVaultUserSettingOperations = {
     val __obj = js.Dynamic.literal(ChangeVaultLanguage = js.Any.fromFunction1(ChangeVaultLanguage), GetSubstituteUsers = js.Any.fromFunction0(GetSubstituteUsers), GetVaultLanguage = js.Any.fromFunction0(GetVaultLanguage), GetVaultLanguageCode = js.Any.fromFunction0(GetVaultLanguageCode), SetSubstituteUsers = js.Any.fromFunction1(SetSubstituteUsers))
-  
     __obj.asInstanceOf[IVaultUserSettingOperations]
   }
 }

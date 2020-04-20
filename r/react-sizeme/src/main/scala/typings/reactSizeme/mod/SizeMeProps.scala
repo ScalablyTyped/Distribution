@@ -13,7 +13,6 @@ object SizeMeProps {
   @scala.inline
   def apply(size: AnonHeight): SizeMeProps = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SizeMeProps]
   }
 }

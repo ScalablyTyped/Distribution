@@ -31,7 +31,6 @@ object TaskOrchestrationJob {
     variables: StringDictionary[String]
   ): TaskOrchestrationJob = {
     val __obj = js.Dynamic.literal(demands = demands.asInstanceOf[js.Any], executeAs = executeAs.asInstanceOf[js.Any], executionMode = executionMode.asInstanceOf[js.Any], executionTimeout = executionTimeout.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], itemType = itemType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskOrchestrationJob]
   }
 }

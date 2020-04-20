@@ -13,7 +13,6 @@ object PickImplnoAnimation {
   @scala.inline
   def apply(noAnimation: String): PickImplnoAnimation = {
     val __obj = js.Dynamic.literal(noAnimation = noAnimation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnoAnimation]
   }
 }

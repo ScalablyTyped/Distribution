@@ -24,7 +24,6 @@ object TypeofndbMongodb {
     next_reply: String => Double
   ): TypeofndbMongodb = {
     val __obj = js.Dynamic.literal(exec = js.Any.fromFunction5(exec), exec_simple = js.Any.fromFunction5(exec_simple), find = js.Any.fromFunction5(find), find_one = js.Any.fromFunction5(find_one), free_reply = js.Any.fromFunction1(free_reply), next_reply = js.Any.fromFunction1(next_reply))
-  
     __obj.asInstanceOf[TypeofndbMongodb]
   }
 }

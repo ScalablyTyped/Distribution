@@ -28,7 +28,6 @@ object UpdateLoadBalancerAttributeRequest {
     loadBalancerName: ResourceName
   ): UpdateLoadBalancerAttributeRequest = {
     val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], attributeValue = attributeValue.asInstanceOf[js.Any], loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateLoadBalancerAttributeRequest]
   }
 }

@@ -14,10 +14,8 @@ trait XlPieSliceLocation extends js.Object
 
 object XlPieSliceLocation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlHorizontalCoordinate: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlHorizontalCoordinate: `1` = this.cast(1)
-  @scala.inline
-  def xlVerticalCoordinate: `2` = this.cast(2)
+  def xlVerticalCoordinate: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -19,24 +19,22 @@ trait HTTPMethod extends js.Object
 
 object HTTPMethod {
   @scala.inline
-  def CONNECT: typings.reactNativeViewPdf.reactNativeViewPdfStrings.CONNECT = this.cast("CONNECT")
+  def CONNECT: typings.reactNativeViewPdf.reactNativeViewPdfStrings.CONNECT = "CONNECT".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.CONNECT]
   @scala.inline
-  def DELETE: typings.reactNativeViewPdf.reactNativeViewPdfStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.reactNativeViewPdf.reactNativeViewPdfStrings.DELETE = "DELETE".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.DELETE]
   @scala.inline
-  def GET: typings.reactNativeViewPdf.reactNativeViewPdfStrings.GET = this.cast("GET")
+  def GET: typings.reactNativeViewPdf.reactNativeViewPdfStrings.GET = "GET".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.GET]
   @scala.inline
-  def HEAD: typings.reactNativeViewPdf.reactNativeViewPdfStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.reactNativeViewPdf.reactNativeViewPdfStrings.HEAD = "HEAD".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.HEAD]
   @scala.inline
-  def OPTIONS: typings.reactNativeViewPdf.reactNativeViewPdfStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.reactNativeViewPdf.reactNativeViewPdfStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.reactNativeViewPdf.reactNativeViewPdfStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.reactNativeViewPdf.reactNativeViewPdfStrings.PATCH = "PATCH".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.PATCH]
   @scala.inline
-  def POST: typings.reactNativeViewPdf.reactNativeViewPdfStrings.POST = this.cast("POST")
+  def POST: typings.reactNativeViewPdf.reactNativeViewPdfStrings.POST = "POST".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.POST]
   @scala.inline
-  def PUT: typings.reactNativeViewPdf.reactNativeViewPdfStrings.PUT = this.cast("PUT")
+  def PUT: typings.reactNativeViewPdf.reactNativeViewPdfStrings.PUT = "PUT".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.PUT]
   @scala.inline
-  def TRACE: typings.reactNativeViewPdf.reactNativeViewPdfStrings.TRACE = this.cast("TRACE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TRACE: typings.reactNativeViewPdf.reactNativeViewPdfStrings.TRACE = "TRACE".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.TRACE]
 }
 

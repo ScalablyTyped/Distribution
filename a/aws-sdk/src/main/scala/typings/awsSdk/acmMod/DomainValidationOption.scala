@@ -20,7 +20,6 @@ object DomainValidationOption {
   @scala.inline
   def apply(DomainName: DomainNameString, ValidationDomain: DomainNameString): DomainValidationOption = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], ValidationDomain = ValidationDomain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainValidationOption]
   }
 }

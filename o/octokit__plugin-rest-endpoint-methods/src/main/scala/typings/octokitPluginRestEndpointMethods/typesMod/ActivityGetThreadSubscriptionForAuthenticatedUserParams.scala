@@ -12,7 +12,6 @@ object ActivityGetThreadSubscriptionForAuthenticatedUserParams {
   @scala.inline
   def apply(thread_id: Double): ActivityGetThreadSubscriptionForAuthenticatedUserParams = {
     val __obj = js.Dynamic.literal(thread_id = thread_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActivityGetThreadSubscriptionForAuthenticatedUserParams]
   }
 }

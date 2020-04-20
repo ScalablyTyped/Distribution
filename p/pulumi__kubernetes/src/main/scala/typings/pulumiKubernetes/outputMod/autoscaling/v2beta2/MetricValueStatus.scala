@@ -29,7 +29,6 @@ object MetricValueStatus {
   @scala.inline
   def apply(averageUtilization: Double, averageValue: String, value: String): MetricValueStatus = {
     val __obj = js.Dynamic.literal(averageUtilization = averageUtilization.asInstanceOf[js.Any], averageValue = averageValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetricValueStatus]
   }
 }

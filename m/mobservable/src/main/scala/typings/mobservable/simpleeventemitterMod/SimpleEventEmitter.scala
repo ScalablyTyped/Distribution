@@ -21,7 +21,6 @@ object SimpleEventEmitter {
     once: js.Function1[/* repeated */ js.Any, Unit] => Lambda
   ): SimpleEventEmitter = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), listeners = listeners.asInstanceOf[js.Any], on = js.Any.fromFunction1(on), once = js.Any.fromFunction1(once))
-  
     __obj.asInstanceOf[SimpleEventEmitter]
   }
 }

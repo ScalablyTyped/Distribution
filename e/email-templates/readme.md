@@ -1,7 +1,7 @@
 
 # Scala.js typings for email-templates
 
-Typings are for version 6.0
+Typings are for version 7.0
 
 ## Library description:
 Create, preview, and send custom email templates for Node.js. Highly configurable and supports automatic inline CSS, stylesheets, embedded images and fonts, and much more! Made for sending beautiful emails with Lad.

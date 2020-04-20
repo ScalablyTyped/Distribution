@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeTabViewProps {
   @scala.inline
-  def PagerProps: Props.type = typings.reactNativeTabView.pagerMod.Props
+  def PagerProps: Props.type = Props
   type PagerProps[T /* <: Route */] = Props[T]
   @scala.inline
   def SceneViewProps: typings.reactNativeTabView.sceneViewMod.Props.type = typings.reactNativeTabView.sceneViewMod.Props

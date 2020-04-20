@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply[T](`object`: T): T = js.native
-  def apply[T](`object`: T, sortWith: js.Array[String]): T = js.native
-  def apply[T](`object`: T, sortWith: js.Function2[/* a */ String, /* b */ String, Double]): T = js.native
+  def apply[T](`object`: T, sortWith: js.Array[/* keyof T */ String]): T = js.native
+  def apply[T](
+    `object`: T,
+    sortWith: js.Function2[/* keyof T */ /* a */ String, /* keyof T */ /* b */ String, Double]
+  ): T = js.native
 }
 

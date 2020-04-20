@@ -22,18 +22,16 @@ trait WdStyleType extends js.Object
 
 object WdStyleType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdStyleTypeCharacter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdStyleTypeCharacter: `2` = this.cast(2)
+  def wdStyleTypeLinked: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdStyleTypeLinked: `6` = this.cast(6)
+  def wdStyleTypeList: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdStyleTypeList: `4` = this.cast(4)
+  def wdStyleTypeParagraph: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdStyleTypeParagraph: `1` = this.cast(1)
+  def wdStyleTypeParagraphOnly: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdStyleTypeParagraphOnly: `5` = this.cast(5)
-  @scala.inline
-  def wdStyleTypeTable: `3` = this.cast(3)
+  def wdStyleTypeTable: `3` = 3.asInstanceOf[`3`]
 }
 

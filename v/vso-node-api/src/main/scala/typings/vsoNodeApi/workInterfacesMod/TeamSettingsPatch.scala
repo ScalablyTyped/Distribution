@@ -26,7 +26,6 @@ object TeamSettingsPatch {
     workingDays: js.Array[DayOfWeek]
   ): TeamSettingsPatch = {
     val __obj = js.Dynamic.literal(backlogIteration = backlogIteration.asInstanceOf[js.Any], backlogVisibilities = backlogVisibilities.asInstanceOf[js.Any], bugsBehavior = bugsBehavior.asInstanceOf[js.Any], defaultIteration = defaultIteration.asInstanceOf[js.Any], defaultIterationMacro = defaultIterationMacro.asInstanceOf[js.Any], workingDays = workingDays.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamSettingsPatch]
   }
 }

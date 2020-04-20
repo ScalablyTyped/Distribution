@@ -12,7 +12,6 @@ object Link {
   @scala.inline
   def apply(href: String): Link = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Link]
   }
 }

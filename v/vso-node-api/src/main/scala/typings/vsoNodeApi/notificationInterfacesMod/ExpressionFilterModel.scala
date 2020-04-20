@@ -27,7 +27,6 @@ object ExpressionFilterModel {
     maxGroupLevel: Double
   ): ExpressionFilterModel = {
     val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], maxGroupLevel = maxGroupLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExpressionFilterModel]
   }
 }

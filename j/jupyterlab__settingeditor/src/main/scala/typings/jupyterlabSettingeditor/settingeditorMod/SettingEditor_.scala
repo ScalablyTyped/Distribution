@@ -62,15 +62,15 @@ class SettingEditor_ protected () extends Widget {
   /**
     * Whether the raw editor revert functionality is enabled.
     */
-  def canRevertRaw(): Boolean = js.native
+  def canRevertRaw: Boolean = js.native
   /**
     * Whether the raw editor save functionality is enabled.
     */
-  def canSaveRaw(): Boolean = js.native
+  def canSaveRaw: Boolean = js.native
   /**
     * Emits when the commands passed in at instantiation change.
     */
-  def commandsChanged(): ISignal[_, js.Array[String]] = js.native
+  def commandsChanged: ISignal[_, js.Array[String]] = js.native
   /**
     * Revert raw editor back to original settings.
     */
@@ -82,10 +82,10 @@ class SettingEditor_ protected () extends Widget {
   /**
     * The currently loaded settings.
     */
-  def settings(): ISettings | Null = js.native
+  def settings: ISettings | Null = js.native
   /**
     * The inspectable raw user editor source for the currently loaded settings.
     */
-  def source(): IEditor = js.native
+  def source: IEditor = js.native
 }
 

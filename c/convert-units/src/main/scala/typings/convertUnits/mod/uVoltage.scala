@@ -13,12 +13,10 @@ trait uVoltage extends js.Object
 
 object uVoltage {
   @scala.inline
-  def V: typings.convertUnits.convertUnitsStrings.V = this.cast("V")
+  def V: typings.convertUnits.convertUnitsStrings.V = "V".asInstanceOf[typings.convertUnits.convertUnitsStrings.V]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def kV: typings.convertUnits.convertUnitsStrings.kV = "kV".asInstanceOf[typings.convertUnits.convertUnitsStrings.kV]
   @scala.inline
-  def kV: typings.convertUnits.convertUnitsStrings.kV = this.cast("kV")
-  @scala.inline
-  def mV: typings.convertUnits.convertUnitsStrings.mV = this.cast("mV")
+  def mV: typings.convertUnits.convertUnitsStrings.mV = "mV".asInstanceOf[typings.convertUnits.convertUnitsStrings.mV]
 }
 

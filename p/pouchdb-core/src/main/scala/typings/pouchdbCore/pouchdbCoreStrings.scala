@@ -54,7 +54,7 @@ object pouchdbCoreStrings {
   @scala.inline
   def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
   @scala.inline
-  def `This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis`: `This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis` = "This should be passed to PouchDB.plugin()".asInstanceOf[`This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis`]
+  def `This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis`: `This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis` = ("This should be passed to PouchDB.plugin()").asInstanceOf[`This should be passed to PouchDBDotpluginLeftparenthesisRightparenthesis`]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
@@ -78,7 +78,7 @@ object pouchdbCoreStrings {
   @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
   @scala.inline
-  def `not compacted`: `not compacted` = "not compacted".asInstanceOf[`not compacted`]
+  def `not compacted`: `not compacted` = ("not compacted").asInstanceOf[`not compacted`]
   @scala.inline
   def now: now = "now".asInstanceOf[now]
 }

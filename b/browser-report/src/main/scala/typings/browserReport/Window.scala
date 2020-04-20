@@ -17,7 +17,6 @@ object Window {
     browserReportSync: () => ReportResult
   ): Window = {
     val __obj = js.Dynamic.literal(browserReport = js.Any.fromFunction1(browserReport), browserReportSync = js.Any.fromFunction0(browserReportSync))
-  
     __obj.asInstanceOf[Window]
   }
 }

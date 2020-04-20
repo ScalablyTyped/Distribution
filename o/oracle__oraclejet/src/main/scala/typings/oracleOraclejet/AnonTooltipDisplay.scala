@@ -15,7 +15,6 @@ object AnonTooltipDisplay {
   @scala.inline
   def apply(tooltipDisplay: off | auto, tooltipLabel: String | js.Array[String]): AnonTooltipDisplay = {
     val __obj = js.Dynamic.literal(tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], tooltipLabel = tooltipLabel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTooltipDisplay]
   }
 }

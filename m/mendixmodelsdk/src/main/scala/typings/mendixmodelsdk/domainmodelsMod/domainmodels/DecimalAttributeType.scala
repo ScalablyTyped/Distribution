@@ -30,7 +30,7 @@ class DecimalAttributeType protected () extends DecimalAttributeTypeBase {
   @JSName("model")
   var model_FDecimalAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MDecimalAttributeType(): Attribute = js.native
+  def containerAsAttribute_MDecimalAttributeType: Attribute = js.native
 }
 
 /* static members */

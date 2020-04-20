@@ -22,7 +22,6 @@ object AsyncProvider {
     read: AsyncCallback => Unit
   ): AsyncProvider = {
     val __obj = js.Dynamic.literal(_reader = _reader.asInstanceOf[js.Any], _root = _root.asInstanceOf[js.Any], _settings = _settings.asInstanceOf[js.Any], _storage = _storage.asInstanceOf[js.Any], read = js.Any.fromFunction1(read))
-  
     __obj.asInstanceOf[AsyncProvider]
   }
 }

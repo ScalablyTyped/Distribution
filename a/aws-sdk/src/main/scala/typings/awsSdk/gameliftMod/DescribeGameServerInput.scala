@@ -20,7 +20,6 @@ object DescribeGameServerInput {
   @scala.inline
   def apply(GameServerGroupName: GameServerGroupNameOrArn, GameServerId: GameServerId): DescribeGameServerInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any], GameServerId = GameServerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeGameServerInput]
   }
 }

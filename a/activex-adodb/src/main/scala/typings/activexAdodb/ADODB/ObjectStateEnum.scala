@@ -20,16 +20,14 @@ trait ObjectStateEnum extends js.Object
 
 object ObjectStateEnum {
   @scala.inline
-  def adStateClosed: `0` = this.cast(0)
+  def adStateClosed: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adStateConnecting: `2` = this.cast(2)
+  def adStateConnecting: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adStateExecuting: `4` = this.cast(4)
+  def adStateExecuting: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adStateFetching: `8` = this.cast(8)
+  def adStateFetching: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def adStateOpen: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adStateOpen: `1` = 1.asInstanceOf[`1`]
 }
 

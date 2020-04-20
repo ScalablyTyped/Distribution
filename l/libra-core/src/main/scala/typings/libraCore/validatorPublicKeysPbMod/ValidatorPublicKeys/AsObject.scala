@@ -21,7 +21,6 @@ object AsObject {
     networkSigningPublicKey: Uint8Array | String
   ): AsObject = {
     val __obj = js.Dynamic.literal(accountAddress = accountAddress.asInstanceOf[js.Any], consensusPublicKey = consensusPublicKey.asInstanceOf[js.Any], networkIdentityPublicKey = networkIdentityPublicKey.asInstanceOf[js.Any], networkSigningPublicKey = networkSigningPublicKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

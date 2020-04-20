@@ -32,7 +32,6 @@ object ISpawnedChild {
   @scala.inline
   def apply(forever: () => Unit, kill: () => Unit, once: () => Unit, start: () => Unit): ISpawnedChild = {
     val __obj = js.Dynamic.literal(forever = js.Any.fromFunction0(forever), kill = js.Any.fromFunction0(kill), once = js.Any.fromFunction0(once), start = js.Any.fromFunction0(start))
-  
     __obj.asInstanceOf[ISpawnedChild]
   }
 }

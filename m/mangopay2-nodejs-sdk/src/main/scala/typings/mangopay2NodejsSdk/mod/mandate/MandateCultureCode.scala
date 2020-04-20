@@ -17,20 +17,18 @@ trait MandateCultureCode extends js.Object
 
 object MandateCultureCode {
   @scala.inline
-  def DE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DE = this.cast("DE")
+  def DE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DE = "DE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DE]
   @scala.inline
-  def EN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EN = this.cast("EN")
+  def EN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EN = "EN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EN]
   @scala.inline
-  def ES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ES = this.cast("ES")
+  def ES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ES = "ES".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ES]
   @scala.inline
-  def FR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FR = this.cast("FR")
+  def FR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FR = "FR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FR]
   @scala.inline
-  def IT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IT = this.cast("IT")
+  def IT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IT = "IT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IT]
   @scala.inline
-  def NL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NL = this.cast("NL")
+  def NL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NL = "NL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NL]
   @scala.inline
-  def PL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PL = this.cast("PL")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PL = "PL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PL]
 }
 

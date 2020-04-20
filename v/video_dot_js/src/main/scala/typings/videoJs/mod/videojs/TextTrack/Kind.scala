@@ -15,16 +15,14 @@ trait Kind extends js.Object
 
 object Kind {
   @scala.inline
-  def captions: typings.videoJs.videoJsStrings.captions = this.cast("captions")
+  def captions: typings.videoJs.videoJsStrings.captions = "captions".asInstanceOf[typings.videoJs.videoJsStrings.captions]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chapters: typings.videoJs.videoJsStrings.chapters = "chapters".asInstanceOf[typings.videoJs.videoJsStrings.chapters]
   @scala.inline
-  def chapters: typings.videoJs.videoJsStrings.chapters = this.cast("chapters")
+  def descriptions: typings.videoJs.videoJsStrings.descriptions = "descriptions".asInstanceOf[typings.videoJs.videoJsStrings.descriptions]
   @scala.inline
-  def descriptions: typings.videoJs.videoJsStrings.descriptions = this.cast("descriptions")
+  def metadata: typings.videoJs.videoJsStrings.metadata = "metadata".asInstanceOf[typings.videoJs.videoJsStrings.metadata]
   @scala.inline
-  def metadata: typings.videoJs.videoJsStrings.metadata = this.cast("metadata")
-  @scala.inline
-  def subtitles: typings.videoJs.videoJsStrings.subtitles = this.cast("subtitles")
+  def subtitles: typings.videoJs.videoJsStrings.subtitles = "subtitles".asInstanceOf[typings.videoJs.videoJsStrings.subtitles]
 }
 

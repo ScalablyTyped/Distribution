@@ -29,7 +29,6 @@ object TestRunner {
     runTests: (js.Array[typings.jestRunner.typesMod.Test], typings.jestRunner.typesMod.TestWatcher, typings.jestRunner.typesMod.OnTestStart, typings.jestRunner.typesMod.OnTestSuccess, typings.jestRunner.typesMod.OnTestFailure, typings.jestRunner.typesMod.TestRunnerOptions) => js.Promise[Unit]
   ): TestRunner = {
     val __obj = js.Dynamic.literal(_context = _context.asInstanceOf[js.Any], _createInBandTestRun = _createInBandTestRun.asInstanceOf[js.Any], _createParallelTestRun = _createParallelTestRun.asInstanceOf[js.Any], _globalConfig = _globalConfig.asInstanceOf[js.Any], runTests = js.Any.fromFunction6(runTests))
-  
     __obj.asInstanceOf[TestRunner]
   }
 }

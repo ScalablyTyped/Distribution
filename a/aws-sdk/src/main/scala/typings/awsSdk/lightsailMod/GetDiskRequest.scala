@@ -16,7 +16,6 @@ object GetDiskRequest {
   @scala.inline
   def apply(diskName: ResourceName): GetDiskRequest = {
     val __obj = js.Dynamic.literal(diskName = diskName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDiskRequest]
   }
 }

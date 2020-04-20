@@ -20,16 +20,14 @@ trait MsoAppLanguageID extends js.Object
 
 object MsoAppLanguageID {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoLanguageIDExeMode: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoLanguageIDExeMode: `4` = this.cast(4)
+  def msoLanguageIDHelp: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoLanguageIDHelp: `3` = this.cast(3)
+  def msoLanguageIDInstall: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoLanguageIDInstall: `1` = this.cast(1)
+  def msoLanguageIDUI: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoLanguageIDUI: `2` = this.cast(2)
-  @scala.inline
-  def msoLanguageIDUIPrevious: `5` = this.cast(5)
+  def msoLanguageIDUIPrevious: `5` = 5.asInstanceOf[`5`]
 }
 

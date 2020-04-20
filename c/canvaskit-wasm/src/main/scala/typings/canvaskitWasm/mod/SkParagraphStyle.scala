@@ -24,7 +24,6 @@ object SkParagraphStyle {
     textStyle: SkTextStyle
   ): SkParagraphStyle = {
     val __obj = js.Dynamic.literal(disableHinting = disableHinting.asInstanceOf[js.Any], heightMultiplier = heightMultiplier.asInstanceOf[js.Any], maxLines = maxLines.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any], textDirection = textDirection.asInstanceOf[js.Any], textStyle = textStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkParagraphStyle]
   }
 }

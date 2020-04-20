@@ -12,7 +12,6 @@ object RedirectRequest {
   @scala.inline
   def apply(uri: String): RedirectRequest = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RedirectRequest]
   }
 }

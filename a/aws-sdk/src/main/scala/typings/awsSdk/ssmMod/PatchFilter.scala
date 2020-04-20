@@ -20,7 +20,6 @@ object PatchFilter {
   @scala.inline
   def apply(Key: PatchFilterKey, Values: PatchFilterValueList): PatchFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatchFilter]
   }
 }

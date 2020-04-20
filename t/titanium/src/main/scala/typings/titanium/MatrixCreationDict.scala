@@ -13,7 +13,7 @@ trait MatrixCreationDict extends js.Object {
   	 * properties, where { x: 0.5, y: 0.5 } represents the center of whatever is being
   	 * rotated.
   	 */
-  var anchorPoint: js.UndefOr[js.Any] = js.undefined
+  var anchorPoint: js.UndefOr[Point] = js.undefined
   /**
   	 * Rotation angle, in degrees. See the [rotate](Titanium.UI.2DMatrix.rotate) method
   	 * for a discussion of rotation.
@@ -28,7 +28,7 @@ trait MatrixCreationDict extends js.Object {
 
 object MatrixCreationDict {
   @scala.inline
-  def apply(anchorPoint: js.Any = null, rotate: Int | Double = null, scale: Int | Double = null): MatrixCreationDict = {
+  def apply(anchorPoint: Point = null, rotate: Int | Double = null, scale: Int | Double = null): MatrixCreationDict = {
     val __obj = js.Dynamic.literal()
     if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])

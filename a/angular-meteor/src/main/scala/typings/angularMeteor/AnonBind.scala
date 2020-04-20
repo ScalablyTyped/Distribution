@@ -17,7 +17,6 @@ object AnonBind {
   @scala.inline
   def apply(bind: (IScope, String) => Unit): AnonBind = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction2(bind))
-  
     __obj.asInstanceOf[AnonBind]
   }
 }

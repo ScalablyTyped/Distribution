@@ -57,7 +57,6 @@ object PopupService {
     updatePopup: (String, typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup) => Unit
   ): PopupService = {
     val __obj = js.Dynamic.literal(closePopup = js.Any.fromFunction1(closePopup), createPopup = js.Any.fromFunction1(createPopup), deletePopup = js.Any.fromFunction1(deletePopup), getPopupsId = js.Any.fromFunction0(getPopupsId), openPopup = js.Any.fromFunction1(openPopup), setPopupsId = js.Any.fromFunction1(setPopupsId), updatePopup = js.Any.fromFunction2(updatePopup))
-  
     __obj.asInstanceOf[PopupService]
   }
 }

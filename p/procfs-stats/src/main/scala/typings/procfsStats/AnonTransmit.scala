@@ -12,7 +12,6 @@ object AnonTransmit {
   @scala.inline
   def apply(Transmit: String): AnonTransmit = {
     val __obj = js.Dynamic.literal(Transmit = Transmit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTransmit]
   }
 }

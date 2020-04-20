@@ -16,7 +16,6 @@ object TimeParam {
   @scala.inline
   def apply(duration: Double, position: Double, viewable: `0` | `1`): TimeParam = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], viewable = viewable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimeParam]
   }
 }

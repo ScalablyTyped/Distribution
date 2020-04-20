@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nanoevents"
-version := "1.0-dt-20191126Z-53a5c8"
+version := "1.0-dt-20191126Z-da9dde"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

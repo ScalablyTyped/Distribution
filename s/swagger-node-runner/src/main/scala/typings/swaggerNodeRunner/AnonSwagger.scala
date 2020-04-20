@@ -12,7 +12,6 @@ object AnonSwagger {
   @scala.inline
   def apply(swagger: AnonPath): AnonSwagger = {
     val __obj = js.Dynamic.literal(swagger = swagger.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSwagger]
   }
 }

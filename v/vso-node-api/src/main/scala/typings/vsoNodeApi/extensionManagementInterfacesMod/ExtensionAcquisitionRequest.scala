@@ -42,7 +42,6 @@ object ExtensionAcquisitionRequest {
     quantity: Double
   ): ExtensionAcquisitionRequest = {
     val __obj = js.Dynamic.literal(assignmentType = assignmentType.asInstanceOf[js.Any], billingId = billingId.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionAcquisitionRequest]
   }
 }

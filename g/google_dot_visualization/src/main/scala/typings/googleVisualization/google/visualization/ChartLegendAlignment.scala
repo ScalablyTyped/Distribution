@@ -13,12 +13,10 @@ trait ChartLegendAlignment extends js.Object
 
 object ChartLegendAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.googleVisualization.googleVisualizationStrings.center = "center".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.center]
   @scala.inline
-  def center: typings.googleVisualization.googleVisualizationStrings.center = this.cast("center")
+  def end: typings.googleVisualization.googleVisualizationStrings.end = "end".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.end]
   @scala.inline
-  def end: typings.googleVisualization.googleVisualizationStrings.end = this.cast("end")
-  @scala.inline
-  def start: typings.googleVisualization.googleVisualizationStrings.start = this.cast("start")
+  def start: typings.googleVisualization.googleVisualizationStrings.start = "start".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.start]
 }
 

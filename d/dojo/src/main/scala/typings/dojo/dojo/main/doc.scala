@@ -28,7 +28,6 @@ object doc {
   @scala.inline
   def apply(documentElement: js.Object, dojoClick: Boolean): doc = {
     val __obj = js.Dynamic.literal(documentElement = documentElement.asInstanceOf[js.Any], dojoClick = dojoClick.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[doc]
   }
 }

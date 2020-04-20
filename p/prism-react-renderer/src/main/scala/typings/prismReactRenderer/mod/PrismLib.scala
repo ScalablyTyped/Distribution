@@ -18,7 +18,6 @@ object PrismLib {
     tokenize: (String, PrismGrammar, Language) => js.Array[PrismToken | String]
   ): PrismLib = {
     val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction3(highlight), languages = languages.asInstanceOf[js.Any], tokenize = js.Any.fromFunction3(tokenize))
-  
     __obj.asInstanceOf[PrismLib]
   }
 }

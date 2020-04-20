@@ -12,7 +12,6 @@ object AnonWs {
   @scala.inline
   def apply(ws: js.Any): AnonWs = {
     val __obj = js.Dynamic.literal(ws = ws.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWs]
   }
 }

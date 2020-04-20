@@ -15,7 +15,6 @@ object AnonAvg {
   @scala.inline
   def apply(avg: Double, max: Double, min: Double, sum: Double): AnonAvg = {
     val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAvg]
   }
 }

@@ -12,10 +12,8 @@ trait EncryptionScheme extends js.Object
 
 object EncryptionScheme {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def pkcs1: typings.nodeRsa.nodeRsaStrings.pkcs1 = "pkcs1".asInstanceOf[typings.nodeRsa.nodeRsaStrings.pkcs1]
   @scala.inline
-  def pkcs1: typings.nodeRsa.nodeRsaStrings.pkcs1 = this.cast("pkcs1")
-  @scala.inline
-  def pkcs1_oaep: typings.nodeRsa.nodeRsaStrings.pkcs1_oaep = this.cast("pkcs1_oaep")
+  def pkcs1_oaep: typings.nodeRsa.nodeRsaStrings.pkcs1_oaep = "pkcs1_oaep".asInstanceOf[typings.nodeRsa.nodeRsaStrings.pkcs1_oaep]
 }
 

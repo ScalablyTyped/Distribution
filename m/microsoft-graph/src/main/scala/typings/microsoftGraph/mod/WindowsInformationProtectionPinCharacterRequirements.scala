@@ -13,12 +13,10 @@ trait WindowsInformationProtectionPinCharacterRequirements extends js.Object
 
 object WindowsInformationProtectionPinCharacterRequirements {
   @scala.inline
-  def allow: typings.microsoftGraph.microsoftGraphStrings.allow = this.cast("allow")
+  def allow: typings.microsoftGraph.microsoftGraphStrings.allow = "allow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allow]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def notAllow: typings.microsoftGraph.microsoftGraphStrings.notAllow = "notAllow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notAllow]
   @scala.inline
-  def notAllow: typings.microsoftGraph.microsoftGraphStrings.notAllow = this.cast("notAllow")
-  @scala.inline
-  def requireAtLeastOne: typings.microsoftGraph.microsoftGraphStrings.requireAtLeastOne = this.cast("requireAtLeastOne")
+  def requireAtLeastOne: typings.microsoftGraph.microsoftGraphStrings.requireAtLeastOne = "requireAtLeastOne".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.requireAtLeastOne]
 }
 

@@ -13,7 +13,6 @@ object EditorCommentsOptions {
   @scala.inline
   def apply(insertSpace: Boolean): EditorCommentsOptions = {
     val __obj = js.Dynamic.literal(insertSpace = insertSpace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditorCommentsOptions]
   }
 }

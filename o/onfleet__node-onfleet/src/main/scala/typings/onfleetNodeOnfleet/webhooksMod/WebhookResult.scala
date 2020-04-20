@@ -34,7 +34,6 @@ object WebhookResult {
     url: String
   ): WebhookResult = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebhookResult]
   }
 }

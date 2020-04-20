@@ -13,7 +13,6 @@ object PickImplexpires {
   @scala.inline
   def apply(expires: Double): PickImplexpires = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplexpires]
   }
 }

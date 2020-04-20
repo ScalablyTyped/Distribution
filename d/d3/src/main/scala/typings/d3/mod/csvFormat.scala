@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object csvFormat extends js.Object {
   def apply[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-  def apply[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[String]): String = js.native
+  def apply[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
 }
 

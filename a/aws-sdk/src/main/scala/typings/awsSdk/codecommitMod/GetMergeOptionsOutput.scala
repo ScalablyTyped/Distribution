@@ -33,7 +33,6 @@ object GetMergeOptionsOutput {
     sourceCommitId: ObjectId
   ): GetMergeOptionsOutput = {
     val __obj = js.Dynamic.literal(baseCommitId = baseCommitId.asInstanceOf[js.Any], destinationCommitId = destinationCommitId.asInstanceOf[js.Any], mergeOptions = mergeOptions.asInstanceOf[js.Any], sourceCommitId = sourceCommitId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMergeOptionsOutput]
   }
 }

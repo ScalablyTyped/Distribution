@@ -37,60 +37,58 @@ trait AccessibilityRole extends js.Object
 
 object AccessibilityRole {
   @scala.inline
-  def adjustable: typings.reactNative.reactNativeStrings.adjustable = this.cast("adjustable")
+  def adjustable: typings.reactNative.reactNativeStrings.adjustable = "adjustable".asInstanceOf[typings.reactNative.reactNativeStrings.adjustable]
   @scala.inline
-  def alert: typings.reactNative.reactNativeStrings.alert = this.cast("alert")
+  def alert: typings.reactNative.reactNativeStrings.alert = "alert".asInstanceOf[typings.reactNative.reactNativeStrings.alert]
   @scala.inline
-  def button: typings.reactNative.reactNativeStrings.button = this.cast("button")
+  def button: typings.reactNative.reactNativeStrings.button = "button".asInstanceOf[typings.reactNative.reactNativeStrings.button]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkbox: typings.reactNative.reactNativeStrings.checkbox = "checkbox".asInstanceOf[typings.reactNative.reactNativeStrings.checkbox]
   @scala.inline
-  def checkbox: typings.reactNative.reactNativeStrings.checkbox = this.cast("checkbox")
+  def combobox: typings.reactNative.reactNativeStrings.combobox = "combobox".asInstanceOf[typings.reactNative.reactNativeStrings.combobox]
   @scala.inline
-  def combobox: typings.reactNative.reactNativeStrings.combobox = this.cast("combobox")
+  def header: typings.reactNative.reactNativeStrings.header = "header".asInstanceOf[typings.reactNative.reactNativeStrings.header]
   @scala.inline
-  def header: typings.reactNative.reactNativeStrings.header = this.cast("header")
+  def image: typings.reactNative.reactNativeStrings.image = "image".asInstanceOf[typings.reactNative.reactNativeStrings.image]
   @scala.inline
-  def image: typings.reactNative.reactNativeStrings.image = this.cast("image")
+  def imagebutton: typings.reactNative.reactNativeStrings.imagebutton = "imagebutton".asInstanceOf[typings.reactNative.reactNativeStrings.imagebutton]
   @scala.inline
-  def imagebutton: typings.reactNative.reactNativeStrings.imagebutton = this.cast("imagebutton")
+  def keyboardkey: typings.reactNative.reactNativeStrings.keyboardkey = "keyboardkey".asInstanceOf[typings.reactNative.reactNativeStrings.keyboardkey]
   @scala.inline
-  def keyboardkey: typings.reactNative.reactNativeStrings.keyboardkey = this.cast("keyboardkey")
+  def link: typings.reactNative.reactNativeStrings.link = "link".asInstanceOf[typings.reactNative.reactNativeStrings.link]
   @scala.inline
-  def link: typings.reactNative.reactNativeStrings.link = this.cast("link")
+  def menu: typings.reactNative.reactNativeStrings.menu = "menu".asInstanceOf[typings.reactNative.reactNativeStrings.menu]
   @scala.inline
-  def menu: typings.reactNative.reactNativeStrings.menu = this.cast("menu")
+  def menubar: typings.reactNative.reactNativeStrings.menubar = "menubar".asInstanceOf[typings.reactNative.reactNativeStrings.menubar]
   @scala.inline
-  def menubar: typings.reactNative.reactNativeStrings.menubar = this.cast("menubar")
+  def menuitem: typings.reactNative.reactNativeStrings.menuitem = "menuitem".asInstanceOf[typings.reactNative.reactNativeStrings.menuitem]
   @scala.inline
-  def menuitem: typings.reactNative.reactNativeStrings.menuitem = this.cast("menuitem")
+  def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
   @scala.inline
-  def none: typings.reactNative.reactNativeStrings.none = this.cast("none")
+  def progressbar: typings.reactNative.reactNativeStrings.progressbar = "progressbar".asInstanceOf[typings.reactNative.reactNativeStrings.progressbar]
   @scala.inline
-  def progressbar: typings.reactNative.reactNativeStrings.progressbar = this.cast("progressbar")
+  def radio: typings.reactNative.reactNativeStrings.radio = "radio".asInstanceOf[typings.reactNative.reactNativeStrings.radio]
   @scala.inline
-  def radio: typings.reactNative.reactNativeStrings.radio = this.cast("radio")
+  def radiogroup: typings.reactNative.reactNativeStrings.radiogroup = "radiogroup".asInstanceOf[typings.reactNative.reactNativeStrings.radiogroup]
   @scala.inline
-  def radiogroup: typings.reactNative.reactNativeStrings.radiogroup = this.cast("radiogroup")
+  def scrollbar: typings.reactNative.reactNativeStrings.scrollbar = "scrollbar".asInstanceOf[typings.reactNative.reactNativeStrings.scrollbar]
   @scala.inline
-  def scrollbar: typings.reactNative.reactNativeStrings.scrollbar = this.cast("scrollbar")
+  def search: typings.reactNative.reactNativeStrings.search = "search".asInstanceOf[typings.reactNative.reactNativeStrings.search]
   @scala.inline
-  def search: typings.reactNative.reactNativeStrings.search = this.cast("search")
+  def spinbutton: typings.reactNative.reactNativeStrings.spinbutton = "spinbutton".asInstanceOf[typings.reactNative.reactNativeStrings.spinbutton]
   @scala.inline
-  def spinbutton: typings.reactNative.reactNativeStrings.spinbutton = this.cast("spinbutton")
+  def summary: typings.reactNative.reactNativeStrings.summary = "summary".asInstanceOf[typings.reactNative.reactNativeStrings.summary]
   @scala.inline
-  def summary: typings.reactNative.reactNativeStrings.summary = this.cast("summary")
+  def switch: typings.reactNative.reactNativeStrings.switch = "switch".asInstanceOf[typings.reactNative.reactNativeStrings.switch]
   @scala.inline
-  def switch: typings.reactNative.reactNativeStrings.switch = this.cast("switch")
+  def tab: typings.reactNative.reactNativeStrings.tab = "tab".asInstanceOf[typings.reactNative.reactNativeStrings.tab]
   @scala.inline
-  def tab: typings.reactNative.reactNativeStrings.tab = this.cast("tab")
+  def tablist: typings.reactNative.reactNativeStrings.tablist = "tablist".asInstanceOf[typings.reactNative.reactNativeStrings.tablist]
   @scala.inline
-  def tablist: typings.reactNative.reactNativeStrings.tablist = this.cast("tablist")
+  def text: typings.reactNative.reactNativeStrings.text = "text".asInstanceOf[typings.reactNative.reactNativeStrings.text]
   @scala.inline
-  def text: typings.reactNative.reactNativeStrings.text = this.cast("text")
+  def timer: typings.reactNative.reactNativeStrings.timer = "timer".asInstanceOf[typings.reactNative.reactNativeStrings.timer]
   @scala.inline
-  def timer: typings.reactNative.reactNativeStrings.timer = this.cast("timer")
-  @scala.inline
-  def toolbar: typings.reactNative.reactNativeStrings.toolbar = this.cast("toolbar")
+  def toolbar: typings.reactNative.reactNativeStrings.toolbar = "toolbar".asInstanceOf[typings.reactNative.reactNativeStrings.toolbar]
 }
 

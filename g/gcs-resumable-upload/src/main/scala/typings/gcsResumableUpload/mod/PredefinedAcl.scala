@@ -16,18 +16,16 @@ trait PredefinedAcl extends js.Object
 
 object PredefinedAcl {
   @scala.inline
-  def authenticatedRead: typings.gcsResumableUpload.gcsResumableUploadStrings.authenticatedRead = this.cast("authenticatedRead")
+  def authenticatedRead: typings.gcsResumableUpload.gcsResumableUploadStrings.authenticatedRead = "authenticatedRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.authenticatedRead]
   @scala.inline
-  def bucketOwnerFullControl: typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerFullControl = this.cast("bucketOwnerFullControl")
+  def bucketOwnerFullControl: typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerFullControl]
   @scala.inline
-  def bucketOwnerRead: typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerRead = this.cast("bucketOwnerRead")
+  def bucketOwnerRead: typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerRead = "bucketOwnerRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.bucketOwnerRead]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `private`: typings.gcsResumableUpload.gcsResumableUploadStrings.`private` = "private".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.`private`]
   @scala.inline
-  def `private`: typings.gcsResumableUpload.gcsResumableUploadStrings.`private` = this.cast("private")
+  def projectPrivate: typings.gcsResumableUpload.gcsResumableUploadStrings.projectPrivate = "projectPrivate".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.projectPrivate]
   @scala.inline
-  def projectPrivate: typings.gcsResumableUpload.gcsResumableUploadStrings.projectPrivate = this.cast("projectPrivate")
-  @scala.inline
-  def publicRead: typings.gcsResumableUpload.gcsResumableUploadStrings.publicRead = this.cast("publicRead")
+  def publicRead: typings.gcsResumableUpload.gcsResumableUploadStrings.publicRead = "publicRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.publicRead]
 }
 

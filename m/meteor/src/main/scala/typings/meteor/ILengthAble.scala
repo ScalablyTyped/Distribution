@@ -12,7 +12,6 @@ object ILengthAble {
   @scala.inline
   def apply(length: Double): ILengthAble = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILengthAble]
   }
 }

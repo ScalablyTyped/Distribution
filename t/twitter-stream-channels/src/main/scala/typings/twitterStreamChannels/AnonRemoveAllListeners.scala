@@ -12,7 +12,6 @@ object AnonRemoveAllListeners {
   @scala.inline
   def apply(removeAllListeners: Boolean): AnonRemoveAllListeners = {
     val __obj = js.Dynamic.literal(removeAllListeners = removeAllListeners.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRemoveAllListeners]
   }
 }

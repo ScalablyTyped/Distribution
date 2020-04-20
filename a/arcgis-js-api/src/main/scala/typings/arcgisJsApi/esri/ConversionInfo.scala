@@ -35,7 +35,6 @@ object ConversionInfo {
     reverseConvert: () => Unit
   ): ConversionInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], convert = js.Any.fromFunction0(convert), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), reverseConvert = js.Any.fromFunction0(reverseConvert))
-  
     __obj.asInstanceOf[ConversionInfo]
   }
 }

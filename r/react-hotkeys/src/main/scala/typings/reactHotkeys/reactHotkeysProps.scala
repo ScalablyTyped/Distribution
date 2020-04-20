@@ -13,10 +13,10 @@ trait reactHotkeysProps {
   def HotKeysProps: typings.reactHotkeys.mod.HotKeysProps.type = typings.reactHotkeys.mod.HotKeysProps
   type HotKeysProps = typings.reactHotkeys.mod.HotKeysProps
   @scala.inline
-  def IgnoreKeysProps: HotKeysOverrideProps.type = typings.reactHotkeys.mod.HotKeysOverrideProps
+  def IgnoreKeysProps: HotKeysOverrideProps.type = HotKeysOverrideProps
   type IgnoreKeysProps = HotKeysOverrideProps
   @scala.inline
-  def ObserveKeysProps: HotKeysOverrideProps.type = typings.reactHotkeys.mod.HotKeysOverrideProps
+  def ObserveKeysProps: HotKeysOverrideProps.type = HotKeysOverrideProps
   type ObserveKeysProps = HotKeysOverrideProps
 }
 

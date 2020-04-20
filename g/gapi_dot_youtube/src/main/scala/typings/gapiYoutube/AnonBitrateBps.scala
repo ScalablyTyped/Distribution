@@ -27,7 +27,6 @@ object AnonBitrateBps {
   @scala.inline
   def apply(bitrateBps: Double, channelCount: Double, codec: String, vendor: String): AnonBitrateBps = {
     val __obj = js.Dynamic.literal(bitrateBps = bitrateBps.asInstanceOf[js.Any], channelCount = channelCount.asInstanceOf[js.Any], codec = codec.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBitrateBps]
   }
 }

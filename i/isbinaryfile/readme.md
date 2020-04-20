@@ -1,7 +1,7 @@
 
 # Scala.js typings for isbinaryfile
 
-Typings are for version 4.0.5
+Typings are for version 4.0.6
 
 ## Library description:
 Detects if a file is binary in Node.js. Similar to Perl's -B.

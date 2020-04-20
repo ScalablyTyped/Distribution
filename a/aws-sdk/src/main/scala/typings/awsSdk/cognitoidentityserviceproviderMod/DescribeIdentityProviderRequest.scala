@@ -20,7 +20,6 @@ object DescribeIdentityProviderRequest {
   @scala.inline
   def apply(ProviderName: ProviderNameType, UserPoolId: UserPoolIdType): DescribeIdentityProviderRequest = {
     val __obj = js.Dynamic.literal(ProviderName = ProviderName.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeIdentityProviderRequest]
   }
 }

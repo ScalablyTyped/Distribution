@@ -18,7 +18,6 @@ object AnonChildren {
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts ? : react-intl.react-intl/lib/types.FormatNumberOptions): string>[0] */ js.Any
   ): AnonChildren = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChildren]
   }
 }

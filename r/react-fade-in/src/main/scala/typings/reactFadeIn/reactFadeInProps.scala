@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactFadeInProps {
   @scala.inline
-  def ReactFadeInProps: FadeInProps.type = typings.reactFadeIn.mod.FadeInProps
+  def ReactFadeInProps: FadeInProps.type = FadeInProps
   type ReactFadeInProps = FadeInProps
 }
 

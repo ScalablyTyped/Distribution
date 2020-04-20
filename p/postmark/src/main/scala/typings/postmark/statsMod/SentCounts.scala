@@ -14,7 +14,6 @@ object SentCounts {
   @scala.inline
   def apply(Days: js.Array[AnonDate], Sent: Double): SentCounts = {
     val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Sent = Sent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SentCounts]
   }
 }

@@ -26,7 +26,6 @@ object Internal {
     startTimer: () => js.Function1[/* labels */ js.UndefOr[labelValues], Unit]
   ): Internal = {
     val __obj = js.Dynamic.literal(observe = js.Any.fromFunction1(observe), startTimer = js.Any.fromFunction0(startTimer))
-  
     __obj.asInstanceOf[Internal]
   }
 }

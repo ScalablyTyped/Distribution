@@ -38,7 +38,6 @@ object CreateStreamProcessorRequest {
     Settings: StreamProcessorSettings
   ): CreateStreamProcessorRequest = {
     val __obj = js.Dynamic.literal(Input = Input.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Output = Output.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateStreamProcessorRequest]
   }
 }

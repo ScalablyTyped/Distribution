@@ -15,7 +15,6 @@ object AnonTagName {
   @scala.inline
   def apply(tagName: div, touchAction: auto): AnonTagName = {
     val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any], touchAction = touchAction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTagName]
   }
 }

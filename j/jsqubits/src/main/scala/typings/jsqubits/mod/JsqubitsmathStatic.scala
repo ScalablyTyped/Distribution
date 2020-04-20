@@ -24,7 +24,6 @@ object JsqubitsmathStatic {
     powerMod: (Double, Double, Double) => Double
   ): JsqubitsmathStatic = {
     val __obj = js.Dynamic.literal(continuedFraction = js.Any.fromFunction2(continuedFraction), findNullSpaceMod2 = js.Any.fromFunction2(findNullSpaceMod2), gcd = js.Any.fromFunction2(gcd), lcm = js.Any.fromFunction2(lcm), powerFactor = js.Any.fromFunction1(powerFactor), powerMod = js.Any.fromFunction3(powerMod))
-  
     __obj.asInstanceOf[JsqubitsmathStatic]
   }
 }

@@ -29,9 +29,9 @@ class ImportMappingJavaActionParameterValue protected () extends JavaActionParam
   var model_FImportMappingJavaActionParameterValue: IModel = js.native
   def importMapping(): js.Any = js.native
   def importMapping(newValue: IImportMapping): js.Any = js.native
-  def importMappingQualifiedName(): String | Null = js.native
+  def importMappingQualifiedName: String | Null = js.native
   @JSName("importMapping")
-  def importMapping_Union(): IImportMapping | Null = js.native
+  def importMapping_Union: IImportMapping | Null = js.native
 }
 
 /* static members */

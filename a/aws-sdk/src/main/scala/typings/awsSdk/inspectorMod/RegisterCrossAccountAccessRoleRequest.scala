@@ -16,7 +16,6 @@ object RegisterCrossAccountAccessRoleRequest {
   @scala.inline
   def apply(roleArn: Arn): RegisterCrossAccountAccessRoleRequest = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterCrossAccountAccessRoleRequest]
   }
 }

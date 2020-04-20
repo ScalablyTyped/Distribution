@@ -12,7 +12,6 @@ object CategoriesResult {
   @scala.inline
   def apply(categories: js.Array[ExtensionCategory]): CategoriesResult = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CategoriesResult]
   }
 }

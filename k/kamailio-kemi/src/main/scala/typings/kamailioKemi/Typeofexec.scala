@@ -14,7 +14,6 @@ object Typeofexec {
   @scala.inline
   def apply(exec_avp: String => Double, exec_dset: String => Double, exec_msg: String => Double): Typeofexec = {
     val __obj = js.Dynamic.literal(exec_avp = js.Any.fromFunction1(exec_avp), exec_dset = js.Any.fromFunction1(exec_dset), exec_msg = js.Any.fromFunction1(exec_msg))
-  
     __obj.asInstanceOf[Typeofexec]
   }
 }

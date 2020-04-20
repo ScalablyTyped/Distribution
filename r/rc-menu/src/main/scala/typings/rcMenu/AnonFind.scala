@@ -12,7 +12,6 @@ object AnonFind {
   @scala.inline
   def apply(find: Boolean): AnonFind = {
     val __obj = js.Dynamic.literal(find = find.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFind]
   }
 }

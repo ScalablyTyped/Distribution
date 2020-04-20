@@ -16,7 +16,6 @@ object FormsHandler {
   @scala.inline
   def apply(initForms: Element => Unit, netteForms: js.Object, processForm: Event_ => Unit): FormsHandler = {
     val __obj = js.Dynamic.literal(initForms = js.Any.fromFunction1(initForms), netteForms = netteForms.asInstanceOf[js.Any], processForm = js.Any.fromFunction1(processForm))
-  
     __obj.asInstanceOf[FormsHandler]
   }
 }

@@ -16,7 +16,6 @@ object ButtonTypeProps {
   @scala.inline
   def apply(knob: ButtonTypeKnob, onClick: /* knob */ ButtonTypeKnob => js.Any): ButtonTypeProps = {
     val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
-  
     __obj.asInstanceOf[ButtonTypeProps]
   }
 }

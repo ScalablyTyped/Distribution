@@ -23,7 +23,6 @@ object Window {
     customElements: CustomElementRegistry
   ): Window = {
     val __obj = js.Dynamic.literal(CustomElements = CustomElements.asInstanceOf[js.Any], HTMLImports = HTMLImports.asInstanceOf[js.Any], WebComponents = WebComponents.asInstanceOf[js.Any], customElements = customElements.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

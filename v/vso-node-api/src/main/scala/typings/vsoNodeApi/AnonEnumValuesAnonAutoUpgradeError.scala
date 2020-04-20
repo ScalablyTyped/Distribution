@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAutoUpgradeError {
   @scala.inline
   def apply(enumValues: AnonAutoUpgradeError): AnonEnumValuesAnonAutoUpgradeError = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAutoUpgradeError]
   }
 }

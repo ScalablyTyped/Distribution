@@ -12,7 +12,6 @@ object AbortHandle {
   @scala.inline
   def apply[TReturn](abort: () => TReturn): AbortHandle[TReturn] = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
-  
     __obj.asInstanceOf[AbortHandle[TReturn]]
   }
 }

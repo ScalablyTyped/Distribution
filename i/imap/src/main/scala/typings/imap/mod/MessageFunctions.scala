@@ -87,7 +87,6 @@ object MessageFunctions {
     setKeywords: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit
   ): MessageFunctions = {
     val __obj = js.Dynamic.literal(addFlags = js.Any.fromFunction3(addFlags), addKeywords = js.Any.fromFunction3(addKeywords), copy = js.Any.fromFunction3(copy), delFlags = js.Any.fromFunction3(delFlags), delKeywords = js.Any.fromFunction3(delKeywords), fetch = js.Any.fromFunction2(fetch), move = js.Any.fromFunction3(move), search = js.Any.fromFunction2(search), serverSupports = js.Any.fromFunction1(serverSupports), setFlags = js.Any.fromFunction3(setFlags), setKeywords = js.Any.fromFunction3(setKeywords))
-  
     __obj.asInstanceOf[MessageFunctions]
   }
 }

@@ -20,16 +20,14 @@ trait OlTaskStatus extends js.Object
 
 object OlTaskStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olTaskComplete: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olTaskComplete: `2` = this.cast(2)
+  def olTaskDeferred: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olTaskDeferred: `4` = this.cast(4)
+  def olTaskInProgress: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olTaskInProgress: `1` = this.cast(1)
+  def olTaskNotStarted: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olTaskNotStarted: `0` = this.cast(0)
-  @scala.inline
-  def olTaskWaiting: `3` = this.cast(3)
+  def olTaskWaiting: `3` = 3.asInstanceOf[`3`]
 }
 

@@ -16,7 +16,6 @@ object StopBulkDeploymentRequest {
   @scala.inline
   def apply(BulkDeploymentId: string): StopBulkDeploymentRequest = {
     val __obj = js.Dynamic.literal(BulkDeploymentId = BulkDeploymentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopBulkDeploymentRequest]
   }
 }

@@ -32,37 +32,37 @@ object useInfiniteQuery extends js.Object {
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
   def apply[TResult, TKey /* <: AnyQueryKey */, TMoreVariable, TVariables /* <: AnyVariables */](hasQueryKeyVariablesQueryFnConfig: AnonQueryKey[TKey, TVariables, TResult, TMoreVariable]): InfiniteQueryResult[TResult, TMoreVariable] = js.native
   def apply[TResult, TSingleKey /* <: String */, TMoreVariable, TVariables /* <: AnyVariables */](hasQueryKeyVariablesQueryFnConfig: AnonVariables[TSingleKey, TVariables, TResult, TMoreVariable]): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: TKey,
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable]
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: TKey,
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable],
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable],
     config: InfiniteQueryOptions[TResult, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: js.UndefOr[scala.Nothing],
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable]
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: js.UndefOr[scala.Nothing],
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable],
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable],
     config: InfiniteQueryOptions[TResult, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: Null,
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable]
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: Null,
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable],
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable],
     config: InfiniteQueryOptions[TResult, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
 }

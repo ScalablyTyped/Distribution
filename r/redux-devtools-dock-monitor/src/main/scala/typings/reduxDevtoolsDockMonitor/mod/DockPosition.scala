@@ -14,14 +14,12 @@ trait DockPosition extends js.Object
 
 object DockPosition {
   @scala.inline
-  def bottom: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.bottom = this.cast("bottom")
+  def bottom: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.bottom = "bottom".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.left = "left".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.left]
   @scala.inline
-  def left: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.left = this.cast("left")
+  def right: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.right = "right".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.right]
   @scala.inline
-  def right: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.top = this.cast("top")
+  def top: typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.top = "top".asInstanceOf[typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.top]
 }
 

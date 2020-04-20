@@ -30,7 +30,6 @@ object QueryDocument {
     uri: String
   ): QueryDocument = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction1(connect), createQueryTab = js.Any.fromFunction1(createQueryTab), providerId = providerId.asInstanceOf[js.Any], setExecutionOptions = js.Any.fromFunction1(setExecutionOptions), uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryDocument]
   }
 }

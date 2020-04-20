@@ -16,7 +16,6 @@ object StopStackRequest {
   @scala.inline
   def apply(StackId: String): StopStackRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopStackRequest]
   }
 }

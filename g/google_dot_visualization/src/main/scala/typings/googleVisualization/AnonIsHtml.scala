@@ -12,7 +12,6 @@ object AnonIsHtml {
   @scala.inline
   def apply(isHtml: Boolean): AnonIsHtml = {
     val __obj = js.Dynamic.literal(isHtml = isHtml.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsHtml]
   }
 }

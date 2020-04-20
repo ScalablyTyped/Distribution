@@ -18,14 +18,12 @@ trait WdMailMergeDestination extends js.Object
 
 object WdMailMergeDestination {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdSendToEmail: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdSendToEmail: `2` = this.cast(2)
+  def wdSendToFax: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdSendToFax: `3` = this.cast(3)
+  def wdSendToNewDocument: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdSendToNewDocument: `0` = this.cast(0)
-  @scala.inline
-  def wdSendToPrinter: `1` = this.cast(1)
+  def wdSendToPrinter: `1` = 1.asInstanceOf[`1`]
 }
 

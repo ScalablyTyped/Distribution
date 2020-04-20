@@ -16,7 +16,6 @@ object PaymentMethodNonceGateway {
     find: String => js.Promise[PaymentMethodNonce]
   ): PaymentMethodNonceGateway = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), find = js.Any.fromFunction1(find))
-  
     __obj.asInstanceOf[PaymentMethodNonceGateway]
   }
 }

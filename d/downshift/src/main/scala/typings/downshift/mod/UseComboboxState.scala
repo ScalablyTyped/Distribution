@@ -15,7 +15,6 @@ object UseComboboxState {
   @scala.inline
   def apply[Item](highlightedIndex: Double, inputValue: String, isOpen: Boolean, selectedItem: Item): UseComboboxState[Item] = {
     val __obj = js.Dynamic.literal(highlightedIndex = highlightedIndex.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], selectedItem = selectedItem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseComboboxState[Item]]
   }
 }

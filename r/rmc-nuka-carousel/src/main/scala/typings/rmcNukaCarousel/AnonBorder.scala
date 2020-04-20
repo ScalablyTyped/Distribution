@@ -28,7 +28,6 @@ object AnonBorder {
     padding: Double
   ): AnonBorder = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorder]
   }
 }

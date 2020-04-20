@@ -30,7 +30,6 @@ object XLSearch {
     replaceAllBySheet: (String, String, Boolean, Boolean) => Unit
   ): XLSearch = {
     val __obj = js.Dynamic.literal(replaceAllByBook = js.Any.fromFunction4(replaceAllByBook), replaceAllBySheet = js.Any.fromFunction4(replaceAllBySheet))
-  
     __obj.asInstanceOf[XLSearch]
   }
 }

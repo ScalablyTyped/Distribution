@@ -14,7 +14,6 @@ object ICloudService {
   @scala.inline
   def apply(getAPIs: () => StringDictionary[IAPIFunction[_, _]], name: java.lang.String): ICloudService = {
     val __obj = js.Dynamic.literal(getAPIs = js.Any.fromFunction0(getAPIs), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICloudService]
   }
 }

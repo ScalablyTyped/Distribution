@@ -16,7 +16,6 @@ object DistributionOriginGroupFailoverCriteria {
   @scala.inline
   def apply(statusCodes: js.Array[Double]): DistributionOriginGroupFailoverCriteria = {
     val __obj = js.Dynamic.literal(statusCodes = statusCodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DistributionOriginGroupFailoverCriteria]
   }
 }

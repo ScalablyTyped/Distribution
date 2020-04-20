@@ -19,24 +19,22 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  def atom: typings.feedme.feedmeStrings.atom = this.cast("atom")
+  def atom: typings.feedme.feedmeStrings.atom = "atom".asInstanceOf[typings.feedme.feedmeStrings.atom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def json: typings.feedme.feedmeStrings.json = "json".asInstanceOf[typings.feedme.feedmeStrings.json]
   @scala.inline
-  def json: typings.feedme.feedmeStrings.json = this.cast("json")
+  def `rss 0Dot90`: typings.feedme.feedmeStrings.`rss 0Dot90` = ("rss 0.90").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot90`]
   @scala.inline
-  def `rss 0Dot90`: typings.feedme.feedmeStrings.`rss 0Dot90` = this.cast("rss 0.90")
+  def `rss 0Dot91`: typings.feedme.feedmeStrings.`rss 0Dot91` = ("rss 0.91").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot91`]
   @scala.inline
-  def `rss 0Dot91`: typings.feedme.feedmeStrings.`rss 0Dot91` = this.cast("rss 0.91")
+  def `rss 0Dot92`: typings.feedme.feedmeStrings.`rss 0Dot92` = ("rss 0.92").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot92`]
   @scala.inline
-  def `rss 0Dot92`: typings.feedme.feedmeStrings.`rss 0Dot92` = this.cast("rss 0.92")
+  def `rss 0Dot93`: typings.feedme.feedmeStrings.`rss 0Dot93` = ("rss 0.93").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot93`]
   @scala.inline
-  def `rss 0Dot93`: typings.feedme.feedmeStrings.`rss 0Dot93` = this.cast("rss 0.93")
+  def `rss 0Dot94`: typings.feedme.feedmeStrings.`rss 0Dot94` = ("rss 0.94").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot94`]
   @scala.inline
-  def `rss 0Dot94`: typings.feedme.feedmeStrings.`rss 0Dot94` = this.cast("rss 0.94")
+  def `rss 1Dot0`: typings.feedme.feedmeStrings.`rss 1Dot0` = ("rss 1.0").asInstanceOf[typings.feedme.feedmeStrings.`rss 1Dot0`]
   @scala.inline
-  def `rss 1Dot0`: typings.feedme.feedmeStrings.`rss 1Dot0` = this.cast("rss 1.0")
-  @scala.inline
-  def `rss 2Dot0`: typings.feedme.feedmeStrings.`rss 2Dot0` = this.cast("rss 2.0")
+  def `rss 2Dot0`: typings.feedme.feedmeStrings.`rss 2Dot0` = ("rss 2.0").asInstanceOf[typings.feedme.feedmeStrings.`rss 2Dot0`]
 }
 

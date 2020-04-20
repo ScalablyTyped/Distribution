@@ -14,7 +14,6 @@ object AnonBorder {
   @scala.inline
   def apply(border: String, margin: js.Array[js.Array[Double]], padding: js.Array[js.Array[String]]): AnonBorder = {
     val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorder]
   }
 }

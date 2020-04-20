@@ -22,7 +22,6 @@ object Typeofidle {
     setDetectionInterval: Double => Unit
   ): Typeofidle = {
     val __obj = js.Dynamic.literal(getAutoLockDelay = js.Any.fromFunction1(getAutoLockDelay), onStateChanged = onStateChanged.asInstanceOf[js.Any], queryState = js.Any.fromFunction2(queryState), setDetectionInterval = js.Any.fromFunction1(setDetectionInterval))
-  
     __obj.asInstanceOf[Typeofidle]
   }
 }

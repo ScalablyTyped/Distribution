@@ -26,7 +26,6 @@ object AnonBounce {
     SpamComplaint: SpamWebhookTrigger
   ): AnonBounce = {
     val __obj = js.Dynamic.literal(Bounce = Bounce.asInstanceOf[js.Any], Click = Click.asInstanceOf[js.Any], Delivery = Delivery.asInstanceOf[js.Any], Open = Open.asInstanceOf[js.Any], SpamComplaint = SpamComplaint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBounce]
   }
 }

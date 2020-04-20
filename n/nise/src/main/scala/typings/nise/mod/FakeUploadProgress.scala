@@ -22,7 +22,6 @@ object FakeUploadProgress {
     removeEventListener: (String, js.Function1[/* e */ Event_, _]) => Unit
   ): FakeUploadProgress = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), dispatchEvent = js.Any.fromFunction1(dispatchEvent), eventListeners = eventListeners.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener))
-  
     __obj.asInstanceOf[FakeUploadProgress]
   }
 }

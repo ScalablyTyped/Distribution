@@ -16,7 +16,6 @@ object CreateTransformJobResponse {
   @scala.inline
   def apply(TransformJobArn: TransformJobArn): CreateTransformJobResponse = {
     val __obj = js.Dynamic.literal(TransformJobArn = TransformJobArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTransformJobResponse]
   }
 }

@@ -13,12 +13,10 @@ trait GoogleActionsTransactionsV3PaymentInfoPaymentMethodProvenance extends js.O
 
 object GoogleActionsTransactionsV3PaymentInfoPaymentMethodProvenance {
   @scala.inline
-  def PAYMENT_METHOD_PROVENANCE_GOOGLE: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_GOOGLE = this.cast("PAYMENT_METHOD_PROVENANCE_GOOGLE")
+  def PAYMENT_METHOD_PROVENANCE_GOOGLE: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_GOOGLE = "PAYMENT_METHOD_PROVENANCE_GOOGLE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_GOOGLE]
   @scala.inline
-  def PAYMENT_METHOD_PROVENANCE_MERCHANT: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_MERCHANT = this.cast("PAYMENT_METHOD_PROVENANCE_MERCHANT")
+  def PAYMENT_METHOD_PROVENANCE_MERCHANT: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_MERCHANT = "PAYMENT_METHOD_PROVENANCE_MERCHANT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_MERCHANT]
   @scala.inline
-  def PAYMENT_METHOD_PROVENANCE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_UNSPECIFIED = this.cast("PAYMENT_METHOD_PROVENANCE_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PAYMENT_METHOD_PROVENANCE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_UNSPECIFIED = "PAYMENT_METHOD_PROVENANCE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_UNSPECIFIED]
 }
 

@@ -68,7 +68,7 @@ object postProcessRenderPipelineManagerMod extends js.Object {
     /**
       * Gets the list of supported render pipelines
       */
-    def supportedPipelines(): js.Array[PostProcessRenderPipeline] = js.native
+    def supportedPipelines: js.Array[PostProcessRenderPipeline] = js.native
     /**
       * Updates the state of all contained render pipelines and disposes of any non supported pipelines
       */

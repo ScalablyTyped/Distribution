@@ -14,7 +14,6 @@ object RequiredPickMatchRecursiv {
   @scala.inline
   def apply(valueNames: MatchRecursiveValueNames): RequiredPickMatchRecursiv = {
     val __obj = js.Dynamic.literal(valueNames = valueNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredPickMatchRecursiv]
   }
 }

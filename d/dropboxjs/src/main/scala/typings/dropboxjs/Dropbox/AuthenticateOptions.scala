@@ -13,7 +13,6 @@ object AuthenticateOptions {
   @scala.inline
   def apply(interactive: Boolean): AuthenticateOptions = {
     val __obj = js.Dynamic.literal(interactive = interactive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthenticateOptions]
   }
 }

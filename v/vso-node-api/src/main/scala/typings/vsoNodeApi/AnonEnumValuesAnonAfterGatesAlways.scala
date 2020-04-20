@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAfterGatesAlways {
   @scala.inline
   def apply(enumValues: AnonAfterGatesAlways): AnonEnumValuesAnonAfterGatesAlways = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAfterGatesAlways]
   }
 }

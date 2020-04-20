@@ -12,7 +12,6 @@ object ControllerResource {
   @scala.inline
   def apply(debuggees: DebuggeesResource): ControllerResource = {
     val __obj = js.Dynamic.literal(debuggees = debuggees.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ControllerResource]
   }
 }

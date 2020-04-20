@@ -47,11 +47,11 @@ class DefaultLoadingScreen protected () extends ILoadingScreen {
     * Gets or sets the color to use for the background
     */
   @JSName("loadingUIBackgroundColor")
-  def loadingUIBackgroundColor_MDefaultLoadingScreen(): String = js.native
+  def loadingUIBackgroundColor_MDefaultLoadingScreen: String = js.native
   @JSName("loadingUIBackgroundColor")
   def loadingUIBackgroundColor_MDefaultLoadingScreen(color: String): js.Any = js.native
   @JSName("loadingUIText")
-  def loadingUIText_MDefaultLoadingScreen(): String = js.native
+  def loadingUIText_MDefaultLoadingScreen: String = js.native
   /**
     * Gets or sets the text to display while loading
     */

@@ -31,20 +31,20 @@ object latlonEllipsoidalMod extends js.Object {
     var _height: Double = js.native
     var _lat: Double = js.native
     var _lon: Double = js.native
-    def datum(): Datum = js.native
+    def datum: Datum = js.native
     def datum(datum: Datum): js.Any = js.native
     def equals(point: LatLonEllipsoidal): Boolean = js.native
-    def height(): Double = js.native
+    def height: Double = js.native
     def height(height: Double): js.Any = js.native
-    def lat(): Double = js.native
+    def lat: Double = js.native
     def lat(lat: Double): js.Any = js.native
-    def latitude(): Double = js.native
+    def latitude: Double = js.native
     def latitude(lat: Double): js.Any = js.native
-    def lng(): Double = js.native
+    def lng: Double = js.native
     def lng(lon: Double): js.Any = js.native
-    def lon(): Double = js.native
+    def lon: Double = js.native
     def lon(lon: Double): js.Any = js.native
-    def longitude(): Double = js.native
+    def longitude: Double = js.native
     def longitude(lon: Double): js.Any = js.native
     def toCartesian(): Cartesian = js.native
     def toString(format: String): String = js.native
@@ -72,7 +72,7 @@ object latlonEllipsoidalMod extends js.Object {
     def fromLocale(str: String): String = js.native
     def parse(dms: String): Double = js.native
     def parse(dms: Double): Double = js.native
-    def separator(): String = js.native
+    def separator: String = js.native
     def separator(char: String): js.Any = js.native
     def toBrng(deg: Double): String = js.native
     def toBrng(deg: Double, format: Format): String = js.native
@@ -94,8 +94,8 @@ object latlonEllipsoidalMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    def datums(): Datums = js.native
-    def ellipsoids(): Ellipsoids = js.native
+    def datums: Datums = js.native
+    def ellipsoids: Ellipsoids = js.native
     def parse(lat: String): LatLonEllipsoidal = js.native
     def parse(lat: String, lon: Double): LatLonEllipsoidal = js.native
     def parse(lat: String, lon: Double, height: Double): LatLonEllipsoidal = js.native

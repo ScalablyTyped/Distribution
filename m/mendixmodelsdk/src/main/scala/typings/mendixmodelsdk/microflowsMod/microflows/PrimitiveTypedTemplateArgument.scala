@@ -28,9 +28,9 @@ class PrimitiveTypedTemplateArgument protected () extends TypedTemplateArgument 
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def expression(): String = js.native
+  def expression: String = js.native
   def expression(newValue: String): js.Any = js.native
-  def `type`(): TypedTemplateArgumentType = js.native
+  def `type`: TypedTemplateArgumentType = js.native
   def `type`(newValue: TypedTemplateArgumentType): js.Any = js.native
 }
 

@@ -16,7 +16,6 @@ object GetGroupInput {
   @scala.inline
   def apply(GroupName: GroupName): GetGroupInput = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGroupInput]
   }
 }

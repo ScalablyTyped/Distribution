@@ -59,9 +59,9 @@ class Member_ protected () extends EventEmitter {
     * @private
     */
   def _update(data: js.Any): this.type = js.native
-  def attributes(): js.Object = js.native
-  def dateCreated(): Date = js.native
-  def dateUpdated(): Date = js.native
+  def attributes: js.Object = js.native
+  def dateCreated: Date = js.native
+  def dateUpdated: Date = js.native
   /**
     * Gets User for this member and subscribes to it. Supported only for <code>chat</code> type of Members
     * @returns {Promise<User|Error>}
@@ -72,18 +72,18 @@ class Member_ protected () extends EventEmitter {
     * @returns {Promise<UserDescriptor|Error>}
     */
   def getUserDescriptor(): js.Promise[UserDescriptor] = js.native
-  def identity(): String = js.native
-  def isTyping(): Boolean = js.native
-  def lastConsumedMessageIndex(): Double = js.native
-  def lastConsumptionTimestamp(): Date = js.native
+  def identity: String = js.native
+  def isTyping: Boolean = js.native
+  def lastConsumedMessageIndex: Double = js.native
+  def lastConsumptionTimestamp: Date = js.native
   /**
     * Remove Member from the Channel.
     * @returns {Promise<void|Error|SessionError>}
     */
   def remove(): js.Promise[_] = js.native
-  def roleSid(): String = js.native
-  def sid(): String = js.native
-  def `type`(): Type = js.native
+  def roleSid: String = js.native
+  def sid: String = js.native
+  def `type`: Type = js.native
   /**
     * Edit member attributes.
     * @param {Object} attributes new attributes for Member.

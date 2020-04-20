@@ -12,10 +12,8 @@ trait IdentifierQualifier extends js.Object
 
 object IdentifierQualifier {
   @scala.inline
-  def OIDAsURI: typings.xadesjs.xadesjsStrings.OIDAsURI = this.cast("OIDAsURI")
+  def OIDAsURI: typings.xadesjs.xadesjsStrings.OIDAsURI = "OIDAsURI".asInstanceOf[typings.xadesjs.xadesjsStrings.OIDAsURI]
   @scala.inline
-  def OIDAsURN: typings.xadesjs.xadesjsStrings.OIDAsURN = this.cast("OIDAsURN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OIDAsURN: typings.xadesjs.xadesjsStrings.OIDAsURN = "OIDAsURN".asInstanceOf[typings.xadesjs.xadesjsStrings.OIDAsURN]
 }
 

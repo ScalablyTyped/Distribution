@@ -20,7 +20,6 @@ object GrantFlowEntitlementsRequest {
   @scala.inline
   def apply(Entitlements: listOfGrantEntitlementRequest, FlowArn: string): GrantFlowEntitlementsRequest = {
     val __obj = js.Dynamic.literal(Entitlements = Entitlements.asInstanceOf[js.Any], FlowArn = FlowArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GrantFlowEntitlementsRequest]
   }
 }

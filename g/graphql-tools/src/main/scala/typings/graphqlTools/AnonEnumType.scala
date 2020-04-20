@@ -13,7 +13,6 @@ object AnonEnumType {
   @scala.inline
   def apply(enumType: GraphQLEnumType): AnonEnumType = {
     val __obj = js.Dynamic.literal(enumType = enumType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumType]
   }
 }

@@ -29,7 +29,6 @@ object ProjectVpcConfig {
     vpcId: Input[String]
   ): ProjectVpcConfig = {
     val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectVpcConfig]
   }
 }

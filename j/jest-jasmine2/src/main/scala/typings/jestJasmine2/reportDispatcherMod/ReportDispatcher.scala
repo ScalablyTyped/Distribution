@@ -28,7 +28,6 @@ object ReportDispatcher {
     suiteStarted: SuiteResult => Unit
   ): ReportDispatcher = {
     val __obj = js.Dynamic.literal(addReporter = js.Any.fromFunction1(addReporter), clearReporters = js.Any.fromFunction0(clearReporters), jasmineDone = js.Any.fromFunction1(jasmineDone), jasmineStarted = js.Any.fromFunction1(jasmineStarted), provideFallbackReporter = js.Any.fromFunction1(provideFallbackReporter), specDone = js.Any.fromFunction1(specDone), specStarted = js.Any.fromFunction1(specStarted), suiteDone = js.Any.fromFunction1(suiteDone), suiteStarted = js.Any.fromFunction1(suiteStarted))
-  
     __obj.asInstanceOf[ReportDispatcher]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNumericInputProps {
   @scala.inline
-  def ReactNumericInputProps: NumericInputProps.type = typings.reactNumericInput.mod.NumericInputProps
+  def ReactNumericInputProps: NumericInputProps.type = NumericInputProps
   type ReactNumericInputProps = NumericInputProps
 }
 

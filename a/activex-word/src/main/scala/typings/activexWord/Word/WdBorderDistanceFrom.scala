@@ -14,10 +14,8 @@ trait WdBorderDistanceFrom extends js.Object
 
 object WdBorderDistanceFrom {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdBorderDistanceFromPageEdge: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdBorderDistanceFromPageEdge: `1` = this.cast(1)
-  @scala.inline
-  def wdBorderDistanceFromText: `0` = this.cast(0)
+  def wdBorderDistanceFromText: `0` = 0.asInstanceOf[`0`]
 }
 

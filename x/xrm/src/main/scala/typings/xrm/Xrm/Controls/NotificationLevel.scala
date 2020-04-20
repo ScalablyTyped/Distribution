@@ -15,10 +15,8 @@ trait NotificationLevel extends js.Object
 
 object NotificationLevel {
   @scala.inline
-  def ERROR: typings.xrm.xrmStrings.ERROR = this.cast("ERROR")
+  def ERROR: typings.xrm.xrmStrings.ERROR = "ERROR".asInstanceOf[typings.xrm.xrmStrings.ERROR]
   @scala.inline
-  def RECOMMENDATION: typings.xrm.xrmStrings.RECOMMENDATION = this.cast("RECOMMENDATION")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RECOMMENDATION: typings.xrm.xrmStrings.RECOMMENDATION = "RECOMMENDATION".asInstanceOf[typings.xrm.xrmStrings.RECOMMENDATION]
 }
 

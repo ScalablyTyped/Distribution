@@ -18,22 +18,20 @@ trait Result extends js.Object
 
 object Result {
   @scala.inline
-  def build: typings.semverDiff.semverDiffStrings.build = this.cast("build")
+  def build: typings.semverDiff.semverDiffStrings.build = "build".asInstanceOf[typings.semverDiff.semverDiffStrings.build]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def major: typings.semverDiff.semverDiffStrings.major = "major".asInstanceOf[typings.semverDiff.semverDiffStrings.major]
   @scala.inline
-  def major: typings.semverDiff.semverDiffStrings.major = this.cast("major")
+  def minor: typings.semverDiff.semverDiffStrings.minor = "minor".asInstanceOf[typings.semverDiff.semverDiffStrings.minor]
   @scala.inline
-  def minor: typings.semverDiff.semverDiffStrings.minor = this.cast("minor")
+  def patch: typings.semverDiff.semverDiffStrings.patch = "patch".asInstanceOf[typings.semverDiff.semverDiffStrings.patch]
   @scala.inline
-  def patch: typings.semverDiff.semverDiffStrings.patch = this.cast("patch")
+  def premajor: typings.semverDiff.semverDiffStrings.premajor = "premajor".asInstanceOf[typings.semverDiff.semverDiffStrings.premajor]
   @scala.inline
-  def premajor: typings.semverDiff.semverDiffStrings.premajor = this.cast("premajor")
+  def preminor: typings.semverDiff.semverDiffStrings.preminor = "preminor".asInstanceOf[typings.semverDiff.semverDiffStrings.preminor]
   @scala.inline
-  def preminor: typings.semverDiff.semverDiffStrings.preminor = this.cast("preminor")
+  def prepatch: typings.semverDiff.semverDiffStrings.prepatch = "prepatch".asInstanceOf[typings.semverDiff.semverDiffStrings.prepatch]
   @scala.inline
-  def prepatch: typings.semverDiff.semverDiffStrings.prepatch = this.cast("prepatch")
-  @scala.inline
-  def prerelease: typings.semverDiff.semverDiffStrings.prerelease = this.cast("prerelease")
+  def prerelease: typings.semverDiff.semverDiffStrings.prerelease = "prerelease".asInstanceOf[typings.semverDiff.semverDiffStrings.prerelease]
 }
 

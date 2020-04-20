@@ -18,7 +18,6 @@ object ApiKeyAdd {
   @scala.inline
   def apply(apikey: String, cldbid: Double, id: Double, scope: ApiKeyScope, sid: Double, time_left: Double): ApiKeyAdd = {
     val __obj = js.Dynamic.literal(apikey = apikey.asInstanceOf[js.Any], cldbid = cldbid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], time_left = time_left.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApiKeyAdd]
   }
 }

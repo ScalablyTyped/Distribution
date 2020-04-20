@@ -16,7 +16,6 @@ object DeleteDirectoryResponse {
   @scala.inline
   def apply(DirectoryArn: Arn): DeleteDirectoryResponse = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDirectoryResponse]
   }
 }

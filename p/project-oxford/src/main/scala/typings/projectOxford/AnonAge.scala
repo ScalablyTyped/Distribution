@@ -14,7 +14,6 @@ object AnonAge {
   @scala.inline
   def apply(age: Double, faceRectangle: AnonHeight, gender: String): AnonAge = {
     val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], faceRectangle = faceRectangle.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAge]
   }
 }

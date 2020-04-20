@@ -26,22 +26,20 @@ trait MsoSoftEdgeType extends js.Object
 
 object MsoSoftEdgeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSoftEdgeType1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoSoftEdgeType1: `1` = this.cast(1)
+  def msoSoftEdgeType2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoSoftEdgeType2: `2` = this.cast(2)
+  def msoSoftEdgeType3: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoSoftEdgeType3: `3` = this.cast(3)
+  def msoSoftEdgeType4: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoSoftEdgeType4: `4` = this.cast(4)
+  def msoSoftEdgeType5: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoSoftEdgeType5: `5` = this.cast(5)
+  def msoSoftEdgeType6: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoSoftEdgeType6: `6` = this.cast(6)
+  def msoSoftEdgeTypeMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoSoftEdgeTypeMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoSoftEdgeTypeNone: `0` = this.cast(0)
+  def msoSoftEdgeTypeNone: `0` = 0.asInstanceOf[`0`]
 }
 

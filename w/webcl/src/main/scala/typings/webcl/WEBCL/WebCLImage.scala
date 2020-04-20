@@ -13,7 +13,6 @@ object WebCLImage {
   @scala.inline
   def apply(getInfo: () => WebCLImageDescriptor, release: () => Unit): WebCLImage = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction0(getInfo), release = js.Any.fromFunction0(release))
-  
     __obj.asInstanceOf[WebCLImage]
   }
 }

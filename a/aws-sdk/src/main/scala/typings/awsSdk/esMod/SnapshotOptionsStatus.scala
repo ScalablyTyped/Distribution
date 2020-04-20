@@ -20,7 +20,6 @@ object SnapshotOptionsStatus {
   @scala.inline
   def apply(Options: SnapshotOptions, Status: OptionStatus): SnapshotOptionsStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SnapshotOptionsStatus]
   }
 }

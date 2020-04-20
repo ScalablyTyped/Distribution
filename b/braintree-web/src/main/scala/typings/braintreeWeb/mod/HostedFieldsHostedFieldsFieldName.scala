@@ -38,18 +38,16 @@ trait HostedFieldsHostedFieldsFieldName extends js.Object
 
 object HostedFieldsHostedFieldsFieldName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cvv: typings.braintreeWeb.braintreeWebStrings.cvv = "cvv".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.cvv]
   @scala.inline
-  def cvv: typings.braintreeWeb.braintreeWebStrings.cvv = this.cast("cvv")
+  def expirationDate: typings.braintreeWeb.braintreeWebStrings.expirationDate = "expirationDate".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.expirationDate]
   @scala.inline
-  def expirationDate: typings.braintreeWeb.braintreeWebStrings.expirationDate = this.cast("expirationDate")
+  def expirationMonth: typings.braintreeWeb.braintreeWebStrings.expirationMonth = "expirationMonth".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.expirationMonth]
   @scala.inline
-  def expirationMonth: typings.braintreeWeb.braintreeWebStrings.expirationMonth = this.cast("expirationMonth")
+  def expirationYear: typings.braintreeWeb.braintreeWebStrings.expirationYear = "expirationYear".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.expirationYear]
   @scala.inline
-  def expirationYear: typings.braintreeWeb.braintreeWebStrings.expirationYear = this.cast("expirationYear")
+  def number: typings.braintreeWeb.braintreeWebStrings.number = "number".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.number]
   @scala.inline
-  def number: typings.braintreeWeb.braintreeWebStrings.number = this.cast("number")
-  @scala.inline
-  def postalCode: typings.braintreeWeb.braintreeWebStrings.postalCode = this.cast("postalCode")
+  def postalCode: typings.braintreeWeb.braintreeWebStrings.postalCode = "postalCode".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.postalCode]
 }
 

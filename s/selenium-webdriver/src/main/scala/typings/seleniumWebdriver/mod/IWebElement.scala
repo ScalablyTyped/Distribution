@@ -207,7 +207,6 @@ object IWebElement {
     submit: () => js.Promise[Unit]
   ): IWebElement = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), click = js.Any.fromFunction0(click), getAttribute = js.Any.fromFunction1(getAttribute), getCssValue = js.Any.fromFunction1(getCssValue), getId = js.Any.fromFunction0(getId), getLocation = js.Any.fromFunction0(getLocation), getRect = js.Any.fromFunction0(getRect), getSize = js.Any.fromFunction0(getSize), getTagName = js.Any.fromFunction0(getTagName), getText = js.Any.fromFunction0(getText), isDisplayed = js.Any.fromFunction0(isDisplayed), isEnabled = js.Any.fromFunction0(isEnabled), isSelected = js.Any.fromFunction0(isSelected), sendKeys = js.Any.fromFunction1(sendKeys), submit = js.Any.fromFunction0(submit))
-  
     __obj.asInstanceOf[IWebElement]
   }
 }

@@ -24,31 +24,31 @@ object perturbNormalBlockMod extends js.Object {
     /**
       * Gets the normal map color input component
       */
-    def normalMapColor(): NodeMaterialConnectionPoint = js.native
+    def normalMapColor: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the output component
       */
-    def output(): NodeMaterialConnectionPoint = js.native
+    def output: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the strength input component
       */
-    def strength(): NodeMaterialConnectionPoint = js.native
+    def strength: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the uv input component
       */
-    def uv(): NodeMaterialConnectionPoint = js.native
+    def uv: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the world normal input component
       */
-    def worldNormal(): NodeMaterialConnectionPoint = js.native
+    def worldNormal: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the world position input component
       */
-    def worldPosition(): NodeMaterialConnectionPoint = js.native
+    def worldPosition: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the world tangent input component
       */
-    def worldTangent(): NodeMaterialConnectionPoint = js.native
+    def worldTangent: NodeMaterialConnectionPoint = js.native
   }
   
 }

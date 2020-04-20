@@ -20,7 +20,6 @@ object SignerOptionsWithoutPolicy {
   @scala.inline
   def apply(expires: Double, url: String): SignerOptionsWithoutPolicy = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignerOptionsWithoutPolicy]
   }
 }

@@ -20,7 +20,6 @@ object EnableUserRequest {
   @scala.inline
   def apply(AuthenticationType: AuthenticationType, UserName: Username): EnableUserRequest = {
     val __obj = js.Dynamic.literal(AuthenticationType = AuthenticationType.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableUserRequest]
   }
 }

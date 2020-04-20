@@ -19,14 +19,12 @@ trait HotkeyModifiers extends js.Object
 
 object HotkeyModifiers {
   @scala.inline
-  def ALT: `4` = this.cast(4)
+  def ALT: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def CTRL: `2` = this.cast(2)
+  def CTRL: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Extended: `8` = this.cast(8)
+  def Extended: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def SHIFT: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SHIFT: `1` = 1.asInstanceOf[`1`]
 }
 

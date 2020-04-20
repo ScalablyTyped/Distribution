@@ -30,7 +30,6 @@ object AnonEntity {
     name: allowed_categories | blocked_categories | max_amount | max_approvals | spending_limits
   ): AnonEntity = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEntity]
   }
 }

@@ -15,7 +15,6 @@ object AnonShareMessageToFriendScene {
   @scala.inline
   def apply(shareMessageToFriendScene: Double): AnonShareMessageToFriendScene = {
     val __obj = js.Dynamic.literal(shareMessageToFriendScene = shareMessageToFriendScene.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShareMessageToFriendScene]
   }
 }

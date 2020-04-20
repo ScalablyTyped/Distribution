@@ -12,7 +12,6 @@ object CommandsRelationshipsObject {
   @scala.inline
   def apply(resources: CommandsRelationshipsResourceObject): CommandsRelationshipsObject = {
     val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommandsRelationshipsObject]
   }
 }

@@ -14,7 +14,6 @@ object TeamsRemoveMembershipInOrgParams {
   @scala.inline
   def apply(org: String, team_slug: String, username: String): TeamsRemoveMembershipInOrgParams = {
     val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamsRemoveMembershipInOrgParams]
   }
 }

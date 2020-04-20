@@ -31,10 +31,12 @@ trait FilterProps[D /* <: js.Object */] extends js.Object {
   var getSubRows: js.UndefOr[js.Function2[/* originalRow */ D, /* relativeIndex */ Double, js.Array[D]]] = js.native
   var headerGroups: js.Array[HeaderGroup[D]] = js.native
   var headers: js.Array[ColumnInstance[D]] = js.native
-  var initialRowStateKey: js.UndefOr[IdType[D]] = js.native
   var initialState: js.UndefOr[Partial[TableState[D]]] = js.native
   var plugins: js.Array[PluginHook[D]] = js.native
-  var reducer: js.UndefOr[
+  var rows: js.Array[Row[D]] = js.native
+  var rowsById: Record[String, Row[D]] = js.native
+  var state: TableState[D] = js.native
+  var stateReducer: js.UndefOr[
     js.Function3[
       /* newState */ TableState[D], 
       /* action */ ActionType, 
@@ -42,9 +44,6 @@ trait FilterProps[D /* <: js.Object */] extends js.Object {
       TableState[D]
     ]
   ] = js.native
-  var rows: js.Array[Row[D]] = js.native
-  var rowsById: Record[String, Row[D]] = js.native
-  var state: TableState[D] = js.native
   var totalColumnsWidth: Double = js.native
   var useControlledState: js.UndefOr[
     js.Function2[

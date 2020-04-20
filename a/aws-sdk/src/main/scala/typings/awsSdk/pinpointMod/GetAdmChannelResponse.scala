@@ -13,7 +13,6 @@ object GetAdmChannelResponse {
   @scala.inline
   def apply(ADMChannelResponse: ADMChannelResponse): GetAdmChannelResponse = {
     val __obj = js.Dynamic.literal(ADMChannelResponse = ADMChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAdmChannelResponse]
   }
 }

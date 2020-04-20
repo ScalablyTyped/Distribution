@@ -16,7 +16,6 @@ object SourceIpConfig {
   @scala.inline
   def apply(Cidrs: Cidrs): SourceIpConfig = {
     val __obj = js.Dynamic.literal(Cidrs = Cidrs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceIpConfig]
   }
 }

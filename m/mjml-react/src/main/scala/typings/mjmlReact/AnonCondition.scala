@@ -13,7 +13,6 @@ object AnonCondition {
   @scala.inline
   def apply(children: String, condition: String): AnonCondition = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCondition]
   }
 }

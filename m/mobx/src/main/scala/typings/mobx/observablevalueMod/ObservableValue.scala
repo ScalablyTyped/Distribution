@@ -30,7 +30,7 @@ class ObservableValue[T] protected ()
   var equals_FObservableValue: js.Any = js.native
   var hasUnreportedChange: Boolean = js.native
   var prepareNewValue: js.Any = js.native
-  @JSName(scala.scalajs.js.Symbol.toPrimitive)
+  @JSName(js.Symbol.toPrimitive)
   var toPrimitive: js.Function0[T] = js.native
   var value: js.Any = js.native
   def enhancer(newValue: T, oldValue: T, name: String): T = js.native

@@ -16,7 +16,6 @@ object ChannelHlsIngest {
   @scala.inline
   def apply(ingestEndpoints: js.Array[ChannelHlsIngestIngestEndpoint]): ChannelHlsIngest = {
     val __obj = js.Dynamic.literal(ingestEndpoints = ingestEndpoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelHlsIngest]
   }
 }

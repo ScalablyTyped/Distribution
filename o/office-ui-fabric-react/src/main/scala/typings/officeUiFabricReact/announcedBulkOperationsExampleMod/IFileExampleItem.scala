@@ -16,7 +16,6 @@ object IFileExampleItem {
   @scala.inline
   def apply(filesize: String, key: String, modified: String, modifiedby: String, name: String): IFileExampleItem = {
     val __obj = js.Dynamic.literal(filesize = filesize.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], modifiedby = modifiedby.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFileExampleItem]
   }
 }

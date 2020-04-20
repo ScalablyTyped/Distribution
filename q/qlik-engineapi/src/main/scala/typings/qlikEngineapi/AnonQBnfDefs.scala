@@ -14,7 +14,6 @@ object AnonQBnfDefs {
   @scala.inline
   def apply(qBnfDefs: IBNFDef, qBnfHash: String): AnonQBnfDefs = {
     val __obj = js.Dynamic.literal(qBnfDefs = qBnfDefs.asInstanceOf[js.Any], qBnfHash = qBnfHash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQBnfDefs]
   }
 }

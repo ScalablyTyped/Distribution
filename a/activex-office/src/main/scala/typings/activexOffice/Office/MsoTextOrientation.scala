@@ -24,20 +24,18 @@ trait MsoTextOrientation extends js.Object
 
 object MsoTextOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoTextOrientationDownward: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoTextOrientationDownward: `3` = this.cast(3)
+  def msoTextOrientationHorizontal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoTextOrientationHorizontal: `1` = this.cast(1)
+  def msoTextOrientationHorizontalRotatedFarEast: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoTextOrientationHorizontalRotatedFarEast: `6` = this.cast(6)
+  def msoTextOrientationMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoTextOrientationMixed: `-2` = this.cast(-2)
+  def msoTextOrientationUpward: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoTextOrientationUpward: `2` = this.cast(2)
+  def msoTextOrientationVertical: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoTextOrientationVertical: `5` = this.cast(5)
-  @scala.inline
-  def msoTextOrientationVerticalFarEast: `4` = this.cast(4)
+  def msoTextOrientationVerticalFarEast: `4` = 4.asInstanceOf[`4`]
 }
 

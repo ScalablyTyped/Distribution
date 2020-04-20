@@ -24,7 +24,6 @@ object AnonJPYKRW {
     XXX: js.Array[scala.Nothing]
   ): AnonJPYKRW = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonJPYKRW]
   }
 }

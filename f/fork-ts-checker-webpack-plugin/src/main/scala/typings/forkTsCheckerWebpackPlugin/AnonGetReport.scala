@@ -13,7 +13,6 @@ object AnonGetReport {
   @scala.inline
   def apply(getReport: String => js.UndefOr[LintReport]): AnonGetReport = {
     val __obj = js.Dynamic.literal(getReport = js.Any.fromFunction1(getReport))
-  
     __obj.asInstanceOf[AnonGetReport]
   }
 }

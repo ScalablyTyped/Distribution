@@ -24,13 +24,13 @@ abstract class DataEntityBase protected () extends DataMember {
   ) = this()
   @JSName("model")
   var model_FDataEntityBase: IModel = js.native
-  def childMembers(): IList[DataMember] = js.native
+  def childMembers: IList[DataMember] = js.native
   def entity(): js.Any = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String | Null = js.native
+  def entityQualifiedName: String | Null = js.native
   @JSName("entity")
-  def entity_Union(): IEntity | Null = js.native
-  def exposedItemName(): String = js.native
+  def entity_Union: IEntity | Null = js.native
+  def exposedItemName: String = js.native
   def exposedItemName(newValue: String): js.Any = js.native
 }
 

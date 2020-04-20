@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAlwaysReturnBasicInformation {
   @scala.inline
   def apply(enumValues: AnonAlwaysReturnBasicInformation): AnonEnumValuesAnonAlwaysReturnBasicInformation = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAlwaysReturnBasicInformation]
   }
 }

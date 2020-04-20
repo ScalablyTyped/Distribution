@@ -13,7 +13,6 @@ object TabsProps {
   @scala.inline
   def apply(tabs: js.Array[AnonItems]): TabsProps = {
     val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabsProps]
   }
 }

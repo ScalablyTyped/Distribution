@@ -20,7 +20,6 @@ object OriginCustomHeader {
   @scala.inline
   def apply(HeaderName: String, HeaderValue: String): OriginCustomHeader = {
     val __obj = js.Dynamic.literal(HeaderName = HeaderName.asInstanceOf[js.Any], HeaderValue = HeaderValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OriginCustomHeader]
   }
 }

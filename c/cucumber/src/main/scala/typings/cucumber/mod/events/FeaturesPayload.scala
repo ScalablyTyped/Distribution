@@ -12,7 +12,6 @@ object FeaturesPayload {
   @scala.inline
   def apply(getFeatures: () => js.Array[_]): FeaturesPayload = {
     val __obj = js.Dynamic.literal(getFeatures = js.Any.fromFunction0(getFeatures))
-  
     __obj.asInstanceOf[FeaturesPayload]
   }
 }

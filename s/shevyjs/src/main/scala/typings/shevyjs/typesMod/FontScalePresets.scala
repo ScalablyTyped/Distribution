@@ -22,7 +22,6 @@ object FontScalePresets {
     perfectFourth: Scale
   ): FontScalePresets = {
     val __obj = js.Dynamic.literal(augmentedFourth = augmentedFourth.asInstanceOf[js.Any], majorSecond = majorSecond.asInstanceOf[js.Any], majorThird = majorThird.asInstanceOf[js.Any], minorThird = minorThird.asInstanceOf[js.Any], perfectFourth = perfectFourth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FontScalePresets]
   }
 }

@@ -47,7 +47,9 @@ trait IIntent extends js.Object {
   /** Intent trainingPhrases */
   var trainingPhrases: js.UndefOr[js.Array[ITrainingPhrase] | Null] = js.undefined
   /** Intent webhookState */
-  var webhookState: js.UndefOr[WebhookState | String | Null] = js.undefined
+  var webhookState: js.UndefOr[
+    WebhookState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.WebhookState * / any */ String) | Null
+  ] = js.undefined
 }
 
 object IIntent {
@@ -70,7 +72,7 @@ object IIntent {
     resetContexts: js.UndefOr[Boolean] = js.undefined,
     rootFollowupIntentName: String = null,
     trainingPhrases: js.Array[ITrainingPhrase] = null,
-    webhookState: WebhookState | String = null
+    webhookState: WebhookState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.WebhookState * / any */ String) = null
   ): IIntent = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])

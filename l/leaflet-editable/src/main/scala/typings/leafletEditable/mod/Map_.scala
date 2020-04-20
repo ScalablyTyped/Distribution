@@ -23,7 +23,6 @@ object Map_ {
   @scala.inline
   def apply(editOptions: EditOptions, editTools: Editable, editable: Boolean): Map_ = {
     val __obj = js.Dynamic.literal(editOptions = editOptions.asInstanceOf[js.Any], editTools = editTools.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Map_]
   }
 }

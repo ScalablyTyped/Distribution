@@ -14,7 +14,6 @@ object AnonBDelayInit {
   @scala.inline
   def apply(bDelayInit: Boolean, separatorChar: String, singleValuePropTypeID: String): AnonBDelayInit = {
     val __obj = js.Dynamic.literal(bDelayInit = bDelayInit.asInstanceOf[js.Any], separatorChar = separatorChar.asInstanceOf[js.Any], singleValuePropTypeID = singleValuePropTypeID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBDelayInit]
   }
 }

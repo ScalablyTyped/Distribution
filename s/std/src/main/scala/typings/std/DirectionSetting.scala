@@ -13,12 +13,10 @@ trait DirectionSetting extends js.Object
 
 object DirectionSetting {
   @scala.inline
-  def _empty: typings.std.stdStrings._empty = this.cast("")
+  def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lr: typings.std.stdStrings.lr = "lr".asInstanceOf[typings.std.stdStrings.lr]
   @scala.inline
-  def lr: typings.std.stdStrings.lr = this.cast("lr")
-  @scala.inline
-  def rl: typings.std.stdStrings.rl = this.cast("rl")
+  def rl: typings.std.stdStrings.rl = "rl".asInstanceOf[typings.std.stdStrings.rl]
 }
 

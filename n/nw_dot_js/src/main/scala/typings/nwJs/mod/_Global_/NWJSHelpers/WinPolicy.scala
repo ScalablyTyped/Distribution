@@ -47,7 +47,6 @@ object WinPolicy {
     setNewWindowManifest: WindowOption => Unit
   ): WinPolicy = {
     val __obj = js.Dynamic.literal(forceCurrent = js.Any.fromFunction0(forceCurrent), forceDownload = js.Any.fromFunction0(forceDownload), forceNewPopup = js.Any.fromFunction0(forceNewPopup), forceNewWindow = js.Any.fromFunction0(forceNewWindow), ignore = js.Any.fromFunction0(ignore), setNewWindowManifest = js.Any.fromFunction1(setNewWindowManifest))
-  
     __obj.asInstanceOf[WinPolicy]
   }
 }

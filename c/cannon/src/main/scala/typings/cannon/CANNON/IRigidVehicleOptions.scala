@@ -12,7 +12,6 @@ object IRigidVehicleOptions {
   @scala.inline
   def apply(chassisBody: Body): IRigidVehicleOptions = {
     val __obj = js.Dynamic.literal(chassisBody = chassisBody.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRigidVehicleOptions]
   }
 }

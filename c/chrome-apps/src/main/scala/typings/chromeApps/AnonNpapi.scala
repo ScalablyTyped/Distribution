@@ -13,7 +13,6 @@ object AnonNpapi {
   @scala.inline
   def apply(npapi: Boolean): AnonNpapi = {
     val __obj = js.Dynamic.literal(npapi = npapi.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNpapi]
   }
 }

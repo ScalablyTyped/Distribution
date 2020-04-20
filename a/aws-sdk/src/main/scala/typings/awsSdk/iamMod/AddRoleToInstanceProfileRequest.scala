@@ -20,7 +20,6 @@ object AddRoleToInstanceProfileRequest {
   @scala.inline
   def apply(InstanceProfileName: instanceProfileNameType, RoleName: roleNameType): AddRoleToInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(InstanceProfileName = InstanceProfileName.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddRoleToInstanceProfileRequest]
   }
 }

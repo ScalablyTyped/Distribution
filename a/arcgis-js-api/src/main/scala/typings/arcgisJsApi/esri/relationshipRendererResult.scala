@@ -59,7 +59,6 @@ object relationshipRendererResult {
     uniqueValueInfos: js.Array[typeUniqueValueInfo]
   ): relationshipRendererResult = {
     val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], classBreaks = classBreaks.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relationshipScheme = relationshipScheme.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], uniqueValueInfos = uniqueValueInfos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[relationshipRendererResult]
   }
 }

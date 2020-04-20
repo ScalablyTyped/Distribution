@@ -15,7 +15,6 @@ object RowActionT {
   @scala.inline
   def apply(label: String, onClick: AnonEvent => js.Any, renderIcon: js.Any): RowActionT = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), renderIcon = renderIcon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowActionT]
   }
 }

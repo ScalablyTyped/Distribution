@@ -12,7 +12,6 @@ object AnonDeliveryTimelineView {
   @scala.inline
   def apply(deliveryTimelineView: Double): AnonDeliveryTimelineView = {
     val __obj = js.Dynamic.literal(deliveryTimelineView = deliveryTimelineView.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDeliveryTimelineView]
   }
 }

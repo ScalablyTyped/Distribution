@@ -13,7 +13,6 @@ object Projection {
   @scala.inline
   def apply(fields: ProjectionFields, target: String): Projection = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Projection]
   }
 }

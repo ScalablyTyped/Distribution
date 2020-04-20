@@ -20,7 +20,7 @@ abstract class ComponentFactory[C] () extends js.Object {
   /**
     * The type of component the factory will create.
     */
-  def componentType(): Type[_] = js.native
+  def componentType: Type[_] = js.native
   /**
     * Creates a new component.
     */
@@ -43,18 +43,18 @@ abstract class ComponentFactory[C] () extends js.Object {
   /**
     * The inputs of the component.
     */
-  def inputs(): js.Array[AnonPropName] = js.native
+  def inputs: js.Array[AnonPropName] = js.native
   /**
     * Selector for all <ng-content> elements in the component.
     */
-  def ngContentSelectors(): js.Array[String] = js.native
+  def ngContentSelectors: js.Array[String] = js.native
   /**
     * The outputs of the component.
     */
-  def outputs(): js.Array[AnonPropName] = js.native
+  def outputs: js.Array[AnonPropName] = js.native
   /**
     * The component's HTML selector.
     */
-  def selector(): String = js.native
+  def selector: String = js.native
 }
 

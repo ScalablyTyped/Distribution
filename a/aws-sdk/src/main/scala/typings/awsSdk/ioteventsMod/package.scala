@@ -11,6 +11,7 @@ package object ioteventsMod {
   type Attributes = js.Array[typings.awsSdk.ioteventsMod.Attribute]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.ioteventsMod.ClientApiVersions
   type Condition = java.lang.String
+  type ContentExpression = java.lang.String
   type DeliveryStreamName = java.lang.String
   type DetectorDebugOptions = js.Array[typings.awsSdk.ioteventsMod.DetectorDebugOption]
   type DetectorModelArn = java.lang.String
@@ -30,6 +31,11 @@ package object ioteventsMod {
   */
   type DetectorModelVersionStatus = typings.awsSdk.ioteventsMod._DetectorModelVersionStatus | java.lang.String
   type DetectorModelVersionSummaries = js.Array[typings.awsSdk.ioteventsMod.DetectorModelVersionSummary]
+  type DynamoKeyField = java.lang.String
+  type DynamoKeyType = java.lang.String
+  type DynamoKeyValue = java.lang.String
+  type DynamoOperation = java.lang.String
+  type DynamoTableName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.BATCH
     - typings.awsSdk.awsSdkStrings.SERIAL
@@ -63,6 +69,12 @@ package object ioteventsMod {
   type MQTTTopic = java.lang.String
   type MaxResults = scala.Double
   type NextToken = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.STRING
+    - typings.awsSdk.awsSdkStrings.JSON
+    - java.lang.String
+  */
+  type PayloadType = typings.awsSdk.ioteventsMod._PayloadType | java.lang.String
   type QueueUrl = java.lang.String
   type Seconds = scala.Double
   type StateName = java.lang.String

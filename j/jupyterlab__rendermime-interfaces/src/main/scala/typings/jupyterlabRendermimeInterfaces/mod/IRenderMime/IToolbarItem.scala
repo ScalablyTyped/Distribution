@@ -17,7 +17,6 @@ object IToolbarItem {
   @scala.inline
   def apply(name: String, widget: Widget): IToolbarItem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], widget = widget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IToolbarItem]
   }
 }

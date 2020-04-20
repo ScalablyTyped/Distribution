@@ -1,7 +1,7 @@
 
 # Scala.js typings for md5
 
-Typings are for version v2.1.0
+Typings are for version 2.2
 
 ## Library description:
 js function for hashing messages with MD5

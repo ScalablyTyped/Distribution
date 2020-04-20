@@ -12,7 +12,6 @@ object Window {
   @scala.inline
   def apply(FIREBASE_REMOTE_CONFIG_URL_BASE: String): Window = {
     val __obj = js.Dynamic.literal(FIREBASE_REMOTE_CONFIG_URL_BASE = FIREBASE_REMOTE_CONFIG_URL_BASE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

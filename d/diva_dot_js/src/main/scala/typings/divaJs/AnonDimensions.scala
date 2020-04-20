@@ -19,7 +19,6 @@ object AnonDimensions {
   @scala.inline
   def apply(col: Double, dimensions: Dimensions, offset: Offset, row: Double, url: String, zoomLevel: Double): AnonDimensions = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], zoomLevel = zoomLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDimensions]
   }
 }

@@ -12,7 +12,6 @@ object CommandsAttributesObject {
   @scala.inline
   def apply(extension: CommandsAttributesExtensionObject): CommandsAttributesObject = {
     val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommandsAttributesObject]
   }
 }

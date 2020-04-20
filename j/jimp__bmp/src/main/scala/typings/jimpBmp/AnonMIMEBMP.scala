@@ -15,7 +15,6 @@ object AnonMIMEBMP {
   @scala.inline
   def apply(MIME_BMP: imageSlashbmp, MIME_X_MS_BMP: `imageSlashx-ms-bmp`): AnonMIMEBMP = {
     val __obj = js.Dynamic.literal(MIME_BMP = MIME_BMP.asInstanceOf[js.Any], MIME_X_MS_BMP = MIME_X_MS_BMP.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMIMEBMP]
   }
 }

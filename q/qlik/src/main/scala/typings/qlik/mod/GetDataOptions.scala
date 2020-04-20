@@ -17,7 +17,6 @@ object GetDataOptions {
   @scala.inline
   def apply(frequencyMode: V | P | R | N, rows: Double): GetDataOptions = {
     val __obj = js.Dynamic.literal(frequencyMode = frequencyMode.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDataOptions]
   }
 }

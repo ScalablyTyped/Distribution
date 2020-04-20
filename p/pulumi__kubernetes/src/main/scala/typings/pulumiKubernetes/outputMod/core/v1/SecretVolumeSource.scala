@@ -43,7 +43,6 @@ object SecretVolumeSource {
   @scala.inline
   def apply(defaultMode: Double, items: js.Array[KeyToPath], optional: Boolean, secretName: String): SecretVolumeSource = {
     val __obj = js.Dynamic.literal(defaultMode = defaultMode.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], secretName = secretName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecretVolumeSource]
   }
 }

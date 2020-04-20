@@ -34,7 +34,6 @@ object OptionBuilder {
   @scala.inline
   def apply(setLabel: String => OptionBuilder, setValue: String => OptionBuilder): OptionBuilder = {
     val __obj = js.Dynamic.literal(setLabel = js.Any.fromFunction1(setLabel), setValue = js.Any.fromFunction1(setValue))
-  
     __obj.asInstanceOf[OptionBuilder]
   }
 }

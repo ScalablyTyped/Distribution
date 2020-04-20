@@ -24,7 +24,6 @@ object DeleteApplicationSnapshotRequest {
   @scala.inline
   def apply(ApplicationName: ApplicationName, SnapshotCreationTimestamp: Timestamp, SnapshotName: SnapshotName): DeleteApplicationSnapshotRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], SnapshotCreationTimestamp = SnapshotCreationTimestamp.asInstanceOf[js.Any], SnapshotName = SnapshotName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApplicationSnapshotRequest]
   }
 }

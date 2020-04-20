@@ -178,16 +178,18 @@ trait CanvasContext extends js.Object {
   /**
     * 绘制图像到画布
     */
+  def drawImage(imageResource: String, dx: Double, dy: Double): Unit = js.native
+  def drawImage(imageResource: String, dx: Double, dy: Double, dWidth: Double, dHeigt: Double): Unit = js.native
   def drawImage(
-    imageResource: js.UndefOr[String],
-    dx: js.UndefOr[Double],
-    dy: js.UndefOr[Double],
-    dWidth: js.UndefOr[Double],
-    dHeigt: js.UndefOr[Double],
-    sx: js.UndefOr[Double],
-    sy: js.UndefOr[Double],
-    sWidth: js.UndefOr[Double],
-    sHeight: js.UndefOr[Double]
+    imageResource: String,
+    sx: Double,
+    sy: Double,
+    sWidth: Double,
+    sHeigt: Double,
+    dx: Double,
+    dy: Double,
+    dWidth: Double,
+    dHeight: Double
   ): Unit = js.native
   /**
     * 对当前路径中的内容进行填充

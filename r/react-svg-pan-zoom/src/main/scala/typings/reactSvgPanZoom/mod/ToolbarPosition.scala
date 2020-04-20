@@ -15,16 +15,14 @@ trait ToolbarPosition extends js.Object
 
 object ToolbarPosition {
   @scala.inline
-  def bottom: typings.reactSvgPanZoom.reactSvgPanZoomStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactSvgPanZoom.reactSvgPanZoomStrings.bottom = "bottom".asInstanceOf[typings.reactSvgPanZoom.reactSvgPanZoomStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.reactSvgPanZoom.reactSvgPanZoomStrings.left = "left".asInstanceOf[typings.reactSvgPanZoom.reactSvgPanZoomStrings.left]
   @scala.inline
-  def left: typings.reactSvgPanZoom.reactSvgPanZoomStrings.left = this.cast("left")
+  def none: typings.reactSvgPanZoom.reactSvgPanZoomStrings.none = "none".asInstanceOf[typings.reactSvgPanZoom.reactSvgPanZoomStrings.none]
   @scala.inline
-  def none: typings.reactSvgPanZoom.reactSvgPanZoomStrings.none = this.cast("none")
+  def right: typings.reactSvgPanZoom.reactSvgPanZoomStrings.right = "right".asInstanceOf[typings.reactSvgPanZoom.reactSvgPanZoomStrings.right]
   @scala.inline
-  def right: typings.reactSvgPanZoom.reactSvgPanZoomStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.reactSvgPanZoom.reactSvgPanZoomStrings.top = this.cast("top")
+  def top: typings.reactSvgPanZoom.reactSvgPanZoomStrings.top = "top".asInstanceOf[typings.reactSvgPanZoom.reactSvgPanZoomStrings.top]
 }
 

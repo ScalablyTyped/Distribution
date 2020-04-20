@@ -24,7 +24,6 @@ object GetSegmentVersionRequest {
   @scala.inline
   def apply(ApplicationId: string, SegmentId: string, Version: string): GetSegmentVersionRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSegmentVersionRequest]
   }
 }

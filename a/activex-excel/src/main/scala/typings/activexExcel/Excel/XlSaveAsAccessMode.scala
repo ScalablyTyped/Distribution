@@ -16,12 +16,10 @@ trait XlSaveAsAccessMode extends js.Object
 
 object XlSaveAsAccessMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlExclusive: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlExclusive: `3` = this.cast(3)
+  def xlNoChange: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlNoChange: `1` = this.cast(1)
-  @scala.inline
-  def xlShared: `2` = this.cast(2)
+  def xlShared: `2` = 2.asInstanceOf[`2`]
 }
 

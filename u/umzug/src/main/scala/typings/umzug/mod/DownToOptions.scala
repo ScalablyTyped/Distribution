@@ -18,7 +18,6 @@ object DownToOptions {
   @scala.inline
   def apply(to: String | `0`): DownToOptions = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DownToOptions]
   }
 }

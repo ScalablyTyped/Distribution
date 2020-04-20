@@ -147,7 +147,7 @@ object ssh2Strings {
   @scala.inline
   def `cancel-tcpip-forward`: `cancel-tcpip-forward` = "cancel-tcpip-forward".asInstanceOf[`cancel-tcpip-forward`]
   @scala.inline
-  def `change password`: `change password` = "change password".asInstanceOf[`change password`]
+  def `change password`: `change password` = ("change password").asInstanceOf[`change password`]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
@@ -209,7 +209,7 @@ object ssh2Strings {
   @scala.inline
   def subsystem: subsystem = "subsystem".asInstanceOf[subsystem]
   @scala.inline
-  def `tcp connection`: `tcp connection` = "tcp connection".asInstanceOf[`tcp connection`]
+  def `tcp connection`: `tcp connection` = ("tcp connection").asInstanceOf[`tcp connection`]
   @scala.inline
   def tcpip: tcpip = "tcpip".asInstanceOf[tcpip]
   @scala.inline

@@ -14,7 +14,6 @@ object AccessPoliciesStatus {
   @scala.inline
   def apply(Options: PolicyDocument, Status: OptionStatus): AccessPoliciesStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccessPoliciesStatus]
   }
 }

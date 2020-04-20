@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait storybookAddonNotesProps {
   @scala.inline
-  def GiphyProps: Props.type = typings.storybookAddonNotes.giphyMod.Props
+  def GiphyProps: Props.type = Props
   type GiphyProps = Props
   @scala.inline
   def NotesLinkProps: typings.storybookAddonNotes.panelMod.NotesLinkProps.type = typings.storybookAddonNotes.panelMod.NotesLinkProps

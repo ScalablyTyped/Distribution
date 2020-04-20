@@ -14,7 +14,6 @@ object Props {
   @scala.inline
   def apply(active: Boolean, api: API): Props = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Props]
   }
 }

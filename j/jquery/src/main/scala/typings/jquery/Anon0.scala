@@ -13,7 +13,6 @@ object Anon0 {
   @scala.inline
   def apply[TElement](get: TElement => js.Any): Anon0[TElement] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[Anon0[TElement]]
   }
 }

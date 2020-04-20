@@ -20,7 +20,6 @@ object DeleteGlobalReplicationGroupMessage {
   @scala.inline
   def apply(GlobalReplicationGroupId: String, RetainPrimaryReplicationGroup: Boolean): DeleteGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any], RetainPrimaryReplicationGroup = RetainPrimaryReplicationGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGlobalReplicationGroupMessage]
   }
 }

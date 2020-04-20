@@ -16,7 +16,6 @@ object ApplicationSnapshotConfigurationDescription {
   @scala.inline
   def apply(SnapshotsEnabled: BooleanObject): ApplicationSnapshotConfigurationDescription = {
     val __obj = js.Dynamic.literal(SnapshotsEnabled = SnapshotsEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplicationSnapshotConfigurationDescription]
   }
 }

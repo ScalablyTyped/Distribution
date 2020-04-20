@@ -16,7 +16,6 @@ object AnonAnimating {
   @scala.inline
   def apply(animating: Boolean, panelColor: String, prefixCls: String, size: String, toast: Boolean): AnonAnimating = {
     val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any], panelColor = panelColor.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], toast = toast.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimating]
   }
 }

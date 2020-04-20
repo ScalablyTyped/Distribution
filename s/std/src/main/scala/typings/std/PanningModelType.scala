@@ -12,10 +12,8 @@ trait PanningModelType extends js.Object
 
 object PanningModelType {
   @scala.inline
-  def HRTF: typings.std.stdStrings.HRTF = this.cast("HRTF")
+  def HRTF: typings.std.stdStrings.HRTF = "HRTF".asInstanceOf[typings.std.stdStrings.HRTF]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def equalpower: typings.std.stdStrings.equalpower = this.cast("equalpower")
+  def equalpower: typings.std.stdStrings.equalpower = "equalpower".asInstanceOf[typings.std.stdStrings.equalpower]
 }
 

@@ -51,7 +51,7 @@ class ObservableList_[T] () extends IObservableList[T] {
     * A signal emitted when the list has changed.
     */
   @JSName("changed")
-  def changed_MObservableList_(): ISignal[this.type, IChangedArgs[T]] = js.native
+  def changed_MObservableList_ : ISignal[this.type, IChangedArgs[T]] = js.native
   /**
     * Remove all values from the list.
     *
@@ -134,7 +134,7 @@ class ObservableList_[T] () extends IObservableList[T] {
     * Test whether the list has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MObservableList_(): Boolean = js.native
+  def isDisposed_MObservableList_ : Boolean = js.native
   /**
     * Create an iterator over the values in the list.
     *
@@ -152,7 +152,7 @@ class ObservableList_[T] () extends IObservableList[T] {
     * The length of the list.
     */
   @JSName("length")
-  def length_MObservableList_(): Double = js.native
+  def length_MObservableList_ : Double = js.native
   /**
     * Move a value from one index to another.
     *
@@ -279,6 +279,6 @@ class ObservableList_[T] () extends IObservableList[T] {
     * The type of this object.
     */
   @JSName("type")
-  def type_MObservableList_(): List = js.native
+  def type_MObservableList_ : List = js.native
 }
 

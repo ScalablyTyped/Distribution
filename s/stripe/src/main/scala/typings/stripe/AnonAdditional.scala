@@ -13,7 +13,6 @@ object AnonAdditional {
   @scala.inline
   def apply(additional: js.Array[String], minimum: js.Array[String]): AnonAdditional = {
     val __obj = js.Dynamic.literal(additional = additional.asInstanceOf[js.Any], minimum = minimum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAdditional]
   }
 }

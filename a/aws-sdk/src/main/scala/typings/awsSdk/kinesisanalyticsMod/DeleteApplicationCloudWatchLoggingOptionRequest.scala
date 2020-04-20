@@ -28,7 +28,6 @@ object DeleteApplicationCloudWatchLoggingOptionRequest {
     CurrentApplicationVersionId: ApplicationVersionId
   ): DeleteApplicationCloudWatchLoggingOptionRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CloudWatchLoggingOptionId = CloudWatchLoggingOptionId.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApplicationCloudWatchLoggingOptionRequest]
   }
 }

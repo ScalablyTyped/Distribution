@@ -14,14 +14,12 @@ trait AppStateEvent extends js.Object
 
 object AppStateEvent {
   @scala.inline
-  def blur: typings.reactNative.reactNativeStrings.blur = this.cast("blur")
+  def blur: typings.reactNative.reactNativeStrings.blur = "blur".asInstanceOf[typings.reactNative.reactNativeStrings.blur]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def change: typings.reactNative.reactNativeStrings.change = "change".asInstanceOf[typings.reactNative.reactNativeStrings.change]
   @scala.inline
-  def change: typings.reactNative.reactNativeStrings.change = this.cast("change")
+  def focus: typings.reactNative.reactNativeStrings.focus = "focus".asInstanceOf[typings.reactNative.reactNativeStrings.focus]
   @scala.inline
-  def focus: typings.reactNative.reactNativeStrings.focus = this.cast("focus")
-  @scala.inline
-  def memoryWarning: typings.reactNative.reactNativeStrings.memoryWarning = this.cast("memoryWarning")
+  def memoryWarning: typings.reactNative.reactNativeStrings.memoryWarning = "memoryWarning".asInstanceOf[typings.reactNative.reactNativeStrings.memoryWarning]
 }
 

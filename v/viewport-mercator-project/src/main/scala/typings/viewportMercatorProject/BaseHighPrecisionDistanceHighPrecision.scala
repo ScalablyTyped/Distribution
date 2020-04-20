@@ -18,7 +18,6 @@ object BaseHighPrecisionDistanceHighPrecision {
   @scala.inline
   def apply(highPrecision: `true`, latitude: Double, longitude: Double, scale: Double): BaseHighPrecisionDistanceHighPrecision = {
     val __obj = js.Dynamic.literal(highPrecision = highPrecision.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseHighPrecisionDistanceHighPrecision]
   }
 }

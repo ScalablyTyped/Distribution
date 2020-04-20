@@ -18,7 +18,7 @@ class default protected () extends LatLonEllipsoidalReferenceFrame {
 @JSImport("geodesy/latlon-ellipsoidal-referenceframe", "default")
 @js.native
 object default extends js.Object {
-  def ellipsoids(): Ellipsoids = js.native
+  def ellipsoids: Ellipsoids = js.native
   def parse(lat: String): LatLonEllipsoidalReferenceFrame = js.native
   def parse(lat: String, lon: Double): LatLonEllipsoidalReferenceFrame = js.native
   def parse(lat: String, lon: Double, height: Double): LatLonEllipsoidalReferenceFrame = js.native
@@ -34,7 +34,7 @@ object default extends js.Object {
   def parse(lat: Double, lon: Double, height: Double): LatLonEllipsoidalReferenceFrame = js.native
   def parse(lat: Double, lon: Double, height: Double, referenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = js.native
   def parse(lat: Double, lon: Double, height: Double, referenceFrame: ReferenceFrame, epoch: Double): LatLonEllipsoidalReferenceFrame = js.native
-  def referenceFrames(): ReferenceFrames = js.native
-  def transformParameters(): TxParams = js.native
+  def referenceFrames: ReferenceFrames = js.native
+  def transformParameters: TxParams = js.native
 }
 

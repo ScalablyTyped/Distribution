@@ -16,7 +16,6 @@ object Scte35TimeSignalScheduleActionSettings {
   @scala.inline
   def apply(Scte35Descriptors: listOfScte35Descriptor): Scte35TimeSignalScheduleActionSettings = {
     val __obj = js.Dynamic.literal(Scte35Descriptors = Scte35Descriptors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scte35TimeSignalScheduleActionSettings]
   }
 }

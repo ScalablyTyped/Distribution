@@ -19,7 +19,6 @@ object ClientPositions {
   @scala.inline
   def apply(borderBoxCenter: Position, offset: Position, selection: Position): ClientPositions = {
     val __obj = js.Dynamic.literal(borderBoxCenter = borderBoxCenter.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientPositions]
   }
 }

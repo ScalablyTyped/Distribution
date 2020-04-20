@@ -44,7 +44,6 @@ object DirectTokenizationParameters {
   @scala.inline
   def apply(protocolVersion: String, publicKey: String): DirectTokenizationParameters = {
     val __obj = js.Dynamic.literal(protocolVersion = protocolVersion.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectTokenizationParameters]
   }
 }

@@ -1,6 +1,6 @@
 package typings.ionic.definitionsMod
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.WritableStream
 import typings.node.childProcessMod.SerializationType
 import typings.node.childProcessMod.StdioOptions
@@ -20,7 +20,7 @@ object IShellRunOptions {
     argv0: String = null,
     cwd: String = null,
     detached: js.UndefOr[Boolean] = js.undefined,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     fatalOnError: js.UndefOr[Boolean] = js.undefined,
     fatalOnNotFound: js.UndefOr[Boolean] = js.undefined,
     gid: Int | Double = null,

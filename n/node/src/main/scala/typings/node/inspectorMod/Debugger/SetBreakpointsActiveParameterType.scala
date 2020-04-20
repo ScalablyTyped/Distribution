@@ -15,7 +15,6 @@ object SetBreakpointsActiveParameterType {
   @scala.inline
   def apply(active: Boolean): SetBreakpointsActiveParameterType = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetBreakpointsActiveParameterType]
   }
 }

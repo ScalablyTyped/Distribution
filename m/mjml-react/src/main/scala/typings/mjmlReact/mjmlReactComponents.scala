@@ -34,113 +34,106 @@ import scala.scalajs.js.annotation._
 
 object mjmlReactComponents extends mjmlReactProps {
   @scala.inline
-  def Mjml: ComponentType[MjmlProps with RequiredChildrenProps] = js.constructorOf[typings.mjmlReact.mod.Mjml].asInstanceOf[typings.react.mod.ComponentType[typings.mjmlReact.mod.MjmlProps with typings.mjmlReact.mod.RequiredChildrenProps]]
+  def Mjml: ComponentType[MjmlProps with RequiredChildrenProps] = js.constructorOf[typings.mjmlReact.mod.Mjml].asInstanceOf[ComponentType[MjmlProps with RequiredChildrenProps]]
   @scala.inline
-  def MjmlAccordion: ComponentType[RequiredChildrenProps with MjmlAccordionElementProps] = js.constructorOf[typings.mjmlReact.mod.MjmlAccordion].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.MjmlAccordionElementProps]]
+  def MjmlAccordion: ComponentType[RequiredChildrenProps with MjmlAccordionElementProps] = js.constructorOf[typings.mjmlReact.mod.MjmlAccordion].asInstanceOf[ComponentType[RequiredChildrenProps with MjmlAccordionElementProps]]
   @scala.inline
-  def MjmlAccordionElement: ComponentType[RequiredChildrenProps with MjmlAccordionElementProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlAccordionElement].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.MjmlAccordionElementProps with typings.mjmlReact.mod.ClassNameProps]]
+  def MjmlAccordionElement: ComponentType[RequiredChildrenProps with MjmlAccordionElementProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlAccordionElement].asInstanceOf[ComponentType[RequiredChildrenProps with MjmlAccordionElementProps with ClassNameProps]]
   @scala.inline
   def MjmlAccordionText: ComponentType[
     RequiredChildrenProps with MjmlAccordionTextProps with PaddingProps with ClassNameProps
-  ] = js.constructorOf[typings.mjmlReact.mod.MjmlAccordionText].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.MjmlAccordionTextProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps]]
+  ] = js.constructorOf[typings.mjmlReact.mod.MjmlAccordionText].asInstanceOf[ComponentType[
+    RequiredChildrenProps with MjmlAccordionTextProps with PaddingProps with ClassNameProps
+  ]]
   @scala.inline
   def MjmlAccordionTitle: ComponentType[
     RequiredChildrenProps with MjmlAccordionTitleProps with PaddingProps with ClassNameProps
-  ] = js.constructorOf[typings.mjmlReact.mod.MjmlAccordionTitle].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.MjmlAccordionTitleProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps]]
+  ] = js.constructorOf[typings.mjmlReact.mod.MjmlAccordionTitle].asInstanceOf[ComponentType[
+    RequiredChildrenProps with MjmlAccordionTitleProps with PaddingProps with ClassNameProps
+  ]]
   @scala.inline
-  def MjmlAll: ComponentType[MjmlAllProps] = js.constructorOf[typings.mjmlReact.mod.MjmlAll].asInstanceOf[typings.react.mod.ComponentType[MjmlAllProps]]
+  def MjmlAll: ComponentType[MjmlAllProps] = js.constructorOf[typings.mjmlReact.mod.MjmlAll].asInstanceOf[ComponentType[MjmlAllProps]]
   @scala.inline
-  def MjmlAttributes: ComponentType[MjmlAttributesProps] = js.constructorOf[typings.mjmlReact.mod.MjmlAttributes].asInstanceOf[typings.react.mod.ComponentType[MjmlAttributesProps]]
+  def MjmlAttributes: ComponentType[MjmlAttributesProps] = js.constructorOf[typings.mjmlReact.mod.MjmlAttributes].asInstanceOf[ComponentType[MjmlAttributesProps]]
   @scala.inline
-  def MjmlBody: ComponentType[RequiredChildrenProps with MjmlBodyProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlBody].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.MjmlBodyProps with typings.mjmlReact.mod.ClassNameProps]]
+  def MjmlBody: ComponentType[RequiredChildrenProps with MjmlBodyProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlBody].asInstanceOf[ComponentType[RequiredChildrenProps with MjmlBodyProps with ClassNameProps]]
   @scala.inline
-  def MjmlBreakpoint: ComponentType[MjmlBreakpointProps] = js.constructorOf[typings.mjmlReact.mod.MjmlBreakpoint].asInstanceOf[typings.react.mod.ComponentType[MjmlBreakpointProps]]
+  def MjmlBreakpoint: ComponentType[MjmlBreakpointProps] = js.constructorOf[typings.mjmlReact.mod.MjmlBreakpoint].asInstanceOf[ComponentType[MjmlBreakpointProps]]
   @scala.inline
   def MjmlButton: ComponentType[
     RequiredChildrenProps with MjmlButtonProps with PaddingProps with ClassNameProps with HrefProps with BorderProps
-  ] = js.constructorOf[typings.mjmlReact.mod.MjmlButton].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.MjmlButtonProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps with typings.mjmlReact.mod.HrefProps with typings.mjmlReact.mod.BorderProps]]
+  ] = js.constructorOf[typings.mjmlReact.mod.MjmlButton].asInstanceOf[ComponentType[
+    RequiredChildrenProps with MjmlButtonProps with PaddingProps with ClassNameProps with HrefProps with BorderProps
+  ]]
   @scala.inline
-  def MjmlCarousel: ComponentType[RequiredChildrenProps with MjmlCarouselProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlCarousel].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.MjmlCarouselProps with typings.mjmlReact.mod.ClassNameProps]]
+  def MjmlCarousel: ComponentType[RequiredChildrenProps with MjmlCarouselProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlCarousel].asInstanceOf[ComponentType[RequiredChildrenProps with MjmlCarouselProps with ClassNameProps]]
   @scala.inline
-  def MjmlCarouselImage: ComponentType[MjmlCarouselImageProps with ClassNameProps with HrefProps] = js.constructorOf[typings.mjmlReact.mod.MjmlCarouselImage].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlCarouselImageProps with typings.mjmlReact.mod.ClassNameProps with typings.mjmlReact.mod.HrefProps]]
+  def MjmlCarouselImage: ComponentType[MjmlCarouselImageProps with ClassNameProps with HrefProps] = js.constructorOf[typings.mjmlReact.mod.MjmlCarouselImage].asInstanceOf[ComponentType[MjmlCarouselImageProps with ClassNameProps with HrefProps]]
   @scala.inline
-  def MjmlClass: ComponentType[MjmlClassProps] = js.constructorOf[typings.mjmlReact.mod.MjmlClass].asInstanceOf[typings.react.mod.ComponentType[MjmlClassProps]]
+  def MjmlClass: ComponentType[MjmlClassProps] = js.constructorOf[typings.mjmlReact.mod.MjmlClass].asInstanceOf[ComponentType[MjmlClassProps]]
   @scala.inline
   def MjmlColumn: ComponentType[
     RequiredChildrenProps with MjmlColumnProps with PaddingProps with ClassNameProps with BorderProps
-  ] = js.constructorOf[typings.mjmlReact.mod.MjmlColumn].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.MjmlColumnProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps with typings.mjmlReact.mod.BorderProps]]
+  ] = js.constructorOf[typings.mjmlReact.mod.MjmlColumn].asInstanceOf[ComponentType[
+    RequiredChildrenProps with MjmlColumnProps with PaddingProps with ClassNameProps with BorderProps
+  ]]
   @scala.inline
-  def MjmlComment: ComponentType[MjmlCommentProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlComment].asInstanceOf[typings.react.mod.ComponentType[MjmlCommentProps]]
+  def MjmlComment: ComponentType[MjmlCommentProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlComment].asInstanceOf[ComponentType[MjmlCommentProps]]
   @scala.inline
-  def MjmlConditionalComment: ComponentType[MjmlConditionalCommentProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlConditionalComment].asInstanceOf[typings.react.mod.ComponentType[MjmlConditionalCommentProps]]
+  def MjmlConditionalComment: ComponentType[MjmlConditionalCommentProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlConditionalComment].asInstanceOf[ComponentType[MjmlConditionalCommentProps]]
   @scala.inline
-  def MjmlDivider: ComponentType[MjmlDividerProps with ClassNameProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlDivider].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlDividerProps with typings.mjmlReact.mod.ClassNameProps with typings.mjmlReact.mod.PaddingProps]]
+  def MjmlDivider: ComponentType[MjmlDividerProps with ClassNameProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlDivider].asInstanceOf[ComponentType[MjmlDividerProps with ClassNameProps with PaddingProps]]
   @scala.inline
-  def MjmlFont: ComponentType[MjmlFontProps] = js.constructorOf[typings.mjmlReact.mod.MjmlFont].asInstanceOf[typings.react.mod.ComponentType[MjmlFontProps]]
+  def MjmlFont: ComponentType[MjmlFontProps] = js.constructorOf[typings.mjmlReact.mod.MjmlFont].asInstanceOf[ComponentType[MjmlFontProps]]
   @scala.inline
-  def MjmlGroup: ComponentType[MjmlGroupProps with RequiredChildrenProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlGroup].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlGroupProps with typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.ClassNameProps]]
+  def MjmlGroup: ComponentType[MjmlGroupProps with RequiredChildrenProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlGroup].asInstanceOf[ComponentType[MjmlGroupProps with RequiredChildrenProps with ClassNameProps]]
   @scala.inline
-  def MjmlHead: ComponentType[MjmlHeadProps] = js.constructorOf[typings.mjmlReact.mod.MjmlHead].asInstanceOf[typings.react.mod.ComponentType[MjmlHeadProps]]
+  def MjmlHead: ComponentType[MjmlHeadProps] = js.constructorOf[typings.mjmlReact.mod.MjmlHead].asInstanceOf[ComponentType[MjmlHeadProps]]
   @scala.inline
-  def MjmlHero: ComponentType[MjmlHeroProps with ClassNameProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlHero].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlHeroProps with typings.mjmlReact.mod.ClassNameProps with typings.mjmlReact.mod.PaddingProps]]
+  def MjmlHero: ComponentType[MjmlHeroProps with ClassNameProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlHero].asInstanceOf[ComponentType[MjmlHeroProps with ClassNameProps with PaddingProps]]
   @scala.inline
-  def MjmlImage: ComponentType[MjmlImageProps with PaddingProps with ClassNameProps with HrefProps] = js.constructorOf[typings.mjmlReact.mod.MjmlImage].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlImageProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps with typings.mjmlReact.mod.HrefProps]]
+  def MjmlImage: ComponentType[MjmlImageProps with PaddingProps with ClassNameProps with HrefProps] = js.constructorOf[typings.mjmlReact.mod.MjmlImage].asInstanceOf[ComponentType[MjmlImageProps with PaddingProps with ClassNameProps with HrefProps]]
   @scala.inline
-  def MjmlNavbar: ComponentType[MjmlNavbarProps with RequiredChildrenProps] = js.constructorOf[typings.mjmlReact.mod.MjmlNavbar].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlNavbarProps with typings.mjmlReact.mod.RequiredChildrenProps]]
+  def MjmlNavbar: ComponentType[MjmlNavbarProps with RequiredChildrenProps] = js.constructorOf[typings.mjmlReact.mod.MjmlNavbar].asInstanceOf[ComponentType[MjmlNavbarProps with RequiredChildrenProps]]
   @scala.inline
-  def MjmlNavbarLink: ComponentType[MjmlNavbarLinkProps with HrefProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlNavbarLink].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlNavbarLinkProps with typings.mjmlReact.mod.HrefProps with typings.mjmlReact.mod.PaddingProps]]
+  def MjmlNavbarLink: ComponentType[MjmlNavbarLinkProps with HrefProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlNavbarLink].asInstanceOf[ComponentType[MjmlNavbarLinkProps with HrefProps with PaddingProps]]
   @scala.inline
-  def MjmlPreview: ComponentType[MjmlPreviewProps] = js.constructorOf[typings.mjmlReact.mod.MjmlPreview].asInstanceOf[typings.react.mod.ComponentType[MjmlPreviewProps]]
+  def MjmlPreview: ComponentType[MjmlPreviewProps] = js.constructorOf[typings.mjmlReact.mod.MjmlPreview].asInstanceOf[ComponentType[MjmlPreviewProps]]
   @scala.inline
-  def MjmlRaw: ComponentType[MjmlRawProps] = js.constructorOf[typings.mjmlReact.mod.MjmlRaw].asInstanceOf[typings.react.mod.ComponentType[MjmlRawProps]]
+  def MjmlRaw: ComponentType[MjmlRawProps] = js.constructorOf[typings.mjmlReact.mod.MjmlRaw].asInstanceOf[ComponentType[MjmlRawProps]]
   @scala.inline
   def MjmlSection: ComponentType[
     MjmlSectionProps with RequiredChildrenProps with BorderProps with PaddingProps with ClassNameProps
-  ] = js.constructorOf[typings.mjmlReact.mod.MjmlSection].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlSectionProps with typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.BorderProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps]]
+  ] = js.constructorOf[typings.mjmlReact.mod.MjmlSection].asInstanceOf[ComponentType[
+    MjmlSectionProps with RequiredChildrenProps with BorderProps with PaddingProps with ClassNameProps
+  ]]
   @scala.inline
-  def MjmlSocial: ComponentType[MjmlSocialProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlSocial].asInstanceOf[typings.react.mod.ComponentType[typings.mjmlReact.mod.MjmlSocialProps with typings.mjmlReact.mod.PaddingProps]]
+  def MjmlSocial: ComponentType[MjmlSocialProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlSocial].asInstanceOf[ComponentType[MjmlSocialProps with PaddingProps]]
   @scala.inline
   def MjmlSocialElement: ComponentType[
     MjmlSocialElementProps with RequiredChildrenProps with HrefProps with PaddingProps
-  ] = js.constructorOf[typings.mjmlReact.mod.MjmlSocialElement].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlSocialElementProps with typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.HrefProps with typings.mjmlReact.mod.PaddingProps]]
+  ] = js.constructorOf[typings.mjmlReact.mod.MjmlSocialElement].asInstanceOf[ComponentType[
+    MjmlSocialElementProps with RequiredChildrenProps with HrefProps with PaddingProps
+  ]]
   @scala.inline
-  def MjmlSpacer: ComponentType[MjmlSpacerProps with BorderProps with PaddingProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlSpacer].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlSpacerProps with typings.mjmlReact.mod.BorderProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps]]
+  def MjmlSpacer: ComponentType[MjmlSpacerProps with BorderProps with PaddingProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlSpacer].asInstanceOf[ComponentType[MjmlSpacerProps with BorderProps with PaddingProps with ClassNameProps]]
   @scala.inline
-  def MjmlStyle: ComponentType[MjmlStyleProps] = js.constructorOf[typings.mjmlReact.mod.MjmlStyle].asInstanceOf[typings.react.mod.ComponentType[MjmlStyleProps]]
+  def MjmlStyle: ComponentType[MjmlStyleProps] = js.constructorOf[typings.mjmlReact.mod.MjmlStyle].asInstanceOf[ComponentType[MjmlStyleProps]]
   @scala.inline
-  def MjmlTable: ComponentType[MjmlTableProps with RequiredChildrenProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlTable].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlTableProps with typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.PaddingProps]]
+  def MjmlTable: ComponentType[MjmlTableProps with RequiredChildrenProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlTable].asInstanceOf[ComponentType[MjmlTableProps with RequiredChildrenProps with PaddingProps]]
   @scala.inline
-  def MjmlText: ComponentType[MjmlTextProps with RequiredChildrenProps with PaddingProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlText].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlTextProps with typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps]]
+  def MjmlText: ComponentType[MjmlTextProps with RequiredChildrenProps with PaddingProps with ClassNameProps] = js.constructorOf[typings.mjmlReact.mod.MjmlText].asInstanceOf[ComponentType[MjmlTextProps with RequiredChildrenProps with PaddingProps with ClassNameProps]]
   @scala.inline
-  def MjmlTitle: ComponentType[MjmlTitleProps] = js.constructorOf[typings.mjmlReact.mod.MjmlTitle].asInstanceOf[typings.react.mod.ComponentType[MjmlTitleProps]]
+  def MjmlTitle: ComponentType[MjmlTitleProps] = js.constructorOf[typings.mjmlReact.mod.MjmlTitle].asInstanceOf[ComponentType[MjmlTitleProps]]
   @scala.inline
-  def MjmlTrackingPixel: ComponentType[MjmlTrackingPixelProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlTrackingPixel].asInstanceOf[typings.react.mod.ComponentType[MjmlTrackingPixelProps]]
+  def MjmlTrackingPixel: ComponentType[MjmlTrackingPixelProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlTrackingPixel].asInstanceOf[ComponentType[MjmlTrackingPixelProps]]
   @scala.inline
   def MjmlWrapper: ComponentType[
     MjmlWrapperProps with RequiredChildrenProps with BorderProps with PaddingProps with ClassNameProps
-  ] = js.constructorOf[typings.mjmlReact.mod.MjmlWrapper].asInstanceOf[typings.react.mod.ComponentType[
-  typings.mjmlReact.mod.MjmlWrapperProps with typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.BorderProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps]]
+  ] = js.constructorOf[typings.mjmlReact.mod.MjmlWrapper].asInstanceOf[ComponentType[
+    MjmlWrapperProps with RequiredChildrenProps with BorderProps with PaddingProps with ClassNameProps
+  ]]
   @scala.inline
-  def MjmlYahooStyle: ComponentType[MjmlYahooStyleProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlYahooStyle].asInstanceOf[typings.react.mod.ComponentType[MjmlYahooStyleProps]]
+  def MjmlYahooStyle: ComponentType[MjmlYahooStyleProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlYahooStyle].asInstanceOf[ComponentType[MjmlYahooStyleProps]]
 }
 

@@ -15,7 +15,6 @@ object AnonUnit {
   @scala.inline
   def apply(path: js.Array[Pixel | (js.Tuple2[Double, Double])], unit: px): AnonUnit = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUnit]
   }
 }

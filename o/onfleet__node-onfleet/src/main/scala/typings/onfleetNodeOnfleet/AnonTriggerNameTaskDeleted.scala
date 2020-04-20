@@ -16,7 +16,6 @@ object AnonTriggerNameTaskDeleted {
   @scala.inline
   def apply(triggerId: `8`, triggerName: TaskDeleted): AnonTriggerNameTaskDeleted = {
     val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTriggerNameTaskDeleted]
   }
 }

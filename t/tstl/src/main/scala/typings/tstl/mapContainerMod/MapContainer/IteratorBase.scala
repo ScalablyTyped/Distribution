@@ -19,7 +19,6 @@ object IteratorBase {
   @scala.inline
   def apply[Key, T](first: Key, second: T): IteratorBase[Key, T] = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IteratorBase[Key, T]]
   }
 }

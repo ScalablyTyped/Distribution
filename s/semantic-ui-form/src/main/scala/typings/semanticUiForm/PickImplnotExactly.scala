@@ -13,7 +13,6 @@ object PickImplnotExactly {
   @scala.inline
   def apply(notExactly: String): PickImplnotExactly = {
     val __obj = js.Dynamic.literal(notExactly = notExactly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnotExactly]
   }
 }

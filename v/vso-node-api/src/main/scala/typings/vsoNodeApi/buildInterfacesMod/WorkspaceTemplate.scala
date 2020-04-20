@@ -38,7 +38,6 @@ object WorkspaceTemplate {
     workspaceId: Double
   ): WorkspaceTemplate = {
     val __obj = js.Dynamic.literal(definitionUri = definitionUri.asInstanceOf[js.Any], lastModifiedBy = lastModifiedBy.asInstanceOf[js.Any], lastModifiedDate = lastModifiedDate.asInstanceOf[js.Any], mappings = mappings.asInstanceOf[js.Any], workspaceId = workspaceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkspaceTemplate]
   }
 }

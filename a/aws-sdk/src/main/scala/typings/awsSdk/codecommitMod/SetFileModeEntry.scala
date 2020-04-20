@@ -20,7 +20,6 @@ object SetFileModeEntry {
   @scala.inline
   def apply(fileMode: FileModeTypeEnum, filePath: Path): SetFileModeEntry = {
     val __obj = js.Dynamic.literal(fileMode = fileMode.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetFileModeEntry]
   }
 }

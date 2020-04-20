@@ -12,7 +12,6 @@ object AnonRole {
   @scala.inline
   def apply(role: String): AnonRole = {
     val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRole]
   }
 }

@@ -13,12 +13,10 @@ trait GameRequestActionType extends js.Object
 
 object GameRequestActionType {
   @scala.inline
-  def askfor: typings.reactNativeFbsdk.reactNativeFbsdkStrings.askfor = this.cast("askfor")
+  def askfor: typings.reactNativeFbsdk.reactNativeFbsdkStrings.askfor = "askfor".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.askfor]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def send: typings.reactNativeFbsdk.reactNativeFbsdkStrings.send = "send".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.send]
   @scala.inline
-  def send: typings.reactNativeFbsdk.reactNativeFbsdkStrings.send = this.cast("send")
-  @scala.inline
-  def turn: typings.reactNativeFbsdk.reactNativeFbsdkStrings.turn = this.cast("turn")
+  def turn: typings.reactNativeFbsdk.reactNativeFbsdkStrings.turn = "turn".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.turn]
 }
 

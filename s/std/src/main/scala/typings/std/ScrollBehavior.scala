@@ -12,10 +12,8 @@ trait ScrollBehavior extends js.Object
 
 object ScrollBehavior {
   @scala.inline
-  def auto: typings.std.stdStrings.auto = this.cast("auto")
+  def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def smooth: typings.std.stdStrings.smooth = this.cast("smooth")
+  def smooth: typings.std.stdStrings.smooth = "smooth".asInstanceOf[typings.std.stdStrings.smooth]
 }
 

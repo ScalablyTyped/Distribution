@@ -12,10 +12,8 @@ trait SearchStatus extends js.Object
 
 object SearchStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complete: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.complete = "complete".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.complete]
   @scala.inline
-  def complete: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.complete = this.cast("complete")
-  @scala.inline
-  def error: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error = this.cast("error")
+  def error: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error = "error".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error]
 }
 

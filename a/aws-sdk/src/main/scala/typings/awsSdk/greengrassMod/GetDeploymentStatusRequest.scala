@@ -20,7 +20,6 @@ object GetDeploymentStatusRequest {
   @scala.inline
   def apply(DeploymentId: string, GroupId: string): GetDeploymentStatusRequest = {
     val __obj = js.Dynamic.literal(DeploymentId = DeploymentId.asInstanceOf[js.Any], GroupId = GroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDeploymentStatusRequest]
   }
 }

@@ -24,7 +24,6 @@ object SofortDetails {
     verified_name: String
   ): SofortDetails = {
     val __obj = js.Dynamic.literal(bank_code = bank_code.asInstanceOf[js.Any], bank_name = bank_name.asInstanceOf[js.Any], bic = bic.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], iban_last4 = iban_last4.asInstanceOf[js.Any], verified_name = verified_name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SofortDetails]
   }
 }

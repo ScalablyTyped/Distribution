@@ -29,22 +29,22 @@ class HttpConfiguration protected () extends Element {
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def authenticationPassword(): String = js.native
+  def authenticationPassword: String = js.native
   def authenticationPassword(newValue: String): js.Any = js.native
-  def containerAsConsumedODataService(): ConsumedODataService = js.native
-  def containerAsRestCallAction(): RestCallAction = js.native
-  def containerAsWebServiceCallAction(): WebServiceCallAction = js.native
+  def containerAsConsumedODataService: ConsumedODataService = js.native
+  def containerAsRestCallAction: RestCallAction = js.native
+  def containerAsWebServiceCallAction: WebServiceCallAction = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def customLocation(): String = js.native
+  def customLocation: String = js.native
   def customLocation(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  def customLocationModel(): Expression = js.native
+  def customLocationModel: Expression = js.native
   def customLocationModel(newValue: Expression): js.Any = js.native
   def customLocationTemplate(): js.Any = js.native
   def customLocationTemplate(newValue: StringTemplate): js.Any = js.native
@@ -52,41 +52,41 @@ class HttpConfiguration protected () extends Element {
     * In version 6.6.0: introduced
     */
   @JSName("customLocationTemplate")
-  def customLocationTemplate_Union(): StringTemplate | Null = js.native
-  def headerEntries(): IList[HttpHeaderEntry] = js.native
+  def customLocationTemplate_Union: StringTemplate | Null = js.native
+  def headerEntries: IList[HttpHeaderEntry] = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def httpAuthenticationUserName(): String = js.native
+  def httpAuthenticationUserName: String = js.native
   def httpAuthenticationUserName(newValue: String): js.Any = js.native
   /**
     * In version 7.7.0: deleted
     * In version 6.6.0: introduced
     */
-  def httpMethod(): HttpMethod = js.native
+  def httpMethod: HttpMethod = js.native
   def httpMethod(newValue: HttpMethod): js.Any = js.native
   /**
     * In version 7.7.0: introduced
     */
-  def newHttpMethod(): typings.mendixmodelsdk.servicesMod.services.HttpMethod = js.native
+  def newHttpMethod: typings.mendixmodelsdk.servicesMod.services.HttpMethod = js.native
   def newHttpMethod(newValue: typings.mendixmodelsdk.servicesMod.services.HttpMethod): js.Any = js.native
-  def overrideLocation(): Boolean = js.native
+  def overrideLocation: Boolean = js.native
   def overrideLocation(newValue: Boolean): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  def password(): Expression = js.native
+  def password: Expression = js.native
   def password(newValue: Expression): js.Any = js.native
-  def useAuthentication(): Boolean = js.native
+  def useAuthentication: Boolean = js.native
   def useAuthentication(newValue: Boolean): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  def username(): Expression = js.native
+  def username: Expression = js.native
   def username(newValue: Expression): js.Any = js.native
 }
 

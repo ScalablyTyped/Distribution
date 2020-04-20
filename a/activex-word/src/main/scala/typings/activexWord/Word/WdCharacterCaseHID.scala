@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 object WdCharacterCaseHID {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def emptyenum: `0` = this.cast(0)
+  def emptyenum: `0` = 0.asInstanceOf[`0`]
 }
 

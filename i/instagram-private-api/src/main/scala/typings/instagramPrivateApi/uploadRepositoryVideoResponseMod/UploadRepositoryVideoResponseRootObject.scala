@@ -13,7 +13,6 @@ object UploadRepositoryVideoResponseRootObject {
   @scala.inline
   def apply(status: String, xsharing_nonces: UploadRepositoryVideoResponseXsharingNonces): UploadRepositoryVideoResponseRootObject = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], xsharing_nonces = xsharing_nonces.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadRepositoryVideoResponseRootObject]
   }
 }

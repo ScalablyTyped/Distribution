@@ -13,7 +13,6 @@ object PickImplspeed {
   @scala.inline
   def apply(speed: Double): PickImplspeed = {
     val __obj = js.Dynamic.literal(speed = speed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplspeed]
   }
 }

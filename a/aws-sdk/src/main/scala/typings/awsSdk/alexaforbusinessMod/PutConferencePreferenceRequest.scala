@@ -16,7 +16,6 @@ object PutConferencePreferenceRequest {
   @scala.inline
   def apply(ConferencePreference: ConferencePreference): PutConferencePreferenceRequest = {
     val __obj = js.Dynamic.literal(ConferencePreference = ConferencePreference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutConferencePreferenceRequest]
   }
 }

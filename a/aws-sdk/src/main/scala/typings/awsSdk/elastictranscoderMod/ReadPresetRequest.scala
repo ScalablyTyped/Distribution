@@ -16,7 +16,6 @@ object ReadPresetRequest {
   @scala.inline
   def apply(Id: Id): ReadPresetRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadPresetRequest]
   }
 }

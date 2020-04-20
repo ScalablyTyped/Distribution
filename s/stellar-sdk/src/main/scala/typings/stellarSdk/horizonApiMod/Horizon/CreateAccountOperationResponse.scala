@@ -1,5 +1,6 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
+import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.createAccount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +21,7 @@ object CreateAccountOperationResponse {
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
-    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with js.Any,
+    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],
     account: String,
     created_at: String,
     funder: String,

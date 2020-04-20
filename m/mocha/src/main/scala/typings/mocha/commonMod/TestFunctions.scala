@@ -25,7 +25,6 @@ object TestFunctions {
   @scala.inline
   def apply(only: (Mocha_, Test_) => Test_, retries: Double => Unit, skip: String => Unit): TestFunctions = {
     val __obj = js.Dynamic.literal(only = js.Any.fromFunction2(only), retries = js.Any.fromFunction1(retries), skip = js.Any.fromFunction1(skip))
-  
     __obj.asInstanceOf[TestFunctions]
   }
 }

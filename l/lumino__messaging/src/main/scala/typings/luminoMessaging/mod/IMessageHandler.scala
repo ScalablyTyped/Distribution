@@ -17,7 +17,6 @@ object IMessageHandler {
   @scala.inline
   def apply(processMessage: Message => Unit): IMessageHandler = {
     val __obj = js.Dynamic.literal(processMessage = js.Any.fromFunction1(processMessage))
-  
     __obj.asInstanceOf[IMessageHandler]
   }
 }

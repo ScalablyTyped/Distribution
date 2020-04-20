@@ -13,7 +13,6 @@ object AnonFlash {
   @scala.inline
   def apply(flash: Flash): AnonFlash = {
     val __obj = js.Dynamic.literal(flash = flash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlash]
   }
 }

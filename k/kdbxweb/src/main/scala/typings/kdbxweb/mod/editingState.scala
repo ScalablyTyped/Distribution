@@ -14,7 +14,6 @@ object editingState {
   @scala.inline
   def apply(added: js.Array[Date], deleted: js.Array[Date]): editingState = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[editingState]
   }
 }

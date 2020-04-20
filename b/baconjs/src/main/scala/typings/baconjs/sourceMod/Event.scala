@@ -12,7 +12,6 @@ object Event {
   @scala.inline
   def apply[V](value: V): Event[V] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Event[V]]
   }
 }

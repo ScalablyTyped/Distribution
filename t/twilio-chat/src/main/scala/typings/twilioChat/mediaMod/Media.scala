@@ -18,14 +18,14 @@ class Media protected () extends js.Object {
   var mcsMedia: js.Any = js.native
   var services: js.Any = js.native
   var state: js.Any = js.native
-  def contentType(): String = js.native
-  def filename(): String = js.native
+  def contentType: String = js.native
+  def filename: String = js.native
   /**
     * Returns direct content URL for the media.
     * @returns {Promise<String>}
     */
   def getContentUrl(): js.Promise[String] = js.native
-  def sid(): String = js.native
-  def size(): Double = js.native
+  def sid: String = js.native
+  def size: Double = js.native
 }
 

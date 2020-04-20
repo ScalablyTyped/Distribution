@@ -14,7 +14,6 @@ object Device {
   @scala.inline
   def apply(name: String, userAgent: String, viewport: Viewport): Device = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Device]
   }
 }

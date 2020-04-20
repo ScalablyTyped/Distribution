@@ -14,10 +14,8 @@ trait WIZ_SLGP_FLAGS extends js.Object
 
 object WIZ_SLGP_FLAGS {
   @scala.inline
-  def WIZ_SLGP_SHORTPATH: `1` = this.cast(1)
+  def WIZ_SLGP_SHORTPATH: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def WIZ_SLGP_UNCPRIORITY: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WIZ_SLGP_UNCPRIORITY: `2` = 2.asInstanceOf[`2`]
 }
 

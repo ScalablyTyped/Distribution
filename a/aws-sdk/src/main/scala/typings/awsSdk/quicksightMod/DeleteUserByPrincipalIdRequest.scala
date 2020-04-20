@@ -24,7 +24,6 @@ object DeleteUserByPrincipalIdRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, Namespace: Namespace, PrincipalId: String): DeleteUserByPrincipalIdRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], PrincipalId = PrincipalId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUserByPrincipalIdRequest]
   }
 }

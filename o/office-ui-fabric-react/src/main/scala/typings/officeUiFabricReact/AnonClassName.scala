@@ -27,7 +27,6 @@ object AnonClassName {
     style: js.Any
   ): AnonClassName = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClassName]
   }
 }

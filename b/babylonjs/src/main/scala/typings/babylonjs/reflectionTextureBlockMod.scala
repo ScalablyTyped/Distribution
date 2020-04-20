@@ -46,44 +46,44 @@ object reflectionTextureBlockMod extends js.Object {
     /**
       * Gets the b output component
       */
-    def b(): NodeMaterialConnectionPoint = js.native
+    def b: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the camera (or eye) position component
       */
-    def cameraPosition(): NodeMaterialConnectionPoint = js.native
+    def cameraPosition: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the g output component
       */
-    def g(): NodeMaterialConnectionPoint = js.native
+    def g: NodeMaterialConnectionPoint = js.native
     def isReady(): Boolean = js.native
     /**
       * Gets the world position input component
       */
-    def position(): NodeMaterialConnectionPoint = js.native
+    def position: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the r output component
       */
-    def r(): NodeMaterialConnectionPoint = js.native
+    def r: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the rgb output component
       */
-    def rgb(): NodeMaterialConnectionPoint = js.native
+    def rgb: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the view input component
       */
-    def view(): NodeMaterialConnectionPoint = js.native
+    def view: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the world input component
       */
-    def world(): NodeMaterialConnectionPoint = js.native
+    def world: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the world normal input component
       */
-    def worldNormal(): NodeMaterialConnectionPoint = js.native
+    def worldNormal: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the world position input component
       */
-    def worldPosition(): NodeMaterialConnectionPoint = js.native
+    def worldPosition: NodeMaterialConnectionPoint = js.native
   }
   
 }

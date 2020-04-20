@@ -1,8 +1,12 @@
 package typings.formatjsIntlUnifiedNumberformat.dataMod
 
 import typings.formatjsIntlUnifiedNumberformat.RecordDecimalFormatNumSig
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.always
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.auto
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactLong
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactShort
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.exceptZero
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.never
 import typings.formatjsIntlUtils.numberTypesMod.CompactSignPattern
 import typings.formatjsIntlUtils.numberTypesMod.DecimalFormatNum
 import typings.formatjsIntlUtils.numberTypesMod.NotationPattern
@@ -22,20 +26,20 @@ import scala.scalajs.js.annotation._
   var numbers: RawNumberData
   @JSName("scientific")
   var scientific_FDecimalPatterns: SignPattern
-  var signDisplay: js.UndefOr[String] = js.undefined
+  var signDisplay: js.UndefOr[auto | always | never | exceptZero] = js.undefined
   var signPattern: js.UndefOr[SignPattern] = js.undefined
   @JSName("standard")
   var standard_FDecimalPatterns: SignPattern
   @JSName("always")
-  def always_MDecimalPatterns(): NotationPattern
+  def always_MDecimalPatterns: NotationPattern
   @JSName("auto")
-  def auto_MDecimalPatterns(): NotationPattern
+  def auto_MDecimalPatterns: NotationPattern
   @JSName("exceptZero")
-  def exceptZero_MDecimalPatterns(): NotationPattern
+  def exceptZero_MDecimalPatterns: NotationPattern
   @JSName("never")
-  def never_MDecimalPatterns(): NotationPattern
-  def scientific(): SignPattern
-  def standard(): SignPattern
+  def never_MDecimalPatterns: NotationPattern
+  def scientific: SignPattern
+  def standard: SignPattern
 }
 
 object DecimalPatterns {
@@ -67,7 +71,7 @@ object DecimalPatterns {
     compactSignPattern: CompactSignPattern = null,
     decimalNum: DecimalFormatNum = null,
     notation: compactShort | compactLong = null,
-    signDisplay: String = null,
+    signDisplay: auto | always | never | exceptZero = null,
     signPattern: SignPattern = null
   ): DecimalPatterns = {
     val __obj = js.Dynamic.literal(always = js.Any.fromFunction0(always), auto = js.Any.fromFunction0(auto), compactLong = js.Any.fromFunction0(compactLong), compactShort = js.Any.fromFunction0(compactShort), exceptZero = js.Any.fromFunction0(exceptZero), never = js.Any.fromFunction0(never), numberingSystem = numberingSystem.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], produceCompactSignPattern = js.Any.fromFunction1(produceCompactSignPattern), scientific = js.Any.fromFunction0(scientific), standard = js.Any.fromFunction0(standard))

@@ -13,12 +13,10 @@ trait CurrencyDisplay extends js.Object
 
 object CurrencyDisplay {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code: typings.vueI18n.vueI18nStrings.code = "code".asInstanceOf[typings.vueI18n.vueI18nStrings.code]
   @scala.inline
-  def code: typings.vueI18n.vueI18nStrings.code = this.cast("code")
+  def name: typings.vueI18n.vueI18nStrings.name = "name".asInstanceOf[typings.vueI18n.vueI18nStrings.name]
   @scala.inline
-  def name: typings.vueI18n.vueI18nStrings.name = this.cast("name")
-  @scala.inline
-  def symbol: typings.vueI18n.vueI18nStrings.symbol = this.cast("symbol")
+  def symbol: typings.vueI18n.vueI18nStrings.symbol = "symbol".asInstanceOf[typings.vueI18n.vueI18nStrings.symbol]
 }
 

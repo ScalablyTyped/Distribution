@@ -17,7 +17,6 @@ object LoginStatus {
   @scala.inline
   def apply(authResponse: AnonExpire, status: ConnectionStatus): LoginStatus = {
     val __obj = js.Dynamic.literal(authResponse = authResponse.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoginStatus]
   }
 }

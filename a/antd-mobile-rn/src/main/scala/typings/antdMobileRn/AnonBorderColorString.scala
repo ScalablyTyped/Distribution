@@ -12,7 +12,6 @@ object AnonBorderColorString {
   @scala.inline
   def apply(borderColor: String): AnonBorderColorString = {
     val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderColorString]
   }
 }

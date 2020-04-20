@@ -14,14 +14,12 @@ trait Detail extends js.Object
 
 object Detail {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def century: typings.reactCalendar.reactCalendarStrings.century = "century".asInstanceOf[typings.reactCalendar.reactCalendarStrings.century]
   @scala.inline
-  def century: typings.reactCalendar.reactCalendarStrings.century = this.cast("century")
+  def decade: typings.reactCalendar.reactCalendarStrings.decade = "decade".asInstanceOf[typings.reactCalendar.reactCalendarStrings.decade]
   @scala.inline
-  def decade: typings.reactCalendar.reactCalendarStrings.decade = this.cast("decade")
+  def month: typings.reactCalendar.reactCalendarStrings.month = "month".asInstanceOf[typings.reactCalendar.reactCalendarStrings.month]
   @scala.inline
-  def month: typings.reactCalendar.reactCalendarStrings.month = this.cast("month")
-  @scala.inline
-  def year: typings.reactCalendar.reactCalendarStrings.year = this.cast("year")
+  def year: typings.reactCalendar.reactCalendarStrings.year = "year".asInstanceOf[typings.reactCalendar.reactCalendarStrings.year]
 }
 

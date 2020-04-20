@@ -21,7 +21,6 @@ object TypeofDateTimeTextBox {
   @scala.inline
   def apply(__Constraints: Instantiable0[Constraints]): TypeofDateTimeTextBox = {
     val __obj = js.Dynamic.literal(__Constraints = __Constraints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDateTimeTextBox]
   }
 }

@@ -12,7 +12,6 @@ object ApplySnapshotOptions {
   @scala.inline
   def apply(closeExistingWindows: Boolean): ApplySnapshotOptions = {
     val __obj = js.Dynamic.literal(closeExistingWindows = closeExistingWindows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplySnapshotOptions]
   }
 }

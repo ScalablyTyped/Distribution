@@ -12,10 +12,8 @@ trait ConstructorStateMutability extends js.Object
 
 object ConstructorStateMutability {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def nonpayable: typings.ethereumProtocol.ethereumProtocolStrings.nonpayable = "nonpayable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.nonpayable]
   @scala.inline
-  def nonpayable: typings.ethereumProtocol.ethereumProtocolStrings.nonpayable = this.cast("nonpayable")
-  @scala.inline
-  def payable: typings.ethereumProtocol.ethereumProtocolStrings.payable = this.cast("payable")
+  def payable: typings.ethereumProtocol.ethereumProtocolStrings.payable = "payable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.payable]
 }
 

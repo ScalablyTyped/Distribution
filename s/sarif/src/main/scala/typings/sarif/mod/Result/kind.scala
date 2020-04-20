@@ -16,18 +16,16 @@ trait kind extends js.Object
 
 object kind {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fail: typings.sarif.sarifStrings.fail = "fail".asInstanceOf[typings.sarif.sarifStrings.fail]
   @scala.inline
-  def fail: typings.sarif.sarifStrings.fail = this.cast("fail")
+  def informational: typings.sarif.sarifStrings.informational = "informational".asInstanceOf[typings.sarif.sarifStrings.informational]
   @scala.inline
-  def informational: typings.sarif.sarifStrings.informational = this.cast("informational")
+  def notApplicable: typings.sarif.sarifStrings.notApplicable = "notApplicable".asInstanceOf[typings.sarif.sarifStrings.notApplicable]
   @scala.inline
-  def notApplicable: typings.sarif.sarifStrings.notApplicable = this.cast("notApplicable")
+  def open: typings.sarif.sarifStrings.open = "open".asInstanceOf[typings.sarif.sarifStrings.open]
   @scala.inline
-  def open: typings.sarif.sarifStrings.open = this.cast("open")
+  def pass: typings.sarif.sarifStrings.pass = "pass".asInstanceOf[typings.sarif.sarifStrings.pass]
   @scala.inline
-  def pass: typings.sarif.sarifStrings.pass = this.cast("pass")
-  @scala.inline
-  def review: typings.sarif.sarifStrings.review = this.cast("review")
+  def review: typings.sarif.sarifStrings.review = "review".asInstanceOf[typings.sarif.sarifStrings.review]
 }
 

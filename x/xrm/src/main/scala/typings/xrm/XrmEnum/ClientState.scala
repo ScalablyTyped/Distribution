@@ -16,10 +16,8 @@ trait ClientState extends js.Object
 
 object ClientState {
   @scala.inline
-  def Offline: typings.xrm.xrmStrings.Offline = this.cast("Offline")
+  def Offline: typings.xrm.xrmStrings.Offline = "Offline".asInstanceOf[typings.xrm.xrmStrings.Offline]
   @scala.inline
-  def Online: typings.xrm.xrmStrings.Online = this.cast("Online")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Online: typings.xrm.xrmStrings.Online = "Online".asInstanceOf[typings.xrm.xrmStrings.Online]
 }
 

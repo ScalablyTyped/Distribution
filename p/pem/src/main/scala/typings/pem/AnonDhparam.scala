@@ -12,7 +12,6 @@ object AnonDhparam {
   @scala.inline
   def apply(dhparam: js.Any): AnonDhparam = {
     val __obj = js.Dynamic.literal(dhparam = dhparam.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDhparam]
   }
 }

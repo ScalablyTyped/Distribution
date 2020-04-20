@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "moment-precise-range-plugin"
-version := "0.2-dt-20200225Z-e43a19"
+version := "0.2-dt-20200225Z-ae023e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "moment" % "2.24.0-b112e6",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "moment" % "2.24.0-677241",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

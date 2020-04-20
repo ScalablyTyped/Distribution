@@ -18,14 +18,12 @@ trait XdConfirmChoice extends js.Object
 
 object XdConfirmChoice {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xdCancel: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xdCancel: `2` = this.cast(2)
+  def xdNo: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xdNo: `7` = this.cast(7)
+  def xdOK: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xdOK: `1` = this.cast(1)
-  @scala.inline
-  def xdYes: `6` = this.cast(6)
+  def xdYes: `6` = 6.asInstanceOf[`6`]
 }
 

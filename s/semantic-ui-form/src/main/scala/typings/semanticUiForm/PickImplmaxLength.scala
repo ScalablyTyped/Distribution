@@ -13,7 +13,6 @@ object PickImplmaxLength {
   @scala.inline
   def apply(maxLength: String): PickImplmaxLength = {
     val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmaxLength]
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ActiveXObject
   extends Instantiable1[
-      /* progid */ String, 
+      /* keyof activex-interop.ActiveXObjectNameMap */ /* progid */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[keyof activex-interop.ActiveXObjectNameMap] */ js.Any
     ]
 

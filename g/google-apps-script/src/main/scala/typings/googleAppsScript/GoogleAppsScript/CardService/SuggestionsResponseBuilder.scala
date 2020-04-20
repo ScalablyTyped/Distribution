@@ -16,7 +16,6 @@ object SuggestionsResponseBuilder {
   @scala.inline
   def apply(build: () => SuggestionsResponse, setSuggestions: Suggestions => SuggestionsResponseBuilder): SuggestionsResponseBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setSuggestions = js.Any.fromFunction1(setSuggestions))
-  
     __obj.asInstanceOf[SuggestionsResponseBuilder]
   }
 }

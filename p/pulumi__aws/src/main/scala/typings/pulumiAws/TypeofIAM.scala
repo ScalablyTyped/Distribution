@@ -13,7 +13,6 @@ object TypeofIAM {
   @scala.inline
   def apply(Types: TypeofIAM): TypeofIAM = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofIAM]
   }
 }

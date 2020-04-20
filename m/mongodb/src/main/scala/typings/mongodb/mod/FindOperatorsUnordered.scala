@@ -26,7 +26,6 @@ object FindOperatorsUnordered {
     upsert: () => FindOperatorsUnordered
   ): FindOperatorsUnordered = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), removeOne = js.Any.fromFunction0(removeOne), replaceOne = js.Any.fromFunction1(replaceOne), update = js.Any.fromFunction1(update), updateOne = js.Any.fromFunction1(updateOne), upsert = js.Any.fromFunction0(upsert))
-  
     __obj.asInstanceOf[FindOperatorsUnordered]
   }
 }

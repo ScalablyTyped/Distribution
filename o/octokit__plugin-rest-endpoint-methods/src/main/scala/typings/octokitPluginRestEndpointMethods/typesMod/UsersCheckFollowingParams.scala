@@ -12,7 +12,6 @@ object UsersCheckFollowingParams {
   @scala.inline
   def apply(username: String): UsersCheckFollowingParams = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsersCheckFollowingParams]
   }
 }

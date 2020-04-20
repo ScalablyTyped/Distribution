@@ -13,7 +13,6 @@ object KeycloakError {
   @scala.inline
   def apply(error: String, error_description: String): KeycloakError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], error_description = error_description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeycloakError]
   }
 }

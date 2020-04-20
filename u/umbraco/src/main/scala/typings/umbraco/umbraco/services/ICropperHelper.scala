@@ -26,7 +26,6 @@ object ICropperHelper {
   @scala.inline
   def apply(configuration: String => js.Any): ICropperHelper = {
     val __obj = js.Dynamic.literal(configuration = js.Any.fromFunction1(configuration))
-  
     __obj.asInstanceOf[ICropperHelper]
   }
 }

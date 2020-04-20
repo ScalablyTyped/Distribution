@@ -1,8 +1,8 @@
 package typings.titanium.Titanium.App.iOS
 
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
+import typings.titanium.titaniumStrings.completed
+import typings.titanium.titaniumStrings.founditems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,55 +11,65 @@ import scala.scalajs.js.annotation._
 			 * A search query object manages the criteria to apply when searching app content that you have previously
 			 * indexed by using the Core Spotlight APIs.
 			 */
-trait SearchQuery extends Proxy {
+@JSGlobal("Titanium.App.iOS.SearchQuery")
+@js.native
+class SearchQuery () extends Proxy {
   /**
   				 * An array of strings that represent the attributes of indexed items.
   				 */
-  var attributes: js.Array[String]
+  var attributes: js.Array[String] = js.native
   /**
   				 * A formatted string that defines the matching criteria to apply to indexed items.
   				 */
-  var queryString: String
+  var queryString: String = js.native
+  /**
+  				 * Adds the specified callback as an event listener for the named event.
+  				 */
+  @JSName("addEventListener")
+  def addEventListener_completed(
+    name: completed,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ SearchQueryCompletedEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_founditems(
+    name: founditems,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ SearchQueryFounditemsEvent, Unit]
+  ): Unit = js.native
   /**
   				 * Cancels a query operation.
   				 */
-  def cancel(): Unit
+  def cancel(): Unit = js.native
+  /**
+  				 * Fires a synthesized event to any registered listeners.
+  				 */
+  @JSName("fireEvent")
+  def fireEvent_completed(name: completed): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_completed(name: completed, event: SearchQueryCompletedEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_founditems(name: founditems): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_founditems(name: founditems, event: SearchQueryFounditemsEvent): Unit = js.native
   /**
   				 * A Boolean value that indicates if the query has been cancelled (`true`) or not (`false`).
   				 */
-  def isCancelled(): Boolean
+  def isCancelled(): Boolean = js.native
+  /**
+  				 * Removes the specified callback as an event listener for the named event.
+  				 */
+  @JSName("removeEventListener")
+  def removeEventListener_completed(
+    name: completed,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ SearchQueryCompletedEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_founditems(
+    name: founditems,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ SearchQueryFounditemsEvent, Unit]
+  ): Unit = js.native
   /**
   				 * Asynchronously queries the index for items that match the query object's specifications.
   				 */
-  def start(): Unit
-}
-
-object SearchQuery {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    attributes: js.Array[String],
-    bubbleParent: Boolean,
-    cancel: () => Unit,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    isCancelled: () => Boolean,
-    queryString: String,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setBubbleParent: Boolean => Unit,
-    start: () => Unit,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): SearchQuery = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), attributes = attributes.asInstanceOf[js.Any], bubbleParent = bubbleParent.asInstanceOf[js.Any], cancel = js.Any.fromFunction0(cancel), fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), isCancelled = js.Any.fromFunction0(isCancelled), queryString = queryString.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), start = js.Any.fromFunction0(start))
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SearchQuery]
-  }
+  def start(): Unit = js.native
 }
 

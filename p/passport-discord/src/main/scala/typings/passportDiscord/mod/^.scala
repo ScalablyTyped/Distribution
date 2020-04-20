@@ -2,6 +2,7 @@ package typings.passportDiscord.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.passportOauth2.mod.VerifyCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +26,7 @@ class ^ protected () extends Strategy {
   def this(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ js.Any,
     verify: js.Function5[
-        (/* req */ Request_[ParamsDictionary]) | (/* accessToken */ String), 
+        (/* req */ Request_[ParamsDictionary, _, _, Query]) | (/* accessToken */ String), 
         /* refreshToken */ /* accessToken */ String, 
         (/* params */ js.Any) | (/* refreshToken */ String), 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.Profile */ /* profile */ js.Any, 
@@ -38,7 +39,7 @@ class ^ protected () extends Strategy {
   def this(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ js.Any,
     verify: js.Function6[
-        /* req */ Request_[ParamsDictionary], 
+        /* req */ Request_[ParamsDictionary, _, _, Query], 
         /* accessToken */ String, 
         /* params */ js.Any, 
         /* refreshToken */ String, 

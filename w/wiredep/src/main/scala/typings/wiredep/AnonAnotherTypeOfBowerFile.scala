@@ -20,7 +20,6 @@ object AnonAnotherTypeOfBowerFile {
   @scala.inline
   def apply(anotherTypeOfBowerFile: String => String, typeOfBowerFile: String): AnonAnotherTypeOfBowerFile = {
     val __obj = js.Dynamic.literal(anotherTypeOfBowerFile = js.Any.fromFunction1(anotherTypeOfBowerFile), typeOfBowerFile = typeOfBowerFile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnotherTypeOfBowerFile]
   }
 }

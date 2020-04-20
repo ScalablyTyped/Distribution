@@ -33,28 +33,26 @@ trait FAX_JOB_STATUS_ENUM extends js.Object
 
 object FAX_JOB_STATUS_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fjsCANCELED: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def fjsCANCELED: `512` = this.cast(512)
+  def fjsCANCELING: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def fjsCANCELING: `1024` = this.cast(1024)
+  def fjsCOMPLETED: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def fjsCOMPLETED: `256` = this.cast(256)
+  def fjsFAILED: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def fjsFAILED: `8` = this.cast(8)
+  def fjsINPROGRESS: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fjsINPROGRESS: `2` = this.cast(2)
+  def fjsNOLINE: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def fjsNOLINE: `32` = this.cast(32)
+  def fjsPAUSED: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def fjsPAUSED: `16` = this.cast(16)
+  def fjsPENDING: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fjsPENDING: `1` = this.cast(1)
+  def fjsRETRIES_EXCEEDED: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def fjsRETRIES_EXCEEDED: `128` = this.cast(128)
+  def fjsRETRYING: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def fjsRETRYING: `64` = this.cast(64)
-  @scala.inline
-  def fjsROUTING: `2048` = this.cast(2048)
+  def fjsROUTING: `2048` = 2048.asInstanceOf[`2048`]
 }
 

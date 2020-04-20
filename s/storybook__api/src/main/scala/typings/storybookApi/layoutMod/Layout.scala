@@ -22,7 +22,6 @@ object Layout {
     showPanel: Boolean
   ): Layout = {
     val __obj = js.Dynamic.literal(isFullscreen = isFullscreen.asInstanceOf[js.Any], isToolshown = isToolshown.asInstanceOf[js.Any], panelPosition = panelPosition.asInstanceOf[js.Any], showNav = showNav.asInstanceOf[js.Any], showPanel = showPanel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Layout]
   }
 }

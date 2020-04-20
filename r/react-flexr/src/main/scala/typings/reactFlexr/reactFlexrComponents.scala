@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactFlexrComponents extends reactFlexrProps {
   @scala.inline
-  def Cell: ComponentType[CellProps] = js.constructorOf[typings.reactFlexr.mod.Cell].asInstanceOf[typings.react.mod.ComponentType[CellProps]]
+  def Cell: ComponentType[CellProps] = js.constructorOf[typings.reactFlexr.mod.Cell].asInstanceOf[ComponentType[CellProps]]
   @scala.inline
-  def Grid: ComponentType[GridProps] = js.constructorOf[typings.reactFlexr.mod.Grid].asInstanceOf[typings.react.mod.ComponentType[GridProps]]
+  def Grid: ComponentType[GridProps] = js.constructorOf[typings.reactFlexr.mod.Grid].asInstanceOf[ComponentType[GridProps]]
 }
 

@@ -20,7 +20,6 @@ object GetArchiveRuleRequest {
   @scala.inline
   def apply(analyzerName: Name, ruleName: Name): GetArchiveRuleRequest = {
     val __obj = js.Dynamic.literal(analyzerName = analyzerName.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetArchiveRuleRequest]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cryptr"
-version := "4.0-dt-20181206Z-3a4c2e"
+version := "4.0-dt-20181206Z-dbb4b3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

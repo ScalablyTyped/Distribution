@@ -36,7 +36,6 @@ object AnonError {
     RefreshAuthError: Instantiable0[RefreshAuthError]
   ): AnonError = {
     val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], ExpiredAuthError = ExpiredAuthError.asInstanceOf[js.Any], HaltedError = HaltedError.asInstanceOf[js.Any], RefreshAuthError = RefreshAuthError.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonError]
   }
 }

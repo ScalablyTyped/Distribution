@@ -14,7 +14,6 @@ object AnonMappings {
   @scala.inline
   def apply(mappings: _empty): AnonMappings = {
     val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMappings]
   }
 }

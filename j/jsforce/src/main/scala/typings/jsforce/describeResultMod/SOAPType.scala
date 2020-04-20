@@ -27,40 +27,38 @@ trait SOAPType extends js.Object
 
 object SOAPType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def tnsColonID: typings.jsforce.jsforceStrings.tnsColonID = "tns:ID".asInstanceOf[typings.jsforce.jsforceStrings.tnsColonID]
   @scala.inline
-  def tnsColonID: typings.jsforce.jsforceStrings.tnsColonID = this.cast("tns:ID")
+  def urnColonJunctionIdListNames: typings.jsforce.jsforceStrings.urnColonJunctionIdListNames = "urn:JunctionIdListNames".asInstanceOf[typings.jsforce.jsforceStrings.urnColonJunctionIdListNames]
   @scala.inline
-  def urnColonJunctionIdListNames: typings.jsforce.jsforceStrings.urnColonJunctionIdListNames = this.cast("urn:JunctionIdListNames")
+  def urnColonRecordTypesSupported: typings.jsforce.jsforceStrings.urnColonRecordTypesSupported = "urn:RecordTypesSupported".asInstanceOf[typings.jsforce.jsforceStrings.urnColonRecordTypesSupported]
   @scala.inline
-  def urnColonRecordTypesSupported: typings.jsforce.jsforceStrings.urnColonRecordTypesSupported = this.cast("urn:RecordTypesSupported")
+  def urnColonRelationshipReferenceTo: typings.jsforce.jsforceStrings.urnColonRelationshipReferenceTo = "urn:RelationshipReferenceTo".asInstanceOf[typings.jsforce.jsforceStrings.urnColonRelationshipReferenceTo]
   @scala.inline
-  def urnColonRelationshipReferenceTo: typings.jsforce.jsforceStrings.urnColonRelationshipReferenceTo = this.cast("urn:RelationshipReferenceTo")
+  def urnColonSearchLayoutButtonsDisplayed: typings.jsforce.jsforceStrings.urnColonSearchLayoutButtonsDisplayed = "urn:SearchLayoutButtonsDisplayed".asInstanceOf[typings.jsforce.jsforceStrings.urnColonSearchLayoutButtonsDisplayed]
   @scala.inline
-  def urnColonSearchLayoutButtonsDisplayed: typings.jsforce.jsforceStrings.urnColonSearchLayoutButtonsDisplayed = this.cast("urn:SearchLayoutButtonsDisplayed")
+  def urnColonSearchLayoutFieldsDisplayed: typings.jsforce.jsforceStrings.urnColonSearchLayoutFieldsDisplayed = "urn:SearchLayoutFieldsDisplayed".asInstanceOf[typings.jsforce.jsforceStrings.urnColonSearchLayoutFieldsDisplayed]
   @scala.inline
-  def urnColonSearchLayoutFieldsDisplayed: typings.jsforce.jsforceStrings.urnColonSearchLayoutFieldsDisplayed = this.cast("urn:SearchLayoutFieldsDisplayed")
+  def urnColonaddress: typings.jsforce.jsforceStrings.urnColonaddress = "urn:address".asInstanceOf[typings.jsforce.jsforceStrings.urnColonaddress]
   @scala.inline
-  def urnColonaddress: typings.jsforce.jsforceStrings.urnColonaddress = this.cast("urn:address")
+  def urnColonlocation: typings.jsforce.jsforceStrings.urnColonlocation = "urn:location".asInstanceOf[typings.jsforce.jsforceStrings.urnColonlocation]
   @scala.inline
-  def urnColonlocation: typings.jsforce.jsforceStrings.urnColonlocation = this.cast("urn:location")
+  def xsdColonanyType: typings.jsforce.jsforceStrings.xsdColonanyType = "xsd:anyType".asInstanceOf[typings.jsforce.jsforceStrings.xsdColonanyType]
   @scala.inline
-  def xsdColonanyType: typings.jsforce.jsforceStrings.xsdColonanyType = this.cast("xsd:anyType")
+  def xsdColonbase64Binary: typings.jsforce.jsforceStrings.xsdColonbase64Binary = "xsd:base64Binary".asInstanceOf[typings.jsforce.jsforceStrings.xsdColonbase64Binary]
   @scala.inline
-  def xsdColonbase64Binary: typings.jsforce.jsforceStrings.xsdColonbase64Binary = this.cast("xsd:base64Binary")
+  def xsdColonboolean: typings.jsforce.jsforceStrings.xsdColonboolean = "xsd:boolean".asInstanceOf[typings.jsforce.jsforceStrings.xsdColonboolean]
   @scala.inline
-  def xsdColonboolean: typings.jsforce.jsforceStrings.xsdColonboolean = this.cast("xsd:boolean")
+  def xsdColondate: typings.jsforce.jsforceStrings.xsdColondate = "xsd:date".asInstanceOf[typings.jsforce.jsforceStrings.xsdColondate]
   @scala.inline
-  def xsdColondate: typings.jsforce.jsforceStrings.xsdColondate = this.cast("xsd:date")
+  def xsdColondateTime: typings.jsforce.jsforceStrings.xsdColondateTime = "xsd:dateTime".asInstanceOf[typings.jsforce.jsforceStrings.xsdColondateTime]
   @scala.inline
-  def xsdColondateTime: typings.jsforce.jsforceStrings.xsdColondateTime = this.cast("xsd:dateTime")
+  def xsdColondouble: typings.jsforce.jsforceStrings.xsdColondouble = "xsd:double".asInstanceOf[typings.jsforce.jsforceStrings.xsdColondouble]
   @scala.inline
-  def xsdColondouble: typings.jsforce.jsforceStrings.xsdColondouble = this.cast("xsd:double")
+  def xsdColonint: typings.jsforce.jsforceStrings.xsdColonint = "xsd:int".asInstanceOf[typings.jsforce.jsforceStrings.xsdColonint]
   @scala.inline
-  def xsdColonint: typings.jsforce.jsforceStrings.xsdColonint = this.cast("xsd:int")
+  def xsdColonstring: typings.jsforce.jsforceStrings.xsdColonstring = "xsd:string".asInstanceOf[typings.jsforce.jsforceStrings.xsdColonstring]
   @scala.inline
-  def xsdColonstring: typings.jsforce.jsforceStrings.xsdColonstring = this.cast("xsd:string")
-  @scala.inline
-  def xsdColontime: typings.jsforce.jsforceStrings.xsdColontime = this.cast("xsd:time")
+  def xsdColontime: typings.jsforce.jsforceStrings.xsdColontime = "xsd:time".asInstanceOf[typings.jsforce.jsforceStrings.xsdColontime]
 }
 

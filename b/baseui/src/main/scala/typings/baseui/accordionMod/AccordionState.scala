@@ -13,7 +13,6 @@ object AccordionState {
   @scala.inline
   def apply(expanded: js.Array[Key]): AccordionState = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccordionState]
   }
 }

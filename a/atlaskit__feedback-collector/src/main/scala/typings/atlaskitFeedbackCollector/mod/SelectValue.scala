@@ -15,16 +15,14 @@ trait SelectValue extends js.Object
 
 object SelectValue {
   @scala.inline
-  def bug: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.bug = this.cast("bug")
+  def bug: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.bug = "bug".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.bug]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def comment: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.comment = "comment".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.comment]
   @scala.inline
-  def comment: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.comment = this.cast("comment")
+  def empty: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.empty = "empty".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.empty]
   @scala.inline
-  def empty: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.empty = this.cast("empty")
+  def question: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.question = "question".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.question]
   @scala.inline
-  def question: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.question = this.cast("question")
-  @scala.inline
-  def suggestion: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.suggestion = this.cast("suggestion")
+  def suggestion: typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.suggestion = "suggestion".asInstanceOf[typings.atlaskitFeedbackCollector.atlaskitFeedbackCollectorStrings.suggestion]
 }
 

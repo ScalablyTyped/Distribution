@@ -125,7 +125,7 @@ class ShallowWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
   /**
     * Returns a wrapper of the node rendered by the provided render prop.
     */
-  def renderProp[PropName /* <: String */](prop: PropName): js.Function1[
+  def renderProp[PropName /* <: /* keyof P */ String */](prop: PropName): js.Function1[
     /* params */ Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: P[PropName] */ js.Any
     ], 

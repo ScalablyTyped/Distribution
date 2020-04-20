@@ -22,18 +22,16 @@ trait XlFilterAllDatesInPeriod extends js.Object
 
 object XlFilterAllDatesInPeriod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlFilterAllDatesInPeriodDay: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlFilterAllDatesInPeriodDay: `2` = this.cast(2)
+  def xlFilterAllDatesInPeriodHour: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlFilterAllDatesInPeriodHour: `3` = this.cast(3)
+  def xlFilterAllDatesInPeriodMinute: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlFilterAllDatesInPeriodMinute: `4` = this.cast(4)
+  def xlFilterAllDatesInPeriodMonth: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlFilterAllDatesInPeriodMonth: `1` = this.cast(1)
+  def xlFilterAllDatesInPeriodSecond: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlFilterAllDatesInPeriodSecond: `5` = this.cast(5)
-  @scala.inline
-  def xlFilterAllDatesInPeriodYear: `0` = this.cast(0)
+  def xlFilterAllDatesInPeriodYear: `0` = 0.asInstanceOf[`0`]
 }
 

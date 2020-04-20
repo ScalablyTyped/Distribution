@@ -12,7 +12,6 @@ object AnonSummary {
   @scala.inline
   def apply(Summary: String): AnonSummary = {
     val __obj = js.Dynamic.literal(Summary = Summary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSummary]
   }
 }

@@ -20,7 +20,6 @@ object HashAlgorithmOptions {
   @scala.inline
   def apply(allowedValues: HashAlgorithms, defaultValue: HashAlgorithm): HashAlgorithmOptions = {
     val __obj = js.Dynamic.literal(allowedValues = allowedValues.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HashAlgorithmOptions]
   }
 }

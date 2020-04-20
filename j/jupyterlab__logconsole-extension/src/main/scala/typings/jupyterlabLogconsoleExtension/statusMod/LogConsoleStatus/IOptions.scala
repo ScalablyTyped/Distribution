@@ -24,7 +24,6 @@ object IOptions {
   @scala.inline
   def apply(handleClick: () => Unit, loggerRegistry: ILoggerRegistry): IOptions = {
     val __obj = js.Dynamic.literal(handleClick = js.Any.fromFunction0(handleClick), loggerRegistry = loggerRegistry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

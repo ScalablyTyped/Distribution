@@ -18,7 +18,6 @@ object LokiConstructorOptions {
   @scala.inline
   def apply(env: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA, verbose: Boolean): LokiConstructorOptions = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LokiConstructorOptions]
   }
 }

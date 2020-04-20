@@ -13,7 +13,6 @@ object TypeofRedshift {
   @scala.inline
   def apply(Types: TypeofRedshift): TypeofRedshift = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofRedshift]
   }
 }

@@ -19,7 +19,6 @@ object Tabbable {
   @scala.inline
   def apply(find: ParentNode => js.Array[Element], isTabbableIndex: Element => Boolean): Tabbable = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find), isTabbableIndex = js.Any.fromFunction1(isTabbableIndex))
-  
     __obj.asInstanceOf[Tabbable]
   }
 }

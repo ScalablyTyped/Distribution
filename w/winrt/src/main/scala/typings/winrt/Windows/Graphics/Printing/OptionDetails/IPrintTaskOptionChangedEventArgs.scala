@@ -12,7 +12,6 @@ object IPrintTaskOptionChangedEventArgs {
   @scala.inline
   def apply(optionId: js.Any): IPrintTaskOptionChangedEventArgs = {
     val __obj = js.Dynamic.literal(optionId = optionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPrintTaskOptionChangedEventArgs]
   }
 }

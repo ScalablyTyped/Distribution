@@ -25,7 +25,6 @@ object MetricIdentifier {
   @scala.inline
   def apply(name: String, selector: LabelSelector): MetricIdentifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetricIdentifier]
   }
 }

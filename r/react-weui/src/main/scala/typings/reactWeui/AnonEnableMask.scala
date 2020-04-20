@@ -13,7 +13,6 @@ object AnonEnableMask {
   @scala.inline
   def apply(enableMask: Boolean, show: Boolean): AnonEnableMask = {
     val __obj = js.Dynamic.literal(enableMask = enableMask.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnableMask]
   }
 }

@@ -20,7 +20,6 @@ object PutCorsPolicyInput {
   @scala.inline
   def apply(ContainerName: ContainerName, CorsPolicy: CorsPolicy): PutCorsPolicyInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any], CorsPolicy = CorsPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutCorsPolicyInput]
   }
 }

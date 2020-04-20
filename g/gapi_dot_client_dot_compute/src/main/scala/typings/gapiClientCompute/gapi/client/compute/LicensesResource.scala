@@ -15,7 +15,6 @@ object LicensesResource {
   @scala.inline
   def apply(get: AnonLicense => Request_[License]): LicensesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[LicensesResource]
   }
 }

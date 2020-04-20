@@ -17,7 +17,6 @@ object Stamp {
   @scala.inline
   def apply($isSync: Boolean, $uuid: String, $wuid: String): Stamp = {
     val __obj = js.Dynamic.literal($isSync = $isSync.asInstanceOf[js.Any], $uuid = $uuid.asInstanceOf[js.Any], $wuid = $wuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Stamp]
   }
 }

@@ -53,7 +53,7 @@ class ObservableMap_[T] () extends IObservableMap[T] {
     * A signal emitted when the map has changed.
     */
   @JSName("changed")
-  def changed_MObservableMap_(): ISignal[this.type, IChangedArgs[T]] = js.native
+  def changed_MObservableMap_ : ISignal[this.type, IChangedArgs[T]] = js.native
   /**
     * Set the ObservableMap to an empty map.
     */
@@ -104,7 +104,7 @@ class ObservableMap_[T] () extends IObservableMap[T] {
     * Whether this map has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MObservableMap_(): Boolean = js.native
+  def isDisposed_MObservableMap_ : Boolean = js.native
   /**
     * Get a list of the keys in the map.
     *
@@ -128,12 +128,12 @@ class ObservableMap_[T] () extends IObservableMap[T] {
     * The number of key-value pairs in the map.
     */
   @JSName("size")
-  def size_MObservableMap_(): Double = js.native
+  def size_MObservableMap_ : Double = js.native
   /**
     * The type of the Observable.
     */
   @JSName("type")
-  def type_MObservableMap_(): Map = js.native
+  def type_MObservableMap_ : Map = js.native
   /**
     * Get a list of the values in the map.
     *

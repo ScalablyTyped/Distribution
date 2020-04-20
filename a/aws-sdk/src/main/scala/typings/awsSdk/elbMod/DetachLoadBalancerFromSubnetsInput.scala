@@ -20,7 +20,6 @@ object DetachLoadBalancerFromSubnetsInput {
   @scala.inline
   def apply(LoadBalancerName: AccessPointName, Subnets: Subnets): DetachLoadBalancerFromSubnetsInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], Subnets = Subnets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachLoadBalancerFromSubnetsInput]
   }
 }

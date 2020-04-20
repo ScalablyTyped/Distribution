@@ -91,7 +91,7 @@ class AudioEngine () extends IAudioEngine {
     * Gets the current AudioContext if available.
     */
   @JSName("audioContext")
-  def audioContext_MAudioEngine(): Nullable[AudioContext] = js.native
+  def audioContext_MAudioEngine: Nullable[AudioContext] = js.native
   /**
     * Connect the audio engine to an audio analyser allowing some amazing
     * synchornization between the sounds/music and your visualization (VuMeter for instance).

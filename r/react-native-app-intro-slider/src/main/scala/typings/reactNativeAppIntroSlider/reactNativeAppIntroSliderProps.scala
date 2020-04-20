@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeAppIntroSliderProps {
   @scala.inline
-  def ReactNativeAppIntroSliderProps: AppIntroProps.type = typings.reactNativeAppIntroSlider.mod.AppIntroProps
+  def ReactNativeAppIntroSliderProps: AppIntroProps.type = AppIntroProps
   type ReactNativeAppIntroSliderProps = AppIntroProps
 }
 

@@ -19,7 +19,6 @@ object ImageTypeResult {
   @scala.inline
   def apply(ext: ImageType, mime: String): ImageTypeResult = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageTypeResult]
   }
 }

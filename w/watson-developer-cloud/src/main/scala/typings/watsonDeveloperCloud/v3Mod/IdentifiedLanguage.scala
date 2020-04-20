@@ -16,7 +16,6 @@ object IdentifiedLanguage {
   @scala.inline
   def apply(confidence: Double, language: String): IdentifiedLanguage = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdentifiedLanguage]
   }
 }

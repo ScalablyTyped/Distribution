@@ -20,7 +20,6 @@ object AnonFieldObjectType {
     objectType: (GraphQLObjectType[_, _, StringDictionary[_]]) | GraphQLInterfaceType
   ): AnonFieldObjectType = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFieldObjectType]
   }
 }

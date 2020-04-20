@@ -13,7 +13,6 @@ object ISyndicationFeedFactory {
   @scala.inline
   def apply(createSyndicationFeed: (String, String, Uri) => SyndicationFeed): ISyndicationFeedFactory = {
     val __obj = js.Dynamic.literal(createSyndicationFeed = js.Any.fromFunction3(createSyndicationFeed))
-  
     __obj.asInstanceOf[ISyndicationFeedFactory]
   }
 }

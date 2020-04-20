@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@date-io/core" : "2.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@date-io/core" : "2.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

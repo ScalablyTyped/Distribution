@@ -19,24 +19,22 @@ trait NodeMouseEventType extends js.Object
 
 object NodeMouseEventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def mouse: typings.blessed.blessedStrings.mouse = "mouse".asInstanceOf[typings.blessed.blessedStrings.mouse]
   @scala.inline
-  def mouse: typings.blessed.blessedStrings.mouse = this.cast("mouse")
+  def mousedown: typings.blessed.blessedStrings.mousedown = "mousedown".asInstanceOf[typings.blessed.blessedStrings.mousedown]
   @scala.inline
-  def mousedown: typings.blessed.blessedStrings.mousedown = this.cast("mousedown")
+  def mousemove: typings.blessed.blessedStrings.mousemove = "mousemove".asInstanceOf[typings.blessed.blessedStrings.mousemove]
   @scala.inline
-  def mousemove: typings.blessed.blessedStrings.mousemove = this.cast("mousemove")
+  def mouseout: typings.blessed.blessedStrings.mouseout = "mouseout".asInstanceOf[typings.blessed.blessedStrings.mouseout]
   @scala.inline
-  def mouseout: typings.blessed.blessedStrings.mouseout = this.cast("mouseout")
+  def mouseover: typings.blessed.blessedStrings.mouseover = "mouseover".asInstanceOf[typings.blessed.blessedStrings.mouseover]
   @scala.inline
-  def mouseover: typings.blessed.blessedStrings.mouseover = this.cast("mouseover")
+  def mouseup: typings.blessed.blessedStrings.mouseup = "mouseup".asInstanceOf[typings.blessed.blessedStrings.mouseup]
   @scala.inline
-  def mouseup: typings.blessed.blessedStrings.mouseup = this.cast("mouseup")
+  def mousewheel: typings.blessed.blessedStrings.mousewheel = "mousewheel".asInstanceOf[typings.blessed.blessedStrings.mousewheel]
   @scala.inline
-  def mousewheel: typings.blessed.blessedStrings.mousewheel = this.cast("mousewheel")
+  def wheeldown: typings.blessed.blessedStrings.wheeldown = "wheeldown".asInstanceOf[typings.blessed.blessedStrings.wheeldown]
   @scala.inline
-  def wheeldown: typings.blessed.blessedStrings.wheeldown = this.cast("wheeldown")
-  @scala.inline
-  def wheelup: typings.blessed.blessedStrings.wheelup = this.cast("wheelup")
+  def wheelup: typings.blessed.blessedStrings.wheelup = "wheelup".asInstanceOf[typings.blessed.blessedStrings.wheelup]
 }
 

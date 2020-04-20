@@ -16,7 +16,6 @@ object DeleteMountTargetRequest {
   @scala.inline
   def apply(MountTargetId: MountTargetId): DeleteMountTargetRequest = {
     val __obj = js.Dynamic.literal(MountTargetId = MountTargetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMountTargetRequest]
   }
 }

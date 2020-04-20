@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-winston
 
-Typings are for version 4.0.2
+Typings are for version 4.0.3
 
 ## Library description:
 express.js middleware for flatiron/winston

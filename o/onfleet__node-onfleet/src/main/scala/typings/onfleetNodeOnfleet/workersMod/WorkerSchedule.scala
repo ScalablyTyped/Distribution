@@ -14,7 +14,6 @@ object WorkerSchedule {
   @scala.inline
   def apply(date: String, shifts: js.Array[js.Tuple2[Double, Double]], timezone: String): WorkerSchedule = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], shifts = shifts.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkerSchedule]
   }
 }

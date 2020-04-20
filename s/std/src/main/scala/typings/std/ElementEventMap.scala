@@ -13,7 +13,6 @@ object ElementEventMap {
   @scala.inline
   def apply(fullscreenchange: Event_, fullscreenerror: Event_): ElementEventMap = {
     val __obj = js.Dynamic.literal(fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElementEventMap]
   }
 }

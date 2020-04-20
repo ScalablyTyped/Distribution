@@ -34,7 +34,6 @@ object NavigatorsConfig {
     patchNavigators: Navigators[TState] => Unit
   ): NavigatorsConfig[TKeys, TState] = {
     val __obj = js.Dynamic.literal(actionToNavigation = js.Any.fromFunction4(actionToNavigation), navigationToAction = js.Any.fromFunction4(navigationToAction), navigators = navigators.asInstanceOf[js.Any], patchNavigators = js.Any.fromFunction1(patchNavigators))
-  
     __obj.asInstanceOf[NavigatorsConfig[TKeys, TState]]
   }
 }

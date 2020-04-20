@@ -14,10 +14,8 @@ trait XlFixedFormatQuality extends js.Object
 
 object XlFixedFormatQuality {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlQualityMinimum: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlQualityMinimum: `1` = this.cast(1)
-  @scala.inline
-  def xlQualityStandard: `0` = this.cast(0)
+  def xlQualityStandard: `0` = 0.asInstanceOf[`0`]
 }
 

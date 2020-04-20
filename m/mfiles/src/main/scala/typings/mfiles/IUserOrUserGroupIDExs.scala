@@ -27,7 +27,6 @@ object IUserOrUserGroupIDExs {
     Remove: Double => Unit
   ): IUserOrUserGroupIDExs = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count.asInstanceOf[js.Any], GetUserOrUserGroupIDEx = js.Any.fromFunction2(GetUserOrUserGroupIDEx), GetUserOrUserGroupIDExIndex = js.Any.fromFunction2(GetUserOrUserGroupIDExIndex), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
-  
     __obj.asInstanceOf[IUserOrUserGroupIDExs]
   }
 }

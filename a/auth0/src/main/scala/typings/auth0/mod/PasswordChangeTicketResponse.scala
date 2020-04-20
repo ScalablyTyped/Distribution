@@ -12,7 +12,6 @@ object PasswordChangeTicketResponse {
   @scala.inline
   def apply(ticket: String): PasswordChangeTicketResponse = {
     val __obj = js.Dynamic.literal(ticket = ticket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PasswordChangeTicketResponse]
   }
 }

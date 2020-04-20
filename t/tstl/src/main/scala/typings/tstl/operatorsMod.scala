@@ -1,8 +1,14 @@
 package typings.tstl
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Pick
 import typings.tstl.icomputableMod.IComputable
 import typings.tstl.inegatableMod.INegatable
+import typings.tstl.tstlStrings.divides
+import typings.tstl.tstlStrings.minus
+import typings.tstl.tstlStrings.modules
+import typings.tstl.tstlStrings.multiplies
+import typings.tstl.tstlStrings.negate
 import typings.tstl.tstlStrings.plus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +27,8 @@ object operatorsMod extends js.Object {
   def plus[Y, Ret](x: Double, y: Y): Ret = js.native
   def plus[X /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in 'plus' ]: tstl.tstl/numeric/IComputable.IComputable<Y, Ret>[P]}
-    */ typings.tstl.tstlStrings.plus with (IComputable[Y, Ret]) */, Y, Ret](x: X, y: Y): Ret = js.native
-  type Param[Y, Ret, Key /* <: String */] = Double | (Pick[IComputable[Y, Ret], Key])
+    */ typings.tstl.tstlStrings.plus with (TopLevel[IComputable[Y, Ret]]) */, Y, Ret](x: X, y: Y): Ret = js.native
+  type Param[Y, Ret, Key /* <: plus | minus | multiplies | divides | modules | negate */] = Double | (Pick[IComputable[Y, Ret], Key])
   type PlusParam[Y, Ret] = Double | String | (Pick[IComputable[Y, Ret], plus])
 }
 

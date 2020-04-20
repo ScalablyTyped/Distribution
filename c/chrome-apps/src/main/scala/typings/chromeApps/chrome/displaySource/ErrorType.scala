@@ -1,9 +1,9 @@
 package typings.chromeApps.chrome.displaySource
 
-import typings.chromeApps.chromeAppsStrings.capabilities_negotiation_error
-import typings.chromeApps.chromeAppsStrings.connection_error
-import typings.chromeApps.chromeAppsStrings.media_pipeline_error
-import typings.chromeApps.chromeAppsStrings.timeout_error
+import typings.chromeApps.chromeAppsStrings.capabilities_negotiation_error_
+import typings.chromeApps.chromeAppsStrings.connection_error_
+import typings.chromeApps.chromeAppsStrings.media_pipeline_error_
+import typings.chromeApps.chromeAppsStrings.timeout_error_
 import typings.chromeApps.chromeAppsStrings.unknown_error_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,10 +33,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.displaySource.ErrorType")
 @js.native
 object ErrorType extends js.Object {
-  var CAPABILITIES_NEGOTIATION_ERROR: capabilities_negotiation_error = js.native
-  var CONNECTION_ERROR: connection_error = js.native
-  var MEDIA_PIPELINE_ERROR: media_pipeline_error = js.native
-  var TIMEOUT_ERROR: timeout_error = js.native
+  var CAPABILITIES_NEGOTIATION_ERROR: capabilities_negotiation_error_ = js.native
+  var CONNECTION_ERROR: connection_error_ = js.native
+  var MEDIA_PIPELINE_ERROR: media_pipeline_error_ = js.native
+  var TIMEOUT_ERROR: timeout_error_ = js.native
   var UNKNOWN_ERROR: unknown_error_ = js.native
 }
 

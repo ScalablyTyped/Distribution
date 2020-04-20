@@ -17,7 +17,6 @@ object PhononIndicatorComponent {
     open: () => Unit
   ): PhononIndicatorComponent = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), on = js.Any.fromFunction2(on), open = js.Any.fromFunction0(open))
-  
     __obj.asInstanceOf[PhononIndicatorComponent]
   }
 }

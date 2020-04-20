@@ -68,9 +68,9 @@ trait TypeofvpnProvider extends js.Object {
       /* id */ String, 
       /* message */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage */ js.Any, 
-        String, 
+        /* keyof typeof PlatformMessage */ String, 
         Exclude[
-          String, 
+          /* keyof typeof PlatformMessage */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage[keyof typeof PlatformMessage] */ js.Any
         ]
       ], 
@@ -86,9 +86,9 @@ trait TypeofvpnProvider extends js.Object {
     js.Function2[
       /* event */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent */ js.Any, 
-        String, 
+        /* keyof typeof UIEvent */ String, 
         Exclude[
-          String, 
+          /* keyof typeof UIEvent */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent[keyof typeof UIEvent] */ js.Any
         ]
       ], 
@@ -121,9 +121,9 @@ trait TypeofvpnProvider extends js.Object {
   def notifyConnectionStateChanged(
     state: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState */ js.Any, 
-      String, 
+      /* keyof typeof VpnConnectionState */ String, 
       Exclude[
-        String, 
+        /* keyof typeof VpnConnectionState */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState[keyof typeof VpnConnectionState] */ js.Any
       ]
     ]
@@ -131,9 +131,9 @@ trait TypeofvpnProvider extends js.Object {
   def notifyConnectionStateChanged(
     state: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState */ js.Any, 
-      String, 
+      /* keyof typeof VpnConnectionState */ String, 
       Exclude[
-        String, 
+        /* keyof typeof VpnConnectionState */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState[keyof typeof VpnConnectionState] */ js.Any
       ]
     ],

@@ -13,7 +13,6 @@ object AnonUndoStopAfter {
   @scala.inline
   def apply(undoStopAfter: Boolean, undoStopBefore: Boolean): AnonUndoStopAfter = {
     val __obj = js.Dynamic.literal(undoStopAfter = undoStopAfter.asInstanceOf[js.Any], undoStopBefore = undoStopBefore.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUndoStopAfter]
   }
 }

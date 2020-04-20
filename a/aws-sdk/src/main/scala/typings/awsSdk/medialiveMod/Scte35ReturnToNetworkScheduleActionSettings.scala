@@ -16,7 +16,6 @@ object Scte35ReturnToNetworkScheduleActionSettings {
   @scala.inline
   def apply(SpliceEventId: longMin0Max4294967295): Scte35ReturnToNetworkScheduleActionSettings = {
     val __obj = js.Dynamic.literal(SpliceEventId = SpliceEventId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scte35ReturnToNetworkScheduleActionSettings]
   }
 }

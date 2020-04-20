@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeMaterialDesignSearchbarProps {
   @scala.inline
-  def ReactNativeMaterialDesignSearchbarProps: SearchBarProps.type = typings.reactNativeMaterialDesignSearchbar.mod.SearchBarProps
+  def ReactNativeMaterialDesignSearchbarProps: SearchBarProps.type = SearchBarProps
   type ReactNativeMaterialDesignSearchbarProps = SearchBarProps
 }
 

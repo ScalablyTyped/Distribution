@@ -24,20 +24,18 @@ trait _DISPLAY_MOVEUNIT extends js.Object
 
 object _DISPLAY_MOVEUNIT {
   @scala.inline
-  def DISPLAY_MOVEUNIT_BottomOfWindow: `6` = this.cast(6)
+  def DISPLAY_MOVEUNIT_BottomOfWindow: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def DISPLAY_MOVEUNIT_CurrentLineEnd: `4` = this.cast(4)
+  def DISPLAY_MOVEUNIT_CurrentLineEnd: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def DISPLAY_MOVEUNIT_CurrentLineStart: `3` = this.cast(3)
+  def DISPLAY_MOVEUNIT_CurrentLineStart: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def DISPLAY_MOVEUNIT_Max: `2147483647` = this.cast(2147483647)
+  def DISPLAY_MOVEUNIT_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def DISPLAY_MOVEUNIT_NextLine: `2` = this.cast(2)
+  def DISPLAY_MOVEUNIT_NextLine: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def DISPLAY_MOVEUNIT_PreviousLine: `1` = this.cast(1)
+  def DISPLAY_MOVEUNIT_PreviousLine: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def DISPLAY_MOVEUNIT_TopOfWindow: `5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DISPLAY_MOVEUNIT_TopOfWindow: `5` = 5.asInstanceOf[`5`]
 }
 

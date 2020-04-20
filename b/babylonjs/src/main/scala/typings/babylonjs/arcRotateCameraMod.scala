@@ -205,12 +205,12 @@ object arcRotateCameraMod extends js.Object {
     /**
       * Gets or Set the pointer angular sensibility  along the X axis or how fast is the camera rotating.
       */
-    def angularSensibilityX(): Double = js.native
+    def angularSensibilityX: Double = js.native
     def angularSensibilityX(value: Double): js.Any = js.native
     /**
       * Gets or Set the pointer angular sensibility along the Y axis or how fast is the camera rotating.
       */
-    def angularSensibilityY(): Double = js.native
+    def angularSensibilityY: Double = js.native
     def angularSensibilityY(value: Double): js.Any = js.native
     def attachControl(element: HTMLElement, noPreventDefault: Boolean, useCtrlForPanning: Boolean): Unit = js.native
     def attachControl(
@@ -223,12 +223,12 @@ object arcRotateCameraMod extends js.Object {
       * Gets the auto rotation behavior of the camera if it has been enabled.
       * @see http://doc.babylonjs.com/how_to/camera_behaviors#autorotation-behavior
       */
-    def autoRotationBehavior(): Nullable[AutoRotationBehavior] = js.native
+    def autoRotationBehavior: Nullable[AutoRotationBehavior] = js.native
     /**
       * Gets the bouncing behavior of the camera if it has been enabled.
       * @see http://doc.babylonjs.com/how_to/camera_behaviors#bouncing-behavior
       */
-    def bouncingBehavior(): Nullable[BouncingBehavior] = js.native
+    def bouncingBehavior: Nullable[BouncingBehavior] = js.native
     /**
       * Focus on a mesh or a bounding box. This adapts the target and maxRadius if necessary but does not update the current radius.
       * The target will be changed but the radius
@@ -243,26 +243,26 @@ object arcRotateCameraMod extends js.Object {
       * Gets the framing behavior of the camera if it has been enabled.
       * @see http://doc.babylonjs.com/how_to/camera_behaviors#framing-behavior
       */
-    def framingBehavior(): Nullable[FramingBehavior] = js.native
+    def framingBehavior: Nullable[FramingBehavior] = js.native
     /**
       * Gets or Set the list of keyboard keys used to control beta angle in a negative direction.
       */
-    def keysDown(): js.Array[Double] = js.native
+    def keysDown: js.Array[Double] = js.native
     def keysDown(value: js.Array[Double]): js.Any = js.native
     /**
       * Gets or Set the list of keyboard keys used to control alpha angle in a negative direction.
       */
-    def keysLeft(): js.Array[Double] = js.native
+    def keysLeft: js.Array[Double] = js.native
     def keysLeft(value: js.Array[Double]): js.Any = js.native
     /**
       * Gets or Set the list of keyboard keys used to control alpha angle in a positive direction.
       */
-    def keysRight(): js.Array[Double] = js.native
+    def keysRight: js.Array[Double] = js.native
     def keysRight(value: js.Array[Double]): js.Any = js.native
     /**
       * Gets or Set the list of keyboard keys used to control beta angle in a positive direction.
       */
-    def keysUp(): js.Array[Double] = js.native
+    def keysUp: js.Array[Double] = js.native
     def keysUp(value: js.Array[Double]): js.Any = js.native
     /**
       * Event raised when the camera is colliding with a mesh.
@@ -271,19 +271,19 @@ object arcRotateCameraMod extends js.Object {
     /**
       * Gets or Set the pointer panning sensibility or how fast is the camera moving.
       */
-    def panningSensibility(): Double = js.native
+    def panningSensibility: Double = js.native
     def panningSensibility(value: Double): js.Any = js.native
     /**
       * Gets or Set the pointer pinch delta percentage or how fast is the camera zooming.
       * It will be used instead of pinchDeltaPrecision if different from 0.
       * It defines the percentage of current camera.radius to use as delta when pinch zoom is used.
       */
-    def pinchDeltaPercentage(): Double = js.native
+    def pinchDeltaPercentage: Double = js.native
     def pinchDeltaPercentage(value: Double): js.Any = js.native
     /**
       * Gets or Set the pointer pinch precision or how fast is the camera zooming.
       */
-    def pinchPrecision(): Double = js.native
+    def pinchPrecision: Double = js.native
     def pinchPrecision(value: Double): js.Any = js.native
     /**
       * Rebuilds angles (alpha, beta) and radius from the give position and target
@@ -314,10 +314,10 @@ object arcRotateCameraMod extends js.Object {
       * Defines the target point of the camera.
       * The camera looks towards it form the radius distance.
       */
-    def target(): Vector3 = js.native
+    def target: Vector3 = js.native
     def target(value: Vector3): js.Any = js.native
     @JSName("upVector")
-    def upVector_MArcRotateCamera(): Vector3 = js.native
+    def upVector_MArcRotateCamera: Vector3 = js.native
     /**
       * The vector the camera should consider as up. (default is Vector3(0, 1, 0) as returned by Vector3.Up())
       * Setting this will copy the given vector to the camera's upVector, and set rotation matrices to and from Y up.
@@ -329,19 +329,19 @@ object arcRotateCameraMod extends js.Object {
       * Defines if the auto rotation behavior of the camera is enabled on the camera.
       * @see http://doc.babylonjs.com/how_to/camera_behaviors#autorotation-behavior
       */
-    def useAutoRotationBehavior(): Boolean = js.native
+    def useAutoRotationBehavior: Boolean = js.native
     def useAutoRotationBehavior(value: Boolean): js.Any = js.native
     /**
       * Defines if the bouncing behavior of the camera is enabled on the camera.
       * @see http://doc.babylonjs.com/how_to/camera_behaviors#bouncing-behavior
       */
-    def useBouncingBehavior(): Boolean = js.native
+    def useBouncingBehavior: Boolean = js.native
     def useBouncingBehavior(value: Boolean): js.Any = js.native
     /**
       * Defines if the framing behavior of the camera is enabled on the camera.
       * @see http://doc.babylonjs.com/how_to/camera_behaviors#framing-behavior
       */
-    def useFramingBehavior(): Boolean = js.native
+    def useFramingBehavior: Boolean = js.native
     def useFramingBehavior(value: Boolean): js.Any = js.native
     /**
       * Gets or Set the pointer use natural pinch zoom to override the pinch precision
@@ -350,19 +350,19 @@ object arcRotateCameraMod extends js.Object {
       * that any object in the plane at the camera's target point will scale
       * perfectly with finger motion.
       */
-    def useNaturalPinchZoom(): Boolean = js.native
+    def useNaturalPinchZoom: Boolean = js.native
     def useNaturalPinchZoom(value: Boolean): js.Any = js.native
     /**
       * Gets or Set the mouse wheel delta percentage or how fast is the camera zooming.
       * It will be used instead of pinchDeltaPrecision if different from 0.
       * It defines the percentage of current camera.radius to use as delta when pinch zoom is used.
       */
-    def wheelDeltaPercentage(): Double = js.native
+    def wheelDeltaPercentage: Double = js.native
     def wheelDeltaPercentage(value: Double): js.Any = js.native
     /**
       * Gets or Set the mouse wheel precision or how fast is the camera zooming.
       */
-    def wheelPrecision(): Double = js.native
+    def wheelPrecision: Double = js.native
     def wheelPrecision(value: Double): js.Any = js.native
     /**
       * Zooms on a mesh to be at the min distance where we could see it fully in the current viewport.

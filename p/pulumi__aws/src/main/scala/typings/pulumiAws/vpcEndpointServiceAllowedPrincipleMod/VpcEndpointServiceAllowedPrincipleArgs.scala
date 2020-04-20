@@ -21,7 +21,6 @@ object VpcEndpointServiceAllowedPrincipleArgs {
   @scala.inline
   def apply(principalArn: Input[String], vpcEndpointServiceId: Input[String]): VpcEndpointServiceAllowedPrincipleArgs = {
     val __obj = js.Dynamic.literal(principalArn = principalArn.asInstanceOf[js.Any], vpcEndpointServiceId = vpcEndpointServiceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcEndpointServiceAllowedPrincipleArgs]
   }
 }

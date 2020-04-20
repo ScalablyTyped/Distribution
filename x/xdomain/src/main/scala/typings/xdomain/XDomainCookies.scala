@@ -13,7 +13,6 @@ object XDomainCookies {
   @scala.inline
   def apply(master: String, slave: String): XDomainCookies = {
     val __obj = js.Dynamic.literal(master = master.asInstanceOf[js.Any], slave = slave.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XDomainCookies]
   }
 }

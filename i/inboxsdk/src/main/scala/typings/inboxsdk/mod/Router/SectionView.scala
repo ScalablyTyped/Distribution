@@ -16,7 +16,6 @@ object SectionView {
   @scala.inline
   def apply(destroyed: Boolean, on: (destroy, js.Function0[Unit]) => Unit, remove: () => Unit): SectionView = {
     val __obj = js.Dynamic.literal(destroyed = destroyed.asInstanceOf[js.Any], on = js.Any.fromFunction2(on), remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[SectionView]
   }
 }

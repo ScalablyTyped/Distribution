@@ -18,7 +18,6 @@ object IUnloadUIParameters {
   @scala.inline
   def apply(path: String): IUnloadUIParameters = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUnloadUIParameters]
   }
 }

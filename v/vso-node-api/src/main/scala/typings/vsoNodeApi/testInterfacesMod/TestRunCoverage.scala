@@ -15,7 +15,6 @@ object TestRunCoverage {
   @scala.inline
   def apply(lastError: String, modules: js.Array[ModuleCoverage], state: String, testRun: ShallowReference): TestRunCoverage = {
     val __obj = js.Dynamic.literal(lastError = lastError.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], testRun = testRun.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestRunCoverage]
   }
 }

@@ -16,7 +16,6 @@ object ThirdPartyUserResult {
   @scala.inline
   def apply(fields: js.Object, protocol: String, userid: String): ThirdPartyUserResult = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], userid = userid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThirdPartyUserResult]
   }
 }

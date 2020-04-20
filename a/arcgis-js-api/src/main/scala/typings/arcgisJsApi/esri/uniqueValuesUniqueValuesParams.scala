@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -31,6 +32,12 @@ trait uniqueValuesUniqueValuesParams extends Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-uniqueValues.html#uniqueValues)
     */
   var returnAllCodedValues: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-uniqueValues.html#uniqueValues)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   /**
     * A SQL expression evaluating to a number or string.
     *
@@ -67,6 +74,7 @@ object uniqueValuesUniqueValuesParams {
     features: js.Array[Graphic] = null,
     field: String = null,
     returnAllCodedValues: js.UndefOr[Boolean] = js.undefined,
+    signal: AbortSignal = null,
     sqlExpression: String = null,
     sqlWhere: String = null,
     valueExpression: String = null,
@@ -76,6 +84,7 @@ object uniqueValuesUniqueValuesParams {
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (!js.isUndefined(returnAllCodedValues)) __obj.updateDynamic("returnAllCodedValues")(returnAllCodedValues.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
     if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])

@@ -19,7 +19,6 @@ object AnonAddTemplate {
     renderTemplateSource: (Object, KnockoutBindingContext, Object) => js.Array[Node]
   ): AnonAddTemplate = {
     val __obj = js.Dynamic.literal(addTemplate = js.Any.fromFunction2(addTemplate), createJavaScriptEvaluatorBlock = js.Any.fromFunction1(createJavaScriptEvaluatorBlock), renderTemplateSource = js.Any.fromFunction3(renderTemplateSource))
-  
     __obj.asInstanceOf[AnonAddTemplate]
   }
 }

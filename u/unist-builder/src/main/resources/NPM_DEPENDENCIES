@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "unist-builder" : "2.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "unist-builder" : "2.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

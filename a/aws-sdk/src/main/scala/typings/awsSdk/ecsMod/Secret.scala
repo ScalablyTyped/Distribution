@@ -20,7 +20,6 @@ object Secret {
   @scala.inline
   def apply(name: String, valueFrom: String): Secret = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], valueFrom = valueFrom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Secret]
   }
 }

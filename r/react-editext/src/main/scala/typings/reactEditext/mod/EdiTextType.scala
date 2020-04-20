@@ -21,28 +21,26 @@ trait EdiTextType extends js.Object
 
 object EdiTextType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.reactEditext.reactEditextStrings.date = "date".asInstanceOf[typings.reactEditext.reactEditextStrings.date]
   @scala.inline
-  def date: typings.reactEditext.reactEditextStrings.date = this.cast("date")
+  def `datetime-local`: typings.reactEditext.reactEditextStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.reactEditext.reactEditextStrings.`datetime-local`]
   @scala.inline
-  def `datetime-local`: typings.reactEditext.reactEditextStrings.`datetime-local` = this.cast("datetime-local")
+  def email: typings.reactEditext.reactEditextStrings.email = "email".asInstanceOf[typings.reactEditext.reactEditextStrings.email]
   @scala.inline
-  def email: typings.reactEditext.reactEditextStrings.email = this.cast("email")
+  def month: typings.reactEditext.reactEditextStrings.month = "month".asInstanceOf[typings.reactEditext.reactEditextStrings.month]
   @scala.inline
-  def month: typings.reactEditext.reactEditextStrings.month = this.cast("month")
+  def number: typings.reactEditext.reactEditextStrings.number = "number".asInstanceOf[typings.reactEditext.reactEditextStrings.number]
   @scala.inline
-  def number: typings.reactEditext.reactEditextStrings.number = this.cast("number")
+  def tel: typings.reactEditext.reactEditextStrings.tel = "tel".asInstanceOf[typings.reactEditext.reactEditextStrings.tel]
   @scala.inline
-  def tel: typings.reactEditext.reactEditextStrings.tel = this.cast("tel")
+  def text: typings.reactEditext.reactEditextStrings.text = "text".asInstanceOf[typings.reactEditext.reactEditextStrings.text]
   @scala.inline
-  def text: typings.reactEditext.reactEditextStrings.text = this.cast("text")
+  def textarea: typings.reactEditext.reactEditextStrings.textarea = "textarea".asInstanceOf[typings.reactEditext.reactEditextStrings.textarea]
   @scala.inline
-  def textarea: typings.reactEditext.reactEditextStrings.textarea = this.cast("textarea")
+  def time: typings.reactEditext.reactEditextStrings.time = "time".asInstanceOf[typings.reactEditext.reactEditextStrings.time]
   @scala.inline
-  def time: typings.reactEditext.reactEditextStrings.time = this.cast("time")
+  def url: typings.reactEditext.reactEditextStrings.url = "url".asInstanceOf[typings.reactEditext.reactEditextStrings.url]
   @scala.inline
-  def url: typings.reactEditext.reactEditextStrings.url = this.cast("url")
-  @scala.inline
-  def week: typings.reactEditext.reactEditextStrings.week = this.cast("week")
+  def week: typings.reactEditext.reactEditextStrings.week = "week".asInstanceOf[typings.reactEditext.reactEditextStrings.week]
 }
 

@@ -16,7 +16,6 @@ object DeregisterWorkspaceDirectoryRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId): DeregisterWorkspaceDirectoryRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterWorkspaceDirectoryRequest]
   }
 }

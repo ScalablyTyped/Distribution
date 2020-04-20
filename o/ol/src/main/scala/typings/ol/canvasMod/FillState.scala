@@ -13,7 +13,6 @@ object FillState {
   @scala.inline
   def apply(fillStyle: ColorLike): FillState = {
     val __obj = js.Dynamic.literal(fillStyle = fillStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FillState]
   }
 }

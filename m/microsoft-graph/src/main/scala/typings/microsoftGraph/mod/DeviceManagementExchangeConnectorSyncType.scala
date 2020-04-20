@@ -12,10 +12,8 @@ trait DeviceManagementExchangeConnectorSyncType extends js.Object
 
 object DeviceManagementExchangeConnectorSyncType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deltaSync: typings.microsoftGraph.microsoftGraphStrings.deltaSync = "deltaSync".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deltaSync]
   @scala.inline
-  def deltaSync: typings.microsoftGraph.microsoftGraphStrings.deltaSync = this.cast("deltaSync")
-  @scala.inline
-  def fullSync: typings.microsoftGraph.microsoftGraphStrings.fullSync = this.cast("fullSync")
+  def fullSync: typings.microsoftGraph.microsoftGraphStrings.fullSync = "fullSync".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.fullSync]
 }
 

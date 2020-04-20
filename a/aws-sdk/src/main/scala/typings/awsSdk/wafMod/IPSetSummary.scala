@@ -20,7 +20,6 @@ object IPSetSummary {
   @scala.inline
   def apply(IPSetId: ResourceId, Name: ResourceName): IPSetSummary = {
     val __obj = js.Dynamic.literal(IPSetId = IPSetId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPSetSummary]
   }
 }

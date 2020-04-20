@@ -52,7 +52,6 @@ object PresentationsResource {
     pages: PagesResource
   ): PresentationsResource = {
     val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction1(batchUpdate), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), pages = pages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PresentationsResource]
   }
 }

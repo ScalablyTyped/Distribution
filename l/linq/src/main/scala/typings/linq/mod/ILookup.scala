@@ -20,7 +20,6 @@ object ILookup {
     toEnumerable: () => IEnumerable[IGrouping[TKey, TElement]]
   ): ILookup[TKey, TElement] = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), count = js.Any.fromFunction0(count), get = js.Any.fromFunction1(get), toEnumerable = js.Any.fromFunction0(toEnumerable))
-  
     __obj.asInstanceOf[ILookup[TKey, TElement]]
   }
 }

@@ -28,24 +28,22 @@ trait WdCellColor extends js.Object
 
 object WdCellColor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCellColorByAuthor: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdCellColorByAuthor: `-1` = this.cast(-1)
+  def wdCellColorLightBlue: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdCellColorLightBlue: `2` = this.cast(2)
+  def wdCellColorLightGray: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdCellColorLightGray: `7` = this.cast(7)
+  def wdCellColorLightGreen: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdCellColorLightGreen: `6` = this.cast(6)
+  def wdCellColorLightOrange: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdCellColorLightOrange: `5` = this.cast(5)
+  def wdCellColorLightPurple: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdCellColorLightPurple: `4` = this.cast(4)
+  def wdCellColorLightYellow: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdCellColorLightYellow: `3` = this.cast(3)
+  def wdCellColorNoHighlight: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdCellColorNoHighlight: `0` = this.cast(0)
-  @scala.inline
-  def wdCellColorPink: `1` = this.cast(1)
+  def wdCellColorPink: `1` = 1.asInstanceOf[`1`]
 }
 

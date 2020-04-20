@@ -20,7 +20,6 @@ object Metrics {
   @scala.inline
   def apply(EventThreshold: ReplicationTimeValue, Status: MetricsStatus): Metrics = {
     val __obj = js.Dynamic.literal(EventThreshold = EventThreshold.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Metrics]
   }
 }

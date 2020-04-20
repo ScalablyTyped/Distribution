@@ -13,7 +13,6 @@ object PickImplobserveChanges {
   @scala.inline
   def apply(observeChanges: Boolean): PickImplobserveChanges = {
     val __obj = js.Dynamic.literal(observeChanges = observeChanges.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplobserveChanges]
   }
 }

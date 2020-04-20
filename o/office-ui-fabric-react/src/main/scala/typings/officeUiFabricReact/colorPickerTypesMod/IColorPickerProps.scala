@@ -1,6 +1,9 @@
 package typings.officeUiFabricReact.colorPickerTypesMod
 
 import typings.officeUiFabricReact.interfacesMod.IColor
+import typings.officeUiFabricReact.officeUiFabricReactStrings.alpha
+import typings.officeUiFabricReact.officeUiFabricReactStrings.none
+import typings.officeUiFabricReact.officeUiFabricReactStrings.transparency
 import typings.react.mod.SyntheticEvent
 import typings.std.Event_
 import typings.std.HTMLElement
@@ -19,9 +22,21 @@ trait IColorPickerProps extends js.Object {
     */
   var alphaLabel: js.UndefOr[String] = js.undefined
   /**
-    * Whether to hide the alpha control slider.
+    * Whether to hide the alpha (or transparency) slider and text field.
+    * @deprecated Use `alphaType: 'none'`
     */
   var alphaSliderHidden: js.UndefOr[Boolean] = js.undefined
+  /**
+    * `alpha` (the default) means display a slider and text field for editing alpha values.
+    * `transparency` also displays a slider and text field but for editing transparency values.
+    * `none` hides these controls.
+    *
+    * Alpha represents the opacity of the color, whereas transparency represents the transparentness
+    * of the color: i.e. a 30% transparent color has 70% opaqueness.
+    *
+    * @defaultvalue 'alpha'
+    */
+  var alphaType: js.UndefOr[alpha | transparency | none] = js.undefined
   /**
     * Label for the blue text field.
     * @defaultvalue Blue
@@ -90,6 +105,7 @@ object IColorPickerProps {
     color: IColor | String,
     alphaLabel: String = null,
     alphaSliderHidden: js.UndefOr[Boolean] = js.undefined,
+    alphaType: alpha | transparency | none = null,
     blueLabel: String = null,
     className: String = null,
     componentRef: IRefObject[IColorPicker] = null,
@@ -105,6 +121,7 @@ object IColorPickerProps {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     if (alphaLabel != null) __obj.updateDynamic("alphaLabel")(alphaLabel.asInstanceOf[js.Any])
     if (!js.isUndefined(alphaSliderHidden)) __obj.updateDynamic("alphaSliderHidden")(alphaSliderHidden.asInstanceOf[js.Any])
+    if (alphaType != null) __obj.updateDynamic("alphaType")(alphaType.asInstanceOf[js.Any])
     if (blueLabel != null) __obj.updateDynamic("blueLabel")(blueLabel.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])

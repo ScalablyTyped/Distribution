@@ -16,18 +16,16 @@ trait ElementType extends js.Object
 
 object ElementType {
   @scala.inline
-  def card: typings.stripejs.stripejsStrings.card = this.cast("card")
+  def card: typings.stripejs.stripejsStrings.card = "card".asInstanceOf[typings.stripejs.stripejsStrings.card]
   @scala.inline
-  def cardCvc: typings.stripejs.stripejsStrings.cardCvc = this.cast("cardCvc")
+  def cardCvc: typings.stripejs.stripejsStrings.cardCvc = "cardCvc".asInstanceOf[typings.stripejs.stripejsStrings.cardCvc]
   @scala.inline
-  def cardExpiry: typings.stripejs.stripejsStrings.cardExpiry = this.cast("cardExpiry")
+  def cardExpiry: typings.stripejs.stripejsStrings.cardExpiry = "cardExpiry".asInstanceOf[typings.stripejs.stripejsStrings.cardExpiry]
   @scala.inline
-  def cardNumber: typings.stripejs.stripejsStrings.cardNumber = this.cast("cardNumber")
+  def cardNumber: typings.stripejs.stripejsStrings.cardNumber = "cardNumber".asInstanceOf[typings.stripejs.stripejsStrings.cardNumber]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def paymentRequestButton: typings.stripejs.stripejsStrings.paymentRequestButton = "paymentRequestButton".asInstanceOf[typings.stripejs.stripejsStrings.paymentRequestButton]
   @scala.inline
-  def paymentRequestButton: typings.stripejs.stripejsStrings.paymentRequestButton = this.cast("paymentRequestButton")
-  @scala.inline
-  def postalCode: typings.stripejs.stripejsStrings.postalCode = this.cast("postalCode")
+  def postalCode: typings.stripejs.stripejsStrings.postalCode = "postalCode".asInstanceOf[typings.stripejs.stripejsStrings.postalCode]
 }
 

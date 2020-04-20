@@ -28,7 +28,7 @@ abstract class VariableRef protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FVariableRef: IModel = js.native
-  def containerAsVariableRefExpression(): VariableRefExpression = js.native
+  def containerAsVariableRefExpression: VariableRefExpression = js.native
 }
 
 /* static members */

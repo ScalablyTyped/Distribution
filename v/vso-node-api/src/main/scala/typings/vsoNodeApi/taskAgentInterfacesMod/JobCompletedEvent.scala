@@ -21,7 +21,6 @@ object JobCompletedEvent {
     result: TaskResult
   ): JobCompletedEvent = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputVariables = outputVariables.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JobCompletedEvent]
   }
 }

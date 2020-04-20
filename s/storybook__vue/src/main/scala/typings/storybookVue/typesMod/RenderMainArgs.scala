@@ -30,7 +30,6 @@ object RenderMainArgs {
     storyFn: /* p */ js.UndefOr[StoryContext] => VueConstructor[Vue]
   ): RenderMainArgs = {
     val __obj = js.Dynamic.literal(forceRender = forceRender.asInstanceOf[js.Any], selectedKind = selectedKind.asInstanceOf[js.Any], selectedStory = selectedStory.asInstanceOf[js.Any], showError = js.Any.fromFunction1(showError), showException = js.Any.fromFunction1(showException), showMain = js.Any.fromFunction0(showMain), storyFn = js.Any.fromFunction1(storyFn))
-  
     __obj.asInstanceOf[RenderMainArgs]
   }
 }

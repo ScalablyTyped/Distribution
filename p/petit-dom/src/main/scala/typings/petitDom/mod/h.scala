@@ -26,8 +26,8 @@ object h extends js.Object {
   def apply[P /* <: ComponentProps */](`type`: FunctionComponent[P]): FunctionComponentNode[P] = js.native
   def apply[P /* <: ComponentProps */](`type`: FunctionComponent[P], children: Content*): FunctionComponentNode[P] = js.native
   def apply[P /* <: ComponentProps */](`type`: FunctionComponent[P], props: P, children: Content*): FunctionComponentNode[P] = js.native
-  def apply[T /* <: String */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.ElementTagNameMap[T] */ js.Any */](`type`: T): ElementNode[T, E] = js.native
-  def apply[T /* <: String */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.ElementTagNameMap[T] */ js.Any */](`type`: T, children: Content*): ElementNode[T, E] = js.native
-  def apply[T /* <: String */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.ElementTagNameMap[T] */ js.Any */](`type`: T, props: Props[E], children: Content*): ElementNode[T, E] = js.native
+  def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.ElementTagNameMap[T] */ js.Any */](`type`: T): ElementNode[T, E] = js.native
+  def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.ElementTagNameMap[T] */ js.Any */](`type`: T, children: Content*): ElementNode[T, E] = js.native
+  def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.ElementTagNameMap[T] */ js.Any */](`type`: T, props: Props[E], children: Content*): ElementNode[T, E] = js.native
 }
 

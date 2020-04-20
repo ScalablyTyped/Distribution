@@ -49,7 +49,6 @@ object utils {
     solve: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Object
   ): utils = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction2(find), group = js.Any.fromFunction3(group), initElements = js.Any.fromFunction2(initElements), solve = js.Any.fromFunction5(solve))
-  
     __obj.asInstanceOf[utils]
   }
 }

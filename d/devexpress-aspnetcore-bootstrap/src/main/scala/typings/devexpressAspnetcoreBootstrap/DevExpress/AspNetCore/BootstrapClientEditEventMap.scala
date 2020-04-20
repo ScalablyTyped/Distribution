@@ -21,7 +21,6 @@ object BootstrapClientEditEventMap {
     valueChanged: ProcessingModeEventArgs
   ): BootstrapClientEditEventMap = {
     val __obj = js.Dynamic.literal(gotFocus = gotFocus.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapClientEditEventMap]
   }
 }

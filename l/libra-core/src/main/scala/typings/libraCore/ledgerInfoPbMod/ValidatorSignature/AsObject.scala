@@ -14,7 +14,6 @@ object AsObject {
   @scala.inline
   def apply(signature: Uint8Array | String, validatorId: Uint8Array | String): AsObject = {
     val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any], validatorId = validatorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

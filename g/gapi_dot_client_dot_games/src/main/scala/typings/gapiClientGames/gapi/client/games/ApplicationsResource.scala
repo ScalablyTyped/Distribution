@@ -28,7 +28,6 @@ object ApplicationsResource {
     verify: AnonPrettyPrint => Request_[ApplicationVerifyResponse]
   ): ApplicationsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), played = js.Any.fromFunction1(played), verify = js.Any.fromFunction1(verify))
-  
     __obj.asInstanceOf[ApplicationsResource]
   }
 }

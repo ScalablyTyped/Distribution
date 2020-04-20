@@ -16,7 +16,6 @@ object FacebookStaticEvent {
     unsubscribe: (js.Any, FacebookEventCallback[js.Any]) => Unit
   ): FacebookStaticEvent = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction2(subscribe), unsubscribe = js.Any.fromFunction2(unsubscribe))
-  
     __obj.asInstanceOf[FacebookStaticEvent]
   }
 }

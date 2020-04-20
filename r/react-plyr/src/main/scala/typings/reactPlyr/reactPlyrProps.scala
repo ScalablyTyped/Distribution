@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactPlyrProps {
   @scala.inline
-  def ReactPlyrProps: Props.type = typings.reactPlyr.mod.Props
+  def ReactPlyrProps: Props.type = Props
   type ReactPlyrProps = Props
 }
 

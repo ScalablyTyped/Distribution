@@ -24,7 +24,6 @@ object RouteView {
     on: (destroy, js.Function0[Unit]) => Unit
   ): RouteView = {
     val __obj = js.Dynamic.literal(destroyed = destroyed.asInstanceOf[js.Any], getParams = js.Any.fromFunction0(getParams), getRouteID = js.Any.fromFunction0(getRouteID), getRouteType = js.Any.fromFunction0(getRouteType), on = js.Any.fromFunction2(on))
-  
     __obj.asInstanceOf[RouteView]
   }
 }

@@ -13,7 +13,6 @@ object OnInboundInvokeValue {
   @scala.inline
   def apply(data: js.Any, procedure: String): OnInboundInvokeValue = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnInboundInvokeValue]
   }
 }

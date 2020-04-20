@@ -55,48 +55,46 @@ trait AttributeTypeCode extends js.Object
 
 object AttributeTypeCode {
   @scala.inline
-  def BigInt: `18` = this.cast(18)
+  def BigInt: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def Boolean: `0` = this.cast(0)
+  def Boolean: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def CalendarRules: `16` = this.cast(16)
+  def CalendarRules: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def Customer: `1` = this.cast(1)
+  def Customer: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def DateTime: `2` = this.cast(2)
+  def DateTime: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Decimal: `3` = this.cast(3)
+  def Decimal: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Double: `4` = this.cast(4)
+  def Double: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def EntityName: `20` = this.cast(20)
+  def EntityName: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def Integer: `5` = this.cast(5)
+  def Integer: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def Lookup: `6` = this.cast(6)
+  def Lookup: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ManagedProperty: `19` = this.cast(19)
+  def ManagedProperty: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def Memo: `7` = this.cast(7)
+  def Memo: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def Money: `8` = this.cast(8)
+  def Money: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def Owner: `9` = this.cast(9)
+  def Owner: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def PartyList: `10` = this.cast(10)
+  def PartyList: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def Picklist: `11` = this.cast(11)
+  def Picklist: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def State: `12` = this.cast(12)
+  def State: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def Status: `13` = this.cast(13)
+  def Status: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def String: `14` = this.cast(14)
+  def String: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def Uniqueidentifier: `15` = this.cast(15)
+  def Uniqueidentifier: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def Virtual: `17` = this.cast(17)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Virtual: `17` = 17.asInstanceOf[`17`]
 }
 

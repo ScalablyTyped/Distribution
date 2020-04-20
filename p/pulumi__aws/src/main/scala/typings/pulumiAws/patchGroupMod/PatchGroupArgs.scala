@@ -21,7 +21,6 @@ object PatchGroupArgs {
   @scala.inline
   def apply(baselineId: Input[String], patchGroup: Input[String]): PatchGroupArgs = {
     val __obj = js.Dynamic.literal(baselineId = baselineId.asInstanceOf[js.Any], patchGroup = patchGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatchGroupArgs]
   }
 }

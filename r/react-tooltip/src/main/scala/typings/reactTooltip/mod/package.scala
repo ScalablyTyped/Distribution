@@ -10,7 +10,102 @@ package object mod {
     * at least using *EventMap will give developers some type hinting, but there's no way we can reliably
     * type this.
     */
-  type ElementEvents = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactTooltip.reactTooltipStrings.fullscreenchange
+    - typings.reactTooltip.reactTooltipStrings.fullscreenerror
+    - typings.reactTooltip.reactTooltipStrings.abort
+    - typings.reactTooltip.reactTooltipStrings.animationcancel
+    - typings.reactTooltip.reactTooltipStrings.animationend
+    - typings.reactTooltip.reactTooltipStrings.animationiteration
+    - typings.reactTooltip.reactTooltipStrings.animationstart
+    - typings.reactTooltip.reactTooltipStrings.auxclick
+    - typings.reactTooltip.reactTooltipStrings.blur
+    - typings.reactTooltip.reactTooltipStrings.cancel
+    - typings.reactTooltip.reactTooltipStrings.canplay
+    - typings.reactTooltip.reactTooltipStrings.canplaythrough
+    - typings.reactTooltip.reactTooltipStrings.change
+    - typings.reactTooltip.reactTooltipStrings.click
+    - typings.reactTooltip.reactTooltipStrings.close
+    - typings.reactTooltip.reactTooltipStrings.contextmenu
+    - typings.reactTooltip.reactTooltipStrings.cuechange
+    - typings.reactTooltip.reactTooltipStrings.dblclick
+    - typings.reactTooltip.reactTooltipStrings.drag
+    - typings.reactTooltip.reactTooltipStrings.dragend
+    - typings.reactTooltip.reactTooltipStrings.dragenter
+    - typings.reactTooltip.reactTooltipStrings.dragexit
+    - typings.reactTooltip.reactTooltipStrings.dragleave
+    - typings.reactTooltip.reactTooltipStrings.dragover
+    - typings.reactTooltip.reactTooltipStrings.dragstart
+    - typings.reactTooltip.reactTooltipStrings.drop
+    - typings.reactTooltip.reactTooltipStrings.durationchange
+    - typings.reactTooltip.reactTooltipStrings.emptied
+    - typings.reactTooltip.reactTooltipStrings.ended
+    - typings.reactTooltip.reactTooltipStrings.error
+    - typings.reactTooltip.reactTooltipStrings.focus
+    - typings.reactTooltip.reactTooltipStrings.focusin
+    - typings.reactTooltip.reactTooltipStrings.focusout
+    - typings.reactTooltip.reactTooltipStrings.gotpointercapture
+    - typings.reactTooltip.reactTooltipStrings.input
+    - typings.reactTooltip.reactTooltipStrings.invalid
+    - typings.reactTooltip.reactTooltipStrings.keydown
+    - typings.reactTooltip.reactTooltipStrings.keypress
+    - typings.reactTooltip.reactTooltipStrings.keyup
+    - typings.reactTooltip.reactTooltipStrings.load
+    - typings.reactTooltip.reactTooltipStrings.loadeddata
+    - typings.reactTooltip.reactTooltipStrings.loadedmetadata
+    - typings.reactTooltip.reactTooltipStrings.loadstart
+    - typings.reactTooltip.reactTooltipStrings.lostpointercapture
+    - typings.reactTooltip.reactTooltipStrings.mousedown
+    - typings.reactTooltip.reactTooltipStrings.mouseenter
+    - typings.reactTooltip.reactTooltipStrings.mouseleave
+    - typings.reactTooltip.reactTooltipStrings.mousemove
+    - typings.reactTooltip.reactTooltipStrings.mouseout
+    - typings.reactTooltip.reactTooltipStrings.mouseover
+    - typings.reactTooltip.reactTooltipStrings.mouseup
+    - typings.reactTooltip.reactTooltipStrings.pause
+    - typings.reactTooltip.reactTooltipStrings.play
+    - typings.reactTooltip.reactTooltipStrings.playing
+    - typings.reactTooltip.reactTooltipStrings.pointercancel
+    - typings.reactTooltip.reactTooltipStrings.pointerdown
+    - typings.reactTooltip.reactTooltipStrings.pointerenter
+    - typings.reactTooltip.reactTooltipStrings.pointerleave
+    - typings.reactTooltip.reactTooltipStrings.pointermove
+    - typings.reactTooltip.reactTooltipStrings.pointerout
+    - typings.reactTooltip.reactTooltipStrings.pointerover
+    - typings.reactTooltip.reactTooltipStrings.pointerup
+    - typings.reactTooltip.reactTooltipStrings.progress
+    - typings.reactTooltip.reactTooltipStrings.ratechange
+    - typings.reactTooltip.reactTooltipStrings.reset
+    - typings.reactTooltip.reactTooltipStrings.resize
+    - typings.reactTooltip.reactTooltipStrings.scroll
+    - typings.reactTooltip.reactTooltipStrings.securitypolicyviolation
+    - typings.reactTooltip.reactTooltipStrings.seeked
+    - typings.reactTooltip.reactTooltipStrings.seeking
+    - typings.reactTooltip.reactTooltipStrings.select
+    - typings.reactTooltip.reactTooltipStrings.selectionchange
+    - typings.reactTooltip.reactTooltipStrings.selectstart
+    - typings.reactTooltip.reactTooltipStrings.stalled
+    - typings.reactTooltip.reactTooltipStrings.submit
+    - typings.reactTooltip.reactTooltipStrings.suspend
+    - typings.reactTooltip.reactTooltipStrings.timeupdate
+    - typings.reactTooltip.reactTooltipStrings.toggle
+    - typings.reactTooltip.reactTooltipStrings.touchcancel
+    - typings.reactTooltip.reactTooltipStrings.touchend
+    - typings.reactTooltip.reactTooltipStrings.touchmove
+    - typings.reactTooltip.reactTooltipStrings.touchstart
+    - typings.reactTooltip.reactTooltipStrings.transitioncancel
+    - typings.reactTooltip.reactTooltipStrings.transitionend
+    - typings.reactTooltip.reactTooltipStrings.transitionrun
+    - typings.reactTooltip.reactTooltipStrings.transitionstart
+    - typings.reactTooltip.reactTooltipStrings.volumechange
+    - typings.reactTooltip.reactTooltipStrings.waiting
+    - typings.reactTooltip.reactTooltipStrings.wheel
+    - typings.reactTooltip.reactTooltipStrings.copy
+    - typings.reactTooltip.reactTooltipStrings.cut
+    - typings.reactTooltip.reactTooltipStrings.paste
+    - java.lang.String
+  */
+  type ElementEvents = typings.reactTooltip.mod._ElementEvents | java.lang.String
   type GetContent = typings.reactTooltip.mod.GetContentCallback | (js.Tuple2[typings.reactTooltip.mod.GetContentCallback, scala.Double])
   type GetContentCallback = js.Function1[/* dataTip */ java.lang.String, typings.react.mod.ReactNode]
   type ReactTooltip = typings.react.mod.Component[typings.reactTooltip.mod.Props, js.Object, js.Any]

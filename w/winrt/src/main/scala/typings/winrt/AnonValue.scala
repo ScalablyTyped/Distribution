@@ -14,7 +14,6 @@ object AnonValue {
   @scala.inline
   def apply(succeeded: Boolean, value: PowerlineFrequency): AnonValue = {
     val __obj = js.Dynamic.literal(succeeded = succeeded.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValue]
   }
 }

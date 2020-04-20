@@ -14,14 +14,12 @@ trait NativeProvider extends js.Object
 
 object NativeProvider {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fused: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.fused = "fused".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.fused]
   @scala.inline
-  def fused: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.fused = this.cast("fused")
+  def gps: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.gps = "gps".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.gps]
   @scala.inline
-  def gps: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.gps = this.cast("gps")
+  def network: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.network = "network".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.network]
   @scala.inline
-  def network: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.network = this.cast("network")
-  @scala.inline
-  def passive: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.passive = this.cast("passive")
+  def passive: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.passive = "passive".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.passive]
 }
 

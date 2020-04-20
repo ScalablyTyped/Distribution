@@ -158,7 +158,7 @@ object typedGithubApiStrings {
   @scala.inline
   def assigned: assigned = "assigned".asInstanceOf[assigned]
   @scala.inline
-  def `best match`: `best match` = "best match".asInstanceOf[`best match`]
+  def `best match`: `best match` = ("best match").asInstanceOf[`best match`]
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline

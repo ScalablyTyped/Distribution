@@ -299,7 +299,7 @@ package object screeps {
   type SUBSCRIPTION_TOKEN = typings.screeps.screepsStrings.token
   // Return Codes
   type ScreepsReturnCode = typings.screeps.OK | typings.screeps.ERR_NOT_OWNER | typings.screeps.ERR_NO_PATH | typings.screeps.ERR_BUSY | typings.screeps.ERR_NAME_EXISTS | typings.screeps.ERR_NOT_FOUND | typings.screeps.ERR_NOT_ENOUGH_RESOURCES | typings.screeps.ERR_NOT_ENOUGH_ENERGY | typings.screeps.ERR_INVALID_TARGET | typings.screeps.ERR_FULL | typings.screeps.ERR_NOT_IN_RANGE | typings.screeps.ERR_INVALID_ARGS | typings.screeps.ERR_TIRED | typings.screeps.ERR_NO_BODYPART | typings.screeps.ERR_NOT_ENOUGH_EXTENSIONS | typings.screeps.ERR_RCL_NOT_ENOUGH | typings.screeps.ERR_GCL_NOT_ENOUGH
-  type Store[POSSIBLE_RESOURCES /* <: typings.screeps.ResourceConstant */, UNLIMITED_STORE /* <: scala.Boolean */] = (typings.screeps.StoreBase[POSSIBLE_RESOURCES, UNLIMITED_STORE]) with typings.screeps.screepsStrings.Store with js.Any
+  type Store[POSSIBLE_RESOURCES /* <: typings.screeps.ResourceConstant */, UNLIMITED_STORE /* <: scala.Boolean */] = (typings.screeps.StoreBase[POSSIBLE_RESOURCES, UNLIMITED_STORE]) with typings.screeps.screepsStrings.Store with org.scalablytyped.runtime.TopLevel[js.Any]
   type StructureConstant = typings.screeps.BuildableStructureConstant | typings.screeps.STRUCTURE_KEEPER_LAIR | typings.screeps.STRUCTURE_CONTROLLER | typings.screeps.STRUCTURE_POWER_BANK | typings.screeps.STRUCTURE_PORTAL | typings.screeps.STRUCTURE_INVADER_CORE
   type TERRAIN_MASK_LAVA = typings.screeps.screepsNumbers.`4`
   type TERRAIN_MASK_SWAMP = typings.screeps.screepsNumbers.`2`

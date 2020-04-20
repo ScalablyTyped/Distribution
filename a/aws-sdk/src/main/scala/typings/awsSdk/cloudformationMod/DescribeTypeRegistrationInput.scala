@@ -16,7 +16,6 @@ object DescribeTypeRegistrationInput {
   @scala.inline
   def apply(RegistrationToken: RegistrationToken): DescribeTypeRegistrationInput = {
     val __obj = js.Dynamic.literal(RegistrationToken = RegistrationToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTypeRegistrationInput]
   }
 }

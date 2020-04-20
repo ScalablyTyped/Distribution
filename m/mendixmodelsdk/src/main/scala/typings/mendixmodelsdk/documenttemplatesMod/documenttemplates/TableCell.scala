@@ -25,13 +25,13 @@ class TableCell protected () extends DropZone {
   ) = this()
   @JSName("model")
   var model_FTableCell: IModel = js.native
-  def colSpan(): Double = js.native
+  def colSpan: Double = js.native
   def colSpan(newValue: Double): js.Any = js.native
-  def isPartOfSpan(): Boolean = js.native
+  def isPartOfSpan: Boolean = js.native
   def isPartOfSpan(newValue: Boolean): js.Any = js.native
-  def rowSpan(): Double = js.native
+  def rowSpan: Double = js.native
   def rowSpan(newValue: Double): js.Any = js.native
-  def style(): Style = js.native
+  def style: Style = js.native
   def style(newValue: Style): js.Any = js.native
 }
 

@@ -24,7 +24,6 @@ object GatewaySmbActiveDirectorySettings {
   @scala.inline
   def apply(domainName: String, password: String, username: String): GatewaySmbActiveDirectorySettings = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GatewaySmbActiveDirectorySettings]
   }
 }

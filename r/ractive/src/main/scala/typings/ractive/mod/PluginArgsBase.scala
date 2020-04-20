@@ -13,7 +13,6 @@ object PluginArgsBase {
   @scala.inline
   def apply(Ractive: AnonInstantiable): PluginArgsBase = {
     val __obj = js.Dynamic.literal(Ractive = Ractive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginArgsBase]
   }
 }

@@ -16,7 +16,6 @@ object DisassociateRepositoryRequest {
   @scala.inline
   def apply(AssociationArn: Arn): DisassociateRepositoryRequest = {
     val __obj = js.Dynamic.literal(AssociationArn = AssociationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateRepositoryRequest]
   }
 }

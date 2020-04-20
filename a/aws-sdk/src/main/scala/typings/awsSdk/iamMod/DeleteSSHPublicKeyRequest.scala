@@ -20,7 +20,6 @@ object DeleteSSHPublicKeyRequest {
   @scala.inline
   def apply(SSHPublicKeyId: publicKeyIdType, UserName: userNameType): DeleteSSHPublicKeyRequest = {
     val __obj = js.Dynamic.literal(SSHPublicKeyId = SSHPublicKeyId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSSHPublicKeyRequest]
   }
 }

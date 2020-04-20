@@ -22,30 +22,28 @@ trait DataType extends js.Object
 
 object DataType {
   @scala.inline
-  def array: typings.ndarray.ndarrayStrings.array = this.cast("array")
+  def array: typings.ndarray.ndarrayStrings.array = "array".asInstanceOf[typings.ndarray.ndarrayStrings.array]
   @scala.inline
-  def buffer: typings.ndarray.ndarrayStrings.buffer = this.cast("buffer")
+  def buffer: typings.ndarray.ndarrayStrings.buffer = "buffer".asInstanceOf[typings.ndarray.ndarrayStrings.buffer]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def float32: typings.ndarray.ndarrayStrings.float32 = "float32".asInstanceOf[typings.ndarray.ndarrayStrings.float32]
   @scala.inline
-  def float32: typings.ndarray.ndarrayStrings.float32 = this.cast("float32")
+  def float64: typings.ndarray.ndarrayStrings.float64 = "float64".asInstanceOf[typings.ndarray.ndarrayStrings.float64]
   @scala.inline
-  def float64: typings.ndarray.ndarrayStrings.float64 = this.cast("float64")
+  def generic: typings.ndarray.ndarrayStrings.generic = "generic".asInstanceOf[typings.ndarray.ndarrayStrings.generic]
   @scala.inline
-  def generic: typings.ndarray.ndarrayStrings.generic = this.cast("generic")
+  def int16: typings.ndarray.ndarrayStrings.int16 = "int16".asInstanceOf[typings.ndarray.ndarrayStrings.int16]
   @scala.inline
-  def int16: typings.ndarray.ndarrayStrings.int16 = this.cast("int16")
+  def int32: typings.ndarray.ndarrayStrings.int32 = "int32".asInstanceOf[typings.ndarray.ndarrayStrings.int32]
   @scala.inline
-  def int32: typings.ndarray.ndarrayStrings.int32 = this.cast("int32")
+  def int8: typings.ndarray.ndarrayStrings.int8 = "int8".asInstanceOf[typings.ndarray.ndarrayStrings.int8]
   @scala.inline
-  def int8: typings.ndarray.ndarrayStrings.int8 = this.cast("int8")
+  def uint16: typings.ndarray.ndarrayStrings.uint16 = "uint16".asInstanceOf[typings.ndarray.ndarrayStrings.uint16]
   @scala.inline
-  def uint16: typings.ndarray.ndarrayStrings.uint16 = this.cast("uint16")
+  def uint32: typings.ndarray.ndarrayStrings.uint32 = "uint32".asInstanceOf[typings.ndarray.ndarrayStrings.uint32]
   @scala.inline
-  def uint32: typings.ndarray.ndarrayStrings.uint32 = this.cast("uint32")
+  def uint8: typings.ndarray.ndarrayStrings.uint8 = "uint8".asInstanceOf[typings.ndarray.ndarrayStrings.uint8]
   @scala.inline
-  def uint8: typings.ndarray.ndarrayStrings.uint8 = this.cast("uint8")
-  @scala.inline
-  def uint8_clamped: typings.ndarray.ndarrayStrings.uint8_clamped = this.cast("uint8_clamped")
+  def uint8_clamped: typings.ndarray.ndarrayStrings.uint8_clamped = "uint8_clamped".asInstanceOf[typings.ndarray.ndarrayStrings.uint8_clamped]
 }
 

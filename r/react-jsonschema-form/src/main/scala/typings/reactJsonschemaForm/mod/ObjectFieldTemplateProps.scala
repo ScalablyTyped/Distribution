@@ -39,7 +39,6 @@ object ObjectFieldTemplateProps {
     uiSchema: UiSchema
   ): ObjectFieldTemplateProps[T] = {
     val __obj = js.Dynamic.literal(DescriptionField = DescriptionField.asInstanceOf[js.Any], TitleField = TitleField.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], formContext = formContext.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], idSchema = idSchema.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uiSchema = uiSchema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectFieldTemplateProps[T]]
   }
 }

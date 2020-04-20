@@ -12,7 +12,6 @@ object PickerItemProps {
   @scala.inline
   def apply(children: String): PickerItemProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickerItemProps]
   }
 }

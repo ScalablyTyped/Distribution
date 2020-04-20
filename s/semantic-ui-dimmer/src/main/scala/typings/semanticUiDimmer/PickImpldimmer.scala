@@ -13,7 +13,6 @@ object PickImpldimmer {
   @scala.inline
   def apply(dimmer: String): PickImpldimmer = {
     val __obj = js.Dynamic.literal(dimmer = dimmer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldimmer]
   }
 }

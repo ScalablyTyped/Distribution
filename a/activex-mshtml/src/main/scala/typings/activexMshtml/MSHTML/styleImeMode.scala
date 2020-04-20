@@ -22,18 +22,16 @@ trait styleImeMode extends js.Object
 
 object styleImeMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleImeModeActive: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleImeModeActive: `1` = this.cast(1)
+  def styleImeModeAuto: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleImeModeAuto: `0` = this.cast(0)
+  def styleImeModeDisabled: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleImeModeDisabled: `3` = this.cast(3)
+  def styleImeModeInactive: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleImeModeInactive: `2` = this.cast(2)
+  def styleImeModeNotSet: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleImeModeNotSet: `4` = this.cast(4)
-  @scala.inline
-  def styleImeMode_Max: `2147483647` = this.cast(2147483647)
+  def styleImeMode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

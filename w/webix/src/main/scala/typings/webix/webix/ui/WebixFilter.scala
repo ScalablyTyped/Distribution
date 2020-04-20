@@ -22,7 +22,6 @@ object WebixFilter {
     setValue: (HTMLElement, js.Any) => js.Any
   ): WebixFilter = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction1(getValue), refresh = js.Any.fromFunction3(refresh), render = js.Any.fromFunction2(render), setValue = js.Any.fromFunction2(setValue))
-  
     __obj.asInstanceOf[WebixFilter]
   }
 }

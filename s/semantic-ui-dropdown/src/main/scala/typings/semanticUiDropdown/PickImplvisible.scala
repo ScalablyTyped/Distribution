@@ -13,7 +13,6 @@ object PickImplvisible {
   @scala.inline
   def apply(visible: String): PickImplvisible = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplvisible]
   }
 }

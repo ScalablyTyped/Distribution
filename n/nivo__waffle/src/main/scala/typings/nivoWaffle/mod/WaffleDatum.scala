@@ -14,7 +14,6 @@ object WaffleDatum {
   @scala.inline
   def apply(id: String | Double, label: String | Double, value: Double): WaffleDatum = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WaffleDatum]
   }
 }

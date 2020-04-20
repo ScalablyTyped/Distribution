@@ -22,7 +22,6 @@ object IUnicodeVersionProvider {
   @scala.inline
   def apply(version: String, wcwidth: Double => `0` | `1` | `2`): IUnicodeVersionProvider = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any], wcwidth = js.Any.fromFunction1(wcwidth))
-  
     __obj.asInstanceOf[IUnicodeVersionProvider]
   }
 }

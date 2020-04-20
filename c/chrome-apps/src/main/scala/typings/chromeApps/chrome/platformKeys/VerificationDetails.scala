@@ -19,7 +19,6 @@ object VerificationDetails {
   @scala.inline
   def apply(hostname: String, serverCertificateChain: js.Array[ArrayBuffer]): VerificationDetails = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], serverCertificateChain = serverCertificateChain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerificationDetails]
   }
 }

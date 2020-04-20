@@ -16,7 +16,6 @@ object SnapshotClientDeps {
   @scala.inline
   def apply(app: AnonIdString, client: IClient, token: String): SnapshotClientDeps = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SnapshotClientDeps]
   }
 }

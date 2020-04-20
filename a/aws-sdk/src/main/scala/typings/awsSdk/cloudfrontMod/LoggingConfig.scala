@@ -28,7 +28,6 @@ object LoggingConfig {
   @scala.inline
   def apply(Bucket: String, Enabled: Boolean, IncludeCookies: Boolean, Prefix: String): LoggingConfig = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], IncludeCookies = IncludeCookies.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoggingConfig]
   }
 }

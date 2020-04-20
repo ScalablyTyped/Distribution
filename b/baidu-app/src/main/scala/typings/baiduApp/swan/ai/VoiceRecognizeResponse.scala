@@ -12,7 +12,6 @@ object VoiceRecognizeResponse {
   @scala.inline
   def apply(result: String): VoiceRecognizeResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoiceRecognizeResponse]
   }
 }

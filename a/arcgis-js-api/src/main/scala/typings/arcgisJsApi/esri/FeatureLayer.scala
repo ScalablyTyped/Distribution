@@ -10,7 +10,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
-import typings.arcgisJsApi.arcgisJsApiStrings.stream
 import typings.std.Date
 import typings.std.FormData
 import typings.std.HTMLFormElement
@@ -82,7 +81,7 @@ trait FeatureLayer
     */
   var featureReduction: FeatureReductionCluster | FeatureReductionSelection = js.native
   /**
-    * An array of fields in the layer. Each field represents an attribute that may contain a value for each feature in the layer. For example, a field named `POP_2015`, stores information about total population as a numeric value for each feature; this value represents the total number of people living within the geographic bounds of the feature.  This property must be set in the constructor when creating a FeatureLayer from client-side [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html). To create FeatureLayers from client-side features you must also set the [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source), [objectIdField](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField), [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#spatialReference), [geometryType](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType), [renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#renderer), and [type](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#type) properties.
+    * An array of fields in the layer. Each field represents an attribute that may contain a value for each feature in the layer. For example, a field named `POP_2015`, stores information about total population as a numeric value for each feature; this value represents the total number of people living within the geographic bounds of the feature.  When creating a FeatureLayer from [client-side features](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#client-side), this property should be set in the constructor along with the [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property. The `objectId` field also must be set either in this array or in the [objectIdField](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields)
     */
@@ -100,7 +99,7 @@ trait FeatureLayer
     */
   var gdbVersion: String = js.native
   /**
-    * The geometry type of features in the layer. All features must be of the same type. This property is read-only when the layer is created from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url).  When creating a FeatureLayer from client-side features, this property is inferred by the geometryType of the features provided in the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.
+    * The geometry type of features in the layer. All features must be of the same type. This property is read-only when the layer is created from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url).  When creating a FeatureLayer from [client-side features](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#client-side), this property is inferred by the geometryType of the features provided in the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property. If the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) is an empty array at the time of initialization, this property must be set.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType)
     */
@@ -112,7 +111,7 @@ trait FeatureLayer
     *
     * @default undefined
     */
-  val hasM: Boolean = js.native
+  var hasM: Boolean = js.native
   /**
     * Indicates whether the client-side features in the layer have `Z` (elevation) values. Refer to [elevationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#elevationInfo) for details regarding placement and rendering of features with z-values in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Use the `supportsZ` property in the FeatureLayer's [capabilities.data](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) object to verify if `Z` values are supported on [feature service](https://developers.arcgis.com/rest/services-reference/feature-service.htm) features.
     *
@@ -120,7 +119,7 @@ trait FeatureLayer
     *
     * @default undefined
     */
-  val hasZ: Boolean = js.native
+  var hasZ: Boolean = js.native
   /**
     * The historic moment to query. If historicMoment is not specified, the query will apply to the current features.
     *
@@ -173,7 +172,7 @@ trait FeatureLayer
     */
   var legendEnabled: Boolean = js.native
   /**
-    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) containing a unique value or identifier for each feature in the layer. This is required when constructing a FeatureLayer from a collection of client-side [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) containing a unique value or identifier for each feature in the layer. This property is required when constructing a FeatureLayer from a collection of [client-side features](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#client-side). If not specified, it will be inferred from the [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) array.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField)
     */
@@ -221,7 +220,7 @@ trait FeatureLayer
     */
   var returnM: Boolean = js.native
   /**
-    * When `true`, indicates that Z values will always be returned. When `false`, indicates that Z values will never be returned. The layer view determines whether to include Z values in feature queries when the property value is `undefined`.
+    * When `true`, indicates that z-values will always be returned. When `false`, indicates that z-values will never be returned. The layer view determines whether to include z-values in feature queries when the property value is `undefined`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#returnZ)
     *
@@ -238,7 +237,7 @@ trait FeatureLayer
     */
   var screenSizePerspectiveEnabled: Boolean = js.native
   /**
-    * A collection of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) objects used to create a FeatureLayer. The geometry of each feature all must have a matching [geometryType](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType). This property should only be used when creating a FeatureLayer from client-side features. When creating a FeatureLayer from client-side features, the [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields), [objectIdField](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField), [renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#renderer), and [type](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#type) properties must also be set.  Use [applyEdits()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits) method to add, remove, and update features from a layer at runtime. Once `applyEdits()` resolves successfully, use [queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures) to return updated features.  The [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#spatialReference) and [geometryType](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType) properties are determined based on the features provided to this property.
+    * A collection of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) objects used to create a FeatureLayer. The geometry of each feature all must have a matching [geometryType](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType). This property must be set when creating a FeatureLayer from [client-side features](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#client-side). When creating a FeatureLayer from client-side features, the `objectId` field must be set either in the [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) array or via [objectIdField](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField).  The [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#spatialReference) and [geometryType](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType) properties are determined based on the features provided to this property. If the `source` is an empty array at the time of layer initialization, then [geometryType](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType) must be set.  Use [applyEdits()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits) method to add, remove, and update features from a client-side feature layer at runtime. Once `applyEdits()` resolves successfully, use [queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures) to return updated features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source)
     */
@@ -273,7 +272,7 @@ trait FeatureLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#type)
     */
   @JSName("type")
-  val type_FeatureLayer: feature | stream = js.native
+  val type_FeatureLayer: feature = js.native
   /**
     * An array of subtypes defined in the feature service exposed by ArcGIS REST API. Each item includes information about the type, such as the type ID, name, and definition expression.
     *
@@ -305,6 +304,7 @@ trait FeatureLayer
   def addAttachment(feature: Graphic, attachment: HTMLFormElement): js.Promise[FeatureEditResult] = js.native
   /**
     * Applies edits to features in a layer. New features can be created and existing features can be updated or deleted. Feature geometries and/or attributes may be modified. Only applicable to layers in a [feature service](https://developers.arcgis.com/rest/services-reference/feature-service.htm) and client-side features set through the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source).  If client-side features are added, removed or updated at runtime using [applyEdits()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits) then use [queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures) to return updated features.
+    * > When apply edits to a service with z-values and no [vertical coordinate system](https://pro.arcgis.com/en/pro-app/help/mapping/properties/vertical-coordinate-systems.htm) information, the z-values will automatically be converted to match the [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference) units. Example: The service has a horizontal spatial reference using `feet` units and the apply edits is made with `outSpatialReference` based on `meter` units, then [applyEdits()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits) automatically converts the values from `meter` to `feet` units.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     *
@@ -318,7 +318,7 @@ trait FeatureLayer
     * @param options Additional edit options to specify when editing features or attachments.
     * @param options.gdbVersion The geodatabase version to apply the edits. This parameter applies only if the [capabilities.data.isVersioned](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property of the layer is `true`. If the gdbVersion parameter is not specified, edits are made to the published map’s version.
     * @param options.rollbackOnFailureEnabled Indicates whether the edits should be applied only if all submitted edits succeed. If `false`, the server will apply the edits that succeed even if some of the submitted edits fail. If `true`, the server will apply the edits only if all edits succeed. The layer's [capabilities.editing.supportsRollbackOnFailure](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property must be `true` if using this parameter. If `supportsRollbackOnFailure` is `false` for a layer, then `rollbackOnFailureEnabled` will always be true, regardless of how the parameter is set.
-    * @param options.globalIdUsed Indicates whether the edits can be applied using globalIds of features or attachments. This parameter applies only if the layer's [capabilities.editing.supportsGlobalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property is `true`. When `false`, globalIds submitted with the features are ignored and the service assigns new globalIds to the new features. When `true`, the globalIds must be submitted with the new features. When updating or deleting existing features, if the `globalIdUsed` is `false`, the objectIds of the features to be updated or deleted must be provided. If the `globalIdUsed` is `true`, globalIds of features to be updated or deleted must be provided.  When adding, updating or deleting attachments, `globalIdUsed` parameter must be set to `true` and the attachment globalId must be set. For new attachments, the user must provide globalIds. In order for an attachment to be updated or deleted, clients must include its globalId.  Attachments are not supported in an edit payload when `globalIdUsed` is `false`.
+    * @param options.globalIdUsed Indicates whether the edits can be applied using globalIds of features or attachments. This parameter applies only if the layer's [capabilities.editing.supportsGlobalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property is `true`. When `false`, globalIds submitted with the features are ignored and the service assigns new globalIds to the new features. When `true`, the globalIds must be submitted with the new features. When updating existing features, if the `globalIdUsed` is `false`, the objectIds of the features to be updated must be provided. If the `globalIdUsed` is `true`, globalIds of features to be updated must be provided. When deleting existing features, set this property to `false` as deletes operation only accepts `objectIds` at the current version of the API.  When adding, updating or deleting attachments, `globalIdUsed` parameter must be set to `true` and the attachment globalId must be set. For new attachments, the user must provide globalIds. In order for an attachment to be updated or deleted, clients must include its globalId.  Attachments are not supported in an edit payload when `globalIdUsed` is `false`.
     *
     */
   def applyEdits(edits: FeatureLayerApplyEditsEdits): js.Promise[_] = js.native
@@ -435,6 +435,7 @@ trait FeatureLayer
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html), which can be accessed using the `.then()` method once the promise resolves. A [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) contains an array of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) features. See the [querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#querying) section for more information on how to query features from a layer.
     * > To query features/graphics available to or visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) on the client rather than making a server-side query, you must use the [FeatureLayerView.queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures) method.
+    * > When querying a service with z-values and no [vertical coordinate system](https://pro.arcgis.com/en/pro-app/help/mapping/properties/vertical-coordinate-systems.htm) information, the z-values will automatically be converted to match the [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference) units. Example: The service has a horizontal spatial reference using `feet` units and the query is made with `outSpatialReference` based on `meter` units, then [queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures) automatically converts the values from `feet` to `meter` units.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures)
     *

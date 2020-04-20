@@ -13,7 +13,6 @@ object DeclarativeTableProperties {
   @scala.inline
   def apply(columns: js.Array[DeclarativeTableColumn], data: js.Array[js.Array[_]]): DeclarativeTableProperties = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeclarativeTableProperties]
   }
 }

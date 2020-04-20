@@ -17,13 +17,11 @@ object LineHeight {
   @scala.inline
   def AnonUnit(unit: PIXELS | PERCENT, value: Double): LineHeight = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LineHeight]
   }
   @scala.inline
   def Anon0(unit: AUTO): LineHeight = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LineHeight]
   }
 }

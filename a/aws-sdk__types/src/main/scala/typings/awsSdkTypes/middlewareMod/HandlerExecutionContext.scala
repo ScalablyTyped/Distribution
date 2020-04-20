@@ -23,7 +23,6 @@ object HandlerExecutionContext {
   @scala.inline
   def apply(logger: Logger, model: OperationModel): HandlerExecutionContext = {
     val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HandlerExecutionContext]
   }
 }

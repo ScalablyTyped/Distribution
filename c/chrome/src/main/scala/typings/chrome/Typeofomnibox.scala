@@ -30,7 +30,6 @@ object Typeofomnibox {
     setDefaultSuggestion: Suggestion => Unit
   ): Typeofomnibox = {
     val __obj = js.Dynamic.literal(onDeleteSuggestion = onDeleteSuggestion.asInstanceOf[js.Any], onInputCancelled = onInputCancelled.asInstanceOf[js.Any], onInputChanged = onInputChanged.asInstanceOf[js.Any], onInputEntered = onInputEntered.asInstanceOf[js.Any], onInputStarted = onInputStarted.asInstanceOf[js.Any], setDefaultSuggestion = js.Any.fromFunction1(setDefaultSuggestion))
-  
     __obj.asInstanceOf[Typeofomnibox]
   }
 }

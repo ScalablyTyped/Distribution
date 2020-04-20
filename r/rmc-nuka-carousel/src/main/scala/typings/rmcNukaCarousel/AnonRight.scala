@@ -24,7 +24,6 @@ object AnonRight {
     transform: String
   ): AnonRight = {
     val __obj = js.Dynamic.literal(WebkitTransform = WebkitTransform.asInstanceOf[js.Any], msTransform = msTransform.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRight]
   }
 }

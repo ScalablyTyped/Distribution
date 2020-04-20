@@ -30,7 +30,6 @@ object WebNavigationTransitionCallbackDetails {
     url: String
   ): WebNavigationTransitionCallbackDetails = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], transitionQualifiers = transitionQualifiers.asInstanceOf[js.Any], transitionType = transitionType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebNavigationTransitionCallbackDetails]
   }
 }

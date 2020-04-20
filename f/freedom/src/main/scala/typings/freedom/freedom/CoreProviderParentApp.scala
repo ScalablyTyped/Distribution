@@ -19,7 +19,6 @@ object CoreProviderParentApp {
   @scala.inline
   def apply(config: AnonViews, global: AnonRemoveEventListener, manifestId: String): CoreProviderParentApp = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], manifestId = manifestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CoreProviderParentApp]
   }
 }

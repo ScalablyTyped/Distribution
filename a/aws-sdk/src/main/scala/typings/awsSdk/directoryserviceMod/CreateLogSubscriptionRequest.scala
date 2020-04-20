@@ -20,7 +20,6 @@ object CreateLogSubscriptionRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, LogGroupName: LogGroupName): CreateLogSubscriptionRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], LogGroupName = LogGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateLogSubscriptionRequest]
   }
 }

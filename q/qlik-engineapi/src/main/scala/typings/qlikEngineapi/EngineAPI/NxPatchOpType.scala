@@ -13,12 +13,10 @@ trait NxPatchOpType extends js.Object
 
 object NxPatchOpType {
   @scala.inline
-  def Add: typings.qlikEngineapi.qlikEngineapiStrings.Add = this.cast("Add")
+  def Add: typings.qlikEngineapi.qlikEngineapiStrings.Add = "Add".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Add]
   @scala.inline
-  def Remove: typings.qlikEngineapi.qlikEngineapiStrings.Remove = this.cast("Remove")
+  def Remove: typings.qlikEngineapi.qlikEngineapiStrings.Remove = "Remove".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Remove]
   @scala.inline
-  def Replace: typings.qlikEngineapi.qlikEngineapiStrings.Replace = this.cast("Replace")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Replace: typings.qlikEngineapi.qlikEngineapiStrings.Replace = "Replace".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Replace]
 }
 

@@ -15,7 +15,6 @@ object AddMessageActionParameters {
   @scala.inline
   def apply(action: AnonValue, channel: String, messageTimetoken: String): AddMessageActionParameters = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], messageTimetoken = messageTimetoken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddMessageActionParameters]
   }
 }

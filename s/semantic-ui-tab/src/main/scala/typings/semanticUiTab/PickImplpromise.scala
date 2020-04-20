@@ -13,7 +13,6 @@ object PickImplpromise {
   @scala.inline
   def apply(promise: String): PickImplpromise = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpromise]
   }
 }

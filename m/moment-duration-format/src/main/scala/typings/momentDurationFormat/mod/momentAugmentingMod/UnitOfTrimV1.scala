@@ -12,10 +12,8 @@ trait UnitOfTrimV1 extends js.Object
 
 object UnitOfTrimV1 {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.momentDurationFormat.momentDurationFormatStrings.left = "left".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.left]
   @scala.inline
-  def left: typings.momentDurationFormat.momentDurationFormatStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.momentDurationFormat.momentDurationFormatStrings.right = this.cast("right")
+  def right: typings.momentDurationFormat.momentDurationFormatStrings.right = "right".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.right]
 }
 

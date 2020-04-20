@@ -15,7 +15,6 @@ object FailedKeymapFileReadEvent {
   @scala.inline
   def apply(message: String, stack: String): FailedKeymapFileReadEvent = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FailedKeymapFileReadEvent]
   }
 }

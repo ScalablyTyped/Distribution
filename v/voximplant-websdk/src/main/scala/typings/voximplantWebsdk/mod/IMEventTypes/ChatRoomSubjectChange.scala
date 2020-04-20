@@ -31,7 +31,6 @@ object ChatRoomSubjectChange {
   @scala.inline
   def apply(id: String, resource: String, room: String, subject: String): ChatRoomSubjectChange = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChatRoomSubjectChange]
   }
 }

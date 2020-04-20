@@ -13,12 +13,10 @@ trait DataCenterName extends js.Object
 
 object DataCenterName {
   @scala.inline
-  def Amazon: typings.eurekaJsClient.eurekaJsClientStrings.Amazon = this.cast("Amazon")
+  def Amazon: typings.eurekaJsClient.eurekaJsClientStrings.Amazon = "Amazon".asInstanceOf[typings.eurekaJsClient.eurekaJsClientStrings.Amazon]
   @scala.inline
-  def MyOwn: typings.eurekaJsClient.eurekaJsClientStrings.MyOwn = this.cast("MyOwn")
+  def MyOwn: typings.eurekaJsClient.eurekaJsClientStrings.MyOwn = "MyOwn".asInstanceOf[typings.eurekaJsClient.eurekaJsClientStrings.MyOwn]
   @scala.inline
-  def Netflix: typings.eurekaJsClient.eurekaJsClientStrings.Netflix = this.cast("Netflix")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Netflix: typings.eurekaJsClient.eurekaJsClientStrings.Netflix = "Netflix".asInstanceOf[typings.eurekaJsClient.eurekaJsClientStrings.Netflix]
 }
 

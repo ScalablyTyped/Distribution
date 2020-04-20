@@ -23,7 +23,6 @@ object IBitmapDecoder {
     getPreviewAsync: () => IAsyncOperation[ImageStream]
   ): IBitmapDecoder = {
     val __obj = js.Dynamic.literal(bitmapContainerProperties = bitmapContainerProperties.asInstanceOf[js.Any], decoderInformation = decoderInformation.asInstanceOf[js.Any], frameCount = frameCount.asInstanceOf[js.Any], getFrameAsync = js.Any.fromFunction1(getFrameAsync), getPreviewAsync = js.Any.fromFunction0(getPreviewAsync))
-  
     __obj.asInstanceOf[IBitmapDecoder]
   }
 }

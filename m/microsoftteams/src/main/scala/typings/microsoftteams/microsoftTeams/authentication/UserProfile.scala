@@ -92,7 +92,6 @@ object UserProfile {
     ver: String
   ): UserProfile = {
     val __obj = js.Dynamic.literal(amr = amr.asInstanceOf[js.Any], aud = aud.asInstanceOf[js.Any], exp = exp.asInstanceOf[js.Any], family_name = family_name.asInstanceOf[js.Any], given_name = given_name.asInstanceOf[js.Any], iat = iat.asInstanceOf[js.Any], iss = iss.asInstanceOf[js.Any], nbf = nbf.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], tid = tid.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], upn = upn.asInstanceOf[js.Any], ver = ver.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserProfile]
   }
 }

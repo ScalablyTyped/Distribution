@@ -28,7 +28,6 @@ object ActivityLifecycleCallbacks {
     onActivityStopped: Activity => Unit
   ): ActivityLifecycleCallbacks = {
     val __obj = js.Dynamic.literal(onActivityCreated = js.Any.fromFunction2(onActivityCreated), onActivityDestroyed = js.Any.fromFunction1(onActivityDestroyed), onActivityPaused = js.Any.fromFunction1(onActivityPaused), onActivityResumed = js.Any.fromFunction1(onActivityResumed), onActivitySaveInstanceState = js.Any.fromFunction2(onActivitySaveInstanceState), onActivityStarted = js.Any.fromFunction1(onActivityStarted), onActivityStopped = js.Any.fromFunction1(onActivityStopped))
-  
     __obj.asInstanceOf[ActivityLifecycleCallbacks]
   }
 }

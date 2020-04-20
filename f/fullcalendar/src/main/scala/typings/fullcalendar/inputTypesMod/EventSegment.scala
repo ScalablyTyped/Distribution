@@ -17,7 +17,6 @@ object EventSegment {
   @scala.inline
   def apply(end: Moment, event: EventObjectInput, isEnd: Boolean, isStart: Boolean, start: Moment): EventSegment = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], isEnd = isEnd.asInstanceOf[js.Any], isStart = isStart.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventSegment]
   }
 }

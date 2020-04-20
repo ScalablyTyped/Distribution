@@ -16,7 +16,6 @@ object DeleteDirectConnectGatewayAssociationProposalRequest {
   @scala.inline
   def apply(proposalId: DirectConnectGatewayAssociationProposalId): DeleteDirectConnectGatewayAssociationProposalRequest = {
     val __obj = js.Dynamic.literal(proposalId = proposalId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDirectConnectGatewayAssociationProposalRequest]
   }
 }

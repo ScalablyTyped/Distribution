@@ -13,7 +13,6 @@ object GetFunctionTracingConfig {
   @scala.inline
   def apply(mode: String): GetFunctionTracingConfig = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFunctionTracingConfig]
   }
 }

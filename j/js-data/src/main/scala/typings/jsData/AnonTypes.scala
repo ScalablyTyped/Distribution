@@ -13,7 +13,6 @@ object AnonTypes {
   @scala.inline
   def apply(defaults: js.Array[js.Object], types: js.Array[_]): AnonTypes = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTypes]
   }
 }

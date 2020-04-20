@@ -1,8 +1,8 @@
 package typings.cypress
 
-import typings.cypress.cypressMod.Cypress.Offset
 import typings.cypress.cypressStrings.linear
 import typings.cypress.cypressStrings.swing
+import typings.cypress.mod.Cypress.Offset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

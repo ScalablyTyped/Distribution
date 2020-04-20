@@ -30,7 +30,6 @@ object AnonLabelHalign {
     svgStyle: js.Object
   ): AnonLabelHalign = {
     val __obj = js.Dynamic.literal(labelHalign = labelHalign.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], maximizedSvgStyle = maximizedSvgStyle.asInstanceOf[js.Any], minimizedSvgStyle = minimizedSvgStyle.asInstanceOf[js.Any], showCount = showCount.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLabelHalign]
   }
 }

@@ -13,7 +13,6 @@ object StyledArtworkContainerPropsT {
   @scala.inline
   def apply($artworkSize: ArtworkSizesT): StyledArtworkContainerPropsT = {
     val __obj = js.Dynamic.literal($artworkSize = $artworkSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StyledArtworkContainerPropsT]
   }
 }

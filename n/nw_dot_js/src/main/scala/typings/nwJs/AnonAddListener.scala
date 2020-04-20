@@ -19,7 +19,6 @@ object AnonAddListener {
   @scala.inline
   def apply(addListener: js.Function1[/* changeInfo */ CookiesOnChangedCallbackChangeInfo, Unit] => Unit): AnonAddListener = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener))
-  
     __obj.asInstanceOf[AnonAddListener]
   }
 }

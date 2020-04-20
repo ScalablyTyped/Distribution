@@ -12,7 +12,6 @@ object Props {
   @scala.inline
   def apply(stories: js.Any): Props = {
     val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Props]
   }
 }

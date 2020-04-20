@@ -12,7 +12,6 @@ object PlanGateway {
   @scala.inline
   def apply(all: () => js.Promise[js.Array[Plan]]): PlanGateway = {
     val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all))
-  
     __obj.asInstanceOf[PlanGateway]
   }
 }

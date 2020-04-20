@@ -12,7 +12,6 @@ object AnonEnumValuesAnonBacklogInError {
   @scala.inline
   def apply(enumValues: AnonBacklogInError): AnonEnumValuesAnonBacklogInError = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonBacklogInError]
   }
 }

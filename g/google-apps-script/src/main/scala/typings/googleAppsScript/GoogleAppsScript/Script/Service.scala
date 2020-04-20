@@ -17,7 +17,6 @@ object Service {
   @scala.inline
   def apply(disable: () => Unit, getUrl: () => String, isEnabled: () => Boolean): Service = {
     val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), getUrl = js.Any.fromFunction0(getUrl), isEnabled = js.Any.fromFunction0(isEnabled))
-  
     __obj.asInstanceOf[Service]
   }
 }

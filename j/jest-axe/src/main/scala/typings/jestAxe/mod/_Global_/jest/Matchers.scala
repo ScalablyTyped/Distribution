@@ -12,7 +12,6 @@ object Matchers {
   @scala.inline
   def apply[R, T](toHaveNoViolations: () => R): Matchers[R, T] = {
     val __obj = js.Dynamic.literal(toHaveNoViolations = js.Any.fromFunction0(toHaveNoViolations))
-  
     __obj.asInstanceOf[Matchers[R, T]]
   }
 }

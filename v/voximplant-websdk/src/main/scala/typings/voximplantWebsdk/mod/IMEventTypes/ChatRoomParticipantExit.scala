@@ -23,7 +23,6 @@ object ChatRoomParticipantExit {
   @scala.inline
   def apply(participant: String, room: String): ChatRoomParticipantExit = {
     val __obj = js.Dynamic.literal(participant = participant.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChatRoomParticipantExit]
   }
 }

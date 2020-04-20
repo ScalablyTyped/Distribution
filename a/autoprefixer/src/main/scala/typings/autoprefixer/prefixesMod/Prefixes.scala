@@ -14,7 +14,6 @@ object Prefixes {
   @scala.inline
   def apply(remove: StringDictionary[js.Any], unprefixed: String => String): Prefixes = {
     val __obj = js.Dynamic.literal(remove = remove.asInstanceOf[js.Any], unprefixed = js.Any.fromFunction1(unprefixed))
-  
     __obj.asInstanceOf[Prefixes]
   }
 }

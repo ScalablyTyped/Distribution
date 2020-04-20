@@ -24,20 +24,18 @@ trait WdConstants extends js.Object
 
 object WdConstants {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAutoPosition: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdAutoPosition: `0` = this.cast(0)
+  def wdBackward: `-1073741823` = -1073741823.asInstanceOf[`-1073741823`]
   @scala.inline
-  def wdBackward: `-1073741823` = this.cast(-1073741823)
+  def wdCreatorCode: `1297307460` = 1297307460.asInstanceOf[`1297307460`]
   @scala.inline
-  def wdCreatorCode: `1297307460` = this.cast(1297307460)
+  def wdFirst: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdFirst: `1` = this.cast(1)
+  def wdForward: `1073741823` = 1073741823.asInstanceOf[`1073741823`]
   @scala.inline
-  def wdForward: `1073741823` = this.cast(1073741823)
+  def wdToggle: `9999998` = 9999998.asInstanceOf[`9999998`]
   @scala.inline
-  def wdToggle: `9999998` = this.cast(9999998)
-  @scala.inline
-  def wdUndefined: `9999999` = this.cast(9999999)
+  def wdUndefined: `9999999` = 9999999.asInstanceOf[`9999999`]
 }
 

@@ -42,7 +42,6 @@ object LogEvent {
   @scala.inline
   def apply(bindings: js.Array[Bindings], level: AnonLabel, messages: js.Array[_], ts: Double): LogEvent = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogEvent]
   }
 }

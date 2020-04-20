@@ -24,7 +24,6 @@ object AssociateLinkRequest {
   @scala.inline
   def apply(DeviceId: String, GlobalNetworkId: String, LinkId: String): AssociateLinkRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any], LinkId = LinkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateLinkRequest]
   }
 }

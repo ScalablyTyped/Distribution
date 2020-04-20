@@ -30,7 +30,6 @@ object KnockoutVirtualElements {
     setDomNodeChildren: (KnockoutVirtualElement, AnonDictindex) => Unit
   ): KnockoutVirtualElements = {
     val __obj = js.Dynamic.literal(allowedBindings = allowedBindings.asInstanceOf[js.Any], childNodes = js.Any.fromFunction1(childNodes), emptyNode = js.Any.fromFunction1(emptyNode), firstChild = js.Any.fromFunction1(firstChild), insertAfter = js.Any.fromFunction3(insertAfter), nextSibling = js.Any.fromFunction1(nextSibling), prepend = js.Any.fromFunction2(prepend), setDomNodeChildren = js.Any.fromFunction2(setDomNodeChildren))
-  
     __obj.asInstanceOf[KnockoutVirtualElements]
   }
 }

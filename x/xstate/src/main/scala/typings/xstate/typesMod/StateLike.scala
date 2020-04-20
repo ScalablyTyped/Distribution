@@ -20,7 +20,6 @@ object StateLike {
     value: StateValue
   ): StateLike[TContext] = {
     val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StateLike[TContext]]
   }
 }

@@ -25,7 +25,6 @@ object AnonLENOFFSET {
     VERSION: AnonDEFAULT
   ): AnonLENOFFSET = {
     val __obj = js.Dynamic.literal(LEN_OFFSET = LEN_OFFSET.asInstanceOf[js.Any], LEVEL = LEVEL.asInstanceOf[js.Any], PIXEL_SIZE = PIXEL_SIZE.asInstanceOf[js.Any], PRINTBUF = PRINTBUF.asInstanceOf[js.Any], SAVEBUF = SAVEBUF.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLENOFFSET]
   }
 }

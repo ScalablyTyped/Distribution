@@ -20,7 +20,6 @@ object BootstrapActionConfig {
   @scala.inline
   def apply(Name: XmlStringMaxLen256, ScriptBootstrapAction: ScriptBootstrapActionConfig): BootstrapActionConfig = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ScriptBootstrapAction = ScriptBootstrapAction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapActionConfig]
   }
 }

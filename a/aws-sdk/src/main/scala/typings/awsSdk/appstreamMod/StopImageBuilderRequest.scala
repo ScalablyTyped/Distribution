@@ -16,7 +16,6 @@ object StopImageBuilderRequest {
   @scala.inline
   def apply(Name: String): StopImageBuilderRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopImageBuilderRequest]
   }
 }

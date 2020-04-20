@@ -13,7 +13,6 @@ object ILOGIN_ERROR {
   @scala.inline
   def apply(errorCode: Double, errorMessage: String): ILOGIN_ERROR = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILOGIN_ERROR]
   }
 }

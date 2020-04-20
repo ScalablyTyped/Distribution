@@ -16,7 +16,6 @@ object AnonFilterOption {
     optionFilterProp: String
   ): AnonFilterOption = {
     val __obj = js.Dynamic.literal(filterOption = filterOption.asInstanceOf[js.Any], optionFilterProp = optionFilterProp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFilterOption]
   }
 }

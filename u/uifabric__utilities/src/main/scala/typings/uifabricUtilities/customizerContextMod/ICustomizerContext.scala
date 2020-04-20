@@ -13,7 +13,6 @@ object ICustomizerContext {
   @scala.inline
   def apply(customizations: ICustomizations): ICustomizerContext = {
     val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICustomizerContext]
   }
 }

@@ -19,7 +19,6 @@ object CommentIterationContext {
   @scala.inline
   def apply(firstComparingIteration: Double, secondComparingIteration: Double): CommentIterationContext = {
     val __obj = js.Dynamic.literal(firstComparingIteration = firstComparingIteration.asInstanceOf[js.Any], secondComparingIteration = secondComparingIteration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommentIterationContext]
   }
 }

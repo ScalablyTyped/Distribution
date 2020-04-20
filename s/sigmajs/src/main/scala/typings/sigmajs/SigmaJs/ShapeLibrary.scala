@@ -12,7 +12,6 @@ object ShapeLibrary {
   @scala.inline
   def apply(enumerate: () => js.Any): ShapeLibrary = {
     val __obj = js.Dynamic.literal(enumerate = js.Any.fromFunction0(enumerate))
-  
     __obj.asInstanceOf[ShapeLibrary]
   }
 }

@@ -32,7 +32,7 @@ object channelGroupMod extends js.Object {
     def addPerm(perm: Double, value: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
     def addPerm(perm: Double, value: Double, skip: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
     def addPerm(perm: Double, value: Double, skip: Double, negate: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
-    def cgid(): Double = js.native
+    def cgid: Double = js.native
     /**
       * returns the ids of all clients currently residing in the channelgroup
       * @param cid the channel id
@@ -64,12 +64,12 @@ object channelGroupMod extends js.Object {
     def getIcon(): js.Promise[Buffer] = js.native
     /** gets the icon name of the channelgroup */
     def getIconName(): js.Promise[String] = js.native
-    def iconid(): Double = js.native
-    def nMemberAddp(): Double = js.native
-    def nMemberRemovep(): Double = js.native
-    def nModifyp(): Double = js.native
-    def name(): String = js.native
-    def namemode(): Double = js.native
+    def iconid: Double = js.native
+    def nMemberAddp: Double = js.native
+    def nMemberRemovep: Double = js.native
+    def nModifyp: Double = js.native
+    def name: String = js.native
+    def namemode: Double = js.native
     /**
       * returns a list of permissions assigned to the channel group specified with cgid.
       * @param permsid if the permsid option is set to true the output will contain the permission names
@@ -81,15 +81,15 @@ object channelGroupMod extends js.Object {
       * @param name new name of the group
       */
     def rename(name: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
-    def savedb(): Double = js.native
+    def savedb: Double = js.native
     /**
       * sets the channel group of a client
       * @param cid the channel in which the client should be assigned the Group
       * @param cldbid the client database id which should be added to the Group
       */
     def setClient(cid: Double, cldbid: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
-    def sortid(): Double = js.native
-    def `type`(): Double = js.native
+    def sortid: Double = js.native
+    def `type`: Double = js.native
   }
   
 }

@@ -13,7 +13,6 @@ object ContainerSize {
   @scala.inline
   def apply(containerHeight: Double, containerWidth: Double): ContainerSize = {
     val __obj = js.Dynamic.literal(containerHeight = containerHeight.asInstanceOf[js.Any], containerWidth = containerWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContainerSize]
   }
 }

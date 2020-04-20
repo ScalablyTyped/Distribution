@@ -14,7 +14,6 @@ object AnonEmpty {
   @scala.inline
   def apply[Finite, Tuple /* <: js.Array[_] */, Infinite](empty: Finite, infinite: Infinite, nonEmpty: js.Any): AnonEmpty[Finite, Tuple, Infinite] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmpty[Finite, Tuple, Infinite]]
   }
 }

@@ -26,7 +26,6 @@ object Device {
     update: (Query, js.Object, CbCallback) => Unit
   ): Device = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], create = js.Any.fromFunction2(create), delete = js.Any.fromFunction2(delete), fetch = js.Any.fromFunction2(fetch), systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any], update = js.Any.fromFunction3(update))
-  
     __obj.asInstanceOf[Device]
   }
 }

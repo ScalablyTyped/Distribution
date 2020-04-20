@@ -18,7 +18,6 @@ object ICommInfoReply {
   @scala.inline
   def apply(comms: StringDictionary[AnonTargetnameString], status: ok): ICommInfoReply = {
     val __obj = js.Dynamic.literal(comms = comms.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICommInfoReply]
   }
 }

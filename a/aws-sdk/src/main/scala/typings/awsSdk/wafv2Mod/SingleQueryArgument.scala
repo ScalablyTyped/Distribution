@@ -16,7 +16,6 @@ object SingleQueryArgument {
   @scala.inline
   def apply(Name: FieldToMatchData): SingleQueryArgument = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SingleQueryArgument]
   }
 }

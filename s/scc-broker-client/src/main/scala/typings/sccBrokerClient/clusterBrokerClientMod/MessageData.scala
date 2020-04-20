@@ -13,7 +13,6 @@ object MessageData {
   @scala.inline
   def apply(channelName: String, packet: js.Any): MessageData = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any], packet = packet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageData]
   }
 }

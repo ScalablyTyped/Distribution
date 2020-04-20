@@ -28,7 +28,6 @@ object ApplicationSummary {
     ApplicationStatus: ApplicationStatus
   ): ApplicationSummary = {
     val __obj = js.Dynamic.literal(ApplicationARN = ApplicationARN.asInstanceOf[js.Any], ApplicationName = ApplicationName.asInstanceOf[js.Any], ApplicationStatus = ApplicationStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplicationSummary]
   }
 }

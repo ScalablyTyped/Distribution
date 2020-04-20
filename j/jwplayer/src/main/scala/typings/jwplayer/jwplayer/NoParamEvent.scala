@@ -18,22 +18,20 @@ trait NoParamEvent extends js.Object
 
 object NoParamEvent {
   @scala.inline
-  def adBlock: typings.jwplayer.jwplayerStrings.adBlock = this.cast("adBlock")
+  def adBlock: typings.jwplayer.jwplayerStrings.adBlock = "adBlock".asInstanceOf[typings.jwplayer.jwplayerStrings.adBlock]
   @scala.inline
-  def beforeComplete: typings.jwplayer.jwplayerStrings.beforeComplete = this.cast("beforeComplete")
+  def beforeComplete: typings.jwplayer.jwplayerStrings.beforeComplete = "beforeComplete".asInstanceOf[typings.jwplayer.jwplayerStrings.beforeComplete]
   @scala.inline
-  def beforePlay: typings.jwplayer.jwplayerStrings.beforePlay = this.cast("beforePlay")
+  def beforePlay: typings.jwplayer.jwplayerStrings.beforePlay = "beforePlay".asInstanceOf[typings.jwplayer.jwplayerStrings.beforePlay]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complete: typings.jwplayer.jwplayerStrings.complete = "complete".asInstanceOf[typings.jwplayer.jwplayerStrings.complete]
   @scala.inline
-  def complete: typings.jwplayer.jwplayerStrings.complete = this.cast("complete")
+  def displayClick: typings.jwplayer.jwplayerStrings.displayClick = "displayClick".asInstanceOf[typings.jwplayer.jwplayerStrings.displayClick]
   @scala.inline
-  def displayClick: typings.jwplayer.jwplayerStrings.displayClick = this.cast("displayClick")
+  def playlistComplete: typings.jwplayer.jwplayerStrings.playlistComplete = "playlistComplete".asInstanceOf[typings.jwplayer.jwplayerStrings.playlistComplete]
   @scala.inline
-  def playlistComplete: typings.jwplayer.jwplayerStrings.playlistComplete = this.cast("playlistComplete")
+  def remove: typings.jwplayer.jwplayerStrings.remove = "remove".asInstanceOf[typings.jwplayer.jwplayerStrings.remove]
   @scala.inline
-  def remove: typings.jwplayer.jwplayerStrings.remove = this.cast("remove")
-  @scala.inline
-  def seeked: typings.jwplayer.jwplayerStrings.seeked = this.cast("seeked")
+  def seeked: typings.jwplayer.jwplayerStrings.seeked = "seeked".asInstanceOf[typings.jwplayer.jwplayerStrings.seeked]
 }
 

@@ -16,7 +16,6 @@ object SubsystemChannelRequest {
   @scala.inline
   def apply(recipient: Double, request: subsystem, subsystem: String, wantReply: Boolean): SubsystemChannelRequest = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], subsystem = subsystem.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubsystemChannelRequest]
   }
 }

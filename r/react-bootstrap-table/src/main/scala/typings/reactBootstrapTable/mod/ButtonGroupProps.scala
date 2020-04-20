@@ -33,7 +33,6 @@ object ButtonGroupProps {
     showSelectedOnlyBtn: ReactElement
   ): ButtonGroupProps = {
     val __obj = js.Dynamic.literal(deleteBtn = deleteBtn.asInstanceOf[js.Any], exportCSVBtn = exportCSVBtn.asInstanceOf[js.Any], insertBtn = insertBtn.asInstanceOf[js.Any], showSelectedOnlyBtn = showSelectedOnlyBtn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ButtonGroupProps]
   }
 }

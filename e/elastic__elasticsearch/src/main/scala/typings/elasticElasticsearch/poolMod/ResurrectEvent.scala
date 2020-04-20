@@ -18,7 +18,6 @@ object ResurrectEvent {
   @scala.inline
   def apply(connection: default, isAlive: Boolean, name: String, request: AnonIdAny, strategy: String): ResurrectEvent = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isAlive = isAlive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResurrectEvent]
   }
 }

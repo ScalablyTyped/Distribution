@@ -13,7 +13,6 @@ object SchemaSettings {
   @scala.inline
   def apply(registry: String): SchemaSettings = {
     val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SchemaSettings]
   }
 }

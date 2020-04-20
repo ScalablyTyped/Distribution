@@ -43,72 +43,70 @@ trait MapTypeStyleFeatureType extends js.Object
 
 object MapTypeStyleFeatureType {
   @scala.inline
-  def administrative: typings.googlemaps.googlemapsStrings.administrative = this.cast("administrative")
+  def administrative: typings.googlemaps.googlemapsStrings.administrative = "administrative".asInstanceOf[typings.googlemaps.googlemapsStrings.administrative]
   @scala.inline
-  def administrativeDotcountry: typings.googlemaps.googlemapsStrings.administrativeDotcountry = this.cast("administrative.country")
+  def administrativeDotcountry: typings.googlemaps.googlemapsStrings.administrativeDotcountry = "administrative.country".asInstanceOf[typings.googlemaps.googlemapsStrings.administrativeDotcountry]
   @scala.inline
-  def administrativeDotland_parcel: typings.googlemaps.googlemapsStrings.administrativeDotland_parcel = this.cast("administrative.land_parcel")
+  def administrativeDotland_parcel: typings.googlemaps.googlemapsStrings.administrativeDotland_parcel = "administrative.land_parcel".asInstanceOf[typings.googlemaps.googlemapsStrings.administrativeDotland_parcel]
   @scala.inline
-  def administrativeDotlocality: typings.googlemaps.googlemapsStrings.administrativeDotlocality = this.cast("administrative.locality")
+  def administrativeDotlocality: typings.googlemaps.googlemapsStrings.administrativeDotlocality = "administrative.locality".asInstanceOf[typings.googlemaps.googlemapsStrings.administrativeDotlocality]
   @scala.inline
-  def administrativeDotneighborhood: typings.googlemaps.googlemapsStrings.administrativeDotneighborhood = this.cast("administrative.neighborhood")
+  def administrativeDotneighborhood: typings.googlemaps.googlemapsStrings.administrativeDotneighborhood = "administrative.neighborhood".asInstanceOf[typings.googlemaps.googlemapsStrings.administrativeDotneighborhood]
   @scala.inline
-  def administrativeDotprovince: typings.googlemaps.googlemapsStrings.administrativeDotprovince = this.cast("administrative.province")
+  def administrativeDotprovince: typings.googlemaps.googlemapsStrings.administrativeDotprovince = "administrative.province".asInstanceOf[typings.googlemaps.googlemapsStrings.administrativeDotprovince]
   @scala.inline
-  def all: typings.googlemaps.googlemapsStrings.all = this.cast("all")
+  def all: typings.googlemaps.googlemapsStrings.all = "all".asInstanceOf[typings.googlemaps.googlemapsStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def landscape: typings.googlemaps.googlemapsStrings.landscape = "landscape".asInstanceOf[typings.googlemaps.googlemapsStrings.landscape]
   @scala.inline
-  def landscape: typings.googlemaps.googlemapsStrings.landscape = this.cast("landscape")
+  def landscapeDotman_made: typings.googlemaps.googlemapsStrings.landscapeDotman_made = "landscape.man_made".asInstanceOf[typings.googlemaps.googlemapsStrings.landscapeDotman_made]
   @scala.inline
-  def landscapeDotman_made: typings.googlemaps.googlemapsStrings.landscapeDotman_made = this.cast("landscape.man_made")
+  def landscapeDotnatural: typings.googlemaps.googlemapsStrings.landscapeDotnatural = "landscape.natural".asInstanceOf[typings.googlemaps.googlemapsStrings.landscapeDotnatural]
   @scala.inline
-  def landscapeDotnatural: typings.googlemaps.googlemapsStrings.landscapeDotnatural = this.cast("landscape.natural")
+  def landscapeDotnaturalDotlandcover: typings.googlemaps.googlemapsStrings.landscapeDotnaturalDotlandcover = "landscape.natural.landcover".asInstanceOf[typings.googlemaps.googlemapsStrings.landscapeDotnaturalDotlandcover]
   @scala.inline
-  def landscapeDotnaturalDotlandcover: typings.googlemaps.googlemapsStrings.landscapeDotnaturalDotlandcover = this.cast("landscape.natural.landcover")
+  def landscapeDotnaturalDotterrain: typings.googlemaps.googlemapsStrings.landscapeDotnaturalDotterrain = "landscape.natural.terrain".asInstanceOf[typings.googlemaps.googlemapsStrings.landscapeDotnaturalDotterrain]
   @scala.inline
-  def landscapeDotnaturalDotterrain: typings.googlemaps.googlemapsStrings.landscapeDotnaturalDotterrain = this.cast("landscape.natural.terrain")
+  def poi: typings.googlemaps.googlemapsStrings.poi = "poi".asInstanceOf[typings.googlemaps.googlemapsStrings.poi]
   @scala.inline
-  def poi: typings.googlemaps.googlemapsStrings.poi = this.cast("poi")
+  def poiDotattraction: typings.googlemaps.googlemapsStrings.poiDotattraction = "poi.attraction".asInstanceOf[typings.googlemaps.googlemapsStrings.poiDotattraction]
   @scala.inline
-  def poiDotattraction: typings.googlemaps.googlemapsStrings.poiDotattraction = this.cast("poi.attraction")
+  def poiDotbusiness: typings.googlemaps.googlemapsStrings.poiDotbusiness = "poi.business".asInstanceOf[typings.googlemaps.googlemapsStrings.poiDotbusiness]
   @scala.inline
-  def poiDotbusiness: typings.googlemaps.googlemapsStrings.poiDotbusiness = this.cast("poi.business")
+  def poiDotgovernment: typings.googlemaps.googlemapsStrings.poiDotgovernment = "poi.government".asInstanceOf[typings.googlemaps.googlemapsStrings.poiDotgovernment]
   @scala.inline
-  def poiDotgovernment: typings.googlemaps.googlemapsStrings.poiDotgovernment = this.cast("poi.government")
+  def poiDotmedical: typings.googlemaps.googlemapsStrings.poiDotmedical = "poi.medical".asInstanceOf[typings.googlemaps.googlemapsStrings.poiDotmedical]
   @scala.inline
-  def poiDotmedical: typings.googlemaps.googlemapsStrings.poiDotmedical = this.cast("poi.medical")
+  def poiDotpark: typings.googlemaps.googlemapsStrings.poiDotpark = "poi.park".asInstanceOf[typings.googlemaps.googlemapsStrings.poiDotpark]
   @scala.inline
-  def poiDotpark: typings.googlemaps.googlemapsStrings.poiDotpark = this.cast("poi.park")
+  def poiDotplace_of_worship: typings.googlemaps.googlemapsStrings.poiDotplace_of_worship = "poi.place_of_worship".asInstanceOf[typings.googlemaps.googlemapsStrings.poiDotplace_of_worship]
   @scala.inline
-  def poiDotplace_of_worship: typings.googlemaps.googlemapsStrings.poiDotplace_of_worship = this.cast("poi.place_of_worship")
+  def poiDotschool: typings.googlemaps.googlemapsStrings.poiDotschool = "poi.school".asInstanceOf[typings.googlemaps.googlemapsStrings.poiDotschool]
   @scala.inline
-  def poiDotschool: typings.googlemaps.googlemapsStrings.poiDotschool = this.cast("poi.school")
+  def poiDotsports_complex: typings.googlemaps.googlemapsStrings.poiDotsports_complex = "poi.sports_complex".asInstanceOf[typings.googlemaps.googlemapsStrings.poiDotsports_complex]
   @scala.inline
-  def poiDotsports_complex: typings.googlemaps.googlemapsStrings.poiDotsports_complex = this.cast("poi.sports_complex")
+  def road: typings.googlemaps.googlemapsStrings.road = "road".asInstanceOf[typings.googlemaps.googlemapsStrings.road]
   @scala.inline
-  def road: typings.googlemaps.googlemapsStrings.road = this.cast("road")
+  def roadDotarterial: typings.googlemaps.googlemapsStrings.roadDotarterial = "road.arterial".asInstanceOf[typings.googlemaps.googlemapsStrings.roadDotarterial]
   @scala.inline
-  def roadDotarterial: typings.googlemaps.googlemapsStrings.roadDotarterial = this.cast("road.arterial")
+  def roadDothighway: typings.googlemaps.googlemapsStrings.roadDothighway = "road.highway".asInstanceOf[typings.googlemaps.googlemapsStrings.roadDothighway]
   @scala.inline
-  def roadDothighway: typings.googlemaps.googlemapsStrings.roadDothighway = this.cast("road.highway")
+  def roadDothighwayDotcontrolled_access: typings.googlemaps.googlemapsStrings.roadDothighwayDotcontrolled_access = "road.highway.controlled_access".asInstanceOf[typings.googlemaps.googlemapsStrings.roadDothighwayDotcontrolled_access]
   @scala.inline
-  def roadDothighwayDotcontrolled_access: typings.googlemaps.googlemapsStrings.roadDothighwayDotcontrolled_access = this.cast("road.highway.controlled_access")
+  def roadDotlocal: typings.googlemaps.googlemapsStrings.roadDotlocal = "road.local".asInstanceOf[typings.googlemaps.googlemapsStrings.roadDotlocal]
   @scala.inline
-  def roadDotlocal: typings.googlemaps.googlemapsStrings.roadDotlocal = this.cast("road.local")
+  def transit: typings.googlemaps.googlemapsStrings.transit = "transit".asInstanceOf[typings.googlemaps.googlemapsStrings.transit]
   @scala.inline
-  def transit: typings.googlemaps.googlemapsStrings.transit = this.cast("transit")
+  def transitDotline: typings.googlemaps.googlemapsStrings.transitDotline = "transit.line".asInstanceOf[typings.googlemaps.googlemapsStrings.transitDotline]
   @scala.inline
-  def transitDotline: typings.googlemaps.googlemapsStrings.transitDotline = this.cast("transit.line")
+  def transitDotstation: typings.googlemaps.googlemapsStrings.transitDotstation = "transit.station".asInstanceOf[typings.googlemaps.googlemapsStrings.transitDotstation]
   @scala.inline
-  def transitDotstation: typings.googlemaps.googlemapsStrings.transitDotstation = this.cast("transit.station")
+  def transitDotstationDotairport: typings.googlemaps.googlemapsStrings.transitDotstationDotairport = "transit.station.airport".asInstanceOf[typings.googlemaps.googlemapsStrings.transitDotstationDotairport]
   @scala.inline
-  def transitDotstationDotairport: typings.googlemaps.googlemapsStrings.transitDotstationDotairport = this.cast("transit.station.airport")
+  def transitDotstationDotbus: typings.googlemaps.googlemapsStrings.transitDotstationDotbus = "transit.station.bus".asInstanceOf[typings.googlemaps.googlemapsStrings.transitDotstationDotbus]
   @scala.inline
-  def transitDotstationDotbus: typings.googlemaps.googlemapsStrings.transitDotstationDotbus = this.cast("transit.station.bus")
+  def transitDotstationDotrail: typings.googlemaps.googlemapsStrings.transitDotstationDotrail = "transit.station.rail".asInstanceOf[typings.googlemaps.googlemapsStrings.transitDotstationDotrail]
   @scala.inline
-  def transitDotstationDotrail: typings.googlemaps.googlemapsStrings.transitDotstationDotrail = this.cast("transit.station.rail")
-  @scala.inline
-  def water: typings.googlemaps.googlemapsStrings.water = this.cast("water")
+  def water: typings.googlemaps.googlemapsStrings.water = "water".asInstanceOf[typings.googlemaps.googlemapsStrings.water]
 }
 

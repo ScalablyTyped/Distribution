@@ -56,7 +56,6 @@ object HLJSStatic {
     inherit: (js.Object, js.Object) => js.Object
   ): HLJSStatic = {
     val __obj = js.Dynamic.literal(APOS_STRING_MODE = APOS_STRING_MODE.asInstanceOf[js.Any], BACKSLASH_ESCAPE = BACKSLASH_ESCAPE.asInstanceOf[js.Any], BINARY_NUMBER_MODE = BINARY_NUMBER_MODE.asInstanceOf[js.Any], BINARY_NUMBER_RE = BINARY_NUMBER_RE.asInstanceOf[js.Any], CSS_NUMBER_MODE = CSS_NUMBER_MODE.asInstanceOf[js.Any], C_BLOCK_COMMENT_MODE = C_BLOCK_COMMENT_MODE.asInstanceOf[js.Any], C_LINE_COMMENT_MODE = C_LINE_COMMENT_MODE.asInstanceOf[js.Any], C_NUMBER_MODE = C_NUMBER_MODE.asInstanceOf[js.Any], C_NUMBER_RE = C_NUMBER_RE.asInstanceOf[js.Any], HASH_COMMENT_MODE = HASH_COMMENT_MODE.asInstanceOf[js.Any], IDENT_RE = IDENT_RE.asInstanceOf[js.Any], NUMBER_MODE = NUMBER_MODE.asInstanceOf[js.Any], NUMBER_RE = NUMBER_RE.asInstanceOf[js.Any], PHRASAL_WORDS_MODE = PHRASAL_WORDS_MODE.asInstanceOf[js.Any], QUOTE_STRING_MODE = QUOTE_STRING_MODE.asInstanceOf[js.Any], REGEX_MODE = REGEX_MODE.asInstanceOf[js.Any], RE_STARTERS_RE = RE_STARTERS_RE.asInstanceOf[js.Any], TITLE_MODE = TITLE_MODE.asInstanceOf[js.Any], UNDERSCORE_IDENT_RE = UNDERSCORE_IDENT_RE.asInstanceOf[js.Any], UNDERSCORE_TITLE_MODE = UNDERSCORE_TITLE_MODE.asInstanceOf[js.Any], inherit = js.Any.fromFunction2(inherit))
-  
     __obj.asInstanceOf[HLJSStatic]
   }
 }

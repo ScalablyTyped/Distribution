@@ -14,7 +14,6 @@ object ErrorResult {
   @scala.inline
   def apply(errors: js.Array[String], success: `false`): ErrorResult = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorResult]
   }
 }

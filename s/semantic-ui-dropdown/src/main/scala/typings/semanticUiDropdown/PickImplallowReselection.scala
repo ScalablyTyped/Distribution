@@ -13,7 +13,6 @@ object PickImplallowReselection {
   @scala.inline
   def apply(allowReselection: Boolean): PickImplallowReselection = {
     val __obj = js.Dynamic.literal(allowReselection = allowReselection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplallowReselection]
   }
 }

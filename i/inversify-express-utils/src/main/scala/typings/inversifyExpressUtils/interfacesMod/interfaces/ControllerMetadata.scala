@@ -14,7 +14,6 @@ object ControllerMetadata {
   @scala.inline
   def apply(middleware: js.Array[Middleware], path: String, target: js.Any): ControllerMetadata = {
     val __obj = js.Dynamic.literal(middleware = middleware.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ControllerMetadata]
   }
 }

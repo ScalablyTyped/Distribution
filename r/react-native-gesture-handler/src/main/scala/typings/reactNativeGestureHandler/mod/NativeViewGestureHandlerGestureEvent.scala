@@ -13,7 +13,6 @@ object NativeViewGestureHandlerGestureEvent {
   @scala.inline
   def apply(nativeEvent: GestureHandlerGestureEventNativeEvent with NativeViewGestureHandlerEventExtra): NativeViewGestureHandlerGestureEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeViewGestureHandlerGestureEvent]
   }
 }

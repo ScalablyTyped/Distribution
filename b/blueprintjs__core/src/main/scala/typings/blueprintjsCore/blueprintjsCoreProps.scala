@@ -65,178 +65,178 @@ import scala.scalajs.js.annotation._
 
 trait blueprintjsCoreProps {
   @scala.inline
-  def AlertProps: IAlertProps.type = typings.blueprintjsCore.alertMod.IAlertProps
+  def AlertProps: IAlertProps.type = IAlertProps
   type AlertProps = IAlertProps
   @scala.inline
-  def BreadcrumbProps: IBreadcrumbProps.type = typings.blueprintjsCore.breadcrumbMod.IBreadcrumbProps
+  def BreadcrumbProps: IBreadcrumbProps.type = IBreadcrumbProps
   type BreadcrumbProps = IBreadcrumbProps
   @scala.inline
-  def BreadcrumbsProps: IBreadcrumbsProps.type = typings.blueprintjsCore.breadcrumbsMod.IBreadcrumbsProps
+  def BreadcrumbsProps: IBreadcrumbsProps.type = IBreadcrumbsProps
   type BreadcrumbsProps = IBreadcrumbsProps
   @scala.inline
-  def ButtonGroupProps: IButtonGroupProps.type = typings.blueprintjsCore.buttonGroupMod.IButtonGroupProps
+  def ButtonGroupProps: IButtonGroupProps.type = IButtonGroupProps
   type ButtonGroupProps = IButtonGroupProps
   @scala.inline
-  def CalloutProps: ICalloutProps.type = typings.blueprintjsCore.calloutMod.ICalloutProps
+  def CalloutProps: ICalloutProps.type = ICalloutProps
   type CalloutProps = ICalloutProps
   @scala.inline
-  def CardProps: ICardProps.type = typings.blueprintjsCore.cardMod.ICardProps
+  def CardProps: ICardProps.type = ICardProps
   type CardProps = ICardProps
   @scala.inline
-  def CheckboxProps: ICheckboxProps.type = typings.blueprintjsCore.controlsMod.ICheckboxProps
+  def CheckboxProps: ICheckboxProps.type = ICheckboxProps
   type CheckboxProps = ICheckboxProps
   @scala.inline
-  def CollapseProps: ICollapseProps.type = typings.blueprintjsCore.collapseMod.ICollapseProps
+  def CollapseProps: ICollapseProps.type = ICollapseProps
   type CollapseProps = ICollapseProps
   @scala.inline
-  def CollapsibleListProps: ICollapsibleListProps.type = typings.blueprintjsCore.collapsibleListMod.ICollapsibleListProps
+  def CollapsibleListProps: ICollapsibleListProps.type = ICollapsibleListProps
   type CollapsibleListProps = ICollapsibleListProps
   @scala.inline
-  def ControlGroupProps: IControlGroupProps.type = typings.blueprintjsCore.controlGroupMod.IControlGroupProps
+  def ControlGroupProps: IControlGroupProps.type = IControlGroupProps
   type ControlGroupProps = IControlGroupProps
   @scala.inline
-  def DialogProps: IDialogProps.type = typings.blueprintjsCore.dialogMod.IDialogProps
+  def DialogProps: IDialogProps.type = IDialogProps
   type DialogProps = IDialogProps
   @scala.inline
-  def DividerProps: IDividerProps.type = typings.blueprintjsCore.dividerMod.IDividerProps
+  def DividerProps: IDividerProps.type = IDividerProps
   type DividerProps = IDividerProps
   @scala.inline
-  def DrawerProps: IDrawerProps.type = typings.blueprintjsCore.drawerMod.IDrawerProps
+  def DrawerProps: IDrawerProps.type = IDrawerProps
   type DrawerProps = IDrawerProps
   @scala.inline
-  def EditableTextProps: IEditableTextProps.type = typings.blueprintjsCore.editableTextMod.IEditableTextProps
+  def EditableTextProps: IEditableTextProps.type = IEditableTextProps
   type EditableTextProps = IEditableTextProps
   @scala.inline
-  def FileInputProps: IFileInputProps.type = typings.blueprintjsCore.fileInputMod.IFileInputProps
+  def FileInputProps: IFileInputProps.type = IFileInputProps
   type FileInputProps = IFileInputProps
   @scala.inline
-  def FormGroupProps: IFormGroupProps.type = typings.blueprintjsCore.formGroupMod.IFormGroupProps
+  def FormGroupProps: IFormGroupProps.type = IFormGroupProps
   type FormGroupProps = IFormGroupProps
   @scala.inline
-  def HTMLSelectProps: IHTMLSelectProps.type = typings.blueprintjsCore.htmlSelectMod.IHTMLSelectProps
+  def HTMLSelectProps: IHTMLSelectProps.type = IHTMLSelectProps
   type HTMLSelectProps = IHTMLSelectProps
   @scala.inline
-  def HTMLTableProps: IHTMLTableProps.type = typings.blueprintjsCore.htmlTableMod.IHTMLTableProps
+  def HTMLTableProps: IHTMLTableProps.type = IHTMLTableProps
   type HTMLTableProps = IHTMLTableProps
   @scala.inline
-  def HandleProps: IInternalHandleProps.type = typings.blueprintjsCore.handleMod.IInternalHandleProps
+  def HandleProps: IInternalHandleProps.type = IInternalHandleProps
   type HandleProps = IInternalHandleProps
   @scala.inline
-  def HotkeyProps: IHotkeyProps.type = typings.blueprintjsCore.hotkeyMod.IHotkeyProps
+  def HotkeyProps: IHotkeyProps.type = IHotkeyProps
   type HotkeyProps = IHotkeyProps
   @scala.inline
-  def HotkeysProps: IHotkeysProps.type = typings.blueprintjsCore.hotkeysMod.IHotkeysProps
+  def HotkeysProps: IHotkeysProps.type = IHotkeysProps
   type HotkeysProps = IHotkeysProps
   @scala.inline
-  def KeyComboProps: IKeyComboProps.type = typings.blueprintjsCore.keyComboMod.IKeyComboProps
+  def KeyComboProps: IKeyComboProps.type = IKeyComboProps
   type KeyComboProps = IKeyComboProps
   @scala.inline
-  def MenuProps: IMenuProps.type = typings.blueprintjsCore.menuMod.IMenuProps
+  def MenuProps: IMenuProps.type = IMenuProps
   type MenuProps = IMenuProps
   @scala.inline
-  def MenuDividerProps: IMenuDividerProps.type = typings.blueprintjsCore.menuDividerMod.IMenuDividerProps
+  def MenuDividerProps: IMenuDividerProps.type = IMenuDividerProps
   type MenuDividerProps = IMenuDividerProps
   @scala.inline
-  def MultiSliderProps: IMultiSliderProps.type = typings.blueprintjsCore.multiSliderMod.IMultiSliderProps
+  def MultiSliderProps: IMultiSliderProps.type = IMultiSliderProps
   type MultiSliderProps = IMultiSliderProps
   @scala.inline
-  def MultiSliderHandleProps: IHandleProps.type = typings.blueprintjsCore.handlePropsMod.IHandleProps
+  def MultiSliderHandleProps: IHandleProps.type = IHandleProps
   type MultiSliderHandleProps = IHandleProps
   @scala.inline
-  def NavbarProps: INavbarProps.type = typings.blueprintjsCore.navbarMod.INavbarProps
+  def NavbarProps: INavbarProps.type = INavbarProps
   type NavbarProps = INavbarProps
   @scala.inline
-  def NavbarDividerProps: INavbarDividerProps.type = typings.blueprintjsCore.navbarDividerMod.INavbarDividerProps
+  def NavbarDividerProps: INavbarDividerProps.type = INavbarDividerProps
   type NavbarDividerProps = INavbarDividerProps
   @scala.inline
-  def NavbarGroupProps: INavbarGroupProps.type = typings.blueprintjsCore.navbarGroupMod.INavbarGroupProps
+  def NavbarGroupProps: INavbarGroupProps.type = INavbarGroupProps
   type NavbarGroupProps = INavbarGroupProps
   @scala.inline
-  def NavbarHeadingProps: INavbarHeadingProps.type = typings.blueprintjsCore.navbarHeadingMod.INavbarHeadingProps
+  def NavbarHeadingProps: INavbarHeadingProps.type = INavbarHeadingProps
   type NavbarHeadingProps = INavbarHeadingProps
   @scala.inline
-  def NonIdealStateProps: INonIdealStateProps.type = typings.blueprintjsCore.nonIdealStateMod.INonIdealStateProps
+  def NonIdealStateProps: INonIdealStateProps.type = INonIdealStateProps
   type NonIdealStateProps = INonIdealStateProps
   @scala.inline
-  def OverflowListProps: IOverflowListProps.type = typings.blueprintjsCore.overflowListMod.IOverflowListProps
+  def OverflowListProps: IOverflowListProps.type = IOverflowListProps
   type OverflowListProps[T] = IOverflowListProps[T]
   @scala.inline
-  def OverlayProps: IOverlayProps.type = typings.blueprintjsCore.overlayMod.IOverlayProps
+  def OverlayProps: IOverlayProps.type = IOverlayProps
   type OverlayProps = IOverlayProps
   @scala.inline
-  def PanelStackProps: IPanelStackProps.type = typings.blueprintjsCore.panelStackMod.IPanelStackProps
+  def PanelStackProps: IPanelStackProps.type = IPanelStackProps
   type PanelStackProps = IPanelStackProps
   @scala.inline
-  def PanelViewProps: IPanelViewProps.type = typings.blueprintjsCore.panelViewMod.IPanelViewProps
+  def PanelViewProps: IPanelViewProps.type = IPanelViewProps
   type PanelViewProps = IPanelViewProps
   @scala.inline
-  def PopoverProps: IPopoverProps.type = typings.blueprintjsCore.popoverMod.IPopoverProps
+  def PopoverProps: IPopoverProps.type = IPopoverProps
   type PopoverProps = IPopoverProps
   @scala.inline
-  def PopoverArrowProps: IPopoverArrowProps.type = typings.blueprintjsCore.popoverArrowMod.IPopoverArrowProps
+  def PopoverArrowProps: IPopoverArrowProps.type = IPopoverArrowProps
   type PopoverArrowProps = IPopoverArrowProps
   @scala.inline
-  def PortalProps: IPortalProps.type = typings.blueprintjsCore.portalMod.IPortalProps
+  def PortalProps: IPortalProps.type = IPortalProps
   type PortalProps = IPortalProps
   @scala.inline
-  def ProgressBarProps: IProgressBarProps.type = typings.blueprintjsCore.progressBarMod.IProgressBarProps
+  def ProgressBarProps: IProgressBarProps.type = IProgressBarProps
   type ProgressBarProps = IProgressBarProps
   @scala.inline
-  def RadioProps: IControlProps.type = typings.blueprintjsCore.controlsMod.IControlProps
+  def RadioProps: IControlProps.type = IControlProps
   type RadioProps = IRadioProps
   @scala.inline
-  def RadioGroupProps: IRadioGroupProps.type = typings.blueprintjsCore.radioGroupMod.IRadioGroupProps
+  def RadioGroupProps: IRadioGroupProps.type = IRadioGroupProps
   type RadioGroupProps = IRadioGroupProps
   @scala.inline
-  def RangeSliderProps: IRangeSliderProps.type = typings.blueprintjsCore.rangeSliderMod.IRangeSliderProps
+  def RangeSliderProps: IRangeSliderProps.type = IRangeSliderProps
   type RangeSliderProps = IRangeSliderProps
   @scala.inline
-  def ResizeSensorProps: IResizeSensorProps.type = typings.blueprintjsCore.resizeSensorMod.IResizeSensorProps
+  def ResizeSensorProps: IResizeSensorProps.type = IResizeSensorProps
   type ResizeSensorProps = IResizeSensorProps
   @scala.inline
-  def SliderProps: ISliderProps.type = typings.blueprintjsCore.sliderMod.ISliderProps
+  def SliderProps: ISliderProps.type = ISliderProps
   type SliderProps = ISliderProps
   @scala.inline
-  def SpinnerProps: ISpinnerProps.type = typings.blueprintjsCore.spinnerMod.ISpinnerProps
+  def SpinnerProps: ISpinnerProps.type = ISpinnerProps
   type SpinnerProps = ISpinnerProps
   @scala.inline
-  def SwitchProps: ISwitchProps.type = typings.blueprintjsCore.controlsMod.ISwitchProps
+  def SwitchProps: ISwitchProps.type = ISwitchProps
   type SwitchProps = ISwitchProps
   @scala.inline
-  def TabProps: ITabProps.type = typings.blueprintjsCore.tabMod.ITabProps
+  def TabProps: ITabProps.type = ITabProps
   type TabProps = ITabProps
   @scala.inline
-  def TabTitleProps: ITabTitleProps.type = typings.blueprintjsCore.tabTitleMod.ITabTitleProps
+  def TabTitleProps: ITabTitleProps.type = ITabTitleProps
   type TabTitleProps = ITabTitleProps
   @scala.inline
-  def TabsProps: ITabsProps.type = typings.blueprintjsCore.tabsMod.ITabsProps
+  def TabsProps: ITabsProps.type = ITabsProps
   type TabsProps = ITabsProps
   @scala.inline
-  def TagProps: ITagProps.type = typings.blueprintjsCore.tagMod.ITagProps
+  def TagProps: ITagProps.type = ITagProps
   type TagProps = ITagProps
   @scala.inline
-  def TagInputProps: ITagInputProps.type = typings.blueprintjsCore.tagInputMod.ITagInputProps
+  def TagInputProps: ITagInputProps.type = ITagInputProps
   type TagInputProps = ITagInputProps
   @scala.inline
-  def TextProps: ITextProps.type = typings.blueprintjsCore.textMod.ITextProps
+  def TextProps: ITextProps.type = ITextProps
   type TextProps = ITextProps
   @scala.inline
-  def TextAreaProps: ITextAreaProps.type = typings.blueprintjsCore.textAreaMod.ITextAreaProps
+  def TextAreaProps: ITextAreaProps.type = ITextAreaProps
   type TextAreaProps = ITextAreaProps
   @scala.inline
-  def ToastProps: IToastProps.type = typings.blueprintjsCore.toastMod.IToastProps
+  def ToastProps: IToastProps.type = IToastProps
   type ToastProps = IToastProps
   @scala.inline
-  def ToasterProps: IToasterProps.type = typings.blueprintjsCore.toasterMod.IToasterProps
+  def ToasterProps: IToasterProps.type = IToasterProps
   type ToasterProps = IToasterProps
   @scala.inline
-  def TooltipProps: ITooltipProps.type = typings.blueprintjsCore.tooltipMod.ITooltipProps
+  def TooltipProps: ITooltipProps.type = ITooltipProps
   type TooltipProps = ITooltipProps
   @scala.inline
-  def TreeProps: ITreeProps.type = typings.blueprintjsCore.treeMod.ITreeProps
+  def TreeProps: ITreeProps.type = ITreeProps
   type TreeProps[T] = ITreeProps[T]
   @scala.inline
-  def TreeNodeProps: ITreeNodeProps.type = typings.blueprintjsCore.treeNodeMod.ITreeNodeProps
+  def TreeNodeProps: ITreeNodeProps.type = ITreeNodeProps
   type TreeNodeProps[T] = ITreeNodeProps[T]
 }
 

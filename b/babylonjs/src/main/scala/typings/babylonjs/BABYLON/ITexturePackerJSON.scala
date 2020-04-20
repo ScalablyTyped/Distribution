@@ -27,7 +27,6 @@ object ITexturePackerJSON {
   @scala.inline
   def apply(frames: js.Array[Double], name: String, options: ITexturePackerOptions, sets: js.Any): ITexturePackerJSON = {
     val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], sets = sets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITexturePackerJSON]
   }
 }

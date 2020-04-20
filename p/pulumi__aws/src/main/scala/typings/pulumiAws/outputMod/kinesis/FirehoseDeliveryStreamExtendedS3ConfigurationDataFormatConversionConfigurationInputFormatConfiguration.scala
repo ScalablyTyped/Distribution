@@ -18,7 +18,6 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigur
     deserializer: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer
   ): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration = {
     val __obj = js.Dynamic.literal(deserializer = deserializer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration]
   }
 }

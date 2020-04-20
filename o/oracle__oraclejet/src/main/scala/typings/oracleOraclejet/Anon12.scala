@@ -14,7 +14,6 @@ object Anon12 {
   @scala.inline
   def apply(items: enabled | disabled): Anon12 = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon12]
   }
 }

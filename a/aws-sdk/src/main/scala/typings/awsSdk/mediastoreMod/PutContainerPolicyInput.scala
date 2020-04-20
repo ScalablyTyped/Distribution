@@ -20,7 +20,6 @@ object PutContainerPolicyInput {
   @scala.inline
   def apply(ContainerName: ContainerName, Policy: ContainerPolicy): PutContainerPolicyInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutContainerPolicyInput]
   }
 }

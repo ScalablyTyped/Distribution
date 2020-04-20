@@ -49,7 +49,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the `Circle` button
     */
-  def buttonCircle(): Double = js.native
+  def buttonCircle: Double = js.native
   /**
     * Sets the value of the `Circle` button
     */
@@ -57,7 +57,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the `Cross` button
     */
-  def buttonCross(): Double = js.native
+  def buttonCross: Double = js.native
   /**
     * Sets the value of the `Cross` button
     */
@@ -65,7 +65,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the `L1` button
     */
-  def buttonL1(): Double = js.native
+  def buttonL1: Double = js.native
   /**
     * Sets the value of the `L1` button
     */
@@ -73,7 +73,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the Left joystick
     */
-  def buttonLeftStick(): Double = js.native
+  def buttonLeftStick: Double = js.native
   /**
     * Sets the value of the Left joystick
     */
@@ -81,7 +81,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the `Options` button
     */
-  def buttonOptions(): Double = js.native
+  def buttonOptions: Double = js.native
   /**
     * Sets the value of the `Options` button
     */
@@ -89,7 +89,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the `R1` button
     */
-  def buttonR1(): Double = js.native
+  def buttonR1: Double = js.native
   /**
     * Sets the value of the `R1` button
     */
@@ -97,7 +97,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the Right joystick
     */
-  def buttonRightStick(): Double = js.native
+  def buttonRightStick: Double = js.native
   /**
     * Sets the value of the Right joystick
     */
@@ -105,7 +105,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the `Share` button
     */
-  def buttonShare(): Double = js.native
+  def buttonShare: Double = js.native
   /**
     * Sets the value of the `Share` button
     */
@@ -113,7 +113,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the `Square` button
     */
-  def buttonSquare(): Double = js.native
+  def buttonSquare: Double = js.native
   /**
     * Sets the value of the `Square` button
     */
@@ -121,7 +121,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of the `Triangle` button
     */
-  def buttonTriangle(): Double = js.native
+  def buttonTriangle: Double = js.native
   /**
     * Sets the value of the `Triangle` button
     */
@@ -129,7 +129,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of D-pad down
     */
-  def dPadDown(): Double = js.native
+  def dPadDown: Double = js.native
   /**
     * Sets the value of D-pad down
     */
@@ -137,7 +137,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of D-pad left
     */
-  def dPadLeft(): Double = js.native
+  def dPadLeft: Double = js.native
   /**
     * Sets the value of D-pad left
     */
@@ -145,7 +145,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of D-pad right
     */
-  def dPadRight(): Double = js.native
+  def dPadRight: Double = js.native
   /**
     * Sets the value of D-pad right
     */
@@ -153,7 +153,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the value of D-pad up
     */
-  def dPadUp(): Double = js.native
+  def dPadUp: Double = js.native
   /**
     * Sets the value of D-pad up
     */
@@ -161,7 +161,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the left trigger value
     */
-  def leftTrigger(): Double = js.native
+  def leftTrigger: Double = js.native
   /**
     * Sets the left trigger value
     */
@@ -199,7 +199,7 @@ class DualShockPad protected () extends Gamepad {
   /**
     * Gets the right trigger value
     */
-  def rightTrigger(): Double = js.native
+  def rightTrigger: Double = js.native
   /**
     * Sets the right trigger value
     */

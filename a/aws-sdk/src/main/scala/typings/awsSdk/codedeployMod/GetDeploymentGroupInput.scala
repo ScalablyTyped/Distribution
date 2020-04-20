@@ -20,7 +20,6 @@ object GetDeploymentGroupInput {
   @scala.inline
   def apply(applicationName: ApplicationName, deploymentGroupName: DeploymentGroupName): GetDeploymentGroupInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], deploymentGroupName = deploymentGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDeploymentGroupInput]
   }
 }

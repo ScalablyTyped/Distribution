@@ -12,7 +12,7 @@ trait DecodeStringDict extends js.Object {
   /**
   	 * Character set to use when encoding this string to bytes.
   	 */
-  var charset: js.UndefOr[String] = js.undefined
+  var charset: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Number of bytes to decode.
   	 */
@@ -29,7 +29,12 @@ trait DecodeStringDict extends js.Object {
 
 object DecodeStringDict {
   @scala.inline
-  def apply(source: Buffer, charset: String = null, length: Int | Double = null, position: Int | Double = null): DecodeStringDict = {
+  def apply(
+    source: Buffer,
+    charset: java.lang.String = null,
+    length: Int | Double = null,
+    position: Int | Double = null
+  ): DecodeStringDict = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])

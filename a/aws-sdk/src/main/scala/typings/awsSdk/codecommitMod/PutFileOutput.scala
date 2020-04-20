@@ -24,7 +24,6 @@ object PutFileOutput {
   @scala.inline
   def apply(blobId: ObjectId, commitId: ObjectId, treeId: ObjectId): PutFileOutput = {
     val __obj = js.Dynamic.literal(blobId = blobId.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], treeId = treeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutFileOutput]
   }
 }

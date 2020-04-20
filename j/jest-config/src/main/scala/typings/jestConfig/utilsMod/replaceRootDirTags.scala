@@ -1,5 +1,6 @@
 package typings.jestConfig.utilsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jestConfig.jestConfigStrings._replaceRootDirTags
 import typings.jestTypes.configMod.Path
 import typings.std.RegExp
@@ -15,6 +16,6 @@ object replaceRootDirTags extends js.Object {
   def apply(rootDir: String, config: RegExp): RegExp = js.native
   def apply[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @jest/types.@jest/types/build/Config.Path}
-    */ _replaceRootDirTags with js.Any */](rootDir: String, config: T): T = js.native
+    */ _replaceRootDirTags with TopLevel[js.Any] */](rootDir: String, config: T): T = js.native
 }
 

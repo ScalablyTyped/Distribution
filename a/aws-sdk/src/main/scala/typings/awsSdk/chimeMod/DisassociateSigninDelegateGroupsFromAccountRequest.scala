@@ -20,7 +20,6 @@ object DisassociateSigninDelegateGroupsFromAccountRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, GroupNames: NonEmptyStringList): DisassociateSigninDelegateGroupsFromAccountRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], GroupNames = GroupNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateSigninDelegateGroupsFromAccountRequest]
   }
 }

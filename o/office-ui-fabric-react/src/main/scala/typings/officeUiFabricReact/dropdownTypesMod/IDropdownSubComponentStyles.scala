@@ -28,7 +28,6 @@ object IDropdownSubComponentStyles {
     panel: IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles]
   ): IDropdownSubComponentStyles = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], multiSelectItem = multiSelectItem.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDropdownSubComponentStyles]
   }
 }

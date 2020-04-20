@@ -14,7 +14,6 @@ object ShortestPathTree {
   @scala.inline
   def apply(getDistTo: Double => Double, hasDistTo: Double => Boolean, pathTo: Double => js.Array[Double]): ShortestPathTree = {
     val __obj = js.Dynamic.literal(getDistTo = js.Any.fromFunction1(getDistTo), hasDistTo = js.Any.fromFunction1(hasDistTo), pathTo = js.Any.fromFunction1(pathTo))
-  
     __obj.asInstanceOf[ShortestPathTree]
   }
 }

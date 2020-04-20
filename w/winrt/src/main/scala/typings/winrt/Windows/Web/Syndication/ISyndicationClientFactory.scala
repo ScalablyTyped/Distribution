@@ -13,7 +13,6 @@ object ISyndicationClientFactory {
   @scala.inline
   def apply(createSyndicationClient: PasswordCredential => SyndicationClient): ISyndicationClientFactory = {
     val __obj = js.Dynamic.literal(createSyndicationClient = js.Any.fromFunction1(createSyndicationClient))
-  
     __obj.asInstanceOf[ISyndicationClientFactory]
   }
 }

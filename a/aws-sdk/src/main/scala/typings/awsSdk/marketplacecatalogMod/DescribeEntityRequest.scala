@@ -20,7 +20,6 @@ object DescribeEntityRequest {
   @scala.inline
   def apply(Catalog: Catalog, EntityId: ResourceId): DescribeEntityRequest = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], EntityId = EntityId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeEntityRequest]
   }
 }

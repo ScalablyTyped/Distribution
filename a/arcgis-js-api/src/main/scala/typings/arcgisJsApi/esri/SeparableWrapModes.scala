@@ -34,7 +34,6 @@ object SeparableWrapModes {
     vertical: clamp | repeat | mirror
   ): SeparableWrapModes = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), horizontal = horizontal.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertical = vertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SeparableWrapModes]
   }
 }

@@ -12,7 +12,6 @@ object TextMetrics {
   @scala.inline
   def apply(width: Double): TextMetrics = {
     val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextMetrics]
   }
 }

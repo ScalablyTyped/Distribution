@@ -12,7 +12,6 @@ object RandomBase {
   @scala.inline
   def apply(nextValue: () => Double): RandomBase = {
     val __obj = js.Dynamic.literal(nextValue = js.Any.fromFunction0(nextValue))
-  
     __obj.asInstanceOf[RandomBase]
   }
 }

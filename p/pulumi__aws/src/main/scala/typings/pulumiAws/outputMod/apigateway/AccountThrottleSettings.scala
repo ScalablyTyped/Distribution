@@ -20,7 +20,6 @@ object AccountThrottleSettings {
   @scala.inline
   def apply(burstLimit: Double, rateLimit: Double): AccountThrottleSettings = {
     val __obj = js.Dynamic.literal(burstLimit = burstLimit.asInstanceOf[js.Any], rateLimit = rateLimit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountThrottleSettings]
   }
 }

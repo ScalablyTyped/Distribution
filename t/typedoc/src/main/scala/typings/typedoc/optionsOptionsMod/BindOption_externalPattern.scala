@@ -1,5 +1,6 @@
 package typings.typedoc.optionsOptionsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.PropertyKey
 import typings.typedoc.AnonApplicationApplication
 import typings.typedoc.AnonOptionsOptions
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object BindOption_externalPattern extends js.Object {
   def apply(name: externalPattern): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with typings.typedoc.typedocStrings.BindOption with js.Any, 
+    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with typings.typedoc.typedocStrings.BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native

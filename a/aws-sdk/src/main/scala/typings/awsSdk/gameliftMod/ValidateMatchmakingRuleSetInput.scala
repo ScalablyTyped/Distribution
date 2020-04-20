@@ -16,7 +16,6 @@ object ValidateMatchmakingRuleSetInput {
   @scala.inline
   def apply(RuleSetBody: RuleSetBody): ValidateMatchmakingRuleSetInput = {
     val __obj = js.Dynamic.literal(RuleSetBody = RuleSetBody.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidateMatchmakingRuleSetInput]
   }
 }

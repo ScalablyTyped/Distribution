@@ -13,7 +13,6 @@ object Capabilities {
   @scala.inline
   def apply(optional: js.Array[_], required: js.Array[_]): Capabilities = {
     val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Capabilities]
   }
 }

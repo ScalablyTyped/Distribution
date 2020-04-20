@@ -14,14 +14,12 @@ trait Rating extends js.Object
 
 object Rating {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def g: typings.reactGravatar.reactGravatarStrings.g = "g".asInstanceOf[typings.reactGravatar.reactGravatarStrings.g]
   @scala.inline
-  def g: typings.reactGravatar.reactGravatarStrings.g = this.cast("g")
+  def pg: typings.reactGravatar.reactGravatarStrings.pg = "pg".asInstanceOf[typings.reactGravatar.reactGravatarStrings.pg]
   @scala.inline
-  def pg: typings.reactGravatar.reactGravatarStrings.pg = this.cast("pg")
+  def r: typings.reactGravatar.reactGravatarStrings.r = "r".asInstanceOf[typings.reactGravatar.reactGravatarStrings.r]
   @scala.inline
-  def r: typings.reactGravatar.reactGravatarStrings.r = this.cast("r")
-  @scala.inline
-  def x: typings.reactGravatar.reactGravatarStrings.x = this.cast("x")
+  def x: typings.reactGravatar.reactGravatarStrings.x = "x".asInstanceOf[typings.reactGravatar.reactGravatarStrings.x]
 }
 

@@ -29,7 +29,6 @@ object LevelDownIterator {
     seek: Bytes => Unit
   ): LevelDownIterator = {
     val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], end = js.Any.fromFunction1(end), fastFuture = fastFuture.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], next = js.Any.fromFunction1(next), seek = js.Any.fromFunction1(seek))
-  
     __obj.asInstanceOf[LevelDownIterator]
   }
 }

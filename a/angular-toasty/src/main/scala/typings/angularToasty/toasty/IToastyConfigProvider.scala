@@ -14,7 +14,6 @@ object IToastyConfigProvider {
   @scala.inline
   def apply($get: () => IGlobalConfig, setConfig: IGlobalConfig => Unit): IToastyConfigProvider = {
     val __obj = js.Dynamic.literal($get = js.Any.fromFunction0($get), setConfig = js.Any.fromFunction1(setConfig))
-  
     __obj.asInstanceOf[IToastyConfigProvider]
   }
 }

@@ -13,7 +13,6 @@ object PolygonProps {
   @scala.inline
   def apply(points: String): PolygonProps = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PolygonProps]
   }
 }

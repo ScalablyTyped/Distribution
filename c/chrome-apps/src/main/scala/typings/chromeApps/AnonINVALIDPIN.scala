@@ -24,7 +24,6 @@ object AnonINVALIDPIN {
     UNKNOWN_ERROR: UNKNOWN_ERROR
   ): AnonINVALIDPIN = {
     val __obj = js.Dynamic.literal(INVALID_PIN = INVALID_PIN.asInstanceOf[js.Any], INVALID_PUK = INVALID_PUK.asInstanceOf[js.Any], MAX_ATTEMPTS_EXCEEDED = MAX_ATTEMPTS_EXCEEDED.asInstanceOf[js.Any], UNKNOWN_ERROR = UNKNOWN_ERROR.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonINVALIDPIN]
   }
 }

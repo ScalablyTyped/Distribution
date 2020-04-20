@@ -13,7 +13,6 @@ object Maybe {
   @scala.inline
   def apply[A](constructor: AnonType): Maybe[A] = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Maybe[A]]
   }
 }

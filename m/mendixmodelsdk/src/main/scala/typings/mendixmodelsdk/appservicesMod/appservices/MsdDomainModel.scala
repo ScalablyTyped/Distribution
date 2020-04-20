@@ -24,9 +24,9 @@ class MsdDomainModel protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMsdDomainModel: IModel = js.native
-  def associations(): IList[MsdAssociation] = js.native
-  def containerAsMsd(): Msd = js.native
-  def entities(): IList[MsdEntity] = js.native
+  def associations: IList[MsdAssociation] = js.native
+  def containerAsMsd: Msd = js.native
+  def entities: IList[MsdEntity] = js.native
 }
 
 /* static members */

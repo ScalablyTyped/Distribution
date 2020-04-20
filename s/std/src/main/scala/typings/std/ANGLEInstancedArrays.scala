@@ -21,7 +21,6 @@ object ANGLEInstancedArrays {
     vertexAttribDivisorANGLE: (GLuint, GLuint) => Unit
   ): ANGLEInstancedArrays = {
     val __obj = js.Dynamic.literal(VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE = VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE.asInstanceOf[js.Any], drawArraysInstancedANGLE = js.Any.fromFunction4(drawArraysInstancedANGLE), drawElementsInstancedANGLE = js.Any.fromFunction5(drawElementsInstancedANGLE), vertexAttribDivisorANGLE = js.Any.fromFunction2(vertexAttribDivisorANGLE))
-  
     __obj.asInstanceOf[ANGLEInstancedArrays]
   }
 }

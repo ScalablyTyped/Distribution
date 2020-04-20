@@ -12,7 +12,6 @@ object AnonEnumValuesAnonCloak {
   @scala.inline
   def apply(enumValues: AnonCloak): AnonEnumValuesAnonCloak = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonCloak]
   }
 }

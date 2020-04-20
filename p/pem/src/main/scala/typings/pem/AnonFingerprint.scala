@@ -12,7 +12,6 @@ object AnonFingerprint {
   @scala.inline
   def apply(fingerprint: String): AnonFingerprint = {
     val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFingerprint]
   }
 }

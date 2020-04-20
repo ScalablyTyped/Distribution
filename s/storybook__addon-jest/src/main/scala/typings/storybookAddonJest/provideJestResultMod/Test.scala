@@ -14,7 +14,6 @@ object Test {
   @scala.inline
   def apply(name: String, result: AnonAssertionResults): Test = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Test]
   }
 }

@@ -44,7 +44,6 @@ object FlowSchemaSpec {
     rules: js.Array[PolicyRulesWithSubjects]
   ): FlowSchemaSpec = {
     val __obj = js.Dynamic.literal(distinguisherMethod = distinguisherMethod.asInstanceOf[js.Any], matchingPrecedence = matchingPrecedence.asInstanceOf[js.Any], priorityLevelConfiguration = priorityLevelConfiguration.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FlowSchemaSpec]
   }
 }

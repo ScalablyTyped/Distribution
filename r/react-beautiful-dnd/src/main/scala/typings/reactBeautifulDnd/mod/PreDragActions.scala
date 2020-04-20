@@ -26,7 +26,6 @@ object PreDragActions {
     snapLift: () => SnapDragActions
   ): PreDragActions = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), fluidLift = js.Any.fromFunction1(fluidLift), isActive = js.Any.fromFunction0(isActive), shouldRespectForcePress = js.Any.fromFunction0(shouldRespectForcePress), snapLift = js.Any.fromFunction0(snapLift))
-  
     __obj.asInstanceOf[PreDragActions]
   }
 }

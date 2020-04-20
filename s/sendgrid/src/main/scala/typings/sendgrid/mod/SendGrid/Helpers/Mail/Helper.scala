@@ -143,7 +143,6 @@ object Helper {
     TrackingSettings: Instantiable0[TrackingSettings]
   ): Helper = {
     val __obj = js.Dynamic.literal(Asm = Asm.asInstanceOf[js.Any], Attachment = Attachment.asInstanceOf[js.Any], Bcc = Bcc.asInstanceOf[js.Any], BypassListManagement = BypassListManagement.asInstanceOf[js.Any], Category = Category.asInstanceOf[js.Any], ClickTracking = ClickTracking.asInstanceOf[js.Any], Content = Content.asInstanceOf[js.Any], CustomArgs = CustomArgs.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], Footer = Footer.asInstanceOf[js.Any], Ganalytics = Ganalytics.asInstanceOf[js.Any], Header = Header.asInstanceOf[js.Any], Mail = Mail.asInstanceOf[js.Any], MailSettings = MailSettings.asInstanceOf[js.Any], OpenTracking = OpenTracking.asInstanceOf[js.Any], Personalization = Personalization.asInstanceOf[js.Any], SandBoxMode = SandBoxMode.asInstanceOf[js.Any], Section = Section.asInstanceOf[js.Any], SpamCheck = SpamCheck.asInstanceOf[js.Any], SubscriptionTracking = SubscriptionTracking.asInstanceOf[js.Any], Substitution = Substitution.asInstanceOf[js.Any], TrackingSettings = TrackingSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Helper]
   }
 }

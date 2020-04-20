@@ -12,7 +12,6 @@ object MetadataOptions {
   @scala.inline
   def apply(metadataType: MetadataOptionsType): MetadataOptions = {
     val __obj = js.Dynamic.literal(metadataType = metadataType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetadataOptions]
   }
 }

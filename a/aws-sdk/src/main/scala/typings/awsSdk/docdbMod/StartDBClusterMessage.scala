@@ -16,7 +16,6 @@ object StartDBClusterMessage {
   @scala.inline
   def apply(DBClusterIdentifier: String): StartDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartDBClusterMessage]
   }
 }

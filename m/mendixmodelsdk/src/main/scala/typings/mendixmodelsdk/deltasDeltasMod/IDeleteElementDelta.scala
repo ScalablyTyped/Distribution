@@ -15,7 +15,6 @@ object IDeleteElementDelta {
   @scala.inline
   def apply(deltaType: DELETE_ELEMENT, elementId: String, unitId: String): IDeleteElementDelta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDeleteElementDelta]
   }
 }

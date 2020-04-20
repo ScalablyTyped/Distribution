@@ -13,7 +13,6 @@ object OnItemClickListener {
   @scala.inline
   def apply(onItemClick: (typings.androiduix.android.widget.AdapterView[_], View, Double, Double) => Unit): OnItemClickListener = {
     val __obj = js.Dynamic.literal(onItemClick = js.Any.fromFunction4(onItemClick))
-  
     __obj.asInstanceOf[OnItemClickListener]
   }
 }

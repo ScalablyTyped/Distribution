@@ -12,7 +12,6 @@ object DataCollectedEventDataType {
   @scala.inline
   def apply(value: js.Array[js.Object]): DataCollectedEventDataType = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataCollectedEventDataType]
   }
 }

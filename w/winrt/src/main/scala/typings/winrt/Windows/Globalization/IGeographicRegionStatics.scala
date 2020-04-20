@@ -12,7 +12,6 @@ object IGeographicRegionStatics {
   @scala.inline
   def apply(isSupported: String => Boolean): IGeographicRegionStatics = {
     val __obj = js.Dynamic.literal(isSupported = js.Any.fromFunction1(isSupported))
-  
     __obj.asInstanceOf[IGeographicRegionStatics]
   }
 }

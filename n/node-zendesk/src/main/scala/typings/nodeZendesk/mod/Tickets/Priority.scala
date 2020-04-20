@@ -14,14 +14,12 @@ trait Priority extends js.Object
 
 object Priority {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.nodeZendesk.nodeZendeskStrings.high = "high".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.high]
   @scala.inline
-  def high: typings.nodeZendesk.nodeZendeskStrings.high = this.cast("high")
+  def low: typings.nodeZendesk.nodeZendeskStrings.low = "low".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.low]
   @scala.inline
-  def low: typings.nodeZendesk.nodeZendeskStrings.low = this.cast("low")
+  def normal: typings.nodeZendesk.nodeZendeskStrings.normal = "normal".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.normal]
   @scala.inline
-  def normal: typings.nodeZendesk.nodeZendeskStrings.normal = this.cast("normal")
-  @scala.inline
-  def urgent: typings.nodeZendesk.nodeZendeskStrings.urgent = this.cast("urgent")
+  def urgent: typings.nodeZendesk.nodeZendeskStrings.urgent = "urgent".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.urgent]
 }
 

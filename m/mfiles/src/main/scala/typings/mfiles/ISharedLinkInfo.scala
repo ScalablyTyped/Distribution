@@ -30,7 +30,6 @@ object ISharedLinkInfo {
     Set: (IObjVer, IFileVer) => Unit
   ): ISharedLinkInfo = {
     val __obj = js.Dynamic.literal(AccessKey = AccessKey.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), CreatedByUser = CreatedByUser.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], ExpirationTime = ExpirationTime.asInstanceOf[js.Any], FileVer = FileVer.asInstanceOf[js.Any], ObjVer = ObjVer.asInstanceOf[js.Any], Set = js.Any.fromFunction2(Set))
-  
     __obj.asInstanceOf[ISharedLinkInfo]
   }
 }

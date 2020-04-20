@@ -23,31 +23,26 @@ object ConnectionStatus {
   @scala.inline
   def AnonError(error: Error, kind: ERROR): ConnectionStatus = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionStatus]
   }
   @scala.inline
   def Anon1(kind: CONNECTED): ConnectionStatus = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionStatus]
   }
   @scala.inline
   def Anon2(kind: CLOSED): ConnectionStatus = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionStatus]
   }
   @scala.inline
   def Anon0(kind: CONNECTING): ConnectionStatus = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionStatus]
   }
   @scala.inline
   def AnonKind(kind: NOT_CONNECTED): ConnectionStatus = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionStatus]
   }
 }

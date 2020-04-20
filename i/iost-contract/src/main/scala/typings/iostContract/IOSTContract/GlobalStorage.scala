@@ -24,7 +24,6 @@ object GlobalStorage {
     globalMapLen: (String, String) => Double
   ): GlobalStorage = {
     val __obj = js.Dynamic.literal(globalGet = js.Any.fromFunction2(globalGet), globalHas = js.Any.fromFunction2(globalHas), globalMapGet = js.Any.fromFunction3(globalMapGet), globalMapHas = js.Any.fromFunction3(globalMapHas), globalMapKeys = js.Any.fromFunction2(globalMapKeys), globalMapLen = js.Any.fromFunction2(globalMapLen))
-  
     __obj.asInstanceOf[GlobalStorage]
   }
 }

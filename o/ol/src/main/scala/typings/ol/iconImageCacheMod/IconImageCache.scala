@@ -25,7 +25,6 @@ object IconImageCache {
     setSize: Double => Unit
   ): IconImageCache = {
     val __obj = js.Dynamic.literal(canExpireCache = js.Any.fromFunction0(canExpireCache), clear = js.Any.fromFunction0(clear), expire = js.Any.fromFunction0(expire), get = js.Any.fromFunction3(get), set = js.Any.fromFunction4(set), setSize = js.Any.fromFunction1(setSize))
-  
     __obj.asInstanceOf[IconImageCache]
   }
 }

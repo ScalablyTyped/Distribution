@@ -20,7 +20,6 @@ object ConformancePackInputParameter {
   @scala.inline
   def apply(ParameterName: ParameterName, ParameterValue: ParameterValue): ConformancePackInputParameter = {
     val __obj = js.Dynamic.literal(ParameterName = ParameterName.asInstanceOf[js.Any], ParameterValue = ParameterValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConformancePackInputParameter]
   }
 }

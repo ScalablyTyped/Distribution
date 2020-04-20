@@ -14,7 +14,6 @@ object AnonHIGH {
   @scala.inline
   def apply(HIGH: String, LOW: String, NORMAL: String): AnonHIGH = {
     val __obj = js.Dynamic.literal(HIGH = HIGH.asInstanceOf[js.Any], LOW = LOW.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHIGH]
   }
 }

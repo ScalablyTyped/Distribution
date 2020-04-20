@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type JwtFromRequestFunction = js.Function1[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     java.lang.String | scala.Null
   ]
 }

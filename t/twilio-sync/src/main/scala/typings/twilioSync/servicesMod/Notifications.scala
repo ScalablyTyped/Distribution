@@ -13,7 +13,6 @@ object Notifications {
   @scala.inline
   def apply(connectionState: js.Any, updateToken: String => js.Promise[Notifications]): Notifications = {
     val __obj = js.Dynamic.literal(connectionState = connectionState.asInstanceOf[js.Any], updateToken = js.Any.fromFunction1(updateToken))
-  
     __obj.asInstanceOf[Notifications]
   }
 }

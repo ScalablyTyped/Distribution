@@ -13,7 +13,6 @@ object CustomMatcherResult {
   @scala.inline
   def apply(message: String | js.Function0[String], pass: Boolean): CustomMatcherResult = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomMatcherResult]
   }
 }

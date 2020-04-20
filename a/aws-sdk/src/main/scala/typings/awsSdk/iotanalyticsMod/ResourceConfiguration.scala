@@ -20,7 +20,6 @@ object ResourceConfiguration {
   @scala.inline
   def apply(computeType: ComputeType, volumeSizeInGB: VolumeSizeInGB): ResourceConfiguration = {
     val __obj = js.Dynamic.literal(computeType = computeType.asInstanceOf[js.Any], volumeSizeInGB = volumeSizeInGB.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceConfiguration]
   }
 }

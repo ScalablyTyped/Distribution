@@ -1,6 +1,6 @@
 package typings.baseui.selectMod
 
-import typings.baseui.AnonItem
+import typings.baseui.AnonEventItem
 import typings.baseui.AnonOptionState
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
@@ -51,7 +51,7 @@ object DropdownProps {
     multi: js.UndefOr[Boolean] = js.undefined,
     noResultsMsg: ReactNode = null,
     onActiveDescendantChange: /* id */ js.UndefOr[String] => Unit = null,
-    onItemSelect: /* args */ AnonItem => js.Any = null,
+    onItemSelect: /* args */ AnonEventItem => js.Any = null,
     options: Value = null,
     overrides: DropdownOverrides = null,
     required: js.UndefOr[Boolean] = js.undefined,

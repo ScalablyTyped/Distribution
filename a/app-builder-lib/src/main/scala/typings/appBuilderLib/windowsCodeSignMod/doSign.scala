@@ -1,0 +1,13 @@
+package typings.appBuilderLib.windowsCodeSignMod
+
+import typings.appBuilderLib.winPackagerMod.WinPackager
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("app-builder-lib/out/codeSign/windowsCodeSign", "doSign")
+@js.native
+object doSign extends js.Object {
+  def apply(configuration: CustomWindowsSignTaskConfiguration, packager: WinPackager): js.Promise[Unit] = js.native
+}
+

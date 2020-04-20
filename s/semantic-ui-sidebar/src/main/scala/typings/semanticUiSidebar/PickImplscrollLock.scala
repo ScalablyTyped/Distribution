@@ -13,7 +13,6 @@ object PickImplscrollLock {
   @scala.inline
   def apply(scrollLock: Boolean): PickImplscrollLock = {
     val __obj = js.Dynamic.literal(scrollLock = scrollLock.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplscrollLock]
   }
 }

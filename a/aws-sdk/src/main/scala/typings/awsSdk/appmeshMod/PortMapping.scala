@@ -20,7 +20,6 @@ object PortMapping {
   @scala.inline
   def apply(port: PortNumber, protocol: PortProtocol): PortMapping = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PortMapping]
   }
 }

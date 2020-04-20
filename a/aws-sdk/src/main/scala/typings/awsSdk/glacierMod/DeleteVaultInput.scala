@@ -20,7 +20,6 @@ object DeleteVaultInput {
   @scala.inline
   def apply(accountId: String, vaultName: String): DeleteVaultInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVaultInput]
   }
 }

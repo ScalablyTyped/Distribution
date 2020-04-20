@@ -13,8 +13,7 @@ object varsMod extends js.Object {
   var assumeRole: js.UndefOr[AnonExternalId] = js.native
   var endpoints: js.UndefOr[js.Array[AnonAccessanalyzer]] = js.native
   var forbiddenAccountIds: js.UndefOr[js.Array[String]] = js.native
-  var ignoreTagPrefixes: js.UndefOr[js.Array[String]] = js.native
-  var ignoreTags: js.UndefOr[js.Array[String]] = js.native
+  var ignoreTags: js.UndefOr[AnonKeyPrefixes] = js.native
   var insecure: js.UndefOr[Boolean] = js.native
   var maxRetries: js.UndefOr[Double] = js.native
   var profile: js.UndefOr[String] = js.native

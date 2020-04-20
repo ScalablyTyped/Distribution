@@ -14,10 +14,8 @@ trait AnimationTransitionInstructionType extends js.Object
 
 object AnimationTransitionInstructionType {
   @scala.inline
-  def TimelineAnimation: `1` = this.cast(1)
+  def TimelineAnimation: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def TransitionAnimation: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TransitionAnimation: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -26,7 +26,6 @@ object Profile {
     timeStamp: Date
   ): Profile = {
     val __obj = js.Dynamic.literal(applicationContainer = applicationContainer.asInstanceOf[js.Any], coreAttributes = coreAttributes.asInstanceOf[js.Any], coreRevision = coreRevision.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Profile]
   }
 }

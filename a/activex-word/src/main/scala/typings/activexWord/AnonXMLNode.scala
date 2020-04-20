@@ -13,7 +13,6 @@ object AnonXMLNode {
   @scala.inline
   def apply(XMLNode: XMLNode): AnonXMLNode = {
     val __obj = js.Dynamic.literal(XMLNode = XMLNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonXMLNode]
   }
 }

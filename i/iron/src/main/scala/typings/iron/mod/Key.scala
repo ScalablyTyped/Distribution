@@ -15,7 +15,6 @@ object Key {
   @scala.inline
   def apply(iv: String, key: Buffer, salt: String): Key = {
     val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Key]
   }
 }

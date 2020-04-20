@@ -49,84 +49,82 @@ trait Provider extends js.Object
 
 object Provider {
   @scala.inline
-  def arcgisonline: typings.bell.bellStrings.arcgisonline = this.cast("arcgisonline")
+  def arcgisonline: typings.bell.bellStrings.arcgisonline = "arcgisonline".asInstanceOf[typings.bell.bellStrings.arcgisonline]
   @scala.inline
-  def auth0: typings.bell.bellStrings.auth0 = this.cast("auth0")
+  def auth0: typings.bell.bellStrings.auth0 = "auth0".asInstanceOf[typings.bell.bellStrings.auth0]
   @scala.inline
-  def azuread: typings.bell.bellStrings.azuread = this.cast("azuread")
+  def azuread: typings.bell.bellStrings.azuread = "azuread".asInstanceOf[typings.bell.bellStrings.azuread]
   @scala.inline
-  def bitbucket: typings.bell.bellStrings.bitbucket = this.cast("bitbucket")
+  def bitbucket: typings.bell.bellStrings.bitbucket = "bitbucket".asInstanceOf[typings.bell.bellStrings.bitbucket]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def digitalocean: typings.bell.bellStrings.digitalocean = "digitalocean".asInstanceOf[typings.bell.bellStrings.digitalocean]
   @scala.inline
-  def digitalocean: typings.bell.bellStrings.digitalocean = this.cast("digitalocean")
+  def discord: typings.bell.bellStrings.discord = "discord".asInstanceOf[typings.bell.bellStrings.discord]
   @scala.inline
-  def discord: typings.bell.bellStrings.discord = this.cast("discord")
+  def dropbox: typings.bell.bellStrings.dropbox = "dropbox".asInstanceOf[typings.bell.bellStrings.dropbox]
   @scala.inline
-  def dropbox: typings.bell.bellStrings.dropbox = this.cast("dropbox")
+  def dropboxV2: typings.bell.bellStrings.dropboxV2 = "dropboxV2".asInstanceOf[typings.bell.bellStrings.dropboxV2]
   @scala.inline
-  def dropboxV2: typings.bell.bellStrings.dropboxV2 = this.cast("dropboxV2")
+  def facebook: typings.bell.bellStrings.facebook = "facebook".asInstanceOf[typings.bell.bellStrings.facebook]
   @scala.inline
-  def facebook: typings.bell.bellStrings.facebook = this.cast("facebook")
+  def fitbit: typings.bell.bellStrings.fitbit = "fitbit".asInstanceOf[typings.bell.bellStrings.fitbit]
   @scala.inline
-  def fitbit: typings.bell.bellStrings.fitbit = this.cast("fitbit")
+  def foursquare: typings.bell.bellStrings.foursquare = "foursquare".asInstanceOf[typings.bell.bellStrings.foursquare]
   @scala.inline
-  def foursquare: typings.bell.bellStrings.foursquare = this.cast("foursquare")
+  def github: typings.bell.bellStrings.github = "github".asInstanceOf[typings.bell.bellStrings.github]
   @scala.inline
-  def github: typings.bell.bellStrings.github = this.cast("github")
+  def gitlab: typings.bell.bellStrings.gitlab = "gitlab".asInstanceOf[typings.bell.bellStrings.gitlab]
   @scala.inline
-  def gitlab: typings.bell.bellStrings.gitlab = this.cast("gitlab")
+  def google: typings.bell.bellStrings.google = "google".asInstanceOf[typings.bell.bellStrings.google]
   @scala.inline
-  def google: typings.bell.bellStrings.google = this.cast("google")
+  def googleplus: typings.bell.bellStrings.googleplus = "googleplus".asInstanceOf[typings.bell.bellStrings.googleplus]
   @scala.inline
-  def googleplus: typings.bell.bellStrings.googleplus = this.cast("googleplus")
+  def instagram: typings.bell.bellStrings.instagram = "instagram".asInstanceOf[typings.bell.bellStrings.instagram]
   @scala.inline
-  def instagram: typings.bell.bellStrings.instagram = this.cast("instagram")
+  def linkedin: typings.bell.bellStrings.linkedin = "linkedin".asInstanceOf[typings.bell.bellStrings.linkedin]
   @scala.inline
-  def linkedin: typings.bell.bellStrings.linkedin = this.cast("linkedin")
+  def live: typings.bell.bellStrings.live = "live".asInstanceOf[typings.bell.bellStrings.live]
   @scala.inline
-  def live: typings.bell.bellStrings.live = this.cast("live")
+  def medium: typings.bell.bellStrings.medium = "medium".asInstanceOf[typings.bell.bellStrings.medium]
   @scala.inline
-  def medium: typings.bell.bellStrings.medium = this.cast("medium")
+  def meetup: typings.bell.bellStrings.meetup = "meetup".asInstanceOf[typings.bell.bellStrings.meetup]
   @scala.inline
-  def meetup: typings.bell.bellStrings.meetup = this.cast("meetup")
+  def mixer: typings.bell.bellStrings.mixer = "mixer".asInstanceOf[typings.bell.bellStrings.mixer]
   @scala.inline
-  def mixer: typings.bell.bellStrings.mixer = this.cast("mixer")
+  def nest: typings.bell.bellStrings.nest = "nest".asInstanceOf[typings.bell.bellStrings.nest]
   @scala.inline
-  def nest: typings.bell.bellStrings.nest = this.cast("nest")
+  def office365: typings.bell.bellStrings.office365 = "office365".asInstanceOf[typings.bell.bellStrings.office365]
   @scala.inline
-  def office365: typings.bell.bellStrings.office365 = this.cast("office365")
+  def okta: typings.bell.bellStrings.okta = "okta".asInstanceOf[typings.bell.bellStrings.okta]
   @scala.inline
-  def okta: typings.bell.bellStrings.okta = this.cast("okta")
+  def phabricator: typings.bell.bellStrings.phabricator = "phabricator".asInstanceOf[typings.bell.bellStrings.phabricator]
   @scala.inline
-  def phabricator: typings.bell.bellStrings.phabricator = this.cast("phabricator")
+  def pingfed: typings.bell.bellStrings.pingfed = "pingfed".asInstanceOf[typings.bell.bellStrings.pingfed]
   @scala.inline
-  def pingfed: typings.bell.bellStrings.pingfed = this.cast("pingfed")
+  def pinterest: typings.bell.bellStrings.pinterest = "pinterest".asInstanceOf[typings.bell.bellStrings.pinterest]
   @scala.inline
-  def pinterest: typings.bell.bellStrings.pinterest = this.cast("pinterest")
+  def reddit: typings.bell.bellStrings.reddit = "reddit".asInstanceOf[typings.bell.bellStrings.reddit]
   @scala.inline
-  def reddit: typings.bell.bellStrings.reddit = this.cast("reddit")
+  def salesforce: typings.bell.bellStrings.salesforce = "salesforce".asInstanceOf[typings.bell.bellStrings.salesforce]
   @scala.inline
-  def salesforce: typings.bell.bellStrings.salesforce = this.cast("salesforce")
+  def slack: typings.bell.bellStrings.slack = "slack".asInstanceOf[typings.bell.bellStrings.slack]
   @scala.inline
-  def slack: typings.bell.bellStrings.slack = this.cast("slack")
+  def spotify: typings.bell.bellStrings.spotify = "spotify".asInstanceOf[typings.bell.bellStrings.spotify]
   @scala.inline
-  def spotify: typings.bell.bellStrings.spotify = this.cast("spotify")
+  def stripe: typings.bell.bellStrings.stripe = "stripe".asInstanceOf[typings.bell.bellStrings.stripe]
   @scala.inline
-  def stripe: typings.bell.bellStrings.stripe = this.cast("stripe")
+  def trakt: typings.bell.bellStrings.trakt = "trakt".asInstanceOf[typings.bell.bellStrings.trakt]
   @scala.inline
-  def trakt: typings.bell.bellStrings.trakt = this.cast("trakt")
+  def tumblr: typings.bell.bellStrings.tumblr = "tumblr".asInstanceOf[typings.bell.bellStrings.tumblr]
   @scala.inline
-  def tumblr: typings.bell.bellStrings.tumblr = this.cast("tumblr")
+  def twitch: typings.bell.bellStrings.twitch = "twitch".asInstanceOf[typings.bell.bellStrings.twitch]
   @scala.inline
-  def twitch: typings.bell.bellStrings.twitch = this.cast("twitch")
+  def twitter: typings.bell.bellStrings.twitter = "twitter".asInstanceOf[typings.bell.bellStrings.twitter]
   @scala.inline
-  def twitter: typings.bell.bellStrings.twitter = this.cast("twitter")
+  def vk: typings.bell.bellStrings.vk = "vk".asInstanceOf[typings.bell.bellStrings.vk]
   @scala.inline
-  def vk: typings.bell.bellStrings.vk = this.cast("vk")
+  def wordpress: typings.bell.bellStrings.wordpress = "wordpress".asInstanceOf[typings.bell.bellStrings.wordpress]
   @scala.inline
-  def wordpress: typings.bell.bellStrings.wordpress = this.cast("wordpress")
-  @scala.inline
-  def yahoo: typings.bell.bellStrings.yahoo = this.cast("yahoo")
+  def yahoo: typings.bell.bellStrings.yahoo = "yahoo".asInstanceOf[typings.bell.bellStrings.yahoo]
 }
 

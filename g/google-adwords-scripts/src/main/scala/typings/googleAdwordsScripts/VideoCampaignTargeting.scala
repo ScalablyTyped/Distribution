@@ -26,7 +26,6 @@ object VideoCampaignTargeting {
     targetedProximities: () => AdWordsSelector[TargetedProximity]
   ): VideoCampaignTargeting = {
     val __obj = js.Dynamic.literal(adSchedules = js.Any.fromFunction0(adSchedules), excludedContentLabels = js.Any.fromFunction0(excludedContentLabels), excludedLocations = js.Any.fromFunction0(excludedLocations), languages = js.Any.fromFunction0(languages), platforms = js.Any.fromFunction0(platforms), targetedLocations = js.Any.fromFunction0(targetedLocations), targetedProximities = js.Any.fromFunction0(targetedProximities))
-  
     __obj.asInstanceOf[VideoCampaignTargeting]
   }
 }

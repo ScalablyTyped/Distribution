@@ -43,7 +43,6 @@ object WebhookDefinition {
     targetPipeline: PipelineName
   ): WebhookDefinition = {
     val __obj = js.Dynamic.literal(authentication = authentication.asInstanceOf[js.Any], authenticationConfiguration = authenticationConfiguration.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], targetAction = targetAction.asInstanceOf[js.Any], targetPipeline = targetPipeline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebhookDefinition]
   }
 }

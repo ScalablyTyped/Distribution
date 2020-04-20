@@ -17,7 +17,6 @@ object AnonSegments {
   @scala.inline
   def apply(__type: String, column: Double, filename: String, lineno: Double, segments: js.Array[Node]): AnonSegments = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSegments]
   }
 }

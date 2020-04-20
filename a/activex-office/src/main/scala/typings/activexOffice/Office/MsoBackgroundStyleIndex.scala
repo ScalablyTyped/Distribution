@@ -38,34 +38,32 @@ trait MsoBackgroundStyleIndex extends js.Object
 
 object MsoBackgroundStyleIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBackgroundStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoBackgroundStyleMixed: `-2` = this.cast(-2)
+  def msoBackgroundStyleNotAPreset: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoBackgroundStyleNotAPreset: `0` = this.cast(0)
+  def msoBackgroundStylePreset1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoBackgroundStylePreset1: `1` = this.cast(1)
+  def msoBackgroundStylePreset10: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoBackgroundStylePreset10: `10` = this.cast(10)
+  def msoBackgroundStylePreset11: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoBackgroundStylePreset11: `11` = this.cast(11)
+  def msoBackgroundStylePreset12: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoBackgroundStylePreset12: `12` = this.cast(12)
+  def msoBackgroundStylePreset2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoBackgroundStylePreset2: `2` = this.cast(2)
+  def msoBackgroundStylePreset3: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoBackgroundStylePreset3: `3` = this.cast(3)
+  def msoBackgroundStylePreset4: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoBackgroundStylePreset4: `4` = this.cast(4)
+  def msoBackgroundStylePreset5: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoBackgroundStylePreset5: `5` = this.cast(5)
+  def msoBackgroundStylePreset6: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoBackgroundStylePreset6: `6` = this.cast(6)
+  def msoBackgroundStylePreset7: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoBackgroundStylePreset7: `7` = this.cast(7)
+  def msoBackgroundStylePreset8: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoBackgroundStylePreset8: `8` = this.cast(8)
-  @scala.inline
-  def msoBackgroundStylePreset9: `9` = this.cast(9)
+  def msoBackgroundStylePreset9: `9` = 9.asInstanceOf[`9`]
 }
 

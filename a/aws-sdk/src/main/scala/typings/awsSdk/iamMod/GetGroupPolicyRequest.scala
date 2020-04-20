@@ -20,7 +20,6 @@ object GetGroupPolicyRequest {
   @scala.inline
   def apply(GroupName: groupNameType, PolicyName: policyNameType): GetGroupPolicyRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGroupPolicyRequest]
   }
 }

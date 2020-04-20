@@ -24,7 +24,6 @@ object SetLoadBalancerPoliciesOfListenerInput {
   @scala.inline
   def apply(LoadBalancerName: AccessPointName, LoadBalancerPort: AccessPointPort, PolicyNames: PolicyNames): SetLoadBalancerPoliciesOfListenerInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], LoadBalancerPort = LoadBalancerPort.asInstanceOf[js.Any], PolicyNames = PolicyNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetLoadBalancerPoliciesOfListenerInput]
   }
 }

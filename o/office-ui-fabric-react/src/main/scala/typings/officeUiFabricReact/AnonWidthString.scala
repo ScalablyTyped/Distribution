@@ -12,7 +12,6 @@ object AnonWidthString {
   @scala.inline
   def apply(width: String): AnonWidthString = {
     val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWidthString]
   }
 }

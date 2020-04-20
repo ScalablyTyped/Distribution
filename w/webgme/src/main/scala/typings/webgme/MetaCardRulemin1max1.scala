@@ -19,7 +19,6 @@ object MetaCardRulemin1max1 {
   @scala.inline
   def apply(items: js.Array[Path], max: `1`, maxItems: js.Array[Double], min: `1`, minItems: js.Array[Double]): MetaCardRulemin1max1 = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], maxItems = maxItems.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], minItems = minItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetaCardRulemin1max1]
   }
 }

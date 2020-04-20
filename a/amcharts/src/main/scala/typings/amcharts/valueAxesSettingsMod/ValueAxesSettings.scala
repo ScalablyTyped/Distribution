@@ -158,7 +158,6 @@ object ValueAxesSettings {
     unitPosition: String
   ): ValueAxesSettings = {
     val __obj = js.Dynamic.literal(autoGridCount = autoGridCount.asInstanceOf[js.Any], axisAlpha = axisAlpha.asInstanceOf[js.Any], axisColor = axisColor.asInstanceOf[js.Any], axisThickness = axisThickness.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], dashLength = dashLength.asInstanceOf[js.Any], fillAlpha = fillAlpha.asInstanceOf[js.Any], fillColor = fillColor.asInstanceOf[js.Any], gridAlpha = gridAlpha.asInstanceOf[js.Any], gridColor = gridColor.asInstanceOf[js.Any], gridCount = gridCount.asInstanceOf[js.Any], gridThickness = gridThickness.asInstanceOf[js.Any], includeGuidesInMinMax = includeGuidesInMinMax.asInstanceOf[js.Any], includeHidden = includeHidden.asInstanceOf[js.Any], inside = inside.asInstanceOf[js.Any], integersOnly = integersOnly.asInstanceOf[js.Any], labelFrequency = labelFrequency.asInstanceOf[js.Any], labelsEnabled = labelsEnabled.asInstanceOf[js.Any], logarithmic = logarithmic.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], reversed = reversed.asInstanceOf[js.Any], showFirstLabel = showFirstLabel.asInstanceOf[js.Any], showLastLabel = showLastLabel.asInstanceOf[js.Any], stackType = stackType.asInstanceOf[js.Any], tickLength = tickLength.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any], unitPosition = unitPosition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValueAxesSettings]
   }
 }

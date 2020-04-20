@@ -13,7 +13,6 @@ object PointCloudLayerLayerviewCreateEvent {
   @scala.inline
   def apply(layerView: LayerView, view: View): PointCloudLayerLayerviewCreateEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PointCloudLayerLayerviewCreateEvent]
   }
 }

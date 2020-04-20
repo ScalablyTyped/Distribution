@@ -19,24 +19,22 @@ trait Orientation extends js.Object
 
 object Orientation {
   @scala.inline
-  def auto: typings.lightpick.lightpickStrings.auto = this.cast("auto")
+  def auto: typings.lightpick.lightpickStrings.auto = "auto".asInstanceOf[typings.lightpick.lightpickStrings.auto]
   @scala.inline
-  def bottom: typings.lightpick.lightpickStrings.bottom = this.cast("bottom")
+  def bottom: typings.lightpick.lightpickStrings.bottom = "bottom".asInstanceOf[typings.lightpick.lightpickStrings.bottom]
   @scala.inline
-  def `bottom left`: typings.lightpick.lightpickStrings.`bottom left` = this.cast("bottom left")
+  def `bottom left`: typings.lightpick.lightpickStrings.`bottom left` = ("bottom left").asInstanceOf[typings.lightpick.lightpickStrings.`bottom left`]
   @scala.inline
-  def `bottom right`: typings.lightpick.lightpickStrings.`bottom right` = this.cast("bottom right")
+  def `bottom right`: typings.lightpick.lightpickStrings.`bottom right` = ("bottom right").asInstanceOf[typings.lightpick.lightpickStrings.`bottom right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.lightpick.lightpickStrings.left = "left".asInstanceOf[typings.lightpick.lightpickStrings.left]
   @scala.inline
-  def left: typings.lightpick.lightpickStrings.left = this.cast("left")
+  def right: typings.lightpick.lightpickStrings.right = "right".asInstanceOf[typings.lightpick.lightpickStrings.right]
   @scala.inline
-  def right: typings.lightpick.lightpickStrings.right = this.cast("right")
+  def top: typings.lightpick.lightpickStrings.top = "top".asInstanceOf[typings.lightpick.lightpickStrings.top]
   @scala.inline
-  def top: typings.lightpick.lightpickStrings.top = this.cast("top")
+  def `top left`: typings.lightpick.lightpickStrings.`top left` = ("top left").asInstanceOf[typings.lightpick.lightpickStrings.`top left`]
   @scala.inline
-  def `top left`: typings.lightpick.lightpickStrings.`top left` = this.cast("top left")
-  @scala.inline
-  def `top right`: typings.lightpick.lightpickStrings.`top right` = this.cast("top right")
+  def `top right`: typings.lightpick.lightpickStrings.`top right` = ("top right").asInstanceOf[typings.lightpick.lightpickStrings.`top right`]
 }
 

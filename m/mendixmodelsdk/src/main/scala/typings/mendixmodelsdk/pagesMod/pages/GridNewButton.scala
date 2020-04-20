@@ -26,20 +26,20 @@ class GridNewButton protected () extends GridControlBarButton {
   ) = this()
   @JSName("model")
   var model_FGridNewButton: IModel = js.native
-  def editLocation(): NewButtonEditLocation = js.native
+  def editLocation: NewButtonEditLocation = js.native
   def editLocation(newValue: NewButtonEditLocation): js.Any = js.native
   def entity(): js.Any = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String | Null = js.native
+  def entityQualifiedName: String | Null = js.native
   @JSName("entity")
-  def entity_Union(): IEntity | Null = js.native
+  def entity_Union: IEntity | Null = js.native
   /**
     * In version 6.2.0: deleted
     * In version 6.0.0: deprecated
     */
-  def isPersistent(): Boolean = js.native
+  def isPersistent: Boolean = js.native
   def isPersistent(newValue: Boolean): js.Any = js.native
-  def pageSettings(): PageSettings = js.native
+  def pageSettings: PageSettings = js.native
   def pageSettings(newValue: PageSettings): js.Any = js.native
 }
 

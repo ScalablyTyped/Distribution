@@ -13,7 +13,6 @@ object PickImpllooping {
   @scala.inline
   def apply(looping: String): PickImpllooping = {
     val __obj = js.Dynamic.literal(looping = looping.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpllooping]
   }
 }

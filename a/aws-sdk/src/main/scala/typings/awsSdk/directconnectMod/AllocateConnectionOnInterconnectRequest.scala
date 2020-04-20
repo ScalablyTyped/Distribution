@@ -38,7 +38,6 @@ object AllocateConnectionOnInterconnectRequest {
     vlan: VLAN
   ): AllocateConnectionOnInterconnectRequest = {
     val __obj = js.Dynamic.literal(bandwidth = bandwidth.asInstanceOf[js.Any], connectionName = connectionName.asInstanceOf[js.Any], interconnectId = interconnectId.asInstanceOf[js.Any], ownerAccount = ownerAccount.asInstanceOf[js.Any], vlan = vlan.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AllocateConnectionOnInterconnectRequest]
   }
 }

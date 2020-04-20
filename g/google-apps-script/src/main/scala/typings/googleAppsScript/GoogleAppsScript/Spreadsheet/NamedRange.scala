@@ -27,7 +27,6 @@ object NamedRange {
     setRange: Range => NamedRange
   ): NamedRange = {
     val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName), getRange = js.Any.fromFunction0(getRange), remove = js.Any.fromFunction0(remove), setName = js.Any.fromFunction1(setName), setRange = js.Any.fromFunction1(setRange))
-  
     __obj.asInstanceOf[NamedRange]
   }
 }

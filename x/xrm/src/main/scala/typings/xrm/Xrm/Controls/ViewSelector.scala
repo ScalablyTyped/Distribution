@@ -31,7 +31,6 @@ object ViewSelector {
   @scala.inline
   def apply(getCurrentView: () => LookupValue, isVisible: () => Boolean, setCurrentView: LookupValue => Unit): ViewSelector = {
     val __obj = js.Dynamic.literal(getCurrentView = js.Any.fromFunction0(getCurrentView), isVisible = js.Any.fromFunction0(isVisible), setCurrentView = js.Any.fromFunction1(setCurrentView))
-  
     __obj.asInstanceOf[ViewSelector]
   }
 }

@@ -40,46 +40,44 @@ trait SVGPathCommand extends js.Object
 
 object SVGPathCommand {
   @scala.inline
-  def A: typings.highcharts.highchartsStrings.A = this.cast("A")
+  def A: typings.highcharts.highchartsStrings.A = "A".asInstanceOf[typings.highcharts.highchartsStrings.A]
   @scala.inline
-  def C: typings.highcharts.highchartsStrings.C = this.cast("C")
+  def C: typings.highcharts.highchartsStrings.C = "C".asInstanceOf[typings.highcharts.highchartsStrings.C]
   @scala.inline
-  def H: typings.highcharts.highchartsStrings.H = this.cast("H")
+  def H: typings.highcharts.highchartsStrings.H = "H".asInstanceOf[typings.highcharts.highchartsStrings.H]
   @scala.inline
-  def L: typings.highcharts.highchartsStrings.L = this.cast("L")
+  def L: typings.highcharts.highchartsStrings.L = "L".asInstanceOf[typings.highcharts.highchartsStrings.L]
   @scala.inline
-  def M: typings.highcharts.highchartsStrings.M = this.cast("M")
+  def M: typings.highcharts.highchartsStrings.M = "M".asInstanceOf[typings.highcharts.highchartsStrings.M]
   @scala.inline
-  def Q: typings.highcharts.highchartsStrings.Q = this.cast("Q")
+  def Q: typings.highcharts.highchartsStrings.Q = "Q".asInstanceOf[typings.highcharts.highchartsStrings.Q]
   @scala.inline
-  def S: typings.highcharts.highchartsStrings.S = this.cast("S")
+  def S: typings.highcharts.highchartsStrings.S = "S".asInstanceOf[typings.highcharts.highchartsStrings.S]
   @scala.inline
-  def T: typings.highcharts.highchartsStrings.T = this.cast("T")
+  def T: typings.highcharts.highchartsStrings.T = "T".asInstanceOf[typings.highcharts.highchartsStrings.T]
   @scala.inline
-  def V: typings.highcharts.highchartsStrings.V = this.cast("V")
+  def V: typings.highcharts.highchartsStrings.V = "V".asInstanceOf[typings.highcharts.highchartsStrings.V]
   @scala.inline
-  def Z: typings.highcharts.highchartsStrings.Z = this.cast("Z")
+  def Z: typings.highcharts.highchartsStrings.Z = "Z".asInstanceOf[typings.highcharts.highchartsStrings.Z]
   @scala.inline
-  def a: a_ = this.cast("a")
+  def a: a_ = "a".asInstanceOf[a_]
   @scala.inline
-  def c: c_ = this.cast("c")
+  def c: c_ = "c".asInstanceOf[c_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def h: h_ = "h".asInstanceOf[h_]
   @scala.inline
-  def h: h_ = this.cast("h")
+  def l: l_ = "l".asInstanceOf[l_]
   @scala.inline
-  def l: l_ = this.cast("l")
+  def m: m_ = "m".asInstanceOf[m_]
   @scala.inline
-  def m: m_ = this.cast("m")
+  def q: q_ = "q".asInstanceOf[q_]
   @scala.inline
-  def q: q_ = this.cast("q")
+  def s: s_ = "s".asInstanceOf[s_]
   @scala.inline
-  def s: s_ = this.cast("s")
+  def t: t_ = "t".asInstanceOf[t_]
   @scala.inline
-  def t: t_ = this.cast("t")
+  def v: v_ = "v".asInstanceOf[v_]
   @scala.inline
-  def v: v_ = this.cast("v")
-  @scala.inline
-  def z: z_ = this.cast("z")
+  def z: z_ = "z".asInstanceOf[z_]
 }
 

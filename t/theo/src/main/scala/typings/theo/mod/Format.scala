@@ -27,40 +27,38 @@ trait Format extends js.Object
 
 object Format {
   @scala.inline
-  def androidDotxml: typings.theo.theoStrings.androidDotxml = this.cast("android.xml")
+  def androidDotxml: typings.theo.theoStrings.androidDotxml = "android.xml".asInstanceOf[typings.theo.theoStrings.androidDotxml]
   @scala.inline
-  def auraDottokens: typings.theo.theoStrings.auraDottokens = this.cast("aura.tokens")
+  def auraDottokens: typings.theo.theoStrings.auraDottokens = "aura.tokens".asInstanceOf[typings.theo.theoStrings.auraDottokens]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def commonDotjs: typings.theo.theoStrings.commonDotjs = "common.js".asInstanceOf[typings.theo.theoStrings.commonDotjs]
   @scala.inline
-  def commonDotjs: typings.theo.theoStrings.commonDotjs = this.cast("common.js")
+  def cssmodulesDotcss: typings.theo.theoStrings.cssmodulesDotcss = "cssmodules.css".asInstanceOf[typings.theo.theoStrings.cssmodulesDotcss]
   @scala.inline
-  def cssmodulesDotcss: typings.theo.theoStrings.cssmodulesDotcss = this.cast("cssmodules.css")
+  def `custom-propertiesDotcss`: typings.theo.theoStrings.`custom-propertiesDotcss` = "custom-properties.css".asInstanceOf[typings.theo.theoStrings.`custom-propertiesDotcss`]
   @scala.inline
-  def `custom-propertiesDotcss`: typings.theo.theoStrings.`custom-propertiesDotcss` = this.cast("custom-properties.css")
+  def html: typings.theo.theoStrings.html = "html".asInstanceOf[typings.theo.theoStrings.html]
   @scala.inline
-  def html: typings.theo.theoStrings.html = this.cast("html")
+  def iosDotjson: typings.theo.theoStrings.iosDotjson = "ios.json".asInstanceOf[typings.theo.theoStrings.iosDotjson]
   @scala.inline
-  def iosDotjson: typings.theo.theoStrings.iosDotjson = this.cast("ios.json")
+  def json: typings.theo.theoStrings.json = "json".asInstanceOf[typings.theo.theoStrings.json]
   @scala.inline
-  def json: typings.theo.theoStrings.json = this.cast("json")
+  def less: typings.theo.theoStrings.less = "less".asInstanceOf[typings.theo.theoStrings.less]
   @scala.inline
-  def less: typings.theo.theoStrings.less = this.cast("less")
+  def listDotscss: typings.theo.theoStrings.listDotscss = "list.scss".asInstanceOf[typings.theo.theoStrings.listDotscss]
   @scala.inline
-  def listDotscss: typings.theo.theoStrings.listDotscss = this.cast("list.scss")
+  def mapDotcss: typings.theo.theoStrings.mapDotcss = "map.css".asInstanceOf[typings.theo.theoStrings.mapDotcss]
   @scala.inline
-  def mapDotcss: typings.theo.theoStrings.mapDotcss = this.cast("map.css")
+  def mapDotvariableDotscss: typings.theo.theoStrings.mapDotvariableDotscss = "map.variable.scss".asInstanceOf[typings.theo.theoStrings.mapDotvariableDotscss]
   @scala.inline
-  def mapDotvariableDotscss: typings.theo.theoStrings.mapDotvariableDotscss = this.cast("map.variable.scss")
+  def moduleDotjs: typings.theo.theoStrings.moduleDotjs = "module.js".asInstanceOf[typings.theo.theoStrings.moduleDotjs]
   @scala.inline
-  def moduleDotjs: typings.theo.theoStrings.moduleDotjs = this.cast("module.js")
+  def rawDotjson: typings.theo.theoStrings.rawDotjson = "raw.json".asInstanceOf[typings.theo.theoStrings.rawDotjson]
   @scala.inline
-  def rawDotjson: typings.theo.theoStrings.rawDotjson = this.cast("raw.json")
+  def sass: typings.theo.theoStrings.sass = "sass".asInstanceOf[typings.theo.theoStrings.sass]
   @scala.inline
-  def sass: typings.theo.theoStrings.sass = this.cast("sass")
+  def scss: typings.theo.theoStrings.scss = "scss".asInstanceOf[typings.theo.theoStrings.scss]
   @scala.inline
-  def scss: typings.theo.theoStrings.scss = this.cast("scss")
-  @scala.inline
-  def styl: typings.theo.theoStrings.styl = this.cast("styl")
+  def styl: typings.theo.theoStrings.styl = "styl".asInstanceOf[typings.theo.theoStrings.styl]
 }
 

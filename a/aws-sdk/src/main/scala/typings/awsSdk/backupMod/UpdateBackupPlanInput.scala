@@ -20,7 +20,6 @@ object UpdateBackupPlanInput {
   @scala.inline
   def apply(BackupPlan: BackupPlanInput, BackupPlanId: String): UpdateBackupPlanInput = {
     val __obj = js.Dynamic.literal(BackupPlan = BackupPlan.asInstanceOf[js.Any], BackupPlanId = BackupPlanId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateBackupPlanInput]
   }
 }

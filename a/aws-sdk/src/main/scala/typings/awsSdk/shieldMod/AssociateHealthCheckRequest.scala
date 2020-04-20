@@ -20,7 +20,6 @@ object AssociateHealthCheckRequest {
   @scala.inline
   def apply(HealthCheckArn: HealthCheckArn, ProtectionId: ProtectionId): AssociateHealthCheckRequest = {
     val __obj = js.Dynamic.literal(HealthCheckArn = HealthCheckArn.asInstanceOf[js.Any], ProtectionId = ProtectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateHealthCheckRequest]
   }
 }

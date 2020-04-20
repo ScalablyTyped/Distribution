@@ -12,7 +12,6 @@ object AnonPostalCode {
   @scala.inline
   def apply(postalCode: String | Double): AnonPostalCode = {
     val __obj = js.Dynamic.literal(postalCode = postalCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPostalCode]
   }
 }

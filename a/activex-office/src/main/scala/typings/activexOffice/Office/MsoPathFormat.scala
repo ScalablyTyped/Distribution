@@ -22,18 +22,16 @@ trait MsoPathFormat extends js.Object
 
 object MsoPathFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoPathType1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoPathType1: `1` = this.cast(1)
+  def msoPathType2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoPathType2: `2` = this.cast(2)
+  def msoPathType3: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoPathType3: `3` = this.cast(3)
+  def msoPathType4: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoPathType4: `4` = this.cast(4)
+  def msoPathTypeMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoPathTypeMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoPathTypeNone: `0` = this.cast(0)
+  def msoPathTypeNone: `0` = 0.asInstanceOf[`0`]
 }
 

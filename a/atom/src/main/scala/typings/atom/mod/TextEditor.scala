@@ -1,7 +1,7 @@
 package typings.atom.mod
 
-import typings.atom.Anon23
-import typings.atom.Anon24
+import typings.atom.Anon27
+import typings.atom.Anon28
 import typings.atom.AnonAllowPrevious
 import typings.atom.AnonAutoscroll
 import typings.atom.AnonCancel
@@ -65,7 +65,7 @@ class TextEditor () extends js.Object {
   def backwardsScanInBufferRange(regex: RegExp, range: RangeCompatible, iterator: js.Function1[/* params */ BufferScanResult, Unit]): Unit = js.native
   /** Convert a position in screen-coordinates to buffer-coordinates. */
   def bufferPositionForScreenPosition(bufferPosition: PointCompatible): Point = js.native
-  def bufferPositionForScreenPosition(bufferPosition: PointCompatible, options: Anon23): Point = js.native
+  def bufferPositionForScreenPosition(bufferPosition: PointCompatible, options: Anon27): Point = js.native
   /**
     *  Get the range in buffer coordinates of all tokens surrounding the cursor
     *  that match the given scope selector.
@@ -84,13 +84,13 @@ class TextEditor () extends js.Object {
   def clipBufferRange(range: RangeCompatible): Range = js.native
   /** Clip the given Point to a valid position on screen. */
   def clipScreenPosition(screenPosition: PointCompatible): Point = js.native
-  def clipScreenPosition(screenPosition: PointCompatible, options: Anon23): Point = js.native
+  def clipScreenPosition(screenPosition: PointCompatible, options: Anon27): Point = js.native
   /**
     *  Clip the start and end of the given range to valid positions on screen.
     *  See ::clipScreenPosition for more information.
     */
   def clipScreenRange(range: RangeCompatible): Range = js.native
-  def clipScreenRange(range: RangeCompatible, options: Anon23): Range = js.native
+  def clipScreenRange(range: RangeCompatible, options: Anon27): Range = js.native
   // Clipboard Operations
   /** For each selection, copy the selected text. */
   def copySelectedText(): Unit = js.native
@@ -456,7 +456,7 @@ class TextEditor () extends js.Object {
     *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
     */
   def markBufferPosition(bufferPosition: PointCompatible): DisplayMarker = js.native
-  def markBufferPosition(bufferPosition: PointCompatible, options: Anon24): DisplayMarker = js.native
+  def markBufferPosition(bufferPosition: PointCompatible, options: Anon28): DisplayMarker = js.native
   // Markers
   /**
     *  Create a marker on the default marker layer with the given range in buffer coordinates.
@@ -687,7 +687,7 @@ class TextEditor () extends js.Object {
   // TextEditor Coordinates
   /** Convert a position in buffer-coordinates to screen-coordinates. */
   def screenPositionForBufferPosition(bufferPosition: PointCompatible): Point = js.native
-  def screenPositionForBufferPosition(bufferPosition: PointCompatible, options: Anon23): Point = js.native
+  def screenPositionForBufferPosition(bufferPosition: PointCompatible, options: Anon27): Point = js.native
   /** Convert a range in buffer-coordinates to screen-coordinates. */
   def screenRangeForBufferRange(bufferRange: RangeCompatible): Range = js.native
   /** Scrolls the editor to the given buffer position. */

@@ -49,7 +49,7 @@ object modelMod extends js.Object {
       * The current text change details.
       */
     @JSName("current")
-    def current_Union(): ITextState | Null = js.native
+    def current_Union: ITextState | Null = js.native
     @JSName("cursor")
     def cursor_MCompleterModel(): js.Any = js.native
     @JSName("cursor")
@@ -58,7 +58,7 @@ object modelMod extends js.Object {
       * The cursor details that the API has used to return matching options.
       */
     @JSName("cursor")
-    def cursor_Union(): ICursorSpan | Null = js.native
+    def cursor_Union: ICursorSpan | Null = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -76,7 +76,7 @@ object modelMod extends js.Object {
       * Get whether the model is disposed.
       */
     @JSName("isDisposed")
-    def isDisposed_MCompleterModel(): Boolean = js.native
+    def isDisposed_MCompleterModel: Boolean = js.native
     @JSName("original")
     def original_MCompleterModel(): js.Any = js.native
     @JSName("original")
@@ -85,12 +85,12 @@ object modelMod extends js.Object {
       * The original completion request details.
       */
     @JSName("original")
-    def original_Union(): ITextState | Null = js.native
+    def original_Union: ITextState | Null = js.native
     /**
       * The query against which items are filtered.
       */
     @JSName("query")
-    def query_MCompleterModel(): String = js.native
+    def query_MCompleterModel: String = js.native
     @JSName("query")
     def query_MCompleterModel(newValue: String): js.Any = js.native
     def setOptions(newValue: IterableOrArrayLike[String], typeMap: TypeMap): Unit = js.native
@@ -98,12 +98,12 @@ object modelMod extends js.Object {
       * A signal emitted when state of the completer menu changes.
       */
     @JSName("stateChanged")
-    def stateChanged_MCompleterModel(): ISignal[this.type, Unit] = js.native
+    def stateChanged_MCompleterModel: ISignal[this.type, Unit] = js.native
     /**
       * A flag that is true when the model value was modified by a subset match.
       */
     @JSName("subsetMatch")
-    def subsetMatch_MCompleterModel(): Boolean = js.native
+    def subsetMatch_MCompleterModel: Boolean = js.native
     @JSName("subsetMatch")
     def subsetMatch_MCompleterModel(newValue: Boolean): js.Any = js.native
   }

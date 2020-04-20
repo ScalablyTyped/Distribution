@@ -15,7 +15,6 @@ object Result {
   @scala.inline
   def apply(data: Buffer, destinationPath: String, sourcePath: String): Result = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], destinationPath = destinationPath.asInstanceOf[js.Any], sourcePath = sourcePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

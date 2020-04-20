@@ -17,7 +17,6 @@ object AnonView {
     View: View
   ): AnonView = {
     val __obj = js.Dynamic.literal(CommandBar = CommandBar.asInstanceOf[js.Any], View = View.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonView]
   }
 }

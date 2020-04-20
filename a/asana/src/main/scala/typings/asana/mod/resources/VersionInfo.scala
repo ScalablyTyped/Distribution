@@ -16,7 +16,6 @@ object VersionInfo {
   @scala.inline
   def apply(language: String, language_version: String, os: String, os_version: String, version: String): VersionInfo = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], language_version = language_version.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], os_version = os_version.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VersionInfo]
   }
 }

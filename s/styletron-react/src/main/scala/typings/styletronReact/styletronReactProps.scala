@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait styletronReactProps {
   @scala.inline
-  def DevConsumerProps: AnonChildren.type = typings.styletronReact.AnonChildren
+  def DevConsumerProps: AnonChildren.type = AnonChildren
   type DevConsumerProps = AnonChildren
   @scala.inline
   def DevProviderProps: typings.styletronReact.mod.DevProviderProps.type = typings.styletronReact.mod.DevProviderProps

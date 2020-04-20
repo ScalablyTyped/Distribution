@@ -24,37 +24,31 @@ object JsonPatchOperation {
   @scala.inline
   def AddOperation(op: add, path: String, value: js.Any): JsonPatchOperation = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JsonPatchOperation]
   }
   @scala.inline
   def MoveOperation(from: js.Any, op: move, path: String): JsonPatchOperation = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JsonPatchOperation]
   }
   @scala.inline
   def TestOperation(op: test, path: String, value: js.Any): JsonPatchOperation = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JsonPatchOperation]
   }
   @scala.inline
   def RemoveOperation(op: remove, path: String): JsonPatchOperation = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JsonPatchOperation]
   }
   @scala.inline
   def CopyOperation(from: js.Any, op: copy, path: String): JsonPatchOperation = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JsonPatchOperation]
   }
   @scala.inline
   def ReplaceOperation(op: replace, path: String, value: js.Any): JsonPatchOperation = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JsonPatchOperation]
   }
 }

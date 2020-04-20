@@ -23,7 +23,6 @@ object AnonDefinitions {
     widgets: StringDictionary[Widget]
   ): AnonDefinitions = {
     val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], formContext = formContext.asInstanceOf[js.Any], widgets = widgets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefinitions]
   }
 }

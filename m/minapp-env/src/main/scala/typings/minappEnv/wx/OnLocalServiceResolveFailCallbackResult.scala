@@ -15,7 +15,6 @@ object OnLocalServiceResolveFailCallbackResult {
   @scala.inline
   def apply(serviceName: String, serviceType: String): OnLocalServiceResolveFailCallbackResult = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnLocalServiceResolveFailCallbackResult]
   }
 }

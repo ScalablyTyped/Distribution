@@ -31,7 +31,6 @@ object ITaxIdVerification {
     verified_name: String
   ): ITaxIdVerification = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], verified_address = verified_address.asInstanceOf[js.Any], verified_name = verified_name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITaxIdVerification]
   }
 }

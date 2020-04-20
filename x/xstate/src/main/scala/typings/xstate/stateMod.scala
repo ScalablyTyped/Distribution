@@ -86,7 +86,7 @@ object stateMod extends js.Object {
       * @param parentStateValue
       */
     def matches[TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */](parentStateValue: TSV): Boolean = js.native
-    def toJSON(): Pick[this.type, Exclude[String, configuration | transitions]] = js.native
+    def toJSON(): Pick[this.type, Exclude[/* keyof this */ String, configuration | transitions]] = js.native
     /**
       * Returns an array of all the string leaf state node paths.
       * @param stateValue

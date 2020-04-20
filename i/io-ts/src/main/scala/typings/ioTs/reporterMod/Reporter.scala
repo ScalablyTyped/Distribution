@@ -13,7 +13,6 @@ object Reporter {
   @scala.inline
   def apply[A](report: Validation[_] => A): Reporter[A] = {
     val __obj = js.Dynamic.literal(report = js.Any.fromFunction1(report))
-  
     __obj.asInstanceOf[Reporter[A]]
   }
 }

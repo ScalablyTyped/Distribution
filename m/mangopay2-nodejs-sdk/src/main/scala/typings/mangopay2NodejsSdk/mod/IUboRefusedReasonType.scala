@@ -22,7 +22,6 @@ object IUboRefusedReasonType {
   @scala.inline
   def apply(InvalidDeclaredUbo: INVALID_DECLARED_UBO, InvalidUboDetails: INVALID_UBO_DETAILS): IUboRefusedReasonType = {
     val __obj = js.Dynamic.literal(InvalidDeclaredUbo = InvalidDeclaredUbo.asInstanceOf[js.Any], InvalidUboDetails = InvalidUboDetails.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUboRefusedReasonType]
   }
 }

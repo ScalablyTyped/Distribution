@@ -12,10 +12,8 @@ trait Placement extends js.Object
 
 object Placement {
   @scala.inline
-  def bottom: typings.rcMentions.rcMentionsStrings.bottom = this.cast("bottom")
+  def bottom: typings.rcMentions.rcMentionsStrings.bottom = "bottom".asInstanceOf[typings.rcMentions.rcMentionsStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def top: typings.rcMentions.rcMentionsStrings.top = this.cast("top")
+  def top: typings.rcMentions.rcMentionsStrings.top = "top".asInstanceOf[typings.rcMentions.rcMentionsStrings.top]
 }
 

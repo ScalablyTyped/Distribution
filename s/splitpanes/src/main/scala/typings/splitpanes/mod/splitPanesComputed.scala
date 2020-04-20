@@ -12,7 +12,6 @@ object splitPanesComputed {
   @scala.inline
   def apply(defaultWidth: () => Double): splitPanesComputed = {
     val __obj = js.Dynamic.literal(defaultWidth = js.Any.fromFunction0(defaultWidth))
-  
     __obj.asInstanceOf[splitPanesComputed]
   }
 }

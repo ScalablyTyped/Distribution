@@ -14,7 +14,6 @@ object SecurityClientDeps {
   @scala.inline
   def apply(client: IClient, token: String): SecurityClientDeps = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecurityClientDeps]
   }
 }

@@ -20,16 +20,14 @@ trait CursorDriverEnum extends js.Object
 
 object CursorDriverEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbUseClientBatchCursor: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def dbUseClientBatchCursor: `3` = this.cast(3)
+  def dbUseDefaultCursor: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def dbUseDefaultCursor: `-1` = this.cast(-1)
+  def dbUseNoCursor: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def dbUseNoCursor: `4` = this.cast(4)
+  def dbUseODBCCursor: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbUseODBCCursor: `1` = this.cast(1)
-  @scala.inline
-  def dbUseServerCursor: `2` = this.cast(2)
+  def dbUseServerCursor: `2` = 2.asInstanceOf[`2`]
 }
 

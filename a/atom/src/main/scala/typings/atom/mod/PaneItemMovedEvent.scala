@@ -17,7 +17,6 @@ object PaneItemMovedEvent {
   @scala.inline
   def apply(item: js.Object, newIndex: Double, oldIndex: Double): PaneItemMovedEvent = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PaneItemMovedEvent]
   }
 }

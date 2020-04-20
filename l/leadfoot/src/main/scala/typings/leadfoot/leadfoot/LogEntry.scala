@@ -26,7 +26,6 @@ object LogEntry {
   @scala.inline
   def apply(level: String, message: String, timestamp: Double): LogEntry = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogEntry]
   }
 }

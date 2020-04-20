@@ -92,6 +92,14 @@ trait GeoJSONLayerProperties
     */
   var objectIdField: js.UndefOr[String] = js.undefined
   /**
+    * An array of field names from the geoJSON file to include with each feature. To fetch the values from all fields in the layer, use `["*"]`. The required fields used for layer [rendering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#renderer), [labeling](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#labelingInfo), and setting the [elevation info](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#elevationInfo), along with the fields specified in `outFields` are used to populate [GeoJSONLayerView.availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#availableFields). Set this property to include the fields that will be used for client-side [queries](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoJSONLayerView.html#queryFeatures) if the fields are not part of required fields.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#outFields)
+    *
+    * @default null
+    */
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
+  /**
     * Indicates whether to display popups when features in the layer are clicked. The layer needs to have a [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#popupTemplate) to define what information should be displayed in the popup. Alternatively, a default popup template may be automatically used if [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#popupEnabled)
@@ -162,6 +170,7 @@ object GeoJSONLayerProperties {
     minScale: Int | Double = null,
     objectIdField: String = null,
     opacity: Int | Double = null,
+    outFields: js.Array[String] = null,
     popupEnabled: js.UndefOr[Boolean] = js.undefined,
     popupTemplate: PopupTemplateProperties = null,
     renderer: RendererProperties = null,
@@ -194,6 +203,7 @@ object GeoJSONLayerProperties {
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (objectIdField != null) __obj.updateDynamic("objectIdField")(objectIdField.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
     if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.asInstanceOf[js.Any])
     if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])

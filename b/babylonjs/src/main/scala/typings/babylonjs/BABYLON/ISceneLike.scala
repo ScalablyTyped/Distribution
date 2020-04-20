@@ -18,7 +18,6 @@ object ISceneLike {
     offlineProvider: IOfflineProvider
   ): ISceneLike = {
     val __obj = js.Dynamic.literal(_addPendingData = js.Any.fromFunction1(_addPendingData), _removePendingData = js.Any.fromFunction1(_removePendingData), offlineProvider = offlineProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISceneLike]
   }
 }

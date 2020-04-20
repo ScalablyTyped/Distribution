@@ -26,7 +26,6 @@ object ShellNameSpaceFavoritesSelectionChangeParameter {
     strUrl: String
   ): ShellNameSpaceFavoritesSelectionChangeParameter = {
     val __obj = js.Dynamic.literal(cItems = cItems.asInstanceOf[js.Any], cVisits = cVisits.asInstanceOf[js.Any], fAvailableOffline = fAvailableOffline.asInstanceOf[js.Any], hItem = hItem.asInstanceOf[js.Any], strDate = strDate.asInstanceOf[js.Any], strName = strName.asInstanceOf[js.Any], strUrl = strUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShellNameSpaceFavoritesSelectionChangeParameter]
   }
 }

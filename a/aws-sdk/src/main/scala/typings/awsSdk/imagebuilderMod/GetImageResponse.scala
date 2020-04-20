@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetImageResponse extends js.Object {
   /**
-    *  The image object. 
+    * The image object. 
     */
   var image: js.UndefOr[Image] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

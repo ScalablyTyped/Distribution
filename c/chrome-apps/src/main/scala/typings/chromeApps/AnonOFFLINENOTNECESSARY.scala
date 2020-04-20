@@ -17,7 +17,6 @@ object AnonOFFLINENOTNECESSARY {
   @scala.inline
   def apply(OFFLINE_NOT_NECESSARY: OFFLINE_NOT_NECESSARY, SAVE_FOR_OFFLINE: SAVE_FOR_OFFLINE, SHARE: SHARE): AnonOFFLINENOTNECESSARY = {
     val __obj = js.Dynamic.literal(OFFLINE_NOT_NECESSARY = OFFLINE_NOT_NECESSARY.asInstanceOf[js.Any], SAVE_FOR_OFFLINE = SAVE_FOR_OFFLINE.asInstanceOf[js.Any], SHARE = SHARE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOFFLINENOTNECESSARY]
   }
 }

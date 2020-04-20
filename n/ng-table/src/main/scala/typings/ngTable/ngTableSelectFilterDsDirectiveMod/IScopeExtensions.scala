@@ -14,7 +14,6 @@ object IScopeExtensions {
   @scala.inline
   def apply($selectData: js.Array[ISelectOption]): IScopeExtensions = {
     val __obj = js.Dynamic.literal($selectData = $selectData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IScopeExtensions]
   }
 }

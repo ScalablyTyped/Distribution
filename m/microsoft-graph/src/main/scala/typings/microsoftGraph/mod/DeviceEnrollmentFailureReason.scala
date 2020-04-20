@@ -23,30 +23,28 @@ trait DeviceEnrollmentFailureReason extends js.Object
 
 object DeviceEnrollmentFailureReason {
   @scala.inline
-  def accountValidation: typings.microsoftGraph.microsoftGraphStrings.accountValidation = this.cast("accountValidation")
+  def accountValidation: typings.microsoftGraph.microsoftGraphStrings.accountValidation = "accountValidation".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.accountValidation]
   @scala.inline
-  def authentication: typings.microsoftGraph.microsoftGraphStrings.authentication = this.cast("authentication")
+  def authentication: typings.microsoftGraph.microsoftGraphStrings.authentication = "authentication".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.authentication]
   @scala.inline
-  def authorization: typings.microsoftGraph.microsoftGraphStrings.authorization = this.cast("authorization")
+  def authorization: typings.microsoftGraph.microsoftGraphStrings.authorization = "authorization".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.authorization]
   @scala.inline
-  def badRequest: typings.microsoftGraph.microsoftGraphStrings.badRequest = this.cast("badRequest")
+  def badRequest: typings.microsoftGraph.microsoftGraphStrings.badRequest = "badRequest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.badRequest]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clientDisconnected: typings.microsoftGraph.microsoftGraphStrings.clientDisconnected = "clientDisconnected".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.clientDisconnected]
   @scala.inline
-  def clientDisconnected: typings.microsoftGraph.microsoftGraphStrings.clientDisconnected = this.cast("clientDisconnected")
+  def deviceNotSupported: typings.microsoftGraph.microsoftGraphStrings.deviceNotSupported = "deviceNotSupported".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceNotSupported]
   @scala.inline
-  def deviceNotSupported: typings.microsoftGraph.microsoftGraphStrings.deviceNotSupported = this.cast("deviceNotSupported")
+  def enrollmentRestrictionsEnforced: typings.microsoftGraph.microsoftGraphStrings.enrollmentRestrictionsEnforced = "enrollmentRestrictionsEnforced".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enrollmentRestrictionsEnforced]
   @scala.inline
-  def enrollmentRestrictionsEnforced: typings.microsoftGraph.microsoftGraphStrings.enrollmentRestrictionsEnforced = this.cast("enrollmentRestrictionsEnforced")
+  def featureNotSupported: typings.microsoftGraph.microsoftGraphStrings.featureNotSupported = "featureNotSupported".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.featureNotSupported]
   @scala.inline
-  def featureNotSupported: typings.microsoftGraph.microsoftGraphStrings.featureNotSupported = this.cast("featureNotSupported")
+  def inMaintenance: typings.microsoftGraph.microsoftGraphStrings.inMaintenance = "inMaintenance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inMaintenance]
   @scala.inline
-  def inMaintenance: typings.microsoftGraph.microsoftGraphStrings.inMaintenance = this.cast("inMaintenance")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def userAbandonment: typings.microsoftGraph.microsoftGraphStrings.userAbandonment = "userAbandonment".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userAbandonment]
   @scala.inline
-  def userAbandonment: typings.microsoftGraph.microsoftGraphStrings.userAbandonment = this.cast("userAbandonment")
-  @scala.inline
-  def userValidation: typings.microsoftGraph.microsoftGraphStrings.userValidation = this.cast("userValidation")
+  def userValidation: typings.microsoftGraph.microsoftGraphStrings.userValidation = "userValidation".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userValidation]
 }
 

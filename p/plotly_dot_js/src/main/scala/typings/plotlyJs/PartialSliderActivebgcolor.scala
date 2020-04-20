@@ -2,6 +2,8 @@ package typings.plotlyJs
 
 import typings.plotlyJs.mod.Color
 import typings.plotlyJs.mod.Font
+import typings.plotlyJs.mod.Padding
+import typings.plotlyJs.mod.SliderStep
 import typings.plotlyJs.mod.Transition
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
@@ -12,6 +14,7 @@ import typings.plotlyJs.plotlyJsStrings.middle
 import typings.plotlyJs.plotlyJsStrings.pixels
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +31,8 @@ trait PartialSliderActivebgcolor extends js.Object {
   var len: js.UndefOr[Double] = js.undefined
   var lenmode: js.UndefOr[fraction | pixels] = js.undefined
   var minorticklen: js.UndefOr[Double] = js.undefined
-  var pad: js.UndefOr[PartialPadding] = js.undefined
-  var steps: js.UndefOr[js.Array[PartialSliderStep]] = js.undefined
+  var pad: js.UndefOr[Partial[Padding]] = js.undefined
+  var steps: js.UndefOr[js.Array[Partial[SliderStep]]] = js.undefined
   var tickcolor: js.UndefOr[Color] = js.undefined
   var ticklen: js.UndefOr[Double] = js.undefined
   var tickwidth: js.UndefOr[Double] = js.undefined
@@ -54,8 +57,8 @@ object PartialSliderActivebgcolor {
     len: Int | Double = null,
     lenmode: fraction | pixels = null,
     minorticklen: Int | Double = null,
-    pad: PartialPadding = null,
-    steps: js.Array[PartialSliderStep] = null,
+    pad: Partial[Padding] = null,
+    steps: js.Array[Partial[SliderStep]] = null,
     tickcolor: Color = null,
     ticklen: Int | Double = null,
     tickwidth: Int | Double = null,

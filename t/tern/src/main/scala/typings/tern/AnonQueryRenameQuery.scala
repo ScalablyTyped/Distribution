@@ -15,7 +15,6 @@ object AnonQueryRenameQuery {
   @scala.inline
   def apply(query: RenameQuery, result: RenameQueryResult): AnonQueryRenameQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQueryRenameQuery]
   }
 }

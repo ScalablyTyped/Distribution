@@ -24,7 +24,6 @@ object UpdateXssMatchSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, Updates: XssMatchSetUpdates, XssMatchSetId: ResourceId): UpdateXssMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any], XssMatchSetId = XssMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateXssMatchSetRequest]
   }
 }

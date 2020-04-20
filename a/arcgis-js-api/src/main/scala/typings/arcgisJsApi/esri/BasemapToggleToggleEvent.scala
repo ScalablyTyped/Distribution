@@ -13,7 +13,6 @@ object BasemapToggleToggleEvent {
   @scala.inline
   def apply(current: Basemap, previous: Basemap): BasemapToggleToggleEvent = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasemapToggleToggleEvent]
   }
 }

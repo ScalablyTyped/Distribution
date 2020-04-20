@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xstate" : "4.8.0"
+      "xstate" : "4.9.1"
     }
   ],
   "test-dependencies" : [
     {
-      "xstate" : "4.8.0"
+      "xstate" : "4.9.1"
     }
   ],
   "compile-devDependencies" : [

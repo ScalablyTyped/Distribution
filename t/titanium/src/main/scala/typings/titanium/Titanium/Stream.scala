@@ -16,6 +16,11 @@ import scala.scalajs.js.annotation._
 	 */
 @JSGlobal("Titanium.Stream")
 @js.native
+class Stream () extends Module
+
+/* static members */
+@JSGlobal("Titanium.Stream")
+@js.native
 object Stream extends js.Object {
   /**
   		 * Use with [createStream](Titanium.Stream.createStream) to open a stream in append
@@ -47,7 +52,7 @@ object Stream extends js.Object {
   /**
   		 * Adds the specified callback as an event listener for the named event.
   		 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Applies the properties to the proxy.
   		 */
@@ -59,17 +64,21 @@ object Stream extends js.Object {
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
   		 * Gets the value of the <Titanium.Stream.apiName> property.
+  		 * @deprecated Access <Titanium.Stream.apiName> instead.
   		 */
   def getApiName(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Stream.bubbleParent> property.
+  		 * @deprecated Access <Titanium.Stream.bubbleParent> instead.
   		 */
   def getBubbleParent(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.Stream.lifecycleContainer> property.
+  		 * @deprecated Access <Titanium.Stream.lifecycleContainer> instead.
   		 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
@@ -77,12 +86,12 @@ object Stream extends js.Object {
   		 */
   def pump(
     inputStream: IOStream,
-    handler: js.Function1[/* param0 */ PumpCallbackArgs, _],
+    handler: js.Function1[/* param0 */ PumpCallbackArgs, Unit],
     maxChunkSize: Double
   ): Unit = js.native
   def pump(
     inputStream: IOStream,
-    handler: js.Function1[/* param0 */ PumpCallbackArgs, _],
+    handler: js.Function1[/* param0 */ PumpCallbackArgs, Unit],
     maxChunkSize: Double,
     isAsync: Boolean
   ): Unit = js.native
@@ -97,7 +106,7 @@ object Stream extends js.Object {
     buffer: Buffer,
     offset: Double,
     length: Double,
-    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, _]
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
   ): Unit = js.native
   /**
   		 * Reads all data from the specified [IOStream](Titanium.IOStream).
@@ -107,22 +116,21 @@ object Stream extends js.Object {
   def readAll(
     sourceStream: IOStream,
     buffer: Buffer,
-    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, _]
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
   ): Buffer | Unit = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Stream.bubbleParent> property.
+  		 * @deprecated Set the value using <Titanium.Stream.bubbleParent> instead.
   		 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  		 * Sets the value of the <Titanium.Stream.lifecycleContainer> property.
-  		 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Stream.lifecycleContainer> property.
+  		 * @deprecated Set the value using <Titanium.Stream.lifecycleContainer> instead.
   		 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
   /**
@@ -136,7 +144,7 @@ object Stream extends js.Object {
     buffer: Buffer,
     offset: Double,
     length: Double,
-    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, _]
+    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, Unit]
   ): Unit = js.native
   /**
   		 * Writes all data from an input stream to an output stream.
@@ -146,7 +154,7 @@ object Stream extends js.Object {
     inputStream: IOStream,
     outputStream: IOStream,
     maxChunkSize: Double,
-    resultsCallback: js.Function1[/* param0 */ WriteStreamCallbackArgs, _]
+    resultsCallback: js.Function1[/* param0 */ WriteStreamCallbackArgs, Unit]
   ): Unit = js.native
 }
 

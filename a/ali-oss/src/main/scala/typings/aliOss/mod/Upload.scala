@@ -14,7 +14,6 @@ object Upload {
   @scala.inline
   def apply(initiated: js.Any, name: String, uploadId: String): Upload = {
     val __obj = js.Dynamic.literal(initiated = initiated.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Upload]
   }
 }

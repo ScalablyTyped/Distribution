@@ -12,7 +12,6 @@ object WebServerModule {
   @scala.inline
   def apply(create: () => WebServer): WebServerModule = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create))
-  
     __obj.asInstanceOf[WebServerModule]
   }
 }

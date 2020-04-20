@@ -18,14 +18,12 @@ trait AcWindowMode extends js.Object
 
 object AcWindowMode {
   @scala.inline
-  def acDialog: `3` = this.cast(3)
+  def acDialog: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acHidden: `1` = this.cast(1)
+  def acHidden: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acIcon: `2` = this.cast(2)
+  def acIcon: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acWindowNormal: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acWindowNormal: `0` = 0.asInstanceOf[`0`]
 }
 

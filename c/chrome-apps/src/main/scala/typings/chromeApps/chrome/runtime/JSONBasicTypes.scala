@@ -14,12 +14,10 @@ trait JSONBasicTypes extends js.Object
 
 object JSONBasicTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def integer: typings.chromeApps.chromeAppsStrings.integer = "integer".asInstanceOf[typings.chromeApps.chromeAppsStrings.integer]
   @scala.inline
-  def integer: typings.chromeApps.chromeAppsStrings.integer = this.cast("integer")
+  def number: typings.chromeApps.chromeAppsStrings.number = "number".asInstanceOf[typings.chromeApps.chromeAppsStrings.number]
   @scala.inline
-  def number: typings.chromeApps.chromeAppsStrings.number = this.cast("number")
-  @scala.inline
-  def string: typings.chromeApps.chromeAppsStrings.string = this.cast("string")
+  def string: typings.chromeApps.chromeAppsStrings.string = "string".asInstanceOf[typings.chromeApps.chromeAppsStrings.string]
 }
 

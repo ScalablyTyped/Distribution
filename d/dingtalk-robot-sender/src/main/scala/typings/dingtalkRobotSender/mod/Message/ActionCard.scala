@@ -16,7 +16,6 @@ object ActionCard {
   @scala.inline
   def apply(actionCard: AnonBtnOrientation, msgtype: actionCard): ActionCard = {
     val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionCard]
   }
 }

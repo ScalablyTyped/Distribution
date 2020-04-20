@@ -14,7 +14,6 @@ object State {
   @scala.inline
   def apply(popoverAnchor: Rect, showPopover: Boolean): State = {
     val __obj = js.Dynamic.literal(popoverAnchor = popoverAnchor.asInstanceOf[js.Any], showPopover = showPopover.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

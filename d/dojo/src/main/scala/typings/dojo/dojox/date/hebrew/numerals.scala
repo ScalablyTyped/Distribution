@@ -64,7 +64,6 @@ object numerals {
     parseYearHebrewLetters: String => Unit
   ): numerals = {
     val __obj = js.Dynamic.literal(getDayHebrewLetters = js.Any.fromFunction2(getDayHebrewLetters), getMonthHebrewLetters = js.Any.fromFunction1(getMonthHebrewLetters), getYearHebrewLetters = js.Any.fromFunction1(getYearHebrewLetters), parseDayHebrewLetters = js.Any.fromFunction1(parseDayHebrewLetters), parseMonthHebrewLetters = js.Any.fromFunction1(parseMonthHebrewLetters), parseYearHebrewLetters = js.Any.fromFunction1(parseYearHebrewLetters))
-  
     __obj.asInstanceOf[numerals]
   }
 }

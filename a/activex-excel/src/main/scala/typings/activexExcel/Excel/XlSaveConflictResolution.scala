@@ -16,12 +16,10 @@ trait XlSaveConflictResolution extends js.Object
 
 object XlSaveConflictResolution {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlLocalSessionChanges: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlLocalSessionChanges: `2` = this.cast(2)
+  def xlOtherSessionChanges: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlOtherSessionChanges: `3` = this.cast(3)
-  @scala.inline
-  def xlUserResolution: `1` = this.cast(1)
+  def xlUserResolution: `1` = 1.asInstanceOf[`1`]
 }
 

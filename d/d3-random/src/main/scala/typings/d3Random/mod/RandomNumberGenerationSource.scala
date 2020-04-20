@@ -21,7 +21,6 @@ object RandomNumberGenerationSource {
   @scala.inline
   def apply(source: js.Function0[Double] => RandomNumberGenerationSource): RandomNumberGenerationSource = {
     val __obj = js.Dynamic.literal(source = js.Any.fromFunction1(source))
-  
     __obj.asInstanceOf[RandomNumberGenerationSource]
   }
 }

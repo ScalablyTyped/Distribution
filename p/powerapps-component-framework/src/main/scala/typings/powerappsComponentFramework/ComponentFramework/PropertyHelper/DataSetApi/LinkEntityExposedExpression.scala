@@ -34,7 +34,6 @@ object LinkEntityExposedExpression {
   @scala.inline
   def apply(alias: String, from: String, linkType: String, name: String, to: String): LinkEntityExposedExpression = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], linkType = linkType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LinkEntityExposedExpression]
   }
 }

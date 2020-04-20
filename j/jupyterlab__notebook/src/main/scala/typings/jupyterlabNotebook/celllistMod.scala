@@ -60,17 +60,17 @@ object celllistMod extends js.Object {
       * Whether the object can redo changes.
       */
     @JSName("canRedo")
-    def canRedo_MCellList(): Boolean = js.native
+    def canRedo_MCellList: Boolean = js.native
     /**
       * Whether the object can undo changes.
       */
     @JSName("canUndo")
-    def canUndo_MCellList(): Boolean = js.native
+    def canUndo_MCellList: Boolean = js.native
     /**
       * A signal emitted when the cell list has changed.
       */
     @JSName("changed")
-    def changed_MCellList(): ISignal[this.type, IChangedArgs[ICellModel]] = js.native
+    def changed_MCellList: ISignal[this.type, IChangedArgs[ICellModel]] = js.native
     /**
       * Remove all values from the list.
       *
@@ -153,7 +153,7 @@ object celllistMod extends js.Object {
       * Test whether the cell list has been disposed.
       */
     @JSName("isDisposed")
-    def isDisposed_MCellList(): Boolean = js.native
+    def isDisposed_MCellList: Boolean = js.native
     /**
       * Test whether the list is empty.
       *
@@ -168,7 +168,7 @@ object celllistMod extends js.Object {
       * #### Iterator Validity
       * No changes.
       */
-    def isEmpty(): Boolean = js.native
+    def isEmpty: Boolean = js.native
     /**
       * Create an iterator over the values in the list.
       *
@@ -197,7 +197,7 @@ object celllistMod extends js.Object {
       * No changes.
       */
     @JSName("length")
-    def length_MCellList(): Double = js.native
+    def length_MCellList: Double = js.native
     /**
       * Move a value from one index to another.
       *

@@ -12,10 +12,8 @@ trait OnSwitchingCallbackTypeDescriptor extends js.Object
 
 object OnSwitchingCallbackTypeDescriptor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def end: typings.reactSwipeableViews.reactSwipeableViewsStrings.end = "end".asInstanceOf[typings.reactSwipeableViews.reactSwipeableViewsStrings.end]
   @scala.inline
-  def end: typings.reactSwipeableViews.reactSwipeableViewsStrings.end = this.cast("end")
-  @scala.inline
-  def move: typings.reactSwipeableViews.reactSwipeableViewsStrings.move = this.cast("move")
+  def move: typings.reactSwipeableViews.reactSwipeableViewsStrings.move = "move".asInstanceOf[typings.reactSwipeableViews.reactSwipeableViewsStrings.move]
 }
 

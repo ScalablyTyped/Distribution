@@ -14,10 +14,8 @@ trait WdDiacriticColor extends js.Object
 
 object WdDiacriticColor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdDiacriticColorBidi: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdDiacriticColorBidi: `0` = this.cast(0)
-  @scala.inline
-  def wdDiacriticColorLatin: `1` = this.cast(1)
+  def wdDiacriticColorLatin: `1` = 1.asInstanceOf[`1`]
 }
 

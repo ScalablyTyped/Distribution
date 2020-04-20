@@ -17,12 +17,10 @@ trait MinecraftDimension extends js.Object
 
 object MinecraftDimension {
   @scala.inline
-  def End: `the end` = this.cast("the end")
+  def End: `the end` = ("the end").asInstanceOf[`the end`]
   @scala.inline
-  def Nether: nether = this.cast("nether")
+  def Nether: nether = "nether".asInstanceOf[nether]
   @scala.inline
-  def Overworld: overworld = this.cast("overworld")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Overworld: overworld = "overworld".asInstanceOf[overworld]
 }
 

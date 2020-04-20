@@ -13,7 +13,6 @@ object RepositoryCredentials {
   @scala.inline
   def apply(credentialsParameter: String): RepositoryCredentials = {
     val __obj = js.Dynamic.literal(credentialsParameter = credentialsParameter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RepositoryCredentials]
   }
 }

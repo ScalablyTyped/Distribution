@@ -16,7 +16,6 @@ object DetectPHIRequest {
   @scala.inline
   def apply(Text: BoundedLengthString): DetectPHIRequest = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectPHIRequest]
   }
 }

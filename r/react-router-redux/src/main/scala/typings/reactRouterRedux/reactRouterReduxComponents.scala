@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactRouterReduxComponents extends reactRouterReduxProps {
   @scala.inline
-  def ConnectedRouter[State]: ComponentType[ConnectedRouterProps[State]] = js.constructorOf[typings.reactRouterRedux.mod.ConnectedRouter[State]].asInstanceOf[typings.react.mod.ComponentType[ConnectedRouterProps[State]]]
+  def ConnectedRouter[State]: ComponentType[ConnectedRouterProps[State]] = js.constructorOf[typings.reactRouterRedux.mod.ConnectedRouter[State]].asInstanceOf[ComponentType[ConnectedRouterProps[State]]]
 }
 

@@ -13,7 +13,6 @@ object IHtmlFormatHelperStatics {
   @scala.inline
   def apply(createHtmlFormat: String => String, getStaticFragment: String => String): IHtmlFormatHelperStatics = {
     val __obj = js.Dynamic.literal(createHtmlFormat = js.Any.fromFunction1(createHtmlFormat), getStaticFragment = js.Any.fromFunction1(getStaticFragment))
-  
     __obj.asInstanceOf[IHtmlFormatHelperStatics]
   }
 }

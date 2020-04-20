@@ -14,14 +14,12 @@ trait EngineMode extends js.Object
 
 object EngineMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def global: typings.pulumiAws.pulumiAwsStrings.global = "global".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.global]
   @scala.inline
-  def global: typings.pulumiAws.pulumiAwsStrings.global = this.cast("global")
+  def parallelquery: typings.pulumiAws.pulumiAwsStrings.parallelquery = "parallelquery".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.parallelquery]
   @scala.inline
-  def parallelquery: typings.pulumiAws.pulumiAwsStrings.parallelquery = this.cast("parallelquery")
+  def provisioned: typings.pulumiAws.pulumiAwsStrings.provisioned = "provisioned".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.provisioned]
   @scala.inline
-  def provisioned: typings.pulumiAws.pulumiAwsStrings.provisioned = this.cast("provisioned")
-  @scala.inline
-  def serverless: typings.pulumiAws.pulumiAwsStrings.serverless = this.cast("serverless")
+  def serverless: typings.pulumiAws.pulumiAwsStrings.serverless = "serverless".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.serverless]
 }
 

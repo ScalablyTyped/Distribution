@@ -17,7 +17,6 @@ object UnmarshalledReplicationConfiguration {
   @scala.inline
   def apply(Role: String, Rules: js.Array[UnmarshalledReplicationRule]): UnmarshalledReplicationConfiguration = {
     val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledReplicationConfiguration]
   }
 }

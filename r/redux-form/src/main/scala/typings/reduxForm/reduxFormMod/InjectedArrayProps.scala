@@ -32,7 +32,6 @@ object InjectedArrayProps {
     unshift: (String, js.Any) => Unit
   ): InjectedArrayProps = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction3(insert), move = js.Any.fromFunction3(move), pop = js.Any.fromFunction1(pop), push = js.Any.fromFunction2(push), remove = js.Any.fromFunction2(remove), removeAll = js.Any.fromFunction1(removeAll), shift = js.Any.fromFunction1(shift), splice = js.Any.fromFunction4(splice), swap = js.Any.fromFunction3(swap), unshift = js.Any.fromFunction2(unshift))
-  
     __obj.asInstanceOf[InjectedArrayProps]
   }
 }

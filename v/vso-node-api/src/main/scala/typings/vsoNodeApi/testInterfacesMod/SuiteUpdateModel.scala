@@ -24,7 +24,6 @@ object SuiteUpdateModel {
     queryString: String
   ): SuiteUpdateModel = {
     val __obj = js.Dynamic.literal(defaultConfigurations = defaultConfigurations.asInstanceOf[js.Any], defaultTesters = defaultTesters.asInstanceOf[js.Any], inheritDefaultConfigurations = inheritDefaultConfigurations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuiteUpdateModel]
   }
 }

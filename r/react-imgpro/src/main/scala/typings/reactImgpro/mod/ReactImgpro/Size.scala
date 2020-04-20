@@ -24,7 +24,6 @@ object Size {
     width: Double
   ): Size = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Size]
   }
 }

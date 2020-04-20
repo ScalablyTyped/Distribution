@@ -14,14 +14,12 @@ trait IdentityCard extends js.Object
 
 object IdentityCard {
   @scala.inline
-  def ES: typings.expressValidator.expressValidatorStrings.ES = this.cast("ES")
+  def ES: typings.expressValidator.expressValidatorStrings.ES = "ES".asInstanceOf[typings.expressValidator.expressValidatorStrings.ES]
   @scala.inline
-  def any: typings.expressValidator.expressValidatorStrings.any = this.cast("any")
+  def any: typings.expressValidator.expressValidatorStrings.any = "any".asInstanceOf[typings.expressValidator.expressValidatorStrings.any]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `he-IL`: typings.expressValidator.expressValidatorStrings.`he-IL` = "he-IL".asInstanceOf[typings.expressValidator.expressValidatorStrings.`he-IL`]
   @scala.inline
-  def `he-IL`: typings.expressValidator.expressValidatorStrings.`he-IL` = this.cast("he-IL")
-  @scala.inline
-  def `zh-TW`: typings.expressValidator.expressValidatorStrings.`zh-TW` = this.cast("zh-TW")
+  def `zh-TW`: typings.expressValidator.expressValidatorStrings.`zh-TW` = "zh-TW".asInstanceOf[typings.expressValidator.expressValidatorStrings.`zh-TW`]
 }
 

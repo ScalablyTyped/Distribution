@@ -26,7 +26,7 @@ object cancellationTokenMod extends js.Object {
     var parentCancelHandler: js.Any = js.native
     var removeParentCancelHandler: js.Any = js.native
     def cancel(): Unit = js.native
-    def cancelled(): Boolean = js.native
+    def cancelled: Boolean = js.native
     def createPromise[R](
       callback: js.Function3[
           /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[R], Unit], 

@@ -16,7 +16,6 @@ object AnonBody {
   @scala.inline
   def apply(body: Body, options: HttpConfig with (Record[String, _])): AnonBody = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBody]
   }
 }

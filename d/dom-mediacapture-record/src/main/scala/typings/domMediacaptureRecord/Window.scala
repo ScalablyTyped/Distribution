@@ -31,7 +31,6 @@ object Window {
     ]
   ): Window = {
     val __obj = js.Dynamic.literal(BlobEvent = BlobEvent.asInstanceOf[js.Any], MediaRecorder = MediaRecorder.asInstanceOf[js.Any], MediaRecorderErrorEvent = MediaRecorderErrorEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

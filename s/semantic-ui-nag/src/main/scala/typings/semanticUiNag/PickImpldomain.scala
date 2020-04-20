@@ -14,7 +14,6 @@ object PickImpldomain {
   @scala.inline
   def apply(domain: `false` | String): PickImpldomain = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldomain]
   }
 }

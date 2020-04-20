@@ -27,7 +27,6 @@ object base {
   @scala.inline
   def apply(escape: js.Any => Unit, safe: js.Any => Unit): base = {
     val __obj = js.Dynamic.literal(escape = js.Any.fromFunction1(escape), safe = js.Any.fromFunction1(safe))
-  
     __obj.asInstanceOf[base]
   }
 }

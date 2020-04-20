@@ -22,30 +22,28 @@ trait PopperPlacement extends js.Object
 
 object PopperPlacement {
   @scala.inline
-  def bottom: typings.fundamentalReact.fundamentalReactStrings.bottom = this.cast("bottom")
+  def bottom: typings.fundamentalReact.fundamentalReactStrings.bottom = "bottom".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.bottom]
   @scala.inline
-  def `bottom-end`: typings.fundamentalReact.fundamentalReactStrings.`bottom-end` = this.cast("bottom-end")
+  def `bottom-end`: typings.fundamentalReact.fundamentalReactStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`bottom-end`]
   @scala.inline
-  def `bottom-start`: typings.fundamentalReact.fundamentalReactStrings.`bottom-start` = this.cast("bottom-start")
+  def `bottom-start`: typings.fundamentalReact.fundamentalReactStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`bottom-start`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.fundamentalReact.fundamentalReactStrings.left = "left".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.left]
   @scala.inline
-  def left: typings.fundamentalReact.fundamentalReactStrings.left = this.cast("left")
+  def `left-end`: typings.fundamentalReact.fundamentalReactStrings.`left-end` = "left-end".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`left-end`]
   @scala.inline
-  def `left-end`: typings.fundamentalReact.fundamentalReactStrings.`left-end` = this.cast("left-end")
+  def `left-start`: typings.fundamentalReact.fundamentalReactStrings.`left-start` = "left-start".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`left-start`]
   @scala.inline
-  def `left-start`: typings.fundamentalReact.fundamentalReactStrings.`left-start` = this.cast("left-start")
+  def right: typings.fundamentalReact.fundamentalReactStrings.right = "right".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.right]
   @scala.inline
-  def right: typings.fundamentalReact.fundamentalReactStrings.right = this.cast("right")
+  def `right-end`: typings.fundamentalReact.fundamentalReactStrings.`right-end` = "right-end".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`right-end`]
   @scala.inline
-  def `right-end`: typings.fundamentalReact.fundamentalReactStrings.`right-end` = this.cast("right-end")
+  def `right-start`: typings.fundamentalReact.fundamentalReactStrings.`right-start` = "right-start".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`right-start`]
   @scala.inline
-  def `right-start`: typings.fundamentalReact.fundamentalReactStrings.`right-start` = this.cast("right-start")
+  def top: typings.fundamentalReact.fundamentalReactStrings.top = "top".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.top]
   @scala.inline
-  def top: typings.fundamentalReact.fundamentalReactStrings.top = this.cast("top")
+  def `top-end`: typings.fundamentalReact.fundamentalReactStrings.`top-end` = "top-end".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`top-end`]
   @scala.inline
-  def `top-end`: typings.fundamentalReact.fundamentalReactStrings.`top-end` = this.cast("top-end")
-  @scala.inline
-  def `top-start`: typings.fundamentalReact.fundamentalReactStrings.`top-start` = this.cast("top-start")
+  def `top-start`: typings.fundamentalReact.fundamentalReactStrings.`top-start` = "top-start".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`top-start`]
 }
 

@@ -28,7 +28,6 @@ object UploadsResource {
     uploadData: AnonCustomDataSourceId => Request_[Upload]
   ): UploadsResource = {
     val __obj = js.Dynamic.literal(deleteUploadData = js.Any.fromFunction1(deleteUploadData), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), uploadData = js.Any.fromFunction1(uploadData))
-  
     __obj.asInstanceOf[UploadsResource]
   }
 }

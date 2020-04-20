@@ -1,10 +1,10 @@
 package typings.chromeApps.chrome.syncFileSystem
 
-import typings.chromeApps.chromeAppsStrings.authentication_required
-import typings.chromeApps.chromeAppsStrings.disabled_
-import typings.chromeApps.chromeAppsStrings.initializing
-import typings.chromeApps.chromeAppsStrings.running
-import typings.chromeApps.chromeAppsStrings.temporary_unavailable
+import typings.chromeApps.chromeAppsStrings.authentication_required_
+import typings.chromeApps.chromeAppsStrings.disabled__
+import typings.chromeApps.chromeAppsStrings.initializing_
+import typings.chromeApps.chromeAppsStrings.running_
+import typings.chromeApps.chromeAppsStrings.temporary_unavailable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +25,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.syncFileSystem.ServiceStatus")
 @js.native
 object ServiceStatus extends js.Object {
-  var AUTHENTICATION_REQUIRED: authentication_required = js.native
-  var DISABLED: disabled_ = js.native
-  var INITIALIZING: initializing = js.native
-  var RUNNING: running = js.native
-  var TEMPORARY_UNAVAILABLE: temporary_unavailable = js.native
+  var AUTHENTICATION_REQUIRED: authentication_required_ = js.native
+  var DISABLED: disabled__ = js.native
+  var INITIALIZING: initializing_ = js.native
+  var RUNNING: running_ = js.native
+  var TEMPORARY_UNAVAILABLE: temporary_unavailable_ = js.native
 }
 

@@ -46,6 +46,22 @@ trait PolygonDrawAction extends DrawAction {
     *
     */
   def complete(): Unit = js.native
+  /**
+    * Returns the actual z value to be used when drawing geometry. NB: this.defaultZ is the value which was passed to the constructor of the DrawAction the actual defaultZ value may differ, depending on derived draw action implementation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#getGeometryZValue)
+    *
+    *
+    */
+  def getGeometryZValue(): Unit = js.native
+  /**
+    * Returns if snapToScene is allowed to be used.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#isSnapToSceneEnabled)
+    *
+    *
+    */
+  def isSnapToSceneEnabled(): Unit = js.native
   @JSName("on")
   def on_cursorupdate(name: `cursor-update`, eventHandler: PolygonDrawActionCursorUpdateEventHandler): IHandle = js.native
   @JSName("on")

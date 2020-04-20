@@ -33,7 +33,6 @@ object Credentials {
     SessionToken: tokenType
   ): Credentials = {
     val __obj = js.Dynamic.literal(AccessKeyId = AccessKeyId.asInstanceOf[js.Any], Expiration = Expiration.asInstanceOf[js.Any], SecretAccessKey = SecretAccessKey.asInstanceOf[js.Any], SessionToken = SessionToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Credentials]
   }
 }

@@ -16,7 +16,6 @@ object AssociateDRTLogBucketRequest {
   @scala.inline
   def apply(LogBucket: LogBucket): AssociateDRTLogBucketRequest = {
     val __obj = js.Dynamic.literal(LogBucket = LogBucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateDRTLogBucketRequest]
   }
 }

@@ -13,7 +13,6 @@ object AnonAssignedInherited {
   @scala.inline
   def apply(assigned: Double, inherited: Double): AnonAssignedInherited = {
     val __obj = js.Dynamic.literal(assigned = assigned.asInstanceOf[js.Any], inherited = inherited.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAssignedInherited]
   }
 }

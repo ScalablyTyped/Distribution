@@ -27,7 +27,6 @@ object AnonMode {
     row: js.Object
   ): AnonMode = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMode]
   }
 }

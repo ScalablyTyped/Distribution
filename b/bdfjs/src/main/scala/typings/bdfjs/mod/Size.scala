@@ -14,7 +14,6 @@ object Size {
   @scala.inline
   def apply(points: Double, resolutionX: Double, resolutionY: Double): Size = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], resolutionX = resolutionX.asInstanceOf[js.Any], resolutionY = resolutionY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Size]
   }
 }

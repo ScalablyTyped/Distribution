@@ -12,7 +12,6 @@ object AppleID {
   @scala.inline
   def apply(auth: AuthI): AppleID = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppleID]
   }
 }

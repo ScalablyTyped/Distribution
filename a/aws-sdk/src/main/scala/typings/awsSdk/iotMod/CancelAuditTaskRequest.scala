@@ -16,7 +16,6 @@ object CancelAuditTaskRequest {
   @scala.inline
   def apply(taskId: AuditTaskId): CancelAuditTaskRequest = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelAuditTaskRequest]
   }
 }

@@ -12,10 +12,8 @@ trait Protocol extends js.Object
 
 object Protocol {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def tcp: typings.pulumiAws.pulumiAwsStrings.tcp = "tcp".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.tcp]
   @scala.inline
-  def tcp: typings.pulumiAws.pulumiAwsStrings.tcp = this.cast("tcp")
-  @scala.inline
-  def udp: typings.pulumiAws.pulumiAwsStrings.udp = this.cast("udp")
+  def udp: typings.pulumiAws.pulumiAwsStrings.udp = "udp".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.udp]
 }
 

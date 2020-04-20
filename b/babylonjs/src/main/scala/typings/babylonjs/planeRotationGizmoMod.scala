@@ -60,7 +60,7 @@ object planeRotationGizmoMod extends js.Object {
       * Rotation distance in radians that the gizmo will snap to (Default: 0)
       */
     var snapDistance: Double = js.native
-    def isEnabled(): Boolean = js.native
+    def isEnabled: Boolean = js.native
     /**
       * If the gizmo is enabled
       */

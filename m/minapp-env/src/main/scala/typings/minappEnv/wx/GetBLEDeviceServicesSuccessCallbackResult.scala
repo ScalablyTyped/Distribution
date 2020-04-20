@@ -13,7 +13,6 @@ object GetBLEDeviceServicesSuccessCallbackResult {
   @scala.inline
   def apply(services: BLEService): GetBLEDeviceServicesSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBLEDeviceServicesSuccessCallbackResult]
   }
 }

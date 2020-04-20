@@ -17,7 +17,6 @@ object AnonValue {
   @scala.inline
   def apply(termType: PropType[DefaultGraph, termType], value: PropType[DefaultGraph, value]): AnonValue = {
     val __obj = js.Dynamic.literal(termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValue]
   }
 }

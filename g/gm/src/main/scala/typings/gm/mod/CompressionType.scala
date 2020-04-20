@@ -20,26 +20,24 @@ trait CompressionType extends js.Object
 
 object CompressionType {
   @scala.inline
-  def BZip: typings.gm.gmStrings.BZip = this.cast("BZip")
+  def BZip: typings.gm.gmStrings.BZip = "BZip".asInstanceOf[typings.gm.gmStrings.BZip]
   @scala.inline
-  def Fax: typings.gm.gmStrings.Fax = this.cast("Fax")
+  def Fax: typings.gm.gmStrings.Fax = "Fax".asInstanceOf[typings.gm.gmStrings.Fax]
   @scala.inline
-  def Group4: typings.gm.gmStrings.Group4 = this.cast("Group4")
+  def Group4: typings.gm.gmStrings.Group4 = "Group4".asInstanceOf[typings.gm.gmStrings.Group4]
   @scala.inline
-  def JPEG: typings.gm.gmStrings.JPEG = this.cast("JPEG")
+  def JPEG: typings.gm.gmStrings.JPEG = "JPEG".asInstanceOf[typings.gm.gmStrings.JPEG]
   @scala.inline
-  def LZMA: typings.gm.gmStrings.LZMA = this.cast("LZMA")
+  def LZMA: typings.gm.gmStrings.LZMA = "LZMA".asInstanceOf[typings.gm.gmStrings.LZMA]
   @scala.inline
-  def LZW: typings.gm.gmStrings.LZW = this.cast("LZW")
+  def LZW: typings.gm.gmStrings.LZW = "LZW".asInstanceOf[typings.gm.gmStrings.LZW]
   @scala.inline
-  def Lossless: typings.gm.gmStrings.Lossless = this.cast("Lossless")
+  def Lossless: typings.gm.gmStrings.Lossless = "Lossless".asInstanceOf[typings.gm.gmStrings.Lossless]
   @scala.inline
-  def None: typings.gm.gmStrings.None = this.cast("None")
+  def None: typings.gm.gmStrings.None = "None".asInstanceOf[typings.gm.gmStrings.None]
   @scala.inline
-  def RLE: typings.gm.gmStrings.RLE = this.cast("RLE")
+  def RLE: typings.gm.gmStrings.RLE = "RLE".asInstanceOf[typings.gm.gmStrings.RLE]
   @scala.inline
-  def Zip: typings.gm.gmStrings.Zip = this.cast("Zip")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Zip: typings.gm.gmStrings.Zip = "Zip".asInstanceOf[typings.gm.gmStrings.Zip]
 }
 

@@ -16,7 +16,6 @@ object DisassociateVPCFromHostedZoneResponse {
   @scala.inline
   def apply(ChangeInfo: ChangeInfo): DisassociateVPCFromHostedZoneResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateVPCFromHostedZoneResponse]
   }
 }

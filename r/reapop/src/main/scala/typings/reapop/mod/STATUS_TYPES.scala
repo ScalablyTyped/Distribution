@@ -22,7 +22,6 @@ object STATUS_TYPES {
     warning: WARNING_STATUS
   ): STATUS_TYPES = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[STATUS_TYPES]
   }
 }

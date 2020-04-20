@@ -14,7 +14,6 @@ object Additions {
   @scala.inline
   def apply(asMutable: () => Date): Additions = {
     val __obj = js.Dynamic.literal(asMutable = js.Any.fromFunction0(asMutable))
-  
     __obj.asInstanceOf[Additions]
   }
 }

@@ -26,7 +26,6 @@ object CloudColor {
     normalHover: String
   ): CloudColor = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any], lightActive = lightActive.asInstanceOf[js.Any], lightHover = lightHover.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], normalActive = normalActive.asInstanceOf[js.Any], normalHover = normalHover.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudColor]
   }
 }

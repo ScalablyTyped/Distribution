@@ -16,16 +16,14 @@ trait ReadConcernLevel extends js.Object
 
 object ReadConcernLevel {
   @scala.inline
-  def available: typings.mongodb.mongodbStrings.available = this.cast("available")
+  def available: typings.mongodb.mongodbStrings.available = "available".asInstanceOf[typings.mongodb.mongodbStrings.available]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def linearizable: typings.mongodb.mongodbStrings.linearizable = "linearizable".asInstanceOf[typings.mongodb.mongodbStrings.linearizable]
   @scala.inline
-  def linearizable: typings.mongodb.mongodbStrings.linearizable = this.cast("linearizable")
+  def local: typings.mongodb.mongodbStrings.local = "local".asInstanceOf[typings.mongodb.mongodbStrings.local]
   @scala.inline
-  def local: typings.mongodb.mongodbStrings.local = this.cast("local")
+  def majority: typings.mongodb.mongodbStrings.majority = "majority".asInstanceOf[typings.mongodb.mongodbStrings.majority]
   @scala.inline
-  def majority: typings.mongodb.mongodbStrings.majority = this.cast("majority")
-  @scala.inline
-  def snapshot: typings.mongodb.mongodbStrings.snapshot = this.cast("snapshot")
+  def snapshot: typings.mongodb.mongodbStrings.snapshot = "snapshot".asInstanceOf[typings.mongodb.mongodbStrings.snapshot]
 }
 

@@ -24,7 +24,6 @@ object CreateVpcPeeringConnectionInput {
   @scala.inline
   def apply(FleetId: FleetId, PeerVpcAwsAccountId: NonZeroAndMaxString, PeerVpcId: NonZeroAndMaxString): CreateVpcPeeringConnectionInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], PeerVpcAwsAccountId = PeerVpcAwsAccountId.asInstanceOf[js.Any], PeerVpcId = PeerVpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateVpcPeeringConnectionInput]
   }
 }

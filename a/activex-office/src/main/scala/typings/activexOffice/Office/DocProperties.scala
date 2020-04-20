@@ -20,16 +20,14 @@ trait DocProperties extends js.Object
 
 object DocProperties {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def offPropertyTypeBoolean: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def offPropertyTypeBoolean: `2` = this.cast(2)
+  def offPropertyTypeDate: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def offPropertyTypeDate: `3` = this.cast(3)
+  def offPropertyTypeFloat: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def offPropertyTypeFloat: `5` = this.cast(5)
+  def offPropertyTypeNumber: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def offPropertyTypeNumber: `1` = this.cast(1)
-  @scala.inline
-  def offPropertyTypeString: `4` = this.cast(4)
+  def offPropertyTypeString: `4` = 4.asInstanceOf[`4`]
 }
 

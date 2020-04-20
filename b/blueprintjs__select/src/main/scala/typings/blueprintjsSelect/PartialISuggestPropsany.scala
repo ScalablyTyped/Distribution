@@ -42,7 +42,9 @@ trait PartialISuggestPropsany extends js.Object {
   var initialContent: js.UndefOr[ReactNode] = js.undefined
   var inputProps: js.UndefOr[IInputGroupProps with HTMLInputProps] = js.undefined
   var inputValueRenderer: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
-  var itemDisabled: js.UndefOr[String | (js.Function2[/* item */ js.Any, /* index */ Double, Boolean])] = js.undefined
+  var itemDisabled: js.UndefOr[
+    (/* keyof any */ String) | (js.Function2[/* item */ js.Any, /* index */ Double, Boolean])
+  ] = js.undefined
   var itemListPredicate: js.UndefOr[ItemListPredicate[_]] = js.undefined
   var itemListRenderer: js.UndefOr[ItemListRenderer[_]] = js.undefined
   var itemPredicate: js.UndefOr[ItemPredicate[_]] = js.undefined
@@ -84,7 +86,7 @@ object PartialISuggestPropsany {
     initialContent: ReactNode = null,
     inputProps: IInputGroupProps with HTMLInputProps = null,
     inputValueRenderer: /* item */ js.Any => String = null,
-    itemDisabled: String | (js.Function2[/* item */ js.Any, /* index */ Double, Boolean]) = null,
+    itemDisabled: (/* keyof any */ String) | (js.Function2[/* item */ js.Any, /* index */ Double, Boolean]) = null,
     itemListPredicate: (/* query */ String, /* items */ js.Array[_]) => js.Array[_] = null,
     itemListRenderer: /* itemListProps */ IItemListRendererProps[_] => Element = null,
     itemPredicate: (/* query */ String, _, /* index */ js.UndefOr[Double], /* exactMatch */ js.UndefOr[Boolean]) => Boolean = null,

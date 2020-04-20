@@ -41,7 +41,6 @@ object BidiComplex {
     stripSpecialCharacters: js.Any => Unit
   ): BidiComplex = {
     val __obj = js.Dynamic.literal(attachInput = js.Any.fromFunction2(attachInput), createDisplayString = js.Any.fromFunction2(createDisplayString), stripSpecialCharacters = js.Any.fromFunction1(stripSpecialCharacters))
-  
     __obj.asInstanceOf[BidiComplex]
   }
 }

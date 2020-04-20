@@ -14,10 +14,8 @@ trait WdExportFormat extends js.Object
 
 object WdExportFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdExportFormatPDF: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdExportFormatPDF: `17` = this.cast(17)
-  @scala.inline
-  def wdExportFormatXPS: `18` = this.cast(18)
+  def wdExportFormatXPS: `18` = 18.asInstanceOf[`18`]
 }
 

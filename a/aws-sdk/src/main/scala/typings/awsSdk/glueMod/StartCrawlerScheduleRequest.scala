@@ -16,7 +16,6 @@ object StartCrawlerScheduleRequest {
   @scala.inline
   def apply(CrawlerName: NameString): StartCrawlerScheduleRequest = {
     val __obj = js.Dynamic.literal(CrawlerName = CrawlerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartCrawlerScheduleRequest]
   }
 }

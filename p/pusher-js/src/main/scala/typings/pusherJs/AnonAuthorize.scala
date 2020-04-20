@@ -18,7 +18,6 @@ object AnonAuthorize {
     authorize: (String, js.Function2[/* errored */ Boolean, /* authInfo */ js.UndefOr[AuthInfo], Unit]) => Unit
   ): AnonAuthorize = {
     val __obj = js.Dynamic.literal(authorize = js.Any.fromFunction2(authorize))
-  
     __obj.asInstanceOf[AnonAuthorize]
   }
 }

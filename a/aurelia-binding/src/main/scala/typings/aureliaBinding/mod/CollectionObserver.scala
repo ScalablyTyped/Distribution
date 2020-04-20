@@ -17,7 +17,6 @@ object CollectionObserver {
     subscribe: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[_, _]], Unit] => Disposable
   ): CollectionObserver = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[CollectionObserver]
   }
 }

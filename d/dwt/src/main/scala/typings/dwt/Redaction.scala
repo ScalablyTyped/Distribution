@@ -16,7 +16,6 @@ object Redaction {
   @scala.inline
   def apply(FindText: String, FindTextAction: OCRFT_MARKFORREDACT, FindTextFlags: OCRFT_WHOLEWORD): Redaction = {
     val __obj = js.Dynamic.literal(FindText = FindText.asInstanceOf[js.Any], FindTextAction = FindTextAction.asInstanceOf[js.Any], FindTextFlags = FindTextFlags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Redaction]
   }
 }

@@ -15,7 +15,6 @@ object AnonFocusVisibleCheckTime {
   @scala.inline
   def apply(focusVisibleCheckTime: Double, focusVisibleMaxCheckTimes: Double, focusVisibleTimeout: js.Any): AnonFocusVisibleCheckTime = {
     val __obj = js.Dynamic.literal(focusVisibleCheckTime = focusVisibleCheckTime.asInstanceOf[js.Any], focusVisibleMaxCheckTimes = focusVisibleMaxCheckTimes.asInstanceOf[js.Any], focusVisibleTimeout = focusVisibleTimeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFocusVisibleCheckTime]
   }
 }

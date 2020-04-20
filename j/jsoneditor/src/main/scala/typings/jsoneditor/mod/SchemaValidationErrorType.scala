@@ -12,10 +12,8 @@ trait SchemaValidationErrorType extends js.Object
 
 object SchemaValidationErrorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def customValidation: typings.jsoneditor.jsoneditorStrings.customValidation = "customValidation".asInstanceOf[typings.jsoneditor.jsoneditorStrings.customValidation]
   @scala.inline
-  def customValidation: typings.jsoneditor.jsoneditorStrings.customValidation = this.cast("customValidation")
-  @scala.inline
-  def validation: typings.jsoneditor.jsoneditorStrings.validation = this.cast("validation")
+  def validation: typings.jsoneditor.jsoneditorStrings.validation = "validation".asInstanceOf[typings.jsoneditor.jsoneditorStrings.validation]
 }
 

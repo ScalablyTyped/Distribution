@@ -20,7 +20,6 @@ object ScalingConstraints {
   @scala.inline
   def apply(MaxCapacity: Integer, MinCapacity: Integer): ScalingConstraints = {
     val __obj = js.Dynamic.literal(MaxCapacity = MaxCapacity.asInstanceOf[js.Any], MinCapacity = MinCapacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScalingConstraints]
   }
 }

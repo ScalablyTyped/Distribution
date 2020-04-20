@@ -18,7 +18,6 @@ object AnonChoices {
     ]
   ): AnonChoices = {
     val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChoices]
   }
 }

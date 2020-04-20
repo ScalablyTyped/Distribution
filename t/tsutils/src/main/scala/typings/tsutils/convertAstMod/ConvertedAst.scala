@@ -14,7 +14,6 @@ object ConvertedAst {
   @scala.inline
   def apply(flat: js.Array[Node], wrapped: WrappedAst): ConvertedAst = {
     val __obj = js.Dynamic.literal(flat = flat.asInstanceOf[js.Any], wrapped = wrapped.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConvertedAst]
   }
 }

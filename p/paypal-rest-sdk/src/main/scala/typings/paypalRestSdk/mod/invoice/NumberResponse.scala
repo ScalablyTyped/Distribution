@@ -12,7 +12,6 @@ object NumberResponse {
   @scala.inline
   def apply(number: String): NumberResponse = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NumberResponse]
   }
 }

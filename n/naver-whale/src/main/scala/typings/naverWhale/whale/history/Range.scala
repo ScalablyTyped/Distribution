@@ -15,7 +15,6 @@ object Range {
   @scala.inline
   def apply(endTime: Double, startTime: Double): Range = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Range]
   }
 }

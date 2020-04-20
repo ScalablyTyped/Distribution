@@ -17,7 +17,6 @@ object ClusterOpenMonitoring {
   @scala.inline
   def apply(prometheus: Input[ClusterOpenMonitoringPrometheus]): ClusterOpenMonitoring = {
     val __obj = js.Dynamic.literal(prometheus = prometheus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterOpenMonitoring]
   }
 }

@@ -20,7 +20,6 @@ object HttpInterceptor {
   @scala.inline
   def apply(intercept: (HttpRequest[_], HttpHandler) => Observable_[HttpEvent[_]]): HttpInterceptor = {
     val __obj = js.Dynamic.literal(intercept = js.Any.fromFunction2(intercept))
-  
     __obj.asInstanceOf[HttpInterceptor]
   }
 }

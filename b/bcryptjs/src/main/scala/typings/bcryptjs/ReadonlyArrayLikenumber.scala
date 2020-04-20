@@ -13,7 +13,6 @@ object ReadonlyArrayLikenumber {
   @scala.inline
   def apply(length: Double): ReadonlyArrayLikenumber = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyArrayLikenumber]
   }
 }

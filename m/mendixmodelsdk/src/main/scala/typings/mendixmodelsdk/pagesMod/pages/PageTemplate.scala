@@ -51,29 +51,29 @@ class PageTemplate protected () extends TemplateFormBase {
   /**
     * In version 8.0.0: introduced
     */
-  def appearance(): Appearance = js.native
+  def appearance: Appearance = js.native
   def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def `class`(): String = js.native
+  def `class`: String = js.native
   def `class`(newValue: String): js.Any = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MPageTemplate(): FolderBase = js.native
+  def containerAsFolderBase_MPageTemplate: FolderBase = js.native
   /**
     * In version 7.17.0: added public
     */
-  def layoutCall(): LayoutCall = js.native
+  def layoutCall: LayoutCall = js.native
   def layoutCall(newValue: LayoutCall): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def style(): String = js.native
+  def style: String = js.native
   def style(newValue: String): js.Any = js.native
   /**
     * In version 7.17.0: added public
     */
-  def `type`(): PageTemplateType = js.native
+  def `type`: PageTemplateType = js.native
   def `type`(newValue: PageTemplateType): js.Any = js.native
 }
 

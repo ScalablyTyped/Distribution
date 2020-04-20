@@ -16,7 +16,6 @@ object RelationProperty {
   @scala.inline
   def apply(cols: js.Array[String], modelClass: TypeofModel, props: js.Array[String], size: Double): RelationProperty = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], modelClass = modelClass.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RelationProperty]
   }
 }

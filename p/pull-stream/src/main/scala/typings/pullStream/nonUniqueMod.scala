@@ -12,7 +12,7 @@ object nonUniqueMod extends js.Object {
     * Filter unique items -- get the duplicates. The inverse of `unique`.
     */
   def apply[InOut](): Through_[InOut, InOut] = js.native
-  def apply[InOut](prop: String): Through_[InOut, InOut] = js.native
+  def apply[InOut](prop: /* keyof InOut */ String): Through_[InOut, InOut] = js.native
   def apply[InOut](prop: js.Function1[/* data */ InOut, _]): Through_[InOut, InOut] = js.native
 }
 

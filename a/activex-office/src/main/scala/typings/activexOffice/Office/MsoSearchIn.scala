@@ -18,14 +18,12 @@ trait MsoSearchIn extends js.Object
 
 object MsoSearchIn {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSearchInCustom: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoSearchInCustom: `3` = this.cast(3)
+  def msoSearchInMyComputer: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoSearchInMyComputer: `0` = this.cast(0)
+  def msoSearchInMyNetworkPlaces: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoSearchInMyNetworkPlaces: `2` = this.cast(2)
-  @scala.inline
-  def msoSearchInOutlook: `1` = this.cast(1)
+  def msoSearchInOutlook: `1` = 1.asInstanceOf[`1`]
 }
 

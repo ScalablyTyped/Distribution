@@ -12,7 +12,6 @@ object ProjectsDeleteCardParams {
   @scala.inline
   def apply(card_id: Double): ProjectsDeleteCardParams = {
     val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectsDeleteCardParams]
   }
 }

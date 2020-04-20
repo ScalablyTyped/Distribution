@@ -19,24 +19,22 @@ trait uArea extends js.Object
 
 object uArea {
   @scala.inline
-  def ac: typings.convertUnits.convertUnitsStrings.ac = this.cast("ac")
+  def ac: typings.convertUnits.convertUnitsStrings.ac = "ac".asInstanceOf[typings.convertUnits.convertUnitsStrings.ac]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cm2: typings.convertUnits.convertUnitsStrings.cm2 = "cm2".asInstanceOf[typings.convertUnits.convertUnitsStrings.cm2]
   @scala.inline
-  def cm2: typings.convertUnits.convertUnitsStrings.cm2 = this.cast("cm2")
+  def ft2: typings.convertUnits.convertUnitsStrings.ft2 = "ft2".asInstanceOf[typings.convertUnits.convertUnitsStrings.ft2]
   @scala.inline
-  def ft2: typings.convertUnits.convertUnitsStrings.ft2 = this.cast("ft2")
+  def ha: typings.convertUnits.convertUnitsStrings.ha = "ha".asInstanceOf[typings.convertUnits.convertUnitsStrings.ha]
   @scala.inline
-  def ha: typings.convertUnits.convertUnitsStrings.ha = this.cast("ha")
+  def in2: typings.convertUnits.convertUnitsStrings.in2 = "in2".asInstanceOf[typings.convertUnits.convertUnitsStrings.in2]
   @scala.inline
-  def in2: typings.convertUnits.convertUnitsStrings.in2 = this.cast("in2")
+  def km2: typings.convertUnits.convertUnitsStrings.km2 = "km2".asInstanceOf[typings.convertUnits.convertUnitsStrings.km2]
   @scala.inline
-  def km2: typings.convertUnits.convertUnitsStrings.km2 = this.cast("km2")
+  def m2: typings.convertUnits.convertUnitsStrings.m2 = "m2".asInstanceOf[typings.convertUnits.convertUnitsStrings.m2]
   @scala.inline
-  def m2: typings.convertUnits.convertUnitsStrings.m2 = this.cast("m2")
+  def mi2: typings.convertUnits.convertUnitsStrings.mi2 = "mi2".asInstanceOf[typings.convertUnits.convertUnitsStrings.mi2]
   @scala.inline
-  def mi2: typings.convertUnits.convertUnitsStrings.mi2 = this.cast("mi2")
-  @scala.inline
-  def mm2: typings.convertUnits.convertUnitsStrings.mm2 = this.cast("mm2")
+  def mm2: typings.convertUnits.convertUnitsStrings.mm2 = "mm2".asInstanceOf[typings.convertUnits.convertUnitsStrings.mm2]
 }
 

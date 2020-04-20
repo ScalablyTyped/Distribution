@@ -16,7 +16,6 @@ object DeleteMLTransformRequest {
   @scala.inline
   def apply(TransformId: HashString): DeleteMLTransformRequest = {
     val __obj = js.Dynamic.literal(TransformId = TransformId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMLTransformRequest]
   }
 }

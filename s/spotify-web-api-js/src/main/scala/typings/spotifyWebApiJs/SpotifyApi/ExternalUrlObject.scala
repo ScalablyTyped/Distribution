@@ -18,7 +18,6 @@ object ExternalUrlObject {
   @scala.inline
   def apply(spotify: String): ExternalUrlObject = {
     val __obj = js.Dynamic.literal(spotify = spotify.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExternalUrlObject]
   }
 }

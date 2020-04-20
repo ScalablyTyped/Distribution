@@ -12,7 +12,6 @@ object AvatarState {
   @scala.inline
   def apply(noImageAvailable: Boolean): AvatarState = {
     val __obj = js.Dynamic.literal(noImageAvailable = noImageAvailable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AvatarState]
   }
 }

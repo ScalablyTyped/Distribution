@@ -14,7 +14,6 @@ object StepEvent {
   @scala.inline
   def apply(data: StepEventData, name: __ON_STEP__): StepEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StepEvent]
   }
 }

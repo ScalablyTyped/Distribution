@@ -21,7 +21,6 @@ object ListenerRuleConditionHttpHeader {
   @scala.inline
   def apply(httpHeaderName: Input[String], values: Input[js.Array[Input[String]]]): ListenerRuleConditionHttpHeader = {
     val __obj = js.Dynamic.literal(httpHeaderName = httpHeaderName.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListenerRuleConditionHttpHeader]
   }
 }

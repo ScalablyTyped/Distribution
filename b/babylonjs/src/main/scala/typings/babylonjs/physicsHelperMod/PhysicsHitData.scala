@@ -24,7 +24,6 @@ object PhysicsHitData {
   @scala.inline
   def apply(contactPoint: Vector3, distanceFromOrigin: Double, force: Vector3): PhysicsHitData = {
     val __obj = js.Dynamic.literal(contactPoint = contactPoint.asInstanceOf[js.Any], distanceFromOrigin = distanceFromOrigin.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhysicsHitData]
   }
 }

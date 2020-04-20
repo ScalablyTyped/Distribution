@@ -37,31 +37,31 @@ class NativeLayoutContent protected () extends LayoutContent {
   @JSName("model")
   var model_FNativeLayoutContent: IModel = js.native
   @JSName("containerAsLayout")
-  def containerAsLayout_MNativeLayoutContent(): Layout = js.native
+  def containerAsLayout_MNativeLayoutContent: Layout = js.native
   /**
     * In version 8.5.0: introduced
     */
-  def layoutType(): NativeLayoutType = js.native
+  def layoutType: NativeLayoutType = js.native
   def layoutType(newValue: NativeLayoutType): js.Any = js.native
   def rightHeaderPlaceholder(): js.Any = js.native
   def rightHeaderPlaceholder(newValue: Placeholder): js.Any = js.native
   @JSName("rightHeaderPlaceholder")
-  def rightHeaderPlaceholder_Union(): Placeholder | Null = js.native
+  def rightHeaderPlaceholder_Union: Placeholder | Null = js.native
   /**
     * In version 8.2.0: introduced
     */
-  def showBottomBar(): Boolean = js.native
+  def showBottomBar: Boolean = js.native
   def showBottomBar(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.5.0: introduced
     */
-  def sidebar(): Boolean = js.native
+  def sidebar: Boolean = js.native
   def sidebar(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.5.0: introduced
     */
-  def sidebarWidgets(): IList[Widget] = js.native
-  def widgets(): IList[Widget] = js.native
+  def sidebarWidgets: IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

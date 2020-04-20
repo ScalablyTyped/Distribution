@@ -14,7 +14,6 @@ object SettingsCollection {
   @scala.inline
   def apply(get: String => Setting): SettingsCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[SettingsCollection]
   }
 }

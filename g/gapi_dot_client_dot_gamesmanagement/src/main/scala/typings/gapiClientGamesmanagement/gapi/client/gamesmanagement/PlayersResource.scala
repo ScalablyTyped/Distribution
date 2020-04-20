@@ -17,7 +17,6 @@ object PlayersResource {
   @scala.inline
   def apply(hide: AnonFields => Request_[Unit], unhide: AnonFields => Request_[Unit]): PlayersResource = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction1(hide), unhide = js.Any.fromFunction1(unhide))
-  
     __obj.asInstanceOf[PlayersResource]
   }
 }

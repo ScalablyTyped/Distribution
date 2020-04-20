@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteInfrastructureConfigurationResponse extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the infrastructure configuration that was deleted. 
+    * The Amazon Resource Name (ARN) of the infrastructure configuration that was deleted. 
     */
   var infrastructureConfigurationArn: js.UndefOr[InfrastructureConfigurationArn] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

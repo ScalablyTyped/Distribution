@@ -20,7 +20,6 @@ object Monad {
     unit: js.Any => Monad[js.Any]
   ): Monad[T] = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), chain = js.Any.fromFunction1(chain), of = js.Any.fromFunction1(of), unit = js.Any.fromFunction1(unit))
-  
     __obj.asInstanceOf[Monad[T]]
   }
 }

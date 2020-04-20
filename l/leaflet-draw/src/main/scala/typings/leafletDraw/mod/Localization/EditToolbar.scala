@@ -15,7 +15,6 @@ object EditToolbar {
   @scala.inline
   def apply(actions: AnonCancel, buttons: AnonEdit): EditToolbar = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditToolbar]
   }
 }

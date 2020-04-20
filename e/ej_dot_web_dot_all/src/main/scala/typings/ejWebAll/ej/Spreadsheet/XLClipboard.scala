@@ -23,7 +23,6 @@ object XLClipboard {
   @scala.inline
   def apply(copy: () => Unit, cut: () => Unit, paste: () => Unit): XLClipboard = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), cut = js.Any.fromFunction0(cut), paste = js.Any.fromFunction0(paste))
-  
     __obj.asInstanceOf[XLClipboard]
   }
 }

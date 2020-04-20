@@ -21,7 +21,6 @@ object Erd {
     uninstall: HTMLElement => Unit
   ): Erd = {
     val __obj = js.Dynamic.literal(listenTo = js.Any.fromFunction2(listenTo), removeAllListeners = js.Any.fromFunction1(removeAllListeners), removeListener = js.Any.fromFunction2(removeListener), uninstall = js.Any.fromFunction1(uninstall))
-  
     __obj.asInstanceOf[Erd]
   }
 }

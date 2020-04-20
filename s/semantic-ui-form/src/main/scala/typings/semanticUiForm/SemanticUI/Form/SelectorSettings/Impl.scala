@@ -35,7 +35,6 @@ object Impl {
   @scala.inline
   def apply(field: String, group: String, input: String, message: String, prompt: String, submit: String): Impl = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

@@ -15,7 +15,6 @@ object Description {
   @scala.inline
   def apply(commitsSinceTag: String | `false`, hash: String, nearestTag: String | `false`): Description = {
     val __obj = js.Dynamic.literal(commitsSinceTag = commitsSinceTag.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], nearestTag = nearestTag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Description]
   }
 }

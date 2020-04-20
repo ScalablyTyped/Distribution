@@ -26,7 +26,6 @@ object ISpinButtonClassNames {
     spinButtonWrapper: String
   ): ISpinButtonClassNames = {
     val __obj = js.Dynamic.literal(arrowBox = arrowBox.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelWrapper = labelWrapper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], spinButtonWrapper = spinButtonWrapper.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISpinButtonClassNames]
   }
 }

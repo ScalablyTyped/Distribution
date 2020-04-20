@@ -27,7 +27,6 @@ object QueryAutocompleteResult {
     terms: js.Array[PredictionTerm]
   ): QueryAutocompleteResult = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], matched_substrings = matched_substrings.asInstanceOf[js.Any], terms = terms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryAutocompleteResult]
   }
 }

@@ -14,7 +14,6 @@ object IScheduledTileNotificationFactory {
   @scala.inline
   def apply(createScheduledTileNotification: (XmlDocument, Date) => ScheduledTileNotification): IScheduledTileNotificationFactory = {
     val __obj = js.Dynamic.literal(createScheduledTileNotification = js.Any.fromFunction2(createScheduledTileNotification))
-  
     __obj.asInstanceOf[IScheduledTileNotificationFactory]
   }
 }

@@ -13,7 +13,6 @@ object ScriptingResult {
   @scala.inline
   def apply(operationId: String, script: String): ScriptingResult = {
     val __obj = js.Dynamic.literal(operationId = operationId.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScriptingResult]
   }
 }

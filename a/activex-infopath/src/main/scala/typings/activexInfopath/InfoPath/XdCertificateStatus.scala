@@ -20,16 +20,14 @@ trait XdCertificateStatus extends js.Object
 
 object XdCertificateStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xdCertificateStatusError: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xdCertificateStatusError: `0` = this.cast(0)
+  def xdCertificateStatusExpired: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xdCertificateStatusExpired: `2` = this.cast(2)
+  def xdCertificateStatusNotTrusted: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xdCertificateStatusNotTrusted: `3` = this.cast(3)
+  def xdCertificateStatusRevoked: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xdCertificateStatusRevoked: `4` = this.cast(4)
-  @scala.inline
-  def xdCertificateStatusValid: `1` = this.cast(1)
+  def xdCertificateStatusValid: `1` = 1.asInstanceOf[`1`]
 }
 

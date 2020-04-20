@@ -28,7 +28,6 @@ object base64 {
   @scala.inline
   def apply(decode: String => Unit, encode: js.Array[Double] => Unit): base64 = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[base64]
   }
 }

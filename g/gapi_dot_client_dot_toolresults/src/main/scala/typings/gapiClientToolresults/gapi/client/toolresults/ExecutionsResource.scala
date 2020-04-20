@@ -65,7 +65,6 @@ object ExecutionsResource {
     steps: StepsResource
   ): ExecutionsResource = {
     val __obj = js.Dynamic.literal(clusters = clusters.asInstanceOf[js.Any], create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), steps = steps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecutionsResource]
   }
 }

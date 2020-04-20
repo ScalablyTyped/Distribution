@@ -25,7 +25,7 @@ class Footer protected () extends DropZone {
   ) = this()
   @JSName("model")
   var model_FFooter: IModel = js.native
-  def bottomMargin(): Double = js.native
+  def bottomMargin: Double = js.native
   def bottomMargin(newValue: Double): js.Any = js.native
 }
 

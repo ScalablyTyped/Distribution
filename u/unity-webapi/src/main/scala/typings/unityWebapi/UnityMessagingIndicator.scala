@@ -30,7 +30,6 @@ object UnityMessagingIndicator {
     showIndicator: (String, UnityIndicatorProperties) => js.Any
   ): UnityMessagingIndicator = {
     val __obj = js.Dynamic.literal(addAction = js.Any.fromFunction2(addAction), clearIndicator = js.Any.fromFunction1(clearIndicator), clearIndicators = js.Any.fromFunction0(clearIndicators), onPresenceChanged = js.Any.fromFunction1(onPresenceChanged), presence = presence.asInstanceOf[js.Any], removeAction = js.Any.fromFunction1(removeAction), removeActions = js.Any.fromFunction0(removeActions), showIndicator = js.Any.fromFunction2(showIndicator))
-  
     __obj.asInstanceOf[UnityMessagingIndicator]
   }
 }

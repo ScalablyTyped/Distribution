@@ -19,18 +19,16 @@ trait RendererType extends js.Object
 
 object RendererType {
   @scala.inline
-  def autocomplete: typings.handsontable.handsontableStrings.autocomplete = this.cast("autocomplete")
+  def autocomplete: typings.handsontable.handsontableStrings.autocomplete = "autocomplete".asInstanceOf[typings.handsontable.handsontableStrings.autocomplete]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkbox: typings.handsontable.handsontableStrings.checkbox = "checkbox".asInstanceOf[typings.handsontable.handsontableStrings.checkbox]
   @scala.inline
-  def checkbox: typings.handsontable.handsontableStrings.checkbox = this.cast("checkbox")
+  def html: typings.handsontable.handsontableStrings.html = "html".asInstanceOf[typings.handsontable.handsontableStrings.html]
   @scala.inline
-  def html: typings.handsontable.handsontableStrings.html = this.cast("html")
+  def numeric: typings.handsontable.handsontableStrings.numeric = "numeric".asInstanceOf[typings.handsontable.handsontableStrings.numeric]
   @scala.inline
-  def numeric: typings.handsontable.handsontableStrings.numeric = this.cast("numeric")
+  def password: typings.handsontable.handsontableStrings.password = "password".asInstanceOf[typings.handsontable.handsontableStrings.password]
   @scala.inline
-  def password: typings.handsontable.handsontableStrings.password = this.cast("password")
-  @scala.inline
-  def text: typings.handsontable.handsontableStrings.text = this.cast("text")
+  def text: typings.handsontable.handsontableStrings.text = "text".asInstanceOf[typings.handsontable.handsontableStrings.text]
 }
 

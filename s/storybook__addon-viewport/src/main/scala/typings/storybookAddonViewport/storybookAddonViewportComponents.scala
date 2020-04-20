@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object storybookAddonViewportComponents extends storybookAddonViewportProps {
   @scala.inline
-  def ViewportTool: ComponentType[js.Object] = typings.storybookAddonViewport.toolMod.ViewportTool.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ViewportTool: ComponentType[js.Object] = typings.storybookAddonViewport.toolMod.ViewportTool.asInstanceOf[ComponentType[js.Object]]
 }
 

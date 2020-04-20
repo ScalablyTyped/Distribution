@@ -20,7 +20,6 @@ object SigningConfiguration {
   @scala.inline
   def apply(encryptionAlgorithmOptions: EncryptionAlgorithmOptions, hashAlgorithmOptions: HashAlgorithmOptions): SigningConfiguration = {
     val __obj = js.Dynamic.literal(encryptionAlgorithmOptions = encryptionAlgorithmOptions.asInstanceOf[js.Any], hashAlgorithmOptions = hashAlgorithmOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SigningConfiguration]
   }
 }

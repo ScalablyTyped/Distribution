@@ -22,7 +22,6 @@ object Typeoftsilo {
     ts_store_uri: String => Double
   ): Typeoftsilo = {
     val __obj = js.Dynamic.literal(ts_append = js.Any.fromFunction2(ts_append), ts_append_to = js.Any.fromFunction3(ts_append_to), ts_append_to_uri = js.Any.fromFunction4(ts_append_to_uri), ts_store = js.Any.fromFunction0(ts_store), ts_store_uri = js.Any.fromFunction1(ts_store_uri))
-  
     __obj.asInstanceOf[Typeoftsilo]
   }
 }

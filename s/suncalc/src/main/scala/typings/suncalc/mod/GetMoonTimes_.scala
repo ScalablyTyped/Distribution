@@ -16,7 +16,6 @@ object GetMoonTimes_ {
   @scala.inline
   def apply(alwaysDown: Boolean, alwaysUp: Boolean, rise: Date, set: Date): GetMoonTimes_ = {
     val __obj = js.Dynamic.literal(alwaysDown = alwaysDown.asInstanceOf[js.Any], alwaysUp = alwaysUp.asInstanceOf[js.Any], rise = rise.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMoonTimes_]
   }
 }

@@ -24,7 +24,6 @@ object Props {
     tipId: String
   ): Props = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], tipId = tipId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Props]
   }
 }

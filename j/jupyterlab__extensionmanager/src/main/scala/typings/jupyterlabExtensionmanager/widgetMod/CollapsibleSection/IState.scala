@@ -18,7 +18,6 @@ object IState {
   @scala.inline
   def apply(isOpen: Boolean): IState = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IState]
   }
 }

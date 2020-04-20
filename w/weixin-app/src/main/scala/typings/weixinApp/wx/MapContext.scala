@@ -22,7 +22,6 @@ object MapContext {
   @scala.inline
   def apply(getCenterLocation: GetCenterLocationOptions => OpenLocationOptions, moveToLocation: () => Unit): MapContext = {
     val __obj = js.Dynamic.literal(getCenterLocation = js.Any.fromFunction1(getCenterLocation), moveToLocation = js.Any.fromFunction0(moveToLocation))
-  
     __obj.asInstanceOf[MapContext]
   }
 }

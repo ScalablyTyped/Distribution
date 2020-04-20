@@ -12,10 +12,8 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  def boolean: typings.minimistOptions.minimistOptionsStrings.boolean = this.cast("boolean")
+  def boolean: typings.minimistOptions.minimistOptionsStrings.boolean = "boolean".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def string: typings.minimistOptions.minimistOptionsStrings.string = this.cast("string")
+  def string: typings.minimistOptions.minimistOptionsStrings.string = "string".asInstanceOf[typings.minimistOptions.minimistOptionsStrings.string]
 }
 

@@ -18,14 +18,12 @@ trait MsoConnectorType extends js.Object
 
 object MsoConnectorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoConnectorCurve: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoConnectorCurve: `3` = this.cast(3)
+  def msoConnectorElbow: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoConnectorElbow: `2` = this.cast(2)
+  def msoConnectorStraight: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoConnectorStraight: `1` = this.cast(1)
-  @scala.inline
-  def msoConnectorTypeMixed: `-2` = this.cast(-2)
+  def msoConnectorTypeMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

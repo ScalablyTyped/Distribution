@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactEventListenerProps {
   @scala.inline
-  def ReactEventListenerProps: EventListenerProps.type = typings.reactEventListener.mod.EventListenerProps
+  def ReactEventListenerProps: EventListenerProps.type = EventListenerProps
   type ReactEventListenerProps = EventListenerProps
 }
 

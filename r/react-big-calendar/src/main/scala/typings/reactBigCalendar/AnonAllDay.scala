@@ -16,7 +16,6 @@ object AnonAllDay {
   @scala.inline
   def apply[TEvent /* <: js.Object */](allDay: Boolean, end: stringOrDate, event: TEvent, start: stringOrDate): AnonAllDay[TEvent] = {
     val __obj = js.Dynamic.literal(allDay = allDay.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllDay[TEvent]]
   }
 }

@@ -14,14 +14,12 @@ trait status extends js.Object
 
 object status {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def failed: typings.yogBigpipe.yogBigpipeStrings.failed = "failed".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.failed]
   @scala.inline
-  def failed: typings.yogBigpipe.yogBigpipeStrings.failed = this.cast("failed")
+  def fulfilled: typings.yogBigpipe.yogBigpipeStrings.fulfilled = "fulfilled".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.fulfilled]
   @scala.inline
-  def fulfilled: typings.yogBigpipe.yogBigpipeStrings.fulfilled = this.cast("fulfilled")
+  def pending: typings.yogBigpipe.yogBigpipeStrings.pending = "pending".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.pending]
   @scala.inline
-  def pending: typings.yogBigpipe.yogBigpipeStrings.pending = this.cast("pending")
-  @scala.inline
-  def rendering: typings.yogBigpipe.yogBigpipeStrings.rendering = this.cast("rendering")
+  def rendering: typings.yogBigpipe.yogBigpipeStrings.rendering = "rendering".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.rendering]
 }
 

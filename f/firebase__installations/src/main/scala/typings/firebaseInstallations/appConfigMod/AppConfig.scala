@@ -15,7 +15,6 @@ object AppConfig {
   @scala.inline
   def apply(apiKey: String, appId: String, appName: String, projectId: String): AppConfig = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppConfig]
   }
 }

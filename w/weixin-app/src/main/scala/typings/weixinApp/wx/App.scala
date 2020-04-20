@@ -15,7 +15,6 @@ object App {
   @scala.inline
   def apply(getCurrentPage: () => Page[js.Object, js.Object]): App = {
     val __obj = js.Dynamic.literal(getCurrentPage = js.Any.fromFunction0(getCurrentPage))
-  
     __obj.asInstanceOf[App]
   }
 }

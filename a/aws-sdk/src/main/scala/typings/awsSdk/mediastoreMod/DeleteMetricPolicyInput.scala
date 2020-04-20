@@ -16,7 +16,6 @@ object DeleteMetricPolicyInput {
   @scala.inline
   def apply(ContainerName: ContainerName): DeleteMetricPolicyInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMetricPolicyInput]
   }
 }

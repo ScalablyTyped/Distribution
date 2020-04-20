@@ -43,7 +43,6 @@ object TwitterStreamChannels {
   @scala.inline
   def apply(getApiClient: () => typings.twit.mod.^, streamChannels: StreamChannelsOptions => StreamChannels): TwitterStreamChannels = {
     val __obj = js.Dynamic.literal(getApiClient = js.Any.fromFunction0(getApiClient), streamChannels = js.Any.fromFunction1(streamChannels))
-  
     __obj.asInstanceOf[TwitterStreamChannels]
   }
 }

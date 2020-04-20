@@ -37,7 +37,6 @@ object SupportedIde {
     supportedPlatforms: js.Array[String]
   ): SupportedIde = {
     val __obj = js.Dynamic.literal(downloadUrl = downloadUrl.asInstanceOf[js.Any], ideType = ideType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], protocolHandlerUrl = protocolHandlerUrl.asInstanceOf[js.Any], supportedPlatforms = supportedPlatforms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SupportedIde]
   }
 }

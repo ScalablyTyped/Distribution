@@ -13,7 +13,6 @@ object OpenUrlActionOptions {
   @scala.inline
   def apply(url: String): OpenUrlActionOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenUrlActionOptions]
   }
 }

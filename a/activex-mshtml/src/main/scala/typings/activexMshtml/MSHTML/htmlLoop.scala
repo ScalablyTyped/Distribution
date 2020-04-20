@@ -14,10 +14,8 @@ trait htmlLoop extends js.Object
 
 object htmlLoop {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlLoopLoopInfinite: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def htmlLoopLoopInfinite: `-1` = this.cast(-1)
-  @scala.inline
-  def htmlLoop_Max: `2147483647` = this.cast(2147483647)
+  def htmlLoop_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

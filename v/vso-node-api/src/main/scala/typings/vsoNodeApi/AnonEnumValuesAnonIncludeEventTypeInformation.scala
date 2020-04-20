@@ -12,7 +12,6 @@ object AnonEnumValuesAnonIncludeEventTypeInformation {
   @scala.inline
   def apply(enumValues: AnonIncludeEventTypeInformation): AnonEnumValuesAnonIncludeEventTypeInformation = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonIncludeEventTypeInformation]
   }
 }

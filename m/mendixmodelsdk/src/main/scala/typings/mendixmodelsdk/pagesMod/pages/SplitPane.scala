@@ -26,7 +26,7 @@ abstract class SplitPane protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FSplitPane: IModel = js.native
-  def animatedResize(): Boolean = js.native
+  def animatedResize: Boolean = js.native
   def animatedResize(newValue: Boolean): js.Any = js.native
   def firstWidget(): js.Any = js.native
   def firstWidget(newValue: Widget): js.Any = js.native
@@ -34,14 +34,14 @@ abstract class SplitPane protected () extends Widget {
     * In version 7.15.0: deleted
     */
   @JSName("firstWidget")
-  def firstWidget_Union(): Widget | Null = js.native
+  def firstWidget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def firstWidgets(): IList[Widget] = js.native
-  def height(): Double = js.native
+  def firstWidgets: IList[Widget] = js.native
+  def height: Double = js.native
   def height(newValue: Double): js.Any = js.native
-  def position(): Double = js.native
+  def position: Double = js.native
   def position(newValue: Double): js.Any = js.native
   def secondWidget(): js.Any = js.native
   def secondWidget(newValue: Widget): js.Any = js.native
@@ -49,11 +49,11 @@ abstract class SplitPane protected () extends Widget {
     * In version 7.15.0: deleted
     */
   @JSName("secondWidget")
-  def secondWidget_Union(): Widget | Null = js.native
+  def secondWidget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def secondWidgets(): IList[Widget] = js.native
+  def secondWidgets: IList[Widget] = js.native
 }
 
 /* static members */

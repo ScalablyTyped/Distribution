@@ -26,7 +26,6 @@ object DomainsCollection {
     remove: (String, String) => Unit
   ): DomainsCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), insert = js.Any.fromFunction2(insert), list = js.Any.fromFunction1(list), remove = js.Any.fromFunction2(remove))
-  
     __obj.asInstanceOf[DomainsCollection]
   }
 }

@@ -18,7 +18,6 @@ object SubAPI {
     versionUpdateAvailable: () => Boolean
   ): SubAPI = {
     val __obj = js.Dynamic.literal(getCurrentVersion = js.Any.fromFunction0(getCurrentVersion), getLatestVersion = js.Any.fromFunction0(getLatestVersion), versionUpdateAvailable = js.Any.fromFunction0(versionUpdateAvailable))
-  
     __obj.asInstanceOf[SubAPI]
   }
 }

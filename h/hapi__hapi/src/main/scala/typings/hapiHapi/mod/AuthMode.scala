@@ -13,12 +13,10 @@ trait AuthMode extends js.Object
 
 object AuthMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def optional: typings.hapiHapi.hapiHapiStrings.optional = "optional".asInstanceOf[typings.hapiHapi.hapiHapiStrings.optional]
   @scala.inline
-  def optional: typings.hapiHapi.hapiHapiStrings.optional = this.cast("optional")
+  def required: typings.hapiHapi.hapiHapiStrings.required = "required".asInstanceOf[typings.hapiHapi.hapiHapiStrings.required]
   @scala.inline
-  def required: typings.hapiHapi.hapiHapiStrings.required = this.cast("required")
-  @scala.inline
-  def `try`: typings.hapiHapi.hapiHapiStrings.`try` = this.cast("try")
+  def `try`: typings.hapiHapi.hapiHapiStrings.`try` = "try".asInstanceOf[typings.hapiHapi.hapiHapiStrings.`try`]
 }
 

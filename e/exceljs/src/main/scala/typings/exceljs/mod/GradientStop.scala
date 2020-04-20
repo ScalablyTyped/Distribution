@@ -14,7 +14,6 @@ object GradientStop {
   @scala.inline
   def apply(color: PartialColor, position: Double): GradientStop = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GradientStop]
   }
 }

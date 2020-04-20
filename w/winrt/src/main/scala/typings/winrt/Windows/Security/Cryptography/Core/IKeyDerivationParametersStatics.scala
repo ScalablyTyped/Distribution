@@ -25,7 +25,6 @@ object IKeyDerivationParametersStatics {
     buildForSP80056a: (IBuffer, IBuffer, IBuffer, IBuffer, IBuffer) => KeyDerivationParameters
   ): IKeyDerivationParametersStatics = {
     val __obj = js.Dynamic.literal(buildForPbkdf2 = js.Any.fromFunction2(buildForPbkdf2), buildForSP800108 = js.Any.fromFunction2(buildForSP800108), buildForSP80056a = js.Any.fromFunction5(buildForSP80056a))
-  
     __obj.asInstanceOf[IKeyDerivationParametersStatics]
   }
 }

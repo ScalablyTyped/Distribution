@@ -14,7 +14,6 @@ object AnonNeedsUpgrade {
   @scala.inline
   def apply(needsUpgrade: Boolean, urgent: Boolean, version: String): AnonNeedsUpgrade = {
     val __obj = js.Dynamic.literal(needsUpgrade = needsUpgrade.asInstanceOf[js.Any], urgent = urgent.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNeedsUpgrade]
   }
 }

@@ -13,7 +13,6 @@ object Typestate {
   @scala.inline
   def apply[TContext](context: TContext, value: StateValue): Typestate[TContext] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typestate[TContext]]
   }
 }

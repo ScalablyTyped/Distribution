@@ -14,10 +14,8 @@ trait WdWindowType extends js.Object
 
 object WdWindowType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdWindowDocument: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdWindowDocument: `0` = this.cast(0)
-  @scala.inline
-  def wdWindowTemplate: `1` = this.cast(1)
+  def wdWindowTemplate: `1` = 1.asInstanceOf[`1`]
 }
 

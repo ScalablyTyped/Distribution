@@ -36,7 +36,6 @@ object IReceiver {
     update: () => Unit
   ): IReceiver = {
     val __obj = js.Dynamic.literal(addCell = js.Any.fromFunction2(addCell), createCodeCell = js.Any.fromFunction0(createCodeCell), getCell = js.Any.fromFunction1(getCell), update = js.Any.fromFunction0(update))
-  
     __obj.asInstanceOf[IReceiver]
   }
 }

@@ -24,7 +24,6 @@ object ProgressResponseBase {
     totalSize: Double
   ): ProgressResponseBase = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], lengthComputable = lengthComputable.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], totalSize = totalSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProgressResponseBase]
   }
 }

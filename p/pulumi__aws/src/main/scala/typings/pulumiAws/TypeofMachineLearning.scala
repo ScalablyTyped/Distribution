@@ -13,7 +13,6 @@ object TypeofMachineLearning {
   @scala.inline
   def apply(Types: TypeofMachineLearning): TypeofMachineLearning = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofMachineLearning]
   }
 }

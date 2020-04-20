@@ -16,12 +16,10 @@ trait XlBackground extends js.Object
 
 object XlBackground {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlBackgroundAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   @scala.inline
-  def xlBackgroundAutomatic: `-4105` = this.cast(-4105)
+  def xlBackgroundOpaque: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlBackgroundOpaque: `3` = this.cast(3)
-  @scala.inline
-  def xlBackgroundTransparent: `2` = this.cast(2)
+  def xlBackgroundTransparent: `2` = 2.asInstanceOf[`2`]
 }
 

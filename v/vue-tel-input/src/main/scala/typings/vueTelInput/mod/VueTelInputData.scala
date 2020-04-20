@@ -24,7 +24,6 @@ object VueTelInputData {
     typeToFindTimer: js.Any
   ): VueTelInputData = {
     val __obj = js.Dynamic.literal(activeCountry = activeCountry.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], selectedIndex = selectedIndex.asInstanceOf[js.Any], typeToFindInput = typeToFindInput.asInstanceOf[js.Any], typeToFindTimer = typeToFindTimer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VueTelInputData]
   }
 }

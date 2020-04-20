@@ -40,7 +40,6 @@ object NodeSingularCompound {
     isParent: () => Boolean
   ): NodeSingularCompound = {
     val __obj = js.Dynamic.literal(isChild = js.Any.fromFunction0(isChild), isChildless = js.Any.fromFunction0(isChildless), isOrphan = js.Any.fromFunction0(isOrphan), isParent = js.Any.fromFunction0(isParent))
-  
     __obj.asInstanceOf[NodeSingularCompound]
   }
 }

@@ -13,7 +13,6 @@ object WordNet {
   @scala.inline
   def apply(get: (Double, String, WordNetGetCallback) => Unit, lookup: (String, WordNetLookupCallback) => Unit): WordNet = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get), lookup = js.Any.fromFunction2(lookup))
-  
     __obj.asInstanceOf[WordNet]
   }
 }

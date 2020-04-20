@@ -44,7 +44,6 @@ object JobsResource {
     query: AnonFields => Request_[QueryResponse]
   ): JobsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), get = js.Any.fromFunction1(get), getQueryResults = js.Any.fromFunction1(getQueryResults), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[JobsResource]
   }
 }

@@ -23,7 +23,6 @@ object UserAgent {
   @scala.inline
   def apply(appName: String, data: Data, random: () => UserAgent): UserAgent = {
     val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], random = js.Any.fromFunction0(random))
-  
     __obj.asInstanceOf[UserAgent]
   }
 }

@@ -19,7 +19,6 @@ object CameraPopoverHandle {
   @scala.inline
   def apply(setPosition: CameraPopoverOptions => Unit): CameraPopoverHandle = {
     val __obj = js.Dynamic.literal(setPosition = js.Any.fromFunction1(setPosition))
-  
     __obj.asInstanceOf[CameraPopoverHandle]
   }
 }

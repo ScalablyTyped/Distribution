@@ -13,7 +13,6 @@ object Cache {
   @scala.inline
   def apply(clear: String, content: String): Cache = {
     val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Cache]
   }
 }

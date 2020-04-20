@@ -104,7 +104,7 @@ package object mod {
   js.ThisFunction1[/* this */ typings.raphael.mod.RaphaelPaper[TTechnology], /* args */ TArgs, TRetVal]
   type RaphaelPaperPluginRegistry[TTechnology /* <: typings.raphael.mod.RaphaelTechnology */, T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: T[P] extends (args : any): any? raphael.raphael.RaphaelPaperPluginMethod<TTechnology, std.Parameters<T[P]>, std.ReturnType<T[P]>> : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias raphael.raphael.RaphaelPaperPluginRegistry<TTechnology, T[P]> * / object}
-    */ typings.raphael.raphaelStrings.RaphaelPaperPluginRegistry with js.Any
+    */ typings.raphael.raphaelStrings.RaphaelPaperPluginRegistry with org.scalablytyped.runtime.TopLevel[js.Any]
   type RaphaelPathSegment = (js.Tuple3[
     typings.raphael.raphaelStrings.M | typings.raphael.raphaelStrings.m_ | typings.raphael.raphaelStrings.L | typings.raphael.raphaelStrings.l_ | typings.raphael.raphaelStrings.T | typings.raphael.raphaelStrings.t_ | typings.raphael.raphaelStrings.R | typings.raphael.raphaelStrings.r_, 
     scala.Double, 

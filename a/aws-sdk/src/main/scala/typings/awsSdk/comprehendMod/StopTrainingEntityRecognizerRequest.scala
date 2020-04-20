@@ -16,7 +16,6 @@ object StopTrainingEntityRecognizerRequest {
   @scala.inline
   def apply(EntityRecognizerArn: EntityRecognizerArn): StopTrainingEntityRecognizerRequest = {
     val __obj = js.Dynamic.literal(EntityRecognizerArn = EntityRecognizerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopTrainingEntityRecognizerRequest]
   }
 }

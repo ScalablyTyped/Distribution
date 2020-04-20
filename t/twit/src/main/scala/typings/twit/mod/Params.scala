@@ -29,6 +29,7 @@ trait Params extends js.Object {
   var media_id: js.UndefOr[String] = js.undefined
   var media_ids: js.UndefOr[js.Array[String]] = js.undefined
   var owner_screen_name: js.UndefOr[String] = js.undefined
+  var page: js.UndefOr[Double] = js.undefined
   // search/tweets
   var q: js.UndefOr[String] = js.undefined
   var result_type: js.UndefOr[ResultType] = js.undefined
@@ -76,6 +77,7 @@ object Params {
     media_id: String = null,
     media_ids: js.Array[String] = null,
     owner_screen_name: String = null,
+    page: Int | Double = null,
     q: String = null,
     result_type: ResultType = null,
     results_per_page: Int | Double = null,
@@ -118,6 +120,7 @@ object Params {
     if (media_id != null) __obj.updateDynamic("media_id")(media_id.asInstanceOf[js.Any])
     if (media_ids != null) __obj.updateDynamic("media_ids")(media_ids.asInstanceOf[js.Any])
     if (owner_screen_name != null) __obj.updateDynamic("owner_screen_name")(owner_screen_name.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     if (result_type != null) __obj.updateDynamic("result_type")(result_type.asInstanceOf[js.Any])
     if (results_per_page != null) __obj.updateDynamic("results_per_page")(results_per_page.asInstanceOf[js.Any])

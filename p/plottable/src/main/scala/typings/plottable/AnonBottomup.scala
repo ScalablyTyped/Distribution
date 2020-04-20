@@ -15,7 +15,6 @@ object AnonBottomup {
   @scala.inline
   def apply(bottomup: bottomup, topdown: topdown): AnonBottomup = {
     val __obj = js.Dynamic.literal(bottomup = bottomup.asInstanceOf[js.Any], topdown = topdown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBottomup]
   }
 }

@@ -14,7 +14,6 @@ object ChartAction {
   @scala.inline
   def apply(action: () => Unit, id: String | Double, text: String): ChartAction = {
     val __obj = js.Dynamic.literal(action = js.Any.fromFunction0(action), id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChartAction]
   }
 }

@@ -25,7 +25,6 @@ object RequiredLoaderHeightWidth {
     width: LengthType
   ): RequiredLoaderHeightWidth = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredLoaderHeightWidth]
   }
 }

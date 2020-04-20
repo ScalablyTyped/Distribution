@@ -24,7 +24,6 @@ object Principal {
   @scala.inline
   def apply(Access: ReadAccessType, Name: PrincipalName, Type: PrincipalType): Principal = {
     val __obj = js.Dynamic.literal(Access = Access.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Principal]
   }
 }

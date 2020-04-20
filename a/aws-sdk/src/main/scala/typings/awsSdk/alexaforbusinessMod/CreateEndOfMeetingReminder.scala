@@ -28,7 +28,6 @@ object CreateEndOfMeetingReminder {
     ReminderType: EndOfMeetingReminderType
   ): CreateEndOfMeetingReminder = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], ReminderAtMinutes = ReminderAtMinutes.asInstanceOf[js.Any], ReminderType = ReminderType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateEndOfMeetingReminder]
   }
 }

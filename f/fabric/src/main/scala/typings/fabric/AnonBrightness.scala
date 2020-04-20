@@ -16,7 +16,6 @@ object AnonBrightness {
   @scala.inline
   def apply(brightness: Double): AnonBrightness = {
     val __obj = js.Dynamic.literal(brightness = brightness.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBrightness]
   }
 }

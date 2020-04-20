@@ -15,7 +15,6 @@ object AnonArgs {
   @scala.inline
   def apply(args: js.Array[Expression], stmts: js.Array[Statement]): AnonArgs = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], stmts = stmts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArgs]
   }
 }

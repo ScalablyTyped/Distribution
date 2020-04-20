@@ -14,7 +14,6 @@ object Meta {
   @scala.inline
   def apply(location: Location, path: String, req: Request): Meta = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Meta]
   }
 }

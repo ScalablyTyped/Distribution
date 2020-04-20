@@ -16,7 +16,6 @@ object GetSatelliteRequest {
   @scala.inline
   def apply(satelliteId: String): GetSatelliteRequest = {
     val __obj = js.Dynamic.literal(satelliteId = satelliteId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSatelliteRequest]
   }
 }

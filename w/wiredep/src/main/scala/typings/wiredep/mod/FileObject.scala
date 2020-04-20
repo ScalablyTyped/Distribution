@@ -23,7 +23,6 @@ object FileObject {
   @scala.inline
   def apply(block: String, file: String, path: String): FileObject = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileObject]
   }
 }

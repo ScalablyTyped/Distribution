@@ -17,7 +17,6 @@ object NodeCompatibleEventEmitter {
     removeListener: (String, NodeEventHandler) => Unit | js.Object
   ): NodeCompatibleEventEmitter = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), removeListener = js.Any.fromFunction2(removeListener))
-  
     __obj.asInstanceOf[NodeCompatibleEventEmitter]
   }
 }

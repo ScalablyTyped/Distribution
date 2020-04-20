@@ -17,18 +17,16 @@ trait networkType extends js.Object
 
 object networkType {
   @scala.inline
-  def `2g`: typings.baiduApp.baiduAppStrings.`2g` = this.cast("2g")
+  def `2g`: typings.baiduApp.baiduAppStrings.`2g` = "2g".asInstanceOf[typings.baiduApp.baiduAppStrings.`2g`]
   @scala.inline
-  def `3g`: typings.baiduApp.baiduAppStrings.`3g` = this.cast("3g")
+  def `3g`: typings.baiduApp.baiduAppStrings.`3g` = "3g".asInstanceOf[typings.baiduApp.baiduAppStrings.`3g`]
   @scala.inline
-  def `4g`: typings.baiduApp.baiduAppStrings.`4g` = this.cast("4g")
+  def `4g`: typings.baiduApp.baiduAppStrings.`4g` = "4g".asInstanceOf[typings.baiduApp.baiduAppStrings.`4g`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.baiduApp.baiduAppStrings.none = "none".asInstanceOf[typings.baiduApp.baiduAppStrings.none]
   @scala.inline
-  def none: typings.baiduApp.baiduAppStrings.none = this.cast("none")
+  def unknown: typings.baiduApp.baiduAppStrings.unknown = "unknown".asInstanceOf[typings.baiduApp.baiduAppStrings.unknown]
   @scala.inline
-  def unknown: typings.baiduApp.baiduAppStrings.unknown = this.cast("unknown")
-  @scala.inline
-  def wifi: typings.baiduApp.baiduAppStrings.wifi = this.cast("wifi")
+  def wifi: typings.baiduApp.baiduAppStrings.wifi = "wifi".asInstanceOf[typings.baiduApp.baiduAppStrings.wifi]
 }
 

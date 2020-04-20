@@ -27,7 +27,6 @@ object _SourceMapInput {
   @scala.inline
   def AnonMappings(mappings: _empty): _SourceMapInput = {
     val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_SourceMapInput]
   }
 }

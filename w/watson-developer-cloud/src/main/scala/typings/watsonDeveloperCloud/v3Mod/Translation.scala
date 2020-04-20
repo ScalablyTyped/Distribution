@@ -14,7 +14,6 @@ object Translation {
   @scala.inline
   def apply(translation_output: String): Translation = {
     val __obj = js.Dynamic.literal(translation_output = translation_output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Translation]
   }
 }

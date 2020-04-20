@@ -35,7 +35,6 @@ object PNGlib {
     width: Double
   ): PNGlib = {
     val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], getBase64 = js.Any.fromFunction0(getBase64), getDump = js.Any.fromFunction0(getDump), height = height.asInstanceOf[js.Any], index = js.Any.fromFunction2(index), width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PNGlib]
   }
 }

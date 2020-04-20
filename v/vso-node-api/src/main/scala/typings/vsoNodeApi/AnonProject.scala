@@ -13,7 +13,6 @@ object AnonProject {
   @scala.inline
   def apply(project: Double, projectCollection: Double): AnonProject = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], projectCollection = projectCollection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProject]
   }
 }

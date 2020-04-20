@@ -36,7 +36,6 @@ object Typeofidle {
     setDetectionInterval: Double => Unit
   ): Typeofidle = {
     val __obj = js.Dynamic.literal(onStateChanged = onStateChanged.asInstanceOf[js.Any], queryState = js.Any.fromFunction1(queryState), setDetectionInterval = js.Any.fromFunction1(setDetectionInterval))
-  
     __obj.asInstanceOf[Typeofidle]
   }
 }

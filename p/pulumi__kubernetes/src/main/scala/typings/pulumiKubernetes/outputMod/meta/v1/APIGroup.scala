@@ -58,7 +58,6 @@ object APIGroup {
     versions: js.Array[GroupVersionForDiscovery]
   ): APIGroup = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], preferredVersion = preferredVersion.asInstanceOf[js.Any], serverAddressByClientCIDRs = serverAddressByClientCIDRs.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[APIGroup]
   }
 }

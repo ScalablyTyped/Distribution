@@ -13,7 +13,6 @@ object AuthResult {
   @scala.inline
   def apply(accessToken: String, state: AuthState): AuthResult = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthResult]
   }
 }

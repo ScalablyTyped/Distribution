@@ -20,26 +20,24 @@ trait IAriaAttribute extends js.Object
 
 object IAriaAttribute {
   @scala.inline
-  def ariaChecked: typings.angularAria.angularAriaStrings.ariaChecked = this.cast("ariaChecked")
+  def ariaChecked: typings.angularAria.angularAriaStrings.ariaChecked = "ariaChecked".asInstanceOf[typings.angularAria.angularAriaStrings.ariaChecked]
   @scala.inline
-  def ariaDisabled: typings.angularAria.angularAriaStrings.ariaDisabled = this.cast("ariaDisabled")
+  def ariaDisabled: typings.angularAria.angularAriaStrings.ariaDisabled = "ariaDisabled".asInstanceOf[typings.angularAria.angularAriaStrings.ariaDisabled]
   @scala.inline
-  def ariaHidden: typings.angularAria.angularAriaStrings.ariaHidden = this.cast("ariaHidden")
+  def ariaHidden: typings.angularAria.angularAriaStrings.ariaHidden = "ariaHidden".asInstanceOf[typings.angularAria.angularAriaStrings.ariaHidden]
   @scala.inline
-  def ariaInvalid: typings.angularAria.angularAriaStrings.ariaInvalid = this.cast("ariaInvalid")
+  def ariaInvalid: typings.angularAria.angularAriaStrings.ariaInvalid = "ariaInvalid".asInstanceOf[typings.angularAria.angularAriaStrings.ariaInvalid]
   @scala.inline
-  def ariaReadonly: typings.angularAria.angularAriaStrings.ariaReadonly = this.cast("ariaReadonly")
+  def ariaReadonly: typings.angularAria.angularAriaStrings.ariaReadonly = "ariaReadonly".asInstanceOf[typings.angularAria.angularAriaStrings.ariaReadonly]
   @scala.inline
-  def ariaRequired: typings.angularAria.angularAriaStrings.ariaRequired = this.cast("ariaRequired")
+  def ariaRequired: typings.angularAria.angularAriaStrings.ariaRequired = "ariaRequired".asInstanceOf[typings.angularAria.angularAriaStrings.ariaRequired]
   @scala.inline
-  def ariaValue: typings.angularAria.angularAriaStrings.ariaValue = this.cast("ariaValue")
+  def ariaValue: typings.angularAria.angularAriaStrings.ariaValue = "ariaValue".asInstanceOf[typings.angularAria.angularAriaStrings.ariaValue]
   @scala.inline
-  def bindKeydown: typings.angularAria.angularAriaStrings.bindKeydown = this.cast("bindKeydown")
+  def bindKeydown: typings.angularAria.angularAriaStrings.bindKeydown = "bindKeydown".asInstanceOf[typings.angularAria.angularAriaStrings.bindKeydown]
   @scala.inline
-  def bindRoleForClick: typings.angularAria.angularAriaStrings.bindRoleForClick = this.cast("bindRoleForClick")
+  def bindRoleForClick: typings.angularAria.angularAriaStrings.bindRoleForClick = "bindRoleForClick".asInstanceOf[typings.angularAria.angularAriaStrings.bindRoleForClick]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def tabindex: typings.angularAria.angularAriaStrings.tabindex = this.cast("tabindex")
+  def tabindex: typings.angularAria.angularAriaStrings.tabindex = "tabindex".asInstanceOf[typings.angularAria.angularAriaStrings.tabindex]
 }
 

@@ -12,7 +12,6 @@ object GuidOptions {
   @scala.inline
   def apply(version: js.Array[GuidVersions] | GuidVersions): GuidOptions = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GuidOptions]
   }
 }

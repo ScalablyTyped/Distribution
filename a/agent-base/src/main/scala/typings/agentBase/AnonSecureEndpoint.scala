@@ -12,7 +12,6 @@ object AnonSecureEndpoint {
   @scala.inline
   def apply(secureEndpoint: Boolean): AnonSecureEndpoint = {
     val __obj = js.Dynamic.literal(secureEndpoint = secureEndpoint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSecureEndpoint]
   }
 }

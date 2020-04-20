@@ -34,7 +34,6 @@ object CallFrame {
   @scala.inline
   def apply(columnNumber: Double, functionName: String, lineNumber: Double, scriptId: ScriptId, url: String): CallFrame = {
     val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CallFrame]
   }
 }

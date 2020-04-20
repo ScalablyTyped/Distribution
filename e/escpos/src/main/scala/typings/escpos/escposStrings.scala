@@ -581,9 +581,9 @@ object escposStrings {
   @scala.inline
   def Escape: Escape = "\u001B".asInstanceOf[Escape]
   @scala.inline
-  def `Escape `: `Escape ` = "\u001B ".asInstanceOf[`Escape `]
+  def `Escape `: `Escape ` = ("\u001B ").asInstanceOf[`Escape `]
   @scala.inline
-  def `Escape Null`: `Escape Null` = "\u001B \u0000".asInstanceOf[`Escape Null`]
+  def `Escape Null`: `Escape Null` = ("\u001B \u0000").asInstanceOf[`Escape Null`]
   @scala.inline
   def `Escape-Null`: `Escape-Null` = "\u001B-\u0000".asInstanceOf[`Escape-Null`]
   @scala.inline
@@ -601,7 +601,7 @@ object escposStrings {
   @scala.inline
   def `Escape@`: `Escape@` = "\u001B@".asInstanceOf[`Escape@`]
   @scala.inline
-  def `EscapeAsterisk `: `EscapeAsterisk ` = "\u001B* ".asInstanceOf[`EscapeAsterisk `]
+  def `EscapeAsterisk `: `EscapeAsterisk ` = ("\u001B* ").asInstanceOf[`EscapeAsterisk `]
   @scala.inline
   def EscapeAsteriskExclamationmark: EscapeAsteriskExclamationmark = "\u001B*!".asInstanceOf[EscapeAsteriskExclamationmark]
   @scala.inline
@@ -617,7 +617,7 @@ object escposStrings {
   @scala.inline
   def EscapeEqualssignStartofheading: EscapeEqualssignStartofheading = "\u001B=\u0001".asInstanceOf[EscapeEqualssignStartofheading]
   @scala.inline
-  def `EscapeExclamationmark `: `EscapeExclamationmark ` = "\u001B! ".asInstanceOf[`EscapeExclamationmark `]
+  def `EscapeExclamationmark `: `EscapeExclamationmark ` = ("\u001B! ").asInstanceOf[`EscapeExclamationmark `]
   @scala.inline
   def EscapeExclamationmark0: EscapeExclamationmark0 = "\u001B!0".asInstanceOf[EscapeExclamationmark0]
   @scala.inline
@@ -815,7 +815,7 @@ object escposStrings {
   @scala.inline
   def S8: S8 = "S8".asInstanceOf[S8]
   @scala.inline
-  def Space: Space = " ".asInstanceOf[Space]
+  def Space: Space = (" ").asInstanceOf[Space]
   @scala.inline
   def Startofheading: Startofheading = "\u0001".asInstanceOf[Startofheading]
   @scala.inline

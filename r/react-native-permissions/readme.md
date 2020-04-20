@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-permissions
 
-Typings are for version 2.0.10
+Typings are for version 2.1.2
 
 ## Library description:
 An unified permissions API for React Native on iOS and Android

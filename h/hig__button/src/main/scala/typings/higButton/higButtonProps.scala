@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait higButtonProps {
   @scala.inline
-  def ButtonProps: Props.type = typings.higButton.mod.Props
+  def ButtonProps: Props.type = Props
   type ButtonProps = Props
 }
 

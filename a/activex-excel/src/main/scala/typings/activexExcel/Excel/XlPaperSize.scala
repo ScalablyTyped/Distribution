@@ -94,90 +94,88 @@ trait XlPaperSize extends js.Object
 
 object XlPaperSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlPaper10x14: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlPaper10x14: `16` = this.cast(16)
+  def xlPaper11x17: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xlPaper11x17: `17` = this.cast(17)
+  def xlPaperA3: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlPaperA3: `8` = this.cast(8)
+  def xlPaperA4: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlPaperA4: `9` = this.cast(9)
+  def xlPaperA4Small: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlPaperA4Small: `10` = this.cast(10)
+  def xlPaperA5: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlPaperA5: `11` = this.cast(11)
+  def xlPaperB4: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlPaperB4: `12` = this.cast(12)
+  def xlPaperB5: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlPaperB5: `13` = this.cast(13)
+  def xlPaperCsheet: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def xlPaperCsheet: `24` = this.cast(24)
+  def xlPaperDsheet: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def xlPaperDsheet: `25` = this.cast(25)
+  def xlPaperEnvelope10: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def xlPaperEnvelope10: `20` = this.cast(20)
+  def xlPaperEnvelope11: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def xlPaperEnvelope11: `21` = this.cast(21)
+  def xlPaperEnvelope12: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def xlPaperEnvelope12: `22` = this.cast(22)
+  def xlPaperEnvelope14: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def xlPaperEnvelope14: `23` = this.cast(23)
+  def xlPaperEnvelope9: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def xlPaperEnvelope9: `19` = this.cast(19)
+  def xlPaperEnvelopeB4: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def xlPaperEnvelopeB4: `33` = this.cast(33)
+  def xlPaperEnvelopeB5: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def xlPaperEnvelopeB5: `34` = this.cast(34)
+  def xlPaperEnvelopeB6: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def xlPaperEnvelopeB6: `35` = this.cast(35)
+  def xlPaperEnvelopeC3: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def xlPaperEnvelopeC3: `29` = this.cast(29)
+  def xlPaperEnvelopeC4: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def xlPaperEnvelopeC4: `30` = this.cast(30)
+  def xlPaperEnvelopeC5: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def xlPaperEnvelopeC5: `28` = this.cast(28)
+  def xlPaperEnvelopeC6: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def xlPaperEnvelopeC6: `31` = this.cast(31)
+  def xlPaperEnvelopeC65: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def xlPaperEnvelopeC65: `32` = this.cast(32)
+  def xlPaperEnvelopeDL: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def xlPaperEnvelopeDL: `27` = this.cast(27)
+  def xlPaperEnvelopeItaly: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def xlPaperEnvelopeItaly: `36` = this.cast(36)
+  def xlPaperEnvelopeMonarch: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def xlPaperEnvelopeMonarch: `37` = this.cast(37)
+  def xlPaperEnvelopePersonal: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def xlPaperEnvelopePersonal: `38` = this.cast(38)
+  def xlPaperEsheet: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def xlPaperEsheet: `26` = this.cast(26)
+  def xlPaperExecutive: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlPaperExecutive: `7` = this.cast(7)
+  def xlPaperFanfoldLegalGerman: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def xlPaperFanfoldLegalGerman: `41` = this.cast(41)
+  def xlPaperFanfoldStdGerman: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def xlPaperFanfoldStdGerman: `40` = this.cast(40)
+  def xlPaperFanfoldUS: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def xlPaperFanfoldUS: `39` = this.cast(39)
+  def xlPaperFolio: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlPaperFolio: `14` = this.cast(14)
+  def xlPaperLedger: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlPaperLedger: `4` = this.cast(4)
+  def xlPaperLegal: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlPaperLegal: `5` = this.cast(5)
+  def xlPaperLetter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlPaperLetter: `1` = this.cast(1)
+  def xlPaperLetterSmall: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlPaperLetterSmall: `2` = this.cast(2)
+  def xlPaperNote: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def xlPaperNote: `18` = this.cast(18)
+  def xlPaperQuarto: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlPaperQuarto: `15` = this.cast(15)
+  def xlPaperStatement: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlPaperStatement: `6` = this.cast(6)
+  def xlPaperTabloid: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlPaperTabloid: `3` = this.cast(3)
-  @scala.inline
-  def xlPaperUser: `256` = this.cast(256)
+  def xlPaperUser: `256` = 256.asInstanceOf[`256`]
 }
 

@@ -12,7 +12,6 @@ object AnonNoAlternate {
   @scala.inline
   def apply(noAlternate: Boolean): AnonNoAlternate = {
     val __obj = js.Dynamic.literal(noAlternate = noAlternate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNoAlternate]
   }
 }

@@ -20,26 +20,24 @@ trait AudioEncodingIOSType extends js.Object
 
 object AudioEncodingIOSType {
   @scala.inline
-  def MAC3: typings.reactNativeAudio.reactNativeAudioStrings.MAC3 = this.cast("MAC3")
+  def MAC3: typings.reactNativeAudio.reactNativeAudioStrings.MAC3 = "MAC3".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.MAC3]
   @scala.inline
-  def MAC6: typings.reactNativeAudio.reactNativeAudioStrings.MAC6 = this.cast("MAC6")
+  def MAC6: typings.reactNativeAudio.reactNativeAudioStrings.MAC6 = "MAC6".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.MAC6]
   @scala.inline
-  def alac: typings.reactNativeAudio.reactNativeAudioStrings.alac = this.cast("alac")
+  def alac: typings.reactNativeAudio.reactNativeAudioStrings.alac = "alac".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.alac]
   @scala.inline
-  def alaw: typings.reactNativeAudio.reactNativeAudioStrings.alaw = this.cast("alaw")
+  def alaw: typings.reactNativeAudio.reactNativeAudioStrings.alaw = "alaw".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.alaw]
   @scala.inline
-  def amr: typings.reactNativeAudio.reactNativeAudioStrings.amr = this.cast("amr")
+  def amr: typings.reactNativeAudio.reactNativeAudioStrings.amr = "amr".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.amr]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ima4: typings.reactNativeAudio.reactNativeAudioStrings.ima4 = "ima4".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.ima4]
   @scala.inline
-  def ima4: typings.reactNativeAudio.reactNativeAudioStrings.ima4 = this.cast("ima4")
+  def lpcm: typings.reactNativeAudio.reactNativeAudioStrings.lpcm = "lpcm".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.lpcm]
   @scala.inline
-  def lpcm: typings.reactNativeAudio.reactNativeAudioStrings.lpcm = this.cast("lpcm")
+  def mp1: typings.reactNativeAudio.reactNativeAudioStrings.mp1 = "mp1".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.mp1]
   @scala.inline
-  def mp1: typings.reactNativeAudio.reactNativeAudioStrings.mp1 = this.cast("mp1")
+  def mp2: typings.reactNativeAudio.reactNativeAudioStrings.mp2 = "mp2".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.mp2]
   @scala.inline
-  def mp2: typings.reactNativeAudio.reactNativeAudioStrings.mp2 = this.cast("mp2")
-  @scala.inline
-  def ulaw: typings.reactNativeAudio.reactNativeAudioStrings.ulaw = this.cast("ulaw")
+  def ulaw: typings.reactNativeAudio.reactNativeAudioStrings.ulaw = "ulaw".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.ulaw]
 }
 

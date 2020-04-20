@@ -38,7 +38,6 @@ object SurveysResource {
     update: AnonKey => Request_[Survey]
   ): SurveysResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction1(stop), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[SurveysResource]
   }
 }

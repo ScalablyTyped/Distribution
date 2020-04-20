@@ -20,7 +20,6 @@ object DisassociateContactFromAddressBookRequest {
   @scala.inline
   def apply(AddressBookArn: Arn, ContactArn: Arn): DisassociateContactFromAddressBookRequest = {
     val __obj = js.Dynamic.literal(AddressBookArn = AddressBookArn.asInstanceOf[js.Any], ContactArn = ContactArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateContactFromAddressBookRequest]
   }
 }

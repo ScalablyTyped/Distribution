@@ -13,7 +13,6 @@ object TimestampMessage_ {
   @scala.inline
   def apply(ts: Double, tsm: String): TimestampMessage_ = {
     val __obj = js.Dynamic.literal(ts = ts.asInstanceOf[js.Any], tsm = tsm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimestampMessage_]
   }
 }

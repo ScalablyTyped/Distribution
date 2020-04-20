@@ -32,50 +32,48 @@ trait measure extends js.Object
 
 object measure {
   @scala.inline
-  def angle: typings.convertUnits.convertUnitsStrings.angle = this.cast("angle")
+  def angle: typings.convertUnits.convertUnitsStrings.angle = "angle".asInstanceOf[typings.convertUnits.convertUnitsStrings.angle]
   @scala.inline
-  def apparentPower: typings.convertUnits.convertUnitsStrings.apparentPower = this.cast("apparentPower")
+  def apparentPower: typings.convertUnits.convertUnitsStrings.apparentPower = "apparentPower".asInstanceOf[typings.convertUnits.convertUnitsStrings.apparentPower]
   @scala.inline
-  def area: typings.convertUnits.convertUnitsStrings.area = this.cast("area")
+  def area: typings.convertUnits.convertUnitsStrings.area = "area".asInstanceOf[typings.convertUnits.convertUnitsStrings.area]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def current: typings.convertUnits.convertUnitsStrings.current = "current".asInstanceOf[typings.convertUnits.convertUnitsStrings.current]
   @scala.inline
-  def current: typings.convertUnits.convertUnitsStrings.current = this.cast("current")
+  def distance: typings.convertUnits.convertUnitsStrings.distance = "distance".asInstanceOf[typings.convertUnits.convertUnitsStrings.distance]
   @scala.inline
-  def distance: typings.convertUnits.convertUnitsStrings.distance = this.cast("distance")
+  def ditgital: typings.convertUnits.convertUnitsStrings.ditgital = "ditgital".asInstanceOf[typings.convertUnits.convertUnitsStrings.ditgital]
   @scala.inline
-  def ditgital: typings.convertUnits.convertUnitsStrings.ditgital = this.cast("ditgital")
+  def energy: typings.convertUnits.convertUnitsStrings.energy = "energy".asInstanceOf[typings.convertUnits.convertUnitsStrings.energy]
   @scala.inline
-  def energy: typings.convertUnits.convertUnitsStrings.energy = this.cast("energy")
+  def frequency: typings.convertUnits.convertUnitsStrings.frequency = "frequency".asInstanceOf[typings.convertUnits.convertUnitsStrings.frequency]
   @scala.inline
-  def frequency: typings.convertUnits.convertUnitsStrings.frequency = this.cast("frequency")
+  def illuminance: typings.convertUnits.convertUnitsStrings.illuminance = "illuminance".asInstanceOf[typings.convertUnits.convertUnitsStrings.illuminance]
   @scala.inline
-  def illuminance: typings.convertUnits.convertUnitsStrings.illuminance = this.cast("illuminance")
+  def mass: typings.convertUnits.convertUnitsStrings.mass = "mass".asInstanceOf[typings.convertUnits.convertUnitsStrings.mass]
   @scala.inline
-  def mass: typings.convertUnits.convertUnitsStrings.mass = this.cast("mass")
+  def pace: typings.convertUnits.convertUnitsStrings.pace = "pace".asInstanceOf[typings.convertUnits.convertUnitsStrings.pace]
   @scala.inline
-  def pace: typings.convertUnits.convertUnitsStrings.pace = this.cast("pace")
+  def partsPer: typings.convertUnits.convertUnitsStrings.partsPer = "partsPer".asInstanceOf[typings.convertUnits.convertUnitsStrings.partsPer]
   @scala.inline
-  def partsPer: typings.convertUnits.convertUnitsStrings.partsPer = this.cast("partsPer")
+  def power: typings.convertUnits.convertUnitsStrings.power = "power".asInstanceOf[typings.convertUnits.convertUnitsStrings.power]
   @scala.inline
-  def power: typings.convertUnits.convertUnitsStrings.power = this.cast("power")
+  def pressure: typings.convertUnits.convertUnitsStrings.pressure = "pressure".asInstanceOf[typings.convertUnits.convertUnitsStrings.pressure]
   @scala.inline
-  def pressure: typings.convertUnits.convertUnitsStrings.pressure = this.cast("pressure")
+  def reactiveEnergy: typings.convertUnits.convertUnitsStrings.reactiveEnergy = "reactiveEnergy".asInstanceOf[typings.convertUnits.convertUnitsStrings.reactiveEnergy]
   @scala.inline
-  def reactiveEnergy: typings.convertUnits.convertUnitsStrings.reactiveEnergy = this.cast("reactiveEnergy")
+  def reactivePower: typings.convertUnits.convertUnitsStrings.reactivePower = "reactivePower".asInstanceOf[typings.convertUnits.convertUnitsStrings.reactivePower]
   @scala.inline
-  def reactivePower: typings.convertUnits.convertUnitsStrings.reactivePower = this.cast("reactivePower")
+  def speed: typings.convertUnits.convertUnitsStrings.speed = "speed".asInstanceOf[typings.convertUnits.convertUnitsStrings.speed]
   @scala.inline
-  def speed: typings.convertUnits.convertUnitsStrings.speed = this.cast("speed")
+  def temperature: typings.convertUnits.convertUnitsStrings.temperature = "temperature".asInstanceOf[typings.convertUnits.convertUnitsStrings.temperature]
   @scala.inline
-  def temperature: typings.convertUnits.convertUnitsStrings.temperature = this.cast("temperature")
+  def time: typings.convertUnits.convertUnitsStrings.time = "time".asInstanceOf[typings.convertUnits.convertUnitsStrings.time]
   @scala.inline
-  def time: typings.convertUnits.convertUnitsStrings.time = this.cast("time")
+  def voltage: typings.convertUnits.convertUnitsStrings.voltage = "voltage".asInstanceOf[typings.convertUnits.convertUnitsStrings.voltage]
   @scala.inline
-  def voltage: typings.convertUnits.convertUnitsStrings.voltage = this.cast("voltage")
+  def volume: typings.convertUnits.convertUnitsStrings.volume = "volume".asInstanceOf[typings.convertUnits.convertUnitsStrings.volume]
   @scala.inline
-  def volume: typings.convertUnits.convertUnitsStrings.volume = this.cast("volume")
-  @scala.inline
-  def volumeFlowRate: typings.convertUnits.convertUnitsStrings.volumeFlowRate = this.cast("volumeFlowRate")
+  def volumeFlowRate: typings.convertUnits.convertUnitsStrings.volumeFlowRate = "volumeFlowRate".asInstanceOf[typings.convertUnits.convertUnitsStrings.volumeFlowRate]
 }
 

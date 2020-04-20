@@ -16,7 +16,6 @@ object OnPremConfig {
   @scala.inline
   def apply(AgentArns: AgentArnList): OnPremConfig = {
     val __obj = js.Dynamic.literal(AgentArns = AgentArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnPremConfig]
   }
 }

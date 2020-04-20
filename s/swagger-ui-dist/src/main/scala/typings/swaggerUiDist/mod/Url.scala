@@ -13,7 +13,6 @@ object Url {
   @scala.inline
   def apply(name: String, url: String): Url = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Url]
   }
 }

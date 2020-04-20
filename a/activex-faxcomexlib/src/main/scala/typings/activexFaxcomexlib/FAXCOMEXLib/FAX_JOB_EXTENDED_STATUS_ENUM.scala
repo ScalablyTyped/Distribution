@@ -53,48 +53,46 @@ trait FAX_JOB_EXTENDED_STATUS_ENUM extends js.Object
 
 object FAX_JOB_EXTENDED_STATUS_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fjesANSWERED: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def fjesANSWERED: `5` = this.cast(5)
+  def fjesBAD_ADDRESS: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def fjesBAD_ADDRESS: `10` = this.cast(10)
+  def fjesBUSY: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def fjesBUSY: `8` = this.cast(8)
+  def fjesCALL_ABORTED: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def fjesCALL_ABORTED: `19` = this.cast(19)
+  def fjesCALL_BLACKLISTED: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def fjesCALL_BLACKLISTED: `14` = this.cast(14)
+  def fjesCALL_COMPLETED: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def fjesCALL_COMPLETED: `18` = this.cast(18)
+  def fjesCALL_DELAYED: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def fjesCALL_DELAYED: `13` = this.cast(13)
+  def fjesDIALING: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def fjesDIALING: `3` = this.cast(3)
+  def fjesDISCONNECTED: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fjesDISCONNECTED: `1` = this.cast(1)
+  def fjesFATAL_ERROR: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def fjesFATAL_ERROR: `12` = this.cast(12)
+  def fjesHANDLED: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def fjesHANDLED: `17` = this.cast(17)
+  def fjesINITIALIZING: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fjesINITIALIZING: `2` = this.cast(2)
+  def fjesLINE_UNAVAILABLE: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def fjesLINE_UNAVAILABLE: `7` = this.cast(7)
+  def fjesNONE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fjesNONE: `0` = this.cast(0)
+  def fjesNOT_FAX_CALL: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def fjesNOT_FAX_CALL: `15` = this.cast(15)
+  def fjesNO_ANSWER: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def fjesNO_ANSWER: `9` = this.cast(9)
+  def fjesNO_DIAL_TONE: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def fjesNO_DIAL_TONE: `11` = this.cast(11)
+  def fjesPARTIALLY_RECEIVED: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def fjesPARTIALLY_RECEIVED: `16` = this.cast(16)
+  def fjesPROPRIETARY: `16777216` = 16777216.asInstanceOf[`16777216`]
   @scala.inline
-  def fjesPROPRIETARY: `16777216` = this.cast(16777216)
+  def fjesRECEIVING: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def fjesRECEIVING: `6` = this.cast(6)
-  @scala.inline
-  def fjesTRANSMITTING: `4` = this.cast(4)
+  def fjesTRANSMITTING: `4` = 4.asInstanceOf[`4`]
 }
 

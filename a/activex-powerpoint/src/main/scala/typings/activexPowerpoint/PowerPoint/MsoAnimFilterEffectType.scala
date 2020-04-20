@@ -48,44 +48,42 @@ trait MsoAnimFilterEffectType extends js.Object
 
 object MsoAnimFilterEffectType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnimFilterEffectTypeBarn: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnimFilterEffectTypeBarn: `1` = this.cast(1)
+  def msoAnimFilterEffectTypeBlinds: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoAnimFilterEffectTypeBlinds: `2` = this.cast(2)
+  def msoAnimFilterEffectTypeBox: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoAnimFilterEffectTypeBox: `3` = this.cast(3)
+  def msoAnimFilterEffectTypeCheckerboard: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoAnimFilterEffectTypeCheckerboard: `4` = this.cast(4)
+  def msoAnimFilterEffectTypeCircle: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoAnimFilterEffectTypeCircle: `5` = this.cast(5)
+  def msoAnimFilterEffectTypeDiamond: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoAnimFilterEffectTypeDiamond: `6` = this.cast(6)
+  def msoAnimFilterEffectTypeDissolve: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoAnimFilterEffectTypeDissolve: `7` = this.cast(7)
+  def msoAnimFilterEffectTypeFade: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoAnimFilterEffectTypeFade: `8` = this.cast(8)
+  def msoAnimFilterEffectTypeImage: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoAnimFilterEffectTypeImage: `9` = this.cast(9)
+  def msoAnimFilterEffectTypeNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoAnimFilterEffectTypeNone: `0` = this.cast(0)
+  def msoAnimFilterEffectTypePixelate: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoAnimFilterEffectTypePixelate: `10` = this.cast(10)
+  def msoAnimFilterEffectTypePlus: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoAnimFilterEffectTypePlus: `11` = this.cast(11)
+  def msoAnimFilterEffectTypeRandomBar: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoAnimFilterEffectTypeRandomBar: `12` = this.cast(12)
+  def msoAnimFilterEffectTypeSlide: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoAnimFilterEffectTypeSlide: `13` = this.cast(13)
+  def msoAnimFilterEffectTypeStretch: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoAnimFilterEffectTypeStretch: `14` = this.cast(14)
+  def msoAnimFilterEffectTypeStrips: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoAnimFilterEffectTypeStrips: `15` = this.cast(15)
+  def msoAnimFilterEffectTypeWedge: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoAnimFilterEffectTypeWedge: `16` = this.cast(16)
+  def msoAnimFilterEffectTypeWheel: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoAnimFilterEffectTypeWheel: `17` = this.cast(17)
-  @scala.inline
-  def msoAnimFilterEffectTypeWipe: `18` = this.cast(18)
+  def msoAnimFilterEffectTypeWipe: `18` = 18.asInstanceOf[`18`]
 }
 

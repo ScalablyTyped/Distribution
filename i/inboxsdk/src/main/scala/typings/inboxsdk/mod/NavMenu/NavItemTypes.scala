@@ -12,10 +12,8 @@ trait NavItemTypes extends js.Object
 
 object NavItemTypes {
   @scala.inline
-  def LINK: typings.inboxsdk.inboxsdkStrings.LINK = this.cast("LINK")
+  def LINK: typings.inboxsdk.inboxsdkStrings.LINK = "LINK".asInstanceOf[typings.inboxsdk.inboxsdkStrings.LINK]
   @scala.inline
-  def NAVIGATION: typings.inboxsdk.inboxsdkStrings.NAVIGATION = this.cast("NAVIGATION")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NAVIGATION: typings.inboxsdk.inboxsdkStrings.NAVIGATION = "NAVIGATION".asInstanceOf[typings.inboxsdk.inboxsdkStrings.NAVIGATION]
 }
 

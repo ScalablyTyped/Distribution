@@ -16,7 +16,6 @@ object MonitoringStoppingCondition {
   @scala.inline
   def apply(MaxRuntimeInSeconds: MonitoringMaxRuntimeInSeconds): MonitoringStoppingCondition = {
     val __obj = js.Dynamic.literal(MaxRuntimeInSeconds = MaxRuntimeInSeconds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MonitoringStoppingCondition]
   }
 }

@@ -15,7 +15,6 @@ object AnonOrigin {
   @scala.inline
   def apply(origin: String, req: IncomingMessage, secure: Boolean): AnonOrigin = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOrigin]
   }
 }

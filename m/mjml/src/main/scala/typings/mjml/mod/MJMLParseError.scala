@@ -15,7 +15,6 @@ object MJMLParseError {
   @scala.inline
   def apply(formattedMessage: String, line: Double, message: String, tagName: String): MJMLParseError = {
     val __obj = js.Dynamic.literal(formattedMessage = formattedMessage.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MJMLParseError]
   }
 }

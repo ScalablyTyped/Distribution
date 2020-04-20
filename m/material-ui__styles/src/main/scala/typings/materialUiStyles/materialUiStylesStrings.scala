@@ -15,6 +15,9 @@ object materialUiStylesStrings {
   sealed trait classes extends js.Object
   
   @js.native
+  sealed trait innerRef extends js.Object
+  
+  @js.native
   sealed trait root extends js.Object
   
   @js.native
@@ -29,6 +32,8 @@ object materialUiStylesStrings {
   def className: className = "className".asInstanceOf[className]
   @scala.inline
   def classes: classes = "classes".asInstanceOf[classes]
+  @scala.inline
+  def innerRef: innerRef = "innerRef".asInstanceOf[innerRef]
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   @scala.inline

@@ -22,7 +22,6 @@ object OpenFinExternalWindowStatic {
     wrapSync: (String, String) => OpenFinExternalWindow
   ): OpenFinExternalWindowStatic = {
     val __obj = js.Dynamic.literal(wrap = js.Any.fromFunction2(wrap), wrapSync = js.Any.fromFunction2(wrapSync))
-  
     __obj.asInstanceOf[OpenFinExternalWindowStatic]
   }
 }

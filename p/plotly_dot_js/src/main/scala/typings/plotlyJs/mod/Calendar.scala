@@ -26,38 +26,36 @@ trait Calendar extends js.Object
 
 object Calendar {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chinese: typings.plotlyJs.plotlyJsStrings.chinese = "chinese".asInstanceOf[typings.plotlyJs.plotlyJsStrings.chinese]
   @scala.inline
-  def chinese: typings.plotlyJs.plotlyJsStrings.chinese = this.cast("chinese")
+  def coptic: typings.plotlyJs.plotlyJsStrings.coptic = "coptic".asInstanceOf[typings.plotlyJs.plotlyJsStrings.coptic]
   @scala.inline
-  def coptic: typings.plotlyJs.plotlyJsStrings.coptic = this.cast("coptic")
+  def discworld: typings.plotlyJs.plotlyJsStrings.discworld = "discworld".asInstanceOf[typings.plotlyJs.plotlyJsStrings.discworld]
   @scala.inline
-  def discworld: typings.plotlyJs.plotlyJsStrings.discworld = this.cast("discworld")
+  def ethiopian: typings.plotlyJs.plotlyJsStrings.ethiopian = "ethiopian".asInstanceOf[typings.plotlyJs.plotlyJsStrings.ethiopian]
   @scala.inline
-  def ethiopian: typings.plotlyJs.plotlyJsStrings.ethiopian = this.cast("ethiopian")
+  def gregorian: typings.plotlyJs.plotlyJsStrings.gregorian = "gregorian".asInstanceOf[typings.plotlyJs.plotlyJsStrings.gregorian]
   @scala.inline
-  def gregorian: typings.plotlyJs.plotlyJsStrings.gregorian = this.cast("gregorian")
+  def hebrew: typings.plotlyJs.plotlyJsStrings.hebrew = "hebrew".asInstanceOf[typings.plotlyJs.plotlyJsStrings.hebrew]
   @scala.inline
-  def hebrew: typings.plotlyJs.plotlyJsStrings.hebrew = this.cast("hebrew")
+  def islamic: typings.plotlyJs.plotlyJsStrings.islamic = "islamic".asInstanceOf[typings.plotlyJs.plotlyJsStrings.islamic]
   @scala.inline
-  def islamic: typings.plotlyJs.plotlyJsStrings.islamic = this.cast("islamic")
+  def jalali: typings.plotlyJs.plotlyJsStrings.jalali = "jalali".asInstanceOf[typings.plotlyJs.plotlyJsStrings.jalali]
   @scala.inline
-  def jalali: typings.plotlyJs.plotlyJsStrings.jalali = this.cast("jalali")
+  def julian: typings.plotlyJs.plotlyJsStrings.julian = "julian".asInstanceOf[typings.plotlyJs.plotlyJsStrings.julian]
   @scala.inline
-  def julian: typings.plotlyJs.plotlyJsStrings.julian = this.cast("julian")
+  def mayan: typings.plotlyJs.plotlyJsStrings.mayan = "mayan".asInstanceOf[typings.plotlyJs.plotlyJsStrings.mayan]
   @scala.inline
-  def mayan: typings.plotlyJs.plotlyJsStrings.mayan = this.cast("mayan")
+  def nanakshahi: typings.plotlyJs.plotlyJsStrings.nanakshahi = "nanakshahi".asInstanceOf[typings.plotlyJs.plotlyJsStrings.nanakshahi]
   @scala.inline
-  def nanakshahi: typings.plotlyJs.plotlyJsStrings.nanakshahi = this.cast("nanakshahi")
+  def nepali: typings.plotlyJs.plotlyJsStrings.nepali = "nepali".asInstanceOf[typings.plotlyJs.plotlyJsStrings.nepali]
   @scala.inline
-  def nepali: typings.plotlyJs.plotlyJsStrings.nepali = this.cast("nepali")
+  def persian: typings.plotlyJs.plotlyJsStrings.persian = "persian".asInstanceOf[typings.plotlyJs.plotlyJsStrings.persian]
   @scala.inline
-  def persian: typings.plotlyJs.plotlyJsStrings.persian = this.cast("persian")
+  def taiwan: typings.plotlyJs.plotlyJsStrings.taiwan = "taiwan".asInstanceOf[typings.plotlyJs.plotlyJsStrings.taiwan]
   @scala.inline
-  def taiwan: typings.plotlyJs.plotlyJsStrings.taiwan = this.cast("taiwan")
+  def thai: typings.plotlyJs.plotlyJsStrings.thai = "thai".asInstanceOf[typings.plotlyJs.plotlyJsStrings.thai]
   @scala.inline
-  def thai: typings.plotlyJs.plotlyJsStrings.thai = this.cast("thai")
-  @scala.inline
-  def ummalqura: typings.plotlyJs.plotlyJsStrings.ummalqura = this.cast("ummalqura")
+  def ummalqura: typings.plotlyJs.plotlyJsStrings.ummalqura = "ummalqura".asInstanceOf[typings.plotlyJs.plotlyJsStrings.ummalqura]
 }
 

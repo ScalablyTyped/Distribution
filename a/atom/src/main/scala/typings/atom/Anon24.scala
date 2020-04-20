@@ -1,23 +1,30 @@
 package typings.atom
 
-import typings.atom.atomStrings.inside
-import typings.atom.atomStrings.never
-import typings.atom.atomStrings.overlap
-import typings.atom.atomStrings.surround
-import typings.atom.atomStrings.touch
+import typings.atom.atomStrings.`12px`
+import typings.atom.atomStrings.`14px`
+import typings.atom.atomStrings.`16px`
+import typings.atom.atomStrings.`18px`
+import typings.atom.atomStrings.`21px`
+import typings.atom.atomStrings.`24px`
+import typings.atom.atomStrings.`28px`
+import typings.atom.atomStrings.`32px`
+import typings.atom.mod.ScopeDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon24 extends js.Object {
-  var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
+  var scopeDescriptor: ScopeDescriptor
+  var value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`
 }
 
 object Anon24 {
   @scala.inline
-  def apply(invalidate: never | surround | overlap | inside | touch = null): Anon24 = {
-    val __obj = js.Dynamic.literal()
-    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate.asInstanceOf[js.Any])
+  def apply(
+    scopeDescriptor: ScopeDescriptor,
+    value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`
+  ): Anon24 = {
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon24]
   }
 }

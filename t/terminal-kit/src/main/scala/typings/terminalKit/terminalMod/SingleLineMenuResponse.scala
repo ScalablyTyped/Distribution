@@ -24,7 +24,6 @@ object SingleLineMenuResponse {
     y: Double
   ): SingleLineMenuResponse = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any], selectedIndex = selectedIndex.asInstanceOf[js.Any], selectedText = selectedText.asInstanceOf[js.Any], unexpectedKey = unexpectedKey.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SingleLineMenuResponse]
   }
 }

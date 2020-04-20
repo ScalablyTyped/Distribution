@@ -22,7 +22,6 @@ object EventHandler {
     once: (String, js.Function) => Unit
   ): EventHandler = {
     val __obj = js.Dynamic.literal(off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once))
-  
     __obj.asInstanceOf[EventHandler]
   }
 }

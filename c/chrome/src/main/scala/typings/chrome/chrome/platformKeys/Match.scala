@@ -17,7 +17,6 @@ object Match {
   @scala.inline
   def apply(certificate: ArrayBuffer, keyAlgorithm: KeyAlgorithm): Match = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], keyAlgorithm = keyAlgorithm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Match]
   }
 }

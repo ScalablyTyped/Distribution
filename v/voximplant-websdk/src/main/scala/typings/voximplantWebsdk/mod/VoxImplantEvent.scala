@@ -28,13 +28,11 @@ object VoxImplantEvent {
   @scala.inline
   def NetStatsReceived(stats: NetworkInfo): VoxImplantEvent = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoxImplantEvent]
   }
   @scala.inline
   def MicAccessResult(result: Boolean): VoxImplantEvent = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoxImplantEvent]
   }
   @scala.inline
@@ -55,13 +53,11 @@ object VoxImplantEvent {
   @scala.inline
   def SDKReady(version: String): VoxImplantEvent = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoxImplantEvent]
   }
   @scala.inline
   def ConnectionFailed(message: String): VoxImplantEvent = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoxImplantEvent]
   }
 }

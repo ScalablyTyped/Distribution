@@ -13,7 +13,6 @@ object AnonModule {
   @scala.inline
   def apply(module: js.Any, version: String): AnonModule = {
     val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonModule]
   }
 }

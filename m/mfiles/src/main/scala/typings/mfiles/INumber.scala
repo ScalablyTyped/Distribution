@@ -13,7 +13,6 @@ object INumber {
   @scala.inline
   def apply(Clone: () => INumber, Value: Double): INumber = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INumber]
   }
 }

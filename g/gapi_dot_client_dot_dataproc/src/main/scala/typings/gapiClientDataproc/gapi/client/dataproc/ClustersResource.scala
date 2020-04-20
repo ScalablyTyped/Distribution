@@ -35,7 +35,6 @@ object ClustersResource {
     patch: AnonCallback => Request_[Operation]
   ): ClustersResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), diagnose = js.Any.fromFunction1(diagnose), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
-  
     __obj.asInstanceOf[ClustersResource]
   }
 }

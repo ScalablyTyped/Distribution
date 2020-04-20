@@ -14,10 +14,12 @@ class Helpers () extends js.Object
 object Helpers extends js.Object {
   def createCopy(obj: js.Any): js.Any = js.native
   def getMaxLength(maxLength: Double, surveyLength: Double): js.Any = js.native
+  def getNumberByIndex(index: Double, startIndexStr: String): String = js.native
   def getUnbindValue(value: js.Any): js.Any = js.native
   def isArrayContainsEqual(x: js.Any, y: js.Any): Boolean = js.native
   def isArraysEqual(x: js.Any, y: js.Any): Boolean = js.native
   def isArraysEqual(x: js.Any, y: js.Any, ignoreOrder: Boolean): Boolean = js.native
+  def isCharNotLetterAndDigit(ch: String): Boolean = js.native
   def isConvertibleToNumber(value: js.Any): Boolean = js.native
   def isNumber(value: js.Any): Boolean = js.native
   def isTwoValueEquals(x: js.Any, y: js.Any): Boolean = js.native

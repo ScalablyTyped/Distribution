@@ -22,20 +22,18 @@ trait `type` extends js.Object
 
 object `type` {
   @scala.inline
-  def DOUBLE: `0` = this.cast(0)
+  def DOUBLE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def END: `1` = this.cast(1)
+  def END: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def NONE: `5` = this.cast(5)
+  def NONE: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def REPEAT_BEGIN: `2` = this.cast(2)
+  def REPEAT_BEGIN: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def REPEAT_BOTH: `4` = this.cast(4)
+  def REPEAT_BOTH: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def REPEAT_END: `3` = this.cast(3)
+  def REPEAT_END: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def SINGLE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SINGLE: `1` = 1.asInstanceOf[`1`]
 }
 

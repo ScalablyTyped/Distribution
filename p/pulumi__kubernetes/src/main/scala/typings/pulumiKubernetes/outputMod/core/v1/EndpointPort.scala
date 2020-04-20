@@ -35,7 +35,6 @@ object EndpointPort {
   @scala.inline
   def apply(appProtocol: String, name: String, port: Double, protocol: String): EndpointPort = {
     val __obj = js.Dynamic.literal(appProtocol = appProtocol.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EndpointPort]
   }
 }

@@ -29,7 +29,7 @@ abstract class AttributeType protected () extends Element {
   val containerAsAttribute_FAttributeType: IAttribute = js.native
   @JSName("model")
   var model_FAttributeType: IModel = js.native
-  def containerAsAttribute(): Attribute = js.native
+  def containerAsAttribute: Attribute = js.native
 }
 
 /* static members */

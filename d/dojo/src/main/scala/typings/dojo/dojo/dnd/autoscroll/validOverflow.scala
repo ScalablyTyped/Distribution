@@ -24,7 +24,6 @@ object validOverflow {
   @scala.inline
   def apply(auto: Double, scroll: Double): validOverflow = {
     val __obj = js.Dynamic.literal(auto = auto.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[validOverflow]
   }
 }

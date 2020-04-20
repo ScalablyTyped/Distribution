@@ -23,7 +23,6 @@ object ECKeyPairOptions {
     publicKeyEncoding: AnonFormat[PubF]
   ): ECKeyPairOptions[PubF, PrivF] = {
     val __obj = js.Dynamic.literal(namedCurve = namedCurve.asInstanceOf[js.Any], privateKeyEncoding = privateKeyEncoding.asInstanceOf[js.Any], publicKeyEncoding = publicKeyEncoding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ECKeyPairOptions[PubF, PrivF]]
   }
 }

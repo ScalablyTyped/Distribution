@@ -12,7 +12,6 @@ object IEventEmitter {
   @scala.inline
   def apply(events: IEventManager): IEventEmitter = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEventEmitter]
   }
 }

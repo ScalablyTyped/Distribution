@@ -12,7 +12,6 @@ object PluginRemoveTitle {
   @scala.inline
   def apply(removeTitle: Boolean | js.Object): PluginRemoveTitle = {
     val __obj = js.Dynamic.literal(removeTitle = removeTitle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveTitle]
   }
 }

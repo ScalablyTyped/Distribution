@@ -17,7 +17,6 @@ object ArrayBuffer {
   @scala.inline
   def apply(unwrap: () => NativePointer): ArrayBuffer = {
     val __obj = js.Dynamic.literal(unwrap = js.Any.fromFunction0(unwrap))
-  
     __obj.asInstanceOf[ArrayBuffer]
   }
 }

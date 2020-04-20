@@ -13,7 +13,6 @@ object PickImplalwaysRefresh {
   @scala.inline
   def apply(alwaysRefresh: Boolean): PickImplalwaysRefresh = {
     val __obj = js.Dynamic.literal(alwaysRefresh = alwaysRefresh.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplalwaysRefresh]
   }
 }

@@ -23,7 +23,6 @@ object Timeouts {
   @scala.inline
   def apply(connect: Double, read: Double, write: Double): Timeouts = {
     val __obj = js.Dynamic.literal(connect = connect.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Timeouts]
   }
 }

@@ -14,7 +14,6 @@ object MappingEngine {
   @scala.inline
   def apply(findSite: String => String, getSites: () => js.Array[String], setSites: js.Array[String] => Unit): MappingEngine = {
     val __obj = js.Dynamic.literal(findSite = js.Any.fromFunction1(findSite), getSites = js.Any.fromFunction0(getSites), setSites = js.Any.fromFunction1(setSites))
-  
     __obj.asInstanceOf[MappingEngine]
   }
 }

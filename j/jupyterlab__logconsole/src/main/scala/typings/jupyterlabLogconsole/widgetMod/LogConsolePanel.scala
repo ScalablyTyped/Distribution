@@ -34,29 +34,29 @@ class LogConsolePanel protected () extends StackedPanel {
   /**
     * The current logger.
     */
-  def logger(): ILogger | Null = js.native
+  def logger: ILogger | Null = js.native
   /**
     * The logger registry providing the logs.
     */
-  def loggerRegistry(): ILoggerRegistry = js.native
+  def loggerRegistry: ILoggerRegistry = js.native
   def source(): js.Any = js.native
   def source(name: String): js.Any = js.native
   /**
     * Signal for source changes
     */
-  def sourceChanged(): ISignal[this.type, IChangedArgs[String | Null, String | Null, source]] = js.native
+  def sourceChanged: ISignal[this.type, IChangedArgs[String | Null, String | Null, source]] = js.native
   /**
     * Signal for source changes
     */
-  def sourceDisplayed(): ISignal[this.type, ISourceDisplayed] = js.native
+  def sourceDisplayed: ISignal[this.type, ISourceDisplayed] = js.native
   /**
     * The source version displayed.
     */
-  def sourceVersion(): Double | Null = js.native
+  def sourceVersion: Double | Null = js.native
   /**
     * The log source displayed
     */
   @JSName("source")
-  def source_Union(): String | Null = js.native
+  def source_Union: String | Null = js.native
 }
 

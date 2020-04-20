@@ -44,21 +44,21 @@ abstract class TemplateFormBase protected () extends FormBase {
   @JSName("model")
   var model_FTemplateFormBase: IModel = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MTemplateFormBase(): FolderBase = js.native
+  def containerAsFolderBase_MTemplateFormBase: FolderBase = js.native
   /**
     * In version 7.17.0: added public
     */
-  def displayName(): String = js.native
+  def displayName: String = js.native
   def displayName(newValue: String): js.Any = js.native
   /**
     * In version 7.17.0: introduced
     */
-  def documentationUrl(): String = js.native
+  def documentationUrl: String = js.native
   def documentationUrl(newValue: String): js.Any = js.native
   def imageData(): js.Any = js.native
   def imageData(newValue: String): js.Any = js.native
   @JSName("imageData")
-  def imageData_Union(): String | Null = js.native
+  def imageData_Union: String | Null = js.native
 }
 
 /* static members */

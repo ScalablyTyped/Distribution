@@ -15,7 +15,6 @@ object AnonAppVersion {
   @scala.inline
   def apply(appVersion: String, batteryLevel: Double, deviceDescription: String, platform: String): AnonAppVersion = {
     val __obj = js.Dynamic.literal(appVersion = appVersion.asInstanceOf[js.Any], batteryLevel = batteryLevel.asInstanceOf[js.Any], deviceDescription = deviceDescription.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppVersion]
   }
 }

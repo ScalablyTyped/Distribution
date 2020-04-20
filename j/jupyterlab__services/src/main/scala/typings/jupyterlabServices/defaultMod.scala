@@ -181,22 +181,22 @@ object defaultMod extends js.Object {
       * The message emitted in this signal should not be modified in any way.
       */
     @JSName("anyMessage")
-    def anyMessage_MKernelConnection(): ISignal[this.type, IAnyMessageArgs] = js.native
+    def anyMessage_MKernelConnection: ISignal[this.type, IAnyMessageArgs] = js.native
     /**
       * The client unique id.
       */
     @JSName("clientId")
-    def clientId_MKernelConnection(): String = js.native
+    def clientId_MKernelConnection: String = js.native
     /**
       * A signal emitted when the kernel status changes.
       */
     @JSName("connectionStatusChanged")
-    def connectionStatusChanged_MKernelConnection(): ISignal[this.type, ConnectionStatus] = js.native
+    def connectionStatusChanged_MKernelConnection: ISignal[this.type, ConnectionStatus] = js.native
     /**
       * The current connection status of the kernel connection.
       */
     @JSName("connectionStatus")
-    def connectionStatus_MKernelConnection(): ConnectionStatus = js.native
+    def connectionStatus_MKernelConnection: ConnectionStatus = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -211,7 +211,7 @@ object defaultMod extends js.Object {
     /* CompleteClass */
     override def dispose(): Unit = js.native
     @JSName("disposed")
-    def disposed_MKernelConnection(): ISignal[this.type, Unit] = js.native
+    def disposed_MKernelConnection: ISignal[this.type, Unit] = js.native
     /**
       * Handles a kernel shutdown.
       *
@@ -225,14 +225,14 @@ object defaultMod extends js.Object {
       * The id of the server-side kernel.
       */
     @JSName("id")
-    def id_MKernelConnection(): String = js.native
+    def id_MKernelConnection: String = js.native
     /**
       * The cached kernel info.
       *
       * @returns A promise that resolves to the kernel info.
       */
     @JSName("info")
-    def info_MKernelConnection(): js.Promise[IInfoReply] = js.native
+    def info_MKernelConnection: js.Promise[IInfoReply] = js.native
     /**
       * A signal emitted for iopub kernel messages.
       *
@@ -240,39 +240,39 @@ object defaultMod extends js.Object {
       * This signal is emitted after the iopub message is handled asynchronously.
       */
     @JSName("iopubMessage")
-    def iopubMessage_MKernelConnection(): ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
+    def iopubMessage_MKernelConnection: ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
     /**
       * Test whether the kernel has been disposed.
       */
     @JSName("isDisposed")
-    def isDisposed_MKernelConnection(): Boolean = js.native
+    def isDisposed_MKernelConnection: Boolean = js.native
     /**
       * The kernel model
       */
     @JSName("model")
-    def model_MKernelConnection(): IModel = js.native
+    def model_MKernelConnection: IModel = js.native
     /**
       * The name of the server-side kernel.
       */
     @JSName("name")
-    def name_MKernelConnection(): String = js.native
+    def name_MKernelConnection: String = js.native
     /**
       * The kernel spec.
       *
       * @returns A promise that resolves to the kernel spec.
       */
     @JSName("spec")
-    def spec_MKernelConnection(): js.Promise[js.UndefOr[ISpecModel]] = js.native
+    def spec_MKernelConnection: js.Promise[js.UndefOr[ISpecModel]] = js.native
     /**
       * A signal emitted when the kernel status changes.
       */
     @JSName("statusChanged")
-    def statusChanged_MKernelConnection(): ISignal[this.type, Status] = js.native
+    def statusChanged_MKernelConnection: ISignal[this.type, Status] = js.native
     /**
       * The current status of the kernel.
       */
     @JSName("status")
-    def status_MKernelConnection(): Status = js.native
+    def status_MKernelConnection: Status = js.native
     /**
       * A signal emitted for unhandled kernel message.
       *
@@ -281,12 +281,12 @@ object defaultMod extends js.Object {
       * during the asynchronous message handling code.
       */
     @JSName("unhandledMessage")
-    def unhandledMessage_MKernelConnection(): ISignal[this.type, IMessage[MessageType]] = js.native
+    def unhandledMessage_MKernelConnection: ISignal[this.type, IMessage[MessageType]] = js.native
     /**
       * The client username.
       */
     @JSName("username")
-    def username_MKernelConnection(): String = js.native
+    def username_MKernelConnection: String = js.native
   }
   
 }

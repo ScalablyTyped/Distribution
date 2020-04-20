@@ -13,7 +13,6 @@ object AnonComplete {
   @scala.inline
   def apply(complete: () => Unit, error: js.Any => Unit): AnonComplete = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error))
-  
     __obj.asInstanceOf[AnonComplete]
   }
 }

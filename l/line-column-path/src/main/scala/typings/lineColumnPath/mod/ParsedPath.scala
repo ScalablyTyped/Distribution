@@ -15,7 +15,6 @@ object ParsedPath {
   @scala.inline
   def apply(column: Double, file: String, line: Double): ParsedPath = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedPath]
   }
 }

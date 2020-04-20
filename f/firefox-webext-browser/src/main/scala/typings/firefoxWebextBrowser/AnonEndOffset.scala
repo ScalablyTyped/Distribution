@@ -22,7 +22,6 @@ object AnonEndOffset {
     startTextNodePos: Double
   ): AnonEndOffset = {
     val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], endTextNodePos = endTextNodePos.asInstanceOf[js.Any], framePos = framePos.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any], startTextNodePos = startTextNodePos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEndOffset]
   }
 }

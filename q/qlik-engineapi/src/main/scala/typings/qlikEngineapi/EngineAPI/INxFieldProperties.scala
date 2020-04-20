@@ -12,7 +12,6 @@ object INxFieldProperties {
   @scala.inline
   def apply(qOneAndOnlyOne: Boolean): INxFieldProperties = {
     val __obj = js.Dynamic.literal(qOneAndOnlyOne = qOneAndOnlyOne.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxFieldProperties]
   }
 }

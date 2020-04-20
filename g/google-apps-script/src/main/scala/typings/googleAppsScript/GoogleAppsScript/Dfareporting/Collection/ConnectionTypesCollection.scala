@@ -17,7 +17,6 @@ object ConnectionTypesCollection {
   @scala.inline
   def apply(get: (String, String) => ConnectionType, list: String => ConnectionTypesListResponse): ConnectionTypesCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ConnectionTypesCollection]
   }
 }

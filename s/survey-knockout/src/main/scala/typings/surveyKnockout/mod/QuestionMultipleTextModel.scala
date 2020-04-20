@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.IParentElement because var conflicts: isReadOnly. Inlined addElement
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
-- typings.surveyKnockout.mod.IPanel because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent. Inlined getChildrenLayoutType, getQuestionTitleLocation, elementWidthChanged, indexOf, elements
+- typings.surveyKnockout.mod.IPanel because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent. Inlined getChildrenLayoutType, getQuestionTitleLocation, getQuestionStartIndex, elementWidthChanged, indexOf, elements
 - typings.surveyKnockout.mod.ILocalizableOwner because Already inherited
 - typings.surveyKnockout.mod.IMultipleTextData because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent. Inlined getSurvey, getTextProcessor, getMultipleTextValue, setMultipleTextValue, getItemDefaultValue, getIsRequiredText */ @JSImport("survey-knockout", "QuestionMultipleTextModel")
 @js.native
@@ -46,6 +46,7 @@ class QuestionMultipleTextModel protected () extends Question {
   def getItemByName(name: String): MultipleTextItemModel = js.native
   def getItemDefaultValue(name: String): js.Any = js.native
   def getMultipleTextValue(name: String): js.Any = js.native
+  def getQuestionStartIndex(): String = js.native
   def getQuestionTitleLocation(): String = js.native
   /**
     * Returns the list of rendered rows.

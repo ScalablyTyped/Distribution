@@ -12,7 +12,7 @@ trait XmlEntityRef[Parent] extends js.Object {
   /**
     * Gets the name of this entity reference.
     */
-  def name(): String = js.native
+  def name: String = js.native
   /**
     * Sets the name of this entity reference.
     */

@@ -13,7 +13,6 @@ object MapReduceResult {
   @scala.inline
   def apply[Key, Val](_id: Key, value: Val): MapReduceResult[Key, Val] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapReduceResult[Key, Val]]
   }
 }

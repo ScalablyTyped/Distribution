@@ -15,7 +15,6 @@ object Attributes {
   @scala.inline
   def apply(age: Double, gender: String, headPose: AnonPitch): Attributes = {
     val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], headPose = headPose.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Attributes]
   }
 }

@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
 trait StatefulPinCodeProps extends js.Object {
   var adjoined: js.UndefOr[none | left | right | both] = js.native
   var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.native
   var `aria-label`: js.UndefOr[String] = js.native
   var `aria-labelledby`: js.UndefOr[String] = js.native
   var autoComplete: js.UndefOr[String] = js.native
@@ -51,6 +52,7 @@ trait StatefulPinCodeProps extends js.Object {
   var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
   var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
   var overrides: js.UndefOr[InputOverrides with PinCodeOverrides] = js.native
+  var pattern: js.UndefOr[String] = js.native
   var placeholder: js.UndefOr[String] = js.native
   var positive: js.UndefOr[Boolean] = js.native
   var required: js.UndefOr[Boolean] = js.native

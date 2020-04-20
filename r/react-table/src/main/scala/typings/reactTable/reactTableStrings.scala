@@ -12,6 +12,9 @@ object reactTableStrings {
   sealed trait Cell extends js.Object
   
   @js.native
+  sealed trait ColumnWithStrictAccessor extends js.Object
+  
+  @js.native
   sealed trait Footer extends js.Object
   
   @js.native
@@ -106,6 +109,8 @@ object reactTableStrings {
   
   @scala.inline
   def Cell: Cell = "Cell".asInstanceOf[Cell]
+  @scala.inline
+  def ColumnWithStrictAccessor: ColumnWithStrictAccessor = "ColumnWithStrictAccessor".asInstanceOf[ColumnWithStrictAccessor]
   @scala.inline
   def Footer: Footer = "Footer".asInstanceOf[Footer]
   @scala.inline

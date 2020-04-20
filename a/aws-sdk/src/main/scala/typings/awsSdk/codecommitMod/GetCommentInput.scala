@@ -16,7 +16,6 @@ object GetCommentInput {
   @scala.inline
   def apply(commentId: CommentId): GetCommentInput = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCommentInput]
   }
 }

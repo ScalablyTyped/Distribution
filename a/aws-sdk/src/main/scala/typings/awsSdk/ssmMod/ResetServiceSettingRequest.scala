@@ -16,7 +16,6 @@ object ResetServiceSettingRequest {
   @scala.inline
   def apply(SettingId: ServiceSettingId): ResetServiceSettingRequest = {
     val __obj = js.Dynamic.literal(SettingId = SettingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResetServiceSettingRequest]
   }
 }

@@ -34,7 +34,6 @@ object DragDropManagerImpl {
     store: js.Any
   ): DragDropManagerImpl = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], dispatch = js.Any.fromFunction1(dispatch), getActions = js.Any.fromFunction0(getActions), getBackend = js.Any.fromFunction0(getBackend), getMonitor = js.Any.fromFunction0(getMonitor), getRegistry = js.Any.fromFunction0(getRegistry), handleRefCountChange = handleRefCountChange.asInstanceOf[js.Any], isSetUp = isSetUp.asInstanceOf[js.Any], monitor = monitor.asInstanceOf[js.Any], receiveBackend = js.Any.fromFunction1(receiveBackend), store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DragDropManagerImpl]
   }
 }

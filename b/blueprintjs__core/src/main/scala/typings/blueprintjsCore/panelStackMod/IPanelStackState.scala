@@ -18,7 +18,6 @@ object IPanelStackState {
   @scala.inline
   def apply(direction: push | pop, stack: js.Array[IPanel[js.Object]]): IPanelStackState = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPanelStackState]
   }
 }

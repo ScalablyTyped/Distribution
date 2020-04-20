@@ -24,7 +24,6 @@ object UpdateRuleRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, RuleId: ResourceId, Updates: RuleUpdates): UpdateRuleRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], RuleId = RuleId.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateRuleRequest]
   }
 }

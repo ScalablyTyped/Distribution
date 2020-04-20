@@ -20,7 +20,6 @@ object AlertTarget {
   @scala.inline
   def apply(alertTargetArn: AlertTargetArn, roleArn: RoleArn): AlertTarget = {
     val __obj = js.Dynamic.literal(alertTargetArn = alertTargetArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AlertTarget]
   }
 }

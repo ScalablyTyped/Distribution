@@ -6,6 +6,8 @@ import typings.jss.mod.JssOptions
 import typings.materialUiStyles.createGenerateClassNameCreateGenerateClassNameMod.GenerateClassNameOptions
 import typings.materialUiStyles.getThemePropsGetThemePropsMod.ThemeWithProps
 import typings.materialUiStyles.getThemePropsGetThemePropsMod.ThemedProps
+import typings.materialUiStyles.materialUiStylesStrings.innerRef
+import typings.materialUiStyles.materialUiStylesStrings.theme
 import typings.materialUiStyles.materialUiStylesStrings.withTheme
 import typings.materialUiStyles.mergeClassesMergeClassesMod.Classes
 import typings.materialUiStyles.mergeClassesMergeClassesMod.MergeClassesOption
@@ -64,7 +66,7 @@ object mod extends js.Object {
   def createGenerateClassName(): GenerateId = js.native
   def createGenerateClassName(options: GenerateClassNameOptions): GenerateId = js.native
   def createStyles[ClassKey /* <: String */, Props /* <: js.Object */](styles: StyleRules[Props, ClassKey]): StyleRules[Props, ClassKey] = js.native
-  def getThemeProps[Theme /* <: ThemeWithProps[_] */, Props, Name /* <: String */](params: AnonName[Props, Name, Theme]): Props with (ThemedProps[Theme, Name]) = js.native
+  def getThemeProps[Theme /* <: ThemeWithProps[_] */, Props, Name /* <: /* keyof any */ String */](params: AnonName[Props, Name, Theme]): Props with (ThemedProps[Theme, Name]) = js.native
   def jssPreset(): JssOptions = js.native
   def makeStyles[Theme, ClassKey /* <: String */](style: Styles[Theme, js.Object, ClassKey]): js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]] = js.native
   @JSName("makeStyles")
@@ -99,7 +101,7 @@ object mod extends js.Object {
           ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      String
+      theme | innerRef
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
   def withTheme[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]): ComponentType[
@@ -108,7 +110,7 @@ object mod extends js.Object {
         FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]]
       ], 
-      String
+      theme | innerRef
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
   def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native

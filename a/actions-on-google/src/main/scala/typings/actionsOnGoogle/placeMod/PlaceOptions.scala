@@ -25,7 +25,6 @@ object PlaceOptions {
   @scala.inline
   def apply(context: String, prompt: String): PlaceOptions = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaceOptions]
   }
 }

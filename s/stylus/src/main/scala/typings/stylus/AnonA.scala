@@ -28,7 +28,6 @@ object AnonA {
     r: Double
   ): AnonA = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonA]
   }
 }

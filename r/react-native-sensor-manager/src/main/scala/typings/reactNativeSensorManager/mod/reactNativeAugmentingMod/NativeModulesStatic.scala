@@ -13,7 +13,6 @@ object NativeModulesStatic {
   @scala.inline
   def apply(SensorManager: SensorManager): NativeModulesStatic = {
     val __obj = js.Dynamic.literal(SensorManager = SensorManager.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeModulesStatic]
   }
 }

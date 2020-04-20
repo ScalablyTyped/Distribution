@@ -12,7 +12,6 @@ object Completer {
   @scala.inline
   def apply(getCompletions: (Editor, EditSession, Point, String, CompleterCallback) => Unit): Completer = {
     val __obj = js.Dynamic.literal(getCompletions = js.Any.fromFunction5(getCompletions))
-  
     __obj.asInstanceOf[Completer]
   }
 }

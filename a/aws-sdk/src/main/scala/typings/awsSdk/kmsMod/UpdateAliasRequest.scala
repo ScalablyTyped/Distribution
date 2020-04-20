@@ -20,7 +20,6 @@ object UpdateAliasRequest {
   @scala.inline
   def apply(AliasName: AliasNameType, TargetKeyId: KeyIdType): UpdateAliasRequest = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], TargetKeyId = TargetKeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateAliasRequest]
   }
 }

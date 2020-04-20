@@ -53,7 +53,7 @@ object gizmoManagerMod extends js.Object {
       * @param mesh The mesh the gizmo's should be attached to
       */
     def attachToMesh(mesh: Nullable[AbstractMesh]): Unit = js.native
-    def boundingBoxGizmoEnabled(): Boolean = js.native
+    def boundingBoxGizmoEnabled: Boolean = js.native
     /**
       * If the boundingBox gizmo is enabled
       */
@@ -66,18 +66,18 @@ object gizmoManagerMod extends js.Object {
     /**
       * Utility layer that the bounding box gizmo belongs to
       */
-    def keepDepthUtilityLayer(): UtilityLayerRenderer = js.native
-    def positionGizmoEnabled(): Boolean = js.native
+    def keepDepthUtilityLayer: UtilityLayerRenderer = js.native
+    def positionGizmoEnabled: Boolean = js.native
     /**
       * If the position gizmo is enabled
       */
     def positionGizmoEnabled(value: Boolean): js.Any = js.native
-    def rotationGizmoEnabled(): Boolean = js.native
+    def rotationGizmoEnabled: Boolean = js.native
     /**
       * If the rotation gizmo is enabled
       */
     def rotationGizmoEnabled(value: Boolean): js.Any = js.native
-    def scaleGizmoEnabled(): Boolean = js.native
+    def scaleGizmoEnabled: Boolean = js.native
     /**
       * If the scale gizmo is enabled
       */
@@ -85,7 +85,7 @@ object gizmoManagerMod extends js.Object {
     /**
       * Utility layer that all gizmos besides bounding box belong to
       */
-    def utilityLayer(): UtilityLayerRenderer = js.native
+    def utilityLayer: UtilityLayerRenderer = js.native
   }
   
 }

@@ -135,7 +135,7 @@ object cloudPointMod extends js.Object {
     /**
       * Legacy support, changed quaternion to rotationQuaternion
       */
-    def quaternion(): Nullable[Quaternion] = js.native
+    def quaternion: Nullable[Quaternion] = js.native
     /**
       * Legacy support, changed quaternion to rotationQuaternion
       */
@@ -143,7 +143,7 @@ object cloudPointMod extends js.Object {
     /**
       * get point size
       */
-    def size(): Vector3 = js.native
+    def size: Vector3 = js.native
     /**
       * Set point size
       */

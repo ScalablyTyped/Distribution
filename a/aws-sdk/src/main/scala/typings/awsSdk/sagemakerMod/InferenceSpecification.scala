@@ -38,7 +38,6 @@ object InferenceSpecification {
     SupportedTransformInstanceTypes: TransformInstanceTypes
   ): InferenceSpecification = {
     val __obj = js.Dynamic.literal(Containers = Containers.asInstanceOf[js.Any], SupportedContentTypes = SupportedContentTypes.asInstanceOf[js.Any], SupportedRealtimeInferenceInstanceTypes = SupportedRealtimeInferenceInstanceTypes.asInstanceOf[js.Any], SupportedResponseMIMETypes = SupportedResponseMIMETypes.asInstanceOf[js.Any], SupportedTransformInstanceTypes = SupportedTransformInstanceTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InferenceSpecification]
   }
 }

@@ -14,7 +14,6 @@ object AnonCancelChartObject {
   @scala.inline
   def apply(Cancel: js.Any, chartObject: js.Any, drawObject: js.Any): AnonCancelChartObject = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], chartObject = chartObject.asInstanceOf[js.Any], drawObject = drawObject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelChartObject]
   }
 }

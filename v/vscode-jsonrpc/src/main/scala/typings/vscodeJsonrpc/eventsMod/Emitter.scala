@@ -16,7 +16,7 @@ class Emitter[T] () extends js.Object {
     * For the public to allow to subscribe
     * to events from this Emitter
     */
-  def event(): Event[T] = js.native
+  def event: Event[T] = js.native
   /**
     * To be kept private to fire an event to
     * subscribers

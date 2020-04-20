@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line:interface-name
 trait IterativeCalculationSettings extends js.Object {
   /**
     * When iterative calculation is enabled and successive results differ by

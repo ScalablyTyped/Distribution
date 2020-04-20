@@ -13,7 +13,6 @@ object AnonDone {
   @scala.inline
   def apply[RecordType](done: Boolean, value: RecordType): AnonDone[RecordType] = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDone[RecordType]]
   }
 }

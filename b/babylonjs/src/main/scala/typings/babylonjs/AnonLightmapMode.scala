@@ -22,7 +22,6 @@ object AnonLightmapMode {
     specularEnabled: Boolean
   ): AnonLightmapMode = {
     val __obj = js.Dynamic.literal(lightmapMode = lightmapMode.asInstanceOf[js.Any], needNormals = needNormals.asInstanceOf[js.Any], needRebuild = needRebuild.asInstanceOf[js.Any], shadowEnabled = shadowEnabled.asInstanceOf[js.Any], specularEnabled = specularEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLightmapMode]
   }
 }

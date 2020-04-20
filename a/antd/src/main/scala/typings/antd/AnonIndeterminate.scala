@@ -12,7 +12,6 @@ object AnonIndeterminate {
   @scala.inline
   def apply(indeterminate: Boolean): AnonIndeterminate = {
     val __obj = js.Dynamic.literal(indeterminate = indeterminate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndeterminate]
   }
 }

@@ -31,7 +31,6 @@ object urlUtilsAddProxyRuleRule {
     urlPrefix: String
   ): urlUtilsAddProxyRuleRule = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), proxyUrl = proxyUrl.asInstanceOf[js.Any], urlPrefix = urlPrefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[urlUtilsAddProxyRuleRule]
   }
 }

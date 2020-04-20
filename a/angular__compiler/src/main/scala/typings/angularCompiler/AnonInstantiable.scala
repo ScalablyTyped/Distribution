@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait AnonInstantiable[N /* <: T */]
+trait AnonInstantiable[N /* <: T */, T]
   extends Instantiable1[/* args (repeated) */ js.Any, N]
 

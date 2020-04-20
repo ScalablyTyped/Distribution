@@ -20,7 +20,6 @@ object SigningImageFormat {
   @scala.inline
   def apply(defaultFormat: ImageFormat, supportedFormats: ImageFormats): SigningImageFormat = {
     val __obj = js.Dynamic.literal(defaultFormat = defaultFormat.asInstanceOf[js.Any], supportedFormats = supportedFormats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SigningImageFormat]
   }
 }

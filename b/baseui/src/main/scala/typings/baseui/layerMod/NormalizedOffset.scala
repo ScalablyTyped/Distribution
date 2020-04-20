@@ -13,7 +13,6 @@ object NormalizedOffset {
   @scala.inline
   def apply(left: Double, top: Double): NormalizedOffset = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NormalizedOffset]
   }
 }

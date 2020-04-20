@@ -19,7 +19,6 @@ object FreeCameraInputsManager {
   @scala.inline
   def apply(addGamepad: () => FreeCameraInputsManager): FreeCameraInputsManager = {
     val __obj = js.Dynamic.literal(addGamepad = js.Any.fromFunction0(addGamepad))
-  
     __obj.asInstanceOf[FreeCameraInputsManager]
   }
 }

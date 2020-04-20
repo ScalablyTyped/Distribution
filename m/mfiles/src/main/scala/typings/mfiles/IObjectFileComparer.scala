@@ -12,7 +12,6 @@ object IObjectFileComparer {
   @scala.inline
   def apply(Compare: (IObjectFile, IObjectFile) => Double): IObjectFileComparer = {
     val __obj = js.Dynamic.literal(Compare = js.Any.fromFunction2(Compare))
-  
     __obj.asInstanceOf[IObjectFileComparer]
   }
 }

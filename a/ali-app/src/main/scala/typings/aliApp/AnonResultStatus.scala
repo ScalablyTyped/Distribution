@@ -23,7 +23,6 @@ object AnonResultStatus {
   @scala.inline
   def apply(result: AnonAdmitstate, resultStatus: `6001` | `6002` | `9000` | `4000` | String): AnonResultStatus = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], resultStatus = resultStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResultStatus]
   }
 }

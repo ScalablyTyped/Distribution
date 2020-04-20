@@ -16,7 +16,6 @@ object DomainMetadataRequest {
   @scala.inline
   def apply(DomainName: String): DomainMetadataRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainMetadataRequest]
   }
 }

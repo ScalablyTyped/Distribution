@@ -16,7 +16,6 @@ object OnItemDragObjectBase {
   @scala.inline
   def apply(eventType: move | resize, itemId: Id, time: Double): OnItemDragObjectBase = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnItemDragObjectBase]
   }
 }

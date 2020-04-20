@@ -20,7 +20,6 @@ object InstallToRemoteAccessSessionRequest {
   @scala.inline
   def apply(appArn: AmazonResourceName, remoteAccessSessionArn: AmazonResourceName): InstallToRemoteAccessSessionRequest = {
     val __obj = js.Dynamic.literal(appArn = appArn.asInstanceOf[js.Any], remoteAccessSessionArn = remoteAccessSessionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstallToRemoteAccessSessionRequest]
   }
 }

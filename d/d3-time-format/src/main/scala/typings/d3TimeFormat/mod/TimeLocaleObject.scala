@@ -102,7 +102,6 @@ object TimeLocaleObject {
     utcParse: String => js.Function1[/* dateString */ String, Date | Null]
   ): TimeLocaleObject = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), parse = js.Any.fromFunction1(parse), utcFormat = js.Any.fromFunction1(utcFormat), utcParse = js.Any.fromFunction1(utcParse))
-  
     __obj.asInstanceOf[TimeLocaleObject]
   }
 }

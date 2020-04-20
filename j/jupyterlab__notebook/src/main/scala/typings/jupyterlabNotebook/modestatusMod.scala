@@ -43,7 +43,7 @@ object modestatusMod extends js.Object {
       /**
         * The current mode of the current notebook.
         */
-      def notebookMode(): NotebookMode = js.native
+      def notebookMode: NotebookMode = js.native
     }
     
   }

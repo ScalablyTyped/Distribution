@@ -1,5 +1,6 @@
 package typings.prosemirrorTestBuilder.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.prosemirrorModel.mod.Schema
 import typings.std.Record
 import scala.scalajs.js
@@ -78,7 +79,7 @@ trait ProsemirrorTestBuilder extends js.Object {
   def br(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): TaggedProsemirrorNode[TestSchema] = js.native
-  def builders[Obj /* <: Record[String, NodeTypeAttributes | MarkTypeAttributes] */, N /* <: String */, M /* <: String */](testSchema: Schema[N, M], names: Obj): (Record[N, NodeBuilderMethod[Schema[N, M]]]) with (Record[M, MarkBuilderMethod[Schema[N, M]]]) with typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ProsemirrorTestBuilder with Obj = js.native
+  def builders[Obj /* <: Record[String, NodeTypeAttributes | MarkTypeAttributes] */, N /* <: String */, M /* <: String */](testSchema: Schema[N, M], names: Obj): (Record[N, NodeBuilderMethod[Schema[N, M]]]) with (Record[M, MarkBuilderMethod[Schema[N, M]]]) with typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ProsemirrorTestBuilder with TopLevel[Obj] = js.native
   def bullet_list(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): TaggedProsemirrorNode[TestSchema] = js.native

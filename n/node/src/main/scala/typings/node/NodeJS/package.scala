@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object NodeJS {
   type ArrayBufferView = typings.node.NodeJS.TypedArray | typings.std.DataView
   type BeforeExitListener = js.Function1[/* code */ scala.Double, scala.Unit]
+  type Dict[T] = org.scalablytyped.runtime.StringDictionary[js.UndefOr[T]]
   type DisconnectListener = js.Function0[scala.Unit]
   type ExitListener = js.Function1[/* code */ scala.Double, scala.Unit]
   type HRTime = js.Function1[
@@ -25,8 +26,9 @@ package object NodeJS {
     /* listener */ js.Function1[/* repeated */ js.Any, scala.Unit], 
     scala.Unit
   ]
-  type NodeRequireCache = org.scalablytyped.runtime.StringDictionary[typings.node.NodeModule]
-  type ProcessEnv = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+  // Alias for compability
+  type ProcessEnv = typings.node.NodeJS.Dict[java.lang.String]
+  type ReadOnlyDict[T] = org.scalablytyped.runtime.StringDictionary[js.UndefOr[T]]
   type RejectionHandledListener = js.Function1[/* promise */ js.Promise[js.Any], scala.Unit]
   type RemoveListenerListener = js.Function2[
     /* type */ java.lang.String | js.Symbol, 

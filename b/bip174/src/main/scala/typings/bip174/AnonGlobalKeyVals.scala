@@ -19,7 +19,6 @@ object AnonGlobalKeyVals {
     outputKeyVals: js.Array[js.Array[KeyValue]]
   ): AnonGlobalKeyVals = {
     val __obj = js.Dynamic.literal(globalKeyVals = globalKeyVals.asInstanceOf[js.Any], inputKeyVals = inputKeyVals.asInstanceOf[js.Any], outputKeyVals = outputKeyVals.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGlobalKeyVals]
   }
 }

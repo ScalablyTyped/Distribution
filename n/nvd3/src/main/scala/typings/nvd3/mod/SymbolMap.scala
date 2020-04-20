@@ -12,7 +12,6 @@ object SymbolMap {
   @scala.inline
   def apply(set: (String, js.Function1[/* size */ js.Any, Unit]) => Unit): SymbolMap = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[SymbolMap]
   }
 }

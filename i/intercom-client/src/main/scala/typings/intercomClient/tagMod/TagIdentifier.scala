@@ -12,7 +12,6 @@ object TagIdentifier {
   @scala.inline
   def apply(id: String): TagIdentifier = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagIdentifier]
   }
 }

@@ -15,7 +15,6 @@ object IDiffNavigator {
   @scala.inline
   def apply(canNavigate: () => Boolean, dispose: () => Unit, next: () => Unit, previous: () => Unit): IDiffNavigator = {
     val __obj = js.Dynamic.literal(canNavigate = js.Any.fromFunction0(canNavigate), dispose = js.Any.fromFunction0(dispose), next = js.Any.fromFunction0(next), previous = js.Any.fromFunction0(previous))
-  
     __obj.asInstanceOf[IDiffNavigator]
   }
 }

@@ -12,7 +12,6 @@ object TargetActionSupport {
   @scala.inline
   def apply(triggerAction: TriggerActionOptions => Boolean): TargetActionSupport = {
     val __obj = js.Dynamic.literal(triggerAction = js.Any.fromFunction1(triggerAction))
-  
     __obj.asInstanceOf[TargetActionSupport]
   }
 }

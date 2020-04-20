@@ -19,7 +19,6 @@ object subscribedClient {
   @scala.inline
   def apply(boundRecords: js.Any, id: String): subscribedClient = {
     val __obj = js.Dynamic.literal(boundRecords = boundRecords.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[subscribedClient]
   }
 }

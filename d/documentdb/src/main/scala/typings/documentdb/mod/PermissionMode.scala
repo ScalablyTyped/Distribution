@@ -13,12 +13,10 @@ trait PermissionMode extends js.Object
 
 object PermissionMode {
   @scala.inline
-  def All: typings.documentdb.documentdbStrings.All = this.cast("All")
+  def All: typings.documentdb.documentdbStrings.All = "All".asInstanceOf[typings.documentdb.documentdbStrings.All]
   @scala.inline
-  def None: typings.documentdb.documentdbStrings.None = this.cast("None")
+  def None: typings.documentdb.documentdbStrings.None = "None".asInstanceOf[typings.documentdb.documentdbStrings.None]
   @scala.inline
-  def Read: typings.documentdb.documentdbStrings.Read = this.cast("Read")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Read: typings.documentdb.documentdbStrings.Read = "Read".asInstanceOf[typings.documentdb.documentdbStrings.Read]
 }
 

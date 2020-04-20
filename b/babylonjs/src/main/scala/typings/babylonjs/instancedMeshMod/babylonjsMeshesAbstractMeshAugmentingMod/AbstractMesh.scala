@@ -17,7 +17,6 @@ object AbstractMesh {
   @scala.inline
   def apply(instancedBuffers: StringDictionary[js.Any]): AbstractMesh = {
     val __obj = js.Dynamic.literal(instancedBuffers = instancedBuffers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbstractMesh]
   }
 }

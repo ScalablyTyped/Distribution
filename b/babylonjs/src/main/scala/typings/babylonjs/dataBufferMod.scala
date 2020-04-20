@@ -22,7 +22,7 @@ object dataBufferMod extends js.Object {
     /**
       * Gets the underlying buffer
       */
-    def underlyingResource(): js.Any = js.native
+    def underlyingResource: js.Any = js.native
   }
   
 }

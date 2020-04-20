@@ -19,7 +19,6 @@ object PhysicsImpostorJoint {
   @scala.inline
   def apply(connectedImpostor: PhysicsImpostor, joint: PhysicsJoint, mainImpostor: PhysicsImpostor): PhysicsImpostorJoint = {
     val __obj = js.Dynamic.literal(connectedImpostor = connectedImpostor.asInstanceOf[js.Any], joint = joint.asInstanceOf[js.Any], mainImpostor = mainImpostor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhysicsImpostorJoint]
   }
 }

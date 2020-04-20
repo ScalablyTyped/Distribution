@@ -16,7 +16,6 @@ object GetSigningCertificateRequest {
   @scala.inline
   def apply(UserPoolId: UserPoolIdType): GetSigningCertificateRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSigningCertificateRequest]
   }
 }

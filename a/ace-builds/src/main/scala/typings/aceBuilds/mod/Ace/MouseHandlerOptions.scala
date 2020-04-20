@@ -22,7 +22,6 @@ object MouseHandlerOptions {
     tooltipFollowsMouse: Boolean
   ): MouseHandlerOptions = {
     val __obj = js.Dynamic.literal(dragDelay = dragDelay.asInstanceOf[js.Any], dragEnabled = dragEnabled.asInstanceOf[js.Any], focusTimeout = focusTimeout.asInstanceOf[js.Any], scrollSpeed = scrollSpeed.asInstanceOf[js.Any], tooltipFollowsMouse = tooltipFollowsMouse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MouseHandlerOptions]
   }
 }

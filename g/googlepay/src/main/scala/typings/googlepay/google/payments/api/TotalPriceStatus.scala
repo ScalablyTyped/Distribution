@@ -30,12 +30,10 @@ trait TotalPriceStatus extends js.Object
 
 object TotalPriceStatus {
   @scala.inline
-  def ESTIMATED: typings.googlepay.googlepayStrings.ESTIMATED = this.cast("ESTIMATED")
+  def ESTIMATED: typings.googlepay.googlepayStrings.ESTIMATED = "ESTIMATED".asInstanceOf[typings.googlepay.googlepayStrings.ESTIMATED]
   @scala.inline
-  def FINAL: typings.googlepay.googlepayStrings.FINAL = this.cast("FINAL")
+  def FINAL: typings.googlepay.googlepayStrings.FINAL = "FINAL".asInstanceOf[typings.googlepay.googlepayStrings.FINAL]
   @scala.inline
-  def NOT_CURRENTLY_KNOWN: typings.googlepay.googlepayStrings.NOT_CURRENTLY_KNOWN = this.cast("NOT_CURRENTLY_KNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NOT_CURRENTLY_KNOWN: typings.googlepay.googlepayStrings.NOT_CURRENTLY_KNOWN = "NOT_CURRENTLY_KNOWN".asInstanceOf[typings.googlepay.googlepayStrings.NOT_CURRENTLY_KNOWN]
 }
 

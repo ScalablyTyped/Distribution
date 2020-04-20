@@ -14,14 +14,12 @@ trait JSType extends js.Object
 
 object JSType {
   @scala.inline
-  def array: typings.emscripten.emscriptenStrings.array = this.cast("array")
+  def array: typings.emscripten.emscriptenStrings.array = "array".asInstanceOf[typings.emscripten.emscriptenStrings.array]
   @scala.inline
-  def boolean: typings.emscripten.emscriptenStrings.boolean = this.cast("boolean")
+  def boolean: typings.emscripten.emscriptenStrings.boolean = "boolean".asInstanceOf[typings.emscripten.emscriptenStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def number: typings.emscripten.emscriptenStrings.number = "number".asInstanceOf[typings.emscripten.emscriptenStrings.number]
   @scala.inline
-  def number: typings.emscripten.emscriptenStrings.number = this.cast("number")
-  @scala.inline
-  def string: typings.emscripten.emscriptenStrings.string = this.cast("string")
+  def string: typings.emscripten.emscriptenStrings.string = "string".asInstanceOf[typings.emscripten.emscriptenStrings.string]
 }
 

@@ -18,7 +18,6 @@ object Delete {
   @scala.inline
   def apply[TResponse](request: AnonMethodPath, response: AnonData[TResponse]): Delete[TResponse] = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delete[TResponse]]
   }
 }

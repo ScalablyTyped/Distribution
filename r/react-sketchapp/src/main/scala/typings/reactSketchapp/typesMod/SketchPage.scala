@@ -14,7 +14,6 @@ object SketchPage {
   @scala.inline
   def apply(layers: () => js.Array[SketchLayer], name: () => NSString, setName: String => Unit): SketchPage = {
     val __obj = js.Dynamic.literal(layers = js.Any.fromFunction0(layers), name = js.Any.fromFunction0(name), setName = js.Any.fromFunction1(setName))
-  
     __obj.asInstanceOf[SketchPage]
   }
 }

@@ -12,7 +12,6 @@ object IFrameworkViewSource {
   @scala.inline
   def apply(createView: () => IFrameworkView): IFrameworkViewSource = {
     val __obj = js.Dynamic.literal(createView = js.Any.fromFunction0(createView))
-  
     __obj.asInstanceOf[IFrameworkViewSource]
   }
 }

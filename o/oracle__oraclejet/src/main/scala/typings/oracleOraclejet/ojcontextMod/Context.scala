@@ -12,7 +12,6 @@ object Context {
   @scala.inline
   def apply(getBusyContext: () => BusyContext): Context = {
     val __obj = js.Dynamic.literal(getBusyContext = js.Any.fromFunction0(getBusyContext))
-  
     __obj.asInstanceOf[Context]
   }
 }

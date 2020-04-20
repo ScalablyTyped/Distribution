@@ -1,5 +1,8 @@
 package typings.antd.tagMod
 
+import typings.antd.colorsMod.PresetColorType
+import typings.antd.colorsMod.PresetStatusColorType
+import typings.antd.typeMod.LiteralUnion
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
 import typings.react.mod.Booleanish
@@ -74,6 +77,8 @@ import scala.scalajs.js.annotation._
 
 trait TagProps extends HTMLAttributes[HTMLSpanElement] {
   var closable: js.UndefOr[Boolean] = js.undefined
+  @JSName("color")
+  var color_TagProps: js.UndefOr[LiteralUnion[PresetColorType | PresetStatusColorType, String]] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
   var onClose: js.UndefOr[js.Function] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -139,7 +144,7 @@ object TagProps {
     children: ReactNode = null,
     className: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
+    color: LiteralUnion[PresetColorType | PresetStatusColorType, String] = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: AnonHtml = null,

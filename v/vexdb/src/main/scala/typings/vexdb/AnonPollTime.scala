@@ -12,7 +12,6 @@ object AnonPollTime {
   @scala.inline
   def apply(pollTime: Double): AnonPollTime = {
     val __obj = js.Dynamic.literal(pollTime = pollTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPollTime]
   }
 }

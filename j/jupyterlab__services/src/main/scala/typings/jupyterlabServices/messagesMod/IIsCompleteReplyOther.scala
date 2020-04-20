@@ -15,7 +15,6 @@ object IIsCompleteReplyOther {
   @scala.inline
   def apply(status: complete | invalid | unknown): IIsCompleteReplyOther = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IIsCompleteReplyOther]
   }
 }

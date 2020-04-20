@@ -15,16 +15,14 @@ trait LinkClassKey extends js.Object
 
 object LinkClassKey {
   @scala.inline
-  def button: typings.materialUiCore.materialUiCoreStrings.button = this.cast("button")
+  def button: typings.materialUiCore.materialUiCoreStrings.button = "button".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.button]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def underlineAlways: typings.materialUiCore.materialUiCoreStrings.underlineAlways = "underlineAlways".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.underlineAlways]
   @scala.inline
-  def underlineAlways: typings.materialUiCore.materialUiCoreStrings.underlineAlways = this.cast("underlineAlways")
+  def underlineHover: typings.materialUiCore.materialUiCoreStrings.underlineHover = "underlineHover".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.underlineHover]
   @scala.inline
-  def underlineHover: typings.materialUiCore.materialUiCoreStrings.underlineHover = this.cast("underlineHover")
-  @scala.inline
-  def underlineNone: typings.materialUiCore.materialUiCoreStrings.underlineNone = this.cast("underlineNone")
+  def underlineNone: typings.materialUiCore.materialUiCoreStrings.underlineNone = "underlineNone".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.underlineNone]
 }
 

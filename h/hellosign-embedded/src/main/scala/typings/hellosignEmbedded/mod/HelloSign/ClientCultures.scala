@@ -65,7 +65,6 @@ object ClientCultures {
     supportedCultures: js.Array[String]
   ): ClientCultures = {
     val __obj = js.Dynamic.literal(DA_DK = DA_DK.asInstanceOf[js.Any], DE_DE = DE_DE.asInstanceOf[js.Any], EN_US = EN_US.asInstanceOf[js.Any], FR_FR = FR_FR.asInstanceOf[js.Any], NL_NL = NL_NL.asInstanceOf[js.Any], SV_SE = SV_SE.asInstanceOf[js.Any], ZH_CN = ZH_CN.asInstanceOf[js.Any], supportedCultures = supportedCultures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientCultures]
   }
 }

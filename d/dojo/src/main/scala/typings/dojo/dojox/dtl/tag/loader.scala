@@ -72,7 +72,6 @@ object loader {
     ssi: (js.Any, js.Any) => js.Any
   ): loader = {
     val __obj = js.Dynamic.literal(BlockNode = js.Any.fromFunction2(BlockNode), ExtendsNode = js.Any.fromFunction5(ExtendsNode), IncludeNode = js.Any.fromFunction5(IncludeNode), block = js.Any.fromFunction2(block), extends_ = js.Any.fromFunction2(extends_), include = js.Any.fromFunction2(include), ssi = js.Any.fromFunction2(ssi))
-  
     __obj.asInstanceOf[loader]
   }
 }

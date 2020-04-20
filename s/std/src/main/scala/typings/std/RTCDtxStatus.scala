@@ -12,10 +12,8 @@ trait RTCDtxStatus extends js.Object
 
 object RTCDtxStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.std.stdStrings.disabled = "disabled".asInstanceOf[typings.std.stdStrings.disabled]
   @scala.inline
-  def disabled: typings.std.stdStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def enabled: typings.std.stdStrings.enabled = this.cast("enabled")
+  def enabled: typings.std.stdStrings.enabled = "enabled".asInstanceOf[typings.std.stdStrings.enabled]
 }
 

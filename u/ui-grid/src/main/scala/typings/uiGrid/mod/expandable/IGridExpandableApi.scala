@@ -38,7 +38,6 @@ object IGridExpandableApi {
     toggleRowExpansion: TEntity => Unit
   ): IGridExpandableApi[TEntity] = {
     val __obj = js.Dynamic.literal(collapseAllRows = js.Any.fromFunction0(collapseAllRows), expandAllRows = js.Any.fromFunction0(expandAllRows), on = on.asInstanceOf[js.Any], toggleAllRows = js.Any.fromFunction0(toggleAllRows), toggleRowExpansion = js.Any.fromFunction1(toggleRowExpansion))
-  
     __obj.asInstanceOf[IGridExpandableApi[TEntity]]
   }
 }

@@ -12,10 +12,8 @@ trait IPConfigurationType extends js.Object
 
 object IPConfigurationType {
   @scala.inline
-  def IPv4: typings.chromeApps.chromeAppsStrings.IPv4 = this.cast("IPv4")
+  def IPv4: typings.chromeApps.chromeAppsStrings.IPv4 = "IPv4".asInstanceOf[typings.chromeApps.chromeAppsStrings.IPv4]
   @scala.inline
-  def IPv6: typings.chromeApps.chromeAppsStrings.IPv6 = this.cast("IPv6")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def IPv6: typings.chromeApps.chromeAppsStrings.IPv6 = "IPv6".asInstanceOf[typings.chromeApps.chromeAppsStrings.IPv6]
 }
 

@@ -15,16 +15,14 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  def DELETE: typings.hoxy.hoxyStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.hoxy.hoxyStrings.DELETE = "DELETE".asInstanceOf[typings.hoxy.hoxyStrings.DELETE]
   @scala.inline
-  def GET: typings.hoxy.hoxyStrings.GET = this.cast("GET")
+  def GET: typings.hoxy.hoxyStrings.GET = "GET".asInstanceOf[typings.hoxy.hoxyStrings.GET]
   @scala.inline
-  def PATCH: typings.hoxy.hoxyStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.hoxy.hoxyStrings.PATCH = "PATCH".asInstanceOf[typings.hoxy.hoxyStrings.PATCH]
   @scala.inline
-  def POST: typings.hoxy.hoxyStrings.POST = this.cast("POST")
+  def POST: typings.hoxy.hoxyStrings.POST = "POST".asInstanceOf[typings.hoxy.hoxyStrings.POST]
   @scala.inline
-  def PUT: typings.hoxy.hoxyStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUT: typings.hoxy.hoxyStrings.PUT = "PUT".asInstanceOf[typings.hoxy.hoxyStrings.PUT]
 }
 

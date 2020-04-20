@@ -32,7 +32,6 @@ object Paginator {
     prevPage: () => js.Promise[Paginator[T]]
   ): Paginator[T] = {
     val __obj = js.Dynamic.literal(hasNextPage = hasNextPage.asInstanceOf[js.Any], hasPrevPage = hasPrevPage.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], nextPage = js.Any.fromFunction0(nextPage), prevPage = js.Any.fromFunction0(prevPage))
-  
     __obj.asInstanceOf[Paginator[T]]
   }
 }

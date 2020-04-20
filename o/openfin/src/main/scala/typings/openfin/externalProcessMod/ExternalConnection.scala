@@ -13,7 +13,6 @@ object ExternalConnection {
   @scala.inline
   def apply(token: String, uuid: String): ExternalConnection = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExternalConnection]
   }
 }

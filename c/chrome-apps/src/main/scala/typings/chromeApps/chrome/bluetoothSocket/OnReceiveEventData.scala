@@ -17,7 +17,6 @@ object OnReceiveEventData {
   @scala.inline
   def apply(data: ArrayBuffer, socketId: integer): OnReceiveEventData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnReceiveEventData]
   }
 }

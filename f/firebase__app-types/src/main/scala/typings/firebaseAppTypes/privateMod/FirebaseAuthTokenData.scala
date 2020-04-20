@@ -12,7 +12,6 @@ object FirebaseAuthTokenData {
   @scala.inline
   def apply(accessToken: String): FirebaseAuthTokenData = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirebaseAuthTokenData]
   }
 }

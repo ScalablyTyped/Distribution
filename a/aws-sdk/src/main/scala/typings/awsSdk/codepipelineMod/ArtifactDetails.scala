@@ -20,7 +20,6 @@ object ArtifactDetails {
   @scala.inline
   def apply(maximumCount: MaximumArtifactCount, minimumCount: MinimumArtifactCount): ArtifactDetails = {
     val __obj = js.Dynamic.literal(maximumCount = maximumCount.asInstanceOf[js.Any], minimumCount = minimumCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArtifactDetails]
   }
 }

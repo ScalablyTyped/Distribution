@@ -12,7 +12,6 @@ object PluginRemoveEmptyAttrs {
   @scala.inline
   def apply(removeEmptyAttrs: Boolean | js.Object): PluginRemoveEmptyAttrs = {
     val __obj = js.Dynamic.literal(removeEmptyAttrs = removeEmptyAttrs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveEmptyAttrs]
   }
 }

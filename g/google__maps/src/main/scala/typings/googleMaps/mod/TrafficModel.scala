@@ -13,12 +13,10 @@ trait TrafficModel extends js.Object
 
 object TrafficModel {
   @scala.inline
-  def best_guess: typings.googleMaps.googleMapsStrings.best_guess = this.cast("best_guess")
+  def best_guess: typings.googleMaps.googleMapsStrings.best_guess = "best_guess".asInstanceOf[typings.googleMaps.googleMapsStrings.best_guess]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def optimistic: typings.googleMaps.googleMapsStrings.optimistic = "optimistic".asInstanceOf[typings.googleMaps.googleMapsStrings.optimistic]
   @scala.inline
-  def optimistic: typings.googleMaps.googleMapsStrings.optimistic = this.cast("optimistic")
-  @scala.inline
-  def pessimistic: typings.googleMaps.googleMapsStrings.pessimistic = this.cast("pessimistic")
+  def pessimistic: typings.googleMaps.googleMapsStrings.pessimistic = "pessimistic".asInstanceOf[typings.googleMaps.googleMapsStrings.pessimistic]
 }
 

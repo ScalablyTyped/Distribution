@@ -12,7 +12,6 @@ object Repl {
   @scala.inline
   def apply(inject: js.Any => Unit): Repl = {
     val __obj = js.Dynamic.literal(inject = js.Any.fromFunction1(inject))
-  
     __obj.asInstanceOf[Repl]
   }
 }

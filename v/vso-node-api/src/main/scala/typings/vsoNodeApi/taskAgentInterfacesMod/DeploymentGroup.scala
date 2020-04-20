@@ -20,7 +20,6 @@ object DeploymentGroup {
     project: ProjectReference
   ): DeploymentGroup = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], machineCount = machineCount.asInstanceOf[js.Any], machines = machines.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentGroup]
   }
 }

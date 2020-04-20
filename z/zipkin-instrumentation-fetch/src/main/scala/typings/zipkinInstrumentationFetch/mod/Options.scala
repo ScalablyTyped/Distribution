@@ -14,7 +14,6 @@ object Options {
   @scala.inline
   def apply(remoteServiceName: String, tracer: Tracer): Options = {
     val __obj = js.Dynamic.literal(remoteServiceName = remoteServiceName.asInstanceOf[js.Any], tracer = tracer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

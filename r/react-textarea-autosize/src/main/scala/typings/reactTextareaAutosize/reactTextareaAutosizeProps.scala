@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactTextareaAutosizeProps {
   @scala.inline
-  def ReactTextareaAutosizeProps: TextareaAutosizeProps.type = typings.reactTextareaAutosize.mod.TextareaAutosizeProps
+  def ReactTextareaAutosizeProps: TextareaAutosizeProps.type = TextareaAutosizeProps
   type ReactTextareaAutosizeProps = TextareaAutosizeProps
 }
 

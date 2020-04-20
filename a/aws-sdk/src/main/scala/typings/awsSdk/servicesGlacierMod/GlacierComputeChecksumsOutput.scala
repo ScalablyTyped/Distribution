@@ -14,7 +14,6 @@ object GlacierComputeChecksumsOutput {
   @scala.inline
   def apply(linearHash: String, treeHash: String): GlacierComputeChecksumsOutput = {
     val __obj = js.Dynamic.literal(linearHash = linearHash.asInstanceOf[js.Any], treeHash = treeHash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlacierComputeChecksumsOutput]
   }
 }

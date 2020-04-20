@@ -101,7 +101,6 @@ object IContentEditingHelper {
     redirectToCreatedContent: (Double, js.Any) => Unit
   ): IContentEditingHelper = {
     val __obj = js.Dynamic.literal(getAllProps = js.Any.fromFunction1(getAllProps), getAllowedActions = js.Any.fromFunction2(getAllowedActions), getButtonFromAction = js.Any.fromFunction1(getButtonFromAction), handleSaveError = js.Any.fromFunction1(handleSaveError), handleSuccessfulSave = js.Any.fromFunction1(handleSuccessfulSave), reBindChangedProperties = js.Any.fromFunction2(reBindChangedProperties), redirectToCreatedContent = js.Any.fromFunction2(redirectToCreatedContent))
-  
     __obj.asInstanceOf[IContentEditingHelper]
   }
 }

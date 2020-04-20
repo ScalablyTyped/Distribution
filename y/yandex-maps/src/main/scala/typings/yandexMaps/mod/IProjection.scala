@@ -20,7 +20,6 @@ object IProjection {
     toGlobalPixels: (js.Array[Double], Double) => js.Array[Double]
   ): IProjection = {
     val __obj = js.Dynamic.literal(fromGlobalPixels = js.Any.fromFunction2(fromGlobalPixels), getCoordSystem = js.Any.fromFunction0(getCoordSystem), isCycled = js.Any.fromFunction0(isCycled), toGlobalPixels = js.Any.fromFunction2(toGlobalPixels))
-  
     __obj.asInstanceOf[IProjection]
   }
 }

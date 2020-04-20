@@ -69,7 +69,6 @@ object AnonFunctionOpenMenu {
     ToggleButtonClick: ToggleButtonClick
   ): AnonFunctionOpenMenu = {
     val __obj = js.Dynamic.literal(FunctionCloseMenu = FunctionCloseMenu.asInstanceOf[js.Any], FunctionOpenMenu = FunctionOpenMenu.asInstanceOf[js.Any], FunctionReset = FunctionReset.asInstanceOf[js.Any], FunctionSelectItem = FunctionSelectItem.asInstanceOf[js.Any], FunctionSetHighlightedIndex = FunctionSetHighlightedIndex.asInstanceOf[js.Any], FunctionSetInputValue = FunctionSetInputValue.asInstanceOf[js.Any], FunctionToggleMenu = FunctionToggleMenu.asInstanceOf[js.Any], InputBlur = InputBlur.asInstanceOf[js.Any], InputChange = InputChange.asInstanceOf[js.Any], InputKeyDownArrowDown = InputKeyDownArrowDown.asInstanceOf[js.Any], InputKeyDownArrowUp = InputKeyDownArrowUp.asInstanceOf[js.Any], InputKeyDownEnd = InputKeyDownEnd.asInstanceOf[js.Any], InputKeyDownEnter = InputKeyDownEnter.asInstanceOf[js.Any], InputKeyDownEscape = InputKeyDownEscape.asInstanceOf[js.Any], InputKeyDownHome = InputKeyDownHome.asInstanceOf[js.Any], ItemClick = ItemClick.asInstanceOf[js.Any], ItemMouseMove = ItemMouseMove.asInstanceOf[js.Any], MenuMouseLeave = MenuMouseLeave.asInstanceOf[js.Any], ToggleButtonClick = ToggleButtonClick.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFunctionOpenMenu]
   }
 }

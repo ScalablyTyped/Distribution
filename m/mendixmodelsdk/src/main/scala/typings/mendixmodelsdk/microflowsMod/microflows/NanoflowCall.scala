@@ -27,13 +27,13 @@ class NanoflowCall protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FNanoflowCall: IModel = js.native
-  def containerAsNanoflowCallAction(): NanoflowCallAction = js.native
+  def containerAsNanoflowCallAction: NanoflowCallAction = js.native
   def nanoflow(): js.Any = js.native
   def nanoflow(newValue: INanoflow): js.Any = js.native
-  def nanoflowQualifiedName(): String | Null = js.native
+  def nanoflowQualifiedName: String | Null = js.native
   @JSName("nanoflow")
-  def nanoflow_Union(): INanoflow | Null = js.native
-  def parameterMappings(): IList[NanoflowCallParameterMapping] = js.native
+  def nanoflow_Union: INanoflow | Null = js.native
+  def parameterMappings: IList[NanoflowCallParameterMapping] = js.native
 }
 
 /* static members */

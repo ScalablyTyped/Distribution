@@ -16,7 +16,6 @@ object ITooltipManager_ {
   @scala.inline
   def apply(invoke: IOptions => Unit): ITooltipManager_ = {
     val __obj = js.Dynamic.literal(invoke = js.Any.fromFunction1(invoke))
-  
     __obj.asInstanceOf[ITooltipManager_]
   }
 }

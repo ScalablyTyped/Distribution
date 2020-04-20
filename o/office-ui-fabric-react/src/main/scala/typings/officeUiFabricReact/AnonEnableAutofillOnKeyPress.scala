@@ -12,7 +12,6 @@ object AnonEnableAutofillOnKeyPress {
   @scala.inline
   def apply(enableAutofillOnKeyPress: js.Array[Double]): AnonEnableAutofillOnKeyPress = {
     val __obj = js.Dynamic.literal(enableAutofillOnKeyPress = enableAutofillOnKeyPress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnableAutofillOnKeyPress]
   }
 }

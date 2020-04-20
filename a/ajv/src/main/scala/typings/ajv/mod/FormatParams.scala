@@ -12,7 +12,6 @@ object FormatParams {
   @scala.inline
   def apply(format: String): FormatParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FormatParams]
   }
 }

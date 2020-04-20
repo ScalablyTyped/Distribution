@@ -23,7 +23,6 @@ object AnonItems {
   @scala.inline
   def apply(items: js.Array[AnonType], position: AnonCornerPosition, timing: AnonOffsetMs): AnonItems = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], timing = timing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItems]
   }
 }

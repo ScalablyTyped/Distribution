@@ -13,7 +13,6 @@ object ListTagsForResourceResponse {
   @scala.inline
   def apply(TagsModel: TagsModel): ListTagsForResourceResponse = {
     val __obj = js.Dynamic.literal(TagsModel = TagsModel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTagsForResourceResponse]
   }
 }

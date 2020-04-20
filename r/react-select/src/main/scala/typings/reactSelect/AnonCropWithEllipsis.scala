@@ -12,7 +12,6 @@ object AnonCropWithEllipsis {
   @scala.inline
   def apply(cropWithEllipsis: Boolean): AnonCropWithEllipsis = {
     val __obj = js.Dynamic.literal(cropWithEllipsis = cropWithEllipsis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCropWithEllipsis]
   }
 }

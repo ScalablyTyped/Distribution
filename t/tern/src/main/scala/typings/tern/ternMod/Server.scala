@@ -3,6 +3,15 @@ package typings.tern.ternMod
 import org.scalablytyped.runtime.TopLevel
 import typings.tern.AnonQuery
 import typings.tern.inferMod.Context
+import typings.tern.ternStrings.afterLoad
+import typings.tern.ternStrings.beforeLoad
+import typings.tern.ternStrings.completion
+import typings.tern.ternStrings.postInfer
+import typings.tern.ternStrings.postParse
+import typings.tern.ternStrings.preInfer
+import typings.tern.ternStrings.preParse
+import typings.tern.ternStrings.reset
+import typings.tern.ternStrings.typeAt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,12 +49,12 @@ trait Server extends js.Object {
   /** Load a server plugin (or don’t do anything, if the plugin is already loaded). */
   def loadPlugin(name: String, options: js.Object): Unit = js.native
   /** Unregister an event handler. */
-  def off[K /* <: String */](
+  def off[K /* <: reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion */](
     eventType: K,
     handler: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Events[K] */ js.Any
   ): Unit = js.native
   /** Register an event handler for the named type of event. */
-  def on[K /* <: String */](
+  def on[K /* <: reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion */](
     eventType: K,
     handler: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Events[K] */ js.Any
   ): Unit = js.native
@@ -65,7 +74,10 @@ trait Server extends js.Object {
     ]
   ): Unit = js.native
   def reset(): Unit = js.native
-  def signal(event: String, file: File): Unit = js.native
+  def signal(
+    event: reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion,
+    file: File
+  ): Unit = js.native
 }
 
 @JSImport("tern/lib/tern", "Server")

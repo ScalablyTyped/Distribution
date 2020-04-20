@@ -12,7 +12,6 @@ object ConnectionStringParseOptions {
   @scala.inline
   def apply(skipLowerCase: Boolean): ConnectionStringParseOptions = {
     val __obj = js.Dynamic.literal(skipLowerCase = skipLowerCase.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionStringParseOptions]
   }
 }

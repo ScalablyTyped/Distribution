@@ -17,18 +17,16 @@ trait ResponseType extends js.Object
 
 object ResponseType {
   @scala.inline
-  def accepted: typings.microsoftGraph.microsoftGraphStrings.accepted = this.cast("accepted")
+  def accepted: typings.microsoftGraph.microsoftGraphStrings.accepted = "accepted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.accepted]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def declined: typings.microsoftGraph.microsoftGraphStrings.declined = "declined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.declined]
   @scala.inline
-  def declined: typings.microsoftGraph.microsoftGraphStrings.declined = this.cast("declined")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
+  def notResponded: typings.microsoftGraph.microsoftGraphStrings.notResponded = "notResponded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notResponded]
   @scala.inline
-  def notResponded: typings.microsoftGraph.microsoftGraphStrings.notResponded = this.cast("notResponded")
+  def organizer: typings.microsoftGraph.microsoftGraphStrings.organizer = "organizer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organizer]
   @scala.inline
-  def organizer: typings.microsoftGraph.microsoftGraphStrings.organizer = this.cast("organizer")
-  @scala.inline
-  def tentativelyAccepted: typings.microsoftGraph.microsoftGraphStrings.tentativelyAccepted = this.cast("tentativelyAccepted")
+  def tentativelyAccepted: typings.microsoftGraph.microsoftGraphStrings.tentativelyAccepted = "tentativelyAccepted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tentativelyAccepted]
 }
 

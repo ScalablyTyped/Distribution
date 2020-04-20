@@ -70,7 +70,6 @@ object Methods {
     updateMany: (UpdateIdPayload, UpdateManyPayload, ZendeskCallback[_, _]) => typings.nodeZendesk.mod.JobStatuses.ResponsePayload
   ): Methods = {
     val __obj = js.Dynamic.literal(auth = js.Any.fromFunction1(auth), create = js.Any.fromFunction2(create), createMany = js.Any.fromFunction2(createMany), createOrUpdate = js.Any.fromFunction2(createOrUpdate), createOrUpdateMany = js.Any.fromFunction2(createOrUpdateMany), delete = js.Any.fromFunction2(delete), incremental = js.Any.fromFunction2(incremental), incrementalInclude = js.Any.fromFunction3(incrementalInclude), incrementalSample = js.Any.fromFunction2(incrementalSample), list = js.Any.fromFunction1(list), listByGroup = js.Any.fromFunction2(listByGroup), listByOrganization = js.Any.fromFunction2(listByOrganization), me = js.Any.fromFunction1(me), merge = js.Any.fromFunction3(merge), password = js.Any.fromFunction4(password), search = js.Any.fromFunction2(search), show = js.Any.fromFunction2(show), showMany = js.Any.fromFunction2(showMany), suspend = js.Any.fromFunction2(suspend), unsuspend = js.Any.fromFunction2(unsuspend), update = js.Any.fromFunction3(update), updateMany = js.Any.fromFunction3(updateMany))
-  
     __obj.asInstanceOf[Methods]
   }
 }

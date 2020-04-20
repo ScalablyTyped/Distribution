@@ -14,7 +14,6 @@ object IGridResultSet {
   @scala.inline
   def apply(columns: js.Array[IDbColumn], numberOfRows: Double, rowsUri: String): IGridResultSet = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], numberOfRows = numberOfRows.asInstanceOf[js.Any], rowsUri = rowsUri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGridResultSet]
   }
 }

@@ -12,7 +12,6 @@ object ChainSingle {
   @scala.inline
   def apply[T](value: () => T): ChainSingle[T] = {
     val __obj = js.Dynamic.literal(value = js.Any.fromFunction0(value))
-  
     __obj.asInstanceOf[ChainSingle[T]]
   }
 }

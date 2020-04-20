@@ -15,7 +15,6 @@ object StaticPatternSegment {
   @scala.inline
   def apply(dynamic: `false`, pattern: Pattern): StaticPatternSegment = {
     val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StaticPatternSegment]
   }
 }

@@ -2,12 +2,18 @@ package typings.workboxWebpackPlugin.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
+import typings.workboxWebpackPlugin.AnonIntegrity
 import typings.workboxWebpackPlugin.AnonManifest
+import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.production
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GenerateSWOptions extends CommonOptions {
+  /**
+  	 * The targets to pass to babel-preset-env when transpiling the service worker bundle
+  	 */
+  var babelPresetEnvTargets: js.UndefOr[js.Array[String]] = js.undefined
   /**
   	 * An optional ID to be prepended to cache names used by Workbox.
   	 *
@@ -17,6 +23,10 @@ trait GenerateSWOptions extends CommonOptions {
   	 * @example cacheId: 'my-app'
   	 */
   var cacheId: js.UndefOr[String | Null] = js.undefined
+  /**
+  	 * Whether or not Workbox should attempt to identify an delete any precaches created by older, incompatible versions
+  	 */
+  var cleanupOutdatedCaches: js.UndefOr[Boolean] = js.undefined
   /**
   	 * Whether or not the service worker should [start controlling](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#clientsclaim)
   	 * any existing clients as soon as it activates.
@@ -60,6 +70,12 @@ trait GenerateSWOptions extends CommonOptions {
   	 */
   var importScripts: js.UndefOr[js.Array[String]] = js.undefined
   /**
+  	 * Whether the runtime code for the Workbox library should be included in the top-level service worker,
+  	 * or split into a separate file that needs to be deployed alongside the service worker. Keeping the runtime separate means
+  	 * that users will not have to re-download the Workbox code each time your top-level service worker changes
+  	 */
+  var inlineWorkboxRuntime: js.UndefOr[Boolean] = js.undefined
+  /**
   	 * This will be used to create a [`NavigationRoute`](https://developers.google.com/web/tools/workbox/reference-docs/latest/workbox.routing.NavigationRoute)
   	 * that will respond to [navigation requests](https://developers.google.com/web/fundamentals/primers/service-workers/high-performance-loading#first_what_are_navigation_requests)
   	 * for URLs that that aren't precached.
@@ -95,6 +111,11 @@ trait GenerateSWOptions extends CommonOptions {
   	 */
   var navigateFallbackDenylist: js.UndefOr[js.Array[RegExp]] = js.undefined
   /**
+  	 * Whether or not to enable navigation preload in the generated service worker.
+  	 * When set to true, you must also use runtimeCaching to set up an appropriate response strategy that will match navigation requests, and make use of the preloaded response
+  	 */
+  var navigationPreload: js.UndefOr[Boolean] = js.undefined
+  /**
   	 * Controls whether or not to include support for [offline Google Analytics](https://developers.google.com/web/tools/workbox/guides/enable-offline-analytics).
   	 *
   	 * When `true`, `workbox.googleAnalytics.initialize()` will be added to your new service worker file.
@@ -118,13 +139,20 @@ trait GenerateSWOptions extends CommonOptions {
   	 * @example skipWaiting: true
   	 */
   var skipWaiting: js.UndefOr[Boolean] = js.undefined
+  /**
+  	 * Whether to create a sourcemap for the generated service worker files
+  	 */
+  var sourcemap: js.UndefOr[Boolean] = js.undefined
 }
 
 object GenerateSWOptions {
   @scala.inline
   def apply(
+    additionalManifestEntries: js.Array[AnonIntegrity | String] = null,
+    babelPresetEnvTargets: js.Array[String] = null,
     cacheId: String = null,
     chunks: js.Array[String] = null,
+    cleanupOutdatedCaches: js.UndefOr[Boolean] = js.undefined,
     clientsClaim: js.UndefOr[Boolean] = js.undefined,
     directoryIndex: String = null,
     dontCacheBustUrlsMatching: RegExp = null,
@@ -137,25 +165,33 @@ object GenerateSWOptions {
     globStrict: js.UndefOr[Boolean] = js.undefined,
     ignoreUrlParametersMatching: js.Array[RegExp] = null,
     importScripts: js.Array[String] = null,
+    importScriptsViaChunks: js.Array[String] = null,
     importsDirectory: String = null,
     include: js.Array[String | RegExp] = null,
+    inlineWorkboxRuntime: js.UndefOr[Boolean] = js.undefined,
     manifestTransforms: js.Array[js.Function1[/* originalManifest */ js.Array[ManifestEntry], AnonManifest]] = null,
     maximumFileSizeToCacheInBytes: Int | Double = null,
+    mode: production | String = null,
     modifyUrlPrefix: StringDictionary[String] = null,
     navigateFallback: String = null,
     navigateFallbackAllowlist: js.Array[RegExp] = null,
     navigateFallbackDenylist: js.Array[RegExp] = null,
+    navigationPreload: js.UndefOr[Boolean] = js.undefined,
     offlineGoogleAnalytics: js.UndefOr[Boolean] = js.undefined,
     precacheManifestFilename: String = null,
     runtimeCaching: js.Array[RuntimeCacheRule] = null,
     skipWaiting: js.UndefOr[Boolean] = js.undefined,
+    sourcemap: js.UndefOr[Boolean] = js.undefined,
     swDest: String = null,
     templatedUrls: StringDictionary[String | js.Array[String]] = null,
     test: js.Array[String | RegExp] = null
   ): GenerateSWOptions = {
     val __obj = js.Dynamic.literal()
+    if (additionalManifestEntries != null) __obj.updateDynamic("additionalManifestEntries")(additionalManifestEntries.asInstanceOf[js.Any])
+    if (babelPresetEnvTargets != null) __obj.updateDynamic("babelPresetEnvTargets")(babelPresetEnvTargets.asInstanceOf[js.Any])
     if (cacheId != null) __obj.updateDynamic("cacheId")(cacheId.asInstanceOf[js.Any])
     if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanupOutdatedCaches)) __obj.updateDynamic("cleanupOutdatedCaches")(cleanupOutdatedCaches.asInstanceOf[js.Any])
     if (!js.isUndefined(clientsClaim)) __obj.updateDynamic("clientsClaim")(clientsClaim.asInstanceOf[js.Any])
     if (directoryIndex != null) __obj.updateDynamic("directoryIndex")(directoryIndex.asInstanceOf[js.Any])
     if (dontCacheBustUrlsMatching != null) __obj.updateDynamic("dontCacheBustUrlsMatching")(dontCacheBustUrlsMatching.asInstanceOf[js.Any])
@@ -168,18 +204,23 @@ object GenerateSWOptions {
     if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict.asInstanceOf[js.Any])
     if (ignoreUrlParametersMatching != null) __obj.updateDynamic("ignoreUrlParametersMatching")(ignoreUrlParametersMatching.asInstanceOf[js.Any])
     if (importScripts != null) __obj.updateDynamic("importScripts")(importScripts.asInstanceOf[js.Any])
+    if (importScriptsViaChunks != null) __obj.updateDynamic("importScriptsViaChunks")(importScriptsViaChunks.asInstanceOf[js.Any])
     if (importsDirectory != null) __obj.updateDynamic("importsDirectory")(importsDirectory.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineWorkboxRuntime)) __obj.updateDynamic("inlineWorkboxRuntime")(inlineWorkboxRuntime.asInstanceOf[js.Any])
     if (manifestTransforms != null) __obj.updateDynamic("manifestTransforms")(manifestTransforms.asInstanceOf[js.Any])
     if (maximumFileSizeToCacheInBytes != null) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (modifyUrlPrefix != null) __obj.updateDynamic("modifyUrlPrefix")(modifyUrlPrefix.asInstanceOf[js.Any])
     if (navigateFallback != null) __obj.updateDynamic("navigateFallback")(navigateFallback.asInstanceOf[js.Any])
     if (navigateFallbackAllowlist != null) __obj.updateDynamic("navigateFallbackAllowlist")(navigateFallbackAllowlist.asInstanceOf[js.Any])
     if (navigateFallbackDenylist != null) __obj.updateDynamic("navigateFallbackDenylist")(navigateFallbackDenylist.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationPreload)) __obj.updateDynamic("navigationPreload")(navigationPreload.asInstanceOf[js.Any])
     if (!js.isUndefined(offlineGoogleAnalytics)) __obj.updateDynamic("offlineGoogleAnalytics")(offlineGoogleAnalytics.asInstanceOf[js.Any])
     if (precacheManifestFilename != null) __obj.updateDynamic("precacheManifestFilename")(precacheManifestFilename.asInstanceOf[js.Any])
     if (runtimeCaching != null) __obj.updateDynamic("runtimeCaching")(runtimeCaching.asInstanceOf[js.Any])
     if (!js.isUndefined(skipWaiting)) __obj.updateDynamic("skipWaiting")(skipWaiting.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcemap)) __obj.updateDynamic("sourcemap")(sourcemap.asInstanceOf[js.Any])
     if (swDest != null) __obj.updateDynamic("swDest")(swDest.asInstanceOf[js.Any])
     if (templatedUrls != null) __obj.updateDynamic("templatedUrls")(templatedUrls.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])

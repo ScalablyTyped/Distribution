@@ -22,7 +22,6 @@ object TypeofndbRedis {
     redis_free: String => Double
   ): TypeofndbRedis = {
     val __obj = js.Dynamic.literal(redis_cmd = js.Any.fromFunction3(redis_cmd), redis_cmd_p1 = js.Any.fromFunction4(redis_cmd_p1), redis_cmd_p2 = js.Any.fromFunction5(redis_cmd_p2), redis_cmd_p3 = js.Any.fromFunction6(redis_cmd_p3), redis_free = js.Any.fromFunction1(redis_free))
-  
     __obj.asInstanceOf[TypeofndbRedis]
   }
 }

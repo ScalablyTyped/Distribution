@@ -20,7 +20,6 @@ object HyperParameterTuningJobObjective {
   @scala.inline
   def apply(MetricName: MetricName, Type: HyperParameterTuningJobObjectiveType): HyperParameterTuningJobObjective = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HyperParameterTuningJobObjective]
   }
 }

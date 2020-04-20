@@ -12,7 +12,13 @@ class TextRenderer () extends js.Object {
   def del(text: String): String = js.native
   def em(text: String): String = js.native
   def image(href: String, title: String, text: String): String = js.native
+  def image(href: String, title: Null, text: String): String = js.native
+  def image(href: Null, title: String, text: String): String = js.native
+  def image(href: Null, title: Null, text: String): String = js.native
   def link(href: String, title: String, text: String): String = js.native
+  def link(href: String, title: Null, text: String): String = js.native
+  def link(href: Null, title: String, text: String): String = js.native
+  def link(href: Null, title: Null, text: String): String = js.native
   def strong(text: String): String = js.native
   def text(text: String): String = js.native
 }

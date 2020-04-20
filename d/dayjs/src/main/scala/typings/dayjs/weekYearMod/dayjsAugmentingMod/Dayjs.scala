@@ -12,7 +12,6 @@ object Dayjs {
   @scala.inline
   def apply(weekYear: () => Double): Dayjs = {
     val __obj = js.Dynamic.literal(weekYear = js.Any.fromFunction0(weekYear))
-  
     __obj.asInstanceOf[Dayjs]
   }
 }

@@ -18,7 +18,6 @@ object UiFocusable {
   @scala.inline
   def apply(setFocus: () => Unit): UiFocusable = {
     val __obj = js.Dynamic.literal(setFocus = js.Any.fromFunction0(setFocus))
-  
     __obj.asInstanceOf[UiFocusable]
   }
 }

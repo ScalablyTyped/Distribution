@@ -140,7 +140,6 @@ object TasksResource {
     run: AnonAccesstoken => Request_[Task]
   ): TasksResource = {
     val __obj = js.Dynamic.literal(acknowledge = js.Any.fromFunction1(acknowledge), cancelLease = js.Any.fromFunction1(cancelLease), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), pull = js.Any.fromFunction1(pull), renewLease = js.Any.fromFunction1(renewLease), run = js.Any.fromFunction1(run))
-  
     __obj.asInstanceOf[TasksResource]
   }
 }

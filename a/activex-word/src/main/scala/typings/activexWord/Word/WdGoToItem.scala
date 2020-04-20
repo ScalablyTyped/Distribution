@@ -44,40 +44,38 @@ trait WdGoToItem extends js.Object
 
 object WdGoToItem {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdGoToBookmark: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdGoToBookmark: `-1` = this.cast(-1)
+  def wdGoToComment: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdGoToComment: `6` = this.cast(6)
+  def wdGoToEndnote: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdGoToEndnote: `5` = this.cast(5)
+  def wdGoToEquation: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdGoToEquation: `10` = this.cast(10)
+  def wdGoToField: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdGoToField: `7` = this.cast(7)
+  def wdGoToFootnote: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdGoToFootnote: `4` = this.cast(4)
+  def wdGoToGrammaticalError: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdGoToGrammaticalError: `14` = this.cast(14)
+  def wdGoToGraphic: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdGoToGraphic: `8` = this.cast(8)
+  def wdGoToHeading: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdGoToHeading: `11` = this.cast(11)
+  def wdGoToLine: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdGoToLine: `3` = this.cast(3)
+  def wdGoToObject: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdGoToObject: `9` = this.cast(9)
+  def wdGoToPage: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdGoToPage: `1` = this.cast(1)
+  def wdGoToPercent: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdGoToPercent: `12` = this.cast(12)
+  def wdGoToProofreadingError: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdGoToProofreadingError: `15` = this.cast(15)
+  def wdGoToSection: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdGoToSection: `0` = this.cast(0)
+  def wdGoToSpellingError: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdGoToSpellingError: `13` = this.cast(13)
-  @scala.inline
-  def wdGoToTable: `2` = this.cast(2)
+  def wdGoToTable: `2` = 2.asInstanceOf[`2`]
 }
 

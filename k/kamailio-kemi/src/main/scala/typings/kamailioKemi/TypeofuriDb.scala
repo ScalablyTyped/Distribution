@@ -22,7 +22,6 @@ object TypeofuriDb {
     does_uri_exist: () => Double
   ): TypeofuriDb = {
     val __obj = js.Dynamic.literal(check_from = js.Any.fromFunction0(check_from), check_to = js.Any.fromFunction0(check_to), check_uri = js.Any.fromFunction1(check_uri), check_uri_realm = js.Any.fromFunction3(check_uri_realm), does_uri_exist = js.Any.fromFunction0(does_uri_exist))
-  
     __obj.asInstanceOf[TypeofuriDb]
   }
 }

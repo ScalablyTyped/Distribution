@@ -25,7 +25,6 @@ object SinonMock {
   @scala.inline
   def apply(expects: String => SinonExpectation, restore: () => Unit, verify: () => Unit): SinonMock = {
     val __obj = js.Dynamic.literal(expects = js.Any.fromFunction1(expects), restore = js.Any.fromFunction0(restore), verify = js.Any.fromFunction0(verify))
-  
     __obj.asInstanceOf[SinonMock]
   }
 }

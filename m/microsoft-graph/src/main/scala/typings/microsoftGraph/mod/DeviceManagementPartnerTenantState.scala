@@ -17,18 +17,16 @@ trait DeviceManagementPartnerTenantState extends js.Object
 
 object DeviceManagementPartnerTenantState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = "enabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabled]
   @scala.inline
-  def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = this.cast("enabled")
+  def rejected: typings.microsoftGraph.microsoftGraphStrings.rejected = "rejected".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.rejected]
   @scala.inline
-  def rejected: typings.microsoftGraph.microsoftGraphStrings.rejected = this.cast("rejected")
+  def terminated: typings.microsoftGraph.microsoftGraphStrings.terminated = "terminated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.terminated]
   @scala.inline
-  def terminated: typings.microsoftGraph.microsoftGraphStrings.terminated = this.cast("terminated")
+  def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unavailable]
   @scala.inline
-  def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = this.cast("unavailable")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unresponsive: typings.microsoftGraph.microsoftGraphStrings.unresponsive = this.cast("unresponsive")
+  def unresponsive: typings.microsoftGraph.microsoftGraphStrings.unresponsive = "unresponsive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unresponsive]
 }
 

@@ -12,7 +12,6 @@ object MultikeyForeignConstraintBuilder {
   @scala.inline
   def apply(references: js.Array[String] => ReferencingColumnBuilder): MultikeyForeignConstraintBuilder = {
     val __obj = js.Dynamic.literal(references = js.Any.fromFunction1(references))
-  
     __obj.asInstanceOf[MultikeyForeignConstraintBuilder]
   }
 }

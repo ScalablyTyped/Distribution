@@ -12,7 +12,6 @@ object CheckboxesTypeState {
   @scala.inline
   def apply(values: CheckboxesTypeKnobValue): CheckboxesTypeState = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckboxesTypeState]
   }
 }

@@ -14,7 +14,6 @@ object IEnumerator {
   @scala.inline
   def apply[T](current: () => T, dispose: () => Unit, moveNext: () => Boolean): IEnumerator[T] = {
     val __obj = js.Dynamic.literal(current = js.Any.fromFunction0(current), dispose = js.Any.fromFunction0(dispose), moveNext = js.Any.fromFunction0(moveNext))
-  
     __obj.asInstanceOf[IEnumerator[T]]
   }
 }

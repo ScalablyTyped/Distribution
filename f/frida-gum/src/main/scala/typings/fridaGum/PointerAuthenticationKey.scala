@@ -14,14 +14,12 @@ trait PointerAuthenticationKey extends js.Object
 
 object PointerAuthenticationKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def da: typings.fridaGum.fridaGumStrings.da = "da".asInstanceOf[typings.fridaGum.fridaGumStrings.da]
   @scala.inline
-  def da: typings.fridaGum.fridaGumStrings.da = this.cast("da")
+  def db: typings.fridaGum.fridaGumStrings.db = "db".asInstanceOf[typings.fridaGum.fridaGumStrings.db]
   @scala.inline
-  def db: typings.fridaGum.fridaGumStrings.db = this.cast("db")
+  def ia: typings.fridaGum.fridaGumStrings.ia = "ia".asInstanceOf[typings.fridaGum.fridaGumStrings.ia]
   @scala.inline
-  def ia: typings.fridaGum.fridaGumStrings.ia = this.cast("ia")
-  @scala.inline
-  def ib: typings.fridaGum.fridaGumStrings.ib = this.cast("ib")
+  def ib: typings.fridaGum.fridaGumStrings.ib = "ib".asInstanceOf[typings.fridaGum.fridaGumStrings.ib]
 }
 

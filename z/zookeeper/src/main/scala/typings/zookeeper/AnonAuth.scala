@@ -14,7 +14,6 @@ object AnonAuth {
   @scala.inline
   def apply(auth: String, perms: Double, scheme: String): AnonAuth = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], perms = perms.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuth]
   }
 }

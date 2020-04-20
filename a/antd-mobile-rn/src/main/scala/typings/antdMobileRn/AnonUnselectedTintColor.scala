@@ -22,7 +22,6 @@ object AnonUnselectedTintColor {
     unselectedTintColor: String
   ): AnonUnselectedTintColor = {
     val __obj = js.Dynamic.literal(barTintColor = barTintColor.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], tintColor = tintColor.asInstanceOf[js.Any], unselectedTintColor = unselectedTintColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUnselectedTintColor]
   }
 }

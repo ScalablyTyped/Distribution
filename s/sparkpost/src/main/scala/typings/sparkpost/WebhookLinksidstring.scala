@@ -14,7 +14,6 @@ object WebhookLinksidstring {
   @scala.inline
   def apply(id: String, links: js.Array[AnonHref]): WebhookLinksidstring = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebhookLinksidstring]
   }
 }

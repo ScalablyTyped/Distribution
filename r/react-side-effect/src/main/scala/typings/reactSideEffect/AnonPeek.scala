@@ -13,7 +13,6 @@ object AnonPeek {
   @scala.inline
   def apply[TPeek, TRewind](peek: () => TPeek, rewind: () => TRewind): AnonPeek[TPeek, TRewind] = {
     val __obj = js.Dynamic.literal(peek = js.Any.fromFunction0(peek), rewind = js.Any.fromFunction0(rewind))
-  
     __obj.asInstanceOf[AnonPeek[TPeek, TRewind]]
   }
 }

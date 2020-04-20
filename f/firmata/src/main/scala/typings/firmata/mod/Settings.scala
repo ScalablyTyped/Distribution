@@ -15,7 +15,6 @@ object Settings {
   @scala.inline
   def apply(reportVersionTimeout: Double, samplingInterval: Double, serialport: AnonBaudRate): Settings = {
     val __obj = js.Dynamic.literal(reportVersionTimeout = reportVersionTimeout.asInstanceOf[js.Any], samplingInterval = samplingInterval.asInstanceOf[js.Any], serialport = serialport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Settings]
   }
 }

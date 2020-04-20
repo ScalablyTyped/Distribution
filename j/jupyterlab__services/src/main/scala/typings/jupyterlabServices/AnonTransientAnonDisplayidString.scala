@@ -12,7 +12,6 @@ object AnonTransientAnonDisplayidString {
   @scala.inline
   def apply(transient: AnonDisplayidString): AnonTransientAnonDisplayidString = {
     val __obj = js.Dynamic.literal(transient = transient.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTransientAnonDisplayidString]
   }
 }

@@ -30,7 +30,6 @@ object Author {
     userUrl: String
   ): Author = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], channelName = channelName.asInstanceOf[js.Any], channelUrl = channelUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any], userUrl = userUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Author]
   }
 }

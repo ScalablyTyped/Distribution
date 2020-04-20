@@ -22,7 +22,6 @@ object IRelativePositions {
     submenuDirection: DirectionalHint
   ): IRelativePositions = {
     val __obj = js.Dynamic.literal(beakPosition = beakPosition.asInstanceOf[js.Any], calloutPosition = calloutPosition.asInstanceOf[js.Any], directionalClassName = directionalClassName.asInstanceOf[js.Any], submenuDirection = submenuDirection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRelativePositions]
   }
 }

@@ -24,7 +24,6 @@ object HttpQueryRequest {
     request: PickRequesturlmethodheade
   ): HttpQueryRequest = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HttpQueryRequest]
   }
 }

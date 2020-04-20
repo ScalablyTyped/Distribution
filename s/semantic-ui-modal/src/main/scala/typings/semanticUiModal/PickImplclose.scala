@@ -13,7 +13,6 @@ object PickImplclose {
   @scala.inline
   def apply(close: String): PickImplclose = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplclose]
   }
 }

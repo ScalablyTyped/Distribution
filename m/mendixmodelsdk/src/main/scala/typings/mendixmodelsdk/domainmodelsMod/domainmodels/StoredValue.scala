@@ -31,8 +31,8 @@ class StoredValue protected () extends ValueType {
   @JSName("model")
   var model_FStoredValue: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MStoredValue(): Attribute = js.native
-  def defaultValue(): String = js.native
+  def containerAsAttribute_MStoredValue: Attribute = js.native
+  def defaultValue: String = js.native
   def defaultValue(newValue: String): js.Any = js.native
 }
 

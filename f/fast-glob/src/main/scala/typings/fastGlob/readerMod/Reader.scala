@@ -32,7 +32,6 @@ object Reader {
     static: (js.Array[Pattern], ReaderOptions) => T
   ): Reader[T] = {
     val __obj = js.Dynamic.literal(_fsStatSettings = _fsStatSettings.asInstanceOf[js.Any], _getFullEntryPath = js.Any.fromFunction1(_getFullEntryPath), _isFatalError = js.Any.fromFunction1(_isFatalError), _makeEntry = js.Any.fromFunction2(_makeEntry), _settings = _settings.asInstanceOf[js.Any], dynamic = js.Any.fromFunction2(dynamic), static = js.Any.fromFunction2(static))
-  
     __obj.asInstanceOf[Reader[T]]
   }
 }

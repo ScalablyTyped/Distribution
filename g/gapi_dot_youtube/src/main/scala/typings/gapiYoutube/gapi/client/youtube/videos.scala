@@ -51,7 +51,6 @@ object videos {
     update: AnonRequestBody => HttpRequest[GoogleApiYouTubeVideoResource]
   ): videos = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), getRating = js.Any.fromFunction1(getRating), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), rate = js.Any.fromFunction1(rate), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[videos]
   }
 }

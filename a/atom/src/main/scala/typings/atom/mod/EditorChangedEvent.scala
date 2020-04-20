@@ -17,7 +17,6 @@ object EditorChangedEvent {
   @scala.inline
   def apply(newExtent: Point, oldExtent: Point, start: Point): EditorChangedEvent = {
     val __obj = js.Dynamic.literal(newExtent = newExtent.asInstanceOf[js.Any], oldExtent = oldExtent.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditorChangedEvent]
   }
 }

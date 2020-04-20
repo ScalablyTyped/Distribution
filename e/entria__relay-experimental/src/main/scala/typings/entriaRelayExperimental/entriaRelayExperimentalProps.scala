@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait entriaRelayExperimentalProps {
   @scala.inline
-  def RelayEnvironmentProviderProps: Props.type = typings.entriaRelayExperimental.relayEnvironmentProviderMod.Props
+  def RelayEnvironmentProviderProps: Props.type = Props
   type RelayEnvironmentProviderProps = Props
 }
 

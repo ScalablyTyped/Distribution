@@ -17,7 +17,6 @@ object DownloadProgress {
   @scala.inline
   def apply(percent: Double, totalBytes: Double, transferredBytes: Double): DownloadProgress = {
     val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any], transferredBytes = transferredBytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DownloadProgress]
   }
 }

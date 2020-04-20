@@ -27,7 +27,7 @@ class BatchUpdateIntentsRequest () extends IBatchUpdateIntentsRequest {
   var intentBatchUri_BatchUpdateIntentsRequest: String = js.native
   /** BatchUpdateIntentsRequest intentView. */
   @JSName("intentView")
-  var intentView_BatchUpdateIntentsRequest: IntentView | String = js.native
+  var intentView_BatchUpdateIntentsRequest: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.IntentView * / any */ String) = js.native
   /** BatchUpdateIntentsRequest languageCode. */
   @JSName("languageCode")
   var languageCode_BatchUpdateIntentsRequest: String = js.native

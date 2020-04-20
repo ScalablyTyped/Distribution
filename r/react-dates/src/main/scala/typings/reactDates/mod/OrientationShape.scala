@@ -13,10 +13,8 @@ trait OrientationShape extends js.Object
 
 object OrientationShape {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.reactDates.reactDatesStrings.horizontal = "horizontal".asInstanceOf[typings.reactDates.reactDatesStrings.horizontal]
   @scala.inline
-  def horizontal: typings.reactDates.reactDatesStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.reactDates.reactDatesStrings.vertical = this.cast("vertical")
+  def vertical: typings.reactDates.reactDatesStrings.vertical = "vertical".asInstanceOf[typings.reactDates.reactDatesStrings.vertical]
 }
 

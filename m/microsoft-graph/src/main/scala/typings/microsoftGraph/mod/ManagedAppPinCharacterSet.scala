@@ -12,10 +12,8 @@ trait ManagedAppPinCharacterSet extends js.Object
 
 object ManagedAppPinCharacterSet {
   @scala.inline
-  def alphanumericAndSymbol: typings.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol = this.cast("alphanumericAndSymbol")
+  def alphanumericAndSymbol: typings.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol = "alphanumericAndSymbol".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def numeric: typings.microsoftGraph.microsoftGraphStrings.numeric = this.cast("numeric")
+  def numeric: typings.microsoftGraph.microsoftGraphStrings.numeric = "numeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numeric]
 }
 

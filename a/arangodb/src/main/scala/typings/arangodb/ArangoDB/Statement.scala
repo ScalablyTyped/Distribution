@@ -20,7 +20,6 @@ object Statement {
     setBatchSize: Double => Unit
   ): Statement[T] = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction2(bind), execute = js.Any.fromFunction0(execute), getBatchSize = js.Any.fromFunction0(getBatchSize), setBatchSize = js.Any.fromFunction1(setBatchSize))
-  
     __obj.asInstanceOf[Statement[T]]
   }
 }

@@ -13,7 +13,6 @@ object HTMLCanvasElement {
   @scala.inline
   def apply(transferControlToOffscreen: () => OffscreenCanvas): HTMLCanvasElement = {
     val __obj = js.Dynamic.literal(transferControlToOffscreen = js.Any.fromFunction0(transferControlToOffscreen))
-  
     __obj.asInstanceOf[HTMLCanvasElement]
   }
 }

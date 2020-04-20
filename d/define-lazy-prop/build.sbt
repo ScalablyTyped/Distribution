@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "define-lazy-prop"
-version := "2.0.0-865625"
+version := "2.0.0-753e18"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

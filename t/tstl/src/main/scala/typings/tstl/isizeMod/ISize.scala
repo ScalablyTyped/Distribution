@@ -15,7 +15,6 @@ object ISize {
   @scala.inline
   def apply(size: () => Double): ISize = {
     val __obj = js.Dynamic.literal(size = js.Any.fromFunction0(size))
-  
     __obj.asInstanceOf[ISize]
   }
 }

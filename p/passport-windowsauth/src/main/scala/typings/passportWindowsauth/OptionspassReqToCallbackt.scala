@@ -2,6 +2,7 @@ package typings.passportWindowsauth
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.passportWindowsauth.passportWindowsauthBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined passport-windowsauth.passport-windowsauth.Options & {  passReqToCallback  :true} */
 trait OptionspassReqToCallbackt extends js.Object {
-  var getUserNameFromHeader: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary], String]] = js.undefined
+  var getUserNameFromHeader: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]] = js.undefined
   var integrated: js.UndefOr[Boolean] = js.undefined
   var ldap: js.UndefOr[AnonBase] = js.undefined
   var passReqToCallback: js.UndefOr[Boolean with `true`] = js.undefined
@@ -20,7 +21,7 @@ trait OptionspassReqToCallbackt extends js.Object {
 object OptionspassReqToCallbackt {
   @scala.inline
   def apply(
-    getUserNameFromHeader: /* req */ Request_[ParamsDictionary] => String = null,
+    getUserNameFromHeader: /* req */ Request_[ParamsDictionary, _, _, Query] => String = null,
     integrated: js.UndefOr[Boolean] = js.undefined,
     ldap: AnonBase = null,
     passReqToCallback: js.UndefOr[Boolean with `true`] = js.undefined,

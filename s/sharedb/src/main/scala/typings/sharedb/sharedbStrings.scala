@@ -175,7 +175,7 @@ object sharedbStrings {
   @scala.inline
   def apply: apply = "apply".asInstanceOf[apply]
   @scala.inline
-  def `before op`: `before op` = "before op".asInstanceOf[`before op`]
+  def `before op`: `before op` = ("before op").asInstanceOf[`before op`]
   @scala.inline
   def bf: bf = "bf".asInstanceOf[bf]
   @scala.inline
@@ -225,9 +225,9 @@ object sharedbStrings {
   @scala.inline
   def nf: nf = "nf".asInstanceOf[nf]
   @scala.inline
-  def `no write pending`: `no write pending` = "no write pending".asInstanceOf[`no write pending`]
+  def `no write pending`: `no write pending` = ("no write pending").asInstanceOf[`no write pending`]
   @scala.inline
-  def `nothing pending`: `nothing pending` = "nothing pending".asInstanceOf[`nothing pending`]
+  def `nothing pending`: `nothing pending` = ("nothing pending").asInstanceOf[`nothing pending`]
   @scala.inline
   def nt: nt = "nt".asInstanceOf[nt]
   @scala.inline

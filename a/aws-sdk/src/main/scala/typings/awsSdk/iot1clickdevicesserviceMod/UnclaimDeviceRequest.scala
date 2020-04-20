@@ -16,7 +16,6 @@ object UnclaimDeviceRequest {
   @scala.inline
   def apply(DeviceId: string): UnclaimDeviceRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnclaimDeviceRequest]
   }
 }

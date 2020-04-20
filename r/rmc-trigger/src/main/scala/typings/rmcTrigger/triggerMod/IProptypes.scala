@@ -14,7 +14,6 @@ object IProptypes {
   @scala.inline
   def apply(onClose: () => Unit, onTargetClick: () => Unit, visible: Boolean): IProptypes = {
     val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose), onTargetClick = js.Any.fromFunction0(onTargetClick), visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IProptypes]
   }
 }

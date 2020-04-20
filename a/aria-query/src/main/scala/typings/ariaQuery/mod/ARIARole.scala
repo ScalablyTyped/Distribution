@@ -79,144 +79,142 @@ trait ARIARole extends js.Object
 
 object ARIARole {
   @scala.inline
-  def alert: typings.ariaQuery.ariaQueryStrings.alert = this.cast("alert")
+  def alert: typings.ariaQuery.ariaQueryStrings.alert = "alert".asInstanceOf[typings.ariaQuery.ariaQueryStrings.alert]
   @scala.inline
-  def alertdialog: typings.ariaQuery.ariaQueryStrings.alertdialog = this.cast("alertdialog")
+  def alertdialog: typings.ariaQuery.ariaQueryStrings.alertdialog = "alertdialog".asInstanceOf[typings.ariaQuery.ariaQueryStrings.alertdialog]
   @scala.inline
-  def application: typings.ariaQuery.ariaQueryStrings.application = this.cast("application")
+  def application: typings.ariaQuery.ariaQueryStrings.application = "application".asInstanceOf[typings.ariaQuery.ariaQueryStrings.application]
   @scala.inline
-  def article: typings.ariaQuery.ariaQueryStrings.article = this.cast("article")
+  def article: typings.ariaQuery.ariaQueryStrings.article = "article".asInstanceOf[typings.ariaQuery.ariaQueryStrings.article]
   @scala.inline
-  def banner: typings.ariaQuery.ariaQueryStrings.banner = this.cast("banner")
+  def banner: typings.ariaQuery.ariaQueryStrings.banner = "banner".asInstanceOf[typings.ariaQuery.ariaQueryStrings.banner]
   @scala.inline
-  def button: typings.ariaQuery.ariaQueryStrings.button = this.cast("button")
+  def button: typings.ariaQuery.ariaQueryStrings.button = "button".asInstanceOf[typings.ariaQuery.ariaQueryStrings.button]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cell: typings.ariaQuery.ariaQueryStrings.cell = "cell".asInstanceOf[typings.ariaQuery.ariaQueryStrings.cell]
   @scala.inline
-  def cell: typings.ariaQuery.ariaQueryStrings.cell = this.cast("cell")
+  def checkbox: typings.ariaQuery.ariaQueryStrings.checkbox = "checkbox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.checkbox]
   @scala.inline
-  def checkbox: typings.ariaQuery.ariaQueryStrings.checkbox = this.cast("checkbox")
+  def columnheader: typings.ariaQuery.ariaQueryStrings.columnheader = "columnheader".asInstanceOf[typings.ariaQuery.ariaQueryStrings.columnheader]
   @scala.inline
-  def columnheader: typings.ariaQuery.ariaQueryStrings.columnheader = this.cast("columnheader")
+  def combobox: typings.ariaQuery.ariaQueryStrings.combobox = "combobox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.combobox]
   @scala.inline
-  def combobox: typings.ariaQuery.ariaQueryStrings.combobox = this.cast("combobox")
+  def complementary: typings.ariaQuery.ariaQueryStrings.complementary = "complementary".asInstanceOf[typings.ariaQuery.ariaQueryStrings.complementary]
   @scala.inline
-  def complementary: typings.ariaQuery.ariaQueryStrings.complementary = this.cast("complementary")
+  def contentinfo: typings.ariaQuery.ariaQueryStrings.contentinfo = "contentinfo".asInstanceOf[typings.ariaQuery.ariaQueryStrings.contentinfo]
   @scala.inline
-  def contentinfo: typings.ariaQuery.ariaQueryStrings.contentinfo = this.cast("contentinfo")
+  def definition: typings.ariaQuery.ariaQueryStrings.definition = "definition".asInstanceOf[typings.ariaQuery.ariaQueryStrings.definition]
   @scala.inline
-  def definition: typings.ariaQuery.ariaQueryStrings.definition = this.cast("definition")
+  def dialog: typings.ariaQuery.ariaQueryStrings.dialog = "dialog".asInstanceOf[typings.ariaQuery.ariaQueryStrings.dialog]
   @scala.inline
-  def dialog: typings.ariaQuery.ariaQueryStrings.dialog = this.cast("dialog")
+  def directory: typings.ariaQuery.ariaQueryStrings.directory = "directory".asInstanceOf[typings.ariaQuery.ariaQueryStrings.directory]
   @scala.inline
-  def directory: typings.ariaQuery.ariaQueryStrings.directory = this.cast("directory")
+  def document: typings.ariaQuery.ariaQueryStrings.document = "document".asInstanceOf[typings.ariaQuery.ariaQueryStrings.document]
   @scala.inline
-  def document: typings.ariaQuery.ariaQueryStrings.document = this.cast("document")
+  def feed: typings.ariaQuery.ariaQueryStrings.feed = "feed".asInstanceOf[typings.ariaQuery.ariaQueryStrings.feed]
   @scala.inline
-  def feed: typings.ariaQuery.ariaQueryStrings.feed = this.cast("feed")
+  def figure: typings.ariaQuery.ariaQueryStrings.figure = "figure".asInstanceOf[typings.ariaQuery.ariaQueryStrings.figure]
   @scala.inline
-  def figure: typings.ariaQuery.ariaQueryStrings.figure = this.cast("figure")
+  def form: typings.ariaQuery.ariaQueryStrings.form = "form".asInstanceOf[typings.ariaQuery.ariaQueryStrings.form]
   @scala.inline
-  def form: typings.ariaQuery.ariaQueryStrings.form = this.cast("form")
+  def grid: typings.ariaQuery.ariaQueryStrings.grid = "grid".asInstanceOf[typings.ariaQuery.ariaQueryStrings.grid]
   @scala.inline
-  def grid: typings.ariaQuery.ariaQueryStrings.grid = this.cast("grid")
+  def gridcell: typings.ariaQuery.ariaQueryStrings.gridcell = "gridcell".asInstanceOf[typings.ariaQuery.ariaQueryStrings.gridcell]
   @scala.inline
-  def gridcell: typings.ariaQuery.ariaQueryStrings.gridcell = this.cast("gridcell")
+  def group: typings.ariaQuery.ariaQueryStrings.group = "group".asInstanceOf[typings.ariaQuery.ariaQueryStrings.group]
   @scala.inline
-  def group: typings.ariaQuery.ariaQueryStrings.group = this.cast("group")
+  def heading: typings.ariaQuery.ariaQueryStrings.heading = "heading".asInstanceOf[typings.ariaQuery.ariaQueryStrings.heading]
   @scala.inline
-  def heading: typings.ariaQuery.ariaQueryStrings.heading = this.cast("heading")
+  def img: typings.ariaQuery.ariaQueryStrings.img = "img".asInstanceOf[typings.ariaQuery.ariaQueryStrings.img]
   @scala.inline
-  def img: typings.ariaQuery.ariaQueryStrings.img = this.cast("img")
+  def link: typings.ariaQuery.ariaQueryStrings.link = "link".asInstanceOf[typings.ariaQuery.ariaQueryStrings.link]
   @scala.inline
-  def link: typings.ariaQuery.ariaQueryStrings.link = this.cast("link")
+  def list: typings.ariaQuery.ariaQueryStrings.list = "list".asInstanceOf[typings.ariaQuery.ariaQueryStrings.list]
   @scala.inline
-  def list: typings.ariaQuery.ariaQueryStrings.list = this.cast("list")
+  def listbox: typings.ariaQuery.ariaQueryStrings.listbox = "listbox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.listbox]
   @scala.inline
-  def listbox: typings.ariaQuery.ariaQueryStrings.listbox = this.cast("listbox")
+  def listitem: typings.ariaQuery.ariaQueryStrings.listitem = "listitem".asInstanceOf[typings.ariaQuery.ariaQueryStrings.listitem]
   @scala.inline
-  def listitem: typings.ariaQuery.ariaQueryStrings.listitem = this.cast("listitem")
+  def log: typings.ariaQuery.ariaQueryStrings.log = "log".asInstanceOf[typings.ariaQuery.ariaQueryStrings.log]
   @scala.inline
-  def log: typings.ariaQuery.ariaQueryStrings.log = this.cast("log")
+  def main: typings.ariaQuery.ariaQueryStrings.main = "main".asInstanceOf[typings.ariaQuery.ariaQueryStrings.main]
   @scala.inline
-  def main: typings.ariaQuery.ariaQueryStrings.main = this.cast("main")
+  def marquee: typings.ariaQuery.ariaQueryStrings.marquee = "marquee".asInstanceOf[typings.ariaQuery.ariaQueryStrings.marquee]
   @scala.inline
-  def marquee: typings.ariaQuery.ariaQueryStrings.marquee = this.cast("marquee")
+  def math: typings.ariaQuery.ariaQueryStrings.math = "math".asInstanceOf[typings.ariaQuery.ariaQueryStrings.math]
   @scala.inline
-  def math: typings.ariaQuery.ariaQueryStrings.math = this.cast("math")
+  def menu: typings.ariaQuery.ariaQueryStrings.menu = "menu".asInstanceOf[typings.ariaQuery.ariaQueryStrings.menu]
   @scala.inline
-  def menu: typings.ariaQuery.ariaQueryStrings.menu = this.cast("menu")
+  def menubar: typings.ariaQuery.ariaQueryStrings.menubar = "menubar".asInstanceOf[typings.ariaQuery.ariaQueryStrings.menubar]
   @scala.inline
-  def menubar: typings.ariaQuery.ariaQueryStrings.menubar = this.cast("menubar")
+  def menuitem: typings.ariaQuery.ariaQueryStrings.menuitem = "menuitem".asInstanceOf[typings.ariaQuery.ariaQueryStrings.menuitem]
   @scala.inline
-  def menuitem: typings.ariaQuery.ariaQueryStrings.menuitem = this.cast("menuitem")
+  def menuitemcheckbox: typings.ariaQuery.ariaQueryStrings.menuitemcheckbox = "menuitemcheckbox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.menuitemcheckbox]
   @scala.inline
-  def menuitemcheckbox: typings.ariaQuery.ariaQueryStrings.menuitemcheckbox = this.cast("menuitemcheckbox")
+  def menuitemradio: typings.ariaQuery.ariaQueryStrings.menuitemradio = "menuitemradio".asInstanceOf[typings.ariaQuery.ariaQueryStrings.menuitemradio]
   @scala.inline
-  def menuitemradio: typings.ariaQuery.ariaQueryStrings.menuitemradio = this.cast("menuitemradio")
+  def navigation: typings.ariaQuery.ariaQueryStrings.navigation = "navigation".asInstanceOf[typings.ariaQuery.ariaQueryStrings.navigation]
   @scala.inline
-  def navigation: typings.ariaQuery.ariaQueryStrings.navigation = this.cast("navigation")
+  def none: typings.ariaQuery.ariaQueryStrings.none = "none".asInstanceOf[typings.ariaQuery.ariaQueryStrings.none]
   @scala.inline
-  def none: typings.ariaQuery.ariaQueryStrings.none = this.cast("none")
+  def note: typings.ariaQuery.ariaQueryStrings.note = "note".asInstanceOf[typings.ariaQuery.ariaQueryStrings.note]
   @scala.inline
-  def note: typings.ariaQuery.ariaQueryStrings.note = this.cast("note")
+  def option: typings.ariaQuery.ariaQueryStrings.option = "option".asInstanceOf[typings.ariaQuery.ariaQueryStrings.option]
   @scala.inline
-  def option: typings.ariaQuery.ariaQueryStrings.option = this.cast("option")
+  def presentation: typings.ariaQuery.ariaQueryStrings.presentation = "presentation".asInstanceOf[typings.ariaQuery.ariaQueryStrings.presentation]
   @scala.inline
-  def presentation: typings.ariaQuery.ariaQueryStrings.presentation = this.cast("presentation")
+  def progressbar: typings.ariaQuery.ariaQueryStrings.progressbar = "progressbar".asInstanceOf[typings.ariaQuery.ariaQueryStrings.progressbar]
   @scala.inline
-  def progressbar: typings.ariaQuery.ariaQueryStrings.progressbar = this.cast("progressbar")
+  def radio: typings.ariaQuery.ariaQueryStrings.radio = "radio".asInstanceOf[typings.ariaQuery.ariaQueryStrings.radio]
   @scala.inline
-  def radio: typings.ariaQuery.ariaQueryStrings.radio = this.cast("radio")
+  def radiogroup: typings.ariaQuery.ariaQueryStrings.radiogroup = "radiogroup".asInstanceOf[typings.ariaQuery.ariaQueryStrings.radiogroup]
   @scala.inline
-  def radiogroup: typings.ariaQuery.ariaQueryStrings.radiogroup = this.cast("radiogroup")
+  def region: typings.ariaQuery.ariaQueryStrings.region = "region".asInstanceOf[typings.ariaQuery.ariaQueryStrings.region]
   @scala.inline
-  def region: typings.ariaQuery.ariaQueryStrings.region = this.cast("region")
+  def row: typings.ariaQuery.ariaQueryStrings.row = "row".asInstanceOf[typings.ariaQuery.ariaQueryStrings.row]
   @scala.inline
-  def row: typings.ariaQuery.ariaQueryStrings.row = this.cast("row")
+  def rowgroup: typings.ariaQuery.ariaQueryStrings.rowgroup = "rowgroup".asInstanceOf[typings.ariaQuery.ariaQueryStrings.rowgroup]
   @scala.inline
-  def rowgroup: typings.ariaQuery.ariaQueryStrings.rowgroup = this.cast("rowgroup")
+  def rowheader: typings.ariaQuery.ariaQueryStrings.rowheader = "rowheader".asInstanceOf[typings.ariaQuery.ariaQueryStrings.rowheader]
   @scala.inline
-  def rowheader: typings.ariaQuery.ariaQueryStrings.rowheader = this.cast("rowheader")
+  def scrollbar: typings.ariaQuery.ariaQueryStrings.scrollbar = "scrollbar".asInstanceOf[typings.ariaQuery.ariaQueryStrings.scrollbar]
   @scala.inline
-  def scrollbar: typings.ariaQuery.ariaQueryStrings.scrollbar = this.cast("scrollbar")
+  def search: typings.ariaQuery.ariaQueryStrings.search = "search".asInstanceOf[typings.ariaQuery.ariaQueryStrings.search]
   @scala.inline
-  def search: typings.ariaQuery.ariaQueryStrings.search = this.cast("search")
+  def searchbox: typings.ariaQuery.ariaQueryStrings.searchbox = "searchbox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.searchbox]
   @scala.inline
-  def searchbox: typings.ariaQuery.ariaQueryStrings.searchbox = this.cast("searchbox")
+  def separator: typings.ariaQuery.ariaQueryStrings.separator = "separator".asInstanceOf[typings.ariaQuery.ariaQueryStrings.separator]
   @scala.inline
-  def separator: typings.ariaQuery.ariaQueryStrings.separator = this.cast("separator")
+  def slider: typings.ariaQuery.ariaQueryStrings.slider = "slider".asInstanceOf[typings.ariaQuery.ariaQueryStrings.slider]
   @scala.inline
-  def slider: typings.ariaQuery.ariaQueryStrings.slider = this.cast("slider")
+  def spinbutton: typings.ariaQuery.ariaQueryStrings.spinbutton = "spinbutton".asInstanceOf[typings.ariaQuery.ariaQueryStrings.spinbutton]
   @scala.inline
-  def spinbutton: typings.ariaQuery.ariaQueryStrings.spinbutton = this.cast("spinbutton")
+  def status: typings.ariaQuery.ariaQueryStrings.status = "status".asInstanceOf[typings.ariaQuery.ariaQueryStrings.status]
   @scala.inline
-  def status: typings.ariaQuery.ariaQueryStrings.status = this.cast("status")
+  def switch: typings.ariaQuery.ariaQueryStrings.switch = "switch".asInstanceOf[typings.ariaQuery.ariaQueryStrings.switch]
   @scala.inline
-  def switch: typings.ariaQuery.ariaQueryStrings.switch = this.cast("switch")
+  def tab: typings.ariaQuery.ariaQueryStrings.tab = "tab".asInstanceOf[typings.ariaQuery.ariaQueryStrings.tab]
   @scala.inline
-  def tab: typings.ariaQuery.ariaQueryStrings.tab = this.cast("tab")
+  def table: typings.ariaQuery.ariaQueryStrings.table = "table".asInstanceOf[typings.ariaQuery.ariaQueryStrings.table]
   @scala.inline
-  def table: typings.ariaQuery.ariaQueryStrings.table = this.cast("table")
+  def tablist: typings.ariaQuery.ariaQueryStrings.tablist = "tablist".asInstanceOf[typings.ariaQuery.ariaQueryStrings.tablist]
   @scala.inline
-  def tablist: typings.ariaQuery.ariaQueryStrings.tablist = this.cast("tablist")
+  def tabpanel: typings.ariaQuery.ariaQueryStrings.tabpanel = "tabpanel".asInstanceOf[typings.ariaQuery.ariaQueryStrings.tabpanel]
   @scala.inline
-  def tabpanel: typings.ariaQuery.ariaQueryStrings.tabpanel = this.cast("tabpanel")
+  def term: typings.ariaQuery.ariaQueryStrings.term = "term".asInstanceOf[typings.ariaQuery.ariaQueryStrings.term]
   @scala.inline
-  def term: typings.ariaQuery.ariaQueryStrings.term = this.cast("term")
+  def textbox: typings.ariaQuery.ariaQueryStrings.textbox = "textbox".asInstanceOf[typings.ariaQuery.ariaQueryStrings.textbox]
   @scala.inline
-  def textbox: typings.ariaQuery.ariaQueryStrings.textbox = this.cast("textbox")
+  def timer: typings.ariaQuery.ariaQueryStrings.timer = "timer".asInstanceOf[typings.ariaQuery.ariaQueryStrings.timer]
   @scala.inline
-  def timer: typings.ariaQuery.ariaQueryStrings.timer = this.cast("timer")
+  def toolbar: typings.ariaQuery.ariaQueryStrings.toolbar = "toolbar".asInstanceOf[typings.ariaQuery.ariaQueryStrings.toolbar]
   @scala.inline
-  def toolbar: typings.ariaQuery.ariaQueryStrings.toolbar = this.cast("toolbar")
+  def tooltip: typings.ariaQuery.ariaQueryStrings.tooltip = "tooltip".asInstanceOf[typings.ariaQuery.ariaQueryStrings.tooltip]
   @scala.inline
-  def tooltip: typings.ariaQuery.ariaQueryStrings.tooltip = this.cast("tooltip")
+  def tree: typings.ariaQuery.ariaQueryStrings.tree = "tree".asInstanceOf[typings.ariaQuery.ariaQueryStrings.tree]
   @scala.inline
-  def tree: typings.ariaQuery.ariaQueryStrings.tree = this.cast("tree")
+  def treegrid: typings.ariaQuery.ariaQueryStrings.treegrid = "treegrid".asInstanceOf[typings.ariaQuery.ariaQueryStrings.treegrid]
   @scala.inline
-  def treegrid: typings.ariaQuery.ariaQueryStrings.treegrid = this.cast("treegrid")
-  @scala.inline
-  def treeitem: typings.ariaQuery.ariaQueryStrings.treeitem = this.cast("treeitem")
+  def treeitem: typings.ariaQuery.ariaQueryStrings.treeitem = "treeitem".asInstanceOf[typings.ariaQuery.ariaQueryStrings.treeitem]
 }
 

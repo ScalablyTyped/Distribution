@@ -16,7 +16,6 @@ object GetScalingPlanResourceForecastDataResponse {
   @scala.inline
   def apply(Datapoints: Datapoints): GetScalingPlanResourceForecastDataResponse = {
     val __obj = js.Dynamic.literal(Datapoints = Datapoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetScalingPlanResourceForecastDataResponse]
   }
 }

@@ -57,7 +57,6 @@ object ReaderSelection {
   @scala.inline
   def ReaderCondition(condition: String, kind: String, passingValue: Boolean, selections: js.Array[ReaderSelection]): ReaderSelection = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], passingValue = passingValue.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReaderSelection]
   }
   @scala.inline
@@ -78,7 +77,6 @@ object ReaderSelection {
   @scala.inline
   def ReaderClientExtension(kind: String, selections: js.Array[ReaderSelection]): ReaderSelection = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReaderSelection]
   }
   @scala.inline

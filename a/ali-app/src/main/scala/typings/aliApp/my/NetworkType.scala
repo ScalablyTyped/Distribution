@@ -17,20 +17,18 @@ trait NetworkType extends js.Object
 
 object NetworkType {
   @scala.inline
-  def `2G`: typings.aliApp.aliAppStrings.`2G` = this.cast("2G")
+  def `2G`: typings.aliApp.aliAppStrings.`2G` = "2G".asInstanceOf[typings.aliApp.aliAppStrings.`2G`]
   @scala.inline
-  def `3G`: typings.aliApp.aliAppStrings.`3G` = this.cast("3G")
+  def `3G`: typings.aliApp.aliAppStrings.`3G` = "3G".asInstanceOf[typings.aliApp.aliAppStrings.`3G`]
   @scala.inline
-  def `4G`: typings.aliApp.aliAppStrings.`4G` = this.cast("4G")
+  def `4G`: typings.aliApp.aliAppStrings.`4G` = "4G".asInstanceOf[typings.aliApp.aliAppStrings.`4G`]
   @scala.inline
-  def NOTREACHABLE: typings.aliApp.aliAppStrings.NOTREACHABLE = this.cast("NOTREACHABLE")
+  def NOTREACHABLE: typings.aliApp.aliAppStrings.NOTREACHABLE = "NOTREACHABLE".asInstanceOf[typings.aliApp.aliAppStrings.NOTREACHABLE]
   @scala.inline
-  def UNKNOWN: typings.aliApp.aliAppStrings.UNKNOWN = this.cast("UNKNOWN")
+  def UNKNOWN: typings.aliApp.aliAppStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.aliApp.aliAppStrings.UNKNOWN]
   @scala.inline
-  def WIFI: typings.aliApp.aliAppStrings.WIFI = this.cast("WIFI")
+  def WIFI: typings.aliApp.aliAppStrings.WIFI = "WIFI".asInstanceOf[typings.aliApp.aliAppStrings.WIFI]
   @scala.inline
-  def WWAN: typings.aliApp.aliAppStrings.WWAN = this.cast("WWAN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WWAN: typings.aliApp.aliAppStrings.WWAN = "WWAN".asInstanceOf[typings.aliApp.aliAppStrings.WWAN]
 }
 

@@ -24,7 +24,6 @@ object AttributeKey {
   @scala.inline
   def apply(FacetName: FacetName, Name: AttributeName, SchemaArn: Arn): AttributeKey = {
     val __obj = js.Dynamic.literal(FacetName = FacetName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttributeKey]
   }
 }

@@ -16,14 +16,12 @@ trait Position extends js.Object
 
 object Position {
   @scala.inline
-  def ABOVE: `1` = this.cast(1)
+  def ABOVE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def BELOW: `2` = this.cast(2)
+  def BELOW: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def LEFT: `1` = this.cast(1)
+  def LEFT: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def RIGHT: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RIGHT: `0` = 0.asInstanceOf[`0`]
 }
 

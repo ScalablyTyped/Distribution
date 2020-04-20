@@ -129,7 +129,7 @@ object motionBlurPostProcessMod extends js.Object {
     /**
       * Gets the number of iterations are used for motion blur quality. Default value is equal to 32
       */
-    def motionBlurSamples(): Double = js.native
+    def motionBlurSamples: Double = js.native
     /**
       * Sets the number of iterations to be used for motion blur quality
       */

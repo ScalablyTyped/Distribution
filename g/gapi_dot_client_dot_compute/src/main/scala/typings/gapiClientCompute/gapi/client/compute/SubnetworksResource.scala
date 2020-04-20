@@ -39,7 +39,6 @@ object SubnetworksResource {
     setPrivateIpGoogleAccess: AnonSubnetwork => Request_[Operation]
   ): SubnetworksResource = {
     val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), expandIpCidrRange = js.Any.fromFunction1(expandIpCidrRange), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setPrivateIpGoogleAccess = js.Any.fromFunction1(setPrivateIpGoogleAccess))
-  
     __obj.asInstanceOf[SubnetworksResource]
   }
 }

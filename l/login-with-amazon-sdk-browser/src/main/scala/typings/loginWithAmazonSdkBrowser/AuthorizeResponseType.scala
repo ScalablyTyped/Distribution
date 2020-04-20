@@ -12,10 +12,8 @@ trait AuthorizeResponseType extends js.Object
 
 object AuthorizeResponseType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code = "code".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code]
   @scala.inline
-  def code: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code = this.cast("code")
-  @scala.inline
-  def token: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.token = this.cast("token")
+  def token: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.token = "token".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.token]
 }
 

@@ -16,7 +16,6 @@ object DescribeTagsInput {
   @scala.inline
   def apply(LoadBalancerNames: LoadBalancerNamesMax20): DescribeTagsInput = {
     val __obj = js.Dynamic.literal(LoadBalancerNames = LoadBalancerNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTagsInput]
   }
 }

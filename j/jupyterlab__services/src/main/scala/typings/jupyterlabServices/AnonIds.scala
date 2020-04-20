@@ -14,7 +14,6 @@ object AnonIds {
   @scala.inline
   def apply(ids: js.Array[String], values: js.Array[IPlugin]): AnonIds = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIds]
   }
 }

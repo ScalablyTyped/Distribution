@@ -20,7 +20,6 @@ object TransformS3DataSource {
   @scala.inline
   def apply(S3DataType: S3DataType, S3Uri: S3Uri): TransformS3DataSource = {
     val __obj = js.Dynamic.literal(S3DataType = S3DataType.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransformS3DataSource]
   }
 }

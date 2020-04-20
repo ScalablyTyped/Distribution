@@ -33,7 +33,6 @@ object ResyncMFADeviceRequest {
     UserName: existingUserNameType
   ): ResyncMFADeviceRequest = {
     val __obj = js.Dynamic.literal(AuthenticationCode1 = AuthenticationCode1.asInstanceOf[js.Any], AuthenticationCode2 = AuthenticationCode2.asInstanceOf[js.Any], SerialNumber = SerialNumber.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResyncMFADeviceRequest]
   }
 }

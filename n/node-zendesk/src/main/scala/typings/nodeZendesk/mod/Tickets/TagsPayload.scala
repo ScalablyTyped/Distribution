@@ -12,7 +12,6 @@ object TagsPayload {
   @scala.inline
   def apply(tags: js.Array[String]): TagsPayload = {
     val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagsPayload]
   }
 }

@@ -14,7 +14,6 @@ object EffectParams {
   @scala.inline
   def apply(screen: ScaledSize, window: ScaledSize): EffectParams = {
     val __obj = js.Dynamic.literal(screen = screen.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EffectParams]
   }
 }

@@ -31,7 +31,6 @@ object EditableItem {
     supports: String
   ): EditableItem = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supports = supports.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditableItem]
   }
 }

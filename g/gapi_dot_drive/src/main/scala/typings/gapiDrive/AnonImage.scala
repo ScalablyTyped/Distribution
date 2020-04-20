@@ -14,7 +14,6 @@ object AnonImage {
   @scala.inline
   def apply(image: Uint8Array, mimType: String): AnonImage = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], mimType = mimType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonImage]
   }
 }

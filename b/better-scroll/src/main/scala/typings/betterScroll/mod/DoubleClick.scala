@@ -12,7 +12,6 @@ object DoubleClick {
   @scala.inline
   def apply(delay: Double): DoubleClick = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DoubleClick]
   }
 }

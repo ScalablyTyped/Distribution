@@ -17,7 +17,6 @@ object Mp3Source {
   @scala.inline
   def apply(artist: String, title: String, url: String): Mp3Source = {
     val __obj = js.Dynamic.literal(artist = artist.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Mp3Source]
   }
 }

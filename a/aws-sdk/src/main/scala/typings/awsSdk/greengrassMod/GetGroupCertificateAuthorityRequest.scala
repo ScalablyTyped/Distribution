@@ -20,7 +20,6 @@ object GetGroupCertificateAuthorityRequest {
   @scala.inline
   def apply(CertificateAuthorityId: string, GroupId: string): GetGroupCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityId = CertificateAuthorityId.asInstanceOf[js.Any], GroupId = GroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGroupCertificateAuthorityRequest]
   }
 }

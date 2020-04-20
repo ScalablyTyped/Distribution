@@ -70,16 +70,16 @@ class LoggerRegistry_ protected () extends ILoggerRegistry {
     * Whether the register is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MLoggerRegistry_(): Boolean = js.native
+  def isDisposed_MLoggerRegistry_ : Boolean = js.native
   /**
     * The max length for loggers.
     */
-  def maxLength(): Double = js.native
+  def maxLength: Double = js.native
   def maxLength(value: Double): js.Any = js.native
   /**
     * A signal emitted when the logger registry changes.
     */
   @JSName("registryChanged")
-  def registryChanged_MLoggerRegistry_(): ISignal[this.type, ILoggerRegistryChange] = js.native
+  def registryChanged_MLoggerRegistry_ : ISignal[this.type, ILoggerRegistryChange] = js.native
 }
 

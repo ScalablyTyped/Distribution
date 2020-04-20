@@ -24,7 +24,6 @@ object LongTermKeyData {
     secretKey: String
   ): LongTermKeyData = {
     val __obj = js.Dynamic.literal(accessKey = accessKey.asInstanceOf[js.Any], alksAccount = alksAccount.asInstanceOf[js.Any], alksRole = alksRole.asInstanceOf[js.Any], iamUserArn = iamUserArn.asInstanceOf[js.Any], iamUserName = iamUserName.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LongTermKeyData]
   }
 }

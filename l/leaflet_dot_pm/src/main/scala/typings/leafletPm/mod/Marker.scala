@@ -12,7 +12,6 @@ object Marker {
   @scala.inline
   def apply(pm: typings.leafletPm.mod.PM.Edit.Marker): Marker = {
     val __obj = js.Dynamic.literal(pm = pm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Marker]
   }
 }

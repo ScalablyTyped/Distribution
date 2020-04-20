@@ -45,7 +45,6 @@ object RelationshipLabels {
     top: String
   ): RelationshipLabels = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), left = left.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RelationshipLabels]
   }
 }

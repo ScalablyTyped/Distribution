@@ -50,7 +50,6 @@ object TimelineFeedResponseInjected {
     view_tags: js.Array[_]
   ): TimelineFeedResponseInjected = {
     val __obj = js.Dynamic.literal(about_ad_params = about_ad_params.asInstanceOf[js.Any], ad_id = ad_id.asInstanceOf[js.Any], ad_title = ad_title.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], direct_share = direct_share.asInstanceOf[js.Any], display_viewability_eligible = display_viewability_eligible.asInstanceOf[js.Any], hide_flow_type = hide_flow_type.asInstanceOf[js.Any], hide_label = hide_label.asInstanceOf[js.Any], hide_reasons_v2 = hide_reasons_v2.asInstanceOf[js.Any], invalidation = invalidation.asInstanceOf[js.Any], is_demo = is_demo.asInstanceOf[js.Any], is_holdout = is_holdout.asInstanceOf[js.Any], is_leadgen_native_eligible = is_leadgen_native_eligible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], lead_gen_form_id = lead_gen_form_id.asInstanceOf[js.Any], show_ad_choices = show_ad_choices.asInstanceOf[js.Any], show_icon = show_icon.asInstanceOf[js.Any], tracking_token = tracking_token.asInstanceOf[js.Any], view_tags = view_tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimelineFeedResponseInjected]
   }
 }

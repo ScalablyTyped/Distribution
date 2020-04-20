@@ -12,7 +12,6 @@ object Vocabulary {
   @scala.inline
   def apply(_steps: js.Array[String]): Vocabulary = {
     val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Vocabulary]
   }
 }

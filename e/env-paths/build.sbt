@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "env-paths"
-version := "2.2.0-7d5520"
+version := "2.2.0-8e5aaf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

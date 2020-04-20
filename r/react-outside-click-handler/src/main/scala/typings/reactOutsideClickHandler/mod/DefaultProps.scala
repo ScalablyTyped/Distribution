@@ -23,7 +23,6 @@ object DefaultProps {
     useCapture: Boolean
   ): DefaultProps = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], useCapture = useCapture.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultProps]
   }
 }

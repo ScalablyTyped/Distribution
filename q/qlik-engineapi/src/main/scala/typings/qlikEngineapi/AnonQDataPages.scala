@@ -15,7 +15,6 @@ object AnonQDataPages {
   @scala.inline
   def apply(qAxisData: js.Array[INxAxisData], qDataPages: INxDataPage): AnonQDataPages = {
     val __obj = js.Dynamic.literal(qAxisData = qAxisData.asInstanceOf[js.Any], qDataPages = qDataPages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQDataPages]
   }
 }

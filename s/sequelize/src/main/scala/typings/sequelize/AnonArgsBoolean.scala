@@ -13,7 +13,6 @@ object AnonArgsBoolean {
   @scala.inline
   def apply(args: Boolean, msg: String): AnonArgsBoolean = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArgsBoolean]
   }
 }

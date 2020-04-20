@@ -16,12 +16,10 @@ trait XlPlatform extends js.Object
 
 object XlPlatform {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlMSDOS: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlMSDOS: `3` = this.cast(3)
+  def xlMacintosh: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlMacintosh: `1` = this.cast(1)
-  @scala.inline
-  def xlWindows: `2` = this.cast(2)
+  def xlWindows: `2` = 2.asInstanceOf[`2`]
 }
 

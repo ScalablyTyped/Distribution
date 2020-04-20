@@ -36,7 +36,6 @@ object Recordgunrootidbackontagg {
     tag: js.Any
   ): Recordgunrootidbackontagg = {
     val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], ack = ack.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], gun = gun.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], soul = soul.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Recordgunrootidbackontagg]
   }
 }

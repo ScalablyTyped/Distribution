@@ -22,7 +22,6 @@ object TranscodeResult {
   @scala.inline
   def apply(fileInfo: BasisFileInfo, format: Double): TranscodeResult = {
     val __obj = js.Dynamic.literal(fileInfo = fileInfo.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TranscodeResult]
   }
 }

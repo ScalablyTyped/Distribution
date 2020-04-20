@@ -34,7 +34,6 @@ object AnonACCEPTEDBODYTYPES {
     TAG_LENGTH: Double
   ): AnonACCEPTEDBODYTYPES = {
     val __obj = js.Dynamic.literal(ACCEPTED_BODY_TYPES = ACCEPTED_BODY_TYPES.asInstanceOf[js.Any], ALLOWED_METHODS = ALLOWED_METHODS.asInstanceOf[js.Any], CONFIGURATION_ERROR = CONFIGURATION_ERROR.asInstanceOf[js.Any], MAX_FORWARDS = MAX_FORWARDS.asInstanceOf[js.Any], NETWORK_ERROR = NETWORK_ERROR.asInstanceOf[js.Any], STATUS_INIT = STATUS_INIT.asInstanceOf[js.Any], STATUS_NOT_READY = STATUS_NOT_READY.asInstanceOf[js.Any], STATUS_READY = STATUS_READY.asInstanceOf[js.Any], STATUS_STARTING = STATUS_STARTING.asInstanceOf[js.Any], STATUS_USER_CLOSED = STATUS_USER_CLOSED.asInstanceOf[js.Any], TAG_LENGTH = TAG_LENGTH.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonACCEPTEDBODYTYPES]
   }
 }

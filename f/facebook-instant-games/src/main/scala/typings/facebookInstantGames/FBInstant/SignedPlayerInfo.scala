@@ -44,7 +44,6 @@ object SignedPlayerInfo {
   @scala.inline
   def apply(getPlayerID: () => String, getSignature: () => String): SignedPlayerInfo = {
     val __obj = js.Dynamic.literal(getPlayerID = js.Any.fromFunction0(getPlayerID), getSignature = js.Any.fromFunction0(getSignature))
-  
     __obj.asInstanceOf[SignedPlayerInfo]
   }
 }

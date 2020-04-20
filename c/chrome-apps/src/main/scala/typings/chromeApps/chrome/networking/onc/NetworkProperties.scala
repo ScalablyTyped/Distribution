@@ -5,8 +5,8 @@ import typings.chromeApps.AnonSignalStrength
 import typings.chromeApps.AnonType
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.networking.onc.internal.NetworkConfigBase
-import typings.chromeApps.chromeAppsStrings.Device
 import typings.chromeApps.chromeAppsStrings.DevicePolicy
+import typings.chromeApps.chromeAppsStrings.Device_
 import typings.chromeApps.chromeAppsStrings.None
 import typings.chromeApps.chromeAppsStrings.User
 import typings.chromeApps.chromeAppsStrings.UserPolicy
@@ -61,7 +61,7 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */] ext
     * 'None' conflicts with extension code generation,
     * so we must use a string for 'Source' instead of a SourceType enum.
     */
-  var Source: js.UndefOr[Device | DevicePolicy | User | UserPolicy | None] = js.undefined
+  var Source: js.UndefOr[Device_ | DevicePolicy | User | UserPolicy | None] = js.undefined
   /** The network's static IP configuration. */
   var StaticIPConfig: js.UndefOr[
     IPConfigProperties[
@@ -106,7 +106,7 @@ object NetworkProperties {
       js.Array[String] | ManagedDOMStringList, 
       integer | ManagedLong
     ] = null,
-    Source: Device | DevicePolicy | User | UserPolicy | None = null,
+    Source: Device_ | DevicePolicy | User | UserPolicy | None = null,
     StaticIPConfig: IPConfigProperties[
       M, 
       Boolean | ManagedBoolean, 

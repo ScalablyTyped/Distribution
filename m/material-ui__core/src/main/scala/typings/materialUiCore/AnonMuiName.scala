@@ -13,7 +13,6 @@ object AnonMuiName {
   @scala.inline
   def apply(muiName: String): AnonMuiName = {
     val __obj = js.Dynamic.literal(muiName = muiName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMuiName]
   }
 }

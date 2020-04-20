@@ -12,7 +12,6 @@ object UsersUnfollowParams {
   @scala.inline
   def apply(username: String): UsersUnfollowParams = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsersUnfollowParams]
   }
 }

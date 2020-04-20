@@ -49,7 +49,6 @@ object bezierutils {
     tAtLength: (js.Array[Double], Double) => Double
   ): bezierutils = {
     val __obj = js.Dynamic.literal(computeLength = js.Any.fromFunction1(computeLength), distance = js.Any.fromFunction4(distance), splitBezierAtT = js.Any.fromFunction2(splitBezierAtT), tAtLength = js.Any.fromFunction2(tAtLength))
-  
     __obj.asInstanceOf[bezierutils]
   }
 }

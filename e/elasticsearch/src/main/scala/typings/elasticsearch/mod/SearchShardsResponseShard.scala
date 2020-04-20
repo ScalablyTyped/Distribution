@@ -27,7 +27,6 @@ object SearchShardsResponseShard {
     state: String
   ): SearchShardsResponseShard = {
     val __obj = js.Dynamic.literal(allocation_id = allocation_id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], relocating_node = relocating_node.asInstanceOf[js.Any], share = share.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchShardsResponseShard]
   }
 }

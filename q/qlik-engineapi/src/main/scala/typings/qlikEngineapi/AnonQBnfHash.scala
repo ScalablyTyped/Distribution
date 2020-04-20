@@ -12,7 +12,6 @@ object AnonQBnfHash {
   @scala.inline
   def apply(qBnfHash: String): AnonQBnfHash = {
     val __obj = js.Dynamic.literal(qBnfHash = qBnfHash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQBnfHash]
   }
 }

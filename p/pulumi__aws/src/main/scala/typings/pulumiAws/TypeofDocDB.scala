@@ -13,7 +13,6 @@ object TypeofDocDB {
   @scala.inline
   def apply(Types: TypeofDocDB): TypeofDocDB = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDocDB]
   }
 }

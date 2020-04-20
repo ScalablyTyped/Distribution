@@ -17,14 +17,12 @@ trait Placement extends js.Object
 
 object Placement {
   @scala.inline
-  def bottom: typings.luminoDatagrid.luminoDatagridStrings.bottom = this.cast("bottom")
+  def bottom: typings.luminoDatagrid.luminoDatagridStrings.bottom = "bottom".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
   @scala.inline
-  def left: typings.luminoDatagrid.luminoDatagridStrings.left = this.cast("left")
+  def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
   @scala.inline
-  def right: typings.luminoDatagrid.luminoDatagridStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.luminoDatagrid.luminoDatagridStrings.top = this.cast("top")
+  def top: typings.luminoDatagrid.luminoDatagridStrings.top = "top".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.top]
 }
 

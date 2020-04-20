@@ -22,7 +22,6 @@ object AnonArgs {
     selector: AnonTypeString
   ): AnonArgs = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArgs]
   }
 }

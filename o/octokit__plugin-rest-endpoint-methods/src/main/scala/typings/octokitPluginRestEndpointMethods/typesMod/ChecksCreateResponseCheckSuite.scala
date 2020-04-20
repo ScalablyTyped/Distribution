@@ -12,7 +12,6 @@ object ChecksCreateResponseCheckSuite {
   @scala.inline
   def apply(id: Double): ChecksCreateResponseCheckSuite = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChecksCreateResponseCheckSuite]
   }
 }

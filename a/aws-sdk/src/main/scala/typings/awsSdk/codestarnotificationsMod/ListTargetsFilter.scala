@@ -20,7 +20,6 @@ object ListTargetsFilter {
   @scala.inline
   def apply(Name: ListTargetsFilterName, Value: ListTargetsFilterValue): ListTargetsFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTargetsFilter]
   }
 }

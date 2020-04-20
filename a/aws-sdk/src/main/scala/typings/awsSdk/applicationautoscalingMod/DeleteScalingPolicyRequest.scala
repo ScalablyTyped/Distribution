@@ -33,7 +33,6 @@ object DeleteScalingPolicyRequest {
     ServiceNamespace: ServiceNamespace
   ): DeleteScalingPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any], ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteScalingPolicyRequest]
   }
 }

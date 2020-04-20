@@ -16,7 +16,6 @@ object DeleteAliasInput {
   @scala.inline
   def apply(AliasId: AliasIdOrArn): DeleteAliasInput = {
     val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAliasInput]
   }
 }

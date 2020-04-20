@@ -14,7 +14,6 @@ object Words {
   @scala.inline
   def apply(words: js.Array[Word]): Words = {
     val __obj = js.Dynamic.literal(words = words.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Words]
   }
 }

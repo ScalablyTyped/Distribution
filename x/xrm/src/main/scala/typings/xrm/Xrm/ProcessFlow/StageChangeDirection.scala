@@ -16,10 +16,8 @@ trait StageChangeDirection extends js.Object
 
 object StageChangeDirection {
   @scala.inline
-  def Next: typings.xrm.xrmStrings.Next = this.cast("Next")
+  def Next: typings.xrm.xrmStrings.Next = "Next".asInstanceOf[typings.xrm.xrmStrings.Next]
   @scala.inline
-  def Previous: typings.xrm.xrmStrings.Previous = this.cast("Previous")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Previous: typings.xrm.xrmStrings.Previous = "Previous".asInstanceOf[typings.xrm.xrmStrings.Previous]
 }
 

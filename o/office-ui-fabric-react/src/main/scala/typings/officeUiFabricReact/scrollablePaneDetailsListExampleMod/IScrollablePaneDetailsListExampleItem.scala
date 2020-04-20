@@ -26,7 +26,6 @@ object IScrollablePaneDetailsListExampleItem {
     test6: String
   ): IScrollablePaneDetailsListExampleItem = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], test1 = test1.asInstanceOf[js.Any], test2 = test2.asInstanceOf[js.Any], test3 = test3.asInstanceOf[js.Any], test4 = test4.asInstanceOf[js.Any], test5 = test5.asInstanceOf[js.Any], test6 = test6.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IScrollablePaneDetailsListExampleItem]
   }
 }

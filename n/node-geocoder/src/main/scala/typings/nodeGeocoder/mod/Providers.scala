@@ -22,30 +22,28 @@ trait Providers extends js.Object
 
 object Providers {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def datasciencetoolkit: typings.nodeGeocoder.nodeGeocoderStrings.datasciencetoolkit = "datasciencetoolkit".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.datasciencetoolkit]
   @scala.inline
-  def datasciencetoolkit: typings.nodeGeocoder.nodeGeocoderStrings.datasciencetoolkit = this.cast("datasciencetoolkit")
+  def freegeoip: typings.nodeGeocoder.nodeGeocoderStrings.freegeoip = "freegeoip".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.freegeoip]
   @scala.inline
-  def freegeoip: typings.nodeGeocoder.nodeGeocoderStrings.freegeoip = this.cast("freegeoip")
+  def geocodio: typings.nodeGeocoder.nodeGeocoderStrings.geocodio = "geocodio".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.geocodio]
   @scala.inline
-  def geocodio: typings.nodeGeocoder.nodeGeocoderStrings.geocodio = this.cast("geocodio")
+  def locationiq: typings.nodeGeocoder.nodeGeocoderStrings.locationiq = "locationiq".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.locationiq]
   @scala.inline
-  def locationiq: typings.nodeGeocoder.nodeGeocoderStrings.locationiq = this.cast("locationiq")
+  def mapquest: typings.nodeGeocoder.nodeGeocoderStrings.mapquest = "mapquest".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.mapquest]
   @scala.inline
-  def mapquest: typings.nodeGeocoder.nodeGeocoderStrings.mapquest = this.cast("mapquest")
+  def nominatimmapquest: typings.nodeGeocoder.nodeGeocoderStrings.nominatimmapquest = "nominatimmapquest".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.nominatimmapquest]
   @scala.inline
-  def nominatimmapquest: typings.nodeGeocoder.nodeGeocoderStrings.nominatimmapquest = this.cast("nominatimmapquest")
+  def opencage: typings.nodeGeocoder.nodeGeocoderStrings.opencage = "opencage".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.opencage]
   @scala.inline
-  def opencage: typings.nodeGeocoder.nodeGeocoderStrings.opencage = this.cast("opencage")
+  def openmapquest: typings.nodeGeocoder.nodeGeocoderStrings.openmapquest = "openmapquest".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.openmapquest]
   @scala.inline
-  def openmapquest: typings.nodeGeocoder.nodeGeocoderStrings.openmapquest = this.cast("openmapquest")
+  def pickpoint: typings.nodeGeocoder.nodeGeocoderStrings.pickpoint = "pickpoint".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.pickpoint]
   @scala.inline
-  def pickpoint: typings.nodeGeocoder.nodeGeocoderStrings.pickpoint = this.cast("pickpoint")
+  def teleport: typings.nodeGeocoder.nodeGeocoderStrings.teleport = "teleport".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.teleport]
   @scala.inline
-  def teleport: typings.nodeGeocoder.nodeGeocoderStrings.teleport = this.cast("teleport")
+  def tomtom: typings.nodeGeocoder.nodeGeocoderStrings.tomtom = "tomtom".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.tomtom]
   @scala.inline
-  def tomtom: typings.nodeGeocoder.nodeGeocoderStrings.tomtom = this.cast("tomtom")
-  @scala.inline
-  def yandex: typings.nodeGeocoder.nodeGeocoderStrings.yandex = this.cast("yandex")
+  def yandex: typings.nodeGeocoder.nodeGeocoderStrings.yandex = "yandex".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.yandex]
 }
 

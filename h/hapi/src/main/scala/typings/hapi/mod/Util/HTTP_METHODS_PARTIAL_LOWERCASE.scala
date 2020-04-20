@@ -22,18 +22,16 @@ trait HTTP_METHODS_PARTIAL_LOWERCASE extends js.Object
 
 object HTTP_METHODS_PARTIAL_LOWERCASE {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def delete: delete_ = this.cast("delete")
+  def get: get_ = "get".asInstanceOf[get_]
   @scala.inline
-  def get: get_ = this.cast("get")
+  def options: options_ = "options".asInstanceOf[options_]
   @scala.inline
-  def options: options_ = this.cast("options")
+  def patch: patch_ = "patch".asInstanceOf[patch_]
   @scala.inline
-  def patch: patch_ = this.cast("patch")
+  def post: post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def post: post_ = this.cast("post")
-  @scala.inline
-  def put: put_ = this.cast("put")
+  def put: put_ = "put".asInstanceOf[put_]
 }
 

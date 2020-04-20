@@ -29,7 +29,6 @@ object TeamMemberCapacity {
     url: String
   ): TeamMemberCapacity = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], activities = activities.asInstanceOf[js.Any], daysOff = daysOff.asInstanceOf[js.Any], teamMember = teamMember.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamMemberCapacity]
   }
 }

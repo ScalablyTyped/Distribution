@@ -20,7 +20,6 @@ object GetDomainStatisticsReportResponse {
   @scala.inline
   def apply(DailyVolumes: DailyVolumes, OverallVolume: OverallVolume): GetDomainStatisticsReportResponse = {
     val __obj = js.Dynamic.literal(DailyVolumes = DailyVolumes.asInstanceOf[js.Any], OverallVolume = OverallVolume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainStatisticsReportResponse]
   }
 }

@@ -15,7 +15,6 @@ object ShareVideo {
   @scala.inline
   def apply(localUrl: String): ShareVideo = {
     val __obj = js.Dynamic.literal(localUrl = localUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShareVideo]
   }
 }

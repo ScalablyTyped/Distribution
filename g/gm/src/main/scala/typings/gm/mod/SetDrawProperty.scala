@@ -14,10 +14,8 @@ trait SetDrawProperty extends js.Object
 
 object SetDrawProperty {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def color: color_ = "color".asInstanceOf[color_]
   @scala.inline
-  def color: color_ = this.cast("color")
-  @scala.inline
-  def matte: matte_ = this.cast("matte")
+  def matte: matte_ = "matte".asInstanceOf[matte_]
 }
 

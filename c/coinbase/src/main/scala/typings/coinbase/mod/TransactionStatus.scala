@@ -17,20 +17,18 @@ trait TransactionStatus extends js.Object
 
 object TransactionStatus {
   @scala.inline
-  def canceled: typings.coinbase.coinbaseStrings.canceled = this.cast("canceled")
+  def canceled: typings.coinbase.coinbaseStrings.canceled = "canceled".asInstanceOf[typings.coinbase.coinbaseStrings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def completed: typings.coinbase.coinbaseStrings.completed = "completed".asInstanceOf[typings.coinbase.coinbaseStrings.completed]
   @scala.inline
-  def completed: typings.coinbase.coinbaseStrings.completed = this.cast("completed")
+  def expired: typings.coinbase.coinbaseStrings.expired = "expired".asInstanceOf[typings.coinbase.coinbaseStrings.expired]
   @scala.inline
-  def expired: typings.coinbase.coinbaseStrings.expired = this.cast("expired")
+  def failed: typings.coinbase.coinbaseStrings.failed = "failed".asInstanceOf[typings.coinbase.coinbaseStrings.failed]
   @scala.inline
-  def failed: typings.coinbase.coinbaseStrings.failed = this.cast("failed")
+  def pending: typings.coinbase.coinbaseStrings.pending = "pending".asInstanceOf[typings.coinbase.coinbaseStrings.pending]
   @scala.inline
-  def pending: typings.coinbase.coinbaseStrings.pending = this.cast("pending")
+  def waiting_for_clearing: typings.coinbase.coinbaseStrings.waiting_for_clearing = "waiting_for_clearing".asInstanceOf[typings.coinbase.coinbaseStrings.waiting_for_clearing]
   @scala.inline
-  def waiting_for_clearing: typings.coinbase.coinbaseStrings.waiting_for_clearing = this.cast("waiting_for_clearing")
-  @scala.inline
-  def waiting_for_signature: typings.coinbase.coinbaseStrings.waiting_for_signature = this.cast("waiting_for_signature")
+  def waiting_for_signature: typings.coinbase.coinbaseStrings.waiting_for_signature = "waiting_for_signature".asInstanceOf[typings.coinbase.coinbaseStrings.waiting_for_signature]
 }
 

@@ -12,10 +12,8 @@ trait RTCRtcpMuxPolicy extends js.Object
 
 object RTCRtcpMuxPolicy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def negotiate: typings.std.stdStrings.negotiate = "negotiate".asInstanceOf[typings.std.stdStrings.negotiate]
   @scala.inline
-  def negotiate: typings.std.stdStrings.negotiate = this.cast("negotiate")
-  @scala.inline
-  def require: typings.std.stdStrings.require = this.cast("require")
+  def require: typings.std.stdStrings.require = "require".asInstanceOf[typings.std.stdStrings.require]
 }
 

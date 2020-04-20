@@ -24,7 +24,6 @@ object IResultCommand {
   @scala.inline
   def apply(execute: () => js.Any, onError: Error => Unit, onResult: js.Any => Unit): IResultCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), onError = js.Any.fromFunction1(onError), onResult = js.Any.fromFunction1(onResult))
-  
     __obj.asInstanceOf[IResultCommand]
   }
 }

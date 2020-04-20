@@ -23,7 +23,6 @@ object AppointmentResizeEventArgs {
     sender: Control
   ): AppointmentResizeEventArgs = {
     val __obj = js.Dynamic.literal(appointmentId = appointmentId.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], newInterval = newInterval.asInstanceOf[js.Any], oldInterval = oldInterval.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppointmentResizeEventArgs]
   }
 }

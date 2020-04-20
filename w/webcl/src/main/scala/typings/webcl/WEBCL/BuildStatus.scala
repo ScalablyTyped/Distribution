@@ -19,14 +19,12 @@ trait BuildStatus extends js.Object
 
 object BuildStatus {
   @scala.inline
-  def BUILD_ERROR: `-2` = this.cast(-2)
+  def BUILD_ERROR: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def BUILD_IN_PROGRESS: `-3` = this.cast(-3)
+  def BUILD_IN_PROGRESS: `-3` = -3.asInstanceOf[`-3`]
   @scala.inline
-  def BUILD_NONE: `-1` = this.cast(-1)
+  def BUILD_NONE: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def BUILD_SUCCESS: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def BUILD_SUCCESS: `0` = 0.asInstanceOf[`0`]
 }
 

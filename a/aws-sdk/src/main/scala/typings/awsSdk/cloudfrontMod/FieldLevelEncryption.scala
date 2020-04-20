@@ -24,7 +24,6 @@ object FieldLevelEncryption {
   @scala.inline
   def apply(FieldLevelEncryptionConfig: FieldLevelEncryptionConfig, Id: String, LastModifiedTime: timestamp): FieldLevelEncryption = {
     val __obj = js.Dynamic.literal(FieldLevelEncryptionConfig = FieldLevelEncryptionConfig.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldLevelEncryption]
   }
 }

@@ -93,7 +93,6 @@ object PhotosResource {
     list: AnonFilter => Request_[ListPhotosResponse]
   ): PhotosResource = {
     val __obj = js.Dynamic.literal(batchDelete = js.Any.fromFunction1(batchDelete), batchGet = js.Any.fromFunction1(batchGet), batchUpdate = js.Any.fromFunction1(batchUpdate), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[PhotosResource]
   }
 }

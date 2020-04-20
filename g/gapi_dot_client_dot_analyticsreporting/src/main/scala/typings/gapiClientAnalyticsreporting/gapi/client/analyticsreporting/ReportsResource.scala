@@ -15,7 +15,6 @@ object ReportsResource {
   @scala.inline
   def apply(batchGet: AnonAccesstoken => Request_[GetReportsResponse]): ReportsResource = {
     val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet))
-  
     __obj.asInstanceOf[ReportsResource]
   }
 }

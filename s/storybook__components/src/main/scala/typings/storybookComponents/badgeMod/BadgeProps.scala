@@ -18,7 +18,6 @@ object BadgeProps {
   @scala.inline
   def apply(status: positive | negative | neutral | warning | critical): BadgeProps = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BadgeProps]
   }
 }

@@ -24,9 +24,9 @@ class RpcOperationElement protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FRpcOperationElement: IModel = js.native
-  def containerAsOperationInfo(): OperationInfo = js.native
-  def messagePartElements(): IList[RpcMessagePartElement] = js.native
-  def name(): String = js.native
+  def containerAsOperationInfo: OperationInfo = js.native
+  def messagePartElements: IList[RpcMessagePartElement] = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
 }
 

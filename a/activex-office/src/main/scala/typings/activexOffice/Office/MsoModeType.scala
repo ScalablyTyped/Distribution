@@ -16,12 +16,10 @@ trait MsoModeType extends js.Object
 
 object MsoModeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoModeAutoDown: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoModeAutoDown: `1` = this.cast(1)
+  def msoModeModal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoModeModal: `0` = this.cast(0)
-  @scala.inline
-  def msoModeModeless: `2` = this.cast(2)
+  def msoModeModeless: `2` = 2.asInstanceOf[`2`]
 }
 

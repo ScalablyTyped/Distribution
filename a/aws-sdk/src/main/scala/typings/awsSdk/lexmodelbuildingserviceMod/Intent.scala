@@ -20,7 +20,6 @@ object Intent {
   @scala.inline
   def apply(intentName: IntentName, intentVersion: Version): Intent = {
     val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], intentVersion = intentVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Intent]
   }
 }

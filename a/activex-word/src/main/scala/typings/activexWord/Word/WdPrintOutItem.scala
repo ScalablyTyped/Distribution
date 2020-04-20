@@ -26,24 +26,22 @@ trait WdPrintOutItem extends js.Object
 
 object WdPrintOutItem {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdPrintAutoTextEntries: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdPrintAutoTextEntries: `4` = this.cast(4)
+  def wdPrintComments: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPrintComments: `2` = this.cast(2)
+  def wdPrintDocumentContent: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdPrintDocumentContent: `0` = this.cast(0)
+  def wdPrintDocumentWithMarkup: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdPrintDocumentWithMarkup: `7` = this.cast(7)
+  def wdPrintEnvelope: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdPrintEnvelope: `6` = this.cast(6)
+  def wdPrintKeyAssignments: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdPrintKeyAssignments: `5` = this.cast(5)
+  def wdPrintMarkup: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPrintMarkup: `2` = this.cast(2)
+  def wdPrintProperties: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdPrintProperties: `1` = this.cast(1)
-  @scala.inline
-  def wdPrintStyles: `3` = this.cast(3)
+  def wdPrintStyles: `3` = 3.asInstanceOf[`3`]
 }
 

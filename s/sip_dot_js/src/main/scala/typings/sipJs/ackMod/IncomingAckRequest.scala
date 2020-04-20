@@ -14,7 +14,6 @@ object IncomingAckRequest {
   @scala.inline
   def apply(message: IncomingRequestMessage): IncomingAckRequest = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IncomingAckRequest]
   }
 }

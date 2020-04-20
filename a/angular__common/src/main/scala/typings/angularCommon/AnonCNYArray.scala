@@ -13,7 +13,6 @@ object AnonCNYArray {
   @scala.inline
   def apply(CNY: js.Array[String], JPY: js.Array[String]): AnonCNYArray = {
     val __obj = js.Dynamic.literal(CNY = CNY.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCNYArray]
   }
 }

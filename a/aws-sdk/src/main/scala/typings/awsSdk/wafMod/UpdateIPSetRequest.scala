@@ -24,7 +24,6 @@ object UpdateIPSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, IPSetId: ResourceId, Updates: IPSetUpdates): UpdateIPSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], IPSetId = IPSetId.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateIPSetRequest]
   }
 }

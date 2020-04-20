@@ -13,12 +13,10 @@ trait MIDIPortConnectionState extends js.Object
 
 object MIDIPortConnectionState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closed: typings.webmidi.webmidiStrings.closed = "closed".asInstanceOf[typings.webmidi.webmidiStrings.closed]
   @scala.inline
-  def closed: typings.webmidi.webmidiStrings.closed = this.cast("closed")
+  def open: typings.webmidi.webmidiStrings.open = "open".asInstanceOf[typings.webmidi.webmidiStrings.open]
   @scala.inline
-  def open: typings.webmidi.webmidiStrings.open = this.cast("open")
-  @scala.inline
-  def pending: typings.webmidi.webmidiStrings.pending = this.cast("pending")
+  def pending: typings.webmidi.webmidiStrings.pending = "pending".asInstanceOf[typings.webmidi.webmidiStrings.pending]
 }
 

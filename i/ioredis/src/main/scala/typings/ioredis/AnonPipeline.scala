@@ -13,7 +13,6 @@ object AnonPipeline {
   @scala.inline
   def apply(pipeline: `false`): AnonPipeline = {
     val __obj = js.Dynamic.literal(pipeline = pipeline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPipeline]
   }
 }

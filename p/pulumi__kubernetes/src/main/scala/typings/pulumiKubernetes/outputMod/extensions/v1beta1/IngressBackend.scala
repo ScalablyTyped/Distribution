@@ -28,7 +28,6 @@ object IngressBackend {
   @scala.inline
   def apply(resource: TypedLocalObjectReference, serviceName: String, servicePort: Double | String): IngressBackend = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], servicePort = servicePort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IngressBackend]
   }
 }

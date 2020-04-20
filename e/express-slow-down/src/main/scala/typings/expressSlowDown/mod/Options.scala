@@ -3,6 +3,7 @@ package typings.expressSlowDown.mod
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +27,7 @@ trait Options extends js.Object {
     * Default: `(req, res) => req.ip`
     */
   var keyGenerator: js.UndefOr[
-    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], String]
+    js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], String]
   ] = js.undefined
   /**
     * Maximum value for `delayMs` after many consecutive attempts, that is, after the n-th request,
@@ -51,7 +52,7 @@ trait Options extends js.Object {
     * Default: `(req, res) => false`
     */
   var skip: js.UndefOr[
-    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Boolean]
+    js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Boolean]
   ] = js.undefined
   /**
     * When `true` failed requests (response status >= 400) won't be counted. Defaults to `false`.
@@ -76,10 +77,10 @@ object Options {
   def apply(
     delayAfter: Int | Double = null,
     delayMs: Int | Double = null,
-    keyGenerator: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => String = null,
+    keyGenerator: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => String = null,
     maxDelayMs: Int | Double = null,
     onLimitReached: (/* req */ RequestWithSlowDown, /* res */ Response_[_], Options) => Unit = null,
-    skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => Boolean = null,
+    skip: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean = null,
     skipFailedRequests: js.UndefOr[Boolean] = js.undefined,
     skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined,
     store: Store = null,

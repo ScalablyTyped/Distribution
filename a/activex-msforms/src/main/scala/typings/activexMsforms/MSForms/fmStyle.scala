@@ -14,10 +14,8 @@ trait fmStyle extends js.Object
 
 object fmStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmStyleDropDownCombo: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmStyleDropDownCombo: `0` = this.cast(0)
-  @scala.inline
-  def fmStyleDropDownList: `2` = this.cast(2)
+  def fmStyleDropDownList: `2` = 2.asInstanceOf[`2`]
 }
 

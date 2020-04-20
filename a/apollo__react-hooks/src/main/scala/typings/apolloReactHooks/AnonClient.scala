@@ -14,7 +14,6 @@ object AnonClient {
   @scala.inline
   def apply(client: ApolloClient[js.Object], isNew: Boolean): AnonClient = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], isNew = isNew.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClient]
   }
 }

@@ -20,16 +20,14 @@ trait WdProtectionType extends js.Object
 
 object WdProtectionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAllowOnlyComments: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdAllowOnlyComments: `1` = this.cast(1)
+  def wdAllowOnlyFormFields: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAllowOnlyFormFields: `2` = this.cast(2)
+  def wdAllowOnlyReading: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdAllowOnlyReading: `3` = this.cast(3)
+  def wdAllowOnlyRevisions: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdAllowOnlyRevisions: `0` = this.cast(0)
-  @scala.inline
-  def wdNoProtection: `-1` = this.cast(-1)
+  def wdNoProtection: `-1` = -1.asInstanceOf[`-1`]
 }
 

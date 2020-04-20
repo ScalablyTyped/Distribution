@@ -19,7 +19,6 @@ object IClientEnteredWorldEventData {
   @scala.inline
   def apply(player: IEntity): IClientEnteredWorldEventData = {
     val __obj = js.Dynamic.literal(player = player.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IClientEnteredWorldEventData]
   }
 }

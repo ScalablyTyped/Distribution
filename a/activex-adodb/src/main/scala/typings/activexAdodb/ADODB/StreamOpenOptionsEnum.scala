@@ -16,12 +16,10 @@ trait StreamOpenOptionsEnum extends js.Object
 
 object StreamOpenOptionsEnum {
   @scala.inline
-  def adOpenStreamAsync: `1` = this.cast(1)
+  def adOpenStreamAsync: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adOpenStreamFromRecord: `4` = this.cast(4)
+  def adOpenStreamFromRecord: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adOpenStreamUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adOpenStreamUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
 

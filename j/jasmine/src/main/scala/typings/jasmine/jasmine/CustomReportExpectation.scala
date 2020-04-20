@@ -15,7 +15,6 @@ object CustomReportExpectation {
   @scala.inline
   def apply(matcherName: String, message: String, passed: Boolean, stack: String): CustomReportExpectation = {
     val __obj = js.Dynamic.literal(matcherName = matcherName.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomReportExpectation]
   }
 }

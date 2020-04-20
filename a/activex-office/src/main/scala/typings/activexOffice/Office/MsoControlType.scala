@@ -64,60 +64,58 @@ trait MsoControlType extends js.Object
 
 object MsoControlType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoControlActiveX: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoControlActiveX: `22` = this.cast(22)
+  def msoControlAutoCompleteCombo: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoControlAutoCompleteCombo: `26` = this.cast(26)
+  def msoControlButton: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoControlButton: `1` = this.cast(1)
+  def msoControlButtonDropdown: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoControlButtonDropdown: `5` = this.cast(5)
+  def msoControlButtonPopup: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoControlButtonPopup: `12` = this.cast(12)
+  def msoControlComboBox: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoControlComboBox: `4` = this.cast(4)
+  def msoControlCustom: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoControlCustom: `0` = this.cast(0)
+  def msoControlDropdown: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoControlDropdown: `3` = this.cast(3)
+  def msoControlEdit: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoControlEdit: `2` = this.cast(2)
+  def msoControlExpandingGrid: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoControlExpandingGrid: `16` = this.cast(16)
+  def msoControlGauge: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoControlGauge: `19` = this.cast(19)
+  def msoControlGenericDropdown: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoControlGenericDropdown: `8` = this.cast(8)
+  def msoControlGraphicCombo: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoControlGraphicCombo: `20` = this.cast(20)
+  def msoControlGraphicDropdown: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoControlGraphicDropdown: `9` = this.cast(9)
+  def msoControlGraphicPopup: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoControlGraphicPopup: `11` = this.cast(11)
+  def msoControlGrid: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoControlGrid: `18` = this.cast(18)
+  def msoControlLabel: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoControlLabel: `15` = this.cast(15)
+  def msoControlLabelEx: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoControlLabelEx: `24` = this.cast(24)
+  def msoControlOCXDropdown: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoControlOCXDropdown: `7` = this.cast(7)
+  def msoControlPane: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoControlPane: `21` = this.cast(21)
+  def msoControlPopup: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoControlPopup: `10` = this.cast(10)
+  def msoControlSpinner: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoControlSpinner: `23` = this.cast(23)
+  def msoControlSplitButtonMRUPopup: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoControlSplitButtonMRUPopup: `14` = this.cast(14)
+  def msoControlSplitButtonPopup: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoControlSplitButtonPopup: `13` = this.cast(13)
+  def msoControlSplitDropdown: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoControlSplitDropdown: `6` = this.cast(6)
+  def msoControlSplitExpandingGrid: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoControlSplitExpandingGrid: `17` = this.cast(17)
-  @scala.inline
-  def msoControlWorkPane: `25` = this.cast(25)
+  def msoControlWorkPane: `25` = 25.asInstanceOf[`25`]
 }
 

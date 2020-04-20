@@ -50,7 +50,6 @@ object logic {
     yesno: (js.Any, js.Any) => js.Any
   ): logic = {
     val __obj = js.Dynamic.literal(default_ = js.Any.fromFunction2(default_), default_if_none = js.Any.fromFunction2(default_if_none), divisibleby = js.Any.fromFunction2(divisibleby), yesno = js.Any.fromFunction2(yesno))
-  
     __obj.asInstanceOf[logic]
   }
 }

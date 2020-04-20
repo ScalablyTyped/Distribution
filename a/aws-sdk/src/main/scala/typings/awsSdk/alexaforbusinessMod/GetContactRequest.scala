@@ -16,7 +16,6 @@ object GetContactRequest {
   @scala.inline
   def apply(ContactArn: Arn): GetContactRequest = {
     val __obj = js.Dynamic.literal(ContactArn = ContactArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetContactRequest]
   }
 }

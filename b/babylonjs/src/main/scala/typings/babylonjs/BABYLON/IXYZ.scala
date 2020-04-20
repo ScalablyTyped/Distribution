@@ -26,7 +26,6 @@ object IXYZ {
   @scala.inline
   def apply(x: Double, y: Double, z: Double): IXYZ = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IXYZ]
   }
 }

@@ -14,7 +14,6 @@ object TabsCreateOrLoadUIParams {
   @scala.inline
   def apply(panel: JQuery, tab: JQuery): TabsCreateOrLoadUIParams = {
     val __obj = js.Dynamic.literal(panel = panel.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabsCreateOrLoadUIParams]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCanvasDrawProps {
   @scala.inline
-  def ReactCanvasDrawProps: CanvasDrawProps.type = typings.reactCanvasDraw.mod.CanvasDrawProps
+  def ReactCanvasDrawProps: CanvasDrawProps.type = CanvasDrawProps
   type ReactCanvasDrawProps = CanvasDrawProps
 }
 

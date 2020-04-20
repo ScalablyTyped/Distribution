@@ -13,12 +13,10 @@ trait StorageMode extends js.Object
 
 object StorageMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def localStorage: typings.cachefactory.cachefactoryStrings.localStorage = "localStorage".asInstanceOf[typings.cachefactory.cachefactoryStrings.localStorage]
   @scala.inline
-  def localStorage: typings.cachefactory.cachefactoryStrings.localStorage = this.cast("localStorage")
+  def memory: typings.cachefactory.cachefactoryStrings.memory = "memory".asInstanceOf[typings.cachefactory.cachefactoryStrings.memory]
   @scala.inline
-  def memory: typings.cachefactory.cachefactoryStrings.memory = this.cast("memory")
-  @scala.inline
-  def sessionStorage: typings.cachefactory.cachefactoryStrings.sessionStorage = this.cast("sessionStorage")
+  def sessionStorage: typings.cachefactory.cachefactoryStrings.sessionStorage = "sessionStorage".asInstanceOf[typings.cachefactory.cachefactoryStrings.sessionStorage]
 }
 

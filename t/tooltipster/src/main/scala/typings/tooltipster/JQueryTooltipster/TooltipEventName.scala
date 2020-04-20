@@ -33,52 +33,50 @@ trait TooltipEventName extends js.Object
 
 object TooltipEventName {
   @scala.inline
-  def after: typings.tooltipster.tooltipsterStrings.after = this.cast("after")
+  def after: typings.tooltipster.tooltipsterStrings.after = "after".asInstanceOf[typings.tooltipster.tooltipsterStrings.after]
   @scala.inline
-  def before: typings.tooltipster.tooltipsterStrings.before = this.cast("before")
+  def before: typings.tooltipster.tooltipsterStrings.before = "before".asInstanceOf[typings.tooltipster.tooltipsterStrings.before]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def close: typings.tooltipster.tooltipsterStrings.close = "close".asInstanceOf[typings.tooltipster.tooltipsterStrings.close]
   @scala.inline
-  def close: typings.tooltipster.tooltipsterStrings.close = this.cast("close")
+  def closing: typings.tooltipster.tooltipsterStrings.closing = "closing".asInstanceOf[typings.tooltipster.tooltipsterStrings.closing]
   @scala.inline
-  def closing: typings.tooltipster.tooltipsterStrings.closing = this.cast("closing")
+  def created: typings.tooltipster.tooltipsterStrings.created = "created".asInstanceOf[typings.tooltipster.tooltipsterStrings.created]
   @scala.inline
-  def created: typings.tooltipster.tooltipsterStrings.created = this.cast("created")
+  def destroy: typings.tooltipster.tooltipsterStrings.destroy = "destroy".asInstanceOf[typings.tooltipster.tooltipsterStrings.destroy]
   @scala.inline
-  def destroy: typings.tooltipster.tooltipsterStrings.destroy = this.cast("destroy")
+  def destroyed: typings.tooltipster.tooltipsterStrings.destroyed = "destroyed".asInstanceOf[typings.tooltipster.tooltipsterStrings.destroyed]
   @scala.inline
-  def destroyed: typings.tooltipster.tooltipsterStrings.destroyed = this.cast("destroyed")
+  def dismissable: typings.tooltipster.tooltipsterStrings.dismissable = "dismissable".asInstanceOf[typings.tooltipster.tooltipsterStrings.dismissable]
   @scala.inline
-  def dismissable: typings.tooltipster.tooltipsterStrings.dismissable = this.cast("dismissable")
+  def format: typings.tooltipster.tooltipsterStrings.format = "format".asInstanceOf[typings.tooltipster.tooltipsterStrings.format]
   @scala.inline
-  def format: typings.tooltipster.tooltipsterStrings.format = this.cast("format")
+  def geometry: typings.tooltipster.tooltipsterStrings.geometry = "geometry".asInstanceOf[typings.tooltipster.tooltipsterStrings.geometry]
   @scala.inline
-  def geometry: typings.tooltipster.tooltipsterStrings.geometry = this.cast("geometry")
+  def init: typings.tooltipster.tooltipsterStrings.init = "init".asInstanceOf[typings.tooltipster.tooltipsterStrings.init]
   @scala.inline
-  def init: typings.tooltipster.tooltipsterStrings.init = this.cast("init")
+  def position: typings.tooltipster.tooltipsterStrings.position = "position".asInstanceOf[typings.tooltipster.tooltipsterStrings.position]
   @scala.inline
-  def position: typings.tooltipster.tooltipsterStrings.position = this.cast("position")
+  def positionTest: typings.tooltipster.tooltipsterStrings.positionTest = "positionTest".asInstanceOf[typings.tooltipster.tooltipsterStrings.positionTest]
   @scala.inline
-  def positionTest: typings.tooltipster.tooltipsterStrings.positionTest = this.cast("positionTest")
+  def positionTested: typings.tooltipster.tooltipsterStrings.positionTested = "positionTested".asInstanceOf[typings.tooltipster.tooltipsterStrings.positionTested]
   @scala.inline
-  def positionTested: typings.tooltipster.tooltipsterStrings.positionTested = this.cast("positionTested")
+  def ready: typings.tooltipster.tooltipsterStrings.ready = "ready".asInstanceOf[typings.tooltipster.tooltipsterStrings.ready]
   @scala.inline
-  def ready: typings.tooltipster.tooltipsterStrings.ready = this.cast("ready")
+  def reposition: typings.tooltipster.tooltipsterStrings.reposition = "reposition".asInstanceOf[typings.tooltipster.tooltipsterStrings.reposition]
   @scala.inline
-  def reposition: typings.tooltipster.tooltipsterStrings.reposition = this.cast("reposition")
+  def repositioned: typings.tooltipster.tooltipsterStrings.repositioned = "repositioned".asInstanceOf[typings.tooltipster.tooltipsterStrings.repositioned]
   @scala.inline
-  def repositioned: typings.tooltipster.tooltipsterStrings.repositioned = this.cast("repositioned")
+  def scroll: typings.tooltipster.tooltipsterStrings.scroll = "scroll".asInstanceOf[typings.tooltipster.tooltipsterStrings.scroll]
   @scala.inline
-  def scroll: typings.tooltipster.tooltipsterStrings.scroll = this.cast("scroll")
+  def start: typings.tooltipster.tooltipsterStrings.start = "start".asInstanceOf[typings.tooltipster.tooltipsterStrings.start]
   @scala.inline
-  def start: typings.tooltipster.tooltipsterStrings.start = this.cast("start")
+  def startcancel: typings.tooltipster.tooltipsterStrings.startcancel = "startcancel".asInstanceOf[typings.tooltipster.tooltipsterStrings.startcancel]
   @scala.inline
-  def startcancel: typings.tooltipster.tooltipsterStrings.startcancel = this.cast("startcancel")
+  def startend: typings.tooltipster.tooltipsterStrings.startend = "startend".asInstanceOf[typings.tooltipster.tooltipsterStrings.startend]
   @scala.inline
-  def startend: typings.tooltipster.tooltipsterStrings.startend = this.cast("startend")
+  def state: typings.tooltipster.tooltipsterStrings.state = "state".asInstanceOf[typings.tooltipster.tooltipsterStrings.state]
   @scala.inline
-  def state: typings.tooltipster.tooltipsterStrings.state = this.cast("state")
-  @scala.inline
-  def updated: typings.tooltipster.tooltipsterStrings.updated = this.cast("updated")
+  def updated: typings.tooltipster.tooltipsterStrings.updated = "updated".asInstanceOf[typings.tooltipster.tooltipsterStrings.updated]
 }
 

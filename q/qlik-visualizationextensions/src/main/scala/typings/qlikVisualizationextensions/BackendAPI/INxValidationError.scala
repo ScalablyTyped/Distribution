@@ -30,7 +30,6 @@ object INxValidationError {
   @scala.inline
   def apply(qContext: String, qErrorCode: Double, qExtendedMessage: String): INxValidationError = {
     val __obj = js.Dynamic.literal(qContext = qContext.asInstanceOf[js.Any], qErrorCode = qErrorCode.asInstanceOf[js.Any], qExtendedMessage = qExtendedMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxValidationError]
   }
 }

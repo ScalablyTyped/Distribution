@@ -19,7 +19,6 @@ object IEntityDeathEventData {
   @scala.inline
   def apply(entity: IEntity): IEntityDeathEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEntityDeathEventData]
   }
 }

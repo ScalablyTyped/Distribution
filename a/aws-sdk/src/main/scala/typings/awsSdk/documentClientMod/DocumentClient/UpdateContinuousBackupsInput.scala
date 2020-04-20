@@ -20,7 +20,6 @@ object UpdateContinuousBackupsInput {
   @scala.inline
   def apply(PointInTimeRecoverySpecification: PointInTimeRecoverySpecification, TableName: TableName): UpdateContinuousBackupsInput = {
     val __obj = js.Dynamic.literal(PointInTimeRecoverySpecification = PointInTimeRecoverySpecification.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateContinuousBackupsInput]
   }
 }

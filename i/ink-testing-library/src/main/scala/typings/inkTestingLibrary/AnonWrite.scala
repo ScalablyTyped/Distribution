@@ -12,7 +12,6 @@ object AnonWrite {
   @scala.inline
   def apply(write: js.Any => Boolean): AnonWrite = {
     val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[AnonWrite]
   }
 }

@@ -13,7 +13,6 @@ object Window {
   @scala.inline
   def apply(TouchEvent: TouchEvent): Window = {
     val __obj = js.Dynamic.literal(TouchEvent = TouchEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

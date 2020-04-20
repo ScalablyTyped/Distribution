@@ -13,7 +13,6 @@ object ColumnValue {
   @scala.inline
   def apply(metadata: ColumnMetaData, value: js.Any): ColumnValue = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ColumnValue]
   }
 }

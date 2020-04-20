@@ -18,15 +18,15 @@ class PerformanceMonitor () extends js.Object {
   /**
     * Returns the average framerate in frames per second over the sliding window (or the subset of frames sampled so far)
     */
-  def averageFPS(): Double = js.native
+  def averageFPS: Double = js.native
   /**
     * Returns the average frame time in milliseconds over the sliding window (or the subset of frames sampled so far)
     */
-  def averageFrameTime(): Double = js.native
+  def averageFrameTime: Double = js.native
   /**
     * Returns the variance frame time in milliseconds over the sliding window (or the subset of frames sampled so far)
     */
-  def averageFrameTimeVariance(): Double = js.native
+  def averageFrameTimeVariance: Double = js.native
   /**
     * Disables contributions to the sliding window sample set
     * Samples will not be interpolated over the disabled period
@@ -39,19 +39,19 @@ class PerformanceMonitor () extends js.Object {
   /**
     * Returns the average framerate in frames per second using the most recent frame time
     */
-  def instantaneousFPS(): Double = js.native
+  def instantaneousFPS: Double = js.native
   /**
     * Returns the frame time of the most recent frame
     */
-  def instantaneousFrameTime(): Double = js.native
+  def instantaneousFrameTime: Double = js.native
   /**
     * Returns true if sampling is enabled
     */
-  def isEnabled(): Boolean = js.native
+  def isEnabled: Boolean = js.native
   /**
     * Returns true if enough samples have been taken to completely fill the sliding window
     */
-  def isSaturated(): Boolean = js.native
+  def isSaturated: Boolean = js.native
   /**
     * Resets performance monitor
     */

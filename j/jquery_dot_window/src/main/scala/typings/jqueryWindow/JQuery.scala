@@ -15,7 +15,6 @@ object JQuery {
   @scala.inline
   def apply(window: WindowOptions => Window): JQuery = {
     val __obj = js.Dynamic.literal(window = js.Any.fromFunction1(window))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

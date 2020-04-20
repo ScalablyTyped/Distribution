@@ -23,7 +23,6 @@ object GitPullRequestQuery {
     results: js.Array[StringDictionary[js.Array[GitPullRequest]]]
   ): GitPullRequestQuery = {
     val __obj = js.Dynamic.literal(queries = queries.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitPullRequestQuery]
   }
 }

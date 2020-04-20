@@ -13,7 +13,6 @@ object AnonBoxSizing {
   @scala.inline
   def apply(boxSizing: String, padding: Double): AnonBoxSizing = {
     val __obj = js.Dynamic.literal(boxSizing = boxSizing.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBoxSizing]
   }
 }

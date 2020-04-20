@@ -12,10 +12,8 @@ trait OrderByDirection extends js.Object
 
 object OrderByDirection {
   @scala.inline
-  def asc: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.asc = this.cast("asc")
+  def asc: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.asc = "asc".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.asc]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def desc: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.desc = this.cast("desc")
+  def desc: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.desc = "desc".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.desc]
 }
 

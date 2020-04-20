@@ -8,7 +8,6 @@ import typings.blueprintjsDatetime.dateUtilsMod.DateRange
 import typings.blueprintjsDatetime.shortcutsMod.IDateRangeShortcut
 import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
-import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,9 @@ trait PartialIDateRangeInputPro extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var closeOnSelection: js.UndefOr[Boolean] = js.undefined
   var contiguousCalendarMonths: js.UndefOr[Boolean] = js.undefined
-  var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
+  var dayPickerProps: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any
+  ] = js.undefined
   var defaultValue: js.UndefOr[DateRange] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var endInputProps: js.UndefOr[HTMLInputProps with IInputGroupProps] = js.undefined
@@ -28,9 +29,7 @@ trait PartialIDateRangeInputPro extends js.Object {
   var initialMonth: js.UndefOr[Date] = js.undefined
   var invalidDateMessage: js.UndefOr[String] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
-  var localeUtils: js.UndefOr[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
-  ] = js.undefined
+  var localeUtils: js.UndefOr[AnonFormatDate] = js.undefined
   var maxDate: js.UndefOr[Date] = js.undefined
   var minDate: js.UndefOr[Date] = js.undefined
   var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
@@ -60,7 +59,7 @@ object PartialIDateRangeInputPro {
     className: String = null,
     closeOnSelection: js.UndefOr[Boolean] = js.undefined,
     contiguousCalendarMonths: js.UndefOr[Boolean] = js.undefined,
-    dayPickerProps: DayPickerProps = null,
+    dayPickerProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any = null,
     defaultValue: DateRange = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     endInputProps: HTMLInputProps with IInputGroupProps = null,
@@ -68,7 +67,7 @@ object PartialIDateRangeInputPro {
     initialMonth: Date = null,
     invalidDateMessage: String = null,
     locale: String = null,
-    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
+    localeUtils: AnonFormatDate = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,

@@ -117,19 +117,19 @@ object mirrorTextureMod extends js.Object {
       * Please consider using `adaptiveBlurKernel` as it could find the closest best value for you.
       */
     def blurKernel(value: Double): js.Any = js.native
-    def blurKernelX(): Double = js.native
+    def blurKernelX: Double = js.native
     /**
       * Define the blur kernel on the X Axis used to blur the reflection if needed.
       * Please consider using `adaptiveBlurKernel` as it could find the closest best value for you.
       */
     def blurKernelX(value: Double): js.Any = js.native
-    def blurKernelY(): Double = js.native
+    def blurKernelY: Double = js.native
     /**
       * Define the blur kernel on the Y Axis used to blur the reflection if needed.
       * Please consider using `adaptiveBlurKernel` as it could find the closest best value for you.
       */
     def blurKernelY(value: Double): js.Any = js.native
-    def blurRatio(): Double = js.native
+    def blurRatio: Double = js.native
     /**
       * Define the blur ratio used to blur the reflection if needed.
       */

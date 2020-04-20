@@ -12,7 +12,6 @@ object CloneOptions {
   @scala.inline
   def apply(keyOrderSensitive: Boolean): CloneOptions = {
     val __obj = js.Dynamic.literal(keyOrderSensitive = keyOrderSensitive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloneOptions]
   }
 }

@@ -15,7 +15,6 @@ object SearchResults {
   @scala.inline
   def apply(page: Double, results: js.Array[SearchResult], total_Pages: Double, total_results: Double): SearchResults = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], total_Pages = total_Pages.asInstanceOf[js.Any], total_results = total_results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchResults]
   }
 }

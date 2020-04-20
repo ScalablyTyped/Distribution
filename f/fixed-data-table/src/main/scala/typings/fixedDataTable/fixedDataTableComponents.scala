@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 object fixedDataTableComponents extends fixedDataTableProps {
   @scala.inline
-  def Cell: ComponentType[CellProps] = js.constructorOf[typings.fixedDataTable.mod.Cell].asInstanceOf[typings.react.mod.ComponentType[CellProps]]
+  def Cell: ComponentType[CellProps] = js.constructorOf[typings.fixedDataTable.mod.Cell].asInstanceOf[ComponentType[CellProps]]
   @scala.inline
-  def Column: ComponentType[ColumnProps] = js.constructorOf[typings.fixedDataTable.mod.Column].asInstanceOf[typings.react.mod.ComponentType[ColumnProps]]
+  def Column: ComponentType[ColumnProps] = js.constructorOf[typings.fixedDataTable.mod.Column].asInstanceOf[ComponentType[ColumnProps]]
   @scala.inline
-  def ColumnGroup: ComponentType[ColumnGroupProps] = js.constructorOf[typings.fixedDataTable.mod.ColumnGroup].asInstanceOf[typings.react.mod.ComponentType[ColumnGroupProps]]
+  def ColumnGroup: ComponentType[ColumnGroupProps] = js.constructorOf[typings.fixedDataTable.mod.ColumnGroup].asInstanceOf[ComponentType[ColumnGroupProps]]
   @scala.inline
-  def Table: ComponentType[TableProps] = js.constructorOf[typings.fixedDataTable.mod.Table].asInstanceOf[typings.react.mod.ComponentType[TableProps]]
+  def Table: ComponentType[TableProps] = js.constructorOf[typings.fixedDataTable.mod.Table].asInstanceOf[ComponentType[TableProps]]
 }
 

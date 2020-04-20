@@ -16,18 +16,16 @@ trait SliderEventType extends js.Object
 
 object SliderEventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def change: typings.bootstrapSlider.bootstrapSliderStrings.change = "change".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.change]
   @scala.inline
-  def change: typings.bootstrapSlider.bootstrapSliderStrings.change = this.cast("change")
+  def slide: typings.bootstrapSlider.bootstrapSliderStrings.slide = "slide".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slide]
   @scala.inline
-  def slide: typings.bootstrapSlider.bootstrapSliderStrings.slide = this.cast("slide")
+  def slideDisabled: typings.bootstrapSlider.bootstrapSliderStrings.slideDisabled = "slideDisabled".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideDisabled]
   @scala.inline
-  def slideDisabled: typings.bootstrapSlider.bootstrapSliderStrings.slideDisabled = this.cast("slideDisabled")
+  def slideEnabled: typings.bootstrapSlider.bootstrapSliderStrings.slideEnabled = "slideEnabled".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideEnabled]
   @scala.inline
-  def slideEnabled: typings.bootstrapSlider.bootstrapSliderStrings.slideEnabled = this.cast("slideEnabled")
+  def slideStart: typings.bootstrapSlider.bootstrapSliderStrings.slideStart = "slideStart".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideStart]
   @scala.inline
-  def slideStart: typings.bootstrapSlider.bootstrapSliderStrings.slideStart = this.cast("slideStart")
-  @scala.inline
-  def slideStop: typings.bootstrapSlider.bootstrapSliderStrings.slideStop = this.cast("slideStop")
+  def slideStop: typings.bootstrapSlider.bootstrapSliderStrings.slideStop = "slideStop".asInstanceOf[typings.bootstrapSlider.bootstrapSliderStrings.slideStop]
 }
 

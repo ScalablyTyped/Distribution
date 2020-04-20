@@ -30,7 +30,6 @@ object AccountRepositoryLoginErrorResponse {
     two_factor_required: Boolean
   ): AccountRepositoryLoginErrorResponse = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], error_title = error_title.asInstanceOf[js.Any], error_type = error_type.asInstanceOf[js.Any], invalid_credentials = invalid_credentials.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], phone_verification_settings = phone_verification_settings.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], two_factor_info = two_factor_info.asInstanceOf[js.Any], two_factor_required = two_factor_required.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountRepositoryLoginErrorResponse]
   }
 }

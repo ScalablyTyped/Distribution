@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 
 trait reactChartjs2Props {
   @scala.inline
-  def BarProps: LinearComponentProps.type = typings.reactChartjs2.mod.LinearComponentProps
+  def BarProps: LinearComponentProps.type = LinearComponentProps
   type BarProps = LinearComponentProps
   @scala.inline
-  def BubbleProps: ChartComponentProps.type = typings.reactChartjs2.mod.ChartComponentProps
+  def BubbleProps: ChartComponentProps.type = ChartComponentProps
   type BubbleProps = ChartComponentProps
   @scala.inline
-  def DoughnutProps: ChartComponentProps.type = typings.reactChartjs2.mod.ChartComponentProps
+  def DoughnutProps: ChartComponentProps.type = ChartComponentProps
   type DoughnutProps = ChartComponentProps
   @scala.inline
-  def HorizontalBarProps: ChartComponentProps.type = typings.reactChartjs2.mod.ChartComponentProps
+  def HorizontalBarProps: ChartComponentProps.type = ChartComponentProps
   type HorizontalBarProps = ChartComponentProps
   @scala.inline
-  def LineProps: LinearComponentProps.type = typings.reactChartjs2.mod.LinearComponentProps
+  def LineProps: LinearComponentProps.type = LinearComponentProps
   type LineProps = LinearComponentProps
   @scala.inline
-  def PieProps: ChartComponentProps.type = typings.reactChartjs2.mod.ChartComponentProps
+  def PieProps: ChartComponentProps.type = ChartComponentProps
   type PieProps = ChartComponentProps
   @scala.inline
-  def PolarProps: ChartComponentProps.type = typings.reactChartjs2.mod.ChartComponentProps
+  def PolarProps: ChartComponentProps.type = ChartComponentProps
   type PolarProps = ChartComponentProps
   @scala.inline
-  def RadarProps: ChartComponentProps.type = typings.reactChartjs2.mod.ChartComponentProps
+  def RadarProps: ChartComponentProps.type = ChartComponentProps
   type RadarProps = ChartComponentProps
   @scala.inline
-  def ScatterProps: ChartComponentProps.type = typings.reactChartjs2.mod.ChartComponentProps
+  def ScatterProps: ChartComponentProps.type = ChartComponentProps
   type ScatterProps = ChartComponentProps
 }
 

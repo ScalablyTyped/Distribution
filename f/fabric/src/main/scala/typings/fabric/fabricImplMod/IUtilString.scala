@@ -40,7 +40,6 @@ object IUtilString {
     graphemeSplit: String => js.Array[String]
   ): IUtilString = {
     val __obj = js.Dynamic.literal(camelize = js.Any.fromFunction1(camelize), capitalize = js.Any.fromFunction2(capitalize), escapeXml = js.Any.fromFunction1(escapeXml), graphemeSplit = js.Any.fromFunction1(graphemeSplit))
-  
     __obj.asInstanceOf[IUtilString]
   }
 }

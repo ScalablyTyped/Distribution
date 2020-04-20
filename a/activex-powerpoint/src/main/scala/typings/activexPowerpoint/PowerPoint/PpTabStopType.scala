@@ -20,16 +20,14 @@ trait PpTabStopType extends js.Object
 
 object PpTabStopType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppTabStopCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppTabStopCenter: `2` = this.cast(2)
+  def ppTabStopDecimal: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppTabStopDecimal: `4` = this.cast(4)
+  def ppTabStopLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppTabStopLeft: `1` = this.cast(1)
+  def ppTabStopMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppTabStopMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def ppTabStopRight: `3` = this.cast(3)
+  def ppTabStopRight: `3` = 3.asInstanceOf[`3`]
 }
 

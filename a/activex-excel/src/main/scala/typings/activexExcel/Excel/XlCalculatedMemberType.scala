@@ -14,10 +14,8 @@ trait XlCalculatedMemberType extends js.Object
 
 object XlCalculatedMemberType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCalculatedMember: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlCalculatedMember: `0` = this.cast(0)
-  @scala.inline
-  def xlCalculatedSet: `1` = this.cast(1)
+  def xlCalculatedSet: `1` = 1.asInstanceOf[`1`]
 }
 

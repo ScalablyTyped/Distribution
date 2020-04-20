@@ -16,7 +16,6 @@ object DeleteReplicationGroupMemberAction {
   @scala.inline
   def apply(RegionName: RegionName): DeleteReplicationGroupMemberAction = {
     val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteReplicationGroupMemberAction]
   }
 }

@@ -13,7 +13,6 @@ object AnonRender {
   @scala.inline
   def apply(render: js.Function, staticRenderFns: js.Array[js.Function]): AnonRender = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], staticRenderFns = staticRenderFns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRender]
   }
 }

@@ -24,7 +24,6 @@ object S3ExportConfiguration {
   @scala.inline
   def apply(Bucket: S3Bucket, EncryptionConfiguration: S3EncryptionConfiguration, Prefix: S3Prefix): S3ExportConfiguration = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], EncryptionConfiguration = EncryptionConfiguration.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3ExportConfiguration]
   }
 }

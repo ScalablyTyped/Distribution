@@ -12,7 +12,6 @@ object SetCustomObjectFormatterEnabledParameterType {
   @scala.inline
   def apply(enabled: Boolean): SetCustomObjectFormatterEnabledParameterType = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetCustomObjectFormatterEnabledParameterType]
   }
 }

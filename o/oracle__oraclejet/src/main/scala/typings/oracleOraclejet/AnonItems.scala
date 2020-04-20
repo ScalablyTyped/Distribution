@@ -25,7 +25,6 @@ object AnonItems {
     titleStyle: js.Object
   ): AnonItems = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItems]
   }
 }

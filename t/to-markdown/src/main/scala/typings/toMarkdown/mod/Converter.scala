@@ -14,7 +14,6 @@ object Converter {
   @scala.inline
   def apply(filter: Filter, replacement: (String, HTMLElement) => String): Converter = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], replacement = js.Any.fromFunction2(replacement))
-  
     __obj.asInstanceOf[Converter]
   }
 }

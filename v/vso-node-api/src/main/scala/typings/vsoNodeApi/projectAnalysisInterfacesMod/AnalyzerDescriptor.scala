@@ -24,7 +24,6 @@ object AnalyzerDescriptor {
     patchVersion: Double
   ): AnalyzerDescriptor = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], majorVersion = majorVersion.asInstanceOf[js.Any], minorVersion = minorVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], patchVersion = patchVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyzerDescriptor]
   }
 }

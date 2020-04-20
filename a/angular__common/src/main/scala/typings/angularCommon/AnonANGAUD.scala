@@ -34,7 +34,6 @@ object AnonANGAUD {
     XXX: js.Array[scala.Nothing]
   ): AnonANGAUD = {
     val __obj = js.Dynamic.literal(ANG = ANG.asInstanceOf[js.Any], AUD = AUD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], FJD = FJD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], SBD = SBD.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XPF = XPF.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonANGAUD]
   }
 }

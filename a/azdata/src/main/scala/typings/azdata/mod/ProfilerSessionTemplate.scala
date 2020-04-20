@@ -23,7 +23,6 @@ object ProfilerSessionTemplate {
   @scala.inline
   def apply(createStatement: String, defaultView: String, name: String): ProfilerSessionTemplate = {
     val __obj = js.Dynamic.literal(createStatement = createStatement.asInstanceOf[js.Any], defaultView = defaultView.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProfilerSessionTemplate]
   }
 }

@@ -20,7 +20,6 @@ object CloseInstancePublicPortsRequest {
   @scala.inline
   def apply(instanceName: ResourceName, portInfo: PortInfo): CloseInstancePublicPortsRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], portInfo = portInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloseInstancePublicPortsRequest]
   }
 }

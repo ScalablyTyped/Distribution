@@ -13,7 +13,6 @@ object AnonHosts {
   @scala.inline
   def apply(hosts: js.Array[_], reason: String): AnonHosts = {
     val __obj = js.Dynamic.literal(hosts = hosts.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHosts]
   }
 }

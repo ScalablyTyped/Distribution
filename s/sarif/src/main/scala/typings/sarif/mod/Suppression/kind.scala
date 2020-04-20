@@ -12,10 +12,8 @@ trait kind extends js.Object
 
 object kind {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def external: typings.sarif.sarifStrings.external = "external".asInstanceOf[typings.sarif.sarifStrings.external]
   @scala.inline
-  def external: typings.sarif.sarifStrings.external = this.cast("external")
-  @scala.inline
-  def inSource: typings.sarif.sarifStrings.inSource = this.cast("inSource")
+  def inSource: typings.sarif.sarifStrings.inSource = "inSource".asInstanceOf[typings.sarif.sarifStrings.inSource]
 }
 

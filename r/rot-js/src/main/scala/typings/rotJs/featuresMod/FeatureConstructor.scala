@@ -12,7 +12,6 @@ object FeatureConstructor {
   @scala.inline
   def apply(createRandomAt: (Double, Double, Double, Double, FeatureOptions) => Feature): FeatureConstructor = {
     val __obj = js.Dynamic.literal(createRandomAt = js.Any.fromFunction5(createRandomAt))
-  
     __obj.asInstanceOf[FeatureConstructor]
   }
 }

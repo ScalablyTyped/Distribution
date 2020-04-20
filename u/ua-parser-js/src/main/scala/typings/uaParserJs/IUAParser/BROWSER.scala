@@ -17,7 +17,6 @@ object BROWSER {
   @scala.inline
   def apply(MAJOR: String, NAME: String, VERSION: String): BROWSER = {
     val __obj = js.Dynamic.literal(MAJOR = MAJOR.asInstanceOf[js.Any], NAME = NAME.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BROWSER]
   }
 }

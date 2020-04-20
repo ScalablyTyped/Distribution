@@ -14,10 +14,8 @@ trait SSH extends js.Object
 
 object SSH {
   @scala.inline
-  def MD5: `1` = this.cast(1)
+  def MD5: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SHA1: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SHA1: `2` = 2.asInstanceOf[`2`]
 }
 

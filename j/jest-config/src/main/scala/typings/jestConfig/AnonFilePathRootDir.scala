@@ -13,7 +13,6 @@ object AnonFilePathRootDir {
   @scala.inline
   def apply(filePath: String, rootDir: String): AnonFilePathRootDir = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFilePathRootDir]
   }
 }

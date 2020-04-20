@@ -18,7 +18,6 @@ object IRetroable {
   @scala.inline
   def apply[T](retro: () => IIterator[T]): IRetroable[T] = {
     val __obj = js.Dynamic.literal(retro = js.Any.fromFunction0(retro))
-  
     __obj.asInstanceOf[IRetroable[T]]
   }
 }

@@ -21,7 +21,6 @@ object CatalogTableStorageDescriptorSortColumn {
   @scala.inline
   def apply(column: Input[String], sortOrder: Input[Double]): CatalogTableStorageDescriptorSortColumn = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CatalogTableStorageDescriptorSortColumn]
   }
 }

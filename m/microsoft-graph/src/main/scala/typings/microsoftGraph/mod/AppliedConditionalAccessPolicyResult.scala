@@ -17,18 +17,16 @@ trait AppliedConditionalAccessPolicyResult extends js.Object
 
 object AppliedConditionalAccessPolicyResult {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def failure: typings.microsoftGraph.microsoftGraphStrings.failure = "failure".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.failure]
   @scala.inline
-  def failure: typings.microsoftGraph.microsoftGraphStrings.failure = this.cast("failure")
+  def notApplied: typings.microsoftGraph.microsoftGraphStrings.notApplied = "notApplied".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notApplied]
   @scala.inline
-  def notApplied: typings.microsoftGraph.microsoftGraphStrings.notApplied = this.cast("notApplied")
+  def notEnabled: typings.microsoftGraph.microsoftGraphStrings.notEnabled = "notEnabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notEnabled]
   @scala.inline
-  def notEnabled: typings.microsoftGraph.microsoftGraphStrings.notEnabled = this.cast("notEnabled")
+  def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
   @scala.inline
-  def success: typings.microsoftGraph.microsoftGraphStrings.success = this.cast("success")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

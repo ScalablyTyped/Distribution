@@ -16,7 +16,6 @@ object BatchGetDevEndpointsRequest {
   @scala.inline
   def apply(DevEndpointNames: DevEndpointNames): BatchGetDevEndpointsRequest = {
     val __obj = js.Dynamic.literal(DevEndpointNames = DevEndpointNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetDevEndpointsRequest]
   }
 }

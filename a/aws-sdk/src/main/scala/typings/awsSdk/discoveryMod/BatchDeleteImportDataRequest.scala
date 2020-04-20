@@ -16,7 +16,6 @@ object BatchDeleteImportDataRequest {
   @scala.inline
   def apply(importTaskIds: ToDeleteIdentifierList): BatchDeleteImportDataRequest = {
     val __obj = js.Dynamic.literal(importTaskIds = importTaskIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDeleteImportDataRequest]
   }
 }

@@ -20,7 +20,6 @@ object DeleteSlotTypeVersionRequest {
   @scala.inline
   def apply(name: SlotTypeName, version: NumericalVersion): DeleteSlotTypeVersionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSlotTypeVersionRequest]
   }
 }

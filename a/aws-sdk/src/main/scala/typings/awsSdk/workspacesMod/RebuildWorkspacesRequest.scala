@@ -16,7 +16,6 @@ object RebuildWorkspacesRequest {
   @scala.inline
   def apply(RebuildWorkspaceRequests: RebuildWorkspaceRequests): RebuildWorkspacesRequest = {
     val __obj = js.Dynamic.literal(RebuildWorkspaceRequests = RebuildWorkspaceRequests.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RebuildWorkspacesRequest]
   }
 }

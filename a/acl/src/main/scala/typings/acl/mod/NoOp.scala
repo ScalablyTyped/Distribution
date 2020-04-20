@@ -13,7 +13,6 @@ object NoOp {
   @scala.inline
   def apply(end: () => Unit, params: /* repeated */ String => NoOp): NoOp = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), params = js.Any.fromFunction1(params))
-  
     __obj.asInstanceOf[NoOp]
   }
 }

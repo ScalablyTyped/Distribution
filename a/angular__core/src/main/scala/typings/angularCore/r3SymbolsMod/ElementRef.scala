@@ -45,7 +45,6 @@ object ElementRef {
   @scala.inline
   def apply[T /* <: js.Any */](nativeElement: T): ElementRef[T] = {
     val __obj = js.Dynamic.literal(nativeElement = nativeElement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElementRef[T]]
   }
 }

@@ -18,7 +18,6 @@ object ReadingpositionsResource {
   @scala.inline
   def apply(get: AnonAltContentVersion => Request_[ReadingPosition], setPosition: AnonAction => Request_[Unit]): ReadingpositionsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), setPosition = js.Any.fromFunction1(setPosition))
-  
     __obj.asInstanceOf[ReadingpositionsResource]
   }
 }

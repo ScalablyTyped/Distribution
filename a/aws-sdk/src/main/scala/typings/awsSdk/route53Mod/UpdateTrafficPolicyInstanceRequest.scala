@@ -33,7 +33,6 @@ object UpdateTrafficPolicyInstanceRequest {
     TrafficPolicyVersion: TrafficPolicyVersion
   ): UpdateTrafficPolicyInstanceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], TTL = TTL.asInstanceOf[js.Any], TrafficPolicyId = TrafficPolicyId.asInstanceOf[js.Any], TrafficPolicyVersion = TrafficPolicyVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTrafficPolicyInstanceRequest]
   }
 }

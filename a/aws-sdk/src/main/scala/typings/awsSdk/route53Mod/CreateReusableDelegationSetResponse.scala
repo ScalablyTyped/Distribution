@@ -20,7 +20,6 @@ object CreateReusableDelegationSetResponse {
   @scala.inline
   def apply(DelegationSet: DelegationSet, Location: ResourceURI): CreateReusableDelegationSetResponse = {
     val __obj = js.Dynamic.literal(DelegationSet = DelegationSet.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateReusableDelegationSetResponse]
   }
 }

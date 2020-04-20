@@ -16,7 +16,6 @@ object DisassociateWebACLRequest {
   @scala.inline
   def apply(ResourceArn: ResourceArn): DisassociateWebACLRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateWebACLRequest]
   }
 }

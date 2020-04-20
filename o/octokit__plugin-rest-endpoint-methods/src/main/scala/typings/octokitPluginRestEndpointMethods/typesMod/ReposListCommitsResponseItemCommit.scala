@@ -26,7 +26,6 @@ object ReposListCommitsResponseItemCommit {
     verification: ReposListCommitsResponseItemCommitVerification
   ): ReposListCommitsResponseItemCommit = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposListCommitsResponseItemCommit]
   }
 }

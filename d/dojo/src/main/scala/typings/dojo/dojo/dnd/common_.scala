@@ -44,7 +44,6 @@ object common_ {
     manager: () => js.Any
   ): common_ = {
     val __obj = js.Dynamic.literal(getCopyKeyState = js.Any.fromFunction1(getCopyKeyState), getUniqueId = js.Any.fromFunction0(getUniqueId), isFormElement = js.Any.fromFunction1(isFormElement), manager = js.Any.fromFunction0(manager))
-  
     __obj.asInstanceOf[common_]
   }
 }

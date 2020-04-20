@@ -22,22 +22,20 @@ trait Methods extends js.Object
 
 object Methods {
   @scala.inline
-  def DELETE: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE = "DELETE".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE]
   @scala.inline
-  def GET: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET = this.cast("GET")
+  def GET: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET = "GET".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET]
   @scala.inline
-  def POST: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST = this.cast("POST")
+  def POST: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST = "POST".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST]
   @scala.inline
-  def PUT: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT = this.cast("PUT")
+  def PUT: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT = "PUT".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def delete: delete_ = this.cast("delete")
+  def get: get_ = "get".asInstanceOf[get_]
   @scala.inline
-  def get: get_ = this.cast("get")
+  def post: post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def post: post_ = this.cast("post")
-  @scala.inline
-  def put: put_ = this.cast("put")
+  def put: put_ = "put".asInstanceOf[put_]
 }
 

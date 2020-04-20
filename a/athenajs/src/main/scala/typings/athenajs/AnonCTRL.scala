@@ -27,7 +27,6 @@ object AnonCTRL {
   @scala.inline
   def apply(CTRL: `17`, DOWN: `40`, ENTER: `13`, ESCAPE: `27`, LEFT: `37`, RIGHT: `39`, SPACE: `32`, UP: `38`): AnonCTRL = {
     val __obj = js.Dynamic.literal(CTRL = CTRL.asInstanceOf[js.Any], DOWN = DOWN.asInstanceOf[js.Any], ENTER = ENTER.asInstanceOf[js.Any], ESCAPE = ESCAPE.asInstanceOf[js.Any], LEFT = LEFT.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any], SPACE = SPACE.asInstanceOf[js.Any], UP = UP.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCTRL]
   }
 }

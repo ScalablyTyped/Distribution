@@ -32,42 +32,40 @@ trait BackgroundColor extends js.Object
 
 object BackgroundColor {
   @scala.inline
-  def bgBlack: typings.chalk.chalkStrings.bgBlack = this.cast("bgBlack")
+  def bgBlack: typings.chalk.chalkStrings.bgBlack = "bgBlack".asInstanceOf[typings.chalk.chalkStrings.bgBlack]
   @scala.inline
-  def bgBlackBright: typings.chalk.chalkStrings.bgBlackBright = this.cast("bgBlackBright")
+  def bgBlackBright: typings.chalk.chalkStrings.bgBlackBright = "bgBlackBright".asInstanceOf[typings.chalk.chalkStrings.bgBlackBright]
   @scala.inline
-  def bgBlue: typings.chalk.chalkStrings.bgBlue = this.cast("bgBlue")
+  def bgBlue: typings.chalk.chalkStrings.bgBlue = "bgBlue".asInstanceOf[typings.chalk.chalkStrings.bgBlue]
   @scala.inline
-  def bgBlueBright: typings.chalk.chalkStrings.bgBlueBright = this.cast("bgBlueBright")
+  def bgBlueBright: typings.chalk.chalkStrings.bgBlueBright = "bgBlueBright".asInstanceOf[typings.chalk.chalkStrings.bgBlueBright]
   @scala.inline
-  def bgCyan: typings.chalk.chalkStrings.bgCyan = this.cast("bgCyan")
+  def bgCyan: typings.chalk.chalkStrings.bgCyan = "bgCyan".asInstanceOf[typings.chalk.chalkStrings.bgCyan]
   @scala.inline
-  def bgCyanBright: typings.chalk.chalkStrings.bgCyanBright = this.cast("bgCyanBright")
+  def bgCyanBright: typings.chalk.chalkStrings.bgCyanBright = "bgCyanBright".asInstanceOf[typings.chalk.chalkStrings.bgCyanBright]
   @scala.inline
-  def bgGray: typings.chalk.chalkStrings.bgGray = this.cast("bgGray")
+  def bgGray: typings.chalk.chalkStrings.bgGray = "bgGray".asInstanceOf[typings.chalk.chalkStrings.bgGray]
   @scala.inline
-  def bgGreen: typings.chalk.chalkStrings.bgGreen = this.cast("bgGreen")
+  def bgGreen: typings.chalk.chalkStrings.bgGreen = "bgGreen".asInstanceOf[typings.chalk.chalkStrings.bgGreen]
   @scala.inline
-  def bgGreenBright: typings.chalk.chalkStrings.bgGreenBright = this.cast("bgGreenBright")
+  def bgGreenBright: typings.chalk.chalkStrings.bgGreenBright = "bgGreenBright".asInstanceOf[typings.chalk.chalkStrings.bgGreenBright]
   @scala.inline
-  def bgGrey: typings.chalk.chalkStrings.bgGrey = this.cast("bgGrey")
+  def bgGrey: typings.chalk.chalkStrings.bgGrey = "bgGrey".asInstanceOf[typings.chalk.chalkStrings.bgGrey]
   @scala.inline
-  def bgMagenta: typings.chalk.chalkStrings.bgMagenta = this.cast("bgMagenta")
+  def bgMagenta: typings.chalk.chalkStrings.bgMagenta = "bgMagenta".asInstanceOf[typings.chalk.chalkStrings.bgMagenta]
   @scala.inline
-  def bgMagentaBright: typings.chalk.chalkStrings.bgMagentaBright = this.cast("bgMagentaBright")
+  def bgMagentaBright: typings.chalk.chalkStrings.bgMagentaBright = "bgMagentaBright".asInstanceOf[typings.chalk.chalkStrings.bgMagentaBright]
   @scala.inline
-  def bgRed: typings.chalk.chalkStrings.bgRed = this.cast("bgRed")
+  def bgRed: typings.chalk.chalkStrings.bgRed = "bgRed".asInstanceOf[typings.chalk.chalkStrings.bgRed]
   @scala.inline
-  def bgRedBright: typings.chalk.chalkStrings.bgRedBright = this.cast("bgRedBright")
+  def bgRedBright: typings.chalk.chalkStrings.bgRedBright = "bgRedBright".asInstanceOf[typings.chalk.chalkStrings.bgRedBright]
   @scala.inline
-  def bgWhite: typings.chalk.chalkStrings.bgWhite = this.cast("bgWhite")
+  def bgWhite: typings.chalk.chalkStrings.bgWhite = "bgWhite".asInstanceOf[typings.chalk.chalkStrings.bgWhite]
   @scala.inline
-  def bgWhiteBright: typings.chalk.chalkStrings.bgWhiteBright = this.cast("bgWhiteBright")
+  def bgWhiteBright: typings.chalk.chalkStrings.bgWhiteBright = "bgWhiteBright".asInstanceOf[typings.chalk.chalkStrings.bgWhiteBright]
   @scala.inline
-  def bgYellow: typings.chalk.chalkStrings.bgYellow = this.cast("bgYellow")
+  def bgYellow: typings.chalk.chalkStrings.bgYellow = "bgYellow".asInstanceOf[typings.chalk.chalkStrings.bgYellow]
   @scala.inline
-  def bgYellowBright: typings.chalk.chalkStrings.bgYellowBright = this.cast("bgYellowBright")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def bgYellowBright: typings.chalk.chalkStrings.bgYellowBright = "bgYellowBright".asInstanceOf[typings.chalk.chalkStrings.bgYellowBright]
 }
 

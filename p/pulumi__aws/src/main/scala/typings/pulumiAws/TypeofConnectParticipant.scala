@@ -13,7 +13,6 @@ object TypeofConnectParticipant {
   @scala.inline
   def apply(Types: TypeofConnectParticipant): TypeofConnectParticipant = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofConnectParticipant]
   }
 }

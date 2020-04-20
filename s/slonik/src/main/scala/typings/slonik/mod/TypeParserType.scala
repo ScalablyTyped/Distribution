@@ -16,7 +16,6 @@ object TypeParserType {
   @scala.inline
   def apply[T](name: String, parse: String => T): TypeParserType[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
-  
     __obj.asInstanceOf[TypeParserType[T]]
   }
 }

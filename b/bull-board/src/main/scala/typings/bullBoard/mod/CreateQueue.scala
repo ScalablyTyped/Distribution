@@ -14,7 +14,6 @@ object CreateQueue {
   @scala.inline
   def apply(add: (String, QueueOptions) => Queue[_]): CreateQueue = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add))
-  
     __obj.asInstanceOf[CreateQueue]
   }
 }

@@ -13,12 +13,10 @@ trait ServiceWorkerUpdateViaCache extends js.Object
 
 object ServiceWorkerUpdateViaCache {
   @scala.inline
-  def all: typings.std.stdStrings.all = this.cast("all")
+  def all: typings.std.stdStrings.all = "all".asInstanceOf[typings.std.stdStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def imports: typings.std.stdStrings.imports = "imports".asInstanceOf[typings.std.stdStrings.imports]
   @scala.inline
-  def imports: typings.std.stdStrings.imports = this.cast("imports")
-  @scala.inline
-  def none: typings.std.stdStrings.none = this.cast("none")
+  def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
 }
 

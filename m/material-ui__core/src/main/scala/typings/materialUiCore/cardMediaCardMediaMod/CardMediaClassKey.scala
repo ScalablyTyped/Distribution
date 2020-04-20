@@ -12,10 +12,8 @@ trait CardMediaClassKey extends js.Object
 
 object CardMediaClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def media: typings.materialUiCore.materialUiCoreStrings.media = "media".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.media]
   @scala.inline
-  def media: typings.materialUiCore.materialUiCoreStrings.media = this.cast("media")
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

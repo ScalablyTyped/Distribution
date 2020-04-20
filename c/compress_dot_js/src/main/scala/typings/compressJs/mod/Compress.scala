@@ -17,7 +17,6 @@ object Compress {
     compress: (js.Array[File], CompressOptions) => js.Promise[js.Array[CompressResult]]
   ): Compress = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction2(attach), compress = js.Any.fromFunction2(compress))
-  
     __obj.asInstanceOf[Compress]
   }
 }

@@ -24,13 +24,11 @@ object A11YPanelState {
     violations: js.Array[Result]
   ): A11YPanelState = {
     val __obj = js.Dynamic.literal(incomplete = incomplete.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], violations = violations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[A11YPanelState]
   }
   @scala.inline
   def A11YPanelErrorState(error: js.Any, status: error): A11YPanelState = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[A11YPanelState]
   }
 }

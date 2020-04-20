@@ -12,7 +12,6 @@ object AnonAntLocaleAnonDatePickerView {
   @scala.inline
   def apply(antLocale: AnonDatePickerView): AnonAntLocaleAnonDatePickerView = {
     val __obj = js.Dynamic.literal(antLocale = antLocale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAntLocaleAnonDatePickerView]
   }
 }

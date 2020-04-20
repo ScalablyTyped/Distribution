@@ -15,16 +15,14 @@ trait ReactourStepPosition extends js.Object
 
 object ReactourStepPosition {
   @scala.inline
-  def bottom: typings.reactour.reactourStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactour.reactourStrings.bottom = "bottom".asInstanceOf[typings.reactour.reactourStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.reactour.reactourStrings.center = "center".asInstanceOf[typings.reactour.reactourStrings.center]
   @scala.inline
-  def center: typings.reactour.reactourStrings.center = this.cast("center")
+  def left: typings.reactour.reactourStrings.left = "left".asInstanceOf[typings.reactour.reactourStrings.left]
   @scala.inline
-  def left: typings.reactour.reactourStrings.left = this.cast("left")
+  def right: typings.reactour.reactourStrings.right = "right".asInstanceOf[typings.reactour.reactourStrings.right]
   @scala.inline
-  def right: typings.reactour.reactourStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.reactour.reactourStrings.top = this.cast("top")
+  def top: typings.reactour.reactourStrings.top = "top".asInstanceOf[typings.reactour.reactourStrings.top]
 }
 

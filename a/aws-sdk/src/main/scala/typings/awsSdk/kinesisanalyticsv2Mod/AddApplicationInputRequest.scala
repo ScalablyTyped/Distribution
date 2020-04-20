@@ -24,7 +24,6 @@ object AddApplicationInputRequest {
   @scala.inline
   def apply(ApplicationName: ApplicationName, CurrentApplicationVersionId: ApplicationVersionId, Input: Input): AddApplicationInputRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddApplicationInputRequest]
   }
 }

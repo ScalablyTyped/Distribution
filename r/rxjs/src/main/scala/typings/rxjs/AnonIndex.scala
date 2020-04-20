@@ -24,7 +24,6 @@ object AnonIndex {
     subscription: Subscription
   ): AnonIndex[T] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], subscriber = subscriber.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndex[T]]
   }
 }

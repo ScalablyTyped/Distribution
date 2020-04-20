@@ -14,7 +14,6 @@ object Typeofcpu {
   @scala.inline
   def apply(getInfo: js.Function1[/* info */ CpuInfo, Unit] => Unit): Typeofcpu = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo))
-  
     __obj.asInstanceOf[Typeofcpu]
   }
 }

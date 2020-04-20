@@ -17,7 +17,6 @@ object FormListProps {
     name: String | Double | (js.Array[String | Double])
   ): FormListProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FormListProps]
   }
 }

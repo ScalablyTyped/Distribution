@@ -14,7 +14,6 @@ object State {
   @scala.inline
   def apply(dispatch: Dispatch_[EventTarget]): State = {
     val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

@@ -41,52 +41,50 @@ trait token extends js.Object
 
 object token {
   @scala.inline
-  def D: typings.flatpickr.flatpickrStrings.D = this.cast("D")
+  def D: typings.flatpickr.flatpickrStrings.D = "D".asInstanceOf[typings.flatpickr.flatpickrStrings.D]
   @scala.inline
-  def F: typings.flatpickr.flatpickrStrings.F = this.cast("F")
+  def F: typings.flatpickr.flatpickrStrings.F = "F".asInstanceOf[typings.flatpickr.flatpickrStrings.F]
   @scala.inline
-  def G: typings.flatpickr.flatpickrStrings.G = this.cast("G")
+  def G: typings.flatpickr.flatpickrStrings.G = "G".asInstanceOf[typings.flatpickr.flatpickrStrings.G]
   @scala.inline
-  def H: typings.flatpickr.flatpickrStrings.H = this.cast("H")
+  def H: typings.flatpickr.flatpickrStrings.H = "H".asInstanceOf[typings.flatpickr.flatpickrStrings.H]
   @scala.inline
-  def J: typings.flatpickr.flatpickrStrings.J = this.cast("J")
+  def J: typings.flatpickr.flatpickrStrings.J = "J".asInstanceOf[typings.flatpickr.flatpickrStrings.J]
   @scala.inline
-  def K: typings.flatpickr.flatpickrStrings.K = this.cast("K")
+  def K: typings.flatpickr.flatpickrStrings.K = "K".asInstanceOf[typings.flatpickr.flatpickrStrings.K]
   @scala.inline
-  def M: typings.flatpickr.flatpickrStrings.M = this.cast("M")
+  def M: typings.flatpickr.flatpickrStrings.M = "M".asInstanceOf[typings.flatpickr.flatpickrStrings.M]
   @scala.inline
-  def S: typings.flatpickr.flatpickrStrings.S = this.cast("S")
+  def S: typings.flatpickr.flatpickrStrings.S = "S".asInstanceOf[typings.flatpickr.flatpickrStrings.S]
   @scala.inline
-  def U: typings.flatpickr.flatpickrStrings.U = this.cast("U")
+  def U: typings.flatpickr.flatpickrStrings.U = "U".asInstanceOf[typings.flatpickr.flatpickrStrings.U]
   @scala.inline
-  def W: typings.flatpickr.flatpickrStrings.W = this.cast("W")
+  def W: typings.flatpickr.flatpickrStrings.W = "W".asInstanceOf[typings.flatpickr.flatpickrStrings.W]
   @scala.inline
-  def Y: typings.flatpickr.flatpickrStrings.Y = this.cast("Y")
+  def Y: typings.flatpickr.flatpickrStrings.Y = "Y".asInstanceOf[typings.flatpickr.flatpickrStrings.Y]
   @scala.inline
-  def Z: typings.flatpickr.flatpickrStrings.Z = this.cast("Z")
+  def Z: typings.flatpickr.flatpickrStrings.Z = "Z".asInstanceOf[typings.flatpickr.flatpickrStrings.Z]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def d: d_ = "d".asInstanceOf[d_]
   @scala.inline
-  def d: d_ = this.cast("d")
+  def h: h_ = "h".asInstanceOf[h_]
   @scala.inline
-  def h: h_ = this.cast("h")
+  def i: typings.flatpickr.flatpickrStrings.i = "i".asInstanceOf[typings.flatpickr.flatpickrStrings.i]
   @scala.inline
-  def i: typings.flatpickr.flatpickrStrings.i = this.cast("i")
+  def j: j_ = "j".asInstanceOf[j_]
   @scala.inline
-  def j: j_ = this.cast("j")
+  def l: typings.flatpickr.flatpickrStrings.l = "l".asInstanceOf[typings.flatpickr.flatpickrStrings.l]
   @scala.inline
-  def l: typings.flatpickr.flatpickrStrings.l = this.cast("l")
+  def m: m_ = "m".asInstanceOf[m_]
   @scala.inline
-  def m: m_ = this.cast("m")
+  def n: typings.flatpickr.flatpickrStrings.n = "n".asInstanceOf[typings.flatpickr.flatpickrStrings.n]
   @scala.inline
-  def n: typings.flatpickr.flatpickrStrings.n = this.cast("n")
+  def s: s_ = "s".asInstanceOf[s_]
   @scala.inline
-  def s: s_ = this.cast("s")
+  def u: u_ = "u".asInstanceOf[u_]
   @scala.inline
-  def u: u_ = this.cast("u")
+  def w: w_ = "w".asInstanceOf[w_]
   @scala.inline
-  def w: w_ = this.cast("w")
-  @scala.inline
-  def y: y_ = this.cast("y")
+  def y: y_ = "y".asInstanceOf[y_]
 }
 

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-crypto__ie11-detection"
-version := "0.1.0-preview.4-b064dd"
+version := "0.1.0-preview.4-d7f692"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -19,7 +19,6 @@ object TablesorterCache {
   @scala.inline
   def apply(colMax: js.Array[_], normalized: js.Array[_]): TablesorterCache = {
     val __obj = js.Dynamic.literal(colMax = colMax.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TablesorterCache]
   }
 }

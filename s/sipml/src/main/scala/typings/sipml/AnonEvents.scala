@@ -15,7 +15,6 @@ object AnonEvents {
   @scala.inline
   def apply(events: EventSubscriptionType | js.Array[EventSubscriptionType], listener: Event => Unit): AnonEvents = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], listener = js.Any.fromFunction1(listener))
-  
     __obj.asInstanceOf[AnonEvents]
   }
 }

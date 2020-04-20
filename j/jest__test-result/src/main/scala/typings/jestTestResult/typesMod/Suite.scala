@@ -14,7 +14,6 @@ object Suite {
   @scala.inline
   def apply(suites: js.Array[Suite], tests: js.Array[AssertionResult], title: String): Suite = {
     val __obj = js.Dynamic.literal(suites = suites.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Suite]
   }
 }

@@ -12,7 +12,6 @@ object AnonOnFirstInputDelay {
   @scala.inline
   def apply(onFirstInputDelay: js.Function): AnonOnFirstInputDelay = {
     val __obj = js.Dynamic.literal(onFirstInputDelay = onFirstInputDelay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnFirstInputDelay]
   }
 }

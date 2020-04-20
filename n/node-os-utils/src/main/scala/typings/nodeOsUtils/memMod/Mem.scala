@@ -20,7 +20,6 @@ object Mem {
     used: () => js.Promise[MemUsedInfo]
   ): Mem = {
     val __obj = js.Dynamic.literal(free = js.Any.fromFunction0(free), info = js.Any.fromFunction0(info), totalMem = js.Any.fromFunction0(totalMem), used = js.Any.fromFunction0(used))
-  
     __obj.asInstanceOf[Mem]
   }
 }

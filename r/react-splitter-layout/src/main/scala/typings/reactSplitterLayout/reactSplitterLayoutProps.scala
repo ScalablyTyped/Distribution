@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactSplitterLayoutProps {
   @scala.inline
-  def ReactSplitterLayoutProps: SplitterLayoutProps.type = typings.reactSplitterLayout.mod.SplitterLayoutProps
+  def ReactSplitterLayoutProps: SplitterLayoutProps.type = SplitterLayoutProps
   type ReactSplitterLayoutProps = SplitterLayoutProps
 }
 

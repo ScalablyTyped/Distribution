@@ -43,7 +43,6 @@ object Tracing {
   @scala.inline
   def apply(categories: String, disable: () => Unit, enable: () => Unit, enabled: Boolean): Tracing = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Tracing]
   }
 }

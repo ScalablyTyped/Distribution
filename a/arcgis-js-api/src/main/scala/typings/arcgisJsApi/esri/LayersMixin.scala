@@ -25,7 +25,7 @@ trait LayersMixin extends js.Object {
   def add(layer: js.Promise[_]): Unit = js.native
   def add(layer: js.Promise[_], index: Double): Unit = js.native
   /**
-    * Adds a layer to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers).
+    * Adds a layer to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers). The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-add](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-add), [after-add](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-add), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#add)
     *
@@ -36,7 +36,7 @@ trait LayersMixin extends js.Object {
   def add(layer: Layer): Unit = js.native
   def add(layer: Layer, index: Double): Unit = js.native
   /**
-    * Adds a layer or an array of layers to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers).
+    * Adds a layer or an array of layers to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers). The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-add](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-add), [after-add](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-add), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.  The [push()](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#push) method on the layers collection also can be used to add a layer or layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#addMany)
     *
@@ -56,7 +56,7 @@ trait LayersMixin extends js.Object {
     */
   def findLayerById(layerId: String): Layer = js.native
   /**
-    * Removes the specified layer from the layers collection.
+    * Removes the specified layer from the layers collection. The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-remove), [after-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-remove), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#remove)
     *
@@ -65,7 +65,7 @@ trait LayersMixin extends js.Object {
     */
   def remove(layer: Layer): Layer = js.native
   /**
-    * Removes all layers.
+    * Removes all layers. The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-remove), [after-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-remove), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#removeAll)
     *
@@ -73,7 +73,7 @@ trait LayersMixin extends js.Object {
     */
   def removeAll(): js.Array[Layer] = js.native
   /**
-    * Removes the specified layers.
+    * Removes the specified layers. The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-remove), [after-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-remove), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#removeMany)
     *
@@ -82,7 +82,7 @@ trait LayersMixin extends js.Object {
     */
   def removeMany(layers: js.Array[Layer]): js.Array[Layer] = js.native
   /**
-    * Changes the layer order. The first layer added is always the base layer, even if its order is changed.
+    * Changes the layer order. The first layer added is always the base layer, even if its order is changed. The [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) event will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#reorder)
     *

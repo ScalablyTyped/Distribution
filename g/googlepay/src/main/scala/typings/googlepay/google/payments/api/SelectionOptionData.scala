@@ -20,7 +20,6 @@ object SelectionOptionData {
   @scala.inline
   def apply(id: String): SelectionOptionData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectionOptionData]
   }
 }

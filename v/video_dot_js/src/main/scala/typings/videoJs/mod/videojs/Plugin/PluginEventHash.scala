@@ -25,7 +25,6 @@ object PluginEventHash {
   @scala.inline
   def apply(instance: typings.videoJs.mod.videojs.Plugin, name: String, plugin: String): PluginEventHash = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginEventHash]
   }
 }

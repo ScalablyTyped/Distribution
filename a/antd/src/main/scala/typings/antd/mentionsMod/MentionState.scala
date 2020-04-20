@@ -12,7 +12,6 @@ object MentionState {
   @scala.inline
   def apply(focused: Boolean): MentionState = {
     val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MentionState]
   }
 }

@@ -22,7 +22,6 @@ object HelloJSEvent {
     on: (String, js.Function1[/* auth */ HelloJSEventArgument, Unit]) => HelloJSStatic
   ): HelloJSEvent = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), emitAfter = js.Any.fromFunction0(emitAfter), findEvents = js.Any.fromFunction2(findEvents), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on))
-  
     __obj.asInstanceOf[HelloJSEvent]
   }
 }

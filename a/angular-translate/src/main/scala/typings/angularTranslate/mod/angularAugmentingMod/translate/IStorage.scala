@@ -13,7 +13,6 @@ object IStorage {
   @scala.inline
   def apply(get: String => String, put: (String, String) => Unit): IStorage = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), put = js.Any.fromFunction2(put))
-  
     __obj.asInstanceOf[IStorage]
   }
 }

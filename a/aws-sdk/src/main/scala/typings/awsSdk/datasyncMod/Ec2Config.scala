@@ -20,7 +20,6 @@ object Ec2Config {
   @scala.inline
   def apply(SecurityGroupArns: Ec2SecurityGroupArnList, SubnetArn: Ec2SubnetArn): Ec2Config = {
     val __obj = js.Dynamic.literal(SecurityGroupArns = SecurityGroupArns.asInstanceOf[js.Any], SubnetArn = SubnetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Ec2Config]
   }
 }

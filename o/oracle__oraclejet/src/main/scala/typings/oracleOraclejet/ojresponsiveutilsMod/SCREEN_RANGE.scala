@@ -15,16 +15,14 @@ trait SCREEN_RANGE extends js.Object
 
 object SCREEN_RANGE {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lg: typings.oracleOraclejet.oracleOraclejetStrings.lg = "lg".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.lg]
   @scala.inline
-  def lg: typings.oracleOraclejet.oracleOraclejetStrings.lg = this.cast("lg")
+  def md: typings.oracleOraclejet.oracleOraclejetStrings.md = "md".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.md]
   @scala.inline
-  def md: typings.oracleOraclejet.oracleOraclejetStrings.md = this.cast("md")
+  def sm: typings.oracleOraclejet.oracleOraclejetStrings.sm = "sm".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.sm]
   @scala.inline
-  def sm: typings.oracleOraclejet.oracleOraclejetStrings.sm = this.cast("sm")
+  def xl: typings.oracleOraclejet.oracleOraclejetStrings.xl = "xl".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.xl]
   @scala.inline
-  def xl: typings.oracleOraclejet.oracleOraclejetStrings.xl = this.cast("xl")
-  @scala.inline
-  def xxl: typings.oracleOraclejet.oracleOraclejetStrings.xxl = this.cast("xxl")
+  def xxl: typings.oracleOraclejet.oracleOraclejetStrings.xxl = "xxl".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.xxl]
 }
 

@@ -27,22 +27,22 @@ class Appearance protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FAppearance: IModel = js.native
-  def `class`(): String = js.native
+  def `class`: String = js.native
   def `class`(newValue: String): js.Any = js.native
-  def containerAsControlBarButton(): ControlBarButton = js.native
-  def containerAsGridColumn(): GridColumn = js.native
-  def containerAsLayout(): Layout = js.native
-  def containerAsLayoutGridColumn(): LayoutGridColumn = js.native
-  def containerAsLayoutGridRow(): LayoutGridRow = js.native
-  def containerAsNavigationListItem(): NavigationListItem = js.native
-  def containerAsPage(): Page = js.native
-  def containerAsPageTemplate(): PageTemplate = js.native
-  def containerAsScrollContainerRegion(): ScrollContainerRegion = js.native
-  def containerAsTableCell(): TableCell = js.native
-  def containerAsTableRow(): TableRow = js.native
-  def containerAsWidget(): Widget = js.native
-  def designProperties(): IList[DesignPropertyValue] = js.native
-  def style(): String = js.native
+  def containerAsControlBarButton: ControlBarButton = js.native
+  def containerAsGridColumn: GridColumn = js.native
+  def containerAsLayout: Layout = js.native
+  def containerAsLayoutGridColumn: LayoutGridColumn = js.native
+  def containerAsLayoutGridRow: LayoutGridRow = js.native
+  def containerAsNavigationListItem: NavigationListItem = js.native
+  def containerAsPage: Page = js.native
+  def containerAsPageTemplate: PageTemplate = js.native
+  def containerAsScrollContainerRegion: ScrollContainerRegion = js.native
+  def containerAsTableCell: TableCell = js.native
+  def containerAsTableRow: TableRow = js.native
+  def containerAsWidget: Widget = js.native
+  def designProperties: IList[DesignPropertyValue] = js.native
+  def style: String = js.native
   def style(newValue: String): js.Any = js.native
 }
 

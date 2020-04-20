@@ -20,7 +20,6 @@ object Segment {
   @scala.inline
   def apply(SegmentNumber: NonNegativeInteger, TotalSegments: TotalSegmentsInteger): Segment = {
     val __obj = js.Dynamic.literal(SegmentNumber = SegmentNumber.asInstanceOf[js.Any], TotalSegments = TotalSegments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Segment]
   }
 }

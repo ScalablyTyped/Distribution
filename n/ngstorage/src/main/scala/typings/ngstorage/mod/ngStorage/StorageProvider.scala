@@ -27,7 +27,6 @@ object StorageProvider {
     supported: () => Boolean
   ): StorageProvider = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), setDeserializer = js.Any.fromFunction1(setDeserializer), setKeyPrefix = js.Any.fromFunction1(setKeyPrefix), setSerializer = js.Any.fromFunction1(setSerializer), supported = js.Any.fromFunction0(supported))
-  
     __obj.asInstanceOf[StorageProvider]
   }
 }

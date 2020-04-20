@@ -26,7 +26,6 @@ object ExecutionContext {
     variableValues: StringDictionary[js.Any]
   ): ExecutionContext = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], rootValue = rootValue.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], variableValues = variableValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecutionContext]
   }
 }

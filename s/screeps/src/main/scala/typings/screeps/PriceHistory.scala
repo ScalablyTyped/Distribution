@@ -24,7 +24,6 @@ object PriceHistory {
     volume: Double
   ): PriceHistory = {
     val __obj = js.Dynamic.literal(avgPrice = avgPrice.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], stddevPrice = stddevPrice.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PriceHistory]
   }
 }

@@ -235,6 +235,7 @@ trait geometryEngine extends js.Object {
   def geodesicBuffer(geometry: Geometry_, distance: Double, unit: String, unionResults: Boolean): Polygon | js.Array[Polygon] = js.native
   def geodesicBuffer(geometry: Geometry_, distance: Double, unit: Double): Polygon | js.Array[Polygon] = js.native
   def geodesicBuffer(geometry: Geometry_, distance: Double, unit: Double, unionResults: Boolean): Polygon | js.Array[Polygon] = js.native
+  def geodesicDensify(geometry: Polygon, maxSegmentLength: Double): Geometry_ = js.native
   def geodesicDensify(geometry: Polygon, maxSegmentLength: Double, maxSegmentLengthUnit: String): Geometry_ = js.native
   def geodesicDensify(geometry: Polygon, maxSegmentLength: Double, maxSegmentLengthUnit: Double): Geometry_ = js.native
   /**
@@ -243,10 +244,11 @@ trait geometryEngine extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#geodesicDensify)
     *
     * @param geometry A polyline or polygon to densify.
-    * @param maxSegmentLength The maximum segment length allowed. This must be a positive value.
-    * @param maxSegmentLengthUnit Measurement unit for `maxSegmentLength`. If a unit is not specified, the units are considered to be the same as the units of the `geometry`. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
+    * @param maxSegmentLength The maximum segment length allowed (in meters if a `maxSegmentLengthUnit` is not provided). This must be a positive value.
+    * @param maxSegmentLengthUnit Measurement unit for `maxSegmentLength`. If not provided, the unit will default to `meters`. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER). **Possible Values:** meters | feet | kilometers | miles | nautical-miles | yards
     *
     */
+  def geodesicDensify(geometry: Polyline, maxSegmentLength: Double): Geometry_ = js.native
   def geodesicDensify(geometry: Polyline, maxSegmentLength: Double, maxSegmentLengthUnit: String): Geometry_ = js.native
   def geodesicDensify(geometry: Polyline, maxSegmentLength: Double, maxSegmentLengthUnit: Double): Geometry_ = js.native
   /**

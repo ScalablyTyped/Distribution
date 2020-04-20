@@ -17,14 +17,12 @@ trait sType extends js.Object
 
 object sType {
   @scala.inline
-  def bold: typings.spectacle.spectacleStrings.bold = this.cast("bold")
+  def bold: typings.spectacle.spectacleStrings.bold = "bold".asInstanceOf[typings.spectacle.spectacleStrings.bold]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def italic: typings.spectacle.spectacleStrings.italic = "italic".asInstanceOf[typings.spectacle.spectacleStrings.italic]
   @scala.inline
-  def italic: typings.spectacle.spectacleStrings.italic = this.cast("italic")
+  def `line-through`: typings.spectacle.spectacleStrings.`line-through` = "line-through".asInstanceOf[typings.spectacle.spectacleStrings.`line-through`]
   @scala.inline
-  def `line-through`: typings.spectacle.spectacleStrings.`line-through` = this.cast("line-through")
-  @scala.inline
-  def underline: typings.spectacle.spectacleStrings.underline = this.cast("underline")
+  def underline: typings.spectacle.spectacleStrings.underline = "underline".asInstanceOf[typings.spectacle.spectacleStrings.underline]
 }
 

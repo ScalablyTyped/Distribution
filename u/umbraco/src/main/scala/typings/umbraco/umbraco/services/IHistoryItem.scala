@@ -20,7 +20,6 @@ object IHistoryItem {
   @scala.inline
   def apply(icon: String, link: String, name: String): IHistoryItem = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IHistoryItem]
   }
 }

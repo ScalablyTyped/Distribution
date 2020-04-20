@@ -22,7 +22,6 @@ object IteratorResult {
   @scala.inline
   def IteratorReturnResult[T, TReturn](done: `true`, value: TReturn): IteratorResult[T, TReturn] = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IteratorResult[T, TReturn]]
   }
 }

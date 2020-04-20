@@ -13,7 +13,6 @@ object Combine {
   @scala.inline
   def apply(draggableId: DraggableId, droppableId: DroppableId): Combine = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], droppableId = droppableId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Combine]
   }
 }

@@ -24,7 +24,6 @@ object TransformationDescriptor {
     string: String
   ): TransformationDescriptor = {
     val __obj = js.Dynamic.literal(diffMatrix = diffMatrix.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], globalMatrix = globalMatrix.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], localMatrix = localMatrix.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransformationDescriptor]
   }
 }

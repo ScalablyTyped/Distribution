@@ -20,7 +20,6 @@ object UpdateAccountSettingsRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, AccountSettings: AccountSettings): UpdateAccountSettingsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], AccountSettings = AccountSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateAccountSettingsRequest]
   }
 }

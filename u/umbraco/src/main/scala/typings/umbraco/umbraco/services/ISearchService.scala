@@ -74,7 +74,6 @@ object ISearchService {
     searchMembers: ISearchArgs => IPromise[js.Array[ISearchMember]]
   ): ISearchService = {
     val __obj = js.Dynamic.literal(searchAll = js.Any.fromFunction1(searchAll), searchContent = js.Any.fromFunction1(searchContent), searchMedia = js.Any.fromFunction1(searchMedia), searchMembers = js.Any.fromFunction1(searchMembers))
-  
     __obj.asInstanceOf[ISearchService]
   }
 }

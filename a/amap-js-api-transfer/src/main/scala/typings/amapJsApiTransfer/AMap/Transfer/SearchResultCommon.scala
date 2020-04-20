@@ -38,7 +38,6 @@ object SearchResultCommon {
     taxi_cost: Double
   ): SearchResultCommon = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], plans = plans.asInstanceOf[js.Any], taxi_cost = taxi_cost.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchResultCommon]
   }
 }

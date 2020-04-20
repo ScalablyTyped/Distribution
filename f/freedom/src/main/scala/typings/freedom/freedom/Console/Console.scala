@@ -22,7 +22,6 @@ object Console {
     warn: (String, String) => js.Promise[Unit]
   ): Console = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction2(debug), error = js.Any.fromFunction2(error), info = js.Any.fromFunction2(info), log = js.Any.fromFunction2(log), warn = js.Any.fromFunction2(warn))
-  
     __obj.asInstanceOf[Console]
   }
 }

@@ -18,22 +18,20 @@ trait QRCodeErrorCorrectionLevel extends js.Object
 
 object QRCodeErrorCorrectionLevel {
   @scala.inline
-  def H: typings.qrcode.qrcodeStrings.H = this.cast("H")
+  def H: typings.qrcode.qrcodeStrings.H = "H".asInstanceOf[typings.qrcode.qrcodeStrings.H]
   @scala.inline
-  def L: typings.qrcode.qrcodeStrings.L = this.cast("L")
+  def L: typings.qrcode.qrcodeStrings.L = "L".asInstanceOf[typings.qrcode.qrcodeStrings.L]
   @scala.inline
-  def M: typings.qrcode.qrcodeStrings.M = this.cast("M")
+  def M: typings.qrcode.qrcodeStrings.M = "M".asInstanceOf[typings.qrcode.qrcodeStrings.M]
   @scala.inline
-  def Q: typings.qrcode.qrcodeStrings.Q = this.cast("Q")
+  def Q: typings.qrcode.qrcodeStrings.Q = "Q".asInstanceOf[typings.qrcode.qrcodeStrings.Q]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.qrcode.qrcodeStrings.high = "high".asInstanceOf[typings.qrcode.qrcodeStrings.high]
   @scala.inline
-  def high: typings.qrcode.qrcodeStrings.high = this.cast("high")
+  def low: typings.qrcode.qrcodeStrings.low = "low".asInstanceOf[typings.qrcode.qrcodeStrings.low]
   @scala.inline
-  def low: typings.qrcode.qrcodeStrings.low = this.cast("low")
+  def medium: typings.qrcode.qrcodeStrings.medium = "medium".asInstanceOf[typings.qrcode.qrcodeStrings.medium]
   @scala.inline
-  def medium: typings.qrcode.qrcodeStrings.medium = this.cast("medium")
-  @scala.inline
-  def quartile: typings.qrcode.qrcodeStrings.quartile = this.cast("quartile")
+  def quartile: typings.qrcode.qrcodeStrings.quartile = "quartile".asInstanceOf[typings.qrcode.qrcodeStrings.quartile]
 }
 

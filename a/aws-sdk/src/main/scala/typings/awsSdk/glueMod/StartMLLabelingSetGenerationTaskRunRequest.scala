@@ -20,7 +20,6 @@ object StartMLLabelingSetGenerationTaskRunRequest {
   @scala.inline
   def apply(OutputS3Path: UriString, TransformId: HashString): StartMLLabelingSetGenerationTaskRunRequest = {
     val __obj = js.Dynamic.literal(OutputS3Path = OutputS3Path.asInstanceOf[js.Any], TransformId = TransformId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartMLLabelingSetGenerationTaskRunRequest]
   }
 }

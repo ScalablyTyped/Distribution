@@ -47,7 +47,6 @@ object UploadsService {
     listUploads: AnonReverse => MapiRequest
   ): UploadsService = {
     val __obj = js.Dynamic.literal(createUpload = js.Any.fromFunction1(createUpload), createUploadCredentials = js.Any.fromFunction0(createUploadCredentials), deleteUpload = js.Any.fromFunction1(deleteUpload), getUpload = js.Any.fromFunction1(getUpload), listUploads = js.Any.fromFunction1(listUploads))
-  
     __obj.asInstanceOf[UploadsService]
   }
 }

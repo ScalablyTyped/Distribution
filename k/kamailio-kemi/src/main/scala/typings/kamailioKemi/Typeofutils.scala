@@ -12,7 +12,6 @@ object Typeofutils {
   @scala.inline
   def apply(xcap_auth_status: (String, String) => Double): Typeofutils = {
     val __obj = js.Dynamic.literal(xcap_auth_status = js.Any.fromFunction2(xcap_auth_status))
-  
     __obj.asInstanceOf[Typeofutils]
   }
 }

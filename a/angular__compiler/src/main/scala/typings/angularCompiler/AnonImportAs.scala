@@ -14,7 +14,6 @@ object AnonImportAs {
   @scala.inline
   def apply(importAs: StaticSymbol, symbol: StaticSymbol): AnonImportAs = {
     val __obj = js.Dynamic.literal(importAs = importAs.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonImportAs]
   }
 }

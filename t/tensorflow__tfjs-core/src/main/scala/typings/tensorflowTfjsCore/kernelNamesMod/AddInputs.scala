@@ -14,7 +14,6 @@ object AddInputs {
   @scala.inline
   def apply(a: js.Any, b: js.Any): AddInputs = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddInputs]
   }
 }

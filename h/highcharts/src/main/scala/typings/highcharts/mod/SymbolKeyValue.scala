@@ -17,20 +17,18 @@ trait SymbolKeyValue extends js.Object
 
 object SymbolKeyValue {
   @scala.inline
-  def arc: typings.highcharts.highchartsStrings.arc = this.cast("arc")
+  def arc: typings.highcharts.highchartsStrings.arc = "arc".asInstanceOf[typings.highcharts.highchartsStrings.arc]
   @scala.inline
-  def callout: typings.highcharts.highchartsStrings.callout = this.cast("callout")
+  def callout: typings.highcharts.highchartsStrings.callout = "callout".asInstanceOf[typings.highcharts.highchartsStrings.callout]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typings.highcharts.highchartsStrings.circle]
   @scala.inline
-  def circle: typings.highcharts.highchartsStrings.circle = this.cast("circle")
+  def diamond: typings.highcharts.highchartsStrings.diamond = "diamond".asInstanceOf[typings.highcharts.highchartsStrings.diamond]
   @scala.inline
-  def diamond: typings.highcharts.highchartsStrings.diamond = this.cast("diamond")
+  def square: typings.highcharts.highchartsStrings.square = "square".asInstanceOf[typings.highcharts.highchartsStrings.square]
   @scala.inline
-  def square: typings.highcharts.highchartsStrings.square = this.cast("square")
+  def triangle: typings.highcharts.highchartsStrings.triangle = "triangle".asInstanceOf[typings.highcharts.highchartsStrings.triangle]
   @scala.inline
-  def triangle: typings.highcharts.highchartsStrings.triangle = this.cast("triangle")
-  @scala.inline
-  def `triangle-down`: typings.highcharts.highchartsStrings.`triangle-down` = this.cast("triangle-down")
+  def `triangle-down`: typings.highcharts.highchartsStrings.`triangle-down` = "triangle-down".asInstanceOf[typings.highcharts.highchartsStrings.`triangle-down`]
 }
 

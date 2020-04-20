@@ -12,10 +12,8 @@ trait TimeZoneStandard extends js.Object
 
 object TimeZoneStandard {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def iana: typings.microsoftGraph.microsoftGraphStrings.iana = "iana".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.iana]
   @scala.inline
-  def iana: typings.microsoftGraph.microsoftGraphStrings.iana = this.cast("iana")
-  @scala.inline
-  def windows: typings.microsoftGraph.microsoftGraphStrings.windows = this.cast("windows")
+  def windows: typings.microsoftGraph.microsoftGraphStrings.windows = "windows".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windows]
 }
 

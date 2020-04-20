@@ -14,7 +14,6 @@ object AnonBinary {
   @scala.inline
   def apply(_types: js.Any, binary: js.Any, text: js.Any): AnonBinary = {
     val __obj = js.Dynamic.literal(_types = _types.asInstanceOf[js.Any], binary = binary.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBinary]
   }
 }

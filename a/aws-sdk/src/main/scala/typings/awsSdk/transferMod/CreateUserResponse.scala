@@ -20,7 +20,6 @@ object CreateUserResponse {
   @scala.inline
   def apply(ServerId: ServerId, UserName: UserName): CreateUserResponse = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateUserResponse]
   }
 }

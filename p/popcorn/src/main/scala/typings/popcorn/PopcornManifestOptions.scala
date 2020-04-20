@@ -20,7 +20,6 @@ object PopcornManifestOptions {
     text: PopcornManifestOption
   ): PopcornManifestOptions = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PopcornManifestOptions]
   }
 }

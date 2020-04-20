@@ -13,7 +13,6 @@ object GoogleAPI {
   @scala.inline
   def apply(maps: Typeofmaps): GoogleAPI = {
     val __obj = js.Dynamic.literal(maps = maps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleAPI]
   }
 }

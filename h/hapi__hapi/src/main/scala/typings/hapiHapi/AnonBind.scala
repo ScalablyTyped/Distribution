@@ -13,7 +13,6 @@ object AnonBind {
   @scala.inline
   def apply(bind: js.Object, files: AnonRelativeTo): AnonBind = {
     val __obj = js.Dynamic.literal(bind = bind.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBind]
   }
 }

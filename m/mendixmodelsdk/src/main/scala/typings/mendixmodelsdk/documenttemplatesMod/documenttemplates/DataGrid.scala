@@ -26,8 +26,8 @@ class DataGrid protected () extends Grid {
   ) = this()
   @JSName("model")
   var model_FDataGrid: IModel = js.native
-  def columns(): IList[DataGridColumn] = js.native
-  def weights(): IList[Double] = js.native
+  def columns: IList[DataGridColumn] = js.native
+  def weights: IList[Double] = js.native
 }
 
 /* static members */

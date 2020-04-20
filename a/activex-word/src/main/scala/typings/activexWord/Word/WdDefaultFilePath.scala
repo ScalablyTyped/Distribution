@@ -44,40 +44,38 @@ trait WdDefaultFilePath extends js.Object
 
 object WdDefaultFilePath {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAutoRecoverPath: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdAutoRecoverPath: `5` = this.cast(5)
+  def wdBorderArtPath: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdBorderArtPath: `19` = this.cast(19)
+  def wdCurrentFolderPath: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdCurrentFolderPath: `14` = this.cast(14)
+  def wdDocumentsPath: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdDocumentsPath: `0` = this.cast(0)
+  def wdGraphicsFiltersPath: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdGraphicsFiltersPath: `10` = this.cast(10)
+  def wdPicturesPath: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdPicturesPath: `1` = this.cast(1)
+  def wdProgramPath: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdProgramPath: `9` = this.cast(9)
+  def wdProofingToolsPath: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdProofingToolsPath: `12` = this.cast(12)
+  def wdStartupPath: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdStartupPath: `8` = this.cast(8)
+  def wdStyleGalleryPath: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdStyleGalleryPath: `15` = this.cast(15)
+  def wdTempFilePath: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdTempFilePath: `13` = this.cast(13)
+  def wdTextConvertersPath: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdTextConvertersPath: `11` = this.cast(11)
+  def wdToolsPath: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdToolsPath: `6` = this.cast(6)
+  def wdTutorialPath: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdTutorialPath: `7` = this.cast(7)
+  def wdUserOptionsPath: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdUserOptionsPath: `4` = this.cast(4)
+  def wdUserTemplatesPath: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdUserTemplatesPath: `2` = this.cast(2)
-  @scala.inline
-  def wdWorkgroupTemplatesPath: `3` = this.cast(3)
+  def wdWorkgroupTemplatesPath: `3` = 3.asInstanceOf[`3`]
 }
 

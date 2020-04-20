@@ -29,7 +29,6 @@ object EventSeries {
   @scala.inline
   def apply(count: Input[Double], lastObservedTime: Input[String], state: Input[String]): EventSeries = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], lastObservedTime = lastObservedTime.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventSeries]
   }
 }

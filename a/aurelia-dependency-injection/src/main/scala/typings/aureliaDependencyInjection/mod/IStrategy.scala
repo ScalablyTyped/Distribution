@@ -15,16 +15,14 @@ trait IStrategy extends js.Object
 
 object IStrategy {
   @scala.inline
-  def `1`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`1` = this.cast(1)
+  def `1`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`1` = 1.asInstanceOf[typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`1`]
   @scala.inline
-  def `2`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`2` = this.cast(2)
+  def `2`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`2` = 2.asInstanceOf[typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`2`]
   @scala.inline
-  def `3`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`3` = this.cast(3)
+  def `3`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`3` = 3.asInstanceOf[typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`3`]
   @scala.inline
-  def `4`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`4` = this.cast(4)
+  def `4`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`4` = 4.asInstanceOf[typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`4`]
   @scala.inline
-  def `5`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `5`: typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`5` = 5.asInstanceOf[typings.aureliaDependencyInjection.aureliaDependencyInjectionNumbers.`5`]
 }
 

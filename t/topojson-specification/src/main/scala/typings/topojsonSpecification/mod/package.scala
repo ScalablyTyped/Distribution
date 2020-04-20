@@ -10,7 +10,7 @@ package object mod {
   type Objects[P /* <: typings.topojsonSpecification.mod.Properties */] = org.scalablytyped.runtime.StringDictionary[typings.topojsonSpecification.mod.GeometryObject[P]]
   type OrNull[T /* <: typings.topojsonSpecification.mod.Objects[js.Object] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: T[P] | topojson-specification.topojson-specification.NullObject}
-    */ typings.topojsonSpecification.topojsonSpecificationStrings.OrNull with T
+    */ typings.topojsonSpecification.topojsonSpecificationStrings.OrNull with org.scalablytyped.runtime.TopLevel[T]
   type Positions = js.Array[scala.Double]
   type Properties = typings.geojson.mod.GeoJsonProperties
 }

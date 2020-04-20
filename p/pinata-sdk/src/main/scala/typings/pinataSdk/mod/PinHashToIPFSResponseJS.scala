@@ -12,7 +12,6 @@ object PinHashToIPFSResponseJS {
   @scala.inline
   def apply(ipfsHash: String): PinHashToIPFSResponseJS = {
     val __obj = js.Dynamic.literal(ipfsHash = ipfsHash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PinHashToIPFSResponseJS]
   }
 }

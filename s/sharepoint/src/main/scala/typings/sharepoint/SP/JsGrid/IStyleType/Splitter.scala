@@ -21,7 +21,6 @@ object Splitter {
     outerBorderColor: js.Any
   ): Splitter = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], innerBorderColor = innerBorderColor.asInstanceOf[js.Any], leftInnerBorderColor = leftInnerBorderColor.asInstanceOf[js.Any], outerBorderColor = outerBorderColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Splitter]
   }
 }

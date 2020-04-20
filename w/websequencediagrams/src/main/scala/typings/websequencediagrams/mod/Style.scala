@@ -22,30 +22,28 @@ trait Style extends js.Object
 
 object Style {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.websequencediagrams.websequencediagramsStrings.default = "default".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.default]
   @scala.inline
-  def default: typings.websequencediagrams.websequencediagramsStrings.default = this.cast("default")
+  def earth: typings.websequencediagrams.websequencediagramsStrings.earth = "earth".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.earth]
   @scala.inline
-  def earth: typings.websequencediagrams.websequencediagramsStrings.earth = this.cast("earth")
+  def magazine: typings.websequencediagrams.websequencediagramsStrings.magazine = "magazine".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.magazine]
   @scala.inline
-  def magazine: typings.websequencediagrams.websequencediagramsStrings.magazine = this.cast("magazine")
+  def `modern-blue`: typings.websequencediagrams.websequencediagramsStrings.`modern-blue` = "modern-blue".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.`modern-blue`]
   @scala.inline
-  def `modern-blue`: typings.websequencediagrams.websequencediagramsStrings.`modern-blue` = this.cast("modern-blue")
+  def mscgen: typings.websequencediagrams.websequencediagramsStrings.mscgen = "mscgen".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.mscgen]
   @scala.inline
-  def mscgen: typings.websequencediagrams.websequencediagramsStrings.mscgen = this.cast("mscgen")
+  def napkin: typings.websequencediagrams.websequencediagramsStrings.napkin = "napkin".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.napkin]
   @scala.inline
-  def napkin: typings.websequencediagrams.websequencediagramsStrings.napkin = this.cast("napkin")
+  def omegapple: typings.websequencediagrams.websequencediagramsStrings.omegapple = "omegapple".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.omegapple]
   @scala.inline
-  def omegapple: typings.websequencediagrams.websequencediagramsStrings.omegapple = this.cast("omegapple")
+  def patent: typings.websequencediagrams.websequencediagramsStrings.patent = "patent".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.patent]
   @scala.inline
-  def patent: typings.websequencediagrams.websequencediagramsStrings.patent = this.cast("patent")
+  def qsd: typings.websequencediagrams.websequencediagramsStrings.qsd = "qsd".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.qsd]
   @scala.inline
-  def qsd: typings.websequencediagrams.websequencediagramsStrings.qsd = this.cast("qsd")
+  def rose: typings.websequencediagrams.websequencediagramsStrings.rose = "rose".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.rose]
   @scala.inline
-  def rose: typings.websequencediagrams.websequencediagramsStrings.rose = this.cast("rose")
+  def roundgreen: typings.websequencediagrams.websequencediagramsStrings.roundgreen = "roundgreen".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.roundgreen]
   @scala.inline
-  def roundgreen: typings.websequencediagrams.websequencediagramsStrings.roundgreen = this.cast("roundgreen")
-  @scala.inline
-  def vs2010: typings.websequencediagrams.websequencediagramsStrings.vs2010 = this.cast("vs2010")
+  def vs2010: typings.websequencediagrams.websequencediagramsStrings.vs2010 = "vs2010".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.vs2010]
 }
 

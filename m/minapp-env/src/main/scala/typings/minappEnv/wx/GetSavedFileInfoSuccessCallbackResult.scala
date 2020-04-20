@@ -15,7 +15,6 @@ object GetSavedFileInfoSuccessCallbackResult {
   @scala.inline
   def apply(createTime: Double, size: Double): GetSavedFileInfoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSavedFileInfoSuccessCallbackResult]
   }
 }

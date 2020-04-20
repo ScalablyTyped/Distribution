@@ -29,7 +29,6 @@ object WorkbookWriterOptions {
   @scala.inline
   def apply(filename: String, stream: Stream, useSharedStrings: Boolean, useStyles: Boolean): WorkbookWriterOptions = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], useSharedStrings = useSharedStrings.asInstanceOf[js.Any], useStyles = useStyles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkbookWriterOptions]
   }
 }

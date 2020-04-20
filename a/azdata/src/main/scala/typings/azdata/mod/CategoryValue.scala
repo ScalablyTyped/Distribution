@@ -13,7 +13,6 @@ object CategoryValue {
   @scala.inline
   def apply(displayName: String, name: String): CategoryValue = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CategoryValue]
   }
 }

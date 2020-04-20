@@ -12,7 +12,6 @@ object AnonIsMoving {
   @scala.inline
   def apply(isMoving: Boolean): AnonIsMoving = {
     val __obj = js.Dynamic.literal(isMoving = isMoving.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsMoving]
   }
 }

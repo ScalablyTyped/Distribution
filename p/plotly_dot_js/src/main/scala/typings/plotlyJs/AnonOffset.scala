@@ -1,8 +1,10 @@
 package typings.plotlyJs
 
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.plotlyJsStrings.center
 import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +13,7 @@ trait AnonOffset extends js.Object {
   /**
   		 * Sets the font of the current value label text.
   		 */
-  var font: PartialFont
+  var font: Partial[Font]
   /**
   		 * The amount of space, in pixels, between the current value label
   		 * and the slider.
@@ -38,7 +40,7 @@ trait AnonOffset extends js.Object {
 object AnonOffset {
   @scala.inline
   def apply(
-    font: PartialFont,
+    font: Partial[Font],
     offset: Double,
     prefix: String,
     suffix: String,
@@ -46,7 +48,6 @@ object AnonOffset {
     xanchor: left | center | right
   ): AnonOffset = {
     val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOffset]
   }
 }

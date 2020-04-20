@@ -18,7 +18,6 @@ object Anon27 {
     success: (KiiUser, KiiSocialNetworkName) => js.Any
   ): Anon27 = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction3(failure), success = js.Any.fromFunction2(success))
-  
     __obj.asInstanceOf[Anon27]
   }
 }

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "assert-options"
-version := "0.6.1-27c07b"
+version := "0.6.1-6c88f4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

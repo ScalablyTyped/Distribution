@@ -36,10 +36,10 @@ class EnumerationAttributeType protected () extends AttributeType {
   @JSName("model")
   var model_FEnumerationAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MEnumerationAttributeType(): Attribute = js.native
-  def enumeration(): IEnumeration = js.native
+  def containerAsAttribute_MEnumerationAttributeType: Attribute = js.native
+  def enumeration: IEnumeration = js.native
   def enumeration(newValue: IEnumeration): js.Any = js.native
-  def enumerationQualifiedName(): String = js.native
+  def enumerationQualifiedName: String = js.native
 }
 
 /* static members */

@@ -27,8 +27,9 @@ trait PolylineDrawActionProperties extends DrawActionProperties {
 
 object PolylineDrawActionProperties {
   @scala.inline
-  def apply(mode: hybrid | freehand | click = null, view: MapViewProperties = null): PolylineDrawActionProperties = {
+  def apply(hasZ: Int | Double = null, mode: hybrid | freehand | click = null, view: MapViewProperties = null): PolylineDrawActionProperties = {
     val __obj = js.Dynamic.literal()
+    if (hasZ != null) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineDrawActionProperties]

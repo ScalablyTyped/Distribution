@@ -17,7 +17,6 @@ object TypeofactivityLog {
     onExtensionActivity: ActivityLogOnExtensionActivityEvent[js.Function1[/* details */ AnonData, Unit]]
   ): TypeofactivityLog = {
     val __obj = js.Dynamic.literal(onExtensionActivity = onExtensionActivity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofactivityLog]
   }
 }

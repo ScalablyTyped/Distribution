@@ -17,7 +17,6 @@ object AnonCommandBar {
     Folder: Folder
   ): AnonCommandBar = {
     val __obj = js.Dynamic.literal(CommandBar = CommandBar.asInstanceOf[js.Any], Folder = Folder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCommandBar]
   }
 }

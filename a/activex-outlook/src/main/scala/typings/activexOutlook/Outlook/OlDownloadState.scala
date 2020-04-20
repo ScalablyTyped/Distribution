@@ -14,10 +14,8 @@ trait OlDownloadState extends js.Object
 
 object OlDownloadState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFullItem: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olFullItem: `1` = this.cast(1)
-  @scala.inline
-  def olHeaderOnly: `0` = this.cast(0)
+  def olHeaderOnly: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -17,7 +17,6 @@ object DOM {
   @scala.inline
   def apply(update: () => Unit): DOM = {
     val __obj = js.Dynamic.literal(update = js.Any.fromFunction0(update))
-  
     __obj.asInstanceOf[DOM]
   }
 }

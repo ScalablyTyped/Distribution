@@ -22,7 +22,7 @@ class Container () extends js.Object {
   def get[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: TypeofContainer): Container = js.native
   def get[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): ImplOrAny[TImpl] = js.native
   def getAll[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): js.Array[ImplOrAny[TImpl]] = js.native
-  def getResolver[TStrategyKey /* <: String */, TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtorOrFunctor[TBase, TImpl, TArgs]): StrategyResolver[TBase, TImpl, TArgs, TStrategyKey] = js.native
+  def getResolver[TStrategyKey /* <: /* keyof aurelia-dependency-injection.aurelia-dependency-injection.StrategyState<TBase, TImpl, TArgs> */ String */, TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtorOrFunctor[TBase, TImpl, TArgs]): StrategyResolver[TBase, TImpl, TArgs, TStrategyKey] = js.native
   def hasResolver[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Boolean = js.native
   def hasResolver[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], checkParent: Boolean): Boolean = js.native
   def invoke[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs]): ImplOrAny[TImpl] = js.native

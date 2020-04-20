@@ -44,7 +44,6 @@ object Keyboard {
     show: () => Unit
   ): Keyboard = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), disableScroll = js.Any.fromFunction1(disableScroll), hideKeyboardAccessoryBar = js.Any.fromFunction1(hideKeyboardAccessoryBar), isVisible = isVisible.asInstanceOf[js.Any], show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[Keyboard]
   }
 }

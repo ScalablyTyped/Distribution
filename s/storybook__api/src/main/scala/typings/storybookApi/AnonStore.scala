@@ -15,7 +15,6 @@ object AnonStore {
   @scala.inline
   def apply(provider: Provider, store: default): AnonStore = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStore]
   }
 }

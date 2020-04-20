@@ -78,7 +78,6 @@ object VersionsResource {
     setDefault: AnonAccesstoken => Request_[GoogleCloudMlV1Version]
   ): VersionsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setDefault = js.Any.fromFunction1(setDefault))
-  
     __obj.asInstanceOf[VersionsResource]
   }
 }

@@ -18,7 +18,6 @@ object ISearchPaneSuggestionsRequest {
     searchSuggestionCollection: SearchSuggestionCollection
   ): ISearchPaneSuggestionsRequest = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), isCanceled = isCanceled.asInstanceOf[js.Any], searchSuggestionCollection = searchSuggestionCollection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchPaneSuggestionsRequest]
   }
 }

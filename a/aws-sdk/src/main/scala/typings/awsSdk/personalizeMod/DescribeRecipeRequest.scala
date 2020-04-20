@@ -16,7 +16,6 @@ object DescribeRecipeRequest {
   @scala.inline
   def apply(recipeArn: Arn): DescribeRecipeRequest = {
     val __obj = js.Dynamic.literal(recipeArn = recipeArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeRecipeRequest]
   }
 }

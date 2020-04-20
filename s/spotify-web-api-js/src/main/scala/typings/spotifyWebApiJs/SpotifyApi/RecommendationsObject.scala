@@ -17,7 +17,6 @@ object RecommendationsObject {
   @scala.inline
   def apply(seeds: js.Array[RecommendationsSeedObject], tracks: js.Array[TrackObjectSimplified]): RecommendationsObject = {
     val __obj = js.Dynamic.literal(seeds = seeds.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecommendationsObject]
   }
 }

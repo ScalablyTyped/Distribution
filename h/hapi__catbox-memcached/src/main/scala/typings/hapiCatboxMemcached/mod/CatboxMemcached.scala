@@ -25,7 +25,6 @@ object CatboxMemcached {
     validateSegmentName: String => Null | Error
   ): CatboxMemcached[T] = {
     val __obj = js.Dynamic.literal(drop = js.Any.fromFunction1(drop), generateKey = js.Any.fromFunction1(generateKey), get = js.Any.fromFunction1(get), isReady = js.Any.fromFunction0(isReady), set = js.Any.fromFunction3(set), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), validateSegmentName = js.Any.fromFunction1(validateSegmentName))
-  
     __obj.asInstanceOf[CatboxMemcached[T]]
   }
 }

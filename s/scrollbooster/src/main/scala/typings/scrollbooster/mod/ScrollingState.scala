@@ -24,7 +24,6 @@ object ScrollingState {
     position: RequiredPosition
   ): ScrollingState = {
     val __obj = js.Dynamic.literal(borderCollision = borderCollision.asInstanceOf[js.Any], dragOffset = dragOffset.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isMoving = isMoving.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollingState]
   }
 }

@@ -17,7 +17,6 @@ object FusedBatchNormInputs {
   @scala.inline
   def apply(mean: js.Any, offset: js.Any, scale: js.Any, variance: js.Any, x: js.Any): FusedBatchNormInputs = {
     val __obj = js.Dynamic.literal(mean = mean.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], variance = variance.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FusedBatchNormInputs]
   }
 }

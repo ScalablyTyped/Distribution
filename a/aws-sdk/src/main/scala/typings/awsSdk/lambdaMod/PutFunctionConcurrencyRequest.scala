@@ -20,7 +20,6 @@ object PutFunctionConcurrencyRequest {
   @scala.inline
   def apply(FunctionName: FunctionName, ReservedConcurrentExecutions: ReservedConcurrentExecutions): PutFunctionConcurrencyRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], ReservedConcurrentExecutions = ReservedConcurrentExecutions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutFunctionConcurrencyRequest]
   }
 }

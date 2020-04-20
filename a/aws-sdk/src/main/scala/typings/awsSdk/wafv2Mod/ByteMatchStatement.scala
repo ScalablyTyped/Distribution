@@ -33,7 +33,6 @@ object ByteMatchStatement {
     TextTransformations: TextTransformations
   ): ByteMatchStatement = {
     val __obj = js.Dynamic.literal(FieldToMatch = FieldToMatch.asInstanceOf[js.Any], PositionalConstraint = PositionalConstraint.asInstanceOf[js.Any], SearchString = SearchString.asInstanceOf[js.Any], TextTransformations = TextTransformations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ByteMatchStatement]
   }
 }

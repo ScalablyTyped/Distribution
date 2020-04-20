@@ -21,7 +21,6 @@ object RouteTablePropagationArgs {
   @scala.inline
   def apply(transitGatewayAttachmentId: Input[String], transitGatewayRouteTableId: Input[String]): RouteTablePropagationArgs = {
     val __obj = js.Dynamic.literal(transitGatewayAttachmentId = transitGatewayAttachmentId.asInstanceOf[js.Any], transitGatewayRouteTableId = transitGatewayRouteTableId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteTablePropagationArgs]
   }
 }

@@ -12,7 +12,6 @@ object JQuerySupport {
   @scala.inline
   def apply(touchOverflow: js.Any): JQuerySupport = {
     val __obj = js.Dynamic.literal(touchOverflow = touchOverflow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQuerySupport]
   }
 }

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object reactBootstrapTable2PaginatorComponents extends reactBootstrapTable2PaginatorProps {
   @scala.inline
-  def PaginationListStandalone: ComponentType[PaginationListStandaloneProps] = typings.reactBootstrapTable2Paginator.mod.PaginationListStandalone.asInstanceOf[typings.react.mod.ComponentType[PaginationListStandaloneProps]]
+  def PaginationListStandalone: ComponentType[PaginationListStandaloneProps] = typings.reactBootstrapTable2Paginator.mod.PaginationListStandalone.asInstanceOf[ComponentType[PaginationListStandaloneProps]]
   @scala.inline
-  def PaginationTotalStandalone: ComponentType[PaginationTotalStandaloneProps] = typings.reactBootstrapTable2Paginator.mod.PaginationTotalStandalone.asInstanceOf[typings.react.mod.ComponentType[PaginationTotalStandaloneProps]]
+  def PaginationTotalStandalone: ComponentType[PaginationTotalStandaloneProps] = typings.reactBootstrapTable2Paginator.mod.PaginationTotalStandalone.asInstanceOf[ComponentType[PaginationTotalStandaloneProps]]
   @scala.inline
-  def SizePerPageDropdownStandalone: ComponentType[SizePerPageDropdownStandaloneProps] = typings.reactBootstrapTable2Paginator.mod.SizePerPageDropdownStandalone.asInstanceOf[typings.react.mod.ComponentType[SizePerPageDropdownStandaloneProps]]
+  def SizePerPageDropdownStandalone: ComponentType[SizePerPageDropdownStandaloneProps] = typings.reactBootstrapTable2Paginator.mod.SizePerPageDropdownStandalone.asInstanceOf[ComponentType[SizePerPageDropdownStandaloneProps]]
 }
 

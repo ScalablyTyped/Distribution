@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 
 object nivoPieComponents extends nivoPieProps {
   @scala.inline
-  def Pie: ComponentType[PieSvgProps with Dimensions] = js.constructorOf[typings.nivoPie.mod.Pie].asInstanceOf[typings.react.mod.ComponentType[typings.nivoPie.mod.PieSvgProps with typings.nivoCore.mod.Dimensions]]
+  def Pie: ComponentType[PieSvgProps with Dimensions] = js.constructorOf[typings.nivoPie.mod.Pie].asInstanceOf[ComponentType[PieSvgProps with Dimensions]]
   @scala.inline
-  def PieCanvas: ComponentType[PieCanvasProps with Dimensions] = js.constructorOf[typings.nivoPie.mod.PieCanvas].asInstanceOf[typings.react.mod.ComponentType[typings.nivoPie.mod.PieCanvasProps with typings.nivoCore.mod.Dimensions]]
+  def PieCanvas: ComponentType[PieCanvasProps with Dimensions] = js.constructorOf[typings.nivoPie.mod.PieCanvas].asInstanceOf[ComponentType[PieCanvasProps with Dimensions]]
   @scala.inline
-  def ResponsivePie: ComponentType[ResponsivePieProps] = js.constructorOf[typings.nivoPie.mod.ResponsivePie].asInstanceOf[typings.react.mod.ComponentType[ResponsivePieProps]]
+  def ResponsivePie: ComponentType[ResponsivePieProps] = js.constructorOf[typings.nivoPie.mod.ResponsivePie].asInstanceOf[ComponentType[ResponsivePieProps]]
   @scala.inline
-  def ResponsivePieCanvas: ComponentType[ResponsivePieCanvasProps] = js.constructorOf[typings.nivoPie.mod.ResponsivePieCanvas].asInstanceOf[typings.react.mod.ComponentType[ResponsivePieCanvasProps]]
+  def ResponsivePieCanvas: ComponentType[ResponsivePieCanvasProps] = js.constructorOf[typings.nivoPie.mod.ResponsivePieCanvas].asInstanceOf[ComponentType[ResponsivePieCanvasProps]]
 }
 

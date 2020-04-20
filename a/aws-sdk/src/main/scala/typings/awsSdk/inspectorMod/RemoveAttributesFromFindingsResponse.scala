@@ -16,7 +16,6 @@ object RemoveAttributesFromFindingsResponse {
   @scala.inline
   def apply(failedItems: FailedItems): RemoveAttributesFromFindingsResponse = {
     val __obj = js.Dynamic.literal(failedItems = failedItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveAttributesFromFindingsResponse]
   }
 }

@@ -13,7 +13,6 @@ object ApiRequestBody {
   @scala.inline
   def apply(web: AnonApplicationPubKey): ApiRequestBody = {
     val __obj = js.Dynamic.literal(web = web.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApiRequestBody]
   }
 }

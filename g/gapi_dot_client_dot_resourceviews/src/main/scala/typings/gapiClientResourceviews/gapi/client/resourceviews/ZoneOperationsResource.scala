@@ -18,7 +18,6 @@ object ZoneOperationsResource {
   @scala.inline
   def apply(get: AnonAlt => Request_[Operation], list: AnonFields => Request_[OperationList]): ZoneOperationsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ZoneOperationsResource]
   }
 }

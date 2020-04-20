@@ -16,7 +16,6 @@ object GetGeoMatchSetRequest {
   @scala.inline
   def apply(GeoMatchSetId: ResourceId): GetGeoMatchSetRequest = {
     val __obj = js.Dynamic.literal(GeoMatchSetId = GeoMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGeoMatchSetRequest]
   }
 }

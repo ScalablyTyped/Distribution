@@ -15,7 +15,6 @@ object NativeDocumentSnapshot {
   @scala.inline
   def apply(data: StringDictionary[TypeMap], metadata: SnapshotMetadata, path: String): NativeDocumentSnapshot = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeDocumentSnapshot]
   }
 }

@@ -3,6 +3,7 @@ package typings.chromeApps.chrome.networking.config
 import typings.chromeApps.AnonWIFI
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chromeAppsStrings.None
+import typings.chromeApps.chromeAppsStrings.WI_FI
 import typings.chromeApps.chromeAppsStrings.WiFi
 import typings.chromeApps.chromeAppsStrings.`WEP-PSK`
 import typings.chromeApps.chromeAppsStrings.`WPA-EAP`
@@ -34,13 +35,13 @@ trait NetworkInfo extends js.Object {
   /** Identifier indicating the security type of the network. */
   var Security: js.UndefOr[None | `WEP-PSK` | `WPA-PSK` | `WPA-EAP`] = js.undefined
   /** Currently only WiFi supported. */
-  var Type: ToStringLiteral[AnonWIFI, String, Exclude[String, WiFi]]
+  var Type: ToStringLiteral[AnonWIFI, WI_FI, Exclude[WI_FI, WiFi]]
 }
 
 object NetworkInfo {
   @scala.inline
   def apply(
-    Type: ToStringLiteral[AnonWIFI, String, Exclude[String, WiFi]],
+    Type: ToStringLiteral[AnonWIFI, WI_FI, Exclude[WI_FI, WiFi]],
     BSSID: String = null,
     GUID: String = null,
     HexSSID: String = null,

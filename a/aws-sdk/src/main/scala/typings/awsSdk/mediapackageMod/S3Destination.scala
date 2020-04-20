@@ -24,7 +24,6 @@ object S3Destination {
   @scala.inline
   def apply(BucketName: string, ManifestKey: string, RoleArn: string): S3Destination = {
     val __obj = js.Dynamic.literal(BucketName = BucketName.asInstanceOf[js.Any], ManifestKey = ManifestKey.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3Destination]
   }
 }

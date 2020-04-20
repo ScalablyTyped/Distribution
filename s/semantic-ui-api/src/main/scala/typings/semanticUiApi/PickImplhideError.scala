@@ -14,7 +14,6 @@ object PickImplhideError {
   @scala.inline
   def apply(hideError: auto | Boolean): PickImplhideError = {
     val __obj = js.Dynamic.literal(hideError = hideError.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplhideError]
   }
 }

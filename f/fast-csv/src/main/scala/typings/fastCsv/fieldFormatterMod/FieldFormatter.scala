@@ -28,7 +28,6 @@ object FieldFormatter {
     shouldQuote: js.Any
   ): FieldFormatter = {
     val __obj = js.Dynamic.literal(ESCAPE_REGEXP = ESCAPE_REGEXP.asInstanceOf[js.Any], REPLACE_REGEXP = REPLACE_REGEXP.asInstanceOf[js.Any], _headers = _headers.asInstanceOf[js.Any], format = js.Any.fromFunction3(format), formatterOptions = formatterOptions.asInstanceOf[js.Any], headers = js.Any.fromFunction1(headers), quoteField = quoteField.asInstanceOf[js.Any], shouldQuote = shouldQuote.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldFormatter]
   }
 }

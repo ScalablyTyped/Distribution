@@ -13,7 +13,6 @@ object MessageButtonDescriptor {
   @scala.inline
   def apply(onClick: js.Any => Unit, title: String): MessageButtonDescriptor = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageButtonDescriptor]
   }
 }

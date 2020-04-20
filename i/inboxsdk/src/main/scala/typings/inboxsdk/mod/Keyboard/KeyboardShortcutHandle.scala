@@ -12,7 +12,6 @@ object KeyboardShortcutHandle {
   @scala.inline
   def apply(remove: () => Unit): KeyboardShortcutHandle = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[KeyboardShortcutHandle]
   }
 }

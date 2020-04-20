@@ -22,7 +22,6 @@ object AnonIncludeEventTypeInformation {
     none: Double
   ): AnonIncludeEventTypeInformation = {
     val __obj = js.Dynamic.literal(includeEventTypeInformation = includeEventTypeInformation.asInstanceOf[js.Any], includeGroup = includeGroup.asInstanceOf[js.Any], includeUser = includeUser.asInstanceOf[js.Any], includeUserAndGroup = includeUserAndGroup.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIncludeEventTypeInformation]
   }
 }

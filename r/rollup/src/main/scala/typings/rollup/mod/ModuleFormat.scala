@@ -19,24 +19,22 @@ trait ModuleFormat extends js.Object
 
 object ModuleFormat {
   @scala.inline
-  def amd: typings.rollup.rollupStrings.amd = this.cast("amd")
+  def amd: typings.rollup.rollupStrings.amd = "amd".asInstanceOf[typings.rollup.rollupStrings.amd]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cjs: typings.rollup.rollupStrings.cjs = "cjs".asInstanceOf[typings.rollup.rollupStrings.cjs]
   @scala.inline
-  def cjs: typings.rollup.rollupStrings.cjs = this.cast("cjs")
+  def commonjs: typings.rollup.rollupStrings.commonjs = "commonjs".asInstanceOf[typings.rollup.rollupStrings.commonjs]
   @scala.inline
-  def commonjs: typings.rollup.rollupStrings.commonjs = this.cast("commonjs")
+  def es: typings.rollup.rollupStrings.es = "es".asInstanceOf[typings.rollup.rollupStrings.es]
   @scala.inline
-  def es: typings.rollup.rollupStrings.es = this.cast("es")
+  def esm: typings.rollup.rollupStrings.esm = "esm".asInstanceOf[typings.rollup.rollupStrings.esm]
   @scala.inline
-  def esm: typings.rollup.rollupStrings.esm = this.cast("esm")
+  def iife: typings.rollup.rollupStrings.iife = "iife".asInstanceOf[typings.rollup.rollupStrings.iife]
   @scala.inline
-  def iife: typings.rollup.rollupStrings.iife = this.cast("iife")
+  def module: typings.rollup.rollupStrings.module = "module".asInstanceOf[typings.rollup.rollupStrings.module]
   @scala.inline
-  def module: typings.rollup.rollupStrings.module = this.cast("module")
+  def system: typings.rollup.rollupStrings.system = "system".asInstanceOf[typings.rollup.rollupStrings.system]
   @scala.inline
-  def system: typings.rollup.rollupStrings.system = this.cast("system")
-  @scala.inline
-  def umd: typings.rollup.rollupStrings.umd = this.cast("umd")
+  def umd: typings.rollup.rollupStrings.umd = "umd".asInstanceOf[typings.rollup.rollupStrings.umd]
 }
 

@@ -20,7 +20,6 @@ object UpdateEndpointWeightsAndCapacitiesInput {
   @scala.inline
   def apply(DesiredWeightsAndCapacities: DesiredWeightAndCapacityList, EndpointName: EndpointName): UpdateEndpointWeightsAndCapacitiesInput = {
     val __obj = js.Dynamic.literal(DesiredWeightsAndCapacities = DesiredWeightsAndCapacities.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateEndpointWeightsAndCapacitiesInput]
   }
 }

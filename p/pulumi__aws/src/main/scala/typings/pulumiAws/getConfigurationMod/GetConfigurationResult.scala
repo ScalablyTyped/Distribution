@@ -45,7 +45,6 @@ object GetConfigurationResult {
     serverProperties: String
   ): GetConfigurationResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kafkaVersions = kafkaVersions.asInstanceOf[js.Any], latestRevision = latestRevision.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], serverProperties = serverProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetConfigurationResult]
   }
 }

@@ -78,7 +78,7 @@ object framingBehaviorMod extends js.Object {
       * Gets the angle above/below the horizontal plane to return to when the return to default elevation idle
       * behaviour is triggered, in radians.
       */
-    def defaultElevation(): Double = js.native
+    def defaultElevation: Double = js.native
     /**
       * Sets the angle above/below the horizontal plane to return to when the return to default elevation idle
       * behaviour is triggered, in radians.
@@ -93,7 +93,7 @@ object framingBehaviorMod extends js.Object {
       * Gets the time (in milliseconds) taken to return to the default beta position.
       * Negative value indicates camera should not return to default.
       */
-    def elevationReturnTime(): Double = js.native
+    def elevationReturnTime: Double = js.native
     /**
       * Sets the time (in milliseconds) taken to return to the default beta position.
       * Negative value indicates camera should not return to default.
@@ -102,7 +102,7 @@ object framingBehaviorMod extends js.Object {
     /**
       * Gets the delay (in milliseconds) taken before the camera returns to the default beta position.
       */
-    def elevationReturnWaitTime(): Double = js.native
+    def elevationReturnWaitTime: Double = js.native
     /**
       * Sets the delay (in milliseconds) taken before the camera returns to the default beta position.
       */
@@ -110,7 +110,7 @@ object framingBehaviorMod extends js.Object {
     /**
       * Gets the transition time when framing the mesh, in milliseconds
       */
-    def framingTime(): Double = js.native
+    def framingTime: Double = js.native
     /**
       * Sets the transition time when framing the mesh, in milliseconds
       */
@@ -123,11 +123,11 @@ object framingBehaviorMod extends js.Object {
     /**
       * Gets a value indicating if the user is moving the camera
       */
-    def isUserIsMoving(): Boolean = js.native
+    def isUserIsMoving: Boolean = js.native
     /**
       * Gets current mode used by the behavior.
       */
-    def mode(): Double = js.native
+    def mode: Double = js.native
     /**
       * Sets the current mode used by the behavior
       */
@@ -136,11 +136,11 @@ object framingBehaviorMod extends js.Object {
       * Gets the name of the behavior.
       */
     @JSName("name")
-    def name_MFramingBehavior(): String = js.native
+    def name_MFramingBehavior: String = js.native
     /**
       * Gets the scale to apply on Y axis to position camera focus. 0.5 by default which means the center of the bounding box.
       */
-    def positionScale(): Double = js.native
+    def positionScale: Double = js.native
     /**
       * Sets the scale to apply on Y axis to position camera focus. 0.5 by default which means the center of the bounding box.
       */
@@ -148,7 +148,7 @@ object framingBehaviorMod extends js.Object {
     /**
       * Gets the scale applied to the radius
       */
-    def radiusScale(): Double = js.native
+    def radiusScale: Double = js.native
     /**
       * Sets the scale applied to the radius (1 by default)
       */
@@ -206,7 +206,7 @@ object framingBehaviorMod extends js.Object {
     /**
       * Gets the flag that indicates if user zooming should stop animation.
       */
-    def zoomStopsAnimation(): Boolean = js.native
+    def zoomStopsAnimation: Boolean = js.native
     /**
       * Sets the flag that indicates if user zooming should stop animation.
       */

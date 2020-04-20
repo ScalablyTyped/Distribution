@@ -21,7 +21,6 @@ object IRenderer {
   @scala.inline
   def apply(createHandle: () => HTMLDivElement): IRenderer = {
     val __obj = js.Dynamic.literal(createHandle = js.Any.fromFunction0(createHandle))
-  
     __obj.asInstanceOf[IRenderer]
   }
 }

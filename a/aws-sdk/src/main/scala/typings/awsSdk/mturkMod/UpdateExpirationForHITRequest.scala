@@ -20,7 +20,6 @@ object UpdateExpirationForHITRequest {
   @scala.inline
   def apply(ExpireAt: Timestamp, HITId: EntityId): UpdateExpirationForHITRequest = {
     val __obj = js.Dynamic.literal(ExpireAt = ExpireAt.asInstanceOf[js.Any], HITId = HITId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateExpirationForHITRequest]
   }
 }

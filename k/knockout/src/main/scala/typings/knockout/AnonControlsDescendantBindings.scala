@@ -12,7 +12,6 @@ object AnonControlsDescendantBindings {
   @scala.inline
   def apply(controlsDescendantBindings: Boolean): AnonControlsDescendantBindings = {
     val __obj = js.Dynamic.literal(controlsDescendantBindings = controlsDescendantBindings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonControlsDescendantBindings]
   }
 }

@@ -13,7 +13,6 @@ object IThemePalette {
   @scala.inline
   def apply(hues: IThemeHues, name: String): IThemePalette = {
     val __obj = js.Dynamic.literal(hues = hues.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IThemePalette]
   }
 }

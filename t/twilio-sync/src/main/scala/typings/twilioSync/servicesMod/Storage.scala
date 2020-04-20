@@ -22,7 +22,6 @@ object Storage {
     updateStorageId: String => js.Any
   ): Storage = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction2(read), remove = js.Any.fromFunction3(remove), store = js.Any.fromFunction3(store), update = js.Any.fromFunction4(update), updateStorageId = js.Any.fromFunction1(updateStorageId))
-  
     __obj.asInstanceOf[Storage]
   }
 }

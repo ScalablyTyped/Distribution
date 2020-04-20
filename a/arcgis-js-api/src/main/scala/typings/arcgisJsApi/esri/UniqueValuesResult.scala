@@ -24,7 +24,6 @@ object UniqueValuesResult {
     uniqueValueInfos: js.Array[UniqueValuesResultUniqueValueInfos]
   ): UniqueValuesResult = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), uniqueValueInfos = uniqueValueInfos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UniqueValuesResult]
   }
 }

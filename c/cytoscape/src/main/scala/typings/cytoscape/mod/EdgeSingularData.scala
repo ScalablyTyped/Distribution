@@ -24,7 +24,6 @@ object EdgeSingularData {
   @scala.inline
   def apply(isLoop: () => Boolean, isSimple: () => Boolean): EdgeSingularData = {
     val __obj = js.Dynamic.literal(isLoop = js.Any.fromFunction0(isLoop), isSimple = js.Any.fromFunction0(isSimple))
-  
     __obj.asInstanceOf[EdgeSingularData]
   }
 }

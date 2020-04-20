@@ -13,7 +13,6 @@ object GraphQLResolveInfo {
   @scala.inline
   def apply(cacheControl: AnonCacheHint): GraphQLResolveInfo = {
     val __obj = js.Dynamic.literal(cacheControl = cacheControl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GraphQLResolveInfo]
   }
 }

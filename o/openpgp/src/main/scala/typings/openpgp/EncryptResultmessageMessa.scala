@@ -15,7 +15,6 @@ object EncryptResultmessageMessa {
   @scala.inline
   def apply(message: Message, sessionKey: AnonAeadAlgorithm): EncryptResultmessageMessa = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], sessionKey = sessionKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptResultmessageMessa]
   }
 }

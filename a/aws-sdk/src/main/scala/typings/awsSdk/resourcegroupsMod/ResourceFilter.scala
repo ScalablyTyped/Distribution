@@ -20,7 +20,6 @@ object ResourceFilter {
   @scala.inline
   def apply(Name: ResourceFilterName, Values: ResourceFilterValues): ResourceFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceFilter]
   }
 }

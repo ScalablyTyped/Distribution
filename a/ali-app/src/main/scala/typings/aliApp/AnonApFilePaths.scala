@@ -15,7 +15,6 @@ object AnonApFilePaths {
   @scala.inline
   def apply(apFilePaths: js.Array[String]): AnonApFilePaths = {
     val __obj = js.Dynamic.literal(apFilePaths = apFilePaths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonApFilePaths]
   }
 }

@@ -12,6 +12,7 @@ object ^ extends js.Object {
   var DotnetCore1d0Runtime: Runtime = js.native
   var DotnetCore2d0Runtime: Runtime = js.native
   var DotnetCore2d1Runtime: Runtime = js.native
+  var DotnetCore3d1Runtime: Runtime = js.native
   var Go1dxRuntime: Runtime = js.native
   var Java11Runtime: Runtime = js.native
   var Java8Runtime: Runtime = js.native

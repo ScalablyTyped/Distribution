@@ -85,7 +85,7 @@ class DocumentModel ()
     * A signal emitted when the document content changes.
     */
   @JSName("contentChanged")
-  def contentChanged_MDocumentModel(): ISignal[this.type, Unit] = js.native
+  def contentChanged_MDocumentModel: ISignal[this.type, Unit] = js.native
   /**
     * The default kernel language of the document.
     *
@@ -93,7 +93,7 @@ class DocumentModel ()
     * This is a read-only property.
     */
   @JSName("defaultKernelLanguage")
-  def defaultKernelLanguage_MDocumentModel(): String = js.native
+  def defaultKernelLanguage_MDocumentModel: String = js.native
   /**
     * The default kernel name of the document.
     *
@@ -101,12 +101,12 @@ class DocumentModel ()
     * This is a read-only property.
     */
   @JSName("defaultKernelName")
-  def defaultKernelName_MDocumentModel(): String = js.native
+  def defaultKernelName_MDocumentModel: String = js.native
   /**
     * The dirty state of the document.
     */
   @JSName("dirty")
-  def dirty_MDocumentModel(): Boolean = js.native
+  def dirty_MDocumentModel: Boolean = js.native
   @JSName("dirty")
   def dirty_MDocumentModel(newValue: Boolean): js.Any = js.native
   /**
@@ -152,19 +152,19 @@ class DocumentModel ()
     */
   /* InferMemberOverrides */
   @JSName("isDisposed")
-  override def isDisposed_MModel_(): Boolean = js.native
+  override def isDisposed_MModel_ : Boolean = js.native
   /**
     * A signal emitted when a mimetype changes.
     */
   /* InferMemberOverrides */
   @JSName("mimeTypeChanged")
-  override def mimeTypeChanged_MModel_(): ISignal[this.type, IChangedArgs[String, String, String]] = js.native
+  override def mimeTypeChanged_MModel_ : ISignal[this.type, IChangedArgs[String, String, String]] = js.native
   /**
     * A mime type of the model.
     */
   /* InferMemberOverrides */
   @JSName("mimeType")
-  override def mimeType_MModel_(): String = js.native
+  override def mimeType_MModel_ : String = js.native
   /* InferMemberOverrides */
   @JSName("mimeType")
   override def mimeType_MModel_(newValue: String): js.Any = js.native
@@ -172,7 +172,7 @@ class DocumentModel ()
     * The read only state of the document.
     */
   @JSName("readOnly")
-  def readOnly_MDocumentModel(): Boolean = js.native
+  def readOnly_MDocumentModel: Boolean = js.native
   @JSName("readOnly")
   def readOnly_MDocumentModel(newValue: Boolean): js.Any = js.native
   /**
@@ -180,12 +180,12 @@ class DocumentModel ()
     */
   /* InferMemberOverrides */
   @JSName("selections")
-  override def selections_MModel_(): IObservableMap[js.Array[ITextSelection]] = js.native
+  override def selections_MModel_ : IObservableMap[js.Array[ITextSelection]] = js.native
   /**
     * A signal emitted when the document state changes.
     */
   @JSName("stateChanged")
-  def stateChanged_MDocumentModel(): ISignal[this.type, IChangedArgs[_, _, String]] = js.native
+  def stateChanged_MDocumentModel: ISignal[this.type, IChangedArgs[_, _, String]] = js.native
   /**
     * Serialize the model to JSON.
     */
@@ -204,6 +204,6 @@ class DocumentModel ()
     */
   /* InferMemberOverrides */
   @JSName("value")
-  override def value_MModel_(): IObservableString = js.native
+  override def value_MModel_ : IObservableString = js.native
 }
 

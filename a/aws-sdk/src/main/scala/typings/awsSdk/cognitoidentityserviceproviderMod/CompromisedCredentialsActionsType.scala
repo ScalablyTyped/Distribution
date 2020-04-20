@@ -16,7 +16,6 @@ object CompromisedCredentialsActionsType {
   @scala.inline
   def apply(EventAction: CompromisedCredentialsEventActionType): CompromisedCredentialsActionsType = {
     val __obj = js.Dynamic.literal(EventAction = EventAction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompromisedCredentialsActionsType]
   }
 }

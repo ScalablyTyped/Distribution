@@ -20,7 +20,6 @@ object TimestampRange {
   @scala.inline
   def apply(EndTimestamp: Timestamp, StartTimestamp: Timestamp): TimestampRange = {
     val __obj = js.Dynamic.literal(EndTimestamp = EndTimestamp.asInstanceOf[js.Any], StartTimestamp = StartTimestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimestampRange]
   }
 }

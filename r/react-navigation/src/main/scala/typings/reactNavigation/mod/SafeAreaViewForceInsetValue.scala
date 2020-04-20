@@ -12,10 +12,8 @@ trait SafeAreaViewForceInsetValue extends js.Object
 
 object SafeAreaViewForceInsetValue {
   @scala.inline
-  def always: typings.reactNavigation.reactNavigationStrings.always = this.cast("always")
+  def always: typings.reactNavigation.reactNavigationStrings.always = "always".asInstanceOf[typings.reactNavigation.reactNavigationStrings.always]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def never: typings.reactNavigation.reactNavigationStrings.never = this.cast("never")
+  def never: typings.reactNavigation.reactNavigationStrings.never = "never".asInstanceOf[typings.reactNavigation.reactNavigationStrings.never]
 }
 

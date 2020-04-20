@@ -16,7 +16,6 @@ object AnonFinishTime {
   @scala.inline
   def apply(finishTime: String, messages: js.Array[Message], pluginName: String, success: Boolean): AnonFinishTime = {
     val __obj = js.Dynamic.literal(finishTime = finishTime.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], pluginName = pluginName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFinishTime]
   }
 }

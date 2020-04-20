@@ -13,7 +13,6 @@ object ExpandNodeInfo {
   @scala.inline
   def apply(nodePath: String, sessionId: String): ExpandNodeInfo = {
     val __obj = js.Dynamic.literal(nodePath = nodePath.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExpandNodeInfo]
   }
 }

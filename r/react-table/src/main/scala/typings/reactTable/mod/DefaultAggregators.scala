@@ -15,16 +15,14 @@ trait DefaultAggregators extends js.Object
 
 object DefaultAggregators {
   @scala.inline
-  def average: typings.reactTable.reactTableStrings.average = this.cast("average")
+  def average: typings.reactTable.reactTableStrings.average = "average".asInstanceOf[typings.reactTable.reactTableStrings.average]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def count: typings.reactTable.reactTableStrings.count = "count".asInstanceOf[typings.reactTable.reactTableStrings.count]
   @scala.inline
-  def count: typings.reactTable.reactTableStrings.count = this.cast("count")
+  def median: typings.reactTable.reactTableStrings.median = "median".asInstanceOf[typings.reactTable.reactTableStrings.median]
   @scala.inline
-  def median: typings.reactTable.reactTableStrings.median = this.cast("median")
+  def sum: typings.reactTable.reactTableStrings.sum = "sum".asInstanceOf[typings.reactTable.reactTableStrings.sum]
   @scala.inline
-  def sum: typings.reactTable.reactTableStrings.sum = this.cast("sum")
-  @scala.inline
-  def uniqueCount: typings.reactTable.reactTableStrings.uniqueCount = this.cast("uniqueCount")
+  def uniqueCount: typings.reactTable.reactTableStrings.uniqueCount = "uniqueCount".asInstanceOf[typings.reactTable.reactTableStrings.uniqueCount]
 }
 

@@ -23,7 +23,6 @@ object AnonRule {
   @scala.inline
   def apply(rule: deny | sameorigin | `allow-from`, source: String): AnonRule = {
     val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRule]
   }
 }

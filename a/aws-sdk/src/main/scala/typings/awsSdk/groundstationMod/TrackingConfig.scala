@@ -16,7 +16,6 @@ object TrackingConfig {
   @scala.inline
   def apply(autotrack: Criticality): TrackingConfig = {
     val __obj = js.Dynamic.literal(autotrack = autotrack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrackingConfig]
   }
 }

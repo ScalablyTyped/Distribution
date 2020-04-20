@@ -20,7 +20,6 @@ object BeaconinfoResource {
   @scala.inline
   def apply(getforobserved: AnonAccesstoken => Request_[GetInfoForObservedBeaconsResponse]): BeaconinfoResource = {
     val __obj = js.Dynamic.literal(getforobserved = js.Any.fromFunction1(getforobserved))
-  
     __obj.asInstanceOf[BeaconinfoResource]
   }
 }

@@ -92,7 +92,6 @@ object wai {
     setWaiState: (HTMLElement, String, String) => Unit
   ): wai = {
     val __obj = js.Dynamic.literal(getWaiRole = js.Any.fromFunction1(getWaiRole), getWaiState = js.Any.fromFunction2(getWaiState), hasWaiRole = js.Any.fromFunction2(hasWaiRole), hasWaiState = js.Any.fromFunction2(hasWaiState), removeWaiRole = js.Any.fromFunction2(removeWaiRole), removeWaiState = js.Any.fromFunction2(removeWaiState), setWaiRole = js.Any.fromFunction2(setWaiRole), setWaiState = js.Any.fromFunction3(setWaiState))
-  
     __obj.asInstanceOf[wai]
   }
 }

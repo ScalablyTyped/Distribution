@@ -13,7 +13,6 @@ object TypeofHealth {
   @scala.inline
   def apply(Types: TypeofHealth): TypeofHealth = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofHealth]
   }
 }

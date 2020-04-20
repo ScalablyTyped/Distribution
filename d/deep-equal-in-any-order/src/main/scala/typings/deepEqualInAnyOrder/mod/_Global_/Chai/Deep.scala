@@ -14,7 +14,6 @@ object Deep {
     equalInAnyOrder: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Equal */ js.Any
   ): Deep = {
     val __obj = js.Dynamic.literal(equalInAnyOrder = equalInAnyOrder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Deep]
   }
 }

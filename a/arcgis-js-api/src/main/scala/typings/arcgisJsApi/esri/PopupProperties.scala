@@ -61,7 +61,7 @@ trait PopupProperties
     */
   var content: js.UndefOr[String | HTMLElement | WidgetProperties] = js.undefined
   /**
-    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
+    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html), and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
     * > Starting with version 4.12, [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) content can no longer be set using a wildcard, e.g. `*`. Instead, set the `defaultPopupTemplateEnabled` property to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled)
@@ -110,6 +110,14 @@ trait PopupProperties
     */
   var location: js.UndefOr[PointProperties] = js.undefined
   /**
+    * Defines the maximum icons displayed at one time in the action area.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#maxInlineActions)
+    *
+    * @default 3
+    */
+  var maxInlineActions: js.UndefOr[Double | js.Any] = js.undefined
+  /**
     * An array of pending Promises that have not yet been fulfilled. If there are no pending promises, the value is `null`. When the pending promises are resolved they are removed from this array and the features they return are pushed into the [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#features) array.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises)
@@ -151,6 +159,12 @@ trait PopupProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visible)
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[PopupVisibleElements] = js.undefined
 }
 
 object PopupProperties {
@@ -175,13 +189,15 @@ object PopupProperties {
     id: String = null,
     label: String = null,
     location: PointProperties = null,
+    maxInlineActions: Double | js.Any = null,
     promises: js.Array[js.Promise[_]] = null,
     selectedFeatureIndex: Int | Double = null,
     spinnerEnabled: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: PopupViewModelProperties = null,
-    visible: js.UndefOr[Boolean] = js.undefined
+    visible: js.UndefOr[Boolean] = js.undefined,
+    visibleElements: PopupVisibleElements = null
   ): PopupProperties = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
@@ -203,6 +219,7 @@ object PopupProperties {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (maxInlineActions != null) __obj.updateDynamic("maxInlineActions")(maxInlineActions.asInstanceOf[js.Any])
     if (promises != null) __obj.updateDynamic("promises")(promises.asInstanceOf[js.Any])
     if (selectedFeatureIndex != null) __obj.updateDynamic("selectedFeatureIndex")(selectedFeatureIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(spinnerEnabled)) __obj.updateDynamic("spinnerEnabled")(spinnerEnabled.asInstanceOf[js.Any])
@@ -210,6 +227,7 @@ object PopupProperties {
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupProperties]
   }
 }

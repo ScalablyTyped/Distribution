@@ -26,7 +26,6 @@ object DataTitle {
     text: String
   ): DataTitle = {
     val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataTitle]
   }
 }

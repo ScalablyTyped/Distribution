@@ -12,7 +12,6 @@ object SkewXTransform {
   @scala.inline
   def apply(skewX: String): SkewXTransform = {
     val __obj = js.Dynamic.literal(skewX = skewX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkewXTransform]
   }
 }

@@ -12,7 +12,6 @@ object AnonCorrelationId {
   @scala.inline
   def apply(correlationId: Double): AnonCorrelationId = {
     val __obj = js.Dynamic.literal(correlationId = correlationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCorrelationId]
   }
 }

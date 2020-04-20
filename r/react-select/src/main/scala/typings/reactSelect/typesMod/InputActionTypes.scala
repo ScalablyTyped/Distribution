@@ -14,14 +14,12 @@ trait InputActionTypes extends js.Object
 
 object InputActionTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `input-blur`: typings.reactSelect.reactSelectStrings.`input-blur` = "input-blur".asInstanceOf[typings.reactSelect.reactSelectStrings.`input-blur`]
   @scala.inline
-  def `input-blur`: typings.reactSelect.reactSelectStrings.`input-blur` = this.cast("input-blur")
+  def `input-change`: typings.reactSelect.reactSelectStrings.`input-change` = "input-change".asInstanceOf[typings.reactSelect.reactSelectStrings.`input-change`]
   @scala.inline
-  def `input-change`: typings.reactSelect.reactSelectStrings.`input-change` = this.cast("input-change")
+  def `menu-close`: typings.reactSelect.reactSelectStrings.`menu-close` = "menu-close".asInstanceOf[typings.reactSelect.reactSelectStrings.`menu-close`]
   @scala.inline
-  def `menu-close`: typings.reactSelect.reactSelectStrings.`menu-close` = this.cast("menu-close")
-  @scala.inline
-  def `set-value`: typings.reactSelect.reactSelectStrings.`set-value` = this.cast("set-value")
+  def `set-value`: typings.reactSelect.reactSelectStrings.`set-value` = "set-value".asInstanceOf[typings.reactSelect.reactSelectStrings.`set-value`]
 }
 

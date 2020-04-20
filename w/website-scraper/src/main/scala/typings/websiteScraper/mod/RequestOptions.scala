@@ -13,7 +13,6 @@ object RequestOptions {
   @scala.inline
   def apply(headers: Headers): RequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestOptions]
   }
 }

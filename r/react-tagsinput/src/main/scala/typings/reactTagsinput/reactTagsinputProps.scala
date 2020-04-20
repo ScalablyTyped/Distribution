@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactTagsinputProps {
   @scala.inline
-  def ReactTagsinputProps: ReactTagsInputProps.type = typings.reactTagsinput.mod.ReactTagsInputProps
+  def ReactTagsinputProps: ReactTagsInputProps.type = ReactTagsInputProps
   type ReactTagsinputProps[Tag] = ReactTagsInputProps[Tag]
 }
 

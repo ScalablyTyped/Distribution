@@ -45,9 +45,9 @@ object nanoflowsMod extends js.Object {
       var model_FNanoflowParameterValue: IModel = js.native
       def nanoflow(): js.Any = js.native
       def nanoflow(newValue: INanoflow): js.Any = js.native
-      def nanoflowQualifiedName(): String | Null = js.native
+      def nanoflowQualifiedName: String | Null = js.native
       @JSName("nanoflow")
-      def nanoflow_Union(): INanoflow | Null = js.native
+      def nanoflow_Union: INanoflow | Null = js.native
     }
     
     /* static members */

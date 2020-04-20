@@ -16,7 +16,6 @@ object DescribeTimeBasedAutoScalingRequest {
   @scala.inline
   def apply(InstanceIds: Strings): DescribeTimeBasedAutoScalingRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTimeBasedAutoScalingRequest]
   }
 }

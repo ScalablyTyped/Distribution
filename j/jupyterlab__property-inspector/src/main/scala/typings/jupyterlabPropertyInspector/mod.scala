@@ -97,7 +97,7 @@ object mod extends js.Object {
     /**
       * The current widget being tracked by the inspector.
       */
-    /* protected */ def currentWidget(): Widget | Null = js.native
+    /* protected */ def currentWidget: Widget | Null = js.native
     /**
       * Dispose of the resources held by the object.
       *

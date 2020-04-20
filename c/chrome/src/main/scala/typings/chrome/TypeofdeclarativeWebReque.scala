@@ -13,7 +13,6 @@ object TypeofdeclarativeWebReque {
   @scala.inline
   def apply(onRequest: RequestedEvent): TypeofdeclarativeWebReque = {
     val __obj = js.Dynamic.literal(onRequest = onRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofdeclarativeWebReque]
   }
 }

@@ -1,9 +1,9 @@
 package typings.chromeApps.chrome.contextMenus
 
-import typings.chromeApps.chromeAppsStrings.checkbox
-import typings.chromeApps.chromeAppsStrings.normal
-import typings.chromeApps.chromeAppsStrings.radio
-import typings.chromeApps.chromeAppsStrings.separator
+import typings.chromeApps.chromeAppsStrings.checkbox_
+import typings.chromeApps.chromeAppsStrings.normal_
+import typings.chromeApps.chromeAppsStrings.radio_
+import typings.chromeApps.chromeAppsStrings.separator_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.contextMenus.ItemType")
 @js.native
 object ItemType extends js.Object {
-  var CHECKBOX: checkbox = js.native
-  var NORMAL: normal = js.native
-  var RADIO: radio = js.native
-  var SEPARATOR: separator = js.native
+  var CHECKBOX: checkbox_ = js.native
+  var NORMAL: normal_ = js.native
+  var RADIO: radio_ = js.native
+  var SEPARATOR: separator_ = js.native
 }
 

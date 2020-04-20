@@ -14,7 +14,6 @@ object LocalizationProps {
     getString: (/* id */ String, /* args */ js.UndefOr[js.Object], /* fallback */ js.UndefOr[String]) => String
   ): LocalizationProps = {
     val __obj = js.Dynamic.literal(getString = js.Any.fromFunction3(getString))
-  
     __obj.asInstanceOf[LocalizationProps]
   }
 }

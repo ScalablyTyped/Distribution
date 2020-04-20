@@ -16,7 +16,6 @@ object DeleteAccountAliasRequest {
   @scala.inline
   def apply(AccountAlias: accountAliasType): DeleteAccountAliasRequest = {
     val __obj = js.Dynamic.literal(AccountAlias = AccountAlias.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAccountAliasRequest]
   }
 }

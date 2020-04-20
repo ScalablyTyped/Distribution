@@ -23,7 +23,7 @@ abstract class RetrieveSource protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FRetrieveSource: IModel = js.native
-  def containerAsRetrieveAction(): RetrieveAction = js.native
+  def containerAsRetrieveAction: RetrieveAction = js.native
 }
 
 /* static members */

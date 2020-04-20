@@ -20,16 +20,14 @@ trait WdTextboxTightWrap extends js.Object
 
 object WdTextboxTightWrap {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTightAll: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdTightAll: `1` = this.cast(1)
+  def wdTightFirstAndLastLines: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdTightFirstAndLastLines: `2` = this.cast(2)
+  def wdTightFirstLineOnly: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdTightFirstLineOnly: `3` = this.cast(3)
+  def wdTightLastLineOnly: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdTightLastLineOnly: `4` = this.cast(4)
-  @scala.inline
-  def wdTightNone: `0` = this.cast(0)
+  def wdTightNone: `0` = 0.asInstanceOf[`0`]
 }
 

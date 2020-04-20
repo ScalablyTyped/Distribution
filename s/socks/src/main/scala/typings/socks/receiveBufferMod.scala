@@ -16,7 +16,7 @@ object receiveBufferMod extends js.Object {
     var _originalSize: js.Any = js.native
     def append(data: Buffer): Double = js.native
     def get(length: Double): Buffer = js.native
-    def length(): Double = js.native
+    def length: Double = js.native
     def peek(length: Double): Buffer = js.native
   }
   

@@ -47,7 +47,6 @@ object metrics {
     initOnFontResize: () => Unit
   ): metrics = {
     val __obj = js.Dynamic.literal(getCachedFontMeasurements = js.Any.fromFunction1(getCachedFontMeasurements), getFontMeasurements = js.Any.fromFunction0(getFontMeasurements), getScrollbar = js.Any.fromFunction0(getScrollbar), getTextBox = js.Any.fromFunction3(getTextBox), initOnFontResize = js.Any.fromFunction0(initOnFontResize))
-  
     __obj.asInstanceOf[metrics]
   }
 }

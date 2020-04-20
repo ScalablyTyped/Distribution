@@ -13,7 +13,6 @@ object PickImplserverError {
   @scala.inline
   def apply(serverError: String): PickImplserverError = {
     val __obj = js.Dynamic.literal(serverError = serverError.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplserverError]
   }
 }

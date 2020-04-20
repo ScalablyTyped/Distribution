@@ -16,12 +16,10 @@ trait MFSignaturePromptInfoType extends js.Object
 
 object MFSignaturePromptInfoType {
   @scala.inline
-  def Fixed: `0` = this.cast(0)
+  def Fixed: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def MetadataBased: `2` = this.cast(2)
+  def MetadataBased: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Selectable: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Selectable: `1` = 1.asInstanceOf[`1`]
 }
 

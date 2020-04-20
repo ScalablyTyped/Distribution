@@ -17,20 +17,18 @@ trait ModuleOption extends js.Object
 
 object ModuleOption {
   @scala.inline
-  def amd: typings.babelPresetEnv.babelPresetEnvStrings.amd = this.cast("amd")
+  def amd: typings.babelPresetEnv.babelPresetEnvStrings.amd = "amd".asInstanceOf[typings.babelPresetEnv.babelPresetEnvStrings.amd]
   @scala.inline
-  def auto: typings.babelPresetEnv.babelPresetEnvStrings.auto = this.cast("auto")
+  def auto: typings.babelPresetEnv.babelPresetEnvStrings.auto = "auto".asInstanceOf[typings.babelPresetEnv.babelPresetEnvStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cjs: typings.babelPresetEnv.babelPresetEnvStrings.cjs = "cjs".asInstanceOf[typings.babelPresetEnv.babelPresetEnvStrings.cjs]
   @scala.inline
-  def cjs: typings.babelPresetEnv.babelPresetEnvStrings.cjs = this.cast("cjs")
+  def commonjs: typings.babelPresetEnv.babelPresetEnvStrings.commonjs = "commonjs".asInstanceOf[typings.babelPresetEnv.babelPresetEnvStrings.commonjs]
   @scala.inline
-  def commonjs: typings.babelPresetEnv.babelPresetEnvStrings.commonjs = this.cast("commonjs")
+  def `false`: typings.babelPresetEnv.babelPresetEnvBooleans.`false` = false.asInstanceOf[typings.babelPresetEnv.babelPresetEnvBooleans.`false`]
   @scala.inline
-  def `false`: typings.babelPresetEnv.babelPresetEnvBooleans.`false` = this.cast(false)
+  def systemjs: typings.babelPresetEnv.babelPresetEnvStrings.systemjs = "systemjs".asInstanceOf[typings.babelPresetEnv.babelPresetEnvStrings.systemjs]
   @scala.inline
-  def systemjs: typings.babelPresetEnv.babelPresetEnvStrings.systemjs = this.cast("systemjs")
-  @scala.inline
-  def umd: typings.babelPresetEnv.babelPresetEnvStrings.umd = this.cast("umd")
+  def umd: typings.babelPresetEnv.babelPresetEnvStrings.umd = "umd".asInstanceOf[typings.babelPresetEnv.babelPresetEnvStrings.umd]
 }
 

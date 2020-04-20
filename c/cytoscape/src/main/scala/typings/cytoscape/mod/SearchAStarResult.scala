@@ -17,7 +17,6 @@ object SearchAStarResult {
   @scala.inline
   def apply(distance: Double, found: Boolean, path: CollectionReturnValue): SearchAStarResult = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], found = found.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchAStarResult]
   }
 }

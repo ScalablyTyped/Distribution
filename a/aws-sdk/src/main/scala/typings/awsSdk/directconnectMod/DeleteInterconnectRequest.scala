@@ -16,7 +16,6 @@ object DeleteInterconnectRequest {
   @scala.inline
   def apply(interconnectId: InterconnectId): DeleteInterconnectRequest = {
     val __obj = js.Dynamic.literal(interconnectId = interconnectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteInterconnectRequest]
   }
 }

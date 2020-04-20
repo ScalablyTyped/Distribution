@@ -14,14 +14,12 @@ trait IconSize extends js.Object
 
 object IconSize {
   @scala.inline
-  def `16`: typings.carbonIconHelpers.carbonIconHelpersNumbers.`16` = this.cast(16)
+  def `16`: typings.carbonIconHelpers.carbonIconHelpersNumbers.`16` = 16.asInstanceOf[typings.carbonIconHelpers.carbonIconHelpersNumbers.`16`]
   @scala.inline
-  def `20`: typings.carbonIconHelpers.carbonIconHelpersNumbers.`20` = this.cast(20)
+  def `20`: typings.carbonIconHelpers.carbonIconHelpersNumbers.`20` = 20.asInstanceOf[typings.carbonIconHelpers.carbonIconHelpersNumbers.`20`]
   @scala.inline
-  def `24`: typings.carbonIconHelpers.carbonIconHelpersNumbers.`24` = this.cast(24)
+  def `24`: typings.carbonIconHelpers.carbonIconHelpersNumbers.`24` = 24.asInstanceOf[typings.carbonIconHelpers.carbonIconHelpersNumbers.`24`]
   @scala.inline
-  def `32`: typings.carbonIconHelpers.carbonIconHelpersNumbers.`32` = this.cast(32)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `32`: typings.carbonIconHelpers.carbonIconHelpersNumbers.`32` = 32.asInstanceOf[typings.carbonIconHelpers.carbonIconHelpersNumbers.`32`]
 }
 

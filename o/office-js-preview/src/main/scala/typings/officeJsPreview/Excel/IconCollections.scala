@@ -52,7 +52,6 @@ object IconCollections {
     threeTriangles: ThreeTrianglesSet
   ): IconCollections = {
     val __obj = js.Dynamic.literal(fiveArrows = fiveArrows.asInstanceOf[js.Any], fiveArrowsGray = fiveArrowsGray.asInstanceOf[js.Any], fiveBoxes = fiveBoxes.asInstanceOf[js.Any], fiveQuarters = fiveQuarters.asInstanceOf[js.Any], fiveRating = fiveRating.asInstanceOf[js.Any], fourArrows = fourArrows.asInstanceOf[js.Any], fourArrowsGray = fourArrowsGray.asInstanceOf[js.Any], fourRating = fourRating.asInstanceOf[js.Any], fourRedToBlack = fourRedToBlack.asInstanceOf[js.Any], fourTrafficLights = fourTrafficLights.asInstanceOf[js.Any], threeArrows = threeArrows.asInstanceOf[js.Any], threeArrowsGray = threeArrowsGray.asInstanceOf[js.Any], threeFlags = threeFlags.asInstanceOf[js.Any], threeSigns = threeSigns.asInstanceOf[js.Any], threeStars = threeStars.asInstanceOf[js.Any], threeSymbols = threeSymbols.asInstanceOf[js.Any], threeSymbols2 = threeSymbols2.asInstanceOf[js.Any], threeTrafficLights1 = threeTrafficLights1.asInstanceOf[js.Any], threeTrafficLights2 = threeTrafficLights2.asInstanceOf[js.Any], threeTriangles = threeTriangles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IconCollections]
   }
 }

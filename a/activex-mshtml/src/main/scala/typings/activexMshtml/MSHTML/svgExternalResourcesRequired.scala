@@ -16,12 +16,10 @@ trait svgExternalResourcesRequired extends js.Object
 
 object svgExternalResourcesRequired {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def svgExternalResourcesRequiredFalse: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def svgExternalResourcesRequiredFalse: `0` = this.cast(0)
+  def svgExternalResourcesRequiredTrue: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def svgExternalResourcesRequiredTrue: `1` = this.cast(1)
-  @scala.inline
-  def svgExternalResourcesRequired_Max: `2147483647` = this.cast(2147483647)
+  def svgExternalResourcesRequired_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

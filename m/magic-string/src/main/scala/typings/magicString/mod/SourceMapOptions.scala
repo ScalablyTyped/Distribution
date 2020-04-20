@@ -15,7 +15,6 @@ object SourceMapOptions {
   @scala.inline
   def apply(file: String, hires: Boolean, includeContent: Boolean, source: String): SourceMapOptions = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], hires = hires.asInstanceOf[js.Any], includeContent = includeContent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceMapOptions]
   }
 }

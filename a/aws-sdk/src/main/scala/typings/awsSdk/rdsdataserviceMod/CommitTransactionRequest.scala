@@ -24,7 +24,6 @@ object CommitTransactionRequest {
   @scala.inline
   def apply(resourceArn: Arn, secretArn: Arn, transactionId: Id): CommitTransactionRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommitTransactionRequest]
   }
 }

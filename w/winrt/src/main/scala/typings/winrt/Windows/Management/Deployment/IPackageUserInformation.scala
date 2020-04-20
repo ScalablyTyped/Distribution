@@ -13,7 +13,6 @@ object IPackageUserInformation {
   @scala.inline
   def apply(installState: PackageInstallState, userSecurityId: String): IPackageUserInformation = {
     val __obj = js.Dynamic.literal(installState = installState.asInstanceOf[js.Any], userSecurityId = userSecurityId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPackageUserInformation]
   }
 }

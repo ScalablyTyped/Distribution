@@ -15,10 +15,8 @@ trait FilterMode extends js.Object
 
 object FilterMode {
   @scala.inline
-  def FILTER_LINEAR: `0x1141` = this.cast(0x1141)
+  def FILTER_LINEAR: `0x1141` = 0x1141.asInstanceOf[`0x1141`]
   @scala.inline
-  def FILTER_NEAREST: `0x1140` = this.cast(0x1140)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def FILTER_NEAREST: `0x1140` = 0x1140.asInstanceOf[`0x1140`]
 }
 

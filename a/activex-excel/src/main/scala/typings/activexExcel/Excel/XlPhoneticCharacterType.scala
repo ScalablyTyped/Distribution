@@ -18,14 +18,12 @@ trait XlPhoneticCharacterType extends js.Object
 
 object XlPhoneticCharacterType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlHiragana: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlHiragana: `2` = this.cast(2)
+  def xlKatakana: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlKatakana: `1` = this.cast(1)
+  def xlKatakanaHalf: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlKatakanaHalf: `0` = this.cast(0)
-  @scala.inline
-  def xlNoConversion: `3` = this.cast(3)
+  def xlNoConversion: `3` = 3.asInstanceOf[`3`]
 }
 

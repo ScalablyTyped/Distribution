@@ -19,7 +19,6 @@ object BootstrapMenu {
   @scala.inline
   def apply(close: () => Unit, destroy: () => Unit): BootstrapMenu = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy))
-  
     __obj.asInstanceOf[BootstrapMenu]
   }
 }

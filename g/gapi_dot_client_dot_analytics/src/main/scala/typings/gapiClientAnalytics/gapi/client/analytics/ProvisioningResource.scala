@@ -15,7 +15,6 @@ object ProvisioningResource {
   @scala.inline
   def apply(createAccountTicket: AnonFieldsKey => Request_[AccountTicket]): ProvisioningResource = {
     val __obj = js.Dynamic.literal(createAccountTicket = js.Any.fromFunction1(createAccountTicket))
-  
     __obj.asInstanceOf[ProvisioningResource]
   }
 }

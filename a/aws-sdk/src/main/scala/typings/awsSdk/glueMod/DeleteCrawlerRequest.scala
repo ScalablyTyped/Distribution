@@ -16,7 +16,6 @@ object DeleteCrawlerRequest {
   @scala.inline
   def apply(Name: NameString): DeleteCrawlerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCrawlerRequest]
   }
 }

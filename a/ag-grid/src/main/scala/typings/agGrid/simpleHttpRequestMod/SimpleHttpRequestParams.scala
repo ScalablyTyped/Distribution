@@ -12,7 +12,6 @@ object SimpleHttpRequestParams {
   @scala.inline
   def apply(url: String): SimpleHttpRequestParams = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SimpleHttpRequestParams]
   }
 }

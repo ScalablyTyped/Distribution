@@ -16,7 +16,6 @@ object DescribeElasticsearchDomainsResponse {
   @scala.inline
   def apply(DomainStatusList: ElasticsearchDomainStatusList): DescribeElasticsearchDomainsResponse = {
     val __obj = js.Dynamic.literal(DomainStatusList = DomainStatusList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeElasticsearchDomainsResponse]
   }
 }

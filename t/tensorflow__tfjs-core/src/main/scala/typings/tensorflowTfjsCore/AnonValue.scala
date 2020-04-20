@@ -15,7 +15,6 @@ object AnonValue {
   @scala.inline
   def apply(grads: NamedTensorMap, value: Scalar): AnonValue = {
     val __obj = js.Dynamic.literal(grads = grads.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValue]
   }
 }

@@ -13,12 +13,10 @@ trait CellType extends js.Object
 
 object CellType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code: typings.jupyterlabNbformat.jupyterlabNbformatStrings.code = "code".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.code]
   @scala.inline
-  def code: typings.jupyterlabNbformat.jupyterlabNbformatStrings.code = this.cast("code")
+  def markdown: typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown = "markdown".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown]
   @scala.inline
-  def markdown: typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown = this.cast("markdown")
-  @scala.inline
-  def raw: typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw = this.cast("raw")
+  def raw: typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw = "raw".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw]
 }
 

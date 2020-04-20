@@ -24,7 +24,6 @@ object AnonIgnoreConstraints {
     none: Double
   ): AnonIgnoreConstraints = {
     val __obj = js.Dynamic.literal(ignoreConstraints = ignoreConstraints.asInstanceOf[js.Any], includeAll = includeAll.asInstanceOf[js.Any], includeChildren = includeChildren.asInstanceOf[js.Any], includeSelf = includeSelf.asInstanceOf[js.Any], includeSubTree = includeSubTree.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIgnoreConstraints]
   }
 }

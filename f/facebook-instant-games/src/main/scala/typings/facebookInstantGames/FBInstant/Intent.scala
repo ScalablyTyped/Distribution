@@ -14,14 +14,12 @@ trait Intent extends js.Object
 
 object Intent {
   @scala.inline
-  def CHALLENGE: typings.facebookInstantGames.facebookInstantGamesStrings.CHALLENGE = this.cast("CHALLENGE")
+  def CHALLENGE: typings.facebookInstantGames.facebookInstantGamesStrings.CHALLENGE = "CHALLENGE".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.CHALLENGE]
   @scala.inline
-  def INVITE: typings.facebookInstantGames.facebookInstantGamesStrings.INVITE = this.cast("INVITE")
+  def INVITE: typings.facebookInstantGames.facebookInstantGamesStrings.INVITE = "INVITE".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.INVITE]
   @scala.inline
-  def REQUEST: typings.facebookInstantGames.facebookInstantGamesStrings.REQUEST = this.cast("REQUEST")
+  def REQUEST: typings.facebookInstantGames.facebookInstantGamesStrings.REQUEST = "REQUEST".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.REQUEST]
   @scala.inline
-  def SHARE: typings.facebookInstantGames.facebookInstantGamesStrings.SHARE = this.cast("SHARE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SHARE: typings.facebookInstantGames.facebookInstantGamesStrings.SHARE = "SHARE".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.SHARE]
 }
 

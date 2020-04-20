@@ -14,14 +14,12 @@ trait SameSiteStatus extends js.Object
 
 object SameSiteStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lax: typings.naverWhale.naverWhaleStrings.lax = "lax".asInstanceOf[typings.naverWhale.naverWhaleStrings.lax]
   @scala.inline
-  def lax: typings.naverWhale.naverWhaleStrings.lax = this.cast("lax")
+  def no_restriction: typings.naverWhale.naverWhaleStrings.no_restriction = "no_restriction".asInstanceOf[typings.naverWhale.naverWhaleStrings.no_restriction]
   @scala.inline
-  def no_restriction: typings.naverWhale.naverWhaleStrings.no_restriction = this.cast("no_restriction")
+  def strict: typings.naverWhale.naverWhaleStrings.strict = "strict".asInstanceOf[typings.naverWhale.naverWhaleStrings.strict]
   @scala.inline
-  def strict: typings.naverWhale.naverWhaleStrings.strict = this.cast("strict")
-  @scala.inline
-  def unspecified: typings.naverWhale.naverWhaleStrings.unspecified = this.cast("unspecified")
+  def unspecified: typings.naverWhale.naverWhaleStrings.unspecified = "unspecified".asInstanceOf[typings.naverWhale.naverWhaleStrings.unspecified]
 }
 

@@ -20,7 +20,6 @@ object MultiplexProgramServiceDescriptor {
   @scala.inline
   def apply(ProviderName: stringMax256, ServiceName: stringMax256): MultiplexProgramServiceDescriptor = {
     val __obj = js.Dynamic.literal(ProviderName = ProviderName.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultiplexProgramServiceDescriptor]
   }
 }

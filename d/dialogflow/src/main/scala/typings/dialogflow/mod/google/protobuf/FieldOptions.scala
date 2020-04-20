@@ -23,13 +23,13 @@ class FieldOptions () extends IFieldOptions {
   def this(properties: IFieldOptions) = this()
   /** FieldOptions ctype. */
   @JSName("ctype")
-  var ctype_FieldOptions: CType | String = js.native
+  var ctype_FieldOptions: CType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.CType * / any */ String) = js.native
   /** FieldOptions deprecated. */
   @JSName("deprecated")
   var deprecated_FieldOptions: Boolean = js.native
   /** FieldOptions jstype. */
   @JSName("jstype")
-  var jstype_FieldOptions: JSType | String = js.native
+  var jstype_FieldOptions: JSType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.JSType * / any */ String) = js.native
   /** FieldOptions lazy. */
   @JSName("lazy")
   var lazy_FieldOptions: Boolean = js.native

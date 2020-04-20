@@ -20,7 +20,6 @@ object CreateEventTrackerRequest {
   @scala.inline
   def apply(datasetGroupArn: Arn, name: Name): CreateEventTrackerRequest = {
     val __obj = js.Dynamic.literal(datasetGroupArn = datasetGroupArn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateEventTrackerRequest]
   }
 }

@@ -17,7 +17,6 @@ object RecordHTTPMethodSubsetReq {
   @scala.inline
   def apply(DELETE: ReqResStats, GET: ReqResStats, POST: ReqResStats, PUT: ReqResStats): RecordHTTPMethodSubsetReq = {
     val __obj = js.Dynamic.literal(DELETE = DELETE.asInstanceOf[js.Any], GET = GET.asInstanceOf[js.Any], POST = POST.asInstanceOf[js.Any], PUT = PUT.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordHTTPMethodSubsetReq]
   }
 }

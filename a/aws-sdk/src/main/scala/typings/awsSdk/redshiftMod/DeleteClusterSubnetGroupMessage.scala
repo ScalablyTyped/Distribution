@@ -16,7 +16,6 @@ object DeleteClusterSubnetGroupMessage {
   @scala.inline
   def apply(ClusterSubnetGroupName: String): DeleteClusterSubnetGroupMessage = {
     val __obj = js.Dynamic.literal(ClusterSubnetGroupName = ClusterSubnetGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteClusterSubnetGroupMessage]
   }
 }

@@ -18,7 +18,6 @@ object languages {
   @scala.inline
   def apply(list: AnonTarget => HttpRequest[GoogleApiTranslateLanguageListResponse]): languages = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[languages]
   }
 }

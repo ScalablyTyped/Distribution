@@ -14,7 +14,6 @@ object Tip {
   @scala.inline
   def apply(adcode: String, district: String, name: String): Tip = {
     val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], district = district.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Tip]
   }
 }

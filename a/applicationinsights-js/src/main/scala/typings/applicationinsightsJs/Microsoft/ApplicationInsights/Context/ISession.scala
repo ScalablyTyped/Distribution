@@ -30,7 +30,6 @@ object ISession {
   @scala.inline
   def apply(acquisitionDate: Double, id: String, isFirst: Boolean, renewalDate: Double): ISession = {
     val __obj = js.Dynamic.literal(acquisitionDate = acquisitionDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isFirst = isFirst.asInstanceOf[js.Any], renewalDate = renewalDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISession]
   }
 }

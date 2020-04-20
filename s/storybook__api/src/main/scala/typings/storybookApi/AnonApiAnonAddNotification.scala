@@ -14,7 +14,6 @@ object AnonApiAnonAddNotification {
   @scala.inline
   def apply(api: AnonAddNotification, state: SubState): AnonApiAnonAddNotification = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonApiAnonAddNotification]
   }
 }

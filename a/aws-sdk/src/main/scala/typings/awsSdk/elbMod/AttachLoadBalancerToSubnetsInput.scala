@@ -20,7 +20,6 @@ object AttachLoadBalancerToSubnetsInput {
   @scala.inline
   def apply(LoadBalancerName: AccessPointName, Subnets: Subnets): AttachLoadBalancerToSubnetsInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], Subnets = Subnets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachLoadBalancerToSubnetsInput]
   }
 }

@@ -27,7 +27,6 @@ object Filtering {
   @scala.inline
   def apply(clearFilter: () => Unit, getFilter: () => FilterExpression, setFilter: FilterExpression => Unit): Filtering = {
     val __obj = js.Dynamic.literal(clearFilter = js.Any.fromFunction0(clearFilter), getFilter = js.Any.fromFunction0(getFilter), setFilter = js.Any.fromFunction1(setFilter))
-  
     __obj.asInstanceOf[Filtering]
   }
 }

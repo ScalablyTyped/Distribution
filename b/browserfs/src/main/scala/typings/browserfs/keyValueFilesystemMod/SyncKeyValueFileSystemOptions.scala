@@ -15,7 +15,6 @@ object SyncKeyValueFileSystemOptions {
   @scala.inline
   def apply(store: SyncKeyValueStore): SyncKeyValueFileSystemOptions = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SyncKeyValueFileSystemOptions]
   }
 }

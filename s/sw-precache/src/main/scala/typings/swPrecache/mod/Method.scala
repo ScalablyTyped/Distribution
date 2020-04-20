@@ -15,16 +15,14 @@ trait Method extends js.Object
 
 object Method {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: typings.swPrecache.swPrecacheStrings.delete = "delete".asInstanceOf[typings.swPrecache.swPrecacheStrings.delete]
   @scala.inline
-  def delete: typings.swPrecache.swPrecacheStrings.delete = this.cast("delete")
+  def get: typings.swPrecache.swPrecacheStrings.get = "get".asInstanceOf[typings.swPrecache.swPrecacheStrings.get]
   @scala.inline
-  def get: typings.swPrecache.swPrecacheStrings.get = this.cast("get")
+  def head: typings.swPrecache.swPrecacheStrings.head = "head".asInstanceOf[typings.swPrecache.swPrecacheStrings.head]
   @scala.inline
-  def head: typings.swPrecache.swPrecacheStrings.head = this.cast("head")
+  def post: typings.swPrecache.swPrecacheStrings.post = "post".asInstanceOf[typings.swPrecache.swPrecacheStrings.post]
   @scala.inline
-  def post: typings.swPrecache.swPrecacheStrings.post = this.cast("post")
-  @scala.inline
-  def put: typings.swPrecache.swPrecacheStrings.put = this.cast("put")
+  def put: typings.swPrecache.swPrecacheStrings.put = "put".asInstanceOf[typings.swPrecache.swPrecacheStrings.put]
 }
 

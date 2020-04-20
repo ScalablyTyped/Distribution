@@ -21,7 +21,6 @@ object AssociationsessionsResource {
     verify: AnonPrettyPrint => Request_[AssociationSession]
   ): AssociationsessionsResource = {
     val __obj = js.Dynamic.literal(start = js.Any.fromFunction1(start), verify = js.Any.fromFunction1(verify))
-  
     __obj.asInstanceOf[AssociationsessionsResource]
   }
 }

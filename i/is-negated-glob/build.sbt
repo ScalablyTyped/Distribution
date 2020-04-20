@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-negated-glob"
-version := "1.0-dt-20180214Z-f7332f"
+version := "1.0-dt-20180214Z-6b0c2e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

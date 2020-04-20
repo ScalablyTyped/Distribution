@@ -15,7 +15,6 @@ object AnonAssets {
   @scala.inline
   def apply(assets: AnonCss, outputName: String, plugin: HtmlWebpackPlugin): AnonAssets = {
     val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAssets]
   }
 }

@@ -13,7 +13,6 @@ object DirectThreadFeedResponse {
   @scala.inline
   def apply(status: String, thread: DirectThreadFeedResponseThread): DirectThreadFeedResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], thread = thread.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectThreadFeedResponse]
   }
 }

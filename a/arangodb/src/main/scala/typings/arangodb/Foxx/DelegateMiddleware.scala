@@ -12,7 +12,6 @@ object DelegateMiddleware {
   @scala.inline
   def apply(register: Endpoint => SimpleMiddleware): DelegateMiddleware = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
-  
     __obj.asInstanceOf[DelegateMiddleware]
   }
 }

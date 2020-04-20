@@ -13,7 +13,6 @@ object CpuUsage {
   @scala.inline
   def apply(system: Double, user: Double): CpuUsage = {
     val __obj = js.Dynamic.literal(system = system.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CpuUsage]
   }
 }

@@ -20,7 +20,6 @@ object PurchaseRequest {
   @scala.inline
   def apply(InstanceCount: Integer, PurchaseToken: String): PurchaseRequest = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], PurchaseToken = PurchaseToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PurchaseRequest]
   }
 }

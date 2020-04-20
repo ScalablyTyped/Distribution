@@ -13,7 +13,6 @@ object ConnectionResolver {
   @scala.inline
   def apply[TEdge, TState](initialize: () => TState, reduce: (TState, ConnectionEvent[TEdge]) => TState): ConnectionResolver[TEdge, TState] = {
     val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction0(initialize), reduce = js.Any.fromFunction2(reduce))
-  
     __obj.asInstanceOf[ConnectionResolver[TEdge, TState]]
   }
 }

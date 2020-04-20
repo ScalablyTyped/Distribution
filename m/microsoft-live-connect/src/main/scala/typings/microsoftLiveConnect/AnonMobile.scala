@@ -25,7 +25,6 @@ object AnonMobile {
   @scala.inline
   def apply(business: String, mobile: String, personal: String): AnonMobile = {
     val __obj = js.Dynamic.literal(business = business.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], personal = personal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMobile]
   }
 }

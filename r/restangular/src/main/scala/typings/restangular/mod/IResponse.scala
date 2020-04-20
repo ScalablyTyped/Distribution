@@ -16,7 +16,6 @@ object IResponse {
   @scala.inline
   def apply(config: AnonMethod, data: js.Any, headers: String => String, status: Double): IResponse = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = js.Any.fromFunction1(headers), status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IResponse]
   }
 }

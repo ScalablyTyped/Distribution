@@ -12,7 +12,6 @@ object StreetViewPanoRequest {
   @scala.inline
   def apply(pano: String): StreetViewPanoRequest = {
     val __obj = js.Dynamic.literal(pano = pano.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreetViewPanoRequest]
   }
 }

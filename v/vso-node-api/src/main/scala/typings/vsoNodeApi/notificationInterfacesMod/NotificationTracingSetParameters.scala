@@ -12,7 +12,6 @@ object NotificationTracingSetParameters {
   @scala.inline
   def apply(enabled: Boolean): NotificationTracingSetParameters = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationTracingSetParameters]
   }
 }

@@ -17,20 +17,18 @@ trait SegmentSizeProp extends js.Object
 
 object SegmentSizeProp {
   @scala.inline
-  def big: typings.semanticUiReact.semanticUiReactStrings.big = this.cast("big")
+  def big: typings.semanticUiReact.semanticUiReactStrings.big = "big".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.big]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def huge: typings.semanticUiReact.semanticUiReactStrings.huge = "huge".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.huge]
   @scala.inline
-  def huge: typings.semanticUiReact.semanticUiReactStrings.huge = this.cast("huge")
+  def large: typings.semanticUiReact.semanticUiReactStrings.large = "large".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.large]
   @scala.inline
-  def large: typings.semanticUiReact.semanticUiReactStrings.large = this.cast("large")
+  def massive: typings.semanticUiReact.semanticUiReactStrings.massive = "massive".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.massive]
   @scala.inline
-  def massive: typings.semanticUiReact.semanticUiReactStrings.massive = this.cast("massive")
+  def mini: typings.semanticUiReact.semanticUiReactStrings.mini = "mini".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mini]
   @scala.inline
-  def mini: typings.semanticUiReact.semanticUiReactStrings.mini = this.cast("mini")
+  def small: typings.semanticUiReact.semanticUiReactStrings.small = "small".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.small]
   @scala.inline
-  def small: typings.semanticUiReact.semanticUiReactStrings.small = this.cast("small")
-  @scala.inline
-  def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = this.cast("tiny")
+  def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = "tiny".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tiny]
 }
 

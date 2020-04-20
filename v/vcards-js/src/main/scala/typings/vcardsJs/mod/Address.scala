@@ -42,7 +42,6 @@ object Address {
     street: String
   ): Address = {
     val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], countryRegion = countryRegion.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], stateProvince = stateProvince.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Address]
   }
 }

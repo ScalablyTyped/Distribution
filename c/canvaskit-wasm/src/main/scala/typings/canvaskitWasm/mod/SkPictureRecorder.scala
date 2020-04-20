@@ -20,7 +20,6 @@ object SkPictureRecorder {
     isDeleted: () => Boolean
   ): SkPictureRecorder = {
     val __obj = js.Dynamic.literal(beginRecording = js.Any.fromFunction1(beginRecording), delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), finishRecordingAsPicture = js.Any.fromFunction0(finishRecordingAsPicture), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted))
-  
     __obj.asInstanceOf[SkPictureRecorder]
   }
 }

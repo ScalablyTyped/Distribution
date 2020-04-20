@@ -16,7 +16,6 @@ object InferRxNormRequest {
   @scala.inline
   def apply(Text: OntologyLinkingBoundedLengthString): InferRxNormRequest = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InferRxNormRequest]
   }
 }

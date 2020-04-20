@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tabris-plugin-firebase" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tabris-plugin-firebase" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

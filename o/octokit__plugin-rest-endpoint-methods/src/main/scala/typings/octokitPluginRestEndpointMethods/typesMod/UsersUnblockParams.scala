@@ -12,7 +12,6 @@ object UsersUnblockParams {
   @scala.inline
   def apply(username: String): UsersUnblockParams = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsersUnblockParams]
   }
 }

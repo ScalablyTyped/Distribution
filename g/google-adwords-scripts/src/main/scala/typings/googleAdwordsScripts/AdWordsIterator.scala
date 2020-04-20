@@ -14,7 +14,6 @@ object AdWordsIterator {
   @scala.inline
   def apply[E](hasNext: () => Boolean, next: () => E, totalNumEntities: () => Double): AdWordsIterator[E] = {
     val __obj = js.Dynamic.literal(hasNext = js.Any.fromFunction0(hasNext), next = js.Any.fromFunction0(next), totalNumEntities = js.Any.fromFunction0(totalNumEntities))
-  
     __obj.asInstanceOf[AdWordsIterator[E]]
   }
 }

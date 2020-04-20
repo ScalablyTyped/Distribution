@@ -19,25 +19,23 @@ trait TargetType extends js.Object
 
 object TargetType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def flow: typings.apolloCodegen.apolloCodegenStrings.flow = "flow".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.flow]
   @scala.inline
-  def flow: typings.apolloCodegen.apolloCodegenStrings.flow = this.cast("flow")
+  def `flow-legacy`: typings.apolloCodegen.apolloCodegenStrings.`flow-legacy` = "flow-legacy".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.`flow-legacy`]
   @scala.inline
-  def `flow-legacy`: typings.apolloCodegen.apolloCodegenStrings.`flow-legacy` = this.cast("flow-legacy")
-  @scala.inline
-  def json: typings.apolloCodegen.apolloCodegenStrings.json = this.cast("json")
+  def json: typings.apolloCodegen.apolloCodegenStrings.json = "json".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.json]
   @JSName("scala")
   @scala.inline
-  def scala_ : typings.apolloCodegen.apolloCodegenStrings.scala_ = this.cast("scala")
+  def scala_ : typings.apolloCodegen.apolloCodegenStrings.scala_ = "scala".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.scala_]
   @scala.inline
-  def swift: typings.apolloCodegen.apolloCodegenStrings.swift = this.cast("swift")
+  def swift: typings.apolloCodegen.apolloCodegenStrings.swift = "swift".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.swift]
   @scala.inline
-  def ts: typings.apolloCodegen.apolloCodegenStrings.ts = this.cast("ts")
+  def ts: typings.apolloCodegen.apolloCodegenStrings.ts = "ts".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.ts]
   @scala.inline
-  def `ts-legacy`: typings.apolloCodegen.apolloCodegenStrings.`ts-legacy` = this.cast("ts-legacy")
+  def `ts-legacy`: typings.apolloCodegen.apolloCodegenStrings.`ts-legacy` = "ts-legacy".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.`ts-legacy`]
   @scala.inline
-  def typescript: typings.apolloCodegen.apolloCodegenStrings.typescript = this.cast("typescript")
+  def typescript: typings.apolloCodegen.apolloCodegenStrings.typescript = "typescript".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.typescript]
   @scala.inline
-  def `typescript-legacy`: typings.apolloCodegen.apolloCodegenStrings.`typescript-legacy` = this.cast("typescript-legacy")
+  def `typescript-legacy`: typings.apolloCodegen.apolloCodegenStrings.`typescript-legacy` = "typescript-legacy".asInstanceOf[typings.apolloCodegen.apolloCodegenStrings.`typescript-legacy`]
 }
 

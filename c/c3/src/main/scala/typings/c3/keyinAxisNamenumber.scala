@@ -15,7 +15,6 @@ object keyinAxisNamenumber {
   @scala.inline
   def apply(x: Double, y: Double, y2: Double): keyinAxisNamenumber = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[keyinAxisNamenumber]
   }
 }

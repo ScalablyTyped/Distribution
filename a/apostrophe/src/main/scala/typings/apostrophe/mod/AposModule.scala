@@ -13,7 +13,6 @@ object AposModule {
   @scala.inline
   def apply(emit: String => Unit, on: (String, js.Any, js.Function0[_]) => Unit): AposModule = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), on = js.Any.fromFunction3(on))
-  
     __obj.asInstanceOf[AposModule]
   }
 }

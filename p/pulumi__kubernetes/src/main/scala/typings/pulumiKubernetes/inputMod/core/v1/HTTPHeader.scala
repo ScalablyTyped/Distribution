@@ -23,7 +23,6 @@ object HTTPHeader {
   @scala.inline
   def apply(name: Input[String], value: Input[String]): HTTPHeader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HTTPHeader]
   }
 }

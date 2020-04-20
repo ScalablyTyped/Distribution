@@ -16,18 +16,16 @@ trait VisibilityBehavior extends js.Object
 
 object VisibilityBehavior {
   @scala.inline
-  def a: typings.overlayscrollbars.overlayscrollbarsStrings.a = this.cast("a")
+  def a: typings.overlayscrollbars.overlayscrollbarsStrings.a = "a".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.a]
   @scala.inline
-  def auto: typings.overlayscrollbars.overlayscrollbarsStrings.auto = this.cast("auto")
+  def auto: typings.overlayscrollbars.overlayscrollbarsStrings.auto = "auto".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def h: typings.overlayscrollbars.overlayscrollbarsStrings.h = "h".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.h]
   @scala.inline
-  def h: typings.overlayscrollbars.overlayscrollbarsStrings.h = this.cast("h")
+  def hidden: typings.overlayscrollbars.overlayscrollbarsStrings.hidden = "hidden".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.hidden]
   @scala.inline
-  def hidden: typings.overlayscrollbars.overlayscrollbarsStrings.hidden = this.cast("hidden")
+  def v: typings.overlayscrollbars.overlayscrollbarsStrings.v = "v".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.v]
   @scala.inline
-  def v: typings.overlayscrollbars.overlayscrollbarsStrings.v = this.cast("v")
-  @scala.inline
-  def visible: typings.overlayscrollbars.overlayscrollbarsStrings.visible = this.cast("visible")
+  def visible: typings.overlayscrollbars.overlayscrollbarsStrings.visible = "visible".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.visible]
 }
 

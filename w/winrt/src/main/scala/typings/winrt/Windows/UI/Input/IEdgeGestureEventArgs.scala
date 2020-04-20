@@ -12,7 +12,6 @@ object IEdgeGestureEventArgs {
   @scala.inline
   def apply(kind: EdgeGestureKind): IEdgeGestureEventArgs = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEdgeGestureEventArgs]
   }
 }

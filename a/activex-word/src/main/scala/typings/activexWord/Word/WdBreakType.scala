@@ -30,26 +30,24 @@ trait WdBreakType extends js.Object
 
 object WdBreakType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdColumnBreak: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdColumnBreak: `8` = this.cast(8)
+  def wdLineBreak: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdLineBreak: `6` = this.cast(6)
+  def wdLineBreakClearLeft: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdLineBreakClearLeft: `9` = this.cast(9)
+  def wdLineBreakClearRight: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdLineBreakClearRight: `10` = this.cast(10)
+  def wdPageBreak: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdPageBreak: `7` = this.cast(7)
+  def wdSectionBreakContinuous: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdSectionBreakContinuous: `3` = this.cast(3)
+  def wdSectionBreakEvenPage: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdSectionBreakEvenPage: `4` = this.cast(4)
+  def wdSectionBreakNextPage: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdSectionBreakNextPage: `2` = this.cast(2)
+  def wdSectionBreakOddPage: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdSectionBreakOddPage: `5` = this.cast(5)
-  @scala.inline
-  def wdTextWrappingBreak: `11` = this.cast(11)
+  def wdTextWrappingBreak: `11` = 11.asInstanceOf[`11`]
 }
 

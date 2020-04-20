@@ -26,7 +26,6 @@ object SjclEllipticalPoint {
     toJac: () => SjclPointJacobian
   ): SjclEllipticalPoint = {
     val __obj = js.Dynamic.literal(isValid = js.Any.fromFunction0(isValid), mult = js.Any.fromFunction1(mult), mult2 = js.Any.fromFunction3(mult2), multiples = js.Any.fromFunction0(multiples), negate = js.Any.fromFunction0(negate), toBits = js.Any.fromFunction0(toBits), toJac = js.Any.fromFunction0(toJac))
-  
     __obj.asInstanceOf[SjclEllipticalPoint]
   }
 }

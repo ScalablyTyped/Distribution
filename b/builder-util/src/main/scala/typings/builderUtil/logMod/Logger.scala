@@ -27,7 +27,7 @@ class Logger protected () extends js.Object {
   def info(messageOrFields: Null, message: String): Unit = js.native
   def info(messageOrFields: Fields): Unit = js.native
   def info(messageOrFields: Fields, message: String): Unit = js.native
-  def isDebugEnabled(): Boolean = js.native
+  def isDebugEnabled: Boolean = js.native
   def log(message: String): Unit = js.native
   def messageTransformer(message: String, level: LogLevel): String = js.native
   def warn(): Unit = js.native

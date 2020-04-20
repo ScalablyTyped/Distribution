@@ -12,7 +12,6 @@ object AnonHaving {
   @scala.inline
   def apply[T](having: /* repeated */ js.Any => T): AnonHaving[T] = {
     val __obj = js.Dynamic.literal(having = js.Any.fromFunction1(having))
-  
     __obj.asInstanceOf[AnonHaving[T]]
   }
 }

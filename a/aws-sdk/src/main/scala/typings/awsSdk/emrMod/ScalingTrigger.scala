@@ -16,7 +16,6 @@ object ScalingTrigger {
   @scala.inline
   def apply(CloudWatchAlarmDefinition: CloudWatchAlarmDefinition): ScalingTrigger = {
     val __obj = js.Dynamic.literal(CloudWatchAlarmDefinition = CloudWatchAlarmDefinition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScalingTrigger]
   }
 }

@@ -15,7 +15,6 @@ object AnonAppearTransition {
   @scala.inline
   def apply(appearTransition: Boolean, percent: Double, position: String, unfilled: Boolean): AnonAppearTransition = {
     val __obj = js.Dynamic.literal(appearTransition = appearTransition.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], unfilled = unfilled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppearTransition]
   }
 }

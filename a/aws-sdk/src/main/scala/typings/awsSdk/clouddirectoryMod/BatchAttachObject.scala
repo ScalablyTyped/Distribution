@@ -24,7 +24,6 @@ object BatchAttachObject {
   @scala.inline
   def apply(ChildReference: ObjectReference, LinkName: LinkName, ParentReference: ObjectReference): BatchAttachObject = {
     val __obj = js.Dynamic.literal(ChildReference = ChildReference.asInstanceOf[js.Any], LinkName = LinkName.asInstanceOf[js.Any], ParentReference = ParentReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchAttachObject]
   }
 }

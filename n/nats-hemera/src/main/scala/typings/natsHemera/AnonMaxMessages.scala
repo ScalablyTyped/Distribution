@@ -15,7 +15,6 @@ object AnonMaxMessages {
   @scala.inline
   def apply(maxMessages: Double, pubsub: Boolean, queue: String, topic: String): AnonMaxMessages = {
     val __obj = js.Dynamic.literal(maxMessages = maxMessages.asInstanceOf[js.Any], pubsub = pubsub.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaxMessages]
   }
 }

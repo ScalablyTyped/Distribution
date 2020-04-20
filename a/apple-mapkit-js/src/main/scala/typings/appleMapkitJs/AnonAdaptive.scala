@@ -24,7 +24,6 @@ object AnonAdaptive {
   @scala.inline
   def apply(Adaptive: String, Imperial: String, Metric: String): AnonAdaptive = {
     val __obj = js.Dynamic.literal(Adaptive = Adaptive.asInstanceOf[js.Any], Imperial = Imperial.asInstanceOf[js.Any], Metric = Metric.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAdaptive]
   }
 }

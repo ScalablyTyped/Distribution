@@ -13,12 +13,10 @@ trait WeekdayStyle extends js.Object
 
 object WeekdayStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def long: typings.lightpick.lightpickStrings.long = "long".asInstanceOf[typings.lightpick.lightpickStrings.long]
   @scala.inline
-  def long: typings.lightpick.lightpickStrings.long = this.cast("long")
+  def narrow: typings.lightpick.lightpickStrings.narrow = "narrow".asInstanceOf[typings.lightpick.lightpickStrings.narrow]
   @scala.inline
-  def narrow: typings.lightpick.lightpickStrings.narrow = this.cast("narrow")
-  @scala.inline
-  def short: typings.lightpick.lightpickStrings.short = this.cast("short")
+  def short: typings.lightpick.lightpickStrings.short = "short".asInstanceOf[typings.lightpick.lightpickStrings.short]
 }
 

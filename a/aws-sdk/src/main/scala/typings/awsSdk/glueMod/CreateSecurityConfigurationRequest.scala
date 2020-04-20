@@ -20,7 +20,6 @@ object CreateSecurityConfigurationRequest {
   @scala.inline
   def apply(EncryptionConfiguration: EncryptionConfiguration, Name: NameString): CreateSecurityConfigurationRequest = {
     val __obj = js.Dynamic.literal(EncryptionConfiguration = EncryptionConfiguration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSecurityConfigurationRequest]
   }
 }

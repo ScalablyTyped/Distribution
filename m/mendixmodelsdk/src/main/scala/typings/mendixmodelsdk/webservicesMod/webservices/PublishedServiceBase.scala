@@ -32,8 +32,8 @@ abstract class PublishedServiceBase protected () extends Document {
   @JSName("model")
   var model_FPublishedServiceBase: IModel = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MPublishedServiceBase(): FolderBase = js.native
-  def versionedServices(): IList[VersionedService] = js.native
+  def containerAsFolderBase_MPublishedServiceBase: FolderBase = js.native
+  def versionedServices: IList[VersionedService] = js.native
 }
 
 /* static members */

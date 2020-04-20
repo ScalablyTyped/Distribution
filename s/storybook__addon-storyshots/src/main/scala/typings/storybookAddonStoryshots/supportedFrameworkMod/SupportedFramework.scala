@@ -18,22 +18,20 @@ trait SupportedFramework extends js.Object
 
 object SupportedFramework {
   @scala.inline
-  def angular: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.angular = this.cast("angular")
+  def angular: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.angular = "angular".asInstanceOf[typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.angular]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def html: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.html = "html".asInstanceOf[typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.html]
   @scala.inline
-  def html: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.html = this.cast("html")
+  def preact: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.preact = "preact".asInstanceOf[typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.preact]
   @scala.inline
-  def preact: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.preact = this.cast("preact")
+  def react: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.react = "react".asInstanceOf[typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.react]
   @scala.inline
-  def react: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.react = this.cast("react")
+  def `react-native`: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.`react-native` = "react-native".asInstanceOf[typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.`react-native`]
   @scala.inline
-  def `react-native`: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.`react-native` = this.cast("react-native")
+  def riot: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.riot = "riot".asInstanceOf[typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.riot]
   @scala.inline
-  def riot: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.riot = this.cast("riot")
+  def svelte: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.svelte = "svelte".asInstanceOf[typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.svelte]
   @scala.inline
-  def svelte: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.svelte = this.cast("svelte")
-  @scala.inline
-  def vue: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.vue = this.cast("vue")
+  def vue: typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.vue = "vue".asInstanceOf[typings.storybookAddonStoryshots.storybookAddonStoryshotsStrings.vue]
 }
 

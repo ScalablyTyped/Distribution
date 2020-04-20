@@ -15,7 +15,6 @@ object PickImpldeactivate {
   @scala.inline
   def apply(deactivate: siblings | all): PickImpldeactivate = {
     val __obj = js.Dynamic.literal(deactivate = deactivate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldeactivate]
   }
 }

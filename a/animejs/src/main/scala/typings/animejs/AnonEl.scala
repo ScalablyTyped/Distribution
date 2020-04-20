@@ -16,7 +16,6 @@ object AnonEl {
   @scala.inline
   def apply(el: HTMLElement | SVGElement, property: String, totalLength: Double): AnonEl = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], totalLength = totalLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEl]
   }
 }

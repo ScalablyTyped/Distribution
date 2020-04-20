@@ -27,7 +27,6 @@ object GetNetworkTypeSuccessCallbackResult {
   @scala.inline
   def apply(networkType: wifi | `2g` | `3g` | `4g` | unknown | none): GetNetworkTypeSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetNetworkTypeSuccessCallbackResult]
   }
 }

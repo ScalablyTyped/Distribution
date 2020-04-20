@@ -13,7 +13,6 @@ object Window {
   @scala.inline
   def apply(intercomSettings: IntercomSettings): Window = {
     val __obj = js.Dynamic.literal(intercomSettings = intercomSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

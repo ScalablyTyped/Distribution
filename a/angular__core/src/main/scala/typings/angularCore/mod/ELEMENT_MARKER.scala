@@ -13,7 +13,6 @@ object ELEMENT_MARKER {
   @scala.inline
   def apply(marker: element): ELEMENT_MARKER = {
     val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ELEMENT_MARKER]
   }
 }

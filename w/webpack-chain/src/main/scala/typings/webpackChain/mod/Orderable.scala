@@ -13,7 +13,6 @@ object Orderable {
   @scala.inline
   def apply(after: String => Orderable, before: String => Orderable): Orderable = {
     val __obj = js.Dynamic.literal(after = js.Any.fromFunction1(after), before = js.Any.fromFunction1(before))
-  
     __obj.asInstanceOf[Orderable]
   }
 }

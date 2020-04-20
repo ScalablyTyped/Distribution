@@ -23,7 +23,6 @@ object DescribeStreamOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, StreamDescription: UnmarshalledStreamDescription): DescribeStreamOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], StreamDescription = StreamDescription.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStreamOutput]
   }
 }

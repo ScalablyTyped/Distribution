@@ -16,7 +16,6 @@ object WatchOfFilesAndCompilerOptions {
   @scala.inline
   def apply[T](close: () => Unit, getProgram: () => T, updateRootFileNames: js.Array[java.lang.String] => Unit): WatchOfFilesAndCompilerOptions[T] = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getProgram = js.Any.fromFunction0(getProgram), updateRootFileNames = js.Any.fromFunction1(updateRootFileNames))
-  
     __obj.asInstanceOf[WatchOfFilesAndCompilerOptions[T]]
   }
 }

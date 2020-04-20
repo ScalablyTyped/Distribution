@@ -69,124 +69,122 @@ trait ES2015Builtins extends js.Object
 
 object ES2015Builtins {
   @scala.inline
-  def ArrayDotfrom: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotfrom = this.cast("Array.from")
+  def ArrayDotfrom: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotfrom = "Array.from".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotfrom]
   @scala.inline
-  def ArrayDotof: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotof = this.cast("Array.of")
+  def ArrayDotof: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotof = "Array.of".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotof]
   @scala.inline
-  def ArrayDotprototypeDotcopyWithin: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotcopyWithin = this.cast("Array.prototype.copyWithin")
+  def ArrayDotprototypeDotcopyWithin: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotcopyWithin = "Array.prototype.copyWithin".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotcopyWithin]
   @scala.inline
-  def ArrayDotprototypeDotentries: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotentries = this.cast("Array.prototype.entries")
+  def ArrayDotprototypeDotentries: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotentries = "Array.prototype.entries".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotentries]
   @scala.inline
-  def ArrayDotprototypeDotfill: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotfill = this.cast("Array.prototype.fill")
+  def ArrayDotprototypeDotfill: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotfill = "Array.prototype.fill".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotfill]
   @scala.inline
-  def ArrayDotprototypeDotfind: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotfind = this.cast("Array.prototype.find")
+  def ArrayDotprototypeDotfind: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotfind = "Array.prototype.find".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotfind]
   @scala.inline
-  def ArrayDotprototypeDotfindIndex: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotfindIndex = this.cast("Array.prototype.findIndex")
+  def ArrayDotprototypeDotfindIndex: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotfindIndex = "Array.prototype.findIndex".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotfindIndex]
   @scala.inline
-  def ArrayDotprototypeDotkeys: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotkeys = this.cast("Array.prototype.keys")
+  def ArrayDotprototypeDotkeys: typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotkeys = "Array.prototype.keys".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ArrayDotprototypeDotkeys]
   @scala.inline
-  def Map: typings.esFeatureDetection.esFeatureDetectionStrings.Map = this.cast("Map")
+  def Map: typings.esFeatureDetection.esFeatureDetectionStrings.Map = "Map".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.Map]
   @scala.inline
-  def MathDotacosh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotacosh = this.cast("Math.acosh")
+  def MathDotacosh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotacosh = "Math.acosh".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotacosh]
   @scala.inline
-  def MathDotasinh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotasinh = this.cast("Math.asinh")
+  def MathDotasinh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotasinh = "Math.asinh".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotasinh]
   @scala.inline
-  def MathDotcbrt: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotcbrt = this.cast("Math.cbrt")
+  def MathDotcbrt: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotcbrt = "Math.cbrt".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotcbrt]
   @scala.inline
-  def MathDotclz32: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotclz32 = this.cast("Math.clz32")
+  def MathDotclz32: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotclz32 = "Math.clz32".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotclz32]
   @scala.inline
-  def MathDotcosh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotcosh = this.cast("Math.cosh")
+  def MathDotcosh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotcosh = "Math.cosh".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotcosh]
   @scala.inline
-  def MathDotexpm1: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotexpm1 = this.cast("Math.expm1")
+  def MathDotexpm1: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotexpm1 = "Math.expm1".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotexpm1]
   @scala.inline
-  def MathDotfround: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotfround = this.cast("Math.fround")
+  def MathDotfround: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotfround = "Math.fround".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotfround]
   @scala.inline
-  def MathDothypot: typings.esFeatureDetection.esFeatureDetectionStrings.MathDothypot = this.cast("Math.hypot")
+  def MathDothypot: typings.esFeatureDetection.esFeatureDetectionStrings.MathDothypot = "Math.hypot".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDothypot]
   @scala.inline
-  def MathDotimul: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotimul = this.cast("Math.imul")
+  def MathDotimul: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotimul = "Math.imul".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotimul]
   @scala.inline
-  def MathDotlog10: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotlog10 = this.cast("Math.log10")
+  def MathDotlog10: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotlog10 = "Math.log10".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotlog10]
   @scala.inline
-  def MathDotlog1p: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotlog1p = this.cast("Math.log1p")
+  def MathDotlog1p: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotlog1p = "Math.log1p".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotlog1p]
   @scala.inline
-  def MathDotlog2: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotlog2 = this.cast("Math.log2")
+  def MathDotlog2: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotlog2 = "Math.log2".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotlog2]
   @scala.inline
-  def MathDotsign: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotsign = this.cast("Math.sign")
+  def MathDotsign: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotsign = "Math.sign".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotsign]
   @scala.inline
-  def MathDotsinh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotsinh = this.cast("Math.sinh")
+  def MathDotsinh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDotsinh = "Math.sinh".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDotsinh]
   @scala.inline
-  def MathDottanh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDottanh = this.cast("Math.tanh")
+  def MathDottanh: typings.esFeatureDetection.esFeatureDetectionStrings.MathDottanh = "Math.tanh".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDottanh]
   @scala.inline
-  def MathDottrunc: typings.esFeatureDetection.esFeatureDetectionStrings.MathDottrunc = this.cast("Math.trunc")
+  def MathDottrunc: typings.esFeatureDetection.esFeatureDetectionStrings.MathDottrunc = "Math.trunc".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.MathDottrunc]
   @scala.inline
-  def NumberDotEPSILON: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotEPSILON = this.cast("Number.EPSILON")
+  def NumberDotEPSILON: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotEPSILON = "Number.EPSILON".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotEPSILON]
   @scala.inline
-  def NumberDotMAX_SAFE_INTEGER: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotMAX_SAFE_INTEGER = this.cast("Number.MAX_SAFE_INTEGER")
+  def NumberDotMAX_SAFE_INTEGER: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotMAX_SAFE_INTEGER = "Number.MAX_SAFE_INTEGER".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotMAX_SAFE_INTEGER]
   @scala.inline
-  def NumberDotMIN_SAFE_INTEGER: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotMIN_SAFE_INTEGER = this.cast("Number.MIN_SAFE_INTEGER")
+  def NumberDotMIN_SAFE_INTEGER: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotMIN_SAFE_INTEGER = "Number.MIN_SAFE_INTEGER".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotMIN_SAFE_INTEGER]
   @scala.inline
-  def NumberDotisFinite: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisFinite = this.cast("Number.isFinite")
+  def NumberDotisFinite: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisFinite = "Number.isFinite".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisFinite]
   @scala.inline
-  def NumberDotisInteger: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisInteger = this.cast("Number.isInteger")
+  def NumberDotisInteger: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisInteger = "Number.isInteger".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisInteger]
   @scala.inline
-  def NumberDotisNaN: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisNaN = this.cast("Number.isNaN")
+  def NumberDotisNaN: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisNaN = "Number.isNaN".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisNaN]
   @scala.inline
-  def NumberDotisSafeInteger: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisSafeInteger = this.cast("Number.isSafeInteger")
+  def NumberDotisSafeInteger: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisSafeInteger = "Number.isSafeInteger".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotisSafeInteger]
   @scala.inline
-  def NumberDotparseFloat: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotparseFloat = this.cast("Number.parseFloat")
+  def NumberDotparseFloat: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotparseFloat = "Number.parseFloat".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotparseFloat]
   @scala.inline
-  def NumberDotparseInt: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotparseInt = this.cast("Number.parseInt")
+  def NumberDotparseInt: typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotparseInt = "Number.parseInt".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.NumberDotparseInt]
   @scala.inline
-  def ObjectDotassign: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotassign = this.cast("Object.assign")
+  def ObjectDotassign: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotassign = "Object.assign".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotassign]
   @scala.inline
-  def ObjectDotgetOwnPropertySymbols: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotgetOwnPropertySymbols = this.cast("Object.getOwnPropertySymbols")
+  def ObjectDotgetOwnPropertySymbols: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotgetOwnPropertySymbols = "Object.getOwnPropertySymbols".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotgetOwnPropertySymbols]
   @scala.inline
-  def ObjectDotis: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotis = this.cast("Object.is")
+  def ObjectDotis: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotis = "Object.is".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotis]
   @scala.inline
-  def ObjectDotprototypeDot__proto__ : typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotprototypeDot__proto__ = this.cast("Object.prototype.__proto__")
+  def ObjectDotprototypeDot__proto__ : typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotprototypeDot__proto__ = "Object.prototype.__proto__".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotprototypeDot__proto__]
   @scala.inline
-  def ObjectDotsetPrototypeOf: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotsetPrototypeOf = this.cast("Object.setPrototypeOf")
+  def ObjectDotsetPrototypeOf: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotsetPrototypeOf = "Object.setPrototypeOf".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotsetPrototypeOf]
   @scala.inline
-  def Promise: typings.esFeatureDetection.esFeatureDetectionStrings.Promise = this.cast("Promise")
+  def Promise: typings.esFeatureDetection.esFeatureDetectionStrings.Promise = "Promise".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.Promise]
   @scala.inline
-  def Proxy: typings.esFeatureDetection.esFeatureDetectionStrings.Proxy = this.cast("Proxy")
+  def Proxy: typings.esFeatureDetection.esFeatureDetectionStrings.Proxy = "Proxy".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.Proxy]
   @scala.inline
-  def Reflect: typings.esFeatureDetection.esFeatureDetectionStrings.Reflect = this.cast("Reflect")
+  def Reflect: typings.esFeatureDetection.esFeatureDetectionStrings.Reflect = "Reflect".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.Reflect]
   @scala.inline
-  def Set: typings.esFeatureDetection.esFeatureDetectionStrings.Set = this.cast("Set")
+  def Set: typings.esFeatureDetection.esFeatureDetectionStrings.Set = "Set".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.Set]
   @scala.inline
-  def StringDotfromCodePoint: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotfromCodePoint = this.cast("String.fromCodePoint")
+  def StringDotfromCodePoint: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotfromCodePoint = "String.fromCodePoint".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotfromCodePoint]
   @scala.inline
-  def StringDotprototypeDotcodePointAt: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotcodePointAt = this.cast("String.prototype.codePointAt")
+  def StringDotprototypeDotcodePointAt: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotcodePointAt = "String.prototype.codePointAt".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotcodePointAt]
   @scala.inline
-  def StringDotprototypeDotendsWith: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotendsWith = this.cast("String.prototype.endsWith")
+  def StringDotprototypeDotendsWith: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotendsWith = "String.prototype.endsWith".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotendsWith]
   @scala.inline
-  def StringDotprototypeDotincludes: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotincludes = this.cast("String.prototype.includes")
+  def StringDotprototypeDotincludes: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotincludes = "String.prototype.includes".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotincludes]
   @scala.inline
-  def StringDotprototypeDotnormalize: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotnormalize = this.cast("String.prototype.normalize")
+  def StringDotprototypeDotnormalize: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotnormalize = "String.prototype.normalize".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotnormalize]
   @scala.inline
-  def StringDotprototypeDotrepeat: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotrepeat = this.cast("String.prototype.repeat")
+  def StringDotprototypeDotrepeat: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotrepeat = "String.prototype.repeat".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotrepeat]
   @scala.inline
-  def StringDotprototypeDotstartsWith: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotstartsWith = this.cast("String.prototype.startsWith")
+  def StringDotprototypeDotstartsWith: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotstartsWith = "String.prototype.startsWith".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotstartsWith]
   @scala.inline
-  def StringDotraw: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotraw = this.cast("String.raw")
+  def StringDotraw: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotraw = "String.raw".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotraw]
   @scala.inline
-  def Symbol: typings.esFeatureDetection.esFeatureDetectionStrings.Symbol = this.cast("Symbol")
+  def Symbol: typings.esFeatureDetection.esFeatureDetectionStrings.Symbol = "Symbol".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.Symbol]
   @scala.inline
-  def TypedArrays: typings.esFeatureDetection.esFeatureDetectionStrings.TypedArrays = this.cast("TypedArrays")
+  def TypedArrays: typings.esFeatureDetection.esFeatureDetectionStrings.TypedArrays = "TypedArrays".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.TypedArrays]
   @scala.inline
-  def WeakMap: typings.esFeatureDetection.esFeatureDetectionStrings.WeakMap = this.cast("WeakMap")
+  def WeakMap: typings.esFeatureDetection.esFeatureDetectionStrings.WeakMap = "WeakMap".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.WeakMap]
   @scala.inline
-  def WeakSet: typings.esFeatureDetection.esFeatureDetectionStrings.WeakSet = this.cast("WeakSet")
+  def WeakSet: typings.esFeatureDetection.esFeatureDetectionStrings.WeakSet = "WeakSet".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.WeakSet]
   @scala.inline
-  def __all: typings.esFeatureDetection.esFeatureDetectionStrings.__all = this.cast("__all")
+  def __all: typings.esFeatureDetection.esFeatureDetectionStrings.__all = "__all".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.__all]
   @scala.inline
-  def base64: typings.esFeatureDetection.esFeatureDetectionStrings.base64 = this.cast("base64")
+  def base64: typings.esFeatureDetection.esFeatureDetectionStrings.base64 = "base64".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.base64]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def newDottarget: typings.esFeatureDetection.esFeatureDetectionStrings.newDottarget = "new.target".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.newDottarget]
   @scala.inline
-  def newDottarget: typings.esFeatureDetection.esFeatureDetectionStrings.newDottarget = this.cast("new.target")
-  @scala.inline
-  def requestAnimationFrame: typings.esFeatureDetection.esFeatureDetectionStrings.requestAnimationFrame = this.cast("requestAnimationFrame")
+  def requestAnimationFrame: typings.esFeatureDetection.esFeatureDetectionStrings.requestAnimationFrame = "requestAnimationFrame".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.requestAnimationFrame]
 }
 

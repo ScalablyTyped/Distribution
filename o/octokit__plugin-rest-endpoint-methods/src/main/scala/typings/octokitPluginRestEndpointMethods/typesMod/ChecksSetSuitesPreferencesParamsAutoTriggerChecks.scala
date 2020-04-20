@@ -19,7 +19,6 @@ object ChecksSetSuitesPreferencesParamsAutoTriggerChecks {
   @scala.inline
   def apply(app_id: Double, setting: Boolean): ChecksSetSuitesPreferencesParamsAutoTriggerChecks = {
     val __obj = js.Dynamic.literal(app_id = app_id.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChecksSetSuitesPreferencesParamsAutoTriggerChecks]
   }
 }

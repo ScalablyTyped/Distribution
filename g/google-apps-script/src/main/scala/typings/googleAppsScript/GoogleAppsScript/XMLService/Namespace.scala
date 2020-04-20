@@ -16,7 +16,6 @@ object Namespace {
   @scala.inline
   def apply(getPrefix: () => String, getURI: () => String): Namespace = {
     val __obj = js.Dynamic.literal(getPrefix = js.Any.fromFunction0(getPrefix), getURI = js.Any.fromFunction0(getURI))
-  
     __obj.asInstanceOf[Namespace]
   }
 }

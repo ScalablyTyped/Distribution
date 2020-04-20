@@ -20,7 +20,6 @@ object DeleteTagsForDomainRequest {
   @scala.inline
   def apply(DomainName: DomainName, TagsToDelete: TagKeyList): DeleteTagsForDomainRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], TagsToDelete = TagsToDelete.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTagsForDomainRequest]
   }
 }

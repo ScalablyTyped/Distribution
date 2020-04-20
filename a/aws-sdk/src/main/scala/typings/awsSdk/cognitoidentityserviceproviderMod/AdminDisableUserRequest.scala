@@ -20,7 +20,6 @@ object AdminDisableUserRequest {
   @scala.inline
   def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminDisableUserRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdminDisableUserRequest]
   }
 }

@@ -16,7 +16,6 @@ object Enum {
   @scala.inline
   def apply(name: String, options: Options, values: StringDictionary[AnonOptions]): Enum = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Enum]
   }
 }

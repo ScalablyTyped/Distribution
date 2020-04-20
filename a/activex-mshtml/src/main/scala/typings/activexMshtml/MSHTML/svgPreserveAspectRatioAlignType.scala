@@ -34,30 +34,28 @@ trait svgPreserveAspectRatioAlignType extends js.Object
 
 object svgPreserveAspectRatioAlignType {
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_NONE: `1` = this.cast(1)
+  def SVG_PRESERVEASPECTRATIO_NONE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_UNKNOWN: `0` = this.cast(0)
+  def SVG_PRESERVEASPECTRATIO_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_XMAXYMAX: `10` = this.cast(10)
+  def SVG_PRESERVEASPECTRATIO_XMAXYMAX: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_XMAXYMID: `7` = this.cast(7)
+  def SVG_PRESERVEASPECTRATIO_XMAXYMID: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_XMAXYMIN: `4` = this.cast(4)
+  def SVG_PRESERVEASPECTRATIO_XMAXYMIN: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_XMIDYMAX: `9` = this.cast(9)
+  def SVG_PRESERVEASPECTRATIO_XMIDYMAX: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_XMIDYMID: `6` = this.cast(6)
+  def SVG_PRESERVEASPECTRATIO_XMIDYMID: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_XMIDYMIN: `3` = this.cast(3)
+  def SVG_PRESERVEASPECTRATIO_XMIDYMIN: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_XMINYMAX: `8` = this.cast(8)
+  def SVG_PRESERVEASPECTRATIO_XMINYMAX: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_XMINYMID: `5` = this.cast(5)
+  def SVG_PRESERVEASPECTRATIO_XMINYMID: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def SVG_PRESERVEASPECTRATIO_XMINYMIN: `2` = this.cast(2)
+  def SVG_PRESERVEASPECTRATIO_XMINYMIN: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def svgPreserveAspectRatioAlignType_Max: `2147483647` = this.cast(2147483647)
+  def svgPreserveAspectRatioAlignType_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

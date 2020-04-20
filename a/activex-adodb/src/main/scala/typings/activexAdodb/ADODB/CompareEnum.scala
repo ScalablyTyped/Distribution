@@ -20,16 +20,14 @@ trait CompareEnum extends js.Object
 
 object CompareEnum {
   @scala.inline
-  def adCompareEqual: `1` = this.cast(1)
+  def adCompareEqual: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adCompareGreaterThan: `2` = this.cast(2)
+  def adCompareGreaterThan: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adCompareLessThan: `0` = this.cast(0)
+  def adCompareLessThan: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adCompareNotComparable: `4` = this.cast(4)
+  def adCompareNotComparable: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adCompareNotEqual: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adCompareNotEqual: `3` = 3.asInstanceOf[`3`]
 }
 

@@ -18,7 +18,6 @@ object JSMath2jaxPreprocessor {
   @scala.inline
   def apply(preview: js.Any): JSMath2jaxPreprocessor = {
     val __obj = js.Dynamic.literal(preview = preview.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSMath2jaxPreprocessor]
   }
 }

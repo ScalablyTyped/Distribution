@@ -14,7 +14,6 @@ object Container {
   @scala.inline
   def apply[Value, State](Provider: ComponentType[ContainerProviderProps[State]], useContainer: () => Value): Container[Value, State] = {
     val __obj = js.Dynamic.literal(Provider = Provider.asInstanceOf[js.Any], useContainer = js.Any.fromFunction0(useContainer))
-  
     __obj.asInstanceOf[Container[Value, State]]
   }
 }

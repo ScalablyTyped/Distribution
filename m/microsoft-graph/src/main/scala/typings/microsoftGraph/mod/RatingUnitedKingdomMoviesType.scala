@@ -19,24 +19,22 @@ trait RatingUnitedKingdomMoviesType extends js.Object
 
 object RatingUnitedKingdomMoviesType {
   @scala.inline
-  def adults: typings.microsoftGraph.microsoftGraphStrings.adults = this.cast("adults")
+  def adults: typings.microsoftGraph.microsoftGraphStrings.adults = "adults".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adults]
   @scala.inline
-  def agesAbove12Cinema: typings.microsoftGraph.microsoftGraphStrings.agesAbove12Cinema = this.cast("agesAbove12Cinema")
+  def agesAbove12Cinema: typings.microsoftGraph.microsoftGraphStrings.agesAbove12Cinema = "agesAbove12Cinema".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove12Cinema]
   @scala.inline
-  def agesAbove12Video: typings.microsoftGraph.microsoftGraphStrings.agesAbove12Video = this.cast("agesAbove12Video")
+  def agesAbove12Video: typings.microsoftGraph.microsoftGraphStrings.agesAbove12Video = "agesAbove12Video".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove12Video]
   @scala.inline
-  def agesAbove15: typings.microsoftGraph.microsoftGraphStrings.agesAbove15 = this.cast("agesAbove15")
+  def agesAbove15: typings.microsoftGraph.microsoftGraphStrings.agesAbove15 = "agesAbove15".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove15]
   @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = this.cast("allAllowed")
+  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = this.cast("allBlocked")
+  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def general: typings.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.general]
   @scala.inline
-  def general: typings.microsoftGraph.microsoftGraphStrings.general = this.cast("general")
+  def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = "parentalGuidance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.parentalGuidance]
   @scala.inline
-  def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = this.cast("parentalGuidance")
-  @scala.inline
-  def universalChildren: typings.microsoftGraph.microsoftGraphStrings.universalChildren = this.cast("universalChildren")
+  def universalChildren: typings.microsoftGraph.microsoftGraphStrings.universalChildren = "universalChildren".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.universalChildren]
 }
 

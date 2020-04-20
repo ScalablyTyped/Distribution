@@ -18,7 +18,6 @@ object ProjectsResource {
   @scala.inline
   def apply(get: AnonFields => Request_[Project], list: AnonSearchString => Request_[ProjectsListResponse]): ProjectsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

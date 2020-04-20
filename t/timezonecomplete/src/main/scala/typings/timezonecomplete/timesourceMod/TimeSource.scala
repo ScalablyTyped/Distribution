@@ -17,7 +17,6 @@ object TimeSource {
   @scala.inline
   def apply(now: () => Date): TimeSource = {
     val __obj = js.Dynamic.literal(now = js.Any.fromFunction0(now))
-  
     __obj.asInstanceOf[TimeSource]
   }
 }

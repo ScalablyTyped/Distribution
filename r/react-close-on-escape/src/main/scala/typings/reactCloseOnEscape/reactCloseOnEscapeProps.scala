@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCloseOnEscapeProps {
   @scala.inline
-  def ReactCloseOnEscapeProps: CloseOnEscapeProps.type = typings.reactCloseOnEscape.mod.CloseOnEscapeProps
+  def ReactCloseOnEscapeProps: CloseOnEscapeProps.type = CloseOnEscapeProps
   type ReactCloseOnEscapeProps = CloseOnEscapeProps
 }
 

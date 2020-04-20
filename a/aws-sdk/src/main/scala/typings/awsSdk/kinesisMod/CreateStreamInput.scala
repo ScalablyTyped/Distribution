@@ -20,7 +20,6 @@ object CreateStreamInput {
   @scala.inline
   def apply(ShardCount: PositiveIntegerObject, StreamName: StreamName): CreateStreamInput = {
     val __obj = js.Dynamic.literal(ShardCount = ShardCount.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateStreamInput]
   }
 }

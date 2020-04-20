@@ -12,7 +12,6 @@ object AnonAutoGenerateTag {
   @scala.inline
   def apply(autoGenerateTag: Boolean): AnonAutoGenerateTag = {
     val __obj = js.Dynamic.literal(autoGenerateTag = autoGenerateTag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutoGenerateTag]
   }
 }

@@ -16,7 +16,6 @@ object GetByteMatchSetRequest {
   @scala.inline
   def apply(ByteMatchSetId: ResourceId): GetByteMatchSetRequest = {
     val __obj = js.Dynamic.literal(ByteMatchSetId = ByteMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetByteMatchSetRequest]
   }
 }

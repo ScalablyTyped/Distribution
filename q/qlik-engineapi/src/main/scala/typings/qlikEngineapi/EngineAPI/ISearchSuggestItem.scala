@@ -23,7 +23,6 @@ object ISearchSuggestItem {
   @scala.inline
   def apply(qTerm: Double, qValue: String): ISearchSuggestItem = {
     val __obj = js.Dynamic.literal(qTerm = qTerm.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchSuggestItem]
   }
 }

@@ -15,7 +15,6 @@ object TestCase {
   @scala.inline
   def apply(authorization: String, name: String, request: HttpRequest[String]): TestCase = {
     val __obj = js.Dynamic.literal(authorization = authorization.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestCase]
   }
 }

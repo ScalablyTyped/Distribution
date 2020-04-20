@@ -16,7 +16,6 @@ object DeleteHsmResponse {
   @scala.inline
   def apply(Status: String): DeleteHsmResponse = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteHsmResponse]
   }
 }

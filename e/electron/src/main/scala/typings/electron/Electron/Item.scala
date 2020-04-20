@@ -19,7 +19,6 @@ object Item {
   @scala.inline
   def apply(file: js.Array[String] | String, icon: NativeImage_ | String): Item = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Item]
   }
 }

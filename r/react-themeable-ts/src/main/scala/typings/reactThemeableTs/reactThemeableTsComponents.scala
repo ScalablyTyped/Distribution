@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactThemeableTsComponents extends reactThemeableTsProps {
   @scala.inline
-  def ThemeProvider: ComponentType[ThemeProviderProps] = js.constructorOf[typings.reactThemeableTs.mod.ThemeProvider].asInstanceOf[typings.react.mod.ComponentType[ThemeProviderProps]]
+  def ThemeProvider: ComponentType[ThemeProviderProps] = js.constructorOf[typings.reactThemeableTs.mod.ThemeProvider].asInstanceOf[ComponentType[ThemeProviderProps]]
 }
 

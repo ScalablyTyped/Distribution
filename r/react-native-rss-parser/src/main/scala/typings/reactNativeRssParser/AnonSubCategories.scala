@@ -14,7 +14,6 @@ object AnonSubCategories {
   @scala.inline
   def apply(name: String, subCategories: js.Array[Maybe[AnonName]]): AnonSubCategories = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], subCategories = subCategories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSubCategories]
   }
 }

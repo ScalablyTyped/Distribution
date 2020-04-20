@@ -16,7 +16,6 @@ object AnonDisabledDate {
   @scala.inline
   def apply[DateType](disabledDate: DateType => Boolean, generateConfig: GenerateConfig[DateType], locale: Locale): AnonDisabledDate[DateType] = {
     val __obj = js.Dynamic.literal(disabledDate = js.Any.fromFunction1(disabledDate), generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisabledDate[DateType]]
   }
 }

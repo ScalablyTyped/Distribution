@@ -31,48 +31,46 @@ trait ES2015Syntax extends js.Object
 
 object ES2015Syntax {
   @scala.inline
-  def `Arrow function`: typings.esFeatureDetection.esFeatureDetectionStrings.`Arrow function` = this.cast("Arrow function")
+  def `Arrow function`: typings.esFeatureDetection.esFeatureDetectionStrings.`Arrow function` = ("Arrow function").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Arrow function`]
   @scala.inline
-  def `Binary literals`: typings.esFeatureDetection.esFeatureDetectionStrings.`Binary literals` = this.cast("Binary literals")
+  def `Binary literals`: typings.esFeatureDetection.esFeatureDetectionStrings.`Binary literals` = ("Binary literals").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Binary literals`]
   @scala.inline
-  def `Block level function declaration`: typings.esFeatureDetection.esFeatureDetectionStrings.`Block level function declaration` = this.cast("Block level function declaration")
+  def `Block level function declaration`: typings.esFeatureDetection.esFeatureDetectionStrings.`Block level function declaration` = ("Block level function declaration").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Block level function declaration`]
   @scala.inline
-  def `Computed property`: typings.esFeatureDetection.esFeatureDetectionStrings.`Computed property` = this.cast("Computed property")
+  def `Computed property`: typings.esFeatureDetection.esFeatureDetectionStrings.`Computed property` = ("Computed property").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Computed property`]
   @scala.inline
-  def `Default parameters`: typings.esFeatureDetection.esFeatureDetectionStrings.`Default parameters` = this.cast("Default parameters")
+  def `Default parameters`: typings.esFeatureDetection.esFeatureDetectionStrings.`Default parameters` = ("Default parameters").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Default parameters`]
   @scala.inline
-  def Destructuring: typings.esFeatureDetection.esFeatureDetectionStrings.Destructuring = this.cast("Destructuring")
+  def Destructuring: typings.esFeatureDetection.esFeatureDetectionStrings.Destructuring = "Destructuring".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.Destructuring]
   @scala.inline
-  def `Generator function`: typings.esFeatureDetection.esFeatureDetectionStrings.`Generator function` = this.cast("Generator function")
+  def `Generator function`: typings.esFeatureDetection.esFeatureDetectionStrings.`Generator function` = ("Generator function").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Generator function`]
   @scala.inline
-  def `Octal literals`: typings.esFeatureDetection.esFeatureDetectionStrings.`Octal literals` = this.cast("Octal literals")
+  def `Octal literals`: typings.esFeatureDetection.esFeatureDetectionStrings.`Octal literals` = ("Octal literals").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Octal literals`]
   @scala.inline
-  def RegExpDotprototypeDotsticky: typings.esFeatureDetection.esFeatureDetectionStrings.RegExpDotprototypeDotsticky = this.cast("RegExp.prototype.sticky")
+  def RegExpDotprototypeDotsticky: typings.esFeatureDetection.esFeatureDetectionStrings.RegExpDotprototypeDotsticky = "RegExp.prototype.sticky".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.RegExpDotprototypeDotsticky]
   @scala.inline
-  def RegExpDotprototypeDotunicode: typings.esFeatureDetection.esFeatureDetectionStrings.RegExpDotprototypeDotunicode = this.cast("RegExp.prototype.unicode")
+  def RegExpDotprototypeDotunicode: typings.esFeatureDetection.esFeatureDetectionStrings.RegExpDotprototypeDotunicode = "RegExp.prototype.unicode".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.RegExpDotprototypeDotunicode]
   @scala.inline
-  def `Rest parameters`: typings.esFeatureDetection.esFeatureDetectionStrings.`Rest parameters` = this.cast("Rest parameters")
+  def `Rest parameters`: typings.esFeatureDetection.esFeatureDetectionStrings.`Rest parameters` = ("Rest parameters").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Rest parameters`]
   @scala.inline
-  def `Shorthand method`: typings.esFeatureDetection.esFeatureDetectionStrings.`Shorthand method` = this.cast("Shorthand method")
+  def `Shorthand method`: typings.esFeatureDetection.esFeatureDetectionStrings.`Shorthand method` = ("Shorthand method").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Shorthand method`]
   @scala.inline
-  def `Shorthand property`: typings.esFeatureDetection.esFeatureDetectionStrings.`Shorthand property` = this.cast("Shorthand property")
+  def `Shorthand property`: typings.esFeatureDetection.esFeatureDetectionStrings.`Shorthand property` = ("Shorthand property").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Shorthand property`]
   @scala.inline
-  def `Spread Array`: typings.esFeatureDetection.esFeatureDetectionStrings.`Spread Array` = this.cast("Spread Array")
+  def `Spread Array`: typings.esFeatureDetection.esFeatureDetectionStrings.`Spread Array` = ("Spread Array").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Spread Array`]
   @scala.inline
-  def `Spread Function call`: typings.esFeatureDetection.esFeatureDetectionStrings.`Spread Function call` = this.cast("Spread Function call")
+  def `Spread Function call`: typings.esFeatureDetection.esFeatureDetectionStrings.`Spread Function call` = ("Spread Function call").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Spread Function call`]
   @scala.inline
-  def `Template Strings`: typings.esFeatureDetection.esFeatureDetectionStrings.`Template Strings` = this.cast("Template Strings")
+  def `Template Strings`: typings.esFeatureDetection.esFeatureDetectionStrings.`Template Strings` = ("Template Strings").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Template Strings`]
   @scala.inline
-  def __all: typings.esFeatureDetection.esFeatureDetectionStrings.__all = this.cast("__all")
+  def __all: typings.esFeatureDetection.esFeatureDetectionStrings.__all = "__all".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.__all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `class`: typings.esFeatureDetection.esFeatureDetectionStrings.`class` = "class".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`class`]
   @scala.inline
-  def `class`: typings.esFeatureDetection.esFeatureDetectionStrings.`class` = this.cast("class")
+  def const: typings.esFeatureDetection.esFeatureDetectionStrings.const = "const".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.const]
   @scala.inline
-  def const: typings.esFeatureDetection.esFeatureDetectionStrings.const = this.cast("const")
+  def forDotDotDotof: typings.esFeatureDetection.esFeatureDetectionStrings.forDotDotDotof = "for...of".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.forDotDotDotof]
   @scala.inline
-  def forDotDotDotof: typings.esFeatureDetection.esFeatureDetectionStrings.forDotDotDotof = this.cast("for...of")
-  @scala.inline
-  def let: typings.esFeatureDetection.esFeatureDetectionStrings.let = this.cast("let")
+  def let: typings.esFeatureDetection.esFeatureDetectionStrings.let = "let".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.let]
 }
 

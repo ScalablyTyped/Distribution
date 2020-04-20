@@ -16,7 +16,6 @@ object GetArtifactUrlRequest {
   @scala.inline
   def apply(artifactId: ArtifactId): GetArtifactUrlRequest = {
     val __obj = js.Dynamic.literal(artifactId = artifactId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetArtifactUrlRequest]
   }
 }

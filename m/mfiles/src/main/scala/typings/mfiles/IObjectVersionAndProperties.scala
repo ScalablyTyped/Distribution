@@ -22,7 +22,6 @@ object IObjectVersionAndProperties {
     VersionData: IObjectVersion
   ): IObjectVersionAndProperties = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ObjVer = ObjVer.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Vault = Vault.asInstanceOf[js.Any], VersionData = VersionData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IObjectVersionAndProperties]
   }
 }

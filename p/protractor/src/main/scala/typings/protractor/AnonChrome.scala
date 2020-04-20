@@ -15,7 +15,6 @@ object AnonChrome {
   @scala.inline
   def apply(chrome: Typeofchrome, firefox: Typeoffirefox, http: Typeofhttp, remote: Typeofremote): AnonChrome = {
     val __obj = js.Dynamic.literal(chrome = chrome.asInstanceOf[js.Any], firefox = firefox.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChrome]
   }
 }

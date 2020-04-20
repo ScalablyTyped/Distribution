@@ -16,7 +16,6 @@ object DetectDominantLanguageRequest {
   @scala.inline
   def apply(Text: String): DetectDominantLanguageRequest = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectDominantLanguageRequest]
   }
 }

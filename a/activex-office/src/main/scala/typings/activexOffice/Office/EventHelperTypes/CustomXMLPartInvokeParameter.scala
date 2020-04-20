@@ -31,7 +31,6 @@ object CustomXMLPartInvokeParameter {
     wFlags: Double
   ): CustomXMLPartInvokeParameter = {
     val __obj = js.Dynamic.literal(dispidMember = dispidMember.asInstanceOf[js.Any], lcid = lcid.asInstanceOf[js.Any], pdispparams = pdispparams.asInstanceOf[js.Any], pexcepinfo = pexcepinfo.asInstanceOf[js.Any], puArgErr = puArgErr.asInstanceOf[js.Any], pvarResult = pvarResult.asInstanceOf[js.Any], riid = riid.asInstanceOf[js.Any], wFlags = wFlags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomXMLPartInvokeParameter]
   }
 }

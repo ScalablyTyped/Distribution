@@ -14,10 +14,8 @@ trait FLAG extends js.Object
 
 object FLAG {
   @scala.inline
-  def ALLOW_UNSAFE: `1` = this.cast(1)
+  def ALLOW_UNSAFE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def DEFAULT: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DEFAULT: `0` = 0.asInstanceOf[`0`]
 }
 

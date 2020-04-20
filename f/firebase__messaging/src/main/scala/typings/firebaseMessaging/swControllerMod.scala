@@ -24,7 +24,7 @@ object swControllerMod extends js.Object {
     val firebaseDependencies: js.Any = js.native
     var vapidKey: js.Any = js.native
     @JSName("app")
-    def app_MSwController(): typings.firebaseMessaging.mod.FirebaseApp = js.native
+    def app_MSwController: typings.firebaseMessaging.mod.FirebaseApp = js.native
     def deleteToken(): js.Promise[Boolean] = js.native
     def onMessage(): Unsubscribe = js.native
     def onNotificationClick(event: NotificationEvent): js.Promise[Unit] = js.native

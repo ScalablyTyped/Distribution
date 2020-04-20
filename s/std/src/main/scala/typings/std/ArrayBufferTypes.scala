@@ -16,7 +16,6 @@ object ArrayBufferTypes {
   @scala.inline
   def apply(ArrayBuffer: ArrayBuffer, SharedArrayBuffer: SharedArrayBuffer): ArrayBufferTypes = {
     val __obj = js.Dynamic.literal(ArrayBuffer = ArrayBuffer.asInstanceOf[js.Any], SharedArrayBuffer = SharedArrayBuffer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArrayBufferTypes]
   }
 }

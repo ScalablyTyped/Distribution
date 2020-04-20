@@ -24,7 +24,6 @@ object NotificationInstance {
     useNotification: () => js.Tuple2[NoticeFunc, ReactElement]
   ): NotificationInstance = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), notice = js.Any.fromFunction1(notice), removeNotice = js.Any.fromFunction1(removeNotice), useNotification = js.Any.fromFunction0(useNotification))
-  
     __obj.asInstanceOf[NotificationInstance]
   }
 }

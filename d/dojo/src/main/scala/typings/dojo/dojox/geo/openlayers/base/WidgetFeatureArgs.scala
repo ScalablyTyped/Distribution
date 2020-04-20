@@ -67,7 +67,6 @@ object WidgetFeatureArgs {
     width: Double
   ): WidgetFeatureArgs = {
     val __obj = js.Dynamic.literal(createWidget = createWidget.asInstanceOf[js.Any], dijitId = dijitId.asInstanceOf[js.Any], dojoType = dojoType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], widget = widget.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WidgetFeatureArgs]
   }
 }

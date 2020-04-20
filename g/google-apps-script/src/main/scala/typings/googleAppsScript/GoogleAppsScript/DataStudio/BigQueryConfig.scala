@@ -41,7 +41,6 @@ object BigQueryConfig {
     setUseStandardSql: Boolean => BigQueryConfig
   ): BigQueryConfig = {
     val __obj = js.Dynamic.literal(addQueryParameter = js.Any.fromFunction3(addQueryParameter), build = js.Any.fromFunction0(build), printJson = js.Any.fromFunction0(printJson), setAccessToken = js.Any.fromFunction1(setAccessToken), setBillingProjectId = js.Any.fromFunction1(setBillingProjectId), setQuery = js.Any.fromFunction1(setQuery), setUseStandardSql = js.Any.fromFunction1(setUseStandardSql))
-  
     __obj.asInstanceOf[BigQueryConfig]
   }
 }

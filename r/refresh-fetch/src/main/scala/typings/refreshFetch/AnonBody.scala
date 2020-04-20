@@ -15,7 +15,6 @@ object AnonBody {
   @scala.inline
   def apply[ResponseBody](body: ResponseBody, response: Response): AnonBody[ResponseBody] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBody[ResponseBody]]
   }
 }

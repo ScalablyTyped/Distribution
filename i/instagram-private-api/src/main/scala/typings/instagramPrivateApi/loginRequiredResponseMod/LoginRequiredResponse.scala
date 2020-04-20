@@ -16,7 +16,6 @@ object LoginRequiredResponse {
   @scala.inline
   def apply(logout_reason: Double, message: login_required, status: fail): LoginRequiredResponse = {
     val __obj = js.Dynamic.literal(logout_reason = logout_reason.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoginRequiredResponse]
   }
 }

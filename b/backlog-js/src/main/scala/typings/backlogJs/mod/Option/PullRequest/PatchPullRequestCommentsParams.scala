@@ -12,7 +12,6 @@ object PatchPullRequestCommentsParams {
   @scala.inline
   def apply(content: String): PatchPullRequestCommentsParams = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatchPullRequestCommentsParams]
   }
 }

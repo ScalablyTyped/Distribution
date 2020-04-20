@@ -27,7 +27,6 @@ object Impl {
   @scala.inline
   def apply(checked: String, disabled: String, radio: String, readOnly: String): Impl = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

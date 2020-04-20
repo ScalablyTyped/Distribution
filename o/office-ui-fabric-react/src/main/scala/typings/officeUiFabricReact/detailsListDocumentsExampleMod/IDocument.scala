@@ -32,7 +32,6 @@ object IDocument {
     value: String
   ): IDocument = {
     val __obj = js.Dynamic.literal(dateModified = dateModified.asInstanceOf[js.Any], dateModifiedValue = dateModifiedValue.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], fileSizeRaw = fileSizeRaw.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], iconName = iconName.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], modifiedBy = modifiedBy.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDocument]
   }
 }

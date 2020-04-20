@@ -13,7 +13,6 @@ object PlaceSearchPagination {
   @scala.inline
   def apply(hasNextPage: Boolean, nextPage: () => Unit): PlaceSearchPagination = {
     val __obj = js.Dynamic.literal(hasNextPage = hasNextPage.asInstanceOf[js.Any], nextPage = js.Any.fromFunction0(nextPage))
-  
     __obj.asInstanceOf[PlaceSearchPagination]
   }
 }

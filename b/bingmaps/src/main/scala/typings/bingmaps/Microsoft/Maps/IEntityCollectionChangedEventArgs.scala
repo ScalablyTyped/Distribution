@@ -15,7 +15,6 @@ object IEntityCollectionChangedEventArgs {
   @scala.inline
   def apply(collection: EntityCollection, data: IPrimitive): IEntityCollectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEntityCollectionChangedEventArgs]
   }
 }

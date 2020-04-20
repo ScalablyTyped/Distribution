@@ -16,18 +16,16 @@ trait TouchEventType extends js.Object
 
 object TouchEventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def tap: typings.baiduApp.baiduAppStrings.tap = "tap".asInstanceOf[typings.baiduApp.baiduAppStrings.tap]
   @scala.inline
-  def tap: typings.baiduApp.baiduAppStrings.tap = this.cast("tap")
+  def touchcancel: typings.baiduApp.baiduAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.baiduApp.baiduAppStrings.touchcancel]
   @scala.inline
-  def touchcancel: typings.baiduApp.baiduAppStrings.touchcancel = this.cast("touchcancel")
+  def touchend: typings.baiduApp.baiduAppStrings.touchend = "touchend".asInstanceOf[typings.baiduApp.baiduAppStrings.touchend]
   @scala.inline
-  def touchend: typings.baiduApp.baiduAppStrings.touchend = this.cast("touchend")
+  def touchforcechange: typings.baiduApp.baiduAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.baiduApp.baiduAppStrings.touchforcechange]
   @scala.inline
-  def touchforcechange: typings.baiduApp.baiduAppStrings.touchforcechange = this.cast("touchforcechange")
+  def touchmove: typings.baiduApp.baiduAppStrings.touchmove = "touchmove".asInstanceOf[typings.baiduApp.baiduAppStrings.touchmove]
   @scala.inline
-  def touchmove: typings.baiduApp.baiduAppStrings.touchmove = this.cast("touchmove")
-  @scala.inline
-  def touchstart: typings.baiduApp.baiduAppStrings.touchstart = this.cast("touchstart")
+  def touchstart: typings.baiduApp.baiduAppStrings.touchstart = "touchstart".asInstanceOf[typings.baiduApp.baiduAppStrings.touchstart]
 }
 

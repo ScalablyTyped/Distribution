@@ -23,7 +23,6 @@ object CallCredentials {
   @scala.inline
   def apply(compose: CallCredentials => CallCredentials, generateMetadata: js.Object => js.Promise[Metadata]): CallCredentials = {
     val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose), generateMetadata = js.Any.fromFunction1(generateMetadata))
-  
     __obj.asInstanceOf[CallCredentials]
   }
 }

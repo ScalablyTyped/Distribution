@@ -14,11 +14,11 @@ object simulateServiceMod extends js.Object {
     def postLoginFlow(): js.Promise[Unit] = js.native
     def postLoginFlow(concurrency: Double): js.Promise[Unit] = js.native
     def postLoginFlow(concurrency: Double, toShuffle: Boolean): js.Promise[Unit] = js.native
-    /* private */ def postLoginFlowRequests(): js.Any = js.native
+    /* private */ def postLoginFlowRequests: js.Any = js.native
     def preLoginFlow(): js.Promise[Unit] = js.native
     def preLoginFlow(concurrency: Double): js.Promise[Unit] = js.native
     def preLoginFlow(concurrency: Double, toShuffle: Boolean): js.Promise[Unit] = js.native
-    /* private */ def preLoginFlowRequests(): js.Any = js.native
+    /* private */ def preLoginFlowRequests: js.Any = js.native
   }
   
   /* static members */

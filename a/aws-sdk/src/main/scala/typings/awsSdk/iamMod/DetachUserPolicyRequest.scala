@@ -20,7 +20,6 @@ object DetachUserPolicyRequest {
   @scala.inline
   def apply(PolicyArn: arnType, UserName: userNameType): DetachUserPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachUserPolicyRequest]
   }
 }

@@ -15,7 +15,6 @@ object IHandledState {
   @scala.inline
   def apply(severity: String, severityReason: AnonType, unhandled: Boolean): IHandledState = {
     val __obj = js.Dynamic.literal(severity = severity.asInstanceOf[js.Any], severityReason = severityReason.asInstanceOf[js.Any], unhandled = unhandled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IHandledState]
   }
 }

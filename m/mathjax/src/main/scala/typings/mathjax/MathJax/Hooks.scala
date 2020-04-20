@@ -18,7 +18,6 @@ object Hooks {
     Remove: CallbackObject => Unit
   ): Hooks = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Execute = js.Any.fromFunction0(Execute), Remove = js.Any.fromFunction1(Remove))
-  
     __obj.asInstanceOf[Hooks]
   }
 }

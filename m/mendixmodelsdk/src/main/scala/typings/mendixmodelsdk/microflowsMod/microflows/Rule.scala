@@ -35,7 +35,7 @@ class Rule protected () extends ServerSideMicroflow {
   @JSName("model")
   var model_FRule: IModel = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MRule(): FolderBase = js.native
+  def containerAsFolderBase_MRule: FolderBase = js.native
 }
 
 /* static members */

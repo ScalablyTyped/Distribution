@@ -14,14 +14,12 @@ trait MediaKeyMessageType extends js.Object
 
 object MediaKeyMessageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `individualization-request`: typings.std.stdStrings.`individualization-request` = "individualization-request".asInstanceOf[typings.std.stdStrings.`individualization-request`]
   @scala.inline
-  def `individualization-request`: typings.std.stdStrings.`individualization-request` = this.cast("individualization-request")
+  def `license-release`: typings.std.stdStrings.`license-release` = "license-release".asInstanceOf[typings.std.stdStrings.`license-release`]
   @scala.inline
-  def `license-release`: typings.std.stdStrings.`license-release` = this.cast("license-release")
+  def `license-renewal`: typings.std.stdStrings.`license-renewal` = "license-renewal".asInstanceOf[typings.std.stdStrings.`license-renewal`]
   @scala.inline
-  def `license-renewal`: typings.std.stdStrings.`license-renewal` = this.cast("license-renewal")
-  @scala.inline
-  def `license-request`: typings.std.stdStrings.`license-request` = this.cast("license-request")
+  def `license-request`: typings.std.stdStrings.`license-request` = "license-request".asInstanceOf[typings.std.stdStrings.`license-request`]
 }
 

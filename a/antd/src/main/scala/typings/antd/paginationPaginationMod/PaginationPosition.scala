@@ -19,24 +19,22 @@ trait PaginationPosition extends js.Object
 
 object PaginationPosition {
   @scala.inline
-  def both: typings.antd.antdStrings.both = this.cast("both")
+  def both: typings.antd.antdStrings.both = "both".asInstanceOf[typings.antd.antdStrings.both]
   @scala.inline
-  def bottom: typings.antd.antdStrings.bottom = this.cast("bottom")
+  def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
   @scala.inline
-  def bottomCenter: typings.antd.antdStrings.bottomCenter = this.cast("bottomCenter")
+  def bottomCenter: typings.antd.antdStrings.bottomCenter = "bottomCenter".asInstanceOf[typings.antd.antdStrings.bottomCenter]
   @scala.inline
-  def bottomLeft: typings.antd.antdStrings.bottomLeft = this.cast("bottomLeft")
+  def bottomLeft: typings.antd.antdStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.antd.antdStrings.bottomLeft]
   @scala.inline
-  def bottomRight: typings.antd.antdStrings.bottomRight = this.cast("bottomRight")
+  def bottomRight: typings.antd.antdStrings.bottomRight = "bottomRight".asInstanceOf[typings.antd.antdStrings.bottomRight]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
   @scala.inline
-  def top: typings.antd.antdStrings.top = this.cast("top")
+  def topCenter: typings.antd.antdStrings.topCenter = "topCenter".asInstanceOf[typings.antd.antdStrings.topCenter]
   @scala.inline
-  def topCenter: typings.antd.antdStrings.topCenter = this.cast("topCenter")
+  def topLeft: typings.antd.antdStrings.topLeft = "topLeft".asInstanceOf[typings.antd.antdStrings.topLeft]
   @scala.inline
-  def topLeft: typings.antd.antdStrings.topLeft = this.cast("topLeft")
-  @scala.inline
-  def topRight: typings.antd.antdStrings.topRight = this.cast("topRight")
+  def topRight: typings.antd.antdStrings.topRight = "topRight".asInstanceOf[typings.antd.antdStrings.topRight]
 }
 

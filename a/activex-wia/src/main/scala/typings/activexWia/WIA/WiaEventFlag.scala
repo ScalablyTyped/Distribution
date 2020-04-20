@@ -18,10 +18,8 @@ trait WiaEventFlag extends js.Object
 
 object WiaEventFlag {
   @scala.inline
-  def ActionEvent: `2` = this.cast(2)
+  def ActionEvent: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def NotificationEvent: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NotificationEvent: `1` = 1.asInstanceOf[`1`]
 }
 

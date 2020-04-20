@@ -19,24 +19,22 @@ trait LayoutModes extends js.Object
 
 object LayoutModes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cellsByColumn: typings.isotopeLayout.isotopeLayoutStrings.cellsByColumn = "cellsByColumn".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.cellsByColumn]
   @scala.inline
-  def cellsByColumn: typings.isotopeLayout.isotopeLayoutStrings.cellsByColumn = this.cast("cellsByColumn")
+  def cellsByRow: typings.isotopeLayout.isotopeLayoutStrings.cellsByRow = "cellsByRow".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.cellsByRow]
   @scala.inline
-  def cellsByRow: typings.isotopeLayout.isotopeLayoutStrings.cellsByRow = this.cast("cellsByRow")
+  def fitColumns: typings.isotopeLayout.isotopeLayoutStrings.fitColumns = "fitColumns".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.fitColumns]
   @scala.inline
-  def fitColumns: typings.isotopeLayout.isotopeLayoutStrings.fitColumns = this.cast("fitColumns")
+  def fitRows: typings.isotopeLayout.isotopeLayoutStrings.fitRows = "fitRows".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.fitRows]
   @scala.inline
-  def fitRows: typings.isotopeLayout.isotopeLayoutStrings.fitRows = this.cast("fitRows")
+  def horiz: typings.isotopeLayout.isotopeLayoutStrings.horiz = "horiz".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.horiz]
   @scala.inline
-  def horiz: typings.isotopeLayout.isotopeLayoutStrings.horiz = this.cast("horiz")
+  def masonry: typings.isotopeLayout.isotopeLayoutStrings.masonry = "masonry".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.masonry]
   @scala.inline
-  def masonry: typings.isotopeLayout.isotopeLayoutStrings.masonry = this.cast("masonry")
+  def masonryHorizontal: typings.isotopeLayout.isotopeLayoutStrings.masonryHorizontal = "masonryHorizontal".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.masonryHorizontal]
   @scala.inline
-  def masonryHorizontal: typings.isotopeLayout.isotopeLayoutStrings.masonryHorizontal = this.cast("masonryHorizontal")
+  def packery: typings.isotopeLayout.isotopeLayoutStrings.packery = "packery".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.packery]
   @scala.inline
-  def packery: typings.isotopeLayout.isotopeLayoutStrings.packery = this.cast("packery")
-  @scala.inline
-  def vertical: typings.isotopeLayout.isotopeLayoutStrings.vertical = this.cast("vertical")
+  def vertical: typings.isotopeLayout.isotopeLayoutStrings.vertical = "vertical".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.vertical]
 }
 

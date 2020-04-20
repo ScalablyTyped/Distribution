@@ -24,20 +24,18 @@ trait FLAG extends js.Object
 
 object FLAG {
   @scala.inline
-  def DEFAULT: `0` = this.cast(0)
+  def DEFAULT: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def FAILURES_ONLY: `32` = this.cast(32)
+  def FAILURES_ONLY: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def FIND_FAILURES: `16` = this.cast(16)
+  def FIND_FAILURES: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def IGNORE_CASE: `1` = this.cast(1)
+  def IGNORE_CASE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def NO_GLOB: `4` = this.cast(4)
+  def NO_GLOB: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def NO_MATCH_ERROR: `8` = this.cast(8)
+  def NO_MATCH_ERROR: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def USE_CASE: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def USE_CASE: `2` = 2.asInstanceOf[`2`]
 }
 

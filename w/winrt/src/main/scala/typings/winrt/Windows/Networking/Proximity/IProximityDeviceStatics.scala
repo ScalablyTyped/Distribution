@@ -18,7 +18,6 @@ object IProximityDeviceStatics {
     getDeviceSelector: () => String
   ): IProximityDeviceStatics = {
     val __obj = js.Dynamic.literal(fromId = js.Any.fromFunction1(fromId), getDefault = js.Any.fromFunction0(getDefault), getDeviceSelector = js.Any.fromFunction0(getDeviceSelector))
-  
     __obj.asInstanceOf[IProximityDeviceStatics]
   }
 }

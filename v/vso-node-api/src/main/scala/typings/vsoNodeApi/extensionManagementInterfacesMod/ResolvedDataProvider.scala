@@ -17,7 +17,6 @@ object ResolvedDataProvider {
   @scala.inline
   def apply(duration: Double, error: String, id: String): ResolvedDataProvider = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolvedDataProvider]
   }
 }

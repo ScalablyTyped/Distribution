@@ -26,7 +26,6 @@ object AnonHasteMap {
     ]
   ): AnonHasteMap = {
     val __obj = js.Dynamic.literal(hasteMap = hasteMap.asInstanceOf[js.Any], removedFiles = removedFiles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHasteMap]
   }
 }

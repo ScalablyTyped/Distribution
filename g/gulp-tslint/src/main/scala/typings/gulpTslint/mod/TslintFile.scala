@@ -25,7 +25,6 @@ object TslintFile {
     tslint: js.Any
   ): TslintFile = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], isNull = js.Any.fromFunction0(isNull), isStream = js.Any.fromFunction0(isStream), path = path.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any], tslint = tslint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TslintFile]
   }
 }

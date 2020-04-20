@@ -21,7 +21,6 @@ object IAnimateCssRunner {
   @scala.inline
   def apply(end: () => Unit, start: () => IAnimateCssRunnerStart): IAnimateCssRunner = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), start = js.Any.fromFunction0(start))
-  
     __obj.asInstanceOf[IAnimateCssRunner]
   }
 }

@@ -5,26 +5,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
+  type Accessor[D /* <: js.Object */] = js.Function3[
+    /* originalRow */ D, 
+    /* index */ scala.Double, 
+    /* sub */ typings.reactTable.AnonData[D], 
+    typings.reactTable.mod.CellValue[js.Any]
+  ]
   type ActionType = typings.reactTable.AnonType with (typings.std.Record[java.lang.String, _])
   type AggregatedValue = js.Any
   type Aggregator[D /* <: js.Object */] = typings.reactTable.mod.AggregatorFn[D] | typings.reactTable.mod.DefaultAggregators | java.lang.String
   type AggregatorFn[D /* <: js.Object */] = js.Function3[
-    /* columnValues */ js.Array[typings.reactTable.mod.CellValue], 
+    /* columnValues */ js.Array[typings.reactTable.mod.CellValue[js.Any]], 
     /* rows */ js.Array[typings.reactTable.mod.Row[D]], 
     /* isAggregated */ scala.Boolean, 
     typings.reactTable.mod.AggregatedValue
   ]
-  type Cell[D /* <: js.Object */] = typings.reactTable.mod.UseTableCellProps[D]
+  type Cell[D /* <: js.Object */, V] = typings.reactTable.mod.UseTableCellProps[D, V]
   type CellPropGetter[D /* <: js.Object */] = typings.reactTable.mod.PropGetter[
     D, 
     typings.reactTable.mod.TableCellProps, 
     typings.reactTable.AnonCell[D], 
     typings.reactTable.PartialTableCellProps
   ]
-  type CellValue = js.Any
+  type CellValue[V] = V
+  type Column[D /* <: js.Object */] = typings.reactTable.mod.ColumnGroup[D] | typings.reactTable.mod.ColumnWithLooseAccessor[D] | typings.reactTable.mod.ColumnWithStrictAccessor[D]
+  type ColumnGroup[D /* <: js.Object */] = typings.reactTable.mod.ColumnInterface[D] with typings.reactTable.mod.ColumnGroupInterface[D] with (typings.reactTable.AnonHeader | typings.reactTable.AnonId[D]) with typings.reactTable.AnonAccessor[D]
+  type ColumnInterface[D /* <: js.Object */] = typings.reactTable.mod.UseTableColumnOptions[D]
+  type ColumnWithLooseAccessor[D /* <: js.Object */] = typings.reactTable.mod.ColumnInterface[D] with (typings.reactTable.mod.ColumnInterfaceBasedOnValue[D, _]) with (typings.reactTable.AnonHeader | typings.reactTable.AnonIdIdType[D] | typings.reactTable.Anon0[D]) with typings.reactTable.Anon1[D]
+  type ColumnWithStrictAccessor[D /* <: js.Object */] = typings.reactTable.mod.ColumnInterface[D] with (typings.reactTable.mod.ValueOf[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof D ]: {  accessor  :K} & react-table.react-table.ColumnInterfaceBasedOnValue<D, D[K]>}
+    */ typings.reactTable.reactTableStrings.ColumnWithStrictAccessor with org.scalablytyped.runtime.TopLevel[D]
+  ])
   type FilterTypes[D /* <: js.Object */] = typings.std.Record[java.lang.String, typings.reactTable.mod.FilterValue]
   type FilterValue = js.Any
-  type Filters[D /* <: js.Object */] = js.Array[typings.reactTable.AnonId[D]]
+  type Filters[D /* <: js.Object */] = js.Array[typings.reactTable.AnonValue[D]]
   type FooterGroupPropGetter[D /* <: js.Object */] = typings.reactTable.mod.PropGetter[
     D, 
     typings.reactTable.mod.TableFooterGroupProps, 
@@ -72,7 +87,7 @@ package object mod {
     /* desc */ js.UndefOr[scala.Boolean], 
     scala.Double
   ]
-  type StringKey[D] = typings.std.Extract[java.lang.String, java.lang.String]
+  type StringKey[D] = typings.std.Extract[/* keyof D */ java.lang.String, java.lang.String]
   type TableBodyPropGetter[D /* <: js.Object */] = typings.reactTable.mod.PropGetter[
     D, 
     typings.reactTable.mod.TableBodyProps, 
@@ -105,4 +120,5 @@ package object mod {
   ]
   type UseRowStateLocalState[D /* <: js.Object */, T] = typings.std.Record[typings.reactTable.mod.IdType[D], T]
   type UseRowUpdater[T] = T | (js.Function1[/* prev */ T, T])
+  type ValueOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 }

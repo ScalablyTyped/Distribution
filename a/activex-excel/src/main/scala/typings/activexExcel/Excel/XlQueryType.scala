@@ -22,18 +22,16 @@ trait XlQueryType extends js.Object
 
 object XlQueryType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlADORecordset: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlADORecordset: `7` = this.cast(7)
+  def xlDAORecordset: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlDAORecordset: `2` = this.cast(2)
+  def xlODBCQuery: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlODBCQuery: `1` = this.cast(1)
+  def xlOLEDBQuery: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlOLEDBQuery: `5` = this.cast(5)
+  def xlTextImport: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlTextImport: `6` = this.cast(6)
-  @scala.inline
-  def xlWebQuery: `4` = this.cast(4)
+  def xlWebQuery: `4` = 4.asInstanceOf[`4`]
 }
 

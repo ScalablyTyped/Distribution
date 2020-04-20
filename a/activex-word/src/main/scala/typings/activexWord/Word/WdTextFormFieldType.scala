@@ -22,18 +22,16 @@ trait WdTextFormFieldType extends js.Object
 
 object WdTextFormFieldType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCalculationText: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdCalculationText: `5` = this.cast(5)
+  def wdCurrentDateText: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdCurrentDateText: `3` = this.cast(3)
+  def wdCurrentTimeText: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdCurrentTimeText: `4` = this.cast(4)
+  def wdDateText: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdDateText: `2` = this.cast(2)
+  def wdNumberText: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdNumberText: `1` = this.cast(1)
-  @scala.inline
-  def wdRegularText: `0` = this.cast(0)
+  def wdRegularText: `0` = 0.asInstanceOf[`0`]
 }
 

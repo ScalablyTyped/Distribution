@@ -19,7 +19,6 @@ object AnonStyle {
   @scala.inline
   def apply(adUnitId: String, style: AnonLeft): AnonStyle = {
     val __obj = js.Dynamic.literal(adUnitId = adUnitId.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStyle]
   }
 }

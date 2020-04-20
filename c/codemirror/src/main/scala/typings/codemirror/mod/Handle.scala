@@ -27,7 +27,6 @@ object Handle {
     setFocus: Double => Unit
   ): Handle = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), data = data.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], menuSize = js.Any.fromFunction0(menuSize), moveFocus = js.Any.fromFunction2(moveFocus), pick = js.Any.fromFunction0(pick), setFocus = js.Any.fromFunction1(setFocus))
-  
     __obj.asInstanceOf[Handle]
   }
 }

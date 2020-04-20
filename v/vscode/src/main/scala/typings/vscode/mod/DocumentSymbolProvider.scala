@@ -22,7 +22,6 @@ object DocumentSymbolProvider {
     provideDocumentSymbols: (TextDocument, CancellationToken) => ProviderResult[js.Array[DocumentSymbol | SymbolInformation]]
   ): DocumentSymbolProvider = {
     val __obj = js.Dynamic.literal(provideDocumentSymbols = js.Any.fromFunction2(provideDocumentSymbols))
-  
     __obj.asInstanceOf[DocumentSymbolProvider]
   }
 }

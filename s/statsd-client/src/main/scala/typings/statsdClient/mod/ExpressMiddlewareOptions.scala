@@ -3,6 +3,7 @@ package typings.statsdClient.mod
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +23,7 @@ trait ExpressMiddlewareOptions extends js.Object {
     js.Function4[
       /* client */ StatsdClient, 
       /* startTime */ Date, 
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* res */ Response_[_], 
       Unit
     ]
@@ -38,7 +39,7 @@ object ExpressMiddlewareOptions {
   @scala.inline
   def apply(
     notFoundRouteName: String = null,
-    onResponseEnd: (/* client */ StatsdClient, /* startTime */ Date, /* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => Unit = null,
+    onResponseEnd: (/* client */ StatsdClient, /* startTime */ Date, /* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Unit = null,
     timeByUrl: js.UndefOr[Boolean] = js.undefined
   ): ExpressMiddlewareOptions = {
     val __obj = js.Dynamic.literal()

@@ -13,7 +13,6 @@ object PickImplinward {
   @scala.inline
   def apply(inward: String): PickImplinward = {
     val __obj = js.Dynamic.literal(inward = inward.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplinward]
   }
 }

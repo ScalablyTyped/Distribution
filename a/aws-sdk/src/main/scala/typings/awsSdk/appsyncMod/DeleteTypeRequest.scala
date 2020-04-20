@@ -20,7 +20,6 @@ object DeleteTypeRequest {
   @scala.inline
   def apply(apiId: String, typeName: ResourceName): DeleteTypeRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTypeRequest]
   }
 }

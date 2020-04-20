@@ -15,7 +15,6 @@ object AnonOnMouseDown {
   @scala.inline
   def apply(onMouseDown: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): AnonOnMouseDown = {
     val __obj = js.Dynamic.literal(onMouseDown = js.Any.fromFunction1(onMouseDown))
-  
     __obj.asInstanceOf[AnonOnMouseDown]
   }
 }

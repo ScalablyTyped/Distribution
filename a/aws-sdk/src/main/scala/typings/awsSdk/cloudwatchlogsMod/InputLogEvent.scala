@@ -20,7 +20,6 @@ object InputLogEvent {
   @scala.inline
   def apply(message: EventMessage, timestamp: Timestamp): InputLogEvent = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputLogEvent]
   }
 }

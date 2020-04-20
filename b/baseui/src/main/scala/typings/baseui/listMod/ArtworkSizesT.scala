@@ -14,12 +14,10 @@ trait ArtworkSizesT extends js.Object
 
 object ArtworkSizesT {
   @scala.inline
-  def LARGE: typings.baseui.baseuiStrings.LARGE = this.cast("LARGE")
+  def LARGE: typings.baseui.baseuiStrings.LARGE = "LARGE".asInstanceOf[typings.baseui.baseuiStrings.LARGE]
   @scala.inline
-  def MEDIUM: typings.baseui.baseuiStrings.MEDIUM = this.cast("MEDIUM")
+  def MEDIUM: typings.baseui.baseuiStrings.MEDIUM = "MEDIUM".asInstanceOf[typings.baseui.baseuiStrings.MEDIUM]
   @scala.inline
-  def SMALL: typings.baseui.baseuiStrings.SMALL = this.cast("SMALL")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SMALL: typings.baseui.baseuiStrings.SMALL = "SMALL".asInstanceOf[typings.baseui.baseuiStrings.SMALL]
 }
 

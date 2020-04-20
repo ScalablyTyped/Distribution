@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ImageState extends js.Object {
   /**
-    *  The reason for the image's status. 
+    * The reason for the image's status. 
     */
   var reason: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The status of the image. 
+    * The status of the image. 
     */
   var status: js.UndefOr[ImageStatus] = js.native
 }

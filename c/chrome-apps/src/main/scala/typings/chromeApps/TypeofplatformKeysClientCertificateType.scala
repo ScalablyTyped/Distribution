@@ -87,7 +87,6 @@ object TypeofplatformKeysClientCertificateType {
     verifyTLSServerCertificate: (VerificationDetails, js.Function1[/* result */ VerificationResult, Unit]) => Unit
   ): TypeofplatformKeysClientCertificateType = {
     val __obj = js.Dynamic.literal(ClientCertificateType = ClientCertificateType.asInstanceOf[js.Any], getKeyPair = js.Any.fromFunction3(getKeyPair), selectClientCertificates = js.Any.fromFunction2(selectClientCertificates), subtleCrypto = js.Any.fromFunction0(subtleCrypto), verifyTLSServerCertificate = js.Any.fromFunction2(verifyTLSServerCertificate))
-  
     __obj.asInstanceOf[TypeofplatformKeysClientCertificateType]
   }
 }

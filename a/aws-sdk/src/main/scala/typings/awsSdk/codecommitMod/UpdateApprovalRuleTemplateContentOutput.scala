@@ -13,7 +13,6 @@ object UpdateApprovalRuleTemplateContentOutput {
   @scala.inline
   def apply(approvalRuleTemplate: ApprovalRuleTemplate): UpdateApprovalRuleTemplateContentOutput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplate = approvalRuleTemplate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateApprovalRuleTemplateContentOutput]
   }
 }

@@ -24,7 +24,6 @@ object UpdateSSHPublicKeyRequest {
   @scala.inline
   def apply(SSHPublicKeyId: publicKeyIdType, Status: statusType, UserName: userNameType): UpdateSSHPublicKeyRequest = {
     val __obj = js.Dynamic.literal(SSHPublicKeyId = SSHPublicKeyId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSSHPublicKeyRequest]
   }
 }

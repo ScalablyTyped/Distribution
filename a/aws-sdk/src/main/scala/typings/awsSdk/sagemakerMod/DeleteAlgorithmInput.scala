@@ -16,7 +16,6 @@ object DeleteAlgorithmInput {
   @scala.inline
   def apply(AlgorithmName: EntityName): DeleteAlgorithmInput = {
     val __obj = js.Dynamic.literal(AlgorithmName = AlgorithmName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAlgorithmInput]
   }
 }

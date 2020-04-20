@@ -12,7 +12,6 @@ object rand {
   @scala.inline
   def apply(getByte: () => Double): rand = {
     val __obj = js.Dynamic.literal(getByte = js.Any.fromFunction0(getByte))
-  
     __obj.asInstanceOf[rand]
   }
 }

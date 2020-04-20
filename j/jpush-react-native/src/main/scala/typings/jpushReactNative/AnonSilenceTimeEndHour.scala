@@ -20,7 +20,6 @@ object AnonSilenceTimeEndHour {
     silenceTimeStartMinute: Double
   ): AnonSilenceTimeEndHour = {
     val __obj = js.Dynamic.literal(silenceTimeEndHour = silenceTimeEndHour.asInstanceOf[js.Any], silenceTimeEndMinute = silenceTimeEndMinute.asInstanceOf[js.Any], silenceTimeStartHour = silenceTimeStartHour.asInstanceOf[js.Any], silenceTimeStartMinute = silenceTimeStartMinute.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSilenceTimeEndHour]
   }
 }

@@ -28,7 +28,6 @@ object AllocatePublicVirtualInterfaceRequest {
     ownerAccount: OwnerAccount
   ): AllocatePublicVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], newPublicVirtualInterfaceAllocation = newPublicVirtualInterfaceAllocation.asInstanceOf[js.Any], ownerAccount = ownerAccount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AllocatePublicVirtualInterfaceRequest]
   }
 }

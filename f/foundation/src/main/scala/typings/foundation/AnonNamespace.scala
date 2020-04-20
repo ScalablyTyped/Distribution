@@ -12,7 +12,6 @@ object AnonNamespace {
   @scala.inline
   def apply(namespace: String): AnonNamespace = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNamespace]
   }
 }

@@ -25,7 +25,6 @@ object PaginationPage {
   @scala.inline
   def apply(init: () => Unit, initOnLoad: () => Boolean, set: Double => Unit): PaginationPage = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[PaginationPage]
   }
 }

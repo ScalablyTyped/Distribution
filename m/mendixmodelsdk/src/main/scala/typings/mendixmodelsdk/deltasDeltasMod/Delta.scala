@@ -33,13 +33,11 @@ object Delta {
     unitTree: IStructureJSON
   ): Delta = {
     val __obj = js.Dynamic.literal(containerId = containerId.asInstanceOf[js.Any], containmentName = containmentName.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], deltaType = deltaType.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any], unitTree = unitTree.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delta]
   }
   @scala.inline
   def IDeleteElementDelta(deltaType: DELETE_ELEMENT, elementId: String, unitId: String): Delta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delta]
   }
   @scala.inline
@@ -58,7 +56,6 @@ object Delta {
   @scala.inline
   def IDetachElementDelta(deltaType: DETACH_ELEMENT, elementId: String, unitId: String): Delta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delta]
   }
   @scala.inline
@@ -70,13 +67,11 @@ object Delta {
     unitId: String
   ): Delta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], mutator = mutator.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delta]
   }
   @scala.inline
   def IDeleteUnitDelta(deltaType: DELETE_UNIT, unitId: String): Delta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delta]
   }
   @scala.inline

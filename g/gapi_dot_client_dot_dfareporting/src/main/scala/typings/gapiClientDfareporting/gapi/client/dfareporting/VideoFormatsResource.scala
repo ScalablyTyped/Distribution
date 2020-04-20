@@ -18,7 +18,6 @@ object VideoFormatsResource {
   @scala.inline
   def apply(get: AnonFieldsId => Request_[VideoFormat], list: AnonKey => Request_[VideoFormatsListResponse]): VideoFormatsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[VideoFormatsResource]
   }
 }

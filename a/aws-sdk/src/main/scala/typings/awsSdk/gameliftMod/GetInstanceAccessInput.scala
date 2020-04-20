@@ -20,7 +20,6 @@ object GetInstanceAccessInput {
   @scala.inline
   def apply(FleetId: FleetIdOrArn, InstanceId: InstanceId): GetInstanceAccessInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInstanceAccessInput]
   }
 }

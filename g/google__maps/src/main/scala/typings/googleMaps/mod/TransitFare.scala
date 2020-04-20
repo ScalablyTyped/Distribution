@@ -17,7 +17,6 @@ object TransitFare {
   @scala.inline
   def apply(currency: String, text: String, value: Double): TransitFare = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitFare]
   }
 }

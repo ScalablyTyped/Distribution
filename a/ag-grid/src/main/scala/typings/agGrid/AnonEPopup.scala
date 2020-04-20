@@ -14,7 +14,6 @@ object AnonEPopup {
   @scala.inline
   def apply(ePopup: HTMLElement, eventSource: js.Any): AnonEPopup = {
     val __obj = js.Dynamic.literal(ePopup = ePopup.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEPopup]
   }
 }

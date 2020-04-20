@@ -37,8 +37,12 @@ import typings.reactLeaflet.mod.FeatureGroupProps
 import typings.reactLeaflet.mod.GeoJSONProps
 import typings.reactLeaflet.mod.GridLayerProps
 import typings.reactLeaflet.mod.ImageOverlayProps
+import typings.reactLeaflet.mod.LayersControl.BaseLayer
+import typings.reactLeaflet.mod.LayersControl.ControlledLayer
 import typings.reactLeaflet.mod.LayersControl.ControlledLayerProps
+import typings.reactLeaflet.mod.LayersControl.Overlay
 import typings.reactLeaflet.mod.LayersControlProps
+import typings.reactLeaflet.mod.LayersControl_
 import typings.reactLeaflet.mod.LeafletContext
 import typings.reactLeaflet.mod.MapComponentProps
 import typings.reactLeaflet.mod.MapControlProps
@@ -64,70 +68,70 @@ import scala.scalajs.js.annotation._
 
 object reactLeafletComponents extends reactLeafletProps {
   @scala.inline
-  def AttributionControl[P /* <: AttributionControlProps */, E /* <: Attribution */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.AttributionControl[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def AttributionControl[P /* <: AttributionControlProps */, E /* <: Attribution */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.AttributionControl[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def Circle[P /* <: CircleProps */, E /* <: Circle_[js.Any] */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.Circle[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Circle[P /* <: CircleProps */, E /* <: Circle_[js.Any] */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.Circle[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def CircleMarker[P /* <: CircleMarkerProps */, E /* <: CircleMarker_[js.Any] */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.CircleMarker[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def CircleMarker[P /* <: CircleMarkerProps */, E /* <: CircleMarker_[js.Any] */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.CircleMarker[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def DivOverlay[P /* <: DivOverlayProps */, E /* <: DivOverlayTypes */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.DivOverlay[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def DivOverlay[P /* <: DivOverlayProps */, E /* <: DivOverlayTypes */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.DivOverlay[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def FeatureGroup[P /* <: FeatureGroupProps */, E /* <: FeatureGroup_[js.Any] */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.FeatureGroup[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def FeatureGroup[P /* <: FeatureGroupProps */, E /* <: FeatureGroup_[js.Any] */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.FeatureGroup[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def GeoJSON[P /* <: GeoJSONProps */, E /* <: GeoJSON_[js.Any] */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.GeoJSON[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def GeoJSON[P /* <: GeoJSONProps */, E /* <: GeoJSON_[js.Any] */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.GeoJSON[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def GridLayer[P /* <: GridLayerProps */, E /* <: GridLayer_ */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.GridLayer[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def GridLayer[P /* <: GridLayerProps */, E /* <: GridLayer_ */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.GridLayer[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def ImageOverlay[P /* <: ImageOverlayProps */, E /* <: ImageOverlay_ */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.ImageOverlay[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def ImageOverlay[P /* <: ImageOverlayProps */, E /* <: ImageOverlay_ */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.ImageOverlay[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def LayerGroup[P /* <: MapLayerProps */, E /* <: LayerGroup_[js.Any] */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.LayerGroup[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def LayerGroup[P /* <: MapLayerProps */, E /* <: LayerGroup_[js.Any] */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.LayerGroup[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def LayersControl[P /* <: LayersControlProps */, E /* <: Layers */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.LayersControl_[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def LayersControl[P /* <: LayersControlProps */, E /* <: Layers */]: ComponentType[P] = (js.constructorOf[LayersControl_[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def LayersControlBaseLayer[P /* <: ControlledLayerProps */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.LayersControl.BaseLayer[P]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def LayersControlBaseLayer[P /* <: ControlledLayerProps */]: ComponentType[P] = js.constructorOf[BaseLayer[P]].asInstanceOf[ComponentType[P]]
   @scala.inline
-  def LayersControlControlledLayer[P /* <: ControlledLayerProps */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.LayersControl.ControlledLayer[P]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def LayersControlControlledLayer[P /* <: ControlledLayerProps */]: ComponentType[P] = js.constructorOf[ControlledLayer[P]].asInstanceOf[ComponentType[P]]
   @scala.inline
-  def LayersControlOverlay[P /* <: ControlledLayerProps */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.LayersControl.Overlay[P]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def LayersControlOverlay[P /* <: ControlledLayerProps */]: ComponentType[P] = js.constructorOf[Overlay[P]].asInstanceOf[ComponentType[P]]
   @scala.inline
-  def LeafletConsumer: ComponentType[LeafletConsumerProps[LeafletContext]] = typings.reactLeaflet.mod.LeafletConsumer.asInstanceOf[typings.react.mod.ComponentType[LeafletConsumerProps[typings.reactLeaflet.mod.LeafletContext]]]
+  def LeafletConsumer: ComponentType[LeafletConsumerProps[LeafletContext]] = typings.reactLeaflet.mod.LeafletConsumer.asInstanceOf[ComponentType[LeafletConsumerProps[LeafletContext]]]
   @scala.inline
-  def LeafletProvider: ComponentType[LeafletProviderProps[LeafletContext]] = typings.reactLeaflet.mod.LeafletProvider.asInstanceOf[typings.react.mod.ComponentType[LeafletProviderProps[typings.reactLeaflet.mod.LeafletContext]]]
+  def LeafletProvider: ComponentType[LeafletProviderProps[LeafletContext]] = typings.reactLeaflet.mod.LeafletProvider.asInstanceOf[ComponentType[LeafletProviderProps[LeafletContext]]]
   @scala.inline
-  def Map[P /* <: MapProps */, E /* <: Map_ */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.Map[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Map[P /* <: MapProps */, E /* <: Map_ */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.Map[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def MapComponent[P /* <: MapComponentProps */, E /* <: Evented */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.MapComponent[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def MapComponent[P /* <: MapComponentProps */, E /* <: Evented */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.MapComponent[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def MapControl[P /* <: MapControlProps */, E /* <: Control_ */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.MapControl[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def MapControl[P /* <: MapControlProps */, E /* <: Control_ */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.MapControl[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def MapEvented[P, E /* <: Evented */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.MapEvented[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def MapEvented[P, E /* <: Evented */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.MapEvented[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def MapLayer[P /* <: MapLayerProps */, E /* <: Layer */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.MapLayer[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def MapLayer[P /* <: MapLayerProps */, E /* <: Layer */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.MapLayer[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def Marker[P /* <: MarkerProps */, E /* <: Marker_[js.Any] */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.Marker[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Marker[P /* <: MarkerProps */, E /* <: Marker_[js.Any] */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.Marker[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def Pane[P /* <: PaneProps */, S /* <: PaneState */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.Pane[P, S]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Pane[P /* <: PaneProps */, S /* <: PaneState */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.Pane[P, S]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def Polygon[P /* <: PolygonProps */, E /* <: Polygon_[js.Any] */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.Polygon[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Polygon[P /* <: PolygonProps */, E /* <: Polygon_[js.Any] */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.Polygon[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def Polyline[P /* <: PolylineProps */, E /* <: Polyline_[LineString | MultiLineString, js.Any] */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.Polyline[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Polyline[P /* <: PolylineProps */, E /* <: Polyline_[LineString | MultiLineString, js.Any] */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.Polyline[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def Popup[P /* <: PopupProps */, E /* <: Popup_ */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.Popup[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Popup[P /* <: PopupProps */, E /* <: Popup_ */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.Popup[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def Rectangle[P /* <: RectangleProps */, E /* <: Rectangle_[js.Any] */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.Rectangle[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Rectangle[P /* <: RectangleProps */, E /* <: Rectangle_[js.Any] */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.Rectangle[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def SVGOverlay[P /* <: SVGOverlayProps */, E /* <: SVGOverlay_ */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.SVGOverlay[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def SVGOverlay[P /* <: SVGOverlayProps */, E /* <: SVGOverlay_ */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.SVGOverlay[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def ScaleControl[P /* <: ScaleControlProps */, E /* <: Scale */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.ScaleControl[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def ScaleControl[P /* <: ScaleControlProps */, E /* <: Scale */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.ScaleControl[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def TileLayer[P /* <: TileLayerProps */, E /* <: TileLayer_ */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.TileLayer[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def TileLayer[P /* <: TileLayerProps */, E /* <: TileLayer_ */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.TileLayer[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def Tooltip[P /* <: TooltipProps */, E /* <: Tooltip_ */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.Tooltip[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Tooltip[P /* <: TooltipProps */, E /* <: Tooltip_ */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.Tooltip[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def VideoOverlay[P /* <: VideoOverlayProps */, E /* <: VideoOverlay_ */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.VideoOverlay[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def VideoOverlay[P /* <: VideoOverlayProps */, E /* <: VideoOverlay_ */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.VideoOverlay[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def WMSTileLayer[P /* <: WMSTileLayerProps */, E /* <: WMS */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.WMSTileLayer[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def WMSTileLayer[P /* <: WMSTileLayerProps */, E /* <: WMS */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.WMSTileLayer[P, E]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def ZoomControl[P /* <: ZoomControlProps */, E /* <: Zoom */]: ComponentType[P] = js.constructorOf[typings.reactLeaflet.mod.ZoomControl[P, E]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def ZoomControl[P /* <: ZoomControlProps */, E /* <: Zoom */]: ComponentType[P] = (js.constructorOf[typings.reactLeaflet.mod.ZoomControl[P, E]]).asInstanceOf[ComponentType[P]]
 }
 

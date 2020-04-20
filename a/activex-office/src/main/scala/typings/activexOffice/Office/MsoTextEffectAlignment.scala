@@ -24,20 +24,18 @@ trait MsoTextEffectAlignment extends js.Object
 
 object MsoTextEffectAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoTextEffectAlignmentCentered: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoTextEffectAlignmentCentered: `2` = this.cast(2)
+  def msoTextEffectAlignmentLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoTextEffectAlignmentLeft: `1` = this.cast(1)
+  def msoTextEffectAlignmentLetterJustify: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoTextEffectAlignmentLetterJustify: `4` = this.cast(4)
+  def msoTextEffectAlignmentMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoTextEffectAlignmentMixed: `-2` = this.cast(-2)
+  def msoTextEffectAlignmentRight: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoTextEffectAlignmentRight: `3` = this.cast(3)
+  def msoTextEffectAlignmentStretchJustify: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoTextEffectAlignmentStretchJustify: `6` = this.cast(6)
-  @scala.inline
-  def msoTextEffectAlignmentWordJustify: `5` = this.cast(5)
+  def msoTextEffectAlignmentWordJustify: `5` = 5.asInstanceOf[`5`]
 }
 

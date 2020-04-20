@@ -31,7 +31,6 @@ object NajaEventsMap {
     success: NajaEventListener[SuccessEvent[_]]
   ): NajaEventsMap = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], interaction = interaction.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NajaEventsMap]
   }
 }

@@ -14,7 +14,6 @@ object AnonPackages {
   @scala.inline
   def apply(packages: StringDictionary[PackageFileInfo]): AnonPackages = {
     val __obj = js.Dynamic.literal(packages = packages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPackages]
   }
 }

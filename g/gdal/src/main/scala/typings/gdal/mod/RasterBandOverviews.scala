@@ -22,7 +22,6 @@ object RasterBandOverviews {
     map: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, js.Any] => js.Array[js.Any]
   ): RasterBandOverviews = {
     val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), getBySampleCount = js.Any.fromFunction1(getBySampleCount), map = js.Any.fromFunction1(map))
-  
     __obj.asInstanceOf[RasterBandOverviews]
   }
 }

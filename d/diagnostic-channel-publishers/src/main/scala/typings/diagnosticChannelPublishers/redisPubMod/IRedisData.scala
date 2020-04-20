@@ -17,7 +17,6 @@ object IRedisData {
   @scala.inline
   def apply(address: String, commandObj: js.Any, duration: Double, err: Error, result: js.Any): IRedisData = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], commandObj = commandObj.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRedisData]
   }
 }

@@ -40,7 +40,6 @@ object LiveCommentsResponseRootObject {
     system_comments: js.Array[LiveCommentsResponseSystemCommentsItem]
   ): LiveCommentsResponseRootObject = {
     val __obj = js.Dynamic.literal(can_view_more_preview_comments = can_view_more_preview_comments.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], comment_likes_enabled = comment_likes_enabled.asInstanceOf[js.Any], comment_muted = comment_muted.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], has_more_comments = has_more_comments.asInstanceOf[js.Any], has_more_headload_comments = has_more_headload_comments.asInstanceOf[js.Any], is_first_fetch = is_first_fetch.asInstanceOf[js.Any], live_seconds_per_comment = live_seconds_per_comment.asInstanceOf[js.Any], media_header_display = media_header_display.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], system_comments = system_comments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LiveCommentsResponseRootObject]
   }
 }

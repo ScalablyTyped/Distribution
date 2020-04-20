@@ -14,7 +14,6 @@ object AnonItemsCharacterGrouping {
   @scala.inline
   def apply(items: CharacterGrouping, returnValue: Double): AnonItemsCharacterGrouping = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsCharacterGrouping]
   }
 }

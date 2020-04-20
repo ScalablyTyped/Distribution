@@ -19,7 +19,6 @@ object SaveSynonymResponse {
   @scala.inline
   def apply(taskID: Double, updatedAt: Double): SaveSynonymResponse = {
     val __obj = js.Dynamic.literal(taskID = taskID.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SaveSynonymResponse]
   }
 }

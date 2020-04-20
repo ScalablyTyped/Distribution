@@ -16,7 +16,6 @@ object DeleteOptionGroupMessage {
   @scala.inline
   def apply(OptionGroupName: String): DeleteOptionGroupMessage = {
     val __obj = js.Dynamic.literal(OptionGroupName = OptionGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteOptionGroupMessage]
   }
 }

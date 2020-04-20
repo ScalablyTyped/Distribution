@@ -328,11 +328,11 @@ object semanticUiDropdownStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
-  def `bind intent`: `bind intent` = "bind intent".asInstanceOf[`bind intent`]
+  def `bind intent`: `bind intent` = ("bind intent").asInstanceOf[`bind intent`]
   @scala.inline
-  def `bind mouse events`: `bind mouse events` = "bind mouse events".asInstanceOf[`bind mouse events`]
+  def `bind mouse events`: `bind mouse events` = ("bind mouse events").asInstanceOf[`bind mouse events`]
   @scala.inline
-  def `bind touch events`: `bind touch events` = "bind touch events".asInstanceOf[`bind touch events`]
+  def `bind touch events`: `bind touch events` = ("bind touch events").asInstanceOf[`bind touch events`]
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
@@ -350,9 +350,9 @@ object semanticUiDropdownStrings {
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
-  def `determine intent`: `determine intent` = "determine intent".asInstanceOf[`determine intent`]
+  def `determine intent`: `determine intent` = ("determine intent").asInstanceOf[`determine intent`]
   @scala.inline
-  def `determine select action`: `determine select action` = "determine select action".asInstanceOf[`determine select action`]
+  def `determine select action`: `determine select action` = ("determine select action").asInstanceOf[`determine select action`]
   @scala.inline
   def direction: direction = "direction".asInstanceOf[direction]
   @scala.inline
@@ -372,31 +372,31 @@ object semanticUiDropdownStrings {
   @scala.inline
   def fullTextSearch: fullTextSearch = "fullTextSearch".asInstanceOf[fullTextSearch]
   @scala.inline
-  def `get default text`: `get default text` = "get default text".asInstanceOf[`get default text`]
+  def `get default text`: `get default text` = ("get default text").asInstanceOf[`get default text`]
   @scala.inline
-  def `get item`: `get item` = "get item".asInstanceOf[`get item`]
+  def `get item`: `get item` = ("get item").asInstanceOf[`get item`]
   @scala.inline
-  def `get placeholder text`: `get placeholder text` = "get placeholder text".asInstanceOf[`get placeholder text`]
+  def `get placeholder text`: `get placeholder text` = ("get placeholder text").asInstanceOf[`get placeholder text`]
   @scala.inline
-  def `get text`: `get text` = "get text".asInstanceOf[`get text`]
+  def `get text`: `get text` = ("get text").asInstanceOf[`get text`]
   @scala.inline
-  def `get value`: `get value` = "get value".asInstanceOf[`get value`]
+  def `get value`: `get value` = ("get value").asInstanceOf[`get value`]
   @scala.inline
   def glyphWidth: glyphWidth = "glyphWidth".asInstanceOf[glyphWidth]
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
-  def `hide others`: `hide others` = "hide others".asInstanceOf[`hide others`]
+  def `hide others`: `hide others` = ("hide others").asInstanceOf[`hide others`]
   @scala.inline
   def hideAdditions: hideAdditions = "hideAdditions".asInstanceOf[hideAdditions]
   @scala.inline
-  def `is animated`: `is animated` = "is animated".asInstanceOf[`is animated`]
+  def `is animated`: `is animated` = ("is animated").asInstanceOf[`is animated`]
   @scala.inline
-  def `is hidden`: `is hidden` = "is hidden".asInstanceOf[`is hidden`]
+  def `is hidden`: `is hidden` = ("is hidden").asInstanceOf[`is hidden`]
   @scala.inline
-  def `is selection`: `is selection` = "is selection".asInstanceOf[`is selection`]
+  def `is selection`: `is selection` = ("is selection").asInstanceOf[`is selection`]
   @scala.inline
-  def `is visible`: `is visible` = "is visible".asInstanceOf[`is visible`]
+  def `is visible`: `is visible` = ("is visible").asInstanceOf[`is visible`]
   @scala.inline
   def keepOnScreen: keepOnScreen = "keepOnScreen".asInstanceOf[keepOnScreen]
   @scala.inline
@@ -450,21 +450,21 @@ object semanticUiDropdownStrings {
   @scala.inline
   def regExp: regExp = "regExp".asInstanceOf[regExp]
   @scala.inline
-  def `remove active`: `remove active` = "remove active".asInstanceOf[`remove active`]
+  def `remove active`: `remove active` = ("remove active").asInstanceOf[`remove active`]
   @scala.inline
-  def `remove selected`: `remove selected` = "remove selected".asInstanceOf[`remove selected`]
+  def `remove selected`: `remove selected` = ("remove selected").asInstanceOf[`remove selected`]
   @scala.inline
-  def `remove visible`: `remove visible` = "remove visible".asInstanceOf[`remove visible`]
+  def `remove visible`: `remove visible` = ("remove visible").asInstanceOf[`remove visible`]
   @scala.inline
-  def `restore default text`: `restore default text` = "restore default text".asInstanceOf[`restore default text`]
+  def `restore default text`: `restore default text` = ("restore default text").asInstanceOf[`restore default text`]
   @scala.inline
-  def `restore default value`: `restore default value` = "restore default value".asInstanceOf[`restore default value`]
+  def `restore default value`: `restore default value` = ("restore default value").asInstanceOf[`restore default value`]
   @scala.inline
-  def `restore defaults`: `restore defaults` = "restore defaults".asInstanceOf[`restore defaults`]
+  def `restore defaults`: `restore defaults` = ("restore defaults").asInstanceOf[`restore defaults`]
   @scala.inline
-  def `restore placeholder text`: `restore placeholder text` = "restore placeholder text".asInstanceOf[`restore placeholder text`]
+  def `restore placeholder text`: `restore placeholder text` = ("restore placeholder text").asInstanceOf[`restore placeholder text`]
   @scala.inline
-  def `save defaults`: `save defaults` = "save defaults".asInstanceOf[`save defaults`]
+  def `save defaults`: `save defaults` = ("save defaults").asInstanceOf[`save defaults`]
   @scala.inline
   def saveRemoteData: saveRemoteData = "saveRemoteData".asInstanceOf[saveRemoteData]
   @scala.inline
@@ -474,21 +474,21 @@ object semanticUiDropdownStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set active`: `set active` = "set active".asInstanceOf[`set active`]
+  def `set active`: `set active` = ("set active").asInstanceOf[`set active`]
   @scala.inline
-  def `set exactly`: `set exactly` = "set exactly".asInstanceOf[`set exactly`]
+  def `set exactly`: `set exactly` = ("set exactly").asInstanceOf[`set exactly`]
   @scala.inline
-  def `set selected`: `set selected` = "set selected".asInstanceOf[`set selected`]
+  def `set selected`: `set selected` = ("set selected").asInstanceOf[`set selected`]
   @scala.inline
-  def `set text`: `set text` = "set text".asInstanceOf[`set text`]
+  def `set text`: `set text` = ("set text").asInstanceOf[`set text`]
   @scala.inline
-  def `set value`: `set value` = "set value".asInstanceOf[`set value`]
+  def `set value`: `set value` = ("set value").asInstanceOf[`set value`]
   @scala.inline
-  def `set visible`: `set visible` = "set visible".asInstanceOf[`set visible`]
+  def `set visible`: `set visible` = ("set visible").asInstanceOf[`set visible`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline
-  def `setup menu`: `setup menu` = "setup menu".asInstanceOf[`setup menu`]
+  def `setup menu`: `setup menu` = ("setup menu").asInstanceOf[`setup menu`]
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   @scala.inline
@@ -504,7 +504,7 @@ object semanticUiDropdownStrings {
   @scala.inline
   def transition: transition = "transition".asInstanceOf[transition]
   @scala.inline
-  def `unbind intent`: `unbind intent` = "unbind intent".asInstanceOf[`unbind intent`]
+  def `unbind intent`: `unbind intent` = ("unbind intent").asInstanceOf[`unbind intent`]
   @scala.inline
   def upward: upward = "upward".asInstanceOf[upward]
   @scala.inline

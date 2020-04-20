@@ -13,7 +13,6 @@ object IStorybookSection {
   @scala.inline
   def apply(kind: String, stories: js.Array[IStorybookStory]): IStorybookSection = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStorybookSection]
   }
 }

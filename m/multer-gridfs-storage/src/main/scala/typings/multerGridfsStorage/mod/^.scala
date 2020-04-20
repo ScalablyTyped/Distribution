@@ -2,6 +2,7 @@ package typings.multerGridfsStorage.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.multer.PartialFile
 import typings.multer.mod._Global_.Express.Multer.File
 import typings.multerGridfsStorage.AnonFilename
@@ -29,7 +30,7 @@ class ^ protected () extends MulterGridfsStorage {
     */
   /* CompleteClass */
   override def _handleFile(
-    req: Request_[ParamsDictionary],
+    req: Request_[ParamsDictionary, _, _, Query],
     file: File,
     callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]
   ): Unit = js.native
@@ -44,7 +45,11 @@ class ^ protected () extends MulterGridfsStorage {
     * @param callback Callback to indicate completion.
     */
   /* CompleteClass */
-  override def _removeFile(req: Request_[ParamsDictionary], file: File, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  override def _removeFile(
+    req: Request_[ParamsDictionary, _, _, Query],
+    file: File,
+    callback: js.Function1[/* error */ Error, Unit]
+  ): Unit = js.native
 }
 
 @JSImport("multer-gridfs-storage", JSImport.Namespace)

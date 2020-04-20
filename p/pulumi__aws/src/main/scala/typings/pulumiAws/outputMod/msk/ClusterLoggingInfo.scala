@@ -16,7 +16,6 @@ object ClusterLoggingInfo {
   @scala.inline
   def apply(brokerLogs: ClusterLoggingInfoBrokerLogs): ClusterLoggingInfo = {
     val __obj = js.Dynamic.literal(brokerLogs = brokerLogs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterLoggingInfo]
   }
 }

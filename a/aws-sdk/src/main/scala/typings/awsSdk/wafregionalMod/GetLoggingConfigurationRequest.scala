@@ -16,7 +16,6 @@ object GetLoggingConfigurationRequest {
   @scala.inline
   def apply(ResourceArn: ResourceArn): GetLoggingConfigurationRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLoggingConfigurationRequest]
   }
 }

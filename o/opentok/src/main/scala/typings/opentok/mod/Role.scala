@@ -13,12 +13,10 @@ trait Role extends js.Object
 
 object Role {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def moderator: typings.opentok.opentokStrings.moderator = "moderator".asInstanceOf[typings.opentok.opentokStrings.moderator]
   @scala.inline
-  def moderator: typings.opentok.opentokStrings.moderator = this.cast("moderator")
+  def publisher: typings.opentok.opentokStrings.publisher = "publisher".asInstanceOf[typings.opentok.opentokStrings.publisher]
   @scala.inline
-  def publisher: typings.opentok.opentokStrings.publisher = this.cast("publisher")
-  @scala.inline
-  def subscriber: typings.opentok.opentokStrings.subscriber = this.cast("subscriber")
+  def subscriber: typings.opentok.opentokStrings.subscriber = "subscriber".asInstanceOf[typings.opentok.opentokStrings.subscriber]
 }
 

@@ -28,7 +28,6 @@ object AppsListSubscriptionsForAuthenticatedUserStubbedResponseItem {
     updated_at: String
   ): AppsListSubscriptionsForAuthenticatedUserStubbedResponseItem = {
     val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], billing_cycle = billing_cycle.asInstanceOf[js.Any], free_trial_ends_on = free_trial_ends_on.asInstanceOf[js.Any], next_billing_date = next_billing_date.asInstanceOf[js.Any], on_free_trial = on_free_trial.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], unit_count = unit_count.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppsListSubscriptionsForAuthenticatedUserStubbedResponseItem]
   }
 }

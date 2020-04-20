@@ -15,7 +15,6 @@ object IXmlDtdElementOptions {
   @scala.inline
   def apply(charData: String): IXmlDtdElementOptions = {
     val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IXmlDtdElementOptions]
   }
 }

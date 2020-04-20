@@ -17,7 +17,6 @@ object Navigator {
   @scala.inline
   def apply(accelerometer: Accelerometer): Navigator = {
     val __obj = js.Dynamic.literal(accelerometer = accelerometer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Navigator]
   }
 }

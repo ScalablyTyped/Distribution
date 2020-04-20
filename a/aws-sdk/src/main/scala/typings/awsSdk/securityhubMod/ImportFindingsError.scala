@@ -24,7 +24,6 @@ object ImportFindingsError {
   @scala.inline
   def apply(ErrorCode: NonEmptyString, ErrorMessage: NonEmptyString, Id: NonEmptyString): ImportFindingsError = {
     val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any], ErrorMessage = ErrorMessage.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImportFindingsError]
   }
 }

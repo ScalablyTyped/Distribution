@@ -96,7 +96,7 @@ class CommandLinker_ protected () extends IDisposable {
     * Test whether the linker is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MCommandLinker_(): Boolean = js.native
+  def isDisposed_MCommandLinker_ : Boolean = js.native
   /**
     * Populate the `dataset` attribute within the collection of attributes used
     * to instantiate a virtual DOM node with the values necessary for its

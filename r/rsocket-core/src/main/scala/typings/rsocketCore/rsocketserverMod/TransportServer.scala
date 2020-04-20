@@ -15,7 +15,6 @@ object TransportServer {
   @scala.inline
   def apply(start: () => Flowable[DuplexConnection], stop: () => Unit): TransportServer = {
     val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[TransportServer]
   }
 }

@@ -17,7 +17,6 @@ object CreateTracingOptions {
   @scala.inline
   def apply(categories: js.Array[String]): CreateTracingOptions = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTracingOptions]
   }
 }

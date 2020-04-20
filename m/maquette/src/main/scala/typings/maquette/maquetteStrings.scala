@@ -28,7 +28,7 @@ object maquetteStrings {
   sealed trait rendered extends PerformanceLoggerEvent
   
   @scala.inline
-  def `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`: `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead` = "Hint: do not use `className`, use `class` instead".asInstanceOf[`HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`]
+  def `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`: `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead` = ("Hint: do not use `className`, use `class` instead").asInstanceOf[`HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`]
   @scala.inline
   def domEvent: domEvent = "domEvent".asInstanceOf[domEvent]
   @scala.inline

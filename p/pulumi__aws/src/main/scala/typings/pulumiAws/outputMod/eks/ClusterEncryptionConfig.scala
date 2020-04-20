@@ -20,7 +20,6 @@ object ClusterEncryptionConfig {
   @scala.inline
   def apply(provider: ClusterEncryptionConfigProvider, resources: js.Array[String]): ClusterEncryptionConfig = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterEncryptionConfig]
   }
 }

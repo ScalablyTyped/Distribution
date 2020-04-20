@@ -22,7 +22,6 @@ object Typeofsca {
     handle_subscribe: () => Double
   ): Typeofsca = {
     val __obj = js.Dynamic.literal(call_info_update = js.Any.fromFunction3(call_info_update), call_info_update_default = js.Any.fromFunction0(call_info_update_default), call_info_update_mask = js.Any.fromFunction1(call_info_update_mask), call_info_update_turi = js.Any.fromFunction2(call_info_update_turi), handle_subscribe = js.Any.fromFunction0(handle_subscribe))
-  
     __obj.asInstanceOf[Typeofsca]
   }
 }

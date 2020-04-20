@@ -13,7 +13,6 @@ object EnhancedPropsResult {
   @scala.inline
   def apply(className: String, enhancedProps: PreservedProps): EnhancedPropsResult = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], enhancedProps = enhancedProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnhancedPropsResult]
   }
 }

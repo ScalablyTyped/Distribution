@@ -24,11 +24,11 @@ abstract class ControlBar protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FControlBar: IModel = js.native
-  def containerAsDataView(): DataView = js.native
-  def containerAsGrid(): Grid = js.native
-  def containerAsGridBaseSource(): GridBaseSource = js.native
-  def containerAsGridDatabaseSource(): GridDatabaseSource = js.native
-  def items(): IList[ControlBarItem] = js.native
+  def containerAsDataView: DataView = js.native
+  def containerAsGrid: Grid = js.native
+  def containerAsGridBaseSource: GridBaseSource = js.native
+  def containerAsGridDatabaseSource: GridDatabaseSource = js.native
+  def items: IList[ControlBarItem] = js.native
 }
 
 /* static members */

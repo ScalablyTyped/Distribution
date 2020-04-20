@@ -14,7 +14,6 @@ object AnonCancelContentControl {
   @scala.inline
   def apply(Cancel: Boolean, ContentControl: ContentControl): AnonCancelContentControl = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], ContentControl = ContentControl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelContentControl]
   }
 }

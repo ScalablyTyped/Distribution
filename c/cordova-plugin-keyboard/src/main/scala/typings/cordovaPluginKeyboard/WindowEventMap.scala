@@ -38,7 +38,6 @@ object WindowEventMap {
     keyboardWillShow: Event_
   ): WindowEventMap = {
     val __obj = js.Dynamic.literal(keyboardDidHide = keyboardDidHide.asInstanceOf[js.Any], keyboardDidShow = keyboardDidShow.asInstanceOf[js.Any], keyboardHeightWillChange = keyboardHeightWillChange.asInstanceOf[js.Any], keyboardWillHide = keyboardWillHide.asInstanceOf[js.Any], keyboardWillShow = keyboardWillShow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WindowEventMap]
   }
 }

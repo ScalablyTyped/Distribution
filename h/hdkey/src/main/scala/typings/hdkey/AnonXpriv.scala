@@ -13,7 +13,6 @@ object AnonXpriv {
   @scala.inline
   def apply(xpriv: String, xpub: String): AnonXpriv = {
     val __obj = js.Dynamic.literal(xpriv = xpriv.asInstanceOf[js.Any], xpub = xpub.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonXpriv]
   }
 }

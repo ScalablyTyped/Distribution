@@ -12,7 +12,6 @@ object IColorSliderState {
   @scala.inline
   def apply(currentValue: Double): IColorSliderState = {
     val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IColorSliderState]
   }
 }

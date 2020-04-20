@@ -15,7 +15,6 @@ object ITextureAssetTask {
   @scala.inline
   def apply[TEX /* <: BaseTexture */](texture: TEX): ITextureAssetTask[TEX] = {
     val __obj = js.Dynamic.literal(texture = texture.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITextureAssetTask[TEX]]
   }
 }

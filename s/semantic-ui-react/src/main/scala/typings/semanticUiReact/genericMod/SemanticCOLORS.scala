@@ -23,32 +23,30 @@ trait SemanticCOLORS extends js.Object
 
 object SemanticCOLORS {
   @scala.inline
-  def black: typings.semanticUiReact.semanticUiReactStrings.black = this.cast("black")
+  def black: typings.semanticUiReact.semanticUiReactStrings.black = "black".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.black]
   @scala.inline
-  def blue: typings.semanticUiReact.semanticUiReactStrings.blue = this.cast("blue")
+  def blue: typings.semanticUiReact.semanticUiReactStrings.blue = "blue".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.blue]
   @scala.inline
-  def brown: typings.semanticUiReact.semanticUiReactStrings.brown = this.cast("brown")
+  def brown: typings.semanticUiReact.semanticUiReactStrings.brown = "brown".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.brown]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def green: typings.semanticUiReact.semanticUiReactStrings.green = "green".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.green]
   @scala.inline
-  def green: typings.semanticUiReact.semanticUiReactStrings.green = this.cast("green")
+  def grey: typings.semanticUiReact.semanticUiReactStrings.grey = "grey".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.grey]
   @scala.inline
-  def grey: typings.semanticUiReact.semanticUiReactStrings.grey = this.cast("grey")
+  def olive: typings.semanticUiReact.semanticUiReactStrings.olive = "olive".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.olive]
   @scala.inline
-  def olive: typings.semanticUiReact.semanticUiReactStrings.olive = this.cast("olive")
+  def orange: typings.semanticUiReact.semanticUiReactStrings.orange = "orange".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.orange]
   @scala.inline
-  def orange: typings.semanticUiReact.semanticUiReactStrings.orange = this.cast("orange")
+  def pink: typings.semanticUiReact.semanticUiReactStrings.pink = "pink".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pink]
   @scala.inline
-  def pink: typings.semanticUiReact.semanticUiReactStrings.pink = this.cast("pink")
+  def purple: typings.semanticUiReact.semanticUiReactStrings.purple = "purple".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.purple]
   @scala.inline
-  def purple: typings.semanticUiReact.semanticUiReactStrings.purple = this.cast("purple")
+  def red: typings.semanticUiReact.semanticUiReactStrings.red = "red".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.red]
   @scala.inline
-  def red: typings.semanticUiReact.semanticUiReactStrings.red = this.cast("red")
+  def teal: typings.semanticUiReact.semanticUiReactStrings.teal = "teal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.teal]
   @scala.inline
-  def teal: typings.semanticUiReact.semanticUiReactStrings.teal = this.cast("teal")
+  def violet: typings.semanticUiReact.semanticUiReactStrings.violet = "violet".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.violet]
   @scala.inline
-  def violet: typings.semanticUiReact.semanticUiReactStrings.violet = this.cast("violet")
-  @scala.inline
-  def yellow: typings.semanticUiReact.semanticUiReactStrings.yellow = this.cast("yellow")
+  def yellow: typings.semanticUiReact.semanticUiReactStrings.yellow = "yellow".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.yellow]
 }
 

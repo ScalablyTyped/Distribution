@@ -12,7 +12,6 @@ object AnonExpandAnonEnabled {
   @scala.inline
   def apply(expand: AnonEnabled): AnonExpandAnonEnabled = {
     val __obj = js.Dynamic.literal(expand = expand.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExpandAnonEnabled]
   }
 }

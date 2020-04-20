@@ -14,7 +14,6 @@ object AnonTarget {
   @scala.inline
   def apply(open: Boolean, target: HTMLElement): AnonTarget = {
     val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTarget]
   }
 }

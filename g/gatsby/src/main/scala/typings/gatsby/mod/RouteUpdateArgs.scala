@@ -18,7 +18,6 @@ object RouteUpdateArgs {
     location: Location_
   ): RouteUpdateArgs = {
     val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname.asInstanceOf[js.Any], getResourcesForPathname = getResourcesForPathname.asInstanceOf[js.Any], getResourcesForPathnameSync = getResourcesForPathnameSync.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteUpdateArgs]
   }
 }

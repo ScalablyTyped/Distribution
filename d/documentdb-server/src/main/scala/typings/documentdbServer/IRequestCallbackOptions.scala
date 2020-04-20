@@ -18,7 +18,6 @@ object IRequestCallbackOptions {
   @scala.inline
   def apply(currentCollectionSizeInMB: String, maxCollectionSizeInMB: String, notModified: Boolean): IRequestCallbackOptions = {
     val __obj = js.Dynamic.literal(currentCollectionSizeInMB = currentCollectionSizeInMB.asInstanceOf[js.Any], maxCollectionSizeInMB = maxCollectionSizeInMB.asInstanceOf[js.Any], notModified = notModified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRequestCallbackOptions]
   }
 }

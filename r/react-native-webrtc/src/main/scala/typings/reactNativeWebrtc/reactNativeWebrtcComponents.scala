@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactNativeWebrtcComponents extends reactNativeWebrtcProps {
   @scala.inline
-  def RTCView: ComponentType[RTCViewProps] = js.constructorOf[typings.reactNativeWebrtc.mod.RTCView].asInstanceOf[typings.react.mod.ComponentType[RTCViewProps]]
+  def RTCView: ComponentType[RTCViewProps] = js.constructorOf[typings.reactNativeWebrtc.mod.RTCView].asInstanceOf[ComponentType[RTCViewProps]]
 }
 

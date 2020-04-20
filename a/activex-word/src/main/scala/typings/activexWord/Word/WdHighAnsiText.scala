@@ -16,12 +16,10 @@ trait WdHighAnsiText extends js.Object
 
 object WdHighAnsiText {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAutoDetectHighAnsiFarEast: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAutoDetectHighAnsiFarEast: `2` = this.cast(2)
+  def wdHighAnsiIsFarEast: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdHighAnsiIsFarEast: `0` = this.cast(0)
-  @scala.inline
-  def wdHighAnsiIsHighAnsi: `1` = this.cast(1)
+  def wdHighAnsiIsHighAnsi: `1` = 1.asInstanceOf[`1`]
 }
 

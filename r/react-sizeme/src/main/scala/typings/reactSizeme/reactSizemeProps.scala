@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactSizemeProps {
   @scala.inline
-  def SizeMeProps: SizeMeRenderProps.type = typings.reactSizeme.mod.SizeMeRenderProps
+  def SizeMeProps: SizeMeRenderProps.type = SizeMeRenderProps
   type SizeMeProps = SizeMeRenderProps
 }
 

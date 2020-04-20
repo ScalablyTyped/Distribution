@@ -16,7 +16,6 @@ object GetTopicAttributesInput {
   @scala.inline
   def apply(TopicArn: topicARN): GetTopicAttributesInput = {
     val __obj = js.Dynamic.literal(TopicArn = TopicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTopicAttributesInput]
   }
 }

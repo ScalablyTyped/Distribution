@@ -134,7 +134,7 @@ object taskMod extends js.Object {
       * @return True if the operation took effect, false if ignored.
       */
     def resume(): Boolean = js.native
-    def snapshot(): UploadTaskSnapshot = js.native
+    def snapshot: UploadTaskSnapshot = js.native
     /**
       * This object behaves like a Promise, and resolves with its snapshot data
       * when the upload completes.

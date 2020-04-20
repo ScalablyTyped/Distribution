@@ -13,12 +13,10 @@ trait StringUnitLength extends js.Object
 
 object StringUnitLength {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def long: typings.luxon.luxonStrings.long = "long".asInstanceOf[typings.luxon.luxonStrings.long]
   @scala.inline
-  def long: typings.luxon.luxonStrings.long = this.cast("long")
+  def narrow: typings.luxon.luxonStrings.narrow = "narrow".asInstanceOf[typings.luxon.luxonStrings.narrow]
   @scala.inline
-  def narrow: typings.luxon.luxonStrings.narrow = this.cast("narrow")
-  @scala.inline
-  def short: typings.luxon.luxonStrings.short = this.cast("short")
+  def short: typings.luxon.luxonStrings.short = "short".asInstanceOf[typings.luxon.luxonStrings.short]
 }
 

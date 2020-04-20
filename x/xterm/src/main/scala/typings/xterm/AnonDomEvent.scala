@@ -14,7 +14,6 @@ object AnonDomEvent {
   @scala.inline
   def apply(domEvent: KeyboardEvent, key: String): AnonDomEvent = {
     val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDomEvent]
   }
 }

@@ -20,7 +20,6 @@ object RelayQueryResponseCache {
     set: (String, Variables, GraphQLResponse) => Unit
   ): RelayQueryResponseCache = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction2(get), set = js.Any.fromFunction3(set))
-  
     __obj.asInstanceOf[RelayQueryResponseCache]
   }
 }

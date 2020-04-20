@@ -16,7 +16,6 @@ object OriginalLabelsIn {
   @scala.inline
   def apply(categories: js.Array[Category], types: js.Array[TypeLabel]): OriginalLabelsIn = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OriginalLabelsIn]
   }
 }

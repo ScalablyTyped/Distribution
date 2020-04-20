@@ -13,7 +13,6 @@ object UpdateRefsRequest {
   @scala.inline
   def apply(refUpdateRequests: js.Array[GitRefUpdate], updateMode: GitRefUpdateMode): UpdateRefsRequest = {
     val __obj = js.Dynamic.literal(refUpdateRequests = refUpdateRequests.asInstanceOf[js.Any], updateMode = updateMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateRefsRequest]
   }
 }

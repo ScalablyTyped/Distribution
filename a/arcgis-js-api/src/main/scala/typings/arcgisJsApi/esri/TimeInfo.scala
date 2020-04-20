@@ -35,6 +35,12 @@ trait TimeInfo
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField)
     */
   var startField: String = js.native
+  /**
+    * The name of the field used to join or group discrete locations. For example, for hurricane tracks, trackIdField can be the hurricane name field.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#trackIdField)
+    */
+  var trackIdField: String = js.native
 }
 
 @JSGlobal("__esri.TimeInfo")

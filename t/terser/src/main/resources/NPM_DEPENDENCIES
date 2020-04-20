@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "terser" : "4.6.10"
+      "terser" : "4.6.11"
     }
   ],
   "test-dependencies" : [
     {
-      "terser" : "4.6.10"
+      "terser" : "4.6.11"
     }
   ],
   "compile-devDependencies" : [

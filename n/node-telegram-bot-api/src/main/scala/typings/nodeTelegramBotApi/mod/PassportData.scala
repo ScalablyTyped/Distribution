@@ -13,7 +13,6 @@ object PassportData {
   @scala.inline
   def apply(credentials: EncryptedCredentials, data: js.Array[EncryptedPassportElement]): PassportData = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PassportData]
   }
 }

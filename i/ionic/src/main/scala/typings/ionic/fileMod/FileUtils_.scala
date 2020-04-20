@@ -18,7 +18,6 @@ object FileUtils_ {
     isValidFileName: js.Any => Boolean
   ): FileUtils_ = {
     val __obj = js.Dynamic.literal(filenameReservedRegex = filenameReservedRegex.asInstanceOf[js.Any], filenameReservedRegexWindows = filenameReservedRegexWindows.asInstanceOf[js.Any], isValidFileName = js.Any.fromFunction1(isValidFileName))
-  
     __obj.asInstanceOf[FileUtils_]
   }
 }

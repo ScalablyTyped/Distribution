@@ -16,7 +16,6 @@ object GetUserRequest {
   @scala.inline
   def apply(AccessToken: TokenModelType): GetUserRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUserRequest]
   }
 }

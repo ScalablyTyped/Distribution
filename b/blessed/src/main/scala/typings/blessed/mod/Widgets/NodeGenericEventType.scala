@@ -19,24 +19,22 @@ trait NodeGenericEventType extends js.Object
 
 object NodeGenericEventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def destroy: typings.blessed.blessedStrings.destroy = "destroy".asInstanceOf[typings.blessed.blessedStrings.destroy]
   @scala.inline
-  def destroy: typings.blessed.blessedStrings.destroy = this.cast("destroy")
+  def hide: typings.blessed.blessedStrings.hide = "hide".asInstanceOf[typings.blessed.blessedStrings.hide]
   @scala.inline
-  def hide: typings.blessed.blessedStrings.hide = this.cast("hide")
+  def move: typings.blessed.blessedStrings.move = "move".asInstanceOf[typings.blessed.blessedStrings.move]
   @scala.inline
-  def move: typings.blessed.blessedStrings.move = this.cast("move")
+  def `parsed content`: typings.blessed.blessedStrings.`parsed content` = ("parsed content").asInstanceOf[typings.blessed.blessedStrings.`parsed content`]
   @scala.inline
-  def `parsed content`: typings.blessed.blessedStrings.`parsed content` = this.cast("parsed content")
+  def prerender: typings.blessed.blessedStrings.prerender = "prerender".asInstanceOf[typings.blessed.blessedStrings.prerender]
   @scala.inline
-  def prerender: typings.blessed.blessedStrings.prerender = this.cast("prerender")
+  def render: typings.blessed.blessedStrings.render = "render".asInstanceOf[typings.blessed.blessedStrings.render]
   @scala.inline
-  def render: typings.blessed.blessedStrings.render = this.cast("render")
+  def resize: typings.blessed.blessedStrings.resize = "resize".asInstanceOf[typings.blessed.blessedStrings.resize]
   @scala.inline
-  def resize: typings.blessed.blessedStrings.resize = this.cast("resize")
+  def `set content`: typings.blessed.blessedStrings.`set content` = ("set content").asInstanceOf[typings.blessed.blessedStrings.`set content`]
   @scala.inline
-  def `set content`: typings.blessed.blessedStrings.`set content` = this.cast("set content")
-  @scala.inline
-  def show: typings.blessed.blessedStrings.show = this.cast("show")
+  def show: typings.blessed.blessedStrings.show = "show".asInstanceOf[typings.blessed.blessedStrings.show]
 }
 

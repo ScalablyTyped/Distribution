@@ -23,7 +23,6 @@ object Pad {
   @scala.inline
   def apply(id: String, index: integer): Pad = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Pad]
   }
 }

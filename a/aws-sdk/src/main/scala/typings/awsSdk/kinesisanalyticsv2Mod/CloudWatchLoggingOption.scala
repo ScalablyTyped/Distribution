@@ -16,7 +16,6 @@ object CloudWatchLoggingOption {
   @scala.inline
   def apply(LogStreamARN: LogStreamARN): CloudWatchLoggingOption = {
     val __obj = js.Dynamic.literal(LogStreamARN = LogStreamARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudWatchLoggingOption]
   }
 }

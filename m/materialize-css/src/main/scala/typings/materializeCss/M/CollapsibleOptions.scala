@@ -55,7 +55,6 @@ object CollapsibleOptions {
     outDuration: Double
   ): CollapsibleOptions = {
     val __obj = js.Dynamic.literal(accordion = accordion.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction1(onCloseEnd), onCloseStart = js.Any.fromFunction1(onCloseStart), onOpenEnd = js.Any.fromFunction1(onOpenEnd), onOpenStart = js.Any.fromFunction1(onOpenStart), outDuration = outDuration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CollapsibleOptions]
   }
 }

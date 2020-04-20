@@ -14,10 +14,8 @@ trait XlReferenceStyle extends js.Object
 
 object XlReferenceStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlA1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlA1: `1` = this.cast(1)
-  @scala.inline
-  def xlR1C1: `-4150` = this.cast(-4150)
+  def xlR1C1: `-4150` = -4150.asInstanceOf[`-4150`]
 }
 

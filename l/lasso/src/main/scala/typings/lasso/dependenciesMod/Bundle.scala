@@ -13,7 +13,6 @@ object Bundle {
   @scala.inline
   def apply(dependencies: js.Array[DependencyConfig | String], name: String): Bundle = {
     val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Bundle]
   }
 }

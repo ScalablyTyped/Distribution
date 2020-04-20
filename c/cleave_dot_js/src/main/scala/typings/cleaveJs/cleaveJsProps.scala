@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait cleaveJsProps {
   @scala.inline
-  def ReactProps: Props.type = typings.cleaveJs.propsMod.Props
+  def ReactProps: Props.type = Props
   type ReactProps = Props
 }
 

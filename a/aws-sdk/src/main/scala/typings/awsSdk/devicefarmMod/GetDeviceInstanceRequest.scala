@@ -16,7 +16,6 @@ object GetDeviceInstanceRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): GetDeviceInstanceRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDeviceInstanceRequest]
   }
 }

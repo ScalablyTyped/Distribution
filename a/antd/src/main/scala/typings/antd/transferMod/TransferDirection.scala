@@ -12,10 +12,8 @@ trait TransferDirection extends js.Object
 
 object TransferDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
   @scala.inline
-  def left: typings.antd.antdStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.antd.antdStrings.right = this.cast("right")
+  def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
 }
 

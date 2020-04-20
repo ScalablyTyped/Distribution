@@ -19,12 +19,10 @@ trait MachineModeType extends js.Object
 
 object MachineModeType {
   @scala.inline
-  def CONNECT_32: typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_32 = this.cast("CONNECT_32")
+  def CONNECT_32: typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_32 = "CONNECT_32".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_32]
   @scala.inline
-  def CONNECT_64: typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_64 = this.cast("CONNECT_64")
+  def CONNECT_64: typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_64 = "CONNECT_64".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_64]
   @scala.inline
-  def CONNECT_DEFAULT: typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_DEFAULT = this.cast("CONNECT_DEFAULT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def CONNECT_DEFAULT: typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_DEFAULT = "CONNECT_DEFAULT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_DEFAULT]
 }
 

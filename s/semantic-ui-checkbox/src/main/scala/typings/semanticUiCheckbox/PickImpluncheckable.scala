@@ -14,7 +14,6 @@ object PickImpluncheckable {
   @scala.inline
   def apply(uncheckable: auto | Boolean): PickImpluncheckable = {
     val __obj = js.Dynamic.literal(uncheckable = uncheckable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpluncheckable]
   }
 }

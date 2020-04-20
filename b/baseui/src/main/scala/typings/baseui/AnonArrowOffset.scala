@@ -38,7 +38,6 @@ object AnonArrowOffset {
     popoverOffset: AnonLeft
   ): AnonArrowOffset = {
     val __obj = js.Dynamic.literal(arrowOffset = arrowOffset.asInstanceOf[js.Any], isAnimating = isAnimating.asInstanceOf[js.Any], isLayerMounted = isLayerMounted.asInstanceOf[js.Any], isMounted = isMounted.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popoverOffset = popoverOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArrowOffset]
   }
 }

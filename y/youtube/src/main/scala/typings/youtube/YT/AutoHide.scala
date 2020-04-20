@@ -19,18 +19,16 @@ object AutoHide {
   		 * Controls are visible throughout the video
   		 */
   @scala.inline
-  def AlwaysVisible: `0` = this.cast(0)
+  def AlwaysVisible: `0` = 0.asInstanceOf[`0`]
   /**
   		 * Progress bar and player controls slide out of view after a couple of seconds.
   		 */
   @scala.inline
-  def HideAllControls: `1` = this.cast(1)
+  def HideAllControls: `1` = 1.asInstanceOf[`1`]
   /**
   		 * Progress bar fades out while the player controls remain visible.
   		 */
   @scala.inline
-  def HideProgressBar: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HideProgressBar: `2` = 2.asInstanceOf[`2`]
 }
 

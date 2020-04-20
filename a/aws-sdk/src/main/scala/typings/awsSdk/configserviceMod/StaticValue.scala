@@ -16,7 +16,6 @@ object StaticValue {
   @scala.inline
   def apply(Values: StaticParameterValues): StaticValue = {
     val __obj = js.Dynamic.literal(Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StaticValue]
   }
 }

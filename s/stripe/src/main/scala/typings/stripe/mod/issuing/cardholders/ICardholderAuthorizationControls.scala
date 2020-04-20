@@ -32,7 +32,6 @@ object ICardholderAuthorizationControls {
     spending_limits_currency: String
   ): ICardholderAuthorizationControls = {
     val __obj = js.Dynamic.literal(allowed_categories = allowed_categories.asInstanceOf[js.Any], blocked_categories = blocked_categories.asInstanceOf[js.Any], spending_limits = spending_limits.asInstanceOf[js.Any], spending_limits_currency = spending_limits_currency.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICardholderAuthorizationControls]
   }
 }

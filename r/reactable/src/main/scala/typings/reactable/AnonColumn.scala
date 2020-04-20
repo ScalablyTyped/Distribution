@@ -14,7 +14,6 @@ object AnonColumn {
   @scala.inline
   def apply(column: String, direction: SortDirection): AnonColumn = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColumn]
   }
 }

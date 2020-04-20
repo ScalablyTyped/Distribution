@@ -36,7 +36,6 @@ object AnonBottomBar {
     ]
   ): AnonBottomBar = {
     val __obj = js.Dynamic.literal(BottomBar = BottomBar.asInstanceOf[js.Any], Prompt = Prompt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBottomBar]
   }
 }

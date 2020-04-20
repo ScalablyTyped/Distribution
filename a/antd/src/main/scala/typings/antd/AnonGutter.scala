@@ -12,7 +12,6 @@ object AnonGutter {
   @scala.inline
   def apply(gutter: Double): AnonGutter = {
     val __obj = js.Dynamic.literal(gutter = gutter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGutter]
   }
 }

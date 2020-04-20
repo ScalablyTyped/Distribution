@@ -29,7 +29,6 @@ object Invoker_ {
     ]) => ImplOrAny[TImpl]
   ): Invoker_[TBase, TImpl, TArgs] = {
     val __obj = js.Dynamic.literal(invoke = js.Any.fromFunction3(invoke), invokeWithDynamicDependencies = js.Any.fromFunction4(invokeWithDynamicDependencies))
-  
     __obj.asInstanceOf[Invoker_[TBase, TImpl, TArgs]]
   }
 }

@@ -66,45 +66,45 @@ object inputBlockMod extends js.Object {
       */
     def animate(scene: Scene): Unit = js.native
     /** Gets or sets the type of animation applied to the input */
-    def animationType(): AnimatedInputBlockTypes = js.native
+    def animationType: AnimatedInputBlockTypes = js.native
     def animationType(value: AnimatedInputBlockTypes): js.Any = js.native
     /**
       * Gets or sets the associated variable name in the shader
       */
-    def associatedVariableName(): String = js.native
+    def associatedVariableName: String = js.native
     def associatedVariableName(value: String): js.Any = js.native
     /**
       * Gets or sets a boolean indicating that this connection point is coming from an attribute.
       * In this case the connection point name must be the name of the attribute to use
       * Can only be set on inputs
       */
-    def isAttribute(): Boolean = js.native
+    def isAttribute: Boolean = js.native
     def isAttribute(value: Boolean): js.Any = js.native
     /**
       * Gets a boolean indicating that the current connection point is a system value
       */
-    def isSystemValue(): Boolean = js.native
+    def isSystemValue: Boolean = js.native
     /**
       * Gets a boolean indicating that this connection point not defined yet
       */
-    def isUndefined(): Boolean = js.native
+    def isUndefined: Boolean = js.native
     /**
       * Gets or sets a boolean indicating that this connection point is coming from an uniform.
       * In this case the connection point name must be the name of the uniform to use.
       * Can only be set on inputs
       */
-    def isUniform(): Boolean = js.native
+    def isUniform: Boolean = js.native
     def isUniform(value: Boolean): js.Any = js.native
     /**
       * Gets or sets a boolean indicating that this connection point is generating a varying variable.
       * Can only be set on exit points
       */
-    def isVarying(): Boolean = js.native
+    def isVarying: Boolean = js.native
     def isVarying(value: Boolean): js.Any = js.native
     /**
       * Gets the output component
       */
-    def output(): NodeMaterialConnectionPoint = js.native
+    def output: NodeMaterialConnectionPoint = js.native
     /**
       * Set the source of this connection point to a vertex attribute
       * @param attributeName defines the attribute name (position, uv, normal, etc...). If not specified it will take the connection point name
@@ -125,23 +125,23 @@ object inputBlockMod extends js.Object {
     /**
       * Gets or sets the current well known value or null if not defined as a system value
       */
-    def systemValue(): Nullable[NodeMaterialSystemValues] = js.native
+    def systemValue: Nullable[NodeMaterialSystemValues] = js.native
     def systemValue(value: Nullable[NodeMaterialSystemValues]): js.Any = js.native
     /**
       * Gets or sets the connection point type (default is float)
       */
-    def `type`(): NodeMaterialBlockConnectionPointTypes = js.native
+    def `type`: NodeMaterialBlockConnectionPointTypes = js.native
     /**
       * Gets or sets the value of that point.
       * Please note that this value will be ignored if valueCallback is defined
       */
-    def value(): js.Any = js.native
+    def value: js.Any = js.native
     def value(value: js.Any): js.Any = js.native
     /**
       * Gets or sets a callback used to get the value of that point.
       * Please note that setting this value will force the connection point to ignore the value property
       */
-    def valueCallback(): js.Function0[_] = js.native
+    def valueCallback: js.Function0[_] = js.native
     def valueCallback(value: js.Function0[_]): js.Any = js.native
   }
   

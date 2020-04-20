@@ -13,7 +13,6 @@ object Commons {
   @scala.inline
   def apply(reset: () => Unit, update: js.Array[Double] => Unit): Commons = {
     val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[Commons]
   }
 }

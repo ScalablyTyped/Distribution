@@ -20,7 +20,6 @@ object DeleteSiteRequest {
   @scala.inline
   def apply(GlobalNetworkId: String, SiteId: String): DeleteSiteRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any], SiteId = SiteId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSiteRequest]
   }
 }

@@ -12,7 +12,6 @@ object IIndexStrategy {
   @scala.inline
   def apply(expandToken: String => js.Array[String]): IIndexStrategy = {
     val __obj = js.Dynamic.literal(expandToken = js.Any.fromFunction1(expandToken))
-  
     __obj.asInstanceOf[IIndexStrategy]
   }
 }

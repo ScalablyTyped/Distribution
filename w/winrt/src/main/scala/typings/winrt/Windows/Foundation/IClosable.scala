@@ -12,7 +12,6 @@ object IClosable {
   @scala.inline
   def apply(close: () => Unit): IClosable = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
-  
     __obj.asInstanceOf[IClosable]
   }
 }

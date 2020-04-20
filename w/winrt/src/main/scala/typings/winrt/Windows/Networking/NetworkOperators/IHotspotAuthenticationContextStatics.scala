@@ -13,7 +13,6 @@ object IHotspotAuthenticationContextStatics {
   @scala.inline
   def apply(tryGetAuthenticationContext: String => AnonContext): IHotspotAuthenticationContextStatics = {
     val __obj = js.Dynamic.literal(tryGetAuthenticationContext = js.Any.fromFunction1(tryGetAuthenticationContext))
-  
     __obj.asInstanceOf[IHotspotAuthenticationContextStatics]
   }
 }

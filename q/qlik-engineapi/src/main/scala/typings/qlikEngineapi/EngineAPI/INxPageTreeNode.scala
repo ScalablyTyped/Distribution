@@ -22,7 +22,6 @@ object INxPageTreeNode {
   @scala.inline
   def apply(qAllValues: Boolean, qArea: IRect): INxPageTreeNode = {
     val __obj = js.Dynamic.literal(qAllValues = qAllValues.asInstanceOf[js.Any], qArea = qArea.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxPageTreeNode]
   }
 }

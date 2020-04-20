@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Atomics extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.std.stdStrings.Atomics = js.native
   def add(typedArray: Int16Array, index: Double, value: Double): Double = js.native
   def add(typedArray: Int32Array, index: Double, value: Double): Double = js.native

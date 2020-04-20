@@ -26,7 +26,6 @@ object DirectionsResponse {
   @scala.inline
   def apply(code: String, routes: js.Array[Route], uuid: String, waypoints: js.Array[Waypoint]): DirectionsResponse = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectionsResponse]
   }
 }

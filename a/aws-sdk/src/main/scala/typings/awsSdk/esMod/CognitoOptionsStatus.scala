@@ -20,7 +20,6 @@ object CognitoOptionsStatus {
   @scala.inline
   def apply(Options: CognitoOptions, Status: OptionStatus): CognitoOptionsStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CognitoOptionsStatus]
   }
 }

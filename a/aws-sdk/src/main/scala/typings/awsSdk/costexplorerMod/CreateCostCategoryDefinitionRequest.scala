@@ -18,7 +18,6 @@ object CreateCostCategoryDefinitionRequest {
   @scala.inline
   def apply(Name: CostCategoryName, RuleVersion: CostCategoryRuleVersion, Rules: CostCategoryRulesList): CreateCostCategoryDefinitionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RuleVersion = RuleVersion.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCostCategoryDefinitionRequest]
   }
 }

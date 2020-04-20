@@ -14,12 +14,10 @@ trait BookmarkTreeNodeType extends js.Object
 
 object BookmarkTreeNodeType {
   @scala.inline
-  def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = this.cast("bookmark")
+  def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = "bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def folder: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.folder = "folder".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.folder]
   @scala.inline
-  def folder: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.folder = this.cast("folder")
-  @scala.inline
-  def separator: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator = this.cast("separator")
+  def separator: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator = "separator".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator]
 }
 

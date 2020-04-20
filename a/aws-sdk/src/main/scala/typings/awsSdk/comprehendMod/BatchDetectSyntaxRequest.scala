@@ -20,7 +20,6 @@ object BatchDetectSyntaxRequest {
   @scala.inline
   def apply(LanguageCode: SyntaxLanguageCode, TextList: StringList): BatchDetectSyntaxRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], TextList = TextList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDetectSyntaxRequest]
   }
 }

@@ -28,7 +28,6 @@ object RequestCancelActivityTaskFailedEventAttributes {
     decisionTaskCompletedEventId: EventId
   ): RequestCancelActivityTaskFailedEventAttributes = {
     val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], cause = cause.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestCancelActivityTaskFailedEventAttributes]
   }
 }

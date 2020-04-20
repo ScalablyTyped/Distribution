@@ -22,18 +22,16 @@ trait htmlBlockAlign extends js.Object
 
 object htmlBlockAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlBlockAlignCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlBlockAlignCenter: `2` = this.cast(2)
+  def htmlBlockAlignJustify: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def htmlBlockAlignJustify: `4` = this.cast(4)
+  def htmlBlockAlignLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlBlockAlignLeft: `1` = this.cast(1)
+  def htmlBlockAlignNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlBlockAlignNotSet: `0` = this.cast(0)
+  def htmlBlockAlignRight: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlBlockAlignRight: `3` = this.cast(3)
-  @scala.inline
-  def htmlBlockAlign_Max: `2147483647` = this.cast(2147483647)
+  def htmlBlockAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -17,20 +17,18 @@ trait ImportanceType extends js.Object
 
 object ImportanceType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.reactNativePushNotification.reactNativePushNotificationStrings.default = "default".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.default]
   @scala.inline
-  def default: typings.reactNativePushNotification.reactNativePushNotificationStrings.default = this.cast("default")
+  def high: typings.reactNativePushNotification.reactNativePushNotificationStrings.high = "high".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.high]
   @scala.inline
-  def high: typings.reactNativePushNotification.reactNativePushNotificationStrings.high = this.cast("high")
+  def low: typings.reactNativePushNotification.reactNativePushNotificationStrings.low = "low".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.low]
   @scala.inline
-  def low: typings.reactNativePushNotification.reactNativePushNotificationStrings.low = this.cast("low")
+  def max: typings.reactNativePushNotification.reactNativePushNotificationStrings.max = "max".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.max]
   @scala.inline
-  def max: typings.reactNativePushNotification.reactNativePushNotificationStrings.max = this.cast("max")
+  def min: typings.reactNativePushNotification.reactNativePushNotificationStrings.min = "min".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.min]
   @scala.inline
-  def min: typings.reactNativePushNotification.reactNativePushNotificationStrings.min = this.cast("min")
+  def none: typings.reactNativePushNotification.reactNativePushNotificationStrings.none = "none".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.none]
   @scala.inline
-  def none: typings.reactNativePushNotification.reactNativePushNotificationStrings.none = this.cast("none")
-  @scala.inline
-  def unspecified: typings.reactNativePushNotification.reactNativePushNotificationStrings.unspecified = this.cast("unspecified")
+  def unspecified: typings.reactNativePushNotification.reactNativePushNotificationStrings.unspecified = "unspecified".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.unspecified]
 }
 

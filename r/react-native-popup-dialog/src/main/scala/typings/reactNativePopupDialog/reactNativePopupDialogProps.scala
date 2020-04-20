@@ -22,7 +22,7 @@ trait reactNativePopupDialogProps {
   def OverlayProps: typings.reactNativePopupDialog.mod.OverlayProps.type = typings.reactNativePopupDialog.mod.OverlayProps
   type OverlayProps = typings.reactNativePopupDialog.mod.OverlayProps
   @scala.inline
-  def ReactNativePopupDialogProps: DialogProps.type = typings.reactNativePopupDialog.mod.DialogProps
+  def ReactNativePopupDialogProps: DialogProps.type = DialogProps
   type ReactNativePopupDialogProps = DialogProps
 }
 

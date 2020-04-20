@@ -33,7 +33,7 @@ class MicroflowJavaActionParameterType protected ()
   @JSName("model")
   var model_FMicroflowJavaActionParameterType: IModel = js.native
   @JSName("containerAsCodeActionParameter")
-  def containerAsCodeActionParameter_MMicroflowJavaActionParameterType(): CodeActionParameter = js.native
+  def containerAsCodeActionParameter_MMicroflowJavaActionParameterType: CodeActionParameter = js.native
 }
 
 /* static members */

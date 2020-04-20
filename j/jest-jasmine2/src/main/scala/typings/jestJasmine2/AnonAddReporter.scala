@@ -83,19 +83,19 @@ trait AnonAddReporter extends js.Object {
   def randomizeTests(value: js.Any): Unit = js.native
   def seed(value: js.Any): js.Any = js.native
   def specFilter(spec: typings.jestJasmine2.specMod.default): Boolean = js.native
-  def spyOn(obj: Record[String, _], methodName: String): Spy = js.native
+  def spyOn(obj: Record[String, Spy], methodName: String): Spy = js.native
   @JSName("spyOn")
-  def spyOn_configurable(obj: Record[String, _], methodName: String, accessType: configurable): Spy = js.native
+  def spyOn_configurable(obj: Record[String, Spy], methodName: String, accessType: configurable): Spy = js.native
   @JSName("spyOn")
-  def spyOn_enumerable(obj: Record[String, _], methodName: String, accessType: enumerable): Spy = js.native
+  def spyOn_enumerable(obj: Record[String, Spy], methodName: String, accessType: enumerable): Spy = js.native
   @JSName("spyOn")
-  def spyOn_get(obj: Record[String, _], methodName: String, accessType: get): Spy = js.native
+  def spyOn_get(obj: Record[String, Spy], methodName: String, accessType: get): Spy = js.native
   @JSName("spyOn")
-  def spyOn_set(obj: Record[String, _], methodName: String, accessType: set): Spy = js.native
+  def spyOn_set(obj: Record[String, Spy], methodName: String, accessType: set): Spy = js.native
   @JSName("spyOn")
-  def spyOn_value(obj: Record[String, _], methodName: String, accessType: value): Spy = js.native
+  def spyOn_value(obj: Record[String, Spy], methodName: String, accessType: value): Spy = js.native
   @JSName("spyOn")
-  def spyOn_writable(obj: Record[String, _], methodName: String, accessType: writable): Spy = js.native
+  def spyOn_writable(obj: Record[String, Spy], methodName: String, accessType: writable): Spy = js.native
   def throwOnExpectationFailure(value: js.Any): Unit = js.native
   def throwingExpectationFailures(): Boolean = js.native
   def todo(): typings.jestJasmine2.specMod.default = js.native

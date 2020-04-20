@@ -15,12 +15,10 @@ trait MaskingMode
 
 object MaskingMode {
   @scala.inline
-  def alpha: typings.csstype.csstypeStrings.alpha = this.cast("alpha")
+  def alpha: typings.csstype.csstypeStrings.alpha = "alpha".asInstanceOf[typings.csstype.csstypeStrings.alpha]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def luminance: typings.csstype.csstypeStrings.luminance = "luminance".asInstanceOf[typings.csstype.csstypeStrings.luminance]
   @scala.inline
-  def luminance: typings.csstype.csstypeStrings.luminance = this.cast("luminance")
-  @scala.inline
-  def `match-source`: typings.csstype.csstypeStrings.`match-source` = this.cast("match-source")
+  def `match-source`: typings.csstype.csstypeStrings.`match-source` = "match-source".asInstanceOf[typings.csstype.csstypeStrings.`match-source`]
 }
 

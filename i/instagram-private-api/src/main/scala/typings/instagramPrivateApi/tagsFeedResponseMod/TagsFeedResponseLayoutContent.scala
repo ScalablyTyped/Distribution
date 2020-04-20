@@ -12,7 +12,6 @@ object TagsFeedResponseLayoutContent {
   @scala.inline
   def apply(medias: js.Array[TagsFeedResponseMediasItem]): TagsFeedResponseLayoutContent = {
     val __obj = js.Dynamic.literal(medias = medias.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagsFeedResponseLayoutContent]
   }
 }

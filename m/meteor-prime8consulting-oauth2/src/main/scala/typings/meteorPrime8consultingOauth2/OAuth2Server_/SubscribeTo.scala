@@ -16,7 +16,6 @@ object SubscribeTo {
   @scala.inline
   def apply(authCode: () => SubscriptionHandle): SubscribeTo = {
     val __obj = js.Dynamic.literal(authCode = js.Any.fromFunction0(authCode))
-  
     __obj.asInstanceOf[SubscribeTo]
   }
 }

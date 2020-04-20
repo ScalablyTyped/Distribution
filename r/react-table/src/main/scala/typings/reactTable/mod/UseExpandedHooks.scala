@@ -17,7 +17,6 @@ object UseExpandedHooks {
     getToggleRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
   ): UseExpandedHooks[D] = {
     val __obj = js.Dynamic.literal(getToggleAllRowsExpandedProps = getToggleAllRowsExpandedProps.asInstanceOf[js.Any], getToggleRowsExpandedProps = getToggleRowsExpandedProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseExpandedHooks[D]]
   }
 }

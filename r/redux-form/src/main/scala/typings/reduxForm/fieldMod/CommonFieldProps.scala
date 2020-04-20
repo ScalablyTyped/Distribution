@@ -23,7 +23,6 @@ object CommonFieldProps {
     onFocus: (FocusEvent[_], /* name */ js.UndefOr[String]) => Unit
   ): CommonFieldProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onBlur = js.Any.fromFunction4(onBlur), onChange = js.Any.fromFunction4(onChange), onDragStart = js.Any.fromFunction2(onDragStart), onDrop = js.Any.fromFunction2(onDrop), onFocus = js.Any.fromFunction2(onFocus))
-  
     __obj.asInstanceOf[CommonFieldProps]
   }
 }

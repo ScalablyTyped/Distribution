@@ -24,7 +24,6 @@ object LeadsResource {
     list: AnonCallback => Request_[ListLeadsResponse]
   ): LeadsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[LeadsResource]
   }
 }

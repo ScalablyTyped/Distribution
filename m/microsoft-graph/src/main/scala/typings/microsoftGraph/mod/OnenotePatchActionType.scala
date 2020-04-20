@@ -15,16 +15,14 @@ trait OnenotePatchActionType extends js.Object
 
 object OnenotePatchActionType {
   @scala.inline
-  def Append: typings.microsoftGraph.microsoftGraphStrings.Append = this.cast("Append")
+  def Append: typings.microsoftGraph.microsoftGraphStrings.Append = "Append".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Append]
   @scala.inline
-  def Delete: typings.microsoftGraph.microsoftGraphStrings.Delete = this.cast("Delete")
+  def Delete: typings.microsoftGraph.microsoftGraphStrings.Delete = "Delete".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Delete]
   @scala.inline
-  def Insert: typings.microsoftGraph.microsoftGraphStrings.Insert = this.cast("Insert")
+  def Insert: typings.microsoftGraph.microsoftGraphStrings.Insert = "Insert".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Insert]
   @scala.inline
-  def Prepend: typings.microsoftGraph.microsoftGraphStrings.Prepend = this.cast("Prepend")
+  def Prepend: typings.microsoftGraph.microsoftGraphStrings.Prepend = "Prepend".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Prepend]
   @scala.inline
-  def Replace: typings.microsoftGraph.microsoftGraphStrings.Replace = this.cast("Replace")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Replace: typings.microsoftGraph.microsoftGraphStrings.Replace = "Replace".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Replace]
 }
 

@@ -19,7 +19,6 @@ object AnonDisputeexplanation {
   @scala.inline
   def apply(dispute_explanation: String, uncategorized_file: String): AnonDisputeexplanation = {
     val __obj = js.Dynamic.literal(dispute_explanation = dispute_explanation.asInstanceOf[js.Any], uncategorized_file = uncategorized_file.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisputeexplanation]
   }
 }

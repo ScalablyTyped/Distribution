@@ -25,9 +25,9 @@ class MsdEnumerationContainer protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMsdEnumerationContainer: IModel = js.native
-  def containerAsMsd(): Msd = js.native
-  def containerAsVersionedService(): VersionedService = js.native
-  def enumerations(): IList[MsdEnumeration] = js.native
+  def containerAsMsd: Msd = js.native
+  def containerAsVersionedService: VersionedService = js.native
+  def enumerations: IList[MsdEnumeration] = js.native
 }
 
 /* static members */

@@ -19,7 +19,6 @@ object SearchSynonymsResponse {
   @scala.inline
   def apply(hits: js.Array[Synonym], nbHits: Double): SearchSynonymsResponse = {
     val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any], nbHits = nbHits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchSynonymsResponse]
   }
 }

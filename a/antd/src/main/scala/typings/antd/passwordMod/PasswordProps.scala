@@ -1,12 +1,16 @@
 package typings.antd.passwordMod
 
 import typings.antd.antdStrings.`additions text`
+import typings.antd.antdStrings.`datetime-local`
 import typings.antd.antdStrings.`inline`
 import typings.antd.antdStrings.additions
 import typings.antd.antdStrings.all
 import typings.antd.antdStrings.ascending
 import typings.antd.antdStrings.assertive
 import typings.antd.antdStrings.both
+import typings.antd.antdStrings.button
+import typings.antd.antdStrings.checkbox
+import typings.antd.antdStrings.color
 import typings.antd.antdStrings.copy
 import typings.antd.antdStrings.date
 import typings.antd.antdStrings.decimal
@@ -14,9 +18,12 @@ import typings.antd.antdStrings.descending
 import typings.antd.antdStrings.dialog
 import typings.antd.antdStrings.email
 import typings.antd.antdStrings.execute
+import typings.antd.antdStrings.file
 import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
+import typings.antd.antdStrings.hidden
 import typings.antd.antdStrings.horizontal
+import typings.antd.antdStrings.image
 import typings.antd.antdStrings.inherit
 import typings.antd.antdStrings.link
 import typings.antd.antdStrings.list
@@ -24,29 +31,38 @@ import typings.antd.antdStrings.listbox
 import typings.antd.antdStrings.location
 import typings.antd.antdStrings.menu
 import typings.antd.antdStrings.mixed
+import typings.antd.antdStrings.month
 import typings.antd.antdStrings.move
 import typings.antd.antdStrings.no
 import typings.antd.antdStrings.none
+import typings.antd.antdStrings.number
 import typings.antd.antdStrings.numeric
 import typings.antd.antdStrings.off
 import typings.antd.antdStrings.on
 import typings.antd.antdStrings.other
 import typings.antd.antdStrings.page
+import typings.antd.antdStrings.password
 import typings.antd.antdStrings.polite
 import typings.antd.antdStrings.popup
+import typings.antd.antdStrings.radio
+import typings.antd.antdStrings.range
 import typings.antd.antdStrings.removals
+import typings.antd.antdStrings.reset
 import typings.antd.antdStrings.search
 import typings.antd.antdStrings.spelling
 import typings.antd.antdStrings.step
+import typings.antd.antdStrings.submit
 import typings.antd.antdStrings.tel
 import typings.antd.antdStrings.text
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
+import typings.antd.antdStrings.week
 import typings.antd.antdStrings.yes
 import typings.antd.inputInputMod.InputProps
 import typings.antd.sizeContextMod.SizeType
+import typings.antd.typeMod.LiteralUnion
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
 import typings.react.mod.Booleanish
@@ -289,7 +305,10 @@ object PasswordProps {
     tabIndex: Int | Double = null,
     title: String = null,
     translate: yes | no = null,
-    `type`: String = null,
+    `type`: LiteralUnion[
+      button | checkbox | color | date | `datetime-local` | email | file | hidden | image | month | number | password | radio | range | reset | search | submit | tel | text | time | url | week, 
+      String
+    ] = null,
     typeof: String = null,
     unselectable: on | off = null,
     value: String | js.Array[String] | Double = null,

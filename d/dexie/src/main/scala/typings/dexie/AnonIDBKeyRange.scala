@@ -15,7 +15,6 @@ object AnonIDBKeyRange {
   @scala.inline
   def apply(IDBKeyRange: IDBKeyRange, indexedDB: IDBFactory): AnonIDBKeyRange = {
     val __obj = js.Dynamic.literal(IDBKeyRange = IDBKeyRange.asInstanceOf[js.Any], indexedDB = indexedDB.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIDBKeyRange]
   }
 }

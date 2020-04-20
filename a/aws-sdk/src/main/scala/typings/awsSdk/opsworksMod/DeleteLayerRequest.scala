@@ -16,7 +16,6 @@ object DeleteLayerRequest {
   @scala.inline
   def apply(LayerId: String): DeleteLayerRequest = {
     val __obj = js.Dynamic.literal(LayerId = LayerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLayerRequest]
   }
 }

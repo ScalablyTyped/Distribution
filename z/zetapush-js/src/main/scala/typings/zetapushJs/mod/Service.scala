@@ -12,7 +12,6 @@ object Service {
   @scala.inline
   def apply(DEFAULT_DEPLOYMENT_ID: String): Service = {
     val __obj = js.Dynamic.literal(DEFAULT_DEPLOYMENT_ID = DEFAULT_DEPLOYMENT_ID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Service]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactPopoverProps {
   @scala.inline
-  def ReactPopoverProps: PopoverProps.type = typings.reactPopover.mod.PopoverProps
+  def ReactPopoverProps: PopoverProps.type = PopoverProps
   type ReactPopoverProps = PopoverProps
 }
 

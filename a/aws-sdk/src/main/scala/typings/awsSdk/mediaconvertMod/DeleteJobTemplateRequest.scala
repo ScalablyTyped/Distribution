@@ -16,7 +16,6 @@ object DeleteJobTemplateRequest {
   @scala.inline
   def apply(Name: string): DeleteJobTemplateRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteJobTemplateRequest]
   }
 }

@@ -24,7 +24,6 @@ object AnonFWVersion {
     serial: String
   ): AnonFWVersion = {
     val __obj = js.Dynamic.literal(FWVersion = FWVersion.asInstanceOf[js.Any], HWVersion = HWVersion.asInstanceOf[js.Any], isLoggedIn = isLoggedIn.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFWVersion]
   }
 }

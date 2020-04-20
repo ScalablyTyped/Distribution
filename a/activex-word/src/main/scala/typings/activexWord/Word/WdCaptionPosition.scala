@@ -14,10 +14,8 @@ trait WdCaptionPosition extends js.Object
 
 object WdCaptionPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCaptionPositionAbove: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdCaptionPositionAbove: `0` = this.cast(0)
-  @scala.inline
-  def wdCaptionPositionBelow: `1` = this.cast(1)
+  def wdCaptionPositionBelow: `1` = 1.asInstanceOf[`1`]
 }
 

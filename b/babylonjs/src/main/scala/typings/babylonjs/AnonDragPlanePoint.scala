@@ -14,7 +14,6 @@ object AnonDragPlanePoint {
   @scala.inline
   def apply(dragPlanePoint: Vector3, pointerId: Double): AnonDragPlanePoint = {
     val __obj = js.Dynamic.literal(dragPlanePoint = dragPlanePoint.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDragPlanePoint]
   }
 }

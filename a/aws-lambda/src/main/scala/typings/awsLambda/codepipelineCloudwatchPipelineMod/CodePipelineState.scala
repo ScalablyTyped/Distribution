@@ -16,18 +16,16 @@ trait CodePipelineState extends js.Object
 
 object CodePipelineState {
   @scala.inline
-  def CANCELED: typings.awsLambda.awsLambdaStrings.CANCELED = this.cast("CANCELED")
+  def CANCELED: typings.awsLambda.awsLambdaStrings.CANCELED = "CANCELED".asInstanceOf[typings.awsLambda.awsLambdaStrings.CANCELED]
   @scala.inline
-  def FAILED: typings.awsLambda.awsLambdaStrings.FAILED = this.cast("FAILED")
+  def FAILED: typings.awsLambda.awsLambdaStrings.FAILED = "FAILED".asInstanceOf[typings.awsLambda.awsLambdaStrings.FAILED]
   @scala.inline
-  def RESUMED: typings.awsLambda.awsLambdaStrings.RESUMED = this.cast("RESUMED")
+  def RESUMED: typings.awsLambda.awsLambdaStrings.RESUMED = "RESUMED".asInstanceOf[typings.awsLambda.awsLambdaStrings.RESUMED]
   @scala.inline
-  def STARTED: typings.awsLambda.awsLambdaStrings.STARTED = this.cast("STARTED")
+  def STARTED: typings.awsLambda.awsLambdaStrings.STARTED = "STARTED".asInstanceOf[typings.awsLambda.awsLambdaStrings.STARTED]
   @scala.inline
-  def SUCCEEDED: typings.awsLambda.awsLambdaStrings.SUCCEEDED = this.cast("SUCCEEDED")
+  def SUCCEEDED: typings.awsLambda.awsLambdaStrings.SUCCEEDED = "SUCCEEDED".asInstanceOf[typings.awsLambda.awsLambdaStrings.SUCCEEDED]
   @scala.inline
-  def SUPERSEDED: typings.awsLambda.awsLambdaStrings.SUPERSEDED = this.cast("SUPERSEDED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SUPERSEDED: typings.awsLambda.awsLambdaStrings.SUPERSEDED = "SUPERSEDED".asInstanceOf[typings.awsLambda.awsLambdaStrings.SUPERSEDED]
 }
 

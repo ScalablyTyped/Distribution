@@ -23,7 +23,6 @@ object Props {
     screenProps: js.Any
   ): Props = {
     val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], navigationConfig = navigationConfig.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Props]
   }
 }

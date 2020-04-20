@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-mocha-reporter"
-version := "2.2-dt-20200220Z-442e50"
+version := "2.2-dt-20200220Z-319f65"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

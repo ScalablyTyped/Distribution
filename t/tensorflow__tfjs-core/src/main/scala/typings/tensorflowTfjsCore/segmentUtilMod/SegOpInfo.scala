@@ -15,7 +15,6 @@ object SegOpInfo {
   @scala.inline
   def apply(batchSize: Double, inSize: Double, numSegments: Double, windowSize: Double): SegOpInfo = {
     val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], inSize = inSize.asInstanceOf[js.Any], numSegments = numSegments.asInstanceOf[js.Any], windowSize = windowSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SegOpInfo]
   }
 }

@@ -16,7 +16,6 @@ object ListDeadLetterSourceQueuesResult {
   @scala.inline
   def apply(queueUrls: QueueUrlList): ListDeadLetterSourceQueuesResult = {
     val __obj = js.Dynamic.literal(queueUrls = queueUrls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListDeadLetterSourceQueuesResult]
   }
 }

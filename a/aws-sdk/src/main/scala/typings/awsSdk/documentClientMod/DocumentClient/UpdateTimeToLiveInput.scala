@@ -20,7 +20,6 @@ object UpdateTimeToLiveInput {
   @scala.inline
   def apply(TableName: TableName, TimeToLiveSpecification: TimeToLiveSpecification): UpdateTimeToLiveInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any], TimeToLiveSpecification = TimeToLiveSpecification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTimeToLiveInput]
   }
 }

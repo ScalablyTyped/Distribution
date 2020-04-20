@@ -28,7 +28,6 @@ object IEntityUseItemEventData {
   @scala.inline
   def apply(entity: IEntity, item_stack: IItemStack, use_method: String): IEntityUseItemEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], item_stack = item_stack.asInstanceOf[js.Any], use_method = use_method.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEntityUseItemEventData]
   }
 }

@@ -20,7 +20,6 @@ object AnonGetMeshMixin {
     primitives: ObjectMap[Entity[ObjectMap[Component[_, System[_]]]]]
   ): AnonGetMeshMixin = {
     val __obj = js.Dynamic.literal(getMeshMixin = js.Any.fromFunction0(getMeshMixin), primitives = primitives.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGetMeshMixin]
   }
 }

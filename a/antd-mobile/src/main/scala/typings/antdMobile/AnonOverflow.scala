@@ -12,7 +12,6 @@ object AnonOverflow {
   @scala.inline
   def apply(overflow: AnonAdjustX): AnonOverflow = {
     val __obj = js.Dynamic.literal(overflow = overflow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOverflow]
   }
 }

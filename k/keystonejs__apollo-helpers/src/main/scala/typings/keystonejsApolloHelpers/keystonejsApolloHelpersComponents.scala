@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object keystonejsApolloHelpersComponents extends keystonejsApolloHelpersProps {
   @scala.inline
-  def KeystoneProvider: ComponentType[js.Object] = js.constructorOf[typings.keystonejsApolloHelpers.mod.KeystoneProvider].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def KeystoneProvider: ComponentType[js.Object] = js.constructorOf[typings.keystonejsApolloHelpers.mod.KeystoneProvider].asInstanceOf[ComponentType[js.Object]]
   @scala.inline
-  def Mutation: ComponentType[MutationProps] = js.constructorOf[typings.keystonejsApolloHelpers.mod.Mutation].asInstanceOf[typings.react.mod.ComponentType[MutationProps]]
+  def Mutation: ComponentType[MutationProps] = js.constructorOf[typings.keystonejsApolloHelpers.mod.Mutation].asInstanceOf[ComponentType[MutationProps]]
   @scala.inline
-  def Query: ComponentType[QueryProps] = js.constructorOf[typings.keystonejsApolloHelpers.mod.Query].asInstanceOf[typings.react.mod.ComponentType[QueryProps]]
+  def Query: ComponentType[QueryProps] = js.constructorOf[typings.keystonejsApolloHelpers.mod.Query].asInstanceOf[ComponentType[QueryProps]]
 }
 

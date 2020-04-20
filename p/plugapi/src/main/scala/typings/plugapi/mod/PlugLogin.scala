@@ -13,7 +13,6 @@ object PlugLogin {
   @scala.inline
   def apply(email: String, password: String): PlugLogin = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlugLogin]
   }
 }

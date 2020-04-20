@@ -19,22 +19,20 @@ trait TimeInterval extends _TickCount
 
 object TimeInterval {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def day: typings.vegaTypings.vegaTypingsStrings.day = "day".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.day]
   @scala.inline
-  def day: typings.vegaTypings.vegaTypingsStrings.day = this.cast("day")
+  def hour: typings.vegaTypings.vegaTypingsStrings.hour = "hour".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.hour]
   @scala.inline
-  def hour: typings.vegaTypings.vegaTypingsStrings.hour = this.cast("hour")
+  def millisecond: typings.vegaTypings.vegaTypingsStrings.millisecond = "millisecond".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.millisecond]
   @scala.inline
-  def millisecond: typings.vegaTypings.vegaTypingsStrings.millisecond = this.cast("millisecond")
+  def minute: typings.vegaTypings.vegaTypingsStrings.minute = "minute".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.minute]
   @scala.inline
-  def minute: typings.vegaTypings.vegaTypingsStrings.minute = this.cast("minute")
+  def month: typings.vegaTypings.vegaTypingsStrings.month = "month".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.month]
   @scala.inline
-  def month: typings.vegaTypings.vegaTypingsStrings.month = this.cast("month")
+  def second: typings.vegaTypings.vegaTypingsStrings.second = "second".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.second]
   @scala.inline
-  def second: typings.vegaTypings.vegaTypingsStrings.second = this.cast("second")
+  def week: typings.vegaTypings.vegaTypingsStrings.week = "week".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.week]
   @scala.inline
-  def week: typings.vegaTypings.vegaTypingsStrings.week = this.cast("week")
-  @scala.inline
-  def year: typings.vegaTypings.vegaTypingsStrings.year = this.cast("year")
+  def year: typings.vegaTypings.vegaTypingsStrings.year = "year".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.year]
 }
 

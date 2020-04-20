@@ -32,7 +32,6 @@ object CreateKycPage {
   @scala.inline
   def apply(File: String): CreateKycPage = {
     val __obj = js.Dynamic.literal(File = File.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateKycPage]
   }
 }

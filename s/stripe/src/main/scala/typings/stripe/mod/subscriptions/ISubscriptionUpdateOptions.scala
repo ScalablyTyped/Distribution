@@ -3,6 +3,9 @@ package typings.stripe.mod.subscriptions
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.mod.cards.ICardSourceCreationOptions
+import typings.stripe.stripeStrings.always_invoice
+import typings.stripe.stripeStrings.create_prorations
+import typings.stripe.stripeStrings.none
 import typings.stripe.stripeStrings.now
 import typings.stripe.stripeStrings.unchanged
 import scala.scalajs.js
@@ -68,6 +71,11 @@ trait ISubscriptionUpdateOptions extends IDataOptionsWithMetadata {
     */
   var prorate: js.UndefOr[Boolean] = js.undefined
   /**
+    * Determines how to handle prorations when the billing cycle changes or if an item’s quantity changes.
+    * Prorations can be disabled by passing none.
+    */
+  var proration_behavior: js.UndefOr[create_prorations | always_invoice | none] = js.undefined
+  /**
     * If set, the proration will be calculated as though the subscription was updated at the given time. This can be used to apply exactly the
     * same proration that was previewed with upcoming invoice endpoint. It can also be used to implement custom proration logic, such as
     * prorating by day instead of by second, by providing the time that you wish to use for proration calculations.
@@ -114,6 +122,7 @@ object ISubscriptionUpdateOptions {
     pay_immediately: js.UndefOr[Boolean] = js.undefined,
     plan: String = null,
     prorate: js.UndefOr[Boolean] = js.undefined,
+    proration_behavior: create_prorations | always_invoice | none = null,
     proration_date: Int | Double = null,
     quantity: Int | Double = null,
     tax_percent: Int | Double = null,
@@ -136,6 +145,7 @@ object ISubscriptionUpdateOptions {
     if (!js.isUndefined(pay_immediately)) __obj.updateDynamic("pay_immediately")(pay_immediately.asInstanceOf[js.Any])
     if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
     if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate.asInstanceOf[js.Any])
+    if (proration_behavior != null) __obj.updateDynamic("proration_behavior")(proration_behavior.asInstanceOf[js.Any])
     if (proration_date != null) __obj.updateDynamic("proration_date")(proration_date.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])

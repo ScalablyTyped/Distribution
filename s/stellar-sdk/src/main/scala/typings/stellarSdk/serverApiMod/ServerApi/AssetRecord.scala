@@ -1,5 +1,6 @@
 package typings.stellarSdk.serverApiMod.ServerApi
 
+import org.scalablytyped.runtime.TopLevel
 import typings.stellarBase.mod.AssetType.credit12
 import typings.stellarBase.mod.AssetType.credit4
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
@@ -24,7 +25,7 @@ object AssetRecord {
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
-    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with js.Any,
+    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],
     amount: String,
     asset_code: String,
     asset_issuer: String,
@@ -34,7 +35,6 @@ object AssetRecord {
     paging_token: String
   ): AssetRecord = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], asset_code = asset_code.asInstanceOf[js.Any], asset_issuer = asset_issuer.asInstanceOf[js.Any], asset_type = asset_type.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], num_accounts = num_accounts.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssetRecord]
   }
 }

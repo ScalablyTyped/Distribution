@@ -13,7 +13,6 @@ object ConstrainPoint2DParameters {
   @scala.inline
   def apply(exact: js.Array[Point2D], ideal: js.Array[Point2D]): ConstrainPoint2DParameters = {
     val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], ideal = ideal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConstrainPoint2DParameters]
   }
 }

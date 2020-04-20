@@ -38,34 +38,32 @@ trait MFDataType extends js.Object
 
 object MFDataType {
   @scala.inline
-  def ACL: `14` = this.cast(14)
+  def ACL: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def Boolean: `8` = this.cast(8)
+  def Boolean: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def Date: `5` = this.cast(5)
+  def Date: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def FILETIME: `12` = this.cast(12)
+  def FILETIME: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def Floating: `3` = this.cast(3)
+  def Floating: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Integer: `2` = this.cast(2)
+  def Integer: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Integer64: `11` = this.cast(11)
+  def Integer64: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def Lookup: `9` = this.cast(9)
+  def Lookup: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def MultiLineText: `13` = this.cast(13)
+  def MultiLineText: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def MultiSelectLookup: `10` = this.cast(10)
+  def MultiSelectLookup: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def Text: `1` = this.cast(1)
+  def Text: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Time: `6` = this.cast(6)
+  def Time: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def Timestamp: `7` = this.cast(7)
+  def Timestamp: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def Uninitialized: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Uninitialized: `0` = 0.asInstanceOf[`0`]
 }
 

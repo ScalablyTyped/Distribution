@@ -14,10 +14,8 @@ trait MsoExtraInfoMethod extends js.Object
 
 object MsoExtraInfoMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoMethodGet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoMethodGet: `0` = this.cast(0)
-  @scala.inline
-  def msoMethodPost: `1` = this.cast(1)
+  def msoMethodPost: `1` = 1.asInstanceOf[`1`]
 }
 

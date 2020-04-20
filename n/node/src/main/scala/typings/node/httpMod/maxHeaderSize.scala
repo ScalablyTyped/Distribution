@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Read-only property specifying the maximum allowed size of HTTP headers in bytes.
-  * Defaults to 8KB. Configurable using the [`--max-http-header-size`][] CLI option.
+  * Defaults to 16KB. Configurable using the [`--max-http-header-size`][] CLI option.
   */
 @JSImport("http", "maxHeaderSize")
 @js.native

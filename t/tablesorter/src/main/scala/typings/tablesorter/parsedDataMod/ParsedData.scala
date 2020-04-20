@@ -26,7 +26,6 @@ object ParsedData {
   @scala.inline
   def apply($cells: js.Array[JQuery[HTMLElement]], parsed: js.Array[_], raw: js.Array[String]): ParsedData = {
     val __obj = js.Dynamic.literal($cells = $cells.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedData]
   }
 }

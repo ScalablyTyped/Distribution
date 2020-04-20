@@ -23,7 +23,6 @@ object RadialGradientColorObject {
   @scala.inline
   def apply(cx: Double, cy: Double, r: Double): RadialGradientColorObject = {
     val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RadialGradientColorObject]
   }
 }

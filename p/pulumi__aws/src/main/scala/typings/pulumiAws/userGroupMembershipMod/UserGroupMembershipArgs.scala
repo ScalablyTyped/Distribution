@@ -21,7 +21,6 @@ object UserGroupMembershipArgs {
   @scala.inline
   def apply(groups: Input[js.Array[Input[String]]], user: Input[String]): UserGroupMembershipArgs = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserGroupMembershipArgs]
   }
 }

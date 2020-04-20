@@ -1,5 +1,180 @@
 package typings.reachMenuButton
 
+import typings.reachMenuButton.mod.MenuLink_a
+import typings.reachMenuButton.mod.MenuLink_abbr
+import typings.reachMenuButton.mod.MenuLink_address
+import typings.reachMenuButton.mod.MenuLink_animate
+import typings.reachMenuButton.mod.MenuLink_animateMotion
+import typings.reachMenuButton.mod.MenuLink_animateTransform
+import typings.reachMenuButton.mod.MenuLink_area
+import typings.reachMenuButton.mod.MenuLink_article
+import typings.reachMenuButton.mod.MenuLink_aside
+import typings.reachMenuButton.mod.MenuLink_audio
+import typings.reachMenuButton.mod.MenuLink_b
+import typings.reachMenuButton.mod.MenuLink_base
+import typings.reachMenuButton.mod.MenuLink_bdi
+import typings.reachMenuButton.mod.MenuLink_bdo
+import typings.reachMenuButton.mod.MenuLink_big
+import typings.reachMenuButton.mod.MenuLink_blockquote
+import typings.reachMenuButton.mod.MenuLink_body
+import typings.reachMenuButton.mod.MenuLink_br
+import typings.reachMenuButton.mod.MenuLink_button
+import typings.reachMenuButton.mod.MenuLink_canvas
+import typings.reachMenuButton.mod.MenuLink_caption
+import typings.reachMenuButton.mod.MenuLink_circle
+import typings.reachMenuButton.mod.MenuLink_cite
+import typings.reachMenuButton.mod.MenuLink_clipPath
+import typings.reachMenuButton.mod.MenuLink_code
+import typings.reachMenuButton.mod.MenuLink_col
+import typings.reachMenuButton.mod.MenuLink_colgroup
+import typings.reachMenuButton.mod.MenuLink_data
+import typings.reachMenuButton.mod.MenuLink_datalist
+import typings.reachMenuButton.mod.MenuLink_dd
+import typings.reachMenuButton.mod.MenuLink_defs
+import typings.reachMenuButton.mod.MenuLink_del
+import typings.reachMenuButton.mod.MenuLink_desc
+import typings.reachMenuButton.mod.MenuLink_details
+import typings.reachMenuButton.mod.MenuLink_dfn
+import typings.reachMenuButton.mod.MenuLink_dialog
+import typings.reachMenuButton.mod.MenuLink_div
+import typings.reachMenuButton.mod.MenuLink_dl
+import typings.reachMenuButton.mod.MenuLink_dt
+import typings.reachMenuButton.mod.MenuLink_ellipse
+import typings.reachMenuButton.mod.MenuLink_em
+import typings.reachMenuButton.mod.MenuLink_embed
+import typings.reachMenuButton.mod.MenuLink_feBlend
+import typings.reachMenuButton.mod.MenuLink_feColorMatrix
+import typings.reachMenuButton.mod.MenuLink_feComponentTransfer
+import typings.reachMenuButton.mod.MenuLink_feComposite
+import typings.reachMenuButton.mod.MenuLink_feConvolveMatrix
+import typings.reachMenuButton.mod.MenuLink_feDiffuseLighting
+import typings.reachMenuButton.mod.MenuLink_feDisplacementMap
+import typings.reachMenuButton.mod.MenuLink_feDistantLight
+import typings.reachMenuButton.mod.MenuLink_feDropShadow
+import typings.reachMenuButton.mod.MenuLink_feFlood
+import typings.reachMenuButton.mod.MenuLink_feFuncA
+import typings.reachMenuButton.mod.MenuLink_feFuncB
+import typings.reachMenuButton.mod.MenuLink_feFuncG
+import typings.reachMenuButton.mod.MenuLink_feFuncR
+import typings.reachMenuButton.mod.MenuLink_feGaussianBlur
+import typings.reachMenuButton.mod.MenuLink_feImage
+import typings.reachMenuButton.mod.MenuLink_feMerge
+import typings.reachMenuButton.mod.MenuLink_feMergeNode
+import typings.reachMenuButton.mod.MenuLink_feMorphology
+import typings.reachMenuButton.mod.MenuLink_feOffset
+import typings.reachMenuButton.mod.MenuLink_fePointLight
+import typings.reachMenuButton.mod.MenuLink_feSpecularLighting
+import typings.reachMenuButton.mod.MenuLink_feSpotLight
+import typings.reachMenuButton.mod.MenuLink_feTile
+import typings.reachMenuButton.mod.MenuLink_feTurbulence
+import typings.reachMenuButton.mod.MenuLink_fieldset
+import typings.reachMenuButton.mod.MenuLink_figcaption
+import typings.reachMenuButton.mod.MenuLink_figure
+import typings.reachMenuButton.mod.MenuLink_filter
+import typings.reachMenuButton.mod.MenuLink_footer
+import typings.reachMenuButton.mod.MenuLink_foreignObject
+import typings.reachMenuButton.mod.MenuLink_form
+import typings.reachMenuButton.mod.MenuLink_g
+import typings.reachMenuButton.mod.MenuLink_h1
+import typings.reachMenuButton.mod.MenuLink_h2
+import typings.reachMenuButton.mod.MenuLink_h3
+import typings.reachMenuButton.mod.MenuLink_h4
+import typings.reachMenuButton.mod.MenuLink_h5
+import typings.reachMenuButton.mod.MenuLink_h6
+import typings.reachMenuButton.mod.MenuLink_head
+import typings.reachMenuButton.mod.MenuLink_header
+import typings.reachMenuButton.mod.MenuLink_hgroup
+import typings.reachMenuButton.mod.MenuLink_hr
+import typings.reachMenuButton.mod.MenuLink_html
+import typings.reachMenuButton.mod.MenuLink_i
+import typings.reachMenuButton.mod.MenuLink_iframe
+import typings.reachMenuButton.mod.MenuLink_image
+import typings.reachMenuButton.mod.MenuLink_img
+import typings.reachMenuButton.mod.MenuLink_input
+import typings.reachMenuButton.mod.MenuLink_ins
+import typings.reachMenuButton.mod.MenuLink_kbd
+import typings.reachMenuButton.mod.MenuLink_keygen
+import typings.reachMenuButton.mod.MenuLink_label
+import typings.reachMenuButton.mod.MenuLink_legend
+import typings.reachMenuButton.mod.MenuLink_li
+import typings.reachMenuButton.mod.MenuLink_line
+import typings.reachMenuButton.mod.MenuLink_linearGradient
+import typings.reachMenuButton.mod.MenuLink_link
+import typings.reachMenuButton.mod.MenuLink_main
+import typings.reachMenuButton.mod.MenuLink_map
+import typings.reachMenuButton.mod.MenuLink_mark
+import typings.reachMenuButton.mod.MenuLink_marker
+import typings.reachMenuButton.mod.MenuLink_mask
+import typings.reachMenuButton.mod.MenuLink_menu
+import typings.reachMenuButton.mod.MenuLink_menuitem
+import typings.reachMenuButton.mod.MenuLink_meta
+import typings.reachMenuButton.mod.MenuLink_metadata
+import typings.reachMenuButton.mod.MenuLink_meter
+import typings.reachMenuButton.mod.MenuLink_mpath
+import typings.reachMenuButton.mod.MenuLink_nav
+import typings.reachMenuButton.mod.MenuLink_noindex
+import typings.reachMenuButton.mod.MenuLink_noscript
+import typings.reachMenuButton.mod.MenuLink_object
+import typings.reachMenuButton.mod.MenuLink_ol
+import typings.reachMenuButton.mod.MenuLink_optgroup
+import typings.reachMenuButton.mod.MenuLink_option
+import typings.reachMenuButton.mod.MenuLink_output
+import typings.reachMenuButton.mod.MenuLink_p
+import typings.reachMenuButton.mod.MenuLink_param
+import typings.reachMenuButton.mod.MenuLink_path
+import typings.reachMenuButton.mod.MenuLink_pattern
+import typings.reachMenuButton.mod.MenuLink_picture
+import typings.reachMenuButton.mod.MenuLink_polygon
+import typings.reachMenuButton.mod.MenuLink_polyline
+import typings.reachMenuButton.mod.MenuLink_pre
+import typings.reachMenuButton.mod.MenuLink_progress
+import typings.reachMenuButton.mod.MenuLink_q
+import typings.reachMenuButton.mod.MenuLink_radialGradient
+import typings.reachMenuButton.mod.MenuLink_rect
+import typings.reachMenuButton.mod.MenuLink_rp
+import typings.reachMenuButton.mod.MenuLink_rt
+import typings.reachMenuButton.mod.MenuLink_ruby
+import typings.reachMenuButton.mod.MenuLink_s
+import typings.reachMenuButton.mod.MenuLink_samp
+import typings.reachMenuButton.mod.MenuLink_script
+import typings.reachMenuButton.mod.MenuLink_section
+import typings.reachMenuButton.mod.MenuLink_select
+import typings.reachMenuButton.mod.MenuLink_slot
+import typings.reachMenuButton.mod.MenuLink_small
+import typings.reachMenuButton.mod.MenuLink_source
+import typings.reachMenuButton.mod.MenuLink_span
+import typings.reachMenuButton.mod.MenuLink_stop
+import typings.reachMenuButton.mod.MenuLink_strong
+import typings.reachMenuButton.mod.MenuLink_style
+import typings.reachMenuButton.mod.MenuLink_sub
+import typings.reachMenuButton.mod.MenuLink_summary
+import typings.reachMenuButton.mod.MenuLink_sup
+import typings.reachMenuButton.mod.MenuLink_svg
+import typings.reachMenuButton.mod.MenuLink_switch
+import typings.reachMenuButton.mod.MenuLink_symbol
+import typings.reachMenuButton.mod.MenuLink_table
+import typings.reachMenuButton.mod.MenuLink_tbody
+import typings.reachMenuButton.mod.MenuLink_td
+import typings.reachMenuButton.mod.MenuLink_template
+import typings.reachMenuButton.mod.MenuLink_text
+import typings.reachMenuButton.mod.MenuLink_textPath
+import typings.reachMenuButton.mod.MenuLink_textarea
+import typings.reachMenuButton.mod.MenuLink_tfoot
+import typings.reachMenuButton.mod.MenuLink_th
+import typings.reachMenuButton.mod.MenuLink_thead
+import typings.reachMenuButton.mod.MenuLink_time
+import typings.reachMenuButton.mod.MenuLink_title
+import typings.reachMenuButton.mod.MenuLink_tr
+import typings.reachMenuButton.mod.MenuLink_track
+import typings.reachMenuButton.mod.MenuLink_tspan
+import typings.reachMenuButton.mod.MenuLink_u
+import typings.reachMenuButton.mod.MenuLink_ul
+import typings.reachMenuButton.mod.MenuLink_use
+import typings.reachMenuButton.mod.MenuLink_var
+import typings.reachMenuButton.mod.MenuLink_video
+import typings.reachMenuButton.mod.MenuLink_view
+import typings.reachMenuButton.mod.MenuLink_wbr
+import typings.reachMenuButton.mod.MenuLink_webview
 import typings.reachMenuButton.reachMenuButtonStrings.`object`
 import typings.reachMenuButton.reachMenuButtonStrings.`var`
 import typings.reachMenuButton.reachMenuButtonStrings.a
@@ -182,386 +357,364 @@ import scala.scalajs.js.annotation._
 
 object reachMenuButtonComponents extends reachMenuButtonProps {
   @scala.inline
-  def Menu: ComponentType[MenuProps] = typings.reachMenuButton.mod.Menu.asInstanceOf[typings.react.mod.ComponentType[MenuProps]]
+  def Menu: ComponentType[MenuProps] = typings.reachMenuButton.mod.Menu.asInstanceOf[ComponentType[MenuProps]]
   @scala.inline
-  def MenuButton: ComponentType[MenuButtonProps] = typings.reachMenuButton.mod.MenuButton.asInstanceOf[typings.react.mod.ComponentType[MenuButtonProps]]
+  def MenuButton: ComponentType[MenuButtonProps] = typings.reachMenuButton.mod.MenuButton.asInstanceOf[ComponentType[MenuButtonProps]]
   @scala.inline
-  def MenuItem: ComponentType[MenuItemProps] = typings.reachMenuButton.mod.MenuItem.asInstanceOf[typings.react.mod.ComponentType[MenuItemProps]]
+  def MenuItem: ComponentType[MenuItemProps] = typings.reachMenuButton.mod.MenuItem.asInstanceOf[ComponentType[MenuItemProps]]
   @scala.inline
-  def MenuLink[T /* <: js.Object */]: ComponentType[MenuLinkProps[T]] = typings.reachMenuButton.mod.MenuLink.asInstanceOf[typings.react.mod.ComponentType[MenuLinkProps[T]]]
+  def MenuLink[T /* <: js.Object */]: ComponentType[MenuLinkProps[T]] = typings.reachMenuButton.mod.MenuLink.asInstanceOf[ComponentType[MenuLinkProps[T]]]
   @scala.inline
-  def MenuLinkA: ComponentType[MenuLinkAProps[a]] = typings.reachMenuButton.mod.MenuLink_a.asInstanceOf[typings.react.mod.ComponentType[MenuLinkAProps[typings.reachMenuButton.reachMenuButtonStrings.a]]]
+  def MenuLinkA: ComponentType[MenuLinkAProps[a]] = MenuLink_a.asInstanceOf[ComponentType[MenuLinkAProps[a]]]
   @scala.inline
-  def MenuLinkAbbr: ComponentType[MenuLinkAbbrProps[abbr]] = typings.reachMenuButton.mod.MenuLink_abbr.asInstanceOf[typings.react.mod.ComponentType[MenuLinkAbbrProps[typings.reachMenuButton.reachMenuButtonStrings.abbr]]]
+  def MenuLinkAbbr: ComponentType[MenuLinkAbbrProps[abbr]] = MenuLink_abbr.asInstanceOf[ComponentType[MenuLinkAbbrProps[abbr]]]
   @scala.inline
-  def MenuLinkAddress: ComponentType[MenuLinkAddressProps[address]] = typings.reachMenuButton.mod.MenuLink_address.asInstanceOf[typings.react.mod.ComponentType[MenuLinkAddressProps[typings.reachMenuButton.reachMenuButtonStrings.address]]]
+  def MenuLinkAddress: ComponentType[MenuLinkAddressProps[address]] = MenuLink_address.asInstanceOf[ComponentType[MenuLinkAddressProps[address]]]
   @scala.inline
-  def MenuLinkAnimate: ComponentType[MenuLinkAnimateProps[animate]] = typings.reachMenuButton.mod.MenuLink_animate.asInstanceOf[typings.react.mod.ComponentType[MenuLinkAnimateProps[typings.reachMenuButton.reachMenuButtonStrings.animate]]]
+  def MenuLinkAnimate: ComponentType[MenuLinkAnimateProps[animate]] = MenuLink_animate.asInstanceOf[ComponentType[MenuLinkAnimateProps[animate]]]
   @scala.inline
-  def MenuLinkAnimateMotion: ComponentType[MenuLinkAnimateMotionProps[animateMotion]] = typings.reachMenuButton.mod.MenuLink_animateMotion.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkAnimateMotionProps[typings.reachMenuButton.reachMenuButtonStrings.animateMotion]]]
+  def MenuLinkAnimateMotion: ComponentType[MenuLinkAnimateMotionProps[animateMotion]] = MenuLink_animateMotion.asInstanceOf[ComponentType[MenuLinkAnimateMotionProps[animateMotion]]]
   @scala.inline
-  def MenuLinkAnimateTransform: ComponentType[MenuLinkAnimateTransformProps[animateTransform]] = typings.reachMenuButton.mod.MenuLink_animateTransform.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkAnimateTransformProps[typings.reachMenuButton.reachMenuButtonStrings.animateTransform]]]
+  def MenuLinkAnimateTransform: ComponentType[MenuLinkAnimateTransformProps[animateTransform]] = MenuLink_animateTransform.asInstanceOf[ComponentType[MenuLinkAnimateTransformProps[animateTransform]]]
   @scala.inline
-  def MenuLinkArea: ComponentType[MenuLinkAreaProps[area]] = typings.reachMenuButton.mod.MenuLink_area.asInstanceOf[typings.react.mod.ComponentType[MenuLinkAreaProps[typings.reachMenuButton.reachMenuButtonStrings.area]]]
+  def MenuLinkArea: ComponentType[MenuLinkAreaProps[area]] = MenuLink_area.asInstanceOf[ComponentType[MenuLinkAreaProps[area]]]
   @scala.inline
-  def MenuLinkArticle: ComponentType[MenuLinkArticleProps[article]] = typings.reachMenuButton.mod.MenuLink_article.asInstanceOf[typings.react.mod.ComponentType[MenuLinkArticleProps[typings.reachMenuButton.reachMenuButtonStrings.article]]]
+  def MenuLinkArticle: ComponentType[MenuLinkArticleProps[article]] = MenuLink_article.asInstanceOf[ComponentType[MenuLinkArticleProps[article]]]
   @scala.inline
-  def MenuLinkAside: ComponentType[MenuLinkAsideProps[aside]] = typings.reachMenuButton.mod.MenuLink_aside.asInstanceOf[typings.react.mod.ComponentType[MenuLinkAsideProps[typings.reachMenuButton.reachMenuButtonStrings.aside]]]
+  def MenuLinkAside: ComponentType[MenuLinkAsideProps[aside]] = MenuLink_aside.asInstanceOf[ComponentType[MenuLinkAsideProps[aside]]]
   @scala.inline
-  def MenuLinkAudio: ComponentType[MenuLinkAudioProps[audio]] = typings.reachMenuButton.mod.MenuLink_audio.asInstanceOf[typings.react.mod.ComponentType[MenuLinkAudioProps[typings.reachMenuButton.reachMenuButtonStrings.audio]]]
+  def MenuLinkAudio: ComponentType[MenuLinkAudioProps[audio]] = MenuLink_audio.asInstanceOf[ComponentType[MenuLinkAudioProps[audio]]]
   @scala.inline
-  def MenuLinkB: ComponentType[MenuLinkBProps[b]] = typings.reachMenuButton.mod.MenuLink_b.asInstanceOf[typings.react.mod.ComponentType[MenuLinkBProps[typings.reachMenuButton.reachMenuButtonStrings.b]]]
+  def MenuLinkB: ComponentType[MenuLinkBProps[b]] = MenuLink_b.asInstanceOf[ComponentType[MenuLinkBProps[b]]]
   @scala.inline
-  def MenuLinkBase: ComponentType[MenuLinkBaseProps[base]] = typings.reachMenuButton.mod.MenuLink_base.asInstanceOf[typings.react.mod.ComponentType[MenuLinkBaseProps[typings.reachMenuButton.reachMenuButtonStrings.base]]]
+  def MenuLinkBase: ComponentType[MenuLinkBaseProps[base]] = MenuLink_base.asInstanceOf[ComponentType[MenuLinkBaseProps[base]]]
   @scala.inline
-  def MenuLinkBdi: ComponentType[MenuLinkBdiProps[bdi]] = typings.reachMenuButton.mod.MenuLink_bdi.asInstanceOf[typings.react.mod.ComponentType[MenuLinkBdiProps[typings.reachMenuButton.reachMenuButtonStrings.bdi]]]
+  def MenuLinkBdi: ComponentType[MenuLinkBdiProps[bdi]] = MenuLink_bdi.asInstanceOf[ComponentType[MenuLinkBdiProps[bdi]]]
   @scala.inline
-  def MenuLinkBdo: ComponentType[MenuLinkBdoProps[bdo]] = typings.reachMenuButton.mod.MenuLink_bdo.asInstanceOf[typings.react.mod.ComponentType[MenuLinkBdoProps[typings.reachMenuButton.reachMenuButtonStrings.bdo]]]
+  def MenuLinkBdo: ComponentType[MenuLinkBdoProps[bdo]] = MenuLink_bdo.asInstanceOf[ComponentType[MenuLinkBdoProps[bdo]]]
   @scala.inline
-  def MenuLinkBig: ComponentType[MenuLinkBigProps[big]] = typings.reachMenuButton.mod.MenuLink_big.asInstanceOf[typings.react.mod.ComponentType[MenuLinkBigProps[typings.reachMenuButton.reachMenuButtonStrings.big]]]
+  def MenuLinkBig: ComponentType[MenuLinkBigProps[big]] = MenuLink_big.asInstanceOf[ComponentType[MenuLinkBigProps[big]]]
   @scala.inline
-  def MenuLinkBlockquote: ComponentType[MenuLinkBlockquoteProps[blockquote]] = typings.reachMenuButton.mod.MenuLink_blockquote.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkBlockquoteProps[typings.reachMenuButton.reachMenuButtonStrings.blockquote]]]
+  def MenuLinkBlockquote: ComponentType[MenuLinkBlockquoteProps[blockquote]] = MenuLink_blockquote.asInstanceOf[ComponentType[MenuLinkBlockquoteProps[blockquote]]]
   @scala.inline
-  def MenuLinkBody: ComponentType[MenuLinkBodyProps[body]] = typings.reachMenuButton.mod.MenuLink_body.asInstanceOf[typings.react.mod.ComponentType[MenuLinkBodyProps[typings.reachMenuButton.reachMenuButtonStrings.body]]]
+  def MenuLinkBody: ComponentType[MenuLinkBodyProps[body]] = MenuLink_body.asInstanceOf[ComponentType[MenuLinkBodyProps[body]]]
   @scala.inline
-  def MenuLinkBr: ComponentType[MenuLinkBrProps[br]] = typings.reachMenuButton.mod.MenuLink_br.asInstanceOf[typings.react.mod.ComponentType[MenuLinkBrProps[typings.reachMenuButton.reachMenuButtonStrings.br]]]
+  def MenuLinkBr: ComponentType[MenuLinkBrProps[br]] = MenuLink_br.asInstanceOf[ComponentType[MenuLinkBrProps[br]]]
   @scala.inline
-  def MenuLinkButton: ComponentType[MenuLinkButtonProps[button]] = typings.reachMenuButton.mod.MenuLink_button.asInstanceOf[typings.react.mod.ComponentType[MenuLinkButtonProps[typings.reachMenuButton.reachMenuButtonStrings.button]]]
+  def MenuLinkButton: ComponentType[MenuLinkButtonProps[button]] = MenuLink_button.asInstanceOf[ComponentType[MenuLinkButtonProps[button]]]
   @scala.inline
-  def MenuLinkCanvas: ComponentType[MenuLinkCanvasProps[canvas]] = typings.reachMenuButton.mod.MenuLink_canvas.asInstanceOf[typings.react.mod.ComponentType[MenuLinkCanvasProps[typings.reachMenuButton.reachMenuButtonStrings.canvas]]]
+  def MenuLinkCanvas: ComponentType[MenuLinkCanvasProps[canvas]] = MenuLink_canvas.asInstanceOf[ComponentType[MenuLinkCanvasProps[canvas]]]
   @scala.inline
-  def MenuLinkCaption: ComponentType[MenuLinkCaptionProps[caption]] = typings.reachMenuButton.mod.MenuLink_caption.asInstanceOf[typings.react.mod.ComponentType[MenuLinkCaptionProps[typings.reachMenuButton.reachMenuButtonStrings.caption]]]
+  def MenuLinkCaption: ComponentType[MenuLinkCaptionProps[caption]] = MenuLink_caption.asInstanceOf[ComponentType[MenuLinkCaptionProps[caption]]]
   @scala.inline
-  def MenuLinkCircle: ComponentType[MenuLinkCircleProps[circle]] = typings.reachMenuButton.mod.MenuLink_circle.asInstanceOf[typings.react.mod.ComponentType[MenuLinkCircleProps[typings.reachMenuButton.reachMenuButtonStrings.circle]]]
+  def MenuLinkCircle: ComponentType[MenuLinkCircleProps[circle]] = MenuLink_circle.asInstanceOf[ComponentType[MenuLinkCircleProps[circle]]]
   @scala.inline
-  def MenuLinkCite: ComponentType[MenuLinkCiteProps[cite]] = typings.reachMenuButton.mod.MenuLink_cite.asInstanceOf[typings.react.mod.ComponentType[MenuLinkCiteProps[typings.reachMenuButton.reachMenuButtonStrings.cite]]]
+  def MenuLinkCite: ComponentType[MenuLinkCiteProps[cite]] = MenuLink_cite.asInstanceOf[ComponentType[MenuLinkCiteProps[cite]]]
   @scala.inline
-  def MenuLinkClipPath: ComponentType[MenuLinkClipPathProps[clipPath]] = typings.reachMenuButton.mod.MenuLink_clipPath.asInstanceOf[typings.react.mod.ComponentType[MenuLinkClipPathProps[typings.reachMenuButton.reachMenuButtonStrings.clipPath]]]
+  def MenuLinkClipPath: ComponentType[MenuLinkClipPathProps[clipPath]] = MenuLink_clipPath.asInstanceOf[ComponentType[MenuLinkClipPathProps[clipPath]]]
   @scala.inline
-  def MenuLinkCode: ComponentType[MenuLinkCodeProps[code]] = typings.reachMenuButton.mod.MenuLink_code.asInstanceOf[typings.react.mod.ComponentType[MenuLinkCodeProps[typings.reachMenuButton.reachMenuButtonStrings.code]]]
+  def MenuLinkCode: ComponentType[MenuLinkCodeProps[code]] = MenuLink_code.asInstanceOf[ComponentType[MenuLinkCodeProps[code]]]
   @scala.inline
-  def MenuLinkCol: ComponentType[MenuLinkColProps[col]] = typings.reachMenuButton.mod.MenuLink_col.asInstanceOf[typings.react.mod.ComponentType[MenuLinkColProps[typings.reachMenuButton.reachMenuButtonStrings.col]]]
+  def MenuLinkCol: ComponentType[MenuLinkColProps[col]] = MenuLink_col.asInstanceOf[ComponentType[MenuLinkColProps[col]]]
   @scala.inline
-  def MenuLinkColgroup: ComponentType[MenuLinkColgroupProps[colgroup]] = typings.reachMenuButton.mod.MenuLink_colgroup.asInstanceOf[typings.react.mod.ComponentType[MenuLinkColgroupProps[typings.reachMenuButton.reachMenuButtonStrings.colgroup]]]
+  def MenuLinkColgroup: ComponentType[MenuLinkColgroupProps[colgroup]] = MenuLink_colgroup.asInstanceOf[ComponentType[MenuLinkColgroupProps[colgroup]]]
   @scala.inline
-  def MenuLinkData: ComponentType[MenuLinkDataProps[data]] = typings.reachMenuButton.mod.MenuLink_data.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDataProps[typings.reachMenuButton.reachMenuButtonStrings.data]]]
+  def MenuLinkData: ComponentType[MenuLinkDataProps[data]] = MenuLink_data.asInstanceOf[ComponentType[MenuLinkDataProps[data]]]
   @scala.inline
-  def MenuLinkDatalist: ComponentType[MenuLinkDatalistProps[datalist]] = typings.reachMenuButton.mod.MenuLink_datalist.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDatalistProps[typings.reachMenuButton.reachMenuButtonStrings.datalist]]]
+  def MenuLinkDatalist: ComponentType[MenuLinkDatalistProps[datalist]] = MenuLink_datalist.asInstanceOf[ComponentType[MenuLinkDatalistProps[datalist]]]
   @scala.inline
-  def MenuLinkDd: ComponentType[MenuLinkDdProps[dd]] = typings.reachMenuButton.mod.MenuLink_dd.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDdProps[typings.reachMenuButton.reachMenuButtonStrings.dd]]]
+  def MenuLinkDd: ComponentType[MenuLinkDdProps[dd]] = MenuLink_dd.asInstanceOf[ComponentType[MenuLinkDdProps[dd]]]
   @scala.inline
-  def MenuLinkDefs: ComponentType[MenuLinkDefsProps[defs]] = typings.reachMenuButton.mod.MenuLink_defs.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDefsProps[typings.reachMenuButton.reachMenuButtonStrings.defs]]]
+  def MenuLinkDefs: ComponentType[MenuLinkDefsProps[defs]] = MenuLink_defs.asInstanceOf[ComponentType[MenuLinkDefsProps[defs]]]
   @scala.inline
-  def MenuLinkDel: ComponentType[MenuLinkDelProps[del]] = typings.reachMenuButton.mod.MenuLink_del.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDelProps[typings.reachMenuButton.reachMenuButtonStrings.del]]]
+  def MenuLinkDel: ComponentType[MenuLinkDelProps[del]] = MenuLink_del.asInstanceOf[ComponentType[MenuLinkDelProps[del]]]
   @scala.inline
-  def MenuLinkDesc: ComponentType[MenuLinkDescProps[desc]] = typings.reachMenuButton.mod.MenuLink_desc.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDescProps[typings.reachMenuButton.reachMenuButtonStrings.desc]]]
+  def MenuLinkDesc: ComponentType[MenuLinkDescProps[desc]] = MenuLink_desc.asInstanceOf[ComponentType[MenuLinkDescProps[desc]]]
   @scala.inline
-  def MenuLinkDetails: ComponentType[MenuLinkDetailsProps[details]] = typings.reachMenuButton.mod.MenuLink_details.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDetailsProps[typings.reachMenuButton.reachMenuButtonStrings.details]]]
+  def MenuLinkDetails: ComponentType[MenuLinkDetailsProps[details]] = MenuLink_details.asInstanceOf[ComponentType[MenuLinkDetailsProps[details]]]
   @scala.inline
-  def MenuLinkDfn: ComponentType[MenuLinkDfnProps[dfn]] = typings.reachMenuButton.mod.MenuLink_dfn.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDfnProps[typings.reachMenuButton.reachMenuButtonStrings.dfn]]]
+  def MenuLinkDfn: ComponentType[MenuLinkDfnProps[dfn]] = MenuLink_dfn.asInstanceOf[ComponentType[MenuLinkDfnProps[dfn]]]
   @scala.inline
-  def MenuLinkDialog: ComponentType[MenuLinkDialogProps[dialog]] = typings.reachMenuButton.mod.MenuLink_dialog.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDialogProps[typings.reachMenuButton.reachMenuButtonStrings.dialog]]]
+  def MenuLinkDialog: ComponentType[MenuLinkDialogProps[dialog]] = MenuLink_dialog.asInstanceOf[ComponentType[MenuLinkDialogProps[dialog]]]
   @scala.inline
-  def MenuLinkDiv: ComponentType[MenuLinkDivProps[div]] = typings.reachMenuButton.mod.MenuLink_div.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDivProps[typings.reachMenuButton.reachMenuButtonStrings.div]]]
+  def MenuLinkDiv: ComponentType[MenuLinkDivProps[div]] = MenuLink_div.asInstanceOf[ComponentType[MenuLinkDivProps[div]]]
   @scala.inline
-  def MenuLinkDl: ComponentType[MenuLinkDlProps[dl]] = typings.reachMenuButton.mod.MenuLink_dl.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDlProps[typings.reachMenuButton.reachMenuButtonStrings.dl]]]
+  def MenuLinkDl: ComponentType[MenuLinkDlProps[dl]] = MenuLink_dl.asInstanceOf[ComponentType[MenuLinkDlProps[dl]]]
   @scala.inline
-  def MenuLinkDt: ComponentType[MenuLinkDtProps[dt]] = typings.reachMenuButton.mod.MenuLink_dt.asInstanceOf[typings.react.mod.ComponentType[MenuLinkDtProps[typings.reachMenuButton.reachMenuButtonStrings.dt]]]
+  def MenuLinkDt: ComponentType[MenuLinkDtProps[dt]] = MenuLink_dt.asInstanceOf[ComponentType[MenuLinkDtProps[dt]]]
   @scala.inline
-  def MenuLinkEllipse: ComponentType[MenuLinkEllipseProps[ellipse]] = typings.reachMenuButton.mod.MenuLink_ellipse.asInstanceOf[typings.react.mod.ComponentType[MenuLinkEllipseProps[typings.reachMenuButton.reachMenuButtonStrings.ellipse]]]
+  def MenuLinkEllipse: ComponentType[MenuLinkEllipseProps[ellipse]] = MenuLink_ellipse.asInstanceOf[ComponentType[MenuLinkEllipseProps[ellipse]]]
   @scala.inline
-  def MenuLinkEm: ComponentType[MenuLinkEmProps[em]] = typings.reachMenuButton.mod.MenuLink_em.asInstanceOf[typings.react.mod.ComponentType[MenuLinkEmProps[typings.reachMenuButton.reachMenuButtonStrings.em]]]
+  def MenuLinkEm: ComponentType[MenuLinkEmProps[em]] = MenuLink_em.asInstanceOf[ComponentType[MenuLinkEmProps[em]]]
   @scala.inline
-  def MenuLinkEmbed: ComponentType[MenuLinkEmbedProps[embed]] = typings.reachMenuButton.mod.MenuLink_embed.asInstanceOf[typings.react.mod.ComponentType[MenuLinkEmbedProps[typings.reachMenuButton.reachMenuButtonStrings.embed]]]
+  def MenuLinkEmbed: ComponentType[MenuLinkEmbedProps[embed]] = MenuLink_embed.asInstanceOf[ComponentType[MenuLinkEmbedProps[embed]]]
   @scala.inline
-  def MenuLinkFeBlend: ComponentType[MenuLinkFeBlendProps[feBlend]] = typings.reachMenuButton.mod.MenuLink_feBlend.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeBlendProps[typings.reachMenuButton.reachMenuButtonStrings.feBlend]]]
+  def MenuLinkFeBlend: ComponentType[MenuLinkFeBlendProps[feBlend]] = MenuLink_feBlend.asInstanceOf[ComponentType[MenuLinkFeBlendProps[feBlend]]]
   @scala.inline
-  def MenuLinkFeColorMatrix: ComponentType[MenuLinkFeColorMatrixProps[feColorMatrix]] = typings.reachMenuButton.mod.MenuLink_feColorMatrix.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeColorMatrixProps[typings.reachMenuButton.reachMenuButtonStrings.feColorMatrix]]]
+  def MenuLinkFeColorMatrix: ComponentType[MenuLinkFeColorMatrixProps[feColorMatrix]] = MenuLink_feColorMatrix.asInstanceOf[ComponentType[MenuLinkFeColorMatrixProps[feColorMatrix]]]
   @scala.inline
-  def MenuLinkFeComponentTransfer: ComponentType[MenuLinkFeComponentTransferProps[feComponentTransfer]] = typings.reachMenuButton.mod.MenuLink_feComponentTransfer.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeComponentTransferProps[typings.reachMenuButton.reachMenuButtonStrings.feComponentTransfer]]]
+  def MenuLinkFeComponentTransfer: ComponentType[MenuLinkFeComponentTransferProps[feComponentTransfer]] = MenuLink_feComponentTransfer.asInstanceOf[ComponentType[MenuLinkFeComponentTransferProps[feComponentTransfer]]]
   @scala.inline
-  def MenuLinkFeComposite: ComponentType[MenuLinkFeCompositeProps[feComposite]] = typings.reachMenuButton.mod.MenuLink_feComposite.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeCompositeProps[typings.reachMenuButton.reachMenuButtonStrings.feComposite]]]
+  def MenuLinkFeComposite: ComponentType[MenuLinkFeCompositeProps[feComposite]] = MenuLink_feComposite.asInstanceOf[ComponentType[MenuLinkFeCompositeProps[feComposite]]]
   @scala.inline
-  def MenuLinkFeConvolveMatrix: ComponentType[MenuLinkFeConvolveMatrixProps[feConvolveMatrix]] = typings.reachMenuButton.mod.MenuLink_feConvolveMatrix.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeConvolveMatrixProps[typings.reachMenuButton.reachMenuButtonStrings.feConvolveMatrix]]]
+  def MenuLinkFeConvolveMatrix: ComponentType[MenuLinkFeConvolveMatrixProps[feConvolveMatrix]] = MenuLink_feConvolveMatrix.asInstanceOf[ComponentType[MenuLinkFeConvolveMatrixProps[feConvolveMatrix]]]
   @scala.inline
-  def MenuLinkFeDiffuseLighting: ComponentType[MenuLinkFeDiffuseLightingProps[feDiffuseLighting]] = typings.reachMenuButton.mod.MenuLink_feDiffuseLighting.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeDiffuseLightingProps[typings.reachMenuButton.reachMenuButtonStrings.feDiffuseLighting]]]
+  def MenuLinkFeDiffuseLighting: ComponentType[MenuLinkFeDiffuseLightingProps[feDiffuseLighting]] = MenuLink_feDiffuseLighting.asInstanceOf[ComponentType[MenuLinkFeDiffuseLightingProps[feDiffuseLighting]]]
   @scala.inline
-  def MenuLinkFeDisplacementMap: ComponentType[MenuLinkFeDisplacementMapProps[feDisplacementMap]] = typings.reachMenuButton.mod.MenuLink_feDisplacementMap.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeDisplacementMapProps[typings.reachMenuButton.reachMenuButtonStrings.feDisplacementMap]]]
+  def MenuLinkFeDisplacementMap: ComponentType[MenuLinkFeDisplacementMapProps[feDisplacementMap]] = MenuLink_feDisplacementMap.asInstanceOf[ComponentType[MenuLinkFeDisplacementMapProps[feDisplacementMap]]]
   @scala.inline
-  def MenuLinkFeDistantLight: ComponentType[MenuLinkFeDistantLightProps[feDistantLight]] = typings.reachMenuButton.mod.MenuLink_feDistantLight.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeDistantLightProps[typings.reachMenuButton.reachMenuButtonStrings.feDistantLight]]]
+  def MenuLinkFeDistantLight: ComponentType[MenuLinkFeDistantLightProps[feDistantLight]] = MenuLink_feDistantLight.asInstanceOf[ComponentType[MenuLinkFeDistantLightProps[feDistantLight]]]
   @scala.inline
-  def MenuLinkFeDropShadow: ComponentType[MenuLinkFeDropShadowProps[feDropShadow]] = typings.reachMenuButton.mod.MenuLink_feDropShadow.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeDropShadowProps[typings.reachMenuButton.reachMenuButtonStrings.feDropShadow]]]
+  def MenuLinkFeDropShadow: ComponentType[MenuLinkFeDropShadowProps[feDropShadow]] = MenuLink_feDropShadow.asInstanceOf[ComponentType[MenuLinkFeDropShadowProps[feDropShadow]]]
   @scala.inline
-  def MenuLinkFeFlood: ComponentType[MenuLinkFeFloodProps[feFlood]] = typings.reachMenuButton.mod.MenuLink_feFlood.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeFloodProps[typings.reachMenuButton.reachMenuButtonStrings.feFlood]]]
+  def MenuLinkFeFlood: ComponentType[MenuLinkFeFloodProps[feFlood]] = MenuLink_feFlood.asInstanceOf[ComponentType[MenuLinkFeFloodProps[feFlood]]]
   @scala.inline
-  def MenuLinkFeFuncA: ComponentType[MenuLinkFeFuncAProps[feFuncA]] = typings.reachMenuButton.mod.MenuLink_feFuncA.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeFuncAProps[typings.reachMenuButton.reachMenuButtonStrings.feFuncA]]]
+  def MenuLinkFeFuncA: ComponentType[MenuLinkFeFuncAProps[feFuncA]] = MenuLink_feFuncA.asInstanceOf[ComponentType[MenuLinkFeFuncAProps[feFuncA]]]
   @scala.inline
-  def MenuLinkFeFuncB: ComponentType[MenuLinkFeFuncBProps[feFuncB]] = typings.reachMenuButton.mod.MenuLink_feFuncB.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeFuncBProps[typings.reachMenuButton.reachMenuButtonStrings.feFuncB]]]
+  def MenuLinkFeFuncB: ComponentType[MenuLinkFeFuncBProps[feFuncB]] = MenuLink_feFuncB.asInstanceOf[ComponentType[MenuLinkFeFuncBProps[feFuncB]]]
   @scala.inline
-  def MenuLinkFeFuncG: ComponentType[MenuLinkFeFuncGProps[feFuncG]] = typings.reachMenuButton.mod.MenuLink_feFuncG.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeFuncGProps[typings.reachMenuButton.reachMenuButtonStrings.feFuncG]]]
+  def MenuLinkFeFuncG: ComponentType[MenuLinkFeFuncGProps[feFuncG]] = MenuLink_feFuncG.asInstanceOf[ComponentType[MenuLinkFeFuncGProps[feFuncG]]]
   @scala.inline
-  def MenuLinkFeFuncR: ComponentType[MenuLinkFeFuncRProps[feFuncR]] = typings.reachMenuButton.mod.MenuLink_feFuncR.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeFuncRProps[typings.reachMenuButton.reachMenuButtonStrings.feFuncR]]]
+  def MenuLinkFeFuncR: ComponentType[MenuLinkFeFuncRProps[feFuncR]] = MenuLink_feFuncR.asInstanceOf[ComponentType[MenuLinkFeFuncRProps[feFuncR]]]
   @scala.inline
-  def MenuLinkFeGaussianBlur: ComponentType[MenuLinkFeGaussianBlurProps[feGaussianBlur]] = typings.reachMenuButton.mod.MenuLink_feGaussianBlur.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeGaussianBlurProps[typings.reachMenuButton.reachMenuButtonStrings.feGaussianBlur]]]
+  def MenuLinkFeGaussianBlur: ComponentType[MenuLinkFeGaussianBlurProps[feGaussianBlur]] = MenuLink_feGaussianBlur.asInstanceOf[ComponentType[MenuLinkFeGaussianBlurProps[feGaussianBlur]]]
   @scala.inline
-  def MenuLinkFeImage: ComponentType[MenuLinkFeImageProps[feImage]] = typings.reachMenuButton.mod.MenuLink_feImage.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeImageProps[typings.reachMenuButton.reachMenuButtonStrings.feImage]]]
+  def MenuLinkFeImage: ComponentType[MenuLinkFeImageProps[feImage]] = MenuLink_feImage.asInstanceOf[ComponentType[MenuLinkFeImageProps[feImage]]]
   @scala.inline
-  def MenuLinkFeMerge: ComponentType[MenuLinkFeMergeProps[feMerge]] = typings.reachMenuButton.mod.MenuLink_feMerge.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeMergeProps[typings.reachMenuButton.reachMenuButtonStrings.feMerge]]]
+  def MenuLinkFeMerge: ComponentType[MenuLinkFeMergeProps[feMerge]] = MenuLink_feMerge.asInstanceOf[ComponentType[MenuLinkFeMergeProps[feMerge]]]
   @scala.inline
-  def MenuLinkFeMergeNode: ComponentType[MenuLinkFeMergeNodeProps[feMergeNode]] = typings.reachMenuButton.mod.MenuLink_feMergeNode.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeMergeNodeProps[typings.reachMenuButton.reachMenuButtonStrings.feMergeNode]]]
+  def MenuLinkFeMergeNode: ComponentType[MenuLinkFeMergeNodeProps[feMergeNode]] = MenuLink_feMergeNode.asInstanceOf[ComponentType[MenuLinkFeMergeNodeProps[feMergeNode]]]
   @scala.inline
-  def MenuLinkFeMorphology: ComponentType[MenuLinkFeMorphologyProps[feMorphology]] = typings.reachMenuButton.mod.MenuLink_feMorphology.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeMorphologyProps[typings.reachMenuButton.reachMenuButtonStrings.feMorphology]]]
+  def MenuLinkFeMorphology: ComponentType[MenuLinkFeMorphologyProps[feMorphology]] = MenuLink_feMorphology.asInstanceOf[ComponentType[MenuLinkFeMorphologyProps[feMorphology]]]
   @scala.inline
-  def MenuLinkFeOffset: ComponentType[MenuLinkFeOffsetProps[feOffset]] = typings.reachMenuButton.mod.MenuLink_feOffset.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeOffsetProps[typings.reachMenuButton.reachMenuButtonStrings.feOffset]]]
+  def MenuLinkFeOffset: ComponentType[MenuLinkFeOffsetProps[feOffset]] = MenuLink_feOffset.asInstanceOf[ComponentType[MenuLinkFeOffsetProps[feOffset]]]
   @scala.inline
-  def MenuLinkFePointLight: ComponentType[MenuLinkFePointLightProps[fePointLight]] = typings.reachMenuButton.mod.MenuLink_fePointLight.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFePointLightProps[typings.reachMenuButton.reachMenuButtonStrings.fePointLight]]]
+  def MenuLinkFePointLight: ComponentType[MenuLinkFePointLightProps[fePointLight]] = MenuLink_fePointLight.asInstanceOf[ComponentType[MenuLinkFePointLightProps[fePointLight]]]
   @scala.inline
-  def MenuLinkFeSpecularLighting: ComponentType[MenuLinkFeSpecularLightingProps[feSpecularLighting]] = typings.reachMenuButton.mod.MenuLink_feSpecularLighting.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeSpecularLightingProps[typings.reachMenuButton.reachMenuButtonStrings.feSpecularLighting]]]
+  def MenuLinkFeSpecularLighting: ComponentType[MenuLinkFeSpecularLightingProps[feSpecularLighting]] = MenuLink_feSpecularLighting.asInstanceOf[ComponentType[MenuLinkFeSpecularLightingProps[feSpecularLighting]]]
   @scala.inline
-  def MenuLinkFeSpotLight: ComponentType[MenuLinkFeSpotLightProps[feSpotLight]] = typings.reachMenuButton.mod.MenuLink_feSpotLight.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeSpotLightProps[typings.reachMenuButton.reachMenuButtonStrings.feSpotLight]]]
+  def MenuLinkFeSpotLight: ComponentType[MenuLinkFeSpotLightProps[feSpotLight]] = MenuLink_feSpotLight.asInstanceOf[ComponentType[MenuLinkFeSpotLightProps[feSpotLight]]]
   @scala.inline
-  def MenuLinkFeTile: ComponentType[MenuLinkFeTileProps[feTile]] = typings.reachMenuButton.mod.MenuLink_feTile.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFeTileProps[typings.reachMenuButton.reachMenuButtonStrings.feTile]]]
+  def MenuLinkFeTile: ComponentType[MenuLinkFeTileProps[feTile]] = MenuLink_feTile.asInstanceOf[ComponentType[MenuLinkFeTileProps[feTile]]]
   @scala.inline
-  def MenuLinkFeTurbulence: ComponentType[MenuLinkFeTurbulenceProps[feTurbulence]] = typings.reachMenuButton.mod.MenuLink_feTurbulence.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFeTurbulenceProps[typings.reachMenuButton.reachMenuButtonStrings.feTurbulence]]]
+  def MenuLinkFeTurbulence: ComponentType[MenuLinkFeTurbulenceProps[feTurbulence]] = MenuLink_feTurbulence.asInstanceOf[ComponentType[MenuLinkFeTurbulenceProps[feTurbulence]]]
   @scala.inline
-  def MenuLinkFieldset: ComponentType[MenuLinkFieldsetProps[fieldset]] = typings.reachMenuButton.mod.MenuLink_fieldset.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFieldsetProps[typings.reachMenuButton.reachMenuButtonStrings.fieldset]]]
+  def MenuLinkFieldset: ComponentType[MenuLinkFieldsetProps[fieldset]] = MenuLink_fieldset.asInstanceOf[ComponentType[MenuLinkFieldsetProps[fieldset]]]
   @scala.inline
-  def MenuLinkFigcaption: ComponentType[MenuLinkFigcaptionProps[figcaption]] = typings.reachMenuButton.mod.MenuLink_figcaption.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkFigcaptionProps[typings.reachMenuButton.reachMenuButtonStrings.figcaption]]]
+  def MenuLinkFigcaption: ComponentType[MenuLinkFigcaptionProps[figcaption]] = MenuLink_figcaption.asInstanceOf[ComponentType[MenuLinkFigcaptionProps[figcaption]]]
   @scala.inline
-  def MenuLinkFigure: ComponentType[MenuLinkFigureProps[figure]] = typings.reachMenuButton.mod.MenuLink_figure.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFigureProps[typings.reachMenuButton.reachMenuButtonStrings.figure]]]
+  def MenuLinkFigure: ComponentType[MenuLinkFigureProps[figure]] = MenuLink_figure.asInstanceOf[ComponentType[MenuLinkFigureProps[figure]]]
   @scala.inline
-  def MenuLinkFilter: ComponentType[MenuLinkFilterProps[filter]] = typings.reachMenuButton.mod.MenuLink_filter.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFilterProps[typings.reachMenuButton.reachMenuButtonStrings.filter]]]
+  def MenuLinkFilter: ComponentType[MenuLinkFilterProps[filter]] = MenuLink_filter.asInstanceOf[ComponentType[MenuLinkFilterProps[filter]]]
   @scala.inline
-  def MenuLinkFooter: ComponentType[MenuLinkFooterProps[footer]] = typings.reachMenuButton.mod.MenuLink_footer.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFooterProps[typings.reachMenuButton.reachMenuButtonStrings.footer]]]
+  def MenuLinkFooter: ComponentType[MenuLinkFooterProps[footer]] = MenuLink_footer.asInstanceOf[ComponentType[MenuLinkFooterProps[footer]]]
   @scala.inline
-  def MenuLinkForeignObject: ComponentType[MenuLinkForeignObjectProps[foreignObject]] = typings.reachMenuButton.mod.MenuLink_foreignObject.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkForeignObjectProps[typings.reachMenuButton.reachMenuButtonStrings.foreignObject]]]
+  def MenuLinkForeignObject: ComponentType[MenuLinkForeignObjectProps[foreignObject]] = MenuLink_foreignObject.asInstanceOf[ComponentType[MenuLinkForeignObjectProps[foreignObject]]]
   @scala.inline
-  def MenuLinkForm: ComponentType[MenuLinkFormProps[form]] = typings.reachMenuButton.mod.MenuLink_form.asInstanceOf[typings.react.mod.ComponentType[MenuLinkFormProps[typings.reachMenuButton.reachMenuButtonStrings.form]]]
+  def MenuLinkForm: ComponentType[MenuLinkFormProps[form]] = MenuLink_form.asInstanceOf[ComponentType[MenuLinkFormProps[form]]]
   @scala.inline
-  def MenuLinkG: ComponentType[MenuLinkGProps[g]] = typings.reachMenuButton.mod.MenuLink_g.asInstanceOf[typings.react.mod.ComponentType[MenuLinkGProps[typings.reachMenuButton.reachMenuButtonStrings.g]]]
+  def MenuLinkG: ComponentType[MenuLinkGProps[g]] = MenuLink_g.asInstanceOf[ComponentType[MenuLinkGProps[g]]]
   @scala.inline
-  def MenuLinkH1: ComponentType[MenuLinkH1Props[h1]] = typings.reachMenuButton.mod.MenuLink_h1.asInstanceOf[typings.react.mod.ComponentType[MenuLinkH1Props[typings.reachMenuButton.reachMenuButtonStrings.h1]]]
+  def MenuLinkH1: ComponentType[MenuLinkH1Props[h1]] = MenuLink_h1.asInstanceOf[ComponentType[MenuLinkH1Props[h1]]]
   @scala.inline
-  def MenuLinkH2: ComponentType[MenuLinkH2Props[h2]] = typings.reachMenuButton.mod.MenuLink_h2.asInstanceOf[typings.react.mod.ComponentType[MenuLinkH2Props[typings.reachMenuButton.reachMenuButtonStrings.h2]]]
+  def MenuLinkH2: ComponentType[MenuLinkH2Props[h2]] = MenuLink_h2.asInstanceOf[ComponentType[MenuLinkH2Props[h2]]]
   @scala.inline
-  def MenuLinkH3: ComponentType[MenuLinkH3Props[h3]] = typings.reachMenuButton.mod.MenuLink_h3.asInstanceOf[typings.react.mod.ComponentType[MenuLinkH3Props[typings.reachMenuButton.reachMenuButtonStrings.h3]]]
+  def MenuLinkH3: ComponentType[MenuLinkH3Props[h3]] = MenuLink_h3.asInstanceOf[ComponentType[MenuLinkH3Props[h3]]]
   @scala.inline
-  def MenuLinkH4: ComponentType[MenuLinkH4Props[h4]] = typings.reachMenuButton.mod.MenuLink_h4.asInstanceOf[typings.react.mod.ComponentType[MenuLinkH4Props[typings.reachMenuButton.reachMenuButtonStrings.h4]]]
+  def MenuLinkH4: ComponentType[MenuLinkH4Props[h4]] = MenuLink_h4.asInstanceOf[ComponentType[MenuLinkH4Props[h4]]]
   @scala.inline
-  def MenuLinkH5: ComponentType[MenuLinkH5Props[h5]] = typings.reachMenuButton.mod.MenuLink_h5.asInstanceOf[typings.react.mod.ComponentType[MenuLinkH5Props[typings.reachMenuButton.reachMenuButtonStrings.h5]]]
+  def MenuLinkH5: ComponentType[MenuLinkH5Props[h5]] = MenuLink_h5.asInstanceOf[ComponentType[MenuLinkH5Props[h5]]]
   @scala.inline
-  def MenuLinkH6: ComponentType[MenuLinkH6Props[h6]] = typings.reachMenuButton.mod.MenuLink_h6.asInstanceOf[typings.react.mod.ComponentType[MenuLinkH6Props[typings.reachMenuButton.reachMenuButtonStrings.h6]]]
+  def MenuLinkH6: ComponentType[MenuLinkH6Props[h6]] = MenuLink_h6.asInstanceOf[ComponentType[MenuLinkH6Props[h6]]]
   @scala.inline
-  def MenuLinkHead: ComponentType[MenuLinkHeadProps[head]] = typings.reachMenuButton.mod.MenuLink_head.asInstanceOf[typings.react.mod.ComponentType[MenuLinkHeadProps[typings.reachMenuButton.reachMenuButtonStrings.head]]]
+  def MenuLinkHead: ComponentType[MenuLinkHeadProps[head]] = MenuLink_head.asInstanceOf[ComponentType[MenuLinkHeadProps[head]]]
   @scala.inline
-  def MenuLinkHeader: ComponentType[MenuLinkHeaderProps[header]] = typings.reachMenuButton.mod.MenuLink_header.asInstanceOf[typings.react.mod.ComponentType[MenuLinkHeaderProps[typings.reachMenuButton.reachMenuButtonStrings.header]]]
+  def MenuLinkHeader: ComponentType[MenuLinkHeaderProps[header]] = MenuLink_header.asInstanceOf[ComponentType[MenuLinkHeaderProps[header]]]
   @scala.inline
-  def MenuLinkHgroup: ComponentType[MenuLinkHgroupProps[hgroup]] = typings.reachMenuButton.mod.MenuLink_hgroup.asInstanceOf[typings.react.mod.ComponentType[MenuLinkHgroupProps[typings.reachMenuButton.reachMenuButtonStrings.hgroup]]]
+  def MenuLinkHgroup: ComponentType[MenuLinkHgroupProps[hgroup]] = MenuLink_hgroup.asInstanceOf[ComponentType[MenuLinkHgroupProps[hgroup]]]
   @scala.inline
-  def MenuLinkHr: ComponentType[MenuLinkHrProps[hr]] = typings.reachMenuButton.mod.MenuLink_hr.asInstanceOf[typings.react.mod.ComponentType[MenuLinkHrProps[typings.reachMenuButton.reachMenuButtonStrings.hr]]]
+  def MenuLinkHr: ComponentType[MenuLinkHrProps[hr]] = MenuLink_hr.asInstanceOf[ComponentType[MenuLinkHrProps[hr]]]
   @scala.inline
-  def MenuLinkHtml: ComponentType[MenuLinkHtmlProps[html]] = typings.reachMenuButton.mod.MenuLink_html.asInstanceOf[typings.react.mod.ComponentType[MenuLinkHtmlProps[typings.reachMenuButton.reachMenuButtonStrings.html]]]
+  def MenuLinkHtml: ComponentType[MenuLinkHtmlProps[html]] = MenuLink_html.asInstanceOf[ComponentType[MenuLinkHtmlProps[html]]]
   @scala.inline
-  def MenuLinkI: ComponentType[MenuLinkIProps[i]] = typings.reachMenuButton.mod.MenuLink_i.asInstanceOf[typings.react.mod.ComponentType[MenuLinkIProps[typings.reachMenuButton.reachMenuButtonStrings.i]]]
+  def MenuLinkI: ComponentType[MenuLinkIProps[i]] = MenuLink_i.asInstanceOf[ComponentType[MenuLinkIProps[i]]]
   @scala.inline
-  def MenuLinkIframe: ComponentType[MenuLinkIframeProps[iframe]] = typings.reachMenuButton.mod.MenuLink_iframe.asInstanceOf[typings.react.mod.ComponentType[MenuLinkIframeProps[typings.reachMenuButton.reachMenuButtonStrings.iframe]]]
+  def MenuLinkIframe: ComponentType[MenuLinkIframeProps[iframe]] = MenuLink_iframe.asInstanceOf[ComponentType[MenuLinkIframeProps[iframe]]]
   @scala.inline
-  def MenuLinkImage: ComponentType[MenuLinkImageProps[image]] = typings.reachMenuButton.mod.MenuLink_image.asInstanceOf[typings.react.mod.ComponentType[MenuLinkImageProps[typings.reachMenuButton.reachMenuButtonStrings.image]]]
+  def MenuLinkImage: ComponentType[MenuLinkImageProps[image]] = MenuLink_image.asInstanceOf[ComponentType[MenuLinkImageProps[image]]]
   @scala.inline
-  def MenuLinkImg: ComponentType[MenuLinkImgProps[img]] = typings.reachMenuButton.mod.MenuLink_img.asInstanceOf[typings.react.mod.ComponentType[MenuLinkImgProps[typings.reachMenuButton.reachMenuButtonStrings.img]]]
+  def MenuLinkImg: ComponentType[MenuLinkImgProps[img]] = MenuLink_img.asInstanceOf[ComponentType[MenuLinkImgProps[img]]]
   @scala.inline
-  def MenuLinkInput: ComponentType[MenuLinkInputProps[input]] = typings.reachMenuButton.mod.MenuLink_input.asInstanceOf[typings.react.mod.ComponentType[MenuLinkInputProps[typings.reachMenuButton.reachMenuButtonStrings.input]]]
+  def MenuLinkInput: ComponentType[MenuLinkInputProps[input]] = MenuLink_input.asInstanceOf[ComponentType[MenuLinkInputProps[input]]]
   @scala.inline
-  def MenuLinkIns: ComponentType[MenuLinkInsProps[ins]] = typings.reachMenuButton.mod.MenuLink_ins.asInstanceOf[typings.react.mod.ComponentType[MenuLinkInsProps[typings.reachMenuButton.reachMenuButtonStrings.ins]]]
+  def MenuLinkIns: ComponentType[MenuLinkInsProps[ins]] = MenuLink_ins.asInstanceOf[ComponentType[MenuLinkInsProps[ins]]]
   @scala.inline
-  def MenuLinkKbd: ComponentType[MenuLinkKbdProps[kbd]] = typings.reachMenuButton.mod.MenuLink_kbd.asInstanceOf[typings.react.mod.ComponentType[MenuLinkKbdProps[typings.reachMenuButton.reachMenuButtonStrings.kbd]]]
+  def MenuLinkKbd: ComponentType[MenuLinkKbdProps[kbd]] = MenuLink_kbd.asInstanceOf[ComponentType[MenuLinkKbdProps[kbd]]]
   @scala.inline
-  def MenuLinkKeygen: ComponentType[MenuLinkKeygenProps[keygen]] = typings.reachMenuButton.mod.MenuLink_keygen.asInstanceOf[typings.react.mod.ComponentType[MenuLinkKeygenProps[typings.reachMenuButton.reachMenuButtonStrings.keygen]]]
+  def MenuLinkKeygen: ComponentType[MenuLinkKeygenProps[keygen]] = MenuLink_keygen.asInstanceOf[ComponentType[MenuLinkKeygenProps[keygen]]]
   @scala.inline
-  def MenuLinkLabel: ComponentType[MenuLinkLabelProps[label]] = typings.reachMenuButton.mod.MenuLink_label.asInstanceOf[typings.react.mod.ComponentType[MenuLinkLabelProps[typings.reachMenuButton.reachMenuButtonStrings.label]]]
+  def MenuLinkLabel: ComponentType[MenuLinkLabelProps[label]] = MenuLink_label.asInstanceOf[ComponentType[MenuLinkLabelProps[label]]]
   @scala.inline
-  def MenuLinkLegend: ComponentType[MenuLinkLegendProps[legend]] = typings.reachMenuButton.mod.MenuLink_legend.asInstanceOf[typings.react.mod.ComponentType[MenuLinkLegendProps[typings.reachMenuButton.reachMenuButtonStrings.legend]]]
+  def MenuLinkLegend: ComponentType[MenuLinkLegendProps[legend]] = MenuLink_legend.asInstanceOf[ComponentType[MenuLinkLegendProps[legend]]]
   @scala.inline
-  def MenuLinkLi: ComponentType[MenuLinkLiProps[li]] = typings.reachMenuButton.mod.MenuLink_li.asInstanceOf[typings.react.mod.ComponentType[MenuLinkLiProps[typings.reachMenuButton.reachMenuButtonStrings.li]]]
+  def MenuLinkLi: ComponentType[MenuLinkLiProps[li]] = MenuLink_li.asInstanceOf[ComponentType[MenuLinkLiProps[li]]]
   @scala.inline
-  def MenuLinkLine: ComponentType[MenuLinkLineProps[line]] = typings.reachMenuButton.mod.MenuLink_line.asInstanceOf[typings.react.mod.ComponentType[MenuLinkLineProps[typings.reachMenuButton.reachMenuButtonStrings.line]]]
+  def MenuLinkLine: ComponentType[MenuLinkLineProps[line]] = MenuLink_line.asInstanceOf[ComponentType[MenuLinkLineProps[line]]]
   @scala.inline
-  def MenuLinkLinearGradient: ComponentType[MenuLinkLinearGradientProps[linearGradient]] = typings.reachMenuButton.mod.MenuLink_linearGradient.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkLinearGradientProps[typings.reachMenuButton.reachMenuButtonStrings.linearGradient]]]
+  def MenuLinkLinearGradient: ComponentType[MenuLinkLinearGradientProps[linearGradient]] = MenuLink_linearGradient.asInstanceOf[ComponentType[MenuLinkLinearGradientProps[linearGradient]]]
   @scala.inline
-  def MenuLinkLink: ComponentType[MenuLinkLinkProps[link]] = typings.reachMenuButton.mod.MenuLink_link.asInstanceOf[typings.react.mod.ComponentType[MenuLinkLinkProps[typings.reachMenuButton.reachMenuButtonStrings.link]]]
+  def MenuLinkLink: ComponentType[MenuLinkLinkProps[link]] = MenuLink_link.asInstanceOf[ComponentType[MenuLinkLinkProps[link]]]
   @scala.inline
-  def MenuLinkMain: ComponentType[MenuLinkMainProps[main]] = typings.reachMenuButton.mod.MenuLink_main.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMainProps[typings.reachMenuButton.reachMenuButtonStrings.main]]]
+  def MenuLinkMain: ComponentType[MenuLinkMainProps[main]] = MenuLink_main.asInstanceOf[ComponentType[MenuLinkMainProps[main]]]
   @scala.inline
-  def MenuLinkMap: ComponentType[MenuLinkMapProps[map]] = typings.reachMenuButton.mod.MenuLink_map.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMapProps[typings.reachMenuButton.reachMenuButtonStrings.map]]]
+  def MenuLinkMap: ComponentType[MenuLinkMapProps[map]] = MenuLink_map.asInstanceOf[ComponentType[MenuLinkMapProps[map]]]
   @scala.inline
-  def MenuLinkMark: ComponentType[MenuLinkMarkProps[mark]] = typings.reachMenuButton.mod.MenuLink_mark.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMarkProps[typings.reachMenuButton.reachMenuButtonStrings.mark]]]
+  def MenuLinkMark: ComponentType[MenuLinkMarkProps[mark]] = MenuLink_mark.asInstanceOf[ComponentType[MenuLinkMarkProps[mark]]]
   @scala.inline
-  def MenuLinkMarker: ComponentType[MenuLinkMarkerProps[marker]] = typings.reachMenuButton.mod.MenuLink_marker.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMarkerProps[typings.reachMenuButton.reachMenuButtonStrings.marker]]]
+  def MenuLinkMarker: ComponentType[MenuLinkMarkerProps[marker]] = MenuLink_marker.asInstanceOf[ComponentType[MenuLinkMarkerProps[marker]]]
   @scala.inline
-  def MenuLinkMask: ComponentType[MenuLinkMaskProps[mask]] = typings.reachMenuButton.mod.MenuLink_mask.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMaskProps[typings.reachMenuButton.reachMenuButtonStrings.mask]]]
+  def MenuLinkMask: ComponentType[MenuLinkMaskProps[mask]] = MenuLink_mask.asInstanceOf[ComponentType[MenuLinkMaskProps[mask]]]
   @scala.inline
-  def MenuLinkMenu: ComponentType[MenuLinkMenuProps[menu]] = typings.reachMenuButton.mod.MenuLink_menu.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMenuProps[typings.reachMenuButton.reachMenuButtonStrings.menu]]]
+  def MenuLinkMenu: ComponentType[MenuLinkMenuProps[menu]] = MenuLink_menu.asInstanceOf[ComponentType[MenuLinkMenuProps[menu]]]
   @scala.inline
-  def MenuLinkMenuitem: ComponentType[MenuLinkMenuitemProps[menuitem]] = typings.reachMenuButton.mod.MenuLink_menuitem.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMenuitemProps[typings.reachMenuButton.reachMenuButtonStrings.menuitem]]]
+  def MenuLinkMenuitem: ComponentType[MenuLinkMenuitemProps[menuitem]] = MenuLink_menuitem.asInstanceOf[ComponentType[MenuLinkMenuitemProps[menuitem]]]
   @scala.inline
-  def MenuLinkMeta: ComponentType[MenuLinkMetaProps[meta]] = typings.reachMenuButton.mod.MenuLink_meta.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMetaProps[typings.reachMenuButton.reachMenuButtonStrings.meta]]]
+  def MenuLinkMeta: ComponentType[MenuLinkMetaProps[meta]] = MenuLink_meta.asInstanceOf[ComponentType[MenuLinkMetaProps[meta]]]
   @scala.inline
-  def MenuLinkMetadata: ComponentType[MenuLinkMetadataProps[metadata]] = typings.reachMenuButton.mod.MenuLink_metadata.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMetadataProps[typings.reachMenuButton.reachMenuButtonStrings.metadata]]]
+  def MenuLinkMetadata: ComponentType[MenuLinkMetadataProps[metadata]] = MenuLink_metadata.asInstanceOf[ComponentType[MenuLinkMetadataProps[metadata]]]
   @scala.inline
-  def MenuLinkMeter: ComponentType[MenuLinkMeterProps[meter]] = typings.reachMenuButton.mod.MenuLink_meter.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMeterProps[typings.reachMenuButton.reachMenuButtonStrings.meter]]]
+  def MenuLinkMeter: ComponentType[MenuLinkMeterProps[meter]] = MenuLink_meter.asInstanceOf[ComponentType[MenuLinkMeterProps[meter]]]
   @scala.inline
-  def MenuLinkMpath: ComponentType[MenuLinkMpathProps[mpath]] = typings.reachMenuButton.mod.MenuLink_mpath.asInstanceOf[typings.react.mod.ComponentType[MenuLinkMpathProps[typings.reachMenuButton.reachMenuButtonStrings.mpath]]]
+  def MenuLinkMpath: ComponentType[MenuLinkMpathProps[mpath]] = MenuLink_mpath.asInstanceOf[ComponentType[MenuLinkMpathProps[mpath]]]
   @scala.inline
-  def MenuLinkNav: ComponentType[MenuLinkNavProps[nav]] = typings.reachMenuButton.mod.MenuLink_nav.asInstanceOf[typings.react.mod.ComponentType[MenuLinkNavProps[typings.reachMenuButton.reachMenuButtonStrings.nav]]]
+  def MenuLinkNav: ComponentType[MenuLinkNavProps[nav]] = MenuLink_nav.asInstanceOf[ComponentType[MenuLinkNavProps[nav]]]
   @scala.inline
-  def MenuLinkNoindex: ComponentType[MenuLinkNoindexProps[noindex]] = typings.reachMenuButton.mod.MenuLink_noindex.asInstanceOf[typings.react.mod.ComponentType[MenuLinkNoindexProps[typings.reachMenuButton.reachMenuButtonStrings.noindex]]]
+  def MenuLinkNoindex: ComponentType[MenuLinkNoindexProps[noindex]] = MenuLink_noindex.asInstanceOf[ComponentType[MenuLinkNoindexProps[noindex]]]
   @scala.inline
-  def MenuLinkNoscript: ComponentType[MenuLinkNoscriptProps[noscript]] = typings.reachMenuButton.mod.MenuLink_noscript.asInstanceOf[typings.react.mod.ComponentType[MenuLinkNoscriptProps[typings.reachMenuButton.reachMenuButtonStrings.noscript]]]
+  def MenuLinkNoscript: ComponentType[MenuLinkNoscriptProps[noscript]] = MenuLink_noscript.asInstanceOf[ComponentType[MenuLinkNoscriptProps[noscript]]]
   @scala.inline
-  def MenuLinkObject: ComponentType[MenuLinkObjectProps[`object`]] = typings.reachMenuButton.mod.MenuLink_object.asInstanceOf[typings.react.mod.ComponentType[MenuLinkObjectProps[typings.reachMenuButton.reachMenuButtonStrings.`object`]]]
+  def MenuLinkObject: ComponentType[MenuLinkObjectProps[`object`]] = MenuLink_object.asInstanceOf[ComponentType[MenuLinkObjectProps[`object`]]]
   @scala.inline
-  def MenuLinkOl: ComponentType[MenuLinkOlProps[ol]] = typings.reachMenuButton.mod.MenuLink_ol.asInstanceOf[typings.react.mod.ComponentType[MenuLinkOlProps[typings.reachMenuButton.reachMenuButtonStrings.ol]]]
+  def MenuLinkOl: ComponentType[MenuLinkOlProps[ol]] = MenuLink_ol.asInstanceOf[ComponentType[MenuLinkOlProps[ol]]]
   @scala.inline
-  def MenuLinkOptgroup: ComponentType[MenuLinkOptgroupProps[optgroup]] = typings.reachMenuButton.mod.MenuLink_optgroup.asInstanceOf[typings.react.mod.ComponentType[MenuLinkOptgroupProps[typings.reachMenuButton.reachMenuButtonStrings.optgroup]]]
+  def MenuLinkOptgroup: ComponentType[MenuLinkOptgroupProps[optgroup]] = MenuLink_optgroup.asInstanceOf[ComponentType[MenuLinkOptgroupProps[optgroup]]]
   @scala.inline
-  def MenuLinkOption: ComponentType[MenuLinkOptionProps[option]] = typings.reachMenuButton.mod.MenuLink_option.asInstanceOf[typings.react.mod.ComponentType[MenuLinkOptionProps[typings.reachMenuButton.reachMenuButtonStrings.option]]]
+  def MenuLinkOption: ComponentType[MenuLinkOptionProps[option]] = MenuLink_option.asInstanceOf[ComponentType[MenuLinkOptionProps[option]]]
   @scala.inline
-  def MenuLinkOutput: ComponentType[MenuLinkOutputProps[output]] = typings.reachMenuButton.mod.MenuLink_output.asInstanceOf[typings.react.mod.ComponentType[MenuLinkOutputProps[typings.reachMenuButton.reachMenuButtonStrings.output]]]
+  def MenuLinkOutput: ComponentType[MenuLinkOutputProps[output]] = MenuLink_output.asInstanceOf[ComponentType[MenuLinkOutputProps[output]]]
   @scala.inline
-  def MenuLinkP: ComponentType[MenuLinkPProps[p]] = typings.reachMenuButton.mod.MenuLink_p.asInstanceOf[typings.react.mod.ComponentType[MenuLinkPProps[typings.reachMenuButton.reachMenuButtonStrings.p]]]
+  def MenuLinkP: ComponentType[MenuLinkPProps[p]] = MenuLink_p.asInstanceOf[ComponentType[MenuLinkPProps[p]]]
   @scala.inline
-  def MenuLinkParam: ComponentType[MenuLinkParamProps[param]] = typings.reachMenuButton.mod.MenuLink_param.asInstanceOf[typings.react.mod.ComponentType[MenuLinkParamProps[typings.reachMenuButton.reachMenuButtonStrings.param]]]
+  def MenuLinkParam: ComponentType[MenuLinkParamProps[param]] = MenuLink_param.asInstanceOf[ComponentType[MenuLinkParamProps[param]]]
   @scala.inline
-  def MenuLinkPath: ComponentType[MenuLinkPathProps[path]] = typings.reachMenuButton.mod.MenuLink_path.asInstanceOf[typings.react.mod.ComponentType[MenuLinkPathProps[typings.reachMenuButton.reachMenuButtonStrings.path]]]
+  def MenuLinkPath: ComponentType[MenuLinkPathProps[path]] = MenuLink_path.asInstanceOf[ComponentType[MenuLinkPathProps[path]]]
   @scala.inline
-  def MenuLinkPattern: ComponentType[MenuLinkPatternProps[pattern]] = typings.reachMenuButton.mod.MenuLink_pattern.asInstanceOf[typings.react.mod.ComponentType[MenuLinkPatternProps[typings.reachMenuButton.reachMenuButtonStrings.pattern]]]
+  def MenuLinkPattern: ComponentType[MenuLinkPatternProps[pattern]] = MenuLink_pattern.asInstanceOf[ComponentType[MenuLinkPatternProps[pattern]]]
   @scala.inline
-  def MenuLinkPicture: ComponentType[MenuLinkPictureProps[picture]] = typings.reachMenuButton.mod.MenuLink_picture.asInstanceOf[typings.react.mod.ComponentType[MenuLinkPictureProps[typings.reachMenuButton.reachMenuButtonStrings.picture]]]
+  def MenuLinkPicture: ComponentType[MenuLinkPictureProps[picture]] = MenuLink_picture.asInstanceOf[ComponentType[MenuLinkPictureProps[picture]]]
   @scala.inline
-  def MenuLinkPolygon: ComponentType[MenuLinkPolygonProps[polygon]] = typings.reachMenuButton.mod.MenuLink_polygon.asInstanceOf[typings.react.mod.ComponentType[MenuLinkPolygonProps[typings.reachMenuButton.reachMenuButtonStrings.polygon]]]
+  def MenuLinkPolygon: ComponentType[MenuLinkPolygonProps[polygon]] = MenuLink_polygon.asInstanceOf[ComponentType[MenuLinkPolygonProps[polygon]]]
   @scala.inline
-  def MenuLinkPolyline: ComponentType[MenuLinkPolylineProps[polyline]] = typings.reachMenuButton.mod.MenuLink_polyline.asInstanceOf[typings.react.mod.ComponentType[MenuLinkPolylineProps[typings.reachMenuButton.reachMenuButtonStrings.polyline]]]
+  def MenuLinkPolyline: ComponentType[MenuLinkPolylineProps[polyline]] = MenuLink_polyline.asInstanceOf[ComponentType[MenuLinkPolylineProps[polyline]]]
   @scala.inline
-  def MenuLinkPre: ComponentType[MenuLinkPreProps[pre]] = typings.reachMenuButton.mod.MenuLink_pre.asInstanceOf[typings.react.mod.ComponentType[MenuLinkPreProps[typings.reachMenuButton.reachMenuButtonStrings.pre]]]
+  def MenuLinkPre: ComponentType[MenuLinkPreProps[pre]] = MenuLink_pre.asInstanceOf[ComponentType[MenuLinkPreProps[pre]]]
   @scala.inline
-  def MenuLinkProgress: ComponentType[MenuLinkProgressProps[progress]] = typings.reachMenuButton.mod.MenuLink_progress.asInstanceOf[typings.react.mod.ComponentType[MenuLinkProgressProps[typings.reachMenuButton.reachMenuButtonStrings.progress]]]
+  def MenuLinkProgress: ComponentType[MenuLinkProgressProps[progress]] = MenuLink_progress.asInstanceOf[ComponentType[MenuLinkProgressProps[progress]]]
   @scala.inline
-  def MenuLinkQ: ComponentType[MenuLinkQProps[q]] = typings.reachMenuButton.mod.MenuLink_q.asInstanceOf[typings.react.mod.ComponentType[MenuLinkQProps[typings.reachMenuButton.reachMenuButtonStrings.q]]]
+  def MenuLinkQ: ComponentType[MenuLinkQProps[q]] = MenuLink_q.asInstanceOf[ComponentType[MenuLinkQProps[q]]]
   @scala.inline
-  def MenuLinkRadialGradient: ComponentType[MenuLinkRadialGradientProps[radialGradient]] = typings.reachMenuButton.mod.MenuLink_radialGradient.asInstanceOf[typings.react.mod.ComponentType[
-  MenuLinkRadialGradientProps[typings.reachMenuButton.reachMenuButtonStrings.radialGradient]]]
+  def MenuLinkRadialGradient: ComponentType[MenuLinkRadialGradientProps[radialGradient]] = MenuLink_radialGradient.asInstanceOf[ComponentType[MenuLinkRadialGradientProps[radialGradient]]]
   @scala.inline
-  def MenuLinkRect: ComponentType[MenuLinkRectProps[rect]] = typings.reachMenuButton.mod.MenuLink_rect.asInstanceOf[typings.react.mod.ComponentType[MenuLinkRectProps[typings.reachMenuButton.reachMenuButtonStrings.rect]]]
+  def MenuLinkRect: ComponentType[MenuLinkRectProps[rect]] = MenuLink_rect.asInstanceOf[ComponentType[MenuLinkRectProps[rect]]]
   @scala.inline
-  def MenuLinkRp: ComponentType[MenuLinkRpProps[rp]] = typings.reachMenuButton.mod.MenuLink_rp.asInstanceOf[typings.react.mod.ComponentType[MenuLinkRpProps[typings.reachMenuButton.reachMenuButtonStrings.rp]]]
+  def MenuLinkRp: ComponentType[MenuLinkRpProps[rp]] = MenuLink_rp.asInstanceOf[ComponentType[MenuLinkRpProps[rp]]]
   @scala.inline
-  def MenuLinkRt: ComponentType[MenuLinkRtProps[rt]] = typings.reachMenuButton.mod.MenuLink_rt.asInstanceOf[typings.react.mod.ComponentType[MenuLinkRtProps[typings.reachMenuButton.reachMenuButtonStrings.rt]]]
+  def MenuLinkRt: ComponentType[MenuLinkRtProps[rt]] = MenuLink_rt.asInstanceOf[ComponentType[MenuLinkRtProps[rt]]]
   @scala.inline
-  def MenuLinkRuby: ComponentType[MenuLinkRubyProps[ruby]] = typings.reachMenuButton.mod.MenuLink_ruby.asInstanceOf[typings.react.mod.ComponentType[MenuLinkRubyProps[typings.reachMenuButton.reachMenuButtonStrings.ruby]]]
+  def MenuLinkRuby: ComponentType[MenuLinkRubyProps[ruby]] = MenuLink_ruby.asInstanceOf[ComponentType[MenuLinkRubyProps[ruby]]]
   @scala.inline
-  def MenuLinkS: ComponentType[MenuLinkSProps[s]] = typings.reachMenuButton.mod.MenuLink_s.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSProps[typings.reachMenuButton.reachMenuButtonStrings.s]]]
+  def MenuLinkS: ComponentType[MenuLinkSProps[s]] = MenuLink_s.asInstanceOf[ComponentType[MenuLinkSProps[s]]]
   @scala.inline
-  def MenuLinkSamp: ComponentType[MenuLinkSampProps[samp]] = typings.reachMenuButton.mod.MenuLink_samp.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSampProps[typings.reachMenuButton.reachMenuButtonStrings.samp]]]
+  def MenuLinkSamp: ComponentType[MenuLinkSampProps[samp]] = MenuLink_samp.asInstanceOf[ComponentType[MenuLinkSampProps[samp]]]
   @scala.inline
-  def MenuLinkScript: ComponentType[MenuLinkScriptProps[script]] = typings.reachMenuButton.mod.MenuLink_script.asInstanceOf[typings.react.mod.ComponentType[MenuLinkScriptProps[typings.reachMenuButton.reachMenuButtonStrings.script]]]
+  def MenuLinkScript: ComponentType[MenuLinkScriptProps[script]] = MenuLink_script.asInstanceOf[ComponentType[MenuLinkScriptProps[script]]]
   @scala.inline
-  def MenuLinkSection: ComponentType[MenuLinkSectionProps[section]] = typings.reachMenuButton.mod.MenuLink_section.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSectionProps[typings.reachMenuButton.reachMenuButtonStrings.section]]]
+  def MenuLinkSection: ComponentType[MenuLinkSectionProps[section]] = MenuLink_section.asInstanceOf[ComponentType[MenuLinkSectionProps[section]]]
   @scala.inline
-  def MenuLinkSelect: ComponentType[MenuLinkSelectProps[select]] = typings.reachMenuButton.mod.MenuLink_select.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSelectProps[typings.reachMenuButton.reachMenuButtonStrings.select]]]
+  def MenuLinkSelect: ComponentType[MenuLinkSelectProps[select]] = MenuLink_select.asInstanceOf[ComponentType[MenuLinkSelectProps[select]]]
   @scala.inline
-  def MenuLinkSlot: ComponentType[MenuLinkSlotProps[slot]] = typings.reachMenuButton.mod.MenuLink_slot.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSlotProps[typings.reachMenuButton.reachMenuButtonStrings.slot]]]
+  def MenuLinkSlot: ComponentType[MenuLinkSlotProps[slot]] = MenuLink_slot.asInstanceOf[ComponentType[MenuLinkSlotProps[slot]]]
   @scala.inline
-  def MenuLinkSmall: ComponentType[MenuLinkSmallProps[small]] = typings.reachMenuButton.mod.MenuLink_small.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSmallProps[typings.reachMenuButton.reachMenuButtonStrings.small]]]
+  def MenuLinkSmall: ComponentType[MenuLinkSmallProps[small]] = MenuLink_small.asInstanceOf[ComponentType[MenuLinkSmallProps[small]]]
   @scala.inline
-  def MenuLinkSource: ComponentType[MenuLinkSourceProps[source]] = typings.reachMenuButton.mod.MenuLink_source.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSourceProps[typings.reachMenuButton.reachMenuButtonStrings.source]]]
+  def MenuLinkSource: ComponentType[MenuLinkSourceProps[source]] = MenuLink_source.asInstanceOf[ComponentType[MenuLinkSourceProps[source]]]
   @scala.inline
-  def MenuLinkSpan: ComponentType[MenuLinkSpanProps[span]] = typings.reachMenuButton.mod.MenuLink_span.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSpanProps[typings.reachMenuButton.reachMenuButtonStrings.span]]]
+  def MenuLinkSpan: ComponentType[MenuLinkSpanProps[span]] = MenuLink_span.asInstanceOf[ComponentType[MenuLinkSpanProps[span]]]
   @scala.inline
-  def MenuLinkStop: ComponentType[MenuLinkStopProps[stop]] = typings.reachMenuButton.mod.MenuLink_stop.asInstanceOf[typings.react.mod.ComponentType[MenuLinkStopProps[typings.reachMenuButton.reachMenuButtonStrings.stop]]]
+  def MenuLinkStop: ComponentType[MenuLinkStopProps[stop]] = MenuLink_stop.asInstanceOf[ComponentType[MenuLinkStopProps[stop]]]
   @scala.inline
-  def MenuLinkStrong: ComponentType[MenuLinkStrongProps[strong]] = typings.reachMenuButton.mod.MenuLink_strong.asInstanceOf[typings.react.mod.ComponentType[MenuLinkStrongProps[typings.reachMenuButton.reachMenuButtonStrings.strong]]]
+  def MenuLinkStrong: ComponentType[MenuLinkStrongProps[strong]] = MenuLink_strong.asInstanceOf[ComponentType[MenuLinkStrongProps[strong]]]
   @scala.inline
-  def MenuLinkStyle: ComponentType[MenuLinkStyleProps[style]] = typings.reachMenuButton.mod.MenuLink_style.asInstanceOf[typings.react.mod.ComponentType[MenuLinkStyleProps[typings.reachMenuButton.reachMenuButtonStrings.style]]]
+  def MenuLinkStyle: ComponentType[MenuLinkStyleProps[style]] = MenuLink_style.asInstanceOf[ComponentType[MenuLinkStyleProps[style]]]
   @scala.inline
-  def MenuLinkSub: ComponentType[MenuLinkSubProps[sub]] = typings.reachMenuButton.mod.MenuLink_sub.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSubProps[typings.reachMenuButton.reachMenuButtonStrings.sub]]]
+  def MenuLinkSub: ComponentType[MenuLinkSubProps[sub]] = MenuLink_sub.asInstanceOf[ComponentType[MenuLinkSubProps[sub]]]
   @scala.inline
-  def MenuLinkSummary: ComponentType[MenuLinkSummaryProps[summary]] = typings.reachMenuButton.mod.MenuLink_summary.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSummaryProps[typings.reachMenuButton.reachMenuButtonStrings.summary]]]
+  def MenuLinkSummary: ComponentType[MenuLinkSummaryProps[summary]] = MenuLink_summary.asInstanceOf[ComponentType[MenuLinkSummaryProps[summary]]]
   @scala.inline
-  def MenuLinkSup: ComponentType[MenuLinkSupProps[sup]] = typings.reachMenuButton.mod.MenuLink_sup.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSupProps[typings.reachMenuButton.reachMenuButtonStrings.sup]]]
+  def MenuLinkSup: ComponentType[MenuLinkSupProps[sup]] = MenuLink_sup.asInstanceOf[ComponentType[MenuLinkSupProps[sup]]]
   @scala.inline
-  def MenuLinkSvg: ComponentType[MenuLinkSvgProps[svg]] = typings.reachMenuButton.mod.MenuLink_svg.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSvgProps[typings.reachMenuButton.reachMenuButtonStrings.svg]]]
+  def MenuLinkSvg: ComponentType[MenuLinkSvgProps[svg]] = MenuLink_svg.asInstanceOf[ComponentType[MenuLinkSvgProps[svg]]]
   @scala.inline
-  def MenuLinkSwitch: ComponentType[MenuLinkSwitchProps[switch]] = typings.reachMenuButton.mod.MenuLink_switch.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSwitchProps[typings.reachMenuButton.reachMenuButtonStrings.switch]]]
+  def MenuLinkSwitch: ComponentType[MenuLinkSwitchProps[switch]] = MenuLink_switch.asInstanceOf[ComponentType[MenuLinkSwitchProps[switch]]]
   @scala.inline
-  def MenuLinkSymbol: ComponentType[MenuLinkSymbolProps[symbol]] = typings.reachMenuButton.mod.MenuLink_symbol.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSymbolProps[typings.reachMenuButton.reachMenuButtonStrings.symbol]]]
+  def MenuLinkSymbol: ComponentType[MenuLinkSymbolProps[symbol]] = MenuLink_symbol.asInstanceOf[ComponentType[MenuLinkSymbolProps[symbol]]]
   @scala.inline
-  def MenuLinkTable: ComponentType[MenuLinkTableProps[table]] = typings.reachMenuButton.mod.MenuLink_table.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTableProps[typings.reachMenuButton.reachMenuButtonStrings.table]]]
+  def MenuLinkTable: ComponentType[MenuLinkTableProps[table]] = MenuLink_table.asInstanceOf[ComponentType[MenuLinkTableProps[table]]]
   @scala.inline
-  def MenuLinkTbody: ComponentType[MenuLinkTbodyProps[tbody]] = typings.reachMenuButton.mod.MenuLink_tbody.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTbodyProps[typings.reachMenuButton.reachMenuButtonStrings.tbody]]]
+  def MenuLinkTbody: ComponentType[MenuLinkTbodyProps[tbody]] = MenuLink_tbody.asInstanceOf[ComponentType[MenuLinkTbodyProps[tbody]]]
   @scala.inline
-  def MenuLinkTd: ComponentType[MenuLinkTdProps[td]] = typings.reachMenuButton.mod.MenuLink_td.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTdProps[typings.reachMenuButton.reachMenuButtonStrings.td]]]
+  def MenuLinkTd: ComponentType[MenuLinkTdProps[td]] = MenuLink_td.asInstanceOf[ComponentType[MenuLinkTdProps[td]]]
   @scala.inline
-  def MenuLinkTemplate: ComponentType[MenuLinkTemplateProps[template]] = typings.reachMenuButton.mod.MenuLink_template.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTemplateProps[typings.reachMenuButton.reachMenuButtonStrings.template]]]
+  def MenuLinkTemplate: ComponentType[MenuLinkTemplateProps[template]] = MenuLink_template.asInstanceOf[ComponentType[MenuLinkTemplateProps[template]]]
   @scala.inline
-  def MenuLinkText: ComponentType[MenuLinkTextProps[text]] = typings.reachMenuButton.mod.MenuLink_text.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTextProps[typings.reachMenuButton.reachMenuButtonStrings.text]]]
+  def MenuLinkText: ComponentType[MenuLinkTextProps[text]] = MenuLink_text.asInstanceOf[ComponentType[MenuLinkTextProps[text]]]
   @scala.inline
-  def MenuLinkTextPath: ComponentType[MenuLinkTextPathProps[textPath]] = typings.reachMenuButton.mod.MenuLink_textPath.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTextPathProps[typings.reachMenuButton.reachMenuButtonStrings.textPath]]]
+  def MenuLinkTextPath: ComponentType[MenuLinkTextPathProps[textPath]] = MenuLink_textPath.asInstanceOf[ComponentType[MenuLinkTextPathProps[textPath]]]
   @scala.inline
-  def MenuLinkTextarea: ComponentType[MenuLinkTextareaProps[textarea]] = typings.reachMenuButton.mod.MenuLink_textarea.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTextareaProps[typings.reachMenuButton.reachMenuButtonStrings.textarea]]]
+  def MenuLinkTextarea: ComponentType[MenuLinkTextareaProps[textarea]] = MenuLink_textarea.asInstanceOf[ComponentType[MenuLinkTextareaProps[textarea]]]
   @scala.inline
-  def MenuLinkTfoot: ComponentType[MenuLinkTfootProps[tfoot]] = typings.reachMenuButton.mod.MenuLink_tfoot.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTfootProps[typings.reachMenuButton.reachMenuButtonStrings.tfoot]]]
+  def MenuLinkTfoot: ComponentType[MenuLinkTfootProps[tfoot]] = MenuLink_tfoot.asInstanceOf[ComponentType[MenuLinkTfootProps[tfoot]]]
   @scala.inline
-  def MenuLinkTh: ComponentType[MenuLinkThProps[th]] = typings.reachMenuButton.mod.MenuLink_th.asInstanceOf[typings.react.mod.ComponentType[MenuLinkThProps[typings.reachMenuButton.reachMenuButtonStrings.th]]]
+  def MenuLinkTh: ComponentType[MenuLinkThProps[th]] = MenuLink_th.asInstanceOf[ComponentType[MenuLinkThProps[th]]]
   @scala.inline
-  def MenuLinkThead: ComponentType[MenuLinkTheadProps[thead]] = typings.reachMenuButton.mod.MenuLink_thead.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTheadProps[typings.reachMenuButton.reachMenuButtonStrings.thead]]]
+  def MenuLinkThead: ComponentType[MenuLinkTheadProps[thead]] = MenuLink_thead.asInstanceOf[ComponentType[MenuLinkTheadProps[thead]]]
   @scala.inline
-  def MenuLinkTime: ComponentType[MenuLinkTimeProps[time]] = typings.reachMenuButton.mod.MenuLink_time.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTimeProps[typings.reachMenuButton.reachMenuButtonStrings.time]]]
+  def MenuLinkTime: ComponentType[MenuLinkTimeProps[time]] = MenuLink_time.asInstanceOf[ComponentType[MenuLinkTimeProps[time]]]
   @scala.inline
-  def MenuLinkTitle: ComponentType[MenuLinkTitleProps[title]] = typings.reachMenuButton.mod.MenuLink_title.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTitleProps[typings.reachMenuButton.reachMenuButtonStrings.title]]]
+  def MenuLinkTitle: ComponentType[MenuLinkTitleProps[title]] = MenuLink_title.asInstanceOf[ComponentType[MenuLinkTitleProps[title]]]
   @scala.inline
-  def MenuLinkTr: ComponentType[MenuLinkTrProps[tr]] = typings.reachMenuButton.mod.MenuLink_tr.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTrProps[typings.reachMenuButton.reachMenuButtonStrings.tr]]]
+  def MenuLinkTr: ComponentType[MenuLinkTrProps[tr]] = MenuLink_tr.asInstanceOf[ComponentType[MenuLinkTrProps[tr]]]
   @scala.inline
-  def MenuLinkTrack: ComponentType[MenuLinkTrackProps[track]] = typings.reachMenuButton.mod.MenuLink_track.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTrackProps[typings.reachMenuButton.reachMenuButtonStrings.track]]]
+  def MenuLinkTrack: ComponentType[MenuLinkTrackProps[track]] = MenuLink_track.asInstanceOf[ComponentType[MenuLinkTrackProps[track]]]
   @scala.inline
-  def MenuLinkTspan: ComponentType[MenuLinkTspanProps[tspan]] = typings.reachMenuButton.mod.MenuLink_tspan.asInstanceOf[typings.react.mod.ComponentType[MenuLinkTspanProps[typings.reachMenuButton.reachMenuButtonStrings.tspan]]]
+  def MenuLinkTspan: ComponentType[MenuLinkTspanProps[tspan]] = MenuLink_tspan.asInstanceOf[ComponentType[MenuLinkTspanProps[tspan]]]
   @scala.inline
-  def MenuLinkU: ComponentType[MenuLinkUProps[u]] = typings.reachMenuButton.mod.MenuLink_u.asInstanceOf[typings.react.mod.ComponentType[MenuLinkUProps[typings.reachMenuButton.reachMenuButtonStrings.u]]]
+  def MenuLinkU: ComponentType[MenuLinkUProps[u]] = MenuLink_u.asInstanceOf[ComponentType[MenuLinkUProps[u]]]
   @scala.inline
-  def MenuLinkUl: ComponentType[MenuLinkUlProps[ul]] = typings.reachMenuButton.mod.MenuLink_ul.asInstanceOf[typings.react.mod.ComponentType[MenuLinkUlProps[typings.reachMenuButton.reachMenuButtonStrings.ul]]]
+  def MenuLinkUl: ComponentType[MenuLinkUlProps[ul]] = MenuLink_ul.asInstanceOf[ComponentType[MenuLinkUlProps[ul]]]
   @scala.inline
-  def MenuLinkUse: ComponentType[MenuLinkUseProps[use]] = typings.reachMenuButton.mod.MenuLink_use.asInstanceOf[typings.react.mod.ComponentType[MenuLinkUseProps[typings.reachMenuButton.reachMenuButtonStrings.use]]]
+  def MenuLinkUse: ComponentType[MenuLinkUseProps[use]] = MenuLink_use.asInstanceOf[ComponentType[MenuLinkUseProps[use]]]
   @scala.inline
-  def MenuLinkVar: ComponentType[MenuLinkVarProps[`var`]] = typings.reachMenuButton.mod.MenuLink_var.asInstanceOf[typings.react.mod.ComponentType[MenuLinkVarProps[typings.reachMenuButton.reachMenuButtonStrings.`var`]]]
+  def MenuLinkVar: ComponentType[MenuLinkVarProps[`var`]] = MenuLink_var.asInstanceOf[ComponentType[MenuLinkVarProps[`var`]]]
   @scala.inline
-  def MenuLinkVideo: ComponentType[MenuLinkVideoProps[video]] = typings.reachMenuButton.mod.MenuLink_video.asInstanceOf[typings.react.mod.ComponentType[MenuLinkVideoProps[typings.reachMenuButton.reachMenuButtonStrings.video]]]
+  def MenuLinkVideo: ComponentType[MenuLinkVideoProps[video]] = MenuLink_video.asInstanceOf[ComponentType[MenuLinkVideoProps[video]]]
   @scala.inline
-  def MenuLinkView: ComponentType[MenuLinkViewProps[view]] = typings.reachMenuButton.mod.MenuLink_view.asInstanceOf[typings.react.mod.ComponentType[MenuLinkViewProps[typings.reachMenuButton.reachMenuButtonStrings.view]]]
+  def MenuLinkView: ComponentType[MenuLinkViewProps[view]] = MenuLink_view.asInstanceOf[ComponentType[MenuLinkViewProps[view]]]
   @scala.inline
-  def MenuLinkWbr: ComponentType[MenuLinkWbrProps[wbr]] = typings.reachMenuButton.mod.MenuLink_wbr.asInstanceOf[typings.react.mod.ComponentType[MenuLinkWbrProps[typings.reachMenuButton.reachMenuButtonStrings.wbr]]]
+  def MenuLinkWbr: ComponentType[MenuLinkWbrProps[wbr]] = MenuLink_wbr.asInstanceOf[ComponentType[MenuLinkWbrProps[wbr]]]
   @scala.inline
-  def MenuLinkWebview: ComponentType[MenuLinkWebviewProps[webview]] = typings.reachMenuButton.mod.MenuLink_webview.asInstanceOf[typings.react.mod.ComponentType[MenuLinkWebviewProps[typings.reachMenuButton.reachMenuButtonStrings.webview]]]
+  def MenuLinkWebview: ComponentType[MenuLinkWebviewProps[webview]] = MenuLink_webview.asInstanceOf[ComponentType[MenuLinkWebviewProps[webview]]]
   @scala.inline
-  def MenuList: ComponentType[MenuListProps] = typings.reachMenuButton.mod.MenuList.asInstanceOf[typings.react.mod.ComponentType[MenuListProps]]
+  def MenuList: ComponentType[MenuListProps] = typings.reachMenuButton.mod.MenuList.asInstanceOf[ComponentType[MenuListProps]]
 }
 

@@ -20,7 +20,6 @@ object DescribeUserHierarchyGroupRequest {
   @scala.inline
   def apply(HierarchyGroupId: HierarchyGroupId, InstanceId: InstanceId): DescribeUserHierarchyGroupRequest = {
     val __obj = js.Dynamic.literal(HierarchyGroupId = HierarchyGroupId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeUserHierarchyGroupRequest]
   }
 }

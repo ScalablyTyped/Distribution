@@ -22,7 +22,6 @@ object PlaceReview {
     text: String
   ): PlaceReview = {
     val __obj = js.Dynamic.literal(aspects = aspects.asInstanceOf[js.Any], author_name = author_name.asInstanceOf[js.Any], author_url = author_url.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaceReview]
   }
 }

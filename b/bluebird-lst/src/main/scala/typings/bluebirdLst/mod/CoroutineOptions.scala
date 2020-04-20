@@ -12,7 +12,6 @@ object CoroutineOptions {
   @scala.inline
   def apply(yieldHandler: js.Any => js.Any): CoroutineOptions = {
     val __obj = js.Dynamic.literal(yieldHandler = js.Any.fromFunction1(yieldHandler))
-  
     __obj.asInstanceOf[CoroutineOptions]
   }
 }

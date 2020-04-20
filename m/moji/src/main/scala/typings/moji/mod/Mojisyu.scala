@@ -18,22 +18,20 @@ trait Mojisyu extends js.Object
 
 object Mojisyu {
   @scala.inline
-  def HE: typings.moji.mojiStrings.HE = this.cast("HE")
+  def HE: typings.moji.mojiStrings.HE = "HE".asInstanceOf[typings.moji.mojiStrings.HE]
   @scala.inline
-  def HG: typings.moji.mojiStrings.HG = this.cast("HG")
+  def HG: typings.moji.mojiStrings.HG = "HG".asInstanceOf[typings.moji.mojiStrings.HG]
   @scala.inline
-  def HK: typings.moji.mojiStrings.HK = this.cast("HK")
+  def HK: typings.moji.mojiStrings.HK = "HK".asInstanceOf[typings.moji.mojiStrings.HK]
   @scala.inline
-  def HS: typings.moji.mojiStrings.HS = this.cast("HS")
+  def HS: typings.moji.mojiStrings.HS = "HS".asInstanceOf[typings.moji.mojiStrings.HS]
   @scala.inline
-  def KK: typings.moji.mojiStrings.KK = this.cast("KK")
+  def KK: typings.moji.mojiStrings.KK = "KK".asInstanceOf[typings.moji.mojiStrings.KK]
   @scala.inline
-  def ZE: typings.moji.mojiStrings.ZE = this.cast("ZE")
+  def ZE: typings.moji.mojiStrings.ZE = "ZE".asInstanceOf[typings.moji.mojiStrings.ZE]
   @scala.inline
-  def ZK: typings.moji.mojiStrings.ZK = this.cast("ZK")
+  def ZK: typings.moji.mojiStrings.ZK = "ZK".asInstanceOf[typings.moji.mojiStrings.ZK]
   @scala.inline
-  def ZS: typings.moji.mojiStrings.ZS = this.cast("ZS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ZS: typings.moji.mojiStrings.ZS = "ZS".asInstanceOf[typings.moji.mojiStrings.ZS]
 }
 

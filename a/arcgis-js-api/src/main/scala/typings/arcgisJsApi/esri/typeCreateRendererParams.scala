@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -36,6 +37,14 @@ trait typeCreateRendererParams extends Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#createRenderer)
     */
   var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Indicates whether to add edges to the output renderer. This setting only applies to mesh SceneLayers.  **Possible Values:** solid | none
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#createRenderer)
+    *
+    * @default none
+    */
+  var edgesType: js.UndefOr[String] = js.undefined
   /**
     * The name of the field from which to extract unique values that will be used for the basis of the data-driven visualization. This property is ignored if a `valueExpression` is used.
     *
@@ -76,6 +85,12 @@ trait typeCreateRendererParams extends Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#createRenderer)
     */
   var returnAllCodedValues: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#createRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   /**
     * For point and polyline layers only. Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
@@ -158,11 +173,13 @@ object typeCreateRendererParams {
     basemap: String | Basemap = null,
     colorMixMode: String = null,
     defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined,
+    edgesType: String = null,
     field: String = null,
     legendOptions: typeCreateRendererParamsLegendOptions = null,
     numTypes: Int | Double = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     returnAllCodedValues: js.UndefOr[Boolean] = js.undefined,
+    signal: AbortSignal = null,
     sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     sortBy: String = null,
     statistics: UniqueValuesResult = null,
@@ -176,11 +193,13 @@ object typeCreateRendererParams {
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled.asInstanceOf[js.Any])
+    if (edgesType != null) __obj.updateDynamic("edgesType")(edgesType.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (numTypes != null) __obj.updateDynamic("numTypes")(numTypes.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(returnAllCodedValues)) __obj.updateDynamic("returnAllCodedValues")(returnAllCodedValues.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])

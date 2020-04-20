@@ -14,14 +14,12 @@ trait EditorAutoClosingStrategy extends js.Object
 
 object EditorAutoClosingStrategy {
   @scala.inline
-  def always: typings.monacoEditor.monacoEditorStrings.always = this.cast("always")
+  def always: typings.monacoEditor.monacoEditorStrings.always = "always".asInstanceOf[typings.monacoEditor.monacoEditorStrings.always]
   @scala.inline
-  def beforeWhitespace: typings.monacoEditor.monacoEditorStrings.beforeWhitespace = this.cast("beforeWhitespace")
+  def beforeWhitespace: typings.monacoEditor.monacoEditorStrings.beforeWhitespace = "beforeWhitespace".asInstanceOf[typings.monacoEditor.monacoEditorStrings.beforeWhitespace]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def languageDefined: typings.monacoEditor.monacoEditorStrings.languageDefined = "languageDefined".asInstanceOf[typings.monacoEditor.monacoEditorStrings.languageDefined]
   @scala.inline
-  def languageDefined: typings.monacoEditor.monacoEditorStrings.languageDefined = this.cast("languageDefined")
-  @scala.inline
-  def never: typings.monacoEditor.monacoEditorStrings.never = this.cast("never")
+  def never: typings.monacoEditor.monacoEditorStrings.never = "never".asInstanceOf[typings.monacoEditor.monacoEditorStrings.never]
 }
 

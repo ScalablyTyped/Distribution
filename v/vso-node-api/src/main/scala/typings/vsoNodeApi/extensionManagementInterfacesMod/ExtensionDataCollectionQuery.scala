@@ -15,7 +15,6 @@ object ExtensionDataCollectionQuery {
   @scala.inline
   def apply(collections: js.Array[ExtensionDataCollection]): ExtensionDataCollectionQuery = {
     val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionDataCollectionQuery]
   }
 }

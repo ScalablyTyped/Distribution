@@ -56,7 +56,6 @@ object MapPanes {
     overlayMouseTarget: Element
   ): MapPanes = {
     val __obj = js.Dynamic.literal(floatPane = floatPane.asInstanceOf[js.Any], mapPane = mapPane.asInstanceOf[js.Any], markerLayer = markerLayer.asInstanceOf[js.Any], overlayLayer = overlayLayer.asInstanceOf[js.Any], overlayMouseTarget = overlayMouseTarget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapPanes]
   }
 }

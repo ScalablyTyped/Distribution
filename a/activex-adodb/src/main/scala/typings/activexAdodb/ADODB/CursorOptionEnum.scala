@@ -36,32 +36,30 @@ trait CursorOptionEnum extends js.Object
 
 object CursorOptionEnum {
   @scala.inline
-  def adAddNew: `16778240` = this.cast(16778240)
+  def adAddNew: `16778240` = 16778240.asInstanceOf[`16778240`]
   @scala.inline
-  def adApproxPosition: `16384` = this.cast(16384)
+  def adApproxPosition: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
-  def adBookmark: `8192` = this.cast(8192)
+  def adBookmark: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def adDelete: `16779264` = this.cast(16779264)
+  def adDelete: `16779264` = 16779264.asInstanceOf[`16779264`]
   @scala.inline
-  def adFind: `524288` = this.cast(524288)
+  def adFind: `524288` = 524288.asInstanceOf[`524288`]
   @scala.inline
-  def adHoldRecords: `256` = this.cast(256)
+  def adHoldRecords: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def adIndex: `8388608` = this.cast(8388608)
+  def adIndex: `8388608` = 8388608.asInstanceOf[`8388608`]
   @scala.inline
-  def adMovePrevious: `512` = this.cast(512)
+  def adMovePrevious: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def adNotify: `262144` = this.cast(262144)
+  def adNotify: `262144` = 262144.asInstanceOf[`262144`]
   @scala.inline
-  def adResync: `131072` = this.cast(131072)
+  def adResync: `131072` = 131072.asInstanceOf[`131072`]
   @scala.inline
-  def adSeek: `4194304` = this.cast(4194304)
+  def adSeek: `4194304` = 4194304.asInstanceOf[`4194304`]
   @scala.inline
-  def adUpdate: `16809984` = this.cast(16809984)
+  def adUpdate: `16809984` = 16809984.asInstanceOf[`16809984`]
   @scala.inline
-  def adUpdateBatch: `65536` = this.cast(65536)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adUpdateBatch: `65536` = 65536.asInstanceOf[`65536`]
 }
 

@@ -32,7 +32,6 @@ object css3 {
   @scala.inline
   def apply(add: (js.Object, js.Object) => js.Any, name: (String, Boolean) => String): css3 = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), name = js.Any.fromFunction2(name))
-  
     __obj.asInstanceOf[css3]
   }
 }

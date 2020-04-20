@@ -16,7 +16,6 @@ object DeregisterManagedInstanceRequest {
   @scala.inline
   def apply(InstanceId: ManagedInstanceId): DeregisterManagedInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterManagedInstanceRequest]
   }
 }

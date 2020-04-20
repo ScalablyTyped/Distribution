@@ -12,7 +12,6 @@ object AnonShow {
   @scala.inline
   def apply(show: Boolean): AnonShow = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShow]
   }
 }

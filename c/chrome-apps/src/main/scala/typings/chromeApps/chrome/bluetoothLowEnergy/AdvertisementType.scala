@@ -12,10 +12,8 @@ trait AdvertisementType extends js.Object
 
 object AdvertisementType {
   @scala.inline
-  def broadcast: typings.chromeApps.chromeAppsStrings.broadcast = this.cast("broadcast")
+  def broadcast: typings.chromeApps.chromeAppsStrings.broadcast = "broadcast".asInstanceOf[typings.chromeApps.chromeAppsStrings.broadcast]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def peripheral: typings.chromeApps.chromeAppsStrings.peripheral = this.cast("peripheral")
+  def peripheral: typings.chromeApps.chromeAppsStrings.peripheral = "peripheral".asInstanceOf[typings.chromeApps.chromeAppsStrings.peripheral]
 }
 

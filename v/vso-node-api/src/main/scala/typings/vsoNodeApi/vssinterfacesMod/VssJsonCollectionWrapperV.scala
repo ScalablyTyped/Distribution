@@ -12,7 +12,6 @@ object VssJsonCollectionWrapperV {
   @scala.inline
   def apply[T](count: Double, value: T): VssJsonCollectionWrapperV[T] = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VssJsonCollectionWrapperV[T]]
   }
 }

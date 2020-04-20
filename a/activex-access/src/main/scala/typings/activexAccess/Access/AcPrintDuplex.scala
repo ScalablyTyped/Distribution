@@ -16,12 +16,10 @@ trait AcPrintDuplex extends js.Object
 
 object AcPrintDuplex {
   @scala.inline
-  def acPRDPHorizontal: `2` = this.cast(2)
+  def acPRDPHorizontal: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acPRDPSimplex: `1` = this.cast(1)
+  def acPRDPSimplex: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acPRDPVertical: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acPRDPVertical: `3` = 3.asInstanceOf[`3`]
 }
 

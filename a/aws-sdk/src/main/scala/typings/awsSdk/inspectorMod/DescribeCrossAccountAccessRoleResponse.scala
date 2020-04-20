@@ -24,7 +24,6 @@ object DescribeCrossAccountAccessRoleResponse {
   @scala.inline
   def apply(registeredAt: Timestamp, roleArn: Arn, valid: Bool): DescribeCrossAccountAccessRoleResponse = {
     val __obj = js.Dynamic.literal(registeredAt = registeredAt.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeCrossAccountAccessRoleResponse]
   }
 }

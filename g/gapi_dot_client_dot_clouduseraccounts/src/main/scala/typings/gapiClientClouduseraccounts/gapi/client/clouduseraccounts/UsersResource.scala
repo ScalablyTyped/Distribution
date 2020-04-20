@@ -45,7 +45,6 @@ object UsersResource {
     testIamPermissions: AnonOauthtoken => Request_[TestPermissionsResponse]
   ): UsersResource = {
     val __obj = js.Dynamic.literal(addPublicKey = js.Any.fromFunction1(addPublicKey), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), removePublicKey = js.Any.fromFunction1(removePublicKey), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
-  
     __obj.asInstanceOf[UsersResource]
   }
 }

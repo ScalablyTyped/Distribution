@@ -12,7 +12,6 @@ object SQLTransaction {
   @scala.inline
   def apply(executeSql: String => SQLResultSet): SQLTransaction = {
     val __obj = js.Dynamic.literal(executeSql = js.Any.fromFunction1(executeSql))
-  
     __obj.asInstanceOf[SQLTransaction]
   }
 }

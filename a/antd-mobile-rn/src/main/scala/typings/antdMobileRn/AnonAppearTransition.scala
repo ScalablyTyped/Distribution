@@ -24,7 +24,6 @@ object AnonAppearTransition {
     unfilled: Boolean
   ): AnonAppearTransition = {
     val __obj = js.Dynamic.literal(appearTransition = appearTransition.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], unfilled = unfilled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppearTransition]
   }
 }

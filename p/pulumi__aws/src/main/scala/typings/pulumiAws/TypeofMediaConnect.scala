@@ -13,7 +13,6 @@ object TypeofMediaConnect {
   @scala.inline
   def apply(Types: TypeofMediaConnect): TypeofMediaConnect = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofMediaConnect]
   }
 }

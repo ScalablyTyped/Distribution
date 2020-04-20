@@ -50,7 +50,6 @@ object DB {
     set: (String, js.Any, js.Function1[/* err */ js.Any, Unit]) => Unit
   ): DB = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), del = js.Any.fromFunction2(del), get = js.Any.fromFunction2(get), has = js.Any.fromFunction2(has), init = js.Any.fromFunction1(init), keys = js.Any.fromFunction2(keys), set = js.Any.fromFunction3(set))
-  
     __obj.asInstanceOf[DB]
   }
 }

@@ -125,7 +125,6 @@ object IEvent {
     visibility: String
   ): IEvent = {
     val __obj = js.Dynamic.literal(availability = availability.asInstanceOf[js.Any], calendar_id = calendar_id.asInstanceOf[js.Any], created_time = created_time.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], end_time = end_time.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_all_day_event = is_all_day_event.asInstanceOf[js.Any], is_recurrent = is_recurrent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], recurrence = recurrence.asInstanceOf[js.Any], reminder_time = reminder_time.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any], updated_time = updated_time.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEvent]
   }
 }

@@ -34,7 +34,6 @@ object Overlay {
     load: () => Overlay
   ): Overlay = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getClosers = js.Any.fromFunction0(getClosers), getConf = js.Any.fromFunction0(getConf), getOverlay = js.Any.fromFunction0(getOverlay), getTrigger = js.Any.fromFunction0(getTrigger), isOpened = js.Any.fromFunction0(isOpened), load = js.Any.fromFunction0(load))
-  
     __obj.asInstanceOf[Overlay]
   }
 }

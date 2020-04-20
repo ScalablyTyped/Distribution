@@ -25,7 +25,6 @@ object IDisplayUpdate {
   @scala.inline
   def apply(data: IMimeBundle, metadata: OutputMetadata, output_type: update_display_data): IDisplayUpdate = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDisplayUpdate]
   }
 }

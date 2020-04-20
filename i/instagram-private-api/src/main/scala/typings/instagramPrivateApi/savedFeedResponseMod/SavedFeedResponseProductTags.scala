@@ -12,7 +12,6 @@ object SavedFeedResponseProductTags {
   @scala.inline
   def apply(in: js.Array[SavedFeedResponseInItem]): SavedFeedResponseProductTags = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SavedFeedResponseProductTags]
   }
 }

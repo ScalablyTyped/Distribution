@@ -12,7 +12,6 @@ object AnonEnterButton {
   @scala.inline
   def apply(enterButton: Boolean): AnonEnterButton = {
     val __obj = js.Dynamic.literal(enterButton = enterButton.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnterButton]
   }
 }

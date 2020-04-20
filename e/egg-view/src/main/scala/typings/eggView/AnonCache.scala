@@ -22,7 +22,6 @@ object AnonCache {
     root: String
   ): AnonCache = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], defaultExtension = defaultExtension.asInstanceOf[js.Any], defaultViewEngine = defaultViewEngine.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCache]
   }
 }

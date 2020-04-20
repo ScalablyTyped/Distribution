@@ -34,7 +34,7 @@ class GlobalCluster protected () extends CustomResource {
     */
   val deletionProtection: Output_[js.UndefOr[Boolean]] = js.native
   /**
-    * Name of the database engine to be used for this DB cluster. Valid values: `aurora`, `aurora-mysql`. Defaults to `aurora`.
+    * Name of the database engine to be used for this DB cluster. Valid values: `aurora`, `aurora-mysql`, `aurora-postgresql`. Defaults to `aurora`.
     */
   val engine: Output_[js.UndefOr[String]] = js.native
   /**

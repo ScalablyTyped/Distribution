@@ -17,7 +17,6 @@ object WatermarksResource {
   @scala.inline
   def apply(set: AnonChannelIdFields => Request_[Unit], unset: AnonChannelIdFields => Request_[Unit]): WatermarksResource = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set), unset = js.Any.fromFunction1(unset))
-  
     __obj.asInstanceOf[WatermarksResource]
   }
 }

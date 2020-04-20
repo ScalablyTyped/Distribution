@@ -60,7 +60,6 @@ object IndexInfo {
     using: gsi
   ): IndexInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index_key = index_key.asInstanceOf[js.Any], is_primary = is_primary.asInstanceOf[js.Any], keyspace_id = keyspace_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace_id = namespace_id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], store_id = store_id.asInstanceOf[js.Any], using = using.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IndexInfo]
   }
 }

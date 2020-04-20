@@ -18,7 +18,6 @@ object Drive {
     used: String => js.Promise[DriveUsedInfo]
   ): Drive = {
     val __obj = js.Dynamic.literal(free = js.Any.fromFunction1(free), info = js.Any.fromFunction1(info), used = js.Any.fromFunction1(used))
-  
     __obj.asInstanceOf[Drive]
   }
 }

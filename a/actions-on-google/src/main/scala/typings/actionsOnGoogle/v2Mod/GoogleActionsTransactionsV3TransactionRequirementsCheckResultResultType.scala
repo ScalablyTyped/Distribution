@@ -13,12 +13,10 @@ trait GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType ex
 
 object GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType {
   @scala.inline
-  def CANNOT_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.CANNOT_TRANSACT = this.cast("CANNOT_TRANSACT")
+  def CANNOT_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.CANNOT_TRANSACT = "CANNOT_TRANSACT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANNOT_TRANSACT]
   @scala.inline
-  def CAN_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.CAN_TRANSACT = this.cast("CAN_TRANSACT")
+  def CAN_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.CAN_TRANSACT = "CAN_TRANSACT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CAN_TRANSACT]
   @scala.inline
-  def RESULT_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.RESULT_TYPE_UNSPECIFIED = this.cast("RESULT_TYPE_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RESULT_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.RESULT_TYPE_UNSPECIFIED = "RESULT_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RESULT_TYPE_UNSPECIFIED]
 }
 

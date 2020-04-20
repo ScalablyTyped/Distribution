@@ -16,7 +16,6 @@ object RotateChannelCredentialsRequest {
   @scala.inline
   def apply(Id: string): RotateChannelCredentialsRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RotateChannelCredentialsRequest]
   }
 }

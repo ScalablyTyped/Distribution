@@ -17,7 +17,6 @@ object CostCategoryRule {
   @scala.inline
   def apply(Rule: Expression, Value: CostCategoryValue): CostCategoryRule = {
     val __obj = js.Dynamic.literal(Rule = Rule.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CostCategoryRule]
   }
 }

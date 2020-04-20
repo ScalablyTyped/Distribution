@@ -24,22 +24,20 @@ trait WdMailMergeMainDocType extends js.Object
 
 object WdMailMergeMainDocType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCatalog: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdCatalog: `3` = this.cast(3)
+  def wdDirectory: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdDirectory: `3` = this.cast(3)
+  def wdEMail: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdEMail: `4` = this.cast(4)
+  def wdEnvelopes: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdEnvelopes: `2` = this.cast(2)
+  def wdFax: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdFax: `5` = this.cast(5)
+  def wdFormLetters: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdFormLetters: `0` = this.cast(0)
+  def wdMailingLabels: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdMailingLabels: `1` = this.cast(1)
-  @scala.inline
-  def wdNotAMergeDocument: `-1` = this.cast(-1)
+  def wdNotAMergeDocument: `-1` = -1.asInstanceOf[`-1`]
 }
 

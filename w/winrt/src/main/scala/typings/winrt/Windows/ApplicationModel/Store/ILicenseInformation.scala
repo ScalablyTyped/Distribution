@@ -24,7 +24,6 @@ object ILicenseInformation {
     productLicenses: IMapView[String, ProductLicense]
   ): ILicenseInformation = {
     val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], isTrial = isTrial.asInstanceOf[js.Any], onlicensechanged = onlicensechanged.asInstanceOf[js.Any], productLicenses = productLicenses.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILicenseInformation]
   }
 }

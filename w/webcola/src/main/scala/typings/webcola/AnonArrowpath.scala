@@ -13,7 +13,6 @@ object AnonArrowpath {
   @scala.inline
   def apply(arrowpath: String, routepath: String): AnonArrowpath = {
     val __obj = js.Dynamic.literal(arrowpath = arrowpath.asInstanceOf[js.Any], routepath = routepath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArrowpath]
   }
 }

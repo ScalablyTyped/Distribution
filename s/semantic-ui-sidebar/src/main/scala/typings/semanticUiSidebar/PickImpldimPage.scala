@@ -13,7 +13,6 @@ object PickImpldimPage {
   @scala.inline
   def apply(dimPage: Boolean): PickImpldimPage = {
     val __obj = js.Dynamic.literal(dimPage = dimPage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldimPage]
   }
 }

@@ -23,7 +23,7 @@ object mod extends js.Object {
     /**
       * Returns the sole instance of Absent.
       */
-    def instance(): Absent = js.native
+    def instance: Absent = js.native
   }
   
 }

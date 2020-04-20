@@ -15,16 +15,14 @@ trait AlignSetting extends js.Object
 
 object AlignSetting {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.std.stdStrings.center = "center".asInstanceOf[typings.std.stdStrings.center]
   @scala.inline
-  def center: typings.std.stdStrings.center = this.cast("center")
+  def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
   @scala.inline
-  def end: typings.std.stdStrings.end = this.cast("end")
+  def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
   @scala.inline
-  def left: typings.std.stdStrings.left = this.cast("left")
+  def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
   @scala.inline
-  def right: typings.std.stdStrings.right = this.cast("right")
-  @scala.inline
-  def start: typings.std.stdStrings.start = this.cast("start")
+  def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
 }
 

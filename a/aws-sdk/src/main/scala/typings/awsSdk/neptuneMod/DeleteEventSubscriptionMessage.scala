@@ -16,7 +16,6 @@ object DeleteEventSubscriptionMessage {
   @scala.inline
   def apply(SubscriptionName: String): DeleteEventSubscriptionMessage = {
     val __obj = js.Dynamic.literal(SubscriptionName = SubscriptionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEventSubscriptionMessage]
   }
 }

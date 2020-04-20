@@ -12,7 +12,6 @@ object AnonLineHeight {
   @scala.inline
   def apply(lineHeight: Double): AnonLineHeight = {
     val __obj = js.Dynamic.literal(lineHeight = lineHeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLineHeight]
   }
 }

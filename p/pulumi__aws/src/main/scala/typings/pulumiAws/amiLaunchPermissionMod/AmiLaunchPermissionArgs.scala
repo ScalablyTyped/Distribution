@@ -21,7 +21,6 @@ object AmiLaunchPermissionArgs {
   @scala.inline
   def apply(accountId: Input[String], imageId: Input[String]): AmiLaunchPermissionArgs = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AmiLaunchPermissionArgs]
   }
 }

@@ -15,16 +15,14 @@ trait SearchImageType extends js.Object
 
 object SearchImageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clipart: typings.googleImages.googleImagesStrings.clipart = "clipart".asInstanceOf[typings.googleImages.googleImagesStrings.clipart]
   @scala.inline
-  def clipart: typings.googleImages.googleImagesStrings.clipart = this.cast("clipart")
+  def face: typings.googleImages.googleImagesStrings.face = "face".asInstanceOf[typings.googleImages.googleImagesStrings.face]
   @scala.inline
-  def face: typings.googleImages.googleImagesStrings.face = this.cast("face")
+  def lineart: typings.googleImages.googleImagesStrings.lineart = "lineart".asInstanceOf[typings.googleImages.googleImagesStrings.lineart]
   @scala.inline
-  def lineart: typings.googleImages.googleImagesStrings.lineart = this.cast("lineart")
+  def news: typings.googleImages.googleImagesStrings.news = "news".asInstanceOf[typings.googleImages.googleImagesStrings.news]
   @scala.inline
-  def news: typings.googleImages.googleImagesStrings.news = this.cast("news")
-  @scala.inline
-  def photo: typings.googleImages.googleImagesStrings.photo = this.cast("photo")
+  def photo: typings.googleImages.googleImagesStrings.photo = "photo".asInstanceOf[typings.googleImages.googleImagesStrings.photo]
 }
 

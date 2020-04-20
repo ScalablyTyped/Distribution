@@ -13,7 +13,7 @@ trait rcSelectProps {
   def OptionProps: typings.rcSelect.mod.RcSelect.OptionProps.type = typings.rcSelect.mod.RcSelect.OptionProps
   type OptionProps = typings.rcSelect.mod.RcSelect.OptionProps
   @scala.inline
-  def RcSelectProps: SelectProps.type = typings.rcSelect.mod.RcSelect.SelectProps
+  def RcSelectProps: SelectProps.type = SelectProps
   type RcSelectProps = SelectProps
 }
 

@@ -15,7 +15,6 @@ object FacetValue {
   @scala.inline
   def apply(count: Double, isExcluded: Boolean, isRefined: Boolean, name: String): FacetValue = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], isExcluded = isExcluded.asInstanceOf[js.Any], isRefined = isRefined.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FacetValue]
   }
 }

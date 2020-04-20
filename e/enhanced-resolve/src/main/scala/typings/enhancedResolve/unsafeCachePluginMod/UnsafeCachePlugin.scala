@@ -25,7 +25,6 @@ object UnsafeCachePlugin {
     target: String
   ): UnsafeCachePlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), cache = cache.asInstanceOf[js.Any], filterPredicate = js.Any.fromFunction1(filterPredicate), source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnsafeCachePlugin]
   }
 }

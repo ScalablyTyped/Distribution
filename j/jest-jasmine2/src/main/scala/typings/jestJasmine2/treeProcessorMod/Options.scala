@@ -22,7 +22,6 @@ object Options {
     tree: TreeNode
   ): Options = {
     val __obj = js.Dynamic.literal(nodeComplete = js.Any.fromFunction1(nodeComplete), nodeStart = js.Any.fromFunction1(nodeStart), queueRunnerFactory = queueRunnerFactory.asInstanceOf[js.Any], runnableIds = runnableIds.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

@@ -12,7 +12,6 @@ object UIkitNotificationElement {
   @scala.inline
   def apply(close: Boolean => Unit): UIkitNotificationElement = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close))
-  
     __obj.asInstanceOf[UIkitNotificationElement]
   }
 }

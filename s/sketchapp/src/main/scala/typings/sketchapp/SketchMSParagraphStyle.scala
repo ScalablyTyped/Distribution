@@ -15,7 +15,6 @@ object SketchMSParagraphStyle {
   @scala.inline
   def apply(_class: paragraphStyle, alignment: Double, allowsDefaultTighteningForTruncation: Double): SketchMSParagraphStyle = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], alignment = alignment.asInstanceOf[js.Any], allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSParagraphStyle]
   }
 }

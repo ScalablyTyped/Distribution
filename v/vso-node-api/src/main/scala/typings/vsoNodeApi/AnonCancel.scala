@@ -13,7 +13,6 @@ object AnonCancel {
   @scala.inline
   def apply(cancel: Double, publish: Double): AnonCancel = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], publish = publish.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancel]
   }
 }

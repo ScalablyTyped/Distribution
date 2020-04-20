@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactMotionLoopComponents extends reactMotionLoopProps {
   @scala.inline
-  def ReactMotionLoop: ComponentType[ReactMotionLoopProps] = js.constructorOf[typings.reactMotionLoop.mod.ReactMotionLoop].asInstanceOf[typings.react.mod.ComponentType[ReactMotionLoopProps]]
+  def ReactMotionLoop: ComponentType[ReactMotionLoopProps] = js.constructorOf[typings.reactMotionLoop.mod.ReactMotionLoop].asInstanceOf[ComponentType[ReactMotionLoopProps]]
 }
 

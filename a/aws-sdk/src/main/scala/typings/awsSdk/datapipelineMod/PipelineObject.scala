@@ -24,7 +24,6 @@ object PipelineObject {
   @scala.inline
   def apply(fields: fieldList, id: id, name: id): PipelineObject = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PipelineObject]
   }
 }

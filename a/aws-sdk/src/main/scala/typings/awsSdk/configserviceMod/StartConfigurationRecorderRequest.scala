@@ -16,7 +16,6 @@ object StartConfigurationRecorderRequest {
   @scala.inline
   def apply(ConfigurationRecorderName: RecorderName): StartConfigurationRecorderRequest = {
     val __obj = js.Dynamic.literal(ConfigurationRecorderName = ConfigurationRecorderName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartConfigurationRecorderRequest]
   }
 }

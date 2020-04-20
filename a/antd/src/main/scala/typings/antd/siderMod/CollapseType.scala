@@ -12,10 +12,8 @@ trait CollapseType extends js.Object
 
 object CollapseType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clickTrigger: typings.antd.antdStrings.clickTrigger = "clickTrigger".asInstanceOf[typings.antd.antdStrings.clickTrigger]
   @scala.inline
-  def clickTrigger: typings.antd.antdStrings.clickTrigger = this.cast("clickTrigger")
-  @scala.inline
-  def responsive: typings.antd.antdStrings.responsive = this.cast("responsive")
+  def responsive: typings.antd.antdStrings.responsive = "responsive".asInstanceOf[typings.antd.antdStrings.responsive]
 }
 

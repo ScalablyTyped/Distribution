@@ -24,7 +24,6 @@ object State {
     scheduleChildRemoval: String => Unit
   ): State = {
     val __obj = js.Dynamic.literal(displayedChildren = displayedChildren.asInstanceOf[js.Any], finishedLeaving = finishedLeaving.asInstanceOf[js.Any], hasInitialized = hasInitialized.asInstanceOf[js.Any], indexedChildren = indexedChildren.asInstanceOf[js.Any], scheduleChildRemoval = js.Any.fromFunction1(scheduleChildRemoval))
-  
     __obj.asInstanceOf[State]
   }
 }

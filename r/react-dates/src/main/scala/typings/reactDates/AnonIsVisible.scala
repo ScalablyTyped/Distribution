@@ -21,7 +21,6 @@ object AnonIsVisible {
     onYearSelect: (momentObj, String) => Unit
   ): AnonIsVisible = {
     val __obj = js.Dynamic.literal(isVisible = isVisible.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], onMonthSelect = js.Any.fromFunction2(onMonthSelect), onYearSelect = js.Any.fromFunction2(onYearSelect))
-  
     __obj.asInstanceOf[AnonIsVisible]
   }
 }

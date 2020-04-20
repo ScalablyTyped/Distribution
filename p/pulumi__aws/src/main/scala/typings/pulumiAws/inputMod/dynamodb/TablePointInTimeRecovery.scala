@@ -17,7 +17,6 @@ object TablePointInTimeRecovery {
   @scala.inline
   def apply(enabled: Input[Boolean]): TablePointInTimeRecovery = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TablePointInTimeRecovery]
   }
 }

@@ -31,7 +31,6 @@ object Typeofbuffer {
     transcode: (Uint8Array, TranscodeEncoding, TranscodeEncoding) => Buffer
   ): Typeofbuffer = {
     val __obj = js.Dynamic.literal(Buffer = Buffer.asInstanceOf[js.Any], INSPECT_MAX_BYTES = INSPECT_MAX_BYTES.asInstanceOf[js.Any], SlowBuffer = SlowBuffer.asInstanceOf[js.Any], constants = constants.asInstanceOf[js.Any], kMaxLength = kMaxLength.asInstanceOf[js.Any], kStringMaxLength = kStringMaxLength.asInstanceOf[js.Any], transcode = js.Any.fromFunction3(transcode))
-  
     __obj.asInstanceOf[Typeofbuffer]
   }
 }

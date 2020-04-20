@@ -89,10 +89,10 @@ object textsMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FSystemText: IModel = js.native
-      def containerAsSystemTextCollection(): SystemTextCollection = js.native
-      def key(): String = js.native
+      def containerAsSystemTextCollection: SystemTextCollection = js.native
+      def key: String = js.native
       def key(newValue: String): js.Any = js.native
-      def text(): Text = js.native
+      def text: Text = js.native
       def text(newValue: Text): js.Any = js.native
     }
     
@@ -117,8 +117,8 @@ object textsMod extends js.Object {
       @JSName("model")
       var model_FSystemTextCollection: IModel = js.native
       @JSName("containerAsProject")
-      def containerAsProject_MSystemTextCollection(): Project = js.native
-      def systemTexts(): IList[SystemText] = js.native
+      def containerAsProject_MSystemTextCollection: Project = js.native
+      def systemTexts: IList[SystemText] = js.native
     }
     
     /**
@@ -136,49 +136,49 @@ object textsMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FText: IModel = js.native
-      def containerAsAssociationDeleteBehavior(): AssociationDeleteBehavior = js.native
-      def containerAsAttributeWidget(): AttributeWidget = js.native
-      def containerAsAttributeWidgetWithPlaceholder(): AttributeWidgetWithPlaceholder = js.native
-      def containerAsBasicReportAggregate(): BasicReportAggregate = js.native
-      def containerAsBasicReportColumn(): BasicReportColumn = js.native
-      def containerAsBottomBarItem(): BottomBarItem = js.native
-      def containerAsButton(): Button = js.native
-      def containerAsCallNanoflowClientAction(): CallNanoflowClientAction = js.native
-      def containerAsClientTemplate(): ClientTemplate = js.native
-      def containerAsConfirmationInfo(): ConfirmationInfo = js.native
-      def containerAsControlBarButton(): ControlBarButton = js.native
-      def containerAsDataGridColumn(): DataGridColumn = js.native
-      def containerAsDataView(): DataView = js.native
-      def containerAsDropDown(): DropDown = js.native
-      def containerAsDropDownButtonItem(): DropDownButtonItem = js.native
-      def containerAsEnumerationValue(): EnumerationValue = js.native
-      def containerAsGridColumn(): GridColumn = js.native
-      def containerAsInputWidget(): InputWidget = js.native
-      def containerAsLabel(): Label = js.native
-      def containerAsLoginTextBox(): LoginTextBox = js.native
-      def containerAsMasterDetailDetailRegion(): MasterDetailDetailRegion = js.native
-      def containerAsMenuItem(): MenuItem = js.native
-      def containerAsMicroflow(): Microflow = js.native
-      def containerAsMicroflowSettings(): MicroflowSettings = js.native
-      def containerAsPage(): Page = js.native
-      def containerAsPageSettings(): PageSettings = js.native
-      def containerAsReferenceSelector(): ReferenceSelector = js.native
-      def containerAsReportButton(): ReportButton = js.native
-      def containerAsReportChart(): ReportChart = js.native
-      def containerAsReportChartSeries(): ReportChartSeries = js.native
-      def containerAsReportDateRangeField(): ReportDateRangeField = js.native
-      def containerAsReportDateRangeSelector(): ReportDateRangeSelector = js.native
-      def containerAsSearchField(): SearchField = js.native
-      def containerAsStaticLabel(): StaticLabel = js.native
-      def containerAsSystemText(): SystemText = js.native
-      def containerAsTabPage(): TabPage = js.native
-      def containerAsTextArea(): TextArea = js.native
-      def containerAsTextTemplate(): TextTemplate = js.native
-      def containerAsTitle(): Title = js.native
-      def containerAsValidationRule(): ValidationRule = js.native
-      def containerAsWidgetValidation(): WidgetValidation = js.native
-      def containerAsWidgetValue(): WidgetValue = js.native
-      def translations(): IList[Translation] = js.native
+      def containerAsAssociationDeleteBehavior: AssociationDeleteBehavior = js.native
+      def containerAsAttributeWidget: AttributeWidget = js.native
+      def containerAsAttributeWidgetWithPlaceholder: AttributeWidgetWithPlaceholder = js.native
+      def containerAsBasicReportAggregate: BasicReportAggregate = js.native
+      def containerAsBasicReportColumn: BasicReportColumn = js.native
+      def containerAsBottomBarItem: BottomBarItem = js.native
+      def containerAsButton: Button = js.native
+      def containerAsCallNanoflowClientAction: CallNanoflowClientAction = js.native
+      def containerAsClientTemplate: ClientTemplate = js.native
+      def containerAsConfirmationInfo: ConfirmationInfo = js.native
+      def containerAsControlBarButton: ControlBarButton = js.native
+      def containerAsDataGridColumn: DataGridColumn = js.native
+      def containerAsDataView: DataView = js.native
+      def containerAsDropDown: DropDown = js.native
+      def containerAsDropDownButtonItem: DropDownButtonItem = js.native
+      def containerAsEnumerationValue: EnumerationValue = js.native
+      def containerAsGridColumn: GridColumn = js.native
+      def containerAsInputWidget: InputWidget = js.native
+      def containerAsLabel: Label = js.native
+      def containerAsLoginTextBox: LoginTextBox = js.native
+      def containerAsMasterDetailDetailRegion: MasterDetailDetailRegion = js.native
+      def containerAsMenuItem: MenuItem = js.native
+      def containerAsMicroflow: Microflow = js.native
+      def containerAsMicroflowSettings: MicroflowSettings = js.native
+      def containerAsPage: Page = js.native
+      def containerAsPageSettings: PageSettings = js.native
+      def containerAsReferenceSelector: ReferenceSelector = js.native
+      def containerAsReportButton: ReportButton = js.native
+      def containerAsReportChart: ReportChart = js.native
+      def containerAsReportChartSeries: ReportChartSeries = js.native
+      def containerAsReportDateRangeField: ReportDateRangeField = js.native
+      def containerAsReportDateRangeSelector: ReportDateRangeSelector = js.native
+      def containerAsSearchField: SearchField = js.native
+      def containerAsStaticLabel: StaticLabel = js.native
+      def containerAsSystemText: SystemText = js.native
+      def containerAsTabPage: TabPage = js.native
+      def containerAsTextArea: TextArea = js.native
+      def containerAsTextTemplate: TextTemplate = js.native
+      def containerAsTitle: Title = js.native
+      def containerAsValidationRule: ValidationRule = js.native
+      def containerAsWidgetValidation: WidgetValidation = js.native
+      def containerAsWidgetValue: WidgetValue = js.native
+      def translations: IList[Translation] = js.native
     }
     
     @js.native
@@ -193,10 +193,10 @@ object textsMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FTranslation: IModel = js.native
-      def containerAsText(): Text = js.native
-      def languageCode(): String = js.native
+      def containerAsText: Text = js.native
+      def languageCode: String = js.native
       def languageCode(newValue: String): js.Any = js.native
-      def text(): String = js.native
+      def text: String = js.native
       def text(newValue: String): js.Any = js.native
     }
     

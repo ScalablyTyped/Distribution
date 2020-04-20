@@ -16,7 +16,6 @@ object DeleteInsightRequest {
   @scala.inline
   def apply(InsightArn: NonEmptyString): DeleteInsightRequest = {
     val __obj = js.Dynamic.literal(InsightArn = InsightArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteInsightRequest]
   }
 }

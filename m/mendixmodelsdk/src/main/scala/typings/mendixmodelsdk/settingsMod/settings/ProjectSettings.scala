@@ -33,8 +33,8 @@ class ProjectSettings protected () extends ProjectDocument {
   @JSName("model")
   var model_FProjectSettings: IModel = js.native
   @JSName("containerAsProject")
-  def containerAsProject_MProjectSettings(): Project = js.native
-  def settingsParts(): IList[ProjectSettingsPart] = js.native
+  def containerAsProject_MProjectSettings: Project = js.native
+  def settingsParts: IList[ProjectSettingsPart] = js.native
 }
 
 /* static members */

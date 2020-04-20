@@ -13,7 +13,6 @@ object AnonRecords {
   @scala.inline
   def apply[T /* <: BaseResponse[scala.Nothing] */](records: js.Array[T]): AnonRecords[T] = {
     val __obj = js.Dynamic.literal(records = records.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRecords[T]]
   }
 }

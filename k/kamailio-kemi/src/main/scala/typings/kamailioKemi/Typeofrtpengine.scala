@@ -40,7 +40,6 @@ object Typeofrtpengine {
     stop_recording: () => Double
   ): Typeofrtpengine = {
     val __obj = js.Dynamic.literal(rtpengine_answer = js.Any.fromFunction1(rtpengine_answer), rtpengine_answer0 = js.Any.fromFunction0(rtpengine_answer0), rtpengine_delete = js.Any.fromFunction1(rtpengine_delete), rtpengine_delete0 = js.Any.fromFunction0(rtpengine_delete0), rtpengine_manage = js.Any.fromFunction1(rtpengine_manage), rtpengine_manage0 = js.Any.fromFunction0(rtpengine_manage0), rtpengine_offer = js.Any.fromFunction1(rtpengine_offer), rtpengine_offer0 = js.Any.fromFunction0(rtpengine_offer0), set_rtpengine_set = js.Any.fromFunction1(set_rtpengine_set), set_rtpengine_set2 = js.Any.fromFunction2(set_rtpengine_set2), start_recording = js.Any.fromFunction0(start_recording), stop_recording = js.Any.fromFunction0(stop_recording))
-  
     __obj.asInstanceOf[Typeofrtpengine]
   }
 }

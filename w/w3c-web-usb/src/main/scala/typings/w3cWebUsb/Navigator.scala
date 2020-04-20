@@ -12,7 +12,6 @@ object Navigator {
   @scala.inline
   def apply(usb: USB): Navigator = {
     val __obj = js.Dynamic.literal(usb = usb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Navigator]
   }
 }

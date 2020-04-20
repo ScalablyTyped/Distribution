@@ -16,18 +16,16 @@ trait LimitType extends js.Object
 
 object LimitType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disk: typings.gm.gmStrings.disk = "disk".asInstanceOf[typings.gm.gmStrings.disk]
   @scala.inline
-  def disk: typings.gm.gmStrings.disk = this.cast("disk")
+  def file: typings.gm.gmStrings.file = "file".asInstanceOf[typings.gm.gmStrings.file]
   @scala.inline
-  def file: typings.gm.gmStrings.file = this.cast("file")
+  def map: typings.gm.gmStrings.map = "map".asInstanceOf[typings.gm.gmStrings.map]
   @scala.inline
-  def map: typings.gm.gmStrings.map = this.cast("map")
+  def memory: typings.gm.gmStrings.memory = "memory".asInstanceOf[typings.gm.gmStrings.memory]
   @scala.inline
-  def memory: typings.gm.gmStrings.memory = this.cast("memory")
+  def pixels: typings.gm.gmStrings.pixels = "pixels".asInstanceOf[typings.gm.gmStrings.pixels]
   @scala.inline
-  def pixels: typings.gm.gmStrings.pixels = this.cast("pixels")
-  @scala.inline
-  def threads: typings.gm.gmStrings.threads = this.cast("threads")
+  def threads: typings.gm.gmStrings.threads = "threads".asInstanceOf[typings.gm.gmStrings.threads]
 }
 

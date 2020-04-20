@@ -12,7 +12,6 @@ object listenerRegistration {
   @scala.inline
   def apply(removeListener: () => Unit): listenerRegistration = {
     val __obj = js.Dynamic.literal(removeListener = js.Any.fromFunction0(removeListener))
-  
     __obj.asInstanceOf[listenerRegistration]
   }
 }

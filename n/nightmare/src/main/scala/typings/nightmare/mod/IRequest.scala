@@ -17,7 +17,6 @@ object IRequest {
   @scala.inline
   def apply(headers: js.Object, id: Double, method: String, time: Date, url: String): IRequest = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRequest]
   }
 }

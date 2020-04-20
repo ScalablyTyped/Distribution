@@ -16,7 +16,6 @@ object DeleteCustomVerificationEmailTemplateRequest {
   @scala.inline
   def apply(TemplateName: TemplateName): DeleteCustomVerificationEmailTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCustomVerificationEmailTemplateRequest]
   }
 }

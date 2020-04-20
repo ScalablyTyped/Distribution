@@ -23,7 +23,6 @@ object ProfileInfo {
     result: TensorContainer
   ): ProfileInfo = {
     val __obj = js.Dynamic.literal(kernels = kernels.asInstanceOf[js.Any], newBytes = newBytes.asInstanceOf[js.Any], newTensors = newTensors.asInstanceOf[js.Any], peakBytes = peakBytes.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProfileInfo]
   }
 }

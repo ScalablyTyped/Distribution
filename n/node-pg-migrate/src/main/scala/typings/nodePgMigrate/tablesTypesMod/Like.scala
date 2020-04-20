@@ -18,22 +18,20 @@ trait Like extends js.Object
 
 object Like {
   @scala.inline
-  def ALL: typings.nodePgMigrate.nodePgMigrateStrings.ALL = this.cast("ALL")
+  def ALL: typings.nodePgMigrate.nodePgMigrateStrings.ALL = "ALL".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.ALL]
   @scala.inline
-  def COMMENTS: typings.nodePgMigrate.nodePgMigrateStrings.COMMENTS = this.cast("COMMENTS")
+  def COMMENTS: typings.nodePgMigrate.nodePgMigrateStrings.COMMENTS = "COMMENTS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.COMMENTS]
   @scala.inline
-  def CONSTRAINTS: typings.nodePgMigrate.nodePgMigrateStrings.CONSTRAINTS = this.cast("CONSTRAINTS")
+  def CONSTRAINTS: typings.nodePgMigrate.nodePgMigrateStrings.CONSTRAINTS = "CONSTRAINTS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.CONSTRAINTS]
   @scala.inline
-  def DEFAULTS: typings.nodePgMigrate.nodePgMigrateStrings.DEFAULTS = this.cast("DEFAULTS")
+  def DEFAULTS: typings.nodePgMigrate.nodePgMigrateStrings.DEFAULTS = "DEFAULTS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.DEFAULTS]
   @scala.inline
-  def IDENTITY: typings.nodePgMigrate.nodePgMigrateStrings.IDENTITY = this.cast("IDENTITY")
+  def IDENTITY: typings.nodePgMigrate.nodePgMigrateStrings.IDENTITY = "IDENTITY".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.IDENTITY]
   @scala.inline
-  def INDEXES: typings.nodePgMigrate.nodePgMigrateStrings.INDEXES = this.cast("INDEXES")
+  def INDEXES: typings.nodePgMigrate.nodePgMigrateStrings.INDEXES = "INDEXES".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.INDEXES]
   @scala.inline
-  def STATISTICS: typings.nodePgMigrate.nodePgMigrateStrings.STATISTICS = this.cast("STATISTICS")
+  def STATISTICS: typings.nodePgMigrate.nodePgMigrateStrings.STATISTICS = "STATISTICS".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.STATISTICS]
   @scala.inline
-  def STORAGE: typings.nodePgMigrate.nodePgMigrateStrings.STORAGE = this.cast("STORAGE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STORAGE: typings.nodePgMigrate.nodePgMigrateStrings.STORAGE = "STORAGE".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.STORAGE]
 }
 

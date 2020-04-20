@@ -48,7 +48,6 @@ object TransferOperationsResource {
     resume: AnonKey => Request_[js.Object]
   ): TransferOperationsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), pause = js.Any.fromFunction1(pause), resume = js.Any.fromFunction1(resume))
-  
     __obj.asInstanceOf[TransferOperationsResource]
   }
 }

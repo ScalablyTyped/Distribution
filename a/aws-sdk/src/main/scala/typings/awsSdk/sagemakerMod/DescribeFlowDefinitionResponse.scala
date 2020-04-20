@@ -34,6 +34,9 @@ trait DescribeFlowDefinitionResponse extends js.Object {
     * An object containing information about who works on the task, the workforce task price, and other task details.
     */
   var HumanLoopConfig: typings.awsSdk.sagemakerMod.HumanLoopConfig = js.native
+  /**
+    * Container for configuring the source of human task requests. Used to specify if Amazon Rekognition or Amazon Textract is used as an integration source.
+    */
   var HumanLoopRequestSource: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopRequestSource] = js.native
   /**
     * An object containing information about the output file.

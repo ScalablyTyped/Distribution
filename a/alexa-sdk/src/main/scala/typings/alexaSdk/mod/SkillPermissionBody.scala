@@ -12,7 +12,6 @@ object SkillPermissionBody {
   @scala.inline
   def apply(acceptedPermissions: js.Array[PermissionScope]): SkillPermissionBody = {
     val __obj = js.Dynamic.literal(acceptedPermissions = acceptedPermissions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkillPermissionBody]
   }
 }

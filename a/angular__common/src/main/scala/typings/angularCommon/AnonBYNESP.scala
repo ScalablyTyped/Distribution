@@ -30,7 +30,6 @@ object AnonBYNESP {
     XCD: js.Array[js.UndefOr[String]]
   ): AnonBYNESP = {
     val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], ESP = ESP.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KMF = KMF.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], RUB = RUB.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBYNESP]
   }
 }

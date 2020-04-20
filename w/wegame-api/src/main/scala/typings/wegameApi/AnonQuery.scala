@@ -14,7 +14,6 @@ object AnonQuery {
   @scala.inline
   def apply(query: js.Any, scene: String, shareTicket: String): AnonQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQuery]
   }
 }

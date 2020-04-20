@@ -14,7 +14,6 @@ object AnonQos {
   @scala.inline
   def apply(qos: `0` | `1`): AnonQos = {
     val __obj = js.Dynamic.literal(qos = qos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQos]
   }
 }

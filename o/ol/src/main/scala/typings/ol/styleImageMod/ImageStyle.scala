@@ -57,7 +57,6 @@ object ImageStyle {
     unlistenImageChange: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit] => Unit
   ): ImageStyle = {
     val __obj = js.Dynamic.literal(getAnchor = js.Any.fromFunction0(getAnchor), getDisplacement = js.Any.fromFunction0(getDisplacement), getHitDetectionImage = js.Any.fromFunction1(getHitDetectionImage), getHitDetectionImageSize = js.Any.fromFunction0(getHitDetectionImageSize), getImage = js.Any.fromFunction1(getImage), getImageSize = js.Any.fromFunction0(getImageSize), getImageState = js.Any.fromFunction0(getImageState), getOpacity = js.Any.fromFunction0(getOpacity), getOrigin = js.Any.fromFunction0(getOrigin), getRotateWithView = js.Any.fromFunction0(getRotateWithView), getRotation = js.Any.fromFunction0(getRotation), getScale = js.Any.fromFunction0(getScale), getSize = js.Any.fromFunction0(getSize), listenImageChange = js.Any.fromFunction1(listenImageChange), load = js.Any.fromFunction0(load), setOpacity = js.Any.fromFunction1(setOpacity), setRotateWithView = js.Any.fromFunction1(setRotateWithView), setRotation = js.Any.fromFunction1(setRotation), setScale = js.Any.fromFunction1(setScale), unlistenImageChange = js.Any.fromFunction1(unlistenImageChange))
-  
     __obj.asInstanceOf[ImageStyle]
   }
 }

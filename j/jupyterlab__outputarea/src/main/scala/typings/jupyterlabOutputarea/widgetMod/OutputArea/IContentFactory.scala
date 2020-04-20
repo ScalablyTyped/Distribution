@@ -30,7 +30,6 @@ object IContentFactory {
     createStdin: typings.jupyterlabOutputarea.widgetMod.Stdin.IOptions => IStdin
   ): IContentFactory = {
     val __obj = js.Dynamic.literal(createOutputPrompt = js.Any.fromFunction0(createOutputPrompt), createStdin = js.Any.fromFunction1(createStdin))
-  
     __obj.asInstanceOf[IContentFactory]
   }
 }

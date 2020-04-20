@@ -37,11 +37,11 @@ class Cell_ protected () extends Widget {
   /**
     * Get the CodeEditor used by the cell.
     */
-  def editor(): IEditor = js.native
+  def editor: IEditor = js.native
   /**
     * Get the CodeEditorWrapper used by the cell.
     */
-  def editorWidget(): CodeEditorWrapper = js.native
+  def editorWidget: CodeEditorWrapper = js.native
   /**
     * Handle the input being hidden.
     *
@@ -62,11 +62,11 @@ class Cell_ protected () extends Widget {
   /**
     * Get the input area for the cell.
     */
-  def inputArea(): InputArea = js.native
+  def inputArea: InputArea = js.native
   /**
     * The view state of input being hidden.
     */
-  def inputHidden(): Boolean = js.native
+  def inputHidden: Boolean = js.native
   def inputHidden(value: Boolean): js.Any = js.native
   /**
     * Revert view collapse state from model.
@@ -79,7 +79,7 @@ class Cell_ protected () extends Widget {
   /**
     * Get the model used by the cell.
     */
-  def model(): ICellModel = js.native
+  def model: ICellModel = js.native
   /**
     * Handle changes in the metadata.
     */
@@ -87,16 +87,16 @@ class Cell_ protected () extends Widget {
   /**
     * Get the prompt node used by the cell.
     */
-  def promptNode(): HTMLElement = js.native
+  def promptNode: HTMLElement = js.native
   /**
     * The read only state of the cell.
     */
-  def readOnly(): Boolean = js.native
+  def readOnly: Boolean = js.native
   def readOnly(value: Boolean): js.Any = js.native
   /**
     * A promise that resolves when the widget renders for the first time.
     */
-  def ready(): js.Promise[Unit] = js.native
+  def ready: js.Promise[Unit] = js.native
   /**
     * Save view collapse state to model
     */
@@ -112,12 +112,12 @@ class Cell_ protected () extends Widget {
   /**
     * Whether to sync the collapse state to the cell model.
     */
-  def syncCollapse(): Boolean = js.native
+  def syncCollapse: Boolean = js.native
   def syncCollapse(value: Boolean): js.Any = js.native
   /**
     * Whether to sync the editable state to the cell model.
     */
-  def syncEditable(): Boolean = js.native
+  def syncEditable: Boolean = js.native
   def syncEditable(value: Boolean): js.Any = js.native
 }
 

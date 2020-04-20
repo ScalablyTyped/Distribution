@@ -14,10 +14,8 @@ trait AcExportQuality extends js.Object
 
 object AcExportQuality {
   @scala.inline
-  def acExportQualityPrint: `0` = this.cast(0)
+  def acExportQualityPrint: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acExportQualityScreen: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acExportQualityScreen: `1` = 1.asInstanceOf[`1`]
 }
 

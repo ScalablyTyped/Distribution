@@ -12,10 +12,8 @@ trait HostOperatingSystem extends js.Object
 
 object HostOperatingSystem {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def linux: typings.pulumiCloud.pulumiCloudStrings.linux = "linux".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.linux]
   @scala.inline
-  def linux: typings.pulumiCloud.pulumiCloudStrings.linux = this.cast("linux")
-  @scala.inline
-  def windows: typings.pulumiCloud.pulumiCloudStrings.windows = this.cast("windows")
+  def windows: typings.pulumiCloud.pulumiCloudStrings.windows = "windows".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.windows]
 }
 

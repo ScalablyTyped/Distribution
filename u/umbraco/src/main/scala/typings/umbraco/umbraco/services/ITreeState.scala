@@ -19,7 +19,6 @@ object ITreeState {
   @scala.inline
   def apply(currentRootNode: js.Any, selectedNode: js.Any): ITreeState = {
     val __obj = js.Dynamic.literal(currentRootNode = currentRootNode.asInstanceOf[js.Any], selectedNode = selectedNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITreeState]
   }
 }

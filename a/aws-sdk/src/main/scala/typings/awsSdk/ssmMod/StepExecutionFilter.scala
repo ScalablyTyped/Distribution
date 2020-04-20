@@ -20,7 +20,6 @@ object StepExecutionFilter {
   @scala.inline
   def apply(Key: StepExecutionFilterKey, Values: StepExecutionFilterValueList): StepExecutionFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StepExecutionFilter]
   }
 }

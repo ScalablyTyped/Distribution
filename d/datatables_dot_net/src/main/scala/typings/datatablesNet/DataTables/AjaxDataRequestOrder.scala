@@ -13,7 +13,6 @@ object AjaxDataRequestOrder {
   @scala.inline
   def apply(column: Double, dir: String): AjaxDataRequestOrder = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AjaxDataRequestOrder]
   }
 }

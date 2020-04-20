@@ -97,7 +97,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * Specify the default sort column.
   	 * Note: when using cleanSort(), this default sort column will be restored.
   	 */
-  var defaultSortName: js.UndefOr[String] = js.undefined
+  var defaultSortName: js.UndefOr[/* keyof TRow */ String] = js.undefined
   /**
   	 * Assign a default sort order.
   	 * Note: when using cleanSort(), this default sort order will be restored.
@@ -477,7 +477,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var onSortChange: js.UndefOr[
     js.Function2[
-      (/* sortName */ js.Array[String]) | (/* sortName */ String), 
+      (/* sortName */ js.Array[/* keyof TRow */ String]) | (/* keyof TRow */ /* sortName */ String), 
       (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder), 
       Unit
     ]
@@ -599,7 +599,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * If multi-column sort is active, this is an array of columns.
   	 * If there should be no active sort, both sortName and sortOrder should be undefined.
   	 */
-  var sortName: js.UndefOr[String | js.Array[String]] = js.undefined
+  var sortName: js.UndefOr[(/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String])] = js.undefined
   /**
   	 * Specify whether the sort should be ascending or descending.
   	 * If multi-column sort is active, this is an array of sortOrder items.
@@ -637,7 +637,7 @@ object Options {
     clearSearchBtn: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement = null,
     closeText: String = null,
     defaultSearch: String = null,
-    defaultSortName: String = null,
+    defaultSortName: /* keyof TRow */ String = null,
     defaultSortOrder: SortOrder = null,
     deleteBtn: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement = null,
     deleteText: String = null,
@@ -686,7 +686,7 @@ object Options {
     onRowMouseOver: (/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent]) => Unit = null,
     onSearchChange: (/* searchText */ String, /* colInfos */ js.Array[ColumnDescription[TRow]], /* multiColumnSearch */ Boolean) => Unit = null,
     onSizePerPageList: /* sizePerPage */ Double => Unit = null,
-    onSortChange: ((/* sortName */ js.Array[String]) | (/* sortName */ String), (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder)) => Unit = null,
+    onSortChange: ((/* sortName */ js.Array[/* keyof TRow */ String]) | (/* keyof TRow */ /* sortName */ String), (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder)) => Unit = null,
     onlyOneExpanding: js.UndefOr[Boolean] = js.undefined,
     page: Int | Double = null,
     pageStartIndex: Int | Double = null,
@@ -706,7 +706,7 @@ object Options {
     sizePerPageDropDown: /* props */ SizePerPageFunctionProps => ReactElement = null,
     sizePerPageList: SizePerPageList = null,
     sortIndicator: js.UndefOr[Boolean] = js.undefined,
-    sortName: String | js.Array[String] = null,
+    sortName: (/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String]) = null,
     sortOrder: SortOrder | js.Array[SortOrder] = null,
     toolBar: /* props */ ToolBarProps => ReactElement = null,
     withFirstAndLast: js.UndefOr[Boolean] = js.undefined,

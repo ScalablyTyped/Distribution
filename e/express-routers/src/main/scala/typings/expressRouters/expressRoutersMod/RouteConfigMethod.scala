@@ -15,16 +15,14 @@ trait RouteConfigMethod extends js.Object
 
 object RouteConfigMethod {
   @scala.inline
-  def DELETE: typings.expressRouters.expressRoutersStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.expressRouters.expressRoutersStrings.DELETE = "DELETE".asInstanceOf[typings.expressRouters.expressRoutersStrings.DELETE]
   @scala.inline
-  def GET: typings.expressRouters.expressRoutersStrings.GET = this.cast("GET")
+  def GET: typings.expressRouters.expressRoutersStrings.GET = "GET".asInstanceOf[typings.expressRouters.expressRoutersStrings.GET]
   @scala.inline
-  def PATCH: typings.expressRouters.expressRoutersStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.expressRouters.expressRoutersStrings.PATCH = "PATCH".asInstanceOf[typings.expressRouters.expressRoutersStrings.PATCH]
   @scala.inline
-  def POST: typings.expressRouters.expressRoutersStrings.POST = this.cast("POST")
+  def POST: typings.expressRouters.expressRoutersStrings.POST = "POST".asInstanceOf[typings.expressRouters.expressRoutersStrings.POST]
   @scala.inline
-  def PUT: typings.expressRouters.expressRoutersStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUT: typings.expressRouters.expressRoutersStrings.PUT = "PUT".asInstanceOf[typings.expressRouters.expressRoutersStrings.PUT]
 }
 

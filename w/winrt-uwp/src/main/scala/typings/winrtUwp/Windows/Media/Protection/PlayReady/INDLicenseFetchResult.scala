@@ -14,7 +14,6 @@ object INDLicenseFetchResult {
   @scala.inline
   def apply(responseCustomData: INDCustomData): INDLicenseFetchResult = {
     val __obj = js.Dynamic.literal(responseCustomData = responseCustomData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INDLicenseFetchResult]
   }
 }

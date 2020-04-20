@@ -13,7 +13,6 @@ object IDetailsRowSelectionState {
   @scala.inline
   def apply(isSelected: Boolean, isSelectionModal: Boolean): IDetailsRowSelectionState = {
     val __obj = js.Dynamic.literal(isSelected = isSelected.asInstanceOf[js.Any], isSelectionModal = isSelectionModal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDetailsRowSelectionState]
   }
 }

@@ -22,18 +22,16 @@ trait PpBorderType extends js.Object
 
 object PpBorderType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppBorderBottom: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppBorderBottom: `3` = this.cast(3)
+  def ppBorderDiagonalDown: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppBorderDiagonalDown: `5` = this.cast(5)
+  def ppBorderDiagonalUp: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ppBorderDiagonalUp: `6` = this.cast(6)
+  def ppBorderLeft: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppBorderLeft: `2` = this.cast(2)
+  def ppBorderRight: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppBorderRight: `4` = this.cast(4)
-  @scala.inline
-  def ppBorderTop: `1` = this.cast(1)
+  def ppBorderTop: `1` = 1.asInstanceOf[`1`]
 }
 

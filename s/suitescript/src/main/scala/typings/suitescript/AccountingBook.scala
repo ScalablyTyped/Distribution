@@ -13,7 +13,6 @@ object AccountingBook {
   @scala.inline
   def apply(getId: () => Double, isPrimary: () => Boolean): AccountingBook = {
     val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), isPrimary = js.Any.fromFunction0(isPrimary))
-  
     __obj.asInstanceOf[AccountingBook]
   }
 }

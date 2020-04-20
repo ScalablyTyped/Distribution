@@ -25,7 +25,6 @@ object BaseWithValueColDefParams {
     value: js.Any
   ): BaseWithValueColDefParams = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], colDef = colDef.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseWithValueColDefParams]
   }
 }

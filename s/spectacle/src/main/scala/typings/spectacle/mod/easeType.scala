@@ -53,86 +53,84 @@ trait easeType extends js.Object
 
 object easeType {
   @scala.inline
-  def back: typings.spectacle.spectacleStrings.back = this.cast("back")
+  def back: typings.spectacle.spectacleStrings.back = "back".asInstanceOf[typings.spectacle.spectacleStrings.back]
   @scala.inline
-  def backIn: typings.spectacle.spectacleStrings.backIn = this.cast("backIn")
+  def backIn: typings.spectacle.spectacleStrings.backIn = "backIn".asInstanceOf[typings.spectacle.spectacleStrings.backIn]
   @scala.inline
-  def backInOut: typings.spectacle.spectacleStrings.backInOut = this.cast("backInOut")
+  def backInOut: typings.spectacle.spectacleStrings.backInOut = "backInOut".asInstanceOf[typings.spectacle.spectacleStrings.backInOut]
   @scala.inline
-  def backOut: typings.spectacle.spectacleStrings.backOut = this.cast("backOut")
+  def backOut: typings.spectacle.spectacleStrings.backOut = "backOut".asInstanceOf[typings.spectacle.spectacleStrings.backOut]
   @scala.inline
-  def bounce: typings.spectacle.spectacleStrings.bounce = this.cast("bounce")
+  def bounce: typings.spectacle.spectacleStrings.bounce = "bounce".asInstanceOf[typings.spectacle.spectacleStrings.bounce]
   @scala.inline
-  def bounceIn: typings.spectacle.spectacleStrings.bounceIn = this.cast("bounceIn")
+  def bounceIn: typings.spectacle.spectacleStrings.bounceIn = "bounceIn".asInstanceOf[typings.spectacle.spectacleStrings.bounceIn]
   @scala.inline
-  def bounceInOut: typings.spectacle.spectacleStrings.bounceInOut = this.cast("bounceInOut")
+  def bounceInOut: typings.spectacle.spectacleStrings.bounceInOut = "bounceInOut".asInstanceOf[typings.spectacle.spectacleStrings.bounceInOut]
   @scala.inline
-  def bounceOut: typings.spectacle.spectacleStrings.bounceOut = this.cast("bounceOut")
+  def bounceOut: typings.spectacle.spectacleStrings.bounceOut = "bounceOut".asInstanceOf[typings.spectacle.spectacleStrings.bounceOut]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.spectacle.spectacleStrings.circle = "circle".asInstanceOf[typings.spectacle.spectacleStrings.circle]
   @scala.inline
-  def circle: typings.spectacle.spectacleStrings.circle = this.cast("circle")
+  def circleIn: typings.spectacle.spectacleStrings.circleIn = "circleIn".asInstanceOf[typings.spectacle.spectacleStrings.circleIn]
   @scala.inline
-  def circleIn: typings.spectacle.spectacleStrings.circleIn = this.cast("circleIn")
+  def circleInOut: typings.spectacle.spectacleStrings.circleInOut = "circleInOut".asInstanceOf[typings.spectacle.spectacleStrings.circleInOut]
   @scala.inline
-  def circleInOut: typings.spectacle.spectacleStrings.circleInOut = this.cast("circleInOut")
+  def circleOut: typings.spectacle.spectacleStrings.circleOut = "circleOut".asInstanceOf[typings.spectacle.spectacleStrings.circleOut]
   @scala.inline
-  def circleOut: typings.spectacle.spectacleStrings.circleOut = this.cast("circleOut")
+  def cubic: typings.spectacle.spectacleStrings.cubic = "cubic".asInstanceOf[typings.spectacle.spectacleStrings.cubic]
   @scala.inline
-  def cubic: typings.spectacle.spectacleStrings.cubic = this.cast("cubic")
+  def cubicIn: typings.spectacle.spectacleStrings.cubicIn = "cubicIn".asInstanceOf[typings.spectacle.spectacleStrings.cubicIn]
   @scala.inline
-  def cubicIn: typings.spectacle.spectacleStrings.cubicIn = this.cast("cubicIn")
+  def cubicInOut: typings.spectacle.spectacleStrings.cubicInOut = "cubicInOut".asInstanceOf[typings.spectacle.spectacleStrings.cubicInOut]
   @scala.inline
-  def cubicInOut: typings.spectacle.spectacleStrings.cubicInOut = this.cast("cubicInOut")
+  def cubicOut: typings.spectacle.spectacleStrings.cubicOut = "cubicOut".asInstanceOf[typings.spectacle.spectacleStrings.cubicOut]
   @scala.inline
-  def cubicOut: typings.spectacle.spectacleStrings.cubicOut = this.cast("cubicOut")
+  def elastic: typings.spectacle.spectacleStrings.elastic = "elastic".asInstanceOf[typings.spectacle.spectacleStrings.elastic]
   @scala.inline
-  def elastic: typings.spectacle.spectacleStrings.elastic = this.cast("elastic")
+  def elasticIn: typings.spectacle.spectacleStrings.elasticIn = "elasticIn".asInstanceOf[typings.spectacle.spectacleStrings.elasticIn]
   @scala.inline
-  def elasticIn: typings.spectacle.spectacleStrings.elasticIn = this.cast("elasticIn")
+  def elasticInOut: typings.spectacle.spectacleStrings.elasticInOut = "elasticInOut".asInstanceOf[typings.spectacle.spectacleStrings.elasticInOut]
   @scala.inline
-  def elasticInOut: typings.spectacle.spectacleStrings.elasticInOut = this.cast("elasticInOut")
+  def elasticOut: typings.spectacle.spectacleStrings.elasticOut = "elasticOut".asInstanceOf[typings.spectacle.spectacleStrings.elasticOut]
   @scala.inline
-  def elasticOut: typings.spectacle.spectacleStrings.elasticOut = this.cast("elasticOut")
+  def exp: typings.spectacle.spectacleStrings.exp = "exp".asInstanceOf[typings.spectacle.spectacleStrings.exp]
   @scala.inline
-  def exp: typings.spectacle.spectacleStrings.exp = this.cast("exp")
+  def expIn: typings.spectacle.spectacleStrings.expIn = "expIn".asInstanceOf[typings.spectacle.spectacleStrings.expIn]
   @scala.inline
-  def expIn: typings.spectacle.spectacleStrings.expIn = this.cast("expIn")
+  def expInOut: typings.spectacle.spectacleStrings.expInOut = "expInOut".asInstanceOf[typings.spectacle.spectacleStrings.expInOut]
   @scala.inline
-  def expInOut: typings.spectacle.spectacleStrings.expInOut = this.cast("expInOut")
+  def expOut: typings.spectacle.spectacleStrings.expOut = "expOut".asInstanceOf[typings.spectacle.spectacleStrings.expOut]
   @scala.inline
-  def expOut: typings.spectacle.spectacleStrings.expOut = this.cast("expOut")
+  def linear: typings.spectacle.spectacleStrings.linear = "linear".asInstanceOf[typings.spectacle.spectacleStrings.linear]
   @scala.inline
-  def linear: typings.spectacle.spectacleStrings.linear = this.cast("linear")
+  def linearIn: typings.spectacle.spectacleStrings.linearIn = "linearIn".asInstanceOf[typings.spectacle.spectacleStrings.linearIn]
   @scala.inline
-  def linearIn: typings.spectacle.spectacleStrings.linearIn = this.cast("linearIn")
+  def linearInOut: typings.spectacle.spectacleStrings.linearInOut = "linearInOut".asInstanceOf[typings.spectacle.spectacleStrings.linearInOut]
   @scala.inline
-  def linearInOut: typings.spectacle.spectacleStrings.linearInOut = this.cast("linearInOut")
+  def linearOut: typings.spectacle.spectacleStrings.linearOut = "linearOut".asInstanceOf[typings.spectacle.spectacleStrings.linearOut]
   @scala.inline
-  def linearOut: typings.spectacle.spectacleStrings.linearOut = this.cast("linearOut")
+  def poly: typings.spectacle.spectacleStrings.poly = "poly".asInstanceOf[typings.spectacle.spectacleStrings.poly]
   @scala.inline
-  def poly: typings.spectacle.spectacleStrings.poly = this.cast("poly")
+  def polyIn: typings.spectacle.spectacleStrings.polyIn = "polyIn".asInstanceOf[typings.spectacle.spectacleStrings.polyIn]
   @scala.inline
-  def polyIn: typings.spectacle.spectacleStrings.polyIn = this.cast("polyIn")
+  def polyInOut: typings.spectacle.spectacleStrings.polyInOut = "polyInOut".asInstanceOf[typings.spectacle.spectacleStrings.polyInOut]
   @scala.inline
-  def polyInOut: typings.spectacle.spectacleStrings.polyInOut = this.cast("polyInOut")
+  def polyOut: typings.spectacle.spectacleStrings.polyOut = "polyOut".asInstanceOf[typings.spectacle.spectacleStrings.polyOut]
   @scala.inline
-  def polyOut: typings.spectacle.spectacleStrings.polyOut = this.cast("polyOut")
+  def quad: typings.spectacle.spectacleStrings.quad = "quad".asInstanceOf[typings.spectacle.spectacleStrings.quad]
   @scala.inline
-  def quad: typings.spectacle.spectacleStrings.quad = this.cast("quad")
+  def quadIn: typings.spectacle.spectacleStrings.quadIn = "quadIn".asInstanceOf[typings.spectacle.spectacleStrings.quadIn]
   @scala.inline
-  def quadIn: typings.spectacle.spectacleStrings.quadIn = this.cast("quadIn")
+  def quadInOut: typings.spectacle.spectacleStrings.quadInOut = "quadInOut".asInstanceOf[typings.spectacle.spectacleStrings.quadInOut]
   @scala.inline
-  def quadInOut: typings.spectacle.spectacleStrings.quadInOut = this.cast("quadInOut")
+  def quadOut: typings.spectacle.spectacleStrings.quadOut = "quadOut".asInstanceOf[typings.spectacle.spectacleStrings.quadOut]
   @scala.inline
-  def quadOut: typings.spectacle.spectacleStrings.quadOut = this.cast("quadOut")
+  def sin: typings.spectacle.spectacleStrings.sin = "sin".asInstanceOf[typings.spectacle.spectacleStrings.sin]
   @scala.inline
-  def sin: typings.spectacle.spectacleStrings.sin = this.cast("sin")
+  def sinIn: typings.spectacle.spectacleStrings.sinIn = "sinIn".asInstanceOf[typings.spectacle.spectacleStrings.sinIn]
   @scala.inline
-  def sinIn: typings.spectacle.spectacleStrings.sinIn = this.cast("sinIn")
+  def sinInOut: typings.spectacle.spectacleStrings.sinInOut = "sinInOut".asInstanceOf[typings.spectacle.spectacleStrings.sinInOut]
   @scala.inline
-  def sinInOut: typings.spectacle.spectacleStrings.sinInOut = this.cast("sinInOut")
-  @scala.inline
-  def sinOut: typings.spectacle.spectacleStrings.sinOut = this.cast("sinOut")
+  def sinOut: typings.spectacle.spectacleStrings.sinOut = "sinOut".asInstanceOf[typings.spectacle.spectacleStrings.sinOut]
 }
 

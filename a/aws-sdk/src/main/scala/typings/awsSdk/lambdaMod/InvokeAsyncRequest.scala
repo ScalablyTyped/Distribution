@@ -20,7 +20,6 @@ object InvokeAsyncRequest {
   @scala.inline
   def apply(FunctionName: NamespacedFunctionName, InvokeArgs: BlobStream): InvokeAsyncRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], InvokeArgs = InvokeArgs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InvokeAsyncRequest]
   }
 }

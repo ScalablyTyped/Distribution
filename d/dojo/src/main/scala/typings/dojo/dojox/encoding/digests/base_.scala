@@ -82,7 +82,6 @@ object base_ {
     wordToString: js.Array[String] => Unit
   ): base_ = {
     val __obj = js.Dynamic.literal(MD5 = js.Any.fromFunction2(MD5), SHA1 = js.Any.fromFunction2(SHA1), addWords = js.Any.fromFunction2(addWords), outputTypes = outputTypes.asInstanceOf[js.Any], stringToUtf8 = js.Any.fromFunction1(stringToUtf8), stringToWord = js.Any.fromFunction1(stringToWord), wordToBase64 = js.Any.fromFunction1(wordToBase64), wordToHex = js.Any.fromFunction1(wordToHex), wordToString = js.Any.fromFunction1(wordToString))
-  
     __obj.asInstanceOf[base_]
   }
 }

@@ -18,7 +18,6 @@ object SavedResource {
   @scala.inline
   def apply(generate: AnonLocale => Request_[Report], list: AnonAccountId => Request_[SavedReports]): SavedResource = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[SavedResource]
   }
 }

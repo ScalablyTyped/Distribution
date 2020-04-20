@@ -41,7 +41,6 @@ object AnonNavigate {
     viewPortKeyPress: (IScope, viewportKeyPressHandler[TEntity]) => Unit
   ): AnonNavigate[TEntity] = {
     val __obj = js.Dynamic.literal(navigate = js.Any.fromFunction2(navigate), viewPortKeyDown = js.Any.fromFunction2(viewPortKeyDown), viewPortKeyPress = js.Any.fromFunction2(viewPortKeyPress))
-  
     __obj.asInstanceOf[AnonNavigate[TEntity]]
   }
 }

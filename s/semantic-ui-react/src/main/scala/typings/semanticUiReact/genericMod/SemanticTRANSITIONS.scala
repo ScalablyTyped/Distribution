@@ -41,68 +41,66 @@ trait SemanticTRANSITIONS extends js.Object
 
 object SemanticTRANSITIONS {
   @scala.inline
-  def bounce: typings.semanticUiReact.semanticUiReactStrings.bounce = this.cast("bounce")
+  def bounce: typings.semanticUiReact.semanticUiReactStrings.bounce = "bounce".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bounce]
   @scala.inline
-  def browse: typings.semanticUiReact.semanticUiReactStrings.browse = this.cast("browse")
+  def browse: typings.semanticUiReact.semanticUiReactStrings.browse = "browse".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.browse]
   @scala.inline
-  def `browse right`: typings.semanticUiReact.semanticUiReactStrings.`browse right` = this.cast("browse right")
+  def `browse right`: typings.semanticUiReact.semanticUiReactStrings.`browse right` = ("browse right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`browse right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def drop: typings.semanticUiReact.semanticUiReactStrings.drop = "drop".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.drop]
   @scala.inline
-  def drop: typings.semanticUiReact.semanticUiReactStrings.drop = this.cast("drop")
+  def fade: typings.semanticUiReact.semanticUiReactStrings.fade = "fade".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fade]
   @scala.inline
-  def fade: typings.semanticUiReact.semanticUiReactStrings.fade = this.cast("fade")
+  def `fade down`: typings.semanticUiReact.semanticUiReactStrings.`fade down` = ("fade down").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`fade down`]
   @scala.inline
-  def `fade down`: typings.semanticUiReact.semanticUiReactStrings.`fade down` = this.cast("fade down")
+  def `fade left`: typings.semanticUiReact.semanticUiReactStrings.`fade left` = ("fade left").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`fade left`]
   @scala.inline
-  def `fade left`: typings.semanticUiReact.semanticUiReactStrings.`fade left` = this.cast("fade left")
+  def `fade right`: typings.semanticUiReact.semanticUiReactStrings.`fade right` = ("fade right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`fade right`]
   @scala.inline
-  def `fade right`: typings.semanticUiReact.semanticUiReactStrings.`fade right` = this.cast("fade right")
+  def `fade up`: typings.semanticUiReact.semanticUiReactStrings.`fade up` = ("fade up").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`fade up`]
   @scala.inline
-  def `fade up`: typings.semanticUiReact.semanticUiReactStrings.`fade up` = this.cast("fade up")
+  def flash: typings.semanticUiReact.semanticUiReactStrings.flash = "flash".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.flash]
   @scala.inline
-  def flash: typings.semanticUiReact.semanticUiReactStrings.flash = this.cast("flash")
+  def `fly down`: typings.semanticUiReact.semanticUiReactStrings.`fly down` = ("fly down").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`fly down`]
   @scala.inline
-  def `fly down`: typings.semanticUiReact.semanticUiReactStrings.`fly down` = this.cast("fly down")
+  def `fly left`: typings.semanticUiReact.semanticUiReactStrings.`fly left` = ("fly left").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`fly left`]
   @scala.inline
-  def `fly left`: typings.semanticUiReact.semanticUiReactStrings.`fly left` = this.cast("fly left")
+  def `fly right`: typings.semanticUiReact.semanticUiReactStrings.`fly right` = ("fly right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`fly right`]
   @scala.inline
-  def `fly right`: typings.semanticUiReact.semanticUiReactStrings.`fly right` = this.cast("fly right")
+  def `fly up`: typings.semanticUiReact.semanticUiReactStrings.`fly up` = ("fly up").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`fly up`]
   @scala.inline
-  def `fly up`: typings.semanticUiReact.semanticUiReactStrings.`fly up` = this.cast("fly up")
+  def glow: typings.semanticUiReact.semanticUiReactStrings.glow = "glow".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.glow]
   @scala.inline
-  def glow: typings.semanticUiReact.semanticUiReactStrings.glow = this.cast("glow")
+  def `horizontal flip`: typings.semanticUiReact.semanticUiReactStrings.`horizontal flip` = ("horizontal flip").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`horizontal flip`]
   @scala.inline
-  def `horizontal flip`: typings.semanticUiReact.semanticUiReactStrings.`horizontal flip` = this.cast("horizontal flip")
+  def jiggle: typings.semanticUiReact.semanticUiReactStrings.jiggle = "jiggle".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jiggle]
   @scala.inline
-  def jiggle: typings.semanticUiReact.semanticUiReactStrings.jiggle = this.cast("jiggle")
+  def pulse: typings.semanticUiReact.semanticUiReactStrings.pulse = "pulse".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pulse]
   @scala.inline
-  def pulse: typings.semanticUiReact.semanticUiReactStrings.pulse = this.cast("pulse")
+  def scale: typings.semanticUiReact.semanticUiReactStrings.scale = "scale".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.scale]
   @scala.inline
-  def scale: typings.semanticUiReact.semanticUiReactStrings.scale = this.cast("scale")
+  def shake: typings.semanticUiReact.semanticUiReactStrings.shake = "shake".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.shake]
   @scala.inline
-  def shake: typings.semanticUiReact.semanticUiReactStrings.shake = this.cast("shake")
+  def `slide down`: typings.semanticUiReact.semanticUiReactStrings.`slide down` = ("slide down").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`slide down`]
   @scala.inline
-  def `slide down`: typings.semanticUiReact.semanticUiReactStrings.`slide down` = this.cast("slide down")
+  def `slide left`: typings.semanticUiReact.semanticUiReactStrings.`slide left` = ("slide left").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`slide left`]
   @scala.inline
-  def `slide left`: typings.semanticUiReact.semanticUiReactStrings.`slide left` = this.cast("slide left")
+  def `slide right`: typings.semanticUiReact.semanticUiReactStrings.`slide right` = ("slide right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`slide right`]
   @scala.inline
-  def `slide right`: typings.semanticUiReact.semanticUiReactStrings.`slide right` = this.cast("slide right")
+  def `slide up`: typings.semanticUiReact.semanticUiReactStrings.`slide up` = ("slide up").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`slide up`]
   @scala.inline
-  def `slide up`: typings.semanticUiReact.semanticUiReactStrings.`slide up` = this.cast("slide up")
+  def `swing down`: typings.semanticUiReact.semanticUiReactStrings.`swing down` = ("swing down").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`swing down`]
   @scala.inline
-  def `swing down`: typings.semanticUiReact.semanticUiReactStrings.`swing down` = this.cast("swing down")
+  def `swing left`: typings.semanticUiReact.semanticUiReactStrings.`swing left` = ("swing left").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`swing left`]
   @scala.inline
-  def `swing left`: typings.semanticUiReact.semanticUiReactStrings.`swing left` = this.cast("swing left")
+  def `swing right`: typings.semanticUiReact.semanticUiReactStrings.`swing right` = ("swing right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`swing right`]
   @scala.inline
-  def `swing right`: typings.semanticUiReact.semanticUiReactStrings.`swing right` = this.cast("swing right")
+  def `swing up`: typings.semanticUiReact.semanticUiReactStrings.`swing up` = ("swing up").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`swing up`]
   @scala.inline
-  def `swing up`: typings.semanticUiReact.semanticUiReactStrings.`swing up` = this.cast("swing up")
+  def tada: typings.semanticUiReact.semanticUiReactStrings.tada = "tada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tada]
   @scala.inline
-  def tada: typings.semanticUiReact.semanticUiReactStrings.tada = this.cast("tada")
+  def `vertical flip`: typings.semanticUiReact.semanticUiReactStrings.`vertical flip` = ("vertical flip").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`vertical flip`]
   @scala.inline
-  def `vertical flip`: typings.semanticUiReact.semanticUiReactStrings.`vertical flip` = this.cast("vertical flip")
-  @scala.inline
-  def zoom: typings.semanticUiReact.semanticUiReactStrings.zoom = this.cast("zoom")
+  def zoom: typings.semanticUiReact.semanticUiReactStrings.zoom = "zoom".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zoom]
 }
 

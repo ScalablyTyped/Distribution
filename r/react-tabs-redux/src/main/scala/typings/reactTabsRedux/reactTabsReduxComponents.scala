@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object reactTabsReduxComponents extends reactTabsReduxProps {
   @scala.inline
-  def TabContent: ComponentType[TabContentProps] = js.constructorOf[typings.reactTabsRedux.mod.TabContent].asInstanceOf[typings.react.mod.ComponentType[TabContentProps]]
+  def TabContent: ComponentType[TabContentProps] = js.constructorOf[typings.reactTabsRedux.mod.TabContent].asInstanceOf[ComponentType[TabContentProps]]
   @scala.inline
-  def TabLink: ComponentType[TabLinkProps] = js.constructorOf[typings.reactTabsRedux.mod.TabLink].asInstanceOf[typings.react.mod.ComponentType[TabLinkProps]]
+  def TabLink: ComponentType[TabLinkProps] = js.constructorOf[typings.reactTabsRedux.mod.TabLink].asInstanceOf[ComponentType[TabLinkProps]]
   @scala.inline
-  def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.reactTabsRedux.mod.Tabs].asInstanceOf[typings.react.mod.ComponentType[TabsProps]]
+  def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.reactTabsRedux.mod.Tabs].asInstanceOf[ComponentType[TabsProps]]
 }
 

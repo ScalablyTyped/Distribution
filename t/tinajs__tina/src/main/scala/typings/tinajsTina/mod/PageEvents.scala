@@ -20,7 +20,6 @@ object PageEvents {
     onShareAppMessage: Page => Unit
   ): PageEvents = {
     val __obj = js.Dynamic.literal(onPageScroll = js.Any.fromFunction1(onPageScroll), onPullDownRefresh = js.Any.fromFunction1(onPullDownRefresh), onReachBottom = js.Any.fromFunction1(onReachBottom), onShareAppMessage = js.Any.fromFunction1(onShareAppMessage))
-  
     __obj.asInstanceOf[PageEvents]
   }
 }

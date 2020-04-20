@@ -27,7 +27,6 @@ object OperationsResource {
   @scala.inline
   def apply(get: AnonOperationsId => Request_[Operation], list: AnonFilter => Request_[ListOperationsResponse]): OperationsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[OperationsResource]
   }
 }

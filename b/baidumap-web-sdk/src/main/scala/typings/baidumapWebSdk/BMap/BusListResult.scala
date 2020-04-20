@@ -22,7 +22,6 @@ object BusListResult {
     moreResultsUrl: String
   ): BusListResult = {
     val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], getBusListItem = js.Any.fromFunction1(getBusListItem), getNumBusList = js.Any.fromFunction0(getNumBusList), keyword = keyword.asInstanceOf[js.Any], moreResultsUrl = moreResultsUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BusListResult]
   }
 }

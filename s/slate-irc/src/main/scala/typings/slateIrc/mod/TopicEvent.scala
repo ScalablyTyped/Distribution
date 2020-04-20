@@ -15,7 +15,6 @@ object TopicEvent {
   @scala.inline
   def apply(channel: String, hostmask: String, nick: String, topic: String): TopicEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], hostmask = hostmask.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TopicEvent]
   }
 }

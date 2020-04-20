@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Ami extends js.Object {
   /**
-    *  The description of the EC2 AMI. 
+    * The description of the EC2 AMI. 
     */
   var description: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The AMI ID of the EC2 AMI. 
+    * The AMI ID of the EC2 AMI. 
     */
   var image: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The name of the EC2 AMI. 
+    * The name of the EC2 AMI. 
     */
   var name: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The AWS Region of the EC2 AMI. 
+    * The AWS Region of the EC2 AMI. 
     */
   var region: js.UndefOr[NonEmptyString] = js.native
   var state: js.UndefOr[ImageState] = js.native

@@ -12,7 +12,6 @@ object TransformerOptions {
   @scala.inline
   def apply(filename: String): TransformerOptions = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransformerOptions]
   }
 }

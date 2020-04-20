@@ -15,16 +15,14 @@ trait Position extends js.Object
 
 object Position {
   @scala.inline
-  def absolute: typings.baseui.baseuiStrings.absolute = this.cast("absolute")
+  def absolute: typings.baseui.baseuiStrings.absolute = "absolute".asInstanceOf[typings.baseui.baseuiStrings.absolute]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fixed: typings.baseui.baseuiStrings.fixed = "fixed".asInstanceOf[typings.baseui.baseuiStrings.fixed]
   @scala.inline
-  def fixed: typings.baseui.baseuiStrings.fixed = this.cast("fixed")
+  def relative: typings.baseui.baseuiStrings.relative = "relative".asInstanceOf[typings.baseui.baseuiStrings.relative]
   @scala.inline
-  def relative: typings.baseui.baseuiStrings.relative = this.cast("relative")
+  def static: typings.baseui.baseuiStrings.static = "static".asInstanceOf[typings.baseui.baseuiStrings.static]
   @scala.inline
-  def static: typings.baseui.baseuiStrings.static = this.cast("static")
-  @scala.inline
-  def sticky: typings.baseui.baseuiStrings.sticky = this.cast("sticky")
+  def sticky: typings.baseui.baseuiStrings.sticky = "sticky".asInstanceOf[typings.baseui.baseuiStrings.sticky]
 }
 

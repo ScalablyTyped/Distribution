@@ -17,7 +17,6 @@ object SkEnumSkAlphaTypeOpaqueSk {
   @scala.inline
   def apply(Opaque: SkAlphaType, Premul: SkAlphaType, Unpremul: SkAlphaType, values: js.Array[SkAlphaType]): SkEnumSkAlphaTypeOpaqueSk = {
     val __obj = js.Dynamic.literal(Opaque = Opaque.asInstanceOf[js.Any], Premul = Premul.asInstanceOf[js.Any], Unpremul = Unpremul.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkAlphaTypeOpaqueSk]
   }
 }

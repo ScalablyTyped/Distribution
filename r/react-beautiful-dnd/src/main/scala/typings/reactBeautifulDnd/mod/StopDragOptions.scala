@@ -12,7 +12,6 @@ object StopDragOptions {
   @scala.inline
   def apply(shouldBlockNextClick: Boolean): StopDragOptions = {
     val __obj = js.Dynamic.literal(shouldBlockNextClick = shouldBlockNextClick.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopDragOptions]
   }
 }

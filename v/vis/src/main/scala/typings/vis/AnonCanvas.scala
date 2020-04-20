@@ -14,7 +14,6 @@ object AnonCanvas {
   @scala.inline
   def apply(DOM: Position, canvas: Position): AnonCanvas = {
     val __obj = js.Dynamic.literal(DOM = DOM.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCanvas]
   }
 }

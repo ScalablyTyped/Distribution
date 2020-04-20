@@ -15,7 +15,6 @@ object RefinerStructure {
   @scala.inline
   def apply(k: String, l: Double, r: js.Array[RefinementCategory]): RefinerStructure = {
     val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RefinerStructure]
   }
 }

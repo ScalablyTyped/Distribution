@@ -23,10 +23,10 @@ abstract class ChangeMembersAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FChangeMembersAction: IModel = js.native
-  def commit(): CommitEnum = js.native
+  def commit: CommitEnum = js.native
   def commit(newValue: CommitEnum): js.Any = js.native
-  def items(): IList[MemberChange] = js.native
-  def refreshInClient(): Boolean = js.native
+  def items: IList[MemberChange] = js.native
+  def refreshInClient: Boolean = js.native
   def refreshInClient(newValue: Boolean): js.Any = js.native
 }
 

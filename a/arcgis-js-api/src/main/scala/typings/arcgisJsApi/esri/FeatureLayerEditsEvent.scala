@@ -24,7 +24,6 @@ object FeatureLayerEditsEvent {
     updatedFeatures: js.Array[FeatureEditResult]
   ): FeatureLayerEditsEvent = {
     val __obj = js.Dynamic.literal(addedAttachments = addedAttachments.asInstanceOf[js.Any], addedFeatures = addedFeatures.asInstanceOf[js.Any], deletedAttachments = deletedAttachments.asInstanceOf[js.Any], deletedFeatures = deletedFeatures.asInstanceOf[js.Any], updatedAttachments = updatedAttachments.asInstanceOf[js.Any], updatedFeatures = updatedFeatures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatureLayerEditsEvent]
   }
 }

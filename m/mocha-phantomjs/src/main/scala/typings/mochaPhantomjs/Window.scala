@@ -12,7 +12,6 @@ object Window {
   @scala.inline
   def apply(mochaPhantomJS: () => MochaPhantomJsWindowOptions): Window = {
     val __obj = js.Dynamic.literal(mochaPhantomJS = js.Any.fromFunction0(mochaPhantomJS))
-  
     __obj.asInstanceOf[Window]
   }
 }

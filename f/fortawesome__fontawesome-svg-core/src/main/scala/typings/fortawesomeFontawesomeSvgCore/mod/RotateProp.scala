@@ -13,12 +13,10 @@ trait RotateProp extends js.Object
 
 object RotateProp {
   @scala.inline
-  def `180`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`180` = this.cast(180)
+  def `180`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`180` = 180.asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`180`]
   @scala.inline
-  def `270`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`270` = this.cast(270)
+  def `270`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`270` = 270.asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`270`]
   @scala.inline
-  def `90`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`90` = this.cast(90)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `90`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`90` = 90.asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`90`]
 }
 

@@ -29,7 +29,6 @@ object SubscribeToShardEvent {
     Records: js.Array[Record] | Iterable[Record]
   ): SubscribeToShardEvent = {
     val __obj = js.Dynamic.literal(ContinuationSequenceNumber = ContinuationSequenceNumber.asInstanceOf[js.Any], MillisBehindLatest = MillisBehindLatest.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscribeToShardEvent]
   }
 }

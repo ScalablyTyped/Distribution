@@ -1,15 +1,34 @@
 package typings.cypress
 
-import typings.cypress.lodashMod.MapCacheConstructor
-import typings.cypress.lodashMod.MemoizedFunction
+import org.scalablytyped.runtime.Instantiable1
+import typings.minimatch.mod.IMinimatchStatic
+import typings.minimatch.mod.IOptions
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait AnonCall extends js.Object {
-  var Cache: MapCacheConstructor = js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): T with MemoizedFunction = js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, resolver: js.Function1[/* repeated */ js.Any, _]): T with MemoizedFunction = js.native
+  var Minimatch: (Instantiable1[/* pattern */ String, typings.minimatch.mod.Minimatch]) with IMinimatchStatic = js.native
+  def apply(target: String, pattern: String): Boolean = js.native
+  def apply(target: String, pattern: String, options: IOptions): Boolean = js.native
+  /**
+    * Returns a function that tests its supplied argument, suitable for use with Array.filter
+    */
+  def filter(pattern: String): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = js.native
+  def filter(pattern: String, options: IOptions): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = js.native
+  /**
+    * Make a regular expression object from the pattern.
+    */
+  def makeRe(pattern: String): RegExp = js.native
+  def makeRe(pattern: String, options: IOptions): RegExp = js.native
+  /**
+    * Match against the list of files, in the style of fnmatch or glob.
+    * If nothing is matched, and options.nonull is set,
+    * then return a list containing the pattern itself.
+    */
+  def `match`(list: js.Array[String], pattern: String): js.Array[String] = js.native
+  def `match`(list: js.Array[String], pattern: String, options: IOptions): js.Array[String] = js.native
 }
 

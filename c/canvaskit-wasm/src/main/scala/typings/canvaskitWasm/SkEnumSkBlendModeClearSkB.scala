@@ -74,7 +74,6 @@ object SkEnumSkBlendModeClearSkB {
     values: js.Array[SkBlendMode]
   ): SkEnumSkBlendModeClearSkB = {
     val __obj = js.Dynamic.literal(Clear = Clear.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], ColorBurn = ColorBurn.asInstanceOf[js.Any], ColorDodge = ColorDodge.asInstanceOf[js.Any], Darken = Darken.asInstanceOf[js.Any], Difference = Difference.asInstanceOf[js.Any], Dst = Dst.asInstanceOf[js.Any], DstATop = DstATop.asInstanceOf[js.Any], DstIn = DstIn.asInstanceOf[js.Any], DstOut = DstOut.asInstanceOf[js.Any], DstOver = DstOver.asInstanceOf[js.Any], Exclusion = Exclusion.asInstanceOf[js.Any], HardLight = HardLight.asInstanceOf[js.Any], Hue = Hue.asInstanceOf[js.Any], Lighten = Lighten.asInstanceOf[js.Any], Luminosity = Luminosity.asInstanceOf[js.Any], Modulate = Modulate.asInstanceOf[js.Any], Multiply = Multiply.asInstanceOf[js.Any], Overlay = Overlay.asInstanceOf[js.Any], Plus = Plus.asInstanceOf[js.Any], Saturation = Saturation.asInstanceOf[js.Any], Screen = Screen.asInstanceOf[js.Any], SoftLight = SoftLight.asInstanceOf[js.Any], Src = Src.asInstanceOf[js.Any], SrcATop = SrcATop.asInstanceOf[js.Any], SrcIn = SrcIn.asInstanceOf[js.Any], SrcOut = SrcOut.asInstanceOf[js.Any], SrcOver = SrcOver.asInstanceOf[js.Any], Xor = Xor.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkBlendModeClearSkB]
   }
 }

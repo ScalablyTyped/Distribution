@@ -12,7 +12,6 @@ object AnonExist {
   @scala.inline
   def apply(exist: Boolean): AnonExist = {
     val __obj = js.Dynamic.literal(exist = exist.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExist]
   }
 }

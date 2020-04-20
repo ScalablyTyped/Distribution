@@ -13,7 +13,6 @@ object AnonClientHeightKey {
   @scala.inline
   def apply(clientHeightKey: js.Any, offsetHeightKey: js.Any): AnonClientHeightKey = {
     val __obj = js.Dynamic.literal(clientHeightKey = clientHeightKey.asInstanceOf[js.Any], offsetHeightKey = offsetHeightKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClientHeightKey]
   }
 }

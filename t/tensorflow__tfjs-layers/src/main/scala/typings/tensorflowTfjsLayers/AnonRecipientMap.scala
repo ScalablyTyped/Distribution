@@ -15,7 +15,6 @@ object AnonRecipientMap {
   @scala.inline
   def apply(recipientMap: RecipientMap, sorted: js.Array[SymbolicTensor]): AnonRecipientMap = {
     val __obj = js.Dynamic.literal(recipientMap = recipientMap.asInstanceOf[js.Any], sorted = sorted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRecipientMap]
   }
 }

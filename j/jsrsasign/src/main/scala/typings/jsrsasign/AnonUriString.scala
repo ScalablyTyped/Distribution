@@ -13,7 +13,6 @@ object AnonUriString {
   @scala.inline
   def apply(uri: String): AnonUriString = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUriString]
   }
 }

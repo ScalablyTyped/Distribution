@@ -24,7 +24,6 @@ object dom {
   @scala.inline
   def apply(Render: (HTMLElement, DomTemplated) => Unit): dom = {
     val __obj = js.Dynamic.literal(Render = js.Any.fromFunction2(Render))
-  
     __obj.asInstanceOf[dom]
   }
 }

@@ -12,7 +12,6 @@ object TStruct {
   @scala.inline
   def apply(fname: String): TStruct = {
     val __obj = js.Dynamic.literal(fname = fname.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TStruct]
   }
 }

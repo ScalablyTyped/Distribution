@@ -29,7 +29,6 @@ object JenkinsPromisifiedAPI {
     view: AnonDestroy
   ): JenkinsPromisifiedAPI = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], info = js.Any.fromFunction0(info), job = job.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JenkinsPromisifiedAPI]
   }
 }

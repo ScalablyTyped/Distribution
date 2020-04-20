@@ -12,7 +12,6 @@ object ObjectWithIdentifier {
   @scala.inline
   def apply(identifier: String): ObjectWithIdentifier = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectWithIdentifier]
   }
 }

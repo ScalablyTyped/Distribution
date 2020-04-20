@@ -20,7 +20,6 @@ object MultipleBatchResponse {
   @scala.inline
   def apply(objectIDs: js.Array[String], taskID: Record[String, Double]): MultipleBatchResponse = {
     val __obj = js.Dynamic.literal(objectIDs = objectIDs.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultipleBatchResponse]
   }
 }

@@ -20,7 +20,6 @@ object BatchDetectKeyPhrasesResponse {
   @scala.inline
   def apply(ErrorList: BatchItemErrorList, ResultList: ListOfDetectKeyPhrasesResult): BatchDetectKeyPhrasesResponse = {
     val __obj = js.Dynamic.literal(ErrorList = ErrorList.asInstanceOf[js.Any], ResultList = ResultList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDetectKeyPhrasesResponse]
   }
 }

@@ -16,7 +16,6 @@ object PortFromElm {
     unsubscribe: js.Function1[/* value */ V, Unit] => Unit
   ): PortFromElm[V] = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe), unsubscribe = js.Any.fromFunction1(unsubscribe))
-  
     __obj.asInstanceOf[PortFromElm[V]]
   }
 }

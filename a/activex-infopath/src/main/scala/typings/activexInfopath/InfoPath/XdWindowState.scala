@@ -16,12 +16,10 @@ trait XdWindowState extends js.Object
 
 object XdWindowState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xdWindowStateMaximize: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xdWindowStateMaximize: `1` = this.cast(1)
+  def xdWindowStateMinimize: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xdWindowStateMinimize: `3` = this.cast(3)
-  @scala.inline
-  def xdWindowStateNormal: `2` = this.cast(2)
+  def xdWindowStateNormal: `2` = 2.asInstanceOf[`2`]
 }
 

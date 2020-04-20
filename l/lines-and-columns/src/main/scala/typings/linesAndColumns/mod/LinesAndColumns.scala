@@ -22,7 +22,6 @@ object LinesAndColumns {
     string: js.Any
   ): LinesAndColumns = {
     val __obj = js.Dynamic.literal(indexForLocation = js.Any.fromFunction1(indexForLocation), lengthOfLine = js.Any.fromFunction1(lengthOfLine), locationForIndex = js.Any.fromFunction1(locationForIndex), offsets = offsets.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LinesAndColumns]
   }
 }

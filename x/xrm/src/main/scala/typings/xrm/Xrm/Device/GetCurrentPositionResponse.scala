@@ -22,7 +22,6 @@ object GetCurrentPositionResponse {
   @scala.inline
   def apply(coords: js.Any, timestamp: Double): GetCurrentPositionResponse = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCurrentPositionResponse]
   }
 }

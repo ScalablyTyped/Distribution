@@ -14,7 +14,6 @@ object ClientResponse {
   @scala.inline
   def apply(error: Error, payload: HemeraMessagePayload): ClientResponse = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientResponse]
   }
 }

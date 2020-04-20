@@ -20,7 +20,6 @@ object NotificationChannel {
   @scala.inline
   def apply(RoleArn: RoleArn, SNSTopicArn: SNSTopicArn): NotificationChannel = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], SNSTopicArn = SNSTopicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationChannel]
   }
 }

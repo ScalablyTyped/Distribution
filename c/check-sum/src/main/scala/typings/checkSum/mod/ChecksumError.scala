@@ -14,7 +14,6 @@ object ChecksumError {
   @scala.inline
   def apply(actual: String, algorithm: String, expected: String): ChecksumError = {
     val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], algorithm = algorithm.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChecksumError]
   }
 }

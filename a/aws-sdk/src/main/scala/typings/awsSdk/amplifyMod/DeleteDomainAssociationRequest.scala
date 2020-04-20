@@ -20,7 +20,6 @@ object DeleteDomainAssociationRequest {
   @scala.inline
   def apply(appId: AppId, domainName: DomainName): DeleteDomainAssociationRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDomainAssociationRequest]
   }
 }

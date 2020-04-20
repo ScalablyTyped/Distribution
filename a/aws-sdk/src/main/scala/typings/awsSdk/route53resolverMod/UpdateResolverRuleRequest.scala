@@ -20,7 +20,6 @@ object UpdateResolverRuleRequest {
   @scala.inline
   def apply(Config: ResolverRuleConfig, ResolverRuleId: ResourceId): UpdateResolverRuleRequest = {
     val __obj = js.Dynamic.literal(Config = Config.asInstanceOf[js.Any], ResolverRuleId = ResolverRuleId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateResolverRuleRequest]
   }
 }

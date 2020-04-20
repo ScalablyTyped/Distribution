@@ -23,7 +23,6 @@ object LastRelease {
   @scala.inline
   def apply(gitHead: String, gitTag: String, version: String): LastRelease = {
     val __obj = js.Dynamic.literal(gitHead = gitHead.asInstanceOf[js.Any], gitTag = gitTag.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LastRelease]
   }
 }

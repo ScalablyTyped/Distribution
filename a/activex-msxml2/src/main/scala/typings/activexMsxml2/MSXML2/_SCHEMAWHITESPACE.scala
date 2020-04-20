@@ -19,14 +19,12 @@ trait _SCHEMAWHITESPACE extends js.Object
 
 object _SCHEMAWHITESPACE {
   @scala.inline
-  def SCHEMAWHITESPACE_COLLAPSE: `2` = this.cast(2)
+  def SCHEMAWHITESPACE_COLLAPSE: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SCHEMAWHITESPACE_NONE: `-1` = this.cast(-1)
+  def SCHEMAWHITESPACE_NONE: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def SCHEMAWHITESPACE_PRESERVE: `0` = this.cast(0)
+  def SCHEMAWHITESPACE_PRESERVE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SCHEMAWHITESPACE_REPLACE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SCHEMAWHITESPACE_REPLACE: `1` = 1.asInstanceOf[`1`]
 }
 

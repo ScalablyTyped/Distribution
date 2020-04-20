@@ -36,7 +36,6 @@ object HPAScalingRules {
   @scala.inline
   def apply(policies: js.Array[HPAScalingPolicy], selectPolicy: String, stabilizationWindowSeconds: Double): HPAScalingRules = {
     val __obj = js.Dynamic.literal(policies = policies.asInstanceOf[js.Any], selectPolicy = selectPolicy.asInstanceOf[js.Any], stabilizationWindowSeconds = stabilizationWindowSeconds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HPAScalingRules]
   }
 }

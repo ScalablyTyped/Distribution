@@ -16,7 +16,6 @@ object DeleteDataflowEndpointGroupRequest {
   @scala.inline
   def apply(dataflowEndpointGroupId: String): DeleteDataflowEndpointGroupRequest = {
     val __obj = js.Dynamic.literal(dataflowEndpointGroupId = dataflowEndpointGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDataflowEndpointGroupRequest]
   }
 }

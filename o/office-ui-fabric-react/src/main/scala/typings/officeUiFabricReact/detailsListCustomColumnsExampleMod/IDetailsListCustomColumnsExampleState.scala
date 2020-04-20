@@ -21,7 +21,6 @@ object IDetailsListCustomColumnsExampleState {
     ]
   ): IDetailsListCustomColumnsExampleState = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], sortedItems = sortedItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDetailsListCustomColumnsExampleState]
   }
 }

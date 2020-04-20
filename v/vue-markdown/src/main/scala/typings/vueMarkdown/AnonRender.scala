@@ -24,7 +24,6 @@ object AnonRender {
     rules: AnonCodeblock
   ): AnonRender = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], renderAttrs = renderAttrs.asInstanceOf[js.Any], renderInline = renderInline.asInstanceOf[js.Any], renderInlineAsText = renderInlineAsText.asInstanceOf[js.Any], renderToken = renderToken.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRender]
   }
 }

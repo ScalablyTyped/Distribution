@@ -26,7 +26,6 @@ object AnonDuration {
     result: RollupBuild
   ): AnonDuration = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDuration]
   }
 }

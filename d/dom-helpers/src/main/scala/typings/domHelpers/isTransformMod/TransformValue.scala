@@ -31,48 +31,46 @@ trait TransformValue extends js.Object
 
 object TransformValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def matrix: typings.domHelpers.domHelpersStrings.matrix = "matrix".asInstanceOf[typings.domHelpers.domHelpersStrings.matrix]
   @scala.inline
-  def matrix: typings.domHelpers.domHelpersStrings.matrix = this.cast("matrix")
+  def matrix3d: typings.domHelpers.domHelpersStrings.matrix3d = "matrix3d".asInstanceOf[typings.domHelpers.domHelpersStrings.matrix3d]
   @scala.inline
-  def matrix3d: typings.domHelpers.domHelpersStrings.matrix3d = this.cast("matrix3d")
+  def perspective: typings.domHelpers.domHelpersStrings.perspective = "perspective".asInstanceOf[typings.domHelpers.domHelpersStrings.perspective]
   @scala.inline
-  def perspective: typings.domHelpers.domHelpersStrings.perspective = this.cast("perspective")
+  def rotate: typings.domHelpers.domHelpersStrings.rotate = "rotate".asInstanceOf[typings.domHelpers.domHelpersStrings.rotate]
   @scala.inline
-  def rotate: typings.domHelpers.domHelpersStrings.rotate = this.cast("rotate")
+  def rotate3d: typings.domHelpers.domHelpersStrings.rotate3d = "rotate3d".asInstanceOf[typings.domHelpers.domHelpersStrings.rotate3d]
   @scala.inline
-  def rotate3d: typings.domHelpers.domHelpersStrings.rotate3d = this.cast("rotate3d")
+  def rotateX: typings.domHelpers.domHelpersStrings.rotateX = "rotateX".asInstanceOf[typings.domHelpers.domHelpersStrings.rotateX]
   @scala.inline
-  def rotateX: typings.domHelpers.domHelpersStrings.rotateX = this.cast("rotateX")
+  def rotateY: typings.domHelpers.domHelpersStrings.rotateY = "rotateY".asInstanceOf[typings.domHelpers.domHelpersStrings.rotateY]
   @scala.inline
-  def rotateY: typings.domHelpers.domHelpersStrings.rotateY = this.cast("rotateY")
+  def rotateZ: typings.domHelpers.domHelpersStrings.rotateZ = "rotateZ".asInstanceOf[typings.domHelpers.domHelpersStrings.rotateZ]
   @scala.inline
-  def rotateZ: typings.domHelpers.domHelpersStrings.rotateZ = this.cast("rotateZ")
+  def scale: typings.domHelpers.domHelpersStrings.scale = "scale".asInstanceOf[typings.domHelpers.domHelpersStrings.scale]
   @scala.inline
-  def scale: typings.domHelpers.domHelpersStrings.scale = this.cast("scale")
+  def scale3d: typings.domHelpers.domHelpersStrings.scale3d = "scale3d".asInstanceOf[typings.domHelpers.domHelpersStrings.scale3d]
   @scala.inline
-  def scale3d: typings.domHelpers.domHelpersStrings.scale3d = this.cast("scale3d")
+  def scaleX: typings.domHelpers.domHelpersStrings.scaleX = "scaleX".asInstanceOf[typings.domHelpers.domHelpersStrings.scaleX]
   @scala.inline
-  def scaleX: typings.domHelpers.domHelpersStrings.scaleX = this.cast("scaleX")
+  def scaleY: typings.domHelpers.domHelpersStrings.scaleY = "scaleY".asInstanceOf[typings.domHelpers.domHelpersStrings.scaleY]
   @scala.inline
-  def scaleY: typings.domHelpers.domHelpersStrings.scaleY = this.cast("scaleY")
+  def scaleZ: typings.domHelpers.domHelpersStrings.scaleZ = "scaleZ".asInstanceOf[typings.domHelpers.domHelpersStrings.scaleZ]
   @scala.inline
-  def scaleZ: typings.domHelpers.domHelpersStrings.scaleZ = this.cast("scaleZ")
+  def skew: typings.domHelpers.domHelpersStrings.skew = "skew".asInstanceOf[typings.domHelpers.domHelpersStrings.skew]
   @scala.inline
-  def skew: typings.domHelpers.domHelpersStrings.skew = this.cast("skew")
+  def skewX: typings.domHelpers.domHelpersStrings.skewX = "skewX".asInstanceOf[typings.domHelpers.domHelpersStrings.skewX]
   @scala.inline
-  def skewX: typings.domHelpers.domHelpersStrings.skewX = this.cast("skewX")
+  def skewY: typings.domHelpers.domHelpersStrings.skewY = "skewY".asInstanceOf[typings.domHelpers.domHelpersStrings.skewY]
   @scala.inline
-  def skewY: typings.domHelpers.domHelpersStrings.skewY = this.cast("skewY")
+  def translate: typings.domHelpers.domHelpersStrings.translate = "translate".asInstanceOf[typings.domHelpers.domHelpersStrings.translate]
   @scala.inline
-  def translate: typings.domHelpers.domHelpersStrings.translate = this.cast("translate")
+  def translate3d: typings.domHelpers.domHelpersStrings.translate3d = "translate3d".asInstanceOf[typings.domHelpers.domHelpersStrings.translate3d]
   @scala.inline
-  def translate3d: typings.domHelpers.domHelpersStrings.translate3d = this.cast("translate3d")
+  def translateX: typings.domHelpers.domHelpersStrings.translateX = "translateX".asInstanceOf[typings.domHelpers.domHelpersStrings.translateX]
   @scala.inline
-  def translateX: typings.domHelpers.domHelpersStrings.translateX = this.cast("translateX")
+  def translateY: typings.domHelpers.domHelpersStrings.translateY = "translateY".asInstanceOf[typings.domHelpers.domHelpersStrings.translateY]
   @scala.inline
-  def translateY: typings.domHelpers.domHelpersStrings.translateY = this.cast("translateY")
-  @scala.inline
-  def translateZ: typings.domHelpers.domHelpersStrings.translateZ = this.cast("translateZ")
+  def translateZ: typings.domHelpers.domHelpersStrings.translateZ = "translateZ".asInstanceOf[typings.domHelpers.domHelpersStrings.translateZ]
 }
 

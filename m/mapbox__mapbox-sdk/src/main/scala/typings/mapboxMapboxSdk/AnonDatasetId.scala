@@ -12,7 +12,6 @@ object AnonDatasetId {
   @scala.inline
   def apply(datasetId: String): AnonDatasetId = {
     val __obj = js.Dynamic.literal(datasetId = datasetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDatasetId]
   }
 }

@@ -13,7 +13,6 @@ object Activity {
   @scala.inline
   def apply(capacityPerDay: Double, name: String): Activity = {
     val __obj = js.Dynamic.literal(capacityPerDay = capacityPerDay.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Activity]
   }
 }

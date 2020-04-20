@@ -65,7 +65,6 @@ object IgDoughnutChartMethods {
     updateSeries: js.Object => Unit
   ): IgDoughnutChartMethods = {
     val __obj = js.Dynamic.literal(addSeries = js.Any.fromFunction1(addSeries), destroy = js.Any.fromFunction0(destroy), exportVisualData = js.Any.fromFunction0(exportVisualData), flush = js.Any.fromFunction0(flush), getCenterCoordinates = js.Any.fromFunction0(getCenterCoordinates), getData = js.Any.fromFunction1(getData), getHoleRadius = js.Any.fromFunction0(getHoleRadius), removeSeries = js.Any.fromFunction1(removeSeries), updateSeries = js.Any.fromFunction1(updateSeries))
-  
     __obj.asInstanceOf[IgDoughnutChartMethods]
   }
 }

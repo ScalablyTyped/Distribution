@@ -16,7 +16,6 @@ object DeleteInputRequest {
   @scala.inline
   def apply(InputId: string): DeleteInputRequest = {
     val __obj = js.Dynamic.literal(InputId = InputId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteInputRequest]
   }
 }

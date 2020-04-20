@@ -76,7 +76,7 @@ object semanticUiRatingStrings {
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
-  def `clear rating`: `clear rating` = "clear rating".asInstanceOf[`clear rating`]
+  def `clear rating`: `clear rating` = ("clear rating").asInstanceOf[`clear rating`]
   @scala.inline
   def clearable: clearable = "clearable".asInstanceOf[clearable]
   @scala.inline
@@ -92,7 +92,7 @@ object semanticUiRatingStrings {
   @scala.inline
   def fireOnInit: fireOnInit = "fireOnInit".asInstanceOf[fireOnInit]
   @scala.inline
-  def `get rating`: `get rating` = "get rating".asInstanceOf[`get rating`]
+  def `get rating`: `get rating` = ("get rating").asInstanceOf[`get rating`]
   @scala.inline
   def initialRating: initialRating = "initialRating".asInstanceOf[initialRating]
   @scala.inline
@@ -108,7 +108,7 @@ object semanticUiRatingStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set rating`: `set rating` = "set rating".asInstanceOf[`set rating`]
+  def `set rating`: `set rating` = ("set rating").asInstanceOf[`set rating`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline

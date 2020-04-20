@@ -14,7 +14,6 @@ object HttpOperationResponse {
   @scala.inline
   def apply[T](body: T, request: WebResource, response: typings.node.httpMod.IncomingMessage): HttpOperationResponse[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HttpOperationResponse[T]]
   }
 }

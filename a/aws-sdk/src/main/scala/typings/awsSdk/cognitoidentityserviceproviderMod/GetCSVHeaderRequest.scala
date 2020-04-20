@@ -16,7 +16,6 @@ object GetCSVHeaderRequest {
   @scala.inline
   def apply(UserPoolId: UserPoolIdType): GetCSVHeaderRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCSVHeaderRequest]
   }
 }

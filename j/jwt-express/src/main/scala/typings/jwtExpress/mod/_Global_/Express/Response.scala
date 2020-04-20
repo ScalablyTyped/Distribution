@@ -20,7 +20,6 @@ object Response {
   @scala.inline
   def apply(jwt: js.Any => JWT): Response = {
     val __obj = js.Dynamic.literal(jwt = js.Any.fromFunction1(jwt))
-  
     __obj.asInstanceOf[Response]
   }
 }

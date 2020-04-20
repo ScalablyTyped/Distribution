@@ -13,7 +13,6 @@ object StateRegistry {
   @scala.inline
   def apply(register: Ng1StateDeclaration => js.Any): StateRegistry = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
-  
     __obj.asInstanceOf[StateRegistry]
   }
 }

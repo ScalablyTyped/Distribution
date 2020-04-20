@@ -19,7 +19,6 @@ object AnonDatabaseName {
     url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.FnCallUriOptionsCallback>[0] */ js.Any
   ): AnonDatabaseName = {
     val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDatabaseName]
   }
 }

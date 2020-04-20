@@ -70,7 +70,6 @@ object AnonBOB {
     XPF: js.Array[String]
   ): AnonBOB = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BDT = BDT.asInstanceOf[js.Any], BOB = BOB.asInstanceOf[js.Any], BRL = BRL.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], CUP = CUP.asInstanceOf[js.Any], EGP = EGP.asInstanceOf[js.Any], EUR = EUR.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], ILS = ILS.asInstanceOf[js.Any], INR = INR.asInstanceOf[js.Any], ISK = ISK.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], PYG = PYG.asInstanceOf[js.Any], SCR = SCR.asInstanceOf[js.Any], SEK = SEK.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], UYU = UYU.asInstanceOf[js.Any], VND = VND.asInstanceOf[js.Any], XAF = XAF.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any], XOF = XOF.asInstanceOf[js.Any], XPF = XPF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBOB]
   }
 }

@@ -20,7 +20,6 @@ object UntagCertificateAuthorityRequest {
   @scala.inline
   def apply(CertificateAuthorityArn: Arn, Tags: TagList): UntagCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntagCertificateAuthorityRequest]
   }
 }

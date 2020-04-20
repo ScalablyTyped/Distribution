@@ -23,7 +23,7 @@ class ConfigurationSettings protected () extends ProjectSettingsPart {
   ) = this()
   @JSName("model")
   var model_FConfigurationSettings: IModel = js.native
-  def configurations(): IList[Configuration] = js.native
+  def configurations: IList[Configuration] = js.native
 }
 
 /* static members */

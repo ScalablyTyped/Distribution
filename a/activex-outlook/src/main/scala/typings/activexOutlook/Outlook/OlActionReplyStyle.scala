@@ -24,20 +24,18 @@ trait OlActionReplyStyle extends js.Object
 
 object OlActionReplyStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olEmbedOriginalItem: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olEmbedOriginalItem: `1` = this.cast(1)
+  def olIncludeOriginalText: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olIncludeOriginalText: `2` = this.cast(2)
+  def olIndentOriginalText: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olIndentOriginalText: `3` = this.cast(3)
+  def olLinkOriginalItem: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olLinkOriginalItem: `4` = this.cast(4)
+  def olOmitOriginalText: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olOmitOriginalText: `0` = this.cast(0)
+  def olReplyTickOriginalText: `1000` = 1000.asInstanceOf[`1000`]
   @scala.inline
-  def olReplyTickOriginalText: `1000` = this.cast(1000)
-  @scala.inline
-  def olUserPreference: `5` = this.cast(5)
+  def olUserPreference: `5` = 5.asInstanceOf[`5`]
 }
 

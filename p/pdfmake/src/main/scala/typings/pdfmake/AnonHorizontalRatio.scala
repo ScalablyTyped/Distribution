@@ -29,7 +29,6 @@ object AnonHorizontalRatio {
     verticalRatio: Double
   ): AnonHorizontalRatio = {
     val __obj = js.Dynamic.literal(horizontalRatio = horizontalRatio.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], pageInnerHeight = pageInnerHeight.asInstanceOf[js.Any], pageInnerWidth = pageInnerWidth.asInstanceOf[js.Any], pageNumber = pageNumber.asInstanceOf[js.Any], pageOrientation = pageOrientation.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], verticalRatio = verticalRatio.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHorizontalRatio]
   }
 }

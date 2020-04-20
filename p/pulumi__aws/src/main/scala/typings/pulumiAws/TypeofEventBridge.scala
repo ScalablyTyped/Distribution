@@ -13,7 +13,6 @@ object TypeofEventBridge {
   @scala.inline
   def apply(Types: TypeofEventBridge): TypeofEventBridge = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofEventBridge]
   }
 }

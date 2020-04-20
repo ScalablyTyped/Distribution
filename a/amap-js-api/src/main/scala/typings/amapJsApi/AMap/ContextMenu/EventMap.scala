@@ -23,7 +23,6 @@ object EventMap {
     open: Event_[open, AnonTarget[I]]
   ): EventMap[I] = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventMap[I]]
   }
 }

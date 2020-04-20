@@ -13,7 +13,6 @@ object LineColumnInfo {
   @scala.inline
   def apply(col: Double, line: Double): LineColumnInfo = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LineColumnInfo]
   }
 }

@@ -52,7 +52,6 @@ object TabtabEnv {
     words: Double
   ): TabtabEnv = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any], lastPartial = lastPartial.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabtabEnv]
   }
 }

@@ -28,7 +28,6 @@ object AttributorStore {
     values: () => StringDictionary[js.Any]
   ): AttributorStore = {
     val __obj = js.Dynamic.literal(attribute = js.Any.fromFunction2(attribute), attributes = attributes.asInstanceOf[js.Any], build = js.Any.fromFunction0(build), copy = js.Any.fromFunction1(copy), domNode = domNode.asInstanceOf[js.Any], move = js.Any.fromFunction1(move), values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[AttributorStore]
   }
 }

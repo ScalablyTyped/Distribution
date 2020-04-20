@@ -13,7 +13,6 @@ object IStickyContext {
   @scala.inline
   def apply(scrollablePane: Requireable[js.Object]): IStickyContext = {
     val __obj = js.Dynamic.literal(scrollablePane = scrollablePane.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStickyContext]
   }
 }

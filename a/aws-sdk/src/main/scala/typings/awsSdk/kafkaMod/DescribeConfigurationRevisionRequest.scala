@@ -24,7 +24,6 @@ object DescribeConfigurationRevisionRequest {
   @scala.inline
   def apply(Arn: string, Revision: long): DescribeConfigurationRevisionRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], Revision = Revision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeConfigurationRevisionRequest]
   }
 }

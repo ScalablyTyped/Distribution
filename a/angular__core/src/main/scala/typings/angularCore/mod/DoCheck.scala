@@ -19,7 +19,6 @@ object DoCheck {
   @scala.inline
   def apply(ngDoCheck: () => Unit): DoCheck = {
     val __obj = js.Dynamic.literal(ngDoCheck = js.Any.fromFunction0(ngDoCheck))
-  
     __obj.asInstanceOf[DoCheck]
   }
 }

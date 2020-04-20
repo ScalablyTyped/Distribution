@@ -16,12 +16,10 @@ trait svgPreserveAlpha extends js.Object
 
 object svgPreserveAlpha {
   @scala.inline
-  def SVG_PRESERVEALPHA_FALSE: `0` = this.cast(0)
+  def SVG_PRESERVEALPHA_FALSE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SVG_PRESERVEALPHA_TRUE: `1` = this.cast(1)
+  def SVG_PRESERVEALPHA_TRUE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def svgPreserveAlpha_Max: `2147483647` = this.cast(2147483647)
+  def svgPreserveAlpha_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -20,7 +20,6 @@ object RemoveTagsFromResourceMessage {
   @scala.inline
   def apply(ResourceArn: String, TagKeys: KeyList): RemoveTagsFromResourceMessage = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveTagsFromResourceMessage]
   }
 }

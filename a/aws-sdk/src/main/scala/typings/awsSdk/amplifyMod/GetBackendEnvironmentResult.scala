@@ -16,7 +16,6 @@ object GetBackendEnvironmentResult {
   @scala.inline
   def apply(backendEnvironment: BackendEnvironment): GetBackendEnvironmentResult = {
     val __obj = js.Dynamic.literal(backendEnvironment = backendEnvironment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBackendEnvironmentResult]
   }
 }

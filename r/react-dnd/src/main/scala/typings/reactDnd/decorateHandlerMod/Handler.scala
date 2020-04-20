@@ -14,7 +14,6 @@ object Handler {
   @scala.inline
   def apply[Props](receiveProps: Props => Unit, ref: RefObject[_]): Handler[Props] = {
     val __obj = js.Dynamic.literal(receiveProps = js.Any.fromFunction1(receiveProps), ref = ref.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Handler[Props]]
   }
 }

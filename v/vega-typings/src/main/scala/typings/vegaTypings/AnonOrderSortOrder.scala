@@ -14,7 +14,6 @@ object AnonOrderSortOrder {
   @scala.inline
   def apply(order: SortOrder): AnonOrderSortOrder = {
     val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOrderSortOrder]
   }
 }

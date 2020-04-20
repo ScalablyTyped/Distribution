@@ -20,7 +20,6 @@ object CreateGlobalTableInput {
   @scala.inline
   def apply(GlobalTableName: TableName, ReplicationGroup: ReplicaList): CreateGlobalTableInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicationGroup = ReplicationGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateGlobalTableInput]
   }
 }

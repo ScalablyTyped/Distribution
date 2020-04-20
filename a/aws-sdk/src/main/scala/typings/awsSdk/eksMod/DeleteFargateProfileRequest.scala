@@ -20,7 +20,6 @@ object DeleteFargateProfileRequest {
   @scala.inline
   def apply(clusterName: String, fargateProfileName: String): DeleteFargateProfileRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], fargateProfileName = fargateProfileName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFargateProfileRequest]
   }
 }

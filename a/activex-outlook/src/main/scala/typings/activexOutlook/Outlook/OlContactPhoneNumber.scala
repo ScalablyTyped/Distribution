@@ -48,44 +48,42 @@ trait OlContactPhoneNumber extends js.Object
 
 object OlContactPhoneNumber {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olContactPhoneAssistant: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olContactPhoneAssistant: `0` = this.cast(0)
+  def olContactPhoneBusiness: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olContactPhoneBusiness: `1` = this.cast(1)
+  def olContactPhoneBusiness2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olContactPhoneBusiness2: `2` = this.cast(2)
+  def olContactPhoneBusinessFax: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olContactPhoneBusinessFax: `3` = this.cast(3)
+  def olContactPhoneCallback: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olContactPhoneCallback: `4` = this.cast(4)
+  def olContactPhoneCar: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olContactPhoneCar: `5` = this.cast(5)
+  def olContactPhoneCompany: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olContactPhoneCompany: `6` = this.cast(6)
+  def olContactPhoneHome: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olContactPhoneHome: `7` = this.cast(7)
+  def olContactPhoneHome2: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olContactPhoneHome2: `8` = this.cast(8)
+  def olContactPhoneHomeFax: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def olContactPhoneHomeFax: `9` = this.cast(9)
+  def olContactPhoneISDN: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def olContactPhoneISDN: `10` = this.cast(10)
+  def olContactPhoneMobile: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def olContactPhoneMobile: `11` = this.cast(11)
+  def olContactPhoneOther: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def olContactPhoneOther: `12` = this.cast(12)
+  def olContactPhoneOtherFax: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def olContactPhoneOtherFax: `13` = this.cast(13)
+  def olContactPhonePager: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def olContactPhonePager: `14` = this.cast(14)
+  def olContactPhonePrimary: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def olContactPhonePrimary: `15` = this.cast(15)
+  def olContactPhoneRadio: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def olContactPhoneRadio: `16` = this.cast(16)
+  def olContactPhoneTTYTTD: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def olContactPhoneTTYTTD: `18` = this.cast(18)
-  @scala.inline
-  def olContactPhoneTelex: `17` = this.cast(17)
+  def olContactPhoneTelex: `17` = 17.asInstanceOf[`17`]
 }
 

@@ -33,7 +33,6 @@ object CertificateDomainValidationOption {
     resourceRecordValue: String
   ): CertificateDomainValidationOption = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], resourceRecordName = resourceRecordName.asInstanceOf[js.Any], resourceRecordType = resourceRecordType.asInstanceOf[js.Any], resourceRecordValue = resourceRecordValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateDomainValidationOption]
   }
 }

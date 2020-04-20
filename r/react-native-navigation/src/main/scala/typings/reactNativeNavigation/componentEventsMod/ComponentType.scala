@@ -14,14 +14,12 @@ trait ComponentType extends js.Object
 
 object ComponentType {
   @scala.inline
-  def Component: typings.reactNativeNavigation.reactNativeNavigationStrings.Component = this.cast("Component")
+  def Component: typings.reactNativeNavigation.reactNativeNavigationStrings.Component = "Component".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.Component]
   @scala.inline
-  def TopBarBackground: typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarBackground = this.cast("TopBarBackground")
+  def TopBarBackground: typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarBackground = "TopBarBackground".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarBackground]
   @scala.inline
-  def TopBarButton: typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarButton = this.cast("TopBarButton")
+  def TopBarButton: typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarButton = "TopBarButton".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarButton]
   @scala.inline
-  def TopBarTitle: typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarTitle = this.cast("TopBarTitle")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TopBarTitle: typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarTitle = "TopBarTitle".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarTitle]
 }
 

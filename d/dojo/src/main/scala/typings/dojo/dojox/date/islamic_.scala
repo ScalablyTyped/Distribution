@@ -57,7 +57,6 @@ object islamic_ {
     locale: js.Object
   ): islamic_ = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), compare = js.Any.fromFunction3(compare), difference = js.Any.fromFunction3(difference), getDaysInMonth = js.Any.fromFunction1(getDaysInMonth), locale = locale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[islamic_]
   }
 }

@@ -16,12 +16,10 @@ trait fmListBoxStyles extends js.Object
 
 object fmListBoxStyles {
   @scala.inline
-  def _fmListBoxStylesComboBox: `2` = this.cast(2)
+  def _fmListBoxStylesComboBox: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def _fmListBoxStylesListBox: `1` = this.cast(1)
+  def _fmListBoxStylesListBox: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def _fmListBoxStylesNone: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def _fmListBoxStylesNone: `0` = 0.asInstanceOf[`0`]
 }
 

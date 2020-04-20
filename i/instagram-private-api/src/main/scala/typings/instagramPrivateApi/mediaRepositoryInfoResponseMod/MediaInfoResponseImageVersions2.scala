@@ -12,7 +12,6 @@ object MediaInfoResponseImageVersions2 {
   @scala.inline
   def apply(candidates: js.Array[MediaInfoResponseCandidatesItem]): MediaInfoResponseImageVersions2 = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaInfoResponseImageVersions2]
   }
 }

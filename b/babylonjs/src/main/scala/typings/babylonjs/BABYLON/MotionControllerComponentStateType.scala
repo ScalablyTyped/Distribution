@@ -13,12 +13,10 @@ trait MotionControllerComponentStateType extends js.Object
 
 object MotionControllerComponentStateType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.babylonjs.babylonjsStrings.default = "default".asInstanceOf[typings.babylonjs.babylonjsStrings.default]
   @scala.inline
-  def default: typings.babylonjs.babylonjsStrings.default = this.cast("default")
+  def pressed: typings.babylonjs.babylonjsStrings.pressed = "pressed".asInstanceOf[typings.babylonjs.babylonjsStrings.pressed]
   @scala.inline
-  def pressed: typings.babylonjs.babylonjsStrings.pressed = this.cast("pressed")
-  @scala.inline
-  def touched: typings.babylonjs.babylonjsStrings.touched = this.cast("touched")
+  def touched: typings.babylonjs.babylonjsStrings.touched = "touched".asInstanceOf[typings.babylonjs.babylonjsStrings.touched]
 }
 

@@ -19,7 +19,6 @@ object AdaptorHandle {
   @scala.inline
   def apply(get: () => js.Any, reset: js.Any => Unit, set: (String, js.Any) => Unit, teardown: () => Unit): AdaptorHandle = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction2(set), teardown = js.Any.fromFunction0(teardown))
-  
     __obj.asInstanceOf[AdaptorHandle]
   }
 }

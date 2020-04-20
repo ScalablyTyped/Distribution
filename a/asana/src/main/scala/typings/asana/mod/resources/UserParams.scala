@@ -12,7 +12,6 @@ object UserParams {
   @scala.inline
   def apply(user: String | Double): UserParams = {
     val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserParams]
   }
 }

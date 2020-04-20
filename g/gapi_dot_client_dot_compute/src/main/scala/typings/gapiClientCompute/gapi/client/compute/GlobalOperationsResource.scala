@@ -27,7 +27,6 @@ object GlobalOperationsResource {
     list: AnonAlt => Request_[OperationList]
   ): GlobalOperationsResource = {
     val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[GlobalOperationsResource]
   }
 }

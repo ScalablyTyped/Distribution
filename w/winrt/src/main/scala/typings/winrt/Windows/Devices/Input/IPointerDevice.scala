@@ -26,7 +26,6 @@ object IPointerDevice {
     supportedUsages: IVectorView[PointerDeviceUsage]
   ): IPointerDevice = {
     val __obj = js.Dynamic.literal(isIntegrated = isIntegrated.asInstanceOf[js.Any], maxContacts = maxContacts.asInstanceOf[js.Any], physicalDeviceRect = physicalDeviceRect.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], screenRect = screenRect.asInstanceOf[js.Any], supportedUsages = supportedUsages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPointerDevice]
   }
 }

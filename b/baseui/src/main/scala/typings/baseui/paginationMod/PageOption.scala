@@ -12,7 +12,6 @@ object PageOption {
   @scala.inline
   def apply(label: Double): PageOption = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PageOption]
   }
 }

@@ -77,7 +77,7 @@ class FileBrowser_ protected () extends Widget {
   /**
     * Whether to show active file in file browser
     */
-  def navigateToCurrentDirectory(): Boolean = js.native
+  def navigateToCurrentDirectory: Boolean = js.native
   def navigateToCurrentDirectory(value: Boolean): js.Any = js.native
   /**
     * Paste the items from the clipboard.

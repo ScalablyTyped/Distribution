@@ -13,12 +13,10 @@ trait EndianType extends js.Object
 
 object EndianType {
   @scala.inline
-  def LSB: typings.gm.gmStrings.LSB = this.cast("LSB")
+  def LSB: typings.gm.gmStrings.LSB = "LSB".asInstanceOf[typings.gm.gmStrings.LSB]
   @scala.inline
-  def MSB: typings.gm.gmStrings.MSB = this.cast("MSB")
+  def MSB: typings.gm.gmStrings.MSB = "MSB".asInstanceOf[typings.gm.gmStrings.MSB]
   @scala.inline
-  def Native: typings.gm.gmStrings.Native = this.cast("Native")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Native: typings.gm.gmStrings.Native = "Native".asInstanceOf[typings.gm.gmStrings.Native]
 }
 

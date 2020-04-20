@@ -13,12 +13,10 @@ trait EvalScripts extends js.Object
 
 object EvalScripts {
   @scala.inline
-  def always: typings.tanemSvgInjector.tanemSvgInjectorStrings.always = this.cast("always")
+  def always: typings.tanemSvgInjector.tanemSvgInjectorStrings.always = "always".asInstanceOf[typings.tanemSvgInjector.tanemSvgInjectorStrings.always]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def never: typings.tanemSvgInjector.tanemSvgInjectorStrings.never = "never".asInstanceOf[typings.tanemSvgInjector.tanemSvgInjectorStrings.never]
   @scala.inline
-  def never: typings.tanemSvgInjector.tanemSvgInjectorStrings.never = this.cast("never")
-  @scala.inline
-  def once: typings.tanemSvgInjector.tanemSvgInjectorStrings.once = this.cast("once")
+  def once: typings.tanemSvgInjector.tanemSvgInjectorStrings.once = "once".asInstanceOf[typings.tanemSvgInjector.tanemSvgInjectorStrings.once]
 }
 

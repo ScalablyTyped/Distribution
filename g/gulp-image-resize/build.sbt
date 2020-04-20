@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gulp-image-resize"
-version := "0.13-dt-20180411Z-f8c629"
+version := "0.13-dt-20180411Z-474a16"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gm" % "1.18-dt-20200226Z-4cbd93",
-  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "gm" % "1.18-dt-20200226Z-3a8e4f",
+  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

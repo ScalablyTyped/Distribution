@@ -16,7 +16,6 @@ object DeleteRemoteAccessSessionRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): DeleteRemoteAccessSessionRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRemoteAccessSessionRequest]
   }
 }

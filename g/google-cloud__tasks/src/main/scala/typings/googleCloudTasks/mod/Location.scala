@@ -23,7 +23,6 @@ object Location {
     name: String
   ): Location = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], locationId = locationId.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Location]
   }
 }

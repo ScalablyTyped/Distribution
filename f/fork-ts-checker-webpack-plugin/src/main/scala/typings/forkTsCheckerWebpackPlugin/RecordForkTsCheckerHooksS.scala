@@ -33,7 +33,6 @@ object RecordForkTsCheckerHooksS {
     waiting: (SyncHook[_, _, _]) | (AsyncSeriesHook[_, _, _])
   ): RecordForkTsCheckerHooksS = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], emit = emit.asInstanceOf[js.Any], receive = receive.asInstanceOf[js.Any], serviceBeforeStart = serviceBeforeStart.asInstanceOf[js.Any], serviceOutOfMemory = serviceOutOfMemory.asInstanceOf[js.Any], serviceStart = serviceStart.asInstanceOf[js.Any], serviceStartError = serviceStartError.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordForkTsCheckerHooksS]
   }
 }

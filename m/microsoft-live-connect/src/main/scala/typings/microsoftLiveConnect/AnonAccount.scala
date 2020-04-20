@@ -35,7 +35,6 @@ object AnonAccount {
   @scala.inline
   def apply(account: String, business: String, other: String, personal: String, preferred: String): AnonAccount = {
     val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], business = business.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], personal = personal.asInstanceOf[js.Any], preferred = preferred.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccount]
   }
 }

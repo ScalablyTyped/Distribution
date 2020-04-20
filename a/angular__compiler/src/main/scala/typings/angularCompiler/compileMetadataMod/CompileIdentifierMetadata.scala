@@ -12,7 +12,6 @@ object CompileIdentifierMetadata {
   @scala.inline
   def apply(reference: js.Any): CompileIdentifierMetadata = {
     val __obj = js.Dynamic.literal(reference = reference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompileIdentifierMetadata]
   }
 }

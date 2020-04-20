@@ -21,7 +21,6 @@ object ProjectEnvironmentRegistryCredential {
   @scala.inline
   def apply(credential: Input[String], credentialProvider: Input[String]): ProjectEnvironmentRegistryCredential = {
     val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], credentialProvider = credentialProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectEnvironmentRegistryCredential]
   }
 }

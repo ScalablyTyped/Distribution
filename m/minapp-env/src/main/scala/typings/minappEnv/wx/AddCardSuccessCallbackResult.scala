@@ -13,7 +13,6 @@ object AddCardSuccessCallbackResult {
   @scala.inline
   def apply(cardList: AddCardResponseInfo): AddCardSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddCardSuccessCallbackResult]
   }
 }

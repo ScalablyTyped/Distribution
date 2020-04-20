@@ -15,16 +15,14 @@ trait TextDecoration extends js.Object
 
 object TextDecoration {
   @scala.inline
-  def blink: typings.reactSketchapp.reactSketchappStrings.blink = this.cast("blink")
+  def blink: typings.reactSketchapp.reactSketchappStrings.blink = "blink".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.blink]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `line-through`: typings.reactSketchapp.reactSketchappStrings.`line-through` = "line-through".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`line-through`]
   @scala.inline
-  def `line-through`: typings.reactSketchapp.reactSketchappStrings.`line-through` = this.cast("line-through")
+  def none: typings.reactSketchapp.reactSketchappStrings.none = "none".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.none]
   @scala.inline
-  def none: typings.reactSketchapp.reactSketchappStrings.none = this.cast("none")
+  def overline: typings.reactSketchapp.reactSketchappStrings.overline = "overline".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.overline]
   @scala.inline
-  def overline: typings.reactSketchapp.reactSketchappStrings.overline = this.cast("overline")
-  @scala.inline
-  def underline: typings.reactSketchapp.reactSketchappStrings.underline = this.cast("underline")
+  def underline: typings.reactSketchapp.reactSketchappStrings.underline = "underline".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.underline]
 }
 

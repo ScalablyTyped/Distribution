@@ -31,7 +31,6 @@ object GraphQLResolveInfo {
     variableValues: StringDictionary[js.Any]
   ): GraphQLResolveInfo = {
     val __obj = js.Dynamic.literal(fieldASTs = fieldASTs.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], rootValue = rootValue.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], variableValues = variableValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GraphQLResolveInfo]
   }
 }

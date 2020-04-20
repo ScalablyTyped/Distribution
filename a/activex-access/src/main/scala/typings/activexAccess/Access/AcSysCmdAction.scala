@@ -36,32 +36,30 @@ trait AcSysCmdAction extends js.Object
 
 object AcSysCmdAction {
   @scala.inline
-  def acSysCmdAccessDir: `9` = this.cast(9)
+  def acSysCmdAccessDir: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def acSysCmdAccessVer: `7` = this.cast(7)
+  def acSysCmdAccessVer: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def acSysCmdClearHelpTopic: `11` = this.cast(11)
+  def acSysCmdClearHelpTopic: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def acSysCmdClearStatus: `5` = this.cast(5)
+  def acSysCmdClearStatus: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def acSysCmdGetObjectState: `10` = this.cast(10)
+  def acSysCmdGetObjectState: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def acSysCmdGetWorkgroupFile: `13` = this.cast(13)
+  def acSysCmdGetWorkgroupFile: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def acSysCmdIniFile: `8` = this.cast(8)
+  def acSysCmdIniFile: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def acSysCmdInitMeter: `1` = this.cast(1)
+  def acSysCmdInitMeter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acSysCmdProfile: `12` = this.cast(12)
+  def acSysCmdProfile: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def acSysCmdRemoveMeter: `3` = this.cast(3)
+  def acSysCmdRemoveMeter: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acSysCmdRuntime: `6` = this.cast(6)
+  def acSysCmdRuntime: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def acSysCmdSetStatus: `4` = this.cast(4)
+  def acSysCmdSetStatus: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def acSysCmdUpdateMeter: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acSysCmdUpdateMeter: `2` = 2.asInstanceOf[`2`]
 }
 

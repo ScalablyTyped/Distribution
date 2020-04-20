@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait rmcInputNumberProps {
   @scala.inline
-  def IndexDotandroidProps: PropsType.type = typings.rmcInputNumber.indexIosMod.PropsType
+  def IndexDotandroidProps: PropsType.type = PropsType
   type IndexDotandroidProps = PropsType
   @scala.inline
-  def IndexDotiosProps: PropsType.type = typings.rmcInputNumber.indexIosMod.PropsType
+  def IndexDotiosProps: PropsType.type = PropsType
   type IndexDotiosProps = PropsType
   @scala.inline
   def InputHandlerProps: typings.rmcInputNumber.inputHandlerMod.PropsType.type = typings.rmcInputNumber.inputHandlerMod.PropsType

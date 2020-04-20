@@ -25,9 +25,9 @@ class DataSetObjectConstraint protected () extends DataSetParameterConstraint {
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  def constraint(): String = js.native
+  def constraint: String = js.native
   def constraint(newValue: String): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
 }
 

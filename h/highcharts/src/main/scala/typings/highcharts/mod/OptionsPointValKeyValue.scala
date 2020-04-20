@@ -14,14 +14,12 @@ trait OptionsPointValKeyValue extends js.Object
 
 object OptionsPointValKeyValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def close: typings.highcharts.highchartsStrings.close = "close".asInstanceOf[typings.highcharts.highchartsStrings.close]
   @scala.inline
-  def close: typings.highcharts.highchartsStrings.close = this.cast("close")
+  def high: typings.highcharts.highchartsStrings.high = "high".asInstanceOf[typings.highcharts.highchartsStrings.high]
   @scala.inline
-  def high: typings.highcharts.highchartsStrings.high = this.cast("high")
+  def low: typings.highcharts.highchartsStrings.low = "low".asInstanceOf[typings.highcharts.highchartsStrings.low]
   @scala.inline
-  def low: typings.highcharts.highchartsStrings.low = this.cast("low")
-  @scala.inline
-  def open: typings.highcharts.highchartsStrings.open = this.cast("open")
+  def open: typings.highcharts.highchartsStrings.open = "open".asInstanceOf[typings.highcharts.highchartsStrings.open]
 }
 

@@ -28,7 +28,6 @@ object DirectoryConnectSettings {
   @scala.inline
   def apply(CustomerDnsIps: DnsIpAddrs, CustomerUserName: UserName, SubnetIds: SubnetIds, VpcId: VpcId): DirectoryConnectSettings = {
     val __obj = js.Dynamic.literal(CustomerDnsIps = CustomerDnsIps.asInstanceOf[js.Any], CustomerUserName = CustomerUserName.asInstanceOf[js.Any], SubnetIds = SubnetIds.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectoryConnectSettings]
   }
 }

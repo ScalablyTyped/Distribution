@@ -16,7 +16,6 @@ object IPSetReferenceStatement {
   @scala.inline
   def apply(ARN: ResourceArn): IPSetReferenceStatement = {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPSetReferenceStatement]
   }
 }

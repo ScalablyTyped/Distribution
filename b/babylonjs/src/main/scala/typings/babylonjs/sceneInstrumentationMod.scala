@@ -66,19 +66,19 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the perf counter used for active meshes evaluation time
       */
-    def activeMeshesEvaluationTimeCounter(): PerfCounter = js.native
+    def activeMeshesEvaluationTimeCounter: PerfCounter = js.native
     /**
       * Gets the perf counter used for animations time
       */
-    def animationsTimeCounter(): PerfCounter = js.native
+    def animationsTimeCounter: PerfCounter = js.native
     /**
       * Gets the perf counter used for camera render time capture
       */
-    def cameraRenderTimeCounter(): PerfCounter = js.native
+    def cameraRenderTimeCounter: PerfCounter = js.native
     /**
       * Gets the active meshes evaluation time capture status
       */
-    def captureActiveMeshesEvaluationTime(): Boolean = js.native
+    def captureActiveMeshesEvaluationTime: Boolean = js.native
     /**
       * Enable or disable the active meshes evaluation time capture
       */
@@ -86,7 +86,7 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the animations time capture status
       */
-    def captureAnimationsTime(): Boolean = js.native
+    def captureAnimationsTime: Boolean = js.native
     /**
       * Enable or disable the animations time capture
       */
@@ -94,7 +94,7 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the camera render time capture status
       */
-    def captureCameraRenderTime(): Boolean = js.native
+    def captureCameraRenderTime: Boolean = js.native
     /**
       * Enable or disable the camera render time capture
       */
@@ -102,7 +102,7 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the frame time capture status
       */
-    def captureFrameTime(): Boolean = js.native
+    def captureFrameTime: Boolean = js.native
     /**
       * Enable or disable the frame time capture
       */
@@ -110,7 +110,7 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the inter-frames time capture status
       */
-    def captureInterFrameTime(): Boolean = js.native
+    def captureInterFrameTime: Boolean = js.native
     /**
       * Enable or disable the inter-frames time capture
       */
@@ -118,7 +118,7 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the particles render time capture status
       */
-    def captureParticlesRenderTime(): Boolean = js.native
+    def captureParticlesRenderTime: Boolean = js.native
     /**
       * Enable or disable the particles render time capture
       */
@@ -126,7 +126,7 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the physics time capture status
       */
-    def capturePhysicsTime(): Boolean = js.native
+    def capturePhysicsTime: Boolean = js.native
     /**
       * Enable or disable the physics time capture
       */
@@ -134,7 +134,7 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the render targets render time capture status
       */
-    def captureRenderTargetsRenderTime(): Boolean = js.native
+    def captureRenderTargetsRenderTime: Boolean = js.native
     /**
       * Enable or disable the render targets render time capture
       */
@@ -142,7 +142,7 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the render time capture status
       */
-    def captureRenderTime(): Boolean = js.native
+    def captureRenderTime: Boolean = js.native
     /**
       * Enable or disable the render time capture
       */
@@ -150,7 +150,7 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the sprites render time capture status
       */
-    def captureSpritesRenderTime(): Boolean = js.native
+    def captureSpritesRenderTime: Boolean = js.native
     /**
       * Enable or disable the sprites render time capture
       */
@@ -163,35 +163,35 @@ object sceneInstrumentationMod extends js.Object {
     /**
       * Gets the perf counter used for draw calls
       */
-    def drawCallsCounter(): PerfCounter = js.native
+    def drawCallsCounter: PerfCounter = js.native
     /**
       * Gets the perf counter used for frame time capture
       */
-    def frameTimeCounter(): PerfCounter = js.native
+    def frameTimeCounter: PerfCounter = js.native
     /**
       * Gets the perf counter used for inter-frames time capture
       */
-    def interFrameTimeCounter(): PerfCounter = js.native
+    def interFrameTimeCounter: PerfCounter = js.native
     /**
       * Gets the perf counter used for particles render time
       */
-    def particlesRenderTimeCounter(): PerfCounter = js.native
+    def particlesRenderTimeCounter: PerfCounter = js.native
     /**
       * Gets the perf counter used for physics time
       */
-    def physicsTimeCounter(): PerfCounter = js.native
+    def physicsTimeCounter: PerfCounter = js.native
     /**
       * Gets the perf counter used for render targets render time
       */
-    def renderTargetsRenderTimeCounter(): PerfCounter = js.native
+    def renderTargetsRenderTimeCounter: PerfCounter = js.native
     /**
       * Gets the perf counter used for render time capture
       */
-    def renderTimeCounter(): PerfCounter = js.native
+    def renderTimeCounter: PerfCounter = js.native
     /**
       * Gets the perf counter used for sprites render time
       */
-    def spritesRenderTimeCounter(): PerfCounter = js.native
+    def spritesRenderTimeCounter: PerfCounter = js.native
   }
   
 }

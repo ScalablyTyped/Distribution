@@ -18,7 +18,6 @@ object WebExtEvent {
     removeListener: TCallback => Unit
   ): WebExtEvent[TCallback] = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), hasListener = js.Any.fromFunction1(hasListener), removeListener = js.Any.fromFunction1(removeListener))
-  
     __obj.asInstanceOf[WebExtEvent[TCallback]]
   }
 }

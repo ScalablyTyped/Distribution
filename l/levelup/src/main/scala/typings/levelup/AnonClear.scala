@@ -18,7 +18,6 @@ object AnonClear {
     clear: (/* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any, ErrorCallback) => Unit
   ): AnonClear = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction2(clear))
-  
     __obj.asInstanceOf[AnonClear]
   }
 }

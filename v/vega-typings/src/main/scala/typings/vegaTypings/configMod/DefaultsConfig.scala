@@ -15,7 +15,6 @@ object DefaultsConfig {
   @scala.inline
   def apply(allow: Boolean | js.Array[EventType], prevent: Boolean | js.Array[EventType]): DefaultsConfig = {
     val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], prevent = prevent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultsConfig]
   }
 }

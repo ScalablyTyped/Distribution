@@ -53,7 +53,6 @@ object SubscriptionsResource {
     suspend: AnonKey => Request_[Subscription]
   ): SubscriptionsResource = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), changePlan = js.Any.fromFunction1(changePlan), changeRenewalSettings = js.Any.fromFunction1(changeRenewalSettings), changeSeats = js.Any.fromFunction1(changeSeats), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), startPaidService = js.Any.fromFunction1(startPaidService), suspend = js.Any.fromFunction1(suspend))
-  
     __obj.asInstanceOf[SubscriptionsResource]
   }
 }

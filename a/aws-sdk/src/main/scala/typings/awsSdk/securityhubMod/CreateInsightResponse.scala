@@ -16,7 +16,6 @@ object CreateInsightResponse {
   @scala.inline
   def apply(InsightArn: NonEmptyString): CreateInsightResponse = {
     val __obj = js.Dynamic.literal(InsightArn = InsightArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateInsightResponse]
   }
 }

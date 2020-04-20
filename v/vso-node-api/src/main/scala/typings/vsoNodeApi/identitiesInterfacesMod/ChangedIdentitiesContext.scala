@@ -19,7 +19,6 @@ object ChangedIdentitiesContext {
   @scala.inline
   def apply(groupSequenceId: Double, identitySequenceId: Double): ChangedIdentitiesContext = {
     val __obj = js.Dynamic.literal(groupSequenceId = groupSequenceId.asInstanceOf[js.Any], identitySequenceId = identitySequenceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangedIdentitiesContext]
   }
 }

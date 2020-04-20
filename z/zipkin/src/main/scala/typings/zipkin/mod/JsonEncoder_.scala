@@ -14,7 +14,6 @@ object JsonEncoder_ {
   @scala.inline
   def apply(encode: Span => String): JsonEncoder_ = {
     val __obj = js.Dynamic.literal(encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[JsonEncoder_]
   }
 }

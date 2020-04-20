@@ -15,7 +15,6 @@ object Commit {
   @scala.inline
   def apply(branchName: String, commitHash: MetadataHash, status: String): Commit = {
     val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], commitHash = commitHash.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Commit]
   }
 }

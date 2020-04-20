@@ -21,7 +21,6 @@ object AnonNgContentSelectors {
   @scala.inline
   def apply(ngContentSelectors: js.Array[String], nodes: js.Array[Node]): AnonNgContentSelectors = {
     val __obj = js.Dynamic.literal(ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNgContentSelectors]
   }
 }

@@ -20,7 +20,6 @@ object GlueConfiguration {
   @scala.inline
   def apply(databaseName: GlueDatabaseName, tableName: GlueTableName): GlueConfiguration = {
     val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlueConfiguration]
   }
 }

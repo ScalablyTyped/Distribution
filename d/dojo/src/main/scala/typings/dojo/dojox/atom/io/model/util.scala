@@ -47,7 +47,6 @@ object util {
     unEscapeHtml: String => js.Any
   ): util = {
     val __obj = js.Dynamic.literal(createDate = js.Any.fromFunction1(createDate), escapeHtml = js.Any.fromFunction1(escapeHtml), getNodename = js.Any.fromFunction1(getNodename), unEscapeHtml = js.Any.fromFunction1(unEscapeHtml))
-  
     __obj.asInstanceOf[util]
   }
 }

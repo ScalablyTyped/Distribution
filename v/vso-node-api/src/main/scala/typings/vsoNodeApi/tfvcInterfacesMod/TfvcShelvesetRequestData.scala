@@ -47,7 +47,6 @@ object TfvcShelvesetRequestData {
     owner: String
   ): TfvcShelvesetRequestData = {
     val __obj = js.Dynamic.literal(includeDetails = includeDetails.asInstanceOf[js.Any], includeLinks = includeLinks.asInstanceOf[js.Any], includeWorkItems = includeWorkItems.asInstanceOf[js.Any], maxChangeCount = maxChangeCount.asInstanceOf[js.Any], maxCommentLength = maxCommentLength.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TfvcShelvesetRequestData]
   }
 }

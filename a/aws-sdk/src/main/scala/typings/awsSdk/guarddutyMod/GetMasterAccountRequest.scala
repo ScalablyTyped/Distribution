@@ -16,7 +16,6 @@ object GetMasterAccountRequest {
   @scala.inline
   def apply(DetectorId: DetectorId): GetMasterAccountRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMasterAccountRequest]
   }
 }

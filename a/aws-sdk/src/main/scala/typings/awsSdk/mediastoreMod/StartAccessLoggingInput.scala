@@ -16,7 +16,6 @@ object StartAccessLoggingInput {
   @scala.inline
   def apply(ContainerName: ContainerName): StartAccessLoggingInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartAccessLoggingInput]
   }
 }

@@ -32,28 +32,26 @@ trait AcImeMode extends js.Object
 
 object AcImeMode {
   @scala.inline
-  def acImeModeAlpha: `8` = this.cast(8)
+  def acImeModeAlpha: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def acImeModeAlphaFull: `7` = this.cast(7)
+  def acImeModeAlphaFull: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def acImeModeDisable: `3` = this.cast(3)
+  def acImeModeDisable: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acImeModeHangul: `10` = this.cast(10)
+  def acImeModeHangul: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def acImeModeHangulFull: `9` = this.cast(9)
+  def acImeModeHangulFull: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def acImeModeHiragana: `4` = this.cast(4)
+  def acImeModeHiragana: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def acImeModeKatakana: `5` = this.cast(5)
+  def acImeModeKatakana: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def acImeModeKatakanaHalf: `6` = this.cast(6)
+  def acImeModeKatakanaHalf: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def acImeModeNoControl: `0` = this.cast(0)
+  def acImeModeNoControl: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acImeModeOff: `2` = this.cast(2)
+  def acImeModeOff: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acImeModeOn: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acImeModeOn: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_radialGradient extends js.Object {
-  def apply[P /* <: js.Object */, T](component: radialGradient, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[radialGradient], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: radialGradient, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[radialGradient], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: radialGradient, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[radialGradient], 
+      Exclude[/* keyof react.react.ComponentProps<'radialGradient'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: radialGradient, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[radialGradient], 
+      Exclude[/* keyof react.react.ComponentProps<'radialGradient'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

@@ -20,7 +20,6 @@ object StepDetail {
   @scala.inline
   def apply(ExecutionStatusDetail: StepExecutionStatusDetail, StepConfig: StepConfig): StepDetail = {
     val __obj = js.Dynamic.literal(ExecutionStatusDetail = ExecutionStatusDetail.asInstanceOf[js.Any], StepConfig = StepConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StepDetail]
   }
 }

@@ -13,12 +13,10 @@ trait EditorAutoClosingOvertypeStrategy extends js.Object
 
 object EditorAutoClosingOvertypeStrategy {
   @scala.inline
-  def always: typings.monacoEditor.monacoEditorStrings.always = this.cast("always")
+  def always: typings.monacoEditor.monacoEditorStrings.always = "always".asInstanceOf[typings.monacoEditor.monacoEditorStrings.always]
   @scala.inline
-  def auto: typings.monacoEditor.monacoEditorStrings.auto = this.cast("auto")
+  def auto: typings.monacoEditor.monacoEditorStrings.auto = "auto".asInstanceOf[typings.monacoEditor.monacoEditorStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def never: typings.monacoEditor.monacoEditorStrings.never = this.cast("never")
+  def never: typings.monacoEditor.monacoEditorStrings.never = "never".asInstanceOf[typings.monacoEditor.monacoEditorStrings.never]
 }
 

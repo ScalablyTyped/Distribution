@@ -13,7 +13,6 @@ object PathBezierCommand {
   @scala.inline
   def apply(bezier: js.Tuple3[VectorOptions, VectorOptions, VectorOptions]): PathBezierCommand = {
     val __obj = js.Dynamic.literal(bezier = bezier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PathBezierCommand]
   }
 }

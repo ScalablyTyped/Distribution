@@ -36,7 +36,6 @@ object IComment {
   @scala.inline
   def apply(created_time: String, from: IUserInfo, id: String, message: String): IComment = {
     val __obj = js.Dynamic.literal(created_time = created_time.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IComment]
   }
 }

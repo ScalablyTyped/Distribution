@@ -26,7 +26,6 @@ object PlaybackDisallows {
     skipping_prev: Boolean
   ): PlaybackDisallows = {
     val __obj = js.Dynamic.literal(pausing = pausing.asInstanceOf[js.Any], peeking_next = peeking_next.asInstanceOf[js.Any], peeking_prev = peeking_prev.asInstanceOf[js.Any], resuming = resuming.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], skipping_next = skipping_next.asInstanceOf[js.Any], skipping_prev = skipping_prev.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaybackDisallows]
   }
 }

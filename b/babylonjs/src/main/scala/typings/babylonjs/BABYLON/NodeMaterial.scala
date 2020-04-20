@@ -102,7 +102,7 @@ class NodeMaterial protected () extends PushMaterial {
   /**
     * Get a string representing the shaders built by the current node graph
     */
-  def compiledShaders(): String = js.native
+  def compiledShaders: String = js.native
   /**
     * Launch the node material editor
     * @param config Define the configuration of the editor
@@ -146,7 +146,7 @@ class NodeMaterial protected () extends PushMaterial {
   /**
     * Gets the image processing configuration used either in this material.
     */
-  def imageProcessingConfiguration(): ImageProcessingConfiguration = js.native
+  def imageProcessingConfiguration: ImageProcessingConfiguration = js.native
   /**
     * Sets the Default image processing configuration used either in the this material.
     *
@@ -181,7 +181,7 @@ class NodeMaterial protected () extends PushMaterial {
     */
   def optimize(): Unit = js.native
   /** Gets or sets options to control the node material overall behavior */
-  def options(): INodeMaterialOptions = js.native
+  def options: INodeMaterialOptions = js.native
   def options(options: INodeMaterialOptions): js.Any = js.native
   /**
     * Adds a new optimizer to the list of optimizers

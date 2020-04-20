@@ -13,7 +13,6 @@ object AccountNotifications {
   @scala.inline
   def apply(messages: js.Array[Notification[Conversation]], replies: js.Array[Notification[Comment]]): AccountNotifications = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], replies = replies.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountNotifications]
   }
 }

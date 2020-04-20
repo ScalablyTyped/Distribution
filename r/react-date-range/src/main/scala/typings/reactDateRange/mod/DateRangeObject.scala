@@ -14,7 +14,6 @@ object DateRangeObject {
   @scala.inline
   def apply(endDate: Moment => Moment, startDate: Moment => Moment): DateRangeObject = {
     val __obj = js.Dynamic.literal(endDate = js.Any.fromFunction1(endDate), startDate = js.Any.fromFunction1(startDate))
-  
     __obj.asInstanceOf[DateRangeObject]
   }
 }

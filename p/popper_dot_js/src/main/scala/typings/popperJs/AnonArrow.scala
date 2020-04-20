@@ -15,7 +15,6 @@ object AnonArrow {
   @scala.inline
   def apply(arrow: AnonLeft, popper: Offset, reference: Offset): AnonArrow = {
     val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArrow]
   }
 }

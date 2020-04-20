@@ -20,7 +20,6 @@ object CachedMethods {
   @scala.inline
   def apply(Items: MethodsList, Quantity: integer): CachedMethods = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CachedMethods]
   }
 }

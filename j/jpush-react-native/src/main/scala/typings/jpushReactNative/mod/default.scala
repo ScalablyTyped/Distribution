@@ -78,10 +78,19 @@ object default extends js.Object {
     */
   def addTags(params: Sequence with Tags): Unit = js.native
   /**
+    * 清除所有 JPush 展现的通知（不包括非 JPush SDK 展现的）
+    *
+    */
+  def clearAllNotifications(): Unit = js.native
+  /**
     * 移除所有的本地通知
     *
     */
   def clearLocalNotifications(): Unit = js.native
+  /**
+    * 删除指定的通知
+    * */
+  def clearNotificationById(params: NotificationId): Unit = js.native
   /**
     * 删除别名
     */
@@ -120,6 +129,10 @@ object default extends js.Object {
     *
     */
   def initCrashHandler(): Unit = js.native
+  /**
+    * 检查当前应用的通知开关是否开启
+    * */
+  def isNotificationEnabled(callback: Callback[Boolean]): Unit = js.native
   /**
     * 用来检查 Push Service 是否已经被停止
     *
@@ -214,6 +227,10 @@ object default extends js.Object {
     * 设置手机号码。该接口会控制调用频率,频率为 10s 之内最多 3 次
     */
   def setMobileNumber(params: mobileNumberstringSequenc): Unit = js.native
+  /**
+    * JPush SDK 开启和关闭省电模式，默认为关闭。
+    */
+  def setPowerSaveMode(enable: Boolean): Unit = js.native
   /**
     * 设置允许推送时间
     *

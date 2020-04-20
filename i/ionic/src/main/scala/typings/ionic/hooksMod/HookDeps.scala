@@ -17,7 +17,6 @@ object HookDeps {
   @scala.inline
   def apply(config: IConfig, project: IProject, shell: IShell): HookDeps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HookDeps]
   }
 }

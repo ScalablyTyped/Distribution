@@ -20,7 +20,6 @@ object RegExp {
     setFlags: java.lang.String => RegExp
   ): RegExp = {
     val __obj = js.Dynamic.literal(addFlags = js.Any.fromFunction1(addFlags), getFlags = js.Any.fromFunction0(getFlags), removeFlags = js.Any.fromFunction1(removeFlags), setFlags = js.Any.fromFunction1(setFlags))
-  
     __obj.asInstanceOf[RegExp]
   }
 }

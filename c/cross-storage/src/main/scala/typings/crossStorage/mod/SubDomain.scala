@@ -14,7 +14,6 @@ object SubDomain {
   @scala.inline
   def apply(allow: js.Array[CrossStorageMethod], origin: RegExp): SubDomain = {
     val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubDomain]
   }
 }

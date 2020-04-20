@@ -20,7 +20,6 @@ object ActiveXObject {
   @scala.inline
   def apply(set: (Dictionary[js.Any, js.Any], Item, js.Array[js.Any], js.Any) => Unit): ActiveXObject = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction4(set))
-  
     __obj.asInstanceOf[ActiveXObject]
   }
 }

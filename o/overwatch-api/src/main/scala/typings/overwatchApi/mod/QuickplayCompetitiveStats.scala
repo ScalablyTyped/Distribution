@@ -13,7 +13,6 @@ object QuickplayCompetitiveStats {
   @scala.inline
   def apply(competitive: js.Array[Stat], quickplay: js.Array[Stat]): QuickplayCompetitiveStats = {
     val __obj = js.Dynamic.literal(competitive = competitive.asInstanceOf[js.Any], quickplay = quickplay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QuickplayCompetitiveStats]
   }
 }

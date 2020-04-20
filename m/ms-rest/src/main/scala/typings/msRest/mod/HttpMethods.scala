@@ -18,22 +18,20 @@ trait HttpMethods extends js.Object
 
 object HttpMethods {
   @scala.inline
-  def DELETE: typings.msRest.msRestStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.msRest.msRestStrings.DELETE = "DELETE".asInstanceOf[typings.msRest.msRestStrings.DELETE]
   @scala.inline
-  def GET: typings.msRest.msRestStrings.GET = this.cast("GET")
+  def GET: typings.msRest.msRestStrings.GET = "GET".asInstanceOf[typings.msRest.msRestStrings.GET]
   @scala.inline
-  def HEAD: typings.msRest.msRestStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.msRest.msRestStrings.HEAD = "HEAD".asInstanceOf[typings.msRest.msRestStrings.HEAD]
   @scala.inline
-  def OPTIONS: typings.msRest.msRestStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.msRest.msRestStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.msRest.msRestStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.msRest.msRestStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.msRest.msRestStrings.PATCH = "PATCH".asInstanceOf[typings.msRest.msRestStrings.PATCH]
   @scala.inline
-  def POST: typings.msRest.msRestStrings.POST = this.cast("POST")
+  def POST: typings.msRest.msRestStrings.POST = "POST".asInstanceOf[typings.msRest.msRestStrings.POST]
   @scala.inline
-  def PUT: typings.msRest.msRestStrings.PUT = this.cast("PUT")
+  def PUT: typings.msRest.msRestStrings.PUT = "PUT".asInstanceOf[typings.msRest.msRestStrings.PUT]
   @scala.inline
-  def TRACE: typings.msRest.msRestStrings.TRACE = this.cast("TRACE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TRACE: typings.msRest.msRestStrings.TRACE = "TRACE".asInstanceOf[typings.msRest.msRestStrings.TRACE]
 }
 

@@ -18,7 +18,6 @@ object WhiteBalanceGain {
   @scala.inline
   def apply(b: Double, g: Double, r: Double): WhiteBalanceGain = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WhiteBalanceGain]
   }
 }

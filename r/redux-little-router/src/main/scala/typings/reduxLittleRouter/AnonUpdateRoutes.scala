@@ -12,7 +12,6 @@ object AnonUpdateRoutes {
   @scala.inline
   def apply(updateRoutes: Boolean): AnonUpdateRoutes = {
     val __obj = js.Dynamic.literal(updateRoutes = updateRoutes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUpdateRoutes]
   }
 }

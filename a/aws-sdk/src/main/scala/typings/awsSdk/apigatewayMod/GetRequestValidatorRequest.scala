@@ -20,7 +20,6 @@ object GetRequestValidatorRequest {
   @scala.inline
   def apply(requestValidatorId: String, restApiId: String): GetRequestValidatorRequest = {
     val __obj = js.Dynamic.literal(requestValidatorId = requestValidatorId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRequestValidatorRequest]
   }
 }

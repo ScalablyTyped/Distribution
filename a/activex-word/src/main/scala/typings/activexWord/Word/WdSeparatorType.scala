@@ -20,16 +20,14 @@ trait WdSeparatorType extends js.Object
 
 object WdSeparatorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdSeparatorColon: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdSeparatorColon: `2` = this.cast(2)
+  def wdSeparatorEmDash: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdSeparatorEmDash: `3` = this.cast(3)
+  def wdSeparatorEnDash: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdSeparatorEnDash: `4` = this.cast(4)
+  def wdSeparatorHyphen: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdSeparatorHyphen: `0` = this.cast(0)
-  @scala.inline
-  def wdSeparatorPeriod: `1` = this.cast(1)
+  def wdSeparatorPeriod: `1` = 1.asInstanceOf[`1`]
 }
 

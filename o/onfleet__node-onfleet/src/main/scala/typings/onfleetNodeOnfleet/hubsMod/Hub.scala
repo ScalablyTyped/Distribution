@@ -12,7 +12,6 @@ object Hub {
   @scala.inline
   def apply(get: () => js.Promise[js.Array[OnfleetHub]]): Hub = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
-  
     __obj.asInstanceOf[Hub]
   }
 }

@@ -21,7 +21,6 @@ object CellErrorValue {
     error: NumbersignNSlashA | NumbersignREFExclamationmark | NumbersignNAMEQuestionmark | NumbersignDIVSlash0Exclamationmark | NumbersignNULLExclamationmark | NumbersignVALUEExclamationmark | NumbersignNUMExclamationmark
   ): CellErrorValue = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CellErrorValue]
   }
 }

@@ -13,7 +13,6 @@ object Typeofpdt {
   @scala.inline
   def apply(pd_translate: (String, Double) => Double, pprefix2domain: (Double, Double) => Double): Typeofpdt = {
     val __obj = js.Dynamic.literal(pd_translate = js.Any.fromFunction2(pd_translate), pprefix2domain = js.Any.fromFunction2(pprefix2domain))
-  
     __obj.asInstanceOf[Typeofpdt]
   }
 }

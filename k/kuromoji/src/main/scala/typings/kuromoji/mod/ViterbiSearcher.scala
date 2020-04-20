@@ -20,7 +20,6 @@ object ViterbiSearcher {
     search: ViterbiLattice => js.Array[ViterbiNode]
   ): ViterbiSearcher = {
     val __obj = js.Dynamic.literal(backward = js.Any.fromFunction1(backward), connection_costs = connection_costs.asInstanceOf[js.Any], forward = js.Any.fromFunction1(forward), search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[ViterbiSearcher]
   }
 }

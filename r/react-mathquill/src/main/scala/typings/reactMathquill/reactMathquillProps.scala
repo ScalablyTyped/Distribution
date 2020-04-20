@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactMathquillProps {
   @scala.inline
-  def ReactMathquillProps: Props.type = typings.reactMathquill.mod.Props
+  def ReactMathquillProps: Props.type = Props
   type ReactMathquillProps = Props
 }
 

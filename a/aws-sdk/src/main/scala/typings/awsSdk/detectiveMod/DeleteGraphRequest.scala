@@ -16,7 +16,6 @@ object DeleteGraphRequest {
   @scala.inline
   def apply(GraphArn: GraphArn): DeleteGraphRequest = {
     val __obj = js.Dynamic.literal(GraphArn = GraphArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGraphRequest]
   }
 }

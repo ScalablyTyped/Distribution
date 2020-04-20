@@ -15,6 +15,13 @@ import scala.scalajs.js.annotation._
 class FileSystemError () extends Error {
   def this(messageOrUri: String) = this()
   def this(messageOrUri: Uri) = this()
+  /**
+  		 * A code that identifies this error.
+  		 *
+  		 * Possible values are names of errors, like [`FileNotFound`](#FileSystemError.FileNotFound),
+  		 * or `Unknown` for unspecified errors.
+  		 */
+  val code: String = js.native
   /* CompleteClass */
   override var message: String = js.native
   /* CompleteClass */

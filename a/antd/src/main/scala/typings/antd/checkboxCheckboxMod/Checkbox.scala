@@ -19,7 +19,7 @@ trait Checkbox
   @JSName("componentWillUnmount")
   def componentWillUnmount_MCheckbox(): Unit = js.native
   def focus(): Unit = js.native
-  def renderCheckbox(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderCheckbox(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def saveCheckbox(node: js.Any): Unit = js.native
 }
 

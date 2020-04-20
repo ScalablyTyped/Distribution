@@ -20,7 +20,6 @@ object Encoder {
     encode: (Encodable, Buffer, Double, Double) => Double
   ): Encoder[T] = {
     val __obj = js.Dynamic.literal(byteLength = js.Any.fromFunction1(byteLength), decode = js.Any.fromFunction3(decode), encode = js.Any.fromFunction4(encode))
-  
     __obj.asInstanceOf[Encoder[T]]
   }
 }

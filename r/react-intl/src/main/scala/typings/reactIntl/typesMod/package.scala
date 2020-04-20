@@ -25,5 +25,5 @@ package object typesMod {
     typings.formatjsIntlRelativetimeformat.mod.IntlRelativeTimeFormatOptions, 
     typings.reactIntl.reactIntlStrings.localeMatcher
   ]) with typings.reactIntl.typesMod.CustomFormatConfig
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
 }

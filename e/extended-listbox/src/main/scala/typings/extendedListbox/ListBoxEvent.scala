@@ -18,7 +18,6 @@ object ListBoxEvent {
   @scala.inline
   def apply(args: js.Any, eventName: String, target: Element): ListBoxEvent = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListBoxEvent]
   }
 }

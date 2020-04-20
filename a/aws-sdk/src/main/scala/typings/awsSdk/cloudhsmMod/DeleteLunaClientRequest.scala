@@ -16,7 +16,6 @@ object DeleteLunaClientRequest {
   @scala.inline
   def apply(ClientArn: ClientArn): DeleteLunaClientRequest = {
     val __obj = js.Dynamic.literal(ClientArn = ClientArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLunaClientRequest]
   }
 }

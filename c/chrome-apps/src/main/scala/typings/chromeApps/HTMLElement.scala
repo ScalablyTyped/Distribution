@@ -48,7 +48,6 @@ object HTMLElement {
     webkitRequestFullscreen: () => Unit
   ): HTMLElement = {
     val __obj = js.Dynamic.literal(exitPointerLock = js.Any.fromFunction0(exitPointerLock), exitrequestFullscreen = js.Any.fromFunction0(exitrequestFullscreen), requestFullscreen = js.Any.fromFunction0(requestFullscreen), requestPointerLock = js.Any.fromFunction0(requestPointerLock), webkitRequestFullscreen = js.Any.fromFunction0(webkitRequestFullscreen))
-  
     __obj.asInstanceOf[HTMLElement]
   }
 }

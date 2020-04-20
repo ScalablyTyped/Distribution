@@ -20,7 +20,6 @@ object AssociationExecutionTargetsFilter {
   @scala.inline
   def apply(Key: AssociationExecutionTargetsFilterKey, Value: AssociationExecutionTargetsFilterValue): AssociationExecutionTargetsFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociationExecutionTargetsFilter]
   }
 }

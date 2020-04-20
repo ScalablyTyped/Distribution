@@ -22,7 +22,6 @@ object FileBrowserExpandedParams {
     succeeded: Boolean
   ): FileBrowserExpandedParams = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], expandPath = expandPath.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileBrowserExpandedParams]
   }
 }

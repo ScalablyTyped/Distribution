@@ -16,7 +16,6 @@ object GetReplicationGroupArgs {
   @scala.inline
   def apply(replicationGroupId: String): GetReplicationGroupArgs = {
     val __obj = js.Dynamic.literal(replicationGroupId = replicationGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetReplicationGroupArgs]
   }
 }

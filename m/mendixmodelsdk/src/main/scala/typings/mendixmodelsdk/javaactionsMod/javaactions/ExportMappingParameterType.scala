@@ -32,7 +32,7 @@ class ExportMappingParameterType protected () extends ParameterType {
   @JSName("model")
   var model_FExportMappingParameterType: IModel = js.native
   @JSName("containerAsJavaActionParameter")
-  def containerAsJavaActionParameter_MExportMappingParameterType(): JavaActionParameter = js.native
+  def containerAsJavaActionParameter_MExportMappingParameterType: JavaActionParameter = js.native
 }
 
 /* static members */

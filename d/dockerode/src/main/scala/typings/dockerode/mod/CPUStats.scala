@@ -22,7 +22,6 @@ object CPUStats {
     throttling_data: AnonPeriods
   ): CPUStats = {
     val __obj = js.Dynamic.literal(cpu_usage = cpu_usage.asInstanceOf[js.Any], online_cpus = online_cpus.asInstanceOf[js.Any], system_cpu_usage = system_cpu_usage.asInstanceOf[js.Any], throttling_data = throttling_data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CPUStats]
   }
 }

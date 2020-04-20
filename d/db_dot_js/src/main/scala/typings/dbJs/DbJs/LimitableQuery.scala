@@ -12,7 +12,6 @@ object LimitableQuery {
   @scala.inline
   def apply[T](limit: (js.Any, js.Any) => ExecutableQuery[T]): LimitableQuery[T] = {
     val __obj = js.Dynamic.literal(limit = js.Any.fromFunction2(limit))
-  
     __obj.asInstanceOf[LimitableQuery[T]]
   }
 }

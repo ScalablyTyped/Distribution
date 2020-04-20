@@ -78,7 +78,6 @@ object HelloSignStatic {
     open: OpenParameters => Unit
   ): HelloSignStatic = {
     val __obj = js.Dynamic.literal(CULTURES = CULTURES.asInstanceOf[js.Any], EVENT_CANCELED = EVENT_CANCELED.asInstanceOf[js.Any], EVENT_DECLINED = EVENT_DECLINED.asInstanceOf[js.Any], EVENT_ERROR = EVENT_ERROR.asInstanceOf[js.Any], EVENT_SENT = EVENT_SENT.asInstanceOf[js.Any], EVENT_SIGNED = EVENT_SIGNED.asInstanceOf[js.Any], EVENT_TEMPLATE_CREATED = EVENT_TEMPLATE_CREATED.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), init = js.Any.fromFunction1(init), open = js.Any.fromFunction1(open))
-  
     __obj.asInstanceOf[HelloSignStatic]
   }
 }

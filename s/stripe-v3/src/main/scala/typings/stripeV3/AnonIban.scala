@@ -15,7 +15,6 @@ object AnonIban {
   @scala.inline
   def apply(iban: String): AnonIban = {
     val __obj = js.Dynamic.literal(iban = iban.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIban]
   }
 }

@@ -15,7 +15,6 @@ object InfoTypesResource {
   @scala.inline
   def apply(list: AnonCallback => Request_[GooglePrivacyDlpV2beta1ListInfoTypesResponse]): InfoTypesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[InfoTypesResource]
   }
 }

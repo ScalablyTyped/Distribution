@@ -20,7 +20,6 @@ object GetInstanceRequest {
   @scala.inline
   def apply(InstanceId: ResourceId, ServiceId: ResourceId): GetInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], ServiceId = ServiceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInstanceRequest]
   }
 }

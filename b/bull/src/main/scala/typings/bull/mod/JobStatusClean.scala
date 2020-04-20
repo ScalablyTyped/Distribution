@@ -15,14 +15,12 @@ trait JobStatusClean extends js.Object
 
 object JobStatusClean {
   @scala.inline
-  def active: typings.bull.bullStrings.active = this.cast("active")
+  def active: typings.bull.bullStrings.active = "active".asInstanceOf[typings.bull.bullStrings.active]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def completed: typings.bull.bullStrings.completed = "completed".asInstanceOf[typings.bull.bullStrings.completed]
   @scala.inline
-  def completed: typings.bull.bullStrings.completed = this.cast("completed")
+  def delayed: typings.bull.bullStrings.delayed = "delayed".asInstanceOf[typings.bull.bullStrings.delayed]
   @scala.inline
-  def delayed: typings.bull.bullStrings.delayed = this.cast("delayed")
-  @scala.inline
-  def failed: typings.bull.bullStrings.failed = this.cast("failed")
+  def failed: typings.bull.bullStrings.failed = "failed".asInstanceOf[typings.bull.bullStrings.failed]
 }
 

@@ -13,7 +13,6 @@ object TypeofImportExport {
   @scala.inline
   def apply(Types: TypeofImportExport): TypeofImportExport = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofImportExport]
   }
 }

@@ -13,7 +13,6 @@ object UsageIntermediary {
   @scala.inline
   def apply(records: UsageRecordResource, triggers: UsageTriggerResource): UsageIntermediary = {
     val __obj = js.Dynamic.literal(records = records.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsageIntermediary]
   }
 }

@@ -341,668 +341,666 @@ trait CSSPropertyNames extends js.Object
 
 object CSSPropertyNames {
   @scala.inline
-  def alignContent: typings.luminoVirtualdom.luminoVirtualdomStrings.alignContent = this.cast("alignContent")
+  def alignContent: typings.luminoVirtualdom.luminoVirtualdomStrings.alignContent = "alignContent".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.alignContent]
   @scala.inline
-  def alignItems: typings.luminoVirtualdom.luminoVirtualdomStrings.alignItems = this.cast("alignItems")
+  def alignItems: typings.luminoVirtualdom.luminoVirtualdomStrings.alignItems = "alignItems".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.alignItems]
   @scala.inline
-  def alignSelf: typings.luminoVirtualdom.luminoVirtualdomStrings.alignSelf = this.cast("alignSelf")
+  def alignSelf: typings.luminoVirtualdom.luminoVirtualdomStrings.alignSelf = "alignSelf".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.alignSelf]
   @scala.inline
-  def alignmentBaseline: typings.luminoVirtualdom.luminoVirtualdomStrings.alignmentBaseline = this.cast("alignmentBaseline")
+  def alignmentBaseline: typings.luminoVirtualdom.luminoVirtualdomStrings.alignmentBaseline = "alignmentBaseline".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.alignmentBaseline]
   @scala.inline
-  def animation: typings.luminoVirtualdom.luminoVirtualdomStrings.animation = this.cast("animation")
+  def animation: typings.luminoVirtualdom.luminoVirtualdomStrings.animation = "animation".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.animation]
   @scala.inline
-  def animationDelay: typings.luminoVirtualdom.luminoVirtualdomStrings.animationDelay = this.cast("animationDelay")
+  def animationDelay: typings.luminoVirtualdom.luminoVirtualdomStrings.animationDelay = "animationDelay".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.animationDelay]
   @scala.inline
-  def animationDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.animationDirection = this.cast("animationDirection")
+  def animationDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.animationDirection = "animationDirection".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.animationDirection]
   @scala.inline
-  def animationDuration: typings.luminoVirtualdom.luminoVirtualdomStrings.animationDuration = this.cast("animationDuration")
+  def animationDuration: typings.luminoVirtualdom.luminoVirtualdomStrings.animationDuration = "animationDuration".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.animationDuration]
   @scala.inline
-  def animationFillMode: typings.luminoVirtualdom.luminoVirtualdomStrings.animationFillMode = this.cast("animationFillMode")
+  def animationFillMode: typings.luminoVirtualdom.luminoVirtualdomStrings.animationFillMode = "animationFillMode".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.animationFillMode]
   @scala.inline
-  def animationIterationCount: typings.luminoVirtualdom.luminoVirtualdomStrings.animationIterationCount = this.cast("animationIterationCount")
+  def animationIterationCount: typings.luminoVirtualdom.luminoVirtualdomStrings.animationIterationCount = "animationIterationCount".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.animationIterationCount]
   @scala.inline
-  def animationName: typings.luminoVirtualdom.luminoVirtualdomStrings.animationName = this.cast("animationName")
+  def animationName: typings.luminoVirtualdom.luminoVirtualdomStrings.animationName = "animationName".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.animationName]
   @scala.inline
-  def animationPlayState: typings.luminoVirtualdom.luminoVirtualdomStrings.animationPlayState = this.cast("animationPlayState")
+  def animationPlayState: typings.luminoVirtualdom.luminoVirtualdomStrings.animationPlayState = "animationPlayState".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.animationPlayState]
   @scala.inline
-  def animationTimingFunction: typings.luminoVirtualdom.luminoVirtualdomStrings.animationTimingFunction = this.cast("animationTimingFunction")
+  def animationTimingFunction: typings.luminoVirtualdom.luminoVirtualdomStrings.animationTimingFunction = "animationTimingFunction".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.animationTimingFunction]
   @scala.inline
-  def backfaceVisibility: typings.luminoVirtualdom.luminoVirtualdomStrings.backfaceVisibility = this.cast("backfaceVisibility")
+  def backfaceVisibility: typings.luminoVirtualdom.luminoVirtualdomStrings.backfaceVisibility = "backfaceVisibility".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backfaceVisibility]
   @scala.inline
-  def background: typings.luminoVirtualdom.luminoVirtualdomStrings.background = this.cast("background")
+  def background: typings.luminoVirtualdom.luminoVirtualdomStrings.background = "background".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.background]
   @scala.inline
-  def backgroundAttachment: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundAttachment = this.cast("backgroundAttachment")
+  def backgroundAttachment: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundAttachment = "backgroundAttachment".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundAttachment]
   @scala.inline
-  def backgroundClip: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundClip = this.cast("backgroundClip")
+  def backgroundClip: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundClip = "backgroundClip".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundClip]
   @scala.inline
-  def backgroundColor: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundColor = this.cast("backgroundColor")
+  def backgroundColor: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundColor = "backgroundColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundColor]
   @scala.inline
-  def backgroundImage: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundImage = this.cast("backgroundImage")
+  def backgroundImage: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundImage = "backgroundImage".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundImage]
   @scala.inline
-  def backgroundOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundOrigin = this.cast("backgroundOrigin")
+  def backgroundOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundOrigin = "backgroundOrigin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundOrigin]
   @scala.inline
-  def backgroundPosition: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundPosition = this.cast("backgroundPosition")
+  def backgroundPosition: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundPosition = "backgroundPosition".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundPosition]
   @scala.inline
-  def backgroundPositionX: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundPositionX = this.cast("backgroundPositionX")
+  def backgroundPositionX: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundPositionX = "backgroundPositionX".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundPositionX]
   @scala.inline
-  def backgroundPositionY: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundPositionY = this.cast("backgroundPositionY")
+  def backgroundPositionY: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundPositionY = "backgroundPositionY".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundPositionY]
   @scala.inline
-  def backgroundRepeat: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundRepeat = this.cast("backgroundRepeat")
+  def backgroundRepeat: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundRepeat = "backgroundRepeat".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundRepeat]
   @scala.inline
-  def backgroundSize: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundSize = this.cast("backgroundSize")
+  def backgroundSize: typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundSize = "backgroundSize".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.backgroundSize]
   @scala.inline
-  def baselineShift: typings.luminoVirtualdom.luminoVirtualdomStrings.baselineShift = this.cast("baselineShift")
+  def baselineShift: typings.luminoVirtualdom.luminoVirtualdomStrings.baselineShift = "baselineShift".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.baselineShift]
   @scala.inline
-  def border: typings.luminoVirtualdom.luminoVirtualdomStrings.border = this.cast("border")
+  def border: typings.luminoVirtualdom.luminoVirtualdomStrings.border = "border".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.border]
   @scala.inline
-  def borderBottom: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottom = this.cast("borderBottom")
+  def borderBottom: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottom = "borderBottom".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottom]
   @scala.inline
-  def borderBottomColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomColor = this.cast("borderBottomColor")
+  def borderBottomColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomColor = "borderBottomColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomColor]
   @scala.inline
-  def borderBottomLeftRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomLeftRadius = this.cast("borderBottomLeftRadius")
+  def borderBottomLeftRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomLeftRadius = "borderBottomLeftRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomLeftRadius]
   @scala.inline
-  def borderBottomRightRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomRightRadius = this.cast("borderBottomRightRadius")
+  def borderBottomRightRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomRightRadius = "borderBottomRightRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomRightRadius]
   @scala.inline
-  def borderBottomStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomStyle = this.cast("borderBottomStyle")
+  def borderBottomStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomStyle = "borderBottomStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomStyle]
   @scala.inline
-  def borderBottomWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomWidth = this.cast("borderBottomWidth")
+  def borderBottomWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomWidth = "borderBottomWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderBottomWidth]
   @scala.inline
-  def borderCollapse: typings.luminoVirtualdom.luminoVirtualdomStrings.borderCollapse = this.cast("borderCollapse")
+  def borderCollapse: typings.luminoVirtualdom.luminoVirtualdomStrings.borderCollapse = "borderCollapse".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderCollapse]
   @scala.inline
-  def borderColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderColor = this.cast("borderColor")
+  def borderColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderColor = "borderColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderColor]
   @scala.inline
-  def borderImage: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImage = this.cast("borderImage")
+  def borderImage: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImage = "borderImage".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderImage]
   @scala.inline
-  def borderImageOutset: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageOutset = this.cast("borderImageOutset")
+  def borderImageOutset: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageOutset = "borderImageOutset".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageOutset]
   @scala.inline
-  def borderImageRepeat: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageRepeat = this.cast("borderImageRepeat")
+  def borderImageRepeat: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageRepeat = "borderImageRepeat".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageRepeat]
   @scala.inline
-  def borderImageSlice: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageSlice = this.cast("borderImageSlice")
+  def borderImageSlice: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageSlice = "borderImageSlice".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageSlice]
   @scala.inline
-  def borderImageSource: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageSource = this.cast("borderImageSource")
+  def borderImageSource: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageSource = "borderImageSource".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageSource]
   @scala.inline
-  def borderImageWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageWidth = this.cast("borderImageWidth")
+  def borderImageWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageWidth = "borderImageWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderImageWidth]
   @scala.inline
-  def borderLeft: typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeft = this.cast("borderLeft")
+  def borderLeft: typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeft = "borderLeft".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeft]
   @scala.inline
-  def borderLeftColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeftColor = this.cast("borderLeftColor")
+  def borderLeftColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeftColor = "borderLeftColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeftColor]
   @scala.inline
-  def borderLeftStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeftStyle = this.cast("borderLeftStyle")
+  def borderLeftStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeftStyle = "borderLeftStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeftStyle]
   @scala.inline
-  def borderLeftWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeftWidth = this.cast("borderLeftWidth")
+  def borderLeftWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeftWidth = "borderLeftWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderLeftWidth]
   @scala.inline
-  def borderRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRadius = this.cast("borderRadius")
+  def borderRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRadius = "borderRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderRadius]
   @scala.inline
-  def borderRight: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRight = this.cast("borderRight")
+  def borderRight: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRight = "borderRight".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderRight]
   @scala.inline
-  def borderRightColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRightColor = this.cast("borderRightColor")
+  def borderRightColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRightColor = "borderRightColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderRightColor]
   @scala.inline
-  def borderRightStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRightStyle = this.cast("borderRightStyle")
+  def borderRightStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRightStyle = "borderRightStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderRightStyle]
   @scala.inline
-  def borderRightWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRightWidth = this.cast("borderRightWidth")
+  def borderRightWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderRightWidth = "borderRightWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderRightWidth]
   @scala.inline
-  def borderSpacing: typings.luminoVirtualdom.luminoVirtualdomStrings.borderSpacing = this.cast("borderSpacing")
+  def borderSpacing: typings.luminoVirtualdom.luminoVirtualdomStrings.borderSpacing = "borderSpacing".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderSpacing]
   @scala.inline
-  def borderStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderStyle = this.cast("borderStyle")
+  def borderStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderStyle = "borderStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderStyle]
   @scala.inline
-  def borderTop: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTop = this.cast("borderTop")
+  def borderTop: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTop = "borderTop".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderTop]
   @scala.inline
-  def borderTopColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopColor = this.cast("borderTopColor")
+  def borderTopColor: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopColor = "borderTopColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopColor]
   @scala.inline
-  def borderTopLeftRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopLeftRadius = this.cast("borderTopLeftRadius")
+  def borderTopLeftRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopLeftRadius = "borderTopLeftRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopLeftRadius]
   @scala.inline
-  def borderTopRightRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopRightRadius = this.cast("borderTopRightRadius")
+  def borderTopRightRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopRightRadius = "borderTopRightRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopRightRadius]
   @scala.inline
-  def borderTopStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopStyle = this.cast("borderTopStyle")
+  def borderTopStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopStyle = "borderTopStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopStyle]
   @scala.inline
-  def borderTopWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopWidth = this.cast("borderTopWidth")
+  def borderTopWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopWidth = "borderTopWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderTopWidth]
   @scala.inline
-  def borderWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderWidth = this.cast("borderWidth")
+  def borderWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.borderWidth = "borderWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.borderWidth]
   @scala.inline
-  def bottom: typings.luminoVirtualdom.luminoVirtualdomStrings.bottom = this.cast("bottom")
+  def bottom: typings.luminoVirtualdom.luminoVirtualdomStrings.bottom = "bottom".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.bottom]
   @scala.inline
-  def boxShadow: typings.luminoVirtualdom.luminoVirtualdomStrings.boxShadow = this.cast("boxShadow")
+  def boxShadow: typings.luminoVirtualdom.luminoVirtualdomStrings.boxShadow = "boxShadow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.boxShadow]
   @scala.inline
-  def boxSizing: typings.luminoVirtualdom.luminoVirtualdomStrings.boxSizing = this.cast("boxSizing")
+  def boxSizing: typings.luminoVirtualdom.luminoVirtualdomStrings.boxSizing = "boxSizing".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.boxSizing]
   @scala.inline
-  def breakAfter: typings.luminoVirtualdom.luminoVirtualdomStrings.breakAfter = this.cast("breakAfter")
+  def breakAfter: typings.luminoVirtualdom.luminoVirtualdomStrings.breakAfter = "breakAfter".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.breakAfter]
   @scala.inline
-  def breakBefore: typings.luminoVirtualdom.luminoVirtualdomStrings.breakBefore = this.cast("breakBefore")
+  def breakBefore: typings.luminoVirtualdom.luminoVirtualdomStrings.breakBefore = "breakBefore".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.breakBefore]
   @scala.inline
-  def breakInside: typings.luminoVirtualdom.luminoVirtualdomStrings.breakInside = this.cast("breakInside")
+  def breakInside: typings.luminoVirtualdom.luminoVirtualdomStrings.breakInside = "breakInside".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.breakInside]
   @scala.inline
-  def captionSide: typings.luminoVirtualdom.luminoVirtualdomStrings.captionSide = this.cast("captionSide")
+  def captionSide: typings.luminoVirtualdom.luminoVirtualdomStrings.captionSide = "captionSide".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.captionSide]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clear: typings.luminoVirtualdom.luminoVirtualdomStrings.clear = "clear".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.clear]
   @scala.inline
-  def clear: typings.luminoVirtualdom.luminoVirtualdomStrings.clear = this.cast("clear")
+  def clip: typings.luminoVirtualdom.luminoVirtualdomStrings.clip = "clip".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.clip]
   @scala.inline
-  def clip: typings.luminoVirtualdom.luminoVirtualdomStrings.clip = this.cast("clip")
+  def clipPath: typings.luminoVirtualdom.luminoVirtualdomStrings.clipPath = "clipPath".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.clipPath]
   @scala.inline
-  def clipPath: typings.luminoVirtualdom.luminoVirtualdomStrings.clipPath = this.cast("clipPath")
+  def clipRule: typings.luminoVirtualdom.luminoVirtualdomStrings.clipRule = "clipRule".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.clipRule]
   @scala.inline
-  def clipRule: typings.luminoVirtualdom.luminoVirtualdomStrings.clipRule = this.cast("clipRule")
+  def color: typings.luminoVirtualdom.luminoVirtualdomStrings.color = "color".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.color]
   @scala.inline
-  def color: typings.luminoVirtualdom.luminoVirtualdomStrings.color = this.cast("color")
+  def colorInterpolationFilters: typings.luminoVirtualdom.luminoVirtualdomStrings.colorInterpolationFilters = "colorInterpolationFilters".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.colorInterpolationFilters]
   @scala.inline
-  def colorInterpolationFilters: typings.luminoVirtualdom.luminoVirtualdomStrings.colorInterpolationFilters = this.cast("colorInterpolationFilters")
+  def columnCount: typings.luminoVirtualdom.luminoVirtualdomStrings.columnCount = "columnCount".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columnCount]
   @scala.inline
-  def columnCount: typings.luminoVirtualdom.luminoVirtualdomStrings.columnCount = this.cast("columnCount")
+  def columnFill: typings.luminoVirtualdom.luminoVirtualdomStrings.columnFill = "columnFill".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columnFill]
   @scala.inline
-  def columnFill: typings.luminoVirtualdom.luminoVirtualdomStrings.columnFill = this.cast("columnFill")
+  def columnGap: typings.luminoVirtualdom.luminoVirtualdomStrings.columnGap = "columnGap".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columnGap]
   @scala.inline
-  def columnGap: typings.luminoVirtualdom.luminoVirtualdomStrings.columnGap = this.cast("columnGap")
+  def columnRule: typings.luminoVirtualdom.luminoVirtualdomStrings.columnRule = "columnRule".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columnRule]
   @scala.inline
-  def columnRule: typings.luminoVirtualdom.luminoVirtualdomStrings.columnRule = this.cast("columnRule")
+  def columnRuleColor: typings.luminoVirtualdom.luminoVirtualdomStrings.columnRuleColor = "columnRuleColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columnRuleColor]
   @scala.inline
-  def columnRuleColor: typings.luminoVirtualdom.luminoVirtualdomStrings.columnRuleColor = this.cast("columnRuleColor")
+  def columnRuleStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.columnRuleStyle = "columnRuleStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columnRuleStyle]
   @scala.inline
-  def columnRuleStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.columnRuleStyle = this.cast("columnRuleStyle")
+  def columnRuleWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.columnRuleWidth = "columnRuleWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columnRuleWidth]
   @scala.inline
-  def columnRuleWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.columnRuleWidth = this.cast("columnRuleWidth")
+  def columnSpan: typings.luminoVirtualdom.luminoVirtualdomStrings.columnSpan = "columnSpan".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columnSpan]
   @scala.inline
-  def columnSpan: typings.luminoVirtualdom.luminoVirtualdomStrings.columnSpan = this.cast("columnSpan")
+  def columnWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.columnWidth = "columnWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columnWidth]
   @scala.inline
-  def columnWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.columnWidth = this.cast("columnWidth")
+  def columns: typings.luminoVirtualdom.luminoVirtualdomStrings.columns = "columns".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.columns]
   @scala.inline
-  def columns: typings.luminoVirtualdom.luminoVirtualdomStrings.columns = this.cast("columns")
+  def content: typings.luminoVirtualdom.luminoVirtualdomStrings.content = "content".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.content]
   @scala.inline
-  def content: typings.luminoVirtualdom.luminoVirtualdomStrings.content = this.cast("content")
+  def counterIncrement: typings.luminoVirtualdom.luminoVirtualdomStrings.counterIncrement = "counterIncrement".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.counterIncrement]
   @scala.inline
-  def counterIncrement: typings.luminoVirtualdom.luminoVirtualdomStrings.counterIncrement = this.cast("counterIncrement")
+  def counterReset: typings.luminoVirtualdom.luminoVirtualdomStrings.counterReset = "counterReset".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.counterReset]
   @scala.inline
-  def counterReset: typings.luminoVirtualdom.luminoVirtualdomStrings.counterReset = this.cast("counterReset")
+  def cssFloat: typings.luminoVirtualdom.luminoVirtualdomStrings.cssFloat = "cssFloat".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.cssFloat]
   @scala.inline
-  def cssFloat: typings.luminoVirtualdom.luminoVirtualdomStrings.cssFloat = this.cast("cssFloat")
+  def cssText: typings.luminoVirtualdom.luminoVirtualdomStrings.cssText = "cssText".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.cssText]
   @scala.inline
-  def cssText: typings.luminoVirtualdom.luminoVirtualdomStrings.cssText = this.cast("cssText")
+  def cursor: typings.luminoVirtualdom.luminoVirtualdomStrings.cursor = "cursor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.cursor]
   @scala.inline
-  def cursor: typings.luminoVirtualdom.luminoVirtualdomStrings.cursor = this.cast("cursor")
+  def direction: typings.luminoVirtualdom.luminoVirtualdomStrings.direction = "direction".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.direction]
   @scala.inline
-  def direction: typings.luminoVirtualdom.luminoVirtualdomStrings.direction = this.cast("direction")
+  def display: typings.luminoVirtualdom.luminoVirtualdomStrings.display = "display".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.display]
   @scala.inline
-  def display: typings.luminoVirtualdom.luminoVirtualdomStrings.display = this.cast("display")
+  def dominantBaseline: typings.luminoVirtualdom.luminoVirtualdomStrings.dominantBaseline = "dominantBaseline".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.dominantBaseline]
   @scala.inline
-  def dominantBaseline: typings.luminoVirtualdom.luminoVirtualdomStrings.dominantBaseline = this.cast("dominantBaseline")
+  def emptyCells: typings.luminoVirtualdom.luminoVirtualdomStrings.emptyCells = "emptyCells".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.emptyCells]
   @scala.inline
-  def emptyCells: typings.luminoVirtualdom.luminoVirtualdomStrings.emptyCells = this.cast("emptyCells")
+  def enableBackground: typings.luminoVirtualdom.luminoVirtualdomStrings.enableBackground = "enableBackground".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.enableBackground]
   @scala.inline
-  def enableBackground: typings.luminoVirtualdom.luminoVirtualdomStrings.enableBackground = this.cast("enableBackground")
+  def fill: typings.luminoVirtualdom.luminoVirtualdomStrings.fill = "fill".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fill]
   @scala.inline
-  def fill: typings.luminoVirtualdom.luminoVirtualdomStrings.fill = this.cast("fill")
+  def fillOpacity: typings.luminoVirtualdom.luminoVirtualdomStrings.fillOpacity = "fillOpacity".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fillOpacity]
   @scala.inline
-  def fillOpacity: typings.luminoVirtualdom.luminoVirtualdomStrings.fillOpacity = this.cast("fillOpacity")
+  def fillRule: typings.luminoVirtualdom.luminoVirtualdomStrings.fillRule = "fillRule".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fillRule]
   @scala.inline
-  def fillRule: typings.luminoVirtualdom.luminoVirtualdomStrings.fillRule = this.cast("fillRule")
+  def filter: typings.luminoVirtualdom.luminoVirtualdomStrings.filter = "filter".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.filter]
   @scala.inline
-  def filter: typings.luminoVirtualdom.luminoVirtualdomStrings.filter = this.cast("filter")
+  def flex: typings.luminoVirtualdom.luminoVirtualdomStrings.flex = "flex".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.flex]
   @scala.inline
-  def flex: typings.luminoVirtualdom.luminoVirtualdomStrings.flex = this.cast("flex")
+  def flexBasis: typings.luminoVirtualdom.luminoVirtualdomStrings.flexBasis = "flexBasis".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.flexBasis]
   @scala.inline
-  def flexBasis: typings.luminoVirtualdom.luminoVirtualdomStrings.flexBasis = this.cast("flexBasis")
+  def flexDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.flexDirection = "flexDirection".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.flexDirection]
   @scala.inline
-  def flexDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.flexDirection = this.cast("flexDirection")
+  def flexFlow: typings.luminoVirtualdom.luminoVirtualdomStrings.flexFlow = "flexFlow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.flexFlow]
   @scala.inline
-  def flexFlow: typings.luminoVirtualdom.luminoVirtualdomStrings.flexFlow = this.cast("flexFlow")
+  def flexGrow: typings.luminoVirtualdom.luminoVirtualdomStrings.flexGrow = "flexGrow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.flexGrow]
   @scala.inline
-  def flexGrow: typings.luminoVirtualdom.luminoVirtualdomStrings.flexGrow = this.cast("flexGrow")
+  def flexShrink: typings.luminoVirtualdom.luminoVirtualdomStrings.flexShrink = "flexShrink".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.flexShrink]
   @scala.inline
-  def flexShrink: typings.luminoVirtualdom.luminoVirtualdomStrings.flexShrink = this.cast("flexShrink")
+  def flexWrap: typings.luminoVirtualdom.luminoVirtualdomStrings.flexWrap = "flexWrap".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.flexWrap]
   @scala.inline
-  def flexWrap: typings.luminoVirtualdom.luminoVirtualdomStrings.flexWrap = this.cast("flexWrap")
+  def floodColor: typings.luminoVirtualdom.luminoVirtualdomStrings.floodColor = "floodColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.floodColor]
   @scala.inline
-  def floodColor: typings.luminoVirtualdom.luminoVirtualdomStrings.floodColor = this.cast("floodColor")
+  def floodOpacity: typings.luminoVirtualdom.luminoVirtualdomStrings.floodOpacity = "floodOpacity".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.floodOpacity]
   @scala.inline
-  def floodOpacity: typings.luminoVirtualdom.luminoVirtualdomStrings.floodOpacity = this.cast("floodOpacity")
+  def font: typings.luminoVirtualdom.luminoVirtualdomStrings.font = "font".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.font]
   @scala.inline
-  def font: typings.luminoVirtualdom.luminoVirtualdomStrings.font = this.cast("font")
+  def fontFamily: typings.luminoVirtualdom.luminoVirtualdomStrings.fontFamily = "fontFamily".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fontFamily]
   @scala.inline
-  def fontFamily: typings.luminoVirtualdom.luminoVirtualdomStrings.fontFamily = this.cast("fontFamily")
+  def fontFeatureSettings: typings.luminoVirtualdom.luminoVirtualdomStrings.fontFeatureSettings = "fontFeatureSettings".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fontFeatureSettings]
   @scala.inline
-  def fontFeatureSettings: typings.luminoVirtualdom.luminoVirtualdomStrings.fontFeatureSettings = this.cast("fontFeatureSettings")
+  def fontSize: typings.luminoVirtualdom.luminoVirtualdomStrings.fontSize = "fontSize".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fontSize]
   @scala.inline
-  def fontSize: typings.luminoVirtualdom.luminoVirtualdomStrings.fontSize = this.cast("fontSize")
+  def fontSizeAdjust: typings.luminoVirtualdom.luminoVirtualdomStrings.fontSizeAdjust = "fontSizeAdjust".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fontSizeAdjust]
   @scala.inline
-  def fontSizeAdjust: typings.luminoVirtualdom.luminoVirtualdomStrings.fontSizeAdjust = this.cast("fontSizeAdjust")
+  def fontStretch: typings.luminoVirtualdom.luminoVirtualdomStrings.fontStretch = "fontStretch".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fontStretch]
   @scala.inline
-  def fontStretch: typings.luminoVirtualdom.luminoVirtualdomStrings.fontStretch = this.cast("fontStretch")
+  def fontStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.fontStyle = "fontStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fontStyle]
   @scala.inline
-  def fontStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.fontStyle = this.cast("fontStyle")
+  def fontVariant: typings.luminoVirtualdom.luminoVirtualdomStrings.fontVariant = "fontVariant".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fontVariant]
   @scala.inline
-  def fontVariant: typings.luminoVirtualdom.luminoVirtualdomStrings.fontVariant = this.cast("fontVariant")
+  def fontWeight: typings.luminoVirtualdom.luminoVirtualdomStrings.fontWeight = "fontWeight".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.fontWeight]
   @scala.inline
-  def fontWeight: typings.luminoVirtualdom.luminoVirtualdomStrings.fontWeight = this.cast("fontWeight")
+  def glyphOrientationHorizontal: typings.luminoVirtualdom.luminoVirtualdomStrings.glyphOrientationHorizontal = "glyphOrientationHorizontal".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.glyphOrientationHorizontal]
   @scala.inline
-  def glyphOrientationHorizontal: typings.luminoVirtualdom.luminoVirtualdomStrings.glyphOrientationHorizontal = this.cast("glyphOrientationHorizontal")
+  def glyphOrientationVertical: typings.luminoVirtualdom.luminoVirtualdomStrings.glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.glyphOrientationVertical]
   @scala.inline
-  def glyphOrientationVertical: typings.luminoVirtualdom.luminoVirtualdomStrings.glyphOrientationVertical = this.cast("glyphOrientationVertical")
+  def height: typings.luminoVirtualdom.luminoVirtualdomStrings.height = "height".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.height]
   @scala.inline
-  def height: typings.luminoVirtualdom.luminoVirtualdomStrings.height = this.cast("height")
+  def imeMode: typings.luminoVirtualdom.luminoVirtualdomStrings.imeMode = "imeMode".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.imeMode]
   @scala.inline
-  def imeMode: typings.luminoVirtualdom.luminoVirtualdomStrings.imeMode = this.cast("imeMode")
+  def justifyContent: typings.luminoVirtualdom.luminoVirtualdomStrings.justifyContent = "justifyContent".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.justifyContent]
   @scala.inline
-  def justifyContent: typings.luminoVirtualdom.luminoVirtualdomStrings.justifyContent = this.cast("justifyContent")
+  def kerning: typings.luminoVirtualdom.luminoVirtualdomStrings.kerning = "kerning".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.kerning]
   @scala.inline
-  def kerning: typings.luminoVirtualdom.luminoVirtualdomStrings.kerning = this.cast("kerning")
+  def left: typings.luminoVirtualdom.luminoVirtualdomStrings.left = "left".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.left]
   @scala.inline
-  def left: typings.luminoVirtualdom.luminoVirtualdomStrings.left = this.cast("left")
+  def letterSpacing: typings.luminoVirtualdom.luminoVirtualdomStrings.letterSpacing = "letterSpacing".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.letterSpacing]
   @scala.inline
-  def letterSpacing: typings.luminoVirtualdom.luminoVirtualdomStrings.letterSpacing = this.cast("letterSpacing")
+  def lightingColor: typings.luminoVirtualdom.luminoVirtualdomStrings.lightingColor = "lightingColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.lightingColor]
   @scala.inline
-  def lightingColor: typings.luminoVirtualdom.luminoVirtualdomStrings.lightingColor = this.cast("lightingColor")
+  def lineHeight: typings.luminoVirtualdom.luminoVirtualdomStrings.lineHeight = "lineHeight".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.lineHeight]
   @scala.inline
-  def lineHeight: typings.luminoVirtualdom.luminoVirtualdomStrings.lineHeight = this.cast("lineHeight")
+  def listStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.listStyle = "listStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.listStyle]
   @scala.inline
-  def listStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.listStyle = this.cast("listStyle")
+  def listStyleImage: typings.luminoVirtualdom.luminoVirtualdomStrings.listStyleImage = "listStyleImage".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.listStyleImage]
   @scala.inline
-  def listStyleImage: typings.luminoVirtualdom.luminoVirtualdomStrings.listStyleImage = this.cast("listStyleImage")
+  def listStylePosition: typings.luminoVirtualdom.luminoVirtualdomStrings.listStylePosition = "listStylePosition".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.listStylePosition]
   @scala.inline
-  def listStylePosition: typings.luminoVirtualdom.luminoVirtualdomStrings.listStylePosition = this.cast("listStylePosition")
+  def listStyleType: typings.luminoVirtualdom.luminoVirtualdomStrings.listStyleType = "listStyleType".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.listStyleType]
   @scala.inline
-  def listStyleType: typings.luminoVirtualdom.luminoVirtualdomStrings.listStyleType = this.cast("listStyleType")
+  def margin: typings.luminoVirtualdom.luminoVirtualdomStrings.margin = "margin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.margin]
   @scala.inline
-  def margin: typings.luminoVirtualdom.luminoVirtualdomStrings.margin = this.cast("margin")
+  def marginBottom: typings.luminoVirtualdom.luminoVirtualdomStrings.marginBottom = "marginBottom".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.marginBottom]
   @scala.inline
-  def marginBottom: typings.luminoVirtualdom.luminoVirtualdomStrings.marginBottom = this.cast("marginBottom")
+  def marginLeft: typings.luminoVirtualdom.luminoVirtualdomStrings.marginLeft = "marginLeft".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.marginLeft]
   @scala.inline
-  def marginLeft: typings.luminoVirtualdom.luminoVirtualdomStrings.marginLeft = this.cast("marginLeft")
+  def marginRight: typings.luminoVirtualdom.luminoVirtualdomStrings.marginRight = "marginRight".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.marginRight]
   @scala.inline
-  def marginRight: typings.luminoVirtualdom.luminoVirtualdomStrings.marginRight = this.cast("marginRight")
+  def marginTop: typings.luminoVirtualdom.luminoVirtualdomStrings.marginTop = "marginTop".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.marginTop]
   @scala.inline
-  def marginTop: typings.luminoVirtualdom.luminoVirtualdomStrings.marginTop = this.cast("marginTop")
+  def marker: typings.luminoVirtualdom.luminoVirtualdomStrings.marker = "marker".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.marker]
   @scala.inline
-  def marker: typings.luminoVirtualdom.luminoVirtualdomStrings.marker = this.cast("marker")
+  def markerEnd: typings.luminoVirtualdom.luminoVirtualdomStrings.markerEnd = "markerEnd".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.markerEnd]
   @scala.inline
-  def markerEnd: typings.luminoVirtualdom.luminoVirtualdomStrings.markerEnd = this.cast("markerEnd")
+  def markerMid: typings.luminoVirtualdom.luminoVirtualdomStrings.markerMid = "markerMid".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.markerMid]
   @scala.inline
-  def markerMid: typings.luminoVirtualdom.luminoVirtualdomStrings.markerMid = this.cast("markerMid")
+  def markerStart: typings.luminoVirtualdom.luminoVirtualdomStrings.markerStart = "markerStart".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.markerStart]
   @scala.inline
-  def markerStart: typings.luminoVirtualdom.luminoVirtualdomStrings.markerStart = this.cast("markerStart")
+  def mask: typings.luminoVirtualdom.luminoVirtualdomStrings.mask = "mask".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.mask]
   @scala.inline
-  def mask: typings.luminoVirtualdom.luminoVirtualdomStrings.mask = this.cast("mask")
+  def maxHeight: typings.luminoVirtualdom.luminoVirtualdomStrings.maxHeight = "maxHeight".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.maxHeight]
   @scala.inline
-  def maxHeight: typings.luminoVirtualdom.luminoVirtualdomStrings.maxHeight = this.cast("maxHeight")
+  def maxWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.maxWidth = "maxWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.maxWidth]
   @scala.inline
-  def maxWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.maxWidth = this.cast("maxWidth")
+  def minHeight: typings.luminoVirtualdom.luminoVirtualdomStrings.minHeight = "minHeight".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.minHeight]
   @scala.inline
-  def minHeight: typings.luminoVirtualdom.luminoVirtualdomStrings.minHeight = this.cast("minHeight")
+  def minWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.minWidth = "minWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.minWidth]
   @scala.inline
-  def minWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.minWidth = this.cast("minWidth")
+  def msContentZoomChaining: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomChaining = "msContentZoomChaining".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomChaining]
   @scala.inline
-  def msContentZoomChaining: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomChaining = this.cast("msContentZoomChaining")
+  def msContentZoomLimit: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomLimit = "msContentZoomLimit".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomLimit]
   @scala.inline
-  def msContentZoomLimit: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomLimit = this.cast("msContentZoomLimit")
+  def msContentZoomLimitMax: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomLimitMax = "msContentZoomLimitMax".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomLimitMax]
   @scala.inline
-  def msContentZoomLimitMax: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomLimitMax = this.cast("msContentZoomLimitMax")
+  def msContentZoomLimitMin: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomLimitMin = "msContentZoomLimitMin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomLimitMin]
   @scala.inline
-  def msContentZoomLimitMin: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomLimitMin = this.cast("msContentZoomLimitMin")
+  def msContentZoomSnap: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomSnap = "msContentZoomSnap".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomSnap]
   @scala.inline
-  def msContentZoomSnap: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomSnap = this.cast("msContentZoomSnap")
+  def msContentZoomSnapPoints: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomSnapPoints = "msContentZoomSnapPoints".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomSnapPoints]
   @scala.inline
-  def msContentZoomSnapPoints: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomSnapPoints = this.cast("msContentZoomSnapPoints")
+  def msContentZoomSnapType: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomSnapType = "msContentZoomSnapType".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomSnapType]
   @scala.inline
-  def msContentZoomSnapType: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZoomSnapType = this.cast("msContentZoomSnapType")
+  def msContentZooming: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZooming = "msContentZooming".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZooming]
   @scala.inline
-  def msContentZooming: typings.luminoVirtualdom.luminoVirtualdomStrings.msContentZooming = this.cast("msContentZooming")
+  def msFlowFrom: typings.luminoVirtualdom.luminoVirtualdomStrings.msFlowFrom = "msFlowFrom".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msFlowFrom]
   @scala.inline
-  def msFlowFrom: typings.luminoVirtualdom.luminoVirtualdomStrings.msFlowFrom = this.cast("msFlowFrom")
+  def msFlowInto: typings.luminoVirtualdom.luminoVirtualdomStrings.msFlowInto = "msFlowInto".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msFlowInto]
   @scala.inline
-  def msFlowInto: typings.luminoVirtualdom.luminoVirtualdomStrings.msFlowInto = this.cast("msFlowInto")
+  def msFontFeatureSettings: typings.luminoVirtualdom.luminoVirtualdomStrings.msFontFeatureSettings = "msFontFeatureSettings".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msFontFeatureSettings]
   @scala.inline
-  def msFontFeatureSettings: typings.luminoVirtualdom.luminoVirtualdomStrings.msFontFeatureSettings = this.cast("msFontFeatureSettings")
+  def msGridColumn: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumn = "msGridColumn".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumn]
   @scala.inline
-  def msGridColumn: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumn = this.cast("msGridColumn")
+  def msGridColumnAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumnAlign = "msGridColumnAlign".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumnAlign]
   @scala.inline
-  def msGridColumnAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumnAlign = this.cast("msGridColumnAlign")
+  def msGridColumnSpan: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumnSpan = "msGridColumnSpan".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumnSpan]
   @scala.inline
-  def msGridColumnSpan: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumnSpan = this.cast("msGridColumnSpan")
+  def msGridColumns: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumns = "msGridColumns".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumns]
   @scala.inline
-  def msGridColumns: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridColumns = this.cast("msGridColumns")
+  def msGridRow: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRow = "msGridRow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRow]
   @scala.inline
-  def msGridRow: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRow = this.cast("msGridRow")
+  def msGridRowAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRowAlign = "msGridRowAlign".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRowAlign]
   @scala.inline
-  def msGridRowAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRowAlign = this.cast("msGridRowAlign")
+  def msGridRowSpan: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRowSpan = "msGridRowSpan".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRowSpan]
   @scala.inline
-  def msGridRowSpan: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRowSpan = this.cast("msGridRowSpan")
+  def msGridRows: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRows = "msGridRows".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRows]
   @scala.inline
-  def msGridRows: typings.luminoVirtualdom.luminoVirtualdomStrings.msGridRows = this.cast("msGridRows")
+  def msHighContrastAdjust: typings.luminoVirtualdom.luminoVirtualdomStrings.msHighContrastAdjust = "msHighContrastAdjust".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msHighContrastAdjust]
   @scala.inline
-  def msHighContrastAdjust: typings.luminoVirtualdom.luminoVirtualdomStrings.msHighContrastAdjust = this.cast("msHighContrastAdjust")
+  def msHyphenateLimitChars: typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphenateLimitChars = "msHyphenateLimitChars".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphenateLimitChars]
   @scala.inline
-  def msHyphenateLimitChars: typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphenateLimitChars = this.cast("msHyphenateLimitChars")
+  def msHyphenateLimitLines: typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphenateLimitLines = "msHyphenateLimitLines".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphenateLimitLines]
   @scala.inline
-  def msHyphenateLimitLines: typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphenateLimitLines = this.cast("msHyphenateLimitLines")
+  def msHyphenateLimitZone: typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphenateLimitZone = "msHyphenateLimitZone".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphenateLimitZone]
   @scala.inline
-  def msHyphenateLimitZone: typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphenateLimitZone = this.cast("msHyphenateLimitZone")
+  def msHyphens: typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphens = "msHyphens".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphens]
   @scala.inline
-  def msHyphens: typings.luminoVirtualdom.luminoVirtualdomStrings.msHyphens = this.cast("msHyphens")
+  def msImeAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.msImeAlign = "msImeAlign".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msImeAlign]
   @scala.inline
-  def msImeAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.msImeAlign = this.cast("msImeAlign")
+  def msOverflowStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.msOverflowStyle = "msOverflowStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msOverflowStyle]
   @scala.inline
-  def msOverflowStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.msOverflowStyle = this.cast("msOverflowStyle")
+  def msScrollChaining: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollChaining = "msScrollChaining".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollChaining]
   @scala.inline
-  def msScrollChaining: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollChaining = this.cast("msScrollChaining")
+  def msScrollLimit: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimit = "msScrollLimit".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimit]
   @scala.inline
-  def msScrollLimit: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimit = this.cast("msScrollLimit")
+  def msScrollLimitXMax: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitXMax = "msScrollLimitXMax".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitXMax]
   @scala.inline
-  def msScrollLimitXMax: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitXMax = this.cast("msScrollLimitXMax")
+  def msScrollLimitXMin: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitXMin = "msScrollLimitXMin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitXMin]
   @scala.inline
-  def msScrollLimitXMin: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitXMin = this.cast("msScrollLimitXMin")
+  def msScrollLimitYMax: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitYMax = "msScrollLimitYMax".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitYMax]
   @scala.inline
-  def msScrollLimitYMax: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitYMax = this.cast("msScrollLimitYMax")
+  def msScrollLimitYMin: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitYMin = "msScrollLimitYMin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitYMin]
   @scala.inline
-  def msScrollLimitYMin: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollLimitYMin = this.cast("msScrollLimitYMin")
+  def msScrollRails: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollRails = "msScrollRails".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollRails]
   @scala.inline
-  def msScrollRails: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollRails = this.cast("msScrollRails")
+  def msScrollSnapPointsX: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapPointsX = "msScrollSnapPointsX".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapPointsX]
   @scala.inline
-  def msScrollSnapPointsX: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapPointsX = this.cast("msScrollSnapPointsX")
+  def msScrollSnapPointsY: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapPointsY = "msScrollSnapPointsY".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapPointsY]
   @scala.inline
-  def msScrollSnapPointsY: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapPointsY = this.cast("msScrollSnapPointsY")
+  def msScrollSnapType: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapType = "msScrollSnapType".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapType]
   @scala.inline
-  def msScrollSnapType: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapType = this.cast("msScrollSnapType")
+  def msScrollSnapX: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapX = "msScrollSnapX".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapX]
   @scala.inline
-  def msScrollSnapX: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapX = this.cast("msScrollSnapX")
+  def msScrollSnapY: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapY = "msScrollSnapY".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapY]
   @scala.inline
-  def msScrollSnapY: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollSnapY = this.cast("msScrollSnapY")
+  def msScrollTranslation: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollTranslation = "msScrollTranslation".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollTranslation]
   @scala.inline
-  def msScrollTranslation: typings.luminoVirtualdom.luminoVirtualdomStrings.msScrollTranslation = this.cast("msScrollTranslation")
+  def msTextCombineHorizontal: typings.luminoVirtualdom.luminoVirtualdomStrings.msTextCombineHorizontal = "msTextCombineHorizontal".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msTextCombineHorizontal]
   @scala.inline
-  def msTextCombineHorizontal: typings.luminoVirtualdom.luminoVirtualdomStrings.msTextCombineHorizontal = this.cast("msTextCombineHorizontal")
+  def msTextSizeAdjust: typings.luminoVirtualdom.luminoVirtualdomStrings.msTextSizeAdjust = "msTextSizeAdjust".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msTextSizeAdjust]
   @scala.inline
-  def msTextSizeAdjust: typings.luminoVirtualdom.luminoVirtualdomStrings.msTextSizeAdjust = this.cast("msTextSizeAdjust")
+  def msTouchAction: typings.luminoVirtualdom.luminoVirtualdomStrings.msTouchAction = "msTouchAction".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msTouchAction]
   @scala.inline
-  def msTouchAction: typings.luminoVirtualdom.luminoVirtualdomStrings.msTouchAction = this.cast("msTouchAction")
+  def msTouchSelect: typings.luminoVirtualdom.luminoVirtualdomStrings.msTouchSelect = "msTouchSelect".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msTouchSelect]
   @scala.inline
-  def msTouchSelect: typings.luminoVirtualdom.luminoVirtualdomStrings.msTouchSelect = this.cast("msTouchSelect")
+  def msUserSelect: typings.luminoVirtualdom.luminoVirtualdomStrings.msUserSelect = "msUserSelect".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msUserSelect]
   @scala.inline
-  def msUserSelect: typings.luminoVirtualdom.luminoVirtualdomStrings.msUserSelect = this.cast("msUserSelect")
+  def msWrapFlow: typings.luminoVirtualdom.luminoVirtualdomStrings.msWrapFlow = "msWrapFlow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msWrapFlow]
   @scala.inline
-  def msWrapFlow: typings.luminoVirtualdom.luminoVirtualdomStrings.msWrapFlow = this.cast("msWrapFlow")
+  def msWrapMargin: typings.luminoVirtualdom.luminoVirtualdomStrings.msWrapMargin = "msWrapMargin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msWrapMargin]
   @scala.inline
-  def msWrapMargin: typings.luminoVirtualdom.luminoVirtualdomStrings.msWrapMargin = this.cast("msWrapMargin")
+  def msWrapThrough: typings.luminoVirtualdom.luminoVirtualdomStrings.msWrapThrough = "msWrapThrough".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.msWrapThrough]
   @scala.inline
-  def msWrapThrough: typings.luminoVirtualdom.luminoVirtualdomStrings.msWrapThrough = this.cast("msWrapThrough")
+  def opacity: typings.luminoVirtualdom.luminoVirtualdomStrings.opacity = "opacity".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.opacity]
   @scala.inline
-  def opacity: typings.luminoVirtualdom.luminoVirtualdomStrings.opacity = this.cast("opacity")
+  def order: typings.luminoVirtualdom.luminoVirtualdomStrings.order = "order".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.order]
   @scala.inline
-  def order: typings.luminoVirtualdom.luminoVirtualdomStrings.order = this.cast("order")
+  def orphans: typings.luminoVirtualdom.luminoVirtualdomStrings.orphans = "orphans".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.orphans]
   @scala.inline
-  def orphans: typings.luminoVirtualdom.luminoVirtualdomStrings.orphans = this.cast("orphans")
+  def outline: typings.luminoVirtualdom.luminoVirtualdomStrings.outline = "outline".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.outline]
   @scala.inline
-  def outline: typings.luminoVirtualdom.luminoVirtualdomStrings.outline = this.cast("outline")
+  def outlineColor: typings.luminoVirtualdom.luminoVirtualdomStrings.outlineColor = "outlineColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.outlineColor]
   @scala.inline
-  def outlineColor: typings.luminoVirtualdom.luminoVirtualdomStrings.outlineColor = this.cast("outlineColor")
+  def outlineStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.outlineStyle = "outlineStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.outlineStyle]
   @scala.inline
-  def outlineStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.outlineStyle = this.cast("outlineStyle")
+  def outlineWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.outlineWidth = "outlineWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.outlineWidth]
   @scala.inline
-  def outlineWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.outlineWidth = this.cast("outlineWidth")
+  def overflow: typings.luminoVirtualdom.luminoVirtualdomStrings.overflow = "overflow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.overflow]
   @scala.inline
-  def overflow: typings.luminoVirtualdom.luminoVirtualdomStrings.overflow = this.cast("overflow")
+  def overflowX: typings.luminoVirtualdom.luminoVirtualdomStrings.overflowX = "overflowX".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.overflowX]
   @scala.inline
-  def overflowX: typings.luminoVirtualdom.luminoVirtualdomStrings.overflowX = this.cast("overflowX")
+  def overflowY: typings.luminoVirtualdom.luminoVirtualdomStrings.overflowY = "overflowY".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.overflowY]
   @scala.inline
-  def overflowY: typings.luminoVirtualdom.luminoVirtualdomStrings.overflowY = this.cast("overflowY")
+  def padding: typings.luminoVirtualdom.luminoVirtualdomStrings.padding = "padding".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.padding]
   @scala.inline
-  def padding: typings.luminoVirtualdom.luminoVirtualdomStrings.padding = this.cast("padding")
+  def paddingBottom: typings.luminoVirtualdom.luminoVirtualdomStrings.paddingBottom = "paddingBottom".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.paddingBottom]
   @scala.inline
-  def paddingBottom: typings.luminoVirtualdom.luminoVirtualdomStrings.paddingBottom = this.cast("paddingBottom")
+  def paddingLeft: typings.luminoVirtualdom.luminoVirtualdomStrings.paddingLeft = "paddingLeft".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.paddingLeft]
   @scala.inline
-  def paddingLeft: typings.luminoVirtualdom.luminoVirtualdomStrings.paddingLeft = this.cast("paddingLeft")
+  def paddingRight: typings.luminoVirtualdom.luminoVirtualdomStrings.paddingRight = "paddingRight".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.paddingRight]
   @scala.inline
-  def paddingRight: typings.luminoVirtualdom.luminoVirtualdomStrings.paddingRight = this.cast("paddingRight")
+  def paddingTop: typings.luminoVirtualdom.luminoVirtualdomStrings.paddingTop = "paddingTop".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.paddingTop]
   @scala.inline
-  def paddingTop: typings.luminoVirtualdom.luminoVirtualdomStrings.paddingTop = this.cast("paddingTop")
+  def pageBreakAfter: typings.luminoVirtualdom.luminoVirtualdomStrings.pageBreakAfter = "pageBreakAfter".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.pageBreakAfter]
   @scala.inline
-  def pageBreakAfter: typings.luminoVirtualdom.luminoVirtualdomStrings.pageBreakAfter = this.cast("pageBreakAfter")
+  def pageBreakBefore: typings.luminoVirtualdom.luminoVirtualdomStrings.pageBreakBefore = "pageBreakBefore".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.pageBreakBefore]
   @scala.inline
-  def pageBreakBefore: typings.luminoVirtualdom.luminoVirtualdomStrings.pageBreakBefore = this.cast("pageBreakBefore")
+  def pageBreakInside: typings.luminoVirtualdom.luminoVirtualdomStrings.pageBreakInside = "pageBreakInside".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.pageBreakInside]
   @scala.inline
-  def pageBreakInside: typings.luminoVirtualdom.luminoVirtualdomStrings.pageBreakInside = this.cast("pageBreakInside")
+  def perspective: typings.luminoVirtualdom.luminoVirtualdomStrings.perspective = "perspective".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.perspective]
   @scala.inline
-  def perspective: typings.luminoVirtualdom.luminoVirtualdomStrings.perspective = this.cast("perspective")
+  def perspectiveOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.perspectiveOrigin = "perspectiveOrigin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.perspectiveOrigin]
   @scala.inline
-  def perspectiveOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.perspectiveOrigin = this.cast("perspectiveOrigin")
+  def pointerEvents: typings.luminoVirtualdom.luminoVirtualdomStrings.pointerEvents = "pointerEvents".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.pointerEvents]
   @scala.inline
-  def pointerEvents: typings.luminoVirtualdom.luminoVirtualdomStrings.pointerEvents = this.cast("pointerEvents")
+  def position: typings.luminoVirtualdom.luminoVirtualdomStrings.position = "position".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.position]
   @scala.inline
-  def position: typings.luminoVirtualdom.luminoVirtualdomStrings.position = this.cast("position")
+  def quotes: typings.luminoVirtualdom.luminoVirtualdomStrings.quotes = "quotes".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.quotes]
   @scala.inline
-  def quotes: typings.luminoVirtualdom.luminoVirtualdomStrings.quotes = this.cast("quotes")
+  def resize: typings.luminoVirtualdom.luminoVirtualdomStrings.resize = "resize".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.resize]
   @scala.inline
-  def resize: typings.luminoVirtualdom.luminoVirtualdomStrings.resize = this.cast("resize")
+  def right: typings.luminoVirtualdom.luminoVirtualdomStrings.right = "right".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.right]
   @scala.inline
-  def right: typings.luminoVirtualdom.luminoVirtualdomStrings.right = this.cast("right")
+  def rubyAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.rubyAlign = "rubyAlign".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.rubyAlign]
   @scala.inline
-  def rubyAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.rubyAlign = this.cast("rubyAlign")
+  def rubyOverhang: typings.luminoVirtualdom.luminoVirtualdomStrings.rubyOverhang = "rubyOverhang".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.rubyOverhang]
   @scala.inline
-  def rubyOverhang: typings.luminoVirtualdom.luminoVirtualdomStrings.rubyOverhang = this.cast("rubyOverhang")
+  def rubyPosition: typings.luminoVirtualdom.luminoVirtualdomStrings.rubyPosition = "rubyPosition".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.rubyPosition]
   @scala.inline
-  def rubyPosition: typings.luminoVirtualdom.luminoVirtualdomStrings.rubyPosition = this.cast("rubyPosition")
+  def stopColor: typings.luminoVirtualdom.luminoVirtualdomStrings.stopColor = "stopColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.stopColor]
   @scala.inline
-  def stopColor: typings.luminoVirtualdom.luminoVirtualdomStrings.stopColor = this.cast("stopColor")
+  def stopOpacity: typings.luminoVirtualdom.luminoVirtualdomStrings.stopOpacity = "stopOpacity".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.stopOpacity]
   @scala.inline
-  def stopOpacity: typings.luminoVirtualdom.luminoVirtualdomStrings.stopOpacity = this.cast("stopOpacity")
+  def stroke: typings.luminoVirtualdom.luminoVirtualdomStrings.stroke = "stroke".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.stroke]
   @scala.inline
-  def stroke: typings.luminoVirtualdom.luminoVirtualdomStrings.stroke = this.cast("stroke")
+  def strokeDasharray: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeDasharray = "strokeDasharray".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.strokeDasharray]
   @scala.inline
-  def strokeDasharray: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeDasharray = this.cast("strokeDasharray")
+  def strokeDashoffset: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeDashoffset = "strokeDashoffset".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.strokeDashoffset]
   @scala.inline
-  def strokeDashoffset: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeDashoffset = this.cast("strokeDashoffset")
+  def strokeLinecap: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeLinecap = "strokeLinecap".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.strokeLinecap]
   @scala.inline
-  def strokeLinecap: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeLinecap = this.cast("strokeLinecap")
+  def strokeLinejoin: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeLinejoin = "strokeLinejoin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.strokeLinejoin]
   @scala.inline
-  def strokeLinejoin: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeLinejoin = this.cast("strokeLinejoin")
+  def strokeMiterlimit: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeMiterlimit = "strokeMiterlimit".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.strokeMiterlimit]
   @scala.inline
-  def strokeMiterlimit: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeMiterlimit = this.cast("strokeMiterlimit")
+  def strokeOpacity: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeOpacity = "strokeOpacity".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.strokeOpacity]
   @scala.inline
-  def strokeOpacity: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeOpacity = this.cast("strokeOpacity")
+  def strokeWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeWidth = "strokeWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.strokeWidth]
   @scala.inline
-  def strokeWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.strokeWidth = this.cast("strokeWidth")
+  def tableLayout: typings.luminoVirtualdom.luminoVirtualdomStrings.tableLayout = "tableLayout".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.tableLayout]
   @scala.inline
-  def tableLayout: typings.luminoVirtualdom.luminoVirtualdomStrings.tableLayout = this.cast("tableLayout")
+  def textAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.textAlign = "textAlign".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textAlign]
   @scala.inline
-  def textAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.textAlign = this.cast("textAlign")
+  def textAlignLast: typings.luminoVirtualdom.luminoVirtualdomStrings.textAlignLast = "textAlignLast".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textAlignLast]
   @scala.inline
-  def textAlignLast: typings.luminoVirtualdom.luminoVirtualdomStrings.textAlignLast = this.cast("textAlignLast")
+  def textAnchor: typings.luminoVirtualdom.luminoVirtualdomStrings.textAnchor = "textAnchor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textAnchor]
   @scala.inline
-  def textAnchor: typings.luminoVirtualdom.luminoVirtualdomStrings.textAnchor = this.cast("textAnchor")
+  def textDecoration: typings.luminoVirtualdom.luminoVirtualdomStrings.textDecoration = "textDecoration".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textDecoration]
   @scala.inline
-  def textDecoration: typings.luminoVirtualdom.luminoVirtualdomStrings.textDecoration = this.cast("textDecoration")
+  def textIndent: typings.luminoVirtualdom.luminoVirtualdomStrings.textIndent = "textIndent".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textIndent]
   @scala.inline
-  def textIndent: typings.luminoVirtualdom.luminoVirtualdomStrings.textIndent = this.cast("textIndent")
+  def textJustify: typings.luminoVirtualdom.luminoVirtualdomStrings.textJustify = "textJustify".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textJustify]
   @scala.inline
-  def textJustify: typings.luminoVirtualdom.luminoVirtualdomStrings.textJustify = this.cast("textJustify")
+  def textKashida: typings.luminoVirtualdom.luminoVirtualdomStrings.textKashida = "textKashida".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textKashida]
   @scala.inline
-  def textKashida: typings.luminoVirtualdom.luminoVirtualdomStrings.textKashida = this.cast("textKashida")
+  def textKashidaSpace: typings.luminoVirtualdom.luminoVirtualdomStrings.textKashidaSpace = "textKashidaSpace".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textKashidaSpace]
   @scala.inline
-  def textKashidaSpace: typings.luminoVirtualdom.luminoVirtualdomStrings.textKashidaSpace = this.cast("textKashidaSpace")
+  def textOverflow: typings.luminoVirtualdom.luminoVirtualdomStrings.textOverflow = "textOverflow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textOverflow]
   @scala.inline
-  def textOverflow: typings.luminoVirtualdom.luminoVirtualdomStrings.textOverflow = this.cast("textOverflow")
+  def textShadow: typings.luminoVirtualdom.luminoVirtualdomStrings.textShadow = "textShadow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textShadow]
   @scala.inline
-  def textShadow: typings.luminoVirtualdom.luminoVirtualdomStrings.textShadow = this.cast("textShadow")
+  def textTransform: typings.luminoVirtualdom.luminoVirtualdomStrings.textTransform = "textTransform".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textTransform]
   @scala.inline
-  def textTransform: typings.luminoVirtualdom.luminoVirtualdomStrings.textTransform = this.cast("textTransform")
+  def textUnderlinePosition: typings.luminoVirtualdom.luminoVirtualdomStrings.textUnderlinePosition = "textUnderlinePosition".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.textUnderlinePosition]
   @scala.inline
-  def textUnderlinePosition: typings.luminoVirtualdom.luminoVirtualdomStrings.textUnderlinePosition = this.cast("textUnderlinePosition")
+  def top: typings.luminoVirtualdom.luminoVirtualdomStrings.top = "top".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.top]
   @scala.inline
-  def top: typings.luminoVirtualdom.luminoVirtualdomStrings.top = this.cast("top")
+  def touchAction: typings.luminoVirtualdom.luminoVirtualdomStrings.touchAction = "touchAction".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.touchAction]
   @scala.inline
-  def touchAction: typings.luminoVirtualdom.luminoVirtualdomStrings.touchAction = this.cast("touchAction")
+  def transform: typings.luminoVirtualdom.luminoVirtualdomStrings.transform = "transform".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.transform]
   @scala.inline
-  def transform: typings.luminoVirtualdom.luminoVirtualdomStrings.transform = this.cast("transform")
+  def transformOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.transformOrigin = "transformOrigin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.transformOrigin]
   @scala.inline
-  def transformOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.transformOrigin = this.cast("transformOrigin")
+  def transformStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.transformStyle = "transformStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.transformStyle]
   @scala.inline
-  def transformStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.transformStyle = this.cast("transformStyle")
+  def transition: typings.luminoVirtualdom.luminoVirtualdomStrings.transition = "transition".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.transition]
   @scala.inline
-  def transition: typings.luminoVirtualdom.luminoVirtualdomStrings.transition = this.cast("transition")
+  def transitionDelay: typings.luminoVirtualdom.luminoVirtualdomStrings.transitionDelay = "transitionDelay".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.transitionDelay]
   @scala.inline
-  def transitionDelay: typings.luminoVirtualdom.luminoVirtualdomStrings.transitionDelay = this.cast("transitionDelay")
+  def transitionDuration: typings.luminoVirtualdom.luminoVirtualdomStrings.transitionDuration = "transitionDuration".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.transitionDuration]
   @scala.inline
-  def transitionDuration: typings.luminoVirtualdom.luminoVirtualdomStrings.transitionDuration = this.cast("transitionDuration")
+  def transitionProperty: typings.luminoVirtualdom.luminoVirtualdomStrings.transitionProperty = "transitionProperty".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.transitionProperty]
   @scala.inline
-  def transitionProperty: typings.luminoVirtualdom.luminoVirtualdomStrings.transitionProperty = this.cast("transitionProperty")
+  def transitionTimingFunction: typings.luminoVirtualdom.luminoVirtualdomStrings.transitionTimingFunction = "transitionTimingFunction".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.transitionTimingFunction]
   @scala.inline
-  def transitionTimingFunction: typings.luminoVirtualdom.luminoVirtualdomStrings.transitionTimingFunction = this.cast("transitionTimingFunction")
+  def unicodeBidi: typings.luminoVirtualdom.luminoVirtualdomStrings.unicodeBidi = "unicodeBidi".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.unicodeBidi]
   @scala.inline
-  def unicodeBidi: typings.luminoVirtualdom.luminoVirtualdomStrings.unicodeBidi = this.cast("unicodeBidi")
+  def verticalAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.verticalAlign = "verticalAlign".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.verticalAlign]
   @scala.inline
-  def verticalAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.verticalAlign = this.cast("verticalAlign")
+  def visibility: typings.luminoVirtualdom.luminoVirtualdomStrings.visibility = "visibility".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.visibility]
   @scala.inline
-  def visibility: typings.luminoVirtualdom.luminoVirtualdomStrings.visibility = this.cast("visibility")
+  def webkitAlignContent: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAlignContent = "webkitAlignContent".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAlignContent]
   @scala.inline
-  def webkitAlignContent: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAlignContent = this.cast("webkitAlignContent")
+  def webkitAlignItems: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAlignItems = "webkitAlignItems".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAlignItems]
   @scala.inline
-  def webkitAlignItems: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAlignItems = this.cast("webkitAlignItems")
+  def webkitAlignSelf: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAlignSelf = "webkitAlignSelf".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAlignSelf]
   @scala.inline
-  def webkitAlignSelf: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAlignSelf = this.cast("webkitAlignSelf")
+  def webkitAnimation: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimation = "webkitAnimation".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimation]
   @scala.inline
-  def webkitAnimation: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimation = this.cast("webkitAnimation")
+  def webkitAnimationDelay: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationDelay = "webkitAnimationDelay".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationDelay]
   @scala.inline
-  def webkitAnimationDelay: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationDelay = this.cast("webkitAnimationDelay")
+  def webkitAnimationDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationDirection = "webkitAnimationDirection".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationDirection]
   @scala.inline
-  def webkitAnimationDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationDirection = this.cast("webkitAnimationDirection")
+  def webkitAnimationDuration: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationDuration = "webkitAnimationDuration".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationDuration]
   @scala.inline
-  def webkitAnimationDuration: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationDuration = this.cast("webkitAnimationDuration")
+  def webkitAnimationFillMode: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationFillMode = "webkitAnimationFillMode".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationFillMode]
   @scala.inline
-  def webkitAnimationFillMode: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationFillMode = this.cast("webkitAnimationFillMode")
+  def webkitAnimationIterationCount: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationIterationCount = "webkitAnimationIterationCount".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationIterationCount]
   @scala.inline
-  def webkitAnimationIterationCount: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationIterationCount = this.cast("webkitAnimationIterationCount")
+  def webkitAnimationName: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationName = "webkitAnimationName".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationName]
   @scala.inline
-  def webkitAnimationName: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationName = this.cast("webkitAnimationName")
+  def webkitAnimationPlayState: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationPlayState = "webkitAnimationPlayState".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationPlayState]
   @scala.inline
-  def webkitAnimationPlayState: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationPlayState = this.cast("webkitAnimationPlayState")
+  def webkitAnimationTimingFunction: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationTimingFunction = "webkitAnimationTimingFunction".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationTimingFunction]
   @scala.inline
-  def webkitAnimationTimingFunction: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAnimationTimingFunction = this.cast("webkitAnimationTimingFunction")
+  def webkitAppearance: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAppearance = "webkitAppearance".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAppearance]
   @scala.inline
-  def webkitAppearance: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitAppearance = this.cast("webkitAppearance")
+  def webkitBackfaceVisibility: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackfaceVisibility = "webkitBackfaceVisibility".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackfaceVisibility]
   @scala.inline
-  def webkitBackfaceVisibility: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackfaceVisibility = this.cast("webkitBackfaceVisibility")
+  def webkitBackgroundClip: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackgroundClip = "webkitBackgroundClip".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackgroundClip]
   @scala.inline
-  def webkitBackgroundClip: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackgroundClip = this.cast("webkitBackgroundClip")
+  def webkitBackgroundOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackgroundOrigin = "webkitBackgroundOrigin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackgroundOrigin]
   @scala.inline
-  def webkitBackgroundOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackgroundOrigin = this.cast("webkitBackgroundOrigin")
+  def webkitBackgroundSize: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackgroundSize = "webkitBackgroundSize".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackgroundSize]
   @scala.inline
-  def webkitBackgroundSize: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBackgroundSize = this.cast("webkitBackgroundSize")
+  def webkitBorderBottomLeftRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderBottomLeftRadius = "webkitBorderBottomLeftRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderBottomLeftRadius]
   @scala.inline
-  def webkitBorderBottomLeftRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderBottomLeftRadius = this.cast("webkitBorderBottomLeftRadius")
+  def webkitBorderBottomRightRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderBottomRightRadius = "webkitBorderBottomRightRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderBottomRightRadius]
   @scala.inline
-  def webkitBorderBottomRightRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderBottomRightRadius = this.cast("webkitBorderBottomRightRadius")
+  def webkitBorderImage: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderImage = "webkitBorderImage".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderImage]
   @scala.inline
-  def webkitBorderImage: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderImage = this.cast("webkitBorderImage")
+  def webkitBorderRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderRadius = "webkitBorderRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderRadius]
   @scala.inline
-  def webkitBorderRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderRadius = this.cast("webkitBorderRadius")
+  def webkitBorderTopLeftRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderTopLeftRadius = "webkitBorderTopLeftRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderTopLeftRadius]
   @scala.inline
-  def webkitBorderTopLeftRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderTopLeftRadius = this.cast("webkitBorderTopLeftRadius")
+  def webkitBorderTopRightRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderTopRightRadius = "webkitBorderTopRightRadius".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderTopRightRadius]
   @scala.inline
-  def webkitBorderTopRightRadius: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBorderTopRightRadius = this.cast("webkitBorderTopRightRadius")
+  def webkitBoxAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxAlign = "webkitBoxAlign".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxAlign]
   @scala.inline
-  def webkitBoxAlign: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxAlign = this.cast("webkitBoxAlign")
+  def webkitBoxDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxDirection = "webkitBoxDirection".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxDirection]
   @scala.inline
-  def webkitBoxDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxDirection = this.cast("webkitBoxDirection")
+  def webkitBoxFlex: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxFlex = "webkitBoxFlex".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxFlex]
   @scala.inline
-  def webkitBoxFlex: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxFlex = this.cast("webkitBoxFlex")
+  def webkitBoxOrdinalGroup: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxOrdinalGroup = "webkitBoxOrdinalGroup".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxOrdinalGroup]
   @scala.inline
-  def webkitBoxOrdinalGroup: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxOrdinalGroup = this.cast("webkitBoxOrdinalGroup")
+  def webkitBoxOrient: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxOrient = "webkitBoxOrient".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxOrient]
   @scala.inline
-  def webkitBoxOrient: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxOrient = this.cast("webkitBoxOrient")
+  def webkitBoxPack: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxPack = "webkitBoxPack".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxPack]
   @scala.inline
-  def webkitBoxPack: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxPack = this.cast("webkitBoxPack")
+  def webkitBoxSizing: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxSizing = "webkitBoxSizing".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxSizing]
   @scala.inline
-  def webkitBoxSizing: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitBoxSizing = this.cast("webkitBoxSizing")
+  def webkitColumnBreakAfter: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnBreakAfter = "webkitColumnBreakAfter".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnBreakAfter]
   @scala.inline
-  def webkitColumnBreakAfter: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnBreakAfter = this.cast("webkitColumnBreakAfter")
+  def webkitColumnBreakBefore: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnBreakBefore = "webkitColumnBreakBefore".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnBreakBefore]
   @scala.inline
-  def webkitColumnBreakBefore: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnBreakBefore = this.cast("webkitColumnBreakBefore")
+  def webkitColumnBreakInside: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnBreakInside = "webkitColumnBreakInside".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnBreakInside]
   @scala.inline
-  def webkitColumnBreakInside: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnBreakInside = this.cast("webkitColumnBreakInside")
+  def webkitColumnCount: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnCount = "webkitColumnCount".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnCount]
   @scala.inline
-  def webkitColumnCount: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnCount = this.cast("webkitColumnCount")
+  def webkitColumnGap: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnGap = "webkitColumnGap".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnGap]
   @scala.inline
-  def webkitColumnGap: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnGap = this.cast("webkitColumnGap")
+  def webkitColumnRule: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRule = "webkitColumnRule".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRule]
   @scala.inline
-  def webkitColumnRule: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRule = this.cast("webkitColumnRule")
+  def webkitColumnRuleColor: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRuleColor = "webkitColumnRuleColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRuleColor]
   @scala.inline
-  def webkitColumnRuleColor: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRuleColor = this.cast("webkitColumnRuleColor")
+  def webkitColumnRuleStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRuleStyle = "webkitColumnRuleStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRuleStyle]
   @scala.inline
-  def webkitColumnRuleStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRuleStyle = this.cast("webkitColumnRuleStyle")
+  def webkitColumnRuleWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRuleWidth = "webkitColumnRuleWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRuleWidth]
   @scala.inline
-  def webkitColumnRuleWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnRuleWidth = this.cast("webkitColumnRuleWidth")
+  def webkitColumnSpan: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnSpan = "webkitColumnSpan".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnSpan]
   @scala.inline
-  def webkitColumnSpan: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnSpan = this.cast("webkitColumnSpan")
+  def webkitColumnWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnWidth = "webkitColumnWidth".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnWidth]
   @scala.inline
-  def webkitColumnWidth: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumnWidth = this.cast("webkitColumnWidth")
+  def webkitColumns: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumns = "webkitColumns".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumns]
   @scala.inline
-  def webkitColumns: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitColumns = this.cast("webkitColumns")
+  def webkitFilter: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFilter = "webkitFilter".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFilter]
   @scala.inline
-  def webkitFilter: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFilter = this.cast("webkitFilter")
+  def webkitFlex: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlex = "webkitFlex".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlex]
   @scala.inline
-  def webkitFlex: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlex = this.cast("webkitFlex")
+  def webkitFlexBasis: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexBasis = "webkitFlexBasis".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexBasis]
   @scala.inline
-  def webkitFlexBasis: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexBasis = this.cast("webkitFlexBasis")
+  def webkitFlexDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexDirection = "webkitFlexDirection".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexDirection]
   @scala.inline
-  def webkitFlexDirection: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexDirection = this.cast("webkitFlexDirection")
+  def webkitFlexFlow: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexFlow = "webkitFlexFlow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexFlow]
   @scala.inline
-  def webkitFlexFlow: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexFlow = this.cast("webkitFlexFlow")
+  def webkitFlexGrow: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexGrow = "webkitFlexGrow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexGrow]
   @scala.inline
-  def webkitFlexGrow: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexGrow = this.cast("webkitFlexGrow")
+  def webkitFlexShrink: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexShrink = "webkitFlexShrink".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexShrink]
   @scala.inline
-  def webkitFlexShrink: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexShrink = this.cast("webkitFlexShrink")
+  def webkitFlexWrap: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexWrap = "webkitFlexWrap".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexWrap]
   @scala.inline
-  def webkitFlexWrap: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitFlexWrap = this.cast("webkitFlexWrap")
+  def webkitJustifyContent: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitJustifyContent = "webkitJustifyContent".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitJustifyContent]
   @scala.inline
-  def webkitJustifyContent: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitJustifyContent = this.cast("webkitJustifyContent")
+  def webkitOrder: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitOrder = "webkitOrder".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitOrder]
   @scala.inline
-  def webkitOrder: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitOrder = this.cast("webkitOrder")
+  def webkitPerspective: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitPerspective = "webkitPerspective".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitPerspective]
   @scala.inline
-  def webkitPerspective: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitPerspective = this.cast("webkitPerspective")
+  def webkitPerspectiveOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitPerspectiveOrigin = "webkitPerspectiveOrigin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitPerspectiveOrigin]
   @scala.inline
-  def webkitPerspectiveOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitPerspectiveOrigin = this.cast("webkitPerspectiveOrigin")
+  def webkitTapHighlightColor: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTapHighlightColor = "webkitTapHighlightColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTapHighlightColor]
   @scala.inline
-  def webkitTapHighlightColor: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTapHighlightColor = this.cast("webkitTapHighlightColor")
+  def webkitTextFillColor: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTextFillColor = "webkitTextFillColor".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTextFillColor]
   @scala.inline
-  def webkitTextFillColor: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTextFillColor = this.cast("webkitTextFillColor")
+  def webkitTextSizeAdjust: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTextSizeAdjust = "webkitTextSizeAdjust".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTextSizeAdjust]
   @scala.inline
-  def webkitTextSizeAdjust: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTextSizeAdjust = this.cast("webkitTextSizeAdjust")
+  def webkitTransform: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransform = "webkitTransform".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransform]
   @scala.inline
-  def webkitTransform: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransform = this.cast("webkitTransform")
+  def webkitTransformOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransformOrigin = "webkitTransformOrigin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransformOrigin]
   @scala.inline
-  def webkitTransformOrigin: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransformOrigin = this.cast("webkitTransformOrigin")
+  def webkitTransformStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransformStyle = "webkitTransformStyle".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransformStyle]
   @scala.inline
-  def webkitTransformStyle: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransformStyle = this.cast("webkitTransformStyle")
+  def webkitTransition: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransition = "webkitTransition".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransition]
   @scala.inline
-  def webkitTransition: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransition = this.cast("webkitTransition")
+  def webkitTransitionDelay: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionDelay = "webkitTransitionDelay".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionDelay]
   @scala.inline
-  def webkitTransitionDelay: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionDelay = this.cast("webkitTransitionDelay")
+  def webkitTransitionDuration: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionDuration = "webkitTransitionDuration".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionDuration]
   @scala.inline
-  def webkitTransitionDuration: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionDuration = this.cast("webkitTransitionDuration")
+  def webkitTransitionProperty: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionProperty = "webkitTransitionProperty".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionProperty]
   @scala.inline
-  def webkitTransitionProperty: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionProperty = this.cast("webkitTransitionProperty")
+  def webkitTransitionTimingFunction: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionTimingFunction = "webkitTransitionTimingFunction".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionTimingFunction]
   @scala.inline
-  def webkitTransitionTimingFunction: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitTransitionTimingFunction = this.cast("webkitTransitionTimingFunction")
+  def webkitUserModify: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitUserModify = "webkitUserModify".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitUserModify]
   @scala.inline
-  def webkitUserModify: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitUserModify = this.cast("webkitUserModify")
+  def webkitUserSelect: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitUserSelect = "webkitUserSelect".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitUserSelect]
   @scala.inline
-  def webkitUserSelect: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitUserSelect = this.cast("webkitUserSelect")
+  def webkitWritingMode: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitWritingMode = "webkitWritingMode".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.webkitWritingMode]
   @scala.inline
-  def webkitWritingMode: typings.luminoVirtualdom.luminoVirtualdomStrings.webkitWritingMode = this.cast("webkitWritingMode")
+  def whiteSpace: typings.luminoVirtualdom.luminoVirtualdomStrings.whiteSpace = "whiteSpace".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.whiteSpace]
   @scala.inline
-  def whiteSpace: typings.luminoVirtualdom.luminoVirtualdomStrings.whiteSpace = this.cast("whiteSpace")
+  def widows: typings.luminoVirtualdom.luminoVirtualdomStrings.widows = "widows".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.widows]
   @scala.inline
-  def widows: typings.luminoVirtualdom.luminoVirtualdomStrings.widows = this.cast("widows")
+  def width: typings.luminoVirtualdom.luminoVirtualdomStrings.width = "width".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.width]
   @scala.inline
-  def width: typings.luminoVirtualdom.luminoVirtualdomStrings.width = this.cast("width")
+  def wordBreak: typings.luminoVirtualdom.luminoVirtualdomStrings.wordBreak = "wordBreak".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.wordBreak]
   @scala.inline
-  def wordBreak: typings.luminoVirtualdom.luminoVirtualdomStrings.wordBreak = this.cast("wordBreak")
+  def wordSpacing: typings.luminoVirtualdom.luminoVirtualdomStrings.wordSpacing = "wordSpacing".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.wordSpacing]
   @scala.inline
-  def wordSpacing: typings.luminoVirtualdom.luminoVirtualdomStrings.wordSpacing = this.cast("wordSpacing")
+  def wordWrap: typings.luminoVirtualdom.luminoVirtualdomStrings.wordWrap = "wordWrap".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.wordWrap]
   @scala.inline
-  def wordWrap: typings.luminoVirtualdom.luminoVirtualdomStrings.wordWrap = this.cast("wordWrap")
+  def writingMode: typings.luminoVirtualdom.luminoVirtualdomStrings.writingMode = "writingMode".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.writingMode]
   @scala.inline
-  def writingMode: typings.luminoVirtualdom.luminoVirtualdomStrings.writingMode = this.cast("writingMode")
+  def zIndex: typings.luminoVirtualdom.luminoVirtualdomStrings.zIndex = "zIndex".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.zIndex]
   @scala.inline
-  def zIndex: typings.luminoVirtualdom.luminoVirtualdomStrings.zIndex = this.cast("zIndex")
-  @scala.inline
-  def zoom: typings.luminoVirtualdom.luminoVirtualdomStrings.zoom = this.cast("zoom")
+  def zoom: typings.luminoVirtualdom.luminoVirtualdomStrings.zoom = "zoom".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.zoom]
 }
 

@@ -14,7 +14,6 @@ object MultiRef {
   @scala.inline
   def apply[K, V](map: Map[K, V], ref: K => js.Function1[/* value */ V | Null, _]): MultiRef[K, V] = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref))
-  
     __obj.asInstanceOf[MultiRef[K, V]]
   }
 }

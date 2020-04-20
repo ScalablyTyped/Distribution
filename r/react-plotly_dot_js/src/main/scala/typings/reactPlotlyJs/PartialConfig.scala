@@ -37,6 +37,7 @@ trait PartialConfig extends js.Object {
   var modeBarButtonsToAdd: js.UndefOr[js.Array[ModeBarButton | ModeBarDefaultButtons]] = js.undefined
   var modeBarButtonsToRemove: js.UndefOr[js.Array[ModeBarDefaultButtons]] = js.undefined
   var plotGlPixelRatio: js.UndefOr[Double] = js.undefined
+  var plotlyServerURL: js.UndefOr[String] = js.undefined
   var queueLength: js.UndefOr[Double] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
   var scrollZoom: js.UndefOr[Boolean] = js.undefined
@@ -44,7 +45,9 @@ trait PartialConfig extends js.Object {
   var setBackground: js.UndefOr[js.Function0[String | opaque | transparent]] = js.undefined
   var showAxisDragHandles: js.UndefOr[Boolean] = js.undefined
   var showAxisRangeEntryBoxes: js.UndefOr[Boolean] = js.undefined
+  var showEditInChartStudio: js.UndefOr[Boolean] = js.undefined
   var showLink: js.UndefOr[Boolean] = js.undefined
+  var showSendToCloud: js.UndefOr[Boolean] = js.undefined
   var showSources: js.UndefOr[Boolean] = js.undefined
   var showTips: js.UndefOr[Boolean] = js.undefined
   var staticPlot: js.UndefOr[Boolean] = js.undefined
@@ -72,6 +75,7 @@ object PartialConfig {
     modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons] = null,
     modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons] = null,
     plotGlPixelRatio: Int | Double = null,
+    plotlyServerURL: String = null,
     queueLength: Int | Double = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
     scrollZoom: js.UndefOr[Boolean] = js.undefined,
@@ -79,7 +83,9 @@ object PartialConfig {
     setBackground: () => String | opaque | transparent = null,
     showAxisDragHandles: js.UndefOr[Boolean] = js.undefined,
     showAxisRangeEntryBoxes: js.UndefOr[Boolean] = js.undefined,
+    showEditInChartStudio: js.UndefOr[Boolean] = js.undefined,
     showLink: js.UndefOr[Boolean] = js.undefined,
+    showSendToCloud: js.UndefOr[Boolean] = js.undefined,
     showSources: js.UndefOr[Boolean] = js.undefined,
     showTips: js.UndefOr[Boolean] = js.undefined,
     staticPlot: js.UndefOr[Boolean] = js.undefined,
@@ -104,6 +110,7 @@ object PartialConfig {
     if (modeBarButtonsToAdd != null) __obj.updateDynamic("modeBarButtonsToAdd")(modeBarButtonsToAdd.asInstanceOf[js.Any])
     if (modeBarButtonsToRemove != null) __obj.updateDynamic("modeBarButtonsToRemove")(modeBarButtonsToRemove.asInstanceOf[js.Any])
     if (plotGlPixelRatio != null) __obj.updateDynamic("plotGlPixelRatio")(plotGlPixelRatio.asInstanceOf[js.Any])
+    if (plotlyServerURL != null) __obj.updateDynamic("plotlyServerURL")(plotlyServerURL.asInstanceOf[js.Any])
     if (queueLength != null) __obj.updateDynamic("queueLength")(queueLength.asInstanceOf[js.Any])
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.asInstanceOf[js.Any])
@@ -111,7 +118,9 @@ object PartialConfig {
     if (setBackground != null) __obj.updateDynamic("setBackground")(js.Any.fromFunction0(setBackground))
     if (!js.isUndefined(showAxisDragHandles)) __obj.updateDynamic("showAxisDragHandles")(showAxisDragHandles.asInstanceOf[js.Any])
     if (!js.isUndefined(showAxisRangeEntryBoxes)) __obj.updateDynamic("showAxisRangeEntryBoxes")(showAxisRangeEntryBoxes.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEditInChartStudio)) __obj.updateDynamic("showEditInChartStudio")(showEditInChartStudio.asInstanceOf[js.Any])
     if (!js.isUndefined(showLink)) __obj.updateDynamic("showLink")(showLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSendToCloud)) __obj.updateDynamic("showSendToCloud")(showSendToCloud.asInstanceOf[js.Any])
     if (!js.isUndefined(showSources)) __obj.updateDynamic("showSources")(showSources.asInstanceOf[js.Any])
     if (!js.isUndefined(showTips)) __obj.updateDynamic("showTips")(showTips.asInstanceOf[js.Any])
     if (!js.isUndefined(staticPlot)) __obj.updateDynamic("staticPlot")(staticPlot.asInstanceOf[js.Any])

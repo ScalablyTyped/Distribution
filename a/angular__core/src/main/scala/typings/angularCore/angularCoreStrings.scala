@@ -160,9 +160,9 @@ object angularCoreStrings {
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def `Brand for OpaqueViewState that nothing will match`: `Brand for OpaqueViewState that nothing will match` = "Brand for OpaqueViewState that nothing will match".asInstanceOf[`Brand for OpaqueViewState that nothing will match`]
+  def `Brand for OpaqueViewState that nothing will match`: `Brand for OpaqueViewState that nothing will match` = ("Brand for OpaqueViewState that nothing will match").asInstanceOf[`Brand for OpaqueViewState that nothing will match`]
   @scala.inline
-  def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = "Brand for PlayerFactory that nothing will match".asInstanceOf[`Brand for PlayerFactory that nothing will match`]
+  def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = ("Brand for PlayerFactory that nothing will match").asInstanceOf[`Brand for PlayerFactory that nothing will match`]
   @scala.inline
   def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
   @scala.inline

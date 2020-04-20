@@ -16,7 +16,6 @@ object AnonCoefficients {
   @scala.inline
   def apply(coefficients: js.Array[MathType], expression: MathNode | String, variables: js.Array[String]): AnonCoefficients = {
     val __obj = js.Dynamic.literal(coefficients = coefficients.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCoefficients]
   }
 }

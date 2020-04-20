@@ -14,7 +14,6 @@ object MultiStats {
   @scala.inline
   def apply(hash: String, stats: js.Array[Stats]): MultiStats = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultiStats]
   }
 }

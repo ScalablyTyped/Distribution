@@ -15,16 +15,14 @@ trait StringSorting extends js.Object
 
 object StringSorting {
   @scala.inline
-  def bottom: typings.tablesorter.tablesorterStrings.bottom = this.cast("bottom")
+  def bottom: typings.tablesorter.tablesorterStrings.bottom = "bottom".asInstanceOf[typings.tablesorter.tablesorterStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def max: typings.tablesorter.tablesorterStrings.max = "max".asInstanceOf[typings.tablesorter.tablesorterStrings.max]
   @scala.inline
-  def max: typings.tablesorter.tablesorterStrings.max = this.cast("max")
+  def min: typings.tablesorter.tablesorterStrings.min = "min".asInstanceOf[typings.tablesorter.tablesorterStrings.min]
   @scala.inline
-  def min: typings.tablesorter.tablesorterStrings.min = this.cast("min")
+  def top: typings.tablesorter.tablesorterStrings.top = "top".asInstanceOf[typings.tablesorter.tablesorterStrings.top]
   @scala.inline
-  def top: typings.tablesorter.tablesorterStrings.top = this.cast("top")
-  @scala.inline
-  def zero: typings.tablesorter.tablesorterStrings.zero = this.cast("zero")
+  def zero: typings.tablesorter.tablesorterStrings.zero = "zero".asInstanceOf[typings.tablesorter.tablesorterStrings.zero]
 }
 

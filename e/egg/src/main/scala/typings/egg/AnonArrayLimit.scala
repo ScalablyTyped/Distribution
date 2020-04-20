@@ -14,7 +14,6 @@ object AnonArrayLimit {
   @scala.inline
   def apply(arrayLimit: Double, depth: Double, parameterLimit: Double): AnonArrayLimit = {
     val __obj = js.Dynamic.literal(arrayLimit = arrayLimit.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], parameterLimit = parameterLimit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArrayLimit]
   }
 }

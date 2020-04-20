@@ -20,7 +20,6 @@ object FlowTemplateFilter {
   @scala.inline
   def apply(name: FlowTemplateFilterName, value: FlowTemplateFilterValues): FlowTemplateFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FlowTemplateFilter]
   }
 }

@@ -22,7 +22,6 @@ object AnonAlwaysReturnBasicInformation {
     none: Double
   ): AnonAlwaysReturnBasicInformation = {
     val __obj = js.Dynamic.literal(alwaysReturnBasicInformation = alwaysReturnBasicInformation.asInstanceOf[js.Any], includeDeletedSubscriptions = includeDeletedSubscriptions.asInstanceOf[js.Any], includeFilterDetails = includeFilterDetails.asInstanceOf[js.Any], includeInvalidSubscriptions = includeInvalidSubscriptions.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlwaysReturnBasicInformation]
   }
 }

@@ -23,7 +23,6 @@ object KnockoutObservableArrayFunctions {
   @scala.inline
   def apply[T](validateAsModel: () => ValidatableModel[KnockoutObservableArray[T]]): KnockoutObservableArrayFunctions[T] = {
     val __obj = js.Dynamic.literal(validateAsModel = js.Any.fromFunction0(validateAsModel))
-  
     __obj.asInstanceOf[KnockoutObservableArrayFunctions[T]]
   }
 }

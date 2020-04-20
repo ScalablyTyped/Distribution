@@ -15,7 +15,6 @@ object AnonParameters {
   @scala.inline
   def apply(direction: String, parameters: js.Object, parentRouter: Router): AnonParameters = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], parentRouter = parentRouter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonParameters]
   }
 }

@@ -44,7 +44,6 @@ object SinksResource {
     update: AnonPp => Request_[LogSink]
   ): SinksResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[SinksResource]
   }
 }

@@ -20,16 +20,14 @@ trait View extends js.Object
 
 object View {
   @scala.inline
-  def agenda: agenda_ = this.cast("agenda")
+  def agenda: agenda_ = "agenda".asInstanceOf[agenda_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def day: day_ = "day".asInstanceOf[day_]
   @scala.inline
-  def day: day_ = this.cast("day")
+  def month: month_ = "month".asInstanceOf[month_]
   @scala.inline
-  def month: month_ = this.cast("month")
+  def week: week_ = "week".asInstanceOf[week_]
   @scala.inline
-  def week: week_ = this.cast("week")
-  @scala.inline
-  def work_week: work_week_ = this.cast("work_week")
+  def work_week: work_week_ = "work_week".asInstanceOf[work_week_]
 }
 

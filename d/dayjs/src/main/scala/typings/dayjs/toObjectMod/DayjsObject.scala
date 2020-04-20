@@ -26,7 +26,6 @@ object DayjsObject {
     years: Double
   ): DayjsObject = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], milliseconds = milliseconds.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DayjsObject]
   }
 }

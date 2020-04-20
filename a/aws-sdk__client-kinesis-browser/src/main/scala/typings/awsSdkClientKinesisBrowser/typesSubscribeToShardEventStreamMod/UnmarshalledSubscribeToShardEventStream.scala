@@ -17,7 +17,6 @@ object UnmarshalledSubscribeToShardEventStream {
   @scala.inline
   def apply(SubscribeToShardEvent: UnmarshalledSubscribeToShardEvent): UnmarshalledSubscribeToShardEventStream = {
     val __obj = js.Dynamic.literal(SubscribeToShardEvent = SubscribeToShardEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledSubscribeToShardEventStream]
   }
 }

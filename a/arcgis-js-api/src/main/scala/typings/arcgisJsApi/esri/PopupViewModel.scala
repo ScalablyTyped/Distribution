@@ -10,10 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.arcgisJsApi.esri.Evented because Inheritance from two classes. Inlined emit, emit, hasEventListener, on, on */ @js.native
 trait PopupViewModel
   extends Accessor
-     with Evented
      with GoTo {
   /**
     * [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [action](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [action toggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html) objects. Each action may be executed by clicking the icon or image symbolizing them in the popup. By default, every popup has a `zoom-to` action styled with a magnifying glass icon ![popupTemplate-zoom-action](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/popuptemplate-zoom-action.png). When this icon is clicked, the view zooms in four LODs and centers on the selected feature.  You may override this action by removing it from the actions [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) or by setting the [overwriteActions](esri-PopupTemplate.html#overwriteActions) property to `true` in a [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html). The order of each action in the popup is the order in which they appear in the actions [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html).  The [trigger-action](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#event-trigger-action) event fires each time an action in the popup is clicked. This event should be used to execute custom code for each action clicked. For example, if you would like to add a `zoom-out` action to the popup that zooms the view out several LODs, you would define the zoom-out code in a separate function. Then you would call the custom `zoom-out` function in the [trigger-action](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#event-trigger-action) event handler. See the sample code snippet below for more details on how this works.  Actions are defined with the properties listed in the [ActionButton](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [ActionToggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html) class.
@@ -154,6 +154,39 @@ trait PopupViewModel
     */
   def clear(): Unit = js.native
   /**
+    * Emits an event on the instance. This method should only be used when creating subclasses of this class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
+    *
+    * @param type The name of the event.
+    * @param event The event payload.
+    *
+    */
+  def emit(`type`: String): Boolean = js.native
+  def emit(`type`: String, event: js.Any): Boolean = js.native
+  /**
+    * Use this method to return feature(s) at a given screen location. These features are fetched from all of the [LayerViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) in the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html). In order to use this, a layer must already have an associated [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) and have its [popupEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupEnabled). These features can then be used within a custom [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) or [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) widget experience. One example could be a custom side panel that displays feature-specific information based on an end user's click location. This method allows a developer the ability to control how the input location is handled, and then subsequently, what to do with the results.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#fetchFeatures)
+    *
+    * @param screenPoint An object representing a point on the screen. This point can be in either the MapView or SceneView.
+    * @param screenPoint.x The x coordinate.
+    * @param screenPoint.y The y coordinate.
+    * @param options The [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#FetchFeaturesOptions) to pass into the `fetchFeatures` method.
+    *
+    */
+  def fetchFeatures(screenPoint: PopupViewModelFetchFeaturesScreenPoint): js.Promise[FetchPopupFeaturesResult] = js.native
+  def fetchFeatures(screenPoint: PopupViewModelFetchFeaturesScreenPoint, options: FetchFeaturesOptions): js.Promise[FetchPopupFeaturesResult] = js.native
+  /**
+    * Indicates whether there is an event listener on the instance that matches the provided event name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#hasEventListener)
+    *
+    * @param type The name of the event.
+    *
+    */
+  def hasEventListener(`type`: String): Boolean = js.native
+  /**
     * Selects the feature at the next index in relation to the selected feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#next)
@@ -161,6 +194,17 @@ trait PopupViewModel
     *
     */
   def next(): PopupViewModel = js.native
+  /**
+    * Registers an event handler on the instance. Call this method to hook an event with a listener.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#on)
+    *
+    * @param type A event type, or an array of event types, to listen for.
+    * @param listener The function to call when the event is fired.
+    *
+    */
+  def on(`type`: String, listener: EventHandler): IHandle = js.native
+  def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
   @JSName("on")
   def on_triggeraction(name: `trigger-action`, eventHandler: PopupViewModelTriggerActionEventHandler): IHandle = js.native
   /**

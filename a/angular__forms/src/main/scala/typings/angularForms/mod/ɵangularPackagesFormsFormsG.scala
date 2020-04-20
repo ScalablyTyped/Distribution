@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 class ɵangularPackagesFormsFormsG protected () extends js.Object {
   def this(cd: AbstractControlDirective) = this()
   var _cd: js.Any = js.native
-  def ngClassDirty(): Boolean = js.native
-  def ngClassInvalid(): Boolean = js.native
-  def ngClassPending(): Boolean = js.native
-  def ngClassPristine(): Boolean = js.native
-  def ngClassTouched(): Boolean = js.native
-  def ngClassUntouched(): Boolean = js.native
-  def ngClassValid(): Boolean = js.native
+  def ngClassDirty: Boolean = js.native
+  def ngClassInvalid: Boolean = js.native
+  def ngClassPending: Boolean = js.native
+  def ngClassPristine: Boolean = js.native
+  def ngClassTouched: Boolean = js.native
+  def ngClassUntouched: Boolean = js.native
+  def ngClassValid: Boolean = js.native
 }
 

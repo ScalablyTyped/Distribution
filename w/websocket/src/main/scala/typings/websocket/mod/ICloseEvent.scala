@@ -14,7 +14,6 @@ object ICloseEvent {
   @scala.inline
   def apply(code: Double, reason: String, wasClean: Boolean): ICloseEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], wasClean = wasClean.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICloseEvent]
   }
 }

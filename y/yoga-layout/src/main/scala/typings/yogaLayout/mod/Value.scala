@@ -18,7 +18,6 @@ object Value {
     value: Double
   ): Value = {
     val __obj = js.Dynamic.literal(fromJS = js.Any.fromFunction1(fromJS), unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Value]
   }
 }

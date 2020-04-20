@@ -19,7 +19,6 @@ object WindowOfGroupInfo {
   @scala.inline
   def apply(appUuid: String, windowName: String): WindowOfGroupInfo = {
     val __obj = js.Dynamic.literal(appUuid = appUuid.asInstanceOf[js.Any], windowName = windowName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WindowOfGroupInfo]
   }
 }

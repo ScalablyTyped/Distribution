@@ -1,0 +1,15 @@
+package typings.rbx.headingMod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.rbx.PreferHelpersPropsOverrid
+import typings.rbx.exoticMod.ForwardRefAsExoticComponent
+import typings.react.mod.ElementType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("rbx/elements/other/heading", "Heading")
+@js.native
+object Heading
+  extends TopLevel[ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]]]
+

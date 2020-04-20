@@ -4,23 +4,24 @@ import typings.express.mod.Application_
 import typings.express.mod.RequestHandler
 import typings.express.mod.Router
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait FilesSignature extends js.Object {
-  def apply(): RequestHandler[ParamsDictionary] = js.native
+  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(/**
     * Options for how the files are served
     */
-  options: FilesOptions): RequestHandler[ParamsDictionary] = js.native
+  options: FilesOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
     */
   router: Application_
-  ): RequestHandler[ParamsDictionary] = js.native
+  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
@@ -30,13 +31,13 @@ trait FilesSignature extends js.Object {
     * Options for how the files are served
     */
   options: FilesOptions
-  ): RequestHandler[ParamsDictionary] = js.native
+  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
     */
   router: Router
-  ): RequestHandler[ParamsDictionary] = js.native
+  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
@@ -46,6 +47,6 @@ trait FilesSignature extends js.Object {
     * Options for how the files are served
     */
   options: FilesOptions
-  ): RequestHandler[ParamsDictionary] = js.native
+  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
 

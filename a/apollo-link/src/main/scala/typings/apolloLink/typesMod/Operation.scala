@@ -28,7 +28,6 @@ object Operation {
     variables: Record[String, _]
   ): Operation = {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], getContext = js.Any.fromFunction0(getContext), operationName = operationName.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], setContext = js.Any.fromFunction1(setContext), toKey = js.Any.fromFunction0(toKey), variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Operation]
   }
 }

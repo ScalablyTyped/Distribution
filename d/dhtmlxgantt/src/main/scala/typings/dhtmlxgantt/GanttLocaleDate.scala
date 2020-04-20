@@ -20,7 +20,6 @@ object GanttLocaleDate {
     month_short: js.Array[String]
   ): GanttLocaleDate = {
     val __obj = js.Dynamic.literal(day_full = day_full.asInstanceOf[js.Any], day_short = day_short.asInstanceOf[js.Any], month_full = month_full.asInstanceOf[js.Any], month_short = month_short.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GanttLocaleDate]
   }
 }

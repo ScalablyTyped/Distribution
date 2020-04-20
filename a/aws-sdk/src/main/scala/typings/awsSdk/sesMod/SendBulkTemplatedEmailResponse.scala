@@ -16,7 +16,6 @@ object SendBulkTemplatedEmailResponse {
   @scala.inline
   def apply(Status: BulkEmailDestinationStatusList): SendBulkTemplatedEmailResponse = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendBulkTemplatedEmailResponse]
   }
 }

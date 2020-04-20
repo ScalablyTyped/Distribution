@@ -12,10 +12,8 @@ trait State extends js.Object
 
 object State {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def highlight: typings.imagemapster.imagemapsterStrings.highlight = "highlight".asInstanceOf[typings.imagemapster.imagemapsterStrings.highlight]
   @scala.inline
-  def highlight: typings.imagemapster.imagemapsterStrings.highlight = this.cast("highlight")
-  @scala.inline
-  def select: typings.imagemapster.imagemapsterStrings.select = this.cast("select")
+  def select: typings.imagemapster.imagemapsterStrings.select = "select".asInstanceOf[typings.imagemapster.imagemapsterStrings.select]
 }
 

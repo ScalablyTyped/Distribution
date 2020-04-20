@@ -16,12 +16,10 @@ trait XlTextQualifier extends js.Object
 
 object XlTextQualifier {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlTextQualifierDoubleQuote: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlTextQualifierDoubleQuote: `1` = this.cast(1)
+  def xlTextQualifierNone: `-4142` = -4142.asInstanceOf[`-4142`]
   @scala.inline
-  def xlTextQualifierNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlTextQualifierSingleQuote: `2` = this.cast(2)
+  def xlTextQualifierSingleQuote: `2` = 2.asInstanceOf[`2`]
 }
 

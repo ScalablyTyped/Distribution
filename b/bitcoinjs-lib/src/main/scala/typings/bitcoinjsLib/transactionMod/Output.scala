@@ -14,7 +14,6 @@ object Output {
   @scala.inline
   def apply(script: Buffer, value: Double): Output = {
     val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Output]
   }
 }

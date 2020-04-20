@@ -16,7 +16,6 @@ object DeleteApprovalRuleTemplateInput {
   @scala.inline
   def apply(approvalRuleTemplateName: ApprovalRuleTemplateName): DeleteApprovalRuleTemplateInput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplateName = approvalRuleTemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApprovalRuleTemplateInput]
   }
 }

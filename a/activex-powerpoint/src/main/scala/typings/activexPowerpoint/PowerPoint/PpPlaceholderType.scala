@@ -48,44 +48,42 @@ trait PpPlaceholderType extends js.Object
 
 object PpPlaceholderType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppPlaceholderBitmap: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def ppPlaceholderBitmap: `9` = this.cast(9)
+  def ppPlaceholderBody: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppPlaceholderBody: `2` = this.cast(2)
+  def ppPlaceholderCenterTitle: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppPlaceholderCenterTitle: `3` = this.cast(3)
+  def ppPlaceholderChart: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ppPlaceholderChart: `8` = this.cast(8)
+  def ppPlaceholderDate: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def ppPlaceholderDate: `16` = this.cast(16)
+  def ppPlaceholderFooter: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def ppPlaceholderFooter: `15` = this.cast(15)
+  def ppPlaceholderHeader: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def ppPlaceholderHeader: `14` = this.cast(14)
+  def ppPlaceholderMediaClip: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def ppPlaceholderMediaClip: `10` = this.cast(10)
+  def ppPlaceholderMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppPlaceholderMixed: `-2` = this.cast(-2)
+  def ppPlaceholderObject: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ppPlaceholderObject: `7` = this.cast(7)
+  def ppPlaceholderOrgChart: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def ppPlaceholderOrgChart: `11` = this.cast(11)
+  def ppPlaceholderPicture: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def ppPlaceholderPicture: `18` = this.cast(18)
+  def ppPlaceholderSlideNumber: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def ppPlaceholderSlideNumber: `13` = this.cast(13)
+  def ppPlaceholderSubtitle: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppPlaceholderSubtitle: `4` = this.cast(4)
+  def ppPlaceholderTable: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def ppPlaceholderTable: `12` = this.cast(12)
+  def ppPlaceholderTitle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppPlaceholderTitle: `1` = this.cast(1)
+  def ppPlaceholderVerticalBody: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ppPlaceholderVerticalBody: `6` = this.cast(6)
+  def ppPlaceholderVerticalObject: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def ppPlaceholderVerticalObject: `17` = this.cast(17)
-  @scala.inline
-  def ppPlaceholderVerticalTitle: `5` = this.cast(5)
+  def ppPlaceholderVerticalTitle: `5` = 5.asInstanceOf[`5`]
 }
 

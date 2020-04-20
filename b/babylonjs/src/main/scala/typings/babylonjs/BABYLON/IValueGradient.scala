@@ -15,7 +15,6 @@ object IValueGradient {
   @scala.inline
   def apply(gradient: Double): IValueGradient = {
     val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IValueGradient]
   }
 }

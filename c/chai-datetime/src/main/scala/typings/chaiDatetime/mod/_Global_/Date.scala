@@ -13,7 +13,6 @@ object Date {
   @scala.inline
   def apply(should: Assertion): Date = {
     val __obj = js.Dynamic.literal(should = should.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Date]
   }
 }

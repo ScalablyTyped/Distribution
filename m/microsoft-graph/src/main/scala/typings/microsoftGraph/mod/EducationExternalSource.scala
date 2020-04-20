@@ -13,12 +13,10 @@ trait EducationExternalSource extends js.Object
 
 object EducationExternalSource {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def manual: typings.microsoftGraph.microsoftGraphStrings.manual = "manual".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.manual]
   @scala.inline
-  def manual: typings.microsoftGraph.microsoftGraphStrings.manual = this.cast("manual")
+  def sis: typings.microsoftGraph.microsoftGraphStrings.sis = "sis".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sis]
   @scala.inline
-  def sis: typings.microsoftGraph.microsoftGraphStrings.sis = this.cast("sis")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

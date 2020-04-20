@@ -16,18 +16,16 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dark: typings.reactTooltip.reactTooltipStrings.dark = "dark".asInstanceOf[typings.reactTooltip.reactTooltipStrings.dark]
   @scala.inline
-  def dark: typings.reactTooltip.reactTooltipStrings.dark = this.cast("dark")
+  def error: typings.reactTooltip.reactTooltipStrings.error = "error".asInstanceOf[typings.reactTooltip.reactTooltipStrings.error]
   @scala.inline
-  def error: typings.reactTooltip.reactTooltipStrings.error = this.cast("error")
+  def info: typings.reactTooltip.reactTooltipStrings.info = "info".asInstanceOf[typings.reactTooltip.reactTooltipStrings.info]
   @scala.inline
-  def info: typings.reactTooltip.reactTooltipStrings.info = this.cast("info")
+  def light: typings.reactTooltip.reactTooltipStrings.light = "light".asInstanceOf[typings.reactTooltip.reactTooltipStrings.light]
   @scala.inline
-  def light: typings.reactTooltip.reactTooltipStrings.light = this.cast("light")
+  def success: typings.reactTooltip.reactTooltipStrings.success = "success".asInstanceOf[typings.reactTooltip.reactTooltipStrings.success]
   @scala.inline
-  def success: typings.reactTooltip.reactTooltipStrings.success = this.cast("success")
-  @scala.inline
-  def warning: typings.reactTooltip.reactTooltipStrings.warning = this.cast("warning")
+  def warning: typings.reactTooltip.reactTooltipStrings.warning = "warning".asInstanceOf[typings.reactTooltip.reactTooltipStrings.warning]
 }
 

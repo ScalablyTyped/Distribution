@@ -18,7 +18,6 @@ object Command {
   @scala.inline
   def apply(register: (String, String, js.Function0[Unit]) => Unit): Command = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction3(register))
-  
     __obj.asInstanceOf[Command]
   }
 }

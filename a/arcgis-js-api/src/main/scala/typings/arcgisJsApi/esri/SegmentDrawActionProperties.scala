@@ -25,8 +25,9 @@ trait SegmentDrawActionProperties extends DrawActionProperties {
 
 object SegmentDrawActionProperties {
   @scala.inline
-  def apply(mode: freehand | click = null, view: MapViewProperties = null): SegmentDrawActionProperties = {
+  def apply(hasZ: Int | Double = null, mode: freehand | click = null, view: MapViewProperties = null): SegmentDrawActionProperties = {
     val __obj = js.Dynamic.literal()
+    if (hasZ != null) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentDrawActionProperties]

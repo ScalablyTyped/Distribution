@@ -133,7 +133,7 @@ class CodeConsole_ protected () extends Widget {
     * This list does not include the current banner or the prompt for a console.
     * It may include previous banners as raw cells.
     */
-  def cells(): IObservableList[Cell] = js.native
+  def cells: IObservableList[Cell] = js.native
   /**
     * Clear the code cells.
     */
@@ -158,7 +158,7 @@ class CodeConsole_ protected () extends Widget {
   /**
     * A signal emitted when the console finished executing its prompt cell.
     */
-  def executed(): ISignal[this.type, Date] = js.native
+  def executed: ISignal[this.type, Date] = js.native
   /**
     * Get a cell given a message id.
     *
@@ -193,11 +193,11 @@ class CodeConsole_ protected () extends Widget {
     * Make a new prompt cell.
     */
   /* protected */ def newPromptCell(): Unit = js.native
-  def promptCell(): CodeCell | Null = js.native
+  def promptCell: CodeCell | Null = js.native
   /**
     * A signal emitted when a new prompt cell is created.
     */
-  def promptCellCreated(): ISignal[this.type, CodeCell] = js.native
+  def promptCellCreated: ISignal[this.type, CodeCell] = js.native
   /**
     * Replaces the selected text in the prompt cell.
     *

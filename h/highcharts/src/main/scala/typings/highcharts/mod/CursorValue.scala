@@ -46,76 +46,74 @@ trait CursorValue extends js.Object
 
 object CursorValue {
   @scala.inline
-  def alias: typings.highcharts.highchartsStrings.alias = this.cast("alias")
+  def alias: typings.highcharts.highchartsStrings.alias = "alias".asInstanceOf[typings.highcharts.highchartsStrings.alias]
   @scala.inline
-  def `all-scroll`: typings.highcharts.highchartsStrings.`all-scroll` = this.cast("all-scroll")
+  def `all-scroll`: typings.highcharts.highchartsStrings.`all-scroll` = "all-scroll".asInstanceOf[typings.highcharts.highchartsStrings.`all-scroll`]
   @scala.inline
-  def auto: typings.highcharts.highchartsStrings.auto = this.cast("auto")
+  def auto: typings.highcharts.highchartsStrings.auto = "auto".asInstanceOf[typings.highcharts.highchartsStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cell: typings.highcharts.highchartsStrings.cell = "cell".asInstanceOf[typings.highcharts.highchartsStrings.cell]
   @scala.inline
-  def cell: typings.highcharts.highchartsStrings.cell = this.cast("cell")
+  def `col-resize`: typings.highcharts.highchartsStrings.`col-resize` = "col-resize".asInstanceOf[typings.highcharts.highchartsStrings.`col-resize`]
   @scala.inline
-  def `col-resize`: typings.highcharts.highchartsStrings.`col-resize` = this.cast("col-resize")
+  def `context-menu`: typings.highcharts.highchartsStrings.`context-menu` = "context-menu".asInstanceOf[typings.highcharts.highchartsStrings.`context-menu`]
   @scala.inline
-  def `context-menu`: typings.highcharts.highchartsStrings.`context-menu` = this.cast("context-menu")
+  def copy: typings.highcharts.highchartsStrings.copy = "copy".asInstanceOf[typings.highcharts.highchartsStrings.copy]
   @scala.inline
-  def copy: typings.highcharts.highchartsStrings.copy = this.cast("copy")
+  def crosshair: typings.highcharts.highchartsStrings.crosshair = "crosshair".asInstanceOf[typings.highcharts.highchartsStrings.crosshair]
   @scala.inline
-  def crosshair: typings.highcharts.highchartsStrings.crosshair = this.cast("crosshair")
+  def default: typings.highcharts.highchartsStrings.default = "default".asInstanceOf[typings.highcharts.highchartsStrings.default]
   @scala.inline
-  def default: typings.highcharts.highchartsStrings.default = this.cast("default")
+  def `e-resize`: typings.highcharts.highchartsStrings.`e-resize` = "e-resize".asInstanceOf[typings.highcharts.highchartsStrings.`e-resize`]
   @scala.inline
-  def `e-resize`: typings.highcharts.highchartsStrings.`e-resize` = this.cast("e-resize")
+  def `ew-resize`: typings.highcharts.highchartsStrings.`ew-resize` = "ew-resize".asInstanceOf[typings.highcharts.highchartsStrings.`ew-resize`]
   @scala.inline
-  def `ew-resize`: typings.highcharts.highchartsStrings.`ew-resize` = this.cast("ew-resize")
+  def grab: typings.highcharts.highchartsStrings.grab = "grab".asInstanceOf[typings.highcharts.highchartsStrings.grab]
   @scala.inline
-  def grab: typings.highcharts.highchartsStrings.grab = this.cast("grab")
+  def grabbing: typings.highcharts.highchartsStrings.grabbing = "grabbing".asInstanceOf[typings.highcharts.highchartsStrings.grabbing]
   @scala.inline
-  def grabbing: typings.highcharts.highchartsStrings.grabbing = this.cast("grabbing")
+  def help: typings.highcharts.highchartsStrings.help = "help".asInstanceOf[typings.highcharts.highchartsStrings.help]
   @scala.inline
-  def help: typings.highcharts.highchartsStrings.help = this.cast("help")
+  def move: typings.highcharts.highchartsStrings.move = "move".asInstanceOf[typings.highcharts.highchartsStrings.move]
   @scala.inline
-  def move: typings.highcharts.highchartsStrings.move = this.cast("move")
+  def `n-resize`: typings.highcharts.highchartsStrings.`n-resize` = "n-resize".asInstanceOf[typings.highcharts.highchartsStrings.`n-resize`]
   @scala.inline
-  def `n-resize`: typings.highcharts.highchartsStrings.`n-resize` = this.cast("n-resize")
+  def `ne-resize`: typings.highcharts.highchartsStrings.`ne-resize` = "ne-resize".asInstanceOf[typings.highcharts.highchartsStrings.`ne-resize`]
   @scala.inline
-  def `ne-resize`: typings.highcharts.highchartsStrings.`ne-resize` = this.cast("ne-resize")
+  def `nesw-resize`: typings.highcharts.highchartsStrings.`nesw-resize` = "nesw-resize".asInstanceOf[typings.highcharts.highchartsStrings.`nesw-resize`]
   @scala.inline
-  def `nesw-resize`: typings.highcharts.highchartsStrings.`nesw-resize` = this.cast("nesw-resize")
+  def `no-drop`: typings.highcharts.highchartsStrings.`no-drop` = "no-drop".asInstanceOf[typings.highcharts.highchartsStrings.`no-drop`]
   @scala.inline
-  def `no-drop`: typings.highcharts.highchartsStrings.`no-drop` = this.cast("no-drop")
+  def none: typings.highcharts.highchartsStrings.none = "none".asInstanceOf[typings.highcharts.highchartsStrings.none]
   @scala.inline
-  def none: typings.highcharts.highchartsStrings.none = this.cast("none")
+  def `not-allowed`: typings.highcharts.highchartsStrings.`not-allowed` = "not-allowed".asInstanceOf[typings.highcharts.highchartsStrings.`not-allowed`]
   @scala.inline
-  def `not-allowed`: typings.highcharts.highchartsStrings.`not-allowed` = this.cast("not-allowed")
+  def `ns-resize`: typings.highcharts.highchartsStrings.`ns-resize` = "ns-resize".asInstanceOf[typings.highcharts.highchartsStrings.`ns-resize`]
   @scala.inline
-  def `ns-resize`: typings.highcharts.highchartsStrings.`ns-resize` = this.cast("ns-resize")
+  def `nw-resize`: typings.highcharts.highchartsStrings.`nw-resize` = "nw-resize".asInstanceOf[typings.highcharts.highchartsStrings.`nw-resize`]
   @scala.inline
-  def `nw-resize`: typings.highcharts.highchartsStrings.`nw-resize` = this.cast("nw-resize")
+  def `nwse-resize`: typings.highcharts.highchartsStrings.`nwse-resize` = "nwse-resize".asInstanceOf[typings.highcharts.highchartsStrings.`nwse-resize`]
   @scala.inline
-  def `nwse-resize`: typings.highcharts.highchartsStrings.`nwse-resize` = this.cast("nwse-resize")
+  def pointer: typings.highcharts.highchartsStrings.pointer = "pointer".asInstanceOf[typings.highcharts.highchartsStrings.pointer]
   @scala.inline
-  def pointer: typings.highcharts.highchartsStrings.pointer = this.cast("pointer")
+  def progress: typings.highcharts.highchartsStrings.progress = "progress".asInstanceOf[typings.highcharts.highchartsStrings.progress]
   @scala.inline
-  def progress: typings.highcharts.highchartsStrings.progress = this.cast("progress")
+  def `row-resize`: typings.highcharts.highchartsStrings.`row-resize` = "row-resize".asInstanceOf[typings.highcharts.highchartsStrings.`row-resize`]
   @scala.inline
-  def `row-resize`: typings.highcharts.highchartsStrings.`row-resize` = this.cast("row-resize")
+  def `s-resize`: typings.highcharts.highchartsStrings.`s-resize` = "s-resize".asInstanceOf[typings.highcharts.highchartsStrings.`s-resize`]
   @scala.inline
-  def `s-resize`: typings.highcharts.highchartsStrings.`s-resize` = this.cast("s-resize")
+  def `se-resize`: typings.highcharts.highchartsStrings.`se-resize` = "se-resize".asInstanceOf[typings.highcharts.highchartsStrings.`se-resize`]
   @scala.inline
-  def `se-resize`: typings.highcharts.highchartsStrings.`se-resize` = this.cast("se-resize")
+  def `sw-resize`: typings.highcharts.highchartsStrings.`sw-resize` = "sw-resize".asInstanceOf[typings.highcharts.highchartsStrings.`sw-resize`]
   @scala.inline
-  def `sw-resize`: typings.highcharts.highchartsStrings.`sw-resize` = this.cast("sw-resize")
+  def text: typings.highcharts.highchartsStrings.text = "text".asInstanceOf[typings.highcharts.highchartsStrings.text]
   @scala.inline
-  def text: typings.highcharts.highchartsStrings.text = this.cast("text")
+  def `vertical-text`: typings.highcharts.highchartsStrings.`vertical-text` = "vertical-text".asInstanceOf[typings.highcharts.highchartsStrings.`vertical-text`]
   @scala.inline
-  def `vertical-text`: typings.highcharts.highchartsStrings.`vertical-text` = this.cast("vertical-text")
+  def `w-resize`: typings.highcharts.highchartsStrings.`w-resize` = "w-resize".asInstanceOf[typings.highcharts.highchartsStrings.`w-resize`]
   @scala.inline
-  def `w-resize`: typings.highcharts.highchartsStrings.`w-resize` = this.cast("w-resize")
+  def `zoom-in`: typings.highcharts.highchartsStrings.`zoom-in` = "zoom-in".asInstanceOf[typings.highcharts.highchartsStrings.`zoom-in`]
   @scala.inline
-  def `zoom-in`: typings.highcharts.highchartsStrings.`zoom-in` = this.cast("zoom-in")
-  @scala.inline
-  def `zoom-out`: typings.highcharts.highchartsStrings.`zoom-out` = this.cast("zoom-out")
+  def `zoom-out`: typings.highcharts.highchartsStrings.`zoom-out` = "zoom-out".asInstanceOf[typings.highcharts.highchartsStrings.`zoom-out`]
 }
 

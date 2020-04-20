@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
 		 * Use with <Attribute.type> to wrap and truncate the text.
+		 * @deprecated Use [ParagraphAttribute.lineBreakMode](ParagraphAttribute.lineBreakMode) instead.
 		 */
 @JSGlobal("Titanium.UI.ATTRIBUTE_LINE_BREAK")
 @js.native

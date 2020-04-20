@@ -1,8 +1,5 @@
 package typings.styledComponents.styledComponentsMod
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.FunctionComponent
 import typings.styledComponents.styledComponentsStrings.`object`
 import typings.styledComponents.styledComponentsStrings.`var`
 import typings.styledComponents.styledComponentsStrings.a
@@ -2110,10 +2107,11 @@ trait StyledInterface extends js.Object {
   // causes tests to fail in TS 3.1
   component: webview
   ): ThemedStyledFunction[webview, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-  def apply[C /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */](
-    // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
-  // causes tests to fail in TS 3.1
-  component: C
-  ): ThemedStyledFunction[C, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
+  def apply[C /* <: AnyStyledComponent */](component: C): ThemedStyledFunction[
+    StyledComponentInnerComponent[C], 
+    AnyIfEmpty[DefaultTheme], 
+    StyledComponentInnerOtherProps[C], 
+    StyledComponentInnerAttrs[C]
+  ] = js.native
 }
 

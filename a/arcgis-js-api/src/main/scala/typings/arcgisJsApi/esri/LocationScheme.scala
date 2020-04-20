@@ -25,7 +25,6 @@ object LocationScheme {
     size: Double
   ): LocationScheme = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), opacity = opacity.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocationScheme]
   }
   @scala.inline
@@ -38,7 +37,6 @@ object LocationScheme {
     width: Double
   ): LocationScheme = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocationScheme]
   }
   @scala.inline
@@ -51,7 +49,6 @@ object LocationScheme {
     propertyIsEnumerable: PropertyKey => Boolean
   ): LocationScheme = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), opacity = opacity.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[LocationScheme]
   }
   @scala.inline
@@ -63,7 +60,6 @@ object LocationScheme {
     propertyIsEnumerable: PropertyKey => Boolean
   ): LocationScheme = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[LocationScheme]
   }
 }

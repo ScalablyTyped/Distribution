@@ -12,7 +12,6 @@ object RevokeCredentialsResult {
   @scala.inline
   def apply(success: Boolean): RevokeCredentialsResult = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RevokeCredentialsResult]
   }
 }

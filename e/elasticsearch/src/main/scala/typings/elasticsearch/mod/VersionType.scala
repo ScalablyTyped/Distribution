@@ -14,14 +14,12 @@ trait VersionType extends js.Object
 
 object VersionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def external: typings.elasticsearch.elasticsearchStrings.external = "external".asInstanceOf[typings.elasticsearch.elasticsearchStrings.external]
   @scala.inline
-  def external: typings.elasticsearch.elasticsearchStrings.external = this.cast("external")
+  def external_gte: typings.elasticsearch.elasticsearchStrings.external_gte = "external_gte".asInstanceOf[typings.elasticsearch.elasticsearchStrings.external_gte]
   @scala.inline
-  def external_gte: typings.elasticsearch.elasticsearchStrings.external_gte = this.cast("external_gte")
+  def force: typings.elasticsearch.elasticsearchStrings.force = "force".asInstanceOf[typings.elasticsearch.elasticsearchStrings.force]
   @scala.inline
-  def force: typings.elasticsearch.elasticsearchStrings.force = this.cast("force")
-  @scala.inline
-  def internal: typings.elasticsearch.elasticsearchStrings.internal = this.cast("internal")
+  def internal: typings.elasticsearch.elasticsearchStrings.internal = "internal".asInstanceOf[typings.elasticsearch.elasticsearchStrings.internal]
 }
 

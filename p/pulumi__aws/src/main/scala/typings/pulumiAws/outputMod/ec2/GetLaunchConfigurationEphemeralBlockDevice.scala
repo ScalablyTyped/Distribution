@@ -20,7 +20,6 @@ object GetLaunchConfigurationEphemeralBlockDevice {
   @scala.inline
   def apply(deviceName: String, virtualName: String): GetLaunchConfigurationEphemeralBlockDevice = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], virtualName = virtualName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchConfigurationEphemeralBlockDevice]
   }
 }

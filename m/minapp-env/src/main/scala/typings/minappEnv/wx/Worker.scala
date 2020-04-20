@@ -44,7 +44,6 @@ object Worker {
   @scala.inline
   def apply(onMessage: WorkerOnMessageCallback => Unit, postMessage: js.Object => Unit, terminate: () => Unit): Worker = {
     val __obj = js.Dynamic.literal(onMessage = js.Any.fromFunction1(onMessage), postMessage = js.Any.fromFunction1(postMessage), terminate = js.Any.fromFunction0(terminate))
-  
     __obj.asInstanceOf[Worker]
   }
 }

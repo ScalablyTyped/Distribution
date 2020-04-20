@@ -24,20 +24,18 @@ trait XlCVError extends js.Object
 
 object XlCVError {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlErrDiv0: `2007` = 2007.asInstanceOf[`2007`]
   @scala.inline
-  def xlErrDiv0: `2007` = this.cast(2007)
+  def xlErrNA: `2042` = 2042.asInstanceOf[`2042`]
   @scala.inline
-  def xlErrNA: `2042` = this.cast(2042)
+  def xlErrName: `2029` = 2029.asInstanceOf[`2029`]
   @scala.inline
-  def xlErrName: `2029` = this.cast(2029)
+  def xlErrNull: `2000` = 2000.asInstanceOf[`2000`]
   @scala.inline
-  def xlErrNull: `2000` = this.cast(2000)
+  def xlErrNum: `2036` = 2036.asInstanceOf[`2036`]
   @scala.inline
-  def xlErrNum: `2036` = this.cast(2036)
+  def xlErrRef: `2023` = 2023.asInstanceOf[`2023`]
   @scala.inline
-  def xlErrRef: `2023` = this.cast(2023)
-  @scala.inline
-  def xlErrValue: `2015` = this.cast(2015)
+  def xlErrValue: `2015` = 2015.asInstanceOf[`2015`]
 }
 

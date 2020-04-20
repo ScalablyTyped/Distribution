@@ -17,6 +17,6 @@ package object mod {
   type GraphQLWhereClause = org.scalablytyped.runtime.StringDictionary[js.Any]
   type KeyValues[Keys /* <: java.lang.String */, Values] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]: Values}
-    */ typings.keystonejsKeystone.keystonejsKeystoneStrings.KeyValues with js.Any
+    */ typings.keystonejsKeystone.keystonejsKeystoneStrings.KeyValues with org.scalablytyped.runtime.TopLevel[js.Any]
   type Plugin = js.Any
 }

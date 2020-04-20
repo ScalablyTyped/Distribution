@@ -15,7 +15,6 @@ object Api {
   @scala.inline
   def apply(fixedColumns: () => FixedColumnsMethods): Api = {
     val __obj = js.Dynamic.literal(fixedColumns = js.Any.fromFunction0(fixedColumns))
-  
     __obj.asInstanceOf[Api]
   }
 }

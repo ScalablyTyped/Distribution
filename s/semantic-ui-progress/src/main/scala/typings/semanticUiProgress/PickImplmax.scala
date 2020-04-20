@@ -13,7 +13,6 @@ object PickImplmax {
   @scala.inline
   def apply(max: Double): PickImplmax = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmax]
   }
 }

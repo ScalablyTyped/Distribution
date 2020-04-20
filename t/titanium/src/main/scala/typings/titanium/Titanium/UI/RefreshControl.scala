@@ -1,6 +1,8 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.Titanium.Proxy
+import typings.titanium.titaniumStrings.refreshend
+import typings.titanium.titaniumStrings.refreshstart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,70 +12,81 @@ import scala.scalajs.js.annotation._
 		 * [UIRefreshControl](https://developer.apple.com/documentation/uikit/uirefreshcontrol)
 		 * and Android [SwipeRefreshLayout](https://developer.android.com/reference/android/support/v4/widget/SwipeRefreshLayout.html).
 		 */
-trait RefreshControl extends Proxy {
+@JSGlobal("Titanium.UI.RefreshControl")
+@js.native
+class RefreshControl () extends Proxy {
   /**
   			 * The tint color for the refresh control, as a color name or hex triplet.
   			 */
-  var tintColor: String
+  var tintColor: String = js.native
   /**
   			 * The attributed title of the control.
   			 */
-  var title: AttributedString
+  var title: AttributedString = js.native
+  /**
+  			 * Adds the specified callback as an event listener for the named event.
+  			 */
+  @JSName("addEventListener")
+  def addEventListener_refreshend(
+    name: refreshend,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ RefreshControlRefreshendEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_refreshstart(
+    name: refreshstart,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ RefreshControlRefreshstartEvent, Unit]
+  ): Unit = js.native
   /**
   			 * Tells the control that a refresh operation was started programmatically.
   			 */
-  def beginRefreshing(): Unit
+  def beginRefreshing(): Unit = js.native
   /**
   			 * Tells the control that a refresh operation has ended.
   			 */
-  def endRefreshing(): Unit
+  def endRefreshing(): Unit = js.native
+  /**
+  			 * Fires a synthesized event to any registered listeners.
+  			 */
+  @JSName("fireEvent")
+  def fireEvent_refreshend(name: refreshend): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_refreshend(name: refreshend, event: RefreshControlRefreshendEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_refreshstart(name: refreshstart): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_refreshstart(name: refreshstart, event: RefreshControlRefreshstartEvent): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.UI.RefreshControl.tintColor> property.
+  			 * @deprecated Access <Titanium.UI.RefreshControl.tintColor> instead.
   			 */
-  def getTintColor(): String
+  def getTintColor(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.RefreshControl.title> property.
+  			 * @deprecated Access <Titanium.UI.RefreshControl.title> instead.
   			 */
-  def getTitle(): AttributedString
+  def getTitle(): AttributedString = js.native
+  /**
+  			 * Removes the specified callback as an event listener for the named event.
+  			 */
+  @JSName("removeEventListener")
+  def removeEventListener_refreshend(
+    name: refreshend,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ RefreshControlRefreshendEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_refreshstart(
+    name: refreshstart,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ RefreshControlRefreshstartEvent, Unit]
+  ): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.RefreshControl.tintColor> property.
+  			 * @deprecated Set the value using <Titanium.UI.RefreshControl.tintColor> instead.
   			 */
-  def setTintColor(tintColor: String): Unit
+  def setTintColor(tintColor: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.RefreshControl.title> property.
+  			 * @deprecated Set the value using <Titanium.UI.RefreshControl.title> instead.
   			 */
-  def setTitle(title: AttributedString): Unit
-}
-
-object RefreshControl {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    beginRefreshing: () => Unit,
-    bubbleParent: Boolean,
-    endRefreshing: () => Unit,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getTintColor: () => String,
-    getTitle: () => AttributedString,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setBubbleParent: Boolean => Unit,
-    setTintColor: String => Unit,
-    setTitle: AttributedString => Unit,
-    tintColor: String,
-    title: AttributedString,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): RefreshControl = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), beginRefreshing = js.Any.fromFunction0(beginRefreshing), bubbleParent = bubbleParent.asInstanceOf[js.Any], endRefreshing = js.Any.fromFunction0(endRefreshing), fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getTintColor = js.Any.fromFunction0(getTintColor), getTitle = js.Any.fromFunction0(getTitle), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setTintColor = js.Any.fromFunction1(setTintColor), setTitle = js.Any.fromFunction1(setTitle), tintColor = tintColor.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RefreshControl]
-  }
+  def setTitle(title: AttributedString): Unit = js.native
 }
 

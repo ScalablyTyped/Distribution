@@ -20,7 +20,6 @@ object GetFindingRequest {
   @scala.inline
   def apply(analyzerArn: AnalyzerArn, id: FindingId): GetFindingRequest = {
     val __obj = js.Dynamic.literal(analyzerArn = analyzerArn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFindingRequest]
   }
 }

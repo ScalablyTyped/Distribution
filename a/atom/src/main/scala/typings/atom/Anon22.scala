@@ -1,21 +1,21 @@
 package typings.atom
 
-import typings.atom.atomStrings.backward
-import typings.atom.atomStrings.closest
-import typings.atom.atomStrings.forward
+import typings.atom.atomStrings.Subsequence
+import typings.atom.atomStrings.Symbol
+import typings.atom.mod.ScopeDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon22 extends js.Object {
-  var clipDirection: backward | forward | closest
+  var scopeDescriptor: ScopeDescriptor
+  var value: Subsequence | Symbol
 }
 
 object Anon22 {
   @scala.inline
-  def apply(clipDirection: backward | forward | closest): Anon22 = {
-    val __obj = js.Dynamic.literal(clipDirection = clipDirection.asInstanceOf[js.Any])
-  
+  def apply(scopeDescriptor: ScopeDescriptor, value: Subsequence | Symbol): Anon22 = {
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon22]
   }
 }

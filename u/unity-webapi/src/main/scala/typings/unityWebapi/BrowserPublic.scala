@@ -12,7 +12,6 @@ object BrowserPublic {
   @scala.inline
   def apply(getUnityObject: Double => Unity): BrowserPublic = {
     val __obj = js.Dynamic.literal(getUnityObject = js.Any.fromFunction1(getUnityObject))
-  
     __obj.asInstanceOf[BrowserPublic]
   }
 }

@@ -18,14 +18,12 @@ trait WdEditorType extends js.Object
 
 object WdEditorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdEditorCurrent: `-6` = -6.asInstanceOf[`-6`]
   @scala.inline
-  def wdEditorCurrent: `-6` = this.cast(-6)
+  def wdEditorEditors: `-5` = -5.asInstanceOf[`-5`]
   @scala.inline
-  def wdEditorEditors: `-5` = this.cast(-5)
+  def wdEditorEveryone: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdEditorEveryone: `-1` = this.cast(-1)
-  @scala.inline
-  def wdEditorOwners: `-4` = this.cast(-4)
+  def wdEditorOwners: `-4` = -4.asInstanceOf[`-4`]
 }
 

@@ -18,7 +18,6 @@ object OLogger {
     log: /* repeated */ js.Any => Unit
   ): OLogger = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log))
-  
     __obj.asInstanceOf[OLogger]
   }
 }

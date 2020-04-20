@@ -16,7 +16,6 @@ object AnonBundleId {
   @scala.inline
   def apply(bundleId: String): AnonBundleId = {
     val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBundleId]
   }
 }

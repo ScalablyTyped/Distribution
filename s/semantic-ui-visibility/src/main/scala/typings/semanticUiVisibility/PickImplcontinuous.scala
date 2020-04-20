@@ -13,7 +13,6 @@ object PickImplcontinuous {
   @scala.inline
   def apply(continuous: Boolean): PickImplcontinuous = {
     val __obj = js.Dynamic.literal(continuous = continuous.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcontinuous]
   }
 }

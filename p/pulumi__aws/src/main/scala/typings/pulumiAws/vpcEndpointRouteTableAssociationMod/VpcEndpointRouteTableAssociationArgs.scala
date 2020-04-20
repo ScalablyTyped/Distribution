@@ -21,7 +21,6 @@ object VpcEndpointRouteTableAssociationArgs {
   @scala.inline
   def apply(routeTableId: Input[String], vpcEndpointId: Input[String]): VpcEndpointRouteTableAssociationArgs = {
     val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any], vpcEndpointId = vpcEndpointId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcEndpointRouteTableAssociationArgs]
   }
 }

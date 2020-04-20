@@ -39,6 +39,6 @@ object default extends js.Object {
     * @type String
     * @readonly
     */
-  val version: js.Any = js.native
+  def version: js.Any = js.native
 }
 

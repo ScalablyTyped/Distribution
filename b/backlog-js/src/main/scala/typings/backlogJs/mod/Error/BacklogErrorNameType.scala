@@ -13,12 +13,10 @@ trait BacklogErrorNameType extends js.Object
 
 object BacklogErrorNameType {
   @scala.inline
-  def BacklogApiError: typings.backlogJs.backlogJsStrings.BacklogApiError = this.cast("BacklogApiError")
+  def BacklogApiError: typings.backlogJs.backlogJsStrings.BacklogApiError = "BacklogApiError".asInstanceOf[typings.backlogJs.backlogJsStrings.BacklogApiError]
   @scala.inline
-  def BacklogAuthError: typings.backlogJs.backlogJsStrings.BacklogAuthError = this.cast("BacklogAuthError")
+  def BacklogAuthError: typings.backlogJs.backlogJsStrings.BacklogAuthError = "BacklogAuthError".asInstanceOf[typings.backlogJs.backlogJsStrings.BacklogAuthError]
   @scala.inline
-  def UnexpectedError: typings.backlogJs.backlogJsStrings.UnexpectedError = this.cast("UnexpectedError")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UnexpectedError: typings.backlogJs.backlogJsStrings.UnexpectedError = "UnexpectedError".asInstanceOf[typings.backlogJs.backlogJsStrings.UnexpectedError]
 }
 

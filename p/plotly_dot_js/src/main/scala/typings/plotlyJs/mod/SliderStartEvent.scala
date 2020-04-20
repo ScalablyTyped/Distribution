@@ -12,7 +12,6 @@ object SliderStartEvent {
   @scala.inline
   def apply(slider: Slider): SliderStartEvent = {
     val __obj = js.Dynamic.literal(slider = slider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SliderStartEvent]
   }
 }

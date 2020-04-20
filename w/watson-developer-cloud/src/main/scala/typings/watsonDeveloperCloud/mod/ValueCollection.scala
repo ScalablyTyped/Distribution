@@ -16,7 +16,6 @@ object ValueCollection {
   @scala.inline
   def apply(pagination: Pagination, values: js.Array[Value]): ValueCollection = {
     val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValueCollection]
   }
 }

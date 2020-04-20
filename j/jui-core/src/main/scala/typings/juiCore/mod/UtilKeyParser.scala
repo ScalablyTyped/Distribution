@@ -22,7 +22,6 @@ object UtilKeyParser {
     isIndexDepth: String => Boolean
   ): UtilKeyParser = {
     val __obj = js.Dynamic.literal(changeIndex = js.Any.fromFunction3(changeIndex), getIndexList = js.Any.fromFunction1(getIndexList), getNextIndex = js.Any.fromFunction1(getNextIndex), getParentIndex = js.Any.fromFunction1(getParentIndex), isIndexDepth = js.Any.fromFunction1(isIndexDepth))
-  
     __obj.asInstanceOf[UtilKeyParser]
   }
 }

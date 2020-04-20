@@ -32,8 +32,8 @@ object optionsReaderMod extends js.Object {
     var scrollAngleRanges_OptionsReader: js.UndefOr[js.Array[AngleRange]] = js.native
     @JSName("touchSlop")
     var touchSlop_OptionsReader: Double = js.native
-    def document(): js.Any = js.native
-    def window(): js.Any = js.native
+    def document: js.Any = js.native
+    def window: js.Any = js.native
   }
   
 }

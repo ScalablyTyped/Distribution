@@ -14,7 +14,6 @@ object AnonCompleted {
   @scala.inline
   def apply(completed: Double, inProgress: Double, pending: Double): AnonCompleted = {
     val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCompleted]
   }
 }

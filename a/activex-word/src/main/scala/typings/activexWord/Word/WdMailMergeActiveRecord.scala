@@ -28,24 +28,22 @@ trait WdMailMergeActiveRecord extends js.Object
 
 object WdMailMergeActiveRecord {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdFirstDataSourceRecord: `-6` = -6.asInstanceOf[`-6`]
   @scala.inline
-  def wdFirstDataSourceRecord: `-6` = this.cast(-6)
+  def wdFirstRecord: `-4` = -4.asInstanceOf[`-4`]
   @scala.inline
-  def wdFirstRecord: `-4` = this.cast(-4)
+  def wdLastDataSourceRecord: `-7` = -7.asInstanceOf[`-7`]
   @scala.inline
-  def wdLastDataSourceRecord: `-7` = this.cast(-7)
+  def wdLastRecord: `-5` = -5.asInstanceOf[`-5`]
   @scala.inline
-  def wdLastRecord: `-5` = this.cast(-5)
+  def wdNextDataSourceRecord: `-8` = -8.asInstanceOf[`-8`]
   @scala.inline
-  def wdNextDataSourceRecord: `-8` = this.cast(-8)
+  def wdNextRecord: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def wdNextRecord: `-2` = this.cast(-2)
+  def wdNoActiveRecord: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdNoActiveRecord: `-1` = this.cast(-1)
+  def wdPreviousDataSourceRecord: `-9` = -9.asInstanceOf[`-9`]
   @scala.inline
-  def wdPreviousDataSourceRecord: `-9` = this.cast(-9)
-  @scala.inline
-  def wdPreviousRecord: `-3` = this.cast(-3)
+  def wdPreviousRecord: `-3` = -3.asInstanceOf[`-3`]
 }
 

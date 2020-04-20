@@ -1,7 +1,7 @@
 
 # Scala.js typings for iobroker
 
-Typings are for version 2.2
+Typings are for version 3.0
 
 ## Library description:
 automate your life - platfom

@@ -12,7 +12,6 @@ object IMultiPickerProp {
   @scala.inline
   def apply(getValue: () => js.Any): IMultiPickerProp = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
-  
     __obj.asInstanceOf[IMultiPickerProp]
   }
 }

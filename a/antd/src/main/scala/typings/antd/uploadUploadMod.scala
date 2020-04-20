@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 object uploadUploadMod extends js.Object {
   @js.native
   trait Upload
-    extends Component[UploadProps, UploadState, js.Any] {
+    extends Component[UploadProps[js.Any], UploadState[js.Any], js.Any] {
     var progressTimer: js.Any = js.native
     var recentUploadStatus: Boolean | js.Thenable[_] = js.native
     var upload: js.Any = js.native
@@ -44,7 +44,7 @@ object uploadUploadMod extends js.Object {
   
   @js.native
   class default protected () extends Upload {
-    def this(props: UploadProps) = this()
+    def this(props: UploadProps[_]) = this()
   }
   
   /* static members */
@@ -52,7 +52,7 @@ object uploadUploadMod extends js.Object {
   object default extends js.Object {
     var Dragger: Instantiable0[typings.antd.draggerMod.default] = js.native
     var defaultProps: AnonAccept = js.native
-    def getDerivedStateFromProps(nextProps: UploadProps): AnonFileList | Null = js.native
+    def getDerivedStateFromProps(nextProps: UploadProps[_]): AnonFileList | Null = js.native
   }
   
 }

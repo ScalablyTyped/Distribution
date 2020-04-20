@@ -12,7 +12,6 @@ object Moment {
   @scala.inline
   def apply(strftime: String => String): Moment = {
     val __obj = js.Dynamic.literal(strftime = js.Any.fromFunction1(strftime))
-  
     __obj.asInstanceOf[Moment]
   }
 }

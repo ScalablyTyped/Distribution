@@ -38,7 +38,6 @@ object ChildWorkflowExecutionTimedOutEventAttributes {
     workflowType: WorkflowType
   ): ChildWorkflowExecutionTimedOutEventAttributes = {
     val __obj = js.Dynamic.literal(initiatedEventId = initiatedEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any], timeoutType = timeoutType.asInstanceOf[js.Any], workflowExecution = workflowExecution.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChildWorkflowExecutionTimedOutEventAttributes]
   }
 }

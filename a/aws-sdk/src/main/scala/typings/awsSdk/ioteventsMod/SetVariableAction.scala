@@ -20,7 +20,6 @@ object SetVariableAction {
   @scala.inline
   def apply(value: VariableValue, variableName: VariableName): SetVariableAction = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetVariableAction]
   }
 }

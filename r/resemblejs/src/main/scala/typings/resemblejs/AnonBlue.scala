@@ -14,7 +14,6 @@ object AnonBlue {
   @scala.inline
   def apply(blue: Double, green: Double, red: Double): AnonBlue = {
     val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBlue]
   }
 }

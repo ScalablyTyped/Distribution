@@ -21,7 +21,6 @@ object QueryMethods {
     between: (Date, Date, Boolean) => js.Array[Date]
   ): QueryMethods = {
     val __obj = js.Dynamic.literal(after = js.Any.fromFunction2(after), all = js.Any.fromFunction0(all), before = js.Any.fromFunction2(before), between = js.Any.fromFunction3(between))
-  
     __obj.asInstanceOf[QueryMethods]
   }
 }

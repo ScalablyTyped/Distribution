@@ -29,12 +29,12 @@ class BasicCodeActionParameterValue protected () extends ExpressionBasedCodeActi
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def argument(): String = js.native
+  def argument: String = js.native
   def argument(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  def argumentModel(): Expression = js.native
+  def argumentModel: Expression = js.native
   def argumentModel(newValue: Expression): js.Any = js.native
 }
 

@@ -28,7 +28,6 @@ object ContributedFeatureStateQuery {
     scopeValues: StringDictionary[String]
   ): ContributedFeatureStateQuery = {
     val __obj = js.Dynamic.literal(featureIds = featureIds.asInstanceOf[js.Any], featureStates = featureStates.asInstanceOf[js.Any], scopeValues = scopeValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContributedFeatureStateQuery]
   }
 }

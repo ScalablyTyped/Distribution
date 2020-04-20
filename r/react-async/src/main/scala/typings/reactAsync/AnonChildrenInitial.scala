@@ -14,7 +14,6 @@ object AnonChildrenInitial {
   @scala.inline
   def apply(children: js.Any, initial: js.Any, state: js.Any): AnonChildrenInitial = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChildrenInitial]
   }
 }

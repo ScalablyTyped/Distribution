@@ -24,7 +24,6 @@ object VerifyUserAttributeRequest {
   @scala.inline
   def apply(AccessToken: TokenModelType, AttributeName: AttributeNameType, Code: ConfirmationCodeType): VerifyUserAttributeRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any], AttributeName = AttributeName.asInstanceOf[js.Any], Code = Code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyUserAttributeRequest]
   }
 }

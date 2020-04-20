@@ -13,7 +13,6 @@ object AnonSpecularMap {
   @scala.inline
   def apply(specularMap: IUniform): AnonSpecularMap = {
     val __obj = js.Dynamic.literal(specularMap = specularMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSpecularMap]
   }
 }

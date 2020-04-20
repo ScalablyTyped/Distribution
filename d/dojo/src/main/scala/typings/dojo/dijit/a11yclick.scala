@@ -51,7 +51,6 @@ object a11yclick {
     release: (js.Any, js.Any) => Unit
   ): a11yclick = {
     val __obj = js.Dynamic.literal(click = js.Any.fromFunction2(click), move = js.Any.fromFunction2(move), press = js.Any.fromFunction2(press), release = js.Any.fromFunction2(release))
-  
     __obj.asInstanceOf[a11yclick]
   }
 }

@@ -16,7 +16,6 @@ object AnonCrumbs {
   @scala.inline
   def apply(crumbs: js.Array[Crumb], data: js.Any, state: State): AnonCrumbs = {
     val __obj = js.Dynamic.literal(crumbs = crumbs.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCrumbs]
   }
 }

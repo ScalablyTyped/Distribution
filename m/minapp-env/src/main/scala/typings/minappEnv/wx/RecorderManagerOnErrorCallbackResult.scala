@@ -13,7 +13,6 @@ object RecorderManagerOnErrorCallbackResult {
   @scala.inline
   def apply(errMsg: String): RecorderManagerOnErrorCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecorderManagerOnErrorCallbackResult]
   }
 }

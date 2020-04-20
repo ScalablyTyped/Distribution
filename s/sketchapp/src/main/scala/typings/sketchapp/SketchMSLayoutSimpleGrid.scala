@@ -16,7 +16,6 @@ object SketchMSLayoutSimpleGrid {
   @scala.inline
   def apply(_class: simpleGrid, gridSize: Double, isEnabled: Double, thickGridTimes: Double): SketchMSLayoutSimpleGrid = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], gridSize = gridSize.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], thickGridTimes = thickGridTimes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSLayoutSimpleGrid]
   }
 }

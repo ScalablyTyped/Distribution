@@ -18,14 +18,12 @@ trait htmlEncoding extends js.Object
 
 object htmlEncoding {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlEncodingMultipart: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlEncodingMultipart: `1` = this.cast(1)
+  def htmlEncodingText: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlEncodingText: `2` = this.cast(2)
+  def htmlEncodingURL: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlEncodingURL: `0` = this.cast(0)
-  @scala.inline
-  def htmlEncoding_Max: `2147483647` = this.cast(2147483647)
+  def htmlEncoding_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

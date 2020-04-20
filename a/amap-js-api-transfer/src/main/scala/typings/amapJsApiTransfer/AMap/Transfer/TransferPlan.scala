@@ -63,7 +63,6 @@ object TransferPlan {
     walking_distance: Double
   ): TransferPlan = {
     val __obj = js.Dynamic.literal(cost = cost.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], nightLine = nightLine.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], railway_distance = railway_distance.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], taxi_distance = taxi_distance.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit_distance = transit_distance.asInstanceOf[js.Any], walking_distance = walking_distance.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransferPlan]
   }
 }

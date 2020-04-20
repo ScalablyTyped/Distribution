@@ -42,7 +42,6 @@ object IgHtmlEditorPopoverMethods {
     show: js.Object => Unit
   ): IgHtmlEditorPopoverMethods = {
     val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction1(changeLocale), destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction1(show))
-  
     __obj.asInstanceOf[IgHtmlEditorPopoverMethods]
   }
 }

@@ -12,7 +12,6 @@ object Timer {
   @scala.inline
   def apply(end: () => Unit): Timer = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end))
-  
     __obj.asInstanceOf[Timer]
   }
 }

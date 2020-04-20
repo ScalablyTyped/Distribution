@@ -14,14 +14,12 @@ trait Variant extends js.Object
 
 object Variant {
   @scala.inline
-  def Crockford: typings.base32Encode.base32EncodeStrings.Crockford = this.cast("Crockford")
+  def Crockford: typings.base32Encode.base32EncodeStrings.Crockford = "Crockford".asInstanceOf[typings.base32Encode.base32EncodeStrings.Crockford]
   @scala.inline
-  def RFC3548: typings.base32Encode.base32EncodeStrings.RFC3548 = this.cast("RFC3548")
+  def RFC3548: typings.base32Encode.base32EncodeStrings.RFC3548 = "RFC3548".asInstanceOf[typings.base32Encode.base32EncodeStrings.RFC3548]
   @scala.inline
-  def RFC4648: typings.base32Encode.base32EncodeStrings.RFC4648 = this.cast("RFC4648")
+  def RFC4648: typings.base32Encode.base32EncodeStrings.RFC4648 = "RFC4648".asInstanceOf[typings.base32Encode.base32EncodeStrings.RFC4648]
   @scala.inline
-  def `RFC4648-HEX`: typings.base32Encode.base32EncodeStrings.`RFC4648-HEX` = this.cast("RFC4648-HEX")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `RFC4648-HEX`: typings.base32Encode.base32EncodeStrings.`RFC4648-HEX` = "RFC4648-HEX".asInstanceOf[typings.base32Encode.base32EncodeStrings.`RFC4648-HEX`]
 }
 

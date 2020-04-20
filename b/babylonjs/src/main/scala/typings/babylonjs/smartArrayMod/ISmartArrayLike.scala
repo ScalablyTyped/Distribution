@@ -19,7 +19,6 @@ object ISmartArrayLike {
   @scala.inline
   def apply[T](data: js.Array[T], length: Double): ISmartArrayLike[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISmartArrayLike[T]]
   }
 }

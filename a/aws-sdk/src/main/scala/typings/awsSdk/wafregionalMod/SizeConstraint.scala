@@ -33,7 +33,6 @@ object SizeConstraint {
     TextTransformation: TextTransformation
   ): SizeConstraint = {
     val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], FieldToMatch = FieldToMatch.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], TextTransformation = TextTransformation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SizeConstraint]
   }
 }

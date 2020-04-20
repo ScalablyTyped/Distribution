@@ -66,11 +66,11 @@ object Debug extends js.Object {
       */
     def update(position: Vector3, xaxis: Vector3, yaxis: Vector3, zaxis: Vector3): Unit = js.native
     /** Gets the node hierarchy used to render x-axis */
-    def xAxis(): TransformNode = js.native
+    def xAxis: TransformNode = js.native
     /** Gets the node hierarchy used to render y-axis */
-    def yAxis(): TransformNode = js.native
+    def yAxis: TransformNode = js.native
     /** Gets the node hierarchy used to render z-axis */
-    def zAxis(): TransformNode = js.native
+    def zAxis: TransformNode = js.native
   }
   
   @js.native
@@ -214,10 +214,10 @@ object Debug extends js.Object {
     /**
       * Returns the mesh used to render the bones
       */
-    def debugMesh(): Nullable[LinesMesh] = js.native
+    def debugMesh: Nullable[LinesMesh] = js.native
     /** Release associated resources */
     def dispose(): Unit = js.native
-    def isEnabled(): Boolean = js.native
+    def isEnabled: Boolean = js.native
     /** Gets or sets a boolean indicating if the viewer is enabled */
     def isEnabled(value: Boolean): js.Any = js.native
     /** Update the viewer to sync with current skeleton state */

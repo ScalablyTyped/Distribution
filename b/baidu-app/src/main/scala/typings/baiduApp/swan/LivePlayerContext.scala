@@ -33,7 +33,6 @@ object LivePlayerContext {
     stop: BaseOptions[_, _] => Unit
   ): LivePlayerContext = {
     val __obj = js.Dynamic.literal(exitFullScreen = js.Any.fromFunction1(exitFullScreen), mute = js.Any.fromFunction1(mute), pause = js.Any.fromFunction1(pause), play = js.Any.fromFunction1(play), requestFullScreen = js.Any.fromFunction1(requestFullScreen), resume = js.Any.fromFunction1(resume), stop = js.Any.fromFunction1(stop))
-  
     __obj.asInstanceOf[LivePlayerContext]
   }
 }

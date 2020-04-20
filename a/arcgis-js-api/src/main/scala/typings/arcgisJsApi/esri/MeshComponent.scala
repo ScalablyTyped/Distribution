@@ -22,7 +22,7 @@ trait MeshComponent extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html#material)
     */
-  var material: MeshMaterial = js.native
+  var material: MeshMaterial | MeshMaterialMetallicRoughness = js.native
   /**
     * Specifies the type of normals used for lighting. This determines whether the object has a smooth or an angular appearance. The following shading types are supported:
     *

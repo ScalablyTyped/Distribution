@@ -16,7 +16,6 @@ object ListTagsForResourceRequest {
   @scala.inline
   def apply(Arn: NotificationRuleArn): ListTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }
 }

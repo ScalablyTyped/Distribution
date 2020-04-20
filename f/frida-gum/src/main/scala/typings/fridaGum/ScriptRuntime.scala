@@ -12,10 +12,8 @@ trait ScriptRuntime extends js.Object
 
 object ScriptRuntime {
   @scala.inline
-  def DUK: typings.fridaGum.fridaGumStrings.DUK = this.cast("DUK")
+  def DUK: typings.fridaGum.fridaGumStrings.DUK = "DUK".asInstanceOf[typings.fridaGum.fridaGumStrings.DUK]
   @scala.inline
-  def V8: typings.fridaGum.fridaGumStrings.V8 = this.cast("V8")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def V8: typings.fridaGum.fridaGumStrings.V8 = "V8".asInstanceOf[typings.fridaGum.fridaGumStrings.V8]
 }
 

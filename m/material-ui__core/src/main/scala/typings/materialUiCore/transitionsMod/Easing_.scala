@@ -16,7 +16,6 @@ object Easing_ {
   @scala.inline
   def apply(easeIn: String, easeInOut: String, easeOut: String, sharp: String): Easing_ = {
     val __obj = js.Dynamic.literal(easeIn = easeIn.asInstanceOf[js.Any], easeInOut = easeInOut.asInstanceOf[js.Any], easeOut = easeOut.asInstanceOf[js.Any], sharp = sharp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Easing_]
   }
 }

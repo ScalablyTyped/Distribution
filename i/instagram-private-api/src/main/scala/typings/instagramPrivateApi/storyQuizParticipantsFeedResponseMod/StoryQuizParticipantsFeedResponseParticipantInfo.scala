@@ -20,7 +20,6 @@ object StoryQuizParticipantsFeedResponseParticipantInfo {
     quiz_id: String
   ): StoryQuizParticipantsFeedResponseParticipantInfo = {
     val __obj = js.Dynamic.literal(max_id = max_id.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any], participants = participants.asInstanceOf[js.Any], quiz_id = quiz_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StoryQuizParticipantsFeedResponseParticipantInfo]
   }
 }

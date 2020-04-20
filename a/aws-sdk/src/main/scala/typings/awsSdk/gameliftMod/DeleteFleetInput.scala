@@ -16,7 +16,6 @@ object DeleteFleetInput {
   @scala.inline
   def apply(FleetId: FleetIdOrArn): DeleteFleetInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFleetInput]
   }
 }

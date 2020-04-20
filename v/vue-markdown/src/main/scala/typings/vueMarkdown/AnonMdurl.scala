@@ -13,7 +13,6 @@ object AnonMdurl {
   @scala.inline
   def apply(mdurl: AnonDecode, ucmicro: AnonAny): AnonMdurl = {
     val __obj = js.Dynamic.literal(mdurl = mdurl.asInstanceOf[js.Any], ucmicro = ucmicro.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMdurl]
   }
 }

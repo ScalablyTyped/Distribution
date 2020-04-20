@@ -52,48 +52,46 @@ trait WdSpecialPane extends js.Object
 
 object WdSpecialPane {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdPaneComments: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdPaneComments: `15` = this.cast(15)
+  def wdPaneCurrentPageFooter: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdPaneCurrentPageFooter: `17` = this.cast(17)
+  def wdPaneCurrentPageHeader: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdPaneCurrentPageHeader: `16` = this.cast(16)
+  def wdPaneEndnoteContinuationNotice: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdPaneEndnoteContinuationNotice: `12` = this.cast(12)
+  def wdPaneEndnoteContinuationSeparator: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdPaneEndnoteContinuationSeparator: `13` = this.cast(13)
+  def wdPaneEndnoteSeparator: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdPaneEndnoteSeparator: `14` = this.cast(14)
+  def wdPaneEndnotes: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdPaneEndnotes: `8` = this.cast(8)
+  def wdPaneEvenPagesFooter: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdPaneEvenPagesFooter: `6` = this.cast(6)
+  def wdPaneEvenPagesHeader: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdPaneEvenPagesHeader: `3` = this.cast(3)
+  def wdPaneFirstPageFooter: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdPaneFirstPageFooter: `5` = this.cast(5)
+  def wdPaneFirstPageHeader: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPaneFirstPageHeader: `2` = this.cast(2)
+  def wdPaneFootnoteContinuationNotice: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdPaneFootnoteContinuationNotice: `9` = this.cast(9)
+  def wdPaneFootnoteContinuationSeparator: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdPaneFootnoteContinuationSeparator: `10` = this.cast(10)
+  def wdPaneFootnoteSeparator: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdPaneFootnoteSeparator: `11` = this.cast(11)
+  def wdPaneFootnotes: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdPaneFootnotes: `7` = this.cast(7)
+  def wdPaneNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdPaneNone: `0` = this.cast(0)
+  def wdPanePrimaryFooter: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdPanePrimaryFooter: `4` = this.cast(4)
+  def wdPanePrimaryHeader: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdPanePrimaryHeader: `1` = this.cast(1)
+  def wdPaneRevisions: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdPaneRevisions: `18` = this.cast(18)
+  def wdPaneRevisionsHoriz: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdPaneRevisionsHoriz: `19` = this.cast(19)
-  @scala.inline
-  def wdPaneRevisionsVert: `20` = this.cast(20)
+  def wdPaneRevisionsVert: `20` = 20.asInstanceOf[`20`]
 }
 

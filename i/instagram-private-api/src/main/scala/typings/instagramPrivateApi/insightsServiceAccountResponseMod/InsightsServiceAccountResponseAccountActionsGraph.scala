@@ -12,7 +12,6 @@ object InsightsServiceAccountResponseAccountActionsGraph {
   @scala.inline
   def apply(total_count_graph: InsightsServiceAccountResponseTotalCountGraph): InsightsServiceAccountResponseAccountActionsGraph = {
     val __obj = js.Dynamic.literal(total_count_graph = total_count_graph.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponseAccountActionsGraph]
   }
 }

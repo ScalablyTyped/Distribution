@@ -12,7 +12,6 @@ object SetupMethod {
   @scala.inline
   def apply(setup: (Application[_], String) => Unit): SetupMethod = {
     val __obj = js.Dynamic.literal(setup = js.Any.fromFunction2(setup))
-  
     __obj.asInstanceOf[SetupMethod]
   }
 }

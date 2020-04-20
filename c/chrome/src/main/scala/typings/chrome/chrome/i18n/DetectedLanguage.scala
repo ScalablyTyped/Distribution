@@ -17,7 +17,6 @@ object DetectedLanguage {
   @scala.inline
   def apply(language: String, percentage: Double): DetectedLanguage = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectedLanguage]
   }
 }

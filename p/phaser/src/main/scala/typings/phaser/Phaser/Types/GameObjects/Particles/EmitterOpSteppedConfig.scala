@@ -26,7 +26,6 @@ object EmitterOpSteppedConfig {
   @scala.inline
   def apply(end: Double, start: Double, steps: Double): EmitterOpSteppedConfig = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EmitterOpSteppedConfig]
   }
 }

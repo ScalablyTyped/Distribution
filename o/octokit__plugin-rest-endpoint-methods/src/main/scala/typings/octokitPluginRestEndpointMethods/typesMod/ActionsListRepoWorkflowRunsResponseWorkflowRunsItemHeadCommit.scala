@@ -24,7 +24,6 @@ object ActionsListRepoWorkflowRunsResponseWorkflowRunsItemHeadCommit {
     tree_id: String
   ): ActionsListRepoWorkflowRunsResponseWorkflowRunsItemHeadCommit = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], tree_id = tree_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionsListRepoWorkflowRunsResponseWorkflowRunsItemHeadCommit]
   }
 }

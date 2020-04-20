@@ -13,7 +13,6 @@ object AnonItem {
   @scala.inline
   def apply[UserType /* <: js.Object */, ListNames /* <: String */](item: UserType, list: ListNames): AnonItem[UserType, ListNames] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItem[UserType, ListNames]]
   }
 }

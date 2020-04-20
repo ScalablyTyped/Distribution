@@ -26,7 +26,6 @@ object RangeElement {
     isPartial: () => Boolean
   ): RangeElement = {
     val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction0(getElement), getEndOffsetInclusive = js.Any.fromFunction0(getEndOffsetInclusive), getStartOffset = js.Any.fromFunction0(getStartOffset), isPartial = js.Any.fromFunction0(isPartial))
-  
     __obj.asInstanceOf[RangeElement]
   }
 }

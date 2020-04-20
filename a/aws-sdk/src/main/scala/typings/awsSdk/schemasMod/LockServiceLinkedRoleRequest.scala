@@ -14,7 +14,6 @@ object LockServiceLinkedRoleRequest {
   @scala.inline
   def apply(RoleArn: stringMin1Max1600, Timeout: integerMin1Max29000): LockServiceLinkedRoleRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], Timeout = Timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LockServiceLinkedRoleRequest]
   }
 }

@@ -13,7 +13,6 @@ object AnonGenericsearchterm {
   @scala.inline
   def apply(generic_search_term: String): AnonGenericsearchterm = {
     val __obj = js.Dynamic.literal(generic_search_term = generic_search_term.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGenericsearchterm]
   }
 }

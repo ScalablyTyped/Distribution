@@ -28,7 +28,6 @@ object XQUERY_COMMENT {
   @scala.inline
   def apply(begin: String, className: String, end: String): XQUERY_COMMENT = {
     val __obj = js.Dynamic.literal(begin = begin.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XQUERY_COMMENT]
   }
 }

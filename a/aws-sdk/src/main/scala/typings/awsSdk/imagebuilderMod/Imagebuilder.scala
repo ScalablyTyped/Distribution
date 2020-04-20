@@ -456,12 +456,12 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    *  Applies a policy to a component. 
+    *  Applies a policy to a component. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutComponentPolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared. 
     */
   def putComponentPolicy(): Request[PutComponentPolicyResponse, AWSError] = js.native
   def putComponentPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutComponentPolicyResponse, Unit]): Request[PutComponentPolicyResponse, AWSError] = js.native
   /**
-    *  Applies a policy to a component. 
+    *  Applies a policy to a component. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutComponentPolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared. 
     */
   def putComponentPolicy(params: PutComponentPolicyRequest): Request[PutComponentPolicyResponse, AWSError] = js.native
   def putComponentPolicy(
@@ -469,12 +469,12 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutComponentPolicyResponse, Unit]
   ): Request[PutComponentPolicyResponse, AWSError] = js.native
   /**
-    *  Applies a policy to an image. 
+    * Applies a policy to an image. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImagePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared. 
     */
   def putImagePolicy(): Request[PutImagePolicyResponse, AWSError] = js.native
   def putImagePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutImagePolicyResponse, Unit]): Request[PutImagePolicyResponse, AWSError] = js.native
   /**
-    *  Applies a policy to an image. 
+    * Applies a policy to an image. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImagePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared. 
     */
   def putImagePolicy(params: PutImagePolicyRequest): Request[PutImagePolicyResponse, AWSError] = js.native
   def putImagePolicy(
@@ -482,12 +482,12 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutImagePolicyResponse, Unit]
   ): Request[PutImagePolicyResponse, AWSError] = js.native
   /**
-    *  Applies a policy to an image recipe. 
+    *  Applies a policy to an image recipe. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImageRecipePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared. 
     */
   def putImageRecipePolicy(): Request[PutImageRecipePolicyResponse, AWSError] = js.native
   def putImageRecipePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutImageRecipePolicyResponse, Unit]): Request[PutImageRecipePolicyResponse, AWSError] = js.native
   /**
-    *  Applies a policy to an image recipe. 
+    *  Applies a policy to an image recipe. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImageRecipePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared. 
     */
   def putImageRecipePolicy(params: PutImageRecipePolicyRequest): Request[PutImageRecipePolicyResponse, AWSError] = js.native
   def putImageRecipePolicy(

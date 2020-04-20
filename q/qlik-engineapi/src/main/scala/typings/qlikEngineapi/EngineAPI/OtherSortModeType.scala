@@ -13,12 +13,10 @@ trait OtherSortModeType extends js.Object
 
 object OtherSortModeType {
   @scala.inline
-  def OTHER_SORT_ASCENDING: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_SORT_ASCENDING = this.cast("OTHER_SORT_ASCENDING")
+  def OTHER_SORT_ASCENDING: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_SORT_ASCENDING = "OTHER_SORT_ASCENDING".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_SORT_ASCENDING]
   @scala.inline
-  def OTHER_SORT_DEFAULT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_SORT_DEFAULT = this.cast("OTHER_SORT_DEFAULT")
+  def OTHER_SORT_DEFAULT: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_SORT_DEFAULT = "OTHER_SORT_DEFAULT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_SORT_DEFAULT]
   @scala.inline
-  def OTHER_SORT_DESCENDING: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_SORT_DESCENDING = this.cast("OTHER_SORT_DESCENDING")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OTHER_SORT_DESCENDING: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_SORT_DESCENDING = "OTHER_SORT_DESCENDING".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_SORT_DESCENDING]
 }
 

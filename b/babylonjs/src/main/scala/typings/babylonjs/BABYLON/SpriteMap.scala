@@ -99,7 +99,7 @@ class SpriteMap protected () extends ISpriteMap {
   def addAnimationToTile(cellID: Double, _frame: Double, toCell: Double, time: Double): Unit = js.native
   def addAnimationToTile(cellID: Double, _frame: Double, toCell: Double, time: Double, speed: Double): Unit = js.native
   /** Sets the AnimationMap*/
-  def animationMap(): RawTexture = js.native
+  def animationMap: RawTexture = js.native
   /** Sets the AnimationMap*/
   def animationMap(v: RawTexture): js.Any = js.native
   def changeTiles(_layer: js.UndefOr[scala.Nothing], pos: js.Array[Vector2]): Unit = js.native
@@ -137,11 +137,11 @@ class SpriteMap protected () extends ISpriteMap {
     */
   def loadTileMaps(url: String): Unit = js.native
   /** Returns the Position of Output Plane*/
-  def position(): Vector3 = js.native
+  def position: Vector3 = js.native
   /** Returns the Position of Output Plane*/
   def position(v: Vector3): js.Any = js.native
   /** Returns the Rotation of Output Plane*/
-  def rotation(): Vector3 = js.native
+  def rotation: Vector3 = js.native
   /** Returns the Rotation of Output Plane*/
   def rotation(v: Vector3): js.Any = js.native
   /**
@@ -149,6 +149,6 @@ class SpriteMap protected () extends ISpriteMap {
     */
   def saveTileMaps(): Unit = js.native
   /** Returns the Number of Sprites in the System */
-  def spriteCount(): Double = js.native
+  def spriteCount: Double = js.native
 }
 

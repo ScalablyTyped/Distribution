@@ -135,9 +135,9 @@ object semanticUiSidebarStrings {
   sealed trait verbose extends js.Object
   
   @scala.inline
-  def `add body CSS`: `add body CSS` = "add body CSS".asInstanceOf[`add body CSS`]
+  def `add body CSS`: `add body CSS` = ("add body CSS").asInstanceOf[`add body CSS`]
   @scala.inline
-  def `attach events`: `attach events` = "attach events".asInstanceOf[`attach events`]
+  def `attach events`: `attach events` = ("attach events").asInstanceOf[`attach events`]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
@@ -165,15 +165,15 @@ object semanticUiSidebarStrings {
   @scala.inline
   def exclusive: exclusive = "exclusive".asInstanceOf[exclusive]
   @scala.inline
-  def `get direction`: `get direction` = "get direction".asInstanceOf[`get direction`]
+  def `get direction`: `get direction` = ("get direction").asInstanceOf[`get direction`]
   @scala.inline
-  def `get transition event`: `get transition event` = "get transition event".asInstanceOf[`get transition event`]
+  def `get transition event`: `get transition event` = ("get transition event").asInstanceOf[`get transition event`]
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
-  def `is hidden`: `is hidden` = "is hidden".asInstanceOf[`is hidden`]
+  def `is hidden`: `is hidden` = ("is hidden").asInstanceOf[`is hidden`]
   @scala.inline
-  def `is visible`: `is visible` = "is visible".asInstanceOf[`is visible`]
+  def `is visible`: `is visible` = ("is visible").asInstanceOf[`is visible`]
   @scala.inline
   def mobileTransition: mobileTransition = "mobileTransition".asInstanceOf[mobileTransition]
   @scala.inline
@@ -193,13 +193,13 @@ object semanticUiSidebarStrings {
   @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
   @scala.inline
-  def `pull page`: `pull page` = "pull page".asInstanceOf[`pull page`]
+  def `pull page`: `pull page` = ("pull page").asInstanceOf[`pull page`]
   @scala.inline
-  def `push page`: `push page` = "push page".asInstanceOf[`push page`]
+  def `push page`: `push page` = ("push page").asInstanceOf[`push page`]
   @scala.inline
   def regExp: regExp = "regExp".asInstanceOf[regExp]
   @scala.inline
-  def `remove body CSS`: `remove body CSS` = "remove body CSS".asInstanceOf[`remove body CSS`]
+  def `remove body CSS`: `remove body CSS` = ("remove body CSS").asInstanceOf[`remove body CSS`]
   @scala.inline
   def returnScroll: returnScroll = "returnScroll".asInstanceOf[returnScroll]
   @scala.inline

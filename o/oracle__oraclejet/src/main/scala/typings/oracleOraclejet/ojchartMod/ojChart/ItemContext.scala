@@ -15,7 +15,6 @@ object ItemContext {
   @scala.inline
   def apply(itemIndex: Double, seriesIndex: Double, subId: String): ItemContext = {
     val __obj = js.Dynamic.literal(itemIndex = itemIndex.asInstanceOf[js.Any], seriesIndex = seriesIndex.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ItemContext]
   }
 }

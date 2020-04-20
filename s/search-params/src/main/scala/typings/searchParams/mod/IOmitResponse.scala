@@ -13,7 +13,6 @@ object IOmitResponse {
   @scala.inline
   def apply(querystring: String, removedParams: js.Object): IOmitResponse = {
     val __obj = js.Dynamic.literal(querystring = querystring.asInstanceOf[js.Any], removedParams = removedParams.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOmitResponse]
   }
 }

@@ -14,7 +14,6 @@ object AnonVersion {
   @scala.inline
   def apply(version: `4` | `5`): AnonVersion = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVersion]
   }
 }

@@ -24,7 +24,6 @@ object IStreamResult {
   @scala.inline
   def apply(name: StreamType, output_type: stream, text: MultilineString): IStreamResult = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStreamResult]
   }
 }

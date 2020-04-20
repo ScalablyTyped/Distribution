@@ -37,60 +37,58 @@ trait InteractionEventTypes extends js.Object
 
 object InteractionEventTypes {
   @scala.inline
-  def added: typings.pixiJs.pixiJsStrings.added = this.cast("added")
+  def added: typings.pixiJs.pixiJsStrings.added = "added".asInstanceOf[typings.pixiJs.pixiJsStrings.added]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.pixiJs.pixiJsStrings.click = "click".asInstanceOf[typings.pixiJs.pixiJsStrings.click]
   @scala.inline
-  def click: typings.pixiJs.pixiJsStrings.click = this.cast("click")
+  def mousedown: typings.pixiJs.pixiJsStrings.mousedown = "mousedown".asInstanceOf[typings.pixiJs.pixiJsStrings.mousedown]
   @scala.inline
-  def mousedown: typings.pixiJs.pixiJsStrings.mousedown = this.cast("mousedown")
+  def mousemove: typings.pixiJs.pixiJsStrings.mousemove = "mousemove".asInstanceOf[typings.pixiJs.pixiJsStrings.mousemove]
   @scala.inline
-  def mousemove: typings.pixiJs.pixiJsStrings.mousemove = this.cast("mousemove")
+  def mouseout: typings.pixiJs.pixiJsStrings.mouseout = "mouseout".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseout]
   @scala.inline
-  def mouseout: typings.pixiJs.pixiJsStrings.mouseout = this.cast("mouseout")
+  def mouseover: typings.pixiJs.pixiJsStrings.mouseover = "mouseover".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseover]
   @scala.inline
-  def mouseover: typings.pixiJs.pixiJsStrings.mouseover = this.cast("mouseover")
+  def mouseup: typings.pixiJs.pixiJsStrings.mouseup = "mouseup".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseup]
   @scala.inline
-  def mouseup: typings.pixiJs.pixiJsStrings.mouseup = this.cast("mouseup")
+  def mouseupoutside: typings.pixiJs.pixiJsStrings.mouseupoutside = "mouseupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseupoutside]
   @scala.inline
-  def mouseupoutside: typings.pixiJs.pixiJsStrings.mouseupoutside = this.cast("mouseupoutside")
+  def pointercancel: typings.pixiJs.pixiJsStrings.pointercancel = "pointercancel".asInstanceOf[typings.pixiJs.pixiJsStrings.pointercancel]
   @scala.inline
-  def pointercancel: typings.pixiJs.pixiJsStrings.pointercancel = this.cast("pointercancel")
+  def pointerdown: typings.pixiJs.pixiJsStrings.pointerdown = "pointerdown".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerdown]
   @scala.inline
-  def pointerdown: typings.pixiJs.pixiJsStrings.pointerdown = this.cast("pointerdown")
+  def pointermove: typings.pixiJs.pixiJsStrings.pointermove = "pointermove".asInstanceOf[typings.pixiJs.pixiJsStrings.pointermove]
   @scala.inline
-  def pointermove: typings.pixiJs.pixiJsStrings.pointermove = this.cast("pointermove")
+  def pointerout: typings.pixiJs.pixiJsStrings.pointerout = "pointerout".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerout]
   @scala.inline
-  def pointerout: typings.pixiJs.pixiJsStrings.pointerout = this.cast("pointerout")
+  def pointerover: typings.pixiJs.pixiJsStrings.pointerover = "pointerover".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerover]
   @scala.inline
-  def pointerover: typings.pixiJs.pixiJsStrings.pointerover = this.cast("pointerover")
+  def pointertap: typings.pixiJs.pixiJsStrings.pointertap = "pointertap".asInstanceOf[typings.pixiJs.pixiJsStrings.pointertap]
   @scala.inline
-  def pointertap: typings.pixiJs.pixiJsStrings.pointertap = this.cast("pointertap")
+  def pointerup: typings.pixiJs.pixiJsStrings.pointerup = "pointerup".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerup]
   @scala.inline
-  def pointerup: typings.pixiJs.pixiJsStrings.pointerup = this.cast("pointerup")
+  def pointerupoutside: typings.pixiJs.pixiJsStrings.pointerupoutside = "pointerupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerupoutside]
   @scala.inline
-  def pointerupoutside: typings.pixiJs.pixiJsStrings.pointerupoutside = this.cast("pointerupoutside")
+  def removed: typings.pixiJs.pixiJsStrings.removed = "removed".asInstanceOf[typings.pixiJs.pixiJsStrings.removed]
   @scala.inline
-  def removed: typings.pixiJs.pixiJsStrings.removed = this.cast("removed")
+  def rightclick: typings.pixiJs.pixiJsStrings.rightclick = "rightclick".asInstanceOf[typings.pixiJs.pixiJsStrings.rightclick]
   @scala.inline
-  def rightclick: typings.pixiJs.pixiJsStrings.rightclick = this.cast("rightclick")
+  def rightdown: typings.pixiJs.pixiJsStrings.rightdown = "rightdown".asInstanceOf[typings.pixiJs.pixiJsStrings.rightdown]
   @scala.inline
-  def rightdown: typings.pixiJs.pixiJsStrings.rightdown = this.cast("rightdown")
+  def rightup: typings.pixiJs.pixiJsStrings.rightup = "rightup".asInstanceOf[typings.pixiJs.pixiJsStrings.rightup]
   @scala.inline
-  def rightup: typings.pixiJs.pixiJsStrings.rightup = this.cast("rightup")
+  def rightupoutside: typings.pixiJs.pixiJsStrings.rightupoutside = "rightupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.rightupoutside]
   @scala.inline
-  def rightupoutside: typings.pixiJs.pixiJsStrings.rightupoutside = this.cast("rightupoutside")
+  def tap: typings.pixiJs.pixiJsStrings.tap = "tap".asInstanceOf[typings.pixiJs.pixiJsStrings.tap]
   @scala.inline
-  def tap: typings.pixiJs.pixiJsStrings.tap = this.cast("tap")
+  def touchcancel: typings.pixiJs.pixiJsStrings.touchcancel = "touchcancel".asInstanceOf[typings.pixiJs.pixiJsStrings.touchcancel]
   @scala.inline
-  def touchcancel: typings.pixiJs.pixiJsStrings.touchcancel = this.cast("touchcancel")
+  def touchend: typings.pixiJs.pixiJsStrings.touchend = "touchend".asInstanceOf[typings.pixiJs.pixiJsStrings.touchend]
   @scala.inline
-  def touchend: typings.pixiJs.pixiJsStrings.touchend = this.cast("touchend")
+  def touchendoutside: typings.pixiJs.pixiJsStrings.touchendoutside = "touchendoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.touchendoutside]
   @scala.inline
-  def touchendoutside: typings.pixiJs.pixiJsStrings.touchendoutside = this.cast("touchendoutside")
+  def touchmove: typings.pixiJs.pixiJsStrings.touchmove = "touchmove".asInstanceOf[typings.pixiJs.pixiJsStrings.touchmove]
   @scala.inline
-  def touchmove: typings.pixiJs.pixiJsStrings.touchmove = this.cast("touchmove")
-  @scala.inline
-  def touchstart: typings.pixiJs.pixiJsStrings.touchstart = this.cast("touchstart")
+  def touchstart: typings.pixiJs.pixiJsStrings.touchstart = "touchstart".asInstanceOf[typings.pixiJs.pixiJsStrings.touchstart]
 }
 

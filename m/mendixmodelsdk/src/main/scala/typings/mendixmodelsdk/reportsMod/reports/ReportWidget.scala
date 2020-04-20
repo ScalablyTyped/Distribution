@@ -32,13 +32,13 @@ abstract class ReportWidget protected () extends Widget {
   var model_FReportWidget: IModel = js.native
   def dataSet(): js.Any = js.native
   def dataSet(newValue: IDataSet): js.Any = js.native
-  def dataSetQualifiedName(): String | Null = js.native
+  def dataSetQualifiedName: String | Null = js.native
   @JSName("dataSet")
-  def dataSet_Union(): IDataSet | Null = js.native
+  def dataSet_Union: IDataSet | Null = js.native
   /**
     * In version 6.10.0: introduced
     */
-  def generateOnLoad(): Boolean = js.native
+  def generateOnLoad: Boolean = js.native
   def generateOnLoad(newValue: Boolean): js.Any = js.native
 }
 

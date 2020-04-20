@@ -14,7 +14,6 @@ object AnonAllHistory {
   @scala.inline
   def apply(allHistory: Boolean, urls: js.Array[String]): AnonAllHistory = {
     val __obj = js.Dynamic.literal(allHistory = allHistory.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllHistory]
   }
 }

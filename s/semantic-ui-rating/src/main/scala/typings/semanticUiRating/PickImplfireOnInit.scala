@@ -13,7 +13,6 @@ object PickImplfireOnInit {
   @scala.inline
   def apply(fireOnInit: Boolean): PickImplfireOnInit = {
     val __obj = js.Dynamic.literal(fireOnInit = fireOnInit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplfireOnInit]
   }
 }

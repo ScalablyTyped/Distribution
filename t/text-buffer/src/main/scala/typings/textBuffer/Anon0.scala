@@ -15,7 +15,6 @@ object Anon0 {
   @scala.inline
   def apply(clipDirection: backward | forward | closest): Anon0 = {
     val __obj = js.Dynamic.literal(clipDirection = clipDirection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon0]
   }
 }

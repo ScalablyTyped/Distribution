@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetImageRecipeResponse extends js.Object {
   /**
-    *  The image recipe object. 
+    * The image recipe object. 
     */
   var imageRecipe: js.UndefOr[ImageRecipe] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

@@ -17,7 +17,6 @@ object IPersonType {
   @scala.inline
   def apply(Legal: LEGAL, Natural: NATURAL, NotSpecified: NotSpecified): IPersonType = {
     val __obj = js.Dynamic.literal(Legal = Legal.asInstanceOf[js.Any], Natural = Natural.asInstanceOf[js.Any], NotSpecified = NotSpecified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPersonType]
   }
 }

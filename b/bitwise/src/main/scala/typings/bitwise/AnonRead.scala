@@ -18,7 +18,6 @@ object AnonRead {
     write: js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit] => UInt8
   ): AnonRead = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[AnonRead]
   }
 }

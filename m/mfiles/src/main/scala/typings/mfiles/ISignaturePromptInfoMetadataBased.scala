@@ -22,7 +22,6 @@ object ISignaturePromptInfoMetadataBased {
     ReasonPropertyID: Double
   ): ISignaturePromptInfoMetadataBased = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), IsReferencedBySignatureObject = IsReferencedBySignatureObject.asInstanceOf[js.Any], MeaningPropertyID = MeaningPropertyID.asInstanceOf[js.Any], PromptInfoLookupPropertyID = PromptInfoLookupPropertyID.asInstanceOf[js.Any], ReasonPropertyID = ReasonPropertyID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISignaturePromptInfoMetadataBased]
   }
 }

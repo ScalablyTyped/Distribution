@@ -16,12 +16,10 @@ trait LineCap extends js.Object
 
 object LineCap {
   @scala.inline
-  def butt: typings.heremaps.heremapsStrings.butt = this.cast("butt")
+  def butt: typings.heremaps.heremapsStrings.butt = "butt".asInstanceOf[typings.heremaps.heremapsStrings.butt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def round: typings.heremaps.heremapsStrings.round = "round".asInstanceOf[typings.heremaps.heremapsStrings.round]
   @scala.inline
-  def round: typings.heremaps.heremapsStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.heremaps.heremapsStrings.square = this.cast("square")
+  def square: typings.heremaps.heremapsStrings.square = "square".asInstanceOf[typings.heremaps.heremapsStrings.square]
 }
 

@@ -12,7 +12,6 @@ object opensshStreamLocalForwardGlobalRequest {
   @scala.inline
   def apply(socketPath: String): opensshStreamLocalForwardGlobalRequest = {
     val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[opensshStreamLocalForwardGlobalRequest]
   }
 }

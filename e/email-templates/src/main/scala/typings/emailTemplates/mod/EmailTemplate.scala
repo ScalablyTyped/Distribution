@@ -31,6 +31,6 @@ trait EmailTemplate[T] extends js.Object {
   /**
     * Send the Email
     */
-  def send(options: EmailOptions[T]): js.Any = js.native
+  def send(options: EmailOptions[T]): js.Promise[_] = js.native
 }
 

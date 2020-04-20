@@ -22,7 +22,6 @@ object Scene {
   @scala.inline
   def apply(_debugLayer: DebugLayer, debugLayer: DebugLayer): Scene = {
     val __obj = js.Dynamic.literal(_debugLayer = _debugLayer.asInstanceOf[js.Any], debugLayer = debugLayer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scene]
   }
 }

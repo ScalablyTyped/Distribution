@@ -30,7 +30,6 @@ object IConfigSection {
   @scala.inline
   def apply(data: JSONObject, serverSettings: ISettings, update: JSONObject => js.Promise[JSONObject]): IConfigSection = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[IConfigSection]
   }
 }

@@ -15,7 +15,6 @@ object AnonValue {
   @scala.inline
   def apply(node: HTMLInputElement, value: String | Double | Boolean | (js.Array[String | Double | Boolean])): AnonValue = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValue]
   }
 }

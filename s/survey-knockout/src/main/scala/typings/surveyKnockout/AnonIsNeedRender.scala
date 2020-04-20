@@ -12,7 +12,6 @@ object AnonIsNeedRender {
   @scala.inline
   def apply(isNeedRender: Boolean): AnonIsNeedRender = {
     val __obj = js.Dynamic.literal(isNeedRender = isNeedRender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsNeedRender]
   }
 }

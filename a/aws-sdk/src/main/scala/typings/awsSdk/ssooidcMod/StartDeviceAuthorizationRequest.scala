@@ -24,7 +24,6 @@ object StartDeviceAuthorizationRequest {
   @scala.inline
   def apply(clientId: ClientId, clientSecret: ClientSecret, startUrl: URI): StartDeviceAuthorizationRequest = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], startUrl = startUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartDeviceAuthorizationRequest]
   }
 }

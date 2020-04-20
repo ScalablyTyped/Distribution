@@ -20,7 +20,6 @@ object ComponentWillUpdate {
   @scala.inline
   def apply(componentWillUpdate: () => js.Promise[Unit] | Unit): ComponentWillUpdate = {
     val __obj = js.Dynamic.literal(componentWillUpdate = js.Any.fromFunction0(componentWillUpdate))
-  
     __obj.asInstanceOf[ComponentWillUpdate]
   }
 }

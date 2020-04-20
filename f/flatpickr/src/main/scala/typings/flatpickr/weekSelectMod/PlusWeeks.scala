@@ -14,7 +14,6 @@ object PlusWeeks {
   @scala.inline
   def apply(weekEndDay: Date, weekStartDay: Date): PlusWeeks = {
     val __obj = js.Dynamic.literal(weekEndDay = weekEndDay.asInstanceOf[js.Any], weekStartDay = weekStartDay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlusWeeks]
   }
 }

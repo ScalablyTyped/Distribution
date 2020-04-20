@@ -25,7 +25,6 @@ object Core {
     getLogger: String => js.Promise[Logger]
   ): Core = {
     val __obj = js.Dynamic.literal(bindChannel = js.Any.fromFunction1(bindChannel), createChannel = js.Any.fromFunction0(createChannel), getId = js.Any.fromFunction0(getId), getLogger = js.Any.fromFunction1(getLogger))
-  
     __obj.asInstanceOf[Core]
   }
 }

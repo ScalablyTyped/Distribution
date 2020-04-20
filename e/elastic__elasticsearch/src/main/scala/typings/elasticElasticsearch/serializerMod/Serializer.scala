@@ -20,7 +20,6 @@ object Serializer {
     serialize: js.Any => String
   ): Serializer = {
     val __obj = js.Dynamic.literal(deserialize = js.Any.fromFunction1(deserialize), ndserialize = js.Any.fromFunction1(ndserialize), qserialize = js.Any.fromFunction1(qserialize), serialize = js.Any.fromFunction1(serialize))
-  
     __obj.asInstanceOf[Serializer]
   }
 }

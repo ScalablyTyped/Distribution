@@ -24,7 +24,6 @@ object GetUtterancesViewRequest {
   @scala.inline
   def apply(botName: BotName, botVersions: BotVersions, statusType: StatusType): GetUtterancesViewRequest = {
     val __obj = js.Dynamic.literal(botName = botName.asInstanceOf[js.Any], botVersions = botVersions.asInstanceOf[js.Any], statusType = statusType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUtterancesViewRequest]
   }
 }

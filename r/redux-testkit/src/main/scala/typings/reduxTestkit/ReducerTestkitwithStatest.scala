@@ -21,7 +21,6 @@ object ReducerTestkitwithStatest {
     withState: js.Any => ReducerTestkit
   ): ReducerTestkitwithStatest = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), expect = js.Any.fromFunction1(expect), withState = js.Any.fromFunction1(withState))
-  
     __obj.asInstanceOf[ReducerTestkitwithStatest]
   }
 }

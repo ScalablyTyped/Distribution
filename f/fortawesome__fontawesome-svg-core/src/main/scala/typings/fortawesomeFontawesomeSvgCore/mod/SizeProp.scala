@@ -23,32 +23,30 @@ trait SizeProp extends js.Object
 
 object SizeProp {
   @scala.inline
-  def `10x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`10x` = this.cast("10x")
+  def `10x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`10x` = "10x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`10x`]
   @scala.inline
-  def `1x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`1x` = this.cast("1x")
+  def `1x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`1x` = "1x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`1x`]
   @scala.inline
-  def `2x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x` = this.cast("2x")
+  def `2x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x` = "2x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x`]
   @scala.inline
-  def `3x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x` = this.cast("3x")
+  def `3x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x` = "3x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x`]
   @scala.inline
-  def `4x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`4x` = this.cast("4x")
+  def `4x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`4x` = "4x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`4x`]
   @scala.inline
-  def `5x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`5x` = this.cast("5x")
+  def `5x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`5x` = "5x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`5x`]
   @scala.inline
-  def `6x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`6x` = this.cast("6x")
+  def `6x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`6x` = "6x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`6x`]
   @scala.inline
-  def `7x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`7x` = this.cast("7x")
+  def `7x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`7x` = "7x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`7x`]
   @scala.inline
-  def `8x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`8x` = this.cast("8x")
+  def `8x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`8x` = "8x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`8x`]
   @scala.inline
-  def `9x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`9x` = this.cast("9x")
+  def `9x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`9x` = "9x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`9x`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lg: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg = "lg".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg]
   @scala.inline
-  def lg: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg = this.cast("lg")
+  def sm: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm = "sm".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm]
   @scala.inline
-  def sm: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm = this.cast("sm")
-  @scala.inline
-  def xs: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs = this.cast("xs")
+  def xs: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs = "xs".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs]
 }
 

@@ -13,7 +13,6 @@ object Closest {
   @scala.inline
   def apply(mdist: Double, mpos: Double): Closest = {
     val __obj = js.Dynamic.literal(mdist = mdist.asInstanceOf[js.Any], mpos = mpos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Closest]
   }
 }

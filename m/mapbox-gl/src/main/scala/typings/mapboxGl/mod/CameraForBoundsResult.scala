@@ -17,7 +17,6 @@ object CameraForBoundsResult {
   @scala.inline
   def apply(bearing: Double, center: AnonLat, zoom: Double): CameraForBoundsResult = {
     val __obj = js.Dynamic.literal(bearing = bearing.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CameraForBoundsResult]
   }
 }

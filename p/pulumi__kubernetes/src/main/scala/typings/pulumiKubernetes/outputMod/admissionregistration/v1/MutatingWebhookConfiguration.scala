@@ -45,7 +45,6 @@ object MutatingWebhookConfiguration {
     webhooks: js.Array[MutatingWebhook]
   ): MutatingWebhookConfiguration = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], webhooks = webhooks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MutatingWebhookConfiguration]
   }
 }

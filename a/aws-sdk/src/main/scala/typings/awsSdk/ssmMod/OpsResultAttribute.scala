@@ -16,7 +16,6 @@ object OpsResultAttribute {
   @scala.inline
   def apply(TypeName: OpsDataTypeName): OpsResultAttribute = {
     val __obj = js.Dynamic.literal(TypeName = TypeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpsResultAttribute]
   }
 }

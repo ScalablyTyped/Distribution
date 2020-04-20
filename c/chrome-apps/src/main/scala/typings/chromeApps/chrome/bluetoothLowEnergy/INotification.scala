@@ -16,7 +16,6 @@ object INotification {
   @scala.inline
   def apply(shouldIndicate: Boolean, value: ArrayBuffer): INotification = {
     val __obj = js.Dynamic.literal(shouldIndicate = shouldIndicate.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INotification]
   }
 }

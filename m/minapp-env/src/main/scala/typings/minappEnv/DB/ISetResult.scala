@@ -15,7 +15,6 @@ object ISetResult {
   @scala.inline
   def apply(_id: DocumentId, errMsg: String, stats: AnonCreated): ISetResult = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISetResult]
   }
 }

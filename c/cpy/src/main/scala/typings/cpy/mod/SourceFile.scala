@@ -36,7 +36,6 @@ object SourceFile {
   @scala.inline
   def apply(extension: String, name: String, nameWithoutExtension: String, path: String, relativePath: String): SourceFile = {
     val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameWithoutExtension = nameWithoutExtension.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], relativePath = relativePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceFile]
   }
 }

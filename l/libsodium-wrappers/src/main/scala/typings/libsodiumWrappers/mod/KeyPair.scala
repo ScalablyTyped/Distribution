@@ -15,7 +15,6 @@ object KeyPair {
   @scala.inline
   def apply(keyType: KeyType, privateKey: Uint8Array, publicKey: Uint8Array): KeyPair = {
     val __obj = js.Dynamic.literal(keyType = keyType.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyPair]
   }
 }

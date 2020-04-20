@@ -13,7 +13,6 @@ object Anon0 {
   @scala.inline
   def apply(Target: PivotTable): Anon0 = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon0]
   }
 }

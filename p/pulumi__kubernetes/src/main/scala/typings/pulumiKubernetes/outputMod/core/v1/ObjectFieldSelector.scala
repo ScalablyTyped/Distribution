@@ -22,7 +22,6 @@ object ObjectFieldSelector {
   @scala.inline
   def apply(apiVersion: String, fieldPath: String): ObjectFieldSelector = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], fieldPath = fieldPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectFieldSelector]
   }
 }

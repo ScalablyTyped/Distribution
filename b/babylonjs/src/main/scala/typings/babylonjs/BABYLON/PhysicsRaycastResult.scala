@@ -20,27 +20,27 @@ class PhysicsRaycastResult () extends js.Object {
   /**
     * Gets if there was a hit
     */
-  def hasHit(): Boolean = js.native
+  def hasHit: Boolean = js.native
   /**
     * Gets the distance from the hit
     */
-  def hitDistance(): Double = js.native
+  def hitDistance: Double = js.native
   /**
     * Gets the hit normal/direction in the world
     */
-  def hitNormalWorld(): Vector3 = js.native
+  def hitNormalWorld: Vector3 = js.native
   /**
     * Gets the hit point in the world
     */
-  def hitPointWorld(): Vector3 = js.native
+  def hitPointWorld: Vector3 = js.native
   /**
     * Gets the ray "start point" of the ray in the world
     */
-  def rayFromWorld(): Vector3 = js.native
+  def rayFromWorld: Vector3 = js.native
   /**
     * Gets the ray "end point" of the ray in the world
     */
-  def rayToWorld(): Vector3 = js.native
+  def rayToWorld: Vector3 = js.native
   /**
     * Resets all the values to default
     * @param from The from point on world space

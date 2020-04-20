@@ -23,7 +23,6 @@ object IRenderingManagerAutoClearSetup {
   @scala.inline
   def apply(autoClear: Boolean, depth: Boolean, stencil: Boolean): IRenderingManagerAutoClearSetup = {
     val __obj = js.Dynamic.literal(autoClear = autoClear.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], stencil = stencil.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRenderingManagerAutoClearSetup]
   }
 }

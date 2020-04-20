@@ -12,10 +12,8 @@ trait CarouselScrollModeProp extends js.Object
 
 object CarouselScrollModeProp {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def page: typings.nukaCarousel.nukaCarouselStrings.page = "page".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.page]
   @scala.inline
-  def page: typings.nukaCarousel.nukaCarouselStrings.page = this.cast("page")
-  @scala.inline
-  def remainder: typings.nukaCarousel.nukaCarouselStrings.remainder = this.cast("remainder")
+  def remainder: typings.nukaCarousel.nukaCarouselStrings.remainder = "remainder".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.remainder]
 }
 

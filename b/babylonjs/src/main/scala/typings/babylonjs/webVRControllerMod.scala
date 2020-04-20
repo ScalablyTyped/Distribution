@@ -70,7 +70,7 @@ object webVRControllerMod extends js.Object {
     /**
       * The default controller model for the controller
       */
-    def defaultModel(): Nullable[AbstractMesh] = js.native
+    def defaultModel: Nullable[AbstractMesh] = js.native
     /**
       * Loads a mesh and attaches it to the controller
       * @param scene the scene the mesh should be added to

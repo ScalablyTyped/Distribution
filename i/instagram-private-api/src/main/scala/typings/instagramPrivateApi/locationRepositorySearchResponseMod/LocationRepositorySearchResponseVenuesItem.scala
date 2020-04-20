@@ -26,7 +26,6 @@ object LocationRepositorySearchResponseVenuesItem {
     name: String
   ): LocationRepositorySearchResponseVenuesItem = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], external_id = external_id.asInstanceOf[js.Any], external_id_source = external_id_source.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any], minimum_age = minimum_age.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocationRepositorySearchResponseVenuesItem]
   }
 }

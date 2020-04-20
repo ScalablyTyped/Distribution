@@ -15,7 +15,6 @@ object GlobalHotkeyEvent {
   @scala.inline
   def apply[Type](hotkey: String, identity: Identity): GlobalHotkeyEvent[Type] = {
     val __obj = js.Dynamic.literal(hotkey = hotkey.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlobalHotkeyEvent[Type]]
   }
 }

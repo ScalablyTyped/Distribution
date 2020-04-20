@@ -14,7 +14,6 @@ object UnitPattern {
   @scala.inline
   def apply(long: SignDisplayPattern, narrow: SignDisplayPattern, short: SignDisplayPattern): UnitPattern = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnitPattern]
   }
 }

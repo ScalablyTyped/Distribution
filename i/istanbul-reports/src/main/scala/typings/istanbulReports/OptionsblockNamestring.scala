@@ -14,7 +14,6 @@ object OptionsblockNamestring {
   @scala.inline
   def apply(blockName: String, file: String): OptionsblockNamestring = {
     val __obj = js.Dynamic.literal(blockName = blockName.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OptionsblockNamestring]
   }
 }

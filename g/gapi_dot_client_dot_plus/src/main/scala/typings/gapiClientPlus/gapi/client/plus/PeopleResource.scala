@@ -29,7 +29,6 @@ object PeopleResource {
     search: AnonLanguage => Request_[PeopleFeed]
   ): PeopleResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listByActivity = js.Any.fromFunction1(listByActivity), search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[PeopleResource]
   }
 }

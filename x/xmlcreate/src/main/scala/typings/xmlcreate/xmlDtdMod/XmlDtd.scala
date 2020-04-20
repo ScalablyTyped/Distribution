@@ -48,7 +48,7 @@ trait XmlDtd[Parent] extends js.Object {
   /**
     * Gets the name of the DTD.
     */
-  def name(): String = js.native
+  def name: String = js.native
   /**
     * Sets the name of the DTD.
     */
@@ -77,7 +77,7 @@ trait XmlDtd[Parent] extends js.Object {
     * Gets the public identifier of the DTD.
     */
   @JSName("pubId")
-  def pubId_Union(): js.UndefOr[String] = js.native
+  def pubId_Union: js.UndefOr[String] = js.native
   def sysId(): js.Any = js.native
   /**
     * Sets the system identifier of the DTD.
@@ -87,7 +87,7 @@ trait XmlDtd[Parent] extends js.Object {
     * Gets the system identifier of the DTD.
     */
   @JSName("sysId")
-  def sysId_Union(): js.UndefOr[String] = js.native
+  def sysId_Union: js.UndefOr[String] = js.native
   def toString(options: IStringOptions): String = js.native
   /**
     * Returns the parent of this attribute.

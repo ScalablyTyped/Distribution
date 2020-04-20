@@ -12,7 +12,6 @@ object ResultPointCallback {
   @scala.inline
   def apply(foundPossibleResultPoint: FinderPattern => Unit): ResultPointCallback = {
     val __obj = js.Dynamic.literal(foundPossibleResultPoint = js.Any.fromFunction1(foundPossibleResultPoint))
-  
     __obj.asInstanceOf[ResultPointCallback]
   }
 }

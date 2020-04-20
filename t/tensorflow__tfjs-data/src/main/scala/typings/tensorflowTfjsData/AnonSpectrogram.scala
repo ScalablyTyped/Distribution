@@ -15,7 +15,6 @@ object AnonSpectrogram {
   @scala.inline
   def apply(spectrogram: Tensor3D, waveform: Tensor2D): AnonSpectrogram = {
     val __obj = js.Dynamic.literal(spectrogram = spectrogram.asInstanceOf[js.Any], waveform = waveform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSpectrogram]
   }
 }

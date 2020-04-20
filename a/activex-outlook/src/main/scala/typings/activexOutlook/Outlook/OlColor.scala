@@ -44,40 +44,38 @@ trait OlColor extends js.Object
 
 object OlColor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAutoColor: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olAutoColor: `0` = this.cast(0)
+  def olColorAqua: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def olColorAqua: `15` = this.cast(15)
+  def olColorBlack: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olColorBlack: `1` = this.cast(1)
+  def olColorBlue: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def olColorBlue: `13` = this.cast(13)
+  def olColorFuchsia: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def olColorFuchsia: `14` = this.cast(14)
+  def olColorGray: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olColorGray: `8` = this.cast(8)
+  def olColorGreen: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olColorGreen: `3` = this.cast(3)
+  def olColorLime: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def olColorLime: `11` = this.cast(11)
+  def olColorMaroon: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olColorMaroon: `2` = this.cast(2)
+  def olColorNavy: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olColorNavy: `5` = this.cast(5)
+  def olColorOlive: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olColorOlive: `4` = this.cast(4)
+  def olColorPurple: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olColorPurple: `6` = this.cast(6)
+  def olColorRed: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def olColorRed: `10` = this.cast(10)
+  def olColorSilver: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def olColorSilver: `9` = this.cast(9)
+  def olColorTeal: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olColorTeal: `7` = this.cast(7)
+  def olColorWhite: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def olColorWhite: `16` = this.cast(16)
-  @scala.inline
-  def olColorYellow: `12` = this.cast(12)
+  def olColorYellow: `12` = 12.asInstanceOf[`12`]
 }
 

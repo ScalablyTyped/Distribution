@@ -14,7 +14,6 @@ object PanoramaPov {
   @scala.inline
   def apply(fov: Double, pan: Double, tilt: Double): PanoramaPov = {
     val __obj = js.Dynamic.literal(fov = fov.asInstanceOf[js.Any], pan = pan.asInstanceOf[js.Any], tilt = tilt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PanoramaPov]
   }
 }

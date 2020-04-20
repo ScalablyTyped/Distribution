@@ -26,38 +26,36 @@ trait BlendMode extends _BackgroundBlendModeProperty
 
 object BlendMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def color: typings.csstype.csstypeStrings.color = "color".asInstanceOf[typings.csstype.csstypeStrings.color]
   @scala.inline
-  def color: typings.csstype.csstypeStrings.color = this.cast("color")
+  def `color-burn`: typings.csstype.csstypeStrings.`color-burn` = "color-burn".asInstanceOf[typings.csstype.csstypeStrings.`color-burn`]
   @scala.inline
-  def `color-burn`: typings.csstype.csstypeStrings.`color-burn` = this.cast("color-burn")
+  def `color-dodge`: typings.csstype.csstypeStrings.`color-dodge` = "color-dodge".asInstanceOf[typings.csstype.csstypeStrings.`color-dodge`]
   @scala.inline
-  def `color-dodge`: typings.csstype.csstypeStrings.`color-dodge` = this.cast("color-dodge")
+  def darken: typings.csstype.csstypeStrings.darken = "darken".asInstanceOf[typings.csstype.csstypeStrings.darken]
   @scala.inline
-  def darken: typings.csstype.csstypeStrings.darken = this.cast("darken")
+  def difference: typings.csstype.csstypeStrings.difference = "difference".asInstanceOf[typings.csstype.csstypeStrings.difference]
   @scala.inline
-  def difference: typings.csstype.csstypeStrings.difference = this.cast("difference")
+  def exclusion: typings.csstype.csstypeStrings.exclusion = "exclusion".asInstanceOf[typings.csstype.csstypeStrings.exclusion]
   @scala.inline
-  def exclusion: typings.csstype.csstypeStrings.exclusion = this.cast("exclusion")
+  def `hard-light`: typings.csstype.csstypeStrings.`hard-light` = "hard-light".asInstanceOf[typings.csstype.csstypeStrings.`hard-light`]
   @scala.inline
-  def `hard-light`: typings.csstype.csstypeStrings.`hard-light` = this.cast("hard-light")
+  def hue: typings.csstype.csstypeStrings.hue = "hue".asInstanceOf[typings.csstype.csstypeStrings.hue]
   @scala.inline
-  def hue: typings.csstype.csstypeStrings.hue = this.cast("hue")
+  def lighten: typings.csstype.csstypeStrings.lighten = "lighten".asInstanceOf[typings.csstype.csstypeStrings.lighten]
   @scala.inline
-  def lighten: typings.csstype.csstypeStrings.lighten = this.cast("lighten")
+  def luminosity: typings.csstype.csstypeStrings.luminosity = "luminosity".asInstanceOf[typings.csstype.csstypeStrings.luminosity]
   @scala.inline
-  def luminosity: typings.csstype.csstypeStrings.luminosity = this.cast("luminosity")
+  def multiply: typings.csstype.csstypeStrings.multiply = "multiply".asInstanceOf[typings.csstype.csstypeStrings.multiply]
   @scala.inline
-  def multiply: typings.csstype.csstypeStrings.multiply = this.cast("multiply")
+  def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
   @scala.inline
-  def normal: typings.csstype.csstypeStrings.normal = this.cast("normal")
+  def overlay: typings.csstype.csstypeStrings.overlay = "overlay".asInstanceOf[typings.csstype.csstypeStrings.overlay]
   @scala.inline
-  def overlay: typings.csstype.csstypeStrings.overlay = this.cast("overlay")
+  def saturation: typings.csstype.csstypeStrings.saturation = "saturation".asInstanceOf[typings.csstype.csstypeStrings.saturation]
   @scala.inline
-  def saturation: typings.csstype.csstypeStrings.saturation = this.cast("saturation")
+  def screen: typings.csstype.csstypeStrings.screen = "screen".asInstanceOf[typings.csstype.csstypeStrings.screen]
   @scala.inline
-  def screen: typings.csstype.csstypeStrings.screen = this.cast("screen")
-  @scala.inline
-  def `soft-light`: typings.csstype.csstypeStrings.`soft-light` = this.cast("soft-light")
+  def `soft-light`: typings.csstype.csstypeStrings.`soft-light` = "soft-light".asInstanceOf[typings.csstype.csstypeStrings.`soft-light`]
 }
 

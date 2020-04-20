@@ -1,6 +1,7 @@
 package typings.expressSlowDown.mod
 
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RequestWithSlowDown
-  extends Request[ParamsDictionary, js.Any, js.Any] {
+  extends Request[ParamsDictionary, js.Any, js.Any, Query] {
   var slowDown: SlowDownRequestAugmentation = js.native
 }
 

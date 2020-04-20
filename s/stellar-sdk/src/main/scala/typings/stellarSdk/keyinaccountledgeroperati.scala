@@ -28,7 +28,6 @@ object keyinaccountledgeroperati {
     succeeds: ResponseLink
   ): keyinaccountledgeroperati = {
     val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], ledger = ledger.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], precedes = precedes.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any], succeeds = succeeds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[keyinaccountledgeroperati]
   }
 }

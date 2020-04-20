@@ -13,12 +13,10 @@ trait HttpObserve extends js.Object
 
 object HttpObserve {
   @scala.inline
-  def body: typings.angularCommon.angularCommonStrings.body = this.cast("body")
+  def body: typings.angularCommon.angularCommonStrings.body = "body".asInstanceOf[typings.angularCommon.angularCommonStrings.body]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def events: typings.angularCommon.angularCommonStrings.events = "events".asInstanceOf[typings.angularCommon.angularCommonStrings.events]
   @scala.inline
-  def events: typings.angularCommon.angularCommonStrings.events = this.cast("events")
-  @scala.inline
-  def response: typings.angularCommon.angularCommonStrings.response = this.cast("response")
+  def response: typings.angularCommon.angularCommonStrings.response = "response".asInstanceOf[typings.angularCommon.angularCommonStrings.response]
 }
 

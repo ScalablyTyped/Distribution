@@ -16,7 +16,6 @@ object RawModuleMap {
   @scala.inline
   def apply(duplicates: DuplicatesIndex, map: ModuleMapData, mocks: MockData, rootDir: Path): RawModuleMap = {
     val __obj = js.Dynamic.literal(duplicates = duplicates.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mocks = mocks.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RawModuleMap]
   }
 }

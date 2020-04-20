@@ -9,5 +9,5 @@ package object selectMod {
   type MouseOrTouchEvent = (typings.react.mod.MouseEvent[typings.std.HTMLElement, typings.react.mod.NativeMouseEvent]) | typings.react.mod.TouchEvent[typings.std.HTMLElement]
   type SelectComponentsProps = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in string ]: any}
-    */ typings.reactSelect.reactSelectStrings.SelectComponentsProps with js.Any
+    */ typings.reactSelect.reactSelectStrings.SelectComponentsProps with org.scalablytyped.runtime.TopLevel[js.Any]
 }

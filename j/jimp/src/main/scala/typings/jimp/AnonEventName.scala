@@ -18,7 +18,6 @@ object AnonEventName {
   @scala.inline
   def apply[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): AnonEventName[T] = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEventName[T]]
   }
 }

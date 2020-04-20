@@ -40,7 +40,6 @@ object IModelContentChangedEvent {
     versionId: Double
   ): IModelContentChangedEvent = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], eol = eol.asInstanceOf[js.Any], isFlush = isFlush.asInstanceOf[js.Any], isRedoing = isRedoing.asInstanceOf[js.Any], isUndoing = isUndoing.asInstanceOf[js.Any], versionId = versionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IModelContentChangedEvent]
   }
 }

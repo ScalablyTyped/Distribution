@@ -20,7 +20,6 @@ object ModifyWorkspaceCreationPropertiesRequest {
   @scala.inline
   def apply(ResourceId: DirectoryId, WorkspaceCreationProperties: WorkspaceCreationProperties): ModifyWorkspaceCreationPropertiesRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], WorkspaceCreationProperties = WorkspaceCreationProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyWorkspaceCreationPropertiesRequest]
   }
 }

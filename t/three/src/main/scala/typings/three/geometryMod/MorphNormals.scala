@@ -14,7 +14,6 @@ object MorphNormals {
   @scala.inline
   def apply(name: String, normals: js.Array[Vector3]): MorphNormals = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], normals = normals.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MorphNormals]
   }
 }

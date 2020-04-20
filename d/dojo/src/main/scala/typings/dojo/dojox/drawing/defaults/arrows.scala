@@ -28,7 +28,6 @@ object arrows {
   @scala.inline
   def apply(length: Double, width: Double): arrows = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[arrows]
   }
 }

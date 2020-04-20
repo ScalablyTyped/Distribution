@@ -42,7 +42,6 @@ object IModelFactory {
     createRawCell: typings.jupyterlabCells.modelMod.CellModel.IOptions => IRawCellModel
   ): IModelFactory = {
     val __obj = js.Dynamic.literal(codeCellContentFactory = codeCellContentFactory.asInstanceOf[js.Any], createCodeCell = js.Any.fromFunction1(createCodeCell), createRawCell = js.Any.fromFunction1(createRawCell))
-  
     __obj.asInstanceOf[IModelFactory]
   }
 }

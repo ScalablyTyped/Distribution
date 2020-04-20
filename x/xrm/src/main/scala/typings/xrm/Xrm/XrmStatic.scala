@@ -67,7 +67,6 @@ object XrmStatic {
     WebApi: WebApi
   ): XrmStatic = {
     val __obj = js.Dynamic.literal(Device = Device.asInstanceOf[js.Any], Encoding = Encoding.asInstanceOf[js.Any], Mobile = Mobile.asInstanceOf[js.Any], Navigation = Navigation.asInstanceOf[js.Any], Page = Page.asInstanceOf[js.Any], Panel = Panel.asInstanceOf[js.Any], Utility = Utility.asInstanceOf[js.Any], WebApi = WebApi.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XrmStatic]
   }
 }

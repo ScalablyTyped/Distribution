@@ -22,7 +22,6 @@ object JQueryCLEditorStatic {
     imagesPath: () => String
   ): JQueryCLEditorStatic = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], defaultOptions = defaultOptions.asInstanceOf[js.Any], imagesPath = js.Any.fromFunction0(imagesPath))
-  
     __obj.asInstanceOf[JQueryCLEditorStatic]
   }
 }

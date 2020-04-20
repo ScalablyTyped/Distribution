@@ -11,16 +11,18 @@ object reactMaterialUiFormValidatorComponents extends reactMaterialUiFormValidat
   @scala.inline
   def SelectValidator: ComponentType[
     typings.reactMaterialUiFormValidator.mod.ValidatorComponentProps with SelectFieldProps
-  ] = js.constructorOf[typings.reactMaterialUiFormValidator.mod.SelectValidator].asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactMaterialUiFormValidator.mod.ValidatorComponentProps with typings.materialUi.MaterialUI.SelectFieldProps]]
+  ] = js.constructorOf[typings.reactMaterialUiFormValidator.mod.SelectValidator].asInstanceOf[ComponentType[
+    typings.reactMaterialUiFormValidator.mod.ValidatorComponentProps with SelectFieldProps
+  ]]
   @scala.inline
   def TextValidator: ComponentType[
     typings.reactMaterialUiFormValidator.mod.ValidatorComponentProps with TextFieldProps
-  ] = js.constructorOf[typings.reactMaterialUiFormValidator.mod.TextValidator].asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactMaterialUiFormValidator.mod.ValidatorComponentProps with typings.materialUi.MaterialUI.TextFieldProps]]
+  ] = js.constructorOf[typings.reactMaterialUiFormValidator.mod.TextValidator].asInstanceOf[ComponentType[
+    typings.reactMaterialUiFormValidator.mod.ValidatorComponentProps with TextFieldProps
+  ]]
   @scala.inline
-  def ValidatorComponent: ComponentType[ValidatorComponentProps] = js.constructorOf[typings.reactMaterialUiFormValidator.mod.ValidatorComponent].asInstanceOf[typings.react.mod.ComponentType[ValidatorComponentProps]]
+  def ValidatorComponent: ComponentType[ValidatorComponentProps] = js.constructorOf[typings.reactMaterialUiFormValidator.mod.ValidatorComponent].asInstanceOf[ComponentType[ValidatorComponentProps]]
   @scala.inline
-  def ValidatorForm: ComponentType[ValidatorFormProps] = js.constructorOf[typings.reactMaterialUiFormValidator.mod.ValidatorForm].asInstanceOf[typings.react.mod.ComponentType[ValidatorFormProps]]
+  def ValidatorForm: ComponentType[ValidatorFormProps] = js.constructorOf[typings.reactMaterialUiFormValidator.mod.ValidatorForm].asInstanceOf[ComponentType[ValidatorFormProps]]
 }
 

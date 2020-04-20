@@ -12,7 +12,6 @@ object UpdateBrokersData {
   @scala.inline
   def apply(brokerURIs: js.Array[String]): UpdateBrokersData = {
     val __obj = js.Dynamic.literal(brokerURIs = brokerURIs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateBrokersData]
   }
 }

@@ -170,7 +170,6 @@ object PageSetup {
     verticalDpi: Double
   ): PageSetup = {
     val __obj = js.Dynamic.literal(blackAndWhite = blackAndWhite.asInstanceOf[js.Any], cellComments = cellComments.asInstanceOf[js.Any], draft = draft.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], firstPageNumber = firstPageNumber.asInstanceOf[js.Any], fitToHeight = fitToHeight.asInstanceOf[js.Any], fitToPage = fitToPage.asInstanceOf[js.Any], fitToWidth = fitToWidth.asInstanceOf[js.Any], horizontalCentered = horizontalCentered.asInstanceOf[js.Any], horizontalDpi = horizontalDpi.asInstanceOf[js.Any], margins = margins.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], pageOrder = pageOrder.asInstanceOf[js.Any], paperSize = paperSize.asInstanceOf[js.Any], printArea = printArea.asInstanceOf[js.Any], printTitlesColumn = printTitlesColumn.asInstanceOf[js.Any], printTitlesRow = printTitlesRow.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], showGridLines = showGridLines.asInstanceOf[js.Any], showRowColHeaders = showRowColHeaders.asInstanceOf[js.Any], verticalCentered = verticalCentered.asInstanceOf[js.Any], verticalDpi = verticalDpi.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PageSetup]
   }
 }

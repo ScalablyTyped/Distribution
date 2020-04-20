@@ -24,7 +24,6 @@ object Queue {
     state: String
   ): Queue = {
     val __obj = js.Dynamic.literal(appEngineHttpQueue = appEngineHttpQueue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], purgeTime = purgeTime.asInstanceOf[js.Any], rateLimits = rateLimits.asInstanceOf[js.Any], retryConfig = retryConfig.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Queue]
   }
 }

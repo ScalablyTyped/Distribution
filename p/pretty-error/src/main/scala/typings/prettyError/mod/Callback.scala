@@ -13,7 +13,6 @@ object Callback {
   @scala.inline
   def apply(lineNumber: Double, traceLine: js.Object | js.Any): Callback = {
     val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], traceLine = traceLine.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Callback]
   }
 }

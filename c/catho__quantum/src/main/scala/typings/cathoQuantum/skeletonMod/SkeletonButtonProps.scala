@@ -18,7 +18,6 @@ object SkeletonButtonProps {
   @scala.inline
   def apply(size: xsmall | small | medium | large, theme: AnonSpacingObject): SkeletonButtonProps = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkeletonButtonProps]
   }
 }

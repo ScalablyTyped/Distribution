@@ -38,7 +38,6 @@ object INxDataAreaPage {
   @scala.inline
   def apply(qHeight: Double, qLeft: Double, qTop: Double, qWidth: Double): INxDataAreaPage = {
     val __obj = js.Dynamic.literal(qHeight = qHeight.asInstanceOf[js.Any], qLeft = qLeft.asInstanceOf[js.Any], qTop = qTop.asInstanceOf[js.Any], qWidth = qWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxDataAreaPage]
   }
 }

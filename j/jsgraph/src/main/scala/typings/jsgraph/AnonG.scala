@@ -14,7 +14,6 @@ object AnonG {
   @scala.inline
   def apply(g: DirectedGraph, u: String): AnonG = {
     val __obj = js.Dynamic.literal(g = g.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonG]
   }
 }

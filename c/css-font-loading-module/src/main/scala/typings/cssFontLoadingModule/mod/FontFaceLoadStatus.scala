@@ -14,14 +14,12 @@ trait FontFaceLoadStatus extends js.Object
 
 object FontFaceLoadStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.error = "error".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.error]
   @scala.inline
-  def error: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.error = this.cast("error")
+  def loaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded = "loaded".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded]
   @scala.inline
-  def loaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded = this.cast("loaded")
+  def loading: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading = "loading".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading]
   @scala.inline
-  def loading: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading = this.cast("loading")
-  @scala.inline
-  def unloaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.unloaded = this.cast("unloaded")
+  def unloaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.unloaded = "unloaded".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.unloaded]
 }
 

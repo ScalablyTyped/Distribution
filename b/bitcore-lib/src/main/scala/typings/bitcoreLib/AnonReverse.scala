@@ -12,7 +12,6 @@ object AnonReverse {
   @scala.inline
   def apply(reverse: js.Any => js.Any): AnonReverse = {
     val __obj = js.Dynamic.literal(reverse = js.Any.fromFunction1(reverse))
-  
     __obj.asInstanceOf[AnonReverse]
   }
 }

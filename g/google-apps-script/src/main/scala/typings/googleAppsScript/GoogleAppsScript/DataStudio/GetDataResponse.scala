@@ -40,7 +40,6 @@ object GetDataResponse {
     setFiltersApplied: Boolean => GetDataResponse
   ): GetDataResponse = {
     val __obj = js.Dynamic.literal(addAllRows = js.Any.fromFunction1(addAllRows), addRow = js.Any.fromFunction1(addRow), build = js.Any.fromFunction0(build), setFields = js.Any.fromFunction1(setFields), setFiltersApplied = js.Any.fromFunction1(setFiltersApplied))
-  
     __obj.asInstanceOf[GetDataResponse]
   }
 }

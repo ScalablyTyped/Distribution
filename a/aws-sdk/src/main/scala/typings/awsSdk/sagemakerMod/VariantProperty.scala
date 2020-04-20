@@ -16,7 +16,6 @@ object VariantProperty {
   @scala.inline
   def apply(VariantPropertyType: VariantPropertyType): VariantProperty = {
     val __obj = js.Dynamic.literal(VariantPropertyType = VariantPropertyType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VariantProperty]
   }
 }

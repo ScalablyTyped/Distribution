@@ -16,7 +16,6 @@ object WafAction {
   @scala.inline
   def apply(Type: WafActionType): WafAction = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WafAction]
   }
 }

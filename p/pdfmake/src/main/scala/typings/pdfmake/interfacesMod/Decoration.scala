@@ -13,12 +13,10 @@ trait Decoration extends js.Object
 
 object Decoration {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lineThrough: typings.pdfmake.pdfmakeStrings.lineThrough = "lineThrough".asInstanceOf[typings.pdfmake.pdfmakeStrings.lineThrough]
   @scala.inline
-  def lineThrough: typings.pdfmake.pdfmakeStrings.lineThrough = this.cast("lineThrough")
+  def overline: typings.pdfmake.pdfmakeStrings.overline = "overline".asInstanceOf[typings.pdfmake.pdfmakeStrings.overline]
   @scala.inline
-  def overline: typings.pdfmake.pdfmakeStrings.overline = this.cast("overline")
-  @scala.inline
-  def underline: typings.pdfmake.pdfmakeStrings.underline = this.cast("underline")
+  def underline: typings.pdfmake.pdfmakeStrings.underline = "underline".asInstanceOf[typings.pdfmake.pdfmakeStrings.underline]
 }
 

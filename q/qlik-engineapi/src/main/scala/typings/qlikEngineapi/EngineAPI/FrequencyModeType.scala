@@ -21,14 +21,12 @@ trait FrequencyModeType extends js.Object
 
 object FrequencyModeType {
   @scala.inline
-  def NX_FREQUENCY_NONE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE = this.cast("NX_FREQUENCY_NONE")
+  def NX_FREQUENCY_NONE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE = "NX_FREQUENCY_NONE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE]
   @scala.inline
-  def NX_FREQUENCY_PERCENT: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT = this.cast("NX_FREQUENCY_PERCENT")
+  def NX_FREQUENCY_PERCENT: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT = "NX_FREQUENCY_PERCENT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT]
   @scala.inline
-  def NX_FREQUENCY_RELATIVE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE = this.cast("NX_FREQUENCY_RELATIVE")
+  def NX_FREQUENCY_RELATIVE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE = "NX_FREQUENCY_RELATIVE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE]
   @scala.inline
-  def NX_FREQUENCY_VALUE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE = this.cast("NX_FREQUENCY_VALUE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NX_FREQUENCY_VALUE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE = "NX_FREQUENCY_VALUE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE]
 }
 

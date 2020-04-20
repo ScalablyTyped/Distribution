@@ -25,7 +25,6 @@ object AnonConfirmationStatus {
     slots: StringDictionary[String | Null]
   ): AnonConfirmationStatus = {
     val __obj = js.Dynamic.literal(confirmationStatus = confirmationStatus.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slotDetails = slotDetails.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfirmationStatus]
   }
 }

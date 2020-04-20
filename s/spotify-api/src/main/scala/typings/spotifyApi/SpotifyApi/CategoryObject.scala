@@ -19,7 +19,6 @@ object CategoryObject {
   @scala.inline
   def apply(href: String, icons: js.Array[ImageObject], id: String, name: String): CategoryObject = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CategoryObject]
   }
 }

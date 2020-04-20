@@ -75,11 +75,11 @@ object mapElementListMod extends js.Object {
       /**
         * @inheritDoc
         */
-      def first(): Key = js.native
+      def first: Key = js.native
       /**
         * @inheritDoc
         */
-      def second(): T = js.native
+      def second: T = js.native
       /**
         * @inheritDoc
         */
@@ -118,13 +118,13 @@ object mapElementListMod extends js.Object {
         *
         * @return The first element.
         */
-      def first(): Key = js.native
+      def first: Key = js.native
       /**
         * Get the second, stored element.
         *
         * @return The second element.
         */
-      def second(): T = js.native
+      def second: T = js.native
       /**
         * Set the second, stored element.
         *

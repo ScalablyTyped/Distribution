@@ -47,7 +47,6 @@ object JestPuppeteer {
     resetPage: () => js.Promise[Unit]
   ): JestPuppeteer = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction0(debug), resetBrowser = js.Any.fromFunction0(resetBrowser), resetPage = js.Any.fromFunction0(resetPage))
-  
     __obj.asInstanceOf[JestPuppeteer]
   }
 }

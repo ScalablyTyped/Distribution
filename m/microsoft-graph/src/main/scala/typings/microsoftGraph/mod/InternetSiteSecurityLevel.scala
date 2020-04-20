@@ -14,14 +14,12 @@ trait InternetSiteSecurityLevel extends js.Object
 
 object InternetSiteSecurityLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = this.cast("high")
+  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
   @scala.inline
-  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = this.cast("medium")
+  def mediumHigh: typings.microsoftGraph.microsoftGraphStrings.mediumHigh = "mediumHigh".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mediumHigh]
   @scala.inline
-  def mediumHigh: typings.microsoftGraph.microsoftGraphStrings.mediumHigh = this.cast("mediumHigh")
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }
 

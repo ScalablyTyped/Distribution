@@ -16,7 +16,6 @@ object AnonBackground {
   @scala.inline
   def apply(background: String, path: String, root: String, text: String, trail: String): AnonBackground = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], trail = trail.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackground]
   }
 }

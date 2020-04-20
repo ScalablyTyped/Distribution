@@ -37,7 +37,6 @@ object APIResourceList {
   @scala.inline
   def apply(apiVersion: String, groupVersion: String, kind: String, resources: js.Array[APIResource]): APIResourceList = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], groupVersion = groupVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[APIResourceList]
   }
 }

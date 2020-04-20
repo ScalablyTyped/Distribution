@@ -29,10 +29,10 @@ object EngineStore extends js.Object {
   /**
     * Gets the latest created engine
     */
-  def LastCreatedEngine(): Nullable[Engine] = js.native
+  def LastCreatedEngine: Nullable[Engine] = js.native
   /**
     * Gets the latest created scene
     */
-  def LastCreatedScene(): Nullable[Scene] = js.native
+  def LastCreatedScene: Nullable[Scene] = js.native
 }
 

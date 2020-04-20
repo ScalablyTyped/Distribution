@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 object refluxComponents extends refluxProps {
   @scala.inline
-  def Component[TOfStore /* <: Instantiable0[Store] */, P, S]: ComponentType[P] = js.constructorOf[typings.reflux.mod.Component[TOfStore, P, S]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def Component[TOfStore /* <: Instantiable0[Store] */, P, S]: ComponentType[P] = (js.constructorOf[typings.reflux.mod.Component[TOfStore, P, S]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def PureComponent[TOfStore /* <: Instantiable0[Store] */, P, S, SS]: ComponentType[P] = js.constructorOf[typings.reflux.mod.PureComponent[TOfStore, P, S, SS]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def PureComponent[TOfStore /* <: Instantiable0[Store] */, P, S, SS]: ComponentType[P] = (js.constructorOf[typings.reflux.mod.PureComponent[TOfStore, P, S, SS]]).asInstanceOf[ComponentType[P]]
 }
 

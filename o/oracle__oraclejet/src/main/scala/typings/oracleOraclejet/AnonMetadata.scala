@@ -27,7 +27,6 @@ object AnonMetadata {
     viewModel: ViewModelContext => Unit | js.Object
   ): AnonMetadata = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], parseFunction = js.Any.fromFunction4(parseFunction), view = view.asInstanceOf[js.Any], viewModel = js.Any.fromFunction1(viewModel))
-  
     __obj.asInstanceOf[AnonMetadata]
   }
 }

@@ -18,14 +18,12 @@ trait _BEHAVIOR_LAYOUT_INFO extends js.Object
 
 object _BEHAVIOR_LAYOUT_INFO {
   @scala.inline
-  def BEHAVIORLAYOUTINFO_FULLDELEGATION: `1` = this.cast(1)
+  def BEHAVIORLAYOUTINFO_FULLDELEGATION: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def BEHAVIORLAYOUTINFO_MAPSIZE: `4` = this.cast(4)
+  def BEHAVIORLAYOUTINFO_MAPSIZE: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def BEHAVIORLAYOUTINFO_MODIFYNATURAL: `2` = this.cast(2)
+  def BEHAVIORLAYOUTINFO_MODIFYNATURAL: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def BEHAVIOR_LAYOUT_INFO_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def BEHAVIOR_LAYOUT_INFO_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

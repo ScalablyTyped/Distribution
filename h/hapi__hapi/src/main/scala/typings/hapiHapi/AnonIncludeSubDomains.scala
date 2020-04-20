@@ -23,7 +23,6 @@ object AnonIncludeSubDomains {
   @scala.inline
   def apply(includeSubDomains: Boolean, maxAge: Double, preload: Boolean): AnonIncludeSubDomains = {
     val __obj = js.Dynamic.literal(includeSubDomains = includeSubDomains.asInstanceOf[js.Any], maxAge = maxAge.asInstanceOf[js.Any], preload = preload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIncludeSubDomains]
   }
 }

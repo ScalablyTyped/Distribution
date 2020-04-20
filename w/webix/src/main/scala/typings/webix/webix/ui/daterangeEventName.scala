@@ -18,22 +18,20 @@ trait daterangeEventName extends js.Object
 
 object daterangeEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def onAfterDateSelect: typings.webix.webixStrings.onAfterDateSelect = "onAfterDateSelect".asInstanceOf[typings.webix.webixStrings.onAfterDateSelect]
   @scala.inline
-  def onAfterDateSelect: typings.webix.webixStrings.onAfterDateSelect = this.cast("onAfterDateSelect")
+  def onBeforeDateSelect: typings.webix.webixStrings.onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[typings.webix.webixStrings.onBeforeDateSelect]
   @scala.inline
-  def onBeforeDateSelect: typings.webix.webixStrings.onBeforeDateSelect = this.cast("onBeforeDateSelect")
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   @scala.inline
-  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  def onChange: typings.webix.webixStrings.onChange = "onChange".asInstanceOf[typings.webix.webixStrings.onChange]
   @scala.inline
-  def onChange: typings.webix.webixStrings.onChange = this.cast("onChange")
+  def onDateClear: typings.webix.webixStrings.onDateClear = "onDateClear".asInstanceOf[typings.webix.webixStrings.onDateClear]
   @scala.inline
-  def onDateClear: typings.webix.webixStrings.onDateClear = this.cast("onDateClear")
+  def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   @scala.inline
-  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  def onTodaySet: typings.webix.webixStrings.onTodaySet = "onTodaySet".asInstanceOf[typings.webix.webixStrings.onTodaySet]
   @scala.inline
-  def onTodaySet: typings.webix.webixStrings.onTodaySet = this.cast("onTodaySet")
-  @scala.inline
-  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }
 

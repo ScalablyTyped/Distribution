@@ -26,7 +26,6 @@ object ClientUtils {
     params: AnonFileIds
   ): ClientUtils = {
     val __obj = js.Dynamic.literal(RealtimeLoader = RealtimeLoader.asInstanceOf[js.Any], createRealtimeFile = js.Any.fromFunction3(createRealtimeFile), params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientUtils]
   }
 }

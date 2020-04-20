@@ -21,7 +21,6 @@ object AnonTeardown {
   @scala.inline
   def apply[TTarget](teardown: () => Unit | `false`): AnonTeardown[TTarget] = {
     val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction0(teardown))
-  
     __obj.asInstanceOf[AnonTeardown[TTarget]]
   }
 }

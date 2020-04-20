@@ -19,24 +19,22 @@ trait GravityDirection extends js.Object
 
 object GravityDirection {
   @scala.inline
-  def Center: typings.gm.gmStrings.Center = this.cast("Center")
+  def Center: typings.gm.gmStrings.Center = "Center".asInstanceOf[typings.gm.gmStrings.Center]
   @scala.inline
-  def East: typings.gm.gmStrings.East = this.cast("East")
+  def East: typings.gm.gmStrings.East = "East".asInstanceOf[typings.gm.gmStrings.East]
   @scala.inline
-  def North: typings.gm.gmStrings.North = this.cast("North")
+  def North: typings.gm.gmStrings.North = "North".asInstanceOf[typings.gm.gmStrings.North]
   @scala.inline
-  def NorthEast: typings.gm.gmStrings.NorthEast = this.cast("NorthEast")
+  def NorthEast: typings.gm.gmStrings.NorthEast = "NorthEast".asInstanceOf[typings.gm.gmStrings.NorthEast]
   @scala.inline
-  def NorthWest: typings.gm.gmStrings.NorthWest = this.cast("NorthWest")
+  def NorthWest: typings.gm.gmStrings.NorthWest = "NorthWest".asInstanceOf[typings.gm.gmStrings.NorthWest]
   @scala.inline
-  def South: typings.gm.gmStrings.South = this.cast("South")
+  def South: typings.gm.gmStrings.South = "South".asInstanceOf[typings.gm.gmStrings.South]
   @scala.inline
-  def SouthEast: typings.gm.gmStrings.SouthEast = this.cast("SouthEast")
+  def SouthEast: typings.gm.gmStrings.SouthEast = "SouthEast".asInstanceOf[typings.gm.gmStrings.SouthEast]
   @scala.inline
-  def SouthWest: typings.gm.gmStrings.SouthWest = this.cast("SouthWest")
+  def SouthWest: typings.gm.gmStrings.SouthWest = "SouthWest".asInstanceOf[typings.gm.gmStrings.SouthWest]
   @scala.inline
-  def West: typings.gm.gmStrings.West = this.cast("West")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def West: typings.gm.gmStrings.West = "West".asInstanceOf[typings.gm.gmStrings.West]
 }
 

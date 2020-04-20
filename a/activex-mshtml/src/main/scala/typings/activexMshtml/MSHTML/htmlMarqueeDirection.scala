@@ -20,16 +20,14 @@ trait htmlMarqueeDirection extends js.Object
 
 object htmlMarqueeDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlMarqueeDirection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def htmlMarqueeDirection_Max: `2147483647` = this.cast(2147483647)
+  def htmlMarqueeDirectiondown: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def htmlMarqueeDirectiondown: `7` = this.cast(7)
+  def htmlMarqueeDirectionleft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlMarqueeDirectionleft: `1` = this.cast(1)
+  def htmlMarqueeDirectionright: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlMarqueeDirectionright: `3` = this.cast(3)
-  @scala.inline
-  def htmlMarqueeDirectionup: `5` = this.cast(5)
+  def htmlMarqueeDirectionup: `5` = 5.asInstanceOf[`5`]
 }
 

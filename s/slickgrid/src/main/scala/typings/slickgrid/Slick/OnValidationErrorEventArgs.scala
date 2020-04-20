@@ -27,7 +27,6 @@ object OnValidationErrorEventArgs {
     validationResults: ValidateResults
   ): OnValidationErrorEventArgs[T] = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], cellNode = cellNode.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], validationResults = validationResults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnValidationErrorEventArgs[T]]
   }
 }

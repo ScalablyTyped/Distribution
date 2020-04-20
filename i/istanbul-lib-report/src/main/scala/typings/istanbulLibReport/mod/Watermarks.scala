@@ -15,7 +15,6 @@ object Watermarks {
   @scala.inline
   def apply(branches: Watermark, functions: Watermark, lines: Watermark, statements: Watermark): Watermarks = {
     val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], functions = functions.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Watermarks]
   }
 }

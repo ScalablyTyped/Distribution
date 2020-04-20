@@ -20,7 +20,6 @@ object SettingsCallback {
     options: typings.chrome.chrome.browsingData.RemovalOptions
   ): SettingsCallback = {
     val __obj = js.Dynamic.literal(dataRemovalPermitted = dataRemovalPermitted.asInstanceOf[js.Any], dataToRemove = dataToRemove.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SettingsCallback]
   }
 }

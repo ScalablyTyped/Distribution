@@ -22,13 +22,11 @@ object HookInput {
     name: buildColonbefore | buildColonafter
   ): HookInput = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HookInput]
   }
   @scala.inline
   def ServeBeforeHookInput(name: serveColonbefore, serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): HookInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serve = serve.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HookInput]
   }
   @scala.inline
@@ -37,7 +35,6 @@ object HookInput {
     serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) with ServeDetails
   ): HookInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serve = serve.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HookInput]
   }
 }

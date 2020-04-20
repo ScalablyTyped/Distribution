@@ -10,7 +10,7 @@ trait brainhubeuReactCarouselProps {
   def DotsProps: typings.brainhubeuReactCarousel.mod.DotsProps.type = typings.brainhubeuReactCarousel.mod.DotsProps
   type DotsProps = typings.brainhubeuReactCarousel.mod.DotsProps
   @scala.inline
-  def ReactCarouselProps: CarouselProps.type = typings.brainhubeuReactCarousel.mod.CarouselProps
+  def ReactCarouselProps: CarouselProps.type = CarouselProps
   type ReactCarouselProps = CarouselProps
 }
 

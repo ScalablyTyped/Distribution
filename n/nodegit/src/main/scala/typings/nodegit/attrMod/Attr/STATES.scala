@@ -18,14 +18,12 @@ trait STATES extends js.Object
 
 object STATES {
   @scala.inline
-  def FALSE_T: `2` = this.cast(2)
+  def FALSE_T: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def TRUE_T: `1` = this.cast(1)
+  def TRUE_T: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def UNSPECIFIED_T: `0` = this.cast(0)
+  def UNSPECIFIED_T: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def VALUE_T: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VALUE_T: `3` = 3.asInstanceOf[`3`]
 }
 

@@ -17,7 +17,6 @@ object AnonActive {
   @scala.inline
   def apply(active: Double, external: Double, file: Double): AnonActive = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActive]
   }
 }

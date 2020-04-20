@@ -17,7 +17,6 @@ object OptimizedResize_ {
   @scala.inline
   def apply(init: js.Function0[Unit] => Unit): OptimizedResize_ = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
-  
     __obj.asInstanceOf[OptimizedResize_]
   }
 }

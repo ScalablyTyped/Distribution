@@ -13,7 +13,6 @@ object TypeofRAM {
   @scala.inline
   def apply(Types: TypeofRAM): TypeofRAM = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofRAM]
   }
 }

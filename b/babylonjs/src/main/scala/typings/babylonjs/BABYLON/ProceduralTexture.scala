@@ -117,7 +117,7 @@ class ProceduralTexture protected () extends Texture {
     * Define the refresh rate of the texture or the rendering frequency.
     * Use 0 to render just once, 1 to render on every frame, 2 to render every two frames and so on...
     */
-  def refreshRate(): Double = js.native
+  def refreshRate: Double = js.native
   def refreshRate(value: Double): js.Any = js.native
   /**
     * Render the texture to its associated render target.

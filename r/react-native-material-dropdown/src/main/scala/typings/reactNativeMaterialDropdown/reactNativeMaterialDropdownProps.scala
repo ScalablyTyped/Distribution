@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeMaterialDropdownProps {
   @scala.inline
-  def DropdownProps: DropDownProps.type = typings.reactNativeMaterialDropdown.mod.DropDownProps
+  def DropdownProps: DropDownProps.type = DropDownProps
   type DropdownProps = DropDownProps
 }
 

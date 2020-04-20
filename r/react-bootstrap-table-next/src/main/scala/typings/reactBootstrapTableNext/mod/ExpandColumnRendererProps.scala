@@ -14,7 +14,6 @@ object ExpandColumnRendererProps {
   @scala.inline
   def apply(expandable: Boolean, expanded: Boolean, rowKey: String): ExpandColumnRendererProps = {
     val __obj = js.Dynamic.literal(expandable = expandable.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], rowKey = rowKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExpandColumnRendererProps]
   }
 }

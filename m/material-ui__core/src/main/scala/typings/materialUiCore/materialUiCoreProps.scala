@@ -202,7 +202,7 @@ trait materialUiCoreProps {
   def MenuListProps: typings.materialUiCore.menuListMenuListMod.MenuListProps.type = typings.materialUiCore.menuListMenuListMod.MenuListProps
   type MenuListProps = typings.materialUiCore.menuListMenuListMod.MenuListProps
   @scala.inline
-  def MergeListContextProps: MergeWithListContextProps.type = typings.materialUiCore.mergeListContextMod.MergeWithListContextProps
+  def MergeListContextProps: MergeWithListContextProps.type = MergeWithListContextProps
   type MergeListContextProps = MergeWithListContextProps
   @scala.inline
   def MobileStepperProps: typings.materialUiCore.mobileStepperMobileStepperMod.MobileStepperProps.type = typings.materialUiCore.mobileStepperMobileStepperMod.MobileStepperProps

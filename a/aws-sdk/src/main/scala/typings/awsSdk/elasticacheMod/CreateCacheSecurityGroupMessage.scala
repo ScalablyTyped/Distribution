@@ -20,7 +20,6 @@ object CreateCacheSecurityGroupMessage {
   @scala.inline
   def apply(CacheSecurityGroupName: String, Description: String): CreateCacheSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(CacheSecurityGroupName = CacheSecurityGroupName.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCacheSecurityGroupMessage]
   }
 }

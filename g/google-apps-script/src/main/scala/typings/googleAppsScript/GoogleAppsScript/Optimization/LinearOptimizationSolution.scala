@@ -72,7 +72,6 @@ object LinearOptimizationSolution {
     isValid: () => Boolean
   ): LinearOptimizationSolution = {
     val __obj = js.Dynamic.literal(getObjectiveValue = js.Any.fromFunction0(getObjectiveValue), getStatus = js.Any.fromFunction0(getStatus), getVariableValue = js.Any.fromFunction1(getVariableValue), isValid = js.Any.fromFunction0(isValid))
-  
     __obj.asInstanceOf[LinearOptimizationSolution]
   }
 }

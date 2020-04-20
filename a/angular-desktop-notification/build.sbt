@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular-desktop-notification"
-version := "1.1-dt-20180802Z-9b746a"
+version := "1.1-dt-20180802Z-a6d840"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.7-dt-20200331Z-219e30",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "angular" % "1.7-dt-20200331Z-ba13c7",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

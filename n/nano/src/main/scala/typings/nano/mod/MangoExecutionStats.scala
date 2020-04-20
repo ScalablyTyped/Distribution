@@ -29,7 +29,6 @@ object MangoExecutionStats {
     total_quorum_docs_examined: Double
   ): MangoExecutionStats = {
     val __obj = js.Dynamic.literal(execution_time_ms = execution_time_ms.asInstanceOf[js.Any], results_returned = results_returned.asInstanceOf[js.Any], total_docs_examined = total_docs_examined.asInstanceOf[js.Any], total_keys_examined = total_keys_examined.asInstanceOf[js.Any], total_quorum_docs_examined = total_quorum_docs_examined.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MangoExecutionStats]
   }
 }

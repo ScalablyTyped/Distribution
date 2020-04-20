@@ -14,10 +14,8 @@ trait OlOutlookBarViewType extends js.Object
 
 object OlOutlookBarViewType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olLargeIcon: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olLargeIcon: `0` = this.cast(0)
-  @scala.inline
-  def olSmallIcon: `1` = this.cast(1)
+  def olSmallIcon: `1` = 1.asInstanceOf[`1`]
 }
 

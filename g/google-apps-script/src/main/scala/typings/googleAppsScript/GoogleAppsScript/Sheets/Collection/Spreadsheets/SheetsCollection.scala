@@ -16,7 +16,6 @@ object SheetsCollection {
   @scala.inline
   def apply(copyTo: (CopySheetToAnotherSpreadsheetRequest, String, Double) => SheetProperties): SheetsCollection = {
     val __obj = js.Dynamic.literal(copyTo = js.Any.fromFunction3(copyTo))
-  
     __obj.asInstanceOf[SheetsCollection]
   }
 }

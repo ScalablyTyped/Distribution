@@ -28,7 +28,6 @@ object CloudwatchAlarmAction {
   @scala.inline
   def apply(alarmName: AlarmName, roleArn: AwsArn, stateReason: StateReason, stateValue: StateValue): CloudwatchAlarmAction = {
     val __obj = js.Dynamic.literal(alarmName = alarmName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stateReason = stateReason.asInstanceOf[js.Any], stateValue = stateValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudwatchAlarmAction]
   }
 }

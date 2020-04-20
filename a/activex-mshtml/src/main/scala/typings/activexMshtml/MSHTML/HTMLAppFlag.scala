@@ -16,20 +16,18 @@ trait HTMLAppFlag extends js.Object
 
 object HTMLAppFlag {
   @scala.inline
-  def HTMLAppFlag0: `0` = this.cast(0)
+  def HTMLAppFlag0: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLAppFlag1: `1` = this.cast(1)
+  def HTMLAppFlag1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLAppFlagNo: `0` = this.cast(0)
+  def HTMLAppFlagNo: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLAppFlagOff: `0` = this.cast(0)
+  def HTMLAppFlagOff: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLAppFlagOn: `1` = this.cast(1)
+  def HTMLAppFlagOn: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLAppFlagYes: `1` = this.cast(1)
+  def HTMLAppFlagYes: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLAppFlag_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLAppFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

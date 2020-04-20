@@ -16,7 +16,6 @@ object IMouseEvent {
   @scala.inline
   def apply[T](name: mousedown | mousemove | mouseup, source: T): IMouseEvent[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMouseEvent[T]]
   }
 }

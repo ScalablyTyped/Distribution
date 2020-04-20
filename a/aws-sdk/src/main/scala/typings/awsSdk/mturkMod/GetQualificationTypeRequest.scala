@@ -16,7 +16,6 @@ object GetQualificationTypeRequest {
   @scala.inline
   def apply(QualificationTypeId: EntityId): GetQualificationTypeRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetQualificationTypeRequest]
   }
 }

@@ -13,7 +13,6 @@ object PickImpluseCSS {
   @scala.inline
   def apply(useCSS: Boolean): PickImpluseCSS = {
     val __obj = js.Dynamic.literal(useCSS = useCSS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpluseCSS]
   }
 }

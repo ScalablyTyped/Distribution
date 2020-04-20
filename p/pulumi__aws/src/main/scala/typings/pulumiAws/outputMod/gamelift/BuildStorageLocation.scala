@@ -24,7 +24,6 @@ object BuildStorageLocation {
   @scala.inline
   def apply(bucket: String, key: String, roleArn: String): BuildStorageLocation = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildStorageLocation]
   }
 }

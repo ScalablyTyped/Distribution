@@ -15,7 +15,6 @@ object IXmlDtdParamEntityRefOptions {
   @scala.inline
   def apply(name: String): IXmlDtdParamEntityRefOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IXmlDtdParamEntityRefOptions]
   }
 }

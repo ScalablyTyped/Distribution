@@ -20,7 +20,6 @@ object IWalker {
     walk: SourceFile => Unit
   ): IWalker = {
     val __obj = js.Dynamic.literal(getFailures = js.Any.fromFunction0(getFailures), getSourceFile = js.Any.fromFunction0(getSourceFile), walk = js.Any.fromFunction1(walk))
-  
     __obj.asInstanceOf[IWalker]
   }
 }

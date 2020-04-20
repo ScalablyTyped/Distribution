@@ -14,7 +14,6 @@ object AnonAutoSave {
   @scala.inline
   def apply(autoSave: js.Any, defaultContent: String, name: String): AnonAutoSave = {
     val __obj = js.Dynamic.literal(autoSave = autoSave.asInstanceOf[js.Any], defaultContent = defaultContent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutoSave]
   }
 }

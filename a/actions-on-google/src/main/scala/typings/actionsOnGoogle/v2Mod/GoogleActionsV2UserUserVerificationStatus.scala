@@ -13,12 +13,10 @@ trait GoogleActionsV2UserUserVerificationStatus extends js.Object
 
 object GoogleActionsV2UserUserVerificationStatus {
   @scala.inline
-  def GUEST: typings.actionsOnGoogle.actionsOnGoogleStrings.GUEST = this.cast("GUEST")
+  def GUEST: typings.actionsOnGoogle.actionsOnGoogleStrings.GUEST = "GUEST".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GUEST]
   @scala.inline
-  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = this.cast("UNKNOWN")
+  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
   @scala.inline
-  def VERIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.VERIFIED = this.cast("VERIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VERIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.VERIFIED = "VERIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VERIFIED]
 }
 

@@ -12,7 +12,6 @@ object Anon0 {
   @scala.inline
   def apply(onPress: () => Unit): Anon0 = {
     val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction0(onPress))
-  
     __obj.asInstanceOf[Anon0]
   }
 }

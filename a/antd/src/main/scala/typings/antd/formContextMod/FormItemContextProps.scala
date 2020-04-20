@@ -12,7 +12,6 @@ object FormItemContextProps {
   @scala.inline
   def apply(updateItemErrors: (String, js.Array[String]) => Unit): FormItemContextProps = {
     val __obj = js.Dynamic.literal(updateItemErrors = js.Any.fromFunction2(updateItemErrors))
-  
     __obj.asInstanceOf[FormItemContextProps]
   }
 }

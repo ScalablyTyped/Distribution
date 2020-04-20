@@ -16,7 +16,6 @@ object ElasticGpuSpecification {
   @scala.inline
   def apply(Type: String): ElasticGpuSpecification = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElasticGpuSpecification]
   }
 }

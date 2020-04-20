@@ -16,7 +16,6 @@ object GetUserArgs {
   @scala.inline
   def apply(userName: String): GetUserArgs = {
     val __obj = js.Dynamic.literal(userName = userName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUserArgs]
   }
 }

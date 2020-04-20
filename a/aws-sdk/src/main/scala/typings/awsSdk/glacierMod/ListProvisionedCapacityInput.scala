@@ -16,7 +16,6 @@ object ListProvisionedCapacityInput {
   @scala.inline
   def apply(accountId: String): ListProvisionedCapacityInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListProvisionedCapacityInput]
   }
 }

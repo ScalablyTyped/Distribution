@@ -13,7 +13,6 @@ object PickImpladdTouchEvents {
   @scala.inline
   def apply(addTouchEvents: Boolean): PickImpladdTouchEvents = {
     val __obj = js.Dynamic.literal(addTouchEvents = addTouchEvents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpladdTouchEvents]
   }
 }

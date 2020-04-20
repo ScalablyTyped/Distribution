@@ -16,18 +16,16 @@ trait NotificationOption extends js.Object
 
 object NotificationOption {
   @scala.inline
-  def alert: typings.reactNativePermissions.reactNativePermissionsStrings.alert = this.cast("alert")
+  def alert: typings.reactNativePermissions.reactNativePermissionsStrings.alert = "alert".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.alert]
   @scala.inline
-  def badge: typings.reactNativePermissions.reactNativePermissionsStrings.badge = this.cast("badge")
+  def badge: typings.reactNativePermissions.reactNativePermissionsStrings.badge = "badge".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.badge]
   @scala.inline
-  def carPlay: typings.reactNativePermissions.reactNativePermissionsStrings.carPlay = this.cast("carPlay")
+  def carPlay: typings.reactNativePermissions.reactNativePermissionsStrings.carPlay = "carPlay".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.carPlay]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def criticalAlert: typings.reactNativePermissions.reactNativePermissionsStrings.criticalAlert = "criticalAlert".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.criticalAlert]
   @scala.inline
-  def criticalAlert: typings.reactNativePermissions.reactNativePermissionsStrings.criticalAlert = this.cast("criticalAlert")
+  def provisional: typings.reactNativePermissions.reactNativePermissionsStrings.provisional = "provisional".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.provisional]
   @scala.inline
-  def provisional: typings.reactNativePermissions.reactNativePermissionsStrings.provisional = this.cast("provisional")
-  @scala.inline
-  def sound: typings.reactNativePermissions.reactNativePermissionsStrings.sound = this.cast("sound")
+  def sound: typings.reactNativePermissions.reactNativePermissionsStrings.sound = "sound".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.sound]
 }
 

@@ -13,7 +13,6 @@ object GistsDeleteCommentParams {
   @scala.inline
   def apply(comment_id: Double, gist_id: String): GistsDeleteCommentParams = {
     val __obj = js.Dynamic.literal(comment_id = comment_id.asInstanceOf[js.Any], gist_id = gist_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GistsDeleteCommentParams]
   }
 }

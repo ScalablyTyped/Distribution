@@ -13,7 +13,6 @@ object CurveControl {
   @scala.inline
   def apply(c1: Point, c2: Point): CurveControl = {
     val __obj = js.Dynamic.literal(c1 = c1.asInstanceOf[js.Any], c2 = c2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CurveControl]
   }
 }

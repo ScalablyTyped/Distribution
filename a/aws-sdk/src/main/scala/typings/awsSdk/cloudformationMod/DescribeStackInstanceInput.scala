@@ -11,7 +11,7 @@ trait DescribeStackInstanceInput extends js.Object {
     */
   var StackInstanceAccount: Account = js.native
   /**
-    * The name of a region that's associated with this stack instance.
+    * The name of a Region that's associated with this stack instance.
     */
   var StackInstanceRegion: Region = js.native
   /**
@@ -24,7 +24,6 @@ object DescribeStackInstanceInput {
   @scala.inline
   def apply(StackInstanceAccount: Account, StackInstanceRegion: Region, StackSetName: StackSetName): DescribeStackInstanceInput = {
     val __obj = js.Dynamic.literal(StackInstanceAccount = StackInstanceAccount.asInstanceOf[js.Any], StackInstanceRegion = StackInstanceRegion.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStackInstanceInput]
   }
 }

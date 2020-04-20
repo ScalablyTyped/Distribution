@@ -14,7 +14,6 @@ object DependencyData {
   @scala.inline
   def apply(input: String, map: js.Array[AnonKeyString]): DependencyData = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DependencyData]
   }
 }

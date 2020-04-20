@@ -13,7 +13,6 @@ object IBadgeNotificationFactory {
   @scala.inline
   def apply(createBadgeNotification: XmlDocument => BadgeNotification): IBadgeNotificationFactory = {
     val __obj = js.Dynamic.literal(createBadgeNotification = js.Any.fromFunction1(createBadgeNotification))
-  
     __obj.asInstanceOf[IBadgeNotificationFactory]
   }
 }

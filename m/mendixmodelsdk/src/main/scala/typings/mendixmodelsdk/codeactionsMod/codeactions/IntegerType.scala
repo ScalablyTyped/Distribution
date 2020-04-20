@@ -32,9 +32,9 @@ class IntegerType protected () extends PrimitiveType {
   @JSName("model")
   var model_FIntegerType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MIntegerType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MIntegerType: BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  def containerAsCodeAction_MIntegerType(): CodeAction = js.native
+  def containerAsCodeAction_MIntegerType: CodeAction = js.native
 }
 
 /* static members */

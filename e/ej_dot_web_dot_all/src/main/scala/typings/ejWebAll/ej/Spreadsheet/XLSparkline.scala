@@ -44,7 +44,6 @@ object XLSparkline {
     createSparkline: (String, String, String, SparklineOptions, Double) => Unit
   ): XLSparkline = {
     val __obj = js.Dynamic.literal(changePointColor = js.Any.fromFunction3(changePointColor), changeType = js.Any.fromFunction3(changeType), createSparkline = js.Any.fromFunction5(createSparkline))
-  
     __obj.asInstanceOf[XLSparkline]
   }
 }

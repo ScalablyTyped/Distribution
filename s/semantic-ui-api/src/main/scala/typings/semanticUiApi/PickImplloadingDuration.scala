@@ -13,7 +13,6 @@ object PickImplloadingDuration {
   @scala.inline
   def apply(loadingDuration: Double): PickImplloadingDuration = {
     val __obj = js.Dynamic.literal(loadingDuration = loadingDuration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplloadingDuration]
   }
 }

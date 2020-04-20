@@ -43,7 +43,6 @@ object TypeofsidebarAction {
     setTitle: AnonWindowId => js.Promise[Unit]
   ): TypeofsidebarAction = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getPanel = js.Any.fromFunction1(getPanel), getTitle = js.Any.fromFunction1(getTitle), isOpen = js.Any.fromFunction1(isOpen), open = js.Any.fromFunction0(open), setIcon = js.Any.fromFunction1(setIcon), setPanel = js.Any.fromFunction1(setPanel), setTitle = js.Any.fromFunction1(setTitle))
-  
     __obj.asInstanceOf[TypeofsidebarAction]
   }
 }

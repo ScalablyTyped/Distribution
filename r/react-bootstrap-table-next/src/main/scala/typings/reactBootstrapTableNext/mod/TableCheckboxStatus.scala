@@ -13,12 +13,10 @@ trait TableCheckboxStatus extends js.Object
 
 object TableCheckboxStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checked: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.checked = "checked".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.checked]
   @scala.inline
-  def checked: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.checked = this.cast("checked")
+  def indeterminate: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.indeterminate = "indeterminate".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.indeterminate]
   @scala.inline
-  def indeterminate: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.indeterminate = this.cast("indeterminate")
-  @scala.inline
-  def unchecked: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.unchecked = this.cast("unchecked")
+  def unchecked: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.unchecked = "unchecked".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.unchecked]
 }
 

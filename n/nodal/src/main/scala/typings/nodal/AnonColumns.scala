@@ -14,7 +14,6 @@ object AnonColumns {
   @scala.inline
   def apply(columns: js.Array[IColumn], table: String): AnonColumns = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColumns]
   }
 }

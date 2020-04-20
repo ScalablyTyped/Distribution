@@ -22,7 +22,7 @@ class ɵangularPackagesCoreCoreD protected () extends ReflectiveInjector {
   var objs: js.Array[_] = js.native
   @JSName("parent")
   val parent_FɵangularPackagesCoreCoreD: Injector | Null = js.native
-  def displayName(): String = js.native
+  def displayName: String = js.native
   def getProviderAtIndex(index: Double): ResolvedReflectiveProvider = js.native
 }
 

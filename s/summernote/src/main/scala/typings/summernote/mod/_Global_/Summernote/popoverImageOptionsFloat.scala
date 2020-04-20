@@ -13,12 +13,10 @@ trait popoverImageOptionsFloat extends js.Object
 
 object popoverImageOptionsFloat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def floatLeft: typings.summernote.summernoteStrings.floatLeft = "floatLeft".asInstanceOf[typings.summernote.summernoteStrings.floatLeft]
   @scala.inline
-  def floatLeft: typings.summernote.summernoteStrings.floatLeft = this.cast("floatLeft")
+  def floatNone: typings.summernote.summernoteStrings.floatNone = "floatNone".asInstanceOf[typings.summernote.summernoteStrings.floatNone]
   @scala.inline
-  def floatNone: typings.summernote.summernoteStrings.floatNone = this.cast("floatNone")
-  @scala.inline
-  def floatRight: typings.summernote.summernoteStrings.floatRight = this.cast("floatRight")
+  def floatRight: typings.summernote.summernoteStrings.floatRight = "floatRight".asInstanceOf[typings.summernote.summernoteStrings.floatRight]
 }
 

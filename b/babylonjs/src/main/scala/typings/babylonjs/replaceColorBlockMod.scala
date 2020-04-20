@@ -19,23 +19,23 @@ object replaceColorBlockMod extends js.Object {
     /**
       * Gets the distance input component
       */
-    def distance(): NodeMaterialConnectionPoint = js.native
+    def distance: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the output component
       */
-    def output(): NodeMaterialConnectionPoint = js.native
+    def output: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the reference input component
       */
-    def reference(): NodeMaterialConnectionPoint = js.native
+    def reference: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the replacement input component
       */
-    def replacement(): NodeMaterialConnectionPoint = js.native
+    def replacement: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the value input component
       */
-    def value(): NodeMaterialConnectionPoint = js.native
+    def value: NodeMaterialConnectionPoint = js.native
   }
   
 }

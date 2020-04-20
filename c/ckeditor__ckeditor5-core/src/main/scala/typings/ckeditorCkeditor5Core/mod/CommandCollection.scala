@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ckeditor/ckeditor5-core", "CommandCollection")
 @js.native
 class CommandCollection () extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[
     Iterator[js.Tuple2[String, Command[js.UndefOr[scala.Nothing]]], _, js.UndefOr[scala.Nothing]]
   ] = js.native

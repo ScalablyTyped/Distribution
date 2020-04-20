@@ -16,12 +16,10 @@ trait ContentType extends js.Object
 
 object ContentType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def directory: typings.jupyterlabServices.jupyterlabServicesStrings.directory = "directory".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.directory]
   @scala.inline
-  def directory: typings.jupyterlabServices.jupyterlabServicesStrings.directory = this.cast("directory")
+  def file: typings.jupyterlabServices.jupyterlabServicesStrings.file = "file".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.file]
   @scala.inline
-  def file: typings.jupyterlabServices.jupyterlabServicesStrings.file = this.cast("file")
-  @scala.inline
-  def notebook: typings.jupyterlabServices.jupyterlabServicesStrings.notebook = this.cast("notebook")
+  def notebook: typings.jupyterlabServices.jupyterlabServicesStrings.notebook = "notebook".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.notebook]
 }
 

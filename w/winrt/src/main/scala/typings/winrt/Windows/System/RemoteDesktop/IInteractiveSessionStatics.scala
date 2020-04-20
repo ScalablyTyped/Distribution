@@ -12,7 +12,6 @@ object IInteractiveSessionStatics {
   @scala.inline
   def apply(isRemote: Boolean): IInteractiveSessionStatics = {
     val __obj = js.Dynamic.literal(isRemote = isRemote.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IInteractiveSessionStatics]
   }
 }

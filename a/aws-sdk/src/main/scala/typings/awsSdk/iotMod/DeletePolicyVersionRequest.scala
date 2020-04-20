@@ -20,7 +20,6 @@ object DeletePolicyVersionRequest {
   @scala.inline
   def apply(policyName: PolicyName, policyVersionId: PolicyVersionId): DeletePolicyVersionRequest = {
     val __obj = js.Dynamic.literal(policyName = policyName.asInstanceOf[js.Any], policyVersionId = policyVersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePolicyVersionRequest]
   }
 }

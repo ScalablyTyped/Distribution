@@ -35,7 +35,6 @@ object INxDerivedFieldsData {
     qTags: js.Array[String]
   ): INxDerivedFieldsData = {
     val __obj = js.Dynamic.literal(qDerivedDefinitionName = qDerivedDefinitionName.asInstanceOf[js.Any], qFieldDefs = qFieldDefs.asInstanceOf[js.Any], qGroupDefs = qGroupDefs.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxDerivedFieldsData]
   }
 }

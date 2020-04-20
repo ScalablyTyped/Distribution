@@ -12,10 +12,8 @@ trait SocketType extends js.Object
 
 object SocketType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def udp4: typings.node.nodeStrings.udp4 = "udp4".asInstanceOf[typings.node.nodeStrings.udp4]
   @scala.inline
-  def udp4: typings.node.nodeStrings.udp4 = this.cast("udp4")
-  @scala.inline
-  def udp6: typings.node.nodeStrings.udp6 = this.cast("udp6")
+  def udp6: typings.node.nodeStrings.udp6 = "udp6".asInstanceOf[typings.node.nodeStrings.udp6]
 }
 

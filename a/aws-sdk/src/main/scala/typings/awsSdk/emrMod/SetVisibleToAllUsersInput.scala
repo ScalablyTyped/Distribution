@@ -20,7 +20,6 @@ object SetVisibleToAllUsersInput {
   @scala.inline
   def apply(JobFlowIds: XmlStringList, VisibleToAllUsers: Boolean): SetVisibleToAllUsersInput = {
     val __obj = js.Dynamic.literal(JobFlowIds = JobFlowIds.asInstanceOf[js.Any], VisibleToAllUsers = VisibleToAllUsers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetVisibleToAllUsersInput]
   }
 }

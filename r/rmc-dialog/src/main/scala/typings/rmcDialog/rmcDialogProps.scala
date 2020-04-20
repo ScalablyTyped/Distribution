@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 
 trait rmcDialogProps {
   @scala.inline
-  def DialogProps: IDialogPropTypes.type = typings.rmcDialog.idialogproptypesMod.IDialogPropTypes
+  def DialogProps: IDialogPropTypes.type = IDialogPropTypes
   type DialogProps = IDialogPropTypes
   @scala.inline
-  def LazyRenderBoxProps: ILazyRenderBoxPropTypes.type = typings.rmcDialog.lazyRenderBoxMod.ILazyRenderBoxPropTypes
+  def LazyRenderBoxProps: ILazyRenderBoxPropTypes.type = ILazyRenderBoxPropTypes
   type LazyRenderBoxProps = ILazyRenderBoxPropTypes
   @scala.inline
-  def ModalProps: IModalPropTypes.type = typings.rmcDialog.modalMod.IModalPropTypes
+  def ModalProps: IModalPropTypes.type = IModalPropTypes
   type ModalProps = IModalPropTypes
   @scala.inline
-  def RmcDialogProps: IDialogPropTypes.type = typings.rmcDialog.idialogproptypesMod.IDialogPropTypes
+  def RmcDialogProps: IDialogPropTypes.type = IDialogPropTypes
   type RmcDialogProps = IDialogPropTypes
 }
 

@@ -14,14 +14,12 @@ trait FormControlLabelClassKey extends js.Object
 
 object FormControlLabelClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
   @scala.inline
-  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = this.cast("disabled")
+  def label: typings.materialUiCore.materialUiCoreStrings.label = "label".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.label]
   @scala.inline
-  def label: typings.materialUiCore.materialUiCoreStrings.label = this.cast("label")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
-  @scala.inline
-  def start: typings.materialUiCore.materialUiCoreStrings.start = this.cast("start")
+  def start: typings.materialUiCore.materialUiCoreStrings.start = "start".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.start]
 }
 

@@ -31,7 +31,6 @@ object AnonGH {
   @scala.inline
   def apply(GH: GH2O, GO: GHO2, KH: KH2O, KO: KHO2, LH: LH2O, LO: LHO2, UH: UH2O, UO: UHO2, ZH: ZH2O, ZO: ZHO2): AnonGH = {
     val __obj = js.Dynamic.literal(GH = GH.asInstanceOf[js.Any], GO = GO.asInstanceOf[js.Any], KH = KH.asInstanceOf[js.Any], KO = KO.asInstanceOf[js.Any], LH = LH.asInstanceOf[js.Any], LO = LO.asInstanceOf[js.Any], UH = UH.asInstanceOf[js.Any], UO = UO.asInstanceOf[js.Any], ZH = ZH.asInstanceOf[js.Any], ZO = ZO.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGH]
   }
 }

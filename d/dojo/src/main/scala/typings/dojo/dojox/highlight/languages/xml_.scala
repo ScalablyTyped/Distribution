@@ -47,7 +47,6 @@ object xml_ {
     modes: js.Array[_]
   ): xml_ = {
     val __obj = js.Dynamic.literal(XML_ATTR = XML_ATTR.asInstanceOf[js.Any], XML_COMMENT = XML_COMMENT.asInstanceOf[js.Any], XML_VALUE = XML_VALUE.asInstanceOf[js.Any], case_insensitive = case_insensitive.asInstanceOf[js.Any], defaultMode = defaultMode.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[xml_]
   }
 }

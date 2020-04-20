@@ -27,7 +27,6 @@ object AccountDisplayInfo {
   @scala.inline
   def apply(accountType: String, contextualDisplayName: String, displayName: String, userId: String): AccountDisplayInfo = {
     val __obj = js.Dynamic.literal(accountType = accountType.asInstanceOf[js.Any], contextualDisplayName = contextualDisplayName.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountDisplayInfo]
   }
 }

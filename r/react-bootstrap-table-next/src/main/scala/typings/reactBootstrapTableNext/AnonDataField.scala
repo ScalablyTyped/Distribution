@@ -14,7 +14,6 @@ object AnonDataField {
   @scala.inline
   def apply(dataField: js.Any, newValue: js.Any, rowId: String): AnonDataField = {
     val __obj = js.Dynamic.literal(dataField = dataField.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], rowId = rowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDataField]
   }
 }

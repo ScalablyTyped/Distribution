@@ -14,7 +14,6 @@ object GetFunctionEnvironment {
   @scala.inline
   def apply(variables: StringDictionary[String]): GetFunctionEnvironment = {
     val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFunctionEnvironment]
   }
 }

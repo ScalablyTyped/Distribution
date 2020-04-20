@@ -13,7 +13,6 @@ object AnonFlexWrap {
   @scala.inline
   def apply(flexDirection: String, flexWrap: String): AnonFlexWrap = {
     val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], flexWrap = flexWrap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlexWrap]
   }
 }

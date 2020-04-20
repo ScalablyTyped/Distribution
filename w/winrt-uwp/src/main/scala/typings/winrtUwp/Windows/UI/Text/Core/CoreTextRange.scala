@@ -16,7 +16,6 @@ object CoreTextRange {
   @scala.inline
   def apply(endCaretPosition: Double, startCaretPosition: Double): CoreTextRange = {
     val __obj = js.Dynamic.literal(endCaretPosition = endCaretPosition.asInstanceOf[js.Any], startCaretPosition = startCaretPosition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CoreTextRange]
   }
 }

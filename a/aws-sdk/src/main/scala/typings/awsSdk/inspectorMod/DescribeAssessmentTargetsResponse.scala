@@ -20,7 +20,6 @@ object DescribeAssessmentTargetsResponse {
   @scala.inline
   def apply(assessmentTargets: AssessmentTargetList, failedItems: FailedItems): DescribeAssessmentTargetsResponse = {
     val __obj = js.Dynamic.literal(assessmentTargets = assessmentTargets.asInstanceOf[js.Any], failedItems = failedItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAssessmentTargetsResponse]
   }
 }

@@ -14,7 +14,6 @@ object AnonCancelWb {
   @scala.inline
   def apply(Cancel: Boolean, Wb: Workbook): AnonCancelWb = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelWb]
   }
 }

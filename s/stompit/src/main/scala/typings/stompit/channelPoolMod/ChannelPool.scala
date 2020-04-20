@@ -17,7 +17,6 @@ object ChannelPool {
     close: () => Unit
   ): ChannelPool = {
     val __obj = js.Dynamic.literal(channel = js.Any.fromFunction1(channel), close = js.Any.fromFunction0(close))
-  
     __obj.asInstanceOf[ChannelPool]
   }
 }

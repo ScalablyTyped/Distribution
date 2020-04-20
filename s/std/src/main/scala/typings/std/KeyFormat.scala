@@ -14,14 +14,12 @@ trait KeyFormat extends js.Object
 
 object KeyFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def jwk: typings.std.stdStrings.jwk = "jwk".asInstanceOf[typings.std.stdStrings.jwk]
   @scala.inline
-  def jwk: typings.std.stdStrings.jwk = this.cast("jwk")
+  def pkcs8: typings.std.stdStrings.pkcs8 = "pkcs8".asInstanceOf[typings.std.stdStrings.pkcs8]
   @scala.inline
-  def pkcs8: typings.std.stdStrings.pkcs8 = this.cast("pkcs8")
+  def raw: typings.std.stdStrings.raw = "raw".asInstanceOf[typings.std.stdStrings.raw]
   @scala.inline
-  def raw: typings.std.stdStrings.raw = this.cast("raw")
-  @scala.inline
-  def spki: typings.std.stdStrings.spki = this.cast("spki")
+  def spki: typings.std.stdStrings.spki = "spki".asInstanceOf[typings.std.stdStrings.spki]
 }
 

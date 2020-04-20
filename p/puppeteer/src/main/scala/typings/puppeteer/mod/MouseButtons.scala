@@ -13,12 +13,10 @@ trait MouseButtons extends js.Object
 
 object MouseButtons {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.puppeteer.puppeteerStrings.left = "left".asInstanceOf[typings.puppeteer.puppeteerStrings.left]
   @scala.inline
-  def left: typings.puppeteer.puppeteerStrings.left = this.cast("left")
+  def middle: typings.puppeteer.puppeteerStrings.middle = "middle".asInstanceOf[typings.puppeteer.puppeteerStrings.middle]
   @scala.inline
-  def middle: typings.puppeteer.puppeteerStrings.middle = this.cast("middle")
-  @scala.inline
-  def right: typings.puppeteer.puppeteerStrings.right = this.cast("right")
+  def right: typings.puppeteer.puppeteerStrings.right = "right".asInstanceOf[typings.puppeteer.puppeteerStrings.right]
 }
 

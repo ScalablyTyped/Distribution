@@ -13,7 +13,6 @@ object IStorageFolderStatics {
   @scala.inline
   def apply(getFolderFromPathAsync: String => IAsyncOperation[StorageFolder]): IStorageFolderStatics = {
     val __obj = js.Dynamic.literal(getFolderFromPathAsync = js.Any.fromFunction1(getFolderFromPathAsync))
-  
     __obj.asInstanceOf[IStorageFolderStatics]
   }
 }

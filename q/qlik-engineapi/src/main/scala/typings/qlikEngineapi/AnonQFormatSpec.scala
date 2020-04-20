@@ -14,7 +14,6 @@ object AnonQFormatSpec {
   @scala.inline
   def apply(qFormatSpec: String, qPreview: js.Array[IDataRecord]): AnonQFormatSpec = {
     val __obj = js.Dynamic.literal(qFormatSpec = qFormatSpec.asInstanceOf[js.Any], qPreview = qPreview.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQFormatSpec]
   }
 }

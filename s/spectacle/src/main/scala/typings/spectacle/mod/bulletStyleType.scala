@@ -18,16 +18,14 @@ trait bulletStyleType extends js.Object
 
 object bulletStyleType {
   @scala.inline
-  def arrow: typings.spectacle.spectacleStrings.arrow = this.cast("arrow")
+  def arrow: typings.spectacle.spectacleStrings.arrow = "arrow".asInstanceOf[typings.spectacle.spectacleStrings.arrow]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def classicCheck: typings.spectacle.spectacleStrings.classicCheck = "classicCheck".asInstanceOf[typings.spectacle.spectacleStrings.classicCheck]
   @scala.inline
-  def classicCheck: typings.spectacle.spectacleStrings.classicCheck = this.cast("classicCheck")
+  def cross: typings.spectacle.spectacleStrings.cross = "cross".asInstanceOf[typings.spectacle.spectacleStrings.cross]
   @scala.inline
-  def cross: typings.spectacle.spectacleStrings.cross = this.cast("cross")
+  def greenCheck: typings.spectacle.spectacleStrings.greenCheck = "greenCheck".asInstanceOf[typings.spectacle.spectacleStrings.greenCheck]
   @scala.inline
-  def greenCheck: typings.spectacle.spectacleStrings.greenCheck = this.cast("greenCheck")
-  @scala.inline
-  def star: typings.spectacle.spectacleStrings.star = this.cast("star")
+  def star: typings.spectacle.spectacleStrings.star = "star".asInstanceOf[typings.spectacle.spectacleStrings.star]
 }
 

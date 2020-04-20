@@ -45,7 +45,6 @@ object NodePoolsResource {
     update: AnonAccesstoken => Request_[Operation]
   ): NodePoolsResource = {
     val __obj = js.Dynamic.literal(autoscaling = js.Any.fromFunction1(autoscaling), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), rollback = js.Any.fromFunction1(rollback), setManagement = js.Any.fromFunction1(setManagement), setSize = js.Any.fromFunction1(setSize), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[NodePoolsResource]
   }
 }

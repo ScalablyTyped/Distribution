@@ -14,7 +14,6 @@ object AnonDimensions {
   @scala.inline
   def apply(dimensions: Double, holes: js.Array[Double], vertices: js.Array[Double]): AnonDimensions = {
     val __obj = js.Dynamic.literal(dimensions = dimensions.asInstanceOf[js.Any], holes = holes.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDimensions]
   }
 }

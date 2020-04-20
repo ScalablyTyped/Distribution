@@ -16,12 +16,10 @@ trait htmlSelectType extends js.Object
 
 object htmlSelectType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlSelectTypeSelectMultiple: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlSelectTypeSelectMultiple: `2` = this.cast(2)
+  def htmlSelectTypeSelectOne: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlSelectTypeSelectOne: `1` = this.cast(1)
-  @scala.inline
-  def htmlSelectType_Max: `2147483647` = this.cast(2147483647)
+  def htmlSelectType_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

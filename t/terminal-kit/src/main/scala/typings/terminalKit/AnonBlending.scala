@@ -13,7 +13,6 @@ object AnonBlending {
   @scala.inline
   def apply(blending: IsBlending): AnonBlending = {
     val __obj = js.Dynamic.literal(blending = blending.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBlending]
   }
 }

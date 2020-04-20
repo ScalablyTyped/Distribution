@@ -31,7 +31,6 @@ object SailsHook {
   @scala.inline
   def apply(initialize: js.Function0[_] => Unit, routes: AnonAfter): SailsHook = {
     val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize), routes = routes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SailsHook]
   }
 }

@@ -12,10 +12,8 @@ trait TransitRoutingPreference extends js.Object
 
 object TransitRoutingPreference {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fewer_transfers: typings.googleMaps.googleMapsStrings.fewer_transfers = "fewer_transfers".asInstanceOf[typings.googleMaps.googleMapsStrings.fewer_transfers]
   @scala.inline
-  def fewer_transfers: typings.googleMaps.googleMapsStrings.fewer_transfers = this.cast("fewer_transfers")
-  @scala.inline
-  def less_walking: typings.googleMaps.googleMapsStrings.less_walking = this.cast("less_walking")
+  def less_walking: typings.googleMaps.googleMapsStrings.less_walking = "less_walking".asInstanceOf[typings.googleMaps.googleMapsStrings.less_walking]
 }
 

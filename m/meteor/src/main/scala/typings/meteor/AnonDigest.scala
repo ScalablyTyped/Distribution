@@ -14,7 +14,6 @@ object AnonDigest {
   @scala.inline
   def apply(algorithm: `sha-256`, digest: String): AnonDigest = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDigest]
   }
 }

@@ -24,7 +24,6 @@ object State {
     panes: js.Array[PaneProperty]
   ): State = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], isPressed = isPressed.asInstanceOf[js.Any], isResizing = isResizing.asInstanceOf[js.Any], lastPressed = lastPressed.asInstanceOf[js.Any], mouse = mouse.asInstanceOf[js.Any], panes = panes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnonSplit extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.split)
+  @JSName(js.Symbol.split)
   var split: js.Function2[
     /* string */ java.lang.String, 
     /* limit */ js.UndefOr[Double], 

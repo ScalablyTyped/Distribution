@@ -14,7 +14,6 @@ object AnonExportAs {
   @scala.inline
   def apply(exportAs: String, symbol: StaticSymbol): AnonExportAs = {
     val __obj = js.Dynamic.literal(exportAs = exportAs.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExportAs]
   }
 }

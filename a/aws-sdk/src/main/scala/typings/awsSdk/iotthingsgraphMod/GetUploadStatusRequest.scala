@@ -16,7 +16,6 @@ object GetUploadStatusRequest {
   @scala.inline
   def apply(uploadId: UploadId): GetUploadStatusRequest = {
     val __obj = js.Dynamic.literal(uploadId = uploadId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUploadStatusRequest]
   }
 }

@@ -15,7 +15,6 @@ object ChecksListSuitesForRefResponseCheckSuitesItemAppPermissions {
   @scala.inline
   def apply(contents: String, issues: String, metadata: String, single_file: String): ChecksListSuitesForRefResponseCheckSuitesItemAppPermissions = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], single_file = single_file.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChecksListSuitesForRefResponseCheckSuitesItemAppPermissions]
   }
 }

@@ -18,7 +18,6 @@ object SentenceOptions {
   @scala.inline
   def apply(punctuation: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean, words: Double): SentenceOptions = {
     val __obj = js.Dynamic.literal(punctuation = punctuation.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SentenceOptions]
   }
 }

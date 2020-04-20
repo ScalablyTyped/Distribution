@@ -16,7 +16,6 @@ object DeleteSystemTemplateRequest {
   @scala.inline
   def apply(id: Urn): DeleteSystemTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSystemTemplateRequest]
   }
 }

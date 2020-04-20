@@ -20,7 +20,6 @@ object RegisterStreamConsumerInput {
   @scala.inline
   def apply(ConsumerName: ConsumerName, StreamARN: StreamARN): RegisterStreamConsumerInput = {
     val __obj = js.Dynamic.literal(ConsumerName = ConsumerName.asInstanceOf[js.Any], StreamARN = StreamARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterStreamConsumerInput]
   }
 }

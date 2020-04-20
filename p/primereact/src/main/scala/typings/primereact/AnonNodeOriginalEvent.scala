@@ -15,7 +15,6 @@ object AnonNodeOriginalEvent {
   @scala.inline
   def apply(node: TreeNode, originalEvent: Event_): AnonNodeOriginalEvent = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNodeOriginalEvent]
   }
 }

@@ -20,7 +20,6 @@ object CreateDirectoryRequest {
   @scala.inline
   def apply(Name: DirectoryName, SchemaArn: Arn): CreateDirectoryRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDirectoryRequest]
   }
 }

@@ -17,13 +17,11 @@ object ClosedCaptionsLoadPolicy {
   		 * For closed captions to be shown.
   		 */
   @scala.inline
-  def ForceOn: `1` = this.cast(1)
+  def ForceOn: `1` = 1.asInstanceOf[`1`]
   /**
   		 * Defaults to the user's preferences.
   		 */
   @scala.inline
-  def UserDefault: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UserDefault: `0` = 0.asInstanceOf[`0`]
 }
 

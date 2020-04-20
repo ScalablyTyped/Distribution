@@ -73,12 +73,12 @@ class NotebookSearchProvider () extends ISearchProvider[NotebookPanel] {
     * Signal indicating that something in the search has changed, so the UI should update
     */
   @JSName("changed")
-  def changed_MNotebookSearchProvider(): ISignal[this.type, Unit] = js.native
+  def changed_MNotebookSearchProvider: ISignal[this.type, Unit] = js.native
   /**
     * The current index of the selected match.
     */
   @JSName("currentMatchIndex")
-  def currentMatchIndex_MNotebookSearchProvider(): Double | Null = js.native
+  def currentMatchIndex_MNotebookSearchProvider: Double | Null = js.native
   /**
     * Clears state of a search provider to prepare for startQuery to be called
     * in order to start a new query or refresh an existing one.
@@ -124,7 +124,7 @@ class NotebookSearchProvider () extends ISearchProvider[NotebookPanel] {
     * The same list of matches provided by the startQuery promise resolution
     */
   @JSName("matches")
-  def matches_MNotebookSearchProvider(): js.Array[ISearchMatch] = js.native
+  def matches_MNotebookSearchProvider: js.Array[ISearchMatch] = js.native
   /**
     * Replace all matches in the notebook with the provided text
     *

@@ -16,7 +16,6 @@ object GetRegexPatternSetRequest {
   @scala.inline
   def apply(RegexPatternSetId: ResourceId): GetRegexPatternSetRequest = {
     val __obj = js.Dynamic.literal(RegexPatternSetId = RegexPatternSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRegexPatternSetRequest]
   }
 }

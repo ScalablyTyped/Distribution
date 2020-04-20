@@ -13,12 +13,10 @@ trait LineJoinType extends js.Object
 
 object LineJoinType {
   @scala.inline
-  def bevel: typings.weappApi.weappApiStrings.bevel = this.cast("bevel")
+  def bevel: typings.weappApi.weappApiStrings.bevel = "bevel".asInstanceOf[typings.weappApi.weappApiStrings.bevel]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def miter: typings.weappApi.weappApiStrings.miter = "miter".asInstanceOf[typings.weappApi.weappApiStrings.miter]
   @scala.inline
-  def miter: typings.weappApi.weappApiStrings.miter = this.cast("miter")
-  @scala.inline
-  def round: typings.weappApi.weappApiStrings.round = this.cast("round")
+  def round: typings.weappApi.weappApiStrings.round = "round".asInstanceOf[typings.weappApi.weappApiStrings.round]
 }
 

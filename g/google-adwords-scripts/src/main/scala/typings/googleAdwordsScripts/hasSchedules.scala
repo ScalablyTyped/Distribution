@@ -13,7 +13,6 @@ object hasSchedules {
   @scala.inline
   def apply(getSchedules: () => ExtensionSchedule, setSchedules: ExtensionScheduleInput => Unit): hasSchedules = {
     val __obj = js.Dynamic.literal(getSchedules = js.Any.fromFunction0(getSchedules), setSchedules = js.Any.fromFunction1(setSchedules))
-  
     __obj.asInstanceOf[hasSchedules]
   }
 }

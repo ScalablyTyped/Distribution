@@ -30,7 +30,6 @@ object IOptions {
     factoryOptions: IWidgetFactoryOptions[IDocumentWidget[FileEditor, IModel]]
   ): IOptions = {
     val __obj = js.Dynamic.literal(editorServices = editorServices.asInstanceOf[js.Any], factoryOptions = factoryOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

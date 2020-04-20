@@ -33,7 +33,7 @@ class EngineInstrumentation protected () extends IDisposable {
   /**
     * Gets the GPU frame time capture status
     */
-  def captureGPUFrameTime(): Boolean = js.native
+  def captureGPUFrameTime: Boolean = js.native
   /**
     * Enable or disable the GPU frame time capture
     */
@@ -41,7 +41,7 @@ class EngineInstrumentation protected () extends IDisposable {
   /**
     * Gets the shader compilation time capture status
     */
-  def captureShaderCompilationTime(): Boolean = js.native
+  def captureShaderCompilationTime: Boolean = js.native
   /**
     * Enable or disable the shader compilation time capture
     */
@@ -54,10 +54,10 @@ class EngineInstrumentation protected () extends IDisposable {
   /**
     * Gets the perf counter used for GPU frame time
     */
-  def gpuFrameTimeCounter(): PerfCounter = js.native
+  def gpuFrameTimeCounter: PerfCounter = js.native
   /**
     * Gets the perf counter used for shader compilation time
     */
-  def shaderCompilationTimeCounter(): PerfCounter = js.native
+  def shaderCompilationTimeCounter: PerfCounter = js.native
 }
 

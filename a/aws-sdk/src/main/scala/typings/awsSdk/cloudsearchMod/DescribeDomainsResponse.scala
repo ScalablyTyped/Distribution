@@ -13,7 +13,6 @@ object DescribeDomainsResponse {
   @scala.inline
   def apply(DomainStatusList: DomainStatusList): DescribeDomainsResponse = {
     val __obj = js.Dynamic.literal(DomainStatusList = DomainStatusList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDomainsResponse]
   }
 }

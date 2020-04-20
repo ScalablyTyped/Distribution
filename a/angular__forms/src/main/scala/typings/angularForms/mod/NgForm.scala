@@ -78,7 +78,7 @@ class NgForm protected ()
     * @description
     * Returns a map of the controls in this group.
     */
-  def controls(): StringDictionary[AbstractControl] = js.native
+  def controls: StringDictionary[AbstractControl] = js.native
   /**
     * @description
     * The control directive from which to get the `FormControl`.

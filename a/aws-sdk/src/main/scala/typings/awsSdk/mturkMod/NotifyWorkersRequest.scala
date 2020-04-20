@@ -24,7 +24,6 @@ object NotifyWorkersRequest {
   @scala.inline
   def apply(MessageText: String, Subject: String, WorkerIds: CustomerIdList): NotifyWorkersRequest = {
     val __obj = js.Dynamic.literal(MessageText = MessageText.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], WorkerIds = WorkerIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotifyWorkersRequest]
   }
 }

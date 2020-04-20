@@ -16,7 +16,6 @@ object DeleteForecastExportJobRequest {
   @scala.inline
   def apply(ForecastExportJobArn: Arn): DeleteForecastExportJobRequest = {
     val __obj = js.Dynamic.literal(ForecastExportJobArn = ForecastExportJobArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteForecastExportJobRequest]
   }
 }

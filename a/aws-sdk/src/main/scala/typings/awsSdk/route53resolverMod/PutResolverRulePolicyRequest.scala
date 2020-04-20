@@ -20,7 +20,6 @@ object PutResolverRulePolicyRequest {
   @scala.inline
   def apply(Arn: Arn, ResolverRulePolicy: ResolverRulePolicy): PutResolverRulePolicyRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], ResolverRulePolicy = ResolverRulePolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutResolverRulePolicyRequest]
   }
 }

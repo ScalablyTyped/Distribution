@@ -13,7 +13,6 @@ object Region {
   @scala.inline
   def apply(locations: js.Array[Location], names: Translations): Region = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Region]
   }
 }

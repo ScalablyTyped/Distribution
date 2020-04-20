@@ -13,7 +13,6 @@ object DimensionsCollection {
   @scala.inline
   def apply(list: () => typings.googleAppsScript.GoogleAppsScript.Adsense.Schema.Metadata): DimensionsCollection = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction0(list))
-  
     __obj.asInstanceOf[DimensionsCollection]
   }
 }

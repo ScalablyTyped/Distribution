@@ -36,7 +36,6 @@ object CopyFormatArgs {
   @scala.inline
   def apply(column: Double, metadata: Metadata, region: CellRegion, row: Double, value: js.Any): CopyFormatArgs = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CopyFormatArgs]
   }
 }

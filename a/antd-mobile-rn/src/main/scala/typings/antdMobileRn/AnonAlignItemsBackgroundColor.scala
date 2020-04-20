@@ -22,7 +22,6 @@ object AnonAlignItemsBackgroundColor {
     overflow: String
   ): AnonAlignItemsBackgroundColor = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlignItemsBackgroundColor]
   }
 }

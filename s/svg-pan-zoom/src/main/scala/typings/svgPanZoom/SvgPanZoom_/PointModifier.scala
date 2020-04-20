@@ -13,7 +13,6 @@ object PointModifier {
   @scala.inline
   def apply(x: Double | Boolean, y: Double | Boolean): PointModifier = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PointModifier]
   }
 }

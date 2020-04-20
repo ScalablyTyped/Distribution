@@ -1,9 +1,7 @@
 package typings.titanium.Titanium.Android
 
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.View
-import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,170 +10,134 @@ import scala.scalajs.js.annotation._
 		 * An action bar is a window feature that identifies the application and user location,
 		 * and provides user actions and navigation modes.
 		 */
-trait ActionBar extends Proxy {
+@JSGlobal("Titanium.Android.ActionBar")
+@js.native
+class ActionBar () extends Proxy {
   /**
   			 * The background image for the action bar, specified as a local file path or URL.
   			 */
-  var backgroundImage: String
+  var backgroundImage: String = js.native
   /**
   			 * Sets a view to be used for a custom navigation mode.
   			 */
-  var customView: View
+  var customView: View = js.native
   /**
   			 * Displays an "up" affordance on the "home" area of the action bar.
   			 */
-  var displayHomeAsUp: Boolean
+  var displayHomeAsUp: Boolean = js.native
   /**
   			 * Enable or disable the "home" button in the corner of the action bar.
   			 */
-  var homeButtonEnabled: Boolean
+  var homeButtonEnabled: Boolean = js.native
   /**
   			 * Sets the application icon displayed in the "home" area of the action bar, specified as a local file path or URL.
   			 */
-  var icon: String
+  var icon: String = js.native
   /**
   			 * Sets the application logo displayed in the "home" area of the action bar, specified as a local file path or URL.
   			 */
-  var logo: String
+  var logo: String = js.native
   /**
   			 * Controls the navigation mode.
   			 */
-  var navigationMode: Double
+  var navigationMode: Double = js.native
   /**
   			 * Sets the subtitle of the action bar.
   			 */
-  var subtitle: String
+  var subtitle: String = js.native
   /**
   			 * Sets the title of the action bar.
   			 */
-  var title: String
+  var title: String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.ActionBar.customView> property.
+  			 * @deprecated Access <Titanium.Android.ActionBar.customView> instead.
   			 */
-  def getCustomView(): View
+  def getCustomView(): View = js.native
   /**
   			 * Gets the value of the <Titanium.Android.ActionBar.navigationMode> property.
+  			 * @deprecated Access <Titanium.Android.ActionBar.navigationMode> instead.
   			 */
-  def getNavigationMode(): Double
+  def getNavigationMode(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.ActionBar.subtitle> property.
+  			 * @deprecated Access <Titanium.Android.ActionBar.subtitle> instead.
   			 */
-  def getSubtitle(): String
+  def getSubtitle(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.ActionBar.title> property.
+  			 * @deprecated Access <Titanium.Android.ActionBar.title> instead.
   			 */
-  def getTitle(): String
+  def getTitle(): String = js.native
   /**
   			 * Hides the action bar if it is currently showing.
   			 */
-  def hide(): Unit
+  def hide(): Unit = js.native
   /**
   			 * Callback function called when the home icon is clicked.
   			 */
-  def onHomeIconItemSelected(): js.Any
+  def onHomeIconItemSelected(args: js.Any*): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.backgroundImage> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.backgroundImage> instead.
   			 */
-  def setBackgroundImage(backgroundImage: String): Unit
+  def setBackgroundImage(backgroundImage: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.customView> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.customView> instead.
   			 */
-  def setCustomView(customView: js.Any): Unit
+  def setCustomView(customView: View): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.displayHomeAsUp> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.displayHomeAsUp> instead.
   			 */
-  def setDisplayHomeAsUp(displayHomeAsUp: Boolean): Unit
+  def setDisplayHomeAsUp(displayHomeAsUp: Boolean): Unit = js.native
   /**
   			 * Shows or hides the action bar home icon
   			 */
-  def setDisplayShowHomeEnabled(show: Boolean): Unit
+  def setDisplayShowHomeEnabled(show: Boolean): Unit = js.native
   /**
   			 * Shows or hides the action bar title/subtitle
   			 */
-  def setDisplayShowTitleEnabled(show: Boolean): Unit
+  def setDisplayShowTitleEnabled(show: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.homeButtonEnabled> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.homeButtonEnabled> instead.
   			 */
-  def setHomeButtonEnabled(homeButtonEnabled: Boolean): Unit
+  def setHomeButtonEnabled(homeButtonEnabled: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.icon> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.icon> instead.
   			 */
-  def setIcon(icon: String): Unit
+  def setIcon(icon: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.logo> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.logo> instead.
   			 */
-  def setLogo(logo: String): Unit
+  def setLogo(logo: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.navigationMode> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.navigationMode> instead.
   			 */
-  def setNavigationMode(navigationMode: Double): Unit
+  def setNavigationMode(navigationMode: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.onHomeIconItemSelected> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.onHomeIconItemSelected> instead.
   			 */
-  def setOnHomeIconItemSelected(onHomeIconItemSelected: js.Function0[_]): Unit
+  def setOnHomeIconItemSelected(onHomeIconItemSelected: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.subtitle> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.subtitle> instead.
   			 */
-  def setSubtitle(subtitle: String): Unit
+  def setSubtitle(subtitle: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.ActionBar.title> property.
+  			 * @deprecated Set the value using <Titanium.Android.ActionBar.title> instead.
   			 */
-  def setTitle(title: String): Unit
+  def setTitle(title: String): Unit = js.native
   /**
   			 * Shows the action bar if it is currently hidden.
   			 */
-  def show(): Unit
-}
-
-object ActionBar {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    backgroundImage: String,
-    bubbleParent: Boolean,
-    customView: View,
-    displayHomeAsUp: Boolean,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getCustomView: () => View,
-    getNavigationMode: () => Double,
-    getSubtitle: () => String,
-    getTitle: () => String,
-    hide: () => Unit,
-    homeButtonEnabled: Boolean,
-    icon: String,
-    logo: String,
-    navigationMode: Double,
-    onHomeIconItemSelected: () => js.Any,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setBackgroundImage: String => Unit,
-    setBubbleParent: Boolean => Unit,
-    setCustomView: js.Any => Unit,
-    setDisplayHomeAsUp: Boolean => Unit,
-    setDisplayShowHomeEnabled: Boolean => Unit,
-    setDisplayShowTitleEnabled: Boolean => Unit,
-    setHomeButtonEnabled: Boolean => Unit,
-    setIcon: String => Unit,
-    setLogo: String => Unit,
-    setNavigationMode: Double => Unit,
-    setOnHomeIconItemSelected: js.Function0[_] => Unit,
-    setSubtitle: String => Unit,
-    setTitle: String => Unit,
-    show: () => Unit,
-    subtitle: String,
-    title: String,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): ActionBar = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), backgroundImage = backgroundImage.asInstanceOf[js.Any], bubbleParent = bubbleParent.asInstanceOf[js.Any], customView = customView.asInstanceOf[js.Any], displayHomeAsUp = displayHomeAsUp.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getCustomView = js.Any.fromFunction0(getCustomView), getNavigationMode = js.Any.fromFunction0(getNavigationMode), getSubtitle = js.Any.fromFunction0(getSubtitle), getTitle = js.Any.fromFunction0(getTitle), hide = js.Any.fromFunction0(hide), homeButtonEnabled = homeButtonEnabled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], logo = logo.asInstanceOf[js.Any], navigationMode = navigationMode.asInstanceOf[js.Any], onHomeIconItemSelected = js.Any.fromFunction0(onHomeIconItemSelected), removeEventListener = js.Any.fromFunction2(removeEventListener), setBackgroundImage = js.Any.fromFunction1(setBackgroundImage), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setCustomView = js.Any.fromFunction1(setCustomView), setDisplayHomeAsUp = js.Any.fromFunction1(setDisplayHomeAsUp), setDisplayShowHomeEnabled = js.Any.fromFunction1(setDisplayShowHomeEnabled), setDisplayShowTitleEnabled = js.Any.fromFunction1(setDisplayShowTitleEnabled), setHomeButtonEnabled = js.Any.fromFunction1(setHomeButtonEnabled), setIcon = js.Any.fromFunction1(setIcon), setLogo = js.Any.fromFunction1(setLogo), setNavigationMode = js.Any.fromFunction1(setNavigationMode), setOnHomeIconItemSelected = js.Any.fromFunction1(setOnHomeIconItemSelected), setSubtitle = js.Any.fromFunction1(setSubtitle), setTitle = js.Any.fromFunction1(setTitle), show = js.Any.fromFunction0(show), subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ActionBar]
-  }
+  def show(): Unit = js.native
 }
 

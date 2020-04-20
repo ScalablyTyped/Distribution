@@ -13,7 +13,6 @@ object AnonWrite {
   @scala.inline
   def apply(write: (String, Double, IXAlign, Double, Double) => Unit): AnonWrite = {
     val __obj = js.Dynamic.literal(write = js.Any.fromFunction5(write))
-  
     __obj.asInstanceOf[AnonWrite]
   }
 }

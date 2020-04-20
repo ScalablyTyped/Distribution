@@ -20,7 +20,6 @@ object ProcessorParameter {
   @scala.inline
   def apply(ParameterName: ProcessorParameterName, ParameterValue: ProcessorParameterValue): ProcessorParameter = {
     val __obj = js.Dynamic.literal(ParameterName = ParameterName.asInstanceOf[js.Any], ParameterValue = ParameterValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessorParameter]
   }
 }

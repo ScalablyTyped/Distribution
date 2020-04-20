@@ -15,7 +15,6 @@ object Owner {
   @scala.inline
   def apply(username: String): Owner = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Owner]
   }
 }

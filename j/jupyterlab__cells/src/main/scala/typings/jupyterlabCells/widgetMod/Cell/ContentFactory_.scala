@@ -60,6 +60,6 @@ class ContentFactory_ () extends IContentFactory {
     * The readonly editor factory that create code editors
     */
   @JSName("editorFactory")
-  def editorFactory_MContentFactory_(): Factory = js.native
+  def editorFactory_MContentFactory_ : Factory = js.native
 }
 

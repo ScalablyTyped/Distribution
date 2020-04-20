@@ -13,7 +13,6 @@ object PadV2Attrs {
   @scala.inline
   def apply(constantValue: Double, paddings: js.Array[js.Tuple2[Double, Double]]): PadV2Attrs = {
     val __obj = js.Dynamic.literal(constantValue = constantValue.asInstanceOf[js.Any], paddings = paddings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PadV2Attrs]
   }
 }

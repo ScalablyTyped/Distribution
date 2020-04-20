@@ -18,22 +18,20 @@ trait AndroidRequiredPasswordType extends js.Object
 
 object AndroidRequiredPasswordType {
   @scala.inline
-  def alphabetic: typings.microsoftGraph.microsoftGraphStrings.alphabetic = this.cast("alphabetic")
+  def alphabetic: typings.microsoftGraph.microsoftGraphStrings.alphabetic = "alphabetic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphabetic]
   @scala.inline
-  def alphanumeric: typings.microsoftGraph.microsoftGraphStrings.alphanumeric = this.cast("alphanumeric")
+  def alphanumeric: typings.microsoftGraph.microsoftGraphStrings.alphanumeric = "alphanumeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumeric]
   @scala.inline
-  def alphanumericWithSymbols: typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols = this.cast("alphanumericWithSymbols")
+  def alphanumericWithSymbols: typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols = "alphanumericWithSymbols".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols]
   @scala.inline
-  def any: typings.microsoftGraph.microsoftGraphStrings.any = this.cast("any")
+  def any: typings.microsoftGraph.microsoftGraphStrings.any = "any".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.any]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = this.cast("deviceDefault")
+  def lowSecurityBiometric: typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric = "lowSecurityBiometric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric]
   @scala.inline
-  def lowSecurityBiometric: typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric = this.cast("lowSecurityBiometric")
+  def numeric: typings.microsoftGraph.microsoftGraphStrings.numeric = "numeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numeric]
   @scala.inline
-  def numeric: typings.microsoftGraph.microsoftGraphStrings.numeric = this.cast("numeric")
-  @scala.inline
-  def numericComplex: typings.microsoftGraph.microsoftGraphStrings.numericComplex = this.cast("numericComplex")
+  def numericComplex: typings.microsoftGraph.microsoftGraphStrings.numericComplex = "numericComplex".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numericComplex]
 }
 

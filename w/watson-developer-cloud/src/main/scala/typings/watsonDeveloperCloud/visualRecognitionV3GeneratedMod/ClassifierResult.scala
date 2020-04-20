@@ -18,7 +18,6 @@ object ClassifierResult {
   @scala.inline
   def apply(classes: js.Array[ClassResult], classifier_id: String, name: String): ClassifierResult = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], classifier_id = classifier_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClassifierResult]
   }
 }

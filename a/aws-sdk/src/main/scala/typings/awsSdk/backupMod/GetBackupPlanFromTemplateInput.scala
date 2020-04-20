@@ -16,7 +16,6 @@ object GetBackupPlanFromTemplateInput {
   @scala.inline
   def apply(BackupPlanTemplateId: String): GetBackupPlanFromTemplateInput = {
     val __obj = js.Dynamic.literal(BackupPlanTemplateId = BackupPlanTemplateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBackupPlanFromTemplateInput]
   }
 }

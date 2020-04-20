@@ -34,10 +34,10 @@ class BuildManager_ () extends js.Object {
   /**
     * Test whether the build service is available.
     */
-  def isAvailable(): Boolean = js.native
+  def isAvailable: Boolean = js.native
   /**
     * Test whether to check build status automatically.
     */
-  def shouldCheck(): Boolean = js.native
+  def shouldCheck: Boolean = js.native
 }
 

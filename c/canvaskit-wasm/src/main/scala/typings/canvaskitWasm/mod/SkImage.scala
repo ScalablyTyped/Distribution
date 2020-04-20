@@ -26,7 +26,6 @@ object SkImage {
     width: () => Double
   ): SkImage = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), encodeToData = js.Any.fromFunction0(encodeToData), height = js.Any.fromFunction0(height), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), readPixels = js.Any.fromFunction3(readPixels), width = js.Any.fromFunction0(width))
-  
     __obj.asInstanceOf[SkImage]
   }
 }

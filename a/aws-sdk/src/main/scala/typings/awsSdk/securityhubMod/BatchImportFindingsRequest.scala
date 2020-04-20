@@ -16,7 +16,6 @@ object BatchImportFindingsRequest {
   @scala.inline
   def apply(Findings: AwsSecurityFindingList): BatchImportFindingsRequest = {
     val __obj = js.Dynamic.literal(Findings = Findings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchImportFindingsRequest]
   }
 }

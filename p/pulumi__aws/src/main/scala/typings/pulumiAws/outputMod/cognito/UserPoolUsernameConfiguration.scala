@@ -16,7 +16,6 @@ object UserPoolUsernameConfiguration {
   @scala.inline
   def apply(caseSensitive: Boolean): UserPoolUsernameConfiguration = {
     val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserPoolUsernameConfiguration]
   }
 }

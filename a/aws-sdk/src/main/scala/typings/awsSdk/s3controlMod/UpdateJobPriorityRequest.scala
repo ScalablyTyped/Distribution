@@ -24,7 +24,6 @@ object UpdateJobPriorityRequest {
   @scala.inline
   def apply(AccountId: AccountId, JobId: JobId, Priority: JobPriority): UpdateJobPriorityRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], JobId = JobId.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateJobPriorityRequest]
   }
 }

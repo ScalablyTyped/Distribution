@@ -21,7 +21,6 @@ object IContentFactory {
     createOutputModel: typings.jupyterlabRendermime.outputmodelMod.IOutputModel.IOptions => IOutputModel
   ): IContentFactory = {
     val __obj = js.Dynamic.literal(createOutputModel = js.Any.fromFunction1(createOutputModel))
-  
     __obj.asInstanceOf[IContentFactory]
   }
 }

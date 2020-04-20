@@ -15,7 +15,6 @@ object GetCategoriesReturnType {
   @scala.inline
   def apply(categories: js.Array[String]): GetCategoriesReturnType = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCategoriesReturnType]
   }
 }

@@ -3,6 +3,7 @@ package typings.vitalsigns.mod
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.NextFunction
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.vitalsigns.mod.vitalsigns.ConstraintWrapper
@@ -23,7 +24,7 @@ trait VitalSigns_ extends js.Object {
     * @type {RequestHandler}
     */
   @JSName("express")
-  var express_Original: RequestHandler[ParamsDictionary] = js.native
+  var express_Original: RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
     * Pushes a health constraint onto this instance's constraint array.
     * Health constraints define scenarios in which VitalSigns will consider the application to be in an unhealthy state.
@@ -38,7 +39,7 @@ trait VitalSigns_ extends js.Object {
     * Gets a request handler.
     * @type {RequestHandler}
     */
-  def express(req: Request[ParamsDictionary, _, _], res: Response[_], next: NextFunction): js.Any = js.native
+  def express(req: Request[ParamsDictionary, _, _, Query], res: Response[_], next: NextFunction): js.Any = js.native
   /**
     * Retrieves an array of human-readable messages that define the specific health constraints that failed when running the last health check.
     * @returns {Array<string>} An array of failure messages.

@@ -20,7 +20,6 @@ object HostedZoneLimit {
   @scala.inline
   def apply(Type: HostedZoneLimitType, Value: LimitValue): HostedZoneLimit = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HostedZoneLimit]
   }
 }

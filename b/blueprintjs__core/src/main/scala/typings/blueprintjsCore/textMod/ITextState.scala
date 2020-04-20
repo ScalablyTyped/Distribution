@@ -13,7 +13,6 @@ object ITextState {
   @scala.inline
   def apply(isContentOverflowing: Boolean, textContent: String): ITextState = {
     val __obj = js.Dynamic.literal(isContentOverflowing = isContentOverflowing.asInstanceOf[js.Any], textContent = textContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITextState]
   }
 }

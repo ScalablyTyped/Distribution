@@ -13,7 +13,6 @@ object QuerySerializer {
   @scala.inline
   def apply(parse: String => js.Object, stringify: Params => String): QuerySerializer = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
-  
     __obj.asInstanceOf[QuerySerializer]
   }
 }

@@ -14,14 +14,12 @@ trait ParametrizationInterpolationType extends js.Object
 
 object ParametrizationInterpolationType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def centripetal: typings.vis.visStrings.centripetal = "centripetal".asInstanceOf[typings.vis.visStrings.centripetal]
   @scala.inline
-  def centripetal: typings.vis.visStrings.centripetal = this.cast("centripetal")
+  def chordal: typings.vis.visStrings.chordal = "chordal".asInstanceOf[typings.vis.visStrings.chordal]
   @scala.inline
-  def chordal: typings.vis.visStrings.chordal = this.cast("chordal")
+  def disabled: typings.vis.visStrings.disabled = "disabled".asInstanceOf[typings.vis.visStrings.disabled]
   @scala.inline
-  def disabled: typings.vis.visStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def uniform: typings.vis.visStrings.uniform = this.cast("uniform")
+  def uniform: typings.vis.visStrings.uniform = "uniform".asInstanceOf[typings.vis.visStrings.uniform]
 }
 

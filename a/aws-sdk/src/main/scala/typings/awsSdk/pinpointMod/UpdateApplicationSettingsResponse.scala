@@ -13,7 +13,6 @@ object UpdateApplicationSettingsResponse {
   @scala.inline
   def apply(ApplicationSettingsResource: ApplicationSettingsResource): UpdateApplicationSettingsResponse = {
     val __obj = js.Dynamic.literal(ApplicationSettingsResource = ApplicationSettingsResource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateApplicationSettingsResponse]
   }
 }

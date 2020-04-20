@@ -16,7 +16,6 @@ object Motion {
     animateOut: (js.Object, js.Any, js.Function) => Unit
   ): Motion = {
     val __obj = js.Dynamic.literal(animateIn = js.Any.fromFunction3(animateIn), animateOut = js.Any.fromFunction3(animateOut))
-  
     __obj.asInstanceOf[Motion]
   }
 }

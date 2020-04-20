@@ -16,7 +16,6 @@ object CreateStreamingDistributionRequest {
   @scala.inline
   def apply(StreamingDistributionConfig: StreamingDistributionConfig): CreateStreamingDistributionRequest = {
     val __obj = js.Dynamic.literal(StreamingDistributionConfig = StreamingDistributionConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateStreamingDistributionRequest]
   }
 }

@@ -25,7 +25,6 @@ object IndexCreationQuery {
     withParser: String => IndexCreationQuery
   ): IndexCreationQuery = {
     val __obj = js.Dynamic.literal(fulltext = js.Any.fromFunction0(fulltext), on = js.Any.fromFunction1(on), spatial = js.Any.fromFunction0(spatial), toQuery = js.Any.fromFunction0(toQuery), unique = js.Any.fromFunction0(unique), using = js.Any.fromFunction1(using), withParser = js.Any.fromFunction1(withParser))
-  
     __obj.asInstanceOf[IndexCreationQuery]
   }
 }

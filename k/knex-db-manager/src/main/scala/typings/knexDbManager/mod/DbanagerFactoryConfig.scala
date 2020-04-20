@@ -14,7 +14,6 @@ object DbanagerFactoryConfig {
   @scala.inline
   def apply(dbManager: DbManagerConfig, knex: Config[_] | String): DbanagerFactoryConfig = {
     val __obj = js.Dynamic.literal(dbManager = dbManager.asInstanceOf[js.Any], knex = knex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DbanagerFactoryConfig]
   }
 }

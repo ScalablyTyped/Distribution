@@ -62,7 +62,7 @@ class DocumentWidgetManager_ protected () extends IDisposable {
   /**
     * A signal emitted when one of the documents is activated.
     */
-  def activateRequested(): ISignal[this.type, String] = js.native
+  def activateRequested: ISignal[this.type, String] = js.native
   /**
     * Install the message hook for the widget and add to list
     * of known widgets.
@@ -146,7 +146,7 @@ class DocumentWidgetManager_ protected () extends IDisposable {
     * Test whether the document widget manager is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MDocumentWidgetManager_(): Boolean = js.native
+  def isDisposed_MDocumentWidgetManager_ : Boolean = js.native
   /**
     * Filter a message sent to a message handler.
     *

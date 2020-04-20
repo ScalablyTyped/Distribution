@@ -15,7 +15,6 @@ object BuildManifest {
   @scala.inline
   def apply(devFiles: js.Array[String], lowPriorityFiles: js.Array[String], pages: AnonDictpage): BuildManifest = {
     val __obj = js.Dynamic.literal(devFiles = devFiles.asInstanceOf[js.Any], lowPriorityFiles = lowPriorityFiles.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildManifest]
   }
 }

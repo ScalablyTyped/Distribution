@@ -19,8 +19,8 @@ trait NavigationScreenProp[S, P] extends js.Object {
   def dismiss(): Boolean = js.native
   @JSName("emit")
   def emit_refocus(eventName: refocus): Unit = js.native
-  def getParam[T /* <: String */](param: T): /* import warning: importer.ImportType#apply Failed type conversion: P[T] */ js.Any = js.native
-  def getParam[T /* <: String */](
+  def getParam[T /* <: /* keyof P */ String */](param: T): /* import warning: importer.ImportType#apply Failed type conversion: P[T] */ js.Any = js.native
+  def getParam[T /* <: /* keyof P */ String */](
     param: T,
     fallback: NonNullable[
       /* import warning: importer.ImportType#apply Failed type conversion: P[T] */ js.Any

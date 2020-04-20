@@ -17,7 +17,6 @@ object AnonIsHighlighted {
   @scala.inline
   def apply($disabled: Boolean, $isHighlighted: Boolean, $selected: Boolean): AnonIsHighlighted = {
     val __obj = js.Dynamic.literal($disabled = $disabled.asInstanceOf[js.Any], $isHighlighted = $isHighlighted.asInstanceOf[js.Any], $selected = $selected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsHighlighted]
   }
 }

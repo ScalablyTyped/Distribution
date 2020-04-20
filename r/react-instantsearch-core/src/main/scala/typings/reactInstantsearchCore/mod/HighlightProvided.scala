@@ -30,7 +30,6 @@ object HighlightProvided {
   @scala.inline
   def apply[TDoc](highlight: AnonHighlightProperty[TDoc] => js.Array[AnonIsHighlighted]): HighlightProvided[TDoc] = {
     val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction1(highlight))
-  
     __obj.asInstanceOf[HighlightProvided[TDoc]]
   }
 }

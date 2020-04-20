@@ -26,6 +26,6 @@ abstract class AbstractUnit protected () extends Structure {
     * if false, a load is required to access these properties.
     */
   @JSName("isLoaded")
-  def isLoaded_MAbstractUnit(): Boolean = js.native
+  def isLoaded_MAbstractUnit: Boolean = js.native
 }
 

@@ -43,7 +43,6 @@ object TestDNSAnswerResponse {
     ResponseCode: DNSRCode
   ): TestDNSAnswerResponse = {
     val __obj = js.Dynamic.literal(Nameserver = Nameserver.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any], RecordData = RecordData.asInstanceOf[js.Any], RecordName = RecordName.asInstanceOf[js.Any], RecordType = RecordType.asInstanceOf[js.Any], ResponseCode = ResponseCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestDNSAnswerResponse]
   }
 }

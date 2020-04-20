@@ -13,7 +13,6 @@ object AnonMusicgenre {
   @scala.inline
   def apply(music_genre: MusicGenre): AnonMusicgenre = {
     val __obj = js.Dynamic.literal(music_genre = music_genre.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMusicgenre]
   }
 }

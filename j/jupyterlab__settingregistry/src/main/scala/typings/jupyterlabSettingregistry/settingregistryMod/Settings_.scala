@@ -85,12 +85,12 @@ class Settings_ protected () extends ISettings {
     * A signal that emits when the plugin's settings have changed.
     */
   @JSName("changed")
-  def changed_MSettings_(): ISignal[this.type, Unit] = js.native
+  def changed_MSettings_ : ISignal[this.type, Unit] = js.native
   /**
     * The composite of user settings and extension defaults.
     */
   @JSName("composite")
-  def composite_MSettings_(): ReadonlyPartialJSONObject = js.native
+  def composite_MSettings_ : ReadonlyPartialJSONObject = js.native
   /**
     * Calculate the default value of a setting by iterating through the schema.
     *
@@ -126,14 +126,14 @@ class Settings_ protected () extends ISettings {
     * Test whether the plugin settings manager disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MSettings_(): Boolean = js.native
+  def isDisposed_MSettings_ : Boolean = js.native
   @JSName("plugin")
-  def plugin_MSettings_(): IPlugin = js.native
+  def plugin_MSettings_ : IPlugin = js.native
   /**
     * The plugin settings raw text value.
     */
   @JSName("raw")
-  def raw_MSettings_(): String = js.native
+  def raw_MSettings_ : String = js.native
   /**
     * Remove a single setting.
     *
@@ -155,7 +155,7 @@ class Settings_ protected () extends ISettings {
     * The plugin's schema.
     */
   @JSName("schema")
-  def schema_MSettings_(): ISchema = js.native
+  def schema_MSettings_ : ISchema = js.native
   /**
     * Set a single setting.
     *
@@ -174,7 +174,7 @@ class Settings_ protected () extends ISettings {
     * The user settings.
     */
   @JSName("user")
-  def user_MSettings_(): ReadonlyPartialJSONObject = js.native
+  def user_MSettings_ : ReadonlyPartialJSONObject = js.native
   /**
     * Validates raw settings with comments.
     *
@@ -188,6 +188,6 @@ class Settings_ protected () extends ISettings {
     * The published version of the NPM package containing these settings.
     */
   @JSName("version")
-  def version_MSettings_(): String = js.native
+  def version_MSettings_ : String = js.native
 }
 

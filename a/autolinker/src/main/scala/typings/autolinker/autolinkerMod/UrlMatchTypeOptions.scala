@@ -13,12 +13,10 @@ trait UrlMatchTypeOptions extends js.Object
 
 object UrlMatchTypeOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def scheme: typings.autolinker.autolinkerStrings.scheme = "scheme".asInstanceOf[typings.autolinker.autolinkerStrings.scheme]
   @scala.inline
-  def scheme: typings.autolinker.autolinkerStrings.scheme = this.cast("scheme")
+  def tld: typings.autolinker.autolinkerStrings.tld = "tld".asInstanceOf[typings.autolinker.autolinkerStrings.tld]
   @scala.inline
-  def tld: typings.autolinker.autolinkerStrings.tld = this.cast("tld")
-  @scala.inline
-  def www: typings.autolinker.autolinkerStrings.www = this.cast("www")
+  def www: typings.autolinker.autolinkerStrings.www = "www".asInstanceOf[typings.autolinker.autolinkerStrings.www]
 }
 

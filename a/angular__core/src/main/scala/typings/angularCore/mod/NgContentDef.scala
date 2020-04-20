@@ -18,7 +18,6 @@ object NgContentDef {
   @scala.inline
   def apply(index: Double): NgContentDef = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NgContentDef]
   }
 }

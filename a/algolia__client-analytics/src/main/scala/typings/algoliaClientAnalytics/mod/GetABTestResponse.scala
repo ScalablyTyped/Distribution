@@ -53,7 +53,6 @@ object GetABTestResponse {
     variants: js.Array[VariantResponse]
   ): GetABTestResponse = {
     val __obj = js.Dynamic.literal(abTestID = abTestID.asInstanceOf[js.Any], clickSignificance = clickSignificance.asInstanceOf[js.Any], conversionSignificance = conversionSignificance.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], endAt = endAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], variants = variants.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetABTestResponse]
   }
 }

@@ -24,7 +24,6 @@ object CheckpointResponseChallenge {
     url: String
   ): CheckpointResponseChallenge = {
     val __obj = js.Dynamic.literal(api_path = api_path.asInstanceOf[js.Any], hide_webview_header = hide_webview_header.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any], logout = logout.asInstanceOf[js.Any], native_flow = native_flow.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckpointResponseChallenge]
   }
 }

@@ -38,14 +38,14 @@ class DomainModel protected () extends ModuleDocument {
   val entities_FDomainModel: IList[IEntity] = js.native
   @JSName("model")
   var model_FDomainModel: IModel = js.native
-  def annotations(): IList[Annotation] = js.native
-  def associations(): IList[Association] = js.native
+  def annotations: IList[Annotation] = js.native
+  def associations: IList[Association] = js.native
   @JSName("containerAsModule")
-  def containerAsModule_MDomainModel(): Module = js.native
-  def crossAssociations(): IList[CrossAssociation] = js.native
-  def documentation(): String = js.native
+  def containerAsModule_MDomainModel: Module = js.native
+  def crossAssociations: IList[CrossAssociation] = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def entities(): IList[Entity] = js.native
+  def entities: IList[Entity] = js.native
 }
 
 /* static members */

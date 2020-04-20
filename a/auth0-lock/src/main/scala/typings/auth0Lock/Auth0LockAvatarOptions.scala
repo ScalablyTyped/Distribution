@@ -16,7 +16,6 @@ object Auth0LockAvatarOptions {
     url: (String, Auth0LockAvatarUrlCallback) => Unit
   ): Auth0LockAvatarOptions = {
     val __obj = js.Dynamic.literal(displayName = js.Any.fromFunction2(displayName), url = js.Any.fromFunction2(url))
-  
     __obj.asInstanceOf[Auth0LockAvatarOptions]
   }
 }

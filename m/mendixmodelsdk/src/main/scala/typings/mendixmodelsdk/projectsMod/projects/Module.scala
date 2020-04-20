@@ -61,26 +61,26 @@ class Module protected () extends FolderBase {
     */
   @JSName("sortIndex")
   var sortIndex_FModule: Double = js.native
-  def appStoreGuid(): String = js.native
+  def appStoreGuid: String = js.native
   def appStoreGuid(newValue: String): js.Any = js.native
-  def appStoreVersion(): String = js.native
+  def appStoreVersion: String = js.native
   def appStoreVersion(newValue: String): js.Any = js.native
-  def appStoreVersionGuid(): String = js.native
+  def appStoreVersionGuid: String = js.native
   def appStoreVersionGuid(newValue: String): js.Any = js.native
   @JSName("containerAsProject")
-  def containerAsProject_MModule(): Project = js.native
-  def domainModel(): IDomainModel = js.native
+  def containerAsProject_MModule: Project = js.native
+  def domainModel: IDomainModel = js.native
   def domainModel(newValue: IDomainModel): js.Any = js.native
-  def fromAppStore(): Boolean = js.native
+  def fromAppStore: Boolean = js.native
   def fromAppStore(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.5.0: introduced
     */
-  def isReusableComponent(): Boolean = js.native
+  def isReusableComponent: Boolean = js.native
   def isReusableComponent(newValue: Boolean): js.Any = js.native
-  def moduleSecurity(): IModuleSecurity = js.native
+  def moduleSecurity: IModuleSecurity = js.native
   def moduleSecurity(newValue: IModuleSecurity): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   /**
     * The index of where this Module appears in the project.
@@ -88,7 +88,7 @@ class Module protected () extends FolderBase {
     * Also, its value needs to be unique among its siblings (meaning, in code: <tt>containerAsProject.modules</tt>) in the project.
     * In other words: <tt>containerAsProject.modules.map(m => m.sortedIndex)</tt> (TS syntax) needs to be a list with unique values.
     */
-  def sortIndex(): Double = js.native
+  def sortIndex: Double = js.native
   def sortIndex(newValue: Double): js.Any = js.native
 }
 

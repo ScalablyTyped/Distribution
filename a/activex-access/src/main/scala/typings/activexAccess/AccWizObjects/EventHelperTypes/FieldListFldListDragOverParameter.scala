@@ -26,7 +26,6 @@ object FieldListFldListDragOverParameter {
     TargetRow: Double
   ): FieldListFldListDragOverParameter = {
     val __obj = js.Dynamic.literal(SourceCtlName = SourceCtlName.asInstanceOf[js.Any], SourceFieldList = SourceFieldList.asInstanceOf[js.Any], SourceRow = SourceRow.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], TargetCtlName = TargetCtlName.asInstanceOf[js.Any], TargetFieldList = TargetFieldList.asInstanceOf[js.Any], TargetRow = TargetRow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldListFldListDragOverParameter]
   }
 }

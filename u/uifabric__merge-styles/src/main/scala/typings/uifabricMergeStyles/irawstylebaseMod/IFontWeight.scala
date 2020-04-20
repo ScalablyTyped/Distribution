@@ -44,65 +44,63 @@ trait IFontWeight extends js.Object
 
 object IFontWeight {
   @scala.inline
-  def `100`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`100` = this.cast("100")
+  def `100`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`100` = "100".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`100`]
   @JSName("100")
   @scala.inline
-  def `100_100`: `100` = this.cast(100)
+  def `100_100`: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def `200`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200` = this.cast(200)
+  def `200`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200` = 200.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200`]
   @JSName("200")
   @scala.inline
-  def `200_200`: `200` = this.cast("200")
+  def `200_200`: `200` = "200".asInstanceOf[`200`]
   @scala.inline
-  def `300`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`300` = this.cast("300")
+  def `300`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`300` = "300".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`300`]
   @JSName("300")
   @scala.inline
-  def `300_300`: `300` = this.cast(300)
+  def `300_300`: `300` = 300.asInstanceOf[`300`]
   @scala.inline
-  def `400`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`400` = this.cast("400")
+  def `400`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`400` = "400".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`400`]
   @JSName("400")
   @scala.inline
-  def `400_400`: `400` = this.cast(400)
+  def `400_400`: `400` = 400.asInstanceOf[`400`]
   @scala.inline
-  def `500`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500` = this.cast(500)
+  def `500`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500` = 500.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500`]
   @JSName("500")
   @scala.inline
-  def `500_500`: `500` = this.cast("500")
+  def `500_500`: `500` = "500".asInstanceOf[`500`]
   @scala.inline
-  def `600`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`600` = this.cast("600")
+  def `600`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`600` = "600".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`600`]
   @JSName("600")
   @scala.inline
-  def `600_600`: `600` = this.cast(600)
+  def `600_600`: `600` = 600.asInstanceOf[`600`]
   @scala.inline
-  def `700`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`700` = this.cast("700")
+  def `700`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`700` = "700".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`700`]
   @JSName("700")
   @scala.inline
-  def `700_700`: `700` = this.cast(700)
+  def `700_700`: `700` = 700.asInstanceOf[`700`]
   @scala.inline
-  def `800`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`800` = this.cast("800")
+  def `800`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`800` = "800".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`800`]
   @JSName("800")
   @scala.inline
-  def `800_800`: `800` = this.cast(800)
+  def `800_800`: `800` = 800.asInstanceOf[`800`]
   @scala.inline
-  def `900`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900` = this.cast(900)
+  def `900`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900` = 900.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900`]
   @JSName("900")
   @scala.inline
-  def `900_900`: `900` = this.cast("900")
+  def `900_900`: `900` = "900".asInstanceOf[`900`]
   @scala.inline
-  def bold: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold = this.cast("bold")
+  def bold: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold = "bold".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold]
   @scala.inline
-  def bolder: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bolder = this.cast("bolder")
+  def bolder: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bolder = "bolder".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.bolder]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = "inherit".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit]
   @scala.inline
-  def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = this.cast("inherit")
+  def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = "initial".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial]
   @scala.inline
-  def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = this.cast("initial")
+  def lighter: typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighter = "lighter".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighter]
   @scala.inline
-  def lighter: typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighter = this.cast("lighter")
+  def normal: typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal = "normal".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal]
   @scala.inline
-  def normal: typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal = this.cast("normal")
-  @scala.inline
-  def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = this.cast("unset")
+  def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
 }
 

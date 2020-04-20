@@ -20,26 +20,24 @@ trait HandName extends js.Object
 
 object HandName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def flush: typings.pokerEvaluator.pokerEvaluatorStrings.flush = "flush".asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.flush]
   @scala.inline
-  def flush: typings.pokerEvaluator.pokerEvaluatorStrings.flush = this.cast("flush")
+  def `four of a kind`: typings.pokerEvaluator.pokerEvaluatorStrings.`four of a kind` = ("four of a kind").asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.`four of a kind`]
   @scala.inline
-  def `four of a kind`: typings.pokerEvaluator.pokerEvaluatorStrings.`four of a kind` = this.cast("four of a kind")
+  def `full house`: typings.pokerEvaluator.pokerEvaluatorStrings.`full house` = ("full house").asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.`full house`]
   @scala.inline
-  def `full house`: typings.pokerEvaluator.pokerEvaluatorStrings.`full house` = this.cast("full house")
+  def `high card`: typings.pokerEvaluator.pokerEvaluatorStrings.`high card` = ("high card").asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.`high card`]
   @scala.inline
-  def `high card`: typings.pokerEvaluator.pokerEvaluatorStrings.`high card` = this.cast("high card")
+  def `invalid hand`: typings.pokerEvaluator.pokerEvaluatorStrings.`invalid hand` = ("invalid hand").asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.`invalid hand`]
   @scala.inline
-  def `invalid hand`: typings.pokerEvaluator.pokerEvaluatorStrings.`invalid hand` = this.cast("invalid hand")
+  def `one pair`: typings.pokerEvaluator.pokerEvaluatorStrings.`one pair` = ("one pair").asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.`one pair`]
   @scala.inline
-  def `one pair`: typings.pokerEvaluator.pokerEvaluatorStrings.`one pair` = this.cast("one pair")
+  def straight: typings.pokerEvaluator.pokerEvaluatorStrings.straight = "straight".asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.straight]
   @scala.inline
-  def straight: typings.pokerEvaluator.pokerEvaluatorStrings.straight = this.cast("straight")
+  def `straight flush`: typings.pokerEvaluator.pokerEvaluatorStrings.`straight flush` = ("straight flush").asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.`straight flush`]
   @scala.inline
-  def `straight flush`: typings.pokerEvaluator.pokerEvaluatorStrings.`straight flush` = this.cast("straight flush")
+  def `three of a kind`: typings.pokerEvaluator.pokerEvaluatorStrings.`three of a kind` = ("three of a kind").asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.`three of a kind`]
   @scala.inline
-  def `three of a kind`: typings.pokerEvaluator.pokerEvaluatorStrings.`three of a kind` = this.cast("three of a kind")
-  @scala.inline
-  def `two pairs`: typings.pokerEvaluator.pokerEvaluatorStrings.`two pairs` = this.cast("two pairs")
+  def `two pairs`: typings.pokerEvaluator.pokerEvaluatorStrings.`two pairs` = ("two pairs").asInstanceOf[typings.pokerEvaluator.pokerEvaluatorStrings.`two pairs`]
 }
 

@@ -2,8 +2,6 @@ package typings.titanium.Titanium.UI.iOS
 
 import typings.titanium.ShortcutParams
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,65 +10,36 @@ import scala.scalajs.js.annotation._
 			 * The Home screen quick actions API is for adding shortcuts to your app icon that anticipate and accelerate a
 			 * user's interaction with your app.
 			 */
-trait ApplicationShortcuts extends Proxy {
+@JSGlobal("Titanium.UI.iOS.ApplicationShortcuts")
+@js.native
+class ApplicationShortcuts () extends Proxy {
   /**
   				 * Creates a new dynamic application shortcut item.
   				 */
-  def addDynamicShortcut(params: ShortcutParams): Unit
+  def addDynamicShortcut(params: ShortcutParams): Unit = js.native
   /**
   				 * Returns true or false depending if the provided shortcut object already exists.
   				 */
-  def dynamicShortcutExists(itemtype: String): Boolean
+  def dynamicShortcutExists(identifier: String): Boolean = js.native
   /**
-  				 * Gets the dynamic application shortcut item identified by the `itemtype`.
+  				 * Gets the dynamic application shortcut item identified by the `identifier`.
   				 */
-  def getDynamicShortcut(itemtype: String): Unit
+  def getDynamicShortcut(identifier: String): ShortcutParams = js.native
   /**
   				 * Returns an array of the application shortcuts created dynamically.
   				 */
-  def listDynamicShortcuts(): js.Array[ShortcutParams]
+  def listDynamicShortcuts(): js.Array[ShortcutParams] = js.native
   /**
   				 * Returns an array of the application shortcuts listed in your tiapp.xml file.
   				 */
-  def listStaticShortcuts(): js.Array[ShortcutParams]
+  def listStaticShortcuts(): js.Array[ShortcutParams] = js.native
   /**
   				 * Removes all dynamically created application shortcuts.
   				 */
-  def removeAllDynamicShortcuts(): Unit
+  def removeAllDynamicShortcuts(): Unit = js.native
   /**
-  				 * Removes the dynamic application shortcut item identified by the `itemtype`.
+  				 * Removes the dynamic application shortcut item identified by the `identifier`.
   				 */
-  def removeDynamicShortcut(itemtype: String): Unit
-}
-
-object ApplicationShortcuts {
-  @scala.inline
-  def apply(
-    addDynamicShortcut: ShortcutParams => Unit,
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    dynamicShortcutExists: String => Boolean,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getDynamicShortcut: String => Unit,
-    listDynamicShortcuts: () => js.Array[ShortcutParams],
-    listStaticShortcuts: () => js.Array[ShortcutParams],
-    removeAllDynamicShortcuts: () => Unit,
-    removeDynamicShortcut: String => Unit,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setBubbleParent: Boolean => Unit,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): ApplicationShortcuts = {
-    val __obj = js.Dynamic.literal(addDynamicShortcut = js.Any.fromFunction1(addDynamicShortcut), addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], dynamicShortcutExists = js.Any.fromFunction1(dynamicShortcutExists), fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDynamicShortcut = js.Any.fromFunction1(getDynamicShortcut), listDynamicShortcuts = js.Any.fromFunction0(listDynamicShortcuts), listStaticShortcuts = js.Any.fromFunction0(listStaticShortcuts), removeAllDynamicShortcuts = js.Any.fromFunction0(removeAllDynamicShortcuts), removeDynamicShortcut = js.Any.fromFunction1(removeDynamicShortcut), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ApplicationShortcuts]
-  }
+  def removeDynamicShortcut(identifier: String): Unit = js.native
 }
 

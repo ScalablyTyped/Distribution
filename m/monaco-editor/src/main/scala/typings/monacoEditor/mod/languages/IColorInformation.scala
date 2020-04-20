@@ -20,7 +20,6 @@ object IColorInformation {
   @scala.inline
   def apply(color: IColor, range: IRange): IColorInformation = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IColorInformation]
   }
 }

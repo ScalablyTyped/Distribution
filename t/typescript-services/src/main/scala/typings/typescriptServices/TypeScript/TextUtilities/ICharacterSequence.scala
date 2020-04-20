@@ -13,7 +13,6 @@ object ICharacterSequence {
   @scala.inline
   def apply(charCodeAt: Double => Double, length: Double): ICharacterSequence = {
     val __obj = js.Dynamic.literal(charCodeAt = js.Any.fromFunction1(charCodeAt), length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICharacterSequence]
   }
 }

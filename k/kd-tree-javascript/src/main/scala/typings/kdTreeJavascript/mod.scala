@@ -14,7 +14,7 @@ object mod extends js.Object {
     def this(
       points: js.Array[T],
       distance: js.Function2[/* a */ T, /* b */ T, Double],
-      dimensions: js.Array[String]
+      dimensions: js.Array[/* keyof T */ String]
     ) = this()
     // Get an approximation of how unbalanced the tree is.
     // The higher this number, the worse query performance will be.

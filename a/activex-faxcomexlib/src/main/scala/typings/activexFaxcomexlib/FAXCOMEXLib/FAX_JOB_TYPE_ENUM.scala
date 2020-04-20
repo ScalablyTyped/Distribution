@@ -17,12 +17,10 @@ trait FAX_JOB_TYPE_ENUM extends js.Object
 
 object FAX_JOB_TYPE_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fjtRECEIVE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fjtRECEIVE: `1` = this.cast(1)
+  def fjtROUTING: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fjtROUTING: `2` = this.cast(2)
-  @scala.inline
-  def fjtSEND: `0` = this.cast(0)
+  def fjtSEND: `0` = 0.asInstanceOf[`0`]
 }
 

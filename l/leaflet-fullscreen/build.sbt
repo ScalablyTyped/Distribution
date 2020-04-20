@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "leaflet-fullscreen"
-version := "1.0-dt-20180214Z-236013"
+version := "1.0-dt-20180214Z-a881d1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

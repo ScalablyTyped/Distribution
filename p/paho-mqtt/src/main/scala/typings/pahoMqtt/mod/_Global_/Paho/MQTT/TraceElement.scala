@@ -14,7 +14,6 @@ object TraceElement {
   @scala.inline
   def apply(message: String, severity: Debug): TraceElement = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TraceElement]
   }
 }

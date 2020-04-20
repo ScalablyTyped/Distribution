@@ -64,7 +64,6 @@ object AnonVEF {
     XOF: js.Array[scala.Nothing]
   ): AnonVEF = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BRL = BRL.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], ESP = ESP.asInstanceOf[js.Any], EUR = EUR.asInstanceOf[js.Any], FKP = FKP.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], ILS = ILS.asInstanceOf[js.Any], INR = INR.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], SSP = SSP.asInstanceOf[js.Any], SYP = SYP.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], VEF = VEF.asInstanceOf[js.Any], VES = VES.asInstanceOf[js.Any], VND = VND.asInstanceOf[js.Any], XAF = XAF.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any], XOF = XOF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVEF]
   }
 }

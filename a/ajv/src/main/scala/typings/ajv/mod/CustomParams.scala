@@ -12,7 +12,6 @@ object CustomParams {
   @scala.inline
   def apply(keyword: String): CustomParams = {
     val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomParams]
   }
 }

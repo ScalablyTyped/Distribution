@@ -16,7 +16,6 @@ object xnumberynumberSize {
   @scala.inline
   def apply(height: String | Double, width: String | Double, x: Double, y: Double): xnumberynumberSize = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[xnumberynumberSize]
   }
 }

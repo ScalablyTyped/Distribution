@@ -37,7 +37,6 @@ object Authenticator {
     refreshCredentials: () => typings.bluebird.mod.^[Boolean]
   ): Authenticator = {
     val __obj = js.Dynamic.literal(establishCredentials = js.Any.fromFunction0(establishCredentials), refreshCredentials = js.Any.fromFunction0(refreshCredentials))
-  
     __obj.asInstanceOf[Authenticator]
   }
 }

@@ -13,7 +13,6 @@ object ExternalApplicationInfo {
   @scala.inline
   def apply(parent: Identity): ExternalApplicationInfo = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExternalApplicationInfo]
   }
 }

@@ -13,12 +13,10 @@ trait PositionalOptionsType extends js.Object
 
 object PositionalOptionsType {
   @scala.inline
-  def boolean: typings.yargs.yargsStrings.boolean = this.cast("boolean")
+  def boolean: typings.yargs.yargsStrings.boolean = "boolean".asInstanceOf[typings.yargs.yargsStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def number: typings.yargs.yargsStrings.number = "number".asInstanceOf[typings.yargs.yargsStrings.number]
   @scala.inline
-  def number: typings.yargs.yargsStrings.number = this.cast("number")
-  @scala.inline
-  def string: typings.yargs.yargsStrings.string = this.cast("string")
+  def string: typings.yargs.yargsStrings.string = "string".asInstanceOf[typings.yargs.yargsStrings.string]
 }
 

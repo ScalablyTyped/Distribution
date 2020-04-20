@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomEditorProps[TRow /* <: js.Object */, K /* <: String */]
+trait CustomEditorProps[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */]
   extends EditableAttrs
      with /**
 	 * Contents of the customEditorParameters object.
@@ -23,7 +23,7 @@ trait CustomEditorProps[TRow /* <: js.Object */, K /* <: String */]
 
 object CustomEditorProps {
   @scala.inline
-  def apply[TRow /* <: js.Object */, K /* <: String */](
+  def apply[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any,
     row: TRow,
     StringDictionary: /**

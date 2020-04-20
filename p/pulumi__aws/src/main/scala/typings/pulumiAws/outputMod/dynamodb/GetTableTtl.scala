@@ -14,7 +14,6 @@ object GetTableTtl {
   @scala.inline
   def apply(attributeName: String, enabled: Boolean): GetTableTtl = {
     val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTableTtl]
   }
 }

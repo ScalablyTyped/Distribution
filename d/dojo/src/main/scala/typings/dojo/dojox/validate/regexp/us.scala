@@ -22,7 +22,6 @@ object us {
   @scala.inline
   def apply(state: js.Object => String): us = {
     val __obj = js.Dynamic.literal(state = js.Any.fromFunction1(state))
-  
     __obj.asInstanceOf[us]
   }
 }

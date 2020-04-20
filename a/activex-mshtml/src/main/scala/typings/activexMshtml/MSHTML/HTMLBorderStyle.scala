@@ -22,18 +22,16 @@ trait HTMLBorderStyle extends js.Object
 
 object HTMLBorderStyle {
   @scala.inline
-  def HTMLBorderStyleNormal: `0` = this.cast(0)
+  def HTMLBorderStyleNormal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLBorderStyleRaised: `256` = this.cast(256)
+  def HTMLBorderStyleRaised: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def HTMLBorderStyleStatic: `131072` = this.cast(131072)
+  def HTMLBorderStyleStatic: `131072` = 131072.asInstanceOf[`131072`]
   @scala.inline
-  def HTMLBorderStyleSunken: `512` = this.cast(512)
+  def HTMLBorderStyleSunken: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def HTMLBorderStyle_Max: `2147483647` = this.cast(2147483647)
+  def HTMLBorderStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def HTMLBorderStylecombined: `768` = this.cast(768)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLBorderStylecombined: `768` = 768.asInstanceOf[`768`]
 }
 

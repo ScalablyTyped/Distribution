@@ -6,16 +6,103 @@ import scala.scalajs.js.annotation._
 
 object botvsStrings {
   @js.native
+  sealed trait Buy extends js.Object
+  
+  @js.native
+  sealed trait CancelOrder extends js.Object
+  
+  @js.native
   sealed trait Close extends js.Object
   
   @js.native
+  sealed trait GetAccount extends js.Object
+  
+  @js.native
+  sealed trait GetBaseCurrency extends js.Object
+  
+  @js.native
+  sealed trait GetCurrency extends js.Object
+  
+  @js.native
+  sealed trait GetDepth extends js.Object
+  
+  @js.native
+  sealed trait GetFee extends js.Object
+  
+  @js.native
+  sealed trait GetLabel extends js.Object
+  
+  @js.native
+  sealed trait GetMinPrice extends js.Object
+  
+  @js.native
+  sealed trait GetMinStock extends js.Object
+  
+  @js.native
+  sealed trait GetName extends js.Object
+  
+  @js.native
+  sealed trait GetOrder extends js.Object
+  
+  @js.native
+  sealed trait GetOrders extends js.Object
+  
+  @js.native
+  sealed trait GetPosition extends js.Object
+  
+  @js.native
+  sealed trait GetRate extends js.Object
+  
+  @js.native
+  sealed trait GetRawJSON extends js.Object
+  
+  @js.native
+  sealed trait GetRecords extends js.Object
+  
+  @js.native
+  sealed trait GetTicker extends js.Object
+  
+  @js.native
+  sealed trait GetTrades extends js.Object
+  
+  @js.native
+  sealed trait GetUSDCNY extends js.Object
+  
+  @js.native
+  sealed trait Go extends js.Object
+  
+  @js.native
   sealed trait High extends js.Object
+  
+  @js.native
+  sealed trait IO extends js.Object
+  
+  @js.native
+  sealed trait Log extends js.Object
   
   @js.native
   sealed trait Low extends js.Object
   
   @js.native
   sealed trait Open extends js.Object
+  
+  @js.native
+  sealed trait Sell extends js.Object
+  
+  @js.native
+  sealed trait SetContractType extends js.Object
+  
+  @js.native
+  sealed trait SetDirection extends js.Object
+  
+  @js.native
+  sealed trait SetMarginLevel extends js.Object
+  
+  @js.native
+  sealed trait SetPrecision extends js.Object
+  
+  @js.native
+  sealed trait SetRate extends js.Object
   
   @js.native
   sealed trait Time extends js.Object
@@ -30,7 +117,7 @@ object botvsStrings {
   sealed trait base64 extends js.Object
   
   @js.native
-  sealed trait buy extends js.Object
+  sealed trait buy_ extends js.Object
   
   @js.native
   sealed trait closebuy extends js.Object
@@ -60,7 +147,7 @@ object botvsStrings {
   sealed trait raw extends js.Object
   
   @js.native
-  sealed trait sell extends js.Object
+  sealed trait sell_ extends js.Object
   
   @js.native
   sealed trait sha1 extends js.Object
@@ -75,13 +162,71 @@ object botvsStrings {
   sealed trait usd extends js.Object
   
   @scala.inline
+  def Buy: Buy = "Buy".asInstanceOf[Buy]
+  @scala.inline
+  def CancelOrder: CancelOrder = "CancelOrder".asInstanceOf[CancelOrder]
+  @scala.inline
   def Close: Close = "Close".asInstanceOf[Close]
   @scala.inline
+  def GetAccount: GetAccount = "GetAccount".asInstanceOf[GetAccount]
+  @scala.inline
+  def GetBaseCurrency: GetBaseCurrency = "GetBaseCurrency".asInstanceOf[GetBaseCurrency]
+  @scala.inline
+  def GetCurrency: GetCurrency = "GetCurrency".asInstanceOf[GetCurrency]
+  @scala.inline
+  def GetDepth: GetDepth = "GetDepth".asInstanceOf[GetDepth]
+  @scala.inline
+  def GetFee: GetFee = "GetFee".asInstanceOf[GetFee]
+  @scala.inline
+  def GetLabel: GetLabel = "GetLabel".asInstanceOf[GetLabel]
+  @scala.inline
+  def GetMinPrice: GetMinPrice = "GetMinPrice".asInstanceOf[GetMinPrice]
+  @scala.inline
+  def GetMinStock: GetMinStock = "GetMinStock".asInstanceOf[GetMinStock]
+  @scala.inline
+  def GetName: GetName = "GetName".asInstanceOf[GetName]
+  @scala.inline
+  def GetOrder: GetOrder = "GetOrder".asInstanceOf[GetOrder]
+  @scala.inline
+  def GetOrders: GetOrders = "GetOrders".asInstanceOf[GetOrders]
+  @scala.inline
+  def GetPosition: GetPosition = "GetPosition".asInstanceOf[GetPosition]
+  @scala.inline
+  def GetRate: GetRate = "GetRate".asInstanceOf[GetRate]
+  @scala.inline
+  def GetRawJSON: GetRawJSON = "GetRawJSON".asInstanceOf[GetRawJSON]
+  @scala.inline
+  def GetRecords: GetRecords = "GetRecords".asInstanceOf[GetRecords]
+  @scala.inline
+  def GetTicker: GetTicker = "GetTicker".asInstanceOf[GetTicker]
+  @scala.inline
+  def GetTrades: GetTrades = "GetTrades".asInstanceOf[GetTrades]
+  @scala.inline
+  def GetUSDCNY: GetUSDCNY = "GetUSDCNY".asInstanceOf[GetUSDCNY]
+  @scala.inline
+  def Go: Go = "Go".asInstanceOf[Go]
+  @scala.inline
   def High: High = "High".asInstanceOf[High]
+  @scala.inline
+  def IO: IO = "IO".asInstanceOf[IO]
+  @scala.inline
+  def Log: Log = "Log".asInstanceOf[Log]
   @scala.inline
   def Low: Low = "Low".asInstanceOf[Low]
   @scala.inline
   def Open: Open = "Open".asInstanceOf[Open]
+  @scala.inline
+  def Sell: Sell = "Sell".asInstanceOf[Sell]
+  @scala.inline
+  def SetContractType: SetContractType = "SetContractType".asInstanceOf[SetContractType]
+  @scala.inline
+  def SetDirection: SetDirection = "SetDirection".asInstanceOf[SetDirection]
+  @scala.inline
+  def SetMarginLevel: SetMarginLevel = "SetMarginLevel".asInstanceOf[SetMarginLevel]
+  @scala.inline
+  def SetPrecision: SetPrecision = "SetPrecision".asInstanceOf[SetPrecision]
+  @scala.inline
+  def SetRate: SetRate = "SetRate".asInstanceOf[SetRate]
   @scala.inline
   def Time: Time = "Time".asInstanceOf[Time]
   @scala.inline
@@ -91,7 +236,7 @@ object botvsStrings {
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline
-  def buy: buy = "buy".asInstanceOf[buy]
+  def buy_ : buy_ = "buy".asInstanceOf[buy_]
   @scala.inline
   def closebuy: closebuy = "closebuy".asInstanceOf[closebuy]
   @scala.inline
@@ -111,7 +256,7 @@ object botvsStrings {
   @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   @scala.inline
-  def sell: sell = "sell".asInstanceOf[sell]
+  def sell_ : sell_ = "sell".asInstanceOf[sell_]
   @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   @scala.inline

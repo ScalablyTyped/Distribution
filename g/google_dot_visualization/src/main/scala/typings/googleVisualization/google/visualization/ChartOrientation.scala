@@ -12,10 +12,8 @@ trait ChartOrientation extends js.Object
 
 object ChartOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.googleVisualization.googleVisualizationStrings.horizontal = "horizontal".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.horizontal]
   @scala.inline
-  def horizontal: typings.googleVisualization.googleVisualizationStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.googleVisualization.googleVisualizationStrings.vertical = this.cast("vertical")
+  def vertical: typings.googleVisualization.googleVisualizationStrings.vertical = "vertical".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.vertical]
 }
 

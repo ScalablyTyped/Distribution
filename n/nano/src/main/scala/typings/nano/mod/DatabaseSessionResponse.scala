@@ -18,7 +18,6 @@ object DatabaseSessionResponse {
   @scala.inline
   def apply(info: js.Any, ok: Boolean, userCtx: js.Any): DatabaseSessionResponse = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], userCtx = userCtx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatabaseSessionResponse]
   }
 }

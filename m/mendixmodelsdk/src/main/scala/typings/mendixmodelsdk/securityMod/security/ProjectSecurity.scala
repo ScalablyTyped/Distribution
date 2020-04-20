@@ -35,46 +35,46 @@ class ProjectSecurity protected () extends ProjectDocument {
   var model_FProjectSecurity: IModel = js.native
   @JSName("userRoles")
   val userRoles_FProjectSecurity: IList[IUserRole] = js.native
-  def adminPassword(): String = js.native
+  def adminPassword: String = js.native
   def adminPassword(newValue: String): js.Any = js.native
-  def adminUserName(): String = js.native
+  def adminUserName: String = js.native
   def adminUserName(newValue: String): js.Any = js.native
-  def adminUserRoleName(): String = js.native
+  def adminUserRoleName: String = js.native
   def adminUserRoleName(newValue: String): js.Any = js.native
-  def checkSecurity(): Boolean = js.native
+  def checkSecurity: Boolean = js.native
   def checkSecurity(newValue: Boolean): js.Any = js.native
   @JSName("containerAsProject")
-  def containerAsProject_MProjectSecurity(): Project = js.native
-  def demoUsers(): IList[DemoUser] = js.native
-  def enableDemoUsers(): Boolean = js.native
+  def containerAsProject_MProjectSecurity: Project = js.native
+  def demoUsers: IList[DemoUser] = js.native
+  def enableDemoUsers: Boolean = js.native
   def enableDemoUsers(newValue: Boolean): js.Any = js.native
-  def enableGuestAccess(): Boolean = js.native
+  def enableGuestAccess: Boolean = js.native
   def enableGuestAccess(newValue: Boolean): js.Any = js.native
   /**
     * In version 6.0.0: deprecated
     */
-  def fileDocumentAccess(): FileDocumentAccessRuleContainer = js.native
+  def fileDocumentAccess: FileDocumentAccessRuleContainer = js.native
   def fileDocumentAccess(newValue: FileDocumentAccessRuleContainer): js.Any = js.native
-  def guestUserRoleName(): String = js.native
+  def guestUserRoleName: String = js.native
   def guestUserRoleName(newValue: String): js.Any = js.native
   /**
     * In version 6.0.0: deprecated
     */
-  def imageAccess(): ImageAccessRuleContainer = js.native
+  def imageAccess: ImageAccessRuleContainer = js.native
   def imageAccess(newValue: ImageAccessRuleContainer): js.Any = js.native
-  def passwordPolicySettings(): PasswordPolicySettings = js.native
+  def passwordPolicySettings: PasswordPolicySettings = js.native
   def passwordPolicySettings(newValue: PasswordPolicySettings): js.Any = js.native
-  def securityLevel(): SecurityLevel = js.native
+  def securityLevel: SecurityLevel = js.native
   def securityLevel(newValue: SecurityLevel): js.Any = js.native
   def signInMicroflow(): js.Any = js.native
   def signInMicroflow(newValue: IMicroflow): js.Any = js.native
-  def signInMicroflowQualifiedName(): String | Null = js.native
+  def signInMicroflowQualifiedName: String | Null = js.native
   /**
     * In version 8.0.0: deleted
     */
   @JSName("signInMicroflow")
-  def signInMicroflow_Union(): IMicroflow | Null = js.native
-  def userRoles(): IList[UserRole] = js.native
+  def signInMicroflow_Union: IMicroflow | Null = js.native
+  def userRoles: IList[UserRole] = js.native
 }
 
 /* static members */

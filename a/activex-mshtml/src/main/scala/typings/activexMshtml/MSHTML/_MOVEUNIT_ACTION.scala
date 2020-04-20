@@ -52,48 +52,46 @@ trait _MOVEUNIT_ACTION extends js.Object
 
 object _MOVEUNIT_ACTION {
   @scala.inline
-  def MOVEUNIT_ACTION_Max: `2147483647` = this.cast(2147483647)
+  def MOVEUNIT_ACTION_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def MOVEUNIT_NEXTBLOCK: `19` = this.cast(19)
+  def MOVEUNIT_NEXTBLOCK: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def MOVEUNIT_NEXTCHAR: `1` = this.cast(1)
+  def MOVEUNIT_NEXTCHAR: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def MOVEUNIT_NEXTCLUSTERBEGIN: `3` = this.cast(3)
+  def MOVEUNIT_NEXTCLUSTERBEGIN: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def MOVEUNIT_NEXTCLUSTEREND: `5` = this.cast(5)
+  def MOVEUNIT_NEXTCLUSTEREND: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def MOVEUNIT_NEXTPROOFWORD: `11` = this.cast(11)
+  def MOVEUNIT_NEXTPROOFWORD: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def MOVEUNIT_NEXTSENTENCE: `17` = this.cast(17)
+  def MOVEUNIT_NEXTSENTENCE: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def MOVEUNIT_NEXTURLBEGIN: `12` = this.cast(12)
+  def MOVEUNIT_NEXTURLBEGIN: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def MOVEUNIT_NEXTURLEND: `14` = this.cast(14)
+  def MOVEUNIT_NEXTURLEND: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def MOVEUNIT_NEXTWORDBEGIN: `7` = this.cast(7)
+  def MOVEUNIT_NEXTWORDBEGIN: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def MOVEUNIT_NEXTWORDEND: `9` = this.cast(9)
+  def MOVEUNIT_NEXTWORDEND: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def MOVEUNIT_PREVBLOCK: `18` = this.cast(18)
+  def MOVEUNIT_PREVBLOCK: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def MOVEUNIT_PREVCHAR: `0` = this.cast(0)
+  def MOVEUNIT_PREVCHAR: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def MOVEUNIT_PREVCLUSTERBEGIN: `2` = this.cast(2)
+  def MOVEUNIT_PREVCLUSTERBEGIN: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def MOVEUNIT_PREVCLUSTEREND: `4` = this.cast(4)
+  def MOVEUNIT_PREVCLUSTEREND: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def MOVEUNIT_PREVPROOFWORD: `10` = this.cast(10)
+  def MOVEUNIT_PREVPROOFWORD: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def MOVEUNIT_PREVSENTENCE: `16` = this.cast(16)
+  def MOVEUNIT_PREVSENTENCE: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def MOVEUNIT_PREVURLBEGIN: `13` = this.cast(13)
+  def MOVEUNIT_PREVURLBEGIN: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def MOVEUNIT_PREVURLEND: `15` = this.cast(15)
+  def MOVEUNIT_PREVURLEND: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def MOVEUNIT_PREVWORDBEGIN: `6` = this.cast(6)
+  def MOVEUNIT_PREVWORDBEGIN: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def MOVEUNIT_PREVWORDEND: `8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MOVEUNIT_PREVWORDEND: `8` = 8.asInstanceOf[`8`]
 }
 

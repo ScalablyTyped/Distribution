@@ -28,7 +28,7 @@ class Answer () extends IAnswer {
   var faqQuestion_Answer: String = js.native
   /** Answer matchConfidenceLevel. */
   @JSName("matchConfidenceLevel")
-  var matchConfidenceLevel_Answer: MatchConfidenceLevel | String = js.native
+  var matchConfidenceLevel_Answer: MatchConfidenceLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel * / any */ String) = js.native
   /** Answer matchConfidence. */
   @JSName("matchConfidence")
   var matchConfidence_Answer: Double = js.native

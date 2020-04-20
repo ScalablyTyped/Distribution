@@ -16,7 +16,6 @@ object GetXssMatchSetRequest {
   @scala.inline
   def apply(XssMatchSetId: ResourceId): GetXssMatchSetRequest = {
     val __obj = js.Dynamic.literal(XssMatchSetId = XssMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetXssMatchSetRequest]
   }
 }

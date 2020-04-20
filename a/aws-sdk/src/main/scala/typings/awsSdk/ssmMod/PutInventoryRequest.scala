@@ -20,7 +20,6 @@ object PutInventoryRequest {
   @scala.inline
   def apply(InstanceId: InstanceId, Items: InventoryItemList): PutInventoryRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], Items = Items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutInventoryRequest]
   }
 }

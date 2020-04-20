@@ -15,7 +15,6 @@ object SavedColumnsResource {
   @scala.inline
   def apply(list: AnonAgencyId => Request_[SavedColumnList]): SavedColumnsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[SavedColumnsResource]
   }
 }

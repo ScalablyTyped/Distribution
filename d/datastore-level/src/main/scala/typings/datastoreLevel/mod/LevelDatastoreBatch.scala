@@ -20,7 +20,6 @@ object LevelDatastoreBatch {
     put: (Key, Value) => Unit
   ): LevelDatastoreBatch[Value] = {
     val __obj = js.Dynamic.literal(commit = js.Any.fromFunction0(commit), delete = js.Any.fromFunction1(delete), ops = ops.asInstanceOf[js.Any], put = js.Any.fromFunction2(put))
-  
     __obj.asInstanceOf[LevelDatastoreBatch[Value]]
   }
 }

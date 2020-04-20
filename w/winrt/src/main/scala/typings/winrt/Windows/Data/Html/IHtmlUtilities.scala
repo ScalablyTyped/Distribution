@@ -12,7 +12,6 @@ object IHtmlUtilities {
   @scala.inline
   def apply(convertToText: String => String): IHtmlUtilities = {
     val __obj = js.Dynamic.literal(convertToText = js.Any.fromFunction1(convertToText))
-  
     __obj.asInstanceOf[IHtmlUtilities]
   }
 }

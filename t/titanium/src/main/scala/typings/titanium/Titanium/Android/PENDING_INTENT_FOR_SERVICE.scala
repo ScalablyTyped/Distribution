@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
 		 * Not used.
+		 * @deprecated
 		 */
 @JSGlobal("Titanium.Android.PENDING_INTENT_FOR_SERVICE")
 @js.native

@@ -14,7 +14,6 @@ object AnonResourceType {
   @scala.inline
   def apply(amount: Double, resourceType: ResourceConstant, targetId: String): AnonResourceType = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResourceType]
   }
 }

@@ -16,7 +16,6 @@ object DeleteLoadBalancerInput {
   @scala.inline
   def apply(LoadBalancerArn: LoadBalancerArn): DeleteLoadBalancerInput = {
     val __obj = js.Dynamic.literal(LoadBalancerArn = LoadBalancerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLoadBalancerInput]
   }
 }

@@ -24,7 +24,6 @@ object MultipleBatchRequest {
   @scala.inline
   def apply(action: BatchActionType, body: Record[String, _], indexName: String): MultipleBatchRequest = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultipleBatchRequest]
   }
 }

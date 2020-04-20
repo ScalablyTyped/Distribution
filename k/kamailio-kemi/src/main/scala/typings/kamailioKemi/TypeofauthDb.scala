@@ -13,7 +13,6 @@ object TypeofauthDb {
   @scala.inline
   def apply(auth_check: (String, String, Double) => Double, is_subscriber: (String, String, Double) => Double): TypeofauthDb = {
     val __obj = js.Dynamic.literal(auth_check = js.Any.fromFunction3(auth_check), is_subscriber = js.Any.fromFunction3(is_subscriber))
-  
     __obj.asInstanceOf[TypeofauthDb]
   }
 }

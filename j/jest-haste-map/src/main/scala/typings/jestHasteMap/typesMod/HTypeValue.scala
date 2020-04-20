@@ -20,24 +20,22 @@ trait HTypeValue extends js.Object
 
 object HTypeValue {
   @scala.inline
-  def `0`: typings.jestHasteMap.jestHasteMapNumbers.`0` = this.cast(0)
+  def `0`: typings.jestHasteMap.jestHasteMapNumbers.`0` = 0.asInstanceOf[typings.jestHasteMap.jestHasteMapNumbers.`0`]
   @scala.inline
-  def `1`: typings.jestHasteMap.jestHasteMapNumbers.`1` = this.cast(1)
+  def `1`: typings.jestHasteMap.jestHasteMapNumbers.`1` = 1.asInstanceOf[typings.jestHasteMap.jestHasteMapNumbers.`1`]
   @scala.inline
-  def `2`: typings.jestHasteMap.jestHasteMapNumbers.`2` = this.cast(2)
+  def `2`: typings.jestHasteMap.jestHasteMapNumbers.`2` = 2.asInstanceOf[typings.jestHasteMap.jestHasteMapNumbers.`2`]
   @scala.inline
-  def `3`: typings.jestHasteMap.jestHasteMapNumbers.`3` = this.cast(3)
+  def `3`: typings.jestHasteMap.jestHasteMapNumbers.`3` = 3.asInstanceOf[typings.jestHasteMap.jestHasteMapNumbers.`3`]
   @scala.inline
-  def `4`: typings.jestHasteMap.jestHasteMapNumbers.`4` = this.cast(4)
+  def `4`: typings.jestHasteMap.jestHasteMapNumbers.`4` = 4.asInstanceOf[typings.jestHasteMap.jestHasteMapNumbers.`4`]
   @scala.inline
-  def `5`: typings.jestHasteMap.jestHasteMapNumbers.`5` = this.cast(5)
+  def `5`: typings.jestHasteMap.jestHasteMapNumbers.`5` = 5.asInstanceOf[typings.jestHasteMap.jestHasteMapNumbers.`5`]
   @scala.inline
-  def Null: typings.jestHasteMap.jestHasteMapStrings.Null = this.cast("\u0000")
+  def Null: typings.jestHasteMap.jestHasteMapStrings.Null = "\u0000".asInstanceOf[typings.jestHasteMap.jestHasteMapStrings.Null]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def g: typings.jestHasteMap.jestHasteMapStrings.g = "g".asInstanceOf[typings.jestHasteMap.jestHasteMapStrings.g]
   @scala.inline
-  def g: typings.jestHasteMap.jestHasteMapStrings.g = this.cast("g")
-  @scala.inline
-  def native: typings.jestHasteMap.jestHasteMapStrings.native = this.cast("native")
+  def native: typings.jestHasteMap.jestHasteMapStrings.native = "native".asInstanceOf[typings.jestHasteMap.jestHasteMapStrings.native]
 }
 

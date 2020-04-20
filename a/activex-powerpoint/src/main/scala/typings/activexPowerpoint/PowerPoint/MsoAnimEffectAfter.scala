@@ -18,14 +18,12 @@ trait MsoAnimEffectAfter extends js.Object
 
 object MsoAnimEffectAfter {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnimEffectAfterFreeze: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnimEffectAfterFreeze: `1` = this.cast(1)
+  def msoAnimEffectAfterHold: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoAnimEffectAfterHold: `3` = this.cast(3)
+  def msoAnimEffectAfterRemove: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoAnimEffectAfterRemove: `2` = this.cast(2)
-  @scala.inline
-  def msoAnimEffectAfterTransition: `4` = this.cast(4)
+  def msoAnimEffectAfterTransition: `4` = 4.asInstanceOf[`4`]
 }
 

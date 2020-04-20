@@ -13,7 +13,6 @@ object Change {
   @scala.inline
   def apply(ResourceRecordSet: AnonAliasTarget): Change = {
     val __obj = js.Dynamic.literal(ResourceRecordSet = ResourceRecordSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Change]
   }
 }

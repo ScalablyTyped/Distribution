@@ -280,7 +280,7 @@ object bufferMod extends js.Object {
     /**
       * Gets or sets the instance divisor when in instanced mode
       */
-    def instanceDivisor(): Double = js.native
+    def instanceDivisor: Double = js.native
     def instanceDivisor(value: Double): js.Any = js.native
     /**
       * Gets a boolean indicating if the VertexBuffer is updatable?

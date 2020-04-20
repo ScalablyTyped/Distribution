@@ -20,7 +20,6 @@ object IFnJQuery {
   @scala.inline
   def apply(fnPlugin: (JQuery_[HTMLElement], js.Any, String, String, String) => JQuery_[HTMLElement]): IFnJQuery = {
     val __obj = js.Dynamic.literal(fnPlugin = js.Any.fromFunction5(fnPlugin))
-  
     __obj.asInstanceOf[IFnJQuery]
   }
 }

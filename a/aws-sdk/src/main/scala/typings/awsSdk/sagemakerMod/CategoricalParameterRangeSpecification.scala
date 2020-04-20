@@ -16,7 +16,6 @@ object CategoricalParameterRangeSpecification {
   @scala.inline
   def apply(Values: ParameterValues): CategoricalParameterRangeSpecification = {
     val __obj = js.Dynamic.literal(Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CategoricalParameterRangeSpecification]
   }
 }

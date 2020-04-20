@@ -28,8 +28,8 @@ abstract class AccessRuleContainerBase protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FAccessRuleContainerBase: IModel = js.native
-  def accessRules(): IList[AccessRule] = js.native
-  def containerAsProjectSecurity(): ProjectSecurity = js.native
+  def accessRules: IList[AccessRule] = js.native
+  def containerAsProjectSecurity: ProjectSecurity = js.native
 }
 
 /* static members */

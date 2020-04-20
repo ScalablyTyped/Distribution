@@ -15,7 +15,6 @@ object Condition {
   @scala.inline
   def apply(args: js.Array[_], func: (CellValue, js.Array[_]) => Boolean, name: ConditionName): Condition = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], func = js.Any.fromFunction2(func), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Condition]
   }
 }

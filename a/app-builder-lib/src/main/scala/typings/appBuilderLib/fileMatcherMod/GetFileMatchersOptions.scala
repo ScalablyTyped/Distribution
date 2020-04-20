@@ -21,7 +21,6 @@ object GetFileMatchersOptions {
     macroExpander: String => String
   ): GetFileMatchersOptions = {
     val __obj = js.Dynamic.literal(customBuildOptions = customBuildOptions.asInstanceOf[js.Any], defaultSrc = defaultSrc.asInstanceOf[js.Any], globalOutDir = globalOutDir.asInstanceOf[js.Any], macroExpander = js.Any.fromFunction1(macroExpander))
-  
     __obj.asInstanceOf[GetFileMatchersOptions]
   }
 }

@@ -59,7 +59,6 @@ object ChangeEvent {
   @scala.inline
   def ChangeEventInvalidate[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, operationType: invalidate): ChangeEvent[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline

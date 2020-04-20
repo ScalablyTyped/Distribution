@@ -14,7 +14,6 @@ object MonthInfo {
   @scala.inline
   def apply(lastmonth: Double, lastyear: Double, nwdaymask: js.Array[Double]): MonthInfo = {
     val __obj = js.Dynamic.literal(lastmonth = lastmonth.asInstanceOf[js.Any], lastyear = lastyear.asInstanceOf[js.Any], nwdaymask = nwdaymask.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MonthInfo]
   }
 }

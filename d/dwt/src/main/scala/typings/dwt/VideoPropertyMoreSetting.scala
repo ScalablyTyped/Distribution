@@ -22,7 +22,6 @@ object VideoPropertyMoreSetting {
     GetSteppingDelta: () => Double
   ): VideoPropertyMoreSetting = {
     val __obj = js.Dynamic.literal(GetDefaultValue = js.Any.fromFunction0(GetDefaultValue), GetIfAuto = js.Any.fromFunction0(GetIfAuto), GetMaxValue = js.Any.fromFunction0(GetMaxValue), GetMinValue = js.Any.fromFunction0(GetMinValue), GetSteppingDelta = js.Any.fromFunction0(GetSteppingDelta))
-  
     __obj.asInstanceOf[VideoPropertyMoreSetting]
   }
 }

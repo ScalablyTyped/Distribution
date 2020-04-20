@@ -30,26 +30,24 @@ trait XlTimePeriods extends js.Object
 
 object XlTimePeriods {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlLast7Days: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlLast7Days: `2` = this.cast(2)
+  def xlLastMonth: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlLastMonth: `5` = this.cast(5)
+  def xlLastWeek: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlLastWeek: `4` = this.cast(4)
+  def xlNextMonth: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlNextMonth: `8` = this.cast(8)
+  def xlNextWeek: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlNextWeek: `7` = this.cast(7)
+  def xlThisMonth: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlThisMonth: `9` = this.cast(9)
+  def xlThisWeek: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlThisWeek: `3` = this.cast(3)
+  def xlToday: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlToday: `0` = this.cast(0)
+  def xlTomorrow: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlTomorrow: `6` = this.cast(6)
-  @scala.inline
-  def xlYesterday: `1` = this.cast(1)
+  def xlYesterday: `1` = 1.asInstanceOf[`1`]
 }
 

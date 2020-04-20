@@ -20,7 +20,6 @@ object ExcelBorders {
     borderTop: ExcelBorder
   ): ExcelBorders = {
     val __obj = js.Dynamic.literal(borderBottom = borderBottom.asInstanceOf[js.Any], borderLeft = borderLeft.asInstanceOf[js.Any], borderRight = borderRight.asInstanceOf[js.Any], borderTop = borderTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExcelBorders]
   }
 }

@@ -16,7 +16,6 @@ object VerifyDomainDkimResponse {
   @scala.inline
   def apply(DkimTokens: VerificationTokenList): VerifyDomainDkimResponse = {
     val __obj = js.Dynamic.literal(DkimTokens = DkimTokens.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyDomainDkimResponse]
   }
 }

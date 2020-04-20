@@ -12,7 +12,6 @@ object IProgressCircularProvider {
   @scala.inline
   def apply(configure: IProgressCircularConfig => Unit): IProgressCircularProvider = {
     val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure))
-  
     __obj.asInstanceOf[IProgressCircularProvider]
   }
 }

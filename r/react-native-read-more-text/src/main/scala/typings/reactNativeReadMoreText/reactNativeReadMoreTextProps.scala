@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeReadMoreTextProps {
   @scala.inline
-  def ReactNativeReadMoreTextProps: ReadMoreProps.type = typings.reactNativeReadMoreText.mod.ReadMoreProps
+  def ReactNativeReadMoreTextProps: ReadMoreProps.type = ReadMoreProps
   type ReactNativeReadMoreTextProps = ReadMoreProps
 }
 

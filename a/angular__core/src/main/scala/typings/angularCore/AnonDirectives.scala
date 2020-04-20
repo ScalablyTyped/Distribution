@@ -14,7 +14,6 @@ object AnonDirectives {
   @scala.inline
   def apply(directives: Set[_], pipes: Set[_]): AnonDirectives = {
     val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDirectives]
   }
 }

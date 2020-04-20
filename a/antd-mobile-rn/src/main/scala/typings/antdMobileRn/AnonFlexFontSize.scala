@@ -15,7 +15,6 @@ object AnonFlexFontSize {
   @scala.inline
   def apply(color: String, flex: Double, fontSize: Double, textAlign: String): AnonFlexFontSize = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlexFontSize]
   }
 }

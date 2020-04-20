@@ -14,7 +14,6 @@ object CloudFrontResponse {
   @scala.inline
   def apply(headers: CloudFrontHeaders, status: String, statusDescription: String): CloudFrontResponse = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusDescription = statusDescription.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudFrontResponse]
   }
 }

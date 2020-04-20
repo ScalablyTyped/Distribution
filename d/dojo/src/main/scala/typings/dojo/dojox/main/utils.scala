@@ -52,7 +52,6 @@ object utils {
     updateWithPattern: (js.Object, js.Object, js.Object, Boolean) => js.Object
   ): utils = {
     val __obj = js.Dynamic.literal(coerceType = js.Any.fromFunction2(coerceType), merge = js.Any.fromFunction2(merge), updateWithObject = js.Any.fromFunction3(updateWithObject), updateWithPattern = js.Any.fromFunction4(updateWithPattern))
-  
     __obj.asInstanceOf[utils]
   }
 }

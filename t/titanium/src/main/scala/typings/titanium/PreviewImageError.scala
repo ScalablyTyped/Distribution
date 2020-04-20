@@ -7,31 +7,20 @@ import scala.scalajs.js.annotation._
 /**
   * The parameter passed to the `error` callback of <PreviewImageOptions>.
   */
-trait PreviewImageError extends js.Object {
-  /**
-  	 * Error code, if applicable.
-  	 */
-  var code: js.UndefOr[Double] = js.undefined
-  /**
-  	 * Error message, if any returned.
-  	 */
-  var error: js.UndefOr[String] = js.undefined
+trait PreviewImageError extends FailureResponse {
   /**
   	 * Description of the error.
+  	 * @deprecated
   	 */
-  var message: js.UndefOr[String] = js.undefined
-  /**
-  	 * Indicates if the operation succeeded. Returns `false`.
-  	 */
-  var success: js.UndefOr[Boolean] = js.undefined
+  var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object PreviewImageError {
   @scala.inline
   def apply(
     code: Int | Double = null,
-    error: String = null,
-    message: String = null,
+    error: java.lang.String = null,
+    message: java.lang.String = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): PreviewImageError = {
     val __obj = js.Dynamic.literal()

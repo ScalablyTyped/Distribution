@@ -12,10 +12,8 @@ trait SelectionLikelihoodInfo extends js.Object
 
 object SelectionLikelihoodInfo {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = this.cast("high")
-  @scala.inline
-  def notSpecified: typings.microsoftGraph.microsoftGraphStrings.notSpecified = this.cast("notSpecified")
+  def notSpecified: typings.microsoftGraph.microsoftGraphStrings.notSpecified = "notSpecified".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSpecified]
 }
 

@@ -19,7 +19,6 @@ object WebCLDevice {
     getSupportedExtensions: () => js.Array[String]
   ): WebCLDevice = {
     val __obj = js.Dynamic.literal(enableExtension = js.Any.fromFunction1(enableExtension), getInfo = js.Any.fromFunction1(getInfo), getSupportedExtensions = js.Any.fromFunction0(getSupportedExtensions))
-  
     __obj.asInstanceOf[WebCLDevice]
   }
 }

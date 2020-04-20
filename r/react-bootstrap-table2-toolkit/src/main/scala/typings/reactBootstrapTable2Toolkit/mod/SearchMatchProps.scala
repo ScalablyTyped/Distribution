@@ -16,7 +16,6 @@ object SearchMatchProps {
   @scala.inline
   def apply[T /* <: js.Object */](column: ColumnDescription[T, _], row: T, searchText: String, value: String): SearchMatchProps[T] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], searchText = searchText.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchMatchProps[T]]
   }
 }

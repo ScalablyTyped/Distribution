@@ -23,7 +23,6 @@ object BatchPutScheduledUpdateGroupActionType {
     ScheduledUpdateGroupActions: ScheduledUpdateGroupActionRequests
   ): BatchPutScheduledUpdateGroupActionType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], ScheduledUpdateGroupActions = ScheduledUpdateGroupActions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchPutScheduledUpdateGroupActionType]
   }
 }

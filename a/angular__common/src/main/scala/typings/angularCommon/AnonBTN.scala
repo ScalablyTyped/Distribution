@@ -28,7 +28,6 @@ object AnonBTN {
     XAF: js.Array[scala.Nothing]
   ): AnonBTN = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BTN = BTN.asInstanceOf[js.Any], ILS = ILS.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XAF = XAF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBTN]
   }
 }

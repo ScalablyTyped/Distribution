@@ -16,7 +16,6 @@ object GetCoreDefinitionRequest {
   @scala.inline
   def apply(CoreDefinitionId: string): GetCoreDefinitionRequest = {
     val __obj = js.Dynamic.literal(CoreDefinitionId = CoreDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCoreDefinitionRequest]
   }
 }

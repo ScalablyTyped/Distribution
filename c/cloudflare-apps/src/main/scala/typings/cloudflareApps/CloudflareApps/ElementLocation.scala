@@ -18,7 +18,6 @@ object ElementLocation {
   @scala.inline
   def apply(method: before | prepend | append | after | replace, selector: String): ElementLocation = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElementLocation]
   }
 }

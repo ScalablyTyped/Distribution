@@ -21,7 +21,6 @@ object AnonFourDigits {
     fullWithTwoDecimalsNoCurrency: Format
   ): AnonFourDigits = {
     val __obj = js.Dynamic.literal(fourDigits = fourDigits.asInstanceOf[js.Any], fullWithNoDecimals = fullWithNoDecimals.asInstanceOf[js.Any], fullWithTwoDecimals = fullWithTwoDecimals.asInstanceOf[js.Any], fullWithTwoDecimalsNoCurrency = fullWithTwoDecimalsNoCurrency.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFourDigits]
   }
 }

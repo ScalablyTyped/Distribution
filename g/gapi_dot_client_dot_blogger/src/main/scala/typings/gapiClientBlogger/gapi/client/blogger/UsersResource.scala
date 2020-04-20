@@ -15,7 +15,6 @@ object UsersResource {
   @scala.inline
   def apply(get: AnonUserId => Request_[User]): UsersResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[UsersResource]
   }
 }

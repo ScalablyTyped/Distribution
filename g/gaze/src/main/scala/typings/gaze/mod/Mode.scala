@@ -13,12 +13,10 @@ trait Mode extends js.Object
 
 object Mode {
   @scala.inline
-  def auto: typings.gaze.gazeStrings.auto = this.cast("auto")
+  def auto: typings.gaze.gazeStrings.auto = "auto".asInstanceOf[typings.gaze.gazeStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def poll: typings.gaze.gazeStrings.poll = "poll".asInstanceOf[typings.gaze.gazeStrings.poll]
   @scala.inline
-  def poll: typings.gaze.gazeStrings.poll = this.cast("poll")
-  @scala.inline
-  def watch: typings.gaze.gazeStrings.watch = this.cast("watch")
+  def watch: typings.gaze.gazeStrings.watch = "watch".asInstanceOf[typings.gaze.gazeStrings.watch]
 }
 

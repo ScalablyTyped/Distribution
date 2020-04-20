@@ -36,7 +36,6 @@ object DownwardAPIVolumeFile {
   @scala.inline
   def apply(fieldRef: ObjectFieldSelector, mode: Double, path: String, resourceFieldRef: ResourceFieldSelector): DownwardAPIVolumeFile = {
     val __obj = js.Dynamic.literal(fieldRef = fieldRef.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], resourceFieldRef = resourceFieldRef.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DownwardAPIVolumeFile]
   }
 }

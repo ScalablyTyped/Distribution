@@ -27,7 +27,6 @@ object ProgressData {
   @scala.inline
   def apply(completedFiles: Double, completedSize: Double, percent: Double, totalFiles: Double): ProgressData = {
     val __obj = js.Dynamic.literal(completedFiles = completedFiles.asInstanceOf[js.Any], completedSize = completedSize.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], totalFiles = totalFiles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProgressData]
   }
 }

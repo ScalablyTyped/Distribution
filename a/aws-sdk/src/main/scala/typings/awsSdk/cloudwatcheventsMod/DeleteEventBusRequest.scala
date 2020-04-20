@@ -16,7 +16,6 @@ object DeleteEventBusRequest {
   @scala.inline
   def apply(Name: EventBusName): DeleteEventBusRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEventBusRequest]
   }
 }

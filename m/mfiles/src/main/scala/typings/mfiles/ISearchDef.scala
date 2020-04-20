@@ -27,7 +27,6 @@ object ISearchDef {
     SearchFlags: MFSearchFlags
   ): ISearchDef = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Conditions = Conditions.asInstanceOf[js.Any], IsIndirectionUsed = js.Any.fromFunction0(IsIndirectionUsed), Levels = Levels.asInstanceOf[js.Any], LookInAllVersions = LookInAllVersions.asInstanceOf[js.Any], ReturnLatestVisibleVersion = ReturnLatestVisibleVersion.asInstanceOf[js.Any], SearchFlags = SearchFlags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchDef]
   }
 }

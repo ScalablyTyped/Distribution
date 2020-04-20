@@ -16,7 +16,6 @@ object GetComputeEnvironmentArgs {
   @scala.inline
   def apply(computeEnvironmentName: String): GetComputeEnvironmentArgs = {
     val __obj = js.Dynamic.literal(computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetComputeEnvironmentArgs]
   }
 }

@@ -14,7 +14,6 @@ object AnonArchitecture {
   @scala.inline
   def apply(architecture: String, name: String, version: String): AnonArchitecture = {
     val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArchitecture]
   }
 }

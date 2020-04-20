@@ -12,7 +12,6 @@ object AsObject {
   @scala.inline
   def apply(isHealthy: Boolean): AsObject = {
     val __obj = js.Dynamic.literal(isHealthy = isHealthy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

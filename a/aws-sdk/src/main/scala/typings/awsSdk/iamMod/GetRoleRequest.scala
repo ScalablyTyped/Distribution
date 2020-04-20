@@ -16,7 +16,6 @@ object GetRoleRequest {
   @scala.inline
   def apply(RoleName: roleNameType): GetRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRoleRequest]
   }
 }

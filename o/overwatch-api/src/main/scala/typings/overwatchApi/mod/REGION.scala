@@ -15,16 +15,14 @@ trait REGION extends js.Object
 
 object REGION {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cn: typings.overwatchApi.overwatchApiStrings.cn = "cn".asInstanceOf[typings.overwatchApi.overwatchApiStrings.cn]
   @scala.inline
-  def cn: typings.overwatchApi.overwatchApiStrings.cn = this.cast("cn")
+  def eu: typings.overwatchApi.overwatchApiStrings.eu = "eu".asInstanceOf[typings.overwatchApi.overwatchApiStrings.eu]
   @scala.inline
-  def eu: typings.overwatchApi.overwatchApiStrings.eu = this.cast("eu")
+  def global: typings.overwatchApi.overwatchApiStrings.global = "global".asInstanceOf[typings.overwatchApi.overwatchApiStrings.global]
   @scala.inline
-  def global: typings.overwatchApi.overwatchApiStrings.global = this.cast("global")
+  def kr: typings.overwatchApi.overwatchApiStrings.kr = "kr".asInstanceOf[typings.overwatchApi.overwatchApiStrings.kr]
   @scala.inline
-  def kr: typings.overwatchApi.overwatchApiStrings.kr = this.cast("kr")
-  @scala.inline
-  def us: typings.overwatchApi.overwatchApiStrings.us = this.cast("us")
+  def us: typings.overwatchApi.overwatchApiStrings.us = "us".asInstanceOf[typings.overwatchApi.overwatchApiStrings.us]
 }
 

@@ -16,7 +16,6 @@ object DeleteInstallationMediaMessage {
   @scala.inline
   def apply(InstallationMediaId: String): DeleteInstallationMediaMessage = {
     val __obj = js.Dynamic.literal(InstallationMediaId = InstallationMediaId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteInstallationMediaMessage]
   }
 }

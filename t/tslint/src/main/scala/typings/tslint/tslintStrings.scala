@@ -178,11 +178,11 @@ object tslintStrings {
   @scala.inline
   def NoInfer: NoInfer = "NoInfer".asInstanceOf[NoInfer]
   @scala.inline
-  def `Shorthand method assignments have been disallowedDot`: `Shorthand method assignments have been disallowedDot` = "Shorthand method assignments have been disallowed.".asInstanceOf[`Shorthand method assignments have been disallowedDot`]
+  def `Shorthand method assignments have been disallowedDot`: `Shorthand method assignments have been disallowedDot` = ("Shorthand method assignments have been disallowed.").asInstanceOf[`Shorthand method assignments have been disallowedDot`]
   @scala.inline
-  def `Shorthand property and method assignments have been disallowedDot`: `Shorthand property and method assignments have been disallowedDot` = "Shorthand property and method assignments have been disallowed.".asInstanceOf[`Shorthand property and method assignments have been disallowedDot`]
+  def `Shorthand property and method assignments have been disallowedDot`: `Shorthand property and method assignments have been disallowedDot` = ("Shorthand property and method assignments have been disallowed.").asInstanceOf[`Shorthand property and method assignments have been disallowedDot`]
   @scala.inline
-  def `Shorthand property assignments have been disallowedDot`: `Shorthand property assignments have been disallowedDot` = "Shorthand property assignments have been disallowed.".asInstanceOf[`Shorthand property assignments have been disallowedDot`]
+  def `Shorthand property assignments have been disallowedDot`: `Shorthand property assignments have been disallowedDot` = ("Shorthand property assignments have been disallowed.").asInstanceOf[`Shorthand property assignments have been disallowedDot`]
   @scala.inline
   def Tildenil: Tildenil = "~nil".asInstanceOf[Tildenil]
   @scala.inline

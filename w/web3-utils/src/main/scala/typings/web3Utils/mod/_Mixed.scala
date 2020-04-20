@@ -17,7 +17,6 @@ object _Mixed {
   @scala.inline
   def AnonT(t: String, v: String | ^  | Double): _Mixed = {
     val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_Mixed]
   }
 }

@@ -29,7 +29,6 @@ object AccountsResource {
     user_permissions: UserPermissionsResource
   ): AccountsResource = {
     val __obj = js.Dynamic.literal(containers = containers.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update), user_permissions = user_permissions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountsResource]
   }
 }

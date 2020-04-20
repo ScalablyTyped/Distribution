@@ -22,7 +22,6 @@ object MessageTransaction {
     invoke: (String, js.Any) => Unit
   ): MessageTransaction = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), completed = js.Any.fromFunction0(completed), delayReturn = js.Any.fromFunction1(delayReturn), error = js.Any.fromFunction2(error), invoke = js.Any.fromFunction2(invoke))
-  
     __obj.asInstanceOf[MessageTransaction]
   }
 }

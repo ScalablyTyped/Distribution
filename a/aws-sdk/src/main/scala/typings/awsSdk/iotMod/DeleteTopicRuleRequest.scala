@@ -16,7 +16,6 @@ object DeleteTopicRuleRequest {
   @scala.inline
   def apply(ruleName: RuleName): DeleteTopicRuleRequest = {
     val __obj = js.Dynamic.literal(ruleName = ruleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTopicRuleRequest]
   }
 }

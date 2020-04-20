@@ -52,7 +52,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     ],
     options: SubOptions
   ): js.Promise[this.type] = js.native
-  def addListener[E /* <: String */](
+  def addListener[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -60,7 +60,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
       Unit
     ]
   ): js.Promise[this.type] = js.native
-  def addListener[E /* <: String */](
+  def addListener[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -69,10 +69,10 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     ],
     options: SubOptions
   ): js.Promise[this.type] = js.native
-  /* protected */ def deregisterAllListeners(eventType: (Extract[String, String]) | String): js.Promise[Unit | EventEmitter] = js.native
+  /* protected */ def deregisterAllListeners(eventType: (Extract[/* keyof EventTypes */ String, String]) | String): js.Promise[Unit | EventEmitter] = js.native
   /* protected */ def deregisterAllListeners(eventType: js.Symbol): js.Promise[Unit | EventEmitter] = js.native
-  /* protected */ def deregisterEventListener(eventType: (Extract[String, String]) | String): js.Promise[Unit | EventEmitter] = js.native
-  /* protected */ def deregisterEventListener(eventType: (Extract[String, String]) | String, options: SubOptions): js.Promise[Unit | EventEmitter] = js.native
+  /* protected */ def deregisterEventListener(eventType: (Extract[/* keyof EventTypes */ String, String]) | String): js.Promise[Unit | EventEmitter] = js.native
+  /* protected */ def deregisterEventListener(eventType: (Extract[/* keyof EventTypes */ String, String]) | String, options: SubOptions): js.Promise[Unit | EventEmitter] = js.native
   /* protected */ def deregisterEventListener(eventType: js.Symbol): js.Promise[Unit | EventEmitter] = js.native
   /* protected */ def deregisterEventListener(eventType: js.Symbol, options: SubOptions): js.Promise[Unit | EventEmitter] = js.native
   def emit(
@@ -85,7 +85,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     payload: /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ js.Any,
     args: js.Any*
   ): Boolean = js.native
-  def emit[E /* <: String */](
+  def emit[E /* <: /* keyof EventTypes */ String */](
     eventName: E,
     payload: /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ js.Any,
     args: js.Any*
@@ -129,7 +129,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     ],
     options: SubOptions
   ): js.Promise[this.type] = js.native
-  def on[E /* <: String */](
+  def on[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -137,7 +137,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
       Unit
     ]
   ): js.Promise[this.type] = js.native
-  def on[E /* <: String */](
+  def on[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -180,7 +180,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     ],
     options: SubOptions
   ): js.Promise[this.type] = js.native
-  def once[E /* <: String */](
+  def once[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -188,7 +188,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
       Unit
     ]
   ): js.Promise[this.type] = js.native
-  def once[E /* <: String */](
+  def once[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -231,7 +231,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     ],
     options: SubOptions
   ): js.Promise[this.type] = js.native
-  def prependListener[E /* <: String */](
+  def prependListener[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -239,7 +239,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
       Unit
     ]
   ): js.Promise[this.type] = js.native
-  def prependListener[E /* <: String */](
+  def prependListener[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -282,7 +282,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     ],
     options: SubOptions
   ): js.Promise[this.type] = js.native
-  def prependOnceListener[E /* <: String */](
+  def prependOnceListener[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -290,7 +290,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
       Unit
     ]
   ): js.Promise[this.type] = js.native
-  def prependOnceListener[E /* <: String */](
+  def prependOnceListener[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -299,12 +299,12 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     ],
     options: SubOptions
   ): js.Promise[this.type] = js.native
-  /* protected */ def registerEventListener(eventType: (Extract[String, String]) | String): js.Promise[EventEmitter] = js.native
-  /* protected */ def registerEventListener(eventType: (Extract[String, String]) | String, options: SubOptions): js.Promise[EventEmitter] = js.native
+  /* protected */ def registerEventListener(eventType: (Extract[/* keyof EventTypes */ String, String]) | String): js.Promise[EventEmitter] = js.native
+  /* protected */ def registerEventListener(eventType: (Extract[/* keyof EventTypes */ String, String]) | String, options: SubOptions): js.Promise[EventEmitter] = js.native
   /* protected */ def registerEventListener(eventType: js.Symbol): js.Promise[EventEmitter] = js.native
   /* protected */ def registerEventListener(eventType: js.Symbol, options: SubOptions): js.Promise[EventEmitter] = js.native
   def removeAllListeners(): js.Promise[this.type] = js.native
-  def removeAllListeners(eventType: (Extract[String, String]) | String): js.Promise[this.type] = js.native
+  def removeAllListeners(eventType: (Extract[/* keyof EventTypes */ String, String]) | String): js.Promise[this.type] = js.native
   def removeAllListeners(eventType: js.Symbol): js.Promise[this.type] = js.native
   def removeListener(
     eventType: String,
@@ -340,7 +340,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     ],
     options: SubOptions
   ): js.Promise[this.type] = js.native
-  def removeListener[E /* <: String */](
+  def removeListener[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
@@ -348,7 +348,7 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
       Unit
     ]
   ): js.Promise[this.type] = js.native
-  def removeListener[E /* <: String */](
+  def removeListener[E /* <: /* keyof EventTypes */ String */](
     eventType: E,
     listener: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 

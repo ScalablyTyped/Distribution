@@ -23,7 +23,7 @@ abstract class ProjectSettingsPart protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FProjectSettingsPart: IModel = js.native
-  def containerAsProjectSettings(): ProjectSettings = js.native
+  def containerAsProjectSettings: ProjectSettings = js.native
 }
 
 /* static members */

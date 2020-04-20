@@ -15,7 +15,6 @@ object AnonAllowEmpty {
   @scala.inline
   def apply(allowEmpty: Boolean, referers: js.Array[String], res: NormalSuccessResponse): AnonAllowEmpty = {
     val __obj = js.Dynamic.literal(allowEmpty = allowEmpty.asInstanceOf[js.Any], referers = referers.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllowEmpty]
   }
 }

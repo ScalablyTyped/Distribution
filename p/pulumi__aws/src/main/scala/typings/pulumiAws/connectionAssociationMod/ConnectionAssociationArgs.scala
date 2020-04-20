@@ -21,7 +21,6 @@ object ConnectionAssociationArgs {
   @scala.inline
   def apply(connectionId: Input[String], lagId: Input[String]): ConnectionAssociationArgs = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], lagId = lagId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionAssociationArgs]
   }
 }

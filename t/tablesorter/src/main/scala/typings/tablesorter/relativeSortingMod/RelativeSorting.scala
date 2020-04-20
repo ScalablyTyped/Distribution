@@ -14,14 +14,12 @@ trait RelativeSorting extends js.Object
 
 object RelativeSorting {
   @scala.inline
-  def a: typings.tablesorter.tablesorterStrings.a = this.cast("a")
+  def a: typings.tablesorter.tablesorterStrings.a = "a".asInstanceOf[typings.tablesorter.tablesorterStrings.a]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def d: typings.tablesorter.tablesorterStrings.d = "d".asInstanceOf[typings.tablesorter.tablesorterStrings.d]
   @scala.inline
-  def d: typings.tablesorter.tablesorterStrings.d = this.cast("d")
+  def o: typings.tablesorter.tablesorterStrings.o = "o".asInstanceOf[typings.tablesorter.tablesorterStrings.o]
   @scala.inline
-  def o: typings.tablesorter.tablesorterStrings.o = this.cast("o")
-  @scala.inline
-  def s: typings.tablesorter.tablesorterStrings.s = this.cast("s")
+  def s: typings.tablesorter.tablesorterStrings.s = "s".asInstanceOf[typings.tablesorter.tablesorterStrings.s]
 }
 

@@ -14,7 +14,6 @@ object GoToAction {
   @scala.inline
   def apply(description: String, link: String, text: String): GoToAction = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoToAction]
   }
 }

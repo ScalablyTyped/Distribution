@@ -16,7 +16,6 @@ object AnonAttemptsremaining {
   @scala.inline
   def apply(attempts_remaining: Double, status: pending | succeeded | failed): AnonAttemptsremaining = {
     val __obj = js.Dynamic.literal(attempts_remaining = attempts_remaining.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttemptsremaining]
   }
 }

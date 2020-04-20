@@ -30,7 +30,6 @@ object UpdateClusterConfigurationRequest {
   @scala.inline
   def apply(ClusterArn: string, ConfigurationInfo: ConfigurationInfo, CurrentVersion: string): UpdateClusterConfigurationRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any], ConfigurationInfo = ConfigurationInfo.asInstanceOf[js.Any], CurrentVersion = CurrentVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateClusterConfigurationRequest]
   }
 }

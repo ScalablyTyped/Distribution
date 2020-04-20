@@ -27,7 +27,6 @@ object IPreviewerActiveXCtrl {
     ShowHitHighlightedFilePreview: (String, Double, Double, Double, Double, Double, js.Any, String) => Double
   ): IPreviewerActiveXCtrl = {
     val __obj = js.Dynamic.literal(ClearPreview = js.Any.fromFunction0(ClearPreview), ShowFilePreview = js.Any.fromFunction1(ShowFilePreview), ShowHitHighlightedFilePreview = js.Any.fromFunction8(ShowHitHighlightedFilePreview))
-  
     __obj.asInstanceOf[IPreviewerActiveXCtrl]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactInputMaskProps {
   @scala.inline
-  def ReactInputMaskProps: Props.type = typings.reactInputMask.mod.Props
+  def ReactInputMaskProps: Props.type = Props
   type ReactInputMaskProps = Props
 }
 

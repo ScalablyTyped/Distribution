@@ -39,7 +39,6 @@ object Package {
     rebuild: () => js.Promise[AnonCode]
   ): Package = {
     val __obj = js.Dynamic.literal(getBuildFailureOutput = js.Any.fromFunction0(getBuildFailureOutput), isCompatible = js.Any.fromFunction0(isCompatible), name = name.asInstanceOf[js.Any], onDidDeactivate = js.Any.fromFunction1(onDidDeactivate), path = path.asInstanceOf[js.Any], rebuild = js.Any.fromFunction0(rebuild))
-  
     __obj.asInstanceOf[Package]
   }
 }

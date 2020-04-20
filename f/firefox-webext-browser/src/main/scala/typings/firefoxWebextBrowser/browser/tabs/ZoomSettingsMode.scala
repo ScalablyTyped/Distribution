@@ -17,12 +17,10 @@ trait ZoomSettingsMode extends js.Object
 
 object ZoomSettingsMode {
   @scala.inline
-  def automatic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.automatic = this.cast("automatic")
+  def automatic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.automatic = "automatic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.automatic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disabled = "disabled".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disabled]
   @scala.inline
-  def disabled: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def manual: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual = this.cast("manual")
+  def manual: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual = "manual".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual]
 }
 

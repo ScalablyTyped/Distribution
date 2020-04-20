@@ -20,7 +20,6 @@ object CompiledRoutine {
     thisVars: js.Array[String]
   ): CompiledRoutine = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], localVars = localVars.asInstanceOf[js.Any], thisVars = thisVars.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompiledRoutine]
   }
 }

@@ -16,7 +16,6 @@ object AnonALL {
   @scala.inline
   def apply(ALL: String, COLUMN: String, EDIT: String, OPTIONS: String, ROW: String): AnonALL = {
     val __obj = js.Dynamic.literal(ALL = ALL.asInstanceOf[js.Any], COLUMN = COLUMN.asInstanceOf[js.Any], EDIT = EDIT.asInstanceOf[js.Any], OPTIONS = OPTIONS.asInstanceOf[js.Any], ROW = ROW.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonALL]
   }
 }

@@ -12,7 +12,6 @@ object ApplyResultWithRevert {
   @scala.inline
   def apply(doc: js.Any, revert: JsonPatch): ApplyResultWithRevert = {
     val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any], revert = revert.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplyResultWithRevert]
   }
 }

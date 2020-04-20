@@ -32,7 +32,6 @@ object GetPolicyDocumentStatementCondition {
   @scala.inline
   def apply(test: String, values: js.Array[String], variable: String): GetPolicyDocumentStatementCondition = {
     val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPolicyDocumentStatementCondition]
   }
 }

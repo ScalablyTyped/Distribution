@@ -21,9 +21,9 @@ trait AnonResponseDateTimeRenderOption extends js.Object {
     * Determines if the update response should include the values
     * of the cells that were updated. By default, responses
     * do not include the updated values.
-    * If the range to write was larger than than the range actually written,
-    * the response will include all values in the requested range (excluding
-    * trailing empty rows and columns).
+    * If the range to write was larger than the range actually written, the
+    * response includes all values in the requested range (excluding trailing
+    * empty rows and columns).
     */
   var includeValuesInResponse: js.UndefOr[Boolean] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */

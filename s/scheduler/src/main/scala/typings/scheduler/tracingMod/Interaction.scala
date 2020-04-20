@@ -15,7 +15,6 @@ object Interaction {
   @scala.inline
   def apply(__count: Double, id: Double, name: String, timestamp: Double): Interaction = {
     val __obj = js.Dynamic.literal(__count = __count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Interaction]
   }
 }

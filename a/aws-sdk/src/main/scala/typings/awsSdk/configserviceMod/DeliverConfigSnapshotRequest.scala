@@ -16,7 +16,6 @@ object DeliverConfigSnapshotRequest {
   @scala.inline
   def apply(deliveryChannelName: ChannelName): DeliverConfigSnapshotRequest = {
     val __obj = js.Dynamic.literal(deliveryChannelName = deliveryChannelName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeliverConfigSnapshotRequest]
   }
 }

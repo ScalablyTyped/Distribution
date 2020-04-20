@@ -12,10 +12,8 @@ trait BackdropClassKey extends js.Object
 
 object BackdropClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def invisible: typings.materialUiCore.materialUiCoreStrings.invisible = "invisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.invisible]
   @scala.inline
-  def invisible: typings.materialUiCore.materialUiCoreStrings.invisible = this.cast("invisible")
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

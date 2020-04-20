@@ -177,23 +177,23 @@ object semanticUiVisibilityStrings {
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
-  def `disable callbacks`: `disable callbacks` = "disable callbacks".asInstanceOf[`disable callbacks`]
+  def `disable callbacks`: `disable callbacks` = ("disable callbacks").asInstanceOf[`disable callbacks`]
   @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
   @scala.inline
-  def `enable callbacks`: `enable callbacks` = "enable callbacks".asInstanceOf[`enable callbacks`]
+  def `enable callbacks`: `enable callbacks` = ("enable callbacks").asInstanceOf[`enable callbacks`]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   @scala.inline
-  def `get element calculations`: `get element calculations` = "get element calculations".asInstanceOf[`get element calculations`]
+  def `get element calculations`: `get element calculations` = ("get element calculations").asInstanceOf[`get element calculations`]
   @scala.inline
-  def `get pixels passed`: `get pixels passed` = "get pixels passed".asInstanceOf[`get pixels passed`]
+  def `get pixels passed`: `get pixels passed` = ("get pixels passed").asInstanceOf[`get pixels passed`]
   @scala.inline
-  def `get screen calculations`: `get screen calculations` = "get screen calculations".asInstanceOf[`get screen calculations`]
+  def `get screen calculations`: `get screen calculations` = ("get screen calculations").asInstanceOf[`get screen calculations`]
   @scala.inline
-  def `get screen size`: `get screen size` = "get screen size".asInstanceOf[`get screen size`]
+  def `get screen size`: `get screen size` = ("get screen size").asInstanceOf[`get screen size`]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
@@ -201,9 +201,9 @@ object semanticUiVisibilityStrings {
   @scala.inline
   def initialCheck: initialCheck = "initialCheck".asInstanceOf[initialCheck]
   @scala.inline
-  def `is off screen`: `is off screen` = "is off screen".asInstanceOf[`is off screen`]
+  def `is off screen`: `is off screen` = ("is off screen").asInstanceOf[`is off screen`]
   @scala.inline
-  def `is on screen`: `is on screen` = "is on screen".asInstanceOf[`is on screen`]
+  def `is on screen`: `is on screen` = ("is on screen").asInstanceOf[`is on screen`]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline

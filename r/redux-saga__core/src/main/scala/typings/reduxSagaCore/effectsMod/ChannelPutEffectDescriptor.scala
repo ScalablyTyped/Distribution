@@ -14,7 +14,6 @@ object ChannelPutEffectDescriptor {
   @scala.inline
   def apply[T](action: T, channel: PuttableChannel[T]): ChannelPutEffectDescriptor[T] = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelPutEffectDescriptor[T]]
   }
 }

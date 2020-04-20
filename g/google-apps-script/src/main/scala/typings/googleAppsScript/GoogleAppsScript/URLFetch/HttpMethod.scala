@@ -15,16 +15,14 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: typings.googleAppsScript.googleAppsScriptStrings.delete = "delete".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.delete]
   @scala.inline
-  def delete: typings.googleAppsScript.googleAppsScriptStrings.delete = this.cast("delete")
+  def get: typings.googleAppsScript.googleAppsScriptStrings.get = "get".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.get]
   @scala.inline
-  def get: typings.googleAppsScript.googleAppsScriptStrings.get = this.cast("get")
+  def patch: typings.googleAppsScript.googleAppsScriptStrings.patch = "patch".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.patch]
   @scala.inline
-  def patch: typings.googleAppsScript.googleAppsScriptStrings.patch = this.cast("patch")
+  def post: typings.googleAppsScript.googleAppsScriptStrings.post = "post".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.post]
   @scala.inline
-  def post: typings.googleAppsScript.googleAppsScriptStrings.post = this.cast("post")
-  @scala.inline
-  def put: typings.googleAppsScript.googleAppsScriptStrings.put = this.cast("put")
+  def put: typings.googleAppsScript.googleAppsScriptStrings.put = "put".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.put]
 }
 

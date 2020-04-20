@@ -16,12 +16,10 @@ trait WdAlertLevel extends js.Object
 
 object WdAlertLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAlertsAll: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdAlertsAll: `-1` = this.cast(-1)
+  def wdAlertsMessageBox: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def wdAlertsMessageBox: `-2` = this.cast(-2)
-  @scala.inline
-  def wdAlertsNone: `0` = this.cast(0)
+  def wdAlertsNone: `0` = 0.asInstanceOf[`0`]
 }
 

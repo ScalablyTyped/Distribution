@@ -28,7 +28,6 @@ object AddApplicationCloudWatchLoggingOptionRequest {
     CurrentApplicationVersionId: ApplicationVersionId
   ): AddApplicationCloudWatchLoggingOptionRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CloudWatchLoggingOption = CloudWatchLoggingOption.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddApplicationCloudWatchLoggingOptionRequest]
   }
 }

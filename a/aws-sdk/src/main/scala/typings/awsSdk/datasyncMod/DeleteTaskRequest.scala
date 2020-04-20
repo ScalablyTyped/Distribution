@@ -16,7 +16,6 @@ object DeleteTaskRequest {
   @scala.inline
   def apply(TaskArn: TaskArn): DeleteTaskRequest = {
     val __obj = js.Dynamic.literal(TaskArn = TaskArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTaskRequest]
   }
 }

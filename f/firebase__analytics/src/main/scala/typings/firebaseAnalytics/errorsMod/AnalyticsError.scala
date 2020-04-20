@@ -18,14 +18,12 @@ trait AnalyticsError extends js.Object
 
 object AnalyticsError {
   @scala.inline
-  def ALREADY_EXISTS: `already-exists` = this.cast("already-exists")
+  def ALREADY_EXISTS: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
   @scala.inline
-  def ALREADY_INITIALIZED: `already-initialized` = this.cast("already-initialized")
+  def ALREADY_INITIALIZED: `already-initialized` = "already-initialized".asInstanceOf[`already-initialized`]
   @scala.inline
-  def INTEROP_COMPONENT_REG_FAILED: `interop-component-reg-failed` = this.cast("interop-component-reg-failed")
+  def INTEROP_COMPONENT_REG_FAILED: `interop-component-reg-failed` = "interop-component-reg-failed".asInstanceOf[`interop-component-reg-failed`]
   @scala.inline
-  def NO_GA_ID: `no-ga-id` = this.cast("no-ga-id")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NO_GA_ID: `no-ga-id` = "no-ga-id".asInstanceOf[`no-ga-id`]
 }
 

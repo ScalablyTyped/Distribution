@@ -12,7 +12,6 @@ object AnonAllowAutomaticSemicolonInsertion {
   @scala.inline
   def apply(allowAutomaticSemicolonInsertion: Boolean): AnonAllowAutomaticSemicolonInsertion = {
     val __obj = js.Dynamic.literal(allowAutomaticSemicolonInsertion = allowAutomaticSemicolonInsertion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllowAutomaticSemicolonInsertion]
   }
 }

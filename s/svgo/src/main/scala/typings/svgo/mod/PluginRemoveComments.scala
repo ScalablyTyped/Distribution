@@ -12,7 +12,6 @@ object PluginRemoveComments {
   @scala.inline
   def apply(removeComments: Boolean | js.Object): PluginRemoveComments = {
     val __obj = js.Dynamic.literal(removeComments = removeComments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveComments]
   }
 }

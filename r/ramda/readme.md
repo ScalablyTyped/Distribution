@@ -1,7 +1,7 @@
 
 # Scala.js typings for ramda
 
-Typings are for version 0.26
+Typings are for version 0.27
 
 ## Library description:
 A practical functional library for JavaScript programmers.

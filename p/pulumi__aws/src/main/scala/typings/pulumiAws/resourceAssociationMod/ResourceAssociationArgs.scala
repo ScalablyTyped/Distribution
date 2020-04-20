@@ -21,7 +21,6 @@ object ResourceAssociationArgs {
   @scala.inline
   def apply(resourceArn: Input[String], resourceShareArn: Input[String]): ResourceAssociationArgs = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceAssociationArgs]
   }
 }

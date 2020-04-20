@@ -13,7 +13,6 @@ object WithRouterStatics {
   @scala.inline
   def apply[C /* <: ComponentType[_] */](WrappedComponent: C): WithRouterStatics[C] = {
     val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WithRouterStatics[C]]
   }
 }

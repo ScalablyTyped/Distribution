@@ -26,7 +26,6 @@ object IEditorBreakpoint {
   @scala.inline
   def apply(qEnabled: Boolean, qbufferName: String, qlineIx: Double): IEditorBreakpoint = {
     val __obj = js.Dynamic.literal(qEnabled = qEnabled.asInstanceOf[js.Any], qbufferName = qbufferName.asInstanceOf[js.Any], qlineIx = qlineIx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEditorBreakpoint]
   }
 }

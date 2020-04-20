@@ -29,7 +29,6 @@ object ConditionalForwaderArgs {
     remoteDomainName: Input[String]
   ): ConditionalForwaderArgs = {
     val __obj = js.Dynamic.literal(directoryId = directoryId.asInstanceOf[js.Any], dnsIps = dnsIps.asInstanceOf[js.Any], remoteDomainName = remoteDomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConditionalForwaderArgs]
   }
 }

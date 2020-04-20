@@ -27,7 +27,6 @@ object Socketty {
     createServer: js.Any => SockettyServer
   ): Socketty = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction2(connect), createServer = js.Any.fromFunction1(createServer))
-  
     __obj.asInstanceOf[Socketty]
   }
 }

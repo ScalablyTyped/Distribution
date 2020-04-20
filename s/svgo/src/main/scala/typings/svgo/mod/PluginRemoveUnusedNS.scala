@@ -12,7 +12,6 @@ object PluginRemoveUnusedNS {
   @scala.inline
   def apply(removeUnusedNS: Boolean | js.Object): PluginRemoveUnusedNS = {
     val __obj = js.Dynamic.literal(removeUnusedNS = removeUnusedNS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveUnusedNS]
   }
 }

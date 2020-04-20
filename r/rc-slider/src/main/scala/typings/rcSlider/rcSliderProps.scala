@@ -13,7 +13,7 @@ trait rcSliderProps {
   def RangeProps: typings.rcSlider.mod.RangeProps.type = typings.rcSlider.mod.RangeProps
   type RangeProps = typings.rcSlider.mod.RangeProps
   @scala.inline
-  def RcSliderProps: SliderProps.type = typings.rcSlider.mod.SliderProps
+  def RcSliderProps: SliderProps.type = SliderProps
   type RcSliderProps = SliderProps
 }
 

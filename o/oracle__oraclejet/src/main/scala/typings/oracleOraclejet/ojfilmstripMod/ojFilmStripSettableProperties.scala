@@ -40,7 +40,6 @@ object ojFilmStripSettableProperties {
     translations: AnonLabelAccArrowNextPage
   ): ojFilmStripSettableProperties = {
     val __obj = js.Dynamic.literal(arrowPlacement = arrowPlacement.asInstanceOf[js.Any], arrowVisibility = arrowVisibility.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], looping = looping.asInstanceOf[js.Any], maxItemsPerPage = maxItemsPerPage.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ojFilmStripSettableProperties]
   }
 }

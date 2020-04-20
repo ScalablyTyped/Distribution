@@ -15,15 +15,15 @@ class ViveController protected () extends WebVRController {
   /**
     * Fired when the left button on this controller is modified
     */
-  def onLeftButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+  def onLeftButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
   /**
     * Fired when the menu button on this controller is modified
     */
-  def onMenuButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+  def onMenuButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
   /**
     * Fired when the right button on this controller is modified
     */
-  def onRightButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+  def onRightButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
 }
 
 /* static members */

@@ -13,7 +13,6 @@ object Bounds {
   @scala.inline
   def apply(bottomRight: Point, topLeft: Point): Bounds = {
     val __obj = js.Dynamic.literal(bottomRight = bottomRight.asInstanceOf[js.Any], topLeft = topLeft.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Bounds]
   }
 }

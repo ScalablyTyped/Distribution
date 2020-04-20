@@ -20,7 +20,6 @@ object ActivityTaskCancelRequestedEventAttributes {
   @scala.inline
   def apply(activityId: ActivityId, decisionTaskCompletedEventId: EventId): ActivityTaskCancelRequestedEventAttributes = {
     val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActivityTaskCancelRequestedEventAttributes]
   }
 }

@@ -67,7 +67,7 @@ trait ReposCreateInOrgParams extends js.Object {
   var name: String
   var org: String
   /**
-    * Either `true` to create a private repository or `false` to create a public one. Creating private repositories requires a paid GitHub account.
+    * Either `true` to create a private repository or `false` to create a public one.
     */
   var `private`: js.UndefOr[Boolean] = js.undefined
   /**

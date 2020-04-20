@@ -13,7 +13,6 @@ object SchemaIDObj {
   @scala.inline
   def apply(schema_name: String, schema_version: String): SchemaIDObj = {
     val __obj = js.Dynamic.literal(schema_name = schema_name.asInstanceOf[js.Any], schema_version = schema_version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SchemaIDObj]
   }
 }

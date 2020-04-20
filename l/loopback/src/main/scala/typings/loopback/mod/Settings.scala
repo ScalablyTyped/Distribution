@@ -14,7 +14,6 @@ object Settings {
   @scala.inline
   def apply(acls: js.Array[ACL], http: AnonPath): Settings = {
     val __obj = js.Dynamic.literal(acls = acls.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Settings]
   }
 }

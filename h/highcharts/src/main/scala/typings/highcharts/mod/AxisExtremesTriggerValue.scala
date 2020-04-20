@@ -17,20 +17,18 @@ trait AxisExtremesTriggerValue extends js.Object
 
 object AxisExtremesTriggerValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def navigator: typings.highcharts.highchartsStrings.navigator = "navigator".asInstanceOf[typings.highcharts.highchartsStrings.navigator]
   @scala.inline
-  def navigator: typings.highcharts.highchartsStrings.navigator = this.cast("navigator")
+  def pan: typings.highcharts.highchartsStrings.pan = "pan".asInstanceOf[typings.highcharts.highchartsStrings.pan]
   @scala.inline
-  def pan: typings.highcharts.highchartsStrings.pan = this.cast("pan")
+  def rangeSelectorButton: typings.highcharts.highchartsStrings.rangeSelectorButton = "rangeSelectorButton".asInstanceOf[typings.highcharts.highchartsStrings.rangeSelectorButton]
   @scala.inline
-  def rangeSelectorButton: typings.highcharts.highchartsStrings.rangeSelectorButton = this.cast("rangeSelectorButton")
+  def rangeSelectorInput: typings.highcharts.highchartsStrings.rangeSelectorInput = "rangeSelectorInput".asInstanceOf[typings.highcharts.highchartsStrings.rangeSelectorInput]
   @scala.inline
-  def rangeSelectorInput: typings.highcharts.highchartsStrings.rangeSelectorInput = this.cast("rangeSelectorInput")
+  def scrollbar: typings.highcharts.highchartsStrings.scrollbar = "scrollbar".asInstanceOf[typings.highcharts.highchartsStrings.scrollbar]
   @scala.inline
-  def scrollbar: typings.highcharts.highchartsStrings.scrollbar = this.cast("scrollbar")
+  def traverseUpButton: typings.highcharts.highchartsStrings.traverseUpButton = "traverseUpButton".asInstanceOf[typings.highcharts.highchartsStrings.traverseUpButton]
   @scala.inline
-  def traverseUpButton: typings.highcharts.highchartsStrings.traverseUpButton = this.cast("traverseUpButton")
-  @scala.inline
-  def zoom: typings.highcharts.highchartsStrings.zoom = this.cast("zoom")
+  def zoom: typings.highcharts.highchartsStrings.zoom = "zoom".asInstanceOf[typings.highcharts.highchartsStrings.zoom]
 }
 

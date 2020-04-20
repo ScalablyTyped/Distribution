@@ -31,7 +31,6 @@ object IKeyHandler {
     onKeyDown: (typings.luminoDatagrid.datagridMod.DataGrid, KeyboardEvent) => Unit
   ): IKeyHandler = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], onKeyDown = js.Any.fromFunction2(onKeyDown))
-  
     __obj.asInstanceOf[IKeyHandler]
   }
 }

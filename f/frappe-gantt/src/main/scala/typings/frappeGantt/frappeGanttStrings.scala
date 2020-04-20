@@ -24,11 +24,11 @@ object frappeGanttStrings {
   @scala.inline
   def Day: Day = "Day".asInstanceOf[Day]
   @scala.inline
-  def `Half Day`: `Half Day` = "Half Day".asInstanceOf[`Half Day`]
+  def `Half Day`: `Half Day` = ("Half Day").asInstanceOf[`Half Day`]
   @scala.inline
   def Month: Month = "Month".asInstanceOf[Month]
   @scala.inline
-  def `Quarter Day`: `Quarter Day` = "Quarter Day".asInstanceOf[`Quarter Day`]
+  def `Quarter Day`: `Quarter Day` = ("Quarter Day").asInstanceOf[`Quarter Day`]
   @scala.inline
   def Week: Week = "Week".asInstanceOf[Week]
 }

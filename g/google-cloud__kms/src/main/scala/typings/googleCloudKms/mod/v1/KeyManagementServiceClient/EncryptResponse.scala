@@ -14,7 +14,6 @@ object EncryptResponse {
   @scala.inline
   def apply(ciphertext: Buffer, name: String): EncryptResponse = {
     val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptResponse]
   }
 }

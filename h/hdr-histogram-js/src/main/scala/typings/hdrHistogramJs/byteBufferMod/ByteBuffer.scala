@@ -38,7 +38,6 @@ object ByteBuffer {
     resetPosition: () => Unit
   ): ByteBuffer = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], get = js.Any.fromFunction0(get), getInt32 = js.Any.fromFunction0(getInt32), getInt64 = js.Any.fromFunction0(getInt64), int32ArrayForConvert = int32ArrayForConvert.asInstanceOf[js.Any], int8ArrayForConvert = int8ArrayForConvert.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], put = js.Any.fromFunction1(put), putArray = js.Any.fromFunction1(putArray), putInt32 = js.Any.fromFunction1(putInt32), putInt64 = js.Any.fromFunction1(putInt64), resetPosition = js.Any.fromFunction0(resetPosition))
-  
     __obj.asInstanceOf[ByteBuffer]
   }
 }

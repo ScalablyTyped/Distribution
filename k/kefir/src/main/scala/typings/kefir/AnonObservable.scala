@@ -12,7 +12,6 @@ object AnonObservable {
   @scala.inline
   def apply(Observable: AnonAp): AnonObservable = {
     val __obj = js.Dynamic.literal(Observable = Observable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonObservable]
   }
 }

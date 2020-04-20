@@ -13,7 +13,6 @@ object WebDriverBarrier {
   @scala.inline
   def apply(onCommand: WebDriverCommand => js.Promise[Unit]): WebDriverBarrier = {
     val __obj = js.Dynamic.literal(onCommand = js.Any.fromFunction1(onCommand))
-  
     __obj.asInstanceOf[WebDriverBarrier]
   }
 }

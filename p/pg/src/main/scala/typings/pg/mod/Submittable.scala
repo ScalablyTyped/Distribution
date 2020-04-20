@@ -12,7 +12,6 @@ object Submittable {
   @scala.inline
   def apply(submit: Connection => Unit): Submittable = {
     val __obj = js.Dynamic.literal(submit = js.Any.fromFunction1(submit))
-  
     __obj.asInstanceOf[Submittable]
   }
 }

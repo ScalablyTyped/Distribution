@@ -15,7 +15,6 @@ object TaskAgentPoolMaintenanceRetentionPolicy {
   @scala.inline
   def apply(numberOfHistoryRecordsToKeep: Double): TaskAgentPoolMaintenanceRetentionPolicy = {
     val __obj = js.Dynamic.literal(numberOfHistoryRecordsToKeep = numberOfHistoryRecordsToKeep.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskAgentPoolMaintenanceRetentionPolicy]
   }
 }

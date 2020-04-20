@@ -13,7 +13,6 @@ object CreateTopicResponse {
   @scala.inline
   def apply(error: String, topic: String): CreateTopicResponse = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTopicResponse]
   }
 }

@@ -15,7 +15,6 @@ object NightwatchAssertionsError {
   @scala.inline
   def apply(message: String, name: String, showDiff: Boolean, stack: String): NightwatchAssertionsError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], showDiff = showDiff.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NightwatchAssertionsError]
   }
 }

@@ -14,10 +14,8 @@ trait MsoSyncCompareType extends js.Object
 
 object MsoSyncCompareType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSyncCompareAndMerge: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoSyncCompareAndMerge: `0` = this.cast(0)
-  @scala.inline
-  def msoSyncCompareSideBySide: `1` = this.cast(1)
+  def msoSyncCompareSideBySide: `1` = 1.asInstanceOf[`1`]
 }
 

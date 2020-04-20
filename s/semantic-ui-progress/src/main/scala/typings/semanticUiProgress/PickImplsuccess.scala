@@ -14,7 +14,6 @@ object PickImplsuccess {
   @scala.inline
   def apply(success: `false` | String): PickImplsuccess = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsuccess]
   }
 }

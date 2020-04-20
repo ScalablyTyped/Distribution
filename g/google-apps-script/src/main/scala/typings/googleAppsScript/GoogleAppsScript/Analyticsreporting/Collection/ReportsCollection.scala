@@ -15,7 +15,6 @@ object ReportsCollection {
   @scala.inline
   def apply(batchGet: GetReportsRequest => GetReportsResponse): ReportsCollection = {
     val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet))
-  
     __obj.asInstanceOf[ReportsCollection]
   }
 }

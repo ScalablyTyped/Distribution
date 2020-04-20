@@ -16,7 +16,6 @@ object ThirdPartyLocationResult {
   @scala.inline
   def apply(alias: String, fields: js.Object, protocol: String): ThirdPartyLocationResult = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThirdPartyLocationResult]
   }
 }

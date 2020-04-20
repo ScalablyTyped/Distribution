@@ -14,10 +14,8 @@ trait PpAlertLevel extends js.Object
 
 object PpAlertLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppAlertsAll: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppAlertsAll: `2` = this.cast(2)
-  @scala.inline
-  def ppAlertsNone: `1` = this.cast(1)
+  def ppAlertsNone: `1` = 1.asInstanceOf[`1`]
 }
 

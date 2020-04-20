@@ -13,7 +13,6 @@ object AnonPageX {
   @scala.inline
   def apply(pageX: Double, pageY: Double): AnonPageX = {
     val __obj = js.Dynamic.literal(pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPageX]
   }
 }

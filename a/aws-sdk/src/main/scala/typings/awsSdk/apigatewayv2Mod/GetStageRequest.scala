@@ -20,7 +20,6 @@ object GetStageRequest {
   @scala.inline
   def apply(ApiId: string, StageName: string): GetStageRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], StageName = StageName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetStageRequest]
   }
 }

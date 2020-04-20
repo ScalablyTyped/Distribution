@@ -12,7 +12,6 @@ object AnonWeekNumber {
   @scala.inline
   def apply(weekNumber: String): AnonWeekNumber = {
     val __obj = js.Dynamic.literal(weekNumber = weekNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWeekNumber]
   }
 }

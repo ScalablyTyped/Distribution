@@ -29,7 +29,7 @@ class ClientTemplateParameter protected () extends Element {
     *
     * In version 7.11.0: deleted
     */
-  def attributePath(): String = js.native
+  def attributePath: String = js.native
   def attributePath(newValue: String): js.Any = js.native
   def attributeRef(): js.Any = js.native
   def attributeRef(newValue: AttributeRef): js.Any = js.native
@@ -37,12 +37,12 @@ class ClientTemplateParameter protected () extends Element {
     * In version 7.11.0: introduced
     */
   @JSName("attributeRef")
-  def attributeRef_Union(): AttributeRef | Null = js.native
-  def containerAsClientTemplate(): ClientTemplate = js.native
+  def attributeRef_Union: AttributeRef | Null = js.native
+  def containerAsClientTemplate: ClientTemplate = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def formattingInfo(): FormattingInfo = js.native
+  def formattingInfo: FormattingInfo = js.native
   def formattingInfo(newValue: FormattingInfo): js.Any = js.native
 }
 

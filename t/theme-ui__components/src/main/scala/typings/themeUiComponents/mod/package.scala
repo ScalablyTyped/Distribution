@@ -8,7 +8,7 @@ package object mod {
   type AlertProps = typings.themeUiComponents.mod.BoxProps
   type Assign[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T & U ]: P extends keyof T? T[P] : P extends keyof U? U[P] : never}
-    */ typings.themeUiComponents.themeUiComponentsStrings.Assign with js.Any
+    */ typings.themeUiComponents.themeUiComponentsStrings.Assign with org.scalablytyped.runtime.TopLevel[js.Any]
   type BadgeProps = typings.themeUiComponents.mod.BoxProps
   type BoxProps = typings.themeUiComponents.mod.Assign[
     typings.react.mod.ComponentProps[typings.themeUiComponents.themeUiComponentsStrings.div], 
@@ -63,7 +63,7 @@ package object mod {
   type MenuButtonProps = typings.themeUiComponents.mod.IconButtonProps
   type MessageProps = typings.themeUiComponents.mod.BoxProps
   type NavLinkProps = typings.themeUiComponents.mod.LinkProps
-  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type ProgressProps = typings.themeUiComponents.mod.Assign[
     typings.react.mod.ComponentProps[typings.themeUiComponents.themeUiComponentsStrings.progress], 
     typings.themeUiComponents.mod.BoxOwnProps

@@ -27,7 +27,6 @@ object activities {
     list: AnonChannelId => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeActivityResource]]
   ): activities = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[activities]
   }
 }

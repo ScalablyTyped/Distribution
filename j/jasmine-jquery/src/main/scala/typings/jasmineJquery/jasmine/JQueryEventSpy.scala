@@ -16,7 +16,6 @@ object JQueryEventSpy {
   @scala.inline
   def apply(eventName: String, handler: JQueryEventObject => js.Any, reset: () => js.Any, selector: String): JQueryEventSpy = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], handler = js.Any.fromFunction1(handler), reset = js.Any.fromFunction0(reset), selector = selector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryEventSpy]
   }
 }

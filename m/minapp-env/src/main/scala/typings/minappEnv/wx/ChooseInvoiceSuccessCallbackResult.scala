@@ -13,7 +13,6 @@ object ChooseInvoiceSuccessCallbackResult {
   @scala.inline
   def apply(invoiceInfo: InvoiceInfo): ChooseInvoiceSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(invoiceInfo = invoiceInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChooseInvoiceSuccessCallbackResult]
   }
 }

@@ -21,7 +21,6 @@ object Mesh {
   @scala.inline
   def apply(_userInstancedBuffersStorage: AnonData, registerInstancedBuffer: (String, Double) => Unit): Mesh = {
     val __obj = js.Dynamic.literal(_userInstancedBuffersStorage = _userInstancedBuffersStorage.asInstanceOf[js.Any], registerInstancedBuffer = js.Any.fromFunction2(registerInstancedBuffer))
-  
     __obj.asInstanceOf[Mesh]
   }
 }

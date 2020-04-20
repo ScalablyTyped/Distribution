@@ -25,7 +25,6 @@ object Results {
     using: StringDictionary[js.Array[String]]
   ): Results = {
     val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], devDependencies = devDependencies.asInstanceOf[js.Any], invalidDirs = invalidDirs.asInstanceOf[js.Any], invalidFiles = invalidFiles.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any], using = using.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Results]
   }
 }

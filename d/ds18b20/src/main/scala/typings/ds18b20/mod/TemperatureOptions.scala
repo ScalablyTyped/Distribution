@@ -15,7 +15,6 @@ object TemperatureOptions {
   @scala.inline
   def apply(parser: decimal | default | hex): TemperatureOptions = {
     val __obj = js.Dynamic.literal(parser = parser.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TemperatureOptions]
   }
 }

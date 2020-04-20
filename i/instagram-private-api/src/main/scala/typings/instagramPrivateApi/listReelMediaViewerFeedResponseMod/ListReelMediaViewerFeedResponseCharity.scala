@@ -26,7 +26,6 @@ object ListReelMediaViewerFeedResponseCharity {
     username: String
   ): ListReelMediaViewerFeedResponseCharity = {
     val __obj = js.Dynamic.literal(full_name = full_name.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_id = profile_pic_id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseCharity]
   }
 }

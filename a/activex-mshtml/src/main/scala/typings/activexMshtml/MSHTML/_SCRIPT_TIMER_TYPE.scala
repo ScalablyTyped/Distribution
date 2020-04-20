@@ -20,16 +20,14 @@ trait _SCRIPT_TIMER_TYPE extends js.Object
 
 object _SCRIPT_TIMER_TYPE {
   @scala.inline
-  def SCRIPT_TIMER_TYPE_Max: `2147483647` = this.cast(2147483647)
+  def SCRIPT_TIMER_TYPE_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def STT_ANIMATION_FRAME: `3` = this.cast(3)
+  def STT_ANIMATION_FRAME: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def STT_IMMEDIATE: `2` = this.cast(2)
+  def STT_IMMEDIATE: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def STT_INTERVAL: `1` = this.cast(1)
+  def STT_INTERVAL: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def STT_TIMEOUT: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STT_TIMEOUT: `0` = 0.asInstanceOf[`0`]
 }
 

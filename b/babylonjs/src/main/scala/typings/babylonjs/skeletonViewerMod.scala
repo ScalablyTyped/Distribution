@@ -72,10 +72,10 @@ object skeletonViewerMod extends js.Object {
     /**
       * Returns the mesh used to render the bones
       */
-    def debugMesh(): Nullable[LinesMesh] = js.native
+    def debugMesh: Nullable[LinesMesh] = js.native
     /** Release associated resources */
     def dispose(): Unit = js.native
-    def isEnabled(): Boolean = js.native
+    def isEnabled: Boolean = js.native
     /** Gets or sets a boolean indicating if the viewer is enabled */
     def isEnabled(value: Boolean): js.Any = js.native
     /** Update the viewer to sync with current skeleton state */

@@ -20,7 +20,6 @@ object ReplicationTime {
   @scala.inline
   def apply(Status: ReplicationTimeStatus, Time: ReplicationTimeValue): ReplicationTime = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplicationTime]
   }
 }

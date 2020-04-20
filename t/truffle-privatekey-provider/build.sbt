@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "truffle-privatekey-provider"
-version := "1.1-dt-20190514Z-1c95c2"
+version := "1.1-dt-20190514Z-f83aa8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

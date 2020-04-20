@@ -14,7 +14,6 @@ object Policy {
   @scala.inline
   def apply(bindings: js.Array[Binding], etag: String, version: Double): Policy = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Policy]
   }
 }

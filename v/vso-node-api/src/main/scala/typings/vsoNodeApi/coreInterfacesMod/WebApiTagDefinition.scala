@@ -27,7 +27,6 @@ object WebApiTagDefinition {
   @scala.inline
   def apply(active: Boolean, id: String, name: String, url: String): WebApiTagDefinition = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebApiTagDefinition]
   }
 }

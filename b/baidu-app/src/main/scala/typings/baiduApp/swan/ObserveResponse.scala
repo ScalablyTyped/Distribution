@@ -27,7 +27,6 @@ object ObserveResponse {
     time: Double
   ): ObserveResponse = {
     val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], relativeRect = relativeRect.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObserveResponse]
   }
 }

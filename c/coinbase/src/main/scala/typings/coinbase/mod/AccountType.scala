@@ -15,16 +15,14 @@ trait AccountType extends js.Object
 
 object AccountType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fiat: typings.coinbase.coinbaseStrings.fiat = "fiat".asInstanceOf[typings.coinbase.coinbaseStrings.fiat]
   @scala.inline
-  def fiat: typings.coinbase.coinbaseStrings.fiat = this.cast("fiat")
+  def multisig: typings.coinbase.coinbaseStrings.multisig = "multisig".asInstanceOf[typings.coinbase.coinbaseStrings.multisig]
   @scala.inline
-  def multisig: typings.coinbase.coinbaseStrings.multisig = this.cast("multisig")
+  def multisig_vault: typings.coinbase.coinbaseStrings.multisig_vault = "multisig_vault".asInstanceOf[typings.coinbase.coinbaseStrings.multisig_vault]
   @scala.inline
-  def multisig_vault: typings.coinbase.coinbaseStrings.multisig_vault = this.cast("multisig_vault")
+  def vault: typings.coinbase.coinbaseStrings.vault = "vault".asInstanceOf[typings.coinbase.coinbaseStrings.vault]
   @scala.inline
-  def vault: typings.coinbase.coinbaseStrings.vault = this.cast("vault")
-  @scala.inline
-  def wallet: typings.coinbase.coinbaseStrings.wallet = this.cast("wallet")
+  def wallet: typings.coinbase.coinbaseStrings.wallet = "wallet".asInstanceOf[typings.coinbase.coinbaseStrings.wallet]
 }
 

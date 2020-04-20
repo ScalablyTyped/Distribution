@@ -18,14 +18,12 @@ trait _DOM_EVENT_PHASE extends js.Object
 
 object _DOM_EVENT_PHASE {
   @scala.inline
-  def DEP_AT_TARGET: `2` = this.cast(2)
+  def DEP_AT_TARGET: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def DEP_BUBBLING_PHASE: `3` = this.cast(3)
+  def DEP_BUBBLING_PHASE: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def DEP_CAPTURING_PHASE: `1` = this.cast(1)
+  def DEP_CAPTURING_PHASE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def DOM_EVENT_PHASE_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DOM_EVENT_PHASE_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

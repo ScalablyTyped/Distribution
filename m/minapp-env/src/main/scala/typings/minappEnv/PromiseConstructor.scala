@@ -21,7 +21,7 @@ Instantiable1[
       ], 
       Promise[js.Object]
     ] {
-  @JSName(scala.scalajs.js.Symbol.species)
+  @JSName(js.Symbol.species)
   val species: Function = js.native
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises

@@ -15,7 +15,6 @@ object NoteGroup {
   @scala.inline
   def apply(commits: js.Array[Note], title: String | `false`): NoteGroup = {
     val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NoteGroup]
   }
 }

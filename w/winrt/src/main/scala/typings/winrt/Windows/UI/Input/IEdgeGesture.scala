@@ -14,7 +14,6 @@ object IEdgeGesture {
   @scala.inline
   def apply(oncanceled: js.Any, oncompleted: js.Any, onstarting: js.Any): IEdgeGesture = {
     val __obj = js.Dynamic.literal(oncanceled = oncanceled.asInstanceOf[js.Any], oncompleted = oncompleted.asInstanceOf[js.Any], onstarting = onstarting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEdgeGesture]
   }
 }

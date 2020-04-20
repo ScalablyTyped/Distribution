@@ -20,7 +20,6 @@ object RemovePermissionInput {
   @scala.inline
   def apply(Label: label, TopicArn: topicARN): RemovePermissionInput = {
     val __obj = js.Dynamic.literal(Label = Label.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemovePermissionInput]
   }
 }

@@ -22,7 +22,6 @@ object ITableViewTableWinSaveInfo {
   @scala.inline
   def apply(qCaption: String, qPos: IRect): ITableViewTableWinSaveInfo = {
     val __obj = js.Dynamic.literal(qCaption = qCaption.asInstanceOf[js.Any], qPos = qPos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITableViewTableWinSaveInfo]
   }
 }

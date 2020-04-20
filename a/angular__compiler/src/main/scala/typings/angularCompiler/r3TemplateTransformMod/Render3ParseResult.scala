@@ -24,7 +24,6 @@ object Render3ParseResult {
     styles: js.Array[String]
   ): Render3ParseResult = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Render3ParseResult]
   }
 }

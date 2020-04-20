@@ -27,7 +27,6 @@ object IMemoizedFunctionMethods {
   @scala.inline
   def apply(doLocked: js.Function0[js.Any] => js.Any, logPerformance: () => IMemoizedFunctionMethods): IMemoizedFunctionMethods = {
     val __obj = js.Dynamic.literal(doLocked = js.Any.fromFunction1(doLocked), logPerformance = js.Any.fromFunction0(logPerformance))
-  
     __obj.asInstanceOf[IMemoizedFunctionMethods]
   }
 }

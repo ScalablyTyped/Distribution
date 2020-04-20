@@ -12,6 +12,7 @@ object geometryCollectionMod extends js.Object {
     extends typings.ol.geometryMod.default {
     def getGeometries(): js.Array[typings.ol.geometryMod.default] = js.native
     def getGeometriesArray(): js.Array[typings.ol.geometryMod.default] = js.native
+    def getGeometriesArrayRecursive(): js.Array[typings.ol.geometryMod.default] = js.native
     def isEmpty(): Boolean = js.native
     def setGeometries(geometries: js.Array[typings.ol.geometryMod.default]): Unit = js.native
     def setGeometriesArray(geometries: js.Array[typings.ol.geometryMod.default]): Unit = js.native

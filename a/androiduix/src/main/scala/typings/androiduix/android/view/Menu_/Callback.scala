@@ -13,7 +13,6 @@ object Callback {
   @scala.inline
   def apply(onMenuItemSelected: (typings.androiduix.android.view.Menu_, MenuItem) => Boolean): Callback = {
     val __obj = js.Dynamic.literal(onMenuItemSelected = js.Any.fromFunction2(onMenuItemSelected))
-  
     __obj.asInstanceOf[Callback]
   }
 }

@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAlwaysInclude {
   @scala.inline
   def apply(enumValues: AnonAlwaysInclude): AnonEnumValuesAnonAlwaysInclude = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAlwaysInclude]
   }
 }

@@ -30,7 +30,6 @@ object SharedProps {
     $value: js.Array[Double]
   ): SharedProps = {
     val __obj = js.Dynamic.literal($disabled = $disabled.asInstanceOf[js.Any], $isDragged = $isDragged.asInstanceOf[js.Any], $max = $max.asInstanceOf[js.Any], $min = $min.asInstanceOf[js.Any], $thumbIndex = $thumbIndex.asInstanceOf[js.Any], $value = $value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SharedProps]
   }
 }

@@ -32,16 +32,16 @@ object AnonAllocationsrequiringfileextension {
     `minor version number`: Double
   ): AnonAllocationsrequiringfileextension = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocations requiring file extension")(`allocations requiring file extension`.asInstanceOf[js.Any])
-    __obj.updateDynamic("blocks allocated")(`blocks allocated`.asInstanceOf[js.Any])
-    __obj.updateDynamic("blocks freed")(`blocks freed`.asInstanceOf[js.Any])
-    __obj.updateDynamic("checkpoint size")(`checkpoint size`.asInstanceOf[js.Any])
-    __obj.updateDynamic("file allocation unit size")(`file allocation unit size`.asInstanceOf[js.Any])
-    __obj.updateDynamic("file bytes available for reuse")(`file bytes available for reuse`.asInstanceOf[js.Any])
-    __obj.updateDynamic("file magic number")(`file magic number`.asInstanceOf[js.Any])
-    __obj.updateDynamic("file major version number")(`file major version number`.asInstanceOf[js.Any])
-    __obj.updateDynamic("file size in bytes")(`file size in bytes`.asInstanceOf[js.Any])
-    __obj.updateDynamic("minor version number")(`minor version number`.asInstanceOf[js.Any])
+    __obj.updateDynamic("allocations requiring file extension")((`allocations requiring file extension`).asInstanceOf[js.Any])
+    __obj.updateDynamic("blocks allocated")((`blocks allocated`).asInstanceOf[js.Any])
+    __obj.updateDynamic("blocks freed")((`blocks freed`).asInstanceOf[js.Any])
+    __obj.updateDynamic("checkpoint size")((`checkpoint size`).asInstanceOf[js.Any])
+    __obj.updateDynamic("file allocation unit size")((`file allocation unit size`).asInstanceOf[js.Any])
+    __obj.updateDynamic("file bytes available for reuse")((`file bytes available for reuse`).asInstanceOf[js.Any])
+    __obj.updateDynamic("file magic number")((`file magic number`).asInstanceOf[js.Any])
+    __obj.updateDynamic("file major version number")((`file major version number`).asInstanceOf[js.Any])
+    __obj.updateDynamic("file size in bytes")((`file size in bytes`).asInstanceOf[js.Any])
+    __obj.updateDynamic("minor version number")((`minor version number`).asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonAllocationsrequiringfileextension]
   }
 }

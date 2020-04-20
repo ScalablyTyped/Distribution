@@ -5,15 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonHref extends js.Object {
-  var href: String
-  var title: String
+  var href: String | Null
+  var title: String | Null
 }
 
 object AnonHref {
   @scala.inline
-  def apply(href: String, title: String): AnonHref = {
-    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
+  def apply(href: String = null, title: String = null): AnonHref = {
+    val __obj = js.Dynamic.literal()
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonHref]
   }
 }

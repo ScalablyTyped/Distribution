@@ -12,7 +12,6 @@ object PostsInsightsFeedResponseShareCount {
   @scala.inline
   def apply(tray: PostsInsightsFeedResponseTray): PostsInsightsFeedResponseShareCount = {
     val __obj = js.Dynamic.literal(tray = tray.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PostsInsightsFeedResponseShareCount]
   }
 }

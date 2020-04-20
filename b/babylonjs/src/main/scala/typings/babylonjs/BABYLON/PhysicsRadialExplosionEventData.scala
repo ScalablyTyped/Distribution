@@ -15,7 +15,6 @@ object PhysicsRadialExplosionEventData {
   @scala.inline
   def apply(sphere: Mesh): PhysicsRadialExplosionEventData = {
     val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhysicsRadialExplosionEventData]
   }
 }

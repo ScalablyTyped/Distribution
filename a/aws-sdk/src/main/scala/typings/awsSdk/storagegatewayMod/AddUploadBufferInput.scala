@@ -17,7 +17,6 @@ object AddUploadBufferInput {
   @scala.inline
   def apply(DiskIds: DiskIds, GatewayARN: GatewayARN): AddUploadBufferInput = {
     val __obj = js.Dynamic.literal(DiskIds = DiskIds.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddUploadBufferInput]
   }
 }

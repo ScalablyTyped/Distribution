@@ -14,10 +14,10 @@ class ɵangularPackagesCoreCoreK protected () extends js.Object {
   val listeners: js.Array[DebugEventListener] = js.native
   val nativeNode: js.Any = js.native
   val parent: DebugElement | Null = js.native
-  def componentInstance(): js.Any = js.native
-  def context(): js.Any = js.native
-  def injector(): Injector = js.native
-  def providerTokens(): js.Array[_] = js.native
-  def references(): StringDictionary[js.Any] = js.native
+  def componentInstance: js.Any = js.native
+  def context: js.Any = js.native
+  def injector: Injector = js.native
+  def providerTokens: js.Array[_] = js.native
+  def references: StringDictionary[js.Any] = js.native
 }
 

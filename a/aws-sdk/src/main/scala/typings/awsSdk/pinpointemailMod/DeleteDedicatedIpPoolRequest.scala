@@ -16,7 +16,6 @@ object DeleteDedicatedIpPoolRequest {
   @scala.inline
   def apply(PoolName: PoolName): DeleteDedicatedIpPoolRequest = {
     val __obj = js.Dynamic.literal(PoolName = PoolName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDedicatedIpPoolRequest]
   }
 }

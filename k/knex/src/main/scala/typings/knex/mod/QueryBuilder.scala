@@ -16,7 +16,7 @@ class QueryBuilder[TRecord /* <: js.Object */, TResult] ()
   var or: QueryBuilder[TRecord, TResult] = js.native
   // TODO: Promise?
   def columnInfo(): js.Promise[ColumnInfo] = js.native
-  def columnInfo(column: String): js.Promise[ColumnInfo] = js.native
+  def columnInfo(column: /* keyof TRecord */ String): js.Promise[ColumnInfo] = js.native
   def forShare(tableNames: String*): QueryBuilder[TRecord, TResult] = js.native
   def forShare(tableNames: js.Array[String]): QueryBuilder[TRecord, TResult] = js.native
   def forUpdate(tableNames: String*): QueryBuilder[TRecord, TResult] = js.native

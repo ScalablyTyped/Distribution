@@ -12,10 +12,8 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.reactWindow.reactWindowStrings.horizontal = "horizontal".asInstanceOf[typings.reactWindow.reactWindowStrings.horizontal]
   @scala.inline
-  def horizontal: typings.reactWindow.reactWindowStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.reactWindow.reactWindowStrings.vertical = this.cast("vertical")
+  def vertical: typings.reactWindow.reactWindowStrings.vertical = "vertical".asInstanceOf[typings.reactWindow.reactWindowStrings.vertical]
 }
 

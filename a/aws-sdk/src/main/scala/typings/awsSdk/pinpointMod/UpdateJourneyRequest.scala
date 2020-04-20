@@ -21,7 +21,6 @@ object UpdateJourneyRequest {
   @scala.inline
   def apply(ApplicationId: string, JourneyId: string, WriteJourneyRequest: WriteJourneyRequest): UpdateJourneyRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], JourneyId = JourneyId.asInstanceOf[js.Any], WriteJourneyRequest = WriteJourneyRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateJourneyRequest]
   }
 }

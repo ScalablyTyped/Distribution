@@ -16,12 +16,10 @@ trait XlDisplayDrawingObjects extends js.Object
 
 object XlDisplayDrawingObjects {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlDisplayShapes: `-4104` = -4104.asInstanceOf[`-4104`]
   @scala.inline
-  def xlDisplayShapes: `-4104` = this.cast(-4104)
+  def xlHide: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlHide: `3` = this.cast(3)
-  @scala.inline
-  def xlPlaceholders: `2` = this.cast(2)
+  def xlPlaceholders: `2` = 2.asInstanceOf[`2`]
 }
 

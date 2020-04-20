@@ -22,7 +22,7 @@ class ResourceDescriptor () extends IResourceDescriptor {
   def this(properties: IResourceDescriptor) = this()
   /** ResourceDescriptor history. */
   @JSName("history")
-  var history_ResourceDescriptor: History | String = js.native
+  var history_ResourceDescriptor: History | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.api.ResourceDescriptor.History * / any */ String) = js.native
   /** ResourceDescriptor nameField. */
   @JSName("nameField")
   var nameField_ResourceDescriptor: String = js.native

@@ -157,7 +157,7 @@ class Client_ protected () extends EventEmitter {
     * @returns {void|Error}
     */
   def handlePushNotification(notificationPayload: js.Any): js.Promise[Unit] = js.native
-  def reachabilityEnabled(): Boolean = js.native
+  def reachabilityEnabled: Boolean = js.native
   /**
     * Registers for push notifications.
     * @param {Client#NotificationsChannelType} channelType - 'gcm', 'apn' and 'fcm' are supported
@@ -171,7 +171,7 @@ class Client_ protected () extends EventEmitter {
     * @returns {Promise<void>}
     */
   def shutdown(): js.Promise[Unit] = js.native
-  def token(): String = js.native
+  def token: String = js.native
   /**
     * Unregisters from push notifications.
     * @param {Client#NotificationsChannelType} channelType - 'gcm', 'apn' and 'fcm' are supported
@@ -185,6 +185,6 @@ class Client_ protected () extends EventEmitter {
     * @returns {Promise<Client>}
     */
   def updateToken(token: String): js.Promise[Client] = js.native
-  def user(): typings.twilioChat.userMod.User = js.native
+  def user: typings.twilioChat.userMod.User = js.native
 }
 

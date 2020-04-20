@@ -22,7 +22,6 @@ object RepositoryPolicyArgs {
   @scala.inline
   def apply(policy: Input[String | PolicyDocument], repository: Input[String]): RepositoryPolicyArgs = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RepositoryPolicyArgs]
   }
 }

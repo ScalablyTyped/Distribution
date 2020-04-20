@@ -12,10 +12,8 @@ trait YAxisName extends js.Object
 
 object YAxisName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def y: typings.c3.c3Strings.y = "y".asInstanceOf[typings.c3.c3Strings.y]
   @scala.inline
-  def y: typings.c3.c3Strings.y = this.cast("y")
-  @scala.inline
-  def y2: typings.c3.c3Strings.y2 = this.cast("y2")
+  def y2: typings.c3.c3Strings.y2 = "y2".asInstanceOf[typings.c3.c3Strings.y2]
 }
 

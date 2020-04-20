@@ -15,7 +15,6 @@ object MembersResource {
   @scala.inline
   def apply(list: AnonAlt => Request_[ListGroupMembersResponse]): MembersResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[MembersResource]
   }
 }

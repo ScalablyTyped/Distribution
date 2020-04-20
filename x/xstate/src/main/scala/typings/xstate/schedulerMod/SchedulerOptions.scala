@@ -12,7 +12,6 @@ object SchedulerOptions {
   @scala.inline
   def apply(deferEvents: Boolean): SchedulerOptions = {
     val __obj = js.Dynamic.literal(deferEvents = deferEvents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SchedulerOptions]
   }
 }

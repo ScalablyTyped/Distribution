@@ -53,49 +53,49 @@ class Page protected () extends FormBase {
   /**
     * In version 7.23.0: added public
     */
-  def allowedRoles(): IList[IModuleRole] = js.native
-  def allowedRolesQualifiedNames(): js.Array[String] = js.native
+  def allowedRoles: IList[IModuleRole] = js.native
+  def allowedRolesQualifiedNames: js.Array[String] = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def appearance(): Appearance = js.native
+  def appearance: Appearance = js.native
   def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def `class`(): String = js.native
+  def `class`: String = js.native
   def `class`(newValue: String): js.Any = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MPage(): FolderBase = js.native
+  def containerAsFolderBase_MPage: FolderBase = js.native
   /**
     * In version 7.17.0: added public
     */
-  def layoutCall(): LayoutCall = js.native
+  def layoutCall: LayoutCall = js.native
   def layoutCall(newValue: LayoutCall): js.Any = js.native
-  def markAsUsed(): Boolean = js.native
+  def markAsUsed: Boolean = js.native
   def markAsUsed(newValue: Boolean): js.Any = js.native
   /**
     * In version 6.7.0: introduced
     */
-  def popupCloseAction(): String = js.native
+  def popupCloseAction: String = js.native
   def popupCloseAction(newValue: String): js.Any = js.native
-  def popupHeight(): Double = js.native
+  def popupHeight: Double = js.native
   def popupHeight(newValue: Double): js.Any = js.native
-  def popupResizable(): Boolean = js.native
+  def popupResizable: Boolean = js.native
   def popupResizable(newValue: Boolean): js.Any = js.native
-  def popupWidth(): Double = js.native
+  def popupWidth: Double = js.native
   def popupWidth(newValue: Double): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def style(): String = js.native
+  def style: String = js.native
   def style(newValue: String): js.Any = js.native
-  def title(): Text = js.native
+  def title: Text = js.native
   def title(newValue: Text): js.Any = js.native
   /**
     * In version 6.7.0: introduced
     */
-  def url(): String = js.native
+  def url: String = js.native
   def url(newValue: String): js.Any = js.native
 }
 

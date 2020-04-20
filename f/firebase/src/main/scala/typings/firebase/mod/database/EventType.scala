@@ -15,16 +15,14 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def child_added: typings.firebase.firebaseStrings.child_added = "child_added".asInstanceOf[typings.firebase.firebaseStrings.child_added]
   @scala.inline
-  def child_added: typings.firebase.firebaseStrings.child_added = this.cast("child_added")
+  def child_changed: typings.firebase.firebaseStrings.child_changed = "child_changed".asInstanceOf[typings.firebase.firebaseStrings.child_changed]
   @scala.inline
-  def child_changed: typings.firebase.firebaseStrings.child_changed = this.cast("child_changed")
+  def child_moved: typings.firebase.firebaseStrings.child_moved = "child_moved".asInstanceOf[typings.firebase.firebaseStrings.child_moved]
   @scala.inline
-  def child_moved: typings.firebase.firebaseStrings.child_moved = this.cast("child_moved")
+  def child_removed: typings.firebase.firebaseStrings.child_removed = "child_removed".asInstanceOf[typings.firebase.firebaseStrings.child_removed]
   @scala.inline
-  def child_removed: typings.firebase.firebaseStrings.child_removed = this.cast("child_removed")
-  @scala.inline
-  def value: typings.firebase.firebaseStrings.value = this.cast("value")
+  def value: typings.firebase.firebaseStrings.value = "value".asInstanceOf[typings.firebase.firebaseStrings.value]
 }
 

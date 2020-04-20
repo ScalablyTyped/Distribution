@@ -16,7 +16,6 @@ object CodeSource {
   @scala.inline
   def apply(s3: S3Location): CodeSource = {
     val __obj = js.Dynamic.literal(s3 = s3.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CodeSource]
   }
 }

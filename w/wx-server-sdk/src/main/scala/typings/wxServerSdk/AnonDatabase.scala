@@ -14,7 +14,6 @@ object AnonDatabase {
   @scala.inline
   def apply(database: String, functions: String, storage: String): AnonDatabase = {
     val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], functions = functions.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDatabase]
   }
 }

@@ -18,7 +18,6 @@ object GetMessageFields {
     routingKey: String
   ): GetMessageFields = {
     val __obj = js.Dynamic.literal(deliveryTag = deliveryTag.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any], messageCount = messageCount.asInstanceOf[js.Any], redelivered = redelivered.asInstanceOf[js.Any], routingKey = routingKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMessageFields]
   }
 }

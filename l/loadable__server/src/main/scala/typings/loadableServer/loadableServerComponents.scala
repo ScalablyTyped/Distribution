@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object loadableServerComponents extends loadableServerProps {
   @scala.inline
-  def ChunkExtractorManager: ComponentType[ChunkExtractorManagerProps] = js.constructorOf[typings.loadableServer.mod.ChunkExtractorManager].asInstanceOf[typings.react.mod.ComponentType[ChunkExtractorManagerProps]]
+  def ChunkExtractorManager: ComponentType[ChunkExtractorManagerProps] = js.constructorOf[typings.loadableServer.mod.ChunkExtractorManager].asInstanceOf[ComponentType[ChunkExtractorManagerProps]]
 }
 

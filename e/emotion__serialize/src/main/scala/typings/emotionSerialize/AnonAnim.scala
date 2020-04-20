@@ -14,7 +14,6 @@ object AnonAnim {
   @scala.inline
   def apply(anim: Double, name: String, styles: String): AnonAnim = {
     val __obj = js.Dynamic.literal(anim = anim.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnim]
   }
 }

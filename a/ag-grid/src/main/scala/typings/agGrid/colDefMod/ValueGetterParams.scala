@@ -25,7 +25,6 @@ object ValueGetterParams {
     node: RowNode
   ): ValueGetterParams = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], colDef = colDef.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getValue = js.Any.fromFunction1(getValue), node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValueGetterParams]
   }
 }

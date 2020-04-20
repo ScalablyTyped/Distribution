@@ -29,7 +29,6 @@ object Fade {
   @scala.inline
   def apply(crossFade: js.Object => js.Any, fade: js.Object => js.Any): Fade = {
     val __obj = js.Dynamic.literal(crossFade = js.Any.fromFunction1(crossFade), fade = js.Any.fromFunction1(fade))
-  
     __obj.asInstanceOf[Fade]
   }
 }

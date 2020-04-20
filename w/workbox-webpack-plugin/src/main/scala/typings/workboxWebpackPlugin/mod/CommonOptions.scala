@@ -2,12 +2,18 @@ package typings.workboxWebpackPlugin.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
+import typings.workboxWebpackPlugin.AnonIntegrity
 import typings.workboxWebpackPlugin.AnonManifest
+import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.production
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CommonOptions extends js.Object {
+  /**
+  	 * A list of entries to be precached, in addition to any entries that are generated as part of the build configuration.
+  	 */
+  var additionalManifestEntries: js.UndefOr[js.Array[AnonIntegrity | String]] = js.undefined
   /**
   	 * By default, Workbox will precache assets regardless of which chunk the asset is part of.
   	 *
@@ -96,6 +102,11 @@ trait CommonOptions extends js.Object {
   	 */
   var globStrict: js.UndefOr[Boolean] = js.undefined
   /**
+  	 * One or more names of webpack chunks.
+  	 * The content of those chunks will be included in the generated service worker, via a call to importScripts()
+  	 */
+  var importScriptsViaChunks: js.UndefOr[js.Array[String]] = js.undefined
+  /**
   	 * Workbox creates assets as part of your webpack build process: a precache manifest file, and potentially a local copy of the Workbox libraries (if `importWorkboxFrom` is set to `'local'`).
   	 *
   	 * These assets will, by default, be created at the root of your webpack build directory, i.e. `output.path`. You can set the `importsDirectory` option if you want these assets to be created in
@@ -136,6 +147,11 @@ trait CommonOptions extends js.Object {
   	 * @example maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
   	 */
   var maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.undefined
+  /**
+  	 * If set to 'production', then an optimized service worker bundle that excludes debugging info will be produced.
+  	 * If not explicitly configured here, the mode value configured in the current webpack compilation will be used
+  	 */
+  var mode: js.UndefOr[production | String] = js.undefined
   /**
   	 * A mapping of prefixes that, if present in an entry in the precache manifest, will be replaced with the corresponding value.
   	 *
@@ -182,6 +198,7 @@ trait CommonOptions extends js.Object {
 object CommonOptions {
   @scala.inline
   def apply(
+    additionalManifestEntries: js.Array[AnonIntegrity | String] = null,
     chunks: js.Array[String] = null,
     dontCacheBustUrlsMatching: RegExp = null,
     exclude: js.Array[String | RegExp] = null,
@@ -191,10 +208,12 @@ object CommonOptions {
     globIgnores: js.Array[String] = null,
     globPatterns: js.Array[String] = null,
     globStrict: js.UndefOr[Boolean] = js.undefined,
+    importScriptsViaChunks: js.Array[String] = null,
     importsDirectory: String = null,
     include: js.Array[String | RegExp] = null,
     manifestTransforms: js.Array[js.Function1[/* originalManifest */ js.Array[ManifestEntry], AnonManifest]] = null,
     maximumFileSizeToCacheInBytes: Int | Double = null,
+    mode: production | String = null,
     modifyUrlPrefix: StringDictionary[String] = null,
     precacheManifestFilename: String = null,
     swDest: String = null,
@@ -202,6 +221,7 @@ object CommonOptions {
     test: js.Array[String | RegExp] = null
   ): CommonOptions = {
     val __obj = js.Dynamic.literal()
+    if (additionalManifestEntries != null) __obj.updateDynamic("additionalManifestEntries")(additionalManifestEntries.asInstanceOf[js.Any])
     if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
     if (dontCacheBustUrlsMatching != null) __obj.updateDynamic("dontCacheBustUrlsMatching")(dontCacheBustUrlsMatching.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
@@ -211,10 +231,12 @@ object CommonOptions {
     if (globIgnores != null) __obj.updateDynamic("globIgnores")(globIgnores.asInstanceOf[js.Any])
     if (globPatterns != null) __obj.updateDynamic("globPatterns")(globPatterns.asInstanceOf[js.Any])
     if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict.asInstanceOf[js.Any])
+    if (importScriptsViaChunks != null) __obj.updateDynamic("importScriptsViaChunks")(importScriptsViaChunks.asInstanceOf[js.Any])
     if (importsDirectory != null) __obj.updateDynamic("importsDirectory")(importsDirectory.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (manifestTransforms != null) __obj.updateDynamic("manifestTransforms")(manifestTransforms.asInstanceOf[js.Any])
     if (maximumFileSizeToCacheInBytes != null) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (modifyUrlPrefix != null) __obj.updateDynamic("modifyUrlPrefix")(modifyUrlPrefix.asInstanceOf[js.Any])
     if (precacheManifestFilename != null) __obj.updateDynamic("precacheManifestFilename")(precacheManifestFilename.asInstanceOf[js.Any])
     if (swDest != null) __obj.updateDynamic("swDest")(swDest.asInstanceOf[js.Any])

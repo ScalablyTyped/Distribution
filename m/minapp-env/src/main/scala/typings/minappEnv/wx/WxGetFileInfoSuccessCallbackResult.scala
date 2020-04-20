@@ -15,7 +15,6 @@ object WxGetFileInfoSuccessCallbackResult {
   @scala.inline
   def apply(digest: String, size: Double): WxGetFileInfoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(digest = digest.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WxGetFileInfoSuccessCallbackResult]
   }
 }

@@ -52,7 +52,6 @@ object IQSelectionState {
     unlockAll: () => IPromise[_]
   ): IQSelectionState = {
     val __obj = js.Dynamic.literal(backCount = backCount.asInstanceOf[js.Any], clearAll = js.Any.fromFunction1(clearAll), forwardCount = forwardCount.asInstanceOf[js.Any], lockAll = js.Any.fromFunction0(lockAll), selections = selections.asInstanceOf[js.Any], stateName = stateName.asInstanceOf[js.Any], unlockAll = js.Any.fromFunction0(unlockAll))
-  
     __obj.asInstanceOf[IQSelectionState]
   }
 }

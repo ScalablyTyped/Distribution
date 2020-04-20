@@ -34,7 +34,6 @@ object AnonAWG {
     USD: js.Array[String]
   ): AnonAWG = {
     val __obj = js.Dynamic.literal(ANG = ANG.asInstanceOf[js.Any], AWG = AWG.asInstanceOf[js.Any], BBD = BBD.asInstanceOf[js.Any], BSD = BSD.asInstanceOf[js.Any], HTG = HTG.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], MMK = MMK.asInstanceOf[js.Any], PAB = PAB.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TTD = TTD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAWG]
   }
 }

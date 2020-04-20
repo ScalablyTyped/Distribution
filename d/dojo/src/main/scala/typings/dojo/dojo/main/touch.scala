@@ -90,7 +90,6 @@ object touch {
     release: (HTMLElement, js.Function) => js.Any
   ): touch = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction2(cancel), enter = js.Any.fromFunction2(enter), leave = js.Any.fromFunction2(leave), move = js.Any.fromFunction2(move), out = js.Any.fromFunction2(out), over = js.Any.fromFunction2(over), press = js.Any.fromFunction2(press), release = js.Any.fromFunction2(release))
-  
     __obj.asInstanceOf[touch]
   }
 }

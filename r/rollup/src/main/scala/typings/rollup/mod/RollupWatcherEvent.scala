@@ -22,13 +22,11 @@ object RollupWatcherEvent {
   @scala.inline
   def Anon0(code: START): RollupWatcherEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollupWatcherEvent]
   }
   @scala.inline
   def AnonInput(code: BUNDLE_START, input: InputOption, output: js.Array[String]): RollupWatcherEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollupWatcherEvent]
   }
   @scala.inline
@@ -40,19 +38,16 @@ object RollupWatcherEvent {
     result: RollupBuild
   ): RollupWatcherEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollupWatcherEvent]
   }
   @scala.inline
   def Anon1(code: END): RollupWatcherEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollupWatcherEvent]
   }
   @scala.inline
   def AnonError(code: ERROR, error: RollupError): RollupWatcherEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollupWatcherEvent]
   }
 }

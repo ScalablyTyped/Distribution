@@ -13,7 +13,6 @@ object IDialogModelessExampleState {
   @scala.inline
   def apply(hideDialog: Boolean, isDraggable: Boolean): IDialogModelessExampleState = {
     val __obj = js.Dynamic.literal(hideDialog = hideDialog.asInstanceOf[js.Any], isDraggable = isDraggable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDialogModelessExampleState]
   }
 }

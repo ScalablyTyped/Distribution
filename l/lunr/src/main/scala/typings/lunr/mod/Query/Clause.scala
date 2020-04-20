@@ -33,7 +33,6 @@ object Clause {
     wildcard: Double
   ): Clause = {
     val __obj = js.Dynamic.literal(boost = boost.asInstanceOf[js.Any], editDistance = editDistance.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], usePipeline = usePipeline.asInstanceOf[js.Any], wildcard = wildcard.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Clause]
   }
 }

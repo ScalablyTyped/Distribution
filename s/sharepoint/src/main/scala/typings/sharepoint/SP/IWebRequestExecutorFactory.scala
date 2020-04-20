@@ -14,7 +14,6 @@ object IWebRequestExecutorFactory {
   @scala.inline
   def apply(createWebRequestExecutor: () => WebRequestExecutor): IWebRequestExecutorFactory = {
     val __obj = js.Dynamic.literal(createWebRequestExecutor = js.Any.fromFunction0(createWebRequestExecutor))
-  
     __obj.asInstanceOf[IWebRequestExecutorFactory]
   }
 }

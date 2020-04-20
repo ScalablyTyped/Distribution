@@ -15,7 +15,6 @@ object AnonAttrCdata {
   @scala.inline
   def apply(_attr: XmlAttrs, _cdata: String): AnonAttrCdata = {
     val __obj = js.Dynamic.literal(_attr = _attr.asInstanceOf[js.Any], _cdata = _cdata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttrCdata]
   }
 }

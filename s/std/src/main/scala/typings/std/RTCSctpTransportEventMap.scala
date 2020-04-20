@@ -12,7 +12,6 @@ object RTCSctpTransportEventMap {
   @scala.inline
   def apply(statechange: Event_): RTCSctpTransportEventMap = {
     val __obj = js.Dynamic.literal(statechange = statechange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RTCSctpTransportEventMap]
   }
 }

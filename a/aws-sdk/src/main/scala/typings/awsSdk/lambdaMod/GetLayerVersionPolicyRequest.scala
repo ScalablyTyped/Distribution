@@ -20,7 +20,6 @@ object GetLayerVersionPolicyRequest {
   @scala.inline
   def apply(LayerName: LayerName, VersionNumber: LayerVersionNumber): GetLayerVersionPolicyRequest = {
     val __obj = js.Dynamic.literal(LayerName = LayerName.asInstanceOf[js.Any], VersionNumber = VersionNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLayerVersionPolicyRequest]
   }
 }

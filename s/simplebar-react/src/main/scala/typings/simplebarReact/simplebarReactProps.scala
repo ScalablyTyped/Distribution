@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait simplebarReactProps {
   @scala.inline
-  def SimplebarReactProps: Props.type = typings.simplebarReact.mod.Props
+  def SimplebarReactProps: Props.type = Props
   type SimplebarReactProps = Props
 }
 

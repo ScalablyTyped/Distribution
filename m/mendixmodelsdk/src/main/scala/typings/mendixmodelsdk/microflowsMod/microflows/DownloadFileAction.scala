@@ -25,9 +25,9 @@ class DownloadFileAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FDownloadFileAction: IModel = js.native
-  def fileDocumentVariableName(): String = js.native
+  def fileDocumentVariableName: String = js.native
   def fileDocumentVariableName(newValue: String): js.Any = js.native
-  def showFileInBrowser(): Boolean = js.native
+  def showFileInBrowser: Boolean = js.native
   def showFileInBrowser(newValue: Boolean): js.Any = js.native
 }
 

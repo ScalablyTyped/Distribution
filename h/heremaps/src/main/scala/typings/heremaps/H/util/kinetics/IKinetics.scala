@@ -24,7 +24,6 @@ object IKinetics {
   @scala.inline
   def apply(duration: Double, ease: Double => Double, power: Double): IKinetics = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], ease = js.Any.fromFunction1(ease), power = power.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKinetics]
   }
 }

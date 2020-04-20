@@ -13,7 +13,6 @@ object AnonCompetitiveQuickplay {
   @scala.inline
   def apply(competitive: AnonGameswon, quickplay: AnonEliminationsperlife): AnonCompetitiveQuickplay = {
     val __obj = js.Dynamic.literal(competitive = competitive.asInstanceOf[js.Any], quickplay = quickplay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCompetitiveQuickplay]
   }
 }

@@ -89,7 +89,7 @@ object servicenowLondonStrings {
   @scala.inline
   def CONTAINS: CONTAINS = "CONTAINS".asInstanceOf[CONTAINS]
   @scala.inline
-  def `DOES NOT CONTAIN`: `DOES NOT CONTAIN` = "DOES NOT CONTAIN".asInstanceOf[`DOES NOT CONTAIN`]
+  def `DOES NOT CONTAIN`: `DOES NOT CONTAIN` = ("DOES NOT CONTAIN").asInstanceOf[`DOES NOT CONTAIN`]
   @scala.inline
   def ENDSWITH: ENDSWITH = "ENDSWITH".asInstanceOf[ENDSWITH]
   @scala.inline
@@ -109,7 +109,7 @@ object servicenowLondonStrings {
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
-  def `NOT IN`: `NOT IN` = "NOT IN".asInstanceOf[`NOT IN`]
+  def `NOT IN`: `NOT IN` = ("NOT IN").asInstanceOf[`NOT IN`]
   @scala.inline
   def SAMEAS: SAMEAS = "SAMEAS".asInstanceOf[SAMEAS]
   @scala.inline

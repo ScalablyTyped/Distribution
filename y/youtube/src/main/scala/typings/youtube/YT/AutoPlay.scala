@@ -17,13 +17,11 @@ object AutoPlay {
   		 * Video will autoplay when loaded.
   		 */
   @scala.inline
-  def AutoPlay: `1` = this.cast(1)
+  def AutoPlay: `1` = 1.asInstanceOf[`1`]
   /**
   		 * Video does not autoplay.
   		 */
   @scala.inline
-  def NoAutoPlay: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NoAutoPlay: `0` = 0.asInstanceOf[`0`]
 }
 

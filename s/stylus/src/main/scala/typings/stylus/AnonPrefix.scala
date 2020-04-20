@@ -28,7 +28,6 @@ object AnonPrefix {
     segments: js.Array[Node]
   ): AnonPrefix = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrefix]
   }
 }

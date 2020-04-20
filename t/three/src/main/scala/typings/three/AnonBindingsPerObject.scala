@@ -13,7 +13,6 @@ object AnonBindingsPerObject {
   @scala.inline
   def apply(bindingsPerObject: Double, objects: AnonInUse): AnonBindingsPerObject = {
     val __obj = js.Dynamic.literal(bindingsPerObject = bindingsPerObject.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBindingsPerObject]
   }
 }

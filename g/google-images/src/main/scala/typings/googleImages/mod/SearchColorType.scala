@@ -13,12 +13,10 @@ trait SearchColorType extends js.Object
 
 object SearchColorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def color: typings.googleImages.googleImagesStrings.color = "color".asInstanceOf[typings.googleImages.googleImagesStrings.color]
   @scala.inline
-  def color: typings.googleImages.googleImagesStrings.color = this.cast("color")
+  def gray: typings.googleImages.googleImagesStrings.gray = "gray".asInstanceOf[typings.googleImages.googleImagesStrings.gray]
   @scala.inline
-  def gray: typings.googleImages.googleImagesStrings.gray = this.cast("gray")
-  @scala.inline
-  def mono: typings.googleImages.googleImagesStrings.mono = this.cast("mono")
+  def mono: typings.googleImages.googleImagesStrings.mono = "mono".asInstanceOf[typings.googleImages.googleImagesStrings.mono]
 }
 

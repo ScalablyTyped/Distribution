@@ -20,7 +20,6 @@ object S3ArtifactLocation {
   @scala.inline
   def apply(bucketName: S3BucketName, objectKey: S3ObjectKey): S3ArtifactLocation = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], objectKey = objectKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3ArtifactLocation]
   }
 }

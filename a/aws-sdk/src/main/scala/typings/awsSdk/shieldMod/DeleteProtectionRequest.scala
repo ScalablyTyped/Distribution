@@ -16,7 +16,6 @@ object DeleteProtectionRequest {
   @scala.inline
   def apply(ProtectionId: ProtectionId): DeleteProtectionRequest = {
     val __obj = js.Dynamic.literal(ProtectionId = ProtectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteProtectionRequest]
   }
 }

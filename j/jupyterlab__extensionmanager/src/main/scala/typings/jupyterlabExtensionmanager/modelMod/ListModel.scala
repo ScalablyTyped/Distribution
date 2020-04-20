@@ -132,11 +132,11 @@ class ListModel protected () extends VDomModel {
   /**
     * A readonly array of the installed extensions.
     */
-  def installed(): js.Array[IEntry] = js.native
+  def installed: js.Array[IEntry] = js.native
   /**
     * The list mode.
     */
-  def listMode(): black | white | default | invalid = js.native
+  def listMode: black | white | default | invalid = js.native
   /**
     * The current NPM repository search page.
     *
@@ -145,7 +145,7 @@ class ListModel protected () extends VDomModel {
     *
     * Setting its value triggers a new search.
     */
-  def page(): Double = js.native
+  def page: Double = js.native
   def page(value: Double): js.Any = js.native
   /**
     * The NPM repository search pagination.
@@ -155,7 +155,7 @@ class ListModel protected () extends VDomModel {
     *
     * Setting its value triggers a new search.
     */
-  def pagination(): Double = js.native
+  def pagination: Double = js.native
   def pagination(value: Double): js.Any = js.native
   /**
     * Perform a build on the server
@@ -185,7 +185,7 @@ class ListModel protected () extends VDomModel {
     * Setting its value triggers a new search.
     */
   @JSName("query")
-  def query_Union(): String | Null = js.native
+  def query_Union: String | Null = js.native
   /**
     * Ignore a build recommendation
     */
@@ -193,19 +193,19 @@ class ListModel protected () extends VDomModel {
   /**
     * A readonly array containing the latest search result
     */
-  def searchResult(): js.Array[IEntry] = js.native
+  def searchResult: js.Array[IEntry] = js.native
   /**
     * The total number of blacklisted results in the current search.
     */
-  def totalBlacklistedFound(): Double = js.native
+  def totalBlacklistedFound: Double = js.native
   /**
     * The total number of results in the current search.
     */
-  def totalEntries(): Double = js.native
+  def totalEntries: Double = js.native
   /**
     * The total number of whitelisted results in the current search.
     */
-  def totalWhitelistedFound(): Double = js.native
+  def totalWhitelistedFound: Double = js.native
   /**
     * Translate installed extensions information from the server into entries.
     *

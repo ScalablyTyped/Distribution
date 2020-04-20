@@ -13,7 +13,6 @@ object PopcornManifest {
   @scala.inline
   def apply(about: PopcornManifestAbout, options: PopcornManifestOptions): PopcornManifest = {
     val __obj = js.Dynamic.literal(about = about.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PopcornManifest]
   }
 }

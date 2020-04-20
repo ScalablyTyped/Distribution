@@ -1,7 +1,7 @@
 package typings.vscodeLanguageclient.semanticTokensProposedMod
 
-import typings.vscodeLanguageclient.semanticTokensProposedMod.vscodeAugmentingMod.DocumentRangeSemanticTokensProvider
-import typings.vscodeLanguageclient.semanticTokensProposedMod.vscodeAugmentingMod.DocumentSemanticTokensProvider
+import typings.vscode.mod.DocumentRangeSemanticTokensProvider
+import typings.vscode.mod.DocumentSemanticTokensProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactMailchimpSubscribeProps {
   @scala.inline
-  def ReactMailchimpSubscribeProps: Props.type = typings.reactMailchimpSubscribe.mod.Props
+  def ReactMailchimpSubscribeProps: Props.type = Props
   type ReactMailchimpSubscribeProps[FormFields] = Props[FormFields]
 }
 

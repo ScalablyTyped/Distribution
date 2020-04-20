@@ -24,7 +24,6 @@ object IThemeConfig {
     registeredStyles: js.Array[String]
   ): IThemeConfig = {
     val __obj = js.Dynamic.literal(alwaysWatchTheme = alwaysWatchTheme.asInstanceOf[js.Any], defaultTheme = defaultTheme.asInstanceOf[js.Any], disableTheming = disableTheming.asInstanceOf[js.Any], generateOnDemand = generateOnDemand.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], registeredStyles = registeredStyles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IThemeConfig]
   }
 }

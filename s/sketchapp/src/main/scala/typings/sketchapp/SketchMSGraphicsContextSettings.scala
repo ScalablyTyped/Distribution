@@ -19,7 +19,6 @@ object SketchMSGraphicsContextSettings {
     opacity: Double
   ): SketchMSGraphicsContextSettings = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], blendMode = blendMode.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSGraphicsContextSettings]
   }
 }

@@ -1,7 +1,7 @@
 package typings.pulumiAws.apigatewayMod
 
-import typings.pulumiAws.modelMod.ModelArgs
-import typings.pulumiAws.modelMod.ModelState
+import typings.pulumiAws.apigatewayModelMod.ModelArgs
+import typings.pulumiAws.apigatewayModelMod.ModelState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway", "Model")
 @js.native
 class Model protected ()
-  extends typings.pulumiAws.modelMod.Model {
+  extends typings.pulumiAws.apigatewayModelMod.Model {
   /**
     * Create a Model resource with the given unique name, arguments, and options.
     *
@@ -36,9 +36,9 @@ object Model extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.pulumiAws.modelMod.Model = js.native
-  def get(name: String, id: Input[ID], state: ModelState): typings.pulumiAws.modelMod.Model = js.native
-  def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): typings.pulumiAws.modelMod.Model = js.native
+  def get(name: String, id: Input[ID]): typings.pulumiAws.apigatewayModelMod.Model = js.native
+  def get(name: String, id: Input[ID], state: ModelState): typings.pulumiAws.apigatewayModelMod.Model = js.native
+  def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): typings.pulumiAws.apigatewayModelMod.Model = js.native
   /**
     * Returns true if the given object is an instance of Model.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.

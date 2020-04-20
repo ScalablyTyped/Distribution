@@ -14,7 +14,6 @@ object AnonData {
   @scala.inline
   def apply(data: js.Any, message: String, timestamp: Double): AnonData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonData]
   }
 }

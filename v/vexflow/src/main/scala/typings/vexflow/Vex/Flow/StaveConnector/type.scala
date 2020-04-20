@@ -28,26 +28,24 @@ trait `type` extends js.Object
 
 object `type` {
   @scala.inline
-  def BOLD_DOUBLE_LEFT: `5` = this.cast(5)
+  def BOLD_DOUBLE_LEFT: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def BOLD_DOUBLE_RIGHT: `6` = this.cast(6)
+  def BOLD_DOUBLE_RIGHT: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def BRACE: `3` = this.cast(3)
+  def BRACE: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def BRACKET: `4` = this.cast(4)
+  def BRACKET: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def DOUBLE: `2` = this.cast(2)
+  def DOUBLE: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def NONE: `8` = this.cast(8)
+  def NONE: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def SINGLE: `1` = this.cast(1)
+  def SINGLE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SINGLE_LEFT: `1` = this.cast(1)
+  def SINGLE_LEFT: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SINGLE_RIGHT: `0` = this.cast(0)
+  def SINGLE_RIGHT: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def THIN_DOUBLE: `7` = this.cast(7)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def THIN_DOUBLE: `7` = 7.asInstanceOf[`7`]
 }
 

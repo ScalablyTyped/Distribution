@@ -13,7 +13,6 @@ object Result {
   @scala.inline
   def apply[T /* <: Data */](data: T, path: String): Result[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result[T]]
   }
 }

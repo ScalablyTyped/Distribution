@@ -17,20 +17,18 @@ trait NotAllowedAsOptionalPermissions extends js.Object
 
 object NotAllowedAsOptionalPermissions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debugger: typings.chromeApps.chromeAppsStrings.debugger = "debugger".asInstanceOf[typings.chromeApps.chromeAppsStrings.debugger]
   @scala.inline
-  def debugger: typings.chromeApps.chromeAppsStrings.debugger = this.cast("debugger")
+  def experimental: typings.chromeApps.chromeAppsStrings.experimental = "experimental".asInstanceOf[typings.chromeApps.chromeAppsStrings.experimental]
   @scala.inline
-  def experimental: typings.chromeApps.chromeAppsStrings.experimental = this.cast("experimental")
+  def geolocation: typings.chromeApps.chromeAppsStrings.geolocation = "geolocation".asInstanceOf[typings.chromeApps.chromeAppsStrings.geolocation]
   @scala.inline
-  def geolocation: typings.chromeApps.chromeAppsStrings.geolocation = this.cast("geolocation")
+  def mdns: typings.chromeApps.chromeAppsStrings.mdns = "mdns".asInstanceOf[typings.chromeApps.chromeAppsStrings.mdns]
   @scala.inline
-  def mdns: typings.chromeApps.chromeAppsStrings.mdns = this.cast("mdns")
+  def proxy: typings.chromeApps.chromeAppsStrings.proxy = "proxy".asInstanceOf[typings.chromeApps.chromeAppsStrings.proxy]
   @scala.inline
-  def proxy: typings.chromeApps.chromeAppsStrings.proxy = this.cast("proxy")
+  def tts: typings.chromeApps.chromeAppsStrings.tts = "tts".asInstanceOf[typings.chromeApps.chromeAppsStrings.tts]
   @scala.inline
-  def tts: typings.chromeApps.chromeAppsStrings.tts = this.cast("tts")
-  @scala.inline
-  def wallpaper: typings.chromeApps.chromeAppsStrings.wallpaper = this.cast("wallpaper")
+  def wallpaper: typings.chromeApps.chromeAppsStrings.wallpaper = "wallpaper".asInstanceOf[typings.chromeApps.chromeAppsStrings.wallpaper]
 }
 

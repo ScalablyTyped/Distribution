@@ -14,7 +14,6 @@ object IRoutesMatch {
   @scala.inline
   def apply(path: js.Array[Layer], pathAndMethod: js.Array[Layer], route: Boolean): IRoutesMatch = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], pathAndMethod = pathAndMethod.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRoutesMatch]
   }
 }

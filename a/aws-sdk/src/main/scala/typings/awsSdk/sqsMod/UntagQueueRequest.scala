@@ -20,7 +20,6 @@ object UntagQueueRequest {
   @scala.inline
   def apply(QueueUrl: String, TagKeys: TagKeyList): UntagQueueRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntagQueueRequest]
   }
 }

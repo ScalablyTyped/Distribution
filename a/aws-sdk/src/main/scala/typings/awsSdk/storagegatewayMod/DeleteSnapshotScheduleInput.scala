@@ -16,7 +16,6 @@ object DeleteSnapshotScheduleInput {
   @scala.inline
   def apply(VolumeARN: VolumeARN): DeleteSnapshotScheduleInput = {
     val __obj = js.Dynamic.literal(VolumeARN = VolumeARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSnapshotScheduleInput]
   }
 }

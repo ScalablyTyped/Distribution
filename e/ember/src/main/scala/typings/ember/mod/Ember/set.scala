@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.set")
 @js.native
 object set extends js.Object {
-  def apply[T, K /* <: java.lang.String */](
+  def apply[T, K /* <: /* keyof T */ java.lang.String */](
     obj: T,
     key: K,
     value: UnwrapComputedPropertySetter[

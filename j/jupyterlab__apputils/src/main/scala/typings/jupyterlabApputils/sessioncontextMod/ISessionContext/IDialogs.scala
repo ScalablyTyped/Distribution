@@ -33,7 +33,6 @@ object IDialogs {
     selectKernel: typings.jupyterlabApputils.sessioncontextMod.ISessionContext => js.Promise[Unit]
   ): IDialogs = {
     val __obj = js.Dynamic.literal(restart = js.Any.fromFunction1(restart), selectKernel = js.Any.fromFunction1(selectKernel))
-  
     __obj.asInstanceOf[IDialogs]
   }
 }

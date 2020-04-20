@@ -16,7 +16,6 @@ object GetPermissionPolicyRequest {
   @scala.inline
   def apply(ResourceArn: ResourceArn): GetPermissionPolicyRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPermissionPolicyRequest]
   }
 }

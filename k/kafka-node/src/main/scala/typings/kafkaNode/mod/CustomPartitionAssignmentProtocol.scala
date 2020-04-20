@@ -22,7 +22,6 @@ object CustomPartitionAssignmentProtocol {
     version: Double
   ): CustomPartitionAssignmentProtocol = {
     val __obj = js.Dynamic.literal(assign = js.Any.fromFunction3(assign), name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomPartitionAssignmentProtocol]
   }
 }

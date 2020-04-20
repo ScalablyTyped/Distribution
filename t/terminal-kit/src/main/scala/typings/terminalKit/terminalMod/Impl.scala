@@ -202,6 +202,7 @@ trait Impl extends js.Object {
   def applicationKeypad(): Terminal = js.native
   def applicationKeypad(args: js.Any*): Terminal = js.native
   def applicationKeypad(str: String): Terminal = js.native
+  def asyncCleanup(): js.Promise[Unit] = js.native
   def backDelete(): Terminal = js.native
   def backDelete(args: js.Any*): Terminal = js.native
   def backDelete(str: String): Terminal = js.native

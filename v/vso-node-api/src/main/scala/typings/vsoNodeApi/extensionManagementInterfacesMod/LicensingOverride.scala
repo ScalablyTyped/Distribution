@@ -19,7 +19,6 @@ object LicensingOverride {
   @scala.inline
   def apply(behavior: ContributionLicensingBehaviorType, id: String): LicensingOverride = {
     val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LicensingOverride]
   }
 }

@@ -15,7 +15,6 @@ object UserDescriptorsServices {
   @scala.inline
   def apply(network: Network, users: Users): UserDescriptorsServices = {
     val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserDescriptorsServices]
   }
 }

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListImageBuildVersionsResponse extends js.Object {
   /**
-    *  The list of image build versions. 
+    * The list of image build versions. 
     */
   var imageSummaryList: js.UndefOr[ImageSummaryList] = js.native
   /**
-    *  The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects. 
+    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects. 
     */
   var nextToken: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

@@ -16,7 +16,6 @@ object BeforePlotEvent {
   @scala.inline
   def apply(config: PartialConfig, data: js.Array[Data], layout: PartialLayout): BeforePlotEvent = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BeforePlotEvent]
   }
 }

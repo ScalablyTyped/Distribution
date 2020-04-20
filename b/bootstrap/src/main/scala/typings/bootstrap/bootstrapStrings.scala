@@ -237,11 +237,11 @@ object bootstrapStrings {
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
-  def `click focus`: `click focus` = "click focus".asInstanceOf[`click focus`]
+  def `click focus`: `click focus` = ("click focus").asInstanceOf[`click focus`]
   @scala.inline
-  def `click hover`: `click hover` = "click hover".asInstanceOf[`click hover`]
+  def `click hover`: `click hover` = ("click hover").asInstanceOf[`click hover`]
   @scala.inline
-  def `click hover focus`: `click hover focus` = "click hover focus".asInstanceOf[`click hover focus`]
+  def `click hover focus`: `click hover focus` = ("click hover focus").asInstanceOf[`click hover focus`]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
@@ -297,7 +297,7 @@ object bootstrapStrings {
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
-  def `hover focus`: `hover focus` = "hover focus".asInstanceOf[`hover focus`]
+  def `hover focus`: `hover focus` = ("hover focus").asInstanceOf[`hover focus`]
   @scala.inline
   def insertedDotbsDotpopover: insertedDotbsDotpopover = "inserted.bs.popover".asInstanceOf[insertedDotbsDotpopover]
   @scala.inline

@@ -14,7 +14,6 @@ object ArtifactFilter {
   @scala.inline
   def apply(sourceBranch: String, tags: js.Array[String], useBuildDefinitionBranch: Boolean): ArtifactFilter = {
     val __obj = js.Dynamic.literal(sourceBranch = sourceBranch.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], useBuildDefinitionBranch = useBuildDefinitionBranch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArtifactFilter]
   }
 }

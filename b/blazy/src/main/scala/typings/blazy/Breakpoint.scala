@@ -13,7 +13,6 @@ object Breakpoint {
   @scala.inline
   def apply(src: String, width: Double): Breakpoint = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Breakpoint]
   }
 }

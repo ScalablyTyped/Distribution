@@ -40,7 +40,7 @@ object webXRAbstractFeatureMod extends js.Object {
       * Is this feature attached
       */
     @JSName("attached")
-    def attached_MWebXRAbstractFeature(): Boolean = js.native
+    def attached_MWebXRAbstractFeature: Boolean = js.native
     /**
       * Releases all held resources
       */

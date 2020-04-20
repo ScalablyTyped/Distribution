@@ -17,7 +17,7 @@ object mod extends js.Object {
   	```
   	*/
   var hasLoaded: Boolean = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: String = js.native
   /**
     * Attaches a callback for only the rejection of the Promise.

@@ -1,7 +1,7 @@
 package typings.pulumiAws.apigatewayMod
 
-import typings.pulumiAws.authorizerMod.AuthorizerArgs
-import typings.pulumiAws.authorizerMod.AuthorizerState
+import typings.pulumiAws.apigatewayAuthorizerMod.AuthorizerArgs
+import typings.pulumiAws.apigatewayAuthorizerMod.AuthorizerState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway", "Authorizer")
 @js.native
 class Authorizer protected ()
-  extends typings.pulumiAws.authorizerMod.Authorizer {
+  extends typings.pulumiAws.apigatewayAuthorizerMod.Authorizer {
   /**
     * Create a Authorizer resource with the given unique name, arguments, and options.
     *
@@ -36,9 +36,9 @@ object Authorizer extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.pulumiAws.authorizerMod.Authorizer = js.native
-  def get(name: String, id: Input[ID], state: AuthorizerState): typings.pulumiAws.authorizerMod.Authorizer = js.native
-  def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): typings.pulumiAws.authorizerMod.Authorizer = js.native
+  def get(name: String, id: Input[ID]): typings.pulumiAws.apigatewayAuthorizerMod.Authorizer = js.native
+  def get(name: String, id: Input[ID], state: AuthorizerState): typings.pulumiAws.apigatewayAuthorizerMod.Authorizer = js.native
+  def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): typings.pulumiAws.apigatewayAuthorizerMod.Authorizer = js.native
   /**
     * Returns true if the given object is an instance of Authorizer.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.

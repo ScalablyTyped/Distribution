@@ -15,7 +15,6 @@ object GetDelegationSetResult {
   @scala.inline
   def apply(callerReference: String, id: String, nameServers: js.Array[String]): GetDelegationSetResult = {
     val __obj = js.Dynamic.literal(callerReference = callerReference.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nameServers = nameServers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDelegationSetResult]
   }
 }

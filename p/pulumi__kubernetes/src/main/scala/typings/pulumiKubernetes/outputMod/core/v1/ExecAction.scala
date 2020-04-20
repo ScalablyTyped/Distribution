@@ -22,7 +22,6 @@ object ExecAction {
   @scala.inline
   def apply(command: js.Array[String]): ExecAction = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecAction]
   }
 }

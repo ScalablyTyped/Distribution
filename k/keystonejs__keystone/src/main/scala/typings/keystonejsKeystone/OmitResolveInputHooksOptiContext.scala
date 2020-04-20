@@ -23,7 +23,6 @@ object OmitResolveInputHooksOptiContext {
     resolvedData: js.Any
   ): OmitResolveInputHooksOptiContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], existingItem = existingItem.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], originalInput = originalInput.asInstanceOf[js.Any], resolvedData = resolvedData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OmitResolveInputHooksOptiContext]
   }
 }

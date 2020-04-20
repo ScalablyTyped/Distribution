@@ -193,7 +193,7 @@ object codemirrorsearchproviderMod extends js.Object {
     /**
       * The content hosted by the widget.
       */
-    def content(): FileEditor = js.native
+    def content: FileEditor = js.native
     /**
       * Dispose of the widget and its descendant widgets.
       *
@@ -230,7 +230,7 @@ object codemirrorsearchproviderMod extends js.Object {
     /**
       * Whether the content widget or an error is revealed.
       */
-    def isRevealed(): Boolean = js.native
+    def isRevealed: Boolean = js.native
     /**
       * Invoke the message processing routine of the widget's layout.
       *
@@ -361,7 +361,7 @@ object codemirrorsearchproviderMod extends js.Object {
     /**
       * A promise that resolves when the widget is revealed.
       */
-    def revealed(): js.Promise[Unit] = js.native
+    def revealed: js.Promise[Unit] = js.native
     /**
       * Set the given widget flag.
       *
@@ -413,7 +413,7 @@ object codemirrorsearchproviderMod extends js.Object {
     /**
       * The toolbar hosted by the widget.
       */
-    def toolbar(): Toolbar[typings.luminoWidgets.mod.Widget] = js.native
+    def toolbar: Toolbar[typings.luminoWidgets.mod.Widget] = js.native
     /**
       * Post an `'update-request'` message to the widget.
       *
@@ -491,15 +491,15 @@ object codemirrorsearchproviderMod extends js.Object {
       * Signal indicating that something in the search has changed, so the UI should update
       */
     @JSName("changed")
-    def changed_MCodeMirrorSearchProvider(): ISignal[this.type, Unit] = js.native
+    def changed_MCodeMirrorSearchProvider: ISignal[this.type, Unit] = js.native
     def clearSelection(): Unit = js.native
-    def currentMatch(): ISearchMatch | Null = js.native
+    def currentMatch: ISearchMatch | Null = js.native
     /**
       * The current index of the selected match.
       */
     @JSName("currentMatchIndex")
-    def currentMatchIndex_MCodeMirrorSearchProvider(): Double | Null = js.native
-    def editor(): CodeMirrorEditor = js.native
+    def currentMatchIndex_MCodeMirrorSearchProvider: Double | Null = js.native
+    def editor: CodeMirrorEditor = js.native
     /**
       * Clears state of a search provider to prepare for startQuery to be called
       * in order to start a new query or refresh an existing one.
@@ -546,7 +546,7 @@ object codemirrorsearchproviderMod extends js.Object {
       * The same list of matches provided by the startQuery promise resolution
       */
     @JSName("matches")
-    def matches_MCodeMirrorSearchProvider(): js.Array[ISearchMatch] = js.native
+    def matches_MCodeMirrorSearchProvider: js.Array[ISearchMatch] = js.native
     def refreshOverlay(): Unit = js.native
     /**
       * Replace all matches in the notebook with the provided text

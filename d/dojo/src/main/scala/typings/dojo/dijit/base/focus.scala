@@ -94,7 +94,6 @@ object focus {
     unregisterWin: js.Object => Unit
   ): focus = {
     val __obj = js.Dynamic.literal(getBookmark = js.Any.fromFunction0(getBookmark), getFocus = js.Any.fromFunction2(getFocus), isCollapsed = js.Any.fromFunction0(isCollapsed), moveToBookmark = js.Any.fromFunction1(moveToBookmark), registerIframe = js.Any.fromFunction1(registerIframe), registerWin = js.Any.fromFunction2(registerWin), unregisterIframe = js.Any.fromFunction1(unregisterIframe), unregisterWin = js.Any.fromFunction1(unregisterWin))
-  
     __obj.asInstanceOf[focus]
   }
 }

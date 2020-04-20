@@ -15,7 +15,6 @@ object UnixEndpointAddress {
   @scala.inline
   def apply(path: String): UnixEndpointAddress = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnixEndpointAddress]
   }
 }

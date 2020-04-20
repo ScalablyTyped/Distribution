@@ -31,31 +31,31 @@ trait bizchartsProps {
   type GeomProps = typings.bizcharts.mod.GeomProps
   type GuideProps = typings.bizcharts.mod.GuideProps
   @scala.inline
-  def GuideArcProps: ArcProps.type = typings.bizcharts.mod.Guide.ArcProps
+  def GuideArcProps: ArcProps.type = ArcProps
   type GuideArcProps = ArcProps
   @scala.inline
-  def GuideDataMarkerProps: DataMarkerProps.type = typings.bizcharts.mod.Guide.DataMarkerProps
+  def GuideDataMarkerProps: DataMarkerProps.type = DataMarkerProps
   type GuideDataMarkerProps = DataMarkerProps
   @scala.inline
-  def GuideDataRegionProps: DataRegionProps.type = typings.bizcharts.mod.Guide.DataRegionProps
+  def GuideDataRegionProps: DataRegionProps.type = DataRegionProps
   type GuideDataRegionProps = DataRegionProps
   @scala.inline
-  def GuideHtmlProps: HtmlProps.type = typings.bizcharts.mod.Guide.HtmlProps
+  def GuideHtmlProps: HtmlProps.type = HtmlProps
   type GuideHtmlProps = HtmlProps
   @scala.inline
-  def GuideImageProps: ImageProps.type = typings.bizcharts.mod.Guide.ImageProps
+  def GuideImageProps: ImageProps.type = ImageProps
   type GuideImageProps = ImageProps
   @scala.inline
-  def GuideLineProps: LineProps.type = typings.bizcharts.mod.Guide.LineProps
+  def GuideLineProps: LineProps.type = LineProps
   type GuideLineProps = LineProps
   @scala.inline
-  def GuideRegionProps: RegionProps.type = typings.bizcharts.mod.Guide.RegionProps
+  def GuideRegionProps: RegionProps.type = RegionProps
   type GuideRegionProps = RegionProps
   @scala.inline
-  def GuideRegionFilterProps: RegionFilterProps.type = typings.bizcharts.mod.Guide.RegionFilterProps
+  def GuideRegionFilterProps: RegionFilterProps.type = RegionFilterProps
   type GuideRegionFilterProps = RegionFilterProps
   @scala.inline
-  def GuideTextProps: TextProps.type = typings.bizcharts.mod.Guide.TextProps
+  def GuideTextProps: TextProps.type = TextProps
   type GuideTextProps = TextProps
   @scala.inline
   def LabelProps: typings.bizcharts.mod.LabelProps.type = typings.bizcharts.mod.LabelProps

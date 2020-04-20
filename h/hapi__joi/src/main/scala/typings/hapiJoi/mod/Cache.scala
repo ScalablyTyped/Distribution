@@ -23,7 +23,6 @@ object Cache {
   @scala.inline
   def apply(get: js.Any => js.Any, set: (js.Any, js.Any) => Unit): Cache = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[Cache]
   }
 }

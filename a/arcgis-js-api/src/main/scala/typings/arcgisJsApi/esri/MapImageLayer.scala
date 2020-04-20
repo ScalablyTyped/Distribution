@@ -173,6 +173,14 @@ trait MapImageLayer
     */
   def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[HTMLImageElement] = js.native
   def fetchImage(extent: Extent, width: Double, height: Double, options: MapImageLayerFetchImageOptions): js.Promise[HTMLImageElement] = js.native
+  /**
+    * Loads all of the sublayers. See [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#loaded) or [loadStatus](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#loadStatus) properties to check the status.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#loadAll)
+    *
+    *
+    */
+  def loadAll(): js.Promise[Sublayer] = js.native
 }
 
 @JSGlobal("__esri.MapImageLayer")

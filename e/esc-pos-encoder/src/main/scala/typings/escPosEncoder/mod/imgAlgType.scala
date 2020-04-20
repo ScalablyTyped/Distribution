@@ -14,14 +14,12 @@ trait imgAlgType extends js.Object
 
 object imgAlgType {
   @scala.inline
-  def atkinson: typings.escPosEncoder.escPosEncoderStrings.atkinson = this.cast("atkinson")
+  def atkinson: typings.escPosEncoder.escPosEncoderStrings.atkinson = "atkinson".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.atkinson]
   @scala.inline
-  def bayer: typings.escPosEncoder.escPosEncoderStrings.bayer = this.cast("bayer")
+  def bayer: typings.escPosEncoder.escPosEncoderStrings.bayer = "bayer".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.bayer]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def floydsteinberg: typings.escPosEncoder.escPosEncoderStrings.floydsteinberg = "floydsteinberg".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.floydsteinberg]
   @scala.inline
-  def floydsteinberg: typings.escPosEncoder.escPosEncoderStrings.floydsteinberg = this.cast("floydsteinberg")
-  @scala.inline
-  def threshold: typings.escPosEncoder.escPosEncoderStrings.threshold = this.cast("threshold")
+  def threshold: typings.escPosEncoder.escPosEncoderStrings.threshold = "threshold".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.threshold]
 }
 

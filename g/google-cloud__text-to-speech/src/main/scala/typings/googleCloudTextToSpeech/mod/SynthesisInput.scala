@@ -14,13 +14,11 @@ object SynthesisInput {
   @scala.inline
   def AnonText(text: String): SynthesisInput = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SynthesisInput]
   }
   @scala.inline
   def AnonSsml(ssml: String): SynthesisInput = {
     val __obj = js.Dynamic.literal(ssml = ssml.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SynthesisInput]
   }
 }

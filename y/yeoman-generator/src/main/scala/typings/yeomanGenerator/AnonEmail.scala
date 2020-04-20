@@ -23,7 +23,6 @@ object AnonEmail {
   @scala.inline
   def apply(email: () => String, name: () => String): AnonEmail = {
     val __obj = js.Dynamic.literal(email = js.Any.fromFunction0(email), name = js.Any.fromFunction0(name))
-  
     __obj.asInstanceOf[AnonEmail]
   }
 }

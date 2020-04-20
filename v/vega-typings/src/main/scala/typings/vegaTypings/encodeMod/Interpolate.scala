@@ -25,36 +25,34 @@ trait Interpolate extends js.Object
 
 object Interpolate {
   @scala.inline
-  def basis: typings.vegaTypings.vegaTypingsStrings.basis = this.cast("basis")
+  def basis: typings.vegaTypings.vegaTypingsStrings.basis = "basis".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.basis]
   @scala.inline
-  def `basis-closed`: typings.vegaTypings.vegaTypingsStrings.`basis-closed` = this.cast("basis-closed")
+  def `basis-closed`: typings.vegaTypings.vegaTypingsStrings.`basis-closed` = "basis-closed".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`basis-closed`]
   @scala.inline
-  def `basis-open`: typings.vegaTypings.vegaTypingsStrings.`basis-open` = this.cast("basis-open")
+  def `basis-open`: typings.vegaTypings.vegaTypingsStrings.`basis-open` = "basis-open".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`basis-open`]
   @scala.inline
-  def bundle: typings.vegaTypings.vegaTypingsStrings.bundle = this.cast("bundle")
+  def bundle: typings.vegaTypings.vegaTypingsStrings.bundle = "bundle".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bundle]
   @scala.inline
-  def cardinal: typings.vegaTypings.vegaTypingsStrings.cardinal = this.cast("cardinal")
+  def cardinal: typings.vegaTypings.vegaTypingsStrings.cardinal = "cardinal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cardinal]
   @scala.inline
-  def `cardinal-closed`: typings.vegaTypings.vegaTypingsStrings.`cardinal-closed` = this.cast("cardinal-closed")
+  def `cardinal-closed`: typings.vegaTypings.vegaTypingsStrings.`cardinal-closed` = "cardinal-closed".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`cardinal-closed`]
   @scala.inline
-  def `cardinal-open`: typings.vegaTypings.vegaTypingsStrings.`cardinal-open` = this.cast("cardinal-open")
+  def `cardinal-open`: typings.vegaTypings.vegaTypingsStrings.`cardinal-open` = "cardinal-open".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`cardinal-open`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `catmull-rom`: typings.vegaTypings.vegaTypingsStrings.`catmull-rom` = "catmull-rom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`catmull-rom`]
   @scala.inline
-  def `catmull-rom`: typings.vegaTypings.vegaTypingsStrings.`catmull-rom` = this.cast("catmull-rom")
+  def linear: typings.vegaTypings.vegaTypingsStrings.linear = "linear".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.linear]
   @scala.inline
-  def linear: typings.vegaTypings.vegaTypingsStrings.linear = this.cast("linear")
+  def `linear-closed`: typings.vegaTypings.vegaTypingsStrings.`linear-closed` = "linear-closed".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`linear-closed`]
   @scala.inline
-  def `linear-closed`: typings.vegaTypings.vegaTypingsStrings.`linear-closed` = this.cast("linear-closed")
+  def monotone: typings.vegaTypings.vegaTypingsStrings.monotone = "monotone".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.monotone]
   @scala.inline
-  def monotone: typings.vegaTypings.vegaTypingsStrings.monotone = this.cast("monotone")
+  def natural: typings.vegaTypings.vegaTypingsStrings.natural = "natural".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.natural]
   @scala.inline
-  def natural: typings.vegaTypings.vegaTypingsStrings.natural = this.cast("natural")
+  def step: typings.vegaTypings.vegaTypingsStrings.step = "step".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.step]
   @scala.inline
-  def step: typings.vegaTypings.vegaTypingsStrings.step = this.cast("step")
+  def `step-after`: typings.vegaTypings.vegaTypingsStrings.`step-after` = "step-after".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`step-after`]
   @scala.inline
-  def `step-after`: typings.vegaTypings.vegaTypingsStrings.`step-after` = this.cast("step-after")
-  @scala.inline
-  def `step-before`: typings.vegaTypings.vegaTypingsStrings.`step-before` = this.cast("step-before")
+  def `step-before`: typings.vegaTypings.vegaTypingsStrings.`step-before` = "step-before".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`step-before`]
 }
 

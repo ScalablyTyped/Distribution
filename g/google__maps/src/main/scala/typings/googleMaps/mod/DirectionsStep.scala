@@ -57,7 +57,6 @@ object DirectionsStep {
     transit_details: TransitDetails
   ): DirectionsStep = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], end_location = end_location.asInstanceOf[js.Any], html_instructions = html_instructions.asInstanceOf[js.Any], maneuver = maneuver.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], start_location = start_location.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], transit_details = transit_details.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectionsStep]
   }
 }

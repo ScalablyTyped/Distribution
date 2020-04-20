@@ -13,7 +13,6 @@ object ProjectsResource {
   @scala.inline
   def apply(builds: BuildsResource, triggers: TriggersResource): ProjectsResource = {
     val __obj = js.Dynamic.literal(builds = builds.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

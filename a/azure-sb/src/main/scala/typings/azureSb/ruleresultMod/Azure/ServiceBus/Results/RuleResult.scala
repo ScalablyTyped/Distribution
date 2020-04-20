@@ -14,7 +14,6 @@ object RuleResult {
   @scala.inline
   def apply(parse: js.Object => js.Object | js.Array[js.Object], serialize: CreateRuleOptions => String): RuleResult = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction1(serialize))
-  
     __obj.asInstanceOf[RuleResult]
   }
 }

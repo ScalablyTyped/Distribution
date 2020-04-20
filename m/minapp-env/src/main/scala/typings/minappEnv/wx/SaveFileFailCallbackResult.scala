@@ -18,7 +18,6 @@ object SaveFileFailCallbackResult {
   @scala.inline
   def apply(errMsg: String): SaveFileFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SaveFileFailCallbackResult]
   }
 }

@@ -16,14 +16,14 @@ class Base64ModelFactory () extends TextModelFactory {
     * This is a read-only property.
     */
   @JSName("contentType")
-  def contentType_MBase64ModelFactory(): ContentType = js.native
+  def contentType_MBase64ModelFactory: ContentType = js.native
   /**
     * The format of the file.
     *
     * This is a read-only property.
     */
   @JSName("fileFormat")
-  def fileFormat_MBase64ModelFactory(): FileFormat = js.native
+  def fileFormat_MBase64ModelFactory: FileFormat = js.native
   /**
     * The name of the model type.
     *
@@ -31,6 +31,6 @@ class Base64ModelFactory () extends TextModelFactory {
     * This is a read-only property.
     */
   @JSName("name")
-  def name_MBase64ModelFactory(): String = js.native
+  def name_MBase64ModelFactory: String = js.native
 }
 

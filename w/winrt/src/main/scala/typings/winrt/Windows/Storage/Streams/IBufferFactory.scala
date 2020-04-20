@@ -12,7 +12,6 @@ object IBufferFactory {
   @scala.inline
   def apply(create: Double => Buffer): IBufferFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[IBufferFactory]
   }
 }

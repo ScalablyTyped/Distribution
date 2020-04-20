@@ -20,7 +20,6 @@ object StreamingDistributionConfigWithTags {
   @scala.inline
   def apply(StreamingDistributionConfig: StreamingDistributionConfig, Tags: Tags): StreamingDistributionConfigWithTags = {
     val __obj = js.Dynamic.literal(StreamingDistributionConfig = StreamingDistributionConfig.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreamingDistributionConfigWithTags]
   }
 }

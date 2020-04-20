@@ -25,7 +25,6 @@ object PolygonEditor {
     reset: () => Unit
   ): PolygonEditor = {
     val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), newHole = js.Any.fromFunction1(newHole), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[PolygonEditor]
   }
 }

@@ -38,7 +38,6 @@ object TextInput {
     setPlaceholder: String => TextInput
   ): TextInput = {
     val __obj = js.Dynamic.literal(setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setIsDynamic = js.Any.fromFunction1(setIsDynamic), setName = js.Any.fromFunction1(setName), setPlaceholder = js.Any.fromFunction1(setPlaceholder))
-  
     __obj.asInstanceOf[TextInput]
   }
 }

@@ -12,7 +12,6 @@ object InsightsServiceAccountResponseFollowersTopCountriesGraph {
   @scala.inline
   def apply(data_points: js.Array[InsightsServiceAccountResponseDataPointsItem]): InsightsServiceAccountResponseFollowersTopCountriesGraph = {
     val __obj = js.Dynamic.literal(data_points = data_points.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponseFollowersTopCountriesGraph]
   }
 }

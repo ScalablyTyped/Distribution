@@ -27,7 +27,6 @@ object AnonAddressZero {
     Zero: BigNumber
   ): AnonAddressZero = {
     val __obj = js.Dynamic.literal(AddressZero = AddressZero.asInstanceOf[js.Any], HashZero = HashZero.asInstanceOf[js.Any], NegativeOne = NegativeOne.asInstanceOf[js.Any], One = One.asInstanceOf[js.Any], Two = Two.asInstanceOf[js.Any], WeiPerEther = WeiPerEther.asInstanceOf[js.Any], Zero = Zero.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddressZero]
   }
 }

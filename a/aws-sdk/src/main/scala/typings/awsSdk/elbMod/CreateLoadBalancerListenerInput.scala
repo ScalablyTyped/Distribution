@@ -20,7 +20,6 @@ object CreateLoadBalancerListenerInput {
   @scala.inline
   def apply(Listeners: Listeners, LoadBalancerName: AccessPointName): CreateLoadBalancerListenerInput = {
     val __obj = js.Dynamic.literal(Listeners = Listeners.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateLoadBalancerListenerInput]
   }
 }

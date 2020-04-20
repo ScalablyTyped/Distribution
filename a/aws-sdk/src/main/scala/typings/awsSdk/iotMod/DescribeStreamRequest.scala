@@ -16,7 +16,6 @@ object DescribeStreamRequest {
   @scala.inline
   def apply(streamId: StreamId): DescribeStreamRequest = {
     val __obj = js.Dynamic.literal(streamId = streamId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStreamRequest]
   }
 }

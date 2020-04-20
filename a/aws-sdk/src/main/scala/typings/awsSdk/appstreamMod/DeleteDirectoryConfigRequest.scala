@@ -16,7 +16,6 @@ object DeleteDirectoryConfigRequest {
   @scala.inline
   def apply(DirectoryName: DirectoryName): DeleteDirectoryConfigRequest = {
     val __obj = js.Dynamic.literal(DirectoryName = DirectoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDirectoryConfigRequest]
   }
 }

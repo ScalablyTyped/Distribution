@@ -16,18 +16,16 @@ trait PieceType extends js.Object
 
 object PieceType {
   @scala.inline
-  def b: typings.chessJs.chessJsStrings.b = this.cast("b")
+  def b: typings.chessJs.chessJsStrings.b = "b".asInstanceOf[typings.chessJs.chessJsStrings.b]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def k: typings.chessJs.chessJsStrings.k = "k".asInstanceOf[typings.chessJs.chessJsStrings.k]
   @scala.inline
-  def k: typings.chessJs.chessJsStrings.k = this.cast("k")
+  def n: typings.chessJs.chessJsStrings.n = "n".asInstanceOf[typings.chessJs.chessJsStrings.n]
   @scala.inline
-  def n: typings.chessJs.chessJsStrings.n = this.cast("n")
+  def p: typings.chessJs.chessJsStrings.p = "p".asInstanceOf[typings.chessJs.chessJsStrings.p]
   @scala.inline
-  def p: typings.chessJs.chessJsStrings.p = this.cast("p")
+  def q: typings.chessJs.chessJsStrings.q = "q".asInstanceOf[typings.chessJs.chessJsStrings.q]
   @scala.inline
-  def q: typings.chessJs.chessJsStrings.q = this.cast("q")
-  @scala.inline
-  def r: typings.chessJs.chessJsStrings.r = this.cast("r")
+  def r: typings.chessJs.chessJsStrings.r = "r".asInstanceOf[typings.chessJs.chessJsStrings.r]
 }
 

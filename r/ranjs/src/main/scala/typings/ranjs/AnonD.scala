@@ -14,7 +14,6 @@ object AnonD {
   @scala.inline
   def apply(D: Matrix, L: Matrix): AnonD = {
     val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonD]
   }
 }

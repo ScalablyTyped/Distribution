@@ -13,7 +13,6 @@ object InternalProducer {
   @scala.inline
   def apply[T](_start: InternalListener[T] => Unit, _stop: () => Unit): InternalProducer[T] = {
     val __obj = js.Dynamic.literal(_start = js.Any.fromFunction1(_start), _stop = js.Any.fromFunction0(_stop))
-  
     __obj.asInstanceOf[InternalProducer[T]]
   }
 }

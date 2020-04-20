@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-api-middleware
 
-Typings are for version 3.0
+Typings are for version 3.2
 
 ## Library description:
 Redux middleware for calling an API.

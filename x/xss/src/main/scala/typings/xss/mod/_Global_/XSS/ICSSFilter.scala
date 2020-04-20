@@ -12,7 +12,6 @@ object ICSSFilter {
   @scala.inline
   def apply(process: String => String): ICSSFilter = {
     val __obj = js.Dynamic.literal(process = js.Any.fromFunction1(process))
-  
     __obj.asInstanceOf[ICSSFilter]
   }
 }

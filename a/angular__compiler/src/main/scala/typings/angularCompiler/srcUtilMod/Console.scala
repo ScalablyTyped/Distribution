@@ -13,7 +13,6 @@ object Console {
   @scala.inline
   def apply(log: String => Unit, warn: String => Unit): Console = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
-  
     __obj.asInstanceOf[Console]
   }
 }

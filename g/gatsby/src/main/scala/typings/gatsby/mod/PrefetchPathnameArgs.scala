@@ -17,7 +17,6 @@ object PrefetchPathnameArgs {
     pathname: String
   ): PrefetchPathnameArgs = {
     val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname.asInstanceOf[js.Any], getResourcesForPathname = getResourcesForPathname.asInstanceOf[js.Any], getResourcesForPathnameSync = getResourcesForPathnameSync.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrefetchPathnameArgs]
   }
 }

@@ -13,7 +13,6 @@ object Throughput {
   @scala.inline
   def apply(readCapacity: Double, writeCapacity: Double): Throughput = {
     val __obj = js.Dynamic.literal(readCapacity = readCapacity.asInstanceOf[js.Any], writeCapacity = writeCapacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Throughput]
   }
 }

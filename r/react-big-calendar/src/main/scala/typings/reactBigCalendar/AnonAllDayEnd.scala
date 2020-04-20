@@ -15,7 +15,6 @@ object AnonAllDayEnd {
   @scala.inline
   def apply(allDay: Boolean, end: stringOrDate, start: stringOrDate): AnonAllDayEnd = {
     val __obj = js.Dynamic.literal(allDay = allDay.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllDayEnd]
   }
 }

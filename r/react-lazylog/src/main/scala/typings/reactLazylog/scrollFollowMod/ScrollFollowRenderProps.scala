@@ -21,7 +21,6 @@ object ScrollFollowRenderProps {
     stopFollowing: () => Unit
   ): ScrollFollowRenderProps = {
     val __obj = js.Dynamic.literal(follow = follow.asInstanceOf[js.Any], onScroll = js.Any.fromFunction1(onScroll), startFollowing = js.Any.fromFunction0(startFollowing), stopFollowing = js.Any.fromFunction0(stopFollowing))
-  
     __obj.asInstanceOf[ScrollFollowRenderProps]
   }
 }

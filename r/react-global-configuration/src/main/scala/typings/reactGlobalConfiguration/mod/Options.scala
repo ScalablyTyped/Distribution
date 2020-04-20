@@ -13,7 +13,6 @@ object Options {
   @scala.inline
   def apply(assign: Boolean, freeze: Boolean): Options = {
     val __obj = js.Dynamic.literal(assign = assign.asInstanceOf[js.Any], freeze = freeze.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

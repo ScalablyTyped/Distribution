@@ -12,7 +12,7 @@ trait AnonPaginate extends js.Object {
   @JSName("paginate")
   var paginate_Original: PaginateInterface = js.native
   /**
-    * Sends a request based on endpoint options
+    * Paginate a request using endpoint options
     *
     * @param {object} endpoint Must set `method` and `url`. Plus URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
     */
@@ -20,7 +20,7 @@ trait AnonPaginate extends js.Object {
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitTypes.EndpointOptions */ js.Any
   ): js.Promise[PaginationResults[T]] = js.native
   /**
-    * Sends a request based on endpoint options
+    * Paginate a request using an endpoint route string and parameters
     *
     * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
     * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
@@ -30,13 +30,13 @@ trait AnonPaginate extends js.Object {
     parameters: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitTypes.RequestParameters */ js.Any
   ): js.Promise[PaginationResults[T]] = js.native
   /**
-    * Sends a request based on endpoint options
+    * Paginate a request using endpoint options and map each response to a custom array
     *
     * @param {object} endpoint Must set `method` and `url`. Plus URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
     * @param {function} mapFn Optional method to map each response to a custom array
     */
   /**
-    * Sends a request based on endpoint options
+    * Paginate a request using an endpoint route string and map each response to a custom array
     *
     * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
     * @param {function} mapFn Optional method to map each response to a custom array
@@ -46,7 +46,7 @@ trait AnonPaginate extends js.Object {
     mapFn: MapFunction[T, _ | R]
   ): js.Promise[PaginationResults[R]] = js.native
   /**
-    * Sends a request based on endpoint options
+    * Paginate a request using an endpoint route string and parameters, and map each response to a custom array
     *
     * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
     * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.

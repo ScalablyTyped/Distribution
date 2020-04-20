@@ -16,7 +16,6 @@ object CalendarTriggerBuilder {
   @scala.inline
   def apply(create: () => Trigger, onEventUpdated: () => CalendarTriggerBuilder): CalendarTriggerBuilder = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), onEventUpdated = js.Any.fromFunction0(onEventUpdated))
-  
     __obj.asInstanceOf[CalendarTriggerBuilder]
   }
 }

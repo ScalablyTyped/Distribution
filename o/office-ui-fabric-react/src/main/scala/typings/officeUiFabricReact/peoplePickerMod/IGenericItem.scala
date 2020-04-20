@@ -15,7 +15,6 @@ object IGenericItem {
   @scala.inline
   def apply(ValidationState: ValidationState, imageInitials: String, primaryText: String): IGenericItem = {
     val __obj = js.Dynamic.literal(ValidationState = ValidationState.asInstanceOf[js.Any], imageInitials = imageInitials.asInstanceOf[js.Any], primaryText = primaryText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGenericItem]
   }
 }

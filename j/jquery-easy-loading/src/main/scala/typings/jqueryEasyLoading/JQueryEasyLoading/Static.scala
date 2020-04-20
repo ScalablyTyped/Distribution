@@ -18,7 +18,6 @@ object Static {
   @scala.inline
   def apply(setDefaults: Options => Unit): Static = {
     val __obj = js.Dynamic.literal(setDefaults = js.Any.fromFunction1(setDefaults))
-  
     __obj.asInstanceOf[Static]
   }
 }

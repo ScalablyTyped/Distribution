@@ -16,7 +16,6 @@ object RegisterDefaultPatchBaselineRequest {
   @scala.inline
   def apply(BaselineId: BaselineId): RegisterDefaultPatchBaselineRequest = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterDefaultPatchBaselineRequest]
   }
 }

@@ -24,6 +24,7 @@ trait SchemaBuilder extends ChainableInterface[Unit] {
   def raw(statement: String): SchemaBuilder = js.native
   def renameTable(oldTableName: String, newTableName: String): js.Promise[Unit] = js.native
   def table(tableName: String, callback: js.Function1[/* tableBuilder */ AlterTableBuilder, _]): js.Promise[Unit] = js.native
+  def toSQL(): Sql = js.native
   def withSchema(schemaName: String): SchemaBuilder = js.native
 }
 

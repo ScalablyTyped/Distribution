@@ -17,7 +17,6 @@ object NormalizationSelector {
   @scala.inline
   def apply(dataID: DataID, node: NormalizationSelectableNode, variables: Variables): NormalizationSelector = {
     val __obj = js.Dynamic.literal(dataID = dataID.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NormalizationSelector]
   }
 }

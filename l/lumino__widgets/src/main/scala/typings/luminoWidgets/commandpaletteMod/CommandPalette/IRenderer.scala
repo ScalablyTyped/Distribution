@@ -46,7 +46,6 @@ object IRenderer {
     renderItem: IItemRenderData => VirtualElement
   ): IRenderer = {
     val __obj = js.Dynamic.literal(renderEmptyMessage = js.Any.fromFunction1(renderEmptyMessage), renderHeader = js.Any.fromFunction1(renderHeader), renderItem = js.Any.fromFunction1(renderItem))
-  
     __obj.asInstanceOf[IRenderer]
   }
 }

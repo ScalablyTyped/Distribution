@@ -15,7 +15,6 @@ object ClientOptions {
   @scala.inline
   def apply(partition: String): ClientOptions = {
     val __obj = js.Dynamic.literal(partition = partition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientOptions]
   }
 }

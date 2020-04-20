@@ -14,7 +14,6 @@ object AnonImage {
   @scala.inline
   def apply(image: DepreciatedJimp, percent: Double): AnonImage = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonImage]
   }
 }

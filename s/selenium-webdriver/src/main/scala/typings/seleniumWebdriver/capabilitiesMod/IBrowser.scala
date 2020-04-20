@@ -24,7 +24,6 @@ object IBrowser {
     SAFARI: String
   ): IBrowser = {
     val __obj = js.Dynamic.literal(CHROME = CHROME.asInstanceOf[js.Any], EDGE = EDGE.asInstanceOf[js.Any], FIREFOX = FIREFOX.asInstanceOf[js.Any], IE = IE.asInstanceOf[js.Any], INTERNET_EXPLORER = INTERNET_EXPLORER.asInstanceOf[js.Any], SAFARI = SAFARI.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBrowser]
   }
 }

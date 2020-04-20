@@ -13,7 +13,6 @@ object TypeofGuardDuty {
   @scala.inline
   def apply(Types: TypeofGuardDuty): TypeofGuardDuty = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofGuardDuty]
   }
 }

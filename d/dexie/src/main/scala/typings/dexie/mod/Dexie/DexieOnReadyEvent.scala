@@ -18,7 +18,6 @@ object DexieOnReadyEvent {
     unsubscribe: js.Function0[_] => Unit
   ): DexieOnReadyEvent = {
     val __obj = js.Dynamic.literal(fire = js.Any.fromFunction0(fire), subscribe = js.Any.fromFunction2(subscribe), unsubscribe = js.Any.fromFunction1(unsubscribe))
-  
     __obj.asInstanceOf[DexieOnReadyEvent]
   }
 }

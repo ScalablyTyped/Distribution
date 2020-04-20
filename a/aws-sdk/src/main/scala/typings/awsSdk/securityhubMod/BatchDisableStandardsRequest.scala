@@ -16,7 +16,6 @@ object BatchDisableStandardsRequest {
   @scala.inline
   def apply(StandardsSubscriptionArns: StandardsSubscriptionArns): BatchDisableStandardsRequest = {
     val __obj = js.Dynamic.literal(StandardsSubscriptionArns = StandardsSubscriptionArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDisableStandardsRequest]
   }
 }

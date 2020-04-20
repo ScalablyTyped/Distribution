@@ -50,12 +50,12 @@ object mod extends js.Object {
       * Whether the HTML document is trusted. If trusted,
       * it can execute Javascript in the iframe sandbox.
       */
-    def trusted(): Boolean = js.native
+    def trusted: Boolean = js.native
     def trusted(value: Boolean): js.Any = js.native
     /**
       * Emitted when the trust state of the document changes.
       */
-    def trustedChanged(): ISignal[this.type, Boolean] = js.native
+    def trustedChanged: ISignal[this.type, Boolean] = js.native
   }
   
   @js.native

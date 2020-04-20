@@ -13,7 +13,6 @@ object AnonFlattenMaps {
   @scala.inline
   def apply(flattenMaps: `true`): AnonFlattenMaps = {
     val __obj = js.Dynamic.literal(flattenMaps = flattenMaps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlattenMaps]
   }
 }

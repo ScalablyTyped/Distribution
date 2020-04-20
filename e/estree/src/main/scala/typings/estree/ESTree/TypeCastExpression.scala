@@ -17,7 +17,6 @@ object TypeCastExpression {
     typeAnnotation: TypeAnnotation
   ): TypeCastExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeCastExpression]
   }
 }

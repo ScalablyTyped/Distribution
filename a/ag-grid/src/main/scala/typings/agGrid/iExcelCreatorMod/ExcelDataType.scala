@@ -15,16 +15,14 @@ trait ExcelDataType extends js.Object
 
 object ExcelDataType {
   @scala.inline
-  def Boolean: typings.agGrid.agGridStrings.Boolean = this.cast("Boolean")
+  def Boolean: typings.agGrid.agGridStrings.Boolean = "Boolean".asInstanceOf[typings.agGrid.agGridStrings.Boolean]
   @scala.inline
-  def DateTime: typings.agGrid.agGridStrings.DateTime = this.cast("DateTime")
+  def DateTime: typings.agGrid.agGridStrings.DateTime = "DateTime".asInstanceOf[typings.agGrid.agGridStrings.DateTime]
   @scala.inline
-  def Error: typings.agGrid.agGridStrings.Error = this.cast("Error")
+  def Error: typings.agGrid.agGridStrings.Error = "Error".asInstanceOf[typings.agGrid.agGridStrings.Error]
   @scala.inline
-  def Number: typings.agGrid.agGridStrings.Number = this.cast("Number")
+  def Number: typings.agGrid.agGridStrings.Number = "Number".asInstanceOf[typings.agGrid.agGridStrings.Number]
   @scala.inline
-  def String: typings.agGrid.agGridStrings.String = this.cast("String")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def String: typings.agGrid.agGridStrings.String = "String".asInstanceOf[typings.agGrid.agGridStrings.String]
 }
 

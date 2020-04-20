@@ -14,7 +14,6 @@ object AnonCancelShortcut {
   @scala.inline
   def apply(Cancel: Boolean, Shortcut: OutlookBarShortcut): AnonCancelShortcut = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Shortcut = Shortcut.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelShortcut]
   }
 }

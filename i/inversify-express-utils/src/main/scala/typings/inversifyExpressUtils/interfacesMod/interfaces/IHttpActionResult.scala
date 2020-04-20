@@ -13,7 +13,6 @@ object IHttpActionResult {
   @scala.inline
   def apply(executeAsync: () => js.Promise[HttpResponseMessage]): IHttpActionResult = {
     val __obj = js.Dynamic.literal(executeAsync = js.Any.fromFunction0(executeAsync))
-  
     __obj.asInstanceOf[IHttpActionResult]
   }
 }

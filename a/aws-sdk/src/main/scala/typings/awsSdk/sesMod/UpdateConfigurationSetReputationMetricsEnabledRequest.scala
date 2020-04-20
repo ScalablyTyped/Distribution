@@ -20,7 +20,6 @@ object UpdateConfigurationSetReputationMetricsEnabledRequest {
   @scala.inline
   def apply(ConfigurationSetName: ConfigurationSetName, Enabled: Enabled): UpdateConfigurationSetReputationMetricsEnabledRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateConfigurationSetReputationMetricsEnabledRequest]
   }
 }

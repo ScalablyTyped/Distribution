@@ -17,7 +17,6 @@ object ILauncherUIOptions {
   @scala.inline
   def apply(invocationPoint: Point, preferredPlacement: Placement, selectionRect: Rect): ILauncherUIOptions = {
     val __obj = js.Dynamic.literal(invocationPoint = invocationPoint.asInstanceOf[js.Any], preferredPlacement = preferredPlacement.asInstanceOf[js.Any], selectionRect = selectionRect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILauncherUIOptions]
   }
 }

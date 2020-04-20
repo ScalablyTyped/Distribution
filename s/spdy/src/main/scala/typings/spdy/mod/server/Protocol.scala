@@ -16,18 +16,16 @@ trait Protocol extends js.Object
 
 object Protocol {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def h2: typings.spdy.spdyStrings.h2 = "h2".asInstanceOf[typings.spdy.spdyStrings.h2]
   @scala.inline
-  def h2: typings.spdy.spdyStrings.h2 = this.cast("h2")
+  def httpSlash1Dot0: typings.spdy.spdyStrings.httpSlash1Dot0 = "http/1.0".asInstanceOf[typings.spdy.spdyStrings.httpSlash1Dot0]
   @scala.inline
-  def httpSlash1Dot0: typings.spdy.spdyStrings.httpSlash1Dot0 = this.cast("http/1.0")
+  def httpSlash1Dot1: typings.spdy.spdyStrings.httpSlash1Dot1 = "http/1.1".asInstanceOf[typings.spdy.spdyStrings.httpSlash1Dot1]
   @scala.inline
-  def httpSlash1Dot1: typings.spdy.spdyStrings.httpSlash1Dot1 = this.cast("http/1.1")
+  def spdySlash2: typings.spdy.spdyStrings.spdySlash2 = "spdy/2".asInstanceOf[typings.spdy.spdyStrings.spdySlash2]
   @scala.inline
-  def spdySlash2: typings.spdy.spdyStrings.spdySlash2 = this.cast("spdy/2")
+  def spdySlash3: typings.spdy.spdyStrings.spdySlash3 = "spdy/3".asInstanceOf[typings.spdy.spdyStrings.spdySlash3]
   @scala.inline
-  def spdySlash3: typings.spdy.spdyStrings.spdySlash3 = this.cast("spdy/3")
-  @scala.inline
-  def spdySlash3Dot1: typings.spdy.spdyStrings.spdySlash3Dot1 = this.cast("spdy/3.1")
+  def spdySlash3Dot1: typings.spdy.spdyStrings.spdySlash3Dot1 = "spdy/3.1".asInstanceOf[typings.spdy.spdyStrings.spdySlash3Dot1]
 }
 

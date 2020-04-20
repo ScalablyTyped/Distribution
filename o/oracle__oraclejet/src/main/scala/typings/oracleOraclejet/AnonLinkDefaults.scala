@@ -22,7 +22,6 @@ object AnonLinkDefaults {
     viewport: AnonH
   ): AnonLinkDefaults = {
     val __obj = js.Dynamic.literal(linkDefaults = linkDefaults.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], nodeDefaults = nodeDefaults.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLinkDefaults]
   }
 }

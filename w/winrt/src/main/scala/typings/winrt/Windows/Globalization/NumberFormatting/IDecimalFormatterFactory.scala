@@ -13,7 +13,6 @@ object IDecimalFormatterFactory {
   @scala.inline
   def apply(createDecimalFormatter: (IIterable[String], String) => DecimalFormatter): IDecimalFormatterFactory = {
     val __obj = js.Dynamic.literal(createDecimalFormatter = js.Any.fromFunction2(createDecimalFormatter))
-  
     __obj.asInstanceOf[IDecimalFormatterFactory]
   }
 }

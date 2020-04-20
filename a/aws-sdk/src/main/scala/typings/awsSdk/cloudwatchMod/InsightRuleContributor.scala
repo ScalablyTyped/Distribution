@@ -28,7 +28,6 @@ object InsightRuleContributor {
     Keys: InsightRuleContributorKeys
   ): InsightRuleContributor = {
     val __obj = js.Dynamic.literal(ApproximateAggregateValue = ApproximateAggregateValue.asInstanceOf[js.Any], Datapoints = Datapoints.asInstanceOf[js.Any], Keys = Keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightRuleContributor]
   }
 }

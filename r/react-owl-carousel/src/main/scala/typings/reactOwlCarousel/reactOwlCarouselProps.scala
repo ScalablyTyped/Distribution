@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactOwlCarouselProps {
   @scala.inline
-  def ReactOwlCarouselProps: OwlCarouselProps.type = typings.reactOwlCarousel.mod.OwlCarouselProps
+  def ReactOwlCarouselProps: OwlCarouselProps.type = OwlCarouselProps
   type ReactOwlCarouselProps = OwlCarouselProps
 }
 

@@ -14,13 +14,11 @@ object NavigationalProps {
   @scala.inline
   def AnonTo(to: Path): NavigationalProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigationalProps]
   }
   @scala.inline
   def AnonHref(href: Path): NavigationalProps = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigationalProps]
   }
 }

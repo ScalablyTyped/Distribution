@@ -24,7 +24,6 @@ object AnonDisplayPosition {
     NavigationPosition: js.Array[AnonLongitude]
   ): AnonDisplayPosition = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], DisplayPosition = DisplayPosition.asInstanceOf[js.Any], LocationId = LocationId.asInstanceOf[js.Any], LocationType = LocationType.asInstanceOf[js.Any], MapView = MapView.asInstanceOf[js.Any], NavigationPosition = NavigationPosition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisplayPosition]
   }
 }

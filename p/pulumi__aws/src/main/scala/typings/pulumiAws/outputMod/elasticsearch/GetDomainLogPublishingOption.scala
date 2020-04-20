@@ -24,7 +24,6 @@ object GetDomainLogPublishingOption {
   @scala.inline
   def apply(cloudwatchLogGroupArn: String, enabled: Boolean, logType: String): GetDomainLogPublishingOption = {
     val __obj = js.Dynamic.literal(cloudwatchLogGroupArn = cloudwatchLogGroupArn.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], logType = logType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainLogPublishingOption]
   }
 }

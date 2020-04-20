@@ -31,7 +31,6 @@ object IMidiOutPort {
     sendMessage: IMidiMessage => Unit
   ): IMidiOutPort = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), deviceId = deviceId.asInstanceOf[js.Any], sendBuffer = js.Any.fromFunction1(sendBuffer), sendMessage = js.Any.fromFunction1(sendMessage))
-  
     __obj.asInstanceOf[IMidiOutPort]
   }
 }

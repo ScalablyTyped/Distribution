@@ -12,10 +12,8 @@ trait StackCardMode extends js.Object
 
 object StackCardMode {
   @scala.inline
-  def card: typings.reactNavigationStack.reactNavigationStackStrings.card = this.cast("card")
+  def card: typings.reactNavigationStack.reactNavigationStackStrings.card = "card".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.card]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def modal: typings.reactNavigationStack.reactNavigationStackStrings.modal = this.cast("modal")
+  def modal: typings.reactNavigationStack.reactNavigationStackStrings.modal = "modal".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.modal]
 }
 

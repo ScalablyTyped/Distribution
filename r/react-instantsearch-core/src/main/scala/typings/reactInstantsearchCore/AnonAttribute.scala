@@ -24,7 +24,6 @@ object AnonAttribute {
     value: /* searchState */ SearchState => SearchState
   ): AnonAttribute = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = js.Any.fromFunction1(value))
-  
     __obj.asInstanceOf[AnonAttribute]
   }
 }

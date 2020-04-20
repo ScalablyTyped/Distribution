@@ -23,7 +23,6 @@ object Bcc {
     toJSON: () => AnonEmail
   ): Bcc = {
     val __obj = js.Dynamic.literal(getEmail = js.Any.fromFunction0(getEmail), getEnable = js.Any.fromFunction0(getEnable), setEmail = js.Any.fromFunction1(setEmail), setEnable = js.Any.fromFunction1(setEnable), toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[Bcc]
   }
 }

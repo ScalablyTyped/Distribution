@@ -13,7 +13,6 @@ object TypeofStepFunctions {
   @scala.inline
   def apply(Types: TypeofStepFunctions): TypeofStepFunctions = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofStepFunctions]
   }
 }

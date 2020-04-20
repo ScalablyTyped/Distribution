@@ -54,7 +54,6 @@ object Options {
     minValue: js.Array[Double]
   ): Options = {
     val __obj = js.Dynamic.literal(damping = damping.asInstanceOf[js.Any], errorTolerance = errorTolerance.asInstanceOf[js.Any], gradientDifference = gradientDifference.asInstanceOf[js.Any], initialValues = initialValues.asInstanceOf[js.Any], maxIterations = maxIterations.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

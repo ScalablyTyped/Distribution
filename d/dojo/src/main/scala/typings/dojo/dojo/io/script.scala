@@ -47,7 +47,6 @@ object script {
     remove: (js.Any, js.Any) => Unit
   ): script = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction3(attach), get = js.Any.fromFunction1(get), remove = js.Any.fromFunction2(remove))
-  
     __obj.asInstanceOf[script]
   }
 }

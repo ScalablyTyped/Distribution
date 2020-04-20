@@ -14,7 +14,6 @@ object AnonName {
   @scala.inline
   def apply(name: String, passwordField: String, usernameField: String): AnonName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], passwordField = passwordField.asInstanceOf[js.Any], usernameField = usernameField.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonName]
   }
 }

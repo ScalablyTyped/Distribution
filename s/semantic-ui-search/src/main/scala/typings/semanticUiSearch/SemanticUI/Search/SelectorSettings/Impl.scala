@@ -31,7 +31,6 @@ object Impl {
   @scala.inline
   def apply(category: String, prompt: String, result: String, results: String, searchButton: String): Impl = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], searchButton = searchButton.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

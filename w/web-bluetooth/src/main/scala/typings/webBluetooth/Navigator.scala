@@ -12,7 +12,6 @@ object Navigator {
   @scala.inline
   def apply(bluetooth: Bluetooth): Navigator = {
     val __obj = js.Dynamic.literal(bluetooth = bluetooth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Navigator]
   }
 }

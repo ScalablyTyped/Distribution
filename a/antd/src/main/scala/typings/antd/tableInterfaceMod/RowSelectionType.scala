@@ -12,10 +12,8 @@ trait RowSelectionType extends js.Object
 
 object RowSelectionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkbox: typings.antd.antdStrings.checkbox = "checkbox".asInstanceOf[typings.antd.antdStrings.checkbox]
   @scala.inline
-  def checkbox: typings.antd.antdStrings.checkbox = this.cast("checkbox")
-  @scala.inline
-  def radio: typings.antd.antdStrings.radio = this.cast("radio")
+  def radio: typings.antd.antdStrings.radio = "radio".asInstanceOf[typings.antd.antdStrings.radio]
 }
 

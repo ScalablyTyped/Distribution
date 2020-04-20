@@ -1,6 +1,6 @@
 package typings.baseui.menuMod
 
-import typings.baseui.AnonItem
+import typings.baseui.AnonEventItem
 import typings.baseui.baseuiStrings.click
 import typings.baseui.baseuiStrings.focus
 import typings.baseui.baseuiStrings.mouseEnter
@@ -40,7 +40,7 @@ object StatefulContainerProps {
     getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => RenderItemProps = null,
     initialState: StatefulContainerState = null,
     onActiveDescendantChange: /* id */ js.UndefOr[String] => Unit = null,
-    onItemSelect: /* args */ AnonItem => js.Any = null,
+    onItemSelect: /* args */ AnonEventItem => js.Any = null,
     removeMenuFromNesting: /* ref */ Ref[HTMLElement] => Unit = null,
     rootRef: Ref[_] = null,
     stateReducer: (/* changeType */ moveDown | moveUp | reset | click | focus | mouseEnter, /* changes */ StatefulContainerState, /* currentState */ StatefulContainerState) => StatefulContainerState = null

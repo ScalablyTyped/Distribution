@@ -13,7 +13,6 @@ object IExtraLib {
   @scala.inline
   def apply(content: String, version: Double): IExtraLib = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IExtraLib]
   }
 }

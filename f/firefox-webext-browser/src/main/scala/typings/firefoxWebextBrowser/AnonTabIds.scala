@@ -15,7 +15,6 @@ object AnonTabIds {
   @scala.inline
   def apply(tabIds: js.Array[Double], windowId: Double): AnonTabIds = {
     val __obj = js.Dynamic.literal(tabIds = tabIds.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTabIds]
   }
 }

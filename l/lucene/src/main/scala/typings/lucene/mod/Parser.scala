@@ -13,7 +13,6 @@ object Parser {
   @scala.inline
   def apply(escape: String => String, unescape: String => String): Parser = {
     val __obj = js.Dynamic.literal(escape = js.Any.fromFunction1(escape), unescape = js.Any.fromFunction1(unescape))
-  
     __obj.asInstanceOf[Parser]
   }
 }

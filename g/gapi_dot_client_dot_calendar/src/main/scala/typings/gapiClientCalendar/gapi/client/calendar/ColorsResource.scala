@@ -15,7 +15,6 @@ object ColorsResource {
   @scala.inline
   def apply(get: AnonPrettyPrint => Request_[Colors]): ColorsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[ColorsResource]
   }
 }

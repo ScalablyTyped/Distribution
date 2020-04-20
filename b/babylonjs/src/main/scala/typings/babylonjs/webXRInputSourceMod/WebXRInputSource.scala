@@ -81,7 +81,7 @@ class WebXRInputSource protected () extends js.Object {
   /**
     * Get this controllers unique id
     */
-  def uniqueId(): String = js.native
+  def uniqueId: String = js.native
   /**
     * Updates the controller pose based on the given XRFrame
     * @param xrFrame xr frame to update the pose with

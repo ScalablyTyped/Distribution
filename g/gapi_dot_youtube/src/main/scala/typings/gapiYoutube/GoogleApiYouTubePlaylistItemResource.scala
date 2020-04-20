@@ -42,7 +42,6 @@ object GoogleApiYouTubePlaylistItemResource {
     status: AnonPrivacyStatus
   ): GoogleApiYouTubePlaylistItemResource = {
     val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleApiYouTubePlaylistItemResource]
   }
 }

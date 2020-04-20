@@ -40,7 +40,7 @@ trait WebviewPanel extends js.Object {
   		 */
   val visible: Boolean = js.native
   /**
-  		 * Webview belonging to the panel.
+  		 * [`Webview`](#Webview) belonging to the panel.
   		 */
   val webview: Webview = js.native
   /**

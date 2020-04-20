@@ -24,7 +24,6 @@ object EvaluateExpressionInput {
   @scala.inline
   def apply(expression: longString, objectId: id, pipelineId: id): EvaluateExpressionInput = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], pipelineId = pipelineId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EvaluateExpressionInput]
   }
 }

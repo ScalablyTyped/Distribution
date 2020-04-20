@@ -14,14 +14,12 @@ trait StrokeLinecap extends js.Object
 
 object StrokeLinecap {
   @scala.inline
-  def butt: typings.reactBytesizeIcons.reactBytesizeIconsStrings.butt = this.cast("butt")
+  def butt: typings.reactBytesizeIcons.reactBytesizeIconsStrings.butt = "butt".asInstanceOf[typings.reactBytesizeIcons.reactBytesizeIconsStrings.butt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.reactBytesizeIcons.reactBytesizeIconsStrings.inherit = "inherit".asInstanceOf[typings.reactBytesizeIcons.reactBytesizeIconsStrings.inherit]
   @scala.inline
-  def inherit: typings.reactBytesizeIcons.reactBytesizeIconsStrings.inherit = this.cast("inherit")
+  def round: typings.reactBytesizeIcons.reactBytesizeIconsStrings.round = "round".asInstanceOf[typings.reactBytesizeIcons.reactBytesizeIconsStrings.round]
   @scala.inline
-  def round: typings.reactBytesizeIcons.reactBytesizeIconsStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.reactBytesizeIcons.reactBytesizeIconsStrings.square = this.cast("square")
+  def square: typings.reactBytesizeIcons.reactBytesizeIconsStrings.square = "square".asInstanceOf[typings.reactBytesizeIcons.reactBytesizeIconsStrings.square]
 }
 

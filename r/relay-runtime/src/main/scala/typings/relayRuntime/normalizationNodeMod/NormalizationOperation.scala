@@ -21,7 +21,6 @@ object NormalizationOperation {
     selections: js.Array[NormalizationSelection]
   ): NormalizationOperation = {
     val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NormalizationOperation]
   }
 }

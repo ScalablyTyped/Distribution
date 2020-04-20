@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/axes/timeAxis", JSImport.Namespace)
 @js.native
 object timeAxisMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableStrings.center
+    - typings.plottable.plottableStrings.between
+  */
+  trait TierLabelPosition extends js.Object
+  
   @js.native
   class Time protected () extends Axis[Date] {
     /**
@@ -93,6 +99,7 @@ object timeAxisMod extends js.Object {
       * @returns {Axes.Time} The calling Time Axis.
       */
     def maxTimeIntervalPrecision(newPrecision: TimeInterval): this.type = js.native
+    def orientation(orientation: TimeAxisOrientation): this.type = js.native
     /**
       * Gets the label positions for each tier.
       */
@@ -105,6 +112,12 @@ object timeAxisMod extends js.Object {
       */
     def tierLabelPositions(newPositions: js.Array[TierLabelPosition]): this.type = js.native
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableStrings.top
+    - typings.plottable.plottableStrings.bottom
+  */
+  trait TimeAxisOrientation extends js.Object
   
   @js.native
   trait TimeAxisTierConfiguration extends js.Object {
@@ -128,6 +141,17 @@ object timeAxisMod extends js.Object {
       */
     def formatter(value: js.Any): String = js.native
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableStrings.second
+    - typings.plottable.plottableStrings.minute
+    - typings.plottable.plottableStrings.hour
+    - typings.plottable.plottableStrings.day
+    - typings.plottable.plottableStrings.week
+    - typings.plottable.plottableStrings.month
+    - typings.plottable.plottableStrings.year
+  */
+  trait TimeInterval extends js.Object
   
   @js.native
   object TierLabelPosition extends js.Object {
@@ -164,9 +188,6 @@ object timeAxisMod extends js.Object {
     var year: typings.plottable.plottableStrings.year = js.native
   }
   
-  type TierLabelPosition = String
   type TimeAxisConfiguration = js.Array[TimeAxisTierConfiguration]
-  type TimeAxisOrientation = String
-  type TimeInterval = String
 }
 

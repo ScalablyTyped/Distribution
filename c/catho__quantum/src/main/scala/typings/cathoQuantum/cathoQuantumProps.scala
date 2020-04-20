@@ -23,10 +23,10 @@ trait cathoQuantumProps {
   def ButtonProps: typings.cathoQuantum.buttonMod.ButtonProps.type = typings.cathoQuantum.buttonMod.ButtonProps
   type ButtonProps = typings.cathoQuantum.buttonMod.ButtonProps
   @scala.inline
-  def ButtonIconProps: IconButtonProps.type = typings.cathoQuantum.iconButtonMod.IconButtonProps
+  def ButtonIconProps: IconButtonProps.type = IconButtonProps
   type ButtonIconProps = IconButtonProps
   @scala.inline
-  def CardProps: Props.type = typings.cathoQuantum.cardMod.Props
+  def CardProps: Props.type = Props
   type CardProps = Props
   type CardContentProps[P] = ComponentType[P]
   type CardDescriptionProps[P] = ComponentType[P]
@@ -43,7 +43,7 @@ trait cathoQuantumProps {
   def CheckboxGroupProps: typings.cathoQuantum.checkboxMod.CheckboxGroupProps.type = typings.cathoQuantum.checkboxMod.CheckboxGroupProps
   type CheckboxGroupProps = typings.cathoQuantum.checkboxMod.CheckboxGroupProps
   @scala.inline
-  def CheckboxGroupButtonProps: CheckboxButtonProps.type = typings.cathoQuantum.checkboxMod.CheckboxButtonProps
+  def CheckboxGroupButtonProps: CheckboxButtonProps.type = CheckboxButtonProps
   type CheckboxGroupButtonProps = CheckboxButtonProps
   @scala.inline
   def CheckboxGroupCheckboxProps: typings.cathoQuantum.checkboxMod.CheckboxProps.type = typings.cathoQuantum.checkboxMod.CheckboxProps
@@ -79,11 +79,11 @@ trait cathoQuantumProps {
   def ModalProps: typings.cathoQuantum.modalMod.ModalProps.type = typings.cathoQuantum.modalMod.ModalProps
   type ModalProps = typings.cathoQuantum.modalMod.ModalProps
   @scala.inline
-  def ModalContentProps: StaticProps.type = typings.cathoQuantum.modalMod.StaticProps
+  def ModalContentProps: StaticProps.type = StaticProps
   type ModalContentProps = StaticProps
   type ModalFooterProps[P] = ComponentType[P]
   @scala.inline
-  def ModalHeaderProps: StaticProps.type = typings.cathoQuantum.modalMod.StaticProps
+  def ModalHeaderProps: StaticProps.type = StaticProps
   type ModalHeaderProps = StaticProps
   type ModalHeaderTextProps[P] = ComponentType[P]
   @scala.inline

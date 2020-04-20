@@ -1,6 +1,7 @@
 package typings.pProps
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.pProps.pPropsStrings.^
 import typings.std.Map
 import scala.scalajs.js
@@ -13,21 +14,24 @@ object mod extends js.Object {
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^  with js.Any
-  ] = js.native
-  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: Mapper[PromiseResult[ValueType], String, MappedValueType]): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof InputType ]: MappedValueType}
-    */ ^  with js.Any
+    */ ^  with TopLevel[js.Any]
   ] = js.native
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
-    mapper: Mapper[PromiseResult[ValueType], String, MappedValueType],
+    mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType]
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof InputType ]: MappedValueType}
+    */ ^  with TopLevel[js.Any]
+  ] = js.native
+  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
+    map: InputType,
+    mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType],
     options: Options
   ): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^  with js.Any
+    */ ^  with TopLevel[js.Any]
   ] = js.native
   /**
   Like [`Promise.all()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) but for `Map` and `Object`.

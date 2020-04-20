@@ -13,7 +13,6 @@ object IDefaultAudioDeviceChangedEventArgs {
   @scala.inline
   def apply(id: String, role: AudioDeviceRole): IDefaultAudioDeviceChangedEventArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDefaultAudioDeviceChangedEventArgs]
   }
 }

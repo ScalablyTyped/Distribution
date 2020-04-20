@@ -20,7 +20,6 @@ object StopStackSetOperationInput {
   @scala.inline
   def apply(OperationId: ClientRequestToken, StackSetName: StackSetName): StopStackSetOperationInput = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopStackSetOperationInput]
   }
 }

@@ -16,7 +16,6 @@ object GetEventSelectorsRequest {
   @scala.inline
   def apply(TrailName: String): GetEventSelectorsRequest = {
     val __obj = js.Dynamic.literal(TrailName = TrailName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEventSelectorsRequest]
   }
 }

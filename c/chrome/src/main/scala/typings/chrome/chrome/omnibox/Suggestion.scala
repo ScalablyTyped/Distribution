@@ -13,7 +13,6 @@ object Suggestion {
   @scala.inline
   def apply(description: String): Suggestion = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Suggestion]
   }
 }

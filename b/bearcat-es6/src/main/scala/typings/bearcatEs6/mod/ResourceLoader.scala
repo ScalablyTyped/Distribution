@@ -41,7 +41,6 @@ object ResourceLoader {
     loadPaths: String
   ): ResourceLoader = {
     val __obj = js.Dynamic.literal(addLoadPath = js.Any.fromFunction1(addLoadPath), getConfigLoader = js.Any.fromFunction0(getConfigLoader), load = js.Any.fromFunction1(load), loadPathMap = loadPathMap.asInstanceOf[js.Any], loadPaths = loadPaths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceLoader]
   }
 }

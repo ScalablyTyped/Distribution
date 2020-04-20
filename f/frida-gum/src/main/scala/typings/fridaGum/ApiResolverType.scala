@@ -12,10 +12,8 @@ trait ApiResolverType extends js.Object
 
 object ApiResolverType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def module: typings.fridaGum.fridaGumStrings.module = "module".asInstanceOf[typings.fridaGum.fridaGumStrings.module]
   @scala.inline
-  def module: typings.fridaGum.fridaGumStrings.module = this.cast("module")
-  @scala.inline
-  def objc: typings.fridaGum.fridaGumStrings.objc = this.cast("objc")
+  def objc: typings.fridaGum.fridaGumStrings.objc = "objc".asInstanceOf[typings.fridaGum.fridaGumStrings.objc]
 }
 

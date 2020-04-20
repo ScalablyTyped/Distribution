@@ -35,7 +35,6 @@ object optionsObjectpathStrOrReg {
     propertyIsEnumerable: PropertyKey => Boolean
   ): optionsObjectpathStrOrReg = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[optionsObjectpathStrOrReg]
   }
 }

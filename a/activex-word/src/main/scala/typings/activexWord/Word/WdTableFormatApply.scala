@@ -28,24 +28,22 @@ trait WdTableFormatApply extends js.Object
 
 object WdTableFormatApply {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTableFormatApplyAutoFit: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdTableFormatApplyAutoFit: `16` = this.cast(16)
+  def wdTableFormatApplyBorders: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdTableFormatApplyBorders: `1` = this.cast(1)
+  def wdTableFormatApplyColor: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdTableFormatApplyColor: `8` = this.cast(8)
+  def wdTableFormatApplyFirstColumn: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def wdTableFormatApplyFirstColumn: `128` = this.cast(128)
+  def wdTableFormatApplyFont: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdTableFormatApplyFont: `4` = this.cast(4)
+  def wdTableFormatApplyHeadingRows: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def wdTableFormatApplyHeadingRows: `32` = this.cast(32)
+  def wdTableFormatApplyLastColumn: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def wdTableFormatApplyLastColumn: `256` = this.cast(256)
+  def wdTableFormatApplyLastRow: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def wdTableFormatApplyLastRow: `64` = this.cast(64)
-  @scala.inline
-  def wdTableFormatApplyShading: `2` = this.cast(2)
+  def wdTableFormatApplyShading: `2` = 2.asInstanceOf[`2`]
 }
 

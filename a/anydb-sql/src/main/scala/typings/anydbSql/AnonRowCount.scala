@@ -13,7 +13,6 @@ object AnonRowCount {
   @scala.inline
   def apply[T](rowCount: Double, rows: js.Array[T]): AnonRowCount[T] = {
     val __obj = js.Dynamic.literal(rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRowCount[T]]
   }
 }

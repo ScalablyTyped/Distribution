@@ -35,7 +35,6 @@ object SinonArrayMatcher {
     test: js.Any => Boolean
   ): SinonArrayMatcher = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), contains = js.Any.fromFunction1(contains), deepEquals = js.Any.fromFunction1(deepEquals), endsWith = js.Any.fromFunction1(endsWith), or = js.Any.fromFunction1(or), startsWith = js.Any.fromFunction1(startsWith), test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[SinonArrayMatcher]
   }
 }

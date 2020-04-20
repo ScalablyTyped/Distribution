@@ -19,7 +19,6 @@ object RootCategoriesResource {
     list: AnonFields => Request_[GooglePrivacyDlpV2beta1ListRootCategoriesResponse]
   ): RootCategoriesResource = {
     val __obj = js.Dynamic.literal(infoTypes = infoTypes.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[RootCategoriesResource]
   }
 }

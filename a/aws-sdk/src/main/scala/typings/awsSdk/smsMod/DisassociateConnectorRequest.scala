@@ -16,7 +16,6 @@ object DisassociateConnectorRequest {
   @scala.inline
   def apply(connectorId: ConnectorId): DisassociateConnectorRequest = {
     val __obj = js.Dynamic.literal(connectorId = connectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateConnectorRequest]
   }
 }

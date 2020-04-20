@@ -13,7 +13,6 @@ object AnonMaxAge {
   @scala.inline
   def apply(maxAge: Double, sizeThreshold: Double): AnonMaxAge = {
     val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any], sizeThreshold = sizeThreshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaxAge]
   }
 }

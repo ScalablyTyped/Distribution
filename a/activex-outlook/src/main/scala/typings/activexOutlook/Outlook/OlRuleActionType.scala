@@ -72,68 +72,66 @@ trait OlRuleActionType extends js.Object
 
 object OlRuleActionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olRuleActionAssignToCategory: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olRuleActionAssignToCategory: `2` = this.cast(2)
+  def olRuleActionCcMessage: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def olRuleActionCcMessage: `27` = this.cast(27)
+  def olRuleActionClearCategories: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def olRuleActionClearCategories: `30` = this.cast(30)
+  def olRuleActionCopyToFolder: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olRuleActionCopyToFolder: `5` = this.cast(5)
+  def olRuleActionCustomAction: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def olRuleActionCustomAction: `22` = this.cast(22)
+  def olRuleActionDefer: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def olRuleActionDefer: `28` = this.cast(28)
+  def olRuleActionDelete: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olRuleActionDelete: `3` = this.cast(3)
+  def olRuleActionDeletePermanently: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olRuleActionDeletePermanently: `4` = this.cast(4)
+  def olRuleActionDesktopAlert: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def olRuleActionDesktopAlert: `24` = this.cast(24)
+  def olRuleActionFlagClear: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def olRuleActionFlagClear: `13` = this.cast(13)
+  def olRuleActionFlagColor: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def olRuleActionFlagColor: `12` = this.cast(12)
+  def olRuleActionFlagForActionInDays: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def olRuleActionFlagForActionInDays: `11` = this.cast(11)
+  def olRuleActionForward: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olRuleActionForward: `6` = this.cast(6)
+  def olRuleActionForwardAsAttachment: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olRuleActionForwardAsAttachment: `7` = this.cast(7)
+  def olRuleActionImportance: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def olRuleActionImportance: `14` = this.cast(14)
+  def olRuleActionMarkAsTask: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def olRuleActionMarkAsTask: `29` = this.cast(29)
+  def olRuleActionMarkRead: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def olRuleActionMarkRead: `19` = this.cast(19)
+  def olRuleActionMoveToFolder: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olRuleActionMoveToFolder: `1` = this.cast(1)
+  def olRuleActionNewItemAlert: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def olRuleActionNewItemAlert: `23` = this.cast(23)
+  def olRuleActionNotifyDelivery: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def olRuleActionNotifyDelivery: `26` = this.cast(26)
+  def olRuleActionNotifyRead: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def olRuleActionNotifyRead: `25` = this.cast(25)
+  def olRuleActionPlaySound: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def olRuleActionPlaySound: `17` = this.cast(17)
+  def olRuleActionPrint: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def olRuleActionPrint: `16` = this.cast(16)
+  def olRuleActionRedirect: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olRuleActionRedirect: `8` = this.cast(8)
+  def olRuleActionRunScript: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def olRuleActionRunScript: `20` = this.cast(20)
+  def olRuleActionSensitivity: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def olRuleActionSensitivity: `15` = this.cast(15)
+  def olRuleActionServerReply: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def olRuleActionServerReply: `9` = this.cast(9)
+  def olRuleActionStartApplication: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def olRuleActionStartApplication: `18` = this.cast(18)
+  def olRuleActionStop: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def olRuleActionStop: `21` = this.cast(21)
+  def olRuleActionTemplate: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def olRuleActionTemplate: `10` = this.cast(10)
-  @scala.inline
-  def olRuleActionUnknown: `0` = this.cast(0)
+  def olRuleActionUnknown: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -12,10 +12,8 @@ trait CSVFieldType extends js.Object
 
 object CSVFieldType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def number: typings.reactBootstrapTable.reactBootstrapTableStrings.number = "number".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.number]
   @scala.inline
-  def number: typings.reactBootstrapTable.reactBootstrapTableStrings.number = this.cast("number")
-  @scala.inline
-  def string: typings.reactBootstrapTable.reactBootstrapTableStrings.string = this.cast("string")
+  def string: typings.reactBootstrapTable.reactBootstrapTableStrings.string = "string".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.string]
 }
 

@@ -13,7 +13,6 @@ object CanvasState {
   @scala.inline
   def apply(restore: () => Unit, save: () => Unit): CanvasState = {
     val __obj = js.Dynamic.literal(restore = js.Any.fromFunction0(restore), save = js.Any.fromFunction0(save))
-  
     __obj.asInstanceOf[CanvasState]
   }
 }

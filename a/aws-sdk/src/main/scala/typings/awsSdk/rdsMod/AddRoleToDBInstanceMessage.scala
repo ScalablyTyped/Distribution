@@ -24,7 +24,6 @@ object AddRoleToDBInstanceMessage {
   @scala.inline
   def apply(DBInstanceIdentifier: String, FeatureName: String, RoleArn: String): AddRoleToDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any], FeatureName = FeatureName.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddRoleToDBInstanceMessage]
   }
 }

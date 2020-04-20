@@ -14,14 +14,12 @@ trait ConsistencyLevel extends js.Object
 
 object ConsistencyLevel {
   @scala.inline
-  def BoundedStaleness: typings.documentdb.documentdbStrings.BoundedStaleness = this.cast("BoundedStaleness")
+  def BoundedStaleness: typings.documentdb.documentdbStrings.BoundedStaleness = "BoundedStaleness".asInstanceOf[typings.documentdb.documentdbStrings.BoundedStaleness]
   @scala.inline
-  def Eventual: typings.documentdb.documentdbStrings.Eventual = this.cast("Eventual")
+  def Eventual: typings.documentdb.documentdbStrings.Eventual = "Eventual".asInstanceOf[typings.documentdb.documentdbStrings.Eventual]
   @scala.inline
-  def Session: typings.documentdb.documentdbStrings.Session = this.cast("Session")
+  def Session: typings.documentdb.documentdbStrings.Session = "Session".asInstanceOf[typings.documentdb.documentdbStrings.Session]
   @scala.inline
-  def Strong: typings.documentdb.documentdbStrings.Strong = this.cast("Strong")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Strong: typings.documentdb.documentdbStrings.Strong = "Strong".asInstanceOf[typings.documentdb.documentdbStrings.Strong]
 }
 

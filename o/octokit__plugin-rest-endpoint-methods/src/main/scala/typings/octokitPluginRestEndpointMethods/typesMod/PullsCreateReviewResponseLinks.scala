@@ -13,7 +13,6 @@ object PullsCreateReviewResponseLinks {
   @scala.inline
   def apply(html: PullsCreateReviewResponseLinksHtml, pull_request: PullsCreateReviewResponseLinksPullRequest): PullsCreateReviewResponseLinks = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], pull_request = pull_request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsCreateReviewResponseLinks]
   }
 }

@@ -15,7 +15,6 @@ object DetailGridInfo {
   @scala.inline
   def apply(api: GridApi, columnApi: ColumnApi, id: String): DetailGridInfo = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetailGridInfo]
   }
 }

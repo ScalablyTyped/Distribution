@@ -20,7 +20,6 @@ object Identity {
   @scala.inline
   def apply(SourceIp: string, UserAgent: string): Identity = {
     val __obj = js.Dynamic.literal(SourceIp = SourceIp.asInstanceOf[js.Any], UserAgent = UserAgent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Identity]
   }
 }

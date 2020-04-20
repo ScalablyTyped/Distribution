@@ -25,7 +25,6 @@ object FreeBusy_ {
     timeMin: datetime
   ): FreeBusy_ = {
     val __obj = js.Dynamic.literal(calendars = js.Any.fromFunction1(calendars), groups = js.Any.fromFunction1(groups), kind = kind.asInstanceOf[js.Any], timeMax = timeMax.asInstanceOf[js.Any], timeMin = timeMin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FreeBusy_]
   }
 }

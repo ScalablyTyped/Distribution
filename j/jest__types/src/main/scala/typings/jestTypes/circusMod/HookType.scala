@@ -14,14 +14,12 @@ trait HookType extends js.Object
 
 object HookType {
   @scala.inline
-  def afterAll: typings.jestTypes.jestTypesStrings.afterAll = this.cast("afterAll")
+  def afterAll: typings.jestTypes.jestTypesStrings.afterAll = "afterAll".asInstanceOf[typings.jestTypes.jestTypesStrings.afterAll]
   @scala.inline
-  def afterEach: typings.jestTypes.jestTypesStrings.afterEach = this.cast("afterEach")
+  def afterEach: typings.jestTypes.jestTypesStrings.afterEach = "afterEach".asInstanceOf[typings.jestTypes.jestTypesStrings.afterEach]
   @scala.inline
-  def beforeAll: typings.jestTypes.jestTypesStrings.beforeAll = this.cast("beforeAll")
+  def beforeAll: typings.jestTypes.jestTypesStrings.beforeAll = "beforeAll".asInstanceOf[typings.jestTypes.jestTypesStrings.beforeAll]
   @scala.inline
-  def beforeEach: typings.jestTypes.jestTypesStrings.beforeEach = this.cast("beforeEach")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def beforeEach: typings.jestTypes.jestTypesStrings.beforeEach = "beforeEach".asInstanceOf[typings.jestTypes.jestTypesStrings.beforeEach]
 }
 

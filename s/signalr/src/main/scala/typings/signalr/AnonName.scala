@@ -13,7 +13,6 @@ object AnonName {
   @scala.inline
   def apply(name: String, supportsKeepAlive: () => Boolean): AnonName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], supportsKeepAlive = js.Any.fromFunction0(supportsKeepAlive))
-  
     __obj.asInstanceOf[AnonName]
   }
 }

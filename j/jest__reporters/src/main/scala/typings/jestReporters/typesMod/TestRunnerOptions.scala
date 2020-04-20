@@ -12,7 +12,6 @@ object TestRunnerOptions {
   @scala.inline
   def apply(serial: Boolean): TestRunnerOptions = {
     val __obj = js.Dynamic.literal(serial = serial.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestRunnerOptions]
   }
 }

@@ -13,7 +13,6 @@ object ProxyInstance {
   @scala.inline
   def apply(handle: NativePointer): ProxyInstance = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProxyInstance]
   }
 }

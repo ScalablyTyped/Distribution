@@ -14,7 +14,6 @@ object AnonClose {
   @scala.inline
   def apply(close: () => Unit, pause: () => Unit, resume: () => Unit): AnonClose = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume))
-  
     __obj.asInstanceOf[AnonClose]
   }
 }

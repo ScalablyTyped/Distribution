@@ -13,12 +13,10 @@ trait NavigationErrorType extends js.Object
 
 object NavigationErrorType {
   @scala.inline
-  def NOCURRENTSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOCURRENTSHEET = this.cast("NOCURRENTSHEET")
+  def NOCURRENTSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOCURRENTSHEET = "NOCURRENTSHEET".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOCURRENTSHEET]
   @scala.inline
-  def NOSUCHSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET = this.cast("NOSUCHSHEET")
+  def NOSUCHSHEET: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET = "NOSUCHSHEET".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSHEET]
   @scala.inline
-  def NOSUCHSTORY: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY = this.cast("NOSUCHSTORY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NOSUCHSTORY: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY = "NOSUCHSTORY".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.NOSUCHSTORY]
 }
 

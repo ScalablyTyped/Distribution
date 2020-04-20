@@ -18,8 +18,10 @@ import scala.scalajs.js.annotation._
 
 trait withDragAndDropProps[TEvent /* <: js.Object */] extends js.Object {
   var components: js.UndefOr[Components_[TEvent]] = js.undefined
-  var dragFromOutsideItem: js.UndefOr[js.Function0[String | (js.Function1[/* event */ TEvent, Date])]] = js.undefined
-  var draggableAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
+  var dragFromOutsideItem: js.UndefOr[
+    js.Function0[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])]
+  ] = js.undefined
+  var draggableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
   var elementProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
   var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[Element], Unit]] = js.undefined
   var onDragStart: js.UndefOr[js.Function1[/* args */ AnonDirection[TEvent], Unit]] = js.undefined
@@ -27,7 +29,7 @@ trait withDragAndDropProps[TEvent /* <: js.Object */] extends js.Object {
   var onEventDrop: js.UndefOr[js.Function1[/* args */ AnonAllDay[TEvent], Unit]] = js.undefined
   var onEventResize: js.UndefOr[js.Function1[/* args */ AnonAllDay[TEvent], Unit]] = js.undefined
   var resizable: js.UndefOr[Boolean] = js.undefined
-  var resizableAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
+  var resizableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
   var selectable: js.UndefOr[`true` | `false` | ignoreEvents] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
 }
@@ -36,8 +38,8 @@ object withDragAndDropProps {
   @scala.inline
   def apply[TEvent /* <: js.Object */](
     components: Components_[TEvent] = null,
-    dragFromOutsideItem: () => String | (js.Function1[/* event */ TEvent, Date]) = null,
-    draggableAccessor: String | (js.Function1[/* event */ TEvent, Boolean]) = null,
+    dragFromOutsideItem: () => (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date]) = null,
+    draggableAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean]) = null,
     elementProps: HTMLAttributes[HTMLElement] = null,
     onDragOver: /* event */ DragEvent[Element] => Unit = null,
     onDragStart: /* args */ AnonDirection[TEvent] => Unit = null,
@@ -45,7 +47,7 @@ object withDragAndDropProps {
     onEventDrop: /* args */ AnonAllDay[TEvent] => Unit = null,
     onEventResize: /* args */ AnonAllDay[TEvent] => Unit = null,
     resizable: js.UndefOr[Boolean] = js.undefined,
-    resizableAccessor: String | (js.Function1[/* event */ TEvent, Boolean]) = null,
+    resizableAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean]) = null,
     selectable: `true` | `false` | ignoreEvents = null,
     step: Int | Double = null
   ): withDragAndDropProps[TEvent] = {

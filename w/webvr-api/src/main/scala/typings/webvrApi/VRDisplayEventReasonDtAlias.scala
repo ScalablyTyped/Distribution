@@ -14,14 +14,12 @@ trait VRDisplayEventReasonDtAlias extends js.Object
 
 object VRDisplayEventReasonDtAlias {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def mounted: typings.webvrApi.webvrApiStrings.mounted = "mounted".asInstanceOf[typings.webvrApi.webvrApiStrings.mounted]
   @scala.inline
-  def mounted: typings.webvrApi.webvrApiStrings.mounted = this.cast("mounted")
+  def navigation: typings.webvrApi.webvrApiStrings.navigation = "navigation".asInstanceOf[typings.webvrApi.webvrApiStrings.navigation]
   @scala.inline
-  def navigation: typings.webvrApi.webvrApiStrings.navigation = this.cast("navigation")
+  def requested: typings.webvrApi.webvrApiStrings.requested = "requested".asInstanceOf[typings.webvrApi.webvrApiStrings.requested]
   @scala.inline
-  def requested: typings.webvrApi.webvrApiStrings.requested = this.cast("requested")
-  @scala.inline
-  def unmounted: typings.webvrApi.webvrApiStrings.unmounted = this.cast("unmounted")
+  def unmounted: typings.webvrApi.webvrApiStrings.unmounted = "unmounted".asInstanceOf[typings.webvrApi.webvrApiStrings.unmounted]
 }
 

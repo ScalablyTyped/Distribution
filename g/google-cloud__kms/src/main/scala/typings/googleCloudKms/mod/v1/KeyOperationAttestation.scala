@@ -12,7 +12,6 @@ object KeyOperationAttestation {
   @scala.inline
   def apply(format: AttestationFormat): KeyOperationAttestation = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyOperationAttestation]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rcTooltipProps {
   @scala.inline
-  def RcTooltipProps: Props.type = typings.rcTooltip.mod.RCTooltip.Props
+  def RcTooltipProps: Props.type = Props
   type RcTooltipProps = Props
 }
 

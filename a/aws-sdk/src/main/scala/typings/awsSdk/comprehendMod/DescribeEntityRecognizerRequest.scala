@@ -16,7 +16,6 @@ object DescribeEntityRecognizerRequest {
   @scala.inline
   def apply(EntityRecognizerArn: EntityRecognizerArn): DescribeEntityRecognizerRequest = {
     val __obj = js.Dynamic.literal(EntityRecognizerArn = EntityRecognizerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeEntityRecognizerRequest]
   }
 }

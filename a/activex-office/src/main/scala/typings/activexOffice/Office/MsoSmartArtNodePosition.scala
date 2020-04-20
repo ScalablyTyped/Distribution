@@ -20,16 +20,14 @@ trait MsoSmartArtNodePosition extends js.Object
 
 object MsoSmartArtNodePosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSmartArtNodeAbove: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoSmartArtNodeAbove: `4` = this.cast(4)
+  def msoSmartArtNodeAfter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoSmartArtNodeAfter: `2` = this.cast(2)
+  def msoSmartArtNodeBefore: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoSmartArtNodeBefore: `3` = this.cast(3)
+  def msoSmartArtNodeBelow: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoSmartArtNodeBelow: `5` = this.cast(5)
-  @scala.inline
-  def msoSmartArtNodeDefault: `1` = this.cast(1)
+  def msoSmartArtNodeDefault: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -12,7 +12,6 @@ object FirefoxLogObject {
   @scala.inline
   def apply(level: FirefoxLogLevels): FirefoxLogObject = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirefoxLogObject]
   }
 }

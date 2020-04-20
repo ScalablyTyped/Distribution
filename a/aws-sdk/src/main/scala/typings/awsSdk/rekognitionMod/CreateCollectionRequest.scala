@@ -16,7 +16,6 @@ object CreateCollectionRequest {
   @scala.inline
   def apply(CollectionId: CollectionId): CreateCollectionRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCollectionRequest]
   }
 }

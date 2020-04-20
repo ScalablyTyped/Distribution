@@ -18,7 +18,6 @@ object AnonMap {
   @scala.inline
   def apply(Map: XmlMap, Result: XlXmlExportResult, Url: String, Wb: Workbook): AnonMap = {
     val __obj = js.Dynamic.literal(Map = Map.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMap]
   }
 }

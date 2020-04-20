@@ -17,7 +17,7 @@ trait Plugin extends /* index */ NumberDictionary[MimeType] {
     * Returns the plugin library's filename, if applicable on the current platform.
     */
   val filename: java.lang.String = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[MimeType]] = js.native
   /**
     * Returns the number of MIME types, represented by MimeType objects, supported by the plugin.

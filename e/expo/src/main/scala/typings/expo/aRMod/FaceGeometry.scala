@@ -24,7 +24,6 @@ object FaceGeometry {
     vertices: js.Array[Vector3]
   ): FaceGeometry = {
     val __obj = js.Dynamic.literal(textureCoordinateCount = textureCoordinateCount.asInstanceOf[js.Any], textureCoordinates = textureCoordinates.asInstanceOf[js.Any], triangleCount = triangleCount.asInstanceOf[js.Any], triangleIndices = triangleIndices.asInstanceOf[js.Any], vertexCount = vertexCount.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FaceGeometry]
   }
 }

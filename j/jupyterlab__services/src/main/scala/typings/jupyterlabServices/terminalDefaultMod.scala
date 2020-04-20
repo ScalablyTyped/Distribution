@@ -121,12 +121,12 @@ object terminalDefaultMod extends js.Object {
       * A signal emitted when the terminal connection status changes.
       */
     @JSName("connectionStatusChanged")
-    def connectionStatusChanged_MTerminalConnection(): ISignal[this.type, ConnectionStatus] = js.native
+    def connectionStatusChanged_MTerminalConnection: ISignal[this.type, ConnectionStatus] = js.native
     /**
       * The current connection status of the terminal connection.
       */
     @JSName("connectionStatus")
-    def connectionStatus_MTerminalConnection(): ConnectionStatus = js.native
+    def connectionStatus_MTerminalConnection: ConnectionStatus = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -144,27 +144,27 @@ object terminalDefaultMod extends js.Object {
       * A signal emitted when the session is disposed.
       */
     @JSName("disposed")
-    def disposed_MTerminalConnection(): ISignal[this.type, Unit] = js.native
+    def disposed_MTerminalConnection: ISignal[this.type, Unit] = js.native
     /**
       * Test whether the session is disposed.
       */
     @JSName("isDisposed")
-    def isDisposed_MTerminalConnection(): Boolean = js.native
+    def isDisposed_MTerminalConnection: Boolean = js.native
     /**
       * A signal emitted when a message is received from the server.
       */
     @JSName("messageReceived")
-    def messageReceived_MTerminalConnection(): ISignal[this.type, IMessage] = js.native
+    def messageReceived_MTerminalConnection: ISignal[this.type, IMessage] = js.native
     /**
       * Get the model for the terminal session.
       */
     @JSName("model")
-    def model_MTerminalConnection(): IModel = js.native
+    def model_MTerminalConnection: IModel = js.native
     /**
       * Get the name of the terminal session.
       */
     @JSName("name")
-    def name_MTerminalConnection(): String = js.native
+    def name_MTerminalConnection: String = js.native
     /**
       * Reconnect to the terminal.
       *

@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.additions
@@ -268,7 +269,7 @@ trait WeakValidationMapIStackPr extends js.Object {
       js.UndefOr[
         (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.WeakValidationMapIStackPr with IStackSlots) | Null
+    */ typings.officeUiFabricReact.officeUiFabricReactStrings.WeakValidationMapIStackPr with TopLevel[IStackSlots]) | Null
       ]
     ]
   ] = js.undefined
@@ -478,7 +479,7 @@ object WeakValidationMapIStackPr {
       js.UndefOr[
         (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.WeakValidationMapIStackPr with IStackSlots) | Null
+    */ typings.officeUiFabricReact.officeUiFabricReactStrings.WeakValidationMapIStackPr with TopLevel[IStackSlots]) | Null
       ]
     ] = null,
     spellCheck: Validator[js.UndefOr[Booleanish | Null]] = null,

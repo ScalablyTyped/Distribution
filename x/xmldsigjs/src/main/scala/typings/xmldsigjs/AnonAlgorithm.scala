@@ -17,7 +17,6 @@ object AnonAlgorithm {
   @scala.inline
   def apply(Algorithm: String, Encoding: String, Id: String, MimeType: String, Type: String, URI: String): AnonAlgorithm = {
     val __obj = js.Dynamic.literal(Algorithm = Algorithm.asInstanceOf[js.Any], Encoding = Encoding.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], MimeType = MimeType.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], URI = URI.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlgorithm]
   }
 }

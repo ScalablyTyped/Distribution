@@ -20,7 +20,6 @@ object TestPointsQuery {
     witFields: js.Array[String]
   ): TestPointsQuery = {
     val __obj = js.Dynamic.literal(orderBy = orderBy.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], pointsFilter = pointsFilter.asInstanceOf[js.Any], witFields = witFields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestPointsQuery]
   }
 }

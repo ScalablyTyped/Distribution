@@ -27,7 +27,6 @@ object RoleRef {
   @scala.inline
   def apply(apiGroup: Input[String], kind: Input[String], name: Input[String]): RoleRef = {
     val __obj = js.Dynamic.literal(apiGroup = apiGroup.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoleRef]
   }
 }

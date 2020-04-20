@@ -21,7 +21,6 @@ object ReplicationConfiguration {
   @scala.inline
   def apply(Role: String, Rules: js.Array[ReplicationRule] | Iterable[ReplicationRule]): ReplicationConfiguration = {
     val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplicationConfiguration]
   }
 }

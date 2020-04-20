@@ -14,14 +14,12 @@ trait ErrorWithTaskEvent extends js.Object
 
 object ErrorWithTaskEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def extendLockColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonerror = "extendLock:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonerror]
   @scala.inline
-  def extendLockColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonerror = this.cast("extendLock:error")
+  def handleBpmnErrorColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonerror = "handleBpmnError:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonerror]
   @scala.inline
-  def handleBpmnErrorColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonerror = this.cast("handleBpmnError:error")
+  def handleFailureColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonerror = "handleFailure:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonerror]
   @scala.inline
-  def handleFailureColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonerror = this.cast("handleFailure:error")
-  @scala.inline
-  def unlockColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonerror = this.cast("unlock:error")
+  def unlockColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonerror = "unlock:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonerror]
 }
 

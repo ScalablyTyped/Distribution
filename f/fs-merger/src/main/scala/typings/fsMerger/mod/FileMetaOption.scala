@@ -12,7 +12,6 @@ object FileMetaOption {
   @scala.inline
   def apply(basePath: String): FileMetaOption = {
     val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileMetaOption]
   }
 }

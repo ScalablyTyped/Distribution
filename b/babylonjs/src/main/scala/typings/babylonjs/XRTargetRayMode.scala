@@ -13,12 +13,10 @@ trait XRTargetRayMode extends js.Object
 
 object XRTargetRayMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def gaze: typings.babylonjs.babylonjsStrings.gaze = "gaze".asInstanceOf[typings.babylonjs.babylonjsStrings.gaze]
   @scala.inline
-  def gaze: typings.babylonjs.babylonjsStrings.gaze = this.cast("gaze")
+  def screen: typings.babylonjs.babylonjsStrings.screen = "screen".asInstanceOf[typings.babylonjs.babylonjsStrings.screen]
   @scala.inline
-  def screen: typings.babylonjs.babylonjsStrings.screen = this.cast("screen")
-  @scala.inline
-  def `tracked-pointer`: typings.babylonjs.babylonjsStrings.`tracked-pointer` = this.cast("tracked-pointer")
+  def `tracked-pointer`: typings.babylonjs.babylonjsStrings.`tracked-pointer` = "tracked-pointer".asInstanceOf[typings.babylonjs.babylonjsStrings.`tracked-pointer`]
 }
 

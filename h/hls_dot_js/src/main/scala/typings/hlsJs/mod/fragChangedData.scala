@@ -13,7 +13,6 @@ object fragChangedData {
   @scala.inline
   def apply(frag: Fragment, id: String): fragChangedData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[fragChangedData]
   }
 }

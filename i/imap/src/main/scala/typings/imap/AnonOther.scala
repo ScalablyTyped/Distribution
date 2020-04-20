@@ -17,7 +17,6 @@ object AnonOther {
   @scala.inline
   def apply(other: js.Array[_], personal: js.Array[_], shared: js.Array[_]): AnonOther = {
     val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], personal = personal.asInstanceOf[js.Any], shared = shared.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOther]
   }
 }

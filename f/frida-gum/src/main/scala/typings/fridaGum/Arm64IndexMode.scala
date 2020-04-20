@@ -13,12 +13,10 @@ trait Arm64IndexMode extends js.Object
 
 object Arm64IndexMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `post-adjust`: typings.fridaGum.fridaGumStrings.`post-adjust` = "post-adjust".asInstanceOf[typings.fridaGum.fridaGumStrings.`post-adjust`]
   @scala.inline
-  def `post-adjust`: typings.fridaGum.fridaGumStrings.`post-adjust` = this.cast("post-adjust")
+  def `pre-adjust`: typings.fridaGum.fridaGumStrings.`pre-adjust` = "pre-adjust".asInstanceOf[typings.fridaGum.fridaGumStrings.`pre-adjust`]
   @scala.inline
-  def `pre-adjust`: typings.fridaGum.fridaGumStrings.`pre-adjust` = this.cast("pre-adjust")
-  @scala.inline
-  def `signed-offset`: typings.fridaGum.fridaGumStrings.`signed-offset` = this.cast("signed-offset")
+  def `signed-offset`: typings.fridaGum.fridaGumStrings.`signed-offset` = "signed-offset".asInstanceOf[typings.fridaGum.fridaGumStrings.`signed-offset`]
 }
 

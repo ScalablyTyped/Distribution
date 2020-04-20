@@ -21,7 +21,6 @@ object SanitizeAttributeHookEvent {
     keepAttr: Boolean
   ): SanitizeAttributeHookEvent = {
     val __obj = js.Dynamic.literal(allowedAttributes = allowedAttributes.asInstanceOf[js.Any], attrName = attrName.asInstanceOf[js.Any], attrValue = attrValue.asInstanceOf[js.Any], keepAttr = keepAttr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SanitizeAttributeHookEvent]
   }
 }

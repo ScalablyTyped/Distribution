@@ -18,7 +18,6 @@ object MediaResource {
   @scala.inline
   def apply(insert: AnonPrettyPrint => Request_[Media]): MediaResource = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
-  
     __obj.asInstanceOf[MediaResource]
   }
 }

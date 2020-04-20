@@ -20,7 +20,6 @@ object CreateCodeRepositoryInput {
   @scala.inline
   def apply(CodeRepositoryName: EntityName, GitConfig: GitConfig): CreateCodeRepositoryInput = {
     val __obj = js.Dynamic.literal(CodeRepositoryName = CodeRepositoryName.asInstanceOf[js.Any], GitConfig = GitConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCodeRepositoryInput]
   }
 }

@@ -17,7 +17,6 @@ object CreateSegmentRequest {
   @scala.inline
   def apply(ApplicationId: string, WriteSegmentRequest: WriteSegmentRequest): CreateSegmentRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteSegmentRequest = WriteSegmentRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSegmentRequest]
   }
 }

@@ -15,7 +15,6 @@ object GetListenerDefaultActionFixedResponse {
   @scala.inline
   def apply(contentType: String, messageBody: String, statusCode: String): GetListenerDefaultActionFixedResponse = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], messageBody = messageBody.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetListenerDefaultActionFixedResponse]
   }
 }

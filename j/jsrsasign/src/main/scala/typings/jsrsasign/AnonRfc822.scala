@@ -13,7 +13,6 @@ object AnonRfc822 {
   @scala.inline
   def apply(rfc822: String): AnonRfc822 = {
     val __obj = js.Dynamic.literal(rfc822 = rfc822.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRfc822]
   }
 }

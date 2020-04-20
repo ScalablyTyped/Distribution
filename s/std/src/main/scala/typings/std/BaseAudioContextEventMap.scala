@@ -12,7 +12,6 @@ object BaseAudioContextEventMap {
   @scala.inline
   def apply(statechange: Event_): BaseAudioContextEventMap = {
     val __obj = js.Dynamic.literal(statechange = statechange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseAudioContextEventMap]
   }
 }

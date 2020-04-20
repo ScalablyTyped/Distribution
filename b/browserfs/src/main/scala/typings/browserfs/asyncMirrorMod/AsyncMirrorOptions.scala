@@ -14,7 +14,6 @@ object AsyncMirrorOptions {
   @scala.inline
   def apply(async: FileSystem, sync: FileSystem): AsyncMirrorOptions = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsyncMirrorOptions]
   }
 }

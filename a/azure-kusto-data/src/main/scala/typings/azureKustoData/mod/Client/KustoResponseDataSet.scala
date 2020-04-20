@@ -20,7 +20,6 @@ object KustoResponseDataSet {
     tables: js.Array[KustoResultTable[T]]
   ): KustoResponseDataSet[T] = {
     val __obj = js.Dynamic.literal(primaryResults = primaryResults.asInstanceOf[js.Any], statusTable = statusTable.asInstanceOf[js.Any], tableNames = tableNames.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KustoResponseDataSet[T]]
   }
 }

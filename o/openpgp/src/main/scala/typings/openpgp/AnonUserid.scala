@@ -15,7 +15,6 @@ object AnonUserid {
   @scala.inline
   def apply(keyid: Keyid, userid: String, valid: Boolean): AnonUserid = {
     val __obj = js.Dynamic.literal(keyid = keyid.asInstanceOf[js.Any], userid = userid.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUserid]
   }
 }

@@ -31,7 +31,6 @@ object ReactionsCreateForIssueParams {
     repo: String
   ): ReactionsCreateForIssueParams = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], issue_number = issue_number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactionsCreateForIssueParams]
   }
 }

@@ -19,7 +19,7 @@ trait Job extends js.Object {
     */
   var Arn: js.UndefOr[string] = js.native
   /**
-    * Optional. Choose a tag type that AWS Billing and Cost Management will use to sort your AWS Elemental MediaConvert costs on any billing report that you set up. Any transcoding outputs that don't have an associated tag will appear in your billing report unsorted. If you don't choose a valid value for this field, your job outputs will appear on the billing report unsorted.
+    * The tag type that AWS Billing and Cost Management will use to sort your AWS Elemental MediaConvert costs on any billing report that you set up.
     */
   var BillingTagsSource: js.UndefOr[typings.awsSdk.mediaconvertMod.BillingTagsSource] = js.native
   /**
@@ -38,6 +38,10 @@ trait Job extends js.Object {
     * Error message of Job
     */
   var ErrorMessage: js.UndefOr[string] = js.native
+  /**
+    * Optional list of hop destinations.
+    */
+  var HopDestinations: js.UndefOr[listOfHopDestination] = js.native
   /**
     * A portion of the job's ARN, unique within your AWS Elemental MediaConvert resources
     */
@@ -63,9 +67,13 @@ trait Job extends js.Object {
     */
   var Priority: js.UndefOr[integerMinNegative50Max50] = js.native
   /**
-    * Optional. When you create a job, you can specify a queue to send it to. If you don't specify, the job will go to the default queue. For more about queues, see the User Guide topic at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+    * When you create a job, you can specify a queue to send it to. If you don't specify, the job will go to the default queue. For more about queues, see the User Guide topic at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
     */
   var Queue: js.UndefOr[string] = js.native
+  /**
+    * The job's queue hopping history.
+    */
+  var QueueTransitions: js.UndefOr[listOfQueueTransition] = js.native
   /**
     * The number of times that the service automatically attempted to process your job after encountering an error.
     */
@@ -113,6 +121,7 @@ object Job {
     CurrentPhase: JobPhase = null,
     ErrorCode: Int | Double = null,
     ErrorMessage: string = null,
+    HopDestinations: listOfHopDestination = null,
     Id: string = null,
     JobPercentComplete: Int | Double = null,
     JobTemplate: string = null,
@@ -120,6 +129,7 @@ object Job {
     OutputGroupDetails: listOfOutputGroupDetail = null,
     Priority: Int | Double = null,
     Queue: string = null,
+    QueueTransitions: listOfQueueTransition = null,
     RetryCount: Int | Double = null,
     SimulateReservedQueue: SimulateReservedQueue = null,
     Status: JobStatus = null,
@@ -136,6 +146,7 @@ object Job {
     if (CurrentPhase != null) __obj.updateDynamic("CurrentPhase")(CurrentPhase.asInstanceOf[js.Any])
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
+    if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (JobPercentComplete != null) __obj.updateDynamic("JobPercentComplete")(JobPercentComplete.asInstanceOf[js.Any])
     if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate.asInstanceOf[js.Any])
@@ -143,6 +154,7 @@ object Job {
     if (OutputGroupDetails != null) __obj.updateDynamic("OutputGroupDetails")(OutputGroupDetails.asInstanceOf[js.Any])
     if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
+    if (QueueTransitions != null) __obj.updateDynamic("QueueTransitions")(QueueTransitions.asInstanceOf[js.Any])
     if (RetryCount != null) __obj.updateDynamic("RetryCount")(RetryCount.asInstanceOf[js.Any])
     if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

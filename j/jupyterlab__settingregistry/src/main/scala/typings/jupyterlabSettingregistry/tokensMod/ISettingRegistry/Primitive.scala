@@ -19,18 +19,16 @@ trait Primitive extends js.Object
 
 object Primitive {
   @scala.inline
-  def array: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.array = this.cast("array")
+  def array: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.array = "array".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.array]
   @scala.inline
-  def boolean: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.boolean = this.cast("boolean")
+  def boolean: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.boolean = "boolean".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `null`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`null` = "null".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`null`]
   @scala.inline
-  def `null`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`null` = this.cast("null")
+  def number: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.number = "number".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.number]
   @scala.inline
-  def number: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.number = this.cast("number")
+  def `object`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`object` = "object".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`object`]
   @scala.inline
-  def `object`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.string = this.cast("string")
+  def string: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.string = "string".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.string]
 }
 

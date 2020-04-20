@@ -20,7 +20,6 @@ object DeploymentGroupEcsService {
   @scala.inline
   def apply(clusterName: String, serviceName: String): DeploymentGroupEcsService = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentGroupEcsService]
   }
 }

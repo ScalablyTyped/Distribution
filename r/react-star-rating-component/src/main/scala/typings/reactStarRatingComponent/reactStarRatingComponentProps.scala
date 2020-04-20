@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactStarRatingComponentProps {
   @scala.inline
-  def ReactStarRatingComponentProps: StarRatingComponentProps.type = typings.reactStarRatingComponent.mod.StarRatingComponentProps
+  def ReactStarRatingComponentProps: StarRatingComponentProps.type = StarRatingComponentProps
   type ReactStarRatingComponentProps = StarRatingComponentProps
 }
 

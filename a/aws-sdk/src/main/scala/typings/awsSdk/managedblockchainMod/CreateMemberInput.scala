@@ -33,7 +33,6 @@ object CreateMemberInput {
     NetworkId: ResourceIdString
   ): CreateMemberInput = {
     val __obj = js.Dynamic.literal(ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any], InvitationId = InvitationId.asInstanceOf[js.Any], MemberConfiguration = MemberConfiguration.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateMemberInput]
   }
 }

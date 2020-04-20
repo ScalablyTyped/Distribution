@@ -23,7 +23,6 @@ object FixedPrice {
   @scala.inline
   def apply(local_price: Price[FiatCurrency], pricing_type: fixed_price): FixedPrice = {
     val __obj = js.Dynamic.literal(local_price = local_price.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FixedPrice]
   }
 }

@@ -26,7 +26,6 @@ object CustomResourceSubresources {
   @scala.inline
   def apply(scale: CustomResourceSubresourceScale, status: js.Any): CustomResourceSubresources = {
     val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomResourceSubresources]
   }
 }

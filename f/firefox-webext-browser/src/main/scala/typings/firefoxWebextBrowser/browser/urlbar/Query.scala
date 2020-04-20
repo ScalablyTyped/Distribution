@@ -26,7 +26,6 @@ object Query {
     searchString: String
   ): Query = {
     val __obj = js.Dynamic.literal(acceptableSources = acceptableSources.asInstanceOf[js.Any], isPrivate = isPrivate.asInstanceOf[js.Any], maxResults = maxResults.asInstanceOf[js.Any], searchString = searchString.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Query]
   }
 }

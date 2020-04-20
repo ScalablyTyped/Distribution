@@ -15,7 +15,6 @@ object CurrentUser {
   @scala.inline
   def apply(profile: () => js.Promise[Response], updateProfile: AnonBio => js.Promise[Response]): CurrentUser = {
     val __obj = js.Dynamic.literal(profile = js.Any.fromFunction0(profile), updateProfile = js.Any.fromFunction1(updateProfile))
-  
     __obj.asInstanceOf[CurrentUser]
   }
 }

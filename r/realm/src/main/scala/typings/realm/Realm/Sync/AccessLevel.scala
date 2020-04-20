@@ -14,14 +14,12 @@ trait AccessLevel extends js.Object
 
 object AccessLevel {
   @scala.inline
-  def admin: typings.realm.realmStrings.admin = this.cast("admin")
+  def admin: typings.realm.realmStrings.admin = "admin".asInstanceOf[typings.realm.realmStrings.admin]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.realm.realmStrings.none = "none".asInstanceOf[typings.realm.realmStrings.none]
   @scala.inline
-  def none: typings.realm.realmStrings.none = this.cast("none")
+  def read: typings.realm.realmStrings.read = "read".asInstanceOf[typings.realm.realmStrings.read]
   @scala.inline
-  def read: typings.realm.realmStrings.read = this.cast("read")
-  @scala.inline
-  def write: typings.realm.realmStrings.write = this.cast("write")
+  def write: typings.realm.realmStrings.write = "write".asInstanceOf[typings.realm.realmStrings.write]
 }
 

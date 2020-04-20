@@ -13,10 +13,8 @@ trait Turkish extends _ALL
 
 object Turkish {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ts: ts_ = "ts".asInstanceOf[ts_]
   @scala.inline
-  def ts: ts_ = this.cast("ts")
-  @scala.inline
-  def `ts-TR`: typings.qlik.qlikStrings.`ts-TR` = this.cast("ts-TR")
+  def `ts-TR`: typings.qlik.qlikStrings.`ts-TR` = "ts-TR".asInstanceOf[typings.qlik.qlikStrings.`ts-TR`]
 }
 

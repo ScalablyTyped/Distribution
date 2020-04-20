@@ -15,8 +15,8 @@ trait SpreadsheetProperties extends js.Object {
   var defaultFormat: js.UndefOr[CellFormat] = js.undefined
   /**
     * Determines whether and how circular references are resolved with iterative
-    * calculation.  Absence of this field means that circular references will
-    * result in calculation errors.
+    * calculation.  Absence of this field means that circular references result
+    * in calculation errors.
     */
   var iterativeCalculationSettings: js.UndefOr[IterativeCalculationSettings] = js.undefined
   /**

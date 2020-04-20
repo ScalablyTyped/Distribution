@@ -30,7 +30,6 @@ object GetTableGlobalSecondaryIndex {
     writeCapacity: Double
   ): GetTableGlobalSecondaryIndex = {
     val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nonKeyAttributes = nonKeyAttributes.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any], rangeKey = rangeKey.asInstanceOf[js.Any], readCapacity = readCapacity.asInstanceOf[js.Any], writeCapacity = writeCapacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTableGlobalSecondaryIndex]
   }
 }

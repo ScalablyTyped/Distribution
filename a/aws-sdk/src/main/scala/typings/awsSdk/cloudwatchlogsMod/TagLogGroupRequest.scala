@@ -20,7 +20,6 @@ object TagLogGroupRequest {
   @scala.inline
   def apply(logGroupName: LogGroupName, tags: Tags): TagLogGroupRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagLogGroupRequest]
   }
 }

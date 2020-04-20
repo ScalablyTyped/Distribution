@@ -24,7 +24,6 @@ object ChangesResource {
     watch: AnonIncludeCorpusRemovals => Request_[Channel]
   ): ChangesResource = {
     val __obj = js.Dynamic.literal(getStartPageToken = js.Any.fromFunction1(getStartPageToken), list = js.Any.fromFunction1(list), watch = js.Any.fromFunction1(watch))
-  
     __obj.asInstanceOf[ChangesResource]
   }
 }

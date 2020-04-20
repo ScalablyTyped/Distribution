@@ -25,7 +25,6 @@ object AnonAddMeasurementToCache {
     getCachedMeasurement: js.Any => js.UndefOr[Double]
   ): AnonAddMeasurementToCache = {
     val __obj = js.Dynamic.literal(addMeasurementToCache = js.Any.fromFunction2(addMeasurementToCache), getCachedMeasurement = js.Any.fromFunction1(getCachedMeasurement))
-  
     __obj.asInstanceOf[AnonAddMeasurementToCache]
   }
 }

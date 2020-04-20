@@ -56,7 +56,7 @@ class IntegerLiteral protected () extends LiteralExpression {
   ) = this()
   @JSName("model")
   var model_FIntegerLiteral: IModel = js.native
-  def value(): Double = js.native
+  def value: Double = js.native
   def value(newValue: Double): js.Any = js.native
 }
 

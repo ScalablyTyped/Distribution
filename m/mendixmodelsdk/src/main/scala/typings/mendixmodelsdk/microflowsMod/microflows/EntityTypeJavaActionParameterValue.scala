@@ -29,9 +29,9 @@ class EntityTypeJavaActionParameterValue protected () extends JavaActionParamete
   var model_FEntityTypeJavaActionParameterValue: IModel = js.native
   def entity(): js.Any = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String | Null = js.native
+  def entityQualifiedName: String | Null = js.native
   @JSName("entity")
-  def entity_Union(): IEntity | Null = js.native
+  def entity_Union: IEntity | Null = js.native
 }
 
 /* static members */

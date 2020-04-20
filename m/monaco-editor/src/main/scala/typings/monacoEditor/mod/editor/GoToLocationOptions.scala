@@ -35,7 +35,6 @@ object GoToLocationOptions {
     multipleTypeDefinitions: GoToLocationValues
   ): GoToLocationOptions = {
     val __obj = js.Dynamic.literal(alternativeDeclarationCommand = alternativeDeclarationCommand.asInstanceOf[js.Any], alternativeDefinitionCommand = alternativeDefinitionCommand.asInstanceOf[js.Any], alternativeImplementationCommand = alternativeImplementationCommand.asInstanceOf[js.Any], alternativeReferenceCommand = alternativeReferenceCommand.asInstanceOf[js.Any], alternativeTypeDefinitionCommand = alternativeTypeDefinitionCommand.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], multipleDeclarations = multipleDeclarations.asInstanceOf[js.Any], multipleDefinitions = multipleDefinitions.asInstanceOf[js.Any], multipleImplementations = multipleImplementations.asInstanceOf[js.Any], multipleReferences = multipleReferences.asInstanceOf[js.Any], multipleTypeDefinitions = multipleTypeDefinitions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoToLocationOptions]
   }
 }

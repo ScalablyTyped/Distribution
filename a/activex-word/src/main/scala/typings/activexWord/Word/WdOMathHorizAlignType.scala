@@ -16,12 +16,10 @@ trait WdOMathHorizAlignType extends js.Object
 
 object WdOMathHorizAlignType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdOMathHorizAlignCenter: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdOMathHorizAlignCenter: `0` = this.cast(0)
+  def wdOMathHorizAlignLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdOMathHorizAlignLeft: `1` = this.cast(1)
-  @scala.inline
-  def wdOMathHorizAlignRight: `2` = this.cast(2)
+  def wdOMathHorizAlignRight: `2` = 2.asInstanceOf[`2`]
 }
 

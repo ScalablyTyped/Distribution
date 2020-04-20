@@ -10,7 +10,7 @@ trait reachTooltipProps {
   def TooltipProps: typings.reachTooltip.mod.TooltipProps.type = typings.reachTooltip.mod.TooltipProps
   type TooltipProps = typings.reachTooltip.mod.TooltipProps
   @scala.inline
-  def TooltipContentProps: BaseTooltipProps.type = typings.reachTooltip.mod.BaseTooltipProps
+  def TooltipContentProps: BaseTooltipProps.type = BaseTooltipProps
   type TooltipContentProps = BaseTooltipProps
   @scala.inline
   def TooltipPopupProps: typings.reachTooltip.mod.TooltipPopupProps.type = typings.reachTooltip.mod.TooltipPopupProps

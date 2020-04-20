@@ -16,7 +16,6 @@ object AnonIndex {
   @scala.inline
   def apply(index: Double, isDragged: Boolean, props: IThumbProps, value: Double): AnonIndex = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isDragged = isDragged.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndex]
   }
 }

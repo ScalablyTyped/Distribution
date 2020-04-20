@@ -20,7 +20,6 @@ object Segment {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](event: TEvent, state: State[TContext, TEvent, _, _]): Segment[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Segment[TContext, TEvent]]
   }
 }

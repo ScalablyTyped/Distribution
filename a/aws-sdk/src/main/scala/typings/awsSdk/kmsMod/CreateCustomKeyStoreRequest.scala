@@ -33,7 +33,6 @@ object CreateCustomKeyStoreRequest {
     TrustAnchorCertificate: TrustAnchorCertificateType
   ): CreateCustomKeyStoreRequest = {
     val __obj = js.Dynamic.literal(CloudHsmClusterId = CloudHsmClusterId.asInstanceOf[js.Any], CustomKeyStoreName = CustomKeyStoreName.asInstanceOf[js.Any], KeyStorePassword = KeyStorePassword.asInstanceOf[js.Any], TrustAnchorCertificate = TrustAnchorCertificate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCustomKeyStoreRequest]
   }
 }

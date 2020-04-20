@@ -20,7 +20,6 @@ object DeregisterEndPointsInput {
   @scala.inline
   def apply(Instances: Instances, LoadBalancerName: AccessPointName): DeregisterEndPointsInput = {
     val __obj = js.Dynamic.literal(Instances = Instances.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterEndPointsInput]
   }
 }

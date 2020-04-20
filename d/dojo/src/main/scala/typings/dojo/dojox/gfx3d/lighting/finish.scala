@@ -82,7 +82,6 @@ object finish {
     shiny: js.Object
   ): finish = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any], dull = dull.asInstanceOf[js.Any], glossy = glossy.asInstanceOf[js.Any], luminous = luminous.asInstanceOf[js.Any], metalA = metalA.asInstanceOf[js.Any], metalB = metalB.asInstanceOf[js.Any], metalC = metalC.asInstanceOf[js.Any], metalD = metalD.asInstanceOf[js.Any], metalE = metalE.asInstanceOf[js.Any], phong_dull = phong_dull.asInstanceOf[js.Any], phong_glossy = phong_glossy.asInstanceOf[js.Any], phong_shiny = phong_shiny.asInstanceOf[js.Any], shiny = shiny.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[finish]
   }
 }

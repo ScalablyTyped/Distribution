@@ -21,14 +21,12 @@ class MapItem protected () extends js.Object {
     * @constructor
     */
   def this(descriptor: MapItemDescriptor) = this()
-  val dateExpires: String = js.native
-  val dateUpdated: Date = js.native
   val descriptor: js.Any = js.native
-  val key: String = js.native
-  val lastEventId: Double = js.native
-  val revision: String = js.native
-  val uri: String = js.native
-  val value: js.Object = js.native
+  def dateExpires: String = js.native
+  def dateUpdated: Date = js.native
+  def key: String = js.native
+  def lastEventId: Double = js.native
+  def revision: String = js.native
   /**
     * @private
     */
@@ -37,5 +35,7 @@ class MapItem protected () extends js.Object {
     * @private
     */
   def updateDateExpires(dateExpires: String): Unit = js.native
+  def uri: String = js.native
+  def value: js.Object = js.native
 }
 

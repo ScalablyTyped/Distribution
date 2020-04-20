@@ -24,7 +24,6 @@ object ArgCaptor8 {
     third: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]
   ): ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7] = {
     val __obj = js.Dynamic.literal(beforeLast = js.Any.fromFunction0(beforeLast), byCallIndex = js.Any.fromFunction1(byCallIndex), first = js.Any.fromFunction0(first), last = js.Any.fromFunction0(last), second = js.Any.fromFunction0(second), third = js.Any.fromFunction0(third))
-  
     __obj.asInstanceOf[ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7]]
   }
 }

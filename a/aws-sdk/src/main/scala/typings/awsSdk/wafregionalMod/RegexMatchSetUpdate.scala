@@ -20,7 +20,6 @@ object RegexMatchSetUpdate {
   @scala.inline
   def apply(Action: ChangeAction, RegexMatchTuple: RegexMatchTuple): RegexMatchSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], RegexMatchTuple = RegexMatchTuple.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegexMatchSetUpdate]
   }
 }

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "babylon-walk"
-version := "3.10-dt-20200226Z-5196cd"
+version := "3.10-dt-20200226Z-205c1c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190424Z-441850",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190424Z-187f96",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

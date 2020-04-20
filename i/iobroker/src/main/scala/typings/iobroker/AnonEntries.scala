@@ -14,7 +14,6 @@ object AnonEntries {
   @scala.inline
   def apply(entries: js.Array[ChownFileResult], id: String): AnonEntries = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEntries]
   }
 }

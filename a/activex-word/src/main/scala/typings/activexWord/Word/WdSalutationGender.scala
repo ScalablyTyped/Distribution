@@ -18,14 +18,12 @@ trait WdSalutationGender extends js.Object
 
 object WdSalutationGender {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdGenderFemale: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdGenderFemale: `0` = this.cast(0)
+  def wdGenderMale: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdGenderMale: `1` = this.cast(1)
+  def wdGenderNeutral: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdGenderNeutral: `2` = this.cast(2)
-  @scala.inline
-  def wdGenderUnknown: `3` = this.cast(3)
+  def wdGenderUnknown: `3` = 3.asInstanceOf[`3`]
 }
 

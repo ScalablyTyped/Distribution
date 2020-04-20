@@ -14,7 +14,6 @@ object AnonArrayNormalize {
   @scala.inline
   def apply(array: `true`, normalize: `true`): AnonArrayNormalize = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], normalize = normalize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArrayNormalize]
   }
 }

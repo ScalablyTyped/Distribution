@@ -16,7 +16,6 @@ object ListenerRuleConditionPathPattern {
   @scala.inline
   def apply(values: js.Array[String]): ListenerRuleConditionPathPattern = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListenerRuleConditionPathPattern]
   }
 }

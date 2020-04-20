@@ -26,21 +26,21 @@ abstract class ClientAction protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FClientAction: IModel = js.native
-  def containerAsActionButton(): ActionButton = js.native
-  def containerAsActionItem(): ActionItem = js.native
-  def containerAsAssociationWidget(): AssociationWidget = js.native
-  def containerAsAttributeWidget(): AttributeWidget = js.native
-  def containerAsBottomBarItem(): BottomBarItem = js.native
-  def containerAsDataViewActionButton(): DataViewActionButton = js.native
-  def containerAsDivContainer(): DivContainer = js.native
-  def containerAsDynamicImageViewer(): DynamicImageViewer = js.native
-  def containerAsGridActionButton(): GridActionButton = js.native
-  def containerAsListView(): ListView = js.native
-  def containerAsMenuItem(): MenuItem = js.native
-  def containerAsReferenceSetSelector(): ReferenceSetSelector = js.native
-  def containerAsStaticImageViewer(): StaticImageViewer = js.native
-  def containerAsTextBox(): TextBox = js.native
-  def containerAsWidgetValue(): WidgetValue = js.native
+  def containerAsActionButton: ActionButton = js.native
+  def containerAsActionItem: ActionItem = js.native
+  def containerAsAssociationWidget: AssociationWidget = js.native
+  def containerAsAttributeWidget: AttributeWidget = js.native
+  def containerAsBottomBarItem: BottomBarItem = js.native
+  def containerAsDataViewActionButton: DataViewActionButton = js.native
+  def containerAsDivContainer: DivContainer = js.native
+  def containerAsDynamicImageViewer: DynamicImageViewer = js.native
+  def containerAsGridActionButton: GridActionButton = js.native
+  def containerAsListView: ListView = js.native
+  def containerAsMenuItem: MenuItem = js.native
+  def containerAsReferenceSetSelector: ReferenceSetSelector = js.native
+  def containerAsStaticImageViewer: StaticImageViewer = js.native
+  def containerAsTextBox: TextBox = js.native
+  def containerAsWidgetValue: WidgetValue = js.native
 }
 
 /* static members */

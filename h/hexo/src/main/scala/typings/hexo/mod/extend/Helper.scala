@@ -12,7 +12,6 @@ object Helper {
   @scala.inline
   def apply(register: (String, js.Function1[/* repeated */ js.Any, _]) => Unit): Helper = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
-  
     __obj.asInstanceOf[Helper]
   }
 }

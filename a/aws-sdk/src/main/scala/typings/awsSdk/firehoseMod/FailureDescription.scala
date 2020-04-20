@@ -20,7 +20,6 @@ object FailureDescription {
   @scala.inline
   def apply(Details: NonEmptyString, Type: DeliveryStreamFailureType): FailureDescription = {
     val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FailureDescription]
   }
 }

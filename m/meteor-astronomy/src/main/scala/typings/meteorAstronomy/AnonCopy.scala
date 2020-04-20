@@ -27,14 +27,14 @@ trait AnonCopy[T] extends js.Object {
   def remove(callback: RemoveCallback): Unit = js.native
   def save(): Unit = js.native
   def save(optionsOrCallback: SaveAndValidateCallback): Unit = js.native
-  def save(optionsOrCallback: SaveAndValidateOptions[String]): Unit = js.native
-  def save(options: SaveAndValidateOptions[String], callback: SaveAndValidateCallback): Unit = js.native
+  def save(optionsOrCallback: SaveAndValidateOptions[/* keyof T */ String]): Unit = js.native
+  def save(options: SaveAndValidateOptions[/* keyof T */ String], callback: SaveAndValidateCallback): Unit = js.native
   def set(field: String, value: js.Any): Unit = js.native
   def set(fields: Partial[T]): Unit = js.native
   def set(fields: Partial[T], options: AnonCast): Unit = js.native
   def validate(): Unit = js.native
   def validate(optionsOrCallback: SaveAndValidateCallback): Unit = js.native
-  def validate(optionsOrCallback: SaveAndValidateOptions[String]): Unit = js.native
-  def validate(options: SaveAndValidateOptions[String], callback: SaveAndValidateCallback): Unit = js.native
+  def validate(optionsOrCallback: SaveAndValidateOptions[/* keyof T */ String]): Unit = js.native
+  def validate(options: SaveAndValidateOptions[/* keyof T */ String], callback: SaveAndValidateCallback): Unit = js.native
 }
 

@@ -16,12 +16,10 @@ trait XlArrowHeadLength extends js.Object
 
 object XlArrowHeadLength {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlArrowHeadLengthLong: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlArrowHeadLengthLong: `3` = this.cast(3)
+  def xlArrowHeadLengthMedium: `-4138` = -4138.asInstanceOf[`-4138`]
   @scala.inline
-  def xlArrowHeadLengthMedium: `-4138` = this.cast(-4138)
-  @scala.inline
-  def xlArrowHeadLengthShort: `1` = this.cast(1)
+  def xlArrowHeadLengthShort: `1` = 1.asInstanceOf[`1`]
 }
 

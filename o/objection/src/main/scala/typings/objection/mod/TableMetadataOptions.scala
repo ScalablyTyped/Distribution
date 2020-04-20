@@ -12,7 +12,6 @@ object TableMetadataOptions {
   @scala.inline
   def apply(table: String): TableMetadataOptions = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableMetadataOptions]
   }
 }

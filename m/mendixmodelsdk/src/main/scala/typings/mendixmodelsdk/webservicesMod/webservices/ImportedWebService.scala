@@ -34,17 +34,17 @@ class ImportedWebService protected () extends Document {
   @JSName("model")
   var model_FImportedWebService: IModel = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MImportedWebService(): FolderBase = js.native
+  def containerAsFolderBase_MImportedWebService: FolderBase = js.native
   /**
     * In version 6.4.1: introduced
     */
-  def useMtom(): Boolean = js.native
+  def useMtom: Boolean = js.native
   def useMtom(newValue: Boolean): js.Any = js.native
   def wsdlDescription(): js.Any = js.native
   def wsdlDescription(newValue: WsdlDescription): js.Any = js.native
   @JSName("wsdlDescription")
-  def wsdlDescription_Union(): WsdlDescription | Null = js.native
-  def wsdlUrl(): String = js.native
+  def wsdlDescription_Union: WsdlDescription | Null = js.native
+  def wsdlUrl: String = js.native
   def wsdlUrl(newValue: String): js.Any = js.native
 }
 

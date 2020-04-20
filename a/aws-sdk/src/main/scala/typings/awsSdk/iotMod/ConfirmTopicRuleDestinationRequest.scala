@@ -16,7 +16,6 @@ object ConfirmTopicRuleDestinationRequest {
   @scala.inline
   def apply(confirmationToken: ConfirmationToken): ConfirmTopicRuleDestinationRequest = {
     val __obj = js.Dynamic.literal(confirmationToken = confirmationToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfirmTopicRuleDestinationRequest]
   }
 }

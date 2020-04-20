@@ -206,7 +206,7 @@ class InternalTexture protected () extends js.Object {
   /**
     * Gets the data source type of the texture
     */
-  def source(): InternalTextureSource = js.native
+  def source: InternalTextureSource = js.native
   /**
     * Change the size of the texture (not the size of the content)
     * @param width defines the new width

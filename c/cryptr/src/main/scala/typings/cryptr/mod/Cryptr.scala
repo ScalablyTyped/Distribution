@@ -15,7 +15,6 @@ object Cryptr {
   @scala.inline
   def apply(decrypt: String => String, encrypt: String => String): Cryptr = {
     val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt))
-  
     __obj.asInstanceOf[Cryptr]
   }
 }

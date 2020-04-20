@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactTreeviewProps {
   @scala.inline
-  def ReactTreeviewProps: TreeProps.type = typings.reactTreeview.mod.TreeProps
+  def ReactTreeviewProps: TreeProps.type = TreeProps
   type ReactTreeviewProps = TreeProps
 }
 

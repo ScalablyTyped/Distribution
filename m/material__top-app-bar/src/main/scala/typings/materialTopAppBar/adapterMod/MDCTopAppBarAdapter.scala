@@ -65,7 +65,6 @@ object MDCTopAppBarAdapter {
     setStyle: (String, String) => Unit
   ): MDCTopAppBarAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterNavigationIconInteractionHandler = js.Any.fromFunction2(deregisterNavigationIconInteractionHandler), deregisterResizeHandler = js.Any.fromFunction1(deregisterResizeHandler), deregisterScrollHandler = js.Any.fromFunction1(deregisterScrollHandler), getTopAppBarHeight = js.Any.fromFunction0(getTopAppBarHeight), getTotalActionItems = js.Any.fromFunction0(getTotalActionItems), getViewportScrollY = js.Any.fromFunction0(getViewportScrollY), hasClass = js.Any.fromFunction1(hasClass), notifyNavigationIconClicked = js.Any.fromFunction0(notifyNavigationIconClicked), registerNavigationIconInteractionHandler = js.Any.fromFunction2(registerNavigationIconInteractionHandler), registerResizeHandler = js.Any.fromFunction1(registerResizeHandler), registerScrollHandler = js.Any.fromFunction1(registerScrollHandler), removeClass = js.Any.fromFunction1(removeClass), setStyle = js.Any.fromFunction2(setStyle))
-  
     __obj.asInstanceOf[MDCTopAppBarAdapter]
   }
 }

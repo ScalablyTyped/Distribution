@@ -13,12 +13,10 @@ trait GoogleActionsV2ConversationType extends js.Object
 
 object GoogleActionsV2ConversationType {
   @scala.inline
-  def ACTIVE: typings.actionsOnGoogle.actionsOnGoogleStrings.ACTIVE = this.cast("ACTIVE")
+  def ACTIVE: typings.actionsOnGoogle.actionsOnGoogleStrings.ACTIVE = "ACTIVE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ACTIVE]
   @scala.inline
-  def NEW: typings.actionsOnGoogle.actionsOnGoogleStrings.NEW = this.cast("NEW")
+  def NEW: typings.actionsOnGoogle.actionsOnGoogleStrings.NEW = "NEW".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.NEW]
   @scala.inline
-  def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = this.cast("TYPE_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = "TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED]
 }
 

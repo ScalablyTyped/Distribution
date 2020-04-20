@@ -23,7 +23,6 @@ object AnonOrigins {
     version: Double
   ): AnonOrigins[S] = {
     val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOrigins[S]]
   }
 }

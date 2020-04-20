@@ -15,7 +15,6 @@ object AnonItemAny {
   @scala.inline
   def apply(event: Event_ | KeyboardEvent, item: js.Any): AnonItemAny = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemAny]
   }
 }

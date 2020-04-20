@@ -22,18 +22,16 @@ trait MFNamedValueType extends js.Object
 
 object MFNamedValueType {
   @scala.inline
-  def AdminConfiguration: `7` = this.cast(7)
+  def AdminConfiguration: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ConfigurationValue: `3` = this.cast(3)
+  def ConfigurationValue: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def FolderConfiguration: `6` = this.cast(6)
+  def FolderConfiguration: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def RegistryValue: `5` = this.cast(5)
+  def RegistryValue: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def SystemAdminConfiguration: `8` = this.cast(8)
+  def SystemAdminConfiguration: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def UserDefinedValue: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UserDefinedValue: `4` = 4.asInstanceOf[`4`]
 }
 

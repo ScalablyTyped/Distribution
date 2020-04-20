@@ -20,7 +20,6 @@ object EndpointConditions {
   @scala.inline
   def apply(ready: Boolean): EndpointConditions = {
     val __obj = js.Dynamic.literal(ready = ready.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EndpointConditions]
   }
 }

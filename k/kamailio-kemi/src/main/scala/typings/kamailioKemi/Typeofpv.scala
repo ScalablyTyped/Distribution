@@ -43,7 +43,6 @@ object Typeofpv {
     unset: String => Unit
   ): Typeofpv = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), gete = js.Any.fromFunction1(gete), getvn = js.Any.fromFunction2(getvn), getvs = js.Any.fromFunction2(getvs), getw = js.Any.fromFunction1(getw), is_null = js.Any.fromFunction1(is_null), seti = js.Any.fromFunction2(seti), sets = js.Any.fromFunction2(sets), unset = js.Any.fromFunction1(unset))
-  
     __obj.asInstanceOf[Typeofpv]
   }
 }

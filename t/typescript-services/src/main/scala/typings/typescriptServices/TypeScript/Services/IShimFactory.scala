@@ -13,7 +13,6 @@ object IShimFactory {
   @scala.inline
   def apply(registerShim: IShim => Unit, unregisterShim: IShim => Unit): IShimFactory = {
     val __obj = js.Dynamic.literal(registerShim = js.Any.fromFunction1(registerShim), unregisterShim = js.Any.fromFunction1(unregisterShim))
-  
     __obj.asInstanceOf[IShimFactory]
   }
 }

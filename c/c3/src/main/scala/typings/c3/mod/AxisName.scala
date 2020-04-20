@@ -13,12 +13,10 @@ trait AxisName extends js.Object
 
 object AxisName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def x: typings.c3.c3Strings.x = "x".asInstanceOf[typings.c3.c3Strings.x]
   @scala.inline
-  def x: typings.c3.c3Strings.x = this.cast("x")
+  def y: typings.c3.c3Strings.y = "y".asInstanceOf[typings.c3.c3Strings.y]
   @scala.inline
-  def y: typings.c3.c3Strings.y = this.cast("y")
-  @scala.inline
-  def y2: typings.c3.c3Strings.y2 = this.cast("y2")
+  def y2: typings.c3.c3Strings.y2 = "y2".asInstanceOf[typings.c3.c3Strings.y2]
 }
 

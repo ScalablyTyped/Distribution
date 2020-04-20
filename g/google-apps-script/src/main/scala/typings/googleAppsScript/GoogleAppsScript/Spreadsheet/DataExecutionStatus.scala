@@ -26,7 +26,6 @@ object DataExecutionStatus {
     isTruncated: () => Boolean
   ): DataExecutionStatus = {
     val __obj = js.Dynamic.literal(getErrorCode = js.Any.fromFunction0(getErrorCode), getErrorMessage = js.Any.fromFunction0(getErrorMessage), getExecutionState = js.Any.fromFunction0(getExecutionState), getLastRefreshedTime = js.Any.fromFunction0(getLastRefreshedTime), isTruncated = js.Any.fromFunction0(isTruncated))
-  
     __obj.asInstanceOf[DataExecutionStatus]
   }
 }

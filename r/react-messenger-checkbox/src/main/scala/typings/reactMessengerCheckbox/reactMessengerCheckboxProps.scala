@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactMessengerCheckboxProps {
   @scala.inline
-  def ReactMessengerCheckboxProps: ReactMessengerProps.type = typings.reactMessengerCheckbox.mod.ReactMessengerProps
+  def ReactMessengerCheckboxProps: ReactMessengerProps.type = ReactMessengerProps
   type ReactMessengerCheckboxProps = ReactMessengerProps
 }
 

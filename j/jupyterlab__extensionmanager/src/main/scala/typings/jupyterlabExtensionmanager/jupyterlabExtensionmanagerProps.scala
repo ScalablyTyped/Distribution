@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait jupyterlabExtensionmanagerProps {
   @scala.inline
-  def CollapsibleSectionProps: IProperties.type = typings.jupyterlabExtensionmanager.widgetMod.CollapsibleSection.IProperties
+  def CollapsibleSectionProps: IProperties.type = IProperties
   type CollapsibleSectionProps = IProperties
   @scala.inline
   def ListViewProps: typings.jupyterlabExtensionmanager.widgetMod.ListView.IProperties.type = typings.jupyterlabExtensionmanager.widgetMod.ListView.IProperties

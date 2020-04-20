@@ -18,7 +18,6 @@ object CollectdTimeSeriesResource {
   @scala.inline
   def apply(create: AnonAccesstoken => Request_[CreateCollectdTimeSeriesResponse]): CollectdTimeSeriesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[CollectdTimeSeriesResource]
   }
 }

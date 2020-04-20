@@ -54,7 +54,6 @@ object Scheduler {
     remove: js.Any => Boolean
   ): Scheduler[T] = {
     val __obj = js.Dynamic.literal(_current = _current.asInstanceOf[js.Any], _queue = _queue.asInstanceOf[js.Any], _repeat = _repeat.asInstanceOf[js.Any], add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), getTime = js.Any.fromFunction0(getTime), getTimeOf = js.Any.fromFunction1(getTimeOf), next = js.Any.fromFunction0(next), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[Scheduler[T]]
   }
 }

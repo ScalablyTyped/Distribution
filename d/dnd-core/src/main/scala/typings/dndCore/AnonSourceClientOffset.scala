@@ -14,7 +14,6 @@ object AnonSourceClientOffset {
   @scala.inline
   def apply(clientOffset: XYCoord, sourceClientOffset: XYCoord): AnonSourceClientOffset = {
     val __obj = js.Dynamic.literal(clientOffset = clientOffset.asInstanceOf[js.Any], sourceClientOffset = sourceClientOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSourceClientOffset]
   }
 }

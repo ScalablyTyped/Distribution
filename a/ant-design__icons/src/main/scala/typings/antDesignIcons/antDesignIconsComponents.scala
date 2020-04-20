@@ -1,6 +1,6 @@
 package typings.antDesignIcons
 
-import typings.antDesignIcons.componentsAntdIconMod.AntdIconProps
+import typings.antDesignIcons.antDesignIconsMod.default
 import typings.antDesignIcons.componentsAntdIconMod.IconComponentProps
 import typings.react.mod.ComponentType
 import typings.react.mod.RefAttributes
@@ -11,2388 +11,1590 @@ import scala.scalajs.js.annotation._
 
 object antDesignIconsComponents extends antDesignIconsProps {
   @scala.inline
-  def AccountBookFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AccountBookFilled: ComponentType[AccountBookFilledProps] = default.asInstanceOf[ComponentType[AccountBookFilledProps]]
   @scala.inline
-  def AccountBookOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAccountBookOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AccountBookOutlined: ComponentType[AccountBookOutlinedProps] = typings.antDesignIcons.antDesignIconsAccountBookOutlinedMod.default.asInstanceOf[ComponentType[AccountBookOutlinedProps]]
   @scala.inline
-  def AccountBookTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAccountBookTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AccountBookTwoTone: ComponentType[AccountBookTwoToneProps] = typings.antDesignIcons.antDesignIconsAccountBookTwoToneMod.default.asInstanceOf[ComponentType[AccountBookTwoToneProps]]
   @scala.inline
-  def AimOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAimOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AimOutlined: ComponentType[AimOutlinedProps] = typings.antDesignIcons.antDesignIconsAimOutlinedMod.default.asInstanceOf[ComponentType[AimOutlinedProps]]
   @scala.inline
-  def AlertFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlertFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlertFilled: ComponentType[AlertFilledProps] = typings.antDesignIcons.antDesignIconsAlertFilledMod.default.asInstanceOf[ComponentType[AlertFilledProps]]
   @scala.inline
-  def AlertOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlertOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlertOutlined: ComponentType[AlertOutlinedProps] = typings.antDesignIcons.antDesignIconsAlertOutlinedMod.default.asInstanceOf[ComponentType[AlertOutlinedProps]]
   @scala.inline
-  def AlertTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlertTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlertTwoTone: ComponentType[AlertTwoToneProps] = typings.antDesignIcons.antDesignIconsAlertTwoToneMod.default.asInstanceOf[ComponentType[AlertTwoToneProps]]
   @scala.inline
-  def AlibabaOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlibabaOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlibabaOutlined: ComponentType[AlibabaOutlinedProps] = typings.antDesignIcons.antDesignIconsAlibabaOutlinedMod.default.asInstanceOf[ComponentType[AlibabaOutlinedProps]]
   @scala.inline
-  def AlignCenterOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlignCenterOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlignCenterOutlined: ComponentType[AlignCenterOutlinedProps] = typings.antDesignIcons.antDesignIconsAlignCenterOutlinedMod.default.asInstanceOf[ComponentType[AlignCenterOutlinedProps]]
   @scala.inline
-  def AlignLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlignLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlignLeftOutlined: ComponentType[AlignLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsAlignLeftOutlinedMod.default.asInstanceOf[ComponentType[AlignLeftOutlinedProps]]
   @scala.inline
-  def AlignRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlignRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlignRightOutlined: ComponentType[AlignRightOutlinedProps] = typings.antDesignIcons.antDesignIconsAlignRightOutlinedMod.default.asInstanceOf[ComponentType[AlignRightOutlinedProps]]
   @scala.inline
-  def AlipayCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlipayCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlipayCircleFilled: ComponentType[AlipayCircleFilledProps] = typings.antDesignIcons.antDesignIconsAlipayCircleFilledMod.default.asInstanceOf[ComponentType[AlipayCircleFilledProps]]
   @scala.inline
-  def AlipayCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlipayCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlipayCircleOutlined: ComponentType[AlipayCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsAlipayCircleOutlinedMod.default.asInstanceOf[ComponentType[AlipayCircleOutlinedProps]]
   @scala.inline
-  def AlipayOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlipayOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlipayOutlined: ComponentType[AlipayOutlinedProps] = typings.antDesignIcons.antDesignIconsAlipayOutlinedMod.default.asInstanceOf[ComponentType[AlipayOutlinedProps]]
   @scala.inline
-  def AlipaySquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAlipaySquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AlipaySquareFilled: ComponentType[AlipaySquareFilledProps] = typings.antDesignIcons.antDesignIconsAlipaySquareFilledMod.default.asInstanceOf[ComponentType[AlipaySquareFilledProps]]
   @scala.inline
-  def AliwangwangFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAliwangwangFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AliwangwangFilled: ComponentType[AliwangwangFilledProps] = typings.antDesignIcons.antDesignIconsAliwangwangFilledMod.default.asInstanceOf[ComponentType[AliwangwangFilledProps]]
   @scala.inline
-  def AliwangwangOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAliwangwangOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AliwangwangOutlined: ComponentType[AliwangwangOutlinedProps] = typings.antDesignIcons.antDesignIconsAliwangwangOutlinedMod.default.asInstanceOf[ComponentType[AliwangwangOutlinedProps]]
   @scala.inline
-  def AliyunOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAliyunOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AliyunOutlined: ComponentType[AliyunOutlinedProps] = typings.antDesignIcons.antDesignIconsAliyunOutlinedMod.default.asInstanceOf[ComponentType[AliyunOutlinedProps]]
   @scala.inline
-  def AmazonCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAmazonCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AmazonCircleFilled: ComponentType[AmazonCircleFilledProps] = typings.antDesignIcons.antDesignIconsAmazonCircleFilledMod.default.asInstanceOf[ComponentType[AmazonCircleFilledProps]]
   @scala.inline
-  def AmazonOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAmazonOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AmazonOutlined: ComponentType[AmazonOutlinedProps] = typings.antDesignIcons.antDesignIconsAmazonOutlinedMod.default.asInstanceOf[ComponentType[AmazonOutlinedProps]]
   @scala.inline
-  def AmazonSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAmazonSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AmazonSquareFilled: ComponentType[AmazonSquareFilledProps] = typings.antDesignIcons.antDesignIconsAmazonSquareFilledMod.default.asInstanceOf[ComponentType[AmazonSquareFilledProps]]
   @scala.inline
-  def AndroidFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAndroidFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AndroidFilled: ComponentType[AndroidFilledProps] = typings.antDesignIcons.antDesignIconsAndroidFilledMod.default.asInstanceOf[ComponentType[AndroidFilledProps]]
   @scala.inline
-  def AndroidOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAndroidOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AndroidOutlined: ComponentType[AndroidOutlinedProps] = typings.antDesignIcons.antDesignIconsAndroidOutlinedMod.default.asInstanceOf[ComponentType[AndroidOutlinedProps]]
   @scala.inline
-  def AntCloudOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAntCloudOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AntCloudOutlined: ComponentType[AntCloudOutlinedProps] = typings.antDesignIcons.antDesignIconsAntCloudOutlinedMod.default.asInstanceOf[ComponentType[AntCloudOutlinedProps]]
   @scala.inline
-  def AntDesignOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAntDesignOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AntDesignOutlined: ComponentType[AntDesignOutlinedProps] = typings.antDesignIcons.antDesignIconsAntDesignOutlinedMod.default.asInstanceOf[ComponentType[AntDesignOutlinedProps]]
   @scala.inline
-  def AntdIcon: ComponentType[IconComponentProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.componentsAntdIconMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.IconComponentProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AntdIcon: ComponentType[IconComponentProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.componentsAntdIconMod.default.asInstanceOf[ComponentType[IconComponentProps with RefAttributes[HTMLSpanElement]]]
   @scala.inline
-  def ApartmentOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsApartmentOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ApartmentOutlined: ComponentType[ApartmentOutlinedProps] = typings.antDesignIcons.antDesignIconsApartmentOutlinedMod.default.asInstanceOf[ComponentType[ApartmentOutlinedProps]]
   @scala.inline
-  def ApiFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsApiFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ApiFilled: ComponentType[ApiFilledProps] = typings.antDesignIcons.antDesignIconsApiFilledMod.default.asInstanceOf[ComponentType[ApiFilledProps]]
   @scala.inline
-  def ApiOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsApiOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ApiOutlined: ComponentType[ApiOutlinedProps] = typings.antDesignIcons.antDesignIconsApiOutlinedMod.default.asInstanceOf[ComponentType[ApiOutlinedProps]]
   @scala.inline
-  def ApiTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsApiTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ApiTwoTone: ComponentType[ApiTwoToneProps] = typings.antDesignIcons.antDesignIconsApiTwoToneMod.default.asInstanceOf[ComponentType[ApiTwoToneProps]]
   @scala.inline
-  def AppleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAppleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AppleFilled: ComponentType[AppleFilledProps] = typings.antDesignIcons.antDesignIconsAppleFilledMod.default.asInstanceOf[ComponentType[AppleFilledProps]]
   @scala.inline
-  def AppleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAppleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AppleOutlined: ComponentType[AppleOutlinedProps] = typings.antDesignIcons.antDesignIconsAppleOutlinedMod.default.asInstanceOf[ComponentType[AppleOutlinedProps]]
   @scala.inline
-  def AppstoreAddOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAppstoreAddOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AppstoreAddOutlined: ComponentType[AppstoreAddOutlinedProps] = typings.antDesignIcons.antDesignIconsAppstoreAddOutlinedMod.default.asInstanceOf[ComponentType[AppstoreAddOutlinedProps]]
   @scala.inline
-  def AppstoreFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAppstoreFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AppstoreFilled: ComponentType[AppstoreFilledProps] = typings.antDesignIcons.antDesignIconsAppstoreFilledMod.default.asInstanceOf[ComponentType[AppstoreFilledProps]]
   @scala.inline
-  def AppstoreOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAppstoreOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AppstoreOutlined: ComponentType[AppstoreOutlinedProps] = typings.antDesignIcons.antDesignIconsAppstoreOutlinedMod.default.asInstanceOf[ComponentType[AppstoreOutlinedProps]]
   @scala.inline
-  def AppstoreTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAppstoreTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AppstoreTwoTone: ComponentType[AppstoreTwoToneProps] = typings.antDesignIcons.antDesignIconsAppstoreTwoToneMod.default.asInstanceOf[ComponentType[AppstoreTwoToneProps]]
   @scala.inline
-  def AreaChartOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAreaChartOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AreaChartOutlined: ComponentType[AreaChartOutlinedProps] = typings.antDesignIcons.antDesignIconsAreaChartOutlinedMod.default.asInstanceOf[ComponentType[AreaChartOutlinedProps]]
   @scala.inline
-  def ArrowDownOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsArrowDownOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ArrowDownOutlined: ComponentType[ArrowDownOutlinedProps] = typings.antDesignIcons.antDesignIconsArrowDownOutlinedMod.default.asInstanceOf[ComponentType[ArrowDownOutlinedProps]]
   @scala.inline
-  def ArrowLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsArrowLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ArrowLeftOutlined: ComponentType[ArrowLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsArrowLeftOutlinedMod.default.asInstanceOf[ComponentType[ArrowLeftOutlinedProps]]
   @scala.inline
-  def ArrowRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsArrowRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ArrowRightOutlined: ComponentType[ArrowRightOutlinedProps] = typings.antDesignIcons.antDesignIconsArrowRightOutlinedMod.default.asInstanceOf[ComponentType[ArrowRightOutlinedProps]]
   @scala.inline
-  def ArrowUpOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsArrowUpOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ArrowUpOutlined: ComponentType[ArrowUpOutlinedProps] = typings.antDesignIcons.antDesignIconsArrowUpOutlinedMod.default.asInstanceOf[ComponentType[ArrowUpOutlinedProps]]
   @scala.inline
-  def ArrowsAltOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsArrowsAltOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ArrowsAltOutlined: ComponentType[ArrowsAltOutlinedProps] = typings.antDesignIcons.antDesignIconsArrowsAltOutlinedMod.default.asInstanceOf[ComponentType[ArrowsAltOutlinedProps]]
   @scala.inline
-  def AudioFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAudioFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AudioFilled: ComponentType[AudioFilledProps] = typings.antDesignIcons.antDesignIconsAudioFilledMod.default.asInstanceOf[ComponentType[AudioFilledProps]]
   @scala.inline
-  def AudioMutedOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAudioMutedOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AudioMutedOutlined: ComponentType[AudioMutedOutlinedProps] = typings.antDesignIcons.antDesignIconsAudioMutedOutlinedMod.default.asInstanceOf[ComponentType[AudioMutedOutlinedProps]]
   @scala.inline
-  def AudioOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAudioOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AudioOutlined: ComponentType[AudioOutlinedProps] = typings.antDesignIcons.antDesignIconsAudioOutlinedMod.default.asInstanceOf[ComponentType[AudioOutlinedProps]]
   @scala.inline
-  def AudioTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAudioTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AudioTwoTone: ComponentType[AudioTwoToneProps] = typings.antDesignIcons.antDesignIconsAudioTwoToneMod.default.asInstanceOf[ComponentType[AudioTwoToneProps]]
   @scala.inline
-  def AuditOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsAuditOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def AuditOutlined: ComponentType[AuditOutlinedProps] = typings.antDesignIcons.antDesignIconsAuditOutlinedMod.default.asInstanceOf[ComponentType[AuditOutlinedProps]]
   @scala.inline
-  def BackwardFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBackwardFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BackwardFilled: ComponentType[BackwardFilledProps] = typings.antDesignIcons.antDesignIconsBackwardFilledMod.default.asInstanceOf[ComponentType[BackwardFilledProps]]
   @scala.inline
-  def BackwardOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBackwardOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BackwardOutlined: ComponentType[BackwardOutlinedProps] = typings.antDesignIcons.antDesignIconsBackwardOutlinedMod.default.asInstanceOf[ComponentType[BackwardOutlinedProps]]
   @scala.inline
-  def BankFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBankFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BankFilled: ComponentType[BankFilledProps] = typings.antDesignIcons.antDesignIconsBankFilledMod.default.asInstanceOf[ComponentType[BankFilledProps]]
   @scala.inline
-  def BankOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBankOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BankOutlined: ComponentType[BankOutlinedProps] = typings.antDesignIcons.antDesignIconsBankOutlinedMod.default.asInstanceOf[ComponentType[BankOutlinedProps]]
   @scala.inline
-  def BankTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBankTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BankTwoTone: ComponentType[BankTwoToneProps] = typings.antDesignIcons.antDesignIconsBankTwoToneMod.default.asInstanceOf[ComponentType[BankTwoToneProps]]
   @scala.inline
-  def BarChartOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBarChartOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BarChartOutlined: ComponentType[BarChartOutlinedProps] = typings.antDesignIcons.antDesignIconsBarChartOutlinedMod.default.asInstanceOf[ComponentType[BarChartOutlinedProps]]
   @scala.inline
-  def BarcodeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBarcodeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BarcodeOutlined: ComponentType[BarcodeOutlinedProps] = typings.antDesignIcons.antDesignIconsBarcodeOutlinedMod.default.asInstanceOf[ComponentType[BarcodeOutlinedProps]]
   @scala.inline
-  def BarsOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBarsOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BarsOutlined: ComponentType[BarsOutlinedProps] = typings.antDesignIcons.antDesignIconsBarsOutlinedMod.default.asInstanceOf[ComponentType[BarsOutlinedProps]]
   @scala.inline
-  def BehanceCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBehanceCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BehanceCircleFilled: ComponentType[BehanceCircleFilledProps] = typings.antDesignIcons.antDesignIconsBehanceCircleFilledMod.default.asInstanceOf[ComponentType[BehanceCircleFilledProps]]
   @scala.inline
-  def BehanceOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBehanceOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BehanceOutlined: ComponentType[BehanceOutlinedProps] = typings.antDesignIcons.antDesignIconsBehanceOutlinedMod.default.asInstanceOf[ComponentType[BehanceOutlinedProps]]
   @scala.inline
-  def BehanceSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBehanceSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BehanceSquareFilled: ComponentType[BehanceSquareFilledProps] = typings.antDesignIcons.antDesignIconsBehanceSquareFilledMod.default.asInstanceOf[ComponentType[BehanceSquareFilledProps]]
   @scala.inline
-  def BehanceSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBehanceSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BehanceSquareOutlined: ComponentType[BehanceSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsBehanceSquareOutlinedMod.default.asInstanceOf[ComponentType[BehanceSquareOutlinedProps]]
   @scala.inline
-  def BellFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBellFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BellFilled: ComponentType[BellFilledProps] = typings.antDesignIcons.antDesignIconsBellFilledMod.default.asInstanceOf[ComponentType[BellFilledProps]]
   @scala.inline
-  def BellOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBellOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BellOutlined: ComponentType[BellOutlinedProps] = typings.antDesignIcons.antDesignIconsBellOutlinedMod.default.asInstanceOf[ComponentType[BellOutlinedProps]]
   @scala.inline
-  def BellTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBellTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BellTwoTone: ComponentType[BellTwoToneProps] = typings.antDesignIcons.antDesignIconsBellTwoToneMod.default.asInstanceOf[ComponentType[BellTwoToneProps]]
   @scala.inline
-  def BgColorsOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBgColorsOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BgColorsOutlined: ComponentType[BgColorsOutlinedProps] = typings.antDesignIcons.antDesignIconsBgColorsOutlinedMod.default.asInstanceOf[ComponentType[BgColorsOutlinedProps]]
   @scala.inline
-  def BlockOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBlockOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BlockOutlined: ComponentType[BlockOutlinedProps] = typings.antDesignIcons.antDesignIconsBlockOutlinedMod.default.asInstanceOf[ComponentType[BlockOutlinedProps]]
   @scala.inline
-  def BoldOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBoldOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BoldOutlined: ComponentType[BoldOutlinedProps] = typings.antDesignIcons.antDesignIconsBoldOutlinedMod.default.asInstanceOf[ComponentType[BoldOutlinedProps]]
   @scala.inline
-  def BookFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBookFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BookFilled: ComponentType[BookFilledProps] = typings.antDesignIcons.antDesignIconsBookFilledMod.default.asInstanceOf[ComponentType[BookFilledProps]]
   @scala.inline
-  def BookOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBookOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BookOutlined: ComponentType[BookOutlinedProps] = typings.antDesignIcons.antDesignIconsBookOutlinedMod.default.asInstanceOf[ComponentType[BookOutlinedProps]]
   @scala.inline
-  def BookTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBookTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BookTwoTone: ComponentType[BookTwoToneProps] = typings.antDesignIcons.antDesignIconsBookTwoToneMod.default.asInstanceOf[ComponentType[BookTwoToneProps]]
   @scala.inline
-  def BorderBottomOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderBottomOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderBottomOutlined: ComponentType[BorderBottomOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderBottomOutlinedMod.default.asInstanceOf[ComponentType[BorderBottomOutlinedProps]]
   @scala.inline
-  def BorderHorizontalOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderHorizontalOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderHorizontalOutlined: ComponentType[BorderHorizontalOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderHorizontalOutlinedMod.default.asInstanceOf[ComponentType[BorderHorizontalOutlinedProps]]
   @scala.inline
-  def BorderInnerOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderInnerOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderInnerOutlined: ComponentType[BorderInnerOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderInnerOutlinedMod.default.asInstanceOf[ComponentType[BorderInnerOutlinedProps]]
   @scala.inline
-  def BorderLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderLeftOutlined: ComponentType[BorderLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderLeftOutlinedMod.default.asInstanceOf[ComponentType[BorderLeftOutlinedProps]]
   @scala.inline
-  def BorderOuterOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderOuterOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderOuterOutlined: ComponentType[BorderOuterOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderOuterOutlinedMod.default.asInstanceOf[ComponentType[BorderOuterOutlinedProps]]
   @scala.inline
-  def BorderOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderOutlined: ComponentType[BorderOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderOutlinedMod.default.asInstanceOf[ComponentType[BorderOutlinedProps]]
   @scala.inline
-  def BorderRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderRightOutlined: ComponentType[BorderRightOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderRightOutlinedMod.default.asInstanceOf[ComponentType[BorderRightOutlinedProps]]
   @scala.inline
-  def BorderTopOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderTopOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderTopOutlined: ComponentType[BorderTopOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderTopOutlinedMod.default.asInstanceOf[ComponentType[BorderTopOutlinedProps]]
   @scala.inline
-  def BorderVerticleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderVerticleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderVerticleOutlined: ComponentType[BorderVerticleOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderVerticleOutlinedMod.default.asInstanceOf[ComponentType[BorderVerticleOutlinedProps]]
   @scala.inline
-  def BorderlessTableOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBorderlessTableOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BorderlessTableOutlined: ComponentType[BorderlessTableOutlinedProps] = typings.antDesignIcons.antDesignIconsBorderlessTableOutlinedMod.default.asInstanceOf[ComponentType[BorderlessTableOutlinedProps]]
   @scala.inline
-  def BoxPlotFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBoxPlotFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BoxPlotFilled: ComponentType[BoxPlotFilledProps] = typings.antDesignIcons.antDesignIconsBoxPlotFilledMod.default.asInstanceOf[ComponentType[BoxPlotFilledProps]]
   @scala.inline
-  def BoxPlotOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBoxPlotOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BoxPlotOutlined: ComponentType[BoxPlotOutlinedProps] = typings.antDesignIcons.antDesignIconsBoxPlotOutlinedMod.default.asInstanceOf[ComponentType[BoxPlotOutlinedProps]]
   @scala.inline
-  def BoxPlotTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBoxPlotTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BoxPlotTwoTone: ComponentType[BoxPlotTwoToneProps] = typings.antDesignIcons.antDesignIconsBoxPlotTwoToneMod.default.asInstanceOf[ComponentType[BoxPlotTwoToneProps]]
   @scala.inline
-  def BranchesOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBranchesOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BranchesOutlined: ComponentType[BranchesOutlinedProps] = typings.antDesignIcons.antDesignIconsBranchesOutlinedMod.default.asInstanceOf[ComponentType[BranchesOutlinedProps]]
   @scala.inline
-  def BugFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBugFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BugFilled: ComponentType[BugFilledProps] = typings.antDesignIcons.antDesignIconsBugFilledMod.default.asInstanceOf[ComponentType[BugFilledProps]]
   @scala.inline
-  def BugOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBugOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BugOutlined: ComponentType[BugOutlinedProps] = typings.antDesignIcons.antDesignIconsBugOutlinedMod.default.asInstanceOf[ComponentType[BugOutlinedProps]]
   @scala.inline
-  def BugTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBugTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BugTwoTone: ComponentType[BugTwoToneProps] = typings.antDesignIcons.antDesignIconsBugTwoToneMod.default.asInstanceOf[ComponentType[BugTwoToneProps]]
   @scala.inline
-  def BuildFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBuildFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BuildFilled: ComponentType[BuildFilledProps] = typings.antDesignIcons.antDesignIconsBuildFilledMod.default.asInstanceOf[ComponentType[BuildFilledProps]]
   @scala.inline
-  def BuildOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBuildOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BuildOutlined: ComponentType[BuildOutlinedProps] = typings.antDesignIcons.antDesignIconsBuildOutlinedMod.default.asInstanceOf[ComponentType[BuildOutlinedProps]]
   @scala.inline
-  def BuildTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBuildTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BuildTwoTone: ComponentType[BuildTwoToneProps] = typings.antDesignIcons.antDesignIconsBuildTwoToneMod.default.asInstanceOf[ComponentType[BuildTwoToneProps]]
   @scala.inline
-  def BulbFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBulbFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BulbFilled: ComponentType[BulbFilledProps] = typings.antDesignIcons.antDesignIconsBulbFilledMod.default.asInstanceOf[ComponentType[BulbFilledProps]]
   @scala.inline
-  def BulbOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBulbOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BulbOutlined: ComponentType[BulbOutlinedProps] = typings.antDesignIcons.antDesignIconsBulbOutlinedMod.default.asInstanceOf[ComponentType[BulbOutlinedProps]]
   @scala.inline
-  def BulbTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsBulbTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def BulbTwoTone: ComponentType[BulbTwoToneProps] = typings.antDesignIcons.antDesignIconsBulbTwoToneMod.default.asInstanceOf[ComponentType[BulbTwoToneProps]]
   @scala.inline
-  def CalculatorFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCalculatorFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CalculatorFilled: ComponentType[CalculatorFilledProps] = typings.antDesignIcons.antDesignIconsCalculatorFilledMod.default.asInstanceOf[ComponentType[CalculatorFilledProps]]
   @scala.inline
-  def CalculatorOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCalculatorOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CalculatorOutlined: ComponentType[CalculatorOutlinedProps] = typings.antDesignIcons.antDesignIconsCalculatorOutlinedMod.default.asInstanceOf[ComponentType[CalculatorOutlinedProps]]
   @scala.inline
-  def CalculatorTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCalculatorTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CalculatorTwoTone: ComponentType[CalculatorTwoToneProps] = typings.antDesignIcons.antDesignIconsCalculatorTwoToneMod.default.asInstanceOf[ComponentType[CalculatorTwoToneProps]]
   @scala.inline
-  def CalendarFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCalendarFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CalendarFilled: ComponentType[CalendarFilledProps] = typings.antDesignIcons.antDesignIconsCalendarFilledMod.default.asInstanceOf[ComponentType[CalendarFilledProps]]
   @scala.inline
-  def CalendarOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCalendarOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CalendarOutlined: ComponentType[CalendarOutlinedProps] = typings.antDesignIcons.antDesignIconsCalendarOutlinedMod.default.asInstanceOf[ComponentType[CalendarOutlinedProps]]
   @scala.inline
-  def CalendarTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCalendarTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CalendarTwoTone: ComponentType[CalendarTwoToneProps] = typings.antDesignIcons.antDesignIconsCalendarTwoToneMod.default.asInstanceOf[ComponentType[CalendarTwoToneProps]]
   @scala.inline
-  def CameraFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCameraFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CameraFilled: ComponentType[CameraFilledProps] = typings.antDesignIcons.antDesignIconsCameraFilledMod.default.asInstanceOf[ComponentType[CameraFilledProps]]
   @scala.inline
-  def CameraOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCameraOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CameraOutlined: ComponentType[CameraOutlinedProps] = typings.antDesignIcons.antDesignIconsCameraOutlinedMod.default.asInstanceOf[ComponentType[CameraOutlinedProps]]
   @scala.inline
-  def CameraTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCameraTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CameraTwoTone: ComponentType[CameraTwoToneProps] = typings.antDesignIcons.antDesignIconsCameraTwoToneMod.default.asInstanceOf[ComponentType[CameraTwoToneProps]]
   @scala.inline
-  def CarFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCarFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CarFilled: ComponentType[CarFilledProps] = typings.antDesignIcons.antDesignIconsCarFilledMod.default.asInstanceOf[ComponentType[CarFilledProps]]
   @scala.inline
-  def CarOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCarOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CarOutlined: ComponentType[CarOutlinedProps] = typings.antDesignIcons.antDesignIconsCarOutlinedMod.default.asInstanceOf[ComponentType[CarOutlinedProps]]
   @scala.inline
-  def CarTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCarTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CarTwoTone: ComponentType[CarTwoToneProps] = typings.antDesignIcons.antDesignIconsCarTwoToneMod.default.asInstanceOf[ComponentType[CarTwoToneProps]]
   @scala.inline
-  def CaretDownFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCaretDownFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CaretDownFilled: ComponentType[CaretDownFilledProps] = typings.antDesignIcons.antDesignIconsCaretDownFilledMod.default.asInstanceOf[ComponentType[CaretDownFilledProps]]
   @scala.inline
-  def CaretDownOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCaretDownOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CaretDownOutlined: ComponentType[CaretDownOutlinedProps] = typings.antDesignIcons.antDesignIconsCaretDownOutlinedMod.default.asInstanceOf[ComponentType[CaretDownOutlinedProps]]
   @scala.inline
-  def CaretLeftFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCaretLeftFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CaretLeftFilled: ComponentType[CaretLeftFilledProps] = typings.antDesignIcons.antDesignIconsCaretLeftFilledMod.default.asInstanceOf[ComponentType[CaretLeftFilledProps]]
   @scala.inline
-  def CaretLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCaretLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CaretLeftOutlined: ComponentType[CaretLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsCaretLeftOutlinedMod.default.asInstanceOf[ComponentType[CaretLeftOutlinedProps]]
   @scala.inline
-  def CaretRightFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCaretRightFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CaretRightFilled: ComponentType[CaretRightFilledProps] = typings.antDesignIcons.antDesignIconsCaretRightFilledMod.default.asInstanceOf[ComponentType[CaretRightFilledProps]]
   @scala.inline
-  def CaretRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCaretRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CaretRightOutlined: ComponentType[CaretRightOutlinedProps] = typings.antDesignIcons.antDesignIconsCaretRightOutlinedMod.default.asInstanceOf[ComponentType[CaretRightOutlinedProps]]
   @scala.inline
-  def CaretUpFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCaretUpFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CaretUpFilled: ComponentType[CaretUpFilledProps] = typings.antDesignIcons.antDesignIconsCaretUpFilledMod.default.asInstanceOf[ComponentType[CaretUpFilledProps]]
   @scala.inline
-  def CaretUpOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCaretUpOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CaretUpOutlined: ComponentType[CaretUpOutlinedProps] = typings.antDesignIcons.antDesignIconsCaretUpOutlinedMod.default.asInstanceOf[ComponentType[CaretUpOutlinedProps]]
   @scala.inline
-  def CarryOutFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCarryOutFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CarryOutFilled: ComponentType[CarryOutFilledProps] = typings.antDesignIcons.antDesignIconsCarryOutFilledMod.default.asInstanceOf[ComponentType[CarryOutFilledProps]]
   @scala.inline
-  def CarryOutOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCarryOutOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CarryOutOutlined: ComponentType[CarryOutOutlinedProps] = typings.antDesignIcons.antDesignIconsCarryOutOutlinedMod.default.asInstanceOf[ComponentType[CarryOutOutlinedProps]]
   @scala.inline
-  def CarryOutTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCarryOutTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CarryOutTwoTone: ComponentType[CarryOutTwoToneProps] = typings.antDesignIcons.antDesignIconsCarryOutTwoToneMod.default.asInstanceOf[ComponentType[CarryOutTwoToneProps]]
   @scala.inline
-  def CheckCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCheckCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CheckCircleFilled: ComponentType[CheckCircleFilledProps] = typings.antDesignIcons.antDesignIconsCheckCircleFilledMod.default.asInstanceOf[ComponentType[CheckCircleFilledProps]]
   @scala.inline
-  def CheckCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCheckCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CheckCircleOutlined: ComponentType[CheckCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsCheckCircleOutlinedMod.default.asInstanceOf[ComponentType[CheckCircleOutlinedProps]]
   @scala.inline
-  def CheckCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCheckCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CheckCircleTwoTone: ComponentType[CheckCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsCheckCircleTwoToneMod.default.asInstanceOf[ComponentType[CheckCircleTwoToneProps]]
   @scala.inline
-  def CheckOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCheckOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CheckOutlined: ComponentType[CheckOutlinedProps] = typings.antDesignIcons.antDesignIconsCheckOutlinedMod.default.asInstanceOf[ComponentType[CheckOutlinedProps]]
   @scala.inline
-  def CheckSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCheckSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CheckSquareFilled: ComponentType[CheckSquareFilledProps] = typings.antDesignIcons.antDesignIconsCheckSquareFilledMod.default.asInstanceOf[ComponentType[CheckSquareFilledProps]]
   @scala.inline
-  def CheckSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCheckSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CheckSquareOutlined: ComponentType[CheckSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsCheckSquareOutlinedMod.default.asInstanceOf[ComponentType[CheckSquareOutlinedProps]]
   @scala.inline
-  def CheckSquareTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCheckSquareTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CheckSquareTwoTone: ComponentType[CheckSquareTwoToneProps] = typings.antDesignIcons.antDesignIconsCheckSquareTwoToneMod.default.asInstanceOf[ComponentType[CheckSquareTwoToneProps]]
   @scala.inline
-  def ChromeFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsChromeFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ChromeFilled: ComponentType[ChromeFilledProps] = typings.antDesignIcons.antDesignIconsChromeFilledMod.default.asInstanceOf[ComponentType[ChromeFilledProps]]
   @scala.inline
-  def ChromeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsChromeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ChromeOutlined: ComponentType[ChromeOutlinedProps] = typings.antDesignIcons.antDesignIconsChromeOutlinedMod.default.asInstanceOf[ComponentType[ChromeOutlinedProps]]
   @scala.inline
-  def CiCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCiCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CiCircleFilled: ComponentType[CiCircleFilledProps] = typings.antDesignIcons.antDesignIconsCiCircleFilledMod.default.asInstanceOf[ComponentType[CiCircleFilledProps]]
   @scala.inline
-  def CiCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCiCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CiCircleOutlined: ComponentType[CiCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsCiCircleOutlinedMod.default.asInstanceOf[ComponentType[CiCircleOutlinedProps]]
   @scala.inline
-  def CiCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCiCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CiCircleTwoTone: ComponentType[CiCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsCiCircleTwoToneMod.default.asInstanceOf[ComponentType[CiCircleTwoToneProps]]
   @scala.inline
-  def CiOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCiOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CiOutlined: ComponentType[CiOutlinedProps] = typings.antDesignIcons.antDesignIconsCiOutlinedMod.default.asInstanceOf[ComponentType[CiOutlinedProps]]
   @scala.inline
-  def CiTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCiTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CiTwoTone: ComponentType[CiTwoToneProps] = typings.antDesignIcons.antDesignIconsCiTwoToneMod.default.asInstanceOf[ComponentType[CiTwoToneProps]]
   @scala.inline
-  def ClearOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsClearOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ClearOutlined: ComponentType[ClearOutlinedProps] = typings.antDesignIcons.antDesignIconsClearOutlinedMod.default.asInstanceOf[ComponentType[ClearOutlinedProps]]
   @scala.inline
-  def ClockCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsClockCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ClockCircleFilled: ComponentType[ClockCircleFilledProps] = typings.antDesignIcons.antDesignIconsClockCircleFilledMod.default.asInstanceOf[ComponentType[ClockCircleFilledProps]]
   @scala.inline
-  def ClockCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsClockCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ClockCircleOutlined: ComponentType[ClockCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsClockCircleOutlinedMod.default.asInstanceOf[ComponentType[ClockCircleOutlinedProps]]
   @scala.inline
-  def ClockCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsClockCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ClockCircleTwoTone: ComponentType[ClockCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsClockCircleTwoToneMod.default.asInstanceOf[ComponentType[ClockCircleTwoToneProps]]
   @scala.inline
-  def CloseCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloseCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloseCircleFilled: ComponentType[CloseCircleFilledProps] = typings.antDesignIcons.antDesignIconsCloseCircleFilledMod.default.asInstanceOf[ComponentType[CloseCircleFilledProps]]
   @scala.inline
-  def CloseCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloseCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloseCircleOutlined: ComponentType[CloseCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsCloseCircleOutlinedMod.default.asInstanceOf[ComponentType[CloseCircleOutlinedProps]]
   @scala.inline
-  def CloseCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloseCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloseCircleTwoTone: ComponentType[CloseCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsCloseCircleTwoToneMod.default.asInstanceOf[ComponentType[CloseCircleTwoToneProps]]
   @scala.inline
-  def CloseOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloseOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloseOutlined: ComponentType[CloseOutlinedProps] = typings.antDesignIcons.antDesignIconsCloseOutlinedMod.default.asInstanceOf[ComponentType[CloseOutlinedProps]]
   @scala.inline
-  def CloseSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloseSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloseSquareFilled: ComponentType[CloseSquareFilledProps] = typings.antDesignIcons.antDesignIconsCloseSquareFilledMod.default.asInstanceOf[ComponentType[CloseSquareFilledProps]]
   @scala.inline
-  def CloseSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloseSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloseSquareOutlined: ComponentType[CloseSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsCloseSquareOutlinedMod.default.asInstanceOf[ComponentType[CloseSquareOutlinedProps]]
   @scala.inline
-  def CloseSquareTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloseSquareTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloseSquareTwoTone: ComponentType[CloseSquareTwoToneProps] = typings.antDesignIcons.antDesignIconsCloseSquareTwoToneMod.default.asInstanceOf[ComponentType[CloseSquareTwoToneProps]]
   @scala.inline
-  def CloudDownloadOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloudDownloadOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloudDownloadOutlined: ComponentType[CloudDownloadOutlinedProps] = typings.antDesignIcons.antDesignIconsCloudDownloadOutlinedMod.default.asInstanceOf[ComponentType[CloudDownloadOutlinedProps]]
   @scala.inline
-  def CloudFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloudFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloudFilled: ComponentType[CloudFilledProps] = typings.antDesignIcons.antDesignIconsCloudFilledMod.default.asInstanceOf[ComponentType[CloudFilledProps]]
   @scala.inline
-  def CloudOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloudOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloudOutlined: ComponentType[CloudOutlinedProps] = typings.antDesignIcons.antDesignIconsCloudOutlinedMod.default.asInstanceOf[ComponentType[CloudOutlinedProps]]
   @scala.inline
-  def CloudServerOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloudServerOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloudServerOutlined: ComponentType[CloudServerOutlinedProps] = typings.antDesignIcons.antDesignIconsCloudServerOutlinedMod.default.asInstanceOf[ComponentType[CloudServerOutlinedProps]]
   @scala.inline
-  def CloudSyncOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloudSyncOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloudSyncOutlined: ComponentType[CloudSyncOutlinedProps] = typings.antDesignIcons.antDesignIconsCloudSyncOutlinedMod.default.asInstanceOf[ComponentType[CloudSyncOutlinedProps]]
   @scala.inline
-  def CloudTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloudTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloudTwoTone: ComponentType[CloudTwoToneProps] = typings.antDesignIcons.antDesignIconsCloudTwoToneMod.default.asInstanceOf[ComponentType[CloudTwoToneProps]]
   @scala.inline
-  def CloudUploadOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCloudUploadOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CloudUploadOutlined: ComponentType[CloudUploadOutlinedProps] = typings.antDesignIcons.antDesignIconsCloudUploadOutlinedMod.default.asInstanceOf[ComponentType[CloudUploadOutlinedProps]]
   @scala.inline
-  def ClusterOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsClusterOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ClusterOutlined: ComponentType[ClusterOutlinedProps] = typings.antDesignIcons.antDesignIconsClusterOutlinedMod.default.asInstanceOf[ComponentType[ClusterOutlinedProps]]
   @scala.inline
-  def CodeFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodeFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodeFilled: ComponentType[CodeFilledProps] = typings.antDesignIcons.antDesignIconsCodeFilledMod.default.asInstanceOf[ComponentType[CodeFilledProps]]
   @scala.inline
-  def CodeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodeOutlined: ComponentType[CodeOutlinedProps] = typings.antDesignIcons.antDesignIconsCodeOutlinedMod.default.asInstanceOf[ComponentType[CodeOutlinedProps]]
   @scala.inline
-  def CodeSandboxCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodeSandboxCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodeSandboxCircleFilled: ComponentType[CodeSandboxCircleFilledProps] = typings.antDesignIcons.antDesignIconsCodeSandboxCircleFilledMod.default.asInstanceOf[ComponentType[CodeSandboxCircleFilledProps]]
   @scala.inline
-  def CodeSandboxOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodeSandboxOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodeSandboxOutlined: ComponentType[CodeSandboxOutlinedProps] = typings.antDesignIcons.antDesignIconsCodeSandboxOutlinedMod.default.asInstanceOf[ComponentType[CodeSandboxOutlinedProps]]
   @scala.inline
-  def CodeSandboxSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodeSandboxSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodeSandboxSquareFilled: ComponentType[CodeSandboxSquareFilledProps] = typings.antDesignIcons.antDesignIconsCodeSandboxSquareFilledMod.default.asInstanceOf[ComponentType[CodeSandboxSquareFilledProps]]
   @scala.inline
-  def CodeTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodeTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodeTwoTone: ComponentType[CodeTwoToneProps] = typings.antDesignIcons.antDesignIconsCodeTwoToneMod.default.asInstanceOf[ComponentType[CodeTwoToneProps]]
   @scala.inline
-  def CodepenCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodepenCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodepenCircleFilled: ComponentType[CodepenCircleFilledProps] = typings.antDesignIcons.antDesignIconsCodepenCircleFilledMod.default.asInstanceOf[ComponentType[CodepenCircleFilledProps]]
   @scala.inline
-  def CodepenCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodepenCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodepenCircleOutlined: ComponentType[CodepenCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsCodepenCircleOutlinedMod.default.asInstanceOf[ComponentType[CodepenCircleOutlinedProps]]
   @scala.inline
-  def CodepenOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodepenOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodepenOutlined: ComponentType[CodepenOutlinedProps] = typings.antDesignIcons.antDesignIconsCodepenOutlinedMod.default.asInstanceOf[ComponentType[CodepenOutlinedProps]]
   @scala.inline
-  def CodepenSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCodepenSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CodepenSquareFilled: ComponentType[CodepenSquareFilledProps] = typings.antDesignIcons.antDesignIconsCodepenSquareFilledMod.default.asInstanceOf[ComponentType[CodepenSquareFilledProps]]
   @scala.inline
-  def CoffeeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCoffeeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CoffeeOutlined: ComponentType[CoffeeOutlinedProps] = typings.antDesignIcons.antDesignIconsCoffeeOutlinedMod.default.asInstanceOf[ComponentType[CoffeeOutlinedProps]]
   @scala.inline
-  def ColumnHeightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsColumnHeightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ColumnHeightOutlined: ComponentType[ColumnHeightOutlinedProps] = typings.antDesignIcons.antDesignIconsColumnHeightOutlinedMod.default.asInstanceOf[ComponentType[ColumnHeightOutlinedProps]]
   @scala.inline
-  def ColumnWidthOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsColumnWidthOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ColumnWidthOutlined: ComponentType[ColumnWidthOutlinedProps] = typings.antDesignIcons.antDesignIconsColumnWidthOutlinedMod.default.asInstanceOf[ComponentType[ColumnWidthOutlinedProps]]
   @scala.inline
-  def CommentOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCommentOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CommentOutlined: ComponentType[CommentOutlinedProps] = typings.antDesignIcons.antDesignIconsCommentOutlinedMod.default.asInstanceOf[ComponentType[CommentOutlinedProps]]
   @scala.inline
-  def CompassFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCompassFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CompassFilled: ComponentType[CompassFilledProps] = typings.antDesignIcons.antDesignIconsCompassFilledMod.default.asInstanceOf[ComponentType[CompassFilledProps]]
   @scala.inline
-  def CompassOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCompassOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CompassOutlined: ComponentType[CompassOutlinedProps] = typings.antDesignIcons.antDesignIconsCompassOutlinedMod.default.asInstanceOf[ComponentType[CompassOutlinedProps]]
   @scala.inline
-  def CompassTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCompassTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CompassTwoTone: ComponentType[CompassTwoToneProps] = typings.antDesignIcons.antDesignIconsCompassTwoToneMod.default.asInstanceOf[ComponentType[CompassTwoToneProps]]
   @scala.inline
-  def CompressOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCompressOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CompressOutlined: ComponentType[CompressOutlinedProps] = typings.antDesignIcons.antDesignIconsCompressOutlinedMod.default.asInstanceOf[ComponentType[CompressOutlinedProps]]
   @scala.inline
-  def ConsoleSqlOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsConsoleSqlOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ConsoleSqlOutlined: ComponentType[ConsoleSqlOutlinedProps] = typings.antDesignIcons.antDesignIconsConsoleSqlOutlinedMod.default.asInstanceOf[ComponentType[ConsoleSqlOutlinedProps]]
   @scala.inline
-  def ContactsFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsContactsFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ContactsFilled: ComponentType[ContactsFilledProps] = typings.antDesignIcons.antDesignIconsContactsFilledMod.default.asInstanceOf[ComponentType[ContactsFilledProps]]
   @scala.inline
-  def ContactsOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsContactsOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ContactsOutlined: ComponentType[ContactsOutlinedProps] = typings.antDesignIcons.antDesignIconsContactsOutlinedMod.default.asInstanceOf[ComponentType[ContactsOutlinedProps]]
   @scala.inline
-  def ContactsTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsContactsTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ContactsTwoTone: ComponentType[ContactsTwoToneProps] = typings.antDesignIcons.antDesignIconsContactsTwoToneMod.default.asInstanceOf[ComponentType[ContactsTwoToneProps]]
   @scala.inline
-  def ContainerFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsContainerFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ContainerFilled: ComponentType[ContainerFilledProps] = typings.antDesignIcons.antDesignIconsContainerFilledMod.default.asInstanceOf[ComponentType[ContainerFilledProps]]
   @scala.inline
-  def ContainerOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsContainerOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ContainerOutlined: ComponentType[ContainerOutlinedProps] = typings.antDesignIcons.antDesignIconsContainerOutlinedMod.default.asInstanceOf[ComponentType[ContainerOutlinedProps]]
   @scala.inline
-  def ContainerTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsContainerTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ContainerTwoTone: ComponentType[ContainerTwoToneProps] = typings.antDesignIcons.antDesignIconsContainerTwoToneMod.default.asInstanceOf[ComponentType[ContainerTwoToneProps]]
   @scala.inline
-  def ControlFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsControlFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ControlFilled: ComponentType[ControlFilledProps] = typings.antDesignIcons.antDesignIconsControlFilledMod.default.asInstanceOf[ComponentType[ControlFilledProps]]
   @scala.inline
-  def ControlOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsControlOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ControlOutlined: ComponentType[ControlOutlinedProps] = typings.antDesignIcons.antDesignIconsControlOutlinedMod.default.asInstanceOf[ComponentType[ControlOutlinedProps]]
   @scala.inline
-  def ControlTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsControlTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ControlTwoTone: ComponentType[ControlTwoToneProps] = typings.antDesignIcons.antDesignIconsControlTwoToneMod.default.asInstanceOf[ComponentType[ControlTwoToneProps]]
   @scala.inline
-  def CopyFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCopyFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CopyFilled: ComponentType[CopyFilledProps] = typings.antDesignIcons.antDesignIconsCopyFilledMod.default.asInstanceOf[ComponentType[CopyFilledProps]]
   @scala.inline
-  def CopyOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCopyOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CopyOutlined: ComponentType[CopyOutlinedProps] = typings.antDesignIcons.antDesignIconsCopyOutlinedMod.default.asInstanceOf[ComponentType[CopyOutlinedProps]]
   @scala.inline
-  def CopyTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCopyTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CopyTwoTone: ComponentType[CopyTwoToneProps] = typings.antDesignIcons.antDesignIconsCopyTwoToneMod.default.asInstanceOf[ComponentType[CopyTwoToneProps]]
   @scala.inline
-  def CopyrightCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCopyrightCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CopyrightCircleFilled: ComponentType[CopyrightCircleFilledProps] = typings.antDesignIcons.antDesignIconsCopyrightCircleFilledMod.default.asInstanceOf[ComponentType[CopyrightCircleFilledProps]]
   @scala.inline
-  def CopyrightCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCopyrightCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CopyrightCircleOutlined: ComponentType[CopyrightCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsCopyrightCircleOutlinedMod.default.asInstanceOf[ComponentType[CopyrightCircleOutlinedProps]]
   @scala.inline
-  def CopyrightCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCopyrightCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CopyrightCircleTwoTone: ComponentType[CopyrightCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsCopyrightCircleTwoToneMod.default.asInstanceOf[ComponentType[CopyrightCircleTwoToneProps]]
   @scala.inline
-  def CopyrightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCopyrightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CopyrightOutlined: ComponentType[CopyrightOutlinedProps] = typings.antDesignIcons.antDesignIconsCopyrightOutlinedMod.default.asInstanceOf[ComponentType[CopyrightOutlinedProps]]
   @scala.inline
-  def CopyrightTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCopyrightTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CopyrightTwoTone: ComponentType[CopyrightTwoToneProps] = typings.antDesignIcons.antDesignIconsCopyrightTwoToneMod.default.asInstanceOf[ComponentType[CopyrightTwoToneProps]]
   @scala.inline
-  def CreditCardFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCreditCardFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CreditCardFilled: ComponentType[CreditCardFilledProps] = typings.antDesignIcons.antDesignIconsCreditCardFilledMod.default.asInstanceOf[ComponentType[CreditCardFilledProps]]
   @scala.inline
-  def CreditCardOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCreditCardOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CreditCardOutlined: ComponentType[CreditCardOutlinedProps] = typings.antDesignIcons.antDesignIconsCreditCardOutlinedMod.default.asInstanceOf[ComponentType[CreditCardOutlinedProps]]
   @scala.inline
-  def CreditCardTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCreditCardTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CreditCardTwoTone: ComponentType[CreditCardTwoToneProps] = typings.antDesignIcons.antDesignIconsCreditCardTwoToneMod.default.asInstanceOf[ComponentType[CreditCardTwoToneProps]]
   @scala.inline
-  def CrownFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCrownFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CrownFilled: ComponentType[CrownFilledProps] = typings.antDesignIcons.antDesignIconsCrownFilledMod.default.asInstanceOf[ComponentType[CrownFilledProps]]
   @scala.inline
-  def CrownOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCrownOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CrownOutlined: ComponentType[CrownOutlinedProps] = typings.antDesignIcons.antDesignIconsCrownOutlinedMod.default.asInstanceOf[ComponentType[CrownOutlinedProps]]
   @scala.inline
-  def CrownTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCrownTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CrownTwoTone: ComponentType[CrownTwoToneProps] = typings.antDesignIcons.antDesignIconsCrownTwoToneMod.default.asInstanceOf[ComponentType[CrownTwoToneProps]]
   @scala.inline
-  def CustomerServiceFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCustomerServiceFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CustomerServiceFilled: ComponentType[CustomerServiceFilledProps] = typings.antDesignIcons.antDesignIconsCustomerServiceFilledMod.default.asInstanceOf[ComponentType[CustomerServiceFilledProps]]
   @scala.inline
-  def CustomerServiceOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCustomerServiceOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CustomerServiceOutlined: ComponentType[CustomerServiceOutlinedProps] = typings.antDesignIcons.antDesignIconsCustomerServiceOutlinedMod.default.asInstanceOf[ComponentType[CustomerServiceOutlinedProps]]
   @scala.inline
-  def CustomerServiceTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsCustomerServiceTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def CustomerServiceTwoTone: ComponentType[CustomerServiceTwoToneProps] = typings.antDesignIcons.antDesignIconsCustomerServiceTwoToneMod.default.asInstanceOf[ComponentType[CustomerServiceTwoToneProps]]
   @scala.inline
-  def DashOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDashOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DashOutlined: ComponentType[DashOutlinedProps] = typings.antDesignIcons.antDesignIconsDashOutlinedMod.default.asInstanceOf[ComponentType[DashOutlinedProps]]
   @scala.inline
-  def DashboardFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDashboardFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DashboardFilled: ComponentType[DashboardFilledProps] = typings.antDesignIcons.antDesignIconsDashboardFilledMod.default.asInstanceOf[ComponentType[DashboardFilledProps]]
   @scala.inline
-  def DashboardOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDashboardOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DashboardOutlined: ComponentType[DashboardOutlinedProps] = typings.antDesignIcons.antDesignIconsDashboardOutlinedMod.default.asInstanceOf[ComponentType[DashboardOutlinedProps]]
   @scala.inline
-  def DashboardTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDashboardTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DashboardTwoTone: ComponentType[DashboardTwoToneProps] = typings.antDesignIcons.antDesignIconsDashboardTwoToneMod.default.asInstanceOf[ComponentType[DashboardTwoToneProps]]
   @scala.inline
-  def DatabaseFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDatabaseFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DatabaseFilled: ComponentType[DatabaseFilledProps] = typings.antDesignIcons.antDesignIconsDatabaseFilledMod.default.asInstanceOf[ComponentType[DatabaseFilledProps]]
   @scala.inline
-  def DatabaseOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDatabaseOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DatabaseOutlined: ComponentType[DatabaseOutlinedProps] = typings.antDesignIcons.antDesignIconsDatabaseOutlinedMod.default.asInstanceOf[ComponentType[DatabaseOutlinedProps]]
   @scala.inline
-  def DatabaseTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDatabaseTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DatabaseTwoTone: ComponentType[DatabaseTwoToneProps] = typings.antDesignIcons.antDesignIconsDatabaseTwoToneMod.default.asInstanceOf[ComponentType[DatabaseTwoToneProps]]
   @scala.inline
-  def DeleteColumnOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDeleteColumnOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DeleteColumnOutlined: ComponentType[DeleteColumnOutlinedProps] = typings.antDesignIcons.antDesignIconsDeleteColumnOutlinedMod.default.asInstanceOf[ComponentType[DeleteColumnOutlinedProps]]
   @scala.inline
-  def DeleteFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDeleteFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DeleteFilled: ComponentType[DeleteFilledProps] = typings.antDesignIcons.antDesignIconsDeleteFilledMod.default.asInstanceOf[ComponentType[DeleteFilledProps]]
   @scala.inline
-  def DeleteOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDeleteOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DeleteOutlined: ComponentType[DeleteOutlinedProps] = typings.antDesignIcons.antDesignIconsDeleteOutlinedMod.default.asInstanceOf[ComponentType[DeleteOutlinedProps]]
   @scala.inline
-  def DeleteRowOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDeleteRowOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DeleteRowOutlined: ComponentType[DeleteRowOutlinedProps] = typings.antDesignIcons.antDesignIconsDeleteRowOutlinedMod.default.asInstanceOf[ComponentType[DeleteRowOutlinedProps]]
   @scala.inline
-  def DeleteTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDeleteTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DeleteTwoTone: ComponentType[DeleteTwoToneProps] = typings.antDesignIcons.antDesignIconsDeleteTwoToneMod.default.asInstanceOf[ComponentType[DeleteTwoToneProps]]
   @scala.inline
-  def DeliveredProcedureOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDeliveredProcedureOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DeliveredProcedureOutlined: ComponentType[DeliveredProcedureOutlinedProps] = typings.antDesignIcons.antDesignIconsDeliveredProcedureOutlinedMod.default.asInstanceOf[ComponentType[DeliveredProcedureOutlinedProps]]
   @scala.inline
-  def DeploymentUnitOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDeploymentUnitOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DeploymentUnitOutlined: ComponentType[DeploymentUnitOutlinedProps] = typings.antDesignIcons.antDesignIconsDeploymentUnitOutlinedMod.default.asInstanceOf[ComponentType[DeploymentUnitOutlinedProps]]
   @scala.inline
-  def DesktopOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDesktopOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DesktopOutlined: ComponentType[DesktopOutlinedProps] = typings.antDesignIcons.antDesignIconsDesktopOutlinedMod.default.asInstanceOf[ComponentType[DesktopOutlinedProps]]
   @scala.inline
-  def DiffFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDiffFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DiffFilled: ComponentType[DiffFilledProps] = typings.antDesignIcons.antDesignIconsDiffFilledMod.default.asInstanceOf[ComponentType[DiffFilledProps]]
   @scala.inline
-  def DiffOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDiffOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DiffOutlined: ComponentType[DiffOutlinedProps] = typings.antDesignIcons.antDesignIconsDiffOutlinedMod.default.asInstanceOf[ComponentType[DiffOutlinedProps]]
   @scala.inline
-  def DiffTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDiffTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DiffTwoTone: ComponentType[DiffTwoToneProps] = typings.antDesignIcons.antDesignIconsDiffTwoToneMod.default.asInstanceOf[ComponentType[DiffTwoToneProps]]
   @scala.inline
-  def DingdingOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDingdingOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DingdingOutlined: ComponentType[DingdingOutlinedProps] = typings.antDesignIcons.antDesignIconsDingdingOutlinedMod.default.asInstanceOf[ComponentType[DingdingOutlinedProps]]
   @scala.inline
-  def DingtalkCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDingtalkCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DingtalkCircleFilled: ComponentType[DingtalkCircleFilledProps] = typings.antDesignIcons.antDesignIconsDingtalkCircleFilledMod.default.asInstanceOf[ComponentType[DingtalkCircleFilledProps]]
   @scala.inline
-  def DingtalkOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDingtalkOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DingtalkOutlined: ComponentType[DingtalkOutlinedProps] = typings.antDesignIcons.antDesignIconsDingtalkOutlinedMod.default.asInstanceOf[ComponentType[DingtalkOutlinedProps]]
   @scala.inline
-  def DingtalkSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDingtalkSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DingtalkSquareFilled: ComponentType[DingtalkSquareFilledProps] = typings.antDesignIcons.antDesignIconsDingtalkSquareFilledMod.default.asInstanceOf[ComponentType[DingtalkSquareFilledProps]]
   @scala.inline
-  def DisconnectOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDisconnectOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DisconnectOutlined: ComponentType[DisconnectOutlinedProps] = typings.antDesignIcons.antDesignIconsDisconnectOutlinedMod.default.asInstanceOf[ComponentType[DisconnectOutlinedProps]]
   @scala.inline
-  def DislikeFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDislikeFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DislikeFilled: ComponentType[DislikeFilledProps] = typings.antDesignIcons.antDesignIconsDislikeFilledMod.default.asInstanceOf[ComponentType[DislikeFilledProps]]
   @scala.inline
-  def DislikeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDislikeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DislikeOutlined: ComponentType[DislikeOutlinedProps] = typings.antDesignIcons.antDesignIconsDislikeOutlinedMod.default.asInstanceOf[ComponentType[DislikeOutlinedProps]]
   @scala.inline
-  def DislikeTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDislikeTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DislikeTwoTone: ComponentType[DislikeTwoToneProps] = typings.antDesignIcons.antDesignIconsDislikeTwoToneMod.default.asInstanceOf[ComponentType[DislikeTwoToneProps]]
   @scala.inline
-  def Dist: ComponentType[
-    typings.antDesignIcons.iconMod.IconComponentProps with RefAttributes[HTMLSpanElement]
-  ] = typings.antDesignIcons.mod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.iconMod.IconComponentProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def Dist: ComponentType[DistProps] = typings.antDesignIcons.mod.default.asInstanceOf[ComponentType[DistProps]]
   @scala.inline
-  def DollarCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDollarCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DollarCircleFilled: ComponentType[DollarCircleFilledProps] = typings.antDesignIcons.antDesignIconsDollarCircleFilledMod.default.asInstanceOf[ComponentType[DollarCircleFilledProps]]
   @scala.inline
-  def DollarCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDollarCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DollarCircleOutlined: ComponentType[DollarCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsDollarCircleOutlinedMod.default.asInstanceOf[ComponentType[DollarCircleOutlinedProps]]
   @scala.inline
-  def DollarCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDollarCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DollarCircleTwoTone: ComponentType[DollarCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsDollarCircleTwoToneMod.default.asInstanceOf[ComponentType[DollarCircleTwoToneProps]]
   @scala.inline
-  def DollarOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDollarOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DollarOutlined: ComponentType[DollarOutlinedProps] = typings.antDesignIcons.antDesignIconsDollarOutlinedMod.default.asInstanceOf[ComponentType[DollarOutlinedProps]]
   @scala.inline
-  def DollarTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDollarTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DollarTwoTone: ComponentType[DollarTwoToneProps] = typings.antDesignIcons.antDesignIconsDollarTwoToneMod.default.asInstanceOf[ComponentType[DollarTwoToneProps]]
   @scala.inline
-  def DotChartOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDotChartOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DotChartOutlined: ComponentType[DotChartOutlinedProps] = typings.antDesignIcons.antDesignIconsDotChartOutlinedMod.default.asInstanceOf[ComponentType[DotChartOutlinedProps]]
   @scala.inline
-  def DoubleLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDoubleLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DoubleLeftOutlined: ComponentType[DoubleLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsDoubleLeftOutlinedMod.default.asInstanceOf[ComponentType[DoubleLeftOutlinedProps]]
   @scala.inline
-  def DoubleRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDoubleRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DoubleRightOutlined: ComponentType[DoubleRightOutlinedProps] = typings.antDesignIcons.antDesignIconsDoubleRightOutlinedMod.default.asInstanceOf[ComponentType[DoubleRightOutlinedProps]]
   @scala.inline
-  def DownCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDownCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DownCircleFilled: ComponentType[DownCircleFilledProps] = typings.antDesignIcons.antDesignIconsDownCircleFilledMod.default.asInstanceOf[ComponentType[DownCircleFilledProps]]
   @scala.inline
-  def DownCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDownCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DownCircleOutlined: ComponentType[DownCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsDownCircleOutlinedMod.default.asInstanceOf[ComponentType[DownCircleOutlinedProps]]
   @scala.inline
-  def DownCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDownCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DownCircleTwoTone: ComponentType[DownCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsDownCircleTwoToneMod.default.asInstanceOf[ComponentType[DownCircleTwoToneProps]]
   @scala.inline
-  def DownOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDownOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DownOutlined: ComponentType[DownOutlinedProps] = typings.antDesignIcons.antDesignIconsDownOutlinedMod.default.asInstanceOf[ComponentType[DownOutlinedProps]]
   @scala.inline
-  def DownSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDownSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DownSquareFilled: ComponentType[DownSquareFilledProps] = typings.antDesignIcons.antDesignIconsDownSquareFilledMod.default.asInstanceOf[ComponentType[DownSquareFilledProps]]
   @scala.inline
-  def DownSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDownSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DownSquareOutlined: ComponentType[DownSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsDownSquareOutlinedMod.default.asInstanceOf[ComponentType[DownSquareOutlinedProps]]
   @scala.inline
-  def DownSquareTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDownSquareTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DownSquareTwoTone: ComponentType[DownSquareTwoToneProps] = typings.antDesignIcons.antDesignIconsDownSquareTwoToneMod.default.asInstanceOf[ComponentType[DownSquareTwoToneProps]]
   @scala.inline
-  def DownloadOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDownloadOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DownloadOutlined: ComponentType[DownloadOutlinedProps] = typings.antDesignIcons.antDesignIconsDownloadOutlinedMod.default.asInstanceOf[ComponentType[DownloadOutlinedProps]]
   @scala.inline
-  def DragOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDragOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DragOutlined: ComponentType[DragOutlinedProps] = typings.antDesignIcons.antDesignIconsDragOutlinedMod.default.asInstanceOf[ComponentType[DragOutlinedProps]]
   @scala.inline
-  def DribbbleCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDribbbleCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DribbbleCircleFilled: ComponentType[DribbbleCircleFilledProps] = typings.antDesignIcons.antDesignIconsDribbbleCircleFilledMod.default.asInstanceOf[ComponentType[DribbbleCircleFilledProps]]
   @scala.inline
-  def DribbbleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDribbbleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DribbbleOutlined: ComponentType[DribbbleOutlinedProps] = typings.antDesignIcons.antDesignIconsDribbbleOutlinedMod.default.asInstanceOf[ComponentType[DribbbleOutlinedProps]]
   @scala.inline
-  def DribbbleSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDribbbleSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DribbbleSquareFilled: ComponentType[DribbbleSquareFilledProps] = typings.antDesignIcons.antDesignIconsDribbbleSquareFilledMod.default.asInstanceOf[ComponentType[DribbbleSquareFilledProps]]
   @scala.inline
-  def DribbbleSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDribbbleSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DribbbleSquareOutlined: ComponentType[DribbbleSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsDribbbleSquareOutlinedMod.default.asInstanceOf[ComponentType[DribbbleSquareOutlinedProps]]
   @scala.inline
-  def DropboxCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDropboxCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DropboxCircleFilled: ComponentType[DropboxCircleFilledProps] = typings.antDesignIcons.antDesignIconsDropboxCircleFilledMod.default.asInstanceOf[ComponentType[DropboxCircleFilledProps]]
   @scala.inline
-  def DropboxOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDropboxOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DropboxOutlined: ComponentType[DropboxOutlinedProps] = typings.antDesignIcons.antDesignIconsDropboxOutlinedMod.default.asInstanceOf[ComponentType[DropboxOutlinedProps]]
   @scala.inline
-  def DropboxSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsDropboxSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def DropboxSquareFilled: ComponentType[DropboxSquareFilledProps] = typings.antDesignIcons.antDesignIconsDropboxSquareFilledMod.default.asInstanceOf[ComponentType[DropboxSquareFilledProps]]
   @scala.inline
-  def EditFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEditFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EditFilled: ComponentType[EditFilledProps] = typings.antDesignIcons.antDesignIconsEditFilledMod.default.asInstanceOf[ComponentType[EditFilledProps]]
   @scala.inline
-  def EditOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEditOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EditOutlined: ComponentType[EditOutlinedProps] = typings.antDesignIcons.antDesignIconsEditOutlinedMod.default.asInstanceOf[ComponentType[EditOutlinedProps]]
   @scala.inline
-  def EditTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEditTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EditTwoTone: ComponentType[EditTwoToneProps] = typings.antDesignIcons.antDesignIconsEditTwoToneMod.default.asInstanceOf[ComponentType[EditTwoToneProps]]
   @scala.inline
-  def EllipsisOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEllipsisOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EllipsisOutlined: ComponentType[EllipsisOutlinedProps] = typings.antDesignIcons.antDesignIconsEllipsisOutlinedMod.default.asInstanceOf[ComponentType[EllipsisOutlinedProps]]
   @scala.inline
-  def EnterOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEnterOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EnterOutlined: ComponentType[EnterOutlinedProps] = typings.antDesignIcons.antDesignIconsEnterOutlinedMod.default.asInstanceOf[ComponentType[EnterOutlinedProps]]
   @scala.inline
-  def EnvironmentFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEnvironmentFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EnvironmentFilled: ComponentType[EnvironmentFilledProps] = typings.antDesignIcons.antDesignIconsEnvironmentFilledMod.default.asInstanceOf[ComponentType[EnvironmentFilledProps]]
   @scala.inline
-  def EnvironmentOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEnvironmentOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EnvironmentOutlined: ComponentType[EnvironmentOutlinedProps] = typings.antDesignIcons.antDesignIconsEnvironmentOutlinedMod.default.asInstanceOf[ComponentType[EnvironmentOutlinedProps]]
   @scala.inline
-  def EnvironmentTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEnvironmentTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EnvironmentTwoTone: ComponentType[EnvironmentTwoToneProps] = typings.antDesignIcons.antDesignIconsEnvironmentTwoToneMod.default.asInstanceOf[ComponentType[EnvironmentTwoToneProps]]
   @scala.inline
-  def EuroCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEuroCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EuroCircleFilled: ComponentType[EuroCircleFilledProps] = typings.antDesignIcons.antDesignIconsEuroCircleFilledMod.default.asInstanceOf[ComponentType[EuroCircleFilledProps]]
   @scala.inline
-  def EuroCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEuroCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EuroCircleOutlined: ComponentType[EuroCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsEuroCircleOutlinedMod.default.asInstanceOf[ComponentType[EuroCircleOutlinedProps]]
   @scala.inline
-  def EuroCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEuroCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EuroCircleTwoTone: ComponentType[EuroCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsEuroCircleTwoToneMod.default.asInstanceOf[ComponentType[EuroCircleTwoToneProps]]
   @scala.inline
-  def EuroOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEuroOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EuroOutlined: ComponentType[EuroOutlinedProps] = typings.antDesignIcons.antDesignIconsEuroOutlinedMod.default.asInstanceOf[ComponentType[EuroOutlinedProps]]
   @scala.inline
-  def EuroTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEuroTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EuroTwoTone: ComponentType[EuroTwoToneProps] = typings.antDesignIcons.antDesignIconsEuroTwoToneMod.default.asInstanceOf[ComponentType[EuroTwoToneProps]]
   @scala.inline
-  def ExceptionOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExceptionOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExceptionOutlined: ComponentType[ExceptionOutlinedProps] = typings.antDesignIcons.antDesignIconsExceptionOutlinedMod.default.asInstanceOf[ComponentType[ExceptionOutlinedProps]]
   @scala.inline
-  def ExclamationCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExclamationCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExclamationCircleFilled: ComponentType[ExclamationCircleFilledProps] = typings.antDesignIcons.antDesignIconsExclamationCircleFilledMod.default.asInstanceOf[ComponentType[ExclamationCircleFilledProps]]
   @scala.inline
-  def ExclamationCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExclamationCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExclamationCircleOutlined: ComponentType[ExclamationCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsExclamationCircleOutlinedMod.default.asInstanceOf[ComponentType[ExclamationCircleOutlinedProps]]
   @scala.inline
-  def ExclamationCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExclamationCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExclamationCircleTwoTone: ComponentType[ExclamationCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsExclamationCircleTwoToneMod.default.asInstanceOf[ComponentType[ExclamationCircleTwoToneProps]]
   @scala.inline
-  def ExclamationOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExclamationOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExclamationOutlined: ComponentType[ExclamationOutlinedProps] = typings.antDesignIcons.antDesignIconsExclamationOutlinedMod.default.asInstanceOf[ComponentType[ExclamationOutlinedProps]]
   @scala.inline
-  def ExpandAltOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExpandAltOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExpandAltOutlined: ComponentType[ExpandAltOutlinedProps] = typings.antDesignIcons.antDesignIconsExpandAltOutlinedMod.default.asInstanceOf[ComponentType[ExpandAltOutlinedProps]]
   @scala.inline
-  def ExpandOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExpandOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExpandOutlined: ComponentType[ExpandOutlinedProps] = typings.antDesignIcons.antDesignIconsExpandOutlinedMod.default.asInstanceOf[ComponentType[ExpandOutlinedProps]]
   @scala.inline
-  def ExperimentFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExperimentFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExperimentFilled: ComponentType[ExperimentFilledProps] = typings.antDesignIcons.antDesignIconsExperimentFilledMod.default.asInstanceOf[ComponentType[ExperimentFilledProps]]
   @scala.inline
-  def ExperimentOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExperimentOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExperimentOutlined: ComponentType[ExperimentOutlinedProps] = typings.antDesignIcons.antDesignIconsExperimentOutlinedMod.default.asInstanceOf[ComponentType[ExperimentOutlinedProps]]
   @scala.inline
-  def ExperimentTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExperimentTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExperimentTwoTone: ComponentType[ExperimentTwoToneProps] = typings.antDesignIcons.antDesignIconsExperimentTwoToneMod.default.asInstanceOf[ComponentType[ExperimentTwoToneProps]]
   @scala.inline
-  def ExportOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsExportOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ExportOutlined: ComponentType[ExportOutlinedProps] = typings.antDesignIcons.antDesignIconsExportOutlinedMod.default.asInstanceOf[ComponentType[ExportOutlinedProps]]
   @scala.inline
-  def EyeFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEyeFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EyeFilled: ComponentType[EyeFilledProps] = typings.antDesignIcons.antDesignIconsEyeFilledMod.default.asInstanceOf[ComponentType[EyeFilledProps]]
   @scala.inline
-  def EyeInvisibleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEyeInvisibleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EyeInvisibleFilled: ComponentType[EyeInvisibleFilledProps] = typings.antDesignIcons.antDesignIconsEyeInvisibleFilledMod.default.asInstanceOf[ComponentType[EyeInvisibleFilledProps]]
   @scala.inline
-  def EyeInvisibleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEyeInvisibleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EyeInvisibleOutlined: ComponentType[EyeInvisibleOutlinedProps] = typings.antDesignIcons.antDesignIconsEyeInvisibleOutlinedMod.default.asInstanceOf[ComponentType[EyeInvisibleOutlinedProps]]
   @scala.inline
-  def EyeInvisibleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEyeInvisibleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EyeInvisibleTwoTone: ComponentType[EyeInvisibleTwoToneProps] = typings.antDesignIcons.antDesignIconsEyeInvisibleTwoToneMod.default.asInstanceOf[ComponentType[EyeInvisibleTwoToneProps]]
   @scala.inline
-  def EyeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEyeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EyeOutlined: ComponentType[EyeOutlinedProps] = typings.antDesignIcons.antDesignIconsEyeOutlinedMod.default.asInstanceOf[ComponentType[EyeOutlinedProps]]
   @scala.inline
-  def EyeTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsEyeTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def EyeTwoTone: ComponentType[EyeTwoToneProps] = typings.antDesignIcons.antDesignIconsEyeTwoToneMod.default.asInstanceOf[ComponentType[EyeTwoToneProps]]
   @scala.inline
-  def FacebookFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFacebookFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FacebookFilled: ComponentType[FacebookFilledProps] = typings.antDesignIcons.antDesignIconsFacebookFilledMod.default.asInstanceOf[ComponentType[FacebookFilledProps]]
   @scala.inline
-  def FacebookOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFacebookOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FacebookOutlined: ComponentType[FacebookOutlinedProps] = typings.antDesignIcons.antDesignIconsFacebookOutlinedMod.default.asInstanceOf[ComponentType[FacebookOutlinedProps]]
   @scala.inline
-  def FallOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFallOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FallOutlined: ComponentType[FallOutlinedProps] = typings.antDesignIcons.antDesignIconsFallOutlinedMod.default.asInstanceOf[ComponentType[FallOutlinedProps]]
   @scala.inline
-  def FastBackwardFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFastBackwardFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FastBackwardFilled: ComponentType[FastBackwardFilledProps] = typings.antDesignIcons.antDesignIconsFastBackwardFilledMod.default.asInstanceOf[ComponentType[FastBackwardFilledProps]]
   @scala.inline
-  def FastBackwardOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFastBackwardOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FastBackwardOutlined: ComponentType[FastBackwardOutlinedProps] = typings.antDesignIcons.antDesignIconsFastBackwardOutlinedMod.default.asInstanceOf[ComponentType[FastBackwardOutlinedProps]]
   @scala.inline
-  def FastForwardFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFastForwardFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FastForwardFilled: ComponentType[FastForwardFilledProps] = typings.antDesignIcons.antDesignIconsFastForwardFilledMod.default.asInstanceOf[ComponentType[FastForwardFilledProps]]
   @scala.inline
-  def FastForwardOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFastForwardOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FastForwardOutlined: ComponentType[FastForwardOutlinedProps] = typings.antDesignIcons.antDesignIconsFastForwardOutlinedMod.default.asInstanceOf[ComponentType[FastForwardOutlinedProps]]
   @scala.inline
-  def FieldBinaryOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFieldBinaryOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FieldBinaryOutlined: ComponentType[FieldBinaryOutlinedProps] = typings.antDesignIcons.antDesignIconsFieldBinaryOutlinedMod.default.asInstanceOf[ComponentType[FieldBinaryOutlinedProps]]
   @scala.inline
-  def FieldNumberOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFieldNumberOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FieldNumberOutlined: ComponentType[FieldNumberOutlinedProps] = typings.antDesignIcons.antDesignIconsFieldNumberOutlinedMod.default.asInstanceOf[ComponentType[FieldNumberOutlinedProps]]
   @scala.inline
-  def FieldStringOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFieldStringOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FieldStringOutlined: ComponentType[FieldStringOutlinedProps] = typings.antDesignIcons.antDesignIconsFieldStringOutlinedMod.default.asInstanceOf[ComponentType[FieldStringOutlinedProps]]
   @scala.inline
-  def FieldTimeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFieldTimeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FieldTimeOutlined: ComponentType[FieldTimeOutlinedProps] = typings.antDesignIcons.antDesignIconsFieldTimeOutlinedMod.default.asInstanceOf[ComponentType[FieldTimeOutlinedProps]]
   @scala.inline
-  def FileAddFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileAddFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileAddFilled: ComponentType[FileAddFilledProps] = typings.antDesignIcons.antDesignIconsFileAddFilledMod.default.asInstanceOf[ComponentType[FileAddFilledProps]]
   @scala.inline
-  def FileAddOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileAddOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileAddOutlined: ComponentType[FileAddOutlinedProps] = typings.antDesignIcons.antDesignIconsFileAddOutlinedMod.default.asInstanceOf[ComponentType[FileAddOutlinedProps]]
   @scala.inline
-  def FileAddTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileAddTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileAddTwoTone: ComponentType[FileAddTwoToneProps] = typings.antDesignIcons.antDesignIconsFileAddTwoToneMod.default.asInstanceOf[ComponentType[FileAddTwoToneProps]]
   @scala.inline
-  def FileDoneOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileDoneOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileDoneOutlined: ComponentType[FileDoneOutlinedProps] = typings.antDesignIcons.antDesignIconsFileDoneOutlinedMod.default.asInstanceOf[ComponentType[FileDoneOutlinedProps]]
   @scala.inline
-  def FileExcelFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileExcelFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileExcelFilled: ComponentType[FileExcelFilledProps] = typings.antDesignIcons.antDesignIconsFileExcelFilledMod.default.asInstanceOf[ComponentType[FileExcelFilledProps]]
   @scala.inline
-  def FileExcelOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileExcelOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileExcelOutlined: ComponentType[FileExcelOutlinedProps] = typings.antDesignIcons.antDesignIconsFileExcelOutlinedMod.default.asInstanceOf[ComponentType[FileExcelOutlinedProps]]
   @scala.inline
-  def FileExcelTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileExcelTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileExcelTwoTone: ComponentType[FileExcelTwoToneProps] = typings.antDesignIcons.antDesignIconsFileExcelTwoToneMod.default.asInstanceOf[ComponentType[FileExcelTwoToneProps]]
   @scala.inline
-  def FileExclamationFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileExclamationFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileExclamationFilled: ComponentType[FileExclamationFilledProps] = typings.antDesignIcons.antDesignIconsFileExclamationFilledMod.default.asInstanceOf[ComponentType[FileExclamationFilledProps]]
   @scala.inline
-  def FileExclamationOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileExclamationOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileExclamationOutlined: ComponentType[FileExclamationOutlinedProps] = typings.antDesignIcons.antDesignIconsFileExclamationOutlinedMod.default.asInstanceOf[ComponentType[FileExclamationOutlinedProps]]
   @scala.inline
-  def FileExclamationTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileExclamationTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileExclamationTwoTone: ComponentType[FileExclamationTwoToneProps] = typings.antDesignIcons.antDesignIconsFileExclamationTwoToneMod.default.asInstanceOf[ComponentType[FileExclamationTwoToneProps]]
   @scala.inline
-  def FileFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileFilled: ComponentType[FileFilledProps] = typings.antDesignIcons.antDesignIconsFileFilledMod.default.asInstanceOf[ComponentType[FileFilledProps]]
   @scala.inline
-  def FileGifOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileGifOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileGifOutlined: ComponentType[FileGifOutlinedProps] = typings.antDesignIcons.antDesignIconsFileGifOutlinedMod.default.asInstanceOf[ComponentType[FileGifOutlinedProps]]
   @scala.inline
-  def FileImageFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileImageFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileImageFilled: ComponentType[FileImageFilledProps] = typings.antDesignIcons.antDesignIconsFileImageFilledMod.default.asInstanceOf[ComponentType[FileImageFilledProps]]
   @scala.inline
-  def FileImageOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileImageOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileImageOutlined: ComponentType[FileImageOutlinedProps] = typings.antDesignIcons.antDesignIconsFileImageOutlinedMod.default.asInstanceOf[ComponentType[FileImageOutlinedProps]]
   @scala.inline
-  def FileImageTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileImageTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileImageTwoTone: ComponentType[FileImageTwoToneProps] = typings.antDesignIcons.antDesignIconsFileImageTwoToneMod.default.asInstanceOf[ComponentType[FileImageTwoToneProps]]
   @scala.inline
-  def FileJpgOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileJpgOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileJpgOutlined: ComponentType[FileJpgOutlinedProps] = typings.antDesignIcons.antDesignIconsFileJpgOutlinedMod.default.asInstanceOf[ComponentType[FileJpgOutlinedProps]]
   @scala.inline
-  def FileMarkdownFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileMarkdownFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileMarkdownFilled: ComponentType[FileMarkdownFilledProps] = typings.antDesignIcons.antDesignIconsFileMarkdownFilledMod.default.asInstanceOf[ComponentType[FileMarkdownFilledProps]]
   @scala.inline
-  def FileMarkdownOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileMarkdownOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileMarkdownOutlined: ComponentType[FileMarkdownOutlinedProps] = typings.antDesignIcons.antDesignIconsFileMarkdownOutlinedMod.default.asInstanceOf[ComponentType[FileMarkdownOutlinedProps]]
   @scala.inline
-  def FileMarkdownTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileMarkdownTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileMarkdownTwoTone: ComponentType[FileMarkdownTwoToneProps] = typings.antDesignIcons.antDesignIconsFileMarkdownTwoToneMod.default.asInstanceOf[ComponentType[FileMarkdownTwoToneProps]]
   @scala.inline
-  def FileOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileOutlined: ComponentType[FileOutlinedProps] = typings.antDesignIcons.antDesignIconsFileOutlinedMod.default.asInstanceOf[ComponentType[FileOutlinedProps]]
   @scala.inline
-  def FilePdfFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFilePdfFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FilePdfFilled: ComponentType[FilePdfFilledProps] = typings.antDesignIcons.antDesignIconsFilePdfFilledMod.default.asInstanceOf[ComponentType[FilePdfFilledProps]]
   @scala.inline
-  def FilePdfOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFilePdfOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FilePdfOutlined: ComponentType[FilePdfOutlinedProps] = typings.antDesignIcons.antDesignIconsFilePdfOutlinedMod.default.asInstanceOf[ComponentType[FilePdfOutlinedProps]]
   @scala.inline
-  def FilePdfTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFilePdfTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FilePdfTwoTone: ComponentType[FilePdfTwoToneProps] = typings.antDesignIcons.antDesignIconsFilePdfTwoToneMod.default.asInstanceOf[ComponentType[FilePdfTwoToneProps]]
   @scala.inline
-  def FilePptFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFilePptFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FilePptFilled: ComponentType[FilePptFilledProps] = typings.antDesignIcons.antDesignIconsFilePptFilledMod.default.asInstanceOf[ComponentType[FilePptFilledProps]]
   @scala.inline
-  def FilePptOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFilePptOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FilePptOutlined: ComponentType[FilePptOutlinedProps] = typings.antDesignIcons.antDesignIconsFilePptOutlinedMod.default.asInstanceOf[ComponentType[FilePptOutlinedProps]]
   @scala.inline
-  def FilePptTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFilePptTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FilePptTwoTone: ComponentType[FilePptTwoToneProps] = typings.antDesignIcons.antDesignIconsFilePptTwoToneMod.default.asInstanceOf[ComponentType[FilePptTwoToneProps]]
   @scala.inline
-  def FileProtectOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileProtectOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileProtectOutlined: ComponentType[FileProtectOutlinedProps] = typings.antDesignIcons.antDesignIconsFileProtectOutlinedMod.default.asInstanceOf[ComponentType[FileProtectOutlinedProps]]
   @scala.inline
-  def FileSearchOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileSearchOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileSearchOutlined: ComponentType[FileSearchOutlinedProps] = typings.antDesignIcons.antDesignIconsFileSearchOutlinedMod.default.asInstanceOf[ComponentType[FileSearchOutlinedProps]]
   @scala.inline
-  def FileSyncOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileSyncOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileSyncOutlined: ComponentType[FileSyncOutlinedProps] = typings.antDesignIcons.antDesignIconsFileSyncOutlinedMod.default.asInstanceOf[ComponentType[FileSyncOutlinedProps]]
   @scala.inline
-  def FileTextFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileTextFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileTextFilled: ComponentType[FileTextFilledProps] = typings.antDesignIcons.antDesignIconsFileTextFilledMod.default.asInstanceOf[ComponentType[FileTextFilledProps]]
   @scala.inline
-  def FileTextOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileTextOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileTextOutlined: ComponentType[FileTextOutlinedProps] = typings.antDesignIcons.antDesignIconsFileTextOutlinedMod.default.asInstanceOf[ComponentType[FileTextOutlinedProps]]
   @scala.inline
-  def FileTextTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileTextTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileTextTwoTone: ComponentType[FileTextTwoToneProps] = typings.antDesignIcons.antDesignIconsFileTextTwoToneMod.default.asInstanceOf[ComponentType[FileTextTwoToneProps]]
   @scala.inline
-  def FileTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileTwoTone: ComponentType[FileTwoToneProps] = typings.antDesignIcons.antDesignIconsFileTwoToneMod.default.asInstanceOf[ComponentType[FileTwoToneProps]]
   @scala.inline
-  def FileUnknownFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileUnknownFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileUnknownFilled: ComponentType[FileUnknownFilledProps] = typings.antDesignIcons.antDesignIconsFileUnknownFilledMod.default.asInstanceOf[ComponentType[FileUnknownFilledProps]]
   @scala.inline
-  def FileUnknownOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileUnknownOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileUnknownOutlined: ComponentType[FileUnknownOutlinedProps] = typings.antDesignIcons.antDesignIconsFileUnknownOutlinedMod.default.asInstanceOf[ComponentType[FileUnknownOutlinedProps]]
   @scala.inline
-  def FileUnknownTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileUnknownTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileUnknownTwoTone: ComponentType[FileUnknownTwoToneProps] = typings.antDesignIcons.antDesignIconsFileUnknownTwoToneMod.default.asInstanceOf[ComponentType[FileUnknownTwoToneProps]]
   @scala.inline
-  def FileWordFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileWordFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileWordFilled: ComponentType[FileWordFilledProps] = typings.antDesignIcons.antDesignIconsFileWordFilledMod.default.asInstanceOf[ComponentType[FileWordFilledProps]]
   @scala.inline
-  def FileWordOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileWordOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileWordOutlined: ComponentType[FileWordOutlinedProps] = typings.antDesignIcons.antDesignIconsFileWordOutlinedMod.default.asInstanceOf[ComponentType[FileWordOutlinedProps]]
   @scala.inline
-  def FileWordTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileWordTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileWordTwoTone: ComponentType[FileWordTwoToneProps] = typings.antDesignIcons.antDesignIconsFileWordTwoToneMod.default.asInstanceOf[ComponentType[FileWordTwoToneProps]]
   @scala.inline
-  def FileZipFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileZipFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileZipFilled: ComponentType[FileZipFilledProps] = typings.antDesignIcons.antDesignIconsFileZipFilledMod.default.asInstanceOf[ComponentType[FileZipFilledProps]]
   @scala.inline
-  def FileZipOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileZipOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileZipOutlined: ComponentType[FileZipOutlinedProps] = typings.antDesignIcons.antDesignIconsFileZipOutlinedMod.default.asInstanceOf[ComponentType[FileZipOutlinedProps]]
   @scala.inline
-  def FileZipTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFileZipTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FileZipTwoTone: ComponentType[FileZipTwoToneProps] = typings.antDesignIcons.antDesignIconsFileZipTwoToneMod.default.asInstanceOf[ComponentType[FileZipTwoToneProps]]
   @scala.inline
-  def FilterFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFilterFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FilterFilled: ComponentType[FilterFilledProps] = typings.antDesignIcons.antDesignIconsFilterFilledMod.default.asInstanceOf[ComponentType[FilterFilledProps]]
   @scala.inline
-  def FilterOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFilterOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FilterOutlined: ComponentType[FilterOutlinedProps] = typings.antDesignIcons.antDesignIconsFilterOutlinedMod.default.asInstanceOf[ComponentType[FilterOutlinedProps]]
   @scala.inline
-  def FilterTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFilterTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FilterTwoTone: ComponentType[FilterTwoToneProps] = typings.antDesignIcons.antDesignIconsFilterTwoToneMod.default.asInstanceOf[ComponentType[FilterTwoToneProps]]
   @scala.inline
-  def FireFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFireFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FireFilled: ComponentType[FireFilledProps] = typings.antDesignIcons.antDesignIconsFireFilledMod.default.asInstanceOf[ComponentType[FireFilledProps]]
   @scala.inline
-  def FireOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFireOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FireOutlined: ComponentType[FireOutlinedProps] = typings.antDesignIcons.antDesignIconsFireOutlinedMod.default.asInstanceOf[ComponentType[FireOutlinedProps]]
   @scala.inline
-  def FireTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFireTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FireTwoTone: ComponentType[FireTwoToneProps] = typings.antDesignIcons.antDesignIconsFireTwoToneMod.default.asInstanceOf[ComponentType[FireTwoToneProps]]
   @scala.inline
-  def FlagFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFlagFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FlagFilled: ComponentType[FlagFilledProps] = typings.antDesignIcons.antDesignIconsFlagFilledMod.default.asInstanceOf[ComponentType[FlagFilledProps]]
   @scala.inline
-  def FlagOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFlagOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FlagOutlined: ComponentType[FlagOutlinedProps] = typings.antDesignIcons.antDesignIconsFlagOutlinedMod.default.asInstanceOf[ComponentType[FlagOutlinedProps]]
   @scala.inline
-  def FlagTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFlagTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FlagTwoTone: ComponentType[FlagTwoToneProps] = typings.antDesignIcons.antDesignIconsFlagTwoToneMod.default.asInstanceOf[ComponentType[FlagTwoToneProps]]
   @scala.inline
-  def FolderAddFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderAddFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderAddFilled: ComponentType[FolderAddFilledProps] = typings.antDesignIcons.antDesignIconsFolderAddFilledMod.default.asInstanceOf[ComponentType[FolderAddFilledProps]]
   @scala.inline
-  def FolderAddOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderAddOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderAddOutlined: ComponentType[FolderAddOutlinedProps] = typings.antDesignIcons.antDesignIconsFolderAddOutlinedMod.default.asInstanceOf[ComponentType[FolderAddOutlinedProps]]
   @scala.inline
-  def FolderAddTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderAddTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderAddTwoTone: ComponentType[FolderAddTwoToneProps] = typings.antDesignIcons.antDesignIconsFolderAddTwoToneMod.default.asInstanceOf[ComponentType[FolderAddTwoToneProps]]
   @scala.inline
-  def FolderFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderFilled: ComponentType[FolderFilledProps] = typings.antDesignIcons.antDesignIconsFolderFilledMod.default.asInstanceOf[ComponentType[FolderFilledProps]]
   @scala.inline
-  def FolderOpenFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderOpenFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderOpenFilled: ComponentType[FolderOpenFilledProps] = typings.antDesignIcons.antDesignIconsFolderOpenFilledMod.default.asInstanceOf[ComponentType[FolderOpenFilledProps]]
   @scala.inline
-  def FolderOpenOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderOpenOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderOpenOutlined: ComponentType[FolderOpenOutlinedProps] = typings.antDesignIcons.antDesignIconsFolderOpenOutlinedMod.default.asInstanceOf[ComponentType[FolderOpenOutlinedProps]]
   @scala.inline
-  def FolderOpenTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderOpenTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderOpenTwoTone: ComponentType[FolderOpenTwoToneProps] = typings.antDesignIcons.antDesignIconsFolderOpenTwoToneMod.default.asInstanceOf[ComponentType[FolderOpenTwoToneProps]]
   @scala.inline
-  def FolderOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderOutlined: ComponentType[FolderOutlinedProps] = typings.antDesignIcons.antDesignIconsFolderOutlinedMod.default.asInstanceOf[ComponentType[FolderOutlinedProps]]
   @scala.inline
-  def FolderTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderTwoTone: ComponentType[FolderTwoToneProps] = typings.antDesignIcons.antDesignIconsFolderTwoToneMod.default.asInstanceOf[ComponentType[FolderTwoToneProps]]
   @scala.inline
-  def FolderViewOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFolderViewOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FolderViewOutlined: ComponentType[FolderViewOutlinedProps] = typings.antDesignIcons.antDesignIconsFolderViewOutlinedMod.default.asInstanceOf[ComponentType[FolderViewOutlinedProps]]
   @scala.inline
-  def FontColorsOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFontColorsOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FontColorsOutlined: ComponentType[FontColorsOutlinedProps] = typings.antDesignIcons.antDesignIconsFontColorsOutlinedMod.default.asInstanceOf[ComponentType[FontColorsOutlinedProps]]
   @scala.inline
-  def FontSizeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFontSizeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FontSizeOutlined: ComponentType[FontSizeOutlinedProps] = typings.antDesignIcons.antDesignIconsFontSizeOutlinedMod.default.asInstanceOf[ComponentType[FontSizeOutlinedProps]]
   @scala.inline
-  def ForkOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsForkOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ForkOutlined: ComponentType[ForkOutlinedProps] = typings.antDesignIcons.antDesignIconsForkOutlinedMod.default.asInstanceOf[ComponentType[ForkOutlinedProps]]
   @scala.inline
-  def FormOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFormOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FormOutlined: ComponentType[FormOutlinedProps] = typings.antDesignIcons.antDesignIconsFormOutlinedMod.default.asInstanceOf[ComponentType[FormOutlinedProps]]
   @scala.inline
-  def FormatPainterFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFormatPainterFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FormatPainterFilled: ComponentType[FormatPainterFilledProps] = typings.antDesignIcons.antDesignIconsFormatPainterFilledMod.default.asInstanceOf[ComponentType[FormatPainterFilledProps]]
   @scala.inline
-  def FormatPainterOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFormatPainterOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FormatPainterOutlined: ComponentType[FormatPainterOutlinedProps] = typings.antDesignIcons.antDesignIconsFormatPainterOutlinedMod.default.asInstanceOf[ComponentType[FormatPainterOutlinedProps]]
   @scala.inline
-  def ForwardFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsForwardFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ForwardFilled: ComponentType[ForwardFilledProps] = typings.antDesignIcons.antDesignIconsForwardFilledMod.default.asInstanceOf[ComponentType[ForwardFilledProps]]
   @scala.inline
-  def ForwardOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsForwardOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ForwardOutlined: ComponentType[ForwardOutlinedProps] = typings.antDesignIcons.antDesignIconsForwardOutlinedMod.default.asInstanceOf[ComponentType[ForwardOutlinedProps]]
   @scala.inline
-  def FrownFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFrownFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FrownFilled: ComponentType[FrownFilledProps] = typings.antDesignIcons.antDesignIconsFrownFilledMod.default.asInstanceOf[ComponentType[FrownFilledProps]]
   @scala.inline
-  def FrownOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFrownOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FrownOutlined: ComponentType[FrownOutlinedProps] = typings.antDesignIcons.antDesignIconsFrownOutlinedMod.default.asInstanceOf[ComponentType[FrownOutlinedProps]]
   @scala.inline
-  def FrownTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFrownTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FrownTwoTone: ComponentType[FrownTwoToneProps] = typings.antDesignIcons.antDesignIconsFrownTwoToneMod.default.asInstanceOf[ComponentType[FrownTwoToneProps]]
   @scala.inline
-  def FullscreenExitOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFullscreenExitOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FullscreenExitOutlined: ComponentType[FullscreenExitOutlinedProps] = typings.antDesignIcons.antDesignIconsFullscreenExitOutlinedMod.default.asInstanceOf[ComponentType[FullscreenExitOutlinedProps]]
   @scala.inline
-  def FullscreenOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFullscreenOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FullscreenOutlined: ComponentType[FullscreenOutlinedProps] = typings.antDesignIcons.antDesignIconsFullscreenOutlinedMod.default.asInstanceOf[ComponentType[FullscreenOutlinedProps]]
   @scala.inline
-  def FunctionOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFunctionOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FunctionOutlined: ComponentType[FunctionOutlinedProps] = typings.antDesignIcons.antDesignIconsFunctionOutlinedMod.default.asInstanceOf[ComponentType[FunctionOutlinedProps]]
   @scala.inline
-  def FundFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFundFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FundFilled: ComponentType[FundFilledProps] = typings.antDesignIcons.antDesignIconsFundFilledMod.default.asInstanceOf[ComponentType[FundFilledProps]]
   @scala.inline
-  def FundOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFundOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FundOutlined: ComponentType[FundOutlinedProps] = typings.antDesignIcons.antDesignIconsFundOutlinedMod.default.asInstanceOf[ComponentType[FundOutlinedProps]]
   @scala.inline
-  def FundProjectionScreenOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFundProjectionScreenOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FundProjectionScreenOutlined: ComponentType[FundProjectionScreenOutlinedProps] = typings.antDesignIcons.antDesignIconsFundProjectionScreenOutlinedMod.default.asInstanceOf[ComponentType[FundProjectionScreenOutlinedProps]]
   @scala.inline
-  def FundTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFundTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FundTwoTone: ComponentType[FundTwoToneProps] = typings.antDesignIcons.antDesignIconsFundTwoToneMod.default.asInstanceOf[ComponentType[FundTwoToneProps]]
   @scala.inline
-  def FundViewOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFundViewOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FundViewOutlined: ComponentType[FundViewOutlinedProps] = typings.antDesignIcons.antDesignIconsFundViewOutlinedMod.default.asInstanceOf[ComponentType[FundViewOutlinedProps]]
   @scala.inline
-  def FunnelPlotFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFunnelPlotFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FunnelPlotFilled: ComponentType[FunnelPlotFilledProps] = typings.antDesignIcons.antDesignIconsFunnelPlotFilledMod.default.asInstanceOf[ComponentType[FunnelPlotFilledProps]]
   @scala.inline
-  def FunnelPlotOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFunnelPlotOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FunnelPlotOutlined: ComponentType[FunnelPlotOutlinedProps] = typings.antDesignIcons.antDesignIconsFunnelPlotOutlinedMod.default.asInstanceOf[ComponentType[FunnelPlotOutlinedProps]]
   @scala.inline
-  def FunnelPlotTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsFunnelPlotTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def FunnelPlotTwoTone: ComponentType[FunnelPlotTwoToneProps] = typings.antDesignIcons.antDesignIconsFunnelPlotTwoToneMod.default.asInstanceOf[ComponentType[FunnelPlotTwoToneProps]]
   @scala.inline
-  def GatewayOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGatewayOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GatewayOutlined: ComponentType[GatewayOutlinedProps] = typings.antDesignIcons.antDesignIconsGatewayOutlinedMod.default.asInstanceOf[ComponentType[GatewayOutlinedProps]]
   @scala.inline
-  def GifOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGifOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GifOutlined: ComponentType[GifOutlinedProps] = typings.antDesignIcons.antDesignIconsGifOutlinedMod.default.asInstanceOf[ComponentType[GifOutlinedProps]]
   @scala.inline
-  def GiftFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGiftFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GiftFilled: ComponentType[GiftFilledProps] = typings.antDesignIcons.antDesignIconsGiftFilledMod.default.asInstanceOf[ComponentType[GiftFilledProps]]
   @scala.inline
-  def GiftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGiftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GiftOutlined: ComponentType[GiftOutlinedProps] = typings.antDesignIcons.antDesignIconsGiftOutlinedMod.default.asInstanceOf[ComponentType[GiftOutlinedProps]]
   @scala.inline
-  def GiftTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGiftTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GiftTwoTone: ComponentType[GiftTwoToneProps] = typings.antDesignIcons.antDesignIconsGiftTwoToneMod.default.asInstanceOf[ComponentType[GiftTwoToneProps]]
   @scala.inline
-  def GithubFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGithubFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GithubFilled: ComponentType[GithubFilledProps] = typings.antDesignIcons.antDesignIconsGithubFilledMod.default.asInstanceOf[ComponentType[GithubFilledProps]]
   @scala.inline
-  def GithubOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGithubOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GithubOutlined: ComponentType[GithubOutlinedProps] = typings.antDesignIcons.antDesignIconsGithubOutlinedMod.default.asInstanceOf[ComponentType[GithubOutlinedProps]]
   @scala.inline
-  def GitlabFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGitlabFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GitlabFilled: ComponentType[GitlabFilledProps] = typings.antDesignIcons.antDesignIconsGitlabFilledMod.default.asInstanceOf[ComponentType[GitlabFilledProps]]
   @scala.inline
-  def GitlabOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGitlabOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GitlabOutlined: ComponentType[GitlabOutlinedProps] = typings.antDesignIcons.antDesignIconsGitlabOutlinedMod.default.asInstanceOf[ComponentType[GitlabOutlinedProps]]
   @scala.inline
-  def GlobalOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGlobalOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GlobalOutlined: ComponentType[GlobalOutlinedProps] = typings.antDesignIcons.antDesignIconsGlobalOutlinedMod.default.asInstanceOf[ComponentType[GlobalOutlinedProps]]
   @scala.inline
-  def GoldFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGoldFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GoldFilled: ComponentType[GoldFilledProps] = typings.antDesignIcons.antDesignIconsGoldFilledMod.default.asInstanceOf[ComponentType[GoldFilledProps]]
   @scala.inline
-  def GoldOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGoldOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GoldOutlined: ComponentType[GoldOutlinedProps] = typings.antDesignIcons.antDesignIconsGoldOutlinedMod.default.asInstanceOf[ComponentType[GoldOutlinedProps]]
   @scala.inline
-  def GoldTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGoldTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GoldTwoTone: ComponentType[GoldTwoToneProps] = typings.antDesignIcons.antDesignIconsGoldTwoToneMod.default.asInstanceOf[ComponentType[GoldTwoToneProps]]
   @scala.inline
-  def GoldenFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGoldenFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GoldenFilled: ComponentType[GoldenFilledProps] = typings.antDesignIcons.antDesignIconsGoldenFilledMod.default.asInstanceOf[ComponentType[GoldenFilledProps]]
   @scala.inline
-  def GoogleCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGoogleCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GoogleCircleFilled: ComponentType[GoogleCircleFilledProps] = typings.antDesignIcons.antDesignIconsGoogleCircleFilledMod.default.asInstanceOf[ComponentType[GoogleCircleFilledProps]]
   @scala.inline
-  def GoogleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGoogleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GoogleOutlined: ComponentType[GoogleOutlinedProps] = typings.antDesignIcons.antDesignIconsGoogleOutlinedMod.default.asInstanceOf[ComponentType[GoogleOutlinedProps]]
   @scala.inline
-  def GooglePlusCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGooglePlusCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GooglePlusCircleFilled: ComponentType[GooglePlusCircleFilledProps] = typings.antDesignIcons.antDesignIconsGooglePlusCircleFilledMod.default.asInstanceOf[ComponentType[GooglePlusCircleFilledProps]]
   @scala.inline
-  def GooglePlusOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGooglePlusOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GooglePlusOutlined: ComponentType[GooglePlusOutlinedProps] = typings.antDesignIcons.antDesignIconsGooglePlusOutlinedMod.default.asInstanceOf[ComponentType[GooglePlusOutlinedProps]]
   @scala.inline
-  def GooglePlusSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGooglePlusSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GooglePlusSquareFilled: ComponentType[GooglePlusSquareFilledProps] = typings.antDesignIcons.antDesignIconsGooglePlusSquareFilledMod.default.asInstanceOf[ComponentType[GooglePlusSquareFilledProps]]
   @scala.inline
-  def GoogleSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGoogleSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GoogleSquareFilled: ComponentType[GoogleSquareFilledProps] = typings.antDesignIcons.antDesignIconsGoogleSquareFilledMod.default.asInstanceOf[ComponentType[GoogleSquareFilledProps]]
   @scala.inline
-  def GroupOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsGroupOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def GroupOutlined: ComponentType[GroupOutlinedProps] = typings.antDesignIcons.antDesignIconsGroupOutlinedMod.default.asInstanceOf[ComponentType[GroupOutlinedProps]]
   @scala.inline
-  def HddFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHddFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HddFilled: ComponentType[HddFilledProps] = typings.antDesignIcons.antDesignIconsHddFilledMod.default.asInstanceOf[ComponentType[HddFilledProps]]
   @scala.inline
-  def HddOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHddOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HddOutlined: ComponentType[HddOutlinedProps] = typings.antDesignIcons.antDesignIconsHddOutlinedMod.default.asInstanceOf[ComponentType[HddOutlinedProps]]
   @scala.inline
-  def HddTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHddTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HddTwoTone: ComponentType[HddTwoToneProps] = typings.antDesignIcons.antDesignIconsHddTwoToneMod.default.asInstanceOf[ComponentType[HddTwoToneProps]]
   @scala.inline
-  def HeartFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHeartFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HeartFilled: ComponentType[HeartFilledProps] = typings.antDesignIcons.antDesignIconsHeartFilledMod.default.asInstanceOf[ComponentType[HeartFilledProps]]
   @scala.inline
-  def HeartOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHeartOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HeartOutlined: ComponentType[HeartOutlinedProps] = typings.antDesignIcons.antDesignIconsHeartOutlinedMod.default.asInstanceOf[ComponentType[HeartOutlinedProps]]
   @scala.inline
-  def HeartTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHeartTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HeartTwoTone: ComponentType[HeartTwoToneProps] = typings.antDesignIcons.antDesignIconsHeartTwoToneMod.default.asInstanceOf[ComponentType[HeartTwoToneProps]]
   @scala.inline
-  def HeatMapOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHeatMapOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HeatMapOutlined: ComponentType[HeatMapOutlinedProps] = typings.antDesignIcons.antDesignIconsHeatMapOutlinedMod.default.asInstanceOf[ComponentType[HeatMapOutlinedProps]]
   @scala.inline
-  def HighlightFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHighlightFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HighlightFilled: ComponentType[HighlightFilledProps] = typings.antDesignIcons.antDesignIconsHighlightFilledMod.default.asInstanceOf[ComponentType[HighlightFilledProps]]
   @scala.inline
-  def HighlightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHighlightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HighlightOutlined: ComponentType[HighlightOutlinedProps] = typings.antDesignIcons.antDesignIconsHighlightOutlinedMod.default.asInstanceOf[ComponentType[HighlightOutlinedProps]]
   @scala.inline
-  def HighlightTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHighlightTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HighlightTwoTone: ComponentType[HighlightTwoToneProps] = typings.antDesignIcons.antDesignIconsHighlightTwoToneMod.default.asInstanceOf[ComponentType[HighlightTwoToneProps]]
   @scala.inline
-  def HistoryOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHistoryOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HistoryOutlined: ComponentType[HistoryOutlinedProps] = typings.antDesignIcons.antDesignIconsHistoryOutlinedMod.default.asInstanceOf[ComponentType[HistoryOutlinedProps]]
   @scala.inline
-  def HomeFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHomeFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HomeFilled: ComponentType[HomeFilledProps] = typings.antDesignIcons.antDesignIconsHomeFilledMod.default.asInstanceOf[ComponentType[HomeFilledProps]]
   @scala.inline
-  def HomeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHomeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HomeOutlined: ComponentType[HomeOutlinedProps] = typings.antDesignIcons.antDesignIconsHomeOutlinedMod.default.asInstanceOf[ComponentType[HomeOutlinedProps]]
   @scala.inline
-  def HomeTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHomeTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HomeTwoTone: ComponentType[HomeTwoToneProps] = typings.antDesignIcons.antDesignIconsHomeTwoToneMod.default.asInstanceOf[ComponentType[HomeTwoToneProps]]
   @scala.inline
-  def HourglassFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHourglassFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HourglassFilled: ComponentType[HourglassFilledProps] = typings.antDesignIcons.antDesignIconsHourglassFilledMod.default.asInstanceOf[ComponentType[HourglassFilledProps]]
   @scala.inline
-  def HourglassOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHourglassOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HourglassOutlined: ComponentType[HourglassOutlinedProps] = typings.antDesignIcons.antDesignIconsHourglassOutlinedMod.default.asInstanceOf[ComponentType[HourglassOutlinedProps]]
   @scala.inline
-  def HourglassTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHourglassTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def HourglassTwoTone: ComponentType[HourglassTwoToneProps] = typings.antDesignIcons.antDesignIconsHourglassTwoToneMod.default.asInstanceOf[ComponentType[HourglassTwoToneProps]]
   @scala.inline
-  def Html5Filled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHtml5FilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def Html5Filled: ComponentType[Html5FilledProps] = typings.antDesignIcons.antDesignIconsHtml5FilledMod.default.asInstanceOf[ComponentType[Html5FilledProps]]
   @scala.inline
-  def Html5Outlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHtml5OutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def Html5Outlined: ComponentType[Html5OutlinedProps] = typings.antDesignIcons.antDesignIconsHtml5OutlinedMod.default.asInstanceOf[ComponentType[Html5OutlinedProps]]
   @scala.inline
-  def Html5TwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsHtml5TwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def Html5TwoTone: ComponentType[Html5TwoToneProps] = typings.antDesignIcons.antDesignIconsHtml5TwoToneMod.default.asInstanceOf[ComponentType[Html5TwoToneProps]]
   @scala.inline
-  def Icon: ComponentType[
-    typings.antDesignIcons.componentsIconMod.IconComponentProps with RefAttributes[HTMLSpanElement]
-  ] = typings.antDesignIcons.componentsIconMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsIconMod.IconComponentProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def Icon: ComponentType[IconProps] = typings.antDesignIcons.componentsIconMod.default.asInstanceOf[ComponentType[IconProps]]
   @scala.inline
-  def IconBase: ComponentType[IconBaseProps] = typings.antDesignIcons.componentsIconBaseMod.default.asInstanceOf[typings.react.mod.ComponentType[IconBaseProps]]
+  def IconBase: ComponentType[IconBaseProps] = typings.antDesignIcons.componentsIconBaseMod.default.asInstanceOf[ComponentType[IconBaseProps]]
   @scala.inline
-  def IdcardFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsIdcardFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def IdcardFilled: ComponentType[IdcardFilledProps] = typings.antDesignIcons.antDesignIconsIdcardFilledMod.default.asInstanceOf[ComponentType[IdcardFilledProps]]
   @scala.inline
-  def IdcardOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsIdcardOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def IdcardOutlined: ComponentType[IdcardOutlinedProps] = typings.antDesignIcons.antDesignIconsIdcardOutlinedMod.default.asInstanceOf[ComponentType[IdcardOutlinedProps]]
   @scala.inline
-  def IdcardTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsIdcardTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def IdcardTwoTone: ComponentType[IdcardTwoToneProps] = typings.antDesignIcons.antDesignIconsIdcardTwoToneMod.default.asInstanceOf[ComponentType[IdcardTwoToneProps]]
   @scala.inline
-  def IeCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsIeCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def IeCircleFilled: ComponentType[IeCircleFilledProps] = typings.antDesignIcons.antDesignIconsIeCircleFilledMod.default.asInstanceOf[ComponentType[IeCircleFilledProps]]
   @scala.inline
-  def IeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsIeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def IeOutlined: ComponentType[IeOutlinedProps] = typings.antDesignIcons.antDesignIconsIeOutlinedMod.default.asInstanceOf[ComponentType[IeOutlinedProps]]
   @scala.inline
-  def IeSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsIeSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def IeSquareFilled: ComponentType[IeSquareFilledProps] = typings.antDesignIcons.antDesignIconsIeSquareFilledMod.default.asInstanceOf[ComponentType[IeSquareFilledProps]]
   @scala.inline
-  def ImportOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsImportOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ImportOutlined: ComponentType[ImportOutlinedProps] = typings.antDesignIcons.antDesignIconsImportOutlinedMod.default.asInstanceOf[ComponentType[ImportOutlinedProps]]
   @scala.inline
-  def InboxOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInboxOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InboxOutlined: ComponentType[InboxOutlinedProps] = typings.antDesignIcons.antDesignIconsInboxOutlinedMod.default.asInstanceOf[ComponentType[InboxOutlinedProps]]
   @scala.inline
-  def InfoCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInfoCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InfoCircleFilled: ComponentType[InfoCircleFilledProps] = typings.antDesignIcons.antDesignIconsInfoCircleFilledMod.default.asInstanceOf[ComponentType[InfoCircleFilledProps]]
   @scala.inline
-  def InfoCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInfoCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InfoCircleOutlined: ComponentType[InfoCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsInfoCircleOutlinedMod.default.asInstanceOf[ComponentType[InfoCircleOutlinedProps]]
   @scala.inline
-  def InfoCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInfoCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InfoCircleTwoTone: ComponentType[InfoCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsInfoCircleTwoToneMod.default.asInstanceOf[ComponentType[InfoCircleTwoToneProps]]
   @scala.inline
-  def InfoOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInfoOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InfoOutlined: ComponentType[InfoOutlinedProps] = typings.antDesignIcons.antDesignIconsInfoOutlinedMod.default.asInstanceOf[ComponentType[InfoOutlinedProps]]
   @scala.inline
-  def InsertRowAboveOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInsertRowAboveOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InsertRowAboveOutlined: ComponentType[InsertRowAboveOutlinedProps] = typings.antDesignIcons.antDesignIconsInsertRowAboveOutlinedMod.default.asInstanceOf[ComponentType[InsertRowAboveOutlinedProps]]
   @scala.inline
-  def InsertRowBelowOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInsertRowBelowOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InsertRowBelowOutlined: ComponentType[InsertRowBelowOutlinedProps] = typings.antDesignIcons.antDesignIconsInsertRowBelowOutlinedMod.default.asInstanceOf[ComponentType[InsertRowBelowOutlinedProps]]
   @scala.inline
-  def InsertRowLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInsertRowLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InsertRowLeftOutlined: ComponentType[InsertRowLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsInsertRowLeftOutlinedMod.default.asInstanceOf[ComponentType[InsertRowLeftOutlinedProps]]
   @scala.inline
-  def InsertRowRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInsertRowRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InsertRowRightOutlined: ComponentType[InsertRowRightOutlinedProps] = typings.antDesignIcons.antDesignIconsInsertRowRightOutlinedMod.default.asInstanceOf[ComponentType[InsertRowRightOutlinedProps]]
   @scala.inline
-  def InstagramFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInstagramFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InstagramFilled: ComponentType[InstagramFilledProps] = typings.antDesignIcons.antDesignIconsInstagramFilledMod.default.asInstanceOf[ComponentType[InstagramFilledProps]]
   @scala.inline
-  def InstagramOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInstagramOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InstagramOutlined: ComponentType[InstagramOutlinedProps] = typings.antDesignIcons.antDesignIconsInstagramOutlinedMod.default.asInstanceOf[ComponentType[InstagramOutlinedProps]]
   @scala.inline
-  def InsuranceFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInsuranceFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InsuranceFilled: ComponentType[InsuranceFilledProps] = typings.antDesignIcons.antDesignIconsInsuranceFilledMod.default.asInstanceOf[ComponentType[InsuranceFilledProps]]
   @scala.inline
-  def InsuranceOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInsuranceOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InsuranceOutlined: ComponentType[InsuranceOutlinedProps] = typings.antDesignIcons.antDesignIconsInsuranceOutlinedMod.default.asInstanceOf[ComponentType[InsuranceOutlinedProps]]
   @scala.inline
-  def InsuranceTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInsuranceTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InsuranceTwoTone: ComponentType[InsuranceTwoToneProps] = typings.antDesignIcons.antDesignIconsInsuranceTwoToneMod.default.asInstanceOf[ComponentType[InsuranceTwoToneProps]]
   @scala.inline
-  def InteractionFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInteractionFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InteractionFilled: ComponentType[InteractionFilledProps] = typings.antDesignIcons.antDesignIconsInteractionFilledMod.default.asInstanceOf[ComponentType[InteractionFilledProps]]
   @scala.inline
-  def InteractionOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInteractionOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InteractionOutlined: ComponentType[InteractionOutlinedProps] = typings.antDesignIcons.antDesignIconsInteractionOutlinedMod.default.asInstanceOf[ComponentType[InteractionOutlinedProps]]
   @scala.inline
-  def InteractionTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsInteractionTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def InteractionTwoTone: ComponentType[InteractionTwoToneProps] = typings.antDesignIcons.antDesignIconsInteractionTwoToneMod.default.asInstanceOf[ComponentType[InteractionTwoToneProps]]
   @scala.inline
-  def IssuesCloseOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsIssuesCloseOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def IssuesCloseOutlined: ComponentType[IssuesCloseOutlinedProps] = typings.antDesignIcons.antDesignIconsIssuesCloseOutlinedMod.default.asInstanceOf[ComponentType[IssuesCloseOutlinedProps]]
   @scala.inline
-  def ItalicOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsItalicOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ItalicOutlined: ComponentType[ItalicOutlinedProps] = typings.antDesignIcons.antDesignIconsItalicOutlinedMod.default.asInstanceOf[ComponentType[ItalicOutlinedProps]]
   @scala.inline
-  def KeyOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsKeyOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def KeyOutlined: ComponentType[KeyOutlinedProps] = typings.antDesignIcons.antDesignIconsKeyOutlinedMod.default.asInstanceOf[ComponentType[KeyOutlinedProps]]
   @scala.inline
-  def LaptopOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLaptopOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LaptopOutlined: ComponentType[LaptopOutlinedProps] = typings.antDesignIcons.antDesignIconsLaptopOutlinedMod.default.asInstanceOf[ComponentType[LaptopOutlinedProps]]
   @scala.inline
-  def LayoutFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLayoutFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LayoutFilled: ComponentType[LayoutFilledProps] = typings.antDesignIcons.antDesignIconsLayoutFilledMod.default.asInstanceOf[ComponentType[LayoutFilledProps]]
   @scala.inline
-  def LayoutOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLayoutOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LayoutOutlined: ComponentType[LayoutOutlinedProps] = typings.antDesignIcons.antDesignIconsLayoutOutlinedMod.default.asInstanceOf[ComponentType[LayoutOutlinedProps]]
   @scala.inline
-  def LayoutTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLayoutTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LayoutTwoTone: ComponentType[LayoutTwoToneProps] = typings.antDesignIcons.antDesignIconsLayoutTwoToneMod.default.asInstanceOf[ComponentType[LayoutTwoToneProps]]
   @scala.inline
-  def LeftCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLeftCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LeftCircleFilled: ComponentType[LeftCircleFilledProps] = typings.antDesignIcons.antDesignIconsLeftCircleFilledMod.default.asInstanceOf[ComponentType[LeftCircleFilledProps]]
   @scala.inline
-  def LeftCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLeftCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LeftCircleOutlined: ComponentType[LeftCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsLeftCircleOutlinedMod.default.asInstanceOf[ComponentType[LeftCircleOutlinedProps]]
   @scala.inline
-  def LeftCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLeftCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LeftCircleTwoTone: ComponentType[LeftCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsLeftCircleTwoToneMod.default.asInstanceOf[ComponentType[LeftCircleTwoToneProps]]
   @scala.inline
-  def LeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LeftOutlined: ComponentType[LeftOutlinedProps] = typings.antDesignIcons.antDesignIconsLeftOutlinedMod.default.asInstanceOf[ComponentType[LeftOutlinedProps]]
   @scala.inline
-  def LeftSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLeftSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LeftSquareFilled: ComponentType[LeftSquareFilledProps] = typings.antDesignIcons.antDesignIconsLeftSquareFilledMod.default.asInstanceOf[ComponentType[LeftSquareFilledProps]]
   @scala.inline
-  def LeftSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLeftSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LeftSquareOutlined: ComponentType[LeftSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsLeftSquareOutlinedMod.default.asInstanceOf[ComponentType[LeftSquareOutlinedProps]]
   @scala.inline
-  def LeftSquareTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLeftSquareTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LeftSquareTwoTone: ComponentType[LeftSquareTwoToneProps] = typings.antDesignIcons.antDesignIconsLeftSquareTwoToneMod.default.asInstanceOf[ComponentType[LeftSquareTwoToneProps]]
   @scala.inline
-  def Lib: ComponentType[
-    typings.antDesignIcons.componentsIconMod.IconComponentProps with RefAttributes[HTMLSpanElement]
-  ] = typings.antDesignIcons.libMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsIconMod.IconComponentProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def Lib: ComponentType[LibProps] = typings.antDesignIcons.libMod.default.asInstanceOf[ComponentType[LibProps]]
   @scala.inline
-  def LikeFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLikeFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LikeFilled: ComponentType[LikeFilledProps] = typings.antDesignIcons.antDesignIconsLikeFilledMod.default.asInstanceOf[ComponentType[LikeFilledProps]]
   @scala.inline
-  def LikeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLikeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LikeOutlined: ComponentType[LikeOutlinedProps] = typings.antDesignIcons.antDesignIconsLikeOutlinedMod.default.asInstanceOf[ComponentType[LikeOutlinedProps]]
   @scala.inline
-  def LikeTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLikeTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LikeTwoTone: ComponentType[LikeTwoToneProps] = typings.antDesignIcons.antDesignIconsLikeTwoToneMod.default.asInstanceOf[ComponentType[LikeTwoToneProps]]
   @scala.inline
-  def LineChartOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLineChartOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LineChartOutlined: ComponentType[LineChartOutlinedProps] = typings.antDesignIcons.antDesignIconsLineChartOutlinedMod.default.asInstanceOf[ComponentType[LineChartOutlinedProps]]
   @scala.inline
-  def LineHeightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLineHeightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LineHeightOutlined: ComponentType[LineHeightOutlinedProps] = typings.antDesignIcons.antDesignIconsLineHeightOutlinedMod.default.asInstanceOf[ComponentType[LineHeightOutlinedProps]]
   @scala.inline
-  def LineOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLineOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LineOutlined: ComponentType[LineOutlinedProps] = typings.antDesignIcons.antDesignIconsLineOutlinedMod.default.asInstanceOf[ComponentType[LineOutlinedProps]]
   @scala.inline
-  def LinkOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLinkOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LinkOutlined: ComponentType[LinkOutlinedProps] = typings.antDesignIcons.antDesignIconsLinkOutlinedMod.default.asInstanceOf[ComponentType[LinkOutlinedProps]]
   @scala.inline
-  def LinkedinFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLinkedinFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LinkedinFilled: ComponentType[LinkedinFilledProps] = typings.antDesignIcons.antDesignIconsLinkedinFilledMod.default.asInstanceOf[ComponentType[LinkedinFilledProps]]
   @scala.inline
-  def LinkedinOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLinkedinOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LinkedinOutlined: ComponentType[LinkedinOutlinedProps] = typings.antDesignIcons.antDesignIconsLinkedinOutlinedMod.default.asInstanceOf[ComponentType[LinkedinOutlinedProps]]
   @scala.inline
-  def Loading3QuartersOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLoading3QuartersOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def Loading3QuartersOutlined: ComponentType[Loading3QuartersOutlinedProps] = typings.antDesignIcons.antDesignIconsLoading3QuartersOutlinedMod.default.asInstanceOf[ComponentType[Loading3QuartersOutlinedProps]]
   @scala.inline
-  def LoadingOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLoadingOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LoadingOutlined: ComponentType[LoadingOutlinedProps] = typings.antDesignIcons.antDesignIconsLoadingOutlinedMod.default.asInstanceOf[ComponentType[LoadingOutlinedProps]]
   @scala.inline
-  def LockFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLockFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LockFilled: ComponentType[LockFilledProps] = typings.antDesignIcons.antDesignIconsLockFilledMod.default.asInstanceOf[ComponentType[LockFilledProps]]
   @scala.inline
-  def LockOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLockOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LockOutlined: ComponentType[LockOutlinedProps] = typings.antDesignIcons.antDesignIconsLockOutlinedMod.default.asInstanceOf[ComponentType[LockOutlinedProps]]
   @scala.inline
-  def LockTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLockTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LockTwoTone: ComponentType[LockTwoToneProps] = typings.antDesignIcons.antDesignIconsLockTwoToneMod.default.asInstanceOf[ComponentType[LockTwoToneProps]]
   @scala.inline
-  def LoginOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLoginOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LoginOutlined: ComponentType[LoginOutlinedProps] = typings.antDesignIcons.antDesignIconsLoginOutlinedMod.default.asInstanceOf[ComponentType[LoginOutlinedProps]]
   @scala.inline
-  def LogoutOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsLogoutOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def LogoutOutlined: ComponentType[LogoutOutlinedProps] = typings.antDesignIcons.antDesignIconsLogoutOutlinedMod.default.asInstanceOf[ComponentType[LogoutOutlinedProps]]
   @scala.inline
-  def MacCommandFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMacCommandFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MacCommandFilled: ComponentType[MacCommandFilledProps] = typings.antDesignIcons.antDesignIconsMacCommandFilledMod.default.asInstanceOf[ComponentType[MacCommandFilledProps]]
   @scala.inline
-  def MacCommandOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMacCommandOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MacCommandOutlined: ComponentType[MacCommandOutlinedProps] = typings.antDesignIcons.antDesignIconsMacCommandOutlinedMod.default.asInstanceOf[ComponentType[MacCommandOutlinedProps]]
   @scala.inline
-  def MailFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMailFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MailFilled: ComponentType[MailFilledProps] = typings.antDesignIcons.antDesignIconsMailFilledMod.default.asInstanceOf[ComponentType[MailFilledProps]]
   @scala.inline
-  def MailOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMailOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MailOutlined: ComponentType[MailOutlinedProps] = typings.antDesignIcons.antDesignIconsMailOutlinedMod.default.asInstanceOf[ComponentType[MailOutlinedProps]]
   @scala.inline
-  def MailTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMailTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MailTwoTone: ComponentType[MailTwoToneProps] = typings.antDesignIcons.antDesignIconsMailTwoToneMod.default.asInstanceOf[ComponentType[MailTwoToneProps]]
   @scala.inline
-  def ManOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsManOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ManOutlined: ComponentType[ManOutlinedProps] = typings.antDesignIcons.antDesignIconsManOutlinedMod.default.asInstanceOf[ComponentType[ManOutlinedProps]]
   @scala.inline
-  def MedicineBoxFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMedicineBoxFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MedicineBoxFilled: ComponentType[MedicineBoxFilledProps] = typings.antDesignIcons.antDesignIconsMedicineBoxFilledMod.default.asInstanceOf[ComponentType[MedicineBoxFilledProps]]
   @scala.inline
-  def MedicineBoxOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMedicineBoxOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MedicineBoxOutlined: ComponentType[MedicineBoxOutlinedProps] = typings.antDesignIcons.antDesignIconsMedicineBoxOutlinedMod.default.asInstanceOf[ComponentType[MedicineBoxOutlinedProps]]
   @scala.inline
-  def MedicineBoxTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMedicineBoxTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MedicineBoxTwoTone: ComponentType[MedicineBoxTwoToneProps] = typings.antDesignIcons.antDesignIconsMedicineBoxTwoToneMod.default.asInstanceOf[ComponentType[MedicineBoxTwoToneProps]]
   @scala.inline
-  def MediumCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMediumCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MediumCircleFilled: ComponentType[MediumCircleFilledProps] = typings.antDesignIcons.antDesignIconsMediumCircleFilledMod.default.asInstanceOf[ComponentType[MediumCircleFilledProps]]
   @scala.inline
-  def MediumOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMediumOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MediumOutlined: ComponentType[MediumOutlinedProps] = typings.antDesignIcons.antDesignIconsMediumOutlinedMod.default.asInstanceOf[ComponentType[MediumOutlinedProps]]
   @scala.inline
-  def MediumSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMediumSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MediumSquareFilled: ComponentType[MediumSquareFilledProps] = typings.antDesignIcons.antDesignIconsMediumSquareFilledMod.default.asInstanceOf[ComponentType[MediumSquareFilledProps]]
   @scala.inline
-  def MediumWorkmarkOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMediumWorkmarkOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MediumWorkmarkOutlined: ComponentType[MediumWorkmarkOutlinedProps] = typings.antDesignIcons.antDesignIconsMediumWorkmarkOutlinedMod.default.asInstanceOf[ComponentType[MediumWorkmarkOutlinedProps]]
   @scala.inline
-  def MehFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMehFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MehFilled: ComponentType[MehFilledProps] = typings.antDesignIcons.antDesignIconsMehFilledMod.default.asInstanceOf[ComponentType[MehFilledProps]]
   @scala.inline
-  def MehOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMehOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MehOutlined: ComponentType[MehOutlinedProps] = typings.antDesignIcons.antDesignIconsMehOutlinedMod.default.asInstanceOf[ComponentType[MehOutlinedProps]]
   @scala.inline
-  def MehTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMehTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MehTwoTone: ComponentType[MehTwoToneProps] = typings.antDesignIcons.antDesignIconsMehTwoToneMod.default.asInstanceOf[ComponentType[MehTwoToneProps]]
   @scala.inline
-  def MenuFoldOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMenuFoldOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MenuFoldOutlined: ComponentType[MenuFoldOutlinedProps] = typings.antDesignIcons.antDesignIconsMenuFoldOutlinedMod.default.asInstanceOf[ComponentType[MenuFoldOutlinedProps]]
   @scala.inline
-  def MenuOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMenuOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MenuOutlined: ComponentType[MenuOutlinedProps] = typings.antDesignIcons.antDesignIconsMenuOutlinedMod.default.asInstanceOf[ComponentType[MenuOutlinedProps]]
   @scala.inline
-  def MenuUnfoldOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMenuUnfoldOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MenuUnfoldOutlined: ComponentType[MenuUnfoldOutlinedProps] = typings.antDesignIcons.antDesignIconsMenuUnfoldOutlinedMod.default.asInstanceOf[ComponentType[MenuUnfoldOutlinedProps]]
   @scala.inline
-  def MergeCellsOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMergeCellsOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MergeCellsOutlined: ComponentType[MergeCellsOutlinedProps] = typings.antDesignIcons.antDesignIconsMergeCellsOutlinedMod.default.asInstanceOf[ComponentType[MergeCellsOutlinedProps]]
   @scala.inline
-  def MessageFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMessageFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MessageFilled: ComponentType[MessageFilledProps] = typings.antDesignIcons.antDesignIconsMessageFilledMod.default.asInstanceOf[ComponentType[MessageFilledProps]]
   @scala.inline
-  def MessageOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMessageOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MessageOutlined: ComponentType[MessageOutlinedProps] = typings.antDesignIcons.antDesignIconsMessageOutlinedMod.default.asInstanceOf[ComponentType[MessageOutlinedProps]]
   @scala.inline
-  def MessageTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMessageTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MessageTwoTone: ComponentType[MessageTwoToneProps] = typings.antDesignIcons.antDesignIconsMessageTwoToneMod.default.asInstanceOf[ComponentType[MessageTwoToneProps]]
   @scala.inline
-  def MinusCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMinusCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MinusCircleFilled: ComponentType[MinusCircleFilledProps] = typings.antDesignIcons.antDesignIconsMinusCircleFilledMod.default.asInstanceOf[ComponentType[MinusCircleFilledProps]]
   @scala.inline
-  def MinusCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMinusCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MinusCircleOutlined: ComponentType[MinusCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsMinusCircleOutlinedMod.default.asInstanceOf[ComponentType[MinusCircleOutlinedProps]]
   @scala.inline
-  def MinusCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMinusCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MinusCircleTwoTone: ComponentType[MinusCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsMinusCircleTwoToneMod.default.asInstanceOf[ComponentType[MinusCircleTwoToneProps]]
   @scala.inline
-  def MinusOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMinusOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MinusOutlined: ComponentType[MinusOutlinedProps] = typings.antDesignIcons.antDesignIconsMinusOutlinedMod.default.asInstanceOf[ComponentType[MinusOutlinedProps]]
   @scala.inline
-  def MinusSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMinusSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MinusSquareFilled: ComponentType[MinusSquareFilledProps] = typings.antDesignIcons.antDesignIconsMinusSquareFilledMod.default.asInstanceOf[ComponentType[MinusSquareFilledProps]]
   @scala.inline
-  def MinusSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMinusSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MinusSquareOutlined: ComponentType[MinusSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsMinusSquareOutlinedMod.default.asInstanceOf[ComponentType[MinusSquareOutlinedProps]]
   @scala.inline
-  def MinusSquareTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMinusSquareTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MinusSquareTwoTone: ComponentType[MinusSquareTwoToneProps] = typings.antDesignIcons.antDesignIconsMinusSquareTwoToneMod.default.asInstanceOf[ComponentType[MinusSquareTwoToneProps]]
   @scala.inline
-  def MobileFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMobileFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MobileFilled: ComponentType[MobileFilledProps] = typings.antDesignIcons.antDesignIconsMobileFilledMod.default.asInstanceOf[ComponentType[MobileFilledProps]]
   @scala.inline
-  def MobileOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMobileOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MobileOutlined: ComponentType[MobileOutlinedProps] = typings.antDesignIcons.antDesignIconsMobileOutlinedMod.default.asInstanceOf[ComponentType[MobileOutlinedProps]]
   @scala.inline
-  def MobileTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMobileTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MobileTwoTone: ComponentType[MobileTwoToneProps] = typings.antDesignIcons.antDesignIconsMobileTwoToneMod.default.asInstanceOf[ComponentType[MobileTwoToneProps]]
   @scala.inline
-  def MoneyCollectFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMoneyCollectFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MoneyCollectFilled: ComponentType[MoneyCollectFilledProps] = typings.antDesignIcons.antDesignIconsMoneyCollectFilledMod.default.asInstanceOf[ComponentType[MoneyCollectFilledProps]]
   @scala.inline
-  def MoneyCollectOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMoneyCollectOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MoneyCollectOutlined: ComponentType[MoneyCollectOutlinedProps] = typings.antDesignIcons.antDesignIconsMoneyCollectOutlinedMod.default.asInstanceOf[ComponentType[MoneyCollectOutlinedProps]]
   @scala.inline
-  def MoneyCollectTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMoneyCollectTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MoneyCollectTwoTone: ComponentType[MoneyCollectTwoToneProps] = typings.antDesignIcons.antDesignIconsMoneyCollectTwoToneMod.default.asInstanceOf[ComponentType[MoneyCollectTwoToneProps]]
   @scala.inline
-  def MonitorOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMonitorOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MonitorOutlined: ComponentType[MonitorOutlinedProps] = typings.antDesignIcons.antDesignIconsMonitorOutlinedMod.default.asInstanceOf[ComponentType[MonitorOutlinedProps]]
   @scala.inline
-  def MoreOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsMoreOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def MoreOutlined: ComponentType[MoreOutlinedProps] = typings.antDesignIcons.antDesignIconsMoreOutlinedMod.default.asInstanceOf[ComponentType[MoreOutlinedProps]]
   @scala.inline
-  def NodeCollapseOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsNodeCollapseOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def NodeCollapseOutlined: ComponentType[NodeCollapseOutlinedProps] = typings.antDesignIcons.antDesignIconsNodeCollapseOutlinedMod.default.asInstanceOf[ComponentType[NodeCollapseOutlinedProps]]
   @scala.inline
-  def NodeExpandOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsNodeExpandOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def NodeExpandOutlined: ComponentType[NodeExpandOutlinedProps] = typings.antDesignIcons.antDesignIconsNodeExpandOutlinedMod.default.asInstanceOf[ComponentType[NodeExpandOutlinedProps]]
   @scala.inline
-  def NodeIndexOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsNodeIndexOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def NodeIndexOutlined: ComponentType[NodeIndexOutlinedProps] = typings.antDesignIcons.antDesignIconsNodeIndexOutlinedMod.default.asInstanceOf[ComponentType[NodeIndexOutlinedProps]]
   @scala.inline
-  def NotificationFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsNotificationFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def NotificationFilled: ComponentType[NotificationFilledProps] = typings.antDesignIcons.antDesignIconsNotificationFilledMod.default.asInstanceOf[ComponentType[NotificationFilledProps]]
   @scala.inline
-  def NotificationOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsNotificationOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def NotificationOutlined: ComponentType[NotificationOutlinedProps] = typings.antDesignIcons.antDesignIconsNotificationOutlinedMod.default.asInstanceOf[ComponentType[NotificationOutlinedProps]]
   @scala.inline
-  def NotificationTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsNotificationTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def NotificationTwoTone: ComponentType[NotificationTwoToneProps] = typings.antDesignIcons.antDesignIconsNotificationTwoToneMod.default.asInstanceOf[ComponentType[NotificationTwoToneProps]]
   @scala.inline
-  def NumberOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsNumberOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def NumberOutlined: ComponentType[NumberOutlinedProps] = typings.antDesignIcons.antDesignIconsNumberOutlinedMod.default.asInstanceOf[ComponentType[NumberOutlinedProps]]
   @scala.inline
-  def OneToOneOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsOneToOneOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def OneToOneOutlined: ComponentType[OneToOneOutlinedProps] = typings.antDesignIcons.antDesignIconsOneToOneOutlinedMod.default.asInstanceOf[ComponentType[OneToOneOutlinedProps]]
   @scala.inline
-  def OrderedListOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsOrderedListOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def OrderedListOutlined: ComponentType[OrderedListOutlinedProps] = typings.antDesignIcons.antDesignIconsOrderedListOutlinedMod.default.asInstanceOf[ComponentType[OrderedListOutlinedProps]]
   @scala.inline
-  def PaperClipOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPaperClipOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PaperClipOutlined: ComponentType[PaperClipOutlinedProps] = typings.antDesignIcons.antDesignIconsPaperClipOutlinedMod.default.asInstanceOf[ComponentType[PaperClipOutlinedProps]]
   @scala.inline
-  def PartitionOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPartitionOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PartitionOutlined: ComponentType[PartitionOutlinedProps] = typings.antDesignIcons.antDesignIconsPartitionOutlinedMod.default.asInstanceOf[ComponentType[PartitionOutlinedProps]]
   @scala.inline
-  def PauseCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPauseCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PauseCircleFilled: ComponentType[PauseCircleFilledProps] = typings.antDesignIcons.antDesignIconsPauseCircleFilledMod.default.asInstanceOf[ComponentType[PauseCircleFilledProps]]
   @scala.inline
-  def PauseCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPauseCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PauseCircleOutlined: ComponentType[PauseCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsPauseCircleOutlinedMod.default.asInstanceOf[ComponentType[PauseCircleOutlinedProps]]
   @scala.inline
-  def PauseCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPauseCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PauseCircleTwoTone: ComponentType[PauseCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsPauseCircleTwoToneMod.default.asInstanceOf[ComponentType[PauseCircleTwoToneProps]]
   @scala.inline
-  def PauseOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPauseOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PauseOutlined: ComponentType[PauseOutlinedProps] = typings.antDesignIcons.antDesignIconsPauseOutlinedMod.default.asInstanceOf[ComponentType[PauseOutlinedProps]]
   @scala.inline
-  def PayCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPayCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PayCircleFilled: ComponentType[PayCircleFilledProps] = typings.antDesignIcons.antDesignIconsPayCircleFilledMod.default.asInstanceOf[ComponentType[PayCircleFilledProps]]
   @scala.inline
-  def PayCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPayCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PayCircleOutlined: ComponentType[PayCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsPayCircleOutlinedMod.default.asInstanceOf[ComponentType[PayCircleOutlinedProps]]
   @scala.inline
-  def PercentageOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPercentageOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PercentageOutlined: ComponentType[PercentageOutlinedProps] = typings.antDesignIcons.antDesignIconsPercentageOutlinedMod.default.asInstanceOf[ComponentType[PercentageOutlinedProps]]
   @scala.inline
-  def PhoneFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPhoneFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PhoneFilled: ComponentType[PhoneFilledProps] = typings.antDesignIcons.antDesignIconsPhoneFilledMod.default.asInstanceOf[ComponentType[PhoneFilledProps]]
   @scala.inline
-  def PhoneOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPhoneOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PhoneOutlined: ComponentType[PhoneOutlinedProps] = typings.antDesignIcons.antDesignIconsPhoneOutlinedMod.default.asInstanceOf[ComponentType[PhoneOutlinedProps]]
   @scala.inline
-  def PhoneTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPhoneTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PhoneTwoTone: ComponentType[PhoneTwoToneProps] = typings.antDesignIcons.antDesignIconsPhoneTwoToneMod.default.asInstanceOf[ComponentType[PhoneTwoToneProps]]
   @scala.inline
-  def PicCenterOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPicCenterOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PicCenterOutlined: ComponentType[PicCenterOutlinedProps] = typings.antDesignIcons.antDesignIconsPicCenterOutlinedMod.default.asInstanceOf[ComponentType[PicCenterOutlinedProps]]
   @scala.inline
-  def PicLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPicLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PicLeftOutlined: ComponentType[PicLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsPicLeftOutlinedMod.default.asInstanceOf[ComponentType[PicLeftOutlinedProps]]
   @scala.inline
-  def PicRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPicRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PicRightOutlined: ComponentType[PicRightOutlinedProps] = typings.antDesignIcons.antDesignIconsPicRightOutlinedMod.default.asInstanceOf[ComponentType[PicRightOutlinedProps]]
   @scala.inline
-  def PictureFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPictureFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PictureFilled: ComponentType[PictureFilledProps] = typings.antDesignIcons.antDesignIconsPictureFilledMod.default.asInstanceOf[ComponentType[PictureFilledProps]]
   @scala.inline
-  def PictureOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPictureOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PictureOutlined: ComponentType[PictureOutlinedProps] = typings.antDesignIcons.antDesignIconsPictureOutlinedMod.default.asInstanceOf[ComponentType[PictureOutlinedProps]]
   @scala.inline
-  def PictureTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPictureTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PictureTwoTone: ComponentType[PictureTwoToneProps] = typings.antDesignIcons.antDesignIconsPictureTwoToneMod.default.asInstanceOf[ComponentType[PictureTwoToneProps]]
   @scala.inline
-  def PieChartFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPieChartFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PieChartFilled: ComponentType[PieChartFilledProps] = typings.antDesignIcons.antDesignIconsPieChartFilledMod.default.asInstanceOf[ComponentType[PieChartFilledProps]]
   @scala.inline
-  def PieChartOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPieChartOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PieChartOutlined: ComponentType[PieChartOutlinedProps] = typings.antDesignIcons.antDesignIconsPieChartOutlinedMod.default.asInstanceOf[ComponentType[PieChartOutlinedProps]]
   @scala.inline
-  def PieChartTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPieChartTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PieChartTwoTone: ComponentType[PieChartTwoToneProps] = typings.antDesignIcons.antDesignIconsPieChartTwoToneMod.default.asInstanceOf[ComponentType[PieChartTwoToneProps]]
   @scala.inline
-  def PlayCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlayCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlayCircleFilled: ComponentType[PlayCircleFilledProps] = typings.antDesignIcons.antDesignIconsPlayCircleFilledMod.default.asInstanceOf[ComponentType[PlayCircleFilledProps]]
   @scala.inline
-  def PlayCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlayCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlayCircleOutlined: ComponentType[PlayCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsPlayCircleOutlinedMod.default.asInstanceOf[ComponentType[PlayCircleOutlinedProps]]
   @scala.inline
-  def PlayCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlayCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlayCircleTwoTone: ComponentType[PlayCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsPlayCircleTwoToneMod.default.asInstanceOf[ComponentType[PlayCircleTwoToneProps]]
   @scala.inline
-  def PlaySquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlaySquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlaySquareFilled: ComponentType[PlaySquareFilledProps] = typings.antDesignIcons.antDesignIconsPlaySquareFilledMod.default.asInstanceOf[ComponentType[PlaySquareFilledProps]]
   @scala.inline
-  def PlaySquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlaySquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlaySquareOutlined: ComponentType[PlaySquareOutlinedProps] = typings.antDesignIcons.antDesignIconsPlaySquareOutlinedMod.default.asInstanceOf[ComponentType[PlaySquareOutlinedProps]]
   @scala.inline
-  def PlaySquareTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlaySquareTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlaySquareTwoTone: ComponentType[PlaySquareTwoToneProps] = typings.antDesignIcons.antDesignIconsPlaySquareTwoToneMod.default.asInstanceOf[ComponentType[PlaySquareTwoToneProps]]
   @scala.inline
-  def PlusCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlusCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlusCircleFilled: ComponentType[PlusCircleFilledProps] = typings.antDesignIcons.antDesignIconsPlusCircleFilledMod.default.asInstanceOf[ComponentType[PlusCircleFilledProps]]
   @scala.inline
-  def PlusCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlusCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlusCircleOutlined: ComponentType[PlusCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsPlusCircleOutlinedMod.default.asInstanceOf[ComponentType[PlusCircleOutlinedProps]]
   @scala.inline
-  def PlusCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlusCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlusCircleTwoTone: ComponentType[PlusCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsPlusCircleTwoToneMod.default.asInstanceOf[ComponentType[PlusCircleTwoToneProps]]
   @scala.inline
-  def PlusOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlusOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlusOutlined: ComponentType[PlusOutlinedProps] = typings.antDesignIcons.antDesignIconsPlusOutlinedMod.default.asInstanceOf[ComponentType[PlusOutlinedProps]]
   @scala.inline
-  def PlusSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlusSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlusSquareFilled: ComponentType[PlusSquareFilledProps] = typings.antDesignIcons.antDesignIconsPlusSquareFilledMod.default.asInstanceOf[ComponentType[PlusSquareFilledProps]]
   @scala.inline
-  def PlusSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlusSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlusSquareOutlined: ComponentType[PlusSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsPlusSquareOutlinedMod.default.asInstanceOf[ComponentType[PlusSquareOutlinedProps]]
   @scala.inline
-  def PlusSquareTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPlusSquareTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PlusSquareTwoTone: ComponentType[PlusSquareTwoToneProps] = typings.antDesignIcons.antDesignIconsPlusSquareTwoToneMod.default.asInstanceOf[ComponentType[PlusSquareTwoToneProps]]
   @scala.inline
-  def PoundCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPoundCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PoundCircleFilled: ComponentType[PoundCircleFilledProps] = typings.antDesignIcons.antDesignIconsPoundCircleFilledMod.default.asInstanceOf[ComponentType[PoundCircleFilledProps]]
   @scala.inline
-  def PoundCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPoundCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PoundCircleOutlined: ComponentType[PoundCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsPoundCircleOutlinedMod.default.asInstanceOf[ComponentType[PoundCircleOutlinedProps]]
   @scala.inline
-  def PoundCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPoundCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PoundCircleTwoTone: ComponentType[PoundCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsPoundCircleTwoToneMod.default.asInstanceOf[ComponentType[PoundCircleTwoToneProps]]
   @scala.inline
-  def PoundOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPoundOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PoundOutlined: ComponentType[PoundOutlinedProps] = typings.antDesignIcons.antDesignIconsPoundOutlinedMod.default.asInstanceOf[ComponentType[PoundOutlinedProps]]
   @scala.inline
-  def PoweroffOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPoweroffOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PoweroffOutlined: ComponentType[PoweroffOutlinedProps] = typings.antDesignIcons.antDesignIconsPoweroffOutlinedMod.default.asInstanceOf[ComponentType[PoweroffOutlinedProps]]
   @scala.inline
-  def PrinterFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPrinterFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PrinterFilled: ComponentType[PrinterFilledProps] = typings.antDesignIcons.antDesignIconsPrinterFilledMod.default.asInstanceOf[ComponentType[PrinterFilledProps]]
   @scala.inline
-  def PrinterOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPrinterOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PrinterOutlined: ComponentType[PrinterOutlinedProps] = typings.antDesignIcons.antDesignIconsPrinterOutlinedMod.default.asInstanceOf[ComponentType[PrinterOutlinedProps]]
   @scala.inline
-  def PrinterTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPrinterTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PrinterTwoTone: ComponentType[PrinterTwoToneProps] = typings.antDesignIcons.antDesignIconsPrinterTwoToneMod.default.asInstanceOf[ComponentType[PrinterTwoToneProps]]
   @scala.inline
-  def ProfileFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsProfileFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ProfileFilled: ComponentType[ProfileFilledProps] = typings.antDesignIcons.antDesignIconsProfileFilledMod.default.asInstanceOf[ComponentType[ProfileFilledProps]]
   @scala.inline
-  def ProfileOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsProfileOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ProfileOutlined: ComponentType[ProfileOutlinedProps] = typings.antDesignIcons.antDesignIconsProfileOutlinedMod.default.asInstanceOf[ComponentType[ProfileOutlinedProps]]
   @scala.inline
-  def ProfileTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsProfileTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ProfileTwoTone: ComponentType[ProfileTwoToneProps] = typings.antDesignIcons.antDesignIconsProfileTwoToneMod.default.asInstanceOf[ComponentType[ProfileTwoToneProps]]
   @scala.inline
-  def ProjectFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsProjectFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ProjectFilled: ComponentType[ProjectFilledProps] = typings.antDesignIcons.antDesignIconsProjectFilledMod.default.asInstanceOf[ComponentType[ProjectFilledProps]]
   @scala.inline
-  def ProjectOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsProjectOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ProjectOutlined: ComponentType[ProjectOutlinedProps] = typings.antDesignIcons.antDesignIconsProjectOutlinedMod.default.asInstanceOf[ComponentType[ProjectOutlinedProps]]
   @scala.inline
-  def ProjectTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsProjectTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ProjectTwoTone: ComponentType[ProjectTwoToneProps] = typings.antDesignIcons.antDesignIconsProjectTwoToneMod.default.asInstanceOf[ComponentType[ProjectTwoToneProps]]
   @scala.inline
-  def PropertySafetyFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPropertySafetyFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PropertySafetyFilled: ComponentType[PropertySafetyFilledProps] = typings.antDesignIcons.antDesignIconsPropertySafetyFilledMod.default.asInstanceOf[ComponentType[PropertySafetyFilledProps]]
   @scala.inline
-  def PropertySafetyOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPropertySafetyOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PropertySafetyOutlined: ComponentType[PropertySafetyOutlinedProps] = typings.antDesignIcons.antDesignIconsPropertySafetyOutlinedMod.default.asInstanceOf[ComponentType[PropertySafetyOutlinedProps]]
   @scala.inline
-  def PropertySafetyTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPropertySafetyTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PropertySafetyTwoTone: ComponentType[PropertySafetyTwoToneProps] = typings.antDesignIcons.antDesignIconsPropertySafetyTwoToneMod.default.asInstanceOf[ComponentType[PropertySafetyTwoToneProps]]
   @scala.inline
-  def PullRequestOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPullRequestOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PullRequestOutlined: ComponentType[PullRequestOutlinedProps] = typings.antDesignIcons.antDesignIconsPullRequestOutlinedMod.default.asInstanceOf[ComponentType[PullRequestOutlinedProps]]
   @scala.inline
-  def PushpinFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPushpinFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PushpinFilled: ComponentType[PushpinFilledProps] = typings.antDesignIcons.antDesignIconsPushpinFilledMod.default.asInstanceOf[ComponentType[PushpinFilledProps]]
   @scala.inline
-  def PushpinOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPushpinOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PushpinOutlined: ComponentType[PushpinOutlinedProps] = typings.antDesignIcons.antDesignIconsPushpinOutlinedMod.default.asInstanceOf[ComponentType[PushpinOutlinedProps]]
   @scala.inline
-  def PushpinTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsPushpinTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def PushpinTwoTone: ComponentType[PushpinTwoToneProps] = typings.antDesignIcons.antDesignIconsPushpinTwoToneMod.default.asInstanceOf[ComponentType[PushpinTwoToneProps]]
   @scala.inline
-  def QqCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsQqCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def QqCircleFilled: ComponentType[QqCircleFilledProps] = typings.antDesignIcons.antDesignIconsQqCircleFilledMod.default.asInstanceOf[ComponentType[QqCircleFilledProps]]
   @scala.inline
-  def QqOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsQqOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def QqOutlined: ComponentType[QqOutlinedProps] = typings.antDesignIcons.antDesignIconsQqOutlinedMod.default.asInstanceOf[ComponentType[QqOutlinedProps]]
   @scala.inline
-  def QqSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsQqSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def QqSquareFilled: ComponentType[QqSquareFilledProps] = typings.antDesignIcons.antDesignIconsQqSquareFilledMod.default.asInstanceOf[ComponentType[QqSquareFilledProps]]
   @scala.inline
-  def QrcodeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsQrcodeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def QrcodeOutlined: ComponentType[QrcodeOutlinedProps] = typings.antDesignIcons.antDesignIconsQrcodeOutlinedMod.default.asInstanceOf[ComponentType[QrcodeOutlinedProps]]
   @scala.inline
-  def QuestionCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsQuestionCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def QuestionCircleFilled: ComponentType[QuestionCircleFilledProps] = typings.antDesignIcons.antDesignIconsQuestionCircleFilledMod.default.asInstanceOf[ComponentType[QuestionCircleFilledProps]]
   @scala.inline
-  def QuestionCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsQuestionCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def QuestionCircleOutlined: ComponentType[QuestionCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsQuestionCircleOutlinedMod.default.asInstanceOf[ComponentType[QuestionCircleOutlinedProps]]
   @scala.inline
-  def QuestionCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsQuestionCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def QuestionCircleTwoTone: ComponentType[QuestionCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsQuestionCircleTwoToneMod.default.asInstanceOf[ComponentType[QuestionCircleTwoToneProps]]
   @scala.inline
-  def QuestionOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsQuestionOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def QuestionOutlined: ComponentType[QuestionOutlinedProps] = typings.antDesignIcons.antDesignIconsQuestionOutlinedMod.default.asInstanceOf[ComponentType[QuestionOutlinedProps]]
   @scala.inline
-  def RadarChartOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRadarChartOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RadarChartOutlined: ComponentType[RadarChartOutlinedProps] = typings.antDesignIcons.antDesignIconsRadarChartOutlinedMod.default.asInstanceOf[ComponentType[RadarChartOutlinedProps]]
   @scala.inline
-  def RadiusBottomleftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRadiusBottomleftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RadiusBottomleftOutlined: ComponentType[RadiusBottomleftOutlinedProps] = typings.antDesignIcons.antDesignIconsRadiusBottomleftOutlinedMod.default.asInstanceOf[ComponentType[RadiusBottomleftOutlinedProps]]
   @scala.inline
-  def RadiusBottomrightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRadiusBottomrightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RadiusBottomrightOutlined: ComponentType[RadiusBottomrightOutlinedProps] = typings.antDesignIcons.antDesignIconsRadiusBottomrightOutlinedMod.default.asInstanceOf[ComponentType[RadiusBottomrightOutlinedProps]]
   @scala.inline
-  def RadiusSettingOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRadiusSettingOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RadiusSettingOutlined: ComponentType[RadiusSettingOutlinedProps] = typings.antDesignIcons.antDesignIconsRadiusSettingOutlinedMod.default.asInstanceOf[ComponentType[RadiusSettingOutlinedProps]]
   @scala.inline
-  def RadiusUpleftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRadiusUpleftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RadiusUpleftOutlined: ComponentType[RadiusUpleftOutlinedProps] = typings.antDesignIcons.antDesignIconsRadiusUpleftOutlinedMod.default.asInstanceOf[ComponentType[RadiusUpleftOutlinedProps]]
   @scala.inline
-  def RadiusUprightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRadiusUprightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RadiusUprightOutlined: ComponentType[RadiusUprightOutlinedProps] = typings.antDesignIcons.antDesignIconsRadiusUprightOutlinedMod.default.asInstanceOf[ComponentType[RadiusUprightOutlinedProps]]
   @scala.inline
-  def ReadFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsReadFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ReadFilled: ComponentType[ReadFilledProps] = typings.antDesignIcons.antDesignIconsReadFilledMod.default.asInstanceOf[ComponentType[ReadFilledProps]]
   @scala.inline
-  def ReadOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsReadOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ReadOutlined: ComponentType[ReadOutlinedProps] = typings.antDesignIcons.antDesignIconsReadOutlinedMod.default.asInstanceOf[ComponentType[ReadOutlinedProps]]
   @scala.inline
-  def ReconciliationFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsReconciliationFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ReconciliationFilled: ComponentType[ReconciliationFilledProps] = typings.antDesignIcons.antDesignIconsReconciliationFilledMod.default.asInstanceOf[ComponentType[ReconciliationFilledProps]]
   @scala.inline
-  def ReconciliationOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsReconciliationOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ReconciliationOutlined: ComponentType[ReconciliationOutlinedProps] = typings.antDesignIcons.antDesignIconsReconciliationOutlinedMod.default.asInstanceOf[ComponentType[ReconciliationOutlinedProps]]
   @scala.inline
-  def ReconciliationTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsReconciliationTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ReconciliationTwoTone: ComponentType[ReconciliationTwoToneProps] = typings.antDesignIcons.antDesignIconsReconciliationTwoToneMod.default.asInstanceOf[ComponentType[ReconciliationTwoToneProps]]
   @scala.inline
-  def RedEnvelopeFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRedEnvelopeFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RedEnvelopeFilled: ComponentType[RedEnvelopeFilledProps] = typings.antDesignIcons.antDesignIconsRedEnvelopeFilledMod.default.asInstanceOf[ComponentType[RedEnvelopeFilledProps]]
   @scala.inline
-  def RedEnvelopeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRedEnvelopeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RedEnvelopeOutlined: ComponentType[RedEnvelopeOutlinedProps] = typings.antDesignIcons.antDesignIconsRedEnvelopeOutlinedMod.default.asInstanceOf[ComponentType[RedEnvelopeOutlinedProps]]
   @scala.inline
-  def RedEnvelopeTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRedEnvelopeTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RedEnvelopeTwoTone: ComponentType[RedEnvelopeTwoToneProps] = typings.antDesignIcons.antDesignIconsRedEnvelopeTwoToneMod.default.asInstanceOf[ComponentType[RedEnvelopeTwoToneProps]]
   @scala.inline
-  def RedditCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRedditCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RedditCircleFilled: ComponentType[RedditCircleFilledProps] = typings.antDesignIcons.antDesignIconsRedditCircleFilledMod.default.asInstanceOf[ComponentType[RedditCircleFilledProps]]
   @scala.inline
-  def RedditOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRedditOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RedditOutlined: ComponentType[RedditOutlinedProps] = typings.antDesignIcons.antDesignIconsRedditOutlinedMod.default.asInstanceOf[ComponentType[RedditOutlinedProps]]
   @scala.inline
-  def RedditSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRedditSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RedditSquareFilled: ComponentType[RedditSquareFilledProps] = typings.antDesignIcons.antDesignIconsRedditSquareFilledMod.default.asInstanceOf[ComponentType[RedditSquareFilledProps]]
   @scala.inline
-  def RedoOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRedoOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RedoOutlined: ComponentType[RedoOutlinedProps] = typings.antDesignIcons.antDesignIconsRedoOutlinedMod.default.asInstanceOf[ComponentType[RedoOutlinedProps]]
   @scala.inline
-  def ReloadOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsReloadOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ReloadOutlined: ComponentType[ReloadOutlinedProps] = typings.antDesignIcons.antDesignIconsReloadOutlinedMod.default.asInstanceOf[ComponentType[ReloadOutlinedProps]]
   @scala.inline
-  def RestFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRestFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RestFilled: ComponentType[RestFilledProps] = typings.antDesignIcons.antDesignIconsRestFilledMod.default.asInstanceOf[ComponentType[RestFilledProps]]
   @scala.inline
-  def RestOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRestOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RestOutlined: ComponentType[RestOutlinedProps] = typings.antDesignIcons.antDesignIconsRestOutlinedMod.default.asInstanceOf[ComponentType[RestOutlinedProps]]
   @scala.inline
-  def RestTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRestTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RestTwoTone: ComponentType[RestTwoToneProps] = typings.antDesignIcons.antDesignIconsRestTwoToneMod.default.asInstanceOf[ComponentType[RestTwoToneProps]]
   @scala.inline
-  def RetweetOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRetweetOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RetweetOutlined: ComponentType[RetweetOutlinedProps] = typings.antDesignIcons.antDesignIconsRetweetOutlinedMod.default.asInstanceOf[ComponentType[RetweetOutlinedProps]]
   @scala.inline
-  def RightCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRightCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RightCircleFilled: ComponentType[RightCircleFilledProps] = typings.antDesignIcons.antDesignIconsRightCircleFilledMod.default.asInstanceOf[ComponentType[RightCircleFilledProps]]
   @scala.inline
-  def RightCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRightCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RightCircleOutlined: ComponentType[RightCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsRightCircleOutlinedMod.default.asInstanceOf[ComponentType[RightCircleOutlinedProps]]
   @scala.inline
-  def RightCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRightCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RightCircleTwoTone: ComponentType[RightCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsRightCircleTwoToneMod.default.asInstanceOf[ComponentType[RightCircleTwoToneProps]]
   @scala.inline
-  def RightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RightOutlined: ComponentType[RightOutlinedProps] = typings.antDesignIcons.antDesignIconsRightOutlinedMod.default.asInstanceOf[ComponentType[RightOutlinedProps]]
   @scala.inline
-  def RightSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRightSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RightSquareFilled: ComponentType[RightSquareFilledProps] = typings.antDesignIcons.antDesignIconsRightSquareFilledMod.default.asInstanceOf[ComponentType[RightSquareFilledProps]]
   @scala.inline
-  def RightSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRightSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RightSquareOutlined: ComponentType[RightSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsRightSquareOutlinedMod.default.asInstanceOf[ComponentType[RightSquareOutlinedProps]]
   @scala.inline
-  def RightSquareTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRightSquareTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RightSquareTwoTone: ComponentType[RightSquareTwoToneProps] = typings.antDesignIcons.antDesignIconsRightSquareTwoToneMod.default.asInstanceOf[ComponentType[RightSquareTwoToneProps]]
   @scala.inline
-  def RiseOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRiseOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RiseOutlined: ComponentType[RiseOutlinedProps] = typings.antDesignIcons.antDesignIconsRiseOutlinedMod.default.asInstanceOf[ComponentType[RiseOutlinedProps]]
   @scala.inline
-  def RobotFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRobotFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RobotFilled: ComponentType[RobotFilledProps] = typings.antDesignIcons.antDesignIconsRobotFilledMod.default.asInstanceOf[ComponentType[RobotFilledProps]]
   @scala.inline
-  def RobotOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRobotOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RobotOutlined: ComponentType[RobotOutlinedProps] = typings.antDesignIcons.antDesignIconsRobotOutlinedMod.default.asInstanceOf[ComponentType[RobotOutlinedProps]]
   @scala.inline
-  def RocketFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRocketFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RocketFilled: ComponentType[RocketFilledProps] = typings.antDesignIcons.antDesignIconsRocketFilledMod.default.asInstanceOf[ComponentType[RocketFilledProps]]
   @scala.inline
-  def RocketOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRocketOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RocketOutlined: ComponentType[RocketOutlinedProps] = typings.antDesignIcons.antDesignIconsRocketOutlinedMod.default.asInstanceOf[ComponentType[RocketOutlinedProps]]
   @scala.inline
-  def RocketTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRocketTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RocketTwoTone: ComponentType[RocketTwoToneProps] = typings.antDesignIcons.antDesignIconsRocketTwoToneMod.default.asInstanceOf[ComponentType[RocketTwoToneProps]]
   @scala.inline
-  def RollbackOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRollbackOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RollbackOutlined: ComponentType[RollbackOutlinedProps] = typings.antDesignIcons.antDesignIconsRollbackOutlinedMod.default.asInstanceOf[ComponentType[RollbackOutlinedProps]]
   @scala.inline
-  def RotateLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRotateLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RotateLeftOutlined: ComponentType[RotateLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsRotateLeftOutlinedMod.default.asInstanceOf[ComponentType[RotateLeftOutlinedProps]]
   @scala.inline
-  def RotateRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsRotateRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def RotateRightOutlined: ComponentType[RotateRightOutlinedProps] = typings.antDesignIcons.antDesignIconsRotateRightOutlinedMod.default.asInstanceOf[ComponentType[RotateRightOutlinedProps]]
   @scala.inline
-  def SafetyCertificateFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSafetyCertificateFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SafetyCertificateFilled: ComponentType[SafetyCertificateFilledProps] = typings.antDesignIcons.antDesignIconsSafetyCertificateFilledMod.default.asInstanceOf[ComponentType[SafetyCertificateFilledProps]]
   @scala.inline
-  def SafetyCertificateOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSafetyCertificateOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SafetyCertificateOutlined: ComponentType[SafetyCertificateOutlinedProps] = typings.antDesignIcons.antDesignIconsSafetyCertificateOutlinedMod.default.asInstanceOf[ComponentType[SafetyCertificateOutlinedProps]]
   @scala.inline
-  def SafetyCertificateTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSafetyCertificateTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SafetyCertificateTwoTone: ComponentType[SafetyCertificateTwoToneProps] = typings.antDesignIcons.antDesignIconsSafetyCertificateTwoToneMod.default.asInstanceOf[ComponentType[SafetyCertificateTwoToneProps]]
   @scala.inline
-  def SafetyOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSafetyOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SafetyOutlined: ComponentType[SafetyOutlinedProps] = typings.antDesignIcons.antDesignIconsSafetyOutlinedMod.default.asInstanceOf[ComponentType[SafetyOutlinedProps]]
   @scala.inline
-  def SaveFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSaveFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SaveFilled: ComponentType[SaveFilledProps] = typings.antDesignIcons.antDesignIconsSaveFilledMod.default.asInstanceOf[ComponentType[SaveFilledProps]]
   @scala.inline
-  def SaveOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSaveOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SaveOutlined: ComponentType[SaveOutlinedProps] = typings.antDesignIcons.antDesignIconsSaveOutlinedMod.default.asInstanceOf[ComponentType[SaveOutlinedProps]]
   @scala.inline
-  def SaveTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSaveTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SaveTwoTone: ComponentType[SaveTwoToneProps] = typings.antDesignIcons.antDesignIconsSaveTwoToneMod.default.asInstanceOf[ComponentType[SaveTwoToneProps]]
   @scala.inline
-  def ScanOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsScanOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ScanOutlined: ComponentType[ScanOutlinedProps] = typings.antDesignIcons.antDesignIconsScanOutlinedMod.default.asInstanceOf[ComponentType[ScanOutlinedProps]]
   @scala.inline
-  def ScheduleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsScheduleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ScheduleFilled: ComponentType[ScheduleFilledProps] = typings.antDesignIcons.antDesignIconsScheduleFilledMod.default.asInstanceOf[ComponentType[ScheduleFilledProps]]
   @scala.inline
-  def ScheduleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsScheduleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ScheduleOutlined: ComponentType[ScheduleOutlinedProps] = typings.antDesignIcons.antDesignIconsScheduleOutlinedMod.default.asInstanceOf[ComponentType[ScheduleOutlinedProps]]
   @scala.inline
-  def ScheduleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsScheduleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ScheduleTwoTone: ComponentType[ScheduleTwoToneProps] = typings.antDesignIcons.antDesignIconsScheduleTwoToneMod.default.asInstanceOf[ComponentType[ScheduleTwoToneProps]]
   @scala.inline
-  def ScissorOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsScissorOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ScissorOutlined: ComponentType[ScissorOutlinedProps] = typings.antDesignIcons.antDesignIconsScissorOutlinedMod.default.asInstanceOf[ComponentType[ScissorOutlinedProps]]
   @scala.inline
-  def SearchOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSearchOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SearchOutlined: ComponentType[SearchOutlinedProps] = typings.antDesignIcons.antDesignIconsSearchOutlinedMod.default.asInstanceOf[ComponentType[SearchOutlinedProps]]
   @scala.inline
-  def SecurityScanFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSecurityScanFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SecurityScanFilled: ComponentType[SecurityScanFilledProps] = typings.antDesignIcons.antDesignIconsSecurityScanFilledMod.default.asInstanceOf[ComponentType[SecurityScanFilledProps]]
   @scala.inline
-  def SecurityScanOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSecurityScanOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SecurityScanOutlined: ComponentType[SecurityScanOutlinedProps] = typings.antDesignIcons.antDesignIconsSecurityScanOutlinedMod.default.asInstanceOf[ComponentType[SecurityScanOutlinedProps]]
   @scala.inline
-  def SecurityScanTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSecurityScanTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SecurityScanTwoTone: ComponentType[SecurityScanTwoToneProps] = typings.antDesignIcons.antDesignIconsSecurityScanTwoToneMod.default.asInstanceOf[ComponentType[SecurityScanTwoToneProps]]
   @scala.inline
-  def SelectOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSelectOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SelectOutlined: ComponentType[SelectOutlinedProps] = typings.antDesignIcons.antDesignIconsSelectOutlinedMod.default.asInstanceOf[ComponentType[SelectOutlinedProps]]
   @scala.inline
-  def SendOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSendOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SendOutlined: ComponentType[SendOutlinedProps] = typings.antDesignIcons.antDesignIconsSendOutlinedMod.default.asInstanceOf[ComponentType[SendOutlinedProps]]
   @scala.inline
-  def SettingFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSettingFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SettingFilled: ComponentType[SettingFilledProps] = typings.antDesignIcons.antDesignIconsSettingFilledMod.default.asInstanceOf[ComponentType[SettingFilledProps]]
   @scala.inline
-  def SettingOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSettingOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SettingOutlined: ComponentType[SettingOutlinedProps] = typings.antDesignIcons.antDesignIconsSettingOutlinedMod.default.asInstanceOf[ComponentType[SettingOutlinedProps]]
   @scala.inline
-  def SettingTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSettingTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SettingTwoTone: ComponentType[SettingTwoToneProps] = typings.antDesignIcons.antDesignIconsSettingTwoToneMod.default.asInstanceOf[ComponentType[SettingTwoToneProps]]
   @scala.inline
-  def ShakeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShakeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShakeOutlined: ComponentType[ShakeOutlinedProps] = typings.antDesignIcons.antDesignIconsShakeOutlinedMod.default.asInstanceOf[ComponentType[ShakeOutlinedProps]]
   @scala.inline
-  def ShareAltOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShareAltOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShareAltOutlined: ComponentType[ShareAltOutlinedProps] = typings.antDesignIcons.antDesignIconsShareAltOutlinedMod.default.asInstanceOf[ComponentType[ShareAltOutlinedProps]]
   @scala.inline
-  def ShopFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShopFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShopFilled: ComponentType[ShopFilledProps] = typings.antDesignIcons.antDesignIconsShopFilledMod.default.asInstanceOf[ComponentType[ShopFilledProps]]
   @scala.inline
-  def ShopOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShopOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShopOutlined: ComponentType[ShopOutlinedProps] = typings.antDesignIcons.antDesignIconsShopOutlinedMod.default.asInstanceOf[ComponentType[ShopOutlinedProps]]
   @scala.inline
-  def ShopTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShopTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShopTwoTone: ComponentType[ShopTwoToneProps] = typings.antDesignIcons.antDesignIconsShopTwoToneMod.default.asInstanceOf[ComponentType[ShopTwoToneProps]]
   @scala.inline
-  def ShoppingCartOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShoppingCartOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShoppingCartOutlined: ComponentType[ShoppingCartOutlinedProps] = typings.antDesignIcons.antDesignIconsShoppingCartOutlinedMod.default.asInstanceOf[ComponentType[ShoppingCartOutlinedProps]]
   @scala.inline
-  def ShoppingFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShoppingFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShoppingFilled: ComponentType[ShoppingFilledProps] = typings.antDesignIcons.antDesignIconsShoppingFilledMod.default.asInstanceOf[ComponentType[ShoppingFilledProps]]
   @scala.inline
-  def ShoppingOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShoppingOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShoppingOutlined: ComponentType[ShoppingOutlinedProps] = typings.antDesignIcons.antDesignIconsShoppingOutlinedMod.default.asInstanceOf[ComponentType[ShoppingOutlinedProps]]
   @scala.inline
-  def ShoppingTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShoppingTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShoppingTwoTone: ComponentType[ShoppingTwoToneProps] = typings.antDesignIcons.antDesignIconsShoppingTwoToneMod.default.asInstanceOf[ComponentType[ShoppingTwoToneProps]]
   @scala.inline
-  def ShrinkOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsShrinkOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ShrinkOutlined: ComponentType[ShrinkOutlinedProps] = typings.antDesignIcons.antDesignIconsShrinkOutlinedMod.default.asInstanceOf[ComponentType[ShrinkOutlinedProps]]
   @scala.inline
-  def SignalFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSignalFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SignalFilled: ComponentType[SignalFilledProps] = typings.antDesignIcons.antDesignIconsSignalFilledMod.default.asInstanceOf[ComponentType[SignalFilledProps]]
   @scala.inline
-  def SisternodeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSisternodeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SisternodeOutlined: ComponentType[SisternodeOutlinedProps] = typings.antDesignIcons.antDesignIconsSisternodeOutlinedMod.default.asInstanceOf[ComponentType[SisternodeOutlinedProps]]
   @scala.inline
-  def SketchCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSketchCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SketchCircleFilled: ComponentType[SketchCircleFilledProps] = typings.antDesignIcons.antDesignIconsSketchCircleFilledMod.default.asInstanceOf[ComponentType[SketchCircleFilledProps]]
   @scala.inline
-  def SketchOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSketchOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SketchOutlined: ComponentType[SketchOutlinedProps] = typings.antDesignIcons.antDesignIconsSketchOutlinedMod.default.asInstanceOf[ComponentType[SketchOutlinedProps]]
   @scala.inline
-  def SketchSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSketchSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SketchSquareFilled: ComponentType[SketchSquareFilledProps] = typings.antDesignIcons.antDesignIconsSketchSquareFilledMod.default.asInstanceOf[ComponentType[SketchSquareFilledProps]]
   @scala.inline
-  def SkinFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSkinFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SkinFilled: ComponentType[SkinFilledProps] = typings.antDesignIcons.antDesignIconsSkinFilledMod.default.asInstanceOf[ComponentType[SkinFilledProps]]
   @scala.inline
-  def SkinOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSkinOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SkinOutlined: ComponentType[SkinOutlinedProps] = typings.antDesignIcons.antDesignIconsSkinOutlinedMod.default.asInstanceOf[ComponentType[SkinOutlinedProps]]
   @scala.inline
-  def SkinTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSkinTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SkinTwoTone: ComponentType[SkinTwoToneProps] = typings.antDesignIcons.antDesignIconsSkinTwoToneMod.default.asInstanceOf[ComponentType[SkinTwoToneProps]]
   @scala.inline
-  def SkypeFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSkypeFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SkypeFilled: ComponentType[SkypeFilledProps] = typings.antDesignIcons.antDesignIconsSkypeFilledMod.default.asInstanceOf[ComponentType[SkypeFilledProps]]
   @scala.inline
-  def SkypeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSkypeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SkypeOutlined: ComponentType[SkypeOutlinedProps] = typings.antDesignIcons.antDesignIconsSkypeOutlinedMod.default.asInstanceOf[ComponentType[SkypeOutlinedProps]]
   @scala.inline
-  def SlackCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSlackCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SlackCircleFilled: ComponentType[SlackCircleFilledProps] = typings.antDesignIcons.antDesignIconsSlackCircleFilledMod.default.asInstanceOf[ComponentType[SlackCircleFilledProps]]
   @scala.inline
-  def SlackOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSlackOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SlackOutlined: ComponentType[SlackOutlinedProps] = typings.antDesignIcons.antDesignIconsSlackOutlinedMod.default.asInstanceOf[ComponentType[SlackOutlinedProps]]
   @scala.inline
-  def SlackSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSlackSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SlackSquareFilled: ComponentType[SlackSquareFilledProps] = typings.antDesignIcons.antDesignIconsSlackSquareFilledMod.default.asInstanceOf[ComponentType[SlackSquareFilledProps]]
   @scala.inline
-  def SlackSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSlackSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SlackSquareOutlined: ComponentType[SlackSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsSlackSquareOutlinedMod.default.asInstanceOf[ComponentType[SlackSquareOutlinedProps]]
   @scala.inline
-  def SlidersFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSlidersFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SlidersFilled: ComponentType[SlidersFilledProps] = typings.antDesignIcons.antDesignIconsSlidersFilledMod.default.asInstanceOf[ComponentType[SlidersFilledProps]]
   @scala.inline
-  def SlidersOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSlidersOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SlidersOutlined: ComponentType[SlidersOutlinedProps] = typings.antDesignIcons.antDesignIconsSlidersOutlinedMod.default.asInstanceOf[ComponentType[SlidersOutlinedProps]]
   @scala.inline
-  def SlidersTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSlidersTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SlidersTwoTone: ComponentType[SlidersTwoToneProps] = typings.antDesignIcons.antDesignIconsSlidersTwoToneMod.default.asInstanceOf[ComponentType[SlidersTwoToneProps]]
   @scala.inline
-  def SmallDashOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSmallDashOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SmallDashOutlined: ComponentType[SmallDashOutlinedProps] = typings.antDesignIcons.antDesignIconsSmallDashOutlinedMod.default.asInstanceOf[ComponentType[SmallDashOutlinedProps]]
   @scala.inline
-  def SmileFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSmileFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SmileFilled: ComponentType[SmileFilledProps] = typings.antDesignIcons.antDesignIconsSmileFilledMod.default.asInstanceOf[ComponentType[SmileFilledProps]]
   @scala.inline
-  def SmileOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSmileOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SmileOutlined: ComponentType[SmileOutlinedProps] = typings.antDesignIcons.antDesignIconsSmileOutlinedMod.default.asInstanceOf[ComponentType[SmileOutlinedProps]]
   @scala.inline
-  def SmileTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSmileTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SmileTwoTone: ComponentType[SmileTwoToneProps] = typings.antDesignIcons.antDesignIconsSmileTwoToneMod.default.asInstanceOf[ComponentType[SmileTwoToneProps]]
   @scala.inline
-  def SnippetsFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSnippetsFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SnippetsFilled: ComponentType[SnippetsFilledProps] = typings.antDesignIcons.antDesignIconsSnippetsFilledMod.default.asInstanceOf[ComponentType[SnippetsFilledProps]]
   @scala.inline
-  def SnippetsOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSnippetsOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SnippetsOutlined: ComponentType[SnippetsOutlinedProps] = typings.antDesignIcons.antDesignIconsSnippetsOutlinedMod.default.asInstanceOf[ComponentType[SnippetsOutlinedProps]]
   @scala.inline
-  def SnippetsTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSnippetsTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SnippetsTwoTone: ComponentType[SnippetsTwoToneProps] = typings.antDesignIcons.antDesignIconsSnippetsTwoToneMod.default.asInstanceOf[ComponentType[SnippetsTwoToneProps]]
   @scala.inline
-  def SolutionOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSolutionOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SolutionOutlined: ComponentType[SolutionOutlinedProps] = typings.antDesignIcons.antDesignIconsSolutionOutlinedMod.default.asInstanceOf[ComponentType[SolutionOutlinedProps]]
   @scala.inline
-  def SortAscendingOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSortAscendingOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SortAscendingOutlined: ComponentType[SortAscendingOutlinedProps] = typings.antDesignIcons.antDesignIconsSortAscendingOutlinedMod.default.asInstanceOf[ComponentType[SortAscendingOutlinedProps]]
   @scala.inline
-  def SortDescendingOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSortDescendingOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SortDescendingOutlined: ComponentType[SortDescendingOutlinedProps] = typings.antDesignIcons.antDesignIconsSortDescendingOutlinedMod.default.asInstanceOf[ComponentType[SortDescendingOutlinedProps]]
   @scala.inline
-  def SoundFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSoundFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SoundFilled: ComponentType[SoundFilledProps] = typings.antDesignIcons.antDesignIconsSoundFilledMod.default.asInstanceOf[ComponentType[SoundFilledProps]]
   @scala.inline
-  def SoundOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSoundOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SoundOutlined: ComponentType[SoundOutlinedProps] = typings.antDesignIcons.antDesignIconsSoundOutlinedMod.default.asInstanceOf[ComponentType[SoundOutlinedProps]]
   @scala.inline
-  def SoundTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSoundTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SoundTwoTone: ComponentType[SoundTwoToneProps] = typings.antDesignIcons.antDesignIconsSoundTwoToneMod.default.asInstanceOf[ComponentType[SoundTwoToneProps]]
   @scala.inline
-  def SplitCellsOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSplitCellsOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SplitCellsOutlined: ComponentType[SplitCellsOutlinedProps] = typings.antDesignIcons.antDesignIconsSplitCellsOutlinedMod.default.asInstanceOf[ComponentType[SplitCellsOutlinedProps]]
   @scala.inline
-  def StarFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStarFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StarFilled: ComponentType[StarFilledProps] = typings.antDesignIcons.antDesignIconsStarFilledMod.default.asInstanceOf[ComponentType[StarFilledProps]]
   @scala.inline
-  def StarOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStarOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StarOutlined: ComponentType[StarOutlinedProps] = typings.antDesignIcons.antDesignIconsStarOutlinedMod.default.asInstanceOf[ComponentType[StarOutlinedProps]]
   @scala.inline
-  def StarTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStarTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StarTwoTone: ComponentType[StarTwoToneProps] = typings.antDesignIcons.antDesignIconsStarTwoToneMod.default.asInstanceOf[ComponentType[StarTwoToneProps]]
   @scala.inline
-  def StepBackwardFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStepBackwardFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StepBackwardFilled: ComponentType[StepBackwardFilledProps] = typings.antDesignIcons.antDesignIconsStepBackwardFilledMod.default.asInstanceOf[ComponentType[StepBackwardFilledProps]]
   @scala.inline
-  def StepBackwardOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStepBackwardOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StepBackwardOutlined: ComponentType[StepBackwardOutlinedProps] = typings.antDesignIcons.antDesignIconsStepBackwardOutlinedMod.default.asInstanceOf[ComponentType[StepBackwardOutlinedProps]]
   @scala.inline
-  def StepForwardFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStepForwardFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StepForwardFilled: ComponentType[StepForwardFilledProps] = typings.antDesignIcons.antDesignIconsStepForwardFilledMod.default.asInstanceOf[ComponentType[StepForwardFilledProps]]
   @scala.inline
-  def StepForwardOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStepForwardOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StepForwardOutlined: ComponentType[StepForwardOutlinedProps] = typings.antDesignIcons.antDesignIconsStepForwardOutlinedMod.default.asInstanceOf[ComponentType[StepForwardOutlinedProps]]
   @scala.inline
-  def StockOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStockOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StockOutlined: ComponentType[StockOutlinedProps] = typings.antDesignIcons.antDesignIconsStockOutlinedMod.default.asInstanceOf[ComponentType[StockOutlinedProps]]
   @scala.inline
-  def StopFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStopFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StopFilled: ComponentType[StopFilledProps] = typings.antDesignIcons.antDesignIconsStopFilledMod.default.asInstanceOf[ComponentType[StopFilledProps]]
   @scala.inline
-  def StopOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStopOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StopOutlined: ComponentType[StopOutlinedProps] = typings.antDesignIcons.antDesignIconsStopOutlinedMod.default.asInstanceOf[ComponentType[StopOutlinedProps]]
   @scala.inline
-  def StopTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStopTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StopTwoTone: ComponentType[StopTwoToneProps] = typings.antDesignIcons.antDesignIconsStopTwoToneMod.default.asInstanceOf[ComponentType[StopTwoToneProps]]
   @scala.inline
-  def StrikethroughOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsStrikethroughOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def StrikethroughOutlined: ComponentType[StrikethroughOutlinedProps] = typings.antDesignIcons.antDesignIconsStrikethroughOutlinedMod.default.asInstanceOf[ComponentType[StrikethroughOutlinedProps]]
   @scala.inline
-  def SubnodeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSubnodeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SubnodeOutlined: ComponentType[SubnodeOutlinedProps] = typings.antDesignIcons.antDesignIconsSubnodeOutlinedMod.default.asInstanceOf[ComponentType[SubnodeOutlinedProps]]
   @scala.inline
-  def SwapLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSwapLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SwapLeftOutlined: ComponentType[SwapLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsSwapLeftOutlinedMod.default.asInstanceOf[ComponentType[SwapLeftOutlinedProps]]
   @scala.inline
-  def SwapOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSwapOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SwapOutlined: ComponentType[SwapOutlinedProps] = typings.antDesignIcons.antDesignIconsSwapOutlinedMod.default.asInstanceOf[ComponentType[SwapOutlinedProps]]
   @scala.inline
-  def SwapRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSwapRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SwapRightOutlined: ComponentType[SwapRightOutlinedProps] = typings.antDesignIcons.antDesignIconsSwapRightOutlinedMod.default.asInstanceOf[ComponentType[SwapRightOutlinedProps]]
   @scala.inline
-  def SwitcherFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSwitcherFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SwitcherFilled: ComponentType[SwitcherFilledProps] = typings.antDesignIcons.antDesignIconsSwitcherFilledMod.default.asInstanceOf[ComponentType[SwitcherFilledProps]]
   @scala.inline
-  def SwitcherOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSwitcherOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SwitcherOutlined: ComponentType[SwitcherOutlinedProps] = typings.antDesignIcons.antDesignIconsSwitcherOutlinedMod.default.asInstanceOf[ComponentType[SwitcherOutlinedProps]]
   @scala.inline
-  def SwitcherTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSwitcherTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SwitcherTwoTone: ComponentType[SwitcherTwoToneProps] = typings.antDesignIcons.antDesignIconsSwitcherTwoToneMod.default.asInstanceOf[ComponentType[SwitcherTwoToneProps]]
   @scala.inline
-  def SyncOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsSyncOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def SyncOutlined: ComponentType[SyncOutlinedProps] = typings.antDesignIcons.antDesignIconsSyncOutlinedMod.default.asInstanceOf[ComponentType[SyncOutlinedProps]]
   @scala.inline
-  def TableOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTableOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TableOutlined: ComponentType[TableOutlinedProps] = typings.antDesignIcons.antDesignIconsTableOutlinedMod.default.asInstanceOf[ComponentType[TableOutlinedProps]]
   @scala.inline
-  def TabletFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTabletFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TabletFilled: ComponentType[TabletFilledProps] = typings.antDesignIcons.antDesignIconsTabletFilledMod.default.asInstanceOf[ComponentType[TabletFilledProps]]
   @scala.inline
-  def TabletOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTabletOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TabletOutlined: ComponentType[TabletOutlinedProps] = typings.antDesignIcons.antDesignIconsTabletOutlinedMod.default.asInstanceOf[ComponentType[TabletOutlinedProps]]
   @scala.inline
-  def TabletTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTabletTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TabletTwoTone: ComponentType[TabletTwoToneProps] = typings.antDesignIcons.antDesignIconsTabletTwoToneMod.default.asInstanceOf[ComponentType[TabletTwoToneProps]]
   @scala.inline
-  def TagFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTagFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TagFilled: ComponentType[TagFilledProps] = typings.antDesignIcons.antDesignIconsTagFilledMod.default.asInstanceOf[ComponentType[TagFilledProps]]
   @scala.inline
-  def TagOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTagOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TagOutlined: ComponentType[TagOutlinedProps] = typings.antDesignIcons.antDesignIconsTagOutlinedMod.default.asInstanceOf[ComponentType[TagOutlinedProps]]
   @scala.inline
-  def TagTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTagTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TagTwoTone: ComponentType[TagTwoToneProps] = typings.antDesignIcons.antDesignIconsTagTwoToneMod.default.asInstanceOf[ComponentType[TagTwoToneProps]]
   @scala.inline
-  def TagsFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTagsFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TagsFilled: ComponentType[TagsFilledProps] = typings.antDesignIcons.antDesignIconsTagsFilledMod.default.asInstanceOf[ComponentType[TagsFilledProps]]
   @scala.inline
-  def TagsOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTagsOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TagsOutlined: ComponentType[TagsOutlinedProps] = typings.antDesignIcons.antDesignIconsTagsOutlinedMod.default.asInstanceOf[ComponentType[TagsOutlinedProps]]
   @scala.inline
-  def TagsTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTagsTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TagsTwoTone: ComponentType[TagsTwoToneProps] = typings.antDesignIcons.antDesignIconsTagsTwoToneMod.default.asInstanceOf[ComponentType[TagsTwoToneProps]]
   @scala.inline
-  def TaobaoCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTaobaoCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TaobaoCircleFilled: ComponentType[TaobaoCircleFilledProps] = typings.antDesignIcons.antDesignIconsTaobaoCircleFilledMod.default.asInstanceOf[ComponentType[TaobaoCircleFilledProps]]
   @scala.inline
-  def TaobaoCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTaobaoCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TaobaoCircleOutlined: ComponentType[TaobaoCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsTaobaoCircleOutlinedMod.default.asInstanceOf[ComponentType[TaobaoCircleOutlinedProps]]
   @scala.inline
-  def TaobaoOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTaobaoOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TaobaoOutlined: ComponentType[TaobaoOutlinedProps] = typings.antDesignIcons.antDesignIconsTaobaoOutlinedMod.default.asInstanceOf[ComponentType[TaobaoOutlinedProps]]
   @scala.inline
-  def TaobaoSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTaobaoSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TaobaoSquareFilled: ComponentType[TaobaoSquareFilledProps] = typings.antDesignIcons.antDesignIconsTaobaoSquareFilledMod.default.asInstanceOf[ComponentType[TaobaoSquareFilledProps]]
   @scala.inline
-  def TeamOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTeamOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TeamOutlined: ComponentType[TeamOutlinedProps] = typings.antDesignIcons.antDesignIconsTeamOutlinedMod.default.asInstanceOf[ComponentType[TeamOutlinedProps]]
   @scala.inline
-  def ThunderboltFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsThunderboltFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ThunderboltFilled: ComponentType[ThunderboltFilledProps] = typings.antDesignIcons.antDesignIconsThunderboltFilledMod.default.asInstanceOf[ComponentType[ThunderboltFilledProps]]
   @scala.inline
-  def ThunderboltOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsThunderboltOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ThunderboltOutlined: ComponentType[ThunderboltOutlinedProps] = typings.antDesignIcons.antDesignIconsThunderboltOutlinedMod.default.asInstanceOf[ComponentType[ThunderboltOutlinedProps]]
   @scala.inline
-  def ThunderboltTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsThunderboltTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ThunderboltTwoTone: ComponentType[ThunderboltTwoToneProps] = typings.antDesignIcons.antDesignIconsThunderboltTwoToneMod.default.asInstanceOf[ComponentType[ThunderboltTwoToneProps]]
   @scala.inline
-  def ToTopOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsToTopOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ToTopOutlined: ComponentType[ToTopOutlinedProps] = typings.antDesignIcons.antDesignIconsToTopOutlinedMod.default.asInstanceOf[ComponentType[ToTopOutlinedProps]]
   @scala.inline
-  def ToolFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsToolFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ToolFilled: ComponentType[ToolFilledProps] = typings.antDesignIcons.antDesignIconsToolFilledMod.default.asInstanceOf[ComponentType[ToolFilledProps]]
   @scala.inline
-  def ToolOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsToolOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ToolOutlined: ComponentType[ToolOutlinedProps] = typings.antDesignIcons.antDesignIconsToolOutlinedMod.default.asInstanceOf[ComponentType[ToolOutlinedProps]]
   @scala.inline
-  def ToolTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsToolTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ToolTwoTone: ComponentType[ToolTwoToneProps] = typings.antDesignIcons.antDesignIconsToolTwoToneMod.default.asInstanceOf[ComponentType[ToolTwoToneProps]]
   @scala.inline
-  def TrademarkCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTrademarkCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TrademarkCircleFilled: ComponentType[TrademarkCircleFilledProps] = typings.antDesignIcons.antDesignIconsTrademarkCircleFilledMod.default.asInstanceOf[ComponentType[TrademarkCircleFilledProps]]
   @scala.inline
-  def TrademarkCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTrademarkCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TrademarkCircleOutlined: ComponentType[TrademarkCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsTrademarkCircleOutlinedMod.default.asInstanceOf[ComponentType[TrademarkCircleOutlinedProps]]
   @scala.inline
-  def TrademarkCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTrademarkCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TrademarkCircleTwoTone: ComponentType[TrademarkCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsTrademarkCircleTwoToneMod.default.asInstanceOf[ComponentType[TrademarkCircleTwoToneProps]]
   @scala.inline
-  def TrademarkOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTrademarkOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TrademarkOutlined: ComponentType[TrademarkOutlinedProps] = typings.antDesignIcons.antDesignIconsTrademarkOutlinedMod.default.asInstanceOf[ComponentType[TrademarkOutlinedProps]]
   @scala.inline
-  def TransactionOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTransactionOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TransactionOutlined: ComponentType[TransactionOutlinedProps] = typings.antDesignIcons.antDesignIconsTransactionOutlinedMod.default.asInstanceOf[ComponentType[TransactionOutlinedProps]]
   @scala.inline
-  def TranslationOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTranslationOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TranslationOutlined: ComponentType[TranslationOutlinedProps] = typings.antDesignIcons.antDesignIconsTranslationOutlinedMod.default.asInstanceOf[ComponentType[TranslationOutlinedProps]]
   @scala.inline
-  def TrophyFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTrophyFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TrophyFilled: ComponentType[TrophyFilledProps] = typings.antDesignIcons.antDesignIconsTrophyFilledMod.default.asInstanceOf[ComponentType[TrophyFilledProps]]
   @scala.inline
-  def TrophyOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTrophyOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TrophyOutlined: ComponentType[TrophyOutlinedProps] = typings.antDesignIcons.antDesignIconsTrophyOutlinedMod.default.asInstanceOf[ComponentType[TrophyOutlinedProps]]
   @scala.inline
-  def TrophyTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTrophyTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TrophyTwoTone: ComponentType[TrophyTwoToneProps] = typings.antDesignIcons.antDesignIconsTrophyTwoToneMod.default.asInstanceOf[ComponentType[TrophyTwoToneProps]]
   @scala.inline
-  def TwitterCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTwitterCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TwitterCircleFilled: ComponentType[TwitterCircleFilledProps] = typings.antDesignIcons.antDesignIconsTwitterCircleFilledMod.default.asInstanceOf[ComponentType[TwitterCircleFilledProps]]
   @scala.inline
-  def TwitterOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTwitterOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TwitterOutlined: ComponentType[TwitterOutlinedProps] = typings.antDesignIcons.antDesignIconsTwitterOutlinedMod.default.asInstanceOf[ComponentType[TwitterOutlinedProps]]
   @scala.inline
-  def TwitterSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsTwitterSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def TwitterSquareFilled: ComponentType[TwitterSquareFilledProps] = typings.antDesignIcons.antDesignIconsTwitterSquareFilledMod.default.asInstanceOf[ComponentType[TwitterSquareFilledProps]]
   @scala.inline
-  def UnderlineOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUnderlineOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UnderlineOutlined: ComponentType[UnderlineOutlinedProps] = typings.antDesignIcons.antDesignIconsUnderlineOutlinedMod.default.asInstanceOf[ComponentType[UnderlineOutlinedProps]]
   @scala.inline
-  def UndoOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUndoOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UndoOutlined: ComponentType[UndoOutlinedProps] = typings.antDesignIcons.antDesignIconsUndoOutlinedMod.default.asInstanceOf[ComponentType[UndoOutlinedProps]]
   @scala.inline
-  def UngroupOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUngroupOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UngroupOutlined: ComponentType[UngroupOutlinedProps] = typings.antDesignIcons.antDesignIconsUngroupOutlinedMod.default.asInstanceOf[ComponentType[UngroupOutlinedProps]]
   @scala.inline
-  def UnlockFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUnlockFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UnlockFilled: ComponentType[UnlockFilledProps] = typings.antDesignIcons.antDesignIconsUnlockFilledMod.default.asInstanceOf[ComponentType[UnlockFilledProps]]
   @scala.inline
-  def UnlockOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUnlockOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UnlockOutlined: ComponentType[UnlockOutlinedProps] = typings.antDesignIcons.antDesignIconsUnlockOutlinedMod.default.asInstanceOf[ComponentType[UnlockOutlinedProps]]
   @scala.inline
-  def UnlockTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUnlockTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UnlockTwoTone: ComponentType[UnlockTwoToneProps] = typings.antDesignIcons.antDesignIconsUnlockTwoToneMod.default.asInstanceOf[ComponentType[UnlockTwoToneProps]]
   @scala.inline
-  def UnorderedListOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUnorderedListOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UnorderedListOutlined: ComponentType[UnorderedListOutlinedProps] = typings.antDesignIcons.antDesignIconsUnorderedListOutlinedMod.default.asInstanceOf[ComponentType[UnorderedListOutlinedProps]]
   @scala.inline
-  def UpCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUpCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UpCircleFilled: ComponentType[UpCircleFilledProps] = typings.antDesignIcons.antDesignIconsUpCircleFilledMod.default.asInstanceOf[ComponentType[UpCircleFilledProps]]
   @scala.inline
-  def UpCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUpCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UpCircleOutlined: ComponentType[UpCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsUpCircleOutlinedMod.default.asInstanceOf[ComponentType[UpCircleOutlinedProps]]
   @scala.inline
-  def UpCircleTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUpCircleTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UpCircleTwoTone: ComponentType[UpCircleTwoToneProps] = typings.antDesignIcons.antDesignIconsUpCircleTwoToneMod.default.asInstanceOf[ComponentType[UpCircleTwoToneProps]]
   @scala.inline
-  def UpOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUpOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UpOutlined: ComponentType[UpOutlinedProps] = typings.antDesignIcons.antDesignIconsUpOutlinedMod.default.asInstanceOf[ComponentType[UpOutlinedProps]]
   @scala.inline
-  def UpSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUpSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UpSquareFilled: ComponentType[UpSquareFilledProps] = typings.antDesignIcons.antDesignIconsUpSquareFilledMod.default.asInstanceOf[ComponentType[UpSquareFilledProps]]
   @scala.inline
-  def UpSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUpSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UpSquareOutlined: ComponentType[UpSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsUpSquareOutlinedMod.default.asInstanceOf[ComponentType[UpSquareOutlinedProps]]
   @scala.inline
-  def UpSquareTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUpSquareTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UpSquareTwoTone: ComponentType[UpSquareTwoToneProps] = typings.antDesignIcons.antDesignIconsUpSquareTwoToneMod.default.asInstanceOf[ComponentType[UpSquareTwoToneProps]]
   @scala.inline
-  def UploadOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUploadOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UploadOutlined: ComponentType[UploadOutlinedProps] = typings.antDesignIcons.antDesignIconsUploadOutlinedMod.default.asInstanceOf[ComponentType[UploadOutlinedProps]]
   @scala.inline
-  def UsbFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUsbFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UsbFilled: ComponentType[UsbFilledProps] = typings.antDesignIcons.antDesignIconsUsbFilledMod.default.asInstanceOf[ComponentType[UsbFilledProps]]
   @scala.inline
-  def UsbOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUsbOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UsbOutlined: ComponentType[UsbOutlinedProps] = typings.antDesignIcons.antDesignIconsUsbOutlinedMod.default.asInstanceOf[ComponentType[UsbOutlinedProps]]
   @scala.inline
-  def UsbTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUsbTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UsbTwoTone: ComponentType[UsbTwoToneProps] = typings.antDesignIcons.antDesignIconsUsbTwoToneMod.default.asInstanceOf[ComponentType[UsbTwoToneProps]]
   @scala.inline
-  def UserAddOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUserAddOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UserAddOutlined: ComponentType[UserAddOutlinedProps] = typings.antDesignIcons.antDesignIconsUserAddOutlinedMod.default.asInstanceOf[ComponentType[UserAddOutlinedProps]]
   @scala.inline
-  def UserDeleteOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUserDeleteOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UserDeleteOutlined: ComponentType[UserDeleteOutlinedProps] = typings.antDesignIcons.antDesignIconsUserDeleteOutlinedMod.default.asInstanceOf[ComponentType[UserDeleteOutlinedProps]]
   @scala.inline
-  def UserOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUserOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UserOutlined: ComponentType[UserOutlinedProps] = typings.antDesignIcons.antDesignIconsUserOutlinedMod.default.asInstanceOf[ComponentType[UserOutlinedProps]]
   @scala.inline
-  def UserSwitchOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUserSwitchOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UserSwitchOutlined: ComponentType[UserSwitchOutlinedProps] = typings.antDesignIcons.antDesignIconsUserSwitchOutlinedMod.default.asInstanceOf[ComponentType[UserSwitchOutlinedProps]]
   @scala.inline
-  def UsergroupAddOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUsergroupAddOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UsergroupAddOutlined: ComponentType[UsergroupAddOutlinedProps] = typings.antDesignIcons.antDesignIconsUsergroupAddOutlinedMod.default.asInstanceOf[ComponentType[UsergroupAddOutlinedProps]]
   @scala.inline
-  def UsergroupDeleteOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsUsergroupDeleteOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def UsergroupDeleteOutlined: ComponentType[UsergroupDeleteOutlinedProps] = typings.antDesignIcons.antDesignIconsUsergroupDeleteOutlinedMod.default.asInstanceOf[ComponentType[UsergroupDeleteOutlinedProps]]
   @scala.inline
-  def VerifiedOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVerifiedOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VerifiedOutlined: ComponentType[VerifiedOutlinedProps] = typings.antDesignIcons.antDesignIconsVerifiedOutlinedMod.default.asInstanceOf[ComponentType[VerifiedOutlinedProps]]
   @scala.inline
-  def VerticalAlignBottomOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVerticalAlignBottomOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VerticalAlignBottomOutlined: ComponentType[VerticalAlignBottomOutlinedProps] = typings.antDesignIcons.antDesignIconsVerticalAlignBottomOutlinedMod.default.asInstanceOf[ComponentType[VerticalAlignBottomOutlinedProps]]
   @scala.inline
-  def VerticalAlignMiddleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVerticalAlignMiddleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VerticalAlignMiddleOutlined: ComponentType[VerticalAlignMiddleOutlinedProps] = typings.antDesignIcons.antDesignIconsVerticalAlignMiddleOutlinedMod.default.asInstanceOf[ComponentType[VerticalAlignMiddleOutlinedProps]]
   @scala.inline
-  def VerticalAlignTopOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVerticalAlignTopOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VerticalAlignTopOutlined: ComponentType[VerticalAlignTopOutlinedProps] = typings.antDesignIcons.antDesignIconsVerticalAlignTopOutlinedMod.default.asInstanceOf[ComponentType[VerticalAlignTopOutlinedProps]]
   @scala.inline
-  def VerticalLeftOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVerticalLeftOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VerticalLeftOutlined: ComponentType[VerticalLeftOutlinedProps] = typings.antDesignIcons.antDesignIconsVerticalLeftOutlinedMod.default.asInstanceOf[ComponentType[VerticalLeftOutlinedProps]]
   @scala.inline
-  def VerticalRightOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVerticalRightOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VerticalRightOutlined: ComponentType[VerticalRightOutlinedProps] = typings.antDesignIcons.antDesignIconsVerticalRightOutlinedMod.default.asInstanceOf[ComponentType[VerticalRightOutlinedProps]]
   @scala.inline
-  def VideoCameraAddOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVideoCameraAddOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VideoCameraAddOutlined: ComponentType[VideoCameraAddOutlinedProps] = typings.antDesignIcons.antDesignIconsVideoCameraAddOutlinedMod.default.asInstanceOf[ComponentType[VideoCameraAddOutlinedProps]]
   @scala.inline
-  def VideoCameraFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVideoCameraFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VideoCameraFilled: ComponentType[VideoCameraFilledProps] = typings.antDesignIcons.antDesignIconsVideoCameraFilledMod.default.asInstanceOf[ComponentType[VideoCameraFilledProps]]
   @scala.inline
-  def VideoCameraOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVideoCameraOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VideoCameraOutlined: ComponentType[VideoCameraOutlinedProps] = typings.antDesignIcons.antDesignIconsVideoCameraOutlinedMod.default.asInstanceOf[ComponentType[VideoCameraOutlinedProps]]
   @scala.inline
-  def VideoCameraTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsVideoCameraTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def VideoCameraTwoTone: ComponentType[VideoCameraTwoToneProps] = typings.antDesignIcons.antDesignIconsVideoCameraTwoToneMod.default.asInstanceOf[ComponentType[VideoCameraTwoToneProps]]
   @scala.inline
-  def WalletFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWalletFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WalletFilled: ComponentType[WalletFilledProps] = typings.antDesignIcons.antDesignIconsWalletFilledMod.default.asInstanceOf[ComponentType[WalletFilledProps]]
   @scala.inline
-  def WalletOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWalletOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WalletOutlined: ComponentType[WalletOutlinedProps] = typings.antDesignIcons.antDesignIconsWalletOutlinedMod.default.asInstanceOf[ComponentType[WalletOutlinedProps]]
   @scala.inline
-  def WalletTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWalletTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WalletTwoTone: ComponentType[WalletTwoToneProps] = typings.antDesignIcons.antDesignIconsWalletTwoToneMod.default.asInstanceOf[ComponentType[WalletTwoToneProps]]
   @scala.inline
-  def WarningFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWarningFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WarningFilled: ComponentType[WarningFilledProps] = typings.antDesignIcons.antDesignIconsWarningFilledMod.default.asInstanceOf[ComponentType[WarningFilledProps]]
   @scala.inline
-  def WarningOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWarningOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WarningOutlined: ComponentType[WarningOutlinedProps] = typings.antDesignIcons.antDesignIconsWarningOutlinedMod.default.asInstanceOf[ComponentType[WarningOutlinedProps]]
   @scala.inline
-  def WarningTwoTone: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWarningTwoToneMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WarningTwoTone: ComponentType[WarningTwoToneProps] = typings.antDesignIcons.antDesignIconsWarningTwoToneMod.default.asInstanceOf[ComponentType[WarningTwoToneProps]]
   @scala.inline
-  def WechatFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWechatFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WechatFilled: ComponentType[WechatFilledProps] = typings.antDesignIcons.antDesignIconsWechatFilledMod.default.asInstanceOf[ComponentType[WechatFilledProps]]
   @scala.inline
-  def WechatOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWechatOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WechatOutlined: ComponentType[WechatOutlinedProps] = typings.antDesignIcons.antDesignIconsWechatOutlinedMod.default.asInstanceOf[ComponentType[WechatOutlinedProps]]
   @scala.inline
-  def WeiboCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWeiboCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WeiboCircleFilled: ComponentType[WeiboCircleFilledProps] = typings.antDesignIcons.antDesignIconsWeiboCircleFilledMod.default.asInstanceOf[ComponentType[WeiboCircleFilledProps]]
   @scala.inline
-  def WeiboCircleOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWeiboCircleOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WeiboCircleOutlined: ComponentType[WeiboCircleOutlinedProps] = typings.antDesignIcons.antDesignIconsWeiboCircleOutlinedMod.default.asInstanceOf[ComponentType[WeiboCircleOutlinedProps]]
   @scala.inline
-  def WeiboOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWeiboOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WeiboOutlined: ComponentType[WeiboOutlinedProps] = typings.antDesignIcons.antDesignIconsWeiboOutlinedMod.default.asInstanceOf[ComponentType[WeiboOutlinedProps]]
   @scala.inline
-  def WeiboSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWeiboSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WeiboSquareFilled: ComponentType[WeiboSquareFilledProps] = typings.antDesignIcons.antDesignIconsWeiboSquareFilledMod.default.asInstanceOf[ComponentType[WeiboSquareFilledProps]]
   @scala.inline
-  def WeiboSquareOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWeiboSquareOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WeiboSquareOutlined: ComponentType[WeiboSquareOutlinedProps] = typings.antDesignIcons.antDesignIconsWeiboSquareOutlinedMod.default.asInstanceOf[ComponentType[WeiboSquareOutlinedProps]]
   @scala.inline
-  def WhatsAppOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWhatsAppOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WhatsAppOutlined: ComponentType[WhatsAppOutlinedProps] = typings.antDesignIcons.antDesignIconsWhatsAppOutlinedMod.default.asInstanceOf[ComponentType[WhatsAppOutlinedProps]]
   @scala.inline
-  def WifiOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWifiOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WifiOutlined: ComponentType[WifiOutlinedProps] = typings.antDesignIcons.antDesignIconsWifiOutlinedMod.default.asInstanceOf[ComponentType[WifiOutlinedProps]]
   @scala.inline
-  def WindowsFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWindowsFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WindowsFilled: ComponentType[WindowsFilledProps] = typings.antDesignIcons.antDesignIconsWindowsFilledMod.default.asInstanceOf[ComponentType[WindowsFilledProps]]
   @scala.inline
-  def WindowsOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWindowsOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WindowsOutlined: ComponentType[WindowsOutlinedProps] = typings.antDesignIcons.antDesignIconsWindowsOutlinedMod.default.asInstanceOf[ComponentType[WindowsOutlinedProps]]
   @scala.inline
-  def WomanOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsWomanOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def WomanOutlined: ComponentType[WomanOutlinedProps] = typings.antDesignIcons.antDesignIconsWomanOutlinedMod.default.asInstanceOf[ComponentType[WomanOutlinedProps]]
   @scala.inline
-  def YahooFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsYahooFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def YahooFilled: ComponentType[YahooFilledProps] = typings.antDesignIcons.antDesignIconsYahooFilledMod.default.asInstanceOf[ComponentType[YahooFilledProps]]
   @scala.inline
-  def YahooOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsYahooOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def YahooOutlined: ComponentType[YahooOutlinedProps] = typings.antDesignIcons.antDesignIconsYahooOutlinedMod.default.asInstanceOf[ComponentType[YahooOutlinedProps]]
   @scala.inline
-  def YoutubeFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsYoutubeFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def YoutubeFilled: ComponentType[YoutubeFilledProps] = typings.antDesignIcons.antDesignIconsYoutubeFilledMod.default.asInstanceOf[ComponentType[YoutubeFilledProps]]
   @scala.inline
-  def YoutubeOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsYoutubeOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def YoutubeOutlined: ComponentType[YoutubeOutlinedProps] = typings.antDesignIcons.antDesignIconsYoutubeOutlinedMod.default.asInstanceOf[ComponentType[YoutubeOutlinedProps]]
   @scala.inline
-  def YuqueFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsYuqueFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def YuqueFilled: ComponentType[YuqueFilledProps] = typings.antDesignIcons.antDesignIconsYuqueFilledMod.default.asInstanceOf[ComponentType[YuqueFilledProps]]
   @scala.inline
-  def YuqueOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsYuqueOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def YuqueOutlined: ComponentType[YuqueOutlinedProps] = typings.antDesignIcons.antDesignIconsYuqueOutlinedMod.default.asInstanceOf[ComponentType[YuqueOutlinedProps]]
   @scala.inline
-  def ZhihuCircleFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsZhihuCircleFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ZhihuCircleFilled: ComponentType[ZhihuCircleFilledProps] = typings.antDesignIcons.antDesignIconsZhihuCircleFilledMod.default.asInstanceOf[ComponentType[ZhihuCircleFilledProps]]
   @scala.inline
-  def ZhihuOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsZhihuOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ZhihuOutlined: ComponentType[ZhihuOutlinedProps] = typings.antDesignIcons.antDesignIconsZhihuOutlinedMod.default.asInstanceOf[ComponentType[ZhihuOutlinedProps]]
   @scala.inline
-  def ZhihuSquareFilled: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsZhihuSquareFilledMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ZhihuSquareFilled: ComponentType[ZhihuSquareFilledProps] = typings.antDesignIcons.antDesignIconsZhihuSquareFilledMod.default.asInstanceOf[ComponentType[ZhihuSquareFilledProps]]
   @scala.inline
-  def ZoomInOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsZoomInOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ZoomInOutlined: ComponentType[ZoomInOutlinedProps] = typings.antDesignIcons.antDesignIconsZoomInOutlinedMod.default.asInstanceOf[ComponentType[ZoomInOutlinedProps]]
   @scala.inline
-  def ZoomOutOutlined: ComponentType[AntdIconProps with RefAttributes[HTMLSpanElement]] = typings.antDesignIcons.antDesignIconsZoomOutOutlinedMod.default.asInstanceOf[typings.react.mod.ComponentType[
-  typings.antDesignIcons.componentsAntdIconMod.AntdIconProps with typings.react.mod.RefAttributes[typings.std.HTMLSpanElement]]]
+  def ZoomOutOutlined: ComponentType[ZoomOutOutlinedProps] = typings.antDesignIcons.antDesignIconsZoomOutOutlinedMod.default.asInstanceOf[ComponentType[ZoomOutOutlinedProps]]
 }
 

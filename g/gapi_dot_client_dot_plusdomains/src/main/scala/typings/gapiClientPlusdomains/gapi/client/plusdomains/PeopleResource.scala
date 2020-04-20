@@ -29,7 +29,6 @@ object PeopleResource {
     listByCircle: AnonQuotaUser => Request_[PeopleFeed]
   ): PeopleResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listByActivity = js.Any.fromFunction1(listByActivity), listByCircle = js.Any.fromFunction1(listByCircle))
-  
     __obj.asInstanceOf[PeopleResource]
   }
 }

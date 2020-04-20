@@ -39,7 +39,6 @@ object CoordinateSegment {
     searchPattern: RegExp
   ): CoordinateSegment = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), searchPattern = searchPattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CoordinateSegment]
   }
 }

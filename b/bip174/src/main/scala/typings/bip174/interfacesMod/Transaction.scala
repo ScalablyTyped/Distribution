@@ -22,7 +22,6 @@ object Transaction {
     toBuffer: () => Buffer
   ): Transaction = {
     val __obj = js.Dynamic.literal(addInput = js.Any.fromFunction1(addInput), addOutput = js.Any.fromFunction1(addOutput), getInputOutputCounts = js.Any.fromFunction0(getInputOutputCounts), toBuffer = js.Any.fromFunction0(toBuffer))
-  
     __obj.asInstanceOf[Transaction]
   }
 }

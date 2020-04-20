@@ -50,7 +50,6 @@ object ISearchGroupItem {
     qTotalNumberOfMatches: Double
   ): ISearchGroupItem = {
     val __obj = js.Dynamic.literal(qIdentifier = qIdentifier.asInstanceOf[js.Any], qItemMatches = qItemMatches.asInstanceOf[js.Any], qItemType = qItemType.asInstanceOf[js.Any], qSearchTermsMatched = qSearchTermsMatched.asInstanceOf[js.Any], qTotalNumberOfMatches = qTotalNumberOfMatches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchGroupItem]
   }
 }

@@ -18,7 +18,6 @@ object EventInfo {
     unregisterFunc: js.Function1[/* args */ js.Any, Unit] => js.Promise[_]
   ): EventInfo[T] = {
     val __obj = js.Dynamic.literal(eventArgsTransformFunc = js.Any.fromFunction1(eventArgsTransformFunc), registerFunc = js.Any.fromFunction1(registerFunc), unregisterFunc = js.Any.fromFunction1(unregisterFunc))
-  
     __obj.asInstanceOf[EventInfo[T]]
   }
 }

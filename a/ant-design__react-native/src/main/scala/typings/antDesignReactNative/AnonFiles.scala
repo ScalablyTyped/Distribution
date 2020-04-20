@@ -15,7 +15,6 @@ object AnonFiles {
   @scala.inline
   def apply(files: js.Array[scala.Nothing], onChange: () => Unit, onFail: () => Unit, selectable: Boolean): AnonFiles = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onFail = js.Any.fromFunction0(onFail), selectable = selectable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFiles]
   }
 }

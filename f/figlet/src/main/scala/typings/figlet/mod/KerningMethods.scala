@@ -15,16 +15,14 @@ trait KerningMethods extends js.Object
 
 object KerningMethods {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `controlled smushing`: typings.figlet.figletStrings.`controlled smushing` = ("controlled smushing").asInstanceOf[typings.figlet.figletStrings.`controlled smushing`]
   @scala.inline
-  def `controlled smushing`: typings.figlet.figletStrings.`controlled smushing` = this.cast("controlled smushing")
+  def default: typings.figlet.figletStrings.default = "default".asInstanceOf[typings.figlet.figletStrings.default]
   @scala.inline
-  def default: typings.figlet.figletStrings.default = this.cast("default")
+  def fitted: typings.figlet.figletStrings.fitted = "fitted".asInstanceOf[typings.figlet.figletStrings.fitted]
   @scala.inline
-  def fitted: typings.figlet.figletStrings.fitted = this.cast("fitted")
+  def full: typings.figlet.figletStrings.full = "full".asInstanceOf[typings.figlet.figletStrings.full]
   @scala.inline
-  def full: typings.figlet.figletStrings.full = this.cast("full")
-  @scala.inline
-  def `universal smushing`: typings.figlet.figletStrings.`universal smushing` = this.cast("universal smushing")
+  def `universal smushing`: typings.figlet.figletStrings.`universal smushing` = ("universal smushing").asInstanceOf[typings.figlet.figletStrings.`universal smushing`]
 }
 

@@ -14,14 +14,12 @@ trait Method extends js.Object
 
 object Method {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def restart: typings.jqueryCountto.jqueryCounttoStrings.restart = "restart".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.restart]
   @scala.inline
-  def restart: typings.jqueryCountto.jqueryCounttoStrings.restart = this.cast("restart")
+  def start: typings.jqueryCountto.jqueryCounttoStrings.start = "start".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.start]
   @scala.inline
-  def start: typings.jqueryCountto.jqueryCounttoStrings.start = this.cast("start")
+  def stop: typings.jqueryCountto.jqueryCounttoStrings.stop = "stop".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.stop]
   @scala.inline
-  def stop: typings.jqueryCountto.jqueryCounttoStrings.stop = this.cast("stop")
-  @scala.inline
-  def toggle: typings.jqueryCountto.jqueryCounttoStrings.toggle = this.cast("toggle")
+  def toggle: typings.jqueryCountto.jqueryCounttoStrings.toggle = "toggle".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.toggle]
 }
 

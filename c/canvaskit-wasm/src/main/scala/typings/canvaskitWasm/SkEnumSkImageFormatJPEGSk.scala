@@ -16,7 +16,6 @@ object SkEnumSkImageFormatJPEGSk {
   @scala.inline
   def apply(JPEG: SkImageFormat, PNG: SkImageFormat, values: js.Array[SkImageFormat]): SkEnumSkImageFormatJPEGSk = {
     val __obj = js.Dynamic.literal(JPEG = JPEG.asInstanceOf[js.Any], PNG = PNG.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkImageFormatJPEGSk]
   }
 }

@@ -14,7 +14,6 @@ object SubscribeMiddlewareData {
   @scala.inline
   def apply(channel: String, socket: ComSocket): SubscribeMiddlewareData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscribeMiddlewareData]
   }
 }

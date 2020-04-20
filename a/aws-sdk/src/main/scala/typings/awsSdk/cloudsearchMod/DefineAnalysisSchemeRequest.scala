@@ -14,7 +14,6 @@ object DefineAnalysisSchemeRequest {
   @scala.inline
   def apply(AnalysisScheme: AnalysisScheme, DomainName: DomainName): DefineAnalysisSchemeRequest = {
     val __obj = js.Dynamic.literal(AnalysisScheme = AnalysisScheme.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefineAnalysisSchemeRequest]
   }
 }

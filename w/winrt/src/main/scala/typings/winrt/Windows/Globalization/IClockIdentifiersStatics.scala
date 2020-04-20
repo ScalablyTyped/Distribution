@@ -13,7 +13,6 @@ object IClockIdentifiersStatics {
   @scala.inline
   def apply(twelveHour: String, twentyFourHour: String): IClockIdentifiersStatics = {
     val __obj = js.Dynamic.literal(twelveHour = twelveHour.asInstanceOf[js.Any], twentyFourHour = twentyFourHour.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IClockIdentifiersStatics]
   }
 }

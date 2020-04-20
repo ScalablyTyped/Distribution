@@ -16,7 +16,6 @@ object DeleteLoggerDefinitionRequest {
   @scala.inline
   def apply(LoggerDefinitionId: string): DeleteLoggerDefinitionRequest = {
     val __obj = js.Dynamic.literal(LoggerDefinitionId = LoggerDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLoggerDefinitionRequest]
   }
 }

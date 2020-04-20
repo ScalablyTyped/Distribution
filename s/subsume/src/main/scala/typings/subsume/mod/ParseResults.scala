@@ -14,7 +14,6 @@ object ParseResults {
   @scala.inline
   def apply(data: Map[String, String], rest: String): ParseResults = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParseResults]
   }
 }

@@ -15,7 +15,6 @@ object IStreamReadResult {
   @scala.inline
   def apply(calls: Double, duration: Double, length: Double, reads: Double): IStreamReadResult = {
     val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], reads = reads.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStreamReadResult]
   }
 }

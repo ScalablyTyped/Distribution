@@ -20,7 +20,6 @@ object DocumentFilter {
   @scala.inline
   def apply(key: DocumentFilterKey, value: DocumentFilterValue): DocumentFilter = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocumentFilter]
   }
 }

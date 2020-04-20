@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeViewPdfProps {
   @scala.inline
-  def ReactNativeViewPdfProps: PDFViewProps.type = typings.reactNativeViewPdf.mod.PDFViewProps
+  def ReactNativeViewPdfProps: PDFViewProps.type = PDFViewProps
   type ReactNativeViewPdfProps = PDFViewProps
 }
 

@@ -16,7 +16,6 @@ object DeleteVpcLinkRequest {
   @scala.inline
   def apply(vpcLinkId: String): DeleteVpcLinkRequest = {
     val __obj = js.Dynamic.literal(vpcLinkId = vpcLinkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVpcLinkRequest]
   }
 }

@@ -28,7 +28,6 @@ object PopoverState {
     visible: Boolean
   ): PopoverState = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], animation = animation.asInstanceOf[js.Any], contentSize = contentSize.asInstanceOf[js.Any], isAwaitingShow = isAwaitingShow.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PopoverState]
   }
 }

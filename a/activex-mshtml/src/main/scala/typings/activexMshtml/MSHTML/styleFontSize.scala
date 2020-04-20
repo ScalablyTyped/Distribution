@@ -30,26 +30,24 @@ trait styleFontSize extends js.Object
 
 object styleFontSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleFontSizeLarge: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleFontSizeLarge: `4` = this.cast(4)
+  def styleFontSizeLarger: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleFontSizeLarger: `8` = this.cast(8)
+  def styleFontSizeMedium: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleFontSizeMedium: `3` = this.cast(3)
+  def styleFontSizeSmall: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleFontSizeSmall: `2` = this.cast(2)
+  def styleFontSizeSmaller: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleFontSizeSmaller: `7` = this.cast(7)
+  def styleFontSizeXLarge: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleFontSizeXLarge: `5` = this.cast(5)
+  def styleFontSizeXSmall: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleFontSizeXSmall: `1` = this.cast(1)
+  def styleFontSizeXXLarge: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleFontSizeXXLarge: `6` = this.cast(6)
+  def styleFontSizeXXSmall: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleFontSizeXXSmall: `0` = this.cast(0)
-  @scala.inline
-  def styleFontSize_Max: `2147483647` = this.cast(2147483647)
+  def styleFontSize_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

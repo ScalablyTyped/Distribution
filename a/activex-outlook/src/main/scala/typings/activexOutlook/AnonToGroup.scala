@@ -14,7 +14,6 @@ object AnonToGroup {
   @scala.inline
   def apply(Cancel: Boolean, ToGroup: OutlookBarGroup): AnonToGroup = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], ToGroup = ToGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonToGroup]
   }
 }

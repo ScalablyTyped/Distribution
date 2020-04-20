@@ -15,15 +15,15 @@ trait showContactsParams extends js.Object {
   /**
   	 * Function to call when selection is canceled.
   	 */
-  var cancel: js.UndefOr[js.Function1[/* param0 */ js.Any, _]] = js.undefined
+  var cancel: js.UndefOr[js.Function1[/* param0 */ js.Any, Unit]] = js.undefined
   /**
   	 * Field names to show when selecting properties. By default, shows all available.
   	 */
-  var fields: js.UndefOr[js.Array[String]] = js.undefined
+  var fields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
   	 * Function to call when a person is selected. Must not be used with `selectedProperty` property.
   	 */
-  var selectedPerson: js.UndefOr[js.Function1[/* param0 */ js.Any, _]] = js.undefined
+  var selectedPerson: js.UndefOr[js.Function1[/* param0 */ js.Any, Unit]] = js.undefined
   /**
   	 * Function to call when a property is selected. Must not be used with `selectedPerson`
   	 * property.
@@ -35,17 +35,17 @@ trait showContactsParams extends js.Object {
   	 * Since iOS 9.0, apple only returns the person object with partial information. Currently it is known to
   	 * at least contain the selected property and fullName.
   	 */
-  var selectedProperty: js.UndefOr[js.Function1[/* param0 */ js.Any, _]] = js.undefined
+  var selectedProperty: js.UndefOr[js.Function1[/* param0 */ js.Any, Unit]] = js.undefined
 }
 
 object showContactsParams {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    cancel: /* param0 */ js.Any => _ = null,
-    fields: js.Array[String] = null,
-    selectedPerson: /* param0 */ js.Any => _ = null,
-    selectedProperty: /* param0 */ js.Any => _ = null
+    cancel: /* param0 */ js.Any => Unit = null,
+    fields: js.Array[java.lang.String] = null,
+    selectedPerson: /* param0 */ js.Any => Unit = null,
+    selectedProperty: /* param0 */ js.Any => Unit = null
   ): showContactsParams = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])

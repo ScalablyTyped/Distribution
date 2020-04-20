@@ -17,7 +17,6 @@ object AnonColumnExpr {
   @scala.inline
   def apply(__type: String, column: Double, expr: Expression, filename: String, lineno: Double): AnonColumnExpr = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColumnExpr]
   }
 }

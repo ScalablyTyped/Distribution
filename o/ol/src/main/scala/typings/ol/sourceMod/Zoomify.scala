@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/source", "Zoomify")
 @js.native
-class Zoomify () extends default {
+class Zoomify protected () extends default {
   def this(opt_options: Options) = this()
 }
 

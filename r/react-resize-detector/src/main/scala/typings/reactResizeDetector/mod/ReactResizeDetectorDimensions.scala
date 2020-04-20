@@ -13,7 +13,6 @@ object ReactResizeDetectorDimensions {
   @scala.inline
   def apply(height: Double, width: Double): ReactResizeDetectorDimensions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactResizeDetectorDimensions]
   }
 }

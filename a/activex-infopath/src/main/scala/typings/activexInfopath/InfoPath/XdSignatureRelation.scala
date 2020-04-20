@@ -16,12 +16,10 @@ trait XdSignatureRelation extends js.Object
 
 object XdSignatureRelation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xdSignatureRelationCoSign: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xdSignatureRelationCoSign: `2` = this.cast(2)
+  def xdSignatureRelationCounterSign: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xdSignatureRelationCounterSign: `3` = this.cast(3)
-  @scala.inline
-  def xdSignatureRelationSingle: `1` = this.cast(1)
+  def xdSignatureRelationSingle: `1` = 1.asInstanceOf[`1`]
 }
 

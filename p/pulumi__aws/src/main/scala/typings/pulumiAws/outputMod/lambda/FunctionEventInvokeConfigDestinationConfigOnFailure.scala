@@ -16,7 +16,6 @@ object FunctionEventInvokeConfigDestinationConfigOnFailure {
   @scala.inline
   def apply(destination: String): FunctionEventInvokeConfigDestinationConfigOnFailure = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FunctionEventInvokeConfigDestinationConfigOnFailure]
   }
 }

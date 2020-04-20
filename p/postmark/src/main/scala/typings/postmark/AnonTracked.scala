@@ -13,7 +13,6 @@ object AnonTracked {
   @scala.inline
   def apply(Date: String, Tracked: Double): AnonTracked = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], Tracked = Tracked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTracked]
   }
 }

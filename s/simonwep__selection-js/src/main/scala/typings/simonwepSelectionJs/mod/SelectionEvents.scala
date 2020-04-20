@@ -20,7 +20,6 @@ object SelectionEvents {
     stop: SelectionEvent => Unit
   ): SelectionEvents = {
     val __obj = js.Dynamic.literal(beforestart = js.Any.fromFunction1(beforestart), move = js.Any.fromFunction1(move), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction1(stop))
-  
     __obj.asInstanceOf[SelectionEvents]
   }
 }

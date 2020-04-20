@@ -51,7 +51,6 @@ object TypeofTileLayer {
     WMTS: Instantiable1[/* options */ typings.amapJsApi.AMap.TileLayer.WMTS.Options, WMTS]
   ): TypeofTileLayer = {
     val __obj = js.Dynamic.literal(Flexible = Flexible.asInstanceOf[js.Any], RoadNet = RoadNet.asInstanceOf[js.Any], Satellite = Satellite.asInstanceOf[js.Any], Traffic = Traffic.asInstanceOf[js.Any], WMS = WMS.asInstanceOf[js.Any], WMTS = WMTS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofTileLayer]
   }
 }

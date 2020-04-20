@@ -16,7 +16,6 @@ object DeleteEndpointRequest {
   @scala.inline
   def apply(EndpointArn: ComprehendEndpointArn): DeleteEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEndpointRequest]
   }
 }

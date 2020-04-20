@@ -13,7 +13,6 @@ object PickImplnoTemplate {
   @scala.inline
   def apply(noTemplate: String): PickImplnoTemplate = {
     val __obj = js.Dynamic.literal(noTemplate = noTemplate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnoTemplate]
   }
 }

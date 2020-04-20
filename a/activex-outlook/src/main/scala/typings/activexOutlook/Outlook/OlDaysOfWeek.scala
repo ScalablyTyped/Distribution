@@ -24,20 +24,18 @@ trait OlDaysOfWeek extends js.Object
 
 object OlDaysOfWeek {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFriday: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def olFriday: `32` = this.cast(32)
+  def olMonday: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olMonday: `2` = this.cast(2)
+  def olSaturday: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def olSaturday: `64` = this.cast(64)
+  def olSunday: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olSunday: `1` = this.cast(1)
+  def olThursday: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def olThursday: `16` = this.cast(16)
+  def olTuesday: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olTuesday: `4` = this.cast(4)
-  @scala.inline
-  def olWednesday: `8` = this.cast(8)
+  def olWednesday: `8` = 8.asInstanceOf[`8`]
 }
 

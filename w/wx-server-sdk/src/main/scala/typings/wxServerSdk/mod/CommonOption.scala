@@ -12,7 +12,6 @@ object CommonOption {
   @scala.inline
   def apply[T](data: T): CommonOption[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommonOption[T]]
   }
 }

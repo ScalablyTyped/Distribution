@@ -14,7 +14,6 @@ object Browser {
   @scala.inline
   def apply(binPath: String, name: String, version: String): Browser = {
     val __obj = js.Dynamic.literal(binPath = binPath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Browser]
   }
 }

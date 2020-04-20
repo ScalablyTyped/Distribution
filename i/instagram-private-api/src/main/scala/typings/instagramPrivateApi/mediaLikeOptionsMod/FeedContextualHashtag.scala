@@ -14,7 +14,6 @@ object FeedContextualHashtag {
   @scala.inline
   def apply(hashtag: String, module_name: feed_contextual_hashtag): FeedContextualHashtag = {
     val __obj = js.Dynamic.literal(hashtag = hashtag.asInstanceOf[js.Any], module_name = module_name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeedContextualHashtag]
   }
 }

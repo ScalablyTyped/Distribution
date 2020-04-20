@@ -12,10 +12,8 @@ trait SemanticFLOATS extends js.Object
 
 object SemanticFLOATS {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.semanticUiReact.semanticUiReactStrings.left = "left".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.left]
   @scala.inline
-  def left: typings.semanticUiReact.semanticUiReactStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.semanticUiReact.semanticUiReactStrings.right = this.cast("right")
+  def right: typings.semanticUiReact.semanticUiReactStrings.right = "right".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.right]
 }
 

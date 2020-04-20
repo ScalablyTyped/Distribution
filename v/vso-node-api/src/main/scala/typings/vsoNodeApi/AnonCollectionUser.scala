@@ -13,7 +13,6 @@ object AnonCollectionUser {
   @scala.inline
   def apply(collection_User: Double, project_Team: Double): AnonCollectionUser = {
     val __obj = js.Dynamic.literal(collection_User = collection_User.asInstanceOf[js.Any], project_Team = project_Team.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCollectionUser]
   }
 }

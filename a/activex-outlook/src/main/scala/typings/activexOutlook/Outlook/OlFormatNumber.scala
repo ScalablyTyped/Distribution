@@ -28,24 +28,22 @@ trait OlFormatNumber extends js.Object
 
 object OlFormatNumber {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFormatNumber1Decimal: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olFormatNumber1Decimal: `3` = this.cast(3)
+  def olFormatNumber2Decimal: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olFormatNumber2Decimal: `4` = this.cast(4)
+  def olFormatNumberAllDigits: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olFormatNumberAllDigits: `1` = this.cast(1)
+  def olFormatNumberComputer1: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olFormatNumberComputer1: `6` = this.cast(6)
+  def olFormatNumberComputer2: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olFormatNumberComputer2: `7` = this.cast(7)
+  def olFormatNumberComputer3: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olFormatNumberComputer3: `8` = this.cast(8)
+  def olFormatNumberRaw: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def olFormatNumberRaw: `9` = this.cast(9)
+  def olFormatNumberScientific: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olFormatNumberScientific: `5` = this.cast(5)
-  @scala.inline
-  def olFormatNumberTruncated: `2` = this.cast(2)
+  def olFormatNumberTruncated: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -12,7 +12,6 @@ object SnappyDecompressOpts {
   @scala.inline
   def apply(asBuffer: Boolean): SnappyDecompressOpts = {
     val __obj = js.Dynamic.literal(asBuffer = asBuffer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SnappyDecompressOpts]
   }
 }

@@ -38,7 +38,6 @@ object SceneViewHitTestResultResults {
     propertyIsEnumerable: PropertyKey => Boolean
   ): SceneViewHitTestResultResults = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], graphic = graphic.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mapPoint = mapPoint.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[SceneViewHitTestResultResults]
   }
 }

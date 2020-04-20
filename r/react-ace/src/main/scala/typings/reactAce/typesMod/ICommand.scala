@@ -14,7 +14,6 @@ object ICommand {
   @scala.inline
   def apply(bindKey: ICommandBindKey, exec: () => js.Any, name: String): ICommand = {
     val __obj = js.Dynamic.literal(bindKey = bindKey.asInstanceOf[js.Any], exec = js.Any.fromFunction0(exec), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICommand]
   }
 }

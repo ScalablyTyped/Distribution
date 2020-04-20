@@ -20,7 +20,6 @@ object DisassociateBudgetFromResourceInput {
   @scala.inline
   def apply(BudgetName: BudgetName, ResourceId: Id): DisassociateBudgetFromResourceInput = {
     val __obj = js.Dynamic.literal(BudgetName = BudgetName.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateBudgetFromResourceInput]
   }
 }

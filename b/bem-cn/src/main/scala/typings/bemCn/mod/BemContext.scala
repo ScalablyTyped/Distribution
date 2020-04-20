@@ -15,7 +15,6 @@ object BemContext {
   @scala.inline
   def apply(mixes: js.Array[BemMix], mods: BemMods, name: String, states: BemStates): BemContext = {
     val __obj = js.Dynamic.literal(mixes = mixes.asInstanceOf[js.Any], mods = mods.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BemContext]
   }
 }

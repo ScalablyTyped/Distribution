@@ -18,7 +18,6 @@ object ScaleSpec {
   @scala.inline
   def apply(replicas: Double): ScaleSpec = {
     val __obj = js.Dynamic.literal(replicas = replicas.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScaleSpec]
   }
 }

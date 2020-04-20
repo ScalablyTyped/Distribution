@@ -15,7 +15,6 @@ object AnonEaseInEaseOut {
   @scala.inline
   def apply(easeInEaseOut: LayoutAnimationConfig, linear: LayoutAnimationConfig, spring: LayoutAnimationConfig): AnonEaseInEaseOut = {
     val __obj = js.Dynamic.literal(easeInEaseOut = easeInEaseOut.asInstanceOf[js.Any], linear = linear.asInstanceOf[js.Any], spring = spring.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEaseInEaseOut]
   }
 }

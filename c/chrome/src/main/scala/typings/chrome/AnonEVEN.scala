@@ -17,7 +17,6 @@ object AnonEVEN {
   @scala.inline
   def apply(EVEN: even, NO: no, ODD: odd): AnonEVEN = {
     val __obj = js.Dynamic.literal(EVEN = EVEN.asInstanceOf[js.Any], NO = NO.asInstanceOf[js.Any], ODD = ODD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEVEN]
   }
 }

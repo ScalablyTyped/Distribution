@@ -20,7 +20,6 @@ object EventAccountFilter {
   @scala.inline
   def apply(awsAccountId: accountId, eventArn: eventArn): EventAccountFilter = {
     val __obj = js.Dynamic.literal(awsAccountId = awsAccountId.asInstanceOf[js.Any], eventArn = eventArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventAccountFilter]
   }
 }

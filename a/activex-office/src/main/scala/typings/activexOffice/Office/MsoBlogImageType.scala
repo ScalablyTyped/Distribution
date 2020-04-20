@@ -16,12 +16,10 @@ trait MsoBlogImageType extends js.Object
 
 object MsoBlogImageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoblogImageTypeGIF: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoblogImageTypeGIF: `2` = this.cast(2)
+  def msoblogImageTypeJPEG: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoblogImageTypeJPEG: `1` = this.cast(1)
-  @scala.inline
-  def msoblogImageTypePNG: `3` = this.cast(3)
+  def msoblogImageTypePNG: `3` = 3.asInstanceOf[`3`]
 }
 

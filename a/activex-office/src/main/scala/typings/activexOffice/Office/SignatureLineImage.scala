@@ -20,16 +20,14 @@ trait SignatureLineImage extends js.Object
 
 object SignatureLineImage {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def siglnimgSigned: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def siglnimgSigned: `4` = this.cast(4)
+  def siglnimgSignedInvalid: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def siglnimgSignedInvalid: `3` = this.cast(3)
+  def siglnimgSignedValid: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def siglnimgSignedValid: `2` = this.cast(2)
+  def siglnimgSoftwareRequired: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def siglnimgSoftwareRequired: `0` = this.cast(0)
-  @scala.inline
-  def siglnimgUnsigned: `1` = this.cast(1)
+  def siglnimgUnsigned: `1` = 1.asInstanceOf[`1`]
 }
 

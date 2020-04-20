@@ -19,7 +19,6 @@ object AnonResultsPerPage {
   @scala.inline
   def apply(resultsPerPage: Double, totalResults: Double): AnonResultsPerPage = {
     val __obj = js.Dynamic.literal(resultsPerPage = resultsPerPage.asInstanceOf[js.Any], totalResults = totalResults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResultsPerPage]
   }
 }

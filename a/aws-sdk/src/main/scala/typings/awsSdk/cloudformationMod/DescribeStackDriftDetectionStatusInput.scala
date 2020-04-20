@@ -16,7 +16,6 @@ object DescribeStackDriftDetectionStatusInput {
   @scala.inline
   def apply(StackDriftDetectionId: StackDriftDetectionId): DescribeStackDriftDetectionStatusInput = {
     val __obj = js.Dynamic.literal(StackDriftDetectionId = StackDriftDetectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStackDriftDetectionStatusInput]
   }
 }

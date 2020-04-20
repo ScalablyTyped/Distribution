@@ -27,7 +27,7 @@ class DiagnosticMessages () extends js.Object {
   var getDiagnosticLength: js.Any = js.native
   var getDiagnosticPos: js.Any = js.native
   var getSortedAndDeduplicatedDiagnosticIndices: js.Any = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.UndefOr[DiagnosticInfo]]] = js.native
   var reportDiagnostic: js.Any = js.native
   var simpleDiagnosticMessages: js.Any = js.native

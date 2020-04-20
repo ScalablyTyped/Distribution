@@ -20,7 +20,6 @@ object FailedPromptStateData {
   @scala.inline
   def apply(isValid: `false` | String): FailedPromptStateData = {
     val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FailedPromptStateData]
   }
 }

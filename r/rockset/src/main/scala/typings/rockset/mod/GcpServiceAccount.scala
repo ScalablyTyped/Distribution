@@ -13,7 +13,6 @@ object GcpServiceAccount {
   @scala.inline
   def apply(service_account_key_file_json: String): GcpServiceAccount = {
     val __obj = js.Dynamic.literal(service_account_key_file_json = service_account_key_file_json.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GcpServiceAccount]
   }
 }

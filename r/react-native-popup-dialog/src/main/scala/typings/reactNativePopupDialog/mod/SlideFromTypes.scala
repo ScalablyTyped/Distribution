@@ -14,14 +14,12 @@ trait SlideFromTypes extends js.Object
 
 object SlideFromTypes {
   @scala.inline
-  def bottom: typings.reactNativePopupDialog.reactNativePopupDialogStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactNativePopupDialog.reactNativePopupDialogStrings.bottom = "bottom".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.reactNativePopupDialog.reactNativePopupDialogStrings.left = "left".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.left]
   @scala.inline
-  def left: typings.reactNativePopupDialog.reactNativePopupDialogStrings.left = this.cast("left")
+  def right: typings.reactNativePopupDialog.reactNativePopupDialogStrings.right = "right".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.right]
   @scala.inline
-  def right: typings.reactNativePopupDialog.reactNativePopupDialogStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.reactNativePopupDialog.reactNativePopupDialogStrings.top = this.cast("top")
+  def top: typings.reactNativePopupDialog.reactNativePopupDialogStrings.top = "top".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.top]
 }
 

@@ -19,16 +19,14 @@ trait WindowState extends js.Object
 
 object WindowState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def docked: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.docked = "docked".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.docked]
   @scala.inline
-  def docked: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.docked = this.cast("docked")
+  def fullscreen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fullscreen = "fullscreen".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fullscreen]
   @scala.inline
-  def fullscreen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fullscreen = this.cast("fullscreen")
+  def maximized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.maximized = "maximized".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.maximized]
   @scala.inline
-  def maximized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.maximized = this.cast("maximized")
+  def minimized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.minimized = "minimized".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.minimized]
   @scala.inline
-  def minimized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.minimized = this.cast("minimized")
-  @scala.inline
-  def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = this.cast("normal")
+  def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
 }
 

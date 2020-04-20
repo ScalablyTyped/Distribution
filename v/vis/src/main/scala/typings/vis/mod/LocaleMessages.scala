@@ -38,7 +38,6 @@ object LocaleMessages {
     editNode: String
   ): LocaleMessages = {
     val __obj = js.Dynamic.literal(addDescription = addDescription.asInstanceOf[js.Any], addEdge = addEdge.asInstanceOf[js.Any], addNode = addNode.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], createEdgeError = createEdgeError.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], deleteClusterError = deleteClusterError.asInstanceOf[js.Any], edgeDescription = edgeDescription.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], editClusterError = editClusterError.asInstanceOf[js.Any], editEdge = editEdge.asInstanceOf[js.Any], editEdgeDescription = editEdgeDescription.asInstanceOf[js.Any], editNode = editNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocaleMessages]
   }
 }

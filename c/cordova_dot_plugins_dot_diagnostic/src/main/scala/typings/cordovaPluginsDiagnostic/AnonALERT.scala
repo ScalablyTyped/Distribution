@@ -17,7 +17,6 @@ object AnonALERT {
   @scala.inline
   def apply(ALERT: alert, BADGE: badge, SOUND: sound): AnonALERT = {
     val __obj = js.Dynamic.literal(ALERT = ALERT.asInstanceOf[js.Any], BADGE = BADGE.asInstanceOf[js.Any], SOUND = SOUND.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonALERT]
   }
 }

@@ -23,7 +23,6 @@ object Platform {
     is_phantom: () => Boolean
   ): Platform = {
     val __obj = js.Dynamic.literal(get_container = js.Any.fromFunction0(get_container), is_browser = js.Any.fromFunction0(is_browser), is_karma = js.Any.fromFunction0(is_karma), is_node = js.Any.fromFunction0(is_node), is_phantom = js.Any.fromFunction0(is_phantom))
-  
     __obj.asInstanceOf[Platform]
   }
 }

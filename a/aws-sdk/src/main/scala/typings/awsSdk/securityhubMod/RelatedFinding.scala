@@ -20,7 +20,6 @@ object RelatedFinding {
   @scala.inline
   def apply(Id: NonEmptyString, ProductArn: NonEmptyString): RelatedFinding = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], ProductArn = ProductArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RelatedFinding]
   }
 }

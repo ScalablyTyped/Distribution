@@ -16,12 +16,10 @@ trait XlLookFor extends js.Object
 
 object XlLookFor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlLookForBlanks: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlLookForBlanks: `0` = this.cast(0)
+  def xlLookForErrors: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlLookForErrors: `1` = this.cast(1)
-  @scala.inline
-  def xlLookForFormulas: `2` = this.cast(2)
+  def xlLookForFormulas: `2` = 2.asInstanceOf[`2`]
 }
 

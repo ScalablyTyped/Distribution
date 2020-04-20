@@ -23,18 +23,16 @@ trait DriveTypeConst extends js.Object
 
 object DriveTypeConst {
   @scala.inline
-  def CDRom: `4` = this.cast(4)
+  def CDRom: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Fixed: `2` = this.cast(2)
+  def Fixed: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def RamDisk: `5` = this.cast(5)
+  def RamDisk: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def Remote: `3` = this.cast(3)
+  def Remote: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Removable: `1` = this.cast(1)
+  def Removable: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def UnknownType: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UnknownType: `0` = 0.asInstanceOf[`0`]
 }
 

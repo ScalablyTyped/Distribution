@@ -14,7 +14,6 @@ object AnonInvalidFilterClause {
   @scala.inline
   def apply(invalidFilterClause: Double, oK: Double, unknown: Double): AnonInvalidFilterClause = {
     val __obj = js.Dynamic.literal(invalidFilterClause = invalidFilterClause.asInstanceOf[js.Any], oK = oK.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInvalidFilterClause]
   }
 }

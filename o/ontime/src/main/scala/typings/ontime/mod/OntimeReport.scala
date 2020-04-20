@@ -21,7 +21,6 @@ object OntimeReport {
   @scala.inline
   def apply(cancel: () => Unit, done: () => Unit): OntimeReport = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), done = js.Any.fromFunction0(done))
-  
     __obj.asInstanceOf[OntimeReport]
   }
 }

@@ -21,6 +21,7 @@ trait sizeRange extends js.Object {
     * @param params See the table below for details about parameters that may be passed to this function.
     * @param params.layer The layer for which to generate a suggested min/max size range based on scale for a size visual variable.
     * @param params.view The [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) where the layer will be rendered.
+    * @param params.signal Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def sizeRange(params: sizeRangeSizeRangeParams): js.Promise[SizeRangeResult]

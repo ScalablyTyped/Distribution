@@ -16,7 +16,6 @@ object DescribeContactRequest {
   @scala.inline
   def apply(contactId: String): DescribeContactRequest = {
     val __obj = js.Dynamic.literal(contactId = contactId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeContactRequest]
   }
 }

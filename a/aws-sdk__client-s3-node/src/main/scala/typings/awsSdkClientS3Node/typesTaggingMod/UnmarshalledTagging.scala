@@ -17,7 +17,6 @@ object UnmarshalledTagging {
   @scala.inline
   def apply(TagSet: js.Array[UnmarshalledTag]): UnmarshalledTagging = {
     val __obj = js.Dynamic.literal(TagSet = TagSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledTagging]
   }
 }

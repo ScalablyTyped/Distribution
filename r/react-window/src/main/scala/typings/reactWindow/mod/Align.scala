@@ -15,16 +15,14 @@ trait Align extends js.Object
 
 object Align {
   @scala.inline
-  def auto: typings.reactWindow.reactWindowStrings.auto = this.cast("auto")
+  def auto: typings.reactWindow.reactWindowStrings.auto = "auto".asInstanceOf[typings.reactWindow.reactWindowStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.reactWindow.reactWindowStrings.center = "center".asInstanceOf[typings.reactWindow.reactWindowStrings.center]
   @scala.inline
-  def center: typings.reactWindow.reactWindowStrings.center = this.cast("center")
+  def end: typings.reactWindow.reactWindowStrings.end = "end".asInstanceOf[typings.reactWindow.reactWindowStrings.end]
   @scala.inline
-  def end: typings.reactWindow.reactWindowStrings.end = this.cast("end")
+  def smart: typings.reactWindow.reactWindowStrings.smart = "smart".asInstanceOf[typings.reactWindow.reactWindowStrings.smart]
   @scala.inline
-  def smart: typings.reactWindow.reactWindowStrings.smart = this.cast("smart")
-  @scala.inline
-  def start: typings.reactWindow.reactWindowStrings.start = this.cast("start")
+  def start: typings.reactWindow.reactWindowStrings.start = "start".asInstanceOf[typings.reactWindow.reactWindowStrings.start]
 }
 

@@ -24,7 +24,6 @@ object RequestServiceQuotaIncreaseRequest {
   @scala.inline
   def apply(DesiredValue: QuotaValue, QuotaCode: QuotaCode, ServiceCode: ServiceCode): RequestServiceQuotaIncreaseRequest = {
     val __obj = js.Dynamic.literal(DesiredValue = DesiredValue.asInstanceOf[js.Any], QuotaCode = QuotaCode.asInstanceOf[js.Any], ServiceCode = ServiceCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestServiceQuotaIncreaseRequest]
   }
 }

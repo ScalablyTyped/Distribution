@@ -18,7 +18,6 @@ object CreateStreamOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): CreateStreamOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateStreamOutput]
   }
 }

@@ -28,7 +28,6 @@ object CustomResourceConversion {
   @scala.inline
   def apply(strategy: String, webhook: WebhookConversion): CustomResourceConversion = {
     val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any], webhook = webhook.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomResourceConversion]
   }
 }

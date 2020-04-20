@@ -20,7 +20,6 @@ object ChangeMessageVisibilityBatchResult {
   @scala.inline
   def apply(Failed: BatchResultErrorEntryList, Successful: ChangeMessageVisibilityBatchResultEntryList): ChangeMessageVisibilityBatchResult = {
     val __obj = js.Dynamic.literal(Failed = Failed.asInstanceOf[js.Any], Successful = Successful.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeMessageVisibilityBatchResult]
   }
 }

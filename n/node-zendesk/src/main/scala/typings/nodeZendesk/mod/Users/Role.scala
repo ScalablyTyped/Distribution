@@ -13,12 +13,10 @@ trait Role extends js.Object
 
 object Role {
   @scala.inline
-  def admin: typings.nodeZendesk.nodeZendeskStrings.admin = this.cast("admin")
+  def admin: typings.nodeZendesk.nodeZendeskStrings.admin = "admin".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.admin]
   @scala.inline
-  def agent: typings.nodeZendesk.nodeZendeskStrings.agent = this.cast("agent")
+  def agent: typings.nodeZendesk.nodeZendeskStrings.agent = "agent".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.agent]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `end-user`: typings.nodeZendesk.nodeZendeskStrings.`end-user` = this.cast("end-user")
+  def `end-user`: typings.nodeZendesk.nodeZendeskStrings.`end-user` = "end-user".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.`end-user`]
 }
 

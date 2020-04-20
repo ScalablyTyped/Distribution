@@ -18,7 +18,6 @@ object ListFormat {
     resolvedOptions: () => ResolvedIntlListFormatOptions
   ): ListFormat = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), formatToParts = js.Any.fromFunction1(formatToParts), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
-  
     __obj.asInstanceOf[ListFormat]
   }
 }

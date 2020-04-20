@@ -12,10 +12,8 @@ trait MatrixUnit extends js.Object
 
 object MatrixUnit {
   @scala.inline
-  def `131`: typings.nblas.nblasNumbers.`131` = this.cast(131)
+  def `131`: typings.nblas.nblasNumbers.`131` = 131.asInstanceOf[typings.nblas.nblasNumbers.`131`]
   @scala.inline
-  def `132`: typings.nblas.nblasNumbers.`132` = this.cast(132)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `132`: typings.nblas.nblasNumbers.`132` = 132.asInstanceOf[typings.nblas.nblasNumbers.`132`]
 }
 

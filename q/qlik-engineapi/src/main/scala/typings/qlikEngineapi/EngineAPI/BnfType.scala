@@ -12,10 +12,8 @@ trait BnfType extends js.Object
 
 object BnfType {
   @scala.inline
-  def E: typings.qlikEngineapi.qlikEngineapiStrings.E = this.cast("E")
+  def E: typings.qlikEngineapi.qlikEngineapiStrings.E = "E".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.E]
   @scala.inline
-  def S: typings.qlikEngineapi.qlikEngineapiStrings.S = this.cast("S")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def S: typings.qlikEngineapi.qlikEngineapiStrings.S = "S".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.S]
 }
 

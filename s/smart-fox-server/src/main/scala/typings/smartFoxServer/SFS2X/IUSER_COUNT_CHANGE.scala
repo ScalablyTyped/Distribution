@@ -15,7 +15,6 @@ object IUSER_COUNT_CHANGE {
   @scala.inline
   def apply(room: SFSRoom, sCount: Double, uCount: Double): IUSER_COUNT_CHANGE = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any], sCount = sCount.asInstanceOf[js.Any], uCount = uCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUSER_COUNT_CHANGE]
   }
 }

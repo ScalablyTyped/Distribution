@@ -12,10 +12,8 @@ trait Effect extends js.Object
 
 object Effect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def float: typings.reactTooltip.reactTooltipStrings.float = "float".asInstanceOf[typings.reactTooltip.reactTooltipStrings.float]
   @scala.inline
-  def float: typings.reactTooltip.reactTooltipStrings.float = this.cast("float")
-  @scala.inline
-  def solid: typings.reactTooltip.reactTooltipStrings.solid = this.cast("solid")
+  def solid: typings.reactTooltip.reactTooltipStrings.solid = "solid".asInstanceOf[typings.reactTooltip.reactTooltipStrings.solid]
 }
 

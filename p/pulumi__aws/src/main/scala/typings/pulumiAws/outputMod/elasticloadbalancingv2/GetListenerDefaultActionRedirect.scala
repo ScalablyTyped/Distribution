@@ -21,7 +21,6 @@ object GetListenerDefaultActionRedirect {
   @scala.inline
   def apply(host: String, path: String, port: String, protocol: String, query: String, statusCode: String): GetListenerDefaultActionRedirect = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetListenerDefaultActionRedirect]
   }
 }

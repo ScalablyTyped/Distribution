@@ -19,7 +19,6 @@ object CalendarDayPhrases {
     dateIsUnavailable: String => String
   ): CalendarDayPhrases = {
     val __obj = js.Dynamic.literal(chooseAvailableDate = js.Any.fromFunction1(chooseAvailableDate), dateIsSelected = js.Any.fromFunction1(dateIsSelected), dateIsUnavailable = js.Any.fromFunction1(dateIsUnavailable))
-  
     __obj.asInstanceOf[CalendarDayPhrases]
   }
 }

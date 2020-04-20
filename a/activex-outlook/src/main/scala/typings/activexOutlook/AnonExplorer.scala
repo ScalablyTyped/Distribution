@@ -13,7 +13,6 @@ object AnonExplorer {
   @scala.inline
   def apply(Explorer: Explorer): AnonExplorer = {
     val __obj = js.Dynamic.literal(Explorer = Explorer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExplorer]
   }
 }

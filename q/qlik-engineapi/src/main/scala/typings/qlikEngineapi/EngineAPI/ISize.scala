@@ -22,7 +22,6 @@ object ISize {
   @scala.inline
   def apply(qcx: Double, qcy: Double): ISize = {
     val __obj = js.Dynamic.literal(qcx = qcx.asInstanceOf[js.Any], qcy = qcy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISize]
   }
 }

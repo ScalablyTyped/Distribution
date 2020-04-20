@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 /** Contains the return values of readDir */
 trait ReadDirResult extends js.Object {
   /** Access rights */
-  var acl: EvaluatedFileACL
+  var acl: js.UndefOr[EvaluatedFileACL] = js.undefined
   /** Date of creation */
-  var createdAt: Double
+  var createdAt: js.UndefOr[Double] = js.undefined
   /** Name of the file or directory */
   var file: String
   /** Whether this is a directory or a file */
   var isDir: Boolean
   /** Date of last modification */
-  var modifiedAt: Double
+  var modifiedAt: js.UndefOr[Double] = js.undefined
   /** File system stats */
   var stats: Stats
 }
@@ -24,15 +24,17 @@ trait ReadDirResult extends js.Object {
 object ReadDirResult {
   @scala.inline
   def apply(
-    acl: EvaluatedFileACL,
-    createdAt: Double,
     file: String,
     isDir: Boolean,
-    modifiedAt: Double,
-    stats: Stats
+    stats: Stats,
+    acl: EvaluatedFileACL = null,
+    createdAt: Int | Double = null,
+    modifiedAt: Int | Double = null
   ): ReadDirResult = {
-    val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], modifiedAt = modifiedAt.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
+    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
+    if (modifiedAt != null) __obj.updateDynamic("modifiedAt")(modifiedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadDirResult]
   }
 }

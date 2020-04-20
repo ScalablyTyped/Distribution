@@ -13,7 +13,6 @@ object PickImplexactLength {
   @scala.inline
   def apply(exactLength: String): PickImplexactLength = {
     val __obj = js.Dynamic.literal(exactLength = exactLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplexactLength]
   }
 }

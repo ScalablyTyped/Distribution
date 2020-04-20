@@ -29,7 +29,6 @@ object TypeofCompiler {
     ]
   ): TypeofCompiler = {
     val __obj = js.Dynamic.literal(Watching = Watching.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCompiler]
   }
 }

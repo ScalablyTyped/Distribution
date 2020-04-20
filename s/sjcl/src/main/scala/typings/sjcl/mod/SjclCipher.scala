@@ -13,7 +13,6 @@ object SjclCipher {
   @scala.inline
   def apply(decrypt: js.Array[Double] => js.Array[Double], encrypt: js.Array[Double] => js.Array[Double]): SjclCipher = {
     val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt))
-  
     __obj.asInstanceOf[SjclCipher]
   }
 }

@@ -16,7 +16,6 @@ object RotateEncryptionKeyMessage {
   @scala.inline
   def apply(ClusterIdentifier: String): RotateEncryptionKeyMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RotateEncryptionKeyMessage]
   }
 }

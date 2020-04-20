@@ -24,7 +24,6 @@ object Message {
   @scala.inline
   def apply(inputName: InputName, messageId: MessageId, payload: Payload): Message = {
     val __obj = js.Dynamic.literal(inputName = inputName.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Message]
   }
 }

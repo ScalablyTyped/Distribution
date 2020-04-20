@@ -13,7 +13,6 @@ object MenuItem {
   @scala.inline
   def apply(items: String, title: String): MenuItem = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MenuItem]
   }
 }

@@ -13,7 +13,6 @@ object TransferListState {
   @scala.inline
   def apply(filterValue: String): TransferListState = {
     val __obj = js.Dynamic.literal(filterValue = filterValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransferListState]
   }
 }

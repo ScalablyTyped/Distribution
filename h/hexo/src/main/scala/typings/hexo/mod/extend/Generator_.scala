@@ -14,7 +14,6 @@ object Generator_ {
   @scala.inline
   def apply(register: (String, js.Function1[/* locals */ Site, Return | js.Array[Return]]) => Unit): Generator_ = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
-  
     __obj.asInstanceOf[Generator_]
   }
 }

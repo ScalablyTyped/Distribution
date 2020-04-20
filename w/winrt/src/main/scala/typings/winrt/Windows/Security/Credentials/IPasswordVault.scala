@@ -25,7 +25,6 @@ object IPasswordVault {
     retrieveAll: () => IVectorView[PasswordCredential]
   ): IPasswordVault = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), findAllByResource = js.Any.fromFunction1(findAllByResource), findAllByUserName = js.Any.fromFunction1(findAllByUserName), remove = js.Any.fromFunction1(remove), retrieve = js.Any.fromFunction2(retrieve), retrieveAll = js.Any.fromFunction0(retrieveAll))
-  
     __obj.asInstanceOf[IPasswordVault]
   }
 }

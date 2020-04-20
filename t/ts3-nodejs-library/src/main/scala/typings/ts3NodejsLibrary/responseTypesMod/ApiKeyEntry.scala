@@ -29,7 +29,6 @@ object ApiKeyEntry {
     time_left: Double
   ): ApiKeyEntry = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], time_left = time_left.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApiKeyEntry]
   }
 }

@@ -15,7 +15,6 @@ object AnonFull {
   @scala.inline
   def apply(full: Boolean, styles: StringDictionary[RegisteredStyle[_]]): AnonFull = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFull]
   }
 }

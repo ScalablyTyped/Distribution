@@ -13,7 +13,6 @@ object AnonTabLabel {
   @scala.inline
   def apply(tabLabel: ReactChild): AnonTabLabel = {
     val __obj = js.Dynamic.literal(tabLabel = tabLabel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTabLabel]
   }
 }

@@ -30,44 +30,42 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  def all: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.all = this.cast("all")
+  def all: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.all = "all".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.all]
   @scala.inline
-  def bottom: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottom = "bottom".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottom]
   @scala.inline
-  def bottomAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndLeft = this.cast("bottomAndLeft")
+  def bottomAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndLeft = "bottomAndLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndLeft]
   @scala.inline
-  def bottomAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndRight = this.cast("bottomAndRight")
+  def bottomAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndRight = "bottomAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndRight]
   @scala.inline
-  def bottomLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomLeft = this.cast("bottomLeft")
+  def bottomLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomLeft]
   @scala.inline
-  def bottomRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomRight = this.cast("bottomRight")
+  def bottomRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomRight = "bottomRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomRight]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontal = "horizontal".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontal]
   @scala.inline
-  def horizontal: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontal = this.cast("horizontal")
+  def horizontalAndBottom: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndBottom = "horizontalAndBottom".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndBottom]
   @scala.inline
-  def horizontalAndBottom: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndBottom = this.cast("horizontalAndBottom")
+  def horizontalAndTop: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndTop = "horizontalAndTop".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndTop]
   @scala.inline
-  def horizontalAndTop: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndTop = this.cast("horizontalAndTop")
+  def left: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.left = "left".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.left]
   @scala.inline
-  def left: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.left = this.cast("left")
+  def right: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.right = "right".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.right]
   @scala.inline
-  def right: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.right = this.cast("right")
+  def top: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.top = "top".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.top]
   @scala.inline
-  def top: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.top = this.cast("top")
+  def topAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndLeft = "topAndLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndLeft]
   @scala.inline
-  def topAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndLeft = this.cast("topAndLeft")
+  def topAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndRight = "topAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndRight]
   @scala.inline
-  def topAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndRight = this.cast("topAndRight")
+  def topLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topLeft = "topLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topLeft]
   @scala.inline
-  def topLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topLeft = this.cast("topLeft")
+  def topRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topRight = "topRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topRight]
   @scala.inline
-  def topRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topRight = this.cast("topRight")
+  def vertical: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.vertical = "vertical".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.vertical]
   @scala.inline
-  def vertical: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.vertical = this.cast("vertical")
+  def verticalAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndLeft = "verticalAndLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndLeft]
   @scala.inline
-  def verticalAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndLeft = this.cast("verticalAndLeft")
-  @scala.inline
-  def verticalAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndRight = this.cast("verticalAndRight")
+  def verticalAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndRight = "verticalAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndRight]
 }
 

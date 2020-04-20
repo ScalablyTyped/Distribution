@@ -16,18 +16,16 @@ trait NotificationSettingLevel extends js.Object
 
 object NotificationSettingLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def custom: typings.gitlab.gitlabStrings.custom = "custom".asInstanceOf[typings.gitlab.gitlabStrings.custom]
   @scala.inline
-  def custom: typings.gitlab.gitlabStrings.custom = this.cast("custom")
+  def disabled: typings.gitlab.gitlabStrings.disabled = "disabled".asInstanceOf[typings.gitlab.gitlabStrings.disabled]
   @scala.inline
-  def disabled: typings.gitlab.gitlabStrings.disabled = this.cast("disabled")
+  def global: typings.gitlab.gitlabStrings.global = "global".asInstanceOf[typings.gitlab.gitlabStrings.global]
   @scala.inline
-  def global: typings.gitlab.gitlabStrings.global = this.cast("global")
+  def mention: typings.gitlab.gitlabStrings.mention = "mention".asInstanceOf[typings.gitlab.gitlabStrings.mention]
   @scala.inline
-  def mention: typings.gitlab.gitlabStrings.mention = this.cast("mention")
+  def participating: typings.gitlab.gitlabStrings.participating = "participating".asInstanceOf[typings.gitlab.gitlabStrings.participating]
   @scala.inline
-  def participating: typings.gitlab.gitlabStrings.participating = this.cast("participating")
-  @scala.inline
-  def watch: typings.gitlab.gitlabStrings.watch = this.cast("watch")
+  def watch: typings.gitlab.gitlabStrings.watch = "watch".asInstanceOf[typings.gitlab.gitlabStrings.watch]
 }
 

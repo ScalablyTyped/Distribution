@@ -15,7 +15,6 @@ object Bin {
   @scala.inline
   def apply(decay: Double, hi: Double, lo: Double, threshold: Double): Bin = {
     val __obj = js.Dynamic.literal(decay = decay.asInstanceOf[js.Any], hi = hi.asInstanceOf[js.Any], lo = lo.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Bin]
   }
 }

@@ -12,7 +12,6 @@ object ViewInformationRequestor {
   @scala.inline
   def apply(onViewInformationReturned: ViewSelectorGroups => Unit): ViewInformationRequestor = {
     val __obj = js.Dynamic.literal(onViewInformationReturned = js.Any.fromFunction1(onViewInformationReturned))
-  
     __obj.asInstanceOf[ViewInformationRequestor]
   }
 }

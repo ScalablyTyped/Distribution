@@ -26,7 +26,6 @@ object Formatter {
     formatTime: FormatDateOptions
   ): Formatter = {
     val __obj = js.Dynamic.literal(formatDate = formatDate.asInstanceOf[js.Any], formatDisplayName = formatDisplayName.asInstanceOf[js.Any], formatList = formatList.asInstanceOf[js.Any], formatNumber = formatNumber.asInstanceOf[js.Any], formatTime = formatTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Formatter]
   }
 }

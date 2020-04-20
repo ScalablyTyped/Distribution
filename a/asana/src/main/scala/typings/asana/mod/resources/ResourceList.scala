@@ -28,7 +28,6 @@ object ResourceList {
     nextPage: () => typings.bluebird.mod.^[ResourceList[T] | Null]
   ): ResourceList[T] = {
     val __obj = js.Dynamic.literal(_dispatcher = _dispatcher.asInstanceOf[js.Any], _response = _response.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], nextPage = js.Any.fromFunction0(nextPage))
-  
     __obj.asInstanceOf[ResourceList[T]]
   }
 }

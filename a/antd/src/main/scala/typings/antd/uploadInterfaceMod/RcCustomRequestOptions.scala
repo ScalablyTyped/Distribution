@@ -33,7 +33,6 @@ object RcCustomRequestOptions {
     withCredentials: Boolean
   ): RcCustomRequestOptions = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError), onProgress = js.Any.fromFunction2(onProgress), onSuccess = js.Any.fromFunction2(onSuccess), withCredentials = withCredentials.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RcCustomRequestOptions]
   }
 }

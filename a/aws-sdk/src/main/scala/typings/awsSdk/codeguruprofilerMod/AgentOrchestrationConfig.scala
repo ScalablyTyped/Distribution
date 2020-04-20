@@ -16,7 +16,6 @@ object AgentOrchestrationConfig {
   @scala.inline
   def apply(profilingEnabled: Boolean): AgentOrchestrationConfig = {
     val __obj = js.Dynamic.literal(profilingEnabled = profilingEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentOrchestrationConfig]
   }
 }

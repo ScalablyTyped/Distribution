@@ -19,7 +19,6 @@ object ObjectConstructor {
   @scala.inline
   def apply(getType: js.Any => Type, getTypeName: js.Any => java.lang.String): ObjectConstructor = {
     val __obj = js.Dynamic.literal(getType = js.Any.fromFunction1(getType), getTypeName = js.Any.fromFunction1(getTypeName))
-  
     __obj.asInstanceOf[ObjectConstructor]
   }
 }

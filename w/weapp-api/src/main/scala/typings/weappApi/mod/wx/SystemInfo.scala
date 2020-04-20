@@ -30,7 +30,6 @@ object SystemInfo {
     windowWidth: Double
   ): SystemInfo = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], windowHeight = windowHeight.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SystemInfo]
   }
 }

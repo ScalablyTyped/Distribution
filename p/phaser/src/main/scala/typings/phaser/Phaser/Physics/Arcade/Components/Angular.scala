@@ -41,7 +41,6 @@ object Angular {
     setAngularVelocity: Double => Angular
   ): Angular = {
     val __obj = js.Dynamic.literal(setAngularAcceleration = js.Any.fromFunction1(setAngularAcceleration), setAngularDrag = js.Any.fromFunction1(setAngularDrag), setAngularVelocity = js.Any.fromFunction1(setAngularVelocity))
-  
     __obj.asInstanceOf[Angular]
   }
 }

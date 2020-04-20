@@ -12,10 +12,8 @@ trait UnitSystem extends js.Object
 
 object UnitSystem {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def imperial: typings.googleMaps.googleMapsStrings.imperial = "imperial".asInstanceOf[typings.googleMaps.googleMapsStrings.imperial]
   @scala.inline
-  def imperial: typings.googleMaps.googleMapsStrings.imperial = this.cast("imperial")
-  @scala.inline
-  def metric: typings.googleMaps.googleMapsStrings.metric = this.cast("metric")
+  def metric: typings.googleMaps.googleMapsStrings.metric = "metric".asInstanceOf[typings.googleMaps.googleMapsStrings.metric]
 }
 

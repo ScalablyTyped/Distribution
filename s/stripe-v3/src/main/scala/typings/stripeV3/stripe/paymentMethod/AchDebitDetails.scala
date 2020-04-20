@@ -26,7 +26,6 @@ object AchDebitDetails {
     routing_number: String
   ): AchDebitDetails = {
     val __obj = js.Dynamic.literal(account_holder_type = account_holder_type.asInstanceOf[js.Any], bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AchDebitDetails]
   }
 }

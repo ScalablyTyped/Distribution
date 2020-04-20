@@ -1,5 +1,6 @@
 package typings.parsimmon.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parsimmon", "seqObj")
 @js.native
 object seqObj extends js.Object {
-  def apply[T, Key /* <: String */](
+  def apply[T, Key /* <: /* keyof T */ String */](
     args: ((js.Tuple2[
       Key, 
       Parser[
@@ -17,7 +18,7 @@ object seqObj extends js.Object {
   ): Parser[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: T[K]}
-    */ typings.parsimmon.parsimmonStrings.seqObj with T
+    */ typings.parsimmon.parsimmonStrings.seqObj with TopLevel[T]
   ] = js.native
 }
 

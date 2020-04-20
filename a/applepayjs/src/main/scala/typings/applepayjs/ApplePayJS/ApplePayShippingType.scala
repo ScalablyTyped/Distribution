@@ -17,14 +17,12 @@ trait ApplePayShippingType extends js.Object
 
 object ApplePayShippingType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delivery: typings.applepayjs.applepayjsStrings.delivery = "delivery".asInstanceOf[typings.applepayjs.applepayjsStrings.delivery]
   @scala.inline
-  def delivery: typings.applepayjs.applepayjsStrings.delivery = this.cast("delivery")
+  def servicePickup: typings.applepayjs.applepayjsStrings.servicePickup = "servicePickup".asInstanceOf[typings.applepayjs.applepayjsStrings.servicePickup]
   @scala.inline
-  def servicePickup: typings.applepayjs.applepayjsStrings.servicePickup = this.cast("servicePickup")
+  def shipping: typings.applepayjs.applepayjsStrings.shipping = "shipping".asInstanceOf[typings.applepayjs.applepayjsStrings.shipping]
   @scala.inline
-  def shipping: typings.applepayjs.applepayjsStrings.shipping = this.cast("shipping")
-  @scala.inline
-  def storePickup: typings.applepayjs.applepayjsStrings.storePickup = this.cast("storePickup")
+  def storePickup: typings.applepayjs.applepayjsStrings.storePickup = "storePickup".asInstanceOf[typings.applepayjs.applepayjsStrings.storePickup]
 }
 

@@ -22,7 +22,6 @@ object ICachedFileUpdaterUI {
     updateTarget: CachedFileTarget
   ): ICachedFileUpdaterUI = {
     val __obj = js.Dynamic.literal(onfileupdaterequested = onfileupdaterequested.asInstanceOf[js.Any], onuirequested = onuirequested.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uIStatus = uIStatus.asInstanceOf[js.Any], updateTarget = updateTarget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICachedFileUpdaterUI]
   }
 }

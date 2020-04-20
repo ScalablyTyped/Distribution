@@ -36,7 +36,7 @@ class ExtensionView protected () extends VDomRenderer[ListModel] {
   /**
     * The search input node.
     */
-  def inputNode(): HTMLInputElement = js.native
+  def inputNode: HTMLInputElement = js.native
   /**
     * Callback handler for when the user wants to perform an action on an extension.
     *

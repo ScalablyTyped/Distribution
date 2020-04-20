@@ -15,7 +15,6 @@ object AnonEnd {
   @scala.inline
   def apply(end: Double | Position, file: String, start: Double | Position): AnonEnd = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnd]
   }
 }

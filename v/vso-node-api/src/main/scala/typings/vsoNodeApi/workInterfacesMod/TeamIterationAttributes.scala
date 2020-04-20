@@ -15,7 +15,6 @@ object TeamIterationAttributes {
   @scala.inline
   def apply(finishDate: Date, startDate: Date, timeFrame: TimeFrame): TeamIterationAttributes = {
     val __obj = js.Dynamic.literal(finishDate = finishDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], timeFrame = timeFrame.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamIterationAttributes]
   }
 }

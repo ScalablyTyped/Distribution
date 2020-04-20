@@ -16,18 +16,16 @@ trait TMethod extends js.Object
 
 object TMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: typings.fetchIo.fetchIoStrings.delete = "delete".asInstanceOf[typings.fetchIo.fetchIoStrings.delete]
   @scala.inline
-  def delete: typings.fetchIo.fetchIoStrings.delete = this.cast("delete")
+  def get: typings.fetchIo.fetchIoStrings.get = "get".asInstanceOf[typings.fetchIo.fetchIoStrings.get]
   @scala.inline
-  def get: typings.fetchIo.fetchIoStrings.get = this.cast("get")
+  def head: typings.fetchIo.fetchIoStrings.head = "head".asInstanceOf[typings.fetchIo.fetchIoStrings.head]
   @scala.inline
-  def head: typings.fetchIo.fetchIoStrings.head = this.cast("head")
+  def options: typings.fetchIo.fetchIoStrings.options = "options".asInstanceOf[typings.fetchIo.fetchIoStrings.options]
   @scala.inline
-  def options: typings.fetchIo.fetchIoStrings.options = this.cast("options")
+  def post: typings.fetchIo.fetchIoStrings.post = "post".asInstanceOf[typings.fetchIo.fetchIoStrings.post]
   @scala.inline
-  def post: typings.fetchIo.fetchIoStrings.post = this.cast("post")
-  @scala.inline
-  def put: typings.fetchIo.fetchIoStrings.put = this.cast("put")
+  def put: typings.fetchIo.fetchIoStrings.put = "put".asInstanceOf[typings.fetchIo.fetchIoStrings.put]
 }
 

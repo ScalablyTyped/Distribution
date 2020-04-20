@@ -13,7 +13,6 @@ object Limits {
   @scala.inline
   def apply(max_zoom: Double, min_zoom: Double): Limits = {
     val __obj = js.Dynamic.literal(max_zoom = max_zoom.asInstanceOf[js.Any], min_zoom = min_zoom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Limits]
   }
 }

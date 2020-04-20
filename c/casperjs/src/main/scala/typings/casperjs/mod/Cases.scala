@@ -13,7 +13,6 @@ object Cases {
   @scala.inline
   def apply(cases: js.Array[Case], length: Double): Cases = {
     val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Cases]
   }
 }

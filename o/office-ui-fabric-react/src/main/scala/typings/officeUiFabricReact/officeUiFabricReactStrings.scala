@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.colorPickerBaseMod.ColorComponent
 import typings.officeUiFabricReact.docPageTypesMod.ApiKind
 import typings.officeUiFabricReact.docPageTypesMod.PageKind
 import typings.officeUiFabricReact.scrollablePaneTypesMod.ScrollbarVisibility
@@ -93,7 +94,7 @@ object officeUiFabricReactStrings {
   sealed trait _underscore extends js.Object
   
   @js.native
-  sealed trait a extends js.Object
+  sealed trait a extends ColorComponent
   
   @js.native
   sealed trait absolute extends js.Object
@@ -105,13 +106,13 @@ object officeUiFabricReactStrings {
   sealed trait accentButtonBackground extends js.Object
   
   @js.native
-  sealed trait actionButton_0374adf6 extends js.Object
+  sealed trait actionButton_074a25cc extends js.Object
   
   @js.native
-  sealed trait actionButton_12a6a499 extends js.Object
+  sealed trait actionButton_6003188c extends js.Object
   
   @js.native
-  sealed trait actionButton_49a432f4 extends js.Object
+  sealed trait actionButton_fb873249 extends js.Object
   
   @js.native
   sealed trait additions extends js.Object
@@ -121,6 +122,9 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait all extends js.Object
+  
+  @js.native
+  sealed trait alpha extends js.Object
   
   @js.native
   sealed trait always extends ScrollbarVisibility
@@ -138,7 +142,7 @@ object officeUiFabricReactStrings {
        with ScrollbarVisibility
   
   @js.native
-  sealed trait b extends js.Object
+  sealed trait b extends ColorComponent
   
   @js.native
   sealed trait baseline extends Alignment
@@ -201,13 +205,13 @@ object officeUiFabricReactStrings {
   sealed trait bottom extends SpinnerLabelPosition
   
   @js.native
-  sealed trait bottomDate_d7ec3e0f extends js.Object
+  sealed trait bottomDate_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait bottomLeftCornerDate_d7ec3e0f extends js.Object
+  sealed trait bottomLeftCornerDate_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait bottomRightCornerDate_d7ec3e0f extends js.Object
+  sealed trait bottomRightCornerDate_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait buildClassMap extends js.Object
@@ -240,16 +244,16 @@ object officeUiFabricReactStrings {
   sealed trait buttonBorderDisabled extends js.Object
   
   @js.native
-  sealed trait buttonSelected_12a6a499 extends js.Object
+  sealed trait buttonSelected_074a25cc extends js.Object
   
   @js.native
-  sealed trait buttonSelected_49a432f4 extends js.Object
+  sealed trait buttonSelected_fb873249 extends js.Object
   
   @js.native
-  sealed trait calendarsInline_d7ec3e0f extends js.Object
+  sealed trait calendarsInline_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait callout_8212a800 extends js.Object
+  sealed trait callout_3bf61a4d extends js.Object
   
   @js.native
   sealed trait center extends Alignment
@@ -258,10 +262,10 @@ object officeUiFabricReactStrings {
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait checkHost_f68c3f5b extends js.Object
+  sealed trait checkHost_30802d6f extends js.Object
   
   @js.native
-  sealed trait check_f68c3f5b extends js.Object
+  sealed trait check_30802d6f extends js.Object
   
   @js.native
   sealed trait checkbox extends js.Object
@@ -270,25 +274,25 @@ object officeUiFabricReactStrings {
   sealed trait circle extends js.Object
   
   @js.native
-  sealed trait circle_f68c3f5b extends js.Object
+  sealed trait circle_30802d6f extends js.Object
   
   @js.native
   sealed trait `class` extends ApiKind
   
   @js.native
-  sealed trait closeButton_49a432f4 extends js.Object
+  sealed trait closeButton_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait closeButton_d7ec3e0f extends js.Object
+  sealed trait closeButton_fb873249 extends js.Object
   
   @js.native
   sealed trait copy extends js.Object
   
   @js.native
-  sealed trait currentDecade_d7ec3e0f extends js.Object
+  sealed trait currentDecade_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait currentYear_d7ec3e0f extends js.Object
+  sealed trait currentYear_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait `data-coachmarkid` extends js.Object
@@ -315,49 +319,49 @@ object officeUiFabricReactStrings {
   sealed trait date extends js.Object
   
   @js.native
-  sealed trait dayBackground_d7ec3e0f extends js.Object
+  sealed trait dayBackground_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayDisabled_d7ec3e0f extends js.Object
+  sealed trait dayDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayHover_d7ec3e0f extends js.Object
+  sealed trait dayHover_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayIsDisabled_d7ec3e0f extends js.Object
+  sealed trait dayIsDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayIsFocused_d7ec3e0f extends js.Object
+  sealed trait dayIsFocused_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayIsHighlighted_d7ec3e0f extends js.Object
+  sealed trait dayIsHighlighted_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayIsToday_d7ec3e0f extends js.Object
+  sealed trait dayIsToday_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayIsUnfocused_d7ec3e0f extends js.Object
+  sealed trait dayIsUnfocused_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayPicker_d7ec3e0f extends js.Object
+  sealed trait dayPicker_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayPress_d7ec3e0f extends js.Object
+  sealed trait dayPress_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait daySelection_d7ec3e0f extends js.Object
+  sealed trait daySelection_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait dayWrapper_d7ec3e0f extends js.Object
+  sealed trait dayWrapper_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait day_d7ec3e0f extends js.Object
+  sealed trait day_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait decadeComponents_d7ec3e0f extends js.Object
+  sealed trait decadeComponents_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait decade_d7ec3e0f extends js.Object
+  sealed trait decade_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait decimal extends js.Object
@@ -381,13 +385,13 @@ object officeUiFabricReactStrings {
   sealed trait disabledBorder extends js.Object
   
   @js.native
-  sealed trait divider_d7ec3e0f extends js.Object
+  sealed trait divider_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait editingContainer_7dfbc845 extends js.Object
+  sealed trait editingContainer_65f7d974 extends js.Object
   
   @js.native
-  sealed trait editingInput_7dfbc845 extends js.Object
+  sealed trait editingInput_65f7d974 extends js.Object
   
   @js.native
   sealed trait email extends js.Object
@@ -411,7 +415,7 @@ object officeUiFabricReactStrings {
   sealed trait exitKeytipMode extends js.Object
   
   @js.native
-  sealed trait expandButton_0374adf6 extends js.Object
+  sealed trait expandButton_6003188c extends js.Object
   
   @js.native
   sealed trait extendComponent extends js.Object
@@ -420,22 +424,22 @@ object officeUiFabricReactStrings {
   sealed trait focusBorder extends js.Object
   
   @js.native
-  sealed trait frame_d7ec3e0f extends js.Object
+  sealed trait frame_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait g extends js.Object
+  sealed trait g extends ColorComponent
   
   @js.native
-  sealed trait goToTodayIsDisabled_d7ec3e0f extends js.Object
+  sealed trait goToTodayIsDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait goTodayInlineMonth_d7ec3e0f extends js.Object
+  sealed trait goTodayInlineMonth_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait goTodaySpacing_d7ec3e0f extends js.Object
+  sealed trait goTodaySpacing_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait goToday_d7ec3e0f extends js.Object
+  sealed trait goToday_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait grammar extends js.Object
@@ -474,13 +478,13 @@ object officeUiFabricReactStrings {
   sealed trait h6 extends js.Object
   
   @js.native
-  sealed trait headerToggleView_d7ec3e0f extends js.Object
+  sealed trait headerToggleView_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait header_d7ec3e0f extends js.Object
+  sealed trait header_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex extends ColorComponent
   
   @js.native
   sealed trait hidden
@@ -488,19 +492,22 @@ object officeUiFabricReactStrings {
        with typings.officeUiFabricReact.stackHorizontalWrapAdvancedExampleMod.Overflow
   
   @js.native
-  sealed trait holderWithButton_d7ec3e0f extends js.Object
+  sealed trait holderWithButton_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait holder_d7ec3e0f extends js.Object
+  sealed trait holder_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait hover_0374adf6 extends js.Object
+  sealed trait hover_6003188c extends js.Object
   
   @js.native
-  sealed trait iconContainer_2b33d641 extends js.Object
+  sealed trait hue extends js.Object
+  
+  @js.native
+  sealed trait iconContainer_3597e730 extends js.Object
   
   @js.native
   sealed trait inherit extends js.Object
@@ -530,7 +537,7 @@ object officeUiFabricReactStrings {
   sealed trait inputFocusBorderAlt extends js.Object
   
   @js.native
-  sealed trait inputFocused_19684fdb extends js.Object
+  sealed trait inputFocused_46086680 extends js.Object
   
   @js.native
   sealed trait inputForegroundChecked extends js.Object
@@ -551,37 +558,37 @@ object officeUiFabricReactStrings {
   sealed trait interface extends ApiKind
   
   @js.native
-  sealed trait isHighlighted_d7ec3e0f extends js.Object
+  sealed trait isHighlighted_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait isPickingYears_d7ec3e0f extends js.Object
+  sealed trait isPickingYears_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait itemButton_12a6a499 extends js.Object
+  sealed trait itemButton_074a25cc extends js.Object
   
   @js.native
-  sealed trait itemButton_49a432f4 extends js.Object
+  sealed trait itemButton_fb873249 extends js.Object
   
   @js.native
-  sealed trait itemContainer_0374adf6 extends js.Object
+  sealed trait itemContainer_02c5c75d extends js.Object
   
   @js.native
-  sealed trait itemContainer_45c5e011 extends js.Object
+  sealed trait itemContainer_6003188c extends js.Object
   
   @js.native
-  sealed trait itemContainer_b2201782 extends js.Object
+  sealed trait itemContainer_70359137 extends js.Object
   
   @js.native
-  sealed trait itemContent_0374adf6 extends js.Object
+  sealed trait itemContent_02c5c75d extends js.Object
   
   @js.native
-  sealed trait itemContent_45c5e011 extends js.Object
+  sealed trait itemContent_6003188c extends js.Object
   
   @js.native
-  sealed trait itemContent_b2201782 extends js.Object
+  sealed trait itemContent_70359137 extends js.Object
   
   @js.native
-  sealed trait item_1a34f243 extends js.Object
+  sealed trait item_b4bf9717 extends js.Object
   
   @js.native
   sealed trait keytipAdded extends js.Object
@@ -602,10 +609,13 @@ object officeUiFabricReactStrings {
   sealed trait `ktp-layer-id` extends js.Object
   
   @js.native
+  sealed trait large extends js.Object
+  
+  @js.native
   sealed trait left extends SpinnerLabelPosition
   
   @js.native
-  sealed trait leftdate_d7ec3e0f extends js.Object
+  sealed trait leftdate_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait link extends js.Object
@@ -641,10 +651,10 @@ object officeUiFabricReactStrings {
   sealed trait location extends js.Object
   
   @js.native
-  sealed trait logoFillIcon_2b33d641 extends js.Object
+  sealed trait logoFillIcon_3597e730 extends js.Object
   
   @js.native
-  sealed trait logoIcon_2b33d641 extends js.Object
+  sealed trait logoIcon_3597e730 extends js.Object
   
   @js.native
   sealed trait ltr extends js.Object
@@ -657,6 +667,15 @@ object officeUiFabricReactStrings {
   
   @js.native
   sealed trait magentaLight extends js.Object
+  
+  @js.native
+  sealed trait medium extends js.Object
+  
+  @js.native
+  sealed trait mediumPlus extends js.Object
+  
+  @js.native
+  sealed trait mega extends js.Object
   
   @js.native
   sealed trait menu extends js.Object
@@ -698,37 +717,37 @@ object officeUiFabricReactStrings {
   sealed trait mixed extends js.Object
   
   @js.native
-  sealed trait monthAndYear_d7ec3e0f extends js.Object
+  sealed trait monthAndYear_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthComponents_d7ec3e0f extends js.Object
+  sealed trait monthComponents_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthIsCurrentMonth_d7ec3e0f extends js.Object
+  sealed trait monthIsCurrentMonth_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthIsHighlighted_d7ec3e0f extends js.Object
+  sealed trait monthIsHighlighted_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthOptionIsDisabled_d7ec3e0f extends js.Object
+  sealed trait monthOptionIsDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthOption_d7ec3e0f extends js.Object
+  sealed trait monthOption_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthPickerAsOverlay_d7ec3e0f extends js.Object
+  sealed trait monthPickerAsOverlay_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthPickerOnly_d7ec3e0f extends js.Object
+  sealed trait monthPickerOnly_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthPickerVisible_d7ec3e0f extends js.Object
+  sealed trait monthPickerVisible_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthPicker_d7ec3e0f extends js.Object
+  sealed trait monthPicker_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait monthSelection_d7ec3e0f extends js.Object
+  sealed trait monthSelection_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait move extends js.Object
@@ -776,22 +795,22 @@ object officeUiFabricReactStrings {
   sealed trait neutralTertiaryAlt extends js.Object
   
   @js.native
-  sealed trait nextDecadeIsDisabled_d7ec3e0f extends js.Object
+  sealed trait nextDecadeIsDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait nextDecade_d7ec3e0f extends js.Object
+  sealed trait nextDecade_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait nextMonthIsDisabled_d7ec3e0f extends js.Object
+  sealed trait nextMonthIsDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait nextMonth_d7ec3e0f extends js.Object
+  sealed trait nextMonth_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait nextYearIsDisabled_d7ec3e0f extends js.Object
+  sealed trait nextYearIsDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait nextYear_d7ec3e0f extends js.Object
+  sealed trait nextYear_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait no extends js.Object
@@ -809,7 +828,7 @@ object officeUiFabricReactStrings {
   sealed trait on extends js.Object
   
   @js.native
-  sealed trait optionGrid_d7ec3e0f extends js.Object
+  sealed trait optionGrid_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait orange extends js.Object
@@ -827,28 +846,28 @@ object officeUiFabricReactStrings {
   sealed trait page extends js.Object
   
   @js.native
-  sealed trait peoplePickerPersonaContent_be21407a extends js.Object
+  sealed trait peoplePickerPersonaContent_5805c930 extends js.Object
   
   @js.native
-  sealed trait peoplePickerPersonaContent_e5789002 extends js.Object
+  sealed trait peoplePickerPersonaContent_a75d8941 extends js.Object
   
   @js.native
-  sealed trait peoplePickerPersonaContent_f536abdc extends js.Object
+  sealed trait peoplePickerPersonaContent_c1ea5eea extends js.Object
   
   @js.native
-  sealed trait peoplePickerPersona_be21407a extends js.Object
+  sealed trait peoplePickerPersona_5805c930 extends js.Object
   
   @js.native
-  sealed trait peoplePickerPersona_e5789002 extends js.Object
+  sealed trait peoplePickerPersona_a75d8941 extends js.Object
   
   @js.native
-  sealed trait peoplePickerPersona_f536abdc extends js.Object
+  sealed trait peoplePickerPersona_c1ea5eea extends js.Object
   
   @js.native
-  sealed trait peoplePicker_be21407a extends js.Object
+  sealed trait peoplePicker_5805c930 extends js.Object
   
   @js.native
-  sealed trait peoplePicker_f536abdc extends js.Object
+  sealed trait peoplePicker_c1ea5eea extends js.Object
   
   @js.native
   sealed trait persistedKeytipAdded extends js.Object
@@ -860,58 +879,58 @@ object officeUiFabricReactStrings {
   sealed trait persistedKeytipRemoved extends js.Object
   
   @js.native
-  sealed trait personaContainerIsSelected_0374adf6 extends js.Object
+  sealed trait personaContainerIsSelected_02c5c75d extends js.Object
   
   @js.native
-  sealed trait personaContainerIsSelected_45c5e011 extends js.Object
+  sealed trait personaContainerIsSelected_6003188c extends js.Object
   
   @js.native
-  sealed trait personaContainerIsSelected_b2201782 extends js.Object
+  sealed trait personaContainerIsSelected_70359137 extends js.Object
   
   @js.native
-  sealed trait personaContainer_0374adf6 extends js.Object
+  sealed trait personaContainer_02c5c75d extends js.Object
   
   @js.native
-  sealed trait personaContainer_45c5e011 extends js.Object
+  sealed trait personaContainer_6003188c extends js.Object
   
   @js.native
-  sealed trait personaContainer_b2201782 extends js.Object
+  sealed trait personaContainer_70359137 extends js.Object
   
   @js.native
-  sealed trait personaDetails_0374adf6 extends js.Object
+  sealed trait personaDetails_02c5c75d extends js.Object
   
   @js.native
-  sealed trait personaDetails_45c5e011 extends js.Object
+  sealed trait personaDetails_6003188c extends js.Object
   
   @js.native
-  sealed trait personaDetails_b2201782 extends js.Object
+  sealed trait personaDetails_70359137 extends js.Object
   
   @js.native
-  sealed trait personaWrapper_0374adf6 extends js.Object
+  sealed trait personaWrapper_6003188c extends js.Object
   
   @js.native
-  sealed trait pickerInput_19684fdb extends js.Object
+  sealed trait pickerInput_46086680 extends js.Object
   
   @js.native
-  sealed trait pickerInput_8d9d7e4e extends js.Object
+  sealed trait pickerInput_59866dd7 extends js.Object
   
   @js.native
-  sealed trait pickerIsFocused_d7ec3e0f extends js.Object
+  sealed trait pickerIsFocused_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait pickerIsOpened_d7ec3e0f extends js.Object
+  sealed trait pickerIsOpened_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait pickerItems_19684fdb extends js.Object
+  sealed trait pickerItems_46086680 extends js.Object
   
   @js.native
-  sealed trait pickerText_19684fdb extends js.Object
+  sealed trait pickerText_46086680 extends js.Object
   
   @js.native
-  sealed trait pickerText_8d9d7e4e extends js.Object
+  sealed trait pickerText_59866dd7 extends js.Object
   
   @js.native
-  sealed trait picker_d7ec3e0f extends js.Object
+  sealed trait picker_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait polite extends js.Object
@@ -920,22 +939,22 @@ object officeUiFabricReactStrings {
   sealed trait popup extends js.Object
   
   @js.native
-  sealed trait prevDecadeIsDisabled_d7ec3e0f extends js.Object
+  sealed trait prevDecadeIsDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait prevDecade_d7ec3e0f extends js.Object
+  sealed trait prevDecade_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait prevMonthIsDisabled_d7ec3e0f extends js.Object
+  sealed trait prevMonthIsDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait prevMonth_d7ec3e0f extends js.Object
+  sealed trait prevMonth_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait prevYearIsDisabled_d7ec3e0f extends js.Object
+  sealed trait prevYearIsDisabled_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait prevYear_d7ec3e0f extends js.Object
+  sealed trait prevYear_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait primaryButtonBackground extends js.Object
@@ -965,7 +984,7 @@ object officeUiFabricReactStrings {
   sealed trait purpleLight extends js.Object
   
   @js.native
-  sealed trait r extends js.Object
+  sealed trait r extends ColorComponent
   
   @js.native
   sealed trait red extends js.Object
@@ -980,13 +999,13 @@ object officeUiFabricReactStrings {
   sealed trait removals extends js.Object
   
   @js.native
-  sealed trait removeButton_0374adf6 extends js.Object
+  sealed trait removeButton_02c5c75d extends js.Object
   
   @js.native
-  sealed trait removeButton_45c5e011 extends js.Object
+  sealed trait removeButton_6003188c extends js.Object
   
   @js.native
-  sealed trait removeButton_b2201782 extends js.Object
+  sealed trait removeButton_70359137 extends js.Object
   
   @js.native
   sealed trait required extends js.Object
@@ -995,70 +1014,76 @@ object officeUiFabricReactStrings {
   sealed trait reset extends js.Object
   
   @js.native
-  sealed trait resultContent_be21407a extends js.Object
+  sealed trait resultContent_5805c930 extends js.Object
   
   @js.native
-  sealed trait resultContent_f536abdc extends js.Object
+  sealed trait resultContent_c1ea5eea extends js.Object
   
   @js.native
-  sealed trait resultItem_be21407a extends js.Object
+  sealed trait resultItem_5805c930 extends js.Object
   
   @js.native
-  sealed trait resultItem_f536abdc extends js.Object
+  sealed trait resultItem_c1ea5eea extends js.Object
   
   @js.native
   sealed trait right extends SpinnerLabelPosition
   
   @js.native
-  sealed trait rightDate_d7ec3e0f extends js.Object
+  sealed trait rightDate_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait rootIsChecked_f68c3f5b extends js.Object
+  sealed trait rootIsChecked_30802d6f extends js.Object
   
   @js.native
-  sealed trait rootVertical_1a34f243 extends js.Object
+  sealed trait rootVertical_b4bf9717 extends js.Object
   
   @js.native
-  sealed trait root_12a6a499 extends js.Object
+  sealed trait root_074a25cc extends js.Object
   
   @js.native
-  sealed trait root_1a34f243 extends js.Object
+  sealed trait root_30802d6f extends js.Object
   
   @js.native
-  sealed trait root_49a432f4 extends js.Object
+  sealed trait root_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait root_d7ec3e0f extends js.Object
+  sealed trait root_b4bf9717 extends js.Object
   
   @js.native
-  sealed trait root_e2dcdb7c extends js.Object
+  sealed trait root_d05c0844 extends js.Object
   
   @js.native
-  sealed trait root_f68c3f5b extends js.Object
+  sealed trait root_fb873249 extends js.Object
   
   @js.native
   sealed trait rtl extends js.Object
   
   @js.native
-  sealed trait screenReaderOnly_12a6a499 extends js.Object
+  sealed trait screenReaderOnly_074a25cc extends js.Object
   
   @js.native
-  sealed trait screenReaderOnly_19684fdb extends js.Object
+  sealed trait screenReaderOnly_46086680 extends js.Object
   
   @js.native
   sealed trait search extends js.Object
   
   @js.native
-  sealed trait showWeekNumbersRTL_d7ec3e0f extends js.Object
+  sealed trait showWeekNumbersRTL_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait showWeekNumbers_d7ec3e0f extends js.Object
+  sealed trait showWeekNumbers_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait shrink extends js.Object
   
   @js.native
+  sealed trait small extends js.Object
+  
+  @js.native
   sealed trait smallInputBorder extends js.Object
+  
+  @js.native
+  sealed trait smallPlus extends js.Object
   
   @js.native
   sealed trait `space-around` extends Alignment
@@ -1082,10 +1107,10 @@ object officeUiFabricReactStrings {
   sealed trait step extends js.Object
   
   @js.native
-  sealed trait stickyAbove_e2dcdb7c extends js.Object
+  sealed trait stickyAbove_d05c0844 extends js.Object
   
   @js.native
-  sealed trait stickyBelow_e2dcdb7c extends js.Object
+  sealed trait stickyBelow_d05c0844 extends js.Object
   
   @js.native
   sealed trait stretch extends Alignment
@@ -1097,40 +1122,46 @@ object officeUiFabricReactStrings {
   sealed trait successBackground extends js.Object
   
   @js.native
-  sealed trait suggestionsAvailable_49a432f4 extends js.Object
+  sealed trait suggestionsAvailable_fb873249 extends js.Object
   
   @js.native
-  sealed trait suggestionsContainer_3d4990af extends js.Object
+  sealed trait suggestionsContainer_55294644 extends js.Object
   
   @js.native
-  sealed trait suggestionsContainer_49a432f4 extends js.Object
+  sealed trait suggestionsContainer_fb873249 extends js.Object
   
   @js.native
-  sealed trait suggestionsItemIsSuggested_49a432f4 extends js.Object
+  sealed trait suggestionsItemIsSuggested_fb873249 extends js.Object
   
   @js.native
-  sealed trait suggestionsItem_49a432f4 extends js.Object
+  sealed trait suggestionsItem_fb873249 extends js.Object
   
   @js.native
-  sealed trait suggestionsNone_49a432f4 extends js.Object
+  sealed trait suggestionsNone_fb873249 extends js.Object
   
   @js.native
-  sealed trait suggestionsSpinner_12a6a499 extends js.Object
+  sealed trait suggestionsSpinner_074a25cc extends js.Object
   
   @js.native
-  sealed trait suggestionsSpinner_49a432f4 extends js.Object
+  sealed trait suggestionsSpinner_fb873249 extends js.Object
   
   @js.native
-  sealed trait suggestionsTitle_12a6a499 extends js.Object
+  sealed trait suggestionsTitle_074a25cc extends js.Object
   
   @js.native
-  sealed trait suggestionsTitle_49a432f4 extends js.Object
+  sealed trait suggestionsTitle_fb873249 extends js.Object
+  
+  @js.native
+  sealed trait superLarge extends js.Object
   
   @js.native
   sealed trait switch extends js.Object
   
   @js.native
-  sealed trait table_d7ec3e0f extends js.Object
+  sealed trait t extends ColorComponent
+  
+  @js.native
+  sealed trait table_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait teal extends js.Object
@@ -1181,19 +1212,25 @@ object officeUiFabricReactStrings {
   sealed trait time extends js.Object
   
   @js.native
-  sealed trait toggleMonthView_d7ec3e0f extends js.Object
+  sealed trait tiny extends js.Object
+  
+  @js.native
+  sealed trait toggleMonthView_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait top extends SpinnerLabelPosition
   
   @js.native
-  sealed trait topDate_d7ec3e0f extends js.Object
+  sealed trait topDate_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait topLeftCornerDate_d7ec3e0f extends js.Object
+  sealed trait topLeftCornerDate_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait topRightCornerDate_d7ec3e0f extends js.Object
+  sealed trait topRightCornerDate_9e7c2b3e extends js.Object
+  
+  @js.native
+  sealed trait transparency extends js.Object
   
   @js.native
   sealed trait tree extends js.Object
@@ -1214,13 +1251,13 @@ object officeUiFabricReactStrings {
   sealed trait url extends js.Object
   
   @js.native
-  sealed trait validationError_0374adf6 extends js.Object
+  sealed trait validationError_02c5c75d extends js.Object
   
   @js.native
-  sealed trait validationError_45c5e011 extends js.Object
+  sealed trait validationError_6003188c extends js.Object
   
   @js.native
-  sealed trait validationError_b2201782 extends js.Object
+  sealed trait validationError_70359137 extends js.Object
   
   @js.native
   sealed trait variantBorder extends js.Object
@@ -1246,19 +1283,19 @@ object officeUiFabricReactStrings {
   sealed trait warningHighlight extends js.Object
   
   @js.native
-  sealed trait weekBackground_d7ec3e0f extends js.Object
+  sealed trait weekBackground_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait weekIsHighlighted_d7ec3e0f extends js.Object
+  sealed trait weekIsHighlighted_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait weekNumbers_d7ec3e0f extends js.Object
+  sealed trait weekNumbers_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait weekSelection_d7ec3e0f extends js.Object
+  sealed trait weekSelection_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait weekday_d7ec3e0f extends js.Object
+  sealed trait weekday_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait white extends js.Object
@@ -1267,28 +1304,43 @@ object officeUiFabricReactStrings {
   sealed trait whiteTranslucent40 extends js.Object
   
   @js.native
-  sealed trait wrap_d7ec3e0f extends js.Object
+  sealed trait wrap_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait yearComponents_d7ec3e0f extends js.Object
+  sealed trait xLarge extends js.Object
   
   @js.native
-  sealed trait yearIsCurrentYear_d7ec3e0f extends js.Object
+  sealed trait xLargePlus extends js.Object
   
   @js.native
-  sealed trait yearIsHighlighted_d7ec3e0f extends js.Object
+  sealed trait xSmall extends js.Object
   
   @js.native
-  sealed trait yearOptionIsDisabled_d7ec3e0f extends js.Object
+  sealed trait xxLarge extends js.Object
   
   @js.native
-  sealed trait yearOption_d7ec3e0f extends js.Object
+  sealed trait xxLargePlus extends js.Object
   
   @js.native
-  sealed trait yearPicker_d7ec3e0f extends js.Object
+  sealed trait yearComponents_9e7c2b3e extends js.Object
   
   @js.native
-  sealed trait year_d7ec3e0f extends js.Object
+  sealed trait yearIsCurrentYear_9e7c2b3e extends js.Object
+  
+  @js.native
+  sealed trait yearIsHighlighted_9e7c2b3e extends js.Object
+  
+  @js.native
+  sealed trait yearOptionIsDisabled_9e7c2b3e extends js.Object
+  
+  @js.native
+  sealed trait yearOption_9e7c2b3e extends js.Object
+  
+  @js.native
+  sealed trait yearPicker_9e7c2b3e extends js.Object
+  
+  @js.native
+  sealed trait year_9e7c2b3e extends js.Object
   
   @js.native
   sealed trait yellow extends js.Object
@@ -1335,13 +1387,13 @@ object officeUiFabricReactStrings {
   @scala.inline
   def `8px`: `8px` = "8px".asInstanceOf[`8px`]
   @scala.inline
-  def `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis`: `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis` = "@media screen and (-ms-high-contrast: active)".asInstanceOf[`@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis`]
+  def `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis`: `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis` = ("@media screen and (-ms-high-contrast: active)").asInstanceOf[`@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis`]
   @scala.inline
-  def `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis`: `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis` = "@media screen and (-ms-high-contrast: black-on-white)".asInstanceOf[`@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis`]
+  def `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis`: `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis` = ("@media screen and (-ms-high-contrast: black-on-white)").asInstanceOf[`@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis`]
   @scala.inline
-  def `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis`: `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis` = "@media screen and (-ms-high-contrast: white-on-black)".asInstanceOf[`@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis`]
+  def `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis`: `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis` = ("@media screen and (-ms-high-contrast: white-on-black)").asInstanceOf[`@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis`]
   @scala.inline
-  def `Comma `: `Comma ` = ", ".asInstanceOf[`Comma `]
+  def `Comma `: `Comma ` = (", ").asInstanceOf[`Comma `]
   @scala.inline
   def Components: Components = "Components".asInstanceOf[Components]
   @scala.inline
@@ -1365,17 +1417,19 @@ object officeUiFabricReactStrings {
   @scala.inline
   def accentButtonBackground: accentButtonBackground = "accentButtonBackground".asInstanceOf[accentButtonBackground]
   @scala.inline
-  def actionButton_0374adf6: actionButton_0374adf6 = "actionButton_0374adf6".asInstanceOf[actionButton_0374adf6]
+  def actionButton_074a25cc: actionButton_074a25cc = "actionButton_074a25cc".asInstanceOf[actionButton_074a25cc]
   @scala.inline
-  def actionButton_12a6a499: actionButton_12a6a499 = "actionButton_12a6a499".asInstanceOf[actionButton_12a6a499]
+  def actionButton_6003188c: actionButton_6003188c = "actionButton_6003188c".asInstanceOf[actionButton_6003188c]
   @scala.inline
-  def actionButton_49a432f4: actionButton_49a432f4 = "actionButton_49a432f4".asInstanceOf[actionButton_49a432f4]
+  def actionButton_fb873249: actionButton_fb873249 = "actionButton_fb873249".asInstanceOf[actionButton_fb873249]
   @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline
-  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def alpha: alpha = "alpha".asInstanceOf[alpha]
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   @scala.inline
@@ -1427,11 +1481,11 @@ object officeUiFabricReactStrings {
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
-  def bottomDate_d7ec3e0f: bottomDate_d7ec3e0f = "bottomDate_d7ec3e0f".asInstanceOf[bottomDate_d7ec3e0f]
+  def bottomDate_9e7c2b3e: bottomDate_9e7c2b3e = "bottomDate_9e7c2b3e".asInstanceOf[bottomDate_9e7c2b3e]
   @scala.inline
-  def bottomLeftCornerDate_d7ec3e0f: bottomLeftCornerDate_d7ec3e0f = "bottomLeftCornerDate_d7ec3e0f".asInstanceOf[bottomLeftCornerDate_d7ec3e0f]
+  def bottomLeftCornerDate_9e7c2b3e: bottomLeftCornerDate_9e7c2b3e = "bottomLeftCornerDate_9e7c2b3e".asInstanceOf[bottomLeftCornerDate_9e7c2b3e]
   @scala.inline
-  def bottomRightCornerDate_d7ec3e0f: bottomRightCornerDate_d7ec3e0f = "bottomRightCornerDate_d7ec3e0f".asInstanceOf[bottomRightCornerDate_d7ec3e0f]
+  def bottomRightCornerDate_9e7c2b3e: bottomRightCornerDate_9e7c2b3e = "bottomRightCornerDate_9e7c2b3e".asInstanceOf[bottomRightCornerDate_9e7c2b3e]
   @scala.inline
   def buildClassMap: buildClassMap = "buildClassMap".asInstanceOf[buildClassMap]
   @scala.inline
@@ -1453,39 +1507,39 @@ object officeUiFabricReactStrings {
   @scala.inline
   def buttonBorderDisabled: buttonBorderDisabled = "buttonBorderDisabled".asInstanceOf[buttonBorderDisabled]
   @scala.inline
-  def buttonSelected_12a6a499: buttonSelected_12a6a499 = "buttonSelected_12a6a499".asInstanceOf[buttonSelected_12a6a499]
+  def buttonSelected_074a25cc: buttonSelected_074a25cc = "buttonSelected_074a25cc".asInstanceOf[buttonSelected_074a25cc]
   @scala.inline
-  def buttonSelected_49a432f4: buttonSelected_49a432f4 = "buttonSelected_49a432f4".asInstanceOf[buttonSelected_49a432f4]
+  def buttonSelected_fb873249: buttonSelected_fb873249 = "buttonSelected_fb873249".asInstanceOf[buttonSelected_fb873249]
   @scala.inline
-  def calendarsInline_d7ec3e0f: calendarsInline_d7ec3e0f = "calendarsInline_d7ec3e0f".asInstanceOf[calendarsInline_d7ec3e0f]
+  def calendarsInline_9e7c2b3e: calendarsInline_9e7c2b3e = "calendarsInline_9e7c2b3e".asInstanceOf[calendarsInline_9e7c2b3e]
   @scala.inline
-  def callout_8212a800: callout_8212a800 = "callout_8212a800".asInstanceOf[callout_8212a800]
+  def callout_3bf61a4d: callout_3bf61a4d = "callout_3bf61a4d".asInstanceOf[callout_3bf61a4d]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
-  def checkHost_f68c3f5b: checkHost_f68c3f5b = "checkHost_f68c3f5b".asInstanceOf[checkHost_f68c3f5b]
+  def checkHost_30802d6f: checkHost_30802d6f = "checkHost_30802d6f".asInstanceOf[checkHost_30802d6f]
   @scala.inline
-  def check_f68c3f5b: check_f68c3f5b = "check_f68c3f5b".asInstanceOf[check_f68c3f5b]
+  def check_30802d6f: check_30802d6f = "check_30802d6f".asInstanceOf[check_30802d6f]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
-  def circle_f68c3f5b: circle_f68c3f5b = "circle_f68c3f5b".asInstanceOf[circle_f68c3f5b]
+  def circle_30802d6f: circle_30802d6f = "circle_30802d6f".asInstanceOf[circle_30802d6f]
   @scala.inline
   def `class`: `class` = "class".asInstanceOf[`class`]
   @scala.inline
-  def closeButton_49a432f4: closeButton_49a432f4 = "closeButton_49a432f4".asInstanceOf[closeButton_49a432f4]
+  def closeButton_9e7c2b3e: closeButton_9e7c2b3e = "closeButton_9e7c2b3e".asInstanceOf[closeButton_9e7c2b3e]
   @scala.inline
-  def closeButton_d7ec3e0f: closeButton_d7ec3e0f = "closeButton_d7ec3e0f".asInstanceOf[closeButton_d7ec3e0f]
+  def closeButton_fb873249: closeButton_fb873249 = "closeButton_fb873249".asInstanceOf[closeButton_fb873249]
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
-  def currentDecade_d7ec3e0f: currentDecade_d7ec3e0f = "currentDecade_d7ec3e0f".asInstanceOf[currentDecade_d7ec3e0f]
+  def currentDecade_9e7c2b3e: currentDecade_9e7c2b3e = "currentDecade_9e7c2b3e".asInstanceOf[currentDecade_9e7c2b3e]
   @scala.inline
-  def currentYear_d7ec3e0f: currentYear_d7ec3e0f = "currentYear_d7ec3e0f".asInstanceOf[currentYear_d7ec3e0f]
+  def currentYear_9e7c2b3e: currentYear_9e7c2b3e = "currentYear_9e7c2b3e".asInstanceOf[currentYear_9e7c2b3e]
   @scala.inline
   def `data-coachmarkid`: `data-coachmarkid` = "data-coachmarkid".asInstanceOf[`data-coachmarkid`]
   @scala.inline
@@ -1503,35 +1557,35 @@ object officeUiFabricReactStrings {
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
-  def dayBackground_d7ec3e0f: dayBackground_d7ec3e0f = "dayBackground_d7ec3e0f".asInstanceOf[dayBackground_d7ec3e0f]
+  def dayBackground_9e7c2b3e: dayBackground_9e7c2b3e = "dayBackground_9e7c2b3e".asInstanceOf[dayBackground_9e7c2b3e]
   @scala.inline
-  def dayDisabled_d7ec3e0f: dayDisabled_d7ec3e0f = "dayDisabled_d7ec3e0f".asInstanceOf[dayDisabled_d7ec3e0f]
+  def dayDisabled_9e7c2b3e: dayDisabled_9e7c2b3e = "dayDisabled_9e7c2b3e".asInstanceOf[dayDisabled_9e7c2b3e]
   @scala.inline
-  def dayHover_d7ec3e0f: dayHover_d7ec3e0f = "dayHover_d7ec3e0f".asInstanceOf[dayHover_d7ec3e0f]
+  def dayHover_9e7c2b3e: dayHover_9e7c2b3e = "dayHover_9e7c2b3e".asInstanceOf[dayHover_9e7c2b3e]
   @scala.inline
-  def dayIsDisabled_d7ec3e0f: dayIsDisabled_d7ec3e0f = "dayIsDisabled_d7ec3e0f".asInstanceOf[dayIsDisabled_d7ec3e0f]
+  def dayIsDisabled_9e7c2b3e: dayIsDisabled_9e7c2b3e = "dayIsDisabled_9e7c2b3e".asInstanceOf[dayIsDisabled_9e7c2b3e]
   @scala.inline
-  def dayIsFocused_d7ec3e0f: dayIsFocused_d7ec3e0f = "dayIsFocused_d7ec3e0f".asInstanceOf[dayIsFocused_d7ec3e0f]
+  def dayIsFocused_9e7c2b3e: dayIsFocused_9e7c2b3e = "dayIsFocused_9e7c2b3e".asInstanceOf[dayIsFocused_9e7c2b3e]
   @scala.inline
-  def dayIsHighlighted_d7ec3e0f: dayIsHighlighted_d7ec3e0f = "dayIsHighlighted_d7ec3e0f".asInstanceOf[dayIsHighlighted_d7ec3e0f]
+  def dayIsHighlighted_9e7c2b3e: dayIsHighlighted_9e7c2b3e = "dayIsHighlighted_9e7c2b3e".asInstanceOf[dayIsHighlighted_9e7c2b3e]
   @scala.inline
-  def dayIsToday_d7ec3e0f: dayIsToday_d7ec3e0f = "dayIsToday_d7ec3e0f".asInstanceOf[dayIsToday_d7ec3e0f]
+  def dayIsToday_9e7c2b3e: dayIsToday_9e7c2b3e = "dayIsToday_9e7c2b3e".asInstanceOf[dayIsToday_9e7c2b3e]
   @scala.inline
-  def dayIsUnfocused_d7ec3e0f: dayIsUnfocused_d7ec3e0f = "dayIsUnfocused_d7ec3e0f".asInstanceOf[dayIsUnfocused_d7ec3e0f]
+  def dayIsUnfocused_9e7c2b3e: dayIsUnfocused_9e7c2b3e = "dayIsUnfocused_9e7c2b3e".asInstanceOf[dayIsUnfocused_9e7c2b3e]
   @scala.inline
-  def dayPicker_d7ec3e0f: dayPicker_d7ec3e0f = "dayPicker_d7ec3e0f".asInstanceOf[dayPicker_d7ec3e0f]
+  def dayPicker_9e7c2b3e: dayPicker_9e7c2b3e = "dayPicker_9e7c2b3e".asInstanceOf[dayPicker_9e7c2b3e]
   @scala.inline
-  def dayPress_d7ec3e0f: dayPress_d7ec3e0f = "dayPress_d7ec3e0f".asInstanceOf[dayPress_d7ec3e0f]
+  def dayPress_9e7c2b3e: dayPress_9e7c2b3e = "dayPress_9e7c2b3e".asInstanceOf[dayPress_9e7c2b3e]
   @scala.inline
-  def daySelection_d7ec3e0f: daySelection_d7ec3e0f = "daySelection_d7ec3e0f".asInstanceOf[daySelection_d7ec3e0f]
+  def daySelection_9e7c2b3e: daySelection_9e7c2b3e = "daySelection_9e7c2b3e".asInstanceOf[daySelection_9e7c2b3e]
   @scala.inline
-  def dayWrapper_d7ec3e0f: dayWrapper_d7ec3e0f = "dayWrapper_d7ec3e0f".asInstanceOf[dayWrapper_d7ec3e0f]
+  def dayWrapper_9e7c2b3e: dayWrapper_9e7c2b3e = "dayWrapper_9e7c2b3e".asInstanceOf[dayWrapper_9e7c2b3e]
   @scala.inline
-  def day_d7ec3e0f: day_d7ec3e0f = "day_d7ec3e0f".asInstanceOf[day_d7ec3e0f]
+  def day_9e7c2b3e: day_9e7c2b3e = "day_9e7c2b3e".asInstanceOf[day_9e7c2b3e]
   @scala.inline
-  def decadeComponents_d7ec3e0f: decadeComponents_d7ec3e0f = "decadeComponents_d7ec3e0f".asInstanceOf[decadeComponents_d7ec3e0f]
+  def decadeComponents_9e7c2b3e: decadeComponents_9e7c2b3e = "decadeComponents_9e7c2b3e".asInstanceOf[decadeComponents_9e7c2b3e]
   @scala.inline
-  def decade_d7ec3e0f: decade_d7ec3e0f = "decade_d7ec3e0f".asInstanceOf[decade_d7ec3e0f]
+  def decade_9e7c2b3e: decade_9e7c2b3e = "decade_9e7c2b3e".asInstanceOf[decade_9e7c2b3e]
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
@@ -1547,11 +1601,11 @@ object officeUiFabricReactStrings {
   @scala.inline
   def disabledBorder: disabledBorder = "disabledBorder".asInstanceOf[disabledBorder]
   @scala.inline
-  def divider_d7ec3e0f: divider_d7ec3e0f = "divider_d7ec3e0f".asInstanceOf[divider_d7ec3e0f]
+  def divider_9e7c2b3e: divider_9e7c2b3e = "divider_9e7c2b3e".asInstanceOf[divider_9e7c2b3e]
   @scala.inline
-  def editingContainer_7dfbc845: editingContainer_7dfbc845 = "editingContainer_7dfbc845".asInstanceOf[editingContainer_7dfbc845]
+  def editingContainer_65f7d974: editingContainer_65f7d974 = "editingContainer_65f7d974".asInstanceOf[editingContainer_65f7d974]
   @scala.inline
-  def editingInput_7dfbc845: editingInput_7dfbc845 = "editingInput_7dfbc845".asInstanceOf[editingInput_7dfbc845]
+  def editingInput_65f7d974: editingInput_65f7d974 = "editingInput_65f7d974".asInstanceOf[editingInput_65f7d974]
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   @scala.inline
@@ -1567,23 +1621,23 @@ object officeUiFabricReactStrings {
   @scala.inline
   def exitKeytipMode: exitKeytipMode = "exitKeytipMode".asInstanceOf[exitKeytipMode]
   @scala.inline
-  def expandButton_0374adf6: expandButton_0374adf6 = "expandButton_0374adf6".asInstanceOf[expandButton_0374adf6]
+  def expandButton_6003188c: expandButton_6003188c = "expandButton_6003188c".asInstanceOf[expandButton_6003188c]
   @scala.inline
   def extendComponent: extendComponent = "extendComponent".asInstanceOf[extendComponent]
   @scala.inline
   def focusBorder: focusBorder = "focusBorder".asInstanceOf[focusBorder]
   @scala.inline
-  def frame_d7ec3e0f: frame_d7ec3e0f = "frame_d7ec3e0f".asInstanceOf[frame_d7ec3e0f]
+  def frame_9e7c2b3e: frame_9e7c2b3e = "frame_9e7c2b3e".asInstanceOf[frame_9e7c2b3e]
   @scala.inline
   def g: g = "g".asInstanceOf[g]
   @scala.inline
-  def goToTodayIsDisabled_d7ec3e0f: goToTodayIsDisabled_d7ec3e0f = "goToTodayIsDisabled_d7ec3e0f".asInstanceOf[goToTodayIsDisabled_d7ec3e0f]
+  def goToTodayIsDisabled_9e7c2b3e: goToTodayIsDisabled_9e7c2b3e = "goToTodayIsDisabled_9e7c2b3e".asInstanceOf[goToTodayIsDisabled_9e7c2b3e]
   @scala.inline
-  def goTodayInlineMonth_d7ec3e0f: goTodayInlineMonth_d7ec3e0f = "goTodayInlineMonth_d7ec3e0f".asInstanceOf[goTodayInlineMonth_d7ec3e0f]
+  def goTodayInlineMonth_9e7c2b3e: goTodayInlineMonth_9e7c2b3e = "goTodayInlineMonth_9e7c2b3e".asInstanceOf[goTodayInlineMonth_9e7c2b3e]
   @scala.inline
-  def goTodaySpacing_d7ec3e0f: goTodaySpacing_d7ec3e0f = "goTodaySpacing_d7ec3e0f".asInstanceOf[goTodaySpacing_d7ec3e0f]
+  def goTodaySpacing_9e7c2b3e: goTodaySpacing_9e7c2b3e = "goTodaySpacing_9e7c2b3e".asInstanceOf[goTodaySpacing_9e7c2b3e]
   @scala.inline
-  def goToday_d7ec3e0f: goToday_d7ec3e0f = "goToday_d7ec3e0f".asInstanceOf[goToday_d7ec3e0f]
+  def goToday_9e7c2b3e: goToday_9e7c2b3e = "goToday_9e7c2b3e".asInstanceOf[goToday_9e7c2b3e]
   @scala.inline
   def grammar: grammar = "grammar".asInstanceOf[grammar]
   @scala.inline
@@ -1609,23 +1663,25 @@ object officeUiFabricReactStrings {
   @scala.inline
   def h6: h6 = "h6".asInstanceOf[h6]
   @scala.inline
-  def headerToggleView_d7ec3e0f: headerToggleView_d7ec3e0f = "headerToggleView_d7ec3e0f".asInstanceOf[headerToggleView_d7ec3e0f]
+  def headerToggleView_9e7c2b3e: headerToggleView_9e7c2b3e = "headerToggleView_9e7c2b3e".asInstanceOf[headerToggleView_9e7c2b3e]
   @scala.inline
-  def header_d7ec3e0f: header_d7ec3e0f = "header_d7ec3e0f".asInstanceOf[header_d7ec3e0f]
+  def header_9e7c2b3e: header_9e7c2b3e = "header_9e7c2b3e".asInstanceOf[header_9e7c2b3e]
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
-  def holderWithButton_d7ec3e0f: holderWithButton_d7ec3e0f = "holderWithButton_d7ec3e0f".asInstanceOf[holderWithButton_d7ec3e0f]
+  def holderWithButton_9e7c2b3e: holderWithButton_9e7c2b3e = "holderWithButton_9e7c2b3e".asInstanceOf[holderWithButton_9e7c2b3e]
   @scala.inline
-  def holder_d7ec3e0f: holder_d7ec3e0f = "holder_d7ec3e0f".asInstanceOf[holder_d7ec3e0f]
+  def holder_9e7c2b3e: holder_9e7c2b3e = "holder_9e7c2b3e".asInstanceOf[holder_9e7c2b3e]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
-  def hover_0374adf6: hover_0374adf6 = "hover_0374adf6".asInstanceOf[hover_0374adf6]
+  def hover_6003188c: hover_6003188c = "hover_6003188c".asInstanceOf[hover_6003188c]
   @scala.inline
-  def iconContainer_2b33d641: iconContainer_2b33d641 = "iconContainer_2b33d641".asInstanceOf[iconContainer_2b33d641]
+  def hue: hue = "hue".asInstanceOf[hue]
+  @scala.inline
+  def iconContainer_3597e730: iconContainer_3597e730 = "iconContainer_3597e730".asInstanceOf[iconContainer_3597e730]
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
@@ -1645,7 +1701,7 @@ object officeUiFabricReactStrings {
   @scala.inline
   def inputFocusBorderAlt: inputFocusBorderAlt = "inputFocusBorderAlt".asInstanceOf[inputFocusBorderAlt]
   @scala.inline
-  def inputFocused_19684fdb: inputFocused_19684fdb = "inputFocused_19684fdb".asInstanceOf[inputFocused_19684fdb]
+  def inputFocused_46086680: inputFocused_46086680 = "inputFocused_46086680".asInstanceOf[inputFocused_46086680]
   @scala.inline
   def inputForegroundChecked: inputForegroundChecked = "inputForegroundChecked".asInstanceOf[inputForegroundChecked]
   @scala.inline
@@ -1659,27 +1715,27 @@ object officeUiFabricReactStrings {
   @scala.inline
   def interface: interface = "interface".asInstanceOf[interface]
   @scala.inline
-  def isHighlighted_d7ec3e0f: isHighlighted_d7ec3e0f = "isHighlighted_d7ec3e0f".asInstanceOf[isHighlighted_d7ec3e0f]
+  def isHighlighted_9e7c2b3e: isHighlighted_9e7c2b3e = "isHighlighted_9e7c2b3e".asInstanceOf[isHighlighted_9e7c2b3e]
   @scala.inline
-  def isPickingYears_d7ec3e0f: isPickingYears_d7ec3e0f = "isPickingYears_d7ec3e0f".asInstanceOf[isPickingYears_d7ec3e0f]
+  def isPickingYears_9e7c2b3e: isPickingYears_9e7c2b3e = "isPickingYears_9e7c2b3e".asInstanceOf[isPickingYears_9e7c2b3e]
   @scala.inline
-  def itemButton_12a6a499: itemButton_12a6a499 = "itemButton_12a6a499".asInstanceOf[itemButton_12a6a499]
+  def itemButton_074a25cc: itemButton_074a25cc = "itemButton_074a25cc".asInstanceOf[itemButton_074a25cc]
   @scala.inline
-  def itemButton_49a432f4: itemButton_49a432f4 = "itemButton_49a432f4".asInstanceOf[itemButton_49a432f4]
+  def itemButton_fb873249: itemButton_fb873249 = "itemButton_fb873249".asInstanceOf[itemButton_fb873249]
   @scala.inline
-  def itemContainer_0374adf6: itemContainer_0374adf6 = "itemContainer_0374adf6".asInstanceOf[itemContainer_0374adf6]
+  def itemContainer_02c5c75d: itemContainer_02c5c75d = "itemContainer_02c5c75d".asInstanceOf[itemContainer_02c5c75d]
   @scala.inline
-  def itemContainer_45c5e011: itemContainer_45c5e011 = "itemContainer_45c5e011".asInstanceOf[itemContainer_45c5e011]
+  def itemContainer_6003188c: itemContainer_6003188c = "itemContainer_6003188c".asInstanceOf[itemContainer_6003188c]
   @scala.inline
-  def itemContainer_b2201782: itemContainer_b2201782 = "itemContainer_b2201782".asInstanceOf[itemContainer_b2201782]
+  def itemContainer_70359137: itemContainer_70359137 = "itemContainer_70359137".asInstanceOf[itemContainer_70359137]
   @scala.inline
-  def itemContent_0374adf6: itemContent_0374adf6 = "itemContent_0374adf6".asInstanceOf[itemContent_0374adf6]
+  def itemContent_02c5c75d: itemContent_02c5c75d = "itemContent_02c5c75d".asInstanceOf[itemContent_02c5c75d]
   @scala.inline
-  def itemContent_45c5e011: itemContent_45c5e011 = "itemContent_45c5e011".asInstanceOf[itemContent_45c5e011]
+  def itemContent_6003188c: itemContent_6003188c = "itemContent_6003188c".asInstanceOf[itemContent_6003188c]
   @scala.inline
-  def itemContent_b2201782: itemContent_b2201782 = "itemContent_b2201782".asInstanceOf[itemContent_b2201782]
+  def itemContent_70359137: itemContent_70359137 = "itemContent_70359137".asInstanceOf[itemContent_70359137]
   @scala.inline
-  def item_1a34f243: item_1a34f243 = "item_1a34f243".asInstanceOf[item_1a34f243]
+  def item_b4bf9717: item_b4bf9717 = "item_b4bf9717".asInstanceOf[item_b4bf9717]
   @scala.inline
   def keytipAdded: keytipAdded = "keytipAdded".asInstanceOf[keytipAdded]
   @scala.inline
@@ -1693,9 +1749,11 @@ object officeUiFabricReactStrings {
   @scala.inline
   def `ktp-layer-id`: `ktp-layer-id` = "ktp-layer-id".asInstanceOf[`ktp-layer-id`]
   @scala.inline
+  def large: large = "large".asInstanceOf[large]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
-  def leftdate_d7ec3e0f: leftdate_d7ec3e0f = "leftdate_d7ec3e0f".asInstanceOf[leftdate_d7ec3e0f]
+  def leftdate_9e7c2b3e: leftdate_9e7c2b3e = "leftdate_9e7c2b3e".asInstanceOf[leftdate_9e7c2b3e]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
@@ -1719,9 +1777,9 @@ object officeUiFabricReactStrings {
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   @scala.inline
-  def logoFillIcon_2b33d641: logoFillIcon_2b33d641 = "logoFillIcon_2b33d641".asInstanceOf[logoFillIcon_2b33d641]
+  def logoFillIcon_3597e730: logoFillIcon_3597e730 = "logoFillIcon_3597e730".asInstanceOf[logoFillIcon_3597e730]
   @scala.inline
-  def logoIcon_2b33d641: logoIcon_2b33d641 = "logoIcon_2b33d641".asInstanceOf[logoIcon_2b33d641]
+  def logoIcon_3597e730: logoIcon_3597e730 = "logoIcon_3597e730".asInstanceOf[logoIcon_3597e730]
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
@@ -1730,6 +1788,12 @@ object officeUiFabricReactStrings {
   def magentaDark: magentaDark = "magentaDark".asInstanceOf[magentaDark]
   @scala.inline
   def magentaLight: magentaLight = "magentaLight".asInstanceOf[magentaLight]
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
+  def mediumPlus: mediumPlus = "mediumPlus".asInstanceOf[mediumPlus]
+  @scala.inline
+  def mega: mega = "mega".asInstanceOf[mega]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
@@ -1757,27 +1821,27 @@ object officeUiFabricReactStrings {
   @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
-  def monthAndYear_d7ec3e0f: monthAndYear_d7ec3e0f = "monthAndYear_d7ec3e0f".asInstanceOf[monthAndYear_d7ec3e0f]
+  def monthAndYear_9e7c2b3e: monthAndYear_9e7c2b3e = "monthAndYear_9e7c2b3e".asInstanceOf[monthAndYear_9e7c2b3e]
   @scala.inline
-  def monthComponents_d7ec3e0f: monthComponents_d7ec3e0f = "monthComponents_d7ec3e0f".asInstanceOf[monthComponents_d7ec3e0f]
+  def monthComponents_9e7c2b3e: monthComponents_9e7c2b3e = "monthComponents_9e7c2b3e".asInstanceOf[monthComponents_9e7c2b3e]
   @scala.inline
-  def monthIsCurrentMonth_d7ec3e0f: monthIsCurrentMonth_d7ec3e0f = "monthIsCurrentMonth_d7ec3e0f".asInstanceOf[monthIsCurrentMonth_d7ec3e0f]
+  def monthIsCurrentMonth_9e7c2b3e: monthIsCurrentMonth_9e7c2b3e = "monthIsCurrentMonth_9e7c2b3e".asInstanceOf[monthIsCurrentMonth_9e7c2b3e]
   @scala.inline
-  def monthIsHighlighted_d7ec3e0f: monthIsHighlighted_d7ec3e0f = "monthIsHighlighted_d7ec3e0f".asInstanceOf[monthIsHighlighted_d7ec3e0f]
+  def monthIsHighlighted_9e7c2b3e: monthIsHighlighted_9e7c2b3e = "monthIsHighlighted_9e7c2b3e".asInstanceOf[monthIsHighlighted_9e7c2b3e]
   @scala.inline
-  def monthOptionIsDisabled_d7ec3e0f: monthOptionIsDisabled_d7ec3e0f = "monthOptionIsDisabled_d7ec3e0f".asInstanceOf[monthOptionIsDisabled_d7ec3e0f]
+  def monthOptionIsDisabled_9e7c2b3e: monthOptionIsDisabled_9e7c2b3e = "monthOptionIsDisabled_9e7c2b3e".asInstanceOf[monthOptionIsDisabled_9e7c2b3e]
   @scala.inline
-  def monthOption_d7ec3e0f: monthOption_d7ec3e0f = "monthOption_d7ec3e0f".asInstanceOf[monthOption_d7ec3e0f]
+  def monthOption_9e7c2b3e: monthOption_9e7c2b3e = "monthOption_9e7c2b3e".asInstanceOf[monthOption_9e7c2b3e]
   @scala.inline
-  def monthPickerAsOverlay_d7ec3e0f: monthPickerAsOverlay_d7ec3e0f = "monthPickerAsOverlay_d7ec3e0f".asInstanceOf[monthPickerAsOverlay_d7ec3e0f]
+  def monthPickerAsOverlay_9e7c2b3e: monthPickerAsOverlay_9e7c2b3e = "monthPickerAsOverlay_9e7c2b3e".asInstanceOf[monthPickerAsOverlay_9e7c2b3e]
   @scala.inline
-  def monthPickerOnly_d7ec3e0f: monthPickerOnly_d7ec3e0f = "monthPickerOnly_d7ec3e0f".asInstanceOf[monthPickerOnly_d7ec3e0f]
+  def monthPickerOnly_9e7c2b3e: monthPickerOnly_9e7c2b3e = "monthPickerOnly_9e7c2b3e".asInstanceOf[monthPickerOnly_9e7c2b3e]
   @scala.inline
-  def monthPickerVisible_d7ec3e0f: monthPickerVisible_d7ec3e0f = "monthPickerVisible_d7ec3e0f".asInstanceOf[monthPickerVisible_d7ec3e0f]
+  def monthPickerVisible_9e7c2b3e: monthPickerVisible_9e7c2b3e = "monthPickerVisible_9e7c2b3e".asInstanceOf[monthPickerVisible_9e7c2b3e]
   @scala.inline
-  def monthPicker_d7ec3e0f: monthPicker_d7ec3e0f = "monthPicker_d7ec3e0f".asInstanceOf[monthPicker_d7ec3e0f]
+  def monthPicker_9e7c2b3e: monthPicker_9e7c2b3e = "monthPicker_9e7c2b3e".asInstanceOf[monthPicker_9e7c2b3e]
   @scala.inline
-  def monthSelection_d7ec3e0f: monthSelection_d7ec3e0f = "monthSelection_d7ec3e0f".asInstanceOf[monthSelection_d7ec3e0f]
+  def monthSelection_9e7c2b3e: monthSelection_9e7c2b3e = "monthSelection_9e7c2b3e".asInstanceOf[monthSelection_9e7c2b3e]
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   @scala.inline
@@ -1809,17 +1873,17 @@ object officeUiFabricReactStrings {
   @scala.inline
   def neutralTertiaryAlt: neutralTertiaryAlt = "neutralTertiaryAlt".asInstanceOf[neutralTertiaryAlt]
   @scala.inline
-  def nextDecadeIsDisabled_d7ec3e0f: nextDecadeIsDisabled_d7ec3e0f = "nextDecadeIsDisabled_d7ec3e0f".asInstanceOf[nextDecadeIsDisabled_d7ec3e0f]
+  def nextDecadeIsDisabled_9e7c2b3e: nextDecadeIsDisabled_9e7c2b3e = "nextDecadeIsDisabled_9e7c2b3e".asInstanceOf[nextDecadeIsDisabled_9e7c2b3e]
   @scala.inline
-  def nextDecade_d7ec3e0f: nextDecade_d7ec3e0f = "nextDecade_d7ec3e0f".asInstanceOf[nextDecade_d7ec3e0f]
+  def nextDecade_9e7c2b3e: nextDecade_9e7c2b3e = "nextDecade_9e7c2b3e".asInstanceOf[nextDecade_9e7c2b3e]
   @scala.inline
-  def nextMonthIsDisabled_d7ec3e0f: nextMonthIsDisabled_d7ec3e0f = "nextMonthIsDisabled_d7ec3e0f".asInstanceOf[nextMonthIsDisabled_d7ec3e0f]
+  def nextMonthIsDisabled_9e7c2b3e: nextMonthIsDisabled_9e7c2b3e = "nextMonthIsDisabled_9e7c2b3e".asInstanceOf[nextMonthIsDisabled_9e7c2b3e]
   @scala.inline
-  def nextMonth_d7ec3e0f: nextMonth_d7ec3e0f = "nextMonth_d7ec3e0f".asInstanceOf[nextMonth_d7ec3e0f]
+  def nextMonth_9e7c2b3e: nextMonth_9e7c2b3e = "nextMonth_9e7c2b3e".asInstanceOf[nextMonth_9e7c2b3e]
   @scala.inline
-  def nextYearIsDisabled_d7ec3e0f: nextYearIsDisabled_d7ec3e0f = "nextYearIsDisabled_d7ec3e0f".asInstanceOf[nextYearIsDisabled_d7ec3e0f]
+  def nextYearIsDisabled_9e7c2b3e: nextYearIsDisabled_9e7c2b3e = "nextYearIsDisabled_9e7c2b3e".asInstanceOf[nextYearIsDisabled_9e7c2b3e]
   @scala.inline
-  def nextYear_d7ec3e0f: nextYear_d7ec3e0f = "nextYear_d7ec3e0f".asInstanceOf[nextYear_d7ec3e0f]
+  def nextYear_9e7c2b3e: nextYear_9e7c2b3e = "nextYear_9e7c2b3e".asInstanceOf[nextYear_9e7c2b3e]
   @scala.inline
   def no: no = "no".asInstanceOf[no]
   @scala.inline
@@ -1831,7 +1895,7 @@ object officeUiFabricReactStrings {
   @scala.inline
   def on: on = "on".asInstanceOf[on]
   @scala.inline
-  def optionGrid_d7ec3e0f: optionGrid_d7ec3e0f = "optionGrid_d7ec3e0f".asInstanceOf[optionGrid_d7ec3e0f]
+  def optionGrid_9e7c2b3e: optionGrid_9e7c2b3e = "optionGrid_9e7c2b3e".asInstanceOf[optionGrid_9e7c2b3e]
   @scala.inline
   def orange: orange = "orange".asInstanceOf[orange]
   @scala.inline
@@ -1843,21 +1907,21 @@ object officeUiFabricReactStrings {
   @scala.inline
   def page: page = "page".asInstanceOf[page]
   @scala.inline
-  def peoplePickerPersonaContent_be21407a: peoplePickerPersonaContent_be21407a = "peoplePickerPersonaContent_be21407a".asInstanceOf[peoplePickerPersonaContent_be21407a]
+  def peoplePickerPersonaContent_5805c930: peoplePickerPersonaContent_5805c930 = "peoplePickerPersonaContent_5805c930".asInstanceOf[peoplePickerPersonaContent_5805c930]
   @scala.inline
-  def peoplePickerPersonaContent_e5789002: peoplePickerPersonaContent_e5789002 = "peoplePickerPersonaContent_e5789002".asInstanceOf[peoplePickerPersonaContent_e5789002]
+  def peoplePickerPersonaContent_a75d8941: peoplePickerPersonaContent_a75d8941 = "peoplePickerPersonaContent_a75d8941".asInstanceOf[peoplePickerPersonaContent_a75d8941]
   @scala.inline
-  def peoplePickerPersonaContent_f536abdc: peoplePickerPersonaContent_f536abdc = "peoplePickerPersonaContent_f536abdc".asInstanceOf[peoplePickerPersonaContent_f536abdc]
+  def peoplePickerPersonaContent_c1ea5eea: peoplePickerPersonaContent_c1ea5eea = "peoplePickerPersonaContent_c1ea5eea".asInstanceOf[peoplePickerPersonaContent_c1ea5eea]
   @scala.inline
-  def peoplePickerPersona_be21407a: peoplePickerPersona_be21407a = "peoplePickerPersona_be21407a".asInstanceOf[peoplePickerPersona_be21407a]
+  def peoplePickerPersona_5805c930: peoplePickerPersona_5805c930 = "peoplePickerPersona_5805c930".asInstanceOf[peoplePickerPersona_5805c930]
   @scala.inline
-  def peoplePickerPersona_e5789002: peoplePickerPersona_e5789002 = "peoplePickerPersona_e5789002".asInstanceOf[peoplePickerPersona_e5789002]
+  def peoplePickerPersona_a75d8941: peoplePickerPersona_a75d8941 = "peoplePickerPersona_a75d8941".asInstanceOf[peoplePickerPersona_a75d8941]
   @scala.inline
-  def peoplePickerPersona_f536abdc: peoplePickerPersona_f536abdc = "peoplePickerPersona_f536abdc".asInstanceOf[peoplePickerPersona_f536abdc]
+  def peoplePickerPersona_c1ea5eea: peoplePickerPersona_c1ea5eea = "peoplePickerPersona_c1ea5eea".asInstanceOf[peoplePickerPersona_c1ea5eea]
   @scala.inline
-  def peoplePicker_be21407a: peoplePicker_be21407a = "peoplePicker_be21407a".asInstanceOf[peoplePicker_be21407a]
+  def peoplePicker_5805c930: peoplePicker_5805c930 = "peoplePicker_5805c930".asInstanceOf[peoplePicker_5805c930]
   @scala.inline
-  def peoplePicker_f536abdc: peoplePicker_f536abdc = "peoplePicker_f536abdc".asInstanceOf[peoplePicker_f536abdc]
+  def peoplePicker_c1ea5eea: peoplePicker_c1ea5eea = "peoplePicker_c1ea5eea".asInstanceOf[peoplePicker_c1ea5eea]
   @scala.inline
   def persistedKeytipAdded: persistedKeytipAdded = "persistedKeytipAdded".asInstanceOf[persistedKeytipAdded]
   @scala.inline
@@ -1865,57 +1929,57 @@ object officeUiFabricReactStrings {
   @scala.inline
   def persistedKeytipRemoved: persistedKeytipRemoved = "persistedKeytipRemoved".asInstanceOf[persistedKeytipRemoved]
   @scala.inline
-  def personaContainerIsSelected_0374adf6: personaContainerIsSelected_0374adf6 = "personaContainerIsSelected_0374adf6".asInstanceOf[personaContainerIsSelected_0374adf6]
+  def personaContainerIsSelected_02c5c75d: personaContainerIsSelected_02c5c75d = "personaContainerIsSelected_02c5c75d".asInstanceOf[personaContainerIsSelected_02c5c75d]
   @scala.inline
-  def personaContainerIsSelected_45c5e011: personaContainerIsSelected_45c5e011 = "personaContainerIsSelected_45c5e011".asInstanceOf[personaContainerIsSelected_45c5e011]
+  def personaContainerIsSelected_6003188c: personaContainerIsSelected_6003188c = "personaContainerIsSelected_6003188c".asInstanceOf[personaContainerIsSelected_6003188c]
   @scala.inline
-  def personaContainerIsSelected_b2201782: personaContainerIsSelected_b2201782 = "personaContainerIsSelected_b2201782".asInstanceOf[personaContainerIsSelected_b2201782]
+  def personaContainerIsSelected_70359137: personaContainerIsSelected_70359137 = "personaContainerIsSelected_70359137".asInstanceOf[personaContainerIsSelected_70359137]
   @scala.inline
-  def personaContainer_0374adf6: personaContainer_0374adf6 = "personaContainer_0374adf6".asInstanceOf[personaContainer_0374adf6]
+  def personaContainer_02c5c75d: personaContainer_02c5c75d = "personaContainer_02c5c75d".asInstanceOf[personaContainer_02c5c75d]
   @scala.inline
-  def personaContainer_45c5e011: personaContainer_45c5e011 = "personaContainer_45c5e011".asInstanceOf[personaContainer_45c5e011]
+  def personaContainer_6003188c: personaContainer_6003188c = "personaContainer_6003188c".asInstanceOf[personaContainer_6003188c]
   @scala.inline
-  def personaContainer_b2201782: personaContainer_b2201782 = "personaContainer_b2201782".asInstanceOf[personaContainer_b2201782]
+  def personaContainer_70359137: personaContainer_70359137 = "personaContainer_70359137".asInstanceOf[personaContainer_70359137]
   @scala.inline
-  def personaDetails_0374adf6: personaDetails_0374adf6 = "personaDetails_0374adf6".asInstanceOf[personaDetails_0374adf6]
+  def personaDetails_02c5c75d: personaDetails_02c5c75d = "personaDetails_02c5c75d".asInstanceOf[personaDetails_02c5c75d]
   @scala.inline
-  def personaDetails_45c5e011: personaDetails_45c5e011 = "personaDetails_45c5e011".asInstanceOf[personaDetails_45c5e011]
+  def personaDetails_6003188c: personaDetails_6003188c = "personaDetails_6003188c".asInstanceOf[personaDetails_6003188c]
   @scala.inline
-  def personaDetails_b2201782: personaDetails_b2201782 = "personaDetails_b2201782".asInstanceOf[personaDetails_b2201782]
+  def personaDetails_70359137: personaDetails_70359137 = "personaDetails_70359137".asInstanceOf[personaDetails_70359137]
   @scala.inline
-  def personaWrapper_0374adf6: personaWrapper_0374adf6 = "personaWrapper_0374adf6".asInstanceOf[personaWrapper_0374adf6]
+  def personaWrapper_6003188c: personaWrapper_6003188c = "personaWrapper_6003188c".asInstanceOf[personaWrapper_6003188c]
   @scala.inline
-  def pickerInput_19684fdb: pickerInput_19684fdb = "pickerInput_19684fdb".asInstanceOf[pickerInput_19684fdb]
+  def pickerInput_46086680: pickerInput_46086680 = "pickerInput_46086680".asInstanceOf[pickerInput_46086680]
   @scala.inline
-  def pickerInput_8d9d7e4e: pickerInput_8d9d7e4e = "pickerInput_8d9d7e4e".asInstanceOf[pickerInput_8d9d7e4e]
+  def pickerInput_59866dd7: pickerInput_59866dd7 = "pickerInput_59866dd7".asInstanceOf[pickerInput_59866dd7]
   @scala.inline
-  def pickerIsFocused_d7ec3e0f: pickerIsFocused_d7ec3e0f = "pickerIsFocused_d7ec3e0f".asInstanceOf[pickerIsFocused_d7ec3e0f]
+  def pickerIsFocused_9e7c2b3e: pickerIsFocused_9e7c2b3e = "pickerIsFocused_9e7c2b3e".asInstanceOf[pickerIsFocused_9e7c2b3e]
   @scala.inline
-  def pickerIsOpened_d7ec3e0f: pickerIsOpened_d7ec3e0f = "pickerIsOpened_d7ec3e0f".asInstanceOf[pickerIsOpened_d7ec3e0f]
+  def pickerIsOpened_9e7c2b3e: pickerIsOpened_9e7c2b3e = "pickerIsOpened_9e7c2b3e".asInstanceOf[pickerIsOpened_9e7c2b3e]
   @scala.inline
-  def pickerItems_19684fdb: pickerItems_19684fdb = "pickerItems_19684fdb".asInstanceOf[pickerItems_19684fdb]
+  def pickerItems_46086680: pickerItems_46086680 = "pickerItems_46086680".asInstanceOf[pickerItems_46086680]
   @scala.inline
-  def pickerText_19684fdb: pickerText_19684fdb = "pickerText_19684fdb".asInstanceOf[pickerText_19684fdb]
+  def pickerText_46086680: pickerText_46086680 = "pickerText_46086680".asInstanceOf[pickerText_46086680]
   @scala.inline
-  def pickerText_8d9d7e4e: pickerText_8d9d7e4e = "pickerText_8d9d7e4e".asInstanceOf[pickerText_8d9d7e4e]
+  def pickerText_59866dd7: pickerText_59866dd7 = "pickerText_59866dd7".asInstanceOf[pickerText_59866dd7]
   @scala.inline
-  def picker_d7ec3e0f: picker_d7ec3e0f = "picker_d7ec3e0f".asInstanceOf[picker_d7ec3e0f]
+  def picker_9e7c2b3e: picker_9e7c2b3e = "picker_9e7c2b3e".asInstanceOf[picker_9e7c2b3e]
   @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
-  def prevDecadeIsDisabled_d7ec3e0f: prevDecadeIsDisabled_d7ec3e0f = "prevDecadeIsDisabled_d7ec3e0f".asInstanceOf[prevDecadeIsDisabled_d7ec3e0f]
+  def prevDecadeIsDisabled_9e7c2b3e: prevDecadeIsDisabled_9e7c2b3e = "prevDecadeIsDisabled_9e7c2b3e".asInstanceOf[prevDecadeIsDisabled_9e7c2b3e]
   @scala.inline
-  def prevDecade_d7ec3e0f: prevDecade_d7ec3e0f = "prevDecade_d7ec3e0f".asInstanceOf[prevDecade_d7ec3e0f]
+  def prevDecade_9e7c2b3e: prevDecade_9e7c2b3e = "prevDecade_9e7c2b3e".asInstanceOf[prevDecade_9e7c2b3e]
   @scala.inline
-  def prevMonthIsDisabled_d7ec3e0f: prevMonthIsDisabled_d7ec3e0f = "prevMonthIsDisabled_d7ec3e0f".asInstanceOf[prevMonthIsDisabled_d7ec3e0f]
+  def prevMonthIsDisabled_9e7c2b3e: prevMonthIsDisabled_9e7c2b3e = "prevMonthIsDisabled_9e7c2b3e".asInstanceOf[prevMonthIsDisabled_9e7c2b3e]
   @scala.inline
-  def prevMonth_d7ec3e0f: prevMonth_d7ec3e0f = "prevMonth_d7ec3e0f".asInstanceOf[prevMonth_d7ec3e0f]
+  def prevMonth_9e7c2b3e: prevMonth_9e7c2b3e = "prevMonth_9e7c2b3e".asInstanceOf[prevMonth_9e7c2b3e]
   @scala.inline
-  def prevYearIsDisabled_d7ec3e0f: prevYearIsDisabled_d7ec3e0f = "prevYearIsDisabled_d7ec3e0f".asInstanceOf[prevYearIsDisabled_d7ec3e0f]
+  def prevYearIsDisabled_9e7c2b3e: prevYearIsDisabled_9e7c2b3e = "prevYearIsDisabled_9e7c2b3e".asInstanceOf[prevYearIsDisabled_9e7c2b3e]
   @scala.inline
-  def prevYear_d7ec3e0f: prevYear_d7ec3e0f = "prevYear_d7ec3e0f".asInstanceOf[prevYear_d7ec3e0f]
+  def prevYear_9e7c2b3e: prevYear_9e7c2b3e = "prevYear_9e7c2b3e".asInstanceOf[prevYear_9e7c2b3e]
   @scala.inline
   def primaryButtonBackground: primaryButtonBackground = "primaryButtonBackground".asInstanceOf[primaryButtonBackground]
   @scala.inline
@@ -1945,59 +2009,63 @@ object officeUiFabricReactStrings {
   @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
-  def removeButton_0374adf6: removeButton_0374adf6 = "removeButton_0374adf6".asInstanceOf[removeButton_0374adf6]
+  def removeButton_02c5c75d: removeButton_02c5c75d = "removeButton_02c5c75d".asInstanceOf[removeButton_02c5c75d]
   @scala.inline
-  def removeButton_45c5e011: removeButton_45c5e011 = "removeButton_45c5e011".asInstanceOf[removeButton_45c5e011]
+  def removeButton_6003188c: removeButton_6003188c = "removeButton_6003188c".asInstanceOf[removeButton_6003188c]
   @scala.inline
-  def removeButton_b2201782: removeButton_b2201782 = "removeButton_b2201782".asInstanceOf[removeButton_b2201782]
+  def removeButton_70359137: removeButton_70359137 = "removeButton_70359137".asInstanceOf[removeButton_70359137]
   @scala.inline
   def required: required = "required".asInstanceOf[required]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
-  def resultContent_be21407a: resultContent_be21407a = "resultContent_be21407a".asInstanceOf[resultContent_be21407a]
+  def resultContent_5805c930: resultContent_5805c930 = "resultContent_5805c930".asInstanceOf[resultContent_5805c930]
   @scala.inline
-  def resultContent_f536abdc: resultContent_f536abdc = "resultContent_f536abdc".asInstanceOf[resultContent_f536abdc]
+  def resultContent_c1ea5eea: resultContent_c1ea5eea = "resultContent_c1ea5eea".asInstanceOf[resultContent_c1ea5eea]
   @scala.inline
-  def resultItem_be21407a: resultItem_be21407a = "resultItem_be21407a".asInstanceOf[resultItem_be21407a]
+  def resultItem_5805c930: resultItem_5805c930 = "resultItem_5805c930".asInstanceOf[resultItem_5805c930]
   @scala.inline
-  def resultItem_f536abdc: resultItem_f536abdc = "resultItem_f536abdc".asInstanceOf[resultItem_f536abdc]
+  def resultItem_c1ea5eea: resultItem_c1ea5eea = "resultItem_c1ea5eea".asInstanceOf[resultItem_c1ea5eea]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
-  def rightDate_d7ec3e0f: rightDate_d7ec3e0f = "rightDate_d7ec3e0f".asInstanceOf[rightDate_d7ec3e0f]
+  def rightDate_9e7c2b3e: rightDate_9e7c2b3e = "rightDate_9e7c2b3e".asInstanceOf[rightDate_9e7c2b3e]
   @scala.inline
-  def rootIsChecked_f68c3f5b: rootIsChecked_f68c3f5b = "rootIsChecked_f68c3f5b".asInstanceOf[rootIsChecked_f68c3f5b]
+  def rootIsChecked_30802d6f: rootIsChecked_30802d6f = "rootIsChecked_30802d6f".asInstanceOf[rootIsChecked_30802d6f]
   @scala.inline
-  def rootVertical_1a34f243: rootVertical_1a34f243 = "rootVertical_1a34f243".asInstanceOf[rootVertical_1a34f243]
+  def rootVertical_b4bf9717: rootVertical_b4bf9717 = "rootVertical_b4bf9717".asInstanceOf[rootVertical_b4bf9717]
   @scala.inline
-  def root_12a6a499: root_12a6a499 = "root_12a6a499".asInstanceOf[root_12a6a499]
+  def root_074a25cc: root_074a25cc = "root_074a25cc".asInstanceOf[root_074a25cc]
   @scala.inline
-  def root_1a34f243: root_1a34f243 = "root_1a34f243".asInstanceOf[root_1a34f243]
+  def root_30802d6f: root_30802d6f = "root_30802d6f".asInstanceOf[root_30802d6f]
   @scala.inline
-  def root_49a432f4: root_49a432f4 = "root_49a432f4".asInstanceOf[root_49a432f4]
+  def root_9e7c2b3e: root_9e7c2b3e = "root_9e7c2b3e".asInstanceOf[root_9e7c2b3e]
   @scala.inline
-  def root_d7ec3e0f: root_d7ec3e0f = "root_d7ec3e0f".asInstanceOf[root_d7ec3e0f]
+  def root_b4bf9717: root_b4bf9717 = "root_b4bf9717".asInstanceOf[root_b4bf9717]
   @scala.inline
-  def root_e2dcdb7c: root_e2dcdb7c = "root_e2dcdb7c".asInstanceOf[root_e2dcdb7c]
+  def root_d05c0844: root_d05c0844 = "root_d05c0844".asInstanceOf[root_d05c0844]
   @scala.inline
-  def root_f68c3f5b: root_f68c3f5b = "root_f68c3f5b".asInstanceOf[root_f68c3f5b]
+  def root_fb873249: root_fb873249 = "root_fb873249".asInstanceOf[root_fb873249]
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
-  def screenReaderOnly_12a6a499: screenReaderOnly_12a6a499 = "screenReaderOnly_12a6a499".asInstanceOf[screenReaderOnly_12a6a499]
+  def screenReaderOnly_074a25cc: screenReaderOnly_074a25cc = "screenReaderOnly_074a25cc".asInstanceOf[screenReaderOnly_074a25cc]
   @scala.inline
-  def screenReaderOnly_19684fdb: screenReaderOnly_19684fdb = "screenReaderOnly_19684fdb".asInstanceOf[screenReaderOnly_19684fdb]
+  def screenReaderOnly_46086680: screenReaderOnly_46086680 = "screenReaderOnly_46086680".asInstanceOf[screenReaderOnly_46086680]
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   @scala.inline
-  def showWeekNumbersRTL_d7ec3e0f: showWeekNumbersRTL_d7ec3e0f = "showWeekNumbersRTL_d7ec3e0f".asInstanceOf[showWeekNumbersRTL_d7ec3e0f]
+  def showWeekNumbersRTL_9e7c2b3e: showWeekNumbersRTL_9e7c2b3e = "showWeekNumbersRTL_9e7c2b3e".asInstanceOf[showWeekNumbersRTL_9e7c2b3e]
   @scala.inline
-  def showWeekNumbers_d7ec3e0f: showWeekNumbers_d7ec3e0f = "showWeekNumbers_d7ec3e0f".asInstanceOf[showWeekNumbers_d7ec3e0f]
+  def showWeekNumbers_9e7c2b3e: showWeekNumbers_9e7c2b3e = "showWeekNumbers_9e7c2b3e".asInstanceOf[showWeekNumbers_9e7c2b3e]
   @scala.inline
   def shrink: shrink = "shrink".asInstanceOf[shrink]
   @scala.inline
+  def small: small = "small".asInstanceOf[small]
+  @scala.inline
   def smallInputBorder: smallInputBorder = "smallInputBorder".asInstanceOf[smallInputBorder]
+  @scala.inline
+  def smallPlus: smallPlus = "smallPlus".asInstanceOf[smallPlus]
   @scala.inline
   def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
   @scala.inline
@@ -2013,9 +2081,9 @@ object officeUiFabricReactStrings {
   @scala.inline
   def step: step = "step".asInstanceOf[step]
   @scala.inline
-  def stickyAbove_e2dcdb7c: stickyAbove_e2dcdb7c = "stickyAbove_e2dcdb7c".asInstanceOf[stickyAbove_e2dcdb7c]
+  def stickyAbove_d05c0844: stickyAbove_d05c0844 = "stickyAbove_d05c0844".asInstanceOf[stickyAbove_d05c0844]
   @scala.inline
-  def stickyBelow_e2dcdb7c: stickyBelow_e2dcdb7c = "stickyBelow_e2dcdb7c".asInstanceOf[stickyBelow_e2dcdb7c]
+  def stickyBelow_d05c0844: stickyBelow_d05c0844 = "stickyBelow_d05c0844".asInstanceOf[stickyBelow_d05c0844]
   @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   @scala.inline
@@ -2023,29 +2091,33 @@ object officeUiFabricReactStrings {
   @scala.inline
   def successBackground: successBackground = "successBackground".asInstanceOf[successBackground]
   @scala.inline
-  def suggestionsAvailable_49a432f4: suggestionsAvailable_49a432f4 = "suggestionsAvailable_49a432f4".asInstanceOf[suggestionsAvailable_49a432f4]
+  def suggestionsAvailable_fb873249: suggestionsAvailable_fb873249 = "suggestionsAvailable_fb873249".asInstanceOf[suggestionsAvailable_fb873249]
   @scala.inline
-  def suggestionsContainer_3d4990af: suggestionsContainer_3d4990af = "suggestionsContainer_3d4990af".asInstanceOf[suggestionsContainer_3d4990af]
+  def suggestionsContainer_55294644: suggestionsContainer_55294644 = "suggestionsContainer_55294644".asInstanceOf[suggestionsContainer_55294644]
   @scala.inline
-  def suggestionsContainer_49a432f4: suggestionsContainer_49a432f4 = "suggestionsContainer_49a432f4".asInstanceOf[suggestionsContainer_49a432f4]
+  def suggestionsContainer_fb873249: suggestionsContainer_fb873249 = "suggestionsContainer_fb873249".asInstanceOf[suggestionsContainer_fb873249]
   @scala.inline
-  def suggestionsItemIsSuggested_49a432f4: suggestionsItemIsSuggested_49a432f4 = "suggestionsItemIsSuggested_49a432f4".asInstanceOf[suggestionsItemIsSuggested_49a432f4]
+  def suggestionsItemIsSuggested_fb873249: suggestionsItemIsSuggested_fb873249 = "suggestionsItemIsSuggested_fb873249".asInstanceOf[suggestionsItemIsSuggested_fb873249]
   @scala.inline
-  def suggestionsItem_49a432f4: suggestionsItem_49a432f4 = "suggestionsItem_49a432f4".asInstanceOf[suggestionsItem_49a432f4]
+  def suggestionsItem_fb873249: suggestionsItem_fb873249 = "suggestionsItem_fb873249".asInstanceOf[suggestionsItem_fb873249]
   @scala.inline
-  def suggestionsNone_49a432f4: suggestionsNone_49a432f4 = "suggestionsNone_49a432f4".asInstanceOf[suggestionsNone_49a432f4]
+  def suggestionsNone_fb873249: suggestionsNone_fb873249 = "suggestionsNone_fb873249".asInstanceOf[suggestionsNone_fb873249]
   @scala.inline
-  def suggestionsSpinner_12a6a499: suggestionsSpinner_12a6a499 = "suggestionsSpinner_12a6a499".asInstanceOf[suggestionsSpinner_12a6a499]
+  def suggestionsSpinner_074a25cc: suggestionsSpinner_074a25cc = "suggestionsSpinner_074a25cc".asInstanceOf[suggestionsSpinner_074a25cc]
   @scala.inline
-  def suggestionsSpinner_49a432f4: suggestionsSpinner_49a432f4 = "suggestionsSpinner_49a432f4".asInstanceOf[suggestionsSpinner_49a432f4]
+  def suggestionsSpinner_fb873249: suggestionsSpinner_fb873249 = "suggestionsSpinner_fb873249".asInstanceOf[suggestionsSpinner_fb873249]
   @scala.inline
-  def suggestionsTitle_12a6a499: suggestionsTitle_12a6a499 = "suggestionsTitle_12a6a499".asInstanceOf[suggestionsTitle_12a6a499]
+  def suggestionsTitle_074a25cc: suggestionsTitle_074a25cc = "suggestionsTitle_074a25cc".asInstanceOf[suggestionsTitle_074a25cc]
   @scala.inline
-  def suggestionsTitle_49a432f4: suggestionsTitle_49a432f4 = "suggestionsTitle_49a432f4".asInstanceOf[suggestionsTitle_49a432f4]
+  def suggestionsTitle_fb873249: suggestionsTitle_fb873249 = "suggestionsTitle_fb873249".asInstanceOf[suggestionsTitle_fb873249]
+  @scala.inline
+  def superLarge: superLarge = "superLarge".asInstanceOf[superLarge]
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   @scala.inline
-  def table_d7ec3e0f: table_d7ec3e0f = "table_d7ec3e0f".asInstanceOf[table_d7ec3e0f]
+  def t: t = "t".asInstanceOf[t]
+  @scala.inline
+  def table_9e7c2b3e: table_9e7c2b3e = "table_9e7c2b3e".asInstanceOf[table_9e7c2b3e]
   @scala.inline
   def teal: teal = "teal".asInstanceOf[teal]
   @scala.inline
@@ -2079,15 +2151,19 @@ object officeUiFabricReactStrings {
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline
-  def toggleMonthView_d7ec3e0f: toggleMonthView_d7ec3e0f = "toggleMonthView_d7ec3e0f".asInstanceOf[toggleMonthView_d7ec3e0f]
+  def tiny: tiny = "tiny".asInstanceOf[tiny]
+  @scala.inline
+  def toggleMonthView_9e7c2b3e: toggleMonthView_9e7c2b3e = "toggleMonthView_9e7c2b3e".asInstanceOf[toggleMonthView_9e7c2b3e]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
-  def topDate_d7ec3e0f: topDate_d7ec3e0f = "topDate_d7ec3e0f".asInstanceOf[topDate_d7ec3e0f]
+  def topDate_9e7c2b3e: topDate_9e7c2b3e = "topDate_9e7c2b3e".asInstanceOf[topDate_9e7c2b3e]
   @scala.inline
-  def topLeftCornerDate_d7ec3e0f: topLeftCornerDate_d7ec3e0f = "topLeftCornerDate_d7ec3e0f".asInstanceOf[topLeftCornerDate_d7ec3e0f]
+  def topLeftCornerDate_9e7c2b3e: topLeftCornerDate_9e7c2b3e = "topLeftCornerDate_9e7c2b3e".asInstanceOf[topLeftCornerDate_9e7c2b3e]
   @scala.inline
-  def topRightCornerDate_d7ec3e0f: topRightCornerDate_d7ec3e0f = "topRightCornerDate_d7ec3e0f".asInstanceOf[topRightCornerDate_d7ec3e0f]
+  def topRightCornerDate_9e7c2b3e: topRightCornerDate_9e7c2b3e = "topRightCornerDate_9e7c2b3e".asInstanceOf[topRightCornerDate_9e7c2b3e]
+  @scala.inline
+  def transparency: transparency = "transparency".asInstanceOf[transparency]
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
   @scala.inline
@@ -2101,11 +2177,11 @@ object officeUiFabricReactStrings {
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   @scala.inline
-  def validationError_0374adf6: validationError_0374adf6 = "validationError_0374adf6".asInstanceOf[validationError_0374adf6]
+  def validationError_02c5c75d: validationError_02c5c75d = "validationError_02c5c75d".asInstanceOf[validationError_02c5c75d]
   @scala.inline
-  def validationError_45c5e011: validationError_45c5e011 = "validationError_45c5e011".asInstanceOf[validationError_45c5e011]
+  def validationError_6003188c: validationError_6003188c = "validationError_6003188c".asInstanceOf[validationError_6003188c]
   @scala.inline
-  def validationError_b2201782: validationError_b2201782 = "validationError_b2201782".asInstanceOf[validationError_b2201782]
+  def validationError_70359137: validationError_70359137 = "validationError_70359137".asInstanceOf[validationError_70359137]
   @scala.inline
   def variantBorder: variantBorder = "variantBorder".asInstanceOf[variantBorder]
   @scala.inline
@@ -2121,35 +2197,45 @@ object officeUiFabricReactStrings {
   @scala.inline
   def warningHighlight: warningHighlight = "warningHighlight".asInstanceOf[warningHighlight]
   @scala.inline
-  def weekBackground_d7ec3e0f: weekBackground_d7ec3e0f = "weekBackground_d7ec3e0f".asInstanceOf[weekBackground_d7ec3e0f]
+  def weekBackground_9e7c2b3e: weekBackground_9e7c2b3e = "weekBackground_9e7c2b3e".asInstanceOf[weekBackground_9e7c2b3e]
   @scala.inline
-  def weekIsHighlighted_d7ec3e0f: weekIsHighlighted_d7ec3e0f = "weekIsHighlighted_d7ec3e0f".asInstanceOf[weekIsHighlighted_d7ec3e0f]
+  def weekIsHighlighted_9e7c2b3e: weekIsHighlighted_9e7c2b3e = "weekIsHighlighted_9e7c2b3e".asInstanceOf[weekIsHighlighted_9e7c2b3e]
   @scala.inline
-  def weekNumbers_d7ec3e0f: weekNumbers_d7ec3e0f = "weekNumbers_d7ec3e0f".asInstanceOf[weekNumbers_d7ec3e0f]
+  def weekNumbers_9e7c2b3e: weekNumbers_9e7c2b3e = "weekNumbers_9e7c2b3e".asInstanceOf[weekNumbers_9e7c2b3e]
   @scala.inline
-  def weekSelection_d7ec3e0f: weekSelection_d7ec3e0f = "weekSelection_d7ec3e0f".asInstanceOf[weekSelection_d7ec3e0f]
+  def weekSelection_9e7c2b3e: weekSelection_9e7c2b3e = "weekSelection_9e7c2b3e".asInstanceOf[weekSelection_9e7c2b3e]
   @scala.inline
-  def weekday_d7ec3e0f: weekday_d7ec3e0f = "weekday_d7ec3e0f".asInstanceOf[weekday_d7ec3e0f]
+  def weekday_9e7c2b3e: weekday_9e7c2b3e = "weekday_9e7c2b3e".asInstanceOf[weekday_9e7c2b3e]
   @scala.inline
   def white: white = "white".asInstanceOf[white]
   @scala.inline
   def whiteTranslucent40: whiteTranslucent40 = "whiteTranslucent40".asInstanceOf[whiteTranslucent40]
   @scala.inline
-  def wrap_d7ec3e0f: wrap_d7ec3e0f = "wrap_d7ec3e0f".asInstanceOf[wrap_d7ec3e0f]
+  def wrap_9e7c2b3e: wrap_9e7c2b3e = "wrap_9e7c2b3e".asInstanceOf[wrap_9e7c2b3e]
   @scala.inline
-  def yearComponents_d7ec3e0f: yearComponents_d7ec3e0f = "yearComponents_d7ec3e0f".asInstanceOf[yearComponents_d7ec3e0f]
+  def xLarge: xLarge = "xLarge".asInstanceOf[xLarge]
   @scala.inline
-  def yearIsCurrentYear_d7ec3e0f: yearIsCurrentYear_d7ec3e0f = "yearIsCurrentYear_d7ec3e0f".asInstanceOf[yearIsCurrentYear_d7ec3e0f]
+  def xLargePlus: xLargePlus = "xLargePlus".asInstanceOf[xLargePlus]
   @scala.inline
-  def yearIsHighlighted_d7ec3e0f: yearIsHighlighted_d7ec3e0f = "yearIsHighlighted_d7ec3e0f".asInstanceOf[yearIsHighlighted_d7ec3e0f]
+  def xSmall: xSmall = "xSmall".asInstanceOf[xSmall]
   @scala.inline
-  def yearOptionIsDisabled_d7ec3e0f: yearOptionIsDisabled_d7ec3e0f = "yearOptionIsDisabled_d7ec3e0f".asInstanceOf[yearOptionIsDisabled_d7ec3e0f]
+  def xxLarge: xxLarge = "xxLarge".asInstanceOf[xxLarge]
   @scala.inline
-  def yearOption_d7ec3e0f: yearOption_d7ec3e0f = "yearOption_d7ec3e0f".asInstanceOf[yearOption_d7ec3e0f]
+  def xxLargePlus: xxLargePlus = "xxLargePlus".asInstanceOf[xxLargePlus]
   @scala.inline
-  def yearPicker_d7ec3e0f: yearPicker_d7ec3e0f = "yearPicker_d7ec3e0f".asInstanceOf[yearPicker_d7ec3e0f]
+  def yearComponents_9e7c2b3e: yearComponents_9e7c2b3e = "yearComponents_9e7c2b3e".asInstanceOf[yearComponents_9e7c2b3e]
   @scala.inline
-  def year_d7ec3e0f: year_d7ec3e0f = "year_d7ec3e0f".asInstanceOf[year_d7ec3e0f]
+  def yearIsCurrentYear_9e7c2b3e: yearIsCurrentYear_9e7c2b3e = "yearIsCurrentYear_9e7c2b3e".asInstanceOf[yearIsCurrentYear_9e7c2b3e]
+  @scala.inline
+  def yearIsHighlighted_9e7c2b3e: yearIsHighlighted_9e7c2b3e = "yearIsHighlighted_9e7c2b3e".asInstanceOf[yearIsHighlighted_9e7c2b3e]
+  @scala.inline
+  def yearOptionIsDisabled_9e7c2b3e: yearOptionIsDisabled_9e7c2b3e = "yearOptionIsDisabled_9e7c2b3e".asInstanceOf[yearOptionIsDisabled_9e7c2b3e]
+  @scala.inline
+  def yearOption_9e7c2b3e: yearOption_9e7c2b3e = "yearOption_9e7c2b3e".asInstanceOf[yearOption_9e7c2b3e]
+  @scala.inline
+  def yearPicker_9e7c2b3e: yearPicker_9e7c2b3e = "yearPicker_9e7c2b3e".asInstanceOf[yearPicker_9e7c2b3e]
+  @scala.inline
+  def year_9e7c2b3e: year_9e7c2b3e = "year_9e7c2b3e".asInstanceOf[year_9e7c2b3e]
   @scala.inline
   def yellow: yellow = "yellow".asInstanceOf[yellow]
   @scala.inline

@@ -24,7 +24,6 @@ object AnonBindingsversion {
     uname: String
   ): AnonBindingsversion = {
     val __obj = js.Dynamic.literal(bindings_version = bindings_version.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], lang_version = lang_version.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], uname = uname.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBindingsversion]
   }
 }

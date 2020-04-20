@@ -17,13 +17,11 @@ object JsApi {
   		 * JavaScript API will be disabled.
   		 */
   @scala.inline
-  def Disable: `0` = this.cast(0)
+  def Disable: `0` = 0.asInstanceOf[`0`]
   /**
   		 * JavaScript API will be enabled.
   		 */
   @scala.inline
-  def Enable: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Enable: `1` = 1.asInstanceOf[`1`]
 }
 

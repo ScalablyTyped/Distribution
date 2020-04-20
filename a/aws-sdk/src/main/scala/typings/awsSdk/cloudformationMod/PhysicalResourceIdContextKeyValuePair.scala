@@ -20,7 +20,6 @@ object PhysicalResourceIdContextKeyValuePair {
   @scala.inline
   def apply(Key: Key, Value: Value): PhysicalResourceIdContextKeyValuePair = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhysicalResourceIdContextKeyValuePair]
   }
 }

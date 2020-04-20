@@ -13,7 +13,6 @@ object ToastConsumerProps {
   @scala.inline
   def apply(children: ToastConsumerContext => ReactNode): ToastConsumerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[ToastConsumerProps]
   }
 }

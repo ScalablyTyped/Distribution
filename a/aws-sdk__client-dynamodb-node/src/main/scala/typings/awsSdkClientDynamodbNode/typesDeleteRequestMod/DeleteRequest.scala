@@ -18,7 +18,6 @@ object DeleteRequest {
   @scala.inline
   def apply(Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): DeleteRequest = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRequest]
   }
 }

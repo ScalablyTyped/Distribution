@@ -292,7 +292,7 @@ object formatjsIntlUtilsStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
-  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
+  def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline

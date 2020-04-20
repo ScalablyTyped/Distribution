@@ -21,7 +21,6 @@ object ModuleAppendPlugin {
     target: String
   ): ModuleAppendPlugin = {
     val __obj = js.Dynamic.literal(appending = appending.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModuleAppendPlugin]
   }
 }

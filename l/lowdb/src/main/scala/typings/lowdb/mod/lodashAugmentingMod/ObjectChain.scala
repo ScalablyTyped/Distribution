@@ -15,7 +15,6 @@ object ObjectChain {
   @scala.inline
   def apply[T](write: () => T with js.Promise[T]): ObjectChain[T] = {
     val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
-  
     __obj.asInstanceOf[ObjectChain[T]]
   }
 }

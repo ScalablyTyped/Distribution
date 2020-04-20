@@ -20,7 +20,6 @@ object RegexMatchSetSummary {
   @scala.inline
   def apply(Name: ResourceName, RegexMatchSetId: ResourceId): RegexMatchSetSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RegexMatchSetId = RegexMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegexMatchSetSummary]
   }
 }

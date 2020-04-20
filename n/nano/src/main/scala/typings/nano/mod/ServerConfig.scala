@@ -13,7 +13,6 @@ object ServerConfig {
   @scala.inline
   def apply(db: String, url: String): ServerConfig = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerConfig]
   }
 }

@@ -32,7 +32,6 @@ object Action {
     indexName: String
   ): Action = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Action]
   }
 }

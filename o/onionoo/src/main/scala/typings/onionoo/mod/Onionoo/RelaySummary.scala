@@ -30,7 +30,6 @@ object RelaySummary {
   @scala.inline
   def apply(a: js.Array[String], f: String, n: String, r: Boolean): RelaySummary = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RelaySummary]
   }
 }

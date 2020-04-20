@@ -26,7 +26,6 @@ object IReplyErrorContent {
   @scala.inline
   def apply(ename: String, evalue: String, status: error, traceback: js.Array[String]): IReplyErrorContent = {
     val __obj = js.Dynamic.literal(ename = ename.asInstanceOf[js.Any], evalue = evalue.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], traceback = traceback.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IReplyErrorContent]
   }
 }

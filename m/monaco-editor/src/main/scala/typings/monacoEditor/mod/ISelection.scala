@@ -32,7 +32,6 @@ object ISelection {
     selectionStartLineNumber: Double
   ): ISelection = {
     val __obj = js.Dynamic.literal(positionColumn = positionColumn.asInstanceOf[js.Any], positionLineNumber = positionLineNumber.asInstanceOf[js.Any], selectionStartColumn = selectionStartColumn.asInstanceOf[js.Any], selectionStartLineNumber = selectionStartLineNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISelection]
   }
 }

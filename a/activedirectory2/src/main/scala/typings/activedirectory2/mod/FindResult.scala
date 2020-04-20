@@ -14,7 +14,6 @@ object FindResult {
   @scala.inline
   def apply(groups: js.Array[js.Object], other: js.Array[js.Object], users: js.Array[js.Object]): FindResult = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FindResult]
   }
 }

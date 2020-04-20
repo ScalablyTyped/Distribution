@@ -23,7 +23,6 @@ object PromoofferResource {
     get: AnonManufacturer => Request_[Offers]
   ): PromoofferResource = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), dismiss = js.Any.fromFunction1(dismiss), get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[PromoofferResource]
   }
 }

@@ -12,7 +12,6 @@ object ProjectsGetColumnParams {
   @scala.inline
   def apply(column_id: Double): ProjectsGetColumnParams = {
     val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectsGetColumnParams]
   }
 }

@@ -18,22 +18,20 @@ trait TransformBoxProperty extends js.Object
 
 object TransformBoxProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  def `border-box`: typings.csstype.csstypeStrings.`border-box` = this.cast("border-box")
+  def `border-box`: typings.csstype.csstypeStrings.`border-box` = "border-box".asInstanceOf[typings.csstype.csstypeStrings.`border-box`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `fill-box`: typings.csstype.csstypeStrings.`fill-box` = "fill-box".asInstanceOf[typings.csstype.csstypeStrings.`fill-box`]
   @scala.inline
-  def `fill-box`: typings.csstype.csstypeStrings.`fill-box` = this.cast("fill-box")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
   @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
-  @scala.inline
-  def `view-box`: typings.csstype.csstypeStrings.`view-box` = this.cast("view-box")
+  def `view-box`: typings.csstype.csstypeStrings.`view-box` = "view-box".asInstanceOf[typings.csstype.csstypeStrings.`view-box`]
 }
 

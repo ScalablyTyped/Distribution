@@ -12,7 +12,6 @@ object OnRatingBarChangeListener {
   @scala.inline
   def apply(onRatingChanged: (typings.androiduix.android.widget.RatingBar, Double, Boolean) => Unit): OnRatingBarChangeListener = {
     val __obj = js.Dynamic.literal(onRatingChanged = js.Any.fromFunction3(onRatingChanged))
-  
     __obj.asInstanceOf[OnRatingBarChangeListener]
   }
 }

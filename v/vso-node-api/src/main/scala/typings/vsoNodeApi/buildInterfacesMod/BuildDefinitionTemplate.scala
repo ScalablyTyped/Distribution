@@ -50,7 +50,6 @@ object BuildDefinitionTemplate {
     template: BuildDefinition
   ): BuildDefinitionTemplate = {
     val __obj = js.Dynamic.literal(canDelete = canDelete.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], iconTaskId = iconTaskId.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildDefinitionTemplate]
   }
 }

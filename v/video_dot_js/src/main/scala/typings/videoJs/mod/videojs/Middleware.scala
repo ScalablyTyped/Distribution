@@ -23,7 +23,6 @@ object Middleware {
     setSource: (SourceObject, js.Function2[/* err */ js.Any, /* next */ js.Function1[/* src */ SourceObject, Unit], Unit]) => Unit
   ): Middleware = {
     val __obj = js.Dynamic.literal(setSource = js.Any.fromFunction2(setSource))
-  
     __obj.asInstanceOf[Middleware]
   }
 }

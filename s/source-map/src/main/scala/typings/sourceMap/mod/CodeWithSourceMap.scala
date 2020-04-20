@@ -13,7 +13,6 @@ object CodeWithSourceMap {
   @scala.inline
   def apply(code: String, map: SourceMapGenerator): CodeWithSourceMap = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CodeWithSourceMap]
   }
 }

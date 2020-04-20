@@ -31,7 +31,6 @@ object EventListener {
     eventName: complete | loopComplete | enterFrame | segmentStart | config_ready | data_ready | loaded_images | DOMLoaded | destroy
   ): EventListener = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), eventName = eventName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventListener]
   }
 }

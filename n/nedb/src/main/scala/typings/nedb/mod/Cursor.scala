@@ -23,7 +23,6 @@ object Cursor {
     sort: js.Any => Cursor[T]
   ): Cursor[T] = {
     val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), limit = js.Any.fromFunction1(limit), projection = js.Any.fromFunction1(projection), skip = js.Any.fromFunction1(skip), sort = js.Any.fromFunction1(sort))
-  
     __obj.asInstanceOf[Cursor[T]]
   }
 }

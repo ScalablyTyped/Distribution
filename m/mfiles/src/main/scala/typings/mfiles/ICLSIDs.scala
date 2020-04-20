@@ -13,7 +13,6 @@ object ICLSIDs {
   @scala.inline
   def apply(PreviewerCtrl: String, ShellListingCtrl: String): ICLSIDs = {
     val __obj = js.Dynamic.literal(PreviewerCtrl = PreviewerCtrl.asInstanceOf[js.Any], ShellListingCtrl = ShellListingCtrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICLSIDs]
   }
 }

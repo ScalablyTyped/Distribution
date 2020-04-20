@@ -30,7 +30,6 @@ object TypeofNumberTextBox {
   @scala.inline
   def apply(Mixin: Instantiable0[Mixin], __Constraints: Instantiable0[Constraints]): TypeofNumberTextBox = {
     val __obj = js.Dynamic.literal(Mixin = Mixin.asInstanceOf[js.Any], __Constraints = __Constraints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofNumberTextBox]
   }
 }

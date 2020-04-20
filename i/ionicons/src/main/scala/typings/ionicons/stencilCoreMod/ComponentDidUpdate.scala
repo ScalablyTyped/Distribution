@@ -21,7 +21,6 @@ object ComponentDidUpdate {
   @scala.inline
   def apply(componentDidUpdate: () => Unit): ComponentDidUpdate = {
     val __obj = js.Dynamic.literal(componentDidUpdate = js.Any.fromFunction0(componentDidUpdate))
-  
     __obj.asInstanceOf[ComponentDidUpdate]
   }
 }

@@ -46,7 +46,6 @@ object AnonGBP {
     XPF: js.Array[scala.Nothing]
   ): AnonGBP = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BAM = BAM.asInstanceOf[js.Any], BRL = BRL.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], HRK = HRK.asInstanceOf[js.Any], ILS = ILS.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], RSD = RSD.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any], XPF = XPF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGBP]
   }
 }

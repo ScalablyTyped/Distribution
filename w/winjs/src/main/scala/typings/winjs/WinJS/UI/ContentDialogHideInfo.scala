@@ -18,7 +18,6 @@ object ContentDialogHideInfo {
   @scala.inline
   def apply(result: String): ContentDialogHideInfo = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContentDialogHideInfo]
   }
 }

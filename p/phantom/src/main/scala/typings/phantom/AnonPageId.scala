@@ -12,7 +12,6 @@ object AnonPageId {
   @scala.inline
   def apply(pageId: String): AnonPageId = {
     val __obj = js.Dynamic.literal(pageId = pageId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPageId]
   }
 }

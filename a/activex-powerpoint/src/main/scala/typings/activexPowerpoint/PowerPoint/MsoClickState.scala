@@ -14,10 +14,8 @@ trait MsoClickState extends js.Object
 
 object MsoClickState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoClickStateAfterAllAnimations: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoClickStateAfterAllAnimations: `-2` = this.cast(-2)
-  @scala.inline
-  def msoClickStateBeforeAutomaticAnimations: `-1` = this.cast(-1)
+  def msoClickStateBeforeAutomaticAnimations: `-1` = -1.asInstanceOf[`-1`]
 }
 

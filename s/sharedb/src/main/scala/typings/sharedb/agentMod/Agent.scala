@@ -44,7 +44,6 @@ object Agent {
     stream: DuplexisServerboolean
   ): Agent = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], send = js.Any.fromFunction1(send), stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Agent]
   }
 }

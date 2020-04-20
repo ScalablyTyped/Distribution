@@ -20,7 +20,6 @@ object UpdatePipelineNotificationsRequest {
   @scala.inline
   def apply(Id: Id, Notifications: Notifications): UpdatePipelineNotificationsRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Notifications = Notifications.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdatePipelineNotificationsRequest]
   }
 }

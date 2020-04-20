@@ -14,7 +14,6 @@ object Options {
   @scala.inline
   def apply(arrayBehaviour: replace | merge): Options = {
     val __obj = js.Dynamic.literal(arrayBehaviour = arrayBehaviour.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

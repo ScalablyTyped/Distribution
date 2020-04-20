@@ -25,7 +25,6 @@ object AnonIsList {
     nodes: js.Array[Node]
   ): AnonIsList = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], isList = isList.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsList]
   }
 }

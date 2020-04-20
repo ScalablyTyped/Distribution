@@ -38,34 +38,32 @@ trait styleTextUnderlineStyle extends js.Object
 
 object styleTextUnderlineStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleTextUnderlineStyleDash: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleTextUnderlineStyleDash: `6` = this.cast(6)
+  def styleTextUnderlineStyleDotDash: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleTextUnderlineStyleDotDash: `7` = this.cast(7)
+  def styleTextUnderlineStyleDotDotDash: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleTextUnderlineStyleDotDotDash: `8` = this.cast(8)
+  def styleTextUnderlineStyleDotted: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleTextUnderlineStyleDotted: `4` = this.cast(4)
+  def styleTextUnderlineStyleDouble: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleTextUnderlineStyleDouble: `2` = this.cast(2)
+  def styleTextUnderlineStyleDoubleAccounting: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def styleTextUnderlineStyleDoubleAccounting: `11` = this.cast(11)
+  def styleTextUnderlineStyleSingle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleTextUnderlineStyleSingle: `1` = this.cast(1)
+  def styleTextUnderlineStyleSingleAccounting: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def styleTextUnderlineStyleSingleAccounting: `10` = this.cast(10)
+  def styleTextUnderlineStyleThick: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleTextUnderlineStyleThick: `5` = this.cast(5)
+  def styleTextUnderlineStyleThickDash: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def styleTextUnderlineStyleThickDash: `12` = this.cast(12)
+  def styleTextUnderlineStyleUndefined: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleTextUnderlineStyleUndefined: `0` = this.cast(0)
+  def styleTextUnderlineStyleWave: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def styleTextUnderlineStyleWave: `9` = this.cast(9)
+  def styleTextUnderlineStyleWords: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleTextUnderlineStyleWords: `3` = this.cast(3)
-  @scala.inline
-  def styleTextUnderlineStyle_Max: `2147483647` = this.cast(2147483647)
+  def styleTextUnderlineStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -12,7 +12,6 @@ object SessionHoldEvent {
   @scala.inline
   def apply(originator: String): SessionHoldEvent = {
     val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionHoldEvent]
   }
 }

@@ -25,9 +25,9 @@ package object mod {
     typings.formatjsIntlRelativetimeformat.mod.IntlRelativeTimeFormatOptions, 
     typings.reactIntl.reactIntlStrings.localeMatcher
   ]) with typings.reactIntl.mod.CustomFormatConfig
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
-  type WithIntlProps[P] = (typings.reactIntl.mod.Omit[P, java.lang.String]) with typings.reactIntl.AnonForwardedRef
+  type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+  type WithIntlProps[P] = (typings.reactIntl.mod.Omit[P, typings.reactIntl.reactIntlStrings.intl]) with typings.reactIntl.AnonForwardedRef
   type WrappedComponentProps[IntlPropName /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in IntlPropName ]: react-intl.react-intl.IntlShape}
-    */ typings.reactIntl.reactIntlStrings.WrappedComponentProps with js.Any
+    */ typings.reactIntl.reactIntlStrings.WrappedComponentProps with org.scalablytyped.runtime.TopLevel[js.Any]
 }

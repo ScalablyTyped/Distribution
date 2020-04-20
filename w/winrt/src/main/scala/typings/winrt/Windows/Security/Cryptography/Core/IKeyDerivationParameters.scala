@@ -14,7 +14,6 @@ object IKeyDerivationParameters {
   @scala.inline
   def apply(iterationCount: Double, kdfGenericBinary: IBuffer): IKeyDerivationParameters = {
     val __obj = js.Dynamic.literal(iterationCount = iterationCount.asInstanceOf[js.Any], kdfGenericBinary = kdfGenericBinary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKeyDerivationParameters]
   }
 }

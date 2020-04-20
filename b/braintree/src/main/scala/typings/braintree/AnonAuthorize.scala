@@ -14,7 +14,6 @@ object AnonAuthorize {
   @scala.inline
   def apply(Authorize: String, Decline: String, Fail: String): AnonAuthorize = {
     val __obj = js.Dynamic.literal(Authorize = Authorize.asInstanceOf[js.Any], Decline = Decline.asInstanceOf[js.Any], Fail = Fail.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuthorize]
   }
 }

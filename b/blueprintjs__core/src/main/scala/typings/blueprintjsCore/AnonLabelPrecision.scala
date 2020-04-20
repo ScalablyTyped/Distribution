@@ -12,7 +12,6 @@ object AnonLabelPrecision {
   @scala.inline
   def apply(labelPrecision: Double): AnonLabelPrecision = {
     val __obj = js.Dynamic.literal(labelPrecision = labelPrecision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLabelPrecision]
   }
 }

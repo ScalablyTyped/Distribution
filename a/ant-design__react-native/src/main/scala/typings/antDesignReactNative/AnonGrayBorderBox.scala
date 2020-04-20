@@ -22,7 +22,6 @@ object AnonGrayBorderBox {
     text: RegisteredStyle[TextStyle]
   ): AnonGrayBorderBox = {
     val __obj = js.Dynamic.literal(grayBorderBox = grayBorderBox.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGrayBorderBox]
   }
 }

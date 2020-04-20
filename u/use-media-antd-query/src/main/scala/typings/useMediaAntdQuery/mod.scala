@@ -13,6 +13,16 @@ import scala.scalajs.js.annotation._
 @JSImport("use-media-antd-query", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.useMediaAntdQuery.useMediaAntdQueryStrings.xs
+    - typings.useMediaAntdQuery.useMediaAntdQueryStrings.sm
+    - typings.useMediaAntdQuery.useMediaAntdQueryStrings.md
+    - typings.useMediaAntdQuery.useMediaAntdQueryStrings.lg
+    - typings.useMediaAntdQuery.useMediaAntdQueryStrings.xl
+    - typings.useMediaAntdQuery.useMediaAntdQueryStrings.xxl
+  */
+  trait MediaQueryKey extends js.Object
+  
   def default(): xs | sm | md | lg | xl | xxl = js.native
   def getScreenClassName(): xs | sm | md | lg | xl | xxl = js.native
   @js.native
@@ -25,6 +35,5 @@ object mod extends js.Object {
     var xxl: AnonMinWidth = js.native
   }
   
-  type MediaQueryKey = String
 }
 

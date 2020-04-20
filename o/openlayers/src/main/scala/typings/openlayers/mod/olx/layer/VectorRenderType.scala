@@ -22,10 +22,8 @@ trait VectorRenderType extends js.Object
 
 object VectorRenderType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def image: typings.openlayers.openlayersStrings.image = "image".asInstanceOf[typings.openlayers.openlayersStrings.image]
   @scala.inline
-  def image: typings.openlayers.openlayersStrings.image = this.cast("image")
-  @scala.inline
-  def vector: typings.openlayers.openlayersStrings.vector = this.cast("vector")
+  def vector: typings.openlayers.openlayersStrings.vector = "vector".asInstanceOf[typings.openlayers.openlayersStrings.vector]
 }
 

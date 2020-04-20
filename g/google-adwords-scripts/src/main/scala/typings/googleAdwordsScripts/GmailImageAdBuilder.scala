@@ -34,7 +34,6 @@ object GmailImageAdBuilder {
     withTrackingTemplate: String => GmailImageAdBuilder[GmailImageAd]
   ): GmailImageAdBuilder[GmailImageAd] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withAdvertiser = js.Any.fromFunction1(withAdvertiser), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withDescription = js.Any.fromFunction1(withDescription), withDisplayUrl = js.Any.fromFunction1(withDisplayUrl), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withImage = js.Any.fromFunction1(withImage), withLogo = js.Any.fromFunction1(withLogo), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withName = js.Any.fromFunction1(withName), withSubject = js.Any.fromFunction1(withSubject), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
-  
     __obj.asInstanceOf[GmailImageAdBuilder[GmailImageAd]]
   }
 }

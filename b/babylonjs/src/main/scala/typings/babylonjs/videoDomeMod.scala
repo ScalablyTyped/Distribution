@@ -51,13 +51,13 @@ object videoDomeMod extends js.Object {
       * The current fov(field of view) multiplier, 0.0 - 2.0. Defaults to 1.0. Lower values "zoom in" and higher values "zoom out".
       * Also see the options.resolution property.
       */
-    def fovMultiplier(): Double = js.native
+    def fovMultiplier: Double = js.native
     def fovMultiplier(value: Double): js.Any = js.native
     /**
       * Is the video a 180 degrees video (half dome) or 360 video (full dome)
       *
       */
-    def halfDome(): Boolean = js.native
+    def halfDome: Boolean = js.native
     /**
       * Set the halfDome mode. If set, only the front (180 degrees) will be displayed and the back will be blacked out.
       */
@@ -68,12 +68,12 @@ object videoDomeMod extends js.Object {
       * * VideoDome.MODE_TOPBOTTOM  : Define the video source as a Stereoscopic TopBottom/OverUnder panoramic 360 video.
       * * VideoDome.MODE_SIDEBYSIDE : Define the video source as a Stereoscopic Side by Side panoramic 360 video.
       */
-    def videoMode(): Double = js.native
+    def videoMode: Double = js.native
     def videoMode(value: Double): js.Any = js.native
     /**
       * Gets the video texture being displayed on the sphere
       */
-    def videoTexture(): VideoTexture = js.native
+    def videoTexture: VideoTexture = js.native
   }
   
   /* static members */

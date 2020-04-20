@@ -16,7 +16,6 @@ object EntityRecognizerAnnotations {
   @scala.inline
   def apply(S3Uri: S3Uri): EntityRecognizerAnnotations = {
     val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntityRecognizerAnnotations]
   }
 }

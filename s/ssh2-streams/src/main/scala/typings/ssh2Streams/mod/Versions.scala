@@ -19,7 +19,6 @@ object Versions {
   @scala.inline
   def apply(protocol: String, software: String): Versions = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], software = software.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Versions]
   }
 }

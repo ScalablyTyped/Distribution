@@ -32,7 +32,6 @@ object LeaderboardPlayer {
   @scala.inline
   def apply(getID: () => String | Null, getName: () => String, getPhoto: () => String | Null): LeaderboardPlayer = {
     val __obj = js.Dynamic.literal(getID = js.Any.fromFunction0(getID), getName = js.Any.fromFunction0(getName), getPhoto = js.Any.fromFunction0(getPhoto))
-  
     __obj.asInstanceOf[LeaderboardPlayer]
   }
 }

@@ -33,7 +33,6 @@ object PutActionRevisionInput {
     stageName: StageName
   ): PutActionRevisionInput = {
     val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any], actionRevision = actionRevision.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutActionRevisionInput]
   }
 }

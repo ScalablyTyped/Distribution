@@ -10,7 +10,7 @@ trait gatsbyImageProps {
   def GatsbyImageProps: typings.gatsbyImage.mod.GatsbyImageProps.type = typings.gatsbyImage.mod.GatsbyImageProps
   type GatsbyImageProps = typings.gatsbyImage.mod.GatsbyImageProps
   @scala.inline
-  def WithIEPolyfillProps: GatsbyImageWithIEPolyfillProps.type = typings.gatsbyImage.withIEPolyfillMod.GatsbyImageWithIEPolyfillProps
+  def WithIEPolyfillProps: GatsbyImageWithIEPolyfillProps.type = GatsbyImageWithIEPolyfillProps
   type WithIEPolyfillProps = GatsbyImageWithIEPolyfillProps
 }
 

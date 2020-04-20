@@ -30,6 +30,14 @@ trait BuildingSceneLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#filters)
     */
   var filters: js.UndefOr[CollectionProperties[BuildingFilterProperties]] = js.undefined
+  /**
+    * An array of field names from the service to include with each feature in all sublayers. To fetch the values from all fields in all sublayers, use `["*"]`. BuildingSceneLayers usually have a large number of fields, so fetching all the values might lead to slower load times. Fields specified in `outFields` will be requested alongside with required fields for [rendering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#renderer) and [filtering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#filters) on all sublayers.  To include fields only in a specific sublayer, use the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#outFields) property of the sublayer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#outFields)
+    *
+    * @default null
+    */
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
 }
 
 object BuildingSceneLayerProperties {
@@ -46,6 +54,7 @@ object BuildingSceneLayerProperties {
     maxScale: Int | Double = null,
     minScale: Int | Double = null,
     opacity: Int | Double = null,
+    outFields: js.Array[String] = null,
     portalItem: PortalItemProperties = null,
     spatialReference: SpatialReferenceProperties = null,
     title: String = null,
@@ -64,6 +73,7 @@ object BuildingSceneLayerProperties {
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

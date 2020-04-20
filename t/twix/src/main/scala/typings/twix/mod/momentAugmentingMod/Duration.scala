@@ -13,7 +13,6 @@ object Duration {
   @scala.inline
   def apply(afterMoment: String => String, beforeMoment: String => String): Duration = {
     val __obj = js.Dynamic.literal(afterMoment = js.Any.fromFunction1(afterMoment), beforeMoment = js.Any.fromFunction1(beforeMoment))
-  
     __obj.asInstanceOf[Duration]
   }
 }

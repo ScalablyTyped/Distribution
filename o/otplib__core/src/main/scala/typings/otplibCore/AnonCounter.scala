@@ -15,7 +15,6 @@ object AnonCounter {
   @scala.inline
   def apply(counter: Double, secret: SecretKey, token: String): AnonCounter = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCounter]
   }
 }

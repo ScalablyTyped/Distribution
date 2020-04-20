@@ -15,7 +15,6 @@ object SandBoxMode {
   @scala.inline
   def apply(getEnable: () => Boolean, setEnable: Boolean => Unit, toJSON: () => AnonEnableBoolean): SandBoxMode = {
     val __obj = js.Dynamic.literal(getEnable = js.Any.fromFunction0(getEnable), setEnable = js.Any.fromFunction1(setEnable), toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[SandBoxMode]
   }
 }

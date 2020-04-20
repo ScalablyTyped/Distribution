@@ -33,7 +33,6 @@ object CreateNodeInput {
     NodeConfiguration: NodeConfiguration
   ): CreateNodeInput = {
     val __obj = js.Dynamic.literal(ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any], MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any], NodeConfiguration = NodeConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateNodeInput]
   }
 }

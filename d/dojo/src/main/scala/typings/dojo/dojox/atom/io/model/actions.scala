@@ -172,7 +172,6 @@ object actions {
     uri: (js.Any, js.Any) => Unit
   ): actions = {
     val __obj = js.Dynamic.literal(author = js.Any.fromFunction2(author), category = js.Any.fromFunction2(category), content = js.Any.fromFunction2(content), contributor = js.Any.fromFunction2(contributor), email = js.Any.fromFunction2(email), entry = js.Any.fromFunction2(entry), generator = js.Any.fromFunction2(generator), icon = js.Any.fromFunction2(icon), id = js.Any.fromFunction2(id), issued = js.Any.fromFunction2(issued), link = js.Any.fromFunction2(link), modified = js.Any.fromFunction2(modified), name = js.Any.fromFunction2(name), node = node.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], published = js.Any.fromFunction2(published), rights = js.Any.fromFunction2(rights), subtitle = js.Any.fromFunction2(subtitle), summary = js.Any.fromFunction2(summary), title = js.Any.fromFunction2(title), updated = js.Any.fromFunction2(updated), uri = js.Any.fromFunction2(uri))
-  
     __obj.asInstanceOf[actions]
   }
 }

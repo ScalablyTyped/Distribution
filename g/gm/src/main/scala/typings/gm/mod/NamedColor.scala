@@ -21,26 +21,24 @@ trait NamedColor extends js.Object
 
 object NamedColor {
   @scala.inline
-  def Black: typings.gm.gmStrings.Black = this.cast("Black")
+  def Black: typings.gm.gmStrings.Black = "Black".asInstanceOf[typings.gm.gmStrings.Black]
   @scala.inline
-  def Blue: typings.gm.gmStrings.Blue = this.cast("Blue")
+  def Blue: typings.gm.gmStrings.Blue = "Blue".asInstanceOf[typings.gm.gmStrings.Blue]
   @scala.inline
-  def Cyan: typings.gm.gmStrings.Cyan = this.cast("Cyan")
+  def Cyan: typings.gm.gmStrings.Cyan = "Cyan".asInstanceOf[typings.gm.gmStrings.Cyan]
   @scala.inline
-  def Gray: Gray_ = this.cast("Gray")
+  def Gray: Gray_ = "Gray".asInstanceOf[Gray_]
   @scala.inline
-  def Green: typings.gm.gmStrings.Green = this.cast("Green")
+  def Green: typings.gm.gmStrings.Green = "Green".asInstanceOf[typings.gm.gmStrings.Green]
   @scala.inline
-  def Magenta: typings.gm.gmStrings.Magenta = this.cast("Magenta")
+  def Magenta: typings.gm.gmStrings.Magenta = "Magenta".asInstanceOf[typings.gm.gmStrings.Magenta]
   @scala.inline
-  def Matte: typings.gm.gmStrings.Matte = this.cast("Matte")
+  def Matte: typings.gm.gmStrings.Matte = "Matte".asInstanceOf[typings.gm.gmStrings.Matte]
   @scala.inline
-  def Opacity: typings.gm.gmStrings.Opacity = this.cast("Opacity")
+  def Opacity: typings.gm.gmStrings.Opacity = "Opacity".asInstanceOf[typings.gm.gmStrings.Opacity]
   @scala.inline
-  def Red: typings.gm.gmStrings.Red = this.cast("Red")
+  def Red: typings.gm.gmStrings.Red = "Red".asInstanceOf[typings.gm.gmStrings.Red]
   @scala.inline
-  def Yellow: typings.gm.gmStrings.Yellow = this.cast("Yellow")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Yellow: typings.gm.gmStrings.Yellow = "Yellow".asInstanceOf[typings.gm.gmStrings.Yellow]
 }
 

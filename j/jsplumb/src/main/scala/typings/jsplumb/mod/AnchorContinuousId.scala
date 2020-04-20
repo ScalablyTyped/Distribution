@@ -15,16 +15,14 @@ trait AnchorContinuousId extends _AnchorId
 
 object AnchorContinuousId {
   @scala.inline
-  def Continuous: typings.jsplumb.jsplumbStrings.Continuous = this.cast("Continuous")
+  def Continuous: typings.jsplumb.jsplumbStrings.Continuous = "Continuous".asInstanceOf[typings.jsplumb.jsplumbStrings.Continuous]
   @scala.inline
-  def ContinuousBottom: typings.jsplumb.jsplumbStrings.ContinuousBottom = this.cast("ContinuousBottom")
+  def ContinuousBottom: typings.jsplumb.jsplumbStrings.ContinuousBottom = "ContinuousBottom".asInstanceOf[typings.jsplumb.jsplumbStrings.ContinuousBottom]
   @scala.inline
-  def ContinuousLeft: typings.jsplumb.jsplumbStrings.ContinuousLeft = this.cast("ContinuousLeft")
+  def ContinuousLeft: typings.jsplumb.jsplumbStrings.ContinuousLeft = "ContinuousLeft".asInstanceOf[typings.jsplumb.jsplumbStrings.ContinuousLeft]
   @scala.inline
-  def ContinuousRight: typings.jsplumb.jsplumbStrings.ContinuousRight = this.cast("ContinuousRight")
+  def ContinuousRight: typings.jsplumb.jsplumbStrings.ContinuousRight = "ContinuousRight".asInstanceOf[typings.jsplumb.jsplumbStrings.ContinuousRight]
   @scala.inline
-  def ContinuousTop: typings.jsplumb.jsplumbStrings.ContinuousTop = this.cast("ContinuousTop")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ContinuousTop: typings.jsplumb.jsplumbStrings.ContinuousTop = "ContinuousTop".asInstanceOf[typings.jsplumb.jsplumbStrings.ContinuousTop]
 }
 

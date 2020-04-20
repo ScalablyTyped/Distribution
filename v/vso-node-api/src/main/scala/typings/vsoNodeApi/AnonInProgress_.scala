@@ -16,7 +16,6 @@ object AnonInProgress_ {
   @scala.inline
   def apply(abandoned: Double, completed: Double, failed: Double, inProgress: Double, queued: Double): AnonInProgress_ = {
     val __obj = js.Dynamic.literal(abandoned = abandoned.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInProgress_]
   }
 }

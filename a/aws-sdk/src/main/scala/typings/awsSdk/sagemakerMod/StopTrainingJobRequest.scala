@@ -16,7 +16,6 @@ object StopTrainingJobRequest {
   @scala.inline
   def apply(TrainingJobName: TrainingJobName): StopTrainingJobRequest = {
     val __obj = js.Dynamic.literal(TrainingJobName = TrainingJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopTrainingJobRequest]
   }
 }

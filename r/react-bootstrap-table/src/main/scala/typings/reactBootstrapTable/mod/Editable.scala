@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Editable[TRow /* <: js.Object */, K /* <: String */] extends js.Object {
+trait Editable[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] extends js.Object {
   /**
   	 * Additional attributes for the editor component.
   	 */
@@ -69,7 +69,7 @@ trait Editable[TRow /* <: js.Object */, K /* <: String */] extends js.Object {
 
 object Editable {
   @scala.inline
-  def apply[TRow /* <: js.Object */, K /* <: String */](
+  def apply[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](
     attrs: EditableAttrs = null,
     className: String = null,
     cols: Int | Double = null,

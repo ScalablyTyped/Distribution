@@ -13,12 +13,10 @@ trait UpdateReason extends js.Object
 
 object UpdateReason {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def messageType: typings.twilioNotifications.twilioNotificationsStrings.messageType = "messageType".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.messageType]
   @scala.inline
-  def messageType: typings.twilioNotifications.twilioNotificationsStrings.messageType = this.cast("messageType")
+  def notificationId: typings.twilioNotifications.twilioNotificationsStrings.notificationId = "notificationId".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.notificationId]
   @scala.inline
-  def notificationId: typings.twilioNotifications.twilioNotificationsStrings.notificationId = this.cast("notificationId")
-  @scala.inline
-  def token: typings.twilioNotifications.twilioNotificationsStrings.token = this.cast("token")
+  def token: typings.twilioNotifications.twilioNotificationsStrings.token = "token".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.token]
 }
 

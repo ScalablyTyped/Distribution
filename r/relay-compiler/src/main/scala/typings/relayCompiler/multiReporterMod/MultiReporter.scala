@@ -16,7 +16,6 @@ object MultiReporter {
     reportTime: (String, Double) => Unit
   ): MultiReporter = {
     val __obj = js.Dynamic.literal(reportError = js.Any.fromFunction2(reportError), reportMessage = js.Any.fromFunction1(reportMessage), reportTime = js.Any.fromFunction2(reportTime))
-  
     __obj.asInstanceOf[MultiReporter]
   }
 }

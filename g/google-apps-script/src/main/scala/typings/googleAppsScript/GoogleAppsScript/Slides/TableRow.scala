@@ -28,7 +28,6 @@ object TableRow {
     remove: () => Unit
   ): TableRow = {
     val __obj = js.Dynamic.literal(getCell = js.Any.fromFunction1(getCell), getIndex = js.Any.fromFunction0(getIndex), getMinimumHeight = js.Any.fromFunction0(getMinimumHeight), getNumCells = js.Any.fromFunction0(getNumCells), getParentTable = js.Any.fromFunction0(getParentTable), remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[TableRow]
   }
 }

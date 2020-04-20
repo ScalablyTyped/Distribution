@@ -12,7 +12,6 @@ object FollowersParams {
   @scala.inline
   def apply(followers: js.Array[Double | String]): FollowersParams = {
     val __obj = js.Dynamic.literal(followers = followers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FollowersParams]
   }
 }

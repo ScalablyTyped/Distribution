@@ -29,7 +29,7 @@ trait PageInstanceBaseProps[D /* <: IAnyObject */] extends js.Object {
     */
   var setData: js.UndefOr[
     js.Function2[
-      /* data */ D | (Pick[D, String]) | IAnyObject, 
+      /* data */ D | (Pick[D, /* keyof D */ String]) | IAnyObject, 
       /* callback */ js.UndefOr[js.Function0[Unit]], 
       Unit
     ]
@@ -41,7 +41,7 @@ object PageInstanceBaseProps {
   def apply[D /* <: IAnyObject */](
     data: D = null,
     route: String = null,
-    setData: (/* data */ D | (Pick[D, String]) | IAnyObject, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit = null
+    setData: (/* data */ D | (Pick[D, /* keyof D */ String]) | IAnyObject, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit = null
   ): PageInstanceBaseProps[D] = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

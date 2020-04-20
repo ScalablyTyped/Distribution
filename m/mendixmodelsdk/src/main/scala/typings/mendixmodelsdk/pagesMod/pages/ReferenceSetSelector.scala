@@ -37,35 +37,35 @@ class ReferenceSetSelector protected () extends ColumnGrid {
     *
     * In version 7.11.0: deleted
     */
-  def constrainedBy(): IList[String] = js.native
+  def constrainedBy: IList[String] = js.native
   /**
     * In version 7.11.0: introduced
     */
-  def constrainedByRefs(): IList[EntityRef] = js.native
+  def constrainedByRefs: IList[EntityRef] = js.native
   /**
     * In version 7.13.0: introduced
     */
-  def onChangeAction(): ClientAction = js.native
+  def onChangeAction: ClientAction = js.native
   def onChangeAction(newValue: ClientAction): js.Any = js.native
   /**
     * In version 7.13.0: deleted
     */
-  def onChangeMicroflowSettings(): MicroflowSettings = js.native
+  def onChangeMicroflowSettings: MicroflowSettings = js.native
   def onChangeMicroflowSettings(newValue: MicroflowSettings): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def removeAllFromContext(): Boolean = js.native
+  def removeAllFromContext: Boolean = js.native
   def removeAllFromContext(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def removeFromContextEntities(): IList[IEntity] = js.native
-  def removeFromContextEntitiesQualifiedNames(): js.Array[String] = js.native
+  def removeFromContextEntities: IList[IEntity] = js.native
+  def removeFromContextEntitiesQualifiedNames: js.Array[String] = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  def xPathConstraint(): String = js.native
+  def xPathConstraint: String = js.native
   def xPathConstraint(newValue: String): js.Any = js.native
 }
 

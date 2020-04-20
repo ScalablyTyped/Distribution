@@ -14,7 +14,6 @@ object PickImplurl {
   @scala.inline
   def apply(url: `false` | String): PickImplurl = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplurl]
   }
 }

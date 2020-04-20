@@ -13,7 +13,6 @@ object ObjectConstructor {
   @scala.inline
   def apply(like: js.Any => ObjectConstructor, reference: js.Any => ObjectConstructor): ObjectConstructor = {
     val __obj = js.Dynamic.literal(like = js.Any.fromFunction1(like), reference = js.Any.fromFunction1(reference))
-  
     __obj.asInstanceOf[ObjectConstructor]
   }
 }

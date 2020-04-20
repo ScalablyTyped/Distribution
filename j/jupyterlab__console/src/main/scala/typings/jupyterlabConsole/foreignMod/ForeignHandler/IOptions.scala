@@ -23,7 +23,6 @@ object IOptions {
   @scala.inline
   def apply(parent: IReceiver, sessionContext: ISessionContext): IOptions = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], sessionContext = sessionContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

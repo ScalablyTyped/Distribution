@@ -18,7 +18,6 @@ object BucketServerSideEncryptionConfigurationRule {
     applyServerSideEncryptionByDefault: BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault
   ): BucketServerSideEncryptionConfigurationRule = {
     val __obj = js.Dynamic.literal(applyServerSideEncryptionByDefault = applyServerSideEncryptionByDefault.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BucketServerSideEncryptionConfigurationRule]
   }
 }

@@ -394,7 +394,7 @@ object googleAdwordsScriptsStrings {
   @scala.inline
   def Android: Android = "Android".asInstanceOf[Android]
   @scala.inline
-  def `Autonomous Community`: `Autonomous Community` = "Autonomous Community".asInstanceOf[`Autonomous Community`]
+  def `Autonomous Community`: `Autonomous Community` = ("Autonomous Community").asInstanceOf[`Autonomous Community`]
   @scala.inline
   def BROAD: BROAD = "BROAD".asInstanceOf[BROAD]
   @scala.inline
@@ -416,9 +416,9 @@ object googleAdwordsScriptsStrings {
   @scala.inline
   def City: City = "City".asInstanceOf[City]
   @scala.inline
-  def `City Region`: `City Region` = "City Region".asInstanceOf[`City Region`]
+  def `City Region`: `City Region` = ("City Region").asInstanceOf[`City Region`]
   @scala.inline
-  def `Congressional District`: `Congressional District` = "Congressional District".asInstanceOf[`Congressional District`]
+  def `Congressional District`: `Congressional District` = ("Congressional District").asInstanceOf[`Congressional District`]
   @scala.inline
   def Country: Country = "Country".asInstanceOf[Country]
   @scala.inline
@@ -498,7 +498,7 @@ object googleAdwordsScriptsStrings {
   @scala.inline
   def NON_FAMILY_SAFE: NON_FAMILY_SAFE = "NON_FAMILY_SAFE".asInstanceOf[NON_FAMILY_SAFE]
   @scala.inline
-  def `National Park`: `National Park` = "National Park".asInstanceOf[`National Park`]
+  def `National Park`: `National Park` = ("National Park").asInstanceOf[`National Park`]
   @scala.inline
   def Neighborhood: Neighborhood = "Neighborhood".asInstanceOf[Neighborhood]
   @scala.inline
@@ -526,7 +526,7 @@ object googleAdwordsScriptsStrings {
   @scala.inline
   def PRODUCT_AD: PRODUCT_AD = "PRODUCT_AD".asInstanceOf[PRODUCT_AD]
   @scala.inline
-  def `Postal Code`: `Postal Code` = "Postal Code".asInstanceOf[`Postal Code`]
+  def `Postal Code`: `Postal Code` = ("Postal Code").asInstanceOf[`Postal Code`]
   @scala.inline
   def Prefecture: Prefecture = "Prefecture".asInstanceOf[Prefecture]
   @scala.inline
@@ -588,7 +588,7 @@ object googleAdwordsScriptsStrings {
   @scala.inline
   def TUESDAY: TUESDAY = "TUESDAY".asInstanceOf[TUESDAY]
   @scala.inline
-  def `TV Region`: `TV Region` = "TV Region".asInstanceOf[`TV Region`]
+  def `TV Region`: `TV Region` = ("TV Region").asInstanceOf[`TV Region`]
   @scala.inline
   def TWENTY_MILLION_TO_THIRTY_MILLION: TWENTY_MILLION_TO_THIRTY_MILLION = "TWENTY_MILLION_TO_THIRTY_MILLION".asInstanceOf[TWENTY_MILLION_TO_THIRTY_MILLION]
   @scala.inline
@@ -610,7 +610,7 @@ object googleAdwordsScriptsStrings {
   @scala.inline
   def USER_LIST: USER_LIST = "USER_LIST".asInstanceOf[USER_LIST]
   @scala.inline
-  def `Union Territory`: `Union Territory` = "Union Territory".asInstanceOf[`Union Territory`]
+  def `Union Territory`: `Union Territory` = ("Union Territory").asInstanceOf[`Union Territory`]
   @scala.inline
   def University: University = "University".asInstanceOf[University]
   @scala.inline

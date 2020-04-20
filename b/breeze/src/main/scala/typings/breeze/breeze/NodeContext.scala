@@ -13,7 +13,6 @@ object NodeContext {
   @scala.inline
   def apply(nodeType: String, propertyName: String): NodeContext = {
     val __obj = js.Dynamic.literal(nodeType = nodeType.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeContext]
   }
 }

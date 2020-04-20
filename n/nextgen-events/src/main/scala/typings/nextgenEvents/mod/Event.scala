@@ -26,7 +26,6 @@ object Event {
     sync: Boolean
   ): Event = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], callback = js.Any.fromFunction1(callback), emitter = emitter.asInstanceOf[js.Any], interrupt = interrupt.asInstanceOf[js.Any], mice = mice.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Event]
   }
 }

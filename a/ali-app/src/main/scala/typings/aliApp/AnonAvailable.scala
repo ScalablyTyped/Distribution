@@ -19,7 +19,6 @@ object AnonAvailable {
   @scala.inline
   def apply(available: Boolean, discovering: Boolean): AnonAvailable = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], discovering = discovering.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAvailable]
   }
 }

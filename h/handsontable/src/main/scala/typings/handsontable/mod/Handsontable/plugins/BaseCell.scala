@@ -24,7 +24,6 @@ object BaseCell {
     translateTo: (Double, Double) => Unit
   ): BaseCell = {
     val __obj = js.Dynamic.literal(columnAbsolute = columnAbsolute.asInstanceOf[js.Any], columnOffset = columnOffset.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual), rowAbsolute = rowAbsolute.asInstanceOf[js.Any], rowOffset = rowOffset.asInstanceOf[js.Any], translateTo = js.Any.fromFunction2(translateTo))
-  
     __obj.asInstanceOf[BaseCell]
   }
 }

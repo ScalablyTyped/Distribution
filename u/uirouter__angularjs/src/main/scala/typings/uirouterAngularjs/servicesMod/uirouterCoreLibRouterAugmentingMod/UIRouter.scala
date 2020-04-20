@@ -17,7 +17,6 @@ object UIRouter {
   @scala.inline
   def apply(stateProvider: StateProvider, urlRouterProvider: UrlRouterProvider): UIRouter = {
     val __obj = js.Dynamic.literal(stateProvider = stateProvider.asInstanceOf[js.Any], urlRouterProvider = urlRouterProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UIRouter]
   }
 }

@@ -32,8 +32,8 @@ class CreateObjectClientAction protected () extends ClientAction {
   def entityRef(): js.Any = js.native
   def entityRef(newValue: EntityRef): js.Any = js.native
   @JSName("entityRef")
-  def entityRef_Union(): EntityRef | Null = js.native
-  def pageSettings(): PageSettings = js.native
+  def entityRef_Union: EntityRef | Null = js.native
+  def pageSettings: PageSettings = js.native
   def pageSettings(newValue: PageSettings): js.Any = js.native
 }
 

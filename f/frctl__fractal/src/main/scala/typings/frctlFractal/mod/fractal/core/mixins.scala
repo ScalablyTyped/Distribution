@@ -21,30 +21,30 @@ object mixins extends js.Object {
     val isFile: js.UndefOr[scala.Nothing] = js.native
     val isVariant: js.UndefOr[scala.Nothing] = js.native
     val items: js.Array[T] = js.native
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[T]] = js.native
     val size: Double = js.native
     def collections(): this.type = js.native
     def each(fn: js.Function1[/* item */ T, Unit]): this.type = js.native
     def eq(pos: Double): js.UndefOr[T] = js.native
     def filter(handle: String): js.Array[T] = js.native
-    def filter[TKey /* <: String */](
+    def filter[TKey /* <: /* keyof T */ String */](
       name: TKey,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
     ): js.Array[T] = js.native
     def filterItems(items: js.Array[T], handle: String): js.Array[T] = js.native
-    def filterItems[TKey /* <: String */](
+    def filterItems[TKey /* <: /* keyof T */ String */](
       items: js.Array[T],
       name: TKey,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
     ): js.Array[T] = js.native
     def find(handle: String): T = js.native
-    def find[TKey /* <: String */](
+    def find[TKey /* <: /* keyof T */ String */](
       name: TKey,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
     ): T = js.native
     def findCollection(handle: String): Collection[T] = js.native
-    def findCollection[TKey /* <: String */](
+    def findCollection[TKey /* <: /* keyof T */ String */](
       name: TKey,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
     ): Collection[T] = js.native
@@ -72,14 +72,14 @@ object mixins extends js.Object {
   abstract class Configurable[T] () extends js.Object {
     def config(): T = js.native
     def config(config: T): this.type = js.native
-    def get[K /* <: String */, V](path: K): js.UndefOr[
+    def get[K /* <: /* keyof T */ String */, V](path: K): js.UndefOr[
         (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
-    def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
+    def get[K /* <: /* keyof T */ String */, V](path: K, defaultValue: V): js.UndefOr[
         (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
-    def set[K /* <: String */](path: K): this.type = js.native
-    def set[K /* <: String */](
+    def set[K /* <: /* keyof T */ String */](path: K): this.type = js.native
+    def set[K /* <: /* keyof T */ String */](
       path: K,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ): this.type = js.native
@@ -93,14 +93,14 @@ object mixins extends js.Object {
   abstract class ConfigurableEmitter[T] () extends EventEmitter {
     def config(): T = js.native
     def config(config: T): this.type = js.native
-    def get[K /* <: String */, V](path: K): js.UndefOr[
+    def get[K /* <: /* keyof T */ String */, V](path: K): js.UndefOr[
         (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
-    def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
+    def get[K /* <: /* keyof T */ String */, V](path: K, defaultValue: V): js.UndefOr[
         (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
-    def set[K /* <: String */](path: K): this.type = js.native
-    def set[K /* <: String */](
+    def set[K /* <: /* keyof T */ String */](path: K): this.type = js.native
+    def set[K /* <: /* keyof T */ String */](
       path: K,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ): this.type = js.native
@@ -137,18 +137,18 @@ object mixins extends js.Object {
     def config(): TConfig = js.native
     def config(config: TConfig): this.type = js.native
     def exists(): Boolean = js.native
-    def get[K /* <: String */, V](path: K): js.UndefOr[
+    def get[K /* <: /* keyof T */ String */, V](path: K): js.UndefOr[
         (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
-    def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
+    def get[K /* <: /* keyof T */ String */, V](path: K, defaultValue: V): js.UndefOr[
         (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def isConfig(file: String): Boolean = js.native
     def load(): js.Promise[this.type] = js.native
     def load(force: Boolean): js.Promise[this.type] = js.native
     def refresh(): js.Promise[this.type] = js.native
-    def set[K /* <: String */](path: K): this.type = js.native
-    def set[K /* <: String */](
+    def set[K /* <: /* keyof T */ String */](path: K): this.type = js.native
+    def set[K /* <: /* keyof T */ String */](
       path: K,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ): this.type = js.native

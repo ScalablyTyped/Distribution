@@ -13,12 +13,10 @@ trait TagVisibility extends js.Object
 
 object TagVisibility {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def draft: typings.tryghostContentApi.tryghostContentApiStrings.draft = "draft".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.draft]
   @scala.inline
-  def draft: typings.tryghostContentApi.tryghostContentApiStrings.draft = this.cast("draft")
+  def public: typings.tryghostContentApi.tryghostContentApiStrings.public = "public".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.public]
   @scala.inline
-  def public: typings.tryghostContentApi.tryghostContentApiStrings.public = this.cast("public")
-  @scala.inline
-  def scheduled: typings.tryghostContentApi.tryghostContentApiStrings.scheduled = this.cast("scheduled")
+  def scheduled: typings.tryghostContentApi.tryghostContentApiStrings.scheduled = "scheduled".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.scheduled]
 }
 

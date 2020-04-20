@@ -13,12 +13,10 @@ trait ValidationStates extends js.Object
 
 object ValidationStates {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.storybookComponents.storybookComponentsStrings.error = "error".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.error]
   @scala.inline
-  def error: typings.storybookComponents.storybookComponentsStrings.error = this.cast("error")
+  def valid: typings.storybookComponents.storybookComponentsStrings.valid = "valid".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.valid]
   @scala.inline
-  def valid: typings.storybookComponents.storybookComponentsStrings.valid = this.cast("valid")
-  @scala.inline
-  def warn: typings.storybookComponents.storybookComponentsStrings.warn = this.cast("warn")
+  def warn: typings.storybookComponents.storybookComponentsStrings.warn = "warn".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.warn]
 }
 

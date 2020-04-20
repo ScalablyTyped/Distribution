@@ -42,7 +42,6 @@ object DataExprs_ {
     TimeExpr: () => Unit
   ): DataExprs_ = {
     val __obj = js.Dynamic.literal(BooleanExpr = js.Any.fromFunction0(BooleanExpr), DateExpr = js.Any.fromFunction0(DateExpr), NumberExpr = js.Any.fromFunction0(NumberExpr), StringExpr = js.Any.fromFunction0(StringExpr), TimeExpr = js.Any.fromFunction0(TimeExpr))
-  
     __obj.asInstanceOf[DataExprs_]
   }
 }

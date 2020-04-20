@@ -14,10 +14,8 @@ trait WdRoutingSlipDelivery extends js.Object
 
 object WdRoutingSlipDelivery {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAllAtOnce: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdAllAtOnce: `1` = this.cast(1)
-  @scala.inline
-  def wdOneAfterAnother: `0` = this.cast(0)
+  def wdOneAfterAnother: `0` = 0.asInstanceOf[`0`]
 }
 

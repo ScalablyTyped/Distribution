@@ -16,7 +16,6 @@ object ListQueueTagsRequest {
   @scala.inline
   def apply(QueueUrl: String): ListQueueTagsRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListQueueTagsRequest]
   }
 }

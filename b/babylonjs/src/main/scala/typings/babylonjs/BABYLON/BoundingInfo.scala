@@ -40,7 +40,7 @@ class BoundingInfo protected () extends ICullable {
   /**
     * Gets the world distance between the min and max points of the bounding box
     */
-  def diagonalLength(): Double = js.native
+  def diagonalLength: Double = js.native
   /**
     * Checks if another bounding info intersects the bounding box and bounding sphere or the mesh
     * @see https://doc.babylonjs.com/babylon101/intersect_collisions_-_mesh
@@ -75,16 +75,16 @@ class BoundingInfo protected () extends ICullable {
   /**
     * If the info is locked and won't be updated to avoid perf overhead
     */
-  def isLocked(): Boolean = js.native
+  def isLocked: Boolean = js.native
   def isLocked(value: Boolean): js.Any = js.native
   /**
     * max vector of the bounding box/sphere
     */
-  def maximum(): Vector3 = js.native
+  def maximum: Vector3 = js.native
   /**
     * min vector of the bounding box/sphere
     */
-  def minimum(): Vector3 = js.native
+  def minimum: Vector3 = js.native
   /**
     * Recreates the entire bounding info from scratch as if we call the constructor in place
     * @param min defines the new minimum vector (in local space)

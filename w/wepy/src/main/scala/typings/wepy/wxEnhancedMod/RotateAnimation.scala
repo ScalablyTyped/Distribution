@@ -22,7 +22,6 @@ object RotateAnimation {
     rotateZ: Double => Animation
   ): RotateAnimation = {
     val __obj = js.Dynamic.literal(rotate = js.Any.fromFunction1(rotate), rotate3d = js.Any.fromFunction0(rotate3d), rotateX = js.Any.fromFunction1(rotateX), rotateY = js.Any.fromFunction1(rotateY), rotateZ = js.Any.fromFunction1(rotateZ))
-  
     __obj.asInstanceOf[RotateAnimation]
   }
 }

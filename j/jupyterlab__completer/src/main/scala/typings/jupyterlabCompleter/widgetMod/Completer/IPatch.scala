@@ -26,7 +26,6 @@ object IPatch {
   @scala.inline
   def apply(end: Double, start: Double, value: String): IPatch = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPatch]
   }
 }

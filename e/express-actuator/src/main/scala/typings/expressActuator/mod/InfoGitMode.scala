@@ -12,10 +12,8 @@ trait InfoGitMode extends js.Object
 
 object InfoGitMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def full: typings.expressActuator.expressActuatorStrings.full = "full".asInstanceOf[typings.expressActuator.expressActuatorStrings.full]
   @scala.inline
-  def full: typings.expressActuator.expressActuatorStrings.full = this.cast("full")
-  @scala.inline
-  def simple: typings.expressActuator.expressActuatorStrings.simple = this.cast("simple")
+  def simple: typings.expressActuator.expressActuatorStrings.simple = "simple".asInstanceOf[typings.expressActuator.expressActuatorStrings.simple]
 }
 

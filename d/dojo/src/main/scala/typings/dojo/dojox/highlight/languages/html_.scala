@@ -52,7 +52,6 @@ object html_ {
     modes: js.Array[_]
   ): html_ = {
     val __obj = js.Dynamic.literal(HTML_ATTR = HTML_ATTR.asInstanceOf[js.Any], HTML_DOCTYPE = HTML_DOCTYPE.asInstanceOf[js.Any], HTML_TAGS = HTML_TAGS.asInstanceOf[js.Any], HTML_VALUE = HTML_VALUE.asInstanceOf[js.Any], case_insensitive = case_insensitive.asInstanceOf[js.Any], defaultMode = defaultMode.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[html_]
   }
 }

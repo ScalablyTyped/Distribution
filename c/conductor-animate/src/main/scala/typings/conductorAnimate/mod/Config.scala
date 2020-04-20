@@ -12,7 +12,6 @@ object Config {
   @scala.inline
   def apply(animation: String): Config = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Config]
   }
 }

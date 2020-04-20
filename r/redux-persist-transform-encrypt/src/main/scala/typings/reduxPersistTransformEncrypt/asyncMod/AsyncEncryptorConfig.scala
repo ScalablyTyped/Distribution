@@ -12,7 +12,6 @@ object AsyncEncryptorConfig {
   @scala.inline
   def apply(secretKey: String): AsyncEncryptorConfig = {
     val __obj = js.Dynamic.literal(secretKey = secretKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsyncEncryptorConfig]
   }
 }

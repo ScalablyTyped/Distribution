@@ -17,7 +17,6 @@ object CreatePushTemplateRequest {
   @scala.inline
   def apply(PushNotificationTemplateRequest: PushNotificationTemplateRequest, TemplateName: string): CreatePushTemplateRequest = {
     val __obj = js.Dynamic.literal(PushNotificationTemplateRequest = PushNotificationTemplateRequest.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePushTemplateRequest]
   }
 }

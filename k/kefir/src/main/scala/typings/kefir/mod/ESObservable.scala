@@ -13,7 +13,6 @@ object ESObservable {
   @scala.inline
   def apply[T, S](subscribe: ESObserver[T, S] => AnonUnsubscribe): ESObservable[T, S] = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[ESObservable[T, S]]
   }
 }

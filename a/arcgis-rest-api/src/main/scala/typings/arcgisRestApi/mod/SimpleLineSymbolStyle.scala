@@ -16,18 +16,16 @@ trait SimpleLineSymbolStyle extends js.Object
 
 object SimpleLineSymbolStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def esriSLSDash: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDash = "esriSLSDash".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDash]
   @scala.inline
-  def esriSLSDash: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDash = this.cast("esriSLSDash")
+  def esriSLSDashDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot = "esriSLSDashDot".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot]
   @scala.inline
-  def esriSLSDashDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot = this.cast("esriSLSDashDot")
+  def esriSLSDashDotDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot = "esriSLSDashDotDot".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot]
   @scala.inline
-  def esriSLSDashDotDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot = this.cast("esriSLSDashDotDot")
+  def esriSLSDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDot = "esriSLSDot".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDot]
   @scala.inline
-  def esriSLSDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDot = this.cast("esriSLSDot")
+  def esriSLSNull: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSNull = "esriSLSNull".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSNull]
   @scala.inline
-  def esriSLSNull: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSNull = this.cast("esriSLSNull")
-  @scala.inline
-  def esriSLSSolid: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid = this.cast("esriSLSSolid")
+  def esriSLSSolid: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid = "esriSLSSolid".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid]
 }
 

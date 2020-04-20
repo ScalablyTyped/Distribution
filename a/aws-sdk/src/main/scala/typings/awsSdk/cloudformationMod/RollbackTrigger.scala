@@ -20,7 +20,6 @@ object RollbackTrigger {
   @scala.inline
   def apply(Arn: Arn, Type: Type): RollbackTrigger = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollbackTrigger]
   }
 }

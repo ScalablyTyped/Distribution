@@ -24,7 +24,6 @@ object AnonButton {
     root: String
   ): AnonButton = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttonAdd = buttonAdd.asInstanceOf[js.Any], buttonRemove = buttonRemove.asInstanceOf[js.Any], iconAdd = iconAdd.asInstanceOf[js.Any], iconRemove = iconRemove.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonButton]
   }
 }

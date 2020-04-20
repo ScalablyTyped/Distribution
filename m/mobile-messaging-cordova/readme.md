@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobile-messaging-cordova
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 
 

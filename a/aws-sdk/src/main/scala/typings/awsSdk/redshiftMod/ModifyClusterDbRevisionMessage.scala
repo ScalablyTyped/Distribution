@@ -20,7 +20,6 @@ object ModifyClusterDbRevisionMessage {
   @scala.inline
   def apply(ClusterIdentifier: String, RevisionTarget: String): ModifyClusterDbRevisionMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], RevisionTarget = RevisionTarget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyClusterDbRevisionMessage]
   }
 }

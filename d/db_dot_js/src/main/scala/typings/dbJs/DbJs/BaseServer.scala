@@ -14,7 +14,6 @@ object BaseServer {
   @scala.inline
   def apply(close: () => Unit, getIndexedDB: () => IDBDatabase): BaseServer = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getIndexedDB = js.Any.fromFunction0(getIndexedDB))
-  
     __obj.asInstanceOf[BaseServer]
   }
 }

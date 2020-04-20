@@ -21,7 +21,6 @@ object PagesResource {
   @scala.inline
   def apply(get: AnonAccesstoken => Request_[Page], getThumbnail: AnonAlt => Request_[Thumbnail]): PagesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getThumbnail = js.Any.fromFunction1(getThumbnail))
-  
     __obj.asInstanceOf[PagesResource]
   }
 }

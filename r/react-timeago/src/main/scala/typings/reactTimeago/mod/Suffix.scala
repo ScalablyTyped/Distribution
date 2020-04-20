@@ -12,10 +12,8 @@ trait Suffix extends js.Object
 
 object Suffix {
   @scala.inline
-  def ago: typings.reactTimeago.reactTimeagoStrings.ago = this.cast("ago")
+  def ago: typings.reactTimeago.reactTimeagoStrings.ago = "ago".asInstanceOf[typings.reactTimeago.reactTimeagoStrings.ago]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `from now`: typings.reactTimeago.reactTimeagoStrings.`from now` = this.cast("from now")
+  def `from now`: typings.reactTimeago.reactTimeagoStrings.`from now` = ("from now").asInstanceOf[typings.reactTimeago.reactTimeagoStrings.`from now`]
 }
 

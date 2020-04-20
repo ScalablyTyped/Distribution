@@ -1,9 +1,9 @@
 package typings.cypress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.cypressMod.Nullable
 import typings.cypress.cypressStrings.bundled
 import typings.cypress.cypressStrings.system
+import typings.cypress.mod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,7 @@ trait PartialConfigOptions extends js.Object {
   var defaultCommandTimeout: js.UndefOr[Double] = js.undefined
   var env: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var execTimeout: js.UndefOr[Double] = js.undefined
+  var experimentalGetCookiesSameSite: js.UndefOr[Boolean] = js.undefined
   var fileServerFolder: js.UndefOr[String] = js.undefined
   var firefoxGcInterval: js.UndefOr[Nullable[Double | AnonOpenMode]] = js.undefined
   var fixturesFolder: js.UndefOr[String] = js.undefined
@@ -53,6 +54,7 @@ object PartialConfigOptions {
     defaultCommandTimeout: Int | Double = null,
     env: StringDictionary[js.Any] = null,
     execTimeout: Int | Double = null,
+    experimentalGetCookiesSameSite: js.UndefOr[Boolean] = js.undefined,
     fileServerFolder: String = null,
     firefoxGcInterval: Nullable[Double | AnonOpenMode] = null,
     fixturesFolder: String = null,
@@ -87,6 +89,7 @@ object PartialConfigOptions {
     if (defaultCommandTimeout != null) __obj.updateDynamic("defaultCommandTimeout")(defaultCommandTimeout.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (execTimeout != null) __obj.updateDynamic("execTimeout")(execTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentalGetCookiesSameSite)) __obj.updateDynamic("experimentalGetCookiesSameSite")(experimentalGetCookiesSameSite.asInstanceOf[js.Any])
     if (fileServerFolder != null) __obj.updateDynamic("fileServerFolder")(fileServerFolder.asInstanceOf[js.Any])
     if (firefoxGcInterval != null) __obj.updateDynamic("firefoxGcInterval")(firefoxGcInterval.asInstanceOf[js.Any])
     if (fixturesFolder != null) __obj.updateDynamic("fixturesFolder")(fixturesFolder.asInstanceOf[js.Any])

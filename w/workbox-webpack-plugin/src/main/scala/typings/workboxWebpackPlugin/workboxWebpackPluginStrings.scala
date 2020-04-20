@@ -21,6 +21,9 @@ object workboxWebpackPluginStrings {
   @js.native
   sealed trait StaleWhileRevalidate extends ChacheStrategy
   
+  @js.native
+  sealed trait production extends js.Object
+  
   @scala.inline
   def CacheFirst: CacheFirst = "CacheFirst".asInstanceOf[CacheFirst]
   @scala.inline
@@ -31,5 +34,7 @@ object workboxWebpackPluginStrings {
   def NetworkOnly: NetworkOnly = "NetworkOnly".asInstanceOf[NetworkOnly]
   @scala.inline
   def StaleWhileRevalidate: StaleWhileRevalidate = "StaleWhileRevalidate".asInstanceOf[StaleWhileRevalidate]
+  @scala.inline
+  def production: production = "production".asInstanceOf[production]
 }
 

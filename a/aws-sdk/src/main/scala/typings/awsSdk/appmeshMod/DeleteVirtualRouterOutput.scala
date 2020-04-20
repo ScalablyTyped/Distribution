@@ -16,7 +16,6 @@ object DeleteVirtualRouterOutput {
   @scala.inline
   def apply(virtualRouter: VirtualRouterData): DeleteVirtualRouterOutput = {
     val __obj = js.Dynamic.literal(virtualRouter = virtualRouter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVirtualRouterOutput]
   }
 }

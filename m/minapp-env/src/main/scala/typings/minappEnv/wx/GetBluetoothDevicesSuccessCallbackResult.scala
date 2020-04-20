@@ -13,7 +13,6 @@ object GetBluetoothDevicesSuccessCallbackResult {
   @scala.inline
   def apply(devices: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice): GetBluetoothDevicesSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBluetoothDevicesSuccessCallbackResult]
   }
 }

@@ -13,7 +13,6 @@ object AnonChildren {
   @scala.inline
   def apply(children: AnonAnnounceAssertive => ReactNode): AnonChildren = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[AnonChildren]
   }
 }

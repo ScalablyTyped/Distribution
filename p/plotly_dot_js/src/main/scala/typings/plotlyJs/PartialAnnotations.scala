@@ -1,7 +1,5 @@
 package typings.plotlyJs
 
-import typings.plotlyJs.mod.Font
-import typings.plotlyJs.mod.HoverLabel
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
@@ -18,7 +16,6 @@ import typings.plotlyJs.plotlyJsStrings.start
 import typings.plotlyJs.plotlyJsStrings.top
 import typings.plotlyJs.plotlyJsStrings.x
 import typings.plotlyJs.plotlyJsStrings.y
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,9 +38,9 @@ trait PartialAnnotations extends js.Object {
   var borderwidth: js.UndefOr[Double] = js.undefined
   var captureevents: js.UndefOr[Boolean] = js.undefined
   var clicktoshow: js.UndefOr[`false` | onoff | onout] = js.undefined
-  var font: js.UndefOr[Partial[Font]] = js.undefined
+  var font: js.UndefOr[PartialFont] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var hoverlabel: js.UndefOr[Partial[HoverLabel]] = js.undefined
+  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.undefined
   var hovertext: js.UndefOr[String] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var showarrow: js.UndefOr[Boolean] = js.undefined
@@ -87,9 +84,9 @@ object PartialAnnotations {
     borderwidth: Int | Double = null,
     captureevents: js.UndefOr[Boolean] = js.undefined,
     clicktoshow: `false` | onoff | onout = null,
-    font: Partial[Font] = null,
+    font: PartialFont = null,
     height: Int | Double = null,
-    hoverlabel: Partial[HoverLabel] = null,
+    hoverlabel: PartialHoverLabelAlign = null,
     hovertext: String = null,
     opacity: Int | Double = null,
     showarrow: js.UndefOr[Boolean] = js.undefined,

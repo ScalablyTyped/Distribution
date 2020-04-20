@@ -13,7 +13,6 @@ object PadV2Inputs {
   @scala.inline
   def apply(x: js.Any): PadV2Inputs = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PadV2Inputs]
   }
 }

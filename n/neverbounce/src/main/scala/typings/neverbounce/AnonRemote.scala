@@ -13,7 +13,6 @@ object AnonRemote {
   @scala.inline
   def apply(remote: String, supplied: String): AnonRemote = {
     val __obj = js.Dynamic.literal(remote = remote.asInstanceOf[js.Any], supplied = supplied.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRemote]
   }
 }

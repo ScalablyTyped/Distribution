@@ -29,7 +29,6 @@ object IOptions {
   @scala.inline
   def apply(completer: Completer, connector: IDataConnector[IReply, Unit, IRequest, String]): IOptions = {
     val __obj = js.Dynamic.literal(completer = completer.asInstanceOf[js.Any], connector = connector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

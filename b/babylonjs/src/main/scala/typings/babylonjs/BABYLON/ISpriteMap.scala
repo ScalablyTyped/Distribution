@@ -33,7 +33,6 @@ object ISpriteMap {
     spriteSheet: Texture
   ): ISpriteMap = {
     val __obj = js.Dynamic.literal(atlasJSON = atlasJSON.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], spriteSheet = spriteSheet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISpriteMap]
   }
 }

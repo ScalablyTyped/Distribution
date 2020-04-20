@@ -14,7 +14,6 @@ object IVector2Like {
   @scala.inline
   def apply(x: float, y: float): IVector2Like = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IVector2Like]
   }
 }

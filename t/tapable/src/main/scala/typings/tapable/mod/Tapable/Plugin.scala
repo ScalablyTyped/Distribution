@@ -13,7 +13,6 @@ object Plugin {
   @scala.inline
   def apply(apply: /* repeated */ js.Any => Unit): Plugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
-  
     __obj.asInstanceOf[Plugin]
   }
 }

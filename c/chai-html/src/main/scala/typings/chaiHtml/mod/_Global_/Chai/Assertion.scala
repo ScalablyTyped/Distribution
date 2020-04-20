@@ -13,7 +13,6 @@ object Assertion {
   @scala.inline
   def apply(html: HtmlAssertion): Assertion = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Assertion]
   }
 }

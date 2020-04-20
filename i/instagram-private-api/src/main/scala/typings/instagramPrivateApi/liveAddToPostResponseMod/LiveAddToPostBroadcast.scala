@@ -28,7 +28,6 @@ object LiveAddToPostBroadcast {
     published_time: Double
   ): LiveAddToPostBroadcast = {
     val __obj = js.Dynamic.literal(broadcast_message = broadcast_message.asInstanceOf[js.Any], broadcast_owner = broadcast_owner.asInstanceOf[js.Any], broadcast_status = broadcast_status.asInstanceOf[js.Any], hide_from_feed_unit = hide_from_feed_unit.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], media_id = media_id.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], published_time = published_time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LiveAddToPostBroadcast]
   }
 }

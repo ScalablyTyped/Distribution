@@ -20,7 +20,6 @@ object RegistryCredential {
   @scala.inline
   def apply(credential: NonEmptyString, credentialProvider: CredentialProviderType): RegistryCredential = {
     val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], credentialProvider = credentialProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegistryCredential]
   }
 }

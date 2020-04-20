@@ -18,7 +18,6 @@ object FlowSchemaStatus {
   @scala.inline
   def apply(conditions: js.Array[FlowSchemaCondition]): FlowSchemaStatus = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FlowSchemaStatus]
   }
 }

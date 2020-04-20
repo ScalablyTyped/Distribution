@@ -25,36 +25,34 @@ trait RuleType extends js.Object
 
 object RuleType {
   @scala.inline
-  def any: typings.asyncValidator.asyncValidatorStrings.any = this.cast("any")
+  def any: typings.asyncValidator.asyncValidatorStrings.any = "any".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.any]
   @scala.inline
-  def array: typings.asyncValidator.asyncValidatorStrings.array = this.cast("array")
+  def array: typings.asyncValidator.asyncValidatorStrings.array = "array".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.array]
   @scala.inline
-  def boolean: typings.asyncValidator.asyncValidatorStrings.boolean = this.cast("boolean")
+  def boolean: typings.asyncValidator.asyncValidatorStrings.boolean = "boolean".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.asyncValidator.asyncValidatorStrings.date = "date".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.date]
   @scala.inline
-  def date: typings.asyncValidator.asyncValidatorStrings.date = this.cast("date")
+  def email: typings.asyncValidator.asyncValidatorStrings.email = "email".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.email]
   @scala.inline
-  def email: typings.asyncValidator.asyncValidatorStrings.email = this.cast("email")
+  def enum: typings.asyncValidator.asyncValidatorStrings.enum = "enum".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.enum]
   @scala.inline
-  def enum: typings.asyncValidator.asyncValidatorStrings.enum = this.cast("enum")
+  def float: typings.asyncValidator.asyncValidatorStrings.float = "float".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.float]
   @scala.inline
-  def float: typings.asyncValidator.asyncValidatorStrings.float = this.cast("float")
+  def hex: typings.asyncValidator.asyncValidatorStrings.hex = "hex".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.hex]
   @scala.inline
-  def hex: typings.asyncValidator.asyncValidatorStrings.hex = this.cast("hex")
+  def integer: typings.asyncValidator.asyncValidatorStrings.integer = "integer".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.integer]
   @scala.inline
-  def integer: typings.asyncValidator.asyncValidatorStrings.integer = this.cast("integer")
+  def method: typings.asyncValidator.asyncValidatorStrings.method = "method".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.method]
   @scala.inline
-  def method: typings.asyncValidator.asyncValidatorStrings.method = this.cast("method")
+  def number: typings.asyncValidator.asyncValidatorStrings.number = "number".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.number]
   @scala.inline
-  def number: typings.asyncValidator.asyncValidatorStrings.number = this.cast("number")
+  def `object`: typings.asyncValidator.asyncValidatorStrings.`object` = "object".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.`object`]
   @scala.inline
-  def `object`: typings.asyncValidator.asyncValidatorStrings.`object` = this.cast("object")
+  def regexp: typings.asyncValidator.asyncValidatorStrings.regexp = "regexp".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.regexp]
   @scala.inline
-  def regexp: typings.asyncValidator.asyncValidatorStrings.regexp = this.cast("regexp")
+  def string: typings.asyncValidator.asyncValidatorStrings.string = "string".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.string]
   @scala.inline
-  def string: typings.asyncValidator.asyncValidatorStrings.string = this.cast("string")
-  @scala.inline
-  def url: typings.asyncValidator.asyncValidatorStrings.url = this.cast("url")
+  def url: typings.asyncValidator.asyncValidatorStrings.url = "url".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.url]
 }
 

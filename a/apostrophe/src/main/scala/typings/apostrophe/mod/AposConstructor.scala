@@ -1,5 +1,6 @@
 package typings.apostrophe.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ trait AposConstructor[M, O] extends js.Object {
   var initFailed: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
   var modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-    */ typings.apostrophe.apostropheStrings.AposConstructor with js.Any
+    */ typings.apostrophe.apostropheStrings.AposConstructor with TopLevel[js.Any]
   var prefix: js.UndefOr[String] = js.undefined
   var root: js.UndefOr[String] = js.undefined
   var rootDir: js.UndefOr[String] = js.undefined
@@ -25,7 +26,7 @@ object AposConstructor {
   def apply[M, O](
     modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-    */ typings.apostrophe.apostropheStrings.AposConstructor with js.Any,
+    */ typings.apostrophe.apostropheStrings.AposConstructor with TopLevel[js.Any],
     shortName: String,
     afterInit: () => Unit = null,
     afterListen: () => Unit = null,

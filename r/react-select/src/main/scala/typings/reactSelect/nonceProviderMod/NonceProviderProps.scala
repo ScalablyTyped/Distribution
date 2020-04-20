@@ -12,7 +12,6 @@ object NonceProviderProps {
   @scala.inline
   def apply(nonce: String): NonceProviderProps = {
     val __obj = js.Dynamic.literal(nonce = nonce.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NonceProviderProps]
   }
 }

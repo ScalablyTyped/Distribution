@@ -18,7 +18,6 @@ object SIPIntermediary {
     ipAccessControlLists: IPAccessControlListResource
   ): SIPIntermediary = {
     val __obj = js.Dynamic.literal(credentialLists = credentialLists.asInstanceOf[js.Any], domains = domains.asInstanceOf[js.Any], ipAccessControlLists = ipAccessControlLists.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SIPIntermediary]
   }
 }

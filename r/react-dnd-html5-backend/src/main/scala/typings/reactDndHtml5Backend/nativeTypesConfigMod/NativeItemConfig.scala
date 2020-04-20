@@ -13,7 +13,6 @@ object NativeItemConfig {
   @scala.inline
   def apply(exposeProperties: NativeItemConfigExposePropreties, matchesTypes: js.Array[String]): NativeItemConfig = {
     val __obj = js.Dynamic.literal(exposeProperties = exposeProperties.asInstanceOf[js.Any], matchesTypes = matchesTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeItemConfig]
   }
 }

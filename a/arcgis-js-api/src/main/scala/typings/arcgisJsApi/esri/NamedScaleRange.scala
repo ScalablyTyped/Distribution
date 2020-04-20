@@ -38,7 +38,6 @@ object NamedScaleRange {
     propertyIsEnumerable: PropertyKey => Boolean
   ): NamedScaleRange = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], maxScale = maxScale.asInstanceOf[js.Any], minScale = minScale.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[NamedScaleRange]
   }
 }

@@ -12,10 +12,8 @@ trait EventName extends js.Object
 
 object EventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def change: typings.screenfull.screenfullStrings.change = "change".asInstanceOf[typings.screenfull.screenfullStrings.change]
   @scala.inline
-  def change: typings.screenfull.screenfullStrings.change = this.cast("change")
-  @scala.inline
-  def error: typings.screenfull.screenfullStrings.error = this.cast("error")
+  def error: typings.screenfull.screenfullStrings.error = "error".asInstanceOf[typings.screenfull.screenfullStrings.error]
 }
 

@@ -25,7 +25,6 @@ object AcceleratorTypesResource {
     list: AnonFields => Request_[AcceleratorTypeList]
   ): AcceleratorTypesResource = {
     val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AcceleratorTypesResource]
   }
 }

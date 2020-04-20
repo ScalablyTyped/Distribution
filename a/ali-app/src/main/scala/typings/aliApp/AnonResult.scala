@@ -15,7 +15,6 @@ object AnonResult {
   @scala.inline
   def apply(result: js.Array[MultiLevelSelectItem], success: Boolean): AnonResult = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResult]
   }
 }

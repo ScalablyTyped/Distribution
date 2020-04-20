@@ -22,7 +22,6 @@ object TestingGateway {
     settlementPending: String => js.Promise[ValidatedResponse[Transaction]]
   ): TestingGateway = {
     val __obj = js.Dynamic.literal(settle = js.Any.fromFunction1(settle), settlementConfirm = js.Any.fromFunction1(settlementConfirm), settlementDecline = js.Any.fromFunction1(settlementDecline), settlementOperationWithEnvironmentCheck = js.Any.fromFunction1(settlementOperationWithEnvironmentCheck), settlementPending = js.Any.fromFunction1(settlementPending))
-  
     __obj.asInstanceOf[TestingGateway]
   }
 }

@@ -25,7 +25,6 @@ object OnGestureListener {
     onSingleTapUp: MotionEvent => Boolean
   ): OnGestureListener = {
     val __obj = js.Dynamic.literal(onDown = js.Any.fromFunction1(onDown), onFling = js.Any.fromFunction4(onFling), onLongPress = js.Any.fromFunction1(onLongPress), onScroll = js.Any.fromFunction4(onScroll), onShowPress = js.Any.fromFunction1(onShowPress), onSingleTapUp = js.Any.fromFunction1(onSingleTapUp))
-  
     __obj.asInstanceOf[OnGestureListener]
   }
 }

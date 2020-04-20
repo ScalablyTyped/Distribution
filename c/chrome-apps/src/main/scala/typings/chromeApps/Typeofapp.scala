@@ -32,7 +32,6 @@ object Typeofapp {
   @scala.inline
   def apply(_State: AnonFULLSCREEN, runtime: Typeofruntime, window: ChromeAppWindow): Typeofapp = {
     val __obj = js.Dynamic.literal(_State = _State.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofapp]
   }
 }

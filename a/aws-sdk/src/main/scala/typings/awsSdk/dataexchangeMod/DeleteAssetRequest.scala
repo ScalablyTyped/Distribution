@@ -24,7 +24,6 @@ object DeleteAssetRequest {
   @scala.inline
   def apply(AssetId: string, DataSetId: string, RevisionId: string): DeleteAssetRequest = {
     val __obj = js.Dynamic.literal(AssetId = AssetId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAssetRequest]
   }
 }

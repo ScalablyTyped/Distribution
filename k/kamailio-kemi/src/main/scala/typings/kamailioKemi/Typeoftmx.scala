@@ -40,7 +40,6 @@ object Typeoftmx {
     t_suspend: () => Double
   ): Typeoftmx = {
     val __obj = js.Dynamic.literal(t_cancel_branches = js.Any.fromFunction1(t_cancel_branches), t_cancel_callid = js.Any.fromFunction3(t_cancel_callid), t_cancel_callid_reason = js.Any.fromFunction4(t_cancel_callid_reason), t_continue = js.Any.fromFunction3(t_continue), t_flush_flags = js.Any.fromFunction0(t_flush_flags), t_flush_xflags = js.Any.fromFunction0(t_flush_xflags), t_is_branch_route = js.Any.fromFunction0(t_is_branch_route), t_is_failure_route = js.Any.fromFunction0(t_is_failure_route), t_is_reply_route = js.Any.fromFunction0(t_is_reply_route), t_is_request_route = js.Any.fromFunction0(t_is_request_route), t_precheck_trans = js.Any.fromFunction0(t_precheck_trans), t_reply_callid = js.Any.fromFunction4(t_reply_callid), t_reuse_branch = js.Any.fromFunction0(t_reuse_branch), t_suspend = js.Any.fromFunction0(t_suspend))
-  
     __obj.asInstanceOf[Typeoftmx]
   }
 }

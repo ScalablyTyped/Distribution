@@ -14,7 +14,6 @@ object AnonAngle {
   @scala.inline
   def apply(angle: Double, axis: Vector3): AnonAngle = {
     val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], axis = axis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAngle]
   }
 }

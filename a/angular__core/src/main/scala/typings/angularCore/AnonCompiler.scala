@@ -22,7 +22,6 @@ object AnonCompiler {
     program: Program
   ): AnonCompiler = {
     val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], ngcProgram = ngcProgram.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCompiler]
   }
 }

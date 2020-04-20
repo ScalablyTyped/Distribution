@@ -13,7 +13,6 @@ object AnonEmissiveMap {
   @scala.inline
   def apply(emissiveMap: IUniform): AnonEmissiveMap = {
     val __obj = js.Dynamic.literal(emissiveMap = emissiveMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmissiveMap]
   }
 }

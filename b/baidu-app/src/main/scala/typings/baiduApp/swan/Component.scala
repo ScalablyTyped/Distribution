@@ -1,5 +1,6 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.TopLevel
 import typings.baiduApp.Partialbubblesbooleancomp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ trait Component[D, P] extends js.Object {
   		 */
   var data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
-    */ typings.baiduApp.baiduAppStrings.Component with js.Any = js.native
+    */ typings.baiduApp.baiduAppStrings.Component with TopLevel[js.Any] = js.native
   /**
   		 * 节点dataset
   		 */
@@ -33,7 +34,7 @@ trait Component[D, P] extends js.Object {
   		 */
   var properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
-    */ typings.baiduApp.baiduAppStrings.Component with js.Any = js.native
+    */ typings.baiduApp.baiduAppStrings.Component with TopLevel[js.Any] = js.native
   /**
   		 * 节点布局交叉状态API可用于监听两个或多个组件节点在布局位置上的相交状态。这一组API常常可以用于推断某些节点是否可以被用户看见、有多大比例可以被用户看见。
   		 * https://smartprogram.baidu.com/docs/develop/api/show_query/
@@ -63,18 +64,18 @@ trait Component[D, P] extends js.Object {
   def setData(
     key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component with js.Any
+    */ typings.baiduApp.baiduAppStrings.Component with TopLevel[js.Any]
   ): Unit = js.native
   def setData(
     key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component with js.Any,
+    */ typings.baiduApp.baiduAppStrings.Component with TopLevel[js.Any],
     value: js.Any
   ): Unit = js.native
   def setData(
     key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component with js.Any,
+    */ typings.baiduApp.baiduAppStrings.Component with TopLevel[js.Any],
     value: js.Any,
     callback: js.Function0[Unit]
   ): Unit = js.native

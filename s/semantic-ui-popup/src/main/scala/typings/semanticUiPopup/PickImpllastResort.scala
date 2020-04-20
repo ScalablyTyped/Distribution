@@ -13,7 +13,6 @@ object PickImpllastResort {
   @scala.inline
   def apply(lastResort: Boolean | String): PickImpllastResort = {
     val __obj = js.Dynamic.literal(lastResort = lastResort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpllastResort]
   }
 }

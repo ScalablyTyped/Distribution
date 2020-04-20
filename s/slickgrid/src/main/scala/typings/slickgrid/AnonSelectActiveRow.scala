@@ -12,7 +12,6 @@ object AnonSelectActiveRow {
   @scala.inline
   def apply(selectActiveRow: Boolean): AnonSelectActiveRow = {
     val __obj = js.Dynamic.literal(selectActiveRow = selectActiveRow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelectActiveRow]
   }
 }

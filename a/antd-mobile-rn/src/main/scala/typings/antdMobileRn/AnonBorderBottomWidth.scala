@@ -28,7 +28,6 @@ object AnonBorderBottomWidth {
     right: Double
   ): AnonBorderBottomWidth = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderBottomColor = borderBottomColor.asInstanceOf[js.Any], borderBottomWidth = borderBottomWidth.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderBottomWidth]
   }
 }

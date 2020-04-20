@@ -16,7 +16,6 @@ object AnonFocusOnUpDown {
   @scala.inline
   def apply(focusOnUpDown: Boolean, prefixCls: String, readOnly: Boolean, showNumber: Boolean, step: Double): AnonFocusOnUpDown = {
     val __obj = js.Dynamic.literal(focusOnUpDown = focusOnUpDown.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], showNumber = showNumber.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFocusOnUpDown]
   }
 }

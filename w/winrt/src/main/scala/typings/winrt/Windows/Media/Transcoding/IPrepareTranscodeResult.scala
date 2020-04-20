@@ -19,7 +19,6 @@ object IPrepareTranscodeResult {
     transcodeAsync: () => IAsyncActionWithProgress[Double]
   ): IPrepareTranscodeResult = {
     val __obj = js.Dynamic.literal(canTranscode = canTranscode.asInstanceOf[js.Any], failureReason = failureReason.asInstanceOf[js.Any], transcodeAsync = js.Any.fromFunction0(transcodeAsync))
-  
     __obj.asInstanceOf[IPrepareTranscodeResult]
   }
 }

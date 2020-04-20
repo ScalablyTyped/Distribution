@@ -12,6 +12,7 @@ import typings.microrouter.microrouterStrings.resume
 import typings.node.AnonEnd
 import typings.node.Buffer
 import typings.node.BufferEncoding
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitterOptions
@@ -62,7 +63,7 @@ object mod extends js.Object {
       * Only valid for response obtained from http.ClientRequest.
       */
     var statusMessage: js.UndefOr[String] = js.native
-    var trailers: StringDictionary[js.UndefOr[String]] = js.native
+    var trailers: Dict[String] = js.native
     /**
       * Only valid for request obtained from http.Server.
       */

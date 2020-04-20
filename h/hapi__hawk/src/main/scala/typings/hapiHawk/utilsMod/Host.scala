@@ -13,7 +13,6 @@ object Host {
   @scala.inline
   def apply(name: String, port: Double): Host = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Host]
   }
 }

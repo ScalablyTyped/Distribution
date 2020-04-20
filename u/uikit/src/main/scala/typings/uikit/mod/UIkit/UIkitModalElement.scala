@@ -13,7 +13,6 @@ object UIkitModalElement {
   @scala.inline
   def apply(hide: () => Unit, show: () => Unit): UIkitModalElement = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[UIkitModalElement]
   }
 }

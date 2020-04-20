@@ -15,7 +15,6 @@ object AnonItems {
   @scala.inline
   def apply(items: js.Array[AddressItem], total: Double, userquery: js.Any): AnonItems = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], userquery = userquery.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItems]
   }
 }

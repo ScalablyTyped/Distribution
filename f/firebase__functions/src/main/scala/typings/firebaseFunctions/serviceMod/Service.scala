@@ -63,6 +63,6 @@ class Service protected ()
     */
   def _url(name: String): String = js.native
   @JSName("app")
-  def app_MService(): FirebaseApp = js.native
+  def app_MService: FirebaseApp = js.native
 }
 

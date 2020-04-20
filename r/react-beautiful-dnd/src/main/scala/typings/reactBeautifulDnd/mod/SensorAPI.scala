@@ -25,7 +25,6 @@ object SensorAPI {
     tryReleaseLock: () => Unit
   ): SensorAPI = {
     val __obj = js.Dynamic.literal(canGetLock = js.Any.fromFunction1(canGetLock), findClosestDraggableId = js.Any.fromFunction1(findClosestDraggableId), findOptionsForDraggable = js.Any.fromFunction1(findOptionsForDraggable), isLockClaimed = js.Any.fromFunction0(isLockClaimed), tryGetLock = js.Any.fromFunction3(tryGetLock), tryReleaseLock = js.Any.fromFunction0(tryReleaseLock))
-  
     __obj.asInstanceOf[SensorAPI]
   }
 }

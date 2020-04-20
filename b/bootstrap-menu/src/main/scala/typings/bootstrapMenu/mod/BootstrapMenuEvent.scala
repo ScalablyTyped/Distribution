@@ -13,12 +13,10 @@ trait BootstrapMenuEvent extends js.Object
 
 object BootstrapMenuEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.bootstrapMenu.bootstrapMenuStrings.click = "click".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.click]
   @scala.inline
-  def click: typings.bootstrapMenu.bootstrapMenuStrings.click = this.cast("click")
+  def hover: typings.bootstrapMenu.bootstrapMenuStrings.hover = "hover".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.hover]
   @scala.inline
-  def hover: typings.bootstrapMenu.bootstrapMenuStrings.hover = this.cast("hover")
-  @scala.inline
-  def `right-click`: typings.bootstrapMenu.bootstrapMenuStrings.`right-click` = this.cast("right-click")
+  def `right-click`: typings.bootstrapMenu.bootstrapMenuStrings.`right-click` = "right-click".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.`right-click`]
 }
 

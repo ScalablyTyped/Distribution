@@ -28,7 +28,6 @@ object BuiltInVariablesResource {
     revert: AnonPath => Request_[RevertBuiltInVariableResponse]
   ): BuiltInVariablesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list), revert = js.Any.fromFunction1(revert))
-  
     __obj.asInstanceOf[BuiltInVariablesResource]
   }
 }

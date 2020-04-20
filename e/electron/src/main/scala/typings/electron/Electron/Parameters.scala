@@ -47,7 +47,6 @@ object Parameters {
     viewSize: Size
   ): Parameters = {
     val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], screenPosition = screenPosition.asInstanceOf[js.Any], screenSize = screenSize.asInstanceOf[js.Any], viewPosition = viewPosition.asInstanceOf[js.Any], viewSize = viewSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Parameters]
   }
 }

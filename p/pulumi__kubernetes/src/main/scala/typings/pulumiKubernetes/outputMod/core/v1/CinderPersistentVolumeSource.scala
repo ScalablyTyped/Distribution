@@ -36,7 +36,6 @@ object CinderPersistentVolumeSource {
   @scala.inline
   def apply(fsType: String, readOnly: Boolean, secretRef: SecretReference, volumeID: String): CinderPersistentVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any], volumeID = volumeID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CinderPersistentVolumeSource]
   }
 }

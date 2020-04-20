@@ -12,10 +12,8 @@ trait IPConfigType extends js.Object
 
 object IPConfigType {
   @scala.inline
-  def DHCP: typings.chromeApps.chromeAppsStrings.DHCP = this.cast("DHCP")
+  def DHCP: typings.chromeApps.chromeAppsStrings.DHCP = "DHCP".asInstanceOf[typings.chromeApps.chromeAppsStrings.DHCP]
   @scala.inline
-  def Static: typings.chromeApps.chromeAppsStrings.Static = this.cast("Static")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Static: typings.chromeApps.chromeAppsStrings.Static = "Static".asInstanceOf[typings.chromeApps.chromeAppsStrings.Static]
 }
 

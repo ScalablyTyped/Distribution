@@ -15,7 +15,7 @@ trait ErrorResponse extends js.Object {
   /**
   	 * Error message, if any returned.
   	 */
-  var error: js.UndefOr[String] = js.undefined
+  var error: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Indicates if the operation succeeded.
   	 */
@@ -24,7 +24,11 @@ trait ErrorResponse extends js.Object {
 
 object ErrorResponse {
   @scala.inline
-  def apply(code: Int | Double = null, error: String = null, success: js.UndefOr[Boolean] = js.undefined): ErrorResponse = {
+  def apply(
+    code: Int | Double = null,
+    error: java.lang.String = null,
+    success: js.UndefOr[Boolean] = js.undefined
+  ): ErrorResponse = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])

@@ -17,20 +17,18 @@ trait Event extends js.Object
 
 object Event {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def close: typings.klaw.klawStrings.close = "close".asInstanceOf[typings.klaw.klawStrings.close]
   @scala.inline
-  def close: typings.klaw.klawStrings.close = this.cast("close")
+  def data: typings.klaw.klawStrings.data = "data".asInstanceOf[typings.klaw.klawStrings.data]
   @scala.inline
-  def data: typings.klaw.klawStrings.data = this.cast("data")
+  def end: typings.klaw.klawStrings.end = "end".asInstanceOf[typings.klaw.klawStrings.end]
   @scala.inline
-  def end: typings.klaw.klawStrings.end = this.cast("end")
+  def error: typings.klaw.klawStrings.error = "error".asInstanceOf[typings.klaw.klawStrings.error]
   @scala.inline
-  def error: typings.klaw.klawStrings.error = this.cast("error")
+  def pause: typings.klaw.klawStrings.pause = "pause".asInstanceOf[typings.klaw.klawStrings.pause]
   @scala.inline
-  def pause: typings.klaw.klawStrings.pause = this.cast("pause")
+  def readable: typings.klaw.klawStrings.readable = "readable".asInstanceOf[typings.klaw.klawStrings.readable]
   @scala.inline
-  def readable: typings.klaw.klawStrings.readable = this.cast("readable")
-  @scala.inline
-  def resume: typings.klaw.klawStrings.resume = this.cast("resume")
+  def resume: typings.klaw.klawStrings.resume = "resume".asInstanceOf[typings.klaw.klawStrings.resume]
 }
 

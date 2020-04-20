@@ -12,10 +12,8 @@ trait TextFormattingRule extends js.Object
 
 object TextFormattingRule {
   @scala.inline
-  def backlog: typings.backlogJs.backlogJsStrings.backlog = this.cast("backlog")
+  def backlog: typings.backlogJs.backlogJsStrings.backlog = "backlog".asInstanceOf[typings.backlogJs.backlogJsStrings.backlog]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def markdown: typings.backlogJs.backlogJsStrings.markdown = this.cast("markdown")
+  def markdown: typings.backlogJs.backlogJsStrings.markdown = "markdown".asInstanceOf[typings.backlogJs.backlogJsStrings.markdown]
 }
 

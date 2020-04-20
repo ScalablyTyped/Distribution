@@ -14,7 +14,6 @@ object PortInfo {
   @scala.inline
   def apply(description: String, port: Double, protocol: String): PortInfo = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PortInfo]
   }
 }

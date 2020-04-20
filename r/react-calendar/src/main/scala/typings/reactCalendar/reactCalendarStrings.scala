@@ -45,7 +45,7 @@ object reactCalendarStrings {
   @scala.inline
   def Hebrew: Hebrew = "Hebrew".asInstanceOf[Hebrew]
   @scala.inline
-  def `ISO 8601`: `ISO 8601` = "ISO 8601".asInstanceOf[`ISO 8601`]
+  def `ISO 8601`: `ISO 8601` = ("ISO 8601").asInstanceOf[`ISO 8601`]
   @scala.inline
   def US: US = "US".asInstanceOf[US]
   @scala.inline

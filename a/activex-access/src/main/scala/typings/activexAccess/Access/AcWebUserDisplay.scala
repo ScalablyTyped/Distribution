@@ -18,14 +18,12 @@ trait AcWebUserDisplay extends js.Object
 
 object AcWebUserDisplay {
   @scala.inline
-  def acWebUserEmail: `3` = this.cast(3)
+  def acWebUserEmail: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acWebUserID: `0` = this.cast(0)
+  def acWebUserID: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acWebUserLoginName: `2` = this.cast(2)
+  def acWebUserLoginName: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acWebUserName: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acWebUserName: `1` = 1.asInstanceOf[`1`]
 }
 

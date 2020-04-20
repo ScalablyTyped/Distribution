@@ -22,7 +22,6 @@ object IOnInit {
   @scala.inline
   def apply($onInit: () => Unit): IOnInit = {
     val __obj = js.Dynamic.literal($onInit = js.Any.fromFunction0($onInit))
-  
     __obj.asInstanceOf[IOnInit]
   }
 }

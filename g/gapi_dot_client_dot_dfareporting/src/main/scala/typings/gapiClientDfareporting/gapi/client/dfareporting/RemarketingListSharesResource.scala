@@ -24,7 +24,6 @@ object RemarketingListSharesResource {
     update: AnonKey => Request_[RemarketingListShare]
   ): RemarketingListSharesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[RemarketingListSharesResource]
   }
 }

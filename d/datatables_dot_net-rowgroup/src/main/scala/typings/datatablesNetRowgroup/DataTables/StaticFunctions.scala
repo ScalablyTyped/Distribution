@@ -12,7 +12,6 @@ object StaticFunctions {
   @scala.inline
   def apply(RowGroup: RowGroupStaticFunctions): StaticFunctions = {
     val __obj = js.Dynamic.literal(RowGroup = RowGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StaticFunctions]
   }
 }

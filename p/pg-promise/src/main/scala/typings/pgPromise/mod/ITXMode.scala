@@ -20,7 +20,6 @@ object ITXMode {
     isolationLevel: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isolationLevel */ js.Any
   ): ITXMode = {
     val __obj = js.Dynamic.literal(TransactionMode = TransactionMode.asInstanceOf[js.Any], isolationLevel = isolationLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITXMode]
   }
 }

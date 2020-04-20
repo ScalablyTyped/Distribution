@@ -12,7 +12,6 @@ object TypeofimportedSelectors {
   @scala.inline
   def apply(isViewportMatch: String => Boolean): TypeofimportedSelectors = {
     val __obj = js.Dynamic.literal(isViewportMatch = js.Any.fromFunction1(isViewportMatch))
-  
     __obj.asInstanceOf[TypeofimportedSelectors]
   }
 }

@@ -22,7 +22,6 @@ object ISCEDelegateService {
     valueOf: js.Any => js.Any
   ): ISCEDelegateService = {
     val __obj = js.Dynamic.literal(getTrusted = js.Any.fromFunction2(getTrusted), trustAs = js.Any.fromFunction2(trustAs), valueOf = js.Any.fromFunction1(valueOf))
-  
     __obj.asInstanceOf[ISCEDelegateService]
   }
 }

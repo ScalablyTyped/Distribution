@@ -24,7 +24,6 @@ object AnonChildren {
     ]
   ): AnonChildren = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChildren]
   }
 }

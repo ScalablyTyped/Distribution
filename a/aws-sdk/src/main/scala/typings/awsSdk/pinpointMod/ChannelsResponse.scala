@@ -16,7 +16,6 @@ object ChannelsResponse {
   @scala.inline
   def apply(Channels: MapOfChannelResponse): ChannelsResponse = {
     val __obj = js.Dynamic.literal(Channels = Channels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelsResponse]
   }
 }

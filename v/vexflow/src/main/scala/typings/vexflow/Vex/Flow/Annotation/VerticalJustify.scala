@@ -16,14 +16,12 @@ trait VerticalJustify extends js.Object
 
 object VerticalJustify {
   @scala.inline
-  def BOTTOM: `1` = this.cast(1)
+  def BOTTOM: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def CENTER: `0` = this.cast(0)
+  def CENTER: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def CENTER_STEM: `2` = this.cast(2)
+  def CENTER_STEM: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def TOP: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TOP: `1` = 1.asInstanceOf[`1`]
 }
 

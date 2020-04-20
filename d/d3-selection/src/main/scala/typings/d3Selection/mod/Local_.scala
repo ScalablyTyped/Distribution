@@ -33,7 +33,6 @@ object Local_ {
   @scala.inline
   def apply[T](get: Element => js.UndefOr[T], remove: Element => Boolean, set: (Element, T) => Element): Local_[T] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[Local_[T]]
   }
 }

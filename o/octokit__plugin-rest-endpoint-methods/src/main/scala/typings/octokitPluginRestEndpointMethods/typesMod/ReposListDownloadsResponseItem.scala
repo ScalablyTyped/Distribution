@@ -28,7 +28,6 @@ object ReposListDownloadsResponseItem {
     url: String
   ): ReposListDownloadsResponseItem = {
     val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], download_count = download_count.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposListDownloadsResponseItem]
   }
 }

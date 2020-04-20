@@ -15,7 +15,6 @@ object AnonChildPanGestureHandlerRefs {
   @scala.inline
   def apply(childPanGestureHandlerRefs: js.Array[RefObject[PanGestureHandler]], enabled: Boolean): AnonChildPanGestureHandlerRefs = {
     val __obj = js.Dynamic.literal(childPanGestureHandlerRefs = childPanGestureHandlerRefs.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChildPanGestureHandlerRefs]
   }
 }

@@ -1,5 +1,6 @@
 package typings.promiseHash.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ object _Global_ extends js.Object {
     def hash[T](
       promiseHash: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: std.PromiseLike<T[P]> | T[P]}
-      */ typings.promiseHash.promiseHashStrings.PromiseConstructor with js.Any
+      */ typings.promiseHash.promiseHashStrings.PromiseConstructor with TopLevel[js.Any]
     ): js.Promise[T] = js.native
   }
   

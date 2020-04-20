@@ -23,7 +23,6 @@ object AnonDragDistance {
     pointerId: Double
   ): AnonDragDistance = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], dragDistance = dragDistance.asInstanceOf[js.Any], dragPlaneNormal = dragPlaneNormal.asInstanceOf[js.Any], dragPlanePoint = dragPlanePoint.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDragDistance]
   }
 }

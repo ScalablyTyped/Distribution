@@ -20,6 +20,10 @@ trait rawResulttrueQueryFindOneArrayFilters extends js.Object {
   var context: js.UndefOr[String] = js.undefined
   /** Field selection. Equivalent to .select(fields).findOneAndUpdate() */
   var fields: js.UndefOr[js.Any | String] = js.undefined
+  /**
+    * if truthy, mongoose will return the document as a plain JavaScript object rather than a mongoose document. See Query.lean() and the Mongoose lean tutorial.
+    */
+  var lean: js.UndefOr[js.Any] = js.undefined
   /** puts a time limit on the query - requires mongodb >= 2.6.0 */
   var maxTimeMS: js.UndefOr[Double] = js.undefined
   /**
@@ -41,6 +45,7 @@ trait rawResulttrueQueryFindOneArrayFilters extends js.Object {
   var runValidators: js.UndefOr[Boolean] = js.undefined
   /** sets the document fields to return */
   var select: js.UndefOr[js.Any] = js.undefined
+  /** use client session for transaction */
   var session: js.UndefOr[ClientSession] = js.undefined
   /**
     * if this and upsert are true, mongoose will apply the defaults specified in the model's schema if a new document
@@ -54,6 +59,11 @@ trait rawResulttrueQueryFindOneArrayFilters extends js.Object {
   var sort: js.UndefOr[js.Any] = js.undefined
   /** overwrites the schema's strict mode option for this update */
   var strict: js.UndefOr[Boolean | String] = js.undefined
+  /**
+    * If set to false and schema-level timestamps are enabled, skip timestamps for this update. Note that this allows you to overwrite timestamps.
+    * Does nothing if schema-level timestamps are not set.
+    */
+  var timestamps: js.UndefOr[Boolean] = js.undefined
   /** creates the object if it doesn't exist. defaults to false. */
   var upsert: js.UndefOr[Boolean] = js.undefined
 }
@@ -64,6 +74,7 @@ object rawResulttrueQueryFindOneArrayFilters {
     arrayFilters: js.Array[StringDictionary[_]] = null,
     context: String = null,
     fields: js.Any | String = null,
+    lean: js.Any = null,
     maxTimeMS: Int | Double = null,
     multipleCastError: js.UndefOr[Boolean] = js.undefined,
     `new`: js.UndefOr[Boolean] = js.undefined,
@@ -76,12 +87,14 @@ object rawResulttrueQueryFindOneArrayFilters {
     setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined,
     sort: js.Any = null,
     strict: Boolean | String = null,
+    timestamps: js.UndefOr[Boolean] = js.undefined,
     upsert: js.UndefOr[Boolean] = js.undefined
   ): rawResulttrueQueryFindOneArrayFilters = {
     val __obj = js.Dynamic.literal()
     if (arrayFilters != null) __obj.updateDynamic("arrayFilters")(arrayFilters.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (lean != null) __obj.updateDynamic("lean")(lean.asInstanceOf[js.Any])
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
     if (!js.isUndefined(multipleCastError)) __obj.updateDynamic("multipleCastError")(multipleCastError.asInstanceOf[js.Any])
     if (!js.isUndefined(`new`)) __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
@@ -94,6 +107,7 @@ object rawResulttrueQueryFindOneArrayFilters {
     if (!js.isUndefined(setDefaultsOnInsert)) __obj.updateDynamic("setDefaultsOnInsert")(setDefaultsOnInsert.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.asInstanceOf[js.Any])
     __obj.asInstanceOf[rawResulttrueQueryFindOneArrayFilters]
   }

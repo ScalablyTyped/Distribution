@@ -29,7 +29,6 @@ object ActionHandler {
   @scala.inline
   def apply(actions: ActionsHash, send: (String, /* repeated */ js.Any) => Unit): ActionHandler = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], send = js.Any.fromFunction2(send))
-  
     __obj.asInstanceOf[ActionHandler]
   }
 }

@@ -20,7 +20,6 @@ object DescribeChangeSetRequest {
   @scala.inline
   def apply(Catalog: Catalog, ChangeSetId: ResourceId): DescribeChangeSetRequest = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], ChangeSetId = ChangeSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeChangeSetRequest]
   }
 }

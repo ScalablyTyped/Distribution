@@ -13,7 +13,6 @@ object RecordWithTtl {
   @scala.inline
   def apply(address: String, ttl: Double): RecordWithTtl = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordWithTtl]
   }
 }

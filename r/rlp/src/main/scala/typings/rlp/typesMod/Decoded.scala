@@ -14,7 +14,6 @@ object Decoded {
   @scala.inline
   def apply(data: Buffer | js.Array[Buffer], remainder: Buffer): Decoded = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], remainder = remainder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Decoded]
   }
 }

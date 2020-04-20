@@ -14,7 +14,6 @@ object MatchResult {
   @scala.inline
   def apply[P /* <: js.Object */](index: Double, params: P, path: String): MatchResult[P] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MatchResult[P]]
   }
 }

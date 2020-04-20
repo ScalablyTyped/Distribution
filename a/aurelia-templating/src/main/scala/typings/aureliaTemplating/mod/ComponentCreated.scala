@@ -19,7 +19,6 @@ object ComponentCreated {
   @scala.inline
   def apply(created: (View_, View_) => Unit): ComponentCreated = {
     val __obj = js.Dynamic.literal(created = js.Any.fromFunction2(created))
-  
     __obj.asInstanceOf[ComponentCreated]
   }
 }

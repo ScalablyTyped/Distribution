@@ -19,7 +19,6 @@ object IPeoplePickerExampleState {
     searchMoreAvailable: Boolean
   ): IPeoplePickerExampleState = {
     val __obj = js.Dynamic.literal(mostRecentlyUsed = mostRecentlyUsed.asInstanceOf[js.Any], peopleList = peopleList.asInstanceOf[js.Any], searchMoreAvailable = searchMoreAvailable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPeoplePickerExampleState]
   }
 }

@@ -13,7 +13,6 @@ object ExtendableContext {
   @scala.inline
   def apply(log: Logger): ExtendableContext = {
     val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtendableContext]
   }
 }

@@ -46,42 +46,40 @@ trait WdUnderline extends js.Object
 
 object WdUnderline {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdUnderlineDash: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdUnderlineDash: `7` = this.cast(7)
+  def wdUnderlineDashHeavy: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def wdUnderlineDashHeavy: `23` = this.cast(23)
+  def wdUnderlineDashLong: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def wdUnderlineDashLong: `39` = this.cast(39)
+  def wdUnderlineDashLongHeavy: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def wdUnderlineDashLongHeavy: `55` = this.cast(55)
+  def wdUnderlineDotDash: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdUnderlineDotDash: `9` = this.cast(9)
+  def wdUnderlineDotDashHeavy: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def wdUnderlineDotDashHeavy: `25` = this.cast(25)
+  def wdUnderlineDotDotDash: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdUnderlineDotDotDash: `10` = this.cast(10)
+  def wdUnderlineDotDotDashHeavy: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def wdUnderlineDotDotDashHeavy: `26` = this.cast(26)
+  def wdUnderlineDotted: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdUnderlineDotted: `4` = this.cast(4)
+  def wdUnderlineDottedHeavy: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdUnderlineDottedHeavy: `20` = this.cast(20)
+  def wdUnderlineDouble: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdUnderlineDouble: `3` = this.cast(3)
+  def wdUnderlineNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdUnderlineNone: `0` = this.cast(0)
+  def wdUnderlineSingle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdUnderlineSingle: `1` = this.cast(1)
+  def wdUnderlineThick: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdUnderlineThick: `6` = this.cast(6)
+  def wdUnderlineWavy: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdUnderlineWavy: `11` = this.cast(11)
+  def wdUnderlineWavyDouble: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def wdUnderlineWavyDouble: `43` = this.cast(43)
+  def wdUnderlineWavyHeavy: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def wdUnderlineWavyHeavy: `27` = this.cast(27)
-  @scala.inline
-  def wdUnderlineWords: `2` = this.cast(2)
+  def wdUnderlineWords: `2` = 2.asInstanceOf[`2`]
 }
 

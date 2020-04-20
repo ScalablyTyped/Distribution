@@ -15,14 +15,12 @@ trait TemplateType extends js.Object
 
 object TemplateType {
   @scala.inline
-  def basic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.basic = this.cast("basic")
+  def basic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.basic = "basic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.basic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = "image".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image]
   @scala.inline
-  def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = this.cast("image")
+  def list: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.list = "list".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.list]
   @scala.inline
-  def list: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.list = this.cast("list")
-  @scala.inline
-  def progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.progress = this.cast("progress")
+  def progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.progress = "progress".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.progress]
 }
 

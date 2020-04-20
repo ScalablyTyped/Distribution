@@ -15,7 +15,6 @@ object AnonHorizontal {
   @scala.inline
   def apply(horizontal: visible | hidden, vertical: visible | hidden): AnonHorizontal = {
     val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHorizontal]
   }
 }

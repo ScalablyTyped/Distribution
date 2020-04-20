@@ -15,7 +15,6 @@ object AnonCheckAuthMode {
   @scala.inline
   def apply(checkAuthMode: fingerPrint | facial | speech): AnonCheckAuthMode = {
     val __obj = js.Dynamic.literal(checkAuthMode = checkAuthMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCheckAuthMode]
   }
 }

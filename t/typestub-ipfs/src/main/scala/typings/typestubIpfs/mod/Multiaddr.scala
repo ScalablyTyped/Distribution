@@ -13,7 +13,6 @@ object Multiaddr {
   @scala.inline
   def apply(buffer: Uint8Array): Multiaddr = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Multiaddr]
   }
 }

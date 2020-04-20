@@ -13,7 +13,6 @@ object AnonHexName {
   @scala.inline
   def apply(hex: String, name: String): AnonHexName = {
     val __obj = js.Dynamic.literal(hex = hex.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHexName]
   }
 }

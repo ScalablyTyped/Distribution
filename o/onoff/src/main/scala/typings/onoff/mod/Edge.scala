@@ -14,14 +14,12 @@ trait Edge extends js.Object
 
 object Edge {
   @scala.inline
-  def both: typings.onoff.onoffStrings.both = this.cast("both")
+  def both: typings.onoff.onoffStrings.both = "both".asInstanceOf[typings.onoff.onoffStrings.both]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def falling: typings.onoff.onoffStrings.falling = "falling".asInstanceOf[typings.onoff.onoffStrings.falling]
   @scala.inline
-  def falling: typings.onoff.onoffStrings.falling = this.cast("falling")
+  def none: typings.onoff.onoffStrings.none = "none".asInstanceOf[typings.onoff.onoffStrings.none]
   @scala.inline
-  def none: typings.onoff.onoffStrings.none = this.cast("none")
-  @scala.inline
-  def rising: typings.onoff.onoffStrings.rising = this.cast("rising")
+  def rising: typings.onoff.onoffStrings.rising = "rising".asInstanceOf[typings.onoff.onoffStrings.rising]
 }
 

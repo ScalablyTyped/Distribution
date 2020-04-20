@@ -15,7 +15,6 @@ object BranchUpdatedEvent {
   @scala.inline
   def apply(eventId: String, isSourceUpdate: Boolean, pullRequestId: Double): BranchUpdatedEvent = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], isSourceUpdate = isSourceUpdate.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BranchUpdatedEvent]
   }
 }

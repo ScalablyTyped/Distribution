@@ -15,7 +15,6 @@ object AnonShippingOption {
   @scala.inline
   def apply(shippingOption: ShippingOption, updateWith: UpdateDetails => Unit): AnonShippingOption = {
     val __obj = js.Dynamic.literal(shippingOption = shippingOption.asInstanceOf[js.Any], updateWith = js.Any.fromFunction1(updateWith))
-  
     __obj.asInstanceOf[AnonShippingOption]
   }
 }

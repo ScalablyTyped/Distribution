@@ -14,14 +14,12 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.hoxy.hoxyStrings.debug = "debug".asInstanceOf[typings.hoxy.hoxyStrings.debug]
   @scala.inline
-  def debug: typings.hoxy.hoxyStrings.debug = this.cast("debug")
+  def error: typings.hoxy.hoxyStrings.error = "error".asInstanceOf[typings.hoxy.hoxyStrings.error]
   @scala.inline
-  def error: typings.hoxy.hoxyStrings.error = this.cast("error")
+  def info: typings.hoxy.hoxyStrings.info = "info".asInstanceOf[typings.hoxy.hoxyStrings.info]
   @scala.inline
-  def info: typings.hoxy.hoxyStrings.info = this.cast("info")
-  @scala.inline
-  def warn: typings.hoxy.hoxyStrings.warn = this.cast("warn")
+  def warn: typings.hoxy.hoxyStrings.warn = "warn".asInstanceOf[typings.hoxy.hoxyStrings.warn]
 }
 

@@ -13,7 +13,6 @@ object AnonReverseCreateTriggerFn {
   @scala.inline
   def apply(reverse: CreateTriggerFn): AnonReverseCreateTriggerFn = {
     val __obj = js.Dynamic.literal(reverse = reverse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReverseCreateTriggerFn]
   }
 }

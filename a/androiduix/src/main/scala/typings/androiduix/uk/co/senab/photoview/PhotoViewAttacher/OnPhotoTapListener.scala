@@ -13,7 +13,6 @@ object OnPhotoTapListener {
   @scala.inline
   def apply(onPhotoTap: (View, Double, Double) => Unit): OnPhotoTapListener = {
     val __obj = js.Dynamic.literal(onPhotoTap = js.Any.fromFunction3(onPhotoTap))
-  
     __obj.asInstanceOf[OnPhotoTapListener]
   }
 }

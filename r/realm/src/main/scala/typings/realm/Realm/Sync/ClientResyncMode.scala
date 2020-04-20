@@ -16,12 +16,10 @@ trait ClientResyncMode extends js.Object
 
 object ClientResyncMode {
   @scala.inline
-  def Discard: discard = this.cast("discard")
+  def Discard: discard = "discard".asInstanceOf[discard]
   @scala.inline
-  def Manual: manual = this.cast("manual")
+  def Manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
-  def Recover: recover = this.cast("recover")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Recover: recover = "recover".asInstanceOf[recover]
 }
 

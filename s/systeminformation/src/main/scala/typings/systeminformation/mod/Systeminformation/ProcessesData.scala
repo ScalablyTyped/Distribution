@@ -24,7 +24,6 @@ object ProcessesData {
     unknown: Double
   ): ProcessesData = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], blocked = blocked.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], sleeping = sleeping.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessesData]
   }
 }

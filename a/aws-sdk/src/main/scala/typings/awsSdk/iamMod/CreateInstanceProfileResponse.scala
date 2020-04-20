@@ -16,7 +16,6 @@ object CreateInstanceProfileResponse {
   @scala.inline
   def apply(InstanceProfile: InstanceProfile): CreateInstanceProfileResponse = {
     val __obj = js.Dynamic.literal(InstanceProfile = InstanceProfile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateInstanceProfileResponse]
   }
 }

@@ -22,7 +22,6 @@ object GitPushEventData {
     repository: GitRepository
   ): GitPushEventData = {
     val __obj = js.Dynamic.literal(afterId = afterId.asInstanceOf[js.Any], beforeId = beforeId.asInstanceOf[js.Any], branch = branch.asInstanceOf[js.Any], commits = commits.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitPushEventData]
   }
 }

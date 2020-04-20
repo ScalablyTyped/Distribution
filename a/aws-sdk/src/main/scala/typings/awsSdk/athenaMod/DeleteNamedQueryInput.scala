@@ -16,7 +16,6 @@ object DeleteNamedQueryInput {
   @scala.inline
   def apply(NamedQueryId: NamedQueryId): DeleteNamedQueryInput = {
     val __obj = js.Dynamic.literal(NamedQueryId = NamedQueryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNamedQueryInput]
   }
 }

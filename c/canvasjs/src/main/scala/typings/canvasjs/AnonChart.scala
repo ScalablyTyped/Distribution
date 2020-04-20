@@ -18,7 +18,6 @@ object AnonChart {
   @scala.inline
   def apply(chart: Chart, dataPoint: ChartDataPoint, dataSeries: ChartDataSeriesOptions, legend: AnonChart): AnonChart = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataPoint = dataPoint.asInstanceOf[js.Any], dataSeries = dataSeries.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChart]
   }
 }

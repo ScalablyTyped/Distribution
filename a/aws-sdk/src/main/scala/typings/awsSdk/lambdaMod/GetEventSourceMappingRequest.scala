@@ -16,7 +16,6 @@ object GetEventSourceMappingRequest {
   @scala.inline
   def apply(UUID: String): GetEventSourceMappingRequest = {
     val __obj = js.Dynamic.literal(UUID = UUID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEventSourceMappingRequest]
   }
 }

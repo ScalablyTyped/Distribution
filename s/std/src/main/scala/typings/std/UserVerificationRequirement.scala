@@ -14,12 +14,10 @@ trait UserVerificationRequirement extends js.Object
 
 object UserVerificationRequirement {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def discouraged: typings.std.stdStrings.discouraged = "discouraged".asInstanceOf[typings.std.stdStrings.discouraged]
   @scala.inline
-  def discouraged: typings.std.stdStrings.discouraged = this.cast("discouraged")
+  def preferred: typings.std.stdStrings.preferred = "preferred".asInstanceOf[typings.std.stdStrings.preferred]
   @scala.inline
-  def preferred: typings.std.stdStrings.preferred = this.cast("preferred")
-  @scala.inline
-  def required: required_ = this.cast("required")
+  def required: required_ = "required".asInstanceOf[required_]
 }
 

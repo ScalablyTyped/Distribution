@@ -23,7 +23,6 @@ object ChainArrayElement {
   @scala.inline
   def apply(backref: Double | String, regexp: RegExp): ChainArrayElement = {
     val __obj = js.Dynamic.literal(backref = backref.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChainArrayElement]
   }
 }

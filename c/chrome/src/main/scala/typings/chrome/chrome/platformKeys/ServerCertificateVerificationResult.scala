@@ -18,7 +18,6 @@ object ServerCertificateVerificationResult {
   @scala.inline
   def apply(debug_errors: js.Array[String], trusted: Boolean): ServerCertificateVerificationResult = {
     val __obj = js.Dynamic.literal(debug_errors = debug_errors.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerCertificateVerificationResult]
   }
 }

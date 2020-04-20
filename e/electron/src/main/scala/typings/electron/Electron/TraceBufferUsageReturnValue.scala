@@ -13,7 +13,6 @@ object TraceBufferUsageReturnValue {
   @scala.inline
   def apply(percentage: Double, value: Double): TraceBufferUsageReturnValue = {
     val __obj = js.Dynamic.literal(percentage = percentage.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TraceBufferUsageReturnValue]
   }
 }

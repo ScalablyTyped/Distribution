@@ -13,12 +13,10 @@ trait RequestEventType extends js.Object
 
 object RequestEventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disconnect: typings.hapiHapi.hapiHapiStrings.disconnect = "disconnect".asInstanceOf[typings.hapiHapi.hapiHapiStrings.disconnect]
   @scala.inline
-  def disconnect: typings.hapiHapi.hapiHapiStrings.disconnect = this.cast("disconnect")
+  def finish: typings.hapiHapi.hapiHapiStrings.finish = "finish".asInstanceOf[typings.hapiHapi.hapiHapiStrings.finish]
   @scala.inline
-  def finish: typings.hapiHapi.hapiHapiStrings.finish = this.cast("finish")
-  @scala.inline
-  def peek: typings.hapiHapi.hapiHapiStrings.peek = this.cast("peek")
+  def peek: typings.hapiHapi.hapiHapiStrings.peek = "peek".asInstanceOf[typings.hapiHapi.hapiHapiStrings.peek]
 }
 

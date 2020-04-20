@@ -13,7 +13,6 @@ object ContainerVolumeMount {
   @scala.inline
   def apply(containerPath: String, sourceVolume: Volume): ContainerVolumeMount = {
     val __obj = js.Dynamic.literal(containerPath = containerPath.asInstanceOf[js.Any], sourceVolume = sourceVolume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContainerVolumeMount]
   }
 }

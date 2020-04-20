@@ -24,7 +24,6 @@ object GetBotChannelAssociationRequest {
   @scala.inline
   def apply(botAlias: AliasName, botName: BotName, name: BotChannelName): GetBotChannelAssociationRequest = {
     val __obj = js.Dynamic.literal(botAlias = botAlias.asInstanceOf[js.Any], botName = botName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBotChannelAssociationRequest]
   }
 }

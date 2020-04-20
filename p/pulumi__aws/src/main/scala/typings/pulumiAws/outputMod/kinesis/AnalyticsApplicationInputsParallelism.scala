@@ -16,7 +16,6 @@ object AnalyticsApplicationInputsParallelism {
   @scala.inline
   def apply(count: Double): AnalyticsApplicationInputsParallelism = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyticsApplicationInputsParallelism]
   }
 }

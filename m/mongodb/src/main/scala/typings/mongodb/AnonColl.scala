@@ -13,7 +13,6 @@ object AnonColl {
   @scala.inline
   def apply(coll: String, db: String): AnonColl = {
     val __obj = js.Dynamic.literal(coll = coll.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColl]
   }
 }

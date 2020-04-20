@@ -26,8 +26,8 @@ class DataGridCell protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FDataGridCell: IModel = js.native
-  def containerAsDataGridColumn(): DataGridColumn = js.native
-  def style(): Style = js.native
+  def containerAsDataGridColumn: DataGridColumn = js.native
+  def style: Style = js.native
   def style(newValue: Style): js.Any = js.native
 }
 

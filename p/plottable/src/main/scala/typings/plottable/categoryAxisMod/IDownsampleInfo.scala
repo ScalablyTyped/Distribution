@@ -13,7 +13,6 @@ object IDownsampleInfo {
   @scala.inline
   def apply(domain: js.Array[String], stepWidth: Double): IDownsampleInfo = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], stepWidth = stepWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDownsampleInfo]
   }
 }

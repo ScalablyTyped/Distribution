@@ -83,6 +83,6 @@ class SSAORenderingPipeline protected () extends PostProcessRenderPipeline {
   /**
     * Gets active scene
     */
-  def scene(): Scene = js.native
+  def scene: Scene = js.native
 }
 

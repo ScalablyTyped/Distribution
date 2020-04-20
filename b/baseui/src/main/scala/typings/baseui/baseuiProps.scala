@@ -1,5 +1,6 @@
 package typings.baseui
 
+import typings.baseui.appNavBarMod.AppNavBarPropsT
 import typings.baseui.dndListMod.StatefulComponentContainerProps
 import typings.baseui.layerMod.TetherProps
 import typings.baseui.listMod.LabelPropsT
@@ -162,7 +163,7 @@ trait baseuiProps {
   def FlexGridItemProps: typings.baseui.flexGridMod.FlexGridItemProps.type = typings.baseui.flexGridMod.FlexGridItemProps
   type FlexGridItemProps = typings.baseui.flexGridMod.FlexGridItemProps
   @scala.inline
-  def FocusOnceProps: AnonChildrenReactNode.type = typings.baseui.AnonChildrenReactNode
+  def FocusOnceProps: AnonChildrenReactNode.type = AnonChildrenReactNode
   type FocusOnceProps = AnonChildrenReactNode
   @scala.inline
   def FormControlProps: typings.baseui.formControlMod.FormControlProps.type = typings.baseui.formControlMod.FormControlProps
@@ -261,7 +262,7 @@ trait baseuiProps {
   def ListProps: typings.baseui.dndListMod.ListProps.type = typings.baseui.dndListMod.ListProps
   type ListProps = typings.baseui.dndListMod.ListProps
   @scala.inline
-  def ListItemLabelProps: LabelPropsT.type = typings.baseui.listMod.LabelPropsT
+  def ListItemLabelProps: LabelPropsT.type = LabelPropsT
   type ListItemLabelProps = LabelPropsT
   @scala.inline
   def LocaleProviderProps: typings.baseui.mod.LocaleProviderProps.type = typings.baseui.mod.LocaleProviderProps
@@ -273,13 +274,13 @@ trait baseuiProps {
   def MenuProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type MenuProps = typings.baseui.iconMod.IconProps
   @scala.inline
-  def MenuAdapterProps: MenuAdapterPropsT.type = typings.baseui.listMod.MenuAdapterPropsT
+  def MenuAdapterProps: MenuAdapterPropsT.type = MenuAdapterPropsT
   type MenuAdapterProps = MenuAdapterPropsT
   @scala.inline
   def ModalProps: typings.baseui.modalMod.ModalProps.type = typings.baseui.modalMod.ModalProps
   type ModalProps = typings.baseui.modalMod.ModalProps
   @scala.inline
-  def ModalButtonProps: ButtonPropsautoFocusboole.type = typings.baseui.ButtonPropsautoFocusboole
+  def ModalButtonProps: ButtonPropsautoFocusboole.type = ButtonPropsautoFocusboole
   type ModalButtonProps = ButtonPropsautoFocusboole
   @scala.inline
   def NavItemProps: typings.baseui.sideNavigationMod.NavItemProps.type = typings.baseui.sideNavigationMod.NavItemProps
@@ -288,7 +289,7 @@ trait baseuiProps {
   def NavigationProps: typings.baseui.sideNavigationMod.NavigationProps.type = typings.baseui.sideNavigationMod.NavigationProps
   type NavigationProps = typings.baseui.sideNavigationMod.NavigationProps
   @scala.inline
-  def NestedMenusProps: NestedMenuProps.type = typings.baseui.menuMod.NestedMenuProps
+  def NestedMenusProps: NestedMenuProps.type = NestedMenuProps
   type NestedMenusProps = NestedMenuProps
   @scala.inline
   def NotificationProps: typings.baseui.toastMod.ToastProps.type = typings.baseui.toastMod.ToastProps
@@ -375,7 +376,7 @@ trait baseuiProps {
   def SelectProps: typings.baseui.selectMod.SelectProps.type = typings.baseui.selectMod.SelectProps
   type SelectProps = typings.baseui.selectMod.SelectProps
   @scala.inline
-  def SelectDropdownProps: DropdownProps.type = typings.baseui.selectMod.DropdownProps
+  def SelectDropdownProps: DropdownProps.type = DropdownProps
   type SelectDropdownProps = DropdownProps
   @scala.inline
   def ShowProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
@@ -396,7 +397,7 @@ trait baseuiProps {
   def StatefulButtonGroupProps: typings.baseui.buttonGroupMod.StatefulButtonGroupProps.type = typings.baseui.buttonGroupMod.StatefulButtonGroupProps
   type StatefulButtonGroupProps = typings.baseui.buttonGroupMod.StatefulButtonGroupProps
   @scala.inline
-  def StatefulCalendarProps: StatefulDatepickerPropsCa.type = typings.baseui.StatefulDatepickerPropsCa
+  def StatefulCalendarProps: StatefulDatepickerPropsCa.type = StatefulDatepickerPropsCa
   type StatefulCalendarProps = StatefulDatepickerPropsCa
   @scala.inline
   def StatefulCheckboxProps: typings.baseui.checkboxMod.StatefulCheckboxProps.type = typings.baseui.checkboxMod.StatefulCheckboxProps
@@ -405,7 +406,7 @@ trait baseuiProps {
   def StatefulContainerProps: typings.baseui.menuMod.StatefulContainerProps.type = typings.baseui.menuMod.StatefulContainerProps
   type StatefulContainerProps = typings.baseui.menuMod.StatefulContainerProps
   @scala.inline
-  def StatefulDatepickerProps: StatefulDatepickerPropsDa.type = typings.baseui.StatefulDatepickerPropsDa
+  def StatefulDatepickerProps: StatefulDatepickerPropsDa.type = StatefulDatepickerPropsDa
   type StatefulDatepickerProps = StatefulDatepickerPropsDa
   @scala.inline
   def StatefulInputProps: typings.baseui.inputMod.StatefulInputProps.type = typings.baseui.inputMod.StatefulInputProps
@@ -414,7 +415,7 @@ trait baseuiProps {
   def StatefulListProps: typings.baseui.dndListMod.StatefulListProps.type = typings.baseui.dndListMod.StatefulListProps
   type StatefulListProps = typings.baseui.dndListMod.StatefulListProps
   @scala.inline
-  def StatefulListContainerProps: StatefulComponentContainerProps.type = typings.baseui.dndListMod.StatefulComponentContainerProps
+  def StatefulListContainerProps: StatefulComponentContainerProps.type = StatefulComponentContainerProps
   type StatefulListContainerProps = StatefulComponentContainerProps
   type StatefulMenuProps = typings.baseui.menuMod.StatefulMenuProps
   @scala.inline
@@ -462,6 +463,9 @@ trait baseuiProps {
   def StatefulTreeViewProps: typings.baseui.treeViewMod.TreeViewProps.type = typings.baseui.treeViewMod.TreeViewProps
   type StatefulTreeViewProps = typings.baseui.treeViewMod.TreeViewProps
   @scala.inline
+  def StatelessAccordionProps: typings.baseui.accordionMod.StatelessAccordionProps.type = typings.baseui.accordionMod.StatelessAccordionProps
+  type StatelessAccordionProps = typings.baseui.accordionMod.StatelessAccordionProps
+  @scala.inline
   def StepProps: typings.baseui.progressStepsMod.StepProps.type = typings.baseui.progressStepsMod.StepProps
   type StepProps = typings.baseui.progressStepsMod.StepProps
   @scala.inline
@@ -481,7 +485,7 @@ trait baseuiProps {
   def TagProps: typings.baseui.tagMod.TagProps.type = typings.baseui.tagMod.TagProps
   type TagProps = typings.baseui.tagMod.TagProps
   @scala.inline
-  def TetherBehaviorProps: TetherProps.type = typings.baseui.layerMod.TetherProps
+  def TetherBehaviorProps: TetherProps.type = TetherProps
   type TetherBehaviorProps = TetherProps
   @scala.inline
   def TextareaProps: typings.baseui.textareaMod.TextareaProps.type = typings.baseui.textareaMod.TextareaProps
@@ -499,7 +503,7 @@ trait baseuiProps {
   def ToastProps: typings.baseui.toastMod.ToastProps.type = typings.baseui.toastMod.ToastProps
   type ToastProps = typings.baseui.toastMod.ToastProps
   @scala.inline
-  def ToasterContainerProps: ReadonlyToasterProps.type = typings.baseui.ReadonlyToasterProps
+  def ToasterContainerProps: ReadonlyToasterProps.type = ReadonlyToasterProps
   type ToasterContainerProps = ReadonlyToasterProps
   @scala.inline
   def TooltipProps: typings.baseui.tooltipMod.TooltipProps.type = typings.baseui.tooltipMod.TooltipProps
@@ -522,6 +526,9 @@ trait baseuiProps {
   @scala.inline
   def TriangleUpProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type TriangleUpProps = typings.baseui.iconMod.IconProps
+  @scala.inline
+  def UnstableAppNavBarProps: AppNavBarPropsT.type = AppNavBarPropsT
+  type UnstableAppNavBarProps = AppNavBarPropsT
   @scala.inline
   def UploadProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type UploadProps = typings.baseui.iconMod.IconProps

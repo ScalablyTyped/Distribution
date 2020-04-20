@@ -13,7 +13,6 @@ object CredentialsClientConfig {
   @scala.inline
   def apply(clientId: String, clientSecret: String): CredentialsClientConfig = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CredentialsClientConfig]
   }
 }

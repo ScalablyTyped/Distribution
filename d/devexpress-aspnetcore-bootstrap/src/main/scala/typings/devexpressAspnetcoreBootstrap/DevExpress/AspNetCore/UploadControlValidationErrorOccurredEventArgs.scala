@@ -21,7 +21,6 @@ object UploadControlValidationErrorOccurredEventArgs {
     validationSettings: BootstrapUploadControlValidationSettings
   ): UploadControlValidationErrorOccurredEventArgs = {
     val __obj = js.Dynamic.literal(errorText = errorText.asInstanceOf[js.Any], invalidFiles = invalidFiles.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], showAlert = showAlert.asInstanceOf[js.Any], validationSettings = validationSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadControlValidationErrorOccurredEventArgs]
   }
 }

@@ -28,7 +28,6 @@ object SyntaxError {
     offset: Double
   ): SyntaxError = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], found = found.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SyntaxError]
   }
 }

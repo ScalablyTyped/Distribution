@@ -26,7 +26,6 @@ object AnonMi {
     policy: ObjectIdentifierParam | HexParam | NameParam
   ): AnonMi = {
     val __obj = js.Dynamic.literal(certreq = certreq.asInstanceOf[js.Any], mi = mi.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMi]
   }
 }

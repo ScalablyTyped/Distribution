@@ -22,7 +22,6 @@ object WeightsManifestGroupConfig {
   @scala.inline
   def apply(paths: js.Array[String], weights: js.Array[WeightsManifestEntry]): WeightsManifestGroupConfig = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any], weights = weights.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WeightsManifestGroupConfig]
   }
 }

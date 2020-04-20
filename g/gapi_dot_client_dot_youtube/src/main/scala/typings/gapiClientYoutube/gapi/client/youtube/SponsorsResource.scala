@@ -15,7 +15,6 @@ object SponsorsResource {
   @scala.inline
   def apply(list: AnonFilter => Request_[SponsorListResponse]): SponsorsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[SponsorsResource]
   }
 }

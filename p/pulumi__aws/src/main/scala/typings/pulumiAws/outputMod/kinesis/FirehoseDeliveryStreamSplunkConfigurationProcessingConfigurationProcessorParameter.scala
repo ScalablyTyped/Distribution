@@ -20,7 +20,6 @@ object FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor
   @scala.inline
   def apply(parameterName: String, parameterValue: String): FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorParameter = {
     val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any], parameterValue = parameterValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorParameter]
   }
 }

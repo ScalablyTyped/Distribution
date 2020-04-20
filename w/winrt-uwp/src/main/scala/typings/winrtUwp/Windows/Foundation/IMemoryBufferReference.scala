@@ -14,7 +14,6 @@ object IMemoryBufferReference {
   @scala.inline
   def apply(capacity: Double, close: () => Unit): IMemoryBufferReference = {
     val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], close = js.Any.fromFunction0(close))
-  
     __obj.asInstanceOf[IMemoryBufferReference]
   }
 }

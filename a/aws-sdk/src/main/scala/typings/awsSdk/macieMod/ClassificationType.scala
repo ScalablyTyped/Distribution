@@ -20,7 +20,6 @@ object ClassificationType {
   @scala.inline
   def apply(continuous: S3ContinuousClassificationType, oneTime: S3OneTimeClassificationType): ClassificationType = {
     val __obj = js.Dynamic.literal(continuous = continuous.asInstanceOf[js.Any], oneTime = oneTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClassificationType]
   }
 }

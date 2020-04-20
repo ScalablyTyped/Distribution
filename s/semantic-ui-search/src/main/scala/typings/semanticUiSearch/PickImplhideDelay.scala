@@ -13,7 +13,6 @@ object PickImplhideDelay {
   @scala.inline
   def apply(hideDelay: Double): PickImplhideDelay = {
     val __obj = js.Dynamic.literal(hideDelay = hideDelay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplhideDelay]
   }
 }

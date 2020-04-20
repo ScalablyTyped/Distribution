@@ -13,7 +13,6 @@ object PickImpldisplayTime {
   @scala.inline
   def apply(displayTime: Double): PickImpldisplayTime = {
     val __obj = js.Dynamic.literal(displayTime = displayTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldisplayTime]
   }
 }

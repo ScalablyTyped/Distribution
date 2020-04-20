@@ -16,7 +16,6 @@ object DescribeIndexFieldsResponse {
   @scala.inline
   def apply(IndexFields: IndexFieldStatusList): DescribeIndexFieldsResponse = {
     val __obj = js.Dynamic.literal(IndexFields = IndexFields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeIndexFieldsResponse]
   }
 }

@@ -36,7 +36,7 @@ abstract class RemoteEntitySourceDocument protected () extends Document {
   @JSName("model")
   var model_FRemoteEntitySourceDocument: IModel = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MRemoteEntitySourceDocument(): FolderBase = js.native
+  def containerAsFolderBase_MRemoteEntitySourceDocument: FolderBase = js.native
 }
 
 /* static members */

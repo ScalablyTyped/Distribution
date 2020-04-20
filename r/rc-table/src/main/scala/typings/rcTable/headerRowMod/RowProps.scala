@@ -33,7 +33,6 @@ object RowProps {
     stickyOffsets: StickyOffsets
   ): RowProps[RecordType] = {
     val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], cells = cells.asInstanceOf[js.Any], flattenColumns = flattenColumns.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], onHeaderRow = js.Any.fromFunction2(onHeaderRow), rowComponent = rowComponent.asInstanceOf[js.Any], stickyOffsets = stickyOffsets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowProps[RecordType]]
   }
 }

@@ -14,7 +14,6 @@ object AnonCancelText {
   @scala.inline
   def apply(cancelText: String, justOkText: String, okText: String): AnonCancelText = {
     val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], justOkText = justOkText.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelText]
   }
 }

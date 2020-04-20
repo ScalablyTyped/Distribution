@@ -2,9 +2,7 @@ package typings.titanium.Titanium.UI.iOS
 
 import typings.titanium.Point
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.View
-import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,125 +10,95 @@ import scala.scalajs.js.annotation._
 /**
 			 * Continuous or instantaneous force to apply to an item.
 			 */
-trait PushBehavior extends Proxy {
+@JSGlobal("Titanium.UI.iOS.PushBehavior")
+@js.native
+class PushBehavior () extends Proxy {
   /**
   				 * State of the push behavior's force.
   				 */
-  var active: Boolean
+  var active: Boolean = js.native
   /**
   				 * Specifies the angle of the force vector in radians.
   				 */
-  var angle: Double
+  var angle: Double = js.native
   /**
   				 * Items added to this behavior.
   				 */
-  val items: js.Array[View]
+  val items: js.Array[View] = js.native
   /**
   				 * Specifies the magnitude of the force vector.
   				 */
-  var magnitude: Double
+  var magnitude: Double = js.native
   /**
   				 * Specifies the direction of the force vector as an x, y pair.
   				 */
-  var pushDirection: Point
+  var pushDirection: Point = js.native
   /**
   				 * Specifies the push mode.
   				 */
-  var pushMode: Double
+  var pushMode: Double = js.native
   /**
   				 * Adds an item to this behavior.
   				 */
-  def addItem(item: js.Any): Unit
+  def addItem(item: View): Unit = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.PushBehavior.active> property.
+  				 * @deprecated Access <Titanium.UI.iOS.PushBehavior.active> instead.
   				 */
-  def getActive(): Boolean
+  def getActive(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.PushBehavior.angle> property.
+  				 * @deprecated Access <Titanium.UI.iOS.PushBehavior.angle> instead.
   				 */
-  def getAngle(): Double
+  def getAngle(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.PushBehavior.items> property.
+  				 * @deprecated Access <Titanium.UI.iOS.PushBehavior.items> instead.
   				 */
-  def getItems(): js.Array[View]
+  def getItems(): js.Array[View] = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.PushBehavior.magnitude> property.
+  				 * @deprecated Access <Titanium.UI.iOS.PushBehavior.magnitude> instead.
   				 */
-  def getMagnitude(): Double
+  def getMagnitude(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.PushBehavior.pushDirection> property.
+  				 * @deprecated Access <Titanium.UI.iOS.PushBehavior.pushDirection> instead.
   				 */
-  def getPushDirection(): Point
+  def getPushDirection(): Point = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.PushBehavior.pushMode> property.
+  				 * @deprecated Access <Titanium.UI.iOS.PushBehavior.pushMode> instead.
   				 */
-  def getPushMode(): Double
+  def getPushMode(): Double = js.native
   /**
   				 * Removes the specified item from this behavior.
   				 */
-  def removeItem(item: js.Any): Unit
+  def removeItem(item: View): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.PushBehavior.active> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.PushBehavior.active> instead.
   				 */
-  def setActive(active: Boolean): Unit
+  def setActive(active: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.PushBehavior.angle> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.PushBehavior.angle> instead.
   				 */
-  def setAngle(angle: Double): Unit
+  def setAngle(angle: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.PushBehavior.magnitude> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.PushBehavior.magnitude> instead.
   				 */
-  def setMagnitude(magnitude: Double): Unit
+  def setMagnitude(magnitude: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.PushBehavior.pushDirection> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.PushBehavior.pushDirection> instead.
   				 */
-  def setPushDirection(pushDirection: Point): Unit
+  def setPushDirection(pushDirection: Point): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.PushBehavior.pushMode> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.PushBehavior.pushMode> instead.
   				 */
-  def setPushMode(pushMode: Double): Unit
-}
-
-object PushBehavior {
-  @scala.inline
-  def apply(
-    active: Boolean,
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    addItem: js.Any => Unit,
-    angle: Double,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    fireEvent: (String, js.Any) => Unit,
-    getActive: () => Boolean,
-    getAngle: () => Double,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getItems: () => js.Array[View],
-    getMagnitude: () => Double,
-    getPushDirection: () => Point,
-    getPushMode: () => Double,
-    items: js.Array[View],
-    magnitude: Double,
-    pushDirection: Point,
-    pushMode: Double,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    removeItem: js.Any => Unit,
-    setActive: Boolean => Unit,
-    setAngle: Double => Unit,
-    setBubbleParent: Boolean => Unit,
-    setMagnitude: Double => Unit,
-    setPushDirection: Point => Unit,
-    setPushMode: Double => Unit,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): PushBehavior = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), addItem = js.Any.fromFunction1(addItem), angle = angle.asInstanceOf[js.Any], apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getActive = js.Any.fromFunction0(getActive), getAngle = js.Any.fromFunction0(getAngle), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getItems = js.Any.fromFunction0(getItems), getMagnitude = js.Any.fromFunction0(getMagnitude), getPushDirection = js.Any.fromFunction0(getPushDirection), getPushMode = js.Any.fromFunction0(getPushMode), items = items.asInstanceOf[js.Any], magnitude = magnitude.asInstanceOf[js.Any], pushDirection = pushDirection.asInstanceOf[js.Any], pushMode = pushMode.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), removeItem = js.Any.fromFunction1(removeItem), setActive = js.Any.fromFunction1(setActive), setAngle = js.Any.fromFunction1(setAngle), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setMagnitude = js.Any.fromFunction1(setMagnitude), setPushDirection = js.Any.fromFunction1(setPushDirection), setPushMode = js.Any.fromFunction1(setPushMode))
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PushBehavior]
-  }
+  def setPushMode(pushMode: Double): Unit = js.native
 }
 

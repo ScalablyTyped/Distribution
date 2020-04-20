@@ -25,32 +25,30 @@ trait RandomWebProtocal extends js.Object
 
 object RandomWebProtocal {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cid: typings.mockjs.mockjsStrings.cid = "cid".asInstanceOf[typings.mockjs.mockjsStrings.cid]
   @scala.inline
-  def cid: typings.mockjs.mockjsStrings.cid = this.cast("cid")
+  def ftp: typings.mockjs.mockjsStrings.ftp = "ftp".asInstanceOf[typings.mockjs.mockjsStrings.ftp]
   @scala.inline
-  def ftp: typings.mockjs.mockjsStrings.ftp = this.cast("ftp")
+  def gopher: typings.mockjs.mockjsStrings.gopher = "gopher".asInstanceOf[typings.mockjs.mockjsStrings.gopher]
   @scala.inline
-  def gopher: typings.mockjs.mockjsStrings.gopher = this.cast("gopher")
+  def http: typings.mockjs.mockjsStrings.http = "http".asInstanceOf[typings.mockjs.mockjsStrings.http]
   @scala.inline
-  def http: typings.mockjs.mockjsStrings.http = this.cast("http")
+  def mailto: typings.mockjs.mockjsStrings.mailto = "mailto".asInstanceOf[typings.mockjs.mockjsStrings.mailto]
   @scala.inline
-  def mailto: typings.mockjs.mockjsStrings.mailto = this.cast("mailto")
+  def mid: typings.mockjs.mockjsStrings.mid = "mid".asInstanceOf[typings.mockjs.mockjsStrings.mid]
   @scala.inline
-  def mid: typings.mockjs.mockjsStrings.mid = this.cast("mid")
+  def news: typings.mockjs.mockjsStrings.news = "news".asInstanceOf[typings.mockjs.mockjsStrings.news]
   @scala.inline
-  def news: typings.mockjs.mockjsStrings.news = this.cast("news")
+  def nntp: typings.mockjs.mockjsStrings.nntp = "nntp".asInstanceOf[typings.mockjs.mockjsStrings.nntp]
   @scala.inline
-  def nntp: typings.mockjs.mockjsStrings.nntp = this.cast("nntp")
+  def prospero: typings.mockjs.mockjsStrings.prospero = "prospero".asInstanceOf[typings.mockjs.mockjsStrings.prospero]
   @scala.inline
-  def prospero: typings.mockjs.mockjsStrings.prospero = this.cast("prospero")
+  def rlogin: typings.mockjs.mockjsStrings.rlogin = "rlogin".asInstanceOf[typings.mockjs.mockjsStrings.rlogin]
   @scala.inline
-  def rlogin: typings.mockjs.mockjsStrings.rlogin = this.cast("rlogin")
+  def telnet: typings.mockjs.mockjsStrings.telnet = "telnet".asInstanceOf[typings.mockjs.mockjsStrings.telnet]
   @scala.inline
-  def telnet: typings.mockjs.mockjsStrings.telnet = this.cast("telnet")
+  def tn3270: typings.mockjs.mockjsStrings.tn3270 = "tn3270".asInstanceOf[typings.mockjs.mockjsStrings.tn3270]
   @scala.inline
-  def tn3270: typings.mockjs.mockjsStrings.tn3270 = this.cast("tn3270")
-  @scala.inline
-  def wais: typings.mockjs.mockjsStrings.wais = this.cast("wais")
+  def wais: typings.mockjs.mockjsStrings.wais = "wais".asInstanceOf[typings.mockjs.mockjsStrings.wais]
 }
 

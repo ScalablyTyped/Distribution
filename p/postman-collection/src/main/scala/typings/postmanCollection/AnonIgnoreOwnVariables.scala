@@ -12,7 +12,6 @@ object AnonIgnoreOwnVariables {
   @scala.inline
   def apply(ignoreOwnVariables: Boolean): AnonIgnoreOwnVariables = {
     val __obj = js.Dynamic.literal(ignoreOwnVariables = ignoreOwnVariables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIgnoreOwnVariables]
   }
 }

@@ -15,16 +15,14 @@ trait LayoutType extends js.Object
 
 object LayoutType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hex: typings.rotJs.rotJsStrings.hex = "hex".asInstanceOf[typings.rotJs.rotJsStrings.hex]
   @scala.inline
-  def hex: typings.rotJs.rotJsStrings.hex = this.cast("hex")
+  def rect: typings.rotJs.rotJsStrings.rect = "rect".asInstanceOf[typings.rotJs.rotJsStrings.rect]
   @scala.inline
-  def rect: typings.rotJs.rotJsStrings.rect = this.cast("rect")
+  def term: typings.rotJs.rotJsStrings.term = "term".asInstanceOf[typings.rotJs.rotJsStrings.term]
   @scala.inline
-  def term: typings.rotJs.rotJsStrings.term = this.cast("term")
+  def tile: typings.rotJs.rotJsStrings.tile = "tile".asInstanceOf[typings.rotJs.rotJsStrings.tile]
   @scala.inline
-  def tile: typings.rotJs.rotJsStrings.tile = this.cast("tile")
-  @scala.inline
-  def `tile-gl`: typings.rotJs.rotJsStrings.`tile-gl` = this.cast("tile-gl")
+  def `tile-gl`: typings.rotJs.rotJsStrings.`tile-gl` = "tile-gl".asInstanceOf[typings.rotJs.rotJsStrings.`tile-gl`]
 }
 

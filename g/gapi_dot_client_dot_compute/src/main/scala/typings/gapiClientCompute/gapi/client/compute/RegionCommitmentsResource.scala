@@ -29,7 +29,6 @@ object RegionCommitmentsResource {
     list: AnonFilter => Request_[CommitmentList]
   ): RegionCommitmentsResource = {
     val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[RegionCommitmentsResource]
   }
 }

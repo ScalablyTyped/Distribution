@@ -23,32 +23,30 @@ trait ResourceType extends js.Object
 
 object ResourceType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def csp_report: typings.naverWhale.naverWhaleStrings.csp_report = "csp_report".asInstanceOf[typings.naverWhale.naverWhaleStrings.csp_report]
   @scala.inline
-  def csp_report: typings.naverWhale.naverWhaleStrings.csp_report = this.cast("csp_report")
+  def font: typings.naverWhale.naverWhaleStrings.font = "font".asInstanceOf[typings.naverWhale.naverWhaleStrings.font]
   @scala.inline
-  def font: typings.naverWhale.naverWhaleStrings.font = this.cast("font")
+  def image: typings.naverWhale.naverWhaleStrings.image = "image".asInstanceOf[typings.naverWhale.naverWhaleStrings.image]
   @scala.inline
-  def image: typings.naverWhale.naverWhaleStrings.image = this.cast("image")
+  def main_frame: typings.naverWhale.naverWhaleStrings.main_frame = "main_frame".asInstanceOf[typings.naverWhale.naverWhaleStrings.main_frame]
   @scala.inline
-  def main_frame: typings.naverWhale.naverWhaleStrings.main_frame = this.cast("main_frame")
+  def media: typings.naverWhale.naverWhaleStrings.media = "media".asInstanceOf[typings.naverWhale.naverWhaleStrings.media]
   @scala.inline
-  def media: typings.naverWhale.naverWhaleStrings.media = this.cast("media")
+  def `object`: typings.naverWhale.naverWhaleStrings.`object` = "object".asInstanceOf[typings.naverWhale.naverWhaleStrings.`object`]
   @scala.inline
-  def `object`: typings.naverWhale.naverWhaleStrings.`object` = this.cast("object")
+  def other: typings.naverWhale.naverWhaleStrings.other = "other".asInstanceOf[typings.naverWhale.naverWhaleStrings.other]
   @scala.inline
-  def other: typings.naverWhale.naverWhaleStrings.other = this.cast("other")
+  def ping: typings.naverWhale.naverWhaleStrings.ping = "ping".asInstanceOf[typings.naverWhale.naverWhaleStrings.ping]
   @scala.inline
-  def ping: typings.naverWhale.naverWhaleStrings.ping = this.cast("ping")
+  def script: typings.naverWhale.naverWhaleStrings.script = "script".asInstanceOf[typings.naverWhale.naverWhaleStrings.script]
   @scala.inline
-  def script: typings.naverWhale.naverWhaleStrings.script = this.cast("script")
+  def stylesheet: typings.naverWhale.naverWhaleStrings.stylesheet = "stylesheet".asInstanceOf[typings.naverWhale.naverWhaleStrings.stylesheet]
   @scala.inline
-  def stylesheet: typings.naverWhale.naverWhaleStrings.stylesheet = this.cast("stylesheet")
+  def sub_frame: typings.naverWhale.naverWhaleStrings.sub_frame = "sub_frame".asInstanceOf[typings.naverWhale.naverWhaleStrings.sub_frame]
   @scala.inline
-  def sub_frame: typings.naverWhale.naverWhaleStrings.sub_frame = this.cast("sub_frame")
+  def websocket: typings.naverWhale.naverWhaleStrings.websocket = "websocket".asInstanceOf[typings.naverWhale.naverWhaleStrings.websocket]
   @scala.inline
-  def websocket: typings.naverWhale.naverWhaleStrings.websocket = this.cast("websocket")
-  @scala.inline
-  def xmlhttprequest: typings.naverWhale.naverWhaleStrings.xmlhttprequest = this.cast("xmlhttprequest")
+  def xmlhttprequest: typings.naverWhale.naverWhaleStrings.xmlhttprequest = "xmlhttprequest".asInstanceOf[typings.naverWhale.naverWhaleStrings.xmlhttprequest]
 }
 

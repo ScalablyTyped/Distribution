@@ -13,12 +13,10 @@ trait MediaState extends js.Object
 
 object MediaState {
   @scala.inline
-  def active: typings.microsoftGraph.microsoftGraphStrings.active = this.cast("active")
+  def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inactive: typings.microsoftGraph.microsoftGraphStrings.inactive = "inactive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inactive]
   @scala.inline
-  def inactive: typings.microsoftGraph.microsoftGraphStrings.inactive = this.cast("inactive")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

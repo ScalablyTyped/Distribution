@@ -19,7 +19,6 @@ object AssetDetails {
   @scala.inline
   def apply(answers: Answers, publisherNaturalIdentifier: String): AssetDetails = {
     val __obj = js.Dynamic.literal(answers = answers.asInstanceOf[js.Any], publisherNaturalIdentifier = publisherNaturalIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssetDetails]
   }
 }

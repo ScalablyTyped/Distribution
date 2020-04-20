@@ -20,7 +20,6 @@ object BatchDetectEntitiesResponse {
   @scala.inline
   def apply(ErrorList: BatchItemErrorList, ResultList: ListOfDetectEntitiesResult): BatchDetectEntitiesResponse = {
     val __obj = js.Dynamic.literal(ErrorList = ErrorList.asInstanceOf[js.Any], ResultList = ResultList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDetectEntitiesResponse]
   }
 }

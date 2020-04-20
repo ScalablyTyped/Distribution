@@ -13,7 +13,6 @@ object IPrintTaskOptionDetailsStatic {
   @scala.inline
   def apply(getFromPrintTaskOptions: PrintTaskOptions => PrintTaskOptionDetails): IPrintTaskOptionDetailsStatic = {
     val __obj = js.Dynamic.literal(getFromPrintTaskOptions = js.Any.fromFunction1(getFromPrintTaskOptions))
-  
     __obj.asInstanceOf[IPrintTaskOptionDetailsStatic]
   }
 }

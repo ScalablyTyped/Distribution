@@ -16,7 +16,6 @@ object DeleteBrokerRequest {
   @scala.inline
   def apply(BrokerId: string): DeleteBrokerRequest = {
     val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBrokerRequest]
   }
 }

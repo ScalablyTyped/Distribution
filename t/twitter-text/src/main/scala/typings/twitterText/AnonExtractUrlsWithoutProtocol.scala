@@ -12,7 +12,6 @@ object AnonExtractUrlsWithoutProtocol {
   @scala.inline
   def apply(extractUrlsWithoutProtocol: Boolean): AnonExtractUrlsWithoutProtocol = {
     val __obj = js.Dynamic.literal(extractUrlsWithoutProtocol = extractUrlsWithoutProtocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtractUrlsWithoutProtocol]
   }
 }

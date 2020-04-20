@@ -25,7 +25,6 @@ object InnerAudioContextOnErrorCallbackResult {
   @scala.inline
   def apply(errCode: `10001` | `10002` | `10003` | `10004` | `-1`): InnerAudioContextOnErrorCallbackResult = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InnerAudioContextOnErrorCallbackResult]
   }
 }

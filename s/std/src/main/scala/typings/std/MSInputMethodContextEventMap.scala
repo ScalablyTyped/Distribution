@@ -14,7 +14,6 @@ object MSInputMethodContextEventMap {
   @scala.inline
   def apply(MSCandidateWindowHide: Event_, MSCandidateWindowShow: Event_, MSCandidateWindowUpdate: Event_): MSInputMethodContextEventMap = {
     val __obj = js.Dynamic.literal(MSCandidateWindowHide = MSCandidateWindowHide.asInstanceOf[js.Any], MSCandidateWindowShow = MSCandidateWindowShow.asInstanceOf[js.Any], MSCandidateWindowUpdate = MSCandidateWindowUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MSInputMethodContextEventMap]
   }
 }

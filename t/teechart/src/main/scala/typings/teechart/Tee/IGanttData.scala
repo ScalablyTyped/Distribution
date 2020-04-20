@@ -21,7 +21,6 @@ object IGanttData {
     x: js.Array[Double]
   ): IGanttData = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGanttData]
   }
 }

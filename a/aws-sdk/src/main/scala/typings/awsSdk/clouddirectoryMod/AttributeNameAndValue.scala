@@ -20,7 +20,6 @@ object AttributeNameAndValue {
   @scala.inline
   def apply(AttributeName: AttributeName, Value: TypedAttributeValue): AttributeNameAndValue = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttributeNameAndValue]
   }
 }

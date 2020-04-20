@@ -21,7 +21,6 @@ object Query {
     sort: String => Query
   ): Query = {
     val __obj = js.Dynamic.literal(done = js.Any.fromFunction1(done), limit = js.Any.fromFunction1(limit), skip = js.Any.fromFunction1(skip), sort = js.Any.fromFunction1(sort))
-  
     __obj.asInstanceOf[Query]
   }
 }

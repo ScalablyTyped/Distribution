@@ -16,18 +16,16 @@ trait RatingFranceMoviesType extends js.Object
 
 object RatingFranceMoviesType {
   @scala.inline
-  def agesAbove10: typings.microsoftGraph.microsoftGraphStrings.agesAbove10 = this.cast("agesAbove10")
+  def agesAbove10: typings.microsoftGraph.microsoftGraphStrings.agesAbove10 = "agesAbove10".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove10]
   @scala.inline
-  def agesAbove12: typings.microsoftGraph.microsoftGraphStrings.agesAbove12 = this.cast("agesAbove12")
+  def agesAbove12: typings.microsoftGraph.microsoftGraphStrings.agesAbove12 = "agesAbove12".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove12]
   @scala.inline
-  def agesAbove16: typings.microsoftGraph.microsoftGraphStrings.agesAbove16 = this.cast("agesAbove16")
+  def agesAbove16: typings.microsoftGraph.microsoftGraphStrings.agesAbove16 = "agesAbove16".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove16]
   @scala.inline
-  def agesAbove18: typings.microsoftGraph.microsoftGraphStrings.agesAbove18 = this.cast("agesAbove18")
+  def agesAbove18: typings.microsoftGraph.microsoftGraphStrings.agesAbove18 = "agesAbove18".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove18]
   @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = this.cast("allAllowed")
+  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = this.cast("allBlocked")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
 }
 

@@ -25,7 +25,6 @@ object CardBuilder {
     setName: String => CardBuilder
   ): CardBuilder = {
     val __obj = js.Dynamic.literal(addCardAction = js.Any.fromFunction1(addCardAction), addSection = js.Any.fromFunction1(addSection), build = js.Any.fromFunction0(build), setHeader = js.Any.fromFunction1(setHeader), setName = js.Any.fromFunction1(setName))
-  
     __obj.asInstanceOf[CardBuilder]
   }
 }

@@ -9,13 +9,17 @@ import scala.scalajs.js.annotation._
   * Simplified Artist Object
   * [artist object (simplified)](https://developer.spotify.com/web-api/object-model/)
   */
-trait ArtistObjectSimplified extends js.Object {
-  var external_urls: ExternalUrlObject
-  var href: String
+trait ArtistObjectSimplified extends ContextObject {
+  /**
+    * The [Spotify ID](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids) for the artist.
+    */
   var id: String
+  /**
+    * The name of the artist.
+    */
   var name: String
-  var `type`: artist
-  var uri: String
+  @JSName("type")
+  var type_ArtistObjectSimplified: artist
 }
 
 object ArtistObjectSimplified {

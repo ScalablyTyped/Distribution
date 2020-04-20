@@ -20,7 +20,6 @@ object GroupedResourceCount {
   @scala.inline
   def apply(GroupName: StringWithCharLimit256, ResourceCount: Long): GroupedResourceCount = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], ResourceCount = ResourceCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupedResourceCount]
   }
 }

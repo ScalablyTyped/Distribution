@@ -24,7 +24,6 @@ object CaptionLanguageMapping {
   @scala.inline
   def apply(CaptionChannel: integerMin1Max4, LanguageCode: stringMin3Max3, LanguageDescription: stringMin1): CaptionLanguageMapping = {
     val __obj = js.Dynamic.literal(CaptionChannel = CaptionChannel.asInstanceOf[js.Any], LanguageCode = LanguageCode.asInstanceOf[js.Any], LanguageDescription = LanguageDescription.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CaptionLanguageMapping]
   }
 }

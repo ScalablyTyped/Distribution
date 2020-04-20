@@ -15,7 +15,6 @@ object AnonFname {
   @scala.inline
   def apply(fname: String, isCanonical: Boolean, uc: String, unicode: js.Array[String]): AnonFname = {
     val __obj = js.Dynamic.literal(fname = fname.asInstanceOf[js.Any], isCanonical = isCanonical.asInstanceOf[js.Any], uc = uc.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFname]
   }
 }

@@ -12,7 +12,6 @@ object ICenter {
   @scala.inline
   def apply(center: js.Array[String] => CxG): ICenter = {
     val __obj = js.Dynamic.literal(center = js.Any.fromFunction1(center))
-  
     __obj.asInstanceOf[ICenter]
   }
 }

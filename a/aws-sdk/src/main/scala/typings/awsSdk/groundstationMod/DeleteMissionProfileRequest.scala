@@ -16,7 +16,6 @@ object DeleteMissionProfileRequest {
   @scala.inline
   def apply(missionProfileId: String): DeleteMissionProfileRequest = {
     val __obj = js.Dynamic.literal(missionProfileId = missionProfileId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMissionProfileRequest]
   }
 }

@@ -12,7 +12,6 @@ object AnonSupportMode {
   @scala.inline
   def apply(supportMode: js.Array[String]): AnonSupportMode = {
     val __obj = js.Dynamic.literal(supportMode = supportMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSupportMode]
   }
 }

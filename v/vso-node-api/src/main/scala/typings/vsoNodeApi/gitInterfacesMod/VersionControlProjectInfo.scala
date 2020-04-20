@@ -22,7 +22,6 @@ object VersionControlProjectInfo {
     supportsTFVC: Boolean
   ): VersionControlProjectInfo = {
     val __obj = js.Dynamic.literal(defaultSourceControlType = defaultSourceControlType.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], supportsGit = supportsGit.asInstanceOf[js.Any], supportsTFVC = supportsTFVC.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VersionControlProjectInfo]
   }
 }

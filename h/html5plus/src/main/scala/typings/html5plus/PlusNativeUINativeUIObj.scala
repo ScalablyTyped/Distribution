@@ -25,7 +25,6 @@ object PlusNativeUINativeUIObj {
   @scala.inline
   def apply(close: () => Unit): PlusNativeUINativeUIObj = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
-  
     __obj.asInstanceOf[PlusNativeUINativeUIObj]
   }
 }

@@ -13,7 +13,6 @@ object ServiceConfig {
   @scala.inline
   def apply(manifestUrl: String, name: String): ServiceConfig = {
     val __obj = js.Dynamic.literal(manifestUrl = manifestUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceConfig]
   }
 }

@@ -13,7 +13,6 @@ object IPullTypeCollection {
   @scala.inline
   def apply(getLength: () => Double, getTypeAtIndex: Double => PullTypeSymbol): IPullTypeCollection = {
     val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), getTypeAtIndex = js.Any.fromFunction1(getTypeAtIndex))
-  
     __obj.asInstanceOf[IPullTypeCollection]
   }
 }

@@ -24,7 +24,6 @@ object AnonDepth {
     widthSegments: Double
   ): AnonDepth = {
     val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], depthSegments = depthSegments.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], heightSegments = heightSegments.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], widthSegments = widthSegments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDepth]
   }
 }

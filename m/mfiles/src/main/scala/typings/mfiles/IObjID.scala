@@ -28,7 +28,6 @@ object IObjID {
     Unserialize: js.Array[Double] => Unit
   ): IObjID = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), ID = ID.asInstanceOf[js.Any], Serialize = js.Any.fromFunction0(Serialize), SetIDs = js.Any.fromFunction2(SetIDs), ToJSON = js.Any.fromFunction0(ToJSON), Type = Type.asInstanceOf[js.Any], Unserialize = js.Any.fromFunction1(Unserialize))
-  
     __obj.asInstanceOf[IObjID]
   }
 }

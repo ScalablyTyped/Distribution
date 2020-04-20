@@ -18,7 +18,6 @@ object IOptions {
   @scala.inline
   def apply(refreshRate: Double): IOptions = {
     val __obj = js.Dynamic.literal(refreshRate = refreshRate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

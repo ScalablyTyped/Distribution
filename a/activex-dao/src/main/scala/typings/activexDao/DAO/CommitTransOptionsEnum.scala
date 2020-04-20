@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 object CommitTransOptionsEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dbForceOSFlush: `1` = this.cast(1)
+  def dbForceOSFlush: `1` = 1.asInstanceOf[`1`]
 }
 

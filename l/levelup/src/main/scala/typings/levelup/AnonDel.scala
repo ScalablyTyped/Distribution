@@ -19,7 +19,6 @@ object AnonDel {
     del: (/* import warning: importer.ImportType#apply Failed type conversion: infer K */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any, ErrorCallback) => Unit
   ): AnonDel = {
     val __obj = js.Dynamic.literal(del = js.Any.fromFunction3(del))
-  
     __obj.asInstanceOf[AnonDel]
   }
 }

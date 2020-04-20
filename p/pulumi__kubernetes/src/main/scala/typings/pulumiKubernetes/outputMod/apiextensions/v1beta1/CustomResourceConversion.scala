@@ -41,7 +41,6 @@ object CustomResourceConversion {
     webhookClientConfig: WebhookClientConfig
   ): CustomResourceConversion = {
     val __obj = js.Dynamic.literal(conversionReviewVersions = conversionReviewVersions.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any], webhookClientConfig = webhookClientConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomResourceConversion]
   }
 }

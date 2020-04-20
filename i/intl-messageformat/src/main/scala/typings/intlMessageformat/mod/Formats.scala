@@ -21,7 +21,6 @@ object Formats {
     time: Record[String, DateTimeFormatOptions]
   ): Formats = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Formats]
   }
 }

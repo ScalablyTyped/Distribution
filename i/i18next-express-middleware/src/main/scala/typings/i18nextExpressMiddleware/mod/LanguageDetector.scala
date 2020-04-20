@@ -3,6 +3,7 @@ package typings.i18nextExpressMiddleware.mod
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.i18next.i18nextStrings.`3rdParty`
 import typings.i18next.i18nextStrings.backend
 import typings.i18next.i18nextStrings.i18nFormat
@@ -31,8 +32,17 @@ class LanguageDetector () extends Module {
   @JSName("type")
   var type_LanguageDetector: typings.i18nextExpressMiddleware.i18nextExpressMiddlewareStrings.languageDetector = js.native
   def addDetector(detector: LanguageDetectorInterface): Unit = js.native
-  def cacheUserLanguage(req: Request_[ParamsDictionary], res: Response_[_], lng: String, caches: LanguageDetectorCaches): Unit = js.native
-  def detect(req: Request_[ParamsDictionary], res: Response_[_], detectionOrder: LanguageDetectorOrder): Unit = js.native
+  def cacheUserLanguage(
+    req: Request_[ParamsDictionary, _, _, Query],
+    res: Response_[_],
+    lng: String,
+    caches: LanguageDetectorCaches
+  ): Unit = js.native
+  def detect(
+    req: Request_[ParamsDictionary, _, _, Query],
+    res: Response_[_],
+    detectionOrder: LanguageDetectorOrder
+  ): Unit = js.native
   def init(): Unit = js.native
   def init(options: LanguageDetectorOptions): Unit = js.native
   def init(options: LanguageDetectorOptions, allOptions: LanguageDetectorAllOptions): Unit = js.native

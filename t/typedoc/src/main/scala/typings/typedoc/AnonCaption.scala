@@ -13,7 +13,6 @@ object AnonCaption {
   @scala.inline
   def apply(caption: String, target: String): AnonCaption = {
     val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCaption]
   }
 }

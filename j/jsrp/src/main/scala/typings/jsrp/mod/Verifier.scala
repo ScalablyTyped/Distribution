@@ -13,7 +13,6 @@ object Verifier {
   @scala.inline
   def apply(salt: String, verifier: String): Verifier = {
     val __obj = js.Dynamic.literal(salt = salt.asInstanceOf[js.Any], verifier = verifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Verifier]
   }
 }

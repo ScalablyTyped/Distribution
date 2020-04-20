@@ -19,24 +19,22 @@ trait InputMode extends js.Object
 
 object InputMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def decimal: typings.inputmask.inputmaskStrings.decimal = "decimal".asInstanceOf[typings.inputmask.inputmaskStrings.decimal]
   @scala.inline
-  def decimal: typings.inputmask.inputmaskStrings.decimal = this.cast("decimal")
+  def email: typings.inputmask.inputmaskStrings.email = "email".asInstanceOf[typings.inputmask.inputmaskStrings.email]
   @scala.inline
-  def email: typings.inputmask.inputmaskStrings.email = this.cast("email")
+  def none: typings.inputmask.inputmaskStrings.none = "none".asInstanceOf[typings.inputmask.inputmaskStrings.none]
   @scala.inline
-  def none: typings.inputmask.inputmaskStrings.none = this.cast("none")
+  def numeric: typings.inputmask.inputmaskStrings.numeric = "numeric".asInstanceOf[typings.inputmask.inputmaskStrings.numeric]
   @scala.inline
-  def numeric: typings.inputmask.inputmaskStrings.numeric = this.cast("numeric")
+  def search: typings.inputmask.inputmaskStrings.search = "search".asInstanceOf[typings.inputmask.inputmaskStrings.search]
   @scala.inline
-  def search: typings.inputmask.inputmaskStrings.search = this.cast("search")
+  def tel: typings.inputmask.inputmaskStrings.tel = "tel".asInstanceOf[typings.inputmask.inputmaskStrings.tel]
   @scala.inline
-  def tel: typings.inputmask.inputmaskStrings.tel = this.cast("tel")
+  def text: typings.inputmask.inputmaskStrings.text = "text".asInstanceOf[typings.inputmask.inputmaskStrings.text]
   @scala.inline
-  def text: typings.inputmask.inputmaskStrings.text = this.cast("text")
+  def url: typings.inputmask.inputmaskStrings.url = "url".asInstanceOf[typings.inputmask.inputmaskStrings.url]
   @scala.inline
-  def url: typings.inputmask.inputmaskStrings.url = this.cast("url")
-  @scala.inline
-  def verbatim: typings.inputmask.inputmaskStrings.verbatim = this.cast("verbatim")
+  def verbatim: typings.inputmask.inputmaskStrings.verbatim = "verbatim".asInstanceOf[typings.inputmask.inputmaskStrings.verbatim]
 }
 

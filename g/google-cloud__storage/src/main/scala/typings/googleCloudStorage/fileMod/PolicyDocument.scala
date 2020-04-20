@@ -14,7 +14,6 @@ object PolicyDocument {
   @scala.inline
   def apply(base64: String, signature: String, string: String): PolicyDocument = {
     val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PolicyDocument]
   }
 }

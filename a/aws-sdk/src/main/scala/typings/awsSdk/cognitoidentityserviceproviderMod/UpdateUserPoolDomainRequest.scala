@@ -24,7 +24,6 @@ object UpdateUserPoolDomainRequest {
   @scala.inline
   def apply(CustomDomainConfig: CustomDomainConfigType, Domain: DomainType, UserPoolId: UserPoolIdType): UpdateUserPoolDomainRequest = {
     val __obj = js.Dynamic.literal(CustomDomainConfig = CustomDomainConfig.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateUserPoolDomainRequest]
   }
 }

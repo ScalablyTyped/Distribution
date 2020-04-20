@@ -17,20 +17,18 @@ trait FillRuleProperty extends js.Object
 
 object FillRuleProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def evenodd: typings.csstype.csstypeStrings.evenodd = "evenodd".asInstanceOf[typings.csstype.csstypeStrings.evenodd]
   @scala.inline
-  def evenodd: typings.csstype.csstypeStrings.evenodd = this.cast("evenodd")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def nonzero: typings.csstype.csstypeStrings.nonzero = "nonzero".asInstanceOf[typings.csstype.csstypeStrings.nonzero]
   @scala.inline
-  def nonzero: typings.csstype.csstypeStrings.nonzero = this.cast("nonzero")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

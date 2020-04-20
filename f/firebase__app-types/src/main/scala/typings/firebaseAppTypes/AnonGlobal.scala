@@ -12,7 +12,6 @@ object AnonGlobal {
   @scala.inline
   def apply(global: Boolean): AnonGlobal = {
     val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGlobal]
   }
 }

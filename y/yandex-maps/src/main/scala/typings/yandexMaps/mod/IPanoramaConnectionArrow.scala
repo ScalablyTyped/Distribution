@@ -20,7 +20,6 @@ object IPanoramaConnectionArrow {
     properties: Manager
   ): IPanoramaConnectionArrow = {
     val __obj = js.Dynamic.literal(getConnectedPanorama = js.Any.fromFunction0(getConnectedPanorama), getDirection = js.Any.fromFunction0(getDirection), getPanorama = js.Any.fromFunction0(getPanorama), properties = properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPanoramaConnectionArrow]
   }
 }

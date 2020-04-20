@@ -13,7 +13,6 @@ object CharacteristicEventHandlers {
   @scala.inline
   def apply(oncharacteristicvaluechanged: Event_ => js.Any): CharacteristicEventHandlers = {
     val __obj = js.Dynamic.literal(oncharacteristicvaluechanged = js.Any.fromFunction1(oncharacteristicvaluechanged))
-  
     __obj.asInstanceOf[CharacteristicEventHandlers]
   }
 }

@@ -14,7 +14,6 @@ object AnonKey {
   @scala.inline
   def apply(key: BitArray_, salt: BitArray_): AnonKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKey]
   }
 }

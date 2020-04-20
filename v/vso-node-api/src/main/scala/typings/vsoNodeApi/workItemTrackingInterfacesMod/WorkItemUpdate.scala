@@ -51,7 +51,6 @@ object WorkItemUpdate {
     workItemId: Double
   ): WorkItemUpdate = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], relations = relations.asInstanceOf[js.Any], rev = rev.asInstanceOf[js.Any], revisedBy = revisedBy.asInstanceOf[js.Any], revisedDate = revisedDate.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], workItemId = workItemId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemUpdate]
   }
 }

@@ -22,7 +22,6 @@ object CredentialDefinition {
     version: String
   ): CredentialDefinition = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], schema_id = schema_id.asInstanceOf[js.Any], schema_name = schema_name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CredentialDefinition]
   }
 }

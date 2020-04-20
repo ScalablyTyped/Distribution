@@ -34,7 +34,6 @@ object AnonCreated {
     ViewSelector: String
   ): AnonCreated = {
     val __obj = js.Dynamic.literal(Created = Created.asInstanceOf[js.Any], DefaultViewUrl = DefaultViewUrl.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], EnableSyndication = EnableSyndication.asInstanceOf[js.Any], ItemCount = ItemCount.asInstanceOf[js.Any], LinkTitle = LinkTitle.asInstanceOf[js.Any], MajorVersionLimit = MajorVersionLimit.asInstanceOf[js.Any], MajorWithMinorVersionsLimit = MajorWithMinorVersionsLimit.asInstanceOf[js.Any], RelativeFolderPath = RelativeFolderPath.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], ViewSelector = ViewSelector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCreated]
   }
 }

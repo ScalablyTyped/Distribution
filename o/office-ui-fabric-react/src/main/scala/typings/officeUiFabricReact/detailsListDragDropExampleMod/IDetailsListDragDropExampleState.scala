@@ -27,7 +27,6 @@ object IDetailsListDragDropExampleState {
     ]
   ): IDetailsListDragDropExampleState = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], frozenColumnCountFromEnd = frozenColumnCountFromEnd.asInstanceOf[js.Any], frozenColumnCountFromStart = frozenColumnCountFromStart.asInstanceOf[js.Any], isColumnReorderEnabled = isColumnReorderEnabled.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDetailsListDragDropExampleState]
   }
 }

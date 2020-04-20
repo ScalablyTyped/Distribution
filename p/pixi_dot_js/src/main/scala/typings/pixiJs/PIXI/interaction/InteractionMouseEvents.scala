@@ -21,28 +21,26 @@ trait InteractionMouseEvents extends js.Object
 
 object InteractionMouseEvents {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.pixiJs.pixiJsStrings.click = "click".asInstanceOf[typings.pixiJs.pixiJsStrings.click]
   @scala.inline
-  def click: typings.pixiJs.pixiJsStrings.click = this.cast("click")
+  def mousedown: typings.pixiJs.pixiJsStrings.mousedown = "mousedown".asInstanceOf[typings.pixiJs.pixiJsStrings.mousedown]
   @scala.inline
-  def mousedown: typings.pixiJs.pixiJsStrings.mousedown = this.cast("mousedown")
+  def mousemove: typings.pixiJs.pixiJsStrings.mousemove = "mousemove".asInstanceOf[typings.pixiJs.pixiJsStrings.mousemove]
   @scala.inline
-  def mousemove: typings.pixiJs.pixiJsStrings.mousemove = this.cast("mousemove")
+  def mouseout: typings.pixiJs.pixiJsStrings.mouseout = "mouseout".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseout]
   @scala.inline
-  def mouseout: typings.pixiJs.pixiJsStrings.mouseout = this.cast("mouseout")
+  def mouseover: typings.pixiJs.pixiJsStrings.mouseover = "mouseover".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseover]
   @scala.inline
-  def mouseover: typings.pixiJs.pixiJsStrings.mouseover = this.cast("mouseover")
+  def mouseup: typings.pixiJs.pixiJsStrings.mouseup = "mouseup".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseup]
   @scala.inline
-  def mouseup: typings.pixiJs.pixiJsStrings.mouseup = this.cast("mouseup")
+  def mouseupoutside: typings.pixiJs.pixiJsStrings.mouseupoutside = "mouseupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.mouseupoutside]
   @scala.inline
-  def mouseupoutside: typings.pixiJs.pixiJsStrings.mouseupoutside = this.cast("mouseupoutside")
+  def rightclick: typings.pixiJs.pixiJsStrings.rightclick = "rightclick".asInstanceOf[typings.pixiJs.pixiJsStrings.rightclick]
   @scala.inline
-  def rightclick: typings.pixiJs.pixiJsStrings.rightclick = this.cast("rightclick")
+  def rightdown: typings.pixiJs.pixiJsStrings.rightdown = "rightdown".asInstanceOf[typings.pixiJs.pixiJsStrings.rightdown]
   @scala.inline
-  def rightdown: typings.pixiJs.pixiJsStrings.rightdown = this.cast("rightdown")
+  def rightup: typings.pixiJs.pixiJsStrings.rightup = "rightup".asInstanceOf[typings.pixiJs.pixiJsStrings.rightup]
   @scala.inline
-  def rightup: typings.pixiJs.pixiJsStrings.rightup = this.cast("rightup")
-  @scala.inline
-  def rightupoutside: typings.pixiJs.pixiJsStrings.rightupoutside = this.cast("rightupoutside")
+  def rightupoutside: typings.pixiJs.pixiJsStrings.rightupoutside = "rightupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.rightupoutside]
 }
 

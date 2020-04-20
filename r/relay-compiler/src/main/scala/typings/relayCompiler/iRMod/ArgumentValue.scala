@@ -28,7 +28,6 @@ object ArgumentValue {
   @scala.inline
   def Literal(kind: typings.relayCompiler.relayCompilerStrings.Literal, loc: Location, value: js.Any): ArgumentValue = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArgumentValue]
   }
   @scala.inline
@@ -38,7 +37,6 @@ object ArgumentValue {
     loc: Location
   ): ArgumentValue = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArgumentValue]
   }
   @scala.inline

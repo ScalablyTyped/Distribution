@@ -14,7 +14,6 @@ object CoordinateLongitudeLatitude {
   @scala.inline
   def apply(latitude: Double, longitude: Double): CoordinateLongitudeLatitude = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CoordinateLongitudeLatitude]
   }
 }

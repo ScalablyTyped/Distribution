@@ -27,7 +27,6 @@ object ArcadeBodyBounds {
   @scala.inline
   def apply(bottom: Double, right: Double, x: Double, y: Double): ArcadeBodyBounds = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArcadeBodyBounds]
   }
 }

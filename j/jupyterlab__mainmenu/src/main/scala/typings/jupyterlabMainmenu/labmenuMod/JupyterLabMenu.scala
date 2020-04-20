@@ -51,6 +51,6 @@ class JupyterLabMenu protected () extends IJupyterLabMenu {
     * Whether the menu has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MJupyterLabMenu(): Boolean = js.native
+  def isDisposed_MJupyterLabMenu: Boolean = js.native
 }
 

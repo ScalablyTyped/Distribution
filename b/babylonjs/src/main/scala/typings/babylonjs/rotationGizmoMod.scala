@@ -40,19 +40,19 @@ object rotationGizmoMod extends js.Object {
       */
     var zGizmo: PlaneRotationGizmo = js.native
     @JSName("scaleRatio")
-    def scaleRatio_MRotationGizmo(): Double = js.native
+    def scaleRatio_MRotationGizmo: Double = js.native
     /**
       * Ratio for the scale of the gizmo (Default: 1)
       */
     @JSName("scaleRatio")
     def scaleRatio_MRotationGizmo(value: Double): js.Any = js.native
-    def snapDistance(): Double = js.native
+    def snapDistance: Double = js.native
     /**
       * Drag distance in babylon units that the gizmo will snap to when dragged (Default: 0)
       */
     def snapDistance(value: Double): js.Any = js.native
     @JSName("updateGizmoRotationToMatchAttachedMesh")
-    def updateGizmoRotationToMatchAttachedMesh_MRotationGizmo(): Boolean = js.native
+    def updateGizmoRotationToMatchAttachedMesh_MRotationGizmo: Boolean = js.native
     @JSName("updateGizmoRotationToMatchAttachedMesh")
     def updateGizmoRotationToMatchAttachedMesh_MRotationGizmo(value: Boolean): js.Any = js.native
   }

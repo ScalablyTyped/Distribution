@@ -12,10 +12,8 @@ trait EngineType extends js.Object
 
 object EngineType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def mmfiles: typings.arangodb.arangodbStrings.mmfiles = "mmfiles".asInstanceOf[typings.arangodb.arangodbStrings.mmfiles]
   @scala.inline
-  def mmfiles: typings.arangodb.arangodbStrings.mmfiles = this.cast("mmfiles")
-  @scala.inline
-  def rocksdb: typings.arangodb.arangodbStrings.rocksdb = this.cast("rocksdb")
+  def rocksdb: typings.arangodb.arangodbStrings.rocksdb = "rocksdb".asInstanceOf[typings.arangodb.arangodbStrings.rocksdb]
 }
 

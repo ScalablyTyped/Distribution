@@ -13,7 +13,6 @@ object ResetPasswordEmailOptions {
   @scala.inline
   def apply(connection: String, email: String): ResetPasswordEmailOptions = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResetPasswordEmailOptions]
   }
 }

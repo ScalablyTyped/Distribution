@@ -23,7 +23,6 @@ object PreferredSchedulingTerm {
   @scala.inline
   def apply(preference: NodeSelectorTerm, weight: Double): PreferredSchedulingTerm = {
     val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PreferredSchedulingTerm]
   }
 }

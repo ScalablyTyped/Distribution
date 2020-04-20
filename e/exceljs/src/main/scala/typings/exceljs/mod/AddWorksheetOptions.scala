@@ -23,7 +23,6 @@ object AddWorksheetOptions {
     views: js.Array[Partial[WorksheetView]]
   ): AddWorksheetOptions = {
     val __obj = js.Dynamic.literal(pageSetup = pageSetup.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddWorksheetOptions]
   }
 }

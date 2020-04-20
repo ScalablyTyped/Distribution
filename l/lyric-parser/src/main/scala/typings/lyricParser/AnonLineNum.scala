@@ -13,7 +13,6 @@ object AnonLineNum {
   @scala.inline
   def apply(lineNum: Double, txt: String): AnonLineNum = {
     val __obj = js.Dynamic.literal(lineNum = lineNum.asInstanceOf[js.Any], txt = txt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLineNum]
   }
 }

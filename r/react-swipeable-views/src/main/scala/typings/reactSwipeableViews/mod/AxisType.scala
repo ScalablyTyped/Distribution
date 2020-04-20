@@ -14,14 +14,12 @@ trait AxisType extends js.Object
 
 object AxisType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def x: typings.reactSwipeableViews.reactSwipeableViewsStrings.x = "x".asInstanceOf[typings.reactSwipeableViews.reactSwipeableViewsStrings.x]
   @scala.inline
-  def x: typings.reactSwipeableViews.reactSwipeableViewsStrings.x = this.cast("x")
+  def `x-reverse`: typings.reactSwipeableViews.reactSwipeableViewsStrings.`x-reverse` = "x-reverse".asInstanceOf[typings.reactSwipeableViews.reactSwipeableViewsStrings.`x-reverse`]
   @scala.inline
-  def `x-reverse`: typings.reactSwipeableViews.reactSwipeableViewsStrings.`x-reverse` = this.cast("x-reverse")
+  def y: typings.reactSwipeableViews.reactSwipeableViewsStrings.y = "y".asInstanceOf[typings.reactSwipeableViews.reactSwipeableViewsStrings.y]
   @scala.inline
-  def y: typings.reactSwipeableViews.reactSwipeableViewsStrings.y = this.cast("y")
-  @scala.inline
-  def `y-reverse`: typings.reactSwipeableViews.reactSwipeableViewsStrings.`y-reverse` = this.cast("y-reverse")
+  def `y-reverse`: typings.reactSwipeableViews.reactSwipeableViewsStrings.`y-reverse` = "y-reverse".asInstanceOf[typings.reactSwipeableViews.reactSwipeableViewsStrings.`y-reverse`]
 }
 

@@ -21,7 +21,6 @@ object StyleParseResult {
     uniforms: StringDictionary[UniformValue]
   ): StyleParseResult = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], builder = builder.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StyleParseResult]
   }
 }

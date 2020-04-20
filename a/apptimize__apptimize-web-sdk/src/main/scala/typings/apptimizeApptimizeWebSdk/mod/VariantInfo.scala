@@ -36,7 +36,6 @@ object VariantInfo {
     getVariantName: () => String
   ): VariantInfo = {
     val __obj = js.Dynamic.literal(getAnonymousUserId = js.Any.fromFunction0(getAnonymousUserId), getCurrentPhase = js.Any.fromFunction0(getCurrentPhase), getCycle = js.Any.fromFunction0(getCycle), getExperimentId = js.Any.fromFunction0(getExperimentId), getExperimentName = js.Any.fromFunction0(getExperimentName), getExperimentType = js.Any.fromFunction0(getExperimentType), getExperimentTypeName = js.Any.fromFunction0(getExperimentTypeName), getParticipationPhase = js.Any.fromFunction0(getParticipationPhase), getUserHasParticipated = js.Any.fromFunction0(getUserHasParticipated), getUserId = js.Any.fromFunction0(getUserId), getVariantId = js.Any.fromFunction0(getVariantId), getVariantName = js.Any.fromFunction0(getVariantName))
-  
     __obj.asInstanceOf[VariantInfo]
   }
 }

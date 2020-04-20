@@ -26,7 +26,6 @@ object DocumentationPartArgs {
   @scala.inline
   def apply(location: Input[DocumentationPartLocation], properties: Input[String], restApiId: Input[String]): DocumentationPartArgs = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocumentationPartArgs]
   }
 }

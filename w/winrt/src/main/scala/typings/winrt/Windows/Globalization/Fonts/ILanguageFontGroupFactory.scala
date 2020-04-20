@@ -12,7 +12,6 @@ object ILanguageFontGroupFactory {
   @scala.inline
   def apply(createLanguageFontGroup: String => LanguageFontGroup): ILanguageFontGroupFactory = {
     val __obj = js.Dynamic.literal(createLanguageFontGroup = js.Any.fromFunction1(createLanguageFontGroup))
-  
     __obj.asInstanceOf[ILanguageFontGroupFactory]
   }
 }

@@ -16,7 +16,6 @@ object PickImpldirection {
   @scala.inline
   def apply(direction: auto | upward | downward): PickImpldirection = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldirection]
   }
 }

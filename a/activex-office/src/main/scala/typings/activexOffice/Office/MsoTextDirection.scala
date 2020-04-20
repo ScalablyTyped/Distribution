@@ -16,12 +16,10 @@ trait MsoTextDirection extends js.Object
 
 object MsoTextDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoTextDirectionLeftToRight: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoTextDirectionLeftToRight: `1` = this.cast(1)
+  def msoTextDirectionMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoTextDirectionMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoTextDirectionRightToLeft: `2` = this.cast(2)
+  def msoTextDirectionRightToLeft: `2` = 2.asInstanceOf[`2`]
 }
 

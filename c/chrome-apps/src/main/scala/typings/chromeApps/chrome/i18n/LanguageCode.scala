@@ -187,346 +187,344 @@ trait LanguageCode extends js.Object
 
 object LanguageCode {
   @scala.inline
-  def af: typings.chromeApps.chromeAppsStrings.af = this.cast("af")
+  def af: typings.chromeApps.chromeAppsStrings.af = "af".asInstanceOf[typings.chromeApps.chromeAppsStrings.af]
   @scala.inline
-  def am: typings.chromeApps.chromeAppsStrings.am = this.cast("am")
+  def am: typings.chromeApps.chromeAppsStrings.am = "am".asInstanceOf[typings.chromeApps.chromeAppsStrings.am]
   @scala.inline
-  def an: typings.chromeApps.chromeAppsStrings.an = this.cast("an")
+  def an: typings.chromeApps.chromeAppsStrings.an = "an".asInstanceOf[typings.chromeApps.chromeAppsStrings.an]
   @scala.inline
-  def ar: typings.chromeApps.chromeAppsStrings.ar = this.cast("ar")
+  def ar: typings.chromeApps.chromeAppsStrings.ar = "ar".asInstanceOf[typings.chromeApps.chromeAppsStrings.ar]
   @scala.inline
-  def ar_001: typings.chromeApps.chromeAppsStrings.ar_001 = this.cast("ar_001")
+  def ar_001: typings.chromeApps.chromeAppsStrings.ar_001 = "ar_001".asInstanceOf[typings.chromeApps.chromeAppsStrings.ar_001]
   @scala.inline
-  def ast: typings.chromeApps.chromeAppsStrings.ast = this.cast("ast")
+  def ast: typings.chromeApps.chromeAppsStrings.ast = "ast".asInstanceOf[typings.chromeApps.chromeAppsStrings.ast]
   @scala.inline
-  def az: typings.chromeApps.chromeAppsStrings.az = this.cast("az")
+  def az: typings.chromeApps.chromeAppsStrings.az = "az".asInstanceOf[typings.chromeApps.chromeAppsStrings.az]
   @scala.inline
-  def be: typings.chromeApps.chromeAppsStrings.be = this.cast("be")
+  def be: typings.chromeApps.chromeAppsStrings.be = "be".asInstanceOf[typings.chromeApps.chromeAppsStrings.be]
   @scala.inline
-  def bg: typings.chromeApps.chromeAppsStrings.bg = this.cast("bg")
+  def bg: typings.chromeApps.chromeAppsStrings.bg = "bg".asInstanceOf[typings.chromeApps.chromeAppsStrings.bg]
   @scala.inline
-  def bh: typings.chromeApps.chromeAppsStrings.bh = this.cast("bh")
+  def bh: typings.chromeApps.chromeAppsStrings.bh = "bh".asInstanceOf[typings.chromeApps.chromeAppsStrings.bh]
   @scala.inline
-  def bn: typings.chromeApps.chromeAppsStrings.bn = this.cast("bn")
+  def bn: typings.chromeApps.chromeAppsStrings.bn = "bn".asInstanceOf[typings.chromeApps.chromeAppsStrings.bn]
   @scala.inline
-  def br: typings.chromeApps.chromeAppsStrings.br = this.cast("br")
+  def br: typings.chromeApps.chromeAppsStrings.br = "br".asInstanceOf[typings.chromeApps.chromeAppsStrings.br]
   @scala.inline
-  def bs: typings.chromeApps.chromeAppsStrings.bs = this.cast("bs")
+  def bs: typings.chromeApps.chromeAppsStrings.bs = "bs".asInstanceOf[typings.chromeApps.chromeAppsStrings.bs]
   @scala.inline
-  def ca: typings.chromeApps.chromeAppsStrings.ca = this.cast("ca")
+  def ca: typings.chromeApps.chromeAppsStrings.ca = "ca".asInstanceOf[typings.chromeApps.chromeAppsStrings.ca]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ceb: typings.chromeApps.chromeAppsStrings.ceb = "ceb".asInstanceOf[typings.chromeApps.chromeAppsStrings.ceb]
   @scala.inline
-  def ceb: typings.chromeApps.chromeAppsStrings.ceb = this.cast("ceb")
+  def ckb: typings.chromeApps.chromeAppsStrings.ckb = "ckb".asInstanceOf[typings.chromeApps.chromeAppsStrings.ckb]
   @scala.inline
-  def ckb: typings.chromeApps.chromeAppsStrings.ckb = this.cast("ckb")
+  def co: typings.chromeApps.chromeAppsStrings.co = "co".asInstanceOf[typings.chromeApps.chromeAppsStrings.co]
   @scala.inline
-  def co: typings.chromeApps.chromeAppsStrings.co = this.cast("co")
+  def cs: typings.chromeApps.chromeAppsStrings.cs = "cs".asInstanceOf[typings.chromeApps.chromeAppsStrings.cs]
   @scala.inline
-  def cs: typings.chromeApps.chromeAppsStrings.cs = this.cast("cs")
+  def cy: typings.chromeApps.chromeAppsStrings.cy = "cy".asInstanceOf[typings.chromeApps.chromeAppsStrings.cy]
   @scala.inline
-  def cy: typings.chromeApps.chromeAppsStrings.cy = this.cast("cy")
+  def da: typings.chromeApps.chromeAppsStrings.da = "da".asInstanceOf[typings.chromeApps.chromeAppsStrings.da]
   @scala.inline
-  def da: typings.chromeApps.chromeAppsStrings.da = this.cast("da")
+  def de: typings.chromeApps.chromeAppsStrings.de = "de".asInstanceOf[typings.chromeApps.chromeAppsStrings.de]
   @scala.inline
-  def de: typings.chromeApps.chromeAppsStrings.de = this.cast("de")
+  def `de-AT`: typings.chromeApps.chromeAppsStrings.`de-AT` = "de-AT".asInstanceOf[typings.chromeApps.chromeAppsStrings.`de-AT`]
   @scala.inline
-  def `de-AT`: typings.chromeApps.chromeAppsStrings.`de-AT` = this.cast("de-AT")
+  def `de-CH`: typings.chromeApps.chromeAppsStrings.`de-CH` = "de-CH".asInstanceOf[typings.chromeApps.chromeAppsStrings.`de-CH`]
   @scala.inline
-  def `de-CH`: typings.chromeApps.chromeAppsStrings.`de-CH` = this.cast("de-CH")
+  def `de-DE`: typings.chromeApps.chromeAppsStrings.`de-DE` = "de-DE".asInstanceOf[typings.chromeApps.chromeAppsStrings.`de-DE`]
   @scala.inline
-  def `de-DE`: typings.chromeApps.chromeAppsStrings.`de-DE` = this.cast("de-DE")
+  def `de-LI`: typings.chromeApps.chromeAppsStrings.`de-LI` = "de-LI".asInstanceOf[typings.chromeApps.chromeAppsStrings.`de-LI`]
   @scala.inline
-  def `de-LI`: typings.chromeApps.chromeAppsStrings.`de-LI` = this.cast("de-LI")
+  def el: typings.chromeApps.chromeAppsStrings.el = "el".asInstanceOf[typings.chromeApps.chromeAppsStrings.el]
   @scala.inline
-  def el: typings.chromeApps.chromeAppsStrings.el = this.cast("el")
+  def en: typings.chromeApps.chromeAppsStrings.en = "en".asInstanceOf[typings.chromeApps.chromeAppsStrings.en]
   @scala.inline
-  def en: typings.chromeApps.chromeAppsStrings.en = this.cast("en")
+  def `en-AU`: typings.chromeApps.chromeAppsStrings.`en-AU` = "en-AU".asInstanceOf[typings.chromeApps.chromeAppsStrings.`en-AU`]
   @scala.inline
-  def `en-AU`: typings.chromeApps.chromeAppsStrings.`en-AU` = this.cast("en-AU")
+  def `en-CA`: typings.chromeApps.chromeAppsStrings.`en-CA` = "en-CA".asInstanceOf[typings.chromeApps.chromeAppsStrings.`en-CA`]
   @scala.inline
-  def `en-CA`: typings.chromeApps.chromeAppsStrings.`en-CA` = this.cast("en-CA")
+  def `en-GB`: typings.chromeApps.chromeAppsStrings.`en-GB` = "en-GB".asInstanceOf[typings.chromeApps.chromeAppsStrings.`en-GB`]
   @scala.inline
-  def `en-GB`: typings.chromeApps.chromeAppsStrings.`en-GB` = this.cast("en-GB")
+  def `en-IN`: typings.chromeApps.chromeAppsStrings.`en-IN` = "en-IN".asInstanceOf[typings.chromeApps.chromeAppsStrings.`en-IN`]
   @scala.inline
-  def `en-IN`: typings.chromeApps.chromeAppsStrings.`en-IN` = this.cast("en-IN")
+  def `en-NZ`: typings.chromeApps.chromeAppsStrings.`en-NZ` = "en-NZ".asInstanceOf[typings.chromeApps.chromeAppsStrings.`en-NZ`]
   @scala.inline
-  def `en-NZ`: typings.chromeApps.chromeAppsStrings.`en-NZ` = this.cast("en-NZ")
+  def `en-US`: typings.chromeApps.chromeAppsStrings.`en-US` = "en-US".asInstanceOf[typings.chromeApps.chromeAppsStrings.`en-US`]
   @scala.inline
-  def `en-US`: typings.chromeApps.chromeAppsStrings.`en-US` = this.cast("en-US")
+  def `en-ZA`: typings.chromeApps.chromeAppsStrings.`en-ZA` = "en-ZA".asInstanceOf[typings.chromeApps.chromeAppsStrings.`en-ZA`]
   @scala.inline
-  def `en-ZA`: typings.chromeApps.chromeAppsStrings.`en-ZA` = this.cast("en-ZA")
+  def en_001: typings.chromeApps.chromeAppsStrings.en_001 = "en_001".asInstanceOf[typings.chromeApps.chromeAppsStrings.en_001]
   @scala.inline
-  def en_001: typings.chromeApps.chromeAppsStrings.en_001 = this.cast("en_001")
+  def en_150: typings.chromeApps.chromeAppsStrings.en_150 = "en_150".asInstanceOf[typings.chromeApps.chromeAppsStrings.en_150]
   @scala.inline
-  def en_150: typings.chromeApps.chromeAppsStrings.en_150 = this.cast("en_150")
+  def eo: typings.chromeApps.chromeAppsStrings.eo = "eo".asInstanceOf[typings.chromeApps.chromeAppsStrings.eo]
   @scala.inline
-  def eo: typings.chromeApps.chromeAppsStrings.eo = this.cast("eo")
+  def es: typings.chromeApps.chromeAppsStrings.es = "es".asInstanceOf[typings.chromeApps.chromeAppsStrings.es]
   @scala.inline
-  def es: typings.chromeApps.chromeAppsStrings.es = this.cast("es")
+  def `es-419`: typings.chromeApps.chromeAppsStrings.`es-419` = "es-419".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-419`]
   @scala.inline
-  def `es-419`: typings.chromeApps.chromeAppsStrings.`es-419` = this.cast("es-419")
+  def `es-AR`: typings.chromeApps.chromeAppsStrings.`es-AR` = "es-AR".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-AR`]
   @scala.inline
-  def `es-AR`: typings.chromeApps.chromeAppsStrings.`es-AR` = this.cast("es-AR")
+  def `es-CL`: typings.chromeApps.chromeAppsStrings.`es-CL` = "es-CL".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-CL`]
   @scala.inline
-  def `es-CL`: typings.chromeApps.chromeAppsStrings.`es-CL` = this.cast("es-CL")
+  def `es-CO`: typings.chromeApps.chromeAppsStrings.`es-CO` = "es-CO".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-CO`]
   @scala.inline
-  def `es-CO`: typings.chromeApps.chromeAppsStrings.`es-CO` = this.cast("es-CO")
+  def `es-CR`: typings.chromeApps.chromeAppsStrings.`es-CR` = "es-CR".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-CR`]
   @scala.inline
-  def `es-CR`: typings.chromeApps.chromeAppsStrings.`es-CR` = this.cast("es-CR")
+  def `es-ES`: typings.chromeApps.chromeAppsStrings.`es-ES` = "es-ES".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-ES`]
   @scala.inline
-  def `es-ES`: typings.chromeApps.chromeAppsStrings.`es-ES` = this.cast("es-ES")
+  def `es-HN`: typings.chromeApps.chromeAppsStrings.`es-HN` = "es-HN".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-HN`]
   @scala.inline
-  def `es-HN`: typings.chromeApps.chromeAppsStrings.`es-HN` = this.cast("es-HN")
+  def `es-MX`: typings.chromeApps.chromeAppsStrings.`es-MX` = "es-MX".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-MX`]
   @scala.inline
-  def `es-MX`: typings.chromeApps.chromeAppsStrings.`es-MX` = this.cast("es-MX")
+  def `es-PE`: typings.chromeApps.chromeAppsStrings.`es-PE` = "es-PE".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-PE`]
   @scala.inline
-  def `es-PE`: typings.chromeApps.chromeAppsStrings.`es-PE` = this.cast("es-PE")
+  def `es-US`: typings.chromeApps.chromeAppsStrings.`es-US` = "es-US".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-US`]
   @scala.inline
-  def `es-US`: typings.chromeApps.chromeAppsStrings.`es-US` = this.cast("es-US")
+  def `es-UY`: typings.chromeApps.chromeAppsStrings.`es-UY` = "es-UY".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-UY`]
   @scala.inline
-  def `es-UY`: typings.chromeApps.chromeAppsStrings.`es-UY` = this.cast("es-UY")
+  def `es-VE`: typings.chromeApps.chromeAppsStrings.`es-VE` = "es-VE".asInstanceOf[typings.chromeApps.chromeAppsStrings.`es-VE`]
   @scala.inline
-  def `es-VE`: typings.chromeApps.chromeAppsStrings.`es-VE` = this.cast("es-VE")
+  def et: typings.chromeApps.chromeAppsStrings.et = "et".asInstanceOf[typings.chromeApps.chromeAppsStrings.et]
   @scala.inline
-  def et: typings.chromeApps.chromeAppsStrings.et = this.cast("et")
+  def eu: typings.chromeApps.chromeAppsStrings.eu = "eu".asInstanceOf[typings.chromeApps.chromeAppsStrings.eu]
   @scala.inline
-  def eu: typings.chromeApps.chromeAppsStrings.eu = this.cast("eu")
+  def fa: typings.chromeApps.chromeAppsStrings.fa = "fa".asInstanceOf[typings.chromeApps.chromeAppsStrings.fa]
   @scala.inline
-  def fa: typings.chromeApps.chromeAppsStrings.fa = this.cast("fa")
+  def fi: typings.chromeApps.chromeAppsStrings.fi = "fi".asInstanceOf[typings.chromeApps.chromeAppsStrings.fi]
   @scala.inline
-  def fi: typings.chromeApps.chromeAppsStrings.fi = this.cast("fi")
+  def fil: typings.chromeApps.chromeAppsStrings.fil = "fil".asInstanceOf[typings.chromeApps.chromeAppsStrings.fil]
   @scala.inline
-  def fil: typings.chromeApps.chromeAppsStrings.fil = this.cast("fil")
+  def fo: typings.chromeApps.chromeAppsStrings.fo = "fo".asInstanceOf[typings.chromeApps.chromeAppsStrings.fo]
   @scala.inline
-  def fo: typings.chromeApps.chromeAppsStrings.fo = this.cast("fo")
+  def fr: typings.chromeApps.chromeAppsStrings.fr = "fr".asInstanceOf[typings.chromeApps.chromeAppsStrings.fr]
   @scala.inline
-  def fr: typings.chromeApps.chromeAppsStrings.fr = this.cast("fr")
+  def `fr-CA`: typings.chromeApps.chromeAppsStrings.`fr-CA` = "fr-CA".asInstanceOf[typings.chromeApps.chromeAppsStrings.`fr-CA`]
   @scala.inline
-  def `fr-CA`: typings.chromeApps.chromeAppsStrings.`fr-CA` = this.cast("fr-CA")
+  def `fr-CH`: typings.chromeApps.chromeAppsStrings.`fr-CH` = "fr-CH".asInstanceOf[typings.chromeApps.chromeAppsStrings.`fr-CH`]
   @scala.inline
-  def `fr-CH`: typings.chromeApps.chromeAppsStrings.`fr-CH` = this.cast("fr-CH")
+  def `fr-FR`: typings.chromeApps.chromeAppsStrings.`fr-FR` = "fr-FR".asInstanceOf[typings.chromeApps.chromeAppsStrings.`fr-FR`]
   @scala.inline
-  def `fr-FR`: typings.chromeApps.chromeAppsStrings.`fr-FR` = this.cast("fr-FR")
+  def fy: typings.chromeApps.chromeAppsStrings.fy = "fy".asInstanceOf[typings.chromeApps.chromeAppsStrings.fy]
   @scala.inline
-  def fy: typings.chromeApps.chromeAppsStrings.fy = this.cast("fy")
+  def ga: typings.chromeApps.chromeAppsStrings.ga = "ga".asInstanceOf[typings.chromeApps.chromeAppsStrings.ga]
   @scala.inline
-  def ga: typings.chromeApps.chromeAppsStrings.ga = this.cast("ga")
+  def gd: typings.chromeApps.chromeAppsStrings.gd = "gd".asInstanceOf[typings.chromeApps.chromeAppsStrings.gd]
   @scala.inline
-  def gd: typings.chromeApps.chromeAppsStrings.gd = this.cast("gd")
+  def gl: typings.chromeApps.chromeAppsStrings.gl = "gl".asInstanceOf[typings.chromeApps.chromeAppsStrings.gl]
   @scala.inline
-  def gl: typings.chromeApps.chromeAppsStrings.gl = this.cast("gl")
+  def gn: typings.chromeApps.chromeAppsStrings.gn = "gn".asInstanceOf[typings.chromeApps.chromeAppsStrings.gn]
   @scala.inline
-  def gn: typings.chromeApps.chromeAppsStrings.gn = this.cast("gn")
+  def gu: typings.chromeApps.chromeAppsStrings.gu = "gu".asInstanceOf[typings.chromeApps.chromeAppsStrings.gu]
   @scala.inline
-  def gu: typings.chromeApps.chromeAppsStrings.gu = this.cast("gu")
+  def ha: typings.chromeApps.chromeAppsStrings.ha = "ha".asInstanceOf[typings.chromeApps.chromeAppsStrings.ha]
   @scala.inline
-  def ha: typings.chromeApps.chromeAppsStrings.ha = this.cast("ha")
+  def haw: typings.chromeApps.chromeAppsStrings.haw = "haw".asInstanceOf[typings.chromeApps.chromeAppsStrings.haw]
   @scala.inline
-  def haw: typings.chromeApps.chromeAppsStrings.haw = this.cast("haw")
+  def he: typings.chromeApps.chromeAppsStrings.he = "he".asInstanceOf[typings.chromeApps.chromeAppsStrings.he]
   @scala.inline
-  def he: typings.chromeApps.chromeAppsStrings.he = this.cast("he")
+  def hi: typings.chromeApps.chromeAppsStrings.hi = "hi".asInstanceOf[typings.chromeApps.chromeAppsStrings.hi]
   @scala.inline
-  def hi: typings.chromeApps.chromeAppsStrings.hi = this.cast("hi")
+  def hmn: typings.chromeApps.chromeAppsStrings.hmn = "hmn".asInstanceOf[typings.chromeApps.chromeAppsStrings.hmn]
   @scala.inline
-  def hmn: typings.chromeApps.chromeAppsStrings.hmn = this.cast("hmn")
+  def hr: typings.chromeApps.chromeAppsStrings.hr = "hr".asInstanceOf[typings.chromeApps.chromeAppsStrings.hr]
   @scala.inline
-  def hr: typings.chromeApps.chromeAppsStrings.hr = this.cast("hr")
+  def ht: typings.chromeApps.chromeAppsStrings.ht = "ht".asInstanceOf[typings.chromeApps.chromeAppsStrings.ht]
   @scala.inline
-  def ht: typings.chromeApps.chromeAppsStrings.ht = this.cast("ht")
+  def hu: typings.chromeApps.chromeAppsStrings.hu = "hu".asInstanceOf[typings.chromeApps.chromeAppsStrings.hu]
   @scala.inline
-  def hu: typings.chromeApps.chromeAppsStrings.hu = this.cast("hu")
+  def hy: typings.chromeApps.chromeAppsStrings.hy = "hy".asInstanceOf[typings.chromeApps.chromeAppsStrings.hy]
   @scala.inline
-  def hy: typings.chromeApps.chromeAppsStrings.hy = this.cast("hy")
+  def ia: typings.chromeApps.chromeAppsStrings.ia = "ia".asInstanceOf[typings.chromeApps.chromeAppsStrings.ia]
   @scala.inline
-  def ia: typings.chromeApps.chromeAppsStrings.ia = this.cast("ia")
+  def id: typings.chromeApps.chromeAppsStrings.id = "id".asInstanceOf[typings.chromeApps.chromeAppsStrings.id]
   @scala.inline
-  def id: typings.chromeApps.chromeAppsStrings.id = this.cast("id")
+  def ig: typings.chromeApps.chromeAppsStrings.ig = "ig".asInstanceOf[typings.chromeApps.chromeAppsStrings.ig]
   @scala.inline
-  def ig: typings.chromeApps.chromeAppsStrings.ig = this.cast("ig")
+  def is: typings.chromeApps.chromeAppsStrings.is = "is".asInstanceOf[typings.chromeApps.chromeAppsStrings.is]
   @scala.inline
-  def is: typings.chromeApps.chromeAppsStrings.is = this.cast("is")
+  def it: typings.chromeApps.chromeAppsStrings.it = "it".asInstanceOf[typings.chromeApps.chromeAppsStrings.it]
   @scala.inline
-  def it: typings.chromeApps.chromeAppsStrings.it = this.cast("it")
+  def `it-CH`: typings.chromeApps.chromeAppsStrings.`it-CH` = "it-CH".asInstanceOf[typings.chromeApps.chromeAppsStrings.`it-CH`]
   @scala.inline
-  def `it-CH`: typings.chromeApps.chromeAppsStrings.`it-CH` = this.cast("it-CH")
+  def `it-IT`: typings.chromeApps.chromeAppsStrings.`it-IT` = "it-IT".asInstanceOf[typings.chromeApps.chromeAppsStrings.`it-IT`]
   @scala.inline
-  def `it-IT`: typings.chromeApps.chromeAppsStrings.`it-IT` = this.cast("it-IT")
+  def ja: typings.chromeApps.chromeAppsStrings.ja = "ja".asInstanceOf[typings.chromeApps.chromeAppsStrings.ja]
   @scala.inline
-  def ja: typings.chromeApps.chromeAppsStrings.ja = this.cast("ja")
+  def jv: typings.chromeApps.chromeAppsStrings.jv = "jv".asInstanceOf[typings.chromeApps.chromeAppsStrings.jv]
   @scala.inline
-  def jv: typings.chromeApps.chromeAppsStrings.jv = this.cast("jv")
+  def ka: typings.chromeApps.chromeAppsStrings.ka = "ka".asInstanceOf[typings.chromeApps.chromeAppsStrings.ka]
   @scala.inline
-  def ka: typings.chromeApps.chromeAppsStrings.ka = this.cast("ka")
+  def kk: typings.chromeApps.chromeAppsStrings.kk = "kk".asInstanceOf[typings.chromeApps.chromeAppsStrings.kk]
   @scala.inline
-  def kk: typings.chromeApps.chromeAppsStrings.kk = this.cast("kk")
+  def km: typings.chromeApps.chromeAppsStrings.km = "km".asInstanceOf[typings.chromeApps.chromeAppsStrings.km]
   @scala.inline
-  def km: typings.chromeApps.chromeAppsStrings.km = this.cast("km")
+  def kn: typings.chromeApps.chromeAppsStrings.kn = "kn".asInstanceOf[typings.chromeApps.chromeAppsStrings.kn]
   @scala.inline
-  def kn: typings.chromeApps.chromeAppsStrings.kn = this.cast("kn")
+  def ko: typings.chromeApps.chromeAppsStrings.ko = "ko".asInstanceOf[typings.chromeApps.chromeAppsStrings.ko]
   @scala.inline
-  def ko: typings.chromeApps.chromeAppsStrings.ko = this.cast("ko")
+  def ku: typings.chromeApps.chromeAppsStrings.ku = "ku".asInstanceOf[typings.chromeApps.chromeAppsStrings.ku]
   @scala.inline
-  def ku: typings.chromeApps.chromeAppsStrings.ku = this.cast("ku")
+  def ky: typings.chromeApps.chromeAppsStrings.ky = "ky".asInstanceOf[typings.chromeApps.chromeAppsStrings.ky]
   @scala.inline
-  def ky: typings.chromeApps.chromeAppsStrings.ky = this.cast("ky")
+  def la: typings.chromeApps.chromeAppsStrings.la = "la".asInstanceOf[typings.chromeApps.chromeAppsStrings.la]
   @scala.inline
-  def la: typings.chromeApps.chromeAppsStrings.la = this.cast("la")
+  def lb: typings.chromeApps.chromeAppsStrings.lb = "lb".asInstanceOf[typings.chromeApps.chromeAppsStrings.lb]
   @scala.inline
-  def lb: typings.chromeApps.chromeAppsStrings.lb = this.cast("lb")
+  def ln: typings.chromeApps.chromeAppsStrings.ln = "ln".asInstanceOf[typings.chromeApps.chromeAppsStrings.ln]
   @scala.inline
-  def ln: typings.chromeApps.chromeAppsStrings.ln = this.cast("ln")
+  def lo: typings.chromeApps.chromeAppsStrings.lo = "lo".asInstanceOf[typings.chromeApps.chromeAppsStrings.lo]
   @scala.inline
-  def lo: typings.chromeApps.chromeAppsStrings.lo = this.cast("lo")
+  def lt: typings.chromeApps.chromeAppsStrings.lt = "lt".asInstanceOf[typings.chromeApps.chromeAppsStrings.lt]
   @scala.inline
-  def lt: typings.chromeApps.chromeAppsStrings.lt = this.cast("lt")
+  def lv: typings.chromeApps.chromeAppsStrings.lv = "lv".asInstanceOf[typings.chromeApps.chromeAppsStrings.lv]
   @scala.inline
-  def lv: typings.chromeApps.chromeAppsStrings.lv = this.cast("lv")
+  def mg: typings.chromeApps.chromeAppsStrings.mg = "mg".asInstanceOf[typings.chromeApps.chromeAppsStrings.mg]
   @scala.inline
-  def mg: typings.chromeApps.chromeAppsStrings.mg = this.cast("mg")
+  def mi: typings.chromeApps.chromeAppsStrings.mi = "mi".asInstanceOf[typings.chromeApps.chromeAppsStrings.mi]
   @scala.inline
-  def mi: typings.chromeApps.chromeAppsStrings.mi = this.cast("mi")
+  def mk: typings.chromeApps.chromeAppsStrings.mk = "mk".asInstanceOf[typings.chromeApps.chromeAppsStrings.mk]
   @scala.inline
-  def mk: typings.chromeApps.chromeAppsStrings.mk = this.cast("mk")
+  def ml: typings.chromeApps.chromeAppsStrings.ml = "ml".asInstanceOf[typings.chromeApps.chromeAppsStrings.ml]
   @scala.inline
-  def ml: typings.chromeApps.chromeAppsStrings.ml = this.cast("ml")
+  def mn: typings.chromeApps.chromeAppsStrings.mn = "mn".asInstanceOf[typings.chromeApps.chromeAppsStrings.mn]
   @scala.inline
-  def mn: typings.chromeApps.chromeAppsStrings.mn = this.cast("mn")
+  def mo: typings.chromeApps.chromeAppsStrings.mo = "mo".asInstanceOf[typings.chromeApps.chromeAppsStrings.mo]
   @scala.inline
-  def mo: typings.chromeApps.chromeAppsStrings.mo = this.cast("mo")
+  def mr: typings.chromeApps.chromeAppsStrings.mr = "mr".asInstanceOf[typings.chromeApps.chromeAppsStrings.mr]
   @scala.inline
-  def mr: typings.chromeApps.chromeAppsStrings.mr = this.cast("mr")
+  def ms: typings.chromeApps.chromeAppsStrings.ms = "ms".asInstanceOf[typings.chromeApps.chromeAppsStrings.ms]
   @scala.inline
-  def ms: typings.chromeApps.chromeAppsStrings.ms = this.cast("ms")
+  def mt: typings.chromeApps.chromeAppsStrings.mt = "mt".asInstanceOf[typings.chromeApps.chromeAppsStrings.mt]
   @scala.inline
-  def mt: typings.chromeApps.chromeAppsStrings.mt = this.cast("mt")
+  def my: typings.chromeApps.chromeAppsStrings.my = "my".asInstanceOf[typings.chromeApps.chromeAppsStrings.my]
   @scala.inline
-  def my: typings.chromeApps.chromeAppsStrings.my = this.cast("my")
+  def nb: typings.chromeApps.chromeAppsStrings.nb = "nb".asInstanceOf[typings.chromeApps.chromeAppsStrings.nb]
   @scala.inline
-  def nb: typings.chromeApps.chromeAppsStrings.nb = this.cast("nb")
+  def ne: typings.chromeApps.chromeAppsStrings.ne = "ne".asInstanceOf[typings.chromeApps.chromeAppsStrings.ne]
   @scala.inline
-  def ne: typings.chromeApps.chromeAppsStrings.ne = this.cast("ne")
+  def nl: typings.chromeApps.chromeAppsStrings.nl = "nl".asInstanceOf[typings.chromeApps.chromeAppsStrings.nl]
   @scala.inline
-  def nl: typings.chromeApps.chromeAppsStrings.nl = this.cast("nl")
+  def nn: typings.chromeApps.chromeAppsStrings.nn = "nn".asInstanceOf[typings.chromeApps.chromeAppsStrings.nn]
   @scala.inline
-  def nn: typings.chromeApps.chromeAppsStrings.nn = this.cast("nn")
+  def no: typings.chromeApps.chromeAppsStrings.no = "no".asInstanceOf[typings.chromeApps.chromeAppsStrings.no]
   @scala.inline
-  def no: typings.chromeApps.chromeAppsStrings.no = this.cast("no")
+  def ny: typings.chromeApps.chromeAppsStrings.ny = "ny".asInstanceOf[typings.chromeApps.chromeAppsStrings.ny]
   @scala.inline
-  def ny: typings.chromeApps.chromeAppsStrings.ny = this.cast("ny")
+  def oc: typings.chromeApps.chromeAppsStrings.oc = "oc".asInstanceOf[typings.chromeApps.chromeAppsStrings.oc]
   @scala.inline
-  def oc: typings.chromeApps.chromeAppsStrings.oc = this.cast("oc")
+  def om: typings.chromeApps.chromeAppsStrings.om = "om".asInstanceOf[typings.chromeApps.chromeAppsStrings.om]
   @scala.inline
-  def om: typings.chromeApps.chromeAppsStrings.om = this.cast("om")
+  def or: typings.chromeApps.chromeAppsStrings.or = "or".asInstanceOf[typings.chromeApps.chromeAppsStrings.or]
   @scala.inline
-  def or: typings.chromeApps.chromeAppsStrings.or = this.cast("or")
+  def pa: typings.chromeApps.chromeAppsStrings.pa = "pa".asInstanceOf[typings.chromeApps.chromeAppsStrings.pa]
   @scala.inline
-  def pa: typings.chromeApps.chromeAppsStrings.pa = this.cast("pa")
+  def pl: typings.chromeApps.chromeAppsStrings.pl = "pl".asInstanceOf[typings.chromeApps.chromeAppsStrings.pl]
   @scala.inline
-  def pl: typings.chromeApps.chromeAppsStrings.pl = this.cast("pl")
+  def ps: typings.chromeApps.chromeAppsStrings.ps = "ps".asInstanceOf[typings.chromeApps.chromeAppsStrings.ps]
   @scala.inline
-  def ps: typings.chromeApps.chromeAppsStrings.ps = this.cast("ps")
+  def pt: typings.chromeApps.chromeAppsStrings.pt = "pt".asInstanceOf[typings.chromeApps.chromeAppsStrings.pt]
   @scala.inline
-  def pt: typings.chromeApps.chromeAppsStrings.pt = this.cast("pt")
+  def `pt-BR`: typings.chromeApps.chromeAppsStrings.`pt-BR` = "pt-BR".asInstanceOf[typings.chromeApps.chromeAppsStrings.`pt-BR`]
   @scala.inline
-  def `pt-BR`: typings.chromeApps.chromeAppsStrings.`pt-BR` = this.cast("pt-BR")
+  def `pt-PT`: typings.chromeApps.chromeAppsStrings.`pt-PT` = "pt-PT".asInstanceOf[typings.chromeApps.chromeAppsStrings.`pt-PT`]
   @scala.inline
-  def `pt-PT`: typings.chromeApps.chromeAppsStrings.`pt-PT` = this.cast("pt-PT")
+  def qu: typings.chromeApps.chromeAppsStrings.qu = "qu".asInstanceOf[typings.chromeApps.chromeAppsStrings.qu]
   @scala.inline
-  def qu: typings.chromeApps.chromeAppsStrings.qu = this.cast("qu")
+  def rm: typings.chromeApps.chromeAppsStrings.rm = "rm".asInstanceOf[typings.chromeApps.chromeAppsStrings.rm]
   @scala.inline
-  def rm: typings.chromeApps.chromeAppsStrings.rm = this.cast("rm")
+  def ro: typings.chromeApps.chromeAppsStrings.ro = "ro".asInstanceOf[typings.chromeApps.chromeAppsStrings.ro]
   @scala.inline
-  def ro: typings.chromeApps.chromeAppsStrings.ro = this.cast("ro")
+  def ru: typings.chromeApps.chromeAppsStrings.ru = "ru".asInstanceOf[typings.chromeApps.chromeAppsStrings.ru]
   @scala.inline
-  def ru: typings.chromeApps.chromeAppsStrings.ru = this.cast("ru")
+  def sd: typings.chromeApps.chromeAppsStrings.sd = "sd".asInstanceOf[typings.chromeApps.chromeAppsStrings.sd]
   @scala.inline
-  def sd: typings.chromeApps.chromeAppsStrings.sd = this.cast("sd")
+  def sh: typings.chromeApps.chromeAppsStrings.sh = "sh".asInstanceOf[typings.chromeApps.chromeAppsStrings.sh]
   @scala.inline
-  def sh: typings.chromeApps.chromeAppsStrings.sh = this.cast("sh")
+  def si: typings.chromeApps.chromeAppsStrings.si = "si".asInstanceOf[typings.chromeApps.chromeAppsStrings.si]
   @scala.inline
-  def si: typings.chromeApps.chromeAppsStrings.si = this.cast("si")
+  def sk: typings.chromeApps.chromeAppsStrings.sk = "sk".asInstanceOf[typings.chromeApps.chromeAppsStrings.sk]
   @scala.inline
-  def sk: typings.chromeApps.chromeAppsStrings.sk = this.cast("sk")
+  def sl: typings.chromeApps.chromeAppsStrings.sl = "sl".asInstanceOf[typings.chromeApps.chromeAppsStrings.sl]
   @scala.inline
-  def sl: typings.chromeApps.chromeAppsStrings.sl = this.cast("sl")
+  def sm: typings.chromeApps.chromeAppsStrings.sm = "sm".asInstanceOf[typings.chromeApps.chromeAppsStrings.sm]
   @scala.inline
-  def sm: typings.chromeApps.chromeAppsStrings.sm = this.cast("sm")
+  def sn: typings.chromeApps.chromeAppsStrings.sn = "sn".asInstanceOf[typings.chromeApps.chromeAppsStrings.sn]
   @scala.inline
-  def sn: typings.chromeApps.chromeAppsStrings.sn = this.cast("sn")
+  def so: typings.chromeApps.chromeAppsStrings.so = "so".asInstanceOf[typings.chromeApps.chromeAppsStrings.so]
   @scala.inline
-  def so: typings.chromeApps.chromeAppsStrings.so = this.cast("so")
+  def sq: typings.chromeApps.chromeAppsStrings.sq = "sq".asInstanceOf[typings.chromeApps.chromeAppsStrings.sq]
   @scala.inline
-  def sq: typings.chromeApps.chromeAppsStrings.sq = this.cast("sq")
+  def sr: typings.chromeApps.chromeAppsStrings.sr = "sr".asInstanceOf[typings.chromeApps.chromeAppsStrings.sr]
   @scala.inline
-  def sr: typings.chromeApps.chromeAppsStrings.sr = this.cast("sr")
+  def st: typings.chromeApps.chromeAppsStrings.st = "st".asInstanceOf[typings.chromeApps.chromeAppsStrings.st]
   @scala.inline
-  def st: typings.chromeApps.chromeAppsStrings.st = this.cast("st")
+  def su: typings.chromeApps.chromeAppsStrings.su = "su".asInstanceOf[typings.chromeApps.chromeAppsStrings.su]
   @scala.inline
-  def su: typings.chromeApps.chromeAppsStrings.su = this.cast("su")
+  def sv: typings.chromeApps.chromeAppsStrings.sv = "sv".asInstanceOf[typings.chromeApps.chromeAppsStrings.sv]
   @scala.inline
-  def sv: typings.chromeApps.chromeAppsStrings.sv = this.cast("sv")
+  def sw: typings.chromeApps.chromeAppsStrings.sw = "sw".asInstanceOf[typings.chromeApps.chromeAppsStrings.sw]
   @scala.inline
-  def sw: typings.chromeApps.chromeAppsStrings.sw = this.cast("sw")
+  def ta: typings.chromeApps.chromeAppsStrings.ta = "ta".asInstanceOf[typings.chromeApps.chromeAppsStrings.ta]
   @scala.inline
-  def ta: typings.chromeApps.chromeAppsStrings.ta = this.cast("ta")
+  def te: typings.chromeApps.chromeAppsStrings.te = "te".asInstanceOf[typings.chromeApps.chromeAppsStrings.te]
   @scala.inline
-  def te: typings.chromeApps.chromeAppsStrings.te = this.cast("te")
+  def tg: typings.chromeApps.chromeAppsStrings.tg = "tg".asInstanceOf[typings.chromeApps.chromeAppsStrings.tg]
   @scala.inline
-  def tg: typings.chromeApps.chromeAppsStrings.tg = this.cast("tg")
+  def th: typings.chromeApps.chromeAppsStrings.th = "th".asInstanceOf[typings.chromeApps.chromeAppsStrings.th]
   @scala.inline
-  def th: typings.chromeApps.chromeAppsStrings.th = this.cast("th")
+  def ti: typings.chromeApps.chromeAppsStrings.ti = "ti".asInstanceOf[typings.chromeApps.chromeAppsStrings.ti]
   @scala.inline
-  def ti: typings.chromeApps.chromeAppsStrings.ti = this.cast("ti")
+  def tk: typings.chromeApps.chromeAppsStrings.tk = "tk".asInstanceOf[typings.chromeApps.chromeAppsStrings.tk]
   @scala.inline
-  def tk: typings.chromeApps.chromeAppsStrings.tk = this.cast("tk")
+  def to: typings.chromeApps.chromeAppsStrings.to = "to".asInstanceOf[typings.chromeApps.chromeAppsStrings.to]
   @scala.inline
-  def to: typings.chromeApps.chromeAppsStrings.to = this.cast("to")
+  def tr: typings.chromeApps.chromeAppsStrings.tr = "tr".asInstanceOf[typings.chromeApps.chromeAppsStrings.tr]
   @scala.inline
-  def tr: typings.chromeApps.chromeAppsStrings.tr = this.cast("tr")
+  def tt: typings.chromeApps.chromeAppsStrings.tt = "tt".asInstanceOf[typings.chromeApps.chromeAppsStrings.tt]
   @scala.inline
-  def tt: typings.chromeApps.chromeAppsStrings.tt = this.cast("tt")
+  def tw: typings.chromeApps.chromeAppsStrings.tw = "tw".asInstanceOf[typings.chromeApps.chromeAppsStrings.tw]
   @scala.inline
-  def tw: typings.chromeApps.chromeAppsStrings.tw = this.cast("tw")
+  def ug: typings.chromeApps.chromeAppsStrings.ug = "ug".asInstanceOf[typings.chromeApps.chromeAppsStrings.ug]
   @scala.inline
-  def ug: typings.chromeApps.chromeAppsStrings.ug = this.cast("ug")
+  def uk: typings.chromeApps.chromeAppsStrings.uk = "uk".asInstanceOf[typings.chromeApps.chromeAppsStrings.uk]
   @scala.inline
-  def uk: typings.chromeApps.chromeAppsStrings.uk = this.cast("uk")
+  def und: typings.chromeApps.chromeAppsStrings.und = "und".asInstanceOf[typings.chromeApps.chromeAppsStrings.und]
   @scala.inline
-  def und: typings.chromeApps.chromeAppsStrings.und = this.cast("und")
+  def ur: typings.chromeApps.chromeAppsStrings.ur = "ur".asInstanceOf[typings.chromeApps.chromeAppsStrings.ur]
   @scala.inline
-  def ur: typings.chromeApps.chromeAppsStrings.ur = this.cast("ur")
+  def uz: typings.chromeApps.chromeAppsStrings.uz = "uz".asInstanceOf[typings.chromeApps.chromeAppsStrings.uz]
   @scala.inline
-  def uz: typings.chromeApps.chromeAppsStrings.uz = this.cast("uz")
+  def vi: typings.chromeApps.chromeAppsStrings.vi = "vi".asInstanceOf[typings.chromeApps.chromeAppsStrings.vi]
   @scala.inline
-  def vi: typings.chromeApps.chromeAppsStrings.vi = this.cast("vi")
+  def wa: typings.chromeApps.chromeAppsStrings.wa = "wa".asInstanceOf[typings.chromeApps.chromeAppsStrings.wa]
   @scala.inline
-  def wa: typings.chromeApps.chromeAppsStrings.wa = this.cast("wa")
+  def xh: typings.chromeApps.chromeAppsStrings.xh = "xh".asInstanceOf[typings.chromeApps.chromeAppsStrings.xh]
   @scala.inline
-  def xh: typings.chromeApps.chromeAppsStrings.xh = this.cast("xh")
+  def yi: typings.chromeApps.chromeAppsStrings.yi = "yi".asInstanceOf[typings.chromeApps.chromeAppsStrings.yi]
   @scala.inline
-  def yi: typings.chromeApps.chromeAppsStrings.yi = this.cast("yi")
+  def yo: typings.chromeApps.chromeAppsStrings.yo = "yo".asInstanceOf[typings.chromeApps.chromeAppsStrings.yo]
   @scala.inline
-  def yo: typings.chromeApps.chromeAppsStrings.yo = this.cast("yo")
+  def zh: typings.chromeApps.chromeAppsStrings.zh = "zh".asInstanceOf[typings.chromeApps.chromeAppsStrings.zh]
   @scala.inline
-  def zh: typings.chromeApps.chromeAppsStrings.zh = this.cast("zh")
+  def `zh-CN`: typings.chromeApps.chromeAppsStrings.`zh-CN` = "zh-CN".asInstanceOf[typings.chromeApps.chromeAppsStrings.`zh-CN`]
   @scala.inline
-  def `zh-CN`: typings.chromeApps.chromeAppsStrings.`zh-CN` = this.cast("zh-CN")
+  def `zh-HK`: typings.chromeApps.chromeAppsStrings.`zh-HK` = "zh-HK".asInstanceOf[typings.chromeApps.chromeAppsStrings.`zh-HK`]
   @scala.inline
-  def `zh-HK`: typings.chromeApps.chromeAppsStrings.`zh-HK` = this.cast("zh-HK")
+  def `zh-TW`: typings.chromeApps.chromeAppsStrings.`zh-TW` = "zh-TW".asInstanceOf[typings.chromeApps.chromeAppsStrings.`zh-TW`]
   @scala.inline
-  def `zh-TW`: typings.chromeApps.chromeAppsStrings.`zh-TW` = this.cast("zh-TW")
+  def zh_hans_cn: typings.chromeApps.chromeAppsStrings.zh_hans_cn = "zh_hans_cn".asInstanceOf[typings.chromeApps.chromeAppsStrings.zh_hans_cn]
   @scala.inline
-  def zh_hans_cn: typings.chromeApps.chromeAppsStrings.zh_hans_cn = this.cast("zh_hans_cn")
+  def zh_hans_sg: typings.chromeApps.chromeAppsStrings.zh_hans_sg = "zh_hans_sg".asInstanceOf[typings.chromeApps.chromeAppsStrings.zh_hans_sg]
   @scala.inline
-  def zh_hans_sg: typings.chromeApps.chromeAppsStrings.zh_hans_sg = this.cast("zh_hans_sg")
+  def zh_hant_hk: typings.chromeApps.chromeAppsStrings.zh_hant_hk = "zh_hant_hk".asInstanceOf[typings.chromeApps.chromeAppsStrings.zh_hant_hk]
   @scala.inline
-  def zh_hant_hk: typings.chromeApps.chromeAppsStrings.zh_hant_hk = this.cast("zh_hant_hk")
+  def zh_hant_mo: typings.chromeApps.chromeAppsStrings.zh_hant_mo = "zh_hant_mo".asInstanceOf[typings.chromeApps.chromeAppsStrings.zh_hant_mo]
   @scala.inline
-  def zh_hant_mo: typings.chromeApps.chromeAppsStrings.zh_hant_mo = this.cast("zh_hant_mo")
+  def zh_hant_tw: typings.chromeApps.chromeAppsStrings.zh_hant_tw = "zh_hant_tw".asInstanceOf[typings.chromeApps.chromeAppsStrings.zh_hant_tw]
   @scala.inline
-  def zh_hant_tw: typings.chromeApps.chromeAppsStrings.zh_hant_tw = this.cast("zh_hant_tw")
-  @scala.inline
-  def zu: typings.chromeApps.chromeAppsStrings.zu = this.cast("zu")
+  def zu: typings.chromeApps.chromeAppsStrings.zu = "zu".asInstanceOf[typings.chromeApps.chromeAppsStrings.zu]
 }
 

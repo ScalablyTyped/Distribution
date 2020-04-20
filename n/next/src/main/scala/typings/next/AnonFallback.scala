@@ -13,7 +13,6 @@ object AnonFallback {
   @scala.inline
   def apply(fallback: Boolean, paths: js.Array[String]): AnonFallback = {
     val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFallback]
   }
 }

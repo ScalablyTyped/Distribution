@@ -16,7 +16,6 @@ object CompileOptions {
   @scala.inline
   def apply(legacy: Boolean): CompileOptions = {
     val __obj = js.Dynamic.literal(legacy = legacy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompileOptions]
   }
 }

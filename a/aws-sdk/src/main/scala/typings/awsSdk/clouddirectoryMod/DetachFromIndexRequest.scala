@@ -24,7 +24,6 @@ object DetachFromIndexRequest {
   @scala.inline
   def apply(DirectoryArn: Arn, IndexReference: ObjectReference, TargetReference: ObjectReference): DetachFromIndexRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], IndexReference = IndexReference.asInstanceOf[js.Any], TargetReference = TargetReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachFromIndexRequest]
   }
 }

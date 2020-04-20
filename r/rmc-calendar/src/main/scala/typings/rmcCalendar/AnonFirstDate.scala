@@ -14,7 +14,6 @@ object AnonFirstDate {
   @scala.inline
   def apply(firstDate: Date, lastDate: Date): AnonFirstDate = {
     val __obj = js.Dynamic.literal(firstDate = firstDate.asInstanceOf[js.Any], lastDate = lastDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFirstDate]
   }
 }

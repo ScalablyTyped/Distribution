@@ -27,7 +27,7 @@ object luceneStrings {
   @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
   @scala.inline
-  def `AND NOT`: `AND NOT` = "AND NOT".asInstanceOf[`AND NOT`]
+  def `AND NOT`: `AND NOT` = ("AND NOT").asInstanceOf[`AND NOT`]
   @scala.inline
   def LessthansignimplicitGreaterthansign: LessthansignimplicitGreaterthansign = "<implicit>".asInstanceOf[LessthansignimplicitGreaterthansign]
   @scala.inline
@@ -35,6 +35,6 @@ object luceneStrings {
   @scala.inline
   def OR: OR = "OR".asInstanceOf[OR]
   @scala.inline
-  def `OR NOT`: `OR NOT` = "OR NOT".asInstanceOf[`OR NOT`]
+  def `OR NOT`: `OR NOT` = ("OR NOT").asInstanceOf[`OR NOT`]
 }
 

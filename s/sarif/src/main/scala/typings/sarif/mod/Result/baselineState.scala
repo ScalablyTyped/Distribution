@@ -14,14 +14,12 @@ trait baselineState extends js.Object
 
 object baselineState {
   @scala.inline
-  def absent: typings.sarif.sarifStrings.absent = this.cast("absent")
+  def absent: typings.sarif.sarifStrings.absent = "absent".asInstanceOf[typings.sarif.sarifStrings.absent]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `new`: typings.sarif.sarifStrings.`new` = "new".asInstanceOf[typings.sarif.sarifStrings.`new`]
   @scala.inline
-  def `new`: typings.sarif.sarifStrings.`new` = this.cast("new")
+  def unchanged: typings.sarif.sarifStrings.unchanged = "unchanged".asInstanceOf[typings.sarif.sarifStrings.unchanged]
   @scala.inline
-  def unchanged: typings.sarif.sarifStrings.unchanged = this.cast("unchanged")
-  @scala.inline
-  def updated: typings.sarif.sarifStrings.updated = this.cast("updated")
+  def updated: typings.sarif.sarifStrings.updated = "updated".asInstanceOf[typings.sarif.sarifStrings.updated]
 }
 

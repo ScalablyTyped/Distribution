@@ -23,7 +23,6 @@ object VolumeDevice {
   @scala.inline
   def apply(devicePath: Input[String], name: Input[String]): VolumeDevice = {
     val __obj = js.Dynamic.literal(devicePath = devicePath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VolumeDevice]
   }
 }

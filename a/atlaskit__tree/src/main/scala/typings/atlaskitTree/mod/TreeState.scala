@@ -15,7 +15,6 @@ object TreeState {
   @scala.inline
   def apply(draggedItemId: ItemId, flattenedTree: FlattenedTree): TreeState = {
     val __obj = js.Dynamic.literal(draggedItemId = draggedItemId.asInstanceOf[js.Any], flattenedTree = flattenedTree.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TreeState]
   }
 }

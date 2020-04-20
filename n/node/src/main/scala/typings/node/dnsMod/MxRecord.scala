@@ -13,7 +13,6 @@ object MxRecord {
   @scala.inline
   def apply(exchange: String, priority: Double): MxRecord = {
     val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MxRecord]
   }
 }

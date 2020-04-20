@@ -13,7 +13,6 @@ object GetCredentialsArgs {
   @scala.inline
   def apply(registryId: String): GetCredentialsArgs = {
     val __obj = js.Dynamic.literal(registryId = registryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCredentialsArgs]
   }
 }

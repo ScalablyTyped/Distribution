@@ -14,7 +14,6 @@ object Context {
   @scala.inline
   def apply($auth: Auth[_]): Context = {
     val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Context]
   }
 }

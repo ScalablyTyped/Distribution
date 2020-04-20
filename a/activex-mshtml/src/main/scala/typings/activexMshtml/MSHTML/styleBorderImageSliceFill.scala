@@ -16,12 +16,10 @@ trait styleBorderImageSliceFill extends js.Object
 
 object styleBorderImageSliceFill {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleBorderImageSliceFillFill: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleBorderImageSliceFillFill: `1` = this.cast(1)
+  def styleBorderImageSliceFillNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleBorderImageSliceFillNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleBorderImageSliceFill_Max: `2147483647` = this.cast(2147483647)
+  def styleBorderImageSliceFill_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

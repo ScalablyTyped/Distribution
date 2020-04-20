@@ -24,7 +24,6 @@ object DeleteIAMPolicyAssignmentRequest {
   @scala.inline
   def apply(AssignmentName: IAMPolicyAssignmentName, AwsAccountId: AwsAccountId, Namespace: Namespace): DeleteIAMPolicyAssignmentRequest = {
     val __obj = js.Dynamic.literal(AssignmentName = AssignmentName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIAMPolicyAssignmentRequest]
   }
 }

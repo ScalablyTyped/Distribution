@@ -1,5 +1,9 @@
 package typings.javascriptStringify
 
+import typings.javascriptStringify.javascriptStringifyStrings.AsyncFunction
+import typings.javascriptStringify.javascriptStringifyStrings.AsyncGeneratorFunction
+import typings.javascriptStringify.javascriptStringifyStrings.Function
+import typings.javascriptStringify.javascriptStringifyStrings.GeneratorFunction
 import typings.javascriptStringify.javascriptStringifyStrings.Graveaccent
 import typings.javascriptStringify.typesMod.Next
 import typings.javascriptStringify.typesMod.ToString
@@ -20,7 +24,7 @@ object functionMod extends js.Object {
     def this(fn: js.Function, indent: String, next: Next, key: String) = this()
     var fn: js.Function = js.native
     var fnString: String = js.native
-    var fnType: String = js.native
+    var fnType: Function | GeneratorFunction | AsyncFunction | AsyncGeneratorFunction = js.native
     var hadKeyword: Boolean = js.native
     var indent: String = js.native
     var isMethodCandidate: Boolean = js.native

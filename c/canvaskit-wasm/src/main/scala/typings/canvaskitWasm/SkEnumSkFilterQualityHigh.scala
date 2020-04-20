@@ -24,7 +24,6 @@ object SkEnumSkFilterQualityHigh {
     values: js.Array[SkFilterQuality]
   ): SkEnumSkFilterQualityHigh = {
     val __obj = js.Dynamic.literal(High = High.asInstanceOf[js.Any], Low = Low.asInstanceOf[js.Any], Medium = Medium.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkFilterQualityHigh]
   }
 }

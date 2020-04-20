@@ -20,7 +20,6 @@ object DescribeDataSourceRequest {
   @scala.inline
   def apply(Id: DataSourceId, IndexId: IndexId): DescribeDataSourceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDataSourceRequest]
   }
 }

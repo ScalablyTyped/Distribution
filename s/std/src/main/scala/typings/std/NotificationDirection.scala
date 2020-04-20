@@ -13,12 +13,10 @@ trait NotificationDirection extends js.Object
 
 object NotificationDirection {
   @scala.inline
-  def auto: typings.std.stdStrings.auto = this.cast("auto")
+  def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ltr: typings.std.stdStrings.ltr = "ltr".asInstanceOf[typings.std.stdStrings.ltr]
   @scala.inline
-  def ltr: typings.std.stdStrings.ltr = this.cast("ltr")
-  @scala.inline
-  def rtl: typings.std.stdStrings.rtl = this.cast("rtl")
+  def rtl: typings.std.stdStrings.rtl = "rtl".asInstanceOf[typings.std.stdStrings.rtl]
 }
 

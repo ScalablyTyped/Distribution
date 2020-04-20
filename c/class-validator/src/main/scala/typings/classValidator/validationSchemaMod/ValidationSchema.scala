@@ -30,7 +30,6 @@ object ValidationSchema {
   StringDictionary[js.Array[AnonAlways]]
   ): ValidationSchema = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidationSchema]
   }
 }

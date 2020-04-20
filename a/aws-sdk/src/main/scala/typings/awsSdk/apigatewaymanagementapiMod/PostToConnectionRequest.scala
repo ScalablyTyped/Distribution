@@ -20,7 +20,6 @@ object PostToConnectionRequest {
   @scala.inline
   def apply(ConnectionId: string, Data: Data): PostToConnectionRequest = {
     val __obj = js.Dynamic.literal(ConnectionId = ConnectionId.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PostToConnectionRequest]
   }
 }

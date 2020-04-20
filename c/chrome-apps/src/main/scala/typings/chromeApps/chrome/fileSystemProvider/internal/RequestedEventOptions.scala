@@ -20,7 +20,6 @@ object RequestedEventOptions {
   @scala.inline
   def apply(fileSystemId: String, requestId: integer): RequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestedEventOptions]
   }
 }

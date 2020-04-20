@@ -24,20 +24,18 @@ trait htmlClear extends js.Object
 
 object htmlClear {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlClearAll: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlClearAll: `1` = this.cast(1)
+  def htmlClearBoth: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def htmlClearBoth: `4` = this.cast(4)
+  def htmlClearLeft: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlClearLeft: `2` = this.cast(2)
+  def htmlClearNone: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def htmlClearNone: `5` = this.cast(5)
+  def htmlClearNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlClearNotSet: `0` = this.cast(0)
+  def htmlClearRight: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlClearRight: `3` = this.cast(3)
-  @scala.inline
-  def htmlClear_Max: `2147483647` = this.cast(2147483647)
+  def htmlClear_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

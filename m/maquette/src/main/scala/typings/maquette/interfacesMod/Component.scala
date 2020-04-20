@@ -12,7 +12,6 @@ object Component {
   @scala.inline
   def apply(renderMaquette: () => js.UndefOr[VNode | Null]): Component = {
     val __obj = js.Dynamic.literal(renderMaquette = js.Any.fromFunction0(renderMaquette))
-  
     __obj.asInstanceOf[Component]
   }
 }

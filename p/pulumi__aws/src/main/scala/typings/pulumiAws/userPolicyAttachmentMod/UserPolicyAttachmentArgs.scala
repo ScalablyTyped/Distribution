@@ -23,7 +23,6 @@ object UserPolicyAttachmentArgs {
   @scala.inline
   def apply(policyArn: Input[ARN], user: Input[String | User]): UserPolicyAttachmentArgs = {
     val __obj = js.Dynamic.literal(policyArn = policyArn.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserPolicyAttachmentArgs]
   }
 }

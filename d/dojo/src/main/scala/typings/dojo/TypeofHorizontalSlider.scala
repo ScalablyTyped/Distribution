@@ -26,7 +26,6 @@ object TypeofHorizontalSlider {
     _Mover: Instantiable3[/* node */ HTMLElement, /* e */ Event_, js.UndefOr[/* host */ js.Object], Mover]
   ): TypeofHorizontalSlider = {
     val __obj = js.Dynamic.literal(_Mover = _Mover.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofHorizontalSlider]
   }
 }

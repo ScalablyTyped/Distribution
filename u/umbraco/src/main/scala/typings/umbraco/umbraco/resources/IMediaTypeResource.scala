@@ -37,7 +37,6 @@ object IMediaTypeResource {
   @scala.inline
   def apply(getAllowedTypes: Double => IPromise[IResourcePromise]): IMediaTypeResource = {
     val __obj = js.Dynamic.literal(getAllowedTypes = js.Any.fromFunction1(getAllowedTypes))
-  
     __obj.asInstanceOf[IMediaTypeResource]
   }
 }

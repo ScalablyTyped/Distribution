@@ -22,7 +22,6 @@ object NumberConstructor {
     step: Double => NumberConstructor
   ): NumberConstructor = {
     val __obj = js.Dynamic.literal(above = js.Any.fromFunction1(above), below = js.Any.fromFunction1(below), max = js.Any.fromFunction1(max), min = js.Any.fromFunction1(min), step = js.Any.fromFunction1(step))
-  
     __obj.asInstanceOf[NumberConstructor]
   }
 }

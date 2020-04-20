@@ -12,7 +12,6 @@ object AnonCONTENTSELECTOR {
   @scala.inline
   def apply(CONTENT_SELECTOR: String): AnonCONTENTSELECTOR = {
     val __obj = js.Dynamic.literal(CONTENT_SELECTOR = CONTENT_SELECTOR.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCONTENTSELECTOR]
   }
 }

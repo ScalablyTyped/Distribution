@@ -20,7 +20,6 @@ object SignResult {
     signature: String | ReadableStream[String] | NodeStream | Signature
   ): SignResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignResult]
   }
 }

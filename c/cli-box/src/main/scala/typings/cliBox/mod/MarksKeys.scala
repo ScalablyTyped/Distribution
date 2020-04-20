@@ -19,24 +19,22 @@ trait MarksKeys extends js.Object
 
 object MarksKeys {
   @scala.inline
-  def b: typings.cliBox.cliBoxStrings.b = this.cast("b")
+  def b: typings.cliBox.cliBoxStrings.b = "b".asInstanceOf[typings.cliBox.cliBoxStrings.b]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def e: typings.cliBox.cliBoxStrings.e = "e".asInstanceOf[typings.cliBox.cliBoxStrings.e]
   @scala.inline
-  def e: typings.cliBox.cliBoxStrings.e = this.cast("e")
+  def n: typings.cliBox.cliBoxStrings.n = "n".asInstanceOf[typings.cliBox.cliBoxStrings.n]
   @scala.inline
-  def n: typings.cliBox.cliBoxStrings.n = this.cast("n")
+  def ne: typings.cliBox.cliBoxStrings.ne = "ne".asInstanceOf[typings.cliBox.cliBoxStrings.ne]
   @scala.inline
-  def ne: typings.cliBox.cliBoxStrings.ne = this.cast("ne")
+  def nw: typings.cliBox.cliBoxStrings.nw = "nw".asInstanceOf[typings.cliBox.cliBoxStrings.nw]
   @scala.inline
-  def nw: typings.cliBox.cliBoxStrings.nw = this.cast("nw")
+  def s: typings.cliBox.cliBoxStrings.s = "s".asInstanceOf[typings.cliBox.cliBoxStrings.s]
   @scala.inline
-  def s: typings.cliBox.cliBoxStrings.s = this.cast("s")
+  def se: typings.cliBox.cliBoxStrings.se = "se".asInstanceOf[typings.cliBox.cliBoxStrings.se]
   @scala.inline
-  def se: typings.cliBox.cliBoxStrings.se = this.cast("se")
+  def sw: typings.cliBox.cliBoxStrings.sw = "sw".asInstanceOf[typings.cliBox.cliBoxStrings.sw]
   @scala.inline
-  def sw: typings.cliBox.cliBoxStrings.sw = this.cast("sw")
-  @scala.inline
-  def w: typings.cliBox.cliBoxStrings.w = this.cast("w")
+  def w: typings.cliBox.cliBoxStrings.w = "w".asInstanceOf[typings.cliBox.cliBoxStrings.w]
 }
 

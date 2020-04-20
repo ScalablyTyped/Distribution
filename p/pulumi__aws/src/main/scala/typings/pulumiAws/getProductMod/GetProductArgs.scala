@@ -21,7 +21,6 @@ object GetProductArgs {
   @scala.inline
   def apply(filters: js.Array[GetProductFilter], serviceCode: String): GetProductArgs = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], serviceCode = serviceCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetProductArgs]
   }
 }

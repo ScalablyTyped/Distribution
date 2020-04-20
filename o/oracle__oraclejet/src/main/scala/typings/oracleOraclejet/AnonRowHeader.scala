@@ -12,7 +12,6 @@ object AnonRowHeader {
   @scala.inline
   def apply(rowHeader: String): AnonRowHeader = {
     val __obj = js.Dynamic.literal(rowHeader = rowHeader.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRowHeader]
   }
 }

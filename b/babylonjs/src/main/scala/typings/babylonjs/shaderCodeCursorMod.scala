@@ -11,8 +11,8 @@ object shaderCodeCursorMod extends js.Object {
   class ShaderCodeCursor () extends js.Object {
     var _lines: js.Any = js.native
     var lineIndex: Double = js.native
-    def canRead(): Boolean = js.native
-    def currentLine(): String = js.native
+    def canRead: Boolean = js.native
+    def currentLine: String = js.native
     def lines(value: js.Array[String]): js.Any = js.native
   }
   

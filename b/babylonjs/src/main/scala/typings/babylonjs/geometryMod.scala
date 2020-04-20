@@ -105,7 +105,7 @@ object geometryMod extends js.Object {
     /**
       *  Gets or sets the Bias Vector to apply on the bounding elements (box/sphere), the max extend is computed as v += v * bias.x + bias.y, the min is computed as v -= v * bias.x + bias.y
       */
-    def boundingBias(): Vector2 = js.native
+    def boundingBias: Vector2 = js.native
     /**
       *  Gets or sets the Bias Vector to apply on the bounding elements (box/sphere), the max extend is computed as v += v * bias.x + bias.y, the min is computed as v -= v * bias.x + bias.y
       */
@@ -123,11 +123,11 @@ object geometryMod extends js.Object {
     /**
       * Gets a value indicating that the geometry should not be serialized
       */
-    def doNotSerialize(): Boolean = js.native
+    def doNotSerialize: Boolean = js.native
     /**
       * Gets the current extend of the geometry
       */
-    def extend(): AnonMaximum = js.native
+    def extend: AnonMaximum = js.native
     /**
       * Gets the hosting engine
       * @returns the hosting Engine

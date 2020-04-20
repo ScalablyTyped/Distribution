@@ -16,7 +16,6 @@ object TlsValidationContextAcmTrust {
   @scala.inline
   def apply(certificateAuthorityArns: CertificateAuthorityArns): TlsValidationContextAcmTrust = {
     val __obj = js.Dynamic.literal(certificateAuthorityArns = certificateAuthorityArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TlsValidationContextAcmTrust]
   }
 }

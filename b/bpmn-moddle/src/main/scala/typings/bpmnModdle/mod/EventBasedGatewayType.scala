@@ -12,10 +12,8 @@ trait EventBasedGatewayType extends js.Object
 
 object EventBasedGatewayType {
   @scala.inline
-  def Exclusive: typings.bpmnModdle.bpmnModdleStrings.Exclusive = this.cast("Exclusive")
+  def Exclusive: typings.bpmnModdle.bpmnModdleStrings.Exclusive = "Exclusive".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Exclusive]
   @scala.inline
-  def Parallel: typings.bpmnModdle.bpmnModdleStrings.Parallel = this.cast("Parallel")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Parallel: typings.bpmnModdle.bpmnModdleStrings.Parallel = "Parallel".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Parallel]
 }
 

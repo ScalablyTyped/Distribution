@@ -16,12 +16,10 @@ trait OlTimeStyle extends js.Object
 
 object OlTimeStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olTimeStyleShortDuration: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olTimeStyleShortDuration: `4` = this.cast(4)
+  def olTimeStyleTimeDuration: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olTimeStyleTimeDuration: `1` = this.cast(1)
-  @scala.inline
-  def olTimeStyleTimeOnly: `0` = this.cast(0)
+  def olTimeStyleTimeOnly: `0` = 0.asInstanceOf[`0`]
 }
 

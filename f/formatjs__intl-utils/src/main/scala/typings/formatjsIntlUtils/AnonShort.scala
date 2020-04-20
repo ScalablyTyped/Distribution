@@ -20,7 +20,6 @@ object AnonShort {
     short: Record[ScriptCode, String]
   ): AnonShort = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShort]
   }
 }

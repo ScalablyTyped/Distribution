@@ -18,7 +18,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
   var afterSaveCell: js.UndefOr[
     js.Function4[
       /* row */ TRow, 
-      /* cellName */ String, 
+      /* keyof TRow */ /* cellName */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
       /* props */ AnonColIndex, 
       Unit
@@ -40,7 +40,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
   var beforeSaveCell: js.UndefOr[
     js.Function5[
       /* row */ TRow, 
-      /* cellName */ String, 
+      /* keyof TRow */ /* cellName */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
       /* done */ js.Function1[/* isValid */ Boolean, Unit], 
       /* props */ AnonColIndex, 
@@ -73,8 +73,8 @@ object CellEdit {
   @scala.inline
   def apply[TRow /* <: js.Object */](
     mode: CellEditClickMode,
-    afterSaveCell: (/* row */ TRow, /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* props */ AnonColIndex) => Unit = null,
-    beforeSaveCell: (/* row */ TRow, /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* done */ js.Function1[/* isValid */ Boolean, Unit], /* props */ AnonColIndex) => Boolean | `1` = null,
+    afterSaveCell: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* props */ AnonColIndex) => Unit = null,
+    beforeSaveCell: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* done */ js.Function1[/* isValid */ Boolean, Unit], /* props */ AnonColIndex) => Boolean | `1` = null,
     blurToEscape: js.UndefOr[Boolean] = js.undefined,
     blurToSave: js.UndefOr[Boolean] = js.undefined,
     nonEditableRows: () => js.Array[Double | String] = null

@@ -23,7 +23,6 @@ object ReplaceIamInstanceProfileAssociationRequest {
     IamInstanceProfile: IamInstanceProfileSpecification
   ): ReplaceIamInstanceProfileAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any], IamInstanceProfile = IamInstanceProfile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplaceIamInstanceProfileAssociationRequest]
   }
 }

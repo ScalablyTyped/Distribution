@@ -1,8 +1,6 @@
 package typings.titanium.Titanium.UI.iOS
 
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
 import typings.titanium.WebViewPreferencesObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,151 +9,121 @@ import scala.scalajs.js.annotation._
 /**
 			 * A collection of properties used to initialize a web view.
 			 */
-trait WebViewConfiguration extends Proxy {
+@JSGlobal("Titanium.UI.iOS.WebViewConfiguration")
+@js.native
+class WebViewConfiguration () extends Proxy {
   /**
   				 * A Boolean value indicating whether AirPlay is allowed.
   				 */
-  var allowsAirPlayMediaPlayback: Boolean
+  var allowsAirPlayMediaPlayback: Boolean = js.native
   /**
   				 * A Boolean value indicating whether HTML5 videos play inline or use the native full-screen controller.
   				 */
-  var allowsInlineMediaPlayback: Boolean
+  var allowsInlineMediaPlayback: Boolean = js.native
   /**
   				 * A Boolean value indicating whether HTML5 videos can play picture-in-picture.
   				 */
-  var allowsPictureInPictureMediaPlayback: Boolean
+  var allowsPictureInPictureMediaPlayback: Boolean = js.native
   /**
   				 * Determines which media types require a user gesture to begin playing.
   				 */
-  var mediaTypesRequiringUserActionForPlayback: Double
+  var mediaTypesRequiringUserActionForPlayback: Double = js.native
   /**
   				 * The preference settings to be used by the web view.
   				 */
-  var preferences: WebViewPreferencesObject
+  var preferences: WebViewPreferencesObject = js.native
   /**
   				 * The process pool from which to obtain the  Web Content process of view.
   				 */
-  var processPool: WebViewProcessPool
+  var processPool: WebViewProcessPool = js.native
   /**
   				 * The level of granularity with which the user can interactively select content in the web view.
   				 */
-  var selectionGranularity: Double
+  var selectionGranularity: Double = js.native
   /**
   				 * A Boolean value indicating whether the web view suppresses content rendering until it is fully
   				 * loaded into memory.
   				 */
-  var suppressesIncrementalRendering: Boolean
+  var suppressesIncrementalRendering: Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.WebViewConfiguration.allowsAirPlayMediaPlayback> property.
+  				 * @deprecated Access <Titanium.UI.iOS.WebViewConfiguration.allowsAirPlayMediaPlayback> instead.
   				 */
-  def getAllowsAirPlayMediaPlayback(): Boolean
+  def getAllowsAirPlayMediaPlayback(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.WebViewConfiguration.allowsInlineMediaPlayback> property.
+  				 * @deprecated Access <Titanium.UI.iOS.WebViewConfiguration.allowsInlineMediaPlayback> instead.
   				 */
-  def getAllowsInlineMediaPlayback(): Boolean
+  def getAllowsInlineMediaPlayback(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.WebViewConfiguration.allowsPictureInPictureMediaPlayback> property.
+  				 * @deprecated Access <Titanium.UI.iOS.WebViewConfiguration.allowsPictureInPictureMediaPlayback> instead.
   				 */
-  def getAllowsPictureInPictureMediaPlayback(): Boolean
+  def getAllowsPictureInPictureMediaPlayback(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.WebViewConfiguration.mediaTypesRequiringUserActionForPlayback> property.
+  				 * @deprecated Access <Titanium.UI.iOS.WebViewConfiguration.mediaTypesRequiringUserActionForPlayback> instead.
   				 */
-  def getMediaTypesRequiringUserActionForPlayback(): Double
+  def getMediaTypesRequiringUserActionForPlayback(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.WebViewConfiguration.preferences> property.
+  				 * @deprecated Access <Titanium.UI.iOS.WebViewConfiguration.preferences> instead.
   				 */
-  def getPreferences(): WebViewPreferencesObject
+  def getPreferences(): WebViewPreferencesObject = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.WebViewConfiguration.processPool> property.
+  				 * @deprecated Access <Titanium.UI.iOS.WebViewConfiguration.processPool> instead.
   				 */
-  def getProcessPool(): WebViewProcessPool
+  def getProcessPool(): WebViewProcessPool = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.WebViewConfiguration.selectionGranularity> property.
+  				 * @deprecated Access <Titanium.UI.iOS.WebViewConfiguration.selectionGranularity> instead.
   				 */
-  def getSelectionGranularity(): Double
+  def getSelectionGranularity(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.WebViewConfiguration.suppressesIncrementalRendering> property.
+  				 * @deprecated Access <Titanium.UI.iOS.WebViewConfiguration.suppressesIncrementalRendering> instead.
   				 */
-  def getSuppressesIncrementalRendering(): Boolean
+  def getSuppressesIncrementalRendering(): Boolean = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.WebViewConfiguration.allowsAirPlayMediaPlayback> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.WebViewConfiguration.allowsAirPlayMediaPlayback> instead.
   				 */
-  def setAllowsAirPlayMediaPlayback(allowsAirPlayMediaPlayback: Boolean): Unit
+  def setAllowsAirPlayMediaPlayback(allowsAirPlayMediaPlayback: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.WebViewConfiguration.allowsInlineMediaPlayback> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.WebViewConfiguration.allowsInlineMediaPlayback> instead.
   				 */
-  def setAllowsInlineMediaPlayback(allowsInlineMediaPlayback: Boolean): Unit
+  def setAllowsInlineMediaPlayback(allowsInlineMediaPlayback: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.WebViewConfiguration.allowsPictureInPictureMediaPlayback> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.WebViewConfiguration.allowsPictureInPictureMediaPlayback> instead.
   				 */
-  def setAllowsPictureInPictureMediaPlayback(allowsPictureInPictureMediaPlayback: Boolean): Unit
+  def setAllowsPictureInPictureMediaPlayback(allowsPictureInPictureMediaPlayback: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.WebViewConfiguration.mediaTypesRequiringUserActionForPlayback> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.WebViewConfiguration.mediaTypesRequiringUserActionForPlayback> instead.
   				 */
-  def setMediaTypesRequiringUserActionForPlayback(mediaTypesRequiringUserActionForPlayback: Double): Unit
+  def setMediaTypesRequiringUserActionForPlayback(mediaTypesRequiringUserActionForPlayback: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.WebViewConfiguration.preferences> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.WebViewConfiguration.preferences> instead.
   				 */
-  def setPreferences(preferences: WebViewPreferencesObject): Unit
+  def setPreferences(preferences: WebViewPreferencesObject): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.WebViewConfiguration.processPool> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.WebViewConfiguration.processPool> instead.
   				 */
-  def setProcessPool(processPool: WebViewProcessPool): Unit
+  def setProcessPool(processPool: WebViewProcessPool): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.WebViewConfiguration.selectionGranularity> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.WebViewConfiguration.selectionGranularity> instead.
   				 */
-  def setSelectionGranularity(selectionGranularity: Double): Unit
+  def setSelectionGranularity(selectionGranularity: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.WebViewConfiguration.suppressesIncrementalRendering> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.WebViewConfiguration.suppressesIncrementalRendering> instead.
   				 */
-  def setSuppressesIncrementalRendering(suppressesIncrementalRendering: Boolean): Unit
-}
-
-object WebViewConfiguration {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    allowsAirPlayMediaPlayback: Boolean,
-    allowsInlineMediaPlayback: Boolean,
-    allowsPictureInPictureMediaPlayback: Boolean,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    fireEvent: (String, js.Any) => Unit,
-    getAllowsAirPlayMediaPlayback: () => Boolean,
-    getAllowsInlineMediaPlayback: () => Boolean,
-    getAllowsPictureInPictureMediaPlayback: () => Boolean,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getMediaTypesRequiringUserActionForPlayback: () => Double,
-    getPreferences: () => WebViewPreferencesObject,
-    getProcessPool: () => WebViewProcessPool,
-    getSelectionGranularity: () => Double,
-    getSuppressesIncrementalRendering: () => Boolean,
-    mediaTypesRequiringUserActionForPlayback: Double,
-    preferences: WebViewPreferencesObject,
-    processPool: WebViewProcessPool,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    selectionGranularity: Double,
-    setAllowsAirPlayMediaPlayback: Boolean => Unit,
-    setAllowsInlineMediaPlayback: Boolean => Unit,
-    setAllowsPictureInPictureMediaPlayback: Boolean => Unit,
-    setBubbleParent: Boolean => Unit,
-    setMediaTypesRequiringUserActionForPlayback: Double => Unit,
-    setPreferences: WebViewPreferencesObject => Unit,
-    setProcessPool: WebViewProcessPool => Unit,
-    setSelectionGranularity: Double => Unit,
-    setSuppressesIncrementalRendering: Boolean => Unit,
-    suppressesIncrementalRendering: Boolean,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): WebViewConfiguration = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), allowsAirPlayMediaPlayback = allowsAirPlayMediaPlayback.asInstanceOf[js.Any], allowsInlineMediaPlayback = allowsInlineMediaPlayback.asInstanceOf[js.Any], allowsPictureInPictureMediaPlayback = allowsPictureInPictureMediaPlayback.asInstanceOf[js.Any], apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getAllowsAirPlayMediaPlayback = js.Any.fromFunction0(getAllowsAirPlayMediaPlayback), getAllowsInlineMediaPlayback = js.Any.fromFunction0(getAllowsInlineMediaPlayback), getAllowsPictureInPictureMediaPlayback = js.Any.fromFunction0(getAllowsPictureInPictureMediaPlayback), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getMediaTypesRequiringUserActionForPlayback = js.Any.fromFunction0(getMediaTypesRequiringUserActionForPlayback), getPreferences = js.Any.fromFunction0(getPreferences), getProcessPool = js.Any.fromFunction0(getProcessPool), getSelectionGranularity = js.Any.fromFunction0(getSelectionGranularity), getSuppressesIncrementalRendering = js.Any.fromFunction0(getSuppressesIncrementalRendering), mediaTypesRequiringUserActionForPlayback = mediaTypesRequiringUserActionForPlayback.asInstanceOf[js.Any], preferences = preferences.asInstanceOf[js.Any], processPool = processPool.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), selectionGranularity = selectionGranularity.asInstanceOf[js.Any], setAllowsAirPlayMediaPlayback = js.Any.fromFunction1(setAllowsAirPlayMediaPlayback), setAllowsInlineMediaPlayback = js.Any.fromFunction1(setAllowsInlineMediaPlayback), setAllowsPictureInPictureMediaPlayback = js.Any.fromFunction1(setAllowsPictureInPictureMediaPlayback), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setMediaTypesRequiringUserActionForPlayback = js.Any.fromFunction1(setMediaTypesRequiringUserActionForPlayback), setPreferences = js.Any.fromFunction1(setPreferences), setProcessPool = js.Any.fromFunction1(setProcessPool), setSelectionGranularity = js.Any.fromFunction1(setSelectionGranularity), setSuppressesIncrementalRendering = js.Any.fromFunction1(setSuppressesIncrementalRendering), suppressesIncrementalRendering = suppressesIncrementalRendering.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[WebViewConfiguration]
-  }
+  def setSuppressesIncrementalRendering(suppressesIncrementalRendering: Boolean): Unit = js.native
 }
 

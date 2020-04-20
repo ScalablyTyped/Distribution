@@ -67,16 +67,16 @@ object workflowsMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FFlow: IModel = js.native
-      def containerAsWorkflow(): Workflow = js.native
+      def containerAsWorkflow: Workflow = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
-      def from(): WorkflowActivity = js.native
+      def from: WorkflowActivity = js.native
       def from(newValue: WorkflowActivity): js.Any = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
-      def to(): WorkflowActivity = js.native
+      def to: WorkflowActivity = js.native
       def to(newValue: WorkflowActivity): js.Any = js.native
       def value(): js.Any = js.native
       def value(newValue: WorkflowActivityOutcome): js.Any = js.native
@@ -84,7 +84,7 @@ object workflowsMod extends js.Object {
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
       @JSName("value")
-      def value_Union(): WorkflowActivityOutcome | Null = js.native
+      def value_Union: WorkflowActivityOutcome | Null = js.native
     }
     
     /**
@@ -140,10 +140,10 @@ object workflowsMod extends js.Object {
       def page(): js.Any = js.native
       def page(newValue: PageSettings): js.Any = js.native
       @JSName("page")
-      def page_Union(): PageSettings | Null = js.native
-      def taskCaption(): String = js.native
+      def page_Union: PageSettings | Null = js.native
+      def taskCaption: String = js.native
       def taskCaption(newValue: String): js.Any = js.native
-      def taskDescription(): String = js.native
+      def taskDescription: String = js.native
       def taskDescription(newValue: String): js.Any = js.native
     }
     
@@ -181,16 +181,16 @@ object workflowsMod extends js.Object {
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
-      def activities(): IList[WorkflowActivity] = js.native
+      def activities: IList[WorkflowActivity] = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MWorkflow(): FolderBase = js.native
-      def context(): IEntity = js.native
+      def containerAsFolderBase_MWorkflow: FolderBase = js.native
+      def context: IEntity = js.native
       def context(newValue: IEntity): js.Any = js.native
-      def contextQualifiedName(): String = js.native
+      def contextQualifiedName: String = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
-      def flows(): IList[Flow] = js.native
+      def flows: IList[Flow] = js.native
     }
     
     /**
@@ -213,16 +213,16 @@ object workflowsMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FWorkflowActivity: IModel = js.native
-      def caption(): String = js.native
+      def caption: String = js.native
       def caption(newValue: String): js.Any = js.native
-      def containerAsWorkflow(): Workflow = js.native
-      def location(): IPoint = js.native
+      def containerAsWorkflow: Workflow = js.native
+      def location: IPoint = js.native
       def location(newValue: IPoint): js.Any = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
-      def possibleOutcomes(): IList[WorkflowActivityOutcome] = js.native
-      def size(): ISize = js.native
+      def possibleOutcomes: IList[WorkflowActivityOutcome] = js.native
+      def size: ISize = js.native
       def size(newValue: ISize): js.Any = js.native
     }
     
@@ -243,8 +243,8 @@ object workflowsMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FWorkflowActivityOutcome: IModel = js.native
-      def containerAsWorkflowActivity(): WorkflowActivity = js.native
-      def name(): String = js.native
+      def containerAsWorkflowActivity: WorkflowActivity = js.native
+      def name: String = js.native
       def name(newValue: String): js.Any = js.native
     }
     

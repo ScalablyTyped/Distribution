@@ -13,7 +13,7 @@ object flowMod extends js.Object {
   /* Inlined std.Promise<T> & {cancel (): void} */
   @js.native
   trait CancellablePromise[T] extends js.Object {
-    @JSName(scala.scalajs.js.Symbol.toStringTag)
+    @JSName(js.Symbol.toStringTag)
     val toStringTag: String = js.native
     def cancel(): Unit = js.native
     /**

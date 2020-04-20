@@ -16,7 +16,6 @@ object RenderableTask {
   @scala.inline
   def apply(Input: TaskInput): RenderableTask = {
     val __obj = js.Dynamic.literal(Input = Input.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderableTask]
   }
 }

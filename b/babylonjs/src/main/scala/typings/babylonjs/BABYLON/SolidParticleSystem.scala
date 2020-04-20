@@ -268,7 +268,7 @@ class SolidParticleSystem protected () extends IDisposable {
   /**
     * If the subMeshes must be updated on the next call to setParticles()
     */
-  def autoUpdateSubMeshes(): Boolean = js.native
+  def autoUpdateSubMeshes: Boolean = js.native
   def autoUpdateSubMeshes(`val`: Boolean): js.Any = js.native
   /**
     * This will be called before any other treatment by `setParticles()` and will be passed three parameters.
@@ -290,7 +290,7 @@ class SolidParticleSystem protected () extends IDisposable {
   /**
     * Gets if `setParticles()` computes or not the mesh bounding box when computing the particle positions.
     */
-  def computeBoundingBox(): Boolean = js.native
+  def computeBoundingBox: Boolean = js.native
   /**
     * Tells to `setParticles()` to compute or not the mesh bounding box when computing the particle positions.
     */
@@ -300,7 +300,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * Default value : true. The SPS is faster when it's set to false.
     * Note : the particle colors are stored values, so setting `computeParticleColor` to false will keep yet the last colors set.
     */
-  def computeParticleColor(): Boolean = js.native
+  def computeParticleColor: Boolean = js.native
   /**
     * Tells to `setParticles()` to compute the particle colors or not.
     * Default value : true. The SPS is faster when it's set to false.
@@ -312,7 +312,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * Default value : true. The SPS is faster when it's set to false.
     * Note : the particle rotations aren't stored values, so setting `computeParticleRotation` to false will prevents the particle to rotate.
     */
-  def computeParticleRotation(): Boolean = js.native
+  def computeParticleRotation: Boolean = js.native
   /**
     * Tells to `setParticles()` to compute the particle rotations or not.
     * Default value : true. The SPS is faster when it's set to false.
@@ -324,14 +324,14 @@ class SolidParticleSystem protected () extends IDisposable {
     * Default value : true. The SPS is faster when it's set to false.
     * Note : the particle textures are stored values, so setting `computeParticleTexture` to false will keep yet the last colors set.
     */
-  def computeParticleTexture(): Boolean = js.native
+  def computeParticleTexture: Boolean = js.native
   def computeParticleTexture(`val`: Boolean): js.Any = js.native
   /**
     * Gets if `setParticles()` calls the vertex function for each vertex of each particle, or not.
     * Default value : false. The SPS is faster when it's set to false.
     * Note : the particle custom vertex positions aren't stored values.
     */
-  def computeParticleVertex(): Boolean = js.native
+  def computeParticleVertex: Boolean = js.native
   /**
     * Tells to `setParticles()` to call the vertex function for each vertex of each particle, or not.
     * Default value : false. The SPS is faster when it's set to false.
@@ -349,7 +349,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * Skipped when `enableDepthSort` is set to `false` (default) at construction time.
     * Default : `true`
     */
-  def depthSortParticles(): Boolean = js.native
+  def depthSortParticles: Boolean = js.native
   /**
     * Tells to `setParticles()` to sort or not the distance between each particle and the camera.
     * Skipped when `enableDepthSort` is set to `false` (default) at construction time.
@@ -378,7 +378,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * Gets if the SPS is created as expandable at construction time.
     * Default : `false`
     */
-  def expandable(): Boolean = js.native
+  def expandable: Boolean = js.native
   /**
     * Returns a SolidParticle object from its identifier : particle.id
     * @param id (integer) the particle Id
@@ -414,7 +414,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * Gets whether the SPS as always visible or not
     * doc : http://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
     */
-  def isAlwaysVisible(): Boolean = js.native
+  def isAlwaysVisible: Boolean = js.native
   /**
     * Sets the SPS as always visible or not
     * doc : http://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
@@ -424,7 +424,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * Gets if the SPS visibility box as locked or not. This enables/disables the underlying mesh bounding box updates.
     * doc : http://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
     */
-  def isVisibilityBoxLocked(): Boolean = js.native
+  def isVisibilityBoxLocked: Boolean = js.native
   /**
     * Sets the SPS visibility box as locked or not. This enables/disables the underlying mesh bounding box updates.
     * doc : http://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
@@ -433,16 +433,16 @@ class SolidParticleSystem protected () extends IDisposable {
   /**
     * The SPS used material array.
     */
-  def materials(): js.Array[Material] = js.native
+  def materials: js.Array[Material] = js.native
   /**
     * The SPS computed multimaterial object
     */
-  def multimaterial(): MultiMaterial = js.native
+  def multimaterial: MultiMaterial = js.native
   def multimaterial(mm: MultiMaterial): js.Any = js.native
   /**
     * Gets if the SPS supports the Multi Materials
     */
-  def multimaterialEnabled(): Boolean = js.native
+  def multimaterialEnabled: Boolean = js.native
   /**
     * Rebuilds the whole mesh and updates the VBO : custom positions and vertices are recomputed if needed.
     * @param reset boolean, default false : if the particles must be reset at position and rotation zero, scaling 1, color white, initial UVs and not parented.
@@ -524,6 +524,6 @@ class SolidParticleSystem protected () extends IDisposable {
   /**
     * Gets if the SPS uses the model materials for its own multimaterial.
     */
-  def useModelMaterial(): Boolean = js.native
+  def useModelMaterial: Boolean = js.native
 }
 

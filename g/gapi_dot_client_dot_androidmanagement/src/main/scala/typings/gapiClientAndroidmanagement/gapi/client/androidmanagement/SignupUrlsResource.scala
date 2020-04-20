@@ -15,7 +15,6 @@ object SignupUrlsResource {
   @scala.inline
   def apply(create: AnonCallbackUrl => Request_[SignupUrl]): SignupUrlsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[SignupUrlsResource]
   }
 }

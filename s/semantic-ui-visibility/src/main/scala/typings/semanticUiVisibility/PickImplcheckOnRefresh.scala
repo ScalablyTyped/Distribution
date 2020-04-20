@@ -13,7 +13,6 @@ object PickImplcheckOnRefresh {
   @scala.inline
   def apply(checkOnRefresh: Boolean): PickImplcheckOnRefresh = {
     val __obj = js.Dynamic.literal(checkOnRefresh = checkOnRefresh.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcheckOnRefresh]
   }
 }

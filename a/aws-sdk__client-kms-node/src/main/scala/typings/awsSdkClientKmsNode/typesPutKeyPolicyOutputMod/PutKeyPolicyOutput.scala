@@ -18,7 +18,6 @@ object PutKeyPolicyOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): PutKeyPolicyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutKeyPolicyOutput]
   }
 }

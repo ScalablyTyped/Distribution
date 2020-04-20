@@ -19,7 +19,6 @@ object PodReadinessGate {
   @scala.inline
   def apply(conditionType: Input[String]): PodReadinessGate = {
     val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PodReadinessGate]
   }
 }

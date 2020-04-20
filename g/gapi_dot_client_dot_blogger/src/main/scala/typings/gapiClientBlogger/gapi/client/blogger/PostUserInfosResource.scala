@@ -24,7 +24,6 @@ object PostUserInfosResource {
   @scala.inline
   def apply(get: AnonMaxComments => Request_[PostUserInfo], list: AnonLabels => Request_[PostUserInfosList]): PostUserInfosResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[PostUserInfosResource]
   }
 }

@@ -31,7 +31,6 @@ object WebMapUpdateFromOptionsThumbnailSize {
     width: Double
   ): WebMapUpdateFromOptionsThumbnailSize = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebMapUpdateFromOptionsThumbnailSize]
   }
 }

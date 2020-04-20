@@ -20,7 +20,6 @@ object SetDefaultPolicyVersionRequest {
   @scala.inline
   def apply(PolicyArn: arnType, VersionId: policyVersionIdType): SetDefaultPolicyVersionRequest = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetDefaultPolicyVersionRequest]
   }
 }

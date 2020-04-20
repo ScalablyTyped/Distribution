@@ -42,7 +42,6 @@ object Erase {
     screenRight: String
   ): Erase = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], lineLeft = lineLeft.asInstanceOf[js.Any], lineRight = lineRight.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], screenLeft = screenLeft.asInstanceOf[js.Any], screenRight = screenRight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Erase]
   }
 }

@@ -20,7 +20,6 @@ object Store {
     resetKey: String => Unit
   ): Store = {
     val __obj = js.Dynamic.literal(decrement = js.Any.fromFunction1(decrement), incr = js.Any.fromFunction2(incr), resetAll = js.Any.fromFunction0(resetAll), resetKey = js.Any.fromFunction1(resetKey))
-  
     __obj.asInstanceOf[Store]
   }
 }

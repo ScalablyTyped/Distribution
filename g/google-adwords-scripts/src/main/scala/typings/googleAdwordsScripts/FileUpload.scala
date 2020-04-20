@@ -19,7 +19,6 @@ object FileUpload {
     setFileName: String => FileUpload
   ): FileUpload = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction0(apply), forCampaignManagement = js.Any.fromFunction0(forCampaignManagement), forOfflineConversions = js.Any.fromFunction0(forOfflineConversions), preview = js.Any.fromFunction0(preview), setFileName = js.Any.fromFunction1(setFileName))
-  
     __obj.asInstanceOf[FileUpload]
   }
 }

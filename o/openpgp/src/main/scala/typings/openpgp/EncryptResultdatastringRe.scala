@@ -24,7 +24,6 @@ object EncryptResultdatastringRe {
     signature: String | ReadableStream[String] | Signature
   ): EncryptResultdatastringRe = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sessionKey = sessionKey.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptResultdatastringRe]
   }
 }

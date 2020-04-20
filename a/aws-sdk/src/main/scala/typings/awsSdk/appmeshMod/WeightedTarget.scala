@@ -20,7 +20,6 @@ object WeightedTarget {
   @scala.inline
   def apply(virtualNode: ResourceName, weight: PercentInt): WeightedTarget = {
     val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WeightedTarget]
   }
 }

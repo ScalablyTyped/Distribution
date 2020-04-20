@@ -28,7 +28,6 @@ object DirectRepositoryRankedRecipientsResponseThread {
     viewer_id: Double
   ): DirectRepositoryRankedRecipientsResponseThread = {
     val __obj = js.Dynamic.literal(canonical = canonical.asInstanceOf[js.Any], named = named.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], thread_id = thread_id.asInstanceOf[js.Any], thread_title = thread_title.asInstanceOf[js.Any], thread_type = thread_type.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], viewer_id = viewer_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectRepositoryRankedRecipientsResponseThread]
   }
 }

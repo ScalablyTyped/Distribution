@@ -16,7 +16,6 @@ object AnonPFaxAccount {
   @scala.inline
   def apply(bstrJobId: String, pFaxAccount: FaxAccount, pJobStatus: FaxJobStatus): AnonPFaxAccount = {
     val __obj = js.Dynamic.literal(bstrJobId = bstrJobId.asInstanceOf[js.Any], pFaxAccount = pFaxAccount.asInstanceOf[js.Any], pJobStatus = pJobStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPFaxAccount]
   }
 }

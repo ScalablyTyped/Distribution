@@ -28,7 +28,6 @@ object GetMaintenanceWindowExecutionTaskInvocationRequest {
     WindowExecutionId: MaintenanceWindowExecutionId
   ): GetMaintenanceWindowExecutionTaskInvocationRequest = {
     val __obj = js.Dynamic.literal(InvocationId = InvocationId.asInstanceOf[js.Any], TaskId = TaskId.asInstanceOf[js.Any], WindowExecutionId = WindowExecutionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMaintenanceWindowExecutionTaskInvocationRequest]
   }
 }

@@ -13,7 +13,6 @@ object PluginConvertEllipseToCircle {
   @scala.inline
   def apply(convertEllipseToCircle: Boolean | js.Object): PluginConvertEllipseToCircle = {
     val __obj = js.Dynamic.literal(convertEllipseToCircle = convertEllipseToCircle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginConvertEllipseToCircle]
   }
 }

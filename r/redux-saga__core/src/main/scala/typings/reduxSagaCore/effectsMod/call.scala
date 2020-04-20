@@ -1,5 +1,6 @@
 package typings.reduxSagaCore.effectsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.reduxSagaCore.AnonContext
 import typings.reduxSagaCore.AnonFn
 import typings.reduxSagaCore.reduxSagaCoreStrings.call_
@@ -17,19 +18,15 @@ object call extends js.Object {
   ): CallEffect = js.native
   def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ call_ with js.Any */, Name /* <: String */](
-    ctxAndFnName: js.Tuple2[Ctx, Name],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
-    ]
-  ): CallEffect = js.native
-  def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ call_ with js.Any */, Name /* <: String */](
+    */ call_ with TopLevel[js.Any] */, Name /* <: String */](
     ctxAndFnName: AnonContext[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
+  ): CallEffect = js.native
+  def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
+    ctxAndFn: js.Tuple2[Ctx, Fn],
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): CallEffect = js.native
   def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
     ctxAndFn: AnonFn[Ctx, Fn],

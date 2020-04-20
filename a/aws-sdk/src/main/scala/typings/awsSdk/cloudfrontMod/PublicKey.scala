@@ -24,7 +24,6 @@ object PublicKey {
   @scala.inline
   def apply(CreatedTime: timestamp, Id: String, PublicKeyConfig: PublicKeyConfig): PublicKey = {
     val __obj = js.Dynamic.literal(CreatedTime = CreatedTime.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], PublicKeyConfig = PublicKeyConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PublicKey]
   }
 }

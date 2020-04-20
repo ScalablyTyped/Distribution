@@ -22,7 +22,7 @@ class CustomRequestHandling protected () extends RequestHandling {
   ) = this()
   @JSName("model")
   var model_FCustomRequestHandling: IModel = js.native
-  def template(): StringTemplate = js.native
+  def template: StringTemplate = js.native
   def template(newValue: StringTemplate): js.Any = js.native
 }
 

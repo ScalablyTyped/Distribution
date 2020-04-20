@@ -15,7 +15,6 @@ object AnonCancel {
   @scala.inline
   def apply(cancel: Action, clearAll: Action, save: Action): AnonCancel = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], clearAll = clearAll.asInstanceOf[js.Any], save = save.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancel]
   }
 }

@@ -12,7 +12,6 @@ object AnonMatchBare {
   @scala.inline
   def apply(matchBare: Boolean): AnonMatchBare = {
     val __obj = js.Dynamic.literal(matchBare = matchBare.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMatchBare]
   }
 }

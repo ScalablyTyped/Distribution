@@ -13,7 +13,6 @@ object TypeofXRay {
   @scala.inline
   def apply(Types: TypeofXRay): TypeofXRay = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofXRay]
   }
 }

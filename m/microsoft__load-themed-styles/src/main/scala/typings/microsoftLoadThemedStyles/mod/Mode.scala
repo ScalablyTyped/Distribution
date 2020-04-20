@@ -14,10 +14,8 @@ trait Mode extends js.Object
 
 object Mode {
   @scala.inline
-  def async: `1` = this.cast(1)
+  def async: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def sync: `0` = this.cast(0)
+  def sync: `0` = 0.asInstanceOf[`0`]
 }
 

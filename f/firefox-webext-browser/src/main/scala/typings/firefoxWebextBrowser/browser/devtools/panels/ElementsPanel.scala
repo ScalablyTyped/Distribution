@@ -24,7 +24,6 @@ object ElementsPanel {
     onSelectionChanged: WebExtEvent[js.Function0[Unit]]
   ): ElementsPanel = {
     val __obj = js.Dynamic.literal(createSidebarPane = js.Any.fromFunction1(createSidebarPane), onSelectionChanged = onSelectionChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElementsPanel]
   }
 }

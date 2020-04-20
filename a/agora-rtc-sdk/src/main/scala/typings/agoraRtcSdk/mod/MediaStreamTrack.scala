@@ -22,7 +22,6 @@ object MediaStreamTrack {
   @scala.inline
   def apply(kind: audio | video): MediaStreamTrack = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaStreamTrack]
   }
 }

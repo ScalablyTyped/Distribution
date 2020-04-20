@@ -28,7 +28,6 @@ object AnonBatchedContinuousIntegration {
     schedule: Double
   ): AnonBatchedContinuousIntegration = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], batchedContinuousIntegration = batchedContinuousIntegration.asInstanceOf[js.Any], batchedGatedCheckIn = batchedGatedCheckIn.asInstanceOf[js.Any], continuousIntegration = continuousIntegration.asInstanceOf[js.Any], gatedCheckIn = gatedCheckIn.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], pullRequest = pullRequest.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBatchedContinuousIntegration]
   }
 }

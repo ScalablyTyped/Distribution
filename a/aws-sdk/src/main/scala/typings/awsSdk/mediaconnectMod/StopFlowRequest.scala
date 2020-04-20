@@ -16,7 +16,6 @@ object StopFlowRequest {
   @scala.inline
   def apply(FlowArn: string): StopFlowRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopFlowRequest]
   }
 }

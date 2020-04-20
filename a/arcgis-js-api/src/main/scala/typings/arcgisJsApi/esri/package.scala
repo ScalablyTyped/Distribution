@@ -132,6 +132,7 @@ package object esri {
     scala.Unit
   ]
   type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* params (repeated) */ js.Any, T]
+  type CreateWorkflowProperties = typings.arcgisJsApi.esri.WorkflowProperties
   type CredentialDestroyEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.CredentialDestroyEvent, scala.Unit]
   type CredentialTokenChangeEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.CredentialTokenChangeEvent, scala.Unit]
   type DataLineCreatedFunction = js.Function3[
@@ -155,6 +156,7 @@ package object esri {
     scala.Unit
   ]
   type ElevationSamplerChangedEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.ElevationSamplerChangedEvent, scala.Unit]
+  type ErrorCallback = js.Function1[/* error */ typings.arcgisJsApi.esri.Error, scala.Unit]
   type EventAttachedCallback = js.Function4[
     /* target */ js.UndefOr[js.Any], 
     /* propName */ js.UndefOr[java.lang.String], 
@@ -182,6 +184,7 @@ package object esri {
   ]
   type FeatureLayerLayerviewCreateEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.FeatureLayerLayerviewCreateEvent, scala.Unit]
   type FeatureLayerLayerviewDestroyEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.FeatureLayerLayerviewDestroyEvent, scala.Unit]
+  type FeatureTableSelectionChangeEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.FeatureTableSelectionChangeEvent, scala.Unit]
   type FeatureTemplatesSelectEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.FeatureTemplatesSelectEvent, scala.Unit]
   type FeatureTemplatesViewModelSelectEventHandler = js.Function1[
     /* event */ typings.arcgisJsApi.esri.FeatureTemplatesViewModelSelectEvent, 
@@ -389,6 +392,7 @@ package object esri {
   type MapViewFocusEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.MapViewFocusEvent, scala.Unit]
   type MapViewHoldEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.MapViewHoldEvent, scala.Unit]
   type MapViewImmediateClickEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.MapViewImmediateClickEvent, scala.Unit]
+  type MapViewImmediateDoubleClickEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.MapViewImmediateDoubleClickEvent, scala.Unit]
   type MapViewKeyDownEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.MapViewKeyDownEvent, scala.Unit]
   type MapViewKeyUpEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.MapViewKeyUpEvent, scala.Unit]
   type MapViewLayerviewCreateErrorEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.MapViewLayerviewCreateErrorEvent, scala.Unit]
@@ -513,6 +517,10 @@ package object esri {
   type SceneViewFocusEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.SceneViewFocusEvent, scala.Unit]
   type SceneViewHoldEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.SceneViewHoldEvent, scala.Unit]
   type SceneViewImmediateClickEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.SceneViewImmediateClickEvent, scala.Unit]
+  type SceneViewImmediateDoubleClickEventHandler = js.Function1[
+    /* event */ typings.arcgisJsApi.esri.SceneViewImmediateDoubleClickEvent, 
+    scala.Unit
+  ]
   type SceneViewKeyDownEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.SceneViewKeyDownEvent, scala.Unit]
   type SceneViewKeyUpEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.SceneViewKeyUpEvent, scala.Unit]
   type SceneViewLayerviewCreateErrorEventHandler = js.Function1[
@@ -622,7 +630,6 @@ package object esri {
     scala.Unit
   ]
   type SpinnerViewModel = typings.arcgisJsApi.esri.Accessor
-  type StreamLayerEditsEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.StreamLayerEditsEvent, scala.Unit]
   type StreamLayerLayerviewCreateErrorEventHandler = js.Function1[
     /* event */ typings.arcgisJsApi.esri.StreamLayerLayerviewCreateErrorEvent, 
     scala.Unit
@@ -630,7 +637,6 @@ package object esri {
   type StreamLayerLayerviewCreateEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.StreamLayerLayerviewCreateEvent, scala.Unit]
   type StreamLayerLayerviewDestroyEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.StreamLayerLayerviewDestroyEvent, scala.Unit]
   type StreamLayerViewDataReceivedEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.StreamLayerViewDataReceivedEvent, scala.Unit]
-  type StreamLayerViewProperties = typings.arcgisJsApi.esri.LayerViewProperties
   type ThumbCreatedFunction = js.Function4[
     /* index */ scala.Double, 
     /* value */ scala.Double, 
@@ -642,6 +648,18 @@ package object esri {
     /* value */ scala.Double, 
     /* tickElement */ typings.std.HTMLElement, 
     /* labelElement */ js.UndefOr[typings.std.HTMLElement], 
+    scala.Unit
+  ]
+  type TileImageryLayerLayerviewCreateErrorEventHandler = js.Function1[
+    /* event */ typings.arcgisJsApi.esri.TileImageryLayerLayerviewCreateErrorEvent, 
+    scala.Unit
+  ]
+  type TileImageryLayerLayerviewCreateEventHandler = js.Function1[
+    /* event */ typings.arcgisJsApi.esri.TileImageryLayerLayerviewCreateEvent, 
+    scala.Unit
+  ]
+  type TileImageryLayerLayerviewDestroyEventHandler = js.Function1[
+    /* event */ typings.arcgisJsApi.esri.TileImageryLayerLayerviewDestroyEvent, 
     scala.Unit
   ]
   type TileLayerLayerviewCreateErrorEventHandler = js.Function1[
@@ -674,6 +692,7 @@ package object esri {
     scala.Unit
   ]
   type UnsupportedLayerProperties = typings.arcgisJsApi.esri.LayerProperties
+  type UpdateWorkflowProperties = typings.arcgisJsApi.esri.WorkflowProperties
   type VectorTileLayerLayerviewCreateErrorEventHandler = js.Function1[
     /* event */ typings.arcgisJsApi.esri.VectorTileLayerLayerviewCreateErrorEvent, 
     scala.Unit
@@ -693,6 +712,7 @@ package object esri {
   type ViewFocusEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.ViewFocusEvent, scala.Unit]
   type ViewHoldEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.ViewHoldEvent, scala.Unit]
   type ViewImmediateClickEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.ViewImmediateClickEvent, scala.Unit]
+  type ViewImmediateDoubleClickEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.ViewImmediateDoubleClickEvent, scala.Unit]
   type ViewKeyDownEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.ViewKeyDownEvent, scala.Unit]
   type ViewKeyUpEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.ViewKeyUpEvent, scala.Unit]
   type ViewLayerviewCreateErrorEventHandler = js.Function1[/* event */ typings.arcgisJsApi.esri.ViewLayerviewCreateErrorEvent, scala.Unit]

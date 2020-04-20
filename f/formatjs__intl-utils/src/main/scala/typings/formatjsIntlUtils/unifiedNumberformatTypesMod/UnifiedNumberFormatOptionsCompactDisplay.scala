@@ -12,10 +12,8 @@ trait UnifiedNumberFormatOptionsCompactDisplay extends js.Object
 
 object UnifiedNumberFormatOptionsCompactDisplay {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def long: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.long = "long".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.long]
   @scala.inline
-  def long: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.long = this.cast("long")
-  @scala.inline
-  def short: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.short = this.cast("short")
+  def short: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.short = "short".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.short]
 }
 

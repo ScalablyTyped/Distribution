@@ -34,7 +34,6 @@ object IGenericDimensionLayout {
     qMeta: INxMetaTitleDescriptionTag
   ): IGenericDimensionLayout = {
     val __obj = js.Dynamic.literal(qDim = qDim.asInstanceOf[js.Any], qDimInfos = qDimInfos.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGenericDimensionLayout]
   }
 }

@@ -14,7 +14,6 @@ object QueryState {
   @scala.inline
   def apply(e: Double, k: String, r: js.Array[RefinementCategory]): QueryState = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryState]
   }
 }

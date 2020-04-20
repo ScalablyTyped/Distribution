@@ -92,7 +92,7 @@ class OutputArea_ protected () extends Widget {
   /**
     * The kernel future associated with the output area.
     */
-  def future(): IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
+  def future: IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg] = js.native
   def future(value: IShellFuture[IExecuteRequestMsg, IExecuteReplyMsg]): js.Any = js.native
   /**
     * Handle an input request from a kernel.
@@ -112,6 +112,6 @@ class OutputArea_ protected () extends Widget {
   /**
     * A read-only sequence of the chidren widgets in the output area.
     */
-  def widgets(): js.Array[Widget] = js.native
+  def widgets: js.Array[Widget] = js.native
 }
 

@@ -14,14 +14,12 @@ trait TabsPosition extends js.Object
 
 object TabsPosition {
   @scala.inline
-  def bottom: typings.antd.antdStrings.bottom = this.cast("bottom")
+  def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
   @scala.inline
-  def left: typings.antd.antdStrings.left = this.cast("left")
+  def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
   @scala.inline
-  def right: typings.antd.antdStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.antd.antdStrings.top = this.cast("top")
+  def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
 }
 

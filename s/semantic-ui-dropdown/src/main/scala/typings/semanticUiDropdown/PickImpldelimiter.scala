@@ -14,7 +14,6 @@ object PickImpldelimiter {
   @scala.inline
   def apply(delimiter: Double | `false`): PickImpldelimiter = {
     val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldelimiter]
   }
 }

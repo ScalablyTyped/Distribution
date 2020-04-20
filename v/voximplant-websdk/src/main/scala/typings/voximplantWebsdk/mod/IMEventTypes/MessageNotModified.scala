@@ -27,7 +27,6 @@ object MessageNotModified {
   @scala.inline
   def apply(code: Double, message_id: String, to: String): MessageNotModified = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageNotModified]
   }
 }

@@ -24,20 +24,18 @@ trait OlDisplayType extends js.Object
 
 object OlDisplayType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAgent: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olAgent: `3` = this.cast(3)
+  def olDistList: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olDistList: `1` = this.cast(1)
+  def olForum: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olForum: `2` = this.cast(2)
+  def olOrganization: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olOrganization: `4` = this.cast(4)
+  def olPrivateDistList: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olPrivateDistList: `5` = this.cast(5)
+  def olRemoteUser: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olRemoteUser: `6` = this.cast(6)
-  @scala.inline
-  def olUser: `0` = this.cast(0)
+  def olUser: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -16,7 +16,6 @@ object BucketServerSideEncryptionConfiguration {
   @scala.inline
   def apply(rule: BucketServerSideEncryptionConfigurationRule): BucketServerSideEncryptionConfiguration = {
     val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BucketServerSideEncryptionConfiguration]
   }
 }

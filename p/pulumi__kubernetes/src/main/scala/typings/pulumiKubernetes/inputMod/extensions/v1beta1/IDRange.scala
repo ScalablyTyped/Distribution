@@ -24,7 +24,6 @@ object IDRange {
   @scala.inline
   def apply(max: Input[Double], min: Input[Double]): IDRange = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDRange]
   }
 }

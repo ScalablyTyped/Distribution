@@ -15,7 +15,6 @@ object EventData {
   @scala.inline
   def apply(data: AnonId, opts: AnonIcon): EventData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventData]
   }
 }

@@ -33,7 +33,6 @@ object PortalItemFetchRelatedItemsParams {
     relationshipType: String
   ): PortalItemFetchRelatedItemsParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relationshipType = relationshipType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PortalItemFetchRelatedItemsParams]
   }
 }

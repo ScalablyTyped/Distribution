@@ -33,7 +33,6 @@ object NumberRangeFilterBuilder {
     setTicks: Integer => NumberRangeFilterBuilder
   ): NumberRangeFilterBuilder = {
     val __obj = js.Dynamic.literal(setMaxValue = js.Any.fromFunction1(setMaxValue), setMinValue = js.Any.fromFunction1(setMinValue), setOrientation = js.Any.fromFunction1(setOrientation), setShowRangeValues = js.Any.fromFunction1(setShowRangeValues), setTicks = js.Any.fromFunction1(setTicks))
-  
     __obj.asInstanceOf[NumberRangeFilterBuilder]
   }
 }

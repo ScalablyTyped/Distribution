@@ -29,11 +29,11 @@ class ODataAttribute protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FODataAttribute: IModel = js.native
-  def attribute(): IAttribute = js.native
+  def attribute: IAttribute = js.native
   def attribute(newValue: IAttribute): js.Any = js.native
-  def attributeQualifiedName(): String = js.native
-  def containerAsODataEntity(): ODataEntity = js.native
-  def name(): String = js.native
+  def attributeQualifiedName: String = js.native
+  def containerAsODataEntity: ODataEntity = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
 }
 

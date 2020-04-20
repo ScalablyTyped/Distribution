@@ -3,6 +3,11 @@ package typings.reactFauxDom
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
+import typings.reactFauxDom.reactFauxDomStrings.animateFauxDOM
+import typings.reactFauxDom.reactFauxDomStrings.connectFauxDOM
+import typings.reactFauxDom.reactFauxDomStrings.drawFauxDOM
+import typings.reactFauxDom.reactFauxDomStrings.isAnimatingFauxDOM
+import typings.reactFauxDom.reactFauxDomStrings.stopAnimatingFauxDOM
 import typings.std.CSSStyleDeclaration
 import typings.std.Exclude
 import typings.std.HTMLElement
@@ -57,7 +62,16 @@ object mod extends js.Object {
   def compareDocumentPosition(): Double = js.native
   def createElement(nodeName: String): Element = js.native
   def createElementNS(namespace: String, nodeName: String): Element = js.native
-  def withFauxDOM[P](WrappedComponent: ComponentClass[P, ComponentState]): ComponentClass[Pick[P, Exclude[String, String]], ComponentState] = js.native
+  def withFauxDOM[P](WrappedComponent: ComponentClass[P, ComponentState]): ComponentClass[
+    Pick[
+      P, 
+      Exclude[
+        /* keyof P */ String, 
+        connectFauxDOM | drawFauxDOM | animateFauxDOM | stopAnimatingFauxDOM | isAnimatingFauxDOM
+      ]
+    ], 
+    ComponentState
+  ] = js.native
   @js.native
   object defaultView extends js.Object {
     def getComputedStyle(node: Element): AnonGetPropertyValue = js.native

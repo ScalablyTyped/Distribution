@@ -13,7 +13,6 @@ object IntlAvailability {
   @scala.inline
   def apply(dateTimeFormat: Boolean, numberFormat: Boolean): IntlAvailability = {
     val __obj = js.Dynamic.literal(dateTimeFormat = dateTimeFormat.asInstanceOf[js.Any], numberFormat = numberFormat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntlAvailability]
   }
 }

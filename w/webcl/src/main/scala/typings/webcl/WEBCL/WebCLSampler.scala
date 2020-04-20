@@ -14,7 +14,6 @@ object WebCLSampler {
   @scala.inline
   def apply(getInfo: SamplerInfo => js.Any, release: () => Unit): WebCLSampler = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), release = js.Any.fromFunction0(release))
-  
     __obj.asInstanceOf[WebCLSampler]
   }
 }

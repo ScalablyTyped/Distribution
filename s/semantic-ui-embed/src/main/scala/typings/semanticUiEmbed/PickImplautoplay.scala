@@ -14,7 +14,6 @@ object PickImplautoplay {
   @scala.inline
   def apply(autoplay: auto | Boolean): PickImplautoplay = {
     val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplautoplay]
   }
 }

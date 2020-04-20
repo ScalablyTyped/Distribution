@@ -12,7 +12,6 @@ object AnonEach {
   @scala.inline
   def apply[U](each: (U, AnonClose) => js.Any): AnonEach[U] = {
     val __obj = js.Dynamic.literal(each = js.Any.fromFunction2(each))
-  
     __obj.asInstanceOf[AnonEach[U]]
   }
 }

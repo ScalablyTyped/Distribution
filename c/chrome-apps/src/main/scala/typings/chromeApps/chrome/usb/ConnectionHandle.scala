@@ -24,7 +24,6 @@ object ConnectionHandle {
   @scala.inline
   def apply(handle: integer, productId: integer, vendorId: integer): ConnectionHandle = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], vendorId = vendorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionHandle]
   }
 }

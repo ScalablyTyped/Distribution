@@ -13,7 +13,6 @@ object AnonAppUuid {
   @scala.inline
   def apply(appUuid: String, windowName: String): AnonAppUuid = {
     val __obj = js.Dynamic.literal(appUuid = appUuid.asInstanceOf[js.Any], windowName = windowName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppUuid]
   }
 }

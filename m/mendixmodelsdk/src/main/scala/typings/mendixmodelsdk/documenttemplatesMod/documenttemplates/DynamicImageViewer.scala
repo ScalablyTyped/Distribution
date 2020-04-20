@@ -28,14 +28,14 @@ class DynamicImageViewer protected () extends EntityWidget {
   var model_FDynamicImageViewer: IModel = js.native
   def defaultImage(): js.Any = js.native
   def defaultImage(newValue: IImage): js.Any = js.native
-  def defaultImageQualifiedName(): String | Null = js.native
+  def defaultImageQualifiedName: String | Null = js.native
   @JSName("defaultImage")
-  def defaultImage_Union(): IImage | Null = js.native
-  def height(): Double = js.native
+  def defaultImage_Union: IImage | Null = js.native
+  def height: Double = js.native
   def height(newValue: Double): js.Any = js.native
-  def useThumbnail(): Boolean = js.native
+  def useThumbnail: Boolean = js.native
   def useThumbnail(newValue: Boolean): js.Any = js.native
-  def width(): Double = js.native
+  def width: Double = js.native
   def width(newValue: Double): js.Any = js.native
 }
 

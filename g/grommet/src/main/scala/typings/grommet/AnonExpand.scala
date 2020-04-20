@@ -14,7 +14,6 @@ object AnonExpand {
   @scala.inline
   def apply(expand: js.Array[String], onExpand: /* repeated */ js.Any => js.Any, property: String): AnonExpand = {
     val __obj = js.Dynamic.literal(expand = expand.asInstanceOf[js.Any], onExpand = js.Any.fromFunction1(onExpand), property = property.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExpand]
   }
 }

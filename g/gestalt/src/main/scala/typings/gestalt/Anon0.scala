@@ -15,7 +15,6 @@ object Anon0 {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLInputElement, Event_]): Anon0 = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon0]
   }
 }

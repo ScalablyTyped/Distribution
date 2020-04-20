@@ -18,14 +18,12 @@ trait XlWBATemplate extends js.Object
 
 object XlWBATemplate {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlWBATChart: `-4109` = -4109.asInstanceOf[`-4109`]
   @scala.inline
-  def xlWBATChart: `-4109` = this.cast(-4109)
+  def xlWBATExcel4IntlMacroSheet: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlWBATExcel4IntlMacroSheet: `4` = this.cast(4)
+  def xlWBATExcel4MacroSheet: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlWBATExcel4MacroSheet: `3` = this.cast(3)
-  @scala.inline
-  def xlWBATWorksheet: `-4167` = this.cast(-4167)
+  def xlWBATWorksheet: `-4167` = -4167.asInstanceOf[`-4167`]
 }
 

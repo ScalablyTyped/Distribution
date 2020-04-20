@@ -17,7 +17,6 @@ object mobileNumberstringSequenc {
   @scala.inline
   def apply(mobileNumber: String, sequence: Double): mobileNumberstringSequenc = {
     val __obj = js.Dynamic.literal(mobileNumber = mobileNumber.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[mobileNumberstringSequenc]
   }
 }

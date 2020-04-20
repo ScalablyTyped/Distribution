@@ -12,7 +12,6 @@ object AnonPDispAny {
   @scala.inline
   def apply(pDisp: js.Any): AnonPDispAny = {
     val __obj = js.Dynamic.literal(pDisp = pDisp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPDispAny]
   }
 }

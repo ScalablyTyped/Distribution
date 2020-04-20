@@ -18,7 +18,6 @@ object IMemberTypeResource {
   @scala.inline
   def apply(getTypes: () => js.Any): IMemberTypeResource = {
     val __obj = js.Dynamic.literal(getTypes = js.Any.fromFunction0(getTypes))
-  
     __obj.asInstanceOf[IMemberTypeResource]
   }
 }

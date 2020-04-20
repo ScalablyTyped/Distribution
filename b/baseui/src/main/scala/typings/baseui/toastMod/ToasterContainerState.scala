@@ -14,7 +14,6 @@ object ToasterContainerState {
   @scala.inline
   def apply(isMounted: Boolean, toasts: ReadonlyToastProps): ToasterContainerState = {
     val __obj = js.Dynamic.literal(isMounted = isMounted.asInstanceOf[js.Any], toasts = toasts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToasterContainerState]
   }
 }

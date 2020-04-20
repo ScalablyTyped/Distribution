@@ -24,7 +24,6 @@ object HumanTaskUiSummary {
   @scala.inline
   def apply(CreationTime: Timestamp, HumanTaskUiArn: HumanTaskUiArn, HumanTaskUiName: HumanTaskUiName): HumanTaskUiSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], HumanTaskUiArn = HumanTaskUiArn.asInstanceOf[js.Any], HumanTaskUiName = HumanTaskUiName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HumanTaskUiSummary]
   }
 }

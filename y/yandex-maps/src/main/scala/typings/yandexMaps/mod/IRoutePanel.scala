@@ -16,7 +16,6 @@ object IRoutePanel {
   @scala.inline
   def apply(getRoute: () => MultiRoute, options: IOptionManager, state: IDataManager, switchPoints: () => Unit): IRoutePanel = {
     val __obj = js.Dynamic.literal(getRoute = js.Any.fromFunction0(getRoute), options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], switchPoints = js.Any.fromFunction0(switchPoints))
-  
     __obj.asInstanceOf[IRoutePanel]
   }
 }

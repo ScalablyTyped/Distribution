@@ -1,5 +1,6 @@
 package typings.pulumiAws.spotFleetRequestMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.ec2.SpotFleetRequestLaunchSpecification
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -70,6 +71,10 @@ trait SpotFleetRequestState extends js.Object {
     */
   val spotRequestState: js.UndefOr[Input[String]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * The number of units to request. You can choose to set the
     * target capacity in terms of instances or a performance characteristic that is
     * important to your application workload, such as vCPUs, memory, or I/O.
@@ -115,6 +120,7 @@ object SpotFleetRequestState {
     replaceUnhealthyInstances: Input[Boolean] = null,
     spotPrice: Input[String] = null,
     spotRequestState: Input[String] = null,
+    tags: Input[StringDictionary[_]] = null,
     targetCapacity: Input[Double] = null,
     targetGroupArns: Input[js.Array[Input[String]]] = null,
     terminateInstancesWithExpiration: Input[Boolean] = null,
@@ -135,6 +141,7 @@ object SpotFleetRequestState {
     if (replaceUnhealthyInstances != null) __obj.updateDynamic("replaceUnhealthyInstances")(replaceUnhealthyInstances.asInstanceOf[js.Any])
     if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice.asInstanceOf[js.Any])
     if (spotRequestState != null) __obj.updateDynamic("spotRequestState")(spotRequestState.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (targetCapacity != null) __obj.updateDynamic("targetCapacity")(targetCapacity.asInstanceOf[js.Any])
     if (targetGroupArns != null) __obj.updateDynamic("targetGroupArns")(targetGroupArns.asInstanceOf[js.Any])
     if (terminateInstancesWithExpiration != null) __obj.updateDynamic("terminateInstancesWithExpiration")(terminateInstancesWithExpiration.asInstanceOf[js.Any])

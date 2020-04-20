@@ -17,20 +17,18 @@ trait ListType extends js.Object
 
 object ListType {
   @scala.inline
-  def Color: typings.gm.gmStrings.Color = this.cast("Color")
+  def Color: typings.gm.gmStrings.Color = "Color".asInstanceOf[typings.gm.gmStrings.Color]
   @scala.inline
-  def Delegate: typings.gm.gmStrings.Delegate = this.cast("Delegate")
+  def Delegate: typings.gm.gmStrings.Delegate = "Delegate".asInstanceOf[typings.gm.gmStrings.Delegate]
   @scala.inline
-  def Format: typings.gm.gmStrings.Format = this.cast("Format")
+  def Format: typings.gm.gmStrings.Format = "Format".asInstanceOf[typings.gm.gmStrings.Format]
   @scala.inline
-  def Magic: typings.gm.gmStrings.Magic = this.cast("Magic")
+  def Magic: typings.gm.gmStrings.Magic = "Magic".asInstanceOf[typings.gm.gmStrings.Magic]
   @scala.inline
-  def Module: typings.gm.gmStrings.Module = this.cast("Module")
+  def Module: typings.gm.gmStrings.Module = "Module".asInstanceOf[typings.gm.gmStrings.Module]
   @scala.inline
-  def Resource: typings.gm.gmStrings.Resource = this.cast("Resource")
+  def Resource: typings.gm.gmStrings.Resource = "Resource".asInstanceOf[typings.gm.gmStrings.Resource]
   @scala.inline
-  def Type: typings.gm.gmStrings.Type = this.cast("Type")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Type: typings.gm.gmStrings.Type = "Type".asInstanceOf[typings.gm.gmStrings.Type]
 }
 

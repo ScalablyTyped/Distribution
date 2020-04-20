@@ -26,7 +26,6 @@ object Typeofrr {
     remove_record_route: () => Double
   ): Typeofrr = {
     val __obj = js.Dynamic.literal(add_rr_param = js.Any.fromFunction1(add_rr_param), check_route_param = js.Any.fromFunction1(check_route_param), is_direction = js.Any.fromFunction1(is_direction), loose_route = js.Any.fromFunction0(loose_route), record_route = js.Any.fromFunction0(record_route), record_route_params = js.Any.fromFunction1(record_route_params), remove_record_route = js.Any.fromFunction0(remove_record_route))
-  
     __obj.asInstanceOf[Typeofrr]
   }
 }

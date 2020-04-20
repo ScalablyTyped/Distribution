@@ -14,14 +14,12 @@ trait ContentType extends js.Object
 
 object ContentType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def channel: typings.stremioAddonSdk.stremioAddonSdkStrings.channel = "channel".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.channel]
   @scala.inline
-  def channel: typings.stremioAddonSdk.stremioAddonSdkStrings.channel = this.cast("channel")
+  def movie: typings.stremioAddonSdk.stremioAddonSdkStrings.movie = "movie".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.movie]
   @scala.inline
-  def movie: typings.stremioAddonSdk.stremioAddonSdkStrings.movie = this.cast("movie")
+  def series: typings.stremioAddonSdk.stremioAddonSdkStrings.series = "series".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.series]
   @scala.inline
-  def series: typings.stremioAddonSdk.stremioAddonSdkStrings.series = this.cast("series")
-  @scala.inline
-  def tv: typings.stremioAddonSdk.stremioAddonSdkStrings.tv = this.cast("tv")
+  def tv: typings.stremioAddonSdk.stremioAddonSdkStrings.tv = "tv".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.tv]
 }
 

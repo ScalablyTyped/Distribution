@@ -25,7 +25,6 @@ object PersistenceLoadingOnInfo {
     loading_total_bytes: String
   ): PersistenceLoadingOnInfo = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any], loading_eta_seconds = loading_eta_seconds.asInstanceOf[js.Any], loading_loaded_bytes = loading_loaded_bytes.asInstanceOf[js.Any], loading_loaded_perc = loading_loaded_perc.asInstanceOf[js.Any], loading_start_time = loading_start_time.asInstanceOf[js.Any], loading_total_bytes = loading_total_bytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PersistenceLoadingOnInfo]
   }
 }

@@ -14,7 +14,6 @@ object ResultSet {
   @scala.inline
   def apply(insertId: Double, rows: ResultSetRowList, rowsAffected: Double): ResultSet = {
     val __obj = js.Dynamic.literal(insertId = insertId.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], rowsAffected = rowsAffected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultSet]
   }
 }

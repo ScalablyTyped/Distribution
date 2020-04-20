@@ -43,7 +43,6 @@ object RouteData {
     virtualRouterName: ResourceName
   ): RouteData = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteData]
   }
 }

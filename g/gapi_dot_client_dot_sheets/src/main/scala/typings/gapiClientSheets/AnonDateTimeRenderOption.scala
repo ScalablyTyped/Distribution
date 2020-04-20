@@ -29,9 +29,8 @@ trait AnonDateTimeRenderOption extends js.Object {
     * The major dimension that results should use.
     *
     * For example, if the spreadsheet data is: `A1=1,B1=2,A2=3,B2=4`,
-    * then requesting `range=A1:B2,majorDimension=ROWS` will return
-    * `[[1,2],[3,4]]`,
-    * whereas requesting `range=A1:B2,majorDimension=COLUMNS` will return
+    * then requesting `range=A1:B2,majorDimension=ROWS` returns `[[1,2],[3,4]]`,
+    * whereas requesting `range=A1:B2,majorDimension=COLUMNS` returns
     * `[[1,3],[2,4]]`.
     */
   var majorDimension: js.UndefOr[String] = js.undefined

@@ -41,68 +41,66 @@ trait Increment extends js.Object
 
 object Increment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def d: typings.prettyTime.prettyTimeStrings.d = "d".asInstanceOf[typings.prettyTime.prettyTimeStrings.d]
   @scala.inline
-  def d: typings.prettyTime.prettyTimeStrings.d = this.cast("d")
+  def day: typings.prettyTime.prettyTimeStrings.day = "day".asInstanceOf[typings.prettyTime.prettyTimeStrings.day]
   @scala.inline
-  def day: typings.prettyTime.prettyTimeStrings.day = this.cast("day")
+  def days: typings.prettyTime.prettyTimeStrings.days = "days".asInstanceOf[typings.prettyTime.prettyTimeStrings.days]
   @scala.inline
-  def days: typings.prettyTime.prettyTimeStrings.days = this.cast("days")
+  def h: typings.prettyTime.prettyTimeStrings.h = "h".asInstanceOf[typings.prettyTime.prettyTimeStrings.h]
   @scala.inline
-  def h: typings.prettyTime.prettyTimeStrings.h = this.cast("h")
+  def hour: typings.prettyTime.prettyTimeStrings.hour = "hour".asInstanceOf[typings.prettyTime.prettyTimeStrings.hour]
   @scala.inline
-  def hour: typings.prettyTime.prettyTimeStrings.hour = this.cast("hour")
+  def hours: typings.prettyTime.prettyTimeStrings.hours = "hours".asInstanceOf[typings.prettyTime.prettyTimeStrings.hours]
   @scala.inline
-  def hours: typings.prettyTime.prettyTimeStrings.hours = this.cast("hours")
+  def hr: typings.prettyTime.prettyTimeStrings.hr = "hr".asInstanceOf[typings.prettyTime.prettyTimeStrings.hr]
   @scala.inline
-  def hr: typings.prettyTime.prettyTimeStrings.hr = this.cast("hr")
+  def m: typings.prettyTime.prettyTimeStrings.m = "m".asInstanceOf[typings.prettyTime.prettyTimeStrings.m]
   @scala.inline
-  def m: typings.prettyTime.prettyTimeStrings.m = this.cast("m")
+  def micro: typings.prettyTime.prettyTimeStrings.micro = "micro".asInstanceOf[typings.prettyTime.prettyTimeStrings.micro]
   @scala.inline
-  def micro: typings.prettyTime.prettyTimeStrings.micro = this.cast("micro")
+  def microsecond: typings.prettyTime.prettyTimeStrings.microsecond = "microsecond".asInstanceOf[typings.prettyTime.prettyTimeStrings.microsecond]
   @scala.inline
-  def microsecond: typings.prettyTime.prettyTimeStrings.microsecond = this.cast("microsecond")
+  def microseconds: typings.prettyTime.prettyTimeStrings.microseconds = "microseconds".asInstanceOf[typings.prettyTime.prettyTimeStrings.microseconds]
   @scala.inline
-  def microseconds: typings.prettyTime.prettyTimeStrings.microseconds = this.cast("microseconds")
+  def milli: typings.prettyTime.prettyTimeStrings.milli = "milli".asInstanceOf[typings.prettyTime.prettyTimeStrings.milli]
   @scala.inline
-  def milli: typings.prettyTime.prettyTimeStrings.milli = this.cast("milli")
+  def millisecond: typings.prettyTime.prettyTimeStrings.millisecond = "millisecond".asInstanceOf[typings.prettyTime.prettyTimeStrings.millisecond]
   @scala.inline
-  def millisecond: typings.prettyTime.prettyTimeStrings.millisecond = this.cast("millisecond")
+  def milliseconds: typings.prettyTime.prettyTimeStrings.milliseconds = "milliseconds".asInstanceOf[typings.prettyTime.prettyTimeStrings.milliseconds]
   @scala.inline
-  def milliseconds: typings.prettyTime.prettyTimeStrings.milliseconds = this.cast("milliseconds")
+  def min: typings.prettyTime.prettyTimeStrings.min = "min".asInstanceOf[typings.prettyTime.prettyTimeStrings.min]
   @scala.inline
-  def min: typings.prettyTime.prettyTimeStrings.min = this.cast("min")
+  def minute: typings.prettyTime.prettyTimeStrings.minute = "minute".asInstanceOf[typings.prettyTime.prettyTimeStrings.minute]
   @scala.inline
-  def minute: typings.prettyTime.prettyTimeStrings.minute = this.cast("minute")
+  def minutes: typings.prettyTime.prettyTimeStrings.minutes = "minutes".asInstanceOf[typings.prettyTime.prettyTimeStrings.minutes]
   @scala.inline
-  def minutes: typings.prettyTime.prettyTimeStrings.minutes = this.cast("minutes")
+  def ms: typings.prettyTime.prettyTimeStrings.ms = "ms".asInstanceOf[typings.prettyTime.prettyTimeStrings.ms]
   @scala.inline
-  def ms: typings.prettyTime.prettyTimeStrings.ms = this.cast("ms")
+  def nano: typings.prettyTime.prettyTimeStrings.nano = "nano".asInstanceOf[typings.prettyTime.prettyTimeStrings.nano]
   @scala.inline
-  def nano: typings.prettyTime.prettyTimeStrings.nano = this.cast("nano")
+  def nanosecond: typings.prettyTime.prettyTimeStrings.nanosecond = "nanosecond".asInstanceOf[typings.prettyTime.prettyTimeStrings.nanosecond]
   @scala.inline
-  def nanosecond: typings.prettyTime.prettyTimeStrings.nanosecond = this.cast("nanosecond")
+  def nanoseconds: typings.prettyTime.prettyTimeStrings.nanoseconds = "nanoseconds".asInstanceOf[typings.prettyTime.prettyTimeStrings.nanoseconds]
   @scala.inline
-  def nanoseconds: typings.prettyTime.prettyTimeStrings.nanoseconds = this.cast("nanoseconds")
+  def ns: typings.prettyTime.prettyTimeStrings.ns = "ns".asInstanceOf[typings.prettyTime.prettyTimeStrings.ns]
   @scala.inline
-  def ns: typings.prettyTime.prettyTimeStrings.ns = this.cast("ns")
+  def s: typings.prettyTime.prettyTimeStrings.s = "s".asInstanceOf[typings.prettyTime.prettyTimeStrings.s]
   @scala.inline
-  def s: typings.prettyTime.prettyTimeStrings.s = this.cast("s")
+  def sec: typings.prettyTime.prettyTimeStrings.sec = "sec".asInstanceOf[typings.prettyTime.prettyTimeStrings.sec]
   @scala.inline
-  def sec: typings.prettyTime.prettyTimeStrings.sec = this.cast("sec")
+  def second: typings.prettyTime.prettyTimeStrings.second = "second".asInstanceOf[typings.prettyTime.prettyTimeStrings.second]
   @scala.inline
-  def second: typings.prettyTime.prettyTimeStrings.second = this.cast("second")
+  def seconds: typings.prettyTime.prettyTimeStrings.seconds = "seconds".asInstanceOf[typings.prettyTime.prettyTimeStrings.seconds]
   @scala.inline
-  def seconds: typings.prettyTime.prettyTimeStrings.seconds = this.cast("seconds")
+  def w: typings.prettyTime.prettyTimeStrings.w = "w".asInstanceOf[typings.prettyTime.prettyTimeStrings.w]
   @scala.inline
-  def w: typings.prettyTime.prettyTimeStrings.w = this.cast("w")
+  def week: typings.prettyTime.prettyTimeStrings.week = "week".asInstanceOf[typings.prettyTime.prettyTimeStrings.week]
   @scala.inline
-  def week: typings.prettyTime.prettyTimeStrings.week = this.cast("week")
+  def weeks: typings.prettyTime.prettyTimeStrings.weeks = "weeks".asInstanceOf[typings.prettyTime.prettyTimeStrings.weeks]
   @scala.inline
-  def weeks: typings.prettyTime.prettyTimeStrings.weeks = this.cast("weeks")
+  def wk: typings.prettyTime.prettyTimeStrings.wk = "wk".asInstanceOf[typings.prettyTime.prettyTimeStrings.wk]
   @scala.inline
-  def wk: typings.prettyTime.prettyTimeStrings.wk = this.cast("wk")
-  @scala.inline
-  def μs: typings.prettyTime.prettyTimeStrings.μs = this.cast("\u03BCs")
+  def μs: typings.prettyTime.prettyTimeStrings.μs = "\u03BCs".asInstanceOf[typings.prettyTime.prettyTimeStrings.μs]
 }
 

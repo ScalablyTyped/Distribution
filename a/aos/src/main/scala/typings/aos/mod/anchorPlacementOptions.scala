@@ -19,24 +19,22 @@ trait anchorPlacementOptions extends js.Object
 
 object anchorPlacementOptions {
   @scala.inline
-  def `bottom-bottom`: typings.aos.aosStrings.`bottom-bottom` = this.cast("bottom-bottom")
+  def `bottom-bottom`: typings.aos.aosStrings.`bottom-bottom` = "bottom-bottom".asInstanceOf[typings.aos.aosStrings.`bottom-bottom`]
   @scala.inline
-  def `bottom-center`: typings.aos.aosStrings.`bottom-center` = this.cast("bottom-center")
+  def `bottom-center`: typings.aos.aosStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.aos.aosStrings.`bottom-center`]
   @scala.inline
-  def `bottom-top`: typings.aos.aosStrings.`bottom-top` = this.cast("bottom-top")
+  def `bottom-top`: typings.aos.aosStrings.`bottom-top` = "bottom-top".asInstanceOf[typings.aos.aosStrings.`bottom-top`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `center-bottom`: typings.aos.aosStrings.`center-bottom` = "center-bottom".asInstanceOf[typings.aos.aosStrings.`center-bottom`]
   @scala.inline
-  def `center-bottom`: typings.aos.aosStrings.`center-bottom` = this.cast("center-bottom")
+  def `center-center`: typings.aos.aosStrings.`center-center` = "center-center".asInstanceOf[typings.aos.aosStrings.`center-center`]
   @scala.inline
-  def `center-center`: typings.aos.aosStrings.`center-center` = this.cast("center-center")
+  def `center-top`: typings.aos.aosStrings.`center-top` = "center-top".asInstanceOf[typings.aos.aosStrings.`center-top`]
   @scala.inline
-  def `center-top`: typings.aos.aosStrings.`center-top` = this.cast("center-top")
+  def `top-bottom`: typings.aos.aosStrings.`top-bottom` = "top-bottom".asInstanceOf[typings.aos.aosStrings.`top-bottom`]
   @scala.inline
-  def `top-bottom`: typings.aos.aosStrings.`top-bottom` = this.cast("top-bottom")
+  def `top-center`: typings.aos.aosStrings.`top-center` = "top-center".asInstanceOf[typings.aos.aosStrings.`top-center`]
   @scala.inline
-  def `top-center`: typings.aos.aosStrings.`top-center` = this.cast("top-center")
-  @scala.inline
-  def `top-top`: typings.aos.aosStrings.`top-top` = this.cast("top-top")
+  def `top-top`: typings.aos.aosStrings.`top-top` = "top-top".asInstanceOf[typings.aos.aosStrings.`top-top`]
 }
 

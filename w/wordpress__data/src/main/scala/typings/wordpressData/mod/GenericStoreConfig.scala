@@ -18,7 +18,6 @@ object GenericStoreConfig {
     subscribe: /* callback */ js.Function0[Unit] => js.Function0[Unit]
   ): GenericStoreConfig = {
     val __obj = js.Dynamic.literal(getActions = js.Any.fromFunction0(getActions), getSelectors = js.Any.fromFunction0(getSelectors), subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[GenericStoreConfig]
   }
 }

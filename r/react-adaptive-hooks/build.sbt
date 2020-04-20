@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-adaptive-hooks"
-version := "0.0-dt-20200331Z-c220a3"
+version := "0.0-dt-20200331Z-753e6d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

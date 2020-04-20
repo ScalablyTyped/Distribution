@@ -24,7 +24,6 @@ object CalculatedColumn {
   @scala.inline
   def apply(ColumnId: ColumnId, ColumnName: ColumnName, Expression: Expression): CalculatedColumn = {
     val __obj = js.Dynamic.literal(ColumnId = ColumnId.asInstanceOf[js.Any], ColumnName = ColumnName.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CalculatedColumn]
   }
 }

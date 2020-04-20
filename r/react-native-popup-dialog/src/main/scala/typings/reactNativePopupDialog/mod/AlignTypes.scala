@@ -13,12 +13,10 @@ trait AlignTypes extends js.Object
 
 object AlignTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.reactNativePopupDialog.reactNativePopupDialogStrings.center = "center".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.center]
   @scala.inline
-  def center: typings.reactNativePopupDialog.reactNativePopupDialogStrings.center = this.cast("center")
+  def left: typings.reactNativePopupDialog.reactNativePopupDialogStrings.left = "left".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.left]
   @scala.inline
-  def left: typings.reactNativePopupDialog.reactNativePopupDialogStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.reactNativePopupDialog.reactNativePopupDialogStrings.right = this.cast("right")
+  def right: typings.reactNativePopupDialog.reactNativePopupDialogStrings.right = "right".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.right]
 }
 

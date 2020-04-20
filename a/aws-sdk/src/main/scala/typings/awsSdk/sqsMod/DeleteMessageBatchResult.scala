@@ -20,7 +20,6 @@ object DeleteMessageBatchResult {
   @scala.inline
   def apply(Failed: BatchResultErrorEntryList, Successful: DeleteMessageBatchResultEntryList): DeleteMessageBatchResult = {
     val __obj = js.Dynamic.literal(Failed = Failed.asInstanceOf[js.Any], Successful = Successful.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMessageBatchResult]
   }
 }

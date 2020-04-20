@@ -16,7 +16,6 @@ object CreateApplicationResponse {
   @scala.inline
   def apply(ApplicationSummary: ApplicationSummary): CreateApplicationResponse = {
     val __obj = js.Dynamic.literal(ApplicationSummary = ApplicationSummary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateApplicationResponse]
   }
 }

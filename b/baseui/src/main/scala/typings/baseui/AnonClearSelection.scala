@@ -22,7 +22,6 @@ object AnonClearSelection {
     selection: js.Array[RowT]
   ): AnonClearSelection = {
     val __obj = js.Dynamic.literal(clearSelection = js.Any.fromFunction0(clearSelection), event = event.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClearSelection]
   }
 }

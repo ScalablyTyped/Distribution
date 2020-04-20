@@ -14,7 +14,6 @@ object PickImplevaluateScripts {
   @scala.inline
   def apply(evaluateScripts: once | Boolean): PickImplevaluateScripts = {
     val __obj = js.Dynamic.literal(evaluateScripts = evaluateScripts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplevaluateScripts]
   }
 }

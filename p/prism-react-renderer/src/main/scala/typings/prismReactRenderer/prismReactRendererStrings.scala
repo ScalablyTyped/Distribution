@@ -241,7 +241,7 @@ object prismReactRendererStrings {
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline
-  def `underline line-through`: `underline line-through` = "underline line-through".asInstanceOf[`underline line-through`]
+  def `underline line-through`: `underline line-through` = ("underline line-through").asInstanceOf[`underline line-through`]
   @scala.inline
   def wasm: wasm = "wasm".asInstanceOf[wasm]
   @scala.inline

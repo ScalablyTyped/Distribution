@@ -17,7 +17,6 @@ object DraggableEventUIParams {
   @scala.inline
   def apply(helper: JQuery, offset: AnonLeft, position: AnonLeft): DraggableEventUIParams = {
     val __obj = js.Dynamic.literal(helper = helper.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DraggableEventUIParams]
   }
 }

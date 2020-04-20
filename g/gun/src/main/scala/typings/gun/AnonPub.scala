@@ -14,7 +14,6 @@ object AnonPub {
   @scala.inline
   def apply(ok: `0`, pub: String): AnonPub = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any], pub = pub.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPub]
   }
 }

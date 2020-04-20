@@ -22,7 +22,6 @@ object Geometry {
     schema: Schema_[_]
   ): Geometry[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Geometry[T]]
   }
 }

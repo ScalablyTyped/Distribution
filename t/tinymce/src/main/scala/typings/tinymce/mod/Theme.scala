@@ -12,7 +12,6 @@ object Theme {
   @scala.inline
   def apply(renderUI: js.Object => js.Object): Theme = {
     val __obj = js.Dynamic.literal(renderUI = js.Any.fromFunction1(renderUI))
-  
     __obj.asInstanceOf[Theme]
   }
 }

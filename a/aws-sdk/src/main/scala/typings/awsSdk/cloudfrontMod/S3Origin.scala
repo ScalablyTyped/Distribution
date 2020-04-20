@@ -20,7 +20,6 @@ object S3Origin {
   @scala.inline
   def apply(DomainName: String, OriginAccessIdentity: String): S3Origin = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], OriginAccessIdentity = OriginAccessIdentity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3Origin]
   }
 }

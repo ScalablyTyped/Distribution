@@ -13,12 +13,10 @@ trait OpenMode extends js.Object
 
 object OpenMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def create_new: typings.twilioSync.twilioSyncStrings.create_new = "create_new".asInstanceOf[typings.twilioSync.twilioSyncStrings.create_new]
   @scala.inline
-  def create_new: typings.twilioSync.twilioSyncStrings.create_new = this.cast("create_new")
+  def open_existing: typings.twilioSync.twilioSyncStrings.open_existing = "open_existing".asInstanceOf[typings.twilioSync.twilioSyncStrings.open_existing]
   @scala.inline
-  def open_existing: typings.twilioSync.twilioSyncStrings.open_existing = this.cast("open_existing")
-  @scala.inline
-  def open_or_create: typings.twilioSync.twilioSyncStrings.open_or_create = this.cast("open_or_create")
+  def open_or_create: typings.twilioSync.twilioSyncStrings.open_or_create = "open_or_create".asInstanceOf[typings.twilioSync.twilioSyncStrings.open_or_create]
 }
 

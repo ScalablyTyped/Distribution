@@ -13,7 +13,6 @@ object AnonPosition {
   @scala.inline
   def apply(position: js.Tuple2[Double, Double], user_id: Double | String): AnonPosition = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPosition]
   }
 }

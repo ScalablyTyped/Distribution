@@ -24,20 +24,18 @@ trait BorderStyle extends js.Object
 
 object BorderStyle {
   @scala.inline
-  def Bold: bold = this.cast("bold")
+  def Bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
-  def Classic: classic = this.cast("classic")
+  def Classic: classic = "classic".asInstanceOf[classic]
   @scala.inline
-  def Double: double = this.cast("double")
+  def Double: double = "double".asInstanceOf[double]
   @scala.inline
-  def DoubleSingle: doubleSingle = this.cast("doubleSingle")
+  def DoubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
   @scala.inline
-  def Round: round = this.cast("round")
+  def Round: round = "round".asInstanceOf[round]
   @scala.inline
-  def Single: single = this.cast("single")
+  def Single: single = "single".asInstanceOf[single]
   @scala.inline
-  def SingleDouble: singleDouble = this.cast("singleDouble")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SingleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
 }
 

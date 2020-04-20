@@ -13,7 +13,6 @@ object UncheckedSnapshot {
   @scala.inline
   def apply(filePath: String, keys: js.Array[String]): UncheckedSnapshot = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UncheckedSnapshot]
   }
 }

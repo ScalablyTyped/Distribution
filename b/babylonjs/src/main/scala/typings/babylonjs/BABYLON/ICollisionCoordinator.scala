@@ -36,7 +36,6 @@ object ICollisionCoordinator {
     init: Scene => Unit
   ): ICollisionCoordinator = {
     val __obj = js.Dynamic.literal(createCollider = js.Any.fromFunction0(createCollider), getNewPosition = js.Any.fromFunction7(getNewPosition), init = js.Any.fromFunction1(init))
-  
     __obj.asInstanceOf[ICollisionCoordinator]
   }
 }

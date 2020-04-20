@@ -11,7 +11,7 @@ trait MigratorConfig extends js.Object {
   var disableTransactions: js.UndefOr[Boolean] = js.undefined
   var extension: js.UndefOr[String] = js.undefined
   var loadExtensions: js.UndefOr[js.Array[String]] = js.undefined
-  var migrationSource: js.UndefOr[js.Any] = js.undefined
+  var migrationSource: js.UndefOr[MigrationSource[_]] = js.undefined
   var schemaName: js.UndefOr[String] = js.undefined
   var sortDirsSeparately: js.UndefOr[Boolean] = js.undefined
   var stub: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object MigratorConfig {
     disableTransactions: js.UndefOr[Boolean] = js.undefined,
     extension: String = null,
     loadExtensions: js.Array[String] = null,
-    migrationSource: js.Any = null,
+    migrationSource: MigrationSource[_] = null,
     schemaName: String = null,
     sortDirsSeparately: js.UndefOr[Boolean] = js.undefined,
     stub: String = null,

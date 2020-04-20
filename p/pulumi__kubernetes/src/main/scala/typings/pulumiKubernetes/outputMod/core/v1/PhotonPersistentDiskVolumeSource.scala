@@ -23,7 +23,6 @@ object PhotonPersistentDiskVolumeSource {
   @scala.inline
   def apply(fsType: String, pdID: String): PhotonPersistentDiskVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], pdID = pdID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhotonPersistentDiskVolumeSource]
   }
 }

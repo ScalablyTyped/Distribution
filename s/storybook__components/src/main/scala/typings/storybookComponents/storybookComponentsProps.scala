@@ -17,7 +17,7 @@ trait storybookComponentsProps {
   def BadgeProps: typings.storybookComponents.badgeMod.BadgeProps.type = typings.storybookComponents.badgeMod.BadgeProps
   type BadgeProps = typings.storybookComponents.badgeMod.BadgeProps
   @scala.inline
-  def ColorItemProps: ColorProps.type = typings.storybookComponents.colorPaletteMod.ColorProps
+  def ColorItemProps: ColorProps.type = ColorProps
   type ColorItemProps = ColorProps
   @scala.inline
   def DescriptionProps: typings.storybookComponents.descriptionMod.DescriptionProps.type = typings.storybookComponents.descriptionMod.DescriptionProps
@@ -99,10 +99,10 @@ trait storybookComponentsProps {
   def TypesetProps: typings.storybookComponents.typesetMod.TypesetProps.type = typings.storybookComponents.typesetMod.TypesetProps
   type TypesetProps = typings.storybookComponents.typesetMod.TypesetProps
   @scala.inline
-  def WithToolTipStateProps: WithTooltipPurePropsstart.type = typings.storybookComponents.WithTooltipPurePropsstart
+  def WithToolTipStateProps: WithTooltipPurePropsstart.type = WithTooltipPurePropsstart
   type WithToolTipStateProps = WithTooltipPurePropsstart
   @scala.inline
-  def WithTooltipProps: WithTooltipPurePropsstart.type = typings.storybookComponents.WithTooltipPurePropsstart
+  def WithTooltipProps: WithTooltipPurePropsstart.type = WithTooltipPurePropsstart
   type WithTooltipProps = WithTooltipPurePropsstart
   @scala.inline
   def WithTooltipPureProps: typings.storybookComponents.withTooltipMod.WithTooltipPureProps.type = typings.storybookComponents.withTooltipMod.WithTooltipPureProps

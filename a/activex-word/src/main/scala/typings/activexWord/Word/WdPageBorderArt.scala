@@ -338,334 +338,332 @@ trait WdPageBorderArt extends js.Object
 
 object WdPageBorderArt {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdArtApples: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdArtApples: `1` = this.cast(1)
+  def wdArtArchedScallops: `97` = 97.asInstanceOf[`97`]
   @scala.inline
-  def wdArtArchedScallops: `97` = this.cast(97)
+  def wdArtBabyPacifier: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def wdArtBabyPacifier: `70` = this.cast(70)
+  def wdArtBabyRattle: `71` = 71.asInstanceOf[`71`]
   @scala.inline
-  def wdArtBabyRattle: `71` = this.cast(71)
+  def wdArtBalloons3Colors: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdArtBalloons3Colors: `11` = this.cast(11)
+  def wdArtBalloonsHotAir: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdArtBalloonsHotAir: `12` = this.cast(12)
+  def wdArtBasicBlackDashes: `155` = 155.asInstanceOf[`155`]
   @scala.inline
-  def wdArtBasicBlackDashes: `155` = this.cast(155)
+  def wdArtBasicBlackDots: `156` = 156.asInstanceOf[`156`]
   @scala.inline
-  def wdArtBasicBlackDots: `156` = this.cast(156)
+  def wdArtBasicBlackSquares: `154` = 154.asInstanceOf[`154`]
   @scala.inline
-  def wdArtBasicBlackSquares: `154` = this.cast(154)
+  def wdArtBasicThinLines: `151` = 151.asInstanceOf[`151`]
   @scala.inline
-  def wdArtBasicThinLines: `151` = this.cast(151)
+  def wdArtBasicWhiteDashes: `152` = 152.asInstanceOf[`152`]
   @scala.inline
-  def wdArtBasicWhiteDashes: `152` = this.cast(152)
+  def wdArtBasicWhiteDots: `147` = 147.asInstanceOf[`147`]
   @scala.inline
-  def wdArtBasicWhiteDots: `147` = this.cast(147)
+  def wdArtBasicWhiteSquares: `153` = 153.asInstanceOf[`153`]
   @scala.inline
-  def wdArtBasicWhiteSquares: `153` = this.cast(153)
+  def wdArtBasicWideInline: `150` = 150.asInstanceOf[`150`]
   @scala.inline
-  def wdArtBasicWideInline: `150` = this.cast(150)
+  def wdArtBasicWideMidline: `148` = 148.asInstanceOf[`148`]
   @scala.inline
-  def wdArtBasicWideMidline: `148` = this.cast(148)
+  def wdArtBasicWideOutline: `149` = 149.asInstanceOf[`149`]
   @scala.inline
-  def wdArtBasicWideOutline: `149` = this.cast(149)
+  def wdArtBats: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def wdArtBats: `37` = this.cast(37)
+  def wdArtBirds: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def wdArtBirds: `102` = this.cast(102)
+  def wdArtBirdsFlight: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def wdArtBirdsFlight: `35` = this.cast(35)
+  def wdArtCabins: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def wdArtCabins: `72` = this.cast(72)
+  def wdArtCakeSlice: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdArtCakeSlice: `3` = this.cast(3)
+  def wdArtCandyCorn: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdArtCandyCorn: `4` = this.cast(4)
+  def wdArtCelticKnotwork: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def wdArtCelticKnotwork: `99` = this.cast(99)
+  def wdArtCertificateBanner: `158` = 158.asInstanceOf[`158`]
   @scala.inline
-  def wdArtCertificateBanner: `158` = this.cast(158)
+  def wdArtChainLink: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def wdArtChainLink: `128` = this.cast(128)
+  def wdArtChampagneBottle: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdArtChampagneBottle: `6` = this.cast(6)
+  def wdArtCheckedBarBlack: `145` = 145.asInstanceOf[`145`]
   @scala.inline
-  def wdArtCheckedBarBlack: `145` = this.cast(145)
+  def wdArtCheckedBarColor: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def wdArtCheckedBarColor: `61` = this.cast(61)
+  def wdArtCheckered: `144` = 144.asInstanceOf[`144`]
   @scala.inline
-  def wdArtCheckered: `144` = this.cast(144)
+  def wdArtChristmasTree: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdArtChristmasTree: `8` = this.cast(8)
+  def wdArtCirclesLines: `91` = 91.asInstanceOf[`91`]
   @scala.inline
-  def wdArtCirclesLines: `91` = this.cast(91)
+  def wdArtCirclesRectangles: `140` = 140.asInstanceOf[`140`]
   @scala.inline
-  def wdArtCirclesRectangles: `140` = this.cast(140)
+  def wdArtClassicalWave: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def wdArtClassicalWave: `56` = this.cast(56)
+  def wdArtClocks: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def wdArtClocks: `27` = this.cast(27)
+  def wdArtCompass: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def wdArtCompass: `54` = this.cast(54)
+  def wdArtConfetti: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def wdArtConfetti: `31` = this.cast(31)
+  def wdArtConfettiGrays: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def wdArtConfettiGrays: `115` = this.cast(115)
+  def wdArtConfettiOutline: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def wdArtConfettiOutline: `116` = this.cast(116)
+  def wdArtConfettiStreamers: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdArtConfettiStreamers: `14` = this.cast(14)
+  def wdArtConfettiWhite: `117` = 117.asInstanceOf[`117`]
   @scala.inline
-  def wdArtConfettiWhite: `117` = this.cast(117)
+  def wdArtCornerTriangles: `141` = 141.asInstanceOf[`141`]
   @scala.inline
-  def wdArtCornerTriangles: `141` = this.cast(141)
+  def wdArtCouponCutoutDashes: `163` = 163.asInstanceOf[`163`]
   @scala.inline
-  def wdArtCouponCutoutDashes: `163` = this.cast(163)
+  def wdArtCouponCutoutDots: `164` = 164.asInstanceOf[`164`]
   @scala.inline
-  def wdArtCouponCutoutDots: `164` = this.cast(164)
+  def wdArtCrazyMaze: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def wdArtCrazyMaze: `100` = this.cast(100)
+  def wdArtCreaturesButterfly: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def wdArtCreaturesButterfly: `32` = this.cast(32)
+  def wdArtCreaturesFish: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def wdArtCreaturesFish: `34` = this.cast(34)
+  def wdArtCreaturesInsects: `142` = 142.asInstanceOf[`142`]
   @scala.inline
-  def wdArtCreaturesInsects: `142` = this.cast(142)
+  def wdArtCreaturesLadyBug: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def wdArtCreaturesLadyBug: `33` = this.cast(33)
+  def wdArtCrossStitch: `138` = 138.asInstanceOf[`138`]
   @scala.inline
-  def wdArtCrossStitch: `138` = this.cast(138)
+  def wdArtCup: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def wdArtCup: `67` = this.cast(67)
+  def wdArtDecoArch: `89` = 89.asInstanceOf[`89`]
   @scala.inline
-  def wdArtDecoArch: `89` = this.cast(89)
+  def wdArtDecoArchColor: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def wdArtDecoArchColor: `50` = this.cast(50)
+  def wdArtDecoBlocks: `90` = 90.asInstanceOf[`90`]
   @scala.inline
-  def wdArtDecoBlocks: `90` = this.cast(90)
+  def wdArtDiamondsGray: `88` = 88.asInstanceOf[`88`]
   @scala.inline
-  def wdArtDiamondsGray: `88` = this.cast(88)
+  def wdArtDoubleD: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def wdArtDoubleD: `55` = this.cast(55)
+  def wdArtDoubleDiamonds: `127` = 127.asInstanceOf[`127`]
   @scala.inline
-  def wdArtDoubleDiamonds: `127` = this.cast(127)
+  def wdArtEarth1: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def wdArtEarth1: `22` = this.cast(22)
+  def wdArtEarth2: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def wdArtEarth2: `21` = this.cast(21)
+  def wdArtEclipsingSquares1: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def wdArtEclipsingSquares1: `101` = this.cast(101)
+  def wdArtEclipsingSquares2: `86` = 86.asInstanceOf[`86`]
   @scala.inline
-  def wdArtEclipsingSquares2: `86` = this.cast(86)
+  def wdArtEggsBlack: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def wdArtEggsBlack: `66` = this.cast(66)
+  def wdArtFans: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def wdArtFans: `51` = this.cast(51)
+  def wdArtFilm: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def wdArtFilm: `52` = this.cast(52)
+  def wdArtFirecrackers: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def wdArtFirecrackers: `28` = this.cast(28)
+  def wdArtFlowersBlockPrint: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdArtFlowersBlockPrint: `49` = this.cast(49)
+  def wdArtFlowersDaisies: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def wdArtFlowersDaisies: `48` = this.cast(48)
+  def wdArtFlowersModern1: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def wdArtFlowersModern1: `45` = this.cast(45)
+  def wdArtFlowersModern2: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def wdArtFlowersModern2: `44` = this.cast(44)
+  def wdArtFlowersPansy: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def wdArtFlowersPansy: `43` = this.cast(43)
+  def wdArtFlowersRedRose: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def wdArtFlowersRedRose: `39` = this.cast(39)
+  def wdArtFlowersRoses: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def wdArtFlowersRoses: `38` = this.cast(38)
+  def wdArtFlowersTeacup: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def wdArtFlowersTeacup: `103` = this.cast(103)
+  def wdArtFlowersTiny: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def wdArtFlowersTiny: `42` = this.cast(42)
+  def wdArtGems: `139` = 139.asInstanceOf[`139`]
   @scala.inline
-  def wdArtGems: `139` = this.cast(139)
+  def wdArtGingerbreadMan: `69` = 69.asInstanceOf[`69`]
   @scala.inline
-  def wdArtGingerbreadMan: `69` = this.cast(69)
+  def wdArtGradient: `122` = 122.asInstanceOf[`122`]
   @scala.inline
-  def wdArtGradient: `122` = this.cast(122)
+  def wdArtHandmade1: `159` = 159.asInstanceOf[`159`]
   @scala.inline
-  def wdArtHandmade1: `159` = this.cast(159)
+  def wdArtHandmade2: `160` = 160.asInstanceOf[`160`]
   @scala.inline
-  def wdArtHandmade2: `160` = this.cast(160)
+  def wdArtHeartBalloon: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdArtHeartBalloon: `16` = this.cast(16)
+  def wdArtHeartGray: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def wdArtHeartGray: `68` = this.cast(68)
+  def wdArtHearts: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdArtHearts: `15` = this.cast(15)
+  def wdArtHeebieJeebies: `120` = 120.asInstanceOf[`120`]
   @scala.inline
-  def wdArtHeebieJeebies: `120` = this.cast(120)
+  def wdArtHolly: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def wdArtHolly: `41` = this.cast(41)
+  def wdArtHouseFunky: `73` = 73.asInstanceOf[`73`]
   @scala.inline
-  def wdArtHouseFunky: `73` = this.cast(73)
+  def wdArtHypnotic: `87` = 87.asInstanceOf[`87`]
   @scala.inline
-  def wdArtHypnotic: `87` = this.cast(87)
+  def wdArtIceCreamCones: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdArtIceCreamCones: `5` = this.cast(5)
+  def wdArtLightBulb: `121` = 121.asInstanceOf[`121`]
   @scala.inline
-  def wdArtLightBulb: `121` = this.cast(121)
+  def wdArtLightning1: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def wdArtLightning1: `53` = this.cast(53)
+  def wdArtLightning2: `119` = 119.asInstanceOf[`119`]
   @scala.inline
-  def wdArtLightning2: `119` = this.cast(119)
+  def wdArtMapPins: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def wdArtMapPins: `30` = this.cast(30)
+  def wdArtMapleLeaf: `81` = 81.asInstanceOf[`81`]
   @scala.inline
-  def wdArtMapleLeaf: `81` = this.cast(81)
+  def wdArtMapleMuffins: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdArtMapleMuffins: `2` = this.cast(2)
+  def wdArtMarquee: `146` = 146.asInstanceOf[`146`]
   @scala.inline
-  def wdArtMarquee: `146` = this.cast(146)
+  def wdArtMarqueeToothed: `131` = 131.asInstanceOf[`131`]
   @scala.inline
-  def wdArtMarqueeToothed: `131` = this.cast(131)
+  def wdArtMoons: `125` = 125.asInstanceOf[`125`]
   @scala.inline
-  def wdArtMoons: `125` = this.cast(125)
+  def wdArtMosaic: `118` = 118.asInstanceOf[`118`]
   @scala.inline
-  def wdArtMosaic: `118` = this.cast(118)
+  def wdArtMusicNotes: `79` = 79.asInstanceOf[`79`]
   @scala.inline
-  def wdArtMusicNotes: `79` = this.cast(79)
+  def wdArtNorthwest: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def wdArtNorthwest: `104` = this.cast(104)
+  def wdArtOvals: `126` = 126.asInstanceOf[`126`]
   @scala.inline
-  def wdArtOvals: `126` = this.cast(126)
+  def wdArtPackages: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def wdArtPackages: `26` = this.cast(26)
+  def wdArtPalmsBlack: `80` = 80.asInstanceOf[`80`]
   @scala.inline
-  def wdArtPalmsBlack: `80` = this.cast(80)
+  def wdArtPalmsColor: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdArtPalmsColor: `10` = this.cast(10)
+  def wdArtPaperClips: `82` = 82.asInstanceOf[`82`]
   @scala.inline
-  def wdArtPaperClips: `82` = this.cast(82)
+  def wdArtPapyrus: `92` = 92.asInstanceOf[`92`]
   @scala.inline
-  def wdArtPapyrus: `92` = this.cast(92)
+  def wdArtPartyFavor: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdArtPartyFavor: `13` = this.cast(13)
+  def wdArtPartyGlass: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdArtPartyGlass: `7` = this.cast(7)
+  def wdArtPencils: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def wdArtPencils: `25` = this.cast(25)
+  def wdArtPeople: `84` = 84.asInstanceOf[`84`]
   @scala.inline
-  def wdArtPeople: `84` = this.cast(84)
+  def wdArtPeopleHats: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def wdArtPeopleHats: `23` = this.cast(23)
+  def wdArtPeopleWaving: `85` = 85.asInstanceOf[`85`]
   @scala.inline
-  def wdArtPeopleWaving: `85` = this.cast(85)
+  def wdArtPoinsettias: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def wdArtPoinsettias: `40` = this.cast(40)
+  def wdArtPostageStamp: `135` = 135.asInstanceOf[`135`]
   @scala.inline
-  def wdArtPostageStamp: `135` = this.cast(135)
+  def wdArtPumpkin1: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def wdArtPumpkin1: `65` = this.cast(65)
+  def wdArtPushPinNote1: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def wdArtPushPinNote1: `63` = this.cast(63)
+  def wdArtPushPinNote2: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def wdArtPushPinNote2: `64` = this.cast(64)
+  def wdArtPyramids: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def wdArtPyramids: `113` = this.cast(113)
+  def wdArtPyramidsAbove: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def wdArtPyramidsAbove: `114` = this.cast(114)
+  def wdArtQuadrants: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def wdArtQuadrants: `60` = this.cast(60)
+  def wdArtRings: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def wdArtRings: `29` = this.cast(29)
+  def wdArtSafari: `98` = 98.asInstanceOf[`98`]
   @scala.inline
-  def wdArtSafari: `98` = this.cast(98)
+  def wdArtSawtooth: `133` = 133.asInstanceOf[`133`]
   @scala.inline
-  def wdArtSawtooth: `133` = this.cast(133)
+  def wdArtSawtoothGray: `134` = 134.asInstanceOf[`134`]
   @scala.inline
-  def wdArtSawtoothGray: `134` = this.cast(134)
+  def wdArtScaredCat: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def wdArtScaredCat: `36` = this.cast(36)
+  def wdArtSeattle: `78` = 78.asInstanceOf[`78`]
   @scala.inline
-  def wdArtSeattle: `78` = this.cast(78)
+  def wdArtShadowedSquares: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def wdArtShadowedSquares: `57` = this.cast(57)
+  def wdArtSharksTeeth: `132` = 132.asInstanceOf[`132`]
   @scala.inline
-  def wdArtSharksTeeth: `132` = this.cast(132)
+  def wdArtShorebirdTracks: `83` = 83.asInstanceOf[`83`]
   @scala.inline
-  def wdArtShorebirdTracks: `83` = this.cast(83)
+  def wdArtSkyrocket: `77` = 77.asInstanceOf[`77`]
   @scala.inline
-  def wdArtSkyrocket: `77` = this.cast(77)
+  def wdArtSnowflakeFancy: `76` = 76.asInstanceOf[`76`]
   @scala.inline
-  def wdArtSnowflakeFancy: `76` = this.cast(76)
+  def wdArtSnowflakes: `75` = 75.asInstanceOf[`75`]
   @scala.inline
-  def wdArtSnowflakes: `75` = this.cast(75)
+  def wdArtSombrero: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def wdArtSombrero: `24` = this.cast(24)
+  def wdArtSouthwest: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def wdArtSouthwest: `105` = this.cast(105)
+  def wdArtStars: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdArtStars: `19` = this.cast(19)
+  def wdArtStars3D: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdArtStars3D: `17` = this.cast(17)
+  def wdArtStarsBlack: `74` = 74.asInstanceOf[`74`]
   @scala.inline
-  def wdArtStarsBlack: `74` = this.cast(74)
+  def wdArtStarsShadowed: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdArtStarsShadowed: `18` = this.cast(18)
+  def wdArtStarsTop: `157` = 157.asInstanceOf[`157`]
   @scala.inline
-  def wdArtStarsTop: `157` = this.cast(157)
+  def wdArtSun: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdArtSun: `20` = this.cast(20)
+  def wdArtSwirligig: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def wdArtSwirligig: `62` = this.cast(62)
+  def wdArtTornPaper: `161` = 161.asInstanceOf[`161`]
   @scala.inline
-  def wdArtTornPaper: `161` = this.cast(161)
+  def wdArtTornPaperBlack: `162` = 162.asInstanceOf[`162`]
   @scala.inline
-  def wdArtTornPaperBlack: `162` = this.cast(162)
+  def wdArtTrees: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdArtTrees: `9` = this.cast(9)
+  def wdArtTriangleParty: `123` = 123.asInstanceOf[`123`]
   @scala.inline
-  def wdArtTriangleParty: `123` = this.cast(123)
+  def wdArtTriangles: `129` = 129.asInstanceOf[`129`]
   @scala.inline
-  def wdArtTriangles: `129` = this.cast(129)
+  def wdArtTribal1: `130` = 130.asInstanceOf[`130`]
   @scala.inline
-  def wdArtTribal1: `130` = this.cast(130)
+  def wdArtTribal2: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def wdArtTribal2: `109` = this.cast(109)
+  def wdArtTribal3: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def wdArtTribal3: `108` = this.cast(108)
+  def wdArtTribal4: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def wdArtTribal4: `107` = this.cast(107)
+  def wdArtTribal5: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def wdArtTribal5: `110` = this.cast(110)
+  def wdArtTribal6: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def wdArtTribal6: `106` = this.cast(106)
+  def wdArtTwistedLines1: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def wdArtTwistedLines1: `58` = this.cast(58)
+  def wdArtTwistedLines2: `124` = 124.asInstanceOf[`124`]
   @scala.inline
-  def wdArtTwistedLines2: `124` = this.cast(124)
+  def wdArtVine: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def wdArtVine: `47` = this.cast(47)
+  def wdArtWaveline: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def wdArtWaveline: `59` = this.cast(59)
+  def wdArtWeavingAngles: `96` = 96.asInstanceOf[`96`]
   @scala.inline
-  def wdArtWeavingAngles: `96` = this.cast(96)
+  def wdArtWeavingBraid: `94` = 94.asInstanceOf[`94`]
   @scala.inline
-  def wdArtWeavingBraid: `94` = this.cast(94)
+  def wdArtWeavingRibbon: `95` = 95.asInstanceOf[`95`]
   @scala.inline
-  def wdArtWeavingRibbon: `95` = this.cast(95)
+  def wdArtWeavingStrips: `136` = 136.asInstanceOf[`136`]
   @scala.inline
-  def wdArtWeavingStrips: `136` = this.cast(136)
+  def wdArtWhiteFlowers: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def wdArtWhiteFlowers: `46` = this.cast(46)
+  def wdArtWoodwork: `93` = 93.asInstanceOf[`93`]
   @scala.inline
-  def wdArtWoodwork: `93` = this.cast(93)
+  def wdArtXIllusions: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def wdArtXIllusions: `111` = this.cast(111)
+  def wdArtZanyTriangles: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def wdArtZanyTriangles: `112` = this.cast(112)
+  def wdArtZigZag: `137` = 137.asInstanceOf[`137`]
   @scala.inline
-  def wdArtZigZag: `137` = this.cast(137)
-  @scala.inline
-  def wdArtZigZagStitch: `143` = this.cast(143)
+  def wdArtZigZagStitch: `143` = 143.asInstanceOf[`143`]
 }
 

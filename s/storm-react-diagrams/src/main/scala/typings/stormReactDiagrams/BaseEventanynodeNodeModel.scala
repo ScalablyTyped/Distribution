@@ -28,7 +28,6 @@ object BaseEventanynodeNodeModel {
     stopPropagation: () => js.Any
   ): BaseEventanynodeNodeModel = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], firing = firing.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isCreated = isCreated.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation))
-  
     __obj.asInstanceOf[BaseEventanynodeNodeModel]
   }
 }

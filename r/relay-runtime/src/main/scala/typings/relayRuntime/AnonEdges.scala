@@ -19,7 +19,6 @@ object AnonEdges {
   @scala.inline
   def apply[TEdge](args: Variables, edges: js.Array[TEdge], kind: fetch, pageInfo: PageInfo): AnonEdges[TEdge] = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], pageInfo = pageInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEdges[TEdge]]
   }
 }

@@ -609,9 +609,9 @@ trait Underscore[T, V] extends js.Object {
     * Wrapped type `object`.
     * @see _.pick
     **/
-  def pick[K /* <: String */](keys: K*): Pick[V, K] = js.native
-  def pick[K /* <: String */](keys: js.Array[K]): Pick[V, K] = js.native
-  def pick[K /* <: String */](
+  def pick[K /* <: /* keyof V */ String */](keys: K*): Pick[V, K] = js.native
+  def pick[K /* <: /* keyof V */ String */](keys: js.Array[K]): Pick[V, K] = js.native
+  def pick[K /* <: /* keyof V */ String */](
     predicate: ObjectIterator[
       /* import warning: importer.ImportType#apply Failed type conversion: V[K] */ js.Any, 
       Boolean

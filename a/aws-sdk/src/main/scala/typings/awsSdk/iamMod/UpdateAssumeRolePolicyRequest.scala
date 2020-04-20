@@ -20,7 +20,6 @@ object UpdateAssumeRolePolicyRequest {
   @scala.inline
   def apply(PolicyDocument: policyDocumentType, RoleName: roleNameType): UpdateAssumeRolePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyDocument = PolicyDocument.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateAssumeRolePolicyRequest]
   }
 }

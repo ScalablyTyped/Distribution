@@ -13,7 +13,6 @@ object ReleaseCreatedEvent {
   @scala.inline
   def apply(project: ProjectReference, release: Release): ReleaseCreatedEvent = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseCreatedEvent]
   }
 }

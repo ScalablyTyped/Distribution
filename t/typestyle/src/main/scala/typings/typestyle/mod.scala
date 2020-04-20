@@ -1,6 +1,7 @@
 package typings.typestyle
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.typestyle.typesMod.FontFace
 import typings.typestyle.typesMod.KeyFrames
@@ -39,7 +40,7 @@ object mod extends js.Object {
   def setStylesTarget(tag: StylesTarget): Unit = js.native
   def stylesheet[Classes /* <: Record[String, NestedCSSProperties] */](classes: Classes): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ ClassName in keyof Classes ]: string}
-    */ typings.typestyle.typestyleStrings.stylesheet with js.Any = js.native
+    */ typings.typestyle.typestyleStrings.stylesheet with TopLevel[js.Any] = js.native
   @js.native
   object style extends js.Object {
     def apply(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): String = js.native

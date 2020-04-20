@@ -24,7 +24,6 @@ object RecordMarkerFailedEventAttributes {
   @scala.inline
   def apply(cause: RecordMarkerFailedCause, decisionTaskCompletedEventId: EventId, markerName: MarkerName): RecordMarkerFailedEventAttributes = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], markerName = markerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordMarkerFailedEventAttributes]
   }
 }

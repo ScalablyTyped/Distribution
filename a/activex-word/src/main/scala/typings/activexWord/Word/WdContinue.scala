@@ -16,12 +16,10 @@ trait WdContinue extends js.Object
 
 object WdContinue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdContinueDisabled: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdContinueDisabled: `0` = this.cast(0)
+  def wdContinueList: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdContinueList: `2` = this.cast(2)
-  @scala.inline
-  def wdResetList: `1` = this.cast(1)
+  def wdResetList: `1` = 1.asInstanceOf[`1`]
 }
 

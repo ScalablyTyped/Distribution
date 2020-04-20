@@ -12,7 +12,6 @@ object AnonOjRouter {
   @scala.inline
   def apply(ojRouter: AnonParameters): AnonOjRouter = {
     val __obj = js.Dynamic.literal(ojRouter = ojRouter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOjRouter]
   }
 }

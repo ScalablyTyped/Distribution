@@ -24,7 +24,6 @@ object AnonOPENDIRECTORY {
     SAVE_FILE: saveFile
   ): AnonOPENDIRECTORY = {
     val __obj = js.Dynamic.literal(OPEN_DIRECTORY = OPEN_DIRECTORY.asInstanceOf[js.Any], OPEN_FILE = OPEN_FILE.asInstanceOf[js.Any], OPEN_WRITABLE_FILE = OPEN_WRITABLE_FILE.asInstanceOf[js.Any], SAVE_FILE = SAVE_FILE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOPENDIRECTORY]
   }
 }

@@ -13,7 +13,6 @@ object LifecyclePolicyDocument {
   @scala.inline
   def apply(rules: js.Array[PolicyRule]): LifecyclePolicyDocument = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LifecyclePolicyDocument]
   }
 }

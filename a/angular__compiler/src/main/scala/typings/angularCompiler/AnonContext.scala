@@ -14,7 +14,6 @@ object AnonContext {
   @scala.inline
   def apply(context: EmitterVisitorContext, sourceText: String): AnonContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], sourceText = sourceText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContext]
   }
 }

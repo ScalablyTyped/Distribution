@@ -24,7 +24,6 @@ object ContextOptions {
     watermarks: PartialWatermarks
   ): ContextOptions = {
     val __obj = js.Dynamic.literal(coverageMap = coverageMap.asInstanceOf[js.Any], defaultSummarizer = defaultSummarizer.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], sourceFinder = js.Any.fromFunction1(sourceFinder), watermarks = watermarks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContextOptions]
   }
 }

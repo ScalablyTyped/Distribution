@@ -12,7 +12,6 @@ object Request {
   @scala.inline
   def apply(csrfToken: () => String): Request = {
     val __obj = js.Dynamic.literal(csrfToken = js.Any.fromFunction0(csrfToken))
-  
     __obj.asInstanceOf[Request]
   }
 }

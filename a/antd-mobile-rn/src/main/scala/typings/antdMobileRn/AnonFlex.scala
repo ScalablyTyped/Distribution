@@ -14,7 +14,6 @@ object AnonFlex {
   @scala.inline
   def apply(alignItems: String, flex: Double, flexDirection: String): AnonFlex = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlex]
   }
 }

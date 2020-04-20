@@ -16,7 +16,6 @@ object DeleteFunctionConcurrencyRequest {
   @scala.inline
   def apply(FunctionName: FunctionName): DeleteFunctionConcurrencyRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFunctionConcurrencyRequest]
   }
 }

@@ -15,16 +15,14 @@ trait PriorityType extends js.Object
 
 object PriorityType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.reactNativePushNotification.reactNativePushNotificationStrings.default = "default".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.default]
   @scala.inline
-  def default: typings.reactNativePushNotification.reactNativePushNotificationStrings.default = this.cast("default")
+  def high: typings.reactNativePushNotification.reactNativePushNotificationStrings.high = "high".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.high]
   @scala.inline
-  def high: typings.reactNativePushNotification.reactNativePushNotificationStrings.high = this.cast("high")
+  def low: typings.reactNativePushNotification.reactNativePushNotificationStrings.low = "low".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.low]
   @scala.inline
-  def low: typings.reactNativePushNotification.reactNativePushNotificationStrings.low = this.cast("low")
+  def max: typings.reactNativePushNotification.reactNativePushNotificationStrings.max = "max".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.max]
   @scala.inline
-  def max: typings.reactNativePushNotification.reactNativePushNotificationStrings.max = this.cast("max")
-  @scala.inline
-  def min: typings.reactNativePushNotification.reactNativePushNotificationStrings.min = this.cast("min")
+  def min: typings.reactNativePushNotification.reactNativePushNotificationStrings.min = "min".asInstanceOf[typings.reactNativePushNotification.reactNativePushNotificationStrings.min]
 }
 

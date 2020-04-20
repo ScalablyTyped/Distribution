@@ -19,7 +19,6 @@ object StringResult {
     variables: StringDictionary[String]
   ): StringResult = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], expressions = expressions.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StringResult]
   }
 }

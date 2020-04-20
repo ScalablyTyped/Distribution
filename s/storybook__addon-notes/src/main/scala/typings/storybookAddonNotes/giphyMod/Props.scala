@@ -12,7 +12,6 @@ object Props {
   @scala.inline
   def apply(query: String): Props = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Props]
   }
 }

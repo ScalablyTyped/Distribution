@@ -19,7 +19,6 @@ object Dialog {
   @scala.inline
   def apply(close: () => js.Promise[Unit]): Dialog = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
-  
     __obj.asInstanceOf[Dialog]
   }
 }

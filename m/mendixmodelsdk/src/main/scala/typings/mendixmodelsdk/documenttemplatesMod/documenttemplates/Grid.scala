@@ -23,18 +23,18 @@ abstract class Grid protected () extends EntityWidget {
   ) = this()
   @JSName("model")
   var model_FGrid: IModel = js.native
-  def cellPadding(): Double = js.native
+  def cellPadding: Double = js.native
   def cellPadding(newValue: Double): js.Any = js.native
-  def cellSpacing(): Double = js.native
+  def cellSpacing: Double = js.native
   def cellSpacing(newValue: Double): js.Any = js.native
   def microflow(): js.Any = js.native
   def microflow(newValue: IMicroflow): js.Any = js.native
-  def microflowQualifiedName(): String | Null = js.native
+  def microflowQualifiedName: String | Null = js.native
   @JSName("microflow")
-  def microflow_Union(): IMicroflow | Null = js.native
-  def sortBar(): GridSortBar = js.native
+  def microflow_Union: IMicroflow | Null = js.native
+  def sortBar: GridSortBar = js.native
   def sortBar(newValue: GridSortBar): js.Any = js.native
-  def style(): Style = js.native
+  def style: Style = js.native
   def style(newValue: Style): js.Any = js.native
 }
 

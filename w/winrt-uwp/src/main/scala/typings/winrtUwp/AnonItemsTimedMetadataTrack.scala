@@ -14,7 +14,6 @@ object AnonItemsTimedMetadataTrack {
   @scala.inline
   def apply(items: TimedMetadataTrack, returnValue: Double): AnonItemsTimedMetadataTrack = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsTimedMetadataTrack]
   }
 }

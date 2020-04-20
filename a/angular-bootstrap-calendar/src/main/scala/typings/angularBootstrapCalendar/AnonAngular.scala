@@ -14,7 +14,6 @@ object AnonAngular {
   @scala.inline
   def apply(angular: IFormats, moment: IFormats): AnonAngular = {
     val __obj = js.Dynamic.literal(angular = angular.asInstanceOf[js.Any], moment = moment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAngular]
   }
 }

@@ -3,8 +3,8 @@ package typings.antd.confirmDialogMod
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.cancel
 import typings.antd.antdStrings.ok
+import typings.antd.buttonButtonMod.ButtonProps
 import typings.antd.buttonButtonMod.ButtonType
-import typings.antd.buttonButtonMod.NativeButtonProps
 import typings.antd.modalModalMod.ModalFuncProps
 import typings.antd.modalModalMod.getContainerFunc
 import typings.react.mod.CSSProperties
@@ -25,7 +25,7 @@ object ConfirmDialogProps {
     close: /* repeated */ js.Any => Unit,
     afterClose: () => Unit = null,
     autoFocusButton: ok | cancel = null,
-    cancelButtonProps: NativeButtonProps = null,
+    cancelButtonProps: ButtonProps = null,
     cancelText: ReactNode = null,
     centered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -37,7 +37,7 @@ object ConfirmDialogProps {
     maskClosable: js.UndefOr[Boolean] = js.undefined,
     maskStyle: CSSProperties = null,
     maskTransitionName: String = null,
-    okButtonProps: NativeButtonProps = null,
+    okButtonProps: ButtonProps = null,
     okCancel: js.UndefOr[Boolean] = js.undefined,
     okText: ReactNode = null,
     okType: ButtonType = null,

@@ -1,7 +1,6 @@
 package typings.pulumiAws.integrationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.restApiMod.RestApi
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,113 +9,97 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IntegrationArgs extends js.Object {
   /**
-    * A list of cache key parameters for the integration.
+    * The API identifier.
     */
-  val cacheKeyParameters: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  val apiId: Input[String] = js.native
   /**
-    * The integration's cache namespace.
-    */
-  val cacheNamespace: js.UndefOr[Input[String]] = js.native
-  /**
-    * The id of the VpcLink used for the integration. **Required** if `connectionType` is `VPC_LINK`
+    * The ID of the VPC link for a private integration. Supported only for HTTP APIs.
     */
   val connectionId: js.UndefOr[Input[String]] = js.native
   /**
-    * The integration input's [connectionType](https://docs.aws.amazon.com/apigateway/api-reference/resource/integration/#connectionType). Valid values are `INTERNET` (default for connections through the public routable internet), and `VPC_LINK` (for private connections between API Gateway and a network load balancer in a VPC).
+    * The type of the network connection to the integration endpoint. Valid values: `INTERNET`, `VPC_LINK`. Default is `INTERNET`.
     */
   val connectionType: js.UndefOr[Input[String]] = js.native
   /**
-    * Specifies how to handle request payload content type conversions. Supported values are `CONVERT_TO_BINARY` and `CONVERT_TO_TEXT`. If this property is not defined, the request payload will be passed through from the method request to integration request without modification, provided that the passthroughBehaviors is configured to support payload pass-through.
+    * How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`. Supported only for WebSocket APIs.
     */
-  val contentHandling: js.UndefOr[Input[String]] = js.native
+  val contentHandlingStrategy: js.UndefOr[Input[String]] = js.native
   /**
-    * The credentials required for the integration. For `AWS` integrations, 2 options are available. To specify an IAM Role for Amazon API Gateway to assume, use the role's ARN. To require that the caller's identity be passed through from the request, specify the string `arn:aws:iam::\*:user/\*`.
+    * The credentials required for the integration, if any.
     */
-  val credentials: js.UndefOr[Input[String]] = js.native
+  val credentialsArn: js.UndefOr[Input[String]] = js.native
   /**
-    * The HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTION`, `ANY`)
-    * when calling the associated resource.
+    * The description of the integration.
     */
-  val httpMethod: Input[String] = js.native
+  val description: js.UndefOr[Input[String]] = js.native
   /**
-    * The integration HTTP method
-    * (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONs`, `ANY`, `PATCH`) specifying how API Gateway will interact with the back end.
-    * **Required** if `type` is `AWS`, `AWS_PROXY`, `HTTP` or `HTTP_PROXY`.
-    * Not all methods are compatible with all `AWS` integrations.
-    * e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigateway-importer/issues/9#issuecomment-129651005) via `POST`.
+    * The integration's HTTP method. Must be specified if `integrationType` is not `MOCK`.
     */
-  val integrationHttpMethod: js.UndefOr[Input[String]] = js.native
+  val integrationMethod: js.UndefOr[Input[String]] = js.native
   /**
-    * The integration passthrough behavior (`WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`).  **Required** if `requestTemplates` is used.
+    * The integration type of an integration.
+    * Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
+    */
+  val integrationType: Input[String] = js.native
+  /**
+    * The URI of the Lambda function for a Lambda proxy integration, when `integrationType` is `AWS_PROXY`.
+    * For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service.
+    */
+  val integrationUri: js.UndefOr[Input[String]] = js.native
+  /**
+    * The pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the `requestTemplates` attribute.
+    * Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO_MATCH`. Supported only for WebSocket APIs.
     */
   val passthroughBehavior: js.UndefOr[Input[String]] = js.native
   /**
-    * A map of request query string parameters and headers that should be passed to the backend responder.
-    * For example: `requestParameters = { "integration.request.header.X-Some-Other-Header" = "method.request.header.X-Some-Header" }`
+    * The [format of the payload](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html#http-api-develop-integrations-lambda.proxy-format) sent to an integration. Valid values: `1.0`, `2.0`. Default is `1.0`.
     */
-  val requestParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val payloadFormatVersion: js.UndefOr[Input[String]] = js.native
   /**
-    * A map of the integration's request templates.
+    * A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client. Supported only for WebSocket APIs.
     */
   val requestTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
-    * The API resource ID.
+    * The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration.
     */
-  val resourceId: Input[String] = js.native
+  val templateSelectionExpression: js.UndefOr[Input[String]] = js.native
   /**
-    * The ID of the associated REST API.
-    */
-  val restApi: Input[String | RestApi] = js.native
-  /**
-    * Custom timeout between 50 and 29,000 milliseconds. The default value is 29,000 milliseconds.
+    * Custom timeout between 50 and 29,000 milliseconds. The default value is 29,000 milliseconds or 29 seconds.
     */
   val timeoutMilliseconds: js.UndefOr[Input[Double]] = js.native
-  /**
-    * The integration input's [type](https://docs.aws.amazon.com/apigateway/api-reference/resource/integration/). Valid values are `HTTP` (for HTTP backends), `MOCK` (not calling any real backend), `AWS` (for AWS services), `AWS_PROXY` (for Lambda proxy integration) and `HTTP_PROXY` (for HTTP proxy integration). An `HTTP` or `HTTP_PROXY` integration with a `connectionType` of `VPC_LINK` is referred to as a private integration and uses a VpcLink to connect API Gateway to a network load balancer of a VPC.
-    */
-  val `type`: Input[String] = js.native
-  /**
-    * The input's URI. **Required** if `type` is `AWS`, `AWS_PROXY`, `HTTP` or `HTTP_PROXY`.
-    * For HTTP integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification . For AWS integrations, the URI should be of the form `arn:aws:apigateway:{region}:{subdomain.service|service}:{path|action}/{service_api}`. `region`, `subdomain` and `service` are used to determine the right endpoint.
-    * e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:012345678901:function:my-func/invocations`
-    */
-  val uri: js.UndefOr[Input[String]] = js.native
 }
 
 object IntegrationArgs {
   @scala.inline
   def apply(
-    httpMethod: Input[String],
-    resourceId: Input[String],
-    restApi: Input[String | RestApi],
-    `type`: Input[String],
-    cacheKeyParameters: Input[js.Array[Input[String]]] = null,
-    cacheNamespace: Input[String] = null,
+    apiId: Input[String],
+    integrationType: Input[String],
     connectionId: Input[String] = null,
     connectionType: Input[String] = null,
-    contentHandling: Input[String] = null,
-    credentials: Input[String] = null,
-    integrationHttpMethod: Input[String] = null,
+    contentHandlingStrategy: Input[String] = null,
+    credentialsArn: Input[String] = null,
+    description: Input[String] = null,
+    integrationMethod: Input[String] = null,
+    integrationUri: Input[String] = null,
     passthroughBehavior: Input[String] = null,
-    requestParameters: Input[StringDictionary[Input[String]]] = null,
+    payloadFormatVersion: Input[String] = null,
     requestTemplates: Input[StringDictionary[Input[String]]] = null,
-    timeoutMilliseconds: Input[Double] = null,
-    uri: Input[String] = null
+    templateSelectionExpression: Input[String] = null,
+    timeoutMilliseconds: Input[Double] = null
   ): IntegrationArgs = {
-    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (cacheKeyParameters != null) __obj.updateDynamic("cacheKeyParameters")(cacheKeyParameters.asInstanceOf[js.Any])
-    if (cacheNamespace != null) __obj.updateDynamic("cacheNamespace")(cacheNamespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], integrationType = integrationType.asInstanceOf[js.Any])
     if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
     if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
-    if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (integrationHttpMethod != null) __obj.updateDynamic("integrationHttpMethod")(integrationHttpMethod.asInstanceOf[js.Any])
+    if (contentHandlingStrategy != null) __obj.updateDynamic("contentHandlingStrategy")(contentHandlingStrategy.asInstanceOf[js.Any])
+    if (credentialsArn != null) __obj.updateDynamic("credentialsArn")(credentialsArn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (integrationMethod != null) __obj.updateDynamic("integrationMethod")(integrationMethod.asInstanceOf[js.Any])
+    if (integrationUri != null) __obj.updateDynamic("integrationUri")(integrationUri.asInstanceOf[js.Any])
     if (passthroughBehavior != null) __obj.updateDynamic("passthroughBehavior")(passthroughBehavior.asInstanceOf[js.Any])
-    if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
+    if (payloadFormatVersion != null) __obj.updateDynamic("payloadFormatVersion")(payloadFormatVersion.asInstanceOf[js.Any])
     if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates.asInstanceOf[js.Any])
+    if (templateSelectionExpression != null) __obj.updateDynamic("templateSelectionExpression")(templateSelectionExpression.asInstanceOf[js.Any])
     if (timeoutMilliseconds != null) __obj.updateDynamic("timeoutMilliseconds")(timeoutMilliseconds.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationArgs]
   }
 }

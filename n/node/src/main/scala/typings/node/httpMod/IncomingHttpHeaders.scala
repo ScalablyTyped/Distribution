@@ -1,13 +1,14 @@
 package typings.node.httpMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.Dict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // incoming headers will never contain number
 trait IncomingHttpHeaders
-  extends /* header */ StringDictionary[js.UndefOr[String | js.Array[String]]] {
+  extends Dict[String | js.Array[String]] {
   var accept: js.UndefOr[String] = js.undefined
   var `accept-language`: js.UndefOr[String] = js.undefined
   var `accept-patch`: js.UndefOr[String] = js.undefined
@@ -67,7 +68,7 @@ trait IncomingHttpHeaders
 object IncomingHttpHeaders {
   @scala.inline
   def apply(
-    StringDictionary: /* header */ StringDictionary[js.UndefOr[String | js.Array[String]]] = null,
+    StringDictionary: StringDictionary[js.UndefOr[String | js.Array[String]]] = null,
     accept: String = null,
     `accept-language`: String = null,
     `accept-patch`: String = null,

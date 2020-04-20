@@ -12,7 +12,7 @@ trait GeometryProperties extends js.Object {
     */
   var hasM: js.UndefOr[Boolean] = js.undefined
   /**
-    * Indicates if the geometry has Z (elevation) values.
+    * Indicates if the geometry has z-values (elevation).
     * > **Z-values** defined in a geographic or metric coordinate system are expressed in meters. However, in local scenes that use a projected coordinate system, vertical units are assumed to be the same as the horizontal units specified by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasZ)

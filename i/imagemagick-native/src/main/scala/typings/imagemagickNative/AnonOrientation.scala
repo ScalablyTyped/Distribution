@@ -12,7 +12,6 @@ object AnonOrientation {
   @scala.inline
   def apply(orientation: Double): AnonOrientation = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOrientation]
   }
 }

@@ -18,22 +18,20 @@ trait BindingType extends js.Object
 
 object BindingType {
   @scala.inline
-  def ConstantValue: typings.inversify.inversifyStrings.ConstantValue = this.cast("ConstantValue")
+  def ConstantValue: typings.inversify.inversifyStrings.ConstantValue = "ConstantValue".asInstanceOf[typings.inversify.inversifyStrings.ConstantValue]
   @scala.inline
-  def Constructor: typings.inversify.inversifyStrings.Constructor = this.cast("Constructor")
+  def Constructor: typings.inversify.inversifyStrings.Constructor = "Constructor".asInstanceOf[typings.inversify.inversifyStrings.Constructor]
   @scala.inline
-  def DynamicValue: typings.inversify.inversifyStrings.DynamicValue = this.cast("DynamicValue")
+  def DynamicValue: typings.inversify.inversifyStrings.DynamicValue = "DynamicValue".asInstanceOf[typings.inversify.inversifyStrings.DynamicValue]
   @scala.inline
-  def Factory: typings.inversify.inversifyStrings.Factory = this.cast("Factory")
+  def Factory: typings.inversify.inversifyStrings.Factory = "Factory".asInstanceOf[typings.inversify.inversifyStrings.Factory]
   @scala.inline
-  def Function: typings.inversify.inversifyStrings.Function = this.cast("Function")
+  def Function: typings.inversify.inversifyStrings.Function = "Function".asInstanceOf[typings.inversify.inversifyStrings.Function]
   @scala.inline
-  def Instance: typings.inversify.inversifyStrings.Instance = this.cast("Instance")
+  def Instance: typings.inversify.inversifyStrings.Instance = "Instance".asInstanceOf[typings.inversify.inversifyStrings.Instance]
   @scala.inline
-  def Invalid: typings.inversify.inversifyStrings.Invalid = this.cast("Invalid")
+  def Invalid: typings.inversify.inversifyStrings.Invalid = "Invalid".asInstanceOf[typings.inversify.inversifyStrings.Invalid]
   @scala.inline
-  def Provider: typings.inversify.inversifyStrings.Provider = this.cast("Provider")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Provider: typings.inversify.inversifyStrings.Provider = "Provider".asInstanceOf[typings.inversify.inversifyStrings.Provider]
 }
 

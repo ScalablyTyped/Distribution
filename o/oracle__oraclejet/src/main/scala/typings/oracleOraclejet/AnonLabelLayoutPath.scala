@@ -19,7 +19,6 @@ object AnonLabelLayoutPath {
     path: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => String
   ): AnonLabelLayoutPath = {
     val __obj = js.Dynamic.literal(labelLayout = js.Any.fromFunction2(labelLayout), path = js.Any.fromFunction2(path))
-  
     __obj.asInstanceOf[AnonLabelLayoutPath]
   }
 }

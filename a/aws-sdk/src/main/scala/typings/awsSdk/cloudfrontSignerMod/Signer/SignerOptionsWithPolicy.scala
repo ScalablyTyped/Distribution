@@ -16,7 +16,6 @@ object SignerOptionsWithPolicy {
   @scala.inline
   def apply(policy: String): SignerOptionsWithPolicy = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignerOptionsWithPolicy]
   }
 }

@@ -14,7 +14,6 @@ object AnonSafari {
   @scala.inline
   def apply(safari: String | tp): AnonSafari = {
     val __obj = js.Dynamic.literal(safari = safari.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSafari]
   }
 }

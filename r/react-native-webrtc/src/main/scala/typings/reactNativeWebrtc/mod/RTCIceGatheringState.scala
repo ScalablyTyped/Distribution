@@ -13,12 +13,10 @@ trait RTCIceGatheringState extends js.Object
 
 object RTCIceGatheringState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complete: typings.reactNativeWebrtc.reactNativeWebrtcStrings.complete = "complete".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.complete]
   @scala.inline
-  def complete: typings.reactNativeWebrtc.reactNativeWebrtcStrings.complete = this.cast("complete")
+  def gathering: typings.reactNativeWebrtc.reactNativeWebrtcStrings.gathering = "gathering".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.gathering]
   @scala.inline
-  def gathering: typings.reactNativeWebrtc.reactNativeWebrtcStrings.gathering = this.cast("gathering")
-  @scala.inline
-  def `new`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = this.cast("new")
+  def `new`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = "new".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new`]
 }
 

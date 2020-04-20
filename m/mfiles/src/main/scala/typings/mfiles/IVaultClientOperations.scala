@@ -26,7 +26,6 @@ object IVaultClientOperations {
     SetVaultToOnline: Double => MFOnlineTransitionResultFlags
   ): IVaultClientOperations = {
     val __obj = js.Dynamic.literal(DisableCheckInReminderForCallingProcess = js.Any.fromFunction0(DisableCheckInReminderForCallingProcess), EnableCheckInReminderForCallingProcess = js.Any.fromFunction0(EnableCheckInReminderForCallingProcess), IsOffline = js.Any.fromFunction0(IsOffline), IsOnline = js.Any.fromFunction0(IsOnline), SetVaultToOffline = js.Any.fromFunction1(SetVaultToOffline), SetVaultToOnline = js.Any.fromFunction1(SetVaultToOnline))
-  
     __obj.asInstanceOf[IVaultClientOperations]
   }
 }

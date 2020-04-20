@@ -13,7 +13,6 @@ object AnimationAction {
   @scala.inline
   def apply(animates: js.Array[Animate], option: AnimationActionOption): AnimationAction = {
     val __obj = js.Dynamic.literal(animates = animates.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnimationAction]
   }
 }

@@ -16,7 +16,6 @@ object VirtualRouterStatus {
   @scala.inline
   def apply(status: VirtualRouterStatusCode): VirtualRouterStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualRouterStatus]
   }
 }

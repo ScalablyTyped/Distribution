@@ -18,7 +18,6 @@ object Consumer {
   @scala.inline
   def apply(consume: (String, ConsumerCallback[js.Any]) => Unit): Consumer = {
     val __obj = js.Dynamic.literal(consume = js.Any.fromFunction2(consume))
-  
     __obj.asInstanceOf[Consumer]
   }
 }

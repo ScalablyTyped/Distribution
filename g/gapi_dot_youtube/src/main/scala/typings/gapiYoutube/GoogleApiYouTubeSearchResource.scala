@@ -27,7 +27,6 @@ object GoogleApiYouTubeSearchResource {
   @scala.inline
   def apply(etag: String, id: AnonKindPlaylistId, kind: String, snippet: AnonThumbnails): GoogleApiYouTubeSearchResource = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleApiYouTubeSearchResource]
   }
 }

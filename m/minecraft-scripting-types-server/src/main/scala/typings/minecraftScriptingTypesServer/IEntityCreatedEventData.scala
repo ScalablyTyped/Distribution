@@ -19,7 +19,6 @@ object IEntityCreatedEventData {
   @scala.inline
   def apply(entity: IEntity): IEntityCreatedEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEntityCreatedEventData]
   }
 }

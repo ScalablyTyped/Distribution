@@ -18,7 +18,6 @@ object pagespeedapi {
   @scala.inline
   def apply(runpagespeed: AnonFields => HttpRequest[GoogleApiPageSpeedOnlineResource]): pagespeedapi = {
     val __obj = js.Dynamic.literal(runpagespeed = js.Any.fromFunction1(runpagespeed))
-  
     __obj.asInstanceOf[pagespeedapi]
   }
 }

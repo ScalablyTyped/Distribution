@@ -1,6 +1,7 @@
 package typings.antd.searchMod
 
 import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.sizeContextMod.SizeType
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
@@ -23,7 +24,7 @@ trait Search
   def onChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def onSearch(e: KeyboardEvent[HTMLInputElement]): Unit = js.native
   def onSearch(e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
-  def renderAddonAfter(prefixCls: String): js.UndefOr[js.Object | Null] = js.native
+  def renderAddonAfter(prefixCls: String, size: SizeType): js.UndefOr[js.Object | Null] = js.native
   def renderLoading(prefixCls: String): Element = js.native
   def renderSearch(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def renderSuffix(prefixCls: String): js.UndefOr[js.Object | Null] = js.native

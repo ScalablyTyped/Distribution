@@ -16,7 +16,6 @@ object RestorePhoneNumberRequest {
   @scala.inline
   def apply(PhoneNumberId: NonEmptyString): RestorePhoneNumberRequest = {
     val __obj = js.Dynamic.literal(PhoneNumberId = PhoneNumberId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestorePhoneNumberRequest]
   }
 }

@@ -22,7 +22,6 @@ object RalLogger {
     warning: /* repeated */ js.Any => Unit
   ): RalLogger = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), fatal = js.Any.fromFunction1(fatal), notice = js.Any.fromFunction1(notice), trace = js.Any.fromFunction1(trace), warning = js.Any.fromFunction1(warning))
-  
     __obj.asInstanceOf[RalLogger]
   }
 }

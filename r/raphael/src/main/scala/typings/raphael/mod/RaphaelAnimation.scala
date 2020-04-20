@@ -24,7 +24,6 @@ object RaphaelAnimation {
   @scala.inline
   def apply(delay: Double => RaphaelAnimation, repeat: Double => RaphaelAnimation): RaphaelAnimation = {
     val __obj = js.Dynamic.literal(delay = js.Any.fromFunction1(delay), repeat = js.Any.fromFunction1(repeat))
-  
     __obj.asInstanceOf[RaphaelAnimation]
   }
 }

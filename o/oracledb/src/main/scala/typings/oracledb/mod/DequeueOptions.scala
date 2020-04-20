@@ -47,7 +47,6 @@ object DequeueOptions {
     wait: Double
   ): DequeueOptions = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], consumerName = consumerName.asInstanceOf[js.Any], correlation = correlation.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], msgId = msgId.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], transformation = transformation.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any], wait = wait.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DequeueOptions]
   }
 }

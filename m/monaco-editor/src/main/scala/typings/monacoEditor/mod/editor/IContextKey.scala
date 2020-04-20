@@ -14,7 +14,6 @@ object IContextKey {
   @scala.inline
   def apply[T](get: () => js.UndefOr[T], reset: () => Unit, set: T => Unit): IContextKey[T] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[IContextKey[T]]
   }
 }

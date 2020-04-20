@@ -17,7 +17,6 @@ object CachedObject {
   @scala.inline
   def apply[T](item: T, stored: Double, ttl: Double): CachedObject[T] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], stored = stored.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CachedObject[T]]
   }
 }

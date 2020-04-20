@@ -14,14 +14,12 @@ trait ContainerProtocol extends js.Object
 
 object ContainerProtocol {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def http: typings.pulumiCloud.pulumiCloudStrings.http = "http".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.http]
   @scala.inline
-  def http: typings.pulumiCloud.pulumiCloudStrings.http = this.cast("http")
+  def https: typings.pulumiCloud.pulumiCloudStrings.https = "https".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.https]
   @scala.inline
-  def https: typings.pulumiCloud.pulumiCloudStrings.https = this.cast("https")
+  def tcp: typings.pulumiCloud.pulumiCloudStrings.tcp = "tcp".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.tcp]
   @scala.inline
-  def tcp: typings.pulumiCloud.pulumiCloudStrings.tcp = this.cast("tcp")
-  @scala.inline
-  def udp: typings.pulumiCloud.pulumiCloudStrings.udp = this.cast("udp")
+  def udp: typings.pulumiCloud.pulumiCloudStrings.udp = "udp".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.udp]
 }
 

@@ -13,7 +13,6 @@ object Schema {
   @scala.inline
   def apply(isJoi: Boolean, validate: js.Any => ValidationResult[js.Any]): Schema = {
     val __obj = js.Dynamic.literal(isJoi = isJoi.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate))
-  
     __obj.asInstanceOf[Schema]
   }
 }

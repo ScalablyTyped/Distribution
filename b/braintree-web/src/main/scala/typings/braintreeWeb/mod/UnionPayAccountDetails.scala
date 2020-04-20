@@ -22,7 +22,6 @@ object UnionPayAccountDetails {
   @scala.inline
   def apply(cardType: String, description: String, lastTwo: String): UnionPayAccountDetails = {
     val __obj = js.Dynamic.literal(cardType = cardType.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], lastTwo = lastTwo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnionPayAccountDetails]
   }
 }

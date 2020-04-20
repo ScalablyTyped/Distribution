@@ -47,7 +47,6 @@ object QueryFilter {
     sortOrder: Double
   ): QueryFilter = {
     val __obj = js.Dynamic.literal(criteria = criteria.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], pageNumber = pageNumber.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], pagingToken = pagingToken.asInstanceOf[js.Any], sortBy = sortBy.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryFilter]
   }
 }

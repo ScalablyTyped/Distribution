@@ -14,7 +14,6 @@ object AnonStartDate {
   @scala.inline
   def apply(endDate: momentObj, startDate: momentObj): AnonStartDate = {
     val __obj = js.Dynamic.literal(endDate = endDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStartDate]
   }
 }

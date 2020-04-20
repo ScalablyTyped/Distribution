@@ -24,7 +24,6 @@ object DeleteRouteResponseRequest {
   @scala.inline
   def apply(ApiId: string, RouteId: string, RouteResponseId: string): DeleteRouteResponseRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], RouteId = RouteId.asInstanceOf[js.Any], RouteResponseId = RouteResponseId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRouteResponseRequest]
   }
 }

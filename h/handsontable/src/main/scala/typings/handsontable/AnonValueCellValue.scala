@@ -13,7 +13,6 @@ object AnonValueCellValue {
   @scala.inline
   def apply(value: CellValue): AnonValueCellValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValueCellValue]
   }
 }

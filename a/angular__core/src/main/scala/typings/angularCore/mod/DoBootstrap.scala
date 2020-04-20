@@ -12,7 +12,6 @@ object DoBootstrap {
   @scala.inline
   def apply(ngDoBootstrap: ApplicationRef => Unit): DoBootstrap = {
     val __obj = js.Dynamic.literal(ngDoBootstrap = js.Any.fromFunction1(ngDoBootstrap))
-  
     __obj.asInstanceOf[DoBootstrap]
   }
 }

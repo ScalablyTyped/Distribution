@@ -34,7 +34,6 @@ object StoryQuestionResponsesFeedResponseResponderInfo {
     unanswered_response_count: Double
   ): StoryQuestionResponsesFeedResponseResponderInfo = {
     val __obj = js.Dynamic.literal(background_color = background_color.asInstanceOf[js.Any], latest_question_response_time = latest_question_response_time.asInstanceOf[js.Any], max_id = max_id.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], question_id = question_id.asInstanceOf[js.Any], question_response_count = question_response_count.asInstanceOf[js.Any], question_type = question_type.asInstanceOf[js.Any], responders = responders.asInstanceOf[js.Any], text_color = text_color.asInstanceOf[js.Any], unanswered_response_count = unanswered_response_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StoryQuestionResponsesFeedResponseResponderInfo]
   }
 }

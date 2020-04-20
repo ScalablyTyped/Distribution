@@ -15,7 +15,6 @@ object AnonId {
   @scala.inline
   def apply(id: String, onClick: /* repeated */ js.Any => Unit, title: String): AnonId = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonId]
   }
 }

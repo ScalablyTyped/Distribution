@@ -37,11 +37,11 @@ object compressionIndexMod extends js.Object {
     /**
       * Returns true if the decoder configuration is available.
       */
-    def DecoderAvailable(): Boolean = js.native
+    def DecoderAvailable: Boolean = js.native
     /**
       * Default instance for the draco compression object.
       */
-    def Default(): typings.babylonjs.dracoCompressionMod.DracoCompression = js.native
+    def Default: typings.babylonjs.dracoCompressionMod.DracoCompression = js.native
   }
   
 }

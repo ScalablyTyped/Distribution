@@ -20,7 +20,6 @@ object Audio {
   @scala.inline
   def apply(Locale: Locale, Location: AudioLocation): Audio = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Audio]
   }
 }

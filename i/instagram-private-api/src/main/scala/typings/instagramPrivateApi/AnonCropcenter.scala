@@ -18,7 +18,6 @@ object AnonCropcenter {
     crop_zoom: Double
   ): AnonCropcenter = {
     val __obj = js.Dynamic.literal(crop_center = crop_center.asInstanceOf[js.Any], crop_original_size = crop_original_size.asInstanceOf[js.Any], crop_zoom = crop_zoom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCropcenter]
   }
 }

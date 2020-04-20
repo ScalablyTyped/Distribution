@@ -16,7 +16,6 @@ object AnonTriggerNameTaskUnassigned {
   @scala.inline
   def apply(triggerId: `10`, triggerName: TaskUnassigned): AnonTriggerNameTaskUnassigned = {
     val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTriggerNameTaskUnassigned]
   }
 }

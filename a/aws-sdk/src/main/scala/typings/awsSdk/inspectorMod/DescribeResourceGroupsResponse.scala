@@ -20,7 +20,6 @@ object DescribeResourceGroupsResponse {
   @scala.inline
   def apply(failedItems: FailedItems, resourceGroups: ResourceGroupList): DescribeResourceGroupsResponse = {
     val __obj = js.Dynamic.literal(failedItems = failedItems.asInstanceOf[js.Any], resourceGroups = resourceGroups.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeResourceGroupsResponse]
   }
 }

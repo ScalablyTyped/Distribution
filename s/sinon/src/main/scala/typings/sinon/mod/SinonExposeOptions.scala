@@ -13,7 +13,6 @@ object SinonExposeOptions {
   @scala.inline
   def apply(includeFail: Boolean, prefix: String): SinonExposeOptions = {
     val __obj = js.Dynamic.literal(includeFail = includeFail.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SinonExposeOptions]
   }
 }

@@ -13,12 +13,10 @@ trait FirehoseRecordTransformationStatus extends js.Object
 
 object FirehoseRecordTransformationStatus {
   @scala.inline
-  def Dropped: typings.awsLambda.awsLambdaStrings.Dropped = this.cast("Dropped")
+  def Dropped: typings.awsLambda.awsLambdaStrings.Dropped = "Dropped".asInstanceOf[typings.awsLambda.awsLambdaStrings.Dropped]
   @scala.inline
-  def Ok: typings.awsLambda.awsLambdaStrings.Ok = this.cast("Ok")
+  def Ok: typings.awsLambda.awsLambdaStrings.Ok = "Ok".asInstanceOf[typings.awsLambda.awsLambdaStrings.Ok]
   @scala.inline
-  def ProcessingFailed: typings.awsLambda.awsLambdaStrings.ProcessingFailed = this.cast("ProcessingFailed")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ProcessingFailed: typings.awsLambda.awsLambdaStrings.ProcessingFailed = "ProcessingFailed".asInstanceOf[typings.awsLambda.awsLambdaStrings.ProcessingFailed]
 }
 

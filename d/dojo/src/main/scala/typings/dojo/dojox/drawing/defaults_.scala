@@ -199,7 +199,6 @@ object defaults_ {
     zAxisEnabled: Boolean
   ): defaults_ = {
     val __obj = js.Dynamic.literal(anchors = anchors.asInstanceOf[js.Any], angleSnap = angleSnap.asInstanceOf[js.Any], arrows = arrows.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], clickMode = clickMode.asInstanceOf[js.Any], clickable = clickable.asInstanceOf[js.Any], copy = js.Any.fromFunction0(copy), current = current.asInstanceOf[js.Any], currentHit = currentHit.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], highlighted = highlighted.asInstanceOf[js.Any], hitHighlighted = hitHighlighted.asInstanceOf[js.Any], hitNorm = hitNorm.asInstanceOf[js.Any], hitSelected = hitSelected.asInstanceOf[js.Any], labelSameColor = labelSameColor.asInstanceOf[js.Any], norm = norm.asInstanceOf[js.Any], renderHitLayer = renderHitLayer.asInstanceOf[js.Any], renderHitLines = renderHitLines.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textDisabled = textDisabled.asInstanceOf[js.Any], textMode = textMode.asInstanceOf[js.Any], useSelectedStyle = useSelectedStyle.asInstanceOf[js.Any], zAngle = zAngle.asInstanceOf[js.Any], zAxis = zAxis.asInstanceOf[js.Any], zAxisEnabled = zAxisEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[defaults_]
   }
 }

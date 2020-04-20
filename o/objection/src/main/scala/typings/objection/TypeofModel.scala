@@ -152,10 +152,10 @@ trait TypeofModel extends Instantiable0[Model] {
   def ref(expression: String): ReferenceBuilder = js.native
   def relatedQuery[RM /* <: Model */](relationName: String): QueryBuilderType[RM] = js.native
   def relatedQuery[RM /* <: Model */](relationName: String, trxOrKnex: TransactionOrKnex): QueryBuilderType[RM] = js.native
-  def relatedQuery[M /* <: Model */, K /* <: String */](relationName: K): ArrayRelatedQueryBuilder[
+  def relatedQuery[M /* <: Model */, K /* <: /* keyof M */ String */](relationName: K): ArrayRelatedQueryBuilder[
     /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any
   ] = js.native
-  def relatedQuery[M /* <: Model */, K /* <: String */](relationName: K, trxOrKnex: TransactionOrKnex): ArrayRelatedQueryBuilder[
+  def relatedQuery[M /* <: Model */, K /* <: /* keyof M */ String */](relationName: K, trxOrKnex: TransactionOrKnex): ArrayRelatedQueryBuilder[
     /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any
   ] = js.native
   def startTransaction(): js.Promise[Transaction_] = js.native

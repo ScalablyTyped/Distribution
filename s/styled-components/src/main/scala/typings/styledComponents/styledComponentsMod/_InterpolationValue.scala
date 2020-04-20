@@ -46,7 +46,6 @@ object _InterpolationValue {
   @scala.inline
   def Keyframes_(getName: () => String): _InterpolationValue = {
     val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName))
-  
     __obj.asInstanceOf[_InterpolationValue]
   }
   @scala.inline

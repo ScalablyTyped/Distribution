@@ -16,7 +16,6 @@ object DeletePipelineInput {
   @scala.inline
   def apply(pipelineId: id): DeletePipelineInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePipelineInput]
   }
 }

@@ -22,10 +22,10 @@ package object typesMod {
   type ExtractPropertyNamesOfType[T, S] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends S? K : never}[keyof T] */ js.Any
   type Fix[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K]}
-    */ typings.emberObject.emberObjectStrings.Fix with T
+    */ typings.emberObject.emberObjectStrings.Fix with org.scalablytyped.runtime.TopLevel[T]
   type MixinOrLiteral[T, Base] = (typings.emberObject.mixinMod.default[T, Base]) | T
   type Objectify[T] = T
-  type ObserverMethod[Target, Sender] = java.lang.String | (js.ThisFunction4[
+  type ObserverMethod[Target, Sender] = (/* keyof Target */ java.lang.String) | (js.ThisFunction4[
     /* this */ Target, 
     /* sender */ Sender, 
     /* key */ java.lang.String, 
@@ -36,9 +36,9 @@ package object typesMod {
   type UnwrapComputedPropertyGetter[T] = T
   type UnwrapComputedPropertyGetters[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: @ember/object.@ember/object/-private/types.UnwrapComputedPropertyGetter<T[P]>}
-    */ typings.emberObject.emberObjectStrings.UnwrapComputedPropertyGetters with T
+    */ typings.emberObject.emberObjectStrings.UnwrapComputedPropertyGetters with org.scalablytyped.runtime.TopLevel[T]
   type UnwrapComputedPropertySetter[T] = T
   type UnwrapComputedPropertySetters[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: @ember/object.@ember/object/-private/types.UnwrapComputedPropertySetter<T[P]>}
-    */ typings.emberObject.emberObjectStrings.UnwrapComputedPropertySetters with T
+    */ typings.emberObject.emberObjectStrings.UnwrapComputedPropertySetters with org.scalablytyped.runtime.TopLevel[T]
 }

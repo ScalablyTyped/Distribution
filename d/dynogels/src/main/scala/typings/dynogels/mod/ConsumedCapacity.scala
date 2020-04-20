@@ -13,7 +13,6 @@ object ConsumedCapacity {
   @scala.inline
   def apply(CapacityUnits: Double, TableName: String): ConsumedCapacity = {
     val __obj = js.Dynamic.literal(CapacityUnits = CapacityUnits.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConsumedCapacity]
   }
 }

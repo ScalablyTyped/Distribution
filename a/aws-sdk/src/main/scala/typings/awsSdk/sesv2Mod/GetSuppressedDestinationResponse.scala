@@ -16,7 +16,6 @@ object GetSuppressedDestinationResponse {
   @scala.inline
   def apply(SuppressedDestination: SuppressedDestination): GetSuppressedDestinationResponse = {
     val __obj = js.Dynamic.literal(SuppressedDestination = SuppressedDestination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSuppressedDestinationResponse]
   }
 }

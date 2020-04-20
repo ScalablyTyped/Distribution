@@ -18,14 +18,12 @@ trait FLAG extends js.Object
 
 object FLAG {
   @scala.inline
-  def BINARY: `1` = this.cast(1)
+  def BINARY: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def EXISTS: `8` = this.cast(8)
+  def EXISTS: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def NOT_BINARY: `2` = this.cast(2)
+  def NOT_BINARY: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def VALID_ID: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VALID_ID: `4` = 4.asInstanceOf[`4`]
 }
 

@@ -16,7 +16,6 @@ object AnonClick {
   @scala.inline
   def apply(click: String, close: String, error: String, message: String, show: String): AnonClick = {
     val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClick]
   }
 }

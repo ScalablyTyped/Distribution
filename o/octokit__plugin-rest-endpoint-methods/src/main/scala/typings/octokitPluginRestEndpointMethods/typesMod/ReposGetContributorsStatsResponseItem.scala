@@ -18,7 +18,6 @@ object ReposGetContributorsStatsResponseItem {
     weeks: js.Array[ReposGetContributorsStatsResponseItemWeeksItem]
   ): ReposGetContributorsStatsResponseItem = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], weeks = weeks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetContributorsStatsResponseItem]
   }
 }

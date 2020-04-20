@@ -13,7 +13,6 @@ object AnonMag {
   @scala.inline
   def apply(mag: Double, min: Double): AnonMag = {
     val __obj = js.Dynamic.literal(mag = mag.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMag]
   }
 }

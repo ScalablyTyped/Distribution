@@ -20,7 +20,6 @@ object Typeofpermissions {
     allow_source_address_group: () => Double
   ): Typeofpermissions = {
     val __obj = js.Dynamic.literal(allow_address = js.Any.fromFunction3(allow_address), allow_address_group = js.Any.fromFunction2(allow_address_group), allow_source_address = js.Any.fromFunction1(allow_source_address), allow_source_address_group = js.Any.fromFunction0(allow_source_address_group))
-  
     __obj.asInstanceOf[Typeofpermissions]
   }
 }

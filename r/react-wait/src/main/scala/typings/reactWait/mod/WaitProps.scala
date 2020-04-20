@@ -13,7 +13,6 @@ object WaitProps {
   @scala.inline
   def apply(fallback: Element, on: String): WaitProps = {
     val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WaitProps]
   }
 }

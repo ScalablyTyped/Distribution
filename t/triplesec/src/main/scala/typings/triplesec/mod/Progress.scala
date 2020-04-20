@@ -14,7 +14,6 @@ object Progress {
   @scala.inline
   def apply(i: Double, total: Double, what: String): Progress = {
     val __obj = js.Dynamic.literal(i = i.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], what = what.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Progress]
   }
 }

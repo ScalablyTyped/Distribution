@@ -22,7 +22,6 @@ object DataTableSource {
   @scala.inline
   def apply(getDataTable: () => DataTable): DataTableSource = {
     val __obj = js.Dynamic.literal(getDataTable = js.Any.fromFunction0(getDataTable))
-  
     __obj.asInstanceOf[DataTableSource]
   }
 }

@@ -18,14 +18,12 @@ trait styleBackgroundAttachment extends js.Object
 
 object styleBackgroundAttachment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleBackgroundAttachmentFixed: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleBackgroundAttachmentFixed: `0` = this.cast(0)
+  def styleBackgroundAttachmentNotSet: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleBackgroundAttachmentNotSet: `2` = this.cast(2)
+  def styleBackgroundAttachmentScroll: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleBackgroundAttachmentScroll: `1` = this.cast(1)
-  @scala.inline
-  def styleBackgroundAttachment_Max: `2147483647` = this.cast(2147483647)
+  def styleBackgroundAttachment_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

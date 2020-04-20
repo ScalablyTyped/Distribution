@@ -13,7 +13,6 @@ object MaxAgeRegexRule {
   @scala.inline
   def apply(maxAge: Double, regex: RegExp): MaxAgeRegexRule = {
     val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MaxAgeRegexRule]
   }
 }

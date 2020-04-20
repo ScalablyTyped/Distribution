@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateImagePipelineResponse extends js.Object {
   /**
-    *  The idempotency token used to make this request idempotent. 
+    * The idempotency token used to make this request idempotent. 
     */
   var clientToken: js.UndefOr[ClientToken] = js.native
   /**
-    *  The Amazon Resource Name (ARN) of the image pipeline that was updated by this request. 
+    * The Amazon Resource Name (ARN) of the image pipeline that was updated by this request. 
     */
   var imagePipelineArn: js.UndefOr[ImagePipelineArn] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

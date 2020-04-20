@@ -1,5 +1,6 @@
 package typings.wordpressCompose
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +41,7 @@ object mod extends js.Object {
   def withState[SP /* <: js.Object */](
     initialState: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof SP ]: SP[k]}
-    */ typings.wordpressCompose.wordpressComposeStrings.withState with SP
+    */ typings.wordpressCompose.wordpressComposeStrings.withState with TopLevel[SP]
   ): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
     _

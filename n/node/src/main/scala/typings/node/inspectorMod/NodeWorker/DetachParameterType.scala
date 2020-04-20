@@ -12,7 +12,6 @@ object DetachParameterType {
   @scala.inline
   def apply(sessionId: SessionID): DetachParameterType = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachParameterType]
   }
 }

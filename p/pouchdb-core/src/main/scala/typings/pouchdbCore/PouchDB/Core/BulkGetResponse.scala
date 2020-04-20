@@ -13,7 +13,6 @@ object BulkGetResponse {
   @scala.inline
   def apply[Content /* <: js.Object */](results: js.Array[AnonDocs[Content]]): BulkGetResponse[Content] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BulkGetResponse[Content]]
   }
 }

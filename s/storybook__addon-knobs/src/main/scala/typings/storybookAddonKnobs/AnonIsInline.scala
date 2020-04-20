@@ -21,7 +21,6 @@ object AnonIsInline {
     onChange: Validator[js.Function1[/* value */ CheckboxesTypeKnobValue, CheckboxesTypeKnobValue]]
   ): AnonIsInline = {
     val __obj = js.Dynamic.literal(isInline = isInline.asInstanceOf[js.Any], knob = knob.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsInline]
   }
 }

@@ -29,7 +29,6 @@ object WebGLArrayBuffer {
     ofSize: Double => Unit
   ): WebGLArrayBuffer = {
     val __obj = js.Dynamic.literal(fromArray = js.Any.fromFunction1(fromArray), fromArrayBuffer = js.Any.fromFunction1(fromArrayBuffer), getArray = js.Any.fromFunction0(getArray), getSize = js.Any.fromFunction0(getSize), getType = js.Any.fromFunction0(getType), getUsage = js.Any.fromFunction0(getUsage), ofSize = js.Any.fromFunction1(ofSize))
-  
     __obj.asInstanceOf[WebGLArrayBuffer]
   }
 }

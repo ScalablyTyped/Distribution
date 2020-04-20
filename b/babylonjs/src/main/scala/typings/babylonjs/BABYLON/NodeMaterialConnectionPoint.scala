@@ -58,7 +58,7 @@ class NodeMaterialConnectionPoint protected () extends js.Object {
   /**
     * Gets or sets the associated variable name in the shader
     */
-  def associatedVariableName(): String = js.native
+  def associatedVariableName: String = js.native
   def associatedVariableName(value: String): js.Any = js.native
   /**
     * Gets a boolean indicating if the current point can be connected to another point
@@ -75,7 +75,7 @@ class NodeMaterialConnectionPoint protected () extends js.Object {
   /**
     * Gets a the connected input block (if any)
     */
-  def connectInputBlock(): Nullable[InputBlock] = js.native
+  def connectInputBlock: Nullable[InputBlock] = js.native
   /**
     * Connect this point to another connection point
     * @param connectionPoint defines the other connection point
@@ -85,11 +85,11 @@ class NodeMaterialConnectionPoint protected () extends js.Object {
   def connectTo(connectionPoint: NodeMaterialConnectionPoint): NodeMaterialConnectionPoint = js.native
   def connectTo(connectionPoint: NodeMaterialConnectionPoint, ignoreConstraints: Boolean): NodeMaterialConnectionPoint = js.native
   /** Get the block connected on the endpoints of this connection (if any) */
-  def connectedBlocks(): js.Array[NodeMaterialBlock] = js.native
+  def connectedBlocks: js.Array[NodeMaterialBlock] = js.native
   /** Get the other side of the connection (if any) */
-  def connectedPoint(): Nullable[NodeMaterialConnectionPoint] = js.native
+  def connectedPoint: Nullable[NodeMaterialConnectionPoint] = js.native
   /** Gets the direction of the point */
-  def direction(): NodeMaterialConnectionPointDirection = js.native
+  def direction: NodeMaterialConnectionPointDirection = js.native
   /**
     * Disconnect this point from one of his endpoint
     * @param endpoint defines the other connection point
@@ -101,44 +101,44 @@ class NodeMaterialConnectionPoint protected () extends js.Object {
     */
   def dispose(): Unit = js.native
   /** Gets the list of connected endpoints */
-  def endpoints(): js.Array[NodeMaterialConnectionPoint] = js.native
+  def endpoints: js.Array[NodeMaterialConnectionPoint] = js.native
   /**
     * Gets the current class name e.g. "NodeMaterialConnectionPoint"
     * @returns the class name
     */
   def getClassName(): String = js.native
   /** Gets a boolean indicating if that output point is connected to at least one input */
-  def hasEndpoints(): Boolean = js.native
+  def hasEndpoints: Boolean = js.native
   /** Get the inner type (ie AutoDetect for instance instead of the inferred one) */
-  def innerType(): NodeMaterialBlockConnectionPointTypes = js.native
+  def innerType: NodeMaterialBlockConnectionPointTypes = js.native
   /**
     * Gets a boolean indicating that the current point is connected
     */
-  def isConnected(): Boolean = js.native
+  def isConnected: Boolean = js.native
   /** Gets a boolean indicating that this connection will be used in the fragment shader */
-  def isConnectedInFragmentShader(): Boolean = js.native
+  def isConnectedInFragmentShader: Boolean = js.native
   /** Gets a boolean indicating that this connection will be used in the vertex shader */
-  def isConnectedInVertexShader(): Boolean = js.native
+  def isConnectedInVertexShader: Boolean = js.native
   /**
     * Gets a boolean indicating that the current point is connected to an input block
     */
-  def isConnectedToInputBlock(): Boolean = js.native
+  def isConnectedToInputBlock: Boolean = js.native
   /** Get the block that owns this connection point */
-  def ownerBlock(): NodeMaterialBlock = js.native
+  def ownerBlock: NodeMaterialBlock = js.native
   /**
     * Serializes this point in a JSON representation
     * @returns the serialized point object
     */
   def serialize(): js.Any = js.native
   /** Get the block connected on the other side of this connection (if any) */
-  def sourceBlock(): Nullable[NodeMaterialBlock] = js.native
+  def sourceBlock: Nullable[NodeMaterialBlock] = js.native
   /** Gets or sets the target of that connection point */
-  def target(): NodeMaterialBlockTargets = js.native
+  def target: NodeMaterialBlockTargets = js.native
   def target(value: NodeMaterialBlockTargets): js.Any = js.native
   /**
     * Gets or sets the connection point type (default is float)
     */
-  def `type`(): NodeMaterialBlockConnectionPointTypes = js.native
+  def `type`: NodeMaterialBlockConnectionPointTypes = js.native
   def `type`(value: NodeMaterialBlockConnectionPointTypes): js.Any = js.native
 }
 

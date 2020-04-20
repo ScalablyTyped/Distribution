@@ -17,7 +17,6 @@ object RepositoryImageScanningConfiguration {
   @scala.inline
   def apply(scanOnPush: Input[Boolean]): RepositoryImageScanningConfiguration = {
     val __obj = js.Dynamic.literal(scanOnPush = scanOnPush.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RepositoryImageScanningConfiguration]
   }
 }

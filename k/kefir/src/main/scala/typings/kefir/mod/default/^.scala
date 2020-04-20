@@ -2,6 +2,7 @@ package typings.kefir.mod.default
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.kefir.AnonObservable
 import typings.kefir.AnonOff
 import typings.kefir.Fn0
@@ -79,7 +80,9 @@ object ^ extends js.Object {
   var withInterval_Original: FnCallIntervalHandler = js.native
   @JSName("zip")
   var zip_Original: FnCallObssPassiveObssCombinator = js.native
-  def combine[T /* <: js.Tuple6[
+  def combine[T /* <: js.Tuple8[
+    Observable[_, _], 
+    Observable[_, _], 
     Observable[_, _], 
     Observable[_, _], 
     Observable[_, _], 
@@ -87,7 +90,7 @@ object ^ extends js.Object {
     Observable[_, _], 
     Observable[_, _]
   ] */](obss: T): Stream_[
-    js.Tuple6[
+    js.Tuple8[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ], 
@@ -105,6 +108,12 @@ object ^ extends js.Object {
       ], 
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any
       ]
     ], 
     _
@@ -138,7 +147,7 @@ object ^ extends js.Object {
     _
   ] = js.native
   @JSName("combine")
-  def combine_T_ArrayObservableWildcardWildcardP_String[T /* <: js.Array[Observable[_, _]] */, P /* <: String */](obss: T): Stream_[
+  def combine_T_ArrayObservableWildcardWildcardP_String[T /* <: js.Array[Observable[_, _]] */, P /* <: /* keyof T */ String */](obss: T): Stream_[
     js.Array[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -150,7 +159,7 @@ object ^ extends js.Object {
   def combine_T_StringDictionaryObservableWildcardWildcard[T /* <: StringDictionary[Observable[_, _]] */](obss: T): Stream_[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
-    */ typings.kefir.kefirStrings.^  with T, 
+    */ typings.kefir.kefirStrings.^  with TopLevel[T], 
     _
   ] = js.native
   @JSName("combine")
@@ -220,6 +229,37 @@ object ^ extends js.Object {
     _
   ] = js.native
   @JSName("combine")
+  def combine_T_Tuple6ObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcard[T /* <: js.Tuple6[
+    Observable[_, _], 
+    Observable[_, _], 
+    Observable[_, _], 
+    Observable[_, _], 
+    Observable[_, _], 
+    Observable[_, _]
+  ] */](obss: T): Stream_[
+    js.Tuple6[
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
+      ]
+    ], 
+    _
+  ] = js.native
+  @JSName("combine")
   def combine_T_Tuple7ObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcard[T /* <: js.Tuple7[
     Observable[_, _], 
     Observable[_, _], 
@@ -250,45 +290,6 @@ object ^ extends js.Object {
       ], 
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
-      ]
-    ], 
-    _
-  ] = js.native
-  @JSName("combine")
-  def combine_T_Tuple8ObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcard[T /* <: js.Tuple8[
-    Observable[_, _], 
-    Observable[_, _], 
-    Observable[_, _], 
-    Observable[_, _], 
-    Observable[_, _], 
-    Observable[_, _], 
-    Observable[_, _], 
-    Observable[_, _]
-  ] */](obss: T): Stream_[
-    js.Tuple8[
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any
       ]
     ], 
     _

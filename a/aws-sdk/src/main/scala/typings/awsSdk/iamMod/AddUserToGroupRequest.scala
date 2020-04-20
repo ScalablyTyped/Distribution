@@ -20,7 +20,6 @@ object AddUserToGroupRequest {
   @scala.inline
   def apply(GroupName: groupNameType, UserName: existingUserNameType): AddUserToGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddUserToGroupRequest]
   }
 }

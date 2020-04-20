@@ -15,7 +15,6 @@ object Window {
   @scala.inline
   def apply(MouseEvent: AnonInstantiable, TouchEvent: AnonInstantiableTouchEvent): Window = {
     val __obj = js.Dynamic.literal(MouseEvent = MouseEvent.asInstanceOf[js.Any], TouchEvent = TouchEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

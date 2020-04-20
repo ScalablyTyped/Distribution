@@ -17,7 +17,6 @@ object Metadata {
   @scala.inline
   def apply(modificationTime: Date, size: Double): Metadata = {
     val __obj = js.Dynamic.literal(modificationTime = modificationTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Metadata]
   }
 }

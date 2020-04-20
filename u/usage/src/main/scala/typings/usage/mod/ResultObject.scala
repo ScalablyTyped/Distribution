@@ -15,7 +15,6 @@ object ResultObject {
   @scala.inline
   def apply(cpu: Double, memory: Double, memoryInfo: AnonRss): ResultObject = {
     val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], memoryInfo = memoryInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultObject]
   }
 }

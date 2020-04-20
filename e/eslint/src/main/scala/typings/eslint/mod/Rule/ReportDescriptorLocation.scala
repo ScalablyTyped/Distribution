@@ -17,13 +17,11 @@ object ReportDescriptorLocation {
   @scala.inline
   def AnonNodeNode(node: Node): ReportDescriptorLocation = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReportDescriptorLocation]
   }
   @scala.inline
   def AnonLoc(loc: SourceLocation | AnonColumn): ReportDescriptorLocation = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReportDescriptorLocation]
   }
 }

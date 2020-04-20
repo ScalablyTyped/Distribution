@@ -23,16 +23,16 @@ class WidgetPropertyType protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FWidgetPropertyType: IModel = js.native
-  def caption(): String = js.native
+  def caption: String = js.native
   def caption(newValue: String): js.Any = js.native
-  def category(): String = js.native
+  def category: String = js.native
   def category(newValue: String): js.Any = js.native
-  def containerAsWidgetObjectType(): WidgetObjectType = js.native
-  def description(): String = js.native
+  def containerAsWidgetObjectType: WidgetObjectType = js.native
+  def description: String = js.native
   def description(newValue: String): js.Any = js.native
-  def isDefault(): Boolean = js.native
+  def isDefault: Boolean = js.native
   def isDefault(newValue: Boolean): js.Any = js.native
-  def key(): String = js.native
+  def key: String = js.native
   def key(newValue: String): js.Any = js.native
   def valueType(): js.Any = js.native
   def valueType(newValue: WidgetValueType): js.Any = js.native
@@ -40,7 +40,7 @@ class WidgetPropertyType protected () extends Element {
     * In version 7.13.0: added optional
     */
   @JSName("valueType")
-  def valueType_Union(): WidgetValueType | Null = js.native
+  def valueType_Union: WidgetValueType | Null = js.native
 }
 
 /* static members */

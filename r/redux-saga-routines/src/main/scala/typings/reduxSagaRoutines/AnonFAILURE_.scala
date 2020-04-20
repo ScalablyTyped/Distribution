@@ -49,11 +49,12 @@ object AnonFAILURE_ {
     if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonFAILURE_[
-  TTriggerPayloadCreator, 
-  TRequestPayloadCreator, 
-  TSuccessPayloadCreator, 
-  TFailurePayloadCreator, 
-  TFulfillPayloadCreator]]
+      TTriggerPayloadCreator, 
+      TRequestPayloadCreator, 
+      TSuccessPayloadCreator, 
+      TFailurePayloadCreator, 
+      TFulfillPayloadCreator
+    ]]
   }
 }
 

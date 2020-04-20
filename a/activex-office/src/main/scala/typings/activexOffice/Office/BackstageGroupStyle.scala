@@ -16,12 +16,10 @@ trait BackstageGroupStyle extends js.Object
 
 object BackstageGroupStyle {
   @scala.inline
-  def BackstageGroupStyleError: `2` = this.cast(2)
+  def BackstageGroupStyleError: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def BackstageGroupStyleNormal: `0` = this.cast(0)
+  def BackstageGroupStyleNormal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def BackstageGroupStyleWarning: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def BackstageGroupStyleWarning: `1` = 1.asInstanceOf[`1`]
 }
 

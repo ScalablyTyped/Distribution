@@ -32,7 +32,6 @@ object StoreLayer_ {
     wrap: (js.Any, js.Any, typings.dojo.dojox.grid.enhanced.plugins.StoreLayer.StoreLayer, js.Any) => js.Any
   ): StoreLayer_ = {
     val __obj = js.Dynamic.literal(wrap = js.Any.fromFunction4(wrap))
-  
     __obj.asInstanceOf[StoreLayer_]
   }
 }

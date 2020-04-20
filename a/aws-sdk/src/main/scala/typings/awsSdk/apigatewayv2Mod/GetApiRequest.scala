@@ -16,7 +16,6 @@ object GetApiRequest {
   @scala.inline
   def apply(ApiId: string): GetApiRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApiRequest]
   }
 }

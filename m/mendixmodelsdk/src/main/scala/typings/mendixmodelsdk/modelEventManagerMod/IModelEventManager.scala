@@ -26,7 +26,6 @@ object IModelEventManager {
     stop: () => Unit
   ): IModelEventManager = {
     val __obj = js.Dynamic.literal(loadUnitCompleted = js.Any.fromFunction3(loadUnitCompleted), loadUnitStarted = js.Any.fromFunction0(loadUnitStarted), onEventProcessed = js.Any.fromFunction1(onEventProcessed), onFileChangesReceived = js.Any.fromFunction1(onFileChangesReceived), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[IModelEventManager]
   }
 }

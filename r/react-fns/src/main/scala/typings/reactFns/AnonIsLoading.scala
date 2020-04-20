@@ -12,7 +12,6 @@ object AnonIsLoading {
   @scala.inline
   def apply(isLoading: Boolean): AnonIsLoading = {
     val __obj = js.Dynamic.literal(isLoading = isLoading.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsLoading]
   }
 }

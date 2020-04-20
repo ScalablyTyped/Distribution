@@ -13,7 +13,6 @@ object AnonCombo {
   @scala.inline
   def apply(combo: String, onPress: () => Unit): AnonCombo = {
     val __obj = js.Dynamic.literal(combo = combo.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
-  
     __obj.asInstanceOf[AnonCombo]
   }
 }

@@ -16,7 +16,6 @@ object CreateModelOutput {
   @scala.inline
   def apply(ModelArn: ModelArn): CreateModelOutput = {
     val __obj = js.Dynamic.literal(ModelArn = ModelArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateModelOutput]
   }
 }

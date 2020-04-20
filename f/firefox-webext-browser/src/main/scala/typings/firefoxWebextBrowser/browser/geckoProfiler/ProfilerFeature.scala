@@ -25,39 +25,37 @@ import scala.scalajs.js.annotation._
 trait ProfilerFeature extends js.Object
 
 object ProfilerFeature {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @JSName("java")
   @scala.inline
-  def java_ : typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.java_ = this.cast("java")
+  def java_ : typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.java_ = "java".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.java_]
   @JSName("js")
   @scala.inline
-  def js_ : typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.js_ = this.cast("js")
+  def js_ : typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.js_ = "js".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.js_]
   @scala.inline
-  def jsallocations: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jsallocations = this.cast("jsallocations")
+  def jsallocations: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jsallocations = "jsallocations".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jsallocations]
   @scala.inline
-  def jstracer: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jstracer = this.cast("jstracer")
+  def jstracer: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jstracer = "jstracer".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jstracer]
   @scala.inline
-  def leaf: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.leaf = this.cast("leaf")
+  def leaf: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.leaf = "leaf".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.leaf]
   @scala.inline
-  def mainthreadio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mainthreadio = this.cast("mainthreadio")
+  def mainthreadio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mainthreadio = "mainthreadio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mainthreadio]
   @scala.inline
-  def preferencereads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads = this.cast("preferencereads")
+  def preferencereads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads = "preferencereads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads]
   @scala.inline
-  def privacy: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.privacy = this.cast("privacy")
+  def privacy: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.privacy = "privacy".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.privacy]
   @scala.inline
-  def responsiveness: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness = this.cast("responsiveness")
+  def responsiveness: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness = "responsiveness".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness]
   @scala.inline
-  def screenshots: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.screenshots = this.cast("screenshots")
+  def screenshots: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.screenshots = "screenshots".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.screenshots]
   @scala.inline
-  def seqstyle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.seqstyle = this.cast("seqstyle")
+  def seqstyle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.seqstyle = "seqstyle".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.seqstyle]
   @scala.inline
-  def stackwalk: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk = this.cast("stackwalk")
+  def stackwalk: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk = "stackwalk".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk]
   @scala.inline
-  def tasktracer: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tasktracer = this.cast("tasktracer")
+  def tasktracer: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tasktracer = "tasktracer".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tasktracer]
   @scala.inline
-  def threads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads = this.cast("threads")
+  def threads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads = "threads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads]
   @scala.inline
-  def trackopts: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.trackopts = this.cast("trackopts")
+  def trackopts: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.trackopts = "trackopts".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.trackopts]
 }
 

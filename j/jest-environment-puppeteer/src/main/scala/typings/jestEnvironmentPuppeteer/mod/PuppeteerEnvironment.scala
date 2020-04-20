@@ -2,6 +2,8 @@ package typings.jestEnvironmentPuppeteer.mod
 
 import typings.jestEnvironment.mod.JestEnvironment
 import typings.jestFakeTimers.mod.JestFakeTimers
+import typings.jestTypes.circusMod.Event
+import typings.jestTypes.circusMod.State
 import typings.node.vmMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,5 +17,7 @@ trait PuppeteerEnvironment extends JestEnvironment {
   var fakeTimers_PuppeteerEnvironment: JestFakeTimers[Timer] | Null = js.native
   @JSName("global")
   var global_PuppeteerEnvironment: Global = js.native
+  @JSName("handleTestEvent")
+  var handleTestEvent_PuppeteerEnvironment: js.UndefOr[js.Function2[/* event */ Event, /* state */ State, Unit]] = js.native
 }
 

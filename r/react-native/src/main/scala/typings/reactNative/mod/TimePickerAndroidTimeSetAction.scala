@@ -15,7 +15,6 @@ object TimePickerAndroidTimeSetAction {
   @scala.inline
   def apply(action: timeSetAction, hour: Double, minute: Double): TimePickerAndroidTimeSetAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimePickerAndroidTimeSetAction]
   }
 }

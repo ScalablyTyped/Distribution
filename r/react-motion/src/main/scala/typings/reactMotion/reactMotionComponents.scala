@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object reactMotionComponents extends reactMotionProps {
   @scala.inline
-  def Motion: ComponentType[MotionProps] = js.constructorOf[typings.reactMotion.mod.Motion].asInstanceOf[typings.react.mod.ComponentType[MotionProps]]
+  def Motion: ComponentType[MotionProps] = js.constructorOf[typings.reactMotion.mod.Motion].asInstanceOf[ComponentType[MotionProps]]
   @scala.inline
-  def StaggeredMotion: ComponentType[StaggeredMotionProps] = js.constructorOf[typings.reactMotion.mod.StaggeredMotion].asInstanceOf[typings.react.mod.ComponentType[StaggeredMotionProps]]
+  def StaggeredMotion: ComponentType[StaggeredMotionProps] = js.constructorOf[typings.reactMotion.mod.StaggeredMotion].asInstanceOf[ComponentType[StaggeredMotionProps]]
   @scala.inline
-  def TransitionMotion: ComponentType[TransitionMotionProps] = js.constructorOf[typings.reactMotion.mod.TransitionMotion].asInstanceOf[typings.react.mod.ComponentType[TransitionMotionProps]]
+  def TransitionMotion: ComponentType[TransitionMotionProps] = js.constructorOf[typings.reactMotion.mod.TransitionMotion].asInstanceOf[ComponentType[TransitionMotionProps]]
 }
 

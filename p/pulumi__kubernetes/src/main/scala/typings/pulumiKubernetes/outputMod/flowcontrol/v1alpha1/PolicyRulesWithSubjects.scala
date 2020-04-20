@@ -40,7 +40,6 @@ object PolicyRulesWithSubjects {
     subjects: js.Array[Subject]
   ): PolicyRulesWithSubjects = {
     val __obj = js.Dynamic.literal(nonResourceRules = nonResourceRules.asInstanceOf[js.Any], resourceRules = resourceRules.asInstanceOf[js.Any], subjects = subjects.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PolicyRulesWithSubjects]
   }
 }

@@ -13,12 +13,10 @@ trait Badge extends js.Object
 
 object Badge {
   @scala.inline
-  def bottomleft: typings.grecaptcha.grecaptchaStrings.bottomleft = this.cast("bottomleft")
+  def bottomleft: typings.grecaptcha.grecaptchaStrings.bottomleft = "bottomleft".asInstanceOf[typings.grecaptcha.grecaptchaStrings.bottomleft]
   @scala.inline
-  def bottomright: typings.grecaptcha.grecaptchaStrings.bottomright = this.cast("bottomright")
+  def bottomright: typings.grecaptcha.grecaptchaStrings.bottomright = "bottomright".asInstanceOf[typings.grecaptcha.grecaptchaStrings.bottomright]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `inline`: typings.grecaptcha.grecaptchaStrings.`inline` = this.cast("inline")
+  def `inline`: typings.grecaptcha.grecaptchaStrings.`inline` = "inline".asInstanceOf[typings.grecaptcha.grecaptchaStrings.`inline`]
 }
 

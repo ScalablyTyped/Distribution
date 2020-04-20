@@ -17,7 +17,6 @@ object UpdateNamedRequestqueueEn {
   @scala.inline
   def apply(parent: String, queue: EnhancedPickQueuenameappE): UpdateNamedRequestqueueEn = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateNamedRequestqueueEn]
   }
 }

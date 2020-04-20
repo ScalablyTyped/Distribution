@@ -28,8 +28,8 @@ class ListOperationAction protected () extends MicroflowAction {
   def operation(): js.Any = js.native
   def operation(newValue: ListOperation): js.Any = js.native
   @JSName("operation")
-  def operation_Union(): ListOperation | Null = js.native
-  def outputVariableName(): String = js.native
+  def operation_Union: ListOperation | Null = js.native
+  def outputVariableName: String = js.native
   def outputVariableName(newValue: String): js.Any = js.native
 }
 

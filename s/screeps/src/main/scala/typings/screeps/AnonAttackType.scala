@@ -14,7 +14,6 @@ object AnonAttackType {
   @scala.inline
   def apply(attackType: EventAttackType, damage: Double, targetId: String): AnonAttackType = {
     val __obj = js.Dynamic.literal(attackType = attackType.asInstanceOf[js.Any], damage = damage.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttackType]
   }
 }

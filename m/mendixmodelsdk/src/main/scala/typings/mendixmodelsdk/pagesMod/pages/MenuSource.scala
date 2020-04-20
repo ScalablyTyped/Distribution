@@ -23,7 +23,7 @@ abstract class MenuSource protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMenuSource: IModel = js.native
-  def containerAsMenuWidget(): MenuWidget = js.native
+  def containerAsMenuWidget: MenuWidget = js.native
 }
 
 /* static members */

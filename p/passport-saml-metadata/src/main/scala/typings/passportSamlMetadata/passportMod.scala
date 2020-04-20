@@ -1,0 +1,17 @@
+package typings.passportSamlMetadata
+
+import typings.passportSaml.mod.SamlConfig
+import typings.passportSamlMetadata.readerMod.MetadataReader
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("passport-saml-metadata/src/passport", JSImport.Namespace)
+@js.native
+object passportMod extends js.Object {
+  def claimsToCamelCase(claims: js.Any, claimSchema: js.Any): js.Any = js.native
+  def toPassportConfig(): SamlConfig = js.native
+  def toPassportConfig(reader: MetadataReader): SamlConfig = js.native
+  def toPassportConfig(reader: MetadataReader, options: AnonMultipleCerts): SamlConfig = js.native
+}
+

@@ -43,7 +43,6 @@ object DocumentsResource {
     annotateText: AnonAccesstoken => Request_[AnnotateTextResponse]
   ): DocumentsResource = {
     val __obj = js.Dynamic.literal(analyzeEntities = js.Any.fromFunction1(analyzeEntities), analyzeEntitySentiment = js.Any.fromFunction1(analyzeEntitySentiment), analyzeSentiment = js.Any.fromFunction1(analyzeSentiment), analyzeSyntax = js.Any.fromFunction1(analyzeSyntax), annotateText = js.Any.fromFunction1(annotateText))
-  
     __obj.asInstanceOf[DocumentsResource]
   }
 }

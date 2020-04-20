@@ -12,7 +12,6 @@ object SkMaskFilterFactory {
   @scala.inline
   def apply(MakeBlur: (SkBlurStyle, Double, Boolean) => SkMaskFilter): SkMaskFilterFactory = {
     val __obj = js.Dynamic.literal(MakeBlur = js.Any.fromFunction3(MakeBlur))
-  
     __obj.asInstanceOf[SkMaskFilterFactory]
   }
 }

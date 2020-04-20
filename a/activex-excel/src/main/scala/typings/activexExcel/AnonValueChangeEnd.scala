@@ -24,7 +24,6 @@ object AnonValueChangeEnd {
     ValueChangeStart: Double
   ): AnonValueChangeEnd = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Sh = Sh.asInstanceOf[js.Any], TargetPivotTable = TargetPivotTable.asInstanceOf[js.Any], ValueChangeEnd = ValueChangeEnd.asInstanceOf[js.Any], ValueChangeStart = ValueChangeStart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValueChangeEnd]
   }
 }

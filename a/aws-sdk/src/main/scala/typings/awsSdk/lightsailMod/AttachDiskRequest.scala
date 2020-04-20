@@ -24,7 +24,6 @@ object AttachDiskRequest {
   @scala.inline
   def apply(diskName: ResourceName, diskPath: NonEmptyString, instanceName: ResourceName): AttachDiskRequest = {
     val __obj = js.Dynamic.literal(diskName = diskName.asInstanceOf[js.Any], diskPath = diskPath.asInstanceOf[js.Any], instanceName = instanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachDiskRequest]
   }
 }

@@ -26,7 +26,6 @@ object DescribeLimitsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, OpenShardCount: Double, ShardLimit: Double): DescribeLimitsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], OpenShardCount = OpenShardCount.asInstanceOf[js.Any], ShardLimit = ShardLimit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLimitsOutput]
   }
 }

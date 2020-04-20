@@ -15,16 +15,14 @@ trait TextDirection extends js.Object
 
 object TextDirection {
   @scala.inline
-  def bottom: typings.amapJsApi.amapJsApiStrings.bottom = this.cast("bottom")
+  def bottom: typings.amapJsApi.amapJsApiStrings.bottom = "bottom".asInstanceOf[typings.amapJsApi.amapJsApiStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.amapJsApi.amapJsApiStrings.center = "center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.center]
   @scala.inline
-  def center: typings.amapJsApi.amapJsApiStrings.center = this.cast("center")
+  def left: typings.amapJsApi.amapJsApiStrings.left = "left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.left]
   @scala.inline
-  def left: typings.amapJsApi.amapJsApiStrings.left = this.cast("left")
+  def right: typings.amapJsApi.amapJsApiStrings.right = "right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.right]
   @scala.inline
-  def right: typings.amapJsApi.amapJsApiStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.amapJsApi.amapJsApiStrings.top = this.cast("top")
+  def top: typings.amapJsApi.amapJsApiStrings.top = "top".asInstanceOf[typings.amapJsApi.amapJsApiStrings.top]
 }
 

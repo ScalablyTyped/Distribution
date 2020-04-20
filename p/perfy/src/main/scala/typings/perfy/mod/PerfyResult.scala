@@ -45,7 +45,6 @@ object PerfyResult {
     time: Double
   ): PerfyResult = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], fullMilliseconds = fullMilliseconds.asInstanceOf[js.Any], fullNanoseconds = fullNanoseconds.asInstanceOf[js.Any], fullSeconds = fullSeconds.asInstanceOf[js.Any], milliseconds = milliseconds.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nanoseconds = nanoseconds.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PerfyResult]
   }
 }

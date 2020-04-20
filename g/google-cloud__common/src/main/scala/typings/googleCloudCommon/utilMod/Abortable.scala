@@ -12,7 +12,6 @@ object Abortable {
   @scala.inline
   def apply(abort: () => Unit): Abortable = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
-  
     __obj.asInstanceOf[Abortable]
   }
 }

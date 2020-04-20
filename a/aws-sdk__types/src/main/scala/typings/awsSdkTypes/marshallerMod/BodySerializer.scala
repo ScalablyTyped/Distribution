@@ -21,7 +21,6 @@ object BodySerializer {
   @scala.inline
   def apply[SerializedType](build: BodySerializerBuildOptions => SerializedType): BodySerializer[SerializedType] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction1(build))
-  
     __obj.asInstanceOf[BodySerializer[SerializedType]]
   }
 }

@@ -16,7 +16,6 @@ object TerminateWorkspacesRequest {
   @scala.inline
   def apply(TerminateWorkspaceRequests: TerminateWorkspaceRequests): TerminateWorkspacesRequest = {
     val __obj = js.Dynamic.literal(TerminateWorkspaceRequests = TerminateWorkspaceRequests.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TerminateWorkspacesRequest]
   }
 }

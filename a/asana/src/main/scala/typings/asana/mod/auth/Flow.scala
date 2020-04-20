@@ -22,7 +22,6 @@ object Flow {
   @scala.inline
   def apply(authorizeUrl: () => String, run: () => Unit): Flow = {
     val __obj = js.Dynamic.literal(authorizeUrl = js.Any.fromFunction0(authorizeUrl), run = js.Any.fromFunction0(run))
-  
     __obj.asInstanceOf[Flow]
   }
 }

@@ -13,7 +13,6 @@ object BottomTabSelectedEvent {
   @scala.inline
   def apply(selectedTabIndex: Double, unselectedTabIndex: Double): BottomTabSelectedEvent = {
     val __obj = js.Dynamic.literal(selectedTabIndex = selectedTabIndex.asInstanceOf[js.Any], unselectedTabIndex = unselectedTabIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BottomTabSelectedEvent]
   }
 }

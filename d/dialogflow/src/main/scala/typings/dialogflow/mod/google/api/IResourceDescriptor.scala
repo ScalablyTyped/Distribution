@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 /** Properties of a ResourceDescriptor. */
 trait IResourceDescriptor extends js.Object {
   /** ResourceDescriptor history */
-  var history: js.UndefOr[History | String | Null] = js.undefined
+  var history: js.UndefOr[
+    History | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.api.ResourceDescriptor.History * / any */ String) | Null
+  ] = js.undefined
   /** ResourceDescriptor nameField */
   var nameField: js.UndefOr[String | Null] = js.undefined
   /** ResourceDescriptor pattern */
@@ -24,7 +26,7 @@ trait IResourceDescriptor extends js.Object {
 object IResourceDescriptor {
   @scala.inline
   def apply(
-    history: History | String = null,
+    history: History | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.api.ResourceDescriptor.History * / any */ String) = null,
     nameField: String = null,
     pattern: js.Array[String] = null,
     plural: String = null,

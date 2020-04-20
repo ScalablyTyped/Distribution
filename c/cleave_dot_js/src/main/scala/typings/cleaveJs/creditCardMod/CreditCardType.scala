@@ -23,32 +23,30 @@ trait CreditCardType extends js.Object
 
 object CreditCardType {
   @scala.inline
-  def amex: typings.cleaveJs.cleaveJsStrings.amex = this.cast("amex")
+  def amex: typings.cleaveJs.cleaveJsStrings.amex = "amex".asInstanceOf[typings.cleaveJs.cleaveJsStrings.amex]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dankort: typings.cleaveJs.cleaveJsStrings.dankort = "dankort".asInstanceOf[typings.cleaveJs.cleaveJsStrings.dankort]
   @scala.inline
-  def dankort: typings.cleaveJs.cleaveJsStrings.dankort = this.cast("dankort")
+  def diners: typings.cleaveJs.cleaveJsStrings.diners = "diners".asInstanceOf[typings.cleaveJs.cleaveJsStrings.diners]
   @scala.inline
-  def diners: typings.cleaveJs.cleaveJsStrings.diners = this.cast("diners")
+  def discover: typings.cleaveJs.cleaveJsStrings.discover = "discover".asInstanceOf[typings.cleaveJs.cleaveJsStrings.discover]
   @scala.inline
-  def discover: typings.cleaveJs.cleaveJsStrings.discover = this.cast("discover")
+  def instapayment: typings.cleaveJs.cleaveJsStrings.instapayment = "instapayment".asInstanceOf[typings.cleaveJs.cleaveJsStrings.instapayment]
   @scala.inline
-  def instapayment: typings.cleaveJs.cleaveJsStrings.instapayment = this.cast("instapayment")
+  def jcb: typings.cleaveJs.cleaveJsStrings.jcb = "jcb".asInstanceOf[typings.cleaveJs.cleaveJsStrings.jcb]
   @scala.inline
-  def jcb: typings.cleaveJs.cleaveJsStrings.jcb = this.cast("jcb")
+  def maestro: typings.cleaveJs.cleaveJsStrings.maestro = "maestro".asInstanceOf[typings.cleaveJs.cleaveJsStrings.maestro]
   @scala.inline
-  def maestro: typings.cleaveJs.cleaveJsStrings.maestro = this.cast("maestro")
+  def mastercard: typings.cleaveJs.cleaveJsStrings.mastercard = "mastercard".asInstanceOf[typings.cleaveJs.cleaveJsStrings.mastercard]
   @scala.inline
-  def mastercard: typings.cleaveJs.cleaveJsStrings.mastercard = this.cast("mastercard")
+  def mir: typings.cleaveJs.cleaveJsStrings.mir = "mir".asInstanceOf[typings.cleaveJs.cleaveJsStrings.mir]
   @scala.inline
-  def mir: typings.cleaveJs.cleaveJsStrings.mir = this.cast("mir")
+  def uatp: typings.cleaveJs.cleaveJsStrings.uatp = "uatp".asInstanceOf[typings.cleaveJs.cleaveJsStrings.uatp]
   @scala.inline
-  def uatp: typings.cleaveJs.cleaveJsStrings.uatp = this.cast("uatp")
+  def unionPay: typings.cleaveJs.cleaveJsStrings.unionPay = "unionPay".asInstanceOf[typings.cleaveJs.cleaveJsStrings.unionPay]
   @scala.inline
-  def unionPay: typings.cleaveJs.cleaveJsStrings.unionPay = this.cast("unionPay")
+  def unknown: typings.cleaveJs.cleaveJsStrings.unknown = "unknown".asInstanceOf[typings.cleaveJs.cleaveJsStrings.unknown]
   @scala.inline
-  def unknown: typings.cleaveJs.cleaveJsStrings.unknown = this.cast("unknown")
-  @scala.inline
-  def visa: typings.cleaveJs.cleaveJsStrings.visa = this.cast("visa")
+  def visa: typings.cleaveJs.cleaveJsStrings.visa = "visa".asInstanceOf[typings.cleaveJs.cleaveJsStrings.visa]
 }
 

@@ -17,7 +17,6 @@ object AnonHost {
   @scala.inline
   def apply(host: CompilerHost, parsed: ParsedCommandLine, program: Program): AnonHost = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHost]
   }
 }

@@ -14,7 +14,6 @@ object Mixins {
   @scala.inline
   def apply(locks: Double, methods: js.Array[js.Function]): Mixins = {
     val __obj = js.Dynamic.literal(locks = locks.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Mixins]
   }
 }

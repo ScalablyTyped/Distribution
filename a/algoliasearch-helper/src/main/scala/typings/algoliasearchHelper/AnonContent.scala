@@ -15,7 +15,6 @@ object AnonContent {
   @scala.inline
   def apply(content: SearchResults, state: SearchParameters): AnonContent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContent]
   }
 }

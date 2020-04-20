@@ -31,7 +31,6 @@ object IUboDeclarationRefusedReasonType {
     MissingUbo: MISSING_UBO
   ): IUboDeclarationRefusedReasonType = {
     val __obj = js.Dynamic.literal(InvalidDeclaredUbo = InvalidDeclaredUbo.asInstanceOf[js.Any], InvalidUboDetails = InvalidUboDetails.asInstanceOf[js.Any], MissingUbo = MissingUbo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUboDeclarationRefusedReasonType]
   }
 }

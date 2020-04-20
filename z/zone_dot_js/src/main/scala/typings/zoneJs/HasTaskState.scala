@@ -15,7 +15,6 @@ object HasTaskState {
   @scala.inline
   def apply(change: TaskType, eventTask: Boolean, macroTask: Boolean, microTask: Boolean): HasTaskState = {
     val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any], eventTask = eventTask.asInstanceOf[js.Any], macroTask = macroTask.asInstanceOf[js.Any], microTask = microTask.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HasTaskState]
   }
 }

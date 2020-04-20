@@ -12,7 +12,6 @@ object RemoveProjectParams {
   @scala.inline
   def apply(project: String | Double): RemoveProjectParams = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveProjectParams]
   }
 }

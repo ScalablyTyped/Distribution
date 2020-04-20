@@ -13,7 +13,6 @@ object StateReturnModelColumns {
   @scala.inline
   def apply(search: SearchSettings, visible: Boolean): StateReturnModelColumns = {
     val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StateReturnModelColumns]
   }
 }

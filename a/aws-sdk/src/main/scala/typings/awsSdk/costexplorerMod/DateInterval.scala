@@ -20,7 +20,6 @@ object DateInterval {
   @scala.inline
   def apply(End: YearMonthDay, Start: YearMonthDay): DateInterval = {
     val __obj = js.Dynamic.literal(End = End.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DateInterval]
   }
 }

@@ -12,10 +12,8 @@ trait RadiusUnits extends js.Object
 
 object RadiusUnits {
   @scala.inline
-  def KILOMETERS: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS = this.cast("KILOMETERS")
+  def KILOMETERS: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS = "KILOMETERS".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS]
   @scala.inline
-  def MILES: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES = this.cast("MILES")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MILES: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES = "MILES".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES]
 }
 

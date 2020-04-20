@@ -15,7 +15,6 @@ object SearchTopicsParams {
   @scala.inline
   def apply(q: String): SearchTopicsParams = {
     val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchTopicsParams]
   }
 }

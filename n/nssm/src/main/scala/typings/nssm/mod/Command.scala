@@ -22,30 +22,28 @@ trait Command extends js.Object
 
 object Command {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def continue: typings.nssm.nssmStrings.continue = "continue".asInstanceOf[typings.nssm.nssmStrings.continue]
   @scala.inline
-  def continue: typings.nssm.nssmStrings.continue = this.cast("continue")
+  def get: typings.nssm.nssmStrings.get = "get".asInstanceOf[typings.nssm.nssmStrings.get]
   @scala.inline
-  def get: typings.nssm.nssmStrings.get = this.cast("get")
+  def install: typings.nssm.nssmStrings.install = "install".asInstanceOf[typings.nssm.nssmStrings.install]
   @scala.inline
-  def install: typings.nssm.nssmStrings.install = this.cast("install")
+  def pause: typings.nssm.nssmStrings.pause = "pause".asInstanceOf[typings.nssm.nssmStrings.pause]
   @scala.inline
-  def pause: typings.nssm.nssmStrings.pause = this.cast("pause")
+  def remove: typings.nssm.nssmStrings.remove = "remove".asInstanceOf[typings.nssm.nssmStrings.remove]
   @scala.inline
-  def remove: typings.nssm.nssmStrings.remove = this.cast("remove")
+  def reset: typings.nssm.nssmStrings.reset = "reset".asInstanceOf[typings.nssm.nssmStrings.reset]
   @scala.inline
-  def reset: typings.nssm.nssmStrings.reset = this.cast("reset")
+  def restart: typings.nssm.nssmStrings.restart = "restart".asInstanceOf[typings.nssm.nssmStrings.restart]
   @scala.inline
-  def restart: typings.nssm.nssmStrings.restart = this.cast("restart")
+  def rotate: typings.nssm.nssmStrings.rotate = "rotate".asInstanceOf[typings.nssm.nssmStrings.rotate]
   @scala.inline
-  def rotate: typings.nssm.nssmStrings.rotate = this.cast("rotate")
+  def set: typings.nssm.nssmStrings.set = "set".asInstanceOf[typings.nssm.nssmStrings.set]
   @scala.inline
-  def set: typings.nssm.nssmStrings.set = this.cast("set")
+  def start: typings.nssm.nssmStrings.start = "start".asInstanceOf[typings.nssm.nssmStrings.start]
   @scala.inline
-  def start: typings.nssm.nssmStrings.start = this.cast("start")
+  def status: typings.nssm.nssmStrings.status = "status".asInstanceOf[typings.nssm.nssmStrings.status]
   @scala.inline
-  def status: typings.nssm.nssmStrings.status = this.cast("status")
-  @scala.inline
-  def stop: typings.nssm.nssmStrings.stop = this.cast("stop")
+  def stop: typings.nssm.nssmStrings.stop = "stop".asInstanceOf[typings.nssm.nssmStrings.stop]
 }
 

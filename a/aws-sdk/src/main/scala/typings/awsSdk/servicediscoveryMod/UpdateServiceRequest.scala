@@ -20,7 +20,6 @@ object UpdateServiceRequest {
   @scala.inline
   def apply(Id: ResourceId, Service: ServiceChange): UpdateServiceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Service = Service.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateServiceRequest]
   }
 }

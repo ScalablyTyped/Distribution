@@ -20,26 +20,24 @@ trait ObjectFitProperty extends js.Object
 
 object ObjectFitProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def contain: typings.csstype.csstypeStrings.contain = "contain".asInstanceOf[typings.csstype.csstypeStrings.contain]
   @scala.inline
-  def contain: typings.csstype.csstypeStrings.contain = this.cast("contain")
+  def cover: typings.csstype.csstypeStrings.cover = "cover".asInstanceOf[typings.csstype.csstypeStrings.cover]
   @scala.inline
-  def cover: typings.csstype.csstypeStrings.cover = this.cast("cover")
+  def fill: typings.csstype.csstypeStrings.fill = "fill".asInstanceOf[typings.csstype.csstypeStrings.fill]
   @scala.inline
-  def fill: typings.csstype.csstypeStrings.fill = this.cast("fill")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
   @scala.inline
-  def none: typings.csstype.csstypeStrings.none = this.cast("none")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def `scale-down`: typings.csstype.csstypeStrings.`scale-down` = "scale-down".asInstanceOf[typings.csstype.csstypeStrings.`scale-down`]
   @scala.inline
-  def `scale-down`: typings.csstype.csstypeStrings.`scale-down` = this.cast("scale-down")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

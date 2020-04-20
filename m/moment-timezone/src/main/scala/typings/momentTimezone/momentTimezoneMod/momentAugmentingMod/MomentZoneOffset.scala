@@ -13,7 +13,6 @@ object MomentZoneOffset {
   @scala.inline
   def apply(name: String, offset: Double): MomentZoneOffset = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MomentZoneOffset]
   }
 }

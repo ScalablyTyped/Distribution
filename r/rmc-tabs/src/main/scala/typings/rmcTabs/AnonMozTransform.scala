@@ -14,7 +14,6 @@ object AnonMozTransform {
   @scala.inline
   def apply(MozTransform: js.Any, WebkitTransform: js.Any, transform: js.Any): AnonMozTransform = {
     val __obj = js.Dynamic.literal(MozTransform = MozTransform.asInstanceOf[js.Any], WebkitTransform = WebkitTransform.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMozTransform]
   }
 }

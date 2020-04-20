@@ -13,7 +13,6 @@ object CreateJourneyResponse {
   @scala.inline
   def apply(JourneyResponse: JourneyResponse): CreateJourneyResponse = {
     val __obj = js.Dynamic.literal(JourneyResponse = JourneyResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateJourneyResponse]
   }
 }

@@ -16,7 +16,6 @@ object AnonOptions {
   @scala.inline
   def apply[TData, TVariables](context: ApolloContextValue, options: SubscriptionOptions[TData, TVariables], setResult: js.Any): AnonOptions[TData, TVariables] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], setResult = setResult.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOptions[TData, TVariables]]
   }
 }

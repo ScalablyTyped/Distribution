@@ -13,7 +13,6 @@ object GitQueryBranchStatsCriteria {
   @scala.inline
   def apply(baseCommit: GitVersionDescriptor, targetCommits: js.Array[GitVersionDescriptor]): GitQueryBranchStatsCriteria = {
     val __obj = js.Dynamic.literal(baseCommit = baseCommit.asInstanceOf[js.Any], targetCommits = targetCommits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitQueryBranchStatsCriteria]
   }
 }

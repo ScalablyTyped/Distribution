@@ -17,7 +17,6 @@ object PickparsersSinkMapEventEm {
   @scala.inline
   def apply(parsers: SinkMap[EventEmitter, Stream[Quad]]): PickparsersSinkMapEventEm = {
     val __obj = js.Dynamic.literal(parsers = parsers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickparsersSinkMapEventEm]
   }
 }

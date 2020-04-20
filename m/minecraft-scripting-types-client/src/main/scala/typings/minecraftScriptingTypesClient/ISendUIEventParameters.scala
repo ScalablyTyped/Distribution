@@ -23,7 +23,6 @@ object ISendUIEventParameters {
   @scala.inline
   def apply(data: String, eventIdentifier: String): ISendUIEventParameters = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], eventIdentifier = eventIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISendUIEventParameters]
   }
 }

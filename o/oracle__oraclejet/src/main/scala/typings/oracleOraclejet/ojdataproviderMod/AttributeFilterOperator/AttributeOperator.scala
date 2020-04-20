@@ -21,28 +21,26 @@ trait AttributeOperator extends js.Object
 
 object AttributeOperator {
   @scala.inline
-  def $co: typings.oracleOraclejet.oracleOraclejetStrings.$co = this.cast("$co")
+  def $co: typings.oracleOraclejet.oracleOraclejetStrings.$co = "$co".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$co]
   @scala.inline
-  def $eq: typings.oracleOraclejet.oracleOraclejetStrings.$eq = this.cast("$eq")
+  def $eq: typings.oracleOraclejet.oracleOraclejetStrings.$eq = "$eq".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$eq]
   @scala.inline
-  def $ew: typings.oracleOraclejet.oracleOraclejetStrings.$ew = this.cast("$ew")
+  def $ew: typings.oracleOraclejet.oracleOraclejetStrings.$ew = "$ew".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$ew]
   @scala.inline
-  def $ge: typings.oracleOraclejet.oracleOraclejetStrings.$ge = this.cast("$ge")
+  def $ge: typings.oracleOraclejet.oracleOraclejetStrings.$ge = "$ge".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$ge]
   @scala.inline
-  def $gt: typings.oracleOraclejet.oracleOraclejetStrings.$gt = this.cast("$gt")
+  def $gt: typings.oracleOraclejet.oracleOraclejetStrings.$gt = "$gt".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$gt]
   @scala.inline
-  def $le: typings.oracleOraclejet.oracleOraclejetStrings.$le = this.cast("$le")
+  def $le: typings.oracleOraclejet.oracleOraclejetStrings.$le = "$le".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$le]
   @scala.inline
-  def $lt: typings.oracleOraclejet.oracleOraclejetStrings.$lt = this.cast("$lt")
+  def $lt: typings.oracleOraclejet.oracleOraclejetStrings.$lt = "$lt".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$lt]
   @scala.inline
-  def $ne: typings.oracleOraclejet.oracleOraclejetStrings.$ne = this.cast("$ne")
+  def $ne: typings.oracleOraclejet.oracleOraclejetStrings.$ne = "$ne".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$ne]
   @scala.inline
-  def $pr: typings.oracleOraclejet.oracleOraclejetStrings.$pr = this.cast("$pr")
+  def $pr: typings.oracleOraclejet.oracleOraclejetStrings.$pr = "$pr".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$pr]
   @scala.inline
-  def $regex: typings.oracleOraclejet.oracleOraclejetStrings.$regex = this.cast("$regex")
+  def $regex: typings.oracleOraclejet.oracleOraclejetStrings.$regex = "$regex".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$regex]
   @scala.inline
-  def $sw: typings.oracleOraclejet.oracleOraclejetStrings.$sw = this.cast("$sw")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def $sw: typings.oracleOraclejet.oracleOraclejetStrings.$sw = "$sw".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$sw]
 }
 

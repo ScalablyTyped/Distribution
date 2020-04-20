@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line:interface-name
 trait InsertRangeRequest extends js.Object {
   /** The range to insert new cells into. */
   var range: js.UndefOr[GridRange] = js.undefined

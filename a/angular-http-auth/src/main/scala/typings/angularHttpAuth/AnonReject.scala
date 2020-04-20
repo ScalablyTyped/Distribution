@@ -13,7 +13,6 @@ object AnonReject {
   @scala.inline
   def apply(reject: js.Any => Unit, resolve: js.Any => Unit): AnonReject = {
     val __obj = js.Dynamic.literal(reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve))
-  
     __obj.asInstanceOf[AnonReject]
   }
 }

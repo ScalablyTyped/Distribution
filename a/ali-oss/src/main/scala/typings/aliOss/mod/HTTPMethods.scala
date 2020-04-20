@@ -14,14 +14,12 @@ trait HTTPMethods extends js.Object
 
 object HTTPMethods {
   @scala.inline
-  def DELETE: typings.aliOss.aliOssStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.aliOss.aliOssStrings.DELETE = "DELETE".asInstanceOf[typings.aliOss.aliOssStrings.DELETE]
   @scala.inline
-  def GET: typings.aliOss.aliOssStrings.GET = this.cast("GET")
+  def GET: typings.aliOss.aliOssStrings.GET = "GET".asInstanceOf[typings.aliOss.aliOssStrings.GET]
   @scala.inline
-  def POST: typings.aliOss.aliOssStrings.POST = this.cast("POST")
+  def POST: typings.aliOss.aliOssStrings.POST = "POST".asInstanceOf[typings.aliOss.aliOssStrings.POST]
   @scala.inline
-  def PUT: typings.aliOss.aliOssStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUT: typings.aliOss.aliOssStrings.PUT = "PUT".asInstanceOf[typings.aliOss.aliOssStrings.PUT]
 }
 

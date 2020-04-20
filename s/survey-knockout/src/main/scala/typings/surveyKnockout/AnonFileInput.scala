@@ -44,7 +44,6 @@ object AnonFileInput {
     wrapper: String
   ): AnonFileInput = {
     val __obj = js.Dynamic.literal(chooseFile = chooseFile.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], fileDecorator = fileDecorator.asInstanceOf[js.Any], fileInput = fileInput.asInstanceOf[js.Any], fileSign = fileSign.asInstanceOf[js.Any], fileSignBottom = fileSignBottom.asInstanceOf[js.Any], noFileChosen = noFileChosen.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], placeholderInput = placeholderInput.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], removeButton = removeButton.asInstanceOf[js.Any], removeButtonBottom = removeButtonBottom.asInstanceOf[js.Any], removeFile = removeFile.asInstanceOf[js.Any], removeFileSvg = removeFileSvg.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFileInput]
   }
 }

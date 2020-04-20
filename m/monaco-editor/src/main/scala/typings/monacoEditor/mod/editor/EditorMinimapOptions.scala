@@ -29,7 +29,6 @@ object EditorMinimapOptions {
     side: right | left
   ): EditorMinimapOptions = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], maxColumn = maxColumn.asInstanceOf[js.Any], renderCharacters = renderCharacters.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], showSlider = showSlider.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditorMinimapOptions]
   }
 }

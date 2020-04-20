@@ -13,7 +13,6 @@ object Anon0 {
   @scala.inline
   def apply[T](children: T => ComponentChildren): Anon0[T] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[Anon0[T]]
   }
 }

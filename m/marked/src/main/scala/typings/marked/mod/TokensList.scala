@@ -17,11 +17,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Array<marked.marked.Token> & {  links  :{[key: string] : {  href  :string,   title  :string}}} */
+/* Inlined std.Array<marked.marked.Token> & {  links  :{[key: string] : {  href  :string | null,   title  :string | null}}} */
 @js.native
 trait TokensList extends /* n */ NumberDictionary[Token] {
   /** Iterator */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Token]] = js.native
   /**
     * Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.
@@ -32,7 +32,7 @@ trait TokensList extends /* n */ NumberDictionary[Token] {
     * Returns an object whose properties have the value 'true'
     * when they will be absent when used in a 'with' statement.
     */
-  @JSName(scala.scalajs.js.Symbol.unscopables)
+  @JSName(js.Symbol.unscopables)
   var unscopables: js.Function0[AnonCopyWithin] = js.native
   /**
     * Combines two or more arrays.

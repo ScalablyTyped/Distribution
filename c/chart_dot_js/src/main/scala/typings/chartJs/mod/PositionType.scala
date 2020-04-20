@@ -15,16 +15,14 @@ trait PositionType extends js.Object
 
 object PositionType {
   @scala.inline
-  def bottom: typings.chartJs.chartJsStrings.bottom = this.cast("bottom")
+  def bottom: typings.chartJs.chartJsStrings.bottom = "bottom".asInstanceOf[typings.chartJs.chartJsStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chartArea: typings.chartJs.chartJsStrings.chartArea = "chartArea".asInstanceOf[typings.chartJs.chartJsStrings.chartArea]
   @scala.inline
-  def chartArea: typings.chartJs.chartJsStrings.chartArea = this.cast("chartArea")
+  def left: typings.chartJs.chartJsStrings.left = "left".asInstanceOf[typings.chartJs.chartJsStrings.left]
   @scala.inline
-  def left: typings.chartJs.chartJsStrings.left = this.cast("left")
+  def right: typings.chartJs.chartJsStrings.right = "right".asInstanceOf[typings.chartJs.chartJsStrings.right]
   @scala.inline
-  def right: typings.chartJs.chartJsStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.chartJs.chartJsStrings.top = this.cast("top")
+  def top: typings.chartJs.chartJsStrings.top = "top".asInstanceOf[typings.chartJs.chartJsStrings.top]
 }
 

@@ -16,7 +16,6 @@ object DeleteDatastoreRequest {
   @scala.inline
   def apply(datastoreName: DatastoreName): DeleteDatastoreRequest = {
     val __obj = js.Dynamic.literal(datastoreName = datastoreName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDatastoreRequest]
   }
 }

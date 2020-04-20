@@ -27,6 +27,22 @@ trait SketchUpdateUpdateOptions extends Object {
     */
   var enableScaling: js.UndefOr[Boolean] = js.undefined
   /**
+    * Indicates if z-values can be modified when updating the graphic. When enabled, the height handle manipulator is displayed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
+    *
+    * @default true
+    */
+  var enableZ: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Indicates whether more than one selection can be made at once.  This applies to the shift+click interaction with the `transform` tool.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
+    *
+    * @default true
+    */
+  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * Indicates if the uniform scale operation will be enabled when updating graphics. `enableScaling` must be set `true` when setting this property to `true`. Only applies if `tool` is `transform` and is always `true` when transforming points that use a [3D object symbol layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
@@ -65,6 +81,8 @@ object SketchUpdateUpdateOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     enableRotation: js.UndefOr[Boolean] = js.undefined,
     enableScaling: js.UndefOr[Boolean] = js.undefined,
+    enableZ: js.UndefOr[Boolean] = js.undefined,
+    multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined,
     preserveAspectRatio: js.UndefOr[Boolean] = js.undefined,
     toggleToolOnClick: js.UndefOr[Boolean] = js.undefined,
     tool: transform | reshape | move = null
@@ -72,6 +90,8 @@ object SketchUpdateUpdateOptions {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation.asInstanceOf[js.Any])
     if (!js.isUndefined(enableScaling)) __obj.updateDynamic("enableScaling")(enableScaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableZ)) __obj.updateDynamic("enableZ")(enableZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleSelectionEnabled)) __obj.updateDynamic("multipleSelectionEnabled")(multipleSelectionEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveAspectRatio)) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
     if (!js.isUndefined(toggleToolOnClick)) __obj.updateDynamic("toggleToolOnClick")(toggleToolOnClick.asInstanceOf[js.Any])
     if (tool != null) __obj.updateDynamic("tool")(tool.asInstanceOf[js.Any])

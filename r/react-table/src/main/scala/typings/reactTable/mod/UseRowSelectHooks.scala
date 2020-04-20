@@ -26,7 +26,6 @@ object UseRowSelectHooks {
     ]
   ): UseRowSelectHooks[D] = {
     val __obj = js.Dynamic.literal(getToggleAllRowsSelectedProps = getToggleAllRowsSelectedProps.asInstanceOf[js.Any], getToggleRowSelectedProps = getToggleRowSelectedProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseRowSelectHooks[D]]
   }
 }

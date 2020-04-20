@@ -17,7 +17,6 @@ object GetFrameResultDetails {
   @scala.inline
   def apply(errorOccurred: Boolean, parentFrameId: Double, url: String): GetFrameResultDetails = {
     val __obj = js.Dynamic.literal(errorOccurred = errorOccurred.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFrameResultDetails]
   }
 }

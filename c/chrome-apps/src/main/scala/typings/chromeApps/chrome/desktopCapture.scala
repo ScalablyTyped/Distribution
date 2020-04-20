@@ -1,9 +1,14 @@
 package typings.chromeApps.chrome
 
 import typings.chromeApps.AnonAUDIO
-import typings.chromeApps.chromeAppsStrings.screen
-import typings.chromeApps.chromeAppsStrings.tab
-import typings.chromeApps.chromeAppsStrings.window
+import typings.chromeApps.chromeAppsStrings.AUDIO
+import typings.chromeApps.chromeAppsStrings.SCREEN
+import typings.chromeApps.chromeAppsStrings.TAB
+import typings.chromeApps.chromeAppsStrings.WINDOW
+import typings.chromeApps.chromeAppsStrings.audio_
+import typings.chromeApps.chromeAppsStrings.screen_
+import typings.chromeApps.chromeAppsStrings.tab_
+import typings.chromeApps.chromeAppsStrings.window_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,18 +44,18 @@ object desktopCapture extends js.Object {
     sources: js.Array[
       ToStringLiteral[
         AnonAUDIO, 
-        String, 
-        Exclude[String, screen | window | tab | typings.chromeApps.chromeAppsStrings.audio]
+        SCREEN | WINDOW | TAB | AUDIO, 
+        Exclude[SCREEN | WINDOW | TAB | AUDIO, screen_ | window_ | tab_ | audio_]
       ]
     ],
     callback: js.Function1[/* streamId */ String, Unit]
   ): integer = js.native
   @js.native
   object DesktopCaptureSourceType extends js.Object {
-    var AUDIO: typings.chromeApps.chromeAppsStrings.audio = js.native
-    var SCREEN: screen = js.native
-    var TAB: tab = js.native
-    var WINDOW: window = js.native
+    var AUDIO: audio_ = js.native
+    var SCREEN: screen_ = js.native
+    var TAB: tab_ = js.native
+    var WINDOW: window_ = js.native
   }
   
 }

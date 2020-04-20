@@ -12,7 +12,6 @@ object IProvisioningAgentStaticMethods {
   @scala.inline
   def apply(createFromNetworkAccountId: String => ProvisioningAgent): IProvisioningAgentStaticMethods = {
     val __obj = js.Dynamic.literal(createFromNetworkAccountId = js.Any.fromFunction1(createFromNetworkAccountId))
-  
     __obj.asInstanceOf[IProvisioningAgentStaticMethods]
   }
 }

@@ -28,7 +28,6 @@ object PutClusterCapacityProvidersRequest {
     defaultCapacityProviderStrategy: CapacityProviderStrategy
   ): PutClusterCapacityProvidersRequest = {
     val __obj = js.Dynamic.literal(capacityProviders = capacityProviders.asInstanceOf[js.Any], cluster = cluster.asInstanceOf[js.Any], defaultCapacityProviderStrategy = defaultCapacityProviderStrategy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutClusterCapacityProvidersRequest]
   }
 }

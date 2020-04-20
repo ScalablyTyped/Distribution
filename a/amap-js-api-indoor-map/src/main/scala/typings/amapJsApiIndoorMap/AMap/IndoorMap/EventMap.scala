@@ -31,7 +31,6 @@ object EventMap {
     mouseover: MouseEvent[mouseover]
   ): EventMap = {
     val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], floor_complete = floor_complete.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventMap]
   }
 }

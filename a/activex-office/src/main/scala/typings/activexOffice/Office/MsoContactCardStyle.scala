@@ -14,10 +14,8 @@ trait MsoContactCardStyle extends js.Object
 
 object MsoContactCardStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoContactCardFull: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoContactCardFull: `1` = this.cast(1)
-  @scala.inline
-  def msoContactCardHover: `0` = this.cast(0)
+  def msoContactCardHover: `0` = 0.asInstanceOf[`0`]
 }
 

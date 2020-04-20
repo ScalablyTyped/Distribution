@@ -17,7 +17,6 @@ object Backends {
   @scala.inline
   def apply(backends: js.Array[BackendDeclaration]): Backends = {
     val __obj = js.Dynamic.literal(backends = backends.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Backends]
   }
 }

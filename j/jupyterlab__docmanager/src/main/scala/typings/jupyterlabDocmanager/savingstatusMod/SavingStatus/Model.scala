@@ -28,7 +28,7 @@ class Model protected () extends VDomModel {
   /**
     * The current status of the model.
     */
-  def status(): SaveState | Null = js.native
+  def status: SaveState | Null = js.native
   def widget(): js.Any = js.native
   def widget(widget: Widget): js.Any = js.native
   /**
@@ -37,6 +37,6 @@ class Model protected () extends VDomModel {
     * known to the application document manager.
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
 }
 

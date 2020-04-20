@@ -14,7 +14,6 @@ object ColumnConstraint {
   @scala.inline
   def apply(constraints: String, foreignKey: CallbackFunction => Unit): ColumnConstraint = {
     val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any], foreignKey = js.Any.fromFunction1(foreignKey))
-  
     __obj.asInstanceOf[ColumnConstraint]
   }
 }

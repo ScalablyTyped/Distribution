@@ -26,38 +26,36 @@ trait ProjectionType extends js.Object
 
 object ProjectionType {
   @scala.inline
-  def albers: typings.vegaTypings.vegaTypingsStrings.albers = this.cast("albers")
+  def albers: typings.vegaTypings.vegaTypingsStrings.albers = "albers".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.albers]
   @scala.inline
-  def albersUsa: typings.vegaTypings.vegaTypingsStrings.albersUsa = this.cast("albersUsa")
+  def albersUsa: typings.vegaTypings.vegaTypingsStrings.albersUsa = "albersUsa".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.albersUsa]
   @scala.inline
-  def azimuthalEqualArea: typings.vegaTypings.vegaTypingsStrings.azimuthalEqualArea = this.cast("azimuthalEqualArea")
+  def azimuthalEqualArea: typings.vegaTypings.vegaTypingsStrings.azimuthalEqualArea = "azimuthalEqualArea".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.azimuthalEqualArea]
   @scala.inline
-  def azimuthalEquidistant: typings.vegaTypings.vegaTypingsStrings.azimuthalEquidistant = this.cast("azimuthalEquidistant")
+  def azimuthalEquidistant: typings.vegaTypings.vegaTypingsStrings.azimuthalEquidistant = "azimuthalEquidistant".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.azimuthalEquidistant]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def conicConformal: typings.vegaTypings.vegaTypingsStrings.conicConformal = "conicConformal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.conicConformal]
   @scala.inline
-  def conicConformal: typings.vegaTypings.vegaTypingsStrings.conicConformal = this.cast("conicConformal")
+  def conicEqualArea: typings.vegaTypings.vegaTypingsStrings.conicEqualArea = "conicEqualArea".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.conicEqualArea]
   @scala.inline
-  def conicEqualArea: typings.vegaTypings.vegaTypingsStrings.conicEqualArea = this.cast("conicEqualArea")
+  def conicEquidistant: typings.vegaTypings.vegaTypingsStrings.conicEquidistant = "conicEquidistant".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.conicEquidistant]
   @scala.inline
-  def conicEquidistant: typings.vegaTypings.vegaTypingsStrings.conicEquidistant = this.cast("conicEquidistant")
+  def equalEarth: typings.vegaTypings.vegaTypingsStrings.equalEarth = "equalEarth".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.equalEarth]
   @scala.inline
-  def equalEarth: typings.vegaTypings.vegaTypingsStrings.equalEarth = this.cast("equalEarth")
+  def equirectangular: typings.vegaTypings.vegaTypingsStrings.equirectangular = "equirectangular".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.equirectangular]
   @scala.inline
-  def equirectangular: typings.vegaTypings.vegaTypingsStrings.equirectangular = this.cast("equirectangular")
+  def gnomonic: typings.vegaTypings.vegaTypingsStrings.gnomonic = "gnomonic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.gnomonic]
   @scala.inline
-  def gnomonic: typings.vegaTypings.vegaTypingsStrings.gnomonic = this.cast("gnomonic")
+  def identity: typings.vegaTypings.vegaTypingsStrings.identity = "identity".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.identity]
   @scala.inline
-  def identity: typings.vegaTypings.vegaTypingsStrings.identity = this.cast("identity")
+  def mercator: typings.vegaTypings.vegaTypingsStrings.mercator = "mercator".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mercator]
   @scala.inline
-  def mercator: typings.vegaTypings.vegaTypingsStrings.mercator = this.cast("mercator")
+  def naturalEarth1: typings.vegaTypings.vegaTypingsStrings.naturalEarth1 = "naturalEarth1".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.naturalEarth1]
   @scala.inline
-  def naturalEarth1: typings.vegaTypings.vegaTypingsStrings.naturalEarth1 = this.cast("naturalEarth1")
+  def orthographic: typings.vegaTypings.vegaTypingsStrings.orthographic = "orthographic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.orthographic]
   @scala.inline
-  def orthographic: typings.vegaTypings.vegaTypingsStrings.orthographic = this.cast("orthographic")
+  def stereographic: typings.vegaTypings.vegaTypingsStrings.stereographic = "stereographic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.stereographic]
   @scala.inline
-  def stereographic: typings.vegaTypings.vegaTypingsStrings.stereographic = this.cast("stereographic")
-  @scala.inline
-  def transverseMercator: typings.vegaTypings.vegaTypingsStrings.transverseMercator = this.cast("transverseMercator")
+  def transverseMercator: typings.vegaTypings.vegaTypingsStrings.transverseMercator = "transverseMercator".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.transverseMercator]
 }
 

@@ -28,14 +28,12 @@ import scala.scalajs.js.annotation._
 trait TNodeFlags extends js.Object
 
 object TNodeFlags {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   /** Bit #5 - This bit is set if the node has any "class" inputs */
   @scala.inline
-  def hasClassInput: `16` = this.cast(16)
+  def hasClassInput: `16` = 16.asInstanceOf[`16`]
   /** Bit #4 - This bit is set if any directive on this node has content queries */
   @scala.inline
-  def hasContentQuery: `8` = this.cast(8)
+  def hasContentQuery: `8` = 8.asInstanceOf[`8`]
   /**
     * Bit #8 - This bit is set if the node has directives with host bindings.
     *
@@ -43,25 +41,25 @@ object TNodeFlags {
     * that actually have directives with host bindings.
     */
   @scala.inline
-  def hasHostBindings: `128` = this.cast(128)
+  def hasHostBindings: `128` = 128.asInstanceOf[`128`]
   /** Bit #6 - This bit is set if the node has any "style" inputs */
   @scala.inline
-  def hasStyleInput: `32` = this.cast(32)
+  def hasStyleInput: `32` = 32.asInstanceOf[`32`]
   /**
     * Bit #2 - This bit is set if the node is a host for a component.
     *
     * Setting this bit implies that the `isDirectiveHost` bit is set as well.
     * */
   @scala.inline
-  def isComponentHost: `2` = this.cast(2)
+  def isComponentHost: `2` = 2.asInstanceOf[`2`]
   /** Bit #7 This bit is set if the node has been detached by i18n */
   @scala.inline
-  def isDetached: `64` = this.cast(64)
+  def isDetached: `64` = 64.asInstanceOf[`64`]
   /** Bit #1 - This bit is set if the node is a host for any directive (including a component) */
   @scala.inline
-  def isDirectiveHost: `1` = this.cast(1)
+  def isDirectiveHost: `1` = 1.asInstanceOf[`1`]
   /** Bit #3 - This bit is set if the node has been projected */
   @scala.inline
-  def isProjected: `4` = this.cast(4)
+  def isProjected: `4` = 4.asInstanceOf[`4`]
 }
 

@@ -15,7 +15,6 @@ object NightwatchTestSuite {
   @scala.inline
   def apply(group: String, module: String, name: String, results: js.Any): NightwatchTestSuite = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NightwatchTestSuite]
   }
 }

@@ -20,7 +20,6 @@ object DeleteConditionalForwarderRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, RemoteDomainName: RemoteDomainName): DeleteConditionalForwarderRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], RemoteDomainName = RemoteDomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConditionalForwarderRequest]
   }
 }

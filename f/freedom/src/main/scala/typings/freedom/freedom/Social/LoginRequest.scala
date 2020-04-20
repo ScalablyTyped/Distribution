@@ -28,7 +28,6 @@ object LoginRequest {
   @scala.inline
   def apply(agent: String, interactive: Boolean, rememberLogin: Boolean, url: String, version: String): LoginRequest = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], interactive = interactive.asInstanceOf[js.Any], rememberLogin = rememberLogin.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoginRequest]
   }
 }

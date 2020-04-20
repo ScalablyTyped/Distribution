@@ -16,7 +16,6 @@ object GetBulkDeploymentStatusRequest {
   @scala.inline
   def apply(BulkDeploymentId: string): GetBulkDeploymentStatusRequest = {
     val __obj = js.Dynamic.literal(BulkDeploymentId = BulkDeploymentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBulkDeploymentStatusRequest]
   }
 }

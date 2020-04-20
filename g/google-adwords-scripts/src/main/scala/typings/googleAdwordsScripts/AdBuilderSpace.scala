@@ -26,7 +26,6 @@ object AdBuilderSpace {
     responsiveDisplayAdBuilder: () => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
   ): AdBuilderSpace = {
     val __obj = js.Dynamic.literal(expandedTextAdBuilder = js.Any.fromFunction0(expandedTextAdBuilder), gmailImageAdBuilder = js.Any.fromFunction0(gmailImageAdBuilder), gmailMultiProductAdBuilder = js.Any.fromFunction0(gmailMultiProductAdBuilder), gmailSinglePromotionAdBuilder = js.Any.fromFunction0(gmailSinglePromotionAdBuilder), html5AdBuilder = js.Any.fromFunction0(html5AdBuilder), imageAdBuilder = js.Any.fromFunction0(imageAdBuilder), responsiveDisplayAdBuilder = js.Any.fromFunction0(responsiveDisplayAdBuilder))
-  
     __obj.asInstanceOf[AdBuilderSpace]
   }
 }

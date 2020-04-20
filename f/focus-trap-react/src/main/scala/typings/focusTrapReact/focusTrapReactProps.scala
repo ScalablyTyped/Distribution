@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait focusTrapReactProps {
   @scala.inline
-  def FocusTrapReactProps: Props.type = typings.focusTrapReact.mod.Props
+  def FocusTrapReactProps: Props.type = Props
   type FocusTrapReactProps = Props
 }
 

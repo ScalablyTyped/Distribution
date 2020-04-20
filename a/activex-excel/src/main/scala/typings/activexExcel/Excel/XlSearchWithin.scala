@@ -14,10 +14,8 @@ trait XlSearchWithin extends js.Object
 
 object XlSearchWithin {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlWithinSheet: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlWithinSheet: `1` = this.cast(1)
-  @scala.inline
-  def xlWithinWorkbook: `2` = this.cast(2)
+  def xlWithinWorkbook: `2` = 2.asInstanceOf[`2`]
 }
 

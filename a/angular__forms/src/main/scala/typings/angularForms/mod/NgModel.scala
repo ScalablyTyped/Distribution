@@ -80,7 +80,7 @@ class NgModel protected ()
     * @description
     * The top-level directive for this control if present, otherwise null.
     */
-  def formDirective(): js.Any = js.native
+  def formDirective: js.Any = js.native
   /**
     * A callback method that is invoked immediately after the
     * default change detector has checked data-bound properties

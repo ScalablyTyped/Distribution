@@ -13,7 +13,6 @@ object Repos {
   @scala.inline
   def apply(git: Paths, hg: Paths): Repos = {
     val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], hg = hg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Repos]
   }
 }

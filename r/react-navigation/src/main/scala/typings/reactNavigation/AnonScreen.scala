@@ -13,7 +13,6 @@ object AnonScreen {
   @scala.inline
   def apply[Options, NavigationScreenPropType](screen: NavigationComponent[Options, NavigationScreenPropType]): AnonScreen[Options, NavigationScreenPropType] = {
     val __obj = js.Dynamic.literal(screen = screen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScreen[Options, NavigationScreenPropType]]
   }
 }

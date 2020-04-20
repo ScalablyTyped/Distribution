@@ -16,7 +16,6 @@ object GetSoftwareUpdatesRequest {
   @scala.inline
   def apply(JobId: JobId): GetSoftwareUpdatesRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSoftwareUpdatesRequest]
   }
 }

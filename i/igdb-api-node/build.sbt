@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "igdb-api-node"
-version := "4.0-dt-20200323Z-fd0a62"
+version := "4.0-dt-20200323Z-ec310e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apicalypse" % "0.1-dt-20200323Z-247783",
-  "org.scalablytyped" %%% "axios" % "0.19.2-f077fd",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "apicalypse" % "0.1-dt-20200323Z-422381",
+  "org.scalablytyped" %%% "axios" % "0.19.2-58a305",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

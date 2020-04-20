@@ -37,7 +37,6 @@ object Options {
     popstate: Boolean
   ): Options = {
     val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], decodeURLComponents = decodeURLComponents.asInstanceOf[js.Any], dispatch = dispatch.asInstanceOf[js.Any], hashbang = hashbang.asInstanceOf[js.Any], popstate = popstate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

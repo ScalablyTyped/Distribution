@@ -23,18 +23,18 @@ class TransformBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the output component
     */
-  def output(): NodeMaterialConnectionPoint = js.native
+  def output: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the matrix transform input
     */
-  def transform(): NodeMaterialConnectionPoint = js.native
+  def transform: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the vector input
     */
-  def vector(): NodeMaterialConnectionPoint = js.native
+  def vector: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the xyz output component
     */
-  def xyz(): NodeMaterialConnectionPoint = js.native
+  def xyz: NodeMaterialConnectionPoint = js.native
 }
 

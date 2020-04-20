@@ -12,10 +12,8 @@ trait ExceptionsBehavior extends js.Object
 
 object ExceptionsBehavior {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def propagate: typings.fridaGum.fridaGumStrings.propagate = "propagate".asInstanceOf[typings.fridaGum.fridaGumStrings.propagate]
   @scala.inline
-  def propagate: typings.fridaGum.fridaGumStrings.propagate = this.cast("propagate")
-  @scala.inline
-  def steal: typings.fridaGum.fridaGumStrings.steal = this.cast("steal")
+  def steal: typings.fridaGum.fridaGumStrings.steal = "steal".asInstanceOf[typings.fridaGum.fridaGumStrings.steal]
 }
 

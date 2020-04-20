@@ -16,7 +16,6 @@ object LambdaAction {
   @scala.inline
   def apply(functionArn: FunctionArn): LambdaAction = {
     val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LambdaAction]
   }
 }

@@ -14,7 +14,6 @@ object PickImplerrorError {
   @scala.inline
   def apply(error: `false` | String): PickImplerrorError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplerrorError]
   }
 }

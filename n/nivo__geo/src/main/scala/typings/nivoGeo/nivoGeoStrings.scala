@@ -58,7 +58,7 @@ object nivoGeoStrings {
   @scala.inline
   def stereographic: stereographic = "stereographic".asInstanceOf[stereographic]
   @scala.inline
-  def `string VerticallineNobreakspacenumber`: `string VerticallineNobreakspacenumber` = "string |\u00A0number".asInstanceOf[`string VerticallineNobreakspacenumber`]
+  def `string VerticallineNobreakspacenumber`: `string VerticallineNobreakspacenumber` = ("string |\u00A0number").asInstanceOf[`string VerticallineNobreakspacenumber`]
   @scala.inline
   def transverseMercator: transverseMercator = "transverseMercator".asInstanceOf[transverseMercator]
 }

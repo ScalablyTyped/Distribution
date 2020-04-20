@@ -14,7 +14,6 @@ object CheckResponse {
   @scala.inline
   def apply(error: Error, result: Boolean): CheckResponse = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckResponse]
   }
 }

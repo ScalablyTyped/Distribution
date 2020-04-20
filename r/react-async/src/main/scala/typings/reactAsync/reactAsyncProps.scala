@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 trait reactAsyncProps {
   @scala.inline
-  def IfFulfilledProps: AnonChildren.type = typings.reactAsync.AnonChildren
+  def IfFulfilledProps: AnonChildren.type = AnonChildren
   type IfFulfilledProps[T /* <: js.Object */] = AnonChildren[T]
   @scala.inline
-  def IfInitialProps: AnonState.type = typings.reactAsync.AnonState
+  def IfInitialProps: AnonState.type = AnonState
   type IfInitialProps[T /* <: js.Object */] = AnonState[T]
   @scala.inline
-  def IfPendingProps: AnonInitial.type = typings.reactAsync.AnonInitial
+  def IfPendingProps: AnonInitial.type = AnonInitial
   type IfPendingProps[T /* <: js.Object */] = AnonInitial[T]
   @scala.inline
-  def IfRejectedProps: AnonChildrenPersist.type = typings.reactAsync.AnonChildrenPersist
+  def IfRejectedProps: AnonChildrenPersist.type = AnonChildrenPersist
   type IfRejectedProps[T /* <: js.Object */] = AnonChildrenPersist[T]
   @scala.inline
-  def IfSettledProps: AnonPersistState.type = typings.reactAsync.AnonPersistState
+  def IfSettledProps: AnonPersistState.type = AnonPersistState
   type IfSettledProps[T /* <: js.Object */] = AnonPersistState[T]
 }
 

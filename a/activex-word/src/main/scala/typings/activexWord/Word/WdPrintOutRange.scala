@@ -20,16 +20,14 @@ trait WdPrintOutRange extends js.Object
 
 object WdPrintOutRange {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdPrintAllDocument: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdPrintAllDocument: `0` = this.cast(0)
+  def wdPrintCurrentPage: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPrintCurrentPage: `2` = this.cast(2)
+  def wdPrintFromTo: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdPrintFromTo: `3` = this.cast(3)
+  def wdPrintRangeOfPages: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdPrintRangeOfPages: `4` = this.cast(4)
-  @scala.inline
-  def wdPrintSelection: `1` = this.cast(1)
+  def wdPrintSelection: `1` = 1.asInstanceOf[`1`]
 }
 

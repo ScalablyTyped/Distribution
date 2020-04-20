@@ -24,7 +24,6 @@ object UpdateObjectAttributesRequest {
   @scala.inline
   def apply(AttributeUpdates: ObjectAttributeUpdateList, DirectoryArn: Arn, ObjectReference: ObjectReference): UpdateObjectAttributesRequest = {
     val __obj = js.Dynamic.literal(AttributeUpdates = AttributeUpdates.asInstanceOf[js.Any], DirectoryArn = DirectoryArn.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateObjectAttributesRequest]
   }
 }

@@ -105,7 +105,7 @@ class SubMesh protected ()
     * Returns true if this submesh covers the entire parent mesh
     * @ignorenaming
     */
-  def IsGlobal(): Boolean = js.native
+  def IsGlobal: Boolean = js.native
   /** @hidden */
   def _checkCollision(collider: Collider): Boolean = js.native
   /**

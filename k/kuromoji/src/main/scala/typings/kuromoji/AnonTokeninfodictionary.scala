@@ -15,7 +15,6 @@ object AnonTokeninfodictionary {
   @scala.inline
   def apply(token_info_dictionary: TokenInfoDictionary, trie: DoubleArray): AnonTokeninfodictionary = {
     val __obj = js.Dynamic.literal(token_info_dictionary = token_info_dictionary.asInstanceOf[js.Any], trie = trie.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTokeninfodictionary]
   }
 }

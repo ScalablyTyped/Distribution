@@ -13,7 +13,6 @@ object AnonPw {
   @scala.inline
   def apply(pw: String, un: String): AnonPw = {
     val __obj = js.Dynamic.literal(pw = pw.asInstanceOf[js.Any], un = un.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPw]
   }
 }

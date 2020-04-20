@@ -24,7 +24,6 @@ object IWorkspace {
   @scala.inline
   def apply(data: ReadonlyPartialJSONObject, metadata: AnonId): IWorkspace = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWorkspace]
   }
 }

@@ -12,7 +12,6 @@ object CanvasFilters {
   @scala.inline
   def apply(filter: java.lang.String): CanvasFilters = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CanvasFilters]
   }
 }

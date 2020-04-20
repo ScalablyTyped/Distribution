@@ -28,7 +28,6 @@ object GetRateBasedStatementManagedKeysRequest {
   @scala.inline
   def apply(RuleName: EntityName, Scope: Scope, WebACLId: EntityId, WebACLName: EntityName): GetRateBasedStatementManagedKeysRequest = {
     val __obj = js.Dynamic.literal(RuleName = RuleName.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any], WebACLName = WebACLName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRateBasedStatementManagedKeysRequest]
   }
 }

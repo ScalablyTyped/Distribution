@@ -1,10 +1,5 @@
 package typings.plotlyJs
 
-import typings.plotlyJs.mod.Annotations
-import typings.plotlyJs.mod.Camera
-import typings.plotlyJs.mod.Domain
-import typings.plotlyJs.mod.Point
-import typings.plotlyJs.mod.SceneAxis
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.closest
@@ -15,42 +10,41 @@ import typings.plotlyJs.plotlyJsStrings.orbit
 import typings.plotlyJs.plotlyJsStrings.pan
 import typings.plotlyJs.plotlyJsStrings.turntable
 import typings.plotlyJs.plotlyJsStrings.zoom
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.Scene> */
 trait PartialSceneAnnotations extends js.Object {
-  var annotations: js.UndefOr[Partial[Annotations] | js.Array[Partial[Annotations]]] = js.undefined
+  var annotations: js.UndefOr[PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]] = js.undefined
   var aspectmode: js.UndefOr[auto | cube | data | manual] = js.undefined
-  var aspectratio: js.UndefOr[Partial[Point]] = js.undefined
+  var aspectratio: js.UndefOr[PartialPoint] = js.undefined
   var bgcolor: js.UndefOr[String] = js.undefined
-  var camera: js.UndefOr[Partial[Camera]] = js.undefined
+  var camera: js.UndefOr[PartialCameraCenter] = js.undefined
   var captureevents: js.UndefOr[Boolean] = js.undefined
-  var domain: js.UndefOr[Partial[Domain]] = js.undefined
+  var domain: js.UndefOr[PartialDomain] = js.undefined
   var dragmode: js.UndefOr[orbit | turntable | zoom | pan | `false`] = js.undefined
   var hovermode: js.UndefOr[closest | `false`] = js.undefined
-  var xaxis: js.UndefOr[Partial[SceneAxis]] = js.undefined
-  var yaxis: js.UndefOr[Partial[SceneAxis]] = js.undefined
-  var zaxis: js.UndefOr[Partial[SceneAxis]] = js.undefined
+  var xaxis: js.UndefOr[PartialSceneAxisAutorange] = js.undefined
+  var yaxis: js.UndefOr[PartialSceneAxisAutorange] = js.undefined
+  var zaxis: js.UndefOr[PartialSceneAxisAutorange] = js.undefined
 }
 
 object PartialSceneAnnotations {
   @scala.inline
   def apply(
-    annotations: Partial[Annotations] | js.Array[Partial[Annotations]] = null,
+    annotations: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor] = null,
     aspectmode: auto | cube | data | manual = null,
-    aspectratio: Partial[Point] = null,
+    aspectratio: PartialPoint = null,
     bgcolor: String = null,
-    camera: Partial[Camera] = null,
+    camera: PartialCameraCenter = null,
     captureevents: js.UndefOr[Boolean] = js.undefined,
-    domain: Partial[Domain] = null,
+    domain: PartialDomain = null,
     dragmode: orbit | turntable | zoom | pan | `false` = null,
     hovermode: closest | `false` = null,
-    xaxis: Partial[SceneAxis] = null,
-    yaxis: Partial[SceneAxis] = null,
-    zaxis: Partial[SceneAxis] = null
+    xaxis: PartialSceneAxisAutorange = null,
+    yaxis: PartialSceneAxisAutorange = null,
+    zaxis: PartialSceneAxisAutorange = null
   ): PartialSceneAnnotations = {
     val __obj = js.Dynamic.literal()
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])

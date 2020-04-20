@@ -13,7 +13,6 @@ object PickImplbeforeSendBeforeSend {
   @scala.inline
   def apply(beforeSend: String): PickImplbeforeSendBeforeSend = {
     val __obj = js.Dynamic.literal(beforeSend = beforeSend.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplbeforeSendBeforeSend]
   }
 }

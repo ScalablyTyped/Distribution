@@ -12,7 +12,6 @@ object TreeViewNodeProcessingModeEventArgs {
   @scala.inline
   def apply(node: BootstrapTreeViewNode, processOnServer: Boolean, sender: Control): TreeViewNodeProcessingModeEventArgs = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TreeViewNodeProcessingModeEventArgs]
   }
 }

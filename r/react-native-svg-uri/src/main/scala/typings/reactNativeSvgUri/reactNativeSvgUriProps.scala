@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeSvgUriProps {
   @scala.inline
-  def ReactNativeSvgUriProps: SvgUriProps.type = typings.reactNativeSvgUri.mod.SvgUriProps
+  def ReactNativeSvgUriProps: SvgUriProps.type = SvgUriProps
   type ReactNativeSvgUriProps = SvgUriProps
 }
 

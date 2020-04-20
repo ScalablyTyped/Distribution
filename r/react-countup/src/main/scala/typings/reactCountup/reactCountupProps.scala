@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCountupProps {
   @scala.inline
-  def ReactCountupProps: Props.type = typings.reactCountup.mod.Props
+  def ReactCountupProps: Props.type = Props
   type ReactCountupProps = Props
 }
 

@@ -13,7 +13,6 @@ object ChannelPayload {
   @scala.inline
   def apply(payload: Payload): ChannelPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelPayload]
   }
 }

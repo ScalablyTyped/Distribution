@@ -19,7 +19,6 @@ object WrapableInterface {
     hasMethod: String => Boolean
   ): WrapableInterface = {
     val __obj = js.Dynamic.literal(addMethod = js.Any.fromFunction2(addMethod), callMethod = js.Any.fromFunction2(callMethod), hasMethod = js.Any.fromFunction1(hasMethod))
-  
     __obj.asInstanceOf[WrapableInterface]
   }
 }

@@ -13,7 +13,6 @@ object AppsCreateInstallationTokenResponsePermissions {
   @scala.inline
   def apply(contents: String, issues: String): AppsCreateInstallationTokenResponsePermissions = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppsCreateInstallationTokenResponsePermissions]
   }
 }

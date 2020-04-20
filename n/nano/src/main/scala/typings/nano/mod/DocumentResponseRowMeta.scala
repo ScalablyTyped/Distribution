@@ -18,7 +18,6 @@ object DocumentResponseRowMeta {
   @scala.inline
   def apply(id: String, key: String, value: AnonRev): DocumentResponseRowMeta = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocumentResponseRowMeta]
   }
 }

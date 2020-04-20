@@ -16,7 +16,6 @@ object DescribeNotificationRuleRequest {
   @scala.inline
   def apply(Arn: NotificationRuleArn): DescribeNotificationRuleRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeNotificationRuleRequest]
   }
 }

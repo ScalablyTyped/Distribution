@@ -14,7 +14,6 @@ object TypeofarrayParser {
   @scala.inline
   def apply(create: (js.Any, TypeParser) => AnonParse): TypeofarrayParser = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
-  
     __obj.asInstanceOf[TypeofarrayParser]
   }
 }

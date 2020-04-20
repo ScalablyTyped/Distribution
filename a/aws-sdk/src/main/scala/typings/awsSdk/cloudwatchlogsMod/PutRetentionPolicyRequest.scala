@@ -17,7 +17,6 @@ object PutRetentionPolicyRequest {
   @scala.inline
   def apply(logGroupName: LogGroupName, retentionInDays: Days): PutRetentionPolicyRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], retentionInDays = retentionInDays.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutRetentionPolicyRequest]
   }
 }

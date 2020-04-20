@@ -17,7 +17,6 @@ object TwitterLike {
   @scala.inline
   def apply(ready: js.Function1[/* twttr */ Twitter, Unit] => Unit): TwitterLike = {
     val __obj = js.Dynamic.literal(ready = js.Any.fromFunction1(ready))
-  
     __obj.asInstanceOf[TwitterLike]
   }
 }

@@ -14,10 +14,8 @@ trait XlGradientFillType extends js.Object
 
 object XlGradientFillType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlGradientFillLinear: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlGradientFillLinear: `0` = this.cast(0)
-  @scala.inline
-  def xlGradientFillPath: `1` = this.cast(1)
+  def xlGradientFillPath: `1` = 1.asInstanceOf[`1`]
 }
 

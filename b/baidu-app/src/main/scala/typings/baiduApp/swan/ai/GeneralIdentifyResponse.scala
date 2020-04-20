@@ -17,7 +17,6 @@ object GeneralIdentifyResponse {
   @scala.inline
   def apply(log_id: Double, result: js.Array[AnonKeyword], result_num: Double): GeneralIdentifyResponse = {
     val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], result_num = result_num.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeneralIdentifyResponse]
   }
 }

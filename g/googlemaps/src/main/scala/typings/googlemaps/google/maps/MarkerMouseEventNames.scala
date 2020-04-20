@@ -20,26 +20,24 @@ trait MarkerMouseEventNames extends js.Object
 
 object MarkerMouseEventNames {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.googlemaps.googlemapsStrings.click = "click".asInstanceOf[typings.googlemaps.googlemapsStrings.click]
   @scala.inline
-  def click: typings.googlemaps.googlemapsStrings.click = this.cast("click")
+  def dblclick: typings.googlemaps.googlemapsStrings.dblclick = "dblclick".asInstanceOf[typings.googlemaps.googlemapsStrings.dblclick]
   @scala.inline
-  def dblclick: typings.googlemaps.googlemapsStrings.dblclick = this.cast("dblclick")
+  def drag: typings.googlemaps.googlemapsStrings.drag = "drag".asInstanceOf[typings.googlemaps.googlemapsStrings.drag]
   @scala.inline
-  def drag: typings.googlemaps.googlemapsStrings.drag = this.cast("drag")
+  def dragend: typings.googlemaps.googlemapsStrings.dragend = "dragend".asInstanceOf[typings.googlemaps.googlemapsStrings.dragend]
   @scala.inline
-  def dragend: typings.googlemaps.googlemapsStrings.dragend = this.cast("dragend")
+  def dragstart: typings.googlemaps.googlemapsStrings.dragstart = "dragstart".asInstanceOf[typings.googlemaps.googlemapsStrings.dragstart]
   @scala.inline
-  def dragstart: typings.googlemaps.googlemapsStrings.dragstart = this.cast("dragstart")
+  def mousedown: typings.googlemaps.googlemapsStrings.mousedown = "mousedown".asInstanceOf[typings.googlemaps.googlemapsStrings.mousedown]
   @scala.inline
-  def mousedown: typings.googlemaps.googlemapsStrings.mousedown = this.cast("mousedown")
+  def mouseout: typings.googlemaps.googlemapsStrings.mouseout = "mouseout".asInstanceOf[typings.googlemaps.googlemapsStrings.mouseout]
   @scala.inline
-  def mouseout: typings.googlemaps.googlemapsStrings.mouseout = this.cast("mouseout")
+  def mouseover: typings.googlemaps.googlemapsStrings.mouseover = "mouseover".asInstanceOf[typings.googlemaps.googlemapsStrings.mouseover]
   @scala.inline
-  def mouseover: typings.googlemaps.googlemapsStrings.mouseover = this.cast("mouseover")
+  def mouseup: typings.googlemaps.googlemapsStrings.mouseup = "mouseup".asInstanceOf[typings.googlemaps.googlemapsStrings.mouseup]
   @scala.inline
-  def mouseup: typings.googlemaps.googlemapsStrings.mouseup = this.cast("mouseup")
-  @scala.inline
-  def rightclick: typings.googlemaps.googlemapsStrings.rightclick = this.cast("rightclick")
+  def rightclick: typings.googlemaps.googlemapsStrings.rightclick = "rightclick".asInstanceOf[typings.googlemaps.googlemapsStrings.rightclick]
 }
 

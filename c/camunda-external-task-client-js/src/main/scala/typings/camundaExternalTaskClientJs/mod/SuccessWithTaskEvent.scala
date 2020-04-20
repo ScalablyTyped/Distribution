@@ -15,16 +15,14 @@ trait SuccessWithTaskEvent extends js.Object
 
 object SuccessWithTaskEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def completeColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonsuccess = "complete:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonsuccess]
   @scala.inline
-  def completeColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonsuccess = this.cast("complete:success")
+  def extendLockColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonsuccess = "extendLock:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonsuccess]
   @scala.inline
-  def extendLockColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonsuccess = this.cast("extendLock:success")
+  def handleBpmnErrorColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonsuccess = "handleBpmnError:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonsuccess]
   @scala.inline
-  def handleBpmnErrorColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonsuccess = this.cast("handleBpmnError:success")
+  def handleFailureColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonsuccess = "handleFailure:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonsuccess]
   @scala.inline
-  def handleFailureColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonsuccess = this.cast("handleFailure:success")
-  @scala.inline
-  def unlockColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonsuccess = this.cast("unlock:success")
+  def unlockColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonsuccess = "unlock:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonsuccess]
 }
 

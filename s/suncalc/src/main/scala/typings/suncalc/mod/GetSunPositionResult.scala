@@ -13,7 +13,6 @@ object GetSunPositionResult {
   @scala.inline
   def apply(altitude: Double, azimuth: Double): GetSunPositionResult = {
     val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], azimuth = azimuth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSunPositionResult]
   }
 }

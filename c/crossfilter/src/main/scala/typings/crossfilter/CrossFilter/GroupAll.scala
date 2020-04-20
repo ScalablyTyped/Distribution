@@ -26,7 +26,6 @@ object GroupAll {
     value: () => TValue
   ): GroupAll[T, TValue] = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), reduce = js.Any.fromFunction3(reduce), reduceCount = js.Any.fromFunction0(reduceCount), reduceSum = js.Any.fromFunction1(reduceSum), value = js.Any.fromFunction0(value))
-  
     __obj.asInstanceOf[GroupAll[T, TValue]]
   }
 }

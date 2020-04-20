@@ -17,7 +17,6 @@ object GeneralStats {
   @scala.inline
   def apply(commands: StringDictionary[AnonCalls], databases: NumberDictionary[AnonExpires]): GeneralStats = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], databases = databases.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeneralStats]
   }
 }

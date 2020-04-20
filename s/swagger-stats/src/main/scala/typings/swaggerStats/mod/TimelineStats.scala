@@ -15,7 +15,6 @@ object TimelineStats {
   @scala.inline
   def apply(data: Record[String, TimelineStatsData], settings: AnonBucketcurrent): TimelineStats = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimelineStats]
   }
 }

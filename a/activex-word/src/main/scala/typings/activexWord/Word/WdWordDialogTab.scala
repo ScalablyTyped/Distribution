@@ -182,180 +182,178 @@ trait WdWordDialogTab extends js.Object
 
 object WdWordDialogTab {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdDialogEmailOptionsTabQuoting: `1900002` = 1900002.asInstanceOf[`1900002`]
   @scala.inline
-  def wdDialogEmailOptionsTabQuoting: `1900002` = this.cast(1900002)
+  def wdDialogEmailOptionsTabSignature: `1900000` = 1900000.asInstanceOf[`1900000`]
   @scala.inline
-  def wdDialogEmailOptionsTabSignature: `1900000` = this.cast(1900000)
+  def wdDialogEmailOptionsTabStationary: `1900001` = 1900001.asInstanceOf[`1900001`]
   @scala.inline
-  def wdDialogEmailOptionsTabStationary: `1900001` = this.cast(1900001)
+  def wdDialogFilePageSetupTabCharsLines: `150004` = 150004.asInstanceOf[`150004`]
   @scala.inline
-  def wdDialogFilePageSetupTabCharsLines: `150004` = this.cast(150004)
+  def wdDialogFilePageSetupTabLayout: `150003` = 150003.asInstanceOf[`150003`]
   @scala.inline
-  def wdDialogFilePageSetupTabLayout: `150003` = this.cast(150003)
+  def wdDialogFilePageSetupTabMargins: `150000` = 150000.asInstanceOf[`150000`]
   @scala.inline
-  def wdDialogFilePageSetupTabMargins: `150000` = this.cast(150000)
+  def wdDialogFilePageSetupTabPaper: `150001` = 150001.asInstanceOf[`150001`]
   @scala.inline
-  def wdDialogFilePageSetupTabPaper: `150001` = this.cast(150001)
+  def wdDialogFormatBordersAndShadingTabBorders: `700000` = 700000.asInstanceOf[`700000`]
   @scala.inline
-  def wdDialogFormatBordersAndShadingTabBorders: `700000` = this.cast(700000)
+  def wdDialogFormatBordersAndShadingTabPageBorder: `700001` = 700001.asInstanceOf[`700001`]
   @scala.inline
-  def wdDialogFormatBordersAndShadingTabPageBorder: `700001` = this.cast(700001)
+  def wdDialogFormatBordersAndShadingTabShading: `700002` = 700002.asInstanceOf[`700002`]
   @scala.inline
-  def wdDialogFormatBordersAndShadingTabShading: `700002` = this.cast(700002)
+  def wdDialogFormatBulletsAndNumberingTabBulleted: `1500000` = 1500000.asInstanceOf[`1500000`]
   @scala.inline
-  def wdDialogFormatBulletsAndNumberingTabBulleted: `1500000` = this.cast(1500000)
+  def wdDialogFormatBulletsAndNumberingTabNumbered: `1500001` = 1500001.asInstanceOf[`1500001`]
   @scala.inline
-  def wdDialogFormatBulletsAndNumberingTabNumbered: `1500001` = this.cast(1500001)
+  def wdDialogFormatBulletsAndNumberingTabOutlineNumbered: `1500002` = 1500002.asInstanceOf[`1500002`]
   @scala.inline
-  def wdDialogFormatBulletsAndNumberingTabOutlineNumbered: `1500002` = this.cast(1500002)
+  def wdDialogFormatDrawingObjectTabColorsAndLines: `1200000` = 1200000.asInstanceOf[`1200000`]
   @scala.inline
-  def wdDialogFormatDrawingObjectTabColorsAndLines: `1200000` = this.cast(1200000)
+  def wdDialogFormatDrawingObjectTabHR: `1200007` = 1200007.asInstanceOf[`1200007`]
   @scala.inline
-  def wdDialogFormatDrawingObjectTabHR: `1200007` = this.cast(1200007)
+  def wdDialogFormatDrawingObjectTabPicture: `1200004` = 1200004.asInstanceOf[`1200004`]
   @scala.inline
-  def wdDialogFormatDrawingObjectTabPicture: `1200004` = this.cast(1200004)
+  def wdDialogFormatDrawingObjectTabPosition: `1200002` = 1200002.asInstanceOf[`1200002`]
   @scala.inline
-  def wdDialogFormatDrawingObjectTabPosition: `1200002` = this.cast(1200002)
+  def wdDialogFormatDrawingObjectTabSize: `1200001` = 1200001.asInstanceOf[`1200001`]
   @scala.inline
-  def wdDialogFormatDrawingObjectTabSize: `1200001` = this.cast(1200001)
+  def wdDialogFormatDrawingObjectTabTextbox: `1200005` = 1200005.asInstanceOf[`1200005`]
   @scala.inline
-  def wdDialogFormatDrawingObjectTabTextbox: `1200005` = this.cast(1200005)
+  def wdDialogFormatDrawingObjectTabWeb: `1200006` = 1200006.asInstanceOf[`1200006`]
   @scala.inline
-  def wdDialogFormatDrawingObjectTabWeb: `1200006` = this.cast(1200006)
+  def wdDialogFormatDrawingObjectTabWrapping: `1200003` = 1200003.asInstanceOf[`1200003`]
   @scala.inline
-  def wdDialogFormatDrawingObjectTabWrapping: `1200003` = this.cast(1200003)
+  def wdDialogFormatFontTabAnimation: `600002` = 600002.asInstanceOf[`600002`]
   @scala.inline
-  def wdDialogFormatFontTabAnimation: `600002` = this.cast(600002)
+  def wdDialogFormatFontTabCharacterSpacing: `600001` = 600001.asInstanceOf[`600001`]
   @scala.inline
-  def wdDialogFormatFontTabCharacterSpacing: `600001` = this.cast(600001)
+  def wdDialogFormatFontTabFont: `600000` = 600000.asInstanceOf[`600000`]
   @scala.inline
-  def wdDialogFormatFontTabFont: `600000` = this.cast(600000)
+  def wdDialogFormatParagraphTabIndentsAndSpacing: `1000000` = 1000000.asInstanceOf[`1000000`]
   @scala.inline
-  def wdDialogFormatParagraphTabIndentsAndSpacing: `1000000` = this.cast(1000000)
+  def wdDialogFormatParagraphTabTeisai: `1000002` = 1000002.asInstanceOf[`1000002`]
   @scala.inline
-  def wdDialogFormatParagraphTabTeisai: `1000002` = this.cast(1000002)
+  def wdDialogFormatParagraphTabTextFlow: `1000001` = 1000001.asInstanceOf[`1000001`]
   @scala.inline
-  def wdDialogFormatParagraphTabTextFlow: `1000001` = this.cast(1000001)
+  def wdDialogInsertIndexAndTablesTabIndex: `400000` = 400000.asInstanceOf[`400000`]
   @scala.inline
-  def wdDialogInsertIndexAndTablesTabIndex: `400000` = this.cast(400000)
+  def wdDialogInsertIndexAndTablesTabTableOfAuthorities: `400003` = 400003.asInstanceOf[`400003`]
   @scala.inline
-  def wdDialogInsertIndexAndTablesTabTableOfAuthorities: `400003` = this.cast(400003)
+  def wdDialogInsertIndexAndTablesTabTableOfContents: `400001` = 400001.asInstanceOf[`400001`]
   @scala.inline
-  def wdDialogInsertIndexAndTablesTabTableOfContents: `400001` = this.cast(400001)
+  def wdDialogInsertIndexAndTablesTabTableOfFigures: `400002` = 400002.asInstanceOf[`400002`]
   @scala.inline
-  def wdDialogInsertIndexAndTablesTabTableOfFigures: `400002` = this.cast(400002)
+  def wdDialogInsertSymbolTabSpecialCharacters: `200001` = 200001.asInstanceOf[`200001`]
   @scala.inline
-  def wdDialogInsertSymbolTabSpecialCharacters: `200001` = this.cast(200001)
+  def wdDialogInsertSymbolTabSymbols: `200000` = 200000.asInstanceOf[`200000`]
   @scala.inline
-  def wdDialogInsertSymbolTabSymbols: `200000` = this.cast(200000)
+  def wdDialogLetterWizardTabLetterFormat: `1600000` = 1600000.asInstanceOf[`1600000`]
   @scala.inline
-  def wdDialogLetterWizardTabLetterFormat: `1600000` = this.cast(1600000)
+  def wdDialogLetterWizardTabOtherElements: `1600002` = 1600002.asInstanceOf[`1600002`]
   @scala.inline
-  def wdDialogLetterWizardTabOtherElements: `1600002` = this.cast(1600002)
+  def wdDialogLetterWizardTabRecipientInfo: `1600001` = 1600001.asInstanceOf[`1600001`]
   @scala.inline
-  def wdDialogLetterWizardTabRecipientInfo: `1600001` = this.cast(1600001)
+  def wdDialogLetterWizardTabSenderInfo: `1600003` = 1600003.asInstanceOf[`1600003`]
   @scala.inline
-  def wdDialogLetterWizardTabSenderInfo: `1600003` = this.cast(1600003)
+  def wdDialogNoteOptionsTabAllEndnotes: `300001` = 300001.asInstanceOf[`300001`]
   @scala.inline
-  def wdDialogNoteOptionsTabAllEndnotes: `300001` = this.cast(300001)
+  def wdDialogNoteOptionsTabAllFootnotes: `300000` = 300000.asInstanceOf[`300000`]
   @scala.inline
-  def wdDialogNoteOptionsTabAllFootnotes: `300000` = this.cast(300000)
+  def wdDialogOrganizerTabAutoText: `500001` = 500001.asInstanceOf[`500001`]
   @scala.inline
-  def wdDialogOrganizerTabAutoText: `500001` = this.cast(500001)
+  def wdDialogOrganizerTabCommandBars: `500002` = 500002.asInstanceOf[`500002`]
   @scala.inline
-  def wdDialogOrganizerTabCommandBars: `500002` = this.cast(500002)
+  def wdDialogOrganizerTabMacros: `500003` = 500003.asInstanceOf[`500003`]
   @scala.inline
-  def wdDialogOrganizerTabMacros: `500003` = this.cast(500003)
+  def wdDialogOrganizerTabStyles: `500000` = 500000.asInstanceOf[`500000`]
   @scala.inline
-  def wdDialogOrganizerTabStyles: `500000` = this.cast(500000)
+  def wdDialogStyleManagementTabEdit: `2200000` = 2200000.asInstanceOf[`2200000`]
   @scala.inline
-  def wdDialogStyleManagementTabEdit: `2200000` = this.cast(2200000)
+  def wdDialogStyleManagementTabRecommend: `2200001` = 2200001.asInstanceOf[`2200001`]
   @scala.inline
-  def wdDialogStyleManagementTabRecommend: `2200001` = this.cast(2200001)
+  def wdDialogStyleManagementTabRestrict: `2200002` = 2200002.asInstanceOf[`2200002`]
   @scala.inline
-  def wdDialogStyleManagementTabRestrict: `2200002` = this.cast(2200002)
+  def wdDialogTablePropertiesTabCell: `1800003` = 1800003.asInstanceOf[`1800003`]
   @scala.inline
-  def wdDialogTablePropertiesTabCell: `1800003` = this.cast(1800003)
+  def wdDialogTablePropertiesTabColumn: `1800002` = 1800002.asInstanceOf[`1800002`]
   @scala.inline
-  def wdDialogTablePropertiesTabColumn: `1800002` = this.cast(1800002)
+  def wdDialogTablePropertiesTabRow: `1800001` = 1800001.asInstanceOf[`1800001`]
   @scala.inline
-  def wdDialogTablePropertiesTabRow: `1800001` = this.cast(1800001)
+  def wdDialogTablePropertiesTabTable: `1800000` = 1800000.asInstanceOf[`1800000`]
   @scala.inline
-  def wdDialogTablePropertiesTabTable: `1800000` = this.cast(1800000)
+  def wdDialogTemplates: `2100000` = 2100000.asInstanceOf[`2100000`]
   @scala.inline
-  def wdDialogTemplates: `2100000` = this.cast(2100000)
+  def wdDialogTemplatesLinkedCSS: `2100003` = 2100003.asInstanceOf[`2100003`]
   @scala.inline
-  def wdDialogTemplatesLinkedCSS: `2100003` = this.cast(2100003)
+  def wdDialogTemplatesXMLExpansionPacks: `2100002` = 2100002.asInstanceOf[`2100002`]
   @scala.inline
-  def wdDialogTemplatesXMLExpansionPacks: `2100002` = this.cast(2100002)
+  def wdDialogTemplatesXMLSchema: `2100001` = 2100001.asInstanceOf[`2100001`]
   @scala.inline
-  def wdDialogTemplatesXMLSchema: `2100001` = this.cast(2100001)
+  def wdDialogToolsAutoCorrectExceptionsTabFirstLetter: `1400000` = 1400000.asInstanceOf[`1400000`]
   @scala.inline
-  def wdDialogToolsAutoCorrectExceptionsTabFirstLetter: `1400000` = this.cast(1400000)
+  def wdDialogToolsAutoCorrectExceptionsTabHangulAndAlphabet: `1400002` = 1400002.asInstanceOf[`1400002`]
   @scala.inline
-  def wdDialogToolsAutoCorrectExceptionsTabHangulAndAlphabet: `1400002` = this.cast(1400002)
+  def wdDialogToolsAutoCorrectExceptionsTabIac: `1400003` = 1400003.asInstanceOf[`1400003`]
   @scala.inline
-  def wdDialogToolsAutoCorrectExceptionsTabIac: `1400003` = this.cast(1400003)
+  def wdDialogToolsAutoCorrectExceptionsTabInitialCaps: `1400001` = 1400001.asInstanceOf[`1400001`]
   @scala.inline
-  def wdDialogToolsAutoCorrectExceptionsTabInitialCaps: `1400001` = this.cast(1400001)
+  def wdDialogToolsAutoManagerTabAutoCorrect: `1700000` = 1700000.asInstanceOf[`1700000`]
   @scala.inline
-  def wdDialogToolsAutoManagerTabAutoCorrect: `1700000` = this.cast(1700000)
+  def wdDialogToolsAutoManagerTabAutoFormat: `1700003` = 1700003.asInstanceOf[`1700003`]
   @scala.inline
-  def wdDialogToolsAutoManagerTabAutoFormat: `1700003` = this.cast(1700003)
+  def wdDialogToolsAutoManagerTabAutoFormatAsYouType: `1700001` = 1700001.asInstanceOf[`1700001`]
   @scala.inline
-  def wdDialogToolsAutoManagerTabAutoFormatAsYouType: `1700001` = this.cast(1700001)
+  def wdDialogToolsAutoManagerTabAutoText: `1700002` = 1700002.asInstanceOf[`1700002`]
   @scala.inline
-  def wdDialogToolsAutoManagerTabAutoText: `1700002` = this.cast(1700002)
+  def wdDialogToolsAutoManagerTabSmartTags: `1700004` = 1700004.asInstanceOf[`1700004`]
   @scala.inline
-  def wdDialogToolsAutoManagerTabSmartTags: `1700004` = this.cast(1700004)
+  def wdDialogToolsEnvelopesAndLabelsTabEnvelopes: `800000` = 800000.asInstanceOf[`800000`]
   @scala.inline
-  def wdDialogToolsEnvelopesAndLabelsTabEnvelopes: `800000` = this.cast(800000)
+  def wdDialogToolsEnvelopesAndLabelsTabLabels: `800001` = 800001.asInstanceOf[`800001`]
   @scala.inline
-  def wdDialogToolsEnvelopesAndLabelsTabLabels: `800001` = this.cast(800001)
+  def wdDialogToolsOptionsTabAcetate: `1266` = 1266.asInstanceOf[`1266`]
   @scala.inline
-  def wdDialogToolsOptionsTabAcetate: `1266` = this.cast(1266)
+  def wdDialogToolsOptionsTabBidi: `1029` = 1029.asInstanceOf[`1029`]
   @scala.inline
-  def wdDialogToolsOptionsTabBidi: `1029` = this.cast(1029)
+  def wdDialogToolsOptionsTabCompatibility: `525` = 525.asInstanceOf[`525`]
   @scala.inline
-  def wdDialogToolsOptionsTabCompatibility: `525` = this.cast(525)
+  def wdDialogToolsOptionsTabEdit: `224` = 224.asInstanceOf[`224`]
   @scala.inline
-  def wdDialogToolsOptionsTabEdit: `224` = this.cast(224)
+  def wdDialogToolsOptionsTabFileLocations: `225` = 225.asInstanceOf[`225`]
   @scala.inline
-  def wdDialogToolsOptionsTabFileLocations: `225` = this.cast(225)
+  def wdDialogToolsOptionsTabFuzzy: `790` = 790.asInstanceOf[`790`]
   @scala.inline
-  def wdDialogToolsOptionsTabFuzzy: `790` = this.cast(790)
+  def wdDialogToolsOptionsTabGeneral: `203` = 203.asInstanceOf[`203`]
   @scala.inline
-  def wdDialogToolsOptionsTabGeneral: `203` = this.cast(203)
+  def wdDialogToolsOptionsTabHangulHanjaConversion: `786` = 786.asInstanceOf[`786`]
   @scala.inline
-  def wdDialogToolsOptionsTabHangulHanjaConversion: `786` = this.cast(786)
+  def wdDialogToolsOptionsTabPrint: `208` = 208.asInstanceOf[`208`]
   @scala.inline
-  def wdDialogToolsOptionsTabPrint: `208` = this.cast(208)
+  def wdDialogToolsOptionsTabProofread: `211` = 211.asInstanceOf[`211`]
   @scala.inline
-  def wdDialogToolsOptionsTabProofread: `211` = this.cast(211)
+  def wdDialogToolsOptionsTabSave: `209` = 209.asInstanceOf[`209`]
   @scala.inline
-  def wdDialogToolsOptionsTabSave: `209` = this.cast(209)
+  def wdDialogToolsOptionsTabSecurity: `1361` = 1361.asInstanceOf[`1361`]
   @scala.inline
-  def wdDialogToolsOptionsTabSecurity: `1361` = this.cast(1361)
+  def wdDialogToolsOptionsTabTrackChanges: `386` = 386.asInstanceOf[`386`]
   @scala.inline
-  def wdDialogToolsOptionsTabTrackChanges: `386` = this.cast(386)
+  def wdDialogToolsOptionsTabTypography: `739` = 739.asInstanceOf[`739`]
   @scala.inline
-  def wdDialogToolsOptionsTabTypography: `739` = this.cast(739)
+  def wdDialogToolsOptionsTabUserInfo: `213` = 213.asInstanceOf[`213`]
   @scala.inline
-  def wdDialogToolsOptionsTabUserInfo: `213` = this.cast(213)
+  def wdDialogToolsOptionsTabView: `204` = 204.asInstanceOf[`204`]
   @scala.inline
-  def wdDialogToolsOptionsTabView: `204` = this.cast(204)
+  def wdDialogWebOptionsBrowsers: `2000000` = 2000000.asInstanceOf[`2000000`]
   @scala.inline
-  def wdDialogWebOptionsBrowsers: `2000000` = this.cast(2000000)
+  def wdDialogWebOptionsEncoding: `2000003` = 2000003.asInstanceOf[`2000003`]
   @scala.inline
-  def wdDialogWebOptionsEncoding: `2000003` = this.cast(2000003)
+  def wdDialogWebOptionsFiles: `2000001` = 2000001.asInstanceOf[`2000001`]
   @scala.inline
-  def wdDialogWebOptionsFiles: `2000001` = this.cast(2000001)
+  def wdDialogWebOptionsFonts: `2000004` = 2000004.asInstanceOf[`2000004`]
   @scala.inline
-  def wdDialogWebOptionsFonts: `2000004` = this.cast(2000004)
+  def wdDialogWebOptionsGeneral: `2000000` = 2000000.asInstanceOf[`2000000`]
   @scala.inline
-  def wdDialogWebOptionsGeneral: `2000000` = this.cast(2000000)
-  @scala.inline
-  def wdDialogWebOptionsPictures: `2000002` = this.cast(2000002)
+  def wdDialogWebOptionsPictures: `2000002` = 2000002.asInstanceOf[`2000002`]
 }
 

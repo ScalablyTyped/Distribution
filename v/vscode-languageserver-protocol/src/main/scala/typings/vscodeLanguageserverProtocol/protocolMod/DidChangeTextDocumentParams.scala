@@ -35,7 +35,6 @@ object DidChangeTextDocumentParams {
     textDocument: VersionedTextDocumentIdentifier
   ): DidChangeTextDocumentParams = {
     val __obj = js.Dynamic.literal(contentChanges = contentChanges.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DidChangeTextDocumentParams]
   }
 }

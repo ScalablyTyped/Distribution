@@ -1,5 +1,7 @@
 package typings.pdfmake.interfacesMod
 
+import typings.pdfmake.pdfmakeStrings.Asterisk
+import typings.pdfmake.pdfmakeStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +13,7 @@ trait Table extends js.Object {
   var heights: js.UndefOr[Double | js.Array[Double] | DynamicRowSize] = js.undefined
   var keepWithHeaderRows: js.UndefOr[Double] = js.undefined
   var layout: js.UndefOr[TableLayout] = js.undefined
-  var widths: js.UndefOr[js.Array[Size]] = js.undefined
+  var widths: js.UndefOr[Asterisk | auto | js.Array[Size]] = js.undefined
 }
 
 object Table {
@@ -23,7 +25,7 @@ object Table {
     heights: Double | js.Array[Double] | DynamicRowSize = null,
     keepWithHeaderRows: Int | Double = null,
     layout: TableLayout = null,
-    widths: js.Array[Size] = null
+    widths: Asterisk | auto | js.Array[Size] = null
   ): Table = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     if (!js.isUndefined(dontBreakRows)) __obj.updateDynamic("dontBreakRows")(dontBreakRows.asInstanceOf[js.Any])

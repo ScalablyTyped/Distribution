@@ -12,7 +12,6 @@ object GetRootPropsOptions {
   @scala.inline
   def apply(refKey: String): GetRootPropsOptions = {
     val __obj = js.Dynamic.literal(refKey = refKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRootPropsOptions]
   }
 }

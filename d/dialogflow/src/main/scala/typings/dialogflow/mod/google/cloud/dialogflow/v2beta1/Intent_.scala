@@ -79,7 +79,7 @@ class Intent_ () extends IIntent {
   var trainingPhrases_Intent_ : js.Array[ITrainingPhrase] = js.native
   /** Intent webhookState. */
   @JSName("webhookState")
-  var webhookState_Intent_ : WebhookState | String = js.native
+  var webhookState_Intent_ : WebhookState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.WebhookState * / any */ String) = js.native
   /**
     * Converts this Intent to JSON.
     * @returns JSON object

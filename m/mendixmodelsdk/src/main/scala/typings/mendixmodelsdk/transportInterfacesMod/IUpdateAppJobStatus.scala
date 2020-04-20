@@ -19,18 +19,16 @@ trait IUpdateAppJobStatus extends js.Object
 
 object IUpdateAppJobStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def consistencyerrors: typings.mendixmodelsdk.mendixmodelsdkStrings.consistencyerrors = "consistencyerrors".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.consistencyerrors]
   @scala.inline
-  def consistencyerrors: typings.mendixmodelsdk.mendixmodelsdkStrings.consistencyerrors = this.cast("consistencyerrors")
+  def failed: failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
-  def failed: failed_ = this.cast("failed")
+  def provisioning: typings.mendixmodelsdk.mendixmodelsdkStrings.provisioning = "provisioning".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.provisioning]
   @scala.inline
-  def provisioning: typings.mendixmodelsdk.mendixmodelsdkStrings.provisioning = this.cast("provisioning")
+  def resuming: typings.mendixmodelsdk.mendixmodelsdkStrings.resuming = "resuming".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.resuming]
   @scala.inline
-  def resuming: typings.mendixmodelsdk.mendixmodelsdkStrings.resuming = this.cast("resuming")
+  def started: started_ = "started".asInstanceOf[started_]
   @scala.inline
-  def started: started_ = this.cast("started")
-  @scala.inline
-  def updating: updating_ = this.cast("updating")
+  def updating: updating_ = "updating".asInstanceOf[updating_]
 }
 

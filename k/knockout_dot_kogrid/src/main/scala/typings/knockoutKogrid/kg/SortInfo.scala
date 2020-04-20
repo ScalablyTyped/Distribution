@@ -15,7 +15,6 @@ object SortInfo {
   @scala.inline
   def apply(column: SortColumn, direction: Direction): SortInfo = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SortInfo]
   }
 }

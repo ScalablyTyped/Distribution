@@ -13,7 +13,6 @@ object EndpointSelector {
   @scala.inline
   def apply(urlFor: String => String): EndpointSelector = {
     val __obj = js.Dynamic.literal(urlFor = js.Any.fromFunction1(urlFor))
-  
     __obj.asInstanceOf[EndpointSelector]
   }
 }

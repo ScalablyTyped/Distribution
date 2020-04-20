@@ -81,6 +81,6 @@ class ApplicationRef () extends js.Object {
   /**
     * Returns the number of attached views.
     */
-  def viewCount(): Double = js.native
+  def viewCount: Double = js.native
 }
 

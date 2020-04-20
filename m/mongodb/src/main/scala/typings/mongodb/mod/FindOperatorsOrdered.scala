@@ -24,7 +24,6 @@ object FindOperatorsOrdered {
     upsert: () => FindOperatorsOrdered
   ): FindOperatorsOrdered = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteOne = js.Any.fromFunction0(deleteOne), replaceOne = js.Any.fromFunction1(replaceOne), update = js.Any.fromFunction1(update), updateOne = js.Any.fromFunction1(updateOne), upsert = js.Any.fromFunction0(upsert))
-  
     __obj.asInstanceOf[FindOperatorsOrdered]
   }
 }

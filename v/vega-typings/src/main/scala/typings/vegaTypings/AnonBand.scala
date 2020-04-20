@@ -16,7 +16,6 @@ object AnonBand {
   @scala.inline
   def apply(band: Boolean | Double, scale: Field): AnonBand = {
     val __obj = js.Dynamic.literal(band = band.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBand]
   }
 }

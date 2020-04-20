@@ -16,7 +16,6 @@ object AnonHideLabel {
   @scala.inline
   def apply(callback: /* knob */ ButtonTypeKnob => js.Any, hideLabel: `true`): AnonHideLabel = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), hideLabel = hideLabel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHideLabel]
   }
 }

@@ -26,7 +26,6 @@ object HistoryManager {
     onDidChangeProjects: js.Function1[/* args */ AnonReloaded, Unit] => Disposable
   ): HistoryManager = {
     val __obj = js.Dynamic.literal(clearProjects = js.Any.fromFunction0(clearProjects), getProjects = js.Any.fromFunction0(getProjects), onDidChangeProjects = js.Any.fromFunction1(onDidChangeProjects))
-  
     __obj.asInstanceOf[HistoryManager]
   }
 }

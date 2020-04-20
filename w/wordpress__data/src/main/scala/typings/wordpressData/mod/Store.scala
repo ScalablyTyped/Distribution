@@ -19,7 +19,6 @@ object Store {
     subscribe: /* callback */ js.Function0[Unit] => js.Function0[Unit]
   ): Store[S, A] = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), getState = js.Any.fromFunction0(getState), subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[Store[S, A]]
   }
 }

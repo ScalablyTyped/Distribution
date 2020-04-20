@@ -13,7 +13,6 @@ object AnonNavigationFolder {
   @scala.inline
   def apply(NavigationFolder: NavigationFolder): AnonNavigationFolder = {
     val __obj = js.Dynamic.literal(NavigationFolder = NavigationFolder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNavigationFolder]
   }
 }

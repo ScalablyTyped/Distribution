@@ -16,7 +16,6 @@ object Monitor {
   @scala.inline
   def apply(connections: js.Any): Monitor = {
     val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Monitor]
   }
 }

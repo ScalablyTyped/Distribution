@@ -62,7 +62,6 @@ object utils {
     genericCircularGauge: (Double, IndicatorBase, Double, Double, Double, Double, Double, String, js.Object, String, js.Object) => Double
   ): utils = {
     val __obj = js.Dynamic.literal(brightness = js.Any.fromFunction2(brightness), createGradient = js.Any.fromFunction1(createGradient), genericCircularGauge = js.Any.fromFunction11(genericCircularGauge))
-  
     __obj.asInstanceOf[utils]
   }
 }

@@ -15,7 +15,6 @@ object FullNameOptions {
   @scala.inline
   def apply(middle: Boolean, middle_initial: Boolean, prefix: Boolean, suffix: Boolean): FullNameOptions = {
     val __obj = js.Dynamic.literal(middle = middle.asInstanceOf[js.Any], middle_initial = middle_initial.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FullNameOptions]
   }
 }

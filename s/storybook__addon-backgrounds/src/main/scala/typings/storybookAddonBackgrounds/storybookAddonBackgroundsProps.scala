@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait storybookAddonBackgroundsProps {
   @scala.inline
-  def BackgroundSelectorProps: Props.type = typings.storybookAddonBackgrounds.backgroundSelectorMod.Props
+  def BackgroundSelectorProps: Props.type = Props
   type BackgroundSelectorProps = Props
 }
 

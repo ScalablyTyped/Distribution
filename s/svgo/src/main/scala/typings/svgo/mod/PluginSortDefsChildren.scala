@@ -13,7 +13,6 @@ object PluginSortDefsChildren {
   @scala.inline
   def apply(sortDefsChildren: Boolean | js.Object): PluginSortDefsChildren = {
     val __obj = js.Dynamic.literal(sortDefsChildren = sortDefsChildren.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginSortDefsChildren]
   }
 }

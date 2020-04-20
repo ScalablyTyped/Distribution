@@ -28,7 +28,6 @@ object registry {
   @scala.inline
   def apply(getRegistered: (js.Any, js.Any) => js.Any, register: (js.Any, js.Any) => Unit): registry = {
     val __obj = js.Dynamic.literal(getRegistered = js.Any.fromFunction2(getRegistered), register = js.Any.fromFunction2(register))
-  
     __obj.asInstanceOf[registry]
   }
 }

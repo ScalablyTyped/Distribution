@@ -12,7 +12,6 @@ object HTMLtoJSX {
   @scala.inline
   def apply(convert: String => String): HTMLtoJSX = {
     val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert))
-  
     __obj.asInstanceOf[HTMLtoJSX]
   }
 }

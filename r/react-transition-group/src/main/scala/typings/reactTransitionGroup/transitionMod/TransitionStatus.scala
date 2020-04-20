@@ -15,16 +15,14 @@ trait TransitionStatus extends js.Object
 
 object TransitionStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def entered: typings.reactTransitionGroup.reactTransitionGroupStrings.entered = "entered".asInstanceOf[typings.reactTransitionGroup.reactTransitionGroupStrings.entered]
   @scala.inline
-  def entered: typings.reactTransitionGroup.reactTransitionGroupStrings.entered = this.cast("entered")
+  def entering: typings.reactTransitionGroup.reactTransitionGroupStrings.entering = "entering".asInstanceOf[typings.reactTransitionGroup.reactTransitionGroupStrings.entering]
   @scala.inline
-  def entering: typings.reactTransitionGroup.reactTransitionGroupStrings.entering = this.cast("entering")
+  def exited: typings.reactTransitionGroup.reactTransitionGroupStrings.exited = "exited".asInstanceOf[typings.reactTransitionGroup.reactTransitionGroupStrings.exited]
   @scala.inline
-  def exited: typings.reactTransitionGroup.reactTransitionGroupStrings.exited = this.cast("exited")
+  def exiting: typings.reactTransitionGroup.reactTransitionGroupStrings.exiting = "exiting".asInstanceOf[typings.reactTransitionGroup.reactTransitionGroupStrings.exiting]
   @scala.inline
-  def exiting: typings.reactTransitionGroup.reactTransitionGroupStrings.exiting = this.cast("exiting")
-  @scala.inline
-  def unmounted: typings.reactTransitionGroup.reactTransitionGroupStrings.unmounted = this.cast("unmounted")
+  def unmounted: typings.reactTransitionGroup.reactTransitionGroupStrings.unmounted = "unmounted".asInstanceOf[typings.reactTransitionGroup.reactTransitionGroupStrings.unmounted]
 }
 

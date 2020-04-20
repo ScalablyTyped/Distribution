@@ -18,14 +18,12 @@ trait MsoFarEastLineBreakLanguageID extends js.Object
 
 object MsoFarEastLineBreakLanguageID {
   @scala.inline
-  def MsoFarEastLineBreakLanguageJapanese: `1041` = this.cast(1041)
+  def MsoFarEastLineBreakLanguageJapanese: `1041` = 1041.asInstanceOf[`1041`]
   @scala.inline
-  def MsoFarEastLineBreakLanguageKorean: `1042` = this.cast(1042)
+  def MsoFarEastLineBreakLanguageKorean: `1042` = 1042.asInstanceOf[`1042`]
   @scala.inline
-  def MsoFarEastLineBreakLanguageSimplifiedChinese: `2052` = this.cast(2052)
+  def MsoFarEastLineBreakLanguageSimplifiedChinese: `2052` = 2052.asInstanceOf[`2052`]
   @scala.inline
-  def MsoFarEastLineBreakLanguageTraditionalChinese: `1028` = this.cast(1028)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MsoFarEastLineBreakLanguageTraditionalChinese: `1028` = 1028.asInstanceOf[`1028`]
 }
 

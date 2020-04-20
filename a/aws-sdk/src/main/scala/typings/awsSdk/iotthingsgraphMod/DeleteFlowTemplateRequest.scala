@@ -16,7 +16,6 @@ object DeleteFlowTemplateRequest {
   @scala.inline
   def apply(id: Urn): DeleteFlowTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFlowTemplateRequest]
   }
 }

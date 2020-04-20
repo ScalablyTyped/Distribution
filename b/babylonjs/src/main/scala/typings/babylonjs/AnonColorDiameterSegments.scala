@@ -15,7 +15,6 @@ object AnonColorDiameterSegments {
   @scala.inline
   def apply(color: Color3, diameter: Double, segments: Double): AnonColorDiameterSegments = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], diameter = diameter.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColorDiameterSegments]
   }
 }

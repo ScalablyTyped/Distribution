@@ -13,7 +13,6 @@ object SkWordBoundary {
   @scala.inline
   def apply(end: Double, start: Double): SkWordBoundary = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkWordBoundary]
   }
 }

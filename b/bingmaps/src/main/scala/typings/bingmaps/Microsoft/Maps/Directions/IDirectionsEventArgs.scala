@@ -15,7 +15,6 @@ object IDirectionsEventArgs {
   @scala.inline
   def apply(route: js.Array[IRoute], routeSummary: js.Array[IRouteSummary]): IDirectionsEventArgs = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any], routeSummary = routeSummary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDirectionsEventArgs]
   }
 }

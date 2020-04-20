@@ -14,10 +14,8 @@ trait _SAVE_SEGMENTS_FLAGS extends js.Object
 
 object _SAVE_SEGMENTS_FLAGS {
   @scala.inline
-  def SAVE_SEGMENTS_FLAGS_Max: `2147483647` = this.cast(2147483647)
+  def SAVE_SEGMENTS_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def SAVE_SEGMENTS_NoIE4SelectionCompat: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SAVE_SEGMENTS_NoIE4SelectionCompat: `1` = 1.asInstanceOf[`1`]
 }
 

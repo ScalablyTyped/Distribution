@@ -25,7 +25,6 @@ object LocalVolumeSource {
   @scala.inline
   def apply(fsType: String, path: String): LocalVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocalVolumeSource]
   }
 }

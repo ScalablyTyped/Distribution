@@ -13,7 +13,6 @@ object ReGeocodeResult {
   @scala.inline
   def apply(info: String, regeocode: ReGeocode): ReGeocodeResult = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], regeocode = regeocode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReGeocodeResult]
   }
 }

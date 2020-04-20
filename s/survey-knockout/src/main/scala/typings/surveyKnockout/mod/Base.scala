@@ -12,6 +12,23 @@ class Base () extends js.Object {
     */
   val isLoadingFromJson: Boolean = js.native
   var isLoadingFromJsonValue: Boolean = js.native
+  /**
+    * Event that raised on changing property of the ItemValue object.
+    * sender - the object that owns the property
+    * options.propertyName - the property name to which ItemValue array is belong. It can be "choices" for dropdown question
+    * options.obj - the instance of ItemValue object which property has been changed
+    * options.name - the property of ItemObject that has been changed
+    * options.oldValue - old value
+    * options.newValue - new value
+    */
+  var onItemValuePropertyChanged: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /**
+    * Event that raise on property change of the sender object
+    * sender - the object that owns the property
+    * options.name - the property name that has been changed
+    * options.oldValue - old value. Please note, it equals to options.newValue if property is an array
+    * options.newValue - new value.
+    */
   var onPropertyChanged: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /* protected */ def AddLocStringToUsedLocales(locStr: LocalizableString, locales: js.Array[String]): Unit = js.native
   /* protected */ def IsPropertyEmpty(value: js.Any): Boolean = js.native
@@ -62,6 +79,7 @@ class Base () extends js.Object {
     * @param value
     */
   def isValueEmpty(value: js.Any): Boolean = js.native
+  def itemValuePropertyChanged(item: ItemValue, name: String, oldValue: js.Any, newValue: js.Any): Unit = js.native
   def iteratePropertiesHash(func: js.Function2[/* hash */ js.Any, /* key */ js.Any, Unit]): Unit = js.native
   def locStrsChanged(): Unit = js.native
   /* protected */ def onBaseCreating(): Unit = js.native

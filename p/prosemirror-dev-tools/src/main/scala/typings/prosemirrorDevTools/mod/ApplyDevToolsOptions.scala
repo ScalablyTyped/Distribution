@@ -22,7 +22,6 @@ object ApplyDevToolsOptions {
   @scala.inline
   def apply(EditorState: TypeofEditorState): ApplyDevToolsOptions = {
     val __obj = js.Dynamic.literal(EditorState = EditorState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplyDevToolsOptions]
   }
 }

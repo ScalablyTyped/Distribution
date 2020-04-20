@@ -20,7 +20,6 @@ object BaseListener {
   @scala.inline
   def apply(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit]): BaseListener = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept), close = js.Any.fromFunction0(close))
-  
     __obj.asInstanceOf[BaseListener]
   }
 }

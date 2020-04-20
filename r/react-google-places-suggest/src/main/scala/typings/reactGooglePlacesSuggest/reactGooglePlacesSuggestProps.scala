@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactGooglePlacesSuggestProps {
   @scala.inline
-  def ReactGooglePlacesSuggestProps: Props.type = typings.reactGooglePlacesSuggest.mod.ReactGooglePlacesSuggest.Props
+  def ReactGooglePlacesSuggestProps: Props.type = Props
   type ReactGooglePlacesSuggestProps = Props
 }
 

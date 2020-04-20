@@ -16,7 +16,6 @@ object IUploadModel {
   @scala.inline
   def apply(path: String, progress: Double): IUploadModel = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUploadModel]
   }
 }

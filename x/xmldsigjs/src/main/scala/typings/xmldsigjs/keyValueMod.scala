@@ -12,7 +12,7 @@ object keyValueMod extends js.Object {
   class KeyValue () extends KeyInfoClause {
     def this(value: KeyInfoClause) = this()
     var value: KeyInfoClause = js.native
-    def Value(): KeyInfoClause = js.native
+    def Value: KeyInfoClause = js.native
     def Value(v: KeyInfoClause): js.Any = js.native
   }
   

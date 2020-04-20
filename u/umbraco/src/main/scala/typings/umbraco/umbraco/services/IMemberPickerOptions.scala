@@ -18,7 +18,6 @@ object IMemberPickerOptions {
   @scala.inline
   def apply(callback: js.Function, multiPicker: Boolean): IMemberPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], multiPicker = multiPicker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMemberPickerOptions]
   }
 }

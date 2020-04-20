@@ -13,7 +13,6 @@ object ActionsListArtifactsForRepoResponse {
   @scala.inline
   def apply(artifacts: js.Array[ActionsListArtifactsForRepoResponseArtifactsItem], total_count: Double): ActionsListArtifactsForRepoResponse = {
     val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionsListArtifactsForRepoResponse]
   }
 }

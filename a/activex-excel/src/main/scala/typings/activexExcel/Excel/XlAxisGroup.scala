@@ -14,10 +14,8 @@ trait XlAxisGroup extends js.Object
 
 object XlAxisGroup {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlPrimary: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlPrimary: `1` = this.cast(1)
-  @scala.inline
-  def xlSecondary: `2` = this.cast(2)
+  def xlSecondary: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -18,7 +18,6 @@ object DescribeClusterOperationRequest {
   @scala.inline
   def apply(ClusterOperationArn: string): DescribeClusterOperationRequest = {
     val __obj = js.Dynamic.literal(ClusterOperationArn = ClusterOperationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeClusterOperationRequest]
   }
 }

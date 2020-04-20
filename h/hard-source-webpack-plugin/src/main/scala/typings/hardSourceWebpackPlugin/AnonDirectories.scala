@@ -14,7 +14,6 @@ object AnonDirectories {
   @scala.inline
   def apply(directories: js.Array[String], files: js.Array[String], root: String): AnonDirectories = {
     val __obj = js.Dynamic.literal(directories = directories.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDirectories]
   }
 }

@@ -13,7 +13,6 @@ object StyleSheetProperties {
   @scala.inline
   def apply(flatten: js.Any => js.Any, hairlineWidth: Double): StyleSheetProperties = {
     val __obj = js.Dynamic.literal(flatten = js.Any.fromFunction1(flatten), hairlineWidth = hairlineWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StyleSheetProperties]
   }
 }

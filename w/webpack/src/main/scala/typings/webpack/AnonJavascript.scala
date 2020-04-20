@@ -14,7 +14,6 @@ object AnonJavascript {
   @scala.inline
   def apply(javascript: ModuleTemplate, webassembly: ModuleTemplate): AnonJavascript = {
     val __obj = js.Dynamic.literal(javascript = javascript.asInstanceOf[js.Any], webassembly = webassembly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonJavascript]
   }
 }

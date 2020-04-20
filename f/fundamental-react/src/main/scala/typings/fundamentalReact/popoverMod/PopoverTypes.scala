@@ -17,18 +17,16 @@ trait PopoverTypes extends js.Object
 
 object PopoverTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dialog: typings.fundamentalReact.fundamentalReactStrings.dialog = "dialog".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.dialog]
   @scala.inline
-  def dialog: typings.fundamentalReact.fundamentalReactStrings.dialog = this.cast("dialog")
+  def grid: typings.fundamentalReact.fundamentalReactStrings.grid = "grid".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.grid]
   @scala.inline
-  def grid: typings.fundamentalReact.fundamentalReactStrings.grid = this.cast("grid")
+  def listbox: typings.fundamentalReact.fundamentalReactStrings.listbox = "listbox".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.listbox]
   @scala.inline
-  def listbox: typings.fundamentalReact.fundamentalReactStrings.listbox = this.cast("listbox")
+  def menu: menu_ = "menu".asInstanceOf[menu_]
   @scala.inline
-  def menu: menu_ = this.cast("menu")
+  def tree: typings.fundamentalReact.fundamentalReactStrings.tree = "tree".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.tree]
   @scala.inline
-  def tree: typings.fundamentalReact.fundamentalReactStrings.tree = this.cast("tree")
-  @scala.inline
-  def `true`: typings.fundamentalReact.fundamentalReactBooleans.`true` = this.cast(true)
+  def `true`: typings.fundamentalReact.fundamentalReactBooleans.`true` = true.asInstanceOf[typings.fundamentalReact.fundamentalReactBooleans.`true`]
 }
 

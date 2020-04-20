@@ -15,7 +15,6 @@ object SessionNewDtmfEvent {
   @scala.inline
   def apply(dtmf: DTMF, originator: String, request: IncomingRequest | OutgoingRequest): SessionNewDtmfEvent = {
     val __obj = js.Dynamic.literal(dtmf = dtmf.asInstanceOf[js.Any], originator = originator.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionNewDtmfEvent]
   }
 }

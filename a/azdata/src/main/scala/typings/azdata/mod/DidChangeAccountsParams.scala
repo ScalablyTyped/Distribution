@@ -13,7 +13,6 @@ object DidChangeAccountsParams {
   @scala.inline
   def apply(accounts: js.Array[Account]): DidChangeAccountsParams = {
     val __obj = js.Dynamic.literal(accounts = accounts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DidChangeAccountsParams]
   }
 }

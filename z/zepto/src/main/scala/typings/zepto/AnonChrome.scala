@@ -22,7 +22,6 @@ object AnonChrome {
   @scala.inline
   def apply(chrome: Boolean, firefox: Boolean, playbook: Boolean, silk: Boolean, version: String): AnonChrome = {
     val __obj = js.Dynamic.literal(chrome = chrome.asInstanceOf[js.Any], firefox = firefox.asInstanceOf[js.Any], playbook = playbook.asInstanceOf[js.Any], silk = silk.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChrome]
   }
 }

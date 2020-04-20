@@ -16,7 +16,6 @@ object S3Parameters {
   @scala.inline
   def apply(ManifestFileLocation: ManifestFileLocation): S3Parameters = {
     val __obj = js.Dynamic.literal(ManifestFileLocation = ManifestFileLocation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3Parameters]
   }
 }

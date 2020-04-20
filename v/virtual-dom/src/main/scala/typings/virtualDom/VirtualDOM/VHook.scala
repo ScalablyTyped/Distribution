@@ -14,7 +14,6 @@ object VHook {
   @scala.inline
   def apply(hook: (Element, String) => Unit, unhook: (Element, String) => Unit): VHook = {
     val __obj = js.Dynamic.literal(hook = js.Any.fromFunction2(hook), unhook = js.Any.fromFunction2(unhook))
-  
     __obj.asInstanceOf[VHook]
   }
 }

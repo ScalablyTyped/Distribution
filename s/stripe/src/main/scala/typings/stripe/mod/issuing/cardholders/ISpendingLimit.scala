@@ -26,7 +26,6 @@ object ISpendingLimit {
   @scala.inline
   def apply(amount: Double, categories: js.Array[String], interval: SpendingLimitInterval): ISpendingLimit = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISpendingLimit]
   }
 }

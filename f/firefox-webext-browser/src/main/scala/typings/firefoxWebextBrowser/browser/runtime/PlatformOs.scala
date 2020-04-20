@@ -17,18 +17,16 @@ trait PlatformOs extends js.Object
 
 object PlatformOs {
   @scala.inline
-  def android: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.android = this.cast("android")
+  def android: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.android = "android".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.android]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cros: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cros = "cros".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cros]
   @scala.inline
-  def cros: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cros = this.cast("cros")
+  def linux: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.linux = "linux".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.linux]
   @scala.inline
-  def linux: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.linux = this.cast("linux")
+  def mac: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mac = "mac".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mac]
   @scala.inline
-  def mac: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mac = this.cast("mac")
+  def openbsd: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.openbsd = "openbsd".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.openbsd]
   @scala.inline
-  def openbsd: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.openbsd = this.cast("openbsd")
-  @scala.inline
-  def win: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.win = this.cast("win")
+  def win: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.win = "win".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.win]
 }
 

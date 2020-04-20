@@ -19,7 +19,6 @@ object PropFormProps {
     onFieldClick: KnobStoreKnob => Unit
   ): PropFormProps = {
     val __obj = js.Dynamic.literal(knobs = knobs.asInstanceOf[js.Any], onFieldChange = js.Any.fromFunction1(onFieldChange), onFieldClick = js.Any.fromFunction1(onFieldClick))
-  
     __obj.asInstanceOf[PropFormProps]
   }
 }

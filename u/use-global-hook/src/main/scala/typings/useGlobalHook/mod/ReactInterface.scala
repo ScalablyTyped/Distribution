@@ -18,7 +18,6 @@ object ReactInterface {
     useState: /* repeated */ js.Any => js.Any
   ): ReactInterface = {
     val __obj = js.Dynamic.literal(useEffect = js.Any.fromFunction1(useEffect), useMemo = js.Any.fromFunction1(useMemo), useState = js.Any.fromFunction1(useState))
-  
     __obj.asInstanceOf[ReactInterface]
   }
 }

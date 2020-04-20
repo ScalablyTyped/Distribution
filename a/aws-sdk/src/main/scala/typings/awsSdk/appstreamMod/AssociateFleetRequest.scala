@@ -20,7 +20,6 @@ object AssociateFleetRequest {
   @scala.inline
   def apply(FleetName: String, StackName: String): AssociateFleetRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateFleetRequest]
   }
 }

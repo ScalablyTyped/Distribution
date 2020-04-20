@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation._
 /**
 		 * Special hostname value for listening sockets, representing all
 		 * locally available network interfaces.
+		 * @deprecated
 		 */
 @JSGlobal("Titanium.Network.INADDR_ANY")
 @js.native
-object INADDR_ANY extends TopLevel[String]
+object INADDR_ANY
+  extends TopLevel[scala.Nothing]
 

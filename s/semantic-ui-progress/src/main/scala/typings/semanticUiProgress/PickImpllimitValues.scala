@@ -13,7 +13,6 @@ object PickImpllimitValues {
   @scala.inline
   def apply(limitValues: Boolean): PickImpllimitValues = {
     val __obj = js.Dynamic.literal(limitValues = limitValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpllimitValues]
   }
 }

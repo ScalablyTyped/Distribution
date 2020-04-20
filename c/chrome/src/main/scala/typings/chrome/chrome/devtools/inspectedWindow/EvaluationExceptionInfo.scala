@@ -30,7 +30,6 @@ object EvaluationExceptionInfo {
     value: String
   ): EvaluationExceptionInfo = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], isError = isError.asInstanceOf[js.Any], isException = isException.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EvaluationExceptionInfo]
   }
 }

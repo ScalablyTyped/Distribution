@@ -21,7 +21,6 @@ object ICharRange {
   @scala.inline
   def apply(qCharCount: Double, qCharPos: Double): ICharRange = {
     val __obj = js.Dynamic.literal(qCharCount = qCharCount.asInstanceOf[js.Any], qCharPos = qCharPos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICharRange]
   }
 }

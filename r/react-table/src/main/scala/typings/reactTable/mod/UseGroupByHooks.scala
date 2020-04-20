@@ -12,7 +12,6 @@ object UseGroupByHooks {
   @scala.inline
   def apply[D /* <: js.Object */](getGroupByToggleProps: js.Array[HeaderGroupPropGetter[D]]): UseGroupByHooks[D] = {
     val __obj = js.Dynamic.literal(getGroupByToggleProps = getGroupByToggleProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseGroupByHooks[D]]
   }
 }

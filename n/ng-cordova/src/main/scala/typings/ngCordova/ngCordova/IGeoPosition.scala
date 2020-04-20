@@ -14,7 +14,6 @@ object IGeoPosition {
   @scala.inline
   def apply(coords: IGeoCoordinates, timestamp: Date): IGeoPosition = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGeoPosition]
   }
 }

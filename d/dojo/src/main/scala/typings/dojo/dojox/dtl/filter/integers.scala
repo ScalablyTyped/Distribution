@@ -29,7 +29,6 @@ object integers {
   @scala.inline
   def apply(add: (js.Any, js.Any) => Double, get_digit: (js.Any, js.Any) => Double): integers = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), get_digit = js.Any.fromFunction2(get_digit))
-  
     __obj.asInstanceOf[integers]
   }
 }

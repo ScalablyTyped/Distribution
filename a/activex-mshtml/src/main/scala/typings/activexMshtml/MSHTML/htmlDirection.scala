@@ -16,12 +16,10 @@ trait htmlDirection extends js.Object
 
 object htmlDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlDirectionBackward: `-99999` = -99999.asInstanceOf[`-99999`]
   @scala.inline
-  def htmlDirectionBackward: `-99999` = this.cast(-99999)
+  def htmlDirectionForward: `99999` = 99999.asInstanceOf[`99999`]
   @scala.inline
-  def htmlDirectionForward: `99999` = this.cast(99999)
-  @scala.inline
-  def htmlDirection_Max: `2147483647` = this.cast(2147483647)
+  def htmlDirection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

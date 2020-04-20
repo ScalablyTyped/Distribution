@@ -17,7 +17,6 @@ object UpdateAdmChannelRequest {
   @scala.inline
   def apply(ADMChannelRequest: ADMChannelRequest, ApplicationId: string): UpdateAdmChannelRequest = {
     val __obj = js.Dynamic.literal(ADMChannelRequest = ADMChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateAdmChannelRequest]
   }
 }

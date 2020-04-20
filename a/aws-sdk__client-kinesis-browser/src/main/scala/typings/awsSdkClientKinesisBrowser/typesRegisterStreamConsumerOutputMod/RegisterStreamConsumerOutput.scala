@@ -23,7 +23,6 @@ object RegisterStreamConsumerOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Consumer: UnmarshalledConsumer): RegisterStreamConsumerOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Consumer = Consumer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterStreamConsumerOutput]
   }
 }

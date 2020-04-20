@@ -13,7 +13,6 @@ object AnonOrdinalBrand {
   @scala.inline
   def apply(__ordinalBrand: ordinal): AnonOrdinalBrand = {
     val __obj = js.Dynamic.literal(__ordinalBrand = __ordinalBrand.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOrdinalBrand]
   }
 }

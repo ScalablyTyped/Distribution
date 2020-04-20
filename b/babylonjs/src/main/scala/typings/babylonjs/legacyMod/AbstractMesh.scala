@@ -67,18 +67,18 @@ object AbstractMesh extends js.Object {
   /** Occlusion set to strict */
   var OCCLUSION_TYPE_STRICT: Double = js.native
   /** Billboard on all axes */
-  def BILLBOARDMODE_ALL(): Double = js.native
+  def BILLBOARDMODE_ALL: Double = js.native
   /**
     * No billboard
     */
-  def BILLBOARDMODE_NONE(): Double = js.native
+  def BILLBOARDMODE_NONE: Double = js.native
   /** Billboard on using position instead of orientation */
-  def BILLBOARDMODE_USE_POSITION(): Double = js.native
+  def BILLBOARDMODE_USE_POSITION: Double = js.native
   /** Billboard on X axis */
-  def BILLBOARDMODE_X(): Double = js.native
+  def BILLBOARDMODE_X: Double = js.native
   /** Billboard on Y axis */
-  def BILLBOARDMODE_Y(): Double = js.native
+  def BILLBOARDMODE_Y: Double = js.native
   /** Billboard on Z axis */
-  def BILLBOARDMODE_Z(): Double = js.native
+  def BILLBOARDMODE_Z: Double = js.native
 }
 

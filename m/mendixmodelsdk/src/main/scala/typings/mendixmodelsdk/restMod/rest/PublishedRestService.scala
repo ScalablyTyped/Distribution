@@ -39,54 +39,54 @@ class PublishedRestService protected () extends Document {
   ) = this()
   @JSName("model")
   var model_FPublishedRestService: IModel = js.native
-  def allowedRoles(): IList[IModuleRole] = js.native
-  def allowedRolesQualifiedNames(): js.Array[String] = js.native
+  def allowedRoles: IList[IModuleRole] = js.native
+  def allowedRolesQualifiedNames: js.Array[String] = js.native
   def authenticationMicroflow(): js.Any = js.native
   def authenticationMicroflow(newValue: IMicroflow): js.Any = js.native
-  def authenticationMicroflowQualifiedName(): String | Null = js.native
+  def authenticationMicroflowQualifiedName: String | Null = js.native
   /**
     * In version 7.17.0: introduced
     */
   @JSName("authenticationMicroflow")
-  def authenticationMicroflow_Union(): IMicroflow | Null = js.native
+  def authenticationMicroflow_Union: IMicroflow | Null = js.native
   /**
     * In version 7.13.0: deleted
     * In version 7.11.0: introduced
     */
-  def authenticationType(): RestAuthenticationType = js.native
+  def authenticationType: RestAuthenticationType = js.native
   def authenticationType(newValue: RestAuthenticationType): js.Any = js.native
   /**
     * In version 7.13.0: introduced
     */
-  def authenticationTypes(): IList[RestAuthenticationType] = js.native
+  def authenticationTypes: IList[RestAuthenticationType] = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MPublishedRestService(): FolderBase = js.native
+  def containerAsFolderBase_MPublishedRestService: FolderBase = js.native
   def corsConfiguration(): js.Any = js.native
   def corsConfiguration(newValue: CorsConfiguration): js.Any = js.native
   /**
     * In version 7.18.0: introduced
     */
   @JSName("corsConfiguration")
-  def corsConfiguration_Union(): CorsConfiguration | Null = js.native
+  def corsConfiguration_Union: CorsConfiguration | Null = js.native
   /**
     * In version 7.17.0: introduced
     */
-  def parameters(): IList[RestOperationParameter] = js.native
-  def path(): String = js.native
+  def parameters: IList[RestOperationParameter] = js.native
+  def path: String = js.native
   def path(newValue: String): js.Any = js.native
   /**
     * In version 7.7.0: introduced
     */
-  def resources(): IList[PublishedRestServiceResource] = js.native
+  def resources: IList[PublishedRestServiceResource] = js.native
   /**
     * In version 7.12.0: introduced
     */
-  def serviceName(): String = js.native
+  def serviceName: String = js.native
   def serviceName(newValue: String): js.Any = js.native
   /**
     * In version 7.12.0: introduced
     */
-  def version(): String = js.native
+  def version: String = js.native
   def version(newValue: String): js.Any = js.native
 }
 

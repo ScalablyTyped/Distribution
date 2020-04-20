@@ -13,7 +13,6 @@ object AttachmentReference {
   @scala.inline
   def apply(id: String, url: String): AttachmentReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachmentReference]
   }
 }

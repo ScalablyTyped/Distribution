@@ -12,10 +12,8 @@ trait OnBeforeRequestOptions extends js.Object
 
 object OnBeforeRequestOptions {
   @scala.inline
-  def blocking: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking = this.cast("blocking")
+  def blocking: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking = "blocking".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def requestBody: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestBody = this.cast("requestBody")
+  def requestBody: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestBody = "requestBody".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestBody]
 }
 

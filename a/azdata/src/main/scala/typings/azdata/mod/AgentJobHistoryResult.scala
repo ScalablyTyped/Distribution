@@ -22,7 +22,6 @@ object AgentJobHistoryResult {
     success: Boolean
   ): AgentJobHistoryResult = {
     val __obj = js.Dynamic.literal(alerts = alerts.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], histories = histories.asInstanceOf[js.Any], schedules = schedules.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentJobHistoryResult]
   }
 }

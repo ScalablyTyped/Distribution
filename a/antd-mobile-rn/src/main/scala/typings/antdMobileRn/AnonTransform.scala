@@ -22,7 +22,6 @@ object AnonTransform {
     transform: js.Array[AnonRotate]
   ): AnonTransform = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTransform]
   }
 }

@@ -20,7 +20,6 @@ object RemoveAttributesFromFindingsRequest {
   @scala.inline
   def apply(attributeKeys: UserAttributeKeyList, findingArns: AddRemoveAttributesFindingArnList): RemoveAttributesFromFindingsRequest = {
     val __obj = js.Dynamic.literal(attributeKeys = attributeKeys.asInstanceOf[js.Any], findingArns = findingArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveAttributesFromFindingsRequest]
   }
 }

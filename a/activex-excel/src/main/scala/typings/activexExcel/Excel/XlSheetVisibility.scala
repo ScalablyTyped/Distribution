@@ -16,12 +16,10 @@ trait XlSheetVisibility extends js.Object
 
 object XlSheetVisibility {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlSheetHidden: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlSheetHidden: `0` = this.cast(0)
+  def xlSheetVeryHidden: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlSheetVeryHidden: `2` = this.cast(2)
-  @scala.inline
-  def xlSheetVisible: `-1` = this.cast(-1)
+  def xlSheetVisible: `-1` = -1.asInstanceOf[`-1`]
 }
 

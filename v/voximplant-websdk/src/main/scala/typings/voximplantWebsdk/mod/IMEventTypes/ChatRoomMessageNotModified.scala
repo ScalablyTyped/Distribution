@@ -31,7 +31,6 @@ object ChatRoomMessageNotModified {
   @scala.inline
   def apply(code: Double, message_id: String, private_message: String, room: String): ChatRoomMessageNotModified = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], private_message = private_message.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChatRoomMessageNotModified]
   }
 }

@@ -20,16 +20,14 @@ trait MFLoginServerRole extends js.Object
 
 object MFLoginServerRole {
   @scala.inline
-  def BackupOperator: `4` = this.cast(4)
+  def BackupOperator: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def LogIn: `8` = this.cast(8)
+  def LogIn: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SystemAdministrator: `1` = this.cast(1)
+  def SystemAdministrator: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def VaultCreator: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VaultCreator: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -19,7 +19,6 @@ object BuildBadge {
   @scala.inline
   def apply(buildId: Double, imageUrl: String): BuildBadge = {
     val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildBadge]
   }
 }

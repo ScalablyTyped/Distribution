@@ -12,7 +12,6 @@ object AnonNext {
   @scala.inline
   def apply(next: () => js.Promise[AnonDone | AnonValue]): AnonNext = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
-  
     __obj.asInstanceOf[AnonNext]
   }
 }

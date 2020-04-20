@@ -13,7 +13,6 @@ object TypeofTranscribeService {
   @scala.inline
   def apply(Types: TypeofTranscribeService): TypeofTranscribeService = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofTranscribeService]
   }
 }

@@ -19,24 +19,22 @@ trait LoggingPreferenceType extends js.Object
 
 object LoggingPreferenceType {
   @scala.inline
-  def ALL: typings.webdriver.webdriverStrings.ALL = this.cast("ALL")
+  def ALL: typings.webdriver.webdriverStrings.ALL = "ALL".asInstanceOf[typings.webdriver.webdriverStrings.ALL]
   @scala.inline
-  def CONFIG: typings.webdriver.webdriverStrings.CONFIG = this.cast("CONFIG")
+  def CONFIG: typings.webdriver.webdriverStrings.CONFIG = "CONFIG".asInstanceOf[typings.webdriver.webdriverStrings.CONFIG]
   @scala.inline
-  def FINE: typings.webdriver.webdriverStrings.FINE = this.cast("FINE")
+  def FINE: typings.webdriver.webdriverStrings.FINE = "FINE".asInstanceOf[typings.webdriver.webdriverStrings.FINE]
   @scala.inline
-  def FINER: typings.webdriver.webdriverStrings.FINER = this.cast("FINER")
+  def FINER: typings.webdriver.webdriverStrings.FINER = "FINER".asInstanceOf[typings.webdriver.webdriverStrings.FINER]
   @scala.inline
-  def FINEST: typings.webdriver.webdriverStrings.FINEST = this.cast("FINEST")
+  def FINEST: typings.webdriver.webdriverStrings.FINEST = "FINEST".asInstanceOf[typings.webdriver.webdriverStrings.FINEST]
   @scala.inline
-  def INFO: typings.webdriver.webdriverStrings.INFO = this.cast("INFO")
+  def INFO: typings.webdriver.webdriverStrings.INFO = "INFO".asInstanceOf[typings.webdriver.webdriverStrings.INFO]
   @scala.inline
-  def OFF: typings.webdriver.webdriverStrings.OFF = this.cast("OFF")
+  def OFF: typings.webdriver.webdriverStrings.OFF = "OFF".asInstanceOf[typings.webdriver.webdriverStrings.OFF]
   @scala.inline
-  def SEVERE: typings.webdriver.webdriverStrings.SEVERE = this.cast("SEVERE")
+  def SEVERE: typings.webdriver.webdriverStrings.SEVERE = "SEVERE".asInstanceOf[typings.webdriver.webdriverStrings.SEVERE]
   @scala.inline
-  def WARNING: typings.webdriver.webdriverStrings.WARNING = this.cast("WARNING")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WARNING: typings.webdriver.webdriverStrings.WARNING = "WARNING".asInstanceOf[typings.webdriver.webdriverStrings.WARNING]
 }
 

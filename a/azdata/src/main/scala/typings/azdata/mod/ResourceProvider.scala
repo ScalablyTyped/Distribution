@@ -17,7 +17,6 @@ object ResourceProvider {
     handleFirewallRule: (Double, String, String) => Thenable[HandleFirewallRuleResponse]
   ): ResourceProvider = {
     val __obj = js.Dynamic.literal(createFirewallRule = js.Any.fromFunction2(createFirewallRule), handleFirewallRule = js.Any.fromFunction3(handleFirewallRule))
-  
     __obj.asInstanceOf[ResourceProvider]
   }
 }

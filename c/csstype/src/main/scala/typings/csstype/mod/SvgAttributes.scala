@@ -256,498 +256,496 @@ trait SvgAttributes extends js.Object
 
 object SvgAttributes {
   @scala.inline
-  def `[accent-height]`: typings.csstype.csstypeStrings.`[accent-height]` = this.cast("[accent-height]")
+  def `[accent-height]`: typings.csstype.csstypeStrings.`[accent-height]` = "[accent-height]".asInstanceOf[typings.csstype.csstypeStrings.`[accent-height]`]
   @scala.inline
-  def `[alignment-baseline]`: typings.csstype.csstypeStrings.`[alignment-baseline]` = this.cast("[alignment-baseline]")
+  def `[alignment-baseline]`: typings.csstype.csstypeStrings.`[alignment-baseline]` = "[alignment-baseline]".asInstanceOf[typings.csstype.csstypeStrings.`[alignment-baseline]`]
   @scala.inline
-  def `[allowReorder]`: typings.csstype.csstypeStrings.`[allowReorder]` = this.cast("[allowReorder]")
+  def `[allowReorder]`: typings.csstype.csstypeStrings.`[allowReorder]` = "[allowReorder]".asInstanceOf[typings.csstype.csstypeStrings.`[allowReorder]`]
   @scala.inline
-  def `[alphabetic]`: typings.csstype.csstypeStrings.`[alphabetic]` = this.cast("[alphabetic]")
+  def `[alphabetic]`: typings.csstype.csstypeStrings.`[alphabetic]` = "[alphabetic]".asInstanceOf[typings.csstype.csstypeStrings.`[alphabetic]`]
   @scala.inline
-  def `[animation]`: typings.csstype.csstypeStrings.`[animation]` = this.cast("[animation]")
+  def `[animation]`: typings.csstype.csstypeStrings.`[animation]` = "[animation]".asInstanceOf[typings.csstype.csstypeStrings.`[animation]`]
   @scala.inline
-  def `[arabic-form]`: typings.csstype.csstypeStrings.`[arabic-form]` = this.cast("[arabic-form]")
+  def `[arabic-form]`: typings.csstype.csstypeStrings.`[arabic-form]` = "[arabic-form]".asInstanceOf[typings.csstype.csstypeStrings.`[arabic-form]`]
   @scala.inline
-  def `[ascent]`: typings.csstype.csstypeStrings.`[ascent]` = this.cast("[ascent]")
+  def `[ascent]`: typings.csstype.csstypeStrings.`[ascent]` = "[ascent]".asInstanceOf[typings.csstype.csstypeStrings.`[ascent]`]
   @scala.inline
-  def `[attributeName]`: typings.csstype.csstypeStrings.`[attributeName]` = this.cast("[attributeName]")
+  def `[attributeName]`: typings.csstype.csstypeStrings.`[attributeName]` = "[attributeName]".asInstanceOf[typings.csstype.csstypeStrings.`[attributeName]`]
   @scala.inline
-  def `[attributeType]`: typings.csstype.csstypeStrings.`[attributeType]` = this.cast("[attributeType]")
+  def `[attributeType]`: typings.csstype.csstypeStrings.`[attributeType]` = "[attributeType]".asInstanceOf[typings.csstype.csstypeStrings.`[attributeType]`]
   @scala.inline
-  def `[azimuth]`: typings.csstype.csstypeStrings.`[azimuth]` = this.cast("[azimuth]")
+  def `[azimuth]`: typings.csstype.csstypeStrings.`[azimuth]` = "[azimuth]".asInstanceOf[typings.csstype.csstypeStrings.`[azimuth]`]
   @scala.inline
-  def `[baseFrequency]`: typings.csstype.csstypeStrings.`[baseFrequency]` = this.cast("[baseFrequency]")
+  def `[baseFrequency]`: typings.csstype.csstypeStrings.`[baseFrequency]` = "[baseFrequency]".asInstanceOf[typings.csstype.csstypeStrings.`[baseFrequency]`]
   @scala.inline
-  def `[baseProfile]`: typings.csstype.csstypeStrings.`[baseProfile]` = this.cast("[baseProfile]")
+  def `[baseProfile]`: typings.csstype.csstypeStrings.`[baseProfile]` = "[baseProfile]".asInstanceOf[typings.csstype.csstypeStrings.`[baseProfile]`]
   @scala.inline
-  def `[baseline-shift]`: typings.csstype.csstypeStrings.`[baseline-shift]` = this.cast("[baseline-shift]")
+  def `[baseline-shift]`: typings.csstype.csstypeStrings.`[baseline-shift]` = "[baseline-shift]".asInstanceOf[typings.csstype.csstypeStrings.`[baseline-shift]`]
   @scala.inline
-  def `[bbox]`: typings.csstype.csstypeStrings.`[bbox]` = this.cast("[bbox]")
+  def `[bbox]`: typings.csstype.csstypeStrings.`[bbox]` = "[bbox]".asInstanceOf[typings.csstype.csstypeStrings.`[bbox]`]
   @scala.inline
-  def `[begin]`: typings.csstype.csstypeStrings.`[begin]` = this.cast("[begin]")
+  def `[begin]`: typings.csstype.csstypeStrings.`[begin]` = "[begin]".asInstanceOf[typings.csstype.csstypeStrings.`[begin]`]
   @scala.inline
-  def `[bias]`: typings.csstype.csstypeStrings.`[bias]` = this.cast("[bias]")
+  def `[bias]`: typings.csstype.csstypeStrings.`[bias]` = "[bias]".asInstanceOf[typings.csstype.csstypeStrings.`[bias]`]
   @scala.inline
-  def `[by]`: typings.csstype.csstypeStrings.`[by]` = this.cast("[by]")
+  def `[by]`: typings.csstype.csstypeStrings.`[by]` = "[by]".asInstanceOf[typings.csstype.csstypeStrings.`[by]`]
   @scala.inline
-  def `[calcMode]`: typings.csstype.csstypeStrings.`[calcMode]` = this.cast("[calcMode]")
+  def `[calcMode]`: typings.csstype.csstypeStrings.`[calcMode]` = "[calcMode]".asInstanceOf[typings.csstype.csstypeStrings.`[calcMode]`]
   @scala.inline
-  def `[cap-height]`: typings.csstype.csstypeStrings.`[cap-height]` = this.cast("[cap-height]")
+  def `[cap-height]`: typings.csstype.csstypeStrings.`[cap-height]` = "[cap-height]".asInstanceOf[typings.csstype.csstypeStrings.`[cap-height]`]
   @scala.inline
-  def `[class]`: typings.csstype.csstypeStrings.`[class]` = this.cast("[class]")
+  def `[class]`: typings.csstype.csstypeStrings.`[class]` = "[class]".asInstanceOf[typings.csstype.csstypeStrings.`[class]`]
   @scala.inline
-  def `[clip-path]`: typings.csstype.csstypeStrings.`[clip-path]` = this.cast("[clip-path]")
+  def `[clip-path]`: typings.csstype.csstypeStrings.`[clip-path]` = "[clip-path]".asInstanceOf[typings.csstype.csstypeStrings.`[clip-path]`]
   @scala.inline
-  def `[clip-rule]`: typings.csstype.csstypeStrings.`[clip-rule]` = this.cast("[clip-rule]")
+  def `[clip-rule]`: typings.csstype.csstypeStrings.`[clip-rule]` = "[clip-rule]".asInstanceOf[typings.csstype.csstypeStrings.`[clip-rule]`]
   @scala.inline
-  def `[clipPathUnits]`: typings.csstype.csstypeStrings.`[clipPathUnits]` = this.cast("[clipPathUnits]")
+  def `[clipPathUnits]`: typings.csstype.csstypeStrings.`[clipPathUnits]` = "[clipPathUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[clipPathUnits]`]
   @scala.inline
-  def `[clip]`: typings.csstype.csstypeStrings.`[clip]` = this.cast("[clip]")
+  def `[clip]`: typings.csstype.csstypeStrings.`[clip]` = "[clip]".asInstanceOf[typings.csstype.csstypeStrings.`[clip]`]
   @scala.inline
-  def `[color-interpolation-filters]`: typings.csstype.csstypeStrings.`[color-interpolation-filters]` = this.cast("[color-interpolation-filters]")
+  def `[color-interpolation-filters]`: typings.csstype.csstypeStrings.`[color-interpolation-filters]` = "[color-interpolation-filters]".asInstanceOf[typings.csstype.csstypeStrings.`[color-interpolation-filters]`]
   @scala.inline
-  def `[color-interpolation]`: typings.csstype.csstypeStrings.`[color-interpolation]` = this.cast("[color-interpolation]")
+  def `[color-interpolation]`: typings.csstype.csstypeStrings.`[color-interpolation]` = "[color-interpolation]".asInstanceOf[typings.csstype.csstypeStrings.`[color-interpolation]`]
   @scala.inline
-  def `[color-profile]`: typings.csstype.csstypeStrings.`[color-profile]` = this.cast("[color-profile]")
+  def `[color-profile]`: typings.csstype.csstypeStrings.`[color-profile]` = "[color-profile]".asInstanceOf[typings.csstype.csstypeStrings.`[color-profile]`]
   @scala.inline
-  def `[color-rendering]`: typings.csstype.csstypeStrings.`[color-rendering]` = this.cast("[color-rendering]")
+  def `[color-rendering]`: typings.csstype.csstypeStrings.`[color-rendering]` = "[color-rendering]".asInstanceOf[typings.csstype.csstypeStrings.`[color-rendering]`]
   @scala.inline
-  def `[color]`: typings.csstype.csstypeStrings.`[color]` = this.cast("[color]")
+  def `[color]`: typings.csstype.csstypeStrings.`[color]` = "[color]".asInstanceOf[typings.csstype.csstypeStrings.`[color]`]
   @scala.inline
-  def `[contentScriptType]`: typings.csstype.csstypeStrings.`[contentScriptType]` = this.cast("[contentScriptType]")
+  def `[contentScriptType]`: typings.csstype.csstypeStrings.`[contentScriptType]` = "[contentScriptType]".asInstanceOf[typings.csstype.csstypeStrings.`[contentScriptType]`]
   @scala.inline
-  def `[contentStyleType]`: typings.csstype.csstypeStrings.`[contentStyleType]` = this.cast("[contentStyleType]")
+  def `[contentStyleType]`: typings.csstype.csstypeStrings.`[contentStyleType]` = "[contentStyleType]".asInstanceOf[typings.csstype.csstypeStrings.`[contentStyleType]`]
   @scala.inline
-  def `[cursor]`: typings.csstype.csstypeStrings.`[cursor]` = this.cast("[cursor]")
+  def `[cursor]`: typings.csstype.csstypeStrings.`[cursor]` = "[cursor]".asInstanceOf[typings.csstype.csstypeStrings.`[cursor]`]
   @scala.inline
-  def `[cx]`: typings.csstype.csstypeStrings.`[cx]` = this.cast("[cx]")
+  def `[cx]`: typings.csstype.csstypeStrings.`[cx]` = "[cx]".asInstanceOf[typings.csstype.csstypeStrings.`[cx]`]
   @scala.inline
-  def `[cy]`: typings.csstype.csstypeStrings.`[cy]` = this.cast("[cy]")
+  def `[cy]`: typings.csstype.csstypeStrings.`[cy]` = "[cy]".asInstanceOf[typings.csstype.csstypeStrings.`[cy]`]
   @scala.inline
-  def `[d]`: typings.csstype.csstypeStrings.`[d]` = this.cast("[d]")
+  def `[d]`: typings.csstype.csstypeStrings.`[d]` = "[d]".asInstanceOf[typings.csstype.csstypeStrings.`[d]`]
   @scala.inline
-  def `[descent]`: typings.csstype.csstypeStrings.`[descent]` = this.cast("[descent]")
+  def `[descent]`: typings.csstype.csstypeStrings.`[descent]` = "[descent]".asInstanceOf[typings.csstype.csstypeStrings.`[descent]`]
   @scala.inline
-  def `[diffuseConstant]`: typings.csstype.csstypeStrings.`[diffuseConstant]` = this.cast("[diffuseConstant]")
+  def `[diffuseConstant]`: typings.csstype.csstypeStrings.`[diffuseConstant]` = "[diffuseConstant]".asInstanceOf[typings.csstype.csstypeStrings.`[diffuseConstant]`]
   @scala.inline
-  def `[direction]`: typings.csstype.csstypeStrings.`[direction]` = this.cast("[direction]")
+  def `[direction]`: typings.csstype.csstypeStrings.`[direction]` = "[direction]".asInstanceOf[typings.csstype.csstypeStrings.`[direction]`]
   @scala.inline
-  def `[display]`: typings.csstype.csstypeStrings.`[display]` = this.cast("[display]")
+  def `[display]`: typings.csstype.csstypeStrings.`[display]` = "[display]".asInstanceOf[typings.csstype.csstypeStrings.`[display]`]
   @scala.inline
-  def `[divisor]`: typings.csstype.csstypeStrings.`[divisor]` = this.cast("[divisor]")
+  def `[divisor]`: typings.csstype.csstypeStrings.`[divisor]` = "[divisor]".asInstanceOf[typings.csstype.csstypeStrings.`[divisor]`]
   @scala.inline
-  def `[document]`: typings.csstype.csstypeStrings.`[document]` = this.cast("[document]")
+  def `[document]`: typings.csstype.csstypeStrings.`[document]` = "[document]".asInstanceOf[typings.csstype.csstypeStrings.`[document]`]
   @scala.inline
-  def `[dominant-baseline]`: typings.csstype.csstypeStrings.`[dominant-baseline]` = this.cast("[dominant-baseline]")
+  def `[dominant-baseline]`: typings.csstype.csstypeStrings.`[dominant-baseline]` = "[dominant-baseline]".asInstanceOf[typings.csstype.csstypeStrings.`[dominant-baseline]`]
   @scala.inline
-  def `[download]`: typings.csstype.csstypeStrings.`[download]` = this.cast("[download]")
+  def `[download]`: typings.csstype.csstypeStrings.`[download]` = "[download]".asInstanceOf[typings.csstype.csstypeStrings.`[download]`]
   @scala.inline
-  def `[dur]`: typings.csstype.csstypeStrings.`[dur]` = this.cast("[dur]")
+  def `[dur]`: typings.csstype.csstypeStrings.`[dur]` = "[dur]".asInstanceOf[typings.csstype.csstypeStrings.`[dur]`]
   @scala.inline
-  def `[dx]`: typings.csstype.csstypeStrings.`[dx]` = this.cast("[dx]")
+  def `[dx]`: typings.csstype.csstypeStrings.`[dx]` = "[dx]".asInstanceOf[typings.csstype.csstypeStrings.`[dx]`]
   @scala.inline
-  def `[dy]`: typings.csstype.csstypeStrings.`[dy]` = this.cast("[dy]")
+  def `[dy]`: typings.csstype.csstypeStrings.`[dy]` = "[dy]".asInstanceOf[typings.csstype.csstypeStrings.`[dy]`]
   @scala.inline
-  def `[edgeMode]`: typings.csstype.csstypeStrings.`[edgeMode]` = this.cast("[edgeMode]")
+  def `[edgeMode]`: typings.csstype.csstypeStrings.`[edgeMode]` = "[edgeMode]".asInstanceOf[typings.csstype.csstypeStrings.`[edgeMode]`]
   @scala.inline
-  def `[elevation]`: typings.csstype.csstypeStrings.`[elevation]` = this.cast("[elevation]")
+  def `[elevation]`: typings.csstype.csstypeStrings.`[elevation]` = "[elevation]".asInstanceOf[typings.csstype.csstypeStrings.`[elevation]`]
   @scala.inline
-  def `[enable-background]`: typings.csstype.csstypeStrings.`[enable-background]` = this.cast("[enable-background]")
+  def `[enable-background]`: typings.csstype.csstypeStrings.`[enable-background]` = "[enable-background]".asInstanceOf[typings.csstype.csstypeStrings.`[enable-background]`]
   @scala.inline
-  def `[externalResourcesRequired]`: typings.csstype.csstypeStrings.`[externalResourcesRequired]` = this.cast("[externalResourcesRequired]")
+  def `[externalResourcesRequired]`: typings.csstype.csstypeStrings.`[externalResourcesRequired]` = "[externalResourcesRequired]".asInstanceOf[typings.csstype.csstypeStrings.`[externalResourcesRequired]`]
   @scala.inline
-  def `[fill-opacity]`: typings.csstype.csstypeStrings.`[fill-opacity]` = this.cast("[fill-opacity]")
+  def `[fill-opacity]`: typings.csstype.csstypeStrings.`[fill-opacity]` = "[fill-opacity]".asInstanceOf[typings.csstype.csstypeStrings.`[fill-opacity]`]
   @scala.inline
-  def `[fill-rule]`: typings.csstype.csstypeStrings.`[fill-rule]` = this.cast("[fill-rule]")
+  def `[fill-rule]`: typings.csstype.csstypeStrings.`[fill-rule]` = "[fill-rule]".asInstanceOf[typings.csstype.csstypeStrings.`[fill-rule]`]
   @scala.inline
-  def `[fill]`: typings.csstype.csstypeStrings.`[fill]` = this.cast("[fill]")
+  def `[fill]`: typings.csstype.csstypeStrings.`[fill]` = "[fill]".asInstanceOf[typings.csstype.csstypeStrings.`[fill]`]
   @scala.inline
-  def `[filterRes]`: typings.csstype.csstypeStrings.`[filterRes]` = this.cast("[filterRes]")
+  def `[filterRes]`: typings.csstype.csstypeStrings.`[filterRes]` = "[filterRes]".asInstanceOf[typings.csstype.csstypeStrings.`[filterRes]`]
   @scala.inline
-  def `[filterUnits]`: typings.csstype.csstypeStrings.`[filterUnits]` = this.cast("[filterUnits]")
+  def `[filterUnits]`: typings.csstype.csstypeStrings.`[filterUnits]` = "[filterUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[filterUnits]`]
   @scala.inline
-  def `[filter]`: typings.csstype.csstypeStrings.`[filter]` = this.cast("[filter]")
+  def `[filter]`: typings.csstype.csstypeStrings.`[filter]` = "[filter]".asInstanceOf[typings.csstype.csstypeStrings.`[filter]`]
   @scala.inline
-  def `[flood-color]`: typings.csstype.csstypeStrings.`[flood-color]` = this.cast("[flood-color]")
+  def `[flood-color]`: typings.csstype.csstypeStrings.`[flood-color]` = "[flood-color]".asInstanceOf[typings.csstype.csstypeStrings.`[flood-color]`]
   @scala.inline
-  def `[flood-opacity]`: typings.csstype.csstypeStrings.`[flood-opacity]` = this.cast("[flood-opacity]")
+  def `[flood-opacity]`: typings.csstype.csstypeStrings.`[flood-opacity]` = "[flood-opacity]".asInstanceOf[typings.csstype.csstypeStrings.`[flood-opacity]`]
   @scala.inline
-  def `[font-family]`: typings.csstype.csstypeStrings.`[font-family]` = this.cast("[font-family]")
+  def `[font-family]`: typings.csstype.csstypeStrings.`[font-family]` = "[font-family]".asInstanceOf[typings.csstype.csstypeStrings.`[font-family]`]
   @scala.inline
-  def `[font-size-adjust]`: typings.csstype.csstypeStrings.`[font-size-adjust]` = this.cast("[font-size-adjust]")
+  def `[font-size-adjust]`: typings.csstype.csstypeStrings.`[font-size-adjust]` = "[font-size-adjust]".asInstanceOf[typings.csstype.csstypeStrings.`[font-size-adjust]`]
   @scala.inline
-  def `[font-size]`: typings.csstype.csstypeStrings.`[font-size]` = this.cast("[font-size]")
+  def `[font-size]`: typings.csstype.csstypeStrings.`[font-size]` = "[font-size]".asInstanceOf[typings.csstype.csstypeStrings.`[font-size]`]
   @scala.inline
-  def `[font-stretch]`: typings.csstype.csstypeStrings.`[font-stretch]` = this.cast("[font-stretch]")
+  def `[font-stretch]`: typings.csstype.csstypeStrings.`[font-stretch]` = "[font-stretch]".asInstanceOf[typings.csstype.csstypeStrings.`[font-stretch]`]
   @scala.inline
-  def `[font-style]`: typings.csstype.csstypeStrings.`[font-style]` = this.cast("[font-style]")
+  def `[font-style]`: typings.csstype.csstypeStrings.`[font-style]` = "[font-style]".asInstanceOf[typings.csstype.csstypeStrings.`[font-style]`]
   @scala.inline
-  def `[font-variant]`: typings.csstype.csstypeStrings.`[font-variant]` = this.cast("[font-variant]")
+  def `[font-variant]`: typings.csstype.csstypeStrings.`[font-variant]` = "[font-variant]".asInstanceOf[typings.csstype.csstypeStrings.`[font-variant]`]
   @scala.inline
-  def `[font-weight]`: typings.csstype.csstypeStrings.`[font-weight]` = this.cast("[font-weight]")
+  def `[font-weight]`: typings.csstype.csstypeStrings.`[font-weight]` = "[font-weight]".asInstanceOf[typings.csstype.csstypeStrings.`[font-weight]`]
   @scala.inline
-  def `[format]`: typings.csstype.csstypeStrings.`[format]` = this.cast("[format]")
+  def `[format]`: typings.csstype.csstypeStrings.`[format]` = "[format]".asInstanceOf[typings.csstype.csstypeStrings.`[format]`]
   @scala.inline
-  def `[fr]`: typings.csstype.csstypeStrings.`[fr]` = this.cast("[fr]")
+  def `[fr]`: typings.csstype.csstypeStrings.`[fr]` = "[fr]".asInstanceOf[typings.csstype.csstypeStrings.`[fr]`]
   @scala.inline
-  def `[from]`: typings.csstype.csstypeStrings.`[from]` = this.cast("[from]")
+  def `[from]`: typings.csstype.csstypeStrings.`[from]` = "[from]".asInstanceOf[typings.csstype.csstypeStrings.`[from]`]
   @scala.inline
-  def `[fx]`: typings.csstype.csstypeStrings.`[fx]` = this.cast("[fx]")
+  def `[fx]`: typings.csstype.csstypeStrings.`[fx]` = "[fx]".asInstanceOf[typings.csstype.csstypeStrings.`[fx]`]
   @scala.inline
-  def `[fy]`: typings.csstype.csstypeStrings.`[fy]` = this.cast("[fy]")
+  def `[fy]`: typings.csstype.csstypeStrings.`[fy]` = "[fy]".asInstanceOf[typings.csstype.csstypeStrings.`[fy]`]
   @scala.inline
-  def `[g1]`: typings.csstype.csstypeStrings.`[g1]` = this.cast("[g1]")
+  def `[g1]`: typings.csstype.csstypeStrings.`[g1]` = "[g1]".asInstanceOf[typings.csstype.csstypeStrings.`[g1]`]
   @scala.inline
-  def `[g2]`: typings.csstype.csstypeStrings.`[g2]` = this.cast("[g2]")
+  def `[g2]`: typings.csstype.csstypeStrings.`[g2]` = "[g2]".asInstanceOf[typings.csstype.csstypeStrings.`[g2]`]
   @scala.inline
-  def `[global]`: typings.csstype.csstypeStrings.`[global]` = this.cast("[global]")
+  def `[global]`: typings.csstype.csstypeStrings.`[global]` = "[global]".asInstanceOf[typings.csstype.csstypeStrings.`[global]`]
   @scala.inline
-  def `[glyph-name]`: typings.csstype.csstypeStrings.`[glyph-name]` = this.cast("[glyph-name]")
+  def `[glyph-name]`: typings.csstype.csstypeStrings.`[glyph-name]` = "[glyph-name]".asInstanceOf[typings.csstype.csstypeStrings.`[glyph-name]`]
   @scala.inline
-  def `[glyph-orientation-horizontal]`: typings.csstype.csstypeStrings.`[glyph-orientation-horizontal]` = this.cast("[glyph-orientation-horizontal]")
+  def `[glyph-orientation-horizontal]`: typings.csstype.csstypeStrings.`[glyph-orientation-horizontal]` = "[glyph-orientation-horizontal]".asInstanceOf[typings.csstype.csstypeStrings.`[glyph-orientation-horizontal]`]
   @scala.inline
-  def `[glyph-orientation-vertical]`: typings.csstype.csstypeStrings.`[glyph-orientation-vertical]` = this.cast("[glyph-orientation-vertical]")
+  def `[glyph-orientation-vertical]`: typings.csstype.csstypeStrings.`[glyph-orientation-vertical]` = "[glyph-orientation-vertical]".asInstanceOf[typings.csstype.csstypeStrings.`[glyph-orientation-vertical]`]
   @scala.inline
-  def `[glyphRef]`: typings.csstype.csstypeStrings.`[glyphRef]` = this.cast("[glyphRef]")
+  def `[glyphRef]`: typings.csstype.csstypeStrings.`[glyphRef]` = "[glyphRef]".asInstanceOf[typings.csstype.csstypeStrings.`[glyphRef]`]
   @scala.inline
-  def `[gradientTransform]`: typings.csstype.csstypeStrings.`[gradientTransform]` = this.cast("[gradientTransform]")
+  def `[gradientTransform]`: typings.csstype.csstypeStrings.`[gradientTransform]` = "[gradientTransform]".asInstanceOf[typings.csstype.csstypeStrings.`[gradientTransform]`]
   @scala.inline
-  def `[gradientUnits]`: typings.csstype.csstypeStrings.`[gradientUnits]` = this.cast("[gradientUnits]")
+  def `[gradientUnits]`: typings.csstype.csstypeStrings.`[gradientUnits]` = "[gradientUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[gradientUnits]`]
   @scala.inline
-  def `[graphical]`: typings.csstype.csstypeStrings.`[graphical]` = this.cast("[graphical]")
+  def `[graphical]`: typings.csstype.csstypeStrings.`[graphical]` = "[graphical]".asInstanceOf[typings.csstype.csstypeStrings.`[graphical]`]
   @scala.inline
-  def `[hanging]`: typings.csstype.csstypeStrings.`[hanging]` = this.cast("[hanging]")
+  def `[hanging]`: typings.csstype.csstypeStrings.`[hanging]` = "[hanging]".asInstanceOf[typings.csstype.csstypeStrings.`[hanging]`]
   @scala.inline
-  def `[hatchContentUnits]`: typings.csstype.csstypeStrings.`[hatchContentUnits]` = this.cast("[hatchContentUnits]")
+  def `[hatchContentUnits]`: typings.csstype.csstypeStrings.`[hatchContentUnits]` = "[hatchContentUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[hatchContentUnits]`]
   @scala.inline
-  def `[hatchUnits]`: typings.csstype.csstypeStrings.`[hatchUnits]` = this.cast("[hatchUnits]")
+  def `[hatchUnits]`: typings.csstype.csstypeStrings.`[hatchUnits]` = "[hatchUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[hatchUnits]`]
   @scala.inline
-  def `[height]`: typings.csstype.csstypeStrings.`[height]` = this.cast("[height]")
+  def `[height]`: typings.csstype.csstypeStrings.`[height]` = "[height]".asInstanceOf[typings.csstype.csstypeStrings.`[height]`]
   @scala.inline
-  def `[horiz-adv-x]`: typings.csstype.csstypeStrings.`[horiz-adv-x]` = this.cast("[horiz-adv-x]")
+  def `[horiz-adv-x]`: typings.csstype.csstypeStrings.`[horiz-adv-x]` = "[horiz-adv-x]".asInstanceOf[typings.csstype.csstypeStrings.`[horiz-adv-x]`]
   @scala.inline
-  def `[horiz-origin-x]`: typings.csstype.csstypeStrings.`[horiz-origin-x]` = this.cast("[horiz-origin-x]")
+  def `[horiz-origin-x]`: typings.csstype.csstypeStrings.`[horiz-origin-x]` = "[horiz-origin-x]".asInstanceOf[typings.csstype.csstypeStrings.`[horiz-origin-x]`]
   @scala.inline
-  def `[horiz-origin-y]`: typings.csstype.csstypeStrings.`[horiz-origin-y]` = this.cast("[horiz-origin-y]")
+  def `[horiz-origin-y]`: typings.csstype.csstypeStrings.`[horiz-origin-y]` = "[horiz-origin-y]".asInstanceOf[typings.csstype.csstypeStrings.`[horiz-origin-y]`]
   @scala.inline
-  def `[href]`: typings.csstype.csstypeStrings.`[href]` = this.cast("[href]")
+  def `[href]`: typings.csstype.csstypeStrings.`[href]` = "[href]".asInstanceOf[typings.csstype.csstypeStrings.`[href]`]
   @scala.inline
-  def `[hreflang]`: typings.csstype.csstypeStrings.`[hreflang]` = this.cast("[hreflang]")
+  def `[hreflang]`: typings.csstype.csstypeStrings.`[hreflang]` = "[hreflang]".asInstanceOf[typings.csstype.csstypeStrings.`[hreflang]`]
   @scala.inline
-  def `[id]`: typings.csstype.csstypeStrings.`[id]` = this.cast("[id]")
+  def `[id]`: typings.csstype.csstypeStrings.`[id]` = "[id]".asInstanceOf[typings.csstype.csstypeStrings.`[id]`]
   @scala.inline
-  def `[ideographic]`: typings.csstype.csstypeStrings.`[ideographic]` = this.cast("[ideographic]")
+  def `[ideographic]`: typings.csstype.csstypeStrings.`[ideographic]` = "[ideographic]".asInstanceOf[typings.csstype.csstypeStrings.`[ideographic]`]
   @scala.inline
-  def `[image-rendering]`: typings.csstype.csstypeStrings.`[image-rendering]` = this.cast("[image-rendering]")
+  def `[image-rendering]`: typings.csstype.csstypeStrings.`[image-rendering]` = "[image-rendering]".asInstanceOf[typings.csstype.csstypeStrings.`[image-rendering]`]
   @scala.inline
-  def `[in2]`: typings.csstype.csstypeStrings.`[in2]` = this.cast("[in2]")
+  def `[in2]`: typings.csstype.csstypeStrings.`[in2]` = "[in2]".asInstanceOf[typings.csstype.csstypeStrings.`[in2]`]
   @scala.inline
-  def `[in]`: typings.csstype.csstypeStrings.`[in]` = this.cast("[in]")
+  def `[in]`: typings.csstype.csstypeStrings.`[in]` = "[in]".asInstanceOf[typings.csstype.csstypeStrings.`[in]`]
   @scala.inline
-  def `[k1]`: typings.csstype.csstypeStrings.`[k1]` = this.cast("[k1]")
+  def `[k1]`: typings.csstype.csstypeStrings.`[k1]` = "[k1]".asInstanceOf[typings.csstype.csstypeStrings.`[k1]`]
   @scala.inline
-  def `[k2]`: typings.csstype.csstypeStrings.`[k2]` = this.cast("[k2]")
+  def `[k2]`: typings.csstype.csstypeStrings.`[k2]` = "[k2]".asInstanceOf[typings.csstype.csstypeStrings.`[k2]`]
   @scala.inline
-  def `[k3]`: typings.csstype.csstypeStrings.`[k3]` = this.cast("[k3]")
+  def `[k3]`: typings.csstype.csstypeStrings.`[k3]` = "[k3]".asInstanceOf[typings.csstype.csstypeStrings.`[k3]`]
   @scala.inline
-  def `[k4]`: typings.csstype.csstypeStrings.`[k4]` = this.cast("[k4]")
+  def `[k4]`: typings.csstype.csstypeStrings.`[k4]` = "[k4]".asInstanceOf[typings.csstype.csstypeStrings.`[k4]`]
   @scala.inline
-  def `[k]`: typings.csstype.csstypeStrings.`[k]` = this.cast("[k]")
+  def `[k]`: typings.csstype.csstypeStrings.`[k]` = "[k]".asInstanceOf[typings.csstype.csstypeStrings.`[k]`]
   @scala.inline
-  def `[kernelMatrix]`: typings.csstype.csstypeStrings.`[kernelMatrix]` = this.cast("[kernelMatrix]")
+  def `[kernelMatrix]`: typings.csstype.csstypeStrings.`[kernelMatrix]` = "[kernelMatrix]".asInstanceOf[typings.csstype.csstypeStrings.`[kernelMatrix]`]
   @scala.inline
-  def `[kernelUnitLength]`: typings.csstype.csstypeStrings.`[kernelUnitLength]` = this.cast("[kernelUnitLength]")
+  def `[kernelUnitLength]`: typings.csstype.csstypeStrings.`[kernelUnitLength]` = "[kernelUnitLength]".asInstanceOf[typings.csstype.csstypeStrings.`[kernelUnitLength]`]
   @scala.inline
-  def `[kerning]`: typings.csstype.csstypeStrings.`[kerning]` = this.cast("[kerning]")
+  def `[kerning]`: typings.csstype.csstypeStrings.`[kerning]` = "[kerning]".asInstanceOf[typings.csstype.csstypeStrings.`[kerning]`]
   @scala.inline
-  def `[keyPoints]`: typings.csstype.csstypeStrings.`[keyPoints]` = this.cast("[keyPoints]")
+  def `[keyPoints]`: typings.csstype.csstypeStrings.`[keyPoints]` = "[keyPoints]".asInstanceOf[typings.csstype.csstypeStrings.`[keyPoints]`]
   @scala.inline
-  def `[lang]`: typings.csstype.csstypeStrings.`[lang]` = this.cast("[lang]")
+  def `[lang]`: typings.csstype.csstypeStrings.`[lang]` = "[lang]".asInstanceOf[typings.csstype.csstypeStrings.`[lang]`]
   @scala.inline
-  def `[lengthAdjust]`: typings.csstype.csstypeStrings.`[lengthAdjust]` = this.cast("[lengthAdjust]")
+  def `[lengthAdjust]`: typings.csstype.csstypeStrings.`[lengthAdjust]` = "[lengthAdjust]".asInstanceOf[typings.csstype.csstypeStrings.`[lengthAdjust]`]
   @scala.inline
-  def `[letter-spacing]`: typings.csstype.csstypeStrings.`[letter-spacing]` = this.cast("[letter-spacing]")
+  def `[letter-spacing]`: typings.csstype.csstypeStrings.`[letter-spacing]` = "[letter-spacing]".asInstanceOf[typings.csstype.csstypeStrings.`[letter-spacing]`]
   @scala.inline
-  def `[lighterForError]`: typings.csstype.csstypeStrings.`[lighterForError]` = this.cast("[lighterForError]")
+  def `[lighterForError]`: typings.csstype.csstypeStrings.`[lighterForError]` = "[lighterForError]".asInstanceOf[typings.csstype.csstypeStrings.`[lighterForError]`]
   @scala.inline
-  def `[lighting-color]`: typings.csstype.csstypeStrings.`[lighting-color]` = this.cast("[lighting-color]")
+  def `[lighting-color]`: typings.csstype.csstypeStrings.`[lighting-color]` = "[lighting-color]".asInstanceOf[typings.csstype.csstypeStrings.`[lighting-color]`]
   @scala.inline
-  def `[limitingConeAngle]`: typings.csstype.csstypeStrings.`[limitingConeAngle]` = this.cast("[limitingConeAngle]")
+  def `[limitingConeAngle]`: typings.csstype.csstypeStrings.`[limitingConeAngle]` = "[limitingConeAngle]".asInstanceOf[typings.csstype.csstypeStrings.`[limitingConeAngle]`]
   @scala.inline
-  def `[local]`: typings.csstype.csstypeStrings.`[local]` = this.cast("[local]")
+  def `[local]`: typings.csstype.csstypeStrings.`[local]` = "[local]".asInstanceOf[typings.csstype.csstypeStrings.`[local]`]
   @scala.inline
-  def `[marker-end]`: typings.csstype.csstypeStrings.`[marker-end]` = this.cast("[marker-end]")
+  def `[marker-end]`: typings.csstype.csstypeStrings.`[marker-end]` = "[marker-end]".asInstanceOf[typings.csstype.csstypeStrings.`[marker-end]`]
   @scala.inline
-  def `[marker-mid]`: typings.csstype.csstypeStrings.`[marker-mid]` = this.cast("[marker-mid]")
+  def `[marker-mid]`: typings.csstype.csstypeStrings.`[marker-mid]` = "[marker-mid]".asInstanceOf[typings.csstype.csstypeStrings.`[marker-mid]`]
   @scala.inline
-  def `[marker-start]`: typings.csstype.csstypeStrings.`[marker-start]` = this.cast("[marker-start]")
+  def `[marker-start]`: typings.csstype.csstypeStrings.`[marker-start]` = "[marker-start]".asInstanceOf[typings.csstype.csstypeStrings.`[marker-start]`]
   @scala.inline
-  def `[markerHeight]`: typings.csstype.csstypeStrings.`[markerHeight]` = this.cast("[markerHeight]")
+  def `[markerHeight]`: typings.csstype.csstypeStrings.`[markerHeight]` = "[markerHeight]".asInstanceOf[typings.csstype.csstypeStrings.`[markerHeight]`]
   @scala.inline
-  def `[markerUnits]`: typings.csstype.csstypeStrings.`[markerUnits]` = this.cast("[markerUnits]")
+  def `[markerUnits]`: typings.csstype.csstypeStrings.`[markerUnits]` = "[markerUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[markerUnits]`]
   @scala.inline
-  def `[markerWidth]`: typings.csstype.csstypeStrings.`[markerWidth]` = this.cast("[markerWidth]")
+  def `[markerWidth]`: typings.csstype.csstypeStrings.`[markerWidth]` = "[markerWidth]".asInstanceOf[typings.csstype.csstypeStrings.`[markerWidth]`]
   @scala.inline
-  def `[maskContentUnits]`: typings.csstype.csstypeStrings.`[maskContentUnits]` = this.cast("[maskContentUnits]")
+  def `[maskContentUnits]`: typings.csstype.csstypeStrings.`[maskContentUnits]` = "[maskContentUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[maskContentUnits]`]
   @scala.inline
-  def `[maskUnits]`: typings.csstype.csstypeStrings.`[maskUnits]` = this.cast("[maskUnits]")
+  def `[maskUnits]`: typings.csstype.csstypeStrings.`[maskUnits]` = "[maskUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[maskUnits]`]
   @scala.inline
-  def `[mask]`: typings.csstype.csstypeStrings.`[mask]` = this.cast("[mask]")
+  def `[mask]`: typings.csstype.csstypeStrings.`[mask]` = "[mask]".asInstanceOf[typings.csstype.csstypeStrings.`[mask]`]
   @scala.inline
-  def `[mathematical]`: typings.csstype.csstypeStrings.`[mathematical]` = this.cast("[mathematical]")
+  def `[mathematical]`: typings.csstype.csstypeStrings.`[mathematical]` = "[mathematical]".asInstanceOf[typings.csstype.csstypeStrings.`[mathematical]`]
   @scala.inline
-  def `[media]`: typings.csstype.csstypeStrings.`[media]` = this.cast("[media]")
+  def `[media]`: typings.csstype.csstypeStrings.`[media]` = "[media]".asInstanceOf[typings.csstype.csstypeStrings.`[media]`]
   @scala.inline
-  def `[method]`: typings.csstype.csstypeStrings.`[method]` = this.cast("[method]")
+  def `[method]`: typings.csstype.csstypeStrings.`[method]` = "[method]".asInstanceOf[typings.csstype.csstypeStrings.`[method]`]
   @scala.inline
-  def `[mode]`: typings.csstype.csstypeStrings.`[mode]` = this.cast("[mode]")
+  def `[mode]`: typings.csstype.csstypeStrings.`[mode]` = "[mode]".asInstanceOf[typings.csstype.csstypeStrings.`[mode]`]
   @scala.inline
-  def `[name]`: typings.csstype.csstypeStrings.`[name]` = this.cast("[name]")
+  def `[name]`: typings.csstype.csstypeStrings.`[name]` = "[name]".asInstanceOf[typings.csstype.csstypeStrings.`[name]`]
   @scala.inline
-  def `[numOctaves]`: typings.csstype.csstypeStrings.`[numOctaves]` = this.cast("[numOctaves]")
+  def `[numOctaves]`: typings.csstype.csstypeStrings.`[numOctaves]` = "[numOctaves]".asInstanceOf[typings.csstype.csstypeStrings.`[numOctaves]`]
   @scala.inline
-  def `[offset]`: typings.csstype.csstypeStrings.`[offset]` = this.cast("[offset]")
+  def `[offset]`: typings.csstype.csstypeStrings.`[offset]` = "[offset]".asInstanceOf[typings.csstype.csstypeStrings.`[offset]`]
   @scala.inline
-  def `[opacity]`: typings.csstype.csstypeStrings.`[opacity]` = this.cast("[opacity]")
+  def `[opacity]`: typings.csstype.csstypeStrings.`[opacity]` = "[opacity]".asInstanceOf[typings.csstype.csstypeStrings.`[opacity]`]
   @scala.inline
-  def `[operator]`: typings.csstype.csstypeStrings.`[operator]` = this.cast("[operator]")
+  def `[operator]`: typings.csstype.csstypeStrings.`[operator]` = "[operator]".asInstanceOf[typings.csstype.csstypeStrings.`[operator]`]
   @scala.inline
-  def `[order]`: typings.csstype.csstypeStrings.`[order]` = this.cast("[order]")
+  def `[order]`: typings.csstype.csstypeStrings.`[order]` = "[order]".asInstanceOf[typings.csstype.csstypeStrings.`[order]`]
   @scala.inline
-  def `[orient]`: typings.csstype.csstypeStrings.`[orient]` = this.cast("[orient]")
+  def `[orient]`: typings.csstype.csstypeStrings.`[orient]` = "[orient]".asInstanceOf[typings.csstype.csstypeStrings.`[orient]`]
   @scala.inline
-  def `[orientation]`: typings.csstype.csstypeStrings.`[orientation]` = this.cast("[orientation]")
+  def `[orientation]`: typings.csstype.csstypeStrings.`[orientation]` = "[orientation]".asInstanceOf[typings.csstype.csstypeStrings.`[orientation]`]
   @scala.inline
-  def `[origin]`: typings.csstype.csstypeStrings.`[origin]` = this.cast("[origin]")
+  def `[origin]`: typings.csstype.csstypeStrings.`[origin]` = "[origin]".asInstanceOf[typings.csstype.csstypeStrings.`[origin]`]
   @scala.inline
-  def `[overflow]`: typings.csstype.csstypeStrings.`[overflow]` = this.cast("[overflow]")
+  def `[overflow]`: typings.csstype.csstypeStrings.`[overflow]` = "[overflow]".asInstanceOf[typings.csstype.csstypeStrings.`[overflow]`]
   @scala.inline
-  def `[overline-position]`: typings.csstype.csstypeStrings.`[overline-position]` = this.cast("[overline-position]")
+  def `[overline-position]`: typings.csstype.csstypeStrings.`[overline-position]` = "[overline-position]".asInstanceOf[typings.csstype.csstypeStrings.`[overline-position]`]
   @scala.inline
-  def `[overline-thickness]`: typings.csstype.csstypeStrings.`[overline-thickness]` = this.cast("[overline-thickness]")
+  def `[overline-thickness]`: typings.csstype.csstypeStrings.`[overline-thickness]` = "[overline-thickness]".asInstanceOf[typings.csstype.csstypeStrings.`[overline-thickness]`]
   @scala.inline
-  def `[paint-order]`: typings.csstype.csstypeStrings.`[paint-order]` = this.cast("[paint-order]")
+  def `[paint-order]`: typings.csstype.csstypeStrings.`[paint-order]` = "[paint-order]".asInstanceOf[typings.csstype.csstypeStrings.`[paint-order]`]
   @scala.inline
-  def `[panose-1]`: typings.csstype.csstypeStrings.`[panose-1]` = this.cast("[panose-1]")
+  def `[panose-1]`: typings.csstype.csstypeStrings.`[panose-1]` = "[panose-1]".asInstanceOf[typings.csstype.csstypeStrings.`[panose-1]`]
   @scala.inline
-  def `[path]`: typings.csstype.csstypeStrings.`[path]` = this.cast("[path]")
+  def `[path]`: typings.csstype.csstypeStrings.`[path]` = "[path]".asInstanceOf[typings.csstype.csstypeStrings.`[path]`]
   @scala.inline
-  def `[patternContentUnits]`: typings.csstype.csstypeStrings.`[patternContentUnits]` = this.cast("[patternContentUnits]")
+  def `[patternContentUnits]`: typings.csstype.csstypeStrings.`[patternContentUnits]` = "[patternContentUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[patternContentUnits]`]
   @scala.inline
-  def `[patternTransform]`: typings.csstype.csstypeStrings.`[patternTransform]` = this.cast("[patternTransform]")
+  def `[patternTransform]`: typings.csstype.csstypeStrings.`[patternTransform]` = "[patternTransform]".asInstanceOf[typings.csstype.csstypeStrings.`[patternTransform]`]
   @scala.inline
-  def `[patternUnits]`: typings.csstype.csstypeStrings.`[patternUnits]` = this.cast("[patternUnits]")
+  def `[patternUnits]`: typings.csstype.csstypeStrings.`[patternUnits]` = "[patternUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[patternUnits]`]
   @scala.inline
-  def `[ping]`: typings.csstype.csstypeStrings.`[ping]` = this.cast("[ping]")
+  def `[ping]`: typings.csstype.csstypeStrings.`[ping]` = "[ping]".asInstanceOf[typings.csstype.csstypeStrings.`[ping]`]
   @scala.inline
-  def `[pitch]`: typings.csstype.csstypeStrings.`[pitch]` = this.cast("[pitch]")
+  def `[pitch]`: typings.csstype.csstypeStrings.`[pitch]` = "[pitch]".asInstanceOf[typings.csstype.csstypeStrings.`[pitch]`]
   @scala.inline
-  def `[pointer-events]`: typings.csstype.csstypeStrings.`[pointer-events]` = this.cast("[pointer-events]")
+  def `[pointer-events]`: typings.csstype.csstypeStrings.`[pointer-events]` = "[pointer-events]".asInstanceOf[typings.csstype.csstypeStrings.`[pointer-events]`]
   @scala.inline
-  def `[pointsAtX]`: typings.csstype.csstypeStrings.`[pointsAtX]` = this.cast("[pointsAtX]")
+  def `[pointsAtX]`: typings.csstype.csstypeStrings.`[pointsAtX]` = "[pointsAtX]".asInstanceOf[typings.csstype.csstypeStrings.`[pointsAtX]`]
   @scala.inline
-  def `[pointsAtY]`: typings.csstype.csstypeStrings.`[pointsAtY]` = this.cast("[pointsAtY]")
+  def `[pointsAtY]`: typings.csstype.csstypeStrings.`[pointsAtY]` = "[pointsAtY]".asInstanceOf[typings.csstype.csstypeStrings.`[pointsAtY]`]
   @scala.inline
-  def `[pointsAtZ]`: typings.csstype.csstypeStrings.`[pointsAtZ]` = this.cast("[pointsAtZ]")
+  def `[pointsAtZ]`: typings.csstype.csstypeStrings.`[pointsAtZ]` = "[pointsAtZ]".asInstanceOf[typings.csstype.csstypeStrings.`[pointsAtZ]`]
   @scala.inline
-  def `[points]`: typings.csstype.csstypeStrings.`[points]` = this.cast("[points]")
+  def `[points]`: typings.csstype.csstypeStrings.`[points]` = "[points]".asInstanceOf[typings.csstype.csstypeStrings.`[points]`]
   @scala.inline
-  def `[preserveAlpha]`: typings.csstype.csstypeStrings.`[preserveAlpha]` = this.cast("[preserveAlpha]")
+  def `[preserveAlpha]`: typings.csstype.csstypeStrings.`[preserveAlpha]` = "[preserveAlpha]".asInstanceOf[typings.csstype.csstypeStrings.`[preserveAlpha]`]
   @scala.inline
-  def `[preserveAspectRatio]`: typings.csstype.csstypeStrings.`[preserveAspectRatio]` = this.cast("[preserveAspectRatio]")
+  def `[preserveAspectRatio]`: typings.csstype.csstypeStrings.`[preserveAspectRatio]` = "[preserveAspectRatio]".asInstanceOf[typings.csstype.csstypeStrings.`[preserveAspectRatio]`]
   @scala.inline
-  def `[primitiveUnits]`: typings.csstype.csstypeStrings.`[primitiveUnits]` = this.cast("[primitiveUnits]")
+  def `[primitiveUnits]`: typings.csstype.csstypeStrings.`[primitiveUnits]` = "[primitiveUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[primitiveUnits]`]
   @scala.inline
-  def `[r]`: typings.csstype.csstypeStrings.`[r]` = this.cast("[r]")
+  def `[r]`: typings.csstype.csstypeStrings.`[r]` = "[r]".asInstanceOf[typings.csstype.csstypeStrings.`[r]`]
   @scala.inline
-  def `[radius]`: typings.csstype.csstypeStrings.`[radius]` = this.cast("[radius]")
+  def `[radius]`: typings.csstype.csstypeStrings.`[radius]` = "[radius]".asInstanceOf[typings.csstype.csstypeStrings.`[radius]`]
   @scala.inline
-  def `[refX]`: typings.csstype.csstypeStrings.`[refX]` = this.cast("[refX]")
+  def `[refX]`: typings.csstype.csstypeStrings.`[refX]` = "[refX]".asInstanceOf[typings.csstype.csstypeStrings.`[refX]`]
   @scala.inline
-  def `[refY]`: typings.csstype.csstypeStrings.`[refY]` = this.cast("[refY]")
+  def `[refY]`: typings.csstype.csstypeStrings.`[refY]` = "[refY]".asInstanceOf[typings.csstype.csstypeStrings.`[refY]`]
   @scala.inline
-  def `[referrerPolicy]`: typings.csstype.csstypeStrings.`[referrerPolicy]` = this.cast("[referrerPolicy]")
+  def `[referrerPolicy]`: typings.csstype.csstypeStrings.`[referrerPolicy]` = "[referrerPolicy]".asInstanceOf[typings.csstype.csstypeStrings.`[referrerPolicy]`]
   @scala.inline
-  def `[rel]`: typings.csstype.csstypeStrings.`[rel]` = this.cast("[rel]")
+  def `[rel]`: typings.csstype.csstypeStrings.`[rel]` = "[rel]".asInstanceOf[typings.csstype.csstypeStrings.`[rel]`]
   @scala.inline
-  def `[rendering-intent]`: typings.csstype.csstypeStrings.`[rendering-intent]` = this.cast("[rendering-intent]")
+  def `[rendering-intent]`: typings.csstype.csstypeStrings.`[rendering-intent]` = "[rendering-intent]".asInstanceOf[typings.csstype.csstypeStrings.`[rendering-intent]`]
   @scala.inline
-  def `[repeatCount]`: typings.csstype.csstypeStrings.`[repeatCount]` = this.cast("[repeatCount]")
+  def `[repeatCount]`: typings.csstype.csstypeStrings.`[repeatCount]` = "[repeatCount]".asInstanceOf[typings.csstype.csstypeStrings.`[repeatCount]`]
   @scala.inline
-  def `[requiredExtensions]`: typings.csstype.csstypeStrings.`[requiredExtensions]` = this.cast("[requiredExtensions]")
+  def `[requiredExtensions]`: typings.csstype.csstypeStrings.`[requiredExtensions]` = "[requiredExtensions]".asInstanceOf[typings.csstype.csstypeStrings.`[requiredExtensions]`]
   @scala.inline
-  def `[requiredFeatures]`: typings.csstype.csstypeStrings.`[requiredFeatures]` = this.cast("[requiredFeatures]")
+  def `[requiredFeatures]`: typings.csstype.csstypeStrings.`[requiredFeatures]` = "[requiredFeatures]".asInstanceOf[typings.csstype.csstypeStrings.`[requiredFeatures]`]
   @scala.inline
-  def `[rotate]`: typings.csstype.csstypeStrings.`[rotate]` = this.cast("[rotate]")
+  def `[rotate]`: typings.csstype.csstypeStrings.`[rotate]` = "[rotate]".asInstanceOf[typings.csstype.csstypeStrings.`[rotate]`]
   @scala.inline
-  def `[rx]`: typings.csstype.csstypeStrings.`[rx]` = this.cast("[rx]")
+  def `[rx]`: typings.csstype.csstypeStrings.`[rx]` = "[rx]".asInstanceOf[typings.csstype.csstypeStrings.`[rx]`]
   @scala.inline
-  def `[ry]`: typings.csstype.csstypeStrings.`[ry]` = this.cast("[ry]")
+  def `[ry]`: typings.csstype.csstypeStrings.`[ry]` = "[ry]".asInstanceOf[typings.csstype.csstypeStrings.`[ry]`]
   @scala.inline
-  def `[scale]`: typings.csstype.csstypeStrings.`[scale]` = this.cast("[scale]")
+  def `[scale]`: typings.csstype.csstypeStrings.`[scale]` = "[scale]".asInstanceOf[typings.csstype.csstypeStrings.`[scale]`]
   @scala.inline
-  def `[seed]`: typings.csstype.csstypeStrings.`[seed]` = this.cast("[seed]")
+  def `[seed]`: typings.csstype.csstypeStrings.`[seed]` = "[seed]".asInstanceOf[typings.csstype.csstypeStrings.`[seed]`]
   @scala.inline
-  def `[shape-rendering]`: typings.csstype.csstypeStrings.`[shape-rendering]` = this.cast("[shape-rendering]")
+  def `[shape-rendering]`: typings.csstype.csstypeStrings.`[shape-rendering]` = "[shape-rendering]".asInstanceOf[typings.csstype.csstypeStrings.`[shape-rendering]`]
   @scala.inline
-  def `[side]`: typings.csstype.csstypeStrings.`[side]` = this.cast("[side]")
+  def `[side]`: typings.csstype.csstypeStrings.`[side]` = "[side]".asInstanceOf[typings.csstype.csstypeStrings.`[side]`]
   @scala.inline
-  def `[slope]`: typings.csstype.csstypeStrings.`[slope]` = this.cast("[slope]")
+  def `[slope]`: typings.csstype.csstypeStrings.`[slope]` = "[slope]".asInstanceOf[typings.csstype.csstypeStrings.`[slope]`]
   @scala.inline
-  def `[solid-color]`: typings.csstype.csstypeStrings.`[solid-color]` = this.cast("[solid-color]")
+  def `[solid-color]`: typings.csstype.csstypeStrings.`[solid-color]` = "[solid-color]".asInstanceOf[typings.csstype.csstypeStrings.`[solid-color]`]
   @scala.inline
-  def `[solid-opacity]`: typings.csstype.csstypeStrings.`[solid-opacity]` = this.cast("[solid-opacity]")
+  def `[solid-opacity]`: typings.csstype.csstypeStrings.`[solid-opacity]` = "[solid-opacity]".asInstanceOf[typings.csstype.csstypeStrings.`[solid-opacity]`]
   @scala.inline
-  def `[spacing]`: typings.csstype.csstypeStrings.`[spacing]` = this.cast("[spacing]")
+  def `[spacing]`: typings.csstype.csstypeStrings.`[spacing]` = "[spacing]".asInstanceOf[typings.csstype.csstypeStrings.`[spacing]`]
   @scala.inline
-  def `[specularConstant]`: typings.csstype.csstypeStrings.`[specularConstant]` = this.cast("[specularConstant]")
+  def `[specularConstant]`: typings.csstype.csstypeStrings.`[specularConstant]` = "[specularConstant]".asInstanceOf[typings.csstype.csstypeStrings.`[specularConstant]`]
   @scala.inline
-  def `[specularExponent]`: typings.csstype.csstypeStrings.`[specularExponent]` = this.cast("[specularExponent]")
+  def `[specularExponent]`: typings.csstype.csstypeStrings.`[specularExponent]` = "[specularExponent]".asInstanceOf[typings.csstype.csstypeStrings.`[specularExponent]`]
   @scala.inline
-  def `[spreadMethod]`: typings.csstype.csstypeStrings.`[spreadMethod]` = this.cast("[spreadMethod]")
+  def `[spreadMethod]`: typings.csstype.csstypeStrings.`[spreadMethod]` = "[spreadMethod]".asInstanceOf[typings.csstype.csstypeStrings.`[spreadMethod]`]
   @scala.inline
-  def `[startOffset]`: typings.csstype.csstypeStrings.`[startOffset]` = this.cast("[startOffset]")
+  def `[startOffset]`: typings.csstype.csstypeStrings.`[startOffset]` = "[startOffset]".asInstanceOf[typings.csstype.csstypeStrings.`[startOffset]`]
   @scala.inline
-  def `[stdDeviation]`: typings.csstype.csstypeStrings.`[stdDeviation]` = this.cast("[stdDeviation]")
+  def `[stdDeviation]`: typings.csstype.csstypeStrings.`[stdDeviation]` = "[stdDeviation]".asInstanceOf[typings.csstype.csstypeStrings.`[stdDeviation]`]
   @scala.inline
-  def `[stemh]`: typings.csstype.csstypeStrings.`[stemh]` = this.cast("[stemh]")
+  def `[stemh]`: typings.csstype.csstypeStrings.`[stemh]` = "[stemh]".asInstanceOf[typings.csstype.csstypeStrings.`[stemh]`]
   @scala.inline
-  def `[stemv]`: typings.csstype.csstypeStrings.`[stemv]` = this.cast("[stemv]")
+  def `[stemv]`: typings.csstype.csstypeStrings.`[stemv]` = "[stemv]".asInstanceOf[typings.csstype.csstypeStrings.`[stemv]`]
   @scala.inline
-  def `[stitchTiles]`: typings.csstype.csstypeStrings.`[stitchTiles]` = this.cast("[stitchTiles]")
+  def `[stitchTiles]`: typings.csstype.csstypeStrings.`[stitchTiles]` = "[stitchTiles]".asInstanceOf[typings.csstype.csstypeStrings.`[stitchTiles]`]
   @scala.inline
-  def `[stop-color]`: typings.csstype.csstypeStrings.`[stop-color]` = this.cast("[stop-color]")
+  def `[stop-color]`: typings.csstype.csstypeStrings.`[stop-color]` = "[stop-color]".asInstanceOf[typings.csstype.csstypeStrings.`[stop-color]`]
   @scala.inline
-  def `[stop-opacity]`: typings.csstype.csstypeStrings.`[stop-opacity]` = this.cast("[stop-opacity]")
+  def `[stop-opacity]`: typings.csstype.csstypeStrings.`[stop-opacity]` = "[stop-opacity]".asInstanceOf[typings.csstype.csstypeStrings.`[stop-opacity]`]
   @scala.inline
-  def `[strikethrough-position]`: typings.csstype.csstypeStrings.`[strikethrough-position]` = this.cast("[strikethrough-position]")
+  def `[strikethrough-position]`: typings.csstype.csstypeStrings.`[strikethrough-position]` = "[strikethrough-position]".asInstanceOf[typings.csstype.csstypeStrings.`[strikethrough-position]`]
   @scala.inline
-  def `[strikethrough-thickness]`: typings.csstype.csstypeStrings.`[strikethrough-thickness]` = this.cast("[strikethrough-thickness]")
+  def `[strikethrough-thickness]`: typings.csstype.csstypeStrings.`[strikethrough-thickness]` = "[strikethrough-thickness]".asInstanceOf[typings.csstype.csstypeStrings.`[strikethrough-thickness]`]
   @scala.inline
-  def `[string]`: typings.csstype.csstypeStrings.`[string]` = this.cast("[string]")
+  def `[string]`: typings.csstype.csstypeStrings.`[string]` = "[string]".asInstanceOf[typings.csstype.csstypeStrings.`[string]`]
   @scala.inline
-  def `[stroke-dasharray]`: typings.csstype.csstypeStrings.`[stroke-dasharray]` = this.cast("[stroke-dasharray]")
+  def `[stroke-dasharray]`: typings.csstype.csstypeStrings.`[stroke-dasharray]` = "[stroke-dasharray]".asInstanceOf[typings.csstype.csstypeStrings.`[stroke-dasharray]`]
   @scala.inline
-  def `[stroke-dashoffset]`: typings.csstype.csstypeStrings.`[stroke-dashoffset]` = this.cast("[stroke-dashoffset]")
+  def `[stroke-dashoffset]`: typings.csstype.csstypeStrings.`[stroke-dashoffset]` = "[stroke-dashoffset]".asInstanceOf[typings.csstype.csstypeStrings.`[stroke-dashoffset]`]
   @scala.inline
-  def `[stroke-linecap]`: typings.csstype.csstypeStrings.`[stroke-linecap]` = this.cast("[stroke-linecap]")
+  def `[stroke-linecap]`: typings.csstype.csstypeStrings.`[stroke-linecap]` = "[stroke-linecap]".asInstanceOf[typings.csstype.csstypeStrings.`[stroke-linecap]`]
   @scala.inline
-  def `[stroke-linejoin]`: typings.csstype.csstypeStrings.`[stroke-linejoin]` = this.cast("[stroke-linejoin]")
+  def `[stroke-linejoin]`: typings.csstype.csstypeStrings.`[stroke-linejoin]` = "[stroke-linejoin]".asInstanceOf[typings.csstype.csstypeStrings.`[stroke-linejoin]`]
   @scala.inline
-  def `[stroke-miterlimit]`: typings.csstype.csstypeStrings.`[stroke-miterlimit]` = this.cast("[stroke-miterlimit]")
+  def `[stroke-miterlimit]`: typings.csstype.csstypeStrings.`[stroke-miterlimit]` = "[stroke-miterlimit]".asInstanceOf[typings.csstype.csstypeStrings.`[stroke-miterlimit]`]
   @scala.inline
-  def `[stroke-opacity]`: typings.csstype.csstypeStrings.`[stroke-opacity]` = this.cast("[stroke-opacity]")
+  def `[stroke-opacity]`: typings.csstype.csstypeStrings.`[stroke-opacity]` = "[stroke-opacity]".asInstanceOf[typings.csstype.csstypeStrings.`[stroke-opacity]`]
   @scala.inline
-  def `[stroke-width]`: typings.csstype.csstypeStrings.`[stroke-width]` = this.cast("[stroke-width]")
+  def `[stroke-width]`: typings.csstype.csstypeStrings.`[stroke-width]` = "[stroke-width]".asInstanceOf[typings.csstype.csstypeStrings.`[stroke-width]`]
   @scala.inline
-  def `[stroke]`: typings.csstype.csstypeStrings.`[stroke]` = this.cast("[stroke]")
+  def `[stroke]`: typings.csstype.csstypeStrings.`[stroke]` = "[stroke]".asInstanceOf[typings.csstype.csstypeStrings.`[stroke]`]
   @scala.inline
-  def `[style]`: typings.csstype.csstypeStrings.`[style]` = this.cast("[style]")
+  def `[style]`: typings.csstype.csstypeStrings.`[style]` = "[style]".asInstanceOf[typings.csstype.csstypeStrings.`[style]`]
   @scala.inline
-  def `[surfaceScale]`: typings.csstype.csstypeStrings.`[surfaceScale]` = this.cast("[surfaceScale]")
+  def `[surfaceScale]`: typings.csstype.csstypeStrings.`[surfaceScale]` = "[surfaceScale]".asInstanceOf[typings.csstype.csstypeStrings.`[surfaceScale]`]
   @scala.inline
-  def `[systemLanguage]`: typings.csstype.csstypeStrings.`[systemLanguage]` = this.cast("[systemLanguage]")
+  def `[systemLanguage]`: typings.csstype.csstypeStrings.`[systemLanguage]` = "[systemLanguage]".asInstanceOf[typings.csstype.csstypeStrings.`[systemLanguage]`]
   @scala.inline
-  def `[tabindex]`: typings.csstype.csstypeStrings.`[tabindex]` = this.cast("[tabindex]")
+  def `[tabindex]`: typings.csstype.csstypeStrings.`[tabindex]` = "[tabindex]".asInstanceOf[typings.csstype.csstypeStrings.`[tabindex]`]
   @scala.inline
-  def `[targetX]`: typings.csstype.csstypeStrings.`[targetX]` = this.cast("[targetX]")
+  def `[targetX]`: typings.csstype.csstypeStrings.`[targetX]` = "[targetX]".asInstanceOf[typings.csstype.csstypeStrings.`[targetX]`]
   @scala.inline
-  def `[targetY]`: typings.csstype.csstypeStrings.`[targetY]` = this.cast("[targetY]")
+  def `[targetY]`: typings.csstype.csstypeStrings.`[targetY]` = "[targetY]".asInstanceOf[typings.csstype.csstypeStrings.`[targetY]`]
   @scala.inline
-  def `[target]`: typings.csstype.csstypeStrings.`[target]` = this.cast("[target]")
+  def `[target]`: typings.csstype.csstypeStrings.`[target]` = "[target]".asInstanceOf[typings.csstype.csstypeStrings.`[target]`]
   @scala.inline
-  def `[text-anchor]`: typings.csstype.csstypeStrings.`[text-anchor]` = this.cast("[text-anchor]")
+  def `[text-anchor]`: typings.csstype.csstypeStrings.`[text-anchor]` = "[text-anchor]".asInstanceOf[typings.csstype.csstypeStrings.`[text-anchor]`]
   @scala.inline
-  def `[text-decoration]`: typings.csstype.csstypeStrings.`[text-decoration]` = this.cast("[text-decoration]")
+  def `[text-decoration]`: typings.csstype.csstypeStrings.`[text-decoration]` = "[text-decoration]".asInstanceOf[typings.csstype.csstypeStrings.`[text-decoration]`]
   @scala.inline
-  def `[text-overflow]`: typings.csstype.csstypeStrings.`[text-overflow]` = this.cast("[text-overflow]")
+  def `[text-overflow]`: typings.csstype.csstypeStrings.`[text-overflow]` = "[text-overflow]".asInstanceOf[typings.csstype.csstypeStrings.`[text-overflow]`]
   @scala.inline
-  def `[text-rendering]`: typings.csstype.csstypeStrings.`[text-rendering]` = this.cast("[text-rendering]")
+  def `[text-rendering]`: typings.csstype.csstypeStrings.`[text-rendering]` = "[text-rendering]".asInstanceOf[typings.csstype.csstypeStrings.`[text-rendering]`]
   @scala.inline
-  def `[textLength]`: typings.csstype.csstypeStrings.`[textLength]` = this.cast("[textLength]")
+  def `[textLength]`: typings.csstype.csstypeStrings.`[textLength]` = "[textLength]".asInstanceOf[typings.csstype.csstypeStrings.`[textLength]`]
   @scala.inline
-  def `[title]`: typings.csstype.csstypeStrings.`[title]` = this.cast("[title]")
+  def `[title]`: typings.csstype.csstypeStrings.`[title]` = "[title]".asInstanceOf[typings.csstype.csstypeStrings.`[title]`]
   @scala.inline
-  def `[to]`: typings.csstype.csstypeStrings.`[to]` = this.cast("[to]")
+  def `[to]`: typings.csstype.csstypeStrings.`[to]` = "[to]".asInstanceOf[typings.csstype.csstypeStrings.`[to]`]
   @scala.inline
-  def `[transform]`: typings.csstype.csstypeStrings.`[transform]` = this.cast("[transform]")
+  def `[transform]`: typings.csstype.csstypeStrings.`[transform]` = "[transform]".asInstanceOf[typings.csstype.csstypeStrings.`[transform]`]
   @scala.inline
-  def `[type]`: typings.csstype.csstypeStrings.`[type]` = this.cast("[type]")
+  def `[type]`: typings.csstype.csstypeStrings.`[type]` = "[type]".asInstanceOf[typings.csstype.csstypeStrings.`[type]`]
   @scala.inline
-  def `[u1]`: typings.csstype.csstypeStrings.`[u1]` = this.cast("[u1]")
+  def `[u1]`: typings.csstype.csstypeStrings.`[u1]` = "[u1]".asInstanceOf[typings.csstype.csstypeStrings.`[u1]`]
   @scala.inline
-  def `[u2]`: typings.csstype.csstypeStrings.`[u2]` = this.cast("[u2]")
+  def `[u2]`: typings.csstype.csstypeStrings.`[u2]` = "[u2]".asInstanceOf[typings.csstype.csstypeStrings.`[u2]`]
   @scala.inline
-  def `[underline-position]`: typings.csstype.csstypeStrings.`[underline-position]` = this.cast("[underline-position]")
+  def `[underline-position]`: typings.csstype.csstypeStrings.`[underline-position]` = "[underline-position]".asInstanceOf[typings.csstype.csstypeStrings.`[underline-position]`]
   @scala.inline
-  def `[underline-thickness]`: typings.csstype.csstypeStrings.`[underline-thickness]` = this.cast("[underline-thickness]")
+  def `[underline-thickness]`: typings.csstype.csstypeStrings.`[underline-thickness]` = "[underline-thickness]".asInstanceOf[typings.csstype.csstypeStrings.`[underline-thickness]`]
   @scala.inline
-  def `[unicode-bidi]`: typings.csstype.csstypeStrings.`[unicode-bidi]` = this.cast("[unicode-bidi]")
+  def `[unicode-bidi]`: typings.csstype.csstypeStrings.`[unicode-bidi]` = "[unicode-bidi]".asInstanceOf[typings.csstype.csstypeStrings.`[unicode-bidi]`]
   @scala.inline
-  def `[unicode-range]`: typings.csstype.csstypeStrings.`[unicode-range]` = this.cast("[unicode-range]")
+  def `[unicode-range]`: typings.csstype.csstypeStrings.`[unicode-range]` = "[unicode-range]".asInstanceOf[typings.csstype.csstypeStrings.`[unicode-range]`]
   @scala.inline
-  def `[unicode]`: typings.csstype.csstypeStrings.`[unicode]` = this.cast("[unicode]")
+  def `[unicode]`: typings.csstype.csstypeStrings.`[unicode]` = "[unicode]".asInstanceOf[typings.csstype.csstypeStrings.`[unicode]`]
   @scala.inline
-  def `[units-per-em]`: typings.csstype.csstypeStrings.`[units-per-em]` = this.cast("[units-per-em]")
+  def `[units-per-em]`: typings.csstype.csstypeStrings.`[units-per-em]` = "[units-per-em]".asInstanceOf[typings.csstype.csstypeStrings.`[units-per-em]`]
   @scala.inline
-  def `[v-alphabetic]`: typings.csstype.csstypeStrings.`[v-alphabetic]` = this.cast("[v-alphabetic]")
+  def `[v-alphabetic]`: typings.csstype.csstypeStrings.`[v-alphabetic]` = "[v-alphabetic]".asInstanceOf[typings.csstype.csstypeStrings.`[v-alphabetic]`]
   @scala.inline
-  def `[v-hanging]`: typings.csstype.csstypeStrings.`[v-hanging]` = this.cast("[v-hanging]")
+  def `[v-hanging]`: typings.csstype.csstypeStrings.`[v-hanging]` = "[v-hanging]".asInstanceOf[typings.csstype.csstypeStrings.`[v-hanging]`]
   @scala.inline
-  def `[v-ideographic]`: typings.csstype.csstypeStrings.`[v-ideographic]` = this.cast("[v-ideographic]")
+  def `[v-ideographic]`: typings.csstype.csstypeStrings.`[v-ideographic]` = "[v-ideographic]".asInstanceOf[typings.csstype.csstypeStrings.`[v-ideographic]`]
   @scala.inline
-  def `[v-mathematical]`: typings.csstype.csstypeStrings.`[v-mathematical]` = this.cast("[v-mathematical]")
+  def `[v-mathematical]`: typings.csstype.csstypeStrings.`[v-mathematical]` = "[v-mathematical]".asInstanceOf[typings.csstype.csstypeStrings.`[v-mathematical]`]
   @scala.inline
-  def `[values]`: typings.csstype.csstypeStrings.`[values]` = this.cast("[values]")
+  def `[values]`: typings.csstype.csstypeStrings.`[values]` = "[values]".asInstanceOf[typings.csstype.csstypeStrings.`[values]`]
   @scala.inline
-  def `[vector-effect]`: typings.csstype.csstypeStrings.`[vector-effect]` = this.cast("[vector-effect]")
+  def `[vector-effect]`: typings.csstype.csstypeStrings.`[vector-effect]` = "[vector-effect]".asInstanceOf[typings.csstype.csstypeStrings.`[vector-effect]`]
   @scala.inline
-  def `[version]`: typings.csstype.csstypeStrings.`[version]` = this.cast("[version]")
+  def `[version]`: typings.csstype.csstypeStrings.`[version]` = "[version]".asInstanceOf[typings.csstype.csstypeStrings.`[version]`]
   @scala.inline
-  def `[vert-adv-y]`: typings.csstype.csstypeStrings.`[vert-adv-y]` = this.cast("[vert-adv-y]")
+  def `[vert-adv-y]`: typings.csstype.csstypeStrings.`[vert-adv-y]` = "[vert-adv-y]".asInstanceOf[typings.csstype.csstypeStrings.`[vert-adv-y]`]
   @scala.inline
-  def `[vert-origin-x]`: typings.csstype.csstypeStrings.`[vert-origin-x]` = this.cast("[vert-origin-x]")
+  def `[vert-origin-x]`: typings.csstype.csstypeStrings.`[vert-origin-x]` = "[vert-origin-x]".asInstanceOf[typings.csstype.csstypeStrings.`[vert-origin-x]`]
   @scala.inline
-  def `[vert-origin-y]`: typings.csstype.csstypeStrings.`[vert-origin-y]` = this.cast("[vert-origin-y]")
+  def `[vert-origin-y]`: typings.csstype.csstypeStrings.`[vert-origin-y]` = "[vert-origin-y]".asInstanceOf[typings.csstype.csstypeStrings.`[vert-origin-y]`]
   @scala.inline
-  def `[viewBox]`: typings.csstype.csstypeStrings.`[viewBox]` = this.cast("[viewBox]")
+  def `[viewBox]`: typings.csstype.csstypeStrings.`[viewBox]` = "[viewBox]".asInstanceOf[typings.csstype.csstypeStrings.`[viewBox]`]
   @scala.inline
-  def `[viewTarget]`: typings.csstype.csstypeStrings.`[viewTarget]` = this.cast("[viewTarget]")
+  def `[viewTarget]`: typings.csstype.csstypeStrings.`[viewTarget]` = "[viewTarget]".asInstanceOf[typings.csstype.csstypeStrings.`[viewTarget]`]
   @scala.inline
-  def `[visibility]`: typings.csstype.csstypeStrings.`[visibility]` = this.cast("[visibility]")
+  def `[visibility]`: typings.csstype.csstypeStrings.`[visibility]` = "[visibility]".asInstanceOf[typings.csstype.csstypeStrings.`[visibility]`]
   @scala.inline
-  def `[white-space]`: typings.csstype.csstypeStrings.`[white-space]` = this.cast("[white-space]")
+  def `[white-space]`: typings.csstype.csstypeStrings.`[white-space]` = "[white-space]".asInstanceOf[typings.csstype.csstypeStrings.`[white-space]`]
   @scala.inline
-  def `[width]`: typings.csstype.csstypeStrings.`[width]` = this.cast("[width]")
+  def `[width]`: typings.csstype.csstypeStrings.`[width]` = "[width]".asInstanceOf[typings.csstype.csstypeStrings.`[width]`]
   @scala.inline
-  def `[widths]`: typings.csstype.csstypeStrings.`[widths]` = this.cast("[widths]")
+  def `[widths]`: typings.csstype.csstypeStrings.`[widths]` = "[widths]".asInstanceOf[typings.csstype.csstypeStrings.`[widths]`]
   @scala.inline
-  def `[word-spacing]`: typings.csstype.csstypeStrings.`[word-spacing]` = this.cast("[word-spacing]")
+  def `[word-spacing]`: typings.csstype.csstypeStrings.`[word-spacing]` = "[word-spacing]".asInstanceOf[typings.csstype.csstypeStrings.`[word-spacing]`]
   @scala.inline
-  def `[writing-mode]`: typings.csstype.csstypeStrings.`[writing-mode]` = this.cast("[writing-mode]")
+  def `[writing-mode]`: typings.csstype.csstypeStrings.`[writing-mode]` = "[writing-mode]".asInstanceOf[typings.csstype.csstypeStrings.`[writing-mode]`]
   @scala.inline
-  def `[x-height]`: typings.csstype.csstypeStrings.`[x-height]` = this.cast("[x-height]")
+  def `[x-height]`: typings.csstype.csstypeStrings.`[x-height]` = "[x-height]".asInstanceOf[typings.csstype.csstypeStrings.`[x-height]`]
   @scala.inline
-  def `[x1]`: typings.csstype.csstypeStrings.`[x1]` = this.cast("[x1]")
+  def `[x1]`: typings.csstype.csstypeStrings.`[x1]` = "[x1]".asInstanceOf[typings.csstype.csstypeStrings.`[x1]`]
   @scala.inline
-  def `[x2]`: typings.csstype.csstypeStrings.`[x2]` = this.cast("[x2]")
+  def `[x2]`: typings.csstype.csstypeStrings.`[x2]` = "[x2]".asInstanceOf[typings.csstype.csstypeStrings.`[x2]`]
   @scala.inline
-  def `[xChannelSelector]`: typings.csstype.csstypeStrings.`[xChannelSelector]` = this.cast("[xChannelSelector]")
+  def `[xChannelSelector]`: typings.csstype.csstypeStrings.`[xChannelSelector]` = "[xChannelSelector]".asInstanceOf[typings.csstype.csstypeStrings.`[xChannelSelector]`]
   @scala.inline
-  def `[x]`: typings.csstype.csstypeStrings.`[x]` = this.cast("[x]")
+  def `[x]`: typings.csstype.csstypeStrings.`[x]` = "[x]".asInstanceOf[typings.csstype.csstypeStrings.`[x]`]
   @scala.inline
-  def `[y1]`: typings.csstype.csstypeStrings.`[y1]` = this.cast("[y1]")
+  def `[y1]`: typings.csstype.csstypeStrings.`[y1]` = "[y1]".asInstanceOf[typings.csstype.csstypeStrings.`[y1]`]
   @scala.inline
-  def `[y2]`: typings.csstype.csstypeStrings.`[y2]` = this.cast("[y2]")
+  def `[y2]`: typings.csstype.csstypeStrings.`[y2]` = "[y2]".asInstanceOf[typings.csstype.csstypeStrings.`[y2]`]
   @scala.inline
-  def `[yChannelSelector]`: typings.csstype.csstypeStrings.`[yChannelSelector]` = this.cast("[yChannelSelector]")
+  def `[yChannelSelector]`: typings.csstype.csstypeStrings.`[yChannelSelector]` = "[yChannelSelector]".asInstanceOf[typings.csstype.csstypeStrings.`[yChannelSelector]`]
   @scala.inline
-  def `[y]`: typings.csstype.csstypeStrings.`[y]` = this.cast("[y]")
+  def `[y]`: typings.csstype.csstypeStrings.`[y]` = "[y]".asInstanceOf[typings.csstype.csstypeStrings.`[y]`]
   @scala.inline
-  def `[z]`: typings.csstype.csstypeStrings.`[z]` = this.cast("[z]")
+  def `[z]`: typings.csstype.csstypeStrings.`[z]` = "[z]".asInstanceOf[typings.csstype.csstypeStrings.`[z]`]
   @scala.inline
-  def `[zoomAndPan]`: typings.csstype.csstypeStrings.`[zoomAndPan]` = this.cast("[zoomAndPan]")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `[zoomAndPan]`: typings.csstype.csstypeStrings.`[zoomAndPan]` = "[zoomAndPan]".asInstanceOf[typings.csstype.csstypeStrings.`[zoomAndPan]`]
 }
 

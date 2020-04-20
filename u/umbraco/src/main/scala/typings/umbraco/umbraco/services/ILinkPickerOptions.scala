@@ -16,7 +16,6 @@ object ILinkPickerOptions {
   @scala.inline
   def apply(callback: js.Function): ILinkPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILinkPickerOptions]
   }
 }

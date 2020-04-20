@@ -18,7 +18,6 @@ object WellKnownMimeType {
   @scala.inline
   def apply(identifier: Double, string: String): WellKnownMimeType = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WellKnownMimeType]
   }
 }

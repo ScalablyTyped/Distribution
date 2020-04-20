@@ -14,7 +14,6 @@ object Auth0 {
   @scala.inline
   def apply(auth: Auth, users: String => Users_, webAuth: WebAuth): Auth0 = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], users = js.Any.fromFunction1(users), webAuth = webAuth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Auth0]
   }
 }

@@ -15,14 +15,12 @@ trait NotificationTemplateBrandingOptions extends js.Object
 
 object NotificationTemplateBrandingOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def includeCompanyLogo: typings.microsoftGraph.microsoftGraphStrings.includeCompanyLogo = "includeCompanyLogo".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.includeCompanyLogo]
   @scala.inline
-  def includeCompanyLogo: typings.microsoftGraph.microsoftGraphStrings.includeCompanyLogo = this.cast("includeCompanyLogo")
+  def includeCompanyName: typings.microsoftGraph.microsoftGraphStrings.includeCompanyName = "includeCompanyName".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.includeCompanyName]
   @scala.inline
-  def includeCompanyName: typings.microsoftGraph.microsoftGraphStrings.includeCompanyName = this.cast("includeCompanyName")
+  def includeContactInformation: typings.microsoftGraph.microsoftGraphStrings.includeContactInformation = "includeContactInformation".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.includeContactInformation]
   @scala.inline
-  def includeContactInformation: typings.microsoftGraph.microsoftGraphStrings.includeContactInformation = this.cast("includeContactInformation")
-  @scala.inline
-  def none: none_ = this.cast("none")
+  def none: none_ = "none".asInstanceOf[none_]
 }
 

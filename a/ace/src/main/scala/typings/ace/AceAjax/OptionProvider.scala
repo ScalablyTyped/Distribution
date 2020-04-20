@@ -32,7 +32,6 @@ object OptionProvider {
     setOptions: js.Any => Unit
   ): OptionProvider = {
     val __obj = js.Dynamic.literal(getOption = js.Any.fromFunction1(getOption), getOptions = js.Any.fromFunction0(getOptions), setOption = js.Any.fromFunction2(setOption), setOptions = js.Any.fromFunction1(setOptions))
-  
     __obj.asInstanceOf[OptionProvider]
   }
 }

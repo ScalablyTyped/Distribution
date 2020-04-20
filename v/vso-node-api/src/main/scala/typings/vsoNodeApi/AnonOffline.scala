@@ -13,7 +13,6 @@ object AnonOffline {
   @scala.inline
   def apply(offline: Double, online: Double): AnonOffline = {
     val __obj = js.Dynamic.literal(offline = offline.asInstanceOf[js.Any], online = online.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOffline]
   }
 }

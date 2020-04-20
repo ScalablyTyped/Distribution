@@ -28,7 +28,6 @@ object IssueEvent {
     issue: Issue
   ): IssueEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IssueEvent]
   }
 }

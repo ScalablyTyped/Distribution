@@ -20,7 +20,6 @@ object Relation {
     toJSON: () => js.Any
   ): Relation = {
     val __obj = js.Dynamic.literal(added = js.Any.fromFunction0(added), removed = removed.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[Relation]
   }
 }

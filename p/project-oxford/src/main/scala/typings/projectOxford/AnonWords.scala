@@ -13,7 +13,6 @@ object AnonWords {
   @scala.inline
   def apply(boundingBox: String, words: js.Array[AnonBoundingBox]): AnonWords = {
     val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWords]
   }
 }

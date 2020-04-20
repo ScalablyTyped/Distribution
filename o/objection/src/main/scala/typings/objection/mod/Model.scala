@@ -98,11 +98,11 @@ class Model () extends js.Object {
   @JSName("$query")
   def $query(trxOrKnex: TransactionOrKnex): SingleQueryBuilder[QueryBuilderType[this.type]] = js.native
   @JSName("$relatedQuery")
-  def $relatedQuery[K /* <: String */](relationName: K): RelatedQueryBuilder[
+  def $relatedQuery[K /* <: /* keyof this */ String */](relationName: K): RelatedQueryBuilder[
     /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
   ] = js.native
   @JSName("$relatedQuery")
-  def $relatedQuery[K /* <: String */](relationName: K, trxOrKnex: TransactionOrKnex): RelatedQueryBuilder[
+  def $relatedQuery[K /* <: /* keyof this */ String */](relationName: K, trxOrKnex: TransactionOrKnex): RelatedQueryBuilder[
     /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
   ] = js.native
   @JSName("$relatedQuery")
@@ -262,10 +262,10 @@ object Model extends js.Object {
   def ref(expression: String): ReferenceBuilder = js.native
   def relatedQuery[RM /* <: Model */](relationName: String): QueryBuilderType[RM] = js.native
   def relatedQuery[RM /* <: Model */](relationName: String, trxOrKnex: TransactionOrKnex): QueryBuilderType[RM] = js.native
-  def relatedQuery[M /* <: Model */, K /* <: String */](relationName: K): ArrayRelatedQueryBuilder[
+  def relatedQuery[M /* <: Model */, K /* <: /* keyof M */ String */](relationName: K): ArrayRelatedQueryBuilder[
     /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any
   ] = js.native
-  def relatedQuery[M /* <: Model */, K /* <: String */](relationName: K, trxOrKnex: TransactionOrKnex): ArrayRelatedQueryBuilder[
+  def relatedQuery[M /* <: Model */, K /* <: /* keyof M */ String */](relationName: K, trxOrKnex: TransactionOrKnex): ArrayRelatedQueryBuilder[
     /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any
   ] = js.native
   def startTransaction(): js.Promise[Transaction_] = js.native

@@ -16,7 +16,6 @@ object DeleteStreamRequest {
   @scala.inline
   def apply(streamId: StreamId): DeleteStreamRequest = {
     val __obj = js.Dynamic.literal(streamId = streamId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteStreamRequest]
   }
 }

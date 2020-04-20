@@ -19,6 +19,10 @@ trait CreateImagePipelineRequest extends js.Object {
     */
   var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.native
   /**
+    *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default. 
+    */
+  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.native
+  /**
     *  The Amazon Resource Name (ARN) of the image recipe that will be used to configure images created by this image pipeline. 
     */
   var imageRecipeArn: ImageRecipeArn = js.native
@@ -57,6 +61,7 @@ object CreateImagePipelineRequest {
     name: ResourceName,
     description: NonEmptyString = null,
     distributionConfigurationArn: DistributionConfigurationArn = null,
+    enhancedImageMetadataEnabled: js.UndefOr[Boolean] = js.undefined,
     imageTestsConfiguration: ImageTestsConfiguration = null,
     schedule: Schedule = null,
     status: PipelineStatus = null,
@@ -65,6 +70,7 @@ object CreateImagePipelineRequest {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], imageRecipeArn = imageRecipeArn.asInstanceOf[js.Any], infrastructureConfigurationArn = infrastructureConfigurationArn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (distributionConfigurationArn != null) __obj.updateDynamic("distributionConfigurationArn")(distributionConfigurationArn.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.asInstanceOf[js.Any])
     if (imageTestsConfiguration != null) __obj.updateDynamic("imageTestsConfiguration")(imageTestsConfiguration.asInstanceOf[js.Any])
     if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

@@ -16,7 +16,6 @@ object GetApplicationSettingsRequest {
   @scala.inline
   def apply(ApplicationId: string): GetApplicationSettingsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApplicationSettingsRequest]
   }
 }

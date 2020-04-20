@@ -13,7 +13,6 @@ object MapsforgePlugin {
   @scala.inline
   def apply(cache: MapsforgeCachePlugin, embedded: MapsforgeEmbeddedPlugin): MapsforgePlugin = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], embedded = embedded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapsforgePlugin]
   }
 }

@@ -66,7 +66,7 @@ class InspectionHandler_ protected () extends IDisposable {
   /**
     * A signal emitted when the inspector should clear all items.
     */
-  def cleared(): ISignal[InspectionHandler, Unit] = js.native
+  def cleared: ISignal[InspectionHandler, Unit] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -83,18 +83,18 @@ class InspectionHandler_ protected () extends IDisposable {
   /**
     * A signal emitted when the handler is disposed.
     */
-  def disposed(): ISignal[InspectionHandler, Unit] = js.native
+  def disposed: ISignal[InspectionHandler, Unit] = js.native
   def editor(): js.Any = js.native
   def editor(newValue: IEditor): js.Any = js.native
   /**
     * The editor widget used by the inspection handler.
     */
   @JSName("editor")
-  def editor_Union(): IEditor | Null = js.native
+  def editor_Union: IEditor | Null = js.native
   /**
     * A signal emitted when an inspector value is generated.
     */
-  def inspected(): ISignal[InspectionHandler, IInspectorUpdate] = js.native
+  def inspected: ISignal[InspectionHandler, IInspectorUpdate] = js.native
   /**
     * Get whether the inspection handler is disposed.
     *
@@ -102,7 +102,7 @@ class InspectionHandler_ protected () extends IDisposable {
     * This is a read-only property.
     */
   @JSName("isDisposed")
-  def isDisposed_MInspectionHandler_(): Boolean = js.native
+  def isDisposed_MInspectionHandler_ : Boolean = js.native
   /**
     * Handle a text changed signal from an editor.
     *
@@ -117,7 +117,7 @@ class InspectionHandler_ protected () extends IDisposable {
     * The use case for this attribute is to limit the API traffic when no
     * inspector is visible.
     */
-  def standby(): Boolean = js.native
+  def standby: Boolean = js.native
   def standby(value: Boolean): js.Any = js.native
 }
 

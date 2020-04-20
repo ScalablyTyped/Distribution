@@ -18,13 +18,11 @@ object TransitionSpec {
   @scala.inline
   def AnonAnimation(animation: spring, config: OmitSpringAnimationConfig): TransitionSpec = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitionSpec]
   }
   @scala.inline
   def AnonConfig(animation: timing, config: OmitTimingAnimationConfig): TransitionSpec = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitionSpec]
   }
 }

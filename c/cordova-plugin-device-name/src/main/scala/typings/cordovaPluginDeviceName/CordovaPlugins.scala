@@ -15,7 +15,6 @@ object CordovaPlugins {
   @scala.inline
   def apply(deviceName: typings.cordovaPluginDeviceName.CordovaPluginDeviceName.CordovaPluginDeviceName): CordovaPlugins = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

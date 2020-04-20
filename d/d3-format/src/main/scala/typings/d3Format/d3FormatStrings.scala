@@ -99,7 +99,7 @@ object d3FormatStrings {
   @scala.inline
   def Plussign: Plussign = "+".asInstanceOf[Plussign]
   @scala.inline
-  def Space: Space = " ".asInstanceOf[Space]
+  def Space: Space = (" ").asInstanceOf[Space]
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   @scala.inline

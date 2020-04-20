@@ -14,14 +14,12 @@ trait Motor extends js.Object
 
 object Motor {
   @scala.inline
-  def M1: typings.motorHat.motorHatStrings.M1 = this.cast("M1")
+  def M1: typings.motorHat.motorHatStrings.M1 = "M1".asInstanceOf[typings.motorHat.motorHatStrings.M1]
   @scala.inline
-  def M2: typings.motorHat.motorHatStrings.M2 = this.cast("M2")
+  def M2: typings.motorHat.motorHatStrings.M2 = "M2".asInstanceOf[typings.motorHat.motorHatStrings.M2]
   @scala.inline
-  def M3: typings.motorHat.motorHatStrings.M3 = this.cast("M3")
+  def M3: typings.motorHat.motorHatStrings.M3 = "M3".asInstanceOf[typings.motorHat.motorHatStrings.M3]
   @scala.inline
-  def M4: typings.motorHat.motorHatStrings.M4 = this.cast("M4")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def M4: typings.motorHat.motorHatStrings.M4 = "M4".asInstanceOf[typings.motorHat.motorHatStrings.M4]
 }
 

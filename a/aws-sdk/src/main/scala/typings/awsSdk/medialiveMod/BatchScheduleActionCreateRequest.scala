@@ -16,7 +16,6 @@ object BatchScheduleActionCreateRequest {
   @scala.inline
   def apply(ScheduleActions: listOfScheduleAction): BatchScheduleActionCreateRequest = {
     val __obj = js.Dynamic.literal(ScheduleActions = ScheduleActions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchScheduleActionCreateRequest]
   }
 }

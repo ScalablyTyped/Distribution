@@ -22,7 +22,6 @@ object WorkerPoolStats {
     totalWorkers: Double
   ): WorkerPoolStats = {
     val __obj = js.Dynamic.literal(activeTasks = activeTasks.asInstanceOf[js.Any], busyWorkers = busyWorkers.asInstanceOf[js.Any], idleWorkers = idleWorkers.asInstanceOf[js.Any], pendingTasks = pendingTasks.asInstanceOf[js.Any], totalWorkers = totalWorkers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkerPoolStats]
   }
 }

@@ -60,56 +60,54 @@ trait MsoPresetTexture extends js.Object
 
 object MsoPresetTexture {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoPresetTextureMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoPresetTextureMixed: `-2` = this.cast(-2)
+  def msoTextureBlueTissuePaper: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoTextureBlueTissuePaper: `17` = this.cast(17)
+  def msoTextureBouquet: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoTextureBouquet: `20` = this.cast(20)
+  def msoTextureBrownMarble: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoTextureBrownMarble: `11` = this.cast(11)
+  def msoTextureCanvas: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoTextureCanvas: `2` = this.cast(2)
+  def msoTextureCork: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoTextureCork: `21` = this.cast(21)
+  def msoTextureDenim: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoTextureDenim: `3` = this.cast(3)
+  def msoTextureFishFossil: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoTextureFishFossil: `7` = this.cast(7)
+  def msoTextureGranite: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoTextureGranite: `12` = this.cast(12)
+  def msoTextureGreenMarble: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoTextureGreenMarble: `9` = this.cast(9)
+  def msoTextureMediumWood: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoTextureMediumWood: `24` = this.cast(24)
+  def msoTextureNewsprint: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoTextureNewsprint: `13` = this.cast(13)
+  def msoTextureOak: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoTextureOak: `23` = this.cast(23)
+  def msoTexturePaperBag: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoTexturePaperBag: `6` = this.cast(6)
+  def msoTexturePapyrus: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoTexturePapyrus: `1` = this.cast(1)
+  def msoTextureParchment: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoTextureParchment: `15` = this.cast(15)
+  def msoTexturePinkTissuePaper: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoTexturePinkTissuePaper: `18` = this.cast(18)
+  def msoTexturePurpleMesh: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoTexturePurpleMesh: `19` = this.cast(19)
+  def msoTextureRecycledPaper: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoTextureRecycledPaper: `14` = this.cast(14)
+  def msoTextureSand: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoTextureSand: `8` = this.cast(8)
+  def msoTextureStationery: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoTextureStationery: `16` = this.cast(16)
+  def msoTextureWalnut: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoTextureWalnut: `22` = this.cast(22)
+  def msoTextureWaterDroplets: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoTextureWaterDroplets: `5` = this.cast(5)
+  def msoTextureWhiteMarble: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoTextureWhiteMarble: `10` = this.cast(10)
-  @scala.inline
-  def msoTextureWovenMat: `4` = this.cast(4)
+  def msoTextureWovenMat: `4` = 4.asInstanceOf[`4`]
 }
 

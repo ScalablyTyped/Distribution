@@ -11,7 +11,7 @@ trait ListStackSetOperationResultsOutput extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
   /**
-    * A list of StackSetOperationResultSummary structures that contain information about the specified operation results, for accounts and regions that are included in the operation.
+    * A list of StackSetOperationResultSummary structures that contain information about the specified operation results, for accounts and Regions that are included in the operation.
     */
   var Summaries: js.UndefOr[StackSetOperationResultSummaries] = js.native
 }

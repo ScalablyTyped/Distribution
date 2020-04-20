@@ -12,10 +12,8 @@ trait AppEvent extends js.Object
 
 object AppEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def exit: typings.carlo.carloStrings.exit = "exit".asInstanceOf[typings.carlo.carloStrings.exit]
   @scala.inline
-  def exit: typings.carlo.carloStrings.exit = this.cast("exit")
-  @scala.inline
-  def window: typings.carlo.carloStrings.window = this.cast("window")
+  def window: typings.carlo.carloStrings.window = "window".asInstanceOf[typings.carlo.carloStrings.window]
 }
 

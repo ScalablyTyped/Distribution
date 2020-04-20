@@ -50,7 +50,6 @@ object Spawning {
     spawn: StructureSpawn
   ): Spawning = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), directions = directions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], needTime = needTime.asInstanceOf[js.Any], remainingTime = remainingTime.asInstanceOf[js.Any], setDirections = js.Any.fromFunction1(setDirections), spawn = spawn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Spawning]
   }
 }

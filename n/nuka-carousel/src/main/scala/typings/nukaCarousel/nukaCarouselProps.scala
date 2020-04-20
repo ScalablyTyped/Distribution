@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 
 trait nukaCarouselProps {
   @scala.inline
-  def NextButtonProps: CarouselSlideRenderControlProps.type = typings.nukaCarousel.mod.CarouselSlideRenderControlProps
+  def NextButtonProps: CarouselSlideRenderControlProps.type = CarouselSlideRenderControlProps
   type NextButtonProps = typings.nukaCarousel.mod.NextButtonProps
   @scala.inline
-  def NukaCarouselProps: CarouselProps.type = typings.nukaCarousel.mod.CarouselProps
+  def NukaCarouselProps: CarouselProps.type = CarouselProps
   type NukaCarouselProps = CarouselProps
   @scala.inline
-  def PagingDotsProps: CarouselSlideRenderControlProps.type = typings.nukaCarousel.mod.CarouselSlideRenderControlProps
+  def PagingDotsProps: CarouselSlideRenderControlProps.type = CarouselSlideRenderControlProps
   type PagingDotsProps = typings.nukaCarousel.mod.PagingDotsProps
   @scala.inline
-  def PreviousButtonProps: CarouselSlideRenderControlProps.type = typings.nukaCarousel.mod.CarouselSlideRenderControlProps
+  def PreviousButtonProps: CarouselSlideRenderControlProps.type = CarouselSlideRenderControlProps
   type PreviousButtonProps = typings.nukaCarousel.mod.PreviousButtonProps
 }
 

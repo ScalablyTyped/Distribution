@@ -14,7 +14,6 @@ object AnonCountries {
   @scala.inline
   def apply(countries: AnonGeometries, land: GeometryCollection[js.Object]): AnonCountries = {
     val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any], land = land.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCountries]
   }
 }

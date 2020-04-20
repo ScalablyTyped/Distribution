@@ -24,7 +24,6 @@ object Impl {
   @scala.inline
   def apply(duration: Double, transition: String, variation: `false` | String): Impl = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], variation = variation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

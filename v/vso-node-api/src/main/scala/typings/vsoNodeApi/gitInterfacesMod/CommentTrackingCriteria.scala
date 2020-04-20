@@ -47,7 +47,6 @@ object CommentTrackingCriteria {
     secondComparingIteration: Double
   ): CommentTrackingCriteria = {
     val __obj = js.Dynamic.literal(firstComparingIteration = firstComparingIteration.asInstanceOf[js.Any], origFilePath = origFilePath.asInstanceOf[js.Any], origLeftFileEnd = origLeftFileEnd.asInstanceOf[js.Any], origLeftFileStart = origLeftFileStart.asInstanceOf[js.Any], origRightFileEnd = origRightFileEnd.asInstanceOf[js.Any], origRightFileStart = origRightFileStart.asInstanceOf[js.Any], secondComparingIteration = secondComparingIteration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommentTrackingCriteria]
   }
 }

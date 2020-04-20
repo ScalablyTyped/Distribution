@@ -14,10 +14,8 @@ trait DeviceVendorIdSource extends js.Object
 
 object DeviceVendorIdSource {
   @scala.inline
-  def bluetooth: bluetooth_ = this.cast("bluetooth")
+  def bluetooth: bluetooth_ = "bluetooth".asInstanceOf[bluetooth_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def usb: usb_ = this.cast("usb")
+  def usb: usb_ = "usb".asInstanceOf[usb_]
 }
 

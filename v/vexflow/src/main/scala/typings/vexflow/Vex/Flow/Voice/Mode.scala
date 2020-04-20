@@ -14,12 +14,10 @@ trait Mode extends js.Object
 
 object Mode {
   @scala.inline
-  def FULL: `1` = this.cast(1)
+  def FULL: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SOFT: `0` = this.cast(0)
+  def SOFT: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def STRICT: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STRICT: `1` = 1.asInstanceOf[`1`]
 }
 

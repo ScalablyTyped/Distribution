@@ -20,7 +20,6 @@ object IPositionService {
   @scala.inline
   def apply(offset: JQuery => IPositionCoordinates, position: JQuery => IPositionCoordinates): IPositionService = {
     val __obj = js.Dynamic.literal(offset = js.Any.fromFunction1(offset), position = js.Any.fromFunction1(position))
-  
     __obj.asInstanceOf[IPositionService]
   }
 }

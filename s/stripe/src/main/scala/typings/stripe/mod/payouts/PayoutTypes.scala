@@ -12,10 +12,8 @@ trait PayoutTypes extends js.Object
 
 object PayoutTypes {
   @scala.inline
-  def bank_account: typings.stripe.stripeStrings.bank_account = this.cast("bank_account")
+  def bank_account: typings.stripe.stripeStrings.bank_account = "bank_account".asInstanceOf[typings.stripe.stripeStrings.bank_account]
   @scala.inline
-  def card: typings.stripe.stripeStrings.card = this.cast("card")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def card: typings.stripe.stripeStrings.card = "card".asInstanceOf[typings.stripe.stripeStrings.card]
 }
 

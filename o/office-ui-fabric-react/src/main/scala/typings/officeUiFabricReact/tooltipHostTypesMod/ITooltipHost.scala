@@ -19,7 +19,6 @@ object ITooltipHost {
   @scala.inline
   def apply(dismiss: () => Unit, show: () => Unit): ITooltipHost = {
     val __obj = js.Dynamic.literal(dismiss = js.Any.fromFunction0(dismiss), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[ITooltipHost]
   }
 }

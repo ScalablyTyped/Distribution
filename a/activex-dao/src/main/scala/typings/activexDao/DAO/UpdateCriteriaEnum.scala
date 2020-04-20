@@ -22,18 +22,16 @@ trait UpdateCriteriaEnum extends js.Object
 
 object UpdateCriteriaEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbCriteriaAllCols: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def dbCriteriaAllCols: `4` = this.cast(4)
+  def dbCriteriaDeleteInsert: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def dbCriteriaDeleteInsert: `16` = this.cast(16)
+  def dbCriteriaKey: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbCriteriaKey: `1` = this.cast(1)
+  def dbCriteriaModValues: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbCriteriaModValues: `2` = this.cast(2)
+  def dbCriteriaTimestamp: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def dbCriteriaTimestamp: `8` = this.cast(8)
-  @scala.inline
-  def dbCriteriaUpdate: `32` = this.cast(32)
+  def dbCriteriaUpdate: `32` = 32.asInstanceOf[`32`]
 }
 

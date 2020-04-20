@@ -18,14 +18,12 @@ trait styleLayoutFlow extends js.Object
 
 object styleLayoutFlow {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleLayoutFlowHorizontal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleLayoutFlowHorizontal: `0` = this.cast(0)
+  def styleLayoutFlowNotSet: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleLayoutFlowNotSet: `2` = this.cast(2)
+  def styleLayoutFlowVerticalIdeographic: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleLayoutFlowVerticalIdeographic: `1` = this.cast(1)
-  @scala.inline
-  def styleLayoutFlow_Max: `2147483647` = this.cast(2147483647)
+  def styleLayoutFlow_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

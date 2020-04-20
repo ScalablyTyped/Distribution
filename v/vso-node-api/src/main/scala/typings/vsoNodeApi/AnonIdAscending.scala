@@ -15,7 +15,6 @@ object AnonIdAscending {
   @scala.inline
   def apply(idAscending: Double, idDescending: Double, nameAscending: Double, nameDescending: Double): AnonIdAscending = {
     val __obj = js.Dynamic.literal(idAscending = idAscending.asInstanceOf[js.Any], idDescending = idDescending.asInstanceOf[js.Any], nameAscending = nameAscending.asInstanceOf[js.Any], nameDescending = nameDescending.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIdAscending]
   }
 }

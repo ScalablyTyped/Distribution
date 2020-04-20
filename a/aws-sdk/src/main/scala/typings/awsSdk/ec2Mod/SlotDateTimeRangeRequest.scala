@@ -20,7 +20,6 @@ object SlotDateTimeRangeRequest {
   @scala.inline
   def apply(EarliestTime: DateTime, LatestTime: DateTime): SlotDateTimeRangeRequest = {
     val __obj = js.Dynamic.literal(EarliestTime = EarliestTime.asInstanceOf[js.Any], LatestTime = LatestTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SlotDateTimeRangeRequest]
   }
 }

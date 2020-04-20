@@ -18,7 +18,6 @@ object AnimationListener {
     onAnimationStart: typings.androiduix.android.view.animation.Animation => Unit
   ): AnimationListener = {
     val __obj = js.Dynamic.literal(onAnimationEnd = js.Any.fromFunction1(onAnimationEnd), onAnimationRepeat = js.Any.fromFunction1(onAnimationRepeat), onAnimationStart = js.Any.fromFunction1(onAnimationStart))
-  
     __obj.asInstanceOf[AnimationListener]
   }
 }

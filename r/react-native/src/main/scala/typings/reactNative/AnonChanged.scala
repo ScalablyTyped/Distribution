@@ -14,7 +14,6 @@ object AnonChanged {
   @scala.inline
   def apply(changed: js.Array[ViewToken], viewableItems: js.Array[ViewToken]): AnonChanged = {
     val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], viewableItems = viewableItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChanged]
   }
 }

@@ -36,32 +36,30 @@ trait MFBuiltInView extends js.Object
 
 object MFBuiltInView {
   @scala.inline
-  def AnyView: `-1` = this.cast(-1)
+  def AnyView: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def AssignedToMe: `9` = this.cast(9)
+  def AssignedToMe: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def BuiltIn: `13` = this.cast(13)
+  def BuiltIn: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def ByID: `12` = this.cast(12)
+  def ByID: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def CheckedOutToCurrentUser: `5` = this.cast(5)
+  def CheckedOutToCurrentUser: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def Favorites: `15` = this.cast(15)
+  def Favorites: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def LatestSearches: `11` = this.cast(11)
+  def LatestSearches: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def Offline: `6` = this.cast(6)
+  def Offline: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def OfflineCheckedOut: `-9000` = this.cast(-9000)
+  def OfflineCheckedOut: `-9000` = -9000.asInstanceOf[`-9000`]
   @scala.inline
-  def OfflineMarkedForOfflineAvailability: `-9001` = this.cast(-9001)
+  def OfflineMarkedForOfflineAvailability: `-9001` = -9001.asInstanceOf[`-9001`]
   @scala.inline
-  def RecentlyAccessedByMe: `14` = this.cast(14)
+  def RecentlyAccessedByMe: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def RecentlyModifiedByMe: `7` = this.cast(7)
+  def RecentlyModifiedByMe: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def Templates: `8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Templates: `8` = 8.asInstanceOf[`8`]
 }
 

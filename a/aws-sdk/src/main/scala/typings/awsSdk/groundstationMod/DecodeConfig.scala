@@ -16,7 +16,6 @@ object DecodeConfig {
   @scala.inline
   def apply(unvalidatedJSON: JsonString): DecodeConfig = {
     val __obj = js.Dynamic.literal(unvalidatedJSON = unvalidatedJSON.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecodeConfig]
   }
 }

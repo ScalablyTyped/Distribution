@@ -37,7 +37,6 @@ object hitNorm {
   @scala.inline
   def apply(cap: String, color: js.Object, fill: js.Object, style: String, width: Double): hitNorm = {
     val __obj = js.Dynamic.literal(cap = cap.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[hitNorm]
   }
 }

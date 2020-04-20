@@ -32,7 +32,6 @@ object RequiredCommandMetadataCo {
     summary: String
   ): RequiredCommandMetadataCo = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], exampleCommands = exampleCommands.asInstanceOf[js.Any], footnotes = footnotes.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredCommandMetadataCo]
   }
 }

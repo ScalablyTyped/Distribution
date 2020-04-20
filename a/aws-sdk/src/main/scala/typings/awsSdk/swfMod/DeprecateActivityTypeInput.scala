@@ -20,7 +20,6 @@ object DeprecateActivityTypeInput {
   @scala.inline
   def apply(activityType: ActivityType, domain: DomainName): DeprecateActivityTypeInput = {
     val __obj = js.Dynamic.literal(activityType = activityType.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeprecateActivityTypeInput]
   }
 }

@@ -14,7 +14,6 @@ object AnonBridge {
   @scala.inline
   def apply(bridge: Boolean, lights: js.Array[String], sensors: js.Array[String]): AnonBridge = {
     val __obj = js.Dynamic.literal(bridge = bridge.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], sensors = sensors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBridge]
   }
 }

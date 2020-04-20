@@ -24,7 +24,6 @@ object UpdateVoiceConnectorRequest {
   @scala.inline
   def apply(Name: VoiceConnectorName, RequireEncryption: Boolean, VoiceConnectorId: NonEmptyString): UpdateVoiceConnectorRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RequireEncryption = RequireEncryption.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateVoiceConnectorRequest]
   }
 }

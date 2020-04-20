@@ -24,20 +24,18 @@ trait AcExportXMLObjectType extends js.Object
 
 object AcExportXMLObjectType {
   @scala.inline
-  def acExportForm: `2` = this.cast(2)
+  def acExportForm: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acExportFunction: `10` = this.cast(10)
+  def acExportFunction: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def acExportQuery: `1` = this.cast(1)
+  def acExportQuery: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acExportReport: `3` = this.cast(3)
+  def acExportReport: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acExportServerView: `7` = this.cast(7)
+  def acExportServerView: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def acExportStoredProcedure: `9` = this.cast(9)
+  def acExportStoredProcedure: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def acExportTable: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acExportTable: `0` = 0.asInstanceOf[`0`]
 }
 

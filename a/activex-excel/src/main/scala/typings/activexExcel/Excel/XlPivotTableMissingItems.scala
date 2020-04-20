@@ -18,14 +18,12 @@ trait XlPivotTableMissingItems extends js.Object
 
 object XlPivotTableMissingItems {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlMissingItemsDefault: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def xlMissingItemsDefault: `-1` = this.cast(-1)
+  def xlMissingItemsMax: `32500` = 32500.asInstanceOf[`32500`]
   @scala.inline
-  def xlMissingItemsMax: `32500` = this.cast(32500)
+  def xlMissingItemsMax2: `1048576` = 1048576.asInstanceOf[`1048576`]
   @scala.inline
-  def xlMissingItemsMax2: `1048576` = this.cast(1048576)
-  @scala.inline
-  def xlMissingItemsNone: `0` = this.cast(0)
+  def xlMissingItemsNone: `0` = 0.asInstanceOf[`0`]
 }
 

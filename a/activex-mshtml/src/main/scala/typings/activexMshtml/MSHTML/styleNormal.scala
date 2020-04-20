@@ -14,10 +14,8 @@ trait styleNormal extends js.Object
 
 object styleNormal {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleNormalNormal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleNormalNormal: `0` = this.cast(0)
-  @scala.inline
-  def styleNormal_Max: `2147483647` = this.cast(2147483647)
+  def styleNormal_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

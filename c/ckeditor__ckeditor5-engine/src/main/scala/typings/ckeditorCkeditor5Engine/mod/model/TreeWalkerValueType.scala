@@ -14,14 +14,12 @@ trait TreeWalkerValueType extends js.Object
 
 object TreeWalkerValueType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def character: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.character = "character".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.character]
   @scala.inline
-  def character: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.character = this.cast("character")
+  def elementEnd: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.elementEnd = "elementEnd".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.elementEnd]
   @scala.inline
-  def elementEnd: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.elementEnd = this.cast("elementEnd")
+  def elementStart: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.elementStart = "elementStart".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.elementStart]
   @scala.inline
-  def elementStart: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.elementStart = this.cast("elementStart")
-  @scala.inline
-  def text: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text = this.cast("text")
+  def text: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text = "text".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text]
 }
 

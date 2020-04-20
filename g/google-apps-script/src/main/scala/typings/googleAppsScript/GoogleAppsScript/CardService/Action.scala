@@ -30,7 +30,6 @@ object Action {
     setParameters: StringDictionary[String] => Action
   ): Action = {
     val __obj = js.Dynamic.literal(setFunctionName = js.Any.fromFunction1(setFunctionName), setLoadIndicator = js.Any.fromFunction1(setLoadIndicator), setMethodName = js.Any.fromFunction1(setMethodName), setParameters = js.Any.fromFunction1(setParameters))
-  
     __obj.asInstanceOf[Action]
   }
 }

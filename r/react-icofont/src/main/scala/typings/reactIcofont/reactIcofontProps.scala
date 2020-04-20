@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactIcofontProps {
   @scala.inline
-  def ReactIcofontProps: IcofontProps.type = typings.reactIcofont.mod.IcofontProps
+  def ReactIcofontProps: IcofontProps.type = IcofontProps
   type ReactIcofontProps = IcofontProps
 }
 

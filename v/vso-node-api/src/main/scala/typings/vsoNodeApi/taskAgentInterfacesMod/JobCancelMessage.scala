@@ -13,7 +13,6 @@ object JobCancelMessage {
   @scala.inline
   def apply(jobId: String, timeout: js.Any): JobCancelMessage = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JobCancelMessage]
   }
 }

@@ -21,7 +21,6 @@ object ElectronDownloadRequest {
   @scala.inline
   def apply(artifactName: String, version: String): ElectronDownloadRequest = {
     val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElectronDownloadRequest]
   }
 }

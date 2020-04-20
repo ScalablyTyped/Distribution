@@ -14,7 +14,6 @@ object ButtonsApiExportDataReturn {
   @scala.inline
   def apply(body: js.Array[String], footer: js.Array[String], header: js.Array[String]): ButtonsApiExportDataReturn = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ButtonsApiExportDataReturn]
   }
 }

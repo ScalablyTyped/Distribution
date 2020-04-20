@@ -20,7 +20,6 @@ object Extensions {
     toSchema: () => js.Any
   ): Extensions = {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-  
     __obj.asInstanceOf[Extensions]
   }
 }

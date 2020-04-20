@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactPlacesAutocompleteProps {
   @scala.inline
-  def ReactPlacesAutocompleteProps: PropTypes.type = typings.reactPlacesAutocomplete.mod.PropTypes
+  def ReactPlacesAutocompleteProps: PropTypes.type = PropTypes
   type ReactPlacesAutocompleteProps = PropTypes
 }
 

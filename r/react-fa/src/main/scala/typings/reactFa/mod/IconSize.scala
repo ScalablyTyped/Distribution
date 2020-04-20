@@ -15,16 +15,14 @@ trait IconSize extends js.Object
 
 object IconSize {
   @scala.inline
-  def `2x`: typings.reactFa.reactFaStrings.`2x` = this.cast("2x")
+  def `2x`: typings.reactFa.reactFaStrings.`2x` = "2x".asInstanceOf[typings.reactFa.reactFaStrings.`2x`]
   @scala.inline
-  def `3x`: typings.reactFa.reactFaStrings.`3x` = this.cast("3x")
+  def `3x`: typings.reactFa.reactFaStrings.`3x` = "3x".asInstanceOf[typings.reactFa.reactFaStrings.`3x`]
   @scala.inline
-  def `4x`: typings.reactFa.reactFaStrings.`4x` = this.cast("4x")
+  def `4x`: typings.reactFa.reactFaStrings.`4x` = "4x".asInstanceOf[typings.reactFa.reactFaStrings.`4x`]
   @scala.inline
-  def `5x`: typings.reactFa.reactFaStrings.`5x` = this.cast("5x")
+  def `5x`: typings.reactFa.reactFaStrings.`5x` = "5x".asInstanceOf[typings.reactFa.reactFaStrings.`5x`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def lg: typings.reactFa.reactFaStrings.lg = this.cast("lg")
+  def lg: typings.reactFa.reactFaStrings.lg = "lg".asInstanceOf[typings.reactFa.reactFaStrings.lg]
 }
 

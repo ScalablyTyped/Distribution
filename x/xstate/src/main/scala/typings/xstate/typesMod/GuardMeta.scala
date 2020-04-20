@@ -17,7 +17,6 @@ object GuardMeta {
     state: State[TContext, TEvent, _, _]
   ): GuardMeta[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any], cond = cond.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GuardMeta[TContext, TEvent]]
   }
 }

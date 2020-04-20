@@ -28,40 +28,38 @@ trait QUnitType extends js.Object
 
 object QUnitType {
   @scala.inline
-  def M: typings.dayjs.dayjsStrings.M = this.cast("M")
+  def M: typings.dayjs.dayjsStrings.M = "M".asInstanceOf[typings.dayjs.dayjsStrings.M]
   @scala.inline
-  def Q: typings.dayjs.dayjsStrings.Q = this.cast("Q")
+  def Q: typings.dayjs.dayjsStrings.Q = "Q".asInstanceOf[typings.dayjs.dayjsStrings.Q]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def d: typings.dayjs.dayjsStrings.d = "d".asInstanceOf[typings.dayjs.dayjsStrings.d]
   @scala.inline
-  def d: typings.dayjs.dayjsStrings.d = this.cast("d")
+  def date: typings.dayjs.dayjsStrings.date = "date".asInstanceOf[typings.dayjs.dayjsStrings.date]
   @scala.inline
-  def date: typings.dayjs.dayjsStrings.date = this.cast("date")
+  def day: typings.dayjs.dayjsStrings.day = "day".asInstanceOf[typings.dayjs.dayjsStrings.day]
   @scala.inline
-  def day: typings.dayjs.dayjsStrings.day = this.cast("day")
+  def h: typings.dayjs.dayjsStrings.h = "h".asInstanceOf[typings.dayjs.dayjsStrings.h]
   @scala.inline
-  def h: typings.dayjs.dayjsStrings.h = this.cast("h")
+  def hour: typings.dayjs.dayjsStrings.hour = "hour".asInstanceOf[typings.dayjs.dayjsStrings.hour]
   @scala.inline
-  def hour: typings.dayjs.dayjsStrings.hour = this.cast("hour")
+  def m: m_ = "m".asInstanceOf[m_]
   @scala.inline
-  def m: m_ = this.cast("m")
+  def millisecond: typings.dayjs.dayjsStrings.millisecond = "millisecond".asInstanceOf[typings.dayjs.dayjsStrings.millisecond]
   @scala.inline
-  def millisecond: typings.dayjs.dayjsStrings.millisecond = this.cast("millisecond")
+  def minute: typings.dayjs.dayjsStrings.minute = "minute".asInstanceOf[typings.dayjs.dayjsStrings.minute]
   @scala.inline
-  def minute: typings.dayjs.dayjsStrings.minute = this.cast("minute")
+  def month: typings.dayjs.dayjsStrings.month = "month".asInstanceOf[typings.dayjs.dayjsStrings.month]
   @scala.inline
-  def month: typings.dayjs.dayjsStrings.month = this.cast("month")
+  def ms: typings.dayjs.dayjsStrings.ms = "ms".asInstanceOf[typings.dayjs.dayjsStrings.ms]
   @scala.inline
-  def ms: typings.dayjs.dayjsStrings.ms = this.cast("ms")
+  def quarter: typings.dayjs.dayjsStrings.quarter = "quarter".asInstanceOf[typings.dayjs.dayjsStrings.quarter]
   @scala.inline
-  def quarter: typings.dayjs.dayjsStrings.quarter = this.cast("quarter")
+  def s: typings.dayjs.dayjsStrings.s = "s".asInstanceOf[typings.dayjs.dayjsStrings.s]
   @scala.inline
-  def s: typings.dayjs.dayjsStrings.s = this.cast("s")
+  def second: typings.dayjs.dayjsStrings.second = "second".asInstanceOf[typings.dayjs.dayjsStrings.second]
   @scala.inline
-  def second: typings.dayjs.dayjsStrings.second = this.cast("second")
+  def y: typings.dayjs.dayjsStrings.y = "y".asInstanceOf[typings.dayjs.dayjsStrings.y]
   @scala.inline
-  def y: typings.dayjs.dayjsStrings.y = this.cast("y")
-  @scala.inline
-  def year: typings.dayjs.dayjsStrings.year = this.cast("year")
+  def year: typings.dayjs.dayjsStrings.year = "year".asInstanceOf[typings.dayjs.dayjsStrings.year]
 }
 

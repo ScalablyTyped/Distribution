@@ -19,7 +19,6 @@ object IDeviceOrientationService {
     watchHeading: IDeviceOrientationWatchOptions => IDeviceOrientationWatchPromise
   ): IDeviceOrientationService = {
     val __obj = js.Dynamic.literal(clearWatch = js.Any.fromFunction1(clearWatch), getCurrentHeading = js.Any.fromFunction0(getCurrentHeading), watchHeading = js.Any.fromFunction1(watchHeading))
-  
     __obj.asInstanceOf[IDeviceOrientationService]
   }
 }

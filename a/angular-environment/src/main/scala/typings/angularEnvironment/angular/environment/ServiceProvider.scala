@@ -25,7 +25,6 @@ object ServiceProvider {
   @scala.inline
   def apply(check: () => Unit, config: Config => Unit, read: String => js.Any): ServiceProvider = {
     val __obj = js.Dynamic.literal(check = js.Any.fromFunction0(check), config = js.Any.fromFunction1(config), read = js.Any.fromFunction1(read))
-  
     __obj.asInstanceOf[ServiceProvider]
   }
 }

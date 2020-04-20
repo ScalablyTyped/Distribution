@@ -22,7 +22,6 @@ object IManipulationCompletedEventArgs {
     velocities: ManipulationVelocities
   ): IManipulationCompletedEventArgs = {
     val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], velocities = velocities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IManipulationCompletedEventArgs]
   }
 }

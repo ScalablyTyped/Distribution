@@ -56,7 +56,7 @@ object fadeInOutBehaviorMod extends js.Object {
       *  The name of the behavior
       */
     @JSName("name")
-    def name_MFadeInOutBehavior(): String = js.native
+    def name_MFadeInOutBehavior: String = js.native
   }
   
 }

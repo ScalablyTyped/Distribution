@@ -27,7 +27,6 @@ object AnonContentTransition {
   @scala.inline
   def apply(contentTransition: String, entrance: String, insert: String, remove: String): AnonContentTransition = {
     val __obj = js.Dynamic.literal(contentTransition = contentTransition.asInstanceOf[js.Any], entrance = entrance.asInstanceOf[js.Any], insert = insert.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentTransition]
   }
 }

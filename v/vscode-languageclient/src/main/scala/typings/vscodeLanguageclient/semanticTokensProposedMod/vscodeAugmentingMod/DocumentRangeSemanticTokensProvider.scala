@@ -25,7 +25,6 @@ object DocumentRangeSemanticTokensProvider {
     provideDocumentRangeSemanticTokens: (TextDocument, Range, CancellationToken) => ProviderResult[SemanticTokens]
   ): DocumentRangeSemanticTokensProvider = {
     val __obj = js.Dynamic.literal(provideDocumentRangeSemanticTokens = js.Any.fromFunction3(provideDocumentRangeSemanticTokens))
-  
     __obj.asInstanceOf[DocumentRangeSemanticTokensProvider]
   }
 }

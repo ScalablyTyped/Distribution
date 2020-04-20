@@ -52,7 +52,6 @@ object Typeofdialog {
     unset_dlg_profile_static: String => Double
   ): Typeofdialog = {
     val __obj = js.Dynamic.literal(dlg_bye = js.Any.fromFunction1(dlg_bye), dlg_db_load_callid = js.Any.fromFunction1(dlg_db_load_callid), dlg_db_load_extra = js.Any.fromFunction0(dlg_db_load_extra), dlg_get = js.Any.fromFunction3(dlg_get), dlg_isflagset = js.Any.fromFunction1(dlg_isflagset), dlg_manage = js.Any.fromFunction0(dlg_manage), dlg_resetflag = js.Any.fromFunction1(dlg_resetflag), dlg_set_property = js.Any.fromFunction1(dlg_set_property), dlg_set_timeout = js.Any.fromFunction1(dlg_set_timeout), dlg_set_timeout_id = js.Any.fromFunction3(dlg_set_timeout_id), dlg_setflag = js.Any.fromFunction1(dlg_setflag), get_profile_size = js.Any.fromFunction3(get_profile_size), get_profile_size_static = js.Any.fromFunction2(get_profile_size_static), is_in_profile = js.Any.fromFunction2(is_in_profile), is_in_profile_static = js.Any.fromFunction1(is_in_profile_static), is_known_dlg = js.Any.fromFunction0(is_known_dlg), set_dlg_profile = js.Any.fromFunction2(set_dlg_profile), set_dlg_profile_static = js.Any.fromFunction1(set_dlg_profile_static), unset_dlg_profile = js.Any.fromFunction2(unset_dlg_profile), unset_dlg_profile_static = js.Any.fromFunction1(unset_dlg_profile_static))
-  
     __obj.asInstanceOf[Typeofdialog]
   }
 }

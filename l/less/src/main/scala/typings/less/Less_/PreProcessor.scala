@@ -12,7 +12,6 @@ object PreProcessor {
   @scala.inline
   def apply(process: (String, PreProcessorExtraInfo) => String): PreProcessor = {
     val __obj = js.Dynamic.literal(process = js.Any.fromFunction2(process))
-  
     __obj.asInstanceOf[PreProcessor]
   }
 }

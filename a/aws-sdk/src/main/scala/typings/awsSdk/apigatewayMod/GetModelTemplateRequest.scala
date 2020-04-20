@@ -20,7 +20,6 @@ object GetModelTemplateRequest {
   @scala.inline
   def apply(modelName: String, restApiId: String): GetModelTemplateRequest = {
     val __obj = js.Dynamic.literal(modelName = modelName.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetModelTemplateRequest]
   }
 }

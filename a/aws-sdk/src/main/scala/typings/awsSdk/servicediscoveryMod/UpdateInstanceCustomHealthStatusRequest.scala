@@ -24,7 +24,6 @@ object UpdateInstanceCustomHealthStatusRequest {
   @scala.inline
   def apply(InstanceId: ResourceId, ServiceId: ResourceId, Status: CustomHealthStatus): UpdateInstanceCustomHealthStatusRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], ServiceId = ServiceId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateInstanceCustomHealthStatusRequest]
   }
 }

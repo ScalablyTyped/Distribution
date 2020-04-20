@@ -13,7 +13,6 @@ object AnonDns {
   @scala.inline
   def apply(dns: String): AnonDns = {
     val __obj = js.Dynamic.literal(dns = dns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDns]
   }
 }

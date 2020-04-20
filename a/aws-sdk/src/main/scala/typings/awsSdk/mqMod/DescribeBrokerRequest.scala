@@ -16,7 +16,6 @@ object DescribeBrokerRequest {
   @scala.inline
   def apply(BrokerId: string): DescribeBrokerRequest = {
     val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeBrokerRequest]
   }
 }

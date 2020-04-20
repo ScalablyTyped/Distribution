@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 object reactRouterParamLinkComponents extends reactRouterParamLinkProps {
   @scala.inline
-  def ParamLink: ComponentType[ParamLinkProps[LocationState]] = js.constructorOf[typings.reactRouterParamLink.mod.ParamLink].asInstanceOf[typings.react.mod.ComponentType[ParamLinkProps[typings.history.mod.LocationState]]]
+  def ParamLink: ComponentType[ParamLinkProps[LocationState]] = js.constructorOf[typings.reactRouterParamLink.mod.ParamLink].asInstanceOf[ComponentType[ParamLinkProps[LocationState]]]
 }
 

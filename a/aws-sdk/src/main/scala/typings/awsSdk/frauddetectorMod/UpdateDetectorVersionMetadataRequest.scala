@@ -24,7 +24,6 @@ object UpdateDetectorVersionMetadataRequest {
   @scala.inline
   def apply(description: description, detectorId: identifier, detectorVersionId: nonEmptyString): UpdateDetectorVersionMetadataRequest = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], detectorId = detectorId.asInstanceOf[js.Any], detectorVersionId = detectorVersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDetectorVersionMetadataRequest]
   }
 }

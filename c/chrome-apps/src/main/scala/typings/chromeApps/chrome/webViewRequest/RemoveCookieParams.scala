@@ -20,7 +20,6 @@ object RemoveCookieParams {
   @scala.inline
   def apply[T](filter: T): RemoveCookieParams[T] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveCookieParams[T]]
   }
 }

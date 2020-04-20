@@ -19,7 +19,6 @@ object AudioVoice {
   @scala.inline
   def apply(connect: js.Object => Unit, disconnect: () => Unit): AudioVoice = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction1(connect), disconnect = js.Any.fromFunction0(disconnect))
-  
     __obj.asInstanceOf[AudioVoice]
   }
 }

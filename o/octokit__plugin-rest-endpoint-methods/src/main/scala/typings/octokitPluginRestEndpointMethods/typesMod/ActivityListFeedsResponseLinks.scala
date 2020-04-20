@@ -28,7 +28,6 @@ object ActivityListFeedsResponseLinks {
     user: ActivityListFeedsResponseLinksUser
   ): ActivityListFeedsResponseLinks = {
     val __obj = js.Dynamic.literal(current_user = current_user.asInstanceOf[js.Any], current_user_actor = current_user_actor.asInstanceOf[js.Any], current_user_organization = current_user_organization.asInstanceOf[js.Any], current_user_organizations = current_user_organizations.asInstanceOf[js.Any], current_user_public = current_user_public.asInstanceOf[js.Any], security_advisories = security_advisories.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActivityListFeedsResponseLinks]
   }
 }

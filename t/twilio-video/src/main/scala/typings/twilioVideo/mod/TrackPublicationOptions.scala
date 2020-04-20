@@ -12,7 +12,6 @@ object TrackPublicationOptions {
   @scala.inline
   def apply(logLevel: LogLevel | LogLevels): TrackPublicationOptions = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrackPublicationOptions]
   }
 }

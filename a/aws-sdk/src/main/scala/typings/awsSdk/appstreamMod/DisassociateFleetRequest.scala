@@ -20,7 +20,6 @@ object DisassociateFleetRequest {
   @scala.inline
   def apply(FleetName: String, StackName: String): DisassociateFleetRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateFleetRequest]
   }
 }

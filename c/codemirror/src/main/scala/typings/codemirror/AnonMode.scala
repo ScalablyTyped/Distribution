@@ -14,7 +14,6 @@ object AnonMode {
   @scala.inline
   def apply(mode: Mode[_], state: js.Any): AnonMode = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMode]
   }
 }

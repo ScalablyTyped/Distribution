@@ -13,7 +13,6 @@ object CustomAttributes {
   @scala.inline
   def apply(custom: Map): CustomAttributes = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomAttributes]
   }
 }

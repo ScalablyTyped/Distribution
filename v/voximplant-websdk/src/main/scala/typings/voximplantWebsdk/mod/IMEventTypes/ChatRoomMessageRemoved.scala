@@ -46,7 +46,6 @@ object ChatRoomMessageRemoved {
     timestamp: String
   ): ChatRoomMessageRemoved = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], private_message = private_message.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChatRoomMessageRemoved]
   }
 }

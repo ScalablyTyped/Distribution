@@ -27,7 +27,6 @@ object SecurityDetails {
     validTo: () => Double
   ): SecurityDetails = {
     val __obj = js.Dynamic.literal(issuer = js.Any.fromFunction0(issuer), protocol = js.Any.fromFunction0(protocol), subjectName = js.Any.fromFunction0(subjectName), validFrom = js.Any.fromFunction0(validFrom), validTo = js.Any.fromFunction0(validTo))
-  
     __obj.asInstanceOf[SecurityDetails]
   }
 }

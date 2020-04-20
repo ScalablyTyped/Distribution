@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait materialUiDatatablesProps {
   @scala.inline
-  def MaterialUiDatatablesProps: PartialDataTableProps.type = typings.materialUiDatatables.PartialDataTableProps
+  def MaterialUiDatatablesProps: PartialDataTableProps.type = PartialDataTableProps
   type MaterialUiDatatablesProps = PartialDataTableProps
 }
 

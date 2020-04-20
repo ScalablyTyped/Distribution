@@ -13,12 +13,10 @@ trait RendererType extends js.Object
 
 object RendererType {
   @scala.inline
-  def canvas: typings.openlayers.openlayersStrings.canvas = this.cast("canvas")
+  def canvas: typings.openlayers.openlayersStrings.canvas = "canvas".asInstanceOf[typings.openlayers.openlayersStrings.canvas]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dom: typings.openlayers.openlayersStrings.dom = "dom".asInstanceOf[typings.openlayers.openlayersStrings.dom]
   @scala.inline
-  def dom: typings.openlayers.openlayersStrings.dom = this.cast("dom")
-  @scala.inline
-  def webgl: typings.openlayers.openlayersStrings.webgl = this.cast("webgl")
+  def webgl: typings.openlayers.openlayersStrings.webgl = "webgl".asInstanceOf[typings.openlayers.openlayersStrings.webgl]
 }
 

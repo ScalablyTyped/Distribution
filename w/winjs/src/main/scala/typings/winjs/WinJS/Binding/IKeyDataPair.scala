@@ -15,7 +15,6 @@ object IKeyDataPair {
   @scala.inline
   def apply[T](data: T, key: String): IKeyDataPair[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKeyDataPair[T]]
   }
 }

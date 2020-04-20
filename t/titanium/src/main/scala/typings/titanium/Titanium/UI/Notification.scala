@@ -8,140 +8,110 @@ import scala.scalajs.js.annotation._
 /**
 		 * A toast notification.
 		 */
-trait Notification extends Proxy {
+@JSGlobal("Titanium.UI.Notification")
+@js.native
+class Notification () extends Proxy {
   /**
   			 * Determines how long the notification stays on screen.
   			 */
-  var duration: Double
+  var duration: Double = js.native
   /**
   			 * Determines the location at which the notification should appear on the screen.
   			 */
-  var gravity: Double
+  var gravity: Double = js.native
   /**
   			 * Horizontal placement of the notification, *as a fraction of the screen width*.
   			 */
-  var horizontalMargin: Double
+  var horizontalMargin: Double = js.native
   /**
   			 * Notification text to display.
   			 */
-  var message: String
+  var message: String = js.native
   /**
   			 * Vertical placement of the notifcation, *as a fraction of the screen height*.
   			 */
-  var verticalMargin: Double
+  var verticalMargin: Double = js.native
   /**
   			 * X offset from the default position, in pixels.
   			 */
-  var xOffset: Double
+  var xOffset: Double = js.native
   /**
   			 * Y offset from the default position, in pixels.
   			 */
-  var yOffset: Double
+  var yOffset: Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Notification.duration> property.
+  			 * @deprecated Access <Titanium.UI.Notification.duration> instead.
   			 */
-  def getDuration(): Double
+  def getDuration(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Notification.gravity> property.
+  			 * @deprecated Access <Titanium.UI.Notification.gravity> instead.
   			 */
-  def getGravity(): Double
+  def getGravity(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Notification.horizontalMargin> property.
+  			 * @deprecated Access <Titanium.UI.Notification.horizontalMargin> instead.
   			 */
-  def getHorizontalMargin(): Double
+  def getHorizontalMargin(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Notification.message> property.
+  			 * @deprecated Access <Titanium.UI.Notification.message> instead.
   			 */
-  def getMessage(): String
+  def getMessage(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Notification.verticalMargin> property.
+  			 * @deprecated Access <Titanium.UI.Notification.verticalMargin> instead.
   			 */
-  def getVerticalMargin(): Double
+  def getVerticalMargin(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Notification.xOffset> property.
+  			 * @deprecated Access <Titanium.UI.Notification.xOffset> instead.
   			 */
-  def getXOffset(): Double
+  def getXOffset(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Notification.yOffset> property.
+  			 * @deprecated Access <Titanium.UI.Notification.yOffset> instead.
   			 */
-  def getYOffset(): Double
+  def getYOffset(): Double = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Notification.duration> property.
+  			 * @deprecated Set the value using <Titanium.UI.Notification.duration> instead.
   			 */
-  def setDuration(duration: Double): Unit
+  def setDuration(duration: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Notification.gravity> property.
+  			 * @deprecated Set the value using <Titanium.UI.Notification.gravity> instead.
   			 */
-  def setGravity(gravity: Double): Unit
+  def setGravity(gravity: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Notification.horizontalMargin> property.
+  			 * @deprecated Set the value using <Titanium.UI.Notification.horizontalMargin> instead.
   			 */
-  def setHorizontalMargin(horizontalMargin: Double): Unit
+  def setHorizontalMargin(horizontalMargin: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Notification.message> property.
+  			 * @deprecated Set the value using <Titanium.UI.Notification.message> instead.
   			 */
-  def setMessage(message: String): Unit
+  def setMessage(message: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Notification.verticalMargin> property.
+  			 * @deprecated Set the value using <Titanium.UI.Notification.verticalMargin> instead.
   			 */
-  def setVerticalMargin(verticalMargin: Double): Unit
+  def setVerticalMargin(verticalMargin: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Notification.xOffset> property.
+  			 * @deprecated Set the value using <Titanium.UI.Notification.xOffset> instead.
   			 */
-  def setXOffset(xOffset: Double): Unit
+  def setXOffset(xOffset: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Notification.yOffset> property.
+  			 * @deprecated Set the value using <Titanium.UI.Notification.yOffset> instead.
   			 */
-  def setYOffset(yOffset: Double): Unit
+  def setYOffset(yOffset: Double): Unit = js.native
   /**
   			 * Show the notification.
   			 */
-  def show(): Unit
-}
-
-object Notification {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    duration: Double,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getDuration: () => Double,
-    getGravity: () => Double,
-    getHorizontalMargin: () => Double,
-    getMessage: () => String,
-    getVerticalMargin: () => Double,
-    getXOffset: () => Double,
-    getYOffset: () => Double,
-    gravity: Double,
-    horizontalMargin: Double,
-    message: String,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setBubbleParent: Boolean => Unit,
-    setDuration: Double => Unit,
-    setGravity: Double => Unit,
-    setHorizontalMargin: Double => Unit,
-    setMessage: String => Unit,
-    setVerticalMargin: Double => Unit,
-    setXOffset: Double => Unit,
-    setYOffset: Double => Unit,
-    show: () => Unit,
-    verticalMargin: Double,
-    xOffset: Double,
-    yOffset: Double,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): Notification = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDuration = js.Any.fromFunction0(getDuration), getGravity = js.Any.fromFunction0(getGravity), getHorizontalMargin = js.Any.fromFunction0(getHorizontalMargin), getMessage = js.Any.fromFunction0(getMessage), getVerticalMargin = js.Any.fromFunction0(getVerticalMargin), getXOffset = js.Any.fromFunction0(getXOffset), getYOffset = js.Any.fromFunction0(getYOffset), gravity = gravity.asInstanceOf[js.Any], horizontalMargin = horizontalMargin.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setDuration = js.Any.fromFunction1(setDuration), setGravity = js.Any.fromFunction1(setGravity), setHorizontalMargin = js.Any.fromFunction1(setHorizontalMargin), setMessage = js.Any.fromFunction1(setMessage), setVerticalMargin = js.Any.fromFunction1(setVerticalMargin), setXOffset = js.Any.fromFunction1(setXOffset), setYOffset = js.Any.fromFunction1(setYOffset), show = js.Any.fromFunction0(show), verticalMargin = verticalMargin.asInstanceOf[js.Any], xOffset = xOffset.asInstanceOf[js.Any], yOffset = yOffset.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Notification]
-  }
+  def show(): Unit = js.native
 }
 

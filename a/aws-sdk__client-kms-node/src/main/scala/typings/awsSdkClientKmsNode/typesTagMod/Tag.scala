@@ -19,7 +19,6 @@ object Tag {
   @scala.inline
   def apply(TagKey: String, TagValue: String): Tag = {
     val __obj = js.Dynamic.literal(TagKey = TagKey.asInstanceOf[js.Any], TagValue = TagValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Tag]
   }
 }

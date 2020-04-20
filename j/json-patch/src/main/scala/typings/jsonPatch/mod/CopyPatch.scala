@@ -16,7 +16,6 @@ object CopyPatch {
   @scala.inline
   def apply(from: String, op: copy, path: String): CopyPatch = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CopyPatch]
   }
 }

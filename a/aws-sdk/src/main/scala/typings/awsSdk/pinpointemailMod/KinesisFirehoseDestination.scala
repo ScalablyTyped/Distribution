@@ -20,7 +20,6 @@ object KinesisFirehoseDestination {
   @scala.inline
   def apply(DeliveryStreamArn: AmazonResourceName, IamRoleArn: AmazonResourceName): KinesisFirehoseDestination = {
     val __obj = js.Dynamic.literal(DeliveryStreamArn = DeliveryStreamArn.asInstanceOf[js.Any], IamRoleArn = IamRoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinesisFirehoseDestination]
   }
 }

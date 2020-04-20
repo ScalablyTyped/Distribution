@@ -12,7 +12,6 @@ object ICoreCursorFactory {
   @scala.inline
   def apply(createCursor: (CoreCursorType, Double) => CoreCursor): ICoreCursorFactory = {
     val __obj = js.Dynamic.literal(createCursor = js.Any.fromFunction2(createCursor))
-  
     __obj.asInstanceOf[ICoreCursorFactory]
   }
 }

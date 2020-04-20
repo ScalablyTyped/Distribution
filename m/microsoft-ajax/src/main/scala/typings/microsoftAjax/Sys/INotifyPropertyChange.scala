@@ -27,7 +27,6 @@ object INotifyPropertyChange {
   @scala.inline
   def apply(add_propertyChanged: js.Function => Unit, remove_propertyChanged: js.Function => Unit): INotifyPropertyChange = {
     val __obj = js.Dynamic.literal(add_propertyChanged = js.Any.fromFunction1(add_propertyChanged), remove_propertyChanged = js.Any.fromFunction1(remove_propertyChanged))
-  
     __obj.asInstanceOf[INotifyPropertyChange]
   }
 }

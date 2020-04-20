@@ -15,16 +15,14 @@ trait RosterSubscriptionState extends js.Object
 
 object RosterSubscriptionState {
   @scala.inline
-  def both: typings.strophejsPluginRoster.strophejsPluginRosterStrings.both = this.cast("both")
+  def both: typings.strophejsPluginRoster.strophejsPluginRosterStrings.both = "both".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.both]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def from: typings.strophejsPluginRoster.strophejsPluginRosterStrings.from = "from".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.from]
   @scala.inline
-  def from: typings.strophejsPluginRoster.strophejsPluginRosterStrings.from = this.cast("from")
+  def none: typings.strophejsPluginRoster.strophejsPluginRosterStrings.none = "none".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.none]
   @scala.inline
-  def none: typings.strophejsPluginRoster.strophejsPluginRosterStrings.none = this.cast("none")
+  def remove: typings.strophejsPluginRoster.strophejsPluginRosterStrings.remove = "remove".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.remove]
   @scala.inline
-  def remove: typings.strophejsPluginRoster.strophejsPluginRosterStrings.remove = this.cast("remove")
-  @scala.inline
-  def to: typings.strophejsPluginRoster.strophejsPluginRosterStrings.to = this.cast("to")
+  def to: typings.strophejsPluginRoster.strophejsPluginRosterStrings.to = "to".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.to]
 }
 

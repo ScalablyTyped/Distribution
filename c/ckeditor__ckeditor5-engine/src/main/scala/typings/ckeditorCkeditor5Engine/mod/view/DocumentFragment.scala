@@ -15,7 +15,7 @@ class DocumentFragment protected () extends js.Object {
   var _children: js.Array[Element] = js.native
   val childCount: Double = js.native
   val isEmpty: Boolean = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[Iterator[Node, _, js.UndefOr[scala.Nothing]]] = js.native
   val parent: Null = js.native
   val root: DocumentFragment = js.native

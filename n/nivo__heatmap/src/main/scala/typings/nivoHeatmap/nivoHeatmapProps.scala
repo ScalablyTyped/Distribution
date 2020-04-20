@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait nivoHeatmapProps {
   @scala.inline
-  def ResponsiveHeatMapProps: HeatMapSvgProps.type = typings.nivoHeatmap.mod.HeatMapSvgProps
+  def ResponsiveHeatMapProps: HeatMapSvgProps.type = HeatMapSvgProps
   type ResponsiveHeatMapProps = HeatMapSvgProps
   @scala.inline
-  def ResponsiveHeatMapCanvasProps: HeatMapCanvasProps.type = typings.nivoHeatmap.mod.HeatMapCanvasProps
+  def ResponsiveHeatMapCanvasProps: HeatMapCanvasProps.type = HeatMapCanvasProps
   type ResponsiveHeatMapCanvasProps = HeatMapCanvasProps
 }
 

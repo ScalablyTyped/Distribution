@@ -15,7 +15,6 @@ object FlashSwfPanel {
   @scala.inline
   def apply(call: () => js.Any, name: js.Any, path: js.Any, setFocus: () => js.Any): FlashSwfPanel = {
     val __obj = js.Dynamic.literal(call = js.Any.fromFunction0(call), name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], setFocus = js.Any.fromFunction0(setFocus))
-  
     __obj.asInstanceOf[FlashSwfPanel]
   }
 }

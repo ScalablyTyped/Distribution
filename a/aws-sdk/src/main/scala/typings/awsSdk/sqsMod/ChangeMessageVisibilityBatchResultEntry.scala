@@ -16,7 +16,6 @@ object ChangeMessageVisibilityBatchResultEntry {
   @scala.inline
   def apply(Id: String): ChangeMessageVisibilityBatchResultEntry = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeMessageVisibilityBatchResultEntry]
   }
 }

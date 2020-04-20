@@ -19,7 +19,6 @@ object Impl {
   @scala.inline
   def apply(disabled: String, form: String): Impl = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

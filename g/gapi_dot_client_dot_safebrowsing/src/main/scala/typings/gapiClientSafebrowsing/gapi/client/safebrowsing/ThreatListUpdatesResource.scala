@@ -18,7 +18,6 @@ object ThreatListUpdatesResource {
   @scala.inline
   def apply(fetch: AnonAlt => Request_[FetchThreatListUpdatesResponse]): ThreatListUpdatesResource = {
     val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
-  
     __obj.asInstanceOf[ThreatListUpdatesResource]
   }
 }

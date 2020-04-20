@@ -13,12 +13,10 @@ trait Size extends js.Object
 
 object Size {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def compact: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.compact = "compact".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.compact]
   @scala.inline
-  def compact: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.compact = this.cast("compact")
+  def invisible: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.invisible = "invisible".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.invisible]
   @scala.inline
-  def invisible: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.invisible = this.cast("invisible")
-  @scala.inline
-  def normal: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.normal = this.cast("normal")
+  def normal: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.normal = "normal".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.normal]
 }
 

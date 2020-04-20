@@ -16,7 +16,6 @@ object DescribeValidDBInstanceModificationsMessage {
   @scala.inline
   def apply(DBInstanceIdentifier: String): DescribeValidDBInstanceModificationsMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeValidDBInstanceModificationsMessage]
   }
 }

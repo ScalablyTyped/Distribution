@@ -13,7 +13,6 @@ object AnonSum {
   @scala.inline
   def apply(sum: String): AnonSum = {
     val __obj = js.Dynamic.literal(sum = sum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSum]
   }
 }

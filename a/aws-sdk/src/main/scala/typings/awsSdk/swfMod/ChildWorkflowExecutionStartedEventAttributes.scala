@@ -24,7 +24,6 @@ object ChildWorkflowExecutionStartedEventAttributes {
   @scala.inline
   def apply(initiatedEventId: EventId, workflowExecution: WorkflowExecution, workflowType: WorkflowType): ChildWorkflowExecutionStartedEventAttributes = {
     val __obj = js.Dynamic.literal(initiatedEventId = initiatedEventId.asInstanceOf[js.Any], workflowExecution = workflowExecution.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChildWorkflowExecutionStartedEventAttributes]
   }
 }

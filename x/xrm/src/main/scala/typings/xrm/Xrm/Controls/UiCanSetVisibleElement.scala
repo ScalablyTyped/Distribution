@@ -19,7 +19,6 @@ object UiCanSetVisibleElement {
   @scala.inline
   def apply(setVisible: Boolean => Unit): UiCanSetVisibleElement = {
     val __obj = js.Dynamic.literal(setVisible = js.Any.fromFunction1(setVisible))
-  
     __obj.asInstanceOf[UiCanSetVisibleElement]
   }
 }

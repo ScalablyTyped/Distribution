@@ -95,7 +95,6 @@ object Connection {
     sendDigits: SendDigitOptions => Unit
   ): Connection = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction1(destroy), getConnectionId = js.Any.fromFunction0(getConnectionId), getContactId = js.Any.fromFunction0(getContactId), getEndpoint = js.Any.fromFunction0(getEndpoint), getState = js.Any.fromFunction0(getState), getStateDuration = js.Any.fromFunction0(getStateDuration), getType = js.Any.fromFunction0(getType), hold = js.Any.fromFunction1(hold), isActive = js.Any.fromFunction0(isActive), isConnected = js.Any.fromFunction0(isConnected), isConnecting = js.Any.fromFunction0(isConnecting), isInitialConnection = js.Any.fromFunction0(isInitialConnection), isOnHold = js.Any.fromFunction0(isOnHold), resume = js.Any.fromFunction1(resume), sendDigits = js.Any.fromFunction1(sendDigits))
-  
     __obj.asInstanceOf[Connection]
   }
 }

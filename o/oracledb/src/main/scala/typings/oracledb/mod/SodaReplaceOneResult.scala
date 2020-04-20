@@ -16,7 +16,6 @@ object SodaReplaceOneResult {
   @scala.inline
   def apply(replaced: Boolean): SodaReplaceOneResult = {
     val __obj = js.Dynamic.literal(replaced = replaced.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SodaReplaceOneResult]
   }
 }

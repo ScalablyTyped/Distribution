@@ -1,5 +1,6 @@
 package typings.prosemirrorModel.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.orderedmap.mod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends js.Object {
   var marks: js.UndefOr[
     (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
-    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with js.Any) | ^[MarkSpec] | Null
+    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[MarkSpec] | Null
   ] = js.undefined
   /**
     * The node types in this schema. Maps names to
@@ -27,7 +28,7 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends js.Object {
     */
   var nodes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with js.Any) | ^[NodeSpec]
+    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[NodeSpec]
   /**
     * The name of the default top-level node for the schema. Defaults
     * to `"doc"`.
@@ -40,10 +41,10 @@ object SchemaSpec {
   def apply[N /* <: String */, M /* <: String */](
     nodes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with js.Any) | ^[NodeSpec],
+    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[NodeSpec],
     marks: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
-    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with js.Any) | ^[MarkSpec] = null,
+    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[MarkSpec] = null,
     topNode: String = null
   ): SchemaSpec[N, M] = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])

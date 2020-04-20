@@ -35,7 +35,6 @@ object IPlugin_ {
   @scala.inline
   def apply(data: ISettingBundle, id: String, raw: String, schema: ISchema, version: String): IPlugin_ = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPlugin_]
   }
 }

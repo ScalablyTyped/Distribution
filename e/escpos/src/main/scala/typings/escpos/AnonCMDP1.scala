@@ -17,7 +17,6 @@ object AnonCMDP1 {
   @scala.inline
   def apply(CMD_P1: InformationseparatorthreeLeftparenthesisk, CMD_P2: `1P0`): AnonCMDP1 = {
     val __obj = js.Dynamic.literal(CMD_P1 = CMD_P1.asInstanceOf[js.Any], CMD_P2 = CMD_P2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCMDP1]
   }
 }

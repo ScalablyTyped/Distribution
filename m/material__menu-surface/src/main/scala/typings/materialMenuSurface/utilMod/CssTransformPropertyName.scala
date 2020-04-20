@@ -34,10 +34,8 @@ trait CssTransformPropertyName extends js.Object
 
 object CssTransformPropertyName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def transform: typings.materialMenuSurface.materialMenuSurfaceStrings.transform = "transform".asInstanceOf[typings.materialMenuSurface.materialMenuSurfaceStrings.transform]
   @scala.inline
-  def transform: typings.materialMenuSurface.materialMenuSurfaceStrings.transform = this.cast("transform")
-  @scala.inline
-  def webkitTransform: typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform = this.cast("webkitTransform")
+  def webkitTransform: typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform = "webkitTransform".asInstanceOf[typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform]
 }
 

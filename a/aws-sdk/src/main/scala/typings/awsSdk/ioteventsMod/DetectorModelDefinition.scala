@@ -20,7 +20,6 @@ object DetectorModelDefinition {
   @scala.inline
   def apply(initialStateName: StateName, states: States): DetectorModelDefinition = {
     val __obj = js.Dynamic.literal(initialStateName = initialStateName.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectorModelDefinition]
   }
 }

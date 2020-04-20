@@ -75,11 +75,11 @@ class ContentsManager_ () extends IManager {
     * A signal emitted when a file operation takes place.
     */
   @JSName("fileChanged")
-  def fileChanged_MContentsManager_(): ISignal[this.type, IChangedArgs] = js.native
+  def fileChanged_MContentsManager_ : ISignal[this.type, IChangedArgs] = js.native
   /**
     * Test whether the manager has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MContentsManager_(): Boolean = js.native
+  def isDisposed_MContentsManager_ : Boolean = js.native
 }
 

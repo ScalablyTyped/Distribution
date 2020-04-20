@@ -15,7 +15,6 @@ object IPropertyValueSuggestion {
   @scala.inline
   def apply(Clone: () => IPropertyValueSuggestion, IsFact: Boolean, Quality: Double, TypedValue: ITypedValue): IPropertyValueSuggestion = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), IsFact = IsFact.asInstanceOf[js.Any], Quality = Quality.asInstanceOf[js.Any], TypedValue = TypedValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPropertyValueSuggestion]
   }
 }

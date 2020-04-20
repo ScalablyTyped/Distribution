@@ -16,12 +16,10 @@ trait WdFontBias extends js.Object
 
 object WdFontBias {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdFontBiasDefault: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdFontBiasDefault: `0` = this.cast(0)
+  def wdFontBiasDontCare: `255` = 255.asInstanceOf[`255`]
   @scala.inline
-  def wdFontBiasDontCare: `255` = this.cast(255)
-  @scala.inline
-  def wdFontBiasFareast: `1` = this.cast(1)
+  def wdFontBiasFareast: `1` = 1.asInstanceOf[`1`]
 }
 

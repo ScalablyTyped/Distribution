@@ -18,14 +18,12 @@ trait MsoContactCardAddressType extends js.Object
 
 object MsoContactCardAddressType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoContactCardAddressTypeIM: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoContactCardAddressTypeIM: `3` = this.cast(3)
+  def msoContactCardAddressTypeOutlook: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoContactCardAddressTypeOutlook: `1` = this.cast(1)
+  def msoContactCardAddressTypeSMTP: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoContactCardAddressTypeSMTP: `2` = this.cast(2)
-  @scala.inline
-  def msoContactCardAddressTypeUnknown: `0` = this.cast(0)
+  def msoContactCardAddressTypeUnknown: `0` = 0.asInstanceOf[`0`]
 }
 

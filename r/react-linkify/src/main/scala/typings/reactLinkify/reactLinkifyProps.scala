@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactLinkifyProps {
   @scala.inline
-  def ReactLinkifyProps: Props.type = typings.reactLinkify.mod.Props
+  def ReactLinkifyProps: Props.type = Props
   type ReactLinkifyProps = Props
 }
 

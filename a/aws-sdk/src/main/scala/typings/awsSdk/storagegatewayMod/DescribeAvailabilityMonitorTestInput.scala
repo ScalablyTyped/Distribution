@@ -13,7 +13,6 @@ object DescribeAvailabilityMonitorTestInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN): DescribeAvailabilityMonitorTestInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAvailabilityMonitorTestInput]
   }
 }

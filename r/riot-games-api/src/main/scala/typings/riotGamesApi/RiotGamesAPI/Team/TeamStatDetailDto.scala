@@ -15,7 +15,6 @@ object TeamStatDetailDto {
   @scala.inline
   def apply(averageGamesPlayed: Double, losses: Double, teamStatType: String, wins: Double): TeamStatDetailDto = {
     val __obj = js.Dynamic.literal(averageGamesPlayed = averageGamesPlayed.asInstanceOf[js.Any], losses = losses.asInstanceOf[js.Any], teamStatType = teamStatType.asInstanceOf[js.Any], wins = wins.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamStatDetailDto]
   }
 }

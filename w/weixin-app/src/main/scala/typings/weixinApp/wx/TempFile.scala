@@ -15,7 +15,6 @@ object TempFile {
   @scala.inline
   def apply(path: String, size: Double): TempFile = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TempFile]
   }
 }

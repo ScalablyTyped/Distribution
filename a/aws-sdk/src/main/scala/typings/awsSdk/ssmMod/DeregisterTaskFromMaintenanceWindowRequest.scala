@@ -20,7 +20,6 @@ object DeregisterTaskFromMaintenanceWindowRequest {
   @scala.inline
   def apply(WindowId: MaintenanceWindowId, WindowTaskId: MaintenanceWindowTaskId): DeregisterTaskFromMaintenanceWindowRequest = {
     val __obj = js.Dynamic.literal(WindowId = WindowId.asInstanceOf[js.Any], WindowTaskId = WindowTaskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterTaskFromMaintenanceWindowRequest]
   }
 }

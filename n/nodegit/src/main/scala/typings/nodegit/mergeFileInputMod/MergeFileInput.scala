@@ -16,7 +16,6 @@ object MergeFileInput {
   @scala.inline
   def apply(mode: Double, path: String, ptr: String, size: Double, version: Double): MergeFileInput = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], ptr = ptr.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MergeFileInput]
   }
 }

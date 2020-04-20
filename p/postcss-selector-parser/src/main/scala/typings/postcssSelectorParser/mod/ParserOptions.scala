@@ -15,7 +15,6 @@ object ParserOptions {
   @scala.inline
   def apply(css: String, error: (String, ErrorOptions) => Error, options: Options): ParserOptions = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], error = js.Any.fromFunction2(error), options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParserOptions]
   }
 }

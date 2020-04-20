@@ -3,6 +3,7 @@ package typings.helmet.mod
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +30,7 @@ object IHelmetHpkpConfiguration {
     includeSubdomains: js.UndefOr[Boolean] = js.undefined,
     reportOnly: js.UndefOr[Boolean] = js.undefined,
     reportUri: String = null,
-    setIf: (/* req */ Request_[ParamsDictionary], /* res */ Response_[js.Any]) => Boolean = null
+    setIf: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean = null
   ): IHelmetHpkpConfiguration = {
     val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any], sha256s = sha256s.asInstanceOf[js.Any])
     if (!js.isUndefined(includeSubDomains)) __obj.updateDynamic("includeSubDomains")(includeSubDomains.asInstanceOf[js.Any])

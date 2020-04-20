@@ -36,7 +36,6 @@ object INxPivotPage {
     qTop: js.Array[INxPivotDimensionCell]
   ): INxPivotPage = {
     val __obj = js.Dynamic.literal(qArea = qArea.asInstanceOf[js.Any], qData = qData.asInstanceOf[js.Any], qLeft = qLeft.asInstanceOf[js.Any], qTop = qTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxPivotPage]
   }
 }

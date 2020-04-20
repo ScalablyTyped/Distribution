@@ -14,7 +14,6 @@ object PickImpldefaultTransition {
   @scala.inline
   def apply(defaultTransition: DefaultTransitionSettings): PickImpldefaultTransition = {
     val __obj = js.Dynamic.literal(defaultTransition = defaultTransition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldefaultTransition]
   }
 }

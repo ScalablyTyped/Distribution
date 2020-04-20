@@ -280,294 +280,292 @@ trait XlRgbColor extends js.Object
 
 object XlRgbColor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def rgbAliceBlue: `16775408` = 16775408.asInstanceOf[`16775408`]
   @scala.inline
-  def rgbAliceBlue: `16775408` = this.cast(16775408)
+  def rgbAntiqueWhite: `14150650` = 14150650.asInstanceOf[`14150650`]
   @scala.inline
-  def rgbAntiqueWhite: `14150650` = this.cast(14150650)
+  def rgbAqua: `16776960` = 16776960.asInstanceOf[`16776960`]
   @scala.inline
-  def rgbAqua: `16776960` = this.cast(16776960)
+  def rgbAquamarine: `13959039` = 13959039.asInstanceOf[`13959039`]
   @scala.inline
-  def rgbAquamarine: `13959039` = this.cast(13959039)
+  def rgbAzure: `16777200` = 16777200.asInstanceOf[`16777200`]
   @scala.inline
-  def rgbAzure: `16777200` = this.cast(16777200)
+  def rgbBeige: `14480885` = 14480885.asInstanceOf[`14480885`]
   @scala.inline
-  def rgbBeige: `14480885` = this.cast(14480885)
+  def rgbBisque: `12903679` = 12903679.asInstanceOf[`12903679`]
   @scala.inline
-  def rgbBisque: `12903679` = this.cast(12903679)
+  def rgbBlack: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def rgbBlack: `0` = this.cast(0)
+  def rgbBlanchedAlmond: `13495295` = 13495295.asInstanceOf[`13495295`]
   @scala.inline
-  def rgbBlanchedAlmond: `13495295` = this.cast(13495295)
+  def rgbBlue: `16711680` = 16711680.asInstanceOf[`16711680`]
   @scala.inline
-  def rgbBlue: `16711680` = this.cast(16711680)
+  def rgbBlueViolet: `14822282` = 14822282.asInstanceOf[`14822282`]
   @scala.inline
-  def rgbBlueViolet: `14822282` = this.cast(14822282)
+  def rgbBrown: `2763429` = 2763429.asInstanceOf[`2763429`]
   @scala.inline
-  def rgbBrown: `2763429` = this.cast(2763429)
+  def rgbBurlyWood: `8894686` = 8894686.asInstanceOf[`8894686`]
   @scala.inline
-  def rgbBurlyWood: `8894686` = this.cast(8894686)
+  def rgbCadetBlue: `10526303` = 10526303.asInstanceOf[`10526303`]
   @scala.inline
-  def rgbCadetBlue: `10526303` = this.cast(10526303)
+  def rgbChartreuse: `65407` = 65407.asInstanceOf[`65407`]
   @scala.inline
-  def rgbChartreuse: `65407` = this.cast(65407)
+  def rgbCoral: `5275647` = 5275647.asInstanceOf[`5275647`]
   @scala.inline
-  def rgbCoral: `5275647` = this.cast(5275647)
+  def rgbCornflowerBlue: `15570276` = 15570276.asInstanceOf[`15570276`]
   @scala.inline
-  def rgbCornflowerBlue: `15570276` = this.cast(15570276)
+  def rgbCornsilk: `14481663` = 14481663.asInstanceOf[`14481663`]
   @scala.inline
-  def rgbCornsilk: `14481663` = this.cast(14481663)
+  def rgbCrimson: `3937500` = 3937500.asInstanceOf[`3937500`]
   @scala.inline
-  def rgbCrimson: `3937500` = this.cast(3937500)
+  def rgbDarkBlue: `9109504` = 9109504.asInstanceOf[`9109504`]
   @scala.inline
-  def rgbDarkBlue: `9109504` = this.cast(9109504)
+  def rgbDarkCyan: `9145088` = 9145088.asInstanceOf[`9145088`]
   @scala.inline
-  def rgbDarkCyan: `9145088` = this.cast(9145088)
+  def rgbDarkGoldenrod: `755384` = 755384.asInstanceOf[`755384`]
   @scala.inline
-  def rgbDarkGoldenrod: `755384` = this.cast(755384)
+  def rgbDarkGray: `11119017` = 11119017.asInstanceOf[`11119017`]
   @scala.inline
-  def rgbDarkGray: `11119017` = this.cast(11119017)
+  def rgbDarkGreen: `25600` = 25600.asInstanceOf[`25600`]
   @scala.inline
-  def rgbDarkGreen: `25600` = this.cast(25600)
+  def rgbDarkGrey: `11119017` = 11119017.asInstanceOf[`11119017`]
   @scala.inline
-  def rgbDarkGrey: `11119017` = this.cast(11119017)
+  def rgbDarkKhaki: `7059389` = 7059389.asInstanceOf[`7059389`]
   @scala.inline
-  def rgbDarkKhaki: `7059389` = this.cast(7059389)
+  def rgbDarkMagenta: `9109643` = 9109643.asInstanceOf[`9109643`]
   @scala.inline
-  def rgbDarkMagenta: `9109643` = this.cast(9109643)
+  def rgbDarkOliveGreen: `3107669` = 3107669.asInstanceOf[`3107669`]
   @scala.inline
-  def rgbDarkOliveGreen: `3107669` = this.cast(3107669)
+  def rgbDarkOrange: `36095` = 36095.asInstanceOf[`36095`]
   @scala.inline
-  def rgbDarkOrange: `36095` = this.cast(36095)
+  def rgbDarkOrchid: `13382297` = 13382297.asInstanceOf[`13382297`]
   @scala.inline
-  def rgbDarkOrchid: `13382297` = this.cast(13382297)
+  def rgbDarkRed: `139` = 139.asInstanceOf[`139`]
   @scala.inline
-  def rgbDarkRed: `139` = this.cast(139)
+  def rgbDarkSalmon: `8034025` = 8034025.asInstanceOf[`8034025`]
   @scala.inline
-  def rgbDarkSalmon: `8034025` = this.cast(8034025)
+  def rgbDarkSeaGreen: `9419919` = 9419919.asInstanceOf[`9419919`]
   @scala.inline
-  def rgbDarkSeaGreen: `9419919` = this.cast(9419919)
+  def rgbDarkSlateBlue: `9125192` = 9125192.asInstanceOf[`9125192`]
   @scala.inline
-  def rgbDarkSlateBlue: `9125192` = this.cast(9125192)
+  def rgbDarkSlateGray: `5197615` = 5197615.asInstanceOf[`5197615`]
   @scala.inline
-  def rgbDarkSlateGray: `5197615` = this.cast(5197615)
+  def rgbDarkSlateGrey: `5197615` = 5197615.asInstanceOf[`5197615`]
   @scala.inline
-  def rgbDarkSlateGrey: `5197615` = this.cast(5197615)
+  def rgbDarkTurquoise: `13749760` = 13749760.asInstanceOf[`13749760`]
   @scala.inline
-  def rgbDarkTurquoise: `13749760` = this.cast(13749760)
+  def rgbDarkViolet: `13828244` = 13828244.asInstanceOf[`13828244`]
   @scala.inline
-  def rgbDarkViolet: `13828244` = this.cast(13828244)
+  def rgbDeepPink: `9639167` = 9639167.asInstanceOf[`9639167`]
   @scala.inline
-  def rgbDeepPink: `9639167` = this.cast(9639167)
+  def rgbDeepSkyBlue: `16760576` = 16760576.asInstanceOf[`16760576`]
   @scala.inline
-  def rgbDeepSkyBlue: `16760576` = this.cast(16760576)
+  def rgbDimGray: `6908265` = 6908265.asInstanceOf[`6908265`]
   @scala.inline
-  def rgbDimGray: `6908265` = this.cast(6908265)
+  def rgbDimGrey: `6908265` = 6908265.asInstanceOf[`6908265`]
   @scala.inline
-  def rgbDimGrey: `6908265` = this.cast(6908265)
+  def rgbDodgerBlue: `16748574` = 16748574.asInstanceOf[`16748574`]
   @scala.inline
-  def rgbDodgerBlue: `16748574` = this.cast(16748574)
+  def rgbFireBrick: `2237106` = 2237106.asInstanceOf[`2237106`]
   @scala.inline
-  def rgbFireBrick: `2237106` = this.cast(2237106)
+  def rgbFloralWhite: `15792895` = 15792895.asInstanceOf[`15792895`]
   @scala.inline
-  def rgbFloralWhite: `15792895` = this.cast(15792895)
+  def rgbForestGreen: `2263842` = 2263842.asInstanceOf[`2263842`]
   @scala.inline
-  def rgbForestGreen: `2263842` = this.cast(2263842)
+  def rgbFuchsia: `16711935` = 16711935.asInstanceOf[`16711935`]
   @scala.inline
-  def rgbFuchsia: `16711935` = this.cast(16711935)
+  def rgbGainsboro: `14474460` = 14474460.asInstanceOf[`14474460`]
   @scala.inline
-  def rgbGainsboro: `14474460` = this.cast(14474460)
+  def rgbGhostWhite: `16775416` = 16775416.asInstanceOf[`16775416`]
   @scala.inline
-  def rgbGhostWhite: `16775416` = this.cast(16775416)
+  def rgbGold: `55295` = 55295.asInstanceOf[`55295`]
   @scala.inline
-  def rgbGold: `55295` = this.cast(55295)
+  def rgbGoldenrod: `2139610` = 2139610.asInstanceOf[`2139610`]
   @scala.inline
-  def rgbGoldenrod: `2139610` = this.cast(2139610)
+  def rgbGray: `8421504` = 8421504.asInstanceOf[`8421504`]
   @scala.inline
-  def rgbGray: `8421504` = this.cast(8421504)
+  def rgbGreen: `32768` = 32768.asInstanceOf[`32768`]
   @scala.inline
-  def rgbGreen: `32768` = this.cast(32768)
+  def rgbGreenYellow: `3145645` = 3145645.asInstanceOf[`3145645`]
   @scala.inline
-  def rgbGreenYellow: `3145645` = this.cast(3145645)
+  def rgbGrey: `8421504` = 8421504.asInstanceOf[`8421504`]
   @scala.inline
-  def rgbGrey: `8421504` = this.cast(8421504)
+  def rgbHoneydew: `15794160` = 15794160.asInstanceOf[`15794160`]
   @scala.inline
-  def rgbHoneydew: `15794160` = this.cast(15794160)
+  def rgbHotPink: `11823615` = 11823615.asInstanceOf[`11823615`]
   @scala.inline
-  def rgbHotPink: `11823615` = this.cast(11823615)
+  def rgbIndianRed: `6053069` = 6053069.asInstanceOf[`6053069`]
   @scala.inline
-  def rgbIndianRed: `6053069` = this.cast(6053069)
+  def rgbIndigo: `8519755` = 8519755.asInstanceOf[`8519755`]
   @scala.inline
-  def rgbIndigo: `8519755` = this.cast(8519755)
+  def rgbIvory: `15794175` = 15794175.asInstanceOf[`15794175`]
   @scala.inline
-  def rgbIvory: `15794175` = this.cast(15794175)
+  def rgbKhaki: `9234160` = 9234160.asInstanceOf[`9234160`]
   @scala.inline
-  def rgbKhaki: `9234160` = this.cast(9234160)
+  def rgbLavender: `16443110` = 16443110.asInstanceOf[`16443110`]
   @scala.inline
-  def rgbLavender: `16443110` = this.cast(16443110)
+  def rgbLavenderBlush: `16118015` = 16118015.asInstanceOf[`16118015`]
   @scala.inline
-  def rgbLavenderBlush: `16118015` = this.cast(16118015)
+  def rgbLawnGreen: `64636` = 64636.asInstanceOf[`64636`]
   @scala.inline
-  def rgbLawnGreen: `64636` = this.cast(64636)
+  def rgbLemonChiffon: `13499135` = 13499135.asInstanceOf[`13499135`]
   @scala.inline
-  def rgbLemonChiffon: `13499135` = this.cast(13499135)
+  def rgbLightBlue: `15128749` = 15128749.asInstanceOf[`15128749`]
   @scala.inline
-  def rgbLightBlue: `15128749` = this.cast(15128749)
+  def rgbLightCoral: `8421616` = 8421616.asInstanceOf[`8421616`]
   @scala.inline
-  def rgbLightCoral: `8421616` = this.cast(8421616)
+  def rgbLightCyan: `9145088` = 9145088.asInstanceOf[`9145088`]
   @scala.inline
-  def rgbLightCyan: `9145088` = this.cast(9145088)
+  def rgbLightGoldenrodYellow: `13826810` = 13826810.asInstanceOf[`13826810`]
   @scala.inline
-  def rgbLightGoldenrodYellow: `13826810` = this.cast(13826810)
+  def rgbLightGray: `13882323` = 13882323.asInstanceOf[`13882323`]
   @scala.inline
-  def rgbLightGray: `13882323` = this.cast(13882323)
+  def rgbLightGreen: `9498256` = 9498256.asInstanceOf[`9498256`]
   @scala.inline
-  def rgbLightGreen: `9498256` = this.cast(9498256)
+  def rgbLightGrey: `13882323` = 13882323.asInstanceOf[`13882323`]
   @scala.inline
-  def rgbLightGrey: `13882323` = this.cast(13882323)
+  def rgbLightPink: `12695295` = 12695295.asInstanceOf[`12695295`]
   @scala.inline
-  def rgbLightPink: `12695295` = this.cast(12695295)
+  def rgbLightSalmon: `8036607` = 8036607.asInstanceOf[`8036607`]
   @scala.inline
-  def rgbLightSalmon: `8036607` = this.cast(8036607)
+  def rgbLightSeaGreen: `11186720` = 11186720.asInstanceOf[`11186720`]
   @scala.inline
-  def rgbLightSeaGreen: `11186720` = this.cast(11186720)
+  def rgbLightSkyBlue: `16436871` = 16436871.asInstanceOf[`16436871`]
   @scala.inline
-  def rgbLightSkyBlue: `16436871` = this.cast(16436871)
+  def rgbLightSlateGray: `10061943` = 10061943.asInstanceOf[`10061943`]
   @scala.inline
-  def rgbLightSlateGray: `10061943` = this.cast(10061943)
+  def rgbLightSlateGrey: `10061943` = 10061943.asInstanceOf[`10061943`]
   @scala.inline
-  def rgbLightSlateGrey: `10061943` = this.cast(10061943)
+  def rgbLightSteelBlue: `14599344` = 14599344.asInstanceOf[`14599344`]
   @scala.inline
-  def rgbLightSteelBlue: `14599344` = this.cast(14599344)
+  def rgbLightYellow: `14745599` = 14745599.asInstanceOf[`14745599`]
   @scala.inline
-  def rgbLightYellow: `14745599` = this.cast(14745599)
+  def rgbLime: `65280` = 65280.asInstanceOf[`65280`]
   @scala.inline
-  def rgbLime: `65280` = this.cast(65280)
+  def rgbLimeGreen: `3329330` = 3329330.asInstanceOf[`3329330`]
   @scala.inline
-  def rgbLimeGreen: `3329330` = this.cast(3329330)
+  def rgbLinen: `15134970` = 15134970.asInstanceOf[`15134970`]
   @scala.inline
-  def rgbLinen: `15134970` = this.cast(15134970)
+  def rgbMaroon: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def rgbMaroon: `128` = this.cast(128)
+  def rgbMediumAquamarine: `11206502` = 11206502.asInstanceOf[`11206502`]
   @scala.inline
-  def rgbMediumAquamarine: `11206502` = this.cast(11206502)
+  def rgbMediumBlue: `13434880` = 13434880.asInstanceOf[`13434880`]
   @scala.inline
-  def rgbMediumBlue: `13434880` = this.cast(13434880)
+  def rgbMediumOrchid: `13850042` = 13850042.asInstanceOf[`13850042`]
   @scala.inline
-  def rgbMediumOrchid: `13850042` = this.cast(13850042)
+  def rgbMediumPurple: `14381203` = 14381203.asInstanceOf[`14381203`]
   @scala.inline
-  def rgbMediumPurple: `14381203` = this.cast(14381203)
+  def rgbMediumSeaGreen: `7451452` = 7451452.asInstanceOf[`7451452`]
   @scala.inline
-  def rgbMediumSeaGreen: `7451452` = this.cast(7451452)
+  def rgbMediumSlateBlue: `15624315` = 15624315.asInstanceOf[`15624315`]
   @scala.inline
-  def rgbMediumSlateBlue: `15624315` = this.cast(15624315)
+  def rgbMediumSpringGreen: `10156544` = 10156544.asInstanceOf[`10156544`]
   @scala.inline
-  def rgbMediumSpringGreen: `10156544` = this.cast(10156544)
+  def rgbMediumTurquoise: `13422920` = 13422920.asInstanceOf[`13422920`]
   @scala.inline
-  def rgbMediumTurquoise: `13422920` = this.cast(13422920)
+  def rgbMediumVioletRed: `8721863` = 8721863.asInstanceOf[`8721863`]
   @scala.inline
-  def rgbMediumVioletRed: `8721863` = this.cast(8721863)
+  def rgbMidnightBlue: `7346457` = 7346457.asInstanceOf[`7346457`]
   @scala.inline
-  def rgbMidnightBlue: `7346457` = this.cast(7346457)
+  def rgbMintCream: `16449525` = 16449525.asInstanceOf[`16449525`]
   @scala.inline
-  def rgbMintCream: `16449525` = this.cast(16449525)
+  def rgbMistyRose: `14804223` = 14804223.asInstanceOf[`14804223`]
   @scala.inline
-  def rgbMistyRose: `14804223` = this.cast(14804223)
+  def rgbMoccasin: `11920639` = 11920639.asInstanceOf[`11920639`]
   @scala.inline
-  def rgbMoccasin: `11920639` = this.cast(11920639)
+  def rgbNavajoWhite: `11394815` = 11394815.asInstanceOf[`11394815`]
   @scala.inline
-  def rgbNavajoWhite: `11394815` = this.cast(11394815)
+  def rgbNavy: `8388608` = 8388608.asInstanceOf[`8388608`]
   @scala.inline
-  def rgbNavy: `8388608` = this.cast(8388608)
+  def rgbNavyBlue: `8388608` = 8388608.asInstanceOf[`8388608`]
   @scala.inline
-  def rgbNavyBlue: `8388608` = this.cast(8388608)
+  def rgbOldLace: `15136253` = 15136253.asInstanceOf[`15136253`]
   @scala.inline
-  def rgbOldLace: `15136253` = this.cast(15136253)
+  def rgbOlive: `32896` = 32896.asInstanceOf[`32896`]
   @scala.inline
-  def rgbOlive: `32896` = this.cast(32896)
+  def rgbOliveDrab: `2330219` = 2330219.asInstanceOf[`2330219`]
   @scala.inline
-  def rgbOliveDrab: `2330219` = this.cast(2330219)
+  def rgbOrange: `42495` = 42495.asInstanceOf[`42495`]
   @scala.inline
-  def rgbOrange: `42495` = this.cast(42495)
+  def rgbOrangeRed: `17919` = 17919.asInstanceOf[`17919`]
   @scala.inline
-  def rgbOrangeRed: `17919` = this.cast(17919)
+  def rgbOrchid: `14053594` = 14053594.asInstanceOf[`14053594`]
   @scala.inline
-  def rgbOrchid: `14053594` = this.cast(14053594)
+  def rgbPaleGoldenrod: `7071982` = 7071982.asInstanceOf[`7071982`]
   @scala.inline
-  def rgbPaleGoldenrod: `7071982` = this.cast(7071982)
+  def rgbPaleGreen: `10025880` = 10025880.asInstanceOf[`10025880`]
   @scala.inline
-  def rgbPaleGreen: `10025880` = this.cast(10025880)
+  def rgbPaleTurquoise: `15658671` = 15658671.asInstanceOf[`15658671`]
   @scala.inline
-  def rgbPaleTurquoise: `15658671` = this.cast(15658671)
+  def rgbPaleVioletRed: `9662683` = 9662683.asInstanceOf[`9662683`]
   @scala.inline
-  def rgbPaleVioletRed: `9662683` = this.cast(9662683)
+  def rgbPapayaWhip: `14020607` = 14020607.asInstanceOf[`14020607`]
   @scala.inline
-  def rgbPapayaWhip: `14020607` = this.cast(14020607)
+  def rgbPeachPuff: `12180223` = 12180223.asInstanceOf[`12180223`]
   @scala.inline
-  def rgbPeachPuff: `12180223` = this.cast(12180223)
+  def rgbPeru: `4163021` = 4163021.asInstanceOf[`4163021`]
   @scala.inline
-  def rgbPeru: `4163021` = this.cast(4163021)
+  def rgbPink: `13353215` = 13353215.asInstanceOf[`13353215`]
   @scala.inline
-  def rgbPink: `13353215` = this.cast(13353215)
+  def rgbPlum: `14524637` = 14524637.asInstanceOf[`14524637`]
   @scala.inline
-  def rgbPlum: `14524637` = this.cast(14524637)
+  def rgbPowderBlue: `15130800` = 15130800.asInstanceOf[`15130800`]
   @scala.inline
-  def rgbPowderBlue: `15130800` = this.cast(15130800)
+  def rgbPurple: `8388736` = 8388736.asInstanceOf[`8388736`]
   @scala.inline
-  def rgbPurple: `8388736` = this.cast(8388736)
+  def rgbRed: `255` = 255.asInstanceOf[`255`]
   @scala.inline
-  def rgbRed: `255` = this.cast(255)
+  def rgbRosyBrown: `9408444` = 9408444.asInstanceOf[`9408444`]
   @scala.inline
-  def rgbRosyBrown: `9408444` = this.cast(9408444)
+  def rgbRoyalBlue: `14772545` = 14772545.asInstanceOf[`14772545`]
   @scala.inline
-  def rgbRoyalBlue: `14772545` = this.cast(14772545)
+  def rgbSalmon: `7504122` = 7504122.asInstanceOf[`7504122`]
   @scala.inline
-  def rgbSalmon: `7504122` = this.cast(7504122)
+  def rgbSandyBrown: `6333684` = 6333684.asInstanceOf[`6333684`]
   @scala.inline
-  def rgbSandyBrown: `6333684` = this.cast(6333684)
+  def rgbSeaGreen: `5737262` = 5737262.asInstanceOf[`5737262`]
   @scala.inline
-  def rgbSeaGreen: `5737262` = this.cast(5737262)
+  def rgbSeashell: `15660543` = 15660543.asInstanceOf[`15660543`]
   @scala.inline
-  def rgbSeashell: `15660543` = this.cast(15660543)
+  def rgbSienna: `2970272` = 2970272.asInstanceOf[`2970272`]
   @scala.inline
-  def rgbSienna: `2970272` = this.cast(2970272)
+  def rgbSilver: `12632256` = 12632256.asInstanceOf[`12632256`]
   @scala.inline
-  def rgbSilver: `12632256` = this.cast(12632256)
+  def rgbSkyBlue: `15453831` = 15453831.asInstanceOf[`15453831`]
   @scala.inline
-  def rgbSkyBlue: `15453831` = this.cast(15453831)
+  def rgbSlateBlue: `13458026` = 13458026.asInstanceOf[`13458026`]
   @scala.inline
-  def rgbSlateBlue: `13458026` = this.cast(13458026)
+  def rgbSlateGray: `9470064` = 9470064.asInstanceOf[`9470064`]
   @scala.inline
-  def rgbSlateGray: `9470064` = this.cast(9470064)
+  def rgbSlateGrey: `9470064` = 9470064.asInstanceOf[`9470064`]
   @scala.inline
-  def rgbSlateGrey: `9470064` = this.cast(9470064)
+  def rgbSnow: `16448255` = 16448255.asInstanceOf[`16448255`]
   @scala.inline
-  def rgbSnow: `16448255` = this.cast(16448255)
+  def rgbSpringGreen: `8388352` = 8388352.asInstanceOf[`8388352`]
   @scala.inline
-  def rgbSpringGreen: `8388352` = this.cast(8388352)
+  def rgbSteelBlue: `11829830` = 11829830.asInstanceOf[`11829830`]
   @scala.inline
-  def rgbSteelBlue: `11829830` = this.cast(11829830)
+  def rgbTan: `9221330` = 9221330.asInstanceOf[`9221330`]
   @scala.inline
-  def rgbTan: `9221330` = this.cast(9221330)
+  def rgbTeal: `8421376` = 8421376.asInstanceOf[`8421376`]
   @scala.inline
-  def rgbTeal: `8421376` = this.cast(8421376)
+  def rgbThistle: `14204888` = 14204888.asInstanceOf[`14204888`]
   @scala.inline
-  def rgbThistle: `14204888` = this.cast(14204888)
+  def rgbTomato: `4678655` = 4678655.asInstanceOf[`4678655`]
   @scala.inline
-  def rgbTomato: `4678655` = this.cast(4678655)
+  def rgbTurquoise: `13688896` = 13688896.asInstanceOf[`13688896`]
   @scala.inline
-  def rgbTurquoise: `13688896` = this.cast(13688896)
+  def rgbViolet: `15631086` = 15631086.asInstanceOf[`15631086`]
   @scala.inline
-  def rgbViolet: `15631086` = this.cast(15631086)
+  def rgbWheat: `11788021` = 11788021.asInstanceOf[`11788021`]
   @scala.inline
-  def rgbWheat: `11788021` = this.cast(11788021)
+  def rgbWhite: `16777215` = 16777215.asInstanceOf[`16777215`]
   @scala.inline
-  def rgbWhite: `16777215` = this.cast(16777215)
+  def rgbWhiteSmoke: `16119285` = 16119285.asInstanceOf[`16119285`]
   @scala.inline
-  def rgbWhiteSmoke: `16119285` = this.cast(16119285)
+  def rgbYellow: `65535` = 65535.asInstanceOf[`65535`]
   @scala.inline
-  def rgbYellow: `65535` = this.cast(65535)
-  @scala.inline
-  def rgbYellowGreen: `3329434` = this.cast(3329434)
+  def rgbYellowGreen: `3329434` = 3329434.asInstanceOf[`3329434`]
 }
 

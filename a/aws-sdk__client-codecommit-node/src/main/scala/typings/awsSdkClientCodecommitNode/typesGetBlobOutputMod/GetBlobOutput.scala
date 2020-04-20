@@ -23,7 +23,6 @@ object GetBlobOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, content: Uint8Array): GetBlobOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBlobOutput]
   }
 }

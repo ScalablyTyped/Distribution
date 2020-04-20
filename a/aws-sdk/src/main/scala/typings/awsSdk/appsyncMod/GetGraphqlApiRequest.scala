@@ -16,7 +16,6 @@ object GetGraphqlApiRequest {
   @scala.inline
   def apply(apiId: String): GetGraphqlApiRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGraphqlApiRequest]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-urlparam"
-version := "0.0-unknown-dt-20200226Z-32d9f9"
+version := "0.0-unknown-dt-20200226Z-5efaab"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

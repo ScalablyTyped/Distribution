@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactVisibilitySensorProps {
   @scala.inline
-  def ReactVisibilitySensorProps: Props.type = typings.reactVisibilitySensor.mod.Props
+  def ReactVisibilitySensorProps: Props.type = Props
   type ReactVisibilitySensorProps = Props
 }
 

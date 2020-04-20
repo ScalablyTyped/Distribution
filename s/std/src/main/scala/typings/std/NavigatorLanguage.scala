@@ -13,7 +13,6 @@ object NavigatorLanguage {
   @scala.inline
   def apply(language: java.lang.String, languages: js.Array[java.lang.String]): NavigatorLanguage = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigatorLanguage]
   }
 }

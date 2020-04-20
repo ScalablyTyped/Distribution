@@ -37,11 +37,25 @@ trait BuildingSceneLayer
     */
   var filters: Collection[BuildingFilter] = js.native
   /**
+    * An array of field names from the service to include with each feature in all sublayers. To fetch the values from all fields in all sublayers, use `["*"]`. BuildingSceneLayers usually have a large number of fields, so fetching all the values might lead to slower load times. Fields specified in `outFields` will be requested alongside with required fields for [rendering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#renderer) and [filtering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#filters) on all sublayers.  To include fields only in a specific sublayer, use the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#outFields) property of the sublayer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#outFields)
+    *
+    * @default null
+    */
+  var outFields: js.Array[String] = js.native
+  /**
     * Hierarchical structure of sublayers in a BuildingSceneLayer. Usually contains an Overview [BuildingComponentSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html) and a Full Model [BuildingGroupSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html). However, some BuildingSceneLayers can contain only the Full Model [BuildingGroupSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html) or the discipline [BuildingGroupSublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html) directly.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#sublayers)
     */
   val sublayers: Collection[BuildingGroupSublayer | BuildingComponentSublayer] = js.native
+  /**
+    * Summary statistics for all component layers in the building scene layer. This object has to be loaded before accessing its properties.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#summaryStatistics)
+    */
+  val summaryStatistics: BuildingSummaryStatistics = js.native
   @JSName("type")
   val type_BuildingSceneLayer: `building-scene` = js.native
   /**

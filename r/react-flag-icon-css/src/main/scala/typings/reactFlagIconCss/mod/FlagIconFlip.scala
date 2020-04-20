@@ -12,10 +12,8 @@ trait FlagIconFlip extends js.Object
 
 object FlagIconFlip {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.reactFlagIconCss.reactFlagIconCssStrings.horizontal = "horizontal".asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssStrings.horizontal]
   @scala.inline
-  def horizontal: typings.reactFlagIconCss.reactFlagIconCssStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.reactFlagIconCss.reactFlagIconCssStrings.vertical = this.cast("vertical")
+  def vertical: typings.reactFlagIconCss.reactFlagIconCssStrings.vertical = "vertical".asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssStrings.vertical]
 }
 

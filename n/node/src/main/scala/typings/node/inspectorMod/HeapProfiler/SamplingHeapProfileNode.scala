@@ -27,7 +27,6 @@ object SamplingHeapProfileNode {
   @scala.inline
   def apply(callFrame: CallFrame, children: js.Array[SamplingHeapProfileNode], selfSize: Double): SamplingHeapProfileNode = {
     val __obj = js.Dynamic.literal(callFrame = callFrame.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], selfSize = selfSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SamplingHeapProfileNode]
   }
 }

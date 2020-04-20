@@ -15,13 +15,11 @@ object ExtensionFileOrCode {
   @scala.inline
   def AnonFile(file: ExtensionURL): ExtensionFileOrCode = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionFileOrCode]
   }
   @scala.inline
   def AnonCode(code: String): ExtensionFileOrCode = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionFileOrCode]
   }
 }

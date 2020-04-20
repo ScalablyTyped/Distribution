@@ -17,7 +17,6 @@ object dvtBaseGaugeSettableProperties {
   @scala.inline
   def apply(trackResize: on | off, translations: AnonLabelAndValue): dvtBaseGaugeSettableProperties = {
     val __obj = js.Dynamic.literal(trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[dvtBaseGaugeSettableProperties]
   }
 }

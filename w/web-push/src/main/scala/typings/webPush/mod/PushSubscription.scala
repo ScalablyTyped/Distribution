@@ -14,7 +14,6 @@ object PushSubscription {
   @scala.inline
   def apply(endpoint: String, keys: AnonAuth): PushSubscription = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PushSubscription]
   }
 }

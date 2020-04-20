@@ -13,7 +13,6 @@ object AnonSubjectAltName {
   @scala.inline
   def apply(subjectAltName: ArrayParam[AnonDns]): AnonSubjectAltName = {
     val __obj = js.Dynamic.literal(subjectAltName = subjectAltName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSubjectAltName]
   }
 }

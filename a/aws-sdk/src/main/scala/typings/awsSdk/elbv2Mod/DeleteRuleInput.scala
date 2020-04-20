@@ -16,7 +16,6 @@ object DeleteRuleInput {
   @scala.inline
   def apply(RuleArn: RuleArn): DeleteRuleInput = {
     val __obj = js.Dynamic.literal(RuleArn = RuleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRuleInput]
   }
 }

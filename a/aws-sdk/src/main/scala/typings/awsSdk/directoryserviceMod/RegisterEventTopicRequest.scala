@@ -20,7 +20,6 @@ object RegisterEventTopicRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, TopicName: TopicName): RegisterEventTopicRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], TopicName = TopicName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterEventTopicRequest]
   }
 }

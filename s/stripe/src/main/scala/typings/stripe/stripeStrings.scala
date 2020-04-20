@@ -161,6 +161,9 @@ object stripeStrings {
   sealed trait allowed_categories extends js.Object
   
   @js.native
+  sealed trait always_invoice extends js.Object
+  
+  @js.native
   sealed trait amex extends CardBrand
   
   @js.native
@@ -407,6 +410,9 @@ object stripeStrings {
   
   @js.native
   sealed trait couponDotupdated extends EventType
+  
+  @js.native
+  sealed trait create_prorations extends js.Object
   
   @js.native
   sealed trait created extends OrderStatus
@@ -1737,11 +1743,11 @@ object stripeStrings {
   sealed trait zh extends js.Object
   
   @scala.inline
-  def `American Express`: `American Express` = "American Express".asInstanceOf[`American Express`]
+  def `American Express`: `American Express` = ("American Express").asInstanceOf[`American Express`]
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def `Diners Club`: `Diners Club` = "Diners Club".asInstanceOf[`Diners Club`]
+  def `Diners Club`: `Diners Club` = ("Diners Club").asInstanceOf[`Diners Club`]
   @scala.inline
   def Discover: Discover = "Discover".asInstanceOf[Discover]
   @scala.inline
@@ -1810,6 +1816,8 @@ object stripeStrings {
   def all_time: all_time = "all_time".asInstanceOf[all_time]
   @scala.inline
   def allowed_categories: allowed_categories = "allowed_categories".asInstanceOf[allowed_categories]
+  @scala.inline
+  def always_invoice: always_invoice = "always_invoice".asInstanceOf[always_invoice]
   @scala.inline
   def amex: amex = "amex".asInstanceOf[amex]
   @scala.inline
@@ -1964,6 +1972,8 @@ object stripeStrings {
   def couponDotdeleted: couponDotdeleted = "coupon.deleted".asInstanceOf[couponDotdeleted]
   @scala.inline
   def couponDotupdated: couponDotupdated = "coupon.updated".asInstanceOf[couponDotupdated]
+  @scala.inline
+  def create_prorations: create_prorations = "create_prorations".asInstanceOf[create_prorations]
   @scala.inline
   def created: created = "created".asInstanceOf[created]
   @scala.inline

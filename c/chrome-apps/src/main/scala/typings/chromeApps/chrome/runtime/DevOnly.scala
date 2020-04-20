@@ -14,14 +14,12 @@ trait DevOnly extends js.Object
 
 object DevOnly {
   @scala.inline
-  def appDotwindowDotalpha: typings.chromeApps.chromeAppsStrings.appDotwindowDotalpha = this.cast("app.window.alpha")
+  def appDotwindowDotalpha: typings.chromeApps.chromeAppsStrings.appDotwindowDotalpha = "app.window.alpha".asInstanceOf[typings.chromeApps.chromeAppsStrings.appDotwindowDotalpha]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def diagnostics: typings.chromeApps.chromeAppsStrings.diagnostics = "diagnostics".asInstanceOf[typings.chromeApps.chromeAppsStrings.diagnostics]
   @scala.inline
-  def diagnostics: typings.chromeApps.chromeAppsStrings.diagnostics = this.cast("diagnostics")
+  def displaySource: typings.chromeApps.chromeAppsStrings.displaySource = "displaySource".asInstanceOf[typings.chromeApps.chromeAppsStrings.displaySource]
   @scala.inline
-  def displaySource: typings.chromeApps.chromeAppsStrings.displaySource = this.cast("displaySource")
-  @scala.inline
-  def signedInDevices: typings.chromeApps.chromeAppsStrings.signedInDevices = this.cast("signedInDevices")
+  def signedInDevices: typings.chromeApps.chromeAppsStrings.signedInDevices = "signedInDevices".asInstanceOf[typings.chromeApps.chromeAppsStrings.signedInDevices]
 }
 

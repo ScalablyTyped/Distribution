@@ -15,7 +15,6 @@ object SearchDegreeCentralityNormalizedResultDirected {
   @scala.inline
   def apply(indegree: NodeSingular => js.Any, outdegree: NodeSingular => js.Any): SearchDegreeCentralityNormalizedResultDirected = {
     val __obj = js.Dynamic.literal(indegree = js.Any.fromFunction1(indegree), outdegree = js.Any.fromFunction1(outdegree))
-  
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedResultDirected]
   }
 }

@@ -22,7 +22,6 @@ object IFileMap {
   @scala.inline
   def apply(dest: String, src: js.Array[String]): IFileMap = {
     val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFileMap]
   }
 }

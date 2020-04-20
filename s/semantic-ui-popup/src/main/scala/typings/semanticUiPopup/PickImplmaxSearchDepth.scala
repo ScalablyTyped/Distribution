@@ -13,7 +13,6 @@ object PickImplmaxSearchDepth {
   @scala.inline
   def apply(maxSearchDepth: Double): PickImplmaxSearchDepth = {
     val __obj = js.Dynamic.literal(maxSearchDepth = maxSearchDepth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmaxSearchDepth]
   }
 }

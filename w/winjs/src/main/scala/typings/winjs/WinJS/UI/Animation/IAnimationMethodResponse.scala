@@ -15,7 +15,6 @@ object IAnimationMethodResponse {
   @scala.inline
   def apply(execute: () => Promise[_]): IAnimationMethodResponse = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute))
-  
     __obj.asInstanceOf[IAnimationMethodResponse]
   }
 }

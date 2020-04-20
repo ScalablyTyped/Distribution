@@ -12,7 +12,6 @@ object ResponseSent {
   @scala.inline
   def apply(device: String): ResponseSent = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResponseSent]
   }
 }

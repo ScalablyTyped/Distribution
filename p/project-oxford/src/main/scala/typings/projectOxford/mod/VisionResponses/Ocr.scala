@@ -16,7 +16,6 @@ object Ocr {
   @scala.inline
   def apply(language: String, orientation: String, regions: js.Array[AnonLines], textAngle: Double): Ocr = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], regions = regions.asInstanceOf[js.Any], textAngle = textAngle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Ocr]
   }
 }

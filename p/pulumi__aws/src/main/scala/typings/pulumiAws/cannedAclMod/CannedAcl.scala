@@ -18,22 +18,20 @@ trait CannedAcl extends js.Object
 
 object CannedAcl {
   @scala.inline
-  def `authenticated-read`: typings.pulumiAws.pulumiAwsStrings.`authenticated-read` = this.cast("authenticated-read")
+  def `authenticated-read`: typings.pulumiAws.pulumiAwsStrings.`authenticated-read` = "authenticated-read".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`authenticated-read`]
   @scala.inline
-  def `aws-exec-read`: typings.pulumiAws.pulumiAwsStrings.`aws-exec-read` = this.cast("aws-exec-read")
+  def `aws-exec-read`: typings.pulumiAws.pulumiAwsStrings.`aws-exec-read` = "aws-exec-read".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`aws-exec-read`]
   @scala.inline
-  def `bucket-owner-full-control`: typings.pulumiAws.pulumiAwsStrings.`bucket-owner-full-control` = this.cast("bucket-owner-full-control")
+  def `bucket-owner-full-control`: typings.pulumiAws.pulumiAwsStrings.`bucket-owner-full-control` = "bucket-owner-full-control".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`bucket-owner-full-control`]
   @scala.inline
-  def `bucket-owner-read`: typings.pulumiAws.pulumiAwsStrings.`bucket-owner-read` = this.cast("bucket-owner-read")
+  def `bucket-owner-read`: typings.pulumiAws.pulumiAwsStrings.`bucket-owner-read` = "bucket-owner-read".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`bucket-owner-read`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `log-delivery-write`: typings.pulumiAws.pulumiAwsStrings.`log-delivery-write` = "log-delivery-write".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`log-delivery-write`]
   @scala.inline
-  def `log-delivery-write`: typings.pulumiAws.pulumiAwsStrings.`log-delivery-write` = this.cast("log-delivery-write")
+  def `private`: typings.pulumiAws.pulumiAwsStrings.`private` = "private".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`private`]
   @scala.inline
-  def `private`: typings.pulumiAws.pulumiAwsStrings.`private` = this.cast("private")
+  def `public-read`: typings.pulumiAws.pulumiAwsStrings.`public-read` = "public-read".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`public-read`]
   @scala.inline
-  def `public-read`: typings.pulumiAws.pulumiAwsStrings.`public-read` = this.cast("public-read")
-  @scala.inline
-  def `public-read-write`: typings.pulumiAws.pulumiAwsStrings.`public-read-write` = this.cast("public-read-write")
+  def `public-read-write`: typings.pulumiAws.pulumiAwsStrings.`public-read-write` = "public-read-write".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`public-read-write`]
 }
 

@@ -16,6 +16,6 @@ abstract class ControlContainer () extends AbstractControlDirective {
     * @description
     * The top-level form directive for the control.
     */
-  def formDirective(): Form | Null = js.native
+  def formDirective: Form | Null = js.native
 }
 

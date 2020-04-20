@@ -25,7 +25,6 @@ object RequiredProviderOptions {
   @scala.inline
   def apply(clientId: String, clientSecret: String, password: String): RequiredProviderOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredProviderOptions]
   }
 }

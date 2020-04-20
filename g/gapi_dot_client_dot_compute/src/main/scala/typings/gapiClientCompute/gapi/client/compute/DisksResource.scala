@@ -51,7 +51,6 @@ object DisksResource {
     setLabels: AnonResource => Request_[Operation]
   ): DisksResource = {
     val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), createSnapshot = js.Any.fromFunction1(createSnapshot), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), resize = js.Any.fromFunction1(resize), setLabels = js.Any.fromFunction1(setLabels))
-  
     __obj.asInstanceOf[DisksResource]
   }
 }

@@ -16,7 +16,6 @@ object StartReplicationTaskAssessmentMessage {
   @scala.inline
   def apply(ReplicationTaskArn: String): StartReplicationTaskAssessmentMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskArn = ReplicationTaskArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartReplicationTaskAssessmentMessage]
   }
 }

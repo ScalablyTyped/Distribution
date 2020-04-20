@@ -20,7 +20,6 @@ object CreateSecurityConfigurationInput {
   @scala.inline
   def apply(Name: XmlString, SecurityConfiguration: String): CreateSecurityConfigurationInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SecurityConfiguration = SecurityConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSecurityConfigurationInput]
   }
 }

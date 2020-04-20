@@ -20,7 +20,6 @@ object RaphaelFont {
   @scala.inline
   def apply(face: PartialRaphaelFontFace, glyphs: Record[String, PartialRaphaelFontGlyph], w: Double): RaphaelFont = {
     val __obj = js.Dynamic.literal(face = face.asInstanceOf[js.Any], glyphs = glyphs.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaphaelFont]
   }
 }

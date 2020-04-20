@@ -17,7 +17,6 @@ object LifecyclePolicyPolicyDetailsScheduleRetainRule {
   @scala.inline
   def apply(count: Input[Double]): LifecyclePolicyPolicyDetailsScheduleRetainRule = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LifecyclePolicyPolicyDetailsScheduleRetainRule]
   }
 }

@@ -15,7 +15,6 @@ object KinIXAlignnumber {
   @scala.inline
   def apply(center: Double, left: Double, right: Double): KinIXAlignnumber = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinIXAlignnumber]
   }
 }

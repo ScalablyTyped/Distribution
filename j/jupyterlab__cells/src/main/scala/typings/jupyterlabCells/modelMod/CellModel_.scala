@@ -52,7 +52,7 @@ class CellModel_ protected () extends Model {
   /**
     * The metadata associated with the cell.
     */
-  def metadata(): IObservableJSON = js.native
+  def metadata: IObservableJSON = js.native
   /**
     * Handle a change to the observable value.
     */
@@ -70,7 +70,7 @@ class CellModel_ protected () extends Model {
   /**
     * Get the trusted state of the model.
     */
-  def trusted(): Boolean = js.native
+  def trusted: Boolean = js.native
   /**
     * Set the trusted state of the model.
     */

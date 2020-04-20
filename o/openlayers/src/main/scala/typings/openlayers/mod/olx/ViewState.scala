@@ -17,7 +17,6 @@ object ViewState {
   @scala.inline
   def apply(center: Coordinate_, projection: Projection, resolution: Double, rotation: Double): ViewState = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViewState]
   }
 }

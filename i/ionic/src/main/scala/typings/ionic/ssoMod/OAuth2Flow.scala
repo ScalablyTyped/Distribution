@@ -23,7 +23,7 @@ abstract class OAuth2Flow protected () extends js.Object {
   /* protected */ def getAccessToken(authorizationCode: String, verifier: String): js.Promise[String] = js.native
   /* protected */ def getAuthorizationCode(): js.Promise[String] = js.native
   /* protected */ def getSuccessHtml(): js.Promise[String] = js.native
-  def redirectUrl(): String = js.native
+  def redirectUrl: String = js.native
   def run(): js.Promise[String] = js.native
 }
 

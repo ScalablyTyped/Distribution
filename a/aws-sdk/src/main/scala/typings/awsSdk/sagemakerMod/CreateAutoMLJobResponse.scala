@@ -16,7 +16,6 @@ object CreateAutoMLJobResponse {
   @scala.inline
   def apply(AutoMLJobArn: AutoMLJobArn): CreateAutoMLJobResponse = {
     val __obj = js.Dynamic.literal(AutoMLJobArn = AutoMLJobArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAutoMLJobResponse]
   }
 }

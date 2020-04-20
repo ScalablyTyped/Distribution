@@ -8,7 +8,6 @@ import typings.blueprintjsDatetime.shortcutsMod.IDatePickerShortcut
 import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
 import typings.react.mod._Global_.JSX.Element
-import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,9 @@ trait PartialIDateInputProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var clearButtonText: js.UndefOr[String] = js.undefined
   var closeOnSelection: js.UndefOr[Boolean] = js.undefined
-  var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
+  var dayPickerProps: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any
+  ] = js.undefined
   var defaultValue: js.UndefOr[Date] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var fill: js.UndefOr[Boolean] = js.undefined
@@ -29,9 +30,7 @@ trait PartialIDateInputProps extends js.Object {
   var inputProps: js.UndefOr[HTMLInputProps with IInputGroupProps] = js.undefined
   var invalidDateMessage: js.UndefOr[String] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
-  var localeUtils: js.UndefOr[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
-  ] = js.undefined
+  var localeUtils: js.UndefOr[AnonFormatDate] = js.undefined
   var maxDate: js.UndefOr[Date] = js.undefined
   var minDate: js.UndefOr[Date] = js.undefined
   var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
@@ -60,7 +59,7 @@ object PartialIDateInputProps {
     className: String = null,
     clearButtonText: String = null,
     closeOnSelection: js.UndefOr[Boolean] = js.undefined,
-    dayPickerProps: DayPickerProps = null,
+    dayPickerProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any = null,
     defaultValue: Date = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     fill: js.UndefOr[Boolean] = js.undefined,
@@ -69,7 +68,7 @@ object PartialIDateInputProps {
     inputProps: HTMLInputProps with IInputGroupProps = null,
     invalidDateMessage: String = null,
     locale: String = null,
-    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
+    localeUtils: AnonFormatDate = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,

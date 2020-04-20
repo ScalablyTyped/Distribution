@@ -12,7 +12,6 @@ object MotionOption {
   @scala.inline
   def apply(pin: Double | String): MotionOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MotionOption]
   }
 }

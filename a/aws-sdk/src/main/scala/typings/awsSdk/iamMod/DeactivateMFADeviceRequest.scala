@@ -20,7 +20,6 @@ object DeactivateMFADeviceRequest {
   @scala.inline
   def apply(SerialNumber: serialNumberType, UserName: existingUserNameType): DeactivateMFADeviceRequest = {
     val __obj = js.Dynamic.literal(SerialNumber = SerialNumber.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeactivateMFADeviceRequest]
   }
 }

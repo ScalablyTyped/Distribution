@@ -22,7 +22,6 @@ object AreaSelect_ {
     setDimensions: Dimension => Unit
   ): AreaSelect_ = {
     val __obj = js.Dynamic.literal(addTo = js.Any.fromFunction1(addTo), getBounds = js.Any.fromFunction0(getBounds), remove = js.Any.fromFunction0(remove), setDimensions = js.Any.fromFunction1(setDimensions))
-  
     __obj.asInstanceOf[AreaSelect_]
   }
 }

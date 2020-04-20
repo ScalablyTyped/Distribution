@@ -13,10 +13,8 @@ trait IPaymentMethodType extends js.Object
 
 object IPaymentMethodType {
   @scala.inline
-  def card: typings.stripe.stripeStrings.card = this.cast("card")
+  def card: typings.stripe.stripeStrings.card = "card".asInstanceOf[typings.stripe.stripeStrings.card]
   @scala.inline
-  def card_present: typings.stripe.stripeStrings.card_present = this.cast("card_present")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def card_present: typings.stripe.stripeStrings.card_present = "card_present".asInstanceOf[typings.stripe.stripeStrings.card_present]
 }
 

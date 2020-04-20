@@ -28,7 +28,6 @@ object AnonPTE {
     USD: js.Array[String]
   ): AnonPTE = {
     val __obj = js.Dynamic.literal(AOA = AOA.asInstanceOf[js.Any], AUD = AUD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], PTE = PTE.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPTE]
   }
 }

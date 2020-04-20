@@ -12,7 +12,6 @@ object AnonLatitude {
   @scala.inline
   def apply(latitude: Double): AnonLatitude = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLatitude]
   }
 }

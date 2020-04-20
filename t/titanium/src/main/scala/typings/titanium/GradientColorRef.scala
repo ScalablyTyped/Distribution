@@ -11,7 +11,7 @@ trait GradientColorRef extends js.Object {
   /**
   	 * Color value at this point in the gradient, as a color name or hex triplet.
   	 */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * The color's normalized position within the gradient, ranging from 0 (start) to 1 (end).
   	 */
@@ -20,7 +20,7 @@ trait GradientColorRef extends js.Object {
 
 object GradientColorRef {
   @scala.inline
-  def apply(color: String = null, offset: Int | Double = null): GradientColorRef = {
+  def apply(color: java.lang.String = null, offset: Int | Double = null): GradientColorRef = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.tryghostContentApi.mod.PostOrPage
   - typings.tryghostContentApi.mod.Author
   - typings.tryghostContentApi.mod.Tag
-  - typings.tryghostContentApi.mod.Setting
+  - typings.tryghostContentApi.mod.Settings
 */
 trait GhostData extends js.Object
 
@@ -26,11 +26,11 @@ object GhostData {
     comment_id: String = null,
     created_at: String = null,
     custom_excerpt: String = null,
-    custom_template: String = null,
+    custom_template: Nullable[String] = null,
     excerpt: String = null,
-    feature_image: String = null,
+    feature_image: Nullable[String] = null,
     featured: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
+    html: Nullable[String] = null,
     meta_description: Nullable[String] = null,
     meta_title: Nullable[String] = null,
     og_description: Nullable[String] = null,
@@ -41,6 +41,7 @@ object GhostData {
     primary_author: Nullable[Author] = null,
     primary_tag: Nullable[Tag] = null,
     published_at: Nullable[String] = null,
+    reading_time: Int | Double = null,
     tags: js.Array[Tag] = null,
     title: String = null,
     twitter_description: Nullable[String] = null,
@@ -73,6 +74,7 @@ object GhostData {
     if (primary_author != null) __obj.updateDynamic("primary_author")(primary_author.asInstanceOf[js.Any])
     if (primary_tag != null) __obj.updateDynamic("primary_tag")(primary_tag.asInstanceOf[js.Any])
     if (published_at != null) __obj.updateDynamic("published_at")(published_at.asInstanceOf[js.Any])
+    if (reading_time != null) __obj.updateDynamic("reading_time")(reading_time.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (twitter_description != null) __obj.updateDynamic("twitter_description")(twitter_description.asInstanceOf[js.Any])
@@ -140,7 +142,7 @@ object GhostData {
     __obj.asInstanceOf[GhostData]
   }
   @scala.inline
-  def Setting(
+  def Settings(
     codeinjection_foot: Nullable[String] = null,
     codeinjection_head: Nullable[String] = null,
     cover_image: String = null,

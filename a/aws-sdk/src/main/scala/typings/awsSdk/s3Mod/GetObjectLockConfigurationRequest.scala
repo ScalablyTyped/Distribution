@@ -16,7 +16,6 @@ object GetObjectLockConfigurationRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetObjectLockConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetObjectLockConfigurationRequest]
   }
 }

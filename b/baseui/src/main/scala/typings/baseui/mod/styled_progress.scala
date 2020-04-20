@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_progress extends js.Object {
-  def apply[P /* <: js.Object */, T](component: progress, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[progress], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: progress, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[progress], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: progress, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[progress], 
+      Exclude[/* keyof react.react.ComponentProps<'progress'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: progress, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[progress], 
+      Exclude[/* keyof react.react.ComponentProps<'progress'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

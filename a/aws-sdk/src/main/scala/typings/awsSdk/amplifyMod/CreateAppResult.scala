@@ -13,7 +13,6 @@ object CreateAppResult {
   @scala.inline
   def apply(app: App): CreateAppResult = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAppResult]
   }
 }

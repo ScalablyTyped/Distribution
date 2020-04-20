@@ -94,7 +94,6 @@ object LZStringStatic {
     decompressFromUint8Array: Uint8Array => Null | String
   ): LZStringStatic = {
     val __obj = js.Dynamic.literal(compress = js.Any.fromFunction1(compress), compressToBase64 = js.Any.fromFunction1(compressToBase64), compressToEncodedURIComponent = js.Any.fromFunction1(compressToEncodedURIComponent), compressToUTF16 = js.Any.fromFunction1(compressToUTF16), compressToUint8Array = js.Any.fromFunction1(compressToUint8Array), decompress = js.Any.fromFunction1(decompress), decompressFromBase64 = js.Any.fromFunction1(decompressFromBase64), decompressFromEncodedURIComponent = js.Any.fromFunction1(decompressFromEncodedURIComponent), decompressFromUTF16 = js.Any.fromFunction1(decompressFromUTF16), decompressFromUint8Array = js.Any.fromFunction1(decompressFromUint8Array))
-  
     __obj.asInstanceOf[LZStringStatic]
   }
 }

@@ -23,32 +23,30 @@ trait Algorithm extends js.Object
 
 object Algorithm {
   @scala.inline
-  def ES256: typings.jws.jwsStrings.ES256 = this.cast("ES256")
+  def ES256: typings.jws.jwsStrings.ES256 = "ES256".asInstanceOf[typings.jws.jwsStrings.ES256]
   @scala.inline
-  def ES384: typings.jws.jwsStrings.ES384 = this.cast("ES384")
+  def ES384: typings.jws.jwsStrings.ES384 = "ES384".asInstanceOf[typings.jws.jwsStrings.ES384]
   @scala.inline
-  def ES512: typings.jws.jwsStrings.ES512 = this.cast("ES512")
+  def ES512: typings.jws.jwsStrings.ES512 = "ES512".asInstanceOf[typings.jws.jwsStrings.ES512]
   @scala.inline
-  def HS256: typings.jws.jwsStrings.HS256 = this.cast("HS256")
+  def HS256: typings.jws.jwsStrings.HS256 = "HS256".asInstanceOf[typings.jws.jwsStrings.HS256]
   @scala.inline
-  def HS384: typings.jws.jwsStrings.HS384 = this.cast("HS384")
+  def HS384: typings.jws.jwsStrings.HS384 = "HS384".asInstanceOf[typings.jws.jwsStrings.HS384]
   @scala.inline
-  def HS512: typings.jws.jwsStrings.HS512 = this.cast("HS512")
+  def HS512: typings.jws.jwsStrings.HS512 = "HS512".asInstanceOf[typings.jws.jwsStrings.HS512]
   @scala.inline
-  def PS256: typings.jws.jwsStrings.PS256 = this.cast("PS256")
+  def PS256: typings.jws.jwsStrings.PS256 = "PS256".asInstanceOf[typings.jws.jwsStrings.PS256]
   @scala.inline
-  def PS384: typings.jws.jwsStrings.PS384 = this.cast("PS384")
+  def PS384: typings.jws.jwsStrings.PS384 = "PS384".asInstanceOf[typings.jws.jwsStrings.PS384]
   @scala.inline
-  def PS512: typings.jws.jwsStrings.PS512 = this.cast("PS512")
+  def PS512: typings.jws.jwsStrings.PS512 = "PS512".asInstanceOf[typings.jws.jwsStrings.PS512]
   @scala.inline
-  def RS256: typings.jws.jwsStrings.RS256 = this.cast("RS256")
+  def RS256: typings.jws.jwsStrings.RS256 = "RS256".asInstanceOf[typings.jws.jwsStrings.RS256]
   @scala.inline
-  def RS384: typings.jws.jwsStrings.RS384 = this.cast("RS384")
+  def RS384: typings.jws.jwsStrings.RS384 = "RS384".asInstanceOf[typings.jws.jwsStrings.RS384]
   @scala.inline
-  def RS512: typings.jws.jwsStrings.RS512 = this.cast("RS512")
+  def RS512: typings.jws.jwsStrings.RS512 = "RS512".asInstanceOf[typings.jws.jwsStrings.RS512]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def none: typings.jws.jwsStrings.none = this.cast("none")
+  def none: typings.jws.jwsStrings.none = "none".asInstanceOf[typings.jws.jwsStrings.none]
 }
 

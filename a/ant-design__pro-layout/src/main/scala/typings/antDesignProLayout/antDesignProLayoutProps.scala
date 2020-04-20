@@ -19,7 +19,7 @@ trait antDesignProLayoutProps {
   def DefaultFooterProps: typings.antDesignProLayout.footerMod.FooterProps.type = typings.antDesignProLayout.footerMod.FooterProps
   type DefaultFooterProps = typings.antDesignProLayout.footerMod.FooterProps
   @scala.inline
-  def DefaultHeaderProps: HeaderViewProps.type = typings.antDesignProLayout.headerMod.HeaderViewProps
+  def DefaultHeaderProps: HeaderViewProps.type = HeaderViewProps
   type DefaultHeaderProps = HeaderViewProps
   @scala.inline
   def FooterProps: typings.antDesignProLayout.footerMod.FooterProps.type = typings.antDesignProLayout.footerMod.FooterProps
@@ -31,14 +31,14 @@ trait antDesignProLayoutProps {
   def GridContentProps: typings.antDesignProLayout.gridContentMod.GridContentProps.type = typings.antDesignProLayout.gridContentMod.GridContentProps
   type GridContentProps = typings.antDesignProLayout.gridContentMod.GridContentProps
   @scala.inline
-  def HeaderProps: HeaderViewProps.type = typings.antDesignProLayout.headerMod.HeaderViewProps
+  def HeaderProps: HeaderViewProps.type = HeaderViewProps
   type HeaderProps = HeaderViewProps
   type LayoutChangeProps = AnonChangeSetting
   @scala.inline
   def PageHeaderWrapperProps: typings.antDesignProLayout.pageHeaderWrapperMod.PageHeaderWrapperProps.type = typings.antDesignProLayout.pageHeaderWrapperMod.PageHeaderWrapperProps
   type PageHeaderWrapperProps = typings.antDesignProLayout.pageHeaderWrapperMod.PageHeaderWrapperProps
   @scala.inline
-  def PageLoadingProps: AnonTip.type = typings.antDesignProLayout.AnonTip
+  def PageLoadingProps: AnonTip.type = AnonTip
   type PageLoadingProps = AnonTip
   @scala.inline
   def ProLayoutProps: typings.antDesignProLayout.basicLayoutMod.BasicLayoutProps.type = typings.antDesignProLayout.basicLayoutMod.BasicLayoutProps
@@ -53,7 +53,7 @@ trait antDesignProLayoutProps {
   def TopNavHeaderProps: typings.antDesignProLayout.topNavHeaderMod.TopNavHeaderProps.type = typings.antDesignProLayout.topNavHeaderMod.TopNavHeaderProps
   type TopNavHeaderProps = typings.antDesignProLayout.topNavHeaderMod.TopNavHeaderProps
   @scala.inline
-  def WrapContentProps: AnonChildren.type = typings.antDesignProLayout.AnonChildren
+  def WrapContentProps: AnonChildren.type = AnonChildren
   type WrapContentProps = AnonChildren
 }
 

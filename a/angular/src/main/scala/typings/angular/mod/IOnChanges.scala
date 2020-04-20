@@ -23,7 +23,6 @@ object IOnChanges {
   @scala.inline
   def apply($onChanges: IOnChangesObject => Unit): IOnChanges = {
     val __obj = js.Dynamic.literal($onChanges = js.Any.fromFunction1($onChanges))
-  
     __obj.asInstanceOf[IOnChanges]
   }
 }

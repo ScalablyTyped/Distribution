@@ -14,7 +14,6 @@ object AnonCoerced {
   @scala.inline
   def apply(coerced: StringDictionary[js.Any]): AnonCoerced = {
     val __obj = js.Dynamic.literal(coerced = coerced.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCoerced]
   }
 }

@@ -22,18 +22,16 @@ trait MetadataGroup extends js.Object
 
 object MetadataGroup {
   @scala.inline
-  def ADVANCED: advanced = this.cast("advanced")
+  def ADVANCED: advanced = "advanced".asInstanceOf[advanced]
   @scala.inline
-  def BETA: beta = this.cast("beta")
+  def BETA: beta = "beta".asInstanceOf[beta]
   @scala.inline
-  def DEPRECATED: deprecated = this.cast("deprecated")
+  def DEPRECATED: deprecated = "deprecated".asInstanceOf[deprecated]
   @scala.inline
-  def EXPERIMENTAL: experimental = this.cast("experimental")
+  def EXPERIMENTAL: experimental = "experimental".asInstanceOf[experimental]
   @scala.inline
-  def HIDDEN: hidden = this.cast("hidden")
+  def HIDDEN: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
-  def PAID: paid = this.cast("paid")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PAID: paid = "paid".asInstanceOf[paid]
 }
 

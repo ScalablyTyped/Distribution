@@ -20,7 +20,6 @@ object GetComplianceDetailRequest {
   @scala.inline
   def apply(MemberAccount: AWSAccountId, PolicyId: PolicyId): GetComplianceDetailRequest = {
     val __obj = js.Dynamic.literal(MemberAccount = MemberAccount.asInstanceOf[js.Any], PolicyId = PolicyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetComplianceDetailRequest]
   }
 }

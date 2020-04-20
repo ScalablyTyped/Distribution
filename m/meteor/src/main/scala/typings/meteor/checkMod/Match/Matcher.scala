@@ -12,7 +12,6 @@ object Matcher {
   @scala.inline
   def apply[T](_meteorCheckMatcherBrand: Unit): Matcher[T] = {
     val __obj = js.Dynamic.literal(_meteorCheckMatcherBrand = _meteorCheckMatcherBrand.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Matcher[T]]
   }
 }

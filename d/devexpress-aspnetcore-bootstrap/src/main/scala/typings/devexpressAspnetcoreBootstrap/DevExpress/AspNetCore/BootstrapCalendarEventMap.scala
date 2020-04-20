@@ -35,7 +35,6 @@ object BootstrapCalendarEventMap {
     visibleMonthChanged: ProcessingModeEventArgs
   ): BootstrapCalendarEventMap = {
     val __obj = js.Dynamic.literal(beginCallback = beginCallback.asInstanceOf[js.Any], callbackError = callbackError.asInstanceOf[js.Any], customDisabledDate = customDisabledDate.asInstanceOf[js.Any], endCallback = endCallback.asInstanceOf[js.Any], gotFocus = gotFocus.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], keyDown = keyDown.asInstanceOf[js.Any], keyPress = keyPress.asInstanceOf[js.Any], keyUp = keyUp.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any], selectionChanged = selectionChanged.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any], visibleMonthChanged = visibleMonthChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapCalendarEventMap]
   }
 }

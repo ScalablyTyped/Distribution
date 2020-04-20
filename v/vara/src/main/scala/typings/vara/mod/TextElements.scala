@@ -20,7 +20,6 @@ object TextElements {
   @scala.inline
   def apply(characters: js.Array[SVGGElement], container: SVGGElement): TextElements = {
     val __obj = js.Dynamic.literal(characters = characters.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextElements]
   }
 }

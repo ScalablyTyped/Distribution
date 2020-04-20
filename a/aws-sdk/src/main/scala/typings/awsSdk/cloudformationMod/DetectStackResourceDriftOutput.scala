@@ -16,7 +16,6 @@ object DetectStackResourceDriftOutput {
   @scala.inline
   def apply(StackResourceDrift: StackResourceDrift): DetectStackResourceDriftOutput = {
     val __obj = js.Dynamic.literal(StackResourceDrift = StackResourceDrift.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectStackResourceDriftOutput]
   }
 }

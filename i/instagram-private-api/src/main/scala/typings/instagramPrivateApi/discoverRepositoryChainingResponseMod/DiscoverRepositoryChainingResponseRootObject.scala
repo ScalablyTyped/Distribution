@@ -22,7 +22,6 @@ object DiscoverRepositoryChainingResponseRootObject {
     users: js.Array[DiscoverRepositoryChainingResponseUsersItem]
   ): DiscoverRepositoryChainingResponseRootObject = {
     val __obj = js.Dynamic.literal(available_recommend_count = available_recommend_count.asInstanceOf[js.Any], is_backup = is_backup.asInstanceOf[js.Any], is_recommend_account = is_recommend_account.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DiscoverRepositoryChainingResponseRootObject]
   }
 }

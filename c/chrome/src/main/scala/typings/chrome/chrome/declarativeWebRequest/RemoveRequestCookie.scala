@@ -12,7 +12,6 @@ object RemoveRequestCookie {
   @scala.inline
   def apply(filter: RequestCookie): RemoveRequestCookie = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveRequestCookie]
   }
 }

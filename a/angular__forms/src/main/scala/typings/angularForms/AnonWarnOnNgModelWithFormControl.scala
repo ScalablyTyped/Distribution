@@ -15,7 +15,6 @@ object AnonWarnOnNgModelWithFormControl {
   @scala.inline
   def apply(warnOnNgModelWithFormControl: never | once | always): AnonWarnOnNgModelWithFormControl = {
     val __obj = js.Dynamic.literal(warnOnNgModelWithFormControl = warnOnNgModelWithFormControl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWarnOnNgModelWithFormControl]
   }
 }

@@ -21,28 +21,26 @@ trait LibraryTarget extends js.Object
 
 object LibraryTarget {
   @scala.inline
-  def amd: typings.webpack.webpackStrings.amd = this.cast("amd")
+  def amd: typings.webpack.webpackStrings.amd = "amd".asInstanceOf[typings.webpack.webpackStrings.amd]
   @scala.inline
-  def assign: typings.webpack.webpackStrings.assign = this.cast("assign")
+  def assign: typings.webpack.webpackStrings.assign = "assign".asInstanceOf[typings.webpack.webpackStrings.assign]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def commonjs: typings.webpack.webpackStrings.commonjs = "commonjs".asInstanceOf[typings.webpack.webpackStrings.commonjs]
   @scala.inline
-  def commonjs: typings.webpack.webpackStrings.commonjs = this.cast("commonjs")
+  def commonjs2: typings.webpack.webpackStrings.commonjs2 = "commonjs2".asInstanceOf[typings.webpack.webpackStrings.commonjs2]
   @scala.inline
-  def commonjs2: typings.webpack.webpackStrings.commonjs2 = this.cast("commonjs2")
+  def global: typings.webpack.webpackStrings.global = "global".asInstanceOf[typings.webpack.webpackStrings.global]
   @scala.inline
-  def global: typings.webpack.webpackStrings.global = this.cast("global")
+  def jsonp: typings.webpack.webpackStrings.jsonp = "jsonp".asInstanceOf[typings.webpack.webpackStrings.jsonp]
   @scala.inline
-  def jsonp: typings.webpack.webpackStrings.jsonp = this.cast("jsonp")
+  def system: typings.webpack.webpackStrings.system = "system".asInstanceOf[typings.webpack.webpackStrings.system]
   @scala.inline
-  def system: typings.webpack.webpackStrings.system = this.cast("system")
+  def `this`: typings.webpack.webpackStrings.`this` = "this".asInstanceOf[typings.webpack.webpackStrings.`this`]
   @scala.inline
-  def `this`: typings.webpack.webpackStrings.`this` = this.cast("this")
+  def umd: typings.webpack.webpackStrings.umd = "umd".asInstanceOf[typings.webpack.webpackStrings.umd]
   @scala.inline
-  def umd: typings.webpack.webpackStrings.umd = this.cast("umd")
+  def `var`: typings.webpack.webpackStrings.`var` = "var".asInstanceOf[typings.webpack.webpackStrings.`var`]
   @scala.inline
-  def `var`: typings.webpack.webpackStrings.`var` = this.cast("var")
-  @scala.inline
-  def window: typings.webpack.webpackStrings.window = this.cast("window")
+  def window: typings.webpack.webpackStrings.window = "window".asInstanceOf[typings.webpack.webpackStrings.window]
 }
 

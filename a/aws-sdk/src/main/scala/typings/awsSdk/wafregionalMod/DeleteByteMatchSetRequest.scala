@@ -20,7 +20,6 @@ object DeleteByteMatchSetRequest {
   @scala.inline
   def apply(ByteMatchSetId: ResourceId, ChangeToken: ChangeToken): DeleteByteMatchSetRequest = {
     val __obj = js.Dynamic.literal(ByteMatchSetId = ByteMatchSetId.asInstanceOf[js.Any], ChangeToken = ChangeToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteByteMatchSetRequest]
   }
 }

@@ -16,7 +16,6 @@ object ModalBodyInterface {
   @scala.inline
   def apply[TRow /* <: js.Object */](getFieldValue: () => TRow): ModalBodyInterface[TRow] = {
     val __obj = js.Dynamic.literal(getFieldValue = js.Any.fromFunction0(getFieldValue))
-  
     __obj.asInstanceOf[ModalBodyInterface[TRow]]
   }
 }

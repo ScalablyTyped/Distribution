@@ -12,7 +12,6 @@ object DeleteGroupParameters {
   @scala.inline
   def apply(channelGroup: String): DeleteGroupParameters = {
     val __obj = js.Dynamic.literal(channelGroup = channelGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGroupParameters]
   }
 }

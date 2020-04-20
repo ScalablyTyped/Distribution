@@ -31,7 +31,6 @@ object _DangerousChangeType {
     VALUE_ADDED_TO_ENUM: VALUE_ADDED_TO_ENUM
   ): _DangerousChangeType = {
     val __obj = js.Dynamic.literal(ARG_DEFAULT_VALUE_CHANGE = ARG_DEFAULT_VALUE_CHANGE.asInstanceOf[js.Any], INTERFACE_ADDED_TO_OBJECT = INTERFACE_ADDED_TO_OBJECT.asInstanceOf[js.Any], OPTIONAL_ARG_ADDED = OPTIONAL_ARG_ADDED.asInstanceOf[js.Any], OPTIONAL_INPUT_FIELD_ADDED = OPTIONAL_INPUT_FIELD_ADDED.asInstanceOf[js.Any], TYPE_ADDED_TO_UNION = TYPE_ADDED_TO_UNION.asInstanceOf[js.Any], VALUE_ADDED_TO_ENUM = VALUE_ADDED_TO_ENUM.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_DangerousChangeType]
   }
 }

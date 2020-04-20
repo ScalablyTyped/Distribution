@@ -13,12 +13,10 @@ trait ListeningState extends js.Object
 
 object ListeningState {
   @scala.inline
-  def active: typings.std.stdStrings.active = this.cast("active")
+  def active: typings.std.stdStrings.active = "active".asInstanceOf[typings.std.stdStrings.active]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disambiguation: typings.std.stdStrings.disambiguation = "disambiguation".asInstanceOf[typings.std.stdStrings.disambiguation]
   @scala.inline
-  def disambiguation: typings.std.stdStrings.disambiguation = this.cast("disambiguation")
-  @scala.inline
-  def inactive: typings.std.stdStrings.inactive = this.cast("inactive")
+  def inactive: typings.std.stdStrings.inactive = "inactive".asInstanceOf[typings.std.stdStrings.inactive]
 }
 

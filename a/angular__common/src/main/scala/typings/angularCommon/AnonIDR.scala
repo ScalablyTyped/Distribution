@@ -28,7 +28,6 @@ object AnonIDR {
     XXX: js.Array[scala.Nothing]
   ): AnonIDR = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], IDR = IDR.asInstanceOf[js.Any], INR = INR.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIDR]
   }
 }

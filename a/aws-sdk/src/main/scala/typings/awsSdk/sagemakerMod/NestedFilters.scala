@@ -20,7 +20,6 @@ object NestedFilters {
   @scala.inline
   def apply(Filters: FilterList, NestedPropertyName: ResourcePropertyName): NestedFilters = {
     val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any], NestedPropertyName = NestedPropertyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NestedFilters]
   }
 }

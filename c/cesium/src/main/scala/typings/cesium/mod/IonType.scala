@@ -18,7 +18,6 @@ object IonType {
     getDefaultTokenCredit: String => Credit
   ): IonType = {
     val __obj = js.Dynamic.literal(defaultAccessToken = defaultAccessToken.asInstanceOf[js.Any], defaultServer = defaultServer.asInstanceOf[js.Any], getDefaultTokenCredit = js.Any.fromFunction1(getDefaultTokenCredit))
-  
     __obj.asInstanceOf[IonType]
   }
 }

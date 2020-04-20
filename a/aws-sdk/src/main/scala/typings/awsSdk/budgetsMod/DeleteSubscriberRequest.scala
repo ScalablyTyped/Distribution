@@ -28,7 +28,6 @@ object DeleteSubscriberRequest {
   @scala.inline
   def apply(AccountId: AccountId, BudgetName: BudgetName, Notification: Notification, Subscriber: Subscriber): DeleteSubscriberRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], Subscriber = Subscriber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSubscriberRequest]
   }
 }

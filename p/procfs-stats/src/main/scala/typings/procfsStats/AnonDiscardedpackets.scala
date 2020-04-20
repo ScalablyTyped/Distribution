@@ -12,7 +12,7 @@ object AnonDiscardedpackets {
   @scala.inline
   def apply(`Discarded packets`: String): AnonDiscardedpackets = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Discarded packets")(`Discarded packets`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Discarded packets")((`Discarded packets`).asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonDiscardedpackets]
   }
 }

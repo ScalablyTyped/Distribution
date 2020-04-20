@@ -2,7 +2,7 @@ package typings.childProcessPromise
 
 import typings.childProcessPromise.childProcessPromiseStrings.stderr
 import typings.childProcessPromise.childProcessPromiseStrings.stdout
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait ReadonlyOptionsExecFileOpCwd extends js.Object {
   ] = js.undefined
   val cwd: js.UndefOr[String] = js.undefined
   val encoding: String
-  val env: js.UndefOr[ProcessEnv] = js.undefined
+  val env: js.UndefOr[Dict[String]] = js.undefined
   val gid: js.UndefOr[Double] = js.undefined
   val killSignal: js.UndefOr[Signals | Double] = js.undefined
   val maxBuffer: js.UndefOr[Double] = js.undefined
@@ -33,7 +33,7 @@ object ReadonlyOptionsExecFileOpCwd {
     encoding: String,
     capture: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout]) = null,
     cwd: String = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,

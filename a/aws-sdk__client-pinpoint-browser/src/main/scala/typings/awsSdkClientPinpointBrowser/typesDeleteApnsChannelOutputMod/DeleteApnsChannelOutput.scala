@@ -23,7 +23,6 @@ object DeleteApnsChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, APNSChannelResponse: UnmarshalledAPNSChannelResponse): DeleteApnsChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSChannelResponse = APNSChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApnsChannelOutput]
   }
 }

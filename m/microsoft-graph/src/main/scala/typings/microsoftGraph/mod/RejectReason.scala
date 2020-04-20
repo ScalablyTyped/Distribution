@@ -15,14 +15,12 @@ trait RejectReason extends js.Object
 
 object RejectReason {
   @scala.inline
-  def busy: typings.microsoftGraph.microsoftGraphStrings.busy = this.cast("busy")
+  def busy: typings.microsoftGraph.microsoftGraphStrings.busy = "busy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.busy]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def forbidden: typings.microsoftGraph.microsoftGraphStrings.forbidden = "forbidden".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.forbidden]
   @scala.inline
-  def forbidden: typings.microsoftGraph.microsoftGraphStrings.forbidden = this.cast("forbidden")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

@@ -22,7 +22,6 @@ object AnonCanceled {
     moved: (Double, Boolean) => String
   ): AnonCanceled = {
     val __obj = js.Dynamic.literal(canceled = js.Any.fromFunction1(canceled), dropped = js.Any.fromFunction2(dropped), item = js.Any.fromFunction1(item), lifted = js.Any.fromFunction1(lifted), moved = js.Any.fromFunction2(moved))
-  
     __obj.asInstanceOf[AnonCanceled]
   }
 }

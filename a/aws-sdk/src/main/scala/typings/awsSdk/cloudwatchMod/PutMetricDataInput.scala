@@ -20,7 +20,6 @@ object PutMetricDataInput {
   @scala.inline
   def apply(MetricData: MetricData, Namespace: Namespace): PutMetricDataInput = {
     val __obj = js.Dynamic.literal(MetricData = MetricData.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutMetricDataInput]
   }
 }

@@ -14,7 +14,6 @@ object WindowSizeProps {
   @scala.inline
   def apply(children: AnonHeight => ReactNode): WindowSizeProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[WindowSizeProps]
   }
 }

@@ -13,7 +13,6 @@ object PickImplcreditCard {
   @scala.inline
   def apply(creditCard: String): PickImplcreditCard = {
     val __obj = js.Dynamic.literal(creditCard = creditCard.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcreditCard]
   }
 }

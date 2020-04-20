@@ -16,7 +16,6 @@ object Scte35Descriptor {
   @scala.inline
   def apply(Scte35DescriptorSettings: Scte35DescriptorSettings): Scte35Descriptor = {
     val __obj = js.Dynamic.literal(Scte35DescriptorSettings = Scte35DescriptorSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scte35Descriptor]
   }
 }

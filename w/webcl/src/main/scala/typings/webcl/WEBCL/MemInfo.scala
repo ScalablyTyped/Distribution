@@ -23,21 +23,19 @@ trait MemInfo extends js.Object
 
 object MemInfo {
   @scala.inline
-  def MEM_ASSOCIATED_MEMOBJECT: `0x1107` = this.cast(0x1107)
+  def MEM_ASSOCIATED_MEMOBJECT: `0x1107` = 0x1107.asInstanceOf[`0x1107`]
   //MEM_HOST_PTR                              = 0x1103, // disallowed
   //MEM_MAP_COUNT                             = 0x1104, // disallowed
   //MEM_REFERENCE_COUNT                       = 0x1105, // disallowed
   @scala.inline
-  def MEM_CONTEXT: `0x1106` = this.cast(0x1106)
+  def MEM_CONTEXT: `0x1106` = 0x1106.asInstanceOf[`0x1106`]
   @scala.inline
-  def MEM_FLAGS: `0x1101` = this.cast(0x1101)
+  def MEM_FLAGS: `0x1101` = 0x1101.asInstanceOf[`0x1101`]
   @scala.inline
-  def MEM_OFFSET: `0x1108` = this.cast(0x1108)
+  def MEM_OFFSET: `0x1108` = 0x1108.asInstanceOf[`0x1108`]
   @scala.inline
-  def MEM_SIZE: `0x1102` = this.cast(0x1102)
+  def MEM_SIZE: `0x1102` = 0x1102.asInstanceOf[`0x1102`]
   @scala.inline
-  def MEM_TYPE: `0x1100` = this.cast(0x1100)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MEM_TYPE: `0x1100` = 0x1100.asInstanceOf[`0x1100`]
 }
 

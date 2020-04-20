@@ -17,7 +17,6 @@ object UpdateApnsChannelRequest {
   @scala.inline
   def apply(APNSChannelRequest: APNSChannelRequest, ApplicationId: string): UpdateApnsChannelRequest = {
     val __obj = js.Dynamic.literal(APNSChannelRequest = APNSChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateApnsChannelRequest]
   }
 }

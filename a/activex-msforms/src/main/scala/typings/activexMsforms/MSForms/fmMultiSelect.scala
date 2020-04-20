@@ -16,12 +16,10 @@ trait fmMultiSelect extends js.Object
 
 object fmMultiSelect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmMultiSelectExtended: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fmMultiSelectExtended: `2` = this.cast(2)
+  def fmMultiSelectMulti: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmMultiSelectMulti: `1` = this.cast(1)
-  @scala.inline
-  def fmMultiSelectSingle: `0` = this.cast(0)
+  def fmMultiSelectSingle: `0` = 0.asInstanceOf[`0`]
 }
 

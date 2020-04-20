@@ -21,7 +21,6 @@ object RecommendedResource {
     rate: AnonRating => Request_[BooksVolumesRecommendedRateResponse]
   ): RecommendedResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), rate = js.Any.fromFunction1(rate))
-  
     __obj.asInstanceOf[RecommendedResource]
   }
 }

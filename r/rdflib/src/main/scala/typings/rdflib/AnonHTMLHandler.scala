@@ -25,7 +25,6 @@ object AnonHTMLHandler {
     XMLHandler: Handler
   ): AnonHTMLHandler = {
     val __obj = js.Dynamic.literal(HTMLHandler = HTMLHandler.asInstanceOf[js.Any], N3Handler = N3Handler.asInstanceOf[js.Any], RDFXMLHandler = RDFXMLHandler.asInstanceOf[js.Any], TextHandler = TextHandler.asInstanceOf[js.Any], XHTMLHandler = XHTMLHandler.asInstanceOf[js.Any], XMLHandler = XMLHandler.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHTMLHandler]
   }
 }

@@ -22,7 +22,6 @@ object FileTreeNode {
     name: String
   ): FileTreeNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], fullPath = fullPath.asInstanceOf[js.Any], isExpanded = isExpanded.asInstanceOf[js.Any], isFile = isFile.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileTreeNode]
   }
 }

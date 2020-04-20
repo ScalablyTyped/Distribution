@@ -18,7 +18,6 @@ object IViewportOwnerLike {
   @scala.inline
   def apply(viewport: IViewportLike): IViewportOwnerLike = {
     val __obj = js.Dynamic.literal(viewport = viewport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IViewportOwnerLike]
   }
 }

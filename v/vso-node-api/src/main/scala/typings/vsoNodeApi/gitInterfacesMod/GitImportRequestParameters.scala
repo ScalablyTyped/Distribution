@@ -32,7 +32,6 @@ object GitImportRequestParameters {
     tfvcSource: GitImportTfvcSource
   ): GitImportRequestParameters = {
     val __obj = js.Dynamic.literal(deleteServiceEndpointAfterImportIsDone = deleteServiceEndpointAfterImportIsDone.asInstanceOf[js.Any], gitSource = gitSource.asInstanceOf[js.Any], serviceEndpointId = serviceEndpointId.asInstanceOf[js.Any], tfvcSource = tfvcSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitImportRequestParameters]
   }
 }

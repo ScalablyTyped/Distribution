@@ -32,28 +32,26 @@ trait OlSaveAsType extends js.Object
 
 object OlSaveAsType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olDoc: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olDoc: `4` = this.cast(4)
+  def olHTML: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olHTML: `5` = this.cast(5)
+  def olICal: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olICal: `8` = this.cast(8)
+  def olMHTML: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def olMHTML: `10` = this.cast(10)
+  def olMSG: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olMSG: `3` = this.cast(3)
+  def olMSGUnicode: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def olMSGUnicode: `9` = this.cast(9)
+  def olRTF: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olRTF: `1` = this.cast(1)
+  def olTXT: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olTXT: `0` = this.cast(0)
+  def olTemplate: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olTemplate: `2` = this.cast(2)
+  def olVCal: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olVCal: `7` = this.cast(7)
-  @scala.inline
-  def olVCard: `6` = this.cast(6)
+  def olVCard: `6` = 6.asInstanceOf[`6`]
 }
 

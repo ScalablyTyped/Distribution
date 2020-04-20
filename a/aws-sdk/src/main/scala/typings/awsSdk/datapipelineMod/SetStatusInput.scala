@@ -24,7 +24,6 @@ object SetStatusInput {
   @scala.inline
   def apply(objectIds: idList, pipelineId: id, status: String): SetStatusInput = {
     val __obj = js.Dynamic.literal(objectIds = objectIds.asInstanceOf[js.Any], pipelineId = pipelineId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetStatusInput]
   }
 }

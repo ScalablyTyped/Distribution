@@ -19,7 +19,6 @@ object AnonFull {
   @scala.inline
   def apply(compact: String, full: String): AnonFull = {
     val __obj = js.Dynamic.literal(compact = compact.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFull]
   }
 }

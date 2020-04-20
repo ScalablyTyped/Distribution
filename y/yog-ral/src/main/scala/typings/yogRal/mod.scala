@@ -5,6 +5,7 @@ import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.nodeRal.mod.BalanceContextConstructor
 import typings.nodeRal.mod.LoggerFactory
 import typings.nodeRal.mod.Service
@@ -38,13 +39,13 @@ object mod extends js.Object {
   val Config: typings.nodeRal.mod.Config = js.native
   val Logger: LoggerFactory = js.native
   def Middleware(): js.Function3[
-    /* req */ Request_[ParamsDictionary], 
+    /* req */ Request_[ParamsDictionary, _, _, Query], 
     /* resp */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native
   def Middleware(options: Service): js.Function3[
-    /* req */ Request_[ParamsDictionary], 
+    /* req */ Request_[ParamsDictionary, _, _, Query], 
     /* resp */ Response_[_], 
     /* next */ NextFunction, 
     Unit

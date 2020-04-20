@@ -12,10 +12,10 @@ trait FuseOptions[T] extends js.Object {
   var distance: js.UndefOr[Double] = js.undefined
   var findAllMatches: js.UndefOr[Boolean] = js.undefined
   var getFn: js.UndefOr[js.Function2[/* obj */ js.Any, /* path */ String, _]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[/* keyof T */ String] = js.undefined
   var includeMatches: js.UndefOr[Boolean] = js.undefined
   var includeScore: js.UndefOr[Boolean] = js.undefined
-  var keys: js.UndefOr[js.Array[AnonName[T] | String]] = js.undefined
+  var keys: js.UndefOr[js.Array[AnonName[T] | (/* keyof T */ String)]] = js.undefined
   var location: js.UndefOr[Double] = js.undefined
   var matchAllTokens: js.UndefOr[Boolean] = js.undefined
   var maxPatternLength: js.UndefOr[Double] = js.undefined
@@ -35,10 +35,10 @@ object FuseOptions {
     distance: Int | Double = null,
     findAllMatches: js.UndefOr[Boolean] = js.undefined,
     getFn: (/* obj */ js.Any, /* path */ String) => _ = null,
-    id: String = null,
+    id: /* keyof T */ String = null,
     includeMatches: js.UndefOr[Boolean] = js.undefined,
     includeScore: js.UndefOr[Boolean] = js.undefined,
-    keys: js.Array[AnonName[T] | String] = null,
+    keys: js.Array[AnonName[T] | (/* keyof T */ String)] = null,
     location: Int | Double = null,
     matchAllTokens: js.UndefOr[Boolean] = js.undefined,
     maxPatternLength: Int | Double = null,

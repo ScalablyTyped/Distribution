@@ -16,7 +16,6 @@ object DestinationSchema {
   @scala.inline
   def apply(RecordFormatType: RecordFormatType): DestinationSchema = {
     val __obj = js.Dynamic.literal(RecordFormatType = RecordFormatType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DestinationSchema]
   }
 }

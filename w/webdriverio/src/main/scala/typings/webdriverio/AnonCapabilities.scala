@@ -13,7 +13,6 @@ object AnonCapabilities {
   @scala.inline
   def apply(capabilities: DesiredCapabilities): AnonCapabilities = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCapabilities]
   }
 }

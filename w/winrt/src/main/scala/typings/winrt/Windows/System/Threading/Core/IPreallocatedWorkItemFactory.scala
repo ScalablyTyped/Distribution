@@ -21,7 +21,6 @@ object IPreallocatedWorkItemFactory {
     createWorkItemWithPriorityAndOptions: (WorkItemHandler, WorkItemPriority, WorkItemOptions) => PreallocatedWorkItem
   ): IPreallocatedWorkItemFactory = {
     val __obj = js.Dynamic.literal(createWorkItem = js.Any.fromFunction1(createWorkItem), createWorkItemWithPriority = js.Any.fromFunction2(createWorkItemWithPriority), createWorkItemWithPriorityAndOptions = js.Any.fromFunction3(createWorkItemWithPriorityAndOptions))
-  
     __obj.asInstanceOf[IPreallocatedWorkItemFactory]
   }
 }

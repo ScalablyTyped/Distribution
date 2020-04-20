@@ -21,7 +21,6 @@ object AdMedia {
     newVideoBuilder: () => VideoBuilder[Media]
   ): AdMedia = {
     val __obj = js.Dynamic.literal(media = js.Any.fromFunction0(media), newImageBuilder = js.Any.fromFunction0(newImageBuilder), newMediaBundleBuilder = js.Any.fromFunction0(newMediaBundleBuilder), newVideoBuilder = js.Any.fromFunction0(newVideoBuilder))
-  
     __obj.asInstanceOf[AdMedia]
   }
 }

@@ -23,32 +23,30 @@ trait GridSize extends js.Object
 
 object GridSize {
   @scala.inline
-  def `1`: typings.materialUiCore.materialUiCoreNumbers.`1` = this.cast(1)
+  def `1`: typings.materialUiCore.materialUiCoreNumbers.`1` = 1.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`1`]
   @scala.inline
-  def `10`: typings.materialUiCore.materialUiCoreNumbers.`10` = this.cast(10)
+  def `10`: typings.materialUiCore.materialUiCoreNumbers.`10` = 10.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`10`]
   @scala.inline
-  def `11`: typings.materialUiCore.materialUiCoreNumbers.`11` = this.cast(11)
+  def `11`: typings.materialUiCore.materialUiCoreNumbers.`11` = 11.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`11`]
   @scala.inline
-  def `12`: typings.materialUiCore.materialUiCoreNumbers.`12` = this.cast(12)
+  def `12`: typings.materialUiCore.materialUiCoreNumbers.`12` = 12.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`12`]
   @scala.inline
-  def `2`: typings.materialUiCore.materialUiCoreNumbers.`2` = this.cast(2)
+  def `2`: typings.materialUiCore.materialUiCoreNumbers.`2` = 2.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`2`]
   @scala.inline
-  def `3`: typings.materialUiCore.materialUiCoreNumbers.`3` = this.cast(3)
+  def `3`: typings.materialUiCore.materialUiCoreNumbers.`3` = 3.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`3`]
   @scala.inline
-  def `4`: typings.materialUiCore.materialUiCoreNumbers.`4` = this.cast(4)
+  def `4`: typings.materialUiCore.materialUiCoreNumbers.`4` = 4.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`4`]
   @scala.inline
-  def `5`: typings.materialUiCore.materialUiCoreNumbers.`5` = this.cast(5)
+  def `5`: typings.materialUiCore.materialUiCoreNumbers.`5` = 5.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`5`]
   @scala.inline
-  def `6`: typings.materialUiCore.materialUiCoreNumbers.`6` = this.cast(6)
+  def `6`: typings.materialUiCore.materialUiCoreNumbers.`6` = 6.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`6`]
   @scala.inline
-  def `7`: typings.materialUiCore.materialUiCoreNumbers.`7` = this.cast(7)
+  def `7`: typings.materialUiCore.materialUiCoreNumbers.`7` = 7.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`7`]
   @scala.inline
-  def `8`: typings.materialUiCore.materialUiCoreNumbers.`8` = this.cast(8)
+  def `8`: typings.materialUiCore.materialUiCoreNumbers.`8` = 8.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`8`]
   @scala.inline
-  def `9`: typings.materialUiCore.materialUiCoreNumbers.`9` = this.cast(9)
+  def `9`: typings.materialUiCore.materialUiCoreNumbers.`9` = 9.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`9`]
   @scala.inline
-  def auto: typings.materialUiCore.materialUiCoreStrings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def auto: typings.materialUiCore.materialUiCoreStrings.auto = "auto".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.auto]
 }
 

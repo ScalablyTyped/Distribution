@@ -19,24 +19,22 @@ trait ExceptionType extends js.Object
 
 object ExceptionType {
   @scala.inline
-  def abort: typings.fridaGum.fridaGumStrings.abort = this.cast("abort")
+  def abort: typings.fridaGum.fridaGumStrings.abort = "abort".asInstanceOf[typings.fridaGum.fridaGumStrings.abort]
   @scala.inline
-  def `access-violation`: typings.fridaGum.fridaGumStrings.`access-violation` = this.cast("access-violation")
+  def `access-violation`: typings.fridaGum.fridaGumStrings.`access-violation` = "access-violation".asInstanceOf[typings.fridaGum.fridaGumStrings.`access-violation`]
   @scala.inline
-  def arithmetic: typings.fridaGum.fridaGumStrings.arithmetic = this.cast("arithmetic")
+  def arithmetic: typings.fridaGum.fridaGumStrings.arithmetic = "arithmetic".asInstanceOf[typings.fridaGum.fridaGumStrings.arithmetic]
   @scala.inline
-  def breakpoint: typings.fridaGum.fridaGumStrings.breakpoint = this.cast("breakpoint")
+  def breakpoint: typings.fridaGum.fridaGumStrings.breakpoint = "breakpoint".asInstanceOf[typings.fridaGum.fridaGumStrings.breakpoint]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `guard-page`: typings.fridaGum.fridaGumStrings.`guard-page` = "guard-page".asInstanceOf[typings.fridaGum.fridaGumStrings.`guard-page`]
   @scala.inline
-  def `guard-page`: typings.fridaGum.fridaGumStrings.`guard-page` = this.cast("guard-page")
+  def `illegal-instruction`: typings.fridaGum.fridaGumStrings.`illegal-instruction` = "illegal-instruction".asInstanceOf[typings.fridaGum.fridaGumStrings.`illegal-instruction`]
   @scala.inline
-  def `illegal-instruction`: typings.fridaGum.fridaGumStrings.`illegal-instruction` = this.cast("illegal-instruction")
+  def `single-step`: typings.fridaGum.fridaGumStrings.`single-step` = "single-step".asInstanceOf[typings.fridaGum.fridaGumStrings.`single-step`]
   @scala.inline
-  def `single-step`: typings.fridaGum.fridaGumStrings.`single-step` = this.cast("single-step")
+  def `stack-overflow`: typings.fridaGum.fridaGumStrings.`stack-overflow` = "stack-overflow".asInstanceOf[typings.fridaGum.fridaGumStrings.`stack-overflow`]
   @scala.inline
-  def `stack-overflow`: typings.fridaGum.fridaGumStrings.`stack-overflow` = this.cast("stack-overflow")
-  @scala.inline
-  def system: typings.fridaGum.fridaGumStrings.system = this.cast("system")
+  def system: typings.fridaGum.fridaGumStrings.system = "system".asInstanceOf[typings.fridaGum.fridaGumStrings.system]
 }
 

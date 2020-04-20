@@ -23,10 +23,10 @@ class RbmStandaloneCard () extends IRbmStandaloneCard {
   def this(properties: IRbmStandaloneCard) = this()
   /** RbmStandaloneCard cardOrientation. */
   @JSName("cardOrientation")
-  var cardOrientation_RbmStandaloneCard: CardOrientation | String = js.native
+  var cardOrientation_RbmStandaloneCard: CardOrientation | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation * / any */ String) = js.native
   /** RbmStandaloneCard thumbnailImageAlignment. */
   @JSName("thumbnailImageAlignment")
-  var thumbnailImageAlignment_RbmStandaloneCard: ThumbnailImageAlignment | String = js.native
+  var thumbnailImageAlignment_RbmStandaloneCard: ThumbnailImageAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment * / any */ String) = js.native
   /**
     * Converts this RbmStandaloneCard to JSON.
     * @returns JSON object

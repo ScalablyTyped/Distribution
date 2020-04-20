@@ -16,14 +16,12 @@ trait SingleAnimationFillMode
 
 object SingleAnimationFillMode {
   @scala.inline
-  def backwards: typings.csstype.csstypeStrings.backwards = this.cast("backwards")
+  def backwards: typings.csstype.csstypeStrings.backwards = "backwards".asInstanceOf[typings.csstype.csstypeStrings.backwards]
   @scala.inline
-  def both: typings.csstype.csstypeStrings.both = this.cast("both")
+  def both: typings.csstype.csstypeStrings.both = "both".asInstanceOf[typings.csstype.csstypeStrings.both]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def forwards: typings.csstype.csstypeStrings.forwards = "forwards".asInstanceOf[typings.csstype.csstypeStrings.forwards]
   @scala.inline
-  def forwards: typings.csstype.csstypeStrings.forwards = this.cast("forwards")
-  @scala.inline
-  def none: typings.csstype.csstypeStrings.none = this.cast("none")
+  def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
 }
 

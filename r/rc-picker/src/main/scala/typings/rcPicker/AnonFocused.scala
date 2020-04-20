@@ -13,7 +13,6 @@ object AnonFocused {
   @scala.inline
   def apply(focused: Boolean, typing: Boolean): AnonFocused = {
     val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any], typing = typing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFocused]
   }
 }

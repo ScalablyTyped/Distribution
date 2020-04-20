@@ -14,14 +14,12 @@ trait TypeaheadMenuPropsPick extends js.Object
 
 object TypeaheadMenuPropsPick {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def labelKey: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey = "labelKey".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey]
   @scala.inline
-  def labelKey: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey = this.cast("labelKey")
+  def newSelectionPrefix: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.newSelectionPrefix = "newSelectionPrefix".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.newSelectionPrefix]
   @scala.inline
-  def newSelectionPrefix: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.newSelectionPrefix = this.cast("newSelectionPrefix")
+  def options: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.options = "options".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.options]
   @scala.inline
-  def options: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.options = this.cast("options")
-  @scala.inline
-  def renderMenuItemChildren: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderMenuItemChildren = this.cast("renderMenuItemChildren")
+  def renderMenuItemChildren: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderMenuItemChildren = "renderMenuItemChildren".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderMenuItemChildren]
 }
 

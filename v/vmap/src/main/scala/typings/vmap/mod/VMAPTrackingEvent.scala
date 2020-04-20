@@ -25,7 +25,6 @@ object VMAPTrackingEvent {
   @scala.inline
   def apply(event: breakStart | breakEnd | error, uri: String): VMAPTrackingEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VMAPTrackingEvent]
   }
 }

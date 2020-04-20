@@ -22,7 +22,6 @@ object LeagueDto {
     tier: String
   ): LeagueDto = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], participantId = participantId.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], tier = tier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LeagueDto]
   }
 }

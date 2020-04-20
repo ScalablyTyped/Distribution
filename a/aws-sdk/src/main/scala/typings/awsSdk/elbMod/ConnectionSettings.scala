@@ -16,7 +16,6 @@ object ConnectionSettings {
   @scala.inline
   def apply(IdleTimeout: IdleTimeout): ConnectionSettings = {
     val __obj = js.Dynamic.literal(IdleTimeout = IdleTimeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionSettings]
   }
 }

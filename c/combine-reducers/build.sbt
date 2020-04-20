@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "combine-reducers"
-version := "1.0-dt-20190724Z-2157d9"
+version := "1.0-dt-20190724Z-44c416"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

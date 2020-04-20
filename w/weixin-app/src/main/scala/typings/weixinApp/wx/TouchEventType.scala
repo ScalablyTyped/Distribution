@@ -16,18 +16,16 @@ trait TouchEventType extends js.Object
 
 object TouchEventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def tap: typings.weixinApp.weixinAppStrings.tap = "tap".asInstanceOf[typings.weixinApp.weixinAppStrings.tap]
   @scala.inline
-  def tap: typings.weixinApp.weixinAppStrings.tap = this.cast("tap")
+  def touchcancel: typings.weixinApp.weixinAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.weixinApp.weixinAppStrings.touchcancel]
   @scala.inline
-  def touchcancel: typings.weixinApp.weixinAppStrings.touchcancel = this.cast("touchcancel")
+  def touchend: typings.weixinApp.weixinAppStrings.touchend = "touchend".asInstanceOf[typings.weixinApp.weixinAppStrings.touchend]
   @scala.inline
-  def touchend: typings.weixinApp.weixinAppStrings.touchend = this.cast("touchend")
+  def touchforcechange: typings.weixinApp.weixinAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.weixinApp.weixinAppStrings.touchforcechange]
   @scala.inline
-  def touchforcechange: typings.weixinApp.weixinAppStrings.touchforcechange = this.cast("touchforcechange")
+  def touchmove: typings.weixinApp.weixinAppStrings.touchmove = "touchmove".asInstanceOf[typings.weixinApp.weixinAppStrings.touchmove]
   @scala.inline
-  def touchmove: typings.weixinApp.weixinAppStrings.touchmove = this.cast("touchmove")
-  @scala.inline
-  def touchstart: typings.weixinApp.weixinAppStrings.touchstart = this.cast("touchstart")
+  def touchstart: typings.weixinApp.weixinAppStrings.touchstart = "touchstart".asInstanceOf[typings.weixinApp.weixinAppStrings.touchstart]
 }
 

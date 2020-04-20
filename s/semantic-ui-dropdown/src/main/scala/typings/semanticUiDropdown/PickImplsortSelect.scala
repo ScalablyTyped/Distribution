@@ -13,7 +13,6 @@ object PickImplsortSelect {
   @scala.inline
   def apply(sortSelect: Boolean): PickImplsortSelect = {
     val __obj = js.Dynamic.literal(sortSelect = sortSelect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsortSelect]
   }
 }

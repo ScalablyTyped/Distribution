@@ -37,7 +37,6 @@ object IntlCache {
     relativeTime: Record[String, typings.formatjsIntlRelativetimeformat.mod.default]
   ): IntlCache = {
     val __obj = js.Dynamic.literal(dateTime = dateTime.asInstanceOf[js.Any], displayNames = displayNames.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pluralRules = pluralRules.asInstanceOf[js.Any], relativeTime = relativeTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntlCache]
   }
 }

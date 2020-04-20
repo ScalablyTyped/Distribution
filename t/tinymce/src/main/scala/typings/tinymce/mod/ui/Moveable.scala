@@ -13,7 +13,6 @@ object Moveable {
   @scala.inline
   def apply(moveRel: (Node, String) => Control): Moveable = {
     val __obj = js.Dynamic.literal(moveRel = js.Any.fromFunction2(moveRel))
-  
     __obj.asInstanceOf[Moveable]
   }
 }

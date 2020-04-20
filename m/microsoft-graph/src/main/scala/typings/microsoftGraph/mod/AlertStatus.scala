@@ -17,18 +17,16 @@ trait AlertStatus extends js.Object
 
 object AlertStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dismissed: typings.microsoftGraph.microsoftGraphStrings.dismissed = "dismissed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dismissed]
   @scala.inline
-  def dismissed: typings.microsoftGraph.microsoftGraphStrings.dismissed = this.cast("dismissed")
+  def inProgress: typings.microsoftGraph.microsoftGraphStrings.inProgress = "inProgress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inProgress]
   @scala.inline
-  def inProgress: typings.microsoftGraph.microsoftGraphStrings.inProgress = this.cast("inProgress")
+  def newAlert: typings.microsoftGraph.microsoftGraphStrings.newAlert = "newAlert".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.newAlert]
   @scala.inline
-  def newAlert: typings.microsoftGraph.microsoftGraphStrings.newAlert = this.cast("newAlert")
+  def resolved: typings.microsoftGraph.microsoftGraphStrings.resolved = "resolved".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.resolved]
   @scala.inline
-  def resolved: typings.microsoftGraph.microsoftGraphStrings.resolved = this.cast("resolved")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

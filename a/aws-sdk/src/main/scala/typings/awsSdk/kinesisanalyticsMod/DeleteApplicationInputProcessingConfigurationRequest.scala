@@ -24,7 +24,6 @@ object DeleteApplicationInputProcessingConfigurationRequest {
   @scala.inline
   def apply(ApplicationName: ApplicationName, CurrentApplicationVersionId: ApplicationVersionId, InputId: Id): DeleteApplicationInputProcessingConfigurationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], InputId = InputId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApplicationInputProcessingConfigurationRequest]
   }
 }

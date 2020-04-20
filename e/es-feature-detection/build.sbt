@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "es-feature-detection"
-version := "2.0-dt-20181219Z-8e69f1"
+version := "2.0-dt-20181219Z-c0bb5e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

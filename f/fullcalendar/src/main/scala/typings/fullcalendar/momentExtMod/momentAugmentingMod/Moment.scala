@@ -21,7 +21,6 @@ object Moment {
     time: () => MomentExtDuration
   ): Moment = {
     val __obj = js.Dynamic.literal(hasTime = js.Any.fromFunction0(hasTime), stripTime = js.Any.fromFunction0(stripTime), stripZone = js.Any.fromFunction0(stripZone), time = js.Any.fromFunction0(time))
-  
     __obj.asInstanceOf[Moment]
   }
 }

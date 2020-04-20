@@ -20,7 +20,6 @@ object AnonData {
     styles: js.Array[String | js.Array[_]]
   ): AnonData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonData]
   }
 }

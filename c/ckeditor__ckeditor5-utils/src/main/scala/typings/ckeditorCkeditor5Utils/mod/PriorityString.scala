@@ -15,16 +15,14 @@ trait PriorityString extends js.Object
 
 object PriorityString {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.high = "high".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.high]
   @scala.inline
-  def high: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.high = this.cast("high")
+  def highest: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.highest = "highest".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.highest]
   @scala.inline
-  def highest: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.highest = this.cast("highest")
+  def low: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.low = "low".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.low]
   @scala.inline
-  def low: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.low = this.cast("low")
+  def lowest: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.lowest = "lowest".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.lowest]
   @scala.inline
-  def lowest: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.lowest = this.cast("lowest")
-  @scala.inline
-  def normal: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.normal = this.cast("normal")
+  def normal: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.normal = "normal".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.normal]
 }
 

@@ -16,7 +16,6 @@ object DescribeDatasetImportJobRequest {
   @scala.inline
   def apply(DatasetImportJobArn: Arn): DescribeDatasetImportJobRequest = {
     val __obj = js.Dynamic.literal(DatasetImportJobArn = DatasetImportJobArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDatasetImportJobRequest]
   }
 }

@@ -18,14 +18,12 @@ trait WdLayoutMode extends js.Object
 
 object WdLayoutMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdLayoutModeDefault: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdLayoutModeDefault: `0` = this.cast(0)
+  def wdLayoutModeGenko: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdLayoutModeGenko: `3` = this.cast(3)
+  def wdLayoutModeGrid: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdLayoutModeGrid: `1` = this.cast(1)
-  @scala.inline
-  def wdLayoutModeLineGrid: `2` = this.cast(2)
+  def wdLayoutModeLineGrid: `2` = 2.asInstanceOf[`2`]
 }
 

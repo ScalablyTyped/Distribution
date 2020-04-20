@@ -20,16 +20,14 @@ trait WdReferenceType extends js.Object
 
 object WdReferenceType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdRefTypeBookmark: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdRefTypeBookmark: `2` = this.cast(2)
+  def wdRefTypeEndnote: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdRefTypeEndnote: `4` = this.cast(4)
+  def wdRefTypeFootnote: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdRefTypeFootnote: `3` = this.cast(3)
+  def wdRefTypeHeading: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdRefTypeHeading: `1` = this.cast(1)
-  @scala.inline
-  def wdRefTypeNumberedItem: `0` = this.cast(0)
+  def wdRefTypeNumberedItem: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -14,10 +14,8 @@ trait XlSortMethod extends js.Object
 
 object XlSortMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlPinYin: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlPinYin: `1` = this.cast(1)
-  @scala.inline
-  def xlStroke: `2` = this.cast(2)
+  def xlStroke: `2` = 2.asInstanceOf[`2`]
 }
 

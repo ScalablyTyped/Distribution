@@ -25,7 +25,6 @@ object SignatureHelpItems {
     selectedItemIndex: Double
   ): SignatureHelpItems = {
     val __obj = js.Dynamic.literal(applicableSpan = applicableSpan.asInstanceOf[js.Any], argumentCount = argumentCount.asInstanceOf[js.Any], argumentIndex = argumentIndex.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], selectedItemIndex = selectedItemIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignatureHelpItems]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait EditorViewModelProperties extends js.Object {
   /**
-    * An array of string values which specifies what end users are allowed edit. For example, a feature layer with full editing privileges may be available. But you may only want the end user to have the ability to update existing features. Set the `allowedWorkflows` to only `update`.
+    * An array of string values which specifies what end users are allowed to edit. For example, a feature layer with full editing privileges may be available. But you may only want the end user to have the ability to update existing features. Set the `allowedWorkflows` to only `update`.
     *
     * Possible Value | Description
     * ---------------|------------

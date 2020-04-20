@@ -26,7 +26,6 @@ object Polyfill {
     XMLHttpRequest: PolyfillXMLHttpRequest
   ): Polyfill = {
     val __obj = js.Dynamic.literal(Blob = Blob.asInstanceOf[js.Any], Event = Event.asInstanceOf[js.Any], Fetch = Fetch.asInstanceOf[js.Any], File = File.asInstanceOf[js.Any], FileReader = FileReader.asInstanceOf[js.Any], ProgressEvent = ProgressEvent.asInstanceOf[js.Any], XMLHttpRequest = XMLHttpRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Polyfill]
   }
 }

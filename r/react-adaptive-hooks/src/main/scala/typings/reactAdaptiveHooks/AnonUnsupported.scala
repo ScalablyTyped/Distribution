@@ -13,7 +13,6 @@ object AnonUnsupported {
   @scala.inline
   def apply(unsupported: `true`): AnonUnsupported = {
     val __obj = js.Dynamic.literal(unsupported = unsupported.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUnsupported]
   }
 }

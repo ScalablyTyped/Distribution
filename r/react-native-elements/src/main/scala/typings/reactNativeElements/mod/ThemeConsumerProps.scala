@@ -13,7 +13,6 @@ object ThemeConsumerProps {
   @scala.inline
   def apply[T](children: ThemeProps[T] => ReactNode): ThemeConsumerProps[T] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[ThemeConsumerProps[T]]
   }
 }

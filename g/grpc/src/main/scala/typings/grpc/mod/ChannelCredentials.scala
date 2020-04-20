@@ -18,7 +18,6 @@ object ChannelCredentials {
   @scala.inline
   def apply(compose: CallCredentials => ChannelCredentials): ChannelCredentials = {
     val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose))
-  
     __obj.asInstanceOf[ChannelCredentials]
   }
 }

@@ -43,7 +43,6 @@ object MDCTabAdapter {
     setAttr: (String, String) => Unit
   ): MDCTabAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterEventHandler = js.Any.fromFunction2(deregisterEventHandler), hasClass = js.Any.fromFunction1(hasClass), registerEventHandler = js.Any.fromFunction2(registerEventHandler), removeClass = js.Any.fromFunction1(removeClass), setAttr = js.Any.fromFunction2(setAttr))
-  
     __obj.asInstanceOf[MDCTabAdapter]
   }
 }

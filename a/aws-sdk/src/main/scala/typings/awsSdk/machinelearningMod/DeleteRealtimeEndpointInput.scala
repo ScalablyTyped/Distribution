@@ -16,7 +16,6 @@ object DeleteRealtimeEndpointInput {
   @scala.inline
   def apply(MLModelId: EntityId): DeleteRealtimeEndpointInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRealtimeEndpointInput]
   }
 }

@@ -16,7 +16,6 @@ object CancelSimulationJobRequest {
   @scala.inline
   def apply(job: Arn): CancelSimulationJobRequest = {
     val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelSimulationJobRequest]
   }
 }

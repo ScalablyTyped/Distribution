@@ -22,30 +22,28 @@ trait QueryOperator extends js.Object
 
 object QueryOperator {
   @scala.inline
-  def CONTAINS: typings.servicenow.servicenowStrings.CONTAINS = this.cast("CONTAINS")
+  def CONTAINS: typings.servicenow.servicenowStrings.CONTAINS = "CONTAINS".asInstanceOf[typings.servicenow.servicenowStrings.CONTAINS]
   @scala.inline
-  def DOESNOTCONTAIN: typings.servicenow.servicenowStrings.DOESNOTCONTAIN = this.cast("DOESNOTCONTAIN")
+  def DOESNOTCONTAIN: typings.servicenow.servicenowStrings.DOESNOTCONTAIN = "DOESNOTCONTAIN".asInstanceOf[typings.servicenow.servicenowStrings.DOESNOTCONTAIN]
   @scala.inline
-  def ENDSWITH: typings.servicenow.servicenowStrings.ENDSWITH = this.cast("ENDSWITH")
+  def ENDSWITH: typings.servicenow.servicenowStrings.ENDSWITH = "ENDSWITH".asInstanceOf[typings.servicenow.servicenowStrings.ENDSWITH]
   @scala.inline
-  def Equalssign: typings.servicenow.servicenowStrings.Equalssign = this.cast("=")
+  def Equalssign: typings.servicenow.servicenowStrings.Equalssign = "=".asInstanceOf[typings.servicenow.servicenowStrings.Equalssign]
   @scala.inline
-  def ExclamationmarkEqualssign: typings.servicenow.servicenowStrings.ExclamationmarkEqualssign = this.cast("!=")
+  def ExclamationmarkEqualssign: typings.servicenow.servicenowStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.servicenow.servicenowStrings.ExclamationmarkEqualssign]
   @scala.inline
-  def Greaterthansign: typings.servicenow.servicenowStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.servicenow.servicenowStrings.Greaterthansign = ">".asInstanceOf[typings.servicenow.servicenowStrings.Greaterthansign]
   @scala.inline
-  def GreaterthansignEqualssign: typings.servicenow.servicenowStrings.GreaterthansignEqualssign = this.cast(">=")
+  def GreaterthansignEqualssign: typings.servicenow.servicenowStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.servicenow.servicenowStrings.GreaterthansignEqualssign]
   @scala.inline
-  def IN: typings.servicenow.servicenowStrings.IN = this.cast("IN")
+  def IN: typings.servicenow.servicenowStrings.IN = "IN".asInstanceOf[typings.servicenow.servicenowStrings.IN]
   @scala.inline
-  def INSTANCEOF: typings.servicenow.servicenowStrings.INSTANCEOF = this.cast("INSTANCEOF")
+  def INSTANCEOF: typings.servicenow.servicenowStrings.INSTANCEOF = "INSTANCEOF".asInstanceOf[typings.servicenow.servicenowStrings.INSTANCEOF]
   @scala.inline
-  def Lessthansign: typings.servicenow.servicenowStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.servicenow.servicenowStrings.Lessthansign = "<".asInstanceOf[typings.servicenow.servicenowStrings.Lessthansign]
   @scala.inline
-  def LessthansignEqualssign: typings.servicenow.servicenowStrings.LessthansignEqualssign = this.cast("<=")
+  def LessthansignEqualssign: typings.servicenow.servicenowStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.servicenow.servicenowStrings.LessthansignEqualssign]
   @scala.inline
-  def STARTSWITH: typings.servicenow.servicenowStrings.STARTSWITH = this.cast("STARTSWITH")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STARTSWITH: typings.servicenow.servicenowStrings.STARTSWITH = "STARTSWITH".asInstanceOf[typings.servicenow.servicenowStrings.STARTSWITH]
 }
 

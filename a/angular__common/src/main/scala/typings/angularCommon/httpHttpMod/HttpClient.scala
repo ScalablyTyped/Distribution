@@ -275,8 +275,8 @@ class HttpClient protected () extends js.Object {
     */
   def get(url: String, options: AnonParamsReportProgressBoolean): Observable_[HttpResponse[js.Object]] = js.native
   /**
-    * Constructs a `GET` request that interprets the body as an `ArrayBuffer` and returns the response in
-    *  an `ArrayBuffer`.
+    * Constructs a `GET` request that interprets the body as an `ArrayBuffer` and returns the
+    * response in an `ArrayBuffer`.
     *
     * @param url     The endpoint URL.
     * @param options The HTTP options to send with the request.
@@ -339,7 +339,8 @@ class HttpClient protected () extends js.Object {
   @JSName("get")
   def get_T[T](url: String): Observable_[T] = js.native
   /**
-    * Constructs a `GET` request that interprets the body as a JSON object and returns the full event stream.
+    * Constructs a `GET` request that interprets the body as a JSON object and returns the full event
+    * stream.
     *
     * @param url     The endpoint URL.
     * @param options The HTTP options to send with the request.
@@ -389,7 +390,8 @@ class HttpClient protected () extends js.Object {
     * @param url     The endpoint URL.
     * @param options The HTTP options to send with the request.
     *
-    * @return An `Observable` of all HttpEvents for the request, with the response body of type string.
+    * @return An `Observable` of all HttpEvents for the request, with the response body of type
+    *     string.
     */
   def head(url: String, options: AnonHeadersObserveParamsReportProgressResponseType): Observable_[HttpEvent[String]] = js.native
   /**
@@ -552,8 +554,8 @@ class HttpClient protected () extends js.Object {
   @JSName("jsonp")
   def jsonp_T[T](url: String, callbackParam: String): Observable_[T] = js.native
   /**
-    * Constructs an `OPTIONS` request that interprets the body as a JSON object and returns the response
-    * body as a JSON object.
+    * Constructs an `OPTIONS` request that interprets the body as a JSON object and returns the
+    * response body as a JSON object.
     *
     * @param url The endpoint URL.
     * @param options HTTP options.
@@ -681,8 +683,8 @@ class HttpClient protected () extends js.Object {
     */
   def options(url: String, options: AnonWithCredentialsBoolean): Observable_[HttpResponse[String]] = js.native
   /**
-    * Constructs an `OPTIONS` request that interprets the body as a JSON object and returns the response
-    * in a given type.
+    * Constructs an `OPTIONS` request that interprets the body as a JSON object and returns the
+    * response in a given type.
     *
     * @param url The endpoint URL.
     * @param options HTTP options.
@@ -952,7 +954,8 @@ class HttpClient protected () extends js.Object {
     */
   def post(url: String, body: js.Any, options: AnonHeadersObserveParamsReportProgress): Observable_[String] = js.native
   /**
-    * Constructs a `POST` request that interprets the body as a text string and returns the full event stream.
+    * Constructs a `POST` request that interprets the body as a text string and returns the full
+    * event stream.
     *
     * @param url The endpoint URL.
     * @param body The content to replace with.
@@ -970,7 +973,8 @@ class HttpClient protected () extends js.Object {
     * @param body The content to replace with.
     * @param options HTTP options
     *
-    * @return  An `Observable` of the `HTTPResponse` for the request, with the response body as an `ArrayBuffer`.
+    * @return  An `Observable` of the `HTTPResponse` for the request, with the response body as an
+    *     `ArrayBuffer`.
     */
   def post(
     url: String,
@@ -990,7 +994,8 @@ class HttpClient protected () extends js.Object {
     */
   def post(url: String, body: js.Any, options: AnonObserveParamsReportProgressResponseType): Observable_[HttpEvent[ArrayBuffer]] = js.native
   /**
-    * Constructs a POST request that interprets the body as a JSON object and returns the full event stream.
+    * Constructs a POST request that interprets the body as a JSON object and returns the full event
+    * stream.
     *
     * @param url The endpoint URL.
     * @param body The content to replace with.
@@ -1096,12 +1101,14 @@ class HttpClient protected () extends js.Object {
     * @param body The content to replace with.
     * @param options HTTP options
     *
-    * @return  An `Observable` of the `HTTPResponse` for the request, with a response body in the requested type.
+    * @return  An `Observable` of the `HTTPResponse` for the request, with a response body in the
+    *     requested type.
     */
   @JSName("post")
   def post_T[T](url: String, body: js.Any): Observable_[T] = js.native
   /**
-    * Constructs a POST request that interprets the body as a JSON object and returns the full event stream.
+    * Constructs a POST request that interprets the body as a JSON object and returns the full event
+    * stream.
     *
     * @param url The endpoint URL.
     * @param body The content to replace with.
@@ -1121,7 +1128,8 @@ class HttpClient protected () extends js.Object {
     * @param body The content to replace with.
     * @param options HTTP options
     *
-    * @return An `Observable` of the `HTTPResponse` for the request, with a response body in the requested type.
+    * @return An `Observable` of the `HTTPResponse` for the request, with a response body in the
+    *     requested type.
     */
   @JSName("post")
   def post_T[T](url: String, body: js.Any, options: AnonParamsReportProgressBoolean): Observable_[HttpResponse[T]] = js.native
@@ -1157,7 +1165,8 @@ class HttpClient protected () extends js.Object {
     */
   def put(url: String, body: js.Any, options: AnonHeadersObserveParamsReportProgress): Observable_[String] = js.native
   /**
-    * Constructs a `PUT` request that interprets the body as a text string and returns the full event stream.
+    * Constructs a `PUT` request that interprets the body as a text string and returns the full event
+    * stream.
     *
     * @param url The endpoint URL.
     * @param body The resources to add/update.
@@ -1175,7 +1184,8 @@ class HttpClient protected () extends js.Object {
     * @param body The resources to add/update.
     * @param options HTTP options
     *
-    * @return An `Observable` of the `HTTPResponse` for the request, with the response body as an `ArrayBuffer`.
+    * @return An `Observable` of the `HTTPResponse` for the request, with the response body as an
+    *     `ArrayBuffer`.
     */
   def put(
     url: String,
@@ -1195,7 +1205,8 @@ class HttpClient protected () extends js.Object {
     */
   def put(url: String, body: js.Any, options: AnonObserveParamsReportProgressResponseType): Observable_[HttpEvent[ArrayBuffer]] = js.native
   /**
-    * Constructs a `PUT` request that interprets the body as a JSON object and returns the full event stream.
+    * Constructs a `PUT` request that interprets the body as a JSON object and returns the full event
+    * stream.
     *
     * @param url The endpoint URL.
     * @param body The resources to add/update.
@@ -1206,7 +1217,8 @@ class HttpClient protected () extends js.Object {
     */
   def put(url: String, body: js.Any, options: AnonObserveParamsReportProgressResponseTypeWithCredentials): Observable_[HttpEvent[js.Object]] = js.native
   /**
-    * Constructs a `PUT` request that interprets the body as a JSON object and returns the full HTTP response.
+    * Constructs a `PUT` request that interprets the body as a JSON object and returns the full HTTP
+    * response.
     *
     * @param url The endpoint URL.
     * @param body The resources to add/update.
@@ -1228,7 +1240,8 @@ class HttpClient protected () extends js.Object {
     */
   def put(url: String, body: js.Any, options: AnonParamsReportProgressResponseType): Observable_[ArrayBuffer] = js.native
   /**
-    * Constructs a `PUT` request that interprets the body as a `Blob` and returns the full event stream.
+    * Constructs a `PUT` request that interprets the body as a `Blob` and returns the full event
+    * stream.
     *
     * @param url The endpoint URL.
     * @param body The resources to add/update.
@@ -1270,7 +1283,8 @@ class HttpClient protected () extends js.Object {
     * @param body The resources to add/update.
     * @param options HTTP options
     *
-    * @return An `Observable` of the `HTTPResponse` for the request, with a response body of type string.
+    * @return An `Observable` of the `HTTPResponse` for the request, with a response body of type
+    *     string.
     */
   def put(url: String, body: js.Any, options: AnonWithCredentialsBoolean): Observable_[HttpResponse[String]] = js.native
   def put(url: String, body: Null, options: AnonHeadersObserveParamsReportProgress): Observable_[String] = js.native
@@ -1312,12 +1326,14 @@ class HttpClient protected () extends js.Object {
     * @param body The resources to add/update.
     * @param options HTTP options
     *
-    * @return An `Observable` of the `HTTPResponse` for the request, with a response body in the requested type.
+    * @return An `Observable` of the `HTTPResponse` for the request, with a response body in the
+    *     requested type.
     */
   @JSName("put")
   def put_T[T](url: String, body: js.Any): Observable_[T] = js.native
   /**
-    * Constructs a `PUT` request that interprets the body as a JSON object and returns the full HTTP response.
+    * Constructs a `PUT` request that interprets the body as a JSON object and returns the full HTTP
+    * response.
     *
     * @param url The endpoint URL.
     * @param body The resources to add/update.
@@ -1367,7 +1383,8 @@ class HttpClient protected () extends js.Object {
     */
   def request(method: String, url: String, options: AnonBodyHeaders): Observable_[HttpEvent[Blob]] = js.native
   /**
-    * Constructs a request which interprets the body as a JSON object and returns the full `HTTPResponse`.
+    * Constructs a request which interprets the body as a JSON object and returns the full
+    * `HTTPResponse`.
     *
     * @param method  The HTTP method.
     * @param url     The endpoint URL.
@@ -1378,7 +1395,8 @@ class HttpClient protected () extends js.Object {
     */
   def request(method: String, url: String, options: AnonBodyHeadersObserve): Observable_[HttpResponse[js.Object]] = js.native
   /**
-    * Constructs a request which interprets the body as a text string and returns the full event stream.
+    * Constructs a request which interprets the body as a text string and returns the full event
+    * stream.
     *
     * @param method  The HTTP method.
     * @param url     The endpoint URL.
@@ -1390,8 +1408,8 @@ class HttpClient protected () extends js.Object {
   def request(method: String, url: String, options: AnonHeadersObserve): Observable_[HttpEvent[String]] = js.native
   def request(method: String, url: String, options: AnonHeadersObserveParams): Observable_[js.Object] = js.native
   /**
-    * Constructs a request that interprets the body as an `ArrayBuffer` and returns the response in an
-    * `ArrayBuffer`.
+    * Constructs a request that interprets the body as an `ArrayBuffer` and returns the response in
+    * an `ArrayBuffer`.
     *
     * @param method  The HTTP method.
     * @param url     The endpoint URL.
@@ -1402,7 +1420,8 @@ class HttpClient protected () extends js.Object {
     */
   def request(method: String, url: String, options: AnonObserve): Observable_[ArrayBuffer] = js.native
   /**
-    * Constructs a request which interprets the body as a JSON object and returns the full event stream.
+    * Constructs a request which interprets the body as a JSON object and returns the full event
+    * stream.
     *
     * @param method  The HTTP method.
     * @param url     The endpoint URL.
@@ -1457,7 +1476,8 @@ class HttpClient protected () extends js.Object {
     */
   def request(method: String, url: String, options: AnonResponseType): Observable_[String] = js.native
   /**
-    * Constructs a request which interprets the body as a text stream and returns the full `HTTPResponse`.
+    * Constructs a request which interprets the body as a text stream and returns the full
+    * `HTTPResponse`.
     *
     * @param method  The HTTP method.
     * @param url     The endpoint URL.
@@ -1474,7 +1494,8 @@ class HttpClient protected () extends js.Object {
     * @param url     The endpoint URL.
     * @param options The HTTP options to send with the request.
     *
-    * @return An `Observable` of the response, with the response body as an array of `HTTPEvents` for the
+    * @return An `Observable` of the response, with the response body as an array of `HTTPEvents` for
+    *     the
     * request.
     */
   def request(method: String, url: String, options: AnonWithCredentials): Observable_[HttpEvent[ArrayBuffer]] = js.native
@@ -1511,7 +1532,8 @@ class HttpClient protected () extends js.Object {
   @JSName("request")
   def request_R[R](method: String, url: String, options: AnonHeadersObserveParams): Observable_[R] = js.native
   /**
-    * Constructs a request which interprets the body as a JSON object and returns the full event stream.
+    * Constructs a request which interprets the body as a JSON object and returns the full event
+    * stream.
     *
     * @param method  The HTTP method.
     * @param url     The endpoint URL.

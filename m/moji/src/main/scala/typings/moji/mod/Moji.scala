@@ -20,7 +20,6 @@ object Moji {
     trim: () => Moji
   ): Moji = {
     val __obj = js.Dynamic.literal(convert = js.Any.fromFunction2(convert), filter = js.Any.fromFunction1(filter), reject = js.Any.fromFunction1(reject), trim = js.Any.fromFunction0(trim))
-  
     __obj.asInstanceOf[Moji]
   }
 }

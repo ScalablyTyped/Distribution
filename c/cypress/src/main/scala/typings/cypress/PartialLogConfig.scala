@@ -1,6 +1,7 @@
 package typings.cypress
 
-import typings.cypress.cypressMod.Cypress.ObjectLike
+import typings.cypress.mod.Cypress.ObjectLike
+import typings.jquery.JQuery_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

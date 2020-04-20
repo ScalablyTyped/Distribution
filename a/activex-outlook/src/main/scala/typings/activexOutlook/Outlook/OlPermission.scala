@@ -16,12 +16,10 @@ trait OlPermission extends js.Object
 
 object OlPermission {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olDoNotForward: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olDoNotForward: `1` = this.cast(1)
+  def olPermissionTemplate: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olPermissionTemplate: `2` = this.cast(2)
-  @scala.inline
-  def olUnrestricted: `0` = this.cast(0)
+  def olUnrestricted: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -13,7 +13,6 @@ object TimeZoneData {
   @scala.inline
   def apply(links: js.Array[String], zones: PackedTimeZones): TimeZoneData = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], zones = zones.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimeZoneData]
   }
 }

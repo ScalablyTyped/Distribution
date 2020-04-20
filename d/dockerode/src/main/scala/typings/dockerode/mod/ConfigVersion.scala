@@ -12,7 +12,6 @@ object ConfigVersion {
   @scala.inline
   def apply(Index: Double): ConfigVersion = {
     val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigVersion]
   }
 }

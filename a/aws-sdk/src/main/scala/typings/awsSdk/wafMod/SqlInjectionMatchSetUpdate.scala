@@ -20,7 +20,6 @@ object SqlInjectionMatchSetUpdate {
   @scala.inline
   def apply(Action: ChangeAction, SqlInjectionMatchTuple: SqlInjectionMatchTuple): SqlInjectionMatchSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], SqlInjectionMatchTuple = SqlInjectionMatchTuple.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SqlInjectionMatchSetUpdate]
   }
 }

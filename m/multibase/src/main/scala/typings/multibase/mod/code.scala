@@ -29,38 +29,36 @@ trait code extends js.Object
 
 object code {
   @scala.inline
-  def `0`: typings.multibase.multibaseStrings.`0` = this.cast("0")
+  def `0`: typings.multibase.multibaseStrings.`0` = "0".asInstanceOf[typings.multibase.multibaseStrings.`0`]
   @scala.inline
-  def `1`: typings.multibase.multibaseStrings.`1` = this.cast("1")
+  def `1`: typings.multibase.multibaseStrings.`1` = "1".asInstanceOf[typings.multibase.multibaseStrings.`1`]
   @scala.inline
-  def `7`: typings.multibase.multibaseStrings.`7` = this.cast("7")
+  def `7`: typings.multibase.multibaseStrings.`7` = "7".asInstanceOf[typings.multibase.multibaseStrings.`7`]
   @scala.inline
-  def `9`: typings.multibase.multibaseStrings.`9` = this.cast("9")
+  def `9`: typings.multibase.multibaseStrings.`9` = "9".asInstanceOf[typings.multibase.multibaseStrings.`9`]
   @scala.inline
-  def M: typings.multibase.multibaseStrings.M = this.cast("M")
+  def M: typings.multibase.multibaseStrings.M = "M".asInstanceOf[typings.multibase.multibaseStrings.M]
   @scala.inline
-  def U: typings.multibase.multibaseStrings.U = this.cast("U")
+  def U: typings.multibase.multibaseStrings.U = "U".asInstanceOf[typings.multibase.multibaseStrings.U]
   @scala.inline
-  def Z: typings.multibase.multibaseStrings.Z = this.cast("Z")
+  def Z: typings.multibase.multibaseStrings.Z = "Z".asInstanceOf[typings.multibase.multibaseStrings.Z]
   @scala.inline
-  def b: typings.multibase.multibaseStrings.b = this.cast("b")
+  def b: typings.multibase.multibaseStrings.b = "b".asInstanceOf[typings.multibase.multibaseStrings.b]
   @scala.inline
-  def c: typings.multibase.multibaseStrings.c = this.cast("c")
+  def c: typings.multibase.multibaseStrings.c = "c".asInstanceOf[typings.multibase.multibaseStrings.c]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def f: typings.multibase.multibaseStrings.f = "f".asInstanceOf[typings.multibase.multibaseStrings.f]
   @scala.inline
-  def f: typings.multibase.multibaseStrings.f = this.cast("f")
+  def h: typings.multibase.multibaseStrings.h = "h".asInstanceOf[typings.multibase.multibaseStrings.h]
   @scala.inline
-  def h: typings.multibase.multibaseStrings.h = this.cast("h")
+  def m: m_ = "m".asInstanceOf[m_]
   @scala.inline
-  def m: m_ = this.cast("m")
+  def t: typings.multibase.multibaseStrings.t = "t".asInstanceOf[typings.multibase.multibaseStrings.t]
   @scala.inline
-  def t: typings.multibase.multibaseStrings.t = this.cast("t")
+  def u: u_ = "u".asInstanceOf[u_]
   @scala.inline
-  def u: u_ = this.cast("u")
+  def v: typings.multibase.multibaseStrings.v = "v".asInstanceOf[typings.multibase.multibaseStrings.v]
   @scala.inline
-  def v: typings.multibase.multibaseStrings.v = this.cast("v")
-  @scala.inline
-  def z: z_ = this.cast("z")
+  def z: z_ = "z".asInstanceOf[z_]
 }
 

@@ -20,7 +20,6 @@ object AnonOnFieldClick {
     onFieldClick: Validator[js.Function1[/* knob */ KnobStoreKnob, Unit]]
   ): AnonOnFieldClick = {
     val __obj = js.Dynamic.literal(knobs = knobs.asInstanceOf[js.Any], onFieldChange = onFieldChange.asInstanceOf[js.Any], onFieldClick = onFieldClick.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnFieldClick]
   }
 }

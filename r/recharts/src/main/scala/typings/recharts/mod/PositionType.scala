@@ -28,42 +28,40 @@ trait PositionType extends js.Object
 
 object PositionType {
   @scala.inline
-  def bottom: typings.recharts.rechartsStrings.bottom = this.cast("bottom")
+  def bottom: typings.recharts.rechartsStrings.bottom = "bottom".asInstanceOf[typings.recharts.rechartsStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.recharts.rechartsStrings.center = "center".asInstanceOf[typings.recharts.rechartsStrings.center]
   @scala.inline
-  def center: typings.recharts.rechartsStrings.center = this.cast("center")
+  def end: typings.recharts.rechartsStrings.end = "end".asInstanceOf[typings.recharts.rechartsStrings.end]
   @scala.inline
-  def end: typings.recharts.rechartsStrings.end = this.cast("end")
+  def inside: typings.recharts.rechartsStrings.inside = "inside".asInstanceOf[typings.recharts.rechartsStrings.inside]
   @scala.inline
-  def inside: typings.recharts.rechartsStrings.inside = this.cast("inside")
+  def insideBottom: typings.recharts.rechartsStrings.insideBottom = "insideBottom".asInstanceOf[typings.recharts.rechartsStrings.insideBottom]
   @scala.inline
-  def insideBottom: typings.recharts.rechartsStrings.insideBottom = this.cast("insideBottom")
+  def insideBottomLeft: typings.recharts.rechartsStrings.insideBottomLeft = "insideBottomLeft".asInstanceOf[typings.recharts.rechartsStrings.insideBottomLeft]
   @scala.inline
-  def insideBottomLeft: typings.recharts.rechartsStrings.insideBottomLeft = this.cast("insideBottomLeft")
+  def insideBottomRight: typings.recharts.rechartsStrings.insideBottomRight = "insideBottomRight".asInstanceOf[typings.recharts.rechartsStrings.insideBottomRight]
   @scala.inline
-  def insideBottomRight: typings.recharts.rechartsStrings.insideBottomRight = this.cast("insideBottomRight")
+  def insideEnd: typings.recharts.rechartsStrings.insideEnd = "insideEnd".asInstanceOf[typings.recharts.rechartsStrings.insideEnd]
   @scala.inline
-  def insideEnd: typings.recharts.rechartsStrings.insideEnd = this.cast("insideEnd")
+  def insideLeft: typings.recharts.rechartsStrings.insideLeft = "insideLeft".asInstanceOf[typings.recharts.rechartsStrings.insideLeft]
   @scala.inline
-  def insideLeft: typings.recharts.rechartsStrings.insideLeft = this.cast("insideLeft")
+  def insideRight: typings.recharts.rechartsStrings.insideRight = "insideRight".asInstanceOf[typings.recharts.rechartsStrings.insideRight]
   @scala.inline
-  def insideRight: typings.recharts.rechartsStrings.insideRight = this.cast("insideRight")
+  def insideStart: typings.recharts.rechartsStrings.insideStart = "insideStart".asInstanceOf[typings.recharts.rechartsStrings.insideStart]
   @scala.inline
-  def insideStart: typings.recharts.rechartsStrings.insideStart = this.cast("insideStart")
+  def insideTop: typings.recharts.rechartsStrings.insideTop = "insideTop".asInstanceOf[typings.recharts.rechartsStrings.insideTop]
   @scala.inline
-  def insideTop: typings.recharts.rechartsStrings.insideTop = this.cast("insideTop")
+  def insideTopLeft: typings.recharts.rechartsStrings.insideTopLeft = "insideTopLeft".asInstanceOf[typings.recharts.rechartsStrings.insideTopLeft]
   @scala.inline
-  def insideTopLeft: typings.recharts.rechartsStrings.insideTopLeft = this.cast("insideTopLeft")
+  def insideTopRight: typings.recharts.rechartsStrings.insideTopRight = "insideTopRight".asInstanceOf[typings.recharts.rechartsStrings.insideTopRight]
   @scala.inline
-  def insideTopRight: typings.recharts.rechartsStrings.insideTopRight = this.cast("insideTopRight")
+  def left: typings.recharts.rechartsStrings.left = "left".asInstanceOf[typings.recharts.rechartsStrings.left]
   @scala.inline
-  def left: typings.recharts.rechartsStrings.left = this.cast("left")
+  def outside: typings.recharts.rechartsStrings.outside = "outside".asInstanceOf[typings.recharts.rechartsStrings.outside]
   @scala.inline
-  def outside: typings.recharts.rechartsStrings.outside = this.cast("outside")
+  def right: typings.recharts.rechartsStrings.right = "right".asInstanceOf[typings.recharts.rechartsStrings.right]
   @scala.inline
-  def right: typings.recharts.rechartsStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.recharts.rechartsStrings.top = this.cast("top")
+  def top: typings.recharts.rechartsStrings.top = "top".asInstanceOf[typings.recharts.rechartsStrings.top]
 }
 

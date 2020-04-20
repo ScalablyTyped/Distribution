@@ -20,12 +20,10 @@ trait SubmitMode extends js.Object
 
 object SubmitMode {
   @scala.inline
-  def Always: always = this.cast("always")
+  def Always: always = "always".asInstanceOf[always]
   @scala.inline
-  def Dirty: dirty = this.cast("dirty")
+  def Dirty: dirty = "dirty".asInstanceOf[dirty]
   @scala.inline
-  def Never: never = this.cast("never")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Never: never = "never".asInstanceOf[never]
 }
 

@@ -15,16 +15,14 @@ trait MSWebViewPermissionType extends js.Object
 
 object MSWebViewPermissionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def geolocation: typings.std.stdStrings.geolocation = "geolocation".asInstanceOf[typings.std.stdStrings.geolocation]
   @scala.inline
-  def geolocation: typings.std.stdStrings.geolocation = this.cast("geolocation")
+  def media: typings.std.stdStrings.media = "media".asInstanceOf[typings.std.stdStrings.media]
   @scala.inline
-  def media: typings.std.stdStrings.media = this.cast("media")
+  def pointerlock: typings.std.stdStrings.pointerlock = "pointerlock".asInstanceOf[typings.std.stdStrings.pointerlock]
   @scala.inline
-  def pointerlock: typings.std.stdStrings.pointerlock = this.cast("pointerlock")
+  def unlimitedIndexedDBQuota: typings.std.stdStrings.unlimitedIndexedDBQuota = "unlimitedIndexedDBQuota".asInstanceOf[typings.std.stdStrings.unlimitedIndexedDBQuota]
   @scala.inline
-  def unlimitedIndexedDBQuota: typings.std.stdStrings.unlimitedIndexedDBQuota = this.cast("unlimitedIndexedDBQuota")
-  @scala.inline
-  def webnotifications: typings.std.stdStrings.webnotifications = this.cast("webnotifications")
+  def webnotifications: typings.std.stdStrings.webnotifications = "webnotifications".asInstanceOf[typings.std.stdStrings.webnotifications]
 }
 

@@ -20,7 +20,6 @@ object Entities {
     encodeNonUTF: String => String
   ): Entities = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), encodeNonASCII = js.Any.fromFunction1(encodeNonASCII), encodeNonUTF = js.Any.fromFunction1(encodeNonUTF))
-  
     __obj.asInstanceOf[Entities]
   }
 }

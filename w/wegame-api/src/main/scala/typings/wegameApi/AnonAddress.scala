@@ -27,7 +27,6 @@ object AnonAddress {
   @scala.inline
   def apply(address: String, family: String, port: Double, size: Double): AnonAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddress]
   }
 }

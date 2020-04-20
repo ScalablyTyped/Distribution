@@ -17,7 +17,6 @@ object MessagesServices {
   @scala.inline
   def apply(mcsClient: McsClient, session: Session, syncClient: SyncClient): MessagesServices = {
     val __obj = js.Dynamic.literal(mcsClient = mcsClient.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], syncClient = syncClient.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessagesServices]
   }
 }

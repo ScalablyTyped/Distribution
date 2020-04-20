@@ -1,0 +1,25 @@
+package typings.titanium.Titanium
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+	 * Base event for class Titanium.Locale
+	 */
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ti.Event * / any */ trait LocaleBaseEvent extends js.Object {
+  /**
+  		 * Source object that fired the event.
+  		 */
+  var source: Locale
+}
+
+object LocaleBaseEvent {
+  @scala.inline
+  def apply(source: Locale): LocaleBaseEvent = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocaleBaseEvent]
+  }
+}
+

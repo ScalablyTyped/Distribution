@@ -35,7 +35,6 @@ object RecordCategoryNamestring {
     symbols: String
   ): RecordCategoryNamestring = {
     val __obj = js.Dynamic.literal(activity = activity.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], foods = foods.asInstanceOf[js.Any], nature = nature.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any], people = people.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], recent = recent.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordCategoryNamestring]
   }
 }

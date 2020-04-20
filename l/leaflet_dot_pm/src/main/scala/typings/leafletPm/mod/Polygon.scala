@@ -13,7 +13,6 @@ object Polygon {
   @scala.inline
   def apply(pm: Line): Polygon = {
     val __obj = js.Dynamic.literal(pm = pm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Polygon]
   }
 }

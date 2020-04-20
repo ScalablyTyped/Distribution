@@ -18,7 +18,6 @@ object AnonComponentInfo {
   @scala.inline
   def apply(componentInfo: ViewportComponentFullInfo, index: Double, parentMapUniqueKey: String): AnonComponentInfo = {
     val __obj = js.Dynamic.literal(componentInfo = componentInfo.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], parentMapUniqueKey = parentMapUniqueKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComponentInfo]
   }
 }

@@ -13,7 +13,6 @@ object SuppressionEntries {
   @scala.inline
   def apply(Suppressions: js.Array[AnonEmailAddress]): SuppressionEntries = {
     val __obj = js.Dynamic.literal(Suppressions = Suppressions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuppressionEntries]
   }
 }

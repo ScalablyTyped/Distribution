@@ -27,7 +27,6 @@ object FileSystem {
     stat: (String, Callback[typings.node.fsMod.Stats]) => Unit
   ): FileSystem = {
     val __obj = js.Dynamic.literal(lstat = js.Any.fromFunction2(lstat), readdir = js.Any.fromFunction2(readdir), stat = js.Any.fromFunction2(stat))
-  
     __obj.asInstanceOf[FileSystem]
   }
 }

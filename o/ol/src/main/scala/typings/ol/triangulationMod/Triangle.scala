@@ -14,7 +14,6 @@ object Triangle {
   @scala.inline
   def apply(source: js.Array[Coordinate], target: js.Array[Coordinate]): Triangle = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Triangle]
   }
 }

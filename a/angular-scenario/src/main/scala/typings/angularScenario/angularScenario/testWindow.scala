@@ -15,7 +15,6 @@ object testWindow {
   @scala.inline
   def apply(hash: () => Future, href: () => Future, path: () => Future, search: () => Future): testWindow = {
     val __obj = js.Dynamic.literal(hash = js.Any.fromFunction0(hash), href = js.Any.fromFunction0(href), path = js.Any.fromFunction0(path), search = js.Any.fromFunction0(search))
-  
     __obj.asInstanceOf[testWindow]
   }
 }

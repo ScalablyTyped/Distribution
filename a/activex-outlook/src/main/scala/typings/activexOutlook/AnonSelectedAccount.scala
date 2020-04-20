@@ -13,7 +13,6 @@ object AnonSelectedAccount {
   @scala.inline
   def apply(SelectedAccount: Account): AnonSelectedAccount = {
     val __obj = js.Dynamic.literal(SelectedAccount = SelectedAccount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelectedAccount]
   }
 }

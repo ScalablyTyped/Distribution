@@ -15,7 +15,6 @@ object breadcrumbProvider {
   @scala.inline
   def apply(setOptions: breadcrumbProviderOptions => Unit): breadcrumbProvider = {
     val __obj = js.Dynamic.literal(setOptions = js.Any.fromFunction1(setOptions))
-  
     __obj.asInstanceOf[breadcrumbProvider]
   }
 }

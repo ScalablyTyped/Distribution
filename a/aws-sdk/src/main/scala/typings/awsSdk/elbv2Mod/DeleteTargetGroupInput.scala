@@ -16,7 +16,6 @@ object DeleteTargetGroupInput {
   @scala.inline
   def apply(TargetGroupArn: TargetGroupArn): DeleteTargetGroupInput = {
     val __obj = js.Dynamic.literal(TargetGroupArn = TargetGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTargetGroupInput]
   }
 }

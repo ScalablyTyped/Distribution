@@ -17,7 +17,6 @@ object SubscriptionNotification {
   @scala.inline
   def apply(kind: SubscriptionNotificationKind, subscription: Subscription, timestamp: Date): SubscriptionNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscriptionNotification]
   }
 }

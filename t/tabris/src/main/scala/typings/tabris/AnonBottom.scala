@@ -1,0 +1,42 @@
+package typings.tabris
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AnonBottom extends js.Object {
+  /**
+    * The bottom part, in dip.
+    */
+  var bottom: js.UndefOr[Double] = js.undefined
+  /**
+    * The left part, in dip.
+    */
+  var left: js.UndefOr[Double] = js.undefined
+  /**
+    * The right part, in dip.
+    */
+  var right: js.UndefOr[Double] = js.undefined
+  /**
+    * The top part, in dip.
+    */
+  var top: js.UndefOr[Double] = js.undefined
+}
+
+object AnonBottom {
+  @scala.inline
+  def apply(
+    bottom: Int | Double = null,
+    left: Int | Double = null,
+    right: Int | Double = null,
+    top: Int | Double = null
+  ): AnonBottom = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnonBottom]
+  }
+}
+

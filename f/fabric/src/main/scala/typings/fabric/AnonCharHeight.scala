@@ -15,7 +15,6 @@ object AnonCharHeight {
   @scala.inline
   def apply(charHeight: Double, fontSize: String, left: String, top: String): AnonCharHeight = {
     val __obj = js.Dynamic.literal(charHeight = charHeight.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCharHeight]
   }
 }

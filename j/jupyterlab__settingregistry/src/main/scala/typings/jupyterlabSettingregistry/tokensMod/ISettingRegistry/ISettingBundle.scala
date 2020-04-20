@@ -26,7 +26,6 @@ object ISettingBundle {
   @scala.inline
   def apply(composite: PartialJSONObject, user: PartialJSONObject): ISettingBundle = {
     val __obj = js.Dynamic.literal(composite = composite.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISettingBundle]
   }
 }

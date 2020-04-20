@@ -14,7 +14,6 @@ object IAngularLoadService {
   @scala.inline
   def apply(loadCSS: String => IPromise[_], loadScript: String => IPromise[_]): IAngularLoadService = {
     val __obj = js.Dynamic.literal(loadCSS = js.Any.fromFunction1(loadCSS), loadScript = js.Any.fromFunction1(loadScript))
-  
     __obj.asInstanceOf[IAngularLoadService]
   }
 }

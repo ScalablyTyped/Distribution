@@ -14,7 +14,6 @@ object App {
   @scala.inline
   def apply(appId: String, options: InstallOptions, scope: InstallScope): App = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[App]
   }
 }

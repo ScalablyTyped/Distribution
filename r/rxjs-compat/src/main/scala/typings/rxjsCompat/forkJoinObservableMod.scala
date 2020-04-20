@@ -14,12 +14,12 @@ object forkJoinObservableMod extends js.Object {
   /* static members */
   @js.native
   object ForkJoinObservable extends js.Object {
-    def create[R](
-      sources: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any)*
+    def create[T](
+      sources: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any)*
     ): js.Any = js.native
-    def create[R](
+    def create[T](
       sources: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ _
         ]
     ): js.Any = js.native
     def create[R](
@@ -98,13 +98,13 @@ object forkJoinObservableMod extends js.Object {
       project: js.Function6[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, /* v6 */ T6, R]
     ): js.Any = js.native
     @JSName("create")
-    def create_T[T](
-      sources: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any)*
+    def create_R[R](
+      sources: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any)*
     ): js.Any = js.native
     @JSName("create")
-    def create_T[T](
+    def create_R[R](
       sources: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ _
         ]
     ): js.Any = js.native
     @JSName("create")

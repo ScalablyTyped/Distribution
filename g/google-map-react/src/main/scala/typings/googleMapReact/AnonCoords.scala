@@ -13,7 +13,6 @@ object AnonCoords {
   @scala.inline
   def apply(coords: Coords): AnonCoords = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCoords]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDocumentMetaProps {
   @scala.inline
-  def ReactDocumentMetaProps: DocumentMetaProps.type = typings.reactDocumentMeta.mod.DocumentMetaProps
+  def ReactDocumentMetaProps: DocumentMetaProps.type = DocumentMetaProps
   type ReactDocumentMetaProps = DocumentMetaProps
 }
 

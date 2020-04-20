@@ -13,12 +13,10 @@ trait ReconnectAdvice extends js.Object
 
 object ReconnectAdvice {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def handshake: typings.cometd.cometdStrings.handshake = "handshake".asInstanceOf[typings.cometd.cometdStrings.handshake]
   @scala.inline
-  def handshake: typings.cometd.cometdStrings.handshake = this.cast("handshake")
+  def none: typings.cometd.cometdStrings.none = "none".asInstanceOf[typings.cometd.cometdStrings.none]
   @scala.inline
-  def none: typings.cometd.cometdStrings.none = this.cast("none")
-  @scala.inline
-  def retry: typings.cometd.cometdStrings.retry = this.cast("retry")
+  def retry: typings.cometd.cometdStrings.retry = "retry".asInstanceOf[typings.cometd.cometdStrings.retry]
 }
 

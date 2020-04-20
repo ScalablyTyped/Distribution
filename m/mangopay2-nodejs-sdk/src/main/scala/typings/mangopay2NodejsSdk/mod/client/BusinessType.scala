@@ -14,14 +14,12 @@ trait BusinessType extends js.Object
 
 object BusinessType {
   @scala.inline
-  def CROWDFUNDING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING = this.cast("CROWDFUNDING")
+  def CROWDFUNDING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING = "CROWDFUNDING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING]
   @scala.inline
-  def FRANCHISE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRANCHISE = this.cast("FRANCHISE")
+  def FRANCHISE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRANCHISE = "FRANCHISE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRANCHISE]
   @scala.inline
-  def MARKETPLACE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE = this.cast("MARKETPLACE")
+  def MARKETPLACE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE = "MARKETPLACE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE]
   @scala.inline
-  def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = this.cast("OTHER")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
 }
 

@@ -13,7 +13,6 @@ object OnBeforeCellEditorDestroyEventArgs {
   @scala.inline
   def apply[T /* <: SlickData */](editor: Editor[T], grid: Grid[T]): OnBeforeCellEditorDestroyEventArgs[T] = {
     val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnBeforeCellEditorDestroyEventArgs[T]]
   }
 }

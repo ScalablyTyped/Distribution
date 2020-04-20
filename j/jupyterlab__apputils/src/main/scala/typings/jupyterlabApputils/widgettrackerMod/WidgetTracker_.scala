@@ -93,7 +93,7 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     * A signal emitted when the current widget changes.
     */
   @JSName("currentChanged")
-  def currentChanged_MWidgetTracker_(): ISignal[this.type, T | Null] = js.native
+  def currentChanged_MWidgetTracker_ : ISignal[this.type, T | Null] = js.native
   /**
     * The current widget is the most recently focused or added widget.
     *
@@ -102,7 +102,7 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     * widget if no widget has taken focus.
     */
   @JSName("currentWidget")
-  def currentWidget_MWidgetTracker_(): T | Null = js.native
+  def currentWidget_MWidgetTracker_ : T | Null = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -159,7 +159,7 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     * Test whether the tracker is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MWidgetTracker_(): Boolean = js.native
+  def isDisposed_MWidgetTracker_ : Boolean = js.native
   /* protected */ def onCurrentChanged(): Unit = js.native
   /**
     * Handle the current change event.
@@ -182,7 +182,7 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     * A promise resolved when the tracker has been restored.
     */
   @JSName("restored")
-  def restored_MWidgetTracker_(): js.Promise[Unit] = js.native
+  def restored_MWidgetTracker_ : js.Promise[Unit] = js.native
   /**
     * Save the restore data for a given widget.
     *
@@ -193,7 +193,7 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     * The number of widgets held by the tracker.
     */
   @JSName("size")
-  def size_MWidgetTracker_(): Double = js.native
+  def size_MWidgetTracker_ : Double = js.native
   /**
     * A signal emitted when a widget is added.
     *
@@ -202,11 +202,11 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     * not fire if a widget is injected into the tracker.
     */
   @JSName("widgetAdded")
-  def widgetAdded_MWidgetTracker_(): ISignal[this.type, T] = js.native
+  def widgetAdded_MWidgetTracker_ : ISignal[this.type, T] = js.native
   /**
     * A signal emitted when a widget is updated.
     */
   @JSName("widgetUpdated")
-  def widgetUpdated_MWidgetTracker_(): ISignal[this.type, T] = js.native
+  def widgetUpdated_MWidgetTracker_ : ISignal[this.type, T] = js.native
 }
 

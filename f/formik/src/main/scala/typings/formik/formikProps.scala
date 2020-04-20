@@ -12,10 +12,10 @@ trait formikProps {
   def ErrorMessageProps: typings.formik.errorMessageMod.ErrorMessageProps.type = typings.formik.errorMessageMod.ErrorMessageProps
   type ErrorMessageProps = typings.formik.errorMessageMod.ErrorMessageProps
   @scala.inline
-  def FieldArrayProps: FieldArrayConfig.type = typings.formik.fieldArrayMod.FieldArrayConfig
+  def FieldArrayProps: FieldArrayConfig.type = FieldArrayConfig
   type FieldArrayProps = FieldArrayConfig
   @scala.inline
-  def FormProps: PickDetailedHTMLPropsForm.type = typings.formik.PickDetailedHTMLPropsForm
+  def FormProps: PickDetailedHTMLPropsForm.type = PickDetailedHTMLPropsForm
   type FormProps = PickDetailedHTMLPropsForm
   type FormikConsumerProps[T] = ConsumerProps[T]
   type FormikProviderProps[T] = ProviderProps[T]

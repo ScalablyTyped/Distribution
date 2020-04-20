@@ -200,11 +200,6 @@ trait Configuration extends PlatformSpecificBuildOptions {
     */
   val productName: js.UndefOr[String | Null] = js.undefined
   /**
-    * Whether to fail if the application is not signed (to prevent unsigned app if code signing configuration is not correct).
-    * @default false
-    */
-  var readonly: js.UndefOr[Boolean] = js.undefined
-  /**
     * Whether to build using Electron Build Service if target not supported on current OS.
     * @default true
     */
@@ -291,7 +286,6 @@ object Configuration {
     productName: String = null,
     protocols: js.Array[Protocol] | Protocol = null,
     publish: Publish = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
     releaseInfo: ReleaseInfo = null,
     remoteBuild: js.UndefOr[Boolean] = js.undefined,
     removePackageScripts: js.UndefOr[Boolean] = js.undefined,
@@ -363,7 +357,6 @@ object Configuration {
     if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
     if (releaseInfo != null) __obj.updateDynamic("releaseInfo")(releaseInfo.asInstanceOf[js.Any])
     if (!js.isUndefined(remoteBuild)) __obj.updateDynamic("remoteBuild")(remoteBuild.asInstanceOf[js.Any])
     if (!js.isUndefined(removePackageScripts)) __obj.updateDynamic("removePackageScripts")(removePackageScripts.asInstanceOf[js.Any])

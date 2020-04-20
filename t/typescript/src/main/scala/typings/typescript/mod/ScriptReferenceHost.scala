@@ -20,7 +20,6 @@ object ScriptReferenceHost {
     getSourceFileByPath: Path => js.UndefOr[SourceFile]
   ): ScriptReferenceHost = {
     val __obj = js.Dynamic.literal(getCompilerOptions = js.Any.fromFunction0(getCompilerOptions), getCurrentDirectory = js.Any.fromFunction0(getCurrentDirectory), getSourceFile = js.Any.fromFunction1(getSourceFile), getSourceFileByPath = js.Any.fromFunction1(getSourceFileByPath))
-  
     __obj.asInstanceOf[ScriptReferenceHost]
   }
 }

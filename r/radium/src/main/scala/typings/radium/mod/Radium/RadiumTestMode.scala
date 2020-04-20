@@ -27,7 +27,6 @@ object RadiumTestMode {
   @scala.inline
   def apply(clearState: () => Unit, disable: () => Unit, enable: () => Unit): RadiumTestMode = {
     val __obj = js.Dynamic.literal(clearState = js.Any.fromFunction0(clearState), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
-  
     __obj.asInstanceOf[RadiumTestMode]
   }
 }

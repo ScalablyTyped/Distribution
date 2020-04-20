@@ -14,7 +14,6 @@ object Endpoint {
   @scala.inline
   def apply[T](finite: Boolean, inclusive: Boolean, value: T): Endpoint[T] = {
     val __obj = js.Dynamic.literal(finite = finite.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Endpoint[T]]
   }
 }

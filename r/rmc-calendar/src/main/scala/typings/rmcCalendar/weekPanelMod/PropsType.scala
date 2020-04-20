@@ -13,7 +13,6 @@ object PropsType {
   @scala.inline
   def apply(locale: Locale): PropsType = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PropsType]
   }
 }

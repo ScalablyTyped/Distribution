@@ -12,7 +12,6 @@ object BlockUIInstances {
   @scala.inline
   def apply(get: String => BlockUIService): BlockUIInstances = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[BlockUIInstances]
   }
 }

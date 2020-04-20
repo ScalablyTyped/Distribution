@@ -13,7 +13,6 @@ object RecyclerListener {
   @scala.inline
   def apply(onMovedToScrapHeap: View => Unit): RecyclerListener = {
     val __obj = js.Dynamic.literal(onMovedToScrapHeap = js.Any.fromFunction1(onMovedToScrapHeap))
-  
     __obj.asInstanceOf[RecyclerListener]
   }
 }

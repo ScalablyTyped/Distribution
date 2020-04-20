@@ -31,7 +31,6 @@ object KnockoutBindingHandlers {
     tooltip: KnockoutBindingHandler[_, _, _]
   ): KnockoutBindingHandlers = {
     val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any], carousel = carousel.asInstanceOf[js.Any], checkbox = checkbox.asInstanceOf[js.Any], modal = modal.asInstanceOf[js.Any], popover = popover.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
 }

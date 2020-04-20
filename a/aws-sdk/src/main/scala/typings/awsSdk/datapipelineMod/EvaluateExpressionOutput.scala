@@ -16,7 +16,6 @@ object EvaluateExpressionOutput {
   @scala.inline
   def apply(evaluatedExpression: longString): EvaluateExpressionOutput = {
     val __obj = js.Dynamic.literal(evaluatedExpression = evaluatedExpression.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EvaluateExpressionOutput]
   }
 }

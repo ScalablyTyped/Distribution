@@ -15,16 +15,14 @@ trait ChartDataFormats extends js.Object
 
 object ChartDataFormats {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def csv: typings.fusioncharts.fusionchartsStrings.csv = "csv".asInstanceOf[typings.fusioncharts.fusionchartsStrings.csv]
   @scala.inline
-  def csv: typings.fusioncharts.fusionchartsStrings.csv = this.cast("csv")
+  def json: typings.fusioncharts.fusionchartsStrings.json = "json".asInstanceOf[typings.fusioncharts.fusionchartsStrings.json]
   @scala.inline
-  def json: typings.fusioncharts.fusionchartsStrings.json = this.cast("json")
+  def jsonurl: typings.fusioncharts.fusionchartsStrings.jsonurl = "jsonurl".asInstanceOf[typings.fusioncharts.fusionchartsStrings.jsonurl]
   @scala.inline
-  def jsonurl: typings.fusioncharts.fusionchartsStrings.jsonurl = this.cast("jsonurl")
+  def xml: typings.fusioncharts.fusionchartsStrings.xml = "xml".asInstanceOf[typings.fusioncharts.fusionchartsStrings.xml]
   @scala.inline
-  def xml: typings.fusioncharts.fusionchartsStrings.xml = this.cast("xml")
-  @scala.inline
-  def xmlurl: typings.fusioncharts.fusionchartsStrings.xmlurl = this.cast("xmlurl")
+  def xmlurl: typings.fusioncharts.fusionchartsStrings.xmlurl = "xmlurl".asInstanceOf[typings.fusioncharts.fusionchartsStrings.xmlurl]
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-sync
 
-Typings are for version 0.11.5
+Typings are for version 0.12.1
 
 ## Library description:
 Twilio Sync client library

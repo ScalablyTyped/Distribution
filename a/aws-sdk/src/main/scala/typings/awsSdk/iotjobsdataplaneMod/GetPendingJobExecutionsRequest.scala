@@ -16,7 +16,6 @@ object GetPendingJobExecutionsRequest {
   @scala.inline
   def apply(thingName: ThingName): GetPendingJobExecutionsRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPendingJobExecutionsRequest]
   }
 }

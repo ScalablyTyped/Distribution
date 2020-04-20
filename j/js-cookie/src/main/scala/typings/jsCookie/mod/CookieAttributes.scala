@@ -1,9 +1,12 @@
 package typings.jsCookie.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsCookie.jsCookieStrings.lax
-import typings.jsCookie.jsCookieStrings.none
-import typings.jsCookie.jsCookieStrings.strict
+import typings.jsCookie.jsCookieStrings.Lax
+import typings.jsCookie.jsCookieStrings.None
+import typings.jsCookie.jsCookieStrings.Strict
+import typings.jsCookie.jsCookieStrings.lax_
+import typings.jsCookie.jsCookieStrings.none_
+import typings.jsCookie.jsCookieStrings.strict_
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +38,7 @@ trait CookieAttributes
     * providing some protection against cross-site request forgery
     * attacks (CSRF)
     */
-  var sameSite: js.UndefOr[strict | lax | none] = js.undefined
+  var sameSite: js.UndefOr[strict_ | Strict | lax_ | Lax | none_ | None] = js.undefined
   /**
     * A Boolean indicating if the cookie transmission requires a
     * secure protocol (https). Defaults to false.
@@ -54,7 +57,7 @@ object CookieAttributes {
     domain: String = null,
     expires: Double | Date = null,
     path: String = null,
-    sameSite: strict | lax | none = null,
+    sameSite: strict_ | Strict | lax_ | Lax | none_ | None = null,
     secure: js.UndefOr[Boolean] = js.undefined
   ): CookieAttributes = {
     val __obj = js.Dynamic.literal()

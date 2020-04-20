@@ -14,7 +14,6 @@ object AnonGet {
   @scala.inline
   def apply(get: (js.Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): AnonGet = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-  
     __obj.asInstanceOf[AnonGet]
   }
 }

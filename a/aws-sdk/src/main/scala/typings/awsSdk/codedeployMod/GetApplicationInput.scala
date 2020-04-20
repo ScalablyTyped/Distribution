@@ -16,7 +16,6 @@ object GetApplicationInput {
   @scala.inline
   def apply(applicationName: ApplicationName): GetApplicationInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApplicationInput]
   }
 }

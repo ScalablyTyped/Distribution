@@ -22,7 +22,7 @@ trait ExtentProperties extends GeometryProperties {
     */
   var mmin: js.UndefOr[Double] = js.undefined
   /**
-    * The bottom-right X-coordinate of an extent envelope.
+    * The maximum X-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmax)
     *
@@ -30,7 +30,7 @@ trait ExtentProperties extends GeometryProperties {
     */
   var xmax: js.UndefOr[Double] = js.undefined
   /**
-    * The top-left X-coordinate of an extent envelope.
+    * The minimum X-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmin)
     *
@@ -38,7 +38,7 @@ trait ExtentProperties extends GeometryProperties {
     */
   var xmin: js.UndefOr[Double] = js.undefined
   /**
-    * The top-right Y-coordinate of an extent envelope.
+    * The maximum Y-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymax)
     *
@@ -46,7 +46,7 @@ trait ExtentProperties extends GeometryProperties {
     */
   var ymax: js.UndefOr[Double] = js.undefined
   /**
-    * The bottom-left Y-coordinate of an extent envelope.
+    * The minimum Y-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymin)
     *

@@ -66,31 +66,31 @@ trait reactNativeSvgProps {
   def SvgProps: typings.reactNativeSvg.mod.SvgProps.type = typings.reactNativeSvg.mod.SvgProps
   type SvgProps = typings.reactNativeSvg.mod.SvgProps
   @scala.inline
-  def SvgAstProps: AstProps.type = typings.reactNativeSvg.mod.AstProps
+  def SvgAstProps: AstProps.type = AstProps
   type SvgAstProps = AstProps
   @scala.inline
-  def SvgCssProps: XmlProps.type = typings.reactNativeSvg.mod.XmlProps
+  def SvgCssProps: XmlProps.type = XmlProps
   type SvgCssProps = XmlProps
   @scala.inline
-  def SvgCssUriProps: UriProps.type = typings.reactNativeSvg.mod.UriProps
+  def SvgCssUriProps: UriProps.type = UriProps
   type SvgCssUriProps = UriProps
   @scala.inline
-  def SvgFromUriProps: UriProps.type = typings.reactNativeSvg.mod.UriProps
+  def SvgFromUriProps: UriProps.type = UriProps
   type SvgFromUriProps = UriProps
   @scala.inline
-  def SvgFromXmlProps: XmlProps.type = typings.reactNativeSvg.mod.XmlProps
+  def SvgFromXmlProps: XmlProps.type = XmlProps
   type SvgFromXmlProps = XmlProps
   @scala.inline
-  def SvgUriProps: UriProps.type = typings.reactNativeSvg.mod.UriProps
+  def SvgUriProps: UriProps.type = UriProps
   type SvgUriProps = UriProps
   @scala.inline
-  def SvgWithCssProps: XmlProps.type = typings.reactNativeSvg.mod.XmlProps
+  def SvgWithCssProps: XmlProps.type = XmlProps
   type SvgWithCssProps = XmlProps
   @scala.inline
-  def SvgWithCssUriProps: UriProps.type = typings.reactNativeSvg.mod.UriProps
+  def SvgWithCssUriProps: UriProps.type = UriProps
   type SvgWithCssUriProps = UriProps
   @scala.inline
-  def SvgXmlProps: XmlProps.type = typings.reactNativeSvg.mod.XmlProps
+  def SvgXmlProps: XmlProps.type = XmlProps
   type SvgXmlProps = XmlProps
   @scala.inline
   def SymbolProps: typings.reactNativeSvg.mod.SymbolProps.type = typings.reactNativeSvg.mod.SymbolProps

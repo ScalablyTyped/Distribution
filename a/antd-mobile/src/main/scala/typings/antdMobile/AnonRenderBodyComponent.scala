@@ -21,7 +21,6 @@ object AnonRenderBodyComponent {
     renderSectionHeader: js.Any
   ): AnonRenderBodyComponent = {
     val __obj = js.Dynamic.literal(renderBodyComponent = js.Any.fromFunction0(renderBodyComponent), renderFooter = renderFooter.asInstanceOf[js.Any], renderHeader = renderHeader.asInstanceOf[js.Any], renderSectionHeader = renderSectionHeader.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRenderBodyComponent]
   }
 }

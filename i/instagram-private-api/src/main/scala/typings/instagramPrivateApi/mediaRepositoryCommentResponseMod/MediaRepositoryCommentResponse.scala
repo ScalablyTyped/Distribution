@@ -13,7 +13,6 @@ object MediaRepositoryCommentResponse {
   @scala.inline
   def apply(comment: MediaRepositoryCommentResponseComment, status: String): MediaRepositoryCommentResponse = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaRepositoryCommentResponse]
   }
 }

@@ -22,7 +22,6 @@ object gears_ {
   @scala.inline
   def apply(available: js.Object): gears_ = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[gears_]
   }
 }

@@ -14,7 +14,6 @@ object AnonBstrMessageIdPFaxServer {
   @scala.inline
   def apply(bstrMessageId: String, pFaxServer: FaxServer): AnonBstrMessageIdPFaxServer = {
     val __obj = js.Dynamic.literal(bstrMessageId = bstrMessageId.asInstanceOf[js.Any], pFaxServer = pFaxServer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBstrMessageIdPFaxServer]
   }
 }

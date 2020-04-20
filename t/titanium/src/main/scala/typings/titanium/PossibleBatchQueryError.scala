@@ -1,0 +1,26 @@
+package typings.titanium
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Simple `Error` argument provided to the callback from the
+  * [executeAllAsync](Titanium.Database.DB.executeAllAsync) method in case of failure
+  */
+trait PossibleBatchQueryError extends js.Object {
+  /**
+  	 * Index of the failed query
+  	 */
+  var index: js.UndefOr[Double] = js.undefined
+}
+
+object PossibleBatchQueryError {
+  @scala.inline
+  def apply(index: Int | Double = null): PossibleBatchQueryError = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PossibleBatchQueryError]
+  }
+}
+

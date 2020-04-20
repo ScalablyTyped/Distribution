@@ -14,7 +14,6 @@ object TypeofCLIEngineOptions {
   @scala.inline
   def apply(Options: Instantiable0[Options]): TypeofCLIEngineOptions = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCLIEngineOptions]
   }
 }

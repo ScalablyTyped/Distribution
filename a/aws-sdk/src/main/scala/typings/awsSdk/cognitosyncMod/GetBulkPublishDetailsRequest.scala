@@ -16,7 +16,6 @@ object GetBulkPublishDetailsRequest {
   @scala.inline
   def apply(IdentityPoolId: IdentityPoolId): GetBulkPublishDetailsRequest = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBulkPublishDetailsRequest]
   }
 }

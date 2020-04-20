@@ -16,7 +16,6 @@ object DescribeCACertificateRequest {
   @scala.inline
   def apply(certificateId: CertificateId): DescribeCACertificateRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeCACertificateRequest]
   }
 }

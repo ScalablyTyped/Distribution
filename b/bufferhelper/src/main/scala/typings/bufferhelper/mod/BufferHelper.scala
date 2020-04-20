@@ -23,7 +23,6 @@ object BufferHelper {
     toString: encoding => String
   ): BufferHelper = {
     val __obj = js.Dynamic.literal(concat = js.Any.fromFunction1(concat), empty = js.Any.fromFunction0(empty), load = js.Any.fromFunction2(load), toBuffer = js.Any.fromFunction0(toBuffer), toString = js.Any.fromFunction1(toString))
-  
     __obj.asInstanceOf[BufferHelper]
   }
 }

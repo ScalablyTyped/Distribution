@@ -14,7 +14,6 @@ object AnonTransform {
   @scala.inline
   def apply(transform: js.Array[StringDictionary[AnimatedInterpolation]]): AnonTransform = {
     val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTransform]
   }
 }

@@ -13,7 +13,6 @@ object LockManagerSnapshot {
   @scala.inline
   def apply(held: js.Array[Lock], pending: js.Array[Lock]): LockManagerSnapshot = {
     val __obj = js.Dynamic.literal(held = held.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LockManagerSnapshot]
   }
 }

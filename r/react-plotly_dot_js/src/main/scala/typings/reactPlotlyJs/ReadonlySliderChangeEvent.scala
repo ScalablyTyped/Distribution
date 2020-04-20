@@ -18,7 +18,6 @@ object ReadonlySliderChangeEvent {
   @scala.inline
   def apply(interaction: Boolean, previousActive: Double, slider: Slider, step: SliderStep): ReadonlySliderChangeEvent = {
     val __obj = js.Dynamic.literal(interaction = interaction.asInstanceOf[js.Any], previousActive = previousActive.asInstanceOf[js.Any], slider = slider.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlySliderChangeEvent]
   }
 }

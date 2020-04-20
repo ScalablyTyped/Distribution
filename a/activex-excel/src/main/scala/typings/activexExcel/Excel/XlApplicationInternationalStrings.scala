@@ -58,54 +58,52 @@ trait XlApplicationInternationalStrings extends XlApplicationInternational
 
 object XlApplicationInternationalStrings {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAlternateArraySeparator: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlAlternateArraySeparator: `16` = this.cast(16)
+  def xlColumnSeparator: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlColumnSeparator: `14` = this.cast(14)
+  def xlCurrencyCode: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def xlCurrencyCode: `25` = this.cast(25)
+  def xlDateSeparator: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xlDateSeparator: `17` = this.cast(17)
+  def xlDayCode: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def xlDayCode: `21` = this.cast(21)
+  def xlDecimalSeparator: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlDecimalSeparator: `3` = this.cast(3)
+  def xlGeneralFormatName: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def xlGeneralFormatName: `26` = this.cast(26)
+  def xlHourCode: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def xlHourCode: `22` = this.cast(22)
+  def xlLeftBrace: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlLeftBrace: `12` = this.cast(12)
+  def xlLeftBracket: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlLeftBracket: `10` = this.cast(10)
+  def xlListSeparator: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlListSeparator: `5` = this.cast(5)
+  def xlLowerCaseColumnLetter: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlLowerCaseColumnLetter: `9` = this.cast(9)
+  def xlLowerCaseRowLetter: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlLowerCaseRowLetter: `8` = this.cast(8)
+  def xlMinuteCode: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def xlMinuteCode: `23` = this.cast(23)
+  def xlMonthCode: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def xlMonthCode: `20` = this.cast(20)
+  def xlRightBrace: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlRightBrace: `13` = this.cast(13)
+  def xlRightBracket: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlRightBracket: `11` = this.cast(11)
+  def xlRowSeparator: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlRowSeparator: `15` = this.cast(15)
+  def xlSecondCode: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def xlSecondCode: `24` = this.cast(24)
+  def xlThousandsSeparator: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlThousandsSeparator: `4` = this.cast(4)
+  def xlTimeSeparator: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def xlTimeSeparator: `18` = this.cast(18)
+  def xlUpperCaseColumnLetter: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlUpperCaseColumnLetter: `7` = this.cast(7)
+  def xlUpperCaseRowLetter: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlUpperCaseRowLetter: `6` = this.cast(6)
-  @scala.inline
-  def xlYearCode: `19` = this.cast(19)
+  def xlYearCode: `19` = 19.asInstanceOf[`19`]
 }
 

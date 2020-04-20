@@ -12,7 +12,6 @@ object RatingLabel {
   @scala.inline
   def apply(template: String | js.Function): RatingLabel = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RatingLabel]
   }
 }

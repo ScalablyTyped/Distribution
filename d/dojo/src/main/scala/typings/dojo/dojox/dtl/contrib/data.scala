@@ -42,7 +42,6 @@ object data {
     bind_query: (js.Any, js.Any) => js.Any
   ): data = {
     val __obj = js.Dynamic.literal(BindDataNode = js.Any.fromFunction4(BindDataNode), bind_data = js.Any.fromFunction2(bind_data), bind_query = js.Any.fromFunction2(bind_query))
-  
     __obj.asInstanceOf[data]
   }
 }

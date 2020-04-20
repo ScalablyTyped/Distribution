@@ -13,12 +13,10 @@ trait strokeLineCapType extends js.Object
 
 object strokeLineCapType {
   @scala.inline
-  def butt: typings.navermaps.navermapsStrings.butt = this.cast("butt")
+  def butt: typings.navermaps.navermapsStrings.butt = "butt".asInstanceOf[typings.navermaps.navermapsStrings.butt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def round: typings.navermaps.navermapsStrings.round = "round".asInstanceOf[typings.navermaps.navermapsStrings.round]
   @scala.inline
-  def round: typings.navermaps.navermapsStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.navermaps.navermapsStrings.square = this.cast("square")
+  def square: typings.navermaps.navermapsStrings.square = "square".asInstanceOf[typings.navermaps.navermapsStrings.square]
 }
 

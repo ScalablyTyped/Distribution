@@ -135,13 +135,13 @@ object inversifyStrings {
   sealed trait unmanaged extends js.Object
   
   @scala.inline
-  def `Ambiguous match found for serviceIdentifierColon`: `Ambiguous match found for serviceIdentifierColon` = "Ambiguous match found for serviceIdentifier:".asInstanceOf[`Ambiguous match found for serviceIdentifierColon`]
+  def `Ambiguous match found for serviceIdentifierColon`: `Ambiguous match found for serviceIdentifierColon` = ("Ambiguous match found for serviceIdentifier:").asInstanceOf[`Ambiguous match found for serviceIdentifierColon`]
   @scala.inline
-  def `Cannot apply @injectable decorator multiple timesDot`: `Cannot apply @injectable decorator multiple timesDot` = "Cannot apply @injectable decorator multiple times.".asInstanceOf[`Cannot apply @injectable decorator multiple timesDot`]
+  def `Cannot apply @injectable decorator multiple timesDot`: `Cannot apply @injectable decorator multiple timesDot` = ("Cannot apply @injectable decorator multiple times.").asInstanceOf[`Cannot apply @injectable decorator multiple timesDot`]
   @scala.inline
-  def `Cannot apply @postConstruct decorator multiple times in the same class`: `Cannot apply @postConstruct decorator multiple times in the same class` = "Cannot apply @postConstruct decorator multiple times in the same class".asInstanceOf[`Cannot apply @postConstruct decorator multiple times in the same class`]
+  def `Cannot apply @postConstruct decorator multiple times in the same class`: `Cannot apply @postConstruct decorator multiple times in the same class` = ("Cannot apply @postConstruct decorator multiple times in the same class").asInstanceOf[`Cannot apply @postConstruct decorator multiple times in the same class`]
   @scala.inline
-  def `Circular dependency foundColon`: `Circular dependency foundColon` = "Circular dependency found:".asInstanceOf[`Circular dependency foundColon`]
+  def `Circular dependency foundColon`: `Circular dependency foundColon` = ("Circular dependency found:").asInstanceOf[`Circular dependency foundColon`]
   @scala.inline
   def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]
   @scala.inline
@@ -151,7 +151,7 @@ object inversifyStrings {
   @scala.inline
   def ConstructorArgument: ConstructorArgument = "ConstructorArgument".asInstanceOf[ConstructorArgument]
   @scala.inline
-  def `Could not unbind serviceIdentifierColon`: `Could not unbind serviceIdentifierColon` = "Could not unbind serviceIdentifier:".asInstanceOf[`Could not unbind serviceIdentifierColon`]
+  def `Could not unbind serviceIdentifierColon`: `Could not unbind serviceIdentifierColon` = ("Could not unbind serviceIdentifier:").asInstanceOf[`Could not unbind serviceIdentifierColon`]
   @scala.inline
   def DynamicValue: DynamicValue = "DynamicValue".asInstanceOf[DynamicValue]
   @scala.inline
@@ -163,25 +163,25 @@ object inversifyStrings {
   @scala.inline
   def Invalid: Invalid = "Invalid".asInstanceOf[Invalid]
   @scala.inline
-  def `Invalid binding typeColon`: `Invalid binding typeColon` = "Invalid binding type:".asInstanceOf[`Invalid binding typeColon`]
+  def `Invalid binding typeColon`: `Invalid binding typeColon` = ("Invalid binding type:").asInstanceOf[`Invalid binding typeColon`]
   @scala.inline
-  def `Invalid return type in middlewareDot Middleware must returnExclamationmark`: `Invalid return type in middlewareDot Middleware must returnExclamationmark` = "Invalid return type in middleware. Middleware must return!".asInstanceOf[`Invalid return type in middlewareDot Middleware must returnExclamationmark`]
+  def `Invalid return type in middlewareDot Middleware must returnExclamationmark`: `Invalid return type in middlewareDot Middleware must returnExclamationmark` = ("Invalid return type in middleware. Middleware must return!").asInstanceOf[`Invalid return type in middlewareDot Middleware must returnExclamationmark`]
   @scala.inline
-  def `Key Not Found`: `Key Not Found` = "Key Not Found".asInstanceOf[`Key Not Found`]
+  def `Key Not Found`: `Key Not Found` = ("Key Not Found").asInstanceOf[`Key Not Found`]
   @scala.inline
-  def `Maximum call stack size exceeded`: `Maximum call stack size exceeded` = "Maximum call stack size exceeded".asInstanceOf[`Maximum call stack size exceeded`]
+  def `Maximum call stack size exceeded`: `Maximum call stack size exceeded` = ("Maximum call stack size exceeded").asInstanceOf[`Maximum call stack size exceeded`]
   @scala.inline
-  def `Metadata key was used more than once in a parameterColon`: `Metadata key was used more than once in a parameterColon` = "Metadata key was used more than once in a parameter:".asInstanceOf[`Metadata key was used more than once in a parameterColon`]
+  def `Metadata key was used more than once in a parameterColon`: `Metadata key was used more than once in a parameterColon` = ("Metadata key was used more than once in a parameter:").asInstanceOf[`Metadata key was used more than once in a parameterColon`]
   @scala.inline
-  def `Missing required @inject or @multiInject annotation inColon`: `Missing required @inject or @multiInject annotation inColon` = "Missing required @inject or @multiInject annotation in:".asInstanceOf[`Missing required @inject or @multiInject annotation inColon`]
+  def `Missing required @inject or @multiInject annotation inColon`: `Missing required @inject or @multiInject annotation inColon` = ("Missing required @inject or @multiInject annotation in:").asInstanceOf[`Missing required @inject or @multiInject annotation inColon`]
   @scala.inline
-  def `Missing required @injectable annotation inColon`: `Missing required @injectable annotation inColon` = "Missing required @injectable annotation in:".asInstanceOf[`Missing required @injectable annotation inColon`]
+  def `Missing required @injectable annotation inColon`: `Missing required @injectable annotation inColon` = ("Missing required @injectable annotation in:").asInstanceOf[`Missing required @injectable annotation inColon`]
   @scala.inline
-  def `NULL argument`: `NULL argument` = "NULL argument".asInstanceOf[`NULL argument`]
+  def `NULL argument`: `NULL argument` = ("NULL argument").asInstanceOf[`NULL argument`]
   @scala.inline
-  def `No matching bindings found for serviceIdentifierColon`: `No matching bindings found for serviceIdentifierColon` = "No matching bindings found for serviceIdentifier:".asInstanceOf[`No matching bindings found for serviceIdentifierColon`]
+  def `No matching bindings found for serviceIdentifierColon`: `No matching bindings found for serviceIdentifierColon` = ("No matching bindings found for serviceIdentifier:").asInstanceOf[`No matching bindings found for serviceIdentifierColon`]
   @scala.inline
-  def `No snapshot available to restoreDot`: `No snapshot available to restoreDot` = "No snapshot available to restore.".asInstanceOf[`No snapshot available to restoreDot`]
+  def `No snapshot available to restoreDot`: `No snapshot available to restoreDot` = ("No snapshot available to restore.").asInstanceOf[`No snapshot available to restoreDot`]
   @scala.inline
   def Provider: Provider = "Provider".asInstanceOf[Provider]
   @scala.inline
@@ -189,11 +189,11 @@ object inversifyStrings {
   @scala.inline
   def Singleton: Singleton = "Singleton".asInstanceOf[Singleton]
   @scala.inline
-  def `SorryComma this feature is not fully implemented yetDot`: `SorryComma this feature is not fully implemented yetDot` = "Sorry, this feature is not fully implemented yet.".asInstanceOf[`SorryComma this feature is not fully implemented yetDot`]
+  def `SorryComma this feature is not fully implemented yetDot`: `SorryComma this feature is not fully implemented yetDot` = ("Sorry, this feature is not fully implemented yet.").asInstanceOf[`SorryComma this feature is not fully implemented yetDot`]
   @scala.inline
   def Transient: Transient = "Transient".asInstanceOf[Transient]
   @scala.inline
-  def `Value provided to function binding must be a functionExclamationmark`: `Value provided to function binding must be a functionExclamationmark` = "Value provided to function binding must be a function!".asInstanceOf[`Value provided to function binding must be a functionExclamationmark`]
+  def `Value provided to function binding must be a functionExclamationmark`: `Value provided to function binding must be a functionExclamationmark` = ("Value provided to function binding must be a function!").asInstanceOf[`Value provided to function binding must be a functionExclamationmark`]
   @scala.inline
   def Variable: Variable = "Variable".asInstanceOf[Variable]
   @scala.inline

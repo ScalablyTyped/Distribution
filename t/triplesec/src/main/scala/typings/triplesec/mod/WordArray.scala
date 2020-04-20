@@ -14,7 +14,6 @@ object WordArray {
   @scala.inline
   def apply(sigBytes: Double, to_hex: () => String, words: js.Array[Double]): WordArray = {
     val __obj = js.Dynamic.literal(sigBytes = sigBytes.asInstanceOf[js.Any], to_hex = js.Any.fromFunction0(to_hex), words = words.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WordArray]
   }
 }

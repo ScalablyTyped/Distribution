@@ -71,7 +71,6 @@ object IAssetsService {
     loadJs: (String, IScope, js.Object, Double) => IPromise[_]
   ): IAssetsService = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction2(load), loadCss = js.Any.fromFunction4(loadCss), loadJs = js.Any.fromFunction4(loadJs))
-  
     __obj.asInstanceOf[IAssetsService]
   }
 }

@@ -28,7 +28,6 @@ object NotificationApi {
     warning: ArgsProps => Unit
   ): NotificationApi = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), config = js.Any.fromFunction1(config), destroy = js.Any.fromFunction0(destroy), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), open = js.Any.fromFunction1(open), success = js.Any.fromFunction1(success), useNotification = js.Any.fromFunction0(useNotification), warn = js.Any.fromFunction1(warn), warning = js.Any.fromFunction1(warning))
-  
     __obj.asInstanceOf[NotificationApi]
   }
 }

@@ -12,7 +12,6 @@ object Seeded {
   @scala.inline
   def apply(seed: Seed): Seeded = {
     val __obj = js.Dynamic.literal(seed = seed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Seeded]
   }
 }

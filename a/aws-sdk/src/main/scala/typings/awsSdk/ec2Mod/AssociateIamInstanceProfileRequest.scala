@@ -20,7 +20,6 @@ object AssociateIamInstanceProfileRequest {
   @scala.inline
   def apply(IamInstanceProfile: IamInstanceProfileSpecification, InstanceId: InstanceId): AssociateIamInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(IamInstanceProfile = IamInstanceProfile.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateIamInstanceProfileRequest]
   }
 }

@@ -20,7 +20,6 @@ object RemoveIpRoutesRequest {
   @scala.inline
   def apply(CidrIps: CidrIps, DirectoryId: DirectoryId): RemoveIpRoutesRequest = {
     val __obj = js.Dynamic.literal(CidrIps = CidrIps.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveIpRoutesRequest]
   }
 }

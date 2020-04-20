@@ -13,7 +13,6 @@ object WorkerOnMessageCallbackResult {
   @scala.inline
   def apply(message: js.Object): WorkerOnMessageCallbackResult = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkerOnMessageCallbackResult]
   }
 }

@@ -21,7 +21,6 @@ object Variable {
     references: js.Array[Reference]
   ): Variable = {
     val __obj = js.Dynamic.literal(defs = defs.asInstanceOf[js.Any], identifiers = identifiers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Variable]
   }
 }

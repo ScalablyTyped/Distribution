@@ -23,7 +23,6 @@ object PhoneNumberValidateOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, NumberValidateResponse: UnmarshalledNumberValidateResponse): PhoneNumberValidateOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], NumberValidateResponse = NumberValidateResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhoneNumberValidateOutput]
   }
 }

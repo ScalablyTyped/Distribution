@@ -42,7 +42,6 @@ object IMenuContext {
     getUniqueCells: () => js.Array[ICellCoordinate]
   ): IMenuContext = {
     val __obj = js.Dynamic.literal(getRegions = js.Any.fromFunction0(getRegions), getSelectedRegions = js.Any.fromFunction0(getSelectedRegions), getTarget = js.Any.fromFunction0(getTarget), getUniqueCells = js.Any.fromFunction0(getUniqueCells))
-  
     __obj.asInstanceOf[IMenuContext]
   }
 }

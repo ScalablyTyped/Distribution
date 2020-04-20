@@ -25,7 +25,6 @@ object MetaRules {
     pointers: AnonPtr
   ): MetaRules = {
     val __obj = js.Dynamic.literal(aspects = aspects.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], constraints = constraints.asInstanceOf[js.Any], pointers = pointers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetaRules]
   }
 }

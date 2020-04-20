@@ -30,7 +30,6 @@ object RequestLoginParams {
   @scala.inline
   def LoginChallenge(challengeHidden: String, challengeVisual: String): RequestLoginParams = {
     val __obj = js.Dynamic.literal(challengeHidden = challengeHidden.asInstanceOf[js.Any], challengeVisual = challengeVisual.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestLoginParams]
   }
 }

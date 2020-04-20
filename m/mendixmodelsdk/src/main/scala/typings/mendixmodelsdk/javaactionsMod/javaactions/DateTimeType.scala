@@ -33,11 +33,11 @@ class DateTimeType protected () extends PrimitiveType {
   @JSName("model")
   var model_FDateTimeType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MDateTimeType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MDateTimeType: BasicParameterType = js.native
   @JSName("containerAsJavaActionParameter")
-  def containerAsJavaActionParameter_MDateTimeType(): JavaActionParameter = js.native
+  def containerAsJavaActionParameter_MDateTimeType: JavaActionParameter = js.native
   @JSName("containerAsJavaAction")
-  def containerAsJavaAction_MDateTimeType(): JavaAction = js.native
+  def containerAsJavaAction_MDateTimeType: JavaAction = js.native
 }
 
 /* static members */

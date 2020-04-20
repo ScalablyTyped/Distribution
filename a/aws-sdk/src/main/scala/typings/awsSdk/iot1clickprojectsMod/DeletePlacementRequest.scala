@@ -20,7 +20,6 @@ object DeletePlacementRequest {
   @scala.inline
   def apply(placementName: PlacementName, projectName: ProjectName): DeletePlacementRequest = {
     val __obj = js.Dynamic.literal(placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePlacementRequest]
   }
 }

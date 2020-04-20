@@ -17,7 +17,6 @@ object AnonSelectors {
   @scala.inline
   def apply(__type: String, column: Double, filename: String, lineno: Double, selectors: js.Array[Selector]): AnonSelectors = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelectors]
   }
 }

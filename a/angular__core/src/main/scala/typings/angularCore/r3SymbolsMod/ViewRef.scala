@@ -23,7 +23,7 @@ trait ViewRef extends ChangeDetectorRef {
     * Reports whether this view has been destroyed.
     * @returns True after the `destroy()` method has been called, false otherwise.
     */
-  def destroyed(): Boolean
+  def destroyed: Boolean
   /**
     * A lifecycle hook that provides additional developer-defined cleanup
     * functionality for views.
@@ -46,7 +46,6 @@ object ViewRef {
     reattach: () => Unit
   ): ViewRef = {
     val __obj = js.Dynamic.literal(checkNoChanges = js.Any.fromFunction0(checkNoChanges), destroy = js.Any.fromFunction0(destroy), destroyed = js.Any.fromFunction0(destroyed), detach = js.Any.fromFunction0(detach), detectChanges = js.Any.fromFunction0(detectChanges), markForCheck = js.Any.fromFunction0(markForCheck), onDestroy = js.Any.fromFunction1(onDestroy), reattach = js.Any.fromFunction0(reattach))
-  
     __obj.asInstanceOf[ViewRef]
   }
 }

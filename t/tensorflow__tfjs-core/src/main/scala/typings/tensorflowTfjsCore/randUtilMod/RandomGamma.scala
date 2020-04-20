@@ -12,7 +12,6 @@ object RandomGamma {
   @scala.inline
   def apply(nextValue: () => Double): RandomGamma = {
     val __obj = js.Dynamic.literal(nextValue = js.Any.fromFunction0(nextValue))
-  
     __obj.asInstanceOf[RandomGamma]
   }
 }

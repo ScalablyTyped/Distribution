@@ -19,7 +19,6 @@ object IdTokenOptions {
   @scala.inline
   def apply(idTokenProvider: IdTokenProvider, targetAudience: String): IdTokenOptions = {
     val __obj = js.Dynamic.literal(idTokenProvider = idTokenProvider.asInstanceOf[js.Any], targetAudience = targetAudience.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdTokenOptions]
   }
 }

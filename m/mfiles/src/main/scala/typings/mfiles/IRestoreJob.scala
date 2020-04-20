@@ -22,7 +22,6 @@ object IRestoreJob {
     VaultProperties: IVaultProperties
   ): IRestoreJob = {
     val __obj = js.Dynamic.literal(BackupFileDifferential = BackupFileDifferential.asInstanceOf[js.Any], BackupFileFull = BackupFileFull.asInstanceOf[js.Any], Impersonation = Impersonation.asInstanceOf[js.Any], OverwriteExistingFiles = OverwriteExistingFiles.asInstanceOf[js.Any], VaultProperties = VaultProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRestoreJob]
   }
 }

@@ -25,7 +25,6 @@ object AnonSignerCert {
     tstInfo: TSTInfo
   ): AnonSignerCert = {
     val __obj = js.Dynamic.literal(certs = certs.asInstanceOf[js.Any], hashAlg = hashAlg.asInstanceOf[js.Any], sigAlg = sigAlg.asInstanceOf[js.Any], signerCert = signerCert.asInstanceOf[js.Any], signerPrvKey = signerPrvKey.asInstanceOf[js.Any], tstInfo = tstInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSignerCert]
   }
 }

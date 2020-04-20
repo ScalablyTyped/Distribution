@@ -42,70 +42,68 @@ trait Language extends js.Object
 
 object Language {
   @scala.inline
-  def actionscript: typings.prismReactRenderer.prismReactRendererStrings.actionscript = this.cast("actionscript")
+  def actionscript: typings.prismReactRenderer.prismReactRendererStrings.actionscript = "actionscript".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.actionscript]
   @scala.inline
-  def bash: typings.prismReactRenderer.prismReactRendererStrings.bash = this.cast("bash")
+  def bash: typings.prismReactRenderer.prismReactRendererStrings.bash = "bash".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.bash]
   @scala.inline
-  def c: typings.prismReactRenderer.prismReactRendererStrings.c = this.cast("c")
+  def c: typings.prismReactRenderer.prismReactRendererStrings.c = "c".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.c]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clike: typings.prismReactRenderer.prismReactRendererStrings.clike = "clike".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.clike]
   @scala.inline
-  def clike: typings.prismReactRenderer.prismReactRendererStrings.clike = this.cast("clike")
+  def coffeescript: typings.prismReactRenderer.prismReactRendererStrings.coffeescript = "coffeescript".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.coffeescript]
   @scala.inline
-  def coffeescript: typings.prismReactRenderer.prismReactRendererStrings.coffeescript = this.cast("coffeescript")
+  def cpp: typings.prismReactRenderer.prismReactRendererStrings.cpp = "cpp".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.cpp]
   @scala.inline
-  def cpp: typings.prismReactRenderer.prismReactRendererStrings.cpp = this.cast("cpp")
+  def css: typings.prismReactRenderer.prismReactRendererStrings.css = "css".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.css]
   @scala.inline
-  def css: typings.prismReactRenderer.prismReactRendererStrings.css = this.cast("css")
+  def `css-extr`: typings.prismReactRenderer.prismReactRendererStrings.`css-extr` = "css-extr".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.`css-extr`]
   @scala.inline
-  def `css-extr`: typings.prismReactRenderer.prismReactRendererStrings.`css-extr` = this.cast("css-extr")
+  def diff: typings.prismReactRenderer.prismReactRendererStrings.diff = "diff".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.diff]
   @scala.inline
-  def diff: typings.prismReactRenderer.prismReactRendererStrings.diff = this.cast("diff")
+  def git: typings.prismReactRenderer.prismReactRendererStrings.git = "git".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.git]
   @scala.inline
-  def git: typings.prismReactRenderer.prismReactRendererStrings.git = this.cast("git")
+  def go: typings.prismReactRenderer.prismReactRendererStrings.go = "go".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.go]
   @scala.inline
-  def go: typings.prismReactRenderer.prismReactRendererStrings.go = this.cast("go")
+  def graphql: typings.prismReactRenderer.prismReactRendererStrings.graphql = "graphql".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.graphql]
   @scala.inline
-  def graphql: typings.prismReactRenderer.prismReactRendererStrings.graphql = this.cast("graphql")
+  def handlebars: typings.prismReactRenderer.prismReactRendererStrings.handlebars = "handlebars".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.handlebars]
   @scala.inline
-  def handlebars: typings.prismReactRenderer.prismReactRendererStrings.handlebars = this.cast("handlebars")
+  def javascript: typings.prismReactRenderer.prismReactRendererStrings.javascript = "javascript".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.javascript]
   @scala.inline
-  def javascript: typings.prismReactRenderer.prismReactRendererStrings.javascript = this.cast("javascript")
+  def json: typings.prismReactRenderer.prismReactRendererStrings.json = "json".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.json]
   @scala.inline
-  def json: typings.prismReactRenderer.prismReactRendererStrings.json = this.cast("json")
+  def jsx: typings.prismReactRenderer.prismReactRendererStrings.jsx = "jsx".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.jsx]
   @scala.inline
-  def jsx: typings.prismReactRenderer.prismReactRendererStrings.jsx = this.cast("jsx")
+  def less: typings.prismReactRenderer.prismReactRendererStrings.less = "less".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.less]
   @scala.inline
-  def less: typings.prismReactRenderer.prismReactRendererStrings.less = this.cast("less")
+  def makefile: typings.prismReactRenderer.prismReactRendererStrings.makefile = "makefile".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.makefile]
   @scala.inline
-  def makefile: typings.prismReactRenderer.prismReactRendererStrings.makefile = this.cast("makefile")
+  def markdown: typings.prismReactRenderer.prismReactRendererStrings.markdown = "markdown".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.markdown]
   @scala.inline
-  def markdown: typings.prismReactRenderer.prismReactRendererStrings.markdown = this.cast("markdown")
+  def markup: typings.prismReactRenderer.prismReactRendererStrings.markup = "markup".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.markup]
   @scala.inline
-  def markup: typings.prismReactRenderer.prismReactRendererStrings.markup = this.cast("markup")
+  def objectivec: typings.prismReactRenderer.prismReactRendererStrings.objectivec = "objectivec".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.objectivec]
   @scala.inline
-  def objectivec: typings.prismReactRenderer.prismReactRendererStrings.objectivec = this.cast("objectivec")
+  def ocaml: typings.prismReactRenderer.prismReactRendererStrings.ocaml = "ocaml".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.ocaml]
   @scala.inline
-  def ocaml: typings.prismReactRenderer.prismReactRendererStrings.ocaml = this.cast("ocaml")
+  def python: typings.prismReactRenderer.prismReactRendererStrings.python = "python".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.python]
   @scala.inline
-  def python: typings.prismReactRenderer.prismReactRendererStrings.python = this.cast("python")
+  def reason: typings.prismReactRenderer.prismReactRendererStrings.reason = "reason".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.reason]
   @scala.inline
-  def reason: typings.prismReactRenderer.prismReactRendererStrings.reason = this.cast("reason")
+  def sass: typings.prismReactRenderer.prismReactRendererStrings.sass = "sass".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.sass]
   @scala.inline
-  def sass: typings.prismReactRenderer.prismReactRendererStrings.sass = this.cast("sass")
+  def scss: typings.prismReactRenderer.prismReactRendererStrings.scss = "scss".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.scss]
   @scala.inline
-  def scss: typings.prismReactRenderer.prismReactRendererStrings.scss = this.cast("scss")
+  def sql: typings.prismReactRenderer.prismReactRendererStrings.sql = "sql".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.sql]
   @scala.inline
-  def sql: typings.prismReactRenderer.prismReactRendererStrings.sql = this.cast("sql")
+  def stylus: typings.prismReactRenderer.prismReactRendererStrings.stylus = "stylus".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.stylus]
   @scala.inline
-  def stylus: typings.prismReactRenderer.prismReactRendererStrings.stylus = this.cast("stylus")
+  def tsx: typings.prismReactRenderer.prismReactRendererStrings.tsx = "tsx".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.tsx]
   @scala.inline
-  def tsx: typings.prismReactRenderer.prismReactRendererStrings.tsx = this.cast("tsx")
+  def typescript: typings.prismReactRenderer.prismReactRendererStrings.typescript = "typescript".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.typescript]
   @scala.inline
-  def typescript: typings.prismReactRenderer.prismReactRendererStrings.typescript = this.cast("typescript")
+  def wasm: typings.prismReactRenderer.prismReactRendererStrings.wasm = "wasm".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.wasm]
   @scala.inline
-  def wasm: typings.prismReactRenderer.prismReactRendererStrings.wasm = this.cast("wasm")
-  @scala.inline
-  def yaml: typings.prismReactRenderer.prismReactRendererStrings.yaml = this.cast("yaml")
+  def yaml: typings.prismReactRenderer.prismReactRendererStrings.yaml = "yaml".asInstanceOf[typings.prismReactRenderer.prismReactRendererStrings.yaml]
 }
 

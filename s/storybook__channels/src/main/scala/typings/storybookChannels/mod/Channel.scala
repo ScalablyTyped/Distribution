@@ -21,7 +21,7 @@ class Channel () extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): Unit = js.native
   def eventNames(): js.Array[String] = js.native
-  def hasTransport(): Boolean = js.native
+  def hasTransport: Boolean = js.native
   def listenerCount(eventName: String): Double = js.native
   def listeners(eventName: String): js.UndefOr[js.Array[Listener]] = js.native
   def off(eventName: String, listener: Listener): Unit = js.native

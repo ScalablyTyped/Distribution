@@ -60,7 +60,7 @@ class HDRCubeTexture protected () extends BaseTexture {
     * The texture URL.
     */
   var url: String = js.native
-  def boundingBoxSize(): Vector3 = js.native
+  def boundingBoxSize: Vector3 = js.native
   /**
     * Gets or sets the size of the bounding box associated with the cube texture
     * When defined, the cubemap will switch to local mode
@@ -75,7 +75,7 @@ class HDRCubeTexture protected () extends BaseTexture {
   /**
     * Gets texture matrix rotation angle around Y axis radians.
     */
-  def rotationY(): Double = js.native
+  def rotationY: Double = js.native
   /**
     * Sets texture matrix rotation angle around Y axis in radians.
     */

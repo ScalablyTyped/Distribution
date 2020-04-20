@@ -16,7 +16,6 @@ object Direct3DMultisampleDescription {
   @scala.inline
   def apply(count: Double, quality: Double): Direct3DMultisampleDescription = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Direct3DMultisampleDescription]
   }
 }

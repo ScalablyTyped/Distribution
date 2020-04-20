@@ -27,7 +27,6 @@ object AnonCommentCount {
   @scala.inline
   def apply(commentCount: Double, subscriberCount: Double, videoCount: Double, viewCount: Double): AnonCommentCount = {
     val __obj = js.Dynamic.literal(commentCount = commentCount.asInstanceOf[js.Any], subscriberCount = subscriberCount.asInstanceOf[js.Any], videoCount = videoCount.asInstanceOf[js.Any], viewCount = viewCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCommentCount]
   }
 }

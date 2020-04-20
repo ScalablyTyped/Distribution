@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_feConvolveMatrix extends js.Object {
-  def apply[P /* <: js.Object */, T](component: feConvolveMatrix, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[feConvolveMatrix], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: feConvolveMatrix, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[feConvolveMatrix], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: feConvolveMatrix, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[feConvolveMatrix], 
+      Exclude[/* keyof react.react.ComponentProps<'feConvolveMatrix'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: feConvolveMatrix, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[feConvolveMatrix], 
+      Exclude[/* keyof react.react.ComponentProps<'feConvolveMatrix'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

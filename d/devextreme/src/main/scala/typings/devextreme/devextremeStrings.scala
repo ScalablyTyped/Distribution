@@ -1961,9 +1961,9 @@ object devextremeStrings {
   @scala.inline
   def D: D = "D".asInstanceOf[D]
   @scala.inline
-  def `Dark Moon`: `Dark Moon` = "Dark Moon".asInstanceOf[`Dark Moon`]
+  def `Dark Moon`: `Dark Moon` = ("Dark Moon").asInstanceOf[`Dark Moon`]
   @scala.inline
-  def `Dark Violet`: `Dark Violet` = "Dark Violet".asInstanceOf[`Dark Violet`]
+  def `Dark Violet`: `Dark Violet` = ("Dark Violet").asInstanceOf[`Dark Violet`]
   @scala.inline
   def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
   @scala.inline
@@ -1987,11 +1987,11 @@ object devextremeStrings {
   @scala.inline
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
-  def `Green Mist`: `Green Mist` = "Green Mist".asInstanceOf[`Green Mist`]
+  def `Green Mist`: `Green Mist` = ("Green Mist").asInstanceOf[`Green Mist`]
   @scala.inline
   def Guid: Guid = "Guid".asInstanceOf[Guid]
   @scala.inline
-  def `Harmony Light`: `Harmony Light` = "Harmony Light".asInstanceOf[`Harmony Light`]
+  def `Harmony Light`: `Harmony Light` = ("Harmony Light").asInstanceOf[`Harmony Light`]
   @scala.inline
   def Int32: Int32 = "Int32".asInstanceOf[Int32]
   @scala.inline
@@ -2027,9 +2027,9 @@ object devextremeStrings {
   @scala.inline
   def Soft: Soft = "Soft".asInstanceOf[Soft]
   @scala.inline
-  def `Soft Blue`: `Soft Blue` = "Soft Blue".asInstanceOf[`Soft Blue`]
+  def `Soft Blue`: `Soft Blue` = ("Soft Blue").asInstanceOf[`Soft Blue`]
   @scala.inline
-  def `Soft Pastel`: `Soft Pastel` = "Soft Pastel".asInstanceOf[`Soft Pastel`]
+  def `Soft Pastel`: `Soft Pastel` = ("Soft Pastel").asInstanceOf[`Soft Pastel`]
   @scala.inline
   def String: String = "String".asInstanceOf[String]
   @scala.inline
@@ -2441,11 +2441,11 @@ object devextremeStrings {
   @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
   @scala.inline
-  def `fit flip`: `fit flip` = "fit flip".asInstanceOf[`fit flip`]
+  def `fit flip`: `fit flip` = ("fit flip").asInstanceOf[`fit flip`]
   @scala.inline
-  def `fit flipfit`: `fit flipfit` = "fit flipfit".asInstanceOf[`fit flipfit`]
+  def `fit flipfit`: `fit flipfit` = ("fit flipfit").asInstanceOf[`fit flipfit`]
   @scala.inline
-  def `fit none`: `fit none` = "fit none".asInstanceOf[`fit none`]
+  def `fit none`: `fit none` = ("fit none").asInstanceOf[`fit none`]
   @scala.inline
   def fitContent: fitContent = "fitContent".asInstanceOf[fitContent]
   @scala.inline
@@ -2457,15 +2457,15 @@ object devextremeStrings {
   @scala.inline
   def flip: flip = "flip".asInstanceOf[flip]
   @scala.inline
-  def `flip fit`: `flip fit` = "flip fit".asInstanceOf[`flip fit`]
+  def `flip fit`: `flip fit` = ("flip fit").asInstanceOf[`flip fit`]
   @scala.inline
-  def `flip none`: `flip none` = "flip none".asInstanceOf[`flip none`]
+  def `flip none`: `flip none` = ("flip none").asInstanceOf[`flip none`]
   @scala.inline
   def flipfit: flipfit = "flipfit".asInstanceOf[flipfit]
   @scala.inline
-  def `flipfit fit`: `flipfit fit` = "flipfit fit".asInstanceOf[`flipfit fit`]
+  def `flipfit fit`: `flipfit fit` = ("flipfit fit").asInstanceOf[`flipfit fit`]
   @scala.inline
-  def `flipfit none`: `flipfit none` = "flipfit none".asInstanceOf[`flipfit none`]
+  def `flipfit none`: `flipfit none` = ("flipfit none").asInstanceOf[`flipfit none`]
   @scala.inline
   def flowchart: flowchart = "flowchart".asInstanceOf[flowchart]
   @scala.inline
@@ -2621,9 +2621,9 @@ object devextremeStrings {
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
-  def `left bottom`: `left bottom` = "left bottom".asInstanceOf[`left bottom`]
+  def `left bottom`: `left bottom` = ("left bottom").asInstanceOf[`left bottom`]
   @scala.inline
-  def `left top`: `left top` = "left top".asInstanceOf[`left top`]
+  def `left top`: `left top` = ("left top").asInstanceOf[`left top`]
   @scala.inline
   def leftBottom: leftBottom = "leftBottom".asInstanceOf[leftBottom]
   @scala.inline
@@ -2751,11 +2751,11 @@ object devextremeStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def `none fit`: `none fit` = "none fit".asInstanceOf[`none fit`]
+  def `none fit`: `none fit` = ("none fit").asInstanceOf[`none fit`]
   @scala.inline
-  def `none flip`: `none flip` = "none flip".asInstanceOf[`none flip`]
+  def `none flip`: `none flip` = ("none flip").asInstanceOf[`none flip`]
   @scala.inline
-  def `none flipfit`: `none flipfit` = "none flipfit".asInstanceOf[`none flipfit`]
+  def `none flipfit`: `none flipfit` = ("none flipfit").asInstanceOf[`none flipfit`]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
@@ -2915,9 +2915,9 @@ object devextremeStrings {
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
-  def `right bottom`: `right bottom` = "right bottom".asInstanceOf[`right bottom`]
+  def `right bottom`: `right bottom` = ("right bottom").asInstanceOf[`right bottom`]
   @scala.inline
-  def `right top`: `right top` = "right top".asInstanceOf[`right top`]
+  def `right top`: `right top` = ("right top").asInstanceOf[`right top`]
   @scala.inline
   def rightBottom: rightBottom = "rightBottom".asInstanceOf[rightBottom]
   @scala.inline

@@ -19,20 +19,18 @@ trait ActionState extends js.Object
 
 object ActionState {
   @scala.inline
-  def active: typings.microsoftGraph.microsoftGraphStrings.active = this.cast("active")
+  def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
   @scala.inline
-  def canceled: typings.microsoftGraph.microsoftGraphStrings.canceled = this.cast("canceled")
+  def canceled: typings.microsoftGraph.microsoftGraphStrings.canceled = "canceled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def done: typings.microsoftGraph.microsoftGraphStrings.done = "done".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.done]
   @scala.inline
-  def done: typings.microsoftGraph.microsoftGraphStrings.done = this.cast("done")
+  def failed: failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
-  def failed: failed_ = this.cast("failed")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
+  def notSupported: typings.microsoftGraph.microsoftGraphStrings.notSupported = "notSupported".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSupported]
   @scala.inline
-  def notSupported: typings.microsoftGraph.microsoftGraphStrings.notSupported = this.cast("notSupported")
-  @scala.inline
-  def pending: typings.microsoftGraph.microsoftGraphStrings.pending = this.cast("pending")
+  def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
 }
 

@@ -16,7 +16,6 @@ object DescribeSolutionRequest {
   @scala.inline
   def apply(solutionArn: Arn): DescribeSolutionRequest = {
     val __obj = js.Dynamic.literal(solutionArn = solutionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSolutionRequest]
   }
 }

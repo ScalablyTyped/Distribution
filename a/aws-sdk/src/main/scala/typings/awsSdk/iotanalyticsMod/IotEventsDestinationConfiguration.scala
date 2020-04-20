@@ -20,7 +20,6 @@ object IotEventsDestinationConfiguration {
   @scala.inline
   def apply(inputName: IotEventsInputName, roleArn: RoleArn): IotEventsDestinationConfiguration = {
     val __obj = js.Dynamic.literal(inputName = inputName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IotEventsDestinationConfiguration]
   }
 }

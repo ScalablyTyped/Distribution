@@ -16,18 +16,16 @@ trait FancyBoxInteractionTypes extends js.Object
 
 object FancyBoxInteractionTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def close: typings.fancybox.fancyboxStrings.close = "close".asInstanceOf[typings.fancybox.fancyboxStrings.close]
   @scala.inline
-  def close: typings.fancybox.fancyboxStrings.close = this.cast("close")
+  def `false`: typings.fancybox.fancyboxBooleans.`false` = false.asInstanceOf[typings.fancybox.fancyboxBooleans.`false`]
   @scala.inline
-  def `false`: typings.fancybox.fancyboxBooleans.`false` = this.cast(false)
+  def next: typings.fancybox.fancyboxStrings.next = "next".asInstanceOf[typings.fancybox.fancyboxStrings.next]
   @scala.inline
-  def next: typings.fancybox.fancyboxStrings.next = this.cast("next")
+  def nextOrClose: typings.fancybox.fancyboxStrings.nextOrClose = "nextOrClose".asInstanceOf[typings.fancybox.fancyboxStrings.nextOrClose]
   @scala.inline
-  def nextOrClose: typings.fancybox.fancyboxStrings.nextOrClose = this.cast("nextOrClose")
+  def toggleControls: typings.fancybox.fancyboxStrings.toggleControls = "toggleControls".asInstanceOf[typings.fancybox.fancyboxStrings.toggleControls]
   @scala.inline
-  def toggleControls: typings.fancybox.fancyboxStrings.toggleControls = this.cast("toggleControls")
-  @scala.inline
-  def zoom: typings.fancybox.fancyboxStrings.zoom = this.cast("zoom")
+  def zoom: typings.fancybox.fancyboxStrings.zoom = "zoom".asInstanceOf[typings.fancybox.fancyboxStrings.zoom]
 }
 

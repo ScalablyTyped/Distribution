@@ -13,12 +13,10 @@ trait RaphaelTextAnchorType extends js.Object
 
 object RaphaelTextAnchorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def end: typings.raphael.raphaelStrings.end = "end".asInstanceOf[typings.raphael.raphaelStrings.end]
   @scala.inline
-  def end: typings.raphael.raphaelStrings.end = this.cast("end")
+  def middle: typings.raphael.raphaelStrings.middle = "middle".asInstanceOf[typings.raphael.raphaelStrings.middle]
   @scala.inline
-  def middle: typings.raphael.raphaelStrings.middle = this.cast("middle")
-  @scala.inline
-  def start: typings.raphael.raphaelStrings.start = this.cast("start")
+  def start: typings.raphael.raphaelStrings.start = "start".asInstanceOf[typings.raphael.raphaelStrings.start]
 }
 

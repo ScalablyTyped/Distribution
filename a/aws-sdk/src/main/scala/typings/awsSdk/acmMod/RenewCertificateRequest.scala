@@ -16,7 +16,6 @@ object RenewCertificateRequest {
   @scala.inline
   def apply(CertificateArn: Arn): RenewCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenewCertificateRequest]
   }
 }

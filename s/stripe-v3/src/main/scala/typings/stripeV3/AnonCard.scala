@@ -12,7 +12,6 @@ object AnonCard {
   @scala.inline
   def apply(card: String): AnonCard = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCard]
   }
 }

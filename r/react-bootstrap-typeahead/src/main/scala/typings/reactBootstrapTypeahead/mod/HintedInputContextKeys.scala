@@ -14,14 +14,12 @@ trait HintedInputContextKeys extends js.Object
 
 object HintedInputContextKeys {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hintText: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText = "hintText".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText]
   @scala.inline
-  def hintText: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText = this.cast("hintText")
+  def initialItem: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem = "initialItem".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem]
   @scala.inline
-  def initialItem: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem = this.cast("initialItem")
+  def onAdd: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd = "onAdd".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd]
   @scala.inline
-  def onAdd: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd = this.cast("onAdd")
-  @scala.inline
-  def selectHintOnEnter: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter = this.cast("selectHintOnEnter")
+  def selectHintOnEnter: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter = "selectHintOnEnter".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter]
 }
 

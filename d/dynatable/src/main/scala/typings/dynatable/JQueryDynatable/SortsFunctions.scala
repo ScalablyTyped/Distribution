@@ -43,7 +43,6 @@ object SortsFunctions {
     string: (js.Any, js.Any, String, Double) => Double
   ): SortsFunctions = {
     val __obj = js.Dynamic.literal(number = js.Any.fromFunction4(number), originalPlacement = js.Any.fromFunction2(originalPlacement), string = js.Any.fromFunction4(string))
-  
     __obj.asInstanceOf[SortsFunctions]
   }
 }

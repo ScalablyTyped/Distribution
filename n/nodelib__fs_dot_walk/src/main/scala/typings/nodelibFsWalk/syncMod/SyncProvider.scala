@@ -21,7 +21,6 @@ object SyncProvider {
     read: () => js.Array[Entry]
   ): SyncProvider = {
     val __obj = js.Dynamic.literal(_reader = _reader.asInstanceOf[js.Any], _root = _root.asInstanceOf[js.Any], _settings = _settings.asInstanceOf[js.Any], read = js.Any.fromFunction0(read))
-  
     __obj.asInstanceOf[SyncProvider]
   }
 }

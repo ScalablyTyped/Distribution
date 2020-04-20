@@ -38,7 +38,6 @@ object DayTableInterface {
     updateDayTable: () => js.Any
   ): DayTableInterface = {
     val __obj = js.Dynamic.literal(bookendCells = js.Any.fromFunction1(bookendCells), colCnt = colCnt.asInstanceOf[js.Any], dayDates = dayDates.asInstanceOf[js.Any], daysPerRow = daysPerRow.asInstanceOf[js.Any], getCellDate = js.Any.fromFunction2(getCellDate), getCellRange = js.Any.fromFunction2(getCellRange), renderBgTrHtml = js.Any.fromFunction1(renderBgTrHtml), renderHeadHtml = js.Any.fromFunction0(renderHeadHtml), renderIntroHtml = js.Any.fromFunction0(renderIntroHtml), rowCnt = rowCnt.asInstanceOf[js.Any], sliceRangeByDay = js.Any.fromFunction1(sliceRangeByDay), sliceRangeByRow = js.Any.fromFunction1(sliceRangeByRow), updateDayTable = js.Any.fromFunction0(updateDayTable))
-  
     __obj.asInstanceOf[DayTableInterface]
   }
 }

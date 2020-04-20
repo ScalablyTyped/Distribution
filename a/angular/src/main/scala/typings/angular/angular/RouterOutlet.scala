@@ -64,7 +64,6 @@ object RouterOutlet {
     routerCanReuse: ComponentInstruction => js.Any
   ): RouterOutlet = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), deactivate = js.Any.fromFunction1(deactivate), name = name.asInstanceOf[js.Any], reuse = js.Any.fromFunction1(reuse), routerCanDeactivate = js.Any.fromFunction1(routerCanDeactivate), routerCanReuse = js.Any.fromFunction1(routerCanReuse))
-  
     __obj.asInstanceOf[RouterOutlet]
   }
 }

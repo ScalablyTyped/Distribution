@@ -102,7 +102,7 @@ class WebXRMotionControllerTeleportation protected () extends WebXRAbstractFeatu
   /**
     * Get the snapPointsOnly flag
     */
-  def snapPointsOnly(): Boolean = js.native
+  def snapPointsOnly: Boolean = js.native
   /**
     * Sets the snapPointsOnly flag
     * @param snapToPoints should teleportation be exclusively to snap points

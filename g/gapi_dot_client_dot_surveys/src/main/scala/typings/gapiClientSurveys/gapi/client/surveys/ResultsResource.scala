@@ -18,7 +18,6 @@ object ResultsResource {
   @scala.inline
   def apply(get: AnonKey => Request_[SurveyResults]): ResultsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[ResultsResource]
   }
 }

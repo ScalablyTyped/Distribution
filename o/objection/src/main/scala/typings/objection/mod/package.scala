@@ -118,7 +118,7 @@ package object mod {
     */
   type ModelObject[T /* <: typings.objection.mod.Model */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in objection.objection.NonFunctionPropertyNames<T> ]: T[K]}
-    */ typings.objection.objectionStrings.ModelObject with T
+    */ typings.objection.objectionStrings.ModelObject with org.scalablytyped.runtime.TopLevel[T]
   /**
     * Extracts the property names (excluding relations) of a model class.
     */
@@ -182,13 +182,13 @@ package object mod {
     */
   type PartialModelGraph[M, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in objection.objection.NonFunctionPropertyNames<T> ]:? objection.objection.Defined<T[K]> extends objection.objection.Model? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias objection.objection.PartialModelGraph<objection.objection.Defined<T[K]>, objection.objection.Defined<T[K]> & objection.objection.GraphParameters> * / object : objection.objection.Defined<T[K]> extends std.Array<infer I>? any extends objection.objection.Model? std.Array</ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias objection.objection.PartialModelGraph<I, I & objection.objection.GraphParameters> * / object> : objection.objection.Expression<T[K]> : objection.objection.Expression<T[K]>}
-    */ typings.objection.objectionStrings.PartialModelGraph with js.Any
+    */ typings.objection.objectionStrings.PartialModelGraph with org.scalablytyped.runtime.TopLevel[js.Any]
   /**
     * Any object that has some of the properties of model class T match this type.
     */
   type PartialModelObject[T /* <: typings.objection.mod.Model */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in objection.objection.NonFunctionPropertyNames<T> ]:? objection.objection.Defined<T[K]> extends objection.objection.Model? T[K] : objection.objection.Defined<T[K]> extends std.Array<infer I>? any extends objection.objection.Model? std.Array<any> : objection.objection.Expression<T[K]> : objection.objection.Expression<T[K]>}
-    */ typings.objection.objectionStrings.PartialModelObject with js.Any
+    */ typings.objection.objectionStrings.PartialModelObject with org.scalablytyped.runtime.TopLevel[js.Any]
   type Plugin = js.Function1[/* modelClass */ typings.objection.TypeofModel, typings.objection.TypeofModel]
   type Pojo = org.scalablytyped.runtime.StringDictionary[js.Any]
   type PrimitiveValue = java.lang.String | scala.Double | scala.Boolean | typings.std.Date | (js.Array[scala.Boolean | typings.std.Date | scala.Double | java.lang.String]) | scala.Null | typings.node.Buffer

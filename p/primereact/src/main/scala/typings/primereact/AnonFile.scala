@@ -14,7 +14,6 @@ object AnonFile {
   @scala.inline
   def apply(file: js.Any, originalEvent: Event_): AnonFile = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFile]
   }
 }

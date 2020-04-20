@@ -12,7 +12,6 @@ object AnonEmoticonsEnabled {
   @scala.inline
   def apply(emoticonsEnabled: Boolean): AnonEmoticonsEnabled = {
     val __obj = js.Dynamic.literal(emoticonsEnabled = emoticonsEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmoticonsEnabled]
   }
 }

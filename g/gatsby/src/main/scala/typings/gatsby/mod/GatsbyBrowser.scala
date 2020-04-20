@@ -1,5 +1,6 @@
 package typings.gatsby.mod
 
+import typings.reactDom.mod.Renderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +23,9 @@ trait GatsbyBrowser extends js.Object {
   var replaceComponentRenderer: js.UndefOr[
     js.Function2[/* args */ ReplaceComponentRendererArgs, /* options */ PluginOptions, _]
   ] = js.undefined
-  var replaceHydrateFunction: js.UndefOr[js.Function2[/* args */ BrowserPluginArgs, /* options */ PluginOptions, _]] = js.undefined
+  var replaceHydrateFunction: js.UndefOr[
+    js.Function2[/* args */ BrowserPluginArgs, /* options */ PluginOptions, Renderer]
+  ] = js.undefined
   var shouldUpdateScroll: js.UndefOr[js.Function2[/* args */ ShouldUpdateScrollArgs, /* options */ PluginOptions, _]] = js.undefined
   var wrapPageElement: js.UndefOr[
     js.Function2[
@@ -54,7 +57,7 @@ object GatsbyBrowser {
     onServiceWorkerUpdateReady: (/* args */ ServiceWorkerArgs, /* options */ PluginOptions) => _ = null,
     registerServiceWorker: (/* args */ BrowserPluginArgs, /* options */ PluginOptions) => _ = null,
     replaceComponentRenderer: (/* args */ ReplaceComponentRendererArgs, /* options */ PluginOptions) => _ = null,
-    replaceHydrateFunction: (/* args */ BrowserPluginArgs, /* options */ PluginOptions) => _ = null,
+    replaceHydrateFunction: (/* args */ BrowserPluginArgs, /* options */ PluginOptions) => Renderer = null,
     shouldUpdateScroll: (/* args */ ShouldUpdateScrollArgs, /* options */ PluginOptions) => _ = null,
     wrapPageElement: (/* args */ WrapPageElementBrowserArgs[js.Object, js.Object], /* options */ PluginOptions) => _ = null,
     wrapRootElement: (/* args */ WrapRootElementBrowserArgs, /* options */ PluginOptions) => _ = null

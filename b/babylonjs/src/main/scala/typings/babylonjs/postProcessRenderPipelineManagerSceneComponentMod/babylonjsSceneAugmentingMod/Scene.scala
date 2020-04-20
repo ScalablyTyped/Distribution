@@ -23,7 +23,6 @@ object Scene {
     postProcessRenderPipelineManager: PostProcessRenderPipelineManager
   ): Scene = {
     val __obj = js.Dynamic.literal(_postProcessRenderPipelineManager = _postProcessRenderPipelineManager.asInstanceOf[js.Any], postProcessRenderPipelineManager = postProcessRenderPipelineManager.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scene]
   }
 }

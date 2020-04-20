@@ -16,7 +16,6 @@ object DeleteModelInput {
   @scala.inline
   def apply(ModelName: ModelName): DeleteModelInput = {
     val __obj = js.Dynamic.literal(ModelName = ModelName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteModelInput]
   }
 }

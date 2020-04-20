@@ -13,7 +13,6 @@ object ApplyTicketResponsePayload {
   @scala.inline
   def apply(result: AnonComment): ApplyTicketResponsePayload = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplyTicketResponsePayload]
   }
 }

@@ -13,7 +13,6 @@ object EditResponseCookie {
   @scala.inline
   def apply(filter: ResponseCookie, modification: ResponseCookie): EditResponseCookie = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], modification = modification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditResponseCookie]
   }
 }

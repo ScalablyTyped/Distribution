@@ -12,7 +12,6 @@ object TimelineFeedResponseClientGapEnforcerMatrixItem {
   @scala.inline
   def apply(list: js.Array[Double]): TimelineFeedResponseClientGapEnforcerMatrixItem = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimelineFeedResponseClientGapEnforcerMatrixItem]
   }
 }

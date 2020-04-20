@@ -13,7 +13,6 @@ object AnonDistanceInWords {
   @scala.inline
   def apply(distanceInWords: (js.Any, js.Any, js.Any) => js.Any, format: () => js.Any): AnonDistanceInWords = {
     val __obj = js.Dynamic.literal(distanceInWords = js.Any.fromFunction3(distanceInWords), format = js.Any.fromFunction0(format))
-  
     __obj.asInstanceOf[AnonDistanceInWords]
   }
 }

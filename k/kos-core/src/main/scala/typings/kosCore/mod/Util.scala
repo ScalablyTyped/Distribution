@@ -14,7 +14,6 @@ object Util {
   @scala.inline
   def apply(getActionType: String => AnonNamespace, getParam: () => js.Any): Util = {
     val __obj = js.Dynamic.literal(getActionType = js.Any.fromFunction1(getActionType), getParam = js.Any.fromFunction0(getParam))
-  
     __obj.asInstanceOf[Util]
   }
 }

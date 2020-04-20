@@ -29,7 +29,6 @@ object sql_ {
   @scala.inline
   def apply(case_insensitive: Boolean, defaultMode: js.Object, modes: js.Array[_]): sql_ = {
     val __obj = js.Dynamic.literal(case_insensitive = case_insensitive.asInstanceOf[js.Any], defaultMode = defaultMode.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[sql_]
   }
 }

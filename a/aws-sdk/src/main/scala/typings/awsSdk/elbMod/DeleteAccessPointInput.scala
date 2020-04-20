@@ -16,7 +16,6 @@ object DeleteAccessPointInput {
   @scala.inline
   def apply(LoadBalancerName: AccessPointName): DeleteAccessPointInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAccessPointInput]
   }
 }

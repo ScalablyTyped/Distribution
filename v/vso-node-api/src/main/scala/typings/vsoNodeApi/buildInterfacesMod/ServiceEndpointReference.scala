@@ -15,7 +15,6 @@ object ServiceEndpointReference {
   @scala.inline
   def apply(alias: String, id: String): ServiceEndpointReference = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceEndpointReference]
   }
 }

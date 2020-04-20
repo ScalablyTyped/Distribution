@@ -26,22 +26,20 @@ trait XlLineStyle extends js.Object
 
 object XlLineStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlContinuous: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlContinuous: `1` = this.cast(1)
+  def xlDash: `-4115` = -4115.asInstanceOf[`-4115`]
   @scala.inline
-  def xlDash: `-4115` = this.cast(-4115)
+  def xlDashDot: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlDashDot: `4` = this.cast(4)
+  def xlDashDotDot: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlDashDotDot: `5` = this.cast(5)
+  def xlDot: `-4118` = -4118.asInstanceOf[`-4118`]
   @scala.inline
-  def xlDot: `-4118` = this.cast(-4118)
+  def xlDouble: `-4119` = -4119.asInstanceOf[`-4119`]
   @scala.inline
-  def xlDouble: `-4119` = this.cast(-4119)
+  def xlLineStyleNone: `-4142` = -4142.asInstanceOf[`-4142`]
   @scala.inline
-  def xlLineStyleNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlSlantDashDot: `13` = this.cast(13)
+  def xlSlantDashDot: `13` = 13.asInstanceOf[`13`]
 }
 

@@ -13,7 +13,6 @@ object DeleteOutpostInput {
   @scala.inline
   def apply(OutpostId: OutpostId): DeleteOutpostInput = {
     val __obj = js.Dynamic.literal(OutpostId = OutpostId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteOutpostInput]
   }
 }

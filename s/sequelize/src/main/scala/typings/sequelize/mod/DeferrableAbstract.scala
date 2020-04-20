@@ -22,7 +22,6 @@ object DeferrableAbstract {
   @scala.inline
   def apply(toSql: () => String): DeferrableAbstract = {
     val __obj = js.Dynamic.literal(toSql = js.Any.fromFunction0(toSql))
-  
     __obj.asInstanceOf[DeferrableAbstract]
   }
 }

@@ -55,7 +55,6 @@ object GetMountTargetResult {
     subnetId: String
   ): GetMountTargetResult = {
     val __obj = js.Dynamic.literal(dnsName = dnsName.asInstanceOf[js.Any], fileSystemArn = fileSystemArn.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ipAddress = ipAddress.asInstanceOf[js.Any], mountTargetId = mountTargetId.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMountTargetResult]
   }
 }

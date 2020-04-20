@@ -20,7 +20,6 @@ object IUiGridTreeViewConstants {
     rowHeaderColName: String
   ): IUiGridTreeViewConstants = {
     val __obj = js.Dynamic.literal(COLLAPSED = COLLAPSED.asInstanceOf[js.Any], EXPANDED = EXPANDED.asInstanceOf[js.Any], aggregation = aggregation.asInstanceOf[js.Any], featureName = featureName.asInstanceOf[js.Any], rowHeaderColName = rowHeaderColName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUiGridTreeViewConstants]
   }
 }

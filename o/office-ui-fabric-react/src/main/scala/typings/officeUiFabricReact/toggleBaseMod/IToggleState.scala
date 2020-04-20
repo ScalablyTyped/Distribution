@@ -12,7 +12,6 @@ object IToggleState {
   @scala.inline
   def apply(checked: Boolean): IToggleState = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IToggleState]
   }
 }

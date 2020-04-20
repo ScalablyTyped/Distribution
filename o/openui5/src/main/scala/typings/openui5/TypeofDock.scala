@@ -72,7 +72,6 @@ object TypeofDock {
     RightTop: js.Any
   ): TypeofDock = {
     val __obj = js.Dynamic.literal(BeginBottom = BeginBottom.asInstanceOf[js.Any], BeginCenter = BeginCenter.asInstanceOf[js.Any], BeginTop = BeginTop.asInstanceOf[js.Any], CenterBottom = CenterBottom.asInstanceOf[js.Any], CenterCenter = CenterCenter.asInstanceOf[js.Any], CenterTop = CenterTop.asInstanceOf[js.Any], EndBottom = EndBottom.asInstanceOf[js.Any], EndCenter = EndCenter.asInstanceOf[js.Any], EndTop = EndTop.asInstanceOf[js.Any], LeftBottom = LeftBottom.asInstanceOf[js.Any], LeftCenter = LeftCenter.asInstanceOf[js.Any], LeftTop = LeftTop.asInstanceOf[js.Any], RightBottom = RightBottom.asInstanceOf[js.Any], RightCenter = RightCenter.asInstanceOf[js.Any], RightTop = RightTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDock]
   }
 }

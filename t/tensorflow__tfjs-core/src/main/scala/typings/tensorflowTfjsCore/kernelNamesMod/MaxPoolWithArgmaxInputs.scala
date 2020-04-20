@@ -13,7 +13,6 @@ object MaxPoolWithArgmaxInputs {
   @scala.inline
   def apply(x: js.Any): MaxPoolWithArgmaxInputs = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MaxPoolWithArgmaxInputs]
   }
 }

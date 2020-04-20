@@ -15,10 +15,8 @@ trait Standby extends js.Object
 
 object Standby {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def never: typings.luminoPolling.luminoPollingStrings.never = "never".asInstanceOf[typings.luminoPolling.luminoPollingStrings.never]
   @scala.inline
-  def never: typings.luminoPolling.luminoPollingStrings.never = this.cast("never")
-  @scala.inline
-  def `when-hidden`: typings.luminoPolling.luminoPollingStrings.`when-hidden` = this.cast("when-hidden")
+  def `when-hidden`: typings.luminoPolling.luminoPollingStrings.`when-hidden` = "when-hidden".asInstanceOf[typings.luminoPolling.luminoPollingStrings.`when-hidden`]
 }
 

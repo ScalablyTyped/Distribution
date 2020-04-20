@@ -30,13 +30,13 @@ class NanoflowSource protected () extends DataSource {
   var model_FNanoflowSource: IModel = js.native
   def nanoflow(): js.Any = js.native
   def nanoflow(newValue: INanoflow): js.Any = js.native
-  def nanoflowQualifiedName(): String | Null = js.native
+  def nanoflowQualifiedName: String | Null = js.native
   @JSName("nanoflow")
-  def nanoflow_Union(): INanoflow | Null = js.native
+  def nanoflow_Union: INanoflow | Null = js.native
   /**
     * In version 7.19.0: introduced
     */
-  def parameterMappings(): IList[NanoflowParameterMapping] = js.native
+  def parameterMappings: IList[NanoflowParameterMapping] = js.native
 }
 
 /* static members */

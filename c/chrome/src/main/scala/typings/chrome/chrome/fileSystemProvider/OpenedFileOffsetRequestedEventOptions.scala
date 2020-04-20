@@ -15,7 +15,6 @@ object OpenedFileOffsetRequestedEventOptions {
   @scala.inline
   def apply(fileSystemId: String, length: Double, offset: Double, openRequestId: Double, requestId: Double): OpenedFileOffsetRequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenedFileOffsetRequestedEventOptions]
   }
 }

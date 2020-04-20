@@ -13,7 +13,6 @@ object AnonReceiverPath {
   @scala.inline
   def apply(receiverPath: String, scope: String): AnonReceiverPath = {
     val __obj = js.Dynamic.literal(receiverPath = receiverPath.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReceiverPath]
   }
 }

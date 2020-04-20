@@ -12,7 +12,6 @@ object AnonVerbatim {
   @scala.inline
   def apply(verbatim: String): AnonVerbatim = {
     val __obj = js.Dynamic.literal(verbatim = verbatim.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVerbatim]
   }
 }

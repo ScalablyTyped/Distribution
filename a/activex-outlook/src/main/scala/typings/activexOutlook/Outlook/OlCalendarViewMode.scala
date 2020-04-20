@@ -20,16 +20,14 @@ trait OlCalendarViewMode extends js.Object
 
 object OlCalendarViewMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olCalendarView5DayWeek: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olCalendarView5DayWeek: `4` = this.cast(4)
+  def olCalendarViewDay: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olCalendarViewDay: `0` = this.cast(0)
+  def olCalendarViewMonth: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olCalendarViewMonth: `2` = this.cast(2)
+  def olCalendarViewMultiDay: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olCalendarViewMultiDay: `3` = this.cast(3)
-  @scala.inline
-  def olCalendarViewWeek: `1` = this.cast(1)
+  def olCalendarViewWeek: `1` = 1.asInstanceOf[`1`]
 }
 

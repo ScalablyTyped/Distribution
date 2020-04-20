@@ -20,7 +20,6 @@ object UpdateRoleDescriptionRequest {
   @scala.inline
   def apply(Description: roleDescriptionType, RoleName: roleNameType): UpdateRoleDescriptionRequest = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateRoleDescriptionRequest]
   }
 }

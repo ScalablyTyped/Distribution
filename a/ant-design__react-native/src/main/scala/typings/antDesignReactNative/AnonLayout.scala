@@ -12,7 +12,6 @@ object AnonLayout {
   @scala.inline
   def apply(layout: String): AnonLayout = {
     val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLayout]
   }
 }

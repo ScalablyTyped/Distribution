@@ -13,7 +13,6 @@ object AnonBorderRadiusOverflow {
   @scala.inline
   def apply(borderRadius: Double, overflow: String): AnonBorderRadiusOverflow = {
     val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderRadiusOverflow]
   }
 }

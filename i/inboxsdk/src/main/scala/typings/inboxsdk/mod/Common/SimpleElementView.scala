@@ -23,7 +23,6 @@ object SimpleElementView {
     on: (destroy, js.Function0[Unit]) => Unit
   ): SimpleElementView = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), destroyed = destroyed.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], on = js.Any.fromFunction2(on))
-  
     __obj.asInstanceOf[SimpleElementView]
   }
 }

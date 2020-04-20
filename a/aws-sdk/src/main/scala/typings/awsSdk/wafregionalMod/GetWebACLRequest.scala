@@ -16,7 +16,6 @@ object GetWebACLRequest {
   @scala.inline
   def apply(WebACLId: ResourceId): GetWebACLRequest = {
     val __obj = js.Dynamic.literal(WebACLId = WebACLId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetWebACLRequest]
   }
 }

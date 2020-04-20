@@ -12,7 +12,6 @@ object AsObject {
   @scala.inline
   def apply(statusListList: js.Array[typings.libraCore.vmErrorsPbMod.VMVerificationStatus.AsObject]): AsObject = {
     val __obj = js.Dynamic.literal(statusListList = statusListList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

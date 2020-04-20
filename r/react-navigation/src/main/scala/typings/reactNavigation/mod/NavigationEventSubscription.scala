@@ -12,7 +12,6 @@ object NavigationEventSubscription {
   @scala.inline
   def apply(remove: () => Unit): NavigationEventSubscription = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[NavigationEventSubscription]
   }
 }

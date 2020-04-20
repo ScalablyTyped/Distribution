@@ -12,7 +12,6 @@ object ICredentialFactory {
   @scala.inline
   def apply(createPasswordCredential: (String, String, String) => PasswordCredential): ICredentialFactory = {
     val __obj = js.Dynamic.literal(createPasswordCredential = js.Any.fromFunction3(createPasswordCredential))
-  
     __obj.asInstanceOf[ICredentialFactory]
   }
 }

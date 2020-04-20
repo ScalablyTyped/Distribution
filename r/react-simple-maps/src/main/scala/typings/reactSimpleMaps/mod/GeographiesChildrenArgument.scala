@@ -17,7 +17,6 @@ object GeographiesChildrenArgument {
   @scala.inline
   def apply(geographies: js.Array[_], path: GeoPath_[_, GeoPermissibleObjects], projection: GeoProjection_): GeographiesChildrenArgument = {
     val __obj = js.Dynamic.literal(geographies = geographies.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeographiesChildrenArgument]
   }
 }

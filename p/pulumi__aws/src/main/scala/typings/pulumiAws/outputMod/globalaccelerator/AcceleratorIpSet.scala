@@ -20,7 +20,6 @@ object AcceleratorIpSet {
   @scala.inline
   def apply(ipAddresses: js.Array[String], ipFamily: String): AcceleratorIpSet = {
     val __obj = js.Dynamic.literal(ipAddresses = ipAddresses.asInstanceOf[js.Any], ipFamily = ipFamily.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AcceleratorIpSet]
   }
 }

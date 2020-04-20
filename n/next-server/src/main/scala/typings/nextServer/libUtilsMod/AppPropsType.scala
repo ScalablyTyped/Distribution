@@ -16,7 +16,6 @@ object AppPropsType {
   @scala.inline
   def apply[R /* <: NextRouter */, P](Component: NextComponentType[NextPageContext, _, P], pageProps: js.Any, router: R): AppPropsType[R, P] = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], pageProps = pageProps.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppPropsType[R, P]]
   }
 }

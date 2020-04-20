@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait VueI18n_ extends js.Object {
   val availableLocales: js.Array[typings.vueI18n.mod.VueI18n.Locale] = js.native
   val dateTimeFormats: typings.vueI18n.mod.VueI18n.DateTimeFormats = js.native
-  var fallbackLocale: typings.vueI18n.mod.VueI18n.Locale = js.native
+  var fallbackLocale: typings.vueI18n.mod.VueI18n.FallbackLocale = js.native
   var formatFallbackMessages: Boolean = js.native
   var formatter: typings.vueI18n.mod.VueI18n.Formatter = js.native
   var locale: typings.vueI18n.mod.VueI18n.Locale = js.native
@@ -68,6 +68,7 @@ trait VueI18n_ extends js.Object {
   def n(value: Double, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def postTranslation(str: String): String = js.native
+  def postTranslation(str: String, key: String): String = js.native
   def setDateTimeFormat(locale: typings.vueI18n.mod.VueI18n.Locale, format: typings.vueI18n.mod.VueI18n.DateTimeFormat): Unit = js.native
   def setLocaleMessage(
     locale: typings.vueI18n.mod.VueI18n.Locale,

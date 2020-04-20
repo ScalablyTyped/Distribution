@@ -36,32 +36,30 @@ trait XlPictureConvertorType extends js.Object
 
 object XlPictureConvertorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlBMP: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlBMP: `1` = this.cast(1)
+  def xlCGM: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlCGM: `7` = this.cast(7)
+  def xlDRW: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlDRW: `4` = this.cast(4)
+  def xlDXF: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlDXF: `5` = this.cast(5)
+  def xlEPS: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlEPS: `8` = this.cast(8)
+  def xlHGL: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlHGL: `6` = this.cast(6)
+  def xlPCT: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlPCT: `13` = this.cast(13)
+  def xlPCX: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlPCX: `10` = this.cast(10)
+  def xlPIC: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlPIC: `11` = this.cast(11)
+  def xlPLT: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlPLT: `12` = this.cast(12)
+  def xlTIF: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlTIF: `9` = this.cast(9)
+  def xlWMF: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlWMF: `2` = this.cast(2)
-  @scala.inline
-  def xlWPG: `3` = this.cast(3)
+  def xlWPG: `3` = 3.asInstanceOf[`3`]
 }
 

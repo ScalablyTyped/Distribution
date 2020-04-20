@@ -13,7 +13,6 @@ object TypeofPinpointSMSVoice {
   @scala.inline
   def apply(Types: TypeofPinpointSMSVoice): TypeofPinpointSMSVoice = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofPinpointSMSVoice]
   }
 }

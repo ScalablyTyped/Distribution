@@ -12,7 +12,6 @@ object AnonEnumValuesAnonPartiallySucceeded {
   @scala.inline
   def apply(enumValues: AnonPartiallySucceeded): AnonEnumValuesAnonPartiallySucceeded = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonPartiallySucceeded]
   }
 }

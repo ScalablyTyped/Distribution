@@ -16,7 +16,6 @@ object DeleteSolutionRequest {
   @scala.inline
   def apply(solutionArn: Arn): DeleteSolutionRequest = {
     val __obj = js.Dynamic.literal(solutionArn = solutionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSolutionRequest]
   }
 }

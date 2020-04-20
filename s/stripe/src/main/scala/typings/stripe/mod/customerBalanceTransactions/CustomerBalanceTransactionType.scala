@@ -17,20 +17,18 @@ trait CustomerBalanceTransactionType extends js.Object
 
 object CustomerBalanceTransactionType {
   @scala.inline
-  def adjustment: typings.stripe.stripeStrings.adjustment = this.cast("adjustment")
+  def adjustment: typings.stripe.stripeStrings.adjustment = "adjustment".asInstanceOf[typings.stripe.stripeStrings.adjustment]
   @scala.inline
-  def applied_to_invoice: typings.stripe.stripeStrings.applied_to_invoice = this.cast("applied_to_invoice")
+  def applied_to_invoice: typings.stripe.stripeStrings.applied_to_invoice = "applied_to_invoice".asInstanceOf[typings.stripe.stripeStrings.applied_to_invoice]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def credit_note: typings.stripe.stripeStrings.credit_note = "credit_note".asInstanceOf[typings.stripe.stripeStrings.credit_note]
   @scala.inline
-  def credit_note: typings.stripe.stripeStrings.credit_note = this.cast("credit_note")
+  def initial: typings.stripe.stripeStrings.initial = "initial".asInstanceOf[typings.stripe.stripeStrings.initial]
   @scala.inline
-  def initial: typings.stripe.stripeStrings.initial = this.cast("initial")
+  def invoice_too_large: typings.stripe.stripeStrings.invoice_too_large = "invoice_too_large".asInstanceOf[typings.stripe.stripeStrings.invoice_too_large]
   @scala.inline
-  def invoice_too_large: typings.stripe.stripeStrings.invoice_too_large = this.cast("invoice_too_large")
+  def invoice_too_small: typings.stripe.stripeStrings.invoice_too_small = "invoice_too_small".asInstanceOf[typings.stripe.stripeStrings.invoice_too_small]
   @scala.inline
-  def invoice_too_small: typings.stripe.stripeStrings.invoice_too_small = this.cast("invoice_too_small")
-  @scala.inline
-  def unspent_receiver_credit: typings.stripe.stripeStrings.unspent_receiver_credit = this.cast("unspent_receiver_credit")
+  def unspent_receiver_credit: typings.stripe.stripeStrings.unspent_receiver_credit = "unspent_receiver_credit".asInstanceOf[typings.stripe.stripeStrings.unspent_receiver_credit]
 }
 

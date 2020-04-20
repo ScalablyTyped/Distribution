@@ -19,7 +19,6 @@ object ScrollOffsetCallbackResult {
   @scala.inline
   def apply(dataset: js.Object, id: String, scrollLeft: Double, scrollTop: Double): ScrollOffsetCallbackResult = {
     val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollOffsetCallbackResult]
   }
 }

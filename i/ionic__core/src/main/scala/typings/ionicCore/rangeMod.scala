@@ -120,12 +120,12 @@ object rangeMod extends js.Object {
     def disconnectedCallback_MRange(): Unit = js.native
     /* protected */ def maxChanged(): Unit = js.native
     /* protected */ def minChanged(): Unit = js.native
-    /* private */ def ratioLower(): js.Any = js.native
-    /* private */ def ratioUpper(): js.Any = js.native
+    /* private */ def ratioLower: js.Any = js.native
+    /* private */ def ratioUpper: js.Any = js.native
     @JSName("render")
     def render_MRange(): js.Any = js.native
-    /* private */ def valA(): js.Any = js.native
-    /* private */ def valB(): js.Any = js.native
+    /* private */ def valA: js.Any = js.native
+    /* private */ def valB: js.Any = js.native
     /* protected */ def valueChanged(value: RangeValue): Unit = js.native
   }
   

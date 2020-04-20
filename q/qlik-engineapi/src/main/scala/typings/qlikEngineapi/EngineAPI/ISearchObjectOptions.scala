@@ -28,7 +28,6 @@ object ISearchObjectOptions {
   @scala.inline
   def apply(qAttributes: js.Array[String], qCharEncoding: String): ISearchObjectOptions = {
     val __obj = js.Dynamic.literal(qAttributes = qAttributes.asInstanceOf[js.Any], qCharEncoding = qCharEncoding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchObjectOptions]
   }
 }

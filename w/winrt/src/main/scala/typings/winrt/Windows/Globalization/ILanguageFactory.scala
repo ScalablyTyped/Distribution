@@ -12,7 +12,6 @@ object ILanguageFactory {
   @scala.inline
   def apply(createLanguage: String => Language): ILanguageFactory = {
     val __obj = js.Dynamic.literal(createLanguage = js.Any.fromFunction1(createLanguage))
-  
     __obj.asInstanceOf[ILanguageFactory]
   }
 }

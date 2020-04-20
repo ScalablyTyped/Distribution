@@ -14,7 +14,6 @@ object AnonItemsVideoTrack {
   @scala.inline
   def apply(items: VideoTrack, returnValue: Double): AnonItemsVideoTrack = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsVideoTrack]
   }
 }

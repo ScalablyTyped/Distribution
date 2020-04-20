@@ -16,7 +16,6 @@ object CreatePullRequestOutput {
   @scala.inline
   def apply(pullRequest: PullRequest): CreatePullRequestOutput = {
     val __obj = js.Dynamic.literal(pullRequest = pullRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePullRequestOutput]
   }
 }

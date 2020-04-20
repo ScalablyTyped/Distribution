@@ -13,7 +13,6 @@ object AclSet {
   @scala.inline
   def apply(allows: js.Array[AclAllow], roles: strings): AclSet = {
     val __obj = js.Dynamic.literal(allows = allows.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AclSet]
   }
 }

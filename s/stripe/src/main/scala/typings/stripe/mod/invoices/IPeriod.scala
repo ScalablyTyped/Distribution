@@ -19,7 +19,6 @@ object IPeriod {
   @scala.inline
   def apply(end: Double, start: Double): IPeriod = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPeriod]
   }
 }

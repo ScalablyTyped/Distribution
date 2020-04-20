@@ -12,7 +12,6 @@ object LeaseStats {
   @scala.inline
   def apply(onEvent: EventType => Unit): LeaseStats = {
     val __obj = js.Dynamic.literal(onEvent = js.Any.fromFunction1(onEvent))
-  
     __obj.asInstanceOf[LeaseStats]
   }
 }

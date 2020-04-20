@@ -12,7 +12,6 @@ object AnonCacheSize {
   @scala.inline
   def apply(cacheSize: Double): AnonCacheSize = {
     val __obj = js.Dynamic.literal(cacheSize = cacheSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCacheSize]
   }
 }

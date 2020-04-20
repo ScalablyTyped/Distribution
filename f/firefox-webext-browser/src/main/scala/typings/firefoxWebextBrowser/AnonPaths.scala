@@ -17,7 +17,6 @@ object AnonPaths {
   @scala.inline
   def apply(paths: APIPaths, scopes: js.Array[APIChildScope], script: ExperimentURL): AnonPaths = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPaths]
   }
 }

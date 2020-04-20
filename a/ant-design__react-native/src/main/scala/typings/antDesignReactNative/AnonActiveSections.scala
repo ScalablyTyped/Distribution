@@ -12,7 +12,6 @@ object AnonActiveSections {
   @scala.inline
   def apply(activeSections: js.Array[Double]): AnonActiveSections = {
     val __obj = js.Dynamic.literal(activeSections = activeSections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveSections]
   }
 }

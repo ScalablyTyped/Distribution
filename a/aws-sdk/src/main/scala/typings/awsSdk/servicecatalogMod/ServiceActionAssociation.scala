@@ -24,7 +24,6 @@ object ServiceActionAssociation {
   @scala.inline
   def apply(ProductId: Id, ProvisioningArtifactId: Id, ServiceActionId: Id): ServiceActionAssociation = {
     val __obj = js.Dynamic.literal(ProductId = ProductId.asInstanceOf[js.Any], ProvisioningArtifactId = ProvisioningArtifactId.asInstanceOf[js.Any], ServiceActionId = ServiceActionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceActionAssociation]
   }
 }

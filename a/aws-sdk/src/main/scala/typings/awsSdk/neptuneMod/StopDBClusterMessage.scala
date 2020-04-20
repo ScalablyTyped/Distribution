@@ -16,7 +16,6 @@ object StopDBClusterMessage {
   @scala.inline
   def apply(DBClusterIdentifier: String): StopDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopDBClusterMessage]
   }
 }

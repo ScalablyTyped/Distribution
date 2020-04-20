@@ -18,20 +18,18 @@ trait OptimizerClassName extends js.Object
 
 object OptimizerClassName {
   @scala.inline
-  def Adadelta: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adadelta = this.cast("Adadelta")
+  def Adadelta: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adadelta = "Adadelta".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adadelta]
   @scala.inline
-  def Adagrad: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adagrad = this.cast("Adagrad")
+  def Adagrad: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adagrad = "Adagrad".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adagrad]
   @scala.inline
-  def Adam: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adam = this.cast("Adam")
+  def Adam: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adam = "Adam".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adam]
   @scala.inline
-  def Adamax: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adamax = this.cast("Adamax")
+  def Adamax: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adamax = "Adamax".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adamax]
   @scala.inline
-  def Momentum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Momentum = this.cast("Momentum")
+  def Momentum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Momentum = "Momentum".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Momentum]
   @scala.inline
-  def RMSProp: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RMSProp = this.cast("RMSProp")
+  def RMSProp: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RMSProp = "RMSProp".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RMSProp]
   @scala.inline
-  def SGD: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SGD = this.cast("SGD")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SGD: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SGD = "SGD".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SGD]
 }
 

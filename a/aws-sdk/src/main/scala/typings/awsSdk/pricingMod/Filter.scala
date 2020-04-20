@@ -24,7 +24,6 @@ object Filter {
   @scala.inline
   def apply(Field: String, Type: FilterType, Value: String): Filter = {
     val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Filter]
   }
 }

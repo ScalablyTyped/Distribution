@@ -1,11 +1,12 @@
 package typings.pdfmake
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.pdfkit.PDFKit.PDFDocument
 import typings.pdfmake.interfacesMod.BufferOptions
+import typings.pdfmake.interfacesMod.CustomTableLayout
 import typings.pdfmake.interfacesMod.TDocumentDefinitions
 import typings.pdfmake.interfacesMod.TFontDictionary
-import typings.pdfmake.interfacesMod.TableLayout
 import typings.std.Blob
 import typings.std.Window_
 import scala.scalajs.js
@@ -43,16 +44,24 @@ object pdfmakeMod extends js.Object {
   }
   
   var fonts: TFontDictionary = js.native
-  var tableLayouts: TableLayout = js.native
-  var vfs: TFontDictionary = js.native
   def createPdf(documentDefinitions: TDocumentDefinitions): TCreatedPdf = js.native
-  def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: TableLayout): TCreatedPdf = js.native
-  def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: TableLayout, fonts: TFontDictionary): TCreatedPdf = js.native
+  def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: StringDictionary[CustomTableLayout]): TCreatedPdf = js.native
   def createPdf(
     documentDefinitions: TDocumentDefinitions,
-    tableLayouts: TableLayout,
-    fonts: TFontDictionary,
-    vfs: TFontDictionary
+    tableLayouts: StringDictionary[CustomTableLayout],
+    fonts: TFontDictionary
   ): TCreatedPdf = js.native
+  def createPdf(
+    documentDefinitions: TDocumentDefinitions,
+    tableLayouts: StringDictionary[CustomTableLayout],
+    fonts: TFontDictionary,
+    vfs: StringDictionary[String]
+  ): TCreatedPdf = js.native
+  @js.native
+  object tableLayouts extends /* name */ StringDictionary[CustomTableLayout]
+  
+  @js.native
+  object vfs extends /* file */ StringDictionary[String]
+  
 }
 

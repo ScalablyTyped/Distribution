@@ -24,7 +24,6 @@ object RowRendererContext {
     rowContext: AnonDatasource[K, D]
   ): RowRendererContext[K, D] = {
     val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], rowContext = rowContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowRendererContext[K, D]]
   }
 }

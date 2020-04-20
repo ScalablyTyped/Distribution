@@ -42,38 +42,36 @@ trait MsoBalloonButtonType extends js.Object
 
 object MsoBalloonButtonType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBalloonButtonAbort: `-8` = -8.asInstanceOf[`-8`]
   @scala.inline
-  def msoBalloonButtonAbort: `-8` = this.cast(-8)
+  def msoBalloonButtonBack: `-5` = -5.asInstanceOf[`-5`]
   @scala.inline
-  def msoBalloonButtonBack: `-5` = this.cast(-5)
+  def msoBalloonButtonCancel: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoBalloonButtonCancel: `-2` = this.cast(-2)
+  def msoBalloonButtonClose: `-12` = -12.asInstanceOf[`-12`]
   @scala.inline
-  def msoBalloonButtonClose: `-12` = this.cast(-12)
+  def msoBalloonButtonIgnore: `-9` = -9.asInstanceOf[`-9`]
   @scala.inline
-  def msoBalloonButtonIgnore: `-9` = this.cast(-9)
+  def msoBalloonButtonNext: `-6` = -6.asInstanceOf[`-6`]
   @scala.inline
-  def msoBalloonButtonNext: `-6` = this.cast(-6)
+  def msoBalloonButtonNo: `-4` = -4.asInstanceOf[`-4`]
   @scala.inline
-  def msoBalloonButtonNo: `-4` = this.cast(-4)
+  def msoBalloonButtonNull: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoBalloonButtonNull: `0` = this.cast(0)
+  def msoBalloonButtonOK: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def msoBalloonButtonOK: `-1` = this.cast(-1)
+  def msoBalloonButtonOptions: `-14` = -14.asInstanceOf[`-14`]
   @scala.inline
-  def msoBalloonButtonOptions: `-14` = this.cast(-14)
+  def msoBalloonButtonRetry: `-7` = -7.asInstanceOf[`-7`]
   @scala.inline
-  def msoBalloonButtonRetry: `-7` = this.cast(-7)
+  def msoBalloonButtonSearch: `-10` = -10.asInstanceOf[`-10`]
   @scala.inline
-  def msoBalloonButtonSearch: `-10` = this.cast(-10)
+  def msoBalloonButtonSnooze: `-11` = -11.asInstanceOf[`-11`]
   @scala.inline
-  def msoBalloonButtonSnooze: `-11` = this.cast(-11)
+  def msoBalloonButtonTips: `-13` = -13.asInstanceOf[`-13`]
   @scala.inline
-  def msoBalloonButtonTips: `-13` = this.cast(-13)
+  def msoBalloonButtonYes: `-3` = -3.asInstanceOf[`-3`]
   @scala.inline
-  def msoBalloonButtonYes: `-3` = this.cast(-3)
-  @scala.inline
-  def msoBalloonButtonYesToAll: `-15` = this.cast(-15)
+  def msoBalloonButtonYesToAll: `-15` = -15.asInstanceOf[`-15`]
 }
 

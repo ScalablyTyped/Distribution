@@ -13,7 +13,6 @@ object TimelineStatsData {
   @scala.inline
   def apply(stats: ReqResStats, sys: SysStats): TimelineStatsData = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimelineStatsData]
   }
 }

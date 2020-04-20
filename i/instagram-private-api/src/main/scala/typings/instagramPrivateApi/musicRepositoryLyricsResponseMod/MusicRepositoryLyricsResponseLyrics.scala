@@ -12,7 +12,6 @@ object MusicRepositoryLyricsResponseLyrics {
   @scala.inline
   def apply(phrases: js.Array[MusicRepositoryLyricsResponsePhrasesItem]): MusicRepositoryLyricsResponseLyrics = {
     val __obj = js.Dynamic.literal(phrases = phrases.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MusicRepositoryLyricsResponseLyrics]
   }
 }

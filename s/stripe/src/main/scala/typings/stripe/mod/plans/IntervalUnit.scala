@@ -14,14 +14,12 @@ trait IntervalUnit extends js.Object
 
 object IntervalUnit {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def day: typings.stripe.stripeStrings.day = "day".asInstanceOf[typings.stripe.stripeStrings.day]
   @scala.inline
-  def day: typings.stripe.stripeStrings.day = this.cast("day")
+  def month: typings.stripe.stripeStrings.month = "month".asInstanceOf[typings.stripe.stripeStrings.month]
   @scala.inline
-  def month: typings.stripe.stripeStrings.month = this.cast("month")
+  def week: typings.stripe.stripeStrings.week = "week".asInstanceOf[typings.stripe.stripeStrings.week]
   @scala.inline
-  def week: typings.stripe.stripeStrings.week = this.cast("week")
-  @scala.inline
-  def year: typings.stripe.stripeStrings.year = this.cast("year")
+  def year: typings.stripe.stripeStrings.year = "year".asInstanceOf[typings.stripe.stripeStrings.year]
 }
 

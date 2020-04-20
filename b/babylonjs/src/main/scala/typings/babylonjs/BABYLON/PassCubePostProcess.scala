@@ -48,7 +48,7 @@ class PassCubePostProcess protected () extends PostProcess {
     *  * 4 is +Z
     *  * 5 is -Z
     */
-  def face(): Double = js.native
+  def face: Double = js.native
   def face(value: Double): js.Any = js.native
 }
 

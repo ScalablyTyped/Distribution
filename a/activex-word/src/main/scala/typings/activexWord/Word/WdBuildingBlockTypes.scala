@@ -80,76 +80,74 @@ trait WdBuildingBlockTypes extends js.Object
 
 object WdBuildingBlockTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTypeAutoText: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdTypeAutoText: `9` = this.cast(9)
+  def wdTypeBibliography: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def wdTypeBibliography: `34` = this.cast(34)
+  def wdTypeCoverPage: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdTypeCoverPage: `2` = this.cast(2)
+  def wdTypeCustom1: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def wdTypeCustom1: `29` = this.cast(29)
+  def wdTypeCustom2: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def wdTypeCustom2: `30` = this.cast(30)
+  def wdTypeCustom3: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def wdTypeCustom3: `31` = this.cast(31)
+  def wdTypeCustom4: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def wdTypeCustom4: `32` = this.cast(32)
+  def wdTypeCustom5: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def wdTypeCustom5: `33` = this.cast(33)
+  def wdTypeCustomAutoText: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def wdTypeCustomAutoText: `23` = this.cast(23)
+  def wdTypeCustomBibliography: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def wdTypeCustomBibliography: `35` = this.cast(35)
+  def wdTypeCustomCoverPage: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdTypeCustomCoverPage: `16` = this.cast(16)
+  def wdTypeCustomEquations: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdTypeCustomEquations: `17` = this.cast(17)
+  def wdTypeCustomFooters: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdTypeCustomFooters: `18` = this.cast(18)
+  def wdTypeCustomHeaders: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdTypeCustomHeaders: `19` = this.cast(19)
+  def wdTypeCustomPageNumber: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdTypeCustomPageNumber: `20` = this.cast(20)
+  def wdTypeCustomPageNumberBottom: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def wdTypeCustomPageNumberBottom: `26` = this.cast(26)
+  def wdTypeCustomPageNumberPage: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def wdTypeCustomPageNumberPage: `27` = this.cast(27)
+  def wdTypeCustomPageNumberTop: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def wdTypeCustomPageNumberTop: `25` = this.cast(25)
+  def wdTypeCustomQuickParts: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdTypeCustomQuickParts: `15` = this.cast(15)
+  def wdTypeCustomTableOfContents: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def wdTypeCustomTableOfContents: `28` = this.cast(28)
+  def wdTypeCustomTables: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def wdTypeCustomTables: `21` = this.cast(21)
+  def wdTypeCustomTextBox: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def wdTypeCustomTextBox: `24` = this.cast(24)
+  def wdTypeCustomWatermarks: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def wdTypeCustomWatermarks: `22` = this.cast(22)
+  def wdTypeEquations: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdTypeEquations: `3` = this.cast(3)
+  def wdTypeFooters: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdTypeFooters: `4` = this.cast(4)
+  def wdTypeHeaders: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdTypeHeaders: `5` = this.cast(5)
+  def wdTypePageNumber: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdTypePageNumber: `6` = this.cast(6)
+  def wdTypePageNumberBottom: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdTypePageNumberBottom: `12` = this.cast(12)
+  def wdTypePageNumberPage: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdTypePageNumberPage: `13` = this.cast(13)
+  def wdTypePageNumberTop: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdTypePageNumberTop: `11` = this.cast(11)
+  def wdTypeQuickParts: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdTypeQuickParts: `1` = this.cast(1)
+  def wdTypeTableOfContents: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdTypeTableOfContents: `14` = this.cast(14)
+  def wdTypeTables: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdTypeTables: `7` = this.cast(7)
+  def wdTypeTextBox: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdTypeTextBox: `10` = this.cast(10)
-  @scala.inline
-  def wdTypeWatermarks: `8` = this.cast(8)
+  def wdTypeWatermarks: `8` = 8.asInstanceOf[`8`]
 }
 

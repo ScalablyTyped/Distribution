@@ -1,8 +1,8 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialDataTitleFont
+import typings.plotlyJs.PartialDataTitle
 import typings.plotlyJs.PartialFont
-import typings.plotlyJs.PartialRangeSelectorActivecolor
+import typings.plotlyJs.PartialRangeSelector
 import typings.plotlyJs.PartialRangeSlider
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
@@ -71,7 +71,7 @@ trait LayoutAxis extends Axis {
   var layer: (`above traces`) | (`below traces`)
   var overlaying: free | AxisName
   var position: Double
-  var rangeselector: PartialRangeSelectorActivecolor
+  var rangeselector: PartialRangeSelector
   var rangeslider: PartialRangeSlider
   var scaleanchor: AxisName
   var scaleratio: Double
@@ -110,7 +110,7 @@ object LayoutAxis {
     position: Double,
     range: js.Array[_],
     rangemode: normal | tozero | nonnegative,
-    rangeselector: PartialRangeSelectorActivecolor,
+    rangeselector: PartialRangeSelector,
     rangeslider: PartialRangeSlider,
     scaleanchor: AxisName,
     scaleratio: Double,
@@ -140,7 +140,7 @@ object LayoutAxis {
     ticktext: js.Array[String],
     tickvals: js.Array[_],
     tickwidth: Double,
-    title: String | PartialDataTitleFont,
+    title: String | PartialDataTitle,
     titlefont: PartialFont,
     `type`: AxisType,
     visible: Boolean,

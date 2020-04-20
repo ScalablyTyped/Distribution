@@ -14,7 +14,6 @@ object AnonIp {
   @scala.inline
   def apply(ip: String, port: Double, secure: Boolean): AnonIp = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIp]
   }
 }

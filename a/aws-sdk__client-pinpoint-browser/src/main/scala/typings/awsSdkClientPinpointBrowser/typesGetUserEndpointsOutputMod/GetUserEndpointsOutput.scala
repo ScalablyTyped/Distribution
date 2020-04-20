@@ -23,7 +23,6 @@ object GetUserEndpointsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, EndpointsResponse: UnmarshalledEndpointsResponse): GetUserEndpointsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EndpointsResponse = EndpointsResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUserEndpointsOutput]
   }
 }

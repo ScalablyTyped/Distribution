@@ -34,7 +34,7 @@ class NotebookModelFactory_ protected () extends IModelFactory[INotebookModel] {
     * The content type of the file.
     */
   @JSName("contentType")
-  def contentType_MNotebookModelFactory_(): ContentType = js.native
+  def contentType_MNotebookModelFactory_ : ContentType = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -52,16 +52,16 @@ class NotebookModelFactory_ protected () extends IModelFactory[INotebookModel] {
     * The format of the file.
     */
   @JSName("fileFormat")
-  def fileFormat_MNotebookModelFactory_(): FileFormat = js.native
+  def fileFormat_MNotebookModelFactory_ : FileFormat = js.native
   /**
     * Get whether the model factory has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MNotebookModelFactory_(): Boolean = js.native
+  def isDisposed_MNotebookModelFactory_ : Boolean = js.native
   /**
     * The name of the model.
     */
   @JSName("name")
-  def name_MNotebookModelFactory_(): String = js.native
+  def name_MNotebookModelFactory_ : String = js.native
 }
 

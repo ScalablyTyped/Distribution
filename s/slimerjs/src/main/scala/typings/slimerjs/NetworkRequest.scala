@@ -14,7 +14,6 @@ object NetworkRequest {
   @scala.inline
   def apply(abort: () => Unit, changeUrl: String => Unit, setHeader: (String, String) => Unit): NetworkRequest = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), changeUrl = js.Any.fromFunction1(changeUrl), setHeader = js.Any.fromFunction2(setHeader))
-  
     __obj.asInstanceOf[NetworkRequest]
   }
 }

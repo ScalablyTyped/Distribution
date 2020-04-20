@@ -14,10 +14,8 @@ trait WdExportItem extends js.Object
 
 object WdExportItem {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdExportDocumentContent: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdExportDocumentContent: `0` = this.cast(0)
-  @scala.inline
-  def wdExportDocumentWithMarkup: `7` = this.cast(7)
+  def wdExportDocumentWithMarkup: `7` = 7.asInstanceOf[`7`]
 }
 

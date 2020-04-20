@@ -19,24 +19,22 @@ trait ReferrerPolicy extends js.Object
 
 object ReferrerPolicy {
   @scala.inline
-  def _empty: typings.apolloEnv.apolloEnvStrings._empty = this.cast("")
+  def _empty: typings.apolloEnv.apolloEnvStrings._empty = "".asInstanceOf[typings.apolloEnv.apolloEnvStrings._empty]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `no-referrer`: typings.apolloEnv.apolloEnvStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`no-referrer`]
   @scala.inline
-  def `no-referrer`: typings.apolloEnv.apolloEnvStrings.`no-referrer` = this.cast("no-referrer")
+  def `no-referrer-when-downgrade`: typings.apolloEnv.apolloEnvStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`no-referrer-when-downgrade`]
   @scala.inline
-  def `no-referrer-when-downgrade`: typings.apolloEnv.apolloEnvStrings.`no-referrer-when-downgrade` = this.cast("no-referrer-when-downgrade")
+  def origin: typings.apolloEnv.apolloEnvStrings.origin = "origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.origin]
   @scala.inline
-  def origin: typings.apolloEnv.apolloEnvStrings.origin = this.cast("origin")
+  def `origin-when-cross-origin`: typings.apolloEnv.apolloEnvStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`origin-when-cross-origin`]
   @scala.inline
-  def `origin-when-cross-origin`: typings.apolloEnv.apolloEnvStrings.`origin-when-cross-origin` = this.cast("origin-when-cross-origin")
+  def `same-origin`: typings.apolloEnv.apolloEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`same-origin`]
   @scala.inline
-  def `same-origin`: typings.apolloEnv.apolloEnvStrings.`same-origin` = this.cast("same-origin")
+  def `strict-origin`: typings.apolloEnv.apolloEnvStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`strict-origin`]
   @scala.inline
-  def `strict-origin`: typings.apolloEnv.apolloEnvStrings.`strict-origin` = this.cast("strict-origin")
+  def `strict-origin-when-cross-origin`: typings.apolloEnv.apolloEnvStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`strict-origin-when-cross-origin`]
   @scala.inline
-  def `strict-origin-when-cross-origin`: typings.apolloEnv.apolloEnvStrings.`strict-origin-when-cross-origin` = this.cast("strict-origin-when-cross-origin")
-  @scala.inline
-  def `unsafe-url`: typings.apolloEnv.apolloEnvStrings.`unsafe-url` = this.cast("unsafe-url")
+  def `unsafe-url`: typings.apolloEnv.apolloEnvStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`unsafe-url`]
 }
 

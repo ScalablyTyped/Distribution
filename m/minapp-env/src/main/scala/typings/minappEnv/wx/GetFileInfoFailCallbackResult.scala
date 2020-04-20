@@ -16,7 +16,6 @@ object GetFileInfoFailCallbackResult {
   @scala.inline
   def apply(errMsg: String): GetFileInfoFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFileInfoFailCallbackResult]
   }
 }

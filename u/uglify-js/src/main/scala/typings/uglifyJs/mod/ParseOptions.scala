@@ -5,10 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ParseOptions extends js.Object {
-  /** Support top level `return` statements */
+  /**
+    * Support top level `return` statements
+    * @default false
+    */
   var bare_returns: js.UndefOr[Boolean] = js.undefined
+  /** @default true */
   var html5_comments: js.UndefOr[Boolean] = js.undefined
-  /** Support `#!command` as the first line */
+  /**
+    * Support `#!command` as the first line
+    * @default true
+    */
   var shebang: js.UndefOr[Boolean] = js.undefined
 }
 

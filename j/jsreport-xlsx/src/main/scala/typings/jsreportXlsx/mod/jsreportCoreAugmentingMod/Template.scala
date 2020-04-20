@@ -13,7 +13,6 @@ object Template {
   @scala.inline
   def apply(recipe: xlsx | String): Template = {
     val __obj = js.Dynamic.literal(recipe = recipe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Template]
   }
 }

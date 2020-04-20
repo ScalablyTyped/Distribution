@@ -266,7 +266,7 @@ class StandardMaterial protected () extends PushMaterial {
     * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
     * corresponding to low luminance, medium luminance, and high luminance areas respectively.
     */
-  def cameraColorCurves(): Nullable[ColorCurves] = js.native
+  def cameraColorCurves: Nullable[ColorCurves] = js.native
   /**
     * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
     * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
@@ -277,7 +277,7 @@ class StandardMaterial protected () extends PushMaterial {
   /**
     * Gets wether the color curves effect is enabled.
     */
-  def cameraColorCurvesEnabled(): Boolean = js.native
+  def cameraColorCurvesEnabled: Boolean = js.native
   /**
     * Sets wether the color curves effect is enabled.
     */
@@ -285,7 +285,7 @@ class StandardMaterial protected () extends PushMaterial {
   /**
     * Gets wether the color grading effect is enabled.
     */
-  def cameraColorGradingEnabled(): Boolean = js.native
+  def cameraColorGradingEnabled: Boolean = js.native
   /**
     * Gets wether the color grading effect is enabled.
     */
@@ -293,7 +293,7 @@ class StandardMaterial protected () extends PushMaterial {
   /**
     * Gets the Color Grading 2D Lookup Texture.
     */
-  def cameraColorGradingTexture(): Nullable[BaseTexture] = js.native
+  def cameraColorGradingTexture: Nullable[BaseTexture] = js.native
   /**
     * Sets the Color Grading 2D Lookup Texture.
     */
@@ -301,7 +301,7 @@ class StandardMaterial protected () extends PushMaterial {
   /**
     * Gets The camera contrast used on this material.
     */
-  def cameraContrast(): Double = js.native
+  def cameraContrast: Double = js.native
   /**
     * Sets The camera contrast used on this material.
     */
@@ -311,7 +311,7 @@ class StandardMaterial protected () extends PushMaterial {
     * This property is here and not in the camera to allow controlling exposure without full screen post process.
     * This corresponds to a photographic exposure.
     */
-  def cameraExposure(): Double = js.native
+  def cameraExposure: Double = js.native
   /**
     * The camera exposure used on this material.
     * This property is here and not in the camera to allow controlling exposure without full screen post process.
@@ -321,7 +321,7 @@ class StandardMaterial protected () extends PushMaterial {
   /**
     * Gets wether tonemapping is enabled or not.
     */
-  def cameraToneMappingEnabled(): Boolean = js.native
+  def cameraToneMappingEnabled: Boolean = js.native
   /**
     * Sets wether tonemapping is enabled or not
     */
@@ -344,7 +344,7 @@ class StandardMaterial protected () extends PushMaterial {
   /**
     * Gets the image processing configuration used either in this material.
     */
-  def imageProcessingConfiguration(): ImageProcessingConfiguration = js.native
+  def imageProcessingConfiguration: ImageProcessingConfiguration = js.native
   /**
     * Sets the Default image processing configuration used either in the this material.
     *
@@ -366,7 +366,7 @@ class StandardMaterial protected () extends PushMaterial {
     * You can try switching to logarithmic depth.
     * @see http://doc.babylonjs.com/how_to/using_logarithmic_depth_buffer
     */
-  def useLogarithmicDepth(): Boolean = js.native
+  def useLogarithmicDepth: Boolean = js.native
   def useLogarithmicDepth(value: Boolean): js.Any = js.native
 }
 
@@ -377,42 +377,42 @@ object StandardMaterial extends js.Object {
   /**
     * Are ambient textures enabled in the application.
     */
-  def AmbientTextureEnabled(): Boolean = js.native
+  def AmbientTextureEnabled: Boolean = js.native
   def AmbientTextureEnabled(value: Boolean): js.Any = js.native
   /**
     * Are bump textures enabled in the application.
     */
-  def BumpTextureEnabled(): Boolean = js.native
+  def BumpTextureEnabled: Boolean = js.native
   def BumpTextureEnabled(value: Boolean): js.Any = js.native
   /**
     * Are color grading textures enabled in the application.
     */
-  def ColorGradingTextureEnabled(): Boolean = js.native
+  def ColorGradingTextureEnabled: Boolean = js.native
   def ColorGradingTextureEnabled(value: Boolean): js.Any = js.native
   /**
     * Are diffuse textures enabled in the application.
     */
-  def DiffuseTextureEnabled(): Boolean = js.native
+  def DiffuseTextureEnabled: Boolean = js.native
   def DiffuseTextureEnabled(value: Boolean): js.Any = js.native
   /**
     * Are emissive textures enabled in the application.
     */
-  def EmissiveTextureEnabled(): Boolean = js.native
+  def EmissiveTextureEnabled: Boolean = js.native
   def EmissiveTextureEnabled(value: Boolean): js.Any = js.native
   /**
     * Are fresnels enabled in the application.
     */
-  def FresnelEnabled(): Boolean = js.native
+  def FresnelEnabled: Boolean = js.native
   def FresnelEnabled(value: Boolean): js.Any = js.native
   /**
     * Are lightmap textures enabled in the application.
     */
-  def LightmapTextureEnabled(): Boolean = js.native
+  def LightmapTextureEnabled: Boolean = js.native
   def LightmapTextureEnabled(value: Boolean): js.Any = js.native
   /**
     * Are opacity textures enabled in the application.
     */
-  def OpacityTextureEnabled(): Boolean = js.native
+  def OpacityTextureEnabled: Boolean = js.native
   def OpacityTextureEnabled(value: Boolean): js.Any = js.native
   /**
     * Creates a standard material from parsed material data
@@ -425,17 +425,17 @@ object StandardMaterial extends js.Object {
   /**
     * Are reflection textures enabled in the application.
     */
-  def ReflectionTextureEnabled(): Boolean = js.native
+  def ReflectionTextureEnabled: Boolean = js.native
   def ReflectionTextureEnabled(value: Boolean): js.Any = js.native
   /**
     * Are refraction textures enabled in the application.
     */
-  def RefractionTextureEnabled(): Boolean = js.native
+  def RefractionTextureEnabled: Boolean = js.native
   def RefractionTextureEnabled(value: Boolean): js.Any = js.native
   /**
     * Are specular textures enabled in the application.
     */
-  def SpecularTextureEnabled(): Boolean = js.native
+  def SpecularTextureEnabled: Boolean = js.native
   def SpecularTextureEnabled(value: Boolean): js.Any = js.native
 }
 

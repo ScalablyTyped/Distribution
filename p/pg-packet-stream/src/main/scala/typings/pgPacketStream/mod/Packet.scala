@@ -14,7 +14,6 @@ object Packet {
   @scala.inline
   def apply(code: Double, packet: Buffer): Packet = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], packet = packet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Packet]
   }
 }

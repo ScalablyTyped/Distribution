@@ -15,7 +15,6 @@ object AdWordsDate {
   @scala.inline
   def apply(day: Double, month: Double, year: Double): AdWordsDate = {
     val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdWordsDate]
   }
 }

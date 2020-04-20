@@ -1,5 +1,8 @@
 package typings.titanium.Titanium.Android
 
+import typings.titanium.Dictionary
+import typings.titanium.Titanium.Event
+import typings.titanium.Titanium.Module
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
@@ -9,6 +12,11 @@ import scala.scalajs.js.annotation._
 /**
 		 * Module for managing notifications.
 		 */
+@JSGlobal("Titanium.Android.NotificationManager")
+@js.native
+class NotificationManager () extends Module
+
+/* static members */
 @JSGlobal("Titanium.Android.NotificationManager")
 @js.native
 object NotificationManager extends js.Object {
@@ -71,7 +79,7 @@ object NotificationManager extends js.Object {
   /**
   			 * Adds the specified callback as an event listener for the named event.
   			 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   			 * Applies the properties to the proxy.
   			 */
@@ -91,21 +99,25 @@ object NotificationManager extends js.Object {
   /**
   			 * Create a notification channel.
   			 */
-  def createNotificationChannel(parameters: js.Any): NotificationChannel = js.native
+  def createNotificationChannel(parameters: Dictionary[NotificationChannel]): NotificationChannel = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationManager.apiName> property.
+  			 * @deprecated Access <Titanium.Android.NotificationManager.apiName> instead.
   			 */
   def getApiName(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationManager.bubbleParent> property.
+  			 * @deprecated Access <Titanium.Android.NotificationManager.bubbleParent> instead.
   			 */
   def getBubbleParent(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationManager.lifecycleContainer> property.
+  			 * @deprecated Access <Titanium.Android.NotificationManager.lifecycleContainer> instead.
   			 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
@@ -115,17 +127,16 @@ object NotificationManager extends js.Object {
   /**
   			 * Removes the specified callback as an event listener for the named event.
   			 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationManager.bubbleParent> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationManager.bubbleParent> instead.
   			 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.Android.NotificationManager.lifecycleContainer> property.
-  			 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationManager.lifecycleContainer> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationManager.lifecycleContainer> instead.
   			 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }

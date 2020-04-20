@@ -36,32 +36,30 @@ trait MFBuiltInValueList extends js.Object
 
 object MFBuiltInValueList {
   @scala.inline
-  def Assignments: `10` = this.cast(10)
+  def Assignments: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def ClassGroups: `2` = this.cast(2)
+  def ClassGroups: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Classes: `1` = this.cast(1)
+  def Classes: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Collections: `9` = this.cast(9)
+  def Collections: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def Documents: `0` = this.cast(0)
+  def Documents: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ExternalLocations: `5` = this.cast(5)
+  def ExternalLocations: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def StateTransitions: `17` = this.cast(17)
+  def StateTransitions: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def States: `8` = this.cast(8)
+  def States: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def TraditionalFolders: `4` = this.cast(4)
+  def TraditionalFolders: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def UserGroups: `16` = this.cast(16)
+  def UserGroups: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def Users: `6` = this.cast(6)
+  def Users: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def VersionLabels: `3` = this.cast(3)
+  def VersionLabels: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Workflows: `7` = this.cast(7)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Workflows: `7` = 7.asInstanceOf[`7`]
 }
 

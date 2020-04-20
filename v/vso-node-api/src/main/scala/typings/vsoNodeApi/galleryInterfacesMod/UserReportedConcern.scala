@@ -38,7 +38,6 @@ object UserReportedConcern {
     userId: String
   ): UserReportedConcern = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], concernText = concernText.asInstanceOf[js.Any], reviewId = reviewId.asInstanceOf[js.Any], submittedDate = submittedDate.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserReportedConcern]
   }
 }

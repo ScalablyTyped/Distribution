@@ -14,7 +14,6 @@ object AnonTo {
   @scala.inline
   def apply(from: OSPermissionState, to: OSPermissionState): AnonTo = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTo]
   }
 }

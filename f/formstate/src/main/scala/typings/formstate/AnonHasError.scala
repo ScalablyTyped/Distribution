@@ -13,7 +13,6 @@ object AnonHasError {
   @scala.inline
   def apply(hasError: `true`): AnonHasError = {
     val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHasError]
   }
 }

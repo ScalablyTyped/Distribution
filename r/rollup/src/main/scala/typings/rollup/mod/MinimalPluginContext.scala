@@ -12,7 +12,6 @@ object MinimalPluginContext {
   @scala.inline
   def apply(meta: PluginContextMeta): MinimalPluginContext = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MinimalPluginContext]
   }
 }

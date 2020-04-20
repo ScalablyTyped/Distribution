@@ -15,7 +15,6 @@ object ClientIdCollection {
   @scala.inline
   def apply(hashClientId: HashClientIdRequest => HashClientIdResponse): ClientIdCollection = {
     val __obj = js.Dynamic.literal(hashClientId = js.Any.fromFunction1(hashClientId))
-  
     __obj.asInstanceOf[ClientIdCollection]
   }
 }

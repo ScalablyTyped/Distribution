@@ -13,7 +13,6 @@ object FeatureTemplatesViewModelSelectEvent {
   @scala.inline
   def apply(item: TemplateItem, template: FeatureTemplate): FeatureTemplatesViewModelSelectEvent = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatureTemplatesViewModelSelectEvent]
   }
 }

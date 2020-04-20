@@ -30,7 +30,6 @@ object DialogOpenParameters {
   @scala.inline
   def apply(DialogId: String, EntityName: String, ObjectId: String): DialogOpenParameters = {
     val __obj = js.Dynamic.literal(DialogId = DialogId.asInstanceOf[js.Any], EntityName = EntityName.asInstanceOf[js.Any], ObjectId = ObjectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DialogOpenParameters]
   }
 }

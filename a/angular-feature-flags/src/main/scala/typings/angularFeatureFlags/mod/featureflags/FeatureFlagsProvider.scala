@@ -12,7 +12,6 @@ object FeatureFlagsProvider {
   @scala.inline
   def apply(setInitialFlags: js.Array[FlagData] => Unit): FeatureFlagsProvider = {
     val __obj = js.Dynamic.literal(setInitialFlags = js.Any.fromFunction1(setInitialFlags))
-  
     __obj.asInstanceOf[FeatureFlagsProvider]
   }
 }

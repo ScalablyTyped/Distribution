@@ -13,7 +13,6 @@ object AnonProxy {
   @scala.inline
   def apply[T](proxy: T, revoke: () => Unit): AnonProxy[T] = {
     val __obj = js.Dynamic.literal(proxy = proxy.asInstanceOf[js.Any], revoke = js.Any.fromFunction0(revoke))
-  
     __obj.asInstanceOf[AnonProxy[T]]
   }
 }

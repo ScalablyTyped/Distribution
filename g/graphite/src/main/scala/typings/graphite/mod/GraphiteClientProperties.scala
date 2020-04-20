@@ -12,7 +12,6 @@ object GraphiteClientProperties {
   @scala.inline
   def apply(carbon: js.Any): GraphiteClientProperties = {
     val __obj = js.Dynamic.literal(carbon = carbon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GraphiteClientProperties]
   }
 }

@@ -37,7 +37,7 @@ object contextMod extends js.Object {
     def addError(message: js.Any, nestedErrors: js.Array[ValidationError]): Unit = js.native
     def addError(message: js.Any, value: js.Any, meta: Meta): Unit = js.native
     def addFieldInstances(instances: js.Array[FieldInstance]): Unit = js.native
-    def errors(): js.Array[ValidationError] = js.native
+    def errors: js.Array[ValidationError] = js.native
     def getData(): js.Array[FieldInstance] = js.native
     def getData(options: AnonRequiredOnly): js.Array[FieldInstance] = js.native
     def setData(path: String, value: js.Any, location: Location): Unit = js.native

@@ -16,7 +16,6 @@ object BaseImagesizestring {
   @scala.inline
   def apply(height: String, size: String, url: String, width: String): BaseImagesizestring = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseImagesizestring]
   }
 }

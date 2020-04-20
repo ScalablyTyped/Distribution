@@ -22,18 +22,16 @@ trait SeekEnum extends js.Object
 
 object SeekEnum {
   @scala.inline
-  def adSeekAfter: `8` = this.cast(8)
+  def adSeekAfter: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def adSeekAfterEQ: `4` = this.cast(4)
+  def adSeekAfterEQ: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adSeekBefore: `32` = this.cast(32)
+  def adSeekBefore: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def adSeekBeforeEQ: `16` = this.cast(16)
+  def adSeekBeforeEQ: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def adSeekFirstEQ: `1` = this.cast(1)
+  def adSeekFirstEQ: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adSeekLastEQ: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adSeekLastEQ: `2` = 2.asInstanceOf[`2`]
 }
 

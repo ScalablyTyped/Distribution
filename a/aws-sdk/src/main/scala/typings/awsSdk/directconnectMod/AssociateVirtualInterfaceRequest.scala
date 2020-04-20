@@ -20,7 +20,6 @@ object AssociateVirtualInterfaceRequest {
   @scala.inline
   def apply(connectionId: ConnectionId, virtualInterfaceId: VirtualInterfaceId): AssociateVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateVirtualInterfaceRequest]
   }
 }

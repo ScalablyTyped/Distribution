@@ -23,7 +23,6 @@ object InstallPackageRequest {
     projectRootPath: Path
   ): InstallPackageRequest = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], projectRootPath = projectRootPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstallPackageRequest]
   }
 }

@@ -22,7 +22,6 @@ object AnonAxisMeshNames {
     pointingPoseMeshName: String
   ): AnonAxisMeshNames = {
     val __obj = js.Dynamic.literal(axisMeshNames = axisMeshNames.asInstanceOf[js.Any], buttonMeshNames = buttonMeshNames.asInstanceOf[js.Any], buttonObservableNames = buttonObservableNames.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], pointingPoseMeshName = pointingPoseMeshName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAxisMeshNames]
   }
 }

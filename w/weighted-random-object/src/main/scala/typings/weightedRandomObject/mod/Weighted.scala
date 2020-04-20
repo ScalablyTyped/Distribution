@@ -12,7 +12,6 @@ object Weighted {
   @scala.inline
   def apply(weight: Double): Weighted = {
     val __obj = js.Dynamic.literal(weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Weighted]
   }
 }

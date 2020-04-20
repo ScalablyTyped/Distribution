@@ -14,7 +14,6 @@ object DriveFreeInfo {
   @scala.inline
   def apply(freeGb: Double, freePercentage: Double, totalGb: Double): DriveFreeInfo = {
     val __obj = js.Dynamic.literal(freeGb = freeGb.asInstanceOf[js.Any], freePercentage = freePercentage.asInstanceOf[js.Any], totalGb = totalGb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DriveFreeInfo]
   }
 }

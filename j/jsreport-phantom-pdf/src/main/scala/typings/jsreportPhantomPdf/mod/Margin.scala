@@ -15,7 +15,6 @@ object Margin {
   @scala.inline
   def apply(bottom: Double | String, left: Double | String, right: Double | String, top: Double | String): Margin = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Margin]
   }
 }

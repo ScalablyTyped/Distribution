@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object objectToMap extends js.Object {
   def apply[T /* <: js.Object */](obj: T): Map[
-    String, 
+    /* keyof T */ String, 
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
 }

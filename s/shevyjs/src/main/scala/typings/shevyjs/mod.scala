@@ -14,7 +14,12 @@ object mod extends js.Object {
   @js.native
   trait Shevy extends js.Object {
     var addMarginBottom: Boolean = js.native
-    var baseFontScale: ReturnType[js.Function1[/* fontScale */ Scale | String, js.Array[Double]]] = js.native
+    var baseFontScale: ReturnType[
+        js.Function1[
+          /* fontScale */ Scale | (/* keyof typeof fontScalePresets */ String), 
+          js.Array[Double]
+        ]
+      ] = js.native
     var baseFontSize: String = js.native
     var baseFontUnit: ReturnType[js.Function1[/* size */ String, String]] = js.native
     var baseLineHeight: Double = js.native

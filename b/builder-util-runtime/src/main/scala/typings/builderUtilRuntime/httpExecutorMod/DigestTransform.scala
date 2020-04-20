@@ -25,7 +25,7 @@ class DigestTransform protected () extends Transform {
   var isValidateOnEnd: Boolean = js.native
   def _flush(callback: js.Any): Unit = js.native
   def _transform(chunk: Buffer, encoding: String, callback: js.Any): Unit = js.native
-  def actual(): String | Null = js.native
+  def actual: String | Null = js.native
   def validate(): Null = js.native
 }
 

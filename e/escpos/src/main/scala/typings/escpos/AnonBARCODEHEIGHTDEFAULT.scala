@@ -20,7 +20,6 @@ object AnonBARCODEHEIGHTDEFAULT {
     CODE2D_FORMAT: AnonLENOFFSET
   ): AnonBARCODEHEIGHTDEFAULT = {
     val __obj = js.Dynamic.literal(BARCODE_HEIGHT_DEFAULT = BARCODE_HEIGHT_DEFAULT.asInstanceOf[js.Any], BARCODE_MODE = BARCODE_MODE.asInstanceOf[js.Any], CODE2D_FORMAT = CODE2D_FORMAT.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBARCODEHEIGHTDEFAULT]
   }
 }

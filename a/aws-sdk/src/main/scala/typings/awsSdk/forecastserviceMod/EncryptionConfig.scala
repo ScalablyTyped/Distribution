@@ -20,7 +20,6 @@ object EncryptionConfig {
   @scala.inline
   def apply(KMSKeyArn: KMSKeyArn, RoleArn: Arn): EncryptionConfig = {
     val __obj = js.Dynamic.literal(KMSKeyArn = KMSKeyArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptionConfig]
   }
 }

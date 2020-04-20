@@ -20,7 +20,6 @@ object UserPoolSmsConfiguration {
   @scala.inline
   def apply(externalId: String, snsCallerArn: String): UserPoolSmsConfiguration = {
     val __obj = js.Dynamic.literal(externalId = externalId.asInstanceOf[js.Any], snsCallerArn = snsCallerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserPoolSmsConfiguration]
   }
 }

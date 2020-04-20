@@ -24,7 +24,6 @@ object SplitShardInput {
   @scala.inline
   def apply(NewStartingHashKey: HashKey, ShardToSplit: ShardId, StreamName: StreamName): SplitShardInput = {
     val __obj = js.Dynamic.literal(NewStartingHashKey = NewStartingHashKey.asInstanceOf[js.Any], ShardToSplit = ShardToSplit.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SplitShardInput]
   }
 }

@@ -41,7 +41,7 @@ class Message_ () extends IMessage {
   ] = js.native
   /** Message platform. */
   @JSName("platform")
-  var platform_Message_ : Platform | String = js.native
+  var platform_Message_ : Platform | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.Platform * / any */ String) = js.native
   /**
     * Converts this Message to JSON.
     * @returns JSON object

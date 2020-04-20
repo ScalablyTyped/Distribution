@@ -26,22 +26,20 @@ trait XdDocumentVersionMode extends js.Object
 
 object XdDocumentVersionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xdCanOpenInReadOnlyMode: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xdCanOpenInReadOnlyMode: `8` = this.cast(8)
+  def xdCanTransformSigned: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xdCanTransformSigned: `16` = this.cast(16)
+  def xdDoNotInstallActiveXCabs: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def xdDoNotInstallActiveXCabs: `128` = this.cast(128)
+  def xdFailOnVersionMismatch: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xdFailOnVersionMismatch: `0` = this.cast(0)
+  def xdFailOnVersionOlder: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xdFailOnVersionOlder: `1` = this.cast(1)
+  def xdIgnoreDataAdaptersQueryFailure: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def xdIgnoreDataAdaptersQueryFailure: `64` = this.cast(64)
+  def xdPromptTransformSigned: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def xdPromptTransformSigned: `32` = this.cast(32)
-  @scala.inline
-  def xdUseExistingVersion: `2` = this.cast(2)
+  def xdUseExistingVersion: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -17,7 +17,6 @@ object Parser {
   @scala.inline
   def apply(abort: () => Unit, getCharIndex: () => Double, parse: String => js.Any): Parser = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), getCharIndex = js.Any.fromFunction0(getCharIndex), parse = js.Any.fromFunction1(parse))
-  
     __obj.asInstanceOf[Parser]
   }
 }

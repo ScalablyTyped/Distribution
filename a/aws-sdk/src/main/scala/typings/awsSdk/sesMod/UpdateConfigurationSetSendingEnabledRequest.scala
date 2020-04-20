@@ -20,7 +20,6 @@ object UpdateConfigurationSetSendingEnabledRequest {
   @scala.inline
   def apply(ConfigurationSetName: ConfigurationSetName, Enabled: Enabled): UpdateConfigurationSetSendingEnabledRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateConfigurationSetSendingEnabledRequest]
   }
 }

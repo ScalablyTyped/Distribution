@@ -16,7 +16,7 @@ class Key protected () extends js.Object {
     * Return string representation of the key
     */
   var get: js.Any = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   var toStringTag: js.Function0[String] = js.native
   /**
     * Returns the "base" namespace of this key.

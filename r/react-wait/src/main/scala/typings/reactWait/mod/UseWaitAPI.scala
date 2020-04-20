@@ -101,7 +101,6 @@ object UseWaitAPI {
     waiters: js.Array[String]
   ): UseWaitAPI = {
     val __obj = js.Dynamic.literal(Wait = Wait.asInstanceOf[js.Any], anyWaiting = js.Any.fromFunction0(anyWaiting), createWaitingContext = js.Any.fromFunction1(createWaitingContext), endWaiting = js.Any.fromFunction1(endWaiting), isWaiting = js.Any.fromFunction1(isWaiting), startWaiting = js.Any.fromFunction1(startWaiting), waiters = waiters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseWaitAPI]
   }
 }

@@ -12,7 +12,6 @@ object ElementChildrenAttribute {
   @scala.inline
   def apply(children: js.Any): ElementChildrenAttribute = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElementChildrenAttribute]
   }
 }

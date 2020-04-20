@@ -20,7 +20,6 @@ object DeprecateWorkflowTypeInput {
   @scala.inline
   def apply(domain: DomainName, workflowType: WorkflowType): DeprecateWorkflowTypeInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeprecateWorkflowTypeInput]
   }
 }

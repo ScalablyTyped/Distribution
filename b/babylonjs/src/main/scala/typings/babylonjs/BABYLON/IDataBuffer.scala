@@ -23,7 +23,6 @@ object IDataBuffer {
   @scala.inline
   def apply(byteLength: Double, readAsync: (Double, Double) => js.Promise[ArrayBufferView]): IDataBuffer = {
     val __obj = js.Dynamic.literal(byteLength = byteLength.asInstanceOf[js.Any], readAsync = js.Any.fromFunction2(readAsync))
-  
     __obj.asInstanceOf[IDataBuffer]
   }
 }

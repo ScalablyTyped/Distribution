@@ -21,7 +21,7 @@ trait Conversions extends js.Object {
   /**
     * color keyword in css to ansi code
     */
-  def keyword(keyword: String): String
+  def keyword(keyword: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 148 */ js.Any): String
   def lab(l: Double, a: Double, b: Double): String
   def lch(l: Double, c: Double, h: Double): String
   def rgb(r: Double, g: Double, b: Double): String
@@ -41,14 +41,13 @@ object Conversions {
     hsl: (Double, Double, Double) => String,
     hsv: (Double, Double, Double) => String,
     hwb: (Double, Double, Double) => String,
-    keyword: String => String,
+    keyword: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 148 */ js.Any => String,
     lab: (Double, Double, Double) => String,
     lch: (Double, Double, Double) => String,
     rgb: (Double, Double, Double) => String,
     xyz: (Double, Double, Double) => String
   ): Conversions = {
     val __obj = js.Dynamic.literal(ansi = js.Any.fromFunction1(ansi), ansi256 = js.Any.fromFunction1(ansi256), apple = js.Any.fromFunction3(apple), cmyk = js.Any.fromFunction4(cmyk), gray = js.Any.fromFunction1(gray), hcg = js.Any.fromFunction3(hcg), hex = js.Any.fromFunction1(hex), hsl = js.Any.fromFunction3(hsl), hsv = js.Any.fromFunction3(hsv), hwb = js.Any.fromFunction3(hwb), keyword = js.Any.fromFunction1(keyword), lab = js.Any.fromFunction3(lab), lch = js.Any.fromFunction3(lch), rgb = js.Any.fromFunction3(rgb), xyz = js.Any.fromFunction3(xyz))
-  
     __obj.asInstanceOf[Conversions]
   }
 }

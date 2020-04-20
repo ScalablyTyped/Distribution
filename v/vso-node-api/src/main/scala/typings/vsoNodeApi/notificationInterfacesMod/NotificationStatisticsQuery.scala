@@ -12,7 +12,6 @@ object NotificationStatisticsQuery {
   @scala.inline
   def apply(conditions: js.Array[NotificationStatisticsQueryConditions]): NotificationStatisticsQuery = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationStatisticsQuery]
   }
 }

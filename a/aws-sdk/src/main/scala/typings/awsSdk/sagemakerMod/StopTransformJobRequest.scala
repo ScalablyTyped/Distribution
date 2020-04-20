@@ -16,7 +16,6 @@ object StopTransformJobRequest {
   @scala.inline
   def apply(TransformJobName: TransformJobName): StopTransformJobRequest = {
     val __obj = js.Dynamic.literal(TransformJobName = TransformJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopTransformJobRequest]
   }
 }

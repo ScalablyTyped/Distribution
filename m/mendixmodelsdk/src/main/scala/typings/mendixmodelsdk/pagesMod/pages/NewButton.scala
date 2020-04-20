@@ -36,22 +36,22 @@ class NewButton protected () extends Button {
     * In version 7.11.0: deleted
     * In version 6.3.0: introduced
     */
-  def entityPath(): String = js.native
+  def entityPath: String = js.native
   def entityPath(newValue: String): js.Any = js.native
-  def entityQualifiedName(): String | Null = js.native
+  def entityQualifiedName: String | Null = js.native
   def entityRef(): js.Any = js.native
   def entityRef(newValue: EntityRef): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
   @JSName("entityRef")
-  def entityRef_Union(): EntityRef | Null = js.native
+  def entityRef_Union: EntityRef | Null = js.native
   /**
     * In version 6.3.0: deleted
     */
   @JSName("entity")
-  def entity_Union(): IEntity | Null = js.native
-  def pageSettings(): PageSettings = js.native
+  def entity_Union: IEntity | Null = js.native
+  def pageSettings: PageSettings = js.native
   def pageSettings(newValue: PageSettings): js.Any = js.native
 }
 

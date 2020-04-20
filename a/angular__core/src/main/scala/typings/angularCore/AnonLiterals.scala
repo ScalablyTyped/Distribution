@@ -17,7 +17,6 @@ object AnonLiterals {
     resolvedValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedValue */ js.Any
   ): AnonLiterals = {
     val __obj = js.Dynamic.literal(literals = literals.asInstanceOf[js.Any], resolvedValue = resolvedValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLiterals]
   }
 }

@@ -20,7 +20,6 @@ object ExtensionTerminalOptions {
   @scala.inline
   def apply(name: String, pty: Pseudoterminal): ExtensionTerminalOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pty = pty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionTerminalOptions]
   }
 }

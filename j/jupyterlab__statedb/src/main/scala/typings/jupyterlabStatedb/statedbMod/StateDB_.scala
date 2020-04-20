@@ -52,7 +52,7 @@ class StateDB_[T /* <: ReadonlyPartialJSONValue */] () extends IStateDB[T] {
   /**
     * A signal that emits the change type any time a value changes.
     */
-  def changed(): ISignal[this.type, Change] = js.native
+  def changed: ISignal[this.type, Change] = js.native
   /**
     * Clear the entire database.
     */

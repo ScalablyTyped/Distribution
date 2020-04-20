@@ -38,7 +38,6 @@ object IntermediateAddress {
   @scala.inline
   def apply(administrativeArea: String, countryCode: String, locality: String, postalCode: String): IntermediateAddress = {
     val __obj = js.Dynamic.literal(administrativeArea = administrativeArea.asInstanceOf[js.Any], countryCode = countryCode.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntermediateAddress]
   }
 }

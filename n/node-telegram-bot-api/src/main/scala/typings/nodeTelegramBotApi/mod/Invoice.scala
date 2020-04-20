@@ -22,7 +22,6 @@ object Invoice {
     total_amount: Double
   ): Invoice = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], start_parameter = start_parameter.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], total_amount = total_amount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Invoice]
   }
 }

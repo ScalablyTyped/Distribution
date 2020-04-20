@@ -17,7 +17,6 @@ object AnonKeyword {
   @scala.inline
   def apply(keyword: String, root: String, score: Double): AnonKeyword = {
     val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKeyword]
   }
 }

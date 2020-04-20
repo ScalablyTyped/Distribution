@@ -14,7 +14,6 @@ object LogGroupEvent {
   @scala.inline
   def apply(awslogs: AnonData): LogGroupEvent = {
     val __obj = js.Dynamic.literal(awslogs = awslogs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogGroupEvent]
   }
 }

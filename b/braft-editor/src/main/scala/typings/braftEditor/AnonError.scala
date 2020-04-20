@@ -23,7 +23,6 @@ object AnonError {
     success: AnonMeta => Unit
   ): AnonError = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), file = file.asInstanceOf[js.Any], libraryId = libraryId.asInstanceOf[js.Any], progress = js.Any.fromFunction1(progress), success = js.Any.fromFunction1(success))
-  
     __obj.asInstanceOf[AnonError]
   }
 }

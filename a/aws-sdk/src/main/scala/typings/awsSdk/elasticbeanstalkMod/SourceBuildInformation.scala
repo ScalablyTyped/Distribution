@@ -24,7 +24,6 @@ object SourceBuildInformation {
   @scala.inline
   def apply(SourceLocation: SourceLocation, SourceRepository: SourceRepository, SourceType: SourceType): SourceBuildInformation = {
     val __obj = js.Dynamic.literal(SourceLocation = SourceLocation.asInstanceOf[js.Any], SourceRepository = SourceRepository.asInstanceOf[js.Any], SourceType = SourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceBuildInformation]
   }
 }

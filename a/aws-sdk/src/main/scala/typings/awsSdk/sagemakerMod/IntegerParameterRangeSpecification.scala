@@ -20,7 +20,6 @@ object IntegerParameterRangeSpecification {
   @scala.inline
   def apply(MaxValue: ParameterValue, MinValue: ParameterValue): IntegerParameterRangeSpecification = {
     val __obj = js.Dynamic.literal(MaxValue = MaxValue.asInstanceOf[js.Any], MinValue = MinValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntegerParameterRangeSpecification]
   }
 }

@@ -20,7 +20,6 @@ object GetProposalInput {
   @scala.inline
   def apply(NetworkId: ResourceIdString, ProposalId: ResourceIdString): GetProposalInput = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any], ProposalId = ProposalId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetProposalInput]
   }
 }

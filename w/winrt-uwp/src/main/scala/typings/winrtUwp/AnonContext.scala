@@ -14,7 +14,6 @@ object AnonContext {
   @scala.inline
   def apply(context: HotspotAuthenticationContext, returnValue: Boolean): AnonContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContext]
   }
 }

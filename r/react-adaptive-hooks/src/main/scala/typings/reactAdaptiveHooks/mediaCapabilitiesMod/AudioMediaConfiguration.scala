@@ -15,7 +15,6 @@ object AudioMediaConfiguration {
   @scala.inline
   def apply(bitrate: Double, channels: Double, contentType: String, samplerate: Double): AudioMediaConfiguration = {
     val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], samplerate = samplerate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AudioMediaConfiguration]
   }
 }

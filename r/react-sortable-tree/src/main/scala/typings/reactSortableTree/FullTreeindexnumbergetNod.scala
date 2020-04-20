@@ -23,7 +23,6 @@ object FullTreeindexnumbergetNod {
     treeData: js.Array[TreeItem]
   ): FullTreeindexnumbergetNod = {
     val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), index = index.asInstanceOf[js.Any], treeData = treeData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FullTreeindexnumbergetNod]
   }
 }

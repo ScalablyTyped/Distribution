@@ -13,7 +13,6 @@ object TestContext {
   @scala.inline
   def apply(store: Store): TestContext = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestContext]
   }
 }

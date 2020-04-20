@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait inkSpinnerProps {
   @scala.inline
-  def InkSpinnerProps: SpinnerProps.type = typings.inkSpinner.mod.SpinnerProps
+  def InkSpinnerProps: SpinnerProps.type = SpinnerProps
   type InkSpinnerProps = SpinnerProps
 }
 

@@ -13,7 +13,6 @@ object Anon7 {
   @scala.inline
   def apply(length: `2`): Anon7 = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon7]
   }
 }

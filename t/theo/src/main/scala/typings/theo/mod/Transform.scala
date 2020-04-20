@@ -14,14 +14,12 @@ trait Transform extends js.Object
 
 object Transform {
   @scala.inline
-  def android: typings.theo.theoStrings.android = this.cast("android")
+  def android: typings.theo.theoStrings.android = "android".asInstanceOf[typings.theo.theoStrings.android]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ios: typings.theo.theoStrings.ios = "ios".asInstanceOf[typings.theo.theoStrings.ios]
   @scala.inline
-  def ios: typings.theo.theoStrings.ios = this.cast("ios")
+  def raw: typings.theo.theoStrings.raw = "raw".asInstanceOf[typings.theo.theoStrings.raw]
   @scala.inline
-  def raw: typings.theo.theoStrings.raw = this.cast("raw")
-  @scala.inline
-  def web: typings.theo.theoStrings.web = this.cast("web")
+  def web: typings.theo.theoStrings.web = "web".asInstanceOf[typings.theo.theoStrings.web]
 }
 

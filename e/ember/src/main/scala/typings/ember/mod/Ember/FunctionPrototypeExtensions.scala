@@ -33,7 +33,6 @@ object FunctionPrototypeExtensions {
     property: /* repeated */ java.lang.String => ComputedProperty[_, _]
   ): FunctionPrototypeExtensions = {
     val __obj = js.Dynamic.literal(observes = js.Any.fromFunction1(observes), on = js.Any.fromFunction1(on), property = js.Any.fromFunction1(property))
-  
     __obj.asInstanceOf[FunctionPrototypeExtensions]
   }
 }

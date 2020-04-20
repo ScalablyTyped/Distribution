@@ -118,7 +118,6 @@ object ServicesResource {
     startReconciliation: AnonAccesstoken => Request_[StartReconciliationResponse]
   ): ServicesResource = {
     val __obj = js.Dynamic.literal(allocateQuota = js.Any.fromFunction1(allocateQuota), check = js.Any.fromFunction1(check), endReconciliation = js.Any.fromFunction1(endReconciliation), releaseQuota = js.Any.fromFunction1(releaseQuota), report = js.Any.fromFunction1(report), startReconciliation = js.Any.fromFunction1(startReconciliation))
-  
     __obj.asInstanceOf[ServicesResource]
   }
 }

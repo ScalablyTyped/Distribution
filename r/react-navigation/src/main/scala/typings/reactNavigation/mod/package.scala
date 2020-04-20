@@ -48,7 +48,7 @@ package object mod {
   type NavigationView[Options, State, ScreenProps] = typings.react.mod.ComponentType[
     (typings.reactNavigation.AnonDescriptors[Options, ScreenProps]) with typings.reactNavigation.mod.NavigationInjectedProps[typings.reactNavigation.mod.NavigationParams]
   ]
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   // Themed components
   type ThemedStatusBarProps = typings.react.mod.ComponentProps[typings.reactNavigation.TypeofStatusBar]
   type ThemedTextInputProps = typings.react.mod.ComponentProps[typings.reactNavigation.TypeofTextInput]

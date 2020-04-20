@@ -20,7 +20,6 @@ object PluginSettings {
     Mounts: js.Array[PluginMount]
   ): PluginSettings = {
     val __obj = js.Dynamic.literal(Args = Args.asInstanceOf[js.Any], Devices = Devices.asInstanceOf[js.Any], Env = Env.asInstanceOf[js.Any], Mounts = Mounts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginSettings]
   }
 }

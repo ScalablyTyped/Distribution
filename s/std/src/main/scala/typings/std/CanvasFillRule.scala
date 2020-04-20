@@ -12,10 +12,8 @@ trait CanvasFillRule extends js.Object
 
 object CanvasFillRule {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def evenodd: typings.std.stdStrings.evenodd = "evenodd".asInstanceOf[typings.std.stdStrings.evenodd]
   @scala.inline
-  def evenodd: typings.std.stdStrings.evenodd = this.cast("evenodd")
-  @scala.inline
-  def nonzero: typings.std.stdStrings.nonzero = this.cast("nonzero")
+  def nonzero: typings.std.stdStrings.nonzero = "nonzero".asInstanceOf[typings.std.stdStrings.nonzero]
 }
 

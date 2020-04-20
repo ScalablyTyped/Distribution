@@ -13,7 +13,6 @@ object IObjectFileAndVersion {
   @scala.inline
   def apply(ObjectFile: IObjectFile, ObjectVersion: IObjectVersionAndProperties): IObjectFileAndVersion = {
     val __obj = js.Dynamic.literal(ObjectFile = ObjectFile.asInstanceOf[js.Any], ObjectVersion = ObjectVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IObjectFileAndVersion]
   }
 }

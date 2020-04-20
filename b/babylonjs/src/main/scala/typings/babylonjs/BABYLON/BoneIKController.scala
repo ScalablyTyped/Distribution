@@ -67,7 +67,7 @@ class BoneIKController protected () extends js.Object {
   /**
     * Gets or sets maximum allowed angle
     */
-  def maxAngle(): Double = js.native
+  def maxAngle: Double = js.native
   def maxAngle(value: Double): js.Any = js.native
   /**
     * Force the controller to update the bones

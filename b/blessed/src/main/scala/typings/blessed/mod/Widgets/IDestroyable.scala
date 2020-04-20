@@ -12,7 +12,6 @@ object IDestroyable {
   @scala.inline
   def apply(destroy: () => Unit): IDestroyable = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
-  
     __obj.asInstanceOf[IDestroyable]
   }
 }

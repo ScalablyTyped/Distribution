@@ -12,7 +12,6 @@ object AnonEndPointsOnly {
   @scala.inline
   def apply(endPointsOnly: Boolean): AnonEndPointsOnly = {
     val __obj = js.Dynamic.literal(endPointsOnly = endPointsOnly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEndPointsOnly]
   }
 }

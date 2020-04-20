@@ -13,7 +13,6 @@ object IROOM_REMOVE {
   @scala.inline
   def apply(room: SFSRoom): IROOM_REMOVE = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IROOM_REMOVE]
   }
 }

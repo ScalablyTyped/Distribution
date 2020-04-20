@@ -16,7 +16,6 @@ object BLECharacteristic {
   @scala.inline
   def apply(properties: Properties, uuid: String): BLECharacteristic = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BLECharacteristic]
   }
 }

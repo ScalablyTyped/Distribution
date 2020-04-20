@@ -14,7 +14,6 @@ object RequiredOptions {
   @scala.inline
   def apply(caseSensitive: Boolean, sort: Boolean): RequiredOptions = {
     val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredOptions]
   }
 }

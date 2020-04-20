@@ -13,7 +13,6 @@ object GetUpdateConfigDeps {
   @scala.inline
   def apply(config: IConfig): GetUpdateConfigDeps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUpdateConfigDeps]
   }
 }

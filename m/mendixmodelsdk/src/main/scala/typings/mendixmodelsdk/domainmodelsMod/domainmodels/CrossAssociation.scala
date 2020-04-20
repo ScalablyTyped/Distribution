@@ -35,11 +35,11 @@ class CrossAssociation protected () extends AssociationBase {
   val child_FCrossAssociation: IEntity = js.native
   @JSName("model")
   var model_FCrossAssociation: IModel = js.native
-  def child(): IEntity = js.native
+  def child: IEntity = js.native
   def child(newValue: IEntity): js.Any = js.native
-  def childQualifiedName(): String = js.native
+  def childQualifiedName: String = js.native
   @JSName("containerAsDomainModel")
-  def containerAsDomainModel_MCrossAssociation(): DomainModel = js.native
+  def containerAsDomainModel_MCrossAssociation: DomainModel = js.native
 }
 
 /* static members */

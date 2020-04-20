@@ -37,42 +37,40 @@ trait Method extends js.Object
 
 object Method {
   @scala.inline
-  def DELETE: typings.axios.axiosStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.axios.axiosStrings.DELETE = "DELETE".asInstanceOf[typings.axios.axiosStrings.DELETE]
   @scala.inline
-  def GET: typings.axios.axiosStrings.GET = this.cast("GET")
+  def GET: typings.axios.axiosStrings.GET = "GET".asInstanceOf[typings.axios.axiosStrings.GET]
   @scala.inline
-  def HEAD: typings.axios.axiosStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.axios.axiosStrings.HEAD = "HEAD".asInstanceOf[typings.axios.axiosStrings.HEAD]
   @scala.inline
-  def LINK: typings.axios.axiosStrings.LINK = this.cast("LINK")
+  def LINK: typings.axios.axiosStrings.LINK = "LINK".asInstanceOf[typings.axios.axiosStrings.LINK]
   @scala.inline
-  def OPTIONS: typings.axios.axiosStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.axios.axiosStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.axios.axiosStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.axios.axiosStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.axios.axiosStrings.PATCH = "PATCH".asInstanceOf[typings.axios.axiosStrings.PATCH]
   @scala.inline
-  def POST: typings.axios.axiosStrings.POST = this.cast("POST")
+  def POST: typings.axios.axiosStrings.POST = "POST".asInstanceOf[typings.axios.axiosStrings.POST]
   @scala.inline
-  def PUT: typings.axios.axiosStrings.PUT = this.cast("PUT")
+  def PUT: typings.axios.axiosStrings.PUT = "PUT".asInstanceOf[typings.axios.axiosStrings.PUT]
   @scala.inline
-  def UNLINK: typings.axios.axiosStrings.UNLINK = this.cast("UNLINK")
+  def UNLINK: typings.axios.axiosStrings.UNLINK = "UNLINK".asInstanceOf[typings.axios.axiosStrings.UNLINK]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def delete: delete_ = this.cast("delete")
+  def get: get_ = "get".asInstanceOf[get_]
   @scala.inline
-  def get: get_ = this.cast("get")
+  def head: head_ = "head".asInstanceOf[head_]
   @scala.inline
-  def head: head_ = this.cast("head")
+  def link: link_ = "link".asInstanceOf[link_]
   @scala.inline
-  def link: link_ = this.cast("link")
+  def options: options_ = "options".asInstanceOf[options_]
   @scala.inline
-  def options: options_ = this.cast("options")
+  def patch: patch_ = "patch".asInstanceOf[patch_]
   @scala.inline
-  def patch: patch_ = this.cast("patch")
+  def post: post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def post: post_ = this.cast("post")
+  def put: put_ = "put".asInstanceOf[put_]
   @scala.inline
-  def put: put_ = this.cast("put")
-  @scala.inline
-  def unlink: unlink_ = this.cast("unlink")
+  def unlink: unlink_ = "unlink".asInstanceOf[unlink_]
 }
 

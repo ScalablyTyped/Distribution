@@ -23,7 +23,6 @@ object UpdateEndpointsBatchOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, MessageBody: UnmarshalledMessageBody): UpdateEndpointsBatchOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], MessageBody = MessageBody.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateEndpointsBatchOutput]
   }
 }

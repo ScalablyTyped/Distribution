@@ -62,21 +62,21 @@ object importmappingsMod extends js.Object {
       @JSName("model")
       var model_FImportMapping: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MImportMapping(): FolderBase = js.native
+      def containerAsFolderBase_MImportMapping: FolderBase = js.native
       def parameter(): js.Any = js.native
       def parameter(newValue: IEntity): js.Any = js.native
-      def parameterQualifiedName(): String | Null = js.native
+      def parameterQualifiedName: String | Null = js.native
       /**
         * In version 7.16.0: introduced
         */
-      def parameterType(): DataType = js.native
+      def parameterType: DataType = js.native
       def parameterType(newValue: DataType): js.Any = js.native
       /**
         * In version 7.16.0: deleted
         */
       @JSName("parameter")
-      def parameter_Union(): IEntity | Null = js.native
-      def useSubtransactionsForMicroflows(): Boolean = js.native
+      def parameter_Union: IEntity | Null = js.native
+      def useSubtransactionsForMicroflows: Boolean = js.native
       def useSubtransactionsForMicroflows(newValue: Boolean): js.Any = js.native
     }
     

@@ -28,24 +28,24 @@ class ClientTemplate protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FClientTemplate: IModel = js.native
-  def containerAsButton(): Button = js.native
-  def containerAsControlBarButton(): ControlBarButton = js.native
-  def containerAsCustomWidget(): CustomWidget = js.native
-  def containerAsDataGrid(): DataGrid = js.native
-  def containerAsDynamicImageViewer(): DynamicImageViewer = js.native
-  def containerAsDynamicText(): DynamicText = js.native
-  def containerAsGroupBox(): GroupBox = js.native
-  def containerAsInputWidget(): InputWidget = js.native
-  def containerAsStaticImageViewer(): StaticImageViewer = js.native
-  def containerAsWidgetObject(): WidgetObject = js.native
-  def containerAsWidgetValue(): WidgetValue = js.native
+  def containerAsButton: Button = js.native
+  def containerAsControlBarButton: ControlBarButton = js.native
+  def containerAsCustomWidget: CustomWidget = js.native
+  def containerAsDataGrid: DataGrid = js.native
+  def containerAsDynamicImageViewer: DynamicImageViewer = js.native
+  def containerAsDynamicText: DynamicText = js.native
+  def containerAsGroupBox: GroupBox = js.native
+  def containerAsInputWidget: InputWidget = js.native
+  def containerAsStaticImageViewer: StaticImageViewer = js.native
+  def containerAsWidgetObject: WidgetObject = js.native
+  def containerAsWidgetValue: WidgetValue = js.native
   /**
     * In version 8.3.0: introduced
     */
-  def fallback(): Text = js.native
+  def fallback: Text = js.native
   def fallback(newValue: Text): js.Any = js.native
-  def parameters(): IList[ClientTemplateParameter] = js.native
-  def template(): Text = js.native
+  def parameters: IList[ClientTemplateParameter] = js.native
+  def template: Text = js.native
   def template(newValue: Text): js.Any = js.native
 }
 

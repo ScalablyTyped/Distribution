@@ -12,7 +12,6 @@ object ISoapFaultError {
   @scala.inline
   def apply(Fault: ISoapFault): ISoapFaultError = {
     val __obj = js.Dynamic.literal(Fault = Fault.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISoapFaultError]
   }
 }

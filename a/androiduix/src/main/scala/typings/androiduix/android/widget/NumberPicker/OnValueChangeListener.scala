@@ -12,7 +12,6 @@ object OnValueChangeListener {
   @scala.inline
   def apply(onValueChange: (typings.androiduix.android.widget.NumberPicker, Double, Double) => Unit): OnValueChangeListener = {
     val __obj = js.Dynamic.literal(onValueChange = js.Any.fromFunction3(onValueChange))
-  
     __obj.asInstanceOf[OnValueChangeListener]
   }
 }

@@ -20,7 +20,6 @@ object MediaDimensions {
     getVideoThumbnailDimensions: () => Dimensions
   ): MediaDimensions = {
     val __obj = js.Dynamic.literal(getFullMediaDimensions = js.Any.fromFunction0(getFullMediaDimensions), getPreviewMediaDimensions = js.Any.fromFunction0(getPreviewMediaDimensions), getShrunkenMediaDimensions = js.Any.fromFunction0(getShrunkenMediaDimensions), getVideoThumbnailDimensions = js.Any.fromFunction0(getVideoThumbnailDimensions))
-  
     __obj.asInstanceOf[MediaDimensions]
   }
 }

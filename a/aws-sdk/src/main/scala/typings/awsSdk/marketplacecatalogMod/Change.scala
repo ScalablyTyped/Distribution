@@ -24,7 +24,6 @@ object Change {
   @scala.inline
   def apply(ChangeType: ChangeType, Details: Json, Entity: Entity): Change = {
     val __obj = js.Dynamic.literal(ChangeType = ChangeType.asInstanceOf[js.Any], Details = Details.asInstanceOf[js.Any], Entity = Entity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Change]
   }
 }

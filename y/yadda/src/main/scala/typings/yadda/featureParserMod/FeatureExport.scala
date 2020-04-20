@@ -20,7 +20,6 @@ object FeatureExport {
     title: String
   ): FeatureExport = {
     val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], scenarios = scenarios.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatureExport]
   }
 }

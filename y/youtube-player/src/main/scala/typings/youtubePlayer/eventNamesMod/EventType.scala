@@ -17,20 +17,18 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  def apiChange: typings.youtubePlayer.youtubePlayerStrings.apiChange = this.cast("apiChange")
+  def apiChange: typings.youtubePlayer.youtubePlayerStrings.apiChange = "apiChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.apiChange]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.youtubePlayer.youtubePlayerStrings.error = "error".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.error]
   @scala.inline
-  def error: typings.youtubePlayer.youtubePlayerStrings.error = this.cast("error")
+  def playbackQualityChange: typings.youtubePlayer.youtubePlayerStrings.playbackQualityChange = "playbackQualityChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.playbackQualityChange]
   @scala.inline
-  def playbackQualityChange: typings.youtubePlayer.youtubePlayerStrings.playbackQualityChange = this.cast("playbackQualityChange")
+  def playbackRateChange: typings.youtubePlayer.youtubePlayerStrings.playbackRateChange = "playbackRateChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.playbackRateChange]
   @scala.inline
-  def playbackRateChange: typings.youtubePlayer.youtubePlayerStrings.playbackRateChange = this.cast("playbackRateChange")
+  def ready: typings.youtubePlayer.youtubePlayerStrings.ready = "ready".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.ready]
   @scala.inline
-  def ready: typings.youtubePlayer.youtubePlayerStrings.ready = this.cast("ready")
+  def stateChange: typings.youtubePlayer.youtubePlayerStrings.stateChange = "stateChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.stateChange]
   @scala.inline
-  def stateChange: typings.youtubePlayer.youtubePlayerStrings.stateChange = this.cast("stateChange")
-  @scala.inline
-  def volumeChange: typings.youtubePlayer.youtubePlayerStrings.volumeChange = this.cast("volumeChange")
+  def volumeChange: typings.youtubePlayer.youtubePlayerStrings.volumeChange = "volumeChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.volumeChange]
 }
 

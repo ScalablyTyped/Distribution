@@ -12,7 +12,6 @@ object DatastoreGeopoint {
   @scala.inline
   def apply(value: DatastoreCoords): DatastoreGeopoint = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatastoreGeopoint]
   }
 }

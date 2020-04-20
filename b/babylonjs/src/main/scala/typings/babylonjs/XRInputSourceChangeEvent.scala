@@ -14,7 +14,6 @@ object XRInputSourceChangeEvent {
   @scala.inline
   def apply(added: js.Array[XRInputSource], removed: js.Array[XRInputSource], session: XRSession): XRInputSourceChangeEvent = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XRInputSourceChangeEvent]
   }
 }

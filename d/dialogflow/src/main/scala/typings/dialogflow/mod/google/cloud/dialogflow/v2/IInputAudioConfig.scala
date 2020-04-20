@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 /** Properties of an InputAudioConfig. */
 trait IInputAudioConfig extends js.Object {
   /** InputAudioConfig audioEncoding */
-  var audioEncoding: js.UndefOr[AudioEncoding | String | Null] = js.undefined
+  var audioEncoding: js.UndefOr[
+    AudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.AudioEncoding * / any */ String) | Null
+  ] = js.undefined
   /** InputAudioConfig enableWordInfo */
   var enableWordInfo: js.UndefOr[Boolean | Null] = js.undefined
   /** InputAudioConfig languageCode */
@@ -15,7 +17,9 @@ trait IInputAudioConfig extends js.Object {
   /** InputAudioConfig model */
   var model: js.UndefOr[String | Null] = js.undefined
   /** InputAudioConfig modelVariant */
-  var modelVariant: js.UndefOr[SpeechModelVariant | String | Null] = js.undefined
+  var modelVariant: js.UndefOr[
+    SpeechModelVariant | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SpeechModelVariant * / any */ String) | Null
+  ] = js.undefined
   /** InputAudioConfig phraseHints */
   var phraseHints: js.UndefOr[js.Array[String] | Null] = js.undefined
   /** InputAudioConfig sampleRateHertz */
@@ -29,11 +33,11 @@ trait IInputAudioConfig extends js.Object {
 object IInputAudioConfig {
   @scala.inline
   def apply(
-    audioEncoding: AudioEncoding | String = null,
+    audioEncoding: AudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.AudioEncoding * / any */ String) = null,
     enableWordInfo: js.UndefOr[Boolean] = js.undefined,
     languageCode: String = null,
     model: String = null,
-    modelVariant: SpeechModelVariant | String = null,
+    modelVariant: SpeechModelVariant | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SpeechModelVariant * / any */ String) = null,
     phraseHints: js.Array[String] = null,
     sampleRateHertz: Int | Double = null,
     singleUtterance: js.UndefOr[Boolean] = js.undefined,

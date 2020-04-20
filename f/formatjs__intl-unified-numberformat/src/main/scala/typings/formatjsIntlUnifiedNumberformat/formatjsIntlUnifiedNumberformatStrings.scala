@@ -8,9 +8,18 @@ import scala.scalajs.js.annotation._
 
 object formatjsIntlUnifiedNumberformatStrings {
   @js.native
+  sealed trait accounting extends js.Object
+  
+  @js.native
   sealed trait acre
     extends Unit
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
+  
+  @js.native
+  sealed trait always extends js.Object
+  
+  @js.native
+  sealed trait auto extends js.Object
   
   @js.native
   sealed trait bit
@@ -52,6 +61,9 @@ object formatjsIntlUnifiedNumberformatStrings {
   sealed trait degree
     extends Unit
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
+  
+  @js.native
+  sealed trait exceptZero extends js.Object
   
   @js.native
   sealed trait exponentInteger
@@ -199,6 +211,9 @@ object formatjsIntlUnifiedNumberformatStrings {
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
   
   @js.native
+  sealed trait never extends js.Object
+  
+  @js.native
   sealed trait ounce
     extends Unit
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
@@ -222,6 +237,9 @@ object formatjsIntlUnifiedNumberformatStrings {
   sealed trait second
     extends Unit
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
+  
+  @js.native
+  sealed trait standard extends js.Object
   
   @js.native
   sealed trait stone
@@ -259,7 +277,13 @@ object formatjsIntlUnifiedNumberformatStrings {
        with typings.formatjsIntlUnifiedNumberformat.unitsConstantsMod.Unit
   
   @scala.inline
+  def accounting: accounting = "accounting".asInstanceOf[accounting]
+  @scala.inline
   def acre: acre = "acre".asInstanceOf[acre]
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def bit: bit = "bit".asInstanceOf[bit]
   @scala.inline
@@ -278,6 +302,8 @@ object formatjsIntlUnifiedNumberformatStrings {
   def day: day = "day".asInstanceOf[day]
   @scala.inline
   def degree: degree = "degree".asInstanceOf[degree]
+  @scala.inline
+  def exceptZero: exceptZero = "exceptZero".asInstanceOf[exceptZero]
   @scala.inline
   def exponentInteger: exponentInteger = "exponentInteger".asInstanceOf[exponentInteger]
   @scala.inline
@@ -337,6 +363,8 @@ object formatjsIntlUnifiedNumberformatStrings {
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   @scala.inline
+  def never: never = "never".asInstanceOf[never]
+  @scala.inline
   def ounce: ounce = "ounce".asInstanceOf[ounce]
   @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
@@ -346,6 +374,8 @@ object formatjsIntlUnifiedNumberformatStrings {
   def pound: pound = "pound".asInstanceOf[pound]
   @scala.inline
   def second: second = "second".asInstanceOf[second]
+  @scala.inline
+  def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
   def stone: stone = "stone".asInstanceOf[stone]
   @scala.inline

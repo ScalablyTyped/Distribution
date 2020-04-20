@@ -44,9 +44,12 @@ trait TrialComponent extends js.Object {
     * An array of the parents of the component. A parent is a trial the component is associated with and the experiment the trial is part of. A component might not have any parents.
     */
   var Parents: js.UndefOr[typings.awsSdk.sagemakerMod.Parents] = js.native
+  /**
+    * The Amazon Resource Name (ARN) and job type of the source of the component.
+    */
   var Source: js.UndefOr[TrialComponentSource] = js.native
   /**
-    * The source of the trial component.&gt;
+    * Details of the source of the component.
     */
   var SourceDetail: js.UndefOr[TrialComponentSourceDetail] = js.native
   /**

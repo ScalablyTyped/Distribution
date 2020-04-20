@@ -16,12 +16,10 @@ trait WdReplace extends js.Object
 
 object WdReplace {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdReplaceAll: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdReplaceAll: `2` = this.cast(2)
+  def wdReplaceNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdReplaceNone: `0` = this.cast(0)
-  @scala.inline
-  def wdReplaceOne: `1` = this.cast(1)
+  def wdReplaceOne: `1` = 1.asInstanceOf[`1`]
 }
 

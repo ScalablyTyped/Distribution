@@ -13,12 +13,10 @@ trait ECDHKeyFormat extends js.Object
 
 object ECDHKeyFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def compressed: typings.node.nodeStrings.compressed = "compressed".asInstanceOf[typings.node.nodeStrings.compressed]
   @scala.inline
-  def compressed: typings.node.nodeStrings.compressed = this.cast("compressed")
+  def hybrid: typings.node.nodeStrings.hybrid = "hybrid".asInstanceOf[typings.node.nodeStrings.hybrid]
   @scala.inline
-  def hybrid: typings.node.nodeStrings.hybrid = this.cast("hybrid")
-  @scala.inline
-  def uncompressed: typings.node.nodeStrings.uncompressed = this.cast("uncompressed")
+  def uncompressed: typings.node.nodeStrings.uncompressed = "uncompressed".asInstanceOf[typings.node.nodeStrings.uncompressed]
 }
 

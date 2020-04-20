@@ -14,7 +14,6 @@ object WordOptions {
   @scala.inline
   def apply(capitalize: Boolean, length: Double, syllables: Double): WordOptions = {
     val __obj = js.Dynamic.literal(capitalize = capitalize.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], syllables = syllables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WordOptions]
   }
 }

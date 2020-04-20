@@ -14,7 +14,6 @@ object AnonComponentElementData {
   @scala.inline
   def apply(componentElement: Element, data: js.Object): AnonComponentElementData = {
     val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComponentElementData]
   }
 }

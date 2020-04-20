@@ -16,7 +16,6 @@ object GetProjectRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): GetProjectRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetProjectRequest]
   }
 }

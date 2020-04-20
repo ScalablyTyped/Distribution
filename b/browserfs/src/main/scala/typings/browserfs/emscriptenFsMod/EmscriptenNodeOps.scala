@@ -32,7 +32,6 @@ object EmscriptenNodeOps {
     unlink: (EmscriptenFSNode, String) => Unit
   ): EmscriptenNodeOps = {
     val __obj = js.Dynamic.literal(getattr = js.Any.fromFunction1(getattr), lookup = js.Any.fromFunction2(lookup), mknod = js.Any.fromFunction4(mknod), readdir = js.Any.fromFunction1(readdir), readlink = js.Any.fromFunction1(readlink), rename = js.Any.fromFunction3(rename), rmdir = js.Any.fromFunction2(rmdir), setattr = js.Any.fromFunction2(setattr), symlink = js.Any.fromFunction3(symlink), unlink = js.Any.fromFunction2(unlink))
-  
     __obj.asInstanceOf[EmscriptenNodeOps]
   }
 }

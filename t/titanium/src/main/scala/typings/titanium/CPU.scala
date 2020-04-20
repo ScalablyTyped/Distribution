@@ -11,7 +11,7 @@ trait CPU extends js.Object {
   /**
   	 * General description of the CPU
   	 */
-  var model: js.UndefOr[String] = js.undefined
+  var model: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Speed of the CPU in MHz
   	 */
@@ -24,7 +24,7 @@ trait CPU extends js.Object {
 
 object CPU {
   @scala.inline
-  def apply(model: String = null, speed: Int | Double = null, times: CPUTimes = null): CPU = {
+  def apply(model: java.lang.String = null, speed: Int | Double = null, times: CPUTimes = null): CPU = {
     val __obj = js.Dynamic.literal()
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])

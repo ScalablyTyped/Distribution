@@ -106,7 +106,7 @@ class Mesh protected () extends AbstractMesh {
   def _getInstancesRenderList(subMeshId: Double): InstancesBatch = js.native
   def _getInstancesRenderList(subMeshId: Double, isReplacementMode: Boolean): InstancesBatch = js.native
   /** @hidden */
-  def _isMesh(): Boolean = js.native
+  def _isMesh: Boolean = js.native
   /** @hidden */
   def _processInstancedBuffers(visibleInstances: js.Array[InstancedMesh], renderSelf: Boolean): Unit = js.native
   /** @hidden */
@@ -257,7 +257,7 @@ class Mesh protected () extends AbstractMesh {
   /**
     * Gets a boolean indicating if the normals aren't to be recomputed on next mesh `positions` array update. This property is pertinent only for updatable parametric shapes.
     */
-  def areNormalsFrozen(): Boolean = js.native
+  def areNormalsFrozen: Boolean = js.native
   /**
     * Modifies the mesh geometry according to its own current World Matrix.
     * The mesh World Matrix is then reset.
@@ -336,7 +336,7 @@ class Mesh protected () extends AbstractMesh {
   /**
     * Gets the mesh internal Geometry object
     */
-  def geometry(): Nullable[Geometry] = js.native
+  def geometry: Nullable[Geometry] = js.native
   /**
     * Returns as a new array populated with the mesh material and/or skeleton, if any.
     * @returns an array of IAnimatable
@@ -406,7 +406,7 @@ class Mesh protected () extends AbstractMesh {
   /**
     * Gets a boolean indicating if this mesh has LOD
     */
-  def hasLODLevels(): Boolean = js.native
+  def hasLODLevels: Boolean = js.native
   /**
     * Increase the number of facets and hence vertices in a mesh
     * Vertex normals are interpolated from existing vertex normals
@@ -418,7 +418,7 @@ class Mesh protected () extends AbstractMesh {
   /**
     * Gets or sets a boolean indicating that this mesh does not use index buffer
     */
-  def isUnIndexed(): Boolean = js.native
+  def isUnIndexed: Boolean = js.native
   def isUnIndexed(value: Boolean): js.Any = js.native
   /**
     * Returns a boolean defining if the vertex data for the requested `kind` is updatable.
@@ -444,7 +444,7 @@ class Mesh protected () extends AbstractMesh {
     */
   def makeGeometryUnique(): Mesh = js.native
   /** Gets or sets a boolean indicating that the update of the instance buffer of the world matrices is manual */
-  def manualUpdateOfWorldMatrixInstancedBuffer(): Boolean = js.native
+  def manualUpdateOfWorldMatrixInstancedBuffer: Boolean = js.native
   def manualUpdateOfWorldMatrixInstancedBuffer(value: Boolean): js.Any = js.native
   /**
     * Flags an associated vertex buffer as updatable
@@ -469,16 +469,16 @@ class Mesh protected () extends AbstractMesh {
     * Gets or sets the morph target manager
     * @see http://doc.babylonjs.com/how_to/how_to_use_morphtargets
     */
-  def morphTargetManager(): Nullable[MorphTargetManager] = js.native
+  def morphTargetManager: Nullable[MorphTargetManager] = js.native
   def morphTargetManager(value: Nullable[MorphTargetManager]): js.Any = js.native
   /**
     * An event triggered after rendering the mesh
     */
-  def onAfterRenderObservable(): Observable[Mesh] = js.native
+  def onAfterRenderObservable: Observable[Mesh] = js.native
   /**
     * An event triggered before binding the mesh
     */
-  def onBeforeBindObservable(): Observable[Mesh] = js.native
+  def onBeforeBindObservable: Observable[Mesh] = js.native
   /**
     * Sets a callback to call before drawing the mesh. It is recommended to use onBeforeDrawObservable instead
     */
@@ -486,11 +486,11 @@ class Mesh protected () extends AbstractMesh {
   /**
     * An event triggered before drawing the mesh
     */
-  def onBeforeDrawObservable(): Observable[Mesh] = js.native
+  def onBeforeDrawObservable: Observable[Mesh] = js.native
   /**
     * An event triggered before rendering the mesh
     */
-  def onBeforeRenderObservable(): Observable[Mesh] = js.native
+  def onBeforeRenderObservable: Observable[Mesh] = js.native
   /**
     * User defined function used to change how LOD level selection is done
     * @see http://doc.babylonjs.com/how_to/how_to_use_lod
@@ -618,7 +618,7 @@ class Mesh protected () extends AbstractMesh {
   /**
     * Gets the source mesh (the one used to clone this one from)
     */
-  def source(): Nullable[Mesh] = js.native
+  def source: Nullable[Mesh] = js.native
   /**
     * This function will subdivide the mesh into multiple submeshes
     * @param count defines the expected number of submeshes
@@ -669,7 +669,7 @@ class Mesh protected () extends AbstractMesh {
     */
   def validateSkinning(): AnonReport = js.native
   /** Gets the array buffer used to store the instanced buffer used for instances' world matrices */
-  def worldMatrixInstancedBuffer(): Float32Array = js.native
+  def worldMatrixInstancedBuffer: Float32Array = js.native
 }
 
 /* static members */

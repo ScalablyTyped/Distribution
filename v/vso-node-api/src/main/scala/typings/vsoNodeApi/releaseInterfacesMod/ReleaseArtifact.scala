@@ -28,7 +28,6 @@ object ReleaseArtifact {
     releaseId: Double
   ): ReleaseArtifact = {
     val __obj = js.Dynamic.literal(artifactProvider = artifactProvider.asInstanceOf[js.Any], artifactType = artifactType.asInstanceOf[js.Any], definitionData = definitionData.asInstanceOf[js.Any], definitionId = definitionId.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], releaseId = releaseId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseArtifact]
   }
 }

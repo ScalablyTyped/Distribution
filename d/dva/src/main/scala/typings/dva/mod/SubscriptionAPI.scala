@@ -16,7 +16,6 @@ object SubscriptionAPI {
   @scala.inline
   def apply(dispatch: _ => _, history: History[LocationState]): SubscriptionAPI = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), history = history.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscriptionAPI]
   }
 }

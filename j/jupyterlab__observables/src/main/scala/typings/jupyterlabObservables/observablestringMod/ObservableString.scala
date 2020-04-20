@@ -50,7 +50,7 @@ class ObservableString () extends IObservableString {
     * A signal emitted when the string has changed.
     */
   @JSName("changed")
-  def changed_MObservableString(): ISignal[this.type, IChangedArgs] = js.native
+  def changed_MObservableString: ISignal[this.type, IChangedArgs] = js.native
   /**
     * Set the ObservableString to an empty string.
     */
@@ -82,7 +82,7 @@ class ObservableString () extends IObservableString {
     * Test whether the string has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MObservableString(): Boolean = js.native
+  def isDisposed_MObservableString: Boolean = js.native
   /**
     * Remove a substring.
     *
@@ -96,7 +96,7 @@ class ObservableString () extends IObservableString {
     * Get the value of the string.
     */
   @JSName("text")
-  def text_MObservableString(): String = js.native
+  def text_MObservableString: String = js.native
   /**
     * Set the value of the string.
     */
@@ -106,6 +106,6 @@ class ObservableString () extends IObservableString {
     * The type of the Observable.
     */
   @JSName("type")
-  def type_MObservableString(): typings.jupyterlabObservables.jupyterlabObservablesStrings.String = js.native
+  def type_MObservableString: typings.jupyterlabObservables.jupyterlabObservablesStrings.String = js.native
 }
 

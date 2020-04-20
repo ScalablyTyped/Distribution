@@ -23,7 +23,6 @@ object AnonBackgroundColor {
   @scala.inline
   def apply(backgroundColor: String, featuredPlaylistId: String, textColor: String): AnonBackgroundColor = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], featuredPlaylistId = featuredPlaylistId.asInstanceOf[js.Any], textColor = textColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackgroundColor]
   }
 }

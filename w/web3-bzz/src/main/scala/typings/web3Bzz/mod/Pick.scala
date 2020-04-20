@@ -14,7 +14,6 @@ object Pick {
   @scala.inline
   def apply(data: () => js.Promise[_], directory: () => js.Promise[_], file: () => js.Promise[_]): Pick = {
     val __obj = js.Dynamic.literal(data = js.Any.fromFunction0(data), directory = js.Any.fromFunction0(directory), file = js.Any.fromFunction0(file))
-  
     __obj.asInstanceOf[Pick]
   }
 }

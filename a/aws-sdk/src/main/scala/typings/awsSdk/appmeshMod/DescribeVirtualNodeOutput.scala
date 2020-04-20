@@ -16,7 +16,6 @@ object DescribeVirtualNodeOutput {
   @scala.inline
   def apply(virtualNode: VirtualNodeData): DescribeVirtualNodeOutput = {
     val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeVirtualNodeOutput]
   }
 }

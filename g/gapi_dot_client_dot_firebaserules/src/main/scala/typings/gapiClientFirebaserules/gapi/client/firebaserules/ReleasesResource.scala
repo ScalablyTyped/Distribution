@@ -67,7 +67,6 @@ object ReleasesResource {
     update: AnonAccesstoken => Request_[Release]
   ): ReleasesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getExecutable = js.Any.fromFunction1(getExecutable), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[ReleasesResource]
   }
 }

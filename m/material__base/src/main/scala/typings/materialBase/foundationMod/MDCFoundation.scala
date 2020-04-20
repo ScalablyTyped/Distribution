@@ -15,7 +15,6 @@ object MDCFoundation {
   @scala.inline
   def apply[A](destroy: () => Unit, init: () => Unit): MDCFoundation[A] = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction0(init))
-  
     __obj.asInstanceOf[MDCFoundation[A]]
   }
 }

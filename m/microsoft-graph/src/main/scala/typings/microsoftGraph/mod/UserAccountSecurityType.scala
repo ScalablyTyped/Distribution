@@ -16,16 +16,14 @@ trait UserAccountSecurityType extends js.Object
 
 object UserAccountSecurityType {
   @scala.inline
-  def administrator: typings.microsoftGraph.microsoftGraphStrings.administrator = this.cast("administrator")
+  def administrator: typings.microsoftGraph.microsoftGraphStrings.administrator = "administrator".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.administrator]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def power: typings.microsoftGraph.microsoftGraphStrings.power = "power".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.power]
   @scala.inline
-  def power: typings.microsoftGraph.microsoftGraphStrings.power = this.cast("power")
+  def standard: typings.microsoftGraph.microsoftGraphStrings.standard = "standard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.standard]
   @scala.inline
-  def standard: typings.microsoftGraph.microsoftGraphStrings.standard = this.cast("standard")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

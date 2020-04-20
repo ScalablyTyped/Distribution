@@ -27,7 +27,6 @@ object AnonLeft {
     right: Expression
   ): AnonLeft = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLeft]
   }
 }

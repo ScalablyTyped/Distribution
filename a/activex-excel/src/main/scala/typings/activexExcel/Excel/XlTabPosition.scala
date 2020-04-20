@@ -14,10 +14,8 @@ trait XlTabPosition extends js.Object
 
 object XlTabPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlTabPositionFirst: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlTabPositionFirst: `0` = this.cast(0)
-  @scala.inline
-  def xlTabPositionLast: `1` = this.cast(1)
+  def xlTabPositionLast: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -53,7 +53,6 @@ object TypeofCalendar {
     ]
   ): TypeofCalendar = {
     val __obj = js.Dynamic.literal(_MonthDropDown = _MonthDropDown.asInstanceOf[js.Any], _MonthDropDownButton = _MonthDropDownButton.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCalendar]
   }
 }

@@ -20,7 +20,6 @@ object IScrollablePaneState {
     stickyTopHeight: Double
   ): IScrollablePaneState = {
     val __obj = js.Dynamic.literal(scrollbarHeight = scrollbarHeight.asInstanceOf[js.Any], scrollbarWidth = scrollbarWidth.asInstanceOf[js.Any], stickyBottomHeight = stickyBottomHeight.asInstanceOf[js.Any], stickyTopHeight = stickyTopHeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IScrollablePaneState]
   }
 }

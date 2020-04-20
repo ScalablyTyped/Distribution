@@ -22,7 +22,6 @@ object i18n {
     translate: String => String
   ): i18n = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), getCode = js.Any.fromFunction0(getCode), rtl = rtl.asInstanceOf[js.Any], setCode = js.Any.fromFunction1(setCode), translate = js.Any.fromFunction1(translate))
-  
     __obj.asInstanceOf[i18n]
   }
 }

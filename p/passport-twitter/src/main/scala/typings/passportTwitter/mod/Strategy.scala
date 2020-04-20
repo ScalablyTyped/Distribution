@@ -2,6 +2,7 @@ package typings.passportTwitter.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ class Strategy protected ()
   def this(
     options: IStrategyOptionWithRequest,
     verify: js.Function5[
-        /* req */ Request_[ParamsDictionary], 
+        /* req */ Request_[ParamsDictionary, _, _, Query], 
         /* accessToken */ String, 
         /* refreshToken */ String, 
         /* profile */ Profile, 
@@ -31,6 +32,6 @@ class Strategy protected ()
         Unit
       ]
   ) = this()
-  def authenticate(req: Request_[ParamsDictionary], options: js.Object): Unit = js.native
+  def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
 }
 

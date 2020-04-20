@@ -23,7 +23,6 @@ object GetBlockPublicAccessConfigurationOutput {
     BlockPublicAccessConfigurationMetadata: BlockPublicAccessConfigurationMetadata
   ): GetBlockPublicAccessConfigurationOutput = {
     val __obj = js.Dynamic.literal(BlockPublicAccessConfiguration = BlockPublicAccessConfiguration.asInstanceOf[js.Any], BlockPublicAccessConfigurationMetadata = BlockPublicAccessConfigurationMetadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBlockPublicAccessConfigurationOutput]
   }
 }

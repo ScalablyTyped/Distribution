@@ -12,7 +12,6 @@ object SignalClient {
   @scala.inline
   def apply(send: SignalReport => Unit): SignalClient = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[SignalClient]
   }
 }

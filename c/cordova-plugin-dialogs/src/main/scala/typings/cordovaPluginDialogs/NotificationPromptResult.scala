@@ -19,7 +19,6 @@ object NotificationPromptResult {
   @scala.inline
   def apply(buttonIndex: Double, input1: String): NotificationPromptResult = {
     val __obj = js.Dynamic.literal(buttonIndex = buttonIndex.asInstanceOf[js.Any], input1 = input1.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationPromptResult]
   }
 }

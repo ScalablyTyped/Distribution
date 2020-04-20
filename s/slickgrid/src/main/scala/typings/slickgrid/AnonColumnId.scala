@@ -13,7 +13,6 @@ object AnonColumnId {
   @scala.inline
   def apply(columnId: String, sortAsc: Boolean): AnonColumnId = {
     val __obj = js.Dynamic.literal(columnId = columnId.asInstanceOf[js.Any], sortAsc = sortAsc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColumnId]
   }
 }

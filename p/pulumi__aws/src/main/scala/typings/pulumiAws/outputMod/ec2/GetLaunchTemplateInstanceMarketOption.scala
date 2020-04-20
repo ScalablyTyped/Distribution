@@ -14,7 +14,6 @@ object GetLaunchTemplateInstanceMarketOption {
   @scala.inline
   def apply(marketType: String, spotOptions: js.Array[GetLaunchTemplateInstanceMarketOptionSpotOption]): GetLaunchTemplateInstanceMarketOption = {
     val __obj = js.Dynamic.literal(marketType = marketType.asInstanceOf[js.Any], spotOptions = spotOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchTemplateInstanceMarketOption]
   }
 }

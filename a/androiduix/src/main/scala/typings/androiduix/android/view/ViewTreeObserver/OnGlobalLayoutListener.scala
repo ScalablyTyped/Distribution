@@ -12,7 +12,6 @@ object OnGlobalLayoutListener {
   @scala.inline
   def apply(onGlobalLayout: () => js.Any): OnGlobalLayoutListener = {
     val __obj = js.Dynamic.literal(onGlobalLayout = js.Any.fromFunction0(onGlobalLayout))
-  
     __obj.asInstanceOf[OnGlobalLayoutListener]
   }
 }

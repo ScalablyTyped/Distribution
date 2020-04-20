@@ -78,7 +78,6 @@ object VariantsetsResource {
     search: AnonAccesstoken => Request_[SearchVariantSetsResponse]
   ): VariantsetsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), export = js.Any.fromFunction1(export), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[VariantsetsResource]
   }
 }

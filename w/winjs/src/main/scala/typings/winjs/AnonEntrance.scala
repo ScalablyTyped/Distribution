@@ -13,7 +13,6 @@ object AnonEntrance {
   @scala.inline
   def apply(entrance: js.Function, exit: js.Function): AnonEntrance = {
     val __obj = js.Dynamic.literal(entrance = entrance.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEntrance]
   }
 }

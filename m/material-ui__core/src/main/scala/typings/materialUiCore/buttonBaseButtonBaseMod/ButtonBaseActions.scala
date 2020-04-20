@@ -13,7 +13,6 @@ object ButtonBaseActions {
   @scala.inline
   def apply(focusVisible: () => Unit): ButtonBaseActions = {
     val __obj = js.Dynamic.literal(focusVisible = js.Any.fromFunction0(focusVisible))
-  
     __obj.asInstanceOf[ButtonBaseActions]
   }
 }

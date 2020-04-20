@@ -16,7 +16,6 @@ object DeleteDataSourceInput {
   @scala.inline
   def apply(DataSourceId: EntityId): DeleteDataSourceInput = {
     val __obj = js.Dynamic.literal(DataSourceId = DataSourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDataSourceInput]
   }
 }

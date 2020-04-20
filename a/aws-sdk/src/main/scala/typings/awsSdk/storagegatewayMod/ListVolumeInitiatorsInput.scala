@@ -16,7 +16,6 @@ object ListVolumeInitiatorsInput {
   @scala.inline
   def apply(VolumeARN: VolumeARN): ListVolumeInitiatorsInput = {
     val __obj = js.Dynamic.literal(VolumeARN = VolumeARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListVolumeInitiatorsInput]
   }
 }

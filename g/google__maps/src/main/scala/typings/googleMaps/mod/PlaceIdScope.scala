@@ -12,10 +12,8 @@ trait PlaceIdScope extends js.Object
 
 object PlaceIdScope {
   @scala.inline
-  def APP: typings.googleMaps.googleMapsStrings.APP = this.cast("APP")
+  def APP: typings.googleMaps.googleMapsStrings.APP = "APP".asInstanceOf[typings.googleMaps.googleMapsStrings.APP]
   @scala.inline
-  def GOOGLE: typings.googleMaps.googleMapsStrings.GOOGLE = this.cast("GOOGLE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def GOOGLE: typings.googleMaps.googleMapsStrings.GOOGLE = "GOOGLE".asInstanceOf[typings.googleMaps.googleMapsStrings.GOOGLE]
 }
 

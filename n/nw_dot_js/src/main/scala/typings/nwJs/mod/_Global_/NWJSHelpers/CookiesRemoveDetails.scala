@@ -26,7 +26,6 @@ object CookiesRemoveDetails {
   @scala.inline
   def apply(name: String, storeId: String, url: String): CookiesRemoveDetails = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], storeId = storeId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CookiesRemoveDetails]
   }
 }

@@ -18,7 +18,6 @@ object InternalFieldData {
     value: StoreValue
   ): InternalFieldData = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InternalFieldData]
   }
 }

@@ -20,7 +20,6 @@ object ExtraParam {
   @scala.inline
   def apply(Name: ExtraParamName, Value: ExtraParamValue): ExtraParam = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtraParam]
   }
 }

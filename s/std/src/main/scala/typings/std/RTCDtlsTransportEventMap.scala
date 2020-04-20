@@ -13,7 +13,6 @@ object RTCDtlsTransportEventMap {
   @scala.inline
   def apply(error: RTCErrorEvent, statechange: Event_): RTCDtlsTransportEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], statechange = statechange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RTCDtlsTransportEventMap]
   }
 }

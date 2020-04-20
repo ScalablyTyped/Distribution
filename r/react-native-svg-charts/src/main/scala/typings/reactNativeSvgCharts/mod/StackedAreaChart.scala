@@ -14,8 +14,13 @@ class StackedAreaChart[T] ()
 @JSImport("react-native-svg-charts", "StackedAreaChart")
 @js.native
 object StackedAreaChart extends js.Object {
-  def extractDataPoints[T](data: js.Array[T], keys: js.Array[String]): js.Array[Double] = js.native
-  def extractDataPoints[T](data: js.Array[T], keys: js.Array[String], order: OrderFunction): js.Array[Double] = js.native
-  def extractDataPoints[T](data: js.Array[T], keys: js.Array[String], order: OrderFunction, offset: OffsetFunction): js.Array[Double] = js.native
+  def extractDataPoints[T](data: js.Array[T], keys: js.Array[/* keyof T */ String]): js.Array[Double] = js.native
+  def extractDataPoints[T](data: js.Array[T], keys: js.Array[/* keyof T */ String], order: OrderFunction): js.Array[Double] = js.native
+  def extractDataPoints[T](
+    data: js.Array[T],
+    keys: js.Array[/* keyof T */ String],
+    order: OrderFunction,
+    offset: OffsetFunction
+  ): js.Array[Double] = js.native
 }
 

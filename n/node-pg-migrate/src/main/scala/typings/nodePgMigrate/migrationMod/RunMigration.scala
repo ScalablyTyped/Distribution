@@ -14,7 +14,6 @@ object RunMigration {
   @scala.inline
   def apply(name: String, path: String, timestamp: Double): RunMigration = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunMigration]
   }
 }

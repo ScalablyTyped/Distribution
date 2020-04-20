@@ -20,7 +20,6 @@ object Builder {
     toSql: () => String
   ): Builder = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), exec = js.Any.fromFunction0(exec), explain = js.Any.fromFunction0(explain), toSql = js.Any.fromFunction0(toSql))
-  
     __obj.asInstanceOf[Builder]
   }
 }

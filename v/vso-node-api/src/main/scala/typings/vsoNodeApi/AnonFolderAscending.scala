@@ -14,7 +14,6 @@ object AnonFolderAscending {
   @scala.inline
   def apply(folderAscending: Double, folderDescending: Double, none: Double): AnonFolderAscending = {
     val __obj = js.Dynamic.literal(folderAscending = folderAscending.asInstanceOf[js.Any], folderDescending = folderDescending.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFolderAscending]
   }
 }

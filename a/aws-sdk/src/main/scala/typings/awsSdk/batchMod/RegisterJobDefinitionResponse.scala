@@ -24,7 +24,6 @@ object RegisterJobDefinitionResponse {
   @scala.inline
   def apply(jobDefinitionArn: String, jobDefinitionName: String, revision: Integer): RegisterJobDefinitionResponse = {
     val __obj = js.Dynamic.literal(jobDefinitionArn = jobDefinitionArn.asInstanceOf[js.Any], jobDefinitionName = jobDefinitionName.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterJobDefinitionResponse]
   }
 }

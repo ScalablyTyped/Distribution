@@ -28,7 +28,6 @@ object DatabaseReplicateResponse {
     source_last_seq: Double
   ): DatabaseReplicateResponse = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], replication_id_version = replication_id_version.asInstanceOf[js.Any], session_id = session_id.asInstanceOf[js.Any], source_last_seq = source_last_seq.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatabaseReplicateResponse]
   }
 }

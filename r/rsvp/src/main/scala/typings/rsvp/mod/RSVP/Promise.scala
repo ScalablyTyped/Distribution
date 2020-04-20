@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Promise[T] extends PromiseLike[T] {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.rsvp.rsvpStrings.Promise = js.native
   def `catch`[TResult](): Promise[T | TResult] = js.native
   def `catch`[TResult](onRejected: js.UndefOr[scala.Nothing], label: String): Promise[T | TResult] = js.native

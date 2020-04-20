@@ -14,10 +14,8 @@ trait MarshalOptionsEnum extends js.Object
 
 object MarshalOptionsEnum {
   @scala.inline
-  def adMarshalAll: `0` = this.cast(0)
+  def adMarshalAll: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adMarshalModifiedOnly: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adMarshalModifiedOnly: `1` = 1.asInstanceOf[`1`]
 }
 

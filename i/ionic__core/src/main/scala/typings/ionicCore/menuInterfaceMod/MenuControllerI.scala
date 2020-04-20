@@ -28,7 +28,6 @@ object MenuControllerI {
     getOpenSync: () => js.UndefOr[HTMLIonMenuElement]
   ): MenuControllerI = {
     val __obj = js.Dynamic.literal(_createAnimation = js.Any.fromFunction2(_createAnimation), _register = js.Any.fromFunction1(_register), _setActiveMenu = js.Any.fromFunction1(_setActiveMenu), _setOpen = js.Any.fromFunction3(_setOpen), _unregister = js.Any.fromFunction1(_unregister), getMenus = js.Any.fromFunction0(getMenus), getOpenSync = js.Any.fromFunction0(getOpenSync))
-  
     __obj.asInstanceOf[MenuControllerI]
   }
 }

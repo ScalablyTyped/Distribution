@@ -15,7 +15,6 @@ object TypeAdapterFactory {
   @scala.inline
   def apply(create: (Tyson, TypeToken[js.Any]) => js.UndefOr[TypeAdapter[js.Any]]): TypeAdapterFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
-  
     __obj.asInstanceOf[TypeAdapterFactory]
   }
 }

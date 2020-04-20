@@ -37,7 +37,6 @@ object AnonDisabled {
     validationErrors: Requireable[js.Object]
   ): AnonDisabled = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], onInvalid = onInvalid.asInstanceOf[js.Any], onInvalidSubmit = onInvalidSubmit.asInstanceOf[js.Any], onReset = onReset.asInstanceOf[js.Any], onSubmit = onSubmit.asInstanceOf[js.Any], onValid = onValid.asInstanceOf[js.Any], onValidSubmit = onValidSubmit.asInstanceOf[js.Any], preventDefaultSubmit = preventDefaultSubmit.asInstanceOf[js.Any], preventExternalInvalidation = preventExternalInvalidation.asInstanceOf[js.Any], validationErrors = validationErrors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisabled]
   }
 }

@@ -14,7 +14,6 @@ object Font {
   @scala.inline
   def apply(glyphs: NumberDictionary[Glyph], meta: Meta): Font = {
     val __obj = js.Dynamic.literal(glyphs = glyphs.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Font]
   }
 }

@@ -15,7 +15,6 @@ object AnonCssPrefix {
   @scala.inline
   def apply(cssPrefix: String, cssTransformEnd: String, cssTransformStart: String, nativeTouchScroll: Boolean): AnonCssPrefix = {
     val __obj = js.Dynamic.literal(cssPrefix = cssPrefix.asInstanceOf[js.Any], cssTransformEnd = cssTransformEnd.asInstanceOf[js.Any], cssTransformStart = cssTransformStart.asInstanceOf[js.Any], nativeTouchScroll = nativeTouchScroll.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCssPrefix]
   }
 }

@@ -30,7 +30,7 @@ class Label protected () extends ConditionallyVisibleWidget {
   ) = this()
   @JSName("model")
   var model_FLabel: IModel = js.native
-  def caption(): Text = js.native
+  def caption: Text = js.native
   def caption(newValue: Text): js.Any = js.native
 }
 

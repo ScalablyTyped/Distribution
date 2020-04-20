@@ -13,7 +13,6 @@ object FriendshipRepositoryChangeResponseRootObject {
   @scala.inline
   def apply(friendship_status: FriendshipRepositoryChangeResponseFriendshipStatus, status: String): FriendshipRepositoryChangeResponseRootObject = {
     val __obj = js.Dynamic.literal(friendship_status = friendship_status.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FriendshipRepositoryChangeResponseRootObject]
   }
 }

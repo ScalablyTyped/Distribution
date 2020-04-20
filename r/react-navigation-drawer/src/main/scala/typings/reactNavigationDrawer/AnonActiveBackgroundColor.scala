@@ -20,7 +20,6 @@ object AnonActiveBackgroundColor {
     inactiveTintColor: AnonDark
   ): AnonActiveBackgroundColor = {
     val __obj = js.Dynamic.literal(activeBackgroundColor = activeBackgroundColor.asInstanceOf[js.Any], activeTintColor = activeTintColor.asInstanceOf[js.Any], inactiveBackgroundColor = inactiveBackgroundColor.asInstanceOf[js.Any], inactiveTintColor = inactiveTintColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveBackgroundColor]
   }
 }

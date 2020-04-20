@@ -12,10 +12,8 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  def audio: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.audio = this.cast("audio")
+  def audio: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.audio = "audio".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.audio]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def image: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.image = this.cast("image")
+  def image: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.image = "image".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.image]
 }
 

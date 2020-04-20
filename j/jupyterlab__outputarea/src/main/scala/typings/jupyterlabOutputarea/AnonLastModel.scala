@@ -15,7 +15,6 @@ object AnonLastModel {
   @scala.inline
   def apply(lastModel: IOutputModel, value: IOutput): AnonLastModel = {
     val __obj = js.Dynamic.literal(lastModel = lastModel.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLastModel]
   }
 }

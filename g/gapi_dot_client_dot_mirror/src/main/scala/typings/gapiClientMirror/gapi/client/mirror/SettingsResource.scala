@@ -15,7 +15,6 @@ object SettingsResource {
   @scala.inline
   def apply(get: AnonAlt => Request_[Setting]): SettingsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[SettingsResource]
   }
 }

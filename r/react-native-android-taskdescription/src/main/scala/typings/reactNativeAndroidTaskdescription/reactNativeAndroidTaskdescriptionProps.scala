@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeAndroidTaskdescriptionProps {
   @scala.inline
-  def ReactNativeAndroidTaskdescriptionProps: ReactNativeAndroidTaskDescriptionProps.type = typings.reactNativeAndroidTaskdescription.mod.ReactNativeAndroidTaskDescriptionProps
+  def ReactNativeAndroidTaskdescriptionProps: ReactNativeAndroidTaskDescriptionProps.type = ReactNativeAndroidTaskDescriptionProps
   type ReactNativeAndroidTaskdescriptionProps = ReactNativeAndroidTaskDescriptionProps
 }
 

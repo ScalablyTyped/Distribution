@@ -18,7 +18,6 @@ object Typeofsafari {
     self: SafariExtensionGlobalPage | SafariExtensionBar
   ): Typeofsafari = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofsafari]
   }
 }

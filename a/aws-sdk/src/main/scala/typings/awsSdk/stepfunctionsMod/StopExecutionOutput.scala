@@ -16,7 +16,6 @@ object StopExecutionOutput {
   @scala.inline
   def apply(stopDate: Timestamp): StopExecutionOutput = {
     val __obj = js.Dynamic.literal(stopDate = stopDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopExecutionOutput]
   }
 }

@@ -12,10 +12,8 @@ trait AdHocOrdering extends js.Object
 
 object AdHocOrdering {
   @scala.inline
-  def Parallel: typings.bpmnModdle.bpmnModdleStrings.Parallel = this.cast("Parallel")
+  def Parallel: typings.bpmnModdle.bpmnModdleStrings.Parallel = "Parallel".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Parallel]
   @scala.inline
-  def Sequential: typings.bpmnModdle.bpmnModdleStrings.Sequential = this.cast("Sequential")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Sequential: typings.bpmnModdle.bpmnModdleStrings.Sequential = "Sequential".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Sequential]
 }
 

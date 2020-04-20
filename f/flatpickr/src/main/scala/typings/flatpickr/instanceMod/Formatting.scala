@@ -17,7 +17,6 @@ object Formatting {
   @scala.inline
   def apply(formats: Formats_, revFormat: RevFormat_, tokenRegex: TokenRegex_): Formatting = {
     val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], revFormat = revFormat.asInstanceOf[js.Any], tokenRegex = tokenRegex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Formatting]
   }
 }

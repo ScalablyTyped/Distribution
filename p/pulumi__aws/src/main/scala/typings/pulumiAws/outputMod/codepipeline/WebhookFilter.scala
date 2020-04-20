@@ -20,7 +20,6 @@ object WebhookFilter {
   @scala.inline
   def apply(jsonPath: String, matchEquals: String): WebhookFilter = {
     val __obj = js.Dynamic.literal(jsonPath = jsonPath.asInstanceOf[js.Any], matchEquals = matchEquals.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebhookFilter]
   }
 }

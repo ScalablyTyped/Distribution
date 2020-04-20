@@ -68,27 +68,27 @@ class VRCameraMetrics () extends js.Object {
   /**
     * Gets the rendering aspect ratio based on the provided resolutions.
     */
-  def aspectRatio(): Double = js.native
+  def aspectRatio: Double = js.native
   /**
     * Gets the aspect ratio based on the FOV, scale factors, and real screen sizes.
     */
-  def aspectRatioFov(): Double = js.native
+  def aspectRatioFov: Double = js.native
   /**
     * @hidden
     */
-  def leftHMatrix(): Matrix = js.native
+  def leftHMatrix: Matrix = js.native
   /**
     * @hidden
     */
-  def leftPreViewMatrix(): Matrix = js.native
+  def leftPreViewMatrix: Matrix = js.native
   /**
     * @hidden
     */
-  def rightHMatrix(): Matrix = js.native
+  def rightHMatrix: Matrix = js.native
   /**
     * @hidden
     */
-  def rightPreViewMatrix(): Matrix = js.native
+  def rightPreViewMatrix: Matrix = js.native
 }
 
 /* static members */

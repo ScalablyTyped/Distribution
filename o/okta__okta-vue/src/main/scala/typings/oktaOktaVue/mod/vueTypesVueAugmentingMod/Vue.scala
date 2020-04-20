@@ -14,7 +14,6 @@ object Vue {
   @scala.inline
   def apply($auth: AnonAuthRedirectGuard): Vue = {
     val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Vue]
   }
 }

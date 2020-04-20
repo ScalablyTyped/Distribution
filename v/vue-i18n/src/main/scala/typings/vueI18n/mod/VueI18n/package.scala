@@ -10,6 +10,7 @@ package object VueI18n {
   type DateTimeFormatOptions = typings.std.Intl.DateTimeFormatOptions | typings.vueI18n.mod.VueI18n.SpecificDateTimeFormatOptions
   type DateTimeFormatResult = java.lang.String
   type DateTimeFormats = org.scalablytyped.runtime.StringDictionary[typings.vueI18n.mod.VueI18n.DateTimeFormat]
+  type FallbackLocale = java.lang.String | js.Array[java.lang.String] | typings.vueI18n.vueI18nBooleans.`false` | org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   type Locale = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
@@ -45,7 +46,7 @@ package object VueI18n {
   org.scalablytyped.runtime.StringDictionary[
     js.Function2[/* choice */ scala.Double, /* choicesLength */ scala.Double, scala.Double]
   ]
-  type PostTranslationHandler = js.Function1[/* str */ java.lang.String, java.lang.String]
+  type PostTranslationHandler = js.Function2[/* str */ java.lang.String, /* key */ js.UndefOr[java.lang.String], java.lang.String]
   type TranslateResult = java.lang.String | typings.vueI18n.mod.VueI18n.LocaleMessages
   type Values = js.Array[js.Any] | org.scalablytyped.runtime.StringDictionary[js.Any]
 }

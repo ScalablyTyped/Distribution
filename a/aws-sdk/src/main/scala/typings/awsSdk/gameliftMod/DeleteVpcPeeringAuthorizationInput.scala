@@ -20,7 +20,6 @@ object DeleteVpcPeeringAuthorizationInput {
   @scala.inline
   def apply(GameLiftAwsAccountId: NonZeroAndMaxString, PeerVpcId: NonZeroAndMaxString): DeleteVpcPeeringAuthorizationInput = {
     val __obj = js.Dynamic.literal(GameLiftAwsAccountId = GameLiftAwsAccountId.asInstanceOf[js.Any], PeerVpcId = PeerVpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVpcPeeringAuthorizationInput]
   }
 }

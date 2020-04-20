@@ -20,7 +20,6 @@ object TagRepositorySectionResponsesectionsItem {
     layout_type: String
   ): TagRepositorySectionResponsesectionsItem = {
     val __obj = js.Dynamic.literal(explore_item_info = explore_item_info.asInstanceOf[js.Any], feed_type = feed_type.asInstanceOf[js.Any], layout_content = layout_content.asInstanceOf[js.Any], layout_type = layout_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagRepositorySectionResponsesectionsItem]
   }
 }

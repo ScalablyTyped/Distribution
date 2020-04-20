@@ -21,7 +21,6 @@ object IEditorFactoryService {
   @scala.inline
   def apply(newDocumentEditor: IOptions => IEditor, newInlineEditor: IOptions => IEditor): IEditorFactoryService = {
     val __obj = js.Dynamic.literal(newDocumentEditor = js.Any.fromFunction1(newDocumentEditor), newInlineEditor = js.Any.fromFunction1(newInlineEditor))
-  
     __obj.asInstanceOf[IEditorFactoryService]
   }
 }

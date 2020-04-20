@@ -29,7 +29,6 @@ object SmimeInfoCollection {
     setDefault: (String, String, String) => Unit
   ): SmimeInfoCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get), insert = js.Any.fromFunction3(insert), list = js.Any.fromFunction2(list), remove = js.Any.fromFunction3(remove), setDefault = js.Any.fromFunction3(setDefault))
-  
     __obj.asInstanceOf[SmimeInfoCollection]
   }
 }

@@ -24,7 +24,6 @@ object VueSelectWatch {
     value: js.Any => Unit
   ): VueSelectWatch = {
     val __obj = js.Dynamic.literal(created = js.Any.fromFunction0(created), multiple = js.Any.fromFunction1(multiple), mutableOptions = js.Any.fromFunction0(mutableOptions), mutableValue = js.Any.fromFunction2(mutableValue), options = js.Any.fromFunction1(options), value = js.Any.fromFunction1(value))
-  
     __obj.asInstanceOf[VueSelectWatch]
   }
 }

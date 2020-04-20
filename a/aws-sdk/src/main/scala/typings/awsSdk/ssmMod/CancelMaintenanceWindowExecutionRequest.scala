@@ -16,7 +16,6 @@ object CancelMaintenanceWindowExecutionRequest {
   @scala.inline
   def apply(WindowExecutionId: MaintenanceWindowExecutionId): CancelMaintenanceWindowExecutionRequest = {
     val __obj = js.Dynamic.literal(WindowExecutionId = WindowExecutionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelMaintenanceWindowExecutionRequest]
   }
 }

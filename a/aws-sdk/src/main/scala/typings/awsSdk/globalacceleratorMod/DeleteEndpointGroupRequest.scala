@@ -16,7 +16,6 @@ object DeleteEndpointGroupRequest {
   @scala.inline
   def apply(EndpointGroupArn: GenericString): DeleteEndpointGroupRequest = {
     val __obj = js.Dynamic.literal(EndpointGroupArn = EndpointGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEndpointGroupRequest]
   }
 }

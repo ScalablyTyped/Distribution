@@ -34,7 +34,6 @@ object AuthSettings {
     setAutoRetrievedSmsCodeForPhoneNumber: (String, String) => js.Promise[Null]
   ): AuthSettings = {
     val __obj = js.Dynamic.literal(appVerificationDisabledForTesting = appVerificationDisabledForTesting.asInstanceOf[js.Any], setAutoRetrievedSmsCodeForPhoneNumber = js.Any.fromFunction2(setAutoRetrievedSmsCodeForPhoneNumber))
-  
     __obj.asInstanceOf[AuthSettings]
   }
 }

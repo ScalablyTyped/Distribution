@@ -13,7 +13,6 @@ object EngineResult {
   @scala.inline
   def apply(almanac: Almanac, events: js.Array[Event]): EngineResult = {
     val __obj = js.Dynamic.literal(almanac = almanac.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EngineResult]
   }
 }

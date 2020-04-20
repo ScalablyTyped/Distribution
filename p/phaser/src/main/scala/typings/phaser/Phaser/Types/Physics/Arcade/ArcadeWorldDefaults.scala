@@ -42,7 +42,6 @@ object ArcadeWorldDefaults {
     velocityDebugColor: Double
   ): ArcadeWorldDefaults = {
     val __obj = js.Dynamic.literal(bodyDebugColor = bodyDebugColor.asInstanceOf[js.Any], debugShowBody = debugShowBody.asInstanceOf[js.Any], debugShowStaticBody = debugShowStaticBody.asInstanceOf[js.Any], debugShowVelocity = debugShowVelocity.asInstanceOf[js.Any], staticBodyDebugColor = staticBodyDebugColor.asInstanceOf[js.Any], velocityDebugColor = velocityDebugColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArcadeWorldDefaults]
   }
 }

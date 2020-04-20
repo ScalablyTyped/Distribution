@@ -10,9 +10,9 @@ package object mod {
   ])
   type InferPropsInner[V] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof V ]: -? prop-types.prop-types.InferType<V[K]>}
-    */ typings.propTypes.propTypesStrings.InferPropsInner with V
+    */ typings.propTypes.propTypesStrings.InferPropsInner with org.scalablytyped.runtime.TopLevel[V]
   type InferType[V] = js.Any
-  type OptionalKeys[V] = typings.std.Exclude[java.lang.String, typings.propTypes.mod.RequiredKeys[V]]
+  type OptionalKeys[V] = typings.std.Exclude[/* keyof V */ java.lang.String, typings.propTypes.mod.RequiredKeys[V]]
   type ReactComponentLike = java.lang.String | (js.Function2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], js.Any]) | (org.scalablytyped.runtime.Instantiable2[/* props */ js.Any, js.UndefOr[/* context */ js.Any], js.Any])
   /* Rewritten from type alias, can be one of: 
     - js.Object
@@ -30,5 +30,5 @@ package object mod {
   type RequiredKeys[V] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]: -? std.Exclude<V[K], undefined> extends prop-types.prop-types.Validator<infer T>? prop-types.prop-types.IsOptional<any> extends true? never : K : never}[keyof V] */ js.Any
   type ValidationMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? prop-types.prop-types.Validator<T[K]>}
-    */ typings.propTypes.propTypesStrings.ValidationMap with T
+    */ typings.propTypes.propTypesStrings.ValidationMap with org.scalablytyped.runtime.TopLevel[T]
 }

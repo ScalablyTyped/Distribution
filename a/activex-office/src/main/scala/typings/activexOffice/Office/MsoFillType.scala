@@ -24,20 +24,18 @@ trait MsoFillType extends js.Object
 
 object MsoFillType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoFillBackground: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoFillBackground: `5` = this.cast(5)
+  def msoFillGradient: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoFillGradient: `3` = this.cast(3)
+  def msoFillMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoFillMixed: `-2` = this.cast(-2)
+  def msoFillPatterned: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoFillPatterned: `2` = this.cast(2)
+  def msoFillPicture: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoFillPicture: `6` = this.cast(6)
+  def msoFillSolid: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoFillSolid: `1` = this.cast(1)
-  @scala.inline
-  def msoFillTextured: `4` = this.cast(4)
+  def msoFillTextured: `4` = 4.asInstanceOf[`4`]
 }
 

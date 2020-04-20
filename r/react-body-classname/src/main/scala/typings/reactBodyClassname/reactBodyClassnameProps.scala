@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactBodyClassnameProps {
   @scala.inline
-  def ReactBodyClassnameProps: AnonClassName.type = typings.reactBodyClassname.AnonClassName
+  def ReactBodyClassnameProps: AnonClassName.type = AnonClassName
   type ReactBodyClassnameProps = AnonClassName
 }
 

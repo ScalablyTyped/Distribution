@@ -35,7 +35,6 @@ object UsersResource {
     watch: AnonAlt => Request_[WatchResponse]
   ): UsersResource = {
     val __obj = js.Dynamic.literal(drafts = drafts.asInstanceOf[js.Any], getProfile = js.Any.fromFunction1(getProfile), history = history.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], stop = js.Any.fromFunction1(stop), threads = threads.asInstanceOf[js.Any], watch = js.Any.fromFunction1(watch))
-  
     __obj.asInstanceOf[UsersResource]
   }
 }

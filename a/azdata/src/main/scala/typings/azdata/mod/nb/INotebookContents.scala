@@ -20,7 +20,6 @@ object INotebookContents {
     nbformat_minor: Double
   ): INotebookContents = {
     val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], nbformat = nbformat.asInstanceOf[js.Any], nbformat_minor = nbformat_minor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INotebookContents]
   }
 }

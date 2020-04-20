@@ -85,7 +85,6 @@ object IAngularHelper {
     safeApply: (IScope, js.Function) => Unit
   ): IAngularHelper = {
     val __obj = js.Dynamic.literal(getCurrentForm = js.Any.fromFunction1(getCurrentForm), getNullForm = js.Any.fromFunction1(getNullForm), getRequiredCurrentForm = js.Any.fromFunction1(getRequiredCurrentForm), rejectedPromise = js.Any.fromFunction1(rejectedPromise), safeApply = js.Any.fromFunction2(safeApply))
-  
     __obj.asInstanceOf[IAngularHelper]
   }
 }

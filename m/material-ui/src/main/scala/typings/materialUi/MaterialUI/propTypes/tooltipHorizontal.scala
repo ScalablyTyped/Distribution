@@ -13,12 +13,10 @@ trait tooltipHorizontal extends js.Object
 
 object tooltipHorizontal {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.materialUi.materialUiStrings.center = "center".asInstanceOf[typings.materialUi.materialUiStrings.center]
   @scala.inline
-  def center: typings.materialUi.materialUiStrings.center = this.cast("center")
+  def left: typings.materialUi.materialUiStrings.left = "left".asInstanceOf[typings.materialUi.materialUiStrings.left]
   @scala.inline
-  def left: typings.materialUi.materialUiStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.materialUi.materialUiStrings.right = this.cast("right")
+  def right: typings.materialUi.materialUiStrings.right = "right".asInstanceOf[typings.materialUi.materialUiStrings.right]
 }
 

@@ -17,7 +17,6 @@ object Colors {
   @scala.inline
   def apply(comment: AnonClose, content: AnonClose, prop: AnonClose, tag: AnonClose, value: AnonClose): Colors = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Colors]
   }
 }

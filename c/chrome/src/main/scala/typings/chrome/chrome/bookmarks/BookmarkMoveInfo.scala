@@ -15,7 +15,6 @@ object BookmarkMoveInfo {
   @scala.inline
   def apply(index: Double, oldIndex: Double, oldParentId: String, parentId: String): BookmarkMoveInfo = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldParentId = oldParentId.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BookmarkMoveInfo]
   }
 }

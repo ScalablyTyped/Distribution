@@ -159,304 +159,302 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  def Asterisk: typings.stripe.stripeStrings.Asterisk = this.cast("*")
+  def Asterisk: typings.stripe.stripeStrings.Asterisk = "*".asInstanceOf[typings.stripe.stripeStrings.Asterisk]
   @scala.inline
-  def accountDotapplicationDotauthorized: typings.stripe.stripeStrings.accountDotapplicationDotauthorized = this.cast("account.application.authorized")
+  def accountDotapplicationDotauthorized: typings.stripe.stripeStrings.accountDotapplicationDotauthorized = "account.application.authorized".asInstanceOf[typings.stripe.stripeStrings.accountDotapplicationDotauthorized]
   @scala.inline
-  def accountDotapplicationDotdeauthorized: typings.stripe.stripeStrings.accountDotapplicationDotdeauthorized = this.cast("account.application.deauthorized")
+  def accountDotapplicationDotdeauthorized: typings.stripe.stripeStrings.accountDotapplicationDotdeauthorized = "account.application.deauthorized".asInstanceOf[typings.stripe.stripeStrings.accountDotapplicationDotdeauthorized]
   @scala.inline
-  def accountDotexternal_accountDotcreated: typings.stripe.stripeStrings.accountDotexternal_accountDotcreated = this.cast("account.external_account.created")
+  def accountDotexternal_accountDotcreated: typings.stripe.stripeStrings.accountDotexternal_accountDotcreated = "account.external_account.created".asInstanceOf[typings.stripe.stripeStrings.accountDotexternal_accountDotcreated]
   @scala.inline
-  def accountDotexternal_accountDotdeleted: typings.stripe.stripeStrings.accountDotexternal_accountDotdeleted = this.cast("account.external_account.deleted")
+  def accountDotexternal_accountDotdeleted: typings.stripe.stripeStrings.accountDotexternal_accountDotdeleted = "account.external_account.deleted".asInstanceOf[typings.stripe.stripeStrings.accountDotexternal_accountDotdeleted]
   @scala.inline
-  def accountDotexternal_accountDotupdated: typings.stripe.stripeStrings.accountDotexternal_accountDotupdated = this.cast("account.external_account.updated")
+  def accountDotexternal_accountDotupdated: typings.stripe.stripeStrings.accountDotexternal_accountDotupdated = "account.external_account.updated".asInstanceOf[typings.stripe.stripeStrings.accountDotexternal_accountDotupdated]
   @scala.inline
-  def accountDotupdated: typings.stripe.stripeStrings.accountDotupdated = this.cast("account.updated")
+  def accountDotupdated: typings.stripe.stripeStrings.accountDotupdated = "account.updated".asInstanceOf[typings.stripe.stripeStrings.accountDotupdated]
   @scala.inline
-  def application_feeDotcreated: typings.stripe.stripeStrings.application_feeDotcreated = this.cast("application_fee.created")
+  def application_feeDotcreated: typings.stripe.stripeStrings.application_feeDotcreated = "application_fee.created".asInstanceOf[typings.stripe.stripeStrings.application_feeDotcreated]
   @scala.inline
-  def application_feeDotrefundDotupdated: typings.stripe.stripeStrings.application_feeDotrefundDotupdated = this.cast("application_fee.refund.updated")
+  def application_feeDotrefundDotupdated: typings.stripe.stripeStrings.application_feeDotrefundDotupdated = "application_fee.refund.updated".asInstanceOf[typings.stripe.stripeStrings.application_feeDotrefundDotupdated]
   @scala.inline
-  def application_feeDotrefunded: typings.stripe.stripeStrings.application_feeDotrefunded = this.cast("application_fee.refunded")
+  def application_feeDotrefunded: typings.stripe.stripeStrings.application_feeDotrefunded = "application_fee.refunded".asInstanceOf[typings.stripe.stripeStrings.application_feeDotrefunded]
   @scala.inline
-  def balanceDotavailable: typings.stripe.stripeStrings.balanceDotavailable = this.cast("balance.available")
+  def balanceDotavailable: typings.stripe.stripeStrings.balanceDotavailable = "balance.available".asInstanceOf[typings.stripe.stripeStrings.balanceDotavailable]
   @scala.inline
-  def capabilityDotupdated: typings.stripe.stripeStrings.capabilityDotupdated = this.cast("capability.updated")
+  def capabilityDotupdated: typings.stripe.stripeStrings.capabilityDotupdated = "capability.updated".asInstanceOf[typings.stripe.stripeStrings.capabilityDotupdated]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chargeDotcaptured: typings.stripe.stripeStrings.chargeDotcaptured = "charge.captured".asInstanceOf[typings.stripe.stripeStrings.chargeDotcaptured]
   @scala.inline
-  def chargeDotcaptured: typings.stripe.stripeStrings.chargeDotcaptured = this.cast("charge.captured")
+  def chargeDotdisputeDotclosed: typings.stripe.stripeStrings.chargeDotdisputeDotclosed = "charge.dispute.closed".asInstanceOf[typings.stripe.stripeStrings.chargeDotdisputeDotclosed]
   @scala.inline
-  def chargeDotdisputeDotclosed: typings.stripe.stripeStrings.chargeDotdisputeDotclosed = this.cast("charge.dispute.closed")
+  def chargeDotdisputeDotcreated: typings.stripe.stripeStrings.chargeDotdisputeDotcreated = "charge.dispute.created".asInstanceOf[typings.stripe.stripeStrings.chargeDotdisputeDotcreated]
   @scala.inline
-  def chargeDotdisputeDotcreated: typings.stripe.stripeStrings.chargeDotdisputeDotcreated = this.cast("charge.dispute.created")
+  def chargeDotdisputeDotfunds_reinstated: typings.stripe.stripeStrings.chargeDotdisputeDotfunds_reinstated = "charge.dispute.funds_reinstated".asInstanceOf[typings.stripe.stripeStrings.chargeDotdisputeDotfunds_reinstated]
   @scala.inline
-  def chargeDotdisputeDotfunds_reinstated: typings.stripe.stripeStrings.chargeDotdisputeDotfunds_reinstated = this.cast("charge.dispute.funds_reinstated")
+  def chargeDotdisputeDotfunds_withdrawn: typings.stripe.stripeStrings.chargeDotdisputeDotfunds_withdrawn = "charge.dispute.funds_withdrawn".asInstanceOf[typings.stripe.stripeStrings.chargeDotdisputeDotfunds_withdrawn]
   @scala.inline
-  def chargeDotdisputeDotfunds_withdrawn: typings.stripe.stripeStrings.chargeDotdisputeDotfunds_withdrawn = this.cast("charge.dispute.funds_withdrawn")
+  def chargeDotdisputeDotupdated: typings.stripe.stripeStrings.chargeDotdisputeDotupdated = "charge.dispute.updated".asInstanceOf[typings.stripe.stripeStrings.chargeDotdisputeDotupdated]
   @scala.inline
-  def chargeDotdisputeDotupdated: typings.stripe.stripeStrings.chargeDotdisputeDotupdated = this.cast("charge.dispute.updated")
+  def chargeDotexpired: typings.stripe.stripeStrings.chargeDotexpired = "charge.expired".asInstanceOf[typings.stripe.stripeStrings.chargeDotexpired]
   @scala.inline
-  def chargeDotexpired: typings.stripe.stripeStrings.chargeDotexpired = this.cast("charge.expired")
+  def chargeDotfailed: typings.stripe.stripeStrings.chargeDotfailed = "charge.failed".asInstanceOf[typings.stripe.stripeStrings.chargeDotfailed]
   @scala.inline
-  def chargeDotfailed: typings.stripe.stripeStrings.chargeDotfailed = this.cast("charge.failed")
+  def chargeDotpending: typings.stripe.stripeStrings.chargeDotpending = "charge.pending".asInstanceOf[typings.stripe.stripeStrings.chargeDotpending]
   @scala.inline
-  def chargeDotpending: typings.stripe.stripeStrings.chargeDotpending = this.cast("charge.pending")
+  def chargeDotrefundDotupdated: typings.stripe.stripeStrings.chargeDotrefundDotupdated = "charge.refund.updated".asInstanceOf[typings.stripe.stripeStrings.chargeDotrefundDotupdated]
   @scala.inline
-  def chargeDotrefundDotupdated: typings.stripe.stripeStrings.chargeDotrefundDotupdated = this.cast("charge.refund.updated")
+  def chargeDotrefunded: typings.stripe.stripeStrings.chargeDotrefunded = "charge.refunded".asInstanceOf[typings.stripe.stripeStrings.chargeDotrefunded]
   @scala.inline
-  def chargeDotrefunded: typings.stripe.stripeStrings.chargeDotrefunded = this.cast("charge.refunded")
+  def chargeDotsucceeded: typings.stripe.stripeStrings.chargeDotsucceeded = "charge.succeeded".asInstanceOf[typings.stripe.stripeStrings.chargeDotsucceeded]
   @scala.inline
-  def chargeDotsucceeded: typings.stripe.stripeStrings.chargeDotsucceeded = this.cast("charge.succeeded")
+  def chargeDotupdated: typings.stripe.stripeStrings.chargeDotupdated = "charge.updated".asInstanceOf[typings.stripe.stripeStrings.chargeDotupdated]
   @scala.inline
-  def chargeDotupdated: typings.stripe.stripeStrings.chargeDotupdated = this.cast("charge.updated")
+  def checkoutDotsessionDotcompleted: typings.stripe.stripeStrings.checkoutDotsessionDotcompleted = "checkout.session.completed".asInstanceOf[typings.stripe.stripeStrings.checkoutDotsessionDotcompleted]
   @scala.inline
-  def checkoutDotsessionDotcompleted: typings.stripe.stripeStrings.checkoutDotsessionDotcompleted = this.cast("checkout.session.completed")
+  def couponDotcreated: typings.stripe.stripeStrings.couponDotcreated = "coupon.created".asInstanceOf[typings.stripe.stripeStrings.couponDotcreated]
   @scala.inline
-  def couponDotcreated: typings.stripe.stripeStrings.couponDotcreated = this.cast("coupon.created")
+  def couponDotdeleted: typings.stripe.stripeStrings.couponDotdeleted = "coupon.deleted".asInstanceOf[typings.stripe.stripeStrings.couponDotdeleted]
   @scala.inline
-  def couponDotdeleted: typings.stripe.stripeStrings.couponDotdeleted = this.cast("coupon.deleted")
+  def couponDotupdated: typings.stripe.stripeStrings.couponDotupdated = "coupon.updated".asInstanceOf[typings.stripe.stripeStrings.couponDotupdated]
   @scala.inline
-  def couponDotupdated: typings.stripe.stripeStrings.couponDotupdated = this.cast("coupon.updated")
+  def credit_noteDotcreated: typings.stripe.stripeStrings.credit_noteDotcreated = "credit_note.created".asInstanceOf[typings.stripe.stripeStrings.credit_noteDotcreated]
   @scala.inline
-  def credit_noteDotcreated: typings.stripe.stripeStrings.credit_noteDotcreated = this.cast("credit_note.created")
+  def credit_noteDotupdated: typings.stripe.stripeStrings.credit_noteDotupdated = "credit_note.updated".asInstanceOf[typings.stripe.stripeStrings.credit_noteDotupdated]
   @scala.inline
-  def credit_noteDotupdated: typings.stripe.stripeStrings.credit_noteDotupdated = this.cast("credit_note.updated")
+  def credit_noteDotvoided: typings.stripe.stripeStrings.credit_noteDotvoided = "credit_note.voided".asInstanceOf[typings.stripe.stripeStrings.credit_noteDotvoided]
   @scala.inline
-  def credit_noteDotvoided: typings.stripe.stripeStrings.credit_noteDotvoided = this.cast("credit_note.voided")
+  def customerDotcreated: typings.stripe.stripeStrings.customerDotcreated = "customer.created".asInstanceOf[typings.stripe.stripeStrings.customerDotcreated]
   @scala.inline
-  def customerDotcreated: typings.stripe.stripeStrings.customerDotcreated = this.cast("customer.created")
+  def customerDotdeleted: typings.stripe.stripeStrings.customerDotdeleted = "customer.deleted".asInstanceOf[typings.stripe.stripeStrings.customerDotdeleted]
   @scala.inline
-  def customerDotdeleted: typings.stripe.stripeStrings.customerDotdeleted = this.cast("customer.deleted")
+  def customerDotdiscountDotcreated: typings.stripe.stripeStrings.customerDotdiscountDotcreated = "customer.discount.created".asInstanceOf[typings.stripe.stripeStrings.customerDotdiscountDotcreated]
   @scala.inline
-  def customerDotdiscountDotcreated: typings.stripe.stripeStrings.customerDotdiscountDotcreated = this.cast("customer.discount.created")
+  def customerDotdiscountDotdeleted: typings.stripe.stripeStrings.customerDotdiscountDotdeleted = "customer.discount.deleted".asInstanceOf[typings.stripe.stripeStrings.customerDotdiscountDotdeleted]
   @scala.inline
-  def customerDotdiscountDotdeleted: typings.stripe.stripeStrings.customerDotdiscountDotdeleted = this.cast("customer.discount.deleted")
+  def customerDotdiscountDotupdated: typings.stripe.stripeStrings.customerDotdiscountDotupdated = "customer.discount.updated".asInstanceOf[typings.stripe.stripeStrings.customerDotdiscountDotupdated]
   @scala.inline
-  def customerDotdiscountDotupdated: typings.stripe.stripeStrings.customerDotdiscountDotupdated = this.cast("customer.discount.updated")
+  def customerDotsourceDotcreated: typings.stripe.stripeStrings.customerDotsourceDotcreated = "customer.source.created".asInstanceOf[typings.stripe.stripeStrings.customerDotsourceDotcreated]
   @scala.inline
-  def customerDotsourceDotcreated: typings.stripe.stripeStrings.customerDotsourceDotcreated = this.cast("customer.source.created")
+  def customerDotsourceDotdeleted: typings.stripe.stripeStrings.customerDotsourceDotdeleted = "customer.source.deleted".asInstanceOf[typings.stripe.stripeStrings.customerDotsourceDotdeleted]
   @scala.inline
-  def customerDotsourceDotdeleted: typings.stripe.stripeStrings.customerDotsourceDotdeleted = this.cast("customer.source.deleted")
+  def customerDotsourceDotexpiring: typings.stripe.stripeStrings.customerDotsourceDotexpiring = "customer.source.expiring".asInstanceOf[typings.stripe.stripeStrings.customerDotsourceDotexpiring]
   @scala.inline
-  def customerDotsourceDotexpiring: typings.stripe.stripeStrings.customerDotsourceDotexpiring = this.cast("customer.source.expiring")
+  def customerDotsourceDotupdated: typings.stripe.stripeStrings.customerDotsourceDotupdated = "customer.source.updated".asInstanceOf[typings.stripe.stripeStrings.customerDotsourceDotupdated]
   @scala.inline
-  def customerDotsourceDotupdated: typings.stripe.stripeStrings.customerDotsourceDotupdated = this.cast("customer.source.updated")
+  def customerDotsubscriptionDotcreated: typings.stripe.stripeStrings.customerDotsubscriptionDotcreated = "customer.subscription.created".asInstanceOf[typings.stripe.stripeStrings.customerDotsubscriptionDotcreated]
   @scala.inline
-  def customerDotsubscriptionDotcreated: typings.stripe.stripeStrings.customerDotsubscriptionDotcreated = this.cast("customer.subscription.created")
+  def customerDotsubscriptionDotdeleted: typings.stripe.stripeStrings.customerDotsubscriptionDotdeleted = "customer.subscription.deleted".asInstanceOf[typings.stripe.stripeStrings.customerDotsubscriptionDotdeleted]
   @scala.inline
-  def customerDotsubscriptionDotdeleted: typings.stripe.stripeStrings.customerDotsubscriptionDotdeleted = this.cast("customer.subscription.deleted")
+  def customerDotsubscriptionDottrial_will_end: typings.stripe.stripeStrings.customerDotsubscriptionDottrial_will_end = "customer.subscription.trial_will_end".asInstanceOf[typings.stripe.stripeStrings.customerDotsubscriptionDottrial_will_end]
   @scala.inline
-  def customerDotsubscriptionDottrial_will_end: typings.stripe.stripeStrings.customerDotsubscriptionDottrial_will_end = this.cast("customer.subscription.trial_will_end")
+  def customerDotsubscriptionDotupdated: typings.stripe.stripeStrings.customerDotsubscriptionDotupdated = "customer.subscription.updated".asInstanceOf[typings.stripe.stripeStrings.customerDotsubscriptionDotupdated]
   @scala.inline
-  def customerDotsubscriptionDotupdated: typings.stripe.stripeStrings.customerDotsubscriptionDotupdated = this.cast("customer.subscription.updated")
+  def customerDottax_idDotcreated: typings.stripe.stripeStrings.customerDottax_idDotcreated = "customer.tax_id.created".asInstanceOf[typings.stripe.stripeStrings.customerDottax_idDotcreated]
   @scala.inline
-  def customerDottax_idDotcreated: typings.stripe.stripeStrings.customerDottax_idDotcreated = this.cast("customer.tax_id.created")
+  def customerDottax_idDotdeleted: typings.stripe.stripeStrings.customerDottax_idDotdeleted = "customer.tax_id.deleted".asInstanceOf[typings.stripe.stripeStrings.customerDottax_idDotdeleted]
   @scala.inline
-  def customerDottax_idDotdeleted: typings.stripe.stripeStrings.customerDottax_idDotdeleted = this.cast("customer.tax_id.deleted")
+  def customerDottax_idDotupdated: typings.stripe.stripeStrings.customerDottax_idDotupdated = "customer.tax_id.updated".asInstanceOf[typings.stripe.stripeStrings.customerDottax_idDotupdated]
   @scala.inline
-  def customerDottax_idDotupdated: typings.stripe.stripeStrings.customerDottax_idDotupdated = this.cast("customer.tax_id.updated")
+  def customerDotupdated: typings.stripe.stripeStrings.customerDotupdated = "customer.updated".asInstanceOf[typings.stripe.stripeStrings.customerDotupdated]
   @scala.inline
-  def customerDotupdated: typings.stripe.stripeStrings.customerDotupdated = this.cast("customer.updated")
+  def fileDotcreated: typings.stripe.stripeStrings.fileDotcreated = "file.created".asInstanceOf[typings.stripe.stripeStrings.fileDotcreated]
   @scala.inline
-  def fileDotcreated: typings.stripe.stripeStrings.fileDotcreated = this.cast("file.created")
+  def invoiceDotcreated: typings.stripe.stripeStrings.invoiceDotcreated = "invoice.created".asInstanceOf[typings.stripe.stripeStrings.invoiceDotcreated]
   @scala.inline
-  def invoiceDotcreated: typings.stripe.stripeStrings.invoiceDotcreated = this.cast("invoice.created")
+  def invoiceDotdeleted: typings.stripe.stripeStrings.invoiceDotdeleted = "invoice.deleted".asInstanceOf[typings.stripe.stripeStrings.invoiceDotdeleted]
   @scala.inline
-  def invoiceDotdeleted: typings.stripe.stripeStrings.invoiceDotdeleted = this.cast("invoice.deleted")
+  def invoiceDotfinalized: typings.stripe.stripeStrings.invoiceDotfinalized = "invoice.finalized".asInstanceOf[typings.stripe.stripeStrings.invoiceDotfinalized]
   @scala.inline
-  def invoiceDotfinalized: typings.stripe.stripeStrings.invoiceDotfinalized = this.cast("invoice.finalized")
+  def invoiceDotmarked_uncollectible: typings.stripe.stripeStrings.invoiceDotmarked_uncollectible = "invoice.marked_uncollectible".asInstanceOf[typings.stripe.stripeStrings.invoiceDotmarked_uncollectible]
   @scala.inline
-  def invoiceDotmarked_uncollectible: typings.stripe.stripeStrings.invoiceDotmarked_uncollectible = this.cast("invoice.marked_uncollectible")
+  def invoiceDotpayment_action_required: typings.stripe.stripeStrings.invoiceDotpayment_action_required = "invoice.payment_action_required".asInstanceOf[typings.stripe.stripeStrings.invoiceDotpayment_action_required]
   @scala.inline
-  def invoiceDotpayment_action_required: typings.stripe.stripeStrings.invoiceDotpayment_action_required = this.cast("invoice.payment_action_required")
+  def invoiceDotpayment_failed: typings.stripe.stripeStrings.invoiceDotpayment_failed = "invoice.payment_failed".asInstanceOf[typings.stripe.stripeStrings.invoiceDotpayment_failed]
   @scala.inline
-  def invoiceDotpayment_failed: typings.stripe.stripeStrings.invoiceDotpayment_failed = this.cast("invoice.payment_failed")
+  def invoiceDotpayment_succeeded: typings.stripe.stripeStrings.invoiceDotpayment_succeeded = "invoice.payment_succeeded".asInstanceOf[typings.stripe.stripeStrings.invoiceDotpayment_succeeded]
   @scala.inline
-  def invoiceDotpayment_succeeded: typings.stripe.stripeStrings.invoiceDotpayment_succeeded = this.cast("invoice.payment_succeeded")
+  def invoiceDotsent: typings.stripe.stripeStrings.invoiceDotsent = "invoice.sent".asInstanceOf[typings.stripe.stripeStrings.invoiceDotsent]
   @scala.inline
-  def invoiceDotsent: typings.stripe.stripeStrings.invoiceDotsent = this.cast("invoice.sent")
+  def invoiceDotupcoming: typings.stripe.stripeStrings.invoiceDotupcoming = "invoice.upcoming".asInstanceOf[typings.stripe.stripeStrings.invoiceDotupcoming]
   @scala.inline
-  def invoiceDotupcoming: typings.stripe.stripeStrings.invoiceDotupcoming = this.cast("invoice.upcoming")
+  def invoiceDotupdated: typings.stripe.stripeStrings.invoiceDotupdated = "invoice.updated".asInstanceOf[typings.stripe.stripeStrings.invoiceDotupdated]
   @scala.inline
-  def invoiceDotupdated: typings.stripe.stripeStrings.invoiceDotupdated = this.cast("invoice.updated")
+  def invoiceDotvoided: typings.stripe.stripeStrings.invoiceDotvoided = "invoice.voided".asInstanceOf[typings.stripe.stripeStrings.invoiceDotvoided]
   @scala.inline
-  def invoiceDotvoided: typings.stripe.stripeStrings.invoiceDotvoided = this.cast("invoice.voided")
+  def invoiceitemDotcreated: typings.stripe.stripeStrings.invoiceitemDotcreated = "invoiceitem.created".asInstanceOf[typings.stripe.stripeStrings.invoiceitemDotcreated]
   @scala.inline
-  def invoiceitemDotcreated: typings.stripe.stripeStrings.invoiceitemDotcreated = this.cast("invoiceitem.created")
+  def invoiceitemDotdeleted: typings.stripe.stripeStrings.invoiceitemDotdeleted = "invoiceitem.deleted".asInstanceOf[typings.stripe.stripeStrings.invoiceitemDotdeleted]
   @scala.inline
-  def invoiceitemDotdeleted: typings.stripe.stripeStrings.invoiceitemDotdeleted = this.cast("invoiceitem.deleted")
+  def invoiceitemDotupdated: typings.stripe.stripeStrings.invoiceitemDotupdated = "invoiceitem.updated".asInstanceOf[typings.stripe.stripeStrings.invoiceitemDotupdated]
   @scala.inline
-  def invoiceitemDotupdated: typings.stripe.stripeStrings.invoiceitemDotupdated = this.cast("invoiceitem.updated")
+  def issuing_authorizationDotcreated: typings.stripe.stripeStrings.issuing_authorizationDotcreated = "issuing_authorization.created".asInstanceOf[typings.stripe.stripeStrings.issuing_authorizationDotcreated]
   @scala.inline
-  def issuing_authorizationDotcreated: typings.stripe.stripeStrings.issuing_authorizationDotcreated = this.cast("issuing_authorization.created")
+  def issuing_authorizationDotrequest: typings.stripe.stripeStrings.issuing_authorizationDotrequest = "issuing_authorization.request".asInstanceOf[typings.stripe.stripeStrings.issuing_authorizationDotrequest]
   @scala.inline
-  def issuing_authorizationDotrequest: typings.stripe.stripeStrings.issuing_authorizationDotrequest = this.cast("issuing_authorization.request")
+  def issuing_authorizationDotupdated: typings.stripe.stripeStrings.issuing_authorizationDotupdated = "issuing_authorization.updated".asInstanceOf[typings.stripe.stripeStrings.issuing_authorizationDotupdated]
   @scala.inline
-  def issuing_authorizationDotupdated: typings.stripe.stripeStrings.issuing_authorizationDotupdated = this.cast("issuing_authorization.updated")
+  def issuing_cardDotcreated: typings.stripe.stripeStrings.issuing_cardDotcreated = "issuing_card.created".asInstanceOf[typings.stripe.stripeStrings.issuing_cardDotcreated]
   @scala.inline
-  def issuing_cardDotcreated: typings.stripe.stripeStrings.issuing_cardDotcreated = this.cast("issuing_card.created")
+  def issuing_cardDotupdated: typings.stripe.stripeStrings.issuing_cardDotupdated = "issuing_card.updated".asInstanceOf[typings.stripe.stripeStrings.issuing_cardDotupdated]
   @scala.inline
-  def issuing_cardDotupdated: typings.stripe.stripeStrings.issuing_cardDotupdated = this.cast("issuing_card.updated")
+  def issuing_cardholderDotcreated: typings.stripe.stripeStrings.issuing_cardholderDotcreated = "issuing_cardholder.created".asInstanceOf[typings.stripe.stripeStrings.issuing_cardholderDotcreated]
   @scala.inline
-  def issuing_cardholderDotcreated: typings.stripe.stripeStrings.issuing_cardholderDotcreated = this.cast("issuing_cardholder.created")
+  def issuing_cardholderDotupdated: typings.stripe.stripeStrings.issuing_cardholderDotupdated = "issuing_cardholder.updated".asInstanceOf[typings.stripe.stripeStrings.issuing_cardholderDotupdated]
   @scala.inline
-  def issuing_cardholderDotupdated: typings.stripe.stripeStrings.issuing_cardholderDotupdated = this.cast("issuing_cardholder.updated")
+  def issuing_disputeDotcreated: typings.stripe.stripeStrings.issuing_disputeDotcreated = "issuing_dispute.created".asInstanceOf[typings.stripe.stripeStrings.issuing_disputeDotcreated]
   @scala.inline
-  def issuing_disputeDotcreated: typings.stripe.stripeStrings.issuing_disputeDotcreated = this.cast("issuing_dispute.created")
+  def issuing_disputeDotupdated: typings.stripe.stripeStrings.issuing_disputeDotupdated = "issuing_dispute.updated".asInstanceOf[typings.stripe.stripeStrings.issuing_disputeDotupdated]
   @scala.inline
-  def issuing_disputeDotupdated: typings.stripe.stripeStrings.issuing_disputeDotupdated = this.cast("issuing_dispute.updated")
+  def issuing_settlementDotcreated: typings.stripe.stripeStrings.issuing_settlementDotcreated = "issuing_settlement.created".asInstanceOf[typings.stripe.stripeStrings.issuing_settlementDotcreated]
   @scala.inline
-  def issuing_settlementDotcreated: typings.stripe.stripeStrings.issuing_settlementDotcreated = this.cast("issuing_settlement.created")
+  def issuing_settlementDotupdated: typings.stripe.stripeStrings.issuing_settlementDotupdated = "issuing_settlement.updated".asInstanceOf[typings.stripe.stripeStrings.issuing_settlementDotupdated]
   @scala.inline
-  def issuing_settlementDotupdated: typings.stripe.stripeStrings.issuing_settlementDotupdated = this.cast("issuing_settlement.updated")
+  def issuing_transactionDotcreated: typings.stripe.stripeStrings.issuing_transactionDotcreated = "issuing_transaction.created".asInstanceOf[typings.stripe.stripeStrings.issuing_transactionDotcreated]
   @scala.inline
-  def issuing_transactionDotcreated: typings.stripe.stripeStrings.issuing_transactionDotcreated = this.cast("issuing_transaction.created")
+  def issuing_transactionDotupdated: typings.stripe.stripeStrings.issuing_transactionDotupdated = "issuing_transaction.updated".asInstanceOf[typings.stripe.stripeStrings.issuing_transactionDotupdated]
   @scala.inline
-  def issuing_transactionDotupdated: typings.stripe.stripeStrings.issuing_transactionDotupdated = this.cast("issuing_transaction.updated")
+  def mandateDotupdated: typings.stripe.stripeStrings.mandateDotupdated = "mandate.updated".asInstanceOf[typings.stripe.stripeStrings.mandateDotupdated]
   @scala.inline
-  def mandateDotupdated: typings.stripe.stripeStrings.mandateDotupdated = this.cast("mandate.updated")
+  def orderDotcreated: typings.stripe.stripeStrings.orderDotcreated = "order.created".asInstanceOf[typings.stripe.stripeStrings.orderDotcreated]
   @scala.inline
-  def orderDotcreated: typings.stripe.stripeStrings.orderDotcreated = this.cast("order.created")
+  def orderDotpayment_failed: typings.stripe.stripeStrings.orderDotpayment_failed = "order.payment_failed".asInstanceOf[typings.stripe.stripeStrings.orderDotpayment_failed]
   @scala.inline
-  def orderDotpayment_failed: typings.stripe.stripeStrings.orderDotpayment_failed = this.cast("order.payment_failed")
+  def orderDotpayment_succeeded: typings.stripe.stripeStrings.orderDotpayment_succeeded = "order.payment_succeeded".asInstanceOf[typings.stripe.stripeStrings.orderDotpayment_succeeded]
   @scala.inline
-  def orderDotpayment_succeeded: typings.stripe.stripeStrings.orderDotpayment_succeeded = this.cast("order.payment_succeeded")
+  def orderDotupdated: typings.stripe.stripeStrings.orderDotupdated = "order.updated".asInstanceOf[typings.stripe.stripeStrings.orderDotupdated]
   @scala.inline
-  def orderDotupdated: typings.stripe.stripeStrings.orderDotupdated = this.cast("order.updated")
+  def order_returnDotcreated: typings.stripe.stripeStrings.order_returnDotcreated = "order_return.created".asInstanceOf[typings.stripe.stripeStrings.order_returnDotcreated]
   @scala.inline
-  def order_returnDotcreated: typings.stripe.stripeStrings.order_returnDotcreated = this.cast("order_return.created")
+  def payment_intentDotamount_capturable_updated: typings.stripe.stripeStrings.payment_intentDotamount_capturable_updated = "payment_intent.amount_capturable_updated".asInstanceOf[typings.stripe.stripeStrings.payment_intentDotamount_capturable_updated]
   @scala.inline
-  def payment_intentDotamount_capturable_updated: typings.stripe.stripeStrings.payment_intentDotamount_capturable_updated = this.cast("payment_intent.amount_capturable_updated")
+  def payment_intentDotcanceled: typings.stripe.stripeStrings.payment_intentDotcanceled = "payment_intent.canceled".asInstanceOf[typings.stripe.stripeStrings.payment_intentDotcanceled]
   @scala.inline
-  def payment_intentDotcanceled: typings.stripe.stripeStrings.payment_intentDotcanceled = this.cast("payment_intent.canceled")
+  def payment_intentDotcreated: typings.stripe.stripeStrings.payment_intentDotcreated = "payment_intent.created".asInstanceOf[typings.stripe.stripeStrings.payment_intentDotcreated]
   @scala.inline
-  def payment_intentDotcreated: typings.stripe.stripeStrings.payment_intentDotcreated = this.cast("payment_intent.created")
+  def payment_intentDotpayment_failed: typings.stripe.stripeStrings.payment_intentDotpayment_failed = "payment_intent.payment_failed".asInstanceOf[typings.stripe.stripeStrings.payment_intentDotpayment_failed]
   @scala.inline
-  def payment_intentDotpayment_failed: typings.stripe.stripeStrings.payment_intentDotpayment_failed = this.cast("payment_intent.payment_failed")
+  def payment_intentDotsucceeded: typings.stripe.stripeStrings.payment_intentDotsucceeded = "payment_intent.succeeded".asInstanceOf[typings.stripe.stripeStrings.payment_intentDotsucceeded]
   @scala.inline
-  def payment_intentDotsucceeded: typings.stripe.stripeStrings.payment_intentDotsucceeded = this.cast("payment_intent.succeeded")
+  def payment_methodDotattached: typings.stripe.stripeStrings.payment_methodDotattached = "payment_method.attached".asInstanceOf[typings.stripe.stripeStrings.payment_methodDotattached]
   @scala.inline
-  def payment_methodDotattached: typings.stripe.stripeStrings.payment_methodDotattached = this.cast("payment_method.attached")
+  def payment_methodDotcard_automatically_updated: typings.stripe.stripeStrings.payment_methodDotcard_automatically_updated = "payment_method.card_automatically_updated".asInstanceOf[typings.stripe.stripeStrings.payment_methodDotcard_automatically_updated]
   @scala.inline
-  def payment_methodDotcard_automatically_updated: typings.stripe.stripeStrings.payment_methodDotcard_automatically_updated = this.cast("payment_method.card_automatically_updated")
+  def payment_methodDotdetached: typings.stripe.stripeStrings.payment_methodDotdetached = "payment_method.detached".asInstanceOf[typings.stripe.stripeStrings.payment_methodDotdetached]
   @scala.inline
-  def payment_methodDotdetached: typings.stripe.stripeStrings.payment_methodDotdetached = this.cast("payment_method.detached")
+  def payment_methodDotupdated: typings.stripe.stripeStrings.payment_methodDotupdated = "payment_method.updated".asInstanceOf[typings.stripe.stripeStrings.payment_methodDotupdated]
   @scala.inline
-  def payment_methodDotupdated: typings.stripe.stripeStrings.payment_methodDotupdated = this.cast("payment_method.updated")
+  def payoutDotcanceled: typings.stripe.stripeStrings.payoutDotcanceled = "payout.canceled".asInstanceOf[typings.stripe.stripeStrings.payoutDotcanceled]
   @scala.inline
-  def payoutDotcanceled: typings.stripe.stripeStrings.payoutDotcanceled = this.cast("payout.canceled")
+  def payoutDotcreated: typings.stripe.stripeStrings.payoutDotcreated = "payout.created".asInstanceOf[typings.stripe.stripeStrings.payoutDotcreated]
   @scala.inline
-  def payoutDotcreated: typings.stripe.stripeStrings.payoutDotcreated = this.cast("payout.created")
+  def payoutDotfailed: typings.stripe.stripeStrings.payoutDotfailed = "payout.failed".asInstanceOf[typings.stripe.stripeStrings.payoutDotfailed]
   @scala.inline
-  def payoutDotfailed: typings.stripe.stripeStrings.payoutDotfailed = this.cast("payout.failed")
+  def payoutDotpaid: typings.stripe.stripeStrings.payoutDotpaid = "payout.paid".asInstanceOf[typings.stripe.stripeStrings.payoutDotpaid]
   @scala.inline
-  def payoutDotpaid: typings.stripe.stripeStrings.payoutDotpaid = this.cast("payout.paid")
+  def payoutDotupdated: typings.stripe.stripeStrings.payoutDotupdated = "payout.updated".asInstanceOf[typings.stripe.stripeStrings.payoutDotupdated]
   @scala.inline
-  def payoutDotupdated: typings.stripe.stripeStrings.payoutDotupdated = this.cast("payout.updated")
+  def personDotcreated: typings.stripe.stripeStrings.personDotcreated = "person.created".asInstanceOf[typings.stripe.stripeStrings.personDotcreated]
   @scala.inline
-  def personDotcreated: typings.stripe.stripeStrings.personDotcreated = this.cast("person.created")
+  def personDotdeleted: typings.stripe.stripeStrings.personDotdeleted = "person.deleted".asInstanceOf[typings.stripe.stripeStrings.personDotdeleted]
   @scala.inline
-  def personDotdeleted: typings.stripe.stripeStrings.personDotdeleted = this.cast("person.deleted")
+  def personDotupdated: typings.stripe.stripeStrings.personDotupdated = "person.updated".asInstanceOf[typings.stripe.stripeStrings.personDotupdated]
   @scala.inline
-  def personDotupdated: typings.stripe.stripeStrings.personDotupdated = this.cast("person.updated")
+  def planDotcreated: typings.stripe.stripeStrings.planDotcreated = "plan.created".asInstanceOf[typings.stripe.stripeStrings.planDotcreated]
   @scala.inline
-  def planDotcreated: typings.stripe.stripeStrings.planDotcreated = this.cast("plan.created")
+  def planDotdeleted: typings.stripe.stripeStrings.planDotdeleted = "plan.deleted".asInstanceOf[typings.stripe.stripeStrings.planDotdeleted]
   @scala.inline
-  def planDotdeleted: typings.stripe.stripeStrings.planDotdeleted = this.cast("plan.deleted")
+  def planDotupdated: typings.stripe.stripeStrings.planDotupdated = "plan.updated".asInstanceOf[typings.stripe.stripeStrings.planDotupdated]
   @scala.inline
-  def planDotupdated: typings.stripe.stripeStrings.planDotupdated = this.cast("plan.updated")
+  def productDotcreated: typings.stripe.stripeStrings.productDotcreated = "product.created".asInstanceOf[typings.stripe.stripeStrings.productDotcreated]
   @scala.inline
-  def productDotcreated: typings.stripe.stripeStrings.productDotcreated = this.cast("product.created")
+  def productDotdeleted: typings.stripe.stripeStrings.productDotdeleted = "product.deleted".asInstanceOf[typings.stripe.stripeStrings.productDotdeleted]
   @scala.inline
-  def productDotdeleted: typings.stripe.stripeStrings.productDotdeleted = this.cast("product.deleted")
+  def productDotupdated: typings.stripe.stripeStrings.productDotupdated = "product.updated".asInstanceOf[typings.stripe.stripeStrings.productDotupdated]
   @scala.inline
-  def productDotupdated: typings.stripe.stripeStrings.productDotupdated = this.cast("product.updated")
+  def radarDotearly_fraud_warningDotcreated: typings.stripe.stripeStrings.radarDotearly_fraud_warningDotcreated = "radar.early_fraud_warning.created".asInstanceOf[typings.stripe.stripeStrings.radarDotearly_fraud_warningDotcreated]
   @scala.inline
-  def radarDotearly_fraud_warningDotcreated: typings.stripe.stripeStrings.radarDotearly_fraud_warningDotcreated = this.cast("radar.early_fraud_warning.created")
+  def radarDotearly_fraud_warningDotupdated: typings.stripe.stripeStrings.radarDotearly_fraud_warningDotupdated = "radar.early_fraud_warning.updated".asInstanceOf[typings.stripe.stripeStrings.radarDotearly_fraud_warningDotupdated]
   @scala.inline
-  def radarDotearly_fraud_warningDotupdated: typings.stripe.stripeStrings.radarDotearly_fraud_warningDotupdated = this.cast("radar.early_fraud_warning.updated")
+  def recipientDotcreated: typings.stripe.stripeStrings.recipientDotcreated = "recipient.created".asInstanceOf[typings.stripe.stripeStrings.recipientDotcreated]
   @scala.inline
-  def recipientDotcreated: typings.stripe.stripeStrings.recipientDotcreated = this.cast("recipient.created")
+  def recipientDotdeleted: typings.stripe.stripeStrings.recipientDotdeleted = "recipient.deleted".asInstanceOf[typings.stripe.stripeStrings.recipientDotdeleted]
   @scala.inline
-  def recipientDotdeleted: typings.stripe.stripeStrings.recipientDotdeleted = this.cast("recipient.deleted")
+  def recipientDotupdated: typings.stripe.stripeStrings.recipientDotupdated = "recipient.updated".asInstanceOf[typings.stripe.stripeStrings.recipientDotupdated]
   @scala.inline
-  def recipientDotupdated: typings.stripe.stripeStrings.recipientDotupdated = this.cast("recipient.updated")
+  def reportingDotreport_runDotfailed: typings.stripe.stripeStrings.reportingDotreport_runDotfailed = "reporting.report_run.failed".asInstanceOf[typings.stripe.stripeStrings.reportingDotreport_runDotfailed]
   @scala.inline
-  def reportingDotreport_runDotfailed: typings.stripe.stripeStrings.reportingDotreport_runDotfailed = this.cast("reporting.report_run.failed")
+  def reportingDotreport_runDotsucceeded: typings.stripe.stripeStrings.reportingDotreport_runDotsucceeded = "reporting.report_run.succeeded".asInstanceOf[typings.stripe.stripeStrings.reportingDotreport_runDotsucceeded]
   @scala.inline
-  def reportingDotreport_runDotsucceeded: typings.stripe.stripeStrings.reportingDotreport_runDotsucceeded = this.cast("reporting.report_run.succeeded")
+  def reportingDotreport_typeDotupdated: typings.stripe.stripeStrings.reportingDotreport_typeDotupdated = "reporting.report_type.updated".asInstanceOf[typings.stripe.stripeStrings.reportingDotreport_typeDotupdated]
   @scala.inline
-  def reportingDotreport_typeDotupdated: typings.stripe.stripeStrings.reportingDotreport_typeDotupdated = this.cast("reporting.report_type.updated")
+  def reviewDotclosed: typings.stripe.stripeStrings.reviewDotclosed = "review.closed".asInstanceOf[typings.stripe.stripeStrings.reviewDotclosed]
   @scala.inline
-  def reviewDotclosed: typings.stripe.stripeStrings.reviewDotclosed = this.cast("review.closed")
+  def reviewDotopened: typings.stripe.stripeStrings.reviewDotopened = "review.opened".asInstanceOf[typings.stripe.stripeStrings.reviewDotopened]
   @scala.inline
-  def reviewDotopened: typings.stripe.stripeStrings.reviewDotopened = this.cast("review.opened")
+  def setup_intentDotcanceled: typings.stripe.stripeStrings.setup_intentDotcanceled = "setup_intent.canceled".asInstanceOf[typings.stripe.stripeStrings.setup_intentDotcanceled]
   @scala.inline
-  def setup_intentDotcanceled: typings.stripe.stripeStrings.setup_intentDotcanceled = this.cast("setup_intent.canceled")
+  def setup_intentDotcreated: typings.stripe.stripeStrings.setup_intentDotcreated = "setup_intent.created".asInstanceOf[typings.stripe.stripeStrings.setup_intentDotcreated]
   @scala.inline
-  def setup_intentDotcreated: typings.stripe.stripeStrings.setup_intentDotcreated = this.cast("setup_intent.created")
+  def setup_intentDotsetup_failed: typings.stripe.stripeStrings.setup_intentDotsetup_failed = "setup_intent.setup_failed".asInstanceOf[typings.stripe.stripeStrings.setup_intentDotsetup_failed]
   @scala.inline
-  def setup_intentDotsetup_failed: typings.stripe.stripeStrings.setup_intentDotsetup_failed = this.cast("setup_intent.setup_failed")
+  def setup_intentDotsucceeded: typings.stripe.stripeStrings.setup_intentDotsucceeded = "setup_intent.succeeded".asInstanceOf[typings.stripe.stripeStrings.setup_intentDotsucceeded]
   @scala.inline
-  def setup_intentDotsucceeded: typings.stripe.stripeStrings.setup_intentDotsucceeded = this.cast("setup_intent.succeeded")
+  def sigmaDotscheduled_query_runDotcreated: typings.stripe.stripeStrings.sigmaDotscheduled_query_runDotcreated = "sigma.scheduled_query_run.created".asInstanceOf[typings.stripe.stripeStrings.sigmaDotscheduled_query_runDotcreated]
   @scala.inline
-  def sigmaDotscheduled_query_runDotcreated: typings.stripe.stripeStrings.sigmaDotscheduled_query_runDotcreated = this.cast("sigma.scheduled_query_run.created")
+  def skuDotcreated: typings.stripe.stripeStrings.skuDotcreated = "sku.created".asInstanceOf[typings.stripe.stripeStrings.skuDotcreated]
   @scala.inline
-  def skuDotcreated: typings.stripe.stripeStrings.skuDotcreated = this.cast("sku.created")
+  def skuDotdeleted: typings.stripe.stripeStrings.skuDotdeleted = "sku.deleted".asInstanceOf[typings.stripe.stripeStrings.skuDotdeleted]
   @scala.inline
-  def skuDotdeleted: typings.stripe.stripeStrings.skuDotdeleted = this.cast("sku.deleted")
+  def skuDotupdated: typings.stripe.stripeStrings.skuDotupdated = "sku.updated".asInstanceOf[typings.stripe.stripeStrings.skuDotupdated]
   @scala.inline
-  def skuDotupdated: typings.stripe.stripeStrings.skuDotupdated = this.cast("sku.updated")
+  def sourceDotcanceled: typings.stripe.stripeStrings.sourceDotcanceled = "source.canceled".asInstanceOf[typings.stripe.stripeStrings.sourceDotcanceled]
   @scala.inline
-  def sourceDotcanceled: typings.stripe.stripeStrings.sourceDotcanceled = this.cast("source.canceled")
+  def sourceDotchargeable: typings.stripe.stripeStrings.sourceDotchargeable = "source.chargeable".asInstanceOf[typings.stripe.stripeStrings.sourceDotchargeable]
   @scala.inline
-  def sourceDotchargeable: typings.stripe.stripeStrings.sourceDotchargeable = this.cast("source.chargeable")
+  def sourceDotfailed: typings.stripe.stripeStrings.sourceDotfailed = "source.failed".asInstanceOf[typings.stripe.stripeStrings.sourceDotfailed]
   @scala.inline
-  def sourceDotfailed: typings.stripe.stripeStrings.sourceDotfailed = this.cast("source.failed")
+  def sourceDotmandate_notification: typings.stripe.stripeStrings.sourceDotmandate_notification = "source.mandate_notification".asInstanceOf[typings.stripe.stripeStrings.sourceDotmandate_notification]
   @scala.inline
-  def sourceDotmandate_notification: typings.stripe.stripeStrings.sourceDotmandate_notification = this.cast("source.mandate_notification")
+  def sourceDotrefund_attributes_required: typings.stripe.stripeStrings.sourceDotrefund_attributes_required = "source.refund_attributes_required".asInstanceOf[typings.stripe.stripeStrings.sourceDotrefund_attributes_required]
   @scala.inline
-  def sourceDotrefund_attributes_required: typings.stripe.stripeStrings.sourceDotrefund_attributes_required = this.cast("source.refund_attributes_required")
+  def sourceDottransactionDotcreated: typings.stripe.stripeStrings.sourceDottransactionDotcreated = "source.transaction.created".asInstanceOf[typings.stripe.stripeStrings.sourceDottransactionDotcreated]
   @scala.inline
-  def sourceDottransactionDotcreated: typings.stripe.stripeStrings.sourceDottransactionDotcreated = this.cast("source.transaction.created")
+  def sourceDottransactionDotupdated: typings.stripe.stripeStrings.sourceDottransactionDotupdated = "source.transaction.updated".asInstanceOf[typings.stripe.stripeStrings.sourceDottransactionDotupdated]
   @scala.inline
-  def sourceDottransactionDotupdated: typings.stripe.stripeStrings.sourceDottransactionDotupdated = this.cast("source.transaction.updated")
+  def subscription_scheduleDotaborted: typings.stripe.stripeStrings.subscription_scheduleDotaborted = "subscription_schedule.aborted".asInstanceOf[typings.stripe.stripeStrings.subscription_scheduleDotaborted]
   @scala.inline
-  def subscription_scheduleDotaborted: typings.stripe.stripeStrings.subscription_scheduleDotaborted = this.cast("subscription_schedule.aborted")
+  def subscription_scheduleDotcanceled: typings.stripe.stripeStrings.subscription_scheduleDotcanceled = "subscription_schedule.canceled".asInstanceOf[typings.stripe.stripeStrings.subscription_scheduleDotcanceled]
   @scala.inline
-  def subscription_scheduleDotcanceled: typings.stripe.stripeStrings.subscription_scheduleDotcanceled = this.cast("subscription_schedule.canceled")
+  def subscription_scheduleDotcompleted: typings.stripe.stripeStrings.subscription_scheduleDotcompleted = "subscription_schedule.completed".asInstanceOf[typings.stripe.stripeStrings.subscription_scheduleDotcompleted]
   @scala.inline
-  def subscription_scheduleDotcompleted: typings.stripe.stripeStrings.subscription_scheduleDotcompleted = this.cast("subscription_schedule.completed")
+  def subscription_scheduleDotcreated: typings.stripe.stripeStrings.subscription_scheduleDotcreated = "subscription_schedule.created".asInstanceOf[typings.stripe.stripeStrings.subscription_scheduleDotcreated]
   @scala.inline
-  def subscription_scheduleDotcreated: typings.stripe.stripeStrings.subscription_scheduleDotcreated = this.cast("subscription_schedule.created")
+  def subscription_scheduleDotexpiring: typings.stripe.stripeStrings.subscription_scheduleDotexpiring = "subscription_schedule.expiring".asInstanceOf[typings.stripe.stripeStrings.subscription_scheduleDotexpiring]
   @scala.inline
-  def subscription_scheduleDotexpiring: typings.stripe.stripeStrings.subscription_scheduleDotexpiring = this.cast("subscription_schedule.expiring")
+  def subscription_scheduleDotreleased: typings.stripe.stripeStrings.subscription_scheduleDotreleased = "subscription_schedule.released".asInstanceOf[typings.stripe.stripeStrings.subscription_scheduleDotreleased]
   @scala.inline
-  def subscription_scheduleDotreleased: typings.stripe.stripeStrings.subscription_scheduleDotreleased = this.cast("subscription_schedule.released")
+  def subscription_scheduleDotupdated: typings.stripe.stripeStrings.subscription_scheduleDotupdated = "subscription_schedule.updated".asInstanceOf[typings.stripe.stripeStrings.subscription_scheduleDotupdated]
   @scala.inline
-  def subscription_scheduleDotupdated: typings.stripe.stripeStrings.subscription_scheduleDotupdated = this.cast("subscription_schedule.updated")
+  def tax_rateDotcreated: typings.stripe.stripeStrings.tax_rateDotcreated = "tax_rate.created".asInstanceOf[typings.stripe.stripeStrings.tax_rateDotcreated]
   @scala.inline
-  def tax_rateDotcreated: typings.stripe.stripeStrings.tax_rateDotcreated = this.cast("tax_rate.created")
+  def tax_rateDotupdated: typings.stripe.stripeStrings.tax_rateDotupdated = "tax_rate.updated".asInstanceOf[typings.stripe.stripeStrings.tax_rateDotupdated]
   @scala.inline
-  def tax_rateDotupdated: typings.stripe.stripeStrings.tax_rateDotupdated = this.cast("tax_rate.updated")
+  def topupDotcreated: typings.stripe.stripeStrings.topupDotcreated = "topup.created".asInstanceOf[typings.stripe.stripeStrings.topupDotcreated]
   @scala.inline
-  def topupDotcreated: typings.stripe.stripeStrings.topupDotcreated = this.cast("topup.created")
+  def topupDotfailed: typings.stripe.stripeStrings.topupDotfailed = "topup.failed".asInstanceOf[typings.stripe.stripeStrings.topupDotfailed]
   @scala.inline
-  def topupDotfailed: typings.stripe.stripeStrings.topupDotfailed = this.cast("topup.failed")
+  def topupDotreversed: typings.stripe.stripeStrings.topupDotreversed = "topup.reversed".asInstanceOf[typings.stripe.stripeStrings.topupDotreversed]
   @scala.inline
-  def topupDotreversed: typings.stripe.stripeStrings.topupDotreversed = this.cast("topup.reversed")
+  def topupDotsucceeded: typings.stripe.stripeStrings.topupDotsucceeded = "topup.succeeded".asInstanceOf[typings.stripe.stripeStrings.topupDotsucceeded]
   @scala.inline
-  def topupDotsucceeded: typings.stripe.stripeStrings.topupDotsucceeded = this.cast("topup.succeeded")
+  def transferDotcreated: typings.stripe.stripeStrings.transferDotcreated = "transfer.created".asInstanceOf[typings.stripe.stripeStrings.transferDotcreated]
   @scala.inline
-  def transferDotcreated: typings.stripe.stripeStrings.transferDotcreated = this.cast("transfer.created")
+  def transferDotfailed: typings.stripe.stripeStrings.transferDotfailed = "transfer.failed".asInstanceOf[typings.stripe.stripeStrings.transferDotfailed]
   @scala.inline
-  def transferDotfailed: typings.stripe.stripeStrings.transferDotfailed = this.cast("transfer.failed")
+  def transferDotpaid: typings.stripe.stripeStrings.transferDotpaid = "transfer.paid".asInstanceOf[typings.stripe.stripeStrings.transferDotpaid]
   @scala.inline
-  def transferDotpaid: typings.stripe.stripeStrings.transferDotpaid = this.cast("transfer.paid")
+  def transferDotreversed: typings.stripe.stripeStrings.transferDotreversed = "transfer.reversed".asInstanceOf[typings.stripe.stripeStrings.transferDotreversed]
   @scala.inline
-  def transferDotreversed: typings.stripe.stripeStrings.transferDotreversed = this.cast("transfer.reversed")
-  @scala.inline
-  def transferDotupdated: typings.stripe.stripeStrings.transferDotupdated = this.cast("transfer.updated")
+  def transferDotupdated: typings.stripe.stripeStrings.transferDotupdated = "transfer.updated".asInstanceOf[typings.stripe.stripeStrings.transferDotupdated]
 }
 

@@ -24,7 +24,6 @@ object CreateUserImportJobRequest {
   @scala.inline
   def apply(CloudWatchLogsRoleArn: ArnType, JobName: UserImportJobNameType, UserPoolId: UserPoolIdType): CreateUserImportJobRequest = {
     val __obj = js.Dynamic.literal(CloudWatchLogsRoleArn = CloudWatchLogsRoleArn.asInstanceOf[js.Any], JobName = JobName.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateUserImportJobRequest]
   }
 }

@@ -13,7 +13,6 @@ object AnonChildren {
   @scala.inline
   def apply(children: Validator[js.Function1[/* repeated */ _, _]]): AnonChildren = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChildren]
   }
 }

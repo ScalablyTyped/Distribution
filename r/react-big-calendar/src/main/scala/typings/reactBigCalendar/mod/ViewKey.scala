@@ -15,16 +15,14 @@ trait ViewKey extends js.Object
 
 object ViewKey {
   @scala.inline
-  def AGENDA: typings.reactBigCalendar.reactBigCalendarStrings.AGENDA = this.cast("AGENDA")
+  def AGENDA: typings.reactBigCalendar.reactBigCalendarStrings.AGENDA = "AGENDA".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.AGENDA]
   @scala.inline
-  def DAY: typings.reactBigCalendar.reactBigCalendarStrings.DAY = this.cast("DAY")
+  def DAY: typings.reactBigCalendar.reactBigCalendarStrings.DAY = "DAY".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.DAY]
   @scala.inline
-  def MONTH: typings.reactBigCalendar.reactBigCalendarStrings.MONTH = this.cast("MONTH")
+  def MONTH: typings.reactBigCalendar.reactBigCalendarStrings.MONTH = "MONTH".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.MONTH]
   @scala.inline
-  def WEEK: typings.reactBigCalendar.reactBigCalendarStrings.WEEK = this.cast("WEEK")
+  def WEEK: typings.reactBigCalendar.reactBigCalendarStrings.WEEK = "WEEK".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.WEEK]
   @scala.inline
-  def WORK_WEEK: typings.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK = this.cast("WORK_WEEK")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WORK_WEEK: typings.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK = "WORK_WEEK".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK]
 }
 

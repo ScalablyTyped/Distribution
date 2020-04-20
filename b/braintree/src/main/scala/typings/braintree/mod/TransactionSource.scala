@@ -13,12 +13,10 @@ trait TransactionSource extends js.Object
 
 object TransactionSource {
   @scala.inline
-  def Api: typings.braintree.braintreeStrings.Api = this.cast("Api")
+  def Api: typings.braintree.braintreeStrings.Api = "Api".asInstanceOf[typings.braintree.braintreeStrings.Api]
   @scala.inline
-  def ControlPanel: typings.braintree.braintreeStrings.ControlPanel = this.cast("ControlPanel")
+  def ControlPanel: typings.braintree.braintreeStrings.ControlPanel = "ControlPanel".asInstanceOf[typings.braintree.braintreeStrings.ControlPanel]
   @scala.inline
-  def Recurring: typings.braintree.braintreeStrings.Recurring = this.cast("Recurring")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Recurring: typings.braintree.braintreeStrings.Recurring = "Recurring".asInstanceOf[typings.braintree.braintreeStrings.Recurring]
 }
 

@@ -18,7 +18,6 @@ object Put {
   @scala.inline
   def apply[TResponse](request: AnonPathRegex, response: AnonData[TResponse]): Put[TResponse] = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Put[TResponse]]
   }
 }

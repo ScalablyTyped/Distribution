@@ -15,7 +15,6 @@ object PickImplfields {
   @scala.inline
   def apply(fields: StringDictionary[String | js.Array[String] | Field]): PickImplfields = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplfields]
   }
 }

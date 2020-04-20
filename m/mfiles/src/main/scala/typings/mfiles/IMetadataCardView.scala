@@ -14,7 +14,6 @@ object IMetadataCardView {
   @scala.inline
   def apply(DashboardID: String, Events: IEvents, Name: String): IMetadataCardView = {
     val __obj = js.Dynamic.literal(DashboardID = DashboardID.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMetadataCardView]
   }
 }

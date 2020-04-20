@@ -16,7 +16,6 @@ object GetSqlInjectionMatchSetRequest {
   @scala.inline
   def apply(SqlInjectionMatchSetId: ResourceId): GetSqlInjectionMatchSetRequest = {
     val __obj = js.Dynamic.literal(SqlInjectionMatchSetId = SqlInjectionMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSqlInjectionMatchSetRequest]
   }
 }

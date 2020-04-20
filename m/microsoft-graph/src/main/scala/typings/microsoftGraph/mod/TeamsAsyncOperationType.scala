@@ -16,18 +16,16 @@ trait TeamsAsyncOperationType extends js.Object
 
 object TeamsAsyncOperationType {
   @scala.inline
-  def archiveTeam: typings.microsoftGraph.microsoftGraphStrings.archiveTeam = this.cast("archiveTeam")
+  def archiveTeam: typings.microsoftGraph.microsoftGraphStrings.archiveTeam = "archiveTeam".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.archiveTeam]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cloneTeam: typings.microsoftGraph.microsoftGraphStrings.cloneTeam = "cloneTeam".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.cloneTeam]
   @scala.inline
-  def cloneTeam: typings.microsoftGraph.microsoftGraphStrings.cloneTeam = this.cast("cloneTeam")
+  def createTeam: typings.microsoftGraph.microsoftGraphStrings.createTeam = "createTeam".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.createTeam]
   @scala.inline
-  def createTeam: typings.microsoftGraph.microsoftGraphStrings.createTeam = this.cast("createTeam")
+  def invalid: typings.microsoftGraph.microsoftGraphStrings.invalid = "invalid".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.invalid]
   @scala.inline
-  def invalid: typings.microsoftGraph.microsoftGraphStrings.invalid = this.cast("invalid")
+  def unarchiveTeam: typings.microsoftGraph.microsoftGraphStrings.unarchiveTeam = "unarchiveTeam".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unarchiveTeam]
   @scala.inline
-  def unarchiveTeam: typings.microsoftGraph.microsoftGraphStrings.unarchiveTeam = this.cast("unarchiveTeam")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

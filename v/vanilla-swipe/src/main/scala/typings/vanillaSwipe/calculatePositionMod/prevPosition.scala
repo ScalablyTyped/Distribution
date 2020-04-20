@@ -14,7 +14,6 @@ object prevPosition {
   @scala.inline
   def apply(start: Double, x: Double, y: Double): prevPosition = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[prevPosition]
   }
 }

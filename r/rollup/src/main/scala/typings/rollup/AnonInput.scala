@@ -17,7 +17,6 @@ object AnonInput {
   @scala.inline
   def apply(code: BUNDLE_START, input: InputOption, output: js.Array[String]): AnonInput = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInput]
   }
 }

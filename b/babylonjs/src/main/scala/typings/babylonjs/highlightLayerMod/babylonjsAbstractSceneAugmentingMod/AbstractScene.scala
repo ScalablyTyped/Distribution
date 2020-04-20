@@ -19,7 +19,6 @@ object AbstractScene {
   @scala.inline
   def apply(getHighlightLayerByName: String => Nullable[HighlightLayer]): AbstractScene = {
     val __obj = js.Dynamic.literal(getHighlightLayerByName = js.Any.fromFunction1(getHighlightLayerByName))
-  
     __obj.asInstanceOf[AbstractScene]
   }
 }

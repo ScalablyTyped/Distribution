@@ -16,7 +16,6 @@ object StackTraceConfig {
   @scala.inline
   def apply(rootDir: Path, testMatch: js.Array[Glob]): StackTraceConfig = {
     val __obj = js.Dynamic.literal(rootDir = rootDir.asInstanceOf[js.Any], testMatch = testMatch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StackTraceConfig]
   }
 }

@@ -22,7 +22,6 @@ object DiffRemove {
     parentMapUniqueKey: String
   ): DiffRemove = {
     val __obj = js.Dynamic.literal(childs = childs.asInstanceOf[js.Any], componentInfo = componentInfo.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mapUniqueKey = mapUniqueKey.asInstanceOf[js.Any], parentMapUniqueKey = parentMapUniqueKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DiffRemove]
   }
 }

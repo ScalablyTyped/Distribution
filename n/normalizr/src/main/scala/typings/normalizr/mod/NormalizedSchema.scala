@@ -13,7 +13,6 @@ object NormalizedSchema {
   @scala.inline
   def apply[E, R](entities: E, result: R): NormalizedSchema[E, R] = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NormalizedSchema[E, R]]
   }
 }

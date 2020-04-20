@@ -32,9 +32,9 @@ class VoidType protected () extends PrimitiveType {
   @JSName("model")
   var model_FVoidType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MVoidType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MVoidType: BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  def containerAsCodeAction_MVoidType(): CodeAction = js.native
+  def containerAsCodeAction_MVoidType: CodeAction = js.native
 }
 
 /* static members */

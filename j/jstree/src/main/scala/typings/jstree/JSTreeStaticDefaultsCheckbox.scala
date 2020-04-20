@@ -74,7 +74,6 @@ object JSTreeStaticDefaultsCheckbox {
     whole_node: Boolean
   ): JSTreeStaticDefaultsCheckbox = {
     val __obj = js.Dynamic.literal(cascade = cascade.asInstanceOf[js.Any], cascade_to_disabled = cascade_to_disabled.asInstanceOf[js.Any], cascade_to_hidden = cascade_to_hidden.asInstanceOf[js.Any], keep_selected_style = keep_selected_style.asInstanceOf[js.Any], three_state = three_state.asInstanceOf[js.Any], tie_selection = tie_selection.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], whole_node = whole_node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSTreeStaticDefaultsCheckbox]
   }
 }

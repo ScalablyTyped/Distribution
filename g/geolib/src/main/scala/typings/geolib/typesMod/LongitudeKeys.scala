@@ -14,14 +14,12 @@ trait LongitudeKeys extends js.Object
 
 object LongitudeKeys {
   @scala.inline
-  def `0`: typings.geolib.geolibNumbers.`0` = this.cast(0)
+  def `0`: typings.geolib.geolibNumbers.`0` = 0.asInstanceOf[typings.geolib.geolibNumbers.`0`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lng: typings.geolib.geolibStrings.lng = "lng".asInstanceOf[typings.geolib.geolibStrings.lng]
   @scala.inline
-  def lng: typings.geolib.geolibStrings.lng = this.cast("lng")
+  def lon: typings.geolib.geolibStrings.lon = "lon".asInstanceOf[typings.geolib.geolibStrings.lon]
   @scala.inline
-  def lon: typings.geolib.geolibStrings.lon = this.cast("lon")
-  @scala.inline
-  def longitude: typings.geolib.geolibStrings.longitude = this.cast("longitude")
+  def longitude: typings.geolib.geolibStrings.longitude = "longitude".asInstanceOf[typings.geolib.geolibStrings.longitude]
 }
 

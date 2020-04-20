@@ -12,7 +12,6 @@ object IUserInfo {
   @scala.inline
   def apply(displayName: String, id: String, roleId: String): IUserInfo = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], roleId = roleId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUserInfo]
   }
 }

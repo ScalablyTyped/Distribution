@@ -57,7 +57,6 @@ object Builder {
     withTemplateParameters: js.Any => Builder
   ): Builder = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), follow = js.Any.fromFunction2(follow), get = js.Any.fromFunction1(get), getResource = js.Any.fromFunction1(getResource), getUrl = js.Any.fromFunction1(getUrl), json = js.Any.fromFunction0(json), jsonHal = js.Any.fromFunction0(jsonHal), newRequest = js.Any.fromFunction0(newRequest), patch = js.Any.fromFunction2(patch), post = js.Any.fromFunction2(post), put = js.Any.fromFunction2(put), setMediaType = js.Any.fromFunction1(setMediaType), withRequestOptions = js.Any.fromFunction1(withRequestOptions), withTemplateParameters = js.Any.fromFunction1(withTemplateParameters))
-  
     __obj.asInstanceOf[Builder]
   }
 }

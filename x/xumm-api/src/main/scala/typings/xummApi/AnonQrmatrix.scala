@@ -21,7 +21,6 @@ object AnonQrmatrix {
     websocket_status: String
   ): AnonQrmatrix = {
     val __obj = js.Dynamic.literal(qr_matrix = qr_matrix.asInstanceOf[js.Any], qr_png = qr_png.asInstanceOf[js.Any], qr_uri_quality_opts = qr_uri_quality_opts.asInstanceOf[js.Any], websocket_status = websocket_status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQrmatrix]
   }
 }

@@ -1,8 +1,9 @@
 package typings.titanium.Titanium.App.iOS
 
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
+import typings.titanium.titaniumStrings.useractivitydeleted
+import typings.titanium.titaniumStrings.useractivitywascontinued
+import typings.titanium.titaniumStrings.useractivitywillsave
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,276 +11,285 @@ import scala.scalajs.js.annotation._
 /**
 			 * The UserActivity module is used to enable device Handoff and to create User Activities.
 			 */
-trait UserActivity extends Proxy {
+@JSGlobal("Titanium.App.iOS.UserActivity")
+@js.native
+class UserActivity () extends Proxy {
   /**
   				 * Name of the activity type.
   				 */
-  var activityType: String
+  var activityType: String = js.native
   /**
   				 * Set to true if this user activity should be eligible to be handed off to another device
   				 */
-  var eligibleForHandoff: Boolean
+  var eligibleForHandoff: Boolean = js.native
   /**
   				 * A Boolean value that determines whether Siri can suggest the user activity as a shortcut to the user.
   				 */
-  var eligibleForPrediction: Boolean
+  var eligibleForPrediction: Boolean = js.native
   /**
   				 * Set to `true` if the user activity can be publicly accessed by all iOS users.
   				 */
-  var eligibleForPublicIndexing: Boolean
+  var eligibleForPublicIndexing: Boolean = js.native
   /**
   				 * Set to true if the user activity should be added to the on-device index.
   				 */
-  var eligibleForSearch: Boolean
+  var eligibleForSearch: Boolean = js.native
   /**
   				 * Absolute date after which the activity is no longer eligible to be indexed or handed off.
   				 */
-  var expirationDate: String
+  var expirationDate: String = js.native
   /**
   				 * An array of string keywords representing words or phrases that might help the user to find the activity in the application history.
   				 */
-  var keywords: js.Array[String]
+  var keywords: js.Array[String] = js.native
   /**
   				 * Set to true everytime you have updated the user activity and need the changes to be saved before handing it off to another device.
   				 */
-  var needsSave: Boolean
+  var needsSave: Boolean = js.native
   /**
   				 * A value used to identify the user activity.
   				 */
-  var persistentIdentifier: String
+  var persistentIdentifier: String = js.native
   /**
   				 * An array of String keys from the userInfo property which represent the minimal information about the user activity that should be stored for later restoration.
   				 */
-  var requiredUserInfoKeys: js.Array[String]
+  var requiredUserInfoKeys: js.Array[String] = js.native
   /**
   				 * Determines if user activities are supported (`true`) or not (`false`) by the device.
+  				 * @deprecated Use [Titanium.App.iOS.UserActivity.isSupported](Titanium.App.iOS.UserActivity.isSupported) instead.
   				 */
-  var supported: Boolean
+  var supported: Boolean = js.native
   /**
   				 * An optional, user-visible title for this activity such as a document name or web page title.
   				 */
-  var title: String
+  var title: String = js.native
   /**
   				 * The userInfo dictionary contains application-specific state needed to continue an activity on another device.
   				 */
-  var userInfo: js.Any
+  var userInfo: js.Any = js.native
   /**
   				 * When no suitable application is installed on a resuming device and the `webpageURL` property is set,
   				 * the user activity will instead be continued in a web browser by loading the specified URL.
   				 */
-  var webpageURL: String
+  var webpageURL: String = js.native
   /**
   				 * Adds a Titanium.App.iOS.SearchableItemAttributeSet to the user activity.
   				 */
-  def addContentAttributeSet(contentAttributeSet: SearchableItemAttributeSet): Unit
+  def addContentAttributeSet(contentAttributeSet: SearchableItemAttributeSet): Unit = js.native
+  /**
+  				 * Adds the specified callback as an event listener for the named event.
+  				 */
+  @JSName("addEventListener")
+  def addEventListener_useractivitydeleted(
+    name: useractivitydeleted,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ UserActivityUseractivitydeletedEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_useractivitywascontinued(
+    name: useractivitywascontinued,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ UserActivityUseractivitywascontinuedEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_useractivitywillsave(
+    name: useractivitywillsave,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ UserActivityUseractivitywillsaveEvent, Unit]
+  ): Unit = js.native
   /**
   				 * Marks the activity as currently in use by the user.
   				 */
-  def becomeCurrent(): Unit
+  def becomeCurrent(): Unit = js.native
   /**
   				 * Deletes all user activities created by your app.
   				 */
-  def deleteAllSavedUserActivities(): Unit
+  def deleteAllSavedUserActivities(): Unit = js.native
   /**
   				 * Deletes user activities created by your app that have the specified persistent identifiers.
   				 */
-  def deleteSavedUserActivitiesForPersistentIdentifiers(persistentIdentifiers: js.Array[String]): Unit
+  def deleteSavedUserActivitiesForPersistentIdentifiers(persistentIdentifiers: js.Array[String]): Unit = js.native
+  /**
+  				 * Fires a synthesized event to any registered listeners.
+  				 */
+  @JSName("fireEvent")
+  def fireEvent_useractivitydeleted(name: useractivitydeleted): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_useractivitydeleted(name: useractivitydeleted, event: UserActivityUseractivitydeletedEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_useractivitywascontinued(name: useractivitywascontinued): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_useractivitywascontinued(name: useractivitywascontinued, event: UserActivityUseractivitywascontinuedEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_useractivitywillsave(name: useractivitywillsave): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_useractivitywillsave(name: useractivitywillsave, event: UserActivityUseractivitywillsaveEvent): Unit = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.activityType> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.activityType> instead.
   				 */
-  def getActivityType(): String
+  def getActivityType(): String = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.eligibleForHandoff> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.eligibleForHandoff> instead.
   				 */
-  def getEligibleForHandoff(): Boolean
+  def getEligibleForHandoff(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.eligibleForPrediction> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.eligibleForPrediction> instead.
   				 */
-  def getEligibleForPrediction(): Boolean
+  def getEligibleForPrediction(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.eligibleForPublicIndexing> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.eligibleForPublicIndexing> instead.
   				 */
-  def getEligibleForPublicIndexing(): Boolean
+  def getEligibleForPublicIndexing(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.eligibleForSearch> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.eligibleForSearch> instead.
   				 */
-  def getEligibleForSearch(): Boolean
+  def getEligibleForSearch(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.expirationDate> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.expirationDate> instead.
   				 */
-  def getExpirationDate(): String
+  def getExpirationDate(): String = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.keywords> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.keywords> instead.
   				 */
-  def getKeywords(): js.Array[String]
+  def getKeywords(): js.Array[String] = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.needsSave> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.needsSave> instead.
   				 */
-  def getNeedsSave(): Boolean
+  def getNeedsSave(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.persistentIdentifier> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.persistentIdentifier> instead.
   				 */
-  def getPersistentIdentifier(): String
+  def getPersistentIdentifier(): String = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.requiredUserInfoKeys> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.requiredUserInfoKeys> instead.
   				 */
-  def getRequiredUserInfoKeys(): js.Array[String]
+  def getRequiredUserInfoKeys(): js.Array[String] = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.supported> property.
+  				 * @deprecated Use [Titanium.App.iOS.UserActivity.isSupported](Titanium.App.iOS.UserActivity.isSupported) instead.
   				 */
-  def getSupported(): Boolean
+  def getSupported(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.title> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.title> instead.
   				 */
-  def getTitle(): String
+  def getTitle(): String = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.userInfo> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.userInfo> instead.
   				 */
-  def getUserInfo(): js.Any
+  def getUserInfo(): js.Any = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserActivity.webpageURL> property.
+  				 * @deprecated Access <Titanium.App.iOS.UserActivity.webpageURL> instead.
   				 */
-  def getWebpageURL(): String
+  def getWebpageURL(): String = js.native
   /**
   				 * Invalidates an activity when it is no longer eligible for continuation.
   				 */
-  def invalidate(): Unit
+  def invalidate(): Unit = js.native
   /**
   				 * Determines if user activities are supported (`true`) or not (`false`) by the device.
   				 */
-  def isSupported(): Boolean
+  def isSupported(): Boolean = js.native
+  /**
+  				 * Removes the specified callback as an event listener for the named event.
+  				 */
+  @JSName("removeEventListener")
+  def removeEventListener_useractivitydeleted(
+    name: useractivitydeleted,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ UserActivityUseractivitydeletedEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_useractivitywascontinued(
+    name: useractivitywascontinued,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ UserActivityUseractivitywascontinuedEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_useractivitywillsave(
+    name: useractivitywillsave,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ UserActivityUseractivitywillsaveEvent, Unit]
+  ): Unit = js.native
   /**
   				 * Marks the activity as currently **not** in use and ineligible to be continued.
   				 */
-  def resignCurrent(): Unit
+  def resignCurrent(): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.activityType> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.activityType> instead.
   				 */
-  def setActivityType(activityType: String): Unit
+  def setActivityType(activityType: String): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.eligibleForHandoff> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.eligibleForHandoff> instead.
   				 */
-  def setEligibleForHandoff(eligibleForHandoff: Boolean): Unit
+  def setEligibleForHandoff(eligibleForHandoff: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.eligibleForPrediction> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.eligibleForPrediction> instead.
   				 */
-  def setEligibleForPrediction(eligibleForPrediction: Boolean): Unit
+  def setEligibleForPrediction(eligibleForPrediction: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.eligibleForPublicIndexing> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.eligibleForPublicIndexing> instead.
   				 */
-  def setEligibleForPublicIndexing(eligibleForPublicIndexing: Boolean): Unit
+  def setEligibleForPublicIndexing(eligibleForPublicIndexing: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.eligibleForSearch> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.eligibleForSearch> instead.
   				 */
-  def setEligibleForSearch(eligibleForSearch: Boolean): Unit
+  def setEligibleForSearch(eligibleForSearch: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.expirationDate> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.expirationDate> instead.
   				 */
-  def setExpirationDate(expirationDate: String): Unit
+  def setExpirationDate(expirationDate: String): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.keywords> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.keywords> instead.
   				 */
-  def setKeywords(keywords: js.Array[String]): Unit
+  def setKeywords(keywords: js.Array[String]): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.needsSave> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.needsSave> instead.
   				 */
-  def setNeedsSave(needsSave: Boolean): Unit
+  def setNeedsSave(needsSave: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.persistentIdentifier> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.persistentIdentifier> instead.
   				 */
-  def setPersistentIdentifier(persistentIdentifier: String): Unit
+  def setPersistentIdentifier(persistentIdentifier: String): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.requiredUserInfoKeys> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.requiredUserInfoKeys> instead.
   				 */
-  def setRequiredUserInfoKeys(requiredUserInfoKeys: js.Array[String]): Unit
+  def setRequiredUserInfoKeys(requiredUserInfoKeys: js.Array[String]): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.supported> property.
+  				 * @deprecated Use [Titanium.App.iOS.UserActivity.isSupported](Titanium.App.iOS.UserActivity.isSupported) instead.
   				 */
-  def setSupported(supported: Boolean): Unit
+  def setSupported(supported: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.title> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.title> instead.
   				 */
-  def setTitle(title: String): Unit
+  def setTitle(title: String): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.userInfo> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.userInfo> instead.
   				 */
-  def setUserInfo(userInfo: js.Any): Unit
+  def setUserInfo(userInfo: js.Any): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.App.iOS.UserActivity.webpageURL> property.
+  				 * @deprecated Set the value using <Titanium.App.iOS.UserActivity.webpageURL> instead.
   				 */
-  def setWebpageURL(webpageURL: String): Unit
-}
-
-object UserActivity {
-  @scala.inline
-  def apply(
-    activityType: String,
-    addContentAttributeSet: SearchableItemAttributeSet => Unit,
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    becomeCurrent: () => Unit,
-    bubbleParent: Boolean,
-    deleteAllSavedUserActivities: () => Unit,
-    deleteSavedUserActivitiesForPersistentIdentifiers: js.Array[String] => Unit,
-    eligibleForHandoff: Boolean,
-    eligibleForPrediction: Boolean,
-    eligibleForPublicIndexing: Boolean,
-    eligibleForSearch: Boolean,
-    expirationDate: String,
-    fireEvent: (String, js.Any) => Unit,
-    getActivityType: () => String,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getEligibleForHandoff: () => Boolean,
-    getEligibleForPrediction: () => Boolean,
-    getEligibleForPublicIndexing: () => Boolean,
-    getEligibleForSearch: () => Boolean,
-    getExpirationDate: () => String,
-    getKeywords: () => js.Array[String],
-    getNeedsSave: () => Boolean,
-    getPersistentIdentifier: () => String,
-    getRequiredUserInfoKeys: () => js.Array[String],
-    getSupported: () => Boolean,
-    getTitle: () => String,
-    getUserInfo: () => js.Any,
-    getWebpageURL: () => String,
-    invalidate: () => Unit,
-    isSupported: () => Boolean,
-    keywords: js.Array[String],
-    needsSave: Boolean,
-    persistentIdentifier: String,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    requiredUserInfoKeys: js.Array[String],
-    resignCurrent: () => Unit,
-    setActivityType: String => Unit,
-    setBubbleParent: Boolean => Unit,
-    setEligibleForHandoff: Boolean => Unit,
-    setEligibleForPrediction: Boolean => Unit,
-    setEligibleForPublicIndexing: Boolean => Unit,
-    setEligibleForSearch: Boolean => Unit,
-    setExpirationDate: String => Unit,
-    setKeywords: js.Array[String] => Unit,
-    setNeedsSave: Boolean => Unit,
-    setPersistentIdentifier: String => Unit,
-    setRequiredUserInfoKeys: js.Array[String] => Unit,
-    setSupported: Boolean => Unit,
-    setTitle: String => Unit,
-    setUserInfo: js.Any => Unit,
-    setWebpageURL: String => Unit,
-    supported: Boolean,
-    title: String,
-    userInfo: js.Any,
-    webpageURL: String,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): UserActivity = {
-    val __obj = js.Dynamic.literal(activityType = activityType.asInstanceOf[js.Any], addContentAttributeSet = js.Any.fromFunction1(addContentAttributeSet), addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), becomeCurrent = js.Any.fromFunction0(becomeCurrent), bubbleParent = bubbleParent.asInstanceOf[js.Any], deleteAllSavedUserActivities = js.Any.fromFunction0(deleteAllSavedUserActivities), deleteSavedUserActivitiesForPersistentIdentifiers = js.Any.fromFunction1(deleteSavedUserActivitiesForPersistentIdentifiers), eligibleForHandoff = eligibleForHandoff.asInstanceOf[js.Any], eligibleForPrediction = eligibleForPrediction.asInstanceOf[js.Any], eligibleForPublicIndexing = eligibleForPublicIndexing.asInstanceOf[js.Any], eligibleForSearch = eligibleForSearch.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getActivityType = js.Any.fromFunction0(getActivityType), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getEligibleForHandoff = js.Any.fromFunction0(getEligibleForHandoff), getEligibleForPrediction = js.Any.fromFunction0(getEligibleForPrediction), getEligibleForPublicIndexing = js.Any.fromFunction0(getEligibleForPublicIndexing), getEligibleForSearch = js.Any.fromFunction0(getEligibleForSearch), getExpirationDate = js.Any.fromFunction0(getExpirationDate), getKeywords = js.Any.fromFunction0(getKeywords), getNeedsSave = js.Any.fromFunction0(getNeedsSave), getPersistentIdentifier = js.Any.fromFunction0(getPersistentIdentifier), getRequiredUserInfoKeys = js.Any.fromFunction0(getRequiredUserInfoKeys), getSupported = js.Any.fromFunction0(getSupported), getTitle = js.Any.fromFunction0(getTitle), getUserInfo = js.Any.fromFunction0(getUserInfo), getWebpageURL = js.Any.fromFunction0(getWebpageURL), invalidate = js.Any.fromFunction0(invalidate), isSupported = js.Any.fromFunction0(isSupported), keywords = keywords.asInstanceOf[js.Any], needsSave = needsSave.asInstanceOf[js.Any], persistentIdentifier = persistentIdentifier.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), requiredUserInfoKeys = requiredUserInfoKeys.asInstanceOf[js.Any], resignCurrent = js.Any.fromFunction0(resignCurrent), setActivityType = js.Any.fromFunction1(setActivityType), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setEligibleForHandoff = js.Any.fromFunction1(setEligibleForHandoff), setEligibleForPrediction = js.Any.fromFunction1(setEligibleForPrediction), setEligibleForPublicIndexing = js.Any.fromFunction1(setEligibleForPublicIndexing), setEligibleForSearch = js.Any.fromFunction1(setEligibleForSearch), setExpirationDate = js.Any.fromFunction1(setExpirationDate), setKeywords = js.Any.fromFunction1(setKeywords), setNeedsSave = js.Any.fromFunction1(setNeedsSave), setPersistentIdentifier = js.Any.fromFunction1(setPersistentIdentifier), setRequiredUserInfoKeys = js.Any.fromFunction1(setRequiredUserInfoKeys), setSupported = js.Any.fromFunction1(setSupported), setTitle = js.Any.fromFunction1(setTitle), setUserInfo = js.Any.fromFunction1(setUserInfo), setWebpageURL = js.Any.fromFunction1(setWebpageURL), supported = supported.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any], webpageURL = webpageURL.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UserActivity]
-  }
+  def setWebpageURL(webpageURL: String): Unit = js.native
 }
 

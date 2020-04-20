@@ -15,7 +15,6 @@ object CheckpointResponse {
   @scala.inline
   def apply(challenge: CheckpointResponseChallenge, error_type: String, message: String, status: String): CheckpointResponse = {
     val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], error_type = error_type.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckpointResponse]
   }
 }

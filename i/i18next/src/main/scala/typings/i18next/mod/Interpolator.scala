@@ -22,7 +22,6 @@ object Interpolator {
     resetRegExp: () => js.UndefOr[scala.Nothing]
   ): Interpolator = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction2(init), interpolate = js.Any.fromFunction4(interpolate), nest = js.Any.fromFunction3(nest), reset = js.Any.fromFunction0(reset), resetRegExp = js.Any.fromFunction0(resetRegExp))
-  
     __obj.asInstanceOf[Interpolator]
   }
 }

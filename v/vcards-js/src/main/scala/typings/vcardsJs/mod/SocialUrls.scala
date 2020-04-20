@@ -15,7 +15,6 @@ object SocialUrls {
   @scala.inline
   def apply(facebook: String, flickr: String, linkedIn: String, twitter: String): SocialUrls = {
     val __obj = js.Dynamic.literal(facebook = facebook.asInstanceOf[js.Any], flickr = flickr.asInstanceOf[js.Any], linkedIn = linkedIn.asInstanceOf[js.Any], twitter = twitter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SocialUrls]
   }
 }

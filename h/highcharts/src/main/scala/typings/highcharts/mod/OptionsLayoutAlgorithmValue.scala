@@ -14,14 +14,12 @@ trait OptionsLayoutAlgorithmValue extends js.Object
 
 object OptionsLayoutAlgorithmValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def sliceAndDice: typings.highcharts.highchartsStrings.sliceAndDice = "sliceAndDice".asInstanceOf[typings.highcharts.highchartsStrings.sliceAndDice]
   @scala.inline
-  def sliceAndDice: typings.highcharts.highchartsStrings.sliceAndDice = this.cast("sliceAndDice")
+  def squarified: typings.highcharts.highchartsStrings.squarified = "squarified".asInstanceOf[typings.highcharts.highchartsStrings.squarified]
   @scala.inline
-  def squarified: typings.highcharts.highchartsStrings.squarified = this.cast("squarified")
+  def strip: typings.highcharts.highchartsStrings.strip = "strip".asInstanceOf[typings.highcharts.highchartsStrings.strip]
   @scala.inline
-  def strip: typings.highcharts.highchartsStrings.strip = this.cast("strip")
-  @scala.inline
-  def stripes: typings.highcharts.highchartsStrings.stripes = this.cast("stripes")
+  def stripes: typings.highcharts.highchartsStrings.stripes = "stripes".asInstanceOf[typings.highcharts.highchartsStrings.stripes]
 }
 

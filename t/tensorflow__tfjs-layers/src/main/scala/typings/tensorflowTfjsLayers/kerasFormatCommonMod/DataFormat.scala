@@ -12,10 +12,8 @@ trait DataFormat extends js.Object
 
 object DataFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def channelsFirst: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsFirst = "channelsFirst".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsFirst]
   @scala.inline
-  def channelsFirst: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsFirst = this.cast("channelsFirst")
-  @scala.inline
-  def channelsLast: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsLast = this.cast("channelsLast")
+  def channelsLast: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsLast = "channelsLast".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsLast]
 }
 

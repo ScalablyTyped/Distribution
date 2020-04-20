@@ -24,7 +24,6 @@ object AdminGetDeviceRequest {
   @scala.inline
   def apply(DeviceKey: DeviceKeyType, UserPoolId: UserPoolIdType, Username: UsernameType): AdminGetDeviceRequest = {
     val __obj = js.Dynamic.literal(DeviceKey = DeviceKey.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdminGetDeviceRequest]
   }
 }

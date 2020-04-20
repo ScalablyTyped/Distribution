@@ -12,10 +12,8 @@ trait ColumnAndDirection extends js.Object
 
 object ColumnAndDirection {
   @scala.inline
-  def ASC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ASC = this.cast("ASC")
+  def ASC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ASC = "ASC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ASC]
   @scala.inline
-  def DESC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DESC = this.cast("DESC")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DESC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DESC = "DESC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DESC]
 }
 

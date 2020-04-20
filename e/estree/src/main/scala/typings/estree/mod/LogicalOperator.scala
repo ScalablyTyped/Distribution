@@ -12,10 +12,8 @@ trait LogicalOperator extends js.Object
 
 object LogicalOperator {
   @scala.inline
-  def AmpersandAmpersand: typings.estree.estreeStrings.AmpersandAmpersand = this.cast("&&")
+  def AmpersandAmpersand: typings.estree.estreeStrings.AmpersandAmpersand = "&&".asInstanceOf[typings.estree.estreeStrings.AmpersandAmpersand]
   @scala.inline
-  def VerticallineVerticalline: typings.estree.estreeStrings.VerticallineVerticalline = this.cast("||")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VerticallineVerticalline: typings.estree.estreeStrings.VerticallineVerticalline = "||".asInstanceOf[typings.estree.estreeStrings.VerticallineVerticalline]
 }
 

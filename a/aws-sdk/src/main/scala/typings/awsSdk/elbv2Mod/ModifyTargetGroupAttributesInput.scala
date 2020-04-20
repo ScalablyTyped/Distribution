@@ -20,7 +20,6 @@ object ModifyTargetGroupAttributesInput {
   @scala.inline
   def apply(Attributes: TargetGroupAttributes, TargetGroupArn: TargetGroupArn): ModifyTargetGroupAttributesInput = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], TargetGroupArn = TargetGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyTargetGroupAttributesInput]
   }
 }

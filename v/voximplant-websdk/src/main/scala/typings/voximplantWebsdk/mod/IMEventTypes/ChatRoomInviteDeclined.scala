@@ -27,7 +27,6 @@ object ChatRoomInviteDeclined {
   @scala.inline
   def apply(invitee: String, reason: String, room: String): ChatRoomInviteDeclined = {
     val __obj = js.Dynamic.literal(invitee = invitee.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChatRoomInviteDeclined]
   }
 }

@@ -68,16 +68,16 @@ object ColorMap {
     StringDictionary: /* key */ StringDictionary[Double] = null
   ): ColorMap = {
     val __obj = js.Dynamic.literal(checkmark = checkmark.asInstanceOf[js.Any], fail = fail.asInstanceOf[js.Any], fast = fast.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], plane = plane.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], runway = runway.asInstanceOf[js.Any], slow = slow.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any])
-    __obj.updateDynamic("bright fail")(`bright fail`.asInstanceOf[js.Any])
-    __obj.updateDynamic("bright pass")(`bright pass`.asInstanceOf[js.Any])
-    __obj.updateDynamic("bright yellow")(`bright yellow`.asInstanceOf[js.Any])
-    __obj.updateDynamic("diff added")(`diff added`.asInstanceOf[js.Any])
-    __obj.updateDynamic("diff gutter")(`diff gutter`.asInstanceOf[js.Any])
-    __obj.updateDynamic("diff removed")(`diff removed`.asInstanceOf[js.Any])
-    __obj.updateDynamic("error message")(`error message`.asInstanceOf[js.Any])
-    __obj.updateDynamic("error stack")(`error stack`.asInstanceOf[js.Any])
-    __obj.updateDynamic("error title")(`error title`.asInstanceOf[js.Any])
-    __obj.updateDynamic("plane crash")(`plane crash`.asInstanceOf[js.Any])
+    __obj.updateDynamic("bright fail")((`bright fail`).asInstanceOf[js.Any])
+    __obj.updateDynamic("bright pass")((`bright pass`).asInstanceOf[js.Any])
+    __obj.updateDynamic("bright yellow")((`bright yellow`).asInstanceOf[js.Any])
+    __obj.updateDynamic("diff added")((`diff added`).asInstanceOf[js.Any])
+    __obj.updateDynamic("diff gutter")((`diff gutter`).asInstanceOf[js.Any])
+    __obj.updateDynamic("diff removed")((`diff removed`).asInstanceOf[js.Any])
+    __obj.updateDynamic("error message")((`error message`).asInstanceOf[js.Any])
+    __obj.updateDynamic("error stack")((`error stack`).asInstanceOf[js.Any])
+    __obj.updateDynamic("error title")((`error title`).asInstanceOf[js.Any])
+    __obj.updateDynamic("plane crash")((`plane crash`).asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ColorMap]
   }

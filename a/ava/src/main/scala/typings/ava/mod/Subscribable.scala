@@ -13,7 +13,6 @@ object Subscribable {
   @scala.inline
   def apply(subscribe: AnonComplete => Unit): Subscribable = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[Subscribable]
   }
 }

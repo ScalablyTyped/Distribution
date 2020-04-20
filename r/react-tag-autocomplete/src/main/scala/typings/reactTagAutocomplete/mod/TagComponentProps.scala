@@ -21,7 +21,6 @@ object TagComponentProps {
     tag: Tag
   ): TagComponentProps = {
     val __obj = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any], onDelete = js.Any.fromFunction1(onDelete), tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagComponentProps]
   }
 }

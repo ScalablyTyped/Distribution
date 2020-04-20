@@ -26,7 +26,6 @@ object AnonDouble {
     treePath: Double
   ): AnonDouble = {
     val __obj = js.Dynamic.literal(boolean = boolean.asInstanceOf[js.Any], dateTime = dateTime.asInstanceOf[js.Any], double = double.asInstanceOf[js.Any], integer = integer.asInstanceOf[js.Any], plainText = plainText.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], treePath = treePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDouble]
   }
 }

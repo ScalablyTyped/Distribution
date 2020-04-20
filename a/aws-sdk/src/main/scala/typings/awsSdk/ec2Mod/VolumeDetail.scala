@@ -16,7 +16,6 @@ object VolumeDetail {
   @scala.inline
   def apply(Size: Long): VolumeDetail = {
     val __obj = js.Dynamic.literal(Size = Size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VolumeDetail]
   }
 }

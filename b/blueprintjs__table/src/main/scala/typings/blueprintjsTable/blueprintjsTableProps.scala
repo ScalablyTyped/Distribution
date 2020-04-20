@@ -33,67 +33,67 @@ import scala.scalajs.js.annotation._
 
 trait blueprintjsTableProps {
   @scala.inline
-  def CellProps: ICellProps.type = typings.blueprintjsTable.cellMod.ICellProps
+  def CellProps: ICellProps.type = ICellProps
   type CellProps = ICellProps
   @scala.inline
-  def ColumnProps: IColumnProps.type = typings.blueprintjsTable.columnMod.IColumnProps
+  def ColumnProps: IColumnProps.type = IColumnProps
   type ColumnProps = IColumnProps
   type ColumnHeaderProps = IColumnHeaderProps
   @scala.inline
-  def ColumnHeaderCellProps: IColumnHeaderCellProps.type = typings.blueprintjsTable.columnHeaderCellMod.IColumnHeaderCellProps
+  def ColumnHeaderCellProps: IColumnHeaderCellProps.type = IColumnHeaderCellProps
   type ColumnHeaderCellProps = IColumnHeaderCellProps
   @scala.inline
-  def ContextMenuTargetWrapperProps: IContextMenuTargetWrapper.type = typings.blueprintjsTable.contextMenuTargetWrapperMod.IContextMenuTargetWrapper
+  def ContextMenuTargetWrapperProps: IContextMenuTargetWrapper.type = IContextMenuTargetWrapper
   type ContextMenuTargetWrapperProps = IContextMenuTargetWrapper
   @scala.inline
-  def CopyCellsMenuItemProps: ICopyCellsMenuItemProps.type = typings.blueprintjsTable.copyCellsMenuItemMod.ICopyCellsMenuItemProps
+  def CopyCellsMenuItemProps: ICopyCellsMenuItemProps.type = ICopyCellsMenuItemProps
   type CopyCellsMenuItemProps = ICopyCellsMenuItemProps
   type DragReorderableProps = IDragReorderable
   type DragSelectableProps = IDragSelectableProps
   @scala.inline
-  def DraggableProps: IDraggableProps.type = typings.blueprintjsTable.draggableMod.IDraggableProps
+  def DraggableProps: IDraggableProps.type = IDraggableProps
   type DraggableProps = IDraggableProps
   @scala.inline
-  def EditableCellProps: IEditableCellProps.type = typings.blueprintjsTable.editableCellMod.IEditableCellProps
+  def EditableCellProps: IEditableCellProps.type = IEditableCellProps
   type EditableCellProps = IEditableCellProps
   @scala.inline
-  def EditableNameProps: IEditableNameProps.type = typings.blueprintjsTable.editableNameMod.IEditableNameProps
+  def EditableNameProps: IEditableNameProps.type = IEditableNameProps
   type EditableNameProps = IEditableNameProps
   @scala.inline
-  def GuideLayerProps: IGuideLayerProps.type = typings.blueprintjsTable.guidesMod.IGuideLayerProps
+  def GuideLayerProps: IGuideLayerProps.type = IGuideLayerProps
   type GuideLayerProps = IGuideLayerProps
   type HeaderProps = IInternalHeaderProps
   @scala.inline
-  def HeaderCellProps: IInternalHeaderCellProps.type = typings.blueprintjsTable.headerCellMod.IInternalHeaderCellProps
+  def HeaderCellProps: IInternalHeaderCellProps.type = IInternalHeaderCellProps
   type HeaderCellProps = IInternalHeaderCellProps
   @scala.inline
-  def JSONFormatProps: IJSONFormatProps.type = typings.blueprintjsTable.jsonFormatMod.IJSONFormatProps
+  def JSONFormatProps: IJSONFormatProps.type = IJSONFormatProps
   type JSONFormatProps = IJSONFormatProps
   @scala.inline
-  def LoadableContentProps: ILoadableContentProps.type = typings.blueprintjsTable.loadableContentMod.ILoadableContentProps
+  def LoadableContentProps: ILoadableContentProps.type = ILoadableContentProps
   type LoadableContentProps = ILoadableContentProps
   @scala.inline
-  def RegionLayerProps: IRegionLayerProps.type = typings.blueprintjsTable.regionsMod.IRegionLayerProps
+  def RegionLayerProps: IRegionLayerProps.type = IRegionLayerProps
   type RegionLayerProps = IRegionLayerProps
   type ResizableProps = IResizableProps
   type ResizeHandleProps = IResizeHandleProps
   type RowHeaderProps = IRowHeaderProps
   @scala.inline
-  def RowHeaderCellProps: IRowHeaderCellProps.type = typings.blueprintjsTable.rowHeaderCellMod.IRowHeaderCellProps
+  def RowHeaderCellProps: IRowHeaderCellProps.type = IRowHeaderCellProps
   type RowHeaderCellProps = IRowHeaderCellProps
   @scala.inline
-  def TableProps: ITableProps.type = typings.blueprintjsTable.tableMod.ITableProps
+  def TableProps: ITableProps.type = ITableProps
   type TableProps = ITableProps
   @scala.inline
-  def TableBodyProps: ITableBodyProps.type = typings.blueprintjsTable.tableBodyMod.ITableBodyProps
+  def TableBodyProps: ITableBodyProps.type = ITableBodyProps
   type TableBodyProps = ITableBodyProps
   @scala.inline
-  def TableBodyCellsProps: ITableBodyCellsProps.type = typings.blueprintjsTable.tableBodyCellsMod.ITableBodyCellsProps
+  def TableBodyCellsProps: ITableBodyCellsProps.type = ITableBodyCellsProps
   type TableBodyCellsProps = ITableBodyCellsProps
   type TableQuadrantProps = ITableQuadrantProps
   type TableQuadrantStackProps = ITableQuadrantStackProps
   @scala.inline
-  def TruncatedFormatProps: ITruncatedFormatProps.type = typings.blueprintjsTable.truncatedFormatMod.ITruncatedFormatProps
+  def TruncatedFormatProps: ITruncatedFormatProps.type = ITruncatedFormatProps
   type TruncatedFormatProps = ITruncatedFormatProps
 }
 

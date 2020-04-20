@@ -38,7 +38,6 @@ object DescribePublishingDestinationResponse {
     Status: PublishingStatus
   ): DescribePublishingDestinationResponse = {
     val __obj = js.Dynamic.literal(DestinationId = DestinationId.asInstanceOf[js.Any], DestinationProperties = DestinationProperties.asInstanceOf[js.Any], DestinationType = DestinationType.asInstanceOf[js.Any], PublishingFailureStartTimestamp = PublishingFailureStartTimestamp.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePublishingDestinationResponse]
   }
 }

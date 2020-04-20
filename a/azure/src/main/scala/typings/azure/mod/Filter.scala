@@ -12,7 +12,6 @@ object Filter {
   @scala.inline
   def apply(handle: (js.Any, js.Function) => Unit): Filter = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
-  
     __obj.asInstanceOf[Filter]
   }
 }

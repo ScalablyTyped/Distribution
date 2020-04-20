@@ -15,7 +15,6 @@ object StreamingMessage {
   @scala.inline
   def apply(event: AnonCreatedDate, sobject: Record[_]): StreamingMessage = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], sobject = sobject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreamingMessage]
   }
 }

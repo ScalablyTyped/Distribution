@@ -16,7 +16,6 @@ object DeleteClusterRequest {
   @scala.inline
   def apply(cluster: String): DeleteClusterRequest = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteClusterRequest]
   }
 }

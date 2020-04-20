@@ -33,50 +33,48 @@ trait TokenKindEnum extends js.Object
 
 object TokenKindEnum {
   @scala.inline
-  def $: typings.graphql.graphqlStrings.$ = this.cast("$")
+  def $: typings.graphql.graphqlStrings.$ = "$".asInstanceOf[typings.graphql.graphqlStrings.$]
   @scala.inline
-  def `@`: typings.graphql.graphqlStrings.`@` = this.cast("@")
+  def `@`: typings.graphql.graphqlStrings.`@` = "@".asInstanceOf[typings.graphql.graphqlStrings.`@`]
   @scala.inline
-  def Ampersand: typings.graphql.graphqlStrings.Ampersand = this.cast("&")
+  def Ampersand: typings.graphql.graphqlStrings.Ampersand = "&".asInstanceOf[typings.graphql.graphqlStrings.Ampersand]
   @scala.inline
-  def BlockString: typings.graphql.graphqlStrings.BlockString = this.cast("BlockString")
+  def BlockString: typings.graphql.graphqlStrings.BlockString = "BlockString".asInstanceOf[typings.graphql.graphqlStrings.BlockString]
   @scala.inline
-  def Colon: typings.graphql.graphqlStrings.Colon = this.cast(":")
+  def Colon: typings.graphql.graphqlStrings.Colon = ":".asInstanceOf[typings.graphql.graphqlStrings.Colon]
   @scala.inline
-  def Comment: typings.graphql.graphqlStrings.Comment = this.cast("Comment")
+  def Comment: typings.graphql.graphqlStrings.Comment = "Comment".asInstanceOf[typings.graphql.graphqlStrings.Comment]
   @scala.inline
-  def DotDotDot: typings.graphql.graphqlStrings.DotDotDot = this.cast("...")
+  def DotDotDot: typings.graphql.graphqlStrings.DotDotDot = "...".asInstanceOf[typings.graphql.graphqlStrings.DotDotDot]
   @scala.inline
-  def Equalssign: typings.graphql.graphqlStrings.Equalssign = this.cast("=")
+  def Equalssign: typings.graphql.graphqlStrings.Equalssign = "=".asInstanceOf[typings.graphql.graphqlStrings.Equalssign]
   @scala.inline
-  def Exclamationmark: typings.graphql.graphqlStrings.Exclamationmark = this.cast("!")
+  def Exclamationmark: typings.graphql.graphqlStrings.Exclamationmark = "!".asInstanceOf[typings.graphql.graphqlStrings.Exclamationmark]
   @scala.inline
-  def Float: typings.graphql.graphqlStrings.Float = this.cast("Float")
+  def Float: typings.graphql.graphqlStrings.Float = "Float".asInstanceOf[typings.graphql.graphqlStrings.Float]
   @scala.inline
-  def Int: typings.graphql.graphqlStrings.Int = this.cast("Int")
+  def Int: typings.graphql.graphqlStrings.Int = "Int".asInstanceOf[typings.graphql.graphqlStrings.Int]
   @scala.inline
-  def Leftcurlybracket: typings.graphql.graphqlStrings.Leftcurlybracket = this.cast("{")
+  def Leftcurlybracket: typings.graphql.graphqlStrings.Leftcurlybracket = "{".asInstanceOf[typings.graphql.graphqlStrings.Leftcurlybracket]
   @scala.inline
-  def Leftparenthesis: typings.graphql.graphqlStrings.Leftparenthesis = this.cast("(")
+  def Leftparenthesis: typings.graphql.graphqlStrings.Leftparenthesis = "(".asInstanceOf[typings.graphql.graphqlStrings.Leftparenthesis]
   @scala.inline
-  def LessthansignEOFGreaterthansign: typings.graphql.graphqlStrings.LessthansignEOFGreaterthansign = this.cast("<EOF>")
+  def LessthansignEOFGreaterthansign: typings.graphql.graphqlStrings.LessthansignEOFGreaterthansign = "<EOF>".asInstanceOf[typings.graphql.graphqlStrings.LessthansignEOFGreaterthansign]
   @scala.inline
-  def LessthansignSOFGreaterthansign: typings.graphql.graphqlStrings.LessthansignSOFGreaterthansign = this.cast("<SOF>")
+  def LessthansignSOFGreaterthansign: typings.graphql.graphqlStrings.LessthansignSOFGreaterthansign = "<SOF>".asInstanceOf[typings.graphql.graphqlStrings.LessthansignSOFGreaterthansign]
   @scala.inline
-  def Name: typings.graphql.graphqlStrings.Name = this.cast("Name")
+  def Name: typings.graphql.graphqlStrings.Name = "Name".asInstanceOf[typings.graphql.graphqlStrings.Name]
   @scala.inline
-  def Rightcurlybracket: typings.graphql.graphqlStrings.Rightcurlybracket = this.cast("}")
+  def Rightcurlybracket: typings.graphql.graphqlStrings.Rightcurlybracket = "}".asInstanceOf[typings.graphql.graphqlStrings.Rightcurlybracket]
   @scala.inline
-  def Rightparenthesis: typings.graphql.graphqlStrings.Rightparenthesis = this.cast(")")
+  def Rightparenthesis: typings.graphql.graphqlStrings.Rightparenthesis = ")".asInstanceOf[typings.graphql.graphqlStrings.Rightparenthesis]
   @scala.inline
-  def String: typings.graphql.graphqlStrings.String = this.cast("String")
+  def String: typings.graphql.graphqlStrings.String = "String".asInstanceOf[typings.graphql.graphqlStrings.String]
   @scala.inline
-  def Verticalline: typings.graphql.graphqlStrings.Verticalline = this.cast("|")
+  def Verticalline: typings.graphql.graphqlStrings.Verticalline = "|".asInstanceOf[typings.graphql.graphqlStrings.Verticalline]
   @scala.inline
-  def `[`: typings.graphql.graphqlStrings.`[` = this.cast("[")
+  def `[`: typings.graphql.graphqlStrings.`[` = "[".asInstanceOf[typings.graphql.graphqlStrings.`[`]
   @scala.inline
-  def `]`: typings.graphql.graphqlStrings.`]` = this.cast("]")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `]`: typings.graphql.graphqlStrings.`]` = "]".asInstanceOf[typings.graphql.graphqlStrings.`]`]
 }
 

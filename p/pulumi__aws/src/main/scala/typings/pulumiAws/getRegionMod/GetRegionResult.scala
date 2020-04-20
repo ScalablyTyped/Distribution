@@ -28,7 +28,6 @@ object GetRegionResult {
   @scala.inline
   def apply(description: String, endpoint: String, id: String, name: String): GetRegionResult = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRegionResult]
   }
 }

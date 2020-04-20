@@ -15,7 +15,6 @@ object NodeContext {
   @scala.inline
   def apply[K](index: Double, key: K, subId: String): NodeContext[K] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeContext[K]]
   }
 }

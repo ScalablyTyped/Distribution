@@ -56,7 +56,6 @@ object ButtonGroupPropssearchPan {
     showSelectedOnlyBtn: ReactElement
   ): ButtonGroupPropssearchPan = {
     val __obj = js.Dynamic.literal(btnGroup = btnGroup.asInstanceOf[js.Any], clearBtn = clearBtn.asInstanceOf[js.Any], deleteBtn = deleteBtn.asInstanceOf[js.Any], exportCSVBtn = exportCSVBtn.asInstanceOf[js.Any], insertBtn = insertBtn.asInstanceOf[js.Any], searchField = searchField.asInstanceOf[js.Any], searchPanel = searchPanel.asInstanceOf[js.Any], showSelectedOnlyBtn = showSelectedOnlyBtn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ButtonGroupPropssearchPan]
   }
 }

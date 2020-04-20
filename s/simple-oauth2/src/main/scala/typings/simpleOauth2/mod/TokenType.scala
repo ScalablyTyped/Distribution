@@ -12,10 +12,8 @@ trait TokenType extends js.Object
 
 object TokenType {
   @scala.inline
-  def access_token: typings.simpleOauth2.simpleOauth2Strings.access_token = this.cast("access_token")
+  def access_token: typings.simpleOauth2.simpleOauth2Strings.access_token = "access_token".asInstanceOf[typings.simpleOauth2.simpleOauth2Strings.access_token]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def refresh_token: typings.simpleOauth2.simpleOauth2Strings.refresh_token = this.cast("refresh_token")
+  def refresh_token: typings.simpleOauth2.simpleOauth2Strings.refresh_token = "refresh_token".asInstanceOf[typings.simpleOauth2.simpleOauth2Strings.refresh_token]
 }
 

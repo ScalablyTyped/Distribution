@@ -15,7 +15,6 @@ object Dependency {
   @scala.inline
   def apply(hint: String, mode: Mode, name: String): Dependency = {
     val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Dependency]
   }
 }

@@ -35,28 +35,26 @@ trait SaveMode extends js.Object
 
 object SaveMode {
   @scala.inline
-  def Assign: `47` = this.cast(47)
+  def Assign: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def AutoSave: `70` = this.cast(70)
+  def AutoSave: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def Deactivate: `5` = this.cast(5)
+  def Deactivate: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def Disqualify: `15` = this.cast(15)
+  def Disqualify: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def Qualify: `16` = this.cast(16)
+  def Qualify: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def Reactivate: `6` = this.cast(6)
+  def Reactivate: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def Save: `1` = this.cast(1)
+  def Save: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SaveAndClose: `2` = this.cast(2)
+  def SaveAndClose: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SaveAndNew: `59` = this.cast(59)
+  def SaveAndNew: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def SaveAsCompleted: `58` = this.cast(58)
+  def SaveAsCompleted: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def Send: `7` = this.cast(7)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Send: `7` = 7.asInstanceOf[`7`]
 }
 

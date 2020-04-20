@@ -14,7 +14,6 @@ object IUpdateResult {
   @scala.inline
   def apply(errMsg: String, stats: AnonUpdated): IUpdateResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUpdateResult]
   }
 }

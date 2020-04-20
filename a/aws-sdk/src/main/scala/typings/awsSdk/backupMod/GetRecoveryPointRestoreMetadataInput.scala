@@ -20,7 +20,6 @@ object GetRecoveryPointRestoreMetadataInput {
   @scala.inline
   def apply(BackupVaultName: BackupVaultName, RecoveryPointArn: ARN): GetRecoveryPointRestoreMetadataInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any], RecoveryPointArn = RecoveryPointArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRecoveryPointRestoreMetadataInput]
   }
 }

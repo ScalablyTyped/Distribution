@@ -13,7 +13,6 @@ object MoneyObjectOut {
   @scala.inline
   def apply(amount: Double, currency: String): MoneyObjectOut = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MoneyObjectOut]
   }
 }

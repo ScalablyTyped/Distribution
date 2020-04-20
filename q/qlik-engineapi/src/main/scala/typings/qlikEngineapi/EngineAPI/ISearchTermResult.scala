@@ -28,7 +28,6 @@ object ISearchTermResult {
   @scala.inline
   def apply(qElemNumber: Double, qRanges: js.Array[ISearchCharRange], qText: String): ISearchTermResult = {
     val __obj = js.Dynamic.literal(qElemNumber = qElemNumber.asInstanceOf[js.Any], qRanges = qRanges.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchTermResult]
   }
 }

@@ -12,10 +12,8 @@ trait IndexingMode extends js.Object
 
 object IndexingMode {
   @scala.inline
-  def Consistent: typings.documentdb.documentdbStrings.Consistent = this.cast("Consistent")
+  def Consistent: typings.documentdb.documentdbStrings.Consistent = "Consistent".asInstanceOf[typings.documentdb.documentdbStrings.Consistent]
   @scala.inline
-  def Lazy: typings.documentdb.documentdbStrings.Lazy = this.cast("Lazy")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Lazy: typings.documentdb.documentdbStrings.Lazy = "Lazy".asInstanceOf[typings.documentdb.documentdbStrings.Lazy]
 }
 

@@ -13,7 +13,6 @@ object Dragster {
   @scala.inline
   def apply(removeListeners: () => Unit, reset: () => Unit): Dragster = {
     val __obj = js.Dynamic.literal(removeListeners = js.Any.fromFunction0(removeListeners), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[Dragster]
   }
 }

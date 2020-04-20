@@ -16,7 +16,6 @@ object LambdaDataSourceConfig {
   @scala.inline
   def apply(lambdaFunctionArn: String): LambdaDataSourceConfig = {
     val __obj = js.Dynamic.literal(lambdaFunctionArn = lambdaFunctionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LambdaDataSourceConfig]
   }
 }

@@ -14,7 +14,6 @@ object URLS {
   @scala.inline
   def apply(enrollAccount: String => String, resetPassword: String => String, verifyEmail: String => String): URLS = {
     val __obj = js.Dynamic.literal(enrollAccount = js.Any.fromFunction1(enrollAccount), resetPassword = js.Any.fromFunction1(resetPassword), verifyEmail = js.Any.fromFunction1(verifyEmail))
-  
     __obj.asInstanceOf[URLS]
   }
 }

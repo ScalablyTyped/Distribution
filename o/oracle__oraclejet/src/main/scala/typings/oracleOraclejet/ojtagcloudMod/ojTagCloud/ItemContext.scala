@@ -17,7 +17,6 @@ object ItemContext {
   @scala.inline
   def apply(color: String, label: String, selected: Boolean, tooltip: String, value: Double): ItemContext = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ItemContext]
   }
 }

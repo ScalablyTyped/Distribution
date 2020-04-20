@@ -16,13 +16,11 @@ object PromiseResult {
   @scala.inline
   def PromiseFulfilledResult[ValueType](isFulfilled: `true`, isRejected: `false`, value: ValueType): PromiseResult[ValueType] = {
     val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromiseResult[ValueType]]
   }
   @scala.inline
   def PromiseRejectedResult[ValueType](isFulfilled: `false`, isRejected: `true`, reason: js.Any): PromiseResult[ValueType] = {
     val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromiseResult[ValueType]]
   }
 }

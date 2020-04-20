@@ -13,7 +13,6 @@ object TemplateBindingIdentifier {
   @scala.inline
   def apply(source: String, span: AbsoluteSourceSpan): TemplateBindingIdentifier = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TemplateBindingIdentifier]
   }
 }

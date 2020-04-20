@@ -14,7 +14,6 @@ object CpuInfo {
   @scala.inline
   def apply(model: String, speed: Double, times: Time): CpuInfo = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], times = times.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CpuInfo]
   }
 }

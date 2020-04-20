@@ -13,12 +13,10 @@ trait GiphyRatingType extends js.Object
 
 object GiphyRatingType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def moderate: typings.microsoftGraph.microsoftGraphStrings.moderate = "moderate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.moderate]
   @scala.inline
-  def moderate: typings.microsoftGraph.microsoftGraphStrings.moderate = this.cast("moderate")
+  def strict: typings.microsoftGraph.microsoftGraphStrings.strict = "strict".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.strict]
   @scala.inline
-  def strict: typings.microsoftGraph.microsoftGraphStrings.strict = this.cast("strict")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

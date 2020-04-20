@@ -13,7 +13,6 @@ object AnonApiState {
   @scala.inline
   def apply(api: AnonFocusOnUIElement, state: js.Any): AnonApiState = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonApiState]
   }
 }

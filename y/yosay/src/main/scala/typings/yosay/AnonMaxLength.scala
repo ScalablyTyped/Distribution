@@ -12,7 +12,6 @@ object AnonMaxLength {
   @scala.inline
   def apply(maxLength: Double): AnonMaxLength = {
     val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaxLength]
   }
 }

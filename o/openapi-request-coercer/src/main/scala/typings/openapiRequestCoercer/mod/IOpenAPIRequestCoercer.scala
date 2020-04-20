@@ -13,7 +13,6 @@ object IOpenAPIRequestCoercer {
   @scala.inline
   def apply(coerce: Request => Unit): IOpenAPIRequestCoercer = {
     val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce))
-  
     __obj.asInstanceOf[IOpenAPIRequestCoercer]
   }
 }

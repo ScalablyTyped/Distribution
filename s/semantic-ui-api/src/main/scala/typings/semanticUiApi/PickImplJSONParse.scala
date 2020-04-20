@@ -13,7 +13,6 @@ object PickImplJSONParse {
   @scala.inline
   def apply(JSONParse: String): PickImplJSONParse = {
     val __obj = js.Dynamic.literal(JSONParse = JSONParse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplJSONParse]
   }
 }

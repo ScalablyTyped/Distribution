@@ -16,7 +16,6 @@ object DescribeRestoreJobInput {
   @scala.inline
   def apply(RestoreJobId: RestoreJobId): DescribeRestoreJobInput = {
     val __obj = js.Dynamic.literal(RestoreJobId = RestoreJobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeRestoreJobInput]
   }
 }

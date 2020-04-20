@@ -22,7 +22,6 @@ object AnonBorderTopWidth {
     paddingVertical: Double
   ): AnonBorderTopWidth = {
     val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderTopWidth = borderTopWidth.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderTopWidth]
   }
 }

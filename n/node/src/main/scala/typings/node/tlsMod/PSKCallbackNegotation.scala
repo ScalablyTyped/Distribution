@@ -15,7 +15,6 @@ object PSKCallbackNegotation {
   @scala.inline
   def apply(identitty: String, psk: DataView | TypedArray): PSKCallbackNegotation = {
     val __obj = js.Dynamic.literal(identitty = identitty.asInstanceOf[js.Any], psk = psk.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PSKCallbackNegotation]
   }
 }

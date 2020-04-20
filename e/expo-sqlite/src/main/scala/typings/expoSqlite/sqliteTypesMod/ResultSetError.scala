@@ -13,7 +13,6 @@ object ResultSetError {
   @scala.inline
   def apply(error: Error): ResultSetError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultSetError]
   }
 }

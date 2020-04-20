@@ -20,7 +20,6 @@ object Controller_ {
     ]
   ): Controller_ = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], routes = js.Any.fromFunction0(routes))
-  
     __obj.asInstanceOf[Controller_]
   }
 }

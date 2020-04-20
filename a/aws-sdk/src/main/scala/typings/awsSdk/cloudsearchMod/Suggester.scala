@@ -14,7 +14,6 @@ object Suggester {
   @scala.inline
   def apply(DocumentSuggesterOptions: DocumentSuggesterOptions, SuggesterName: StandardName): Suggester = {
     val __obj = js.Dynamic.literal(DocumentSuggesterOptions = DocumentSuggesterOptions.asInstanceOf[js.Any], SuggesterName = SuggesterName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Suggester]
   }
 }

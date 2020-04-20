@@ -16,18 +16,16 @@ trait JSONEditorMode extends js.Object
 
 object JSONEditorMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code: typings.jsoneditor.jsoneditorStrings.code = "code".asInstanceOf[typings.jsoneditor.jsoneditorStrings.code]
   @scala.inline
-  def code: typings.jsoneditor.jsoneditorStrings.code = this.cast("code")
+  def form: typings.jsoneditor.jsoneditorStrings.form = "form".asInstanceOf[typings.jsoneditor.jsoneditorStrings.form]
   @scala.inline
-  def form: typings.jsoneditor.jsoneditorStrings.form = this.cast("form")
+  def preview: typings.jsoneditor.jsoneditorStrings.preview = "preview".asInstanceOf[typings.jsoneditor.jsoneditorStrings.preview]
   @scala.inline
-  def preview: typings.jsoneditor.jsoneditorStrings.preview = this.cast("preview")
+  def text: typings.jsoneditor.jsoneditorStrings.text = "text".asInstanceOf[typings.jsoneditor.jsoneditorStrings.text]
   @scala.inline
-  def text: typings.jsoneditor.jsoneditorStrings.text = this.cast("text")
+  def tree: typings.jsoneditor.jsoneditorStrings.tree = "tree".asInstanceOf[typings.jsoneditor.jsoneditorStrings.tree]
   @scala.inline
-  def tree: typings.jsoneditor.jsoneditorStrings.tree = this.cast("tree")
-  @scala.inline
-  def view: typings.jsoneditor.jsoneditorStrings.view = this.cast("view")
+  def view: typings.jsoneditor.jsoneditorStrings.view = "view".asInstanceOf[typings.jsoneditor.jsoneditorStrings.view]
 }
 

@@ -28,7 +28,6 @@ object CreateUserRequest {
   @scala.inline
   def apply(DisplayName: String, Name: UserName, OrganizationId: OrganizationId, Password: Password): CreateUserRequest = {
     val __obj = js.Dynamic.literal(DisplayName = DisplayName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateUserRequest]
   }
 }

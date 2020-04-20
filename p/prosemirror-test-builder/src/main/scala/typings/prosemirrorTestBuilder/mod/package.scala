@@ -20,9 +20,11 @@ package object mod {
     ]) with (typings.std.Record[
       java.lang.String, 
       typings.prosemirrorTestBuilder.mod.MarkBuilderMethod[typings.prosemirrorModel.mod.Schema[java.lang.String, java.lang.String]]
-    ]) with typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.Builder with (typings.std.Record[
-      java.lang.String, 
-      typings.prosemirrorTestBuilder.mod.NodeTypeAttributes | typings.prosemirrorTestBuilder.mod.MarkTypeAttributes
+    ]) with typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.Builder with (org.scalablytyped.runtime.TopLevel[
+      typings.std.Record[
+        java.lang.String, 
+        typings.prosemirrorTestBuilder.mod.NodeTypeAttributes | typings.prosemirrorTestBuilder.mod.MarkTypeAttributes
+      ]
     ])
   ]
   type MarkBuilderMethod[S /* <: typings.prosemirrorModel.mod.Schema[_, _] */] = js.Function1[

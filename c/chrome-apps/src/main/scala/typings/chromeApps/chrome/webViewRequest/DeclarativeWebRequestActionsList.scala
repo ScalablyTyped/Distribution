@@ -27,40 +27,38 @@ trait DeclarativeWebRequestActionsList extends js.Object
 
 object DeclarativeWebRequestActionsList {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def declarativeWebRequestDotAddRequestCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotAddRequestCookie = "declarativeWebRequest.AddRequestCookie".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotAddRequestCookie]
   @scala.inline
-  def declarativeWebRequestDotAddRequestCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotAddRequestCookie = this.cast("declarativeWebRequest.AddRequestCookie")
+  def declarativeWebRequestDotAddResponseCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotAddResponseCookie = "declarativeWebRequest.AddResponseCookie".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotAddResponseCookie]
   @scala.inline
-  def declarativeWebRequestDotAddResponseCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotAddResponseCookie = this.cast("declarativeWebRequest.AddResponseCookie")
+  def declarativeWebRequestDotAddResponseHeader: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotAddResponseHeader = "declarativeWebRequest.AddResponseHeader".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotAddResponseHeader]
   @scala.inline
-  def declarativeWebRequestDotAddResponseHeader: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotAddResponseHeader = this.cast("declarativeWebRequest.AddResponseHeader")
+  def declarativeWebRequestDotCancelRequest: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotCancelRequest = "declarativeWebRequest.CancelRequest".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotCancelRequest]
   @scala.inline
-  def declarativeWebRequestDotCancelRequest: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotCancelRequest = this.cast("declarativeWebRequest.CancelRequest")
+  def declarativeWebRequestDotEditRequestCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotEditRequestCookie = "declarativeWebRequest.EditRequestCookie".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotEditRequestCookie]
   @scala.inline
-  def declarativeWebRequestDotEditRequestCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotEditRequestCookie = this.cast("declarativeWebRequest.EditRequestCookie")
+  def declarativeWebRequestDotEditResponseCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotEditResponseCookie = "declarativeWebRequest.EditResponseCookie".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotEditResponseCookie]
   @scala.inline
-  def declarativeWebRequestDotEditResponseCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotEditResponseCookie = this.cast("declarativeWebRequest.EditResponseCookie")
+  def declarativeWebRequestDotIgnoreRules: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotIgnoreRules = "declarativeWebRequest.IgnoreRules".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotIgnoreRules]
   @scala.inline
-  def declarativeWebRequestDotIgnoreRules: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotIgnoreRules = this.cast("declarativeWebRequest.IgnoreRules")
+  def declarativeWebRequestDotRedirectByRegEx: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectByRegEx = "declarativeWebRequest.RedirectByRegEx".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectByRegEx]
   @scala.inline
-  def declarativeWebRequestDotRedirectByRegEx: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectByRegEx = this.cast("declarativeWebRequest.RedirectByRegEx")
+  def declarativeWebRequestDotRedirectRequest: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectRequest = "declarativeWebRequest.RedirectRequest".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectRequest]
   @scala.inline
-  def declarativeWebRequestDotRedirectRequest: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectRequest = this.cast("declarativeWebRequest.RedirectRequest")
+  def declarativeWebRequestDotRedirectToEmptyDocument: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectToEmptyDocument = "declarativeWebRequest.RedirectToEmptyDocument".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectToEmptyDocument]
   @scala.inline
-  def declarativeWebRequestDotRedirectToEmptyDocument: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectToEmptyDocument = this.cast("declarativeWebRequest.RedirectToEmptyDocument")
+  def declarativeWebRequestDotRedirectToTransparentImage: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectToTransparentImage = "declarativeWebRequest.RedirectToTransparentImage".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectToTransparentImage]
   @scala.inline
-  def declarativeWebRequestDotRedirectToTransparentImage: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRedirectToTransparentImage = this.cast("declarativeWebRequest.RedirectToTransparentImage")
+  def declarativeWebRequestDotRemoveRequestCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveRequestCookie = "declarativeWebRequest.RemoveRequestCookie".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveRequestCookie]
   @scala.inline
-  def declarativeWebRequestDotRemoveRequestCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveRequestCookie = this.cast("declarativeWebRequest.RemoveRequestCookie")
+  def declarativeWebRequestDotRemoveRequestHeader: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveRequestHeader = "declarativeWebRequest.RemoveRequestHeader".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveRequestHeader]
   @scala.inline
-  def declarativeWebRequestDotRemoveRequestHeader: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveRequestHeader = this.cast("declarativeWebRequest.RemoveRequestHeader")
+  def declarativeWebRequestDotRemoveResponseCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveResponseCookie = "declarativeWebRequest.RemoveResponseCookie".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveResponseCookie]
   @scala.inline
-  def declarativeWebRequestDotRemoveResponseCookie: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveResponseCookie = this.cast("declarativeWebRequest.RemoveResponseCookie")
+  def declarativeWebRequestDotRemoveResponseHeader: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveResponseHeader = "declarativeWebRequest.RemoveResponseHeader".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveResponseHeader]
   @scala.inline
-  def declarativeWebRequestDotRemoveResponseHeader: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotRemoveResponseHeader = this.cast("declarativeWebRequest.RemoveResponseHeader")
+  def declarativeWebRequestDotSendMessageToExtension: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotSendMessageToExtension = "declarativeWebRequest.SendMessageToExtension".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotSendMessageToExtension]
   @scala.inline
-  def declarativeWebRequestDotSendMessageToExtension: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotSendMessageToExtension = this.cast("declarativeWebRequest.SendMessageToExtension")
-  @scala.inline
-  def declarativeWebRequestDotSetRequestHeader: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotSetRequestHeader = this.cast("declarativeWebRequest.SetRequestHeader")
+  def declarativeWebRequestDotSetRequestHeader: typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotSetRequestHeader = "declarativeWebRequest.SetRequestHeader".asInstanceOf[typings.chromeApps.chromeAppsStrings.declarativeWebRequestDotSetRequestHeader]
 }
 

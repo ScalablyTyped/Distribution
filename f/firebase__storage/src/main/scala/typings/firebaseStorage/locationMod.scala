@@ -14,8 +14,8 @@ object locationMod extends js.Object {
     var path_ : js.Any = js.native
     def bucketOnlyServerUrl(): String = js.native
     def fullServerUrl(): String = js.native
-    def isRoot(): Boolean = js.native
-    def path(): String = js.native
+    def isRoot: Boolean = js.native
+    def path: String = js.native
   }
   
   /* static members */

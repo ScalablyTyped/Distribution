@@ -33,7 +33,6 @@ object CustomField {
   @scala.inline
   def apply(get: String => CustomField, set: (String, js.Any) => CustomField, unset: String => CustomField): CustomField = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set), unset = js.Any.fromFunction1(unset))
-  
     __obj.asInstanceOf[CustomField]
   }
 }

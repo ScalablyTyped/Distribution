@@ -14,7 +14,6 @@ object AnonCssClass {
   @scala.inline
   def apply(cssClass: String, node: HTMLElement): AnonCssClass = {
     val __obj = js.Dynamic.literal(cssClass = cssClass.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCssClass]
   }
 }

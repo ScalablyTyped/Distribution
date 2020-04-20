@@ -20,7 +20,6 @@ object DescribeStackSetOperationInput {
   @scala.inline
   def apply(OperationId: ClientRequestToken, StackSetName: StackSetName): DescribeStackSetOperationInput = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStackSetOperationInput]
   }
 }

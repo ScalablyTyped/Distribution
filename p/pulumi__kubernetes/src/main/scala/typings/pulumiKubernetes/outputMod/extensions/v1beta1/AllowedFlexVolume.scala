@@ -19,7 +19,6 @@ object AllowedFlexVolume {
   @scala.inline
   def apply(driver: String): AllowedFlexVolume = {
     val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AllowedFlexVolume]
   }
 }

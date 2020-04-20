@@ -2,6 +2,7 @@ package typings.loopback.mod
 
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,7 @@ object static extends js.Object {
     *   for the full list of available options.
     * @header loopback.static(root, [options])
     */
-  def apply(root: String): RequestHandler[ParamsDictionary] = js.native
-  def apply(root: String, options: js.Any): RequestHandler[ParamsDictionary] = js.native
+  def apply(root: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(root: String, options: js.Any): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
 

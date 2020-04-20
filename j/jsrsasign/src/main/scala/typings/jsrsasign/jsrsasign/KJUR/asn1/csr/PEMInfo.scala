@@ -15,7 +15,6 @@ object PEMInfo {
   @scala.inline
   def apply(pubkey: AnonObj, subject: AnonHexName): PEMInfo = {
     val __obj = js.Dynamic.literal(pubkey = pubkey.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PEMInfo]
   }
 }

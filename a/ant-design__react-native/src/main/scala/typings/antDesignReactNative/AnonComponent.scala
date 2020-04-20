@@ -13,7 +13,6 @@ object AnonComponent {
   @scala.inline
   def apply(_component: ScrollView): AnonComponent = {
     val __obj = js.Dynamic.literal(_component = _component.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComponent]
   }
 }

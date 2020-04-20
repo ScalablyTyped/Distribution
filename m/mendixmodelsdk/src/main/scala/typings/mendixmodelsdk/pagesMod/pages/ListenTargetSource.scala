@@ -23,7 +23,7 @@ class ListenTargetSource protected () extends DataSource {
   ) = this()
   @JSName("model")
   var model_FListenTargetSource: IModel = js.native
-  def listenTarget(): String = js.native
+  def listenTarget: String = js.native
   def listenTarget(newValue: String): js.Any = js.native
 }
 

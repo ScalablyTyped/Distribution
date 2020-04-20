@@ -15,7 +15,6 @@ object Credentials {
   @scala.inline
   def apply(pass: String, user: String): Credentials = {
     val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Credentials]
   }
 }

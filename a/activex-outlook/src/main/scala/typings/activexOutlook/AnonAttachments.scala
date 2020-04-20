@@ -17,7 +17,6 @@ object AnonAttachments {
     CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
   ): AnonAttachments = {
     val __obj = js.Dynamic.literal(Attachments = Attachments.asInstanceOf[js.Any], CommandBar = CommandBar.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttachments]
   }
 }

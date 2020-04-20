@@ -13,7 +13,6 @@ object RecentGamesDto {
   @scala.inline
   def apply(games: js.Array[GameDto], summonerId: Double): RecentGamesDto = {
     val __obj = js.Dynamic.literal(games = games.asInstanceOf[js.Any], summonerId = summonerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecentGamesDto]
   }
 }

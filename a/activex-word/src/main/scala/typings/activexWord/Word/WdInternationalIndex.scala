@@ -30,26 +30,24 @@ trait WdInternationalIndex extends js.Object
 
 object WdInternationalIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wd24HourClock: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def wd24HourClock: `21` = this.cast(21)
+  def wdCurrencyCode: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdCurrencyCode: `20` = this.cast(20)
+  def wdDateSeparator: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def wdDateSeparator: `25` = this.cast(25)
+  def wdDecimalSeparator: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdDecimalSeparator: `18` = this.cast(18)
+  def wdInternationalAM: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def wdInternationalAM: `22` = this.cast(22)
+  def wdInternationalPM: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def wdInternationalPM: `23` = this.cast(23)
+  def wdListSeparator: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdListSeparator: `17` = this.cast(17)
+  def wdProductLanguageID: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def wdProductLanguageID: `26` = this.cast(26)
+  def wdThousandsSeparator: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdThousandsSeparator: `19` = this.cast(19)
-  @scala.inline
-  def wdTimeSeparator: `24` = this.cast(24)
+  def wdTimeSeparator: `24` = 24.asInstanceOf[`24`]
 }
 

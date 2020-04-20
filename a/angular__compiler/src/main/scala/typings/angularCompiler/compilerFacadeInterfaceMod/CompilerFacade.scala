@@ -35,7 +35,6 @@ object CompilerFacade {
     createParseSourceSpan: (String, String, String) => ParseSourceSpan
   ): CompilerFacade = {
     val __obj = js.Dynamic.literal(R3FactoryTarget = R3FactoryTarget.asInstanceOf[js.Any], R3ResolvedDependencyType = R3ResolvedDependencyType.asInstanceOf[js.Any], ResourceLoader = ResourceLoader.asInstanceOf[js.Any], compileComponent = js.Any.fromFunction3(compileComponent), compileDirective = js.Any.fromFunction3(compileDirective), compileFactory = js.Any.fromFunction3(compileFactory), compileInjectable = js.Any.fromFunction3(compileInjectable), compileInjector = js.Any.fromFunction3(compileInjector), compileNgModule = js.Any.fromFunction3(compileNgModule), compilePipe = js.Any.fromFunction3(compilePipe), createParseSourceSpan = js.Any.fromFunction3(createParseSourceSpan))
-  
     __obj.asInstanceOf[CompilerFacade]
   }
 }

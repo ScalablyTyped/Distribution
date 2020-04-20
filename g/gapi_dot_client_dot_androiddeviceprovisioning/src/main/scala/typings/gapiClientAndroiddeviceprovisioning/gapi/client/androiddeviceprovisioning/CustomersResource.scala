@@ -27,7 +27,6 @@ object CustomersResource {
   @scala.inline
   def apply(create: AnonAlt => Request_[Company], list: AnonBearertoken => Request_[ListCustomersResponse]): CustomersResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[CustomersResource]
   }
 }

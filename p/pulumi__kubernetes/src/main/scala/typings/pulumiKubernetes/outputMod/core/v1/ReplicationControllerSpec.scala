@@ -46,7 +46,6 @@ object ReplicationControllerSpec {
     template: PodTemplateSpec
   ): ReplicationControllerSpec = {
     val __obj = js.Dynamic.literal(minReadySeconds = minReadySeconds.asInstanceOf[js.Any], replicas = replicas.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplicationControllerSpec]
   }
 }

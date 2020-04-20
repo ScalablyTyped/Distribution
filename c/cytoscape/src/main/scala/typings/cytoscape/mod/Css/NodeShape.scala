@@ -39,48 +39,46 @@ trait NodeShape extends js.Object
 
 object NodeShape {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def diamond: typings.cytoscape.cytoscapeStrings.diamond = "diamond".asInstanceOf[typings.cytoscape.cytoscapeStrings.diamond]
   @scala.inline
-  def diamond: typings.cytoscape.cytoscapeStrings.diamond = this.cast("diamond")
+  def ellipse: typings.cytoscape.cytoscapeStrings.ellipse = "ellipse".asInstanceOf[typings.cytoscape.cytoscapeStrings.ellipse]
   @scala.inline
-  def ellipse: typings.cytoscape.cytoscapeStrings.ellipse = this.cast("ellipse")
+  def heptagon: typings.cytoscape.cytoscapeStrings.heptagon = "heptagon".asInstanceOf[typings.cytoscape.cytoscapeStrings.heptagon]
   @scala.inline
-  def heptagon: typings.cytoscape.cytoscapeStrings.heptagon = this.cast("heptagon")
+  def hexagon: typings.cytoscape.cytoscapeStrings.hexagon = "hexagon".asInstanceOf[typings.cytoscape.cytoscapeStrings.hexagon]
   @scala.inline
-  def hexagon: typings.cytoscape.cytoscapeStrings.hexagon = this.cast("hexagon")
+  def octagon: typings.cytoscape.cytoscapeStrings.octagon = "octagon".asInstanceOf[typings.cytoscape.cytoscapeStrings.octagon]
   @scala.inline
-  def octagon: typings.cytoscape.cytoscapeStrings.octagon = this.cast("octagon")
+  def pentagon: typings.cytoscape.cytoscapeStrings.pentagon = "pentagon".asInstanceOf[typings.cytoscape.cytoscapeStrings.pentagon]
   @scala.inline
-  def pentagon: typings.cytoscape.cytoscapeStrings.pentagon = this.cast("pentagon")
+  def polygon: typings.cytoscape.cytoscapeStrings.polygon = "polygon".asInstanceOf[typings.cytoscape.cytoscapeStrings.polygon]
   @scala.inline
-  def polygon: typings.cytoscape.cytoscapeStrings.polygon = this.cast("polygon")
+  def rectangle: typings.cytoscape.cytoscapeStrings.rectangle = "rectangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.rectangle]
   @scala.inline
-  def rectangle: typings.cytoscape.cytoscapeStrings.rectangle = this.cast("rectangle")
+  def rhomboid: typings.cytoscape.cytoscapeStrings.rhomboid = "rhomboid".asInstanceOf[typings.cytoscape.cytoscapeStrings.rhomboid]
   @scala.inline
-  def rhomboid: typings.cytoscape.cytoscapeStrings.rhomboid = this.cast("rhomboid")
+  def `round-diamond`: typings.cytoscape.cytoscapeStrings.`round-diamond` = "round-diamond".asInstanceOf[typings.cytoscape.cytoscapeStrings.`round-diamond`]
   @scala.inline
-  def `round-diamond`: typings.cytoscape.cytoscapeStrings.`round-diamond` = this.cast("round-diamond")
+  def `round-heptagon`: typings.cytoscape.cytoscapeStrings.`round-heptagon` = "round-heptagon".asInstanceOf[typings.cytoscape.cytoscapeStrings.`round-heptagon`]
   @scala.inline
-  def `round-heptagon`: typings.cytoscape.cytoscapeStrings.`round-heptagon` = this.cast("round-heptagon")
+  def `round-hexagon`: typings.cytoscape.cytoscapeStrings.`round-hexagon` = "round-hexagon".asInstanceOf[typings.cytoscape.cytoscapeStrings.`round-hexagon`]
   @scala.inline
-  def `round-hexagon`: typings.cytoscape.cytoscapeStrings.`round-hexagon` = this.cast("round-hexagon")
+  def `round-octagon`: typings.cytoscape.cytoscapeStrings.`round-octagon` = "round-octagon".asInstanceOf[typings.cytoscape.cytoscapeStrings.`round-octagon`]
   @scala.inline
-  def `round-octagon`: typings.cytoscape.cytoscapeStrings.`round-octagon` = this.cast("round-octagon")
+  def `round-pentagon`: typings.cytoscape.cytoscapeStrings.`round-pentagon` = "round-pentagon".asInstanceOf[typings.cytoscape.cytoscapeStrings.`round-pentagon`]
   @scala.inline
-  def `round-pentagon`: typings.cytoscape.cytoscapeStrings.`round-pentagon` = this.cast("round-pentagon")
+  def `round-rectangle`: typings.cytoscape.cytoscapeStrings.`round-rectangle` = "round-rectangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.`round-rectangle`]
   @scala.inline
-  def `round-rectangle`: typings.cytoscape.cytoscapeStrings.`round-rectangle` = this.cast("round-rectangle")
+  def `round-tag`: typings.cytoscape.cytoscapeStrings.`round-tag` = "round-tag".asInstanceOf[typings.cytoscape.cytoscapeStrings.`round-tag`]
   @scala.inline
-  def `round-tag`: typings.cytoscape.cytoscapeStrings.`round-tag` = this.cast("round-tag")
+  def `round-triangle`: typings.cytoscape.cytoscapeStrings.`round-triangle` = "round-triangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.`round-triangle`]
   @scala.inline
-  def `round-triangle`: typings.cytoscape.cytoscapeStrings.`round-triangle` = this.cast("round-triangle")
+  def roundrectangle: typings.cytoscape.cytoscapeStrings.roundrectangle = "roundrectangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.roundrectangle]
   @scala.inline
-  def roundrectangle: typings.cytoscape.cytoscapeStrings.roundrectangle = this.cast("roundrectangle")
+  def star: typings.cytoscape.cytoscapeStrings.star = "star".asInstanceOf[typings.cytoscape.cytoscapeStrings.star]
   @scala.inline
-  def star: typings.cytoscape.cytoscapeStrings.star = this.cast("star")
+  def triangle: typings.cytoscape.cytoscapeStrings.triangle = "triangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.triangle]
   @scala.inline
-  def triangle: typings.cytoscape.cytoscapeStrings.triangle = this.cast("triangle")
-  @scala.inline
-  def vee: typings.cytoscape.cytoscapeStrings.vee = this.cast("vee")
+  def vee: typings.cytoscape.cytoscapeStrings.vee = "vee".asInstanceOf[typings.cytoscape.cytoscapeStrings.vee]
 }
 

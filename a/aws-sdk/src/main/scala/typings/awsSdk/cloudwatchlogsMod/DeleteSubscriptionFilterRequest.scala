@@ -20,7 +20,6 @@ object DeleteSubscriptionFilterRequest {
   @scala.inline
   def apply(filterName: FilterName, logGroupName: LogGroupName): DeleteSubscriptionFilterRequest = {
     val __obj = js.Dynamic.literal(filterName = filterName.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSubscriptionFilterRequest]
   }
 }

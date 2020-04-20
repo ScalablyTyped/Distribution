@@ -16,7 +16,6 @@ object HumanLoopInput {
   @scala.inline
   def apply(InputContent: InputContent): HumanLoopInput = {
     val __obj = js.Dynamic.literal(InputContent = InputContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HumanLoopInput]
   }
 }

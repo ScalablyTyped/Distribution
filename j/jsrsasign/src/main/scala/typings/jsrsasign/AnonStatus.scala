@@ -14,7 +14,6 @@ object AnonStatus {
   @scala.inline
   def apply(status: AnonFailinfo, tst: ASN1Object): AnonStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], tst = tst.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStatus]
   }
 }

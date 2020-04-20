@@ -13,7 +13,6 @@ object JQueryStatic {
   @scala.inline
   def apply(browser: Matchs): JQueryStatic = {
     val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

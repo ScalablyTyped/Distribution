@@ -24,20 +24,18 @@ trait MsoFileFindSortBy extends js.Object
 
 object MsoFileFindSortBy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoFileFindSortbyAuthor: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoFileFindSortbyAuthor: `1` = this.cast(1)
+  def msoFileFindSortbyDateCreated: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoFileFindSortbyDateCreated: `2` = this.cast(2)
+  def msoFileFindSortbyDateSaved: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoFileFindSortbyDateSaved: `4` = this.cast(4)
+  def msoFileFindSortbyFileName: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoFileFindSortbyFileName: `5` = this.cast(5)
+  def msoFileFindSortbyLastSavedBy: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoFileFindSortbyLastSavedBy: `3` = this.cast(3)
+  def msoFileFindSortbySize: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoFileFindSortbySize: `6` = this.cast(6)
-  @scala.inline
-  def msoFileFindSortbyTitle: `7` = this.cast(7)
+  def msoFileFindSortbyTitle: `7` = 7.asInstanceOf[`7`]
 }
 

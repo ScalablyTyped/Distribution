@@ -12,7 +12,6 @@ object Typeofxhttp {
   @scala.inline
   def apply(xhttp_reply: (Double, String, String, String) => Double): Typeofxhttp = {
     val __obj = js.Dynamic.literal(xhttp_reply = js.Any.fromFunction4(xhttp_reply))
-  
     __obj.asInstanceOf[Typeofxhttp]
   }
 }

@@ -20,7 +20,6 @@ object DescribeConfigurationRevisionRequest {
   @scala.inline
   def apply(ConfigurationId: string, ConfigurationRevision: string): DescribeConfigurationRevisionRequest = {
     val __obj = js.Dynamic.literal(ConfigurationId = ConfigurationId.asInstanceOf[js.Any], ConfigurationRevision = ConfigurationRevision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeConfigurationRevisionRequest]
   }
 }

@@ -12,7 +12,6 @@ object ResponseLike {
   @scala.inline
   def apply(getHeader: String => js.UndefOr[Double | String | js.Array[String]]): ResponseLike = {
     val __obj = js.Dynamic.literal(getHeader = js.Any.fromFunction1(getHeader))
-  
     __obj.asInstanceOf[ResponseLike]
   }
 }

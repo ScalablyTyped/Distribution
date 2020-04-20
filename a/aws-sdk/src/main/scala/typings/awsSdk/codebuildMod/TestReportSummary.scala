@@ -24,7 +24,6 @@ object TestReportSummary {
   @scala.inline
   def apply(durationInNanoSeconds: WrapperLong, statusCounts: ReportStatusCounts, total: WrapperInt): TestReportSummary = {
     val __obj = js.Dynamic.literal(durationInNanoSeconds = durationInNanoSeconds.asInstanceOf[js.Any], statusCounts = statusCounts.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestReportSummary]
   }
 }

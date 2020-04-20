@@ -31,7 +31,6 @@ object ChatRoomInfo {
   @scala.inline
   def apply(features: Double, info: ChatRoomInfo, room: String, room_name: String): ChatRoomInfo = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], room_name = room_name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChatRoomInfo]
   }
 }

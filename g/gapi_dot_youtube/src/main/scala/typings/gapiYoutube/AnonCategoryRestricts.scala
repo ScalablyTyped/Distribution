@@ -19,7 +19,6 @@ object AnonCategoryRestricts {
   @scala.inline
   def apply(categoryRestricts: js.Array[String], tag: String): AnonCategoryRestricts = {
     val __obj = js.Dynamic.literal(categoryRestricts = categoryRestricts.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCategoryRestricts]
   }
 }

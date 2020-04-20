@@ -24,10 +24,8 @@ trait PaymentMethodTokenizationType extends js.Object
 
 object PaymentMethodTokenizationType {
   @scala.inline
-  def DIRECT: typings.googlepay.googlepayStrings.DIRECT = this.cast("DIRECT")
+  def DIRECT: typings.googlepay.googlepayStrings.DIRECT = "DIRECT".asInstanceOf[typings.googlepay.googlepayStrings.DIRECT]
   @scala.inline
-  def PAYMENT_GATEWAY: typings.googlepay.googlepayStrings.PAYMENT_GATEWAY = this.cast("PAYMENT_GATEWAY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PAYMENT_GATEWAY: typings.googlepay.googlepayStrings.PAYMENT_GATEWAY = "PAYMENT_GATEWAY".asInstanceOf[typings.googlepay.googlepayStrings.PAYMENT_GATEWAY]
 }
 

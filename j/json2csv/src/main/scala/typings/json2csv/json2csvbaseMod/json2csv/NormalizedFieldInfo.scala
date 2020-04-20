@@ -13,7 +13,6 @@ object NormalizedFieldInfo {
   @scala.inline
   def apply[T](label: String, value: FieldValueCallback[T]): NormalizedFieldInfo[T] = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NormalizedFieldInfo[T]]
   }
 }

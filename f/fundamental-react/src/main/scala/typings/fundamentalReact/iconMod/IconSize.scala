@@ -14,14 +14,12 @@ trait IconSize extends js.Object
 
 object IconSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def l: typings.fundamentalReact.fundamentalReactStrings.l = "l".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.l]
   @scala.inline
-  def l: typings.fundamentalReact.fundamentalReactStrings.l = this.cast("l")
+  def m: typings.fundamentalReact.fundamentalReactStrings.m = "m".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.m]
   @scala.inline
-  def m: typings.fundamentalReact.fundamentalReactStrings.m = this.cast("m")
+  def s: typings.fundamentalReact.fundamentalReactStrings.s = "s".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.s]
   @scala.inline
-  def s: typings.fundamentalReact.fundamentalReactStrings.s = this.cast("s")
-  @scala.inline
-  def xl: typings.fundamentalReact.fundamentalReactStrings.xl = this.cast("xl")
+  def xl: typings.fundamentalReact.fundamentalReactStrings.xl = "xl".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.xl]
 }
 

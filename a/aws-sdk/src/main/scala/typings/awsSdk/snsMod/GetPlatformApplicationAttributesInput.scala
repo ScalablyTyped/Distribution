@@ -16,7 +16,6 @@ object GetPlatformApplicationAttributesInput {
   @scala.inline
   def apply(PlatformApplicationArn: String): GetPlatformApplicationAttributesInput = {
     val __obj = js.Dynamic.literal(PlatformApplicationArn = PlatformApplicationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPlatformApplicationAttributesInput]
   }
 }

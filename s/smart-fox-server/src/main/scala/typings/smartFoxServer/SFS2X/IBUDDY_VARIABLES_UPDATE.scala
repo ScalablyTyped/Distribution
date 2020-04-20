@@ -15,7 +15,6 @@ object IBUDDY_VARIABLES_UPDATE {
   @scala.inline
   def apply(buddy: SFSBuddy, changedVars: js.Array[String], isItMe: Boolean): IBUDDY_VARIABLES_UPDATE = {
     val __obj = js.Dynamic.literal(buddy = buddy.asInstanceOf[js.Any], changedVars = changedVars.asInstanceOf[js.Any], isItMe = isItMe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBUDDY_VARIABLES_UPDATE]
   }
 }

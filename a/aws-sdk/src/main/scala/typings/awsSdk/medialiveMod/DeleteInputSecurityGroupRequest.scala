@@ -16,7 +16,6 @@ object DeleteInputSecurityGroupRequest {
   @scala.inline
   def apply(InputSecurityGroupId: string): DeleteInputSecurityGroupRequest = {
     val __obj = js.Dynamic.literal(InputSecurityGroupId = InputSecurityGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteInputSecurityGroupRequest]
   }
 }

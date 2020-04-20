@@ -14,7 +14,6 @@ object ChannelDelete {
   @scala.inline
   def apply(cid: Double, invoker: TeamSpeakClient): ChannelDelete = {
     val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], invoker = invoker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelDelete]
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   trait Tagged extends js.Object {
-    @JSName(scala.scalajs.js.Symbol.toStringTag)
+    @JSName(js.Symbol.toStringTag)
     var toStringTag: String = js.native
   }
   

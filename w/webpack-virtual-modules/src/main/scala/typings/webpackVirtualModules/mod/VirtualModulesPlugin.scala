@@ -26,7 +26,6 @@ object VirtualModulesPlugin {
   @scala.inline
   def apply(apply: Compiler_ => Unit, writeModule: (String, String) => Unit): VirtualModulesPlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), writeModule = js.Any.fromFunction2(writeModule))
-  
     __obj.asInstanceOf[VirtualModulesPlugin]
   }
 }

@@ -20,7 +20,6 @@ object DescribeMultiplexProgramRequest {
   @scala.inline
   def apply(MultiplexId: string, ProgramName: string): DescribeMultiplexProgramRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any], ProgramName = ProgramName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeMultiplexProgramRequest]
   }
 }

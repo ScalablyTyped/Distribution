@@ -16,7 +16,6 @@ object OriginGroupFailoverCriteria {
   @scala.inline
   def apply(StatusCodes: StatusCodes): OriginGroupFailoverCriteria = {
     val __obj = js.Dynamic.literal(StatusCodes = StatusCodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OriginGroupFailoverCriteria]
   }
 }

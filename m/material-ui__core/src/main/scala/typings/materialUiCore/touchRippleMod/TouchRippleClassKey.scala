@@ -17,20 +17,18 @@ trait TouchRippleClassKey extends js.Object
 
 object TouchRippleClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def child: typings.materialUiCore.materialUiCoreStrings.child = "child".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.child]
   @scala.inline
-  def child: typings.materialUiCore.materialUiCoreStrings.child = this.cast("child")
+  def childLeaving: typings.materialUiCore.materialUiCoreStrings.childLeaving = "childLeaving".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.childLeaving]
   @scala.inline
-  def childLeaving: typings.materialUiCore.materialUiCoreStrings.childLeaving = this.cast("childLeaving")
+  def childPulsate: typings.materialUiCore.materialUiCoreStrings.childPulsate = "childPulsate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.childPulsate]
   @scala.inline
-  def childPulsate: typings.materialUiCore.materialUiCoreStrings.childPulsate = this.cast("childPulsate")
+  def ripple: typings.materialUiCore.materialUiCoreStrings.ripple = "ripple".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.ripple]
   @scala.inline
-  def ripple: typings.materialUiCore.materialUiCoreStrings.ripple = this.cast("ripple")
+  def ripplePulsate: typings.materialUiCore.materialUiCoreStrings.ripplePulsate = "ripplePulsate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.ripplePulsate]
   @scala.inline
-  def ripplePulsate: typings.materialUiCore.materialUiCoreStrings.ripplePulsate = this.cast("ripplePulsate")
+  def rippleVisible: typings.materialUiCore.materialUiCoreStrings.rippleVisible = "rippleVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rippleVisible]
   @scala.inline
-  def rippleVisible: typings.materialUiCore.materialUiCoreStrings.rippleVisible = this.cast("rippleVisible")
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

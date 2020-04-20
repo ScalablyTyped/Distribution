@@ -47,10 +47,8 @@ trait BillingAddressFormat extends js.Object
 
 object BillingAddressFormat {
   @scala.inline
-  def FULL: typings.googlepay.googlepayStrings.FULL = this.cast("FULL")
+  def FULL: typings.googlepay.googlepayStrings.FULL = "FULL".asInstanceOf[typings.googlepay.googlepayStrings.FULL]
   @scala.inline
-  def MIN: typings.googlepay.googlepayStrings.MIN = this.cast("MIN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MIN: typings.googlepay.googlepayStrings.MIN = "MIN".asInstanceOf[typings.googlepay.googlepayStrings.MIN]
 }
 

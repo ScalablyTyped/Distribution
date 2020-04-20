@@ -15,7 +15,6 @@ object ActivityCollection {
   @scala.inline
   def apply(query: QueryDriveActivityRequest => QueryDriveActivityResponse): ActivityCollection = {
     val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[ActivityCollection]
   }
 }

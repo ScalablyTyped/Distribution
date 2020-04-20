@@ -16,7 +16,6 @@ object ReadPipelineRequest {
   @scala.inline
   def apply(Id: Id): ReadPipelineRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadPipelineRequest]
   }
 }

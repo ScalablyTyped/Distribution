@@ -24,7 +24,6 @@ object SigV4Authorization {
   @scala.inline
   def apply(roleArn: AwsArn, serviceName: ServiceName, signingRegion: SigningRegion): SigV4Authorization = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], signingRegion = signingRegion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SigV4Authorization]
   }
 }

@@ -26,38 +26,36 @@ trait CssMixBlendMode extends js.Object
 
 object CssMixBlendMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def color: typings.nivoCore.nivoCoreStrings.color = "color".asInstanceOf[typings.nivoCore.nivoCoreStrings.color]
   @scala.inline
-  def color: typings.nivoCore.nivoCoreStrings.color = this.cast("color")
+  def `color-burn`: typings.nivoCore.nivoCoreStrings.`color-burn` = "color-burn".asInstanceOf[typings.nivoCore.nivoCoreStrings.`color-burn`]
   @scala.inline
-  def `color-burn`: typings.nivoCore.nivoCoreStrings.`color-burn` = this.cast("color-burn")
+  def `color-dodge`: typings.nivoCore.nivoCoreStrings.`color-dodge` = "color-dodge".asInstanceOf[typings.nivoCore.nivoCoreStrings.`color-dodge`]
   @scala.inline
-  def `color-dodge`: typings.nivoCore.nivoCoreStrings.`color-dodge` = this.cast("color-dodge")
+  def darken: typings.nivoCore.nivoCoreStrings.darken = "darken".asInstanceOf[typings.nivoCore.nivoCoreStrings.darken]
   @scala.inline
-  def darken: typings.nivoCore.nivoCoreStrings.darken = this.cast("darken")
+  def difference: typings.nivoCore.nivoCoreStrings.difference = "difference".asInstanceOf[typings.nivoCore.nivoCoreStrings.difference]
   @scala.inline
-  def difference: typings.nivoCore.nivoCoreStrings.difference = this.cast("difference")
+  def exclusion: typings.nivoCore.nivoCoreStrings.exclusion = "exclusion".asInstanceOf[typings.nivoCore.nivoCoreStrings.exclusion]
   @scala.inline
-  def exclusion: typings.nivoCore.nivoCoreStrings.exclusion = this.cast("exclusion")
+  def `hard-light`: typings.nivoCore.nivoCoreStrings.`hard-light` = "hard-light".asInstanceOf[typings.nivoCore.nivoCoreStrings.`hard-light`]
   @scala.inline
-  def `hard-light`: typings.nivoCore.nivoCoreStrings.`hard-light` = this.cast("hard-light")
+  def hue: typings.nivoCore.nivoCoreStrings.hue = "hue".asInstanceOf[typings.nivoCore.nivoCoreStrings.hue]
   @scala.inline
-  def hue: typings.nivoCore.nivoCoreStrings.hue = this.cast("hue")
+  def lighten: typings.nivoCore.nivoCoreStrings.lighten = "lighten".asInstanceOf[typings.nivoCore.nivoCoreStrings.lighten]
   @scala.inline
-  def lighten: typings.nivoCore.nivoCoreStrings.lighten = this.cast("lighten")
+  def luminosity: typings.nivoCore.nivoCoreStrings.luminosity = "luminosity".asInstanceOf[typings.nivoCore.nivoCoreStrings.luminosity]
   @scala.inline
-  def luminosity: typings.nivoCore.nivoCoreStrings.luminosity = this.cast("luminosity")
+  def multiply: typings.nivoCore.nivoCoreStrings.multiply = "multiply".asInstanceOf[typings.nivoCore.nivoCoreStrings.multiply]
   @scala.inline
-  def multiply: typings.nivoCore.nivoCoreStrings.multiply = this.cast("multiply")
+  def normal: typings.nivoCore.nivoCoreStrings.normal = "normal".asInstanceOf[typings.nivoCore.nivoCoreStrings.normal]
   @scala.inline
-  def normal: typings.nivoCore.nivoCoreStrings.normal = this.cast("normal")
+  def overlay: typings.nivoCore.nivoCoreStrings.overlay = "overlay".asInstanceOf[typings.nivoCore.nivoCoreStrings.overlay]
   @scala.inline
-  def overlay: typings.nivoCore.nivoCoreStrings.overlay = this.cast("overlay")
+  def saturation: typings.nivoCore.nivoCoreStrings.saturation = "saturation".asInstanceOf[typings.nivoCore.nivoCoreStrings.saturation]
   @scala.inline
-  def saturation: typings.nivoCore.nivoCoreStrings.saturation = this.cast("saturation")
+  def screen: typings.nivoCore.nivoCoreStrings.screen = "screen".asInstanceOf[typings.nivoCore.nivoCoreStrings.screen]
   @scala.inline
-  def screen: typings.nivoCore.nivoCoreStrings.screen = this.cast("screen")
-  @scala.inline
-  def `soft-light`: typings.nivoCore.nivoCoreStrings.`soft-light` = this.cast("soft-light")
+  def `soft-light`: typings.nivoCore.nivoCoreStrings.`soft-light` = "soft-light".asInstanceOf[typings.nivoCore.nivoCoreStrings.`soft-light`]
 }
 

@@ -20,7 +20,6 @@ object UnarchiveFindingsRequest {
   @scala.inline
   def apply(DetectorId: DetectorId, FindingIds: FindingIds): UnarchiveFindingsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], FindingIds = FindingIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnarchiveFindingsRequest]
   }
 }

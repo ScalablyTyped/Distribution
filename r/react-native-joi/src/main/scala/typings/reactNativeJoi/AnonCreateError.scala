@@ -24,7 +24,6 @@ object AnonCreateError {
   @scala.inline
   def apply(createError: (String, Context, State, ValidationOptions) => Err): AnonCreateError = {
     val __obj = js.Dynamic.literal(createError = js.Any.fromFunction4(createError))
-  
     __obj.asInstanceOf[AnonCreateError]
   }
 }

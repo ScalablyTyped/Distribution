@@ -23,7 +23,6 @@ object IPrintTaskOptionDetails {
     options: IMapView[String, IPrintOptionDetails]
   ): IPrintTaskOptionDetails = {
     val __obj = js.Dynamic.literal(createItemListOption = js.Any.fromFunction2(createItemListOption), createTextOption = js.Any.fromFunction2(createTextOption), onbeginvalidation = onbeginvalidation.asInstanceOf[js.Any], onoptionchanged = onoptionchanged.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPrintTaskOptionDetails]
   }
 }

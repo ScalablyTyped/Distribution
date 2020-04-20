@@ -16,7 +16,6 @@ object AnonLabelLayout {
   @scala.inline
   def apply(id: js.Any, labelLayout: LabelLayout, x: Double, y: Double): AnonLabelLayout = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], labelLayout = labelLayout.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLabelLayout]
   }
 }

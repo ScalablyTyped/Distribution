@@ -29,9 +29,9 @@ class ActionButton protected () extends Button {
   ) = this()
   @JSName("model")
   var model_FActionButton: IModel = js.native
-  def action(): ClientAction = js.native
+  def action: ClientAction = js.native
   def action(newValue: ClientAction): js.Any = js.native
-  def disabledDuringAction(): Boolean = js.native
+  def disabledDuringAction: Boolean = js.native
   def disabledDuringAction(newValue: Boolean): js.Any = js.native
 }
 

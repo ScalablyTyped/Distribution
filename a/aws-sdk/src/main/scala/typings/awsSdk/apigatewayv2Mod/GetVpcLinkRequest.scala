@@ -16,7 +16,6 @@ object GetVpcLinkRequest {
   @scala.inline
   def apply(VpcLinkId: string): GetVpcLinkRequest = {
     val __obj = js.Dynamic.literal(VpcLinkId = VpcLinkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVpcLinkRequest]
   }
 }

@@ -22,7 +22,6 @@ object WindowInfo {
     url: String
   ): WindowInfo = {
     val __obj = js.Dynamic.literal(canNavigateBack = canNavigateBack.asInstanceOf[js.Any], canNavigateForward = canNavigateForward.asInstanceOf[js.Any], preloadScripts = preloadScripts.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WindowInfo]
   }
 }

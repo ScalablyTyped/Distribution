@@ -20,7 +20,6 @@ object AssociatePackageRequest {
   @scala.inline
   def apply(DomainName: DomainName, PackageID: PackageID): AssociatePackageRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], PackageID = PackageID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociatePackageRequest]
   }
 }

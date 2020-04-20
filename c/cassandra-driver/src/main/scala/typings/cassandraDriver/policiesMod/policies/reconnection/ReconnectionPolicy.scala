@@ -18,7 +18,6 @@ object ReconnectionPolicy {
     newSchedule: () => Iterator[Double, _, js.UndefOr[scala.Nothing]]
   ): ReconnectionPolicy = {
     val __obj = js.Dynamic.literal(getOptions = js.Any.fromFunction0(getOptions), newSchedule = js.Any.fromFunction0(newSchedule))
-  
     __obj.asInstanceOf[ReconnectionPolicy]
   }
 }

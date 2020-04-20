@@ -13,7 +13,6 @@ object Navigator {
   @scala.inline
   def apply(globalization: Globalization): Navigator = {
     val __obj = js.Dynamic.literal(globalization = globalization.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Navigator]
   }
 }

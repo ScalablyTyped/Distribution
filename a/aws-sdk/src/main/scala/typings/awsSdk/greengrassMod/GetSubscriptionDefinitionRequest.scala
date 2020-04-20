@@ -16,7 +16,6 @@ object GetSubscriptionDefinitionRequest {
   @scala.inline
   def apply(SubscriptionDefinitionId: string): GetSubscriptionDefinitionRequest = {
     val __obj = js.Dynamic.literal(SubscriptionDefinitionId = SubscriptionDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSubscriptionDefinitionRequest]
   }
 }

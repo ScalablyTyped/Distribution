@@ -18,7 +18,6 @@ object LimitRangeSpec {
   @scala.inline
   def apply(limits: js.Array[LimitRangeItem]): LimitRangeSpec = {
     val __obj = js.Dynamic.literal(limits = limits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LimitRangeSpec]
   }
 }

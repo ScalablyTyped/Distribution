@@ -17,7 +17,6 @@ object PropsWithStyles {
   @scala.inline
   def apply(getStyles: (String, js.Any) => js.Object): PropsWithStyles = {
     val __obj = js.Dynamic.literal(getStyles = js.Any.fromFunction2(getStyles))
-  
     __obj.asInstanceOf[PropsWithStyles]
   }
 }

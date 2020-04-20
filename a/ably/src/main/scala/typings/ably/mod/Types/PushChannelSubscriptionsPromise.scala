@@ -22,7 +22,6 @@ object PushChannelSubscriptionsPromise {
     save: PushChannelSubscription => js.Promise[PushChannelSubscription]
   ): PushChannelSubscriptionsPromise = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), listChannels = js.Any.fromFunction1(listChannels), remove = js.Any.fromFunction1(remove), removeWhere = js.Any.fromFunction1(removeWhere), save = js.Any.fromFunction1(save))
-  
     __obj.asInstanceOf[PushChannelSubscriptionsPromise]
   }
 }

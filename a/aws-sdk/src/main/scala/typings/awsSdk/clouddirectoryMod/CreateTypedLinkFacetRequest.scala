@@ -20,7 +20,6 @@ object CreateTypedLinkFacetRequest {
   @scala.inline
   def apply(Facet: TypedLinkFacet, SchemaArn: Arn): CreateTypedLinkFacetRequest = {
     val __obj = js.Dynamic.literal(Facet = Facet.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTypedLinkFacetRequest]
   }
 }

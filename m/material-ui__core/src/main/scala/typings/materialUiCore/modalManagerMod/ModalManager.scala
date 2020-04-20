@@ -15,7 +15,6 @@ object ModalManager {
   @scala.inline
   def apply(add: (js.Any, js.Any) => Double, isTopModal: js.Any => Boolean, remove: js.Any => Unit): ModalManager = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), isTopModal = js.Any.fromFunction1(isTopModal), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[ModalManager]
   }
 }

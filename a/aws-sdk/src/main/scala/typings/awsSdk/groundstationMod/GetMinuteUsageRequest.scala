@@ -20,7 +20,6 @@ object GetMinuteUsageRequest {
   @scala.inline
   def apply(month: Integer, year: Integer): GetMinuteUsageRequest = {
     val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMinuteUsageRequest]
   }
 }

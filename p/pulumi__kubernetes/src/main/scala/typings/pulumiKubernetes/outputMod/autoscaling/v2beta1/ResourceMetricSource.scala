@@ -35,7 +35,6 @@ object ResourceMetricSource {
   @scala.inline
   def apply(name: String, targetAverageUtilization: Double, targetAverageValue: String): ResourceMetricSource = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], targetAverageUtilization = targetAverageUtilization.asInstanceOf[js.Any], targetAverageValue = targetAverageValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceMetricSource]
   }
 }

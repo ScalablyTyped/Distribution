@@ -12,7 +12,6 @@ object Issue {
   @scala.inline
   def apply(issue: IssueRecord): Issue = {
     val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Issue]
   }
 }

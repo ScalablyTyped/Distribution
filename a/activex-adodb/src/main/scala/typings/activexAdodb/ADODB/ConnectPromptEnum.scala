@@ -18,14 +18,12 @@ trait ConnectPromptEnum extends js.Object
 
 object ConnectPromptEnum {
   @scala.inline
-  def adPromptAlways: `1` = this.cast(1)
+  def adPromptAlways: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adPromptComplete: `2` = this.cast(2)
+  def adPromptComplete: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adPromptCompleteRequired: `3` = this.cast(3)
+  def adPromptCompleteRequired: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def adPromptNever: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adPromptNever: `4` = 4.asInstanceOf[`4`]
 }
 

@@ -23,7 +23,6 @@ object GetLaunchTemplateInstanceMarketOptionSpotOption {
     validUntil: String
   ): GetLaunchTemplateInstanceMarketOptionSpotOption = {
     val __obj = js.Dynamic.literal(blockDurationMinutes = blockDurationMinutes.asInstanceOf[js.Any], instanceInterruptionBehavior = instanceInterruptionBehavior.asInstanceOf[js.Any], maxPrice = maxPrice.asInstanceOf[js.Any], spotInstanceType = spotInstanceType.asInstanceOf[js.Any], validUntil = validUntil.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchTemplateInstanceMarketOptionSpotOption]
   }
 }

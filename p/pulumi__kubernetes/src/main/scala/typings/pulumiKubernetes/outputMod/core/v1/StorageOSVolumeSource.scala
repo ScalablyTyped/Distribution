@@ -48,7 +48,6 @@ object StorageOSVolumeSource {
     volumeNamespace: String
   ): StorageOSVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any], volumeName = volumeName.asInstanceOf[js.Any], volumeNamespace = volumeNamespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StorageOSVolumeSource]
   }
 }

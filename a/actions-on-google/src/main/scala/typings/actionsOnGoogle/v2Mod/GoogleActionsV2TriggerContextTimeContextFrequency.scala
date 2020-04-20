@@ -13,12 +13,10 @@ trait GoogleActionsV2TriggerContextTimeContextFrequency extends js.Object
 
 object GoogleActionsV2TriggerContextTimeContextFrequency {
   @scala.inline
-  def DAILY: typings.actionsOnGoogle.actionsOnGoogleStrings.DAILY = this.cast("DAILY")
+  def DAILY: typings.actionsOnGoogle.actionsOnGoogleStrings.DAILY = "DAILY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DAILY]
   @scala.inline
-  def FREQUENCY_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.FREQUENCY_UNSPECIFIED = this.cast("FREQUENCY_UNSPECIFIED")
+  def FREQUENCY_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.FREQUENCY_UNSPECIFIED = "FREQUENCY_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FREQUENCY_UNSPECIFIED]
   @scala.inline
-  def ROUTINES: typings.actionsOnGoogle.actionsOnGoogleStrings.ROUTINES = this.cast("ROUTINES")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ROUTINES: typings.actionsOnGoogle.actionsOnGoogleStrings.ROUTINES = "ROUTINES".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ROUTINES]
 }
 

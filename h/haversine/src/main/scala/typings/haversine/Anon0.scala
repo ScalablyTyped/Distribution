@@ -13,7 +13,6 @@ object Anon0 {
   @scala.inline
   def apply(format: LeftcurlybracketlatCommalonRightcurlybracket): Anon0 = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon0]
   }
 }

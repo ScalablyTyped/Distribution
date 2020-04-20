@@ -23,12 +23,12 @@ class RESTSerializer () extends JSONSerializer {
     * request. By default, the RESTSerializer returns a camelized version of the
     * model's name.
     */
-  def payloadKeyFromModelName[K /* <: String */](modelName: K): String = js.native
+  def payloadKeyFromModelName[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): String = js.native
   /**
     * `payloadTypeFromModelName` can be used to change the mapping for the type in
     * the payload, taken from the model name.
     */
-  def payloadTypeFromModelName[K /* <: String */](modelName: K): String = js.native
+  def payloadTypeFromModelName[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): String = js.native
   /**
     * This method allows you to push a payload containing top-level
     * collections of records organized per type.
@@ -40,7 +40,7 @@ class RESTSerializer () extends JSONSerializer {
     * By default the REST Serializer sends the modelName of a model, which is a camelized
     * version of the name.
     */
-  def serializeIntoHash[K /* <: String */](hash: js.Object, typeClass: Model, snapshot: Snapshot[K]): js.Any = js.native
-  def serializeIntoHash[K /* <: String */](hash: js.Object, typeClass: Model, snapshot: Snapshot[K], options: js.Object): js.Any = js.native
+  def serializeIntoHash[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](hash: js.Object, typeClass: Model, snapshot: Snapshot[K]): js.Any = js.native
+  def serializeIntoHash[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](hash: js.Object, typeClass: Model, snapshot: Snapshot[K], options: js.Object): js.Any = js.native
 }
 

@@ -17,7 +17,6 @@ object EmailIdentityArgs {
   @scala.inline
   def apply(email: Input[String]): EmailIdentityArgs = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EmailIdentityArgs]
   }
 }

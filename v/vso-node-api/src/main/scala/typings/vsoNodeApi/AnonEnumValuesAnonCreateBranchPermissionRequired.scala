@@ -12,7 +12,6 @@ object AnonEnumValuesAnonCreateBranchPermissionRequired {
   @scala.inline
   def apply(enumValues: AnonCreateBranchPermissionRequired): AnonEnumValuesAnonCreateBranchPermissionRequired = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonCreateBranchPermissionRequired]
   }
 }

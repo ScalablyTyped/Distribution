@@ -18,14 +18,12 @@ trait TYPE extends js.Object
 
 object TYPE {
   @scala.inline
-  def HOSTKEY_LIBSSH2: `2` = this.cast(2)
+  def HOSTKEY_LIBSSH2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def NONE: `0` = this.cast(0)
+  def NONE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def STRARRAY: `3` = this.cast(3)
+  def STRARRAY: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def X509: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def X509: `1` = 1.asInstanceOf[`1`]
 }
 

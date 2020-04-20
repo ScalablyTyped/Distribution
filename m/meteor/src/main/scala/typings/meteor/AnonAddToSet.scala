@@ -21,7 +21,7 @@ trait AnonAddToSet[T] extends js.Object {
   var $addToSet: js.UndefOr[ArraysOrEach[T] with Dictionary[_]] = js.undefined
   @JSName("$currentDate")
   var $currentDate: js.UndefOr[
-    (Partial[Record[String, CurrentDateModifier]]) with Dictionary[CurrentDateModifier]
+    (Partial[Record[/* keyof T */ String, CurrentDateModifier]]) with Dictionary[CurrentDateModifier]
   ] = js.undefined
   @JSName("$inc")
   var $inc: js.UndefOr[(PartialMapTo[T, Double]) with Dictionary[Double]] = js.undefined
@@ -53,7 +53,7 @@ object AnonAddToSet {
   @scala.inline
   def apply[T](
     $addToSet: ArraysOrEach[T] with Dictionary[_] = null,
-    $currentDate: (Partial[Record[String, CurrentDateModifier]]) with Dictionary[CurrentDateModifier] = null,
+    $currentDate: (Partial[Record[/* keyof T */ String, CurrentDateModifier]]) with Dictionary[CurrentDateModifier] = null,
     $inc: (PartialMapTo[T, Double]) with Dictionary[Double] = null,
     $max: (PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double]) = null,
     $min: (PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double]) = null,

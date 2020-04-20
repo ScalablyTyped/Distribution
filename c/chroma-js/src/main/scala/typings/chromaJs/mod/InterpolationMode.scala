@@ -18,22 +18,20 @@ trait InterpolationMode extends js.Object
 
 object InterpolationMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hcl: typings.chromaJs.chromaJsStrings.hcl = "hcl".asInstanceOf[typings.chromaJs.chromaJsStrings.hcl]
   @scala.inline
-  def hcl: typings.chromaJs.chromaJsStrings.hcl = this.cast("hcl")
+  def hsi: typings.chromaJs.chromaJsStrings.hsi = "hsi".asInstanceOf[typings.chromaJs.chromaJsStrings.hsi]
   @scala.inline
-  def hsi: typings.chromaJs.chromaJsStrings.hsi = this.cast("hsi")
+  def hsl: typings.chromaJs.chromaJsStrings.hsl = "hsl".asInstanceOf[typings.chromaJs.chromaJsStrings.hsl]
   @scala.inline
-  def hsl: typings.chromaJs.chromaJsStrings.hsl = this.cast("hsl")
+  def hsv: typings.chromaJs.chromaJsStrings.hsv = "hsv".asInstanceOf[typings.chromaJs.chromaJsStrings.hsv]
   @scala.inline
-  def hsv: typings.chromaJs.chromaJsStrings.hsv = this.cast("hsv")
+  def lab: typings.chromaJs.chromaJsStrings.lab = "lab".asInstanceOf[typings.chromaJs.chromaJsStrings.lab]
   @scala.inline
-  def lab: typings.chromaJs.chromaJsStrings.lab = this.cast("lab")
+  def lch: typings.chromaJs.chromaJsStrings.lch = "lch".asInstanceOf[typings.chromaJs.chromaJsStrings.lch]
   @scala.inline
-  def lch: typings.chromaJs.chromaJsStrings.lch = this.cast("lch")
+  def lrgb: typings.chromaJs.chromaJsStrings.lrgb = "lrgb".asInstanceOf[typings.chromaJs.chromaJsStrings.lrgb]
   @scala.inline
-  def lrgb: typings.chromaJs.chromaJsStrings.lrgb = this.cast("lrgb")
-  @scala.inline
-  def rgb: typings.chromaJs.chromaJsStrings.rgb = this.cast("rgb")
+  def rgb: typings.chromaJs.chromaJsStrings.rgb = "rgb".asInstanceOf[typings.chromaJs.chromaJsStrings.rgb]
 }
 

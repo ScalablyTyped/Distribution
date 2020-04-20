@@ -35,7 +35,6 @@ object RaphaelCubicBezierCurvePointInfo {
     y: Double
   ): RaphaelCubicBezierCurvePointInfo = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaphaelCubicBezierCurvePointInfo]
   }
 }

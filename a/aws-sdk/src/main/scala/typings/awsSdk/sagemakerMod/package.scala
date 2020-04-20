@@ -453,6 +453,7 @@ package object sagemakerMod {
     - typings.awsSdk.awsSdkStrings.ONNX
     - typings.awsSdk.awsSdkStrings.PYTORCH
     - typings.awsSdk.awsSdkStrings.XGBOOST
+    - typings.awsSdk.awsSdkStrings.TFLITE
     - java.lang.String
   */
   type Framework = typings.awsSdk.sagemakerMod._Framework | java.lang.String
@@ -1228,6 +1229,11 @@ package object sagemakerMod {
     - typings.awsSdk.awsSdkStrings.mlDotc5Dot4xlarge
     - typings.awsSdk.awsSdkStrings.mlDotc5Dot9xlarge
     - typings.awsSdk.awsSdkStrings.mlDotc5Dot18xlarge
+    - typings.awsSdk.awsSdkStrings.mlDotc5nDotxlarge
+    - typings.awsSdk.awsSdkStrings.mlDotc5nDot2xlarge
+    - typings.awsSdk.awsSdkStrings.mlDotc5nDot4xlarge
+    - typings.awsSdk.awsSdkStrings.mlDotc5nDot9xlarge
+    - typings.awsSdk.awsSdkStrings.mlDotc5nDot18xlarge
     - java.lang.String
   */
   type TrainingInstanceType = typings.awsSdk.sagemakerMod._TrainingInstanceType | java.lang.String
@@ -1319,6 +1325,8 @@ package object sagemakerMod {
     - typings.awsSdk.awsSdkStrings.InProgress_
     - typings.awsSdk.awsSdkStrings.Completed_
     - typings.awsSdk.awsSdkStrings.Failed_
+    - typings.awsSdk.awsSdkStrings.Stopping_
+    - typings.awsSdk.awsSdkStrings.Stopped_
     - java.lang.String
   */
   type TrialComponentPrimaryStatus = typings.awsSdk.sagemakerMod._TrialComponentPrimaryStatus | java.lang.String

@@ -42,7 +42,6 @@ object JSONPointerWrap {
     walk: js.Function2[/* value */ js.Any, /* key */ String, Unit] => Unit
   ): JSONPointerWrap = {
     val __obj = js.Dynamic.literal(dict = js.Any.fromFunction0(dict), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), walk = js.Any.fromFunction1(walk))
-  
     __obj.asInstanceOf[JSONPointerWrap]
   }
 }

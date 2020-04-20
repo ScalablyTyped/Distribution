@@ -13,7 +13,6 @@ object PickImplserializeForm {
   @scala.inline
   def apply(serializeForm: Boolean): PickImplserializeForm = {
     val __obj = js.Dynamic.literal(serializeForm = serializeForm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplserializeForm]
   }
 }

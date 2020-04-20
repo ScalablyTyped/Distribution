@@ -13,12 +13,10 @@ trait YogaDirection extends js.Object
 
 object YogaDirection {
   @scala.inline
-  def `0`: typings.yogaLayout.yogaLayoutNumbers.`0` = this.cast(0)
+  def `0`: typings.yogaLayout.yogaLayoutNumbers.`0` = 0.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`0`]
   @scala.inline
-  def `1`: typings.yogaLayout.yogaLayoutNumbers.`1` = this.cast(1)
+  def `1`: typings.yogaLayout.yogaLayoutNumbers.`1` = 1.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`1`]
   @scala.inline
-  def `2`: typings.yogaLayout.yogaLayoutNumbers.`2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `2`: typings.yogaLayout.yogaLayoutNumbers.`2` = 2.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`2`]
 }
 

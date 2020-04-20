@@ -12,10 +12,8 @@ trait MigrationDirection extends js.Object
 
 object MigrationDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def down: typings.nodePgMigrate.nodePgMigrateStrings.down = "down".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.down]
   @scala.inline
-  def down: typings.nodePgMigrate.nodePgMigrateStrings.down = this.cast("down")
-  @scala.inline
-  def up: typings.nodePgMigrate.nodePgMigrateStrings.up = this.cast("up")
+  def up: typings.nodePgMigrate.nodePgMigrateStrings.up = "up".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.up]
 }
 

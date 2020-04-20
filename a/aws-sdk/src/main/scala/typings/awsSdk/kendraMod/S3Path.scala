@@ -20,7 +20,6 @@ object S3Path {
   @scala.inline
   def apply(Bucket: S3BucketName, Key: S3ObjectKey): S3Path = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3Path]
   }
 }

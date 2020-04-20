@@ -19,7 +19,6 @@ object NumberConstructor {
   @scala.inline
   def apply(parseInvariant: java.lang.String => Double, parseLocale: java.lang.String => Double): NumberConstructor = {
     val __obj = js.Dynamic.literal(parseInvariant = js.Any.fromFunction1(parseInvariant), parseLocale = js.Any.fromFunction1(parseLocale))
-  
     __obj.asInstanceOf[NumberConstructor]
   }
 }

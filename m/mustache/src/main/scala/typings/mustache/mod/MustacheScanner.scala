@@ -49,7 +49,6 @@ object MustacheScanner {
     tail: String
   ): MustacheScanner = {
     val __obj = js.Dynamic.literal(eos = js.Any.fromFunction0(eos), pos = pos.asInstanceOf[js.Any], scan = js.Any.fromFunction1(scan), scanUntil = js.Any.fromFunction1(scanUntil), string = string.asInstanceOf[js.Any], tail = tail.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MustacheScanner]
   }
 }

@@ -41,7 +41,6 @@ object Depth {
   @scala.inline
   def apply(depth: Double, setDepth: integer => Depth): Depth = {
     val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], setDepth = js.Any.fromFunction1(setDepth))
-  
     __obj.asInstanceOf[Depth]
   }
 }

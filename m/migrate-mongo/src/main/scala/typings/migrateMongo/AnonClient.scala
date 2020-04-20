@@ -14,7 +14,6 @@ object AnonClient {
   @scala.inline
   def apply(client: MongoClient, db: DbcloseMongoClientclose): AnonClient = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClient]
   }
 }

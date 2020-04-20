@@ -13,7 +13,6 @@ object SerializedTokenUser {
   @scala.inline
   def apply(adminToken: String, server: String): SerializedTokenUser = {
     val __obj = js.Dynamic.literal(adminToken = adminToken.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerializedTokenUser]
   }
 }

@@ -16,12 +16,10 @@ trait Attachment
 
 object Attachment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fixed: typings.csstype.csstypeStrings.fixed = "fixed".asInstanceOf[typings.csstype.csstypeStrings.fixed]
   @scala.inline
-  def fixed: typings.csstype.csstypeStrings.fixed = this.cast("fixed")
+  def local: typings.csstype.csstypeStrings.local = "local".asInstanceOf[typings.csstype.csstypeStrings.local]
   @scala.inline
-  def local: typings.csstype.csstypeStrings.local = this.cast("local")
-  @scala.inline
-  def scroll: typings.csstype.csstypeStrings.scroll = this.cast("scroll")
+  def scroll: typings.csstype.csstypeStrings.scroll = "scroll".asInstanceOf[typings.csstype.csstypeStrings.scroll]
 }
 

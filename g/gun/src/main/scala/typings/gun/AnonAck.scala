@@ -28,7 +28,6 @@ object AnonAck {
     soul: String
   ): AnonAck = {
     val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], on = js.Any.fromFunction1(on), put = put.asInstanceOf[js.Any], sea = sea.asInstanceOf[js.Any], soul = soul.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAck]
   }
 }

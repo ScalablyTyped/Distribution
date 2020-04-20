@@ -567,7 +567,7 @@ object uifabricMergeStylesStrings {
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   @scala.inline
-  def `block flow`: `block flow` = "block flow".asInstanceOf[`block flow`]
+  def `block flow`: `block flow` = ("block flow").asInstanceOf[`block flow`]
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
@@ -621,13 +621,13 @@ object uifabricMergeStylesStrings {
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   @scala.inline
-  def `first baseline`: `first baseline` = "first baseline".asInstanceOf[`first baseline`]
+  def `first baseline`: `first baseline` = ("first baseline").asInstanceOf[`first baseline`]
   @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
   @scala.inline
-  def `flex run-in`: `flex run-in` = "flex run-in".asInstanceOf[`flex run-in`]
+  def `flex run-in`: `flex run-in` = ("flex run-in").asInstanceOf[`flex run-in`]
   @scala.inline
   def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
   @scala.inline
@@ -635,7 +635,7 @@ object uifabricMergeStylesStrings {
   @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
   @scala.inline
-  def `flow list-item block`: `flow list-item block` = "flow list-item block".asInstanceOf[`flow list-item block`]
+  def `flow list-item block`: `flow list-item block` = ("flow list-item block").asInstanceOf[`flow list-item block`]
   @scala.inline
   def `flow-root`: `flow-root` = "flow-root".asInstanceOf[`flow-root`]
   @scala.inline
@@ -659,7 +659,7 @@ object uifabricMergeStylesStrings {
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
-  def `inline table`: `inline table` = "inline table".asInstanceOf[`inline table`]
+  def `inline table`: `inline table` = ("inline table").asInstanceOf[`inline table`]
   @scala.inline
   def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
   @scala.inline
@@ -675,7 +675,7 @@ object uifabricMergeStylesStrings {
   @scala.inline
   def larger: larger = "larger".asInstanceOf[larger]
   @scala.inline
-  def `last baseline`: `last baseline` = "last baseline".asInstanceOf[`last baseline`]
+  def `last baseline`: `last baseline` = ("last baseline").asInstanceOf[`last baseline`]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -685,17 +685,17 @@ object uifabricMergeStylesStrings {
   @scala.inline
   def `list-item`: `list-item` = "list-item".asInstanceOf[`list-item`]
   @scala.inline
-  def `list-item block`: `list-item block` = "list-item block".asInstanceOf[`list-item block`]
+  def `list-item block`: `list-item block` = ("list-item block").asInstanceOf[`list-item block`]
   @scala.inline
-  def `list-item block flow`: `list-item block flow` = "list-item block flow".asInstanceOf[`list-item block flow`]
+  def `list-item block flow`: `list-item block flow` = ("list-item block flow").asInstanceOf[`list-item block flow`]
   @scala.inline
-  def `list-item block flow-root`: `list-item block flow-root` = "list-item block flow-root".asInstanceOf[`list-item block flow-root`]
+  def `list-item block flow-root`: `list-item block flow-root` = ("list-item block flow-root").asInstanceOf[`list-item block flow-root`]
   @scala.inline
-  def `list-item flow`: `list-item flow` = "list-item flow".asInstanceOf[`list-item flow`]
+  def `list-item flow`: `list-item flow` = ("list-item flow").asInstanceOf[`list-item flow`]
   @scala.inline
-  def `list-item flow-root`: `list-item flow-root` = "list-item flow-root".asInstanceOf[`list-item flow-root`]
+  def `list-item flow-root`: `list-item flow-root` = ("list-item flow-root").asInstanceOf[`list-item flow-root`]
   @scala.inline
-  def `list-item inline`: `list-item inline` = "list-item inline".asInstanceOf[`list-item inline`]
+  def `list-item inline`: `list-item inline` = ("list-item inline").asInstanceOf[`list-item inline`]
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   @scala.inline
@@ -741,23 +741,23 @@ object uifabricMergeStylesStrings {
   @scala.inline
   def `run-in`: `run-in` = "run-in".asInstanceOf[`run-in`]
   @scala.inline
-  def `safe center`: `safe center` = "safe center".asInstanceOf[`safe center`]
+  def `safe center`: `safe center` = ("safe center").asInstanceOf[`safe center`]
   @scala.inline
-  def `safe end`: `safe end` = "safe end".asInstanceOf[`safe end`]
+  def `safe end`: `safe end` = ("safe end").asInstanceOf[`safe end`]
   @scala.inline
-  def `safe flex-end`: `safe flex-end` = "safe flex-end".asInstanceOf[`safe flex-end`]
+  def `safe flex-end`: `safe flex-end` = ("safe flex-end").asInstanceOf[`safe flex-end`]
   @scala.inline
-  def `safe flex-start`: `safe flex-start` = "safe flex-start".asInstanceOf[`safe flex-start`]
+  def `safe flex-start`: `safe flex-start` = ("safe flex-start").asInstanceOf[`safe flex-start`]
   @scala.inline
-  def `safe left`: `safe left` = "safe left".asInstanceOf[`safe left`]
+  def `safe left`: `safe left` = ("safe left").asInstanceOf[`safe left`]
   @scala.inline
-  def `safe right`: `safe right` = "safe right".asInstanceOf[`safe right`]
+  def `safe right`: `safe right` = ("safe right").asInstanceOf[`safe right`]
   @scala.inline
-  def `safe self-end`: `safe self-end` = "safe self-end".asInstanceOf[`safe self-end`]
+  def `safe self-end`: `safe self-end` = ("safe self-end").asInstanceOf[`safe self-end`]
   @scala.inline
-  def `safe self-start`: `safe self-start` = "safe self-start".asInstanceOf[`safe self-start`]
+  def `safe self-start`: `safe self-start` = ("safe self-start").asInstanceOf[`safe self-start`]
   @scala.inline
-  def `safe start`: `safe start` = "safe start".asInstanceOf[`safe start`]
+  def `safe start`: `safe start` = ("safe start").asInstanceOf[`safe start`]
   @scala.inline
   def saturation: saturation = "saturation".asInstanceOf[saturation]
   @scala.inline
@@ -827,23 +827,23 @@ object uifabricMergeStylesStrings {
   @scala.inline
   def `ultra-expanded`: `ultra-expanded` = "ultra-expanded".asInstanceOf[`ultra-expanded`]
   @scala.inline
-  def `unsafe center`: `unsafe center` = "unsafe center".asInstanceOf[`unsafe center`]
+  def `unsafe center`: `unsafe center` = ("unsafe center").asInstanceOf[`unsafe center`]
   @scala.inline
-  def `unsafe end`: `unsafe end` = "unsafe end".asInstanceOf[`unsafe end`]
+  def `unsafe end`: `unsafe end` = ("unsafe end").asInstanceOf[`unsafe end`]
   @scala.inline
-  def `unsafe flex-end`: `unsafe flex-end` = "unsafe flex-end".asInstanceOf[`unsafe flex-end`]
+  def `unsafe flex-end`: `unsafe flex-end` = ("unsafe flex-end").asInstanceOf[`unsafe flex-end`]
   @scala.inline
-  def `unsafe flex-start`: `unsafe flex-start` = "unsafe flex-start".asInstanceOf[`unsafe flex-start`]
+  def `unsafe flex-start`: `unsafe flex-start` = ("unsafe flex-start").asInstanceOf[`unsafe flex-start`]
   @scala.inline
-  def `unsafe left`: `unsafe left` = "unsafe left".asInstanceOf[`unsafe left`]
+  def `unsafe left`: `unsafe left` = ("unsafe left").asInstanceOf[`unsafe left`]
   @scala.inline
-  def `unsafe right`: `unsafe right` = "unsafe right".asInstanceOf[`unsafe right`]
+  def `unsafe right`: `unsafe right` = ("unsafe right").asInstanceOf[`unsafe right`]
   @scala.inline
-  def `unsafe self-end`: `unsafe self-end` = "unsafe self-end".asInstanceOf[`unsafe self-end`]
+  def `unsafe self-end`: `unsafe self-end` = ("unsafe self-end").asInstanceOf[`unsafe self-end`]
   @scala.inline
-  def `unsafe self-start`: `unsafe self-start` = "unsafe self-start".asInstanceOf[`unsafe self-start`]
+  def `unsafe self-start`: `unsafe self-start` = ("unsafe self-start").asInstanceOf[`unsafe self-start`]
   @scala.inline
-  def `unsafe start`: `unsafe start` = "unsafe start".asInstanceOf[`unsafe start`]
+  def `unsafe start`: `unsafe start` = ("unsafe start").asInstanceOf[`unsafe start`]
   @scala.inline
   def unset: unset = "unset".asInstanceOf[unset]
   @scala.inline

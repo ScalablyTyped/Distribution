@@ -16,12 +16,10 @@ trait XlSlicerSort extends js.Object
 
 object XlSlicerSort {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlSlicerSortAscending: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlSlicerSortAscending: `2` = this.cast(2)
+  def xlSlicerSortDataSourceOrder: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlSlicerSortDataSourceOrder: `1` = this.cast(1)
-  @scala.inline
-  def xlSlicerSortDescending: `3` = this.cast(3)
+  def xlSlicerSortDescending: `3` = 3.asInstanceOf[`3`]
 }
 

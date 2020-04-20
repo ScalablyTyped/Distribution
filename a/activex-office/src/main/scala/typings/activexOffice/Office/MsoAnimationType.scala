@@ -80,76 +80,74 @@ trait MsoAnimationType extends js.Object
 
 object MsoAnimationType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnimationAppear: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def msoAnimationAppear: `32` = this.cast(32)
+  def msoAnimationBeginSpeaking: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoAnimationBeginSpeaking: `4` = this.cast(4)
+  def msoAnimationCharacterSuccessMajor: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoAnimationCharacterSuccessMajor: `6` = this.cast(6)
+  def msoAnimationCheckingSomething: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def msoAnimationCheckingSomething: `103` = this.cast(103)
+  def msoAnimationDisappear: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def msoAnimationDisappear: `31` = this.cast(31)
+  def msoAnimationEmptyTrash: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def msoAnimationEmptyTrash: `116` = this.cast(116)
+  def msoAnimationGestureDown: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def msoAnimationGestureDown: `113` = this.cast(113)
+  def msoAnimationGestureLeft: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def msoAnimationGestureLeft: `114` = this.cast(114)
+  def msoAnimationGestureRight: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoAnimationGestureRight: `19` = this.cast(19)
+  def msoAnimationGestureUp: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def msoAnimationGestureUp: `115` = this.cast(115)
+  def msoAnimationGetArtsy: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def msoAnimationGetArtsy: `100` = this.cast(100)
+  def msoAnimationGetAttentionMajor: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoAnimationGetAttentionMajor: `11` = this.cast(11)
+  def msoAnimationGetAttentionMinor: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoAnimationGetAttentionMinor: `12` = this.cast(12)
+  def msoAnimationGetTechy: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def msoAnimationGetTechy: `101` = this.cast(101)
+  def msoAnimationGetWizardy: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def msoAnimationGetWizardy: `102` = this.cast(102)
+  def msoAnimationGoodbye: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoAnimationGoodbye: `3` = this.cast(3)
+  def msoAnimationGreeting: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoAnimationGreeting: `2` = this.cast(2)
+  def msoAnimationIdle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnimationIdle: `1` = this.cast(1)
+  def msoAnimationListensToComputer: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoAnimationListensToComputer: `26` = this.cast(26)
+  def msoAnimationLookDown: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def msoAnimationLookDown: `104` = this.cast(104)
+  def msoAnimationLookDownLeft: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def msoAnimationLookDownLeft: `105` = this.cast(105)
+  def msoAnimationLookDownRight: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def msoAnimationLookDownRight: `106` = this.cast(106)
+  def msoAnimationLookLeft: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def msoAnimationLookLeft: `107` = this.cast(107)
+  def msoAnimationLookRight: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def msoAnimationLookRight: `108` = this.cast(108)
+  def msoAnimationLookUp: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def msoAnimationLookUp: `109` = this.cast(109)
+  def msoAnimationLookUpLeft: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def msoAnimationLookUpLeft: `110` = this.cast(110)
+  def msoAnimationLookUpRight: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def msoAnimationLookUpRight: `111` = this.cast(111)
+  def msoAnimationPrinting: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoAnimationPrinting: `18` = this.cast(18)
+  def msoAnimationRestPose: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoAnimationRestPose: `5` = this.cast(5)
+  def msoAnimationSaving: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def msoAnimationSaving: `112` = this.cast(112)
+  def msoAnimationSearching: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoAnimationSearching: `13` = this.cast(13)
+  def msoAnimationSendingMail: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def msoAnimationSendingMail: `25` = this.cast(25)
+  def msoAnimationThinking: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoAnimationThinking: `24` = this.cast(24)
+  def msoAnimationWorkingAtSomething: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoAnimationWorkingAtSomething: `23` = this.cast(23)
-  @scala.inline
-  def msoAnimationWritingNotingSomething: `22` = this.cast(22)
+  def msoAnimationWritingNotingSomething: `22` = 22.asInstanceOf[`22`]
 }
 

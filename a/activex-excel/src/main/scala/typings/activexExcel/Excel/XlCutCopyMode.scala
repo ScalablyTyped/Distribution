@@ -14,10 +14,8 @@ trait XlCutCopyMode extends js.Object
 
 object XlCutCopyMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCopy: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlCopy: `1` = this.cast(1)
-  @scala.inline
-  def xlCut: `2` = this.cast(2)
+  def xlCut: `2` = 2.asInstanceOf[`2`]
 }
 

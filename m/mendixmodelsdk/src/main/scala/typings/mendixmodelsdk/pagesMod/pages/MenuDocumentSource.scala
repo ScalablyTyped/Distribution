@@ -25,9 +25,9 @@ class MenuDocumentSource protected () extends MenuSource {
   var model_FMenuDocumentSource: IModel = js.native
   def menu(): js.Any = js.native
   def menu(newValue: IMenuDocument): js.Any = js.native
-  def menuQualifiedName(): String | Null = js.native
+  def menuQualifiedName: String | Null = js.native
   @JSName("menu")
-  def menu_Union(): IMenuDocument | Null = js.native
+  def menu_Union: IMenuDocument | Null = js.native
 }
 
 /* static members */

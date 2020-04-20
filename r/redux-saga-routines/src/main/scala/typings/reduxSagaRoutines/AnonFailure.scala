@@ -28,13 +28,13 @@ object AnonFailure {
     TFulfillActionCreator
   ] = {
     val __obj = js.Dynamic.literal(failure = failure.asInstanceOf[js.Any], fulfill = fulfill.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFailure[
-  TTriggerActionCreator, 
-  TRequestActionCreator, 
-  TSuccessActionCreator, 
-  TFailureActionCreator, 
-  TFulfillActionCreator]]
+      TTriggerActionCreator, 
+      TRequestActionCreator, 
+      TSuccessActionCreator, 
+      TFailureActionCreator, 
+      TFulfillActionCreator
+    ]]
   }
 }
 

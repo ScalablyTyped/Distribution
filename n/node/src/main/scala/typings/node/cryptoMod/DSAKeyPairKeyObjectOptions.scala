@@ -19,7 +19,6 @@ object DSAKeyPairKeyObjectOptions {
   @scala.inline
   def apply(divisorLength: Double, modulusLength: Double): DSAKeyPairKeyObjectOptions = {
     val __obj = js.Dynamic.literal(divisorLength = divisorLength.asInstanceOf[js.Any], modulusLength = modulusLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DSAKeyPairKeyObjectOptions]
   }
 }

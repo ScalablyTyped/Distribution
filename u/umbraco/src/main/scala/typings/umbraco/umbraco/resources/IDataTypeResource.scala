@@ -132,7 +132,6 @@ object IDataTypeResource {
     save: (js.Object, js.Array[_], Boolean) => IPromise[IResourcePromise]
   ): IDataTypeResource = {
     val __obj = js.Dynamic.literal(deleteById = js.Any.fromFunction1(deleteById), getAll = js.Any.fromFunction0(getAll), getById = js.Any.fromFunction1(getById), getPreValues = js.Any.fromFunction2(getPreValues), getScaffold = js.Any.fromFunction0(getScaffold), save = js.Any.fromFunction3(save))
-  
     __obj.asInstanceOf[IDataTypeResource]
   }
 }

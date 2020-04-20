@@ -12,10 +12,8 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def end: typings.popmotionPopcorn.popmotionPopcornStrings.end = "end".asInstanceOf[typings.popmotionPopcorn.popmotionPopcornStrings.end]
   @scala.inline
-  def end: typings.popmotionPopcorn.popmotionPopcornStrings.end = this.cast("end")
-  @scala.inline
-  def start: typings.popmotionPopcorn.popmotionPopcornStrings.start = this.cast("start")
+  def start: typings.popmotionPopcorn.popmotionPopcornStrings.start = "start".asInstanceOf[typings.popmotionPopcorn.popmotionPopcornStrings.start]
 }
 

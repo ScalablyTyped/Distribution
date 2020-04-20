@@ -51,7 +51,6 @@ object DialogLevelManager {
   @scala.inline
   def apply(hide: WidgetBase => Unit, isTop: WidgetBase => Boolean, show: (WidgetBase, js.Object) => Unit): DialogLevelManager = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction1(hide), isTop = js.Any.fromFunction1(isTop), show = js.Any.fromFunction2(show))
-  
     __obj.asInstanceOf[DialogLevelManager]
   }
 }

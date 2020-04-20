@@ -12,7 +12,6 @@ object GeneralJWS {
   @scala.inline
   def apply(payload: String, signatures: js.Array[JWSRecipient]): GeneralJWS = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeneralJWS]
   }
 }

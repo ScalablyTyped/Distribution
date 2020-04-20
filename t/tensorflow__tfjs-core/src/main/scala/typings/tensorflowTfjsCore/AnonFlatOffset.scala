@@ -14,7 +14,6 @@ object AnonFlatOffset {
   @scala.inline
   def apply(flatOffset: Double, origDataId: DataId): AnonFlatOffset = {
     val __obj = js.Dynamic.literal(flatOffset = flatOffset.asInstanceOf[js.Any], origDataId = origDataId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlatOffset]
   }
 }

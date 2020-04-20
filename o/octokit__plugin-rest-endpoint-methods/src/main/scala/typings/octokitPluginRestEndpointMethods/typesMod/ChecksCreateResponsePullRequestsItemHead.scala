@@ -14,7 +14,6 @@ object ChecksCreateResponsePullRequestsItemHead {
   @scala.inline
   def apply(ref: String, repo: ChecksCreateResponsePullRequestsItemHeadRepo, sha: String): ChecksCreateResponsePullRequestsItemHead = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChecksCreateResponsePullRequestsItemHead]
   }
 }

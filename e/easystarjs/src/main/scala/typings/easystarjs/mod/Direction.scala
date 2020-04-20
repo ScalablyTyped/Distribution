@@ -18,22 +18,20 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  def BOTTOM: typings.easystarjs.easystarjsStrings.BOTTOM = this.cast("BOTTOM")
+  def BOTTOM: typings.easystarjs.easystarjsStrings.BOTTOM = "BOTTOM".asInstanceOf[typings.easystarjs.easystarjsStrings.BOTTOM]
   @scala.inline
-  def BOTTOM_LEFT: typings.easystarjs.easystarjsStrings.BOTTOM_LEFT = this.cast("BOTTOM_LEFT")
+  def BOTTOM_LEFT: typings.easystarjs.easystarjsStrings.BOTTOM_LEFT = "BOTTOM_LEFT".asInstanceOf[typings.easystarjs.easystarjsStrings.BOTTOM_LEFT]
   @scala.inline
-  def BOTTOM_RIGHT: typings.easystarjs.easystarjsStrings.BOTTOM_RIGHT = this.cast("BOTTOM_RIGHT")
+  def BOTTOM_RIGHT: typings.easystarjs.easystarjsStrings.BOTTOM_RIGHT = "BOTTOM_RIGHT".asInstanceOf[typings.easystarjs.easystarjsStrings.BOTTOM_RIGHT]
   @scala.inline
-  def LEFT: typings.easystarjs.easystarjsStrings.LEFT = this.cast("LEFT")
+  def LEFT: typings.easystarjs.easystarjsStrings.LEFT = "LEFT".asInstanceOf[typings.easystarjs.easystarjsStrings.LEFT]
   @scala.inline
-  def RIGHT: typings.easystarjs.easystarjsStrings.RIGHT = this.cast("RIGHT")
+  def RIGHT: typings.easystarjs.easystarjsStrings.RIGHT = "RIGHT".asInstanceOf[typings.easystarjs.easystarjsStrings.RIGHT]
   @scala.inline
-  def TOP: typings.easystarjs.easystarjsStrings.TOP = this.cast("TOP")
+  def TOP: typings.easystarjs.easystarjsStrings.TOP = "TOP".asInstanceOf[typings.easystarjs.easystarjsStrings.TOP]
   @scala.inline
-  def TOP_LEFT: typings.easystarjs.easystarjsStrings.TOP_LEFT = this.cast("TOP_LEFT")
+  def TOP_LEFT: typings.easystarjs.easystarjsStrings.TOP_LEFT = "TOP_LEFT".asInstanceOf[typings.easystarjs.easystarjsStrings.TOP_LEFT]
   @scala.inline
-  def TOP_RIGHT: typings.easystarjs.easystarjsStrings.TOP_RIGHT = this.cast("TOP_RIGHT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TOP_RIGHT: typings.easystarjs.easystarjsStrings.TOP_RIGHT = "TOP_RIGHT".asInstanceOf[typings.easystarjs.easystarjsStrings.TOP_RIGHT]
 }
 

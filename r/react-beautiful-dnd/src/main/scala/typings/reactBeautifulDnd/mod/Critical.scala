@@ -13,7 +13,6 @@ object Critical {
   @scala.inline
   def apply(draggable: DraggableDescriptor, droppable: DroppableDescriptor): Critical = {
     val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], droppable = droppable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Critical]
   }
 }

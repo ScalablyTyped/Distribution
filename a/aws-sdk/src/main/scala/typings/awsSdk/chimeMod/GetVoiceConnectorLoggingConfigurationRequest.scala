@@ -16,7 +16,6 @@ object GetVoiceConnectorLoggingConfigurationRequest {
   @scala.inline
   def apply(VoiceConnectorId: NonEmptyString): GetVoiceConnectorLoggingConfigurationRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVoiceConnectorLoggingConfigurationRequest]
   }
 }

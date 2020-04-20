@@ -14,7 +14,6 @@ object VSCodeCancellationTokenLike {
   @scala.inline
   def apply(isCancellationRequested: Boolean, onCancellationRequested: js.Function0[_] => AnonDispose): VSCodeCancellationTokenLike = {
     val __obj = js.Dynamic.literal(isCancellationRequested = isCancellationRequested.asInstanceOf[js.Any], onCancellationRequested = js.Any.fromFunction1(onCancellationRequested))
-  
     __obj.asInstanceOf[VSCodeCancellationTokenLike]
   }
 }

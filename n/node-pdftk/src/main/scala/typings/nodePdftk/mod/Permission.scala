@@ -19,24 +19,22 @@ trait Permission extends js.Object
 
 object Permission {
   @scala.inline
-  def AllFeatures: typings.nodePdftk.nodePdftkStrings.AllFeatures = this.cast("AllFeatures")
+  def AllFeatures: typings.nodePdftk.nodePdftkStrings.AllFeatures = "AllFeatures".asInstanceOf[typings.nodePdftk.nodePdftkStrings.AllFeatures]
   @scala.inline
-  def Assembly: typings.nodePdftk.nodePdftkStrings.Assembly = this.cast("Assembly")
+  def Assembly: typings.nodePdftk.nodePdftkStrings.Assembly = "Assembly".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Assembly]
   @scala.inline
-  def CopyContents: typings.nodePdftk.nodePdftkStrings.CopyContents = this.cast("CopyContents")
+  def CopyContents: typings.nodePdftk.nodePdftkStrings.CopyContents = "CopyContents".asInstanceOf[typings.nodePdftk.nodePdftkStrings.CopyContents]
   @scala.inline
-  def DegradedPrintin: typings.nodePdftk.nodePdftkStrings.DegradedPrintin = this.cast("DegradedPrintin")
+  def DegradedPrintin: typings.nodePdftk.nodePdftkStrings.DegradedPrintin = "DegradedPrintin".asInstanceOf[typings.nodePdftk.nodePdftkStrings.DegradedPrintin]
   @scala.inline
-  def FillIn: typings.nodePdftk.nodePdftkStrings.FillIn = this.cast("FillIn")
+  def FillIn: typings.nodePdftk.nodePdftkStrings.FillIn = "FillIn".asInstanceOf[typings.nodePdftk.nodePdftkStrings.FillIn]
   @scala.inline
-  def ModifyAnnotations: typings.nodePdftk.nodePdftkStrings.ModifyAnnotations = this.cast("ModifyAnnotations")
+  def ModifyAnnotations: typings.nodePdftk.nodePdftkStrings.ModifyAnnotations = "ModifyAnnotations".asInstanceOf[typings.nodePdftk.nodePdftkStrings.ModifyAnnotations]
   @scala.inline
-  def ModifyContents: typings.nodePdftk.nodePdftkStrings.ModifyContents = this.cast("ModifyContents")
+  def ModifyContents: typings.nodePdftk.nodePdftkStrings.ModifyContents = "ModifyContents".asInstanceOf[typings.nodePdftk.nodePdftkStrings.ModifyContents]
   @scala.inline
-  def Printing: typings.nodePdftk.nodePdftkStrings.Printing = this.cast("Printing")
+  def Printing: typings.nodePdftk.nodePdftkStrings.Printing = "Printing".asInstanceOf[typings.nodePdftk.nodePdftkStrings.Printing]
   @scala.inline
-  def ScreenReaders: typings.nodePdftk.nodePdftkStrings.ScreenReaders = this.cast("ScreenReaders")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ScreenReaders: typings.nodePdftk.nodePdftkStrings.ScreenReaders = "ScreenReaders".asInstanceOf[typings.nodePdftk.nodePdftkStrings.ScreenReaders]
 }
 

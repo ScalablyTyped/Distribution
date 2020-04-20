@@ -12,7 +12,6 @@ object SnapshotLegacy {
   @scala.inline
   def apply(canTakeSnapshot: Boolean): SnapshotLegacy = {
     val __obj = js.Dynamic.literal(canTakeSnapshot = canTakeSnapshot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SnapshotLegacy]
   }
 }

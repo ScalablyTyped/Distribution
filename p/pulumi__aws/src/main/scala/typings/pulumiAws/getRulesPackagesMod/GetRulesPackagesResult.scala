@@ -20,7 +20,6 @@ object GetRulesPackagesResult {
   @scala.inline
   def apply(arns: js.Array[String], id: String): GetRulesPackagesResult = {
     val __obj = js.Dynamic.literal(arns = arns.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRulesPackagesResult]
   }
 }

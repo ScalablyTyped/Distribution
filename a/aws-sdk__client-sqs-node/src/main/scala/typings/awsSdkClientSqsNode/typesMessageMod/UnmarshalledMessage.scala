@@ -1,6 +1,7 @@
 package typings.awsSdkClientSqsNode.typesMessageMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings._UnmarshalledMessage
 import typings.awsSdkClientSqsNode.typesMessageAttributeValueMod.UnmarshalledMessageAttributeValue
 import scala.scalajs.js
@@ -15,7 +16,7 @@ trait UnmarshalledMessage extends Message {
   var Attributes_UnmarshalledMessage: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-    */ _UnmarshalledMessage with js.Any
+    */ _UnmarshalledMessage with TopLevel[js.Any]
   ] = js.undefined
   /**
     * <p>Each message attribute consists of a <code>Name</code>, <code>Type</code>, and <code>Value</code>. For more information, see <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-attributes.html">Amazon SQS Message Attributes</a> in the <i>Amazon Simple Queue Service Developer Guide</i>.</p>
@@ -29,7 +30,7 @@ object UnmarshalledMessage {
   def apply(
     Attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-    */ _UnmarshalledMessage with js.Any = null,
+    */ _UnmarshalledMessage with TopLevel[js.Any] = null,
     Body: String = null,
     MD5OfBody: String = null,
     MD5OfMessageAttributes: String = null,

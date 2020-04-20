@@ -38,7 +38,6 @@ object RegisterAVSDeviceRequest {
     UserCode: UserCode
   ): RegisterAVSDeviceRequest = {
     val __obj = js.Dynamic.literal(AmazonId = AmazonId.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any], DeviceSerialNumber = DeviceSerialNumber.asInstanceOf[js.Any], ProductId = ProductId.asInstanceOf[js.Any], UserCode = UserCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterAVSDeviceRequest]
   }
 }

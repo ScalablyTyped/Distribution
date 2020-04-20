@@ -19,7 +19,6 @@ object BackgroundRange {
   @scala.inline
   def apply(higher: Double, lower: Double): BackgroundRange = {
     val __obj = js.Dynamic.literal(higher = higher.asInstanceOf[js.Any], lower = lower.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BackgroundRange]
   }
 }

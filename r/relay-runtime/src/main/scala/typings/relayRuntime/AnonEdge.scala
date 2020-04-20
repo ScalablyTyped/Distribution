@@ -17,7 +17,6 @@ object AnonEdge {
   @scala.inline
   def apply[TEdge](args: Variables, edge: TEdge, kind: insert): AnonEdge[TEdge] = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEdge[TEdge]]
   }
 }

@@ -8,8 +8,8 @@ trait SpreadsheetTheme extends js.Object {
   /** / Name of the primary font family. */
   var primaryFontFamily: js.UndefOr[String] = js.undefined
   /**
-    * The spreadsheet theme color pairs. For update users need to give all pairs
-    * of theme colors.
+    * The spreadsheet theme color pairs. To update you must provide all theme
+    * color pairs.
     */
   var themeColors: js.UndefOr[js.Array[ThemeColorPair]] = js.undefined
 }

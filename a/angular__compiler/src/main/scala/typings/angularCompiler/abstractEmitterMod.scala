@@ -168,7 +168,7 @@ object abstractEmitterMod extends js.Object {
     var _indent: js.Any = js.native
     var _lines: js.Any = js.native
     var _preambleLineCount: js.Any = js.native
-    def currentClass(): ClassStmt | Null = js.native
+    def currentClass: ClassStmt | Null = js.native
     def decIndent(): Unit = js.native
     def incIndent(): Unit = js.native
     def lineIsEmpty(): Boolean = js.native

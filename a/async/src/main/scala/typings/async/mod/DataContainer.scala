@@ -12,7 +12,6 @@ object DataContainer {
   @scala.inline
   def apply[T](data: T): DataContainer[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataContainer[T]]
   }
 }

@@ -15,7 +15,6 @@ object Framework {
   @scala.inline
   def apply[THandler](check: /* repeated */ js.Any => Boolean, handle: StandardHandler => THandler): Framework[THandler] = {
     val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check), handle = js.Any.fromFunction1(handle))
-  
     __obj.asInstanceOf[Framework[THandler]]
   }
 }

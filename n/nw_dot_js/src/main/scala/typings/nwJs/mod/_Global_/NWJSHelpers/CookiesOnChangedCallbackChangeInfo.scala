@@ -35,7 +35,6 @@ object CookiesOnChangedCallbackChangeInfo {
     removed: Boolean
   ): CookiesOnChangedCallbackChangeInfo = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], cookie = cookie.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CookiesOnChangedCallbackChangeInfo]
   }
 }

@@ -46,6 +46,10 @@ object AppEventsLogger extends js.Object {
     * @platform Android
     */
   def setPushNotificationsRegistrationId(registrationId: String): Unit = js.native
+  /**
+    * Set additional data about the user to increase chances of matching a Facebook user.
+    */
+  def setUserData(userData: UserData): Unit = js.native
   def setUserID(): Unit = js.native
   /**
     * Sets a custom user ID to associate with all app events.

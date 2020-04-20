@@ -32,7 +32,6 @@ object AnonDKK {
     USD: js.Array[String]
   ): AnonDKK = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], DKK = DKK.asInstanceOf[js.Any], ISK = ISK.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], NOK = NOK.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], SEK = SEK.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDKK]
   }
 }

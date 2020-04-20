@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactPhoneNumberInputProps {
   @scala.inline
-  def ReactPhoneNumberInputProps: PhoneInputProps.type = typings.reactPhoneNumberInput.mod.PhoneInputProps
+  def ReactPhoneNumberInputProps: PhoneInputProps.type = PhoneInputProps
   type ReactPhoneNumberInputProps = PhoneInputProps
 }
 

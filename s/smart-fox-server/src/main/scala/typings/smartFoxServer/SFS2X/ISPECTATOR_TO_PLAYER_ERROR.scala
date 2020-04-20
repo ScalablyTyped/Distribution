@@ -13,7 +13,6 @@ object ISPECTATOR_TO_PLAYER_ERROR {
   @scala.inline
   def apply(errorCode: Double, errorMessage: String): ISPECTATOR_TO_PLAYER_ERROR = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISPECTATOR_TO_PLAYER_ERROR]
   }
 }

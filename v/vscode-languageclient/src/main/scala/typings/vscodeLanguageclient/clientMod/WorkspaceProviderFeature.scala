@@ -12,7 +12,6 @@ object WorkspaceProviderFeature {
   @scala.inline
   def apply[PR](getProviders: () => js.Array[PR]): WorkspaceProviderFeature[PR] = {
     val __obj = js.Dynamic.literal(getProviders = js.Any.fromFunction0(getProviders))
-  
     __obj.asInstanceOf[WorkspaceProviderFeature[PR]]
   }
 }

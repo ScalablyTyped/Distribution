@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("esri/core/Error", JSImport.Namespace)
 @js.native
-class Class () extends Error {
+class Class protected () extends Error {
+  def this(name: String) = this()
+  def this(name: String, message: String) = this()
+  def this(name: String, message: String, details: js.Any) = this()
   /**
     * The details object provides additional details specific to the error, giving more information about why the error was raised. For example, the details object for esriRequest includes additional information to help the developer diagnose issues with a problematic request.
     *

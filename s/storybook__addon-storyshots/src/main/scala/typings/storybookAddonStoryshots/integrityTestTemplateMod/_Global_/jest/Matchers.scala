@@ -12,7 +12,6 @@ object Matchers {
   @scala.inline
   def apply[R, T](notToBeAbandoned: js.Any => R): Matchers[R, T] = {
     val __obj = js.Dynamic.literal(notToBeAbandoned = js.Any.fromFunction1(notToBeAbandoned))
-  
     __obj.asInstanceOf[Matchers[R, T]]
   }
 }

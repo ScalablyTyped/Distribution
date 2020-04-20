@@ -13,7 +13,6 @@ object AnonOnBehalfOf {
   @scala.inline
   def apply(onBehalfOf: Double, revalidateApproverIdentity: Double): AnonOnBehalfOf = {
     val __obj = js.Dynamic.literal(onBehalfOf = onBehalfOf.asInstanceOf[js.Any], revalidateApproverIdentity = revalidateApproverIdentity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnBehalfOf]
   }
 }

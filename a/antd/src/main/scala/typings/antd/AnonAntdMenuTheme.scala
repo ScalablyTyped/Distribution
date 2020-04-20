@@ -13,7 +13,6 @@ object AnonAntdMenuTheme {
   @scala.inline
   def apply(antdMenuTheme: Requireable[String]): AnonAntdMenuTheme = {
     val __obj = js.Dynamic.literal(antdMenuTheme = antdMenuTheme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAntdMenuTheme]
   }
 }

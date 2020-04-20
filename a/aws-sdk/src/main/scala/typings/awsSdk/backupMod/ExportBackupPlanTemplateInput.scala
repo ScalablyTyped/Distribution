@@ -16,7 +16,6 @@ object ExportBackupPlanTemplateInput {
   @scala.inline
   def apply(BackupPlanId: String): ExportBackupPlanTemplateInput = {
     val __obj = js.Dynamic.literal(BackupPlanId = BackupPlanId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportBackupPlanTemplateInput]
   }
 }

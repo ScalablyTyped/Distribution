@@ -14,7 +14,6 @@ object AnonOnKeyDown {
   @scala.inline
   def apply(onKeyDown: SyntheticEvent[_, Event_] => Unit): AnonOnKeyDown = {
     val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction1(onKeyDown))
-  
     __obj.asInstanceOf[AnonOnKeyDown]
   }
 }

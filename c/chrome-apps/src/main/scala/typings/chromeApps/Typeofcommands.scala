@@ -20,7 +20,6 @@ object Typeofcommands {
   @scala.inline
   def apply(getAll: js.Function1[/* commands */ js.Array[Command], Unit] => Unit, onCommand: CommandEvent): Typeofcommands = {
     val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction1(getAll), onCommand = onCommand.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofcommands]
   }
 }

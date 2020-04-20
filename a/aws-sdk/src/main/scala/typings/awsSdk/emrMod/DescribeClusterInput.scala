@@ -16,7 +16,6 @@ object DescribeClusterInput {
   @scala.inline
   def apply(ClusterId: ClusterId): DescribeClusterInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeClusterInput]
   }
 }

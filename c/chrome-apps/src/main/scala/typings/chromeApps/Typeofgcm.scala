@@ -60,7 +60,6 @@ object Typeofgcm {
     unregister: js.Function0[Unit] => Unit
   ): Typeofgcm = {
     val __obj = js.Dynamic.literal(MAX_MESSAGE_SIZE = MAX_MESSAGE_SIZE.asInstanceOf[js.Any], onMessage = onMessage.asInstanceOf[js.Any], onMessagesDeleted = onMessagesDeleted.asInstanceOf[js.Any], onSendError = onSendError.asInstanceOf[js.Any], register = js.Any.fromFunction2(register), send = js.Any.fromFunction2(send), unregister = js.Any.fromFunction1(unregister))
-  
     __obj.asInstanceOf[Typeofgcm]
   }
 }

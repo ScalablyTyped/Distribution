@@ -16,12 +16,10 @@ trait PREFERENCE extends js.Object
 
 object PREFERENCE {
   @scala.inline
-  def FASTFORWARD_ONLY: `2` = this.cast(2)
+  def FASTFORWARD_ONLY: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def NONE: `0` = this.cast(0)
+  def NONE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def NO_FASTFORWARD: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NO_FASTFORWARD: `1` = 1.asInstanceOf[`1`]
 }
 

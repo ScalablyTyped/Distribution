@@ -24,7 +24,6 @@ object AnonDefaultValue {
     onChange: () => Unit
   ): AnonDefaultValue = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], maximumTrackTintColor = maximumTrackTintColor.asInstanceOf[js.Any], minimumTrackTintColor = minimumTrackTintColor.asInstanceOf[js.Any], onAfterChange = js.Any.fromFunction0(onAfterChange), onChange = js.Any.fromFunction0(onChange))
-  
     __obj.asInstanceOf[AnonDefaultValue]
   }
 }

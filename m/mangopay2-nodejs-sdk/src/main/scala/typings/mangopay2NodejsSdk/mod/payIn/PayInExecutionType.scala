@@ -14,12 +14,10 @@ trait PayInExecutionType extends js.Object
 
 object PayInExecutionType {
   @scala.inline
-  def DIRECT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT = this.cast("DIRECT")
+  def DIRECT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT = "DIRECT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT]
   @scala.inline
-  def EXTERNAL_INSTRUCTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EXTERNAL_INSTRUCTION = this.cast("EXTERNAL_INSTRUCTION")
+  def EXTERNAL_INSTRUCTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EXTERNAL_INSTRUCTION = "EXTERNAL_INSTRUCTION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EXTERNAL_INSTRUCTION]
   @scala.inline
-  def WEB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WEB = this.cast("WEB")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WEB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WEB = "WEB".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WEB]
 }
 

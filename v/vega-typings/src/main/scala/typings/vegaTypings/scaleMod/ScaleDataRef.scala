@@ -13,7 +13,6 @@ object ScaleDataRef {
   @scala.inline
   def apply(data: String, field: ScaleField): ScaleDataRef = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScaleDataRef]
   }
 }

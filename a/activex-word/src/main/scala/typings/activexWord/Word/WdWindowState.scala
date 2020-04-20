@@ -16,12 +16,10 @@ trait WdWindowState extends js.Object
 
 object WdWindowState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdWindowStateMaximize: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdWindowStateMaximize: `1` = this.cast(1)
+  def wdWindowStateMinimize: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdWindowStateMinimize: `2` = this.cast(2)
-  @scala.inline
-  def wdWindowStateNormal: `0` = this.cast(0)
+  def wdWindowStateNormal: `0` = 0.asInstanceOf[`0`]
 }
 

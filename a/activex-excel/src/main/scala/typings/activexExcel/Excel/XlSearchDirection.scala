@@ -14,10 +14,8 @@ trait XlSearchDirection extends js.Object
 
 object XlSearchDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlNext: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlNext: `1` = this.cast(1)
-  @scala.inline
-  def xlPrevious: `2` = this.cast(2)
+  def xlPrevious: `2` = 2.asInstanceOf[`2`]
 }
 

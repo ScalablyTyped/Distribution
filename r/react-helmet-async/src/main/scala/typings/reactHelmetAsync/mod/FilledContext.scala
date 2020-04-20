@@ -1,6 +1,5 @@
 package typings.reactHelmetAsync.mod
 
-import typings.reactHelmet.mod.HelmetData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,6 @@ object FilledContext {
   @scala.inline
   def apply(helmet: HelmetData): FilledContext = {
     val __obj = js.Dynamic.literal(helmet = helmet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilledContext]
   }
 }

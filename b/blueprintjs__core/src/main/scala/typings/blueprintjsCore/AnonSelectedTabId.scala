@@ -13,7 +13,6 @@ object AnonSelectedTabId {
   @scala.inline
   def apply(selectedTabId: ReactText): AnonSelectedTabId = {
     val __obj = js.Dynamic.literal(selectedTabId = selectedTabId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelectedTabId]
   }
 }

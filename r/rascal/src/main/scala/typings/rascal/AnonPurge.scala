@@ -14,7 +14,6 @@ object AnonPurge {
   @scala.inline
   def apply(assert: Boolean, options: AnonDurable, purge: Boolean): AnonPurge = {
     val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], purge = purge.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPurge]
   }
 }

@@ -23,12 +23,10 @@ trait State extends js.Object
 
 object State {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complete: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete = "complete".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete]
   @scala.inline
-  def complete: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete = this.cast("complete")
+  def in_progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.in_progress = "in_progress".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.in_progress]
   @scala.inline
-  def in_progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.in_progress = this.cast("in_progress")
-  @scala.inline
-  def interrupted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted = this.cast("interrupted")
+  def interrupted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted = "interrupted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted]
 }
 

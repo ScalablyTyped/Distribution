@@ -23,7 +23,6 @@ object MochaPhantomJsWindowOptions {
     started: Boolean
   ): MochaPhantomJsWindowOptions = {
     val __obj = js.Dynamic.literal(ended = ended.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], failures = failures.asInstanceOf[js.Any], mochaPhantomJS = js.Any.fromFunction0(mochaPhantomJS), run = js.Any.fromFunction0(run), started = started.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MochaPhantomJsWindowOptions]
   }
 }

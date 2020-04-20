@@ -1,6 +1,6 @@
 package typings.shelljs.mod
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,7 @@ object ExecOptions {
     async: js.UndefOr[Boolean] = js.undefined,
     cwd: String = null,
     encoding: String = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     fatal: js.UndefOr[Boolean] = js.undefined,
     gid: Int | Double = null,
     killSignal: Signals | Double = null,

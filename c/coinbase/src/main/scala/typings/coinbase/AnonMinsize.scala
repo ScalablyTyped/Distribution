@@ -23,7 +23,6 @@ object AnonMinsize {
   @scala.inline
   def apply(id: String, min_size: String, name: String): AnonMinsize = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], min_size = min_size.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMinsize]
   }
 }

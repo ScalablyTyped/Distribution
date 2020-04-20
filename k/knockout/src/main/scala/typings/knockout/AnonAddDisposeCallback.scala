@@ -21,7 +21,6 @@ object AnonAddDisposeCallback {
     removeNode: Node => Unit
   ): AnonAddDisposeCallback = {
     val __obj = js.Dynamic.literal(addDisposeCallback = js.Any.fromFunction2(addDisposeCallback), cleanNode = js.Any.fromFunction1(cleanNode), removeDisposeCallback = js.Any.fromFunction2(removeDisposeCallback), removeNode = js.Any.fromFunction1(removeNode))
-  
     __obj.asInstanceOf[AnonAddDisposeCallback]
   }
 }

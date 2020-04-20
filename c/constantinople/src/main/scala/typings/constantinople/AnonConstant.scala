@@ -14,7 +14,6 @@ object AnonConstant {
   @scala.inline
   def apply(constant: `true`, result: js.Any): AnonConstant = {
     val __obj = js.Dynamic.literal(constant = constant.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConstant]
   }
 }

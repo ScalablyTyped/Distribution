@@ -39,6 +39,7 @@ class LocalizableString protected () extends js.Object {
 @JSImport("survey-knockout", "LocalizableString")
 @js.native
 object LocalizableString extends js.Object {
+  var SerializeAsObject: Boolean = js.native
   var defaultLocale: String = js.native
 }
 

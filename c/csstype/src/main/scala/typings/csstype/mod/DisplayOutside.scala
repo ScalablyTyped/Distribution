@@ -13,12 +13,10 @@ trait DisplayOutside extends _DisplayProperty
 
 object DisplayOutside {
   @scala.inline
-  def block: typings.csstype.csstypeStrings.block = this.cast("block")
+  def block: typings.csstype.csstypeStrings.block = "block".asInstanceOf[typings.csstype.csstypeStrings.block]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `inline`: typings.csstype.csstypeStrings.`inline` = "inline".asInstanceOf[typings.csstype.csstypeStrings.`inline`]
   @scala.inline
-  def `inline`: typings.csstype.csstypeStrings.`inline` = this.cast("inline")
-  @scala.inline
-  def `run-in`: typings.csstype.csstypeStrings.`run-in` = this.cast("run-in")
+  def `run-in`: typings.csstype.csstypeStrings.`run-in` = "run-in".asInstanceOf[typings.csstype.csstypeStrings.`run-in`]
 }
 

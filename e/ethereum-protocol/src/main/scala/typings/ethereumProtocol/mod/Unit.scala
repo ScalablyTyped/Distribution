@@ -25,36 +25,34 @@ trait Unit extends js.Object
 
 object Unit {
   @scala.inline
-  def ada: typings.ethereumProtocol.ethereumProtocolStrings.ada = this.cast("ada")
+  def ada: typings.ethereumProtocol.ethereumProtocolStrings.ada = "ada".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.ada]
   @scala.inline
-  def babbage: typings.ethereumProtocol.ethereumProtocolStrings.babbage = this.cast("babbage")
+  def babbage: typings.ethereumProtocol.ethereumProtocolStrings.babbage = "babbage".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.babbage]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def einstein: typings.ethereumProtocol.ethereumProtocolStrings.einstein = "einstein".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.einstein]
   @scala.inline
-  def einstein: typings.ethereumProtocol.ethereumProtocolStrings.einstein = this.cast("einstein")
+  def ether: typings.ethereumProtocol.ethereumProtocolStrings.ether = "ether".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.ether]
   @scala.inline
-  def ether: typings.ethereumProtocol.ethereumProtocolStrings.ether = this.cast("ether")
+  def finney: typings.ethereumProtocol.ethereumProtocolStrings.finney = "finney".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.finney]
   @scala.inline
-  def finney: typings.ethereumProtocol.ethereumProtocolStrings.finney = this.cast("finney")
+  def gether: typings.ethereumProtocol.ethereumProtocolStrings.gether = "gether".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.gether]
   @scala.inline
-  def gether: typings.ethereumProtocol.ethereumProtocolStrings.gether = this.cast("gether")
+  def grand: typings.ethereumProtocol.ethereumProtocolStrings.grand = "grand".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.grand]
   @scala.inline
-  def grand: typings.ethereumProtocol.ethereumProtocolStrings.grand = this.cast("grand")
+  def gwei: typings.ethereumProtocol.ethereumProtocolStrings.gwei = "gwei".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.gwei]
   @scala.inline
-  def gwei: typings.ethereumProtocol.ethereumProtocolStrings.gwei = this.cast("gwei")
+  def kether: typings.ethereumProtocol.ethereumProtocolStrings.kether = "kether".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.kether]
   @scala.inline
-  def kether: typings.ethereumProtocol.ethereumProtocolStrings.kether = this.cast("kether")
+  def kwei: typings.ethereumProtocol.ethereumProtocolStrings.kwei = "kwei".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.kwei]
   @scala.inline
-  def kwei: typings.ethereumProtocol.ethereumProtocolStrings.kwei = this.cast("kwei")
+  def mether: typings.ethereumProtocol.ethereumProtocolStrings.mether = "mether".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.mether]
   @scala.inline
-  def mether: typings.ethereumProtocol.ethereumProtocolStrings.mether = this.cast("mether")
+  def mwei: typings.ethereumProtocol.ethereumProtocolStrings.mwei = "mwei".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.mwei]
   @scala.inline
-  def mwei: typings.ethereumProtocol.ethereumProtocolStrings.mwei = this.cast("mwei")
+  def shannon: typings.ethereumProtocol.ethereumProtocolStrings.shannon = "shannon".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.shannon]
   @scala.inline
-  def shannon: typings.ethereumProtocol.ethereumProtocolStrings.shannon = this.cast("shannon")
+  def szabo: typings.ethereumProtocol.ethereumProtocolStrings.szabo = "szabo".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.szabo]
   @scala.inline
-  def szabo: typings.ethereumProtocol.ethereumProtocolStrings.szabo = this.cast("szabo")
-  @scala.inline
-  def tether: typings.ethereumProtocol.ethereumProtocolStrings.tether = this.cast("tether")
+  def tether: typings.ethereumProtocol.ethereumProtocolStrings.tether = "tether".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.tether]
 }
 

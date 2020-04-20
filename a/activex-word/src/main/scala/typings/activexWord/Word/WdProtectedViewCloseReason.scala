@@ -16,12 +16,10 @@ trait WdProtectedViewCloseReason extends js.Object
 
 object WdProtectedViewCloseReason {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdProtectedViewCloseEdit: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdProtectedViewCloseEdit: `1` = this.cast(1)
+  def wdProtectedViewCloseForced: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdProtectedViewCloseForced: `2` = this.cast(2)
-  @scala.inline
-  def wdProtectedViewCloseNormal: `0` = this.cast(0)
+  def wdProtectedViewCloseNormal: `0` = 0.asInstanceOf[`0`]
 }
 

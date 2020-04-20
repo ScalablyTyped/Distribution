@@ -17,7 +17,6 @@ object DeleteSuggesterRequest {
   @scala.inline
   def apply(DomainName: DomainName, SuggesterName: StandardName): DeleteSuggesterRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], SuggesterName = SuggesterName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSuggesterRequest]
   }
 }

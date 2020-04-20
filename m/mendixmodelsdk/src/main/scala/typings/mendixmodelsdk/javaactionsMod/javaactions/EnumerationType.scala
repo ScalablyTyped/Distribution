@@ -40,14 +40,14 @@ class EnumerationType protected () extends Type {
   @JSName("model")
   var model_FEnumerationType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MEnumerationType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MEnumerationType: BasicParameterType = js.native
   @JSName("containerAsJavaActionParameter")
-  def containerAsJavaActionParameter_MEnumerationType(): JavaActionParameter = js.native
+  def containerAsJavaActionParameter_MEnumerationType: JavaActionParameter = js.native
   @JSName("containerAsJavaAction")
-  def containerAsJavaAction_MEnumerationType(): JavaAction = js.native
-  def enumeration(): IEnumeration = js.native
+  def containerAsJavaAction_MEnumerationType: JavaAction = js.native
+  def enumeration: IEnumeration = js.native
   def enumeration(newValue: IEnumeration): js.Any = js.native
-  def enumerationQualifiedName(): String = js.native
+  def enumerationQualifiedName: String = js.native
 }
 
 /* static members */

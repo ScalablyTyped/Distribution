@@ -20,7 +20,6 @@ object Elevation {
   @scala.inline
   def apply(unit: AngleUnits, value: Double): Elevation = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Elevation]
   }
 }

@@ -13,7 +13,6 @@ object GroupDto {
   @scala.inline
   def apply(MaxGroupOwnable: String, key: String): GroupDto = {
     val __obj = js.Dynamic.literal(MaxGroupOwnable = MaxGroupOwnable.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupDto]
   }
 }

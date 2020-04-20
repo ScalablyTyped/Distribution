@@ -14,7 +14,6 @@ object AnonCCW {
   @scala.inline
   def apply(CCW: STEPPER_DIRECTION, CW: STEPPER_DIRECTION): AnonCCW = {
     val __obj = js.Dynamic.literal(CCW = CCW.asInstanceOf[js.Any], CW = CW.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCCW]
   }
 }

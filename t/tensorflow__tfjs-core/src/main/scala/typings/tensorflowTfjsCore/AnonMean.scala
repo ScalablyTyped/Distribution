@@ -15,7 +15,6 @@ object AnonMean {
   @scala.inline
   def apply(mean: Tensor[Rank], variance: Tensor[Rank]): AnonMean = {
     val __obj = js.Dynamic.literal(mean = mean.asInstanceOf[js.Any], variance = variance.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMean]
   }
 }

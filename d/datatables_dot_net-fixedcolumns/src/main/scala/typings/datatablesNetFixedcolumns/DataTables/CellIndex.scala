@@ -16,7 +16,6 @@ object CellIndex {
   @scala.inline
   def apply(column: Double, columnVisible: Double, row: Double): CellIndex = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnVisible = columnVisible.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CellIndex]
   }
 }

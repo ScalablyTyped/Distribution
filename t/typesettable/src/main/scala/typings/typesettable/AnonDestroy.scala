@@ -14,7 +14,6 @@ object AnonDestroy {
   @scala.inline
   def apply(destroy: () => Unit, write: (String, Double, IXAlign, Double, Double) => Unit): AnonDestroy = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), write = js.Any.fromFunction5(write))
-  
     __obj.asInstanceOf[AnonDestroy]
   }
 }

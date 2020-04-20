@@ -26,7 +26,6 @@ object ResponseLike {
     url: String
   ): ResponseLike = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResponseLike]
   }
 }

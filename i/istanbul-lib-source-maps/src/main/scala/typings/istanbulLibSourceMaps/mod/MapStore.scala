@@ -19,7 +19,7 @@ trait MapStore extends js.Object {
   def registerMap(filename: String, sourceMap: RawSourceMap): Unit
   def registerURL(transformedFilePath: String, sourceMapUrl: String): Unit
   def sourceFinder(filePath: String): String
-  def transformCoverage(coverageMap: CoverageMap): CoverageMap
+  def transformCoverage(coverageMap: CoverageMap): js.Promise[CoverageMap]
 }
 
 object MapStore {
@@ -33,7 +33,7 @@ object MapStore {
     registerURL: (String, String) => Unit,
     sourceFinder: String => String,
     sourceStore: SourceStore,
-    transformCoverage: CoverageMap => CoverageMap,
+    transformCoverage: CoverageMap => js.Promise[CoverageMap],
     verbose: Boolean,
     baseDir: String = null
   ): MapStore = {

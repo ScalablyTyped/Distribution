@@ -28,7 +28,6 @@ object QueryLoggingConfig {
     Id: QueryLoggingConfigId
   ): QueryLoggingConfig = {
     val __obj = js.Dynamic.literal(CloudWatchLogsLogGroupArn = CloudWatchLogsLogGroupArn.asInstanceOf[js.Any], HostedZoneId = HostedZoneId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryLoggingConfig]
   }
 }

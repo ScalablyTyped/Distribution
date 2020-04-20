@@ -14,7 +14,6 @@ object Errors {
   @scala.inline
   def apply(validation: StringDictionary[AnonRequired]): Errors = {
     val __obj = js.Dynamic.literal(validation = validation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Errors]
   }
 }

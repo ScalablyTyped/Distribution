@@ -15,16 +15,14 @@ trait Operand extends js.Object
 
 object Operand {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def change: typings.fsTreeDiff.fsTreeDiffStrings.change = "change".asInstanceOf[typings.fsTreeDiff.fsTreeDiffStrings.change]
   @scala.inline
-  def change: typings.fsTreeDiff.fsTreeDiffStrings.change = this.cast("change")
+  def create: typings.fsTreeDiff.fsTreeDiffStrings.create = "create".asInstanceOf[typings.fsTreeDiff.fsTreeDiffStrings.create]
   @scala.inline
-  def create: typings.fsTreeDiff.fsTreeDiffStrings.create = this.cast("create")
+  def mkdir: typings.fsTreeDiff.fsTreeDiffStrings.mkdir = "mkdir".asInstanceOf[typings.fsTreeDiff.fsTreeDiffStrings.mkdir]
   @scala.inline
-  def mkdir: typings.fsTreeDiff.fsTreeDiffStrings.mkdir = this.cast("mkdir")
+  def rmdir: typings.fsTreeDiff.fsTreeDiffStrings.rmdir = "rmdir".asInstanceOf[typings.fsTreeDiff.fsTreeDiffStrings.rmdir]
   @scala.inline
-  def rmdir: typings.fsTreeDiff.fsTreeDiffStrings.rmdir = this.cast("rmdir")
-  @scala.inline
-  def unlink: typings.fsTreeDiff.fsTreeDiffStrings.unlink = this.cast("unlink")
+  def unlink: typings.fsTreeDiff.fsTreeDiffStrings.unlink = "unlink".asInstanceOf[typings.fsTreeDiff.fsTreeDiffStrings.unlink]
 }
 

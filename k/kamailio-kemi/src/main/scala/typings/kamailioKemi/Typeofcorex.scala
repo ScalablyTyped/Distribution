@@ -44,7 +44,6 @@ object Typeofcorex {
     via_use_xavp_fields: Double => Double
   ): Typeofcorex = {
     val __obj = js.Dynamic.literal(append_branch = js.Any.fromFunction0(append_branch), append_branch_uri = js.Any.fromFunction1(append_branch_uri), append_branch_uri_q = js.Any.fromFunction2(append_branch_uri_q), has_ruri_user = js.Any.fromFunction0(has_ruri_user), has_user_agent = js.Any.fromFunction0(has_user_agent), isxflagset = js.Any.fromFunction1(isxflagset), resetxflag = js.Any.fromFunction1(resetxflag), send_data = js.Any.fromFunction2(send_data), sendx = js.Any.fromFunction3(sendx), set_recv_socket = js.Any.fromFunction1(set_recv_socket), set_send_socket = js.Any.fromFunction1(set_send_socket), set_source_address = js.Any.fromFunction1(set_source_address), setxflag = js.Any.fromFunction1(setxflag), via_add_srvid = js.Any.fromFunction1(via_add_srvid), via_add_xavp_params = js.Any.fromFunction1(via_add_xavp_params), via_use_xavp_fields = js.Any.fromFunction1(via_use_xavp_fields))
-  
     __obj.asInstanceOf[Typeofcorex]
   }
 }

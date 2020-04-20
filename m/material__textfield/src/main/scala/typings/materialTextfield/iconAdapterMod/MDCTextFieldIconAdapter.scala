@@ -43,7 +43,6 @@ object MDCTextFieldIconAdapter {
     setAttr: (String, String) => Unit
   ): MDCTextFieldIconAdapter = {
     val __obj = js.Dynamic.literal(deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), getAttr = js.Any.fromFunction1(getAttr), notifyIconAction = js.Any.fromFunction0(notifyIconAction), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), removeAttr = js.Any.fromFunction1(removeAttr), setAttr = js.Any.fromFunction2(setAttr))
-  
     __obj.asInstanceOf[MDCTextFieldIconAdapter]
   }
 }

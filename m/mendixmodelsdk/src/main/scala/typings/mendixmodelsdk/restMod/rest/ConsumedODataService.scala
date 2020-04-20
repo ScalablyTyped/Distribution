@@ -45,87 +45,87 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   @JSName("model")
   var model_FConsumedODataService: IModel = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MConsumedODataService(): FolderBase = js.native
+  def containerAsFolderBase_MConsumedODataService: FolderBase = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  def entities(): IList[ODataEntity] = js.native
+  def entities: IList[ODataEntity] = js.native
   def headersMicroflow(): js.Any = js.native
   def headersMicroflow(newValue: IMicroflow): js.Any = js.native
-  def headersMicroflowQualifiedName(): String | Null = js.native
+  def headersMicroflowQualifiedName: String | Null = js.native
   /**
     * In version 8.4.0: introduced
     */
   @JSName("headersMicroflow")
-  def headersMicroflow_Union(): IMicroflow | Null = js.native
+  def headersMicroflow_Union: IMicroflow | Null = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def httpConfiguration(): HttpConfiguration = js.native
+  def httpConfiguration: HttpConfiguration = js.native
   def httpConfiguration(newValue: HttpConfiguration): js.Any = js.native
-  def metadata(): String = js.native
+  def metadata: String = js.native
   def metadata(newValue: String): js.Any = js.native
   /**
     * In version 8.6.0: introduced
     */
-  def metadataReferences(): IList[MetadataReference] = js.native
-  def metadataUrl(): String = js.native
+  def metadataReferences: IList[MetadataReference] = js.native
+  def metadataUrl: String = js.native
   def metadataUrl(newValue: String): js.Any = js.native
   /**
     * In version 8.6.0: introduced
     */
-  def oDataVersion(): ODataVersion = js.native
+  def oDataVersion: ODataVersion = js.native
   def oDataVersion(newValue: ODataVersion): js.Any = js.native
   def proxyHost(): js.Any = js.native
   def proxyHost(newValue: IConstant): js.Any = js.native
-  def proxyHostQualifiedName(): String | Null = js.native
+  def proxyHostQualifiedName: String | Null = js.native
   @JSName("proxyHost")
-  def proxyHost_Union(): IConstant | Null = js.native
+  def proxyHost_Union: IConstant | Null = js.native
   def proxyPassword(): js.Any = js.native
   def proxyPassword(newValue: IConstant): js.Any = js.native
-  def proxyPasswordQualifiedName(): String | Null = js.native
+  def proxyPasswordQualifiedName: String | Null = js.native
   @JSName("proxyPassword")
-  def proxyPassword_Union(): IConstant | Null = js.native
+  def proxyPassword_Union: IConstant | Null = js.native
   def proxyPort(): js.Any = js.native
   def proxyPort(newValue: IConstant): js.Any = js.native
-  def proxyPortQualifiedName(): String | Null = js.native
+  def proxyPortQualifiedName: String | Null = js.native
   @JSName("proxyPort")
-  def proxyPort_Union(): IConstant | Null = js.native
-  def proxyType(): RequestProxyType = js.native
+  def proxyPort_Union: IConstant | Null = js.native
+  def proxyType: RequestProxyType = js.native
   def proxyType(newValue: RequestProxyType): js.Any = js.native
   def proxyUsername(): js.Any = js.native
   def proxyUsername(newValue: IConstant): js.Any = js.native
-  def proxyUsernameQualifiedName(): String | Null = js.native
+  def proxyUsernameQualifiedName: String | Null = js.native
   @JSName("proxyUsername")
-  def proxyUsername_Union(): IConstant | Null = js.native
+  def proxyUsername_Union: IConstant | Null = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def serviceId(): String = js.native
+  def serviceId: String = js.native
   def serviceId(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def serviceName(): String = js.native
+  def serviceName: String = js.native
   def serviceName(newValue: String): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     *
     * In version 8.5.0: introduced
     */
-  def timeoutExpression(): String = js.native
+  def timeoutExpression: String = js.native
   def timeoutExpression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 8.5.0: introduced
     */
-  def timeoutModel(): Expression = js.native
+  def timeoutModel: Expression = js.native
   def timeoutModel(newValue: Expression): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def version(): String = js.native
+  def version: String = js.native
   def version(newValue: String): js.Any = js.native
 }
 

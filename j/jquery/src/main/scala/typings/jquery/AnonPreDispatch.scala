@@ -15,7 +15,6 @@ object AnonPreDispatch {
   @scala.inline
   def apply[TTarget](preDispatch: typings.jquery.JQuery_.Event => `false` | Unit): AnonPreDispatch[TTarget] = {
     val __obj = js.Dynamic.literal(preDispatch = js.Any.fromFunction1(preDispatch))
-  
     __obj.asInstanceOf[AnonPreDispatch[TTarget]]
   }
 }

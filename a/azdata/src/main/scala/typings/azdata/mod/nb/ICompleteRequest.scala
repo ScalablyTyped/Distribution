@@ -13,7 +13,6 @@ object ICompleteRequest {
   @scala.inline
   def apply(code: String, cursor_pos: Double): ICompleteRequest = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], cursor_pos = cursor_pos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICompleteRequest]
   }
 }

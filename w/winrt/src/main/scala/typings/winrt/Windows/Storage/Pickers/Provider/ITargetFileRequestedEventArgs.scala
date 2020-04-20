@@ -12,7 +12,6 @@ object ITargetFileRequestedEventArgs {
   @scala.inline
   def apply(request: TargetFileRequest): ITargetFileRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITargetFileRequestedEventArgs]
   }
 }

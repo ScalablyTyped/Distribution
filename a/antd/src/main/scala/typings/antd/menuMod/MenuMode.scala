@@ -15,16 +15,14 @@ trait MenuMode extends js.Object
 
 object MenuMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.antd.antdStrings.horizontal = "horizontal".asInstanceOf[typings.antd.antdStrings.horizontal]
   @scala.inline
-  def horizontal: typings.antd.antdStrings.horizontal = this.cast("horizontal")
+  def `inline`: typings.antd.antdStrings.`inline` = "inline".asInstanceOf[typings.antd.antdStrings.`inline`]
   @scala.inline
-  def `inline`: typings.antd.antdStrings.`inline` = this.cast("inline")
+  def vertical: typings.antd.antdStrings.vertical = "vertical".asInstanceOf[typings.antd.antdStrings.vertical]
   @scala.inline
-  def vertical: typings.antd.antdStrings.vertical = this.cast("vertical")
+  def `vertical-left`: typings.antd.antdStrings.`vertical-left` = "vertical-left".asInstanceOf[typings.antd.antdStrings.`vertical-left`]
   @scala.inline
-  def `vertical-left`: typings.antd.antdStrings.`vertical-left` = this.cast("vertical-left")
-  @scala.inline
-  def `vertical-right`: typings.antd.antdStrings.`vertical-right` = this.cast("vertical-right")
+  def `vertical-right`: typings.antd.antdStrings.`vertical-right` = "vertical-right".asInstanceOf[typings.antd.antdStrings.`vertical-right`]
 }
 

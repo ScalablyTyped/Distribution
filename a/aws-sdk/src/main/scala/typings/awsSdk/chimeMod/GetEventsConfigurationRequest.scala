@@ -20,7 +20,6 @@ object GetEventsConfigurationRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, BotId: NonEmptyString): GetEventsConfigurationRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BotId = BotId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEventsConfigurationRequest]
   }
 }

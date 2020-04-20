@@ -13,7 +13,6 @@ object ServerValue {
   @scala.inline
   def apply(TIMESTAMP: AnonSv): ServerValue = {
     val __obj = js.Dynamic.literal(TIMESTAMP = TIMESTAMP.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerValue]
   }
 }

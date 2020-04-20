@@ -27,7 +27,6 @@ object ConfigMapKeySelector {
   @scala.inline
   def apply(key: String, name: String, optional: Boolean): ConfigMapKeySelector = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigMapKeySelector]
   }
 }

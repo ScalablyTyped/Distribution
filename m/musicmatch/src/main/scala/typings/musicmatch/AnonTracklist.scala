@@ -13,7 +13,6 @@ object AnonTracklist {
   @scala.inline
   def apply(track_list: js.Array[TrackResult]): AnonTracklist = {
     val __obj = js.Dynamic.literal(track_list = track_list.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTracklist]
   }
 }

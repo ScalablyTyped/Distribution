@@ -16,7 +16,6 @@ object DeleteFileSystemPolicyRequest {
   @scala.inline
   def apply(FileSystemId: FileSystemId): DeleteFileSystemPolicyRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFileSystemPolicyRequest]
   }
 }

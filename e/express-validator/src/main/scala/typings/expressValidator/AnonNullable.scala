@@ -14,7 +14,6 @@ object AnonNullable {
   @scala.inline
   def apply(checkFalsy: Boolean, nullable: Boolean): AnonNullable = {
     val __obj = js.Dynamic.literal(checkFalsy = checkFalsy.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNullable]
   }
 }

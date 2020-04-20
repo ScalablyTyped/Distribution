@@ -39,7 +39,7 @@ package object mod {
   // conforms
   type ConformsPredicateObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? (val : T[P]): boolean}
-    */ typings.lodash.lodashStrings.ConformsPredicateObject with T
+    */ typings.lodash.lodashStrings.ConformsPredicateObject with org.scalablytyped.runtime.TopLevel[T]
   type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type DictionaryIteratee[T] = typings.lodash.mod.ObjectIteratee[typings.lodash.mod.Dictionary[T]]
   type DictionaryIterator[T, TResult] = typings.lodash.mod.ObjectIterator[typings.lodash.mod.Dictionary[T], TResult]
@@ -165,13 +165,13 @@ package object mod {
     /* collection */ TObject, 
     /* is S */ scala.Boolean
   ]
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[
+  type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[
     T, 
     /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never}[keyof T] */ js.Any
   ]
   type PartialDeep[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias lodash.lodash.PartialDeep<T[P]> * / object}
-    */ typings.lodash.lodashStrings.PartialDeep with js.Any
+    */ typings.lodash.lodashStrings.PartialDeep with org.scalablytyped.runtime.TopLevel[js.Any]
   type PartialObject[T] = typings.lodash.GlobalPartial[T]
   type PropertyName = java.lang.String | scala.Double | js.Symbol
   type PropertyPath = typings.lodash.mod.Many[typings.lodash.mod.PropertyName]
@@ -205,6 +205,6 @@ package object mod {
     /* indexOrKey */ typings.lodash.mod.PropertyName, 
     /* object */ js.Object, 
     /* source */ js.Object, 
-    scala.Boolean
+    js.UndefOr[scala.Boolean]
   ]
 }

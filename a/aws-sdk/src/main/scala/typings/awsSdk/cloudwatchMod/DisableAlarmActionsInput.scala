@@ -16,7 +16,6 @@ object DisableAlarmActionsInput {
   @scala.inline
   def apply(AlarmNames: AlarmNames): DisableAlarmActionsInput = {
     val __obj = js.Dynamic.literal(AlarmNames = AlarmNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableAlarmActionsInput]
   }
 }

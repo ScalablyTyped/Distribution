@@ -20,7 +20,6 @@ object EventLite {
     once: (String, js.Function1[/* repeated */ js.Any, Unit]) => EventLite
   ): EventLite = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once))
-  
     __obj.asInstanceOf[EventLite]
   }
 }

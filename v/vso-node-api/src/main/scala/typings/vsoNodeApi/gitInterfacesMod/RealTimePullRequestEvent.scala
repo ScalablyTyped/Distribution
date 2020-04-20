@@ -19,7 +19,6 @@ object RealTimePullRequestEvent {
   @scala.inline
   def apply(eventId: String, pullRequestId: Double): RealTimePullRequestEvent = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RealTimePullRequestEvent]
   }
 }

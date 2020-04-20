@@ -31,6 +31,12 @@ trait TimeInfoProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField)
     */
   var startField: js.UndefOr[String] = js.undefined
+  /**
+    * The name of the field used to join or group discrete locations. For example, for hurricane tracks, trackIdField can be the hurricane name field.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#trackIdField)
+    */
+  var trackIdField: js.UndefOr[String] = js.undefined
 }
 
 object TimeInfoProperties {
@@ -39,13 +45,15 @@ object TimeInfoProperties {
     endField: String = null,
     fullTimeExtent: TimeExtentProperties = null,
     interval: TimeIntervalProperties = null,
-    startField: String = null
+    startField: String = null,
+    trackIdField: String = null
   ): TimeInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (endField != null) __obj.updateDynamic("endField")(endField.asInstanceOf[js.Any])
     if (fullTimeExtent != null) __obj.updateDynamic("fullTimeExtent")(fullTimeExtent.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (startField != null) __obj.updateDynamic("startField")(startField.asInstanceOf[js.Any])
+    if (trackIdField != null) __obj.updateDynamic("trackIdField")(trackIdField.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeInfoProperties]
   }
 }

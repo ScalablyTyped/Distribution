@@ -13,7 +13,6 @@ object SeekParam {
   @scala.inline
   def apply(offset: Double, position: Double): SeekParam = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SeekParam]
   }
 }

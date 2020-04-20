@@ -15,7 +15,6 @@ object AnonPaymentOption {
   @scala.inline
   def apply(paymentOption: card | paypal | paypalCredit): AnonPaymentOption = {
     val __obj = js.Dynamic.literal(paymentOption = paymentOption.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPaymentOption]
   }
 }

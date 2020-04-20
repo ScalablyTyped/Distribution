@@ -27,7 +27,6 @@ object PrivilegeKeyList {
     token_type: Double
   ): PrivilegeKeyList = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], token_created = token_created.asInstanceOf[js.Any], token_customset = token_customset.asInstanceOf[js.Any], token_description = token_description.asInstanceOf[js.Any], token_id1 = token_id1.asInstanceOf[js.Any], token_id2 = token_id2.asInstanceOf[js.Any], token_type = token_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrivilegeKeyList]
   }
 }

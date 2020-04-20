@@ -25,7 +25,6 @@ object SheetsOnFormSubmit {
     values: js.Array[String]
   ): SheetsOnFormSubmit = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], namedValues = namedValues.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SheetsOnFormSubmit]
   }
 }

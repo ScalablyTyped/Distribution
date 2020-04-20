@@ -16,7 +16,6 @@ object GetNetworkProfileRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): GetNetworkProfileRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetNetworkProfileRequest]
   }
 }

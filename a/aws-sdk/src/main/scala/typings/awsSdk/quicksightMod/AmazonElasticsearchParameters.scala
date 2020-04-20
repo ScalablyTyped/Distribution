@@ -16,7 +16,6 @@ object AmazonElasticsearchParameters {
   @scala.inline
   def apply(Domain: Domain): AmazonElasticsearchParameters = {
     val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AmazonElasticsearchParameters]
   }
 }

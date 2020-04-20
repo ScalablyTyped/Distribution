@@ -13,7 +13,6 @@ object TypeofDetective {
   @scala.inline
   def apply(Types: TypeofDetective): TypeofDetective = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDetective]
   }
 }

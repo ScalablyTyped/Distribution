@@ -15,7 +15,6 @@ object AnonItemCount {
   @scala.inline
   def apply(itemCount: Double): AnonItemCount = {
     val __obj = js.Dynamic.literal(itemCount = itemCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemCount]
   }
 }

@@ -21,7 +21,6 @@ object RemoveAttributesRequest {
   @scala.inline
   def apply(ApplicationId: string, AttributeType: string, UpdateAttributesRequest: UpdateAttributesRequest): RemoveAttributesRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any], UpdateAttributesRequest = UpdateAttributesRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveAttributesRequest]
   }
 }

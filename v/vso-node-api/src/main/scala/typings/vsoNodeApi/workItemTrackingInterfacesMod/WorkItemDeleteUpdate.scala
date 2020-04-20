@@ -15,7 +15,6 @@ object WorkItemDeleteUpdate {
   @scala.inline
   def apply(isDeleted: Boolean): WorkItemDeleteUpdate = {
     val __obj = js.Dynamic.literal(isDeleted = isDeleted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemDeleteUpdate]
   }
 }

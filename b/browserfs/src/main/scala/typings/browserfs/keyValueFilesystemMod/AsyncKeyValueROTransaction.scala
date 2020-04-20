@@ -18,7 +18,6 @@ object AsyncKeyValueROTransaction {
   @scala.inline
   def apply(get: (String, BFSCallback[Buffer]) => Unit): AsyncKeyValueROTransaction = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-  
     __obj.asInstanceOf[AsyncKeyValueROTransaction]
   }
 }

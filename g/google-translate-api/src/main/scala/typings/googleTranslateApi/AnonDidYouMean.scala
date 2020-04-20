@@ -13,7 +13,6 @@ object AnonDidYouMean {
   @scala.inline
   def apply(didYouMean: Boolean, iso: String): AnonDidYouMean = {
     val __obj = js.Dynamic.literal(didYouMean = didYouMean.asInstanceOf[js.Any], iso = iso.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDidYouMean]
   }
 }

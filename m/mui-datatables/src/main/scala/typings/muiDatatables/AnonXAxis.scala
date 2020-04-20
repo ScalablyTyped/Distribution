@@ -13,7 +13,6 @@ object AnonXAxis {
   @scala.inline
   def apply(xAxis: Boolean, yAxis: Boolean): AnonXAxis = {
     val __obj = js.Dynamic.literal(xAxis = xAxis.asInstanceOf[js.Any], yAxis = yAxis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonXAxis]
   }
 }

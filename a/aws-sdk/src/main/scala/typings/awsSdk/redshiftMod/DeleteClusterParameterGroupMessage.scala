@@ -16,7 +16,6 @@ object DeleteClusterParameterGroupMessage {
   @scala.inline
   def apply(ParameterGroupName: String): DeleteClusterParameterGroupMessage = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteClusterParameterGroupMessage]
   }
 }

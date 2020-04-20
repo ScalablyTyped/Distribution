@@ -16,7 +16,6 @@ object Failure {
   @scala.inline
   def apply(expected: js.Array[String], index: Index_, status: `false`): Failure = {
     val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Failure]
   }
 }

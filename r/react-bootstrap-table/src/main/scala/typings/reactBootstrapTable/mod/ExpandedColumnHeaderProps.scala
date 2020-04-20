@@ -12,7 +12,6 @@ object ExpandedColumnHeaderProps {
   @scala.inline
   def apply(anyExpand: Boolean): ExpandedColumnHeaderProps = {
     val __obj = js.Dynamic.literal(anyExpand = anyExpand.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExpandedColumnHeaderProps]
   }
 }

@@ -16,7 +16,6 @@ object DeleteListenerRequest {
   @scala.inline
   def apply(ListenerArn: GenericString): DeleteListenerRequest = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteListenerRequest]
   }
 }

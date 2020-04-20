@@ -20,7 +20,6 @@ object BlockedUsersFeedResponseRootObject {
     status: String
   ): BlockedUsersFeedResponseRootObject = {
     val __obj = js.Dynamic.literal(blocked_list = blocked_list.asInstanceOf[js.Any], next_max_id = next_max_id.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BlockedUsersFeedResponseRootObject]
   }
 }

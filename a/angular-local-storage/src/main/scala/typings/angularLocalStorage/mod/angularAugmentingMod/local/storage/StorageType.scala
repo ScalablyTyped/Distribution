@@ -12,10 +12,8 @@ trait StorageType extends js.Object
 
 object StorageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def localStorage: typings.angularLocalStorage.angularLocalStorageStrings.localStorage = "localStorage".asInstanceOf[typings.angularLocalStorage.angularLocalStorageStrings.localStorage]
   @scala.inline
-  def localStorage: typings.angularLocalStorage.angularLocalStorageStrings.localStorage = this.cast("localStorage")
-  @scala.inline
-  def sessionStorage: typings.angularLocalStorage.angularLocalStorageStrings.sessionStorage = this.cast("sessionStorage")
+  def sessionStorage: typings.angularLocalStorage.angularLocalStorageStrings.sessionStorage = "sessionStorage".asInstanceOf[typings.angularLocalStorage.angularLocalStorageStrings.sessionStorage]
 }
 

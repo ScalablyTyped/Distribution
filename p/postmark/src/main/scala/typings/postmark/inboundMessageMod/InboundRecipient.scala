@@ -13,7 +13,6 @@ object InboundRecipient {
   @scala.inline
   def apply(Email: String, MailboxHash: String, Name: String): InboundRecipient = {
     val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], MailboxHash = MailboxHash.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InboundRecipient]
   }
 }

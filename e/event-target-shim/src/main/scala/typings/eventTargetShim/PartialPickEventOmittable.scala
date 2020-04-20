@@ -1,11 +1,12 @@
 package typings.eventTargetShim
 
+import typings.eventTargetShim.mod.EventTarget.EventDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Pick<event-target-shim.event-target-shim.Event, event-target-shim.event-target-shim.EventTarget.OmittableEventKeys>> */
-trait PartialPickEventOmittable extends js.Object {
+trait PartialPickEventOmittable[TEvents /* <: EventDefinition */] extends js.Object {
   var AT_TARGET: js.UndefOr[Double] = js.undefined
   var BUBBLING_PHASE: js.UndefOr[Double] = js.undefined
   var CAPTURING_PHASE: js.UndefOr[Double] = js.undefined
@@ -14,8 +15,8 @@ trait PartialPickEventOmittable extends js.Object {
   var cancelBubble: js.UndefOr[Boolean] = js.undefined
   var cancelable: js.UndefOr[Boolean] = js.undefined
   var composed: js.UndefOr[Boolean] = js.undefined
-  var composedPath: js.UndefOr[js.Function0[js.Array[EventTargetstandardAddEventListener]]] = js.undefined
-  var currentTarget: js.UndefOr[EventTargetstandardAddEventListener] = js.undefined
+  var composedPath: js.UndefOr[js.Function0[js.Array[EventTargetstandardAddEventListener[TEvents]]]] = js.undefined
+  var currentTarget: js.UndefOr[EventTargetstandardAddEventListener[TEvents]] = js.undefined
   var defaultPrevented: js.UndefOr[Boolean] = js.undefined
   var eventPhase: js.UndefOr[Double] = js.undefined
   var initEvent: js.UndefOr[
@@ -32,13 +33,13 @@ trait PartialPickEventOmittable extends js.Object {
   var srcElement: js.UndefOr[js.Any] = js.undefined
   var stopImmediatePropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
   var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var target: js.UndefOr[EventTargetstandardAddEventListener] = js.undefined
+  var target: js.UndefOr[EventTargetstandardAddEventListener[TEvents]] = js.undefined
   var timeStamp: js.UndefOr[Double] = js.undefined
 }
 
 object PartialPickEventOmittable {
   @scala.inline
-  def apply(
+  def apply[TEvents /* <: EventDefinition */](
     AT_TARGET: Int | Double = null,
     BUBBLING_PHASE: Int | Double = null,
     CAPTURING_PHASE: Int | Double = null,
@@ -47,8 +48,8 @@ object PartialPickEventOmittable {
     cancelBubble: js.UndefOr[Boolean] = js.undefined,
     cancelable: js.UndefOr[Boolean] = js.undefined,
     composed: js.UndefOr[Boolean] = js.undefined,
-    composedPath: () => js.Array[EventTargetstandardAddEventListener] = null,
-    currentTarget: EventTargetstandardAddEventListener = null,
+    composedPath: () => js.Array[EventTargetstandardAddEventListener[TEvents]] = null,
+    currentTarget: EventTargetstandardAddEventListener[TEvents] = null,
     defaultPrevented: js.UndefOr[Boolean] = js.undefined,
     eventPhase: Int | Double = null,
     initEvent: (/* type */ String, /* bubbles */ js.UndefOr[Boolean], /* cancelable */ js.UndefOr[Boolean]) => Unit = null,
@@ -58,9 +59,9 @@ object PartialPickEventOmittable {
     srcElement: js.Any = null,
     stopImmediatePropagation: () => Unit = null,
     stopPropagation: () => Unit = null,
-    target: EventTargetstandardAddEventListener = null,
+    target: EventTargetstandardAddEventListener[TEvents] = null,
     timeStamp: Int | Double = null
-  ): PartialPickEventOmittable = {
+  ): PartialPickEventOmittable[TEvents] = {
     val __obj = js.Dynamic.literal()
     if (AT_TARGET != null) __obj.updateDynamic("AT_TARGET")(AT_TARGET.asInstanceOf[js.Any])
     if (BUBBLING_PHASE != null) __obj.updateDynamic("BUBBLING_PHASE")(BUBBLING_PHASE.asInstanceOf[js.Any])
@@ -83,7 +84,7 @@ object PartialPickEventOmittable {
     if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(js.Any.fromFunction0(stopPropagation))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PartialPickEventOmittable]
+    __obj.asInstanceOf[PartialPickEventOmittable[TEvents]]
   }
 }
 

@@ -13,7 +13,9 @@ trait IStreamingRecognitionResult extends js.Object {
   /** StreamingRecognitionResult isFinal */
   var isFinal: js.UndefOr[Boolean | Null] = js.undefined
   /** StreamingRecognitionResult messageType */
-  var messageType: js.UndefOr[MessageType | String | Null] = js.undefined
+  var messageType: js.UndefOr[
+    MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType * / any */ String) | Null
+  ] = js.undefined
   /** StreamingRecognitionResult speechEndOffset */
   var speechEndOffset: js.UndefOr[IDuration | Null] = js.undefined
   /** StreamingRecognitionResult speechWordInfo */
@@ -29,7 +31,7 @@ object IStreamingRecognitionResult {
   def apply(
     confidence: Int | Double = null,
     isFinal: js.UndefOr[Boolean] = js.undefined,
-    messageType: MessageType | String = null,
+    messageType: MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType * / any */ String) = null,
     speechEndOffset: IDuration = null,
     speechWordInfo: js.Array[ISpeechWordInfo] = null,
     stability: Int | Double = null,

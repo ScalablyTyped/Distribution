@@ -12,7 +12,6 @@ object AnonRefresh {
   @scala.inline
   def apply(refresh: () => Unit): AnonRefresh = {
     val __obj = js.Dynamic.literal(refresh = js.Any.fromFunction0(refresh))
-  
     __obj.asInstanceOf[AnonRefresh]
   }
 }

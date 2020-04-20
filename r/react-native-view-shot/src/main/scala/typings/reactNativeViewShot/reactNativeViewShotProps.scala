@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeViewShotProps {
   @scala.inline
-  def ReactNativeViewShotProps: ViewShotProperties.type = typings.reactNativeViewShot.mod.ViewShotProperties
+  def ReactNativeViewShotProps: ViewShotProperties.type = ViewShotProperties
   type ReactNativeViewShotProps = ViewShotProperties
 }
 

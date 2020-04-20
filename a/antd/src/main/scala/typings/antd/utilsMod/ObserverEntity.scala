@@ -22,7 +22,6 @@ object ObserverEntity {
     target: HTMLElement | Window_
   ): ObserverEntity = {
     val __obj = js.Dynamic.literal(affixList = affixList.asInstanceOf[js.Any], eventHandlers = eventHandlers.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObserverEntity]
   }
 }

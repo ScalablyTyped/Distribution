@@ -14,7 +14,6 @@ object ListrRenderer {
   @scala.inline
   def apply(end: Error => Unit, render: () => Unit): ListrRenderer = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction1(end), render = js.Any.fromFunction0(render))
-  
     __obj.asInstanceOf[ListrRenderer]
   }
 }

@@ -12,7 +12,6 @@ package object stackingUtilsMod {
       typings.plottable.stackingUtilsMod.GenericStackedDatum[D]
     ]
   ]
-  type IStackingOrder = java.lang.String
   type StackedDatum = typings.plottable.stackingUtilsMod.GenericStackedDatum[java.lang.String]
   type StackingResult = typings.plottable.stackingUtilsMod.GenericStackingResult[java.lang.String]
 }

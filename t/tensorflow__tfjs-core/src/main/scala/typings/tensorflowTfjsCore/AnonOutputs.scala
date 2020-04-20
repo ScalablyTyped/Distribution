@@ -15,7 +15,6 @@ object AnonOutputs {
   @scala.inline
   def apply(inputs: StringDictionary[ModelTensorInfo], outputs: StringDictionary[ModelTensorInfo]): AnonOutputs = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOutputs]
   }
 }

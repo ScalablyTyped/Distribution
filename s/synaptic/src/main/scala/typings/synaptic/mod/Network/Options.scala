@@ -15,7 +15,6 @@ object Options {
   @scala.inline
   def apply(hidden: js.Array[Layer], input: Layer, output: Layer): Options = {
     val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

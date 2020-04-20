@@ -17,7 +17,6 @@ object xnumberynumberImage {
   @scala.inline
   def apply(data: js.Any, height: Double, width: Double, x: Double, y: Double): xnumberynumberImage = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[xnumberynumberImage]
   }
 }

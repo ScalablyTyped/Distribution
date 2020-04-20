@@ -13,7 +13,6 @@ object AnonChannelChannel {
   @scala.inline
   def apply(channel: Channel): AnonChannelChannel = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChannelChannel]
   }
 }

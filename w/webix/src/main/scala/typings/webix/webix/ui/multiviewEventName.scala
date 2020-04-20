@@ -15,16 +15,14 @@ trait multiviewEventName extends js.Object
 
 object multiviewEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def onBeforeBack: typings.webix.webixStrings.onBeforeBack = "onBeforeBack".asInstanceOf[typings.webix.webixStrings.onBeforeBack]
   @scala.inline
-  def onBeforeBack: typings.webix.webixStrings.onBeforeBack = this.cast("onBeforeBack")
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   @scala.inline
-  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   @scala.inline
-  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  def onViewChange: typings.webix.webixStrings.onViewChange = "onViewChange".asInstanceOf[typings.webix.webixStrings.onViewChange]
   @scala.inline
-  def onViewChange: typings.webix.webixStrings.onViewChange = this.cast("onViewChange")
-  @scala.inline
-  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }
 

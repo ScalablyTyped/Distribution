@@ -13,7 +13,6 @@ object AnonSubId {
   @scala.inline
   def apply(subId: `oj-datagrid-cell`): AnonSubId = {
     val __obj = js.Dynamic.literal(subId = subId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSubId]
   }
 }

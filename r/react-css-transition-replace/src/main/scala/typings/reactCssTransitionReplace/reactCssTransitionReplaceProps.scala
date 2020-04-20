@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait reactCssTransitionReplaceProps {
   @scala.inline
-  def ClassProps: Props.type = typings.reactCssTransitionReplace.mod.Props
+  def ClassProps: Props.type = Props
   type ClassProps = Props
   @scala.inline
-  def ReactCssTransitionReplaceProps: Props.type = typings.reactCssTransitionReplace.mod.Props
+  def ReactCssTransitionReplaceProps: Props.type = Props
   type ReactCssTransitionReplaceProps = Props
 }
 

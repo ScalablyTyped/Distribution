@@ -16,7 +16,6 @@ object AnonOriginalValue {
   @scala.inline
   def apply(originalValue: String, resolutions: js.Array[LexSlotResolution]): AnonOriginalValue = {
     val __obj = js.Dynamic.literal(originalValue = originalValue.asInstanceOf[js.Any], resolutions = resolutions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOriginalValue]
   }
 }

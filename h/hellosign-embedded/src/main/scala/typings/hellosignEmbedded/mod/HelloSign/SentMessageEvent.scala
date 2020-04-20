@@ -20,7 +20,6 @@ object SentMessageEvent {
     signature_request_info: AnonCcemailaddresses
   ): SentMessageEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], signature_request_id = signature_request_id.asInstanceOf[js.Any], signature_request_info = signature_request_info.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SentMessageEvent]
   }
 }

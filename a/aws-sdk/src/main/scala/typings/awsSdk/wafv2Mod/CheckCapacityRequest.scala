@@ -20,7 +20,6 @@ object CheckCapacityRequest {
   @scala.inline
   def apply(Rules: Rules, Scope: Scope): CheckCapacityRequest = {
     val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckCapacityRequest]
   }
 }

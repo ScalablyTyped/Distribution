@@ -32,7 +32,6 @@ object MessageEvent {
     timetoken: String
   ): MessageEvent = {
     val __obj = js.Dynamic.literal(actualChannel = actualChannel.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], subscribedChannel = subscribedChannel.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageEvent]
   }
 }

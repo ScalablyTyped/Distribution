@@ -14,12 +14,10 @@ trait LineType extends js.Object
 
 object LineType {
   @scala.inline
-  def added: typings.gitDiffParser.gitDiffParserStrings.added = this.cast("added")
+  def added: typings.gitDiffParser.gitDiffParserStrings.added = "added".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.added]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deleted: typings.gitDiffParser.gitDiffParserStrings.deleted = "deleted".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.deleted]
   @scala.inline
-  def deleted: typings.gitDiffParser.gitDiffParserStrings.deleted = this.cast("deleted")
-  @scala.inline
-  def normal: typings.gitDiffParser.gitDiffParserStrings.normal = this.cast("normal")
+  def normal: typings.gitDiffParser.gitDiffParserStrings.normal = "normal".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.normal]
 }
 

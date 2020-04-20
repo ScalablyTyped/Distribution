@@ -402,8 +402,6 @@ trait AnonAcceptInvitation extends js.Object {
     *
     * *   `public_repo` scope or `repo` scope to create a public repository
     * *   `repo` scope to create a private repository
-    *
-    * \`
     */
   @JSName("createUsingTemplate")
   var createUsingTemplate_Original: Anon348 = js.native
@@ -1498,8 +1496,6 @@ trait AnonAcceptInvitation extends js.Object {
     *
     * *   `public_repo` scope or `repo` scope to create a public repository
     * *   `repo` scope to create a private repository
-    *
-    * \`
     */
   def createUsingTemplate(): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ReposCreateUsingTemplateResponse> */ _

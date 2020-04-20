@@ -1,5 +1,6 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.raphael.ArraykeyofRaphaelReadAttr
 import typings.raphael.PartialRaphaelAttributes
 import typings.raphael.PartialRaphaelGlowSetting
@@ -183,7 +184,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
   // https://github.com/microsoft/TypeScript/issues/22679
   K /* <: ArraykeyofRaphaelReadAttr */](attributeNames: K): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof K ]: K[P] extends 'transform'? raphael.raphael.RaphaelReadAttributes[K[P]] | undefined : never}
-    */ typings.raphael.raphaelStrings.RaphaelBaseElement with js.Any = js.native
+    */ typings.raphael.raphaelStrings.RaphaelBaseElement with TopLevel[js.Any] = js.native
   @JSName("attr")
   def attr_arrowend(attributeName: `arrow-end`): this.type = js.native
   /**

@@ -20,16 +20,14 @@ trait FORMAT extends js.Object
 
 object FORMAT {
   @scala.inline
-  def NAME_ONLY: `4` = this.cast(4)
+  def NAME_ONLY: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def NAME_STATUS: `5` = this.cast(5)
+  def NAME_STATUS: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def PATCH: `1` = this.cast(1)
+  def PATCH: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def PATCH_HEADER: `2` = this.cast(2)
+  def PATCH_HEADER: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def RAW: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RAW: `3` = 3.asInstanceOf[`3`]
 }
 

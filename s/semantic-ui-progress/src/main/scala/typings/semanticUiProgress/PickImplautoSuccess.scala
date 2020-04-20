@@ -13,7 +13,6 @@ object PickImplautoSuccess {
   @scala.inline
   def apply(autoSuccess: Boolean): PickImplautoSuccess = {
     val __obj = js.Dynamic.literal(autoSuccess = autoSuccess.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplautoSuccess]
   }
 }

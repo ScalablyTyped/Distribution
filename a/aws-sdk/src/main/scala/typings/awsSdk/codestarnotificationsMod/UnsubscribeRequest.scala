@@ -20,7 +20,6 @@ object UnsubscribeRequest {
   @scala.inline
   def apply(Arn: NotificationRuleArn, TargetAddress: TargetAddress): UnsubscribeRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], TargetAddress = TargetAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnsubscribeRequest]
   }
 }

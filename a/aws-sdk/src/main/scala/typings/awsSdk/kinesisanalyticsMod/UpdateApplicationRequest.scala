@@ -28,7 +28,6 @@ object UpdateApplicationRequest {
     CurrentApplicationVersionId: ApplicationVersionId
   ): UpdateApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], ApplicationUpdate = ApplicationUpdate.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateApplicationRequest]
   }
 }

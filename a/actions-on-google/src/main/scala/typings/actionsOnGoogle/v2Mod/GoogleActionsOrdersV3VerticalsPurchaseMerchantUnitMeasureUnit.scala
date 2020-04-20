@@ -16,18 +16,16 @@ trait GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureUnit extends js.O
 
 object GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasureUnit {
   @scala.inline
-  def GRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.GRAM = this.cast("GRAM")
+  def GRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.GRAM = "GRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GRAM]
   @scala.inline
-  def KILOGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.KILOGRAM = this.cast("KILOGRAM")
+  def KILOGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.KILOGRAM = "KILOGRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.KILOGRAM]
   @scala.inline
-  def MILLIGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.MILLIGRAM = this.cast("MILLIGRAM")
+  def MILLIGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.MILLIGRAM = "MILLIGRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.MILLIGRAM]
   @scala.inline
-  def OUNCE: typings.actionsOnGoogle.actionsOnGoogleStrings.OUNCE = this.cast("OUNCE")
+  def OUNCE: typings.actionsOnGoogle.actionsOnGoogleStrings.OUNCE = "OUNCE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OUNCE]
   @scala.inline
-  def POUND: typings.actionsOnGoogle.actionsOnGoogleStrings.POUND = this.cast("POUND")
+  def POUND: typings.actionsOnGoogle.actionsOnGoogleStrings.POUND = "POUND".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.POUND]
   @scala.inline
-  def UNIT_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNIT_UNSPECIFIED = this.cast("UNIT_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNIT_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNIT_UNSPECIFIED = "UNIT_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNIT_UNSPECIFIED]
 }
 

@@ -16,12 +16,10 @@ trait WdFarEastLineBreakLevel extends js.Object
 
 object WdFarEastLineBreakLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdFarEastLineBreakLevelCustom: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdFarEastLineBreakLevelCustom: `2` = this.cast(2)
+  def wdFarEastLineBreakLevelNormal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdFarEastLineBreakLevelNormal: `0` = this.cast(0)
-  @scala.inline
-  def wdFarEastLineBreakLevelStrict: `1` = this.cast(1)
+  def wdFarEastLineBreakLevelStrict: `1` = 1.asInstanceOf[`1`]
 }
 

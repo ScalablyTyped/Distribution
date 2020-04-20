@@ -14,7 +14,6 @@ object ExpressRouterArgs {
   @scala.inline
   def apply(request: AnonBaseUrl, routes: Routes): ExpressRouterArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExpressRouterArgs]
   }
 }

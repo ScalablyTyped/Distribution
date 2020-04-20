@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
-import typings.reactVirtualized.AnonOverscanStartIndex
 import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCache
 import typings.reactVirtualized.esGridMod.GridCellRangeRenderer
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetter
@@ -18,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-virtualized.react-virtualized/dist/es/Grid.GridCoreProps & {  deferredMeasurementCache ? :react-virtualized.react-virtualized/dist/es/CellMeasurer.CellMeasurerCache,   autoHeight ? :boolean,   className ? :string,   estimatedRowSize ? :number,   height  :number, noRowsRenderer ? (): react.react._Global_.JSX.Element, onRowsRendered ? (info : {  overscanStartIndex  :number,   overscanStopIndex  :number,   startIndex  :number,   stopIndex  :number}): void,   overscanRowCount ? :number, onScroll ? (params : react-virtualized.react-virtualized/dist/es/ScrollSync.OnScrollParams): void,   overscanIndicesGetter ? :react-virtualized.react-virtualized/dist/es/Grid.OverscanIndicesGetter,   rowHeight  :number | (info : react-virtualized.react-virtualized.Index): number,   rowRenderer  :react-virtualized.react-virtualized/dist/es/List.ListRowRenderer,   rowCount  :number,   scrollToAlignment ? :string,   scrollToIndex ? :number,   scrollTop ? :number,   style ? :react.react.CSSProperties,   tabIndex ? :number | null,   width  :number} */
+/* Inlined react-virtualized.react-virtualized/dist/es/Grid.GridCoreProps & {  deferredMeasurementCache ? :react-virtualized.react-virtualized/dist/es/CellMeasurer.CellMeasurerCache,   autoHeight ? :boolean,   className ? :string,   estimatedRowSize ? :number,   height  :number, noRowsRenderer ? (): react.react._Global_.JSX.Element, onRowsRendered ? (info : react-virtualized.react-virtualized/dist/es/List.RenderedRows): void,   overscanRowCount ? :number, onScroll ? (params : react-virtualized.react-virtualized/dist/es/ScrollSync.OnScrollParams): void,   overscanIndicesGetter ? :react-virtualized.react-virtualized/dist/es/Grid.OverscanIndicesGetter,   rowHeight  :number | (info : react-virtualized.react-virtualized.Index): number,   rowRenderer  :react-virtualized.react-virtualized/dist/es/List.ListRowRenderer,   rowCount  :number,   scrollToAlignment ? :string,   scrollToIndex ? :number,   scrollTop ? :number,   style ? :react.react.CSSProperties,   tabIndex ? :number | null,   width  :number} */
 @js.native
 trait ListProps
   extends /**
@@ -125,7 +124,7 @@ trait ListProps
     * Callback invoked with information about the slice of rows that were just rendered.
     * ({ startIndex, stopIndex }): void
     */
-  var onRowsRendered: js.UndefOr[js.Function1[/* info */ AnonOverscanStartIndex, Unit]] = js.native
+  var onRowsRendered: js.UndefOr[js.Function1[/* info */ RenderedRows, Unit]] = js.native
   /**
     * Callback invoked whenever the scroll offset changes within the inner scrollable region.
     * This callback can be used to sync scrolling between lists, tables, or grids.

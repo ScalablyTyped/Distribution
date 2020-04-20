@@ -14,7 +14,6 @@ object AnonClientHeight {
   @scala.inline
   def apply(clientHeight: Double, scrollHeight: Double, scrollTop: Double): AnonClientHeight = {
     val __obj = js.Dynamic.literal(clientHeight = clientHeight.asInstanceOf[js.Any], scrollHeight = scrollHeight.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClientHeight]
   }
 }

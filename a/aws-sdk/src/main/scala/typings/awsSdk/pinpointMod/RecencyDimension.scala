@@ -20,7 +20,6 @@ object RecencyDimension {
   @scala.inline
   def apply(Duration: Duration, RecencyType: RecencyType): RecencyDimension = {
     val __obj = js.Dynamic.literal(Duration = Duration.asInstanceOf[js.Any], RecencyType = RecencyType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecencyDimension]
   }
 }

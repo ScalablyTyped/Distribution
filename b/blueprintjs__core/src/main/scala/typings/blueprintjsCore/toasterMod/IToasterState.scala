@@ -12,7 +12,6 @@ object IToasterState {
   @scala.inline
   def apply(toasts: js.Array[IToastOptions]): IToasterState = {
     val __obj = js.Dynamic.literal(toasts = toasts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IToasterState]
   }
 }

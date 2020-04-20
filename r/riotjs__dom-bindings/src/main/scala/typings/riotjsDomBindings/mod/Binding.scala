@@ -19,7 +19,6 @@ object Binding {
     update: (Scope, ParentScope) => Binding[_, _]
   ): Binding[Scope, ParentScope] = {
     val __obj = js.Dynamic.literal(mount = js.Any.fromFunction4(mount), unmount = js.Any.fromFunction3(unmount), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[Binding[Scope, ParentScope]]
   }
 }

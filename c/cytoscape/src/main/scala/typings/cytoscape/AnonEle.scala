@@ -20,7 +20,6 @@ object AnonEle {
   @scala.inline
   def apply[T](ele: SingularElementReturnValue, value: T): AnonEle[T] = {
     val __obj = js.Dynamic.literal(ele = ele.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEle[T]]
   }
 }

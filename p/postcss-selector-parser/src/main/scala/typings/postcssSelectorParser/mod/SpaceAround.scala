@@ -13,7 +13,6 @@ object SpaceAround {
   @scala.inline
   def apply(after: String, before: String): SpaceAround = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpaceAround]
   }
 }

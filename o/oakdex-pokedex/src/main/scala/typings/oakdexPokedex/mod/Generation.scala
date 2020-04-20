@@ -15,7 +15,6 @@ object Generation {
   @scala.inline
   def apply(dex_name: String, games: js.Array[Translations], names: Translations, number: Double): Generation = {
     val __obj = js.Dynamic.literal(dex_name = dex_name.asInstanceOf[js.Any], games = games.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Generation]
   }
 }

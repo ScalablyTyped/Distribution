@@ -33,7 +33,6 @@ object RegisterUpdateOptions {
     intent: String
   ): RegisterUpdateOptions = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], frequency = frequency.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterUpdateOptions]
   }
 }

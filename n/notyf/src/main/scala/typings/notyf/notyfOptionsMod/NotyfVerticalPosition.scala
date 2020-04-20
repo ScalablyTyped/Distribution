@@ -13,12 +13,10 @@ trait NotyfVerticalPosition extends js.Object
 
 object NotyfVerticalPosition {
   @scala.inline
-  def bottom: typings.notyf.notyfStrings.bottom = this.cast("bottom")
+  def bottom: typings.notyf.notyfStrings.bottom = "bottom".asInstanceOf[typings.notyf.notyfStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.notyf.notyfStrings.center = "center".asInstanceOf[typings.notyf.notyfStrings.center]
   @scala.inline
-  def center: typings.notyf.notyfStrings.center = this.cast("center")
-  @scala.inline
-  def top: typings.notyf.notyfStrings.top = this.cast("top")
+  def top: typings.notyf.notyfStrings.top = "top".asInstanceOf[typings.notyf.notyfStrings.top]
 }
 

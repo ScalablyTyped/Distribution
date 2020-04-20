@@ -23,10 +23,10 @@ class WidgetTranslation protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FWidgetTranslation: IModel = js.native
-  def containerAsWidgetValueType(): WidgetValueType = js.native
-  def languageCode(): String = js.native
+  def containerAsWidgetValueType: WidgetValueType = js.native
+  def languageCode: String = js.native
   def languageCode(newValue: String): js.Any = js.native
-  def text(): String = js.native
+  def text: String = js.native
   def text(newValue: String): js.Any = js.native
 }
 

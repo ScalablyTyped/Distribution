@@ -18,7 +18,6 @@ object Get {
   @scala.inline
   def apply[TResponse](request: AnonHeaders, response: AnonData[TResponse]): Get[TResponse] = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Get[TResponse]]
   }
 }

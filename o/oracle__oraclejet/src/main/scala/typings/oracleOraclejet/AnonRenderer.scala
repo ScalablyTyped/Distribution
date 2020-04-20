@@ -13,7 +13,6 @@ object AnonRenderer {
   @scala.inline
   def apply(renderer: TooltipContext => AnonInsert | AnonPreventDefault): AnonRenderer = {
     val __obj = js.Dynamic.literal(renderer = js.Any.fromFunction1(renderer))
-  
     __obj.asInstanceOf[AnonRenderer]
   }
 }

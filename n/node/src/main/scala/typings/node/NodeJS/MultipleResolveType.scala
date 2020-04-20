@@ -12,10 +12,8 @@ trait MultipleResolveType extends js.Object
 
 object MultipleResolveType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def reject: typings.node.nodeStrings.reject = "reject".asInstanceOf[typings.node.nodeStrings.reject]
   @scala.inline
-  def reject: typings.node.nodeStrings.reject = this.cast("reject")
-  @scala.inline
-  def resolve: typings.node.nodeStrings.resolve = this.cast("resolve")
+  def resolve: typings.node.nodeStrings.resolve = "resolve".asInstanceOf[typings.node.nodeStrings.resolve]
 }
 

@@ -15,7 +15,6 @@ object AnonSummary {
   @scala.inline
   def apply(groups: js.Array[MetadataGroup], name: String, summary: String): AnonSummary = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSummary]
   }
 }

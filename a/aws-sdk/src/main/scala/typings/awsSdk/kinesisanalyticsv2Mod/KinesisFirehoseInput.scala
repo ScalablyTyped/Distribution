@@ -16,7 +16,6 @@ object KinesisFirehoseInput {
   @scala.inline
   def apply(ResourceARN: ResourceARN): KinesisFirehoseInput = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinesisFirehoseInput]
   }
 }

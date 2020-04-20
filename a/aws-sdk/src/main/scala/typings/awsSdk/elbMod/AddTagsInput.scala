@@ -20,7 +20,6 @@ object AddTagsInput {
   @scala.inline
   def apply(LoadBalancerNames: LoadBalancerNames, Tags: TagList): AddTagsInput = {
     val __obj = js.Dynamic.literal(LoadBalancerNames = LoadBalancerNames.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddTagsInput]
   }
 }

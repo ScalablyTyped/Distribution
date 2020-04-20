@@ -37,7 +37,6 @@ object AnonCommits {
     releases: js.Array[Release]
   ): AnonCommits = {
     val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], lastRelease = lastRelease.asInstanceOf[js.Any], nextRelease = nextRelease.asInstanceOf[js.Any], releases = releases.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCommits]
   }
 }

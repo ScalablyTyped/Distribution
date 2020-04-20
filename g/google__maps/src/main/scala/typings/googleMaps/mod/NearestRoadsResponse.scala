@@ -14,7 +14,6 @@ object NearestRoadsResponse {
   @scala.inline
   def apply(snappedPoints: js.Array[AnonLocation]): NearestRoadsResponse = {
     val __obj = js.Dynamic.literal(snappedPoints = snappedPoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NearestRoadsResponse]
   }
 }

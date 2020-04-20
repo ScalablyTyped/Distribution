@@ -13,7 +13,6 @@ object Route {
   @scala.inline
   def apply(store: Store): Route = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Route]
   }
 }

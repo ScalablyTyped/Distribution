@@ -17,20 +17,18 @@ trait Flags extends js.Object
 
 object Flags {
   @scala.inline
-  def c: typings.d.dStrings.c = this.cast("c")
+  def c: typings.d.dStrings.c = "c".asInstanceOf[typings.d.dStrings.c]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ce: typings.d.dStrings.ce = "ce".asInstanceOf[typings.d.dStrings.ce]
   @scala.inline
-  def ce: typings.d.dStrings.ce = this.cast("ce")
+  def cew: typings.d.dStrings.cew = "cew".asInstanceOf[typings.d.dStrings.cew]
   @scala.inline
-  def cew: typings.d.dStrings.cew = this.cast("cew")
+  def cw: typings.d.dStrings.cw = "cw".asInstanceOf[typings.d.dStrings.cw]
   @scala.inline
-  def cw: typings.d.dStrings.cw = this.cast("cw")
+  def e: typings.d.dStrings.e = "e".asInstanceOf[typings.d.dStrings.e]
   @scala.inline
-  def e: typings.d.dStrings.e = this.cast("e")
+  def ew: typings.d.dStrings.ew = "ew".asInstanceOf[typings.d.dStrings.ew]
   @scala.inline
-  def ew: typings.d.dStrings.ew = this.cast("ew")
-  @scala.inline
-  def w: typings.d.dStrings.w = this.cast("w")
+  def w: typings.d.dStrings.w = "w".asInstanceOf[typings.d.dStrings.w]
 }
 

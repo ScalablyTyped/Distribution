@@ -15,7 +15,6 @@ object SubscriptionObserver {
   @scala.inline
   def apply[T](closed: Boolean, complete: () => Unit, error: js.Any => Unit, next: T => Unit): SubscriptionObserver[T] = {
     val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
-  
     __obj.asInstanceOf[SubscriptionObserver[T]]
   }
 }

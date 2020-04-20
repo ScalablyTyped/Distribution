@@ -22,7 +22,6 @@ object AnonTWDTZS {
     TZS: js.Array[String]
   ): AnonTWDTZS = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], KES = KES.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], TZS = TZS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTWDTZS]
   }
 }

@@ -13,7 +13,6 @@ object EditorLightbulbOptions {
   @scala.inline
   def apply(enabled: Boolean): EditorLightbulbOptions = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditorLightbulbOptions]
   }
 }

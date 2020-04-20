@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCoinhiveProps {
   @scala.inline
-  def ReactCoinhiveProps: CoinHiveProps.type = typings.reactCoinhive.mod.CoinHiveProps
+  def ReactCoinhiveProps: CoinHiveProps.type = CoinHiveProps
   type ReactCoinhiveProps = CoinHiveProps
 }
 

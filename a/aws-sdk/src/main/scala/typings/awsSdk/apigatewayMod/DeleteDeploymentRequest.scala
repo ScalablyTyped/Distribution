@@ -20,7 +20,6 @@ object DeleteDeploymentRequest {
   @scala.inline
   def apply(deploymentId: String, restApiId: String): DeleteDeploymentRequest = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDeploymentRequest]
   }
 }

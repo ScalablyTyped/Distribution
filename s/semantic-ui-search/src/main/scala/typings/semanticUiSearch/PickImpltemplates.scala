@@ -14,7 +14,6 @@ object PickImpltemplates {
   @scala.inline
   def apply(templates: TemplatesSettings): PickImpltemplates = {
     val __obj = js.Dynamic.literal(templates = templates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpltemplates]
   }
 }

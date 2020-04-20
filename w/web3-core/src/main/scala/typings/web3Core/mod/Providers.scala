@@ -33,7 +33,6 @@ object Providers {
     ]
   ): Providers = {
     val __obj = js.Dynamic.literal(HttpProvider = HttpProvider.asInstanceOf[js.Any], IpcProvider = IpcProvider.asInstanceOf[js.Any], WebsocketProvider = WebsocketProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Providers]
   }
 }

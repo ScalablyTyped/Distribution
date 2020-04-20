@@ -12,7 +12,6 @@ object IDiffLineInformation {
   @scala.inline
   def apply(equivalentLineNumber: Double): IDiffLineInformation = {
     val __obj = js.Dynamic.literal(equivalentLineNumber = equivalentLineNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDiffLineInformation]
   }
 }

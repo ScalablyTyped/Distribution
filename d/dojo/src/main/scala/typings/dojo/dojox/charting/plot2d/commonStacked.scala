@@ -39,7 +39,6 @@ object commonStacked {
     getValue: (js.Any, js.Any, js.Any) => js.Array[_]
   ): commonStacked = {
     val __obj = js.Dynamic.literal(collectStats = js.Any.fromFunction1(collectStats), getIndexValue = js.Any.fromFunction3(getIndexValue), getValue = js.Any.fromFunction3(getValue))
-  
     __obj.asInstanceOf[commonStacked]
   }
 }

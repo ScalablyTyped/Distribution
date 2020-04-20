@@ -11,12 +11,12 @@ trait OnLinkURLResponse extends js.Object {
   /**
   	 * The url of the link that should be navigated to.
   	 */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object OnLinkURLResponse {
   @scala.inline
-  def apply(url: String = null): OnLinkURLResponse = {
+  def apply(url: java.lang.String = null): OnLinkURLResponse = {
     val __obj = js.Dynamic.literal()
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnLinkURLResponse]

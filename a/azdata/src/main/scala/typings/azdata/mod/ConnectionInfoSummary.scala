@@ -47,7 +47,6 @@ object ConnectionInfoSummary {
     serverInfo: ServerInfo
   ): ConnectionInfoSummary = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], connectionSummary = connectionSummary.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], errorNumber = errorNumber.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any], serverInfo = serverInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionInfoSummary]
   }
 }

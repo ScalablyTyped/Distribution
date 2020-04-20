@@ -12,7 +12,6 @@ object TreeIndex {
   @scala.inline
   def apply(treeIndex: Double): TreeIndex = {
     val __obj = js.Dynamic.literal(treeIndex = treeIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TreeIndex]
   }
 }

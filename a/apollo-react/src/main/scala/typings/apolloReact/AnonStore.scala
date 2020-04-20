@@ -23,7 +23,6 @@ object AnonStore {
     store: Store[_, AnyAction]
   ): AnonStore = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStore]
   }
 }

@@ -14,14 +14,12 @@ trait resultGroups extends js.Object
 
 object resultGroups {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inapplicable: typings.axeCore.axeCoreStrings.inapplicable = "inapplicable".asInstanceOf[typings.axeCore.axeCoreStrings.inapplicable]
   @scala.inline
-  def inapplicable: typings.axeCore.axeCoreStrings.inapplicable = this.cast("inapplicable")
+  def incomplete: typings.axeCore.axeCoreStrings.incomplete = "incomplete".asInstanceOf[typings.axeCore.axeCoreStrings.incomplete]
   @scala.inline
-  def incomplete: typings.axeCore.axeCoreStrings.incomplete = this.cast("incomplete")
+  def passes: typings.axeCore.axeCoreStrings.passes = "passes".asInstanceOf[typings.axeCore.axeCoreStrings.passes]
   @scala.inline
-  def passes: typings.axeCore.axeCoreStrings.passes = this.cast("passes")
-  @scala.inline
-  def violations: typings.axeCore.axeCoreStrings.violations = this.cast("violations")
+  def violations: typings.axeCore.axeCoreStrings.violations = "violations".asInstanceOf[typings.axeCore.axeCoreStrings.violations]
 }
 

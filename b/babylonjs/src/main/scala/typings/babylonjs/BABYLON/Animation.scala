@@ -196,7 +196,7 @@ class Animation protected () extends js.Object {
   /**
     * Specifies if any of the runtime animations are currently running
     */
-  def hasRunningRuntimeAnimations(): Boolean = js.native
+  def hasRunningRuntimeAnimations: Boolean = js.native
   /**
     * Defines the function to use to interpolate matrices
     * @param startValue defines the start matrix
@@ -239,7 +239,7 @@ class Animation protected () extends js.Object {
   /**
     * Return the array of runtime animations currently using this animation
     */
-  def runtimeAnimations(): js.Array[RuntimeAnimation] = js.native
+  def runtimeAnimations: js.Array[RuntimeAnimation] = js.native
   /**
     * Serializes the animation to an object
     * @returns Serialized object

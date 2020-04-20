@@ -13,7 +13,6 @@ object Anon0 {
   @scala.inline
   def apply[T /* <: Event_ */](handleEvent: T => js.Promise[Unit] | Unit): Anon0[T] = {
     val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
-  
     __obj.asInstanceOf[Anon0[T]]
   }
 }

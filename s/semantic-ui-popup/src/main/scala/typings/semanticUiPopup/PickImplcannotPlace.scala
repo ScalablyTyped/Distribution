@@ -13,7 +13,6 @@ object PickImplcannotPlace {
   @scala.inline
   def apply(cannotPlace: String): PickImplcannotPlace = {
     val __obj = js.Dynamic.literal(cannotPlace = cannotPlace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcannotPlace]
   }
 }

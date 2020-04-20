@@ -13,12 +13,10 @@ trait RecurrenceRangeType extends js.Object
 
 object RecurrenceRangeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def endDate: typings.microsoftGraph.microsoftGraphStrings.endDate = "endDate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.endDate]
   @scala.inline
-  def endDate: typings.microsoftGraph.microsoftGraphStrings.endDate = this.cast("endDate")
+  def noEnd: typings.microsoftGraph.microsoftGraphStrings.noEnd = "noEnd".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noEnd]
   @scala.inline
-  def noEnd: typings.microsoftGraph.microsoftGraphStrings.noEnd = this.cast("noEnd")
-  @scala.inline
-  def numbered: typings.microsoftGraph.microsoftGraphStrings.numbered = this.cast("numbered")
+  def numbered: typings.microsoftGraph.microsoftGraphStrings.numbered = "numbered".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numbered]
 }
 

@@ -13,7 +13,6 @@ object AnonMessageParts {
   @scala.inline
   def apply(messageParts: js.Array[String], placeHolders: js.Array[String]): AnonMessageParts = {
     val __obj = js.Dynamic.literal(messageParts = messageParts.asInstanceOf[js.Any], placeHolders = placeHolders.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMessageParts]
   }
 }

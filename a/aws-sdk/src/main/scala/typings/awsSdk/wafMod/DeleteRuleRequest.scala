@@ -20,7 +20,6 @@ object DeleteRuleRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, RuleId: ResourceId): DeleteRuleRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], RuleId = RuleId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRuleRequest]
   }
 }

@@ -14,7 +14,6 @@ object AnonFocused {
   @scala.inline
   def apply(focused: Boolean, hovered: Boolean, selected: Boolean): AnonFocused = {
     val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any], hovered = hovered.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFocused]
   }
 }

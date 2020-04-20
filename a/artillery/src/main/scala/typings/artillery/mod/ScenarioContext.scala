@@ -13,7 +13,6 @@ object ScenarioContext {
   @scala.inline
   def apply(vars: StringDictionary[js.Any]): ScenarioContext = {
     val __obj = js.Dynamic.literal(vars = vars.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScenarioContext]
   }
 }

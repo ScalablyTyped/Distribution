@@ -12,10 +12,8 @@ trait ValidationMethod extends js.Object
 
 object ValidationMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def strict: typings.convict.convictStrings.strict = "strict".asInstanceOf[typings.convict.convictStrings.strict]
   @scala.inline
-  def strict: typings.convict.convictStrings.strict = this.cast("strict")
-  @scala.inline
-  def warn: typings.convict.convictStrings.warn = this.cast("warn")
+  def warn: typings.convict.convictStrings.warn = "warn".asInstanceOf[typings.convict.convictStrings.warn]
 }
 

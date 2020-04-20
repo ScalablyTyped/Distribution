@@ -15,7 +15,6 @@ object Circle {
   @scala.inline
   def apply(attrs: AnonCx, elem: circle): Circle = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], elem = elem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Circle]
   }
 }

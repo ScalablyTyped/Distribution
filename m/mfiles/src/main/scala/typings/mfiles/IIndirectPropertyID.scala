@@ -26,7 +26,6 @@ object IIndirectPropertyID {
     ToJSON: () => String
   ): IIndirectPropertyID = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count.asInstanceOf[js.Any], EqualTo = js.Any.fromFunction1(EqualTo), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove), ToJSON = js.Any.fromFunction0(ToJSON))
-  
     __obj.asInstanceOf[IIndirectPropertyID]
   }
 }

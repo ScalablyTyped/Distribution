@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactInfiniteScrollerProps {
   @scala.inline
-  def ReactInfiniteScrollerProps: InfiniteScrollProps.type = typings.reactInfiniteScroller.mod.InfiniteScroll.InfiniteScrollProps
+  def ReactInfiniteScrollerProps: InfiniteScrollProps.type = InfiniteScrollProps
   type ReactInfiniteScrollerProps = InfiniteScrollProps
 }
 

@@ -42,7 +42,6 @@ object StatesResource {
     update: AnonCurrentStateVersion => Request_[WriteResult]
   ): StatesResource = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[StatesResource]
   }
 }

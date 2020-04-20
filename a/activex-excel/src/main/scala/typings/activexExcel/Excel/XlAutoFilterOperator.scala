@@ -38,34 +38,32 @@ trait XlAutoFilterOperator extends js.Object
 
 object XlAutoFilterOperator {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAnd: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlAnd: `1` = this.cast(1)
+  def xlBottom10Items: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlBottom10Items: `4` = this.cast(4)
+  def xlBottom10Percent: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlBottom10Percent: `6` = this.cast(6)
+  def xlFilterAutomaticFontColor: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlFilterAutomaticFontColor: `13` = this.cast(13)
+  def xlFilterCellColor: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlFilterCellColor: `8` = this.cast(8)
+  def xlFilterDynamic: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlFilterDynamic: `11` = this.cast(11)
+  def xlFilterFontColor: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlFilterFontColor: `9` = this.cast(9)
+  def xlFilterIcon: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlFilterIcon: `10` = this.cast(10)
+  def xlFilterNoFill: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlFilterNoFill: `12` = this.cast(12)
+  def xlFilterNoIcon: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlFilterNoIcon: `14` = this.cast(14)
+  def xlFilterValues: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlFilterValues: `7` = this.cast(7)
+  def xlOr: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlOr: `2` = this.cast(2)
+  def xlTop10Items: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlTop10Items: `3` = this.cast(3)
-  @scala.inline
-  def xlTop10Percent: `5` = this.cast(5)
+  def xlTop10Percent: `5` = 5.asInstanceOf[`5`]
 }
 

@@ -12,7 +12,6 @@ object RouteComponentProps {
   @scala.inline
   def apply[T /* <: DefaultParams */](params: T): RouteComponentProps[T] = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteComponentProps[T]]
   }
 }

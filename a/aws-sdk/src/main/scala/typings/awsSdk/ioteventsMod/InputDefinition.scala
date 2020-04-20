@@ -16,7 +16,6 @@ object InputDefinition {
   @scala.inline
   def apply(attributes: Attributes): InputDefinition = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputDefinition]
   }
 }

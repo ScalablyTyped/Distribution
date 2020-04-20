@@ -25,7 +25,6 @@ object AnonInfiniteAnonCODENAMEERROR {
     ]
   ): AnonInfiniteAnonCODENAMEERROR[TupleSet] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInfiniteAnonCODENAMEERROR[TupleSet]]
   }
 }

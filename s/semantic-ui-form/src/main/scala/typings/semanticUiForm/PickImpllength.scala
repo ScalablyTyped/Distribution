@@ -13,7 +13,6 @@ object PickImpllength {
   @scala.inline
   def apply(length: String): PickImpllength = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpllength]
   }
 }

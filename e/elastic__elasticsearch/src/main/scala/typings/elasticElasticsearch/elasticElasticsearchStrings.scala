@@ -234,7 +234,7 @@ object elasticElasticsearchStrings {
   @scala.inline
   def create: create = "create".asInstanceOf[create]
   @scala.inline
-  def `d LeftparenthesisDaysRightparenthesis`: `d LeftparenthesisDaysRightparenthesis` = "d (Days)".asInstanceOf[`d LeftparenthesisDaysRightparenthesis`]
+  def `d LeftparenthesisDaysRightparenthesis`: `d LeftparenthesisDaysRightparenthesis` = ("d (Days)").asInstanceOf[`d LeftparenthesisDaysRightparenthesis`]
   @scala.inline
   def delimited: delimited = "delimited".asInstanceOf[delimited]
   @scala.inline
@@ -258,7 +258,7 @@ object elasticElasticsearchStrings {
   @scala.inline
   def gzip: gzip = "gzip".asInstanceOf[gzip]
   @scala.inline
-  def `h LeftparenthesisHoursRightparenthesis`: `h LeftparenthesisHoursRightparenthesis` = "h (Hours)".asInstanceOf[`h LeftparenthesisHoursRightparenthesis`]
+  def `h LeftparenthesisHoursRightparenthesis`: `h LeftparenthesisHoursRightparenthesis` = ("h (Hours)").asInstanceOf[`h LeftparenthesisHoursRightparenthesis`]
   @scala.inline
   def high: high = "high".asInstanceOf[high]
   @scala.inline
@@ -280,17 +280,17 @@ object elasticElasticsearchStrings {
   @scala.inline
   def m: m = "m".asInstanceOf[m]
   @scala.inline
-  def `m LeftparenthesisMinutesRightparenthesis`: `m LeftparenthesisMinutesRightparenthesis` = "m (Minutes)".asInstanceOf[`m LeftparenthesisMinutesRightparenthesis`]
+  def `m LeftparenthesisMinutesRightparenthesis`: `m LeftparenthesisMinutesRightparenthesis` = ("m (Minutes)").asInstanceOf[`m LeftparenthesisMinutesRightparenthesis`]
   @scala.inline
   def mb: mb = "mb".asInstanceOf[mb]
   @scala.inline
-  def `micros LeftparenthesisMicrosecondsRightparenthesis`: `micros LeftparenthesisMicrosecondsRightparenthesis` = "micros (Microseconds)".asInstanceOf[`micros LeftparenthesisMicrosecondsRightparenthesis`]
+  def `micros LeftparenthesisMicrosecondsRightparenthesis`: `micros LeftparenthesisMicrosecondsRightparenthesis` = ("micros (Microseconds)").asInstanceOf[`micros LeftparenthesisMicrosecondsRightparenthesis`]
   @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
   @scala.inline
-  def `ms LeftparenthesisMillisecondsRightparenthesis`: `ms LeftparenthesisMillisecondsRightparenthesis` = "ms (Milliseconds)".asInstanceOf[`ms LeftparenthesisMillisecondsRightparenthesis`]
+  def `ms LeftparenthesisMillisecondsRightparenthesis`: `ms LeftparenthesisMillisecondsRightparenthesis` = ("ms (Milliseconds)").asInstanceOf[`ms LeftparenthesisMillisecondsRightparenthesis`]
   @scala.inline
-  def `nanos LeftparenthesisNanosecondsRightparenthesis`: `nanos LeftparenthesisNanosecondsRightparenthesis` = "nanos (Nanoseconds)".asInstanceOf[`nanos LeftparenthesisNanosecondsRightparenthesis`]
+  def `nanos LeftparenthesisNanosecondsRightparenthesis`: `nanos LeftparenthesisNanosecondsRightparenthesis` = ("nanos (Nanoseconds)").asInstanceOf[`nanos LeftparenthesisNanosecondsRightparenthesis`]
   @scala.inline
   def ndjson: ndjson = "ndjson".asInstanceOf[ndjson]
   @scala.inline
@@ -324,7 +324,7 @@ object elasticElasticsearchStrings {
   @scala.inline
   def red: red = "red".asInstanceOf[red]
   @scala.inline
-  def `s LeftparenthesisSecondsRightparenthesis`: `s LeftparenthesisSecondsRightparenthesis` = "s (Seconds)".asInstanceOf[`s LeftparenthesisSecondsRightparenthesis`]
+  def `s LeftparenthesisSecondsRightparenthesis`: `s LeftparenthesisSecondsRightparenthesis` = ("s (Seconds)").asInstanceOf[`s LeftparenthesisSecondsRightparenthesis`]
   @scala.inline
   def semi_structured_text: semi_structured_text = "semi_structured_text".asInstanceOf[semi_structured_text]
   @scala.inline

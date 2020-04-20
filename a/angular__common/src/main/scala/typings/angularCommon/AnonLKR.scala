@@ -24,7 +24,6 @@ object AnonLKR {
     XOF: js.Array[String]
   ): AnonLKR = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], LKR = LKR.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XOF = XOF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLKR]
   }
 }

@@ -38,34 +38,32 @@ trait WdRectangleType extends js.Object
 
 object WdRectangleType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdDocumentControlRectangle: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdDocumentControlRectangle: `13` = this.cast(13)
+  def wdLineBetweenColumnRectangle: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdLineBetweenColumnRectangle: `5` = this.cast(5)
+  def wdMailNavArea: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdMailNavArea: `12` = this.cast(12)
+  def wdMarkupRectangle: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdMarkupRectangle: `2` = this.cast(2)
+  def wdMarkupRectangleArea: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdMarkupRectangleArea: `8` = this.cast(8)
+  def wdMarkupRectangleButton: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdMarkupRectangleButton: `3` = this.cast(3)
+  def wdMarkupRectangleMoveMatch: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdMarkupRectangleMoveMatch: `10` = this.cast(10)
+  def wdPageBorderRectangle: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdPageBorderRectangle: `4` = this.cast(4)
+  def wdReadingModeNavigation: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdReadingModeNavigation: `9` = this.cast(9)
+  def wdReadingModePanningArea: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdReadingModePanningArea: `11` = this.cast(11)
+  def wdSelection: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdSelection: `6` = this.cast(6)
+  def wdShapeRectangle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdShapeRectangle: `1` = this.cast(1)
+  def wdSystem: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdSystem: `7` = this.cast(7)
-  @scala.inline
-  def wdTextRectangle: `0` = this.cast(0)
+  def wdTextRectangle: `0` = 0.asInstanceOf[`0`]
 }
 

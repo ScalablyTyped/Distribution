@@ -21,7 +21,6 @@ object LegendControl_ {
   @scala.inline
   def apply(addLegend: String => js.Any, onAdd: Map_ => js.Any, removeLegend: String => js.Any): LegendControl_ = {
     val __obj = js.Dynamic.literal(addLegend = js.Any.fromFunction1(addLegend), onAdd = js.Any.fromFunction1(onAdd), removeLegend = js.Any.fromFunction1(removeLegend))
-  
     __obj.asInstanceOf[LegendControl_]
   }
 }

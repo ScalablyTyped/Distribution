@@ -74,7 +74,6 @@ object AnonGEL {
     XPF: js.Array[scala.Nothing]
   ): AnonGEL = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BEF = BEF.asInstanceOf[js.Any], BYN = BYN.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CYP = CYP.asInstanceOf[js.Any], EGP = EGP.asInstanceOf[js.Any], FRF = FRF.asInstanceOf[js.Any], GEL = GEL.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], IEP = IEP.asInstanceOf[js.Any], ILP = ILP.asInstanceOf[js.Any], ILS = ILS.asInstanceOf[js.Any], INR = INR.asInstanceOf[js.Any], ITL = ITL.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], LBP = LBP.asInstanceOf[js.Any], MTP = MTP.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], RHD = RHD.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], RWF = RWF.asInstanceOf[js.Any], SGD = SGD.asInstanceOf[js.Any], TOP = TOP.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], VND = VND.asInstanceOf[js.Any], XAF = XAF.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any], XOF = XOF.asInstanceOf[js.Any], XPF = XPF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGEL]
   }
 }

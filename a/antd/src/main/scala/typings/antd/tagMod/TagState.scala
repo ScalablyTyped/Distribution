@@ -12,7 +12,6 @@ object TagState {
   @scala.inline
   def apply(visible: Boolean): TagState = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagState]
   }
 }

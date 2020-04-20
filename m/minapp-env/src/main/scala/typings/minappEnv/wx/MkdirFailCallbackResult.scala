@@ -18,7 +18,6 @@ object MkdirFailCallbackResult {
   @scala.inline
   def apply(errMsg: String): MkdirFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MkdirFailCallbackResult]
   }
 }

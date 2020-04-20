@@ -14,14 +14,12 @@ trait TravelMode extends js.Object
 
 object TravelMode {
   @scala.inline
-  def bicycling: typings.googleMaps.googleMapsStrings.bicycling = this.cast("bicycling")
+  def bicycling: typings.googleMaps.googleMapsStrings.bicycling = "bicycling".asInstanceOf[typings.googleMaps.googleMapsStrings.bicycling]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def driving: typings.googleMaps.googleMapsStrings.driving = "driving".asInstanceOf[typings.googleMaps.googleMapsStrings.driving]
   @scala.inline
-  def driving: typings.googleMaps.googleMapsStrings.driving = this.cast("driving")
+  def transit: typings.googleMaps.googleMapsStrings.transit = "transit".asInstanceOf[typings.googleMaps.googleMapsStrings.transit]
   @scala.inline
-  def transit: typings.googleMaps.googleMapsStrings.transit = this.cast("transit")
-  @scala.inline
-  def walking: typings.googleMaps.googleMapsStrings.walking = this.cast("walking")
+  def walking: typings.googleMaps.googleMapsStrings.walking = "walking".asInstanceOf[typings.googleMaps.googleMapsStrings.walking]
 }
 

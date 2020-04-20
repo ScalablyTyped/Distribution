@@ -12,7 +12,6 @@ object IAfterGuiAttachedParams {
   @scala.inline
   def apply(hidePopup: () => Unit): IAfterGuiAttachedParams = {
     val __obj = js.Dynamic.literal(hidePopup = js.Any.fromFunction0(hidePopup))
-  
     __obj.asInstanceOf[IAfterGuiAttachedParams]
   }
 }

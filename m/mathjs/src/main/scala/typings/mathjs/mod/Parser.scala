@@ -23,7 +23,6 @@ object Parser {
     set: (String, js.Any) => scala.Unit
   ): Parser = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), evaluate = js.Any.fromFunction1(evaluate), get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction0(getAll), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[Parser]
   }
 }

@@ -22,30 +22,28 @@ trait DecimalFormatNum extends js.Object
 
 object DecimalFormatNum {
   @scala.inline
-  def `1000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000` = this.cast("1000")
+  def `1000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000` = "1000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000`]
   @scala.inline
-  def `10000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000` = this.cast("10000")
+  def `10000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000` = "10000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000`]
   @scala.inline
-  def `100000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000` = this.cast("100000")
+  def `100000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000` = "100000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000`]
   @scala.inline
-  def `1000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000000` = this.cast("1000000")
+  def `1000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000000` = "1000000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000000`]
   @scala.inline
-  def `10000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000000` = this.cast("10000000")
+  def `10000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000000` = "10000000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000000`]
   @scala.inline
-  def `100000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000000` = this.cast("100000000")
+  def `100000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000000` = "100000000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000000`]
   @scala.inline
-  def `1000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000000000` = this.cast("1000000000")
+  def `1000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000000000` = "1000000000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000000000`]
   @scala.inline
-  def `10000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000000000` = this.cast("10000000000")
+  def `10000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000000000` = "10000000000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000000000`]
   @scala.inline
-  def `100000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000000000` = this.cast("100000000000")
+  def `100000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000000000` = "100000000000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000000000`]
   @scala.inline
-  def `1000000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000000000000` = this.cast("1000000000000")
+  def `1000000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000000000000` = "1000000000000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`1000000000000`]
   @scala.inline
-  def `10000000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000000000000` = this.cast("10000000000000")
+  def `10000000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000000000000` = "10000000000000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`10000000000000`]
   @scala.inline
-  def `100000000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000000000000` = this.cast("100000000000000")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `100000000000000`: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000000000000` = "100000000000000".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.`100000000000000`]
 }
 

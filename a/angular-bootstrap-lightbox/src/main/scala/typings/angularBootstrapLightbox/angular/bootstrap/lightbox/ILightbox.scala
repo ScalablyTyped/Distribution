@@ -12,7 +12,6 @@ object ILightbox {
   @scala.inline
   def apply(openModal: (js.Array[ILightboxImageInfo], Double) => Unit): ILightbox = {
     val __obj = js.Dynamic.literal(openModal = js.Any.fromFunction2(openModal))
-  
     __obj.asInstanceOf[ILightbox]
   }
 }

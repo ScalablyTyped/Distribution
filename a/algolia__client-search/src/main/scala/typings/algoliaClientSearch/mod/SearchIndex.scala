@@ -24,7 +24,6 @@ object SearchIndex {
   @scala.inline
   def apply(appId: String, indexName: String, transporter: Transporter): SearchIndex = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any], transporter = transporter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchIndex]
   }
 }

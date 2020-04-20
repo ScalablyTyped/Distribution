@@ -32,7 +32,6 @@ object xquery_ {
   @scala.inline
   def apply(XQUERY_COMMENT: js.Object, case_insensitive: Boolean, defaultMode: js.Object, modes: js.Array[_]): xquery_ = {
     val __obj = js.Dynamic.literal(XQUERY_COMMENT = XQUERY_COMMENT.asInstanceOf[js.Any], case_insensitive = case_insensitive.asInstanceOf[js.Any], defaultMode = defaultMode.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[xquery_]
   }
 }

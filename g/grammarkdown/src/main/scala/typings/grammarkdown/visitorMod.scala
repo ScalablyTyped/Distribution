@@ -48,16 +48,16 @@ object visitorMod extends js.Object {
   @js.native
   abstract class NodeVisitor () extends js.Object {
     def visit[T /* <: Node[SyntaxKind] */](): js.UndefOr[T] = js.native
-    def visit[T /* <: Node[SyntaxKind] */](node: T): js.UndefOr[T] = js.native
+    def visit[T /* <: Node[SyntaxKind] */](node: T): T = js.native
     def visitArgument(node: Argument): Argument = js.native
     def visitArgumentList(node: ArgumentList): ArgumentList = js.native
     def visitButNotSymbol(node: ButNotSymbol): ButNotSymbol = js.native
     def visitConstraints(node: Constraints): Constraints = js.native
     def visitDefine(node: Define): Define = js.native
     def visitEach[T /* <: Node[SyntaxKind] */](): js.UndefOr[js.Array[T]] = js.native
-    def visitEach[T /* <: Node[SyntaxKind] */](nodes: js.Array[T]): js.UndefOr[js.Array[T]] = js.native
+    def visitEach[T /* <: Node[SyntaxKind] */](nodes: js.Array[T]): js.Array[T] = js.native
     @JSName("visitEach")
-    def visitEach_T_NodeSyntaxKind_Array[T /* <: Node[SyntaxKind] */](nodes: js.Array[T]): js.Array[T] = js.native
+    def visitEach_T_NodeSyntaxKind_Union[T /* <: Node[SyntaxKind] */](nodes: js.Array[T]): js.UndefOr[js.Array[T]] = js.native
     def visitEmptyAssertion(node: EmptyAssertion): EmptyAssertion = js.native
     def visitExtension[T /* <: Node[SyntaxKind] */](node: T): T = js.native
     def visitIdentifier(node: Identifier): Identifier = js.native
@@ -89,7 +89,7 @@ object visitorMod extends js.Object {
     def visitUnicodeCharacterLiteral(node: UnicodeCharacterLiteral): UnicodeCharacterLiteral = js.native
     def visitUnicodeCharacterRange(node: UnicodeCharacterRange): UnicodeCharacterRange = js.native
     @JSName("visit")
-    def visit_T_NodeSyntaxKind_T[T /* <: Node[SyntaxKind] */](node: T): T = js.native
+    def visit_T_NodeSyntaxKind_Union[T /* <: Node[SyntaxKind] */](node: T): js.UndefOr[T] = js.native
   }
   
 }

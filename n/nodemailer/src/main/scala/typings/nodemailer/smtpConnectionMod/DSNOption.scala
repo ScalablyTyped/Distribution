@@ -14,14 +14,12 @@ trait DSNOption extends js.Object
 
 object DSNOption {
   @scala.inline
-  def DELAY: typings.nodemailer.nodemailerStrings.DELAY = this.cast("DELAY")
+  def DELAY: typings.nodemailer.nodemailerStrings.DELAY = "DELAY".asInstanceOf[typings.nodemailer.nodemailerStrings.DELAY]
   @scala.inline
-  def FAILURE: typings.nodemailer.nodemailerStrings.FAILURE = this.cast("FAILURE")
+  def FAILURE: typings.nodemailer.nodemailerStrings.FAILURE = "FAILURE".asInstanceOf[typings.nodemailer.nodemailerStrings.FAILURE]
   @scala.inline
-  def NEVER: typings.nodemailer.nodemailerStrings.NEVER = this.cast("NEVER")
+  def NEVER: typings.nodemailer.nodemailerStrings.NEVER = "NEVER".asInstanceOf[typings.nodemailer.nodemailerStrings.NEVER]
   @scala.inline
-  def SUCCESS: typings.nodemailer.nodemailerStrings.SUCCESS = this.cast("SUCCESS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SUCCESS: typings.nodemailer.nodemailerStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.nodemailer.nodemailerStrings.SUCCESS]
 }
 

@@ -25,7 +25,6 @@ object XummGetPayloadResponse {
     response: AnonAccount
   ): XummGetPayloadResponse = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], custom_meta = custom_meta.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XummGetPayloadResponse]
   }
 }

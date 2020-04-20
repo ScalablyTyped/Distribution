@@ -30,7 +30,6 @@ object PagingObject {
     total: Double
   ): PagingObject[T] = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PagingObject[T]]
   }
 }

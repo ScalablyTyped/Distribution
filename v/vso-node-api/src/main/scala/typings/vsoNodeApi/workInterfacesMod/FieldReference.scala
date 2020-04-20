@@ -19,7 +19,6 @@ object FieldReference {
   @scala.inline
   def apply(referenceName: String, url: String): FieldReference = {
     val __obj = js.Dynamic.literal(referenceName = referenceName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldReference]
   }
 }

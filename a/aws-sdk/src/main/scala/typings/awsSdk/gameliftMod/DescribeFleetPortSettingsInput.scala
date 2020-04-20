@@ -16,7 +16,6 @@ object DescribeFleetPortSettingsInput {
   @scala.inline
   def apply(FleetId: FleetIdOrArn): DescribeFleetPortSettingsInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeFleetPortSettingsInput]
   }
 }

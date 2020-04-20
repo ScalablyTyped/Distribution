@@ -15,7 +15,6 @@ object EntryTransformer {
   @scala.inline
   def apply(_settings: js.Any, _transform: js.Any, getTransformer: () => EntryTransformerFunction): EntryTransformer = {
     val __obj = js.Dynamic.literal(_settings = _settings.asInstanceOf[js.Any], _transform = _transform.asInstanceOf[js.Any], getTransformer = js.Any.fromFunction0(getTransformer))
-  
     __obj.asInstanceOf[EntryTransformer]
   }
 }

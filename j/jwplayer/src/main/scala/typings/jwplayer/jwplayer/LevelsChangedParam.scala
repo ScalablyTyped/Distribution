@@ -12,7 +12,6 @@ object LevelsChangedParam {
   @scala.inline
   def apply(currentQuality: Double): LevelsChangedParam = {
     val __obj = js.Dynamic.literal(currentQuality = currentQuality.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LevelsChangedParam]
   }
 }

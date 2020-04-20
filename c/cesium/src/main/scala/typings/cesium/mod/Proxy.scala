@@ -12,7 +12,6 @@ object Proxy {
   @scala.inline
   def apply(getURL: String => String): Proxy = {
     val __obj = js.Dynamic.literal(getURL = js.Any.fromFunction1(getURL))
-  
     __obj.asInstanceOf[Proxy]
   }
 }

@@ -24,7 +24,6 @@ object CertificateAuthorityConfiguration {
   @scala.inline
   def apply(KeyAlgorithm: KeyAlgorithm, SigningAlgorithm: SigningAlgorithm, Subject: ASN1Subject): CertificateAuthorityConfiguration = {
     val __obj = js.Dynamic.literal(KeyAlgorithm = KeyAlgorithm.asInstanceOf[js.Any], SigningAlgorithm = SigningAlgorithm.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateAuthorityConfiguration]
   }
 }

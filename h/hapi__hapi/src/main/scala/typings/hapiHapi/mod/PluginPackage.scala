@@ -15,7 +15,6 @@ object PluginPackage {
   @scala.inline
   def apply(pkg: js.Any): PluginPackage = {
     val __obj = js.Dynamic.literal(pkg = pkg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginPackage]
   }
 }

@@ -12,7 +12,6 @@ object GoogleApiOAuth2TokenSessionState {
   @scala.inline
   def apply(extraQueryParams: AnonAuthuser): GoogleApiOAuth2TokenSessionState = {
     val __obj = js.Dynamic.literal(extraQueryParams = extraQueryParams.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleApiOAuth2TokenSessionState]
   }
 }

@@ -13,12 +13,10 @@ trait StatusBarAnimation extends js.Object
 
 object StatusBarAnimation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fade: typings.reactNative.reactNativeStrings.fade = "fade".asInstanceOf[typings.reactNative.reactNativeStrings.fade]
   @scala.inline
-  def fade: typings.reactNative.reactNativeStrings.fade = this.cast("fade")
+  def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
   @scala.inline
-  def none: typings.reactNative.reactNativeStrings.none = this.cast("none")
-  @scala.inline
-  def slide: typings.reactNative.reactNativeStrings.slide = this.cast("slide")
+  def slide: typings.reactNative.reactNativeStrings.slide = "slide".asInstanceOf[typings.reactNative.reactNativeStrings.slide]
 }
 

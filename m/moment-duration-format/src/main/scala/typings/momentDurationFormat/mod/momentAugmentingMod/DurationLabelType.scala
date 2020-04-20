@@ -13,12 +13,10 @@ trait DurationLabelType extends js.Object
 
 object DurationLabelType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def long: typings.momentDurationFormat.momentDurationFormatStrings.long = "long".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.long]
   @scala.inline
-  def long: typings.momentDurationFormat.momentDurationFormatStrings.long = this.cast("long")
+  def short: typings.momentDurationFormat.momentDurationFormatStrings.short = "short".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.short]
   @scala.inline
-  def short: typings.momentDurationFormat.momentDurationFormatStrings.short = this.cast("short")
-  @scala.inline
-  def standard: typings.momentDurationFormat.momentDurationFormatStrings.standard = this.cast("standard")
+  def standard: typings.momentDurationFormat.momentDurationFormatStrings.standard = "standard".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.standard]
 }
 

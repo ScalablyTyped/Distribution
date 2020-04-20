@@ -13,12 +13,10 @@ trait CanvasLineJoin extends js.Object
 
 object CanvasLineJoin {
   @scala.inline
-  def bevel: typings.std.stdStrings.bevel = this.cast("bevel")
+  def bevel: typings.std.stdStrings.bevel = "bevel".asInstanceOf[typings.std.stdStrings.bevel]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def miter: typings.std.stdStrings.miter = "miter".asInstanceOf[typings.std.stdStrings.miter]
   @scala.inline
-  def miter: typings.std.stdStrings.miter = this.cast("miter")
-  @scala.inline
-  def round: typings.std.stdStrings.round = this.cast("round")
+  def round: typings.std.stdStrings.round = "round".asInstanceOf[typings.std.stdStrings.round]
 }
 

@@ -14,7 +14,6 @@ object UserStoryFeedResponseRootObject {
   @scala.inline
   def apply(broadcast: Null, reel: UserStoryFeedResponseReel, status: String): UserStoryFeedResponseRootObject = {
     val __obj = js.Dynamic.literal(broadcast = broadcast.asInstanceOf[js.Any], reel = reel.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserStoryFeedResponseRootObject]
   }
 }

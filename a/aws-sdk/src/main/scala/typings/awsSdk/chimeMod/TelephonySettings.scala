@@ -24,7 +24,6 @@ object TelephonySettings {
   @scala.inline
   def apply(InboundCalling: Boolean, OutboundCalling: Boolean, SMS: Boolean): TelephonySettings = {
     val __obj = js.Dynamic.literal(InboundCalling = InboundCalling.asInstanceOf[js.Any], OutboundCalling = OutboundCalling.asInstanceOf[js.Any], SMS = SMS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TelephonySettings]
   }
 }

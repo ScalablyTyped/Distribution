@@ -18,14 +18,12 @@ trait OlRecipientSelectors extends js.Object
 
 object OlRecipientSelectors {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olShowNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olShowNone: `0` = this.cast(0)
+  def olShowTo: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olShowTo: `1` = this.cast(1)
+  def olShowToCc: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olShowToCc: `2` = this.cast(2)
-  @scala.inline
-  def olShowToCcBcc: `3` = this.cast(3)
+  def olShowToCcBcc: `3` = 3.asInstanceOf[`3`]
 }
 

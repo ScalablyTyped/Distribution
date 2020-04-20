@@ -6,6 +6,7 @@ import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +21,7 @@ object ScopeMiddlewareOptions {
   @scala.inline
   def apply(
     logger: Logger = null,
-    onAuthorizationFailedHandler: (/* request */ Request_[ParamsDictionary], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit = null,
+    onAuthorizationFailedHandler: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit = null,
     precedenceOptions: PrecedenceOptions = null
   ): ScopeMiddlewareOptions = {
     val __obj = js.Dynamic.literal()

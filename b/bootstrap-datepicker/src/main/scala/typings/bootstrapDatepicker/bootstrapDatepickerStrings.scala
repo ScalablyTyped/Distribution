@@ -92,15 +92,15 @@ object bootstrapDatepickerStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
-  def `auto left`: `auto left` = "auto left".asInstanceOf[`auto left`]
+  def `auto left`: `auto left` = ("auto left").asInstanceOf[`auto left`]
   @scala.inline
-  def `auto right`: `auto right` = "auto right".asInstanceOf[`auto right`]
+  def `auto right`: `auto right` = ("auto right").asInstanceOf[`auto right`]
   @scala.inline
-  def `bottom auto`: `bottom auto` = "bottom auto".asInstanceOf[`bottom auto`]
+  def `bottom auto`: `bottom auto` = ("bottom auto").asInstanceOf[`bottom auto`]
   @scala.inline
-  def `bottom left`: `bottom left` = "bottom left".asInstanceOf[`bottom left`]
+  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
   @scala.inline
-  def `bottom right`: `bottom right` = "bottom right".asInstanceOf[`bottom right`]
+  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
   @scala.inline
   def centuries: centuries = "centuries".asInstanceOf[centuries]
   @scala.inline
@@ -122,9 +122,9 @@ object bootstrapDatepickerStrings {
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
-  def `left bottom`: `left bottom` = "left bottom".asInstanceOf[`left bottom`]
+  def `left bottom`: `left bottom` = ("left bottom").asInstanceOf[`left bottom`]
   @scala.inline
-  def `left top`: `left top` = "left top".asInstanceOf[`left top`]
+  def `left top`: `left top` = ("left top").asInstanceOf[`left top`]
   @scala.inline
   def linked: linked = "linked".asInstanceOf[linked]
   @scala.inline
@@ -132,17 +132,17 @@ object bootstrapDatepickerStrings {
   @scala.inline
   def months: months = "months".asInstanceOf[months]
   @scala.inline
-  def `right bottom`: `right bottom` = "right bottom".asInstanceOf[`right bottom`]
+  def `right bottom`: `right bottom` = ("right bottom").asInstanceOf[`right bottom`]
   @scala.inline
-  def `right top`: `right top` = "right top".asInstanceOf[`right top`]
+  def `right top`: `right top` = ("right top").asInstanceOf[`right top`]
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   @scala.inline
-  def `top auto`: `top auto` = "top auto".asInstanceOf[`top auto`]
+  def `top auto`: `top auto` = ("top auto").asInstanceOf[`top auto`]
   @scala.inline
-  def `top left`: `top left` = "top left".asInstanceOf[`top left`]
+  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
   @scala.inline
-  def `top right`: `top right` = "top right".asInstanceOf[`top right`]
+  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
   @scala.inline
   def years: years = "years".asInstanceOf[years]
 }

@@ -12,7 +12,6 @@ object ListTasksParams {
   @scala.inline
   def apply(listActiveTasksOnly: Boolean): ListTasksParams = {
     val __obj = js.Dynamic.literal(listActiveTasksOnly = listActiveTasksOnly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTasksParams]
   }
 }

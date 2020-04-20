@@ -14,7 +14,6 @@ object ListReelMediaViewerFeedResponseDonations {
   @scala.inline
   def apply(donations: js.Array[_], max_id: Null, more_available: Boolean): ListReelMediaViewerFeedResponseDonations = {
     val __obj = js.Dynamic.literal(donations = donations.asInstanceOf[js.Any], max_id = max_id.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseDonations]
   }
 }

@@ -14,7 +14,6 @@ object INumberParser {
   @scala.inline
   def apply(parseDouble: String => Double, parseInt: String => Double, parseUInt: String => Double): INumberParser = {
     val __obj = js.Dynamic.literal(parseDouble = js.Any.fromFunction1(parseDouble), parseInt = js.Any.fromFunction1(parseInt), parseUInt = js.Any.fromFunction1(parseUInt))
-  
     __obj.asInstanceOf[INumberParser]
   }
 }

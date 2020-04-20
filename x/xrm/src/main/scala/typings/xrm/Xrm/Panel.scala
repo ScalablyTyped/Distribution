@@ -23,7 +23,6 @@ object Panel {
   @scala.inline
   def apply(loadPanel: (String, String) => Unit): Panel = {
     val __obj = js.Dynamic.literal(loadPanel = js.Any.fromFunction2(loadPanel))
-  
     __obj.asInstanceOf[Panel]
   }
 }

@@ -10,7 +10,6 @@ object _EventResponse {
   @scala.inline
   def RegistrationEventResponse(registrationId: String): _EventResponse = {
     val __obj = js.Dynamic.literal(registrationId = registrationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_EventResponse]
   }
   @scala.inline

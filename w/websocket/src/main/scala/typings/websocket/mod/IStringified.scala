@@ -12,7 +12,6 @@ object IStringified {
   @scala.inline
   def apply(toString: /* repeated */ js.Any => String): IStringified = {
     val __obj = js.Dynamic.literal(toString = js.Any.fromFunction1(toString))
-  
     __obj.asInstanceOf[IStringified]
   }
 }

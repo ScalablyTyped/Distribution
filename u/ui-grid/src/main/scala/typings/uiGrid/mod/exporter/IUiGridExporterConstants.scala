@@ -32,7 +32,6 @@ object IUiGridExporterConstants {
     featureName: String
   ): IUiGridExporterConstants = {
     val __obj = js.Dynamic.literal(ALL = ALL.asInstanceOf[js.Any], BUTTON_LABEL = BUTTON_LABEL.asInstanceOf[js.Any], CSV_CONTENT = CSV_CONTENT.asInstanceOf[js.Any], FILE_NAME = FILE_NAME.asInstanceOf[js.Any], SELECTED = SELECTED.asInstanceOf[js.Any], VISIBLE = VISIBLE.asInstanceOf[js.Any], featureName = featureName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUiGridExporterConstants]
   }
 }

@@ -15,7 +15,6 @@ object State {
   @scala.inline
   def apply(defaults: MinMaxTime, formatDate: (Date, String) => String, tableDateFormat: String): State = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any], formatDate = js.Any.fromFunction2(formatDate), tableDateFormat = tableDateFormat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

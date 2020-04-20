@@ -30,7 +30,6 @@ object Locale {
     tiny: Duration
   ): Locale = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify), short = short.asInstanceOf[js.Any], tiny = tiny.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Locale]
   }
 }

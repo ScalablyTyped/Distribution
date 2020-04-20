@@ -16,7 +16,6 @@ object String {
   @scala.inline
   def apply(trimLeft: () => java.lang.String, trimRight: () => java.lang.String): String = {
     val __obj = js.Dynamic.literal(trimLeft = js.Any.fromFunction0(trimLeft), trimRight = js.Any.fromFunction0(trimRight))
-  
     __obj.asInstanceOf[String]
   }
 }

@@ -14,7 +14,6 @@ object SpringConfig {
   @scala.inline
   def apply(delay: String, duration: String, easeFunction: String): SpringConfig = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easeFunction = easeFunction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpringConfig]
   }
 }

@@ -13,7 +13,6 @@ object UsersGetGpgKeyResponseEmailsItem {
   @scala.inline
   def apply(email: String, verified: Boolean): UsersGetGpgKeyResponseEmailsItem = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsersGetGpgKeyResponseEmailsItem]
   }
 }

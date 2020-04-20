@@ -16,12 +16,10 @@ trait PpDirection extends js.Object
 
 object PpDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppDirectionLeftToRight: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppDirectionLeftToRight: `1` = this.cast(1)
+  def ppDirectionMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppDirectionMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def ppDirectionRightToLeft: `2` = this.cast(2)
+  def ppDirectionRightToLeft: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -13,7 +13,6 @@ object ToastPrivateState {
   @scala.inline
   def apply(isRendered: Boolean, isVisible: Boolean): ToastPrivateState = {
     val __obj = js.Dynamic.literal(isRendered = isRendered.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToastPrivateState]
   }
 }

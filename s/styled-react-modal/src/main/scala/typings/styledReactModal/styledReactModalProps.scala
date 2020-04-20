@@ -10,7 +10,7 @@ trait styledReactModalProps {
   def ModalProviderProps: typings.styledReactModal.mod.ModalProviderProps.type = typings.styledReactModal.mod.ModalProviderProps
   type ModalProviderProps = typings.styledReactModal.mod.ModalProviderProps
   @scala.inline
-  def StyledReactModalProps: ModalProps.type = typings.styledReactModal.mod.ModalProps
+  def StyledReactModalProps: ModalProps.type = ModalProps
   type StyledReactModalProps = ModalProps
 }
 

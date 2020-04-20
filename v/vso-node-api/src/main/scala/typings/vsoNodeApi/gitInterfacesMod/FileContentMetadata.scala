@@ -26,7 +26,6 @@ object FileContentMetadata {
     vsLink: String
   ): FileContentMetadata = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], isBinary = isBinary.asInstanceOf[js.Any], isImage = isImage.asInstanceOf[js.Any], vsLink = vsLink.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileContentMetadata]
   }
 }

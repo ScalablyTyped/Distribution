@@ -21,7 +21,6 @@ object IOnDestroy {
   @scala.inline
   def apply($onDestroy: () => Unit): IOnDestroy = {
     val __obj = js.Dynamic.literal($onDestroy = js.Any.fromFunction0($onDestroy))
-  
     __obj.asInstanceOf[IOnDestroy]
   }
 }

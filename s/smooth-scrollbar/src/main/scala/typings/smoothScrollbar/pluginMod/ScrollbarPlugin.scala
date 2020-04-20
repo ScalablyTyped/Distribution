@@ -30,7 +30,6 @@ object ScrollbarPlugin {
     transformDelta: (Data2d, js.Any) => Data2d
   ): ScrollbarPlugin = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onDestroy = js.Any.fromFunction0(onDestroy), onInit = js.Any.fromFunction0(onInit), onRender = js.Any.fromFunction1(onRender), onUpdate = js.Any.fromFunction0(onUpdate), options = options.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], transformDelta = js.Any.fromFunction2(transformDelta))
-  
     __obj.asInstanceOf[ScrollbarPlugin]
   }
 }

@@ -15,7 +15,6 @@ object AnonCountry {
   @scala.inline
   def apply(country: String, flags: FlagsMap, flagsPath: String): AnonCountry = {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], flagsPath = flagsPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCountry]
   }
 }

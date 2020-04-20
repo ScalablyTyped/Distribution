@@ -13,7 +13,6 @@ object CaseValues {
   @scala.inline
   def apply(expected: Boolean, subject: Boolean): CaseValues = {
     val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CaseValues]
   }
 }

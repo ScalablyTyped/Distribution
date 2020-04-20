@@ -32,7 +32,6 @@ object OrderpaymentsCollection {
     notifyrefund: (OrderpaymentsNotifyRefundRequest, String, String) => OrderpaymentsNotifyRefundResponse
   ): OrderpaymentsCollection = {
     val __obj = js.Dynamic.literal(notifyauthapproved = js.Any.fromFunction3(notifyauthapproved), notifyauthdeclined = js.Any.fromFunction3(notifyauthdeclined), notifycharge = js.Any.fromFunction3(notifycharge), notifyrefund = js.Any.fromFunction3(notifyrefund))
-  
     __obj.asInstanceOf[OrderpaymentsCollection]
   }
 }

@@ -20,7 +20,6 @@ object WithVirtualize {
     slideRenderer: SlideRendererCallback => ReactNode
   ): WithVirtualize = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex), slideRenderer = js.Any.fromFunction1(slideRenderer))
-  
     __obj.asInstanceOf[WithVirtualize]
   }
 }

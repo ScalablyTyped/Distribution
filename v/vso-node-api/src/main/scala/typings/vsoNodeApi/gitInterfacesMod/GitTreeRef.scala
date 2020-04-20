@@ -34,7 +34,6 @@ object GitTreeRef {
     url: String
   ): GitTreeRef = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], treeEntries = treeEntries.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitTreeRef]
   }
 }

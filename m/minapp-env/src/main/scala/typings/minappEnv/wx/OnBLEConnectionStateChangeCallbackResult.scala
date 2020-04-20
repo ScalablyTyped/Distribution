@@ -15,7 +15,6 @@ object OnBLEConnectionStateChangeCallbackResult {
   @scala.inline
   def apply(connected: Boolean, deviceId: String): OnBLEConnectionStateChangeCallbackResult = {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnBLEConnectionStateChangeCallbackResult]
   }
 }

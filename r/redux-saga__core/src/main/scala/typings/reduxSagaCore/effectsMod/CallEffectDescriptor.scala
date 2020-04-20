@@ -14,7 +14,6 @@ object CallEffectDescriptor {
   @scala.inline
   def apply(args: js.Array[_], context: js.Any, fn: js.Function): CallEffectDescriptor = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CallEffectDescriptor]
   }
 }

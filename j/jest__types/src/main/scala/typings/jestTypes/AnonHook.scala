@@ -16,7 +16,6 @@ object AnonHook {
   @scala.inline
   def apply(hook: Hook, name: hook_start): AnonHook = {
     val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHook]
   }
 }

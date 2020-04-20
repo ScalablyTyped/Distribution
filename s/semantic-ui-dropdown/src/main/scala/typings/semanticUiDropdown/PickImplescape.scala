@@ -13,7 +13,6 @@ object PickImplescape {
   @scala.inline
   def apply(escape: Double): PickImplescape = {
     val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplescape]
   }
 }

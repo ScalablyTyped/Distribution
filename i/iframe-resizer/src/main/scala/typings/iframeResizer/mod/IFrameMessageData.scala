@@ -14,7 +14,6 @@ object IFrameMessageData {
   @scala.inline
   def apply(iframe: IFrameComponent, message: js.Any): IFrameMessageData = {
     val __obj = js.Dynamic.literal(iframe = iframe.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFrameMessageData]
   }
 }

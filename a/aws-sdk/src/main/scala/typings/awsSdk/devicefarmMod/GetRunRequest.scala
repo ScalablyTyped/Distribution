@@ -16,7 +16,6 @@ object GetRunRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): GetRunRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRunRequest]
   }
 }

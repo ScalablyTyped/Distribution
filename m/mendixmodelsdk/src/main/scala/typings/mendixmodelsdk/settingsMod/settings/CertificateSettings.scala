@@ -23,7 +23,7 @@ class CertificateSettings protected () extends ProjectSettingsPart {
   ) = this()
   @JSName("model")
   var model_FCertificateSettings: IModel = js.native
-  def certificates(): IList[Certificate] = js.native
+  def certificates: IList[Certificate] = js.native
 }
 
 /* static members */

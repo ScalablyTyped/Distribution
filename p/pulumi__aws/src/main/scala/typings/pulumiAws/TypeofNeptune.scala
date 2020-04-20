@@ -13,7 +13,6 @@ object TypeofNeptune {
   @scala.inline
   def apply(Types: TypeofNeptune): TypeofNeptune = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofNeptune]
   }
 }

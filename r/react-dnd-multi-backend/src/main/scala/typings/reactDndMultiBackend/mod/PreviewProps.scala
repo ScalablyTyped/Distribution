@@ -23,7 +23,6 @@ object PreviewProps {
   @scala.inline
   def apply(generator: (String, js.Any, CSSProperties) => Element): PreviewProps = {
     val __obj = js.Dynamic.literal(generator = js.Any.fromFunction3(generator))
-  
     __obj.asInstanceOf[PreviewProps]
   }
 }

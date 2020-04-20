@@ -13,7 +13,6 @@ object ReplicationMasterInfo {
   @scala.inline
   def apply(role: master): ReplicationMasterInfo = {
     val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplicationMasterInfo]
   }
 }

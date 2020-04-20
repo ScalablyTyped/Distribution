@@ -13,7 +13,6 @@ object BroadCastToAttrs {
   @scala.inline
   def apply(inputShape: js.Array[Double], shape: js.Array[Double]): BroadCastToAttrs = {
     val __obj = js.Dynamic.literal(inputShape = inputShape.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BroadCastToAttrs]
   }
 }

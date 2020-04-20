@@ -13,7 +13,6 @@ object Options {
   @scala.inline
   def apply(enforceShorthandMethods: Boolean, enforceShorthandProperties: Boolean): Options = {
     val __obj = js.Dynamic.literal(enforceShorthandMethods = enforceShorthandMethods.asInstanceOf[js.Any], enforceShorthandProperties = enforceShorthandProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

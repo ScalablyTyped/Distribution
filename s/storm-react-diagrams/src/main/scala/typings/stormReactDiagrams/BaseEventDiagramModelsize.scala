@@ -25,7 +25,6 @@ object BaseEventDiagramModelsize {
     stopPropagation: () => js.Any
   ): BaseEventDiagramModelsize = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], firing = firing.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation))
-  
     __obj.asInstanceOf[BaseEventDiagramModelsize]
   }
 }

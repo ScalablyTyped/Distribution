@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactLoaderSpinnerProps {
   @scala.inline
-  def ReactLoaderSpinnerProps: LoaderProps.type = typings.reactLoaderSpinner.mod.LoaderProps
+  def ReactLoaderSpinnerProps: LoaderProps.type = LoaderProps
   type ReactLoaderSpinnerProps = LoaderProps
 }
 

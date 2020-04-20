@@ -20,7 +20,6 @@ object FormatOptions {
     xml: () => typings.jodata.jo
   ): FormatOptions = {
     val __obj = js.Dynamic.literal(atom = js.Any.fromFunction0(atom), custom = js.Any.fromFunction1(custom), json = js.Any.fromFunction0(json), xml = js.Any.fromFunction0(xml))
-  
     __obj.asInstanceOf[FormatOptions]
   }
 }

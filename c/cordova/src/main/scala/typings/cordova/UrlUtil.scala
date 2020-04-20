@@ -13,7 +13,6 @@ object UrlUtil {
   @scala.inline
   def apply(makeAbsolute: String => String): UrlUtil = {
     val __obj = js.Dynamic.literal(makeAbsolute = js.Any.fromFunction1(makeAbsolute))
-  
     __obj.asInstanceOf[UrlUtil]
   }
 }

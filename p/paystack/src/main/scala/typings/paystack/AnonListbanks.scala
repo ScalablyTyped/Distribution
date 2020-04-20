@@ -17,7 +17,6 @@ object AnonListbanks {
     resolve_bin: String => js.Promise[Response]
   ): AnonListbanks = {
     val __obj = js.Dynamic.literal(list_banks = js.Any.fromFunction1(list_banks), resolve_bin = js.Any.fromFunction1(resolve_bin))
-  
     __obj.asInstanceOf[AnonListbanks]
   }
 }

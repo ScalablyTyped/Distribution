@@ -83,11 +83,11 @@ class WebXRControllerComponent protected () extends IDisposable {
   /**
     * The current axes data. If this component has no axes it will still return an object { x: 0, y: 0 }
     */
-  def axes(): IWebXRMotionControllerAxesValue = js.native
+  def axes: IWebXRMotionControllerAxesValue = js.native
   /**
     * Get the changes. Elements will be populated only if they changed with their previous and current value
     */
-  def changes(): IWebXRMotionControllerComponentChanges = js.native
+  def changes: IWebXRMotionControllerComponentChanges = js.native
   /**
     * Releases all held resources
     */
@@ -96,7 +96,7 @@ class WebXRControllerComponent protected () extends IDisposable {
   /**
     * Return whether or not the component changed the last frame
     */
-  def hasChanges(): Boolean = js.native
+  def hasChanges: Boolean = js.native
   /**
     * Are there axes correlating to this component
     * @return true is axes data is available
@@ -110,11 +110,11 @@ class WebXRControllerComponent protected () extends IDisposable {
   /**
     * is the button currently pressed
     */
-  def pressed(): Boolean = js.native
+  def pressed: Boolean = js.native
   /**
     * is the button currently touched
     */
-  def touched(): Boolean = js.native
+  def touched: Boolean = js.native
   /**
     * update this component using the gamepad object it is in. Called on every frame
     * @param nativeController the native gamepad controller object
@@ -123,7 +123,7 @@ class WebXRControllerComponent protected () extends IDisposable {
   /**
     * Get the current value of this component
     */
-  def value(): Double = js.native
+  def value: Double = js.native
 }
 
 /* static members */

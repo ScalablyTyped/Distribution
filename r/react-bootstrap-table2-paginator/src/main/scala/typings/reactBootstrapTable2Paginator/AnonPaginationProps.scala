@@ -15,7 +15,6 @@ object AnonPaginationProps {
   @scala.inline
   def apply(paginationProps: PaginationChildProps, paginationTableProps: BootstrapTableProps[_]): AnonPaginationProps = {
     val __obj = js.Dynamic.literal(paginationProps = paginationProps.asInstanceOf[js.Any], paginationTableProps = paginationTableProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPaginationProps]
   }
 }

@@ -20,7 +20,6 @@ object ParameterizedEventsMap {
     AdLog: String => Unit
   ): ParameterizedEventsMap = {
     val __obj = js.Dynamic.literal(AdClickThru = js.Any.fromFunction3(AdClickThru), AdError = js.Any.fromFunction1(AdError), AdInteraction = js.Any.fromFunction1(AdInteraction), AdLog = js.Any.fromFunction1(AdLog))
-  
     __obj.asInstanceOf[ParameterizedEventsMap]
   }
 }

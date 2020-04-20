@@ -30,7 +30,6 @@ object UpdateBrokerCountRequest {
   @scala.inline
   def apply(ClusterArn: string, CurrentVersion: string, TargetNumberOfBrokerNodes: integerMin1Max15): UpdateBrokerCountRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any], CurrentVersion = CurrentVersion.asInstanceOf[js.Any], TargetNumberOfBrokerNodes = TargetNumberOfBrokerNodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateBrokerCountRequest]
   }
 }

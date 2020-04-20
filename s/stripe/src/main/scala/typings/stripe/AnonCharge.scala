@@ -16,7 +16,6 @@ object AnonCharge {
   @scala.inline
   def apply(charge: String, payment_method_details: IPaymentMethodDetails): AnonCharge = {
     val __obj = js.Dynamic.literal(charge = charge.asInstanceOf[js.Any], payment_method_details = payment_method_details.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCharge]
   }
 }

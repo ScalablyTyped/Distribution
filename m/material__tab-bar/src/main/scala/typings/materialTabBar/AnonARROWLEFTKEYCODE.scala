@@ -26,7 +26,6 @@ object AnonARROWLEFTKEYCODE {
     SPACE_KEYCODE: Double
   ): AnonARROWLEFTKEYCODE = {
     val __obj = js.Dynamic.literal(ARROW_LEFT_KEYCODE = ARROW_LEFT_KEYCODE.asInstanceOf[js.Any], ARROW_RIGHT_KEYCODE = ARROW_RIGHT_KEYCODE.asInstanceOf[js.Any], END_KEYCODE = END_KEYCODE.asInstanceOf[js.Any], ENTER_KEYCODE = ENTER_KEYCODE.asInstanceOf[js.Any], EXTRA_SCROLL_AMOUNT = EXTRA_SCROLL_AMOUNT.asInstanceOf[js.Any], HOME_KEYCODE = HOME_KEYCODE.asInstanceOf[js.Any], SPACE_KEYCODE = SPACE_KEYCODE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonARROWLEFTKEYCODE]
   }
 }

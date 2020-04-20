@@ -17,12 +17,10 @@ trait SubmitMode extends js.Object
 
 object SubmitMode {
   @scala.inline
-  def always: typings.xrm.xrmStrings.always = this.cast("always")
+  def always: typings.xrm.xrmStrings.always = "always".asInstanceOf[typings.xrm.xrmStrings.always]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dirty: typings.xrm.xrmStrings.dirty = "dirty".asInstanceOf[typings.xrm.xrmStrings.dirty]
   @scala.inline
-  def dirty: typings.xrm.xrmStrings.dirty = this.cast("dirty")
-  @scala.inline
-  def never: typings.xrm.xrmStrings.never = this.cast("never")
+  def never: typings.xrm.xrmStrings.never = "never".asInstanceOf[typings.xrm.xrmStrings.never]
 }
 

@@ -13,7 +13,6 @@ object AnonCurrentTarget {
   @scala.inline
   def apply[Target /* <: EventTarget */](currentTarget: Target): AnonCurrentTarget[Target] = {
     val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCurrentTarget[Target]]
   }
 }

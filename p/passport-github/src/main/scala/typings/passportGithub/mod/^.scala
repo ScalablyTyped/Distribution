@@ -2,6 +2,7 @@ package typings.passportGithub.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.passportOauth2.mod.OAuth2Strategy
 import typings.passportOauth2.mod.VerifyCallback
 import scala.scalajs.js
@@ -26,7 +27,7 @@ class ^ protected () extends OAuth2Strategy {
   def this(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify github.StrategyOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify github.StrategyOptionsWithRequest */ js.Any,
     verify: js.Function5[
-        (/* req */ Request_[ParamsDictionary]) | (/* accessToken */ String), 
+        (/* req */ Request_[ParamsDictionary, _, _, Query]) | (/* accessToken */ String), 
         /* refreshToken */ /* accessToken */ String, 
         (/* params */ js.Any) | (/* refreshToken */ String), 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify github.Profile */ /* profile */ js.Any, 
@@ -39,7 +40,7 @@ class ^ protected () extends OAuth2Strategy {
   def this(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify github.StrategyOptionsWithRequest */ js.Any,
     verify: js.Function6[
-        /* req */ Request_[ParamsDictionary], 
+        /* req */ Request_[ParamsDictionary, _, _, Query], 
         /* accessToken */ String, 
         /* params */ js.Any, 
         /* refreshToken */ String, 

@@ -15,7 +15,6 @@ object AttributeFilterOperator_ {
   @scala.inline
   def apply[D](attribute: String, op: AttributeOperator, value: js.Any): AttributeFilterOperator_[D] = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttributeFilterOperator_[D]]
   }
 }

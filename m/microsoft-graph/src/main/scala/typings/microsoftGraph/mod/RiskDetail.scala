@@ -23,30 +23,28 @@ trait RiskDetail extends js.Object
 
 object RiskDetail {
   @scala.inline
-  def adminConfirmedSigninCompromised: typings.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninCompromised = this.cast("adminConfirmedSigninCompromised")
+  def adminConfirmedSigninCompromised: typings.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninCompromised = "adminConfirmedSigninCompromised".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninCompromised]
   @scala.inline
-  def adminConfirmedSigninSafe: typings.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninSafe = this.cast("adminConfirmedSigninSafe")
+  def adminConfirmedSigninSafe: typings.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninSafe = "adminConfirmedSigninSafe".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninSafe]
   @scala.inline
-  def adminConfirmedUserCompromised: typings.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised = this.cast("adminConfirmedUserCompromised")
+  def adminConfirmedUserCompromised: typings.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised = "adminConfirmedUserCompromised".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised]
   @scala.inline
-  def adminDismissedAllRiskForUser: typings.microsoftGraph.microsoftGraphStrings.adminDismissedAllRiskForUser = this.cast("adminDismissedAllRiskForUser")
+  def adminDismissedAllRiskForUser: typings.microsoftGraph.microsoftGraphStrings.adminDismissedAllRiskForUser = "adminDismissedAllRiskForUser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adminDismissedAllRiskForUser]
   @scala.inline
-  def adminGeneratedTemporaryPassword: typings.microsoftGraph.microsoftGraphStrings.adminGeneratedTemporaryPassword = this.cast("adminGeneratedTemporaryPassword")
+  def adminGeneratedTemporaryPassword: typings.microsoftGraph.microsoftGraphStrings.adminGeneratedTemporaryPassword = "adminGeneratedTemporaryPassword".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adminGeneratedTemporaryPassword]
   @scala.inline
-  def aiConfirmedSigninSafe: typings.microsoftGraph.microsoftGraphStrings.aiConfirmedSigninSafe = this.cast("aiConfirmedSigninSafe")
+  def aiConfirmedSigninSafe: typings.microsoftGraph.microsoftGraphStrings.aiConfirmedSigninSafe = "aiConfirmedSigninSafe".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.aiConfirmedSigninSafe]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hidden: typings.microsoftGraph.microsoftGraphStrings.hidden = "hidden".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hidden]
   @scala.inline
-  def hidden: typings.microsoftGraph.microsoftGraphStrings.hidden = this.cast("hidden")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def userPassedMFADrivenByRiskBasedPolicy: typings.microsoftGraph.microsoftGraphStrings.userPassedMFADrivenByRiskBasedPolicy = "userPassedMFADrivenByRiskBasedPolicy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userPassedMFADrivenByRiskBasedPolicy]
   @scala.inline
-  def userPassedMFADrivenByRiskBasedPolicy: typings.microsoftGraph.microsoftGraphStrings.userPassedMFADrivenByRiskBasedPolicy = this.cast("userPassedMFADrivenByRiskBasedPolicy")
+  def userPerformedSecuredPasswordChange: typings.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordChange = "userPerformedSecuredPasswordChange".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordChange]
   @scala.inline
-  def userPerformedSecuredPasswordChange: typings.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordChange = this.cast("userPerformedSecuredPasswordChange")
-  @scala.inline
-  def userPerformedSecuredPasswordReset: typings.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordReset = this.cast("userPerformedSecuredPasswordReset")
+  def userPerformedSecuredPasswordReset: typings.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordReset = "userPerformedSecuredPasswordReset".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordReset]
 }
 

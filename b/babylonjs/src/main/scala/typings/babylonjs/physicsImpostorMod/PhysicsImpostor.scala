@@ -203,7 +203,7 @@ class PhysicsImpostor protected () extends js.Object {
   /**
     * Gets the coefficient of friction
     */
-  def friction(): Double = js.native
+  def friction: Double = js.native
   /**
     * Sets the coefficient of friction
     */
@@ -258,11 +258,11 @@ class PhysicsImpostor protected () extends js.Object {
   /**
     * Specifies if the physics imposter is disposed
     */
-  def isDisposed(): Boolean = js.native
+  def isDisposed: Boolean = js.native
   /**
     * Gets the mass of the physics imposter
     */
-  def mass(): Double = js.native
+  def mass: Double = js.native
   def mass(value: Double): js.Any = js.native
   /**
     * event and body object due to cannon's event-based architecture.
@@ -272,7 +272,7 @@ class PhysicsImpostor protected () extends js.Object {
     * Get the parent of the physics imposter
     * @returns Physics imposter or null
     */
-  def parent(): Nullable[PhysicsImpostor] = js.native
+  def parent: Nullable[PhysicsImpostor] = js.native
   /**
     * Sets the parent of the physics imposter
     */
@@ -280,7 +280,7 @@ class PhysicsImpostor protected () extends js.Object {
   /**
     * Gets the body that holds this impostor. Either its own, or its parent.
     */
-  def physicsBody(): js.Any = js.native
+  def physicsBody: js.Any = js.native
   /**
     * Set the physics body. Used mainly by the physics engine/plugin
     */
@@ -288,7 +288,7 @@ class PhysicsImpostor protected () extends js.Object {
   /**
     * Gets the positionIterations of a soft body; only supported by the AmmoJSPlugin
     */
-  def positionIterations(): Double = js.native
+  def positionIterations: Double = js.native
   /**
     * Sets the positionIterations of a soft body; only supported by the AmmoJSPlugin
     */
@@ -296,7 +296,7 @@ class PhysicsImpostor protected () extends js.Object {
   /**
     * Gets the pressure of a soft body; only supported by the AmmoJSPlugin
     */
-  def pressure(): Double = js.native
+  def pressure: Double = js.native
   /**
     * Sets the pressure of a soft body; only supported by the AmmoJSPlugin
     */
@@ -331,7 +331,7 @@ class PhysicsImpostor protected () extends js.Object {
   /**
     * Gets the coefficient of restitution
     */
-  def restitution(): Double = js.native
+  def restitution: Double = js.native
   /**
     * Sets the coefficient of restitution
     */
@@ -380,7 +380,7 @@ class PhysicsImpostor protected () extends js.Object {
   /**
     * Gets the stiffness of a soft body; only supported by the AmmoJSPlugin
     */
-  def stiffness(): Double = js.native
+  def stiffness: Double = js.native
   /**
     * Sets the stiffness of a soft body; only supported by the AmmoJSPlugin
     */
@@ -462,7 +462,7 @@ class PhysicsImpostor protected () extends js.Object {
   /**
     * Gets the velocityIterations of a soft body; only supported by the AmmoJSPlugin
     */
-  def velocityIterations(): Double = js.native
+  def velocityIterations: Double = js.native
   /**
     * Sets the velocityIterations of a soft body; only supported by the AmmoJSPlugin
     */

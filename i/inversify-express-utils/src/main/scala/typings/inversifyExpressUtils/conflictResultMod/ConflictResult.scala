@@ -14,7 +14,6 @@ object ConflictResult {
   @scala.inline
   def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): ConflictResult = {
     val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync))
-  
     __obj.asInstanceOf[ConflictResult]
   }
 }

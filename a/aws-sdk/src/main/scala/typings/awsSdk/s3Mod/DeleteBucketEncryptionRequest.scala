@@ -16,7 +16,6 @@ object DeleteBucketEncryptionRequest {
   @scala.inline
   def apply(Bucket: BucketName): DeleteBucketEncryptionRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBucketEncryptionRequest]
   }
 }

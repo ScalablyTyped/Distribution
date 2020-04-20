@@ -16,7 +16,6 @@ object RejectSharedDirectoryRequest {
   @scala.inline
   def apply(SharedDirectoryId: DirectoryId): RejectSharedDirectoryRequest = {
     val __obj = js.Dynamic.literal(SharedDirectoryId = SharedDirectoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RejectSharedDirectoryRequest]
   }
 }

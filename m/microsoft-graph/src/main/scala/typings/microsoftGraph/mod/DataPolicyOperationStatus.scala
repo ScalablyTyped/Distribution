@@ -18,16 +18,14 @@ trait DataPolicyOperationStatus extends js.Object
 
 object DataPolicyOperationStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complete: typings.microsoftGraph.microsoftGraphStrings.complete = "complete".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.complete]
   @scala.inline
-  def complete: typings.microsoftGraph.microsoftGraphStrings.complete = this.cast("complete")
+  def failed: failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
-  def failed: failed_ = this.cast("failed")
+  def notStarted: notStarted_ = "notStarted".asInstanceOf[notStarted_]
   @scala.inline
-  def notStarted: notStarted_ = this.cast("notStarted")
+  def running: running_ = "running".asInstanceOf[running_]
   @scala.inline
-  def running: running_ = this.cast("running")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

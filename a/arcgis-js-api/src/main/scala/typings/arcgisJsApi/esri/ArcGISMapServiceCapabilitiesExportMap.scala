@@ -14,6 +14,12 @@ trait ArcGISMapServiceCapabilitiesExportMap extends Object {
     */
   var supportsDynamicLayers: Boolean
   /**
+    * Indicates if a sublayer supports modifying its renderer and/or data source.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+    */
+  var supportsModification: Boolean
+  /**
     * Indicates if sublayers [definition expression](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#definitionExpression) can be set.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
@@ -40,12 +46,12 @@ object ArcGISMapServiceCapabilitiesExportMap {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     supportsDynamicLayers: Boolean,
+    supportsModification: Boolean,
     supportsSublayerDefinitionExpression: Boolean,
     supportsSublayerVisibility: Boolean,
     supportsSublayersChanges: Boolean
   ): ArcGISMapServiceCapabilitiesExportMap = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsDynamicLayers = supportsDynamicLayers.asInstanceOf[js.Any], supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression.asInstanceOf[js.Any], supportsSublayerVisibility = supportsSublayerVisibility.asInstanceOf[js.Any], supportsSublayersChanges = supportsSublayersChanges.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsDynamicLayers = supportsDynamicLayers.asInstanceOf[js.Any], supportsModification = supportsModification.asInstanceOf[js.Any], supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression.asInstanceOf[js.Any], supportsSublayerVisibility = supportsSublayerVisibility.asInstanceOf[js.Any], supportsSublayersChanges = supportsSublayersChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportMap]
   }
 }

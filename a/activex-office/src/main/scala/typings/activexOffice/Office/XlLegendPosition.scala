@@ -22,18 +22,16 @@ trait XlLegendPosition extends js.Object
 
 object XlLegendPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlLegendPositionBottom: `-4107` = -4107.asInstanceOf[`-4107`]
   @scala.inline
-  def xlLegendPositionBottom: `-4107` = this.cast(-4107)
+  def xlLegendPositionCorner: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlLegendPositionCorner: `2` = this.cast(2)
+  def xlLegendPositionCustom: `-4161` = -4161.asInstanceOf[`-4161`]
   @scala.inline
-  def xlLegendPositionCustom: `-4161` = this.cast(-4161)
+  def xlLegendPositionLeft: `-4131` = -4131.asInstanceOf[`-4131`]
   @scala.inline
-  def xlLegendPositionLeft: `-4131` = this.cast(-4131)
+  def xlLegendPositionRight: `-4152` = -4152.asInstanceOf[`-4152`]
   @scala.inline
-  def xlLegendPositionRight: `-4152` = this.cast(-4152)
-  @scala.inline
-  def xlLegendPositionTop: `-4160` = this.cast(-4160)
+  def xlLegendPositionTop: `-4160` = -4160.asInstanceOf[`-4160`]
 }
 

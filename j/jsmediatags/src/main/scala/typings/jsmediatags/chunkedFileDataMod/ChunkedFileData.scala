@@ -26,7 +26,6 @@ object ChunkedFileData {
     hasDataRange: (Double, Double) => Boolean
   ): ChunkedFileData = {
     val __obj = js.Dynamic.literal(_concatData = js.Any.fromFunction2(_concatData), _getChunkRange = js.Any.fromFunction2(_getChunkRange), _sliceData = js.Any.fromFunction3(_sliceData), addData = js.Any.fromFunction2(addData), getByteAt = js.Any.fromFunction1(getByteAt), hasDataRange = js.Any.fromFunction2(hasDataRange))
-  
     __obj.asInstanceOf[ChunkedFileData]
   }
 }

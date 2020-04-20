@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.formidable.mod.Files
 import typings.server.keyinLogLevelLogFn
 import typings.server.optionsMod.Options
@@ -26,7 +27,7 @@ trait Context extends js.Object {
   var params: StringDictionary[String]
   var path: String
   var query: StringDictionary[String | js.Array[String]]
-  var req: Request_[ParamsDictionary]
+  var req: Request_[ParamsDictionary, _, _, Query]
   var res: Response_[_]
   var secure: Boolean
   var session: js.Object
@@ -49,7 +50,7 @@ object Context {
     params: StringDictionary[String],
     path: String,
     query: StringDictionary[String | js.Array[String]],
-    req: Request_[ParamsDictionary],
+    req: Request_[ParamsDictionary, _, _, Query],
     res: Response_[_],
     secure: Boolean,
     session: js.Object,

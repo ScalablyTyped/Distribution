@@ -18,18 +18,16 @@ trait EdgeSizeType
 
 object EdgeSizeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def large: typings.grommet.grommetStrings.large = "large".asInstanceOf[typings.grommet.grommetStrings.large]
   @scala.inline
-  def large: typings.grommet.grommetStrings.large = this.cast("large")
+  def medium: typings.grommet.grommetStrings.medium = "medium".asInstanceOf[typings.grommet.grommetStrings.medium]
   @scala.inline
-  def medium: typings.grommet.grommetStrings.medium = this.cast("medium")
+  def small: typings.grommet.grommetStrings.small = "small".asInstanceOf[typings.grommet.grommetStrings.small]
   @scala.inline
-  def small: typings.grommet.grommetStrings.small = this.cast("small")
+  def xlarge: typings.grommet.grommetStrings.xlarge = "xlarge".asInstanceOf[typings.grommet.grommetStrings.xlarge]
   @scala.inline
-  def xlarge: typings.grommet.grommetStrings.xlarge = this.cast("xlarge")
+  def xsmall: typings.grommet.grommetStrings.xsmall = "xsmall".asInstanceOf[typings.grommet.grommetStrings.xsmall]
   @scala.inline
-  def xsmall: typings.grommet.grommetStrings.xsmall = this.cast("xsmall")
-  @scala.inline
-  def xxsmall: typings.grommet.grommetStrings.xxsmall = this.cast("xxsmall")
+  def xxsmall: typings.grommet.grommetStrings.xxsmall = "xxsmall".asInstanceOf[typings.grommet.grommetStrings.xxsmall]
 }
 

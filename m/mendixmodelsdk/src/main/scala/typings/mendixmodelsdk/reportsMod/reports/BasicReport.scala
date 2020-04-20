@@ -50,15 +50,15 @@ class BasicReport protected () extends ReportWidget {
   ) = this()
   @JSName("model")
   var model_FBasicReport: IModel = js.native
-  def aggregates(): IList[BasicReportAggregate] = js.native
-  def columns(): IList[BasicReportColumn] = js.native
-  def isPagingEnabled(): Boolean = js.native
+  def aggregates: IList[BasicReportAggregate] = js.native
+  def columns: IList[BasicReportColumn] = js.native
+  def isPagingEnabled: Boolean = js.native
   def isPagingEnabled(newValue: Boolean): js.Any = js.native
-  def pageSize(): Double = js.native
+  def pageSize: Double = js.native
   def pageSize(newValue: Double): js.Any = js.native
-  def showExportButton(): Boolean = js.native
+  def showExportButton: Boolean = js.native
   def showExportButton(newValue: Boolean): js.Any = js.native
-  def zoomInfo(): ReportZoomInfo = js.native
+  def zoomInfo: ReportZoomInfo = js.native
   def zoomInfo(newValue: ReportZoomInfo): js.Any = js.native
 }
 

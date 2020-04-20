@@ -24,7 +24,6 @@ object VueTelInputComputed {
     state: () => Boolean
   ): VueTelInputComputed = {
     val __obj = js.Dynamic.literal(filteredCountries = js.Any.fromFunction0(filteredCountries), formattedResult = js.Any.fromFunction0(formattedResult), mode = js.Any.fromFunction0(mode), response = js.Any.fromFunction0(response), sortedCountries = js.Any.fromFunction0(sortedCountries), state = js.Any.fromFunction0(state))
-  
     __obj.asInstanceOf[VueTelInputComputed]
   }
 }

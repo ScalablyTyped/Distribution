@@ -14,7 +14,6 @@ object AnonCv {
   @scala.inline
   def apply(cv: Double, mean: Double, std: Double): AnonCv = {
     val __obj = js.Dynamic.literal(cv = cv.asInstanceOf[js.Any], mean = mean.asInstanceOf[js.Any], std = std.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCv]
   }
 }

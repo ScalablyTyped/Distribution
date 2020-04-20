@@ -12,7 +12,6 @@ object AnonLength {
   @scala.inline
   def apply(length: Double): AnonLength = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLength]
   }
 }

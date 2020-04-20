@@ -14,7 +14,6 @@ object AnonAoMap {
   @scala.inline
   def apply(aoMap: IUniform, aoMapIntensity: IUniform): AnonAoMap = {
     val __obj = js.Dynamic.literal(aoMap = aoMap.asInstanceOf[js.Any], aoMapIntensity = aoMapIntensity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAoMap]
   }
 }

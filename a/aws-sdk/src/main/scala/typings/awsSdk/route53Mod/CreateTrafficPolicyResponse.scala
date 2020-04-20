@@ -20,7 +20,6 @@ object CreateTrafficPolicyResponse {
   @scala.inline
   def apply(Location: ResourceURI, TrafficPolicy: TrafficPolicy): CreateTrafficPolicyResponse = {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], TrafficPolicy = TrafficPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTrafficPolicyResponse]
   }
 }

@@ -20,7 +20,6 @@ object DescribeProvisioningTemplateVersionRequest {
   @scala.inline
   def apply(templateName: TemplateName, versionId: TemplateVersionId): DescribeProvisioningTemplateVersionRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any], versionId = versionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeProvisioningTemplateVersionRequest]
   }
 }

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("UniqueIndex")
 @js.native
 class UniqueIndex[E /* <: js.Object */] protected () extends js.Object {
-  def this(uniqueField: String) = this()
-  var field: String = js.native
+  def this(uniqueField: /* keyof E */ String) = this()
+  var field: /* keyof E */ String = js.native
   var keyMap: StringDictionary[js.UndefOr[E]] = js.native
   var lokiMap: NumberDictionary[js.UndefOr[String | Double]] = js.native
   def byId(id: Double): js.UndefOr[E] = js.native

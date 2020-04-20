@@ -15,7 +15,6 @@ object UacGroup {
   @scala.inline
   def apply(id: Double, name: String, showName: String): UacGroup = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], showName = showName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UacGroup]
   }
 }

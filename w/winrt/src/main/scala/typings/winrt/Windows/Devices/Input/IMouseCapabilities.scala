@@ -22,7 +22,6 @@ object IMouseCapabilities {
     verticalWheelPresent: Double
   ): IMouseCapabilities = {
     val __obj = js.Dynamic.literal(horizontalWheelPresent = horizontalWheelPresent.asInstanceOf[js.Any], mousePresent = mousePresent.asInstanceOf[js.Any], numberOfButtons = numberOfButtons.asInstanceOf[js.Any], swapButtons = swapButtons.asInstanceOf[js.Any], verticalWheelPresent = verticalWheelPresent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMouseCapabilities]
   }
 }

@@ -23,7 +23,6 @@ object ColorType {
   @scala.inline
   def apply(ansi: Conversions, ansi16m: Conversions, ansi256: Conversions): ColorType = {
     val __obj = js.Dynamic.literal(ansi = ansi.asInstanceOf[js.Any], ansi16m = ansi16m.asInstanceOf[js.Any], ansi256 = ansi256.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ColorType]
   }
 }

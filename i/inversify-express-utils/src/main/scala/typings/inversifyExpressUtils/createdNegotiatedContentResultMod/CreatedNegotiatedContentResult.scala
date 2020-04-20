@@ -21,7 +21,6 @@ object CreatedNegotiatedContentResult {
     location: js.Any
   ): CreatedNegotiatedContentResult[T] = {
     val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync), location = location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatedNegotiatedContentResult[T]]
   }
 }

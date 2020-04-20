@@ -21,7 +21,6 @@ object Feature {
     isValid: (TestPositionCallback, TestPositionCallback) => Boolean
   ): Feature = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), debug = js.Any.fromFunction0(debug), isValid = js.Any.fromFunction2(isValid))
-  
     __obj.asInstanceOf[Feature]
   }
 }

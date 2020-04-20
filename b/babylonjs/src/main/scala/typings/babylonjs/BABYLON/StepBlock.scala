@@ -15,14 +15,14 @@ class StepBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the edge operand input component
     */
-  def edge(): NodeMaterialConnectionPoint = js.native
+  def edge: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the output component
     */
-  def output(): NodeMaterialConnectionPoint = js.native
+  def output: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the value operand input component
     */
-  def value(): NodeMaterialConnectionPoint = js.native
+  def value: NodeMaterialConnectionPoint = js.native
 }
 

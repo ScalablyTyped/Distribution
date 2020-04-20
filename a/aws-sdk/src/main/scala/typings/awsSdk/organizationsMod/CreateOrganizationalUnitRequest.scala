@@ -20,7 +20,6 @@ object CreateOrganizationalUnitRequest {
   @scala.inline
   def apply(Name: OrganizationalUnitName, ParentId: ParentId): CreateOrganizationalUnitRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ParentId = ParentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateOrganizationalUnitRequest]
   }
 }

@@ -37,7 +37,6 @@ object GlusterfsPersistentVolumeSource {
   @scala.inline
   def apply(endpoints: String, endpointsNamespace: String, path: String, readOnly: Boolean): GlusterfsPersistentVolumeSource = {
     val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], endpointsNamespace = endpointsNamespace.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlusterfsPersistentVolumeSource]
   }
 }

@@ -15,6 +15,6 @@ abstract class Hook protected () extends js.Object {
   val name: HookName = js.native
   /* protected */ def loadHookFn(p: String): js.Promise[js.UndefOr[HookFn]] = js.native
   def run(input: HookInput): js.Promise[Unit] = js.native
-  def script(): String = js.native
+  def script: String = js.native
 }
 

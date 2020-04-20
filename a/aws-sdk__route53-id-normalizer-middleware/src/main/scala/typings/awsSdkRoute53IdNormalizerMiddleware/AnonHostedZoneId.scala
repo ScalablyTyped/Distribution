@@ -12,7 +12,6 @@ object AnonHostedZoneId {
   @scala.inline
   def apply(HostedZoneId: String): AnonHostedZoneId = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHostedZoneId]
   }
 }

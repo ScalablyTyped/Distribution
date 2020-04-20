@@ -12,7 +12,6 @@ object GetIndexesResponse {
   @scala.inline
   def apply[Content /* <: js.Object */](indexes: js.Array[Index]): GetIndexesResponse[Content] = {
     val __obj = js.Dynamic.literal(indexes = indexes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIndexesResponse[Content]]
   }
 }

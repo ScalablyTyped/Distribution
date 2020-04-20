@@ -23,7 +23,6 @@ object IPixelGeometry {
     shift: js.Array[Double] => IPixelGeometry
   ): IPixelGeometry = {
     val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), events = events.asInstanceOf[js.Any], getBounds = js.Any.fromFunction0(getBounds), getMetaData = js.Any.fromFunction0(getMetaData), getType = js.Any.fromFunction0(getType), scale = js.Any.fromFunction1(scale), shift = js.Any.fromFunction1(shift))
-  
     __obj.asInstanceOf[IPixelGeometry]
   }
 }

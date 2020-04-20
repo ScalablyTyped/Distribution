@@ -12,7 +12,6 @@ object AnonFontSize {
   @scala.inline
   def apply(fontSize: String): AnonFontSize = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontSize]
   }
 }

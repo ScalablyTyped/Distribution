@@ -16,16 +16,14 @@ trait CookieConfigBehavior extends js.Object
 
 object CookieConfigBehavior {
   @scala.inline
-  def allow_all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_all = this.cast("allow_all")
+  def allow_all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_all = "allow_all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_all]
   @scala.inline
-  def allow_visited: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_visited = this.cast("allow_visited")
+  def allow_visited: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_visited = "allow_visited".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.allow_visited]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def reject_all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_all = "reject_all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_all]
   @scala.inline
-  def reject_all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_all = this.cast("reject_all")
+  def reject_third_party: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_third_party = "reject_third_party".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_third_party]
   @scala.inline
-  def reject_third_party: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_third_party = this.cast("reject_third_party")
-  @scala.inline
-  def reject_trackers: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers = this.cast("reject_trackers")
+  def reject_trackers: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers = "reject_trackers".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reject_trackers]
 }
 

@@ -13,7 +13,6 @@ object DeleteFileSuccess {
   @scala.inline
   def apply(fileList: js.Array[AnonStatus]): DeleteFileSuccess = {
     val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFileSuccess]
   }
 }

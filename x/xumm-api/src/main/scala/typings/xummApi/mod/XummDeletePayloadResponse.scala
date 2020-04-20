@@ -15,7 +15,6 @@ object XummDeletePayloadResponse {
   @scala.inline
   def apply(custom_meta: XummCustomMeta, meta: XummPayloadMeta, result: AnonCancelled): XummDeletePayloadResponse = {
     val __obj = js.Dynamic.literal(custom_meta = custom_meta.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XummDeletePayloadResponse]
   }
 }

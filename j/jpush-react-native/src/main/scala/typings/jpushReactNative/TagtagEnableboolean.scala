@@ -22,7 +22,6 @@ object TagtagEnableboolean {
   @scala.inline
   def apply(tag: String, tagEnable: Boolean): TagtagEnableboolean = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any], tagEnable = tagEnable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagtagEnableboolean]
   }
 }

@@ -20,7 +20,6 @@ object Typeofwebsocket {
     handle_handshake: () => Double
   ): Typeofwebsocket = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), close_conid = js.Any.fromFunction3(close_conid), close_reason = js.Any.fromFunction2(close_reason), handle_handshake = js.Any.fromFunction0(handle_handshake))
-  
     __obj.asInstanceOf[Typeofwebsocket]
   }
 }

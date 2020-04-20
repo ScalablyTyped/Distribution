@@ -35,56 +35,54 @@ trait SocialMediaType extends js.Object
 
 object SocialMediaType {
   @scala.inline
-  def angellist: typings.reactNativeElements.reactNativeElementsStrings.angellist = this.cast("angellist")
+  def angellist: typings.reactNativeElements.reactNativeElementsStrings.angellist = "angellist".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.angellist]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def codepen: typings.reactNativeElements.reactNativeElementsStrings.codepen = "codepen".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.codepen]
   @scala.inline
-  def codepen: typings.reactNativeElements.reactNativeElementsStrings.codepen = this.cast("codepen")
+  def facebook: typings.reactNativeElements.reactNativeElementsStrings.facebook = "facebook".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.facebook]
   @scala.inline
-  def facebook: typings.reactNativeElements.reactNativeElementsStrings.facebook = this.cast("facebook")
+  def flickr: typings.reactNativeElements.reactNativeElementsStrings.flickr = "flickr".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.flickr]
   @scala.inline
-  def flickr: typings.reactNativeElements.reactNativeElementsStrings.flickr = this.cast("flickr")
+  def foursquare: typings.reactNativeElements.reactNativeElementsStrings.foursquare = "foursquare".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.foursquare]
   @scala.inline
-  def foursquare: typings.reactNativeElements.reactNativeElementsStrings.foursquare = this.cast("foursquare")
+  def github: typings.reactNativeElements.reactNativeElementsStrings.github = "github".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.github]
   @scala.inline
-  def github: typings.reactNativeElements.reactNativeElementsStrings.github = this.cast("github")
+  def `github-alt`: typings.reactNativeElements.reactNativeElementsStrings.`github-alt` = "github-alt".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.`github-alt`]
   @scala.inline
-  def `github-alt`: typings.reactNativeElements.reactNativeElementsStrings.`github-alt` = this.cast("github-alt")
+  def gitlab: typings.reactNativeElements.reactNativeElementsStrings.gitlab = "gitlab".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.gitlab]
   @scala.inline
-  def gitlab: typings.reactNativeElements.reactNativeElementsStrings.gitlab = this.cast("gitlab")
+  def google: typings.reactNativeElements.reactNativeElementsStrings.google = "google".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.google]
   @scala.inline
-  def google: typings.reactNativeElements.reactNativeElementsStrings.google = this.cast("google")
+  def `google-plus-official`: typings.reactNativeElements.reactNativeElementsStrings.`google-plus-official` = "google-plus-official".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.`google-plus-official`]
   @scala.inline
-  def `google-plus-official`: typings.reactNativeElements.reactNativeElementsStrings.`google-plus-official` = this.cast("google-plus-official")
+  def instagram: typings.reactNativeElements.reactNativeElementsStrings.instagram = "instagram".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.instagram]
   @scala.inline
-  def instagram: typings.reactNativeElements.reactNativeElementsStrings.instagram = this.cast("instagram")
+  def linkedin: typings.reactNativeElements.reactNativeElementsStrings.linkedin = "linkedin".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.linkedin]
   @scala.inline
-  def linkedin: typings.reactNativeElements.reactNativeElementsStrings.linkedin = this.cast("linkedin")
+  def medium: typings.reactNativeElements.reactNativeElementsStrings.medium = "medium".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.medium]
   @scala.inline
-  def medium: typings.reactNativeElements.reactNativeElementsStrings.medium = this.cast("medium")
+  def pinterest: typings.reactNativeElements.reactNativeElementsStrings.pinterest = "pinterest".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.pinterest]
   @scala.inline
-  def pinterest: typings.reactNativeElements.reactNativeElementsStrings.pinterest = this.cast("pinterest")
+  def quora: typings.reactNativeElements.reactNativeElementsStrings.quora = "quora".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.quora]
   @scala.inline
-  def quora: typings.reactNativeElements.reactNativeElementsStrings.quora = this.cast("quora")
+  def soundcloud: typings.reactNativeElements.reactNativeElementsStrings.soundcloud = "soundcloud".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.soundcloud]
   @scala.inline
-  def soundcloud: typings.reactNativeElements.reactNativeElementsStrings.soundcloud = this.cast("soundcloud")
+  def stumbleupon: typings.reactNativeElements.reactNativeElementsStrings.stumbleupon = "stumbleupon".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.stumbleupon]
   @scala.inline
-  def stumbleupon: typings.reactNativeElements.reactNativeElementsStrings.stumbleupon = this.cast("stumbleupon")
+  def tumblr: typings.reactNativeElements.reactNativeElementsStrings.tumblr = "tumblr".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.tumblr]
   @scala.inline
-  def tumblr: typings.reactNativeElements.reactNativeElementsStrings.tumblr = this.cast("tumblr")
+  def twitch: typings.reactNativeElements.reactNativeElementsStrings.twitch = "twitch".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.twitch]
   @scala.inline
-  def twitch: typings.reactNativeElements.reactNativeElementsStrings.twitch = this.cast("twitch")
+  def twitter: typings.reactNativeElements.reactNativeElementsStrings.twitter = "twitter".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.twitter]
   @scala.inline
-  def twitter: typings.reactNativeElements.reactNativeElementsStrings.twitter = this.cast("twitter")
+  def vimeo: typings.reactNativeElements.reactNativeElementsStrings.vimeo = "vimeo".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.vimeo]
   @scala.inline
-  def vimeo: typings.reactNativeElements.reactNativeElementsStrings.vimeo = this.cast("vimeo")
+  def vk: typings.reactNativeElements.reactNativeElementsStrings.vk = "vk".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.vk]
   @scala.inline
-  def vk: typings.reactNativeElements.reactNativeElementsStrings.vk = this.cast("vk")
+  def weibo: typings.reactNativeElements.reactNativeElementsStrings.weibo = "weibo".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.weibo]
   @scala.inline
-  def weibo: typings.reactNativeElements.reactNativeElementsStrings.weibo = this.cast("weibo")
+  def wordpress: typings.reactNativeElements.reactNativeElementsStrings.wordpress = "wordpress".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.wordpress]
   @scala.inline
-  def wordpress: typings.reactNativeElements.reactNativeElementsStrings.wordpress = this.cast("wordpress")
-  @scala.inline
-  def youtube: typings.reactNativeElements.reactNativeElementsStrings.youtube = this.cast("youtube")
+  def youtube: typings.reactNativeElements.reactNativeElementsStrings.youtube = "youtube".asInstanceOf[typings.reactNativeElements.reactNativeElementsStrings.youtube]
 }
 

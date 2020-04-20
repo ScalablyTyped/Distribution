@@ -12,7 +12,6 @@ object IServerDataPushSink {
   @scala.inline
   def apply(OnServerDataPush: (Double, String) => Unit): IServerDataPushSink = {
     val __obj = js.Dynamic.literal(OnServerDataPush = js.Any.fromFunction2(OnServerDataPush))
-  
     __obj.asInstanceOf[IServerDataPushSink]
   }
 }

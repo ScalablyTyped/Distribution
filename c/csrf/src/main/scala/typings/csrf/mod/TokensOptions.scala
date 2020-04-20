@@ -19,7 +19,6 @@ object TokensOptions {
   @scala.inline
   def apply(saltLength: Double, secretLength: Double): TokensOptions = {
     val __obj = js.Dynamic.literal(saltLength = saltLength.asInstanceOf[js.Any], secretLength = secretLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TokensOptions]
   }
 }

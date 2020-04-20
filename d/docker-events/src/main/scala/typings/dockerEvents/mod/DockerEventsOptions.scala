@@ -12,7 +12,6 @@ object DockerEventsOptions {
   @scala.inline
   def apply(docker: typings.dockerode.mod.^): DockerEventsOptions = {
     val __obj = js.Dynamic.literal(docker = docker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DockerEventsOptions]
   }
 }

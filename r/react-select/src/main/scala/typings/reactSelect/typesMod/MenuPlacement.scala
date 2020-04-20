@@ -13,12 +13,10 @@ trait MenuPlacement extends js.Object
 
 object MenuPlacement {
   @scala.inline
-  def auto: typings.reactSelect.reactSelectStrings.auto = this.cast("auto")
+  def auto: typings.reactSelect.reactSelectStrings.auto = "auto".asInstanceOf[typings.reactSelect.reactSelectStrings.auto]
   @scala.inline
-  def bottom: typings.reactSelect.reactSelectStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactSelect.reactSelectStrings.bottom = "bottom".asInstanceOf[typings.reactSelect.reactSelectStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def top: typings.reactSelect.reactSelectStrings.top = this.cast("top")
+  def top: typings.reactSelect.reactSelectStrings.top = "top".asInstanceOf[typings.reactSelect.reactSelectStrings.top]
 }
 

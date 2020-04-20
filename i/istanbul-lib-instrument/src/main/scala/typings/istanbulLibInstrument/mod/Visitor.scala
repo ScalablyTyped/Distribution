@@ -14,7 +14,6 @@ object Visitor {
   @scala.inline
   def apply(enter: String => Unit, exit: String => AnonFileCoverage): Visitor = {
     val __obj = js.Dynamic.literal(enter = js.Any.fromFunction1(enter), exit = js.Any.fromFunction1(exit))
-  
     __obj.asInstanceOf[Visitor]
   }
 }

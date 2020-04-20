@@ -26,7 +26,7 @@ class SessionEntityType () extends ISessionEntityType {
   var entities_SessionEntityType: js.Array[IEntity] = js.native
   /** SessionEntityType entityOverrideMode. */
   @JSName("entityOverrideMode")
-  var entityOverrideMode_SessionEntityType: EntityOverrideMode | String = js.native
+  var entityOverrideMode_SessionEntityType: EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode * / any */ String) = js.native
   /** SessionEntityType name. */
   @JSName("name")
   var name_SessionEntityType: String = js.native

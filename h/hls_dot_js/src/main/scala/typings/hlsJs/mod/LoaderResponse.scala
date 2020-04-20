@@ -14,7 +14,6 @@ object LoaderResponse {
   @scala.inline
   def apply(data: String | ArrayBuffer, url: String): LoaderResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoaderResponse]
   }
 }

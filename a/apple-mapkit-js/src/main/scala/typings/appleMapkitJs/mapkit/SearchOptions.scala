@@ -26,7 +26,6 @@ object SearchOptions {
   @scala.inline
   def apply(coordinate: Coordinate, language: String, region: CoordinateRegion): SearchOptions = {
     val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchOptions]
   }
 }

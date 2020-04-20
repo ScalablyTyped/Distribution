@@ -17,7 +17,6 @@ object AnonTermType {
   @scala.inline
   def apply(termType: PropType[BlankNode, termType], value: PropType[BlankNode, value]): AnonTermType = {
     val __obj = js.Dynamic.literal(termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTermType]
   }
 }

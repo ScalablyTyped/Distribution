@@ -21,7 +21,6 @@ object BooleanConstructor {
   @scala.inline
   def apply(parse: java.lang.String => Boolean): BooleanConstructor = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
-  
     __obj.asInstanceOf[BooleanConstructor]
   }
 }

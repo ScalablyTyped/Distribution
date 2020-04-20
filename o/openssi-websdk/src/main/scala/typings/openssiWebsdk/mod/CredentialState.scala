@@ -18,22 +18,20 @@ trait CredentialState extends js.Object
 
 object CredentialState {
   @scala.inline
-  def accepted: typings.openssiWebsdk.openssiWebsdkStrings.accepted = this.cast("accepted")
+  def accepted: typings.openssiWebsdk.openssiWebsdkStrings.accepted = "accepted".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.accepted]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inbound_offer: typings.openssiWebsdk.openssiWebsdkStrings.inbound_offer = "inbound_offer".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.inbound_offer]
   @scala.inline
-  def inbound_offer: typings.openssiWebsdk.openssiWebsdkStrings.inbound_offer = this.cast("inbound_offer")
+  def inbound_request: typings.openssiWebsdk.openssiWebsdkStrings.inbound_request = "inbound_request".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.inbound_request]
   @scala.inline
-  def inbound_request: typings.openssiWebsdk.openssiWebsdkStrings.inbound_request = this.cast("inbound_request")
+  def issued: typings.openssiWebsdk.openssiWebsdkStrings.issued = "issued".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.issued]
   @scala.inline
-  def issued: typings.openssiWebsdk.openssiWebsdkStrings.issued = this.cast("issued")
+  def outbound_offer: typings.openssiWebsdk.openssiWebsdkStrings.outbound_offer = "outbound_offer".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.outbound_offer]
   @scala.inline
-  def outbound_offer: typings.openssiWebsdk.openssiWebsdkStrings.outbound_offer = this.cast("outbound_offer")
+  def outbound_request: typings.openssiWebsdk.openssiWebsdkStrings.outbound_request = "outbound_request".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.outbound_request]
   @scala.inline
-  def outbound_request: typings.openssiWebsdk.openssiWebsdkStrings.outbound_request = this.cast("outbound_request")
+  def rejected: typings.openssiWebsdk.openssiWebsdkStrings.rejected = "rejected".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.rejected]
   @scala.inline
-  def rejected: typings.openssiWebsdk.openssiWebsdkStrings.rejected = this.cast("rejected")
-  @scala.inline
-  def stored: typings.openssiWebsdk.openssiWebsdkStrings.stored = this.cast("stored")
+  def stored: typings.openssiWebsdk.openssiWebsdkStrings.stored = "stored".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.stored]
 }
 

@@ -12,7 +12,6 @@ object IVolumeChangeRequestedEventArgs {
   @scala.inline
   def apply(volume: Double): IVolumeChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IVolumeChangeRequestedEventArgs]
   }
 }

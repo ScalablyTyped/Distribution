@@ -24,20 +24,18 @@ trait styleMsFlexAlign extends js.Object
 
 object styleMsFlexAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleMsFlexAlignBaseline: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleMsFlexAlignBaseline: `3` = this.cast(3)
+  def styleMsFlexAlignCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleMsFlexAlignCenter: `2` = this.cast(2)
+  def styleMsFlexAlignEnd: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleMsFlexAlignEnd: `1` = this.cast(1)
+  def styleMsFlexAlignNotSet: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleMsFlexAlignNotSet: `5` = this.cast(5)
+  def styleMsFlexAlignStart: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleMsFlexAlignStart: `0` = this.cast(0)
+  def styleMsFlexAlignStretch: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleMsFlexAlignStretch: `4` = this.cast(4)
-  @scala.inline
-  def styleMsFlexAlign_Max: `2147483647` = this.cast(2147483647)
+  def styleMsFlexAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

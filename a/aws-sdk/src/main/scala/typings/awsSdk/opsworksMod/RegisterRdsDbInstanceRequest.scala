@@ -28,7 +28,6 @@ object RegisterRdsDbInstanceRequest {
   @scala.inline
   def apply(DbPassword: String, DbUser: String, RdsDbInstanceArn: String, StackId: String): RegisterRdsDbInstanceRequest = {
     val __obj = js.Dynamic.literal(DbPassword = DbPassword.asInstanceOf[js.Any], DbUser = DbUser.asInstanceOf[js.Any], RdsDbInstanceArn = RdsDbInstanceArn.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterRdsDbInstanceRequest]
   }
 }

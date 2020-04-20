@@ -13,7 +13,6 @@ object AnonThemeExclude {
   @scala.inline
   def apply(theme: Exclude[_, js.UndefOr[scala.Nothing]]): AnonThemeExclude = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonThemeExclude]
   }
 }

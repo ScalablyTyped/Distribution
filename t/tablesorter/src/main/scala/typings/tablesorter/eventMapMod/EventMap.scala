@@ -18,22 +18,20 @@ trait EventMap extends js.Object
 
 object EventMap {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def refreshComplete: typings.tablesorter.tablesorterStrings.refreshComplete = "refreshComplete".asInstanceOf[typings.tablesorter.tablesorterStrings.refreshComplete]
   @scala.inline
-  def refreshComplete: typings.tablesorter.tablesorterStrings.refreshComplete = this.cast("refreshComplete")
+  def sortBegin: typings.tablesorter.tablesorterStrings.sortBegin = "sortBegin".asInstanceOf[typings.tablesorter.tablesorterStrings.sortBegin]
   @scala.inline
-  def sortBegin: typings.tablesorter.tablesorterStrings.sortBegin = this.cast("sortBegin")
+  def sortEnd: typings.tablesorter.tablesorterStrings.sortEnd = "sortEnd".asInstanceOf[typings.tablesorter.tablesorterStrings.sortEnd]
   @scala.inline
-  def sortEnd: typings.tablesorter.tablesorterStrings.sortEnd = this.cast("sortEnd")
+  def sortStart: typings.tablesorter.tablesorterStrings.sortStart = "sortStart".asInstanceOf[typings.tablesorter.tablesorterStrings.sortStart]
   @scala.inline
-  def sortStart: typings.tablesorter.tablesorterStrings.sortStart = this.cast("sortStart")
+  def `tablesorter-initialized`: typings.tablesorter.tablesorterStrings.`tablesorter-initialized` = "tablesorter-initialized".asInstanceOf[typings.tablesorter.tablesorterStrings.`tablesorter-initialized`]
   @scala.inline
-  def `tablesorter-initialized`: typings.tablesorter.tablesorterStrings.`tablesorter-initialized` = this.cast("tablesorter-initialized")
+  def `tablesorter-ready`: typings.tablesorter.tablesorterStrings.`tablesorter-ready` = "tablesorter-ready".asInstanceOf[typings.tablesorter.tablesorterStrings.`tablesorter-ready`]
   @scala.inline
-  def `tablesorter-ready`: typings.tablesorter.tablesorterStrings.`tablesorter-ready` = this.cast("tablesorter-ready")
+  def updateComplete: typings.tablesorter.tablesorterStrings.updateComplete = "updateComplete".asInstanceOf[typings.tablesorter.tablesorterStrings.updateComplete]
   @scala.inline
-  def updateComplete: typings.tablesorter.tablesorterStrings.updateComplete = this.cast("updateComplete")
-  @scala.inline
-  def widgetRemoveEnd: typings.tablesorter.tablesorterStrings.widgetRemoveEnd = this.cast("widgetRemoveEnd")
+  def widgetRemoveEnd: typings.tablesorter.tablesorterStrings.widgetRemoveEnd = "widgetRemoveEnd".asInstanceOf[typings.tablesorter.tablesorterStrings.widgetRemoveEnd]
 }
 

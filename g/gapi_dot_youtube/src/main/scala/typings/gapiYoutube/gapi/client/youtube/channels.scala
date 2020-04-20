@@ -27,7 +27,6 @@ object channels {
     update: AnonRequestBody => HttpRequest[GoogleApiYouTubeChannelResource]
   ): channels = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[channels]
   }
 }

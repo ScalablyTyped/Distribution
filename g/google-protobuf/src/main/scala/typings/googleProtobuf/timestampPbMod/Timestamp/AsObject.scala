@@ -13,7 +13,6 @@ object AsObject {
   @scala.inline
   def apply(nanos: Double, seconds: Double): AsObject = {
     val __obj = js.Dynamic.literal(nanos = nanos.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

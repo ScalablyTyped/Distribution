@@ -55,7 +55,6 @@ object MessagingDevicesResponse {
     successCount: Double
   ): MessagingDevicesResponse = {
     val __obj = js.Dynamic.literal(canonicalRegistrationTokenCount = canonicalRegistrationTokenCount.asInstanceOf[js.Any], failureCount = failureCount.asInstanceOf[js.Any], multicastId = multicastId.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], successCount = successCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessagingDevicesResponse]
   }
 }

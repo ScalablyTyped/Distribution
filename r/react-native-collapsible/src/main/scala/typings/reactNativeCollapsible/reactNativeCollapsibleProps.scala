@@ -10,7 +10,7 @@ trait reactNativeCollapsibleProps {
   def AccordionProps: typings.reactNativeCollapsible.accordionMod.AccordionProps.type = typings.reactNativeCollapsible.accordionMod.AccordionProps
   type AccordionProps[T] = typings.reactNativeCollapsible.accordionMod.AccordionProps[T]
   @scala.inline
-  def ReactNativeCollapsibleProps: CollapsibleProps.type = typings.reactNativeCollapsible.mod.CollapsibleProps
+  def ReactNativeCollapsibleProps: CollapsibleProps.type = CollapsibleProps
   type ReactNativeCollapsibleProps = CollapsibleProps
 }
 

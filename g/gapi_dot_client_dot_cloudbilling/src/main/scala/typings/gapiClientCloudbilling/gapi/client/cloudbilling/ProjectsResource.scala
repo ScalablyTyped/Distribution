@@ -65,7 +65,6 @@ object ProjectsResource {
     updateBillingInfo: AnonAlt => Request_[ProjectBillingInfo]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(getBillingInfo = js.Any.fromFunction1(getBillingInfo), list = js.Any.fromFunction1(list), updateBillingInfo = js.Any.fromFunction1(updateBillingInfo))
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

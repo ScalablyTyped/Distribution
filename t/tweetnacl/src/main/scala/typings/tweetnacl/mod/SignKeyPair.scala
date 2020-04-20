@@ -14,7 +14,6 @@ object SignKeyPair {
   @scala.inline
   def apply(publicKey: Uint8Array, secretKey: Uint8Array): SignKeyPair = {
     val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignKeyPair]
   }
 }

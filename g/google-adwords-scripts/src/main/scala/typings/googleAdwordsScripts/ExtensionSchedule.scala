@@ -24,7 +24,6 @@ object ExtensionSchedule {
     getStartMinute: () => Double
   ): ExtensionSchedule = {
     val __obj = js.Dynamic.literal(getDayOfWeek = js.Any.fromFunction0(getDayOfWeek), getEndHour = js.Any.fromFunction0(getEndHour), getEndMinute = js.Any.fromFunction0(getEndMinute), getStartHour = js.Any.fromFunction0(getStartHour), getStartMinute = js.Any.fromFunction0(getStartMinute))
-  
     __obj.asInstanceOf[ExtensionSchedule]
   }
 }

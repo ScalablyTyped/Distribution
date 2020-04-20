@@ -32,7 +32,6 @@ object AnonDescription {
     title: String
   ): AnonDescription = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], publishedAt = publishedAt.asInstanceOf[js.Any], thumbnails = thumbnails.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDescription]
   }
 }

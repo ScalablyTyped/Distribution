@@ -15,16 +15,14 @@ trait TaxonomyKind extends js.Object
 
 object TaxonomyKind {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def category: typings.wordpressApiFetch.wordpressApiFetchStrings.category = "category".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.category]
   @scala.inline
-  def category: typings.wordpressApiFetch.wordpressApiFetchStrings.category = this.cast("category")
+  def link_category: typings.wordpressApiFetch.wordpressApiFetchStrings.link_category = "link_category".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.link_category]
   @scala.inline
-  def link_category: typings.wordpressApiFetch.wordpressApiFetchStrings.link_category = this.cast("link_category")
+  def nav_menu: typings.wordpressApiFetch.wordpressApiFetchStrings.nav_menu = "nav_menu".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.nav_menu]
   @scala.inline
-  def nav_menu: typings.wordpressApiFetch.wordpressApiFetchStrings.nav_menu = this.cast("nav_menu")
+  def post_format: typings.wordpressApiFetch.wordpressApiFetchStrings.post_format = "post_format".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.post_format]
   @scala.inline
-  def post_format: typings.wordpressApiFetch.wordpressApiFetchStrings.post_format = this.cast("post_format")
-  @scala.inline
-  def post_tag: typings.wordpressApiFetch.wordpressApiFetchStrings.post_tag = this.cast("post_tag")
+  def post_tag: typings.wordpressApiFetch.wordpressApiFetchStrings.post_tag = "post_tag".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.post_tag]
 }
 

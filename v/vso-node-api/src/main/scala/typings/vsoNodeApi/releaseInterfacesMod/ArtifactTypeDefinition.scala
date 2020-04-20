@@ -21,7 +21,6 @@ object ArtifactTypeDefinition {
     uniqueSourceIdentifier: String
   ): ArtifactTypeDefinition = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], inputDescriptors = inputDescriptors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uniqueSourceIdentifier = uniqueSourceIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArtifactTypeDefinition]
   }
 }

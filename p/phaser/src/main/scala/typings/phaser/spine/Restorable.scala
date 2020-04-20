@@ -12,7 +12,6 @@ object Restorable {
   @scala.inline
   def apply(restore: () => Unit): Restorable = {
     val __obj = js.Dynamic.literal(restore = js.Any.fromFunction0(restore))
-  
     __obj.asInstanceOf[Restorable]
   }
 }

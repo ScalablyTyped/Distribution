@@ -12,7 +12,6 @@ object CustomMarkerOverlay {
   @scala.inline
   def apply(marker: CustomMarker): CustomMarkerOverlay = {
     val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomMarkerOverlay]
   }
 }

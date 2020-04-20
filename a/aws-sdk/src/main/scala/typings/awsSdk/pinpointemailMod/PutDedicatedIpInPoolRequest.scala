@@ -20,7 +20,6 @@ object PutDedicatedIpInPoolRequest {
   @scala.inline
   def apply(DestinationPoolName: PoolName, Ip: Ip): PutDedicatedIpInPoolRequest = {
     val __obj = js.Dynamic.literal(DestinationPoolName = DestinationPoolName.asInstanceOf[js.Any], Ip = Ip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutDedicatedIpInPoolRequest]
   }
 }

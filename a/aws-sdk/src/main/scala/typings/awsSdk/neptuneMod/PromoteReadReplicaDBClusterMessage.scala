@@ -16,7 +16,6 @@ object PromoteReadReplicaDBClusterMessage {
   @scala.inline
   def apply(DBClusterIdentifier: String): PromoteReadReplicaDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromoteReadReplicaDBClusterMessage]
   }
 }

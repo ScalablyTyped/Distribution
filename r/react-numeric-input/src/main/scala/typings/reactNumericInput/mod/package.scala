@@ -14,5 +14,5 @@ package object mod {
     typings.reactNumericInput.mod.NumericInputState, 
     js.Any
   ]
-  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
 }

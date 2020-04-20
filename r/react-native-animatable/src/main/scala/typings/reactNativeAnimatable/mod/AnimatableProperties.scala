@@ -20,7 +20,7 @@ trait AnimatableProperties[S /* <: js.Object */] extends js.Object {
   var onAnimationEnd: js.UndefOr[js.Function] = js.undefined
   var onTransitionBegin: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.undefined
   var onTransitionEnd: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.undefined
-  var transition: js.UndefOr[String | js.Array[String]] = js.undefined
+  var transition: js.UndefOr[(/* keyof S */ String) | (js.Array[/* keyof S */ String])] = js.undefined
   var useNativeDriver: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -38,7 +38,7 @@ object AnimatableProperties {
     onAnimationEnd: js.Function = null,
     onTransitionBegin: /* property */ String => Unit = null,
     onTransitionEnd: /* property */ String => Unit = null,
-    transition: String | js.Array[String] = null,
+    transition: (/* keyof S */ String) | (js.Array[/* keyof S */ String]) = null,
     useNativeDriver: js.UndefOr[Boolean] = js.undefined
   ): AnimatableProperties[S] = {
     val __obj = js.Dynamic.literal()

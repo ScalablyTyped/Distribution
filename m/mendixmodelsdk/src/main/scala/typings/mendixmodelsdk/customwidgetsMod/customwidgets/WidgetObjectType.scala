@@ -24,9 +24,9 @@ class WidgetObjectType protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FWidgetObjectType: IModel = js.native
-  def containerAsCustomWidgetType(): CustomWidgetType = js.native
-  def containerAsWidgetValueType(): WidgetValueType = js.native
-  def propertyTypes(): IList[WidgetPropertyType] = js.native
+  def containerAsCustomWidgetType: CustomWidgetType = js.native
+  def containerAsWidgetValueType: WidgetValueType = js.native
+  def propertyTypes: IList[WidgetPropertyType] = js.native
 }
 
 /* static members */

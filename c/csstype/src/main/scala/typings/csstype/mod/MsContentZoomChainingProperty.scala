@@ -17,20 +17,18 @@ trait MsContentZoomChainingProperty extends js.Object
 
 object MsContentZoomChainingProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chained: typings.csstype.csstypeStrings.chained = "chained".asInstanceOf[typings.csstype.csstypeStrings.chained]
   @scala.inline
-  def chained: typings.csstype.csstypeStrings.chained = this.cast("chained")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
   @scala.inline
-  def none: typings.csstype.csstypeStrings.none = this.cast("none")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

@@ -12,10 +12,8 @@ trait PageBreak extends js.Object
 
 object PageBreak {
   @scala.inline
-  def after: typings.pdfmake.pdfmakeStrings.after = this.cast("after")
+  def after: typings.pdfmake.pdfmakeStrings.after = "after".asInstanceOf[typings.pdfmake.pdfmakeStrings.after]
   @scala.inline
-  def before: typings.pdfmake.pdfmakeStrings.before = this.cast("before")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def before: typings.pdfmake.pdfmakeStrings.before = "before".asInstanceOf[typings.pdfmake.pdfmakeStrings.before]
 }
 

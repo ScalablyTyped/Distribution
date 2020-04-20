@@ -40,7 +40,6 @@ object Hasher {
     update: Message => Hasher
   ): Hasher = {
     val __obj = js.Dynamic.literal(array = js.Any.fromFunction0(array), arrayBuffer = js.Any.fromFunction0(arrayBuffer), digest = js.Any.fromFunction0(digest), hex = js.Any.fromFunction0(hex), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[Hasher]
   }
 }

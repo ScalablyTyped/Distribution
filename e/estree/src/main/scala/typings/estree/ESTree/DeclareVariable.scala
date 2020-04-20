@@ -15,7 +15,6 @@ object DeclareVariable {
     id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
   ): DeclareVariable = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeclareVariable]
   }
 }

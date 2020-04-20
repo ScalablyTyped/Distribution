@@ -18,7 +18,6 @@ object AnonType {
   @scala.inline
   def apply($type: timestamp | date): AnonType = {
     val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonType]
   }
 }

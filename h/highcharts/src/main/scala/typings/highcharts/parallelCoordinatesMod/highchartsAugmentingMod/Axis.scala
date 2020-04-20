@@ -24,7 +24,6 @@ object Axis {
   @scala.inline
   def apply(setParallelPosition: (js.Array[String], AxisOptions) => Unit): Axis = {
     val __obj = js.Dynamic.literal(setParallelPosition = js.Any.fromFunction2(setParallelPosition))
-  
     __obj.asInstanceOf[Axis]
   }
 }

@@ -22,7 +22,7 @@ abstract class Relation protected () extends js.Object {
   def _setForeignKey(record: js.Any, relatedRecords: js.Any): Unit = js.native
   def addLinkedRecords(records: js.Any): Unit = js.native
   def assignTo(mapper: js.Any): Unit = js.native
-  def canAutoAddLinks(): Boolean = js.native
+  def canAutoAddLinks: Boolean = js.native
   def canFindLinkFor(): Boolean = js.native
   def canFindLinkFor(record: js.Any): Boolean = js.native
   def createChildRecord(props: js.Any, relationData: js.Any, opts: js.Any): js.Any = js.native
@@ -40,7 +40,7 @@ abstract class Relation protected () extends js.Object {
   def isRequiresChildId(): Boolean = js.native
   def isRequiresParentId(): Boolean = js.native
   def linkRecord(record: js.Any, relatedRecord: js.Any): js.Any = js.native
-  def relatedCollection(): js.Any = js.native
+  def relatedCollection: js.Any = js.native
   def removeLinkedRecords(relatedMapper: js.Any, records: js.Any): Unit = js.native
   def setForeignKey(record: js.Any, relatedRecord: js.Any): Unit = js.native
   def setLocalField(record: js.Any, relatedData: js.Any): Unit = js.native

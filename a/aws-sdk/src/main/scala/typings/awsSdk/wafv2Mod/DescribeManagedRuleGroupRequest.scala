@@ -24,7 +24,6 @@ object DescribeManagedRuleGroupRequest {
   @scala.inline
   def apply(Name: EntityName, Scope: Scope, VendorName: VendorName): DescribeManagedRuleGroupRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any], VendorName = VendorName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeManagedRuleGroupRequest]
   }
 }

@@ -16,7 +16,6 @@ object DescribeAlgorithmInput {
   @scala.inline
   def apply(AlgorithmName: ArnOrName): DescribeAlgorithmInput = {
     val __obj = js.Dynamic.literal(AlgorithmName = AlgorithmName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAlgorithmInput]
   }
 }

@@ -16,7 +16,6 @@ object DeleteDBInstanceAutomatedBackupMessage {
   @scala.inline
   def apply(DbiResourceId: String): DeleteDBInstanceAutomatedBackupMessage = {
     val __obj = js.Dynamic.literal(DbiResourceId = DbiResourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDBInstanceAutomatedBackupMessage]
   }
 }

@@ -14,7 +14,6 @@ object AnonLevel {
   @scala.inline
   def apply(level: String, message: String, meta: js.Any): AnonLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLevel]
   }
 }

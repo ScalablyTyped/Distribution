@@ -44,7 +44,6 @@ object CSINodeDriver {
   @scala.inline
   def apply(allocatable: VolumeNodeResources, name: String, nodeID: String, topologyKeys: js.Array[String]): CSINodeDriver = {
     val __obj = js.Dynamic.literal(allocatable = allocatable.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeID = nodeID.asInstanceOf[js.Any], topologyKeys = topologyKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CSINodeDriver]
   }
 }

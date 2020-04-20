@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 trait CellFormat extends js.Object {
   /** The background color of the cell. */
   var backgroundColor: js.UndefOr[Color] = js.undefined
+  /**
+    * The background color of the cell.
+    * If background_color is also set, this field takes precedence.
+    */
+  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   /** The borders of the cell. */
   var borders: js.UndefOr[Borders] = js.undefined
   /** The horizontal alignment of the value in the cell. */
@@ -33,6 +38,7 @@ object CellFormat {
   @scala.inline
   def apply(
     backgroundColor: Color = null,
+    backgroundColorStyle: ColorStyle = null,
     borders: Borders = null,
     horizontalAlignment: String = null,
     hyperlinkDisplayType: String = null,
@@ -46,6 +52,7 @@ object CellFormat {
   ): CellFormat = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (backgroundColorStyle != null) __obj.updateDynamic("backgroundColorStyle")(backgroundColorStyle.asInstanceOf[js.Any])
     if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (hyperlinkDisplayType != null) __obj.updateDynamic("hyperlinkDisplayType")(hyperlinkDisplayType.asInstanceOf[js.Any])

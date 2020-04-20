@@ -13,7 +13,6 @@ object TypeofS3Control {
   @scala.inline
   def apply(Types: TypeofS3Control): TypeofS3Control = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofS3Control]
   }
 }

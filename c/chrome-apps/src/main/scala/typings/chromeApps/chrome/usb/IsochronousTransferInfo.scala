@@ -22,7 +22,6 @@ object IsochronousTransferInfo {
   @scala.inline
   def apply(packetLength: integer, packets: integer, transferInfo: GenericTransferInfo): IsochronousTransferInfo = {
     val __obj = js.Dynamic.literal(packetLength = packetLength.asInstanceOf[js.Any], packets = packets.asInstanceOf[js.Any], transferInfo = transferInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IsochronousTransferInfo]
   }
 }

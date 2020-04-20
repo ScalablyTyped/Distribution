@@ -14,7 +14,6 @@ object Resp {
   @scala.inline
   def apply(error: js.Any => scala.Nothing, success: js.Any => scala.Nothing): Resp = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), success = js.Any.fromFunction1(success))
-  
     __obj.asInstanceOf[Resp]
   }
 }

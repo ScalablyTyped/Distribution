@@ -16,12 +16,10 @@ trait WdRoutingSlipStatus extends js.Object
 
 object WdRoutingSlipStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdNotYetRouted: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdNotYetRouted: `0` = this.cast(0)
+  def wdRouteComplete: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdRouteComplete: `2` = this.cast(2)
-  @scala.inline
-  def wdRouteInProgress: `1` = this.cast(1)
+  def wdRouteInProgress: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -23,7 +23,6 @@ object BufferImageData {
   @scala.inline
   def apply(length: Double, position: Double): BufferImageData = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BufferImageData]
   }
 }

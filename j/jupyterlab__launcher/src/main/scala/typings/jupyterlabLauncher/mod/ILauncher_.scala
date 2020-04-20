@@ -24,7 +24,6 @@ object ILauncher_ {
   @scala.inline
   def apply(add: IItemOptions => IDisposable): ILauncher_ = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
-  
     __obj.asInstanceOf[ILauncher_]
   }
 }

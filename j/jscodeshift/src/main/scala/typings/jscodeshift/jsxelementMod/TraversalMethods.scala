@@ -22,7 +22,6 @@ object TraversalMethods {
   @scala.inline
   def apply(childElements: () => Collection[JSXElement], childNodes: () => Collection[JSXElementChild]): TraversalMethods = {
     val __obj = js.Dynamic.literal(childElements = js.Any.fromFunction0(childElements), childNodes = js.Any.fromFunction0(childNodes))
-  
     __obj.asInstanceOf[TraversalMethods]
   }
 }

@@ -13,12 +13,10 @@ trait BaseType extends js.Object
 
 object BaseType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def danger: typings.antd.antdStrings.danger = "danger".asInstanceOf[typings.antd.antdStrings.danger]
   @scala.inline
-  def danger: typings.antd.antdStrings.danger = this.cast("danger")
+  def secondary: typings.antd.antdStrings.secondary = "secondary".asInstanceOf[typings.antd.antdStrings.secondary]
   @scala.inline
-  def secondary: typings.antd.antdStrings.secondary = this.cast("secondary")
-  @scala.inline
-  def warning: typings.antd.antdStrings.warning = this.cast("warning")
+  def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
 }
 

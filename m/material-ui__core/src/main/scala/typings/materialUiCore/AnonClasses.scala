@@ -16,7 +16,6 @@ object AnonClasses {
   @scala.inline
   def apply[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */](classes: ClassNameMap[_ | T]): AnonClasses[T] = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClasses[T]]
   }
 }

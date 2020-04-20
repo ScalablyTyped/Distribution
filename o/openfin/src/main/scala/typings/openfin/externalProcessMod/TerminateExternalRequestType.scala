@@ -14,7 +14,6 @@ object TerminateExternalRequestType {
   @scala.inline
   def apply(killTree: Boolean, timeout: Double, uuid: String): TerminateExternalRequestType = {
     val __obj = js.Dynamic.literal(killTree = killTree.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TerminateExternalRequestType]
   }
 }

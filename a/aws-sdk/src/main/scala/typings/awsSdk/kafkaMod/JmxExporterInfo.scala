@@ -18,7 +18,6 @@ object JmxExporterInfo {
   @scala.inline
   def apply(EnabledInBroker: boolean): JmxExporterInfo = {
     val __obj = js.Dynamic.literal(EnabledInBroker = EnabledInBroker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JmxExporterInfo]
   }
 }

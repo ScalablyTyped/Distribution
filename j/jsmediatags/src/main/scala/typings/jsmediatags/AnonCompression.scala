@@ -22,7 +22,6 @@ object AnonCompression {
     unsynchronisation: Boolean
   ): AnonCompression = {
     val __obj = js.Dynamic.literal(compression = compression.asInstanceOf[js.Any], data_length_indicator = data_length_indicator.asInstanceOf[js.Any], encryption = encryption.asInstanceOf[js.Any], grouping_identity = grouping_identity.asInstanceOf[js.Any], unsynchronisation = unsynchronisation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCompression]
   }
 }

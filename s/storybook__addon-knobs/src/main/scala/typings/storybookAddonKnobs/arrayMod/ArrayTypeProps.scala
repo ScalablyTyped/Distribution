@@ -14,7 +14,6 @@ object ArrayTypeProps {
   @scala.inline
   def apply(knob: ArrayTypeKnob, onChange: ArrayTypeKnobValue => ArrayTypeKnobValue): ArrayTypeProps = {
     val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
-  
     __obj.asInstanceOf[ArrayTypeProps]
   }
 }

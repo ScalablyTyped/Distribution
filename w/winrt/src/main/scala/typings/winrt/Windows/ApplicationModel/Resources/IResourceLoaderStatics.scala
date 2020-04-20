@@ -13,7 +13,6 @@ object IResourceLoaderStatics {
   @scala.inline
   def apply(getStringForReference: Uri => String): IResourceLoaderStatics = {
     val __obj = js.Dynamic.literal(getStringForReference = js.Any.fromFunction1(getStringForReference))
-  
     __obj.asInstanceOf[IResourceLoaderStatics]
   }
 }

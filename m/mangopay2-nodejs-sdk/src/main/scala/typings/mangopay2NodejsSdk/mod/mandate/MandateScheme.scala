@@ -12,10 +12,8 @@ trait MandateScheme extends js.Object
 
 object MandateScheme {
   @scala.inline
-  def BACS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BACS = this.cast("BACS")
+  def BACS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BACS = "BACS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BACS]
   @scala.inline
-  def SEPA: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SEPA = this.cast("SEPA")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SEPA: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SEPA = "SEPA".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SEPA]
 }
 

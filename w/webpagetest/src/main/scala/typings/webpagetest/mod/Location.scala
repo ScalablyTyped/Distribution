@@ -25,7 +25,6 @@ object Location {
     location: String
   ): Location = {
     val __obj = js.Dynamic.literal(Browsers = Browsers.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], PendingTests = PendingTests.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labelShort = labelShort.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Location]
   }
 }

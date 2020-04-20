@@ -16,7 +16,6 @@ object StopKeyPhrasesDetectionJobRequest {
   @scala.inline
   def apply(JobId: JobId): StopKeyPhrasesDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopKeyPhrasesDetectionJobRequest]
   }
 }

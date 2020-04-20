@@ -15,7 +15,6 @@ object PlaceGeometry {
   @scala.inline
   def apply(location: LatLng, viewport: LatLngBounds): PlaceGeometry = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaceGeometry]
   }
 }

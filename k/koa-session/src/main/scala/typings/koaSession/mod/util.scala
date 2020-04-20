@@ -20,7 +20,6 @@ object util {
   @scala.inline
   def apply(decode: String => js.Object, encode: js.Object => String, hash: js.Any => String): util = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), hash = js.Any.fromFunction1(hash))
-  
     __obj.asInstanceOf[util]
   }
 }

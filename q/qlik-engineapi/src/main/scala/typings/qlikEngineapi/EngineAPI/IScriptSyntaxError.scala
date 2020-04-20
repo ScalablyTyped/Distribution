@@ -45,7 +45,6 @@ object IScriptSyntaxError {
     qTextPos: Double
   ): IScriptSyntaxError = {
     val __obj = js.Dynamic.literal(qColInLine = qColInLine.asInstanceOf[js.Any], qErrLen = qErrLen.asInstanceOf[js.Any], qLineInTab = qLineInTab.asInstanceOf[js.Any], qSecondaryFailure = qSecondaryFailure.asInstanceOf[js.Any], qTabIx = qTabIx.asInstanceOf[js.Any], qTextPos = qTextPos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IScriptSyntaxError]
   }
 }

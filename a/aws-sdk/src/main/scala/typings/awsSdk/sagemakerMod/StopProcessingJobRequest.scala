@@ -16,7 +16,6 @@ object StopProcessingJobRequest {
   @scala.inline
   def apply(ProcessingJobName: ProcessingJobName): StopProcessingJobRequest = {
     val __obj = js.Dynamic.literal(ProcessingJobName = ProcessingJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopProcessingJobRequest]
   }
 }

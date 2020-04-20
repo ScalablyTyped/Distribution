@@ -13,7 +13,6 @@ object ProjectsReviewUserPermissionLevelParams {
   @scala.inline
   def apply(project_id: Double, username: String): ProjectsReviewUserPermissionLevelParams = {
     val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectsReviewUserPermissionLevelParams]
   }
 }

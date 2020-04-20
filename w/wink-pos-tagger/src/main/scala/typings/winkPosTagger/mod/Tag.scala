@@ -25,36 +25,34 @@ trait Tag extends js.Object
 
 object Tag {
   @scala.inline
-  def alien: typings.winkPosTagger.winkPosTaggerStrings.alien = this.cast("alien")
+  def alien: typings.winkPosTagger.winkPosTaggerStrings.alien = "alien".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.alien]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def currency: typings.winkPosTagger.winkPosTaggerStrings.currency = "currency".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.currency]
   @scala.inline
-  def currency: typings.winkPosTagger.winkPosTaggerStrings.currency = this.cast("currency")
+  def email: typings.winkPosTagger.winkPosTaggerStrings.email = "email".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.email]
   @scala.inline
-  def email: typings.winkPosTagger.winkPosTaggerStrings.email = this.cast("email")
+  def emoji: typings.winkPosTagger.winkPosTaggerStrings.emoji = "emoji".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.emoji]
   @scala.inline
-  def emoji: typings.winkPosTagger.winkPosTaggerStrings.emoji = this.cast("emoji")
+  def emoticon: typings.winkPosTagger.winkPosTaggerStrings.emoticon = "emoticon".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.emoticon]
   @scala.inline
-  def emoticon: typings.winkPosTagger.winkPosTaggerStrings.emoticon = this.cast("emoticon")
+  def hashtag: typings.winkPosTagger.winkPosTaggerStrings.hashtag = "hashtag".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.hashtag]
   @scala.inline
-  def hashtag: typings.winkPosTagger.winkPosTaggerStrings.hashtag = this.cast("hashtag")
+  def mention: typings.winkPosTagger.winkPosTaggerStrings.mention = "mention".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.mention]
   @scala.inline
-  def mention: typings.winkPosTagger.winkPosTaggerStrings.mention = this.cast("mention")
+  def number: typings.winkPosTagger.winkPosTaggerStrings.number = "number".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.number]
   @scala.inline
-  def number: typings.winkPosTagger.winkPosTaggerStrings.number = this.cast("number")
+  def ordinal: typings.winkPosTagger.winkPosTaggerStrings.ordinal = "ordinal".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.ordinal]
   @scala.inline
-  def ordinal: typings.winkPosTagger.winkPosTaggerStrings.ordinal = this.cast("ordinal")
+  def punctuation: typings.winkPosTagger.winkPosTaggerStrings.punctuation = "punctuation".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.punctuation]
   @scala.inline
-  def punctuation: typings.winkPosTagger.winkPosTaggerStrings.punctuation = this.cast("punctuation")
+  def quoted_phrase: typings.winkPosTagger.winkPosTaggerStrings.quoted_phrase = "quoted_phrase".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.quoted_phrase]
   @scala.inline
-  def quoted_phrase: typings.winkPosTagger.winkPosTaggerStrings.quoted_phrase = this.cast("quoted_phrase")
+  def symbol: typings.winkPosTagger.winkPosTaggerStrings.symbol = "symbol".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.symbol]
   @scala.inline
-  def symbol: typings.winkPosTagger.winkPosTaggerStrings.symbol = this.cast("symbol")
+  def time: typings.winkPosTagger.winkPosTaggerStrings.time = "time".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.time]
   @scala.inline
-  def time: typings.winkPosTagger.winkPosTaggerStrings.time = this.cast("time")
+  def url: typings.winkPosTagger.winkPosTaggerStrings.url = "url".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.url]
   @scala.inline
-  def url: typings.winkPosTagger.winkPosTaggerStrings.url = this.cast("url")
-  @scala.inline
-  def word: typings.winkPosTagger.winkPosTaggerStrings.word = this.cast("word")
+  def word: typings.winkPosTagger.winkPosTaggerStrings.word = "word".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.word]
 }
 

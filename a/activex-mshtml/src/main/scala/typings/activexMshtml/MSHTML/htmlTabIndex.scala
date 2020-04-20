@@ -14,10 +14,8 @@ trait htmlTabIndex extends js.Object
 
 object htmlTabIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlTabIndexNotSet: `-32768` = -32768.asInstanceOf[`-32768`]
   @scala.inline
-  def htmlTabIndexNotSet: `-32768` = this.cast(-32768)
-  @scala.inline
-  def htmlTabIndex_Max: `2147483647` = this.cast(2147483647)
+  def htmlTabIndex_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

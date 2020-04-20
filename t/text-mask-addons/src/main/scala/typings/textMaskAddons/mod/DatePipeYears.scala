@@ -13,7 +13,6 @@ object DatePipeYears {
   @scala.inline
   def apply(maxYear: Double, minYear: Double): DatePipeYears = {
     val __obj = js.Dynamic.literal(maxYear = maxYear.asInstanceOf[js.Any], minYear = minYear.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatePipeYears]
   }
 }

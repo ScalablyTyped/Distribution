@@ -14,7 +14,6 @@ object IPaddingImpl {
   @scala.inline
   def apply(pad: (WordArray, Double) => Unit, unpad: WordArray => Unit): IPaddingImpl = {
     val __obj = js.Dynamic.literal(pad = js.Any.fromFunction2(pad), unpad = js.Any.fromFunction1(unpad))
-  
     __obj.asInstanceOf[IPaddingImpl]
   }
 }

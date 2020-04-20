@@ -18,7 +18,6 @@ object AnonFilter {
   @scala.inline
   def apply(filter: AnonGenericsearchterm, limit: Double, server: String, since: String): AnonFilter = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFilter]
   }
 }

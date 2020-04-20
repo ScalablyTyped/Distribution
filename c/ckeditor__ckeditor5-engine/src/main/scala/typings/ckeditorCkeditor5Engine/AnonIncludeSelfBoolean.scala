@@ -12,7 +12,6 @@ object AnonIncludeSelfBoolean {
   @scala.inline
   def apply(includeSelf: Boolean): AnonIncludeSelfBoolean = {
     val __obj = js.Dynamic.literal(includeSelf = includeSelf.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIncludeSelfBoolean]
   }
 }

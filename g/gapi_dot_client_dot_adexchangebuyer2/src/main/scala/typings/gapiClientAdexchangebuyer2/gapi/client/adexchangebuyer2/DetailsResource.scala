@@ -18,7 +18,6 @@ object DetailsResource {
   @scala.inline
   def apply(list: AnonCreativeStatusId => Request_[ListCreativeStatusBreakdownByDetailResponse]): DetailsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[DetailsResource]
   }
 }

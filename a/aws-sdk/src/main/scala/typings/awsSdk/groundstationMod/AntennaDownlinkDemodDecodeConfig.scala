@@ -24,7 +24,6 @@ object AntennaDownlinkDemodDecodeConfig {
   @scala.inline
   def apply(decodeConfig: DecodeConfig, demodulationConfig: DemodulationConfig, spectrumConfig: SpectrumConfig): AntennaDownlinkDemodDecodeConfig = {
     val __obj = js.Dynamic.literal(decodeConfig = decodeConfig.asInstanceOf[js.Any], demodulationConfig = demodulationConfig.asInstanceOf[js.Any], spectrumConfig = spectrumConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AntennaDownlinkDemodDecodeConfig]
   }
 }

@@ -20,16 +20,14 @@ trait XlConnectionType extends js.Object
 
 object XlConnectionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlConnectionTypeODBC: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlConnectionTypeODBC: `2` = this.cast(2)
+  def xlConnectionTypeOLEDB: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlConnectionTypeOLEDB: `1` = this.cast(1)
+  def xlConnectionTypeTEXT: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlConnectionTypeTEXT: `4` = this.cast(4)
+  def xlConnectionTypeWEB: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlConnectionTypeWEB: `5` = this.cast(5)
-  @scala.inline
-  def xlConnectionTypeXMLMAP: `3` = this.cast(3)
+  def xlConnectionTypeXMLMAP: `3` = 3.asInstanceOf[`3`]
 }
 

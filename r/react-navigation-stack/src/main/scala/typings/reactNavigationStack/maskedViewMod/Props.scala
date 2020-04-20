@@ -14,7 +14,6 @@ object Props {
   @scala.inline
   def apply(children: ReactElement, maskElement: ReactElement): Props = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], maskElement = maskElement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Props]
   }
 }

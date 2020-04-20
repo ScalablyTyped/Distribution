@@ -24,7 +24,6 @@ object UpdateSizeConstraintSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, SizeConstraintSetId: ResourceId, Updates: SizeConstraintSetUpdates): UpdateSizeConstraintSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], SizeConstraintSetId = SizeConstraintSetId.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSizeConstraintSetRequest]
   }
 }

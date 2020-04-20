@@ -446,21 +446,21 @@ class NodePath[T] protected () extends js.Object {
   def get(key: String): NodePath[Node] | js.Array[NodePath[Node]] = js.native
   def get(key: String, context: Boolean): NodePath[Node] | js.Array[NodePath[Node]] = js.native
   def get(key: String, context: TraversalContext): NodePath[Node] | js.Array[NodePath[Node]] = js.native
-  def get[K /* <: String */](key: K): (NodePath[
+  def get[K /* <: /* keyof T */ String */](key: K): (NodePath[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ]) | (js.Array[
     NodePath[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
     ]
   ]) = js.native
-  def get[K /* <: String */](key: K, context: Boolean): (NodePath[
+  def get[K /* <: /* keyof T */ String */](key: K, context: Boolean): (NodePath[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ]) | (js.Array[
     NodePath[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
     ]
   ]) = js.native
-  def get[K /* <: String */](key: K, context: TraversalContext): (NodePath[
+  def get[K /* <: /* keyof T */ String */](key: K, context: TraversalContext): (NodePath[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ]) | (js.Array[
     NodePath[

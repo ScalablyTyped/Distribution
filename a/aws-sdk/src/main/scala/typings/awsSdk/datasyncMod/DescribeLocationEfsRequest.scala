@@ -16,7 +16,6 @@ object DescribeLocationEfsRequest {
   @scala.inline
   def apply(LocationArn: LocationArn): DescribeLocationEfsRequest = {
     val __obj = js.Dynamic.literal(LocationArn = LocationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLocationEfsRequest]
   }
 }

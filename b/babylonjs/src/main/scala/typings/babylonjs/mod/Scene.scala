@@ -56,20 +56,20 @@ object Scene extends js.Object {
   /**
     * Time in milliseconds to wait to raise long press events if button is still pressed. Default is 300 ms
     */
-  def DoubleClickDelay(): Double = js.native
+  def DoubleClickDelay: Double = js.native
   def DoubleClickDelay(value: Double): js.Any = js.native
   /**
     * Gets or sets the distance in pixel that you have to move to prevent some events. Default is 10 pixels
     */
-  def DragMovementThreshold(): Double = js.native
+  def DragMovementThreshold: Double = js.native
   def DragMovementThreshold(value: Double): js.Any = js.native
   /** If you need to check double click without raising a single click at first click, enable this flag */
-  def ExclusiveDoubleClickMode(): Boolean = js.native
+  def ExclusiveDoubleClickMode: Boolean = js.native
   def ExclusiveDoubleClickMode(value: Boolean): js.Any = js.native
   /**
     * Time in milliseconds to wait to raise long press events if button is still pressed. Default is 500 ms
     */
-  def LongPressDelay(): Double = js.native
+  def LongPressDelay: Double = js.native
   def LongPressDelay(value: Double): js.Any = js.native
 }
 

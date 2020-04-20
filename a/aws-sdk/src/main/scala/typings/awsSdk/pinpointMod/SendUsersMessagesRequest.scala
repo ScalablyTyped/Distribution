@@ -17,7 +17,6 @@ object SendUsersMessagesRequest {
   @scala.inline
   def apply(ApplicationId: string, SendUsersMessageRequest: SendUsersMessageRequest): SendUsersMessagesRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SendUsersMessageRequest = SendUsersMessageRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendUsersMessagesRequest]
   }
 }

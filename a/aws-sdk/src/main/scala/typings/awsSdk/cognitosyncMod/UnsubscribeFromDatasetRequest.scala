@@ -33,7 +33,6 @@ object UnsubscribeFromDatasetRequest {
     IdentityPoolId: IdentityPoolId
   ): UnsubscribeFromDatasetRequest = {
     val __obj = js.Dynamic.literal(DatasetName = DatasetName.asInstanceOf[js.Any], DeviceId = DeviceId.asInstanceOf[js.Any], IdentityId = IdentityId.asInstanceOf[js.Any], IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnsubscribeFromDatasetRequest]
   }
 }

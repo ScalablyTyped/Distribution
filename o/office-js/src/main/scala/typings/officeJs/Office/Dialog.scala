@@ -34,7 +34,6 @@ object Dialog {
   @scala.inline
   def apply(addEventHandler: (EventType, js.Function) => Unit, close: () => Unit, sendMessage: String => Unit): Dialog = {
     val __obj = js.Dynamic.literal(addEventHandler = js.Any.fromFunction2(addEventHandler), close = js.Any.fromFunction0(close), sendMessage = js.Any.fromFunction1(sendMessage))
-  
     __obj.asInstanceOf[Dialog]
   }
 }

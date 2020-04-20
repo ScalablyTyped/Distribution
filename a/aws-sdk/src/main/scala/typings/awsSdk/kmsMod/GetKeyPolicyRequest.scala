@@ -20,7 +20,6 @@ object GetKeyPolicyRequest {
   @scala.inline
   def apply(KeyId: KeyIdType, PolicyName: PolicyNameType): GetKeyPolicyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetKeyPolicyRequest]
   }
 }

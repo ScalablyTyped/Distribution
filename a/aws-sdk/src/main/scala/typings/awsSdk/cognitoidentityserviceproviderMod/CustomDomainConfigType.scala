@@ -16,7 +16,6 @@ object CustomDomainConfigType {
   @scala.inline
   def apply(CertificateArn: ArnType): CustomDomainConfigType = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomDomainConfigType]
   }
 }

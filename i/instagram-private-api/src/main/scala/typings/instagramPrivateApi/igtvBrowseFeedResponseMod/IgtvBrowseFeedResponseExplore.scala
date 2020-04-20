@@ -12,7 +12,6 @@ object IgtvBrowseFeedResponseExplore {
   @scala.inline
   def apply(explanation: String): IgtvBrowseFeedResponseExplore = {
     val __obj = js.Dynamic.literal(explanation = explanation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IgtvBrowseFeedResponseExplore]
   }
 }

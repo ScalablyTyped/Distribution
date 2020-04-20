@@ -27,7 +27,6 @@ object Restrictions {
     maxTVShowRatingForCountry: String => String
   ): Restrictions = {
     val __obj = js.Dynamic.literal(allowsExplicit = allowsExplicit.asInstanceOf[js.Any], maxMovieRank = maxMovieRank.asInstanceOf[js.Any], maxMovieRatingForCountry = js.Any.fromFunction1(maxMovieRatingForCountry), maxTVShowRank = maxTVShowRank.asInstanceOf[js.Any], maxTVShowRatingForCountry = js.Any.fromFunction1(maxTVShowRatingForCountry))
-  
     __obj.asInstanceOf[Restrictions]
   }
 }

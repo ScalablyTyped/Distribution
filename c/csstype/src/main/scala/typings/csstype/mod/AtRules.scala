@@ -22,30 +22,28 @@ trait AtRules extends js.Object
 
 object AtRules {
   @scala.inline
-  def `@charset`: typings.csstype.csstypeStrings.`@charset` = this.cast("@charset")
+  def `@charset`: typings.csstype.csstypeStrings.`@charset` = "@charset".asInstanceOf[typings.csstype.csstypeStrings.`@charset`]
   @scala.inline
-  def `@counter-style`: typings.csstype.csstypeStrings.`@counter-style` = this.cast("@counter-style")
+  def `@counter-style`: typings.csstype.csstypeStrings.`@counter-style` = "@counter-style".asInstanceOf[typings.csstype.csstypeStrings.`@counter-style`]
   @scala.inline
-  def `@document`: typings.csstype.csstypeStrings.`@document` = this.cast("@document")
+  def `@document`: typings.csstype.csstypeStrings.`@document` = "@document".asInstanceOf[typings.csstype.csstypeStrings.`@document`]
   @scala.inline
-  def `@font-face`: typings.csstype.csstypeStrings.`@font-face` = this.cast("@font-face")
+  def `@font-face`: typings.csstype.csstypeStrings.`@font-face` = "@font-face".asInstanceOf[typings.csstype.csstypeStrings.`@font-face`]
   @scala.inline
-  def `@font-feature-values`: typings.csstype.csstypeStrings.`@font-feature-values` = this.cast("@font-feature-values")
+  def `@font-feature-values`: typings.csstype.csstypeStrings.`@font-feature-values` = "@font-feature-values".asInstanceOf[typings.csstype.csstypeStrings.`@font-feature-values`]
   @scala.inline
-  def `@import`: typings.csstype.csstypeStrings.`@import` = this.cast("@import")
+  def `@import`: typings.csstype.csstypeStrings.`@import` = "@import".asInstanceOf[typings.csstype.csstypeStrings.`@import`]
   @scala.inline
-  def `@keyframes`: typings.csstype.csstypeStrings.`@keyframes` = this.cast("@keyframes")
+  def `@keyframes`: typings.csstype.csstypeStrings.`@keyframes` = "@keyframes".asInstanceOf[typings.csstype.csstypeStrings.`@keyframes`]
   @scala.inline
-  def `@media`: typings.csstype.csstypeStrings.`@media` = this.cast("@media")
+  def `@media`: typings.csstype.csstypeStrings.`@media` = "@media".asInstanceOf[typings.csstype.csstypeStrings.`@media`]
   @scala.inline
-  def `@namespace`: typings.csstype.csstypeStrings.`@namespace` = this.cast("@namespace")
+  def `@namespace`: typings.csstype.csstypeStrings.`@namespace` = "@namespace".asInstanceOf[typings.csstype.csstypeStrings.`@namespace`]
   @scala.inline
-  def `@page`: typings.csstype.csstypeStrings.`@page` = this.cast("@page")
+  def `@page`: typings.csstype.csstypeStrings.`@page` = "@page".asInstanceOf[typings.csstype.csstypeStrings.`@page`]
   @scala.inline
-  def `@supports`: typings.csstype.csstypeStrings.`@supports` = this.cast("@supports")
+  def `@supports`: typings.csstype.csstypeStrings.`@supports` = "@supports".asInstanceOf[typings.csstype.csstypeStrings.`@supports`]
   @scala.inline
-  def `@viewport`: typings.csstype.csstypeStrings.`@viewport` = this.cast("@viewport")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `@viewport`: typings.csstype.csstypeStrings.`@viewport` = "@viewport".asInstanceOf[typings.csstype.csstypeStrings.`@viewport`]
 }
 

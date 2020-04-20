@@ -16,7 +16,6 @@ object AssociateVPCWithHostedZoneResponse {
   @scala.inline
   def apply(ChangeInfo: ChangeInfo): AssociateVPCWithHostedZoneResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateVPCWithHostedZoneResponse]
   }
 }

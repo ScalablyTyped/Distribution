@@ -43,72 +43,70 @@ trait RequestContext extends js.Object
 
 object RequestContext {
   @scala.inline
-  def audio: typings.nodeFetch.nodeFetchStrings.audio = this.cast("audio")
+  def audio: typings.nodeFetch.nodeFetchStrings.audio = "audio".asInstanceOf[typings.nodeFetch.nodeFetchStrings.audio]
   @scala.inline
-  def beacon: typings.nodeFetch.nodeFetchStrings.beacon = this.cast("beacon")
+  def beacon: typings.nodeFetch.nodeFetchStrings.beacon = "beacon".asInstanceOf[typings.nodeFetch.nodeFetchStrings.beacon]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cspreport: typings.nodeFetch.nodeFetchStrings.cspreport = "cspreport".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cspreport]
   @scala.inline
-  def cspreport: typings.nodeFetch.nodeFetchStrings.cspreport = this.cast("cspreport")
+  def download: typings.nodeFetch.nodeFetchStrings.download = "download".asInstanceOf[typings.nodeFetch.nodeFetchStrings.download]
   @scala.inline
-  def download: typings.nodeFetch.nodeFetchStrings.download = this.cast("download")
+  def embed: typings.nodeFetch.nodeFetchStrings.embed = "embed".asInstanceOf[typings.nodeFetch.nodeFetchStrings.embed]
   @scala.inline
-  def embed: typings.nodeFetch.nodeFetchStrings.embed = this.cast("embed")
+  def eventsource: typings.nodeFetch.nodeFetchStrings.eventsource = "eventsource".asInstanceOf[typings.nodeFetch.nodeFetchStrings.eventsource]
   @scala.inline
-  def eventsource: typings.nodeFetch.nodeFetchStrings.eventsource = this.cast("eventsource")
+  def favicon: typings.nodeFetch.nodeFetchStrings.favicon = "favicon".asInstanceOf[typings.nodeFetch.nodeFetchStrings.favicon]
   @scala.inline
-  def favicon: typings.nodeFetch.nodeFetchStrings.favicon = this.cast("favicon")
+  def fetch: typings.nodeFetch.nodeFetchStrings.fetch = "fetch".asInstanceOf[typings.nodeFetch.nodeFetchStrings.fetch]
   @scala.inline
-  def fetch: typings.nodeFetch.nodeFetchStrings.fetch = this.cast("fetch")
+  def font: typings.nodeFetch.nodeFetchStrings.font = "font".asInstanceOf[typings.nodeFetch.nodeFetchStrings.font]
   @scala.inline
-  def font: typings.nodeFetch.nodeFetchStrings.font = this.cast("font")
+  def form: typings.nodeFetch.nodeFetchStrings.form = "form".asInstanceOf[typings.nodeFetch.nodeFetchStrings.form]
   @scala.inline
-  def form: typings.nodeFetch.nodeFetchStrings.form = this.cast("form")
+  def frame: typings.nodeFetch.nodeFetchStrings.frame = "frame".asInstanceOf[typings.nodeFetch.nodeFetchStrings.frame]
   @scala.inline
-  def frame: typings.nodeFetch.nodeFetchStrings.frame = this.cast("frame")
+  def hyperlink: typings.nodeFetch.nodeFetchStrings.hyperlink = "hyperlink".asInstanceOf[typings.nodeFetch.nodeFetchStrings.hyperlink]
   @scala.inline
-  def hyperlink: typings.nodeFetch.nodeFetchStrings.hyperlink = this.cast("hyperlink")
+  def iframe: typings.nodeFetch.nodeFetchStrings.iframe = "iframe".asInstanceOf[typings.nodeFetch.nodeFetchStrings.iframe]
   @scala.inline
-  def iframe: typings.nodeFetch.nodeFetchStrings.iframe = this.cast("iframe")
+  def image: typings.nodeFetch.nodeFetchStrings.image = "image".asInstanceOf[typings.nodeFetch.nodeFetchStrings.image]
   @scala.inline
-  def image: typings.nodeFetch.nodeFetchStrings.image = this.cast("image")
+  def imageset: typings.nodeFetch.nodeFetchStrings.imageset = "imageset".asInstanceOf[typings.nodeFetch.nodeFetchStrings.imageset]
   @scala.inline
-  def imageset: typings.nodeFetch.nodeFetchStrings.imageset = this.cast("imageset")
+  def `import`: typings.nodeFetch.nodeFetchStrings.`import` = "import".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`import`]
   @scala.inline
-  def `import`: typings.nodeFetch.nodeFetchStrings.`import` = this.cast("import")
+  def internal: typings.nodeFetch.nodeFetchStrings.internal = "internal".asInstanceOf[typings.nodeFetch.nodeFetchStrings.internal]
   @scala.inline
-  def internal: typings.nodeFetch.nodeFetchStrings.internal = this.cast("internal")
+  def location: typings.nodeFetch.nodeFetchStrings.location = "location".asInstanceOf[typings.nodeFetch.nodeFetchStrings.location]
   @scala.inline
-  def location: typings.nodeFetch.nodeFetchStrings.location = this.cast("location")
+  def manifest: typings.nodeFetch.nodeFetchStrings.manifest = "manifest".asInstanceOf[typings.nodeFetch.nodeFetchStrings.manifest]
   @scala.inline
-  def manifest: typings.nodeFetch.nodeFetchStrings.manifest = this.cast("manifest")
+  def `object`: typings.nodeFetch.nodeFetchStrings.`object` = "object".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`object`]
   @scala.inline
-  def `object`: typings.nodeFetch.nodeFetchStrings.`object` = this.cast("object")
+  def ping: typings.nodeFetch.nodeFetchStrings.ping = "ping".asInstanceOf[typings.nodeFetch.nodeFetchStrings.ping]
   @scala.inline
-  def ping: typings.nodeFetch.nodeFetchStrings.ping = this.cast("ping")
+  def plugin: typings.nodeFetch.nodeFetchStrings.plugin = "plugin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.plugin]
   @scala.inline
-  def plugin: typings.nodeFetch.nodeFetchStrings.plugin = this.cast("plugin")
+  def prefetch: typings.nodeFetch.nodeFetchStrings.prefetch = "prefetch".asInstanceOf[typings.nodeFetch.nodeFetchStrings.prefetch]
   @scala.inline
-  def prefetch: typings.nodeFetch.nodeFetchStrings.prefetch = this.cast("prefetch")
+  def script: typings.nodeFetch.nodeFetchStrings.script = "script".asInstanceOf[typings.nodeFetch.nodeFetchStrings.script]
   @scala.inline
-  def script: typings.nodeFetch.nodeFetchStrings.script = this.cast("script")
+  def serviceworker: typings.nodeFetch.nodeFetchStrings.serviceworker = "serviceworker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.serviceworker]
   @scala.inline
-  def serviceworker: typings.nodeFetch.nodeFetchStrings.serviceworker = this.cast("serviceworker")
+  def sharedworker: typings.nodeFetch.nodeFetchStrings.sharedworker = "sharedworker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.sharedworker]
   @scala.inline
-  def sharedworker: typings.nodeFetch.nodeFetchStrings.sharedworker = this.cast("sharedworker")
+  def style: typings.nodeFetch.nodeFetchStrings.style = "style".asInstanceOf[typings.nodeFetch.nodeFetchStrings.style]
   @scala.inline
-  def style: typings.nodeFetch.nodeFetchStrings.style = this.cast("style")
+  def subresource: typings.nodeFetch.nodeFetchStrings.subresource = "subresource".asInstanceOf[typings.nodeFetch.nodeFetchStrings.subresource]
   @scala.inline
-  def subresource: typings.nodeFetch.nodeFetchStrings.subresource = this.cast("subresource")
+  def track: typings.nodeFetch.nodeFetchStrings.track = "track".asInstanceOf[typings.nodeFetch.nodeFetchStrings.track]
   @scala.inline
-  def track: typings.nodeFetch.nodeFetchStrings.track = this.cast("track")
+  def video: typings.nodeFetch.nodeFetchStrings.video = "video".asInstanceOf[typings.nodeFetch.nodeFetchStrings.video]
   @scala.inline
-  def video: typings.nodeFetch.nodeFetchStrings.video = this.cast("video")
+  def worker: typings.nodeFetch.nodeFetchStrings.worker = "worker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.worker]
   @scala.inline
-  def worker: typings.nodeFetch.nodeFetchStrings.worker = this.cast("worker")
+  def xmlhttprequest: typings.nodeFetch.nodeFetchStrings.xmlhttprequest = "xmlhttprequest".asInstanceOf[typings.nodeFetch.nodeFetchStrings.xmlhttprequest]
   @scala.inline
-  def xmlhttprequest: typings.nodeFetch.nodeFetchStrings.xmlhttprequest = this.cast("xmlhttprequest")
-  @scala.inline
-  def xslt: typings.nodeFetch.nodeFetchStrings.xslt = this.cast("xslt")
+  def xslt: typings.nodeFetch.nodeFetchStrings.xslt = "xslt".asInstanceOf[typings.nodeFetch.nodeFetchStrings.xslt]
 }
 

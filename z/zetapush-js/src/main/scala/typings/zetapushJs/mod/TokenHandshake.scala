@@ -21,7 +21,6 @@ object TokenHandshake {
     token: String
   ): TokenHandshake = {
     val __obj = js.Dynamic.literal(authData = authData.asInstanceOf[js.Any], authType = authType.asInstanceOf[js.Any], authVersion = authVersion.asInstanceOf[js.Any], deploymentId = deploymentId.asInstanceOf[js.Any], getHandshakeFields = js.Any.fromFunction1(getHandshakeFields), sandboxId = sandboxId.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TokenHandshake]
   }
 }

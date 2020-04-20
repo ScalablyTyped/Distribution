@@ -12,7 +12,6 @@ object AnonStatusBar {
   @scala.inline
   def apply(StatusBar: Boolean): AnonStatusBar = {
     val __obj = js.Dynamic.literal(StatusBar = StatusBar.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStatusBar]
   }
 }

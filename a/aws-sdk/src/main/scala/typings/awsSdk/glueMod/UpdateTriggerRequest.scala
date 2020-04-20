@@ -20,7 +20,6 @@ object UpdateTriggerRequest {
   @scala.inline
   def apply(Name: NameString, TriggerUpdate: TriggerUpdate): UpdateTriggerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], TriggerUpdate = TriggerUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTriggerRequest]
   }
 }

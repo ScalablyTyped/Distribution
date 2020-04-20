@@ -24,12 +24,12 @@ class PageForSpecialization protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FPageForSpecialization: IModel = js.native
-  def containerAsGridEditButton(): GridEditButton = js.native
-  def containerAsPageClientAction(): PageClientAction = js.native
-  def entity(): IEntity = js.native
+  def containerAsGridEditButton: GridEditButton = js.native
+  def containerAsPageClientAction: PageClientAction = js.native
+  def entity: IEntity = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String = js.native
-  def pageSettings(): PageSettings = js.native
+  def entityQualifiedName: String = js.native
+  def pageSettings: PageSettings = js.native
   def pageSettings(newValue: PageSettings): js.Any = js.native
 }
 

@@ -16,7 +16,6 @@ object AnonBorder {
   @scala.inline
   def apply(border: Vec4, pivot: Vec2, rect: Vec4): AnonBorder = {
     val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any], pivot = pivot.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorder]
   }
 }

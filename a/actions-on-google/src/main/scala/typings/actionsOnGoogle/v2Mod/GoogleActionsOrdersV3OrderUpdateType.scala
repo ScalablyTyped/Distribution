@@ -13,12 +13,10 @@ trait GoogleActionsOrdersV3OrderUpdateType extends js.Object
 
 object GoogleActionsOrdersV3OrderUpdateType {
   @scala.inline
-  def ORDER_STATUS: typings.actionsOnGoogle.actionsOnGoogleStrings.ORDER_STATUS = this.cast("ORDER_STATUS")
+  def ORDER_STATUS: typings.actionsOnGoogle.actionsOnGoogleStrings.ORDER_STATUS = "ORDER_STATUS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ORDER_STATUS]
   @scala.inline
-  def SNAPSHOT: typings.actionsOnGoogle.actionsOnGoogleStrings.SNAPSHOT = this.cast("SNAPSHOT")
+  def SNAPSHOT: typings.actionsOnGoogle.actionsOnGoogleStrings.SNAPSHOT = "SNAPSHOT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SNAPSHOT]
   @scala.inline
-  def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = this.cast("TYPE_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = "TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED]
 }
 

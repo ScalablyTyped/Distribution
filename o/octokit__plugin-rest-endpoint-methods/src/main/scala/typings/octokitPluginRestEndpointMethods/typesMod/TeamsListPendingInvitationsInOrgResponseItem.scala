@@ -28,7 +28,6 @@ object TeamsListPendingInvitationsInOrgResponseItem {
     team_count: Double
   ): TeamsListPendingInvitationsInOrgResponseItem = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invitation_team_url = invitation_team_url.asInstanceOf[js.Any], inviter = inviter.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], team_count = team_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamsListPendingInvitationsInOrgResponseItem]
   }
 }

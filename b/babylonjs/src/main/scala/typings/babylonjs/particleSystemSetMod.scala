@@ -29,7 +29,7 @@ object particleSystemSetMod extends js.Object {
     /**
       * Gets the emitter node used with this set
       */
-    def emitterNode(): Nullable[TransformNode] = js.native
+    def emitterNode: Nullable[TransformNode] = js.native
     /**
       * Serialize the set into a JSON compatible object
       * @returns a JSON compatible representation of the set

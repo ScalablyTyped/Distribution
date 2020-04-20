@@ -16,7 +16,6 @@ object TypeofRDS {
   @scala.inline
   def apply(Signer: Instantiable0[Signer], Types: TypeofRDS): TypeofRDS = {
     val __obj = js.Dynamic.literal(Signer = Signer.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofRDS]
   }
 }

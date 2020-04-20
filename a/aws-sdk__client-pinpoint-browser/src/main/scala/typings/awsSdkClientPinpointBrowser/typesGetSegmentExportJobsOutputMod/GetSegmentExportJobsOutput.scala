@@ -23,7 +23,6 @@ object GetSegmentExportJobsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ExportJobsResponse: UnmarshalledExportJobsResponse): GetSegmentExportJobsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ExportJobsResponse = ExportJobsResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSegmentExportJobsOutput]
   }
 }

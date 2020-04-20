@@ -3,7 +3,6 @@ package typings.reactSortableTree
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
-import typings.reactVirtualized.AnonOverscanStartIndex
 import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCache
 import typings.reactVirtualized.esGridMod.GridCellRangeProps
 import typings.reactVirtualized.esGridMod.GridCellRangeRenderer
@@ -15,6 +14,7 @@ import typings.reactVirtualized.esGridMod.ScrollbarPresenceParams
 import typings.reactVirtualized.esGridMod.SectionRenderedParams
 import typings.reactVirtualized.esListMod.ListRowProps
 import typings.reactVirtualized.esListMod.ListRowRenderer
+import typings.reactVirtualized.esListMod.RenderedRows
 import typings.reactVirtualized.mod.Alignment
 import typings.reactVirtualized.mod.Index
 import scala.scalajs.js
@@ -42,7 +42,7 @@ trait PartialListProps extends js.Object {
   var isScrolling: js.UndefOr[Boolean] = js.undefined
   var noContentRenderer: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   var noRowsRenderer: js.UndefOr[js.Function0[Element]] = js.undefined
-  var onRowsRendered: js.UndefOr[js.Function1[/* info */ AnonOverscanStartIndex, Unit]] = js.undefined
+  var onRowsRendered: js.UndefOr[js.Function1[/* info */ RenderedRows, Unit]] = js.undefined
   var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, _]] = js.undefined
   var onScrollbarPresenceChange: js.UndefOr[js.Function1[/* params */ ScrollbarPresenceParams, _]] = js.undefined
   var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, _]] = js.undefined
@@ -87,7 +87,7 @@ object PartialListProps {
     isScrolling: js.UndefOr[Boolean] = js.undefined,
     noContentRenderer: () => ReactNode = null,
     noRowsRenderer: () => Element = null,
-    onRowsRendered: /* info */ AnonOverscanStartIndex => Unit = null,
+    onRowsRendered: /* info */ RenderedRows => Unit = null,
     onScroll: /* params */ ScrollParams => _ = null,
     onScrollbarPresenceChange: /* params */ ScrollbarPresenceParams => _ = null,
     onSectionRendered: /* params */ SectionRenderedParams => _ = null,

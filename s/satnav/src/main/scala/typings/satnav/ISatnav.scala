@@ -20,7 +20,6 @@ object ISatnav {
     otherwise: String => ISatnav
   ): ISatnav = {
     val __obj = js.Dynamic.literal(change = js.Any.fromFunction1(change), go = js.Any.fromFunction0(go), navigate = js.Any.fromFunction1(navigate), otherwise = js.Any.fromFunction1(otherwise))
-  
     __obj.asInstanceOf[ISatnav]
   }
 }

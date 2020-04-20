@@ -13,12 +13,10 @@ trait CommentTypeShorthand extends js.Object
 
 object CommentTypeShorthand {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inner: typings.babelTypes.babelTypesStrings.inner = "inner".asInstanceOf[typings.babelTypes.babelTypesStrings.inner]
   @scala.inline
-  def inner: typings.babelTypes.babelTypesStrings.inner = this.cast("inner")
+  def leading: typings.babelTypes.babelTypesStrings.leading = "leading".asInstanceOf[typings.babelTypes.babelTypesStrings.leading]
   @scala.inline
-  def leading: typings.babelTypes.babelTypesStrings.leading = this.cast("leading")
-  @scala.inline
-  def trailing: typings.babelTypes.babelTypesStrings.trailing = this.cast("trailing")
+  def trailing: typings.babelTypes.babelTypesStrings.trailing = "trailing".asInstanceOf[typings.babelTypes.babelTypesStrings.trailing]
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactMediumImageZoomProps {
   @scala.inline
-  def ReactMediumImageZoomProps: ImageZoomProps.type = typings.reactMediumImageZoom.mod.ImageZoomProps
+  def ReactMediumImageZoomProps: ImageZoomProps.type = ImageZoomProps
   type ReactMediumImageZoomProps = ImageZoomProps
 }
 

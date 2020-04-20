@@ -27,7 +27,6 @@ object FileCoverageData {
     statementMap: StringDictionary[Range]
   ): FileCoverageData = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], branchMap = branchMap.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], fnMap = fnMap.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], statementMap = statementMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileCoverageData]
   }
 }

@@ -2,6 +2,7 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.propTypes.mod.InferProps
 import typings.propTypes.mod.InferType
 import typings.propTypes.mod.ReactElementLike
@@ -116,7 +117,7 @@ trait RaxPropTypes extends js.Object {
   def objectOf[T](`type`: typings.propTypes.mod.Validator[T]): typings.propTypes.mod.Requireable[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: T}
-    */ typings.rax.raxStrings.RaxPropTypes with js.Any
+    */ typings.rax.raxStrings.RaxPropTypes with TopLevel[js.Any]
   ] = js.native
   def oneOf[T](types: js.Array[T]): typings.propTypes.mod.Requireable[T] = js.native
   def oneOfType[T /* <: typings.propTypes.mod.Validator[_] */](types: js.Array[T]): typings.propTypes.mod.Requireable[NonNullable[InferType[T]]] = js.native

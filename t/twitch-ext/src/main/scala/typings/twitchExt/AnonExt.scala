@@ -12,7 +12,6 @@ object AnonExt {
   @scala.inline
   def apply(ext: TwitchExt): AnonExt = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExt]
   }
 }

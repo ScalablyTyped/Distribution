@@ -13,7 +13,6 @@ object IAutoClosingPair {
   @scala.inline
   def apply(close: String, open: String): IAutoClosingPair = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAutoClosingPair]
   }
 }

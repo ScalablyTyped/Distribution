@@ -18,7 +18,6 @@ object AnonIssuer {
   @scala.inline
   def apply(issuer: StringParam, serial: DERInteger | IntegerParam | BigIntegerParam | HexParam | Double): AnonIssuer = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIssuer]
   }
 }

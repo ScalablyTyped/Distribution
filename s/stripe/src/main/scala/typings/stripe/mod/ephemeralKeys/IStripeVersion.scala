@@ -15,7 +15,6 @@ object IStripeVersion {
   @scala.inline
   def apply(stripe_version: String): IStripeVersion = {
     val __obj = js.Dynamic.literal(stripe_version = stripe_version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStripeVersion]
   }
 }

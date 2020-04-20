@@ -24,7 +24,6 @@ object AccessKeyLastUsed {
   @scala.inline
   def apply(LastUsedDate: dateType, Region: stringType, ServiceName: stringType): AccessKeyLastUsed = {
     val __obj = js.Dynamic.literal(LastUsedDate = LastUsedDate.asInstanceOf[js.Any], Region = Region.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccessKeyLastUsed]
   }
 }

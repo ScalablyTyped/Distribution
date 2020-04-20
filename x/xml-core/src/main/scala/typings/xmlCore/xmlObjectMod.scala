@@ -38,7 +38,7 @@ object xmlObjectMod extends js.Object {
     /* protected */ def CreateElement(document: Document_, localName: String, namespaceUri: String): Element = js.native
     /* protected */ def CreateElement(document: Document_, localName: String, namespaceUri: String, prefix: String): Element = js.native
     /* protected */ def CreateElement(document: Document_, localName: String, namespaceUri: Null, prefix: String): Element = js.native
-    def Element(): js.UndefOr[typings.std.Element | Null] = js.native
+    def Element: js.UndefOr[typings.std.Element | Null] = js.native
     def GetAttribute(name: String): String | Null = js.native
     def GetAttribute(name: String, defaultValue: String): String | Null = js.native
     def GetAttribute(name: String, defaultValue: String, required: Boolean): String | Null = js.native
@@ -57,14 +57,14 @@ object xmlObjectMod extends js.Object {
     def HasChanged(): Boolean = js.native
     def IsEmpty(): Boolean = js.native
     def LoadXml(param: Element): Unit = js.native
-    def LocalName(): String = js.native
-    def NamespaceURI(): String | Null = js.native
+    def LocalName: String = js.native
+    def NamespaceURI: String | Null = js.native
     /* protected */ def OnGetXml(element: Element): Unit = js.native
     /* protected */ def OnLoadXml(element: Element): Unit = js.native
     def Prefix(): js.Any = js.native
     def Prefix(value: String): js.Any = js.native
     @JSName("Prefix")
-    def Prefix_Union(): String | Null = js.native
+    def Prefix_Union: String | Null = js.native
   }
   
   /* static members */

@@ -16,7 +16,6 @@ object GetInstanceSnapshotRequest {
   @scala.inline
   def apply(instanceSnapshotName: ResourceName): GetInstanceSnapshotRequest = {
     val __obj = js.Dynamic.literal(instanceSnapshotName = instanceSnapshotName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInstanceSnapshotRequest]
   }
 }

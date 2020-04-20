@@ -20,7 +20,6 @@ object PutMetricPolicyInput {
   @scala.inline
   def apply(ContainerName: ContainerName, MetricPolicy: MetricPolicy): PutMetricPolicyInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any], MetricPolicy = MetricPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutMetricPolicyInput]
   }
 }

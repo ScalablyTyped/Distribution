@@ -13,12 +13,10 @@ trait Overflow extends js.Object
 
 object Overflow {
   @scala.inline
-  def auto: typings.officeUiFabricReact.officeUiFabricReactStrings.auto = this.cast("auto")
+  def auto: typings.officeUiFabricReact.officeUiFabricReactStrings.auto = "auto".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hidden: typings.officeUiFabricReact.officeUiFabricReactStrings.hidden = "hidden".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.hidden]
   @scala.inline
-  def hidden: typings.officeUiFabricReact.officeUiFabricReactStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def visible: typings.officeUiFabricReact.officeUiFabricReactStrings.visible = this.cast("visible")
+  def visible: typings.officeUiFabricReact.officeUiFabricReactStrings.visible = "visible".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.visible]
 }
 

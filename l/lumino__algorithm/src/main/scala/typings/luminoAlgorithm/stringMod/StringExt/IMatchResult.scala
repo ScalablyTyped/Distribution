@@ -27,7 +27,6 @@ object IMatchResult {
   @scala.inline
   def apply(indices: js.Array[Double], score: Double): IMatchResult = {
     val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMatchResult]
   }
 }

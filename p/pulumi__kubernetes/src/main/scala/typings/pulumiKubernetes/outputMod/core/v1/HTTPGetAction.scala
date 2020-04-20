@@ -42,7 +42,6 @@ object HTTPGetAction {
     scheme: String
   ): HTTPGetAction = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], httpHeaders = httpHeaders.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HTTPGetAction]
   }
 }

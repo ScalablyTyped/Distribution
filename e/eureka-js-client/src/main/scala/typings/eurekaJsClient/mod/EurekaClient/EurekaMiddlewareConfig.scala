@@ -12,7 +12,6 @@ object EurekaMiddlewareConfig {
   @scala.inline
   def apply(requestMiddleware: (js.Any, js.Function1[/* opts */ js.Any, Unit]) => Unit): EurekaMiddlewareConfig = {
     val __obj = js.Dynamic.literal(requestMiddleware = js.Any.fromFunction2(requestMiddleware))
-  
     __obj.asInstanceOf[EurekaMiddlewareConfig]
   }
 }

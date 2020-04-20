@@ -1,6 +1,7 @@
 package typings.testingLibraryDom
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -20,7 +21,7 @@ object getQueriesForElementMod extends js.Object {
   ])
   type BoundFunctions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: @testing-library/dom.@testing-library/dom/get-queries-for-element.BoundFunction<T[P]>}
-    */ typings.testingLibraryDom.testingLibraryDomStrings.BoundFunctions with T
+    */ typings.testingLibraryDom.testingLibraryDomStrings.BoundFunctions with TopLevel[T]
   type Queries = StringDictionary[Query]
   type Query = js.Function2[
     /* container */ HTMLElement, 

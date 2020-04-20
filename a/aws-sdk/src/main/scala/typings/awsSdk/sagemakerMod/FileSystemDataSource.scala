@@ -33,7 +33,6 @@ object FileSystemDataSource {
     FileSystemType: FileSystemType
   ): FileSystemDataSource = {
     val __obj = js.Dynamic.literal(DirectoryPath = DirectoryPath.asInstanceOf[js.Any], FileSystemAccessMode = FileSystemAccessMode.asInstanceOf[js.Any], FileSystemId = FileSystemId.asInstanceOf[js.Any], FileSystemType = FileSystemType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileSystemDataSource]
   }
 }

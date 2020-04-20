@@ -26,7 +26,6 @@ object AnonAngle {
     translateY: Double
   ): AnonAngle = {
     val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], scaleX = scaleX.asInstanceOf[js.Any], scaleY = scaleY.asInstanceOf[js.Any], skewX = skewX.asInstanceOf[js.Any], skewY = skewY.asInstanceOf[js.Any], translateX = translateX.asInstanceOf[js.Any], translateY = translateY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAngle]
   }
 }

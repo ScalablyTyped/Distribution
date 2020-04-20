@@ -26,7 +26,6 @@ object AnonDefaultValue {
     step: Double
   ): AnonDefaultValue = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], showValue = showValue.asInstanceOf[js.Any], snapToValue = snapToValue.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefaultValue]
   }
 }

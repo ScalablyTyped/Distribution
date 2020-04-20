@@ -26,7 +26,6 @@ object AnonExtraLeftPx_ {
     width: Double
   ): AnonExtraLeftPx_ = {
     val __obj = js.Dynamic.literal(extraLeftPx = extraLeftPx.asInstanceOf[js.Any], extraRightPx = extraRightPx.asInstanceOf[js.Any], left_shift = left_shift.asInstanceOf[js.Any], modLeftPx = modLeftPx.asInstanceOf[js.Any], modRightPx = modRightPx.asInstanceOf[js.Any], noteWidth = noteWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtraLeftPx_]
   }
 }

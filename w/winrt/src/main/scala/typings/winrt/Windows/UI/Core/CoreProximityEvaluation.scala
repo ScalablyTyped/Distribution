@@ -14,7 +14,6 @@ object CoreProximityEvaluation {
   @scala.inline
   def apply(adjustedPoint: Point, score: Double): CoreProximityEvaluation = {
     val __obj = js.Dynamic.literal(adjustedPoint = adjustedPoint.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CoreProximityEvaluation]
   }
 }

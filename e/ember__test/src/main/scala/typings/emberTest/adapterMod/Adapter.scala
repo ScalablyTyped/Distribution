@@ -25,7 +25,6 @@ object Adapter {
   @scala.inline
   def apply(asyncEnd: () => js.Any, asyncStart: () => js.Any, exception: String => js.Any): Adapter = {
     val __obj = js.Dynamic.literal(asyncEnd = js.Any.fromFunction0(asyncEnd), asyncStart = js.Any.fromFunction0(asyncStart), exception = js.Any.fromFunction1(exception))
-  
     __obj.asInstanceOf[Adapter]
   }
 }

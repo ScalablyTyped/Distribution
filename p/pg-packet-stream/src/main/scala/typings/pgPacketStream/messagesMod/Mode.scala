@@ -12,10 +12,8 @@ trait Mode extends js.Object
 
 object Mode {
   @scala.inline
-  def binary: typings.pgPacketStream.pgPacketStreamStrings.binary = this.cast("binary")
+  def binary: typings.pgPacketStream.pgPacketStreamStrings.binary = "binary".asInstanceOf[typings.pgPacketStream.pgPacketStreamStrings.binary]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def text: typings.pgPacketStream.pgPacketStreamStrings.text = this.cast("text")
+  def text: typings.pgPacketStream.pgPacketStreamStrings.text = "text".asInstanceOf[typings.pgPacketStream.pgPacketStreamStrings.text]
 }
 

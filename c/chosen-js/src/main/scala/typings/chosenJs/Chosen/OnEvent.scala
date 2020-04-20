@@ -15,16 +15,14 @@ trait OnEvent extends js.Object
 
 object OnEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chosenColonhiding_dropdown: typings.chosenJs.chosenJsStrings.chosenColonhiding_dropdown = "chosen:hiding_dropdown".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonhiding_dropdown]
   @scala.inline
-  def chosenColonhiding_dropdown: typings.chosenJs.chosenJsStrings.chosenColonhiding_dropdown = this.cast("chosen:hiding_dropdown")
+  def chosenColonmaxselected: typings.chosenJs.chosenJsStrings.chosenColonmaxselected = "chosen:maxselected".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonmaxselected]
   @scala.inline
-  def chosenColonmaxselected: typings.chosenJs.chosenJsStrings.chosenColonmaxselected = this.cast("chosen:maxselected")
+  def chosenColonno_results: typings.chosenJs.chosenJsStrings.chosenColonno_results = "chosen:no_results".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonno_results]
   @scala.inline
-  def chosenColonno_results: typings.chosenJs.chosenJsStrings.chosenColonno_results = this.cast("chosen:no_results")
+  def chosenColonready: typings.chosenJs.chosenJsStrings.chosenColonready = "chosen:ready".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonready]
   @scala.inline
-  def chosenColonready: typings.chosenJs.chosenJsStrings.chosenColonready = this.cast("chosen:ready")
-  @scala.inline
-  def chosenColonshowing_dropdown: typings.chosenJs.chosenJsStrings.chosenColonshowing_dropdown = this.cast("chosen:showing_dropdown")
+  def chosenColonshowing_dropdown: typings.chosenJs.chosenJsStrings.chosenColonshowing_dropdown = "chosen:showing_dropdown".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonshowing_dropdown]
 }
 

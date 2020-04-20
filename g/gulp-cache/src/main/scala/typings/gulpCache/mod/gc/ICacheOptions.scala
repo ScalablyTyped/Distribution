@@ -16,7 +16,6 @@ object ICacheOptions {
   @scala.inline
   def apply(cacheDirName: String): ICacheOptions = {
     val __obj = js.Dynamic.literal(cacheDirName = cacheDirName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICacheOptions]
   }
 }

@@ -24,47 +24,47 @@ class WidgetValueType protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FWidgetValueType: IModel = js.native
-  def allowNonPersistableEntities(): Boolean = js.native
+  def allowNonPersistableEntities: Boolean = js.native
   def allowNonPersistableEntities(newValue: Boolean): js.Any = js.native
-  def attributeTypes(): IList[CustomWidgetAttributeType] = js.native
-  def containerAsWidgetPropertyType(): WidgetPropertyType = js.native
+  def attributeTypes: IList[CustomWidgetAttributeType] = js.native
+  def containerAsWidgetPropertyType: WidgetPropertyType = js.native
   /**
     * In version 8.4.0: introduced
     */
-  def dataSourceProperty(): String = js.native
+  def dataSourceProperty: String = js.native
   def dataSourceProperty(newValue: String): js.Any = js.native
-  def defaultValue(): String = js.native
+  def defaultValue: String = js.native
   def defaultValue(newValue: String): js.Any = js.native
-  def entityProperty(): String = js.native
+  def entityProperty: String = js.native
   def entityProperty(newValue: String): js.Any = js.native
-  def enumerationValues(): IList[WidgetEnumerationValue] = js.native
-  def isList(): Boolean = js.native
+  def enumerationValues: IList[WidgetEnumerationValue] = js.native
+  def isList: Boolean = js.native
   def isList(newValue: Boolean): js.Any = js.native
-  def isPath(): IsPath = js.native
+  def isPath: IsPath = js.native
   def isPath(newValue: IsPath): js.Any = js.native
-  def multiline(): Boolean = js.native
+  def multiline: Boolean = js.native
   def multiline(newValue: Boolean): js.Any = js.native
   def objectType(): js.Any = js.native
   def objectType(newValue: WidgetObjectType): js.Any = js.native
   @JSName("objectType")
-  def objectType_Union(): WidgetObjectType | Null = js.native
+  def objectType_Union: WidgetObjectType | Null = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def onChangeProperty(): String = js.native
+  def onChangeProperty: String = js.native
   def onChangeProperty(newValue: String): js.Any = js.native
-  def parameterIsList(): Boolean = js.native
+  def parameterIsList: Boolean = js.native
   def parameterIsList(newValue: Boolean): js.Any = js.native
-  def pathType(): PathType = js.native
+  def pathType: PathType = js.native
   def pathType(newValue: PathType): js.Any = js.native
-  def required(): Boolean = js.native
+  def required: Boolean = js.native
   def required(newValue: Boolean): js.Any = js.native
   def returnType(): js.Any = js.native
   def returnType(newValue: WidgetReturnType): js.Any = js.native
   @JSName("returnType")
-  def returnType_Union(): WidgetReturnType | Null = js.native
-  def translations(): IList[WidgetTranslation] = js.native
-  def `type`(): WidgetValueTypeEnum = js.native
+  def returnType_Union: WidgetReturnType | Null = js.native
+  def translations: IList[WidgetTranslation] = js.native
+  def `type`: WidgetValueTypeEnum = js.native
   def `type`(newValue: WidgetValueTypeEnum): js.Any = js.native
 }
 

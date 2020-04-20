@@ -26,7 +26,6 @@ object RgbColor {
     getRed: () => Integer
   ): RgbColor = {
     val __obj = js.Dynamic.literal(asHexString = js.Any.fromFunction0(asHexString), getBlue = js.Any.fromFunction0(getBlue), getColorType = js.Any.fromFunction0(getColorType), getGreen = js.Any.fromFunction0(getGreen), getRed = js.Any.fromFunction0(getRed))
-  
     __obj.asInstanceOf[RgbColor]
   }
 }

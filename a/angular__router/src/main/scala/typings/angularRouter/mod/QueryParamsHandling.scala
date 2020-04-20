@@ -13,12 +13,10 @@ trait QueryParamsHandling extends js.Object
 
 object QueryParamsHandling {
   @scala.inline
-  def _empty: typings.angularRouter.angularRouterStrings._empty = this.cast("")
+  def _empty: typings.angularRouter.angularRouterStrings._empty = "".asInstanceOf[typings.angularRouter.angularRouterStrings._empty]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def merge: typings.angularRouter.angularRouterStrings.merge = "merge".asInstanceOf[typings.angularRouter.angularRouterStrings.merge]
   @scala.inline
-  def merge: typings.angularRouter.angularRouterStrings.merge = this.cast("merge")
-  @scala.inline
-  def preserve: typings.angularRouter.angularRouterStrings.preserve = this.cast("preserve")
+  def preserve: typings.angularRouter.angularRouterStrings.preserve = "preserve".asInstanceOf[typings.angularRouter.angularRouterStrings.preserve]
 }
 

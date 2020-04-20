@@ -13,12 +13,10 @@ trait ExpandAction extends js.Object
 
 object ExpandAction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.antd.antdStrings.click = "click".asInstanceOf[typings.antd.antdStrings.click]
   @scala.inline
-  def click: typings.antd.antdStrings.click = this.cast("click")
+  def doubleClick: typings.antd.antdStrings.doubleClick = "doubleClick".asInstanceOf[typings.antd.antdStrings.doubleClick]
   @scala.inline
-  def doubleClick: typings.antd.antdStrings.doubleClick = this.cast("doubleClick")
-  @scala.inline
-  def `false`: typings.antd.antdBooleans.`false` = this.cast(false)
+  def `false`: typings.antd.antdBooleans.`false` = false.asInstanceOf[typings.antd.antdBooleans.`false`]
 }
 

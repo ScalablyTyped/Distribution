@@ -20,7 +20,6 @@ object InvalidationBatch {
   @scala.inline
   def apply(CallerReference: String, Paths: Paths): InvalidationBatch = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], Paths = Paths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InvalidationBatch]
   }
 }

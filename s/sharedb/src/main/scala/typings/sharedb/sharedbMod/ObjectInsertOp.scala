@@ -13,7 +13,6 @@ object ObjectInsertOp {
   @scala.inline
   def apply(oi: js.Any, p: Path): ObjectInsertOp = {
     val __obj = js.Dynamic.literal(oi = oi.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectInsertOp]
   }
 }

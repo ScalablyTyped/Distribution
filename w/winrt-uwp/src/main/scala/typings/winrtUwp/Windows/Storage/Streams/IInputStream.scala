@@ -25,7 +25,6 @@ object IInputStream {
     readAsync: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   ): IInputStream = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), readAsync = js.Any.fromFunction3(readAsync))
-  
     __obj.asInstanceOf[IInputStream]
   }
 }

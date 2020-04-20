@@ -12,7 +12,6 @@ object AnonAllowLocalBoolean {
   @scala.inline
   def apply(allowLocal: Boolean): AnonAllowLocalBoolean = {
     val __obj = js.Dynamic.literal(allowLocal = allowLocal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllowLocalBoolean]
   }
 }

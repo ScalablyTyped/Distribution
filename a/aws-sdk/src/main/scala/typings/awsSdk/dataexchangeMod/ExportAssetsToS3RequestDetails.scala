@@ -24,7 +24,6 @@ object ExportAssetsToS3RequestDetails {
   @scala.inline
   def apply(AssetDestinations: ListOfAssetDestinationEntry, DataSetId: Id, RevisionId: Id): ExportAssetsToS3RequestDetails = {
     val __obj = js.Dynamic.literal(AssetDestinations = AssetDestinations.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportAssetsToS3RequestDetails]
   }
 }

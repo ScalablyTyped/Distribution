@@ -30,46 +30,44 @@ trait IPv6Type extends js.Object
 
 object IPv6Type {
   @scala.inline
-  def `Link-local unicast`: typings.ipAddress.ipAddressStrings.`Link-local unicast` = this.cast("Link-local unicast")
+  def `Link-local unicast`: typings.ipAddress.ipAddressStrings.`Link-local unicast` = ("Link-local unicast").asInstanceOf[typings.ipAddress.ipAddressStrings.`Link-local unicast`]
   @scala.inline
-  def Loopback: typings.ipAddress.ipAddressStrings.Loopback = this.cast("Loopback")
+  def Loopback: typings.ipAddress.ipAddressStrings.Loopback = "Loopback".asInstanceOf[typings.ipAddress.ipAddressStrings.Loopback]
   @scala.inline
-  def Multicast: typings.ipAddress.ipAddressStrings.Multicast = this.cast("Multicast")
+  def Multicast: typings.ipAddress.ipAddressStrings.Multicast = "Multicast".asInstanceOf[typings.ipAddress.ipAddressStrings.Multicast]
   @scala.inline
-  def `Multicast LeftparenthesisAll DHCP servers and relay agents in this siteRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers and relay agents in this siteRightparenthesis` = this.cast("Multicast (All DHCP servers and relay agents in this site)")
+  def `Multicast LeftparenthesisAll DHCP servers and relay agents in this siteRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers and relay agents in this siteRightparenthesis` = ("Multicast (All DHCP servers and relay agents in this site)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers and relay agents in this siteRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisAll DHCP servers and relay agents on this linkRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers and relay agents on this linkRightparenthesis` = this.cast("Multicast (All DHCP servers and relay agents on this link)")
+  def `Multicast LeftparenthesisAll DHCP servers and relay agents on this linkRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers and relay agents on this linkRightparenthesis` = ("Multicast (All DHCP servers and relay agents on this link)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers and relay agents on this linkRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisAll DHCP servers in this siteRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers in this siteRightparenthesis` = this.cast("Multicast (All DHCP servers in this site)")
+  def `Multicast LeftparenthesisAll DHCP servers in this siteRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers in this siteRightparenthesis` = ("Multicast (All DHCP servers in this site)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers in this siteRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisAll DHCP servers on this linkRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers on this linkRightparenthesis` = this.cast("Multicast (All DHCP servers on this link)")
+  def `Multicast LeftparenthesisAll DHCP servers on this linkRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers on this linkRightparenthesis` = ("Multicast (All DHCP servers on this link)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll DHCP servers on this linkRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisAll nodes on this interfaceRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll nodes on this interfaceRightparenthesis` = this.cast("Multicast (All nodes on this interface)")
+  def `Multicast LeftparenthesisAll nodes on this interfaceRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll nodes on this interfaceRightparenthesis` = ("Multicast (All nodes on this interface)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll nodes on this interfaceRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisAll nodes on this linkRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll nodes on this linkRightparenthesis` = this.cast("Multicast (All nodes on this link)")
+  def `Multicast LeftparenthesisAll nodes on this linkRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll nodes on this linkRightparenthesis` = ("Multicast (All nodes on this link)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll nodes on this linkRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisAll routers in this siteRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll routers in this siteRightparenthesis` = this.cast("Multicast (All routers in this site)")
+  def `Multicast LeftparenthesisAll routers in this siteRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll routers in this siteRightparenthesis` = ("Multicast (All routers in this site)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll routers in this siteRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisAll routers on this interfaceRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll routers on this interfaceRightparenthesis` = this.cast("Multicast (All routers on this interface)")
+  def `Multicast LeftparenthesisAll routers on this interfaceRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll routers on this interfaceRightparenthesis` = ("Multicast (All routers on this interface)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll routers on this interfaceRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisAll routers on this linkRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll routers on this linkRightparenthesis` = this.cast("Multicast (All routers on this link)")
+  def `Multicast LeftparenthesisAll routers on this linkRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll routers on this linkRightparenthesis` = ("Multicast (All routers on this link)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisAll routers on this linkRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisEIGRP routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisEIGRP routersRightparenthesis` = this.cast("Multicast (EIGRP routers)")
+  def `Multicast LeftparenthesisEIGRP routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisEIGRP routersRightparenthesis` = ("Multicast (EIGRP routers)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisEIGRP routersRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisMLDv2 reportsRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisMLDv2 reportsRightparenthesis` = this.cast("Multicast (MLDv2 reports)")
+  def `Multicast LeftparenthesisMLDv2 reportsRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisMLDv2 reportsRightparenthesis` = ("Multicast (MLDv2 reports)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisMLDv2 reportsRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisOSPFv3 AllDR routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisOSPFv3 AllDR routersRightparenthesis` = this.cast("Multicast (OSPFv3 AllDR routers)")
+  def `Multicast LeftparenthesisOSPFv3 AllDR routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisOSPFv3 AllDR routersRightparenthesis` = ("Multicast (OSPFv3 AllDR routers)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisOSPFv3 AllDR routersRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisOSPFv3 AllSPF routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisOSPFv3 AllSPF routersRightparenthesis` = this.cast("Multicast (OSPFv3 AllSPF routers)")
+  def `Multicast LeftparenthesisOSPFv3 AllSPF routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisOSPFv3 AllSPF routersRightparenthesis` = ("Multicast (OSPFv3 AllSPF routers)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisOSPFv3 AllSPF routersRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisPIM routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisPIM routersRightparenthesis` = this.cast("Multicast (PIM routers)")
+  def `Multicast LeftparenthesisPIM routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisPIM routersRightparenthesis` = ("Multicast (PIM routers)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisPIM routersRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesisRIP routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisRIP routersRightparenthesis` = this.cast("Multicast (RIP routers)")
+  def `Multicast LeftparenthesisRIP routersRightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisRIP routersRightparenthesis` = ("Multicast (RIP routers)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesisRIP routersRightparenthesis`]
   @scala.inline
-  def `Multicast LeftparenthesismDNSv6Rightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesismDNSv6Rightparenthesis` = this.cast("Multicast (mDNSv6)")
+  def `Multicast LeftparenthesismDNSv6Rightparenthesis`: typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesismDNSv6Rightparenthesis` = ("Multicast (mDNSv6)").asInstanceOf[typings.ipAddress.ipAddressStrings.`Multicast LeftparenthesismDNSv6Rightparenthesis`]
   @scala.inline
-  def Unspecified: typings.ipAddress.ipAddressStrings.Unspecified = this.cast("Unspecified")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Unspecified: typings.ipAddress.ipAddressStrings.Unspecified = "Unspecified".asInstanceOf[typings.ipAddress.ipAddressStrings.Unspecified]
 }
 

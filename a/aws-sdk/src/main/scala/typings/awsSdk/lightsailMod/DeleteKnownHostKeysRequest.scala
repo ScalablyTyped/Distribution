@@ -16,7 +16,6 @@ object DeleteKnownHostKeysRequest {
   @scala.inline
   def apply(instanceName: ResourceName): DeleteKnownHostKeysRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteKnownHostKeysRequest]
   }
 }

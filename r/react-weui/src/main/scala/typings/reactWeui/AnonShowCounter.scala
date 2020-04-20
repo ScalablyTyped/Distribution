@@ -13,7 +13,6 @@ object AnonShowCounter {
   @scala.inline
   def apply(defaultValue: js.Any, showCounter: Boolean): AnonShowCounter = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], showCounter = showCounter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShowCounter]
   }
 }

@@ -12,7 +12,6 @@ object SjclEllipticalCurve {
   @scala.inline
   def apply(fromBits: BitArray_ => SjclEllipticalPoint): SjclEllipticalCurve = {
     val __obj = js.Dynamic.literal(fromBits = js.Any.fromFunction1(fromBits))
-  
     __obj.asInstanceOf[SjclEllipticalCurve]
   }
 }

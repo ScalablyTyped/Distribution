@@ -14,7 +14,6 @@ object outputFormat {
   @scala.inline
   def apply(ARRAY: String, JSON: String, STRING: String): outputFormat = {
     val __obj = js.Dynamic.literal(ARRAY = ARRAY.asInstanceOf[js.Any], JSON = JSON.asInstanceOf[js.Any], STRING = STRING.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[outputFormat]
   }
 }

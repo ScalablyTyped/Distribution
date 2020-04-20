@@ -38,42 +38,40 @@ trait LogLevelDesc extends js.Object
 
 object LogLevelDesc {
   @scala.inline
-  def `0`: typings.loglevel.loglevelNumbers.`0` = this.cast(0)
+  def `0`: typings.loglevel.loglevelNumbers.`0` = 0.asInstanceOf[typings.loglevel.loglevelNumbers.`0`]
   @scala.inline
-  def `1`: typings.loglevel.loglevelNumbers.`1` = this.cast(1)
+  def `1`: typings.loglevel.loglevelNumbers.`1` = 1.asInstanceOf[typings.loglevel.loglevelNumbers.`1`]
   @scala.inline
-  def `2`: typings.loglevel.loglevelNumbers.`2` = this.cast(2)
+  def `2`: typings.loglevel.loglevelNumbers.`2` = 2.asInstanceOf[typings.loglevel.loglevelNumbers.`2`]
   @scala.inline
-  def `3`: typings.loglevel.loglevelNumbers.`3` = this.cast(3)
+  def `3`: typings.loglevel.loglevelNumbers.`3` = 3.asInstanceOf[typings.loglevel.loglevelNumbers.`3`]
   @scala.inline
-  def `4`: typings.loglevel.loglevelNumbers.`4` = this.cast(4)
+  def `4`: typings.loglevel.loglevelNumbers.`4` = 4.asInstanceOf[typings.loglevel.loglevelNumbers.`4`]
   @scala.inline
-  def `5`: typings.loglevel.loglevelNumbers.`5` = this.cast(5)
+  def `5`: typings.loglevel.loglevelNumbers.`5` = 5.asInstanceOf[typings.loglevel.loglevelNumbers.`5`]
   @scala.inline
-  def DEBUG: typings.loglevel.loglevelStrings.DEBUG = this.cast("DEBUG")
+  def DEBUG: typings.loglevel.loglevelStrings.DEBUG = "DEBUG".asInstanceOf[typings.loglevel.loglevelStrings.DEBUG]
   @scala.inline
-  def ERROR: typings.loglevel.loglevelStrings.ERROR = this.cast("ERROR")
+  def ERROR: typings.loglevel.loglevelStrings.ERROR = "ERROR".asInstanceOf[typings.loglevel.loglevelStrings.ERROR]
   @scala.inline
-  def INFO: typings.loglevel.loglevelStrings.INFO = this.cast("INFO")
+  def INFO: typings.loglevel.loglevelStrings.INFO = "INFO".asInstanceOf[typings.loglevel.loglevelStrings.INFO]
   @scala.inline
-  def SILENT: typings.loglevel.loglevelStrings.SILENT = this.cast("SILENT")
+  def SILENT: typings.loglevel.loglevelStrings.SILENT = "SILENT".asInstanceOf[typings.loglevel.loglevelStrings.SILENT]
   @scala.inline
-  def TRACE: typings.loglevel.loglevelStrings.TRACE = this.cast("TRACE")
+  def TRACE: typings.loglevel.loglevelStrings.TRACE = "TRACE".asInstanceOf[typings.loglevel.loglevelStrings.TRACE]
   @scala.inline
-  def WARN: typings.loglevel.loglevelStrings.WARN = this.cast("WARN")
+  def WARN: typings.loglevel.loglevelStrings.WARN = "WARN".asInstanceOf[typings.loglevel.loglevelStrings.WARN]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: debug_ = "debug".asInstanceOf[debug_]
   @scala.inline
-  def debug: debug_ = this.cast("debug")
+  def error: error_ = "error".asInstanceOf[error_]
   @scala.inline
-  def error: error_ = this.cast("error")
+  def info: info_ = "info".asInstanceOf[info_]
   @scala.inline
-  def info: info_ = this.cast("info")
+  def silent: silent_ = "silent".asInstanceOf[silent_]
   @scala.inline
-  def silent: silent_ = this.cast("silent")
+  def trace: trace_ = "trace".asInstanceOf[trace_]
   @scala.inline
-  def trace: trace_ = this.cast("trace")
-  @scala.inline
-  def warn: warn_ = this.cast("warn")
+  def warn: warn_ = "warn".asInstanceOf[warn_]
 }
 

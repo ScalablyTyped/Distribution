@@ -16,7 +16,6 @@ object SourceAndMapMixin {
   @scala.inline
   def apply(map: AnonColumns => RawSourceMap, sourceAndMap: AnonColumns => AnonMap): SourceAndMapMixin = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), sourceAndMap = js.Any.fromFunction1(sourceAndMap))
-  
     __obj.asInstanceOf[SourceAndMapMixin]
   }
 }

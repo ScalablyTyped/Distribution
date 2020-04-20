@@ -1,5 +1,6 @@
 package typings.titanium.Titanium
 
+import typings.titanium.PossibleBatchQueryError
 import typings.titanium.Titanium.Filesystem.File
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
@@ -13,12 +14,21 @@ import scala.scalajs.js.annotation._
 	 */
 @JSGlobal("Titanium.Database")
 @js.native
+class Database () extends Module
+
+/**
+	 * The top-level `Database` module, used for creating and accessing the
+	 * in-application SQLite database.
+	 */
+/* static members */
+@JSGlobal("Titanium.Database")
+@js.native
 object Database extends js.Object {
   /**
   		 * The `Database` instance returned by <Titanium.Database.open> or <Titanium.Database.install>.
   		 */
   @js.native
-  trait DB extends Proxy {
+  class DB () extends Proxy {
     /**
     			 * A `File` object representing the file where this database is stored. Must only be used for
     			 * setting file properties.
@@ -27,15 +37,15 @@ object Database extends js.Object {
     /**
     			 * The identifier of the last populated row.
     			 */
-    var lastInsertRowId: Double = js.native
+    val lastInsertRowId: Double = js.native
     /**
     			 * The name of the database.
     			 */
-    var name: String = js.native
+    val name: String = js.native
     /**
     			 * The number of rows affected by the last query.
     			 */
-    var rowsAffected: Double = js.native
+    val rowsAffected: Double = js.native
     /**
     			 * Closes the database and releases resources from memory. Once closed, this instance is no
     			 * longer valid and should not be used. On iOS, also closes all <Titanium.Database.ResultSet>
@@ -46,23 +56,52 @@ object Database extends js.Object {
     			 * Executes an SQL statement against the database and returns a `ResultSet`.
     			 */
     def execute(sql: String): ResultSet = js.native
-    def execute(sql: String, vararg: String): ResultSet = js.native
-    def execute(sql: String, vararg: js.Any): ResultSet = js.native
+    /**
+    			 * Executes an SQL statement against the database and returns a `ResultSet`.
+    			 */
+    def execute(sql: String, vararg: (js.Any | String)*): ResultSet = js.native
     def execute(sql: String, vararg: js.Array[_ | String]): ResultSet = js.native
     /**
+    			 * Synchronously executes an array of SQL statements against the database and returns an array of `ResultSet`.
+    			 * On failure, this will throw an [Error](BatchQueryError) that reports the failed index and partial results
+    			 */
+    def executeAll(queries: js.Array[String]): js.Array[ResultSet] = js.native
+    /**
+    			 * Asynchronously executes an array of SQL statements against the database and fires a callback with a possible Error, and an array of `ResultSet`.
+    			 * On failure, this will call the callback with an [Error](PossibleBatchQueryError) that reports the failed index, and a second argument with the partial results
+    			 */
+    def executeAllAsync(
+      queries: js.Array[String],
+      callback: js.Function2[/* param0 */ PossibleBatchQueryError, /* param1 */ js.Array[ResultSet], Unit]
+    ): Unit = js.native
+    /**
+    			 * Asynchronously executes an SQL statement against the database and fires a callback with a possible `Error` argument, and a second argument holding a possible `ResultSet`.
+    			 */
+    def executeAsync(query: String): Unit = js.native
+    def executeAsync(query: String, vararg: js.Any): Unit = js.native
+    def executeAsync(
+      query: String,
+      vararg: js.Any,
+      callback: js.Function2[/* param0 */ js.Any, /* param1 */ ResultSet, Unit]
+    ): Unit = js.native
+    /**
     			 * Gets the value of the <Titanium.Database.DB.file> property.
+    			 * @deprecated Access <Titanium.Database.DB.file> instead.
     			 */
     def getFile(): File = js.native
     /**
     			 * Gets the value of the <Titanium.Database.DB.lastInsertRowId> property.
+    			 * @deprecated Access <Titanium.Database.DB.lastInsertRowId> instead.
     			 */
     def getLastInsertRowId(): Double = js.native
     /**
     			 * Gets the value of the <Titanium.Database.DB.name> property.
+    			 * @deprecated Access <Titanium.Database.DB.name> instead.
     			 */
     def getName(): String = js.native
     /**
     			 * Gets the value of the <Titanium.Database.DB.rowsAffected> property.
+    			 * @deprecated Access <Titanium.Database.DB.rowsAffected> instead.
     			 */
     def getRowsAffected(): Double = js.native
     /**
@@ -70,25 +109,13 @@ object Database extends js.Object {
     			 * operation and cannot be reversed. All data in the database will be lost; use with caution.
     			 */
     def remove(): Unit = js.native
-    /**
-    			 * Sets the value of the <Titanium.Database.DB.lastInsertRowId> property.
-    			 */
-    def setLastInsertRowId(lastInsertRowId: Double): Unit = js.native
-    /**
-    			 * Sets the value of the <Titanium.Database.DB.name> property.
-    			 */
-    def setName(name: String): Unit = js.native
-    /**
-    			 * Sets the value of the <Titanium.Database.DB.rowsAffected> property.
-    			 */
-    def setRowsAffected(rowsAffected: Double): Unit = js.native
   }
   
   /**
   		 * The ResultSet instance returned by <Titanium.Database.DB.execute>.
   		 */
   @js.native
-  trait ResultSet extends Proxy {
+  class ResultSet () extends Proxy {
     /**
     			 * The number of columns in this result set.
     			 */
@@ -124,6 +151,7 @@ object Database extends js.Object {
     def fieldName(index: Double): String = js.native
     /**
     			 * Gets the value of the <Titanium.Database.ResultSet.fieldCount> property.
+    			 * @deprecated Access <Titanium.Database.ResultSet.fieldCount> instead.
     			 */
     def getFieldCount(): Double = js.native
     /**
@@ -132,10 +160,12 @@ object Database extends js.Object {
     def getFieldName(index: Double): String = js.native
     /**
     			 * Gets the value of the <Titanium.Database.ResultSet.rowCount> property.
+    			 * @deprecated Access <Titanium.Database.ResultSet.rowCount> instead.
     			 */
     def getRowCount(): Double = js.native
     /**
     			 * Gets the value of the <Titanium.Database.ResultSet.validRow> property.
+    			 * @deprecated Access <Titanium.Database.ResultSet.validRow> instead.
     			 */
     def getValidRow(): Boolean = js.native
     /**
@@ -180,7 +210,7 @@ object Database extends js.Object {
   /**
   		 * Adds the specified callback as an event listener for the named event.
   		 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Applies the properties to the proxy.
   		 */
@@ -188,17 +218,21 @@ object Database extends js.Object {
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
   		 * Gets the value of the <Titanium.Database.apiName> property.
+  		 * @deprecated Access <Titanium.Database.apiName> instead.
   		 */
   def getApiName(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Database.bubbleParent> property.
+  		 * @deprecated Access <Titanium.Database.bubbleParent> instead.
   		 */
   def getBubbleParent(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.Database.lifecycleContainer> property.
+  		 * @deprecated Access <Titanium.Database.lifecycleContainer> instead.
   		 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
@@ -212,17 +246,16 @@ object Database extends js.Object {
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Database.bubbleParent> property.
+  		 * @deprecated Set the value using <Titanium.Database.bubbleParent> instead.
   		 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  		 * Sets the value of the <Titanium.Database.lifecycleContainer> property.
-  		 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Database.lifecycleContainer> property.
+  		 * @deprecated Set the value using <Titanium.Database.lifecycleContainer> instead.
   		 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }

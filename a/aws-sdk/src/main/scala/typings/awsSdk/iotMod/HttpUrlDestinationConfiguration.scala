@@ -16,7 +16,6 @@ object HttpUrlDestinationConfiguration {
   @scala.inline
   def apply(confirmationUrl: Url): HttpUrlDestinationConfiguration = {
     val __obj = js.Dynamic.literal(confirmationUrl = confirmationUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HttpUrlDestinationConfiguration]
   }
 }

@@ -14,10 +14,8 @@ trait fmButtonStyle extends js.Object
 
 object fmButtonStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmButtonStylePushButton: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmButtonStylePushButton: `0` = this.cast(0)
-  @scala.inline
-  def fmButtonStyleToggleButton: `1` = this.cast(1)
+  def fmButtonStyleToggleButton: `1` = 1.asInstanceOf[`1`]
 }
 

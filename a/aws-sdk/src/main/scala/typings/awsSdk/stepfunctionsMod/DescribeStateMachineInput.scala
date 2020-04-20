@@ -16,7 +16,6 @@ object DescribeStateMachineInput {
   @scala.inline
   def apply(stateMachineArn: Arn): DescribeStateMachineInput = {
     val __obj = js.Dynamic.literal(stateMachineArn = stateMachineArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStateMachineInput]
   }
 }

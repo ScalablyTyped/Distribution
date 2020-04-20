@@ -16,7 +16,6 @@ object GetTaskDefinitionArgs {
   @scala.inline
   def apply(taskDefinition: String): GetTaskDefinitionArgs = {
     val __obj = js.Dynamic.literal(taskDefinition = taskDefinition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTaskDefinitionArgs]
   }
 }

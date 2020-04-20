@@ -42,7 +42,6 @@ object User {
     getUserLoginId: () => String
   ): User = {
     val __obj = js.Dynamic.literal(getDomain = js.Any.fromFunction0(getDomain), getEmail = js.Any.fromFunction0(getEmail), getName = js.Any.fromFunction0(getName), getPhotoUrl = js.Any.fromFunction0(getPhotoUrl), getUserLoginId = js.Any.fromFunction0(getUserLoginId))
-  
     __obj.asInstanceOf[User]
   }
 }

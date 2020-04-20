@@ -20,7 +20,6 @@ object RenderingError {
   @scala.inline
   def apply(Code: String, Message: String): RenderingError = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderingError]
   }
 }

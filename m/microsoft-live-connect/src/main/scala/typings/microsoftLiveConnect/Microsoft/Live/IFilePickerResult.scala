@@ -19,7 +19,6 @@ object IFilePickerResult {
   @scala.inline
   def apply(data: AnonFiles): IFilePickerResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFilePickerResult]
   }
 }

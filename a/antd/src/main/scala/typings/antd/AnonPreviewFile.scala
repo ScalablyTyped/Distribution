@@ -15,7 +15,6 @@ object AnonPreviewFile {
   @scala.inline
   def apply(previewFile: String, removeFile: String, uploadError: String, uploading: String): AnonPreviewFile = {
     val __obj = js.Dynamic.literal(previewFile = previewFile.asInstanceOf[js.Any], removeFile = removeFile.asInstanceOf[js.Any], uploadError = uploadError.asInstanceOf[js.Any], uploading = uploading.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPreviewFile]
   }
 }

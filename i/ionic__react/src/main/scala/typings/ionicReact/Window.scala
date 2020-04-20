@@ -13,7 +13,6 @@ object Window {
   @scala.inline
   def apply(Ionic: js.Any, cordova: js.Any): Window = {
     val __obj = js.Dynamic.literal(Ionic = Ionic.asInstanceOf[js.Any], cordova = cordova.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

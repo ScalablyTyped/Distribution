@@ -13,7 +13,6 @@ object BeforeCapture {
   @scala.inline
   def apply(draggableId: DraggableId, mode: MovementMode): BeforeCapture = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BeforeCapture]
   }
 }

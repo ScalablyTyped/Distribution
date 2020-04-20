@@ -12,7 +12,6 @@ object AnonEnumValuesAnonIncludeRemoteServices {
   @scala.inline
   def apply(enumValues: AnonIncludeRemoteServices): AnonEnumValuesAnonIncludeRemoteServices = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonIncludeRemoteServices]
   }
 }

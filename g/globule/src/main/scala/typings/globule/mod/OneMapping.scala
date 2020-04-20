@@ -13,7 +13,6 @@ object OneMapping {
   @scala.inline
   def apply(dest: String, src: js.Array[String]): OneMapping = {
     val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OneMapping]
   }
 }

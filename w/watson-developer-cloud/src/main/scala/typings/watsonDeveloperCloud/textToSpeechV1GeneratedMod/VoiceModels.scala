@@ -14,7 +14,6 @@ object VoiceModels {
   @scala.inline
   def apply(customizations: js.Array[VoiceModel]): VoiceModels = {
     val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoiceModels]
   }
 }

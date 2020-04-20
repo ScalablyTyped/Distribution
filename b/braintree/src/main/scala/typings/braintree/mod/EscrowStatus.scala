@@ -15,16 +15,14 @@ trait EscrowStatus extends js.Object
 
 object EscrowStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def held: typings.braintree.braintreeStrings.held = "held".asInstanceOf[typings.braintree.braintreeStrings.held]
   @scala.inline
-  def held: typings.braintree.braintreeStrings.held = this.cast("held")
+  def hold_pending: typings.braintree.braintreeStrings.hold_pending = "hold_pending".asInstanceOf[typings.braintree.braintreeStrings.hold_pending]
   @scala.inline
-  def hold_pending: typings.braintree.braintreeStrings.hold_pending = this.cast("hold_pending")
+  def refunded: typings.braintree.braintreeStrings.refunded = "refunded".asInstanceOf[typings.braintree.braintreeStrings.refunded]
   @scala.inline
-  def refunded: typings.braintree.braintreeStrings.refunded = this.cast("refunded")
+  def release_pending: typings.braintree.braintreeStrings.release_pending = "release_pending".asInstanceOf[typings.braintree.braintreeStrings.release_pending]
   @scala.inline
-  def release_pending: typings.braintree.braintreeStrings.release_pending = this.cast("release_pending")
-  @scala.inline
-  def released: typings.braintree.braintreeStrings.released = this.cast("released")
+  def released: typings.braintree.braintreeStrings.released = "released".asInstanceOf[typings.braintree.braintreeStrings.released]
 }
 

@@ -25,7 +25,6 @@ object Router {
     reducer: (/* state */ js.UndefOr[Location], AnyAction) => Location
   ): Router = {
     val __obj = js.Dynamic.literal(enhancer = js.Any.fromFunction1(enhancer), middleware = js.Any.fromFunction1(middleware), reducer = js.Any.fromFunction2(reducer))
-  
     __obj.asInstanceOf[Router]
   }
 }

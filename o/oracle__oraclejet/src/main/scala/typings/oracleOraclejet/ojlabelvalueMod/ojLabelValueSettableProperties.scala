@@ -17,7 +17,6 @@ object ojLabelValueSettableProperties {
   @scala.inline
   def apply(labelEdge: start | top | inherit, labelWidth: String): ojLabelValueSettableProperties = {
     val __obj = js.Dynamic.literal(labelEdge = labelEdge.asInstanceOf[js.Any], labelWidth = labelWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ojLabelValueSettableProperties]
   }
 }

@@ -16,12 +16,10 @@ trait MsoShadowStyle extends js.Object
 
 object MsoShadowStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoShadowStyleInnerShadow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoShadowStyleInnerShadow: `1` = this.cast(1)
+  def msoShadowStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoShadowStyleMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoShadowStyleOuterShadow: `2` = this.cast(2)
+  def msoShadowStyleOuterShadow: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -14,14 +14,12 @@ trait orientation extends js.Object
 
 object orientation {
   @scala.inline
-  def LANDSCAPE: typings.reactNativeOrientation.reactNativeOrientationStrings.LANDSCAPE = this.cast("LANDSCAPE")
+  def LANDSCAPE: typings.reactNativeOrientation.reactNativeOrientationStrings.LANDSCAPE = "LANDSCAPE".asInstanceOf[typings.reactNativeOrientation.reactNativeOrientationStrings.LANDSCAPE]
   @scala.inline
-  def PORTRAIT: typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAIT = this.cast("PORTRAIT")
+  def PORTRAIT: typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAIT = "PORTRAIT".asInstanceOf[typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAIT]
   @scala.inline
-  def PORTRAITUPSIDEDOWN: typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAITUPSIDEDOWN = this.cast("PORTRAITUPSIDEDOWN")
+  def PORTRAITUPSIDEDOWN: typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAITUPSIDEDOWN = "PORTRAITUPSIDEDOWN".asInstanceOf[typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAITUPSIDEDOWN]
   @scala.inline
-  def UNKNOWN: typings.reactNativeOrientation.reactNativeOrientationStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNKNOWN: typings.reactNativeOrientation.reactNativeOrientationStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.reactNativeOrientation.reactNativeOrientationStrings.UNKNOWN]
 }
 

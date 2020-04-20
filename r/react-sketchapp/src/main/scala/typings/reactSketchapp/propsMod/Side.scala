@@ -12,10 +12,8 @@ trait Side extends js.Object
 
 object Side {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.reactSketchapp.reactSketchappStrings.left = "left".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.left]
   @scala.inline
-  def left: typings.reactSketchapp.reactSketchappStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.reactSketchapp.reactSketchappStrings.right = this.cast("right")
+  def right: typings.reactSketchapp.reactSketchappStrings.right = "right".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.right]
 }
 

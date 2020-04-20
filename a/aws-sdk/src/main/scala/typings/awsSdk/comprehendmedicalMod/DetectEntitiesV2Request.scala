@@ -16,7 +16,6 @@ object DetectEntitiesV2Request {
   @scala.inline
   def apply(Text: BoundedLengthString): DetectEntitiesV2Request = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectEntitiesV2Request]
   }
 }

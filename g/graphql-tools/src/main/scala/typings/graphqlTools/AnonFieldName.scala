@@ -15,7 +15,6 @@ object AnonFieldName {
   @scala.inline
   def apply(field: GraphQLFieldConfig[_, _, StringDictionary[_]], name: String): AnonFieldName = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFieldName]
   }
 }

@@ -20,7 +20,6 @@ object GetConfigRequest {
   @scala.inline
   def apply(configId: String, configType: ConfigCapabilityType): GetConfigRequest = {
     val __obj = js.Dynamic.literal(configId = configId.asInstanceOf[js.Any], configType = configType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetConfigRequest]
   }
 }

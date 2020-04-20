@@ -43,7 +43,7 @@ class ContextValues[TContexts /* <: Contexts */] () extends js.Object {
     *
     * @public
     */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Context[Parameters]]] = js.native
   /** @public */
   var output: OutputContexts = js.native
@@ -80,7 +80,7 @@ class ContextValues[TContexts /* <: Contexts */] () extends js.Object {
     * @return Context value matching name or undefined if no matching context.
     * @public
     */
-  def get(name: String): /* import warning: importer.ImportType#apply Failed type conversion: TContexts[keyof TContexts] */ js.Any = js.native
+  def get(name: /* keyof TContexts */ String): /* import warning: importer.ImportType#apply Failed type conversion: TContexts[keyof TContexts] */ js.Any = js.native
   /**
     * Set a new context for the current intent.
     *

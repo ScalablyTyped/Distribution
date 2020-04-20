@@ -34,54 +34,52 @@ trait DisplayType extends js.Object
 
 object DisplayType {
   @scala.inline
-  def `Spacetable-column-group`: typings.azdata.azdataStrings.`Spacetable-column-group` = this.cast(" table-column-group")
+  def `Spacetable-column-group`: typings.azdata.azdataStrings.`Spacetable-column-group` = (" table-column-group").asInstanceOf[typings.azdata.azdataStrings.`Spacetable-column-group`]
   @scala.inline
-  def _empty: typings.azdata.azdataStrings._empty = this.cast("")
+  def _empty: typings.azdata.azdataStrings._empty = "".asInstanceOf[typings.azdata.azdataStrings._empty]
   @scala.inline
-  def block: typings.azdata.azdataStrings.block = this.cast("block")
+  def block: typings.azdata.azdataStrings.block = "block".asInstanceOf[typings.azdata.azdataStrings.block]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def contents: typings.azdata.azdataStrings.contents = "contents".asInstanceOf[typings.azdata.azdataStrings.contents]
   @scala.inline
-  def contents: typings.azdata.azdataStrings.contents = this.cast("contents")
+  def flex: typings.azdata.azdataStrings.flex = "flex".asInstanceOf[typings.azdata.azdataStrings.flex]
   @scala.inline
-  def flex: typings.azdata.azdataStrings.flex = this.cast("flex")
+  def grid: typings.azdata.azdataStrings.grid = "grid".asInstanceOf[typings.azdata.azdataStrings.grid]
   @scala.inline
-  def grid: typings.azdata.azdataStrings.grid = this.cast("grid")
+  def inherit: typings.azdata.azdataStrings.inherit = "inherit".asInstanceOf[typings.azdata.azdataStrings.inherit]
   @scala.inline
-  def inherit: typings.azdata.azdataStrings.inherit = this.cast("inherit")
+  def initial: typings.azdata.azdataStrings.initial = "initial".asInstanceOf[typings.azdata.azdataStrings.initial]
   @scala.inline
-  def initial: typings.azdata.azdataStrings.initial = this.cast("initial")
+  def `inline`: typings.azdata.azdataStrings.`inline` = "inline".asInstanceOf[typings.azdata.azdataStrings.`inline`]
   @scala.inline
-  def `inline`: typings.azdata.azdataStrings.`inline` = this.cast("inline")
+  def `inline-block`: typings.azdata.azdataStrings.`inline-block` = "inline-block".asInstanceOf[typings.azdata.azdataStrings.`inline-block`]
   @scala.inline
-  def `inline-block`: typings.azdata.azdataStrings.`inline-block` = this.cast("inline-block")
+  def `inline-flex`: typings.azdata.azdataStrings.`inline-flex` = "inline-flex".asInstanceOf[typings.azdata.azdataStrings.`inline-flex`]
   @scala.inline
-  def `inline-flex`: typings.azdata.azdataStrings.`inline-flex` = this.cast("inline-flex")
+  def `inline-grid`: typings.azdata.azdataStrings.`inline-grid` = "inline-grid".asInstanceOf[typings.azdata.azdataStrings.`inline-grid`]
   @scala.inline
-  def `inline-grid`: typings.azdata.azdataStrings.`inline-grid` = this.cast("inline-grid")
+  def `inline-table`: typings.azdata.azdataStrings.`inline-table` = "inline-table".asInstanceOf[typings.azdata.azdataStrings.`inline-table`]
   @scala.inline
-  def `inline-table`: typings.azdata.azdataStrings.`inline-table` = this.cast("inline-table")
+  def `list-item`: typings.azdata.azdataStrings.`list-item` = "list-item".asInstanceOf[typings.azdata.azdataStrings.`list-item`]
   @scala.inline
-  def `list-item`: typings.azdata.azdataStrings.`list-item` = this.cast("list-item")
+  def none: typings.azdata.azdataStrings.none = "none".asInstanceOf[typings.azdata.azdataStrings.none]
   @scala.inline
-  def none: typings.azdata.azdataStrings.none = this.cast("none")
+  def `run-in`: typings.azdata.azdataStrings.`run-in` = "run-in".asInstanceOf[typings.azdata.azdataStrings.`run-in`]
   @scala.inline
-  def `run-in`: typings.azdata.azdataStrings.`run-in` = this.cast("run-in")
+  def table: typings.azdata.azdataStrings.table = "table".asInstanceOf[typings.azdata.azdataStrings.table]
   @scala.inline
-  def table: typings.azdata.azdataStrings.table = this.cast("table")
+  def `table-caption`: typings.azdata.azdataStrings.`table-caption` = "table-caption".asInstanceOf[typings.azdata.azdataStrings.`table-caption`]
   @scala.inline
-  def `table-caption`: typings.azdata.azdataStrings.`table-caption` = this.cast("table-caption")
+  def `table-cell`: typings.azdata.azdataStrings.`table-cell` = "table-cell".asInstanceOf[typings.azdata.azdataStrings.`table-cell`]
   @scala.inline
-  def `table-cell`: typings.azdata.azdataStrings.`table-cell` = this.cast("table-cell")
+  def `table-column`: typings.azdata.azdataStrings.`table-column` = "table-column".asInstanceOf[typings.azdata.azdataStrings.`table-column`]
   @scala.inline
-  def `table-column`: typings.azdata.azdataStrings.`table-column` = this.cast("table-column")
+  def `table-footer-group`: typings.azdata.azdataStrings.`table-footer-group` = "table-footer-group".asInstanceOf[typings.azdata.azdataStrings.`table-footer-group`]
   @scala.inline
-  def `table-footer-group`: typings.azdata.azdataStrings.`table-footer-group` = this.cast("table-footer-group")
+  def `table-header-group`: typings.azdata.azdataStrings.`table-header-group` = "table-header-group".asInstanceOf[typings.azdata.azdataStrings.`table-header-group`]
   @scala.inline
-  def `table-header-group`: typings.azdata.azdataStrings.`table-header-group` = this.cast("table-header-group")
+  def `table-row`: typings.azdata.azdataStrings.`table-row` = "table-row".asInstanceOf[typings.azdata.azdataStrings.`table-row`]
   @scala.inline
-  def `table-row`: typings.azdata.azdataStrings.`table-row` = this.cast("table-row")
-  @scala.inline
-  def `table-row-group`: typings.azdata.azdataStrings.`table-row-group` = this.cast("table-row-group")
+  def `table-row-group`: typings.azdata.azdataStrings.`table-row-group` = "table-row-group".asInstanceOf[typings.azdata.azdataStrings.`table-row-group`]
 }
 

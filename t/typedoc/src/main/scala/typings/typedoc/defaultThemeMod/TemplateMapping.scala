@@ -16,7 +16,6 @@ object TemplateMapping {
   @scala.inline
   def apply(directory: String, isLeaf: Boolean, kind: js.Array[ReflectionKind], template: String): TemplateMapping = {
     val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TemplateMapping]
   }
 }

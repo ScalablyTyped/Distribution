@@ -541,7 +541,7 @@ object graphqlStrings {
   @scala.inline
   def NamedType: NamedType = "NamedType".asInstanceOf[NamedType]
   @scala.inline
-  def `No longer supported`: `No longer supported` = "No longer supported".asInstanceOf[`No longer supported`]
+  def `No longer supported`: `No longer supported` = ("No longer supported").asInstanceOf[`No longer supported`]
   @scala.inline
   def NonNullType: NonNullType = "NonNullType".asInstanceOf[NonNullType]
   @scala.inline

@@ -16,7 +16,6 @@ object KinesisParameters {
   @scala.inline
   def apply(PartitionKeyPath: TargetPartitionKeyPath): KinesisParameters = {
     val __obj = js.Dynamic.literal(PartitionKeyPath = PartitionKeyPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinesisParameters]
   }
 }

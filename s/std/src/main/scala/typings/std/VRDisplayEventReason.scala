@@ -14,14 +14,12 @@ trait VRDisplayEventReason extends js.Object
 
 object VRDisplayEventReason {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def mounted: typings.std.stdStrings.mounted = "mounted".asInstanceOf[typings.std.stdStrings.mounted]
   @scala.inline
-  def mounted: typings.std.stdStrings.mounted = this.cast("mounted")
+  def navigation: typings.std.stdStrings.navigation = "navigation".asInstanceOf[typings.std.stdStrings.navigation]
   @scala.inline
-  def navigation: typings.std.stdStrings.navigation = this.cast("navigation")
+  def requested: typings.std.stdStrings.requested = "requested".asInstanceOf[typings.std.stdStrings.requested]
   @scala.inline
-  def requested: typings.std.stdStrings.requested = this.cast("requested")
-  @scala.inline
-  def unmounted: typings.std.stdStrings.unmounted = this.cast("unmounted")
+  def unmounted: typings.std.stdStrings.unmounted = "unmounted".asInstanceOf[typings.std.stdStrings.unmounted]
 }
 

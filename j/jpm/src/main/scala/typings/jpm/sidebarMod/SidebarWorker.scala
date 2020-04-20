@@ -13,7 +13,6 @@ object SidebarWorker {
   @scala.inline
   def apply(port: Port): SidebarWorker = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SidebarWorker]
   }
 }

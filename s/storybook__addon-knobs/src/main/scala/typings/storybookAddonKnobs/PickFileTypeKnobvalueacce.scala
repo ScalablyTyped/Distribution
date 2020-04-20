@@ -15,7 +15,6 @@ object PickFileTypeKnobvalueacce {
   @scala.inline
   def apply(accept: String, value: DateTypeKnobValue): PickFileTypeKnobvalueacce = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickFileTypeKnobvalueacce]
   }
 }

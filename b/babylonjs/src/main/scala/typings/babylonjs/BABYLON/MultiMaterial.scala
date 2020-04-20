@@ -34,7 +34,7 @@ class MultiMaterial protected () extends Material {
     * Gets or Sets the list of Materials used within the multi material.
     * They need to be ordered according to the submeshes order in the associated mesh
     */
-  def subMaterials(): js.Array[Nullable[Material]] = js.native
+  def subMaterials: js.Array[Nullable[Material]] = js.native
   def subMaterials(value: js.Array[Nullable[Material]]): js.Any = js.native
 }
 

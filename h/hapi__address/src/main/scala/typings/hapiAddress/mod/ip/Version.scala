@@ -13,12 +13,10 @@ trait Version extends js.Object
 
 object Version {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ipv4: typings.hapiAddress.hapiAddressStrings.ipv4 = "ipv4".asInstanceOf[typings.hapiAddress.hapiAddressStrings.ipv4]
   @scala.inline
-  def ipv4: typings.hapiAddress.hapiAddressStrings.ipv4 = this.cast("ipv4")
+  def ipv6: typings.hapiAddress.hapiAddressStrings.ipv6 = "ipv6".asInstanceOf[typings.hapiAddress.hapiAddressStrings.ipv6]
   @scala.inline
-  def ipv6: typings.hapiAddress.hapiAddressStrings.ipv6 = this.cast("ipv6")
-  @scala.inline
-  def ipvfuture: typings.hapiAddress.hapiAddressStrings.ipvfuture = this.cast("ipvfuture")
+  def ipvfuture: typings.hapiAddress.hapiAddressStrings.ipvfuture = "ipvfuture".asInstanceOf[typings.hapiAddress.hapiAddressStrings.ipvfuture]
 }
 

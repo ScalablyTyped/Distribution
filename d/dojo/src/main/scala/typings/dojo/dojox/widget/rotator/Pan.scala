@@ -76,7 +76,6 @@ object Pan {
     panUp: js.Object => js.Any
   ): Pan = {
     val __obj = js.Dynamic.literal(pan = js.Any.fromFunction1(pan), panDown = js.Any.fromFunction1(panDown), panLeft = js.Any.fromFunction1(panLeft), panRight = js.Any.fromFunction1(panRight), panUp = js.Any.fromFunction1(panUp))
-  
     __obj.asInstanceOf[Pan]
   }
 }

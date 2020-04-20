@@ -53,6 +53,7 @@ import scala.scalajs.js.annotation._
 
 trait LinkHTMLAttributes[T] extends HTMLAttributes[T] {
   var as: js.UndefOr[String] = js.undefined
+  var charSet: js.UndefOr[String] = js.undefined
   var crossOrigin: js.UndefOr[String] = js.undefined
   var href: js.UndefOr[String] = js.undefined
   var hrefLang: js.UndefOr[String] = js.undefined
@@ -120,6 +121,7 @@ object LinkHTMLAttributes {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
+    charSet: String = null,
     children: ReactNode = null,
     className: String = null,
     color: String = null,
@@ -304,6 +306,7 @@ object LinkHTMLAttributes {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
+    if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

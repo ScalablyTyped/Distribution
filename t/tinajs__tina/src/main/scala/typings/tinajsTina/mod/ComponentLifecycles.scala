@@ -22,7 +22,6 @@ object ComponentLifecycles {
     ready: () => Unit
   ): ComponentLifecycles = {
     val __obj = js.Dynamic.literal(attached = js.Any.fromFunction0(attached), created = js.Any.fromFunction0(created), detached = js.Any.fromFunction0(detached), moved = js.Any.fromFunction0(moved), ready = js.Any.fromFunction0(ready))
-  
     __obj.asInstanceOf[ComponentLifecycles]
   }
 }

@@ -14,7 +14,6 @@ object Expression {
   @scala.inline
   def apply(ExpressionName: StandardName, ExpressionValue: ExpressionValue): Expression = {
     val __obj = js.Dynamic.literal(ExpressionName = ExpressionName.asInstanceOf[js.Any], ExpressionValue = ExpressionValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Expression]
   }
 }

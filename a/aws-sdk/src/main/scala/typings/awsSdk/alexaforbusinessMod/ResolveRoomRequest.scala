@@ -20,7 +20,6 @@ object ResolveRoomRequest {
   @scala.inline
   def apply(SkillId: SkillId, UserId: UserId): ResolveRoomRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolveRoomRequest]
   }
 }

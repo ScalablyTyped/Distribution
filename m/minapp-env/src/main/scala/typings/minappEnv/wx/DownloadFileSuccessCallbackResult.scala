@@ -15,7 +15,6 @@ object DownloadFileSuccessCallbackResult {
   @scala.inline
   def apply(statusCode: Double, tempFilePath: String): DownloadFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DownloadFileSuccessCallbackResult]
   }
 }

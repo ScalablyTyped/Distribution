@@ -23,7 +23,6 @@ object DeploymentCompletedEvent {
     project: ProjectReference
   ): DeploymentCompletedEvent = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], deployment = deployment.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentCompletedEvent]
   }
 }

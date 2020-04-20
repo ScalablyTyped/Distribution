@@ -14,10 +14,8 @@ trait WdMailMergeDefaultRecord extends js.Object
 
 object WdMailMergeDefaultRecord {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdDefaultFirstRecord: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdDefaultFirstRecord: `1` = this.cast(1)
-  @scala.inline
-  def wdDefaultLastRecord: `-16` = this.cast(-16)
+  def wdDefaultLastRecord: `-16` = -16.asInstanceOf[`-16`]
 }
 

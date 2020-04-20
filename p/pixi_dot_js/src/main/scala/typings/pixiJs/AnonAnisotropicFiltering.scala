@@ -30,7 +30,6 @@ object AnonAnisotropicFiltering {
     vertexArrayObject: OESVertexArrayObject
   ): AnonAnisotropicFiltering = {
     val __obj = js.Dynamic.literal(anisotropicFiltering = anisotropicFiltering.asInstanceOf[js.Any], depthTexture = depthTexture.asInstanceOf[js.Any], drawBuffers = drawBuffers.asInstanceOf[js.Any], floatTexture = floatTexture.asInstanceOf[js.Any], loseContext = loseContext.asInstanceOf[js.Any], vertexArrayObject = vertexArrayObject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnisotropicFiltering]
   }
 }

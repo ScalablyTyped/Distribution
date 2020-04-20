@@ -13,7 +13,6 @@ object OptimizationService {
   @scala.inline
   def apply(getContours: OptimizationRequest => MapiRequest): OptimizationService = {
     val __obj = js.Dynamic.literal(getContours = js.Any.fromFunction1(getContours))
-  
     __obj.asInstanceOf[OptimizationService]
   }
 }

@@ -14,7 +14,6 @@ object Expansions {
   @scala.inline
   def apply(expansions: js.Array[Expansion]): Expansions = {
     val __obj = js.Dynamic.literal(expansions = expansions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Expansions]
   }
 }

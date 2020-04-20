@@ -13,7 +13,6 @@ object ProcessorInfo {
   @scala.inline
   def apply(usage: typings.chrome.chrome.system.cpu.ProcessorUsage): ProcessorInfo = {
     val __obj = js.Dynamic.literal(usage = usage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessorInfo]
   }
 }

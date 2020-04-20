@@ -20,7 +20,6 @@ object LocationFeedResponseInItem {
     user: LocationFeedResponseUser
   ): LocationFeedResponseInItem = {
     val __obj = js.Dynamic.literal(duration_in_video_in_sec = duration_in_video_in_sec.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], start_time_in_video_in_sec = start_time_in_video_in_sec.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocationFeedResponseInItem]
   }
 }

@@ -16,12 +16,10 @@ trait _POINTER_GRAVITY extends js.Object
 
 object _POINTER_GRAVITY {
   @scala.inline
-  def POINTER_GRAVITY_Left: `0` = this.cast(0)
+  def POINTER_GRAVITY_Left: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def POINTER_GRAVITY_Max: `2147483647` = this.cast(2147483647)
+  def POINTER_GRAVITY_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def POINTER_GRAVITY_Right: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def POINTER_GRAVITY_Right: `1` = 1.asInstanceOf[`1`]
 }
 

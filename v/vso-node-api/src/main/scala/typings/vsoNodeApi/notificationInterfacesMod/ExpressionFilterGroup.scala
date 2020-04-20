@@ -23,7 +23,6 @@ object ExpressionFilterGroup {
   @scala.inline
   def apply(end: Double, level: Double, start: Double): ExpressionFilterGroup = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExpressionFilterGroup]
   }
 }

@@ -20,7 +20,6 @@ object ExternalWorkflowExecutionSignaledEventAttributes {
   @scala.inline
   def apply(initiatedEventId: EventId, workflowExecution: WorkflowExecution): ExternalWorkflowExecutionSignaledEventAttributes = {
     val __obj = js.Dynamic.literal(initiatedEventId = initiatedEventId.asInstanceOf[js.Any], workflowExecution = workflowExecution.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExternalWorkflowExecutionSignaledEventAttributes]
   }
 }

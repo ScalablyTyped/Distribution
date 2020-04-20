@@ -14,7 +14,6 @@ object GeocodeService {
   @scala.inline
   def apply(forwardGeocode: GeocodeRequest => MapiRequest, reverseGeocode: GeocodeRequest => MapiRequest): GeocodeService = {
     val __obj = js.Dynamic.literal(forwardGeocode = js.Any.fromFunction1(forwardGeocode), reverseGeocode = js.Any.fromFunction1(reverseGeocode))
-  
     __obj.asInstanceOf[GeocodeService]
   }
 }

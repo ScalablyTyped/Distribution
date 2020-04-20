@@ -20,7 +20,6 @@ object UnitData {
     short: LDMLPluralRuleMap[RawUnitPattern]
   ): UnitData = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnitData]
   }
 }

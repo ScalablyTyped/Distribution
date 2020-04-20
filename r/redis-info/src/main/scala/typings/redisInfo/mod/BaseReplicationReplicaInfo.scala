@@ -31,7 +31,6 @@ object BaseReplicationReplicaInfo {
     slave_repl_offset: String
   ): BaseReplicationReplicaInfo = {
     val __obj = js.Dynamic.literal(connected_slaves = connected_slaves.asInstanceOf[js.Any], master_host = master_host.asInstanceOf[js.Any], master_last_io_seconds_ago = master_last_io_seconds_ago.asInstanceOf[js.Any], master_port = master_port.asInstanceOf[js.Any], min_slaves_good_slaves = min_slaves_good_slaves.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], slave_priority = slave_priority.asInstanceOf[js.Any], slave_read_only = slave_read_only.asInstanceOf[js.Any], slave_repl_offset = slave_repl_offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseReplicationReplicaInfo]
   }
 }

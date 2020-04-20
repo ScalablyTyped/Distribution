@@ -16,18 +16,16 @@ trait SearchResponseStatus extends js.Object
 
 object SearchResponseStatus {
   @scala.inline
-  def INVALID_REQUEST: typings.googleMaps.googleMapsStrings.INVALID_REQUEST = this.cast("INVALID_REQUEST")
+  def INVALID_REQUEST: typings.googleMaps.googleMapsStrings.INVALID_REQUEST = "INVALID_REQUEST".asInstanceOf[typings.googleMaps.googleMapsStrings.INVALID_REQUEST]
   @scala.inline
-  def OK: typings.googleMaps.googleMapsStrings.OK = this.cast("OK")
+  def OK: typings.googleMaps.googleMapsStrings.OK = "OK".asInstanceOf[typings.googleMaps.googleMapsStrings.OK]
   @scala.inline
-  def OVER_QUERY_LIMIT: typings.googleMaps.googleMapsStrings.OVER_QUERY_LIMIT = this.cast("OVER_QUERY_LIMIT")
+  def OVER_QUERY_LIMIT: typings.googleMaps.googleMapsStrings.OVER_QUERY_LIMIT = "OVER_QUERY_LIMIT".asInstanceOf[typings.googleMaps.googleMapsStrings.OVER_QUERY_LIMIT]
   @scala.inline
-  def REQUEST_DENIED: typings.googleMaps.googleMapsStrings.REQUEST_DENIED = this.cast("REQUEST_DENIED")
+  def REQUEST_DENIED: typings.googleMaps.googleMapsStrings.REQUEST_DENIED = "REQUEST_DENIED".asInstanceOf[typings.googleMaps.googleMapsStrings.REQUEST_DENIED]
   @scala.inline
-  def UNKNOWN_ERROR: typings.googleMaps.googleMapsStrings.UNKNOWN_ERROR = this.cast("UNKNOWN_ERROR")
+  def UNKNOWN_ERROR: typings.googleMaps.googleMapsStrings.UNKNOWN_ERROR = "UNKNOWN_ERROR".asInstanceOf[typings.googleMaps.googleMapsStrings.UNKNOWN_ERROR]
   @scala.inline
-  def ZERO_RESULTS: typings.googleMaps.googleMapsStrings.ZERO_RESULTS = this.cast("ZERO_RESULTS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ZERO_RESULTS: typings.googleMaps.googleMapsStrings.ZERO_RESULTS = "ZERO_RESULTS".asInstanceOf[typings.googleMaps.googleMapsStrings.ZERO_RESULTS]
 }
 

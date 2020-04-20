@@ -13,10 +13,8 @@ trait ArrayBufferLike extends js.Object
 
 object ArrayBufferLike {
   @scala.inline
-  def byteLength: typings.minappEnv.minappEnvStrings.byteLength = this.cast("byteLength")
+  def byteLength: typings.minappEnv.minappEnvStrings.byteLength = "byteLength".asInstanceOf[typings.minappEnv.minappEnvStrings.byteLength]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def slice: typings.minappEnv.minappEnvStrings.slice = this.cast("slice")
+  def slice: typings.minappEnv.minappEnvStrings.slice = "slice".asInstanceOf[typings.minappEnv.minappEnvStrings.slice]
 }
 

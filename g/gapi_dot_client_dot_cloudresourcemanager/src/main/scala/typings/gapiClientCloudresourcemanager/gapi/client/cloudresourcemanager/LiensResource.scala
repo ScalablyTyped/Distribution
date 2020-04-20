@@ -45,7 +45,6 @@ object LiensResource {
     list: AnonCallback => Request_[ListLiensResponse]
   ): LiensResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[LiensResource]
   }
 }

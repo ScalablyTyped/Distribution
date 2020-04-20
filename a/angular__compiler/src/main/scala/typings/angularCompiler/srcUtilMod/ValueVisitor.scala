@@ -21,7 +21,6 @@ object ValueVisitor {
     visitStringMap: (StringDictionary[js.Any], js.Any) => js.Any
   ): ValueVisitor = {
     val __obj = js.Dynamic.literal(visitArray = js.Any.fromFunction2(visitArray), visitOther = js.Any.fromFunction2(visitOther), visitPrimitive = js.Any.fromFunction2(visitPrimitive), visitStringMap = js.Any.fromFunction2(visitStringMap))
-  
     __obj.asInstanceOf[ValueVisitor]
   }
 }

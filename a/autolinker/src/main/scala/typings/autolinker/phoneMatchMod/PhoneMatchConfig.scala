@@ -21,7 +21,6 @@ object PhoneMatchConfig {
     tagBuilder: AnchorTagBuilder
   ): PhoneMatchConfig = {
     val __obj = js.Dynamic.literal(matchedText = matchedText.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], plusSign = plusSign.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhoneMatchConfig]
   }
 }

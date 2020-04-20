@@ -16,7 +16,6 @@ object ForgetSmartHomeAppliancesRequest {
   @scala.inline
   def apply(RoomArn: Arn): ForgetSmartHomeAppliancesRequest = {
     val __obj = js.Dynamic.literal(RoomArn = RoomArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ForgetSmartHomeAppliancesRequest]
   }
 }

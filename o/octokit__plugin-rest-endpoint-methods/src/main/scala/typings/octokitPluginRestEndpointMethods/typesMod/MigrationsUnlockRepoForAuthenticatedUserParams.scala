@@ -13,7 +13,6 @@ object MigrationsUnlockRepoForAuthenticatedUserParams {
   @scala.inline
   def apply(migration_id: Double, repo_name: String): MigrationsUnlockRepoForAuthenticatedUserParams = {
     val __obj = js.Dynamic.literal(migration_id = migration_id.asInstanceOf[js.Any], repo_name = repo_name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MigrationsUnlockRepoForAuthenticatedUserParams]
   }
 }

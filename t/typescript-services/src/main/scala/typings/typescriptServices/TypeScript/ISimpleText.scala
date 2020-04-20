@@ -24,7 +24,6 @@ object ISimpleText {
     substr: (Double, Double, Boolean) => String
   ): ISimpleText = {
     val __obj = js.Dynamic.literal(charCodeAt = js.Any.fromFunction1(charCodeAt), copyTo = js.Any.fromFunction4(copyTo), length = js.Any.fromFunction0(length), lineMap = js.Any.fromFunction0(lineMap), subText = js.Any.fromFunction1(subText), substr = js.Any.fromFunction3(substr))
-  
     __obj.asInstanceOf[ISimpleText]
   }
 }

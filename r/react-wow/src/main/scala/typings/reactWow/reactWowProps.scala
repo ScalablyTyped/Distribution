@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactWowProps {
   @scala.inline
-  def ReactWowProps: ReactWOWProps.type = typings.reactWow.mod.ReactWOWProps
+  def ReactWowProps: ReactWOWProps.type = ReactWOWProps
   type ReactWowProps = ReactWOWProps
 }
 

@@ -15,7 +15,6 @@ object Document {
   @scala.inline
   def apply(createElement: webview => WebviewTag_): Document = {
     val __obj = js.Dynamic.literal(createElement = js.Any.fromFunction1(createElement))
-  
     __obj.asInstanceOf[Document]
   }
 }

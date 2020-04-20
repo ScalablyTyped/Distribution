@@ -15,7 +15,6 @@ object ReduxWrapperAppProps {
   @scala.inline
   def apply[S, A /* <: Action[_] */, P](store: Store[S, A]): ReduxWrapperAppProps[S, A, P] = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReduxWrapperAppProps[S, A, P]]
   }
 }

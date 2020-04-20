@@ -18,14 +18,12 @@ trait ResultType extends js.Object
 
 object ResultType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def remote_tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.remote_tab = "remote_tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.remote_tab]
   @scala.inline
-  def remote_tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.remote_tab = this.cast("remote_tab")
+  def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = "search".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search]
   @scala.inline
-  def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = this.cast("search")
+  def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
   @scala.inline
-  def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = this.cast("tab")
-  @scala.inline
-  def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = this.cast("url")
+  def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
 }
 

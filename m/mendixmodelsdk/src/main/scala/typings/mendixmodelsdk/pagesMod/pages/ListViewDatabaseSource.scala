@@ -23,7 +23,7 @@ class ListViewDatabaseSource protected () extends DatabaseSourceBase {
   ) = this()
   @JSName("model")
   var model_FListViewDatabaseSource: IModel = js.native
-  def search(): ListViewSearch = js.native
+  def search: ListViewSearch = js.native
   def search(newValue: ListViewSearch): js.Any = js.native
 }
 

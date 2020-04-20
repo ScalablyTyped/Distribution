@@ -72,7 +72,6 @@ object WiiuGamePad {
     update: () => WiiuGamePad
   ): WiiuGamePad = {
     val __obj = js.Dynamic.literal(accX = accX.asInstanceOf[js.Any], accY = accY.asInstanceOf[js.Any], accZ = accZ.asInstanceOf[js.Any], angleX = angleX.asInstanceOf[js.Any], angleY = angleY.asInstanceOf[js.Any], angleZ = angleZ.asInstanceOf[js.Any], contentX = contentX.asInstanceOf[js.Any], contentY = contentY.asInstanceOf[js.Any], dirXx = dirXx.asInstanceOf[js.Any], dirXy = dirXy.asInstanceOf[js.Any], dirXz = dirXz.asInstanceOf[js.Any], dirYx = dirYx.asInstanceOf[js.Any], dirYy = dirYy.asInstanceOf[js.Any], dirYz = dirYz.asInstanceOf[js.Any], dirZx = dirZx.asInstanceOf[js.Any], dirZy = dirZy.asInstanceOf[js.Any], dirZz = dirZz.asInstanceOf[js.Any], gyroX = gyroX.asInstanceOf[js.Any], gyroY = gyroY.asInstanceOf[js.Any], gyroZ = gyroZ.asInstanceOf[js.Any], hold = hold.asInstanceOf[js.Any], isDataValid = isDataValid.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], lStickX = lStickX.asInstanceOf[js.Any], lStickY = lStickY.asInstanceOf[js.Any], rStickX = rStickX.asInstanceOf[js.Any], rStickY = rStickY.asInstanceOf[js.Any], tpTouch = tpTouch.asInstanceOf[js.Any], tpValidity = tpValidity.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
-  
     __obj.asInstanceOf[WiiuGamePad]
   }
 }

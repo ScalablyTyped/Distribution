@@ -20,7 +20,12 @@ package object mod {
     scala.Unit
   ]
   type VerifyWithRequest = js.Function3[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* profile */ typings.passportSaml.mod.Profile, 
     /* done */ typings.passportSaml.mod.VerifiedCallback, 
     scala.Unit

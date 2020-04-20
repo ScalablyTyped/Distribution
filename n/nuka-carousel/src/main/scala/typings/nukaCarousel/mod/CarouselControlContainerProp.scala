@@ -19,24 +19,22 @@ trait CarouselControlContainerProp extends js.Object
 
 object CarouselControlContainerProp {
   @scala.inline
-  def BottomCenter: typings.nukaCarousel.nukaCarouselStrings.BottomCenter = this.cast("BottomCenter")
+  def BottomCenter: typings.nukaCarousel.nukaCarouselStrings.BottomCenter = "BottomCenter".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.BottomCenter]
   @scala.inline
-  def BottomLeft: typings.nukaCarousel.nukaCarouselStrings.BottomLeft = this.cast("BottomLeft")
+  def BottomLeft: typings.nukaCarousel.nukaCarouselStrings.BottomLeft = "BottomLeft".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.BottomLeft]
   @scala.inline
-  def BottomRight: typings.nukaCarousel.nukaCarouselStrings.BottomRight = this.cast("BottomRight")
+  def BottomRight: typings.nukaCarousel.nukaCarouselStrings.BottomRight = "BottomRight".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.BottomRight]
   @scala.inline
-  def CenterCenter: typings.nukaCarousel.nukaCarouselStrings.CenterCenter = this.cast("CenterCenter")
+  def CenterCenter: typings.nukaCarousel.nukaCarouselStrings.CenterCenter = "CenterCenter".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.CenterCenter]
   @scala.inline
-  def CenterLeft: typings.nukaCarousel.nukaCarouselStrings.CenterLeft = this.cast("CenterLeft")
+  def CenterLeft: typings.nukaCarousel.nukaCarouselStrings.CenterLeft = "CenterLeft".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.CenterLeft]
   @scala.inline
-  def CenterRight: typings.nukaCarousel.nukaCarouselStrings.CenterRight = this.cast("CenterRight")
+  def CenterRight: typings.nukaCarousel.nukaCarouselStrings.CenterRight = "CenterRight".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.CenterRight]
   @scala.inline
-  def TopCenter: typings.nukaCarousel.nukaCarouselStrings.TopCenter = this.cast("TopCenter")
+  def TopCenter: typings.nukaCarousel.nukaCarouselStrings.TopCenter = "TopCenter".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.TopCenter]
   @scala.inline
-  def TopLeft: typings.nukaCarousel.nukaCarouselStrings.TopLeft = this.cast("TopLeft")
+  def TopLeft: typings.nukaCarousel.nukaCarouselStrings.TopLeft = "TopLeft".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.TopLeft]
   @scala.inline
-  def TopRight: typings.nukaCarousel.nukaCarouselStrings.TopRight = this.cast("TopRight")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TopRight: typings.nukaCarousel.nukaCarouselStrings.TopRight = "TopRight".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.TopRight]
 }
 

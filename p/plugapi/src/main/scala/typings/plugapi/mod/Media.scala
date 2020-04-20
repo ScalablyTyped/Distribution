@@ -26,7 +26,6 @@ object Media {
     title: String
   ): Media = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Media]
   }
 }

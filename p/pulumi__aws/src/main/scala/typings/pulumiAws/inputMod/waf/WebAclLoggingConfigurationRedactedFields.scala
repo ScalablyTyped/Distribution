@@ -17,7 +17,6 @@ object WebAclLoggingConfigurationRedactedFields {
   @scala.inline
   def apply(fieldToMatches: Input[js.Array[Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]]]): WebAclLoggingConfigurationRedactedFields = {
     val __obj = js.Dynamic.literal(fieldToMatches = fieldToMatches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebAclLoggingConfigurationRedactedFields]
   }
 }

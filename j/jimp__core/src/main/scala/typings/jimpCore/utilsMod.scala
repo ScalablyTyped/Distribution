@@ -17,7 +17,7 @@ object utilsMod extends js.Object {
   type GetPluginFuncArrValues[PluginFuncArr] = js.UndefOr[// Get the plugin value, may be ill-formed or well-formed
   GetPluginVal[js.Any]]
   type GetPluginVal[Q] = Q | WellFormedValues[Q]
-  type Omit[T, K] = Pick[T, Exclude[String, K]]
+  type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   type UnionToIntersection[U] = js.Any
   type WellFormedValues[T /* <: js.Any */] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['class'] */ js.Any)
 }

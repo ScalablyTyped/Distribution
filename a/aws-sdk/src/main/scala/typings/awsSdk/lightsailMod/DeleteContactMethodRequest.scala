@@ -16,7 +16,6 @@ object DeleteContactMethodRequest {
   @scala.inline
   def apply(protocol: ContactProtocol): DeleteContactMethodRequest = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteContactMethodRequest]
   }
 }

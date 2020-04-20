@@ -16,7 +16,6 @@ object StartTriggerRequest {
   @scala.inline
   def apply(Name: NameString): StartTriggerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartTriggerRequest]
   }
 }

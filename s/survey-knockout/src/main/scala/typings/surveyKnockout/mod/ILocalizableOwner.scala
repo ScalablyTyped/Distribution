@@ -14,7 +14,6 @@ object ILocalizableOwner {
   @scala.inline
   def apply(getLocale: () => String, getMarkdownHtml: String => String, getProcessedText: String => String): ILocalizableOwner = {
     val __obj = js.Dynamic.literal(getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText))
-  
     __obj.asInstanceOf[ILocalizableOwner]
   }
 }

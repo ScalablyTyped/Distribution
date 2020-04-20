@@ -15,7 +15,6 @@ object DoneDetails {
   @scala.inline
   def apply(failed: Double, passed: Double, runtime: Double, total: Double): DoneDetails = {
     val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DoneDetails]
   }
 }

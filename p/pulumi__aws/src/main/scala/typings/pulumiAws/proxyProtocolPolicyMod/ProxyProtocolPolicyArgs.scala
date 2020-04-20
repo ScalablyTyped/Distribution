@@ -23,7 +23,6 @@ object ProxyProtocolPolicyArgs {
   @scala.inline
   def apply(instancePorts: Input[js.Array[Input[String]]], loadBalancer: Input[String]): ProxyProtocolPolicyArgs = {
     val __obj = js.Dynamic.literal(instancePorts = instancePorts.asInstanceOf[js.Any], loadBalancer = loadBalancer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProxyProtocolPolicyArgs]
   }
 }

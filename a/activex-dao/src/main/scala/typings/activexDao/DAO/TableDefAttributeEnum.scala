@@ -22,18 +22,16 @@ trait TableDefAttributeEnum extends js.Object
 
 object TableDefAttributeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbAttachExclusive: `65536` = 65536.asInstanceOf[`65536`]
   @scala.inline
-  def dbAttachExclusive: `65536` = this.cast(65536)
+  def dbAttachSavePWD: `131072` = 131072.asInstanceOf[`131072`]
   @scala.inline
-  def dbAttachSavePWD: `131072` = this.cast(131072)
+  def dbAttachedODBC: `536870912` = 536870912.asInstanceOf[`536870912`]
   @scala.inline
-  def dbAttachedODBC: `536870912` = this.cast(536870912)
+  def dbAttachedTable: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
   @scala.inline
-  def dbAttachedTable: `1073741824` = this.cast(1073741824)
+  def dbHiddenObject: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbHiddenObject: `1` = this.cast(1)
-  @scala.inline
-  def dbSystemObject: `-2147483646` = this.cast(-2147483646)
+  def dbSystemObject: `-2147483646` = -2147483646.asInstanceOf[`-2147483646`]
 }
 

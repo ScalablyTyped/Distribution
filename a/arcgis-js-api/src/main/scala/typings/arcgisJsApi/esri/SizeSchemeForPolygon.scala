@@ -40,7 +40,6 @@ object SizeSchemeForPolygon {
     propertyIsEnumerable: PropertyKey => Boolean
   ): SizeSchemeForPolygon = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), marker = marker.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[SizeSchemeForPolygon]
   }
 }

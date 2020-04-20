@@ -20,7 +20,6 @@ object ResourceAttribute {
   @scala.inline
   def apply(Type: ResourceAttributeType, Value: ResourceAttributeValue): ResourceAttribute = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceAttribute]
   }
 }

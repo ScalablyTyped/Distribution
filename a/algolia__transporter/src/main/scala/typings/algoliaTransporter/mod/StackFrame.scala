@@ -33,7 +33,6 @@ object StackFrame {
     triesLeft: Double
   ): StackFrame = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], triesLeft = triesLeft.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StackFrame]
   }
 }

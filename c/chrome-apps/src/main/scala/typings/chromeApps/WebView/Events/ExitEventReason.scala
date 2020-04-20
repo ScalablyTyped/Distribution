@@ -1,5 +1,6 @@
 package typings.chromeApps.WebView.Events
 
+import typings.chromeApps.chromeAppsStrings.normal_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
   * String indicating the reason for the exit.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.chromeApps.chromeAppsStrings.normal
+  - typings.chromeApps.chromeAppsStrings.normal_
   - typings.chromeApps.chromeAppsStrings.abnormal
   - typings.chromeApps.chromeAppsStrings.crash
   - typings.chromeApps.chromeAppsStrings.kill
@@ -17,14 +18,12 @@ trait ExitEventReason extends js.Object
 
 object ExitEventReason {
   @scala.inline
-  def abnormal: typings.chromeApps.chromeAppsStrings.abnormal = this.cast("abnormal")
+  def abnormal: typings.chromeApps.chromeAppsStrings.abnormal = "abnormal".asInstanceOf[typings.chromeApps.chromeAppsStrings.abnormal]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def crash: typings.chromeApps.chromeAppsStrings.crash = "crash".asInstanceOf[typings.chromeApps.chromeAppsStrings.crash]
   @scala.inline
-  def crash: typings.chromeApps.chromeAppsStrings.crash = this.cast("crash")
+  def kill: typings.chromeApps.chromeAppsStrings.kill = "kill".asInstanceOf[typings.chromeApps.chromeAppsStrings.kill]
   @scala.inline
-  def kill: typings.chromeApps.chromeAppsStrings.kill = this.cast("kill")
-  @scala.inline
-  def normal: typings.chromeApps.chromeAppsStrings.normal = this.cast("normal")
+  def normal: normal_ = "normal".asInstanceOf[normal_]
 }
 

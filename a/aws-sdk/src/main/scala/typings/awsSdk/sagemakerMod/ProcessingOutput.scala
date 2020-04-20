@@ -20,7 +20,6 @@ object ProcessingOutput {
   @scala.inline
   def apply(OutputName: String, S3Output: ProcessingS3Output): ProcessingOutput = {
     val __obj = js.Dynamic.literal(OutputName = OutputName.asInstanceOf[js.Any], S3Output = S3Output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessingOutput]
   }
 }

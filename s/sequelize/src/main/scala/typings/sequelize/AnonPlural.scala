@@ -13,7 +13,6 @@ object AnonPlural {
   @scala.inline
   def apply(plural: String, singular: String): AnonPlural = {
     val __obj = js.Dynamic.literal(plural = plural.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPlural]
   }
 }

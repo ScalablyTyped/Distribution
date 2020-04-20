@@ -24,7 +24,6 @@ object ProcessingS3Output {
   @scala.inline
   def apply(LocalPath: ProcessingLocalPath, S3UploadMode: ProcessingS3UploadMode, S3Uri: S3Uri): ProcessingS3Output = {
     val __obj = js.Dynamic.literal(LocalPath = LocalPath.asInstanceOf[js.Any], S3UploadMode = S3UploadMode.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessingS3Output]
   }
 }

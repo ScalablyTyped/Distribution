@@ -12,7 +12,6 @@ object AnonIsOpen {
   @scala.inline
   def apply(isOpen: Boolean): AnonIsOpen = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsOpen]
   }
 }

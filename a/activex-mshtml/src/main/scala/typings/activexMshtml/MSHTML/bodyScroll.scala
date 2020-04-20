@@ -20,16 +20,14 @@ trait bodyScroll extends js.Object
 
 object bodyScroll {
   @scala.inline
-  def bodyScroll_Max: `2147483647` = this.cast(2147483647)
+  def bodyScroll_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def bodyScrollauto: `4` = this.cast(4)
+  def bodyScrollauto: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def bodyScrolldefault: `3` = this.cast(3)
+  def bodyScrolldefault: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def bodyScrollno: `2` = this.cast(2)
+  def bodyScrollno: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def bodyScrollyes: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def bodyScrollyes: `1` = 1.asInstanceOf[`1`]
 }
 

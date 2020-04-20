@@ -27,7 +27,6 @@ object ZuiStatic {
     store: StoreStatic
   ): ZuiStatic = {
     val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], Messager = Messager.asInstanceOf[js.Any], ModalTrigger = ModalTrigger.asInstanceOf[js.Any], colorset = colorset.asInstanceOf[js.Any], messager = messager.asInstanceOf[js.Any], modalTrigger = modalTrigger.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ZuiStatic]
   }
 }

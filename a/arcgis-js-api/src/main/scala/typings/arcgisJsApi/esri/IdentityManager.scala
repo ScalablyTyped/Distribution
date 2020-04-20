@@ -15,7 +15,7 @@ trait IdentityManager extends Evented {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#dialog)
     */
-  var dialog: js.Any = js.native
+  var dialog: Widget_ = js.native
   /**
     * The suggested lifetime of the token in minutes.
     *

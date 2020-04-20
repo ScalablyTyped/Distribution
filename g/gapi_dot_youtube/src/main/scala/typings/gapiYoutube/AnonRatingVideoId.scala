@@ -19,7 +19,6 @@ object AnonRatingVideoId {
   @scala.inline
   def apply(rating: String, videoId: String): AnonRatingVideoId = {
     val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRatingVideoId]
   }
 }

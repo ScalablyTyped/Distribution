@@ -12,10 +12,8 @@ trait PieValuePosition extends js.Object
 
 object PieValuePosition {
   @scala.inline
-  def INSIDE_SLICE: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_SLICE = this.cast("INSIDE_SLICE")
+  def INSIDE_SLICE: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_SLICE = "INSIDE_SLICE".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_SLICE]
   @scala.inline
-  def OUTSIDE_SLICE: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.OUTSIDE_SLICE = this.cast("OUTSIDE_SLICE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OUTSIDE_SLICE: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.OUTSIDE_SLICE = "OUTSIDE_SLICE".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.OUTSIDE_SLICE]
 }
 

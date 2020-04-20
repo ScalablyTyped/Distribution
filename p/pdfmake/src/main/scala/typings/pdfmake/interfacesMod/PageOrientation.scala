@@ -12,10 +12,8 @@ trait PageOrientation extends js.Object
 
 object PageOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def landscape: typings.pdfmake.pdfmakeStrings.landscape = "landscape".asInstanceOf[typings.pdfmake.pdfmakeStrings.landscape]
   @scala.inline
-  def landscape: typings.pdfmake.pdfmakeStrings.landscape = this.cast("landscape")
-  @scala.inline
-  def portrait: typings.pdfmake.pdfmakeStrings.portrait = this.cast("portrait")
+  def portrait: typings.pdfmake.pdfmakeStrings.portrait = "portrait".asInstanceOf[typings.pdfmake.pdfmakeStrings.portrait]
 }
 

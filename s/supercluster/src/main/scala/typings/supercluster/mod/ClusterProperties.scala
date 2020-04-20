@@ -28,7 +28,6 @@ object ClusterProperties {
   @scala.inline
   def apply(cluster: `true`, cluster_id: Double, point_count: Double, point_count_abbreviated: String | Double): ClusterProperties = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], cluster_id = cluster_id.asInstanceOf[js.Any], point_count = point_count.asInstanceOf[js.Any], point_count_abbreviated = point_count_abbreviated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterProperties]
   }
 }

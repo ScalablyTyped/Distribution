@@ -14,7 +14,6 @@ object HookModalProps {
   @scala.inline
   def apply(afterClose: () => Unit, config: ModalFuncProps): HookModalProps = {
     val __obj = js.Dynamic.literal(afterClose = js.Any.fromFunction0(afterClose), config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HookModalProps]
   }
 }

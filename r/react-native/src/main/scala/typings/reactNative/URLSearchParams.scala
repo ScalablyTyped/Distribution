@@ -16,7 +16,7 @@ class URLSearchParams () extends js.Object {
   def this(init: js.Array[js.Array[String]]) = this()
   def this(init: URLSearchParams) = this()
   def this(init: Record[String, String]) = this()
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[String, String]]] = js.native
   def append(name: String, value: String): Unit = js.native
   def delete(name: String): Unit = js.native

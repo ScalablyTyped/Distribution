@@ -12,7 +12,6 @@ object AnonFuzzy {
   @scala.inline
   def apply(fuzzy: Boolean): AnonFuzzy = {
     val __obj = js.Dynamic.literal(fuzzy = fuzzy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFuzzy]
   }
 }

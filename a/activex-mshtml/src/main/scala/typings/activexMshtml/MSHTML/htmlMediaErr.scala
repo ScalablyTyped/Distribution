@@ -20,16 +20,14 @@ trait htmlMediaErr extends js.Object
 
 object htmlMediaErr {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlMediaErrAborted: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlMediaErrAborted: `0` = this.cast(0)
+  def htmlMediaErrDecode: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlMediaErrDecode: `2` = this.cast(2)
+  def htmlMediaErrNetwork: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlMediaErrNetwork: `1` = this.cast(1)
+  def htmlMediaErrSrcNotSupported: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlMediaErrSrcNotSupported: `3` = this.cast(3)
-  @scala.inline
-  def htmlMediaErr_Max: `2147483647` = this.cast(2147483647)
+  def htmlMediaErr_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

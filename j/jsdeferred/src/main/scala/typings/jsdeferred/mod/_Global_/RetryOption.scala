@@ -13,7 +13,6 @@ object RetryOption {
   @scala.inline
   def apply(wait: Double): RetryOption = {
     val __obj = js.Dynamic.literal(wait = wait.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetryOption]
   }
 }

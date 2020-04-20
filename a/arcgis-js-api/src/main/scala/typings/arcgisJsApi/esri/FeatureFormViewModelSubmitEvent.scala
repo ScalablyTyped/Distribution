@@ -14,7 +14,6 @@ object FeatureFormViewModelSubmitEvent {
   @scala.inline
   def apply(invalid: js.Array[String], valid: js.Array[String], values: js.Any): FeatureFormViewModelSubmitEvent = {
     val __obj = js.Dynamic.literal(invalid = invalid.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatureFormViewModelSubmitEvent]
   }
 }

@@ -40,7 +40,7 @@ trait PartialAnnotationsAlign extends js.Object {
   var clicktoshow: js.UndefOr[`false` | onoff | onout] = js.undefined
   var font: js.UndefOr[PartialFont] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.undefined
+  var hoverlabel: js.UndefOr[PartialHoverLabel] = js.undefined
   var hovertext: js.UndefOr[String] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var showarrow: js.UndefOr[Boolean] = js.undefined
@@ -86,7 +86,7 @@ object PartialAnnotationsAlign {
     clicktoshow: `false` | onoff | onout = null,
     font: PartialFont = null,
     height: Int | Double = null,
-    hoverlabel: PartialHoverLabelAlign = null,
+    hoverlabel: PartialHoverLabel = null,
     hovertext: String = null,
     opacity: Int | Double = null,
     showarrow: js.UndefOr[Boolean] = js.undefined,

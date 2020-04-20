@@ -13,7 +13,6 @@ object GetCampaignActivitiesResponse {
   @scala.inline
   def apply(ActivitiesResponse: ActivitiesResponse): GetCampaignActivitiesResponse = {
     val __obj = js.Dynamic.literal(ActivitiesResponse = ActivitiesResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCampaignActivitiesResponse]
   }
 }

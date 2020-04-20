@@ -14,7 +14,6 @@ object CspHtmlWebpackPlugin {
   @scala.inline
   def apply(apply: Compiler_ => Unit): CspHtmlWebpackPlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
-  
     __obj.asInstanceOf[CspHtmlWebpackPlugin]
   }
 }

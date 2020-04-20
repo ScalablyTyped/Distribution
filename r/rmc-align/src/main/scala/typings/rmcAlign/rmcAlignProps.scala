@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait rmcAlignProps {
   @scala.inline
-  def AlignProps: IAlignProps.type = typings.rmcAlign.alignMod.IAlignProps
+  def AlignProps: IAlignProps.type = IAlignProps
   type AlignProps = IAlignProps
   @scala.inline
-  def RmcAlignProps: IAlignProps.type = typings.rmcAlign.alignMod.IAlignProps
+  def RmcAlignProps: IAlignProps.type = IAlignProps
   type RmcAlignProps = IAlignProps
 }
 

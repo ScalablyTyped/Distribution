@@ -48,7 +48,6 @@ object TimelineTeamIteration {
     workItems: js.Array[js.Array[_]]
   ): TimelineTeamIteration = {
     val __obj = js.Dynamic.literal(finishDate = finishDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partiallyPagedWorkItems = partiallyPagedWorkItems.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], workItems = workItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimelineTeamIteration]
   }
 }

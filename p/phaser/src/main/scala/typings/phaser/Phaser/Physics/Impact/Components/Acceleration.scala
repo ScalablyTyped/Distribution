@@ -35,7 +35,6 @@ object Acceleration {
     setAccelerationY: Double => Acceleration
   ): Acceleration = {
     val __obj = js.Dynamic.literal(setAcceleration = js.Any.fromFunction2(setAcceleration), setAccelerationX = js.Any.fromFunction1(setAccelerationX), setAccelerationY = js.Any.fromFunction1(setAccelerationY))
-  
     __obj.asInstanceOf[Acceleration]
   }
 }

@@ -28,42 +28,40 @@ trait AxisName extends js.Object
 
 object AxisName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def x: typings.plotlyJs.plotlyJsStrings.x = "x".asInstanceOf[typings.plotlyJs.plotlyJsStrings.x]
   @scala.inline
-  def x: typings.plotlyJs.plotlyJsStrings.x = this.cast("x")
+  def x2: typings.plotlyJs.plotlyJsStrings.x2 = "x2".asInstanceOf[typings.plotlyJs.plotlyJsStrings.x2]
   @scala.inline
-  def x2: typings.plotlyJs.plotlyJsStrings.x2 = this.cast("x2")
+  def x3: typings.plotlyJs.plotlyJsStrings.x3 = "x3".asInstanceOf[typings.plotlyJs.plotlyJsStrings.x3]
   @scala.inline
-  def x3: typings.plotlyJs.plotlyJsStrings.x3 = this.cast("x3")
+  def x4: typings.plotlyJs.plotlyJsStrings.x4 = "x4".asInstanceOf[typings.plotlyJs.plotlyJsStrings.x4]
   @scala.inline
-  def x4: typings.plotlyJs.plotlyJsStrings.x4 = this.cast("x4")
+  def x5: typings.plotlyJs.plotlyJsStrings.x5 = "x5".asInstanceOf[typings.plotlyJs.plotlyJsStrings.x5]
   @scala.inline
-  def x5: typings.plotlyJs.plotlyJsStrings.x5 = this.cast("x5")
+  def x6: typings.plotlyJs.plotlyJsStrings.x6 = "x6".asInstanceOf[typings.plotlyJs.plotlyJsStrings.x6]
   @scala.inline
-  def x6: typings.plotlyJs.plotlyJsStrings.x6 = this.cast("x6")
+  def x7: typings.plotlyJs.plotlyJsStrings.x7 = "x7".asInstanceOf[typings.plotlyJs.plotlyJsStrings.x7]
   @scala.inline
-  def x7: typings.plotlyJs.plotlyJsStrings.x7 = this.cast("x7")
+  def x8: typings.plotlyJs.plotlyJsStrings.x8 = "x8".asInstanceOf[typings.plotlyJs.plotlyJsStrings.x8]
   @scala.inline
-  def x8: typings.plotlyJs.plotlyJsStrings.x8 = this.cast("x8")
+  def x9: typings.plotlyJs.plotlyJsStrings.x9 = "x9".asInstanceOf[typings.plotlyJs.plotlyJsStrings.x9]
   @scala.inline
-  def x9: typings.plotlyJs.plotlyJsStrings.x9 = this.cast("x9")
+  def y: typings.plotlyJs.plotlyJsStrings.y = "y".asInstanceOf[typings.plotlyJs.plotlyJsStrings.y]
   @scala.inline
-  def y: typings.plotlyJs.plotlyJsStrings.y = this.cast("y")
+  def y2: typings.plotlyJs.plotlyJsStrings.y2 = "y2".asInstanceOf[typings.plotlyJs.plotlyJsStrings.y2]
   @scala.inline
-  def y2: typings.plotlyJs.plotlyJsStrings.y2 = this.cast("y2")
+  def y3: typings.plotlyJs.plotlyJsStrings.y3 = "y3".asInstanceOf[typings.plotlyJs.plotlyJsStrings.y3]
   @scala.inline
-  def y3: typings.plotlyJs.plotlyJsStrings.y3 = this.cast("y3")
+  def y4: typings.plotlyJs.plotlyJsStrings.y4 = "y4".asInstanceOf[typings.plotlyJs.plotlyJsStrings.y4]
   @scala.inline
-  def y4: typings.plotlyJs.plotlyJsStrings.y4 = this.cast("y4")
+  def y5: typings.plotlyJs.plotlyJsStrings.y5 = "y5".asInstanceOf[typings.plotlyJs.plotlyJsStrings.y5]
   @scala.inline
-  def y5: typings.plotlyJs.plotlyJsStrings.y5 = this.cast("y5")
+  def y6: typings.plotlyJs.plotlyJsStrings.y6 = "y6".asInstanceOf[typings.plotlyJs.plotlyJsStrings.y6]
   @scala.inline
-  def y6: typings.plotlyJs.plotlyJsStrings.y6 = this.cast("y6")
+  def y7: typings.plotlyJs.plotlyJsStrings.y7 = "y7".asInstanceOf[typings.plotlyJs.plotlyJsStrings.y7]
   @scala.inline
-  def y7: typings.plotlyJs.plotlyJsStrings.y7 = this.cast("y7")
+  def y8: typings.plotlyJs.plotlyJsStrings.y8 = "y8".asInstanceOf[typings.plotlyJs.plotlyJsStrings.y8]
   @scala.inline
-  def y8: typings.plotlyJs.plotlyJsStrings.y8 = this.cast("y8")
-  @scala.inline
-  def y9: typings.plotlyJs.plotlyJsStrings.y9 = this.cast("y9")
+  def y9: typings.plotlyJs.plotlyJsStrings.y9 = "y9".asInstanceOf[typings.plotlyJs.plotlyJsStrings.y9]
 }
 

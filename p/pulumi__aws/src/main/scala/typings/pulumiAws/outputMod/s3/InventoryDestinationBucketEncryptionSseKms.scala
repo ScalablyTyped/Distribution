@@ -16,7 +16,6 @@ object InventoryDestinationBucketEncryptionSseKms {
   @scala.inline
   def apply(keyId: String): InventoryDestinationBucketEncryptionSseKms = {
     val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InventoryDestinationBucketEncryptionSseKms]
   }
 }

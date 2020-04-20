@@ -13,7 +13,6 @@ object PersistenceAOFOffInfo {
   @scala.inline
   def apply(aof_enabled: OFF): PersistenceAOFOffInfo = {
     val __obj = js.Dynamic.literal(aof_enabled = aof_enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PersistenceAOFOffInfo]
   }
 }

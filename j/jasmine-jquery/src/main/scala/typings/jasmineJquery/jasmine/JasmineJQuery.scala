@@ -22,7 +22,6 @@ object JasmineJQuery {
     matchersClass: js.Any
   ): JasmineJQuery = {
     val __obj = js.Dynamic.literal(browserTagCaseIndependentHtml = js.Any.fromFunction1(browserTagCaseIndependentHtml), elementToString = js.Any.fromFunction1(elementToString), events = events.asInstanceOf[js.Any], matchersClass = matchersClass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JasmineJQuery]
   }
 }

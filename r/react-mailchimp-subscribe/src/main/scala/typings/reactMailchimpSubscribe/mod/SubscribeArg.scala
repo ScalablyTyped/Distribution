@@ -12,7 +12,6 @@ object SubscribeArg {
   @scala.inline
   def apply[FormFields](subscribe: FormFields => Unit): SubscribeArg[FormFields] = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[SubscribeArg[FormFields]]
   }
 }

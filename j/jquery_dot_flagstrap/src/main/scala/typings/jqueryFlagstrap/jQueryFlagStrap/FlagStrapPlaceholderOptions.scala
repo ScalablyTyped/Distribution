@@ -13,7 +13,6 @@ object FlagStrapPlaceholderOptions {
   @scala.inline
   def apply(text: String, value: String): FlagStrapPlaceholderOptions = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FlagStrapPlaceholderOptions]
   }
 }

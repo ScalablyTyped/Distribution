@@ -24,7 +24,6 @@ object CloudWatchLogsDecodedData {
     subscriptionFilters: js.Array[String]
   ): CloudWatchLogsDecodedData = {
     val __obj = js.Dynamic.literal(logEvents = logEvents.asInstanceOf[js.Any], logGroup = logGroup.asInstanceOf[js.Any], logStream = logStream.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], subscriptionFilters = subscriptionFilters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudWatchLogsDecodedData]
   }
 }

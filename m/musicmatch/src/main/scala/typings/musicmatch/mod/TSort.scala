@@ -12,10 +12,8 @@ trait TSort extends js.Object
 
 object TSort {
   @scala.inline
-  def asc: typings.musicmatch.musicmatchStrings.asc = this.cast("asc")
+  def asc: typings.musicmatch.musicmatchStrings.asc = "asc".asInstanceOf[typings.musicmatch.musicmatchStrings.asc]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def desc: typings.musicmatch.musicmatchStrings.desc = this.cast("desc")
+  def desc: typings.musicmatch.musicmatchStrings.desc = "desc".asInstanceOf[typings.musicmatch.musicmatchStrings.desc]
 }
 

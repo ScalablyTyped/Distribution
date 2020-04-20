@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @JSImport("emotion-theming/types/helper", JSImport.Namespace)
 @js.native
 object helperMod extends js.Object {
-  type AddOptionalTo[T, U] = (Omit[T, U]) with (Partial[Pick[T, Extract[String, U]]])
-  type Omit[T, U] = Pick[T, Exclude[String, U]]
+  type AddOptionalTo[T, U] = (Omit[T, U]) with (Partial[Pick[T, Extract[/* keyof T */ String, U]]])
+  type Omit[T, U] = Pick[T, Exclude[/* keyof T */ String, U]]
   type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = LibraryManagedAttributes[C, ComponentPropsWithRef[C]]
 }
 

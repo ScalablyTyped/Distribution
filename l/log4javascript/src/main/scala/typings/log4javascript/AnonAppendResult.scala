@@ -13,7 +13,6 @@ object AnonAppendResult {
   @scala.inline
   def apply(appendResult: Boolean, isError: Boolean): AnonAppendResult = {
     val __obj = js.Dynamic.literal(appendResult = appendResult.asInstanceOf[js.Any], isError = isError.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppendResult]
   }
 }

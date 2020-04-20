@@ -12,7 +12,6 @@ object IDialogLargeHeaderExampleState {
   @scala.inline
   def apply(hideDialog: Boolean): IDialogLargeHeaderExampleState = {
     val __obj = js.Dynamic.literal(hideDialog = hideDialog.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDialogLargeHeaderExampleState]
   }
 }

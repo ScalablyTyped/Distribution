@@ -26,7 +26,6 @@ object AnonAdded {
     updated: Double
   ): AnonAdded = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], fileDeleted = fileDeleted.asInstanceOf[js.Any], matched = matched.asInstanceOf[js.Any], unchecked = unchecked.asInstanceOf[js.Any], uncheckedKeys = uncheckedKeys.asInstanceOf[js.Any], unmatched = unmatched.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAdded]
   }
 }

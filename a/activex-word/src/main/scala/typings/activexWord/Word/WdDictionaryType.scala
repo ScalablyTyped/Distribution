@@ -30,26 +30,24 @@ trait WdDictionaryType extends js.Object
 
 object WdDictionaryType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdGrammar: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdGrammar: `1` = this.cast(1)
+  def wdHangulHanjaConversion: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdHangulHanjaConversion: `8` = this.cast(8)
+  def wdHangulHanjaConversionCustom: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdHangulHanjaConversionCustom: `9` = this.cast(9)
+  def wdHyphenation: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdHyphenation: `3` = this.cast(3)
+  def wdSpelling: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdSpelling: `0` = this.cast(0)
+  def wdSpellingComplete: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdSpellingComplete: `4` = this.cast(4)
+  def wdSpellingCustom: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdSpellingCustom: `5` = this.cast(5)
+  def wdSpellingLegal: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdSpellingLegal: `6` = this.cast(6)
+  def wdSpellingMedical: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdSpellingMedical: `7` = this.cast(7)
-  @scala.inline
-  def wdThesaurus: `2` = this.cast(2)
+  def wdThesaurus: `2` = 2.asInstanceOf[`2`]
 }
 

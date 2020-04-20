@@ -19,7 +19,6 @@ object KernelMemoryScanMatch {
   @scala.inline
   def apply(address: UInt64_, size: Double): KernelMemoryScanMatch = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KernelMemoryScanMatch]
   }
 }

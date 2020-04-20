@@ -13,7 +13,6 @@ object AnonCertsubj {
   @scala.inline
   def apply(certsubj: String): AnonCertsubj = {
     val __obj = js.Dynamic.literal(certsubj = certsubj.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCertsubj]
   }
 }

@@ -14,7 +14,6 @@ object WorkerClusterReadyInfo {
   @scala.inline
   def apply(childProcess: ChildProcess, pid: Double): WorkerClusterReadyInfo = {
     val __obj = js.Dynamic.literal(childProcess = childProcess.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkerClusterReadyInfo]
   }
 }

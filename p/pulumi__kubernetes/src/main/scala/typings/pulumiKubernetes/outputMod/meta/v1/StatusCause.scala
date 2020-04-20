@@ -36,7 +36,6 @@ object StatusCause {
   @scala.inline
   def apply(field: String, message: String, reason: String): StatusCause = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatusCause]
   }
 }

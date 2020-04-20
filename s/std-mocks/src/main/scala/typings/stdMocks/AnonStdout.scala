@@ -12,7 +12,6 @@ object AnonStdout {
   @scala.inline
   def apply(stdout: js.Array[String]): AnonStdout = {
     val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStdout]
   }
 }

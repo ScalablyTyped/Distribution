@@ -1,13 +1,14 @@
 package typings.builderUtilRuntime.httpExecutorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.httpMod.OutgoingHttpHeaders
+import typings.node.NodeJS.Dict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- org.scalablytyped.runtime.StringDictionary because Already inherited */ trait RequestHeaders extends OutgoingHttpHeaders
+- org.scalablytyped.runtime.StringDictionary because Already inherited */ trait RequestHeaders
+  extends Dict[Double | String | js.Array[String]]
 
 object RequestHeaders {
   @scala.inline

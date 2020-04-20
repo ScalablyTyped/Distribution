@@ -24,7 +24,6 @@ object LocalSecondaryIndex {
   @scala.inline
   def apply(IndexName: IndexName, KeySchema: KeySchema, Projection: Projection): LocalSecondaryIndex = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], Projection = Projection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocalSecondaryIndex]
   }
 }

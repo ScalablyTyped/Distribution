@@ -16,7 +16,6 @@ object SecureVault {
     getKeys: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit] => Unit
   ): SecureVault = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), getKeys = js.Any.fromFunction1(getKeys))
-  
     __obj.asInstanceOf[SecureVault]
   }
 }

@@ -14,14 +14,12 @@ trait SelectionMode extends js.Object
 
 object SelectionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
   @scala.inline
-  def end: typings.std.stdStrings.end = this.cast("end")
+  def preserve: typings.std.stdStrings.preserve = "preserve".asInstanceOf[typings.std.stdStrings.preserve]
   @scala.inline
-  def preserve: typings.std.stdStrings.preserve = this.cast("preserve")
+  def select: typings.std.stdStrings.select = "select".asInstanceOf[typings.std.stdStrings.select]
   @scala.inline
-  def select: typings.std.stdStrings.select = this.cast("select")
-  @scala.inline
-  def start: typings.std.stdStrings.start = this.cast("start")
+  def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
 }
 

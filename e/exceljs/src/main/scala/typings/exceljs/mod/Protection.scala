@@ -12,7 +12,6 @@ object Protection {
   @scala.inline
   def apply(locked: Boolean): Protection = {
     val __obj = js.Dynamic.literal(locked = locked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Protection]
   }
 }

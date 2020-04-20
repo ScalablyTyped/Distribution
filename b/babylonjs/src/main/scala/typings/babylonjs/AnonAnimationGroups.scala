@@ -24,7 +24,6 @@ object AnonAnimationGroups {
     skeletons: js.Array[Skeleton]
   ): AnonAnimationGroups = {
     val __obj = js.Dynamic.literal(animationGroups = animationGroups.asInstanceOf[js.Any], meshes = meshes.asInstanceOf[js.Any], particleSystems = particleSystems.asInstanceOf[js.Any], skeletons = skeletons.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimationGroups]
   }
 }

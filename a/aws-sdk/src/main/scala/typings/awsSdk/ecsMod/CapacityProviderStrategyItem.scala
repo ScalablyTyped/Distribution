@@ -11,7 +11,7 @@ trait CapacityProviderStrategyItem extends js.Object {
     */
   var base: js.UndefOr[CapacityProviderStrategyItemBase] = js.native
   /**
-    * The short name or full Amazon Resource Name (ARN) of the capacity provider.
+    * The short name of the capacity provider.
     */
   var capacityProvider: String = js.native
   /**

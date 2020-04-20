@@ -12,7 +12,6 @@ object AnonVariables {
   @scala.inline
   def apply[V](variables: V): AnonVariables[V] = {
     val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVariables[V]]
   }
 }

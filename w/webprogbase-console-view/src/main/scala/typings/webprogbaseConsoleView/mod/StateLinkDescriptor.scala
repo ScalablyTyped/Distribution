@@ -13,7 +13,6 @@ object StateLinkDescriptor {
   @scala.inline
   def apply(data: BasicObject[_], description: String): StateLinkDescriptor = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StateLinkDescriptor]
   }
 }

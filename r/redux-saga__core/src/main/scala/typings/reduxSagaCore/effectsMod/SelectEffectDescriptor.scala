@@ -13,7 +13,6 @@ object SelectEffectDescriptor {
   @scala.inline
   def apply(args: js.Array[_], selector: (js.Any, /* repeated */ js.Any) => js.Any): SelectEffectDescriptor = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], selector = js.Any.fromFunction2(selector))
-  
     __obj.asInstanceOf[SelectEffectDescriptor]
   }
 }

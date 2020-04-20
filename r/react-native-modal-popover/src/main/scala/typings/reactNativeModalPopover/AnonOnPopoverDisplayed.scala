@@ -13,7 +13,6 @@ object AnonOnPopoverDisplayed {
   @scala.inline
   def apply(onPopoverDisplayed: Requireable[js.Function1[/* repeated */ _, _]]): AnonOnPopoverDisplayed = {
     val __obj = js.Dynamic.literal(onPopoverDisplayed = onPopoverDisplayed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnPopoverDisplayed]
   }
 }

@@ -1,5 +1,6 @@
 package typings.angularQExtras.mod.angularAugmentingMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,11 +12,11 @@ trait IQService extends js.Object {
   def allSettled[T](
     promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K] | angular.angular.IPromise<T[K]>}
-    */ typings.angularQExtras.angularQExtrasStrings.IQService with js.Any
+    */ typings.angularQExtras.angularQExtrasStrings.IQService with TopLevel[js.Any]
   ): IPromise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: angular-q-extras.angular-q-extras.angular.PromiseValue<T[K]>}
-    */ typings.angularQExtras.angularQExtrasStrings.IQService with T
+    */ typings.angularQExtras.angularQExtrasStrings.IQService with TopLevel[T]
   ] = js.native
   // tslint:enable:max-line-length
   def allSettled[TAll](promises: js.Array[TAll | IPromise[TAll]]): IPromise[js.Array[PromiseValue[TAll]]] = js.native

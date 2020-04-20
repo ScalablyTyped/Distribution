@@ -24,7 +24,6 @@ object UseSelectActions {
     toggleMenu: () => Unit
   ): UseSelectActions[Item] = {
     val __obj = js.Dynamic.literal(closeMenu = js.Any.fromFunction0(closeMenu), openMenu = js.Any.fromFunction0(openMenu), reset = js.Any.fromFunction0(reset), selectItem = js.Any.fromFunction1(selectItem), setHighlightedIndex = js.Any.fromFunction1(setHighlightedIndex), toggleMenu = js.Any.fromFunction0(toggleMenu))
-  
     __obj.asInstanceOf[UseSelectActions[Item]]
   }
 }

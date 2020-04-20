@@ -78,7 +78,6 @@ object IContact {
     user_id: String
   ): IContact = {
     val __obj = js.Dynamic.literal(birth_day = birth_day.asInstanceOf[js.Any], birth_month = birth_month.asInstanceOf[js.Any], email_hashes = email_hashes.asInstanceOf[js.Any], first_name = first_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_favorite = is_favorite.asInstanceOf[js.Any], is_friend = is_friend.asInstanceOf[js.Any], last_name = last_name.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updated_time = updated_time.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IContact]
   }
 }

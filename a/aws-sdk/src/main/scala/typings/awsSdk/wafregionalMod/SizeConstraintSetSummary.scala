@@ -20,7 +20,6 @@ object SizeConstraintSetSummary {
   @scala.inline
   def apply(Name: ResourceName, SizeConstraintSetId: ResourceId): SizeConstraintSetSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SizeConstraintSetId = SizeConstraintSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SizeConstraintSetSummary]
   }
 }

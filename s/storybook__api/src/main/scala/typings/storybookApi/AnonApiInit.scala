@@ -16,7 +16,6 @@ object AnonApiInit {
   @scala.inline
   def apply(api: SubAPI, init: API => js.Promise[Unit], state: AnonDismissedVersionNotification): AnonApiInit = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonApiInit]
   }
 }

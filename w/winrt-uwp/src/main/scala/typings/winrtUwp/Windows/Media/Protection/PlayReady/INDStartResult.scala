@@ -15,7 +15,6 @@ object INDStartResult {
   @scala.inline
   def apply(mediaStreamSource: MediaStreamSource): INDStartResult = {
     val __obj = js.Dynamic.literal(mediaStreamSource = mediaStreamSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INDStartResult]
   }
 }

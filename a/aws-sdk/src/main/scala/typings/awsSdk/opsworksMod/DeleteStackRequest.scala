@@ -16,7 +16,6 @@ object DeleteStackRequest {
   @scala.inline
   def apply(StackId: String): DeleteStackRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteStackRequest]
   }
 }

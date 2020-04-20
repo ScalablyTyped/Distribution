@@ -24,7 +24,6 @@ object Rule {
   @scala.inline
   def apply(detectorId: identifier, ruleId: identifier, ruleVersion: nonEmptyString): Rule = {
     val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any], ruleVersion = ruleVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Rule]
   }
 }

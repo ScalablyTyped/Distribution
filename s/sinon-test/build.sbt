@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "sinon-test"
-version := "2.4-dt-20200331Z-08783a"
+version := "2.4-dt-20200331Z-8c0c84"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "sinon" % "9.0-dt-20200331Z-9f9551",
-  "org.scalablytyped" %%% "sinonjs__fake-timers" % "6.0-dt-20200331Z-c019e4",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "sinon" % "9.0-dt-20200331Z-ce0e6f",
+  "org.scalablytyped" %%% "sinonjs__fake-timers" % "6.0-dt-20200331Z-844029",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

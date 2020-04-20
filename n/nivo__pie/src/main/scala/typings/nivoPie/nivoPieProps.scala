@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait nivoPieProps {
   @scala.inline
-  def ResponsivePieProps: PieSvgProps.type = typings.nivoPie.mod.PieSvgProps
+  def ResponsivePieProps: PieSvgProps.type = PieSvgProps
   type ResponsivePieProps = PieSvgProps
   @scala.inline
-  def ResponsivePieCanvasProps: PieCanvasProps.type = typings.nivoPie.mod.PieCanvasProps
+  def ResponsivePieCanvasProps: PieCanvasProps.type = PieCanvasProps
   type ResponsivePieCanvasProps = PieCanvasProps
 }
 

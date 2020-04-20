@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 
 trait atlaskitInlineEditProps {
   @scala.inline
-  def InlineEditProps: BaseProps.type = typings.atlaskitInlineEdit.mod.BaseProps
+  def InlineEditProps: BaseProps.type = BaseProps
   type InlineEditProps = StatefulProps
   @scala.inline
-  def InlineEditStatelessProps: StatelessProps.type = typings.atlaskitInlineEdit.mod.StatelessProps
+  def InlineEditStatelessProps: StatelessProps.type = StatelessProps
   type InlineEditStatelessProps = StatelessProps
 }
 

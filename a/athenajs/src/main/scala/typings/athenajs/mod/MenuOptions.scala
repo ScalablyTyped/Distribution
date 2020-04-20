@@ -14,7 +14,6 @@ object MenuOptions {
   @scala.inline
   def apply(color: String, menuItems: js.Array[MenuItem], title: String): MenuOptions = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], menuItems = menuItems.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MenuOptions]
   }
 }

@@ -13,7 +13,6 @@ object SendResponse {
   @scala.inline
   def apply(body: PostResponseData, url: String): SendResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendResponse]
   }
 }

@@ -12,7 +12,6 @@ object JWSJSON {
   @scala.inline
   def apply(payload: String): JWSJSON = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JWSJSON]
   }
 }

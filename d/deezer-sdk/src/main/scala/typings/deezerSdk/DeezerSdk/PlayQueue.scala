@@ -15,7 +15,6 @@ object PlayQueue {
   @scala.inline
   def apply(tracks: js.Array[Track]): PlayQueue = {
     val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlayQueue]
   }
 }

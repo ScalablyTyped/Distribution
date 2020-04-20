@@ -32,7 +32,6 @@ object SchemasCollection {
     update: (Schema, String, String) => Schema
   ): SchemasCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), insert = js.Any.fromFunction2(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction3(patch), remove = js.Any.fromFunction2(remove), update = js.Any.fromFunction3(update))
-  
     __obj.asInstanceOf[SchemasCollection]
   }
 }

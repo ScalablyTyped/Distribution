@@ -13,7 +13,6 @@ object PickImplfocus {
   @scala.inline
   def apply(focus: String): PickImplfocus = {
     val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplfocus]
   }
 }

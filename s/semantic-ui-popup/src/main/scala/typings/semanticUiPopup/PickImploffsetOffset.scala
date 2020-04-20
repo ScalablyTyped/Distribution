@@ -13,7 +13,6 @@ object PickImploffsetOffset {
   @scala.inline
   def apply(offset: String): PickImploffsetOffset = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImploffsetOffset]
   }
 }

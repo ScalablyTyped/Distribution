@@ -24,7 +24,6 @@ object runsemaphore {
   @scala.inline
   def apply(lock: js.Array[_], unlock: () => js.Any): runsemaphore = {
     val __obj = js.Dynamic.literal(lock = lock.asInstanceOf[js.Any], unlock = js.Any.fromFunction0(unlock))
-  
     __obj.asInstanceOf[runsemaphore]
   }
 }

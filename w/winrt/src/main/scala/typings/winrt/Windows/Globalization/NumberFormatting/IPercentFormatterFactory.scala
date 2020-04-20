@@ -13,7 +13,6 @@ object IPercentFormatterFactory {
   @scala.inline
   def apply(createPercentFormatter: (IIterable[String], String) => PercentFormatter): IPercentFormatterFactory = {
     val __obj = js.Dynamic.literal(createPercentFormatter = js.Any.fromFunction2(createPercentFormatter))
-  
     __obj.asInstanceOf[IPercentFormatterFactory]
   }
 }

@@ -23,7 +23,6 @@ object ILayoutState {
   @scala.inline
   def apply(container: IPluginLayout, sizes: js.Array[Double]): ILayoutState = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILayoutState]
   }
 }

@@ -18,12 +18,15 @@ trait AuthenticationInfo extends js.Object {
     * Authentication method.
     * @see AuthenticationMethod
     */
-  var method: js.UndefOr[ToStringLiteral[AnonPBC, String, Exclude[String, PBC | PIN]]] = js.undefined
+  var method: js.UndefOr[ToStringLiteral[AnonPBC, PBC | PIN, Exclude[PBC | PIN, PBC | PIN]]] = js.undefined
 }
 
 object AuthenticationInfo {
   @scala.inline
-  def apply(data: String = null, method: ToStringLiteral[AnonPBC, String, Exclude[String, PBC | PIN]] = null): AuthenticationInfo = {
+  def apply(
+    data: String = null,
+    method: ToStringLiteral[AnonPBC, PBC | PIN, Exclude[PBC | PIN, PBC | PIN]] = null
+  ): AuthenticationInfo = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])

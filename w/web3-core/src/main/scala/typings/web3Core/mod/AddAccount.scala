@@ -13,7 +13,6 @@ object AddAccount {
   @scala.inline
   def apply(address: String, privateKey: String): AddAccount = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddAccount]
   }
 }

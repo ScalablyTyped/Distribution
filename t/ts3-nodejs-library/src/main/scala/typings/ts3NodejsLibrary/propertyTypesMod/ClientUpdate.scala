@@ -12,7 +12,6 @@ object ClientUpdate {
   @scala.inline
   def apply(client_nickname: String): ClientUpdate = {
     val __obj = js.Dynamic.literal(client_nickname = client_nickname.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientUpdate]
   }
 }

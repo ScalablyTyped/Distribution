@@ -25,9 +25,9 @@ object AnonLanguagejsontokenboolean {
     token: AnonAtrule
   ): AnonLanguagejsontokenboolean = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-    __obj.updateDynamic("language-json .token.boolean")(`language-json DottokenDotboolean`.asInstanceOf[js.Any])
-    __obj.updateDynamic("language-json .token.number")(`language-json DottokenDotnumber`.asInstanceOf[js.Any])
-    __obj.updateDynamic("language-json .token.property")(`language-json DottokenDotproperty`.asInstanceOf[js.Any])
+    __obj.updateDynamic("language-json .token.boolean")((`language-json DottokenDotboolean`).asInstanceOf[js.Any])
+    __obj.updateDynamic("language-json .token.number")((`language-json DottokenDotnumber`).asInstanceOf[js.Any])
+    __obj.updateDynamic("language-json .token.property")((`language-json DottokenDotproperty`).asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonLanguagejsontokenboolean]
   }
 }

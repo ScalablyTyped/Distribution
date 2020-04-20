@@ -22,7 +22,6 @@ object Reduction {
     sqrTo: (BigInteger, BigInteger) => Unit
   ): Reduction = {
     val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert), mulTo = js.Any.fromFunction3(mulTo), reduce = js.Any.fromFunction1(reduce), revert = js.Any.fromFunction1(revert), sqrTo = js.Any.fromFunction2(sqrTo))
-  
     __obj.asInstanceOf[Reduction]
   }
 }

@@ -14,10 +14,8 @@ trait styleHyphenateLimitLines extends js.Object
 
 object styleHyphenateLimitLines {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleHyphenateLimitLinesNoLimit: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleHyphenateLimitLinesNoLimit: `0` = this.cast(0)
-  @scala.inline
-  def styleHyphenateLimitLines_Max: `2147483647` = this.cast(2147483647)
+  def styleHyphenateLimitLines_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

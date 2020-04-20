@@ -1,13 +1,26 @@
 package typings.emailTemplates.mod
 
 import typings.emailTemplates.emailTemplatesBooleans.`false`
-import typings.htmlToText.HtmlToTextOptions
+import typings.htmlToText.mod.HtmlToTextOptions
 import typings.nodemailer.mailerMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EmailConfig[T] extends js.Object {
+  /**
+    * defaults to false, unless you pass your own render function,
+    * and in that case it will be automatically set to true.
+    * @default false
+    */
+  var customRender: js.UndefOr[Boolean] = js.undefined
+  /**
+    * a function that returns the path to a template file
+    * @default (path: string, template: string) => string
+    */
+  var getPath: js.UndefOr[
+    js.Function3[/* path */ String, /* template */ String, /* locals */ js.Any, String]
+  ] = js.undefined
   /**
     * <Https://github.com/werk85/node-html-to-text>
     *
@@ -65,6 +78,8 @@ object EmailConfig {
   @scala.inline
   def apply[T](
     message: Options,
+    customRender: js.UndefOr[Boolean] = js.undefined,
+    getPath: (/* path */ String, /* template */ String, /* locals */ js.Any) => String = null,
     htmlToText: HtmlToTextOptions | `false` = null,
     i18n: js.Any = null,
     juice: js.UndefOr[Boolean] = js.undefined,
@@ -78,6 +93,8 @@ object EmailConfig {
     views: View = null
   ): EmailConfig[T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (!js.isUndefined(customRender)) __obj.updateDynamic("customRender")(customRender.asInstanceOf[js.Any])
+    if (getPath != null) __obj.updateDynamic("getPath")(js.Any.fromFunction3(getPath))
     if (htmlToText != null) __obj.updateDynamic("htmlToText")(htmlToText.asInstanceOf[js.Any])
     if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
     if (!js.isUndefined(juice)) __obj.updateDynamic("juice")(juice.asInstanceOf[js.Any])

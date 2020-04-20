@@ -15,7 +15,6 @@ object RaphaelAnimationStatus {
   @scala.inline
   def apply(anim: RaphaelAnimation, status: Double): RaphaelAnimationStatus = {
     val __obj = js.Dynamic.literal(anim = anim.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaphaelAnimationStatus]
   }
 }

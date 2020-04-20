@@ -40,7 +40,6 @@ object VideosResource {
     update: AnonPart => Request_[Video]
   ): VideosResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), getRating = js.Any.fromFunction1(getRating), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), rate = js.Any.fromFunction1(rate), reportAbuse = js.Any.fromFunction1(reportAbuse), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[VideosResource]
   }
 }

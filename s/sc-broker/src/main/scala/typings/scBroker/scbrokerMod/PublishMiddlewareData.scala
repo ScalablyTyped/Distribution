@@ -15,7 +15,6 @@ object PublishMiddlewareData {
   @scala.inline
   def apply(channel: String, command: js.Object, socket: ComSocket): PublishMiddlewareData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PublishMiddlewareData]
   }
 }

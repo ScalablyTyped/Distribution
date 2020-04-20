@@ -15,7 +15,6 @@ object SettingsObserver {
   @scala.inline
   def apply(dispose: () => Unit): SettingsObserver = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
-  
     __obj.asInstanceOf[SettingsObserver]
   }
 }

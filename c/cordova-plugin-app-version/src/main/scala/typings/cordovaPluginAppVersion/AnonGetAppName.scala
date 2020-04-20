@@ -20,7 +20,6 @@ object AnonGetAppName {
     getVersionNumber: () => js.Promise[String]
   ): AnonGetAppName = {
     val __obj = js.Dynamic.literal(getAppName = js.Any.fromFunction0(getAppName), getPackageName = js.Any.fromFunction0(getPackageName), getVersionCode = js.Any.fromFunction0(getVersionCode), getVersionNumber = js.Any.fromFunction0(getVersionNumber))
-  
     __obj.asInstanceOf[AnonGetAppName]
   }
 }

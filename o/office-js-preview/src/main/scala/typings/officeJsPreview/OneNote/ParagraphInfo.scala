@@ -57,7 +57,6 @@ object ParagraphInfo {
     numberType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any
   ): ParagraphInfo = {
     val __obj = js.Dynamic.literal(bulletType = bulletType.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], listType = listType.asInstanceOf[js.Any], numberType = numberType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParagraphInfo]
   }
 }

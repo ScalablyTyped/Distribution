@@ -20,7 +20,6 @@ object CancelSchemaExtensionRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, SchemaExtensionId: SchemaExtensionId): CancelSchemaExtensionRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], SchemaExtensionId = SchemaExtensionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelSchemaExtensionRequest]
   }
 }

@@ -20,7 +20,6 @@ object DeleteAutoSnapshotRequest {
   @scala.inline
   def apply(date: AutoSnapshotDate, resourceName: ResourceName): DeleteAutoSnapshotRequest = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAutoSnapshotRequest]
   }
 }

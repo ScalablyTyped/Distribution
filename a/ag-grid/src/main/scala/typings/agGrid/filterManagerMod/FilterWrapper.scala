@@ -27,7 +27,6 @@ object FilterWrapper {
     scope: js.Any
   ): FilterWrapper = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], compiledElement = compiledElement.asInstanceOf[js.Any], filterPromise = filterPromise.asInstanceOf[js.Any], guiPromise = guiPromise.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilterWrapper]
   }
 }

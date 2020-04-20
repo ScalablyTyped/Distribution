@@ -22,7 +22,6 @@ object INxCellPosition {
   @scala.inline
   def apply(qx: Double, qy: Double): INxCellPosition = {
     val __obj = js.Dynamic.literal(qx = qx.asInstanceOf[js.Any], qy = qy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxCellPosition]
   }
 }

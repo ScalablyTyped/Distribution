@@ -17,7 +17,6 @@ object UpdateAvailabilityOptionsRequest {
   @scala.inline
   def apply(DomainName: DomainName, MultiAZ: Boolean): UpdateAvailabilityOptionsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], MultiAZ = MultiAZ.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateAvailabilityOptionsRequest]
   }
 }

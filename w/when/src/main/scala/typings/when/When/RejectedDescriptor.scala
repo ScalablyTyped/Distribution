@@ -16,7 +16,6 @@ object RejectedDescriptor {
   @scala.inline
   def apply(reason: js.Any, state: rejected): RejectedDescriptor = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RejectedDescriptor]
   }
 }

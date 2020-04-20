@@ -13,7 +13,6 @@ object TypeofAugmentedAIRuntime {
   @scala.inline
   def apply(Types: TypeofAugmentedAIRuntime): TypeofAugmentedAIRuntime = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofAugmentedAIRuntime]
   }
 }

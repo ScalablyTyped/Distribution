@@ -19,24 +19,22 @@ trait NodeType extends js.Object
 
 object NodeType {
   @scala.inline
-  def DIAMOND: typings.flowdoc.flowdocStrings.DIAMOND = this.cast("DIAMOND")
+  def DIAMOND: typings.flowdoc.flowdocStrings.DIAMOND = "DIAMOND".asInstanceOf[typings.flowdoc.flowdocStrings.DIAMOND]
   @scala.inline
-  def DOCUMENT: typings.flowdoc.flowdocStrings.DOCUMENT = this.cast("DOCUMENT")
+  def DOCUMENT: typings.flowdoc.flowdocStrings.DOCUMENT = "DOCUMENT".asInstanceOf[typings.flowdoc.flowdocStrings.DOCUMENT]
   @scala.inline
-  def ELLIPSE: typings.flowdoc.flowdocStrings.ELLIPSE = this.cast("ELLIPSE")
+  def ELLIPSE: typings.flowdoc.flowdocStrings.ELLIPSE = "ELLIPSE".asInstanceOf[typings.flowdoc.flowdocStrings.ELLIPSE]
   @scala.inline
-  def HOTSPOT: typings.flowdoc.flowdocStrings.HOTSPOT = this.cast("HOTSPOT")
+  def HOTSPOT: typings.flowdoc.flowdocStrings.HOTSPOT = "HOTSPOT".asInstanceOf[typings.flowdoc.flowdocStrings.HOTSPOT]
   @scala.inline
-  def IMAGE: typings.flowdoc.flowdocStrings.IMAGE = this.cast("IMAGE")
+  def IMAGE: typings.flowdoc.flowdocStrings.IMAGE = "IMAGE".asInstanceOf[typings.flowdoc.flowdocStrings.IMAGE]
   @scala.inline
-  def LAYER: typings.flowdoc.flowdocStrings.LAYER = this.cast("LAYER")
+  def LAYER: typings.flowdoc.flowdocStrings.LAYER = "LAYER".asInstanceOf[typings.flowdoc.flowdocStrings.LAYER]
   @scala.inline
-  def PAGE: typings.flowdoc.flowdocStrings.PAGE = this.cast("PAGE")
+  def PAGE: typings.flowdoc.flowdocStrings.PAGE = "PAGE".asInstanceOf[typings.flowdoc.flowdocStrings.PAGE]
   @scala.inline
-  def RECT: typings.flowdoc.flowdocStrings.RECT = this.cast("RECT")
+  def RECT: typings.flowdoc.flowdocStrings.RECT = "RECT".asInstanceOf[typings.flowdoc.flowdocStrings.RECT]
   @scala.inline
-  def SCREEN: typings.flowdoc.flowdocStrings.SCREEN = this.cast("SCREEN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SCREEN: typings.flowdoc.flowdocStrings.SCREEN = "SCREEN".asInstanceOf[typings.flowdoc.flowdocStrings.SCREEN]
 }
 

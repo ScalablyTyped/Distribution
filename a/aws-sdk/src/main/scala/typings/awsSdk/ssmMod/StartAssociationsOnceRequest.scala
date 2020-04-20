@@ -16,7 +16,6 @@ object StartAssociationsOnceRequest {
   @scala.inline
   def apply(AssociationIds: AssociationIdList): StartAssociationsOnceRequest = {
     val __obj = js.Dynamic.literal(AssociationIds = AssociationIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartAssociationsOnceRequest]
   }
 }

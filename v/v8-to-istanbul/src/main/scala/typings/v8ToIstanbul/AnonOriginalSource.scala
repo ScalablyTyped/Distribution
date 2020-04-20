@@ -15,7 +15,6 @@ object AnonOriginalSource {
   @scala.inline
   def apply(originalSource: String, source: String, sourceMap: AnonSourcemap): AnonOriginalSource = {
     val __obj = js.Dynamic.literal(originalSource = originalSource.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceMap = sourceMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOriginalSource]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-filepath"
-version := "1.0-dt-20181225Z-4489ee"
+version := "1.0-dt-20181225Z-02ce8b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

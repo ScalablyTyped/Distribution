@@ -14,14 +14,12 @@ trait RTCSdpType extends js.Object
 
 object RTCSdpType {
   @scala.inline
-  def answer: typings.std.stdStrings.answer = this.cast("answer")
+  def answer: typings.std.stdStrings.answer = "answer".asInstanceOf[typings.std.stdStrings.answer]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def offer: typings.std.stdStrings.offer = "offer".asInstanceOf[typings.std.stdStrings.offer]
   @scala.inline
-  def offer: typings.std.stdStrings.offer = this.cast("offer")
+  def pranswer: typings.std.stdStrings.pranswer = "pranswer".asInstanceOf[typings.std.stdStrings.pranswer]
   @scala.inline
-  def pranswer: typings.std.stdStrings.pranswer = this.cast("pranswer")
-  @scala.inline
-  def rollback: typings.std.stdStrings.rollback = this.cast("rollback")
+  def rollback: typings.std.stdStrings.rollback = "rollback".asInstanceOf[typings.std.stdStrings.rollback]
 }
 

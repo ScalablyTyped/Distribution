@@ -18,7 +18,6 @@ object YogaConfig {
     setPointScaleFactor: Double => Unit
   ): YogaConfig = {
     val __obj = js.Dynamic.literal(isExperimentalFeatureEnabled = js.Any.fromFunction1(isExperimentalFeatureEnabled), setExperimentalFeatureEnabled = js.Any.fromFunction2(setExperimentalFeatureEnabled), setPointScaleFactor = js.Any.fromFunction1(setPointScaleFactor))
-  
     __obj.asInstanceOf[YogaConfig]
   }
 }

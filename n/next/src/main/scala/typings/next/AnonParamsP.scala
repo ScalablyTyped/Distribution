@@ -13,7 +13,6 @@ object AnonParamsP {
   @scala.inline
   def apply[P /* <: ParsedUrlQuery */](params: P): AnonParamsP[P] = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonParamsP[P]]
   }
 }

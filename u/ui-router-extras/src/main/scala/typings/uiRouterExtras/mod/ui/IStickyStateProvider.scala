@@ -23,7 +23,6 @@ object IStickyStateProvider {
     registerStickyState: IStickyState => Unit
   ): IStickyStateProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], debugMode = js.Any.fromFunction0(debugMode), enableDebug = js.Any.fromFunction1(enableDebug), registerStickyState = js.Any.fromFunction1(registerStickyState))
-  
     __obj.asInstanceOf[IStickyStateProvider]
   }
 }

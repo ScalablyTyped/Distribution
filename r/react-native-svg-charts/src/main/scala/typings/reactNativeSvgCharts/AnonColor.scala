@@ -9,7 +9,7 @@ trait AnonColor[T] extends js.Object {
   var height: Double
   var id: String
   var index: Double
-  var key: String
+  var key: /* keyof T */ String
   var width: Double
   var x: Double
   var y: Double
@@ -22,13 +22,12 @@ object AnonColor {
     height: Double,
     id: String,
     index: Double,
-    key: String,
+    key: /* keyof T */ String,
     width: Double,
     x: Double,
     y: Double
   ): AnonColor[T] = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColor[T]]
   }
 }

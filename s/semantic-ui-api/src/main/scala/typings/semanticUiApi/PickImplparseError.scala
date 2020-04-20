@@ -13,7 +13,6 @@ object PickImplparseError {
   @scala.inline
   def apply(parseError: String): PickImplparseError = {
     val __obj = js.Dynamic.literal(parseError = parseError.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplparseError]
   }
 }

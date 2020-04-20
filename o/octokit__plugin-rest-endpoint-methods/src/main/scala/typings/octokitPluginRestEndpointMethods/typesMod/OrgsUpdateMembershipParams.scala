@@ -17,7 +17,6 @@ object OrgsUpdateMembershipParams {
   @scala.inline
   def apply(org: String, state: active): OrgsUpdateMembershipParams = {
     val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OrgsUpdateMembershipParams]
   }
 }

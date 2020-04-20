@@ -12,7 +12,6 @@ object Date {
   @scala.inline
   def apply(fp_incr: Double => Date): Date = {
     val __obj = js.Dynamic.literal(fp_incr = js.Any.fromFunction1(fp_incr))
-  
     __obj.asInstanceOf[Date]
   }
 }

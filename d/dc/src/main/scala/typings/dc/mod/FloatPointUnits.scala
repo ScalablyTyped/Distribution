@@ -12,7 +12,6 @@ object FloatPointUnits {
   @scala.inline
   def apply(precision: Double => UnitFunction): FloatPointUnits = {
     val __obj = js.Dynamic.literal(precision = js.Any.fromFunction1(precision))
-  
     __obj.asInstanceOf[FloatPointUnits]
   }
 }

@@ -22,18 +22,16 @@ trait REBASE_OPERATION extends js.Object
 
 object REBASE_OPERATION {
   @scala.inline
-  def EDIT: `2` = this.cast(2)
+  def EDIT: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def EXEC: `5` = this.cast(5)
+  def EXEC: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def FIXUP: `4` = this.cast(4)
+  def FIXUP: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def PICK: `0` = this.cast(0)
+  def PICK: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def REWORD: `1` = this.cast(1)
+  def REWORD: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SQUASH: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SQUASH: `3` = 3.asInstanceOf[`3`]
 }
 

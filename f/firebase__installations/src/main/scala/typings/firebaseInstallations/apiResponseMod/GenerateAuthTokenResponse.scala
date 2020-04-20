@@ -19,7 +19,6 @@ object GenerateAuthTokenResponse {
   @scala.inline
   def apply(expiresIn: String, token: String): GenerateAuthTokenResponse = {
     val __obj = js.Dynamic.literal(expiresIn = expiresIn.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GenerateAuthTokenResponse]
   }
 }

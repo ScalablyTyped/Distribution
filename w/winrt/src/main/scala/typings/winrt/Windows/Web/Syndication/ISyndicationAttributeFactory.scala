@@ -12,7 +12,6 @@ object ISyndicationAttributeFactory {
   @scala.inline
   def apply(createSyndicationAttribute: (String, String, String) => SyndicationAttribute): ISyndicationAttributeFactory = {
     val __obj = js.Dynamic.literal(createSyndicationAttribute = js.Any.fromFunction3(createSyndicationAttribute))
-  
     __obj.asInstanceOf[ISyndicationAttributeFactory]
   }
 }

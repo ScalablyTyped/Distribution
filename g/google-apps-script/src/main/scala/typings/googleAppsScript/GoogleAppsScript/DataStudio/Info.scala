@@ -24,7 +24,6 @@ object Info {
   @scala.inline
   def apply(setId: String => Info, setText: String => Info): Info = {
     val __obj = js.Dynamic.literal(setId = js.Any.fromFunction1(setId), setText = js.Any.fromFunction1(setText))
-  
     __obj.asInstanceOf[Info]
   }
 }

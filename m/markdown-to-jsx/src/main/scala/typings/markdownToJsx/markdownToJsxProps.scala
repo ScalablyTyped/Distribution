@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait markdownToJsxProps {
   @scala.inline
-  def MarkdownToJsxProps: MarkdownProps.type = typings.markdownToJsx.mod.MarkdownProps
+  def MarkdownToJsxProps: MarkdownProps.type = MarkdownProps
   type MarkdownToJsxProps = MarkdownProps
 }
 

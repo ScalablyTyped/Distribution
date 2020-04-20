@@ -20,7 +20,6 @@ object UpdateRuntimeConfigurationInput {
   @scala.inline
   def apply(FleetId: FleetIdOrArn, RuntimeConfiguration: RuntimeConfiguration): UpdateRuntimeConfigurationInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], RuntimeConfiguration = RuntimeConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateRuntimeConfigurationInput]
   }
 }

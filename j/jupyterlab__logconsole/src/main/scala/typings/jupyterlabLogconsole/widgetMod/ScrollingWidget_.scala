@@ -19,6 +19,6 @@ class ScrollingWidget_[T /* <: Widget */] protected () extends Widget {
   /**
     * The content widget.
     */
-  def content(): T = js.native
+  def content: T = js.native
 }
 

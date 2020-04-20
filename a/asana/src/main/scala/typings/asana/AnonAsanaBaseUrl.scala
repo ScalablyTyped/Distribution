@@ -23,7 +23,6 @@ object AnonAsanaBaseUrl {
     retryOnRateLimit: Boolean
   ): AnonAsanaBaseUrl = {
     val __obj = js.Dynamic.literal(_cachedVersionInfo = _cachedVersionInfo.asInstanceOf[js.Any], asanaBaseUrl = asanaBaseUrl.asInstanceOf[js.Any], authenticator = authenticator.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], retryOnRateLimit = retryOnRateLimit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAsanaBaseUrl]
   }
 }

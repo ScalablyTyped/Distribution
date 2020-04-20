@@ -20,7 +20,6 @@ object GetAttendeeRequest {
   @scala.inline
   def apply(AttendeeId: GuidString, MeetingId: GuidString): GetAttendeeRequest = {
     val __obj = js.Dynamic.literal(AttendeeId = AttendeeId.asInstanceOf[js.Any], MeetingId = MeetingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAttendeeRequest]
   }
 }

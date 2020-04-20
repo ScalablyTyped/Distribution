@@ -13,7 +13,6 @@ object Anon4 {
   @scala.inline
   def apply(name: disableOutputCheck): Anon4 = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon4]
   }
 }

@@ -16,7 +16,6 @@ object DeletePlatformApplicationInput {
   @scala.inline
   def apply(PlatformApplicationArn: String): DeletePlatformApplicationInput = {
     val __obj = js.Dynamic.literal(PlatformApplicationArn = PlatformApplicationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePlatformApplicationInput]
   }
 }

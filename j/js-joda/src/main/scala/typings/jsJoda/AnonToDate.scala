@@ -14,7 +14,6 @@ object AnonToDate {
   @scala.inline
   def apply(toDate: () => Date, toEpochMilli: () => Double): AnonToDate = {
     val __obj = js.Dynamic.literal(toDate = js.Any.fromFunction0(toDate), toEpochMilli = js.Any.fromFunction0(toEpochMilli))
-  
     __obj.asInstanceOf[AnonToDate]
   }
 }

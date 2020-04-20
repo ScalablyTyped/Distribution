@@ -13,7 +13,6 @@ object ParsedUrl {
   @scala.inline
   def apply(query: ParsedQuery[String], url: String): ParsedUrl = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedUrl]
   }
 }

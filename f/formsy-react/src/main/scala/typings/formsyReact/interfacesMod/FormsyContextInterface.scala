@@ -22,7 +22,6 @@ object FormsyContextInterface {
     validate: InputComponent[_] => Unit
   ): FormsyContextInterface = {
     val __obj = js.Dynamic.literal(attachToForm = js.Any.fromFunction1(attachToForm), detachFromForm = js.Any.fromFunction1(detachFromForm), isFormDisabled = isFormDisabled.asInstanceOf[js.Any], isValidValue = js.Any.fromFunction2(isValidValue), validate = js.Any.fromFunction1(validate))
-  
     __obj.asInstanceOf[FormsyContextInterface]
   }
 }

@@ -24,7 +24,6 @@ object DirectInboxFeedResponseInbox {
     unseen_count_ts: String
   ): DirectInboxFeedResponseInbox = {
     val __obj = js.Dynamic.literal(blended_inbox_enabled = blended_inbox_enabled.asInstanceOf[js.Any], has_older = has_older.asInstanceOf[js.Any], oldest_cursor = oldest_cursor.asInstanceOf[js.Any], threads = threads.asInstanceOf[js.Any], unseen_count = unseen_count.asInstanceOf[js.Any], unseen_count_ts = unseen_count_ts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectInboxFeedResponseInbox]
   }
 }

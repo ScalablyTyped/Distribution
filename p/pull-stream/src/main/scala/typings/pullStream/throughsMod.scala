@@ -44,7 +44,7 @@ object throughsMod extends js.Object {
   @js.native
   object nonUnique extends js.Object {
     def apply[InOut](): Through_[InOut, InOut] = js.native
-    def apply[InOut](prop: String): Through_[InOut, InOut] = js.native
+    def apply[InOut](prop: /* keyof InOut */ String): Through_[InOut, InOut] = js.native
     def apply[InOut](prop: js.Function1[/* data */ InOut, _]): Through_[InOut, InOut] = js.native
   }
   
@@ -65,7 +65,7 @@ object throughsMod extends js.Object {
   @js.native
   object unique extends js.Object {
     def apply[InOut](): Through_[InOut, InOut] = js.native
-    def apply[InOut](prop: String): Through_[InOut, InOut] = js.native
+    def apply[InOut](prop: /* keyof InOut */ String): Through_[InOut, InOut] = js.native
     def apply[InOut](prop: js.Function1[/* data */ InOut, _]): Through_[InOut, InOut] = js.native
   }
   

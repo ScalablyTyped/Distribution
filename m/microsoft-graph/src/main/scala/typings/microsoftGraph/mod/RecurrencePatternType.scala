@@ -16,18 +16,16 @@ trait RecurrencePatternType extends js.Object
 
 object RecurrencePatternType {
   @scala.inline
-  def absoluteMonthly: typings.microsoftGraph.microsoftGraphStrings.absoluteMonthly = this.cast("absoluteMonthly")
+  def absoluteMonthly: typings.microsoftGraph.microsoftGraphStrings.absoluteMonthly = "absoluteMonthly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.absoluteMonthly]
   @scala.inline
-  def absoluteYearly: typings.microsoftGraph.microsoftGraphStrings.absoluteYearly = this.cast("absoluteYearly")
+  def absoluteYearly: typings.microsoftGraph.microsoftGraphStrings.absoluteYearly = "absoluteYearly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.absoluteYearly]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def daily: typings.microsoftGraph.microsoftGraphStrings.daily = "daily".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.daily]
   @scala.inline
-  def daily: typings.microsoftGraph.microsoftGraphStrings.daily = this.cast("daily")
+  def relativeMonthly: typings.microsoftGraph.microsoftGraphStrings.relativeMonthly = "relativeMonthly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.relativeMonthly]
   @scala.inline
-  def relativeMonthly: typings.microsoftGraph.microsoftGraphStrings.relativeMonthly = this.cast("relativeMonthly")
+  def relativeYearly: typings.microsoftGraph.microsoftGraphStrings.relativeYearly = "relativeYearly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.relativeYearly]
   @scala.inline
-  def relativeYearly: typings.microsoftGraph.microsoftGraphStrings.relativeYearly = this.cast("relativeYearly")
-  @scala.inline
-  def weekly: typings.microsoftGraph.microsoftGraphStrings.weekly = this.cast("weekly")
+  def weekly: typings.microsoftGraph.microsoftGraphStrings.weekly = "weekly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.weekly]
 }
 

@@ -20,16 +20,14 @@ trait WdPageNumberAlignment extends js.Object
 
 object WdPageNumberAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAlignPageNumberCenter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdAlignPageNumberCenter: `1` = this.cast(1)
+  def wdAlignPageNumberInside: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdAlignPageNumberInside: `3` = this.cast(3)
+  def wdAlignPageNumberLeft: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdAlignPageNumberLeft: `0` = this.cast(0)
+  def wdAlignPageNumberOutside: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdAlignPageNumberOutside: `4` = this.cast(4)
-  @scala.inline
-  def wdAlignPageNumberRight: `2` = this.cast(2)
+  def wdAlignPageNumberRight: `2` = 2.asInstanceOf[`2`]
 }
 

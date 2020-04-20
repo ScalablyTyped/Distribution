@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -64,6 +65,12 @@ trait dotDensityCreateRendererParams extends Object {
     */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  /**
     * The MapView instance in which the visualization will be rendered.
     *
     * [Read more...](global.html)
@@ -85,7 +92,8 @@ object dotDensityCreateRendererParams {
     dotDensityScheme: DotDensityScheme = null,
     dotValueOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     legendOptions: dotDensityCreateRendererParamsLegendOptions = null,
-    outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+    outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
+    signal: AbortSignal = null
   ): dotDensityCreateRendererParams = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
@@ -94,6 +102,7 @@ object dotDensityCreateRendererParams {
     if (!js.isUndefined(dotValueOptimizationEnabled)) __obj.updateDynamic("dotValueOptimizationEnabled")(dotValueOptimizationEnabled.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[dotDensityCreateRendererParams]
   }
 }

@@ -23,7 +23,6 @@ object Parameter {
   @scala.inline
   def ReferenceObject($ref: String): Parameter = {
     val __obj = js.Dynamic.literal($ref = $ref.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Parameter]
   }
   @scala.inline

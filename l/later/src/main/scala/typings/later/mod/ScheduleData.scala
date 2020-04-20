@@ -24,7 +24,6 @@ object ScheduleData {
   @scala.inline
   def apply(error: Double, exceptions: js.Array[Recurrence], schedules: js.Array[Recurrence]): ScheduleData = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], exceptions = exceptions.asInstanceOf[js.Any], schedules = schedules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScheduleData]
   }
 }

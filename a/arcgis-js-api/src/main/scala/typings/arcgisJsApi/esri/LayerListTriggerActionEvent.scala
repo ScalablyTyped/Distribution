@@ -13,7 +13,6 @@ object LayerListTriggerActionEvent {
   @scala.inline
   def apply(action: ActionButton | ActionToggle, item: ListItem): LayerListTriggerActionEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LayerListTriggerActionEvent]
   }
 }

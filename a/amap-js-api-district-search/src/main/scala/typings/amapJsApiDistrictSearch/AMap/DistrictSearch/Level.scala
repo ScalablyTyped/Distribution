@@ -15,16 +15,14 @@ trait Level extends js.Object
 
 object Level {
   @scala.inline
-  def biz_area: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.biz_area = this.cast("biz_area")
+  def biz_area: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.biz_area = "biz_area".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.biz_area]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def city: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.city = "city".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.city]
   @scala.inline
-  def city: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.city = this.cast("city")
+  def country: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.country = "country".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.country]
   @scala.inline
-  def country: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.country = this.cast("country")
+  def district: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.district = "district".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.district]
   @scala.inline
-  def district: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.district = this.cast("district")
-  @scala.inline
-  def province: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.province = this.cast("province")
+  def province: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.province = "province".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.province]
 }
 

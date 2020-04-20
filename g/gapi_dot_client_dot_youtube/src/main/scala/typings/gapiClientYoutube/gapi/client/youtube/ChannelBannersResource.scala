@@ -23,7 +23,6 @@ object ChannelBannersResource {
   @scala.inline
   def apply(insert: AnonOnBehalfOfContentOwner => Request_[ChannelBannerResource]): ChannelBannersResource = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
-  
     __obj.asInstanceOf[ChannelBannersResource]
   }
 }

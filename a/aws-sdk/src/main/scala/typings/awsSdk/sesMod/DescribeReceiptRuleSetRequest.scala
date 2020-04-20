@@ -16,7 +16,6 @@ object DescribeReceiptRuleSetRequest {
   @scala.inline
   def apply(RuleSetName: ReceiptRuleSetName): DescribeReceiptRuleSetRequest = {
     val __obj = js.Dynamic.literal(RuleSetName = RuleSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeReceiptRuleSetRequest]
   }
 }

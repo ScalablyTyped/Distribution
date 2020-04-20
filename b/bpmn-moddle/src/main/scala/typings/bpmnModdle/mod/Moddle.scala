@@ -20,8 +20,8 @@ trait Moddle extends js.Object {
     * @param  attrs   a number of attributes to initialize the model instance with
     * @return model instance
     */
-  def create[T, K /* <: String */](descriptor: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
-  def create[T, K /* <: String */](descriptor: K, attrs: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def create[T, K /* <: /* keyof T */ String */](descriptor: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def create[T, K /* <: /* keyof T */ String */](descriptor: K, attrs: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   /**
     * Creates an any-element type to be used within model instances.
     *

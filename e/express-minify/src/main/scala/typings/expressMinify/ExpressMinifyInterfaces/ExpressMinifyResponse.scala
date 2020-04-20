@@ -42,7 +42,6 @@ object ExpressMinifyResponse {
     _uglifyOutput: js.Object
   ): ExpressMinifyResponse = {
     val __obj = js.Dynamic.literal(_no_cache = _no_cache.asInstanceOf[js.Any], _no_minify = _no_minify.asInstanceOf[js.Any], _skip = _skip.asInstanceOf[js.Any], _uglifyCompress = _uglifyCompress.asInstanceOf[js.Any], _uglifyMangle = _uglifyMangle.asInstanceOf[js.Any], _uglifyOutput = _uglifyOutput.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExpressMinifyResponse]
   }
 }

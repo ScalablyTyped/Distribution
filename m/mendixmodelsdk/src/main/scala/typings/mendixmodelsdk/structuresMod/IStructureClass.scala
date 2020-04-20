@@ -13,7 +13,6 @@ object IStructureClass {
   @scala.inline
   def apply(versionInfo: StructureVersionInfo): IStructureClass = {
     val __obj = js.Dynamic.literal(versionInfo = versionInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStructureClass]
   }
 }

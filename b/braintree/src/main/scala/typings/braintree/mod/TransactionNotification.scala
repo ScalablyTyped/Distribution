@@ -17,7 +17,6 @@ object TransactionNotification {
   @scala.inline
   def apply(kind: TransactionNotificationKind, timestamp: Date, transaction: Transaction): TransactionNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transaction = transaction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransactionNotification]
   }
 }

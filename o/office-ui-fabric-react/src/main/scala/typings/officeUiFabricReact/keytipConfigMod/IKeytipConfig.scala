@@ -12,7 +12,6 @@ object IKeytipConfig {
   @scala.inline
   def apply(keytips: js.Array[IKeytipConfigItem]): IKeytipConfig = {
     val __obj = js.Dynamic.literal(keytips = keytips.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKeytipConfig]
   }
 }

@@ -15,7 +15,6 @@ object DefaultTreeNode {
   @scala.inline
   def apply(nodeName: String): DefaultTreeNode = {
     val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultTreeNode]
   }
 }

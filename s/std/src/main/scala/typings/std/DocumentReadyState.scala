@@ -13,12 +13,10 @@ trait DocumentReadyState extends js.Object
 
 object DocumentReadyState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complete: typings.std.stdStrings.complete = "complete".asInstanceOf[typings.std.stdStrings.complete]
   @scala.inline
-  def complete: typings.std.stdStrings.complete = this.cast("complete")
+  def interactive: typings.std.stdStrings.interactive = "interactive".asInstanceOf[typings.std.stdStrings.interactive]
   @scala.inline
-  def interactive: typings.std.stdStrings.interactive = this.cast("interactive")
-  @scala.inline
-  def loading: typings.std.stdStrings.loading = this.cast("loading")
+  def loading: typings.std.stdStrings.loading = "loading".asInstanceOf[typings.std.stdStrings.loading]
 }
 

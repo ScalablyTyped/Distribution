@@ -22,7 +22,6 @@ object NativeAndroidChannelGroup {
     name: String
   ): NativeAndroidChannelGroup = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeAndroidChannelGroup]
   }
 }

@@ -12,10 +12,8 @@ trait SortOrderType extends js.Object
 
 object SortOrderType {
   @scala.inline
-  def asc: typings.handsontable.handsontableStrings.asc = this.cast("asc")
+  def asc: typings.handsontable.handsontableStrings.asc = "asc".asInstanceOf[typings.handsontable.handsontableStrings.asc]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def desc: typings.handsontable.handsontableStrings.desc = this.cast("desc")
+  def desc: typings.handsontable.handsontableStrings.desc = "desc".asInstanceOf[typings.handsontable.handsontableStrings.desc]
 }
 

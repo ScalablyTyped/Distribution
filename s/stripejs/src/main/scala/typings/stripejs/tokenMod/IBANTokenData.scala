@@ -26,7 +26,6 @@ object IBANTokenData {
   @scala.inline
   def apply(account_holder_name: String, account_holder_type: individual | company, currency: String): IBANTokenData = {
     val __obj = js.Dynamic.literal(account_holder_name = account_holder_name.asInstanceOf[js.Any], account_holder_type = account_holder_type.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBANTokenData]
   }
 }

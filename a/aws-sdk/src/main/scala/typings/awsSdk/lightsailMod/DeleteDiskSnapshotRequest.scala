@@ -16,7 +16,6 @@ object DeleteDiskSnapshotRequest {
   @scala.inline
   def apply(diskSnapshotName: ResourceName): DeleteDiskSnapshotRequest = {
     val __obj = js.Dynamic.literal(diskSnapshotName = diskSnapshotName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDiskSnapshotRequest]
   }
 }

@@ -14,7 +14,6 @@ object AnonBytesWritten {
   @scala.inline
   def apply(buffer: Uint8ClampedArray, bytesWritten: Double): AnonBytesWritten = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBytesWritten]
   }
 }

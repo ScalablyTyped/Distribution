@@ -16,7 +16,6 @@ object DeleteSnapshotMessage {
   @scala.inline
   def apply(SnapshotName: String): DeleteSnapshotMessage = {
     val __obj = js.Dynamic.literal(SnapshotName = SnapshotName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSnapshotMessage]
   }
 }

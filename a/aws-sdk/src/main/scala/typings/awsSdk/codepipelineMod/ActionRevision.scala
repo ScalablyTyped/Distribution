@@ -24,7 +24,6 @@ object ActionRevision {
   @scala.inline
   def apply(created: Timestamp, revisionChangeId: RevisionChangeIdentifier, revisionId: Revision): ActionRevision = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], revisionChangeId = revisionChangeId.asInstanceOf[js.Any], revisionId = revisionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionRevision]
   }
 }

@@ -20,7 +20,6 @@ object SendMessageBatchRequest {
   @scala.inline
   def apply(Entries: SendMessageBatchRequestEntryList, QueueUrl: String): SendMessageBatchRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendMessageBatchRequest]
   }
 }

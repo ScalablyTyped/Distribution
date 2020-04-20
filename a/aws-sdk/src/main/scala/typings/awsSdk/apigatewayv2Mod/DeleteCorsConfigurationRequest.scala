@@ -16,7 +16,6 @@ object DeleteCorsConfigurationRequest {
   @scala.inline
   def apply(ApiId: string): DeleteCorsConfigurationRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCorsConfigurationRequest]
   }
 }

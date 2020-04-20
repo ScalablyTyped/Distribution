@@ -29,7 +29,6 @@ object ExpansionfilesResource {
     upload: AnonExpansionFileType => Request_[ExpansionFilesUploadResponse]
   ): ExpansionfilesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update), upload = js.Any.fromFunction1(upload))
-  
     __obj.asInstanceOf[ExpansionfilesResource]
   }
 }

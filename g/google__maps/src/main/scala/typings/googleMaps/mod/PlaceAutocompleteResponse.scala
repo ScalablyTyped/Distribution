@@ -28,7 +28,6 @@ object PlaceAutocompleteResponse {
     status: PlaceAutocompleteResponseStatus
   ): PlaceAutocompleteResponse = {
     val __obj = js.Dynamic.literal(error_message = error_message.asInstanceOf[js.Any], predictions = predictions.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaceAutocompleteResponse]
   }
 }

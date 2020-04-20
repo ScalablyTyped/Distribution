@@ -25,7 +25,6 @@ object AnonActiveTextColor {
     underline: ViewStyle
   ): AnonActiveTextColor = {
     val __obj = js.Dynamic.literal(activeTextColor = activeTextColor.asInstanceOf[js.Any], inactiveTextColor = inactiveTextColor.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], textStyle = textStyle.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveTextColor]
   }
 }

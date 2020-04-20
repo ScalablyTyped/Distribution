@@ -15,7 +15,6 @@ object AnonSelfCertification {
   @scala.inline
   def apply(selfCertification: Signature, user: User): AnonSelfCertification = {
     val __obj = js.Dynamic.literal(selfCertification = selfCertification.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelfCertification]
   }
 }

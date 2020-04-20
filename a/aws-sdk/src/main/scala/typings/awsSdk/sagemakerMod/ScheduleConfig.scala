@@ -16,7 +16,6 @@ object ScheduleConfig {
   @scala.inline
   def apply(ScheduleExpression: ScheduleExpression): ScheduleConfig = {
     val __obj = js.Dynamic.literal(ScheduleExpression = ScheduleExpression.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScheduleConfig]
   }
 }

@@ -13,7 +13,6 @@ object AnonPageListCollapsed {
   @scala.inline
   def apply(pageListCollapsed: Double, pageListHeight: Double): AnonPageListCollapsed = {
     val __obj = js.Dynamic.literal(pageListCollapsed = pageListCollapsed.asInstanceOf[js.Any], pageListHeight = pageListHeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPageListCollapsed]
   }
 }

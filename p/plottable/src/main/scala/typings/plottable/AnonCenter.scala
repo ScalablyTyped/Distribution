@@ -17,7 +17,6 @@ object AnonCenter {
   @scala.inline
   def apply(center: center, left: left, right: right): AnonCenter = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCenter]
   }
 }

@@ -16,7 +16,6 @@ object ResumeSessionRequest {
   @scala.inline
   def apply(SessionId: SessionId): ResumeSessionRequest = {
     val __obj = js.Dynamic.literal(SessionId = SessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResumeSessionRequest]
   }
 }

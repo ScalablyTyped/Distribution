@@ -13,7 +13,6 @@ object SettlementBatchSummaryGateway {
   @scala.inline
   def apply(generate: AnonGroupByCustomField => js.Promise[SettlementBatchSummary]): SettlementBatchSummaryGateway = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate))
-  
     __obj.asInstanceOf[SettlementBatchSummaryGateway]
   }
 }

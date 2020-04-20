@@ -14,7 +14,6 @@ object SearchBoxOptions {
   @scala.inline
   def apply(bounds: LatLngBounds | LatLngBoundsLiteral): SearchBoxOptions = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchBoxOptions]
   }
 }

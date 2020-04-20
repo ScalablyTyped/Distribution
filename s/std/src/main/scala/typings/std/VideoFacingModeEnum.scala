@@ -14,14 +14,12 @@ trait VideoFacingModeEnum extends js.Object
 
 object VideoFacingModeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def environment: typings.std.stdStrings.environment = "environment".asInstanceOf[typings.std.stdStrings.environment]
   @scala.inline
-  def environment: typings.std.stdStrings.environment = this.cast("environment")
+  def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
   @scala.inline
-  def left: typings.std.stdStrings.left = this.cast("left")
+  def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
   @scala.inline
-  def right: typings.std.stdStrings.right = this.cast("right")
-  @scala.inline
-  def user: typings.std.stdStrings.user = this.cast("user")
+  def user: typings.std.stdStrings.user = "user".asInstanceOf[typings.std.stdStrings.user]
 }
 

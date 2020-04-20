@@ -14,7 +14,6 @@ object ProofSelection {
   @scala.inline
   def apply(attributes: StringDictionary[AttributeChoice], predicates: StringDictionary[PredicateChoice]): ProofSelection = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], predicates = predicates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProofSelection]
   }
 }

@@ -15,7 +15,6 @@ object Path {
   @scala.inline
   def apply(attrs: AnonD, elem: path): Path = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], elem = elem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Path]
   }
 }

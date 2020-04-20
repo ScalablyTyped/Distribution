@@ -56,48 +56,48 @@ class Layout protected () extends FormBase {
   var model_FLayout: IModel = js.native
   def acceptButtonPlaceholder(): js.Any = js.native
   def acceptButtonPlaceholder(newValue: ILayoutParameter): js.Any = js.native
-  def acceptButtonPlaceholderQualifiedName(): String | Null = js.native
+  def acceptButtonPlaceholderQualifiedName: String | Null = js.native
   /**
     * In version 6.8.0: deleted
     */
   @JSName("acceptButtonPlaceholder")
-  def acceptButtonPlaceholder_Union(): ILayoutParameter | Null = js.native
+  def acceptButtonPlaceholder_Union: ILayoutParameter | Null = js.native
   /**
     * In version 7.9.0: deleted
     * In version 6.8.0: introduced
     */
-  def acceptPlaceholderName(): String = js.native
+  def acceptPlaceholderName: String = js.native
   def acceptPlaceholderName(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def appearance(): Appearance = js.native
+  def appearance: Appearance = js.native
   def appearance(newValue: Appearance): js.Any = js.native
   def cancelButtonPlaceholder(): js.Any = js.native
   def cancelButtonPlaceholder(newValue: ILayoutParameter): js.Any = js.native
-  def cancelButtonPlaceholderQualifiedName(): String | Null = js.native
+  def cancelButtonPlaceholderQualifiedName: String | Null = js.native
   /**
     * In version 6.8.0: deleted
     */
   @JSName("cancelButtonPlaceholder")
-  def cancelButtonPlaceholder_Union(): ILayoutParameter | Null = js.native
+  def cancelButtonPlaceholder_Union: ILayoutParameter | Null = js.native
   /**
     * In version 7.9.0: deleted
     * In version 6.8.0: introduced
     */
-  def cancelPlaceholderName(): String = js.native
+  def cancelPlaceholderName: String = js.native
   def cancelPlaceholderName(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def `class`(): String = js.native
+  def `class`: String = js.native
   def `class`(newValue: String): js.Any = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MLayout(): FolderBase = js.native
+  def containerAsFolderBase_MLayout: FolderBase = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def content(): LayoutContent = js.native
+  def content: LayoutContent = js.native
   def content(newValue: LayoutContent): js.Any = js.native
   def layoutCall(): js.Any = js.native
   def layoutCall(newValue: LayoutCall): js.Any = js.native
@@ -107,12 +107,12 @@ class Layout protected () extends FormBase {
     * In version 6.8.0: added optional
     */
   @JSName("layoutCall")
-  def layoutCall_Union(): LayoutCall | Null = js.native
+  def layoutCall_Union: LayoutCall | Null = js.native
   /**
     * In version 8.0.0: deleted
     * In version 6.8.0: added public
     */
-  def layoutType(): LayoutType = js.native
+  def layoutType: LayoutType = js.native
   def layoutType(newValue: LayoutType): js.Any = js.native
   def mainPlaceholder(): js.Any = js.native
   def mainPlaceholder(newValue: ILayoutParameter): js.Any = js.native
@@ -120,23 +120,23 @@ class Layout protected () extends FormBase {
     * In version 7.9.0: deleted
     * In version 6.8.0: introduced
     */
-  def mainPlaceholderName(): String = js.native
+  def mainPlaceholderName: String = js.native
   def mainPlaceholderName(newValue: String): js.Any = js.native
-  def mainPlaceholderQualifiedName(): String | Null = js.native
+  def mainPlaceholderQualifiedName: String | Null = js.native
   /**
     * In version 6.8.0: deleted
     */
   @JSName("mainPlaceholder")
-  def mainPlaceholder_Union(): ILayoutParameter | Null = js.native
+  def mainPlaceholder_Union: ILayoutParameter | Null = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def style(): String = js.native
+  def style: String = js.native
   def style(newValue: String): js.Any = js.native
   /**
     * In version 7.9.0: deleted
     */
-  def useMainPlaceholderForPopups(): Boolean = js.native
+  def useMainPlaceholderForPopups: Boolean = js.native
   def useMainPlaceholderForPopups(newValue: Boolean): js.Any = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
@@ -144,12 +144,12 @@ class Layout protected () extends FormBase {
     * In version 7.15.0: deleted
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
   /**
     * In version 8.0.0: deleted
     * In version 7.15.0: introduced
     */
-  def widgets(): IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

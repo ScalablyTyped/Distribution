@@ -13,7 +13,6 @@ object IndexTime {
   @scala.inline
   def apply(nanoseconds: Double, seconds: Double): IndexTime = {
     val __obj = js.Dynamic.literal(nanoseconds = nanoseconds.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IndexTime]
   }
 }

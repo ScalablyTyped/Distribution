@@ -16,18 +16,16 @@ trait HTTPArgumentType extends js.Object
 
 object HTTPArgumentType {
   @scala.inline
-  def array: typings.wpapi.wpapiStrings.array = this.cast("array")
+  def array: typings.wpapi.wpapiStrings.array = "array".asInstanceOf[typings.wpapi.wpapiStrings.array]
   @scala.inline
-  def boolean: typings.wpapi.wpapiStrings.boolean = this.cast("boolean")
+  def boolean: typings.wpapi.wpapiStrings.boolean = "boolean".asInstanceOf[typings.wpapi.wpapiStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def integer: typings.wpapi.wpapiStrings.integer = "integer".asInstanceOf[typings.wpapi.wpapiStrings.integer]
   @scala.inline
-  def integer: typings.wpapi.wpapiStrings.integer = this.cast("integer")
+  def number: typings.wpapi.wpapiStrings.number = "number".asInstanceOf[typings.wpapi.wpapiStrings.number]
   @scala.inline
-  def number: typings.wpapi.wpapiStrings.number = this.cast("number")
+  def `object`: typings.wpapi.wpapiStrings.`object` = "object".asInstanceOf[typings.wpapi.wpapiStrings.`object`]
   @scala.inline
-  def `object`: typings.wpapi.wpapiStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.wpapi.wpapiStrings.string = this.cast("string")
+  def string: typings.wpapi.wpapiStrings.string = "string".asInstanceOf[typings.wpapi.wpapiStrings.string]
 }
 

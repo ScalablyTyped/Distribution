@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 /**
 		 * The Titanium binding of an Android Options Menu.
 		 */
+@JSGlobal("Titanium.Android.Menu")
 @js.native
-trait Menu extends Proxy {
+class Menu () extends Proxy {
   /**
   			 * Array of menu items in this menu.
   			 */
@@ -30,9 +31,6 @@ trait Menu extends Proxy {
   			 * Locates a [MenuItem](Titanium.Android.MenuItem) in this menu, by item ID or reference.
   			 */
   def findItem(item: Double): MenuItem = js.native
-  /**
-  			 * Locates a [MenuItem](Titanium.Android.MenuItem) in this menu, by item ID or reference.
-  			 */
   def findItem(item: MenuItem): MenuItem = js.native
   /**
   			 * Returns the [MenuItem](Titanium.Android.MenuItem) at a specific index.
@@ -40,6 +38,7 @@ trait Menu extends Proxy {
   def getItem(index: Double): MenuItem = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Menu.items> property.
+  			 * @deprecated Access <Titanium.Android.Menu.items> instead.
   			 */
   def getItems(): js.Array[MenuItem] = js.native
   /**

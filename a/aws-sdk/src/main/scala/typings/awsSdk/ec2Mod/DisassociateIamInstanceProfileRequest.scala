@@ -16,7 +16,6 @@ object DisassociateIamInstanceProfileRequest {
   @scala.inline
   def apply(AssociationId: IamInstanceProfileAssociationId): DisassociateIamInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateIamInstanceProfileRequest]
   }
 }

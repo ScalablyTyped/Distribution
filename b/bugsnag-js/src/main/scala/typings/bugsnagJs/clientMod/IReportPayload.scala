@@ -15,7 +15,6 @@ object IReportPayload {
   @scala.inline
   def apply(apiKey: String, events: js.Array[typings.bugsnagJs.reportMod.default], notifier: AnonName): IReportPayload = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], notifier = notifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IReportPayload]
   }
 }

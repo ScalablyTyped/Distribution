@@ -20,7 +20,6 @@ object RecoveryOptionType {
   @scala.inline
   def apply(Name: RecoveryOptionNameType, Priority: PriorityType): RecoveryOptionType = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecoveryOptionType]
   }
 }

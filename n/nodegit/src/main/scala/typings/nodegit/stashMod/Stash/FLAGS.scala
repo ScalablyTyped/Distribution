@@ -18,14 +18,12 @@ trait FLAGS extends js.Object
 
 object FLAGS {
   @scala.inline
-  def DEFAULT: `0` = this.cast(0)
+  def DEFAULT: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def INCLUDE_IGNORED: `4` = this.cast(4)
+  def INCLUDE_IGNORED: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def INCLUDE_UNTRACKED: `2` = this.cast(2)
+  def INCLUDE_UNTRACKED: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def KEEP_INDEX: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def KEEP_INDEX: `1` = 1.asInstanceOf[`1`]
 }
 

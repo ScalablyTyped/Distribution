@@ -14,7 +14,6 @@ object BaseWebhookNotification {
   @scala.inline
   def apply(kind: WebhookNotificationKind, timestamp: Date): BaseWebhookNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseWebhookNotification]
   }
 }

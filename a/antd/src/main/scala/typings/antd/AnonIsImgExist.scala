@@ -14,7 +14,6 @@ object AnonIsImgExist {
   @scala.inline
   def apply(isImgExist: Boolean, mounted: Boolean, scale: Double): AnonIsImgExist = {
     val __obj = js.Dynamic.literal(isImgExist = isImgExist.asInstanceOf[js.Any], mounted = mounted.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsImgExist]
   }
 }

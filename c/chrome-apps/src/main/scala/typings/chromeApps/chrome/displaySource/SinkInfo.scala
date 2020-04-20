@@ -3,9 +3,12 @@ package typings.chromeApps.chrome.displaySource
 import typings.chromeApps.AnonCONNECTED
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
-import typings.chromeApps.chromeAppsStrings.Connected
-import typings.chromeApps.chromeAppsStrings.Connecting
-import typings.chromeApps.chromeAppsStrings.Disconnected
+import typings.chromeApps.chromeAppsStrings.CONNECTED
+import typings.chromeApps.chromeAppsStrings.CONNECTING
+import typings.chromeApps.chromeAppsStrings.Connected_
+import typings.chromeApps.chromeAppsStrings.Connecting_
+import typings.chromeApps.chromeAppsStrings.DISCONNECTED
+import typings.chromeApps.chromeAppsStrings.Disconnected_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +23,11 @@ trait SinkInfo extends js.Object {
     * State of the sink.
     * @see SinkState
     */
-  var state: ToStringLiteral[AnonCONNECTED, String, Exclude[String, Connected | Connecting | Disconnected]]
+  var state: ToStringLiteral[
+    AnonCONNECTED, 
+    CONNECTED | CONNECTING | DISCONNECTED, 
+    Exclude[CONNECTED | CONNECTING | DISCONNECTED, Connected_ | Connecting_ | Disconnected_]
+  ]
 }
 
 object SinkInfo {
@@ -28,10 +35,13 @@ object SinkInfo {
   def apply(
     id: integer,
     name: String,
-    state: ToStringLiteral[AnonCONNECTED, String, Exclude[String, Connected | Connecting | Disconnected]]
+    state: ToStringLiteral[
+      AnonCONNECTED, 
+      CONNECTED | CONNECTING | DISCONNECTED, 
+      Exclude[CONNECTED | CONNECTING | DISCONNECTED, Connected_ | Connecting_ | Disconnected_]
+    ]
   ): SinkInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SinkInfo]
   }
 }

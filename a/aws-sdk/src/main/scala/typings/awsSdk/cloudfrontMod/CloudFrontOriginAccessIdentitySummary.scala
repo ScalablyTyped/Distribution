@@ -24,7 +24,6 @@ object CloudFrontOriginAccessIdentitySummary {
   @scala.inline
   def apply(Comment: String, Id: String, S3CanonicalUserId: String): CloudFrontOriginAccessIdentitySummary = {
     val __obj = js.Dynamic.literal(Comment = Comment.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], S3CanonicalUserId = S3CanonicalUserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudFrontOriginAccessIdentitySummary]
   }
 }

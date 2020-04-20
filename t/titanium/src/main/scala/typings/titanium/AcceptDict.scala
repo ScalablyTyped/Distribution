@@ -11,7 +11,7 @@ trait AcceptDict extends js.Object {
   /**
   	 * Callback to be fired when the socket enters the [ERROR](Titanium.Network.Socket.ERROR) state.
   	 */
-  var error: js.UndefOr[js.Function1[/* param0 */ ErrorCallbackArgs, _]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* param0 */ ErrorCallbackArgs, Unit]] = js.undefined
   /**
   	 * Timeout, in milliseconds, for all `write` operations.
   	 */
@@ -20,7 +20,7 @@ trait AcceptDict extends js.Object {
 
 object AcceptDict {
   @scala.inline
-  def apply(error: /* param0 */ ErrorCallbackArgs => _ = null, timeout: Int | Double = null): AcceptDict = {
+  def apply(error: /* param0 */ ErrorCallbackArgs => Unit = null, timeout: Int | Double = null): AcceptDict = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

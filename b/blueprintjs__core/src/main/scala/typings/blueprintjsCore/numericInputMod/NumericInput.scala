@@ -30,7 +30,6 @@ class NumericInput ()
   var inputElement: js.Any = js.native
   var inputRef: js.Any = js.native
   var intervalId: js.Any = js.native
-  var invokeValueCallback: js.Any = js.native
   var renderButtons: js.Any = js.native
   var renderInput: js.Any = js.native
   var startContinuousChange: js.Any = js.native

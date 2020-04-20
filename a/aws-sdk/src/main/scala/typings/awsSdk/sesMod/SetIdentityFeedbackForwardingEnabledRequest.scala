@@ -20,7 +20,6 @@ object SetIdentityFeedbackForwardingEnabledRequest {
   @scala.inline
   def apply(ForwardingEnabled: Enabled, Identity: Identity): SetIdentityFeedbackForwardingEnabledRequest = {
     val __obj = js.Dynamic.literal(ForwardingEnabled = ForwardingEnabled.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetIdentityFeedbackForwardingEnabledRequest]
   }
 }

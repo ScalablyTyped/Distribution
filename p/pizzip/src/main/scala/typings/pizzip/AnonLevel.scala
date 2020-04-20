@@ -21,7 +21,6 @@ object AnonLevel {
   @scala.inline
   def apply(level: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): AnonLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLevel]
   }
 }

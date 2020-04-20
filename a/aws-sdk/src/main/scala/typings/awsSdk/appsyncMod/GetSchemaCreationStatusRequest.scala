@@ -16,7 +16,6 @@ object GetSchemaCreationStatusRequest {
   @scala.inline
   def apply(apiId: String): GetSchemaCreationStatusRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSchemaCreationStatusRequest]
   }
 }

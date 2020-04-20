@@ -25,7 +25,6 @@ object DeveloperMetadataLocation {
     getSpreadsheet: () => typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet | Null
   ): DeveloperMetadataLocation = {
     val __obj = js.Dynamic.literal(getColumn = js.Any.fromFunction0(getColumn), getLocationType = js.Any.fromFunction0(getLocationType), getRow = js.Any.fromFunction0(getRow), getSheet = js.Any.fromFunction0(getSheet), getSpreadsheet = js.Any.fromFunction0(getSpreadsheet))
-  
     __obj.asInstanceOf[DeveloperMetadataLocation]
   }
 }

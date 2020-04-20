@@ -1,5 +1,6 @@
 package typings.antd.mentionsMod
 
+import typings.rcMentions.mentionsMod.Direction
 import typings.rcMentions.mentionsMod.MentionsProps
 import typings.rcMentions.mentionsMod.Placement
 import typings.rcMentions.rcMentionsBooleans.`false`
@@ -149,6 +150,7 @@ object MentionProps {
     defaultValue: String = null,
     dir: String = null,
     dirName: String = null,
+    direction: Direction = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     filterOption: `false` | (js.Function2[/* input */ String, /* hasValue */ typings.rcMentions.optionMod.OptionProps, Boolean]) = null,
@@ -348,6 +350,7 @@ object MentionProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (dirName != null) __obj.updateDynamic("dirName")(dirName.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])

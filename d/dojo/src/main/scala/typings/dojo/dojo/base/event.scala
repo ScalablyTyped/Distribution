@@ -35,7 +35,6 @@ object event {
   @scala.inline
   def apply(fix: (Event_, HTMLElement) => Event_, stop: Event_ => Unit): event = {
     val __obj = js.Dynamic.literal(fix = js.Any.fromFunction2(fix), stop = js.Any.fromFunction1(stop))
-  
     __obj.asInstanceOf[event]
   }
 }

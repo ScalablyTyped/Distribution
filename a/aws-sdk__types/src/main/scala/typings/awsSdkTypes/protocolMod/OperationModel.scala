@@ -24,7 +24,6 @@ object OperationModel {
     output: Member
   ): OperationModel = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OperationModel]
   }
 }

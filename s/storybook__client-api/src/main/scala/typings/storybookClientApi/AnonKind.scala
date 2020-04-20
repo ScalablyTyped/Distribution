@@ -18,7 +18,6 @@ object AnonKind {
   @scala.inline
   def apply(kind: String, name: String, parameters: Parameters, storyFn: /* p */ js.UndefOr[StoryContext] => _): AnonKind = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], storyFn = js.Any.fromFunction1(storyFn))
-  
     __obj.asInstanceOf[AnonKind]
   }
 }

@@ -108,11 +108,11 @@ object webgmeStrings {
   @scala.inline
   def ZSSHA: ZSSHA = "ZSSHA".asInstanceOf[ZSSHA]
   @scala.inline
-  def `aspect collision`: `aspect collision` = "aspect collision".asInstanceOf[`aspect collision`]
+  def `aspect collision`: `aspect collision` = ("aspect collision").asInstanceOf[`aspect collision`]
   @scala.inline
   def asset: asset = "asset".asInstanceOf[asset]
   @scala.inline
-  def `attribute collision`: `attribute collision` = "attribute collision".asInstanceOf[`attribute collision`]
+  def `attribute collision`: `attribute collision` = ("attribute collision").asInstanceOf[`attribute collision`]
   @scala.inline
   def basic: basic = "basic".asInstanceOf[basic]
   @scala.inline
@@ -124,9 +124,9 @@ object webgmeStrings {
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   @scala.inline
-  def `constraint collision`: `constraint collision` = "constraint collision".asInstanceOf[`constraint collision`]
+  def `constraint collision`: `constraint collision` = ("constraint collision").asInstanceOf[`constraint collision`]
   @scala.inline
-  def `containment collision`: `containment collision` = "containment collision".asInstanceOf[`containment collision`]
+  def `containment collision`: `containment collision` = ("containment collision").asInstanceOf[`containment collision`]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -146,13 +146,13 @@ object webgmeStrings {
   @scala.inline
   def plainSHA1: plainSHA1 = "plainSHA1".asInstanceOf[plainSHA1]
   @scala.inline
-  def `pointer collision`: `pointer collision` = "pointer collision".asInstanceOf[`pointer collision`]
+  def `pointer collision`: `pointer collision` = ("pointer collision").asInstanceOf[`pointer collision`]
   @scala.inline
   def rand160Bits: rand160Bits = "rand160Bits".asInstanceOf[rand160Bits]
   @scala.inline
   def redis: redis = "redis".asInstanceOf[redis]
   @scala.inline
-  def `set collision`: `set collision` = "set collision".asInstanceOf[`set collision`]
+  def `set collision`: `set collision` = ("set collision").asInstanceOf[`set collision`]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline

@@ -36,32 +36,30 @@ trait ErrorCode extends js.Object
 
 object ErrorCode {
   @scala.inline
-  def FETCH_NETWORK: `fetch-client-network` = this.cast("fetch-client-network")
+  def FETCH_NETWORK: `fetch-client-network` = "fetch-client-network".asInstanceOf[`fetch-client-network`]
   @scala.inline
-  def FETCH_PARSE: `fetch-client-parse` = this.cast("fetch-client-parse")
+  def FETCH_PARSE: `fetch-client-parse` = "fetch-client-parse".asInstanceOf[`fetch-client-parse`]
   @scala.inline
-  def FETCH_STATUS: `fetch-status` = this.cast("fetch-status")
+  def FETCH_STATUS: `fetch-status` = "fetch-status".asInstanceOf[`fetch-status`]
   @scala.inline
-  def FETCH_THROTTLE: `fetch-throttle` = this.cast("fetch-throttle")
+  def FETCH_THROTTLE: `fetch-throttle` = "fetch-throttle".asInstanceOf[`fetch-throttle`]
   @scala.inline
-  def FETCH_TIMEOUT: `fetch-timeout` = this.cast("fetch-timeout")
+  def FETCH_TIMEOUT: `fetch-timeout` = "fetch-timeout".asInstanceOf[`fetch-timeout`]
   @scala.inline
-  def REGISTRATION_API_KEY: `registration-api-key` = this.cast("registration-api-key")
+  def REGISTRATION_API_KEY: `registration-api-key` = "registration-api-key".asInstanceOf[`registration-api-key`]
   @scala.inline
-  def REGISTRATION_APP_ID: `registration-app-id` = this.cast("registration-app-id")
+  def REGISTRATION_APP_ID: `registration-app-id` = "registration-app-id".asInstanceOf[`registration-app-id`]
   @scala.inline
-  def REGISTRATION_PROJECT_ID: `registration-project-id` = this.cast("registration-project-id")
+  def REGISTRATION_PROJECT_ID: `registration-project-id` = "registration-project-id".asInstanceOf[`registration-project-id`]
   @scala.inline
-  def REGISTRATION_WINDOW: `registration-window` = this.cast("registration-window")
+  def REGISTRATION_WINDOW: `registration-window` = "registration-window".asInstanceOf[`registration-window`]
   @scala.inline
-  def STORAGE_DELETE: `storage-delete` = this.cast("storage-delete")
+  def STORAGE_DELETE: `storage-delete` = "storage-delete".asInstanceOf[`storage-delete`]
   @scala.inline
-  def STORAGE_GET: `storage-get` = this.cast("storage-get")
+  def STORAGE_GET: `storage-get` = "storage-get".asInstanceOf[`storage-get`]
   @scala.inline
-  def STORAGE_OPEN: `storage-open` = this.cast("storage-open")
+  def STORAGE_OPEN: `storage-open` = "storage-open".asInstanceOf[`storage-open`]
   @scala.inline
-  def STORAGE_SET: `storage-set` = this.cast("storage-set")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STORAGE_SET: `storage-set` = "storage-set".asInstanceOf[`storage-set`]
 }
 

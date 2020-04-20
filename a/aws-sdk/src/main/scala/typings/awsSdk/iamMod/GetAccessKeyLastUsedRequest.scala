@@ -16,7 +16,6 @@ object GetAccessKeyLastUsedRequest {
   @scala.inline
   def apply(AccessKeyId: accessKeyIdType): GetAccessKeyLastUsedRequest = {
     val __obj = js.Dynamic.literal(AccessKeyId = AccessKeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAccessKeyLastUsedRequest]
   }
 }

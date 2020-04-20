@@ -15,7 +15,6 @@ object AnonBuffer {
   @scala.inline
   def apply(buffer: Buffer, client: IgApiClient): AnonBuffer = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBuffer]
   }
 }

@@ -12,7 +12,6 @@ object IUiGridImporterConstants {
   @scala.inline
   def apply(featureName: String): IUiGridImporterConstants = {
     val __obj = js.Dynamic.literal(featureName = featureName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUiGridImporterConstants]
   }
 }

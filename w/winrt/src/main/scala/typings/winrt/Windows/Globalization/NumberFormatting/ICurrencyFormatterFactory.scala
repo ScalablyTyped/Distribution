@@ -17,7 +17,6 @@ object ICurrencyFormatterFactory {
     createCurrencyFormatterCodeContext: (String, IIterable[String], String) => CurrencyFormatter
   ): ICurrencyFormatterFactory = {
     val __obj = js.Dynamic.literal(createCurrencyFormatterCode = js.Any.fromFunction1(createCurrencyFormatterCode), createCurrencyFormatterCodeContext = js.Any.fromFunction3(createCurrencyFormatterCodeContext))
-  
     __obj.asInstanceOf[ICurrencyFormatterFactory]
   }
 }

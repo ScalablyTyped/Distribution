@@ -17,20 +17,18 @@ trait SvgElements extends js.Object
 
 object SvgElements {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.svgIntersections.svgIntersectionsStrings.circle = "circle".asInstanceOf[typings.svgIntersections.svgIntersectionsStrings.circle]
   @scala.inline
-  def circle: typings.svgIntersections.svgIntersectionsStrings.circle = this.cast("circle")
+  def ellipse: typings.svgIntersections.svgIntersectionsStrings.ellipse = "ellipse".asInstanceOf[typings.svgIntersections.svgIntersectionsStrings.ellipse]
   @scala.inline
-  def ellipse: typings.svgIntersections.svgIntersectionsStrings.ellipse = this.cast("ellipse")
+  def line: typings.svgIntersections.svgIntersectionsStrings.line = "line".asInstanceOf[typings.svgIntersections.svgIntersectionsStrings.line]
   @scala.inline
-  def line: typings.svgIntersections.svgIntersectionsStrings.line = this.cast("line")
+  def path: typings.svgIntersections.svgIntersectionsStrings.path = "path".asInstanceOf[typings.svgIntersections.svgIntersectionsStrings.path]
   @scala.inline
-  def path: typings.svgIntersections.svgIntersectionsStrings.path = this.cast("path")
+  def polygon: typings.svgIntersections.svgIntersectionsStrings.polygon = "polygon".asInstanceOf[typings.svgIntersections.svgIntersectionsStrings.polygon]
   @scala.inline
-  def polygon: typings.svgIntersections.svgIntersectionsStrings.polygon = this.cast("polygon")
+  def polyline: typings.svgIntersections.svgIntersectionsStrings.polyline = "polyline".asInstanceOf[typings.svgIntersections.svgIntersectionsStrings.polyline]
   @scala.inline
-  def polyline: typings.svgIntersections.svgIntersectionsStrings.polyline = this.cast("polyline")
-  @scala.inline
-  def rect: typings.svgIntersections.svgIntersectionsStrings.rect = this.cast("rect")
+  def rect: typings.svgIntersections.svgIntersectionsStrings.rect = "rect".asInstanceOf[typings.svgIntersections.svgIntersectionsStrings.rect]
 }
 

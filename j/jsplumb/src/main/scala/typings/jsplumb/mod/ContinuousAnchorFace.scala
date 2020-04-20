@@ -18,14 +18,12 @@ trait ContinuousAnchorFace extends js.Object
 
 object ContinuousAnchorFace {
   @scala.inline
-  def bottom: bottom_ = this.cast("bottom")
+  def bottom: bottom_ = "bottom".asInstanceOf[bottom_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: left_ = "left".asInstanceOf[left_]
   @scala.inline
-  def left: left_ = this.cast("left")
+  def right: right_ = "right".asInstanceOf[right_]
   @scala.inline
-  def right: right_ = this.cast("right")
-  @scala.inline
-  def top: top_ = this.cast("top")
+  def top: top_ = "top".asInstanceOf[top_]
 }
 

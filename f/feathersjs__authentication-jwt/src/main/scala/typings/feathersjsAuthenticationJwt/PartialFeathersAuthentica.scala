@@ -3,6 +3,7 @@ package typings.feathersjsAuthenticationJwt
 import org.scalablytyped.runtime.Instantiable2
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.feathersjsAuthenticationJwt.mod.JwtFromRequestFunction
 import typings.feathersjsAuthenticationJwt.mod.Verifier
 import typings.feathersjsFeathers.mod.Application
@@ -33,7 +34,7 @@ object PartialFeathersAuthentica {
   def apply(
     Verifier: Instantiable2[/* app */ Application[js.Object], /* options */ js.Any, Verifier] = null,
     entity: String = null,
-    jwtFromRequest: /* req */ Request_[ParamsDictionary] => String | Null = null,
+    jwtFromRequest: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String | Null = null,
     name: String = null,
     passReqToCallback: js.UndefOr[Boolean] = js.undefined,
     secretOrKey: String = null,

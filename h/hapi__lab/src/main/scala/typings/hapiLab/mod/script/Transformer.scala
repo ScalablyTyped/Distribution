@@ -13,7 +13,6 @@ object Transformer {
   @scala.inline
   def apply(ext: String, transform: (String, String) => String): Transformer = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], transform = js.Any.fromFunction2(transform))
-  
     __obj.asInstanceOf[Transformer]
   }
 }

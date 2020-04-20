@@ -16,7 +16,6 @@ object CheckDNSAvailabilityMessage {
   @scala.inline
   def apply(CNAMEPrefix: DNSCnamePrefix): CheckDNSAvailabilityMessage = {
     val __obj = js.Dynamic.literal(CNAMEPrefix = CNAMEPrefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckDNSAvailabilityMessage]
   }
 }

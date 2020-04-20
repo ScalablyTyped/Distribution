@@ -16,7 +16,6 @@ object VictoryThemeInterface {
   @scala.inline
   def apply(grayscale: VictoryThemeDefinition, material: VictoryThemeDefinition): VictoryThemeInterface = {
     val __obj = js.Dynamic.literal(grayscale = grayscale.asInstanceOf[js.Any], material = material.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VictoryThemeInterface]
   }
 }

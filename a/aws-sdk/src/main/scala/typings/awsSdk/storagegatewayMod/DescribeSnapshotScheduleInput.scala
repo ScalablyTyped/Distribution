@@ -16,7 +16,6 @@ object DescribeSnapshotScheduleInput {
   @scala.inline
   def apply(VolumeARN: VolumeARN): DescribeSnapshotScheduleInput = {
     val __obj = js.Dynamic.literal(VolumeARN = VolumeARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSnapshotScheduleInput]
   }
 }

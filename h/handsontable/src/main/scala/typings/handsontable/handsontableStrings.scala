@@ -87,6 +87,240 @@ object handsontableStrings {
   sealed trait after extends js.Object
   
   @js.native
+  sealed trait afterAddChild extends js.Object
+  
+  @js.native
+  sealed trait afterBeginEditing extends js.Object
+  
+  @js.native
+  sealed trait afterCellMetaReset extends js.Object
+  
+  @js.native
+  sealed trait afterChange extends js.Object
+  
+  @js.native
+  sealed trait afterChangesObserved extends js.Object
+  
+  @js.native
+  sealed trait afterColumnMove extends js.Object
+  
+  @js.native
+  sealed trait afterColumnResize extends js.Object
+  
+  @js.native
+  sealed trait afterColumnSort extends js.Object
+  
+  @js.native
+  sealed trait afterContextMenuDefaultOptions extends js.Object
+  
+  @js.native
+  sealed trait afterContextMenuHide extends js.Object
+  
+  @js.native
+  sealed trait afterContextMenuShow extends js.Object
+  
+  @js.native
+  sealed trait afterCopy extends js.Object
+  
+  @js.native
+  sealed trait afterCopyLimit extends js.Object
+  
+  @js.native
+  sealed trait afterCreateCol extends js.Object
+  
+  @js.native
+  sealed trait afterCreateRow extends js.Object
+  
+  @js.native
+  sealed trait afterCut extends js.Object
+  
+  @js.native
+  sealed trait afterDeselect extends js.Object
+  
+  @js.native
+  sealed trait afterDestroy extends js.Object
+  
+  @js.native
+  sealed trait afterDetachChild extends js.Object
+  
+  @js.native
+  sealed trait afterDocumentKeyDown extends js.Object
+  
+  @js.native
+  sealed trait afterDrawSelection extends js.Object
+  
+  @js.native
+  sealed trait afterDropdownMenuDefaultOptions extends js.Object
+  
+  @js.native
+  sealed trait afterDropdownMenuHide extends js.Object
+  
+  @js.native
+  sealed trait afterDropdownMenuShow extends js.Object
+  
+  @js.native
+  sealed trait afterFilter extends js.Object
+  
+  @js.native
+  sealed trait afterGetCellMeta extends js.Object
+  
+  @js.native
+  sealed trait afterGetColHeader extends js.Object
+  
+  @js.native
+  sealed trait afterGetColumnHeaderRenderers extends js.Object
+  
+  @js.native
+  sealed trait afterGetRowHeader extends js.Object
+  
+  @js.native
+  sealed trait afterGetRowHeaderRenderers extends js.Object
+  
+  @js.native
+  sealed trait afterHideColumns extends js.Object
+  
+  @js.native
+  sealed trait afterHideRows extends js.Object
+  
+  @js.native
+  sealed trait afterInit extends js.Object
+  
+  @js.native
+  sealed trait afterLanguageChange extends js.Object
+  
+  @js.native
+  sealed trait afterListen extends js.Object
+  
+  @js.native
+  sealed trait afterLoadData extends js.Object
+  
+  @js.native
+  sealed trait afterMergeCells extends js.Object
+  
+  @js.native
+  sealed trait afterModifyTransformEnd extends js.Object
+  
+  @js.native
+  sealed trait afterModifyTransformStart extends js.Object
+  
+  @js.native
+  sealed trait afterMomentumScroll extends js.Object
+  
+  @js.native
+  sealed trait afterOnCellContextMenu extends js.Object
+  
+  @js.native
+  sealed trait afterOnCellCornerDblClick extends js.Object
+  
+  @js.native
+  sealed trait afterOnCellCornerMouseDown extends js.Object
+  
+  @js.native
+  sealed trait afterOnCellMouseDown extends js.Object
+  
+  @js.native
+  sealed trait afterOnCellMouseOut extends js.Object
+  
+  @js.native
+  sealed trait afterOnCellMouseOver extends js.Object
+  
+  @js.native
+  sealed trait afterOnCellMouseUp extends js.Object
+  
+  @js.native
+  sealed trait afterPaste extends js.Object
+  
+  @js.native
+  sealed trait afterPluginsInitialized extends js.Object
+  
+  @js.native
+  sealed trait afterRedo extends js.Object
+  
+  @js.native
+  sealed trait afterRefreshDimensions extends js.Object
+  
+  @js.native
+  sealed trait afterRemoveCellMeta extends js.Object
+  
+  @js.native
+  sealed trait afterRemoveCol extends js.Object
+  
+  @js.native
+  sealed trait afterRemoveRow extends js.Object
+  
+  @js.native
+  sealed trait afterRender extends js.Object
+  
+  @js.native
+  sealed trait afterRenderer extends js.Object
+  
+  @js.native
+  sealed trait afterRowMove extends js.Object
+  
+  @js.native
+  sealed trait afterRowResize extends js.Object
+  
+  @js.native
+  sealed trait afterScrollHorizontally extends js.Object
+  
+  @js.native
+  sealed trait afterScrollVertically extends js.Object
+  
+  @js.native
+  sealed trait afterSelection extends js.Object
+  
+  @js.native
+  sealed trait afterSelectionByProp extends js.Object
+  
+  @js.native
+  sealed trait afterSelectionEnd extends js.Object
+  
+  @js.native
+  sealed trait afterSelectionEndByProp extends js.Object
+  
+  @js.native
+  sealed trait afterSetCellMeta extends js.Object
+  
+  @js.native
+  sealed trait afterSetDataAtCell extends js.Object
+  
+  @js.native
+  sealed trait afterSetDataAtRowProp extends js.Object
+  
+  @js.native
+  sealed trait afterTrimRow extends js.Object
+  
+  @js.native
+  sealed trait afterUndo extends js.Object
+  
+  @js.native
+  sealed trait afterUnhideColumns extends js.Object
+  
+  @js.native
+  sealed trait afterUnhideRows extends js.Object
+  
+  @js.native
+  sealed trait afterUnlisten extends js.Object
+  
+  @js.native
+  sealed trait afterUnmergeCells extends js.Object
+  
+  @js.native
+  sealed trait afterUntrimRow extends js.Object
+  
+  @js.native
+  sealed trait afterUpdateSettings extends js.Object
+  
+  @js.native
+  sealed trait afterValidate extends js.Object
+  
+  @js.native
+  sealed trait afterViewportColumnCalculatorOverride extends js.Object
+  
+  @js.native
+  sealed trait afterViewportRowCalculatorOverride extends js.Object
+  
+  @js.native
   sealed trait alignment extends PredefinedMenuItemKey
   
   @js.native
@@ -125,6 +359,177 @@ object handsontableStrings {
   
   @js.native
   sealed trait before extends js.Object
+  
+  @js.native
+  sealed trait beforeAddChild extends js.Object
+  
+  @js.native
+  sealed trait beforeAutofill extends js.Object
+  
+  @js.native
+  sealed trait beforeAutofillInsidePopulate extends js.Object
+  
+  @js.native
+  sealed trait beforeCellAlignment extends js.Object
+  
+  @js.native
+  sealed trait beforeChange extends js.Object
+  
+  @js.native
+  sealed trait beforeChangeRender extends js.Object
+  
+  @js.native
+  sealed trait beforeColumnMove extends js.Object
+  
+  @js.native
+  sealed trait beforeColumnResize extends js.Object
+  
+  @js.native
+  sealed trait beforeColumnSort extends js.Object
+  
+  @js.native
+  sealed trait beforeContextMenuSetItems extends js.Object
+  
+  @js.native
+  sealed trait beforeContextMenuShow extends js.Object
+  
+  @js.native
+  sealed trait beforeCopy extends js.Object
+  
+  @js.native
+  sealed trait beforeCreateCol extends js.Object
+  
+  @js.native
+  sealed trait beforeCreateRow extends js.Object
+  
+  @js.native
+  sealed trait beforeCut extends js.Object
+  
+  @js.native
+  sealed trait beforeDetachChild extends js.Object
+  
+  @js.native
+  sealed trait beforeDrawBorders extends js.Object
+  
+  @js.native
+  sealed trait beforeDropdownMenuSetItems extends js.Object
+  
+  @js.native
+  sealed trait beforeDropdownMenuShow extends js.Object
+  
+  @js.native
+  sealed trait beforeFilter extends js.Object
+  
+  @js.native
+  sealed trait beforeGetCellMeta extends js.Object
+  
+  @js.native
+  sealed trait beforeHideColumns extends js.Object
+  
+  @js.native
+  sealed trait beforeHideRows extends js.Object
+  
+  @js.native
+  sealed trait beforeInit extends js.Object
+  
+  @js.native
+  sealed trait beforeInitWalkontable extends js.Object
+  
+  @js.native
+  sealed trait beforeKeyDown extends js.Object
+  
+  @js.native
+  sealed trait beforeLanguageChange extends js.Object
+  
+  @js.native
+  sealed trait beforeMergeCells extends js.Object
+  
+  @js.native
+  sealed trait beforeOnCellContextMenu extends js.Object
+  
+  @js.native
+  sealed trait beforeOnCellMouseDown extends js.Object
+  
+  @js.native
+  sealed trait beforeOnCellMouseOut extends js.Object
+  
+  @js.native
+  sealed trait beforeOnCellMouseOver extends js.Object
+  
+  @js.native
+  sealed trait beforeOnCellMouseUp extends js.Object
+  
+  @js.native
+  sealed trait beforePaste extends js.Object
+  
+  @js.native
+  sealed trait beforeRedo extends js.Object
+  
+  @js.native
+  sealed trait beforeRefreshDimensions extends js.Object
+  
+  @js.native
+  sealed trait beforeRemoveCellClassNames extends js.Object
+  
+  @js.native
+  sealed trait beforeRemoveCellMeta extends js.Object
+  
+  @js.native
+  sealed trait beforeRemoveCol extends js.Object
+  
+  @js.native
+  sealed trait beforeRemoveRow extends js.Object
+  
+  @js.native
+  sealed trait beforeRender extends js.Object
+  
+  @js.native
+  sealed trait beforeRenderer extends js.Object
+  
+  @js.native
+  sealed trait beforeRowMove extends js.Object
+  
+  @js.native
+  sealed trait beforeRowResize extends js.Object
+  
+  @js.native
+  sealed trait beforeSetRangeEnd extends js.Object
+  
+  @js.native
+  sealed trait beforeSetRangeStart extends js.Object
+  
+  @js.native
+  sealed trait beforeSetRangeStartOnly extends js.Object
+  
+  @js.native
+  sealed trait beforeStretchingColumnWidth extends js.Object
+  
+  @js.native
+  sealed trait beforeTouchScroll extends js.Object
+  
+  @js.native
+  sealed trait beforeTrimRow extends js.Object
+  
+  @js.native
+  sealed trait beforeUndo extends js.Object
+  
+  @js.native
+  sealed trait beforeUnhideColumns extends js.Object
+  
+  @js.native
+  sealed trait beforeUnhideRows extends js.Object
+  
+  @js.native
+  sealed trait beforeUnmergeCells extends js.Object
+  
+  @js.native
+  sealed trait beforeUntrimRow extends js.Object
+  
+  @js.native
+  sealed trait beforeValidate extends js.Object
+  
+  @js.native
+  sealed trait beforeValueRender extends js.Object
   
   @js.native
   sealed trait begins_with extends ConditionName
@@ -197,6 +602,9 @@ object handsontableStrings {
   
   @js.native
   sealed trait conjunction extends OperationType
+  
+  @js.native
+  sealed trait construct extends js.Object
   
   @js.native
   sealed trait contains extends ConditionName
@@ -329,7 +737,13 @@ object handsontableStrings {
   sealed trait hidden extends js.Object
   
   @js.native
+  sealed trait hiddenColumn extends js.Object
+  
+  @js.native
   sealed trait hiddenColumns extends js.Object
+  
+  @js.native
+  sealed trait hiddenRow extends js.Object
   
   @js.native
   sealed trait hiddenRows extends js.Object
@@ -375,6 +789,9 @@ object handsontableStrings {
   
   @js.native
   sealed trait html extends RendererType
+  
+  @js.native
+  sealed trait init extends js.Object
   
   @js.native
   sealed trait insert_col extends js.Object
@@ -437,6 +854,54 @@ object handsontableStrings {
   sealed trait mobile extends EditorType
   
   @js.native
+  sealed trait modifyAutofillRange extends js.Object
+  
+  @js.native
+  sealed trait modifyCol extends js.Object
+  
+  @js.native
+  sealed trait modifyColHeader extends js.Object
+  
+  @js.native
+  sealed trait modifyColWidth extends js.Object
+  
+  @js.native
+  sealed trait modifyColumnHeaderHeight extends js.Object
+  
+  @js.native
+  sealed trait modifyCopyableRange extends js.Object
+  
+  @js.native
+  sealed trait modifyData extends js.Object
+  
+  @js.native
+  sealed trait modifyGetCellCoords extends js.Object
+  
+  @js.native
+  sealed trait modifyRow extends js.Object
+  
+  @js.native
+  sealed trait modifyRowData extends js.Object
+  
+  @js.native
+  sealed trait modifyRowHeader extends js.Object
+  
+  @js.native
+  sealed trait modifyRowHeaderWidth extends js.Object
+  
+  @js.native
+  sealed trait modifyRowHeight extends js.Object
+  
+  @js.native
+  sealed trait modifyRowSourceData extends js.Object
+  
+  @js.native
+  sealed trait modifyTransformEnd extends js.Object
+  
+  @js.native
+  sealed trait modifyTransformStart extends js.Object
+  
+  @js.native
   sealed trait monday extends js.Object
   
   @js.native
@@ -494,6 +959,15 @@ object handsontableStrings {
   sealed trait persistentState extends js.Object
   
   @js.native
+  sealed trait persistentStateLoad extends js.Object
+  
+  @js.native
+  sealed trait persistentStateReset extends js.Object
+  
+  @js.native
+  sealed trait persistentStateSave extends js.Object
+  
+  @js.native
   sealed trait populateFromArray extends ChangeSource
   
   @js.native
@@ -534,6 +1008,9 @@ object handsontableStrings {
   
   @js.native
   sealed trait single extends js.Object
+  
+  @js.native
+  sealed trait skipLengthCache extends js.Object
   
   @js.native
   sealed trait skipRowOnPaste extends js.Object
@@ -587,6 +1064,12 @@ object handsontableStrings {
   
   @js.native
   sealed trait unfreeze_column extends PredefinedMenuItemKey
+  
+  @js.native
+  sealed trait unmodifyCol extends js.Object
+  
+  @js.native
+  sealed trait unmodifyRow extends js.Object
   
   @js.native
   sealed trait up extends js.Object
@@ -647,6 +1130,162 @@ object handsontableStrings {
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
+  def afterAddChild: afterAddChild = "afterAddChild".asInstanceOf[afterAddChild]
+  @scala.inline
+  def afterBeginEditing: afterBeginEditing = "afterBeginEditing".asInstanceOf[afterBeginEditing]
+  @scala.inline
+  def afterCellMetaReset: afterCellMetaReset = "afterCellMetaReset".asInstanceOf[afterCellMetaReset]
+  @scala.inline
+  def afterChange: afterChange = "afterChange".asInstanceOf[afterChange]
+  @scala.inline
+  def afterChangesObserved: afterChangesObserved = "afterChangesObserved".asInstanceOf[afterChangesObserved]
+  @scala.inline
+  def afterColumnMove: afterColumnMove = "afterColumnMove".asInstanceOf[afterColumnMove]
+  @scala.inline
+  def afterColumnResize: afterColumnResize = "afterColumnResize".asInstanceOf[afterColumnResize]
+  @scala.inline
+  def afterColumnSort: afterColumnSort = "afterColumnSort".asInstanceOf[afterColumnSort]
+  @scala.inline
+  def afterContextMenuDefaultOptions: afterContextMenuDefaultOptions = "afterContextMenuDefaultOptions".asInstanceOf[afterContextMenuDefaultOptions]
+  @scala.inline
+  def afterContextMenuHide: afterContextMenuHide = "afterContextMenuHide".asInstanceOf[afterContextMenuHide]
+  @scala.inline
+  def afterContextMenuShow: afterContextMenuShow = "afterContextMenuShow".asInstanceOf[afterContextMenuShow]
+  @scala.inline
+  def afterCopy: afterCopy = "afterCopy".asInstanceOf[afterCopy]
+  @scala.inline
+  def afterCopyLimit: afterCopyLimit = "afterCopyLimit".asInstanceOf[afterCopyLimit]
+  @scala.inline
+  def afterCreateCol: afterCreateCol = "afterCreateCol".asInstanceOf[afterCreateCol]
+  @scala.inline
+  def afterCreateRow: afterCreateRow = "afterCreateRow".asInstanceOf[afterCreateRow]
+  @scala.inline
+  def afterCut: afterCut = "afterCut".asInstanceOf[afterCut]
+  @scala.inline
+  def afterDeselect: afterDeselect = "afterDeselect".asInstanceOf[afterDeselect]
+  @scala.inline
+  def afterDestroy: afterDestroy = "afterDestroy".asInstanceOf[afterDestroy]
+  @scala.inline
+  def afterDetachChild: afterDetachChild = "afterDetachChild".asInstanceOf[afterDetachChild]
+  @scala.inline
+  def afterDocumentKeyDown: afterDocumentKeyDown = "afterDocumentKeyDown".asInstanceOf[afterDocumentKeyDown]
+  @scala.inline
+  def afterDrawSelection: afterDrawSelection = "afterDrawSelection".asInstanceOf[afterDrawSelection]
+  @scala.inline
+  def afterDropdownMenuDefaultOptions: afterDropdownMenuDefaultOptions = "afterDropdownMenuDefaultOptions".asInstanceOf[afterDropdownMenuDefaultOptions]
+  @scala.inline
+  def afterDropdownMenuHide: afterDropdownMenuHide = "afterDropdownMenuHide".asInstanceOf[afterDropdownMenuHide]
+  @scala.inline
+  def afterDropdownMenuShow: afterDropdownMenuShow = "afterDropdownMenuShow".asInstanceOf[afterDropdownMenuShow]
+  @scala.inline
+  def afterFilter: afterFilter = "afterFilter".asInstanceOf[afterFilter]
+  @scala.inline
+  def afterGetCellMeta: afterGetCellMeta = "afterGetCellMeta".asInstanceOf[afterGetCellMeta]
+  @scala.inline
+  def afterGetColHeader: afterGetColHeader = "afterGetColHeader".asInstanceOf[afterGetColHeader]
+  @scala.inline
+  def afterGetColumnHeaderRenderers: afterGetColumnHeaderRenderers = "afterGetColumnHeaderRenderers".asInstanceOf[afterGetColumnHeaderRenderers]
+  @scala.inline
+  def afterGetRowHeader: afterGetRowHeader = "afterGetRowHeader".asInstanceOf[afterGetRowHeader]
+  @scala.inline
+  def afterGetRowHeaderRenderers: afterGetRowHeaderRenderers = "afterGetRowHeaderRenderers".asInstanceOf[afterGetRowHeaderRenderers]
+  @scala.inline
+  def afterHideColumns: afterHideColumns = "afterHideColumns".asInstanceOf[afterHideColumns]
+  @scala.inline
+  def afterHideRows: afterHideRows = "afterHideRows".asInstanceOf[afterHideRows]
+  @scala.inline
+  def afterInit: afterInit = "afterInit".asInstanceOf[afterInit]
+  @scala.inline
+  def afterLanguageChange: afterLanguageChange = "afterLanguageChange".asInstanceOf[afterLanguageChange]
+  @scala.inline
+  def afterListen: afterListen = "afterListen".asInstanceOf[afterListen]
+  @scala.inline
+  def afterLoadData: afterLoadData = "afterLoadData".asInstanceOf[afterLoadData]
+  @scala.inline
+  def afterMergeCells: afterMergeCells = "afterMergeCells".asInstanceOf[afterMergeCells]
+  @scala.inline
+  def afterModifyTransformEnd: afterModifyTransformEnd = "afterModifyTransformEnd".asInstanceOf[afterModifyTransformEnd]
+  @scala.inline
+  def afterModifyTransformStart: afterModifyTransformStart = "afterModifyTransformStart".asInstanceOf[afterModifyTransformStart]
+  @scala.inline
+  def afterMomentumScroll: afterMomentumScroll = "afterMomentumScroll".asInstanceOf[afterMomentumScroll]
+  @scala.inline
+  def afterOnCellContextMenu: afterOnCellContextMenu = "afterOnCellContextMenu".asInstanceOf[afterOnCellContextMenu]
+  @scala.inline
+  def afterOnCellCornerDblClick: afterOnCellCornerDblClick = "afterOnCellCornerDblClick".asInstanceOf[afterOnCellCornerDblClick]
+  @scala.inline
+  def afterOnCellCornerMouseDown: afterOnCellCornerMouseDown = "afterOnCellCornerMouseDown".asInstanceOf[afterOnCellCornerMouseDown]
+  @scala.inline
+  def afterOnCellMouseDown: afterOnCellMouseDown = "afterOnCellMouseDown".asInstanceOf[afterOnCellMouseDown]
+  @scala.inline
+  def afterOnCellMouseOut: afterOnCellMouseOut = "afterOnCellMouseOut".asInstanceOf[afterOnCellMouseOut]
+  @scala.inline
+  def afterOnCellMouseOver: afterOnCellMouseOver = "afterOnCellMouseOver".asInstanceOf[afterOnCellMouseOver]
+  @scala.inline
+  def afterOnCellMouseUp: afterOnCellMouseUp = "afterOnCellMouseUp".asInstanceOf[afterOnCellMouseUp]
+  @scala.inline
+  def afterPaste: afterPaste = "afterPaste".asInstanceOf[afterPaste]
+  @scala.inline
+  def afterPluginsInitialized: afterPluginsInitialized = "afterPluginsInitialized".asInstanceOf[afterPluginsInitialized]
+  @scala.inline
+  def afterRedo: afterRedo = "afterRedo".asInstanceOf[afterRedo]
+  @scala.inline
+  def afterRefreshDimensions: afterRefreshDimensions = "afterRefreshDimensions".asInstanceOf[afterRefreshDimensions]
+  @scala.inline
+  def afterRemoveCellMeta: afterRemoveCellMeta = "afterRemoveCellMeta".asInstanceOf[afterRemoveCellMeta]
+  @scala.inline
+  def afterRemoveCol: afterRemoveCol = "afterRemoveCol".asInstanceOf[afterRemoveCol]
+  @scala.inline
+  def afterRemoveRow: afterRemoveRow = "afterRemoveRow".asInstanceOf[afterRemoveRow]
+  @scala.inline
+  def afterRender: afterRender = "afterRender".asInstanceOf[afterRender]
+  @scala.inline
+  def afterRenderer: afterRenderer = "afterRenderer".asInstanceOf[afterRenderer]
+  @scala.inline
+  def afterRowMove: afterRowMove = "afterRowMove".asInstanceOf[afterRowMove]
+  @scala.inline
+  def afterRowResize: afterRowResize = "afterRowResize".asInstanceOf[afterRowResize]
+  @scala.inline
+  def afterScrollHorizontally: afterScrollHorizontally = "afterScrollHorizontally".asInstanceOf[afterScrollHorizontally]
+  @scala.inline
+  def afterScrollVertically: afterScrollVertically = "afterScrollVertically".asInstanceOf[afterScrollVertically]
+  @scala.inline
+  def afterSelection: afterSelection = "afterSelection".asInstanceOf[afterSelection]
+  @scala.inline
+  def afterSelectionByProp: afterSelectionByProp = "afterSelectionByProp".asInstanceOf[afterSelectionByProp]
+  @scala.inline
+  def afterSelectionEnd: afterSelectionEnd = "afterSelectionEnd".asInstanceOf[afterSelectionEnd]
+  @scala.inline
+  def afterSelectionEndByProp: afterSelectionEndByProp = "afterSelectionEndByProp".asInstanceOf[afterSelectionEndByProp]
+  @scala.inline
+  def afterSetCellMeta: afterSetCellMeta = "afterSetCellMeta".asInstanceOf[afterSetCellMeta]
+  @scala.inline
+  def afterSetDataAtCell: afterSetDataAtCell = "afterSetDataAtCell".asInstanceOf[afterSetDataAtCell]
+  @scala.inline
+  def afterSetDataAtRowProp: afterSetDataAtRowProp = "afterSetDataAtRowProp".asInstanceOf[afterSetDataAtRowProp]
+  @scala.inline
+  def afterTrimRow: afterTrimRow = "afterTrimRow".asInstanceOf[afterTrimRow]
+  @scala.inline
+  def afterUndo: afterUndo = "afterUndo".asInstanceOf[afterUndo]
+  @scala.inline
+  def afterUnhideColumns: afterUnhideColumns = "afterUnhideColumns".asInstanceOf[afterUnhideColumns]
+  @scala.inline
+  def afterUnhideRows: afterUnhideRows = "afterUnhideRows".asInstanceOf[afterUnhideRows]
+  @scala.inline
+  def afterUnlisten: afterUnlisten = "afterUnlisten".asInstanceOf[afterUnlisten]
+  @scala.inline
+  def afterUnmergeCells: afterUnmergeCells = "afterUnmergeCells".asInstanceOf[afterUnmergeCells]
+  @scala.inline
+  def afterUntrimRow: afterUntrimRow = "afterUntrimRow".asInstanceOf[afterUntrimRow]
+  @scala.inline
+  def afterUpdateSettings: afterUpdateSettings = "afterUpdateSettings".asInstanceOf[afterUpdateSettings]
+  @scala.inline
+  def afterValidate: afterValidate = "afterValidate".asInstanceOf[afterValidate]
+  @scala.inline
+  def afterViewportColumnCalculatorOverride: afterViewportColumnCalculatorOverride = "afterViewportColumnCalculatorOverride".asInstanceOf[afterViewportColumnCalculatorOverride]
+  @scala.inline
+  def afterViewportRowCalculatorOverride: afterViewportRowCalculatorOverride = "afterViewportRowCalculatorOverride".asInstanceOf[afterViewportRowCalculatorOverride]
+  @scala.inline
   def alignment: alignment = "alignment".asInstanceOf[alignment]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
@@ -670,6 +1309,120 @@ object handsontableStrings {
   def basePlugin: basePlugin = "basePlugin".asInstanceOf[basePlugin]
   @scala.inline
   def before: before = "before".asInstanceOf[before]
+  @scala.inline
+  def beforeAddChild: beforeAddChild = "beforeAddChild".asInstanceOf[beforeAddChild]
+  @scala.inline
+  def beforeAutofill: beforeAutofill = "beforeAutofill".asInstanceOf[beforeAutofill]
+  @scala.inline
+  def beforeAutofillInsidePopulate: beforeAutofillInsidePopulate = "beforeAutofillInsidePopulate".asInstanceOf[beforeAutofillInsidePopulate]
+  @scala.inline
+  def beforeCellAlignment: beforeCellAlignment = "beforeCellAlignment".asInstanceOf[beforeCellAlignment]
+  @scala.inline
+  def beforeChange: beforeChange = "beforeChange".asInstanceOf[beforeChange]
+  @scala.inline
+  def beforeChangeRender: beforeChangeRender = "beforeChangeRender".asInstanceOf[beforeChangeRender]
+  @scala.inline
+  def beforeColumnMove: beforeColumnMove = "beforeColumnMove".asInstanceOf[beforeColumnMove]
+  @scala.inline
+  def beforeColumnResize: beforeColumnResize = "beforeColumnResize".asInstanceOf[beforeColumnResize]
+  @scala.inline
+  def beforeColumnSort: beforeColumnSort = "beforeColumnSort".asInstanceOf[beforeColumnSort]
+  @scala.inline
+  def beforeContextMenuSetItems: beforeContextMenuSetItems = "beforeContextMenuSetItems".asInstanceOf[beforeContextMenuSetItems]
+  @scala.inline
+  def beforeContextMenuShow: beforeContextMenuShow = "beforeContextMenuShow".asInstanceOf[beforeContextMenuShow]
+  @scala.inline
+  def beforeCopy: beforeCopy = "beforeCopy".asInstanceOf[beforeCopy]
+  @scala.inline
+  def beforeCreateCol: beforeCreateCol = "beforeCreateCol".asInstanceOf[beforeCreateCol]
+  @scala.inline
+  def beforeCreateRow: beforeCreateRow = "beforeCreateRow".asInstanceOf[beforeCreateRow]
+  @scala.inline
+  def beforeCut: beforeCut = "beforeCut".asInstanceOf[beforeCut]
+  @scala.inline
+  def beforeDetachChild: beforeDetachChild = "beforeDetachChild".asInstanceOf[beforeDetachChild]
+  @scala.inline
+  def beforeDrawBorders: beforeDrawBorders = "beforeDrawBorders".asInstanceOf[beforeDrawBorders]
+  @scala.inline
+  def beforeDropdownMenuSetItems: beforeDropdownMenuSetItems = "beforeDropdownMenuSetItems".asInstanceOf[beforeDropdownMenuSetItems]
+  @scala.inline
+  def beforeDropdownMenuShow: beforeDropdownMenuShow = "beforeDropdownMenuShow".asInstanceOf[beforeDropdownMenuShow]
+  @scala.inline
+  def beforeFilter: beforeFilter = "beforeFilter".asInstanceOf[beforeFilter]
+  @scala.inline
+  def beforeGetCellMeta: beforeGetCellMeta = "beforeGetCellMeta".asInstanceOf[beforeGetCellMeta]
+  @scala.inline
+  def beforeHideColumns: beforeHideColumns = "beforeHideColumns".asInstanceOf[beforeHideColumns]
+  @scala.inline
+  def beforeHideRows: beforeHideRows = "beforeHideRows".asInstanceOf[beforeHideRows]
+  @scala.inline
+  def beforeInit: beforeInit = "beforeInit".asInstanceOf[beforeInit]
+  @scala.inline
+  def beforeInitWalkontable: beforeInitWalkontable = "beforeInitWalkontable".asInstanceOf[beforeInitWalkontable]
+  @scala.inline
+  def beforeKeyDown: beforeKeyDown = "beforeKeyDown".asInstanceOf[beforeKeyDown]
+  @scala.inline
+  def beforeLanguageChange: beforeLanguageChange = "beforeLanguageChange".asInstanceOf[beforeLanguageChange]
+  @scala.inline
+  def beforeMergeCells: beforeMergeCells = "beforeMergeCells".asInstanceOf[beforeMergeCells]
+  @scala.inline
+  def beforeOnCellContextMenu: beforeOnCellContextMenu = "beforeOnCellContextMenu".asInstanceOf[beforeOnCellContextMenu]
+  @scala.inline
+  def beforeOnCellMouseDown: beforeOnCellMouseDown = "beforeOnCellMouseDown".asInstanceOf[beforeOnCellMouseDown]
+  @scala.inline
+  def beforeOnCellMouseOut: beforeOnCellMouseOut = "beforeOnCellMouseOut".asInstanceOf[beforeOnCellMouseOut]
+  @scala.inline
+  def beforeOnCellMouseOver: beforeOnCellMouseOver = "beforeOnCellMouseOver".asInstanceOf[beforeOnCellMouseOver]
+  @scala.inline
+  def beforeOnCellMouseUp: beforeOnCellMouseUp = "beforeOnCellMouseUp".asInstanceOf[beforeOnCellMouseUp]
+  @scala.inline
+  def beforePaste: beforePaste = "beforePaste".asInstanceOf[beforePaste]
+  @scala.inline
+  def beforeRedo: beforeRedo = "beforeRedo".asInstanceOf[beforeRedo]
+  @scala.inline
+  def beforeRefreshDimensions: beforeRefreshDimensions = "beforeRefreshDimensions".asInstanceOf[beforeRefreshDimensions]
+  @scala.inline
+  def beforeRemoveCellClassNames: beforeRemoveCellClassNames = "beforeRemoveCellClassNames".asInstanceOf[beforeRemoveCellClassNames]
+  @scala.inline
+  def beforeRemoveCellMeta: beforeRemoveCellMeta = "beforeRemoveCellMeta".asInstanceOf[beforeRemoveCellMeta]
+  @scala.inline
+  def beforeRemoveCol: beforeRemoveCol = "beforeRemoveCol".asInstanceOf[beforeRemoveCol]
+  @scala.inline
+  def beforeRemoveRow: beforeRemoveRow = "beforeRemoveRow".asInstanceOf[beforeRemoveRow]
+  @scala.inline
+  def beforeRender: beforeRender = "beforeRender".asInstanceOf[beforeRender]
+  @scala.inline
+  def beforeRenderer: beforeRenderer = "beforeRenderer".asInstanceOf[beforeRenderer]
+  @scala.inline
+  def beforeRowMove: beforeRowMove = "beforeRowMove".asInstanceOf[beforeRowMove]
+  @scala.inline
+  def beforeRowResize: beforeRowResize = "beforeRowResize".asInstanceOf[beforeRowResize]
+  @scala.inline
+  def beforeSetRangeEnd: beforeSetRangeEnd = "beforeSetRangeEnd".asInstanceOf[beforeSetRangeEnd]
+  @scala.inline
+  def beforeSetRangeStart: beforeSetRangeStart = "beforeSetRangeStart".asInstanceOf[beforeSetRangeStart]
+  @scala.inline
+  def beforeSetRangeStartOnly: beforeSetRangeStartOnly = "beforeSetRangeStartOnly".asInstanceOf[beforeSetRangeStartOnly]
+  @scala.inline
+  def beforeStretchingColumnWidth: beforeStretchingColumnWidth = "beforeStretchingColumnWidth".asInstanceOf[beforeStretchingColumnWidth]
+  @scala.inline
+  def beforeTouchScroll: beforeTouchScroll = "beforeTouchScroll".asInstanceOf[beforeTouchScroll]
+  @scala.inline
+  def beforeTrimRow: beforeTrimRow = "beforeTrimRow".asInstanceOf[beforeTrimRow]
+  @scala.inline
+  def beforeUndo: beforeUndo = "beforeUndo".asInstanceOf[beforeUndo]
+  @scala.inline
+  def beforeUnhideColumns: beforeUnhideColumns = "beforeUnhideColumns".asInstanceOf[beforeUnhideColumns]
+  @scala.inline
+  def beforeUnhideRows: beforeUnhideRows = "beforeUnhideRows".asInstanceOf[beforeUnhideRows]
+  @scala.inline
+  def beforeUnmergeCells: beforeUnmergeCells = "beforeUnmergeCells".asInstanceOf[beforeUnmergeCells]
+  @scala.inline
+  def beforeUntrimRow: beforeUntrimRow = "beforeUntrimRow".asInstanceOf[beforeUntrimRow]
+  @scala.inline
+  def beforeValidate: beforeValidate = "beforeValidate".asInstanceOf[beforeValidate]
+  @scala.inline
+  def beforeValueRender: beforeValueRender = "beforeValueRender".asInstanceOf[beforeValueRender]
   @scala.inline
   def begins_with: begins_with = "begins_with".asInstanceOf[begins_with]
   @scala.inline
@@ -716,6 +1469,8 @@ object handsontableStrings {
   def commentsRemove: commentsRemove = "commentsRemove".asInstanceOf[commentsRemove]
   @scala.inline
   def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
+  @scala.inline
+  def construct: construct = "construct".asInstanceOf[construct]
   @scala.inline
   def contains: contains = "contains".asInstanceOf[contains]
   @scala.inline
@@ -799,7 +1554,11 @@ object handsontableStrings {
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
+  def hiddenColumn: hiddenColumn = "hiddenColumn".asInstanceOf[hiddenColumn]
+  @scala.inline
   def hiddenColumns: hiddenColumns = "hiddenColumns".asInstanceOf[hiddenColumns]
+  @scala.inline
+  def hiddenRow: hiddenRow = "hiddenRow".asInstanceOf[hiddenRow]
   @scala.inline
   def hiddenRows: hiddenRows = "hiddenRows".asInstanceOf[hiddenRows]
   @scala.inline
@@ -830,6 +1589,8 @@ object handsontableStrings {
   def htTop: htTop = "htTop".asInstanceOf[htTop]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
+  @scala.inline
+  def init: init = "init".asInstanceOf[init]
   @scala.inline
   def insert_col: insert_col = "insert_col".asInstanceOf[insert_col]
   @scala.inline
@@ -871,6 +1632,38 @@ object handsontableStrings {
   @scala.inline
   def mobile: mobile = "mobile".asInstanceOf[mobile]
   @scala.inline
+  def modifyAutofillRange: modifyAutofillRange = "modifyAutofillRange".asInstanceOf[modifyAutofillRange]
+  @scala.inline
+  def modifyCol: modifyCol = "modifyCol".asInstanceOf[modifyCol]
+  @scala.inline
+  def modifyColHeader: modifyColHeader = "modifyColHeader".asInstanceOf[modifyColHeader]
+  @scala.inline
+  def modifyColWidth: modifyColWidth = "modifyColWidth".asInstanceOf[modifyColWidth]
+  @scala.inline
+  def modifyColumnHeaderHeight: modifyColumnHeaderHeight = "modifyColumnHeaderHeight".asInstanceOf[modifyColumnHeaderHeight]
+  @scala.inline
+  def modifyCopyableRange: modifyCopyableRange = "modifyCopyableRange".asInstanceOf[modifyCopyableRange]
+  @scala.inline
+  def modifyData: modifyData = "modifyData".asInstanceOf[modifyData]
+  @scala.inline
+  def modifyGetCellCoords: modifyGetCellCoords = "modifyGetCellCoords".asInstanceOf[modifyGetCellCoords]
+  @scala.inline
+  def modifyRow: modifyRow = "modifyRow".asInstanceOf[modifyRow]
+  @scala.inline
+  def modifyRowData: modifyRowData = "modifyRowData".asInstanceOf[modifyRowData]
+  @scala.inline
+  def modifyRowHeader: modifyRowHeader = "modifyRowHeader".asInstanceOf[modifyRowHeader]
+  @scala.inline
+  def modifyRowHeaderWidth: modifyRowHeaderWidth = "modifyRowHeaderWidth".asInstanceOf[modifyRowHeaderWidth]
+  @scala.inline
+  def modifyRowHeight: modifyRowHeight = "modifyRowHeight".asInstanceOf[modifyRowHeight]
+  @scala.inline
+  def modifyRowSourceData: modifyRowSourceData = "modifyRowSourceData".asInstanceOf[modifyRowSourceData]
+  @scala.inline
+  def modifyTransformEnd: modifyTransformEnd = "modifyTransformEnd".asInstanceOf[modifyTransformEnd]
+  @scala.inline
+  def modifyTransformStart: modifyTransformStart = "modifyTransformStart".asInstanceOf[modifyTransformStart]
+  @scala.inline
   def monday: monday = "monday".asInstanceOf[monday]
   @scala.inline
   def multiColumnSorting: multiColumnSorting = "multiColumnSorting".asInstanceOf[multiColumnSorting]
@@ -905,6 +1698,12 @@ object handsontableStrings {
   @scala.inline
   def persistentState: persistentState = "persistentState".asInstanceOf[persistentState]
   @scala.inline
+  def persistentStateLoad: persistentStateLoad = "persistentStateLoad".asInstanceOf[persistentStateLoad]
+  @scala.inline
+  def persistentStateReset: persistentStateReset = "persistentStateReset".asInstanceOf[persistentStateReset]
+  @scala.inline
+  def persistentStateSave: persistentStateSave = "persistentStateSave".asInstanceOf[persistentStateSave]
+  @scala.inline
   def populateFromArray: populateFromArray = "populateFromArray".asInstanceOf[populateFromArray]
   @scala.inline
   def range: range = "range".asInstanceOf[range]
@@ -932,6 +1731,8 @@ object handsontableStrings {
   def shift_right: shift_right = "shift_right".asInstanceOf[shift_right]
   @scala.inline
   def single: single = "single".asInstanceOf[single]
+  @scala.inline
+  def skipLengthCache: skipLengthCache = "skipLengthCache".asInstanceOf[skipLengthCache]
   @scala.inline
   def skipRowOnPaste: skipRowOnPaste = "skipRowOnPaste".asInstanceOf[skipRowOnPaste]
   @scala.inline
@@ -964,6 +1765,10 @@ object handsontableStrings {
   def undo: undo = "undo".asInstanceOf[undo]
   @scala.inline
   def unfreeze_column: unfreeze_column = "unfreeze_column".asInstanceOf[unfreeze_column]
+  @scala.inline
+  def unmodifyCol: unmodifyCol = "unmodifyCol".asInstanceOf[unmodifyCol]
+  @scala.inline
+  def unmodifyRow: unmodifyRow = "unmodifyRow".asInstanceOf[unmodifyRow]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   @scala.inline

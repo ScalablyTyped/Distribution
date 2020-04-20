@@ -14,10 +14,8 @@ trait styleNone extends js.Object
 
 object styleNone {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleNoneNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleNoneNone: `0` = this.cast(0)
-  @scala.inline
-  def styleNone_Max: `2147483647` = this.cast(2147483647)
+  def styleNone_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

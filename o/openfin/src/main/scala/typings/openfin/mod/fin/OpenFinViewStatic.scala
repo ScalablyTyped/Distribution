@@ -60,7 +60,6 @@ object OpenFinViewStatic {
     wrapSync: Identity => View
   ): OpenFinViewStatic = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), getCurrent = js.Any.fromFunction0(getCurrent), getCurrentSync = js.Any.fromFunction0(getCurrentSync), wrap = js.Any.fromFunction1(wrap), wrapSync = js.Any.fromFunction1(wrapSync))
-  
     __obj.asInstanceOf[OpenFinViewStatic]
   }
 }

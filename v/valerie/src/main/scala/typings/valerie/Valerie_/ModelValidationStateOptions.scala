@@ -23,7 +23,6 @@ object ModelValidationStateOptions {
     paused: () => Boolean
   ): ModelValidationStateOptions = {
     val __obj = js.Dynamic.literal(applicable = js.Any.fromFunction0(applicable), excludeFromSummary = excludeFromSummary.asInstanceOf[js.Any], failureMessage = failureMessage.asInstanceOf[js.Any], name = js.Any.fromFunction0(name), paused = js.Any.fromFunction0(paused))
-  
     __obj.asInstanceOf[ModelValidationStateOptions]
   }
 }

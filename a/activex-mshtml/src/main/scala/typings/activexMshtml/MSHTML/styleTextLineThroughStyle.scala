@@ -18,14 +18,12 @@ trait styleTextLineThroughStyle extends js.Object
 
 object styleTextLineThroughStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleTextLineThroughStyleDouble: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleTextLineThroughStyleDouble: `2` = this.cast(2)
+  def styleTextLineThroughStyleSingle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleTextLineThroughStyleSingle: `1` = this.cast(1)
+  def styleTextLineThroughStyleUndefined: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleTextLineThroughStyleUndefined: `0` = this.cast(0)
-  @scala.inline
-  def styleTextLineThroughStyle_Max: `2147483647` = this.cast(2147483647)
+  def styleTextLineThroughStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

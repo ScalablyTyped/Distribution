@@ -15,7 +15,6 @@ object AnonTimestamp {
   @scala.inline
   def apply(coordinate: Coordinate, timestamp: Date): AnonTimestamp = {
     val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTimestamp]
   }
 }

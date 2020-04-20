@@ -14,7 +14,6 @@ object AnonLightMap {
   @scala.inline
   def apply(lightMap: IUniform, lightMapIntensity: IUniform): AnonLightMap = {
     val __obj = js.Dynamic.literal(lightMap = lightMap.asInstanceOf[js.Any], lightMapIntensity = lightMapIntensity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLightMap]
   }
 }

@@ -29,7 +29,6 @@ object IMediaEncodingProfileStatics {
     createWmv: VideoEncodingQuality => MediaEncodingProfile
   ): IMediaEncodingProfileStatics = {
     val __obj = js.Dynamic.literal(createFromFileAsync = js.Any.fromFunction1(createFromFileAsync), createFromStreamAsync = js.Any.fromFunction1(createFromStreamAsync), createM4a = js.Any.fromFunction1(createM4a), createMp3 = js.Any.fromFunction1(createMp3), createMp4 = js.Any.fromFunction1(createMp4), createWma = js.Any.fromFunction1(createWma), createWmv = js.Any.fromFunction1(createWmv))
-  
     __obj.asInstanceOf[IMediaEncodingProfileStatics]
   }
 }

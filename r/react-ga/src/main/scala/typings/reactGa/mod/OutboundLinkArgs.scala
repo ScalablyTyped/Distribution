@@ -12,7 +12,6 @@ object OutboundLinkArgs {
   @scala.inline
   def apply(label: String): OutboundLinkArgs = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OutboundLinkArgs]
   }
 }

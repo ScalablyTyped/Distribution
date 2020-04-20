@@ -14,7 +14,6 @@ object ComponentInfo {
   @scala.inline
   def apply(element: Node, templateNodes: js.Array[Node]): ComponentInfo = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], templateNodes = templateNodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComponentInfo]
   }
 }

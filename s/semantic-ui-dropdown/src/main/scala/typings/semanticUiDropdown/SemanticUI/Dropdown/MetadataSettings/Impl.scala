@@ -31,7 +31,6 @@ object Impl {
   @scala.inline
   def apply(defaultText: String, defaultValue: String, placeholderText: String, text: String, value: String): Impl = {
     val __obj = js.Dynamic.literal(defaultText = defaultText.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], placeholderText = placeholderText.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

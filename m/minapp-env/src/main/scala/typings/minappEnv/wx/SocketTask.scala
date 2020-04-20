@@ -46,7 +46,6 @@ object SocketTask {
     send: SendOption => Unit
   ): SocketTask = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), onClose = js.Any.fromFunction1(onClose), onError = js.Any.fromFunction1(onError), onMessage = js.Any.fromFunction1(onMessage), onOpen = js.Any.fromFunction1(onOpen), send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[SocketTask]
   }
 }

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait reactNativePlatformTouchableProps {
   @scala.inline
-  def ReactNativePlatformTouchableProps: PlatformTouchableProps.type = typings.reactNativePlatformTouchable.mod.PlatformTouchableProps
+  def ReactNativePlatformTouchableProps: PlatformTouchableProps.type = PlatformTouchableProps
   type ReactNativePlatformTouchableProps = PlatformTouchableProps
   @scala.inline
-  def TouchableProps: PlatformTouchableProps.type = typings.reactNativePlatformTouchable.mod.PlatformTouchableProps
+  def TouchableProps: PlatformTouchableProps.type = PlatformTouchableProps
   type TouchableProps = PlatformTouchableProps
 }
 

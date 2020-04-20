@@ -16,7 +16,6 @@ object AsObject {
     transactionsList: js.Array[typings.libraCore.mempoolPbMod.CommittedTransaction.AsObject]
   ): AsObject = {
     val __obj = js.Dynamic.literal(blockTimestampUsecs = blockTimestampUsecs.asInstanceOf[js.Any], transactionsList = transactionsList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

@@ -19,7 +19,7 @@ object collectionMod extends js.Object {
     /* CompleteClass */
     override def Clear(): Unit = js.native
     @JSName("Count")
-    def Count_MCollection(): Double = js.native
+    def Count_MCollection: Double = js.native
     /* CompleteClass */
     override def Every(cb: js.Function3[I, /* index */ Double, /* array */ js.Array[I], Boolean]): Boolean = js.native
     /* CompleteClass */

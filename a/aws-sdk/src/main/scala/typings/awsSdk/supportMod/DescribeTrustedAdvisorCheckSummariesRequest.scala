@@ -16,7 +16,6 @@ object DescribeTrustedAdvisorCheckSummariesRequest {
   @scala.inline
   def apply(checkIds: StringList): DescribeTrustedAdvisorCheckSummariesRequest = {
     val __obj = js.Dynamic.literal(checkIds = checkIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTrustedAdvisorCheckSummariesRequest]
   }
 }

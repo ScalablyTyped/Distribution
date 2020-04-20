@@ -23,7 +23,6 @@ object HDRInfo {
   @scala.inline
   def apply(dataPosition: Double, height: Double, width: Double): HDRInfo = {
     val __obj = js.Dynamic.literal(dataPosition = dataPosition.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HDRInfo]
   }
 }

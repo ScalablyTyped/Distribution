@@ -16,12 +16,10 @@ trait WdSpanishSpeller extends js.Object
 
 object WdSpanishSpeller {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdSpanishTuteoAndVoseo: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdSpanishTuteoAndVoseo: `1` = this.cast(1)
+  def wdSpanishTuteoOnly: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdSpanishTuteoOnly: `0` = this.cast(0)
-  @scala.inline
-  def wdSpanishVoseoOnly: `2` = this.cast(2)
+  def wdSpanishVoseoOnly: `2` = 2.asInstanceOf[`2`]
 }
 

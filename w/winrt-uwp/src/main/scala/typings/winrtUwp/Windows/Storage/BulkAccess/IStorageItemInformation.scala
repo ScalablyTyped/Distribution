@@ -37,7 +37,6 @@ object IStorageItemInformation {
     videoProperties: VideoProperties
   ): IStorageItemInformation = {
     val __obj = js.Dynamic.literal(basicProperties = basicProperties.asInstanceOf[js.Any], documentProperties = documentProperties.asInstanceOf[js.Any], imageProperties = imageProperties.asInstanceOf[js.Any], musicProperties = musicProperties.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], videoProperties = videoProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStorageItemInformation]
   }
 }

@@ -20,7 +20,6 @@ object CountryResource {
   @scala.inline
   def apply(get: AnonCallback => Request_[StoreInfo]): CountryResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[CountryResource]
   }
 }

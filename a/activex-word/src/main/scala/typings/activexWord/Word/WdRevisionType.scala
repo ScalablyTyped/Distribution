@@ -54,50 +54,48 @@ trait WdRevisionType extends js.Object
 
 object WdRevisionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdNoRevision: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdNoRevision: `0` = this.cast(0)
+  def wdRevisionCellDeletion: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdRevisionCellDeletion: `17` = this.cast(17)
+  def wdRevisionCellInsertion: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdRevisionCellInsertion: `16` = this.cast(16)
+  def wdRevisionCellMerge: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdRevisionCellMerge: `18` = this.cast(18)
+  def wdRevisionCellSplit: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdRevisionCellSplit: `19` = this.cast(19)
+  def wdRevisionConflict: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdRevisionConflict: `7` = this.cast(7)
+  def wdRevisionConflictDelete: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def wdRevisionConflictDelete: `21` = this.cast(21)
+  def wdRevisionConflictInsert: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdRevisionConflictInsert: `20` = this.cast(20)
+  def wdRevisionDelete: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdRevisionDelete: `2` = this.cast(2)
+  def wdRevisionDisplayField: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdRevisionDisplayField: `5` = this.cast(5)
+  def wdRevisionInsert: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdRevisionInsert: `1` = this.cast(1)
+  def wdRevisionMovedFrom: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdRevisionMovedFrom: `14` = this.cast(14)
+  def wdRevisionMovedTo: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdRevisionMovedTo: `15` = this.cast(15)
+  def wdRevisionParagraphNumber: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdRevisionParagraphNumber: `4` = this.cast(4)
+  def wdRevisionParagraphProperty: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdRevisionParagraphProperty: `10` = this.cast(10)
+  def wdRevisionProperty: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdRevisionProperty: `3` = this.cast(3)
+  def wdRevisionReconcile: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdRevisionReconcile: `6` = this.cast(6)
+  def wdRevisionReplace: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdRevisionReplace: `9` = this.cast(9)
+  def wdRevisionSectionProperty: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdRevisionSectionProperty: `12` = this.cast(12)
+  def wdRevisionStyle: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdRevisionStyle: `8` = this.cast(8)
+  def wdRevisionStyleDefinition: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdRevisionStyleDefinition: `13` = this.cast(13)
-  @scala.inline
-  def wdRevisionTableProperty: `11` = this.cast(11)
+  def wdRevisionTableProperty: `11` = 11.asInstanceOf[`11`]
 }
 

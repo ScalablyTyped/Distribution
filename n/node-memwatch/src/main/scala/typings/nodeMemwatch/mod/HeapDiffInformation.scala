@@ -14,7 +14,6 @@ object HeapDiffInformation {
   @scala.inline
   def apply(after: HeapDiffSnapshot, before: HeapDiffSnapshot, change: HeapDiffChange): HeapDiffInformation = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeapDiffInformation]
   }
 }

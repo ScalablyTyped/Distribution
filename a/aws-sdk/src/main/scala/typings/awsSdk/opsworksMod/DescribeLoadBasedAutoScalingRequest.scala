@@ -16,7 +16,6 @@ object DescribeLoadBasedAutoScalingRequest {
   @scala.inline
   def apply(LayerIds: Strings): DescribeLoadBasedAutoScalingRequest = {
     val __obj = js.Dynamic.literal(LayerIds = LayerIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLoadBasedAutoScalingRequest]
   }
 }

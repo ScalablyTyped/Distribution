@@ -46,7 +46,6 @@ object INxAttrDimInfo {
     qSize: Double
   ): INxAttrDimInfo = {
     val __obj = js.Dynamic.literal(qCardinal = qCardinal.asInstanceOf[js.Any], qError = qError.asInstanceOf[js.Any], qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qLocked = qLocked.asInstanceOf[js.Any], qSize = qSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxAttrDimInfo]
   }
 }

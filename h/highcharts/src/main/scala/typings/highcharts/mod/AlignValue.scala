@@ -13,12 +13,10 @@ trait AlignValue extends js.Object
 
 object AlignValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.highcharts.highchartsStrings.center = "center".asInstanceOf[typings.highcharts.highchartsStrings.center]
   @scala.inline
-  def center: typings.highcharts.highchartsStrings.center = this.cast("center")
+  def left: typings.highcharts.highchartsStrings.left = "left".asInstanceOf[typings.highcharts.highchartsStrings.left]
   @scala.inline
-  def left: typings.highcharts.highchartsStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.highcharts.highchartsStrings.right = this.cast("right")
+  def right: typings.highcharts.highchartsStrings.right = "right".asInstanceOf[typings.highcharts.highchartsStrings.right]
 }
 

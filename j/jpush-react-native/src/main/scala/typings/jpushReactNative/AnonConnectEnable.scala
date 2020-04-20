@@ -12,7 +12,6 @@ object AnonConnectEnable {
   @scala.inline
   def apply(connectEnable: Boolean): AnonConnectEnable = {
     val __obj = js.Dynamic.literal(connectEnable = connectEnable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConnectEnable]
   }
 }

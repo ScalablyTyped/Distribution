@@ -20,7 +20,6 @@ object ModifyClusterParameterGroupMessage {
   @scala.inline
   def apply(ParameterGroupName: String, Parameters: ParametersList): ModifyClusterParameterGroupMessage = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName.asInstanceOf[js.Any], Parameters = Parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyClusterParameterGroupMessage]
   }
 }

@@ -13,7 +13,6 @@ object Disposable {
   @scala.inline
   def apply(dispose: () => Unit, isDisposed: () => Boolean): Disposable = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = js.Any.fromFunction0(isDisposed))
-  
     __obj.asInstanceOf[Disposable]
   }
 }

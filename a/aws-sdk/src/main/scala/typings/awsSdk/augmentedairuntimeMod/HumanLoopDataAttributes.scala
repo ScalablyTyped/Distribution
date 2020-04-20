@@ -16,7 +16,6 @@ object HumanLoopDataAttributes {
   @scala.inline
   def apply(ContentClassifiers: ContentClassifiers): HumanLoopDataAttributes = {
     val __obj = js.Dynamic.literal(ContentClassifiers = ContentClassifiers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HumanLoopDataAttributes]
   }
 }

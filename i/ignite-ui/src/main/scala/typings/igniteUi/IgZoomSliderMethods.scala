@@ -20,7 +20,6 @@ object IgZoomSliderMethods {
   @scala.inline
   def apply(destroy: () => Unit, flush: () => Unit, notifySizeChanged: () => Unit): IgZoomSliderMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), flush = js.Any.fromFunction0(flush), notifySizeChanged = js.Any.fromFunction0(notifySizeChanged))
-  
     __obj.asInstanceOf[IgZoomSliderMethods]
   }
 }

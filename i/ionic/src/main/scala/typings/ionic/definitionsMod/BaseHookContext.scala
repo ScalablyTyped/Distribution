@@ -16,7 +16,6 @@ object BaseHookContext {
   @scala.inline
   def apply(argv: js.Array[String], env: ProcessEnv, project: AnonDir): BaseHookContext = {
     val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseHookContext]
   }
 }

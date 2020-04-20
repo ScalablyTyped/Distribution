@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ExactIndex")
 @js.native
 class ExactIndex[E /* <: js.Object */] protected () extends js.Object {
-  def this(exactField: String) = this()
-  var field: String = js.native
+  def this(exactField: /* keyof E */ String) = this()
+  var field: /* keyof E */ String = js.native
   var index: StringDictionary[js.UndefOr[js.Array[E]]] = js.native
   // clear will zap the index
   def clear(): Unit = js.native

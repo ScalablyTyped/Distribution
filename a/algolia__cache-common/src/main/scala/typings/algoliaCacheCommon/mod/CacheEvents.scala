@@ -16,7 +16,6 @@ object CacheEvents {
   @scala.inline
   def apply[TValue](miss: TValue => ReadonlyPromiseany): CacheEvents[TValue] = {
     val __obj = js.Dynamic.literal(miss = js.Any.fromFunction1(miss))
-  
     __obj.asInstanceOf[CacheEvents[TValue]]
   }
 }

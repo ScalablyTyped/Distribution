@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ptomasroosReactNativeMultiSliderProps {
   @scala.inline
-  def ReactNativeMultiSliderProps: MultiSliderProps.type = typings.ptomasroosReactNativeMultiSlider.mod.MultiSliderProps
+  def ReactNativeMultiSliderProps: MultiSliderProps.type = MultiSliderProps
   type ReactNativeMultiSliderProps = MultiSliderProps
 }
 

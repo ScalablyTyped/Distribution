@@ -24,7 +24,6 @@ object UpdateImagePermissionsRequest {
   @scala.inline
   def apply(ImagePermissions: ImagePermissions, Name: Name, SharedAccountId: AwsAccountId): UpdateImagePermissionsRequest = {
     val __obj = js.Dynamic.literal(ImagePermissions = ImagePermissions.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SharedAccountId = SharedAccountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateImagePermissionsRequest]
   }
 }

@@ -12,7 +12,6 @@ object AnonMappingWithDisposeCallback {
   @scala.inline
   def apply[T, TResult](mappingWithDisposeCallback: T => AnonDispose[TResult]): AnonMappingWithDisposeCallback[T, TResult] = {
     val __obj = js.Dynamic.literal(mappingWithDisposeCallback = js.Any.fromFunction1(mappingWithDisposeCallback))
-  
     __obj.asInstanceOf[AnonMappingWithDisposeCallback[T, TResult]]
   }
 }

@@ -14,7 +14,6 @@ object Listener {
   @scala.inline
   def apply[T](complete: () => Unit, error: js.Any => Unit, next: T => Unit): Listener[T] = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
-  
     __obj.asInstanceOf[Listener[T]]
   }
 }

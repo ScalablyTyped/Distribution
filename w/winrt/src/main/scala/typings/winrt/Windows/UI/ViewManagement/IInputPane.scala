@@ -15,7 +15,6 @@ object IInputPane {
   @scala.inline
   def apply(occludedRect: Rect, onhiding: js.Any, onshowing: js.Any): IInputPane = {
     val __obj = js.Dynamic.literal(occludedRect = occludedRect.asInstanceOf[js.Any], onhiding = onhiding.asInstanceOf[js.Any], onshowing = onshowing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IInputPane]
   }
 }

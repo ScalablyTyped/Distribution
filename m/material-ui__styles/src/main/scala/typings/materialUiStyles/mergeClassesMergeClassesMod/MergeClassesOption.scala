@@ -15,7 +15,6 @@ object MergeClassesOption {
   @scala.inline
   def apply(Component: ElementType[_], baseClasses: Classes, newClasses: Classes): MergeClassesOption = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], baseClasses = baseClasses.asInstanceOf[js.Any], newClasses = newClasses.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MergeClassesOption]
   }
 }

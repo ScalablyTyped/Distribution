@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 
 trait MeshTextureProperties extends js.Object {
   /**
-    * A direct reference to the image data. The image data can be an [image element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement), [canvas element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement) or [ImageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData).  The data property is mutually exclusive with the url property, setting the data will clear the url (if there is one).
+    * A direct reference to the image or video data. The data can be an [image element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement), [canvas element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement), [video element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) or [ImageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData). If the data is set to a [video element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement), the element needs to be visible in the DOM. The data property is mutually exclusive with the url property, setting the data will clear the url (if there is one).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#data)
     */
-  var data: js.UndefOr[HTMLImageElement | HTMLCanvasElement | ImageData] = js.undefined
+  var data: js.UndefOr[HTMLImageElement | HTMLCanvasElement | js.Any | ImageData] = js.undefined
   /**
     * Indicates whether the image data should be interpreted as being semi-transparent. The default value is automatically derived when the data property contains a canvas element or an ImageData object. If instead a url to a .png file was provided, it is assumed that transparency is present. In all other cases it defaults to `false`.
     *
@@ -26,7 +26,7 @@ trait MeshTextureProperties extends js.Object {
     */
   var transparent: js.UndefOr[Boolean] = js.undefined
   /**
-    * The url to the image resource. This can either be a remote url (absolute or relative) or a data url.  The url property is mutually exclusive with the data property, setting the url will clear the data (if there is one).
+    * The url to the image resource. This can either be a remote url (absolute or relative) or a data url. Video resources can only be loaded using the [data](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#data) property. The url property is mutually exclusive with the [data](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#data) property, setting the url will clear the data (if there is one).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#url)
     */
@@ -50,7 +50,7 @@ trait MeshTextureProperties extends js.Object {
 object MeshTextureProperties {
   @scala.inline
   def apply(
-    data: HTMLImageElement | HTMLCanvasElement | ImageData = null,
+    data: HTMLImageElement | HTMLCanvasElement | js.Any | ImageData = null,
     transparent: js.UndefOr[Boolean] = js.undefined,
     url: String = null,
     wrap: clamp | repeat | mirror | SeparableWrapModes = null

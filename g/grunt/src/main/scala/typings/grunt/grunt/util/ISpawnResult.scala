@@ -20,7 +20,6 @@ object ISpawnResult {
   @scala.inline
   def apply(code: Double, stderr: String, stdout: String): ISpawnResult = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISpawnResult]
   }
 }

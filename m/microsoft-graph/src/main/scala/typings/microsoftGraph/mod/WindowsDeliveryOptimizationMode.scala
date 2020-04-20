@@ -17,20 +17,18 @@ trait WindowsDeliveryOptimizationMode extends js.Object
 
 object WindowsDeliveryOptimizationMode {
   @scala.inline
-  def bypassMode: typings.microsoftGraph.microsoftGraphStrings.bypassMode = this.cast("bypassMode")
+  def bypassMode: typings.microsoftGraph.microsoftGraphStrings.bypassMode = "bypassMode".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.bypassMode]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def httpOnly: typings.microsoftGraph.microsoftGraphStrings.httpOnly = "httpOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.httpOnly]
   @scala.inline
-  def httpOnly: typings.microsoftGraph.microsoftGraphStrings.httpOnly = this.cast("httpOnly")
+  def httpWithInternetPeering: typings.microsoftGraph.microsoftGraphStrings.httpWithInternetPeering = "httpWithInternetPeering".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.httpWithInternetPeering]
   @scala.inline
-  def httpWithInternetPeering: typings.microsoftGraph.microsoftGraphStrings.httpWithInternetPeering = this.cast("httpWithInternetPeering")
+  def httpWithPeeringNat: typings.microsoftGraph.microsoftGraphStrings.httpWithPeeringNat = "httpWithPeeringNat".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.httpWithPeeringNat]
   @scala.inline
-  def httpWithPeeringNat: typings.microsoftGraph.microsoftGraphStrings.httpWithPeeringNat = this.cast("httpWithPeeringNat")
+  def httpWithPeeringPrivateGroup: typings.microsoftGraph.microsoftGraphStrings.httpWithPeeringPrivateGroup = "httpWithPeeringPrivateGroup".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.httpWithPeeringPrivateGroup]
   @scala.inline
-  def httpWithPeeringPrivateGroup: typings.microsoftGraph.microsoftGraphStrings.httpWithPeeringPrivateGroup = this.cast("httpWithPeeringPrivateGroup")
+  def simpleDownload: typings.microsoftGraph.microsoftGraphStrings.simpleDownload = "simpleDownload".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.simpleDownload]
   @scala.inline
-  def simpleDownload: typings.microsoftGraph.microsoftGraphStrings.simpleDownload = this.cast("simpleDownload")
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }
 

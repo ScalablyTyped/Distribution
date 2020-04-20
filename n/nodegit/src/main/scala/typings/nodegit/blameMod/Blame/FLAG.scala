@@ -22,18 +22,16 @@ trait FLAG extends js.Object
 
 object FLAG {
   @scala.inline
-  def FIRST_PARENT: `16` = this.cast(16)
+  def FIRST_PARENT: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def NORMAL: `0` = this.cast(0)
+  def NORMAL: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def TRACK_COPIES_ANY_COMMIT_COPIES: `8` = this.cast(8)
+  def TRACK_COPIES_ANY_COMMIT_COPIES: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def TRACK_COPIES_SAME_COMMIT_COPIES: `4` = this.cast(4)
+  def TRACK_COPIES_SAME_COMMIT_COPIES: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def TRACK_COPIES_SAME_COMMIT_MOVES: `2` = this.cast(2)
+  def TRACK_COPIES_SAME_COMMIT_MOVES: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def TRACK_COPIES_SAME_FILE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TRACK_COPIES_SAME_FILE: `1` = 1.asInstanceOf[`1`]
 }
 

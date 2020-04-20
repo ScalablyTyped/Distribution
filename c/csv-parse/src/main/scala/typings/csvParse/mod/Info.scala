@@ -37,7 +37,6 @@ object Info {
     records: Double
   ): Info = {
     val __obj = js.Dynamic.literal(comment_lines = comment_lines.asInstanceOf[js.Any], empty_lines = empty_lines.asInstanceOf[js.Any], invalid_field_length = invalid_field_length.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Info]
   }
 }

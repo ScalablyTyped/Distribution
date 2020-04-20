@@ -52,7 +52,6 @@ object GridEntity {
     getPrimaryAttributeValue: () => String
   ): GridEntity = {
     val __obj = js.Dynamic.literal(getEntityName = js.Any.fromFunction0(getEntityName), getEntityReference = js.Any.fromFunction0(getEntityReference), getId = js.Any.fromFunction0(getId), getPrimaryAttributeValue = js.Any.fromFunction0(getPrimaryAttributeValue))
-  
     __obj.asInstanceOf[GridEntity]
   }
 }

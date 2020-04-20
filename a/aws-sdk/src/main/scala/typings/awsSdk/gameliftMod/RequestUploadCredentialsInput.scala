@@ -16,7 +16,6 @@ object RequestUploadCredentialsInput {
   @scala.inline
   def apply(BuildId: BuildIdOrArn): RequestUploadCredentialsInput = {
     val __obj = js.Dynamic.literal(BuildId = BuildId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestUploadCredentialsInput]
   }
 }

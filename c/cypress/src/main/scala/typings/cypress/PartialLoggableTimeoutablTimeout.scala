@@ -1,5 +1,6 @@
 package typings.cypress
 
+import typings.jquery.JQuery_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -30,7 +30,6 @@ object AilmentDeps {
     shell: IShell
   ): AilmentDeps = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AilmentDeps]
   }
 }

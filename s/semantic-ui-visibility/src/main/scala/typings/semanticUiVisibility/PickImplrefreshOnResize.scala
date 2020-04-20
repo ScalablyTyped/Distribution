@@ -13,7 +13,6 @@ object PickImplrefreshOnResize {
   @scala.inline
   def apply(refreshOnResize: Boolean): PickImplrefreshOnResize = {
     val __obj = js.Dynamic.literal(refreshOnResize = refreshOnResize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplrefreshOnResize]
   }
 }

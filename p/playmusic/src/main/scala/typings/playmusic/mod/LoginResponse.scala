@@ -13,7 +13,6 @@ object LoginResponse {
   @scala.inline
   def apply(androidId: String, masterToken: String): LoginResponse = {
     val __obj = js.Dynamic.literal(androidId = androidId.asInstanceOf[js.Any], masterToken = masterToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoginResponse]
   }
 }

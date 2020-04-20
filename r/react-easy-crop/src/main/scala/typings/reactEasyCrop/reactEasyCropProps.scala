@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactEasyCropProps {
   @scala.inline
-  def ReactEasyCropProps: CropperProps.type = typings.reactEasyCrop.mod.CropperProps
+  def ReactEasyCropProps: CropperProps.type = CropperProps
   type ReactEasyCropProps = CropperProps
 }
 

@@ -16,7 +16,6 @@ object PutRemediationConfigurationsRequest {
   @scala.inline
   def apply(RemediationConfigurations: RemediationConfigurations): PutRemediationConfigurationsRequest = {
     val __obj = js.Dynamic.literal(RemediationConfigurations = RemediationConfigurations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutRemediationConfigurationsRequest]
   }
 }

@@ -12,10 +12,8 @@ trait ListItemLayout extends js.Object
 
 object ListItemLayout {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.antd.antdStrings.horizontal = "horizontal".asInstanceOf[typings.antd.antdStrings.horizontal]
   @scala.inline
-  def horizontal: typings.antd.antdStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.antd.antdStrings.vertical = this.cast("vertical")
+  def vertical: typings.antd.antdStrings.vertical = "vertical".asInstanceOf[typings.antd.antdStrings.vertical]
 }
 

@@ -14,7 +14,6 @@ object IProvisionedProfile {
   @scala.inline
   def apply(updateCost: NetworkCostType => Unit, updateUsage: ProfileUsage => Unit): IProvisionedProfile = {
     val __obj = js.Dynamic.literal(updateCost = js.Any.fromFunction1(updateCost), updateUsage = js.Any.fromFunction1(updateUsage))
-  
     __obj.asInstanceOf[IProvisionedProfile]
   }
 }

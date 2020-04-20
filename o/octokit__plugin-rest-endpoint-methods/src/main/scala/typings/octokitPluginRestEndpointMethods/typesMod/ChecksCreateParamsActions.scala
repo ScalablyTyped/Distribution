@@ -23,7 +23,6 @@ object ChecksCreateParamsActions {
   @scala.inline
   def apply(description: String, identifier: String, label: String): ChecksCreateParamsActions = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChecksCreateParamsActions]
   }
 }

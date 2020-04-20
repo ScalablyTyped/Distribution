@@ -16,7 +16,6 @@ object GetDataRetrievalPolicyInput {
   @scala.inline
   def apply(accountId: String): GetDataRetrievalPolicyInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDataRetrievalPolicyInput]
   }
 }

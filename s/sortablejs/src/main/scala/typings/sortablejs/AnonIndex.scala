@@ -14,7 +14,6 @@ object AnonIndex {
   @scala.inline
   def apply(index: Double, multiDragElement: HTMLElement): AnonIndex = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], multiDragElement = multiDragElement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndex]
   }
 }

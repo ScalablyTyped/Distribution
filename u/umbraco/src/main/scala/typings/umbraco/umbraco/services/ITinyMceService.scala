@@ -82,7 +82,6 @@ object ITinyMceService {
     defaultPrevalues: () => IConfiguration
   ): ITinyMceService = {
     val __obj = js.Dynamic.literal(configuration = js.Any.fromFunction0(configuration), createInsertEmbeddedMedia = js.Any.fromFunction2(createInsertEmbeddedMedia), createInsertMacro = js.Any.fromFunction2(createInsertMacro), createMediaPicker = js.Any.fromFunction1(createMediaPicker), defaultPrevalues = js.Any.fromFunction0(defaultPrevalues))
-  
     __obj.asInstanceOf[ITinyMceService]
   }
 }

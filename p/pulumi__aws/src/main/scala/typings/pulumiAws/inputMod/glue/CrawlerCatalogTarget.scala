@@ -21,7 +21,6 @@ object CrawlerCatalogTarget {
   @scala.inline
   def apply(databaseName: Input[String], tables: Input[js.Array[Input[String]]]): CrawlerCatalogTarget = {
     val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CrawlerCatalogTarget]
   }
 }

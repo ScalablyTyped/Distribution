@@ -47,7 +47,20 @@ package object mod {
   // Undeclared default props are augmented into the resulting allowable attributes
   // If declared props have indexed properties, ignore default props entirely as keyof gets widened
   // Wrap in an outer-level conditional type to allow distribution over props that are unions
-  type Defaultize[P, D] = ((typings.std.Pick[P, typings.std.Exclude[java.lang.String, java.lang.String]]) with (typings.std.Partial[typings.std.Pick[P, typings.std.Extract[java.lang.String, java.lang.String]]]) with (typings.std.Partial[typings.std.Pick[D, typings.std.Exclude[java.lang.String, java.lang.String]]])) | P
+  type Defaultize[P, D] = ((typings.std.Pick[
+    P, 
+    typings.std.Exclude[/* keyof P */ java.lang.String, /* keyof D */ java.lang.String]
+  ]) with (typings.std.Partial[
+    typings.std.Pick[
+      P, 
+      typings.std.Extract[/* keyof P */ java.lang.String, /* keyof D */ java.lang.String]
+    ]
+  ]) with (typings.std.Partial[
+    typings.std.Pick[
+      D, 
+      typings.std.Exclude[/* keyof D */ java.lang.String, /* keyof P */ java.lang.String]
+    ]
+  ])) | P
   // TODO (TypeScript 3.0): ReadonlyArray<unknown>
   type DependencyList = js.Array[js.Any]
   type DetailedHTMLProps[E /* <: typings.react.mod.HTMLAttributes[T] */, T] = typings.react.mod.ClassAttributes[T] with E
@@ -131,8 +144,11 @@ package object mod {
   // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
   type MergePropTypes[P, T] = ((typings.std.Pick[P, typings.react.mod.NotExactlyAnyPropertyKeys[P]]) with (typings.std.Pick[
     T, 
-    typings.std.Exclude[java.lang.String, typings.react.mod.NotExactlyAnyPropertyKeys[P]]
-  ]) with (typings.std.Pick[P, typings.std.Exclude[java.lang.String, java.lang.String]])) | P | T
+    typings.std.Exclude[/* keyof T */ java.lang.String, typings.react.mod.NotExactlyAnyPropertyKeys[P]]
+  ]) with (typings.std.Pick[
+    P, 
+    typings.std.Exclude[/* keyof P */ java.lang.String, /* keyof T */ java.lang.String]
+  ])) | P | T
   type MouseEventHandler[T] = typings.react.mod.EventHandler[typings.react.mod.MouseEvent[T, typings.react.mod.NativeMouseEvent]]
   type NativeAnimationEvent = typings.std.AnimationEvent
   type NativeClipboardEvent = typings.std.ClipboardEvent
@@ -146,7 +162,7 @@ package object mod {
   type NativeTransitionEvent = typings.std.TransitionEvent
   type NativeUIEvent = typings.std.UIEvent
   type NativeWheelEvent = typings.std.WheelEvent
-  type NotExactlyAnyPropertyKeys[T] = typings.std.Exclude[java.lang.String, typings.react.mod.ExactlyAnyPropertyKeys[T]]
+  type NotExactlyAnyPropertyKeys[T] = typings.std.Exclude[/* keyof T */ java.lang.String, typings.react.mod.ExactlyAnyPropertyKeys[T]]
   type PointerEventHandler[T] = typings.react.mod.EventHandler[typings.react.mod.PointerEvent[T]]
   /**
     * {@link https://github.com/bvaughn/rfcs/blob/profiler/text/0000-profiler.md#detailed-design | API}
@@ -165,7 +181,10 @@ package object mod {
   /** Ensures that the props do not include string ref, which cannot be forwarded */
   type PropsWithRef[P] = P | (typings.react.mod.PropsWithoutRef[P] with typings.react.AnonRefExclude)
   /** Ensures that the props do not include ref at all */
-  type PropsWithoutRef[P] = P | (typings.std.Pick[P, typings.std.Exclude[java.lang.String, typings.react.reactStrings.ref]])
+  type PropsWithoutRef[P] = P | (typings.std.Pick[
+    P, 
+    typings.std.Exclude[/* keyof P */ java.lang.String, typings.react.reactStrings.ref]
+  ])
   // NOTE: only the Context object itself can get a displayName
   // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
   type Provider[T] = typings.react.mod.ProviderExoticComponent[typings.react.mod.ProviderProps[T]]
@@ -268,6 +287,6 @@ package object mod {
   type Validator[T] = typings.propTypes.mod.Validator[T]
   type WeakValidationMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? null extends T[K]? react.react.Validator<T[K] | null | undefined> : undefined extends T[K]? react.react.Validator<T[K] | null | undefined> : react.react.Validator<T[K]>}
-    */ typings.react.reactStrings.WeakValidationMap with js.Any
+    */ typings.react.reactStrings.WeakValidationMap with org.scalablytyped.runtime.TopLevel[js.Any]
   type WheelEventHandler[T] = typings.react.mod.EventHandler[typings.react.mod.WheelEvent[T]]
 }

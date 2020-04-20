@@ -20,7 +20,6 @@ object BatchGetLinkAttributes {
   @scala.inline
   def apply(AttributeNames: AttributeNameList, TypedLinkSpecifier: TypedLinkSpecifier): BatchGetLinkAttributes = {
     val __obj = js.Dynamic.literal(AttributeNames = AttributeNames.asInstanceOf[js.Any], TypedLinkSpecifier = TypedLinkSpecifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetLinkAttributes]
   }
 }

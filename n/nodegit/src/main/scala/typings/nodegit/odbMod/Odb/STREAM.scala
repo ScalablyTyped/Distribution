@@ -16,12 +16,10 @@ trait STREAM extends js.Object
 
 object STREAM {
   @scala.inline
-  def RDONLY: `2` = this.cast(2)
+  def RDONLY: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def RW: `6` = this.cast(6)
+  def RW: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def WRONLY: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WRONLY: `4` = 4.asInstanceOf[`4`]
 }
 

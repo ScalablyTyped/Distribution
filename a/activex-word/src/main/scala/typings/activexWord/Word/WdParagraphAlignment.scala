@@ -28,24 +28,22 @@ trait WdParagraphAlignment extends js.Object
 
 object WdParagraphAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAlignParagraphCenter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdAlignParagraphCenter: `1` = this.cast(1)
+  def wdAlignParagraphDistribute: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdAlignParagraphDistribute: `4` = this.cast(4)
+  def wdAlignParagraphJustify: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdAlignParagraphJustify: `3` = this.cast(3)
+  def wdAlignParagraphJustifyHi: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdAlignParagraphJustifyHi: `7` = this.cast(7)
+  def wdAlignParagraphJustifyLow: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdAlignParagraphJustifyLow: `8` = this.cast(8)
+  def wdAlignParagraphJustifyMed: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdAlignParagraphJustifyMed: `5` = this.cast(5)
+  def wdAlignParagraphLeft: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdAlignParagraphLeft: `0` = this.cast(0)
+  def wdAlignParagraphRight: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAlignParagraphRight: `2` = this.cast(2)
-  @scala.inline
-  def wdAlignParagraphThaiJustify: `9` = this.cast(9)
+  def wdAlignParagraphThaiJustify: `9` = 9.asInstanceOf[`9`]
 }
 

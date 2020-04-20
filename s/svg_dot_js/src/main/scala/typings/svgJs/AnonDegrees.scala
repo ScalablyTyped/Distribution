@@ -23,7 +23,6 @@ object AnonDegrees {
     radians: Double => Double
   ): AnonDegrees = {
     val __obj = js.Dynamic.literal(degrees = js.Any.fromFunction1(degrees), filter = js.Any.fromFunction2(filter), filterSVGElements = filterSVGElements.asInstanceOf[js.Any], map = js.Any.fromFunction2(map), radians = js.Any.fromFunction1(radians))
-  
     __obj.asInstanceOf[AnonDegrees]
   }
 }

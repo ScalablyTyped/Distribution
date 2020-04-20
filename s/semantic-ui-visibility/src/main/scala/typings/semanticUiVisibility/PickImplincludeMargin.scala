@@ -13,7 +13,6 @@ object PickImplincludeMargin {
   @scala.inline
   def apply(includeMargin: Boolean): PickImplincludeMargin = {
     val __obj = js.Dynamic.literal(includeMargin = includeMargin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplincludeMargin]
   }
 }

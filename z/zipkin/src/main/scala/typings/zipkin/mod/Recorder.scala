@@ -13,7 +13,6 @@ object Recorder {
   @scala.inline
   def apply(record: Record => Unit): Recorder = {
     val __obj = js.Dynamic.literal(record = js.Any.fromFunction1(record))
-  
     __obj.asInstanceOf[Recorder]
   }
 }

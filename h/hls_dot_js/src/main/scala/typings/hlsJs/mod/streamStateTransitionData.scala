@@ -13,7 +13,6 @@ object streamStateTransitionData {
   @scala.inline
   def apply(nextState: js.Any, previousState: js.Any): streamStateTransitionData = {
     val __obj = js.Dynamic.literal(nextState = nextState.asInstanceOf[js.Any], previousState = previousState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[streamStateTransitionData]
   }
 }

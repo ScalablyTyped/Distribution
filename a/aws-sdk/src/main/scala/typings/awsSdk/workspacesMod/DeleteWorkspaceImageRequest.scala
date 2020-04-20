@@ -16,7 +16,6 @@ object DeleteWorkspaceImageRequest {
   @scala.inline
   def apply(ImageId: WorkspaceImageId): DeleteWorkspaceImageRequest = {
     val __obj = js.Dynamic.literal(ImageId = ImageId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteWorkspaceImageRequest]
   }
 }

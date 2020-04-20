@@ -16,7 +16,6 @@ object AnonConfigurable {
   @scala.inline
   def apply(configurable: Boolean, enumerable: Boolean, value: js.Function with IAction, writable: Boolean): AnonConfigurable = {
     val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], enumerable = enumerable.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfigurable]
   }
 }

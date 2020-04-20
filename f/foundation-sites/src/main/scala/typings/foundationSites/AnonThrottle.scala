@@ -14,7 +14,6 @@ object AnonThrottle {
     throttle: (js.Function1[/* repeated */ js.Any, _], Double) => js.Function1[/* repeated */ js.Any, _]
   ): AnonThrottle = {
     val __obj = js.Dynamic.literal(throttle = js.Any.fromFunction2(throttle))
-  
     __obj.asInstanceOf[AnonThrottle]
   }
 }

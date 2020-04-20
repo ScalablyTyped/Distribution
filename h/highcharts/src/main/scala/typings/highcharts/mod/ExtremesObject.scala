@@ -41,7 +41,6 @@ object ExtremesObject {
   @scala.inline
   def apply(dataMax: Double, dataMin: Double, max: Double, min: Double, userMax: Double, userMin: Double): ExtremesObject = {
     val __obj = js.Dynamic.literal(dataMax = dataMax.asInstanceOf[js.Any], dataMin = dataMin.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], userMax = userMax.asInstanceOf[js.Any], userMin = userMin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtremesObject]
   }
 }

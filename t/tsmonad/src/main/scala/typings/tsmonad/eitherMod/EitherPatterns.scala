@@ -13,7 +13,6 @@ object EitherPatterns {
   @scala.inline
   def apply[L, R, T](left: L => T, right: R => T): EitherPatterns[L, R, T] = {
     val __obj = js.Dynamic.literal(left = js.Any.fromFunction1(left), right = js.Any.fromFunction1(right))
-  
     __obj.asInstanceOf[EitherPatterns[L, R, T]]
   }
 }

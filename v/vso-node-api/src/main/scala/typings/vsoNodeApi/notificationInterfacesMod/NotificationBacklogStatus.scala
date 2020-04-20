@@ -22,7 +22,6 @@ object NotificationBacklogStatus {
     unprocessedNotifications: Double
   ): NotificationBacklogStatus = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], maxUnprocessedNotificationAgeMs = maxUnprocessedNotificationAgeMs.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], timeSinceLastProcessedNotificationMs = timeSinceLastProcessedNotificationMs.asInstanceOf[js.Any], unprocessedNotifications = unprocessedNotifications.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationBacklogStatus]
   }
 }

@@ -15,7 +15,6 @@ object AnonConsolidate {
   @scala.inline
   def apply(consolidate: Boolean, report: Boolean, savePath: String, useDotNotation: Boolean): AnonConsolidate = {
     val __obj = js.Dynamic.literal(consolidate = consolidate.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any], savePath = savePath.asInstanceOf[js.Any], useDotNotation = useDotNotation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConsolidate]
   }
 }

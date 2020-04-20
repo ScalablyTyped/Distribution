@@ -16,7 +16,6 @@ object Shader {
   @scala.inline
   def apply(fragmentShader: String, uniforms: StringDictionary[IUniform], vertexShader: String): Shader = {
     val __obj = js.Dynamic.literal(fragmentShader = fragmentShader.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any], vertexShader = vertexShader.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Shader]
   }
 }

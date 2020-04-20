@@ -23,7 +23,7 @@ abstract class CaseValue protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FCaseValue: IModel = js.native
-  def containerAsSequenceFlow(): SequenceFlow = js.native
+  def containerAsSequenceFlow: SequenceFlow = js.native
 }
 
 /* static members */

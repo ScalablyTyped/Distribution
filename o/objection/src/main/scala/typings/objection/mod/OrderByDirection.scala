@@ -16,14 +16,12 @@ trait OrderByDirection extends js.Object
 
 object OrderByDirection {
   @scala.inline
-  def ASC: typings.objection.objectionStrings.ASC = this.cast("ASC")
+  def ASC: typings.objection.objectionStrings.ASC = "ASC".asInstanceOf[typings.objection.objectionStrings.ASC]
   @scala.inline
-  def DESC: typings.objection.objectionStrings.DESC = this.cast("DESC")
+  def DESC: typings.objection.objectionStrings.DESC = "DESC".asInstanceOf[typings.objection.objectionStrings.DESC]
   @scala.inline
-  def asc: asc_ = this.cast("asc")
+  def asc: asc_ = "asc".asInstanceOf[asc_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def desc: desc_ = this.cast("desc")
+  def desc: desc_ = "desc".asInstanceOf[desc_]
 }
 

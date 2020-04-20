@@ -20,7 +20,6 @@ object RuleSummary {
   @scala.inline
   def apply(Name: ResourceName, RuleId: ResourceId): RuleSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RuleId = RuleId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuleSummary]
   }
 }

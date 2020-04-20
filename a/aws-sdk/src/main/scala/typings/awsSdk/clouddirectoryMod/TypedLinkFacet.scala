@@ -28,7 +28,6 @@ object TypedLinkFacet {
     Name: TypedLinkName
   ): TypedLinkFacet = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], IdentityAttributeOrder = IdentityAttributeOrder.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypedLinkFacet]
   }
 }

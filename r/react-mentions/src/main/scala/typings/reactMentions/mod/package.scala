@@ -12,7 +12,7 @@ package object mod {
   ]
   type DisplayTransformFunc = js.Function2[/* id */ java.lang.String, /* display */ java.lang.String, java.lang.String]
   type MentionsInputClass = typings.react.mod.ComponentClass[typings.reactMentions.mod.MentionsInputProps, typings.react.mod.ComponentState]
-  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type OnChangeHandlerFunc = js.Function4[
     /* event */ typings.reactMentions.AnonTarget, 
     /* newValue */ java.lang.String, 

@@ -13,7 +13,6 @@ object IFocusTrapZoneDialogInPanelExampleState {
   @scala.inline
   def apply(hideDialog: Boolean, showPanel: Boolean): IFocusTrapZoneDialogInPanelExampleState = {
     val __obj = js.Dynamic.literal(hideDialog = hideDialog.asInstanceOf[js.Any], showPanel = showPanel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFocusTrapZoneDialogInPanelExampleState]
   }
 }

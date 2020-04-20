@@ -23,7 +23,6 @@ object AnonIdlength {
     types: String
   ): AnonIdlength = {
     val __obj = js.Dynamic.literal(idlength = idlength.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIdlength]
   }
 }

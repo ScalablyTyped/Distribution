@@ -20,7 +20,6 @@ object AddressGateway {
     update: (String, String, AddressUpdateRequest) => js.Promise[ValidatedResponse[Address]]
   ): AddressGateway = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction2(delete), find = js.Any.fromFunction2(find), update = js.Any.fromFunction3(update))
-  
     __obj.asInstanceOf[AddressGateway]
   }
 }

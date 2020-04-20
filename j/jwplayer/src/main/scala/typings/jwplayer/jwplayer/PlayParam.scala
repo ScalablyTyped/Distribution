@@ -17,7 +17,6 @@ object PlayParam {
   @scala.inline
   def apply(oldstate: buffering | playing, viewable: `0` | `1`): PlayParam = {
     val __obj = js.Dynamic.literal(oldstate = oldstate.asInstanceOf[js.Any], viewable = viewable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlayParam]
   }
 }

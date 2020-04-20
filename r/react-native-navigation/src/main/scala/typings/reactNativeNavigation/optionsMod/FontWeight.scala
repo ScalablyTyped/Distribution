@@ -19,24 +19,22 @@ trait FontWeight extends js.Object
 
 object FontWeight {
   @scala.inline
-  def black: typings.reactNativeNavigation.reactNativeNavigationStrings.black = this.cast("black")
+  def black: typings.reactNativeNavigation.reactNativeNavigationStrings.black = "black".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.black]
   @scala.inline
-  def bold: typings.reactNativeNavigation.reactNativeNavigationStrings.bold = this.cast("bold")
+  def bold: typings.reactNativeNavigation.reactNativeNavigationStrings.bold = "bold".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.bold]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def heavy: typings.reactNativeNavigation.reactNativeNavigationStrings.heavy = "heavy".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.heavy]
   @scala.inline
-  def heavy: typings.reactNativeNavigation.reactNativeNavigationStrings.heavy = this.cast("heavy")
+  def light: typings.reactNativeNavigation.reactNativeNavigationStrings.light = "light".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.light]
   @scala.inline
-  def light: typings.reactNativeNavigation.reactNativeNavigationStrings.light = this.cast("light")
+  def medium: typings.reactNativeNavigation.reactNativeNavigationStrings.medium = "medium".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.medium]
   @scala.inline
-  def medium: typings.reactNativeNavigation.reactNativeNavigationStrings.medium = this.cast("medium")
+  def regular: typings.reactNativeNavigation.reactNativeNavigationStrings.regular = "regular".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.regular]
   @scala.inline
-  def regular: typings.reactNativeNavigation.reactNativeNavigationStrings.regular = this.cast("regular")
+  def semibold: typings.reactNativeNavigation.reactNativeNavigationStrings.semibold = "semibold".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.semibold]
   @scala.inline
-  def semibold: typings.reactNativeNavigation.reactNativeNavigationStrings.semibold = this.cast("semibold")
+  def thin: typings.reactNativeNavigation.reactNativeNavigationStrings.thin = "thin".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.thin]
   @scala.inline
-  def thin: typings.reactNativeNavigation.reactNativeNavigationStrings.thin = this.cast("thin")
-  @scala.inline
-  def ultraLight: typings.reactNativeNavigation.reactNativeNavigationStrings.ultraLight = this.cast("ultraLight")
+  def ultraLight: typings.reactNativeNavigation.reactNativeNavigationStrings.ultraLight = "ultraLight".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.ultraLight]
 }
 

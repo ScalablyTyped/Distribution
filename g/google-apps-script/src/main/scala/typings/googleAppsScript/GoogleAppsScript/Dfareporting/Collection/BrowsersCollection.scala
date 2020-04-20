@@ -14,7 +14,6 @@ object BrowsersCollection {
   @scala.inline
   def apply(list: String => BrowsersListResponse): BrowsersCollection = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[BrowsersCollection]
   }
 }

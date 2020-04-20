@@ -13,7 +13,6 @@ object EditClickEventArgs {
   @scala.inline
   def apply(htmlElement: js.Any, htmlEvent: js.Any, sender: Control): EditClickEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditClickEventArgs]
   }
 }

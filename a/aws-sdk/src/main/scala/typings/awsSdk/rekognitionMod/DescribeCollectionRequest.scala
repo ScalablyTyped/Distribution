@@ -16,7 +16,6 @@ object DescribeCollectionRequest {
   @scala.inline
   def apply(CollectionId: CollectionId): DescribeCollectionRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeCollectionRequest]
   }
 }

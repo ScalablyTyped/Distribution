@@ -27,7 +27,6 @@ object AnonAPPID {
     UNIONID: String
   ): AnonAPPID = {
     val __obj = js.Dynamic.literal(APPID = APPID.asInstanceOf[js.Any], ENV = ENV.asInstanceOf[js.Any], OPENID = OPENID.asInstanceOf[js.Any], SOURCE = SOURCE.asInstanceOf[js.Any], UNIONID = UNIONID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAPPID]
   }
 }

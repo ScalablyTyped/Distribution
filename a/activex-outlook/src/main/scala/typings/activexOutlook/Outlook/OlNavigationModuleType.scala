@@ -28,24 +28,22 @@ trait OlNavigationModuleType extends js.Object
 
 object OlNavigationModuleType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olModuleCalendar: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olModuleCalendar: `1` = this.cast(1)
+  def olModuleContacts: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olModuleContacts: `2` = this.cast(2)
+  def olModuleFolderList: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olModuleFolderList: `6` = this.cast(6)
+  def olModuleJournal: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olModuleJournal: `4` = this.cast(4)
+  def olModuleMail: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olModuleMail: `0` = this.cast(0)
+  def olModuleNotes: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olModuleNotes: `5` = this.cast(5)
+  def olModuleShortcuts: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olModuleShortcuts: `7` = this.cast(7)
+  def olModuleSolutions: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olModuleSolutions: `8` = this.cast(8)
-  @scala.inline
-  def olModuleTasks: `3` = this.cast(3)
+  def olModuleTasks: `3` = 3.asInstanceOf[`3`]
 }
 

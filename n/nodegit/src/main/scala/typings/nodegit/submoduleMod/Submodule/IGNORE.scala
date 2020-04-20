@@ -20,16 +20,14 @@ trait IGNORE extends js.Object
 
 object IGNORE {
   @scala.inline
-  def ALL: `4` = this.cast(4)
+  def ALL: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def DIRTY: `3` = this.cast(3)
+  def DIRTY: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def NONE: `1` = this.cast(1)
+  def NONE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def UNSPECIFIED: `-1` = this.cast(-1)
+  def UNSPECIFIED: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def UNTRACKED: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNTRACKED: `2` = 2.asInstanceOf[`2`]
 }
 

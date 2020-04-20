@@ -13,7 +13,6 @@ object ImportManager {
   @scala.inline
   def apply(contents: StringDictionary[String]): ImportManager = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImportManager]
   }
 }

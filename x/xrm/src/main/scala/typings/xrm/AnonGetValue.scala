@@ -13,7 +13,6 @@ object AnonGetValue {
   @scala.inline
   def apply(getValue: () => StageCategory): AnonGetValue = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
-  
     __obj.asInstanceOf[AnonGetValue]
   }
 }

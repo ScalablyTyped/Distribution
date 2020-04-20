@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactSAlertProps {
   @scala.inline
-  def ReactSAlertProps: SAlertProps.type = typings.reactSAlert.mod.SAlert.SAlertProps
+  def ReactSAlertProps: SAlertProps.type = SAlertProps
   type ReactSAlertProps = SAlertProps
 }
 

@@ -12,10 +12,8 @@ trait SpotifyPlayingState extends js.Object
 
 object SpotifyPlayingState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def paused: typings.spotifyNodeApplescript.spotifyNodeApplescriptStrings.paused = "paused".asInstanceOf[typings.spotifyNodeApplescript.spotifyNodeApplescriptStrings.paused]
   @scala.inline
-  def paused: typings.spotifyNodeApplescript.spotifyNodeApplescriptStrings.paused = this.cast("paused")
-  @scala.inline
-  def playing: typings.spotifyNodeApplescript.spotifyNodeApplescriptStrings.playing = this.cast("playing")
+  def playing: typings.spotifyNodeApplescript.spotifyNodeApplescriptStrings.playing = "playing".asInstanceOf[typings.spotifyNodeApplescript.spotifyNodeApplescriptStrings.playing]
 }
 

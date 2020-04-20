@@ -25,7 +25,6 @@ object INxLinkedObjectInfo {
   @scala.inline
   def apply(qInfo: INxInfo, qRootId: String): INxLinkedObjectInfo = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qRootId = qRootId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxLinkedObjectInfo]
   }
 }

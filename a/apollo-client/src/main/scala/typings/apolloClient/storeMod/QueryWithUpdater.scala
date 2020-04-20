@@ -20,7 +20,6 @@ object QueryWithUpdater {
     updater: (/* previousResult */ Record[String, js.Any], /* options */ AnonMutationResult[js.Object]) => Record[String, js.Any]
   ): QueryWithUpdater = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], updater = js.Any.fromFunction2(updater))
-  
     __obj.asInstanceOf[QueryWithUpdater]
   }
 }

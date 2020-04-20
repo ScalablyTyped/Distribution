@@ -28,7 +28,6 @@ object vectorFontFitting {
   @scala.inline
   def apply(FIT: Double, FLOW: Double, NONE: Double): vectorFontFitting = {
     val __obj = js.Dynamic.literal(FIT = FIT.asInstanceOf[js.Any], FLOW = FLOW.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[vectorFontFitting]
   }
 }

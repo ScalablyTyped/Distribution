@@ -127,7 +127,7 @@ class DefaultRenderingPipeline ()
     * @param camera the camera to be added
     */
   def addCamera(camera: Camera): Unit = js.native
-  def bloomEnabled(): Boolean = js.native
+  def bloomEnabled: Boolean = js.native
   /**
     * Enable or disable the bloom from the pipeline
     */
@@ -135,24 +135,24 @@ class DefaultRenderingPipeline ()
   /**
     * Specifies the size of the bloom blur kernel, relative to the final output size
     */
-  def bloomKernel(): Double = js.native
+  def bloomKernel: Double = js.native
   def bloomKernel(value: Double): js.Any = js.native
-  def bloomScale(): Double = js.native
+  def bloomScale: Double = js.native
   /**
     * The scale of the bloom, lower value will provide better performance.
     */
   def bloomScale(value: Double): js.Any = js.native
-  def bloomThreshold(): Double = js.native
+  def bloomThreshold: Double = js.native
   /**
     * The strength of the bloom.
     */
   def bloomThreshold(value: Double): js.Any = js.native
-  def bloomWeight(): Double = js.native
+  def bloomWeight: Double = js.native
   /**
     * The strength of the bloom.
     */
   def bloomWeight(value: Double): js.Any = js.native
-  def chromaticAberrationEnabled(): Boolean = js.native
+  def chromaticAberrationEnabled: Boolean = js.native
   /**
     * Enable or disable the chromaticAberration process from the pipeline
     */
@@ -160,19 +160,19 @@ class DefaultRenderingPipeline ()
   /**
     * Blur level of the depth of field effect. (Higher blur will effect performance)
     */
-  def depthOfFieldBlurLevel(): DepthOfFieldEffectBlurLevel = js.native
+  def depthOfFieldBlurLevel: DepthOfFieldEffectBlurLevel = js.native
   def depthOfFieldBlurLevel(value: DepthOfFieldEffectBlurLevel): js.Any = js.native
   /**
     * If the depth of field is enabled.
     */
-  def depthOfFieldEnabled(): Boolean = js.native
+  def depthOfFieldEnabled: Boolean = js.native
   def depthOfFieldEnabled(enabled: Boolean): js.Any = js.native
   /**
     * Disposes of the pipeline
     */
   /* InferMemberOverrides */
   override def dispose(): Unit = js.native
-  def fxaaEnabled(): Boolean = js.native
+  def fxaaEnabled: Boolean = js.native
   /**
     * If the anti aliasing is enabled.
     */
@@ -180,18 +180,18 @@ class DefaultRenderingPipeline ()
   /**
     * Gets the glow layer (or null if not defined)
     */
-  def glowLayer(): Nullable[GlowLayer] = js.native
-  def glowLayerEnabled(): Boolean = js.native
+  def glowLayer: Nullable[GlowLayer] = js.native
+  def glowLayerEnabled: Boolean = js.native
   /**
     * If glow layer is enabled. (Adds a glow effect to emmissive materials)
     */
   def glowLayerEnabled(enabled: Boolean): js.Any = js.native
-  def grainEnabled(): Boolean = js.native
+  def grainEnabled: Boolean = js.native
   /**
     * Enable or disable the grain process from the pipeline
     */
   def grainEnabled(enabled: Boolean): js.Any = js.native
-  def imageProcessingEnabled(): Boolean = js.native
+  def imageProcessingEnabled: Boolean = js.native
   /**
     * If image processing is enabled.
     */
@@ -205,7 +205,7 @@ class DefaultRenderingPipeline ()
     * @param camera the camera to remove
     */
   def removeCamera(camera: Camera): Unit = js.native
-  def samples(): Double = js.native
+  def samples: Double = js.native
   /**
     * MSAA sample count, setting this to 4 will provide 4x anti aliasing. (default: 1)
     */
@@ -213,13 +213,13 @@ class DefaultRenderingPipeline ()
   /**
     * Gets active scene
     */
-  def scene(): Scene = js.native
+  def scene: Scene = js.native
   /**
     * Serialize the rendering pipeline (Used when exporting)
     * @returns the serialized object
     */
   def serialize(): js.Any = js.native
-  def sharpenEnabled(): Boolean = js.native
+  def sharpenEnabled: Boolean = js.native
   /**
     * Enable or disable the sharpen process from the pipeline
     */

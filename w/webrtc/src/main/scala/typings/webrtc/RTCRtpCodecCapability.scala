@@ -13,7 +13,6 @@ object RTCRtpCodecCapability {
   @scala.inline
   def apply(mimeType: String): RTCRtpCodecCapability = {
     val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RTCRtpCodecCapability]
   }
 }

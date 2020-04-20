@@ -17,7 +17,6 @@ object StepInfo {
   @scala.inline
   def apply(step: Double, timestamp: Double): StepInfo = {
     val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StepInfo]
   }
 }

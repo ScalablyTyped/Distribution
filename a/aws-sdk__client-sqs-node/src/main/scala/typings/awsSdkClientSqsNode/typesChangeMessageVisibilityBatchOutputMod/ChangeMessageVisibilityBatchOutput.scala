@@ -32,7 +32,6 @@ object ChangeMessageVisibilityBatchOutput {
     Successful: js.Array[UnmarshalledChangeMessageVisibilityBatchResultEntry]
   ): ChangeMessageVisibilityBatchOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Failed = Failed.asInstanceOf[js.Any], Successful = Successful.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeMessageVisibilityBatchOutput]
   }
 }

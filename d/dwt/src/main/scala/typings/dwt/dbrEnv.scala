@@ -28,7 +28,6 @@ object dbrEnv {
     resourcesPath: String
   ): dbrEnv = {
     val __obj = js.Dynamic.literal(bAutoConnectService = bAutoConnectService.asInstanceOf[js.Any], disableAutoDownloadModule = disableAutoDownloadModule.asInstanceOf[js.Any], hideDWASInstallDialog = hideDWASInstallDialog.asInstanceOf[js.Any], logLevel = logLevel.asInstanceOf[js.Any], onAutoConnectServiceError = js.Any.fromFunction1(onAutoConnectServiceError), onAutoConnectServiceSuccess = js.Any.fromFunction0(onAutoConnectServiceSuccess), productKey = productKey.asInstanceOf[js.Any], resourcesPath = resourcesPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[dbrEnv]
   }
 }

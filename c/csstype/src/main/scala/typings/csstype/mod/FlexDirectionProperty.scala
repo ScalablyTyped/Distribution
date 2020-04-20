@@ -19,24 +19,22 @@ trait FlexDirectionProperty extends js.Object
 
 object FlexDirectionProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def column: typings.csstype.csstypeStrings.column = "column".asInstanceOf[typings.csstype.csstypeStrings.column]
   @scala.inline
-  def column: typings.csstype.csstypeStrings.column = this.cast("column")
+  def `column-reverse`: typings.csstype.csstypeStrings.`column-reverse` = "column-reverse".asInstanceOf[typings.csstype.csstypeStrings.`column-reverse`]
   @scala.inline
-  def `column-reverse`: typings.csstype.csstypeStrings.`column-reverse` = this.cast("column-reverse")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def row: typings.csstype.csstypeStrings.row = "row".asInstanceOf[typings.csstype.csstypeStrings.row]
   @scala.inline
-  def row: typings.csstype.csstypeStrings.row = this.cast("row")
+  def `row-reverse`: typings.csstype.csstypeStrings.`row-reverse` = "row-reverse".asInstanceOf[typings.csstype.csstypeStrings.`row-reverse`]
   @scala.inline
-  def `row-reverse`: typings.csstype.csstypeStrings.`row-reverse` = this.cast("row-reverse")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

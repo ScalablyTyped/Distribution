@@ -33,7 +33,6 @@ object TableColumn {
     totalsRowLabel: String
   ): TableColumn = {
     val __obj = js.Dynamic.literal(filterButton = filterButton.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], totalsRowFormula = totalsRowFormula.asInstanceOf[js.Any], totalsRowFunction = totalsRowFunction.asInstanceOf[js.Any], totalsRowLabel = totalsRowLabel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableColumn]
   }
 }

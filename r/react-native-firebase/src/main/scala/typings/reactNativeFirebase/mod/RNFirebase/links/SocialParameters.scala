@@ -18,7 +18,6 @@ object SocialParameters {
     setTitle: String => DynamicLink
   ): SocialParameters = {
     val __obj = js.Dynamic.literal(setDescriptionText = js.Any.fromFunction1(setDescriptionText), setImageUrl = js.Any.fromFunction1(setImageUrl), setTitle = js.Any.fromFunction1(setTitle))
-  
     __obj.asInstanceOf[SocialParameters]
   }
 }

@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Participant extends js.Object {
+  /**
+    * The participant's phone number.
+    */
   var PhoneNumber: js.UndefOr[E164PhoneNumber] = js.native
+  /**
+    * The participant's proxy phone number.
+    */
   var ProxyPhoneNumber: js.UndefOr[E164PhoneNumber] = js.native
 }
 

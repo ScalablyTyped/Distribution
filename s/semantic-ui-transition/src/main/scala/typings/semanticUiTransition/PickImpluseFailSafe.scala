@@ -13,7 +13,6 @@ object PickImpluseFailSafe {
   @scala.inline
   def apply(useFailSafe: Boolean): PickImpluseFailSafe = {
     val __obj = js.Dynamic.literal(useFailSafe = useFailSafe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpluseFailSafe]
   }
 }

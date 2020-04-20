@@ -13,7 +13,6 @@ object TypeofTextract {
   @scala.inline
   def apply(Types: TypeofTextract): TypeofTextract = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofTextract]
   }
 }

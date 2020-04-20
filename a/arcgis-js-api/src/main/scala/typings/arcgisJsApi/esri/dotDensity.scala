@@ -36,6 +36,7 @@ trait dotDensity extends js.Object {
     * @param params.outlineOptimizationEnabled Indicates whether the polygon outline width should vary based on view scale. When false, no outline will be used in the output renderer.
     * @param params.legendOptions Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
     * @param params.dotDensityScheme In authoring apps, the user may select a pre-defined dot density scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
+    * @param params.signal Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def createRenderer(params: dotDensityCreateRendererParams): js.Promise[RendererResult]

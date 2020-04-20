@@ -1,5 +1,6 @@
 package typings.pulumiAws.egressOnlyInternetGatewayMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -21,6 +22,10 @@ class EgressOnlyInternetGateway protected () extends CustomResource {
     */
   def this(name: String, args: EgressOnlyInternetGatewayArgs) = this()
   def this(name: String, args: EgressOnlyInternetGatewayArgs, opts: CustomResourceOptions) = this()
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * The VPC ID to create in.
     */

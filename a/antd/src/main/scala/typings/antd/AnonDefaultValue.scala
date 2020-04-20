@@ -22,7 +22,6 @@ object AnonDefaultValue {
     value: Requireable[js.Array[_]]
   ): AnonDefaultValue = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefaultValue]
   }
 }

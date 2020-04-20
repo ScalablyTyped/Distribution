@@ -39,7 +39,6 @@ object AffineTransform {
     toBuilder: () => AffineTransformBuilder
   ): AffineTransform = {
     val __obj = js.Dynamic.literal(getScaleX = js.Any.fromFunction0(getScaleX), getScaleY = js.Any.fromFunction0(getScaleY), getShearX = js.Any.fromFunction0(getShearX), getShearY = js.Any.fromFunction0(getShearY), getTranslateX = js.Any.fromFunction0(getTranslateX), getTranslateY = js.Any.fromFunction0(getTranslateY), toBuilder = js.Any.fromFunction0(toBuilder))
-  
     __obj.asInstanceOf[AffineTransform]
   }
 }

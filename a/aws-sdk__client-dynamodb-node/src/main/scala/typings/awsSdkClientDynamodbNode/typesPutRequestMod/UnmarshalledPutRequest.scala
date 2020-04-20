@@ -18,7 +18,6 @@ object UnmarshalledPutRequest {
   @scala.inline
   def apply(Item: StringDictionary[UnmarshalledAttributeValue]): UnmarshalledPutRequest = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledPutRequest]
   }
 }

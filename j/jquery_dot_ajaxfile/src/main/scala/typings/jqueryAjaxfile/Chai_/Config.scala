@@ -12,7 +12,6 @@ object Config {
   @scala.inline
   def apply(includeStack: Boolean): Config = {
     val __obj = js.Dynamic.literal(includeStack = includeStack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Config]
   }
 }

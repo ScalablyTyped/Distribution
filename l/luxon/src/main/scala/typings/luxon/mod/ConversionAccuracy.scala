@@ -12,10 +12,8 @@ trait ConversionAccuracy extends js.Object
 
 object ConversionAccuracy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def casual: typings.luxon.luxonStrings.casual = "casual".asInstanceOf[typings.luxon.luxonStrings.casual]
   @scala.inline
-  def casual: typings.luxon.luxonStrings.casual = this.cast("casual")
-  @scala.inline
-  def longterm: typings.luxon.luxonStrings.longterm = this.cast("longterm")
+  def longterm: typings.luxon.luxonStrings.longterm = "longterm".asInstanceOf[typings.luxon.luxonStrings.longterm]
 }
 

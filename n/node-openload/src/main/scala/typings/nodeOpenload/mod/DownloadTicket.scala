@@ -24,7 +24,6 @@ object DownloadTicket {
     wait_time: Double
   ): DownloadTicket = {
     val __obj = js.Dynamic.literal(captcha_h = captcha_h.asInstanceOf[js.Any], captcha_url = captcha_url.asInstanceOf[js.Any], captcha_w = captcha_w.asInstanceOf[js.Any], ticket = ticket.asInstanceOf[js.Any], valid_until = valid_until.asInstanceOf[js.Any], wait_time = wait_time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DownloadTicket]
   }
 }

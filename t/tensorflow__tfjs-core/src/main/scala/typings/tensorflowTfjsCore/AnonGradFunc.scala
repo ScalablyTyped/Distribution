@@ -15,7 +15,6 @@ object AnonGradFunc {
   @scala.inline
   def apply[T /* <: Tensor[Rank] */](gradFunc: (T, js.Array[Tensor[Rank]]) => Tensor[Rank] | js.Array[Tensor[Rank]], value: T): AnonGradFunc[T] = {
     val __obj = js.Dynamic.literal(gradFunc = js.Any.fromFunction2(gradFunc), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGradFunc[T]]
   }
 }

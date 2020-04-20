@@ -15,16 +15,14 @@ trait AppLockerApplicationControlType extends js.Object
 
 object AppLockerApplicationControlType {
   @scala.inline
-  def auditComponentsAndStoreApps: typings.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps = this.cast("auditComponentsAndStoreApps")
+  def auditComponentsAndStoreApps: typings.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps = "auditComponentsAndStoreApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps]
   @scala.inline
-  def auditComponentsStoreAppsAndSmartlocker: typings.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker = this.cast("auditComponentsStoreAppsAndSmartlocker")
+  def auditComponentsStoreAppsAndSmartlocker: typings.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker = "auditComponentsStoreAppsAndSmartlocker".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def enforceComponentsAndStoreApps: typings.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps = "enforceComponentsAndStoreApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps]
   @scala.inline
-  def enforceComponentsAndStoreApps: typings.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps = this.cast("enforceComponentsAndStoreApps")
+  def enforceComponentsStoreAppsAndSmartlocker: typings.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker = "enforceComponentsStoreAppsAndSmartlocker".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker]
   @scala.inline
-  def enforceComponentsStoreAppsAndSmartlocker: typings.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker = this.cast("enforceComponentsStoreAppsAndSmartlocker")
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = this.cast("notConfigured")
+  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
 }
 

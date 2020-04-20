@@ -20,7 +20,6 @@ object PutRepositoryTriggersInput {
   @scala.inline
   def apply(repositoryName: RepositoryName, triggers: RepositoryTriggersList): PutRepositoryTriggersInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutRepositoryTriggersInput]
   }
 }

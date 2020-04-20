@@ -1136,9 +1136,9 @@ object grommetStrings {
   @scala.inline
   def NonUndefinedProps: NonUndefinedProps = "NonUndefinedProps".asInstanceOf[NonUndefinedProps]
   @scala.inline
-  def `North America`: `North America` = "North America".asInstanceOf[`North America`]
+  def `North America`: `North America` = ("North America").asInstanceOf[`North America`]
   @scala.inline
-  def `South America`: `South America` = "South America".asInstanceOf[`South America`]
+  def `South America`: `South America` = ("South America").asInstanceOf[`South America`]
   @scala.inline
   def _blank: _blank = "_blank".asInstanceOf[_blank]
   @scala.inline

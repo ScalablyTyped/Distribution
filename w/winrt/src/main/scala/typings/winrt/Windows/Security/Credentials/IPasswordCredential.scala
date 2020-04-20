@@ -23,7 +23,6 @@ object IPasswordCredential {
     userName: String
   ): IPasswordCredential = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], retrievePassword = js.Any.fromFunction0(retrievePassword), userName = userName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPasswordCredential]
   }
 }

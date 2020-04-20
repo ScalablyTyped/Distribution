@@ -46,7 +46,6 @@ object AuthStore {
     getAASUrl: () => js.Promise[String]
   ): AuthStore = {
     val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction3(authenticate), from = js.Any.fromFunction1(from), getAASUrl = js.Any.fromFunction0(getAASUrl))
-  
     __obj.asInstanceOf[AuthStore]
   }
 }

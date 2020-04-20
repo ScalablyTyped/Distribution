@@ -13,7 +13,6 @@ object IDecompressorFactory {
   @scala.inline
   def apply(createDecompressor: IInputStream => Decompressor): IDecompressorFactory = {
     val __obj = js.Dynamic.literal(createDecompressor = js.Any.fromFunction1(createDecompressor))
-  
     __obj.asInstanceOf[IDecompressorFactory]
   }
 }

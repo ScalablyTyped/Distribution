@@ -17,7 +17,6 @@ object IGenericMeasureListProperties {
   @scala.inline
   def apply(qInfo: IGenericMeassureListNxInfo, qMeasureListDef: IMeasureListDef): IGenericMeasureListProperties = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qMeasureListDef = qMeasureListDef.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGenericMeasureListProperties]
   }
 }

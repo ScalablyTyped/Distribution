@@ -18,14 +18,12 @@ trait XlErrorBarInclude extends js.Object
 
 object XlErrorBarInclude {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlErrorBarIncludeBoth: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlErrorBarIncludeBoth: `1` = this.cast(1)
+  def xlErrorBarIncludeMinusValues: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlErrorBarIncludeMinusValues: `3` = this.cast(3)
+  def xlErrorBarIncludeNone: `-4142` = -4142.asInstanceOf[`-4142`]
   @scala.inline
-  def xlErrorBarIncludeNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlErrorBarIncludePlusValues: `2` = this.cast(2)
+  def xlErrorBarIncludePlusValues: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -13,7 +13,6 @@ object AnonAllOrNone {
   @scala.inline
   def apply(allOrNone: Double, bestEffort: Double): AnonAllOrNone = {
     val __obj = js.Dynamic.literal(allOrNone = allOrNone.asInstanceOf[js.Any], bestEffort = bestEffort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllOrNone]
   }
 }

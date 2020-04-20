@@ -26,7 +26,6 @@ object IIterator {
   @scala.inline
   def apply[T](current: T, getMany: () => AnonItems[T], hasCurrent: Boolean, moveNext: () => Boolean): IIterator[T] = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], getMany = js.Any.fromFunction0(getMany), hasCurrent = hasCurrent.asInstanceOf[js.Any], moveNext = js.Any.fromFunction0(moveNext))
-  
     __obj.asInstanceOf[IIterator[T]]
   }
 }

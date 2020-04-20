@@ -13,7 +13,6 @@ object TestSummaryForWorkItem {
   @scala.inline
   def apply(summary: AggregatedDataForResultTrend, workItem: WorkItemReference): TestSummaryForWorkItem = {
     val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any], workItem = workItem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestSummaryForWorkItem]
   }
 }

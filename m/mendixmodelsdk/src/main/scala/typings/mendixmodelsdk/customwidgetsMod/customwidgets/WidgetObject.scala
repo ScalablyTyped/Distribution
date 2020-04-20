@@ -25,8 +25,8 @@ class WidgetObject protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FWidgetObject: IModel = js.native
-  def containerAsCustomWidget(): CustomWidget = js.native
-  def containerAsWidgetValue(): WidgetValue = js.native
+  def containerAsCustomWidget: CustomWidget = js.native
+  def containerAsWidgetValue: WidgetValue = js.native
   def labelTemplate(): js.Any = js.native
   def labelTemplate(newValue: ClientTemplate): js.Any = js.native
   /**
@@ -34,15 +34,15 @@ class WidgetObject protected () extends Element {
     * In version 7.23.0: introduced
     */
   @JSName("labelTemplate")
-  def labelTemplate_Union(): ClientTemplate | Null = js.native
-  def properties(): IList[WidgetProperty] = js.native
+  def labelTemplate_Union: ClientTemplate | Null = js.native
+  def properties: IList[WidgetProperty] = js.native
   def `type`(): js.Any = js.native
   def `type`(newValue: WidgetObjectType): js.Any = js.native
   /**
     * In version 7.13.0: added optional
     */
   @JSName("type")
-  def type_Union(): WidgetObjectType | Null = js.native
+  def type_Union: WidgetObjectType | Null = js.native
 }
 
 /* static members */

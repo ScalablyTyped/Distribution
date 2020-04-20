@@ -16,7 +16,6 @@ object AnonDateTime {
   @scala.inline
   def apply(date: date, dateTime: datetime, timeZone: String): AnonDateTime = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], dateTime = dateTime.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDateTime]
   }
 }

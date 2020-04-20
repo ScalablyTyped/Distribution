@@ -15,7 +15,6 @@ object JWK {
   @scala.inline
   def EC(crv: String, kty: typings.jwkToPem.jwkToPemStrings.EC, x: String, y: String): JWK = {
     val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JWK]
   }
   @scala.inline

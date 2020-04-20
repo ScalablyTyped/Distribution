@@ -15,14 +15,12 @@ trait StripeCardDataFunding extends js.Object
 
 object StripeCardDataFunding {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def credit: typings.stripeV2.stripeV2Strings.credit = "credit".asInstanceOf[typings.stripeV2.stripeV2Strings.credit]
   @scala.inline
-  def credit: typings.stripeV2.stripeV2Strings.credit = this.cast("credit")
+  def debit: typings.stripeV2.stripeV2Strings.debit = "debit".asInstanceOf[typings.stripeV2.stripeV2Strings.debit]
   @scala.inline
-  def debit: typings.stripeV2.stripeV2Strings.debit = this.cast("debit")
+  def prepaid: typings.stripeV2.stripeV2Strings.prepaid = "prepaid".asInstanceOf[typings.stripeV2.stripeV2Strings.prepaid]
   @scala.inline
-  def prepaid: typings.stripeV2.stripeV2Strings.prepaid = this.cast("prepaid")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

@@ -20,7 +20,6 @@ object PutEventSelectorsRequest {
   @scala.inline
   def apply(EventSelectors: EventSelectors, TrailName: String): PutEventSelectorsRequest = {
     val __obj = js.Dynamic.literal(EventSelectors = EventSelectors.asInstanceOf[js.Any], TrailName = TrailName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutEventSelectorsRequest]
   }
 }

@@ -32,7 +32,6 @@ object RepositoryFileSchema {
     size: Double
   ): RepositoryFileSchema = {
     val __obj = js.Dynamic.literal(blob_id = blob_id.asInstanceOf[js.Any], commit_id = commit_id.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], content_sha256 = content_sha256.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], file_name = file_name.asInstanceOf[js.Any], file_path = file_path.asInstanceOf[js.Any], last_commit_id = last_commit_id.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RepositoryFileSchema]
   }
 }

@@ -19,7 +19,6 @@ object Item {
   @scala.inline
   def apply[T](datum: T, mark: RuntimeMark): Item[T] = {
     val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Item[T]]
   }
 }

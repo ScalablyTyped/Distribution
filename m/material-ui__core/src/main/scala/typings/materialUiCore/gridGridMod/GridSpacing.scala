@@ -16,18 +16,16 @@ trait GridSpacing extends js.Object
 
 object GridSpacing {
   @scala.inline
-  def `0`: typings.materialUiCore.materialUiCoreNumbers.`0` = this.cast(0)
+  def `0`: typings.materialUiCore.materialUiCoreNumbers.`0` = 0.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`0`]
   @scala.inline
-  def `16`: typings.materialUiCore.materialUiCoreNumbers.`16` = this.cast(16)
+  def `16`: typings.materialUiCore.materialUiCoreNumbers.`16` = 16.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`16`]
   @scala.inline
-  def `24`: typings.materialUiCore.materialUiCoreNumbers.`24` = this.cast(24)
+  def `24`: typings.materialUiCore.materialUiCoreNumbers.`24` = 24.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`24`]
   @scala.inline
-  def `32`: typings.materialUiCore.materialUiCoreNumbers.`32` = this.cast(32)
+  def `32`: typings.materialUiCore.materialUiCoreNumbers.`32` = 32.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`32`]
   @scala.inline
-  def `40`: typings.materialUiCore.materialUiCoreNumbers.`40` = this.cast(40)
+  def `40`: typings.materialUiCore.materialUiCoreNumbers.`40` = 40.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`40`]
   @scala.inline
-  def `8`: typings.materialUiCore.materialUiCoreNumbers.`8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `8`: typings.materialUiCore.materialUiCoreNumbers.`8` = 8.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`8`]
 }
 

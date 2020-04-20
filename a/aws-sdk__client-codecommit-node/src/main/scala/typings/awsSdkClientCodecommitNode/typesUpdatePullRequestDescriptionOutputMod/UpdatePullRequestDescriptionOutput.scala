@@ -23,7 +23,6 @@ object UpdatePullRequestDescriptionOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, pullRequest: UnmarshalledPullRequest): UpdatePullRequestDescriptionOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], pullRequest = pullRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdatePullRequestDescriptionOutput]
   }
 }

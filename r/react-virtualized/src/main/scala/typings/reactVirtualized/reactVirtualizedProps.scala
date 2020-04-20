@@ -40,7 +40,7 @@ trait reactVirtualizedProps {
   def ScrollSyncProps: typings.reactVirtualized.esScrollSyncMod.ScrollSyncProps.type = typings.reactVirtualized.esScrollSyncMod.ScrollSyncProps
   type ScrollSyncProps = typings.reactVirtualized.esScrollSyncMod.ScrollSyncProps
   @scala.inline
-  def SortIndicatorProps: AnonSortDirection.type = typings.reactVirtualized.AnonSortDirection
+  def SortIndicatorProps: AnonSortDirection.type = AnonSortDirection
   type SortIndicatorProps = AnonSortDirection
   type TableProps = typings.reactVirtualized.esTableMod.TableProps
   @scala.inline

@@ -30,7 +30,6 @@ object ControlBeforeDragOverParameter {
     Y: Double
   ): ControlBeforeDragOverParameter = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], DragState = DragState.asInstanceOf[js.Any], Effect = Effect.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ControlBeforeDragOverParameter]
   }
 }

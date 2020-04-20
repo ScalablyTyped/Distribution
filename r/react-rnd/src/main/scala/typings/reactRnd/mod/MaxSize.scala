@@ -13,7 +13,6 @@ object MaxSize {
   @scala.inline
   def apply(maxHeight: Double | String, maxWidth: Double | String): MaxSize = {
     val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MaxSize]
   }
 }

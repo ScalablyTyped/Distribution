@@ -14,7 +14,6 @@ object Format {
   @scala.inline
   def apply(indent: Double | Charactertabulation, trailing: Boolean): Format = {
     val __obj = js.Dynamic.literal(indent = indent.asInstanceOf[js.Any], trailing = trailing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Format]
   }
 }

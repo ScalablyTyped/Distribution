@@ -182,7 +182,6 @@ object i18n {
     unitTests: js.Array[_]
   ): i18n = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], dynamic = dynamic.asInstanceOf[js.Any], getL10nName = js.Any.fromFunction3(getL10nName), getLocalization = js.Any.fromFunction3(getLocalization), load = js.Any.fromFunction3(load), normalize = js.Any.fromFunction2(normalize), normalizeLocale = js.Any.fromFunction1(normalizeLocale), unitTests = unitTests.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[i18n]
   }
 }

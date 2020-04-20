@@ -48,7 +48,6 @@ object iframe {
     setSrc: (js.Any, js.Any, js.Any) => Unit
   ): iframe = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction3(create), doc = js.Any.fromFunction1(doc), setSrc = js.Any.fromFunction3(setSrc))
-  
     __obj.asInstanceOf[iframe]
   }
 }

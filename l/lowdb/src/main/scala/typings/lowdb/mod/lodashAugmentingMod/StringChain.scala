@@ -12,7 +12,6 @@ object StringChain {
   @scala.inline
   def apply(write: () => String with js.Promise[String]): StringChain = {
     val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
-  
     __obj.asInstanceOf[StringChain]
   }
 }

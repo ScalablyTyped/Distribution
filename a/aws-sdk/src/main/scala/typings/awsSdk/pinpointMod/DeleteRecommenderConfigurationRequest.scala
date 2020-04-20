@@ -16,7 +16,6 @@ object DeleteRecommenderConfigurationRequest {
   @scala.inline
   def apply(RecommenderId: string): DeleteRecommenderConfigurationRequest = {
     val __obj = js.Dynamic.literal(RecommenderId = RecommenderId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRecommenderConfigurationRequest]
   }
 }

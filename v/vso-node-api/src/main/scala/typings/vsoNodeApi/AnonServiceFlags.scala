@@ -16,7 +16,6 @@ object AnonServiceFlags {
   @scala.inline
   def apply(disabled: Double, none: Double, serviceFlags: Double, unChanged: Double, verified: Double): AnonServiceFlags = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], serviceFlags = serviceFlags.asInstanceOf[js.Any], unChanged = unChanged.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonServiceFlags]
   }
 }

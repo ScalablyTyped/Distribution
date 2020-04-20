@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object typescriptUtilityTypesMod extends js.Object {
   type ValueOrPromise[T] = T | js.Promise[T]
-  type WithRequired[T, K /* <: String */] = T with (Required[Pick[T, K]])
+  type WithRequired[T, K /* <: /* keyof T */ String */] = T with (Required[Pick[T, K]])
 }
 

@@ -39,7 +39,6 @@ object ConfigLoader {
     getResources: String => js.Object
   ): ConfigLoader = {
     val __obj = js.Dynamic.literal(getMetaLoader = js.Any.fromFunction0(getMetaLoader), getRecursiveScanPath = js.Any.fromFunction3(getRecursiveScanPath), getResources = js.Any.fromFunction1(getResources))
-  
     __obj.asInstanceOf[ConfigLoader]
   }
 }

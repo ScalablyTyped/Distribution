@@ -2,6 +2,7 @@ package typings.multer.mod
 
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ trait Multer extends js.Object {
     * The `Request` object will be populated with a `files` array containing
     * an information object for each processed file.
     */
-  def any(): RequestHandler[ParamsDictionary] = js.native
+  def any(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
     * Returns middleware that processes multiple files sharing the same field
     * name.
@@ -27,8 +28,8 @@ trait Multer extends js.Object {
     * @param maxCount Optional. Maximum number of files to process. (default: Infinity)
     * @throws `MulterError('LIMIT_UNEXPECTED_FILE')` if more than `maxCount` files are associated with `fieldName`
     */
-  def array(fieldName: String): RequestHandler[ParamsDictionary] = js.native
-  def array(fieldName: String, maxCount: Double): RequestHandler[ParamsDictionary] = js.native
+  def array(fieldName: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def array(fieldName: String, maxCount: Double): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
     * Returns middleware that processes multiple files associated with the
     * given form fields.
@@ -40,13 +41,13 @@ trait Multer extends js.Object {
     * @param fields Array of `Field` objects describing multipart form fields to process.
     * @throws `MulterError('LIMIT_UNEXPECTED_FILE')` if more than `maxCount` files are associated with `fieldName` for any field.
     */
-  def fields(fields: js.Array[Field]): RequestHandler[ParamsDictionary] = js.native
+  def fields(fields: js.Array[Field]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
     * Returns middleware that accepts only non-file multipart form fields.
     *
     * @throws `MulterError('LIMIT_UNEXPECTED_FILE')` if any file is encountered.
     */
-  def none(): RequestHandler[ParamsDictionary] = js.native
+  def none(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
     * Returns middleware that processes a single file associated with the
     * given form field.
@@ -56,6 +57,6 @@ trait Multer extends js.Object {
     *
     * @param fieldName Name of the multipart form field to process.
     */
-  def single(fieldName: String): RequestHandler[ParamsDictionary] = js.native
+  def single(fieldName: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
 

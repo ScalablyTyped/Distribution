@@ -20,7 +20,6 @@ object SetIpAddressTypeInput {
   @scala.inline
   def apply(IpAddressType: IpAddressType, LoadBalancerArn: LoadBalancerArn): SetIpAddressTypeInput = {
     val __obj = js.Dynamic.literal(IpAddressType = IpAddressType.asInstanceOf[js.Any], LoadBalancerArn = LoadBalancerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetIpAddressTypeInput]
   }
 }

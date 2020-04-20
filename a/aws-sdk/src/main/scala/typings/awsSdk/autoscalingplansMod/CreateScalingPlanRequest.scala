@@ -28,7 +28,6 @@ object CreateScalingPlanRequest {
     ScalingPlanName: ScalingPlanName
   ): CreateScalingPlanRequest = {
     val __obj = js.Dynamic.literal(ApplicationSource = ApplicationSource.asInstanceOf[js.Any], ScalingInstructions = ScalingInstructions.asInstanceOf[js.Any], ScalingPlanName = ScalingPlanName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateScalingPlanRequest]
   }
 }

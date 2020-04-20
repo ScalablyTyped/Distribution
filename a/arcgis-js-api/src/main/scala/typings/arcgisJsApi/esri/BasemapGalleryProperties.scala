@@ -13,6 +13,14 @@ trait BasemapGalleryProperties extends WidgetProperties {
     */
   var activeBasemap: js.UndefOr[BasemapProperties] = js.undefined
   /**
+    * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#disabled)
+    *
+    * @default false
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#iconClass)
@@ -44,6 +52,7 @@ object BasemapGalleryProperties {
     activeBasemap: BasemapProperties = null,
     container: String | HTMLElement = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     iconClass: String = null,
     id: String = null,
     label: String = null,
@@ -55,6 +64,7 @@ object BasemapGalleryProperties {
     if (activeBasemap != null) __obj.updateDynamic("activeBasemap")(activeBasemap.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

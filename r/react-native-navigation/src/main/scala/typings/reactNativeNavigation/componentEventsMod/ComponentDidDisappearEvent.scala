@@ -13,7 +13,6 @@ object ComponentDidDisappearEvent {
   @scala.inline
   def apply(componentId: String, componentName: String, componentType: ComponentType): ComponentDidDisappearEvent = {
     val __obj = js.Dynamic.literal(componentId = componentId.asInstanceOf[js.Any], componentName = componentName.asInstanceOf[js.Any], componentType = componentType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComponentDidDisappearEvent]
   }
 }

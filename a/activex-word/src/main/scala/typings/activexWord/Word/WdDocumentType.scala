@@ -16,12 +16,10 @@ trait WdDocumentType extends js.Object
 
 object WdDocumentType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTypeDocument: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdTypeDocument: `0` = this.cast(0)
+  def wdTypeFrameset: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdTypeFrameset: `2` = this.cast(2)
-  @scala.inline
-  def wdTypeTemplate: `1` = this.cast(1)
+  def wdTypeTemplate: `1` = 1.asInstanceOf[`1`]
 }
 

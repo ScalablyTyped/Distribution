@@ -13,7 +13,6 @@ object PickImplstatusMessage {
   @scala.inline
   def apply(statusMessage: String): PickImplstatusMessage = {
     val __obj = js.Dynamic.literal(statusMessage = statusMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplstatusMessage]
   }
 }

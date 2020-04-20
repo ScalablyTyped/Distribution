@@ -14,7 +14,6 @@ object OptionsmaxColsnumber {
   @scala.inline
   def apply(file: String, maxCols: Double): OptionsmaxColsnumber = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], maxCols = maxCols.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OptionsmaxColsnumber]
   }
 }

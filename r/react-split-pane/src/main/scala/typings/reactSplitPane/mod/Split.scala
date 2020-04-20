@@ -12,10 +12,8 @@ trait Split extends js.Object
 
 object Split {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.reactSplitPane.reactSplitPaneStrings.horizontal = "horizontal".asInstanceOf[typings.reactSplitPane.reactSplitPaneStrings.horizontal]
   @scala.inline
-  def horizontal: typings.reactSplitPane.reactSplitPaneStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.reactSplitPane.reactSplitPaneStrings.vertical = this.cast("vertical")
+  def vertical: typings.reactSplitPane.reactSplitPaneStrings.vertical = "vertical".asInstanceOf[typings.reactSplitPane.reactSplitPaneStrings.vertical]
 }
 

@@ -12,7 +12,6 @@ object EmitterPipe {
   @scala.inline
   def apply(close: () => Unit): EmitterPipe = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
-  
     __obj.asInstanceOf[EmitterPipe]
   }
 }

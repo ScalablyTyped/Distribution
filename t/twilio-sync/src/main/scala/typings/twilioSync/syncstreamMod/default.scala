@@ -26,6 +26,6 @@ class default protected () extends SyncStream {
 @JSImport("twilio-sync/lib/streams/syncstream", JSImport.Default)
 @js.native
 object default extends js.Object {
-  val `type`: String = js.native
+  def `type`: String = js.native
 }
 

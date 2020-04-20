@@ -12,7 +12,6 @@ object AnonExpress {
   @scala.inline
   def apply(express: () => js.Any): AnonExpress = {
     val __obj = js.Dynamic.literal(express = js.Any.fromFunction0(express))
-  
     __obj.asInstanceOf[AnonExpress]
   }
 }

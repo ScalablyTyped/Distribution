@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tabris" : "3.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tabris" : "3.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -20,7 +20,6 @@ object UnionPayProperties {
   @scala.inline
   def apply(isSupported: Boolean, supportsTwoStepAuthAndCapture: Boolean): UnionPayProperties = {
     val __obj = js.Dynamic.literal(isSupported = isSupported.asInstanceOf[js.Any], supportsTwoStepAuthAndCapture = supportsTwoStepAuthAndCapture.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnionPayProperties]
   }
 }

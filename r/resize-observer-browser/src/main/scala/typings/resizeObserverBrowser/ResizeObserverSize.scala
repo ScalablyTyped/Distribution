@@ -13,7 +13,6 @@ object ResizeObserverSize {
   @scala.inline
   def apply(blockSize: Double, inlineSize: Double): ResizeObserverSize = {
     val __obj = js.Dynamic.literal(blockSize = blockSize.asInstanceOf[js.Any], inlineSize = inlineSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResizeObserverSize]
   }
 }

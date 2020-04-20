@@ -20,7 +20,6 @@ object IOptions {
   @scala.inline
   def apply(menu: Menu): IOptions = {
     val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

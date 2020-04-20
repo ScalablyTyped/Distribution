@@ -53,16 +53,16 @@ class SaveHandler_ protected () extends IDisposable {
   /**
     * Get whether the handler is active.
     */
-  def isActive(): Boolean = js.native
+  def isActive: Boolean = js.native
   /**
     * Get whether the save handler is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MSaveHandler_(): Boolean = js.native
+  def isDisposed_MSaveHandler_ : Boolean = js.native
   /**
     * The save interval used by the timer (in seconds).
     */
-  def saveInterval(): Double = js.native
+  def saveInterval: Double = js.native
   def saveInterval(value: Double): js.Any = js.native
   /**
     * Start the autosaver.

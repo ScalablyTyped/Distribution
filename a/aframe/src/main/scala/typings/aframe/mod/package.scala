@@ -9,7 +9,7 @@ package object mod {
   type GeometryDefinition[T /* <: js.Object */, U] = T with typings.std.Partial[typings.aframe.mod.Geometry[U]]
   type MultiPropertySchema[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: aframe.aframe.SinglePropertySchema<T[P]> | T[P]}
-    */ typings.aframe.aframeStrings.MultiPropertySchema with js.Any
+    */ typings.aframe.aframeStrings.MultiPropertySchema with org.scalablytyped.runtime.TopLevel[js.Any]
   type NodeDefinition[T /* <: js.Object */] = T with typings.aframe.PartialANode
   type ObjectMap[T] = org.scalablytyped.runtime.StringDictionary[T]
   type Schema_[T /* <: js.Object */] = typings.aframe.mod.SinglePropertySchema[T] | typings.aframe.mod.MultiPropertySchema[T]

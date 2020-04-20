@@ -14,7 +14,6 @@ object AnonAlgoid {
   @scala.inline
   def apply(algoid: String, algparam: String, keyidx: String): AnonAlgoid = {
     val __obj = js.Dynamic.literal(algoid = algoid.asInstanceOf[js.Any], algparam = algparam.asInstanceOf[js.Any], keyidx = keyidx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlgoid]
   }
 }

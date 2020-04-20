@@ -16,7 +16,6 @@ object List {
   @scala.inline
   def apply(getListId: () => String, getListParagraphs: () => js.Array[Paragraph]): List = {
     val __obj = js.Dynamic.literal(getListId = js.Any.fromFunction0(getListId), getListParagraphs = js.Any.fromFunction0(getListParagraphs))
-  
     __obj.asInstanceOf[List]
   }
 }

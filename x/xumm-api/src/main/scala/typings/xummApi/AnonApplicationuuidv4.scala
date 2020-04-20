@@ -14,7 +14,6 @@ object AnonApplicationuuidv4 {
   @scala.inline
   def apply(application_uuidv4: String, payload_uuidv4: String, url: String): AnonApplicationuuidv4 = {
     val __obj = js.Dynamic.literal(application_uuidv4 = application_uuidv4.asInstanceOf[js.Any], payload_uuidv4 = payload_uuidv4.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonApplicationuuidv4]
   }
 }

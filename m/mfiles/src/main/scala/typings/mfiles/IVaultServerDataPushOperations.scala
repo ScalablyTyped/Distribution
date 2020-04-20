@@ -24,7 +24,6 @@ object IVaultServerDataPushOperations {
     SetServerDataPushSink: IServerDataPushSink => Unit
   ): IVaultServerDataPushOperations = {
     val __obj = js.Dynamic.literal(CloneVaultForServerDataPush = js.Any.fromFunction1(CloneVaultForServerDataPush), SendCancel = js.Any.fromFunction1(SendCancel), SendError = js.Any.fromFunction2(SendError), SendHeartbeat = js.Any.fromFunction1(SendHeartbeat), SendResponse = js.Any.fromFunction2(SendResponse), SetServerDataPushSink = js.Any.fromFunction1(SetServerDataPushSink))
-  
     __obj.asInstanceOf[IVaultServerDataPushOperations]
   }
 }

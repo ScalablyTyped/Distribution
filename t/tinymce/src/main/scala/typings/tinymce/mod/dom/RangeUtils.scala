@@ -18,7 +18,6 @@ object RangeUtils {
     getCaretRangeFromPoint: (Double, Double, Document_) => Range
   ): RangeUtils = {
     val __obj = js.Dynamic.literal(compareRanges = js.Any.fromFunction2(compareRanges), getCaretRangeFromPoint = js.Any.fromFunction3(getCaretRangeFromPoint))
-  
     __obj.asInstanceOf[RangeUtils]
   }
 }

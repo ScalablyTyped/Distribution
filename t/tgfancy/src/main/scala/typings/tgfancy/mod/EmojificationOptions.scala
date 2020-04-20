@@ -12,7 +12,6 @@ object EmojificationOptions {
   @scala.inline
   def apply(emojify: String => String): EmojificationOptions = {
     val __obj = js.Dynamic.literal(emojify = js.Any.fromFunction1(emojify))
-  
     __obj.asInstanceOf[EmojificationOptions]
   }
 }

@@ -14,14 +14,12 @@ trait Bounds extends js.Object
 
 object Bounds {
   @scala.inline
-  def LeftparenthesisRightparenthesis: typings.strange.strangeStrings.LeftparenthesisRightparenthesis = this.cast("()")
+  def LeftparenthesisRightparenthesis: typings.strange.strangeStrings.LeftparenthesisRightparenthesis = "()".asInstanceOf[typings.strange.strangeStrings.LeftparenthesisRightparenthesis]
   @scala.inline
-  def `Leftparenthesis]`: typings.strange.strangeStrings.`Leftparenthesis]` = this.cast("(]")
+  def `Leftparenthesis]`: typings.strange.strangeStrings.`Leftparenthesis]` = "(]".asInstanceOf[typings.strange.strangeStrings.`Leftparenthesis]`]
   @scala.inline
-  def `[Rightparenthesis`: typings.strange.strangeStrings.`[Rightparenthesis` = this.cast("[)")
+  def `[Rightparenthesis`: typings.strange.strangeStrings.`[Rightparenthesis` = "[)".asInstanceOf[typings.strange.strangeStrings.`[Rightparenthesis`]
   @scala.inline
-  def `[]`: typings.strange.strangeStrings.`[]` = this.cast("[]")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `[]`: typings.strange.strangeStrings.`[]` = "[]".asInstanceOf[typings.strange.strangeStrings.`[]`]
 }
 

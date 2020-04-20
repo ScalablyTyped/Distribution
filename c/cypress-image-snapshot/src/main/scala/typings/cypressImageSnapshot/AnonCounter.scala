@@ -15,7 +15,6 @@ object AnonCounter {
   @scala.inline
   def apply(counter: Double, currentTestName: String, defaultIdentifier: String, testPath: String): AnonCounter = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], currentTestName = currentTestName.asInstanceOf[js.Any], defaultIdentifier = defaultIdentifier.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCounter]
   }
 }

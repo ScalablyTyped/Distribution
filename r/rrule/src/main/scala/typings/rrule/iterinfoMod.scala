@@ -29,24 +29,24 @@ object iterinfoMod extends js.Object {
     def gettimeset(freq: MINUTELY): js.Function4[/* h */ Double, /* m */ Double, /* s */ Double, /* ms */ Double, js.Array[Time]] = js.native
     def gettimeset(freq: SECONDLY): js.Function4[/* h */ Double, /* m */ Double, /* s */ Double, /* ms */ Double, js.Array[Time]] = js.native
     def htimeset(hour: Double, _underscore: Double, second: Double, millisecond: Double): js.Array[Time] = js.native
-    def lastmonth(): Double | Null = js.native
-    def lastyear(): Double | Null = js.native
-    def mdaymask(): js.Array[Double] = js.native
+    def lastmonth: Double | Null = js.native
+    def lastyear: Double | Null = js.native
+    def mdaymask: js.Array[Double] = js.native
     def mdayset(_underscore: js.Any, month: Double, __ : js.Any): js.Array[Double | (js.Array[Double | (js.Array[Double | Null]) | Null])] = js.native
-    def mmask(): js.Array[Double] = js.native
-    def mrange(): js.Array[Double] = js.native
+    def mmask: js.Array[Double] = js.native
+    def mrange: js.Array[Double] = js.native
     def mtimeset(hour: Double, minute: Double, _underscore: Double, millisecond: Double): js.Array[Time] = js.native
-    def nextyearlen(): `366` | `365` = js.native
-    def nmdaymask(): js.Array[Double] = js.native
-    def nwdaymask(): js.Array[Double] = js.native
+    def nextyearlen: `366` | `365` = js.native
+    def nmdaymask: js.Array[Double] = js.native
+    def nwdaymask: js.Array[Double] = js.native
     def rebuild(year: Double, month: Double): Unit = js.native
     def stimeset(hour: Double, minute: Double, second: Double, millisecond: Double): js.Array[Time] = js.native
-    def wdaymask(): js.Array[Double] = js.native
+    def wdaymask: js.Array[Double] = js.native
     def wdayset(year: Double, month: Double, day: Double): js.Array[Double | (js.Array[Double | (js.Array[Double | Null]) | Null])] = js.native
-    def wnomask(): js.Array[Double] | Null = js.native
+    def wnomask: js.Array[Double] | Null = js.native
     def ydayset(): js.Array[Double | js.Array[Double]] = js.native
-    def yearlen(): `366` | `365` = js.native
-    def yearordinal(): Double = js.native
+    def yearlen: `366` | `365` = js.native
+    def yearordinal: Double = js.native
   }
   
   @js.native

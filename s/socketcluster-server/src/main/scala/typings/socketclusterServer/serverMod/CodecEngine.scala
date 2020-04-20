@@ -13,7 +13,6 @@ object CodecEngine {
   @scala.inline
   def apply(decode: js.Any => js.Any, encode: js.Any => js.Any): CodecEngine = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[CodecEngine]
   }
 }

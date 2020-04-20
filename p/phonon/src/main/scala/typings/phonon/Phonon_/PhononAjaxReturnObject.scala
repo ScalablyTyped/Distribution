@@ -12,7 +12,6 @@ object PhononAjaxReturnObject {
   @scala.inline
   def apply(cancel: () => Unit): PhononAjaxReturnObject = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
-  
     __obj.asInstanceOf[PhononAjaxReturnObject]
   }
 }

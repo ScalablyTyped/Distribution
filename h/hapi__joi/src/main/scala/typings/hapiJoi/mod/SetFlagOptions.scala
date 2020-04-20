@@ -13,7 +13,6 @@ object SetFlagOptions {
   @scala.inline
   def apply(clone: Boolean): SetFlagOptions = {
     val __obj = js.Dynamic.literal(clone = clone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetFlagOptions]
   }
 }

@@ -56,7 +56,6 @@ object PodDisruptionBudgetStatus {
     observedGeneration: Double
   ): PodDisruptionBudgetStatus = {
     val __obj = js.Dynamic.literal(currentHealthy = currentHealthy.asInstanceOf[js.Any], desiredHealthy = desiredHealthy.asInstanceOf[js.Any], disruptedPods = disruptedPods.asInstanceOf[js.Any], disruptionsAllowed = disruptionsAllowed.asInstanceOf[js.Any], expectedPods = expectedPods.asInstanceOf[js.Any], observedGeneration = observedGeneration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PodDisruptionBudgetStatus]
   }
 }

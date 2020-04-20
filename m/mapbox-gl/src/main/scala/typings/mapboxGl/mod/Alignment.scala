@@ -13,12 +13,10 @@ trait Alignment extends js.Object
 
 object Alignment {
   @scala.inline
-  def auto: typings.mapboxGl.mapboxGlStrings.auto = this.cast("auto")
+  def auto: typings.mapboxGl.mapboxGlStrings.auto = "auto".asInstanceOf[typings.mapboxGl.mapboxGlStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def map: typings.mapboxGl.mapboxGlStrings.map = "map".asInstanceOf[typings.mapboxGl.mapboxGlStrings.map]
   @scala.inline
-  def map: typings.mapboxGl.mapboxGlStrings.map = this.cast("map")
-  @scala.inline
-  def viewport: typings.mapboxGl.mapboxGlStrings.viewport = this.cast("viewport")
+  def viewport: typings.mapboxGl.mapboxGlStrings.viewport = "viewport".asInstanceOf[typings.mapboxGl.mapboxGlStrings.viewport]
 }
 

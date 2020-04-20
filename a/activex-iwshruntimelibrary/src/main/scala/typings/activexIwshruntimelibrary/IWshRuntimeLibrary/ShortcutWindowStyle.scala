@@ -13,12 +13,10 @@ trait ShortcutWindowStyle extends js.Object
 
 object ShortcutWindowStyle {
   @scala.inline
-  def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1` = this.cast(1)
+  def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1` = 1.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`]
   @scala.inline
-  def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3` = this.cast(3)
+  def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3` = 3.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`]
   @scala.inline
-  def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7` = this.cast(7)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`]
 }
 

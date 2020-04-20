@@ -14,7 +14,6 @@ object FullTextCatalog {
   @scala.inline
   def apply(lang: String, name: String, sources: js.Array[FullTextSource]): FullTextCatalog = {
     val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FullTextCatalog]
   }
 }

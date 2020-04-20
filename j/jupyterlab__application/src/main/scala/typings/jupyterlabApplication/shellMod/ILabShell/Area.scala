@@ -19,18 +19,16 @@ trait Area extends js.Object
 
 object Area {
   @scala.inline
-  def bottom: typings.jupyterlabApplication.jupyterlabApplicationStrings.bottom = this.cast("bottom")
+  def bottom: typings.jupyterlabApplication.jupyterlabApplicationStrings.bottom = "bottom".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def header: typings.jupyterlabApplication.jupyterlabApplicationStrings.header = "header".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.header]
   @scala.inline
-  def header: typings.jupyterlabApplication.jupyterlabApplicationStrings.header = this.cast("header")
+  def left: typings.jupyterlabApplication.jupyterlabApplicationStrings.left = "left".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.left]
   @scala.inline
-  def left: typings.jupyterlabApplication.jupyterlabApplicationStrings.left = this.cast("left")
+  def main: typings.jupyterlabApplication.jupyterlabApplicationStrings.main = "main".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.main]
   @scala.inline
-  def main: typings.jupyterlabApplication.jupyterlabApplicationStrings.main = this.cast("main")
+  def right: typings.jupyterlabApplication.jupyterlabApplicationStrings.right = "right".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.right]
   @scala.inline
-  def right: typings.jupyterlabApplication.jupyterlabApplicationStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.jupyterlabApplication.jupyterlabApplicationStrings.top = this.cast("top")
+  def top: typings.jupyterlabApplication.jupyterlabApplicationStrings.top = "top".asInstanceOf[typings.jupyterlabApplication.jupyterlabApplicationStrings.top]
 }
 

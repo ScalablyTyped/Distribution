@@ -48,7 +48,6 @@ object GetLaunchConfigurationEbsBlockDevice {
     volumeType: String
   ): GetLaunchConfigurationEbsBlockDevice = {
     val __obj = js.Dynamic.literal(deleteOnTermination = deleteOnTermination.asInstanceOf[js.Any], deviceName = deviceName.asInstanceOf[js.Any], encrypted = encrypted.asInstanceOf[js.Any], iops = iops.asInstanceOf[js.Any], snapshotId = snapshotId.asInstanceOf[js.Any], volumeSize = volumeSize.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchConfigurationEbsBlockDevice]
   }
 }

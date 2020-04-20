@@ -16,7 +16,6 @@ object DeleteHsmClientCertificateMessage {
   @scala.inline
   def apply(HsmClientCertificateIdentifier: String): DeleteHsmClientCertificateMessage = {
     val __obj = js.Dynamic.literal(HsmClientCertificateIdentifier = HsmClientCertificateIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteHsmClientCertificateMessage]
   }
 }

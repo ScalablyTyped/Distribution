@@ -53,7 +53,7 @@ object colorCurvesMod extends js.Object {
       * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
       * Values less than zero provide a filter of opposite hue.
       */
-    def globalDensity(): Double = js.native
+    def globalDensity: Double = js.native
     /**
       * Sets the global Density value.
       * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
@@ -64,7 +64,7 @@ object colorCurvesMod extends js.Object {
       * Gets the global Exposure value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
       */
-    def globalExposure(): Double = js.native
+    def globalExposure: Double = js.native
     /**
       * Sets the global Exposure value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
@@ -74,7 +74,7 @@ object colorCurvesMod extends js.Object {
       * Gets the global Hue value.
       * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
       */
-    def globalHue(): Double = js.native
+    def globalHue: Double = js.native
     /**
       * Sets the global Hue value.
       * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
@@ -84,7 +84,7 @@ object colorCurvesMod extends js.Object {
       * Gets the global Saturation value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
       */
-    def globalSaturation(): Double = js.native
+    def globalSaturation: Double = js.native
     /**
       * Sets the global Saturation value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
@@ -95,7 +95,7 @@ object colorCurvesMod extends js.Object {
       * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
       * Values less than zero provide a filter of opposite hue.
       */
-    def highlightsDensity(): Double = js.native
+    def highlightsDensity: Double = js.native
     /**
       * Sets the highlights Density value.
       * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
@@ -106,7 +106,7 @@ object colorCurvesMod extends js.Object {
       * Gets the highlights Exposure value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
       */
-    def highlightsExposure(): Double = js.native
+    def highlightsExposure: Double = js.native
     /**
       * Sets the highlights Exposure value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
@@ -116,7 +116,7 @@ object colorCurvesMod extends js.Object {
       * Gets the highlights Hue value.
       * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
       */
-    def highlightsHue(): Double = js.native
+    def highlightsHue: Double = js.native
     /**
       * Sets the highlights Hue value.
       * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
@@ -126,7 +126,7 @@ object colorCurvesMod extends js.Object {
       * Gets the highlights Saturation value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
       */
-    def highlightsSaturation(): Double = js.native
+    def highlightsSaturation: Double = js.native
     /**
       * Sets the highlights Saturation value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
@@ -137,7 +137,7 @@ object colorCurvesMod extends js.Object {
       * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
       * Values less than zero provide a filter of opposite hue.
       */
-    def midtonesDensity(): Double = js.native
+    def midtonesDensity: Double = js.native
     /**
       * Sets the midtones Density value.
       * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
@@ -148,7 +148,7 @@ object colorCurvesMod extends js.Object {
       * Gets the midtones Exposure value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
       */
-    def midtonesExposure(): Double = js.native
+    def midtonesExposure: Double = js.native
     /**
       * Sets the midtones Exposure value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
@@ -158,7 +158,7 @@ object colorCurvesMod extends js.Object {
       * Gets the midtones Hue value.
       * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
       */
-    def midtonesHue(): Double = js.native
+    def midtonesHue: Double = js.native
     /**
       * Sets the midtones Hue value.
       * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
@@ -168,7 +168,7 @@ object colorCurvesMod extends js.Object {
       * Gets the midtones Saturation value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
       */
-    def midtonesSaturation(): Double = js.native
+    def midtonesSaturation: Double = js.native
     /**
       * Sets the midtones Saturation value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
@@ -184,7 +184,7 @@ object colorCurvesMod extends js.Object {
       * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
       * Values less than zero provide a filter of opposite hue.
       */
-    def shadowsDensity(): Double = js.native
+    def shadowsDensity: Double = js.native
     /**
       * Sets the shadows Density value.
       * The density value is in range [-100,+100] where 0 means the color filter has no effect and +100 means the color filter has maximum effect.
@@ -195,7 +195,7 @@ object colorCurvesMod extends js.Object {
       * Gets the shadows Exposure value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
       */
-    def shadowsExposure(): Double = js.native
+    def shadowsExposure: Double = js.native
     /**
       * Sets the shadows Exposure value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase exposure and negative values decrease exposure.
@@ -205,7 +205,7 @@ object colorCurvesMod extends js.Object {
       * Gets the shadows Hue value.
       * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
       */
-    def shadowsHue(): Double = js.native
+    def shadowsHue: Double = js.native
     /**
       * Sets the shadows Hue value.
       * The hue value is a standard HSB hue in the range [0,360] where 0=red, 120=green and 240=blue. The default value is 30 degrees (orange).
@@ -215,7 +215,7 @@ object colorCurvesMod extends js.Object {
       * Gets the shadows Saturation value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.
       */
-    def shadowsSaturation(): Double = js.native
+    def shadowsSaturation: Double = js.native
     /**
       * Sets the shadows Saturation value.
       * This is an adjustment value in the range [-100,+100], where the default value of 0.0 makes no adjustment, positive values increase saturation and negative values decrease saturation.

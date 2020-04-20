@@ -25,7 +25,6 @@ object OmitModalStaticFunctionsw {
     warning: /* props */ ModalFuncProps => AnonDestroy
   ): OmitModalStaticFunctionsw = {
     val __obj = js.Dynamic.literal(confirm = js.Any.fromFunction1(confirm), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), success = js.Any.fromFunction1(success), warning = js.Any.fromFunction1(warning))
-  
     __obj.asInstanceOf[OmitModalStaticFunctionsw]
   }
 }

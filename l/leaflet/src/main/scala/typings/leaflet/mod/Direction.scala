@@ -16,18 +16,16 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  def auto: typings.leaflet.leafletStrings.auto = this.cast("auto")
+  def auto: typings.leaflet.leafletStrings.auto = "auto".asInstanceOf[typings.leaflet.leafletStrings.auto]
   @scala.inline
-  def bottom: typings.leaflet.leafletStrings.bottom = this.cast("bottom")
+  def bottom: typings.leaflet.leafletStrings.bottom = "bottom".asInstanceOf[typings.leaflet.leafletStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.leaflet.leafletStrings.center = "center".asInstanceOf[typings.leaflet.leafletStrings.center]
   @scala.inline
-  def center: typings.leaflet.leafletStrings.center = this.cast("center")
+  def left: typings.leaflet.leafletStrings.left = "left".asInstanceOf[typings.leaflet.leafletStrings.left]
   @scala.inline
-  def left: typings.leaflet.leafletStrings.left = this.cast("left")
+  def right: typings.leaflet.leafletStrings.right = "right".asInstanceOf[typings.leaflet.leafletStrings.right]
   @scala.inline
-  def right: typings.leaflet.leafletStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.leaflet.leafletStrings.top = this.cast("top")
+  def top: typings.leaflet.leafletStrings.top = "top".asInstanceOf[typings.leaflet.leafletStrings.top]
 }
 

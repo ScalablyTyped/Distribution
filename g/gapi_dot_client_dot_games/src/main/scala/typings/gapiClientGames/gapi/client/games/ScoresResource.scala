@@ -37,7 +37,6 @@ object ScoresResource {
     submitMultiple: AnonLanguage => Request_[PlayerScoreListResponse]
   ): ScoresResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listWindow = js.Any.fromFunction1(listWindow), submit = js.Any.fromFunction1(submit), submitMultiple = js.Any.fromFunction1(submitMultiple))
-  
     __obj.asInstanceOf[ScoresResource]
   }
 }

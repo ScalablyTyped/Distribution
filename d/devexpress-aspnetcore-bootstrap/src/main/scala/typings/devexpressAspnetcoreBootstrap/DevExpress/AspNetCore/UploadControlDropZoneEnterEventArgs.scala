@@ -12,7 +12,6 @@ object UploadControlDropZoneEnterEventArgs {
   @scala.inline
   def apply(dropZone: js.Any, sender: Control): UploadControlDropZoneEnterEventArgs = {
     val __obj = js.Dynamic.literal(dropZone = dropZone.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadControlDropZoneEnterEventArgs]
   }
 }

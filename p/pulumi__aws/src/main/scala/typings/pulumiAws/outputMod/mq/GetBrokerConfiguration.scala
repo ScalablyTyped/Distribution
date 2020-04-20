@@ -14,7 +14,6 @@ object GetBrokerConfiguration {
   @scala.inline
   def apply(id: String, revision: Double): GetBrokerConfiguration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBrokerConfiguration]
   }
 }

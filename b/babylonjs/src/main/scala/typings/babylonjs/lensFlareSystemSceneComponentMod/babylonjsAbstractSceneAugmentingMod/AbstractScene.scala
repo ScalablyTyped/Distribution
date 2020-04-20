@@ -47,7 +47,6 @@ object AbstractScene {
     removeLensFlareSystem: LensFlareSystem => Double
   ): AbstractScene = {
     val __obj = js.Dynamic.literal(addLensFlareSystem = js.Any.fromFunction1(addLensFlareSystem), getLensFlareSystemByID = js.Any.fromFunction1(getLensFlareSystemByID), getLensFlareSystemByName = js.Any.fromFunction1(getLensFlareSystemByName), lensFlareSystems = lensFlareSystems.asInstanceOf[js.Any], removeLensFlareSystem = js.Any.fromFunction1(removeLensFlareSystem))
-  
     __obj.asInstanceOf[AbstractScene]
   }
 }

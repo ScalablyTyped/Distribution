@@ -52,13 +52,13 @@ class ForeignHandler_ protected () extends IDisposable {
   /**
     * Set whether the handler is able to inject foreign cells into a console.
     */
-  def enabled(): Boolean = js.native
+  def enabled: Boolean = js.native
   def enabled(value: Boolean): js.Any = js.native
   /**
     * Test whether the handler is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MForeignHandler_(): Boolean = js.native
+  def isDisposed_MForeignHandler_ : Boolean = js.native
   /**
     * Handler IOPub messages.
     *
@@ -69,6 +69,6 @@ class ForeignHandler_ protected () extends IDisposable {
   /**
     * The foreign handler's parent receiver.
     */
-  def parent(): IReceiver = js.native
+  def parent: IReceiver = js.native
 }
 

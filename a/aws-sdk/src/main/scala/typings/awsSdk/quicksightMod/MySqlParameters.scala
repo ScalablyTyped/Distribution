@@ -24,7 +24,6 @@ object MySqlParameters {
   @scala.inline
   def apply(Database: Database, Host: Host, Port: Port): MySqlParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any], Port = Port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MySqlParameters]
   }
 }

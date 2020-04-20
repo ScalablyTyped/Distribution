@@ -22,7 +22,6 @@ object ResizeObserverEntry {
     target: Element
   ): ResizeObserverEntry = {
     val __obj = js.Dynamic.literal(borderBoxSize = borderBoxSize.asInstanceOf[js.Any], contentBoxSize = contentBoxSize.asInstanceOf[js.Any], contentRect = contentRect.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResizeObserverEntry]
   }
 }

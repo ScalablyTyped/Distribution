@@ -20,7 +20,6 @@ object AutomationExecutionFilter {
   @scala.inline
   def apply(Key: AutomationExecutionFilterKey, Values: AutomationExecutionFilterValueList): AutomationExecutionFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AutomationExecutionFilter]
   }
 }

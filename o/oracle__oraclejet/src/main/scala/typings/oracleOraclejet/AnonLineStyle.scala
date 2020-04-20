@@ -26,7 +26,6 @@ object AnonLineStyle {
     rendered: on | off | auto
   ): AnonLineStyle = {
     val __obj = js.Dynamic.literal(lineColor = lineColor.asInstanceOf[js.Any], lineStyle = lineStyle.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLineStyle]
   }
 }

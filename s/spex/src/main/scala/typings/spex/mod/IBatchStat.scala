@@ -15,7 +15,6 @@ object IBatchStat {
   @scala.inline
   def apply(duration: Double, failed: Double, succeeded: Double, total: Double): IBatchStat = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBatchStat]
   }
 }

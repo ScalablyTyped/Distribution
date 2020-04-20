@@ -20,7 +20,6 @@ object KikGetFromCameraCallbacks {
     onSelect: Double => Unit
   ): KikGetFromCameraCallbacks = {
     val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction0(onCancel), onComplete = js.Any.fromFunction1(onComplete), onPhoto = js.Any.fromFunction2(onPhoto), onSelect = js.Any.fromFunction1(onSelect))
-  
     __obj.asInstanceOf[KikGetFromCameraCallbacks]
   }
 }

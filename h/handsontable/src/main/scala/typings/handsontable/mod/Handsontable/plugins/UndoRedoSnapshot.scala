@@ -22,7 +22,6 @@ object UndoRedoSnapshot {
     stack: Stack
   ): UndoRedoSnapshot = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), restore = js.Any.fromFunction0(restore), save = js.Any.fromFunction3(save), sheet = sheet.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UndoRedoSnapshot]
   }
 }

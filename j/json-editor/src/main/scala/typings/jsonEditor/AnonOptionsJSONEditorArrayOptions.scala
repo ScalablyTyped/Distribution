@@ -12,7 +12,6 @@ object AnonOptionsJSONEditorArrayOptions {
   @scala.inline
   def apply(options: JSONEditorArrayOptions): AnonOptionsJSONEditorArrayOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOptionsJSONEditorArrayOptions]
   }
 }

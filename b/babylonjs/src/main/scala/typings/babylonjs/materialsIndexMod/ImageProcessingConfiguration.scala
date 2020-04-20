@@ -46,10 +46,10 @@ object ImageProcessingConfiguration extends js.Object {
   /**
     * Used to apply the vignette as a mix with the pixel color.
     */
-  def VIGNETTEMODE_MULTIPLY(): Double = js.native
+  def VIGNETTEMODE_MULTIPLY: Double = js.native
   /**
     * Used to apply the vignette as a replacement of the pixel color.
     */
-  def VIGNETTEMODE_OPAQUE(): Double = js.native
+  def VIGNETTEMODE_OPAQUE: Double = js.native
 }
 

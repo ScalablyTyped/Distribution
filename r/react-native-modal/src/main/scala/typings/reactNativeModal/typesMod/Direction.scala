@@ -14,14 +14,12 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def down: typings.reactNativeModal.reactNativeModalStrings.down = "down".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.down]
   @scala.inline
-  def down: typings.reactNativeModal.reactNativeModalStrings.down = this.cast("down")
+  def left: typings.reactNativeModal.reactNativeModalStrings.left = "left".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.left]
   @scala.inline
-  def left: typings.reactNativeModal.reactNativeModalStrings.left = this.cast("left")
+  def right: typings.reactNativeModal.reactNativeModalStrings.right = "right".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.right]
   @scala.inline
-  def right: typings.reactNativeModal.reactNativeModalStrings.right = this.cast("right")
-  @scala.inline
-  def up: typings.reactNativeModal.reactNativeModalStrings.up = this.cast("up")
+  def up: typings.reactNativeModal.reactNativeModalStrings.up = "up".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.up]
 }
 

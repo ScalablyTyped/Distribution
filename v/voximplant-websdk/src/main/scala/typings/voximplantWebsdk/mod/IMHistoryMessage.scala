@@ -30,7 +30,6 @@ object IMHistoryMessage {
   @scala.inline
   def apply(body: String, from: String, id: String, time: String): IMHistoryMessage = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMHistoryMessage]
   }
 }

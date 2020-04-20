@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait atlaskitCalendarProps {
   @scala.inline
-  def CalendarProps: Props.type = typings.atlaskitCalendar.mod.Props
+  def CalendarProps: Props.type = Props
   type CalendarProps = Props
 }
 

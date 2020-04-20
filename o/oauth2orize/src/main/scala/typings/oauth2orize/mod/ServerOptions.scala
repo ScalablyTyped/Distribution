@@ -13,7 +13,6 @@ object ServerOptions {
   @scala.inline
   def apply(loadTransaction: Boolean, store: js.Any): ServerOptions = {
     val __obj = js.Dynamic.literal(loadTransaction = loadTransaction.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerOptions]
   }
 }

@@ -24,7 +24,6 @@ object ValidationMessageBasicLocationObject {
     lastLine: Double
   ): ValidationMessageBasicLocationObject = {
     val __obj = js.Dynamic.literal(extract = extract.asInstanceOf[js.Any], firstColumn = firstColumn.asInstanceOf[js.Any], hiliteLength = hiliteLength.asInstanceOf[js.Any], hiliteStart = hiliteStart.asInstanceOf[js.Any], lastColumn = lastColumn.asInstanceOf[js.Any], lastLine = lastLine.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidationMessageBasicLocationObject]
   }
 }

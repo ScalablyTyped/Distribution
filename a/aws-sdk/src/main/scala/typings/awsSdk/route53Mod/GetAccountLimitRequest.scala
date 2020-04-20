@@ -16,7 +16,6 @@ object GetAccountLimitRequest {
   @scala.inline
   def apply(Type: AccountLimitType): GetAccountLimitRequest = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAccountLimitRequest]
   }
 }

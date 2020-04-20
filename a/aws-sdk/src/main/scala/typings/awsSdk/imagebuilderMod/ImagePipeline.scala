@@ -35,6 +35,10 @@ trait ImagePipeline extends js.Object {
     */
   var distributionConfigurationArn: js.UndefOr[Arn] = js.native
   /**
+    *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default. 
+    */
+  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.native
+  /**
     * The Amazon Resource Name (ARN) of the image recipe associated with this image pipeline.
     */
   var imageRecipeArn: js.UndefOr[Arn] = js.native
@@ -78,6 +82,7 @@ object ImagePipeline {
     dateUpdated: DateTime = null,
     description: NonEmptyString = null,
     distributionConfigurationArn: Arn = null,
+    enhancedImageMetadataEnabled: js.UndefOr[Boolean] = js.undefined,
     imageRecipeArn: Arn = null,
     imageTestsConfiguration: ImageTestsConfiguration = null,
     infrastructureConfigurationArn: Arn = null,
@@ -95,6 +100,7 @@ object ImagePipeline {
     if (dateUpdated != null) __obj.updateDynamic("dateUpdated")(dateUpdated.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (distributionConfigurationArn != null) __obj.updateDynamic("distributionConfigurationArn")(distributionConfigurationArn.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.asInstanceOf[js.Any])
     if (imageRecipeArn != null) __obj.updateDynamic("imageRecipeArn")(imageRecipeArn.asInstanceOf[js.Any])
     if (imageTestsConfiguration != null) __obj.updateDynamic("imageTestsConfiguration")(imageTestsConfiguration.asInstanceOf[js.Any])
     if (infrastructureConfigurationArn != null) __obj.updateDynamic("infrastructureConfigurationArn")(infrastructureConfigurationArn.asInstanceOf[js.Any])

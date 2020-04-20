@@ -16,7 +16,6 @@ object StopApplicationRequest {
   @scala.inline
   def apply(ApplicationName: ApplicationName): StopApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopApplicationRequest]
   }
 }

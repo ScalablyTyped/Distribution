@@ -13,7 +13,6 @@ object AnonSuper {
   @scala.inline
   def apply[Base](_super: Super[Base]): AnonSuper[Base] = {
     val __obj = js.Dynamic.literal(_super = _super.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSuper[Base]]
   }
 }

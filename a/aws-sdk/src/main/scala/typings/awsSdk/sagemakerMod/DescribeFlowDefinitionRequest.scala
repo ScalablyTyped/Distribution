@@ -16,7 +16,6 @@ object DescribeFlowDefinitionRequest {
   @scala.inline
   def apply(FlowDefinitionName: FlowDefinitionName): DescribeFlowDefinitionRequest = {
     val __obj = js.Dynamic.literal(FlowDefinitionName = FlowDefinitionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeFlowDefinitionRequest]
   }
 }

@@ -25,7 +25,6 @@ object NodeGroupScalingConfig {
   @scala.inline
   def apply(desiredSize: Input[Double], maxSize: Input[Double], minSize: Input[Double]): NodeGroupScalingConfig = {
     val __obj = js.Dynamic.literal(desiredSize = desiredSize.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeGroupScalingConfig]
   }
 }

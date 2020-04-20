@@ -12,7 +12,6 @@ object AnonAssertBoolean {
   @scala.inline
   def apply(assert: Boolean): AnonAssertBoolean = {
     val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAssertBoolean]
   }
 }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("omit.js", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def default[T, K /* <: String */](obj: T, keys: js.Array[K]): Pick[T, Exclude[String, K]] = js.native
+  def default[T, K /* <: /* keyof T */ String */](obj: T, keys: js.Array[K]): Pick[T, Exclude[/* keyof T */ String, K]] = js.native
 }
 

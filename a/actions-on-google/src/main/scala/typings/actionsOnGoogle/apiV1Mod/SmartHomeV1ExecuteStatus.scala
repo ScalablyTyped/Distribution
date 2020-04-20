@@ -14,14 +14,12 @@ trait SmartHomeV1ExecuteStatus extends js.Object
 
 object SmartHomeV1ExecuteStatus {
   @scala.inline
-  def ERROR: typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR = this.cast("ERROR")
+  def ERROR: typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR = "ERROR".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR]
   @scala.inline
-  def OFFLINE: typings.actionsOnGoogle.actionsOnGoogleStrings.OFFLINE = this.cast("OFFLINE")
+  def OFFLINE: typings.actionsOnGoogle.actionsOnGoogleStrings.OFFLINE = "OFFLINE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OFFLINE]
   @scala.inline
-  def PENDING: typings.actionsOnGoogle.actionsOnGoogleStrings.PENDING = this.cast("PENDING")
+  def PENDING: typings.actionsOnGoogle.actionsOnGoogleStrings.PENDING = "PENDING".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PENDING]
   @scala.inline
-  def SUCCESS: typings.actionsOnGoogle.actionsOnGoogleStrings.SUCCESS = this.cast("SUCCESS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SUCCESS: typings.actionsOnGoogle.actionsOnGoogleStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SUCCESS]
 }
 

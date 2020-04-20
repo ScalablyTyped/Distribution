@@ -15,7 +15,6 @@ object AnonHa {
   @scala.inline
   def apply(ha: Double, o: js.Array[String], x_max: Double, x_min: Double): AnonHa = {
     val __obj = js.Dynamic.literal(ha = ha.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any], x_max = x_max.asInstanceOf[js.Any], x_min = x_min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHa]
   }
 }

@@ -12,7 +12,6 @@ object DesignTagConfig {
   @scala.inline
   def apply(delimeter: js.Tuple2[String, String]): DesignTagConfig = {
     val __obj = js.Dynamic.literal(delimeter = delimeter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DesignTagConfig]
   }
 }

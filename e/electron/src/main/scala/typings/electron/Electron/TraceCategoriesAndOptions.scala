@@ -33,7 +33,6 @@ object TraceCategoriesAndOptions {
   @scala.inline
   def apply(categoryFilter: String, traceOptions: String): TraceCategoriesAndOptions = {
     val __obj = js.Dynamic.literal(categoryFilter = categoryFilter.asInstanceOf[js.Any], traceOptions = traceOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TraceCategoriesAndOptions]
   }
 }

@@ -19,7 +19,6 @@ object AnonRemove {
     set: (String, ^) => js.Promise[^]
   ): AnonRemove = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), remove = js.Any.fromFunction2(remove), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[AnonRemove]
   }
 }

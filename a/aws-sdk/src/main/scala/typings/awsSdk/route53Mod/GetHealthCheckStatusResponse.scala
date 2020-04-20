@@ -16,7 +16,6 @@ object GetHealthCheckStatusResponse {
   @scala.inline
   def apply(HealthCheckObservations: HealthCheckObservations): GetHealthCheckStatusResponse = {
     val __obj = js.Dynamic.literal(HealthCheckObservations = HealthCheckObservations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHealthCheckStatusResponse]
   }
 }

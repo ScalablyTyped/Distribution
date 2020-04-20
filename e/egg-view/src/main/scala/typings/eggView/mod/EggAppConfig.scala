@@ -13,7 +13,6 @@ object EggAppConfig {
   @scala.inline
   def apply(view: AnonCache): EggAppConfig = {
     val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EggAppConfig]
   }
 }

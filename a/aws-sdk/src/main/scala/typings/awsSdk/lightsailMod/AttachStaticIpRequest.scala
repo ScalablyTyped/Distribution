@@ -20,7 +20,6 @@ object AttachStaticIpRequest {
   @scala.inline
   def apply(instanceName: ResourceName, staticIpName: ResourceName): AttachStaticIpRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], staticIpName = staticIpName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachStaticIpRequest]
   }
 }

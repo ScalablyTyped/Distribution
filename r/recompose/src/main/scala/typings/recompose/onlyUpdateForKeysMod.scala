@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 object onlyUpdateForKeysMod extends js.Object {
   def default(propKeys: js.Array[String]): InferableComponentEnhancer[js.Object] = js.native
   @JSName("default")
-  def default_T[T](propKeys: js.Array[String]): InferableComponentEnhancer[js.Object] = js.native
+  def default_T[T](propKeys: js.Array[/* keyof T */ String]): InferableComponentEnhancer[js.Object] = js.native
 }
 

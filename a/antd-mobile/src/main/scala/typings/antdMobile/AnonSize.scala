@@ -12,7 +12,6 @@ object AnonSize {
   @scala.inline
   def apply(size: String): AnonSize = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSize]
   }
 }

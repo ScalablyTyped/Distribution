@@ -30,7 +30,6 @@ object V4TokenDetails {
     vapidKey: Uint8Array
   ): V4TokenDetails = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], fcmSenderId = fcmSenderId.asInstanceOf[js.Any], fcmToken = fcmToken.asInstanceOf[js.Any], p256dh = p256dh.asInstanceOf[js.Any], swScope = swScope.asInstanceOf[js.Any], vapidKey = vapidKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[V4TokenDetails]
   }
 }

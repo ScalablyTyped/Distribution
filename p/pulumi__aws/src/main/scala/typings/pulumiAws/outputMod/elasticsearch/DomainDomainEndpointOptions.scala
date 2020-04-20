@@ -20,7 +20,6 @@ object DomainDomainEndpointOptions {
   @scala.inline
   def apply(enforceHttps: Boolean, tlsSecurityPolicy: String): DomainDomainEndpointOptions = {
     val __obj = js.Dynamic.literal(enforceHttps = enforceHttps.asInstanceOf[js.Any], tlsSecurityPolicy = tlsSecurityPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainDomainEndpointOptions]
   }
 }

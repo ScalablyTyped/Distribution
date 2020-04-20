@@ -25,7 +25,6 @@ object AnonAmount {
     purchaseOrderNumber: String
   ): AnonAmount = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], paymentInstrumentSubtype = paymentInstrumentSubtype.asInstanceOf[js.Any], purchaseOrderNumber = purchaseOrderNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAmount]
   }
 }

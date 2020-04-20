@@ -16,7 +16,6 @@ object GetKeyRotationStatusRequest {
   @scala.inline
   def apply(KeyId: KeyIdType): GetKeyRotationStatusRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetKeyRotationStatusRequest]
   }
 }

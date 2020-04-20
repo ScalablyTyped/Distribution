@@ -22,7 +22,6 @@ object IWrappingResult {
     wrappedText: String
   ): IWrappingResult = {
     val __obj = js.Dynamic.literal(noBrokeWords = noBrokeWords.asInstanceOf[js.Any], noLines = noLines.asInstanceOf[js.Any], originalText = originalText.asInstanceOf[js.Any], truncatedText = truncatedText.asInstanceOf[js.Any], wrappedText = wrappedText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWrappingResult]
   }
 }

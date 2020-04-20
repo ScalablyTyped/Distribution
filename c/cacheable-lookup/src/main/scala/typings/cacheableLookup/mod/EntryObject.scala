@@ -27,7 +27,6 @@ object EntryObject {
   @scala.inline
   def apply(address: String, expires: Double, family: IPFamily, ttl: Double): EntryObject = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntryObject]
   }
 }

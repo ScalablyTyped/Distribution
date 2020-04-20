@@ -14,14 +14,12 @@ trait ToolbarClassKey extends js.Object
 
 object ToolbarClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
   @scala.inline
-  def dense: typings.materialUiCore.materialUiCoreStrings.dense = this.cast("dense")
+  def gutters: typings.materialUiCore.materialUiCoreStrings.gutters = "gutters".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.gutters]
   @scala.inline
-  def gutters: typings.materialUiCore.materialUiCoreStrings.gutters = this.cast("gutters")
+  def regular: typings.materialUiCore.materialUiCoreStrings.regular = "regular".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.regular]
   @scala.inline
-  def regular: typings.materialUiCore.materialUiCoreStrings.regular = this.cast("regular")
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

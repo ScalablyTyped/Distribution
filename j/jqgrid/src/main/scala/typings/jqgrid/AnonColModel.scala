@@ -13,7 +13,6 @@ object AnonColModel {
   @scala.inline
   def apply(colModel: js.Any, rowId: js.Any): AnonColModel = {
     val __obj = js.Dynamic.literal(colModel = colModel.asInstanceOf[js.Any], rowId = rowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColModel]
   }
 }

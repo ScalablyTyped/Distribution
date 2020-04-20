@@ -32,7 +32,6 @@ object Chart {
   @scala.inline
   def apply(addSeriesAsDrilldown: (Point, SeriesOptionsType) => Unit, drillUp: () => Unit): Chart = {
     val __obj = js.Dynamic.literal(addSeriesAsDrilldown = js.Any.fromFunction2(addSeriesAsDrilldown), drillUp = js.Any.fromFunction0(drillUp))
-  
     __obj.asInstanceOf[Chart]
   }
 }

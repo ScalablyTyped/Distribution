@@ -16,7 +16,6 @@ object IDeque {
   @scala.inline
   def apply[T](pop_front: () => Unit, push_front: T => Unit): IDeque[T] = {
     val __obj = js.Dynamic.literal(pop_front = js.Any.fromFunction0(pop_front), push_front = js.Any.fromFunction1(push_front))
-  
     __obj.asInstanceOf[IDeque[T]]
   }
 }

@@ -20,7 +20,6 @@ object BatchRemoveFacetFromObject {
   @scala.inline
   def apply(ObjectReference: ObjectReference, SchemaFacet: SchemaFacet): BatchRemoveFacetFromObject = {
     val __obj = js.Dynamic.literal(ObjectReference = ObjectReference.asInstanceOf[js.Any], SchemaFacet = SchemaFacet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchRemoveFacetFromObject]
   }
 }

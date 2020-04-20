@@ -127,240 +127,238 @@ trait KnownResourceType extends js.Object
 
 object KnownResourceType {
   @scala.inline
-  def Account: typings.fhirKitClient.fhirKitClientStrings.Account = this.cast("Account")
+  def Account: typings.fhirKitClient.fhirKitClientStrings.Account = "Account".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Account]
   @scala.inline
-  def ActivityDefinition: typings.fhirKitClient.fhirKitClientStrings.ActivityDefinition = this.cast("ActivityDefinition")
+  def ActivityDefinition: typings.fhirKitClient.fhirKitClientStrings.ActivityDefinition = "ActivityDefinition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ActivityDefinition]
   @scala.inline
-  def AdverseEvent: typings.fhirKitClient.fhirKitClientStrings.AdverseEvent = this.cast("AdverseEvent")
+  def AdverseEvent: typings.fhirKitClient.fhirKitClientStrings.AdverseEvent = "AdverseEvent".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.AdverseEvent]
   @scala.inline
-  def AllergyIntolerance: typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance = this.cast("AllergyIntolerance")
+  def AllergyIntolerance: typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance = "AllergyIntolerance".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance]
   @scala.inline
-  def Appointment: typings.fhirKitClient.fhirKitClientStrings.Appointment = this.cast("Appointment")
+  def Appointment: typings.fhirKitClient.fhirKitClientStrings.Appointment = "Appointment".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Appointment]
   @scala.inline
-  def AppointmentResponse: typings.fhirKitClient.fhirKitClientStrings.AppointmentResponse = this.cast("AppointmentResponse")
+  def AppointmentResponse: typings.fhirKitClient.fhirKitClientStrings.AppointmentResponse = "AppointmentResponse".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.AppointmentResponse]
   @scala.inline
-  def AuditEvent: typings.fhirKitClient.fhirKitClientStrings.AuditEvent = this.cast("AuditEvent")
+  def AuditEvent: typings.fhirKitClient.fhirKitClientStrings.AuditEvent = "AuditEvent".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.AuditEvent]
   @scala.inline
-  def Basic: typings.fhirKitClient.fhirKitClientStrings.Basic = this.cast("Basic")
+  def Basic: typings.fhirKitClient.fhirKitClientStrings.Basic = "Basic".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Basic]
   @scala.inline
-  def Binary: typings.fhirKitClient.fhirKitClientStrings.Binary = this.cast("Binary")
+  def Binary: typings.fhirKitClient.fhirKitClientStrings.Binary = "Binary".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Binary]
   @scala.inline
-  def BodySite: typings.fhirKitClient.fhirKitClientStrings.BodySite = this.cast("BodySite")
+  def BodySite: typings.fhirKitClient.fhirKitClientStrings.BodySite = "BodySite".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.BodySite]
   @scala.inline
-  def Bundle: typings.fhirKitClient.fhirKitClientStrings.Bundle = this.cast("Bundle")
+  def Bundle: typings.fhirKitClient.fhirKitClientStrings.Bundle = "Bundle".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Bundle]
   @scala.inline
-  def CapabilityStatement: typings.fhirKitClient.fhirKitClientStrings.CapabilityStatement = this.cast("CapabilityStatement")
+  def CapabilityStatement: typings.fhirKitClient.fhirKitClientStrings.CapabilityStatement = "CapabilityStatement".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.CapabilityStatement]
   @scala.inline
-  def CarePlan: typings.fhirKitClient.fhirKitClientStrings.CarePlan = this.cast("CarePlan")
+  def CarePlan: typings.fhirKitClient.fhirKitClientStrings.CarePlan = "CarePlan".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.CarePlan]
   @scala.inline
-  def CareTeam: typings.fhirKitClient.fhirKitClientStrings.CareTeam = this.cast("CareTeam")
+  def CareTeam: typings.fhirKitClient.fhirKitClientStrings.CareTeam = "CareTeam".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.CareTeam]
   @scala.inline
-  def ChargeItem: typings.fhirKitClient.fhirKitClientStrings.ChargeItem = this.cast("ChargeItem")
+  def ChargeItem: typings.fhirKitClient.fhirKitClientStrings.ChargeItem = "ChargeItem".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ChargeItem]
   @scala.inline
-  def Claim: typings.fhirKitClient.fhirKitClientStrings.Claim = this.cast("Claim")
+  def Claim: typings.fhirKitClient.fhirKitClientStrings.Claim = "Claim".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Claim]
   @scala.inline
-  def ClaimResponse: typings.fhirKitClient.fhirKitClientStrings.ClaimResponse = this.cast("ClaimResponse")
+  def ClaimResponse: typings.fhirKitClient.fhirKitClientStrings.ClaimResponse = "ClaimResponse".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ClaimResponse]
   @scala.inline
-  def ClinicalImpression: typings.fhirKitClient.fhirKitClientStrings.ClinicalImpression = this.cast("ClinicalImpression")
+  def ClinicalImpression: typings.fhirKitClient.fhirKitClientStrings.ClinicalImpression = "ClinicalImpression".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ClinicalImpression]
   @scala.inline
-  def CodeSystem: typings.fhirKitClient.fhirKitClientStrings.CodeSystem = this.cast("CodeSystem")
+  def CodeSystem: typings.fhirKitClient.fhirKitClientStrings.CodeSystem = "CodeSystem".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.CodeSystem]
   @scala.inline
-  def Communication: typings.fhirKitClient.fhirKitClientStrings.Communication = this.cast("Communication")
+  def Communication: typings.fhirKitClient.fhirKitClientStrings.Communication = "Communication".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Communication]
   @scala.inline
-  def CommunicationRequest: typings.fhirKitClient.fhirKitClientStrings.CommunicationRequest = this.cast("CommunicationRequest")
+  def CommunicationRequest: typings.fhirKitClient.fhirKitClientStrings.CommunicationRequest = "CommunicationRequest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.CommunicationRequest]
   @scala.inline
-  def CompartmentDefinition: typings.fhirKitClient.fhirKitClientStrings.CompartmentDefinition = this.cast("CompartmentDefinition")
+  def CompartmentDefinition: typings.fhirKitClient.fhirKitClientStrings.CompartmentDefinition = "CompartmentDefinition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.CompartmentDefinition]
   @scala.inline
-  def Composition: typings.fhirKitClient.fhirKitClientStrings.Composition = this.cast("Composition")
+  def Composition: typings.fhirKitClient.fhirKitClientStrings.Composition = "Composition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Composition]
   @scala.inline
-  def ConceptMap: typings.fhirKitClient.fhirKitClientStrings.ConceptMap = this.cast("ConceptMap")
+  def ConceptMap: typings.fhirKitClient.fhirKitClientStrings.ConceptMap = "ConceptMap".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ConceptMap]
   @scala.inline
-  def Condition: typings.fhirKitClient.fhirKitClientStrings.Condition = this.cast("Condition")
+  def Condition: typings.fhirKitClient.fhirKitClientStrings.Condition = "Condition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Condition]
   @scala.inline
-  def Consent: typings.fhirKitClient.fhirKitClientStrings.Consent = this.cast("Consent")
+  def Consent: typings.fhirKitClient.fhirKitClientStrings.Consent = "Consent".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Consent]
   @scala.inline
-  def Contract: typings.fhirKitClient.fhirKitClientStrings.Contract = this.cast("Contract")
+  def Contract: typings.fhirKitClient.fhirKitClientStrings.Contract = "Contract".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Contract]
   @scala.inline
-  def Coverage: typings.fhirKitClient.fhirKitClientStrings.Coverage = this.cast("Coverage")
+  def Coverage: typings.fhirKitClient.fhirKitClientStrings.Coverage = "Coverage".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Coverage]
   @scala.inline
-  def DataElement: typings.fhirKitClient.fhirKitClientStrings.DataElement = this.cast("DataElement")
+  def DataElement: typings.fhirKitClient.fhirKitClientStrings.DataElement = "DataElement".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.DataElement]
   @scala.inline
-  def DetectedIssue: typings.fhirKitClient.fhirKitClientStrings.DetectedIssue = this.cast("DetectedIssue")
+  def DetectedIssue: typings.fhirKitClient.fhirKitClientStrings.DetectedIssue = "DetectedIssue".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.DetectedIssue]
   @scala.inline
-  def Device: typings.fhirKitClient.fhirKitClientStrings.Device = this.cast("Device")
+  def Device: typings.fhirKitClient.fhirKitClientStrings.Device = "Device".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Device]
   @scala.inline
-  def DeviceComponent: typings.fhirKitClient.fhirKitClientStrings.DeviceComponent = this.cast("DeviceComponent")
+  def DeviceComponent: typings.fhirKitClient.fhirKitClientStrings.DeviceComponent = "DeviceComponent".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.DeviceComponent]
   @scala.inline
-  def DeviceMetric: typings.fhirKitClient.fhirKitClientStrings.DeviceMetric = this.cast("DeviceMetric")
+  def DeviceMetric: typings.fhirKitClient.fhirKitClientStrings.DeviceMetric = "DeviceMetric".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.DeviceMetric]
   @scala.inline
-  def DeviceRequest: typings.fhirKitClient.fhirKitClientStrings.DeviceRequest = this.cast("DeviceRequest")
+  def DeviceRequest: typings.fhirKitClient.fhirKitClientStrings.DeviceRequest = "DeviceRequest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.DeviceRequest]
   @scala.inline
-  def DeviceUseStatement: typings.fhirKitClient.fhirKitClientStrings.DeviceUseStatement = this.cast("DeviceUseStatement")
+  def DeviceUseStatement: typings.fhirKitClient.fhirKitClientStrings.DeviceUseStatement = "DeviceUseStatement".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.DeviceUseStatement]
   @scala.inline
-  def DiagnosticReport: typings.fhirKitClient.fhirKitClientStrings.DiagnosticReport = this.cast("DiagnosticReport")
+  def DiagnosticReport: typings.fhirKitClient.fhirKitClientStrings.DiagnosticReport = "DiagnosticReport".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.DiagnosticReport]
   @scala.inline
-  def DocumentManifest: typings.fhirKitClient.fhirKitClientStrings.DocumentManifest = this.cast("DocumentManifest")
+  def DocumentManifest: typings.fhirKitClient.fhirKitClientStrings.DocumentManifest = "DocumentManifest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.DocumentManifest]
   @scala.inline
-  def DocumentReference: typings.fhirKitClient.fhirKitClientStrings.DocumentReference = this.cast("DocumentReference")
+  def DocumentReference: typings.fhirKitClient.fhirKitClientStrings.DocumentReference = "DocumentReference".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.DocumentReference]
   @scala.inline
-  def EligibilityRequest: typings.fhirKitClient.fhirKitClientStrings.EligibilityRequest = this.cast("EligibilityRequest")
+  def EligibilityRequest: typings.fhirKitClient.fhirKitClientStrings.EligibilityRequest = "EligibilityRequest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.EligibilityRequest]
   @scala.inline
-  def EligibilityResponse: typings.fhirKitClient.fhirKitClientStrings.EligibilityResponse = this.cast("EligibilityResponse")
+  def EligibilityResponse: typings.fhirKitClient.fhirKitClientStrings.EligibilityResponse = "EligibilityResponse".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.EligibilityResponse]
   @scala.inline
-  def Encounter: typings.fhirKitClient.fhirKitClientStrings.Encounter = this.cast("Encounter")
+  def Encounter: typings.fhirKitClient.fhirKitClientStrings.Encounter = "Encounter".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Encounter]
   @scala.inline
-  def Endpoint: typings.fhirKitClient.fhirKitClientStrings.Endpoint = this.cast("Endpoint")
+  def Endpoint: typings.fhirKitClient.fhirKitClientStrings.Endpoint = "Endpoint".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Endpoint]
   @scala.inline
-  def EnrollmentRequest: typings.fhirKitClient.fhirKitClientStrings.EnrollmentRequest = this.cast("EnrollmentRequest")
+  def EnrollmentRequest: typings.fhirKitClient.fhirKitClientStrings.EnrollmentRequest = "EnrollmentRequest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.EnrollmentRequest]
   @scala.inline
-  def EnrollmentResponse: typings.fhirKitClient.fhirKitClientStrings.EnrollmentResponse = this.cast("EnrollmentResponse")
+  def EnrollmentResponse: typings.fhirKitClient.fhirKitClientStrings.EnrollmentResponse = "EnrollmentResponse".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.EnrollmentResponse]
   @scala.inline
-  def EpisodeOfCare: typings.fhirKitClient.fhirKitClientStrings.EpisodeOfCare = this.cast("EpisodeOfCare")
+  def EpisodeOfCare: typings.fhirKitClient.fhirKitClientStrings.EpisodeOfCare = "EpisodeOfCare".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.EpisodeOfCare]
   @scala.inline
-  def ExpansionProfile: typings.fhirKitClient.fhirKitClientStrings.ExpansionProfile = this.cast("ExpansionProfile")
+  def ExpansionProfile: typings.fhirKitClient.fhirKitClientStrings.ExpansionProfile = "ExpansionProfile".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ExpansionProfile]
   @scala.inline
-  def ExplanationOfBenefit: typings.fhirKitClient.fhirKitClientStrings.ExplanationOfBenefit = this.cast("ExplanationOfBenefit")
+  def ExplanationOfBenefit: typings.fhirKitClient.fhirKitClientStrings.ExplanationOfBenefit = "ExplanationOfBenefit".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ExplanationOfBenefit]
   @scala.inline
-  def FamilyMemberHistory: typings.fhirKitClient.fhirKitClientStrings.FamilyMemberHistory = this.cast("FamilyMemberHistory")
+  def FamilyMemberHistory: typings.fhirKitClient.fhirKitClientStrings.FamilyMemberHistory = "FamilyMemberHistory".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.FamilyMemberHistory]
   @scala.inline
-  def Flag: typings.fhirKitClient.fhirKitClientStrings.Flag = this.cast("Flag")
+  def Flag: typings.fhirKitClient.fhirKitClientStrings.Flag = "Flag".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Flag]
   @scala.inline
-  def Goal: typings.fhirKitClient.fhirKitClientStrings.Goal = this.cast("Goal")
+  def Goal: typings.fhirKitClient.fhirKitClientStrings.Goal = "Goal".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Goal]
   @scala.inline
-  def GraphDefinition: typings.fhirKitClient.fhirKitClientStrings.GraphDefinition = this.cast("GraphDefinition")
+  def GraphDefinition: typings.fhirKitClient.fhirKitClientStrings.GraphDefinition = "GraphDefinition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.GraphDefinition]
   @scala.inline
-  def Group: typings.fhirKitClient.fhirKitClientStrings.Group = this.cast("Group")
+  def Group: typings.fhirKitClient.fhirKitClientStrings.Group = "Group".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Group]
   @scala.inline
-  def GuidanceResponse: typings.fhirKitClient.fhirKitClientStrings.GuidanceResponse = this.cast("GuidanceResponse")
+  def GuidanceResponse: typings.fhirKitClient.fhirKitClientStrings.GuidanceResponse = "GuidanceResponse".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.GuidanceResponse]
   @scala.inline
-  def HealthcareService: typings.fhirKitClient.fhirKitClientStrings.HealthcareService = this.cast("HealthcareService")
+  def HealthcareService: typings.fhirKitClient.fhirKitClientStrings.HealthcareService = "HealthcareService".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.HealthcareService]
   @scala.inline
-  def ImagingManifest: typings.fhirKitClient.fhirKitClientStrings.ImagingManifest = this.cast("ImagingManifest")
+  def ImagingManifest: typings.fhirKitClient.fhirKitClientStrings.ImagingManifest = "ImagingManifest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ImagingManifest]
   @scala.inline
-  def ImagingStudy: typings.fhirKitClient.fhirKitClientStrings.ImagingStudy = this.cast("ImagingStudy")
+  def ImagingStudy: typings.fhirKitClient.fhirKitClientStrings.ImagingStudy = "ImagingStudy".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ImagingStudy]
   @scala.inline
-  def Immunization: typings.fhirKitClient.fhirKitClientStrings.Immunization = this.cast("Immunization")
+  def Immunization: typings.fhirKitClient.fhirKitClientStrings.Immunization = "Immunization".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Immunization]
   @scala.inline
-  def ImmunizationRecommendation: typings.fhirKitClient.fhirKitClientStrings.ImmunizationRecommendation = this.cast("ImmunizationRecommendation")
+  def ImmunizationRecommendation: typings.fhirKitClient.fhirKitClientStrings.ImmunizationRecommendation = "ImmunizationRecommendation".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ImmunizationRecommendation]
   @scala.inline
-  def ImplementationGuide: typings.fhirKitClient.fhirKitClientStrings.ImplementationGuide = this.cast("ImplementationGuide")
+  def ImplementationGuide: typings.fhirKitClient.fhirKitClientStrings.ImplementationGuide = "ImplementationGuide".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ImplementationGuide]
   @scala.inline
-  def Library: typings.fhirKitClient.fhirKitClientStrings.Library = this.cast("Library")
+  def Library: typings.fhirKitClient.fhirKitClientStrings.Library = "Library".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Library]
   @scala.inline
-  def Linkage: typings.fhirKitClient.fhirKitClientStrings.Linkage = this.cast("Linkage")
+  def Linkage: typings.fhirKitClient.fhirKitClientStrings.Linkage = "Linkage".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Linkage]
   @scala.inline
-  def List: typings.fhirKitClient.fhirKitClientStrings.List = this.cast("List")
+  def List: typings.fhirKitClient.fhirKitClientStrings.List = "List".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.List]
   @scala.inline
-  def Location: typings.fhirKitClient.fhirKitClientStrings.Location = this.cast("Location")
+  def Location: typings.fhirKitClient.fhirKitClientStrings.Location = "Location".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Location]
   @scala.inline
-  def Measure: typings.fhirKitClient.fhirKitClientStrings.Measure = this.cast("Measure")
+  def Measure: typings.fhirKitClient.fhirKitClientStrings.Measure = "Measure".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Measure]
   @scala.inline
-  def MeasureReport: typings.fhirKitClient.fhirKitClientStrings.MeasureReport = this.cast("MeasureReport")
+  def MeasureReport: typings.fhirKitClient.fhirKitClientStrings.MeasureReport = "MeasureReport".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.MeasureReport]
   @scala.inline
-  def Media: typings.fhirKitClient.fhirKitClientStrings.Media = this.cast("Media")
+  def Media: typings.fhirKitClient.fhirKitClientStrings.Media = "Media".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Media]
   @scala.inline
-  def Medication: typings.fhirKitClient.fhirKitClientStrings.Medication = this.cast("Medication")
+  def Medication: typings.fhirKitClient.fhirKitClientStrings.Medication = "Medication".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Medication]
   @scala.inline
-  def MedicationAdministration: typings.fhirKitClient.fhirKitClientStrings.MedicationAdministration = this.cast("MedicationAdministration")
+  def MedicationAdministration: typings.fhirKitClient.fhirKitClientStrings.MedicationAdministration = "MedicationAdministration".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.MedicationAdministration]
   @scala.inline
-  def MedicationDispense: typings.fhirKitClient.fhirKitClientStrings.MedicationDispense = this.cast("MedicationDispense")
+  def MedicationDispense: typings.fhirKitClient.fhirKitClientStrings.MedicationDispense = "MedicationDispense".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.MedicationDispense]
   @scala.inline
-  def MedicationRequest: typings.fhirKitClient.fhirKitClientStrings.MedicationRequest = this.cast("MedicationRequest")
+  def MedicationRequest: typings.fhirKitClient.fhirKitClientStrings.MedicationRequest = "MedicationRequest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.MedicationRequest]
   @scala.inline
-  def MedicationStatement: typings.fhirKitClient.fhirKitClientStrings.MedicationStatement = this.cast("MedicationStatement")
+  def MedicationStatement: typings.fhirKitClient.fhirKitClientStrings.MedicationStatement = "MedicationStatement".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.MedicationStatement]
   @scala.inline
-  def MessageDefinition: typings.fhirKitClient.fhirKitClientStrings.MessageDefinition = this.cast("MessageDefinition")
+  def MessageDefinition: typings.fhirKitClient.fhirKitClientStrings.MessageDefinition = "MessageDefinition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.MessageDefinition]
   @scala.inline
-  def MessageHeader: typings.fhirKitClient.fhirKitClientStrings.MessageHeader = this.cast("MessageHeader")
+  def MessageHeader: typings.fhirKitClient.fhirKitClientStrings.MessageHeader = "MessageHeader".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.MessageHeader]
   @scala.inline
-  def NamingSystem: typings.fhirKitClient.fhirKitClientStrings.NamingSystem = this.cast("NamingSystem")
+  def NamingSystem: typings.fhirKitClient.fhirKitClientStrings.NamingSystem = "NamingSystem".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.NamingSystem]
   @scala.inline
-  def NutritionOrder: typings.fhirKitClient.fhirKitClientStrings.NutritionOrder = this.cast("NutritionOrder")
+  def NutritionOrder: typings.fhirKitClient.fhirKitClientStrings.NutritionOrder = "NutritionOrder".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.NutritionOrder]
   @scala.inline
-  def Observation: typings.fhirKitClient.fhirKitClientStrings.Observation = this.cast("Observation")
+  def Observation: typings.fhirKitClient.fhirKitClientStrings.Observation = "Observation".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Observation]
   @scala.inline
-  def OperationDefinition: typings.fhirKitClient.fhirKitClientStrings.OperationDefinition = this.cast("OperationDefinition")
+  def OperationDefinition: typings.fhirKitClient.fhirKitClientStrings.OperationDefinition = "OperationDefinition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.OperationDefinition]
   @scala.inline
-  def OperationOutcome: typings.fhirKitClient.fhirKitClientStrings.OperationOutcome = this.cast("OperationOutcome")
+  def OperationOutcome: typings.fhirKitClient.fhirKitClientStrings.OperationOutcome = "OperationOutcome".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.OperationOutcome]
   @scala.inline
-  def Organization: typings.fhirKitClient.fhirKitClientStrings.Organization = this.cast("Organization")
+  def Organization: typings.fhirKitClient.fhirKitClientStrings.Organization = "Organization".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Organization]
   @scala.inline
-  def Parameters: typings.fhirKitClient.fhirKitClientStrings.Parameters = this.cast("Parameters")
+  def Parameters: typings.fhirKitClient.fhirKitClientStrings.Parameters = "Parameters".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Parameters]
   @scala.inline
-  def Patient: typings.fhirKitClient.fhirKitClientStrings.Patient = this.cast("Patient")
+  def Patient: typings.fhirKitClient.fhirKitClientStrings.Patient = "Patient".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Patient]
   @scala.inline
-  def PaymentNotice: typings.fhirKitClient.fhirKitClientStrings.PaymentNotice = this.cast("PaymentNotice")
+  def PaymentNotice: typings.fhirKitClient.fhirKitClientStrings.PaymentNotice = "PaymentNotice".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.PaymentNotice]
   @scala.inline
-  def PaymentReconciliation: typings.fhirKitClient.fhirKitClientStrings.PaymentReconciliation = this.cast("PaymentReconciliation")
+  def PaymentReconciliation: typings.fhirKitClient.fhirKitClientStrings.PaymentReconciliation = "PaymentReconciliation".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.PaymentReconciliation]
   @scala.inline
-  def Person: typings.fhirKitClient.fhirKitClientStrings.Person = this.cast("Person")
+  def Person: typings.fhirKitClient.fhirKitClientStrings.Person = "Person".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Person]
   @scala.inline
-  def PlanDefinition: typings.fhirKitClient.fhirKitClientStrings.PlanDefinition = this.cast("PlanDefinition")
+  def PlanDefinition: typings.fhirKitClient.fhirKitClientStrings.PlanDefinition = "PlanDefinition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.PlanDefinition]
   @scala.inline
-  def Practitioner: typings.fhirKitClient.fhirKitClientStrings.Practitioner = this.cast("Practitioner")
+  def Practitioner: typings.fhirKitClient.fhirKitClientStrings.Practitioner = "Practitioner".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Practitioner]
   @scala.inline
-  def PractitionerRole: typings.fhirKitClient.fhirKitClientStrings.PractitionerRole = this.cast("PractitionerRole")
+  def PractitionerRole: typings.fhirKitClient.fhirKitClientStrings.PractitionerRole = "PractitionerRole".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.PractitionerRole]
   @scala.inline
-  def Procedure: typings.fhirKitClient.fhirKitClientStrings.Procedure = this.cast("Procedure")
+  def Procedure: typings.fhirKitClient.fhirKitClientStrings.Procedure = "Procedure".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Procedure]
   @scala.inline
-  def ProcedureRequest: typings.fhirKitClient.fhirKitClientStrings.ProcedureRequest = this.cast("ProcedureRequest")
+  def ProcedureRequest: typings.fhirKitClient.fhirKitClientStrings.ProcedureRequest = "ProcedureRequest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ProcedureRequest]
   @scala.inline
-  def ProcessRequest: typings.fhirKitClient.fhirKitClientStrings.ProcessRequest = this.cast("ProcessRequest")
+  def ProcessRequest: typings.fhirKitClient.fhirKitClientStrings.ProcessRequest = "ProcessRequest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ProcessRequest]
   @scala.inline
-  def ProcessResponse: typings.fhirKitClient.fhirKitClientStrings.ProcessResponse = this.cast("ProcessResponse")
+  def ProcessResponse: typings.fhirKitClient.fhirKitClientStrings.ProcessResponse = "ProcessResponse".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ProcessResponse]
   @scala.inline
-  def Provenance: typings.fhirKitClient.fhirKitClientStrings.Provenance = this.cast("Provenance")
+  def Provenance: typings.fhirKitClient.fhirKitClientStrings.Provenance = "Provenance".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Provenance]
   @scala.inline
-  def Questionnaire: typings.fhirKitClient.fhirKitClientStrings.Questionnaire = this.cast("Questionnaire")
+  def Questionnaire: typings.fhirKitClient.fhirKitClientStrings.Questionnaire = "Questionnaire".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Questionnaire]
   @scala.inline
-  def QuestionnaireResponse: typings.fhirKitClient.fhirKitClientStrings.QuestionnaireResponse = this.cast("QuestionnaireResponse")
+  def QuestionnaireResponse: typings.fhirKitClient.fhirKitClientStrings.QuestionnaireResponse = "QuestionnaireResponse".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.QuestionnaireResponse]
   @scala.inline
-  def ReferralRequest: typings.fhirKitClient.fhirKitClientStrings.ReferralRequest = this.cast("ReferralRequest")
+  def ReferralRequest: typings.fhirKitClient.fhirKitClientStrings.ReferralRequest = "ReferralRequest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ReferralRequest]
   @scala.inline
-  def RelatedPerson: typings.fhirKitClient.fhirKitClientStrings.RelatedPerson = this.cast("RelatedPerson")
+  def RelatedPerson: typings.fhirKitClient.fhirKitClientStrings.RelatedPerson = "RelatedPerson".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.RelatedPerson]
   @scala.inline
-  def RequestGroup: typings.fhirKitClient.fhirKitClientStrings.RequestGroup = this.cast("RequestGroup")
+  def RequestGroup: typings.fhirKitClient.fhirKitClientStrings.RequestGroup = "RequestGroup".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.RequestGroup]
   @scala.inline
-  def ResearchStudy: typings.fhirKitClient.fhirKitClientStrings.ResearchStudy = this.cast("ResearchStudy")
+  def ResearchStudy: typings.fhirKitClient.fhirKitClientStrings.ResearchStudy = "ResearchStudy".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ResearchStudy]
   @scala.inline
-  def ResearchSubject: typings.fhirKitClient.fhirKitClientStrings.ResearchSubject = this.cast("ResearchSubject")
+  def ResearchSubject: typings.fhirKitClient.fhirKitClientStrings.ResearchSubject = "ResearchSubject".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ResearchSubject]
   @scala.inline
-  def RiskAssessment: typings.fhirKitClient.fhirKitClientStrings.RiskAssessment = this.cast("RiskAssessment")
+  def RiskAssessment: typings.fhirKitClient.fhirKitClientStrings.RiskAssessment = "RiskAssessment".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.RiskAssessment]
   @scala.inline
-  def Schedule: typings.fhirKitClient.fhirKitClientStrings.Schedule = this.cast("Schedule")
+  def Schedule: typings.fhirKitClient.fhirKitClientStrings.Schedule = "Schedule".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Schedule]
   @scala.inline
-  def SearchParameter: typings.fhirKitClient.fhirKitClientStrings.SearchParameter = this.cast("SearchParameter")
+  def SearchParameter: typings.fhirKitClient.fhirKitClientStrings.SearchParameter = "SearchParameter".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.SearchParameter]
   @scala.inline
-  def Sequence: typings.fhirKitClient.fhirKitClientStrings.Sequence = this.cast("Sequence")
+  def Sequence: typings.fhirKitClient.fhirKitClientStrings.Sequence = "Sequence".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Sequence]
   @scala.inline
-  def ServiceDefinition: typings.fhirKitClient.fhirKitClientStrings.ServiceDefinition = this.cast("ServiceDefinition")
+  def ServiceDefinition: typings.fhirKitClient.fhirKitClientStrings.ServiceDefinition = "ServiceDefinition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ServiceDefinition]
   @scala.inline
-  def Slot: typings.fhirKitClient.fhirKitClientStrings.Slot = this.cast("Slot")
+  def Slot: typings.fhirKitClient.fhirKitClientStrings.Slot = "Slot".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Slot]
   @scala.inline
-  def Specimen: typings.fhirKitClient.fhirKitClientStrings.Specimen = this.cast("Specimen")
+  def Specimen: typings.fhirKitClient.fhirKitClientStrings.Specimen = "Specimen".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Specimen]
   @scala.inline
-  def StructureDefinition: typings.fhirKitClient.fhirKitClientStrings.StructureDefinition = this.cast("StructureDefinition")
+  def StructureDefinition: typings.fhirKitClient.fhirKitClientStrings.StructureDefinition = "StructureDefinition".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.StructureDefinition]
   @scala.inline
-  def StructureMap: typings.fhirKitClient.fhirKitClientStrings.StructureMap = this.cast("StructureMap")
+  def StructureMap: typings.fhirKitClient.fhirKitClientStrings.StructureMap = "StructureMap".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.StructureMap]
   @scala.inline
-  def Subscription: typings.fhirKitClient.fhirKitClientStrings.Subscription = this.cast("Subscription")
+  def Subscription: typings.fhirKitClient.fhirKitClientStrings.Subscription = "Subscription".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Subscription]
   @scala.inline
-  def Substance: typings.fhirKitClient.fhirKitClientStrings.Substance = this.cast("Substance")
+  def Substance: typings.fhirKitClient.fhirKitClientStrings.Substance = "Substance".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Substance]
   @scala.inline
-  def SupplyDelivery: typings.fhirKitClient.fhirKitClientStrings.SupplyDelivery = this.cast("SupplyDelivery")
+  def SupplyDelivery: typings.fhirKitClient.fhirKitClientStrings.SupplyDelivery = "SupplyDelivery".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.SupplyDelivery]
   @scala.inline
-  def SupplyRequest: typings.fhirKitClient.fhirKitClientStrings.SupplyRequest = this.cast("SupplyRequest")
+  def SupplyRequest: typings.fhirKitClient.fhirKitClientStrings.SupplyRequest = "SupplyRequest".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.SupplyRequest]
   @scala.inline
-  def Task: typings.fhirKitClient.fhirKitClientStrings.Task = this.cast("Task")
+  def Task: typings.fhirKitClient.fhirKitClientStrings.Task = "Task".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.Task]
   @scala.inline
-  def TestReport: typings.fhirKitClient.fhirKitClientStrings.TestReport = this.cast("TestReport")
+  def TestReport: typings.fhirKitClient.fhirKitClientStrings.TestReport = "TestReport".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.TestReport]
   @scala.inline
-  def TestScript: typings.fhirKitClient.fhirKitClientStrings.TestScript = this.cast("TestScript")
+  def TestScript: typings.fhirKitClient.fhirKitClientStrings.TestScript = "TestScript".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.TestScript]
   @scala.inline
-  def ValueSet: typings.fhirKitClient.fhirKitClientStrings.ValueSet = this.cast("ValueSet")
+  def ValueSet: typings.fhirKitClient.fhirKitClientStrings.ValueSet = "ValueSet".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.ValueSet]
   @scala.inline
-  def VisionPrescription: typings.fhirKitClient.fhirKitClientStrings.VisionPrescription = this.cast("VisionPrescription")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VisionPrescription: typings.fhirKitClient.fhirKitClientStrings.VisionPrescription = "VisionPrescription".asInstanceOf[typings.fhirKitClient.fhirKitClientStrings.VisionPrescription]
 }
 

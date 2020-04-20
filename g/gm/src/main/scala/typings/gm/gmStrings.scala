@@ -903,7 +903,7 @@ object gmStrings {
   @scala.inline
   def Lanczos: Lanczos = "Lanczos".asInstanceOf[Lanczos]
   @scala.inline
-  def `Latin 2`: `Latin 2` = "Latin 2".asInstanceOf[`Latin 2`]
+  def `Latin 2`: `Latin 2` = ("Latin 2").asInstanceOf[`Latin 2`]
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   @scala.inline

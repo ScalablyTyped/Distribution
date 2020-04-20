@@ -13,7 +13,6 @@ object AnonThemeT {
   @scala.inline
   def apply[T]($theme: T): AnonThemeT[T] = {
     val __obj = js.Dynamic.literal($theme = $theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonThemeT[T]]
   }
 }

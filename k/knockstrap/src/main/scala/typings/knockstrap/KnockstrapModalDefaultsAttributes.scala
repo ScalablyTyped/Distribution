@@ -12,7 +12,6 @@ object KnockstrapModalDefaultsAttributes {
   @scala.inline
   def apply(role: String): KnockstrapModalDefaultsAttributes = {
     val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockstrapModalDefaultsAttributes]
   }
 }

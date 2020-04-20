@@ -16,7 +16,6 @@ object PathValue_ {
   @scala.inline
   def apply(path: String | PathSet, value: js.Any): PathValue_ = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PathValue_]
   }
 }

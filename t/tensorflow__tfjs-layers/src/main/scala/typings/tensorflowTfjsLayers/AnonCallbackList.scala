@@ -15,7 +15,6 @@ object AnonCallbackList {
   @scala.inline
   def apply(callbackList: CallbackList, history: History): AnonCallbackList = {
     val __obj = js.Dynamic.literal(callbackList = callbackList.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCallbackList]
   }
 }

@@ -13,7 +13,6 @@ object IPickerProp {
   @scala.inline
   def apply(doScrollingComplete: js.Function, select: js.Function): IPickerProp = {
     val __obj = js.Dynamic.literal(doScrollingComplete = doScrollingComplete.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPickerProp]
   }
 }

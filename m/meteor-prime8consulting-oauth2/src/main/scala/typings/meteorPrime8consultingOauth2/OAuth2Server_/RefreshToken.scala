@@ -16,7 +16,6 @@ object RefreshToken {
   @scala.inline
   def apply(clientId: String, expires: Date, refreshToken: String, userId: String): RefreshToken = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RefreshToken]
   }
 }

@@ -51,7 +51,6 @@ object TextEditorRegistry {
     setGrammarOverride: (TextEditor, String) => Unit
   ): TextEditorRegistry = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), clearGrammarOverride = js.Any.fromFunction1(clearGrammarOverride), getGrammarOverride = js.Any.fromFunction1(getGrammarOverride), maintainConfig = js.Any.fromFunction1(maintainConfig), maintainGrammar = js.Any.fromFunction1(maintainGrammar), observe = js.Any.fromFunction1(observe), remove = js.Any.fromFunction1(remove), setGrammarOverride = js.Any.fromFunction2(setGrammarOverride))
-  
     __obj.asInstanceOf[TextEditorRegistry]
   }
 }

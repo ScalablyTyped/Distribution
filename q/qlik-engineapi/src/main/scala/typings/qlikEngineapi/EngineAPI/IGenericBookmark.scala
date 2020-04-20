@@ -92,7 +92,6 @@ object IGenericBookmark {
     unPublish: () => js.Promise[Unit]
   ): IGenericBookmark = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction0(apply), applyPatches = js.Any.fromFunction1(applyPatches), getFieldValues = js.Any.fromFunction3(getFieldValues), getInfo = js.Any.fromFunction0(getInfo), getLayout = js.Any.fromFunction0(getLayout), getProperties = js.Any.fromFunction0(getProperties), publish = js.Any.fromFunction0(publish), setProperties = js.Any.fromFunction1(setProperties), unPublish = js.Any.fromFunction0(unPublish))
-  
     __obj.asInstanceOf[IGenericBookmark]
   }
 }

@@ -20,7 +20,6 @@ object TestEventPatternRequest {
   @scala.inline
   def apply(Event: String, EventPattern: EventPattern): TestEventPatternRequest = {
     val __obj = js.Dynamic.literal(Event = Event.asInstanceOf[js.Any], EventPattern = EventPattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestEventPatternRequest]
   }
 }

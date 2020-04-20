@@ -12,7 +12,6 @@ object CordovaPlugins {
   @scala.inline
   def apply(OneSignal: typings.onesignalCordovaPlugin.OneSignalCordovaPlugin.OneSignalCordovaPlugin): CordovaPlugins = {
     val __obj = js.Dynamic.literal(OneSignal = OneSignal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

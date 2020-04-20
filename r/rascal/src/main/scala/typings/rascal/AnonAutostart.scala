@@ -24,7 +24,6 @@ object AnonAutostart {
     testOnBorrow: Boolean
   ): AnonAutostart = {
     val __obj = js.Dynamic.literal(autostart = autostart.asInstanceOf[js.Any], evictionRunIntervalMillis = evictionRunIntervalMillis.asInstanceOf[js.Any], idleTimeoutMillis = idleTimeoutMillis.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], testOnBorrow = testOnBorrow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutostart]
   }
 }

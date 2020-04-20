@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactBigSchedulerComponents extends reactBigSchedulerProps {
   @scala.inline
-  def Scheduler: ComponentType[SchedulerProps] = js.constructorOf[typings.reactBigScheduler.mod.Scheduler].asInstanceOf[typings.react.mod.ComponentType[SchedulerProps]]
+  def Scheduler: ComponentType[SchedulerProps] = js.constructorOf[typings.reactBigScheduler.mod.Scheduler].asInstanceOf[ComponentType[SchedulerProps]]
 }
 

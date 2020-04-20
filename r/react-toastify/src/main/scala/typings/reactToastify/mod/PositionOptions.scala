@@ -16,18 +16,16 @@ trait PositionOptions extends js.Object
 
 object PositionOptions {
   @scala.inline
-  def `bottom-center`: typings.reactToastify.reactToastifyStrings.`bottom-center` = this.cast("bottom-center")
+  def `bottom-center`: typings.reactToastify.reactToastifyStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.reactToastify.reactToastifyStrings.`bottom-center`]
   @scala.inline
-  def `bottom-left`: typings.reactToastify.reactToastifyStrings.`bottom-left` = this.cast("bottom-left")
+  def `bottom-left`: typings.reactToastify.reactToastifyStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.reactToastify.reactToastifyStrings.`bottom-left`]
   @scala.inline
-  def `bottom-right`: typings.reactToastify.reactToastifyStrings.`bottom-right` = this.cast("bottom-right")
+  def `bottom-right`: typings.reactToastify.reactToastifyStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.reactToastify.reactToastifyStrings.`bottom-right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `top-center`: typings.reactToastify.reactToastifyStrings.`top-center` = "top-center".asInstanceOf[typings.reactToastify.reactToastifyStrings.`top-center`]
   @scala.inline
-  def `top-center`: typings.reactToastify.reactToastifyStrings.`top-center` = this.cast("top-center")
+  def `top-left`: typings.reactToastify.reactToastifyStrings.`top-left` = "top-left".asInstanceOf[typings.reactToastify.reactToastifyStrings.`top-left`]
   @scala.inline
-  def `top-left`: typings.reactToastify.reactToastifyStrings.`top-left` = this.cast("top-left")
-  @scala.inline
-  def `top-right`: typings.reactToastify.reactToastifyStrings.`top-right` = this.cast("top-right")
+  def `top-right`: typings.reactToastify.reactToastifyStrings.`top-right` = "top-right".asInstanceOf[typings.reactToastify.reactToastifyStrings.`top-right`]
 }
 

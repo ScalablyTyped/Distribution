@@ -13,7 +13,6 @@ object CSVLayerLayerviewCreateErrorEvent {
   @scala.inline
   def apply(error: Error, view: View): CSVLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CSVLayerLayerviewCreateErrorEvent]
   }
 }

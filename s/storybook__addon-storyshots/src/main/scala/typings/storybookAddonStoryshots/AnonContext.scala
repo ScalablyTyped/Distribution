@@ -21,7 +21,6 @@ object AnonContext {
     story: js.Any
   ): AnonContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], renderTree = js.Any.fromFunction3(renderTree), snapshotFileName = snapshotFileName.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContext]
   }
 }

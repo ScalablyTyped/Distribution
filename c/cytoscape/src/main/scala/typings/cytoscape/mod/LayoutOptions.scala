@@ -112,7 +112,6 @@ object LayoutOptions {
   @scala.inline
   def NullLayoutOptions(name: `null`): LayoutOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LayoutOptions]
   }
   @scala.inline

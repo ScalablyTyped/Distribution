@@ -16,7 +16,6 @@ object GetBucketReplicationRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketReplicationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketReplicationRequest]
   }
 }

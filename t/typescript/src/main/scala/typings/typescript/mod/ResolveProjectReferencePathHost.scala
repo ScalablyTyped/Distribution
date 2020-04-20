@@ -12,7 +12,6 @@ object ResolveProjectReferencePathHost {
   @scala.inline
   def apply(fileExists: java.lang.String => Boolean): ResolveProjectReferencePathHost = {
     val __obj = js.Dynamic.literal(fileExists = js.Any.fromFunction1(fileExists))
-  
     __obj.asInstanceOf[ResolveProjectReferencePathHost]
   }
 }

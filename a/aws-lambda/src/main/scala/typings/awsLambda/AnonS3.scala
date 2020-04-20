@@ -14,7 +14,6 @@ object AnonS3 {
   @scala.inline
   def apply(s3: CloudFrontS3Origin): AnonS3 = {
     val __obj = js.Dynamic.literal(s3 = s3.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonS3]
   }
 }

@@ -42,7 +42,6 @@ object FragmentSpecResolver {
     setVariables: (Variables, ConcreteRequest) => Unit
   ): FragmentSpecResolver = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), resolve = js.Any.fromFunction0(resolve), setCallback = js.Any.fromFunction1(setCallback), setProps = js.Any.fromFunction1(setProps), setVariables = js.Any.fromFunction2(setVariables))
-  
     __obj.asInstanceOf[FragmentSpecResolver]
   }
 }

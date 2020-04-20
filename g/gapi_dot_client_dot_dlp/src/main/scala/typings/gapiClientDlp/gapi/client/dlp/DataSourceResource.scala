@@ -18,7 +18,6 @@ object DataSourceResource {
   @scala.inline
   def apply(analyze: AnonAccesstoken => Request_[GoogleLongrunningOperation]): DataSourceResource = {
     val __obj = js.Dynamic.literal(analyze = js.Any.fromFunction1(analyze))
-  
     __obj.asInstanceOf[DataSourceResource]
   }
 }

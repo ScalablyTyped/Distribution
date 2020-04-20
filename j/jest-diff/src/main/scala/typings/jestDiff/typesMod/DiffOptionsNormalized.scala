@@ -46,7 +46,6 @@ object DiffOptionsNormalized {
     patchColor: /* arg */ String => String
   ): DiffOptionsNormalized = {
     val __obj = js.Dynamic.literal(aAnnotation = aAnnotation.asInstanceOf[js.Any], aColor = js.Any.fromFunction1(aColor), aIndicator = aIndicator.asInstanceOf[js.Any], bAnnotation = bAnnotation.asInstanceOf[js.Any], bColor = js.Any.fromFunction1(bColor), bIndicator = bIndicator.asInstanceOf[js.Any], changeColor = js.Any.fromFunction1(changeColor), changeLineTrailingSpaceColor = js.Any.fromFunction1(changeLineTrailingSpaceColor), commonColor = js.Any.fromFunction1(commonColor), commonIndicator = commonIndicator.asInstanceOf[js.Any], commonLineTrailingSpaceColor = js.Any.fromFunction1(commonLineTrailingSpaceColor), contextLines = contextLines.asInstanceOf[js.Any], emptyFirstOrLastLinePlaceholder = emptyFirstOrLastLinePlaceholder.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], includeChangeCounts = includeChangeCounts.asInstanceOf[js.Any], omitAnnotationLines = omitAnnotationLines.asInstanceOf[js.Any], patchColor = js.Any.fromFunction1(patchColor))
-  
     __obj.asInstanceOf[DiffOptionsNormalized]
   }
 }

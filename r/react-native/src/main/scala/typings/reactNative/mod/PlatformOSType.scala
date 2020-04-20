@@ -15,16 +15,14 @@ trait PlatformOSType extends js.Object
 
 object PlatformOSType {
   @scala.inline
-  def android: typings.reactNative.reactNativeStrings.android = this.cast("android")
+  def android: typings.reactNative.reactNativeStrings.android = "android".asInstanceOf[typings.reactNative.reactNativeStrings.android]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ios: typings.reactNative.reactNativeStrings.ios = "ios".asInstanceOf[typings.reactNative.reactNativeStrings.ios]
   @scala.inline
-  def ios: typings.reactNative.reactNativeStrings.ios = this.cast("ios")
+  def macos: typings.reactNative.reactNativeStrings.macos = "macos".asInstanceOf[typings.reactNative.reactNativeStrings.macos]
   @scala.inline
-  def macos: typings.reactNative.reactNativeStrings.macos = this.cast("macos")
+  def web: typings.reactNative.reactNativeStrings.web = "web".asInstanceOf[typings.reactNative.reactNativeStrings.web]
   @scala.inline
-  def web: typings.reactNative.reactNativeStrings.web = this.cast("web")
-  @scala.inline
-  def windows: typings.reactNative.reactNativeStrings.windows = this.cast("windows")
+  def windows: typings.reactNative.reactNativeStrings.windows = "windows".asInstanceOf[typings.reactNative.reactNativeStrings.windows]
 }
 

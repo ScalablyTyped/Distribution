@@ -4,6 +4,7 @@ import typings.authmosphere.authenticationMiddlewareOptionsMod.AuthenticationMid
 import typings.authmosphere.scopeMiddlewareOptionsMod.ScopeMiddlewareOptions
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +35,10 @@ object expressToolingMod extends js.Object {
     * @param options: AuthenticationMiddlewareOptions
     * @returns express middleware
     */
-  type authenticationMiddleware = js.Function1[/* options */ AuthenticationMiddlewareOptions, RequestHandler[ParamsDictionary]]
+  type authenticationMiddleware = js.Function1[
+    /* options */ AuthenticationMiddlewareOptions, 
+    RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ]
   /**
     * A factory that returns a middleware that compares scopes attached to `express.Request` object with a given list (`scopes` parameter).
     * If all required scopes are matched, the middleware calls `next`. Otherwise, it rejects the request with _403 FORBIDDEN_.
@@ -96,7 +100,7 @@ object expressToolingMod extends js.Object {
   type requireScopesMiddleware = js.Function2[
     /* scopes */ js.Array[String], 
     /* options */ js.UndefOr[ScopeMiddlewareOptions], 
-    RequestHandler[ParamsDictionary]
+    RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
   ]
 }
 

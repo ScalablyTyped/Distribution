@@ -12,7 +12,6 @@ object AnonZIndex {
   @scala.inline
   def apply(__zIndex: String): AnonZIndex = {
     val __obj = js.Dynamic.literal(__zIndex = __zIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonZIndex]
   }
 }

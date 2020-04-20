@@ -26,22 +26,20 @@ trait styleAlignSelf extends js.Object
 
 object styleAlignSelf {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleAlignSelfAuto: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleAlignSelfAuto: `5` = this.cast(5)
+  def styleAlignSelfBaseline: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleAlignSelfBaseline: `3` = this.cast(3)
+  def styleAlignSelfCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleAlignSelfCenter: `2` = this.cast(2)
+  def styleAlignSelfFlexEnd: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleAlignSelfFlexEnd: `1` = this.cast(1)
+  def styleAlignSelfFlexStart: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleAlignSelfFlexStart: `0` = this.cast(0)
+  def styleAlignSelfNotSet: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleAlignSelfNotSet: `6` = this.cast(6)
+  def styleAlignSelfStretch: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleAlignSelfStretch: `4` = this.cast(4)
-  @scala.inline
-  def styleAlignSelf_Max: `2147483647` = this.cast(2147483647)
+  def styleAlignSelf_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

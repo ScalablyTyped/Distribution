@@ -12,7 +12,6 @@ object Encoder {
   @scala.inline
   def apply[A, O](encode: A => O): Encoder[A, O] = {
     val __obj = js.Dynamic.literal(encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[Encoder[A, O]]
   }
 }

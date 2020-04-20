@@ -23,7 +23,6 @@ object ABTest {
   @scala.inline
   def apply(endAt: String, name: String, variants: js.Array[Variant]): ABTest = {
     val __obj = js.Dynamic.literal(endAt = endAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variants = variants.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ABTest]
   }
 }

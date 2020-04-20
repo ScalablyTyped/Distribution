@@ -24,7 +24,6 @@ object AdhanMath {
     unwindAngle: Double => Double
   ): AdhanMath = {
     val __obj = js.Dynamic.literal(degreesToRadians = js.Any.fromFunction1(degreesToRadians), normalizeToScale = js.Any.fromFunction2(normalizeToScale), quadrantShiftAngle = js.Any.fromFunction1(quadrantShiftAngle), radiansToDegrees = js.Any.fromFunction1(radiansToDegrees), timeComponents = js.Any.fromFunction1(timeComponents), unwindAngle = js.Any.fromFunction1(unwindAngle))
-  
     __obj.asInstanceOf[AdhanMath]
   }
 }

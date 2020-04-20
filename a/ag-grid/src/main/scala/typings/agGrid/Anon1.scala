@@ -7,5 +7,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Anon1[A /* <: IComponent[_] with B */] extends Instantiable0[A]
+trait Anon1[A /* <: IComponent[_] with B */, B] extends Instantiable0[A]
 

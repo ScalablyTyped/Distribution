@@ -30,7 +30,6 @@ object ICalendarIdentifiersStatics {
     umAlQura: String
   ): ICalendarIdentifiersStatics = {
     val __obj = js.Dynamic.literal(gregorian = gregorian.asInstanceOf[js.Any], hebrew = hebrew.asInstanceOf[js.Any], hijri = hijri.asInstanceOf[js.Any], japanese = japanese.asInstanceOf[js.Any], julian = julian.asInstanceOf[js.Any], korean = korean.asInstanceOf[js.Any], taiwan = taiwan.asInstanceOf[js.Any], thai = thai.asInstanceOf[js.Any], umAlQura = umAlQura.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICalendarIdentifiersStatics]
   }
 }

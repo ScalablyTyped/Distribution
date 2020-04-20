@@ -13,7 +13,6 @@ object AnonRegion {
   @scala.inline
   def apply(region: `true`): AnonRegion = {
     val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRegion]
   }
 }

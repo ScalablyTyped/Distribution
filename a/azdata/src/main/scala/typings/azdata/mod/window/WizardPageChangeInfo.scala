@@ -19,7 +19,6 @@ object WizardPageChangeInfo {
   @scala.inline
   def apply(lastPage: Double, newPage: Double): WizardPageChangeInfo = {
     val __obj = js.Dynamic.literal(lastPage = lastPage.asInstanceOf[js.Any], newPage = newPage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WizardPageChangeInfo]
   }
 }

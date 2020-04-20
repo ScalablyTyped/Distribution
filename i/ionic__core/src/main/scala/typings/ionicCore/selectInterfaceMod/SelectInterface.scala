@@ -13,12 +13,10 @@ trait SelectInterface extends js.Object
 
 object SelectInterface {
   @scala.inline
-  def `action-sheet`: typings.ionicCore.ionicCoreStrings.`action-sheet` = this.cast("action-sheet")
+  def `action-sheet`: typings.ionicCore.ionicCoreStrings.`action-sheet` = "action-sheet".asInstanceOf[typings.ionicCore.ionicCoreStrings.`action-sheet`]
   @scala.inline
-  def alert: typings.ionicCore.ionicCoreStrings.alert = this.cast("alert")
+  def alert: typings.ionicCore.ionicCoreStrings.alert = "alert".asInstanceOf[typings.ionicCore.ionicCoreStrings.alert]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def popover: typings.ionicCore.ionicCoreStrings.popover = this.cast("popover")
+  def popover: typings.ionicCore.ionicCoreStrings.popover = "popover".asInstanceOf[typings.ionicCore.ionicCoreStrings.popover]
 }
 

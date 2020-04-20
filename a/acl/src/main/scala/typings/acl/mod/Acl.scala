@@ -2,6 +2,7 @@ package typings.acl.mod
 
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,12 +26,12 @@ trait Acl extends js.Object {
   def hasRole(userId: Value, role: String, cb: js.Function2[/* err */ Error, /* isInRole */ Boolean, _]): typings.bluebird.mod.^[Boolean] = js.native
   def isAllowed(userId: Value, resources: strings, permissions: strings): typings.bluebird.mod.^[Boolean] = js.native
   def isAllowed(userId: Value, resources: strings, permissions: strings, cb: AllowedCallback): typings.bluebird.mod.^[Boolean] = js.native
-  def middleware(): RequestHandler[ParamsDictionary] = js.native
-  def middleware(numPathComponents: Double): RequestHandler[ParamsDictionary] = js.native
-  def middleware(numPathComponents: Double, userId: GetUserId): RequestHandler[ParamsDictionary] = js.native
-  def middleware(numPathComponents: Double, userId: GetUserId, actions: strings): RequestHandler[ParamsDictionary] = js.native
-  def middleware(numPathComponents: Double, userId: Value): RequestHandler[ParamsDictionary] = js.native
-  def middleware(numPathComponents: Double, userId: Value, actions: strings): RequestHandler[ParamsDictionary] = js.native
+  def middleware(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def middleware(numPathComponents: Double): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def middleware(numPathComponents: Double, userId: GetUserId): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def middleware(numPathComponents: Double, userId: GetUserId, actions: strings): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def middleware(numPathComponents: Double, userId: Value): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def middleware(numPathComponents: Double, userId: Value, actions: strings): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def permittedResources(roles: strings, permissions: strings): typings.bluebird.mod.^[Unit] = js.native
   def permittedResources(roles: strings, permissions: strings, cb: Callback): typings.bluebird.mod.^[Unit] = js.native
   def removeAllow(role: String, resources: strings, permissions: strings): typings.bluebird.mod.^[Unit] = js.native

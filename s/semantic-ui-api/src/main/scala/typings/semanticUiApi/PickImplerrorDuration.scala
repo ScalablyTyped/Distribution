@@ -14,7 +14,6 @@ object PickImplerrorDuration {
   @scala.inline
   def apply(errorDuration: `true` | Double): PickImplerrorDuration = {
     val __obj = js.Dynamic.literal(errorDuration = errorDuration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplerrorDuration]
   }
 }

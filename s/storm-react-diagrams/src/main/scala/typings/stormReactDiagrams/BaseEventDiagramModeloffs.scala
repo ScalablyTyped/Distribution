@@ -27,7 +27,6 @@ object BaseEventDiagramModeloffs {
     stopPropagation: () => js.Any
   ): BaseEventDiagramModeloffs = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], firing = firing.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation))
-  
     __obj.asInstanceOf[BaseEventDiagramModeloffs]
   }
 }

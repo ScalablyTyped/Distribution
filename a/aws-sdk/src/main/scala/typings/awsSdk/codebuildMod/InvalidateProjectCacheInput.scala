@@ -16,7 +16,6 @@ object InvalidateProjectCacheInput {
   @scala.inline
   def apply(projectName: NonEmptyString): InvalidateProjectCacheInput = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InvalidateProjectCacheInput]
   }
 }

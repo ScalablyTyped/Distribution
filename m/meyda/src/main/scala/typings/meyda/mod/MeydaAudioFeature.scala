@@ -30,46 +30,44 @@ trait MeydaAudioFeature extends js.Object
 
 object MeydaAudioFeature {
   @scala.inline
-  def amplitudeSpectrum: typings.meyda.meydaStrings.amplitudeSpectrum = this.cast("amplitudeSpectrum")
+  def amplitudeSpectrum: typings.meyda.meydaStrings.amplitudeSpectrum = "amplitudeSpectrum".asInstanceOf[typings.meyda.meydaStrings.amplitudeSpectrum]
   @scala.inline
-  def buffer: typings.meyda.meydaStrings.buffer = this.cast("buffer")
+  def buffer: typings.meyda.meydaStrings.buffer = "buffer".asInstanceOf[typings.meyda.meydaStrings.buffer]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chroma: typings.meyda.meydaStrings.chroma = "chroma".asInstanceOf[typings.meyda.meydaStrings.chroma]
   @scala.inline
-  def chroma: typings.meyda.meydaStrings.chroma = this.cast("chroma")
+  def complexSpectrum: typings.meyda.meydaStrings.complexSpectrum = "complexSpectrum".asInstanceOf[typings.meyda.meydaStrings.complexSpectrum]
   @scala.inline
-  def complexSpectrum: typings.meyda.meydaStrings.complexSpectrum = this.cast("complexSpectrum")
+  def energy: typings.meyda.meydaStrings.energy = "energy".asInstanceOf[typings.meyda.meydaStrings.energy]
   @scala.inline
-  def energy: typings.meyda.meydaStrings.energy = this.cast("energy")
+  def loudness: typings.meyda.meydaStrings.loudness = "loudness".asInstanceOf[typings.meyda.meydaStrings.loudness]
   @scala.inline
-  def loudness: typings.meyda.meydaStrings.loudness = this.cast("loudness")
+  def mfcc: typings.meyda.meydaStrings.mfcc = "mfcc".asInstanceOf[typings.meyda.meydaStrings.mfcc]
   @scala.inline
-  def mfcc: typings.meyda.meydaStrings.mfcc = this.cast("mfcc")
+  def perceptualSharpness: typings.meyda.meydaStrings.perceptualSharpness = "perceptualSharpness".asInstanceOf[typings.meyda.meydaStrings.perceptualSharpness]
   @scala.inline
-  def perceptualSharpness: typings.meyda.meydaStrings.perceptualSharpness = this.cast("perceptualSharpness")
+  def perceptualSpread: typings.meyda.meydaStrings.perceptualSpread = "perceptualSpread".asInstanceOf[typings.meyda.meydaStrings.perceptualSpread]
   @scala.inline
-  def perceptualSpread: typings.meyda.meydaStrings.perceptualSpread = this.cast("perceptualSpread")
+  def powerSpectrum: typings.meyda.meydaStrings.powerSpectrum = "powerSpectrum".asInstanceOf[typings.meyda.meydaStrings.powerSpectrum]
   @scala.inline
-  def powerSpectrum: typings.meyda.meydaStrings.powerSpectrum = this.cast("powerSpectrum")
+  def rms: typings.meyda.meydaStrings.rms = "rms".asInstanceOf[typings.meyda.meydaStrings.rms]
   @scala.inline
-  def rms: typings.meyda.meydaStrings.rms = this.cast("rms")
+  def spectralCentroid: typings.meyda.meydaStrings.spectralCentroid = "spectralCentroid".asInstanceOf[typings.meyda.meydaStrings.spectralCentroid]
   @scala.inline
-  def spectralCentroid: typings.meyda.meydaStrings.spectralCentroid = this.cast("spectralCentroid")
+  def spectralFlatness: typings.meyda.meydaStrings.spectralFlatness = "spectralFlatness".asInstanceOf[typings.meyda.meydaStrings.spectralFlatness]
   @scala.inline
-  def spectralFlatness: typings.meyda.meydaStrings.spectralFlatness = this.cast("spectralFlatness")
+  def spectralFlux: typings.meyda.meydaStrings.spectralFlux = "spectralFlux".asInstanceOf[typings.meyda.meydaStrings.spectralFlux]
   @scala.inline
-  def spectralFlux: typings.meyda.meydaStrings.spectralFlux = this.cast("spectralFlux")
+  def spectralKurtosis: typings.meyda.meydaStrings.spectralKurtosis = "spectralKurtosis".asInstanceOf[typings.meyda.meydaStrings.spectralKurtosis]
   @scala.inline
-  def spectralKurtosis: typings.meyda.meydaStrings.spectralKurtosis = this.cast("spectralKurtosis")
+  def spectralRolloff: typings.meyda.meydaStrings.spectralRolloff = "spectralRolloff".asInstanceOf[typings.meyda.meydaStrings.spectralRolloff]
   @scala.inline
-  def spectralRolloff: typings.meyda.meydaStrings.spectralRolloff = this.cast("spectralRolloff")
+  def spectralSkewness: typings.meyda.meydaStrings.spectralSkewness = "spectralSkewness".asInstanceOf[typings.meyda.meydaStrings.spectralSkewness]
   @scala.inline
-  def spectralSkewness: typings.meyda.meydaStrings.spectralSkewness = this.cast("spectralSkewness")
+  def spectralSlope: typings.meyda.meydaStrings.spectralSlope = "spectralSlope".asInstanceOf[typings.meyda.meydaStrings.spectralSlope]
   @scala.inline
-  def spectralSlope: typings.meyda.meydaStrings.spectralSlope = this.cast("spectralSlope")
+  def spectralSpread: typings.meyda.meydaStrings.spectralSpread = "spectralSpread".asInstanceOf[typings.meyda.meydaStrings.spectralSpread]
   @scala.inline
-  def spectralSpread: typings.meyda.meydaStrings.spectralSpread = this.cast("spectralSpread")
-  @scala.inline
-  def zcr: typings.meyda.meydaStrings.zcr = this.cast("zcr")
+  def zcr: typings.meyda.meydaStrings.zcr = "zcr".asInstanceOf[typings.meyda.meydaStrings.zcr]
 }
 

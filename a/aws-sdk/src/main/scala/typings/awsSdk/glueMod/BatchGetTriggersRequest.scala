@@ -16,7 +16,6 @@ object BatchGetTriggersRequest {
   @scala.inline
   def apply(TriggerNames: TriggerNameList): BatchGetTriggersRequest = {
     val __obj = js.Dynamic.literal(TriggerNames = TriggerNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetTriggersRequest]
   }
 }

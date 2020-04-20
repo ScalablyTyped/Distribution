@@ -23,7 +23,6 @@ object Actions_ {
     updateNotification: Notification => Notification
   ): Actions_ = {
     val __obj = js.Dynamic.literal(addNotification = js.Any.fromFunction1(addNotification), removeNotification = js.Any.fromFunction1(removeNotification), removeNotifications = js.Any.fromFunction0(removeNotifications), updateNotification = js.Any.fromFunction1(updateNotification))
-  
     __obj.asInstanceOf[Actions_]
   }
 }

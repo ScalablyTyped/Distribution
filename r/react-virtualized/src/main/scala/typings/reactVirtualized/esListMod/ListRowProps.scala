@@ -31,7 +31,6 @@ object ListRowProps {
     style: CSSProperties
   ): ListRowProps = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListRowProps]
   }
 }

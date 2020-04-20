@@ -14,7 +14,6 @@ object AnonModals {
   @scala.inline
   def apply(modals: js.Array[_], overlays: js.Array[_], root: js.Any): AnonModals = {
     val __obj = js.Dynamic.literal(modals = modals.asInstanceOf[js.Any], overlays = overlays.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonModals]
   }
 }

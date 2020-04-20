@@ -14,7 +14,6 @@ object BarcodeScanResult {
   @scala.inline
   def apply(cancelled: Boolean, format: String, text: String): BarcodeScanResult = {
     val __obj = js.Dynamic.literal(cancelled = cancelled.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BarcodeScanResult]
   }
 }

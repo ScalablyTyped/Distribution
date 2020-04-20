@@ -20,7 +20,6 @@ object GraphQLApiLogConfig {
   @scala.inline
   def apply(cloudwatchLogsRoleArn: String, fieldLogLevel: String): GraphQLApiLogConfig = {
     val __obj = js.Dynamic.literal(cloudwatchLogsRoleArn = cloudwatchLogsRoleArn.asInstanceOf[js.Any], fieldLogLevel = fieldLogLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GraphQLApiLogConfig]
   }
 }

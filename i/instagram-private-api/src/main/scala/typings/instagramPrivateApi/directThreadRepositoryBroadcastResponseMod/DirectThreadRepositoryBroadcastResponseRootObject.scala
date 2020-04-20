@@ -22,7 +22,6 @@ object DirectThreadRepositoryBroadcastResponseRootObject {
     status_code: String
   ): DirectThreadRepositoryBroadcastResponseRootObject = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], message_metadata = message_metadata.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_code = status_code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectThreadRepositoryBroadcastResponseRootObject]
   }
 }

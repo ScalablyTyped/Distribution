@@ -12,7 +12,6 @@ object FilterCapability {
   @scala.inline
   def apply(operators: js.Array[String]): FilterCapability = {
     val __obj = js.Dynamic.literal(operators = operators.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilterCapability]
   }
 }

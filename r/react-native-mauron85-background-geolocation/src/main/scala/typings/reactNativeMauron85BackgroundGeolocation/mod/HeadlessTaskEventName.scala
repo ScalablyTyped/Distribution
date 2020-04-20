@@ -13,12 +13,10 @@ trait HeadlessTaskEventName extends js.Object
 
 object HeadlessTaskEventName {
   @scala.inline
-  def activity: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.activity = this.cast("activity")
+  def activity: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.activity = "activity".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.activity]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def location: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.location = "location".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.location]
   @scala.inline
-  def location: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.location = this.cast("location")
-  @scala.inline
-  def stationary: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.stationary = this.cast("stationary")
+  def stationary: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.stationary = "stationary".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.stationary]
 }
 

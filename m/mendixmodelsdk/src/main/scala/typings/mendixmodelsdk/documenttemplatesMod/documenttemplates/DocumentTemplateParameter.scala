@@ -58,22 +58,22 @@ class DocumentTemplateParameter protected ()
     */
   @JSName("type")
   val type_FDocumentTemplateParameter: String | Null = js.native
-  def containerAsDocumentTemplate(): DocumentTemplate = js.native
-  def name(): String = js.native
+  def containerAsDocumentTemplate: DocumentTemplate = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   /**
     * In version 7.9.0: introduced
     */
-  def parameterType(): DataType = js.native
+  def parameterType: DataType = js.native
   def parameterType(newValue: DataType): js.Any = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MDocumentTemplateParameter(): String | Null = js.native
+  def qualifiedName_MDocumentTemplateParameter: String | Null = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
-  def `type`(): String = js.native
+  def `type`: String = js.native
   def `type`(newValue: String): js.Any = js.native
 }
 

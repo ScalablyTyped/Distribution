@@ -19,7 +19,7 @@ class EntityType_ () extends IEntityType {
   def this(properties: IEntityType) = this()
   /** EntityType autoExpansionMode. */
   @JSName("autoExpansionMode")
-  var autoExpansionMode_EntityType_ : AutoExpansionMode | String = js.native
+  var autoExpansionMode_EntityType_ : AutoExpansionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.EntityType.AutoExpansionMode * / any */ String) = js.native
   /** EntityType displayName. */
   @JSName("displayName")
   var displayName_EntityType_ : String = js.native
@@ -31,7 +31,7 @@ class EntityType_ () extends IEntityType {
   var entities_EntityType_ : js.Array[IEntity] = js.native
   /** EntityType kind. */
   @JSName("kind")
-  var kind_EntityType_ : Kind | String = js.native
+  var kind_EntityType_ : Kind | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.EntityType.Kind * / any */ String) = js.native
   /** EntityType name. */
   @JSName("name")
   var name_EntityType_ : String = js.native

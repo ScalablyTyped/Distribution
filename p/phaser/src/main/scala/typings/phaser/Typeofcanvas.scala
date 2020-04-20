@@ -22,7 +22,6 @@ object Typeofcanvas {
     SkeletonRenderer: TypeofSkeletonRenderer
   ): Typeofcanvas = {
     val __obj = js.Dynamic.literal(AssetManager = AssetManager.asInstanceOf[js.Any], CanvasTexture = CanvasTexture.asInstanceOf[js.Any], SkeletonRenderer = SkeletonRenderer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofcanvas]
   }
 }

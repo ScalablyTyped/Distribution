@@ -15,16 +15,14 @@ trait KeyboardEventEasing extends js.Object
 
 object KeyboardEventEasing {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def easeIn: typings.reactNative.reactNativeStrings.easeIn = "easeIn".asInstanceOf[typings.reactNative.reactNativeStrings.easeIn]
   @scala.inline
-  def easeIn: typings.reactNative.reactNativeStrings.easeIn = this.cast("easeIn")
+  def easeInEaseOut: typings.reactNative.reactNativeStrings.easeInEaseOut = "easeInEaseOut".asInstanceOf[typings.reactNative.reactNativeStrings.easeInEaseOut]
   @scala.inline
-  def easeInEaseOut: typings.reactNative.reactNativeStrings.easeInEaseOut = this.cast("easeInEaseOut")
+  def easeOut: typings.reactNative.reactNativeStrings.easeOut = "easeOut".asInstanceOf[typings.reactNative.reactNativeStrings.easeOut]
   @scala.inline
-  def easeOut: typings.reactNative.reactNativeStrings.easeOut = this.cast("easeOut")
+  def keyboard: typings.reactNative.reactNativeStrings.keyboard = "keyboard".asInstanceOf[typings.reactNative.reactNativeStrings.keyboard]
   @scala.inline
-  def keyboard: typings.reactNative.reactNativeStrings.keyboard = this.cast("keyboard")
-  @scala.inline
-  def linear: typings.reactNative.reactNativeStrings.linear = this.cast("linear")
+  def linear: typings.reactNative.reactNativeStrings.linear = "linear".asInstanceOf[typings.reactNative.reactNativeStrings.linear]
 }
 

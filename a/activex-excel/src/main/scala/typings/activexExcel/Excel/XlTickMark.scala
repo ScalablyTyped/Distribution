@@ -18,14 +18,12 @@ trait XlTickMark extends js.Object
 
 object XlTickMark {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlTickMarkCross: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlTickMarkCross: `4` = this.cast(4)
+  def xlTickMarkInside: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlTickMarkInside: `2` = this.cast(2)
+  def xlTickMarkNone: `-4142` = -4142.asInstanceOf[`-4142`]
   @scala.inline
-  def xlTickMarkNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlTickMarkOutside: `3` = this.cast(3)
+  def xlTickMarkOutside: `3` = 3.asInstanceOf[`3`]
 }
 

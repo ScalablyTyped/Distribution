@@ -14,7 +14,6 @@ object AnonNewChunks {
   @scala.inline
   def apply(newChunks: js.Array[Chunk], oldChunk: Chunk): AnonNewChunks = {
     val __obj = js.Dynamic.literal(newChunks = newChunks.asInstanceOf[js.Any], oldChunk = oldChunk.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNewChunks]
   }
 }

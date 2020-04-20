@@ -22,7 +22,6 @@ object AnonAttrs {
     tfOpName: AnonType
   ): AnonAttrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], customExecutor = customExecutor.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], tfOpName = tfOpName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttrs]
   }
 }

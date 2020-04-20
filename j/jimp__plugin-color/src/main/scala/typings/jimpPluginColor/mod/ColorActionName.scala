@@ -18,22 +18,20 @@ trait ColorActionName extends js.Object
 
 object ColorActionName {
   @scala.inline
-  def blue: typings.jimpPluginColor.jimpPluginColorStrings.blue = this.cast("blue")
+  def blue: typings.jimpPluginColor.jimpPluginColorStrings.blue = "blue".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.blue]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def green: typings.jimpPluginColor.jimpPluginColorStrings.green = "green".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.green]
   @scala.inline
-  def green: typings.jimpPluginColor.jimpPluginColorStrings.green = this.cast("green")
+  def hue: typings.jimpPluginColor.jimpPluginColorStrings.hue = "hue".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.hue]
   @scala.inline
-  def hue: typings.jimpPluginColor.jimpPluginColorStrings.hue = this.cast("hue")
+  def mix: typings.jimpPluginColor.jimpPluginColorStrings.mix = "mix".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.mix]
   @scala.inline
-  def mix: typings.jimpPluginColor.jimpPluginColorStrings.mix = this.cast("mix")
+  def red: typings.jimpPluginColor.jimpPluginColorStrings.red = "red".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.red]
   @scala.inline
-  def red: typings.jimpPluginColor.jimpPluginColorStrings.red = this.cast("red")
+  def shade: typings.jimpPluginColor.jimpPluginColorStrings.shade = "shade".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.shade]
   @scala.inline
-  def shade: typings.jimpPluginColor.jimpPluginColorStrings.shade = this.cast("shade")
+  def tint: typings.jimpPluginColor.jimpPluginColorStrings.tint = "tint".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.tint]
   @scala.inline
-  def tint: typings.jimpPluginColor.jimpPluginColorStrings.tint = this.cast("tint")
-  @scala.inline
-  def xor: typings.jimpPluginColor.jimpPluginColorStrings.xor = this.cast("xor")
+  def xor: typings.jimpPluginColor.jimpPluginColorStrings.xor = "xor".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.xor]
 }
 

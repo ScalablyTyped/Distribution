@@ -30,7 +30,6 @@ object ActionsListArtifactsForRepoResponseArtifactsItem {
     url: String
   ): ActionsListArtifactsForRepoResponseArtifactsItem = {
     val __obj = js.Dynamic.literal(archive_download_url = archive_download_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], expired = expired.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], size_in_bytes = size_in_bytes.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionsListArtifactsForRepoResponseArtifactsItem]
   }
 }

@@ -16,7 +16,6 @@ object DescribeScheduledAuditRequest {
   @scala.inline
   def apply(scheduledAuditName: ScheduledAuditName): DescribeScheduledAuditRequest = {
     val __obj = js.Dynamic.literal(scheduledAuditName = scheduledAuditName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeScheduledAuditRequest]
   }
 }

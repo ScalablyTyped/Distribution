@@ -15,7 +15,6 @@ object AnonRowIndex {
   @scala.inline
   def apply(index: Double, rowIndex: Double, subId: `oj-gantt-taskbar`): AnonRowIndex = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRowIndex]
   }
 }

@@ -62,6 +62,12 @@ trait Config extends js.Object {
   var modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons]
   /** increase the pixel ratio for Gl plot images */
   var plotGlPixelRatio: Double
+  /**
+  	 * When set it determines base URL for the 'Edit in Chart Studio' `showEditInChartStudio`/`showSendToCloud` mode bar button and the showLink/sendData on-graph link.
+  	 * To enable sending your data to Chart Studio Cloud, you need to set both `plotlyServerURL` to 'https://chart-studio.plotly.com' and also set `showSendToCloud` to true.
+  	 * @default ''
+  	 */
+  var plotlyServerURL: String
   /** set the length of the undo/redo queue */
   var queueLength: Double
   /** Make the chart responsive to window size */
@@ -74,8 +80,24 @@ trait Config extends js.Object {
   var showAxisDragHandles: Boolean
   /** enable direct range entry at the pan/zoom drag points (drag handles must be enabled above) */
   var showAxisRangeEntryBoxes: Boolean
+  /**
+  	 * Same as `showSendToCloud`, but use a pencil icon instead of a floppy-disk.
+  	 * Note that if both `showSendToCloud` and `showEditInChartStudio` are turned, only `showEditInChartStudio` will be honored.
+  	 * @default false
+  	 */
+  var showEditInChartStudio: Boolean
   /** link to open this plot in plotly */
   var showLink: Boolean
+  /**
+  	 * Should we include a ModeBar button, labeled "Edit in Chart Studio",
+  	 * that sends this chart to chart-studio.plotly.com (formerly plot.ly)
+  	 * or another plotly server as specified by `plotlyServerURL` for editing, export, etc?
+  	 * Prior to version 1.43.0 this button was included by default, now it is opt-in using this flag.
+  	 * Note that this button can (depending on `plotlyServerURL` being set) send your data to an external server.
+  	 * However that server does not persist your data until you arrive at the Chart Studio and explicitly click "Save".
+  	 * @default false
+  	 */
+  var showSendToCloud: Boolean
   /** false or function adding source(s) to linkText <text> */
   var showSources: Boolean
   /** new users see some hints about interactivity */
@@ -113,6 +135,7 @@ object Config {
     modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons],
     modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons],
     plotGlPixelRatio: Double,
+    plotlyServerURL: String,
     queueLength: Double,
     responsive: Boolean,
     scrollZoom: Boolean,
@@ -120,15 +143,16 @@ object Config {
     setBackground: () => String | opaque | transparent,
     showAxisDragHandles: Boolean,
     showAxisRangeEntryBoxes: Boolean,
+    showEditInChartStudio: Boolean,
     showLink: Boolean,
+    showSendToCloud: Boolean,
     showSources: Boolean,
     showTips: Boolean,
     staticPlot: Boolean,
     toImageButtonOptions: Partialfilenamestringscal,
     topojsonURL: String
   ): Config = {
-    val __obj = js.Dynamic.literal(autosizable = autosizable.asInstanceOf[js.Any], displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo.asInstanceOf[js.Any], doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], edits = edits.asInstanceOf[js.Any], fillFrame = fillFrame.asInstanceOf[js.Any], frameMargins = frameMargins.asInstanceOf[js.Any], globalTransforms = globalTransforms.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken.asInstanceOf[js.Any], modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove.asInstanceOf[js.Any], plotGlPixelRatio = plotGlPixelRatio.asInstanceOf[js.Any], queueLength = queueLength.asInstanceOf[js.Any], responsive = responsive.asInstanceOf[js.Any], scrollZoom = scrollZoom.asInstanceOf[js.Any], sendData = sendData.asInstanceOf[js.Any], setBackground = js.Any.fromFunction0(setBackground), showAxisDragHandles = showAxisDragHandles.asInstanceOf[js.Any], showAxisRangeEntryBoxes = showAxisRangeEntryBoxes.asInstanceOf[js.Any], showLink = showLink.asInstanceOf[js.Any], showSources = showSources.asInstanceOf[js.Any], showTips = showTips.asInstanceOf[js.Any], staticPlot = staticPlot.asInstanceOf[js.Any], toImageButtonOptions = toImageButtonOptions.asInstanceOf[js.Any], topojsonURL = topojsonURL.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(autosizable = autosizable.asInstanceOf[js.Any], displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo.asInstanceOf[js.Any], doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], edits = edits.asInstanceOf[js.Any], fillFrame = fillFrame.asInstanceOf[js.Any], frameMargins = frameMargins.asInstanceOf[js.Any], globalTransforms = globalTransforms.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken.asInstanceOf[js.Any], modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove.asInstanceOf[js.Any], plotGlPixelRatio = plotGlPixelRatio.asInstanceOf[js.Any], plotlyServerURL = plotlyServerURL.asInstanceOf[js.Any], queueLength = queueLength.asInstanceOf[js.Any], responsive = responsive.asInstanceOf[js.Any], scrollZoom = scrollZoom.asInstanceOf[js.Any], sendData = sendData.asInstanceOf[js.Any], setBackground = js.Any.fromFunction0(setBackground), showAxisDragHandles = showAxisDragHandles.asInstanceOf[js.Any], showAxisRangeEntryBoxes = showAxisRangeEntryBoxes.asInstanceOf[js.Any], showEditInChartStudio = showEditInChartStudio.asInstanceOf[js.Any], showLink = showLink.asInstanceOf[js.Any], showSendToCloud = showSendToCloud.asInstanceOf[js.Any], showSources = showSources.asInstanceOf[js.Any], showTips = showTips.asInstanceOf[js.Any], staticPlot = staticPlot.asInstanceOf[js.Any], toImageButtonOptions = toImageButtonOptions.asInstanceOf[js.Any], topojsonURL = topojsonURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

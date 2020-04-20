@@ -24,7 +24,6 @@ object BoomError {
     reformat: () => Unit
   ): BoomError[Data] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isBoom = isBoom.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], reformat = js.Any.fromFunction0(reformat))
-  
     __obj.asInstanceOf[BoomError[Data]]
   }
 }

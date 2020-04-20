@@ -20,7 +20,6 @@ object DescribeDocumentPermissionRequest {
   @scala.inline
   def apply(Name: DocumentName, PermissionType: DocumentPermissionType): DescribeDocumentPermissionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], PermissionType = PermissionType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDocumentPermissionRequest]
   }
 }

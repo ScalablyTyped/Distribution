@@ -14,7 +14,6 @@ object PickImplprompt {
   @scala.inline
   def apply(prompt: PromptSettings): PickImplprompt = {
     val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplprompt]
   }
 }

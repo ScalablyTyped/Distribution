@@ -16,7 +16,6 @@ object DisableSnapshotCopyMessage {
   @scala.inline
   def apply(ClusterIdentifier: String): DisableSnapshotCopyMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableSnapshotCopyMessage]
   }
 }

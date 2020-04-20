@@ -18,14 +18,12 @@ trait OlHorizontalLayout extends js.Object
 
 object OlHorizontalLayout {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olHorizontalLayoutAlignCenter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olHorizontalLayoutAlignCenter: `1` = this.cast(1)
+  def olHorizontalLayoutAlignLeft: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olHorizontalLayoutAlignLeft: `0` = this.cast(0)
+  def olHorizontalLayoutAlignRight: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olHorizontalLayoutAlignRight: `2` = this.cast(2)
-  @scala.inline
-  def olHorizontalLayoutGrow: `3` = this.cast(3)
+  def olHorizontalLayoutGrow: `3` = 3.asInstanceOf[`3`]
 }
 

@@ -28,9 +28,9 @@ class ExportMappingParameterValue protected () extends ExpressionBasedCodeAction
   var model_FExportMappingParameterValue: IModel = js.native
   def exportMapping(): js.Any = js.native
   def exportMapping(newValue: IExportMapping): js.Any = js.native
-  def exportMappingQualifiedName(): String | Null = js.native
+  def exportMappingQualifiedName: String | Null = js.native
   @JSName("exportMapping")
-  def exportMapping_Union(): IExportMapping | Null = js.native
+  def exportMapping_Union: IExportMapping | Null = js.native
 }
 
 /* static members */

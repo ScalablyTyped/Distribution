@@ -18,7 +18,6 @@ object ILockerProvider {
   @scala.inline
   def apply($get: js.Any, defaults: ILockerSettings => Unit): ILockerProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], defaults = js.Any.fromFunction1(defaults))
-  
     __obj.asInstanceOf[ILockerProvider]
   }
 }

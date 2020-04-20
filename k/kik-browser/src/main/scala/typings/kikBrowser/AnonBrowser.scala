@@ -14,7 +14,6 @@ object AnonBrowser {
   @scala.inline
   def apply(browser: AnonName, os: AnonName, version: AnonName): AnonBrowser = {
     val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBrowser]
   }
 }

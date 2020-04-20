@@ -13,12 +13,10 @@ trait ParseMode extends js.Object
 
 object ParseMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def extended: typings.koaQs.koaQsStrings.extended = "extended".asInstanceOf[typings.koaQs.koaQsStrings.extended]
   @scala.inline
-  def extended: typings.koaQs.koaQsStrings.extended = this.cast("extended")
+  def first: typings.koaQs.koaQsStrings.first = "first".asInstanceOf[typings.koaQs.koaQsStrings.first]
   @scala.inline
-  def first: typings.koaQs.koaQsStrings.first = this.cast("first")
-  @scala.inline
-  def strict: typings.koaQs.koaQsStrings.strict = this.cast("strict")
+  def strict: typings.koaQs.koaQsStrings.strict = "strict".asInstanceOf[typings.koaQs.koaQsStrings.strict]
 }
 

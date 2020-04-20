@@ -14,7 +14,6 @@ object AnonEnergySpent {
   @scala.inline
   def apply(amount: Double, energySpent: Double, targetId: String): AnonEnergySpent = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], energySpent = energySpent.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnergySpent]
   }
 }

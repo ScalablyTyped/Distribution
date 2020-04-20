@@ -12,7 +12,6 @@ object INavbarProvider {
   @scala.inline
   def apply(defaults: INavbarOptions): INavbarProvider = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INavbarProvider]
   }
 }

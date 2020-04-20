@@ -12,7 +12,6 @@ object NewsRepositoryInboxResponseAdsManager {
   @scala.inline
   def apply(pending_count: Double): NewsRepositoryInboxResponseAdsManager = {
     val __obj = js.Dynamic.literal(pending_count = pending_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NewsRepositoryInboxResponseAdsManager]
   }
 }

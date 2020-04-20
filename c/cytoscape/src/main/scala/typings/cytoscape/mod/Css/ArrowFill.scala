@@ -12,10 +12,8 @@ trait ArrowFill extends js.Object
 
 object ArrowFill {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def filled: typings.cytoscape.cytoscapeStrings.filled = "filled".asInstanceOf[typings.cytoscape.cytoscapeStrings.filled]
   @scala.inline
-  def filled: typings.cytoscape.cytoscapeStrings.filled = this.cast("filled")
-  @scala.inline
-  def hollow: typings.cytoscape.cytoscapeStrings.hollow = this.cast("hollow")
+  def hollow: typings.cytoscape.cytoscapeStrings.hollow = "hollow".asInstanceOf[typings.cytoscape.cytoscapeStrings.hollow]
 }
 

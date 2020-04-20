@@ -16,7 +16,6 @@ object DescribeTextTranslationJobRequest {
   @scala.inline
   def apply(JobId: JobId): DescribeTextTranslationJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTextTranslationJobRequest]
   }
 }

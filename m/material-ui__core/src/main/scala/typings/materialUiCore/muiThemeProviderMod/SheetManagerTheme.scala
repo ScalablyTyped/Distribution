@@ -15,7 +15,6 @@ object SheetManagerTheme {
   @scala.inline
   def apply(refs: Double, sheet: StyleSheet[String | Double | js.Symbol]): SheetManagerTheme = {
     val __obj = js.Dynamic.literal(refs = refs.asInstanceOf[js.Any], sheet = sheet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SheetManagerTheme]
   }
 }

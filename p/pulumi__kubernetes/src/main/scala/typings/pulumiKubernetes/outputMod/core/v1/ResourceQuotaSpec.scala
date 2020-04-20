@@ -31,7 +31,6 @@ object ResourceQuotaSpec {
   @scala.inline
   def apply(hard: js.Object, scopeSelector: ScopeSelector, scopes: js.Array[String]): ResourceQuotaSpec = {
     val __obj = js.Dynamic.literal(hard = hard.asInstanceOf[js.Any], scopeSelector = scopeSelector.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceQuotaSpec]
   }
 }

@@ -33,7 +33,6 @@ object StartSchemaExtensionRequest {
     LdifContent: LdifContent
   ): StartSchemaExtensionRequest = {
     val __obj = js.Dynamic.literal(CreateSnapshotBeforeSchemaExtension = CreateSnapshotBeforeSchemaExtension.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any], LdifContent = LdifContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartSchemaExtensionRequest]
   }
 }

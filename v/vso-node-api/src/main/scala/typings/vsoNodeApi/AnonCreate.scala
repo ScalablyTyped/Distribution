@@ -24,7 +24,6 @@ object AnonCreate {
     read: Double
   ): AnonCreate = {
     val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], managePermissions = managePermissions.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCreate]
   }
 }

@@ -17,7 +17,6 @@ object AnonHit {
   @scala.inline
   def apply(hit: js.Array[String], label: Double, score: Double): AnonHit = {
     val __obj = js.Dynamic.literal(hit = hit.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHit]
   }
 }

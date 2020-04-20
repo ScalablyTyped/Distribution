@@ -13,7 +13,6 @@ object PointWorkItemProperty {
   @scala.inline
   def apply(workItem: AnonValueAny): PointWorkItemProperty = {
     val __obj = js.Dynamic.literal(workItem = workItem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PointWorkItemProperty]
   }
 }

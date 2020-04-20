@@ -26,38 +26,36 @@ trait EffectType extends js.Object
 
 object EffectType {
   @scala.inline
-  def boxRain: typings.nivoSlider.nivoSliderStrings.boxRain = this.cast("boxRain")
+  def boxRain: typings.nivoSlider.nivoSliderStrings.boxRain = "boxRain".asInstanceOf[typings.nivoSlider.nivoSliderStrings.boxRain]
   @scala.inline
-  def boxRainGrow: typings.nivoSlider.nivoSliderStrings.boxRainGrow = this.cast("boxRainGrow")
+  def boxRainGrow: typings.nivoSlider.nivoSliderStrings.boxRainGrow = "boxRainGrow".asInstanceOf[typings.nivoSlider.nivoSliderStrings.boxRainGrow]
   @scala.inline
-  def boxRainGrowReverse: typings.nivoSlider.nivoSliderStrings.boxRainGrowReverse = this.cast("boxRainGrowReverse")
+  def boxRainGrowReverse: typings.nivoSlider.nivoSliderStrings.boxRainGrowReverse = "boxRainGrowReverse".asInstanceOf[typings.nivoSlider.nivoSliderStrings.boxRainGrowReverse]
   @scala.inline
-  def boxRainReverse: typings.nivoSlider.nivoSliderStrings.boxRainReverse = this.cast("boxRainReverse")
+  def boxRainReverse: typings.nivoSlider.nivoSliderStrings.boxRainReverse = "boxRainReverse".asInstanceOf[typings.nivoSlider.nivoSliderStrings.boxRainReverse]
   @scala.inline
-  def boxRandom: typings.nivoSlider.nivoSliderStrings.boxRandom = this.cast("boxRandom")
+  def boxRandom: typings.nivoSlider.nivoSliderStrings.boxRandom = "boxRandom".asInstanceOf[typings.nivoSlider.nivoSliderStrings.boxRandom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fade: typings.nivoSlider.nivoSliderStrings.fade = "fade".asInstanceOf[typings.nivoSlider.nivoSliderStrings.fade]
   @scala.inline
-  def fade: typings.nivoSlider.nivoSliderStrings.fade = this.cast("fade")
+  def fold: typings.nivoSlider.nivoSliderStrings.fold = "fold".asInstanceOf[typings.nivoSlider.nivoSliderStrings.fold]
   @scala.inline
-  def fold: typings.nivoSlider.nivoSliderStrings.fold = this.cast("fold")
+  def random: typings.nivoSlider.nivoSliderStrings.random = "random".asInstanceOf[typings.nivoSlider.nivoSliderStrings.random]
   @scala.inline
-  def random: typings.nivoSlider.nivoSliderStrings.random = this.cast("random")
+  def sliceDown: typings.nivoSlider.nivoSliderStrings.sliceDown = "sliceDown".asInstanceOf[typings.nivoSlider.nivoSliderStrings.sliceDown]
   @scala.inline
-  def sliceDown: typings.nivoSlider.nivoSliderStrings.sliceDown = this.cast("sliceDown")
+  def sliceDownLeft: typings.nivoSlider.nivoSliderStrings.sliceDownLeft = "sliceDownLeft".asInstanceOf[typings.nivoSlider.nivoSliderStrings.sliceDownLeft]
   @scala.inline
-  def sliceDownLeft: typings.nivoSlider.nivoSliderStrings.sliceDownLeft = this.cast("sliceDownLeft")
+  def sliceUp: typings.nivoSlider.nivoSliderStrings.sliceUp = "sliceUp".asInstanceOf[typings.nivoSlider.nivoSliderStrings.sliceUp]
   @scala.inline
-  def sliceUp: typings.nivoSlider.nivoSliderStrings.sliceUp = this.cast("sliceUp")
+  def sliceUpDown: typings.nivoSlider.nivoSliderStrings.sliceUpDown = "sliceUpDown".asInstanceOf[typings.nivoSlider.nivoSliderStrings.sliceUpDown]
   @scala.inline
-  def sliceUpDown: typings.nivoSlider.nivoSliderStrings.sliceUpDown = this.cast("sliceUpDown")
+  def sliceUpDownLeft: typings.nivoSlider.nivoSliderStrings.sliceUpDownLeft = "sliceUpDownLeft".asInstanceOf[typings.nivoSlider.nivoSliderStrings.sliceUpDownLeft]
   @scala.inline
-  def sliceUpDownLeft: typings.nivoSlider.nivoSliderStrings.sliceUpDownLeft = this.cast("sliceUpDownLeft")
+  def sliceUpLeft: typings.nivoSlider.nivoSliderStrings.sliceUpLeft = "sliceUpLeft".asInstanceOf[typings.nivoSlider.nivoSliderStrings.sliceUpLeft]
   @scala.inline
-  def sliceUpLeft: typings.nivoSlider.nivoSliderStrings.sliceUpLeft = this.cast("sliceUpLeft")
+  def slideInLeft: typings.nivoSlider.nivoSliderStrings.slideInLeft = "slideInLeft".asInstanceOf[typings.nivoSlider.nivoSliderStrings.slideInLeft]
   @scala.inline
-  def slideInLeft: typings.nivoSlider.nivoSliderStrings.slideInLeft = this.cast("slideInLeft")
-  @scala.inline
-  def slideInRight: typings.nivoSlider.nivoSliderStrings.slideInRight = this.cast("slideInRight")
+  def slideInRight: typings.nivoSlider.nivoSliderStrings.slideInRight = "slideInRight".asInstanceOf[typings.nivoSlider.nivoSliderStrings.slideInRight]
 }
 

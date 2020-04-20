@@ -15,7 +15,6 @@ object AnonEvent {
   @scala.inline
   def apply(event: SyntheticEvent[_, Event_], isOpen: Boolean): AnonEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEvent]
   }
 }

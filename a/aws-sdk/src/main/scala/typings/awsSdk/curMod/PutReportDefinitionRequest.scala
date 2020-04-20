@@ -16,7 +16,6 @@ object PutReportDefinitionRequest {
   @scala.inline
   def apply(ReportDefinition: ReportDefinition): PutReportDefinitionRequest = {
     val __obj = js.Dynamic.literal(ReportDefinition = ReportDefinition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutReportDefinitionRequest]
   }
 }

@@ -26,7 +26,6 @@ object FindCallbackResults {
     selectionRect: SelectionRect
   ): FindCallbackResults = {
     val __obj = js.Dynamic.literal(activeMatchOrdinal = activeMatchOrdinal.asInstanceOf[js.Any], canceled = canceled.asInstanceOf[js.Any], numberOfMatches = numberOfMatches.asInstanceOf[js.Any], selectionRect = selectionRect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FindCallbackResults]
   }
 }

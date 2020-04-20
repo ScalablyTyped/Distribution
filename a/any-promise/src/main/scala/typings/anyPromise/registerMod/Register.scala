@@ -14,7 +14,6 @@ object Register {
   @scala.inline
   def apply(Promise: TypeofPromise, implementation: String): Register = {
     val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], implementation = implementation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Register]
   }
 }

@@ -13,7 +13,6 @@ object Feature {
   @scala.inline
   def apply(attributes: js.Any, geometry: Geometry): Feature = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Feature]
   }
 }

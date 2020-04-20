@@ -14,12 +14,10 @@ trait MetadataVisibility extends js.Object
 
 object MetadataVisibility {
   @scala.inline
-  def api: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.api = this.cast("api")
+  def api: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.api = "api".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.api]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dashboard: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.dashboard = "dashboard".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.dashboard]
   @scala.inline
-  def dashboard: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.dashboard = this.cast("dashboard")
-  @scala.inline
-  def worker: worker_ = this.cast("worker")
+  def worker: worker_ = "worker".asInstanceOf[worker_]
 }
 

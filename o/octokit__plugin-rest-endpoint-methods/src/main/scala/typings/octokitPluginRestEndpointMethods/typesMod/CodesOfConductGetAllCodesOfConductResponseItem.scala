@@ -14,7 +14,6 @@ object CodesOfConductGetAllCodesOfConductResponseItem {
   @scala.inline
   def apply(key: String, name: String, url: String): CodesOfConductGetAllCodesOfConductResponseItem = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CodesOfConductGetAllCodesOfConductResponseItem]
   }
 }

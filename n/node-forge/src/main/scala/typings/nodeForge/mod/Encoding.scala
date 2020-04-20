@@ -13,10 +13,8 @@ trait Encoding extends js.Object
 
 object Encoding {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def raw: raw_ = "raw".asInstanceOf[raw_]
   @scala.inline
-  def raw: raw_ = this.cast("raw")
-  @scala.inline
-  def utf8: typings.nodeForge.nodeForgeStrings.utf8 = this.cast("utf8")
+  def utf8: typings.nodeForge.nodeForgeStrings.utf8 = "utf8".asInstanceOf[typings.nodeForge.nodeForgeStrings.utf8]
 }
 

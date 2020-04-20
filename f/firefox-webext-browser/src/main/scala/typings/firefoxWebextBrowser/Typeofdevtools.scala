@@ -33,7 +33,6 @@ object Typeofdevtools {
   @scala.inline
   def apply(inspectedWindow: TypeofinspectedWindow, network: TypeofnetworkGetHAR, panels: Typeofpanels): Typeofdevtools = {
     val __obj = js.Dynamic.literal(inspectedWindow = inspectedWindow.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofdevtools]
   }
 }

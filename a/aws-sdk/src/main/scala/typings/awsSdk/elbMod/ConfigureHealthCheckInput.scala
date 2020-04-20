@@ -20,7 +20,6 @@ object ConfigureHealthCheckInput {
   @scala.inline
   def apply(HealthCheck: HealthCheck, LoadBalancerName: AccessPointName): ConfigureHealthCheckInput = {
     val __obj = js.Dynamic.literal(HealthCheck = HealthCheck.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigureHealthCheckInput]
   }
 }

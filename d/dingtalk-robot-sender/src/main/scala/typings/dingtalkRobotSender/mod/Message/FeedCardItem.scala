@@ -16,7 +16,6 @@ object FeedCardItem {
   @scala.inline
   def apply(feedCard: AnonMessageURL_, msgtype: feedCard): FeedCardItem = {
     val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeedCardItem]
   }
 }

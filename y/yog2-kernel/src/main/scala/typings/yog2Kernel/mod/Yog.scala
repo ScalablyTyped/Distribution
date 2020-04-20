@@ -2,6 +2,7 @@ package typings.yog2Kernel.mod
 
 import typings.express.mod.Express
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.lodash.mod.LoDashImplicitWrapper
 import typings.lodash.mod.LoDashStatic
 import typings.node.httpMod.IncomingMessage
@@ -114,10 +115,13 @@ trait Yog extends js.Object {
     * third argument.
     */
   def app(
-    req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _],
+    req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query],
     res: typings.expressServeStaticCore.mod.Response[_]
   ): js.Any = js.native
-  def app(req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _], res: ServerResponse): js.Any = js.native
+  def app(
+    req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query],
+    res: ServerResponse
+  ): js.Any = js.native
   def app(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[_]): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   def bootstrap(option: YogBootstrapOption): Unit = js.native

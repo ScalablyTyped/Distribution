@@ -12,7 +12,6 @@ object PluginMinifyStyles {
   @scala.inline
   def apply(minifyStyles: Boolean | js.Object): PluginMinifyStyles = {
     val __obj = js.Dynamic.literal(minifyStyles = minifyStyles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginMinifyStyles]
   }
 }

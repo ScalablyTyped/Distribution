@@ -16,7 +16,6 @@ object FixedModeScheduleActionStartSettings {
   @scala.inline
   def apply(Time: string): FixedModeScheduleActionStartSettings = {
     val __obj = js.Dynamic.literal(Time = Time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FixedModeScheduleActionStartSettings]
   }
 }

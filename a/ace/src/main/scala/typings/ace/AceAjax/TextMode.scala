@@ -28,7 +28,6 @@ object TextMode {
     transformAction: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any
   ): TextMode = {
     val __obj = js.Dynamic.literal(autoOutdent = js.Any.fromFunction3(autoOutdent), checkOutdent = js.Any.fromFunction3(checkOutdent), createModeDelegates = js.Any.fromFunction1(createModeDelegates), createWorker = js.Any.fromFunction1(createWorker), getNextLineIndent = js.Any.fromFunction3(getNextLineIndent), getTokenizer = js.Any.fromFunction0(getTokenizer), toggleCommentLines = js.Any.fromFunction4(toggleCommentLines), transformAction = js.Any.fromFunction5(transformAction))
-  
     __obj.asInstanceOf[TextMode]
   }
 }

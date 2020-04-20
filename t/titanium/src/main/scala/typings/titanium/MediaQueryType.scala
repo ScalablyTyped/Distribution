@@ -11,7 +11,7 @@ trait MediaQueryType extends js.Object {
   /**
   	 * The album artist to filter on. Value should be a String.
   	 */
-  var albumArtist: js.UndefOr[MediaQueryInfoType | String] = js.undefined
+  var albumArtist: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
   	 * The album artist persistent ID to filter on. Value should be a Number.
   	 */
@@ -23,15 +23,15 @@ trait MediaQueryType extends js.Object {
   /**
   	 * The album title to filter on. Value should be a String.
   	 */
-  var albumTitle: js.UndefOr[MediaQueryInfoType | String] = js.undefined
+  var albumTitle: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
   	 * The artist to filter on. Value should be a String.
   	 */
-  var artist: js.UndefOr[MediaQueryInfoType | String] = js.undefined
+  var artist: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
   	 * The composer to filter on. Value should be a String.
   	 */
-  var composer: js.UndefOr[MediaQueryInfoType | String] = js.undefined
+  var composer: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
   	 * The composer persistent ID to filter on. Value should be a Number.
   	 */
@@ -39,7 +39,7 @@ trait MediaQueryType extends js.Object {
   /**
   	 * The genre to filter on. Value should be a String.
   	 */
-  var genre: js.UndefOr[MediaQueryInfoType | String] = js.undefined
+  var genre: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
   	 * The genre persistent ID to filter on. Value should be a Number.
   	 */
@@ -82,24 +82,24 @@ trait MediaQueryType extends js.Object {
   /**
   	 * The podcast title to filter on. Value should be a String.
   	 */
-  var podcastTitle: js.UndefOr[MediaQueryInfoType | String] = js.undefined
+  var podcastTitle: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
   	 * The title to filter on. Value should be a String.
   	 */
-  var title: js.UndefOr[MediaQueryInfoType | String] = js.undefined
+  var title: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
 }
 
 object MediaQueryType {
   @scala.inline
   def apply(
-    albumArtist: MediaQueryInfoType | String = null,
+    albumArtist: MediaQueryInfoType | java.lang.String = null,
     albumArtistPersistentID: MediaQueryInfoType | Double = null,
     albumPersistentID: MediaQueryInfoType | Double = null,
-    albumTitle: MediaQueryInfoType | String = null,
-    artist: MediaQueryInfoType | String = null,
-    composer: MediaQueryInfoType | String = null,
+    albumTitle: MediaQueryInfoType | java.lang.String = null,
+    artist: MediaQueryInfoType | java.lang.String = null,
+    composer: MediaQueryInfoType | java.lang.String = null,
     composerPersistentID: MediaQueryInfoType | Double = null,
-    genre: MediaQueryInfoType | String = null,
+    genre: MediaQueryInfoType | java.lang.String = null,
     genrePersistentID: MediaQueryInfoType | Double = null,
     grouping: Int | Double = null,
     hasProtectedAsset: MediaQueryInfoType | Boolean = null,
@@ -109,8 +109,8 @@ object MediaQueryType {
     persistentID: MediaQueryInfoType | Double = null,
     playCount: MediaQueryInfoType | Double = null,
     podcastPersistentID: MediaQueryInfoType | Double = null,
-    podcastTitle: MediaQueryInfoType | String = null,
-    title: MediaQueryInfoType | String = null
+    podcastTitle: MediaQueryInfoType | java.lang.String = null,
+    title: MediaQueryInfoType | java.lang.String = null
   ): MediaQueryType = {
     val __obj = js.Dynamic.literal()
     if (albumArtist != null) __obj.updateDynamic("albumArtist")(albumArtist.asInstanceOf[js.Any])

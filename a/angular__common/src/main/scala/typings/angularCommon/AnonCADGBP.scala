@@ -28,7 +28,6 @@ object AnonCADGBP {
     XCD: js.Array[js.UndefOr[String]]
   ): AnonCADGBP = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BRL = BRL.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCADGBP]
   }
 }

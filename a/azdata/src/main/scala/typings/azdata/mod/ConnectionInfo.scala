@@ -13,7 +13,6 @@ object ConnectionInfo {
   @scala.inline
   def apply(options: StringDictionary[js.Any]): ConnectionInfo = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionInfo]
   }
 }

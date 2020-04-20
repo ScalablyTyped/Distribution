@@ -18,7 +18,6 @@ object GetStorageInfoSuccessCallbackOption {
   @scala.inline
   def apply(currentSize: Double, keys: Array[String], limitSize: Double): GetStorageInfoSuccessCallbackOption = {
     val __obj = js.Dynamic.literal(currentSize = currentSize.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], limitSize = limitSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetStorageInfoSuccessCallbackOption]
   }
 }

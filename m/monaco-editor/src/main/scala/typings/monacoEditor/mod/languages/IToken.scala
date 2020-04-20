@@ -13,7 +13,6 @@ object IToken {
   @scala.inline
   def apply(scopes: String, startIndex: Double): IToken = {
     val __obj = js.Dynamic.literal(scopes = scopes.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IToken]
   }
 }

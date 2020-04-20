@@ -16,18 +16,16 @@ trait SpendingLimitInterval extends js.Object
 
 object SpendingLimitInterval {
   @scala.inline
-  def all_time: typings.stripe.stripeStrings.all_time = this.cast("all_time")
+  def all_time: typings.stripe.stripeStrings.all_time = "all_time".asInstanceOf[typings.stripe.stripeStrings.all_time]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def daily: typings.stripe.stripeStrings.daily = "daily".asInstanceOf[typings.stripe.stripeStrings.daily]
   @scala.inline
-  def daily: typings.stripe.stripeStrings.daily = this.cast("daily")
+  def monthly: typings.stripe.stripeStrings.monthly = "monthly".asInstanceOf[typings.stripe.stripeStrings.monthly]
   @scala.inline
-  def monthly: typings.stripe.stripeStrings.monthly = this.cast("monthly")
+  def per_authorization: typings.stripe.stripeStrings.per_authorization = "per_authorization".asInstanceOf[typings.stripe.stripeStrings.per_authorization]
   @scala.inline
-  def per_authorization: typings.stripe.stripeStrings.per_authorization = this.cast("per_authorization")
+  def weekly: typings.stripe.stripeStrings.weekly = "weekly".asInstanceOf[typings.stripe.stripeStrings.weekly]
   @scala.inline
-  def weekly: typings.stripe.stripeStrings.weekly = this.cast("weekly")
-  @scala.inline
-  def yearly: typings.stripe.stripeStrings.yearly = this.cast("yearly")
+  def yearly: typings.stripe.stripeStrings.yearly = "yearly".asInstanceOf[typings.stripe.stripeStrings.yearly]
 }
 

@@ -20,7 +20,7 @@ class UpdateIntentRequest () extends IUpdateIntentRequest {
   def this(properties: IUpdateIntentRequest) = this()
   /** UpdateIntentRequest intentView. */
   @JSName("intentView")
-  var intentView_UpdateIntentRequest: IntentView | String = js.native
+  var intentView_UpdateIntentRequest: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) = js.native
   /** UpdateIntentRequest languageCode. */
   @JSName("languageCode")
   var languageCode_UpdateIntentRequest: String = js.native

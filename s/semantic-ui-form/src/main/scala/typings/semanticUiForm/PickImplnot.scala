@@ -13,7 +13,6 @@ object PickImplnot {
   @scala.inline
   def apply(not: String): PickImplnot = {
     val __obj = js.Dynamic.literal(not = not.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnot]
   }
 }

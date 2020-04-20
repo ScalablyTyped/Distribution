@@ -13,7 +13,6 @@ object PickImplhover {
   @scala.inline
   def apply(hover: String): PickImplhover = {
     val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplhover]
   }
 }

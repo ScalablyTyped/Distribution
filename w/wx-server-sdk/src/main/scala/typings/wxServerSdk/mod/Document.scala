@@ -24,7 +24,6 @@ object Document {
     update: CommonOption[_] => js.Promise[AnonStats]
   ): Document = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), remove = js.Any.fromFunction0(remove), set = js.Any.fromFunction1(set), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[Document]
   }
 }

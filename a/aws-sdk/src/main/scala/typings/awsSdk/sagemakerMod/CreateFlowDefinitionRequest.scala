@@ -18,6 +18,9 @@ trait CreateFlowDefinitionRequest extends js.Object {
     * An object containing information about the tasks the human reviewers will perform.
     */
   var HumanLoopConfig: typings.awsSdk.sagemakerMod.HumanLoopConfig = js.native
+  /**
+    * Container for configuring the source of human task requests. Use to specify if Amazon Rekognition or Amazon Textract is used as an integration source.
+    */
   var HumanLoopRequestSource: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopRequestSource] = js.native
   /**
     * An object containing information about where the human review results will be uploaded.

@@ -14,7 +14,6 @@ object AnonCss {
   @scala.inline
   def apply[TStyles /* <: Styles */](css: js.Function, styles: TStyles): AnonCss[TStyles] = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCss[TStyles]]
   }
 }

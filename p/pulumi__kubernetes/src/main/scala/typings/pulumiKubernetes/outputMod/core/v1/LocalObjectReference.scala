@@ -20,7 +20,6 @@ object LocalObjectReference {
   @scala.inline
   def apply(name: String): LocalObjectReference = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocalObjectReference]
   }
 }

@@ -49,7 +49,6 @@ object DatabaseCommand {
     unshift: /* repeated */ js.Any => DatabaseUpdateCommand
   ): DatabaseCommand = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), eq = js.Any.fromFunction1(eq), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), in = js.Any.fromFunction1(in), inc = js.Any.fromFunction1(inc), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), mul = js.Any.fromFunction1(mul), neq = js.Any.fromFunction1(neq), nin = js.Any.fromFunction1(nin), or = js.Any.fromFunction1(or), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), remove = js.Any.fromFunction0(remove), set = js.Any.fromFunction1(set), shift = js.Any.fromFunction0(shift), unshift = js.Any.fromFunction1(unshift))
-  
     __obj.asInstanceOf[DatabaseCommand]
   }
 }

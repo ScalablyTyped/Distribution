@@ -12,10 +12,8 @@ trait Conjunction extends js.Object
 
 object Conjunction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def 과: typings.josa.josaStrings.과 = "\uACFC".asInstanceOf[typings.josa.josaStrings.과]
   @scala.inline
-  def 과: typings.josa.josaStrings.과 = this.cast("\uACFC")
-  @scala.inline
-  def 와: typings.josa.josaStrings.와 = this.cast("\uC640")
+  def 와: typings.josa.josaStrings.와 = "\uC640".asInstanceOf[typings.josa.josaStrings.와]
 }
 

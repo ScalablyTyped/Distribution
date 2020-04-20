@@ -12,7 +12,6 @@ object RowSpanningAccumulator {
   @scala.inline
   def apply(onColumn: (String, Double, Double) => Unit): RowSpanningAccumulator = {
     val __obj = js.Dynamic.literal(onColumn = js.Any.fromFunction3(onColumn))
-  
     __obj.asInstanceOf[RowSpanningAccumulator]
   }
 }

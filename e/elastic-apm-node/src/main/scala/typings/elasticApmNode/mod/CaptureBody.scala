@@ -14,14 +14,12 @@ trait CaptureBody extends js.Object
 
 object CaptureBody {
   @scala.inline
-  def all: typings.elasticApmNode.elasticApmNodeStrings.all = this.cast("all")
+  def all: typings.elasticApmNode.elasticApmNodeStrings.all = "all".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def errors: typings.elasticApmNode.elasticApmNodeStrings.errors = "errors".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.errors]
   @scala.inline
-  def errors: typings.elasticApmNode.elasticApmNodeStrings.errors = this.cast("errors")
+  def off: typings.elasticApmNode.elasticApmNodeStrings.off = "off".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.off]
   @scala.inline
-  def off: typings.elasticApmNode.elasticApmNodeStrings.off = this.cast("off")
-  @scala.inline
-  def transactions: typings.elasticApmNode.elasticApmNodeStrings.transactions = this.cast("transactions")
+  def transactions: typings.elasticApmNode.elasticApmNodeStrings.transactions = "transactions".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.transactions]
 }
 

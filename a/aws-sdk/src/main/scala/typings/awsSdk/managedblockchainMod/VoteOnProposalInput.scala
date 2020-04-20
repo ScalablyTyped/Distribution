@@ -33,7 +33,6 @@ object VoteOnProposalInput {
     VoterMemberId: ResourceIdString
   ): VoteOnProposalInput = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any], ProposalId = ProposalId.asInstanceOf[js.Any], Vote = Vote.asInstanceOf[js.Any], VoterMemberId = VoterMemberId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoteOnProposalInput]
   }
 }

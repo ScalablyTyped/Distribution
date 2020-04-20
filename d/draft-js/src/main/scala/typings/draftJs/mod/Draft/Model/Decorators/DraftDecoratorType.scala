@@ -38,7 +38,6 @@ object DraftDecoratorType {
     getPropsForKey: String => js.Any
   ): DraftDecoratorType = {
     val __obj = js.Dynamic.literal(getComponentForKey = js.Any.fromFunction1(getComponentForKey), getDecorations = js.Any.fromFunction2(getDecorations), getPropsForKey = js.Any.fromFunction1(getPropsForKey))
-  
     __obj.asInstanceOf[DraftDecoratorType]
   }
 }

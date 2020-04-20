@@ -18,7 +18,6 @@ object NonAssignmentCommutativeReducerContainer {
     reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject
   ): NonAssignmentCommutativeReducerContainer = {
     val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative.asInstanceOf[js.Any], reducer = js.Any.fromFunction2(reducer))
-  
     __obj.asInstanceOf[NonAssignmentCommutativeReducerContainer]
   }
 }

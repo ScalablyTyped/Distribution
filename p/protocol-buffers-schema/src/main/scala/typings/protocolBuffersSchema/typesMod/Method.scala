@@ -24,7 +24,6 @@ object Method {
     server_streaming: Boolean
   ): Method = {
     val __obj = js.Dynamic.literal(client_streaming = client_streaming.asInstanceOf[js.Any], input_type = input_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any], server_streaming = server_streaming.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Method]
   }
 }

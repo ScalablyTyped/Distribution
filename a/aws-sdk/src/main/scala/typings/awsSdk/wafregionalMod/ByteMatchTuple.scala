@@ -33,7 +33,6 @@ object ByteMatchTuple {
     TextTransformation: TextTransformation
   ): ByteMatchTuple = {
     val __obj = js.Dynamic.literal(FieldToMatch = FieldToMatch.asInstanceOf[js.Any], PositionalConstraint = PositionalConstraint.asInstanceOf[js.Any], TargetString = TargetString.asInstanceOf[js.Any], TextTransformation = TextTransformation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ByteMatchTuple]
   }
 }

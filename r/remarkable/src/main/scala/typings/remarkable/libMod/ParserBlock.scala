@@ -16,7 +16,6 @@ object ParserBlock {
     tokenize: (StateBlock, Double, Double) => Unit
   ): ParserBlock = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction4(parse), tokenize = js.Any.fromFunction3(tokenize))
-  
     __obj.asInstanceOf[ParserBlock]
   }
 }

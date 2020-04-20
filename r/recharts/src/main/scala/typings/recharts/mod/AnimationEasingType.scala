@@ -15,16 +15,14 @@ trait AnimationEasingType extends js.Object
 
 object AnimationEasingType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ease: typings.recharts.rechartsStrings.ease = "ease".asInstanceOf[typings.recharts.rechartsStrings.ease]
   @scala.inline
-  def ease: typings.recharts.rechartsStrings.ease = this.cast("ease")
+  def `ease-in`: typings.recharts.rechartsStrings.`ease-in` = "ease-in".asInstanceOf[typings.recharts.rechartsStrings.`ease-in`]
   @scala.inline
-  def `ease-in`: typings.recharts.rechartsStrings.`ease-in` = this.cast("ease-in")
+  def `ease-in-out`: typings.recharts.rechartsStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.recharts.rechartsStrings.`ease-in-out`]
   @scala.inline
-  def `ease-in-out`: typings.recharts.rechartsStrings.`ease-in-out` = this.cast("ease-in-out")
+  def `ease-out`: typings.recharts.rechartsStrings.`ease-out` = "ease-out".asInstanceOf[typings.recharts.rechartsStrings.`ease-out`]
   @scala.inline
-  def `ease-out`: typings.recharts.rechartsStrings.`ease-out` = this.cast("ease-out")
-  @scala.inline
-  def linear: typings.recharts.rechartsStrings.linear = this.cast("linear")
+  def linear: typings.recharts.rechartsStrings.linear = "linear".asInstanceOf[typings.recharts.rechartsStrings.linear]
 }
 

@@ -13,7 +13,6 @@ object DisputeReason {
   @scala.inline
   def apply(DisputeReasonMessage: String, DisputeReasonType: DisputeReasonType): DisputeReason = {
     val __obj = js.Dynamic.literal(DisputeReasonMessage = DisputeReasonMessage.asInstanceOf[js.Any], DisputeReasonType = DisputeReasonType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisputeReason]
   }
 }

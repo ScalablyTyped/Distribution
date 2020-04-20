@@ -1,6 +1,6 @@
 package typings.node
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait encodingBufferEncodingExe extends js.Object {
   var cwd: js.UndefOr[java.lang.String] = js.undefined
   var encoding: BufferEncoding
-  var env: js.UndefOr[ProcessEnv] = js.undefined
+  var env: js.UndefOr[Dict[java.lang.String]] = js.undefined
   var gid: js.UndefOr[Double] = js.undefined
   var killSignal: js.UndefOr[Signals | Double] = js.undefined
   var maxBuffer: js.UndefOr[Double] = js.undefined
@@ -31,7 +31,7 @@ object encodingBufferEncodingExe {
   def apply(
     encoding: BufferEncoding,
     cwd: java.lang.String = null,
-    env: ProcessEnv = null,
+    env: Dict[java.lang.String] = null,
     gid: Int | Double = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,

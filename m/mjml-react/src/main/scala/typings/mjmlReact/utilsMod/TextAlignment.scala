@@ -15,16 +15,14 @@ trait TextAlignment extends js.Object
 
 object TextAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.mjmlReact.mjmlReactStrings.center = "center".asInstanceOf[typings.mjmlReact.mjmlReactStrings.center]
   @scala.inline
-  def center: typings.mjmlReact.mjmlReactStrings.center = this.cast("center")
+  def inherit: typings.mjmlReact.mjmlReactStrings.inherit = "inherit".asInstanceOf[typings.mjmlReact.mjmlReactStrings.inherit]
   @scala.inline
-  def inherit: typings.mjmlReact.mjmlReactStrings.inherit = this.cast("inherit")
+  def justify: typings.mjmlReact.mjmlReactStrings.justify = "justify".asInstanceOf[typings.mjmlReact.mjmlReactStrings.justify]
   @scala.inline
-  def justify: typings.mjmlReact.mjmlReactStrings.justify = this.cast("justify")
+  def left: typings.mjmlReact.mjmlReactStrings.left = "left".asInstanceOf[typings.mjmlReact.mjmlReactStrings.left]
   @scala.inline
-  def left: typings.mjmlReact.mjmlReactStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.mjmlReact.mjmlReactStrings.right = this.cast("right")
+  def right: typings.mjmlReact.mjmlReactStrings.right = "right".asInstanceOf[typings.mjmlReact.mjmlReactStrings.right]
 }
 

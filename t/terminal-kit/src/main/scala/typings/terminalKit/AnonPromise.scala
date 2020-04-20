@@ -13,7 +13,6 @@ object AnonPromise {
   @scala.inline
   def apply(abort: () => Unit, promise: js.Promise[js.UndefOr[String]]): AnonPromise = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), promise = promise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPromise]
   }
 }

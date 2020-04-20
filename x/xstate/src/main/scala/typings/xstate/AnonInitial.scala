@@ -19,7 +19,6 @@ object AnonInitial {
     states: StatesConfig[_, TStateSchema, TEvent]
   ): AnonInitial[TStateSchema, TEvent] = {
     val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInitial[TStateSchema, TEvent]]
   }
 }

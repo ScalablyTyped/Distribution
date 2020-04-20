@@ -21,7 +21,6 @@ object HashtagMatchConfig {
     tagBuilder: AnchorTagBuilder
   ): HashtagMatchConfig = {
     val __obj = js.Dynamic.literal(hashtag = hashtag.asInstanceOf[js.Any], matchedText = matchedText.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HashtagMatchConfig]
   }
 }

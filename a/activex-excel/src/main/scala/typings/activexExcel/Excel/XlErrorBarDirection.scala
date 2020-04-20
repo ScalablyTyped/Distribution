@@ -14,10 +14,8 @@ trait XlErrorBarDirection extends js.Object
 
 object XlErrorBarDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlX: `-4168` = -4168.asInstanceOf[`-4168`]
   @scala.inline
-  def xlX: `-4168` = this.cast(-4168)
-  @scala.inline
-  def xlY: `1` = this.cast(1)
+  def xlY: `1` = 1.asInstanceOf[`1`]
 }
 

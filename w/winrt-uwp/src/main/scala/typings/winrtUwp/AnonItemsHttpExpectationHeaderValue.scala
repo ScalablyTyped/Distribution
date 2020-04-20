@@ -14,7 +14,6 @@ object AnonItemsHttpExpectationHeaderValue {
   @scala.inline
   def apply(items: HttpExpectationHeaderValue, returnValue: Double): AnonItemsHttpExpectationHeaderValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsHttpExpectationHeaderValue]
   }
 }

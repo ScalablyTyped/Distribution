@@ -16,12 +16,10 @@ trait HorizontalAlignment extends js.Object
 
 object HorizontalAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.luminoDatagrid.luminoDatagridStrings.center = "center".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.center]
   @scala.inline
-  def center: typings.luminoDatagrid.luminoDatagridStrings.center = this.cast("center")
+  def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
   @scala.inline
-  def left: typings.luminoDatagrid.luminoDatagridStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.luminoDatagrid.luminoDatagridStrings.right = this.cast("right")
+  def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
 }
 

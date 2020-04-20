@@ -18,14 +18,12 @@ trait WdVerticalAlignment extends js.Object
 
 object WdVerticalAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAlignVerticalBottom: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdAlignVerticalBottom: `3` = this.cast(3)
+  def wdAlignVerticalCenter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdAlignVerticalCenter: `1` = this.cast(1)
+  def wdAlignVerticalJustify: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAlignVerticalJustify: `2` = this.cast(2)
-  @scala.inline
-  def wdAlignVerticalTop: `0` = this.cast(0)
+  def wdAlignVerticalTop: `0` = 0.asInstanceOf[`0`]
 }
 

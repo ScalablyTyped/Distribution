@@ -135,15 +135,15 @@ object runtimeAnimationMod extends js.Object {
     /**
       * Gets the animation from the runtime animation
       */
-    def animation(): Animation = js.native
+    def animation: Animation = js.native
     /**
       * Gets the current frame of the runtime animation
       */
-    def currentFrame(): Double = js.native
+    def currentFrame: Double = js.native
     /**
       * Gets the current value of the runtime animation
       */
-    def currentValue(): js.Any = js.native
+    def currentValue: js.Any = js.native
     /**
       * Disposes of the runtime animation
       */
@@ -173,15 +173,15 @@ object runtimeAnimationMod extends js.Object {
     /**
       * Gets the actual target of the runtime animation
       */
-    def target(): js.Any = js.native
+    def target: js.Any = js.native
     /**
       * Gets the target path of the runtime animation
       */
-    def targetPath(): String = js.native
+    def targetPath: String = js.native
     /**
       * Gets the weight of the runtime animation
       */
-    def weight(): Double = js.native
+    def weight: Double = js.native
   }
   
 }

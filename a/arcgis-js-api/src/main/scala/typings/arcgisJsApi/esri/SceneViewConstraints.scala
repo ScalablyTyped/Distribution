@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SceneViewConstraints extends AnonymousAccessor {
   /**
     * Specifies a constraint on the minimum and maximum allowed camera altitude.
-    * > **Known Limitations**  The `altitude` constraints works just in global WebScene. (Not in local WebScene)
+    * > **Known Limitations**  The `altitude` constraint is only supported in scenes with `global` [viewingMode](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewingMode).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */

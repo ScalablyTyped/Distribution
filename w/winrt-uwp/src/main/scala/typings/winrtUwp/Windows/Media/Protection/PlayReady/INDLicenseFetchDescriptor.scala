@@ -18,7 +18,6 @@ object INDLicenseFetchDescriptor {
   @scala.inline
   def apply(contentID: Double, contentIDType: NDContentIDType, licenseFetchChallengeCustomData: INDCustomData): INDLicenseFetchDescriptor = {
     val __obj = js.Dynamic.literal(contentID = contentID.asInstanceOf[js.Any], contentIDType = contentIDType.asInstanceOf[js.Any], licenseFetchChallengeCustomData = licenseFetchChallengeCustomData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INDLicenseFetchDescriptor]
   }
 }

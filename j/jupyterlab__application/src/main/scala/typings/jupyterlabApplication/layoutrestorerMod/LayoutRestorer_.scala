@@ -106,7 +106,7 @@ class LayoutRestorer_ protected () extends ILayoutRestorer {
     * A promise resolved when the layout restorer is ready to receive signals.
     */
   @JSName("restored")
-  def restored_MLayoutRestorer_(): js.Promise[Unit] = js.native
+  def restored_MLayoutRestorer_ : js.Promise[Unit] = js.native
   /**
     * Save the layout state for the application.
     */

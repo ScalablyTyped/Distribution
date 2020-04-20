@@ -14,14 +14,12 @@ trait MetisMenuEvents extends js.Object
 
 object MetisMenuEvents {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hiddenDotmetisMenu: typings.metismenu.metismenuStrings.hiddenDotmetisMenu = "hidden.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.hiddenDotmetisMenu]
   @scala.inline
-  def hiddenDotmetisMenu: typings.metismenu.metismenuStrings.hiddenDotmetisMenu = this.cast("hidden.metisMenu")
+  def hideDotmetisMenu: typings.metismenu.metismenuStrings.hideDotmetisMenu = "hide.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.hideDotmetisMenu]
   @scala.inline
-  def hideDotmetisMenu: typings.metismenu.metismenuStrings.hideDotmetisMenu = this.cast("hide.metisMenu")
+  def showDotmetisMenu: typings.metismenu.metismenuStrings.showDotmetisMenu = "show.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.showDotmetisMenu]
   @scala.inline
-  def showDotmetisMenu: typings.metismenu.metismenuStrings.showDotmetisMenu = this.cast("show.metisMenu")
-  @scala.inline
-  def shownDotmetisMenu: typings.metismenu.metismenuStrings.shownDotmetisMenu = this.cast("shown.metisMenu")
+  def shownDotmetisMenu: typings.metismenu.metismenuStrings.shownDotmetisMenu = "shown.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.shownDotmetisMenu]
 }
 

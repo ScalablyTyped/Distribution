@@ -16,7 +16,6 @@ object ListIdentityPoliciesResponse {
   @scala.inline
   def apply(PolicyNames: PolicyNameList): ListIdentityPoliciesResponse = {
     val __obj = js.Dynamic.literal(PolicyNames = PolicyNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListIdentityPoliciesResponse]
   }
 }

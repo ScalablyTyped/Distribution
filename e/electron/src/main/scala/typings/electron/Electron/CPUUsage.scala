@@ -21,7 +21,6 @@ object CPUUsage {
   @scala.inline
   def apply(idleWakeupsPerSecond: Double, percentCPUUsage: Double): CPUUsage = {
     val __obj = js.Dynamic.literal(idleWakeupsPerSecond = idleWakeupsPerSecond.asInstanceOf[js.Any], percentCPUUsage = percentCPUUsage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CPUUsage]
   }
 }

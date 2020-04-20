@@ -11,6 +11,6 @@ object normalizeModelName extends js.Object {
     * This method normalizes a modelName into the format Ember Data uses
     * internally.
     */
-  def apply[K /* <: String */](modelName: K): String = js.native
+  def apply[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): String = js.native
 }
 

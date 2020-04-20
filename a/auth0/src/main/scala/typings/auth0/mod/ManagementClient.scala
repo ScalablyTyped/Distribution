@@ -145,6 +145,16 @@ class ManagementClient[A, U] protected () extends js.Object {
   def getLogs(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getLogs")
   def getLogs_Promise(): js.Promise[_] = js.native
+  def getPermissionsInRole(params: GetRolePermissionsData): js.Promise[js.Array[Permission]] = js.native
+  def getPermissionsInRole(params: GetRolePermissionsDataPaged): js.Promise[PermissionPage] = js.native
+  def getPermissionsInRole(
+    params: GetRolePermissionsDataPaged,
+    cb: js.Function2[/* err */ Error, /* permissionPage */ PermissionPage, Unit]
+  ): Unit = js.native
+  def getPermissionsInRole(
+    params: GetRolePermissionsData,
+    cb: js.Function2[/* err */ Error, /* permissions */ js.Array[Permission], Unit]
+  ): Unit = js.native
   def getPermissionsInRole(params: ObjectWithId): js.Promise[js.Array[Permission]] = js.native
   def getPermissionsInRole(
     params: ObjectWithId,

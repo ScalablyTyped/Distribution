@@ -27,7 +27,6 @@ object AccountsResource {
     reports: ReportsResource
   ): AccountsResource = {
     val __obj = js.Dynamic.literal(adclients = adclients.asInstanceOf[js.Any], adunits = adunits.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), reports = reports.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountsResource]
   }
 }

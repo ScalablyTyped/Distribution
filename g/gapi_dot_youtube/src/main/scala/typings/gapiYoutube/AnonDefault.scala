@@ -19,7 +19,6 @@ object AnonDefault {
   @scala.inline
   def apply(default: String, localized: js.Array[AnonLanguage]): AnonDefault = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], localized = localized.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefault]
   }
 }

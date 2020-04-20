@@ -21,7 +21,6 @@ object HTTPIngressRuleValue {
   @scala.inline
   def apply(paths: js.Array[HTTPIngressPath]): HTTPIngressRuleValue = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HTTPIngressRuleValue]
   }
 }

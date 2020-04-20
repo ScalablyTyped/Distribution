@@ -13,7 +13,6 @@ object AnonIgnore {
   @scala.inline
   def apply(ignore: Set[String]): AnonIgnore = {
     val __obj = js.Dynamic.literal(ignore = ignore.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIgnore]
   }
 }

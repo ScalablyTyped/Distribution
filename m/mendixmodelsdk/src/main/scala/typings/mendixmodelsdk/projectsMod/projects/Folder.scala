@@ -29,8 +29,8 @@ class Folder protected () extends FolderBase {
   @JSName("name")
   var name_FFolder: String = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MFolder(): FolderBase = js.native
-  def name(): String = js.native
+  def containerAsFolderBase_MFolder: FolderBase = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
 }
 

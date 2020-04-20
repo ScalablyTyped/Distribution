@@ -162,11 +162,11 @@ object sceneOptimizerMod extends js.Object {
     /**
       * Gets the current frame rate checked by the SceneOptimizer
       */
-    def currentFrameRate(): Double = js.native
+    def currentFrameRate: Double = js.native
     /**
       * Gets the current priority level (0 at start)
       */
-    def currentPriorityLevel(): Double = js.native
+    def currentPriorityLevel: Double = js.native
     /**
       * Releases all held resources
       */
@@ -175,11 +175,11 @@ object sceneOptimizerMod extends js.Object {
     /**
       * Gets a boolean indicating if the optimizer is in improvement mode
       */
-    def isInImprovementMode(): Boolean = js.native
+    def isInImprovementMode: Boolean = js.native
     /**
       * Gets the list of active optimizations
       */
-    def optimizations(): js.Array[SceneOptimization] = js.native
+    def optimizations: js.Array[SceneOptimization] = js.native
     /**
       * Reset the optimizer to initial step (current priority level = 0)
       */
@@ -196,7 +196,7 @@ object sceneOptimizerMod extends js.Object {
     /**
       * Gets or sets the current target frame rate (60 by default)
       */
-    def targetFrameRate(): Double = js.native
+    def targetFrameRate: Double = js.native
     /**
       * Gets or sets the current target frame rate (60 by default)
       */
@@ -204,7 +204,7 @@ object sceneOptimizerMod extends js.Object {
     /**
       * Gets or sets the current interval between two checks (every 2000ms by default)
       */
-    def trackerDuration(): Double = js.native
+    def trackerDuration: Double = js.native
     /**
       * Gets or sets the current interval between two checks (every 2000ms by default)
       */
@@ -321,7 +321,7 @@ object sceneOptimizerMod extends js.Object {
     /**
       * Gets or sets a boolean which defines if optimization octree has to be updated
       */
-    def UpdateSelectionTree(): Boolean = js.native
+    def UpdateSelectionTree: Boolean = js.native
     /**
       * Gets or sets a boolean which defines if optimization octree has to be updated
       */

@@ -40,7 +40,6 @@ object ICurrentUserResource {
   @scala.inline
   def apply(changePassword: js.Any => IPromise[IResourcePromise], getMembershipProviderConfig: () => js.Any): ICurrentUserResource = {
     val __obj = js.Dynamic.literal(changePassword = js.Any.fromFunction1(changePassword), getMembershipProviderConfig = js.Any.fromFunction0(getMembershipProviderConfig))
-  
     __obj.asInstanceOf[ICurrentUserResource]
   }
 }

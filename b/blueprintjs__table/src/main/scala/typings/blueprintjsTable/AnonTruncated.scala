@@ -13,7 +13,6 @@ object AnonTruncated {
   @scala.inline
   def apply(truncated: Boolean, wrapText: Boolean): AnonTruncated = {
     val __obj = js.Dynamic.literal(truncated = truncated.asInstanceOf[js.Any], wrapText = wrapText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTruncated]
   }
 }

@@ -13,7 +13,6 @@ object WebGLObject {
   @scala.inline
   def apply(__WebGLObject: Unit): WebGLObject = {
     val __obj = js.Dynamic.literal(__WebGLObject = __WebGLObject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebGLObject]
   }
 }

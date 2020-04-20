@@ -16,18 +16,16 @@ trait ShareDialogMode extends js.Object
 
 object ShareDialogMode {
   @scala.inline
-  def automatic: typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = this.cast("automatic")
+  def automatic: typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = "automatic".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic]
   @scala.inline
-  def browser: typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser = this.cast("browser")
+  def browser: typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser = "browser".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def feed: typings.reactNativeFbsdk.reactNativeFbsdkStrings.feed = "feed".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.feed]
   @scala.inline
-  def feed: typings.reactNativeFbsdk.reactNativeFbsdkStrings.feed = this.cast("feed")
+  def native: typings.reactNativeFbsdk.reactNativeFbsdkStrings.native = "native".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.native]
   @scala.inline
-  def native: typings.reactNativeFbsdk.reactNativeFbsdkStrings.native = this.cast("native")
+  def web: typings.reactNativeFbsdk.reactNativeFbsdkStrings.web = "web".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.web]
   @scala.inline
-  def web: typings.reactNativeFbsdk.reactNativeFbsdkStrings.web = this.cast("web")
-  @scala.inline
-  def webview: typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview = this.cast("webview")
+  def webview: typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview = "webview".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview]
 }
 

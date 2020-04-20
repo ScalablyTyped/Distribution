@@ -12,7 +12,6 @@ object Types {
   @scala.inline
   def apply(expect: Expect): Types = {
     val __obj = js.Dynamic.literal(expect = expect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Types]
   }
 }

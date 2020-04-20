@@ -14,14 +14,12 @@ trait IconCorner extends js.Object
 
 object IconCorner {
   @scala.inline
-  def `bottom left`: typings.semanticUiReact.semanticUiReactStrings.`bottom left` = this.cast("bottom left")
+  def `bottom left`: typings.semanticUiReact.semanticUiReactStrings.`bottom left` = ("bottom left").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`bottom left`]
   @scala.inline
-  def `bottom right`: typings.semanticUiReact.semanticUiReactStrings.`bottom right` = this.cast("bottom right")
+  def `bottom right`: typings.semanticUiReact.semanticUiReactStrings.`bottom right` = ("bottom right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`bottom right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `top left`: typings.semanticUiReact.semanticUiReactStrings.`top left` = ("top left").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`top left`]
   @scala.inline
-  def `top left`: typings.semanticUiReact.semanticUiReactStrings.`top left` = this.cast("top left")
-  @scala.inline
-  def `top right`: typings.semanticUiReact.semanticUiReactStrings.`top right` = this.cast("top right")
+  def `top right`: typings.semanticUiReact.semanticUiReactStrings.`top right` = ("top right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`top right`]
 }
 

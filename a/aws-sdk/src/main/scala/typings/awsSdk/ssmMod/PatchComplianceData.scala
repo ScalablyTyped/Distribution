@@ -43,7 +43,6 @@ object PatchComplianceData {
     Title: PatchTitle
   ): PatchComplianceData = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], InstalledTime = InstalledTime.asInstanceOf[js.Any], KBId = KBId.asInstanceOf[js.Any], Severity = Severity.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatchComplianceData]
   }
 }

@@ -56,7 +56,6 @@ object CoreObject {
     willDestroy: () => Unit
   ): CoreObject = {
     val __obj = js.Dynamic.literal(_super = js.Any.fromFunction1(_super), concatenatedProperties = concatenatedProperties.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction0(init), isDestroyed = isDestroyed.asInstanceOf[js.Any], isDestroying = isDestroying.asInstanceOf[js.Any], willDestroy = js.Any.fromFunction0(willDestroy))
-  
     __obj.asInstanceOf[CoreObject]
   }
 }

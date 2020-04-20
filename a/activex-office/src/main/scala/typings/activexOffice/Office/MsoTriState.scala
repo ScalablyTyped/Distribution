@@ -20,16 +20,14 @@ trait MsoTriState extends js.Object
 
 object MsoTriState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoCTrue: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoCTrue: `1` = this.cast(1)
+  def msoFalse: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoFalse: `0` = this.cast(0)
+  def msoTriStateMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoTriStateMixed: `-2` = this.cast(-2)
+  def msoTriStateToggle: `-3` = -3.asInstanceOf[`-3`]
   @scala.inline
-  def msoTriStateToggle: `-3` = this.cast(-3)
-  @scala.inline
-  def msoTrue: `-1` = this.cast(-1)
+  def msoTrue: `-1` = -1.asInstanceOf[`-1`]
 }
 

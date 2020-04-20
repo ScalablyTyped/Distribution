@@ -17,7 +17,6 @@ object PushMessageData {
   @scala.inline
   def apply(arrayBuffer: () => ArrayBuffer, blob: () => Blob, json: () => js.Any, text: () => String): PushMessageData = {
     val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
-  
     __obj.asInstanceOf[PushMessageData]
   }
 }

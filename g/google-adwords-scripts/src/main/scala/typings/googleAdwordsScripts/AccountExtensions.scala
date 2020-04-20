@@ -25,7 +25,6 @@ object AccountExtensions {
     snippets: () => AdWordsSelector[Snippet]
   ): AccountExtensions = {
     val __obj = js.Dynamic.literal(callouts = js.Any.fromFunction0(callouts), message = js.Any.fromFunction0(message), mobileApps = js.Any.fromFunction0(mobileApps), reviews = js.Any.fromFunction0(reviews), sitelinks = js.Any.fromFunction0(sitelinks), snippets = js.Any.fromFunction0(snippets))
-  
     __obj.asInstanceOf[AccountExtensions]
   }
 }

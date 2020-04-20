@@ -24,34 +24,32 @@ trait CalendarSystem extends js.Object
 
 object CalendarSystem {
   @scala.inline
-  def buddhist: typings.luxon.luxonStrings.buddhist = this.cast("buddhist")
+  def buddhist: typings.luxon.luxonStrings.buddhist = "buddhist".asInstanceOf[typings.luxon.luxonStrings.buddhist]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chinese: typings.luxon.luxonStrings.chinese = "chinese".asInstanceOf[typings.luxon.luxonStrings.chinese]
   @scala.inline
-  def chinese: typings.luxon.luxonStrings.chinese = this.cast("chinese")
+  def coptic: typings.luxon.luxonStrings.coptic = "coptic".asInstanceOf[typings.luxon.luxonStrings.coptic]
   @scala.inline
-  def coptic: typings.luxon.luxonStrings.coptic = this.cast("coptic")
+  def ethioaa: typings.luxon.luxonStrings.ethioaa = "ethioaa".asInstanceOf[typings.luxon.luxonStrings.ethioaa]
   @scala.inline
-  def ethioaa: typings.luxon.luxonStrings.ethioaa = this.cast("ethioaa")
+  def ethiopic: typings.luxon.luxonStrings.ethiopic = "ethiopic".asInstanceOf[typings.luxon.luxonStrings.ethiopic]
   @scala.inline
-  def ethiopic: typings.luxon.luxonStrings.ethiopic = this.cast("ethiopic")
+  def gregory: typings.luxon.luxonStrings.gregory = "gregory".asInstanceOf[typings.luxon.luxonStrings.gregory]
   @scala.inline
-  def gregory: typings.luxon.luxonStrings.gregory = this.cast("gregory")
+  def hebrew: typings.luxon.luxonStrings.hebrew = "hebrew".asInstanceOf[typings.luxon.luxonStrings.hebrew]
   @scala.inline
-  def hebrew: typings.luxon.luxonStrings.hebrew = this.cast("hebrew")
+  def indian: typings.luxon.luxonStrings.indian = "indian".asInstanceOf[typings.luxon.luxonStrings.indian]
   @scala.inline
-  def indian: typings.luxon.luxonStrings.indian = this.cast("indian")
+  def islamic: typings.luxon.luxonStrings.islamic = "islamic".asInstanceOf[typings.luxon.luxonStrings.islamic]
   @scala.inline
-  def islamic: typings.luxon.luxonStrings.islamic = this.cast("islamic")
+  def islamicc: typings.luxon.luxonStrings.islamicc = "islamicc".asInstanceOf[typings.luxon.luxonStrings.islamicc]
   @scala.inline
-  def islamicc: typings.luxon.luxonStrings.islamicc = this.cast("islamicc")
+  def iso8601: typings.luxon.luxonStrings.iso8601 = "iso8601".asInstanceOf[typings.luxon.luxonStrings.iso8601]
   @scala.inline
-  def iso8601: typings.luxon.luxonStrings.iso8601 = this.cast("iso8601")
+  def japanese: typings.luxon.luxonStrings.japanese = "japanese".asInstanceOf[typings.luxon.luxonStrings.japanese]
   @scala.inline
-  def japanese: typings.luxon.luxonStrings.japanese = this.cast("japanese")
+  def persian: typings.luxon.luxonStrings.persian = "persian".asInstanceOf[typings.luxon.luxonStrings.persian]
   @scala.inline
-  def persian: typings.luxon.luxonStrings.persian = this.cast("persian")
-  @scala.inline
-  def roc: typings.luxon.luxonStrings.roc = this.cast("roc")
+  def roc: typings.luxon.luxonStrings.roc = "roc".asInstanceOf[typings.luxon.luxonStrings.roc]
 }
 

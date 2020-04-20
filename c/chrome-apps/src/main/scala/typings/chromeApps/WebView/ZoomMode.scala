@@ -1,6 +1,6 @@
 package typings.chromeApps.WebView
 
-import typings.chromeApps.chromeAppsStrings.disabled_
+import typings.chromeApps.chromeAppsStrings.disabled__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,18 +30,16 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.chromeApps.chromeAppsStrings.`per-origin`
   - typings.chromeApps.chromeAppsStrings.`per-view`
-  - typings.chromeApps.chromeAppsStrings.disabled_
+  - typings.chromeApps.chromeAppsStrings.disabled__
 */
 trait ZoomMode extends js.Object
 
 object ZoomMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: disabled__ = "disabled".asInstanceOf[disabled__]
   @scala.inline
-  def disabled: disabled_ = this.cast("disabled")
+  def `per-origin`: typings.chromeApps.chromeAppsStrings.`per-origin` = "per-origin".asInstanceOf[typings.chromeApps.chromeAppsStrings.`per-origin`]
   @scala.inline
-  def `per-origin`: typings.chromeApps.chromeAppsStrings.`per-origin` = this.cast("per-origin")
-  @scala.inline
-  def `per-view`: typings.chromeApps.chromeAppsStrings.`per-view` = this.cast("per-view")
+  def `per-view`: typings.chromeApps.chromeAppsStrings.`per-view` = "per-view".asInstanceOf[typings.chromeApps.chromeAppsStrings.`per-view`]
 }
 

@@ -25,16 +25,16 @@ object transportersMod extends js.Object {
       */
     def configure(): GaxiosOptions = js.native
     def configure(opts: GaxiosOptions): GaxiosOptions = js.native
-    def request[T](opts: GaxiosOptions): Unit = js.native
-    def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): Unit = js.native
     /**
       * Makes a request using Gaxios with given options.
       * @param opts GaxiosOptions options.
       * @param callback optional callback that contains GaxiosResponse object.
       * @return GaxiosPromise, assuming no callback is passed.
       */
+    def request[T](opts: GaxiosOptions): GaxiosPromise[T] = js.native
+    def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): Unit = js.native
     @JSName("request")
-    def request_T_GaxiosPromise[T](opts: GaxiosOptions): GaxiosPromise[T] = js.native
+    def request_T_Unit[T](opts: GaxiosOptions): Unit = js.native
   }
   
   @js.native
@@ -45,14 +45,14 @@ object transportersMod extends js.Object {
   
   @js.native
   trait Transporter extends js.Object {
-    def request[T](opts: GaxiosOptions): Unit = js.native
-    def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): Unit = js.native
+    def request[T](opts: GaxiosOptions): GaxiosPromise[_] | Unit = js.native
+    def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): GaxiosPromise[_] | Unit = js.native
     @JSName("request")
     def request_T_GaxiosPromise[T](opts: GaxiosOptions): GaxiosPromise[T] = js.native
     @JSName("request")
-    def request_T_Union[T](opts: GaxiosOptions): GaxiosPromise[_] | Unit = js.native
+    def request_T_Unit[T](opts: GaxiosOptions): Unit = js.native
     @JSName("request")
-    def request_T_Union[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): GaxiosPromise[_] | Unit = js.native
+    def request_T_Unit[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): Unit = js.native
   }
   
   /* static members */

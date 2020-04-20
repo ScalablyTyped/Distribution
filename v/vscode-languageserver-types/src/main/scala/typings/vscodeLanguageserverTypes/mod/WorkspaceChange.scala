@@ -19,7 +19,7 @@ class WorkspaceChange () extends js.Object {
     * Returns the underlying [WorkspaceEdit](#WorkspaceEdit) literal
     * use to be returned from a workspace edit operation like rename.
     */
-  def edit(): WorkspaceEdit = js.native
+  def edit: WorkspaceEdit = js.native
   /**
     * Returns the [TextEditChange](#TextEditChange) to manage text edits
     * for resources.

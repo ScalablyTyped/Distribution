@@ -21,23 +21,21 @@ object LevelEnum {
   	ANSI 256 colors support.
   	*/
   @scala.inline
-  def Ansi256: `2` = this.cast(2)
+  def Ansi256: `2` = 2.asInstanceOf[`2`]
   /**
   	Basic 16 colors support.
   	*/
   @scala.inline
-  def Basic: `1` = this.cast(1)
+  def Basic: `1` = 1.asInstanceOf[`1`]
   /**
   	All colors disabled.
   	*/
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   /**
   	Truecolor 16 million colors support.
   	*/
   @scala.inline
-  def TrueColor: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TrueColor: `3` = 3.asInstanceOf[`3`]
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kiwicom__orbit-design-tokens"
-version := "0.6-dt-20191002Z-41f9a4"
+version := "0.6-dt-20191002Z-5ae2a8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

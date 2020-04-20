@@ -30,7 +30,6 @@ object drawer {
   @scala.inline
   def apply(chart: (js.Any, js.Any, js.Any) => Unit, conservative: (js.Any, js.Any, js.Any) => Unit): drawer = {
     val __obj = js.Dynamic.literal(chart = js.Any.fromFunction3(chart), conservative = js.Any.fromFunction3(conservative))
-  
     __obj.asInstanceOf[drawer]
   }
 }

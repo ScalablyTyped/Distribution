@@ -1,6 +1,6 @@
 package typings.atom.mod
 
-import typings.atom.Anon22
+import typings.atom.Anon26
 import typings.atom.AnonClipDirection
 import typings.atom.AnonReversed
 import scala.scalajs.js
@@ -39,12 +39,12 @@ trait DisplayMarker extends js.Object {
     *  greater than or equal to the result of DisplayMarker::getStartScreenPosition.
     */
   def getEndScreenPosition(): Point = js.native
-  def getEndScreenPosition(options: Anon22): Point = js.native
+  def getEndScreenPosition(options: Anon26): Point = js.native
   /** Retrieves the buffer position of the marker's head. */
   def getHeadBufferPosition(): Point = js.native
   /** Retrieves the screen position of the marker's head. */
   def getHeadScreenPosition(): Point = js.native
-  def getHeadScreenPosition(options: Anon22): Point = js.native
+  def getHeadScreenPosition(options: Anon26): Point = js.native
   /**
     *  Get the invalidation strategy for this marker.
     *  Valid values include: never, surround, overlap, inside, and touch.
@@ -64,12 +64,12 @@ trait DisplayMarker extends js.Object {
     *  less than or equal to the result of DisplayMarker::getEndScreenPosition.
     */
   def getStartScreenPosition(): Point = js.native
-  def getStartScreenPosition(options: Anon22): Point = js.native
+  def getStartScreenPosition(options: Anon26): Point = js.native
   /** Retrieves the buffer position of the marker's tail. */
   def getTailBufferPosition(): Point = js.native
   /** Retrieves the screen position of the marker's tail. */
   def getTailScreenPosition(): Point = js.native
-  def getTailScreenPosition(options: Anon22): Point = js.native
+  def getTailScreenPosition(options: Anon26): Point = js.native
   /** Returns a boolean indicating whether the marker has a tail. */
   def hasTail(): Boolean = js.native
   /**
@@ -116,7 +116,7 @@ trait DisplayMarker extends js.Object {
   def setHeadBufferPosition(bufferPosition: PointCompatible): Unit = js.native
   /** Sets the screen position of the marker's head. */
   def setHeadScreenPosition(screenPosition: PointCompatible): Unit = js.native
-  def setHeadScreenPosition(screenPosition: PointCompatible, options: Anon22): Unit = js.native
+  def setHeadScreenPosition(screenPosition: PointCompatible, options: Anon26): Unit = js.native
   /** Merges an Object containing new properties into the marker's existing properties. */
   def setProperties(properties: js.Object): Unit = js.native
   /** Modifies the screen range of this marker. */
@@ -126,6 +126,6 @@ trait DisplayMarker extends js.Object {
   def setTailBufferPosition(bufferPosition: PointCompatible): Unit = js.native
   /** Sets the screen position of the marker's tail. */
   def setTailScreenPosition(screenPosition: PointCompatible): Unit = js.native
-  def setTailScreenPosition(screenPosition: PointCompatible, options: Anon22): Unit = js.native
+  def setTailScreenPosition(screenPosition: PointCompatible, options: Anon26): Unit = js.native
 }
 

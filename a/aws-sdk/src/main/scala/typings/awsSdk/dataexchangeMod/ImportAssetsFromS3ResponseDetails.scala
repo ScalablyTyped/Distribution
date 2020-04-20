@@ -24,7 +24,6 @@ object ImportAssetsFromS3ResponseDetails {
   @scala.inline
   def apply(AssetSources: ListOfAssetSourceEntry, DataSetId: Id, RevisionId: Id): ImportAssetsFromS3ResponseDetails = {
     val __obj = js.Dynamic.literal(AssetSources = AssetSources.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImportAssetsFromS3ResponseDetails]
   }
 }

@@ -12,7 +12,6 @@ object BreadcrumbsItemProps {
   @scala.inline
   def apply(to: String): BreadcrumbsItemProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BreadcrumbsItemProps]
   }
 }

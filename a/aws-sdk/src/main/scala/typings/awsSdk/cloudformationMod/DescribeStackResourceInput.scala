@@ -20,7 +20,6 @@ object DescribeStackResourceInput {
   @scala.inline
   def apply(LogicalResourceId: LogicalResourceId, StackName: StackName): DescribeStackResourceInput = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStackResourceInput]
   }
 }

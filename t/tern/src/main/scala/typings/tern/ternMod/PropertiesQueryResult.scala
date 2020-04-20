@@ -13,7 +13,6 @@ object PropertiesQueryResult {
   @scala.inline
   def apply(completions: js.Array[String]): PropertiesQueryResult = {
     val __obj = js.Dynamic.literal(completions = completions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PropertiesQueryResult]
   }
 }

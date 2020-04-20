@@ -23,7 +23,6 @@ object ICompressor {
     writeAsync: IBuffer => IAsyncOperationWithProgress[Double, Double]
   ): ICompressor = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), detachStream = js.Any.fromFunction0(detachStream), finishAsync = js.Any.fromFunction0(finishAsync), flushAsync = js.Any.fromFunction0(flushAsync), writeAsync = js.Any.fromFunction1(writeAsync))
-  
     __obj.asInstanceOf[ICompressor]
   }
 }

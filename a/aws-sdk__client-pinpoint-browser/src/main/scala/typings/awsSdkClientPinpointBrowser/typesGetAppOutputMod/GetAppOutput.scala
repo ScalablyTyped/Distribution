@@ -23,7 +23,6 @@ object GetAppOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ApplicationResponse: UnmarshalledApplicationResponse): GetAppOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationResponse = ApplicationResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAppOutput]
   }
 }

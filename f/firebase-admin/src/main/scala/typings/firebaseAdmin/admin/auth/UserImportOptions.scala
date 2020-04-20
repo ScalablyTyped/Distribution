@@ -21,7 +21,6 @@ object UserImportOptions {
   @scala.inline
   def apply(hash: AnonAlgorithm): UserImportOptions = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserImportOptions]
   }
 }

@@ -13,7 +13,6 @@ object ImagesLoadedOptions {
   @scala.inline
   def apply(background: `true` | String): ImagesLoadedOptions = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImagesLoadedOptions]
   }
 }

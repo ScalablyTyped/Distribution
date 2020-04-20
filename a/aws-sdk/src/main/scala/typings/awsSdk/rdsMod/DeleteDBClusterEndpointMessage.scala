@@ -16,7 +16,6 @@ object DeleteDBClusterEndpointMessage {
   @scala.inline
   def apply(DBClusterEndpointIdentifier: String): DeleteDBClusterEndpointMessage = {
     val __obj = js.Dynamic.literal(DBClusterEndpointIdentifier = DBClusterEndpointIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDBClusterEndpointMessage]
   }
 }

@@ -16,7 +16,6 @@ object GetAccountPasswordPolicyResponse {
   @scala.inline
   def apply(PasswordPolicy: PasswordPolicy): GetAccountPasswordPolicyResponse = {
     val __obj = js.Dynamic.literal(PasswordPolicy = PasswordPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAccountPasswordPolicyResponse]
   }
 }

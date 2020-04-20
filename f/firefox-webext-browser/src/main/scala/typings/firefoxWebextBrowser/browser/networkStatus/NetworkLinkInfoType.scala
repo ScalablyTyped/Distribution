@@ -19,22 +19,20 @@ trait NetworkLinkInfoType extends js.Object
 
 object NetworkLinkInfoType {
   @scala.inline
-  def `2g`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`2g` = this.cast("2g")
+  def `2g`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`2g` = "2g".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`2g`]
   @scala.inline
-  def `3g`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`3g` = this.cast("3g")
+  def `3g`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`3g` = "3g".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`3g`]
   @scala.inline
-  def `4g`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`4g` = this.cast("4g")
+  def `4g`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`4g` = "4g".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`4g`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ethernet: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ethernet = "ethernet".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ethernet]
   @scala.inline
-  def ethernet: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ethernet = this.cast("ethernet")
+  def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
   @scala.inline
-  def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = this.cast("unknown")
+  def usb: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.usb = "usb".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.usb]
   @scala.inline
-  def usb: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.usb = this.cast("usb")
+  def wifi: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wifi = "wifi".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wifi]
   @scala.inline
-  def wifi: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wifi = this.cast("wifi")
-  @scala.inline
-  def wimax: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wimax = this.cast("wimax")
+  def wimax: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wimax = "wimax".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wimax]
 }
 

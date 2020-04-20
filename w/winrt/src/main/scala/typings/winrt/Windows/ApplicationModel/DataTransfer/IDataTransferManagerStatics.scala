@@ -13,7 +13,6 @@ object IDataTransferManagerStatics {
   @scala.inline
   def apply(getForCurrentView: () => DataTransferManager, showShareUI: () => Unit): IDataTransferManagerStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView), showShareUI = js.Any.fromFunction0(showShareUI))
-  
     __obj.asInstanceOf[IDataTransferManagerStatics]
   }
 }

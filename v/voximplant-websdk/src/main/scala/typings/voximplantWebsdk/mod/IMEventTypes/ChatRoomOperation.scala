@@ -28,7 +28,6 @@ object ChatRoomOperation {
   @scala.inline
   def apply(operation: ChatRoomOperationType, result: Boolean, room: String): ChatRoomOperation = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChatRoomOperation]
   }
 }

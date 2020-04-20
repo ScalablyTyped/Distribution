@@ -20,16 +20,14 @@ trait XlPivotFieldOrientation extends js.Object
 
 object XlPivotFieldOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlColumnField: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlColumnField: `2` = this.cast(2)
+  def xlDataField: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlDataField: `4` = this.cast(4)
+  def xlHidden: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlHidden: `0` = this.cast(0)
+  def xlPageField: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlPageField: `3` = this.cast(3)
-  @scala.inline
-  def xlRowField: `1` = this.cast(1)
+  def xlRowField: `1` = 1.asInstanceOf[`1`]
 }
 

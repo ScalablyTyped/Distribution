@@ -15,16 +15,14 @@ trait Transport extends js.Object
 
 object Transport {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def comet: typings.ably.ablyStrings.comet = "comet".asInstanceOf[typings.ably.ablyStrings.comet]
   @scala.inline
-  def comet: typings.ably.ablyStrings.comet = this.cast("comet")
+  def jsonp: typings.ably.ablyStrings.jsonp = "jsonp".asInstanceOf[typings.ably.ablyStrings.jsonp]
   @scala.inline
-  def jsonp: typings.ably.ablyStrings.jsonp = this.cast("jsonp")
+  def web_socket: typings.ably.ablyStrings.web_socket = "web_socket".asInstanceOf[typings.ably.ablyStrings.web_socket]
   @scala.inline
-  def web_socket: typings.ably.ablyStrings.web_socket = this.cast("web_socket")
+  def xhr_polling: typings.ably.ablyStrings.xhr_polling = "xhr_polling".asInstanceOf[typings.ably.ablyStrings.xhr_polling]
   @scala.inline
-  def xhr_polling: typings.ably.ablyStrings.xhr_polling = this.cast("xhr_polling")
-  @scala.inline
-  def xhr_streaming: typings.ably.ablyStrings.xhr_streaming = this.cast("xhr_streaming")
+  def xhr_streaming: typings.ably.ablyStrings.xhr_streaming = "xhr_streaming".asInstanceOf[typings.ably.ablyStrings.xhr_streaming]
 }
 

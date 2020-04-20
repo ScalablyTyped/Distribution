@@ -20,7 +20,6 @@ object IStreamWebSocketControl {
     supportedProtocols: IVector[String]
   ): IStreamWebSocketControl = {
     val __obj = js.Dynamic.literal(noDelay = noDelay.asInstanceOf[js.Any], outboundBufferSizeInBytes = outboundBufferSizeInBytes.asInstanceOf[js.Any], proxyCredential = proxyCredential.asInstanceOf[js.Any], serverCredential = serverCredential.asInstanceOf[js.Any], supportedProtocols = supportedProtocols.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStreamWebSocketControl]
   }
 }

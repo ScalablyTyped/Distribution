@@ -16,7 +16,6 @@ object DisassociateRoleFromGroupRequest {
   @scala.inline
   def apply(GroupId: string): DisassociateRoleFromGroupRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateRoleFromGroupRequest]
   }
 }

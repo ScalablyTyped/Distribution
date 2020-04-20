@@ -37,7 +37,6 @@ object CloneStatistics {
     totalTestCasesCount: Double
   ): CloneStatistics = {
     val __obj = js.Dynamic.literal(clonedRequirementsCount = clonedRequirementsCount.asInstanceOf[js.Any], clonedSharedStepsCount = clonedSharedStepsCount.asInstanceOf[js.Any], clonedTestCasesCount = clonedTestCasesCount.asInstanceOf[js.Any], totalRequirementsCount = totalRequirementsCount.asInstanceOf[js.Any], totalTestCasesCount = totalTestCasesCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloneStatistics]
   }
 }

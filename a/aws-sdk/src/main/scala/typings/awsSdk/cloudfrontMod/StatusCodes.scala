@@ -20,7 +20,6 @@ object StatusCodes {
   @scala.inline
   def apply(Items: StatusCodeList, Quantity: integer): StatusCodes = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatusCodes]
   }
 }

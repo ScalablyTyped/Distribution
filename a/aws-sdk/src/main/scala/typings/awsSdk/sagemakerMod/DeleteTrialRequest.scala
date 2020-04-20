@@ -16,7 +16,6 @@ object DeleteTrialRequest {
   @scala.inline
   def apply(TrialName: ExperimentEntityName): DeleteTrialRequest = {
     val __obj = js.Dynamic.literal(TrialName = TrialName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTrialRequest]
   }
 }

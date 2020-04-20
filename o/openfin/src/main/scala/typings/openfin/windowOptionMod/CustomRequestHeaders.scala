@@ -13,7 +13,6 @@ object CustomRequestHeaders {
   @scala.inline
   def apply(headers: js.Array[_], urlPatterns: js.Array[String]): CustomRequestHeaders = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], urlPatterns = urlPatterns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomRequestHeaders]
   }
 }

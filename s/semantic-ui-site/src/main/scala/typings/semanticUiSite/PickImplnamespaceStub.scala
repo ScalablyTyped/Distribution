@@ -14,7 +14,6 @@ object PickImplnamespaceStub {
   @scala.inline
   def apply(namespaceStub: NamespaceStubSettings): PickImplnamespaceStub = {
     val __obj = js.Dynamic.literal(namespaceStub = namespaceStub.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnamespaceStub]
   }
 }

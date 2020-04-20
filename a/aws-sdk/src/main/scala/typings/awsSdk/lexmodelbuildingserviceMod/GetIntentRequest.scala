@@ -20,7 +20,6 @@ object GetIntentRequest {
   @scala.inline
   def apply(name: IntentName, version: Version): GetIntentRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIntentRequest]
   }
 }

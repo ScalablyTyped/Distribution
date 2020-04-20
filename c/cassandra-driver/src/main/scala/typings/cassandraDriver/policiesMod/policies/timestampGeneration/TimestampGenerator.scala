@@ -14,7 +14,6 @@ object TimestampGenerator {
   @scala.inline
   def apply(next: Client => Long | Double): TimestampGenerator = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
-  
     __obj.asInstanceOf[TimestampGenerator]
   }
 }

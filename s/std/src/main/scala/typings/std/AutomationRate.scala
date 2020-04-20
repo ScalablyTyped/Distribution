@@ -12,10 +12,8 @@ trait AutomationRate extends js.Object
 
 object AutomationRate {
   @scala.inline
-  def `a-rate`: typings.std.stdStrings.`a-rate` = this.cast("a-rate")
+  def `a-rate`: typings.std.stdStrings.`a-rate` = "a-rate".asInstanceOf[typings.std.stdStrings.`a-rate`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `k-rate`: typings.std.stdStrings.`k-rate` = this.cast("k-rate")
+  def `k-rate`: typings.std.stdStrings.`k-rate` = "k-rate".asInstanceOf[typings.std.stdStrings.`k-rate`]
 }
 

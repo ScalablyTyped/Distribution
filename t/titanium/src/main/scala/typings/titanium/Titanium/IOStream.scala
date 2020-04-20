@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 	 * IOStream is the interface that all stream types implement.
 	 */
 // tslint:disable-next-line:interface-name
+@JSGlobal("Titanium.IOStream")
 @js.native
-trait IOStream extends Proxy {
+class IOStream () extends Proxy {
   /**
   		 * Closes this stream.
   		 */
@@ -34,7 +35,7 @@ trait IOStream extends Proxy {
     buffer: Buffer,
     offset: Double,
     length: Double,
-    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, _]
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
   ): Double = js.native
   /**
   		 * Writes data from a buffer to this stream.
@@ -46,7 +47,7 @@ trait IOStream extends Proxy {
     buffer: Buffer,
     offset: Double,
     length: Double,
-    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, _]
+    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, Unit]
   ): Double = js.native
 }
 

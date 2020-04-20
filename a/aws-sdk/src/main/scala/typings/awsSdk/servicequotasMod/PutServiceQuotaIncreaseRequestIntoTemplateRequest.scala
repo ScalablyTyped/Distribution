@@ -28,7 +28,6 @@ object PutServiceQuotaIncreaseRequestIntoTemplateRequest {
   @scala.inline
   def apply(AwsRegion: AwsRegion, DesiredValue: QuotaValue, QuotaCode: QuotaCode, ServiceCode: ServiceCode): PutServiceQuotaIncreaseRequestIntoTemplateRequest = {
     val __obj = js.Dynamic.literal(AwsRegion = AwsRegion.asInstanceOf[js.Any], DesiredValue = DesiredValue.asInstanceOf[js.Any], QuotaCode = QuotaCode.asInstanceOf[js.Any], ServiceCode = ServiceCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutServiceQuotaIncreaseRequestIntoTemplateRequest]
   }
 }

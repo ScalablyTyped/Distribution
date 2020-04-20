@@ -23,7 +23,6 @@ object NodeGroupResource {
     remoteAccessSecurityGroupId: String
   ): NodeGroupResource = {
     val __obj = js.Dynamic.literal(autoscalingGroups = autoscalingGroups.asInstanceOf[js.Any], remoteAccessSecurityGroupId = remoteAccessSecurityGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeGroupResource]
   }
 }

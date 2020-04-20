@@ -15,7 +15,6 @@ object RouteOptions {
   @scala.inline
   def apply(routeCallback: (String, String) => js.Any): RouteOptions = {
     val __obj = js.Dynamic.literal(routeCallback = js.Any.fromFunction2(routeCallback))
-  
     __obj.asInstanceOf[RouteOptions]
   }
 }

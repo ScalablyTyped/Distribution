@@ -19,7 +19,6 @@ object ReportsResource {
   @scala.inline
   def apply(generate: AnonDimension => Request_[Report], saved: SavedResource): ReportsResource = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), saved = saved.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReportsResource]
   }
 }

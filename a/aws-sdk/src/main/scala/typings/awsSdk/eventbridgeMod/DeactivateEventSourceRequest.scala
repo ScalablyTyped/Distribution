@@ -16,7 +16,6 @@ object DeactivateEventSourceRequest {
   @scala.inline
   def apply(Name: EventSourceName): DeactivateEventSourceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeactivateEventSourceRequest]
   }
 }

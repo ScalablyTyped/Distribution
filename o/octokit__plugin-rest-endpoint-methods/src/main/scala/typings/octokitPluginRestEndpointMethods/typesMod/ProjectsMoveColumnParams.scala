@@ -16,7 +16,6 @@ object ProjectsMoveColumnParams {
   @scala.inline
   def apply(column_id: Double, position: String): ProjectsMoveColumnParams = {
     val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectsMoveColumnParams]
   }
 }

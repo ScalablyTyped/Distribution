@@ -18,22 +18,20 @@ trait partToReturn extends js.Object
 
 object partToReturn {
   @scala.inline
-  def all: typings.parseFullName.parseFullNameStrings.all = this.cast("all")
+  def all: typings.parseFullName.parseFullNameStrings.all = "all".asInstanceOf[typings.parseFullName.parseFullNameStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.parseFullName.parseFullNameStrings.error = "error".asInstanceOf[typings.parseFullName.parseFullNameStrings.error]
   @scala.inline
-  def error: typings.parseFullName.parseFullNameStrings.error = this.cast("error")
+  def first: typings.parseFullName.parseFullNameStrings.first = "first".asInstanceOf[typings.parseFullName.parseFullNameStrings.first]
   @scala.inline
-  def first: typings.parseFullName.parseFullNameStrings.first = this.cast("first")
+  def last: typings.parseFullName.parseFullNameStrings.last = "last".asInstanceOf[typings.parseFullName.parseFullNameStrings.last]
   @scala.inline
-  def last: typings.parseFullName.parseFullNameStrings.last = this.cast("last")
+  def middle: typings.parseFullName.parseFullNameStrings.middle = "middle".asInstanceOf[typings.parseFullName.parseFullNameStrings.middle]
   @scala.inline
-  def middle: typings.parseFullName.parseFullNameStrings.middle = this.cast("middle")
+  def nick: typings.parseFullName.parseFullNameStrings.nick = "nick".asInstanceOf[typings.parseFullName.parseFullNameStrings.nick]
   @scala.inline
-  def nick: typings.parseFullName.parseFullNameStrings.nick = this.cast("nick")
+  def suffix: typings.parseFullName.parseFullNameStrings.suffix = "suffix".asInstanceOf[typings.parseFullName.parseFullNameStrings.suffix]
   @scala.inline
-  def suffix: typings.parseFullName.parseFullNameStrings.suffix = this.cast("suffix")
-  @scala.inline
-  def title: typings.parseFullName.parseFullNameStrings.title = this.cast("title")
+  def title: typings.parseFullName.parseFullNameStrings.title = "title".asInstanceOf[typings.parseFullName.parseFullNameStrings.title]
 }
 

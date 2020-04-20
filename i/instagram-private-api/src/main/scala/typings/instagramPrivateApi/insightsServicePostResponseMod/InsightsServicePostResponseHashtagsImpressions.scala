@@ -13,7 +13,6 @@ object InsightsServicePostResponseHashtagsImpressions {
   @scala.inline
   def apply(hashtags: InsightsServicePostResponseHashtags, organic: InsightsServicePostResponseOrganic): InsightsServicePostResponseHashtagsImpressions = {
     val __obj = js.Dynamic.literal(hashtags = hashtags.asInstanceOf[js.Any], organic = organic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServicePostResponseHashtagsImpressions]
   }
 }

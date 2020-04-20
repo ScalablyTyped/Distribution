@@ -14,14 +14,12 @@ trait ButtonPosition extends js.Object
 
 object ButtonPosition {
   @scala.inline
-  def LB: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LB = this.cast("LB")
+  def LB: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LB = "LB".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LB]
   @scala.inline
-  def LT: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LT = this.cast("LT")
+  def LT: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LT = "LT".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LT]
   @scala.inline
-  def RB: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RB = this.cast("RB")
+  def RB: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RB = "RB".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RB]
   @scala.inline
-  def RT: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RT = this.cast("RT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RT: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RT = "RT".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RT]
 }
 

@@ -14,7 +14,6 @@ object ParserArgument {
   @scala.inline
   def apply(cmd: AnonInstantiable, raw: String): ParserArgument = {
     val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParserArgument]
   }
 }

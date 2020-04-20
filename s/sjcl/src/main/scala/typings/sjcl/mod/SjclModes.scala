@@ -25,7 +25,6 @@ object SjclModes {
     ocb2progressive: SjclOCB2ProgressiveMode
   ): SjclModes = {
     val __obj = js.Dynamic.literal(cbc = cbc.asInstanceOf[js.Any], ccm = ccm.asInstanceOf[js.Any], ctr = ctr.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], ocb2 = ocb2.asInstanceOf[js.Any], ocb2progressive = ocb2progressive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SjclModes]
   }
 }

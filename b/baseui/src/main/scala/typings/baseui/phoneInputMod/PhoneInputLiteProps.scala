@@ -33,6 +33,7 @@ object PhoneInputLiteProps {
     countries: StringDictionary[Country],
     adjoined: none | left | right | both = null,
     `aria-describedby`: String = null,
+    `aria-errormessage`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
     autoComplete: String = null,
@@ -61,6 +62,7 @@ object PhoneInputLiteProps {
     onKeyUp: KeyboardEvent[HTMLInputElement] => Unit = null,
     onTextChange: /* event */ SyntheticEvent[HTMLInputElement, Event_] => _ = null,
     overrides: PhoneInputOverrides = null,
+    pattern: String = null,
     placeholder: String = null,
     positive: js.UndefOr[Boolean] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,
@@ -74,6 +76,7 @@ object PhoneInputLiteProps {
     val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any])
     if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
+    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
@@ -102,6 +105,7 @@ object PhoneInputLiteProps {
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
     if (onTextChange != null) __obj.updateDynamic("onTextChange")(js.Any.fromFunction1(onTextChange))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])

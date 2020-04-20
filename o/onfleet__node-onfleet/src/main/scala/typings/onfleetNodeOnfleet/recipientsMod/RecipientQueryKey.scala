@@ -12,10 +12,8 @@ trait RecipientQueryKey extends js.Object
 
 object RecipientQueryKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def name: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.name = "name".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.name]
   @scala.inline
-  def name: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.name = this.cast("name")
-  @scala.inline
-  def phone: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.phone = this.cast("phone")
+  def phone: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.phone = "phone".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.phone]
 }
 

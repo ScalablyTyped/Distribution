@@ -13,7 +13,6 @@ object DoneNote {
   @scala.inline
   def apply(note: String => Unit): DoneNote = {
     val __obj = js.Dynamic.literal(note = js.Any.fromFunction1(note))
-  
     __obj.asInstanceOf[DoneNote]
   }
 }

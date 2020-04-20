@@ -100,7 +100,6 @@ object CrashReporter_ {
     start: CrashReporterStartOptions => Unit
   ): CrashReporter_ = {
     val __obj = js.Dynamic.literal(addExtraParameter = js.Any.fromFunction2(addExtraParameter), getCrashesDirectory = js.Any.fromFunction0(getCrashesDirectory), getLastCrashReport = js.Any.fromFunction0(getLastCrashReport), getParameters = js.Any.fromFunction0(getParameters), getUploadToServer = js.Any.fromFunction0(getUploadToServer), getUploadedReports = js.Any.fromFunction0(getUploadedReports), removeExtraParameter = js.Any.fromFunction1(removeExtraParameter), setUploadToServer = js.Any.fromFunction1(setUploadToServer), start = js.Any.fromFunction1(start))
-  
     __obj.asInstanceOf[CrashReporter_]
   }
 }

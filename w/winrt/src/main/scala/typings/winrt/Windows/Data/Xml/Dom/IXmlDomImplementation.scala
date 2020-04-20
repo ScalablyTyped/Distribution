@@ -12,7 +12,6 @@ object IXmlDomImplementation {
   @scala.inline
   def apply(hasFeature: (String, js.Any) => Boolean): IXmlDomImplementation = {
     val __obj = js.Dynamic.literal(hasFeature = js.Any.fromFunction2(hasFeature))
-  
     __obj.asInstanceOf[IXmlDomImplementation]
   }
 }

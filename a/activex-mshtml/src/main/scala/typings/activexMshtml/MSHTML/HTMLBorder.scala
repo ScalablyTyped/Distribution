@@ -20,16 +20,14 @@ trait HTMLBorder extends js.Object
 
 object HTMLBorder {
   @scala.inline
-  def HTMLBorderDialog: `4194304` = this.cast(4194304)
+  def HTMLBorderDialog: `4194304` = 4194304.asInstanceOf[`4194304`]
   @scala.inline
-  def HTMLBorderNone: `0` = this.cast(0)
+  def HTMLBorderNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLBorderThick: `262144` = this.cast(262144)
+  def HTMLBorderThick: `262144` = 262144.asInstanceOf[`262144`]
   @scala.inline
-  def HTMLBorderThin: `8388608` = this.cast(8388608)
+  def HTMLBorderThin: `8388608` = 8388608.asInstanceOf[`8388608`]
   @scala.inline
-  def HTMLBorder_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLBorder_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

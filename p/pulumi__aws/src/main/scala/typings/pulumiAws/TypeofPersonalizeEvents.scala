@@ -13,7 +13,6 @@ object TypeofPersonalizeEvents {
   @scala.inline
   def apply(Types: TypeofPersonalizeEvents): TypeofPersonalizeEvents = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofPersonalizeEvents]
   }
 }

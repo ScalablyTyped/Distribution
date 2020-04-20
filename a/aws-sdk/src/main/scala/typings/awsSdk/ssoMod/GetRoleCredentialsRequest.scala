@@ -24,7 +24,6 @@ object GetRoleCredentialsRequest {
   @scala.inline
   def apply(accessToken: AccessTokenType, accountId: AccountIdType, roleName: RoleNameType): GetRoleCredentialsRequest = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], accountId = accountId.asInstanceOf[js.Any], roleName = roleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRoleCredentialsRequest]
   }
 }

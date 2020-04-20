@@ -1,5 +1,6 @@
 package typings.stellarSdk.tradeAggregationCallBuilderMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +24,7 @@ object TradeAggregationRecord {
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
-    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with js.Any,
+    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],
     avg: String,
     base_volume: String,
     close: String,
@@ -35,7 +36,6 @@ object TradeAggregationRecord {
     trade_count: Double | String
   ): TradeAggregationRecord = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], avg = avg.asInstanceOf[js.Any], base_volume = base_volume.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], counter_volume = counter_volume.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], trade_count = trade_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TradeAggregationRecord]
   }
 }

@@ -70,7 +70,6 @@ object ScaleIOPersistentVolumeSource {
     volumeName: String
   ): ScaleIOPersistentVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], gateway = gateway.asInstanceOf[js.Any], protectionDomain = protectionDomain.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any], sslEnabled = sslEnabled.asInstanceOf[js.Any], storageMode = storageMode.asInstanceOf[js.Any], storagePool = storagePool.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], volumeName = volumeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScaleIOPersistentVolumeSource]
   }
 }

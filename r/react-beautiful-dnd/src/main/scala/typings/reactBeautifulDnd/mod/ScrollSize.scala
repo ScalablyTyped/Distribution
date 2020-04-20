@@ -13,7 +13,6 @@ object ScrollSize {
   @scala.inline
   def apply(scrollHeight: Double, scrollWidth: Double): ScrollSize = {
     val __obj = js.Dynamic.literal(scrollHeight = scrollHeight.asInstanceOf[js.Any], scrollWidth = scrollWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollSize]
   }
 }

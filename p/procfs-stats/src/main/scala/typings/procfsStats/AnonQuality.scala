@@ -12,7 +12,6 @@ object AnonQuality {
   @scala.inline
   def apply(Quality: String): AnonQuality = {
     val __obj = js.Dynamic.literal(Quality = Quality.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQuality]
   }
 }

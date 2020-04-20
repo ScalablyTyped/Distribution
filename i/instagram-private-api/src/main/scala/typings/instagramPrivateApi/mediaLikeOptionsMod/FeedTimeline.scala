@@ -18,7 +18,6 @@ object FeedTimeline {
     module_name: feed_timeline | feed_contextual_post | newsfeed | feed_contextual_newsfeed_multi_media_liked
   ): FeedTimeline = {
     val __obj = js.Dynamic.literal(module_name = module_name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeedTimeline]
   }
 }

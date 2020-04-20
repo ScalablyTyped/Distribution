@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactIconsProps {
   @scala.inline
-  def IconBaseProps: IconBasePropsattrundefine.type = typings.reactIcons.IconBasePropsattrundefine
+  def IconBaseProps: IconBasePropsattrundefine.type = IconBasePropsattrundefine
   type IconBaseProps = IconBasePropsattrundefine
 }
 

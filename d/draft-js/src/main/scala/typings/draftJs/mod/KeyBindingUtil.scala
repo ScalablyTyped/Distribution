@@ -22,5 +22,11 @@ object KeyBindingUtil extends js.Object {
   def isCtrlKeyCommand(e: SyntheticKeyboardEvent): Boolean = js.native
   def isOptionKeyCommand(e: SyntheticKeyboardEvent): Boolean = js.native
   def isSoftNewlineEvent(e: SyntheticKeyboardEvent): Boolean = js.native
+  /**
+    * Check whether heuristics that only apply to macOS are used
+    * internally, for example when determining the key combination
+    * used as command modifier.
+    */
+  def usesMacOSHeuristics(): Boolean = js.native
 }
 

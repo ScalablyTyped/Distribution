@@ -16,7 +16,6 @@ object IUtilDomStyle {
   @scala.inline
   def apply(setStyle: (HTMLElement, js.Any) => HTMLElement): IUtilDomStyle = {
     val __obj = js.Dynamic.literal(setStyle = js.Any.fromFunction2(setStyle))
-  
     __obj.asInstanceOf[IUtilDomStyle]
   }
 }

@@ -12,7 +12,6 @@ object ICameraOptionsUIStatics {
   @scala.inline
   def apply(show: MediaCapture => Unit): ICameraOptionsUIStatics = {
     val __obj = js.Dynamic.literal(show = js.Any.fromFunction1(show))
-  
     __obj.asInstanceOf[ICameraOptionsUIStatics]
   }
 }

@@ -13,7 +13,6 @@ object CreateBucketQuery {
   @scala.inline
   def apply(project: String, userProject: String): CreateBucketQuery = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], userProject = userProject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateBucketQuery]
   }
 }

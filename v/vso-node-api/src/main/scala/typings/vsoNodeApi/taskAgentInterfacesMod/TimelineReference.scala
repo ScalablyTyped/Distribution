@@ -14,7 +14,6 @@ object TimelineReference {
   @scala.inline
   def apply(changeId: Double, id: String, location: String): TimelineReference = {
     val __obj = js.Dynamic.literal(changeId = changeId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimelineReference]
   }
 }

@@ -12,10 +12,8 @@ trait ComponentFiles extends js.Object
 
 object ComponentFiles {
   @scala.inline
-  def COMPONENT_DIRS: typings.idyll.idyllStrings.COMPONENT_DIRS = this.cast("COMPONENT_DIRS")
+  def COMPONENT_DIRS: typings.idyll.idyllStrings.COMPONENT_DIRS = "COMPONENT_DIRS".asInstanceOf[typings.idyll.idyllStrings.COMPONENT_DIRS]
   @scala.inline
-  def DEFAULT_COMPONENT_DIRS: typings.idyll.idyllStrings.DEFAULT_COMPONENT_DIRS = this.cast("DEFAULT_COMPONENT_DIRS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DEFAULT_COMPONENT_DIRS: typings.idyll.idyllStrings.DEFAULT_COMPONENT_DIRS = "DEFAULT_COMPONENT_DIRS".asInstanceOf[typings.idyll.idyllStrings.DEFAULT_COMPONENT_DIRS]
 }
 

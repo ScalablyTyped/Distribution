@@ -100,7 +100,7 @@ object widgetMod extends js.Object {
     /**
       * The color inversion of the image.
       */
-    def colorinversion(): Double = js.native
+    def colorinversion: Double = js.native
     def colorinversion(value: Double): js.Any = js.native
     /**
       * Test whether a widget is a descendant of this widget.
@@ -303,7 +303,7 @@ object widgetMod extends js.Object {
     /**
       * A promise that resolves when the image viewer is ready.
       */
-    def ready(): js.Promise[Unit] = js.native
+    def ready: js.Promise[Unit] = js.native
     /**
       * Remove a class name from the widget's DOM node.
       *
@@ -331,7 +331,7 @@ object widgetMod extends js.Object {
     /**
       * The scale factor for the image.
       */
-    def scale(): Double = js.native
+    def scale: Double = js.native
     def scale(value: Double): js.Any = js.native
     /**
       * Set the given widget flag.

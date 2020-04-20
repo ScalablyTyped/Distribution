@@ -22,7 +22,6 @@ object AnonHasModuleSideEffects {
     isExternal: Boolean
   ): AnonHasModuleSideEffects = {
     val __obj = js.Dynamic.literal(hasModuleSideEffects = hasModuleSideEffects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], importedIds = importedIds.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isExternal = isExternal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHasModuleSideEffects]
   }
 }

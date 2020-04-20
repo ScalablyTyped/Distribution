@@ -38,7 +38,6 @@ object InappproductsResource {
     update: AnonSku => Request_[InAppProduct]
   ): InappproductsResource = {
     val __obj = js.Dynamic.literal(batch = js.Any.fromFunction1(batch), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[InappproductsResource]
   }
 }

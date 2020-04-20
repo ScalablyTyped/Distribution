@@ -1,5 +1,6 @@
 package typings.jasmine.jasmine
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jasmine.jasmineStrings.objectContaining_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ object objectContaining extends js.Object {
   def apply[T](
     sample: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? jasmine.jasmine.ExpectedRecursive<T[K]>}
-    */ objectContaining_ with T
+    */ objectContaining_ with TopLevel[T]
   ): ObjectContaining_[T] = js.native
 }
 

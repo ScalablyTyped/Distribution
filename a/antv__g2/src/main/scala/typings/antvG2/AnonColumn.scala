@@ -23,7 +23,6 @@ object AnonColumn {
   @scala.inline
   def apply(column: Double, multiplePie: Double, rose: Double): AnonColumn = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], multiplePie = multiplePie.asInstanceOf[js.Any], rose = rose.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColumn]
   }
 }

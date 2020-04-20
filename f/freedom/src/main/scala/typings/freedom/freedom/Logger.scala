@@ -22,7 +22,6 @@ object Logger {
     warn: /* repeated */ js.Any => Unit
   ): Logger = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
-  
     __obj.asInstanceOf[Logger]
   }
 }

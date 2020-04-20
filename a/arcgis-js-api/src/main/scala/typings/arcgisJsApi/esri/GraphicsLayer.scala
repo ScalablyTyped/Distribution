@@ -17,7 +17,7 @@ trait GraphicsLayer
     */
   var elevationInfo: GraphicsLayerElevationInfo = js.native
   /**
-    * A collection of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) in the layer. Each graphic is a vector representation of the location of a real-world feature. Each graphic in a single GraphicsLayer may contain either a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html), [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html), or [Polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#geometry). In addition, each [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) in the collection may contain its own [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#attributes), [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html), and [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).  To add a graphic to the GraphicsLayer use [add()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#add), or [GraphicsLayer.graphics.add()](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#add).
+    * A collection of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) in the layer. Each graphic is a vector representation of the location of a real-world feature. Each graphic in a single GraphicsLayer may contain either a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html), [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html), or [Polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#geometry). In addition, each [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) in the collection may contain its own [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#attributes), [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html), and [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).  To add a graphic to the GraphicsLayer use [add()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#add), [GraphicsLayer.graphics.add()](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#add) or [GraphicsLayer.graphics.push()](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#push).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#graphics)
     */
@@ -34,7 +34,7 @@ trait GraphicsLayer
   @JSName("type")
   val type_GraphicsLayer: graphics = js.native
   /**
-    * Adds a graphic to the layer.
+    * Adds a graphic to the layer's graphic collection. The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-add](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-add), [after-add](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-add), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#add)
     *
@@ -43,7 +43,7 @@ trait GraphicsLayer
     */
   def add(graphic: Graphic): Unit = js.native
   /**
-    * Adds an array of graphics to the layer.
+    * Adds an array of graphics to the layer. The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-add](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-add), [after-add](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-add), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#addMany)
     *
@@ -52,7 +52,7 @@ trait GraphicsLayer
     */
   def addMany(graphics: js.Array[Graphic]): Unit = js.native
   /**
-    * Removes a graphic from the layer.
+    * Removes a graphic from the layer. The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-remove), [after-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-remove), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#remove)
     *
@@ -61,7 +61,7 @@ trait GraphicsLayer
     */
   def remove(graphic: Graphic): Unit = js.native
   /**
-    * Clears all the graphics from the layer.
+    * Clears all the graphics from the layer. The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-remove), [after-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-remove), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#removeAll)
     *
@@ -69,7 +69,7 @@ trait GraphicsLayer
     */
   def removeAll(): Unit = js.native
   /**
-    * Removes an array of graphics from the layer.
+    * Removes an array of graphics from the layer. The [before-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-changes), [before-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-before-remove), [after-remove](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-remove), [after-changes](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-after-changes) and [change](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#event-change) events will be emitted when this method is called.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#removeMany)
     *

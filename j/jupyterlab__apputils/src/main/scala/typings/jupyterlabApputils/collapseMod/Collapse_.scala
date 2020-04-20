@@ -28,11 +28,11 @@ class Collapse_[T /* <: Widget */] protected () extends Widget {
   /**
     * A signal for when the widget collapse state changes.
     */
-  def collapseChanged(): ISignal[Collapse[Widget], Unit] = js.native
+  def collapseChanged: ISignal[Collapse[Widget], Unit] = js.native
   /**
     * The collapsed state of the panel.
     */
-  def collapsed(): Boolean = js.native
+  def collapsed: Boolean = js.native
   def collapsed(value: Boolean): js.Any = js.native
   /**
     * Handle the DOM events for the Collapse widget.
@@ -52,7 +52,7 @@ class Collapse_[T /* <: Widget */] protected () extends Widget {
   /**
     * The widget inside the collapse panel.
     */
-  def widget(): T = js.native
+  def widget: T = js.native
   def widget(widget: T): js.Any = js.native
 }
 

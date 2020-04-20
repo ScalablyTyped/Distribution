@@ -16,7 +16,6 @@ object AnonOptions {
   @scala.inline
   def apply(id: js.Any, options: TransportRequestOptions, params: TransportRequestParams): AnonOptions = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOptions]
   }
 }

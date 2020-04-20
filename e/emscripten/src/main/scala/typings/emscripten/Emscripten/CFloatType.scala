@@ -12,10 +12,8 @@ trait CFloatType extends js.Object
 
 object CFloatType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def double: typings.emscripten.emscriptenStrings.double = "double".asInstanceOf[typings.emscripten.emscriptenStrings.double]
   @scala.inline
-  def double: typings.emscripten.emscriptenStrings.double = this.cast("double")
-  @scala.inline
-  def float: typings.emscripten.emscriptenStrings.float = this.cast("float")
+  def float: typings.emscripten.emscriptenStrings.float = "float".asInstanceOf[typings.emscripten.emscriptenStrings.float]
 }
 

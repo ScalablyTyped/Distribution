@@ -22,30 +22,28 @@ trait ControlKey extends js.Object
 
 object ControlKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.yandexMaps.yandexMapsStrings.default = "default".asInstanceOf[typings.yandexMaps.yandexMapsStrings.default]
   @scala.inline
-  def default: typings.yandexMaps.yandexMapsStrings.default = this.cast("default")
+  def fullscreenControl: typings.yandexMaps.yandexMapsStrings.fullscreenControl = "fullscreenControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.fullscreenControl]
   @scala.inline
-  def fullscreenControl: typings.yandexMaps.yandexMapsStrings.fullscreenControl = this.cast("fullscreenControl")
+  def geolocationControl: typings.yandexMaps.yandexMapsStrings.geolocationControl = "geolocationControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.geolocationControl]
   @scala.inline
-  def geolocationControl: typings.yandexMaps.yandexMapsStrings.geolocationControl = this.cast("geolocationControl")
+  def largeMapDefaultSet: typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet = "largeMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet]
   @scala.inline
-  def largeMapDefaultSet: typings.yandexMaps.yandexMapsStrings.largeMapDefaultSet = this.cast("largeMapDefaultSet")
+  def mediumMapDefaultSet: typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet = "mediumMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet]
   @scala.inline
-  def mediumMapDefaultSet: typings.yandexMaps.yandexMapsStrings.mediumMapDefaultSet = this.cast("mediumMapDefaultSet")
+  def routeEditor: typings.yandexMaps.yandexMapsStrings.routeEditor = "routeEditor".asInstanceOf[typings.yandexMaps.yandexMapsStrings.routeEditor]
   @scala.inline
-  def routeEditor: typings.yandexMaps.yandexMapsStrings.routeEditor = this.cast("routeEditor")
+  def rulerControl: typings.yandexMaps.yandexMapsStrings.rulerControl = "rulerControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.rulerControl]
   @scala.inline
-  def rulerControl: typings.yandexMaps.yandexMapsStrings.rulerControl = this.cast("rulerControl")
+  def searchControl: typings.yandexMaps.yandexMapsStrings.searchControl = "searchControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.searchControl]
   @scala.inline
-  def searchControl: typings.yandexMaps.yandexMapsStrings.searchControl = this.cast("searchControl")
+  def smallMapDefaultSet: typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet = "smallMapDefaultSet".asInstanceOf[typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet]
   @scala.inline
-  def smallMapDefaultSet: typings.yandexMaps.yandexMapsStrings.smallMapDefaultSet = this.cast("smallMapDefaultSet")
+  def trafficControl: typings.yandexMaps.yandexMapsStrings.trafficControl = "trafficControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.trafficControl]
   @scala.inline
-  def trafficControl: typings.yandexMaps.yandexMapsStrings.trafficControl = this.cast("trafficControl")
+  def typeSelector: typings.yandexMaps.yandexMapsStrings.typeSelector = "typeSelector".asInstanceOf[typings.yandexMaps.yandexMapsStrings.typeSelector]
   @scala.inline
-  def typeSelector: typings.yandexMaps.yandexMapsStrings.typeSelector = this.cast("typeSelector")
-  @scala.inline
-  def zoomControl: typings.yandexMaps.yandexMapsStrings.zoomControl = this.cast("zoomControl")
+  def zoomControl: typings.yandexMaps.yandexMapsStrings.zoomControl = "zoomControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.zoomControl]
 }
 

@@ -25,7 +25,6 @@ object ScriptsResource {
   @scala.inline
   def apply(run: AnonAccesstoken => Request_[Operation]): ScriptsResource = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
-  
     __obj.asInstanceOf[ScriptsResource]
   }
 }

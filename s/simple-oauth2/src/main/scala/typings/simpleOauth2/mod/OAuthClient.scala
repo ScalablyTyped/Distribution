@@ -24,7 +24,6 @@ object OAuthClient {
     ownerPassword: AnonGetToken
   ): OAuthClient[ClientIdName] = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], authorizationCode = authorizationCode.asInstanceOf[js.Any], clientCredentials = clientCredentials.asInstanceOf[js.Any], ownerPassword = ownerPassword.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OAuthClient[ClientIdName]]
   }
 }

@@ -15,7 +15,6 @@ object GetScriptSourceReturnType {
   @scala.inline
   def apply(scriptSource: String): GetScriptSourceReturnType = {
     val __obj = js.Dynamic.literal(scriptSource = scriptSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetScriptSourceReturnType]
   }
 }

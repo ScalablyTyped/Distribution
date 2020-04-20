@@ -16,10 +16,8 @@ trait OverrideContextContext extends js.Object
 
 object OverrideContextContext {
   @scala.inline
-  def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = this.cast("bookmark")
+  def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = "bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = this.cast("tab")
+  def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
 }
 

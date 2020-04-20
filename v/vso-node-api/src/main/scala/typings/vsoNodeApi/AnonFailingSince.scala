@@ -13,7 +13,6 @@ object AnonFailingSince {
   @scala.inline
   def apply(failingSince: Double, regular: Double): AnonFailingSince = {
     val __obj = js.Dynamic.literal(failingSince = failingSince.asInstanceOf[js.Any], regular = regular.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFailingSince]
   }
 }

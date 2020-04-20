@@ -13,7 +13,6 @@ object UpdateBaiduChannelResponse {
   @scala.inline
   def apply(BaiduChannelResponse: BaiduChannelResponse): UpdateBaiduChannelResponse = {
     val __obj = js.Dynamic.literal(BaiduChannelResponse = BaiduChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateBaiduChannelResponse]
   }
 }

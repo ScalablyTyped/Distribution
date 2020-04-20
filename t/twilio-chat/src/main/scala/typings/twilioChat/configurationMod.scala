@@ -20,12 +20,12 @@ object configurationMod extends js.Object {
     val typingIndicatorTimeoutOverride: js.UndefOr[Double] = js.native
     val typingIndicatorUri: String = js.native
     val userInfosToSubscribeOverride: js.UndefOr[Double] = js.native
-    def backoffConfigDefault(): js.Any = js.native
-    def consumptionReportIntervalDefault(): String = js.native
-    def httpCacheIntervalDefault(): String = js.native
-    def retryWhenThrottledDefault(): Boolean = js.native
-    def typingIndicatorTimeoutDefault(): Double = js.native
-    def userInfosToSubscribeDefault(): Double = js.native
+    def backoffConfigDefault: js.Any = js.native
+    def consumptionReportIntervalDefault: String = js.native
+    def httpCacheIntervalDefault: String = js.native
+    def retryWhenThrottledDefault: Boolean = js.native
+    def typingIndicatorTimeoutDefault: Double = js.native
+    def userInfosToSubscribeDefault: Double = js.native
   }
   
 }

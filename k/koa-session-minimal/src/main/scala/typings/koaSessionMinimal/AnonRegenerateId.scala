@@ -12,7 +12,6 @@ object AnonRegenerateId {
   @scala.inline
   def apply(regenerateId: () => Unit): AnonRegenerateId = {
     val __obj = js.Dynamic.literal(regenerateId = js.Any.fromFunction0(regenerateId))
-  
     __obj.asInstanceOf[AnonRegenerateId]
   }
 }

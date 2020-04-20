@@ -27,28 +27,28 @@ class MicroflowParameterMapping protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMicroflowParameterMapping: IModel = js.native
-  def containerAsMicroflowSettings(): MicroflowSettings = js.native
-  def parameter(): IMicroflowParameter = js.native
+  def containerAsMicroflowSettings: MicroflowSettings = js.native
+  def parameter: IMicroflowParameter = js.native
   def parameter(newValue: IMicroflowParameter): js.Any = js.native
-  def parameterQualifiedName(): String = js.native
+  def parameterQualifiedName: String = js.native
   /**
     * In version 8.4.0: deleted
     */
-  def useAllPages(): Boolean = js.native
+  def useAllPages: Boolean = js.native
   def useAllPages(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.4.0: introduced
     */
-  def variable(): PageVariable = js.native
+  def variable: PageVariable = js.native
   def variable(newValue: PageVariable): js.Any = js.native
   def widget(): js.Any = js.native
   def widget(newValue: EntityWidget): js.Any = js.native
-  def widgetLocalName(): String | Null = js.native
+  def widgetLocalName: String | Null = js.native
   /**
     * In version 8.4.0: deleted
     */
   @JSName("widget")
-  def widget_Union(): EntityWidget | Null = js.native
+  def widget_Union: EntityWidget | Null = js.native
 }
 
 /* static members */

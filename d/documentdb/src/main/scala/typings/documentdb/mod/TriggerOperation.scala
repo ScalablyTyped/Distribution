@@ -25,26 +25,24 @@ trait TriggerOperation extends js.Object
 
 object TriggerOperation {
   @scala.inline
-  def All: typings.documentdb.documentdbStrings.All = this.cast("All")
+  def All: typings.documentdb.documentdbStrings.All = "All".asInstanceOf[typings.documentdb.documentdbStrings.All]
   @scala.inline
-  def Create: typings.documentdb.documentdbStrings.Create = this.cast("Create")
+  def Create: typings.documentdb.documentdbStrings.Create = "Create".asInstanceOf[typings.documentdb.documentdbStrings.Create]
   @scala.inline
-  def Delete: typings.documentdb.documentdbStrings.Delete = this.cast("Delete")
+  def Delete: typings.documentdb.documentdbStrings.Delete = "Delete".asInstanceOf[typings.documentdb.documentdbStrings.Delete]
   @scala.inline
-  def Replace: typings.documentdb.documentdbStrings.Replace = this.cast("Replace")
+  def Replace: typings.documentdb.documentdbStrings.Replace = "Replace".asInstanceOf[typings.documentdb.documentdbStrings.Replace]
   @scala.inline
-  def Update: typings.documentdb.documentdbStrings.Update = this.cast("Update")
+  def Update: typings.documentdb.documentdbStrings.Update = "Update".asInstanceOf[typings.documentdb.documentdbStrings.Update]
   @scala.inline
-  def all: all_ = this.cast("all")
+  def all: all_ = "all".asInstanceOf[all_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def create: create_ = "create".asInstanceOf[create_]
   @scala.inline
-  def create: create_ = this.cast("create")
+  def delete: delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def delete: delete_ = this.cast("delete")
+  def replace: replace_ = "replace".asInstanceOf[replace_]
   @scala.inline
-  def replace: replace_ = this.cast("replace")
-  @scala.inline
-  def update: update_ = this.cast("update")
+  def update: update_ = "update".asInstanceOf[update_]
 }
 

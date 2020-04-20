@@ -21,7 +21,6 @@ object Typeofnetworking {
   @scala.inline
   def apply(config: Typeofconfig): Typeofnetworking = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofnetworking]
   }
 }

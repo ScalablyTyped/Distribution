@@ -20,7 +20,6 @@ object AssociateSigninDelegateGroupsWithAccountRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, SigninDelegateGroups: SigninDelegateGroupList): AssociateSigninDelegateGroupsWithAccountRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], SigninDelegateGroups = SigninDelegateGroups.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateSigninDelegateGroupsWithAccountRequest]
   }
 }

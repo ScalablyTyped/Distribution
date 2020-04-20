@@ -13,7 +13,6 @@ object AnonBorderBottom {
   @scala.inline
   def apply(borderBottom: String, textDecoration: String): AnonBorderBottom = {
     val __obj = js.Dynamic.literal(borderBottom = borderBottom.asInstanceOf[js.Any], textDecoration = textDecoration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderBottom]
   }
 }

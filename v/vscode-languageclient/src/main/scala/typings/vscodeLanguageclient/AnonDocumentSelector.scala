@@ -13,7 +13,6 @@ object AnonDocumentSelector {
   @scala.inline
   def apply(documentSelector: DocumentSelector): AnonDocumentSelector = {
     val __obj = js.Dynamic.literal(documentSelector = documentSelector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDocumentSelector]
   }
 }

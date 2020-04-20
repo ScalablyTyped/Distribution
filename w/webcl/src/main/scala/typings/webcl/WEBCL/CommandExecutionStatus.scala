@@ -19,14 +19,12 @@ trait CommandExecutionStatus extends js.Object
 
 object CommandExecutionStatus {
   @scala.inline
-  def COMPLETE: `0x0` = this.cast(0x0)
+  def COMPLETE: `0x0` = 0x0.asInstanceOf[`0x0`]
   @scala.inline
-  def QUEUED: `0x3` = this.cast(0x3)
+  def QUEUED: `0x3` = 0x3.asInstanceOf[`0x3`]
   @scala.inline
-  def RUNNING: `0x1` = this.cast(0x1)
+  def RUNNING: `0x1` = 0x1.asInstanceOf[`0x1`]
   @scala.inline
-  def SUBMITTED: `0x2` = this.cast(0x2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SUBMITTED: `0x2` = 0x2.asInstanceOf[`0x2`]
 }
 

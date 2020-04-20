@@ -20,7 +20,6 @@ object IScriptSnapshot {
     getTextChangeRangeSinceVersion: Double => TextChangeRange
   ): IScriptSnapshot = {
     val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), getLineStartPositions = js.Any.fromFunction0(getLineStartPositions), getText = js.Any.fromFunction2(getText), getTextChangeRangeSinceVersion = js.Any.fromFunction1(getTextChangeRangeSinceVersion))
-  
     __obj.asInstanceOf[IScriptSnapshot]
   }
 }

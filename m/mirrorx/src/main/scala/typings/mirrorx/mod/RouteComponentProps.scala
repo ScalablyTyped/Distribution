@@ -1,5 +1,6 @@
 package typings.mirrorx.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.history.mod.LocationState
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait RouteComponentProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof Params ]:? string}
-  */ typings.mirrorx.mirrorxStrings.RouteComponentProps with js.Any */] extends js.Object {
+  */ typings.mirrorx.mirrorxStrings.RouteComponentProps with TopLevel[js.Any] */] extends js.Object {
   var history: History[LocationState]
   var location: Location[LocationState]
   var `match`: typings.reactRouter.mod.`match`[Params]
@@ -21,7 +22,7 @@ object RouteComponentProps {
   @scala.inline
   def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.mirrorx.mirrorxStrings.RouteComponentProps with js.Any */](
+    */ typings.mirrorx.mirrorxStrings.RouteComponentProps with TopLevel[js.Any] */](
     history: History[LocationState],
     location: Location[LocationState],
     `match`: `match`[Params],

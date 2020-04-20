@@ -66,7 +66,6 @@ object simpleFetch {
     fetchHandler: (js.Array[_], js.Object) => Unit
   ): simpleFetch = {
     val __obj = js.Dynamic.literal(errorHandler = js.Any.fromFunction2(errorHandler), fetch = js.Any.fromFunction1(fetch), fetchHandler = js.Any.fromFunction2(fetchHandler))
-  
     __obj.asInstanceOf[simpleFetch]
   }
 }

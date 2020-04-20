@@ -20,7 +20,6 @@ object ModifyLoadBalancerAttributesInput {
   @scala.inline
   def apply(Attributes: LoadBalancerAttributes, LoadBalancerArn: LoadBalancerArn): ModifyLoadBalancerAttributesInput = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], LoadBalancerArn = LoadBalancerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyLoadBalancerAttributesInput]
   }
 }

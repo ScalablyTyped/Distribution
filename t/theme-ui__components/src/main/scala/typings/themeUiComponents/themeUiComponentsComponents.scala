@@ -51,96 +51,66 @@ import scala.scalajs.js.annotation._
 
 object themeUiComponentsComponents extends themeUiComponentsProps {
   @scala.inline
-  def Alert: ComponentType[PropsWithoutRef[AlertProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Alert.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.AlertProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
+  def Alert: ComponentType[PropsWithoutRef[AlertProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Alert.asInstanceOf[ComponentType[PropsWithoutRef[AlertProps] with RefAttributes[HTMLDivElement]]]
   @scala.inline
-  def AspectImage: ComponentType[PropsWithoutRef[AspectImageProps] with RefAttributes[HTMLImageElement]] = typings.themeUiComponents.mod.AspectImage.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.AspectImageProps] with typings.react.mod.RefAttributes[typings.std.HTMLImageElement]]]
+  def AspectImage: ComponentType[PropsWithoutRef[AspectImageProps] with RefAttributes[HTMLImageElement]] = typings.themeUiComponents.mod.AspectImage.asInstanceOf[ComponentType[PropsWithoutRef[AspectImageProps] with RefAttributes[HTMLImageElement]]]
   @scala.inline
-  def AspectRatio: ComponentType[PropsWithoutRef[AspectRatioProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.AspectRatio.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.AspectRatioProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
+  def AspectRatio: ComponentType[PropsWithoutRef[AspectRatioProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.AspectRatio.asInstanceOf[ComponentType[PropsWithoutRef[AspectRatioProps] with RefAttributes[HTMLDivElement]]]
   @scala.inline
-  def Avatar: ComponentType[PropsWithoutRef[AvatarProps] with RefAttributes[HTMLImageElement]] = typings.themeUiComponents.mod.Avatar.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.AvatarProps] with typings.react.mod.RefAttributes[typings.std.HTMLImageElement]]]
+  def Avatar: ComponentType[PropsWithoutRef[AvatarProps] with RefAttributes[HTMLImageElement]] = typings.themeUiComponents.mod.Avatar.asInstanceOf[ComponentType[PropsWithoutRef[AvatarProps] with RefAttributes[HTMLImageElement]]]
   @scala.inline
-  def Badge: ComponentType[PropsWithoutRef[BadgeProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Badge.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.BadgeProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
+  def Badge: ComponentType[PropsWithoutRef[BadgeProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Badge.asInstanceOf[ComponentType[PropsWithoutRef[BadgeProps] with RefAttributes[HTMLDivElement]]]
   @scala.inline
-  def Button: ComponentType[PropsWithoutRef[ButtonProps] with RefAttributes[HTMLButtonElement]] = typings.themeUiComponents.mod.Button.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.ButtonProps] with typings.react.mod.RefAttributes[typings.std.HTMLButtonElement]]]
+  def Button: ComponentType[PropsWithoutRef[ButtonProps] with RefAttributes[HTMLButtonElement]] = typings.themeUiComponents.mod.Button.asInstanceOf[ComponentType[PropsWithoutRef[ButtonProps] with RefAttributes[HTMLButtonElement]]]
   @scala.inline
-  def Card: ComponentType[PropsWithoutRef[CardProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Card.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.CardProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
+  def Card: ComponentType[PropsWithoutRef[CardProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Card.asInstanceOf[ComponentType[PropsWithoutRef[CardProps] with RefAttributes[HTMLDivElement]]]
   @scala.inline
-  def Checkbox: ComponentType[PropsWithoutRef[CheckboxProps] with RefAttributes[HTMLInputElement]] = typings.themeUiComponents.mod.Checkbox.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.CheckboxProps] with typings.react.mod.RefAttributes[typings.std.HTMLInputElement]]]
+  def Checkbox: ComponentType[PropsWithoutRef[CheckboxProps] with RefAttributes[HTMLInputElement]] = typings.themeUiComponents.mod.Checkbox.asInstanceOf[ComponentType[PropsWithoutRef[CheckboxProps] with RefAttributes[HTMLInputElement]]]
   @scala.inline
-  def Close: ComponentType[PropsWithoutRef[CloseProps] with RefAttributes[HTMLButtonElement]] = typings.themeUiComponents.mod.Close.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.CloseProps] with typings.react.mod.RefAttributes[typings.std.HTMLButtonElement]]]
+  def Close: ComponentType[PropsWithoutRef[CloseProps] with RefAttributes[HTMLButtonElement]] = typings.themeUiComponents.mod.Close.asInstanceOf[ComponentType[PropsWithoutRef[CloseProps] with RefAttributes[HTMLButtonElement]]]
   @scala.inline
-  def Container: ComponentType[PropsWithoutRef[ContainerProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Container.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.ContainerProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
+  def Container: ComponentType[PropsWithoutRef[ContainerProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Container.asInstanceOf[ComponentType[PropsWithoutRef[ContainerProps] with RefAttributes[HTMLDivElement]]]
   @scala.inline
-  def Divider: ComponentType[PropsWithoutRef[DividerProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Divider.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.DividerProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
+  def Divider: ComponentType[PropsWithoutRef[DividerProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Divider.asInstanceOf[ComponentType[PropsWithoutRef[DividerProps] with RefAttributes[HTMLDivElement]]]
   @scala.inline
-  def Donut: ComponentType[PropsWithoutRef[DonutProps] with RefAttributes[SVGSVGElement]] = typings.themeUiComponents.mod.Donut.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.DonutProps] with typings.react.mod.RefAttributes[typings.std.SVGSVGElement]]]
+  def Donut: ComponentType[PropsWithoutRef[DonutProps] with RefAttributes[SVGSVGElement]] = typings.themeUiComponents.mod.Donut.asInstanceOf[ComponentType[PropsWithoutRef[DonutProps] with RefAttributes[SVGSVGElement]]]
   @scala.inline
-  def Embed: ComponentType[PropsWithoutRef[EmbedProps] with RefAttributes[HTMLIFrameElement]] = typings.themeUiComponents.mod.Embed.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.EmbedProps] with typings.react.mod.RefAttributes[typings.std.HTMLIFrameElement]]]
+  def Embed: ComponentType[PropsWithoutRef[EmbedProps] with RefAttributes[HTMLIFrameElement]] = typings.themeUiComponents.mod.Embed.asInstanceOf[ComponentType[PropsWithoutRef[EmbedProps] with RefAttributes[HTMLIFrameElement]]]
   @scala.inline
-  def Field[T /* <: ElementType[js.Any] */]: ComponentType[FieldProps[T]] = typings.themeUiComponents.mod.Field.asInstanceOf[typings.react.mod.ComponentType[FieldProps[T]]]
+  def Field[T /* <: ElementType[js.Any] */]: ComponentType[FieldProps[T]] = typings.themeUiComponents.mod.Field.asInstanceOf[ComponentType[FieldProps[T]]]
   @scala.inline
-  def Grid: ComponentType[PropsWithoutRef[GridProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Grid.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.GridProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
+  def Grid: ComponentType[PropsWithoutRef[GridProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Grid.asInstanceOf[ComponentType[PropsWithoutRef[GridProps] with RefAttributes[HTMLDivElement]]]
   @scala.inline
-  def Heading: ComponentType[PropsWithoutRef[HeadingProps] with RefAttributes[HTMLHeadingElement]] = typings.themeUiComponents.mod.Heading.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.HeadingProps] with typings.react.mod.RefAttributes[typings.std.HTMLHeadingElement]]]
+  def Heading: ComponentType[PropsWithoutRef[HeadingProps] with RefAttributes[HTMLHeadingElement]] = typings.themeUiComponents.mod.Heading.asInstanceOf[ComponentType[PropsWithoutRef[HeadingProps] with RefAttributes[HTMLHeadingElement]]]
   @scala.inline
-  def IconButton: ComponentType[PropsWithoutRef[BoxProps] with RefAttributes[HTMLButtonElement]] = typings.themeUiComponents.mod.IconButton.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.BoxProps] with typings.react.mod.RefAttributes[typings.std.HTMLButtonElement]]]
+  def IconButton: ComponentType[PropsWithoutRef[BoxProps] with RefAttributes[HTMLButtonElement]] = typings.themeUiComponents.mod.IconButton.asInstanceOf[ComponentType[PropsWithoutRef[BoxProps] with RefAttributes[HTMLButtonElement]]]
   @scala.inline
-  def Image: ComponentType[PropsWithoutRef[ImageProps] with RefAttributes[HTMLImageElement]] = typings.themeUiComponents.mod.Image.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.ImageProps] with typings.react.mod.RefAttributes[typings.std.HTMLImageElement]]]
+  def Image: ComponentType[PropsWithoutRef[ImageProps] with RefAttributes[HTMLImageElement]] = typings.themeUiComponents.mod.Image.asInstanceOf[ComponentType[PropsWithoutRef[ImageProps] with RefAttributes[HTMLImageElement]]]
   @scala.inline
-  def Input: ComponentType[PropsWithoutRef[InputProps] with RefAttributes[HTMLInputElement]] = typings.themeUiComponents.mod.Input.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.InputProps] with typings.react.mod.RefAttributes[typings.std.HTMLInputElement]]]
+  def Input: ComponentType[PropsWithoutRef[InputProps] with RefAttributes[HTMLInputElement]] = typings.themeUiComponents.mod.Input.asInstanceOf[ComponentType[PropsWithoutRef[InputProps] with RefAttributes[HTMLInputElement]]]
   @scala.inline
-  def Label: ComponentType[PropsWithoutRef[LabelProps] with RefAttributes[HTMLLabelElement]] = typings.themeUiComponents.mod.Label.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.LabelProps] with typings.react.mod.RefAttributes[typings.std.HTMLLabelElement]]]
+  def Label: ComponentType[PropsWithoutRef[LabelProps] with RefAttributes[HTMLLabelElement]] = typings.themeUiComponents.mod.Label.asInstanceOf[ComponentType[PropsWithoutRef[LabelProps] with RefAttributes[HTMLLabelElement]]]
   @scala.inline
-  def Link: ComponentType[PropsWithoutRef[LinkProps] with RefAttributes[HTMLAnchorElement]] = typings.themeUiComponents.mod.Link.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.LinkProps] with typings.react.mod.RefAttributes[typings.std.HTMLAnchorElement]]]
+  def Link: ComponentType[PropsWithoutRef[LinkProps] with RefAttributes[HTMLAnchorElement]] = typings.themeUiComponents.mod.Link.asInstanceOf[ComponentType[PropsWithoutRef[LinkProps] with RefAttributes[HTMLAnchorElement]]]
   @scala.inline
-  def MenuButton: ComponentType[PropsWithoutRef[MenuButtonProps] with RefAttributes[HTMLButtonElement]] = typings.themeUiComponents.mod.MenuButton.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.MenuButtonProps] with typings.react.mod.RefAttributes[typings.std.HTMLButtonElement]]]
+  def MenuButton: ComponentType[PropsWithoutRef[MenuButtonProps] with RefAttributes[HTMLButtonElement]] = typings.themeUiComponents.mod.MenuButton.asInstanceOf[ComponentType[PropsWithoutRef[MenuButtonProps] with RefAttributes[HTMLButtonElement]]]
   @scala.inline
-  def Message: ComponentType[PropsWithoutRef[MessageProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Message.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.MessageProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
+  def Message: ComponentType[PropsWithoutRef[MessageProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Message.asInstanceOf[ComponentType[PropsWithoutRef[MessageProps] with RefAttributes[HTMLDivElement]]]
   @scala.inline
-  def NavLink: ComponentType[PropsWithoutRef[NavLinkProps] with RefAttributes[HTMLAnchorElement]] = typings.themeUiComponents.mod.NavLink.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.NavLinkProps] with typings.react.mod.RefAttributes[typings.std.HTMLAnchorElement]]]
+  def NavLink: ComponentType[PropsWithoutRef[NavLinkProps] with RefAttributes[HTMLAnchorElement]] = typings.themeUiComponents.mod.NavLink.asInstanceOf[ComponentType[PropsWithoutRef[NavLinkProps] with RefAttributes[HTMLAnchorElement]]]
   @scala.inline
-  def Progress: ComponentType[PropsWithoutRef[ProgressProps] with RefAttributes[HTMLProgressElement]] = typings.themeUiComponents.mod.Progress.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.ProgressProps] with typings.react.mod.RefAttributes[typings.std.HTMLProgressElement]]]
+  def Progress: ComponentType[PropsWithoutRef[ProgressProps] with RefAttributes[HTMLProgressElement]] = typings.themeUiComponents.mod.Progress.asInstanceOf[ComponentType[PropsWithoutRef[ProgressProps] with RefAttributes[HTMLProgressElement]]]
   @scala.inline
-  def Radio: ComponentType[PropsWithoutRef[RadioProps] with RefAttributes[HTMLInputElement]] = typings.themeUiComponents.mod.Radio.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.RadioProps] with typings.react.mod.RefAttributes[typings.std.HTMLInputElement]]]
+  def Radio: ComponentType[PropsWithoutRef[RadioProps] with RefAttributes[HTMLInputElement]] = typings.themeUiComponents.mod.Radio.asInstanceOf[ComponentType[PropsWithoutRef[RadioProps] with RefAttributes[HTMLInputElement]]]
   @scala.inline
-  def Select: ComponentType[PropsWithoutRef[SelectProps] with RefAttributes[HTMLSelectElement]] = typings.themeUiComponents.mod.Select.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.SelectProps] with typings.react.mod.RefAttributes[typings.std.HTMLSelectElement]]]
+  def Select: ComponentType[PropsWithoutRef[SelectProps] with RefAttributes[HTMLSelectElement]] = typings.themeUiComponents.mod.Select.asInstanceOf[ComponentType[PropsWithoutRef[SelectProps] with RefAttributes[HTMLSelectElement]]]
   @scala.inline
-  def Slider: ComponentType[PropsWithoutRef[SliderProps] with RefAttributes[HTMLInputElement]] = typings.themeUiComponents.mod.Slider.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.SliderProps] with typings.react.mod.RefAttributes[typings.std.HTMLInputElement]]]
+  def Slider: ComponentType[PropsWithoutRef[SliderProps] with RefAttributes[HTMLInputElement]] = typings.themeUiComponents.mod.Slider.asInstanceOf[ComponentType[PropsWithoutRef[SliderProps] with RefAttributes[HTMLInputElement]]]
   @scala.inline
-  def Spinner: ComponentType[PropsWithoutRef[SpinnerProps] with RefAttributes[SVGSVGElement]] = typings.themeUiComponents.mod.Spinner.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.SpinnerProps] with typings.react.mod.RefAttributes[typings.std.SVGSVGElement]]]
+  def Spinner: ComponentType[PropsWithoutRef[SpinnerProps] with RefAttributes[SVGSVGElement]] = typings.themeUiComponents.mod.Spinner.asInstanceOf[ComponentType[PropsWithoutRef[SpinnerProps] with RefAttributes[SVGSVGElement]]]
   @scala.inline
-  def Text: ComponentType[PropsWithoutRef[BoxProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Text.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.BoxProps] with typings.react.mod.RefAttributes[typings.std.HTMLDivElement]]]
+  def Text: ComponentType[PropsWithoutRef[BoxProps] with RefAttributes[HTMLDivElement]] = typings.themeUiComponents.mod.Text.asInstanceOf[ComponentType[PropsWithoutRef[BoxProps] with RefAttributes[HTMLDivElement]]]
   @scala.inline
-  def Textarea: ComponentType[PropsWithoutRef[TextareaProps] with RefAttributes[HTMLTextAreaElement]] = typings.themeUiComponents.mod.Textarea.asInstanceOf[typings.react.mod.ComponentType[
-  typings.react.mod.PropsWithoutRef[typings.themeUiComponents.mod.TextareaProps] with typings.react.mod.RefAttributes[typings.std.HTMLTextAreaElement]]]
+  def Textarea: ComponentType[PropsWithoutRef[TextareaProps] with RefAttributes[HTMLTextAreaElement]] = typings.themeUiComponents.mod.Textarea.asInstanceOf[ComponentType[PropsWithoutRef[TextareaProps] with RefAttributes[HTMLTextAreaElement]]]
 }
 

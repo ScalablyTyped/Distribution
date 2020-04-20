@@ -64,13 +64,13 @@ object firebaseAppMod extends js.Object {
     def _removeServiceInstance(name: String): Unit = js.native
     def _removeServiceInstance(name: String, instanceIdentifier: String): Unit = js.native
     @JSName("automaticDataCollectionEnabled")
-    def automaticDataCollectionEnabled_MFirebaseAppImpl(): Boolean = js.native
+    def automaticDataCollectionEnabled_MFirebaseAppImpl: Boolean = js.native
     @JSName("automaticDataCollectionEnabled")
     def automaticDataCollectionEnabled_MFirebaseAppImpl(`val`: Boolean): js.Any = js.native
     @JSName("name")
-    def name_MFirebaseAppImpl(): String = js.native
+    def name_MFirebaseAppImpl: String = js.native
     @JSName("options")
-    def options_MFirebaseAppImpl(): FirebaseOptions = js.native
+    def options_MFirebaseAppImpl: FirebaseOptions = js.native
   }
   
 }

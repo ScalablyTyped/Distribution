@@ -18,16 +18,14 @@ trait ExceptionType extends js.Object
 
 object ExceptionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def multipleResolves: typings.logProcessErrors.logProcessErrorsStrings.multipleResolves = "multipleResolves".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.multipleResolves]
   @scala.inline
-  def multipleResolves: typings.logProcessErrors.logProcessErrorsStrings.multipleResolves = this.cast("multipleResolves")
+  def rejectionHandled: typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled = "rejectionHandled".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled]
   @scala.inline
-  def rejectionHandled: typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled = this.cast("rejectionHandled")
+  def uncaughtException: typings.logProcessErrors.logProcessErrorsStrings.uncaughtException = "uncaughtException".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.uncaughtException]
   @scala.inline
-  def uncaughtException: typings.logProcessErrors.logProcessErrorsStrings.uncaughtException = this.cast("uncaughtException")
+  def unhandledRejection: typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection = "unhandledRejection".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection]
   @scala.inline
-  def unhandledRejection: typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection = this.cast("unhandledRejection")
-  @scala.inline
-  def warning: typings.logProcessErrors.logProcessErrorsStrings.warning = this.cast("warning")
+  def warning: typings.logProcessErrors.logProcessErrorsStrings.warning = "warning".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.warning]
 }
 

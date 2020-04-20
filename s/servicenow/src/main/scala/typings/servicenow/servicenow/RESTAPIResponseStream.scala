@@ -13,7 +13,6 @@ object RESTAPIResponseStream {
   @scala.inline
   def apply(writeStream: js.Object => Unit, writeString: String => Unit): RESTAPIResponseStream = {
     val __obj = js.Dynamic.literal(writeStream = js.Any.fromFunction1(writeStream), writeString = js.Any.fromFunction1(writeString))
-  
     __obj.asInstanceOf[RESTAPIResponseStream]
   }
 }

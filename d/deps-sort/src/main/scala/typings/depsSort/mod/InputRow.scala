@@ -26,7 +26,6 @@ object InputRow {
   @scala.inline
   def apply(deps: js.Array[String], id: String, source: String): InputRow = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputRow]
   }
 }

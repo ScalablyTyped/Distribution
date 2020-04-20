@@ -24,7 +24,6 @@ object AdminForgetDeviceRequest {
   @scala.inline
   def apply(DeviceKey: DeviceKeyType, UserPoolId: UserPoolIdType, Username: UsernameType): AdminForgetDeviceRequest = {
     val __obj = js.Dynamic.literal(DeviceKey = DeviceKey.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdminForgetDeviceRequest]
   }
 }

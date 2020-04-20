@@ -24,7 +24,6 @@ object AnonMinuteStep {
     use12Hours: Boolean
   ): AnonMinuteStep = {
     val __obj = js.Dynamic.literal(minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], pickerPrefixCls = pickerPrefixCls.asInstanceOf[js.Any], popupPrefixCls = popupPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], use12Hours = use12Hours.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMinuteStep]
   }
 }

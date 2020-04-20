@@ -15,7 +15,6 @@ object Settings {
   @scala.inline
   def apply(kafka: KafkaSettings, schema: SchemaSettings): Settings = {
     val __obj = js.Dynamic.literal(kafka = kafka.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Settings]
   }
 }

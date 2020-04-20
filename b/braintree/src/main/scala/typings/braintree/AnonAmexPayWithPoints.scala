@@ -14,7 +14,6 @@ object AnonAmexPayWithPoints {
   @scala.inline
   def apply(AmexPayWithPoints: AnonIneligibleCard, CardTypeIndicators: AnonDebit, Dispute: AnonChargeback): AnonAmexPayWithPoints = {
     val __obj = js.Dynamic.literal(AmexPayWithPoints = AmexPayWithPoints.asInstanceOf[js.Any], CardTypeIndicators = CardTypeIndicators.asInstanceOf[js.Any], Dispute = Dispute.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAmexPayWithPoints]
   }
 }

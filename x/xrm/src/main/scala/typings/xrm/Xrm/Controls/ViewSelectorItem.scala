@@ -21,7 +21,6 @@ object ViewSelectorItem {
   @scala.inline
   def apply(getEntityReference: () => LookupValue): ViewSelectorItem = {
     val __obj = js.Dynamic.literal(getEntityReference = js.Any.fromFunction0(getEntityReference))
-  
     __obj.asInstanceOf[ViewSelectorItem]
   }
 }

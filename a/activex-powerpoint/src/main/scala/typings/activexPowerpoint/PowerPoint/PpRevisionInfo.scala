@@ -16,12 +16,10 @@ trait PpRevisionInfo extends js.Object
 
 object PpRevisionInfo {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppRevisionInfoBaseline: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppRevisionInfoBaseline: `1` = this.cast(1)
+  def ppRevisionInfoMerged: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppRevisionInfoMerged: `2` = this.cast(2)
-  @scala.inline
-  def ppRevisionInfoNone: `0` = this.cast(0)
+  def ppRevisionInfoNone: `0` = 0.asInstanceOf[`0`]
 }
 

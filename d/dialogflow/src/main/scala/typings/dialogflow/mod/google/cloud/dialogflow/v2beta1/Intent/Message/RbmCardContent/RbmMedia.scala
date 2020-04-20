@@ -25,7 +25,7 @@ class RbmMedia () extends IRbmMedia {
   var fileUri_RbmMedia: String = js.native
   /** RbmMedia height. */
   @JSName("height")
-  var height_RbmMedia: Height | String = js.native
+  var height_RbmMedia: Height | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height * / any */ String) = js.native
   /** RbmMedia thumbnailUri. */
   @JSName("thumbnailUri")
   var thumbnailUri_RbmMedia: String = js.native

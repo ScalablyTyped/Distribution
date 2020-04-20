@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait webscopeioReactTextareaAutocompleteProps {
   @scala.inline
-  def ReactTextareaAutocompleteProps: TextareaProps.type = typings.webscopeioReactTextareaAutocomplete.mod.TextareaProps
+  def ReactTextareaAutocompleteProps: TextareaProps.type = TextareaProps
   type ReactTextareaAutocompleteProps[TItem] = TextareaProps[TItem]
 }
 

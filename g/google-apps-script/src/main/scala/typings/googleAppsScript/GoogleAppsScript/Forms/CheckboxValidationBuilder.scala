@@ -36,7 +36,6 @@ object CheckboxValidationBuilder {
     requireSelectExactly: Integer => CheckboxValidationBuilder
   ): CheckboxValidationBuilder = {
     val __obj = js.Dynamic.literal(requireSelectAtLeast = js.Any.fromFunction1(requireSelectAtLeast), requireSelectAtMost = js.Any.fromFunction1(requireSelectAtMost), requireSelectExactly = js.Any.fromFunction1(requireSelectExactly))
-  
     __obj.asInstanceOf[CheckboxValidationBuilder]
   }
 }

@@ -18,14 +18,12 @@ trait styleRubyPosition extends js.Object
 
 object styleRubyPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleRubyPositionAbove: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleRubyPositionAbove: `1` = this.cast(1)
+  def styleRubyPositionInline: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleRubyPositionInline: `2` = this.cast(2)
+  def styleRubyPositionNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleRubyPositionNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleRubyPosition_Max: `2147483647` = this.cast(2147483647)
+  def styleRubyPosition_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

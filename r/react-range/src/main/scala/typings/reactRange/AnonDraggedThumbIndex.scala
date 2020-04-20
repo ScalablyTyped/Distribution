@@ -14,7 +14,6 @@ object AnonDraggedThumbIndex {
   @scala.inline
   def apply(draggedThumbIndex: Double, isChanged: Boolean, thumbZIndexes: js.Array[Double]): AnonDraggedThumbIndex = {
     val __obj = js.Dynamic.literal(draggedThumbIndex = draggedThumbIndex.asInstanceOf[js.Any], isChanged = isChanged.asInstanceOf[js.Any], thumbZIndexes = thumbZIndexes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDraggedThumbIndex]
   }
 }

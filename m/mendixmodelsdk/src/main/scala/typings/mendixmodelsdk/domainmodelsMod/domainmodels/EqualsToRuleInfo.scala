@@ -24,12 +24,12 @@ class EqualsToRuleInfo protected () extends RuleInfo {
   var model_FEqualsToRuleInfo: IModel = js.native
   def equalsToAttribute(): js.Any = js.native
   def equalsToAttribute(newValue: IAttribute): js.Any = js.native
-  def equalsToAttributeQualifiedName(): String | Null = js.native
+  def equalsToAttributeQualifiedName: String | Null = js.native
   @JSName("equalsToAttribute")
-  def equalsToAttribute_Union(): IAttribute | Null = js.native
-  def equalsToValue(): String = js.native
+  def equalsToAttribute_Union: IAttribute | Null = js.native
+  def equalsToValue: String = js.native
   def equalsToValue(newValue: String): js.Any = js.native
-  def useValue(): Boolean = js.native
+  def useValue: Boolean = js.native
   def useValue(newValue: Boolean): js.Any = js.native
 }
 

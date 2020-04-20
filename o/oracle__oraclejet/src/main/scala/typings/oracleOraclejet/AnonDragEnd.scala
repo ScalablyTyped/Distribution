@@ -25,7 +25,6 @@ object AnonDragEnd {
     selector: String
   ): AnonDragEnd = {
     val __obj = js.Dynamic.literal(dataTypes = dataTypes.asInstanceOf[js.Any], drag = js.Any.fromFunction1(drag), dragEnd = js.Any.fromFunction1(dragEnd), dragStart = js.Any.fromFunction2(dragStart), linkStyle = js.Any.fromFunction1(linkStyle), selector = selector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDragEnd]
   }
 }

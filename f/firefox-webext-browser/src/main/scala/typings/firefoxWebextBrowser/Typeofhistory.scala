@@ -54,7 +54,6 @@ object Typeofhistory {
     search: AnonEndTime => js.Promise[js.Array[HistoryItem]]
   ): Typeofhistory = {
     val __obj = js.Dynamic.literal(addUrl = js.Any.fromFunction1(addUrl), deleteAll = js.Any.fromFunction0(deleteAll), deleteRange = js.Any.fromFunction1(deleteRange), deleteUrl = js.Any.fromFunction1(deleteUrl), getVisits = js.Any.fromFunction1(getVisits), onTitleChanged = onTitleChanged.asInstanceOf[js.Any], onVisitRemoved = onVisitRemoved.asInstanceOf[js.Any], onVisited = onVisited.asInstanceOf[js.Any], search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[Typeofhistory]
   }
 }

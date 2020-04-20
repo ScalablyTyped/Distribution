@@ -13,7 +13,6 @@ object ImageRemoveInfo {
   @scala.inline
   def apply(Deleted: String, Untagged: String): ImageRemoveInfo = {
     val __obj = js.Dynamic.literal(Deleted = Deleted.asInstanceOf[js.Any], Untagged = Untagged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageRemoveInfo]
   }
 }

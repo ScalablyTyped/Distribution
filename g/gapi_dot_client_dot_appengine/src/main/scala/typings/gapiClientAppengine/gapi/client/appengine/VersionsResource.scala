@@ -60,7 +60,6 @@ object VersionsResource {
     patch: AnonServicesId => Request_[Operation]
   ): VersionsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), instances = instances.asInstanceOf[js.Any], list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
-  
     __obj.asInstanceOf[VersionsResource]
   }
 }

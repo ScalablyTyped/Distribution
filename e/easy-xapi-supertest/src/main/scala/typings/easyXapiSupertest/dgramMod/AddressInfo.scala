@@ -14,7 +14,6 @@ object AddressInfo {
   @scala.inline
   def apply(address: String, family: String, port: Double): AddressInfo = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddressInfo]
   }
 }

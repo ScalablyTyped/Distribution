@@ -32,7 +32,6 @@ object INxDerivedGroup {
   @scala.inline
   def apply(qFieldDefs: js.Array[String], qGrouping: NxGrpType, qId: String, qName: String): INxDerivedGroup = {
     val __obj = js.Dynamic.literal(qFieldDefs = qFieldDefs.asInstanceOf[js.Any], qGrouping = qGrouping.asInstanceOf[js.Any], qId = qId.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxDerivedGroup]
   }
 }

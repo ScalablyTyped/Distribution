@@ -16,7 +16,6 @@ object TaskList {
   @scala.inline
   def apply(name: Name): TaskList = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskList]
   }
 }

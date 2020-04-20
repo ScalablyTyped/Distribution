@@ -19,24 +19,22 @@ trait Overflow extends js.Object
 
 object Overflow {
   @scala.inline
-  def auto: typings.baseui.baseuiStrings.auto = this.cast("auto")
+  def auto: typings.baseui.baseuiStrings.auto = "auto".asInstanceOf[typings.baseui.baseuiStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hidden: typings.baseui.baseuiStrings.hidden = "hidden".asInstanceOf[typings.baseui.baseuiStrings.hidden]
   @scala.inline
-  def hidden: typings.baseui.baseuiStrings.hidden = this.cast("hidden")
+  def inherit: typings.baseui.baseuiStrings.inherit = "inherit".asInstanceOf[typings.baseui.baseuiStrings.inherit]
   @scala.inline
-  def inherit: typings.baseui.baseuiStrings.inherit = this.cast("inherit")
+  def initial: typings.baseui.baseuiStrings.initial = "initial".asInstanceOf[typings.baseui.baseuiStrings.initial]
   @scala.inline
-  def initial: typings.baseui.baseuiStrings.initial = this.cast("initial")
+  def scroll: typings.baseui.baseuiStrings.scroll = "scroll".asInstanceOf[typings.baseui.baseuiStrings.scroll]
   @scala.inline
-  def scroll: typings.baseui.baseuiStrings.scroll = this.cast("scroll")
+  def scrollX: typings.baseui.baseuiStrings.scrollX = "scrollX".asInstanceOf[typings.baseui.baseuiStrings.scrollX]
   @scala.inline
-  def scrollX: typings.baseui.baseuiStrings.scrollX = this.cast("scrollX")
+  def scrollY: typings.baseui.baseuiStrings.scrollY = "scrollY".asInstanceOf[typings.baseui.baseuiStrings.scrollY]
   @scala.inline
-  def scrollY: typings.baseui.baseuiStrings.scrollY = this.cast("scrollY")
+  def unset: typings.baseui.baseuiStrings.unset = "unset".asInstanceOf[typings.baseui.baseuiStrings.unset]
   @scala.inline
-  def unset: typings.baseui.baseuiStrings.unset = this.cast("unset")
-  @scala.inline
-  def visible: typings.baseui.baseuiStrings.visible = this.cast("visible")
+  def visible: typings.baseui.baseuiStrings.visible = "visible".asInstanceOf[typings.baseui.baseuiStrings.visible]
 }
 

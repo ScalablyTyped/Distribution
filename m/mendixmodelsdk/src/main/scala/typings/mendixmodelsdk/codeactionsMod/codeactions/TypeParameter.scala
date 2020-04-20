@@ -45,11 +45,11 @@ class TypeParameter protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
-  def containerAsCodeAction(): CodeAction = js.native
-  def name(): String = js.native
+  def containerAsCodeAction: CodeAction = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MTypeParameter(): String | Null = js.native
+  def qualifiedName_MTypeParameter: String | Null = js.native
 }
 
 /* static members */

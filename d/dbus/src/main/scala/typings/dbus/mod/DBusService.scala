@@ -18,7 +18,6 @@ object DBusService {
     removeObject: DBusServiceObject => Unit
   ): DBusService = {
     val __obj = js.Dynamic.literal(createObject = js.Any.fromFunction1(createObject), disconnect = js.Any.fromFunction0(disconnect), removeObject = js.Any.fromFunction1(removeObject))
-  
     __obj.asInstanceOf[DBusService]
   }
 }

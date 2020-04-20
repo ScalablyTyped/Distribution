@@ -18,7 +18,6 @@ object AnonEnableCustomConstraints {
   @scala.inline
   def apply(enableCustomConstraints: Boolean): AnonEnableCustomConstraints = {
     val __obj = js.Dynamic.literal(enableCustomConstraints = enableCustomConstraints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnableCustomConstraints]
   }
 }

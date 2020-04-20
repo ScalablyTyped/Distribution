@@ -12,7 +12,6 @@ object SavedFeedResponseItemsItem {
   @scala.inline
   def apply(media: SavedFeedResponseMedia): SavedFeedResponseItemsItem = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SavedFeedResponseItemsItem]
   }
 }

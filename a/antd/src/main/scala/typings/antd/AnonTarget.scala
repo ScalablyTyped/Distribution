@@ -17,7 +17,6 @@ object AnonTarget {
     target: () => (Window_ with (/* import warning: importer.ImportType#apply Failed type conversion: typeof globalThis */ js.Any)) | Null
   ): AnonTarget = {
     val __obj = js.Dynamic.literal(target = js.Any.fromFunction0(target))
-  
     __obj.asInstanceOf[AnonTarget]
   }
 }

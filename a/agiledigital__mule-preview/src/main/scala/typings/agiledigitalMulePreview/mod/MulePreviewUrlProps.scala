@@ -13,7 +13,6 @@ object MulePreviewUrlProps {
   @scala.inline
   def apply(contentRoot: String, contentUrl: String): MulePreviewUrlProps = {
     val __obj = js.Dynamic.literal(contentRoot = contentRoot.asInstanceOf[js.Any], contentUrl = contentUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MulePreviewUrlProps]
   }
 }

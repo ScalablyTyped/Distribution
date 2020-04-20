@@ -36,7 +36,6 @@ object AnonDENIEDALWAYS {
     RESTRICTED: restricted
   ): AnonDENIEDALWAYS = {
     val __obj = js.Dynamic.literal(DENIED_ALWAYS = DENIED_ALWAYS.asInstanceOf[js.Any], DENIED_ONCE = DENIED_ONCE.asInstanceOf[js.Any], GRANTED = GRANTED.asInstanceOf[js.Any], GRANTED_WHEN_IN_USE = GRANTED_WHEN_IN_USE.asInstanceOf[js.Any], NOT_REQUESTED = NOT_REQUESTED.asInstanceOf[js.Any], RESTRICTED = RESTRICTED.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDENIEDALWAYS]
   }
 }

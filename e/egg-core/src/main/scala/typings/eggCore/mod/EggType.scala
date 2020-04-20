@@ -12,10 +12,8 @@ trait EggType extends js.Object
 
 object EggType {
   @scala.inline
-  def agent: typings.eggCore.eggCoreStrings.agent = this.cast("agent")
+  def agent: typings.eggCore.eggCoreStrings.agent = "agent".asInstanceOf[typings.eggCore.eggCoreStrings.agent]
   @scala.inline
-  def application: typings.eggCore.eggCoreStrings.application = this.cast("application")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def application: typings.eggCore.eggCoreStrings.application = "application".asInstanceOf[typings.eggCore.eggCoreStrings.application]
 }
 

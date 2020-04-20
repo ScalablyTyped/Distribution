@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 object igCheckpointErrorMod extends js.Object {
   @js.native
   class IgCheckpointError () extends IgResponseError[CheckpointResponse] {
-    def apiUrl(): String = js.native
-    def url(): String = js.native
+    def apiUrl: String = js.native
+    def url: String = js.native
   }
   
 }

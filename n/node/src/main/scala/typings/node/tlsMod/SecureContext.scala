@@ -12,7 +12,6 @@ object SecureContext {
   @scala.inline
   def apply(context: js.Any): SecureContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecureContext]
   }
 }

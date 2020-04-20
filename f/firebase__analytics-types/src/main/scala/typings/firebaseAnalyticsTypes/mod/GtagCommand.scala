@@ -13,12 +13,10 @@ trait GtagCommand extends js.Object
 
 object GtagCommand {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def config: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.config = "config".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.config]
   @scala.inline
-  def config: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.config = this.cast("config")
+  def event: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.event = "event".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.event]
   @scala.inline
-  def event: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.event = this.cast("event")
-  @scala.inline
-  def set: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set = this.cast("set")
+  def set: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set = "set".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set]
 }
 

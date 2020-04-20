@@ -20,7 +20,6 @@ object TagQueueRequest {
   @scala.inline
   def apply(QueueUrl: String, Tags: TagMap): TagQueueRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagQueueRequest]
   }
 }

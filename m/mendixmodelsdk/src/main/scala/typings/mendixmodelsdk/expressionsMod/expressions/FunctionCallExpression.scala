@@ -60,8 +60,8 @@ class FunctionCallExpression protected () extends Expression {
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  def arguments(): IList[Expression] = js.native
-  def functionName(): String = js.native
+  def arguments: IList[Expression] = js.native
+  def functionName: String = js.native
   def functionName(newValue: String): js.Any = js.native
 }
 

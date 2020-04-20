@@ -15,7 +15,6 @@ object PointLike {
   @scala.inline
   def apply(column: Double, row: Double): PointLike = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PointLike]
   }
 }

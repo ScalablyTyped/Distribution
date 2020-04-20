@@ -20,7 +20,6 @@ object IRouteSubLeg {
   @scala.inline
   def apply(actualEnd: Location, actualStart: Location, endDescription: String, startDescription: String): IRouteSubLeg = {
     val __obj = js.Dynamic.literal(actualEnd = actualEnd.asInstanceOf[js.Any], actualStart = actualStart.asInstanceOf[js.Any], endDescription = endDescription.asInstanceOf[js.Any], startDescription = startDescription.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRouteSubLeg]
   }
 }

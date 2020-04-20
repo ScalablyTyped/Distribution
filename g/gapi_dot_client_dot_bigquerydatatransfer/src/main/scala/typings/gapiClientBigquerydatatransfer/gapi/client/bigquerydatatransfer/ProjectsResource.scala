@@ -18,7 +18,6 @@ object ProjectsResource {
     transferConfigs: TransferConfigsResource
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(dataSources = dataSources.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], transferConfigs = transferConfigs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

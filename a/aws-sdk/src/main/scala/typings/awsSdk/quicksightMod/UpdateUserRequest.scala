@@ -38,7 +38,6 @@ object UpdateUserRequest {
     UserName: UserName_
   ): UpdateUserRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateUserRequest]
   }
 }

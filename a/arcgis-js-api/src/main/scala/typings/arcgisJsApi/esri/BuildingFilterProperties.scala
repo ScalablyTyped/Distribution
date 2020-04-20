@@ -13,7 +13,6 @@ trait BuildingFilterProperties extends js.Object {
   var description: js.UndefOr[String] = js.undefined
   /**
     * Filter blocks define which features should be visible in the affected [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) and how the filtered features are drawn. A filter should contain at least one filter block.  The order of filter blocks influences the order in which the filter blocks are applied. For example, if a filter block using a `wire-frame` mode precedes a `solid` filter block in the collection, elements that match either filter block will be drawn as wireframe.
-    * > **Known Limitations**  Filter blocks with a `wire-frame` filter mode are currently not rendered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
     */

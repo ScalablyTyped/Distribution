@@ -29,7 +29,6 @@ object IFutureStateProvider {
     stateFactory: (String, IFutureStateFactory) => Unit
   ): IFutureStateProvider = {
     val __obj = js.Dynamic.literal(addResolve = js.Any.fromFunction1(addResolve), futureState = js.Any.fromFunction1(futureState), stateFactory = js.Any.fromFunction2(stateFactory))
-  
     __obj.asInstanceOf[IFutureStateProvider]
   }
 }

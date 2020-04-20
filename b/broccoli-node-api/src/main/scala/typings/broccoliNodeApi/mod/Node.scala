@@ -13,10 +13,8 @@ trait Node extends js.Object
 
 object Node {
   @scala.inline
-  def __broccoliFeatures__ : typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliFeatures__ = this.cast("__broccoliFeatures__")
+  def __broccoliFeatures__ : typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliFeatures__ = "__broccoliFeatures__".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliFeatures__]
   @scala.inline
-  def __broccoliGetInfo__ : typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliGetInfo__ = this.cast("__broccoliGetInfo__")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def __broccoliGetInfo__ : typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliGetInfo__ = "__broccoliGetInfo__".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliGetInfo__]
 }
 

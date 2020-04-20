@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait rcSwipeoutProps {
   @scala.inline
-  def IndexDotnativeProps: IPropTypes.type = typings.rcSwipeout.propTypesMod.IPropTypes
+  def IndexDotnativeProps: IPropTypes.type = IPropTypes
   type IndexDotnativeProps = IPropTypes
   @scala.inline
-  def RcSwipeoutProps: IPropTypes.type = typings.rcSwipeout.propTypesMod.IPropTypes
+  def RcSwipeoutProps: IPropTypes.type = IPropTypes
   type RcSwipeoutProps = IPropTypes
   @scala.inline
-  def SwipeoutProps: IPropTypes.type = typings.rcSwipeout.propTypesMod.IPropTypes
+  def SwipeoutProps: IPropTypes.type = IPropTypes
   type SwipeoutProps = IPropTypes
   @scala.inline
-  def SwipeoutDotnativeProps: IPropTypes.type = typings.rcSwipeout.propTypesMod.IPropTypes
+  def SwipeoutDotnativeProps: IPropTypes.type = IPropTypes
   type SwipeoutDotnativeProps = IPropTypes
 }
 

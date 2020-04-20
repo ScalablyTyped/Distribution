@@ -18,22 +18,20 @@ trait AutomatedBrowsers extends js.Object
 
 object AutomatedBrowsers {
   @scala.inline
-  def Chrome: typings.karma.karmaStrings.Chrome = this.cast("Chrome")
+  def Chrome: typings.karma.karmaStrings.Chrome = "Chrome".asInstanceOf[typings.karma.karmaStrings.Chrome]
   @scala.inline
-  def ChromeCanary: typings.karma.karmaStrings.ChromeCanary = this.cast("ChromeCanary")
+  def ChromeCanary: typings.karma.karmaStrings.ChromeCanary = "ChromeCanary".asInstanceOf[typings.karma.karmaStrings.ChromeCanary]
   @scala.inline
-  def ChromeHeadless: typings.karma.karmaStrings.ChromeHeadless = this.cast("ChromeHeadless")
+  def ChromeHeadless: typings.karma.karmaStrings.ChromeHeadless = "ChromeHeadless".asInstanceOf[typings.karma.karmaStrings.ChromeHeadless]
   @scala.inline
-  def Firefox: typings.karma.karmaStrings.Firefox = this.cast("Firefox")
+  def Firefox: typings.karma.karmaStrings.Firefox = "Firefox".asInstanceOf[typings.karma.karmaStrings.Firefox]
   @scala.inline
-  def IE: typings.karma.karmaStrings.IE = this.cast("IE")
+  def IE: typings.karma.karmaStrings.IE = "IE".asInstanceOf[typings.karma.karmaStrings.IE]
   @scala.inline
-  def Opera: typings.karma.karmaStrings.Opera = this.cast("Opera")
+  def Opera: typings.karma.karmaStrings.Opera = "Opera".asInstanceOf[typings.karma.karmaStrings.Opera]
   @scala.inline
-  def PhantomJS: typings.karma.karmaStrings.PhantomJS = this.cast("PhantomJS")
+  def PhantomJS: typings.karma.karmaStrings.PhantomJS = "PhantomJS".asInstanceOf[typings.karma.karmaStrings.PhantomJS]
   @scala.inline
-  def Safari: typings.karma.karmaStrings.Safari = this.cast("Safari")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Safari: typings.karma.karmaStrings.Safari = "Safari".asInstanceOf[typings.karma.karmaStrings.Safari]
 }
 

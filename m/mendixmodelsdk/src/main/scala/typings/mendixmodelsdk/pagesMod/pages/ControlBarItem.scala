@@ -23,9 +23,9 @@ abstract class ControlBarItem protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FControlBarItem: IModel = js.native
-  def containerAsControlBar(): ControlBar = js.native
-  def containerAsGridControlBar(): GridControlBar = js.native
-  def name(): String = js.native
+  def containerAsControlBar: ControlBar = js.native
+  def containerAsGridControlBar: GridControlBar = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
 }
 

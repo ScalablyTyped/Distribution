@@ -13,7 +13,6 @@ object MUIDataTableTextLabelsViewColumns {
   @scala.inline
   def apply(title: String, titleAria: String): MUIDataTableTextLabelsViewColumns = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], titleAria = titleAria.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MUIDataTableTextLabelsViewColumns]
   }
 }

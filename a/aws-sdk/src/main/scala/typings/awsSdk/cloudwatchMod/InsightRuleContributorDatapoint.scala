@@ -20,7 +20,6 @@ object InsightRuleContributorDatapoint {
   @scala.inline
   def apply(ApproximateValue: InsightRuleUnboundDouble, Timestamp: Timestamp): InsightRuleContributorDatapoint = {
     val __obj = js.Dynamic.literal(ApproximateValue = ApproximateValue.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightRuleContributorDatapoint]
   }
 }

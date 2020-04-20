@@ -13,7 +13,6 @@ object PickImplconfig {
   @scala.inline
   def apply(config: js.Any): PickImplconfig = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplconfig]
   }
 }

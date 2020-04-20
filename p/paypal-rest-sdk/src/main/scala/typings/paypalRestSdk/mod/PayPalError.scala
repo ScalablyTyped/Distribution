@@ -22,7 +22,6 @@ object PayPalError {
     name: String
   ): PayPalError = {
     val __obj = js.Dynamic.literal(debug_id = debug_id.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], information_link = information_link.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PayPalError]
   }
 }

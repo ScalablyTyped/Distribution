@@ -15,7 +15,6 @@ object MenuManager {
   @scala.inline
   def apply(add: js.Array[MenuOptions] => Disposable, update: () => Unit): MenuManager = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), update = js.Any.fromFunction0(update))
-  
     __obj.asInstanceOf[MenuManager]
   }
 }

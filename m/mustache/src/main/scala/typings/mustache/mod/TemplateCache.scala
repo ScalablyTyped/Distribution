@@ -14,7 +14,6 @@ object TemplateCache {
   @scala.inline
   def apply(clear: () => Unit, get: String => js.UndefOr[String], set: (String, String) => Unit): TemplateCache = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[TemplateCache]
   }
 }

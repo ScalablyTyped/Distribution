@@ -15,7 +15,6 @@ object IValidIconStrategy {
   @scala.inline
   def apply(getContainer: IAugmentedJQueryStatic => Unit, invalidIcon: String, validIcon: String): IValidIconStrategy = {
     val __obj = js.Dynamic.literal(getContainer = js.Any.fromFunction1(getContainer), invalidIcon = invalidIcon.asInstanceOf[js.Any], validIcon = validIcon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IValidIconStrategy]
   }
 }

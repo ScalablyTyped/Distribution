@@ -14,10 +14,8 @@ trait XlTextParsingType extends js.Object
 
 object XlTextParsingType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlDelimited: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlDelimited: `1` = this.cast(1)
-  @scala.inline
-  def xlFixedWidth: `2` = this.cast(2)
+  def xlFixedWidth: `2` = 2.asInstanceOf[`2`]
 }
 

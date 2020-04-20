@@ -16,7 +16,6 @@ object DescribeTimeToLiveInput {
   @scala.inline
   def apply(TableName: TableName): DescribeTimeToLiveInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTimeToLiveInput]
   }
 }

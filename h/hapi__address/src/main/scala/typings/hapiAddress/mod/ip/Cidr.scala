@@ -13,12 +13,10 @@ trait Cidr extends js.Object
 
 object Cidr {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def forbidden: typings.hapiAddress.hapiAddressStrings.forbidden = "forbidden".asInstanceOf[typings.hapiAddress.hapiAddressStrings.forbidden]
   @scala.inline
-  def forbidden: typings.hapiAddress.hapiAddressStrings.forbidden = this.cast("forbidden")
+  def optional: typings.hapiAddress.hapiAddressStrings.optional = "optional".asInstanceOf[typings.hapiAddress.hapiAddressStrings.optional]
   @scala.inline
-  def optional: typings.hapiAddress.hapiAddressStrings.optional = this.cast("optional")
-  @scala.inline
-  def required: typings.hapiAddress.hapiAddressStrings.required = this.cast("required")
+  def required: typings.hapiAddress.hapiAddressStrings.required = "required".asInstanceOf[typings.hapiAddress.hapiAddressStrings.required]
 }
 

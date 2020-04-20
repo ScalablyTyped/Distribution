@@ -1,5 +1,6 @@
 package typings.sinon.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sinon.PartialSinonFakeTimersCon
 import typings.std.Date
 import scala.scalajs.js
@@ -45,7 +46,7 @@ trait SinonSandbox extends js.Object {
     constructor: StubbableType[TType],
     overrides: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TType ]:? any}
-    */ typings.sinon.sinonStrings.SinonSandbox with js.Any
+    */ typings.sinon.sinonStrings.SinonSandbox with TopLevel[js.Any]
   ): SinonStubbedInstance[TType] = js.native
   /**
     * Works exactly like sinon.mock
@@ -64,7 +65,7 @@ trait SinonSandbox extends js.Object {
     * replacement can be any value, including spies, stubs and fakes.
     * This method only works on non-accessor properties, for replacing accessors, use sandbox.replaceGetter() and sandbox.replaceSetter().
     */
-  def replace[T, TKey /* <: String */](
+  def replace[T, TKey /* <: /* keyof T */ String */](
     obj: T,
     prop: TKey,
     replacement: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
@@ -76,7 +77,7 @@ trait SinonSandbox extends js.Object {
     * @param prop
     * @param replacement
     */
-  def replaceGetter[T, TKey /* <: String */](
+  def replaceGetter[T, TKey /* <: /* keyof T */ String */](
     obj: T,
     prop: TKey,
     replacement: js.Function0[
@@ -92,7 +93,7 @@ trait SinonSandbox extends js.Object {
     * @param prop
     * @param replacement
     */
-  def replaceSetter[T, TKey /* <: String */](
+  def replaceSetter[T, TKey /* <: /* keyof T */ String */](
     obj: T,
     prop: TKey,
     replacement: js.Function1[
@@ -145,8 +146,8 @@ trait SinonSandbox extends js.Object {
   /**
     * Works exactly like sinon.spy
     */
-  def spy[T](obj: T, method: String): SinonSpy = js.native
-  def spy[T](obj: T, method: String, types: js.Array[String]): SinonSpy = js.native
+  def spy[T](obj: T, method: /* keyof T */ String): SinonSpy = js.native
+  def spy[T](obj: T, method: /* keyof T */ String, types: js.Array[String]): SinonSpy = js.native
   /**
     * Creates an anonymous stub function
     */
@@ -172,7 +173,7 @@ trait SinonSandbox extends js.Object {
   /**
     * Works exactly like sinon.stub.
     */
-  def stub[T](obj: T, method: String): SinonStub = js.native
+  def stub[T](obj: T, method: /* keyof T */ String): SinonStub = js.native
   /**
     * Fakes XHR and binds a server object to the sandbox such that it too is restored when calling sandbox.restore().
     * Access requests through sandbox.requests and server through sandbox.server

@@ -33,7 +33,6 @@ object TypeofShape {
     ]
   ): TypeofShape = {
     val __obj = js.Dynamic.literal(Circle = Circle.asInstanceOf[js.Any], Ellipse = Ellipse.asInstanceOf[js.Any], Rectangle = Rectangle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofShape]
   }
 }

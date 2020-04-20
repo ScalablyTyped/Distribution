@@ -12,10 +12,8 @@ trait CodeTraps extends js.Object
 
 object CodeTraps {
   @scala.inline
-  def all: typings.fridaGum.fridaGumStrings.all = this.cast("all")
+  def all: typings.fridaGum.fridaGumStrings.all = "all".asInstanceOf[typings.fridaGum.fridaGumStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def default: typings.fridaGum.fridaGumStrings.default = this.cast("default")
+  def default: typings.fridaGum.fridaGumStrings.default = "default".asInstanceOf[typings.fridaGum.fridaGumStrings.default]
 }
 

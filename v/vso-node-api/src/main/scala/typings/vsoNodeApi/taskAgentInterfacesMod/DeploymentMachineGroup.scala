@@ -20,7 +20,6 @@ object DeploymentMachineGroup {
     size: Double
   ): DeploymentMachineGroup = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], machines = machines.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentMachineGroup]
   }
 }

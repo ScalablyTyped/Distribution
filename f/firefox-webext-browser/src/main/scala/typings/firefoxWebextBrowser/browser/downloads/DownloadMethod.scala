@@ -13,10 +13,8 @@ trait DownloadMethod extends js.Object
 
 object DownloadMethod {
   @scala.inline
-  def GET: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.GET = this.cast("GET")
+  def GET: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.GET = "GET".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.GET]
   @scala.inline
-  def POST: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.POST = this.cast("POST")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def POST: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.POST = "POST".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.POST]
 }
 

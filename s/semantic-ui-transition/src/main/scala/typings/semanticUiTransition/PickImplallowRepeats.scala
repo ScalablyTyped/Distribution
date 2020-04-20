@@ -13,7 +13,6 @@ object PickImplallowRepeats {
   @scala.inline
   def apply(allowRepeats: Boolean): PickImplallowRepeats = {
     val __obj = js.Dynamic.literal(allowRepeats = allowRepeats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplallowRepeats]
   }
 }

@@ -16,7 +16,6 @@ object DescribeTunnelRequest {
   @scala.inline
   def apply(tunnelId: TunnelId): DescribeTunnelRequest = {
     val __obj = js.Dynamic.literal(tunnelId = tunnelId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTunnelRequest]
   }
 }

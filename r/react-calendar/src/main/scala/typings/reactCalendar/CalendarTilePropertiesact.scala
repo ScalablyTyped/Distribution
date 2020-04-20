@@ -17,7 +17,6 @@ object CalendarTilePropertiesact {
   @scala.inline
   def apply(activeStartDate: Date, date: Date, view: Detail): CalendarTilePropertiesact = {
     val __obj = js.Dynamic.literal(activeStartDate = activeStartDate.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CalendarTilePropertiesact]
   }
 }

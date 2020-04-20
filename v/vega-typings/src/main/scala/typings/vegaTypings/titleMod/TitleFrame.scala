@@ -12,10 +12,8 @@ trait TitleFrame extends js.Object
 
 object TitleFrame {
   @scala.inline
-  def bounds: typings.vegaTypings.vegaTypingsStrings.bounds = this.cast("bounds")
+  def bounds: typings.vegaTypings.vegaTypingsStrings.bounds = "bounds".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bounds]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def group: typings.vegaTypings.vegaTypingsStrings.group = this.cast("group")
+  def group: typings.vegaTypings.vegaTypingsStrings.group = "group".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.group]
 }
 

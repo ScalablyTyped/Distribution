@@ -44,7 +44,6 @@ object Typeofruntime {
     onRestarted: Event[js.Function0[Unit]]
   ): Typeofruntime = {
     val __obj = js.Dynamic.literal(ActionType = ActionType.asInstanceOf[js.Any], LaunchSource = LaunchSource.asInstanceOf[js.Any], PlayStoreStatus = PlayStoreStatus.asInstanceOf[js.Any], onEmbedRequested = onEmbedRequested.asInstanceOf[js.Any], onLaunched = onLaunched.asInstanceOf[js.Any], onRestarted = onRestarted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofruntime]
   }
 }

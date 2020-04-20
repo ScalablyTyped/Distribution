@@ -15,7 +15,6 @@ object IdleParam {
   @scala.inline
   def apply(oldstate: buffering | playing | paused): IdleParam = {
     val __obj = js.Dynamic.literal(oldstate = oldstate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdleParam]
   }
 }

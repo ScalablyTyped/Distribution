@@ -14,7 +14,6 @@ object EventMap {
   @scala.inline
   def apply(complete: Event_[complete, js.UndefOr[scala.Nothing]]): EventMap = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventMap]
   }
 }

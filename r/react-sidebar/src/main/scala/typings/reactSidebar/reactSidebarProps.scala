@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactSidebarProps {
   @scala.inline
-  def ReactSidebarProps: SidebarProps.type = typings.reactSidebar.mod.SidebarProps
+  def ReactSidebarProps: SidebarProps.type = SidebarProps
   type ReactSidebarProps = SidebarProps
 }
 

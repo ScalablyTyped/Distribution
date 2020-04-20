@@ -12,7 +12,6 @@ object OutputWriterArgs {
   @scala.inline
   def apply(dependencies: js.Array[Dependency]): OutputWriterArgs = {
     val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OutputWriterArgs]
   }
 }

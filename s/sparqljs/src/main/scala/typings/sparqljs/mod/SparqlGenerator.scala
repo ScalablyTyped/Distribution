@@ -12,7 +12,6 @@ object SparqlGenerator {
   @scala.inline
   def apply(stringify: SparqlQuery => String): SparqlGenerator = {
     val __obj = js.Dynamic.literal(stringify = js.Any.fromFunction1(stringify))
-  
     __obj.asInstanceOf[SparqlGenerator]
   }
 }

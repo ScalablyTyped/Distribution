@@ -16,7 +16,6 @@ object RedisClient {
   @scala.inline
   def apply(publish: (String, String) => js.Promise[_]): RedisClient = {
     val __obj = js.Dynamic.literal(publish = js.Any.fromFunction2(publish))
-  
     __obj.asInstanceOf[RedisClient]
   }
 }

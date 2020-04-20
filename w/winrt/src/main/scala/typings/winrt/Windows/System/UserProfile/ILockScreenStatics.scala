@@ -24,7 +24,6 @@ object ILockScreenStatics {
     setImageStreamAsync: IRandomAccessStream => IAsyncAction
   ): ILockScreenStatics = {
     val __obj = js.Dynamic.literal(getImageStream = js.Any.fromFunction0(getImageStream), originalImageFile = originalImageFile.asInstanceOf[js.Any], setImageFileAsync = js.Any.fromFunction1(setImageFileAsync), setImageStreamAsync = js.Any.fromFunction1(setImageStreamAsync))
-  
     __obj.asInstanceOf[ILockScreenStatics]
   }
 }

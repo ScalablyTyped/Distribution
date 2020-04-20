@@ -16,12 +16,10 @@ trait WdPortugueseReform extends js.Object
 
 object WdPortugueseReform {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdPortugueseBoth: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdPortugueseBoth: `3` = this.cast(3)
+  def wdPortuguesePostReform: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPortuguesePostReform: `2` = this.cast(2)
-  @scala.inline
-  def wdPortuguesePreReform: `1` = this.cast(1)
+  def wdPortuguesePreReform: `1` = 1.asInstanceOf[`1`]
 }
 

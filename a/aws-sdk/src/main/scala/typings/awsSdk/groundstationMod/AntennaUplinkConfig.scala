@@ -20,7 +20,6 @@ object AntennaUplinkConfig {
   @scala.inline
   def apply(spectrumConfig: UplinkSpectrumConfig, targetEirp: Eirp): AntennaUplinkConfig = {
     val __obj = js.Dynamic.literal(spectrumConfig = spectrumConfig.asInstanceOf[js.Any], targetEirp = targetEirp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AntennaUplinkConfig]
   }
 }

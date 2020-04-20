@@ -20,7 +20,6 @@ object ScriptingParamDetails {
     targetDatabaseEngineType: String
   ): ScriptingParamDetails = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], scriptCompatibilityOption = scriptCompatibilityOption.asInstanceOf[js.Any], targetDatabaseEngineEdition = targetDatabaseEngineEdition.asInstanceOf[js.Any], targetDatabaseEngineType = targetDatabaseEngineType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScriptingParamDetails]
   }
 }

@@ -41,68 +41,66 @@ trait EasingMode extends js.Object
 
 object EasingMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def easeInBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBack = "easeInBack".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBack]
   @scala.inline
-  def easeInBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBack = this.cast("easeInBack")
+  def easeInBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBounce = "easeInBounce".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBounce]
   @scala.inline
-  def easeInBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBounce = this.cast("easeInBounce")
+  def easeInCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCirc = "easeInCirc".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCirc]
   @scala.inline
-  def easeInCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCirc = this.cast("easeInCirc")
+  def easeInCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCubic]
   @scala.inline
-  def easeInCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCubic = this.cast("easeInCubic")
+  def easeInElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInElastic = "easeInElastic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInElastic]
   @scala.inline
-  def easeInElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInElastic = this.cast("easeInElastic")
+  def easeInExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInExpo = "easeInExpo".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInExpo]
   @scala.inline
-  def easeInExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInExpo = this.cast("easeInExpo")
+  def easeInOutBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBack = "easeInOutBack".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBack]
   @scala.inline
-  def easeInOutBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBack = this.cast("easeInOutBack")
+  def easeInOutBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBounce = "easeInOutBounce".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBounce]
   @scala.inline
-  def easeInOutBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBounce = this.cast("easeInOutBounce")
+  def easeInOutCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCirc = "easeInOutCirc".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCirc]
   @scala.inline
-  def easeInOutCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCirc = this.cast("easeInOutCirc")
+  def easeInOutCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCubic]
   @scala.inline
-  def easeInOutCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCubic = this.cast("easeInOutCubic")
+  def easeInOutElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutElastic = "easeInOutElastic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutElastic]
   @scala.inline
-  def easeInOutElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutElastic = this.cast("easeInOutElastic")
+  def easeInOutExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutExpo = "easeInOutExpo".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutExpo]
   @scala.inline
-  def easeInOutExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutExpo = this.cast("easeInOutExpo")
+  def easeInOutQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuad]
   @scala.inline
-  def easeInOutQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuad = this.cast("easeInOutQuad")
+  def easeInOutQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuart]
   @scala.inline
-  def easeInOutQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuart = this.cast("easeInOutQuart")
+  def easeInOutQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuint]
   @scala.inline
-  def easeInOutQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuint = this.cast("easeInOutQuint")
+  def easeInOutSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutSine = "easeInOutSine".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutSine]
   @scala.inline
-  def easeInOutSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutSine = this.cast("easeInOutSine")
+  def easeInQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuad]
   @scala.inline
-  def easeInQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuad = this.cast("easeInQuad")
+  def easeInQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuart]
   @scala.inline
-  def easeInQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuart = this.cast("easeInQuart")
+  def easeInQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuint]
   @scala.inline
-  def easeInQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuint = this.cast("easeInQuint")
+  def easeInSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInSine = "easeInSine".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInSine]
   @scala.inline
-  def easeInSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInSine = this.cast("easeInSine")
+  def easeOutBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBack = "easeOutBack".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBack]
   @scala.inline
-  def easeOutBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBack = this.cast("easeOutBack")
+  def easeOutBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBounce = "easeOutBounce".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBounce]
   @scala.inline
-  def easeOutBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBounce = this.cast("easeOutBounce")
+  def easeOutCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCirc = "easeOutCirc".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCirc]
   @scala.inline
-  def easeOutCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCirc = this.cast("easeOutCirc")
+  def easeOutCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCubic]
   @scala.inline
-  def easeOutCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCubic = this.cast("easeOutCubic")
+  def easeOutElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutElastic = "easeOutElastic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutElastic]
   @scala.inline
-  def easeOutElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutElastic = this.cast("easeOutElastic")
+  def easeOutExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutExpo = "easeOutExpo".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutExpo]
   @scala.inline
-  def easeOutExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutExpo = this.cast("easeOutExpo")
+  def easeOutQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuad]
   @scala.inline
-  def easeOutQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuad = this.cast("easeOutQuad")
+  def easeOutQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuart]
   @scala.inline
-  def easeOutQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuart = this.cast("easeOutQuart")
+  def easeOutQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuint]
   @scala.inline
-  def easeOutQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuint = this.cast("easeOutQuint")
+  def easeOutSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutSine = "easeOutSine".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutSine]
   @scala.inline
-  def easeOutSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutSine = this.cast("easeOutSine")
-  @scala.inline
-  def linear: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.linear = this.cast("linear")
+  def linear: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.linear = "linear".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.linear]
 }
 

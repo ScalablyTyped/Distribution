@@ -16,18 +16,16 @@ trait RoundingMode extends js.Object
 
 object RoundingMode {
   @scala.inline
-  def HALF_AWAY_FROM_ZERO: typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO = this.cast("HALF_AWAY_FROM_ZERO")
+  def HALF_AWAY_FROM_ZERO: typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO = "HALF_AWAY_FROM_ZERO".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_AWAY_FROM_ZERO]
   @scala.inline
-  def HALF_DOWN: typings.dineroJs.dineroJsStrings.HALF_DOWN = this.cast("HALF_DOWN")
+  def HALF_DOWN: typings.dineroJs.dineroJsStrings.HALF_DOWN = "HALF_DOWN".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_DOWN]
   @scala.inline
-  def HALF_EVEN: typings.dineroJs.dineroJsStrings.HALF_EVEN = this.cast("HALF_EVEN")
+  def HALF_EVEN: typings.dineroJs.dineroJsStrings.HALF_EVEN = "HALF_EVEN".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_EVEN]
   @scala.inline
-  def HALF_ODD: typings.dineroJs.dineroJsStrings.HALF_ODD = this.cast("HALF_ODD")
+  def HALF_ODD: typings.dineroJs.dineroJsStrings.HALF_ODD = "HALF_ODD".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_ODD]
   @scala.inline
-  def HALF_TOWARDS_ZERO: typings.dineroJs.dineroJsStrings.HALF_TOWARDS_ZERO = this.cast("HALF_TOWARDS_ZERO")
+  def HALF_TOWARDS_ZERO: typings.dineroJs.dineroJsStrings.HALF_TOWARDS_ZERO = "HALF_TOWARDS_ZERO".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_TOWARDS_ZERO]
   @scala.inline
-  def HALF_UP: typings.dineroJs.dineroJsStrings.HALF_UP = this.cast("HALF_UP")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HALF_UP: typings.dineroJs.dineroJsStrings.HALF_UP = "HALF_UP".asInstanceOf[typings.dineroJs.dineroJsStrings.HALF_UP]
 }
 

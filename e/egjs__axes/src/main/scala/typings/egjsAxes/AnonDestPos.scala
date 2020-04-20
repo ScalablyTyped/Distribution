@@ -14,7 +14,6 @@ object AnonDestPos {
   @scala.inline
   def apply(destPos: Axis, duration: Double): AnonDestPos = {
     val __obj = js.Dynamic.literal(destPos = destPos.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDestPos]
   }
 }

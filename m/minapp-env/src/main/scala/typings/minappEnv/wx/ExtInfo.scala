@@ -13,7 +13,6 @@ object ExtInfo {
   @scala.inline
   def apply(extConfig: js.Object): ExtInfo = {
     val __obj = js.Dynamic.literal(extConfig = extConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtInfo]
   }
 }

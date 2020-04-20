@@ -16,7 +16,6 @@ object GetReportDefinitionArgs {
   @scala.inline
   def apply(reportName: String): GetReportDefinitionArgs = {
     val __obj = js.Dynamic.literal(reportName = reportName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetReportDefinitionArgs]
   }
 }

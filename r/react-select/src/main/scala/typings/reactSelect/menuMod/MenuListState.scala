@@ -18,7 +18,6 @@ object MenuListState {
   @scala.inline
   def apply(isMulti: Boolean, maxHeight: Double): MenuListState = {
     val __obj = js.Dynamic.literal(isMulti = isMulti.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MenuListState]
   }
 }

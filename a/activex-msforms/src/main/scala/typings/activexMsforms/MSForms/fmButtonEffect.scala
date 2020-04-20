@@ -14,10 +14,8 @@ trait fmButtonEffect extends js.Object
 
 object fmButtonEffect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmButtonEffectFlat: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmButtonEffectFlat: `0` = this.cast(0)
-  @scala.inline
-  def fmButtonEffectSunken: `2` = this.cast(2)
+  def fmButtonEffectSunken: `2` = 2.asInstanceOf[`2`]
 }
 

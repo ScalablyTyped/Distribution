@@ -30,7 +30,6 @@ object HistogramIterationValue {
     valueIteratedTo: Double
   ): HistogramIterationValue = {
     val __obj = js.Dynamic.literal(countAddedInThisIterationStep = countAddedInThisIterationStep.asInstanceOf[js.Any], countAtValueIteratedTo = countAtValueIteratedTo.asInstanceOf[js.Any], percentile = percentile.asInstanceOf[js.Any], percentileLevelIteratedTo = percentileLevelIteratedTo.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), totalCountToThisValue = totalCountToThisValue.asInstanceOf[js.Any], totalValueToThisValue = totalValueToThisValue.asInstanceOf[js.Any], valueIteratedFrom = valueIteratedFrom.asInstanceOf[js.Any], valueIteratedTo = valueIteratedTo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HistogramIterationValue]
   }
 }

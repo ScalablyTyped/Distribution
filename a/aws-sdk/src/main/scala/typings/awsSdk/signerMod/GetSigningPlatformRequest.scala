@@ -16,7 +16,6 @@ object GetSigningPlatformRequest {
   @scala.inline
   def apply(platformId: PlatformId): GetSigningPlatformRequest = {
     val __obj = js.Dynamic.literal(platformId = platformId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSigningPlatformRequest]
   }
 }

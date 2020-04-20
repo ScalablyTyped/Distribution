@@ -22,7 +22,6 @@ object ISurveyTriggerOwner {
     setTriggerValue: (String, js.Any, Boolean) => js.Any
   ): ISurveyTriggerOwner = {
     val __obj = js.Dynamic.literal(copyTriggerValue = js.Any.fromFunction2(copyTriggerValue), focusQuestion = js.Any.fromFunction1(focusQuestion), getObjects = js.Any.fromFunction2(getObjects), setCompleted = js.Any.fromFunction0(setCompleted), setTriggerValue = js.Any.fromFunction3(setTriggerValue))
-  
     __obj.asInstanceOf[ISurveyTriggerOwner]
   }
 }

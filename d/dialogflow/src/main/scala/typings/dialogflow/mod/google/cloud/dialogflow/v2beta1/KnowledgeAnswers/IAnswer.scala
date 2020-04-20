@@ -14,7 +14,9 @@ trait IAnswer extends js.Object {
   /** Answer matchConfidence */
   var matchConfidence: js.UndefOr[Double | Null] = js.undefined
   /** Answer matchConfidenceLevel */
-  var matchConfidenceLevel: js.UndefOr[MatchConfidenceLevel | String | Null] = js.undefined
+  var matchConfidenceLevel: js.UndefOr[
+    MatchConfidenceLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel * / any */ String) | Null
+  ] = js.undefined
   /** Answer source */
   var source: js.UndefOr[String | Null] = js.undefined
 }
@@ -25,7 +27,7 @@ object IAnswer {
     answer: String = null,
     faqQuestion: String = null,
     matchConfidence: Int | Double = null,
-    matchConfidenceLevel: MatchConfidenceLevel | String = null,
+    matchConfidenceLevel: MatchConfidenceLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel * / any */ String) = null,
     source: String = null
   ): IAnswer = {
     val __obj = js.Dynamic.literal()

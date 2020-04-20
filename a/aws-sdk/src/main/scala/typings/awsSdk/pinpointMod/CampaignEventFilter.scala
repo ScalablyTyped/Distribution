@@ -20,7 +20,6 @@ object CampaignEventFilter {
   @scala.inline
   def apply(Dimensions: EventDimensions, FilterType: FilterType): CampaignEventFilter = {
     val __obj = js.Dynamic.literal(Dimensions = Dimensions.asInstanceOf[js.Any], FilterType = FilterType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CampaignEventFilter]
   }
 }

@@ -24,7 +24,6 @@ object AnonOnMouseDown {
     onMouseUp: js.Any => Unit
   ): AnonOnMouseDown = {
     val __obj = js.Dynamic.literal(onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseMove = js.Any.fromFunction1(onMouseMove), onMouseOut = js.Any.fromFunction0(onMouseOut), onMouseOver = js.Any.fromFunction0(onMouseOver), onMouseUp = js.Any.fromFunction1(onMouseUp))
-  
     __obj.asInstanceOf[AnonOnMouseDown]
   }
 }

@@ -14,7 +14,6 @@ object AnonQuotaBytes {
   @scala.inline
   def apply(quotaBytes: integer, usageBytes: integer): AnonQuotaBytes = {
     val __obj = js.Dynamic.literal(quotaBytes = quotaBytes.asInstanceOf[js.Any], usageBytes = usageBytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQuotaBytes]
   }
 }

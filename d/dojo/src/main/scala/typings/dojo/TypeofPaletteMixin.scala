@@ -23,7 +23,6 @@ object TypeofPaletteMixin {
   @scala.inline
   def apply(__Dye: Instantiable3[/* alias */ String, /* row */ js.Any, /* col */ js.Any, Dye]): TypeofPaletteMixin = {
     val __obj = js.Dynamic.literal(__Dye = __Dye.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofPaletteMixin]
   }
 }

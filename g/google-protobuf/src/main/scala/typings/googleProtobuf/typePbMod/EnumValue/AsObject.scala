@@ -18,7 +18,6 @@ object AsObject {
     optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]
   ): AsObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], optionsList = optionsList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

@@ -17,7 +17,6 @@ object IVideoCompositorDefinition {
   @scala.inline
   def apply(activatableClassId: String, properties: IPropertySet): IVideoCompositorDefinition = {
     val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IVideoCompositorDefinition]
   }
 }

@@ -26,22 +26,20 @@ trait MsoBarProtection extends js.Object
 
 object MsoBarProtection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBarNoChangeDock: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoBarNoChangeDock: `16` = this.cast(16)
+  def msoBarNoChangeVisible: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoBarNoChangeVisible: `8` = this.cast(8)
+  def msoBarNoCustomize: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoBarNoCustomize: `1` = this.cast(1)
+  def msoBarNoHorizontalDock: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def msoBarNoHorizontalDock: `64` = this.cast(64)
+  def msoBarNoMove: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoBarNoMove: `4` = this.cast(4)
+  def msoBarNoProtection: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoBarNoProtection: `0` = this.cast(0)
+  def msoBarNoResize: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoBarNoResize: `2` = this.cast(2)
-  @scala.inline
-  def msoBarNoVerticalDock: `32` = this.cast(32)
+  def msoBarNoVerticalDock: `32` = 32.asInstanceOf[`32`]
 }
 

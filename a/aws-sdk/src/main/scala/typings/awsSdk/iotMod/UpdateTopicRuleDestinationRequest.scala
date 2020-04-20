@@ -20,7 +20,6 @@ object UpdateTopicRuleDestinationRequest {
   @scala.inline
   def apply(arn: AwsArn, status: TopicRuleDestinationStatus): UpdateTopicRuleDestinationRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTopicRuleDestinationRequest]
   }
 }

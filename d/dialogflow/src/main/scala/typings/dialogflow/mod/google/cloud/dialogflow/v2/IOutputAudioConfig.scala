@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 /** Properties of an OutputAudioConfig. */
 trait IOutputAudioConfig extends js.Object {
   /** OutputAudioConfig audioEncoding */
-  var audioEncoding: js.UndefOr[OutputAudioEncoding | String | Null] = js.undefined
+  var audioEncoding: js.UndefOr[
+    OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.OutputAudioEncoding * / any */ String) | Null
+  ] = js.undefined
   /** OutputAudioConfig sampleRateHertz */
   var sampleRateHertz: js.UndefOr[Double | Null] = js.undefined
   /** OutputAudioConfig synthesizeSpeechConfig */
@@ -17,7 +19,7 @@ trait IOutputAudioConfig extends js.Object {
 object IOutputAudioConfig {
   @scala.inline
   def apply(
-    audioEncoding: OutputAudioEncoding | String = null,
+    audioEncoding: OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.OutputAudioEncoding * / any */ String) = null,
     sampleRateHertz: Int | Double = null,
     synthesizeSpeechConfig: ISynthesizeSpeechConfig = null
   ): IOutputAudioConfig = {

@@ -14,7 +14,6 @@ object ProxyRequest {
   @scala.inline
   def apply(requestKey: String, res: Response): ProxyRequest = {
     val __obj = js.Dynamic.literal(requestKey = requestKey.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProxyRequest]
   }
 }

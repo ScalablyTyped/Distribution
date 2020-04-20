@@ -12,10 +12,8 @@ trait Affinity extends js.Object
 
 object Affinity {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hoist: typings.bagpipes.bagpipesStrings.hoist = "hoist".asInstanceOf[typings.bagpipes.bagpipesStrings.hoist]
   @scala.inline
-  def hoist: typings.bagpipes.bagpipesStrings.hoist = this.cast("hoist")
-  @scala.inline
-  def sink: typings.bagpipes.bagpipesStrings.sink = this.cast("sink")
+  def sink: typings.bagpipes.bagpipesStrings.sink = "sink".asInstanceOf[typings.bagpipes.bagpipesStrings.sink]
 }
 

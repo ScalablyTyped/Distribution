@@ -34,7 +34,7 @@ class DebugLayer protected () extends js.Object {
   /**
     * Observable triggered when a property is changed through the inspector.
     */
-  def onPropertyChangedObservable(): js.Any = js.native
+  def onPropertyChangedObservable: js.Any = js.native
   /**
     * Select a specific entity in the scene explorer and highlight a specific block in that entity property grid
     * @param entity defines the entity to select

@@ -20,7 +20,15 @@ trait AnonControl extends js.Object {
   var icons: js.UndefOr[AnonDownMargin] = js.undefined
   var options: js.UndefOr[AnonContainerText] = js.undefined
   // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/37506
-  var searchInput: js.UndefOr[ReactComponentElement[_, Pick[ComponentProps[_], Exclude[String, key | ref]]]] = js.undefined
+  var searchInput: js.UndefOr[
+    ReactComponentElement[
+      _, 
+      Pick[
+        ComponentProps[_], 
+        Exclude[/* keyof react.react.ComponentProps<any> */ String, key | ref]
+      ]
+    ]
+  ] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
 }
 
@@ -33,7 +41,13 @@ object AnonControl {
     extend: ExtendType = null,
     icons: AnonDownMargin = null,
     options: AnonContainerText = null,
-    searchInput: ReactComponentElement[_, Pick[ComponentProps[_], Exclude[String, key | ref]]] = null,
+    searchInput: ReactComponentElement[
+      _, 
+      Pick[
+        ComponentProps[_], 
+        Exclude[/* keyof react.react.ComponentProps<any> */ String, key | ref]
+      ]
+    ] = null,
     step: Int | Double = null
   ): AnonControl = {
     val __obj = js.Dynamic.literal()

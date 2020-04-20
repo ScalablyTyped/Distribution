@@ -24,7 +24,6 @@ object EventEmitter {
     uploadProgress: ProgressEvent[EventTarget]
   ): EventEmitter = {
     val __obj = js.Dynamic.literal(downloadProgress = downloadProgress.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], uploadProgress = uploadProgress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventEmitter]
   }
 }

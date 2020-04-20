@@ -20,7 +20,6 @@ object ImportKeyPairRequest {
   @scala.inline
   def apply(keyPairName: ResourceName, publicKeyBase64: Base64): ImportKeyPairRequest = {
     val __obj = js.Dynamic.literal(keyPairName = keyPairName.asInstanceOf[js.Any], publicKeyBase64 = publicKeyBase64.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImportKeyPairRequest]
   }
 }

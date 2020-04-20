@@ -20,7 +20,6 @@ object DeleteImagePermissionsRequest {
   @scala.inline
   def apply(Name: Name, SharedAccountId: AwsAccountId): DeleteImagePermissionsRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SharedAccountId = SharedAccountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteImagePermissionsRequest]
   }
 }

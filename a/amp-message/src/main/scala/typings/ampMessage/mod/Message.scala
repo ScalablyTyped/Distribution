@@ -25,7 +25,6 @@ object Message {
     unshift: /* repeated */ Buffer => Double
   ): Message = {
     val __obj = js.Dynamic.literal(inspect = js.Any.fromFunction0(inspect), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), shift = js.Any.fromFunction0(shift), toBuffer = js.Any.fromFunction0(toBuffer), unshift = js.Any.fromFunction1(unshift))
-  
     __obj.asInstanceOf[Message]
   }
 }

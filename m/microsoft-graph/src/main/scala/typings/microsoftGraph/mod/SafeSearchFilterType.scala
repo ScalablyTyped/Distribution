@@ -13,12 +13,10 @@ trait SafeSearchFilterType extends js.Object
 
 object SafeSearchFilterType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def moderate: typings.microsoftGraph.microsoftGraphStrings.moderate = "moderate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.moderate]
   @scala.inline
-  def moderate: typings.microsoftGraph.microsoftGraphStrings.moderate = this.cast("moderate")
+  def strict: typings.microsoftGraph.microsoftGraphStrings.strict = "strict".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.strict]
   @scala.inline
-  def strict: typings.microsoftGraph.microsoftGraphStrings.strict = this.cast("strict")
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }
 

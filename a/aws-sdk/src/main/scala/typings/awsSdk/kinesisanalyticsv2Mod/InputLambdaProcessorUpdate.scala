@@ -16,7 +16,6 @@ object InputLambdaProcessorUpdate {
   @scala.inline
   def apply(ResourceARNUpdate: ResourceARN): InputLambdaProcessorUpdate = {
     val __obj = js.Dynamic.literal(ResourceARNUpdate = ResourceARNUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputLambdaProcessorUpdate]
   }
 }

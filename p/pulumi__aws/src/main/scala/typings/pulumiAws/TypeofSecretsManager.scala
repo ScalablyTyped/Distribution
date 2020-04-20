@@ -13,7 +13,6 @@ object TypeofSecretsManager {
   @scala.inline
   def apply(Types: TypeofSecretsManager): TypeofSecretsManager = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofSecretsManager]
   }
 }

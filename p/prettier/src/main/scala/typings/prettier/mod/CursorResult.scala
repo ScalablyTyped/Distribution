@@ -13,7 +13,6 @@ object CursorResult {
   @scala.inline
   def apply(cursorOffset: Double, formatted: String): CursorResult = {
     val __obj = js.Dynamic.literal(cursorOffset = cursorOffset.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CursorResult]
   }
 }

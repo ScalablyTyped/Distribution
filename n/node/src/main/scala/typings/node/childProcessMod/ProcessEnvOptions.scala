@@ -1,20 +1,20 @@
 package typings.node.childProcessMod
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProcessEnvOptions extends js.Object {
   var cwd: js.UndefOr[String] = js.undefined
-  var env: js.UndefOr[ProcessEnv] = js.undefined
+  var env: js.UndefOr[Dict[String]] = js.undefined
   var gid: js.UndefOr[Double] = js.undefined
   var uid: js.UndefOr[Double] = js.undefined
 }
 
 object ProcessEnvOptions {
   @scala.inline
-  def apply(cwd: String = null, env: ProcessEnv = null, gid: Int | Double = null, uid: Int | Double = null): ProcessEnvOptions = {
+  def apply(cwd: String = null, env: Dict[String] = null, gid: Int | Double = null, uid: Int | Double = null): ProcessEnvOptions = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])

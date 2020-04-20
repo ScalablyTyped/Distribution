@@ -20,7 +20,6 @@ object ProgressToneStop {
   @scala.inline
   def apply(call: Call): ProgressToneStop = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProgressToneStop]
   }
 }

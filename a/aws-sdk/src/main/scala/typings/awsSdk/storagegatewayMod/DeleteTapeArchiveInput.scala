@@ -16,7 +16,6 @@ object DeleteTapeArchiveInput {
   @scala.inline
   def apply(TapeARN: TapeARN): DeleteTapeArchiveInput = {
     val __obj = js.Dynamic.literal(TapeARN = TapeARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTapeArchiveInput]
   }
 }

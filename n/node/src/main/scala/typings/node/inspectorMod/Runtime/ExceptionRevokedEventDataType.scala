@@ -19,7 +19,6 @@ object ExceptionRevokedEventDataType {
   @scala.inline
   def apply(exceptionId: Double, reason: String): ExceptionRevokedEventDataType = {
     val __obj = js.Dynamic.literal(exceptionId = exceptionId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExceptionRevokedEventDataType]
   }
 }

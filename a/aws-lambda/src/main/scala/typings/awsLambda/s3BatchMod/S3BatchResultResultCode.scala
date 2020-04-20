@@ -14,12 +14,10 @@ trait S3BatchResultResultCode extends js.Object
 
 object S3BatchResultResultCode {
   @scala.inline
-  def PermanentFailure: typings.awsLambda.awsLambdaStrings.PermanentFailure = this.cast("PermanentFailure")
+  def PermanentFailure: typings.awsLambda.awsLambdaStrings.PermanentFailure = "PermanentFailure".asInstanceOf[typings.awsLambda.awsLambdaStrings.PermanentFailure]
   @scala.inline
-  def Succeeded: Succeeded_ = this.cast("Succeeded")
+  def Succeeded: Succeeded_ = "Succeeded".asInstanceOf[Succeeded_]
   @scala.inline
-  def TemporaryFailure: typings.awsLambda.awsLambdaStrings.TemporaryFailure = this.cast("TemporaryFailure")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TemporaryFailure: typings.awsLambda.awsLambdaStrings.TemporaryFailure = "TemporaryFailure".asInstanceOf[typings.awsLambda.awsLambdaStrings.TemporaryFailure]
 }
 

@@ -17,7 +17,6 @@ object StaticMapService {
   @scala.inline
   def apply(getStaticImage: StaticMapRequest => MapiRequest): StaticMapService = {
     val __obj = js.Dynamic.literal(getStaticImage = js.Any.fromFunction1(getStaticImage))
-  
     __obj.asInstanceOf[StaticMapService]
   }
 }

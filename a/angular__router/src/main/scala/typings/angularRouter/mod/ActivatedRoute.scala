@@ -26,25 +26,27 @@ class ActivatedRoute () extends js.Object {
   /** An observable of the URL segments matched by this route. */
   var url: Observable_[js.Array[UrlSegment]] = js.native
   /** The children of this route in the router state tree. */
-  def children(): js.Array[ActivatedRoute] = js.native
+  def children: js.Array[ActivatedRoute] = js.native
   /** The first child of this route in the router state tree. */
-  def firstChild(): ActivatedRoute | Null = js.native
-  /** An Observable that contains a map of the required and optional parameters
+  def firstChild: ActivatedRoute | Null = js.native
+  /**
+    * An Observable that contains a map of the required and optional parameters
     * specific to the route.
-    * The map supports retrieving single and multiple values from the same parameter. */
-  def paramMap(): Observable_[ParamMap] = js.native
+    * The map supports retrieving single and multiple values from the same parameter.
+    */
+  def paramMap: Observable_[ParamMap] = js.native
   /** The parent of this route in the router state tree. */
-  def parent(): ActivatedRoute | Null = js.native
+  def parent: ActivatedRoute | Null = js.native
   /** The path from the root of the router state tree to this route. */
-  def pathFromRoot(): js.Array[ActivatedRoute] = js.native
+  def pathFromRoot: js.Array[ActivatedRoute] = js.native
   /**
     * An Observable that contains a map of the query parameters available to all routes.
     * The map supports retrieving single and multiple values from the query parameter.
     */
-  def queryParamMap(): Observable_[ParamMap] = js.native
+  def queryParamMap: Observable_[ParamMap] = js.native
   /** The root of the router state. */
-  def root(): ActivatedRoute = js.native
+  def root: ActivatedRoute = js.native
   /** The configuration used to match this route. */
-  def routeConfig(): Route | Null = js.native
+  def routeConfig: Route | Null = js.native
 }
 

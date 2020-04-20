@@ -13,12 +13,10 @@ trait ExpandableType extends js.Object
 
 object ExpandableType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `false`: typings.rcTable.rcTableBooleans.`false` = false.asInstanceOf[typings.rcTable.rcTableBooleans.`false`]
   @scala.inline
-  def `false`: typings.rcTable.rcTableBooleans.`false` = this.cast(false)
+  def nest: typings.rcTable.rcTableStrings.nest = "nest".asInstanceOf[typings.rcTable.rcTableStrings.nest]
   @scala.inline
-  def nest: typings.rcTable.rcTableStrings.nest = this.cast("nest")
-  @scala.inline
-  def row: typings.rcTable.rcTableStrings.row = this.cast("row")
+  def row: typings.rcTable.rcTableStrings.row = "row".asInstanceOf[typings.rcTable.rcTableStrings.row]
 }
 

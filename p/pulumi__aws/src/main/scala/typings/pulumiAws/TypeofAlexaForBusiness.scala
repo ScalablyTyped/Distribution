@@ -13,7 +13,6 @@ object TypeofAlexaForBusiness {
   @scala.inline
   def apply(Types: TypeofAlexaForBusiness): TypeofAlexaForBusiness = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofAlexaForBusiness]
   }
 }

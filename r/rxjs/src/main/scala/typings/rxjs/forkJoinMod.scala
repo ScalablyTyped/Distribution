@@ -1,5 +1,6 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.rxjsStrings.forkJoin
 import typings.rxjs.typesMod.ObservableInput
@@ -60,10 +61,10 @@ object forkJoinMod extends js.Object {
   @JSName("forkJoin")
   def forkJoin_T[T](sources: ObservableInput[T]*): Observable[js.Array[T]] = js.native
   @JSName("forkJoin")
-  def forkJoin_TK_String[T, K /* <: String */](sourcesObject: T): Observable[
+  def forkJoin_TK_String[T, K /* <: /* keyof T */ String */](sourcesObject: T): Observable[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: rxjs.rxjs/internal/types.ObservedValueOf<T[K]>}
-    */ forkJoin with T
+    */ forkJoin with TopLevel[T]
   ] = js.native
 }
 

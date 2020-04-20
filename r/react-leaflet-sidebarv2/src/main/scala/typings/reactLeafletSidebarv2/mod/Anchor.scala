@@ -12,10 +12,8 @@ trait Anchor extends js.Object
 
 object Anchor {
   @scala.inline
-  def bottom: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.bottom = this.cast("bottom")
+  def bottom: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.bottom = "bottom".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def top: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.top = this.cast("top")
+  def top: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.top = "top".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.top]
 }
 

@@ -25,7 +25,6 @@ object Anon4 {
     ])
   ): Anon4 = {
     val __obj = js.Dynamic.literal(labelLayout = labelLayout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon4]
   }
 }

@@ -11,6 +11,7 @@ trait Options extends js.Object {
   var applyWidthAttributes: js.UndefOr[Boolean] = js.undefined
   var extraCss: js.UndefOr[String] = js.undefined
   var preserveMediaQueries: js.UndefOr[Boolean] = js.undefined
+  var removeHtmlSelectors: js.UndefOr[Boolean] = js.undefined
   var removeLinkTags: js.UndefOr[Boolean] = js.undefined
   var removeStyleTags: js.UndefOr[Boolean] = js.undefined
   var url: String
@@ -26,6 +27,7 @@ object Options {
     applyWidthAttributes: js.UndefOr[Boolean] = js.undefined,
     extraCss: String = null,
     preserveMediaQueries: js.UndefOr[Boolean] = js.undefined,
+    removeHtmlSelectors: js.UndefOr[Boolean] = js.undefined,
     removeLinkTags: js.UndefOr[Boolean] = js.undefined,
     removeStyleTags: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -36,6 +38,7 @@ object Options {
     if (!js.isUndefined(applyWidthAttributes)) __obj.updateDynamic("applyWidthAttributes")(applyWidthAttributes.asInstanceOf[js.Any])
     if (extraCss != null) __obj.updateDynamic("extraCss")(extraCss.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveMediaQueries)) __obj.updateDynamic("preserveMediaQueries")(preserveMediaQueries.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeHtmlSelectors)) __obj.updateDynamic("removeHtmlSelectors")(removeHtmlSelectors.asInstanceOf[js.Any])
     if (!js.isUndefined(removeLinkTags)) __obj.updateDynamic("removeLinkTags")(removeLinkTags.asInstanceOf[js.Any])
     if (!js.isUndefined(removeStyleTags)) __obj.updateDynamic("removeStyleTags")(removeStyleTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

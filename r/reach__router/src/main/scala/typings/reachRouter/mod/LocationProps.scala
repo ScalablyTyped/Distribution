@@ -13,7 +13,6 @@ object LocationProps {
   @scala.inline
   def apply(children: /* context */ LocationContext => ReactNode): LocationProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[LocationProps]
   }
 }

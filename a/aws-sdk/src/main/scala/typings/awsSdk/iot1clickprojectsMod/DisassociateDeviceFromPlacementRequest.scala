@@ -24,7 +24,6 @@ object DisassociateDeviceFromPlacementRequest {
   @scala.inline
   def apply(deviceTemplateName: DeviceTemplateName, placementName: PlacementName, projectName: ProjectName): DisassociateDeviceFromPlacementRequest = {
     val __obj = js.Dynamic.literal(deviceTemplateName = deviceTemplateName.asInstanceOf[js.Any], placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateDeviceFromPlacementRequest]
   }
 }

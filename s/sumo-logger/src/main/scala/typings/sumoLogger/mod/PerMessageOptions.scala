@@ -22,7 +22,6 @@ object PerMessageOptions {
   @scala.inline
   def apply(sessionKey: String, timestamp: Date, url: String): PerMessageOptions = {
     val __obj = js.Dynamic.literal(sessionKey = sessionKey.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PerMessageOptions]
   }
 }

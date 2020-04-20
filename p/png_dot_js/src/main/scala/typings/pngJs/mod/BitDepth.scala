@@ -14,14 +14,12 @@ trait BitDepth extends js.Object
 
 object BitDepth {
   @scala.inline
-  def `16`: typings.pngJs.pngJsNumbers.`16` = this.cast(16)
+  def `16`: typings.pngJs.pngJsNumbers.`16` = 16.asInstanceOf[typings.pngJs.pngJsNumbers.`16`]
   @scala.inline
-  def `2`: typings.pngJs.pngJsNumbers.`2` = this.cast(2)
+  def `2`: typings.pngJs.pngJsNumbers.`2` = 2.asInstanceOf[typings.pngJs.pngJsNumbers.`2`]
   @scala.inline
-  def `4`: typings.pngJs.pngJsNumbers.`4` = this.cast(4)
+  def `4`: typings.pngJs.pngJsNumbers.`4` = 4.asInstanceOf[typings.pngJs.pngJsNumbers.`4`]
   @scala.inline
-  def `8`: typings.pngJs.pngJsNumbers.`8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `8`: typings.pngJs.pngJsNumbers.`8` = 8.asInstanceOf[typings.pngJs.pngJsNumbers.`8`]
 }
 

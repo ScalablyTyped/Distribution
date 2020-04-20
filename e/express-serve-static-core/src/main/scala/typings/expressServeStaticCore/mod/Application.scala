@@ -113,7 +113,7 @@ trait Application
   @JSName("use")
   var use_Original: (IRouterHandler[this.type] with (IRouterMatcher[this.type, _])) | ApplicationRequestHandler[this.type] = js.native
   def apply(
-    T0: /* req */ Request[ParamsDictionary, js.Any, js.Any],
+    T0: /* req */ Request[ParamsDictionary, js.Any, js.Any, Query],
     T1: /* res */ Response[js.Any],
     T2: /* next */ NextFunction
   ): js.Any = js.native
@@ -121,8 +121,8 @@ trait Application
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def apply(req: Request[ParamsDictionary, _, _], res: Response[_]): js.Any = js.native
-  def apply(req: Request[ParamsDictionary, _, _], res: ServerResponse): js.Any = js.native
+  def apply(req: Request[ParamsDictionary, _, _, Query], res: Response[_]): js.Any = js.native
+  def apply(req: Request[ParamsDictionary, _, _, Query], res: ServerResponse): js.Any = js.native
   def apply(req: IncomingMessage, res: Response[_]): js.Any = js.native
   def apply(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   /**
@@ -135,29 +135,29 @@ trait Application
     * Special-cased "all" method, applying the given route `path`,
     * middleware, and callback to _every_ HTTP method.
     */
-  def all[P /* <: Params */, ResBody, ReqBody](
+  def all[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def bind(thisArg: js.Any, argArray: js.Dynamic*): js.Any = js.native
   def call(thisArg: js.Any, argArray: js.Dynamic*): js.Any = js.native
   def checkout(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def checkout[P /* <: Params */, ResBody, ReqBody](
+  def checkout[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def connect(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def connect[P /* <: Params */, ResBody, ReqBody](
+  def connect[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def copy(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def copy[P /* <: Params */, ResBody, ReqBody](
+  def copy[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   /**
     * Initialize application configuration.
@@ -165,9 +165,9 @@ trait Application
   def defaultConfiguration(): Unit = js.native
   def delete(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def delete[P /* <: Params */, ResBody, ReqBody](
+  def delete[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   /** Disable `setting`. */
   def disable(setting: String): this.type = js.native
@@ -235,15 +235,15 @@ trait Application
   def get(name: String): js.Any = js.native
   def get(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def get[P /* <: Params */, ResBody, ReqBody](
+  def get[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def head(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def head[P /* <: Params */, ResBody, ReqBody](
+  def head[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   /**
     * Initialize the server.
@@ -289,51 +289,51 @@ trait Application
   def listen(port: Double, hostname: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Server = js.native
   def lock(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def lock[P /* <: Params */, ResBody, ReqBody](
+  def lock[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def `m-search`(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def `m-search`[P /* <: Params */, ResBody, ReqBody](
+  def `m-search`[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def merge(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def merge[P /* <: Params */, ResBody, ReqBody](
+  def merge[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def mkactivity(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def mkactivity[P /* <: Params */, ResBody, ReqBody](
+  def mkactivity[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def mkcol(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def mkcol[P /* <: Params */, ResBody, ReqBody](
+  def mkcol[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def move(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def move[P /* <: Params */, ResBody, ReqBody](
+  def move[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def notify(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def notify[P /* <: Params */, ResBody, ReqBody](
+  def notify[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def options(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def options[P /* <: Params */, ResBody, ReqBody](
+  def options[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   /**
     * Alternatively, you can pass only a callback, in which case you have the opportunity to alter the app.param()
@@ -371,9 +371,9 @@ trait Application
   def param(name: js.Array[String], handler: RequestParamHandler): this.type = js.native
   def patch(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def patch[P /* <: Params */, ResBody, ReqBody](
+  def patch[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   /**
     * Return the app's absolute pathname
@@ -388,33 +388,33 @@ trait Application
   def path(): String = js.native
   def post(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def post[P /* <: Params */, ResBody, ReqBody](
+  def post[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def propfind(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def propfind[P /* <: Params */, ResBody, ReqBody](
+  def propfind[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def proppatch(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def proppatch[P /* <: Params */, ResBody, ReqBody](
+  def proppatch[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def purge(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def purge[P /* <: Params */, ResBody, ReqBody](
+  def purge[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def put(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def put[P /* <: Params */, ResBody, ReqBody](
+  def put[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   /**
     * Render the given view `name` name with `options`
@@ -433,16 +433,16 @@ trait Application
   def render(name: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
   def report(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def report[P /* <: Params */, ResBody, ReqBody](
+  def report[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def route(prefix: PathParams): IRoute = js.native
   def search(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def search[P /* <: Params */, ResBody, ReqBody](
+  def search[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   /**
     * Assign `setting` to `val`, or return `setting`'s value.
@@ -459,36 +459,36 @@ trait Application
   def set(setting: String, `val`: js.Any): this.type = js.native
   def subscribe(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def subscribe[P /* <: Params */, ResBody, ReqBody](
+  def subscribe[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def trace(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def trace[P /* <: Params */, ResBody, ReqBody](
+  def trace[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def unlock(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def unlock[P /* <: Params */, ResBody, ReqBody](
+  def unlock[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def unsubscribe(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def unsubscribe[P /* <: Params */, ResBody, ReqBody](
+  def unsubscribe[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def use(
-    handlers: ((RequestHandler[ParamsDictionary, _, _]) | (RequestHandlerParams[ParamsDictionary, _, _]))*
+    handlers: ((RequestHandler[ParamsDictionary, _, _, Query]) | (RequestHandlerParams[ParamsDictionary, _, _, Query]))*
   ): this.type = js.native
   def use(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def use[P /* <: Params */, ResBody, ReqBody](
+  def use[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
 }
 

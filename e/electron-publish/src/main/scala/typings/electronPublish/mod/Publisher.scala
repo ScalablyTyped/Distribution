@@ -21,7 +21,7 @@ abstract class Publisher protected () extends js.Object {
     progressBar: ProgressBar,
     reject: js.Function1[/* error */ Error, Unit]
   ): ReadableStream = js.native
-  def providerName(): String = js.native
+  def providerName: String = js.native
   def upload(task: UploadTask): js.Promise[_] = js.native
 }
 

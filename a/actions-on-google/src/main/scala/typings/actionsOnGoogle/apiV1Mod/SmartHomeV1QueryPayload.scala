@@ -13,7 +13,6 @@ object SmartHomeV1QueryPayload {
   @scala.inline
   def apply(devices: ApiClientObjectMap[_]): SmartHomeV1QueryPayload = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1QueryPayload]
   }
 }

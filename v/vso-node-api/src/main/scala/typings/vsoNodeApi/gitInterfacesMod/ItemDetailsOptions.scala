@@ -19,7 +19,6 @@ object ItemDetailsOptions {
   @scala.inline
   def apply(includeContentMetadata: Boolean, recursionLevel: VersionControlRecursionType): ItemDetailsOptions = {
     val __obj = js.Dynamic.literal(includeContentMetadata = includeContentMetadata.asInstanceOf[js.Any], recursionLevel = recursionLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ItemDetailsOptions]
   }
 }

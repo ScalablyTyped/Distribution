@@ -15,7 +15,6 @@ object AnonBackoff {
   @scala.inline
   def apply(backoff: () => Unit, refused: () => Unit, retry: () => Unit, ssl_only: () => Unit): AnonBackoff = {
     val __obj = js.Dynamic.literal(backoff = js.Any.fromFunction0(backoff), refused = js.Any.fromFunction0(refused), retry = js.Any.fromFunction0(retry), ssl_only = js.Any.fromFunction0(ssl_only))
-  
     __obj.asInstanceOf[AnonBackoff]
   }
 }

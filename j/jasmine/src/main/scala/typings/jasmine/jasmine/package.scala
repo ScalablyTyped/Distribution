@@ -26,24 +26,24 @@ package object jasmine {
     - typings.jasmine.jasmine.Spy
     - / * import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
-    * / typings.jasmine.jasmineStrings.Expected with T
+    * / typings.jasmine.jasmineStrings.Expected with org.scalablytyped.runtime.TopLevel[T]
   */
   type Expected[T] = typings.jasmine.jasmine._Expected[T] | typings.jasmine.jasmine.AsymmetricMatcher[js.Any] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
-    */ typings.jasmine.jasmineStrings.Expected with T) | T
+    */ typings.jasmine.jasmineStrings.Expected with org.scalablytyped.runtime.TopLevel[T]) | T
   type ExpectedRecursive[T] = T | typings.jasmine.jasmine.ObjectContaining_[T] | typings.jasmine.jasmine.AsymmetricMatcher[js.Any] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jasmine.jasmine.ExpectedRecursive<T[K]> * / object | jasmine.jasmine.Any}
-    */ typings.jasmine.jasmineStrings.ExpectedRecursive with js.Any)
+    */ typings.jasmine.jasmineStrings.ExpectedRecursive with org.scalablytyped.runtime.TopLevel[js.Any])
   type Func = js.Function1[/* repeated */ js.Any, js.Any]
   type ImplementationCallback = js.Function0[js.Thenable[js.Any]] | (js.Function1[/* done */ typings.jasmine.DoneFn, scala.Unit])
   type PassedExpectation = typings.jasmine.jasmine.CustomReportExpectation
   type SpecFunction = js.Function1[/* spec */ js.UndefOr[typings.jasmine.jasmine.Spec], scala.Unit]
-  type SpyObj[T] = T with typings.jasmine.jasmineStrings.SpyObj with js.Any
-  type SpyObjMethodNames[T] = js.Array[java.lang.String] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type SpyObj[T] = T with typings.jasmine.jasmineStrings.SpyObj with org.scalablytyped.runtime.TopLevel[js.Any]
+  type SpyObjMethodNames[T] = (js.Array[/* keyof T */ java.lang.String]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] extends jasmine.jasmine.Func? std.ReturnType<T[P]> : any}
-    */ typings.jasmine.jasmineStrings.SpyObjMethodNames with js.Any) | org.scalablytyped.runtime.StringDictionary[js.Any]
-  type SpyObjPropertyNames[T] = js.Array[java.lang.String] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.jasmine.jasmineStrings.SpyObjMethodNames with org.scalablytyped.runtime.TopLevel[js.Any]) | org.scalablytyped.runtime.StringDictionary[js.Any]
+  type SpyObjPropertyNames[T] = (js.Array[/* keyof T */ java.lang.String]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
-    */ typings.jasmine.jasmineStrings.SpyObjPropertyNames with T) | org.scalablytyped.runtime.StringDictionary[js.Any]
+    */ typings.jasmine.jasmineStrings.SpyObjPropertyNames with org.scalablytyped.runtime.TopLevel[T]) | org.scalablytyped.runtime.StringDictionary[js.Any]
   type StringPrettyPrinter = typings.jasmine.jasmine.PrettyPrinter
 }

@@ -35,7 +35,6 @@ object RenameTypes {
     transformSchema: GraphQLSchema => GraphQLSchema
   ): RenameTypes = {
     val __obj = js.Dynamic.literal(renameBuiltins = renameBuiltins.asInstanceOf[js.Any], renameScalars = renameScalars.asInstanceOf[js.Any], renameTypes = renameTypes.asInstanceOf[js.Any], renamer = renamer.asInstanceOf[js.Any], reverseMap = reverseMap.asInstanceOf[js.Any], transformRequest = js.Any.fromFunction1(transformRequest), transformResult = js.Any.fromFunction1(transformResult), transformSchema = js.Any.fromFunction1(transformSchema))
-  
     __obj.asInstanceOf[RenameTypes]
   }
 }

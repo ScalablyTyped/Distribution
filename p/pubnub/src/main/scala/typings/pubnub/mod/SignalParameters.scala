@@ -14,7 +14,6 @@ object SignalParameters {
   @scala.inline
   def apply(channel: String, message: js.Any): SignalParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignalParameters]
   }
 }

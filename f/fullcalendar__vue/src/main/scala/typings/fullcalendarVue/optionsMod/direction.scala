@@ -12,10 +12,8 @@ trait direction extends js.Object
 
 object direction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ltr: typings.fullcalendarVue.fullcalendarVueStrings.ltr = "ltr".asInstanceOf[typings.fullcalendarVue.fullcalendarVueStrings.ltr]
   @scala.inline
-  def ltr: typings.fullcalendarVue.fullcalendarVueStrings.ltr = this.cast("ltr")
-  @scala.inline
-  def rtl: typings.fullcalendarVue.fullcalendarVueStrings.rtl = this.cast("rtl")
+  def rtl: typings.fullcalendarVue.fullcalendarVueStrings.rtl = "rtl".asInstanceOf[typings.fullcalendarVue.fullcalendarVueStrings.rtl]
 }
 

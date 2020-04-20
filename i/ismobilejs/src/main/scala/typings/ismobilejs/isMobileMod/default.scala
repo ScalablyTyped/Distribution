@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply(): isMobileResult = js.native
-  def apply(userAgent: String): isMobileResult = js.native
+  def apply(param: IsMobileParameter): isMobileResult = js.native
 }
 

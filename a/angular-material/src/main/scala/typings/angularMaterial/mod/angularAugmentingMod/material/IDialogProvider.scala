@@ -13,7 +13,6 @@ object IDialogProvider {
   @scala.inline
   def apply(addPreset: (String, AnonMethods) => IDialogProvider): IDialogProvider = {
     val __obj = js.Dynamic.literal(addPreset = js.Any.fromFunction2(addPreset))
-  
     __obj.asInstanceOf[IDialogProvider]
   }
 }

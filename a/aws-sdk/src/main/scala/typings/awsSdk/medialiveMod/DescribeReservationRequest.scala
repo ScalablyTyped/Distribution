@@ -16,7 +16,6 @@ object DescribeReservationRequest {
   @scala.inline
   def apply(ReservationId: string): DescribeReservationRequest = {
     val __obj = js.Dynamic.literal(ReservationId = ReservationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeReservationRequest]
   }
 }

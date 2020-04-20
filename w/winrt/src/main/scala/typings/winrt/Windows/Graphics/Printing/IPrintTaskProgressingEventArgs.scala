@@ -12,7 +12,6 @@ object IPrintTaskProgressingEventArgs {
   @scala.inline
   def apply(documentPageCount: Double): IPrintTaskProgressingEventArgs = {
     val __obj = js.Dynamic.literal(documentPageCount = documentPageCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPrintTaskProgressingEventArgs]
   }
 }

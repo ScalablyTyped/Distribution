@@ -20,20 +20,18 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  def DELETE: typings.zapierPlatformCore.zapierPlatformCoreStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.zapierPlatformCore.zapierPlatformCoreStrings.DELETE = "DELETE".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.DELETE]
   @scala.inline
-  def GET: typings.zapierPlatformCore.zapierPlatformCoreStrings.GET = this.cast("GET")
+  def GET: typings.zapierPlatformCore.zapierPlatformCoreStrings.GET = "GET".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.GET]
   @scala.inline
-  def HEAD: typings.zapierPlatformCore.zapierPlatformCoreStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.zapierPlatformCore.zapierPlatformCoreStrings.HEAD = "HEAD".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.HEAD]
   @scala.inline
-  def OPTIONS: typings.zapierPlatformCore.zapierPlatformCoreStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.zapierPlatformCore.zapierPlatformCoreStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.zapierPlatformCore.zapierPlatformCoreStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.zapierPlatformCore.zapierPlatformCoreStrings.PATCH = "PATCH".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.PATCH]
   @scala.inline
-  def POST: typings.zapierPlatformCore.zapierPlatformCoreStrings.POST = this.cast("POST")
+  def POST: typings.zapierPlatformCore.zapierPlatformCoreStrings.POST = "POST".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.POST]
   @scala.inline
-  def PUT: typings.zapierPlatformCore.zapierPlatformCoreStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUT: typings.zapierPlatformCore.zapierPlatformCoreStrings.PUT = "PUT".asInstanceOf[typings.zapierPlatformCore.zapierPlatformCoreStrings.PUT]
 }
 

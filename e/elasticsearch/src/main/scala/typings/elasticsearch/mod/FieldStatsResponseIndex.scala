@@ -13,7 +13,6 @@ object FieldStatsResponseIndex {
   @scala.inline
   def apply(fields: StringDictionary[FieldStatsResponseField]): FieldStatsResponseIndex = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldStatsResponseIndex]
   }
 }

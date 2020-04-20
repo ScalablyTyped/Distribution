@@ -23,7 +23,6 @@ object AnonDirtyHandlerIds {
     stateId: Double
   ): AnonDirtyHandlerIds = {
     val __obj = js.Dynamic.literal(dirtyHandlerIds = dirtyHandlerIds.asInstanceOf[js.Any], dragOffset = dragOffset.asInstanceOf[js.Any], dragOperation = dragOperation.asInstanceOf[js.Any], refCount = refCount.asInstanceOf[js.Any], stateId = stateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDirtyHandlerIds]
   }
 }

@@ -32,7 +32,6 @@ object AnonFulfilled {
     Settled: SettledProps[js.Any] => Element
   ): AnonFulfilled = {
     val __obj = js.Dynamic.literal(Fulfilled = js.Any.fromFunction1(Fulfilled), Initial = js.Any.fromFunction1(Initial), Loading = js.Any.fromFunction1(Loading), Pending = js.Any.fromFunction1(Pending), Rejected = js.Any.fromFunction1(Rejected), Resolved = js.Any.fromFunction1(Resolved), Settled = js.Any.fromFunction1(Settled))
-  
     __obj.asInstanceOf[AnonFulfilled]
   }
 }

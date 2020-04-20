@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphviz"
-version := "0.0.8-dt-20200327Z-87a355"
+version := "0.0.8-dt-20200327Z-0aa185"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

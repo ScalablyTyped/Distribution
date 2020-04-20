@@ -45,16 +45,16 @@ class NotebookTools_ protected () extends INotebookTools {
     * The active cell widget.
     */
   @JSName("activeCell")
-  def activeCell_MNotebookTools_(): Cell | Null = js.native
+  def activeCell_MNotebookTools_ : Cell | Null = js.native
   /**
     * The current notebook.
     */
   @JSName("activeNotebookPanel")
-  def activeNotebookPanel_MNotebookTools_(): NotebookPanel | Null = js.native
+  def activeNotebookPanel_MNotebookTools_ : NotebookPanel | Null = js.native
   /**
     * The currently selected cells.
     */
   @JSName("selectedCells")
-  def selectedCells_MNotebookTools_(): js.Array[Cell] = js.native
+  def selectedCells_MNotebookTools_ : js.Array[Cell] = js.native
 }
 

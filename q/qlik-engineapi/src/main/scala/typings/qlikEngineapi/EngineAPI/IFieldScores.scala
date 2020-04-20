@@ -36,7 +36,6 @@ object IFieldScores {
   @scala.inline
   def apply(qCardinalRatio: Double, qFieldName: String, qRowScore: Double, qSymbolScore: Double): IFieldScores = {
     val __obj = js.Dynamic.literal(qCardinalRatio = qCardinalRatio.asInstanceOf[js.Any], qFieldName = qFieldName.asInstanceOf[js.Any], qRowScore = qRowScore.asInstanceOf[js.Any], qSymbolScore = qSymbolScore.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFieldScores]
   }
 }

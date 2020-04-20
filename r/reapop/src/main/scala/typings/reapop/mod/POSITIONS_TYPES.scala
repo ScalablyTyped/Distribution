@@ -28,7 +28,6 @@ object POSITIONS_TYPES {
     topRight: TOP_RIGHT_POSITION
   ): POSITIONS_TYPES = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], bottomCenter = bottomCenter.asInstanceOf[js.Any], bottomLeft = bottomLeft.asInstanceOf[js.Any], bottomRight = bottomRight.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], topCenter = topCenter.asInstanceOf[js.Any], topLeft = topLeft.asInstanceOf[js.Any], topRight = topRight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[POSITIONS_TYPES]
   }
 }

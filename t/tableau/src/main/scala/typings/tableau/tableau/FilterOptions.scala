@@ -19,7 +19,6 @@ object FilterOptions {
   @scala.inline
   def apply(isExcludeMode: Boolean): FilterOptions = {
     val __obj = js.Dynamic.literal(isExcludeMode = isExcludeMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilterOptions]
   }
 }

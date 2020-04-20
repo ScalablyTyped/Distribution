@@ -17,7 +17,6 @@ object MemberAccountAssociationArgs {
   @scala.inline
   def apply(memberAccountId: Input[String]): MemberAccountAssociationArgs = {
     val __obj = js.Dynamic.literal(memberAccountId = memberAccountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MemberAccountAssociationArgs]
   }
 }

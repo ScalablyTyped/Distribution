@@ -12,10 +12,8 @@ trait Mode extends js.Object
 
 object Mode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def light: typings.faviconsWebpackPlugin.faviconsWebpackPluginStrings.light = "light".asInstanceOf[typings.faviconsWebpackPlugin.faviconsWebpackPluginStrings.light]
   @scala.inline
-  def light: typings.faviconsWebpackPlugin.faviconsWebpackPluginStrings.light = this.cast("light")
-  @scala.inline
-  def webapp: typings.faviconsWebpackPlugin.faviconsWebpackPluginStrings.webapp = this.cast("webapp")
+  def webapp: typings.faviconsWebpackPlugin.faviconsWebpackPluginStrings.webapp = "webapp".asInstanceOf[typings.faviconsWebpackPlugin.faviconsWebpackPluginStrings.webapp]
 }
 

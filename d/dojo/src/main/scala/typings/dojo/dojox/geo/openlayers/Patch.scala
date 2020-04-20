@@ -20,7 +20,6 @@ object Patch {
   @scala.inline
   def apply(patchGFX: () => Unit): Patch = {
     val __obj = js.Dynamic.literal(patchGFX = js.Any.fromFunction0(patchGFX))
-  
     __obj.asInstanceOf[Patch]
   }
 }

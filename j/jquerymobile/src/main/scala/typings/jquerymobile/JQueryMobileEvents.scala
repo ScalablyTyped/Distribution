@@ -72,7 +72,6 @@ object JQueryMobileEvents {
     vmouseup: js.Any
   ): JQueryMobileEvents = {
     val __obj = js.Dynamic.literal(orientationchange = orientationchange.asInstanceOf[js.Any], pagebeforechange = pagebeforechange.asInstanceOf[js.Any], pagebeforecreate = pagebeforecreate.asInstanceOf[js.Any], pagebeforehide = pagebeforehide.asInstanceOf[js.Any], pagebeforeload = pagebeforeload.asInstanceOf[js.Any], pagebeforeshow = pagebeforeshow.asInstanceOf[js.Any], pagechange = pagechange.asInstanceOf[js.Any], pagechangefailed = pagechangefailed.asInstanceOf[js.Any], pagecreate = pagecreate.asInstanceOf[js.Any], pagehide = pagehide.asInstanceOf[js.Any], pageinit = pageinit.asInstanceOf[js.Any], pageload = pageload.asInstanceOf[js.Any], pageloadfailed = pageloadfailed.asInstanceOf[js.Any], pageremove = pageremove.asInstanceOf[js.Any], pageshow = pageshow.asInstanceOf[js.Any], scrollstart = scrollstart.asInstanceOf[js.Any], scrollstop = scrollstop.asInstanceOf[js.Any], swipe = swipe.asInstanceOf[js.Any], swipeleft = swipeleft.asInstanceOf[js.Any], swiperight = swiperight.asInstanceOf[js.Any], tap = tap.asInstanceOf[js.Any], taphold = taphold.asInstanceOf[js.Any], updatelayout = updatelayout.asInstanceOf[js.Any], vclick = vclick.asInstanceOf[js.Any], vmousecancel = vmousecancel.asInstanceOf[js.Any], vmousedown = vmousedown.asInstanceOf[js.Any], vmousemove = vmousemove.asInstanceOf[js.Any], vmouseout = vmouseout.asInstanceOf[js.Any], vmouseover = vmouseover.asInstanceOf[js.Any], vmouseup = vmouseup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryMobileEvents]
   }
 }

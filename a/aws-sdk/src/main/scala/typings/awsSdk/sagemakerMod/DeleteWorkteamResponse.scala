@@ -16,7 +16,6 @@ object DeleteWorkteamResponse {
   @scala.inline
   def apply(Success: Success): DeleteWorkteamResponse = {
     val __obj = js.Dynamic.literal(Success = Success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteWorkteamResponse]
   }
 }

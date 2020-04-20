@@ -15,7 +15,6 @@ object AnonMetrics {
   @scala.inline
   def apply(metrics: FieldType, properties: FieldType, ver: FieldType): AnonMetrics = {
     val __obj = js.Dynamic.literal(metrics = metrics.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], ver = ver.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMetrics]
   }
 }

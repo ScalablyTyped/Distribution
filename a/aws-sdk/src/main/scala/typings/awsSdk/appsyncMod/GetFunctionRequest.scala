@@ -20,7 +20,6 @@ object GetFunctionRequest {
   @scala.inline
   def apply(apiId: String, functionId: ResourceName): GetFunctionRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], functionId = functionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFunctionRequest]
   }
 }

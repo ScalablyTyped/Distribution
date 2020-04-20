@@ -27,7 +27,6 @@ object AnonConsumer {
     mutate: /* mutator */ MutateFn[T] => Unit
   ): AnonConsumer[T] = {
     val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any], createSelector = js.Any.fromFunction1(createSelector), mutate = js.Any.fromFunction1(mutate))
-  
     __obj.asInstanceOf[AnonConsumer[T]]
   }
 }

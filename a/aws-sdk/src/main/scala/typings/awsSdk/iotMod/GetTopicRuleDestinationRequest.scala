@@ -16,7 +16,6 @@ object GetTopicRuleDestinationRequest {
   @scala.inline
   def apply(arn: AwsArn): GetTopicRuleDestinationRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTopicRuleDestinationRequest]
   }
 }

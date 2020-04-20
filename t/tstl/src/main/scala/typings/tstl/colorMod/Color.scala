@@ -14,10 +14,8 @@ trait Color extends js.Object
 
 object Color {
   @scala.inline
-  def BLACK: `0` = this.cast(0)
+  def BLACK: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def RED: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RED: `1` = 1.asInstanceOf[`1`]
 }
 

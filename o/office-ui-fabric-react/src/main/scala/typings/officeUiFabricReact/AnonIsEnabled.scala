@@ -13,7 +13,6 @@ object AnonIsEnabled {
   @scala.inline
   def apply(isEnabled: Boolean, rootTagName: String): AnonIsEnabled = {
     val __obj = js.Dynamic.literal(isEnabled = isEnabled.asInstanceOf[js.Any], rootTagName = rootTagName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsEnabled]
   }
 }

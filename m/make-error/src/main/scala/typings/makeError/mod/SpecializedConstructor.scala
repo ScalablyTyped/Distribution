@@ -12,7 +12,6 @@ object SpecializedConstructor {
   @scala.inline
   def apply[T](super_ : js.Any): SpecializedConstructor[T] = {
     val __obj = js.Dynamic.literal(super_ = super_.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpecializedConstructor[T]]
   }
 }

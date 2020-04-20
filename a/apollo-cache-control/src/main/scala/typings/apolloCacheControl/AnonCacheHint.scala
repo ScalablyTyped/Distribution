@@ -14,7 +14,6 @@ object AnonCacheHint {
   @scala.inline
   def apply(cacheHint: CacheHint, setCacheHint: CacheHint => Unit): AnonCacheHint = {
     val __obj = js.Dynamic.literal(cacheHint = cacheHint.asInstanceOf[js.Any], setCacheHint = js.Any.fromFunction1(setCacheHint))
-  
     __obj.asInstanceOf[AnonCacheHint]
   }
 }

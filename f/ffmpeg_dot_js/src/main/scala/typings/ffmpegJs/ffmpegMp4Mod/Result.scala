@@ -12,7 +12,6 @@ object Result {
   @scala.inline
   def apply(MEMFS: js.Array[Video]): Result = {
     val __obj = js.Dynamic.literal(MEMFS = MEMFS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

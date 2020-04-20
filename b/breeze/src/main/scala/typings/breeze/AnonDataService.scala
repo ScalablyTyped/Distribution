@@ -16,7 +16,6 @@ object AnonDataService {
   @scala.inline
   def apply(dataService: DataService, getUrl: () => String, query: EntityQuery): AnonDataService = {
     val __obj = js.Dynamic.literal(dataService = dataService.asInstanceOf[js.Any], getUrl = js.Any.fromFunction0(getUrl), query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDataService]
   }
 }

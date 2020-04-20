@@ -31,7 +31,6 @@ object IContactInformation {
     queryCustomFields: String => IVectorView[ContactField]
   ): IContactInformation = {
     val __obj = js.Dynamic.literal(customFields = customFields.asInstanceOf[js.Any], emails = emails.asInstanceOf[js.Any], getThumbnailAsync = js.Any.fromFunction0(getThumbnailAsync), instantMessages = instantMessages.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phoneNumbers = phoneNumbers.asInstanceOf[js.Any], queryCustomFields = js.Any.fromFunction1(queryCustomFields))
-  
     __obj.asInstanceOf[IContactInformation]
   }
 }

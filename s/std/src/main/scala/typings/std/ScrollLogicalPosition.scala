@@ -14,14 +14,12 @@ trait ScrollLogicalPosition extends js.Object
 
 object ScrollLogicalPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.std.stdStrings.center = "center".asInstanceOf[typings.std.stdStrings.center]
   @scala.inline
-  def center: typings.std.stdStrings.center = this.cast("center")
+  def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
   @scala.inline
-  def end: typings.std.stdStrings.end = this.cast("end")
+  def nearest: typings.std.stdStrings.nearest = "nearest".asInstanceOf[typings.std.stdStrings.nearest]
   @scala.inline
-  def nearest: typings.std.stdStrings.nearest = this.cast("nearest")
-  @scala.inline
-  def start: typings.std.stdStrings.start = this.cast("start")
+  def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
 }
 

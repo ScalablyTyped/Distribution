@@ -36,7 +36,6 @@ object OpenFinDesktop {
     main: js.Function0[_] => Unit
   ): OpenFinDesktop = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ExternalApp = ExternalApp.asInstanceOf[js.Any], ExternalWin = ExternalWin.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], GlobalHotkey = GlobalHotkey.asInstanceOf[js.Any], InterApplicationBus = InterApplicationBus.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], Platform = Platform.asInstanceOf[js.Any], System = System.asInstanceOf[js.Any], View = View.asInstanceOf[js.Any], Window = Window.asInstanceOf[js.Any], main = js.Any.fromFunction1(main))
-  
     __obj.asInstanceOf[OpenFinDesktop]
   }
 }

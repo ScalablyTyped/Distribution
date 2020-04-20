@@ -12,7 +12,6 @@ object AnonShortcut {
   @scala.inline
   def apply(shortcut: AnonProperties): AnonShortcut = {
     val __obj = js.Dynamic.literal(shortcut = shortcut.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShortcut]
   }
 }

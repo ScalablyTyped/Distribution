@@ -16,7 +16,6 @@ object GetBucketLifecycleRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketLifecycleRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketLifecycleRequest]
   }
 }

@@ -12,7 +12,6 @@ object Adapter {
   @scala.inline
   def apply(browserDetails: BrowserDetails): Adapter = {
     val __obj = js.Dynamic.literal(browserDetails = browserDetails.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Adapter]
   }
 }

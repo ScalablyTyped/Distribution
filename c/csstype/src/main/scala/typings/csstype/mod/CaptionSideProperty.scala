@@ -21,28 +21,26 @@ trait CaptionSideProperty extends js.Object
 
 object CaptionSideProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  def `block-end`: typings.csstype.csstypeStrings.`block-end` = this.cast("block-end")
+  def `block-end`: typings.csstype.csstypeStrings.`block-end` = "block-end".asInstanceOf[typings.csstype.csstypeStrings.`block-end`]
   @scala.inline
-  def `block-start`: typings.csstype.csstypeStrings.`block-start` = this.cast("block-start")
+  def `block-start`: typings.csstype.csstypeStrings.`block-start` = "block-start".asInstanceOf[typings.csstype.csstypeStrings.`block-start`]
   @scala.inline
-  def bottom: typings.csstype.csstypeStrings.bottom = this.cast("bottom")
+  def bottom: typings.csstype.csstypeStrings.bottom = "bottom".asInstanceOf[typings.csstype.csstypeStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def `inline-end`: typings.csstype.csstypeStrings.`inline-end` = "inline-end".asInstanceOf[typings.csstype.csstypeStrings.`inline-end`]
   @scala.inline
-  def `inline-end`: typings.csstype.csstypeStrings.`inline-end` = this.cast("inline-end")
+  def `inline-start`: typings.csstype.csstypeStrings.`inline-start` = "inline-start".asInstanceOf[typings.csstype.csstypeStrings.`inline-start`]
   @scala.inline
-  def `inline-start`: typings.csstype.csstypeStrings.`inline-start` = this.cast("inline-start")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def top: typings.csstype.csstypeStrings.top = "top".asInstanceOf[typings.csstype.csstypeStrings.top]
   @scala.inline
-  def top: typings.csstype.csstypeStrings.top = this.cast("top")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

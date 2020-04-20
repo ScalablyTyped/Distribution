@@ -116,112 +116,110 @@ trait XlIcon extends js.Object
 
 object XlIcon {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlIcon0Bars: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def xlIcon0Bars: `37` = this.cast(37)
+  def xlIcon0FilledBoxes: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def xlIcon0FilledBoxes: `52` = this.cast(52)
+  def xlIcon1Bar: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def xlIcon1Bar: `38` = this.cast(38)
+  def xlIcon1FilledBox: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def xlIcon1FilledBox: `51` = this.cast(51)
+  def xlIcon2Bars: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def xlIcon2Bars: `39` = this.cast(39)
+  def xlIcon2FilledBoxes: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def xlIcon2FilledBoxes: `50` = this.cast(50)
+  def xlIcon3Bars: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def xlIcon3Bars: `40` = this.cast(40)
+  def xlIcon3FilledBoxes: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def xlIcon3FilledBoxes: `49` = this.cast(49)
+  def xlIcon4Bars: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def xlIcon4Bars: `41` = this.cast(41)
+  def xlIcon4FilledBoxes: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def xlIcon4FilledBoxes: `48` = this.cast(48)
+  def xlIconBlackCircle: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def xlIconBlackCircle: `32` = this.cast(32)
+  def xlIconBlackCircleWithBorder: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlIconBlackCircleWithBorder: `13` = this.cast(13)
+  def xlIconCircleWithOneWhiteQuarter: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def xlIconCircleWithOneWhiteQuarter: `33` = this.cast(33)
+  def xlIconCircleWithThreeWhiteQuarters: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def xlIconCircleWithThreeWhiteQuarters: `35` = this.cast(35)
+  def xlIconCircleWithTwoWhiteQuarters: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def xlIconCircleWithTwoWhiteQuarters: `34` = this.cast(34)
+  def xlIconGoldStar: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def xlIconGoldStar: `42` = this.cast(42)
+  def xlIconGrayCircle: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def xlIconGrayCircle: `31` = this.cast(31)
+  def xlIconGrayDownArrow: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlIconGrayDownArrow: `6` = this.cast(6)
+  def xlIconGrayDownInclineArrow: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def xlIconGrayDownInclineArrow: `28` = this.cast(28)
+  def xlIconGraySideArrow: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlIconGraySideArrow: `5` = this.cast(5)
+  def xlIconGrayUpArrow: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlIconGrayUpArrow: `4` = this.cast(4)
+  def xlIconGrayUpInclineArrow: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def xlIconGrayUpInclineArrow: `27` = this.cast(27)
+  def xlIconGreenCheck: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def xlIconGreenCheck: `22` = this.cast(22)
+  def xlIconGreenCheckSymbol: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def xlIconGreenCheckSymbol: `19` = this.cast(19)
+  def xlIconGreenCircle: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlIconGreenCircle: `10` = this.cast(10)
+  def xlIconGreenFlag: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlIconGreenFlag: `7` = this.cast(7)
+  def xlIconGreenTrafficLight: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlIconGreenTrafficLight: `14` = this.cast(14)
+  def xlIconGreenUpArrow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlIconGreenUpArrow: `1` = this.cast(1)
+  def xlIconGreenUpTriangle: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def xlIconGreenUpTriangle: `45` = this.cast(45)
+  def xlIconHalfGoldStar: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def xlIconHalfGoldStar: `43` = this.cast(43)
+  def xlIconNoCellIcon: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def xlIconNoCellIcon: `-1` = this.cast(-1)
+  def xlIconPinkCircle: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def xlIconPinkCircle: `30` = this.cast(30)
+  def xlIconRedCircle: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def xlIconRedCircle: `29` = this.cast(29)
+  def xlIconRedCircleWithBorder: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlIconRedCircleWithBorder: `12` = this.cast(12)
+  def xlIconRedCross: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def xlIconRedCross: `24` = this.cast(24)
+  def xlIconRedCrossSymbol: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def xlIconRedCrossSymbol: `21` = this.cast(21)
+  def xlIconRedDiamond: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def xlIconRedDiamond: `18` = this.cast(18)
+  def xlIconRedDownArrow: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlIconRedDownArrow: `3` = this.cast(3)
+  def xlIconRedDownTriangle: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def xlIconRedDownTriangle: `47` = this.cast(47)
+  def xlIconRedFlag: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlIconRedFlag: `9` = this.cast(9)
+  def xlIconRedTrafficLight: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlIconRedTrafficLight: `16` = this.cast(16)
+  def xlIconSilverStar: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def xlIconSilverStar: `44` = this.cast(44)
+  def xlIconWhiteCircleAllWhiteQuarters: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def xlIconWhiteCircleAllWhiteQuarters: `36` = this.cast(36)
+  def xlIconYellowCircle: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlIconYellowCircle: `11` = this.cast(11)
+  def xlIconYellowDash: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def xlIconYellowDash: `46` = this.cast(46)
+  def xlIconYellowDownInclineArrow: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def xlIconYellowDownInclineArrow: `26` = this.cast(26)
+  def xlIconYellowExclamation: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def xlIconYellowExclamation: `23` = this.cast(23)
+  def xlIconYellowExclamationSymbol: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def xlIconYellowExclamationSymbol: `20` = this.cast(20)
+  def xlIconYellowFlag: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlIconYellowFlag: `8` = this.cast(8)
+  def xlIconYellowSideArrow: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlIconYellowSideArrow: `2` = this.cast(2)
+  def xlIconYellowTrafficLight: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlIconYellowTrafficLight: `15` = this.cast(15)
+  def xlIconYellowTriangle: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xlIconYellowTriangle: `17` = this.cast(17)
-  @scala.inline
-  def xlIconYellowUpInclineArrow: `25` = this.cast(25)
+  def xlIconYellowUpInclineArrow: `25` = 25.asInstanceOf[`25`]
 }
 

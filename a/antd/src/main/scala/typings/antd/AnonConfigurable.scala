@@ -13,7 +13,6 @@ object AnonConfigurable {
   @scala.inline
   def apply(configurable: Boolean, get: () => js.Any): AnonConfigurable = {
     val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], get = js.Any.fromFunction0(get))
-  
     __obj.asInstanceOf[AnonConfigurable]
   }
 }

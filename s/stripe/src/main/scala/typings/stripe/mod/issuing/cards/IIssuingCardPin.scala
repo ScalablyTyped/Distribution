@@ -17,7 +17,6 @@ object IIssuingCardPin {
   @scala.inline
   def apply(status: blocked | active): IIssuingCardPin = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IIssuingCardPin]
   }
 }

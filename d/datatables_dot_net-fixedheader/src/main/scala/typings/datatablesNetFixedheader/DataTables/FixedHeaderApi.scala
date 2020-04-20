@@ -37,7 +37,6 @@ object FixedHeaderApi {
     headerOffset: Double => Api
   ): FixedHeaderApi = {
     val __obj = js.Dynamic.literal(adjust = js.Any.fromFunction0(adjust), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction1(enable), footerOffset = js.Any.fromFunction1(footerOffset), headerOffset = js.Any.fromFunction1(headerOffset))
-  
     __obj.asInstanceOf[FixedHeaderApi]
   }
 }

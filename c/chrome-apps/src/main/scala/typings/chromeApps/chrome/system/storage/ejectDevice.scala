@@ -2,10 +2,14 @@ package typings.chromeApps.chrome.system.storage
 
 import typings.chromeApps.AnonFAILURE
 import typings.chromeApps.chrome.ToStringLiteral
-import typings.chromeApps.chromeAppsStrings.failure
+import typings.chromeApps.chromeAppsStrings.FAILURE
+import typings.chromeApps.chromeAppsStrings.IN_USE
+import typings.chromeApps.chromeAppsStrings.NO_SUCH_DEVICE
+import typings.chromeApps.chromeAppsStrings.SUCCESS
+import typings.chromeApps.chromeAppsStrings.failure_
 import typings.chromeApps.chromeAppsStrings.in_use_
-import typings.chromeApps.chromeAppsStrings.no_such_device
-import typings.chromeApps.chromeAppsStrings.success
+import typings.chromeApps.chromeAppsStrings.no_such_device_
+import typings.chromeApps.chromeAppsStrings.success_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +35,14 @@ object ejectDevice extends js.Object {
   def apply(
     id: String,
     callback: js.Function1[
-      /* result */ ToStringLiteral[AnonFAILURE, String, Exclude[String, success | in_use_ | no_such_device | failure]], 
+      /* result */ ToStringLiteral[
+        AnonFAILURE, 
+        SUCCESS | IN_USE | NO_SUCH_DEVICE | FAILURE, 
+        Exclude[
+          SUCCESS | IN_USE | NO_SUCH_DEVICE | FAILURE, 
+          success_ | in_use_ | no_such_device_ | failure_
+        ]
+      ], 
       Unit
     ]
   ): Unit = js.native

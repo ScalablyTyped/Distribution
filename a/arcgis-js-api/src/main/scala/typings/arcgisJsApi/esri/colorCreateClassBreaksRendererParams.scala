@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -36,7 +37,7 @@ trait colorCreateClassBreaksRendererParams extends Object {
     *
     * Value | Description
     * ------|------------
-    * tint | Applies the symbol `color` to the desaturated geometry/texture color.
+    * tint | Applies the symbol `color` to the unsaturated geometry/texture color.
     * replace | Removes the geometry/texture color and applies the symbol `color`.
     * multiply | Multiplies geometry/texture color value with the symbol `color` value. The result is a darker color. Multiplying with white keeps the geometry color the same.
     *
@@ -60,6 +61,14 @@ trait colorCreateClassBreaksRendererParams extends Object {
     * @default true
     */
   var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Indicates whether to add edges to the output renderer. This setting only applies to mesh SceneLayers.  **Possible Values:** solid | none
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createClassBreaksRenderer)
+    *
+    * @default none
+    */
+  var edgesType: js.UndefOr[String] = js.undefined
   /**
     * The name of the field whose data will be queried for statistics and classified. This property is ignored if a `valueExpression` is used.
     *
@@ -133,6 +142,12 @@ trait colorCreateClassBreaksRendererParams extends Object {
     */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createClassBreaksRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  /**
     * A SQL expression evaluating to a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createClassBreaksRenderer)
@@ -199,6 +214,7 @@ object colorCreateClassBreaksRendererParams {
     colorMixMode: String = null,
     colorScheme: ColorScheme = null,
     defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined,
+    edgesType: String = null,
     field: String = null,
     legendOptions: colorCreateClassBreaksRendererParamsLegendOptions = null,
     maxValue: Int | Double = null,
@@ -208,6 +224,7 @@ object colorCreateClassBreaksRendererParams {
     normalizationType: String = null,
     numClasses: Int | Double = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
+    signal: AbortSignal = null,
     sqlExpression: String = null,
     sqlWhere: String = null,
     standardDeviationInterval: Int | Double = null,
@@ -222,6 +239,7 @@ object colorCreateClassBreaksRendererParams {
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode.asInstanceOf[js.Any])
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled.asInstanceOf[js.Any])
+    if (edgesType != null) __obj.updateDynamic("edgesType")(edgesType.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
@@ -231,6 +249,7 @@ object colorCreateClassBreaksRendererParams {
     if (normalizationType != null) __obj.updateDynamic("normalizationType")(normalizationType.asInstanceOf[js.Any])
     if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
     if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
     if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])

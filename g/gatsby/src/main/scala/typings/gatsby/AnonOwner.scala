@@ -12,7 +12,6 @@ object AnonOwner {
   @scala.inline
   def apply(owner: String): AnonOwner = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOwner]
   }
 }

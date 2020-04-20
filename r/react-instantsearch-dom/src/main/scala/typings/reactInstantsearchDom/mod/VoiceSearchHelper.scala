@@ -22,7 +22,6 @@ object VoiceSearchHelper {
     toggleListening: () => Unit
   ): VoiceSearchHelper = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), getState = js.Any.fromFunction0(getState), isBrowserSupported = js.Any.fromFunction0(isBrowserSupported), isListening = js.Any.fromFunction0(isListening), toggleListening = js.Any.fromFunction0(toggleListening))
-  
     __obj.asInstanceOf[VoiceSearchHelper]
   }
 }

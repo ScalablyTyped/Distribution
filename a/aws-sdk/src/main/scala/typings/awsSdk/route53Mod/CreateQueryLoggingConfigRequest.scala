@@ -20,7 +20,6 @@ object CreateQueryLoggingConfigRequest {
   @scala.inline
   def apply(CloudWatchLogsLogGroupArn: CloudWatchLogsLogGroupArn, HostedZoneId: ResourceId): CreateQueryLoggingConfigRequest = {
     val __obj = js.Dynamic.literal(CloudWatchLogsLogGroupArn = CloudWatchLogsLogGroupArn.asInstanceOf[js.Any], HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateQueryLoggingConfigRequest]
   }
 }

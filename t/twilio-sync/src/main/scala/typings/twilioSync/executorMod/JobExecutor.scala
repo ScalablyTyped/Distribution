@@ -12,7 +12,6 @@ object JobExecutor {
   @scala.inline
   def apply(add: (Task, js.Any, js.Any, js.Any) => js.Any): JobExecutor = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction4(add))
-  
     __obj.asInstanceOf[JobExecutor]
   }
 }

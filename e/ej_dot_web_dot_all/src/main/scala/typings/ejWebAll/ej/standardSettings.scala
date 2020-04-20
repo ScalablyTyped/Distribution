@@ -26,7 +26,6 @@ object standardSettings {
     twoDigitYearMax: Double
   ): standardSettings = {
     val __obj = js.Dynamic.literal(AM = AM.asInstanceOf[js.Any], PM = PM.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], firstDay = firstDay.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], twoDigitYearMax = twoDigitYearMax.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[standardSettings]
   }
 }

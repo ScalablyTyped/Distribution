@@ -55,7 +55,6 @@ object sha64 {
     toWord: js.Any => js.Any
   ): sha64 = {
     val __obj = js.Dynamic.literal(digest = js.Any.fromFunction4(digest), outputTypes = outputTypes.asInstanceOf[js.Any], stringToUtf8 = js.Any.fromFunction1(stringToUtf8), toBase64 = js.Any.fromFunction1(toBase64), toHex = js.Any.fromFunction1(toHex), toWord = js.Any.fromFunction1(toWord))
-  
     __obj.asInstanceOf[sha64]
   }
 }

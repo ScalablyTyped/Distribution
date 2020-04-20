@@ -13,7 +13,6 @@ object InputValidationRequest {
   @scala.inline
   def apply(inputs: StringDictionary[InputValidationItem]): InputValidationRequest = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputValidationRequest]
   }
 }

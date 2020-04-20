@@ -16,7 +16,6 @@ object CreateWorkspacesRequest {
   @scala.inline
   def apply(Workspaces: WorkspaceRequestList): CreateWorkspacesRequest = {
     val __obj = js.Dynamic.literal(Workspaces = Workspaces.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateWorkspacesRequest]
   }
 }

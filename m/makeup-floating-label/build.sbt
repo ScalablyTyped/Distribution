@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "makeup-floating-label"
-version := "0.0-dt-20181030Z-05ddac"
+version := "0.0-dt-20181030Z-a69705"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

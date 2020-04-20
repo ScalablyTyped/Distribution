@@ -12,7 +12,6 @@ object ITextFieldCustomRenderExampleState {
   @scala.inline
   def apply(isCalloutVisible: Boolean): ITextFieldCustomRenderExampleState = {
     val __obj = js.Dynamic.literal(isCalloutVisible = isCalloutVisible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITextFieldCustomRenderExampleState]
   }
 }

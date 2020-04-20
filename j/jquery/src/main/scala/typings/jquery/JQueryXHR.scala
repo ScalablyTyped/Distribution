@@ -38,7 +38,7 @@ trait JQueryXHR extends js.Object {
   var setRequestHeader_Original: js.Function2[/* name */ String, /* value */ String, Unit] = js.native
   var status: Double = js.native
   var statusText: String = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: Promise = js.native
   def abort(): Unit = js.native
   def abort(statusText: String): Unit = js.native
@@ -716,17 +716,17 @@ trait JQueryXHR extends js.Object {
     * @param onrejected The callback to execute when the Promise is rejected.
     * @returns A Promise for the completion of which ever callback is executed.
     */
-  def `then`[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): _Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.UndefOr[scala.Nothing],
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): js.Thenable[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]]): js.Thenable[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]]): _Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]],
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-  ): js.Thenable[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
+  ): _Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): _Promise[TResult1 | TResult2] = js.native
   /**
     * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
     * @param doneFilter An optional function that is called when the Deferred is resolved.
@@ -1227,15 +1227,15 @@ trait JQueryXHR extends js.Object {
     * @returns A Promise for the completion of which ever callback is executed.
     */
   @JSName("then")
-  def then_TResult1TResult2__Promise[TResult1, TResult2](): _Promise[TResult1 | TResult2] = js.native
+  def then_TResult1TResult2_Thenable[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
   @JSName("then")
-  def then_TResult1TResult2__Promise[TResult1, TResult2](onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]]): _Promise[TResult1 | TResult2] = js.native
+  def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]]): js.Thenable[TResult1 | TResult2] = js.native
   @JSName("then")
-  def then_TResult1TResult2__Promise[TResult1, TResult2](
+  def then_TResult1TResult2_Thenable[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]],
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-  ): _Promise[TResult1 | TResult2] = js.native
+  ): js.Thenable[TResult1 | TResult2] = js.native
   @JSName("then")
-  def then_TResult1TResult2__Promise[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): _Promise[TResult1 | TResult2] = js.native
+  def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
 }
 

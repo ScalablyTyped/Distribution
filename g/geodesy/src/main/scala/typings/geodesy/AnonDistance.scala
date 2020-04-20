@@ -15,7 +15,6 @@ object AnonDistance {
   @scala.inline
   def apply(distance: Double, finalBearing: Double, initialBearing: Double, iterations: Double): AnonDistance = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], finalBearing = finalBearing.asInstanceOf[js.Any], initialBearing = initialBearing.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDistance]
   }
 }

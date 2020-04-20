@@ -38,7 +38,6 @@ object VersionsResource {
     update: AnonFingerprint => Request_[ContainerVersion]
   ): VersionsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), live = js.Any.fromFunction1(live), publish = js.Any.fromFunction1(publish), set_latest = js.Any.fromFunction1(set_latest), undelete = js.Any.fromFunction1(undelete), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[VersionsResource]
   }
 }

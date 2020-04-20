@@ -14,10 +14,8 @@ trait OpenRealmBehaviorType extends js.Object
 
 object OpenRealmBehaviorType {
   @scala.inline
-  def DownloadBeforeOpen: downloadBeforeOpen = this.cast("downloadBeforeOpen")
+  def DownloadBeforeOpen: downloadBeforeOpen = "downloadBeforeOpen".asInstanceOf[downloadBeforeOpen]
   @scala.inline
-  def OpenImmediately: openImmediately = this.cast("openImmediately")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OpenImmediately: openImmediately = "openImmediately".asInstanceOf[openImmediately]
 }
 

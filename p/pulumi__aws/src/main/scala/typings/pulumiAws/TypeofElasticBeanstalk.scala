@@ -13,7 +13,6 @@ object TypeofElasticBeanstalk {
   @scala.inline
   def apply(Types: TypeofElasticBeanstalk): TypeofElasticBeanstalk = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofElasticBeanstalk]
   }
 }

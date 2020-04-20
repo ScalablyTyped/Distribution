@@ -56,7 +56,6 @@ object IFileManager {
     setFiles: (String, js.Array[IFile]) => Unit
   ): IFileManager = {
     val __obj = js.Dynamic.literal(clearFiles = js.Any.fromFunction0(clearFiles), getFiles = js.Any.fromFunction0(getFiles), setFiles = js.Any.fromFunction2(setFiles))
-  
     __obj.asInstanceOf[IFileManager]
   }
 }

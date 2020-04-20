@@ -16,7 +16,6 @@ object DeleteDBProxyRequest {
   @scala.inline
   def apply(DBProxyName: String): DeleteDBProxyRequest = {
     val __obj = js.Dynamic.literal(DBProxyName = DBProxyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDBProxyRequest]
   }
 }

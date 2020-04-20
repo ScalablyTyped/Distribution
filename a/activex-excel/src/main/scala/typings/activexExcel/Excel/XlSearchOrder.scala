@@ -14,10 +14,8 @@ trait XlSearchOrder extends js.Object
 
 object XlSearchOrder {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlByColumns: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlByColumns: `2` = this.cast(2)
-  @scala.inline
-  def xlByRows: `1` = this.cast(1)
+  def xlByRows: `1` = 1.asInstanceOf[`1`]
 }
 

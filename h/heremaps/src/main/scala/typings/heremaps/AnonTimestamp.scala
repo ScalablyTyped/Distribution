@@ -12,7 +12,6 @@ object AnonTimestamp {
   @scala.inline
   def apply(Timestamp: String): AnonTimestamp = {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTimestamp]
   }
 }

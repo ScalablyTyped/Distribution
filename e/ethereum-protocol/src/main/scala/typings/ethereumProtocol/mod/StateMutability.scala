@@ -14,14 +14,12 @@ trait StateMutability extends js.Object
 
 object StateMutability {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def nonpayable: typings.ethereumProtocol.ethereumProtocolStrings.nonpayable = "nonpayable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.nonpayable]
   @scala.inline
-  def nonpayable: typings.ethereumProtocol.ethereumProtocolStrings.nonpayable = this.cast("nonpayable")
+  def payable: typings.ethereumProtocol.ethereumProtocolStrings.payable = "payable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.payable]
   @scala.inline
-  def payable: typings.ethereumProtocol.ethereumProtocolStrings.payable = this.cast("payable")
+  def pure: typings.ethereumProtocol.ethereumProtocolStrings.pure = "pure".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.pure]
   @scala.inline
-  def pure: typings.ethereumProtocol.ethereumProtocolStrings.pure = this.cast("pure")
-  @scala.inline
-  def view: typings.ethereumProtocol.ethereumProtocolStrings.view = this.cast("view")
+  def view: typings.ethereumProtocol.ethereumProtocolStrings.view = "view".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.view]
 }
 

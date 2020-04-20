@@ -10,7 +10,6 @@ object _KeySequence {
   @scala.inline
   def KeyMapOptions(action: KeyEventName, sequence: MouseTrapKeySequence): _KeySequence = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_KeySequence]
   }
   @scala.inline

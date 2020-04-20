@@ -15,7 +15,6 @@ object MoveOptions {
   @scala.inline
   def apply(action: NavigateAction, date: Date, today: Date): MoveOptions = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MoveOptions]
   }
 }

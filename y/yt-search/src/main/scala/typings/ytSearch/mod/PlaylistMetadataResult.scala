@@ -30,7 +30,6 @@ object PlaylistMetadataResult {
     views: Double
   ): PlaylistMetadataResult = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], lastUpdate = lastUpdate.asInstanceOf[js.Any], listId = listId.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], videoCount = videoCount.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaylistMetadataResult]
   }
 }

@@ -26,7 +26,6 @@ object Window_NavigationRejectedEvent {
   @scala.inline
   def apply(name: String, sourceName: String, topic: `navigation-rejected`, url: String, uuid: String): Window_NavigationRejectedEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sourceName = sourceName.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window_NavigationRejectedEvent]
   }
 }

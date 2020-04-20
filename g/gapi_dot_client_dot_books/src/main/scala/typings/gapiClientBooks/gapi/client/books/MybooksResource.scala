@@ -15,7 +15,6 @@ object MybooksResource {
   @scala.inline
   def apply(list: AnonAcquireMethod => Request_[Volumes]): MybooksResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[MybooksResource]
   }
 }

@@ -20,7 +20,6 @@ object CreateHealthCheckRequest {
   @scala.inline
   def apply(CallerReference: HealthCheckNonce, HealthCheckConfig: HealthCheckConfig): CreateHealthCheckRequest = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], HealthCheckConfig = HealthCheckConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateHealthCheckRequest]
   }
 }

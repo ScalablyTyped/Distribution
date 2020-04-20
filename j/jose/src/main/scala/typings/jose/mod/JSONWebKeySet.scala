@@ -12,7 +12,6 @@ object JSONWebKeySet {
   @scala.inline
   def apply(keys: js.Array[JSONWebKey]): JSONWebKeySet = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSONWebKeySet]
   }
 }

@@ -16,7 +16,6 @@ object StartJobRequest {
   @scala.inline
   def apply(JobId: string): StartJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartJobRequest]
   }
 }

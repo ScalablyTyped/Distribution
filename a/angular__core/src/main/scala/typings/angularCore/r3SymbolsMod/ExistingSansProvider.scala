@@ -23,7 +23,6 @@ object ExistingSansProvider {
   @scala.inline
   def apply(useExisting: js.Any): ExistingSansProvider = {
     val __obj = js.Dynamic.literal(useExisting = useExisting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExistingSansProvider]
   }
 }

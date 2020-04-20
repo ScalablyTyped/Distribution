@@ -14,7 +14,6 @@ object AnonAttrs {
   @scala.inline
   def apply(attrs: ShortcodeAttrs, tag: String): AnonAttrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttrs]
   }
 }

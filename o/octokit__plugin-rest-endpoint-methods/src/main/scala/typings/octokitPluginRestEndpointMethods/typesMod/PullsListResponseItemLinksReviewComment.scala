@@ -12,7 +12,6 @@ object PullsListResponseItemLinksReviewComment {
   @scala.inline
   def apply(href: String): PullsListResponseItemLinksReviewComment = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsListResponseItemLinksReviewComment]
   }
 }

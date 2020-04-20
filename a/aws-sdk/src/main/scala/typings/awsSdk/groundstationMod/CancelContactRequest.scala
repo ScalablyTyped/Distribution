@@ -16,7 +16,6 @@ object CancelContactRequest {
   @scala.inline
   def apply(contactId: String): CancelContactRequest = {
     val __obj = js.Dynamic.literal(contactId = contactId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelContactRequest]
   }
 }

@@ -13,7 +13,6 @@ object GitPathToItemsCollection {
   @scala.inline
   def apply(items: StringDictionary[js.Array[GitItem]]): GitPathToItemsCollection = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitPathToItemsCollection]
   }
 }

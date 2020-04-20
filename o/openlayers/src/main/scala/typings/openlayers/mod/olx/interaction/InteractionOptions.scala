@@ -16,7 +16,6 @@ object InteractionOptions {
   @scala.inline
   def apply(handleEvent: MapBrowserEvent => Boolean): InteractionOptions = {
     val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
-  
     __obj.asInstanceOf[InteractionOptions]
   }
 }

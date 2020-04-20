@@ -14,7 +14,6 @@ object AnonPass {
   @scala.inline
   def apply(alg: String, pass: StringDictionary[String]): AnonPass = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPass]
   }
 }

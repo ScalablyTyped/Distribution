@@ -18,14 +18,12 @@ trait XlHebrewModes extends js.Object
 
 object XlHebrewModes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlHebrewFullScript: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlHebrewFullScript: `0` = this.cast(0)
+  def xlHebrewMixedAuthorizedScript: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlHebrewMixedAuthorizedScript: `3` = this.cast(3)
+  def xlHebrewMixedScript: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlHebrewMixedScript: `2` = this.cast(2)
-  @scala.inline
-  def xlHebrewPartialScript: `1` = this.cast(1)
+  def xlHebrewPartialScript: `1` = 1.asInstanceOf[`1`]
 }
 

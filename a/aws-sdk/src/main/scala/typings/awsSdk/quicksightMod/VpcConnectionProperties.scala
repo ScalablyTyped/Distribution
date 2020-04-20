@@ -16,7 +16,6 @@ object VpcConnectionProperties {
   @scala.inline
   def apply(VpcConnectionArn: Arn): VpcConnectionProperties = {
     val __obj = js.Dynamic.literal(VpcConnectionArn = VpcConnectionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcConnectionProperties]
   }
 }

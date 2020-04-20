@@ -13,7 +13,6 @@ object AnonForm {
   @scala.inline
   def apply(form: StringDictionary[String]): AnonForm = {
     val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonForm]
   }
 }

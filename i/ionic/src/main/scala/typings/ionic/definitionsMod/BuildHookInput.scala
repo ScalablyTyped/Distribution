@@ -18,7 +18,6 @@ object BuildHookInput {
     name: buildColonbefore | buildColonafter
   ): BuildHookInput = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildHookInput]
   }
 }

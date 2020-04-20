@@ -28,7 +28,6 @@ object AnonEvent {
     ]
   ): AnonEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], selectedNodes = selectedNodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEvent]
   }
 }

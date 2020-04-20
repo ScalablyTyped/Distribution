@@ -20,7 +20,6 @@ object RemovePermissionRequest {
   @scala.inline
   def apply(Label: String, QueueUrl: String): RemovePermissionRequest = {
     val __obj = js.Dynamic.literal(Label = Label.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemovePermissionRequest]
   }
 }

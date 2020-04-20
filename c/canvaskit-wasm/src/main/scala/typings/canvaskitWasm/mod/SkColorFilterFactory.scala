@@ -24,7 +24,6 @@ object SkColorFilterFactory {
     MakeSRGBToLinearGamma: () => SkColorFilter
   ): SkColorFilterFactory = {
     val __obj = js.Dynamic.literal(MakeBlend = js.Any.fromFunction2(MakeBlend), MakeCompose = js.Any.fromFunction2(MakeCompose), MakeLerp = js.Any.fromFunction3(MakeLerp), MakeLinearToSRGBGamma = js.Any.fromFunction0(MakeLinearToSRGBGamma), MakeMatrix = js.Any.fromFunction1(MakeMatrix), MakeSRGBToLinearGamma = js.Any.fromFunction0(MakeSRGBToLinearGamma))
-  
     __obj.asInstanceOf[SkColorFilterFactory]
   }
 }

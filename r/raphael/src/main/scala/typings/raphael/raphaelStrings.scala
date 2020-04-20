@@ -347,9 +347,9 @@ object raphaelStrings {
   sealed trait z_ extends js.Object
   
   @scala.inline
-  def `- `: `- ` = "- ".asInstanceOf[`- `]
+  def `- `: `- ` = ("- ").asInstanceOf[`- `]
   @scala.inline
-  def `- Dot`: `- Dot` = "- .".asInstanceOf[`- Dot`]
+  def `- Dot`: `- Dot` = ("- .").asInstanceOf[`- Dot`]
   @scala.inline
   def `--`: `--` = "--".asInstanceOf[`--`]
   @scala.inline
@@ -369,7 +369,7 @@ object raphaelStrings {
   @scala.inline
   def Dot: Dot = ".".asInstanceOf[Dot]
   @scala.inline
-  def `Dot `: `Dot ` = ". ".asInstanceOf[`Dot `]
+  def `Dot `: `Dot ` = (". ").asInstanceOf[`Dot `]
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   @scala.inline

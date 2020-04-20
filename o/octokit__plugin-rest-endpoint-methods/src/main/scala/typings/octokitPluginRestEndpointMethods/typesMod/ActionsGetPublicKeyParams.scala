@@ -13,7 +13,6 @@ object ActionsGetPublicKeyParams {
   @scala.inline
   def apply(owner: String, repo: String): ActionsGetPublicKeyParams = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionsGetPublicKeyParams]
   }
 }

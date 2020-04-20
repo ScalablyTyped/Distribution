@@ -1,6 +1,7 @@
 package typings.parse.mod
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import typings.parse.mod._Global_.Parse.Attributes
 import typings.parse.mod._Global_.Parse.Cloud.AfterDeleteRequest
 import typings.parse.mod._Global_.Parse.Cloud.AfterFindRequest
@@ -8,6 +9,7 @@ import typings.parse.mod._Global_.Parse.Cloud.AfterSaveRequest
 import typings.parse.mod._Global_.Parse.Cloud.BeforeDeleteRequest
 import typings.parse.mod._Global_.Parse.Cloud.BeforeFindRequest
 import typings.parse.mod._Global_.Parse.Cloud.BeforeSaveRequest
+import typings.parse.mod._Global_.Parse.Cloud.FileTriggerRequest
 import typings.parse.mod._Global_.Parse.Cloud.FunctionRequest
 import typings.parse.mod._Global_.Parse.Cloud.HTTPOptions
 import typings.parse.mod._Global_.Parse.Cloud.HttpResponse
@@ -41,12 +43,22 @@ object Cloud extends js.Object {
   var HTTPOptions: Instantiable0[typings.parse.mod._Global_.Parse.Cloud.HTTPOptions] = js.native
   def afterDelete(arg1: js.Any): Unit = js.native
   def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  def afterDeleteFile(): Unit = js.native
+  def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
   def afterFind(arg1: js.Any): Unit = js.native
   def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, _]): Unit = js.native
+  def afterLogin(): Unit = js.native
+  def afterLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  def afterLogout(): Unit = js.native
+  def afterLogout(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
   def afterSave(arg1: js.Any): Unit = js.native
   def afterSave(arg1: js.Any, func: js.Function1[/* request */ AfterSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  def afterSaveFile(): Unit = js.native
+  def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
   def beforeDelete(arg1: js.Any): Unit = js.native
   def beforeDelete(arg1: js.Any, func: js.Function1[/* request */ BeforeDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  def beforeDeleteFile(): Unit = js.native
+  def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
   def beforeFind(arg1: js.Any): Unit = js.native
   def beforeFind(
     arg1: js.Any,
@@ -58,15 +70,22 @@ object Cloud extends js.Object {
     ]
   ): Unit = js.native
   def beforeLogin(): Unit = js.native
-  def beforeLogin(func: js.Function1[/* request */ TriggerRequest, _]): Unit = js.native
+  def beforeLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
   def beforeSave(arg1: js.Any): Unit = js.native
   def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  def beforeSaveFile(): Unit = js.native
+  def beforeSaveFile(
+    func: js.Function1[
+      /* request */ FileTriggerRequest, 
+      js.Thenable[typings.parse.mod._Global_.Parse.File] | Unit
+    ]
+  ): Unit = js.native
   def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], _]): Unit = js.native
   @JSName("define")
   def define_0[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ define with Parameters[T], 
+    */ /* param */ define with TopLevel[Parameters[T]], 
     _
   ] */](
     name: String,
@@ -107,7 +126,7 @@ object Cloud extends js.Object {
   def run_0[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ run with Parameters[T], 
+    */ /* param */ run with TopLevel[Parameters[T]], 
     _
   ] */](
     name: String,
@@ -117,7 +136,7 @@ object Cloud extends js.Object {
   def run_0[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ run with Parameters[T], 
+    */ /* param */ run with TopLevel[Parameters[T]], 
     _
   ] */](
     name: String,

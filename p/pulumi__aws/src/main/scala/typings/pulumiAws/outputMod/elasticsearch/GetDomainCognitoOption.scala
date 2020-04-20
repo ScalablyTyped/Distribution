@@ -28,7 +28,6 @@ object GetDomainCognitoOption {
   @scala.inline
   def apply(enabled: Boolean, identityPoolId: String, roleArn: String, userPoolId: String): GetDomainCognitoOption = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], identityPoolId = identityPoolId.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainCognitoOption]
   }
 }

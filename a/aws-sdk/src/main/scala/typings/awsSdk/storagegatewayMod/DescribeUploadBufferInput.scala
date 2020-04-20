@@ -13,7 +13,6 @@ object DescribeUploadBufferInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN): DescribeUploadBufferInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeUploadBufferInput]
   }
 }

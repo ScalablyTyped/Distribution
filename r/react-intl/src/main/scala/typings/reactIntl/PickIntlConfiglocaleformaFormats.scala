@@ -16,7 +16,6 @@ object PickIntlConfiglocaleformaFormats {
   @scala.inline
   def apply(formats: CustomFormats, locale: String, onError: /* err */ String => Unit): PickIntlConfiglocaleformaFormats = {
     val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError))
-  
     __obj.asInstanceOf[PickIntlConfiglocaleformaFormats]
   }
 }

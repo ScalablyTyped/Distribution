@@ -43,6 +43,12 @@ trait BasemapToggle extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#viewModel)
     */
   var viewModel: BasemapToggleViewModel = js.native
+  /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#visibleElements)
+    */
+  var visibleElements: BasemapToggleVisibleElements = js.native
   @JSName("on")
   def on_toggle(name: toggle, eventHandler: BasemapToggleToggleEventHandler): IHandle = js.native
   /**

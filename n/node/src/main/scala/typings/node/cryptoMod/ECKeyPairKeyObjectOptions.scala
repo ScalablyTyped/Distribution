@@ -15,7 +15,6 @@ object ECKeyPairKeyObjectOptions {
   @scala.inline
   def apply(namedCurve: String): ECKeyPairKeyObjectOptions = {
     val __obj = js.Dynamic.literal(namedCurve = namedCurve.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ECKeyPairKeyObjectOptions]
   }
 }

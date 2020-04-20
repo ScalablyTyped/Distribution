@@ -16,7 +16,6 @@ object StopContinuousExportRequest {
   @scala.inline
   def apply(exportId: ConfigurationsExportId): StopContinuousExportRequest = {
     val __obj = js.Dynamic.literal(exportId = exportId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopContinuousExportRequest]
   }
 }

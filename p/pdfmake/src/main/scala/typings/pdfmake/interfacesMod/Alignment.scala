@@ -14,14 +14,12 @@ trait Alignment extends js.Object
 
 object Alignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.pdfmake.pdfmakeStrings.center = "center".asInstanceOf[typings.pdfmake.pdfmakeStrings.center]
   @scala.inline
-  def center: typings.pdfmake.pdfmakeStrings.center = this.cast("center")
+  def justify: typings.pdfmake.pdfmakeStrings.justify = "justify".asInstanceOf[typings.pdfmake.pdfmakeStrings.justify]
   @scala.inline
-  def justify: typings.pdfmake.pdfmakeStrings.justify = this.cast("justify")
+  def left: typings.pdfmake.pdfmakeStrings.left = "left".asInstanceOf[typings.pdfmake.pdfmakeStrings.left]
   @scala.inline
-  def left: typings.pdfmake.pdfmakeStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.pdfmake.pdfmakeStrings.right = this.cast("right")
+  def right: typings.pdfmake.pdfmakeStrings.right = "right".asInstanceOf[typings.pdfmake.pdfmakeStrings.right]
 }
 

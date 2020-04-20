@@ -15,7 +15,6 @@ object AnonAspectRatio {
   @scala.inline
   def apply(aspectRatio: Double, far: Double, near: Double, width: Double): AnonAspectRatio = {
     val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], near = near.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAspectRatio]
   }
 }

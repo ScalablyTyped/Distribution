@@ -12,7 +12,6 @@ object AnonPressColor {
   @scala.inline
   def apply(pressColor: String): AnonPressColor = {
     val __obj = js.Dynamic.literal(pressColor = pressColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPressColor]
   }
 }

@@ -15,10 +15,8 @@ trait Phase extends js.Object
 
 object Phase {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def compose: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.compose = "compose".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.compose]
   @scala.inline
-  def compose: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.compose = this.cast("compose")
-  @scala.inline
-  def fetch: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.fetch = this.cast("fetch")
+  def fetch: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.fetch = "fetch".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.fetch]
 }
 

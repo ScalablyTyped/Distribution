@@ -53,7 +53,6 @@ object GetScalingPlanResourceForecastDataRequest {
     StartTime: TimestampType
   ): GetScalingPlanResourceForecastDataRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], ForecastDataType = ForecastDataType.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any], ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ScalingPlanName = ScalingPlanName.asInstanceOf[js.Any], ScalingPlanVersion = ScalingPlanVersion.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetScalingPlanResourceForecastDataRequest]
   }
 }

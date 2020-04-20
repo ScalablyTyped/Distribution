@@ -13,7 +13,6 @@ object ImgInput {
   @scala.inline
   def apply(source: String, title: String): ImgInput = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImgInput]
   }
 }

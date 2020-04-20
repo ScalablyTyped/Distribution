@@ -3,6 +3,7 @@ package typings.passportSocketio.mod
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.NextFunction
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.expressSession.mod.Store
@@ -15,7 +16,7 @@ trait PassportSocketIoOptions extends js.Object {
   /**
     * the same middleware you registrer in express.
     */
-  var cookieParser: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var cookieParser: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.undefined
   /**
     * callback on fail/error.
     */
@@ -57,7 +58,7 @@ object PassportSocketIoOptions {
   @scala.inline
   def apply(
     store: Store,
-    cookieParser: (/* req */ Request[ParamsDictionary, js.Any, js.Any], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
+    cookieParser: (/* req */ Request[ParamsDictionary, _, _, Query], /* res */ Response[_], /* next */ NextFunction) => js.Any = null,
     fail: (/* data */ js.Any, /* message */ String, /* critical */ String, /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit]) => Unit = null,
     key: String = null,
     passport: PassportStatic = null,

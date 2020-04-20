@@ -315,7 +315,7 @@ object nodePgMigrateStrings {
   @scala.inline
   def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
   @scala.inline
-  def `BY DEFAULT`: `BY DEFAULT` = "BY DEFAULT".asInstanceOf[`BY DEFAULT`]
+  def `BY DEFAULT`: `BY DEFAULT` = ("BY DEFAULT").asInstanceOf[`BY DEFAULT`]
   @scala.inline
   def CASCADE: CASCADE = "CASCADE".asInstanceOf[CASCADE]
   @scala.inline
@@ -349,13 +349,13 @@ object nodePgMigrateStrings {
   @scala.inline
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
   @scala.inline
-  def `INSTEAD OF`: `INSTEAD OF` = "INSTEAD OF".asInstanceOf[`INSTEAD OF`]
+  def `INSTEAD OF`: `INSTEAD OF` = ("INSTEAD OF").asInstanceOf[`INSTEAD OF`]
   @scala.inline
   def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
   @scala.inline
-  def `NO ACTION`: `NO ACTION` = "NO ACTION".asInstanceOf[`NO ACTION`]
+  def `NO ACTION`: `NO ACTION` = ("NO ACTION").asInstanceOf[`NO ACTION`]
   @scala.inline
-  def `NO FORCE`: `NO FORCE` = "NO FORCE".asInstanceOf[`NO FORCE`]
+  def `NO FORCE`: `NO FORCE` = ("NO FORCE").asInstanceOf[`NO FORCE`]
   @scala.inline
   def OUT: OUT = "OUT".asInstanceOf[OUT]
   @scala.inline
@@ -369,9 +369,9 @@ object nodePgMigrateStrings {
   @scala.inline
   def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
   @scala.inline
-  def `SET DEFAULT`: `SET DEFAULT` = "SET DEFAULT".asInstanceOf[`SET DEFAULT`]
+  def `SET DEFAULT`: `SET DEFAULT` = ("SET DEFAULT").asInstanceOf[`SET DEFAULT`]
   @scala.inline
-  def `SET NULL`: `SET NULL` = "SET NULL".asInstanceOf[`SET NULL`]
+  def `SET NULL`: `SET NULL` = ("SET NULL").asInstanceOf[`SET NULL`]
   @scala.inline
   def SIMPLE: SIMPLE = "SIMPLE".asInstanceOf[SIMPLE]
   @scala.inline

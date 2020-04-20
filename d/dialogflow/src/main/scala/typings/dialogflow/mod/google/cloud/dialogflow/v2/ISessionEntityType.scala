@@ -11,7 +11,9 @@ trait ISessionEntityType extends js.Object {
   /** SessionEntityType entities */
   var entities: js.UndefOr[js.Array[IEntity] | Null] = js.undefined
   /** SessionEntityType entityOverrideMode */
-  var entityOverrideMode: js.UndefOr[EntityOverrideMode | String | Null] = js.undefined
+  var entityOverrideMode: js.UndefOr[
+    EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SessionEntityType.EntityOverrideMode * / any */ String) | Null
+  ] = js.undefined
   /** SessionEntityType name */
   var name: js.UndefOr[String | Null] = js.undefined
 }
@@ -20,7 +22,7 @@ object ISessionEntityType {
   @scala.inline
   def apply(
     entities: js.Array[IEntity] = null,
-    entityOverrideMode: EntityOverrideMode | String = null,
+    entityOverrideMode: EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SessionEntityType.EntityOverrideMode * / any */ String) = null,
     name: String = null
   ): ISessionEntityType = {
     val __obj = js.Dynamic.literal()

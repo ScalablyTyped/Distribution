@@ -14,7 +14,6 @@ object AnonBucketcurrent {
   @scala.inline
   def apply(bucket_current: Double, bucket_duration: Double, length: Double): AnonBucketcurrent = {
     val __obj = js.Dynamic.literal(bucket_current = bucket_current.asInstanceOf[js.Any], bucket_duration = bucket_duration.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBucketcurrent]
   }
 }

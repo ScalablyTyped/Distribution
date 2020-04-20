@@ -12,7 +12,6 @@ object GeoWithinOptions {
   @scala.inline
   def apply(geometry: Polygon | MultiPolygon): GeoWithinOptions = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeoWithinOptions]
   }
 }

@@ -24,7 +24,6 @@ object UpdateSqlInjectionMatchSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, SqlInjectionMatchSetId: ResourceId, Updates: SqlInjectionMatchSetUpdates): UpdateSqlInjectionMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], SqlInjectionMatchSetId = SqlInjectionMatchSetId.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSqlInjectionMatchSetRequest]
   }
 }

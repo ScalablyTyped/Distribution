@@ -15,7 +15,6 @@ object AnonCreate {
   @scala.inline
   def apply(create: CreateConfig => LinkHandler, version: String): AnonCreate = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCreate]
   }
 }

@@ -22,18 +22,16 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  def AuditFailure: `5` = this.cast(5)
+  def AuditFailure: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def AuditSuccess: `4` = this.cast(4)
+  def AuditSuccess: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Error: `1` = this.cast(1)
+  def Error: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Information: `3` = this.cast(3)
+  def Information: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Success: `0` = this.cast(0)
+  def Success: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Warning: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Warning: `2` = 2.asInstanceOf[`2`]
 }
 

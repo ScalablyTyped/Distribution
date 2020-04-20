@@ -14,7 +14,6 @@ object RecognitionJobs {
   @scala.inline
   def apply(recognitions: js.Array[RecognitionJob]): RecognitionJobs = {
     val __obj = js.Dynamic.literal(recognitions = recognitions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecognitionJobs]
   }
 }

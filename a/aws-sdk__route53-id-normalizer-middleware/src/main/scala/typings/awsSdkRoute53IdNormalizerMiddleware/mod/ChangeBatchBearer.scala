@@ -13,7 +13,6 @@ object ChangeBatchBearer {
   @scala.inline
   def apply(ChangeBatch: AnonChanges): ChangeBatchBearer = {
     val __obj = js.Dynamic.literal(ChangeBatch = ChangeBatch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeBatchBearer]
   }
 }

@@ -14,10 +14,8 @@ trait XlInsertShiftDirection extends js.Object
 
 object XlInsertShiftDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlShiftDown: `-4121` = -4121.asInstanceOf[`-4121`]
   @scala.inline
-  def xlShiftDown: `-4121` = this.cast(-4121)
-  @scala.inline
-  def xlShiftToRight: `-4161` = this.cast(-4161)
+  def xlShiftToRight: `-4161` = -4161.asInstanceOf[`-4161`]
 }
 

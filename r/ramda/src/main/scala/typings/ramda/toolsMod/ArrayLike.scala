@@ -12,7 +12,6 @@ object ArrayLike {
   @scala.inline
   def apply(nodeType: Double): ArrayLike = {
     val __obj = js.Dynamic.literal(nodeType = nodeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArrayLike]
   }
 }

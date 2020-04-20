@@ -20,7 +20,6 @@ object KinesisStreamSourceConfiguration {
   @scala.inline
   def apply(KinesisStreamARN: KinesisStreamARN, RoleARN: RoleARN): KinesisStreamSourceConfiguration = {
     val __obj = js.Dynamic.literal(KinesisStreamARN = KinesisStreamARN.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinesisStreamSourceConfiguration]
   }
 }

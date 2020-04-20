@@ -12,10 +12,8 @@ trait AutoCompleteTrigger extends js.Object
 
 object AutoCompleteTrigger {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def focus: typings.jsoneditor.jsoneditorStrings.focus = "focus".asInstanceOf[typings.jsoneditor.jsoneditorStrings.focus]
   @scala.inline
-  def focus: typings.jsoneditor.jsoneditorStrings.focus = this.cast("focus")
-  @scala.inline
-  def keydown: typings.jsoneditor.jsoneditorStrings.keydown = this.cast("keydown")
+  def keydown: typings.jsoneditor.jsoneditorStrings.keydown = "keydown".asInstanceOf[typings.jsoneditor.jsoneditorStrings.keydown]
 }
 

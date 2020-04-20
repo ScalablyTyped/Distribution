@@ -12,7 +12,6 @@ object PaginationState {
   @scala.inline
   def apply(current: Double): PaginationState = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PaginationState]
   }
 }

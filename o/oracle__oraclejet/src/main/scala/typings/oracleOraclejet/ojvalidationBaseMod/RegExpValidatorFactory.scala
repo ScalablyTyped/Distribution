@@ -13,7 +13,6 @@ object RegExpValidatorFactory {
   @scala.inline
   def apply(createValidator: ValidatorOptions => RegExpValidator): RegExpValidatorFactory = {
     val __obj = js.Dynamic.literal(createValidator = js.Any.fromFunction1(createValidator))
-  
     __obj.asInstanceOf[RegExpValidatorFactory]
   }
 }

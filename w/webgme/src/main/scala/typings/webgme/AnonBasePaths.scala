@@ -33,7 +33,6 @@ object AnonBasePaths {
   @scala.inline
   def apply(basePaths: js.Array[String], enable: Boolean, monitorTimeout: Double): AnonBasePaths = {
     val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], monitorTimeout = monitorTimeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBasePaths]
   }
 }

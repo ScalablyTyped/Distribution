@@ -21,7 +21,6 @@ object UpdateEndpointRequest {
   @scala.inline
   def apply(ApplicationId: string, EndpointId: string, EndpointRequest: EndpointRequest): UpdateEndpointRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointId = EndpointId.asInstanceOf[js.Any], EndpointRequest = EndpointRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateEndpointRequest]
   }
 }

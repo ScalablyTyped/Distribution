@@ -17,7 +17,6 @@ object GiffferOptions {
   @scala.inline
   def apply(playButtonIconStyles: StringDictionary[String], playButtonStyles: StringDictionary[String]): GiffferOptions = {
     val __obj = js.Dynamic.literal(playButtonIconStyles = playButtonIconStyles.asInstanceOf[js.Any], playButtonStyles = playButtonStyles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GiffferOptions]
   }
 }

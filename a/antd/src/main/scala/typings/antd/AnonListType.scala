@@ -27,7 +27,6 @@ object AnonListType {
     showRemoveIcon: Boolean
   ): AnonListType = {
     val __obj = js.Dynamic.literal(listType = listType.asInstanceOf[js.Any], previewFile = js.Any.fromFunction1(previewFile), progressAttr = progressAttr.asInstanceOf[js.Any], showDownloadIcon = showDownloadIcon.asInstanceOf[js.Any], showPreviewIcon = showPreviewIcon.asInstanceOf[js.Any], showRemoveIcon = showRemoveIcon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonListType]
   }
 }

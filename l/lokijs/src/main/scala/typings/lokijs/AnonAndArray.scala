@@ -13,7 +13,6 @@ object AnonAndArray {
   @scala.inline
   def apply($and: js.Array[_]): AnonAndArray = {
     val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAndArray]
   }
 }

@@ -31,7 +31,6 @@ object WorkboxEventMap {
     waiting: WorkboxWaitingEvent
   ): WorkboxEventMap = {
     val __obj = js.Dynamic.literal(activated = activated.asInstanceOf[js.Any], controlling = controlling.asInstanceOf[js.Any], externalactivated = externalactivated.asInstanceOf[js.Any], externalinstalled = externalinstalled.asInstanceOf[js.Any], externalwaiting = externalwaiting.asInstanceOf[js.Any], installed = installed.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], redundant = redundant.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkboxEventMap]
   }
 }

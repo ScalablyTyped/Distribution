@@ -15,7 +15,6 @@ object PluginDevice {
   @scala.inline
   def apply(Description: String, Name: String, Path: String, Settable: js.Array[String]): PluginDevice = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], Settable = Settable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginDevice]
   }
 }

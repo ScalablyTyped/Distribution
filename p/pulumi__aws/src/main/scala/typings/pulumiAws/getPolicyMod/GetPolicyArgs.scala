@@ -16,7 +16,6 @@ object GetPolicyArgs {
   @scala.inline
   def apply(arn: String): GetPolicyArgs = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPolicyArgs]
   }
 }

@@ -16,7 +16,6 @@ object AnonHashAlgorithm {
   @scala.inline
   def apply(acls: js.Array[ACL], hashAlgorithm: String, http: AnonPath, ignoreErrors: Boolean): AnonHashAlgorithm = {
     val __obj = js.Dynamic.literal(acls = acls.asInstanceOf[js.Any], hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], ignoreErrors = ignoreErrors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHashAlgorithm]
   }
 }

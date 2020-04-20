@@ -13,7 +13,6 @@ object AnonAttachment {
   @scala.inline
   def apply(attachment: Double, changeEntry: Double): AnonAttachment = {
     val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], changeEntry = changeEntry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttachment]
   }
 }

@@ -16,7 +16,6 @@ object DisassociateCertificateRequest {
   @scala.inline
   def apply(Arn: string): DisassociateCertificateRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateCertificateRequest]
   }
 }

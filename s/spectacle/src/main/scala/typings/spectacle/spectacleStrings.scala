@@ -263,11 +263,11 @@ object spectacleStrings {
   @scala.inline
   def bounceOut: bounceOut = "bounceOut".asInstanceOf[bounceOut]
   @scala.inline
-  def `center center`: `center center` = "center center".asInstanceOf[`center center`]
+  def `center center`: `center center` = ("center center").asInstanceOf[`center center`]
   @scala.inline
-  def `center flex-end`: `center flex-end` = "center flex-end".asInstanceOf[`center flex-end`]
+  def `center flex-end`: `center flex-end` = ("center flex-end").asInstanceOf[`center flex-end`]
   @scala.inline
-  def `center flex-start`: `center flex-start` = "center flex-start".asInstanceOf[`center flex-start`]
+  def `center flex-start`: `center flex-start` = ("center flex-start").asInstanceOf[`center flex-start`]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
@@ -311,17 +311,17 @@ object spectacleStrings {
   @scala.inline
   def fade: fade = "fade".asInstanceOf[fade]
   @scala.inline
-  def `flex-end center`: `flex-end center` = "flex-end center".asInstanceOf[`flex-end center`]
+  def `flex-end center`: `flex-end center` = ("flex-end center").asInstanceOf[`flex-end center`]
   @scala.inline
-  def `flex-end flex-end`: `flex-end flex-end` = "flex-end flex-end".asInstanceOf[`flex-end flex-end`]
+  def `flex-end flex-end`: `flex-end flex-end` = ("flex-end flex-end").asInstanceOf[`flex-end flex-end`]
   @scala.inline
-  def `flex-end flex-start`: `flex-end flex-start` = "flex-end flex-start".asInstanceOf[`flex-end flex-start`]
+  def `flex-end flex-start`: `flex-end flex-start` = ("flex-end flex-start").asInstanceOf[`flex-end flex-start`]
   @scala.inline
-  def `flex-start center`: `flex-start center` = "flex-start center".asInstanceOf[`flex-start center`]
+  def `flex-start center`: `flex-start center` = ("flex-start center").asInstanceOf[`flex-start center`]
   @scala.inline
-  def `flex-start flex-end`: `flex-start flex-end` = "flex-start flex-end".asInstanceOf[`flex-start flex-end`]
+  def `flex-start flex-end`: `flex-start flex-end` = ("flex-start flex-end").asInstanceOf[`flex-start flex-end`]
   @scala.inline
-  def `flex-start flex-start`: `flex-start flex-start` = "flex-start flex-start".asInstanceOf[`flex-start flex-start`]
+  def `flex-start flex-start`: `flex-start flex-start` = ("flex-start flex-start").asInstanceOf[`flex-start flex-start`]
   @scala.inline
   def greenCheck: greenCheck = "greenCheck".asInstanceOf[greenCheck]
   @scala.inline

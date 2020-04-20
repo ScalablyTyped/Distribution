@@ -31,7 +31,6 @@ object DistanceMeasurement2DViewModelMeasurement {
     propertyIsEnumerable: PropertyKey => Boolean
   ): DistanceMeasurement2DViewModelMeasurement = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), length = length.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[DistanceMeasurement2DViewModelMeasurement]
   }
 }

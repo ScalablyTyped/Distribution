@@ -13,7 +13,6 @@ object PickImplignoreFirstLoad {
   @scala.inline
   def apply(ignoreFirstLoad: Boolean): PickImplignoreFirstLoad = {
     val __obj = js.Dynamic.literal(ignoreFirstLoad = ignoreFirstLoad.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplignoreFirstLoad]
   }
 }

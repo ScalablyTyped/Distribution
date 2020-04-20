@@ -12,10 +12,8 @@ trait AnimationPlayTo extends js.Object
 
 object AnimationPlayTo {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def end: typings.ionicCore.ionicCoreStrings.end = "end".asInstanceOf[typings.ionicCore.ionicCoreStrings.end]
   @scala.inline
-  def end: typings.ionicCore.ionicCoreStrings.end = this.cast("end")
-  @scala.inline
-  def start: typings.ionicCore.ionicCoreStrings.start = this.cast("start")
+  def start: typings.ionicCore.ionicCoreStrings.start = "start".asInstanceOf[typings.ionicCore.ionicCoreStrings.start]
 }
 

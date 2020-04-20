@@ -202,7 +202,7 @@ object datetimeMod extends js.Object {
     def open(): js.Promise[Unit] = js.native
     @JSName("render")
     def render_MDatetime(): js.Any = js.native
-    /* private */ def text(): js.Any = js.native
+    /* private */ def text: js.Any = js.native
     /**
       * Update the datetime value when the value changes
       */

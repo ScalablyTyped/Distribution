@@ -13,7 +13,6 @@ object AnonSelectedIndex {
   @scala.inline
   def apply(selectedIndex: Double, tintColor: String): AnonSelectedIndex = {
     val __obj = js.Dynamic.literal(selectedIndex = selectedIndex.asInstanceOf[js.Any], tintColor = tintColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelectedIndex]
   }
 }

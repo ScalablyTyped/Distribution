@@ -12,7 +12,6 @@ object HasId {
   @scala.inline
   def apply(id: Id[HasId]): HasId = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HasId]
   }
 }

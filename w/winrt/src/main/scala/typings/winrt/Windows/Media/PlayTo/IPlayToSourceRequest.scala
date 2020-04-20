@@ -21,7 +21,6 @@ object IPlayToSourceRequest {
     setSource: PlayToSource => Unit
   ): IPlayToSourceRequest = {
     val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], displayErrorString = js.Any.fromFunction1(displayErrorString), getDeferral = js.Any.fromFunction0(getDeferral), setSource = js.Any.fromFunction1(setSource))
-  
     __obj.asInstanceOf[IPlayToSourceRequest]
   }
 }

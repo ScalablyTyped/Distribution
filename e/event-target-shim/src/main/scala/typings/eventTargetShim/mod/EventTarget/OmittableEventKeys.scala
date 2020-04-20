@@ -32,48 +32,46 @@ trait OmittableEventKeys extends js.Object
 
 object OmittableEventKeys {
   @scala.inline
-  def AT_TARGET: typings.eventTargetShim.eventTargetShimStrings.AT_TARGET = this.cast("AT_TARGET")
+  def AT_TARGET: typings.eventTargetShim.eventTargetShimStrings.AT_TARGET = "AT_TARGET".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.AT_TARGET]
   @scala.inline
-  def BUBBLING_PHASE: typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE = this.cast("BUBBLING_PHASE")
+  def BUBBLING_PHASE: typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE = "BUBBLING_PHASE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE]
   @scala.inline
-  def CAPTURING_PHASE: typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE = this.cast("CAPTURING_PHASE")
+  def CAPTURING_PHASE: typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE = "CAPTURING_PHASE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE]
   @scala.inline
-  def NONE: typings.eventTargetShim.eventTargetShimStrings.NONE = this.cast("NONE")
+  def NONE: typings.eventTargetShim.eventTargetShimStrings.NONE = "NONE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.NONE]
   @scala.inline
-  def bubbles: typings.eventTargetShim.eventTargetShimStrings.bubbles = this.cast("bubbles")
+  def bubbles: typings.eventTargetShim.eventTargetShimStrings.bubbles = "bubbles".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.bubbles]
   @scala.inline
-  def cancelBubble: typings.eventTargetShim.eventTargetShimStrings.cancelBubble = this.cast("cancelBubble")
+  def cancelBubble: typings.eventTargetShim.eventTargetShimStrings.cancelBubble = "cancelBubble".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.cancelBubble]
   @scala.inline
-  def cancelable: typings.eventTargetShim.eventTargetShimStrings.cancelable = this.cast("cancelable")
+  def cancelable: typings.eventTargetShim.eventTargetShimStrings.cancelable = "cancelable".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.cancelable]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def composed: typings.eventTargetShim.eventTargetShimStrings.composed = "composed".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.composed]
   @scala.inline
-  def composed: typings.eventTargetShim.eventTargetShimStrings.composed = this.cast("composed")
+  def composedPath: typings.eventTargetShim.eventTargetShimStrings.composedPath = "composedPath".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.composedPath]
   @scala.inline
-  def composedPath: typings.eventTargetShim.eventTargetShimStrings.composedPath = this.cast("composedPath")
+  def currentTarget: typings.eventTargetShim.eventTargetShimStrings.currentTarget = "currentTarget".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.currentTarget]
   @scala.inline
-  def currentTarget: typings.eventTargetShim.eventTargetShimStrings.currentTarget = this.cast("currentTarget")
+  def defaultPrevented: typings.eventTargetShim.eventTargetShimStrings.defaultPrevented = "defaultPrevented".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.defaultPrevented]
   @scala.inline
-  def defaultPrevented: typings.eventTargetShim.eventTargetShimStrings.defaultPrevented = this.cast("defaultPrevented")
+  def eventPhase: typings.eventTargetShim.eventTargetShimStrings.eventPhase = "eventPhase".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.eventPhase]
   @scala.inline
-  def eventPhase: typings.eventTargetShim.eventTargetShimStrings.eventPhase = this.cast("eventPhase")
+  def initEvent: typings.eventTargetShim.eventTargetShimStrings.initEvent = "initEvent".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.initEvent]
   @scala.inline
-  def initEvent: typings.eventTargetShim.eventTargetShimStrings.initEvent = this.cast("initEvent")
+  def isTrusted: typings.eventTargetShim.eventTargetShimStrings.isTrusted = "isTrusted".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.isTrusted]
   @scala.inline
-  def isTrusted: typings.eventTargetShim.eventTargetShimStrings.isTrusted = this.cast("isTrusted")
+  def preventDefault: typings.eventTargetShim.eventTargetShimStrings.preventDefault = "preventDefault".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.preventDefault]
   @scala.inline
-  def preventDefault: typings.eventTargetShim.eventTargetShimStrings.preventDefault = this.cast("preventDefault")
+  def returnValue: typings.eventTargetShim.eventTargetShimStrings.returnValue = "returnValue".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.returnValue]
   @scala.inline
-  def returnValue: typings.eventTargetShim.eventTargetShimStrings.returnValue = this.cast("returnValue")
+  def srcElement: typings.eventTargetShim.eventTargetShimStrings.srcElement = "srcElement".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.srcElement]
   @scala.inline
-  def srcElement: typings.eventTargetShim.eventTargetShimStrings.srcElement = this.cast("srcElement")
+  def stopImmediatePropagation: typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation = "stopImmediatePropagation".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation]
   @scala.inline
-  def stopImmediatePropagation: typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation = this.cast("stopImmediatePropagation")
+  def stopPropagation: typings.eventTargetShim.eventTargetShimStrings.stopPropagation = "stopPropagation".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.stopPropagation]
   @scala.inline
-  def stopPropagation: typings.eventTargetShim.eventTargetShimStrings.stopPropagation = this.cast("stopPropagation")
+  def target: typings.eventTargetShim.eventTargetShimStrings.target = "target".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.target]
   @scala.inline
-  def target: typings.eventTargetShim.eventTargetShimStrings.target = this.cast("target")
-  @scala.inline
-  def timeStamp: typings.eventTargetShim.eventTargetShimStrings.timeStamp = this.cast("timeStamp")
+  def timeStamp: typings.eventTargetShim.eventTargetShimStrings.timeStamp = "timeStamp".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.timeStamp]
 }
 

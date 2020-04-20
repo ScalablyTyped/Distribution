@@ -16,7 +16,6 @@ object IDesktopNotificationProvider {
   @scala.inline
   def apply(config: IDesktopNotificationOptions => Unit): IDesktopNotificationProvider = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config))
-  
     __obj.asInstanceOf[IDesktopNotificationProvider]
   }
 }

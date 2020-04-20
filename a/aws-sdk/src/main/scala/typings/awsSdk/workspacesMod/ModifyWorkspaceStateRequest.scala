@@ -20,7 +20,6 @@ object ModifyWorkspaceStateRequest {
   @scala.inline
   def apply(WorkspaceId: WorkspaceId, WorkspaceState: TargetWorkspaceState): ModifyWorkspaceStateRequest = {
     val __obj = js.Dynamic.literal(WorkspaceId = WorkspaceId.asInstanceOf[js.Any], WorkspaceState = WorkspaceState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyWorkspaceStateRequest]
   }
 }

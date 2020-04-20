@@ -23,7 +23,6 @@ object ThreadDetails {
   @scala.inline
   def apply(context: CpuContext, id: ThreadId, state: ThreadState): ThreadDetails = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThreadDetails]
   }
 }

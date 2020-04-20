@@ -13,7 +13,6 @@ object ReadInfo {
   @scala.inline
   def apply(data: ArrayBuffer): ReadInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadInfo]
   }
 }

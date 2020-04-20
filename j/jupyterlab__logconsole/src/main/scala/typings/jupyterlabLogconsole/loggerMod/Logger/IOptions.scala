@@ -19,7 +19,6 @@ object IOptions {
   @scala.inline
   def apply(maxLength: Double, source: String): IOptions = {
     val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

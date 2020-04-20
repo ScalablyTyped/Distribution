@@ -15,7 +15,6 @@ object AnonGetter {
   @scala.inline
   def apply(getter: GetAccessor, setter: SetAccessor): AnonGetter = {
     val __obj = js.Dynamic.literal(getter = getter.asInstanceOf[js.Any], setter = setter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGetter]
   }
 }

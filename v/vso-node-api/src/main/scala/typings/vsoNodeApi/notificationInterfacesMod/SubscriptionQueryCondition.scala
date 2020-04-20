@@ -37,7 +37,6 @@ object SubscriptionQueryCondition {
     subscriptionId: String
   ): SubscriptionQueryCondition = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], subscriberId = subscriberId.asInstanceOf[js.Any], subscriptionId = subscriptionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscriptionQueryCondition]
   }
 }

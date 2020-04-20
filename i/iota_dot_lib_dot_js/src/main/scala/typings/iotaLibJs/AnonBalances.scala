@@ -15,7 +15,6 @@ object AnonBalances {
   @scala.inline
   def apply(balances: js.Array[Double], duration: Double, milestone: String, milestoneIndex: Double): AnonBalances = {
     val __obj = js.Dynamic.literal(balances = balances.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any], milestoneIndex = milestoneIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBalances]
   }
 }

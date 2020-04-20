@@ -16,12 +16,10 @@ trait JSDocTagName extends js.Object
 
 object JSDocTagName {
   @scala.inline
-  def Desc: desc = this.cast("desc")
+  def Desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
-  def Id: id = this.cast("id")
+  def Id: id = "id".asInstanceOf[id]
   @scala.inline
-  def Meaning: meaning = this.cast("meaning")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Meaning: meaning = "meaning".asInstanceOf[meaning]
 }
 

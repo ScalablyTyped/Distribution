@@ -2,6 +2,7 @@ package typings.morgan.mod
 
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.morgan.morganStrings.combined
 import typings.morgan.morganStrings.common
 import typings.morgan.morganStrings.dev
@@ -21,8 +22,8 @@ object ^ extends js.Object {
     * @param format
     * @param options
     */
-  def apply(format: String): RequestHandler[ParamsDictionary] = js.native
-  def apply(format: String, options: Options): RequestHandler[ParamsDictionary] = js.native
+  def apply(format: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(format: String, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /***
     * Create a new morgan logger middleware function using the given format and
     * options. The format argument may be a custom format function which adheres to
@@ -30,24 +31,24 @@ object ^ extends js.Object {
     * @param format
     * @param options
     */
-  def apply(format: FormatFn): RequestHandler[ParamsDictionary] = js.native
-  def apply(format: FormatFn, options: Options): RequestHandler[ParamsDictionary] = js.native
+  def apply(format: FormatFn): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(format: FormatFn, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /***
     * Standard Apache combined log output.
     * :remote-addr - :remote-user [:date] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"
     * @param format
     * @param options
     */
-  def apply(format: combined): RequestHandler[ParamsDictionary] = js.native
-  def apply(format: combined, options: Options): RequestHandler[ParamsDictionary] = js.native
+  def apply(format: combined): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(format: combined, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /***
     * Standard Apache common log output.
     * :remote-addr - :remote-user [:date] ":method :url HTTP/:http-version" :status :res[content-length]
     * @param format
     * @param options
     */
-  def apply(format: common): RequestHandler[ParamsDictionary] = js.native
-  def apply(format: common, options: Options): RequestHandler[ParamsDictionary] = js.native
+  def apply(format: common): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(format: common, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /***
     * Concise output colored by response status for development use. The :status
     * token will be colored red for server error codes, yellow for client error
@@ -56,23 +57,23 @@ object ^ extends js.Object {
     * @param format
     * @param options
     */
-  def apply(format: dev): RequestHandler[ParamsDictionary] = js.native
-  def apply(format: dev, options: Options): RequestHandler[ParamsDictionary] = js.native
+  def apply(format: dev): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(format: dev, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /***
     * Shorter than default, also including response time.
     * :remote-addr :remote-user :method :url HTTP/:http-version :status :res[content-length] - :response-time ms
     * @param format
     * @param options
     */
-  def apply(format: short): RequestHandler[ParamsDictionary] = js.native
-  def apply(format: short, options: Options): RequestHandler[ParamsDictionary] = js.native
+  def apply(format: short): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(format: short, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /***
     * The minimal output.
     * :method :url :status :res[content-length] - :response-time ms
     * @param format
     * @param options
     */
-  def apply(format: tiny): RequestHandler[ParamsDictionary] = js.native
-  def apply(format: tiny, options: Options): RequestHandler[ParamsDictionary] = js.native
+  def apply(format: tiny): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(format: tiny, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }
 

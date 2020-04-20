@@ -22,7 +22,6 @@ object IClipboardStatics {
     setContent: DataPackage => Unit
   ): IClipboardStatics = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), flush = js.Any.fromFunction0(flush), getContent = js.Any.fromFunction0(getContent), oncontentchanged = oncontentchanged.asInstanceOf[js.Any], setContent = js.Any.fromFunction1(setContent))
-  
     __obj.asInstanceOf[IClipboardStatics]
   }
 }

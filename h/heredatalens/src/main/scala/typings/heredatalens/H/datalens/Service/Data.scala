@@ -19,7 +19,6 @@ object Data {
   @scala.inline
   def apply(columns: js.Array[String], rows: js.Array[js.Array[_]]): Data = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Data]
   }
 }

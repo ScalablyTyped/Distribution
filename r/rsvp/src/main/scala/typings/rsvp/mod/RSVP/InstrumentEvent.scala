@@ -29,7 +29,6 @@ object InstrumentEvent {
     timeStamp: Double
   ): InstrumentEvent = {
     val __obj = js.Dynamic.literal(childGuid = childGuid.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstrumentEvent]
   }
 }

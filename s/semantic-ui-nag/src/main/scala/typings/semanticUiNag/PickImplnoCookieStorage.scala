@@ -13,7 +13,6 @@ object PickImplnoCookieStorage {
   @scala.inline
   def apply(noCookieStorage: String): PickImplnoCookieStorage = {
     val __obj = js.Dynamic.literal(noCookieStorage = noCookieStorage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnoCookieStorage]
   }
 }

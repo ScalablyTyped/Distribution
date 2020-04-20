@@ -14,7 +14,6 @@ object IgProgressBarMethods {
   @scala.inline
   def apply(destroy: () => Unit, value: js.Object => Unit, widget: () => Unit): IgProgressBarMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), value = js.Any.fromFunction1(value), widget = js.Any.fromFunction0(widget))
-  
     __obj.asInstanceOf[IgProgressBarMethods]
   }
 }

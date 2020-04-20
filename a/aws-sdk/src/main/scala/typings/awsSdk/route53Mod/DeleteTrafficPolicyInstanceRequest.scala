@@ -16,7 +16,6 @@ object DeleteTrafficPolicyInstanceRequest {
   @scala.inline
   def apply(Id: TrafficPolicyInstanceId): DeleteTrafficPolicyInstanceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTrafficPolicyInstanceRequest]
   }
 }

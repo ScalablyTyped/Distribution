@@ -35,7 +35,7 @@ trait RegExp extends js.Object {
     * that search.
     * @param string A string to search within.
     */
-  @JSName(scala.scalajs.js.Symbol.`match`)
+  @JSName(js.Symbol.`match`)
   var `match`: js.Function1[/* string */ java.lang.String, RegExpMatchArray | Null] = js.native
   /** Returns a Boolean value indicating the state of the multiline flag (m) used with a regular expression. Default is false. Read-only. */
   val multiline: scala.Boolean = js.native
@@ -52,7 +52,7 @@ trait RegExp extends js.Object {
     *               this regular expression will be replaced
     * @param replacer A function that returns the replacement text.
     */
-  @JSName(scala.scalajs.js.Symbol.replace)
+  @JSName(js.Symbol.replace)
   var replace: (js.Function2[/* string */ java.lang.String, /* replaceValue */ java.lang.String, java.lang.String]) with (js.Function2[
     /* string */ java.lang.String, 
     /* replacer */ js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String], 
@@ -64,7 +64,7 @@ trait RegExp extends js.Object {
     *
     * @param string The string to search within.
     */
-  @JSName(scala.scalajs.js.Symbol.search)
+  @JSName(js.Symbol.search)
   var search: js.Function1[/* string */ java.lang.String, Double] = js.native
   /** Returns a copy of the text of the regular expression pattern. Read-only. The regExp argument is a Regular expression object. It can be a variable name or a literal. */
   val source: java.lang.String = js.native
@@ -80,7 +80,7 @@ trait RegExp extends js.Object {
     * @param limit if not undefined, the output array is truncated so that it contains no more
     * than 'limit' elements.
     */
-  @JSName(scala.scalajs.js.Symbol.split)
+  @JSName(js.Symbol.split)
   var split: js.Function2[
     /* string */ java.lang.String, 
     /* limit */ js.UndefOr[Double], 

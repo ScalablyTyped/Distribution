@@ -14,14 +14,12 @@ trait ElectronPlatformName extends js.Object
 
 object ElectronPlatformName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def darwin: typings.appBuilderLib.appBuilderLibStrings.darwin = "darwin".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.darwin]
   @scala.inline
-  def darwin: typings.appBuilderLib.appBuilderLibStrings.darwin = this.cast("darwin")
+  def linux: typings.appBuilderLib.appBuilderLibStrings.linux = "linux".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.linux]
   @scala.inline
-  def linux: typings.appBuilderLib.appBuilderLibStrings.linux = this.cast("linux")
+  def mas: typings.appBuilderLib.appBuilderLibStrings.mas = "mas".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.mas]
   @scala.inline
-  def mas: typings.appBuilderLib.appBuilderLibStrings.mas = this.cast("mas")
-  @scala.inline
-  def win32: typings.appBuilderLib.appBuilderLibStrings.win32 = this.cast("win32")
+  def win32: typings.appBuilderLib.appBuilderLibStrings.win32 = "win32".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.win32]
 }
 

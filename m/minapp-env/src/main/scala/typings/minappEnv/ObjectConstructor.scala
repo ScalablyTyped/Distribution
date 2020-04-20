@@ -88,13 +88,13 @@ trait ObjectConstructor
     * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
     * @param o Object on which to lock the attributes.
     */
-  def freeze[T](o: T): Readonly[T] = js.native
+  def freeze[T /* <: Function */](f: T): T = js.native
   /**
     * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
     * @param o Object on which to lock the attributes.
     */
   @JSName("freeze")
-  def freeze_T_Function_T[T /* <: Function */](f: T): T = js.native
+  def freeze_T_Readonly[T](o: T): Readonly[T] = js.native
   /**
     * Gets the own property descriptor of the specified object.
     * An own property descriptor is one that is defined directly on the object and is not inherited from the object's prototype.

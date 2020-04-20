@@ -34,7 +34,7 @@ class FloatAttributeType protected () extends FloatAttributeTypeBase {
   @JSName("model")
   var model_FFloatAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MFloatAttributeType(): Attribute = js.native
+  def containerAsAttribute_MFloatAttributeType: Attribute = js.native
 }
 
 /* static members */

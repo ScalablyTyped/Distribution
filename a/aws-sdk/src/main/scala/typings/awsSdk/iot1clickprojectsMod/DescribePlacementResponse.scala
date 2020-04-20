@@ -16,7 +16,6 @@ object DescribePlacementResponse {
   @scala.inline
   def apply(placement: PlacementDescription): DescribePlacementResponse = {
     val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePlacementResponse]
   }
 }

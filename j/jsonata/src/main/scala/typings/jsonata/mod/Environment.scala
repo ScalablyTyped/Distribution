@@ -16,7 +16,6 @@ object Environment {
   @scala.inline
   def apply(async: Boolean, bind: (String, js.Any) => Unit, lookup: String => js.Any, timestamp: Date): Environment = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], bind = js.Any.fromFunction2(bind), lookup = js.Any.fromFunction1(lookup), timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Environment]
   }
 }

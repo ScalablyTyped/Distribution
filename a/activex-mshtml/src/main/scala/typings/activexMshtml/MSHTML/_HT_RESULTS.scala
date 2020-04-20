@@ -14,10 +14,8 @@ trait _HT_RESULTS extends js.Object
 
 object _HT_RESULTS {
   @scala.inline
-  def HT_RESULTS_Glyph: `1` = this.cast(1)
+  def HT_RESULTS_Glyph: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HT_RESULTS_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HT_RESULTS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -14,7 +14,6 @@ object ScalingParametersStatus {
   @scala.inline
   def apply(Options: ScalingParameters, Status: OptionStatus): ScalingParametersStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScalingParametersStatus]
   }
 }

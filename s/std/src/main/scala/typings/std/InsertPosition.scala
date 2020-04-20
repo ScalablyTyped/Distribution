@@ -14,14 +14,12 @@ trait InsertPosition extends js.Object
 
 object InsertPosition {
   @scala.inline
-  def afterbegin: typings.std.stdStrings.afterbegin = this.cast("afterbegin")
+  def afterbegin: typings.std.stdStrings.afterbegin = "afterbegin".asInstanceOf[typings.std.stdStrings.afterbegin]
   @scala.inline
-  def afterend: typings.std.stdStrings.afterend = this.cast("afterend")
+  def afterend: typings.std.stdStrings.afterend = "afterend".asInstanceOf[typings.std.stdStrings.afterend]
   @scala.inline
-  def beforebegin: typings.std.stdStrings.beforebegin = this.cast("beforebegin")
+  def beforebegin: typings.std.stdStrings.beforebegin = "beforebegin".asInstanceOf[typings.std.stdStrings.beforebegin]
   @scala.inline
-  def beforeend: typings.std.stdStrings.beforeend = this.cast("beforeend")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def beforeend: typings.std.stdStrings.beforeend = "beforeend".asInstanceOf[typings.std.stdStrings.beforeend]
 }
 

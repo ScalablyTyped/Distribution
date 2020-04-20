@@ -17,7 +17,6 @@ object FlushableOperation {
   @scala.inline
   def apply(cancel: () => Unit, flush: () => Unit, pending: () => Boolean): FlushableOperation = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), flush = js.Any.fromFunction0(flush), pending = js.Any.fromFunction0(pending))
-  
     __obj.asInstanceOf[FlushableOperation]
   }
 }

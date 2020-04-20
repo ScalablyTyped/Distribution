@@ -35,7 +35,6 @@ object DevicesResource {
     setState: AnonAlt => Request_[DeviceState]
   ): DevicesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getState = js.Any.fromFunction1(getState), list = js.Any.fromFunction1(list), setState = js.Any.fromFunction1(setState))
-  
     __obj.asInstanceOf[DevicesResource]
   }
 }

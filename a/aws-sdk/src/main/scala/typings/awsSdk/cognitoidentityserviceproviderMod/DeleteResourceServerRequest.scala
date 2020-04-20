@@ -20,7 +20,6 @@ object DeleteResourceServerRequest {
   @scala.inline
   def apply(Identifier: ResourceServerIdentifierType, UserPoolId: UserPoolIdType): DeleteResourceServerRequest = {
     val __obj = js.Dynamic.literal(Identifier = Identifier.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteResourceServerRequest]
   }
 }

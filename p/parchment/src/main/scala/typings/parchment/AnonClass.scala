@@ -23,7 +23,6 @@ object AnonClass {
     Style: TypeofStyleAttributor
   ): AnonClass = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Store = Store.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClass]
   }
 }

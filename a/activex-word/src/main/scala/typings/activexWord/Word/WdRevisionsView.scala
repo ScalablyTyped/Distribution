@@ -14,10 +14,8 @@ trait WdRevisionsView extends js.Object
 
 object WdRevisionsView {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdRevisionsViewFinal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdRevisionsViewFinal: `0` = this.cast(0)
-  @scala.inline
-  def wdRevisionsViewOriginal: `1` = this.cast(1)
+  def wdRevisionsViewOriginal: `1` = 1.asInstanceOf[`1`]
 }
 

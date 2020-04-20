@@ -19,7 +19,6 @@ object EntitiesResource {
   @scala.inline
   def apply(search: AnonAccesstoken => Request_[SearchResponse]): EntitiesResource = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[EntitiesResource]
   }
 }

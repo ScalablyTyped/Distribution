@@ -15,16 +15,14 @@ trait WatchEvents extends js.Object
 
 object WatchEvents {
   @scala.inline
-  def add: typings.browserSync.browserSyncStrings.add = this.cast("add")
+  def add: typings.browserSync.browserSyncStrings.add = "add".asInstanceOf[typings.browserSync.browserSyncStrings.add]
   @scala.inline
-  def addDir: typings.browserSync.browserSyncStrings.addDir = this.cast("addDir")
+  def addDir: typings.browserSync.browserSyncStrings.addDir = "addDir".asInstanceOf[typings.browserSync.browserSyncStrings.addDir]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def change: typings.browserSync.browserSyncStrings.change = "change".asInstanceOf[typings.browserSync.browserSyncStrings.change]
   @scala.inline
-  def change: typings.browserSync.browserSyncStrings.change = this.cast("change")
+  def unlink: typings.browserSync.browserSyncStrings.unlink = "unlink".asInstanceOf[typings.browserSync.browserSyncStrings.unlink]
   @scala.inline
-  def unlink: typings.browserSync.browserSyncStrings.unlink = this.cast("unlink")
-  @scala.inline
-  def unlinkDir: typings.browserSync.browserSyncStrings.unlinkDir = this.cast("unlinkDir")
+  def unlinkDir: typings.browserSync.browserSyncStrings.unlinkDir = "unlinkDir".asInstanceOf[typings.browserSync.browserSyncStrings.unlinkDir]
 }
 

@@ -16,7 +16,6 @@ object SearchPageRankResult {
   @scala.inline
   def apply(rank: NodeCollection => Double): SearchPageRankResult = {
     val __obj = js.Dynamic.literal(rank = js.Any.fromFunction1(rank))
-  
     __obj.asInstanceOf[SearchPageRankResult]
   }
 }

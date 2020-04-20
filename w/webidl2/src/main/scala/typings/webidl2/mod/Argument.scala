@@ -32,7 +32,6 @@ object Argument {
     variadic: Boolean
   ): Argument = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], variadic = variadic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Argument]
   }
 }

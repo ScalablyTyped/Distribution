@@ -13,7 +13,6 @@ object ServiceInfo {
   @scala.inline
   def apply(description: String, name: String): ServiceInfo = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceInfo]
   }
 }

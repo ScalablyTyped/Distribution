@@ -24,7 +24,6 @@ object EmitterInterface {
     triggerWith: (js.Any, js.Any, js.Any) => js.Any
   ): EmitterInterface = {
     val __obj = js.Dynamic.literal(hasHandlers = js.Any.fromFunction1(hasHandlers), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), one = js.Any.fromFunction2(one), trigger = js.Any.fromFunction2(trigger), triggerWith = js.Any.fromFunction3(triggerWith))
-  
     __obj.asInstanceOf[EmitterInterface]
   }
 }

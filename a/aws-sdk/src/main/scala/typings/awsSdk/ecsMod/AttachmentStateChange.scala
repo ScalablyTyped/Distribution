@@ -20,7 +20,6 @@ object AttachmentStateChange {
   @scala.inline
   def apply(attachmentArn: String, status: String): AttachmentStateChange = {
     val __obj = js.Dynamic.literal(attachmentArn = attachmentArn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachmentStateChange]
   }
 }

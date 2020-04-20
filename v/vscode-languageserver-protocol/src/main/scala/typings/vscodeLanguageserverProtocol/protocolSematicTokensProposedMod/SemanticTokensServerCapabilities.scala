@@ -12,7 +12,6 @@ object SemanticTokensServerCapabilities {
   @scala.inline
   def apply(semanticTokensProvider: SemanticTokensOptions | SemanticTokensRegistrationOptions): SemanticTokensServerCapabilities = {
     val __obj = js.Dynamic.literal(semanticTokensProvider = semanticTokensProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SemanticTokensServerCapabilities]
   }
 }

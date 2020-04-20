@@ -25,10 +25,10 @@ trait UserConstructor
   def hydrate[T /* <: User[Attributes] */](userJSON: js.Any): js.Promise[T] = js.native
   def logIn[T /* <: User[Attributes] */](username: String, password: String): js.Promise[T] = js.native
   def logIn[T /* <: User[Attributes] */](username: String, password: String, options: FullOptions): js.Promise[T] = js.native
-  def logInWith(provider: String, options: AnonAuthData): js.Promise[User[Attributes]] = js.native
-  def logInWith(provider: String, options: AnonAuthData, saveOpts: FullOptions): js.Promise[User[Attributes]] = js.native
-  def logInWith(provider: AuthProvider, options: AnonAuthData): js.Promise[User[Attributes]] = js.native
-  def logInWith(provider: AuthProvider, options: AnonAuthData, saveOpts: FullOptions): js.Promise[User[Attributes]] = js.native
+  def logInWith[T /* <: User[Attributes] */](provider: String, options: AnonAuthData): js.Promise[T] = js.native
+  def logInWith[T /* <: User[Attributes] */](provider: String, options: AnonAuthData, saveOpts: FullOptions): js.Promise[T] = js.native
+  def logInWith[T /* <: User[Attributes] */](provider: AuthProvider, options: AnonAuthData): js.Promise[T] = js.native
+  def logInWith[T /* <: User[Attributes] */](provider: AuthProvider, options: AnonAuthData, saveOpts: FullOptions): js.Promise[T] = js.native
   def logOut[T /* <: User[Attributes] */](): js.Promise[T] = js.native
   def requestPasswordReset[T /* <: User[Attributes] */](email: String): js.Promise[T] = js.native
   def requestPasswordReset[T /* <: User[Attributes] */](email: String, options: SuccessFailureOptions): js.Promise[T] = js.native

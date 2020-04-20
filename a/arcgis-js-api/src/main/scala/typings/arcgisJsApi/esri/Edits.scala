@@ -1,38 +1,27 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Edits extends Object {
+@js.native
+trait Edits extends Accessor {
   /**
     * The feature to be edited.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#Edits)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Edits.html#feature)
     */
-  var feature: Graphic
+  val feature: Graphic = js.native
   /**
-    * *Read-only* When true, the edited feature has been modified from its original state.
+    * When true, the edited feature has been modified from its original state.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#Edits)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Edits.html#modified)
     */
-  var modified: Boolean
+  val modified: Boolean = js.native
 }
 
-object Edits {
-  @scala.inline
-  def apply(
-    constructor: js.Function,
-    feature: Graphic,
-    hasOwnProperty: PropertyKey => Boolean,
-    modified: Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): Edits = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), modified = modified.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
-    __obj.asInstanceOf[Edits]
-  }
-}
+@JSGlobal("__esri.Edits")
+@js.native
+object Edits extends TopLevel[EditsConstructor]
 

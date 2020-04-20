@@ -14,7 +14,6 @@ object AnonNone {
   @scala.inline
   def apply(none: `true`): AnonNone = {
     val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNone]
   }
 }

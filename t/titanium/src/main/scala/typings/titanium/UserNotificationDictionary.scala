@@ -16,23 +16,23 @@ trait UserNotificationDictionary extends js.Object {
   	 * Alert button text ('Open', by default) or home text ('Press Home to unlock', by default)
   	 * type: String
   	 */
-  var alertAction: js.UndefOr[String] = js.undefined
+  var alertAction: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Alert message.
   	 */
-  var alertBody: js.UndefOr[String] = js.undefined
+  var alertBody: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Image displayed instead of `Default.png` when launching the application.
   	 */
-  var alertLaunchImage: js.UndefOr[String] = js.undefined
+  var alertLaunchImage: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Subtitle of the notification.
   	 */
-  var alertSubtitle: js.UndefOr[String] = js.undefined
+  var alertSubtitle: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Title of the notification.
   	 */
-  var alertTitle: js.UndefOr[String] = js.undefined
+  var alertTitle: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Application badge value.
   	 */
@@ -40,7 +40,7 @@ trait UserNotificationDictionary extends js.Object {
   /**
   	 * Category identifier of the notification.
   	 */
-  var category: js.UndefOr[String] = js.undefined
+  var category: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Date and time when the notification was configured to fire.
   	 */
@@ -48,7 +48,7 @@ trait UserNotificationDictionary extends js.Object {
   /**
   	 * The notification identifier.
   	 */
-  var identifier: String
+  var identifier: java.lang.String
   /**
   	 * Region of the notification.
   	 */
@@ -56,11 +56,11 @@ trait UserNotificationDictionary extends js.Object {
   /**
   	 * Path to the sound file configured to play when the notification was fired.
   	 */
-  var sound: js.UndefOr[String] = js.undefined
+  var sound: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Timezone of the date when the notification was configured to fire.
   	 */
-  var timezone: js.UndefOr[String] = js.undefined
+  var timezone: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Custom data object.
   	 */
@@ -70,18 +70,18 @@ trait UserNotificationDictionary extends js.Object {
 object UserNotificationDictionary {
   @scala.inline
   def apply(
-    identifier: String,
-    alertAction: String = null,
-    alertBody: String = null,
-    alertLaunchImage: String = null,
-    alertSubtitle: String = null,
-    alertTitle: String = null,
+    identifier: java.lang.String,
+    alertAction: java.lang.String = null,
+    alertBody: java.lang.String = null,
+    alertLaunchImage: java.lang.String = null,
+    alertSubtitle: java.lang.String = null,
+    alertTitle: java.lang.String = null,
     badge: Int | Double = null,
-    category: String = null,
+    category: java.lang.String = null,
     date: Date = null,
     region: js.Any = null,
-    sound: String = null,
-    timezone: String = null,
+    sound: java.lang.String = null,
+    timezone: java.lang.String = null,
     userInfo: js.Any = null
   ): UserNotificationDictionary = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])

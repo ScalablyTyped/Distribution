@@ -15,7 +15,6 @@ object AnonIndices {
   @scala.inline
   def apply[T /* <: Tensor[Rank] */](indices: T, values: T): AnonIndices[T] = {
     val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndices[T]]
   }
 }

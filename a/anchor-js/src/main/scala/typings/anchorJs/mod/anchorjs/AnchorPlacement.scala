@@ -12,10 +12,8 @@ trait AnchorPlacement extends js.Object
 
 object AnchorPlacement {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.anchorJs.anchorJsStrings.left = "left".asInstanceOf[typings.anchorJs.anchorJsStrings.left]
   @scala.inline
-  def left: typings.anchorJs.anchorJsStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.anchorJs.anchorJsStrings.right = this.cast("right")
+  def right: typings.anchorJs.anchorJsStrings.right = "right".asInstanceOf[typings.anchorJs.anchorJsStrings.right]
 }
 

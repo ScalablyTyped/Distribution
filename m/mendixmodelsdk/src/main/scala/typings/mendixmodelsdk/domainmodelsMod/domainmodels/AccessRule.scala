@@ -32,23 +32,23 @@ class AccessRule protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FAccessRule: IModel = js.native
-  def allowCreate(): Boolean = js.native
+  def allowCreate: Boolean = js.native
   def allowCreate(newValue: Boolean): js.Any = js.native
-  def allowDelete(): Boolean = js.native
+  def allowDelete: Boolean = js.native
   def allowDelete(newValue: Boolean): js.Any = js.native
-  def containerAsAccessRuleContainerBase(): AccessRuleContainerBase = js.native
-  def containerAsEntity(): Entity = js.native
-  def defaultMemberAccessRights(): MemberAccessRights = js.native
+  def containerAsAccessRuleContainerBase: AccessRuleContainerBase = js.native
+  def containerAsEntity: Entity = js.native
+  def defaultMemberAccessRights: MemberAccessRights = js.native
   def defaultMemberAccessRights(newValue: MemberAccessRights): js.Any = js.native
-  def documentation(): String = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def memberAccesses(): IList[MemberAccess] = js.native
-  def moduleRoles(): IList[IModuleRole] = js.native
-  def moduleRolesQualifiedNames(): js.Array[String] = js.native
+  def memberAccesses: IList[MemberAccess] = js.native
+  def moduleRoles: IList[IModuleRole] = js.native
+  def moduleRolesQualifiedNames: js.Array[String] = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  def xPathConstraint(): String = js.native
+  def xPathConstraint: String = js.native
   def xPathConstraint(newValue: String): js.Any = js.native
 }
 

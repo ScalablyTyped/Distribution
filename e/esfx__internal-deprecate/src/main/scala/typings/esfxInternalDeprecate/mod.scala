@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def deprecate[T /* <: js.Function */](fn: T, message: String): T = js.native
-  def deprecateProperty[T, K /* <: String */](target: T, key: K, message: String): T = js.native
+  def deprecateProperty[T, K /* <: /* keyof T */ String */](target: T, key: K, message: String): T = js.native
 }
 

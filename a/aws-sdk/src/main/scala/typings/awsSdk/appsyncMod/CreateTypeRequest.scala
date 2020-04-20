@@ -24,7 +24,6 @@ object CreateTypeRequest {
   @scala.inline
   def apply(apiId: String, definition: String, format: TypeDefinitionFormat): CreateTypeRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTypeRequest]
   }
 }

@@ -24,7 +24,6 @@ object I18nSettings {
     monthNamesShort: Months
   ): I18nSettings = {
     val __obj = js.Dynamic.literal(DoFn = js.Any.fromFunction1(DoFn), amPm = amPm.asInstanceOf[js.Any], dayNames = dayNames.asInstanceOf[js.Any], dayNamesShort = dayNamesShort.asInstanceOf[js.Any], monthNames = monthNames.asInstanceOf[js.Any], monthNamesShort = monthNamesShort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[I18nSettings]
   }
 }

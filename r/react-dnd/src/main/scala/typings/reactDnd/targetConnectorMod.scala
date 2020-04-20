@@ -27,9 +27,9 @@ object targetConnectorMod extends js.Object {
     var lastConnectedHandlerId: js.Any = js.native
     var unsubscribeDropTarget: js.Any = js.native
     @JSName("connectTarget")
-    def connectTarget_MTargetConnector(): js.Any = js.native
-    /* private */ def dropTarget(): js.Any = js.native
-    def dropTargetOptions(): js.Any = js.native
+    def connectTarget_MTargetConnector: js.Any = js.native
+    /* private */ def dropTarget: js.Any = js.native
+    def dropTargetOptions: js.Any = js.native
     def dropTargetOptions(options: js.Any): js.Any = js.native
   }
   

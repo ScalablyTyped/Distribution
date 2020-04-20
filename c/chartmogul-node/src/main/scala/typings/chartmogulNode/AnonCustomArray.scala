@@ -13,7 +13,6 @@ object AnonCustomArray {
   @scala.inline
   def apply(custom: js.Array[NewCustomAttributes]): AnonCustomArray = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCustomArray]
   }
 }

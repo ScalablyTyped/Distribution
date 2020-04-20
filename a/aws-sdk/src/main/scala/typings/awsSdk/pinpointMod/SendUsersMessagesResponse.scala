@@ -13,7 +13,6 @@ object SendUsersMessagesResponse {
   @scala.inline
   def apply(SendUsersMessageResponse: SendUsersMessageResponse): SendUsersMessagesResponse = {
     val __obj = js.Dynamic.literal(SendUsersMessageResponse = SendUsersMessageResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendUsersMessagesResponse]
   }
 }

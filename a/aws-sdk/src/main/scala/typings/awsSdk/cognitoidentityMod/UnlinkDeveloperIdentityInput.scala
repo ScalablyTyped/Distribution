@@ -33,7 +33,6 @@ object UnlinkDeveloperIdentityInput {
     IdentityPoolId: IdentityPoolId
   ): UnlinkDeveloperIdentityInput = {
     val __obj = js.Dynamic.literal(DeveloperProviderName = DeveloperProviderName.asInstanceOf[js.Any], DeveloperUserIdentifier = DeveloperUserIdentifier.asInstanceOf[js.Any], IdentityId = IdentityId.asInstanceOf[js.Any], IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnlinkDeveloperIdentityInput]
   }
 }

@@ -24,7 +24,6 @@ object ChannelHlsIngestIngestEndpoint {
   @scala.inline
   def apply(password: String, url: String, username: String): ChannelHlsIngestIngestEndpoint = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelHlsIngestIngestEndpoint]
   }
 }

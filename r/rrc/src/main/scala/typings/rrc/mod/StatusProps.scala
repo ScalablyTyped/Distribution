@@ -12,7 +12,6 @@ object StatusProps {
   @scala.inline
   def apply(code: String): StatusProps = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatusProps]
   }
 }

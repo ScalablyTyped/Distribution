@@ -68,7 +68,6 @@ object fx {
     shrink: js.Object => js.Any
   ): fx = {
     val __obj = js.Dynamic.literal(bounce = js.Any.fromFunction1(bounce), expand = js.Any.fromFunction1(expand), flip = js.Any.fromFunction1(flip), puff = js.Any.fromFunction1(puff), rotate = js.Any.fromFunction1(rotate), shrink = js.Any.fromFunction1(shrink))
-  
     __obj.asInstanceOf[fx]
   }
 }

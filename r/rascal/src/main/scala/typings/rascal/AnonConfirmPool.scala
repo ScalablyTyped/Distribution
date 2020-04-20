@@ -13,7 +13,6 @@ object AnonConfirmPool {
   @scala.inline
   def apply(confirmPool: AnonAutostart, regularPool: AnonAutostart): AnonConfirmPool = {
     val __obj = js.Dynamic.literal(confirmPool = confirmPool.asInstanceOf[js.Any], regularPool = regularPool.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfirmPool]
   }
 }

@@ -112,7 +112,6 @@ object InstanceGroupManagersResource {
     setTargetPools: AnonInstanceGroupManager => Request_[Operation]
   ): InstanceGroupManagersResource = {
     val __obj = js.Dynamic.literal(abandonInstances = js.Any.fromFunction1(abandonInstances), aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), deleteInstances = js.Any.fromFunction1(deleteInstances), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), listManagedInstances = js.Any.fromFunction1(listManagedInstances), recreateInstances = js.Any.fromFunction1(recreateInstances), resize = js.Any.fromFunction1(resize), setInstanceTemplate = js.Any.fromFunction1(setInstanceTemplate), setTargetPools = js.Any.fromFunction1(setTargetPools))
-  
     __obj.asInstanceOf[InstanceGroupManagersResource]
   }
 }

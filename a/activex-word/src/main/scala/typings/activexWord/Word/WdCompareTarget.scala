@@ -16,12 +16,10 @@ trait WdCompareTarget extends js.Object
 
 object WdCompareTarget {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCompareTargetCurrent: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdCompareTargetCurrent: `1` = this.cast(1)
+  def wdCompareTargetNew: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdCompareTargetNew: `2` = this.cast(2)
-  @scala.inline
-  def wdCompareTargetSelected: `0` = this.cast(0)
+  def wdCompareTargetSelected: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -17,7 +17,6 @@ object ICountResult {
     result: Double
   ): ICountResult = {
     val __obj = js.Dynamic.literal($promise = $promise.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICountResult]
   }
 }

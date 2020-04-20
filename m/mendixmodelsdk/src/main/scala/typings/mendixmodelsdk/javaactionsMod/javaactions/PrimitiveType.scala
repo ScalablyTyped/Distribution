@@ -32,11 +32,11 @@ abstract class PrimitiveType protected () extends Type {
   @JSName("model")
   var model_FPrimitiveType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MPrimitiveType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MPrimitiveType: BasicParameterType = js.native
   @JSName("containerAsJavaActionParameter")
-  def containerAsJavaActionParameter_MPrimitiveType(): JavaActionParameter = js.native
+  def containerAsJavaActionParameter_MPrimitiveType: JavaActionParameter = js.native
   @JSName("containerAsJavaAction")
-  def containerAsJavaAction_MPrimitiveType(): JavaAction = js.native
+  def containerAsJavaAction_MPrimitiveType: JavaAction = js.native
 }
 
 /* static members */

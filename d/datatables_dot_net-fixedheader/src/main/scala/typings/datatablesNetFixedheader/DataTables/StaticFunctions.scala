@@ -12,7 +12,6 @@ object StaticFunctions {
   @scala.inline
   def apply(FixedHeader: FixedHeaderStaticFunctions): StaticFunctions = {
     val __obj = js.Dynamic.literal(FixedHeader = FixedHeader.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StaticFunctions]
   }
 }

@@ -19,7 +19,6 @@ object JQueryStatic {
   @scala.inline
   def apply(format: (String, /* repeated */ String) => String, validator: ValidatorStatic): JQueryStatic = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), validator = validator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

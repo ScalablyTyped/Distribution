@@ -12,7 +12,6 @@ object IDataReaderFactory {
   @scala.inline
   def apply(createDataReader: IInputStream => DataReader): IDataReaderFactory = {
     val __obj = js.Dynamic.literal(createDataReader = js.Any.fromFunction1(createDataReader))
-  
     __obj.asInstanceOf[IDataReaderFactory]
   }
 }

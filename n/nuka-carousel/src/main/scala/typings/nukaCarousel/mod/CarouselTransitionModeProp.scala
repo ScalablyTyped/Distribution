@@ -13,12 +13,10 @@ trait CarouselTransitionModeProp extends js.Object
 
 object CarouselTransitionModeProp {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fade: typings.nukaCarousel.nukaCarouselStrings.fade = "fade".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.fade]
   @scala.inline
-  def fade: typings.nukaCarousel.nukaCarouselStrings.fade = this.cast("fade")
+  def scroll: typings.nukaCarousel.nukaCarouselStrings.scroll = "scroll".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.scroll]
   @scala.inline
-  def scroll: typings.nukaCarousel.nukaCarouselStrings.scroll = this.cast("scroll")
-  @scala.inline
-  def scroll3d: typings.nukaCarousel.nukaCarouselStrings.scroll3d = this.cast("scroll3d")
+  def scroll3d: typings.nukaCarousel.nukaCarouselStrings.scroll3d = "scroll3d".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.scroll3d]
 }
 

@@ -20,7 +20,6 @@ object BatchDeleteScheduledActionType {
   @scala.inline
   def apply(AutoScalingGroupName: ResourceName, ScheduledActionNames: ScheduledActionNames): BatchDeleteScheduledActionType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], ScheduledActionNames = ScheduledActionNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDeleteScheduledActionType]
   }
 }

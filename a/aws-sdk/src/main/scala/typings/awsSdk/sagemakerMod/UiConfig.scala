@@ -16,7 +16,6 @@ object UiConfig {
   @scala.inline
   def apply(UiTemplateS3Uri: S3Uri): UiConfig = {
     val __obj = js.Dynamic.literal(UiTemplateS3Uri = UiTemplateS3Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UiConfig]
   }
 }

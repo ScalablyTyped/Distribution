@@ -15,7 +15,6 @@ object LazyRoute {
   @scala.inline
   def apply(module: StaticSymbol, referencedModule: StaticSymbol, route: String): LazyRoute = {
     val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], referencedModule = referencedModule.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LazyRoute]
   }
 }

@@ -32,42 +32,40 @@ trait ForegroundColor extends js.Object
 
 object ForegroundColor {
   @scala.inline
-  def black: typings.chalk.chalkStrings.black = this.cast("black")
+  def black: typings.chalk.chalkStrings.black = "black".asInstanceOf[typings.chalk.chalkStrings.black]
   @scala.inline
-  def blackBright: typings.chalk.chalkStrings.blackBright = this.cast("blackBright")
+  def blackBright: typings.chalk.chalkStrings.blackBright = "blackBright".asInstanceOf[typings.chalk.chalkStrings.blackBright]
   @scala.inline
-  def blue: typings.chalk.chalkStrings.blue = this.cast("blue")
+  def blue: typings.chalk.chalkStrings.blue = "blue".asInstanceOf[typings.chalk.chalkStrings.blue]
   @scala.inline
-  def blueBright: typings.chalk.chalkStrings.blueBright = this.cast("blueBright")
+  def blueBright: typings.chalk.chalkStrings.blueBright = "blueBright".asInstanceOf[typings.chalk.chalkStrings.blueBright]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cyan: typings.chalk.chalkStrings.cyan = "cyan".asInstanceOf[typings.chalk.chalkStrings.cyan]
   @scala.inline
-  def cyan: typings.chalk.chalkStrings.cyan = this.cast("cyan")
+  def cyanBright: typings.chalk.chalkStrings.cyanBright = "cyanBright".asInstanceOf[typings.chalk.chalkStrings.cyanBright]
   @scala.inline
-  def cyanBright: typings.chalk.chalkStrings.cyanBright = this.cast("cyanBright")
+  def gray: typings.chalk.chalkStrings.gray = "gray".asInstanceOf[typings.chalk.chalkStrings.gray]
   @scala.inline
-  def gray: typings.chalk.chalkStrings.gray = this.cast("gray")
+  def green: typings.chalk.chalkStrings.green = "green".asInstanceOf[typings.chalk.chalkStrings.green]
   @scala.inline
-  def green: typings.chalk.chalkStrings.green = this.cast("green")
+  def greenBright: typings.chalk.chalkStrings.greenBright = "greenBright".asInstanceOf[typings.chalk.chalkStrings.greenBright]
   @scala.inline
-  def greenBright: typings.chalk.chalkStrings.greenBright = this.cast("greenBright")
+  def grey: typings.chalk.chalkStrings.grey = "grey".asInstanceOf[typings.chalk.chalkStrings.grey]
   @scala.inline
-  def grey: typings.chalk.chalkStrings.grey = this.cast("grey")
+  def magenta: typings.chalk.chalkStrings.magenta = "magenta".asInstanceOf[typings.chalk.chalkStrings.magenta]
   @scala.inline
-  def magenta: typings.chalk.chalkStrings.magenta = this.cast("magenta")
+  def magentaBright: typings.chalk.chalkStrings.magentaBright = "magentaBright".asInstanceOf[typings.chalk.chalkStrings.magentaBright]
   @scala.inline
-  def magentaBright: typings.chalk.chalkStrings.magentaBright = this.cast("magentaBright")
+  def red: typings.chalk.chalkStrings.red = "red".asInstanceOf[typings.chalk.chalkStrings.red]
   @scala.inline
-  def red: typings.chalk.chalkStrings.red = this.cast("red")
+  def redBright: typings.chalk.chalkStrings.redBright = "redBright".asInstanceOf[typings.chalk.chalkStrings.redBright]
   @scala.inline
-  def redBright: typings.chalk.chalkStrings.redBright = this.cast("redBright")
+  def white: typings.chalk.chalkStrings.white = "white".asInstanceOf[typings.chalk.chalkStrings.white]
   @scala.inline
-  def white: typings.chalk.chalkStrings.white = this.cast("white")
+  def whiteBright: typings.chalk.chalkStrings.whiteBright = "whiteBright".asInstanceOf[typings.chalk.chalkStrings.whiteBright]
   @scala.inline
-  def whiteBright: typings.chalk.chalkStrings.whiteBright = this.cast("whiteBright")
+  def yellow: typings.chalk.chalkStrings.yellow = "yellow".asInstanceOf[typings.chalk.chalkStrings.yellow]
   @scala.inline
-  def yellow: typings.chalk.chalkStrings.yellow = this.cast("yellow")
-  @scala.inline
-  def yellowBright: typings.chalk.chalkStrings.yellowBright = this.cast("yellowBright")
+  def yellowBright: typings.chalk.chalkStrings.yellowBright = "yellowBright".asInstanceOf[typings.chalk.chalkStrings.yellowBright]
 }
 

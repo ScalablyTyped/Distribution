@@ -24,7 +24,6 @@ object WorkbookStreamWriterOptions {
     zip: PartialArchiverZipOptions
   ): WorkbookStreamWriterOptions = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], useSharedStrings = useSharedStrings.asInstanceOf[js.Any], useStyles = useStyles.asInstanceOf[js.Any], zip = zip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkbookStreamWriterOptions]
   }
 }

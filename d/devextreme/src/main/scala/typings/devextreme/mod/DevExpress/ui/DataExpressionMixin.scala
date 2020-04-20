@@ -14,7 +14,6 @@ object DataExpressionMixin {
   @scala.inline
   def apply(getDataSource: () => DataSource): DataExpressionMixin = {
     val __obj = js.Dynamic.literal(getDataSource = js.Any.fromFunction0(getDataSource))
-  
     __obj.asInstanceOf[DataExpressionMixin]
   }
 }

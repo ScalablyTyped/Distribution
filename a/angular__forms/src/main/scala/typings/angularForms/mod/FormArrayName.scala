@@ -18,7 +18,7 @@ class FormArrayName protected ()
     * @description
     * Async validator function composed of all the async validators registered with this directive.
     */
-  def asyncValidator(): AsyncValidatorFn | Null = js.native
+  def asyncValidator: AsyncValidatorFn | Null = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately
     * before a directive, pipe, or service instance is destroyed.
@@ -39,6 +39,6 @@ class FormArrayName protected ()
     * Synchronous validator function composed of all the synchronous validators registered with this
     * directive.
     */
-  def validator(): ValidatorFn | Null = js.native
+  def validator: ValidatorFn | Null = js.native
 }
 

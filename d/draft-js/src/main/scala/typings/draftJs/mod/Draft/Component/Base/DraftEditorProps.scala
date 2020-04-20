@@ -21,38 +21,54 @@ trait DraftEditorProps extends js.Object {
   var ariaDescribedBy: js.UndefOr[String] = js.undefined
   var ariaExpanded: js.UndefOr[Boolean] = js.undefined
   var ariaLabel: js.UndefOr[String] = js.undefined
+  var ariaLabelledBy: js.UndefOr[String] = js.undefined
   var ariaMultiline: js.UndefOr[Boolean] = js.undefined
+  var ariaOwneeID: js.UndefOr[String] = js.undefined
   // exposed especially to help improve mobile web behaviors
   var autoCapitalize: js.UndefOr[String] = js.undefined
   var autoComplete: js.UndefOr[String] = js.undefined
   var autoCorrect: js.UndefOr[String] = js.undefined
-  // Provide a map of block rendering configurations. Each block type maps to
-  // an element tag and an optional react element wrapper. This configuration
-  // is used for both rendering and paste processing.
+  /**
+    * Provide a map of block rendering configurations. Each block type maps to
+    * an element tag and an optional react element wrapper. This configuration
+    * is used for both rendering and paste processing.
+    */
   var blockRenderMap: js.UndefOr[DraftBlockRenderMap] = js.undefined
-  // For a given `ContentBlock` object, return an object that specifies
-  // a custom block component and/or props. If no object is returned,
-  // the default `TextEditorBlock` is used.
+  /**
+    * For a given `ContentBlock` object, return an object that specifies
+    * a custom block component and/or props. If no object is returned,
+    * the default `TextEditorBlock` is used.
+    */
   var blockRendererFn: js.UndefOr[js.Function1[/* block */ ContentBlock, _]] = js.undefined
-  // Function that allows to define class names to apply to the given block when it is rendered.
+  /**
+    * Function that allows to define class names to apply to the given block when it is rendered.
+    */
   var blockStyleFn: js.UndefOr[js.Function1[/* block */ ContentBlock, String]] = js.undefined
-  // Define a function to transform inline styles to CSS objects
-  // that are applied to spans of text.
+  /**
+    * Define a function to transform inline styles to CSS objects
+    * that are applied to spans of text.
+    */
   var customStyleFn: js.UndefOr[
     js.Function2[/* style */ DraftInlineStyle, /* block */ ContentBlock, CSSProperties]
   ] = js.undefined
-  // Provide a map of inline style names corresponding to CSS style objects
-  // that will be rendered for matching ranges.
+  /**
+    * Provide a map of inline style names corresponding to CSS style objects
+    * that will be rendered for matching ranges.
+    */
   var customStyleMap: js.UndefOr[DraftStyleMap] = js.undefined
-  // If using server-side rendering, this prop is required to be set to
-  // avoid client/server mismatches.
+  /**
+    * If using server-side rendering, this prop is required to be set to
+    * avoid client/server mismatches.
+    */
   var editorKey: js.UndefOr[String] = js.undefined
   var editorState: EditorState
-  // Handle intended text insertion before the insertion occurs. This may be
-  // useful in cases where the user has entered characters that you would like
-  // to trigger some special behavior. E.g. immediately converting `:)` to an
-  // emoji Unicode character, or replacing ASCII quote characters with smart
-  // quotes.
+  /**
+    * Handle intended text insertion before the insertion occurs. This may be
+    * useful in cases where the user has entered characters that you would like
+    * to trigger some special behavior. E.g. immediately converting `:)` to an
+    * emoji Unicode character, or replacing ASCII quote characters with smart
+    * quotes.
+    */
   var handleBeforeInput: js.UndefOr[
     js.Function3[
       /* chars */ String, 
@@ -61,7 +77,7 @@ trait DraftEditorProps extends js.Object {
       DraftHandleValue
     ]
   ] = js.undefined
-  // Handle other drops to prevent default text movement/insertion behaviour
+  /** Handle other drops to prevent default text movement/insertion behaviour */
   var handleDrop: js.UndefOr[
     js.Function3[
       /* selection */ SelectionState, 
@@ -70,12 +86,14 @@ trait DraftEditorProps extends js.Object {
       DraftHandleValue
     ]
   ] = js.undefined
-  // Handle dropped files
+  /** Handle dropped files */
   var handleDroppedFiles: js.UndefOr[
     js.Function2[/* selection */ SelectionState, /* files */ js.Array[Blob], DraftHandleValue]
   ] = js.undefined
-  // Map a key command string provided by your key binding function to a
-  // specified behavior.
+  /**
+    * Map a key command string provided by your key binding function to a
+    * specified behavior.
+    */
   var handleKeyCommand: js.UndefOr[
     js.Function3[
       /* command */ EditorCommand, 
@@ -93,24 +111,24 @@ trait DraftEditorProps extends js.Object {
       DraftHandleValue
     ]
   ] = js.undefined
+  // Cancelable event handlers, handled from the top level down. A handler
+  // that returns `handled` will be the last handler to execute for that event.
   /**
-    * Cancelable event handlers, handled from the top level down. A handler
-    * that returns `handled` will be the last handler to execute for that event.
+    * Useful for managing special behavior for pressing the `Return` key. E.g.
+    * removing the style from an empty list item.
     */
-  // Useful for managing special behavior for pressing the `Return` key. E.g.
-  // removing the style from an empty list item.
   var handleReturn: js.UndefOr[
     js.Function2[/* e */ SyntheticKeyboardEvent, /* editorState */ EditorState, DraftHandleValue]
   ] = js.undefined
-  // A function that accepts a synthetic key event and returns
-  // the matching DraftEditorCommand constant, or null if no command should
-  // be invoked.
+  /**
+    * A function that accepts a synthetic key event and returns
+    * the matching DraftEditorCommand constant, or null if no command should
+    * be invoked.
+    */
   var keyBindingFn: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, EditorCommand | Null]] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* e */ SyntheticEvent, Unit]] = js.undefined
   var onDownArrow: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
-  /**
-    * Non-cancelable event triggers.
-    */
+  // Non-cancelable event triggers.
   var onEscape: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* e */ SyntheticEvent, Unit]] = js.undefined
   var onLeftArrow: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
@@ -118,24 +136,34 @@ trait DraftEditorProps extends js.Object {
   var onTab: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
   var onUpArrow: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
-  // Set whether the `DraftEditor` component should be editable. Useful for
-  // temporarily disabling edit behavior or allowing `DraftEditor` rendering
-  // to be used for consumption purposes.
+  /**
+    * Set whether the `DraftEditor` component should be editable. Useful for
+    * temporarily disabling edit behavior or allowing `DraftEditor` rendering
+    * to be used for consumption purposes.
+    */
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var role: js.UndefOr[String] = js.undefined
-  // Note: spellcheck is always disabled for IE. If enabled in Safari, OSX
-  // autocorrect is enabled as well.
+  /**
+    * Note: spellcheck is always disabled for IE. If enabled in Safari, OSX
+    * autocorrect is enabled as well.
+    */
   var spellCheck: js.UndefOr[Boolean] = js.undefined
-  // Set whether to remove all style information from pasted content. If your
-  // use case should not have any block or inline styles, it is recommended
-  // that you set this to `true`.
+  /**
+    * Set whether to remove all style information from pasted content. If your
+    * use case should not have any block or inline styles, it is recommended
+    * that you set this to `true`.
+    */
   var stripPastedStyles: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
-  // Specify whether text alignment should be forced in a direction
-  // regardless of input characters.
+  /**
+    * Specify whether text alignment should be forced in a direction
+    * regardless of input characters.
+    */
   var textAlignment: js.UndefOr[DraftTextAlignment] = js.undefined
-  // Specify whether text directionality should be forced in a direction
-  // regardless of input characters.
+  /**
+    * Specify whether text directionality should be forced in a direction
+    * regardless of input characters.
+    */
   var textDirectionality: js.UndefOr[DraftTextDirectionality] = js.undefined
   var webDriverTestID: js.UndefOr[String] = js.undefined
   def onChange(editorState: EditorState): Unit
@@ -152,7 +180,9 @@ object DraftEditorProps {
     ariaDescribedBy: String = null,
     ariaExpanded: js.UndefOr[Boolean] = js.undefined,
     ariaLabel: String = null,
+    ariaLabelledBy: String = null,
     ariaMultiline: js.UndefOr[Boolean] = js.undefined,
+    ariaOwneeID: String = null,
     autoCapitalize: String = null,
     autoComplete: String = null,
     autoCorrect: String = null,
@@ -195,7 +225,9 @@ object DraftEditorProps {
     if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy.asInstanceOf[js.Any])
     if (!js.isUndefined(ariaExpanded)) __obj.updateDynamic("ariaExpanded")(ariaExpanded.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
     if (!js.isUndefined(ariaMultiline)) __obj.updateDynamic("ariaMultiline")(ariaMultiline.asInstanceOf[js.Any])
+    if (ariaOwneeID != null) __obj.updateDynamic("ariaOwneeID")(ariaOwneeID.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])

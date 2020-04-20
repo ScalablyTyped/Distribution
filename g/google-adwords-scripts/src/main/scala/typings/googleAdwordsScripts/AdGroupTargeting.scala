@@ -20,7 +20,6 @@ object AdGroupTargeting {
     setTargetingSetting: (CriterionTypeGroup, TargetingSetting) => Unit
   ): AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience] = {
     val __obj = js.Dynamic.literal(audiences = js.Any.fromFunction0(audiences), exculdedAudiences = js.Any.fromFunction0(exculdedAudiences), getTargetingSetting = js.Any.fromFunction0(getTargetingSetting), newUserListBuilder = js.Any.fromFunction0(newUserListBuilder), setTargetingSetting = js.Any.fromFunction2(setTargetingSetting))
-  
     __obj.asInstanceOf[AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience]]
   }
 }

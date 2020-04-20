@@ -14,14 +14,12 @@ trait RowRangeLookup extends js.Object
 
 object RowRangeLookup {
   @scala.inline
-  def active: typings.tabulatorTables.tabulatorTablesStrings.active = this.cast("active")
+  def active: typings.tabulatorTables.tabulatorTablesStrings.active = "active".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.active]
   @scala.inline
-  def all: typings.tabulatorTables.tabulatorTablesStrings.all = this.cast("all")
+  def all: typings.tabulatorTables.tabulatorTablesStrings.all = "all".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def selected: typings.tabulatorTables.tabulatorTablesStrings.selected = "selected".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.selected]
   @scala.inline
-  def selected: typings.tabulatorTables.tabulatorTablesStrings.selected = this.cast("selected")
-  @scala.inline
-  def visible: typings.tabulatorTables.tabulatorTablesStrings.visible = this.cast("visible")
+  def visible: typings.tabulatorTables.tabulatorTablesStrings.visible = "visible".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.visible]
 }
 

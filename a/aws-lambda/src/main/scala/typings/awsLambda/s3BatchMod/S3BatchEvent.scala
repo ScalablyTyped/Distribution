@@ -20,7 +20,6 @@ object S3BatchEvent {
     tasks: js.Array[S3BatchEventTask]
   ): S3BatchEvent = {
     val __obj = js.Dynamic.literal(invocationId = invocationId.asInstanceOf[js.Any], invocationSchemaVersion = invocationSchemaVersion.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3BatchEvent]
   }
 }

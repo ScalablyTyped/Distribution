@@ -19,7 +19,6 @@ object CollectionPage {
     records: js.Array[T]
   ): CollectionPage[T] = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), records = records.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CollectionPage[T]]
   }
 }

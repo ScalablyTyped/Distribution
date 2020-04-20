@@ -18,7 +18,6 @@ object AnonLongdescription {
   @scala.inline
   def apply(avatar_url: String, long_description: String, name: String, short_description: String): AnonLongdescription = {
     val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], long_description = long_description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], short_description = short_description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLongdescription]
   }
 }

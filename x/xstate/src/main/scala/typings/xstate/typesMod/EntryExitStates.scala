@@ -18,7 +18,6 @@ object EntryExitStates {
     exit: Set[StateNode[TContext, _, EventObject, _]]
   ): EntryExitStates[TContext] = {
     val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntryExitStates[TContext]]
   }
 }

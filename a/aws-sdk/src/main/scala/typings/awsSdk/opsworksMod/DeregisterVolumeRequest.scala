@@ -16,7 +16,6 @@ object DeregisterVolumeRequest {
   @scala.inline
   def apply(VolumeId: String): DeregisterVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterVolumeRequest]
   }
 }

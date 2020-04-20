@@ -33,7 +33,6 @@ object AdminUpdateAuthEventFeedbackRequest {
     Username: UsernameType
   ): AdminUpdateAuthEventFeedbackRequest = {
     val __obj = js.Dynamic.literal(EventId = EventId.asInstanceOf[js.Any], FeedbackValue = FeedbackValue.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdminUpdateAuthEventFeedbackRequest]
   }
 }

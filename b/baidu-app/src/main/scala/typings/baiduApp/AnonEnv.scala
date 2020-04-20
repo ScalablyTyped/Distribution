@@ -12,7 +12,6 @@ object AnonEnv {
   @scala.inline
   def apply(env: String): AnonEnv = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnv]
   }
 }

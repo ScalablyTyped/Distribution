@@ -15,7 +15,6 @@ object MatchConfig {
   @scala.inline
   def apply(matchedText: String, offset: Double, tagBuilder: AnchorTagBuilder): MatchConfig = {
     val __obj = js.Dynamic.literal(matchedText = matchedText.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MatchConfig]
   }
 }

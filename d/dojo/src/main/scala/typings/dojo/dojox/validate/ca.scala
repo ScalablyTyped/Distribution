@@ -54,7 +54,6 @@ object ca {
     isSocialInsuranceNumber: String => js.Any
   ): ca = {
     val __obj = js.Dynamic.literal(isPhoneNumber = js.Any.fromFunction1(isPhoneNumber), isPostalCode = js.Any.fromFunction1(isPostalCode), isProvince = js.Any.fromFunction1(isProvince), isSocialInsuranceNumber = js.Any.fromFunction1(isSocialInsuranceNumber))
-  
     __obj.asInstanceOf[ca]
   }
 }

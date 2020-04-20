@@ -13,7 +13,6 @@ object StatOptions {
   @scala.inline
   def apply(length: Double, offset: Double): StatOptions = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatOptions]
   }
 }

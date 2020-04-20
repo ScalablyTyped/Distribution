@@ -15,7 +15,6 @@ object Context {
   @scala.inline
   def apply(kind: String, parameters: StringDictionary[js.Any], story: String): Context = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Context]
   }
 }

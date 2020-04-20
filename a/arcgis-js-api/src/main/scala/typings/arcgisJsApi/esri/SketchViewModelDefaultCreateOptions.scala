@@ -8,7 +8,19 @@ import scala.scalajs.js.annotation._
 
 trait SketchViewModelDefaultCreateOptions extends Object {
   /**
-    * Create operation mode how the graphic can be created.  **Possible Values:**
+    * The default z-value of the newly created geometry. Ignored when `hasZ` is `false` or the layer's elevation mode is set to `absolute-height`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultCreateOptions)
+    */
+  var defaultZ: js.UndefOr[Double] = js.undefined
+  /**
+    * Controls whether the created geometry has z-values or not.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultCreateOptions)
+    */
+  var hasZ: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Create operation mode how the graphic can be created. **Possible Values:**
     *
     * Value | Description |
     * ----- | ----------- |
@@ -28,9 +40,13 @@ object SketchViewModelDefaultCreateOptions {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
+    defaultZ: Int | Double = null,
+    hasZ: js.UndefOr[Boolean] = js.undefined,
     mode: String = null
   ): SketchViewModelDefaultCreateOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (defaultZ != null) __obj.updateDynamic("defaultZ")(defaultZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchViewModelDefaultCreateOptions]
   }

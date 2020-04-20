@@ -13,7 +13,6 @@ object IWindowSizeChangedEventArgs {
   @scala.inline
   def apply(handled: Boolean, size: Size): IWindowSizeChangedEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWindowSizeChangedEventArgs]
   }
 }

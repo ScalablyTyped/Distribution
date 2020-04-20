@@ -15,7 +15,6 @@ object Static {
   @scala.inline
   def apply(nfc: String => String, nfd: String => String, nfkc: String => String, nfkd: String => String): Static = {
     val __obj = js.Dynamic.literal(nfc = js.Any.fromFunction1(nfc), nfd = js.Any.fromFunction1(nfd), nfkc = js.Any.fromFunction1(nfkc), nfkd = js.Any.fromFunction1(nfkd))
-  
     __obj.asInstanceOf[Static]
   }
 }

@@ -16,7 +16,6 @@ object AnonCards {
   @scala.inline
   def apply(cards: js.Array[Card], key: Double, navigationState: NavigationState[AnonParams]): AnonCards = {
     val __obj = js.Dynamic.literal(cards = cards.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCards]
   }
 }

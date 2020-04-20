@@ -13,7 +13,6 @@ object SubDirectory {
   @scala.inline
   def apply(directory: String, extensions: js.Array[String]): SubDirectory = {
     val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubDirectory]
   }
 }

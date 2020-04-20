@@ -38,7 +38,6 @@ object PagerMemory {
     totalRows: Double
   ): PagerMemory = {
     val __obj = js.Dynamic.literal(currentFilters = currentFilters.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], sortList = sortList.asInstanceOf[js.Any], totalRows = totalRows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PagerMemory]
   }
 }

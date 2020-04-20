@@ -12,7 +12,6 @@ object AnonSimplify {
   @scala.inline
   def apply(simplify: Boolean): AnonSimplify = {
     val __obj = js.Dynamic.literal(simplify = simplify.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSimplify]
   }
 }

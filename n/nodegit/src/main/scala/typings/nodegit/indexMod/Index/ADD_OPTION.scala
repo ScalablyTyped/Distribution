@@ -18,14 +18,12 @@ trait ADD_OPTION extends js.Object
 
 object ADD_OPTION {
   @scala.inline
-  def ADD_CHECK_PATHSPEC: `4` = this.cast(4)
+  def ADD_CHECK_PATHSPEC: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ADD_DEFAULT: `0` = this.cast(0)
+  def ADD_DEFAULT: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ADD_DISABLE_PATHSPEC_MATCH: `2` = this.cast(2)
+  def ADD_DISABLE_PATHSPEC_MATCH: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ADD_FORCE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ADD_FORCE: `1` = 1.asInstanceOf[`1`]
 }
 

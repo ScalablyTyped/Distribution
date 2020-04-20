@@ -29,7 +29,6 @@ object AnonIsRowLoaded {
     threshold: Validator[Double]
   ): AnonIsRowLoaded = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isRowLoaded = isRowLoaded.asInstanceOf[js.Any], loadMoreRows = loadMoreRows.asInstanceOf[js.Any], minimumBatchSize = minimumBatchSize.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsRowLoaded]
   }
 }

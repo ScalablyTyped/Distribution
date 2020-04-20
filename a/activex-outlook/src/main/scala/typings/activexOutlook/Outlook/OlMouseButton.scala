@@ -16,12 +16,10 @@ trait OlMouseButton extends js.Object
 
 object OlMouseButton {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olMouseButtonLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olMouseButtonLeft: `1` = this.cast(1)
+  def olMouseButtonMiddle: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olMouseButtonMiddle: `4` = this.cast(4)
-  @scala.inline
-  def olMouseButtonRight: `2` = this.cast(2)
+  def olMouseButtonRight: `2` = 2.asInstanceOf[`2`]
 }
 

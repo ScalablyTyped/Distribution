@@ -12,10 +12,8 @@ trait VisibilityState extends js.Object
 
 object VisibilityState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hidden: typings.std.stdStrings.hidden = "hidden".asInstanceOf[typings.std.stdStrings.hidden]
   @scala.inline
-  def hidden: typings.std.stdStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def visible: typings.std.stdStrings.visible = this.cast("visible")
+  def visible: typings.std.stdStrings.visible = "visible".asInstanceOf[typings.std.stdStrings.visible]
 }
 

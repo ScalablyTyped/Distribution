@@ -12,7 +12,6 @@ object UUIDObject {
   @scala.inline
   def apply(uuids: js.Array[String]): UUIDObject = {
     val __obj = js.Dynamic.literal(uuids = uuids.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UUIDObject]
   }
 }

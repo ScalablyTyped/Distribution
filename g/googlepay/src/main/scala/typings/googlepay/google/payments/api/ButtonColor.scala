@@ -29,12 +29,10 @@ trait ButtonColor extends js.Object
 
 object ButtonColor {
   @scala.inline
-  def black: typings.googlepay.googlepayStrings.black = this.cast("black")
+  def black: typings.googlepay.googlepayStrings.black = "black".asInstanceOf[typings.googlepay.googlepayStrings.black]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: default_ = "default".asInstanceOf[default_]
   @scala.inline
-  def default: default_ = this.cast("default")
-  @scala.inline
-  def white: typings.googlepay.googlepayStrings.white = this.cast("white")
+  def white: typings.googlepay.googlepayStrings.white = "white".asInstanceOf[typings.googlepay.googlepayStrings.white]
 }
 

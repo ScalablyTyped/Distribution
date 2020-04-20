@@ -20,16 +20,14 @@ trait XlPasteSpecialOperation extends js.Object
 
 object XlPasteSpecialOperation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlPasteSpecialOperationAdd: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlPasteSpecialOperationAdd: `2` = this.cast(2)
+  def xlPasteSpecialOperationDivide: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlPasteSpecialOperationDivide: `5` = this.cast(5)
+  def xlPasteSpecialOperationMultiply: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlPasteSpecialOperationMultiply: `4` = this.cast(4)
+  def xlPasteSpecialOperationNone: `-4142` = -4142.asInstanceOf[`-4142`]
   @scala.inline
-  def xlPasteSpecialOperationNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlPasteSpecialOperationSubtract: `3` = this.cast(3)
+  def xlPasteSpecialOperationSubtract: `3` = 3.asInstanceOf[`3`]
 }
 

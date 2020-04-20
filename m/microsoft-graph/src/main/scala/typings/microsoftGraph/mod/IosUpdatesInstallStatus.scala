@@ -28,40 +28,38 @@ trait IosUpdatesInstallStatus extends js.Object
 
 object IosUpdatesInstallStatus {
   @scala.inline
-  def available: typings.microsoftGraph.microsoftGraphStrings.available = this.cast("available")
+  def available: typings.microsoftGraph.microsoftGraphStrings.available = "available".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.available]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def downloadFailed: typings.microsoftGraph.microsoftGraphStrings.downloadFailed = "downloadFailed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.downloadFailed]
   @scala.inline
-  def downloadFailed: typings.microsoftGraph.microsoftGraphStrings.downloadFailed = this.cast("downloadFailed")
+  def downloadInsufficientNetwork: typings.microsoftGraph.microsoftGraphStrings.downloadInsufficientNetwork = "downloadInsufficientNetwork".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.downloadInsufficientNetwork]
   @scala.inline
-  def downloadInsufficientNetwork: typings.microsoftGraph.microsoftGraphStrings.downloadInsufficientNetwork = this.cast("downloadInsufficientNetwork")
+  def downloadInsufficientPower: typings.microsoftGraph.microsoftGraphStrings.downloadInsufficientPower = "downloadInsufficientPower".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.downloadInsufficientPower]
   @scala.inline
-  def downloadInsufficientPower: typings.microsoftGraph.microsoftGraphStrings.downloadInsufficientPower = this.cast("downloadInsufficientPower")
+  def downloadInsufficientSpace: typings.microsoftGraph.microsoftGraphStrings.downloadInsufficientSpace = "downloadInsufficientSpace".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.downloadInsufficientSpace]
   @scala.inline
-  def downloadInsufficientSpace: typings.microsoftGraph.microsoftGraphStrings.downloadInsufficientSpace = this.cast("downloadInsufficientSpace")
+  def downloadRequiresComputer: typings.microsoftGraph.microsoftGraphStrings.downloadRequiresComputer = "downloadRequiresComputer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.downloadRequiresComputer]
   @scala.inline
-  def downloadRequiresComputer: typings.microsoftGraph.microsoftGraphStrings.downloadRequiresComputer = this.cast("downloadRequiresComputer")
+  def downloading: typings.microsoftGraph.microsoftGraphStrings.downloading = "downloading".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.downloading]
   @scala.inline
-  def downloading: typings.microsoftGraph.microsoftGraphStrings.downloading = this.cast("downloading")
+  def idle: typings.microsoftGraph.microsoftGraphStrings.idle = "idle".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.idle]
   @scala.inline
-  def idle: typings.microsoftGraph.microsoftGraphStrings.idle = this.cast("idle")
+  def installFailed: typings.microsoftGraph.microsoftGraphStrings.installFailed = "installFailed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.installFailed]
   @scala.inline
-  def installFailed: typings.microsoftGraph.microsoftGraphStrings.installFailed = this.cast("installFailed")
+  def installInsufficientPower: typings.microsoftGraph.microsoftGraphStrings.installInsufficientPower = "installInsufficientPower".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.installInsufficientPower]
   @scala.inline
-  def installInsufficientPower: typings.microsoftGraph.microsoftGraphStrings.installInsufficientPower = this.cast("installInsufficientPower")
+  def installInsufficientSpace: typings.microsoftGraph.microsoftGraphStrings.installInsufficientSpace = "installInsufficientSpace".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.installInsufficientSpace]
   @scala.inline
-  def installInsufficientSpace: typings.microsoftGraph.microsoftGraphStrings.installInsufficientSpace = this.cast("installInsufficientSpace")
+  def installPhoneCallInProgress: typings.microsoftGraph.microsoftGraphStrings.installPhoneCallInProgress = "installPhoneCallInProgress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.installPhoneCallInProgress]
   @scala.inline
-  def installPhoneCallInProgress: typings.microsoftGraph.microsoftGraphStrings.installPhoneCallInProgress = this.cast("installPhoneCallInProgress")
+  def installing: typings.microsoftGraph.microsoftGraphStrings.installing = "installing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.installing]
   @scala.inline
-  def installing: typings.microsoftGraph.microsoftGraphStrings.installing = this.cast("installing")
+  def notSupportedOperation: typings.microsoftGraph.microsoftGraphStrings.notSupportedOperation = "notSupportedOperation".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSupportedOperation]
   @scala.inline
-  def notSupportedOperation: typings.microsoftGraph.microsoftGraphStrings.notSupportedOperation = this.cast("notSupportedOperation")
+  def sharedDeviceUserLoggedInError: typings.microsoftGraph.microsoftGraphStrings.sharedDeviceUserLoggedInError = "sharedDeviceUserLoggedInError".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharedDeviceUserLoggedInError]
   @scala.inline
-  def sharedDeviceUserLoggedInError: typings.microsoftGraph.microsoftGraphStrings.sharedDeviceUserLoggedInError = this.cast("sharedDeviceUserLoggedInError")
+  def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
   @scala.inline
-  def success: typings.microsoftGraph.microsoftGraphStrings.success = this.cast("success")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

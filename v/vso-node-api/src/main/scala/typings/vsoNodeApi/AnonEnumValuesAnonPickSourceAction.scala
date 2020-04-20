@@ -12,7 +12,6 @@ object AnonEnumValuesAnonPickSourceAction {
   @scala.inline
   def apply(enumValues: AnonPickSourceAction): AnonEnumValuesAnonPickSourceAction = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonPickSourceAction]
   }
 }

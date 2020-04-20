@@ -76,28 +76,28 @@ class Model_ () extends IModel {
     * Whether the model is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MModel_(): Boolean = js.native
+  def isDisposed_MModel_ : Boolean = js.native
   /**
     * A signal emitted when a mimetype changes.
     */
   @JSName("mimeTypeChanged")
-  def mimeTypeChanged_MModel_(): ISignal[this.type, IChangedArgs[String, String, String]] = js.native
+  def mimeTypeChanged_MModel_ : ISignal[this.type, IChangedArgs[String, String, String]] = js.native
   /**
     * A mime type of the model.
     */
   @JSName("mimeType")
-  def mimeType_MModel_(): String = js.native
+  def mimeType_MModel_ : String = js.native
   @JSName("mimeType")
   def mimeType_MModel_(newValue: String): js.Any = js.native
   /**
     * Get the selections for the model.
     */
   @JSName("selections")
-  def selections_MModel_(): IObservableMap[js.Array[ITextSelection]] = js.native
+  def selections_MModel_ : IObservableMap[js.Array[ITextSelection]] = js.native
   /**
     * Get the value of the model.
     */
   @JSName("value")
-  def value_MModel_(): IObservableString = js.native
+  def value_MModel_ : IObservableString = js.native
 }
 

@@ -16,7 +16,6 @@ object CreditCardInfo {
   @scala.inline
   def apply(billingAddress: AnonPostalCode, cvv: String, expirationDate: String, number: String): CreditCardInfo = {
     val __obj = js.Dynamic.literal(billingAddress = billingAddress.asInstanceOf[js.Any], cvv = cvv.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreditCardInfo]
   }
 }

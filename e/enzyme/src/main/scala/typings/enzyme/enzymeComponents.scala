@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object enzymeComponents extends enzymeProps {
   @scala.inline
-  def ElementClass: ComponentType[js.Any] = js.constructorOf[typings.enzyme.mod.ElementClass].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ElementClass: ComponentType[js.Any] = js.constructorOf[typings.enzyme.mod.ElementClass].asInstanceOf[ComponentType[js.Any]]
 }
 

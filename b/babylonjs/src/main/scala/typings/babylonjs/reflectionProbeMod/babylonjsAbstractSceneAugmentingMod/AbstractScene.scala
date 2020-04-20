@@ -32,7 +32,6 @@ object AbstractScene {
     removeReflectionProbe: ReflectionProbe => Double
   ): AbstractScene = {
     val __obj = js.Dynamic.literal(addReflectionProbe = js.Any.fromFunction1(addReflectionProbe), reflectionProbes = reflectionProbes.asInstanceOf[js.Any], removeReflectionProbe = js.Any.fromFunction1(removeReflectionProbe))
-  
     __obj.asInstanceOf[AbstractScene]
   }
 }

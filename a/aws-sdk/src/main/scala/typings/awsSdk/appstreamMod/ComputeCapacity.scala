@@ -16,7 +16,6 @@ object ComputeCapacity {
   @scala.inline
   def apply(DesiredInstances: Integer): ComputeCapacity = {
     val __obj = js.Dynamic.literal(DesiredInstances = DesiredInstances.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComputeCapacity]
   }
 }

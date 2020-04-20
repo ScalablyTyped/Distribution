@@ -25,7 +25,6 @@ object Servo {
   @scala.inline
   def apply(calibrate: (Double, Double, Double) => Unit, moveTo: Double => Unit): Servo = {
     val __obj = js.Dynamic.literal(calibrate = js.Any.fromFunction3(calibrate), moveTo = js.Any.fromFunction1(moveTo))
-  
     __obj.asInstanceOf[Servo]
   }
 }

@@ -26,15 +26,15 @@ class WsdlDescription protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FWsdlDescription: IModel = js.native
-  def containerAsImportedWebService(): ImportedWebService = js.native
-  def containerAsMsd(): Msd = js.native
-  def importsHaveLocations(): Boolean = js.native
+  def containerAsImportedWebService: ImportedWebService = js.native
+  def containerAsMsd: Msd = js.native
+  def importsHaveLocations: Boolean = js.native
   def importsHaveLocations(newValue: Boolean): js.Any = js.native
-  def schemaEntries(): IList[XmlSchemaEntry] = js.native
-  def services(): IList[ServiceInfo] = js.native
-  def targetNamespace(): String = js.native
+  def schemaEntries: IList[XmlSchemaEntry] = js.native
+  def services: IList[ServiceInfo] = js.native
+  def targetNamespace: String = js.native
   def targetNamespace(newValue: String): js.Any = js.native
-  def wsdlEntries(): IList[WsdlEntry] = js.native
+  def wsdlEntries: IList[WsdlEntry] = js.native
 }
 
 /* static members */

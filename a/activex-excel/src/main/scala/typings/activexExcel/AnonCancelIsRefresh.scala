@@ -18,7 +18,6 @@ object AnonCancelIsRefresh {
   @scala.inline
   def apply(Cancel: Boolean, IsRefresh: Boolean, Map: XmlMap, Url: String, Wb: Workbook): AnonCancelIsRefresh = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], IsRefresh = IsRefresh.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelIsRefresh]
   }
 }

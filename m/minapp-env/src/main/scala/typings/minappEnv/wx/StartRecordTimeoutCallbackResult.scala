@@ -15,7 +15,6 @@ object StartRecordTimeoutCallbackResult {
   @scala.inline
   def apply(tempThumbPath: String, tempVideoPath: String): StartRecordTimeoutCallbackResult = {
     val __obj = js.Dynamic.literal(tempThumbPath = tempThumbPath.asInstanceOf[js.Any], tempVideoPath = tempVideoPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartRecordTimeoutCallbackResult]
   }
 }

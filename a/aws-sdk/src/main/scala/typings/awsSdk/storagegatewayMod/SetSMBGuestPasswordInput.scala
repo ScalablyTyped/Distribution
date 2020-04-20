@@ -20,7 +20,6 @@ object SetSMBGuestPasswordInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN, Password: SMBGuestPassword): SetSMBGuestPasswordInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetSMBGuestPasswordInput]
   }
 }

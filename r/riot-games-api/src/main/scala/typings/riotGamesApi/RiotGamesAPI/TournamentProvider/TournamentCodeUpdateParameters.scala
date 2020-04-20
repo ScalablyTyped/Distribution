@@ -15,7 +15,6 @@ object TournamentCodeUpdateParameters {
   @scala.inline
   def apply(allowedParticipants: String, mapType: String, pickType: String, spectatorType: String): TournamentCodeUpdateParameters = {
     val __obj = js.Dynamic.literal(allowedParticipants = allowedParticipants.asInstanceOf[js.Any], mapType = mapType.asInstanceOf[js.Any], pickType = pickType.asInstanceOf[js.Any], spectatorType = spectatorType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TournamentCodeUpdateParameters]
   }
 }

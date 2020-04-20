@@ -20,7 +20,6 @@ object Interpolation {
     Utils: AnonBernstein
   ): Interpolation = {
     val __obj = js.Dynamic.literal(Bezier = js.Any.fromFunction2(Bezier), CatmullRom = js.Any.fromFunction2(CatmullRom), Linear = js.Any.fromFunction2(Linear), Utils = Utils.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Interpolation]
   }
 }

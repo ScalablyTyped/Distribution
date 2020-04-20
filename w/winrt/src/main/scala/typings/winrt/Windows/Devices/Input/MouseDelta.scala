@@ -13,7 +13,6 @@ object MouseDelta {
   @scala.inline
   def apply(x: Double, y: Double): MouseDelta = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MouseDelta]
   }
 }

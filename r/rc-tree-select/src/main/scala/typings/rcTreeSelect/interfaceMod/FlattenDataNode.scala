@@ -14,7 +14,6 @@ object FlattenDataNode {
   @scala.inline
   def apply(data: DataNode, key: Key, level: Double): FlattenDataNode = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FlattenDataNode]
   }
 }

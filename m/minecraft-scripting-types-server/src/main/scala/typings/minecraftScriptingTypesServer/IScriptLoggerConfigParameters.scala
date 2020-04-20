@@ -29,7 +29,6 @@ object IScriptLoggerConfigParameters {
   @scala.inline
   def apply(log_errors: Boolean, log_information: Boolean, log_warnings: Boolean): IScriptLoggerConfigParameters = {
     val __obj = js.Dynamic.literal(log_errors = log_errors.asInstanceOf[js.Any], log_information = log_information.asInstanceOf[js.Any], log_warnings = log_warnings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IScriptLoggerConfigParameters]
   }
 }

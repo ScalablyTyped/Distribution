@@ -42,38 +42,36 @@ trait _HTML_PAINTER extends js.Object
 
 object _HTML_PAINTER {
   @scala.inline
-  def HTMLPAINTER_3DSURFACE: `512` = this.cast(512)
+  def HTMLPAINTER_3DSURFACE: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def HTMLPAINTER_ALPHA: `4` = this.cast(4)
+  def HTMLPAINTER_ALPHA: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def HTMLPAINTER_COMPLEX: `8` = this.cast(8)
+  def HTMLPAINTER_COMPLEX: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def HTMLPAINTER_EXPAND: `65536` = this.cast(65536)
+  def HTMLPAINTER_EXPAND: `65536` = 65536.asInstanceOf[`65536`]
   @scala.inline
-  def HTMLPAINTER_HITTEST: `32` = this.cast(32)
+  def HTMLPAINTER_HITTEST: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def HTMLPAINTER_NOBAND: `1024` = this.cast(1024)
+  def HTMLPAINTER_NOBAND: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def HTMLPAINTER_NODC: `4096` = this.cast(4096)
+  def HTMLPAINTER_NODC: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def HTMLPAINTER_NOPHYSICALCLIP: `8192` = this.cast(8192)
+  def HTMLPAINTER_NOPHYSICALCLIP: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def HTMLPAINTER_NOSAVEDC: `16384` = this.cast(16384)
+  def HTMLPAINTER_NOSAVEDC: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
-  def HTMLPAINTER_NOSCROLLBITS: `131072` = this.cast(131072)
+  def HTMLPAINTER_NOSCROLLBITS: `131072` = 131072.asInstanceOf[`131072`]
   @scala.inline
-  def HTMLPAINTER_OPAQUE: `1` = this.cast(1)
+  def HTMLPAINTER_OPAQUE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLPAINTER_OVERLAY: `16` = this.cast(16)
+  def HTMLPAINTER_OVERLAY: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def HTMLPAINTER_SUPPORTS_XFORM: `32768` = this.cast(32768)
+  def HTMLPAINTER_SUPPORTS_XFORM: `32768` = 32768.asInstanceOf[`32768`]
   @scala.inline
-  def HTMLPAINTER_SURFACE: `256` = this.cast(256)
+  def HTMLPAINTER_SURFACE: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def HTMLPAINTER_TRANSPARENT: `2` = this.cast(2)
+  def HTMLPAINTER_TRANSPARENT: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def HTML_PAINTER_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTML_PAINTER_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

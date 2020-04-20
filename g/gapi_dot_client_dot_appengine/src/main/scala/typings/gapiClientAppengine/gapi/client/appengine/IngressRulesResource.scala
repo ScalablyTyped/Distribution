@@ -38,7 +38,6 @@ object IngressRulesResource {
     patch: AnonOauthtoken => Request_[FirewallRule]
   ): IngressRulesResource = {
     val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction1(batchUpdate), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
-  
     __obj.asInstanceOf[IngressRulesResource]
   }
 }

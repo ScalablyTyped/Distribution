@@ -15,7 +15,6 @@ object AnonFolderPages {
   @scala.inline
   def apply(Folder: Folder, Pages: PropertyPages): AnonFolderPages = {
     val __obj = js.Dynamic.literal(Folder = Folder.asInstanceOf[js.Any], Pages = Pages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFolderPages]
   }
 }

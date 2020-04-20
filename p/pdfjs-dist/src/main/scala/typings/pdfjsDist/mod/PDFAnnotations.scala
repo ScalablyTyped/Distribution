@@ -30,7 +30,6 @@ object PDFAnnotations {
     loadResources: js.Any => PDFPromise[_]
   ): PDFAnnotations = {
     val __obj = js.Dynamic.literal(getData = js.Any.fromFunction0(getData), getEmptyContainer = js.Any.fromFunction2(getEmptyContainer), getHtmlElement = js.Any.fromFunction1(getHtmlElement), getOperatorList = js.Any.fromFunction1(getOperatorList), hasHtml = js.Any.fromFunction0(hasHtml), isViewable = js.Any.fromFunction0(isViewable), loadResources = js.Any.fromFunction1(loadResources))
-  
     __obj.asInstanceOf[PDFAnnotations]
   }
 }

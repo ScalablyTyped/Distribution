@@ -13,7 +13,6 @@ object AnonCss {
   @scala.inline
   def apply(css: String, html: String): AnonCss = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCss]
   }
 }

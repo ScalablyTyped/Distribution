@@ -18,7 +18,6 @@ object TypeofuacRedirect {
     get_redirects_all: () => Double
   ): TypeofuacRedirect = {
     val __obj = js.Dynamic.literal(get_redirects = js.Any.fromFunction2(get_redirects), get_redirects_acc = js.Any.fromFunction3(get_redirects_acc), get_redirects_all = js.Any.fromFunction0(get_redirects_all))
-  
     __obj.asInstanceOf[TypeofuacRedirect]
   }
 }

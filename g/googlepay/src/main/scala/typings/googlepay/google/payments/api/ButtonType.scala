@@ -26,10 +26,8 @@ trait ButtonType extends js.Object
 
 object ButtonType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def long: typings.googlepay.googlepayStrings.long = "long".asInstanceOf[typings.googlepay.googlepayStrings.long]
   @scala.inline
-  def long: typings.googlepay.googlepayStrings.long = this.cast("long")
-  @scala.inline
-  def short: typings.googlepay.googlepayStrings.short = this.cast("short")
+  def short: typings.googlepay.googlepayStrings.short = "short".asInstanceOf[typings.googlepay.googlepayStrings.short]
 }
 

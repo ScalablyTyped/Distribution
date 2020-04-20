@@ -15,7 +15,6 @@ object ChannelsResource {
   @scala.inline
   def apply(stop: AnonAlt => Request_[Unit]): ChannelsResource = {
     val __obj = js.Dynamic.literal(stop = js.Any.fromFunction1(stop))
-  
     __obj.asInstanceOf[ChannelsResource]
   }
 }

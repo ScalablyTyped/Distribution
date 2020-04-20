@@ -25,7 +25,6 @@ object AnonSaveRow {
   @scala.inline
   def apply[TEntity](saveRow: (IScope, saveRowHandler[TEntity]) => Unit): AnonSaveRow[TEntity] = {
     val __obj = js.Dynamic.literal(saveRow = js.Any.fromFunction2(saveRow))
-  
     __obj.asInstanceOf[AnonSaveRow[TEntity]]
   }
 }

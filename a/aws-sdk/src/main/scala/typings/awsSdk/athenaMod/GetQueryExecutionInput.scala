@@ -16,7 +16,6 @@ object GetQueryExecutionInput {
   @scala.inline
   def apply(QueryExecutionId: QueryExecutionId): GetQueryExecutionInput = {
     val __obj = js.Dynamic.literal(QueryExecutionId = QueryExecutionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetQueryExecutionInput]
   }
 }

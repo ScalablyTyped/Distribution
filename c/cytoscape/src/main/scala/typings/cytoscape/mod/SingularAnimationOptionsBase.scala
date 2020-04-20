@@ -28,7 +28,6 @@ object SingularAnimationOptionsBase {
     style: js.Any
   ): SingularAnimationOptionsBase = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], renderedPosition = renderedPosition.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SingularAnimationOptionsBase]
   }
 }

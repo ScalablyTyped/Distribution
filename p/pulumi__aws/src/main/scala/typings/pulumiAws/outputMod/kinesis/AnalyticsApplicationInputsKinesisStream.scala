@@ -20,7 +20,6 @@ object AnalyticsApplicationInputsKinesisStream {
   @scala.inline
   def apply(resourceArn: String, roleArn: String): AnalyticsApplicationInputsKinesisStream = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyticsApplicationInputsKinesisStream]
   }
 }

@@ -13,7 +13,6 @@ object AnonGet {
   @scala.inline
   def apply(get: (Container, js.Any) => js.Any): AnonGet = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-  
     __obj.asInstanceOf[AnonGet]
   }
 }

@@ -13,7 +13,6 @@ object IOpenAPISecurityHandler {
   @scala.inline
   def apply(handle: Request => js.Promise[Unit]): IOpenAPISecurityHandler = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
-  
     __obj.asInstanceOf[IOpenAPISecurityHandler]
   }
 }

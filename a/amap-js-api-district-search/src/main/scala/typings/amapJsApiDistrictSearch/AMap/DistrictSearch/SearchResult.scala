@@ -19,7 +19,6 @@ object SearchResult {
   @scala.inline
   def apply(districtList: js.Array[District], info: String): SearchResult = {
     val __obj = js.Dynamic.literal(districtList = districtList.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchResult]
   }
 }

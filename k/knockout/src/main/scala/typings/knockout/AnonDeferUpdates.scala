@@ -13,7 +13,6 @@ object AnonDeferUpdates {
   @scala.inline
   def apply(deferUpdates: Boolean, useOnlyNativeEvents: Boolean): AnonDeferUpdates = {
     val __obj = js.Dynamic.literal(deferUpdates = deferUpdates.asInstanceOf[js.Any], useOnlyNativeEvents = useOnlyNativeEvents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDeferUpdates]
   }
 }

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "chromecast-caf-sender"
-version := "1.0-dt-20200121Z-1e18e7"
+version := "1.0-dt-20200121Z-06d8fe"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20200327Z-9bf1c7",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20200225Z-0b7aec",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20200226Z-e61265",
-  "org.scalablytyped" %%% "har-format" % "1.2-dt-20190213Z-547015",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20200409Z-707fe0",
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20200225Z-b16a18",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20200226Z-f8c261",
+  "org.scalablytyped" %%% "har-format" % "1.2-dt-20190213Z-904358",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

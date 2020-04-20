@@ -40,8 +40,8 @@ trait TypeofImmutable extends js.Object {
   def get[V, NSV](collection: js.Array[V], key: Double, notSetValue: NSV): V | NSV = js.native
   def get[V, NSV](collection: StringDictionary[V], key: String, notSetValue: NSV): V | NSV = js.native
   def get[K, V](collection: typings.immutable.Immutable.Collection[K, V], key: K): js.UndefOr[V] = js.native
-  def get[C /* <: js.Object */, K /* <: String */](`object`: C, key: K, notSetValue: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any = js.native
-  def get[TProps, K /* <: String */](record: typings.immutable.Immutable.Record[TProps], key: K, notSetValue: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any = js.native
+  def get[C /* <: js.Object */, K /* <: /* keyof C */ String */](`object`: C, key: K, notSetValue: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any = js.native
+  def get[TProps, K /* <: /* keyof TProps */ String */](record: typings.immutable.Immutable.Record[TProps], key: K, notSetValue: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any = js.native
   def get[K, V, NSV](collection: typings.immutable.Immutable.Collection[K, V], key: K, notSetValue: NSV): V | NSV = js.native
   def getIn(collection: js.Any, keyPath: Iterable[_], notSetValue: js.Any): js.Any = js.native
   def has(collection: js.Object, key: js.Any): Boolean = js.native
@@ -76,17 +76,17 @@ trait TypeofImmutable extends js.Object {
     collections: ((Iterable[_ | (js.Tuple2[_, _])]) | StringDictionary[js.Any])*
   ): C = js.native
   def remove[C /* <: js.Array[_] */](collection: C, key: Double): C = js.native
-  def remove[C /* <: StringDictionary[js.Any] */, K /* <: String */](collection: C, key: K): C = js.native
+  def remove[C /* <: StringDictionary[js.Any] */, K /* <: /* keyof C */ String */](collection: C, key: K): C = js.native
   def removeIn[C](collection: C, keyPath: Iterable[_]): C = js.native
   @JSName("remove")
-  def remove_CK_String[C, K /* <: String */](collection: C, key: K): C = js.native
+  def remove_CK_String[C, K /* <: /* keyof C */ String */](collection: C, key: K): C = js.native
   @JSName("remove")
   def remove_KC_CollectionKWildcard[K, C /* <: typings.immutable.Immutable.Collection[K, _] */](collection: C, key: K): C = js.native
   @JSName("remove")
-  def remove_TPropsC_RecordTPropsK_String[TProps, C /* <: typings.immutable.Immutable.Record[TProps] */, K /* <: String */](collection: C, key: K): C = js.native
+  def remove_TPropsC_RecordTPropsK_String[TProps, C /* <: typings.immutable.Immutable.Record[TProps] */, K /* <: /* keyof TProps */ String */](collection: C, key: K): C = js.native
   def set[V, C /* <: StringDictionary[V] */](collection: C, key: String, value: V): C = js.native
   def set[V, C /* <: js.Array[V] */](collection: C, key: Double, value: V): C = js.native
-  def set[C, K /* <: String */](
+  def set[C, K /* <: /* keyof C */ String */](
     `object`: C,
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
@@ -94,7 +94,7 @@ trait TypeofImmutable extends js.Object {
   def set[K, V, C /* <: typings.immutable.Immutable.Collection[K, V] */](collection: C, key: K, value: V): C = js.native
   def setIn[C](collection: C, keyPath: Iterable[_], value: js.Any): C = js.native
   @JSName("set")
-  def set_TPropsC_RecordTPropsK_String[TProps, C /* <: typings.immutable.Immutable.Record[TProps] */, K /* <: String */](
+  def set_TPropsC_RecordTPropsK_String[TProps, C /* <: typings.immutable.Immutable.Record[TProps] */, K /* <: /* keyof TProps */ String */](
     record: C,
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any
@@ -106,7 +106,7 @@ trait TypeofImmutable extends js.Object {
     notSetValue: NSV,
     updater: js.Function1[/* value */ V | NSV, V]
   ): js.Array[V] = js.native
-  def update[C, K /* <: String */](
+  def update[C, K /* <: /* keyof C */ String */](
     `object`: C,
     key: K,
     updater: js.Function1[
@@ -114,7 +114,7 @@ trait TypeofImmutable extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
     ]
   ): C = js.native
-  def update[C, K /* <: String */, NSV](
+  def update[C, K /* <: /* keyof C */ String */, NSV](
     `object`: C,
     key: K,
     notSetValue: NSV,
@@ -135,7 +135,7 @@ trait TypeofImmutable extends js.Object {
   @JSName("update")
   def update_KVC_CollectionKVNSV[K, V, C /* <: typings.immutable.Immutable.Collection[K, V] */, NSV](collection: C, key: K, notSetValue: NSV, updater: js.Function1[/* value */ V | NSV, V]): C = js.native
   @JSName("update")
-  def update_TPropsC_RecordTPropsK_String[TProps, C /* <: typings.immutable.Immutable.Record[TProps] */, K /* <: String */](
+  def update_TPropsC_RecordTPropsK_String[TProps, C /* <: typings.immutable.Immutable.Record[TProps] */, K /* <: /* keyof TProps */ String */](
     record: C,
     key: K,
     updater: js.Function1[
@@ -144,7 +144,7 @@ trait TypeofImmutable extends js.Object {
     ]
   ): C = js.native
   @JSName("update")
-  def update_TPropsC_RecordTPropsK_StringNSV[TProps, C /* <: typings.immutable.Immutable.Record[TProps] */, K /* <: String */, NSV](
+  def update_TPropsC_RecordTPropsK_StringNSV[TProps, C /* <: typings.immutable.Immutable.Record[TProps] */, K /* <: /* keyof TProps */ String */, NSV](
     record: C,
     key: K,
     notSetValue: NSV,
@@ -154,8 +154,8 @@ trait TypeofImmutable extends js.Object {
     ]
   ): C = js.native
   @JSName("update")
-  def update_VC_StringDictionaryVK_StringNSV_StringDictionary[V, C /* <: StringDictionary[V] */, K /* <: String */, NSV](collection: C, key: K, notSetValue: NSV, updater: js.Function1[/* value */ V | NSV, V]): StringDictionary[V] = js.native
+  def update_VC_StringDictionaryVK_StringNSV_StringDictionary[V, C /* <: StringDictionary[V] */, K /* <: /* keyof C */ String */, NSV](collection: C, key: K, notSetValue: NSV, updater: js.Function1[/* value */ V | NSV, V]): StringDictionary[V] = js.native
   @JSName("update")
-  def update_VC_StringDictionaryVK_String_StringDictionary[V, C /* <: StringDictionary[V] */, K /* <: String */](collection: C, key: K, updater: js.Function1[/* value */ V, V]): StringDictionary[V] = js.native
+  def update_VC_StringDictionaryVK_String_StringDictionary[V, C /* <: StringDictionary[V] */, K /* <: /* keyof C */ String */](collection: C, key: K, updater: js.Function1[/* value */ V, V]): StringDictionary[V] = js.native
 }
 

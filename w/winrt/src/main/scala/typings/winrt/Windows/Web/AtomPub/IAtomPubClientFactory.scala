@@ -13,7 +13,6 @@ object IAtomPubClientFactory {
   @scala.inline
   def apply(createAtomPubClientWithCredentials: PasswordCredential => AtomPubClient): IAtomPubClientFactory = {
     val __obj = js.Dynamic.literal(createAtomPubClientWithCredentials = js.Any.fromFunction1(createAtomPubClientWithCredentials))
-  
     __obj.asInstanceOf[IAtomPubClientFactory]
   }
 }

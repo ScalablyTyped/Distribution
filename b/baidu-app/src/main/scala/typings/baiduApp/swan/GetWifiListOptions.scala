@@ -13,7 +13,6 @@ object GetWifiListOptions {
   @scala.inline
   def apply(wifiList: js.Array[WiFi]): GetWifiListOptions = {
     val __obj = js.Dynamic.literal(wifiList = wifiList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetWifiListOptions]
   }
 }

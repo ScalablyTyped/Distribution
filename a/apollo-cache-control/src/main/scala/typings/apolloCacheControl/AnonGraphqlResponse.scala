@@ -13,7 +13,6 @@ object AnonGraphqlResponse {
   @scala.inline
   def apply(graphqlResponse: GraphQLResponse): AnonGraphqlResponse = {
     val __obj = js.Dynamic.literal(graphqlResponse = graphqlResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGraphqlResponse]
   }
 }

@@ -15,7 +15,6 @@ object ReadonlyRangeCov {
   @scala.inline
   def apply(count: Double, endOffset: Double, startOffset: Double): ReadonlyRangeCov = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], endOffset = endOffset.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyRangeCov]
   }
 }

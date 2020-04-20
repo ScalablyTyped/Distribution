@@ -26,26 +26,24 @@ trait ShellFolderViewOptions extends js.Object
 object ShellFolderViewOptions {
   /** The **Active Desktop – View as Web Page** option is enabled. */
   @scala.inline
-  def SFVVO_DESKTOPHTML: `0x00000200` = this.cast(0x00000200)
+  def SFVVO_DESKTOPHTML: `0x00000200` = 0x00000200.asInstanceOf[`0x00000200`]
   /** The **Double-Click to Open an Item** option is enabled. */
   @scala.inline
-  def SFVVO_DOUBLECLICKINWEBVIEW: `0x00000080` = this.cast(0x00000080)
+  def SFVVO_DOUBLECLICKINWEBVIEW: `0x00000080` = 0x00000080.asInstanceOf[`0x00000080`]
   /** The **Show All Files** option is enabled. */
   @scala.inline
-  def SFVVO_SHOWALLOBJECTS: `0x00000001` = this.cast(0x00000001)
+  def SFVVO_SHOWALLOBJECTS: `0x00000001` = 0x00000001.asInstanceOf[`0x00000001`]
   /** The **Display Compressed Files and Folders with Alternate Color** option is enabled. */
   @scala.inline
-  def SFVVO_SHOWCOMPCOLOR: `0x00000008` = this.cast(0x00000008)
+  def SFVVO_SHOWCOMPCOLOR: `0x00000008` = 0x00000008.asInstanceOf[`0x00000008`]
   /** The **Hide extensions for known file types** option is disabled. */
   @scala.inline
-  def SFVVO_SHOWEXTENSIONS: `0x00000002` = this.cast(0x00000002)
+  def SFVVO_SHOWEXTENSIONS: `0x00000002` = 0x00000002.asInstanceOf[`0x00000002`]
   /** The **Do Not Show Hidden Files** option is enabled. */
   @scala.inline
-  def SFVVO_SHOWSYSFILES: `0x00000020` = this.cast(0x00000020)
+  def SFVVO_SHOWSYSFILES: `0x00000020` = 0x00000020.asInstanceOf[`0x00000020`]
   /** The **Classic Style** option is enabled. */
   @scala.inline
-  def SFVVO_WIN95CLASSIC: `0x00000040` = this.cast(0x00000040)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SFVVO_WIN95CLASSIC: `0x00000040` = 0x00000040.asInstanceOf[`0x00000040`]
 }
 

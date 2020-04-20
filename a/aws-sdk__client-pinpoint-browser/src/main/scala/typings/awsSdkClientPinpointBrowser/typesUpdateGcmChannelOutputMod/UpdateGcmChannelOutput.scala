@@ -23,7 +23,6 @@ object UpdateGcmChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, GCMChannelResponse: UnmarshalledGCMChannelResponse): UpdateGcmChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], GCMChannelResponse = GCMChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateGcmChannelOutput]
   }
 }

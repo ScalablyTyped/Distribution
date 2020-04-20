@@ -12,7 +12,6 @@ object AnonPriority {
   @scala.inline
   def apply(priority: Double): AnonPriority = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPriority]
   }
 }

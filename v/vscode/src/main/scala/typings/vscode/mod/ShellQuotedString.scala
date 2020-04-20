@@ -19,7 +19,6 @@ object ShellQuotedString {
   @scala.inline
   def apply(quoting: ShellQuoting, value: String): ShellQuotedString = {
     val __obj = js.Dynamic.literal(quoting = quoting.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShellQuotedString]
   }
 }

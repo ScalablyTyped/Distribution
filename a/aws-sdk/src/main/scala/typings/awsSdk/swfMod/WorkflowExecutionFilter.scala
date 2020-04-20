@@ -16,7 +16,6 @@ object WorkflowExecutionFilter {
   @scala.inline
   def apply(workflowId: WorkflowId): WorkflowExecutionFilter = {
     val __obj = js.Dynamic.literal(workflowId = workflowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkflowExecutionFilter]
   }
 }

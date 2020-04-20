@@ -14,7 +14,6 @@ object AnonDuration {
   @scala.inline
   def apply(duration: Double, height: Double, width: Double): AnonDuration = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDuration]
   }
 }

@@ -31,7 +31,6 @@ object AnonBytesDelta {
   @scala.inline
   def apply(bytes: Double, bytesDelta: Double, bytesLeft: Double, speed: Double, timeLeft: Double): AnonBytesDelta = {
     val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], bytesDelta = bytesDelta.asInstanceOf[js.Any], bytesLeft = bytesLeft.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], timeLeft = timeLeft.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBytesDelta]
   }
 }

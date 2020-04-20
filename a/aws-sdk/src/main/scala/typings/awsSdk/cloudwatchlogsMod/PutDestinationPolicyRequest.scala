@@ -20,7 +20,6 @@ object PutDestinationPolicyRequest {
   @scala.inline
   def apply(accessPolicy: AccessPolicy, destinationName: DestinationName): PutDestinationPolicyRequest = {
     val __obj = js.Dynamic.literal(accessPolicy = accessPolicy.asInstanceOf[js.Any], destinationName = destinationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutDestinationPolicyRequest]
   }
 }

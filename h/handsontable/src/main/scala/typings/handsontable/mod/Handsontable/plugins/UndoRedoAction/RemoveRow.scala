@@ -16,7 +16,6 @@ object RemoveRow {
   @scala.inline
   def apply(actionType: remove_row, data: js.Array[js.Array[CellValue]], index: Double): RemoveRow = {
     val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveRow]
   }
 }

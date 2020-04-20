@@ -17,20 +17,18 @@ trait toastType extends js.Object
 
 object toastType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def confirm: typings.reactReduxToastr.reactReduxToastrStrings.confirm = "confirm".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.confirm]
   @scala.inline
-  def confirm: typings.reactReduxToastr.reactReduxToastrStrings.confirm = this.cast("confirm")
+  def error: typings.reactReduxToastr.reactReduxToastrStrings.error = "error".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.error]
   @scala.inline
-  def error: typings.reactReduxToastr.reactReduxToastrStrings.error = this.cast("error")
+  def info: typings.reactReduxToastr.reactReduxToastrStrings.info = "info".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.info]
   @scala.inline
-  def info: typings.reactReduxToastr.reactReduxToastrStrings.info = this.cast("info")
+  def light: typings.reactReduxToastr.reactReduxToastrStrings.light = "light".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.light]
   @scala.inline
-  def light: typings.reactReduxToastr.reactReduxToastrStrings.light = this.cast("light")
+  def message: typings.reactReduxToastr.reactReduxToastrStrings.message = "message".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.message]
   @scala.inline
-  def message: typings.reactReduxToastr.reactReduxToastrStrings.message = this.cast("message")
+  def success: typings.reactReduxToastr.reactReduxToastrStrings.success = "success".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.success]
   @scala.inline
-  def success: typings.reactReduxToastr.reactReduxToastrStrings.success = this.cast("success")
-  @scala.inline
-  def warning: typings.reactReduxToastr.reactReduxToastrStrings.warning = this.cast("warning")
+  def warning: typings.reactReduxToastr.reactReduxToastrStrings.warning = "warning".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.warning]
 }
 

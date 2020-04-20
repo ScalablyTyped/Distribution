@@ -12,10 +12,8 @@ trait ToolbarButtonPosition extends js.Object
 
 object ToolbarButtonPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.smartwizard.smartwizardStrings.left = "left".asInstanceOf[typings.smartwizard.smartwizardStrings.left]
   @scala.inline
-  def left: typings.smartwizard.smartwizardStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.smartwizard.smartwizardStrings.right = this.cast("right")
+  def right: typings.smartwizard.smartwizardStrings.right = "right".asInstanceOf[typings.smartwizard.smartwizardStrings.right]
 }
 

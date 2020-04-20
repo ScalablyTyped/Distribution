@@ -21,7 +21,6 @@ object DarkMode_ {
   @scala.inline
   def apply(isEnabled: Boolean, onChange: js.Function0[Unit] => js.Function0[Unit]): DarkMode_ = {
     val __obj = js.Dynamic.literal(isEnabled = isEnabled.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
-  
     __obj.asInstanceOf[DarkMode_]
   }
 }

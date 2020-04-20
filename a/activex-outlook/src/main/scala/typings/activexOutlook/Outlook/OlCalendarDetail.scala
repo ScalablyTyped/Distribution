@@ -16,12 +16,10 @@ trait OlCalendarDetail extends js.Object
 
 object OlCalendarDetail {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFreeBusyAndSubject: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olFreeBusyAndSubject: `1` = this.cast(1)
+  def olFreeBusyOnly: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olFreeBusyOnly: `0` = this.cast(0)
-  @scala.inline
-  def olFullDetails: `2` = this.cast(2)
+  def olFullDetails: `2` = 2.asInstanceOf[`2`]
 }
 

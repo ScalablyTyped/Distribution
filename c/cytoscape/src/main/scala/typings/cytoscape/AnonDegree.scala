@@ -12,7 +12,6 @@ object AnonDegree {
   @scala.inline
   def apply(degree: () => Double): AnonDegree = {
     val __obj = js.Dynamic.literal(degree = js.Any.fromFunction0(degree))
-  
     __obj.asInstanceOf[AnonDegree]
   }
 }

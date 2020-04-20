@@ -79,7 +79,6 @@ object AttachmentsResource {
     list: AnonAlt => Request_[ListBeaconAttachmentsResponse]
   ): AttachmentsResource = {
     val __obj = js.Dynamic.literal(batchDelete = js.Any.fromFunction1(batchDelete), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AttachmentsResource]
   }
 }

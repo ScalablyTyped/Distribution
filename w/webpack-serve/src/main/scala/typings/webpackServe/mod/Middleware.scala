@@ -15,7 +15,6 @@ object Middleware {
   @scala.inline
   def apply(content: () => Unit, webpack: () => Unit): Middleware = {
     val __obj = js.Dynamic.literal(content = js.Any.fromFunction0(content), webpack = js.Any.fromFunction0(webpack))
-  
     __obj.asInstanceOf[Middleware]
   }
 }

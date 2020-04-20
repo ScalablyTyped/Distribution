@@ -28,13 +28,11 @@ object MessageType {
   @scala.inline
   def FeedCardItem(feedCard: AnonMessageURL_, msgtype: feedCard): MessageType = {
     val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageType]
   }
   @scala.inline
   def Link(link: AnonMessageUrl, msgtype: link): MessageType = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageType]
   }
   @scala.inline
@@ -46,13 +44,11 @@ object MessageType {
   @scala.inline
   def Markdown(markdown: AnonIsAtAll, msgtype: markdown): MessageType = {
     val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageType]
   }
   @scala.inline
   def ActionCard(actionCard: AnonBtnOrientation, msgtype: actionCard): MessageType = {
     val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageType]
   }
 }

@@ -20,7 +20,6 @@ object GetProvisionedConcurrencyConfigRequest {
   @scala.inline
   def apply(FunctionName: FunctionName, Qualifier: Qualifier): GetProvisionedConcurrencyConfigRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], Qualifier = Qualifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetProvisionedConcurrencyConfigRequest]
   }
 }

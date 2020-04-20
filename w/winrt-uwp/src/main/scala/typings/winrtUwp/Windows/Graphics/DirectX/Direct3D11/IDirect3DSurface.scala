@@ -15,7 +15,6 @@ object IDirect3DSurface {
   @scala.inline
   def apply(close: () => Unit, description: Direct3DSurfaceDescription): IDirect3DSurface = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), description = description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDirect3DSurface]
   }
 }

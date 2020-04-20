@@ -22,7 +22,6 @@ object ɵɵInjectorDef {
     ]
   ): ɵɵInjectorDef[T] = {
     val __obj = js.Dynamic.literal(factory = js.Any.fromFunction0(factory), imports = imports.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ɵɵInjectorDef[T]]
   }
 }

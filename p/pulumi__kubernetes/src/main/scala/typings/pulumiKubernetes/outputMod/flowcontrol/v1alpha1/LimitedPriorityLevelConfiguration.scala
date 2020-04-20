@@ -35,7 +35,6 @@ object LimitedPriorityLevelConfiguration {
   @scala.inline
   def apply(assuredConcurrencyShares: Double, limitResponse: LimitResponse): LimitedPriorityLevelConfiguration = {
     val __obj = js.Dynamic.literal(assuredConcurrencyShares = assuredConcurrencyShares.asInstanceOf[js.Any], limitResponse = limitResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LimitedPriorityLevelConfiguration]
   }
 }

@@ -18,7 +18,6 @@ object TableResults {
     sources: js.Array[Waypoint]
   ): TableResults = {
     val __obj = js.Dynamic.literal(destinations = destinations.asInstanceOf[js.Any], durations = durations.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableResults]
   }
 }

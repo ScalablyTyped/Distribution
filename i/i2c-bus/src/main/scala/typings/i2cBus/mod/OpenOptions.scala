@@ -13,7 +13,6 @@ object OpenOptions {
   @scala.inline
   def apply(forceAccess: Boolean): OpenOptions = {
     val __obj = js.Dynamic.literal(forceAccess = forceAccess.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenOptions]
   }
 }

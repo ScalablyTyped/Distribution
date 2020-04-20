@@ -6,13 +6,37 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CreateProxySessionRequest extends js.Object {
+  /**
+    * The proxy session capabilities.
+    */
   var Capabilities: CapabilityList = js.native
+  /**
+    * The number of minutes allowed for the proxy session.
+    */
   var ExpiryMinutes: js.UndefOr[PositiveInteger] = js.native
+  /**
+    * The preference for matching the country or area code of the proxy phone number with that of the first participant.
+    */
   var GeoMatchLevel: js.UndefOr[typings.awsSdk.chimeMod.GeoMatchLevel] = js.native
+  /**
+    * The country and area code for the proxy phone number.
+    */
   var GeoMatchParams: js.UndefOr[typings.awsSdk.chimeMod.GeoMatchParams] = js.native
+  /**
+    * The name of the proxy session.
+    */
   var Name: js.UndefOr[ProxySessionNameString] = js.native
+  /**
+    * The preference for proxy phone number reuse, or stickiness, between the same participants across sessions.
+    */
   var NumberSelectionBehavior: js.UndefOr[typings.awsSdk.chimeMod.NumberSelectionBehavior] = js.native
+  /**
+    * The participant phone numbers.
+    */
   var ParticipantPhoneNumbers: ParticipantPhoneNumberList = js.native
+  /**
+    * The Amazon Chime voice connector ID.
+    */
   var VoiceConnectorId: NonEmptyString128 = js.native
 }
 

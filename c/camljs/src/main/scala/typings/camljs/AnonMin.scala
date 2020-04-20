@@ -13,7 +13,6 @@ object AnonMin {
   @scala.inline
   def apply(min: String): AnonMin = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMin]
   }
 }

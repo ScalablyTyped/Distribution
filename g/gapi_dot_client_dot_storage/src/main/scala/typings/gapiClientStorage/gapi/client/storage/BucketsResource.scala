@@ -50,7 +50,6 @@ object BucketsResource {
     update: AnonIfMetagenerationNotMatch => Request_[Bucket]
   ): BucketsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[BucketsResource]
   }
 }

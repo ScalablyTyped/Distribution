@@ -15,7 +15,6 @@ object KanbanSelection {
   @scala.inline
   def apply(clear: () => Unit): KanbanSelection = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
-  
     __obj.asInstanceOf[KanbanSelection]
   }
 }

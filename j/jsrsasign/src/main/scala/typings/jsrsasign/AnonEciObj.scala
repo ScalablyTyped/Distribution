@@ -16,7 +16,6 @@ object AnonEciObj {
   @scala.inline
   def apply(eciObj: EncapsulatedContentInfo, hashAlg: String, sdobj: SignedData): AnonEciObj = {
     val __obj = js.Dynamic.literal(eciObj = eciObj.asInstanceOf[js.Any], hashAlg = hashAlg.asInstanceOf[js.Any], sdobj = sdobj.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEciObj]
   }
 }

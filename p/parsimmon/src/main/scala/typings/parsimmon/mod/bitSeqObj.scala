@@ -1,5 +1,6 @@
 package typings.parsimmon.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ object bitSeqObj extends js.Object {
   def apply[Key /* <: String */](namedAlignments: js.Array[(js.Tuple2[Key, Double]) | Double]): Parser[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: number}
-    */ typings.parsimmon.parsimmonStrings.bitSeqObj with js.Any
+    */ typings.parsimmon.parsimmonStrings.bitSeqObj with TopLevel[js.Any]
   ] = js.native
 }
 

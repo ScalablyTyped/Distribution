@@ -54,7 +54,6 @@ object Header {
     textColor: js.Any
   ): Header = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], elementClickBorderColor = elementClickBorderColor.asInstanceOf[js.Any], elementClickColor = elementClickColor.asInstanceOf[js.Any], eyeBrowBorderColor = eyeBrowBorderColor.asInstanceOf[js.Any], eyeBrowColor = eyeBrowColor.asInstanceOf[js.Any], eyeBrowHoverBorderColor = eyeBrowHoverBorderColor.asInstanceOf[js.Any], eyeBrowHoverColor = eyeBrowHoverColor.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], innerBorderColor = innerBorderColor.asInstanceOf[js.Any], menuBorderColor = menuBorderColor.asInstanceOf[js.Any], menuColor = menuColor.asInstanceOf[js.Any], menuHoverBorderColor = menuHoverBorderColor.asInstanceOf[js.Any], menuHoverColor = menuHoverColor.asInstanceOf[js.Any], outerBorderColor = outerBorderColor.asInstanceOf[js.Any], resizeBorderColor = resizeBorderColor.asInstanceOf[js.Any], resizeColor = resizeColor.asInstanceOf[js.Any], resizeHoverBorderColor = resizeHoverBorderColor.asInstanceOf[js.Any], resizeHoverColor = resizeHoverColor.asInstanceOf[js.Any], textColor = textColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Header]
   }
 }

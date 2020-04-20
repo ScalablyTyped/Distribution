@@ -12,7 +12,6 @@ object IPrintTaskOptionsCore {
   @scala.inline
   def apply(getPageDescription: Double => PrintPageDescription): IPrintTaskOptionsCore = {
     val __obj = js.Dynamic.literal(getPageDescription = js.Any.fromFunction1(getPageDescription))
-  
     __obj.asInstanceOf[IPrintTaskOptionsCore]
   }
 }

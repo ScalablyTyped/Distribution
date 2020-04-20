@@ -14,7 +14,6 @@ object ReduceInfo {
   @scala.inline
   def apply(batchSize: Double, inSize: Double, windowSize: Double): ReduceInfo = {
     val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], inSize = inSize.asInstanceOf[js.Any], windowSize = windowSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReduceInfo]
   }
 }

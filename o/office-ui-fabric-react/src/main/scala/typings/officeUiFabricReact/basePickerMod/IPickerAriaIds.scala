@@ -23,7 +23,6 @@ object IPickerAriaIds {
   @scala.inline
   def apply(selectedItems: String, selectedSuggestionAlert: String, suggestionList: String): IPickerAriaIds = {
     val __obj = js.Dynamic.literal(selectedItems = selectedItems.asInstanceOf[js.Any], selectedSuggestionAlert = selectedSuggestionAlert.asInstanceOf[js.Any], suggestionList = suggestionList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPickerAriaIds]
   }
 }

@@ -66,7 +66,6 @@ object CallsetsResource {
     search: AnonAccesstoken => Request_[SearchCallSetsResponse]
   ): CallsetsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[CallsetsResource]
   }
 }

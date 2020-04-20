@@ -21,7 +21,6 @@ object ClusterSnapshotArgs {
   @scala.inline
   def apply(dbClusterIdentifier: Input[String], dbClusterSnapshotIdentifier: Input[String]): ClusterSnapshotArgs = {
     val __obj = js.Dynamic.literal(dbClusterIdentifier = dbClusterIdentifier.asInstanceOf[js.Any], dbClusterSnapshotIdentifier = dbClusterSnapshotIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterSnapshotArgs]
   }
 }

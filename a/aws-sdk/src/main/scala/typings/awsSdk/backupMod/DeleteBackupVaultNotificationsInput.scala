@@ -16,7 +16,6 @@ object DeleteBackupVaultNotificationsInput {
   @scala.inline
   def apply(BackupVaultName: BackupVaultName): DeleteBackupVaultNotificationsInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBackupVaultNotificationsInput]
   }
 }

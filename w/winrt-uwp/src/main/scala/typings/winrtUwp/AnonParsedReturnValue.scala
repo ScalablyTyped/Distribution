@@ -14,7 +14,6 @@ object AnonParsedReturnValue {
   @scala.inline
   def apply(parsed: UsbEndpointDescriptor, returnValue: Boolean): AnonParsedReturnValue = {
     val __obj = js.Dynamic.literal(parsed = parsed.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonParsedReturnValue]
   }
 }

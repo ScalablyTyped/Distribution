@@ -13,12 +13,10 @@ trait TooltipBehaviorIOS extends js.Object
 
 object TooltipBehaviorIOS {
   @scala.inline
-  def auto: typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto = this.cast("auto")
+  def auto: typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto = "auto".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disable: typings.reactNativeFbsdk.reactNativeFbsdkStrings.disable = "disable".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.disable]
   @scala.inline
-  def disable: typings.reactNativeFbsdk.reactNativeFbsdkStrings.disable = this.cast("disable")
-  @scala.inline
-  def force_display: typings.reactNativeFbsdk.reactNativeFbsdkStrings.force_display = this.cast("force_display")
+  def force_display: typings.reactNativeFbsdk.reactNativeFbsdkStrings.force_display = "force_display".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.force_display]
 }
 

@@ -14,7 +14,6 @@ object IDomainData {
   @scala.inline
   def apply(cert: Buffer, key: Buffer): IDomainData = {
     val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDomainData]
   }
 }

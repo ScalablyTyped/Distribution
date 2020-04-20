@@ -14,7 +14,6 @@ object AnonAccept {
   @scala.inline
   def apply(accept: applicationSlashjson, authorization: String): AnonAccept = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], authorization = authorization.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccept]
   }
 }

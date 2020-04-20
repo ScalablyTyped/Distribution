@@ -20,7 +20,6 @@ object DeleteIdentityPolicyRequest {
   @scala.inline
   def apply(Identity: Identity, PolicyName: PolicyName): DeleteIdentityPolicyRequest = {
     val __obj = js.Dynamic.literal(Identity = Identity.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIdentityPolicyRequest]
   }
 }

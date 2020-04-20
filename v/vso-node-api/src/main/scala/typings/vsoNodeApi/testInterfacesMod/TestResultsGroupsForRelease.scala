@@ -23,7 +23,6 @@ object TestResultsGroupsForRelease {
   @scala.inline
   def apply(fields: js.Array[FieldDetailsForTestResults], releaseEnvId: Double, releaseId: Double): TestResultsGroupsForRelease = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], releaseEnvId = releaseEnvId.asInstanceOf[js.Any], releaseId = releaseId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestResultsGroupsForRelease]
   }
 }

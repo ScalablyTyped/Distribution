@@ -13,7 +13,6 @@ object SwiftClickStatic {
   @scala.inline
   def apply(attach: Element => SwiftClickObject): SwiftClickStatic = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach))
-  
     __obj.asInstanceOf[SwiftClickStatic]
   }
 }

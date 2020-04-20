@@ -12,7 +12,6 @@ object NativeViewGestureHandlerEventExtra {
   @scala.inline
   def apply(pointerInside: Boolean): NativeViewGestureHandlerEventExtra = {
     val __obj = js.Dynamic.literal(pointerInside = pointerInside.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeViewGestureHandlerEventExtra]
   }
 }

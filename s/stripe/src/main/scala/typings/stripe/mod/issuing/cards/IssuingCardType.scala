@@ -12,10 +12,8 @@ trait IssuingCardType extends js.Object
 
 object IssuingCardType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def physical: typings.stripe.stripeStrings.physical = "physical".asInstanceOf[typings.stripe.stripeStrings.physical]
   @scala.inline
-  def physical: typings.stripe.stripeStrings.physical = this.cast("physical")
-  @scala.inline
-  def virtual: typings.stripe.stripeStrings.virtual = this.cast("virtual")
+  def virtual: typings.stripe.stripeStrings.virtual = "virtual".asInstanceOf[typings.stripe.stripeStrings.virtual]
 }
 

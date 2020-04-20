@@ -16,7 +16,6 @@ object Resource {
   @scala.inline
   def apply(id: ResourceId): Resource = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Resource]
   }
 }

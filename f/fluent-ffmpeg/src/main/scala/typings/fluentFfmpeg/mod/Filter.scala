@@ -22,7 +22,6 @@ object Filter {
     output: String
   ): Filter = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], multipleInputs = multipleInputs.asInstanceOf[js.Any], multipleOutputs = multipleOutputs.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Filter]
   }
 }

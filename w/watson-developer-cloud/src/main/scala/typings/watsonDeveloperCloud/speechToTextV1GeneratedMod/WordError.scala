@@ -14,7 +14,6 @@ object WordError {
   @scala.inline
   def apply(element: String): WordError = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WordError]
   }
 }

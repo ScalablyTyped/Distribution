@@ -135,7 +135,7 @@ object webidl2Strings {
   @scala.inline
   def callback: callback = "callback".asInstanceOf[callback]
   @scala.inline
-  def `callback interface`: `callback interface` = "callback interface".asInstanceOf[`callback interface`]
+  def `callback interface`: `callback interface` = ("callback interface").asInstanceOf[`callback interface`]
   @scala.inline
   def const: const = "const".asInstanceOf[const]
   @scala.inline
@@ -167,7 +167,7 @@ object webidl2Strings {
   @scala.inline
   def interface: interface = "interface".asInstanceOf[interface]
   @scala.inline
-  def `interface mixin`: `interface mixin` = "interface mixin".asInstanceOf[`interface mixin`]
+  def `interface mixin`: `interface mixin` = ("interface mixin").asInstanceOf[`interface mixin`]
   @scala.inline
   def iterable: iterable = "iterable".asInstanceOf[iterable]
   @scala.inline

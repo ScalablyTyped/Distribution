@@ -13,7 +13,6 @@ object IRTreeSplitStrategy {
   @scala.inline
   def apply(split: (js.Array[RTreeNode[js.Any]], NodePair[js.Any]) => Unit): IRTreeSplitStrategy = {
     val __obj = js.Dynamic.literal(split = js.Any.fromFunction2(split))
-  
     __obj.asInstanceOf[IRTreeSplitStrategy]
   }
 }

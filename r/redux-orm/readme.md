@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-orm
 
-Typings are for version 0.9
+Typings are for version 0.13
 
 ## Library description:
 Simple ORM to manage and query your state trees
@@ -10,9 +10,9 @@ Simple ORM to manage and query your state trees
 | ------------------ | :-------------: |
 | Full name          | redux-orm |
 | Keywords           | redux, orm |
-| # releases         | 17 |
-| # dependents       | 6 |
-| # downloads        | 185284 |
+| # releases         | 22 |
+| # dependents       | 8 |
+| # downloads        | 291385 |
 | # stars            | 0 |
 
 ## Links
@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for redux-orm 0.9
-// Project: https://github.com/redux-orm/redux-orm
-// Definitions by: Andrey Goncharov <https://github.com/keenondrums>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

@@ -24,7 +24,6 @@ object RSAESOAEPParams {
     toSchema: () => js.Any
   ): RSAESOAEPParams = {
     val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], maskGenAlgorithm = maskGenAlgorithm.asInstanceOf[js.Any], pSourceAlgorithm = pSourceAlgorithm.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-  
     __obj.asInstanceOf[RSAESOAEPParams]
   }
 }

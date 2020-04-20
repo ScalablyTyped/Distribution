@@ -20,26 +20,24 @@ trait SwitchClassKey extends js.Object
 
 object SwitchClassKey {
   @scala.inline
-  def bar: typings.materialUiCore.materialUiCoreStrings.bar = this.cast("bar")
+  def bar: typings.materialUiCore.materialUiCoreStrings.bar = "bar".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.bar]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checked: typings.materialUiCore.materialUiCoreStrings.checked = "checked".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.checked]
   @scala.inline
-  def checked: typings.materialUiCore.materialUiCoreStrings.checked = this.cast("checked")
+  def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
   @scala.inline
-  def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = this.cast("colorPrimary")
+  def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = "colorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorSecondary]
   @scala.inline
-  def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = this.cast("colorSecondary")
+  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
   @scala.inline
-  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = this.cast("disabled")
+  def icon: typings.materialUiCore.materialUiCoreStrings.icon = "icon".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.icon]
   @scala.inline
-  def icon: typings.materialUiCore.materialUiCoreStrings.icon = this.cast("icon")
+  def iconChecked: typings.materialUiCore.materialUiCoreStrings.iconChecked = "iconChecked".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.iconChecked]
   @scala.inline
-  def iconChecked: typings.materialUiCore.materialUiCoreStrings.iconChecked = this.cast("iconChecked")
+  def input: typings.materialUiCore.materialUiCoreStrings.input = "input".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.input]
   @scala.inline
-  def input: typings.materialUiCore.materialUiCoreStrings.input = this.cast("input")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
-  @scala.inline
-  def switchBase: typings.materialUiCore.materialUiCoreStrings.switchBase = this.cast("switchBase")
+  def switchBase: typings.materialUiCore.materialUiCoreStrings.switchBase = "switchBase".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.switchBase]
 }
 

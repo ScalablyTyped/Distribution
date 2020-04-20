@@ -38,7 +38,6 @@ object ServiceEvent {
     resourceVersion: String
   ): ServiceEvent = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], resourceContainers = resourceContainers.asInstanceOf[js.Any], resourceVersion = resourceVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceEvent]
   }
 }

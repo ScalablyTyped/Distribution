@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactImageMagnifyProps {
   @scala.inline
-  def ReactImageMagnifyProps: ReactImageMagnifyPropsRea.type = typings.reactImageMagnify.ReactImageMagnifyPropsRea
+  def ReactImageMagnifyProps: ReactImageMagnifyPropsRea.type = ReactImageMagnifyPropsRea
   type ReactImageMagnifyProps = ReactImageMagnifyPropsRea
 }
 

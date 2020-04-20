@@ -13,12 +13,10 @@ trait Runtime extends js.Object
 
 object Runtime {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def electron: typings.nodeAbi.nodeAbiStrings.electron = "electron".asInstanceOf[typings.nodeAbi.nodeAbiStrings.electron]
   @scala.inline
-  def electron: typings.nodeAbi.nodeAbiStrings.electron = this.cast("electron")
+  def node: typings.nodeAbi.nodeAbiStrings.node = "node".asInstanceOf[typings.nodeAbi.nodeAbiStrings.node]
   @scala.inline
-  def node: typings.nodeAbi.nodeAbiStrings.node = this.cast("node")
-  @scala.inline
-  def `node-webkit`: typings.nodeAbi.nodeAbiStrings.`node-webkit` = this.cast("node-webkit")
+  def `node-webkit`: typings.nodeAbi.nodeAbiStrings.`node-webkit` = "node-webkit".asInstanceOf[typings.nodeAbi.nodeAbiStrings.`node-webkit`]
 }
 

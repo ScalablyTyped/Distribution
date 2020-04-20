@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -44,6 +45,12 @@ trait summaryStatisticsSummaryStatisticsParams extends Object {
     */
   var normalizationField: js.UndefOr[String] = js.undefined
   /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html#summaryStatistics)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  /**
     * A SQL expression evaluating to a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html#summaryStatistics)
@@ -81,6 +88,7 @@ object summaryStatisticsSummaryStatisticsParams {
     maxValue: Int | Double = null,
     minValue: Int | Double = null,
     normalizationField: String = null,
+    signal: AbortSignal = null,
     sqlExpression: String = null,
     sqlWhere: String = null,
     valueExpression: String = null,
@@ -92,6 +100,7 @@ object summaryStatisticsSummaryStatisticsParams {
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
     if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])

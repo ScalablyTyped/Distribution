@@ -24,7 +24,6 @@ object Methods {
     update: (ZendeskID, js.Any, ZendeskCallback[_, _]) => js.Any
   ): Methods = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), delete = js.Any.fromFunction2(delete), list = js.Any.fromFunction1(list), show = js.Any.fromFunction2(show), update = js.Any.fromFunction3(update))
-  
     __obj.asInstanceOf[Methods]
   }
 }

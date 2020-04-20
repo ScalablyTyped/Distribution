@@ -18,22 +18,20 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  def bottom: typings.reResizable.reResizableStrings.bottom = this.cast("bottom")
+  def bottom: typings.reResizable.reResizableStrings.bottom = "bottom".asInstanceOf[typings.reResizable.reResizableStrings.bottom]
   @scala.inline
-  def bottomLeft: typings.reResizable.reResizableStrings.bottomLeft = this.cast("bottomLeft")
+  def bottomLeft: typings.reResizable.reResizableStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.reResizable.reResizableStrings.bottomLeft]
   @scala.inline
-  def bottomRight: typings.reResizable.reResizableStrings.bottomRight = this.cast("bottomRight")
+  def bottomRight: typings.reResizable.reResizableStrings.bottomRight = "bottomRight".asInstanceOf[typings.reResizable.reResizableStrings.bottomRight]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.reResizable.reResizableStrings.left = "left".asInstanceOf[typings.reResizable.reResizableStrings.left]
   @scala.inline
-  def left: typings.reResizable.reResizableStrings.left = this.cast("left")
+  def right: typings.reResizable.reResizableStrings.right = "right".asInstanceOf[typings.reResizable.reResizableStrings.right]
   @scala.inline
-  def right: typings.reResizable.reResizableStrings.right = this.cast("right")
+  def top: typings.reResizable.reResizableStrings.top = "top".asInstanceOf[typings.reResizable.reResizableStrings.top]
   @scala.inline
-  def top: typings.reResizable.reResizableStrings.top = this.cast("top")
+  def topLeft: typings.reResizable.reResizableStrings.topLeft = "topLeft".asInstanceOf[typings.reResizable.reResizableStrings.topLeft]
   @scala.inline
-  def topLeft: typings.reResizable.reResizableStrings.topLeft = this.cast("topLeft")
-  @scala.inline
-  def topRight: typings.reResizable.reResizableStrings.topRight = this.cast("topRight")
+  def topRight: typings.reResizable.reResizableStrings.topRight = "topRight".asInstanceOf[typings.reResizable.reResizableStrings.topRight]
 }
 

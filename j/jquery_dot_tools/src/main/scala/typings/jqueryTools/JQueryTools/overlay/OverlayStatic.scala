@@ -18,7 +18,6 @@ object OverlayStatic {
     addEffect: (String, js.ThisFunction2[/* this */ Overlay, /* position */ CssOptions, /* done */ js.Function0[Unit], Unit], js.ThisFunction1[/* this */ Overlay, /* done */ js.Function0[Unit], Unit]) => Unit
   ): OverlayStatic = {
     val __obj = js.Dynamic.literal(addEffect = js.Any.fromFunction3(addEffect))
-  
     __obj.asInstanceOf[OverlayStatic]
   }
 }

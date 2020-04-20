@@ -13,7 +13,6 @@ object AnonChecked {
   @scala.inline
   def apply(Checked: js.Any, Command: js.Any): AnonChecked = {
     val __obj = js.Dynamic.literal(Checked = Checked.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChecked]
   }
 }

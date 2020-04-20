@@ -12,7 +12,6 @@ object AccountInfoOptions {
   @scala.inline
   def apply(httpCache: Boolean): AccountInfoOptions = {
     val __obj = js.Dynamic.literal(httpCache = httpCache.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountInfoOptions]
   }
 }

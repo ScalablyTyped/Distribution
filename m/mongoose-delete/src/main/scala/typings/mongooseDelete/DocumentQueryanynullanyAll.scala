@@ -18,6 +18,7 @@ import typings.mongoose.mod.QueryFindOneAndRemoveOptions
 import typings.mongoose.mod.QueryFindOneAndUpdateOptions
 import typings.mongoose.mod.QueryPopulateOptions
 import typings.mongoose.mod.QueryUpdateOptions
+import typings.mongoose.mod.UpdateQuery
 import typings.mongoose.rawResulttrueQueryFindOne
 import typings.mongoose.rawResulttrueQueryFindOneArrayFilters
 import typings.mongoose.rawResulttrueupserttruene
@@ -253,23 +254,23 @@ trait DocumentQueryanynullanyAll extends js.Object {
     */
   def findOneAndUpdate(): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
   def findOneAndUpdate(callback: js.Function2[/* err */ js.Any, /* doc */ js.Any | Null, Unit]): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
-  def findOneAndUpdate(query: FilterQuery[_], update: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneAndUpdate(query: FilterQuery[_], update: UpdateQuery[_]): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
   def findOneAndUpdate(
     query: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
-  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneAndUpdate(query: FilterQuery[_], update: UpdateQuery[_], options: QueryFindOneAndUpdateOptions): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
   def findOneAndUpdate(
     query: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
-  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOp = js.native
+  def findOneAndUpdate(query: FilterQuery[_], update: UpdateQuery[_], options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOp = js.native
   def findOneAndUpdate(
     query: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -278,10 +279,10 @@ trait DocumentQueryanynullanyAll extends js.Object {
       Unit
     ]
   ): QueryFindAndModifyWriteOp = js.native
-  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAll = js.native
+  def findOneAndUpdate(query: FilterQuery[_], update: UpdateQuery[_], options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAll = js.native
   def findOneAndUpdate(
     query: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: rawResulttrueupserttruene,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -290,16 +291,16 @@ trait DocumentQueryanynullanyAll extends js.Object {
       Unit
     ]
   ): QueryFindAndModifyWriteOpAll = js.native
-  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: upserttruenewtrueQueryFin): DocumentQueryanyany = js.native
+  def findOneAndUpdate(query: FilterQuery[_], update: UpdateQuery[_], options: upserttruenewtrueQueryFin): DocumentQueryanyany = js.native
   def findOneAndUpdate(
     query: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: upserttruenewtrueQueryFin,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any, /* res */ js.Any, Unit]
   ): DocumentQueryanyany = js.native
-  def findOneAndUpdate(update: js.Any): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
+  def findOneAndUpdate(update: UpdateQuery[_]): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
   def findOneAndUpdate(
-    update: js.Any,
+    update: UpdateQuery[_],
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
   /**
@@ -615,21 +616,21 @@ trait DocumentQueryanynullanyAll extends js.Object {
     */
   def update(): QuerynumberAll = js.native
   def update(callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]): QuerynumberAll = js.native
-  def update(criteria: FilterQuery[_], doc: js.Any): QuerynumberAll = js.native
+  def update(criteria: FilterQuery[_], doc: UpdateQuery[_]): QuerynumberAll = js.native
   def update(
     criteria: FilterQuery[_],
-    doc: js.Any,
+    doc: UpdateQuery[_],
     callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]
   ): QuerynumberAll = js.native
-  def update(criteria: FilterQuery[_], doc: js.Any, options: QueryUpdateOptions): QuerynumberAll = js.native
+  def update(criteria: FilterQuery[_], doc: UpdateQuery[_], options: QueryUpdateOptions): QuerynumberAll = js.native
   def update(
     criteria: FilterQuery[_],
-    doc: js.Any,
+    doc: UpdateQuery[_],
     options: QueryUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]
   ): QuerynumberAll = js.native
-  def update(doc: js.Any): QuerynumberAll = js.native
-  def update(doc: js.Any, callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]): QuerynumberAll = js.native
+  def update(doc: UpdateQuery[_]): QuerynumberAll = js.native
+  def update(doc: UpdateQuery[_], callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]): QuerynumberAll = js.native
   /** Specifies a path for use with chaining. */
   def where(): this.type = js.native
   def where(path: String): this.type = js.native

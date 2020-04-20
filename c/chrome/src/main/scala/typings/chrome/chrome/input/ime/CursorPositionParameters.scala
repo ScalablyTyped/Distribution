@@ -15,7 +15,6 @@ object CursorPositionParameters {
   @scala.inline
   def apply(candidateID: Double, contextID: Double): CursorPositionParameters = {
     val __obj = js.Dynamic.literal(candidateID = candidateID.asInstanceOf[js.Any], contextID = contextID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CursorPositionParameters]
   }
 }

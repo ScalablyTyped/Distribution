@@ -39,7 +39,7 @@ object indexMapMod extends js.Object {
     /**
       * The default IndexMap for nodes without a priority
       */
-    def Default(): IndexMap = js.native
+    def Default: IndexMap = js.native
   }
   
 }

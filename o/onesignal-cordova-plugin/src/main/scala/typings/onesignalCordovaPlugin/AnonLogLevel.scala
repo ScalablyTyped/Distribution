@@ -14,7 +14,6 @@ object AnonLogLevel {
   @scala.inline
   def apply(logLevel: OSLogLevel, visualLevel: OSLogLevel): AnonLogLevel = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any], visualLevel = visualLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLogLevel]
   }
 }

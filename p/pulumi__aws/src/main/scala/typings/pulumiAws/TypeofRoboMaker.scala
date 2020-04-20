@@ -13,7 +13,6 @@ object TypeofRoboMaker {
   @scala.inline
   def apply(Types: TypeofRoboMaker): TypeofRoboMaker = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofRoboMaker]
   }
 }

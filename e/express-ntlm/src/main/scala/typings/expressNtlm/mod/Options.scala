@@ -3,6 +3,7 @@ package typings.expressNtlm.mod
 import typings.express.mod.Handler
 import typings.expressServeStaticCore.mod.NextFunction
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.node.tlsMod.ConnectionOptions
@@ -25,15 +26,15 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    badrequest: (/* req */ Request[ParamsDictionary, js.Any, js.Any], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
+    badrequest: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
     debug: (/* prefix */ String, /* message */ String) => Unit = null,
     domain: String = null,
     domaincontroller: String = null,
-    forbidden: (/* req */ Request[ParamsDictionary, js.Any, js.Any], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
-    internalservererror: (/* req */ Request[ParamsDictionary, js.Any, js.Any], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
+    forbidden: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
+    internalservererror: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
     prefix: String = null,
     tlsOptions: ConnectionOptions = null,
-    unauthorized: (/* req */ Request[ParamsDictionary, js.Any, js.Any], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null
+    unauthorized: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (badrequest != null) __obj.updateDynamic("badrequest")(js.Any.fromFunction3(badrequest))

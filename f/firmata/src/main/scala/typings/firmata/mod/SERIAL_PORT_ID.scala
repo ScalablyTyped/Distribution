@@ -27,24 +27,22 @@ trait SERIAL_PORT_ID extends js.Object
 
 object SERIAL_PORT_ID {
   @scala.inline
-  def DEFAULT: `0x08` = this.cast(0x08)
+  def DEFAULT: `0x08` = 0x08.asInstanceOf[`0x08`]
   @scala.inline
-  def HW_SERIAL0: `0x00` = this.cast(0x00)
+  def HW_SERIAL0: `0x00` = 0x00.asInstanceOf[`0x00`]
   @scala.inline
-  def HW_SERIAL1: `0x01` = this.cast(0x01)
+  def HW_SERIAL1: `0x01` = 0x01.asInstanceOf[`0x01`]
   @scala.inline
-  def HW_SERIAL2: `0x02` = this.cast(0x02)
+  def HW_SERIAL2: `0x02` = 0x02.asInstanceOf[`0x02`]
   @scala.inline
-  def HW_SERIAL3: `0x03` = this.cast(0x03)
+  def HW_SERIAL3: `0x03` = 0x03.asInstanceOf[`0x03`]
   @scala.inline
-  def SW_SERIAL0: `0x08` = this.cast(0x08)
+  def SW_SERIAL0: `0x08` = 0x08.asInstanceOf[`0x08`]
   @scala.inline
-  def SW_SERIAL1: `0x09` = this.cast(0x09)
+  def SW_SERIAL1: `0x09` = 0x09.asInstanceOf[`0x09`]
   @scala.inline
-  def SW_SERIAL2: `0x10` = this.cast(0x10)
+  def SW_SERIAL2: `0x10` = 0x10.asInstanceOf[`0x10`]
   @scala.inline
-  def SW_SERIAL3: `0x11` = this.cast(0x11)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SW_SERIAL3: `0x11` = 0x11.asInstanceOf[`0x11`]
 }
 

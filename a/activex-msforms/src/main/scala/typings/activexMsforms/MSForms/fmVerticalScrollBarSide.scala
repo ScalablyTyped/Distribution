@@ -14,10 +14,8 @@ trait fmVerticalScrollBarSide extends js.Object
 
 object fmVerticalScrollBarSide {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmVerticalScrollBarSideLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmVerticalScrollBarSideLeft: `1` = this.cast(1)
-  @scala.inline
-  def fmVerticalScrollBarSideRight: `0` = this.cast(0)
+  def fmVerticalScrollBarSideRight: `0` = 0.asInstanceOf[`0`]
 }
 

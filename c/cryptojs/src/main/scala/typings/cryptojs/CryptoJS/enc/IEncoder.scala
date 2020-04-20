@@ -13,7 +13,6 @@ object IEncoder {
   @scala.inline
   def apply(stringify: WordArray => String): IEncoder = {
     val __obj = js.Dynamic.literal(stringify = js.Any.fromFunction1(stringify))
-  
     __obj.asInstanceOf[IEncoder]
   }
 }

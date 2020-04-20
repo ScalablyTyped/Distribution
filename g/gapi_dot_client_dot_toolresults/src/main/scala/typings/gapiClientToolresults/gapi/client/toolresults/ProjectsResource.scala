@@ -46,7 +46,6 @@ object ProjectsResource {
     initializeSettings: AnonAltFields => Request_[ProjectSettings]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(getSettings = js.Any.fromFunction1(getSettings), histories = histories.asInstanceOf[js.Any], initializeSettings = js.Any.fromFunction1(initializeSettings))
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

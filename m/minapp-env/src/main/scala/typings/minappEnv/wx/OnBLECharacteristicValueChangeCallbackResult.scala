@@ -20,7 +20,6 @@ object OnBLECharacteristicValueChangeCallbackResult {
   @scala.inline
   def apply(characteristicId: String, deviceId: String, serviceId: String, value: ArrayBuffer): OnBLECharacteristicValueChangeCallbackResult = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnBLECharacteristicValueChangeCallbackResult]
   }
 }

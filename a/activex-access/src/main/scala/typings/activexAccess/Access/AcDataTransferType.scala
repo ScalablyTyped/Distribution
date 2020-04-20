@@ -16,12 +16,10 @@ trait AcDataTransferType extends js.Object
 
 object AcDataTransferType {
   @scala.inline
-  def acExport: `1` = this.cast(1)
+  def acExport: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acImport: `0` = this.cast(0)
+  def acImport: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acLink: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acLink: `2` = 2.asInstanceOf[`2`]
 }
 

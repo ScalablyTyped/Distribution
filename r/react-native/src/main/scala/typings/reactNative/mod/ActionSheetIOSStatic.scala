@@ -44,7 +44,6 @@ object ActionSheetIOSStatic {
     showShareActionSheetWithOptions: (ShareActionSheetIOSOptions, js.Function1[/* error */ Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Unit
   ): ActionSheetIOSStatic = {
     val __obj = js.Dynamic.literal(showActionSheetWithOptions = js.Any.fromFunction2(showActionSheetWithOptions), showShareActionSheetWithOptions = js.Any.fromFunction3(showShareActionSheetWithOptions))
-  
     __obj.asInstanceOf[ActionSheetIOSStatic]
   }
 }

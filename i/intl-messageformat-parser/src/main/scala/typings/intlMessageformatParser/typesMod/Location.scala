@@ -13,7 +13,6 @@ object Location {
   @scala.inline
   def apply(end: LocationDetails, start: LocationDetails): Location = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Location]
   }
 }

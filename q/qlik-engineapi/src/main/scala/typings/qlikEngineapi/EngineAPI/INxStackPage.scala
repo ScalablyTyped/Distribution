@@ -22,7 +22,6 @@ object INxStackPage {
   @scala.inline
   def apply(qArea: IRect, qData: js.Array[INxStackedPivotCell]): INxStackPage = {
     val __obj = js.Dynamic.literal(qArea = qArea.asInstanceOf[js.Any], qData = qData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxStackPage]
   }
 }

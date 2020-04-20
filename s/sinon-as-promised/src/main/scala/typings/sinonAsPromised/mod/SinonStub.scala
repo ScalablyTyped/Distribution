@@ -26,7 +26,6 @@ object SinonStub {
   @scala.inline
   def apply(rejects: js.Any => SinonStub, resolves: js.Any => SinonStub): SinonStub = {
     val __obj = js.Dynamic.literal(rejects = js.Any.fromFunction1(rejects), resolves = js.Any.fromFunction1(resolves))
-  
     __obj.asInstanceOf[SinonStub]
   }
 }

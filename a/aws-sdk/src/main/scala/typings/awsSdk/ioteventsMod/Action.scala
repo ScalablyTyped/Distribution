@@ -11,11 +11,19 @@ trait Action extends js.Object {
     */
   var clearTimer: js.UndefOr[ClearTimerAction] = js.native
   /**
+    * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can also customize the payload. One column of the DynamoDB table receives all attribute-value pairs in the payload that you specify. For more information, see Actions in AWS IoT Events Developer Guide.
+    */
+  var dynamoDB: js.UndefOr[DynamoDBAction] = js.native
+  /**
+    * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can also customize the payload. A separate column of the DynamoDB table receives one attribute-value pair in the payload that you specify. For more information, see Actions in AWS IoT Events Developer Guide.
+    */
+  var dynamoDBv2: js.UndefOr[DynamoDBv2Action] = js.native
+  /**
     * Sends information about the detector model instance and the event that triggered the action to an Amazon Kinesis Data Firehose delivery stream.
     */
   var firehose: js.UndefOr[FirehoseAction] = js.native
   /**
-    * Sends an AWS IoT Events input, passing in information about the detector model instance and the event that triggered the action.
+    * Sends AWS IoT Events input, which passes information about the detector model instance and the event that triggered the action.
     */
   var iotEvents: js.UndefOr[IotEventsAction] = js.native
   /**
@@ -52,6 +60,8 @@ object Action {
   @scala.inline
   def apply(
     clearTimer: ClearTimerAction = null,
+    dynamoDB: DynamoDBAction = null,
+    dynamoDBv2: DynamoDBv2Action = null,
     firehose: FirehoseAction = null,
     iotEvents: IotEventsAction = null,
     iotTopicPublish: IotTopicPublishAction = null,
@@ -64,6 +74,8 @@ object Action {
   ): Action = {
     val __obj = js.Dynamic.literal()
     if (clearTimer != null) __obj.updateDynamic("clearTimer")(clearTimer.asInstanceOf[js.Any])
+    if (dynamoDB != null) __obj.updateDynamic("dynamoDB")(dynamoDB.asInstanceOf[js.Any])
+    if (dynamoDBv2 != null) __obj.updateDynamic("dynamoDBv2")(dynamoDBv2.asInstanceOf[js.Any])
     if (firehose != null) __obj.updateDynamic("firehose")(firehose.asInstanceOf[js.Any])
     if (iotEvents != null) __obj.updateDynamic("iotEvents")(iotEvents.asInstanceOf[js.Any])
     if (iotTopicPublish != null) __obj.updateDynamic("iotTopicPublish")(iotTopicPublish.asInstanceOf[js.Any])

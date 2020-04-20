@@ -2,6 +2,7 @@ package typings.expressSession.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.AnonDomain
 import typings.expressSession.expressSessionStrings.destroy
 import typings.expressSession.expressSessionStrings.keep
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 trait SessionOptions extends js.Object {
   var cookie: js.UndefOr[AnonDomain] = js.undefined
-  var genid: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary], String]] = js.undefined
+  var genid: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var proxy: js.UndefOr[Boolean] = js.undefined
   var resave: js.UndefOr[Boolean] = js.undefined
@@ -33,7 +34,7 @@ object SessionOptions {
   def apply(
     secret: String | js.Array[String],
     cookie: AnonDomain = null,
-    genid: /* req */ Request_[ParamsDictionary] => String = null,
+    genid: /* req */ Request_[ParamsDictionary, _, _, Query] => String = null,
     name: String = null,
     proxy: js.UndefOr[Boolean] = js.undefined,
     resave: js.UndefOr[Boolean] = js.undefined,

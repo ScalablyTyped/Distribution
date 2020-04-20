@@ -13,7 +13,6 @@ object CanvasImageSmoothing {
   @scala.inline
   def apply(imageSmoothingEnabled: scala.Boolean, imageSmoothingQuality: ImageSmoothingQuality): CanvasImageSmoothing = {
     val __obj = js.Dynamic.literal(imageSmoothingEnabled = imageSmoothingEnabled.asInstanceOf[js.Any], imageSmoothingQuality = imageSmoothingQuality.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CanvasImageSmoothing]
   }
 }

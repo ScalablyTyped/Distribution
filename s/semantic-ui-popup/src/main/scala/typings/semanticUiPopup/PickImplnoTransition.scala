@@ -13,7 +13,6 @@ object PickImplnoTransition {
   @scala.inline
   def apply(noTransition: String): PickImplnoTransition = {
     val __obj = js.Dynamic.literal(noTransition = noTransition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnoTransition]
   }
 }

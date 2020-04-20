@@ -13,7 +13,6 @@ object TypeofCognitoSync {
   @scala.inline
   def apply(Types: TypeofCognitoSync): TypeofCognitoSync = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCognitoSync]
   }
 }

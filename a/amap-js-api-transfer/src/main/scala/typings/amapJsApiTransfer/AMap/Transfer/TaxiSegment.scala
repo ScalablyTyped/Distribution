@@ -22,7 +22,6 @@ object TaxiSegment {
   @scala.inline
   def apply(distance: Double, instruction: String, time: Double, transit: TaxiDetails, transit_mode: TAXI): TaxiSegment = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaxiSegment]
   }
 }

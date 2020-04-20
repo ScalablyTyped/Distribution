@@ -1,6 +1,6 @@
 package typings.apolloEnv
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.Dict
 import typings.node.urlMod.URL_
 import typings.nodeFetch.AnonSize
 import typings.nodeFetch.mod.BodyInit
@@ -56,7 +56,7 @@ object fetchMod extends js.Object {
     extends typings.apolloEnv.urlMod.URLSearchParams {
     def this(init: String) = this()
     def this(init: js.Array[js.Tuple2[String, String]]) = this()
-    def this(init: StringDictionary[js.UndefOr[String | js.Array[String]]]) = this()
+    def this(init: Dict[String | js.Array[String]]) = this()
     def this(init: typings.node.urlMod.URLSearchParams) = this()
     def this(init: Iterable[js.Tuple2[String, String]]) = this()
   }

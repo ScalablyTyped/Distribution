@@ -16,12 +16,10 @@ trait XlFillWith extends js.Object
 
 object XlFillWith {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlFillWithAll: `-4104` = -4104.asInstanceOf[`-4104`]
   @scala.inline
-  def xlFillWithAll: `-4104` = this.cast(-4104)
+  def xlFillWithContents: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlFillWithContents: `2` = this.cast(2)
-  @scala.inline
-  def xlFillWithFormats: `-4122` = this.cast(-4122)
+  def xlFillWithFormats: `-4122` = -4122.asInstanceOf[`-4122`]
 }
 

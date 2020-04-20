@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SearchRequest extends js.Object {
   /**
-    * The maximum number of results to return in a SearchResponse.
+    * The maximum number of results to return.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
   /**
-    * If more than MaxResults resource objects match the specified SearchExpression, the SearchResponse includes a NextToken. The NextToken can be passed to the next SearchRequest to continue retrieving results for the specified SearchExpression and Sort parameters.
+    * If more than MaxResults resources match the specified SearchExpression, the response includes a NextToken. The NextToken can be passed to the next SearchRequest to continue retrieving results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
   /**
@@ -19,7 +19,7 @@ trait SearchRequest extends js.Object {
     */
   var Resource: ResourceType = js.native
   /**
-    * A Boolean conditional statement. Resource objects must satisfy this condition to be included in search results. You must provide at least one subexpression, filter, or nested filter. The maximum number of recursive SubExpressions, NestedFilters, and Filters that can be included in a SearchExpression object is 50.
+    * A Boolean conditional statement. Resources must satisfy this condition to be included in search results. You must provide at least one subexpression, filter, or nested filter. The maximum number of recursive SubExpressions, NestedFilters, and Filters that can be included in a SearchExpression object is 50.
     */
   var SearchExpression: js.UndefOr[typings.awsSdk.sagemakerMod.SearchExpression] = js.native
   /**

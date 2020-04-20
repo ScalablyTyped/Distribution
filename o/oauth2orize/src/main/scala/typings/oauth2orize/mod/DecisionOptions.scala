@@ -14,7 +14,6 @@ object DecisionOptions {
   @scala.inline
   def apply(cancelField: String, sessionKey: String, userProperty: String): DecisionOptions = {
     val __obj = js.Dynamic.literal(cancelField = cancelField.asInstanceOf[js.Any], sessionKey = sessionKey.asInstanceOf[js.Any], userProperty = userProperty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecisionOptions]
   }
 }

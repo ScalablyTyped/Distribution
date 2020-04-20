@@ -13,7 +13,6 @@ object AnonProcessors {
   @scala.inline
   def apply(processors: js.Array[HeadersProcessor]): AnonProcessors = {
     val __obj = js.Dynamic.literal(processors = processors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProcessors]
   }
 }

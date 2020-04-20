@@ -13,12 +13,10 @@ trait Axis extends js.Object
 
 object Axis {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def x: typings.reactSortableHoc.reactSortableHocStrings.x = "x".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.x]
   @scala.inline
-  def x: typings.reactSortableHoc.reactSortableHocStrings.x = this.cast("x")
+  def xy: typings.reactSortableHoc.reactSortableHocStrings.xy = "xy".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.xy]
   @scala.inline
-  def xy: typings.reactSortableHoc.reactSortableHocStrings.xy = this.cast("xy")
-  @scala.inline
-  def y: typings.reactSortableHoc.reactSortableHocStrings.y = this.cast("y")
+  def y: typings.reactSortableHoc.reactSortableHocStrings.y = "y".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.y]
 }
 

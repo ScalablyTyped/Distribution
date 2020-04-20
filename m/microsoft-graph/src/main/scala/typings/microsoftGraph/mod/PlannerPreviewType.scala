@@ -15,16 +15,14 @@ trait PlannerPreviewType extends js.Object
 
 object PlannerPreviewType {
   @scala.inline
-  def automatic: typings.microsoftGraph.microsoftGraphStrings.automatic = this.cast("automatic")
+  def automatic: typings.microsoftGraph.microsoftGraphStrings.automatic = "automatic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.automatic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checklist: typings.microsoftGraph.microsoftGraphStrings.checklist = "checklist".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.checklist]
   @scala.inline
-  def checklist: typings.microsoftGraph.microsoftGraphStrings.checklist = this.cast("checklist")
+  def description: typings.microsoftGraph.microsoftGraphStrings.description = "description".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.description]
   @scala.inline
-  def description: typings.microsoftGraph.microsoftGraphStrings.description = this.cast("description")
+  def noPreview: typings.microsoftGraph.microsoftGraphStrings.noPreview = "noPreview".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noPreview]
   @scala.inline
-  def noPreview: typings.microsoftGraph.microsoftGraphStrings.noPreview = this.cast("noPreview")
-  @scala.inline
-  def reference: typings.microsoftGraph.microsoftGraphStrings.reference = this.cast("reference")
+  def reference: typings.microsoftGraph.microsoftGraphStrings.reference = "reference".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reference]
 }
 

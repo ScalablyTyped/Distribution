@@ -13,12 +13,10 @@ trait uPace extends js.Object
 
 object uPace {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def minSlashkm: typings.convertUnits.convertUnitsStrings.minSlashkm = "min/km".asInstanceOf[typings.convertUnits.convertUnitsStrings.minSlashkm]
   @scala.inline
-  def minSlashkm: typings.convertUnits.convertUnitsStrings.minSlashkm = this.cast("min/km")
+  def sSlashft: typings.convertUnits.convertUnitsStrings.sSlashft = "s/ft".asInstanceOf[typings.convertUnits.convertUnitsStrings.sSlashft]
   @scala.inline
-  def sSlashft: typings.convertUnits.convertUnitsStrings.sSlashft = this.cast("s/ft")
-  @scala.inline
-  def sSlashm: typings.convertUnits.convertUnitsStrings.sSlashm = this.cast("s/m")
+  def sSlashm: typings.convertUnits.convertUnitsStrings.sSlashm = "s/m".asInstanceOf[typings.convertUnits.convertUnitsStrings.sSlashm]
 }
 

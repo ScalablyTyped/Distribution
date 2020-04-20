@@ -16,7 +16,6 @@ object DeleteLocationRequest {
   @scala.inline
   def apply(LocationArn: LocationArn): DeleteLocationRequest = {
     val __obj = js.Dynamic.literal(LocationArn = LocationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLocationRequest]
   }
 }

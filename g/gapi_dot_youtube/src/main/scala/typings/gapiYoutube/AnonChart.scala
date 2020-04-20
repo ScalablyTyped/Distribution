@@ -57,7 +57,6 @@ object AnonChart {
     videoCategoryId: String
   ): AnonChart = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], maxResults = maxResults.asInstanceOf[js.Any], myRating = myRating.asInstanceOf[js.Any], onBehalfOfContentOwner = onBehalfOfContentOwner.asInstanceOf[js.Any], pageToken = pageToken.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any], videoCategoryId = videoCategoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChart]
   }
 }

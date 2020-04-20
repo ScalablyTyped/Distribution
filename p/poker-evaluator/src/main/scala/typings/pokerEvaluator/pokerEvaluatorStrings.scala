@@ -39,22 +39,22 @@ object pokerEvaluatorStrings {
   @scala.inline
   def flush: flush = "flush".asInstanceOf[flush]
   @scala.inline
-  def `four of a kind`: `four of a kind` = "four of a kind".asInstanceOf[`four of a kind`]
+  def `four of a kind`: `four of a kind` = ("four of a kind").asInstanceOf[`four of a kind`]
   @scala.inline
-  def `full house`: `full house` = "full house".asInstanceOf[`full house`]
+  def `full house`: `full house` = ("full house").asInstanceOf[`full house`]
   @scala.inline
-  def `high card`: `high card` = "high card".asInstanceOf[`high card`]
+  def `high card`: `high card` = ("high card").asInstanceOf[`high card`]
   @scala.inline
-  def `invalid hand`: `invalid hand` = "invalid hand".asInstanceOf[`invalid hand`]
+  def `invalid hand`: `invalid hand` = ("invalid hand").asInstanceOf[`invalid hand`]
   @scala.inline
-  def `one pair`: `one pair` = "one pair".asInstanceOf[`one pair`]
+  def `one pair`: `one pair` = ("one pair").asInstanceOf[`one pair`]
   @scala.inline
   def straight: straight = "straight".asInstanceOf[straight]
   @scala.inline
-  def `straight flush`: `straight flush` = "straight flush".asInstanceOf[`straight flush`]
+  def `straight flush`: `straight flush` = ("straight flush").asInstanceOf[`straight flush`]
   @scala.inline
-  def `three of a kind`: `three of a kind` = "three of a kind".asInstanceOf[`three of a kind`]
+  def `three of a kind`: `three of a kind` = ("three of a kind").asInstanceOf[`three of a kind`]
   @scala.inline
-  def `two pairs`: `two pairs` = "two pairs".asInstanceOf[`two pairs`]
+  def `two pairs`: `two pairs` = ("two pairs").asInstanceOf[`two pairs`]
 }
 

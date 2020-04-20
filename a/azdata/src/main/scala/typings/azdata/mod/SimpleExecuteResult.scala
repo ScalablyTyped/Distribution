@@ -14,7 +14,6 @@ object SimpleExecuteResult {
   @scala.inline
   def apply(columnInfo: js.Array[IDbColumn], rowCount: Double, rows: js.Array[js.Array[DbCellValue]]): SimpleExecuteResult = {
     val __obj = js.Dynamic.literal(columnInfo = columnInfo.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SimpleExecuteResult]
   }
 }

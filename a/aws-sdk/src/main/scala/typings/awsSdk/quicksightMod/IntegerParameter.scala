@@ -20,7 +20,6 @@ object IntegerParameter {
   @scala.inline
   def apply(Name: NonEmptyString, Values: LongList): IntegerParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntegerParameter]
   }
 }

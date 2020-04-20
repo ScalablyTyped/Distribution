@@ -17,7 +17,6 @@ object CustomAttribute {
     name: String
   ): CustomAttribute = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomAttribute]
   }
 }

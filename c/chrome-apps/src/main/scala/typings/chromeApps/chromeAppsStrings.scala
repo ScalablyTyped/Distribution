@@ -74,7 +74,43 @@ object chromeAppsStrings {
   sealed trait ABORT extends js.Object
   
   @js.native
+  sealed trait ABOUT_PAGE extends js.Object
+  
+  @js.native
   sealed trait ACCESS_DENIED extends js.Object
+  
+  @js.native
+  sealed trait ADAPTIVE extends js.Object
+  
+  @js.native
+  sealed trait ADDED extends js.Object
+  
+  @js.native
+  sealed trait ADMIN extends js.Object
+  
+  @js.native
+  sealed trait ALL extends js.Object
+  
+  @js.native
+  sealed trait ANDROID extends js.Object
+  
+  @js.native
+  sealed trait APP_LAUNCHER extends js.Object
+  
+  @js.native
+  sealed trait APP_UPDATE extends js.Object
+  
+  @js.native
+  sealed trait ARM extends js.Object
+  
+  @js.native
+  sealed trait ASYNCHRONOUS extends js.Object
+  
+  @js.native
+  sealed trait AUDIO extends js.Object
+  
+  @js.native
+  sealed trait AUTHENTICATION_REQUIRED extends js.Object
   
   @js.native
   sealed trait Activated extends ActivationStateType
@@ -92,13 +128,31 @@ object chromeAppsStrings {
   sealed trait AddResponseHeader extends js.Object
   
   @js.native
-  sealed trait All extends NetworkType
+  sealed trait All_ extends NetworkType
   
   @js.native
   sealed trait Asterisk extends js.Object
   
   @js.native
+  sealed trait BACKGROUND extends js.Object
+  
+  @js.native
+  sealed trait BASIC extends js.Object
+  
+  @js.native
   sealed trait BLUETOOTH extends DeviceType
+  
+  @js.native
+  sealed trait BOTTOM extends js.Object
+  
+  @js.native
+  sealed trait BROWSER_ACTION extends js.Object
+  
+  @js.native
+  sealed trait BULK extends js.Object
+  
+  @js.native
+  sealed trait CAPABILITIES_NEGOTIATION_ERROR extends js.Object
   
   @js.native
   sealed trait CDMA extends js.Object
@@ -113,37 +167,109 @@ object chromeAppsStrings {
   sealed trait CHANGED extends js.Object
   
   @js.native
+  sealed trait CHECKBOX extends js.Object
+  
+  @js.native
+  sealed trait CHROME_INTERNAL extends js.Object
+  
+  @js.native
+  sealed trait CHROME_UPDATE extends js.Object
+  
+  @js.native
+  sealed trait CLASS extends js.Object
+  
+  @js.native
+  sealed trait COMMAND_LINE extends js.Object
+  
+  @js.native
+  sealed trait CONFLICTING extends js.Object
+  
+  @js.native
+  sealed trait CONNECTED extends js.Object
+  
+  @js.native
+  sealed trait CONNECTING extends js.Object
+  
+  @js.native
+  sealed trait CONNECTION_ERROR extends js.Object
+  
+  @js.native
+  sealed trait CONTEXT_MENU extends js.Object
+  
+  @js.native
+  sealed trait CONTROL extends js.Object
+  
+  @js.native
+  sealed trait CROS extends js.Object
+  
+  @js.native
   sealed trait CancelRequest extends js.Object
   
   @js.native
   sealed trait Cellular extends NetworkType
   
   @js.native
-  sealed trait Connected extends ConnectionStateType
+  sealed trait Connected_ extends ConnectionStateType
   
   @js.native
-  sealed trait Connecting extends ConnectionStateType
+  sealed trait Connecting_ extends ConnectionStateType
+  
+  @js.native
+  sealed trait DATA extends js.Object
   
   @js.native
   sealed trait DELETED extends js.Object
   
   @js.native
+  sealed trait DENIED extends js.Object
+  
+  @js.native
+  sealed trait DEVELOPMENT extends js.Object
+  
+  @js.native
+  sealed trait DEVICE extends js.Object
+  
+  @js.native
   sealed trait DHCP extends IPConfigType
   
   @js.native
-  sealed trait Device extends js.Object
+  sealed trait DISABLED extends js.Object
+  
+  @js.native
+  sealed trait DISCONNECTED extends js.Object
+  
+  @js.native
+  sealed trait DISPLAY extends js.Object
   
   @js.native
   sealed trait DevicePolicy extends js.Object
   
   @js.native
+  sealed trait Device_ extends js.Object
+  
+  @js.native
   sealed trait Direct extends ProxySettingsType
   
   @js.native
-  sealed trait Disabled extends DeviceState
+  sealed trait Disabled_ extends DeviceState
   
   @js.native
-  sealed trait Disconnected extends js.Object
+  sealed trait Disconnected_ extends js.Object
+  
+  @js.native
+  sealed trait ECDSA_SIGN extends js.Object
+  
+  @js.native
+  sealed trait EDITABLE extends js.Object
+  
+  @js.native
+  sealed trait ENDPOINT extends js.Object
+  
+  @js.native
+  sealed trait EPHEMERAL_APP extends js.Object
+  
+  @js.native
+  sealed trait ERROR extends js.Object
   
   @js.native
   sealed trait ERR_ABORTED extends LoadAbortReason
@@ -173,6 +299,12 @@ object chromeAppsStrings {
   sealed trait EXISTS extends js.Object
   
   @js.native
+  sealed trait EXPLICIT_FEEDBACK extends js.Object
+  
+  @js.native
+  sealed trait EXTENSIONS_PAGE extends js.Object
+  
+  @js.native
   sealed trait EditRequestCookie extends js.Object
   
   @js.native
@@ -191,7 +323,25 @@ object chromeAppsStrings {
   sealed trait FAILED extends js.Object
   
   @js.native
+  sealed trait FAILURE extends js.Object
+  
+  @js.native
+  sealed trait FEEDBACK extends js.Object
+  
+  @js.native
+  sealed trait FILE_HANDLER extends js.Object
+  
+  @js.native
+  sealed trait FIXED extends js.Object
+  
+  @js.native
+  sealed trait FRAME extends js.Object
+  
+  @js.native
   sealed trait FRONT_MIC extends DeviceType
+  
+  @js.native
+  sealed trait FULLSCREEN extends js.Object
   
   @js.native
   sealed trait GOOG extends DisallowedKeys
@@ -201,6 +351,9 @@ object chromeAppsStrings {
   
   @js.native
   sealed trait GOOGLE extends DisallowedKeys
+  
+  @js.native
+  sealed trait GRANTED extends js.Object
   
   @js.native
   sealed trait GSM extends js.Object
@@ -215,13 +368,34 @@ object chromeAppsStrings {
   sealed trait HOTWORD extends DeviceType
   
   @js.native
+  sealed trait IMAGE extends js.Object
+  
+  @js.native
+  sealed trait IN extends js.Object
+  
+  @js.native
+  sealed trait INITIALIZING extends js.Object
+  
+  @js.native
   sealed trait INPUT extends StreamType
+  
+  @js.native
+  sealed trait INSTALL extends js.Object
+  
+  @js.native
+  sealed trait INSTALLED_NOTIFICATION extends js.Object
+  
+  @js.native
+  sealed trait INTERFACE extends js.Object
   
   @js.native
   sealed trait INTERNAL_MIC extends DeviceType
   
   @js.native
   sealed trait INTERNAL_SPEAKER extends DeviceType
+  
+  @js.native
+  sealed trait INTERRUPT extends js.Object
   
   @js.native
   sealed trait INVALID_OPERATION extends js.Object
@@ -248,18 +422,72 @@ object chromeAppsStrings {
   sealed trait IPv6 extends IPConfigurationType
   
   @js.native
+  sealed trait ISOCHRONOUS extends js.Object
+  
+  @js.native
   sealed trait IgnoreRules extends js.Object
+  
+  @js.native
+  sealed trait KEYBOARD extends js.Object
   
   @js.native
   sealed trait KEYBOARD_MIC extends DeviceType
   
   @js.native
+  sealed trait KIOSK extends js.Object
+  
+  @js.native
+  sealed trait LAST_WRITE_WIN extends js.Object
+  
+  @js.native
+  sealed trait LAUNCHER extends js.Object
+  
+  @js.native
+  sealed trait LEFT extends js.Object
+  
+  @js.native
   sealed trait LINEOUT extends DeviceType
+  
+  @js.native
+  sealed trait LINK extends js.Object
+  
+  @js.native
+  sealed trait LINK_CHANGED extends js.Object
+  
+  @js.native
+  sealed trait LINK_DOWN extends js.Object
+  
+  @js.native
+  sealed trait LINK_UP extends js.Object
+  
+  @js.native
+  sealed trait LINUX extends js.Object
+  
+  @js.native
+  sealed trait LIST extends js.Object
+  
+  @js.native
+  sealed trait LOAD_AND_LAUNCH extends js.Object
+  
+  @js.native
+  sealed trait LOCAL_TO_REMOTE extends js.Object
   
   @js.native
   sealed trait Lessthansignall_urlsGreaterthansign
     extends UrlMatches
        with OptionalPermission
+  
+  @js.native
+  sealed trait MAC extends js.Object
+  
+  @js.native
+  sealed trait MANAGEMENT_API extends js.Object
+  
+  @js.native
+  sealed trait MANUAL extends js.Object
+  
+  @js.native
+  sealed trait MAXIMIZED extends js.Object
   
   @js.native
   sealed trait MAX_ATTEMPTS_EXCEEDED extends js.Object
@@ -268,10 +496,34 @@ object chromeAppsStrings {
   sealed trait MD5_SHA1 extends Hash
   
   @js.native
+  sealed trait MEDIA_PIPELINE_ERROR extends js.Object
+  
+  @js.native
   sealed trait MIC extends DeviceType
   
   @js.native
-  sealed trait Manual extends ProxySettingsType
+  sealed trait MINIMIZED extends js.Object
+  
+  @js.native
+  sealed trait MIPS extends js.Object
+  
+  @js.native
+  sealed trait MIPS64 extends js.Object
+  
+  @js.native
+  sealed trait Manual_ extends ProxySettingsType
+  
+  @js.native
+  sealed trait NEW_NOTE extends js.Object
+  
+  @js.native
+  sealed trait NEW_TAB_PAGE extends js.Object
+  
+  @js.native
+  sealed trait NORMAL extends js.Object
+  
+  @js.native
+  sealed trait NOTIFICATION extends js.Object
   
   @js.native
   sealed trait NOT_A_DIRECTORY extends js.Object
@@ -292,6 +544,12 @@ object chromeAppsStrings {
   sealed trait NO_SPACE extends js.Object
   
   @js.native
+  sealed trait NO_SUCH_DEVICE extends js.Object
+  
+  @js.native
+  sealed trait NO_UPDATE extends js.Object
+  
+  @js.native
   sealed trait None extends EthernetAuthenticationType
   
   @js.native
@@ -307,6 +565,9 @@ object chromeAppsStrings {
   sealed trait OK extends js.Object
   
   @js.native
+  sealed trait OPENBSD extends js.Object
+  
+  @js.native
   sealed trait OPEN_AS_PINNED_TAB extends js.Object
   
   @js.native
@@ -319,7 +580,13 @@ object chromeAppsStrings {
   sealed trait OPEN_FULL_SCREEN extends js.Object
   
   @js.native
+  sealed trait OS_UPDATE extends js.Object
+  
+  @js.native
   sealed trait OTHER extends DeviceType
+  
+  @js.native
+  sealed trait OUT extends js.Object
   
   @js.native
   sealed trait OUTPUT extends StreamType
@@ -334,7 +601,22 @@ object chromeAppsStrings {
   sealed trait PAC extends ProxySettingsType
   
   @js.native
+  sealed trait PAGE extends js.Object
+  
+  @js.native
+  sealed trait PAGE_ACTION extends js.Object
+  
+  @js.native
   sealed trait PBC extends js.Object
+  
+  @js.native
+  sealed trait PENDING extends js.Object
+  
+  @js.native
+  sealed trait PERIODIC extends js.Object
+  
+  @js.native
+  sealed trait PERMISSIONS_INCREASE extends js.Object
   
   @js.native
   sealed trait PIN extends js.Object
@@ -347,6 +629,9 @@ object chromeAppsStrings {
   
   @js.native
   sealed trait POST_MIX_LOOPBACK extends DeviceType
+  
+  @js.native
+  sealed trait PROGRESS extends js.Object
   
   @js.native
   sealed trait PUK extends js.Object
@@ -367,10 +652,43 @@ object chromeAppsStrings {
   sealed trait ProxyAuthRequired extends CaptivePortalStatus
   
   @js.native
+  sealed trait RADIO extends js.Object
+  
+  @js.native
   sealed trait READ extends js.Object
   
   @js.native
   sealed trait REAR_MIC extends DeviceType
+  
+  @js.native
+  sealed trait REJECTED extends js.Object
+  
+  @js.native
+  sealed trait RELOAD extends js.Object
+  
+  @js.native
+  sealed trait REMOTE_TO_LOCAL extends js.Object
+  
+  @js.native
+  sealed trait REMOVABLE extends js.Object
+  
+  @js.native
+  sealed trait RESERVED extends js.Object
+  
+  @js.native
+  sealed trait RESTART extends js.Object
+  
+  @js.native
+  sealed trait RESUME extends js.Object
+  
+  @js.native
+  sealed trait RIGHT extends js.Object
+  
+  @js.native
+  sealed trait RSA_SIGN extends js.Object
+  
+  @js.native
+  sealed trait RUNNING extends js.Object
   
   @js.native
   sealed trait ReadOnly extends FileBrowserHandleExecuteId
@@ -412,7 +730,16 @@ object chromeAppsStrings {
   sealed trait SAVE_FOR_OFFLINE extends js.Object
   
   @js.native
+  sealed trait SCREEN extends js.Object
+  
+  @js.native
   sealed trait SECURITY extends js.Object
+  
+  @js.native
+  sealed trait SELECTION extends js.Object
+  
+  @js.native
+  sealed trait SEPARATOR extends js.Object
   
   @js.native
   sealed trait SHA1 extends Hash
@@ -430,7 +757,43 @@ object chromeAppsStrings {
   sealed trait SHARE extends js.Object
   
   @js.native
+  sealed trait SHARED_MODULE_UPDATE extends js.Object
+  
+  @js.native
+  sealed trait SHOW_ADD_DIALOG extends js.Object
+  
+  @js.native
+  sealed trait SHOW_CONFIGURE_DIALOG extends js.Object
+  
+  @js.native
+  sealed trait SIDELOAD extends js.Object
+  
+  @js.native
+  sealed trait STANDARD extends js.Object
+  
+  @js.native
   sealed trait STRETCH extends WallpaperLayoutType
+  
+  @js.native
+  sealed trait SUCCEEDED extends js.Object
+  
+  @js.native
+  sealed trait SUCCESS extends js.Object
+  
+  @js.native
+  sealed trait SUSPEND extends js.Object
+  
+  @js.native
+  sealed trait SYNCED extends js.Object
+  
+  @js.native
+  sealed trait SYNCHRONOUS extends js.Object
+  
+  @js.native
+  sealed trait SYSTEM extends js.Object
+  
+  @js.native
+  sealed trait SYSTEM_TRAY extends js.Object
   
   @js.native
   sealed trait SendMessageToExtension extends js.Object
@@ -442,10 +805,55 @@ object chromeAppsStrings {
   sealed trait Static extends IPConfigType
   
   @js.native
+  sealed trait TAB extends js.Object
+  
+  @js.native
+  sealed trait TEMPORARY_UNAVAILABLE extends js.Object
+  
+  @js.native
+  sealed trait TEST extends js.Object
+  
+  @js.native
+  sealed trait TEXT_HTML extends js.Object
+  
+  @js.native
+  sealed trait TEXT_PLAIN extends js.Object
+  
+  @js.native
+  sealed trait THROTTLED extends js.Object
+  
+  @js.native
+  sealed trait TIMEOUT_ERROR extends js.Object
+  
+  @js.native
   sealed trait TOO_MANY_OPENED extends js.Object
   
   @js.native
+  sealed trait TOP extends js.Object
+  
+  @js.native
+  sealed trait UNHANDLED extends js.Object
+  
+  @js.native
+  sealed trait UNKNOWN extends js.Object
+  
+  @js.native
   sealed trait UNKNOWN_ERROR extends js.Object
+  
+  @js.native
+  sealed trait UNTRACKED extends js.Object
+  
+  @js.native
+  sealed trait UPDATE extends js.Object
+  
+  @js.native
+  sealed trait UPDATED extends js.Object
+  
+  @js.native
+  sealed trait UPDATE_AVAILABLE extends js.Object
+  
+  @js.native
+  sealed trait URL_HANDLER extends js.Object
   
   @js.native
   sealed trait USB extends DeviceType
@@ -454,7 +862,7 @@ object chromeAppsStrings {
   sealed trait Uninitialized extends DeviceState
   
   @js.native
-  sealed trait Unknown extends CaptivePortalStatus
+  sealed trait Unknown_ extends CaptivePortalStatus
   
   @js.native
   sealed trait User extends js.Object
@@ -463,10 +871,25 @@ object chromeAppsStrings {
   sealed trait UserPolicy extends js.Object
   
   @js.native
+  sealed trait VENDOR extends js.Object
+  
+  @js.native
+  sealed trait VIDEO extends js.Object
+  
+  @js.native
   sealed trait VPN extends NetworkType
   
   @js.native
   sealed trait `WEP-PSK` extends js.Object
+  
+  @js.native
+  sealed trait WIN extends js.Object
+  
+  @js.native
+  sealed trait WINDOW extends js.Object
+  
+  @js.native
+  sealed trait WI_FI extends js.Object
   
   @js.native
   sealed trait `WPA-EAP` extends js.Object
@@ -490,6 +913,12 @@ object chromeAppsStrings {
   sealed trait Wireless extends NetworkType
   
   @js.native
+  sealed trait X86_32 extends js.Object
+  
+  @js.native
+  sealed trait X86_64 extends js.Object
+  
+  @js.native
   sealed trait _empty extends js.Object
   
   @js.native
@@ -499,7 +928,7 @@ object chromeAppsStrings {
   sealed trait abort_ extends js.Object
   
   @js.native
-  sealed trait about_page extends js.Object
+  sealed trait about_page_ extends js.Object
   
   @js.native
   sealed trait activate extends js.Object
@@ -508,13 +937,13 @@ object chromeAppsStrings {
   sealed trait active extends IdleState
   
   @js.native
-  sealed trait adaptive extends js.Object
+  sealed trait adaptive_ extends js.Object
   
   @js.native
-  sealed trait added extends js.Object
+  sealed trait added_ extends js.Object
   
   @js.native
-  sealed trait admin extends js.Object
+  sealed trait admin_ extends js.Object
   
   @js.native
   sealed trait af
@@ -533,7 +962,7 @@ object chromeAppsStrings {
   sealed trait allAutoDetected extends js.Object
   
   @js.native
-  sealed trait all_
+  sealed trait all__
     extends ContextType
        with DeviceFilterType
        with MetadataOptionsType
@@ -554,7 +983,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait android extends OS
+  sealed trait android_ extends OS
   
   @js.native
   sealed trait animationcancel extends js.Object
@@ -595,10 +1024,10 @@ object chromeAppsStrings {
        with Permission
   
   @js.native
-  sealed trait app_launcher extends js.Object
+  sealed trait app_launcher_ extends js.Object
   
   @js.native
-  sealed trait app_update extends js.Object
+  sealed trait app_update_ extends js.Object
   
   @js.native
   sealed trait appview
@@ -616,7 +1045,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait arm extends js.Object
+  sealed trait arm_ extends js.Object
   
   @js.native
   sealed trait array extends js.Object
@@ -627,11 +1056,16 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait asynchronous extends js.Object
+  sealed trait asynchronous_ extends js.Object
+  
+  @js.native
+  sealed trait audioCapture
+    extends OptionalPermission
+       with Permission
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - typings.chromeApps.chrome.runtime.Permission because Already inherited */ @js.native
-  sealed trait audio
+  sealed trait audio_
     extends KioskOnlyPermissions
        with ContextType
        with typings.chromeApps.chrome.bluetooth.DeviceType
@@ -639,15 +1073,10 @@ object chromeAppsStrings {
        with OptionalPermission
   
   @js.native
-  sealed trait audioCapture
-    extends OptionalPermission
-       with Permission
-  
-  @js.native
   sealed trait authenticatedSignedWrites extends CharacteristicProperties
   
   @js.native
-  sealed trait authentication_required extends js.Object
+  sealed trait authentication_required_ extends js.Object
   
   @js.native
   sealed trait author extends CSSOrigin
@@ -667,12 +1096,12 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait background
+  sealed trait background_
     extends OptionalPermission
        with Permission
   
   @js.native
-  sealed trait basic extends js.Object
+  sealed trait basic_ extends js.Object
   
   @js.native
   sealed trait be
@@ -701,7 +1130,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom_ extends js.Object
   
   @js.native
   sealed trait br
@@ -719,7 +1148,7 @@ object chromeAppsStrings {
        with Permission
   
   @js.native
-  sealed trait browser_action extends js.Object
+  sealed trait browser_action_ extends js.Object
   
   @js.native
   sealed trait bs
@@ -727,7 +1156,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait bulk extends js.Object
+  sealed trait bulk_ extends js.Object
   
   @js.native
   sealed trait ca
@@ -744,7 +1173,7 @@ object chromeAppsStrings {
   sealed trait canplaythrough extends js.Object
   
   @js.native
-  sealed trait capabilities_negotiation_error extends js.Object
+  sealed trait capabilities_negotiation_error_ extends js.Object
   
   @js.native
   sealed trait carAudio
@@ -767,7 +1196,7 @@ object chromeAppsStrings {
   sealed trait changed_ extends js.Object
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait checkbox_ extends js.Object
   
   @js.native
   sealed trait chrome extends js.Object
@@ -778,13 +1207,13 @@ object chromeAppsStrings {
        with OptionalPermission
   
   @js.native
-  sealed trait chrome_internal extends js.Object
+  sealed trait chrome_internal_ extends js.Object
   
   @js.native
   sealed trait chrome_os extends OS
   
   @js.native
-  sealed trait chrome_update extends js.Object
+  sealed trait chrome_update_ extends js.Object
   
   @js.native
   sealed trait ckb
@@ -792,7 +1221,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait `class` extends js.Object
+  sealed trait class_ extends js.Object
   
   @js.native
   sealed trait clear extends js.Object
@@ -827,7 +1256,7 @@ object chromeAppsStrings {
   sealed trait collapse_key extends DisallowedKeys
   
   @js.native
-  sealed trait command_line extends js.Object
+  sealed trait command_line_ extends js.Object
   
   @js.native
   sealed trait computer
@@ -837,13 +1266,13 @@ object chromeAppsStrings {
   sealed trait confirm extends DialogMessageType
   
   @js.native
-  sealed trait conflicting extends js.Object
+  sealed trait conflicting_ extends js.Object
   
   @js.native
-  sealed trait connected_ extends js.Object
+  sealed trait connected__ extends js.Object
   
   @js.native
-  sealed trait connection_error extends js.Object
+  sealed trait connection_error_ extends js.Object
   
   @js.native
   sealed trait consolemessage extends js.Object
@@ -860,13 +1289,13 @@ object chromeAppsStrings {
        with Permission
   
   @js.native
-  sealed trait context_menu extends js.Object
+  sealed trait context_menu_ extends js.Object
   
   @js.native
   sealed trait contextmenu extends js.Object
   
   @js.native
-  sealed trait control extends js.Object
+  sealed trait control_ extends js.Object
   
   @js.native
   sealed trait controllable_by_this_extension
@@ -893,7 +1322,7 @@ object chromeAppsStrings {
   sealed trait created extends js.Object
   
   @js.native
-  sealed trait cros extends js.Object
+  sealed trait cros_ extends js.Object
   
   @js.native
   sealed trait cs
@@ -923,7 +1352,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait data_ extends js.Object
   
   @js.native
   sealed trait dblclick extends js.Object
@@ -1047,7 +1476,7 @@ object chromeAppsStrings {
   sealed trait deleted_ extends js.Object
   
   @js.native
-  sealed trait denied extends js.Object
+  sealed trait denied_ extends js.Object
   
   @js.native
   sealed trait desktopCapture
@@ -1059,10 +1488,10 @@ object chromeAppsStrings {
     extends typings.chromeApps.chrome.signedInDevices.DeviceType
   
   @js.native
-  sealed trait development extends js.Object
+  sealed trait development_ extends js.Object
   
   @js.native
-  sealed trait device_ extends js.Object
+  sealed trait device__ extends js.Object
   
   @js.native
   sealed trait diagnostics extends DevOnly
@@ -1074,16 +1503,16 @@ object chromeAppsStrings {
   sealed trait directory extends js.Object
   
   @js.native
-  sealed trait disabled_ extends ZoomMode
+  sealed trait disabled__ extends ZoomMode
   
   @js.native
-  sealed trait disconnected_ extends OnReceiveErrorCode
-  
-  @js.native
-  sealed trait display extends js.Object
+  sealed trait disconnected__ extends OnReceiveErrorCode
   
   @js.native
   sealed trait displaySource extends DevOnly
+  
+  @js.native
+  sealed trait display_ extends js.Object
   
   @js.native
   sealed trait dns
@@ -1138,7 +1567,7 @@ object chromeAppsStrings {
   sealed trait ecdsaSign extends js.Object
   
   @js.native
-  sealed trait editable extends ContextType
+  sealed trait editable_ extends ContextType
   
   @js.native
   sealed trait el
@@ -1229,7 +1658,7 @@ object chromeAppsStrings {
   sealed trait ended extends js.Object
   
   @js.native
-  sealed trait endpoint extends js.Object
+  sealed trait endpoint_ extends js.Object
   
   @js.native
   sealed trait enterpriseDotdeviceAttributes
@@ -1247,10 +1676,10 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait ephemeral_app extends js.Object
+  sealed trait ephemeral_app_ extends js.Object
   
   @js.native
-  sealed trait error extends ScanProgressType
+  sealed trait error_ extends ScanProgressType
   
   @js.native
   sealed trait es
@@ -1345,7 +1774,7 @@ object chromeAppsStrings {
   sealed trait extension extends js.Object
   
   @js.native
-  sealed trait extensions_page extends js.Object
+  sealed trait extensions_page_ extends js.Object
   
   @js.native
   sealed trait fa
@@ -1356,10 +1785,10 @@ object chromeAppsStrings {
   sealed trait failed_ extends js.Object
   
   @js.native
-  sealed trait failure extends js.Object
+  sealed trait failure_ extends js.Object
   
   @js.native
-  sealed trait feedback extends js.Object
+  sealed trait feedback_ extends js.Object
   
   @js.native
   sealed trait female extends js.Object
@@ -1395,7 +1824,7 @@ object chromeAppsStrings {
        with OptionalPermission
   
   @js.native
-  sealed trait file_handler extends js.Object
+  sealed trait file_handler_ extends js.Object
   
   @js.native
   sealed trait filesystem_ extends RequestedPermission
@@ -1407,7 +1836,7 @@ object chromeAppsStrings {
   sealed trait finish extends ScanProgressType
   
   @js.native
-  sealed trait fixed extends js.Object
+  sealed trait fixed_ extends js.Object
   
   @js.native
   sealed trait fo
@@ -1447,13 +1876,13 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait frame extends ContextType
+  sealed trait frame_ extends ContextType
   
   @js.native
   sealed trait full extends InterfaceType
   
   @js.native
-  sealed trait fullscreen
+  sealed trait fullscreen_
     extends RequestedPermission
        with UndocumentedPermissions
   
@@ -1519,7 +1948,7 @@ object chromeAppsStrings {
   sealed trait gotpointercapture extends js.Object
   
   @js.native
-  sealed trait granted extends js.Object
+  sealed trait granted_ extends js.Object
   
   @js.native
   sealed trait gu
@@ -1632,13 +2061,13 @@ object chromeAppsStrings {
   sealed trait ignore extends WindowOpenDisposition
   
   @js.native
-  sealed trait image
+  sealed trait image_
     extends ContextType
        with MediaType
        with ResourceType
   
   @js.native
-  sealed trait in extends js.Object
+  sealed trait in_ extends js.Object
   
   @js.native
   sealed trait in_use_ extends js.Object
@@ -1657,25 +2086,25 @@ object chromeAppsStrings {
   sealed trait indicate extends CharacteristicProperties
   
   @js.native
-  sealed trait initializing extends js.Object
+  sealed trait initializing_ extends js.Object
   
   @js.native
   sealed trait input_ extends js.Object
   
   @js.native
-  sealed trait install extends js.Object
+  sealed trait install_ extends js.Object
   
   @js.native
-  sealed trait installed_notification extends js.Object
+  sealed trait installed_notification_ extends js.Object
   
   @js.native
   sealed trait integer extends JSONBasicTypes
   
   @js.native
-  sealed trait interface extends js.Object
+  sealed trait interface_ extends js.Object
   
   @js.native
-  sealed trait interrupt extends js.Object
+  sealed trait interrupt_ extends js.Object
   
   @js.native
   sealed trait invalid extends js.Object
@@ -1689,7 +2118,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait isochronous extends js.Object
+  sealed trait isochronous_ extends js.Object
   
   @js.native
   sealed trait it
@@ -1732,11 +2161,11 @@ object chromeAppsStrings {
   sealed trait keep extends js.Object
   
   @js.native
-  sealed trait keyboard
+  sealed trait keyboardMouseCombo
     extends typings.chromeApps.chrome.bluetooth.DeviceType
   
   @js.native
-  sealed trait keyboardMouseCombo
+  sealed trait keyboard_
     extends typings.chromeApps.chrome.bluetooth.DeviceType
   
   @js.native
@@ -1752,7 +2181,7 @@ object chromeAppsStrings {
   sealed trait kill extends ExitEventReason
   
   @js.native
-  sealed trait kiosk extends js.Object
+  sealed trait kiosk_ extends js.Object
   
   @js.native
   sealed trait kk
@@ -1793,10 +2222,10 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait last_write_win extends js.Object
+  sealed trait last_write_win_ extends js.Object
   
   @js.native
-  sealed trait launcher extends js.Object
+  sealed trait launcher_ extends js.Object
   
   @js.native
   sealed trait lb
@@ -1804,13 +2233,10 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left_ extends js.Object
   
   @js.native
   sealed trait legacy_packaged_app extends js.Object
-  
-  @js.native
-  sealed trait link extends ContextType
   
   @js.native
   sealed trait linkChanged extends js.Object
@@ -1822,10 +2248,13 @@ object chromeAppsStrings {
   sealed trait linkUp extends js.Object
   
   @js.native
-  sealed trait linux extends OS
+  sealed trait link_ extends ContextType
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait linux_ extends OS
+  
+  @js.native
+  sealed trait list_ extends js.Object
   
   @js.native
   sealed trait ln
@@ -1841,7 +2270,7 @@ object chromeAppsStrings {
   sealed trait load extends js.Object
   
   @js.native
-  sealed trait load_and_launch extends js.Object
+  sealed trait load_and_launch_ extends js.Object
   
   @js.native
   sealed trait loadabort extends js.Object
@@ -1871,7 +2300,7 @@ object chromeAppsStrings {
   sealed trait local extends StorageAreas
   
   @js.native
-  sealed trait local_to_remote extends js.Object
+  sealed trait local_to_remote_ extends js.Object
   
   @js.native
   sealed trait locked extends IdleState
@@ -1890,7 +2319,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait mac extends OS
+  sealed trait mac_ extends OS
   
   @js.native
   sealed trait main_frame extends ResourceType
@@ -1904,13 +2333,13 @@ object chromeAppsStrings {
        with StorageAreas
   
   @js.native
-  sealed trait management_api extends js.Object
+  sealed trait management_api_ extends js.Object
   
   @js.native
-  sealed trait manual_ extends js.Object
+  sealed trait manual__ extends js.Object
   
   @js.native
-  sealed trait maximized extends js.Object
+  sealed trait maximized_ extends js.Object
   
   @js.native
   sealed trait mdns
@@ -1928,7 +2357,7 @@ object chromeAppsStrings {
        with Permission
   
   @js.native
-  sealed trait media_pipeline_error extends js.Object
+  sealed trait media_pipeline_error_ extends js.Object
   
   @js.native
   sealed trait mg
@@ -1947,13 +2376,13 @@ object chromeAppsStrings {
   sealed trait mimeTypeOnly extends MetadataOptionsType
   
   @js.native
-  sealed trait minimized extends js.Object
+  sealed trait minimized_ extends js.Object
   
   @js.native
-  sealed trait mips extends js.Object
+  sealed trait mips64_ extends js.Object
   
   @js.native
-  sealed trait mips64 extends js.Object
+  sealed trait mips_ extends js.Object
   
   @js.native
   sealed trait mixed extends js.Object
@@ -2065,13 +2494,13 @@ object chromeAppsStrings {
   sealed trait new_foreground_tab extends WindowOpenDisposition
   
   @js.native
-  sealed trait new_note extends js.Object
+  sealed trait new_note_ extends js.Object
   
   @js.native
   sealed trait new_popup extends WindowOpenDisposition
   
   @js.native
-  sealed trait new_tab_page extends js.Object
+  sealed trait new_tab_page_ extends js.Object
   
   @js.native
   sealed trait new_window extends WindowOpenDisposition
@@ -2096,16 +2525,16 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait no_such_device extends js.Object
+  sealed trait no_such_device_ extends js.Object
   
   @js.native
-  sealed trait no_update extends js.Object
+  sealed trait no_update_ extends js.Object
   
   @js.native
   sealed trait none_ extends js.Object
   
   @js.native
-  sealed trait normal extends ExitEventReason
+  sealed trait normal_ extends ExitEventReason
   
   @js.native
   sealed trait not_connected extends OnReceiveErrorCode
@@ -2119,7 +2548,7 @@ object chromeAppsStrings {
   sealed trait not_listening extends OnAcceptErrorCode
   
   @js.native
-  sealed trait notification extends js.Object
+  sealed trait notification_ extends js.Object
   
   @js.native
   sealed trait notifications
@@ -2178,7 +2607,7 @@ object chromeAppsStrings {
   sealed trait openWritableFile extends js.Object
   
   @js.native
-  sealed trait openbsd extends js.Object
+  sealed trait openbsd_ extends js.Object
   
   @js.native
   sealed trait or
@@ -2186,13 +2615,13 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait os_update extends js.Object
+  sealed trait os_update_ extends js.Object
   
   @js.native
   sealed trait other_ extends ResourceType
   
   @js.native
-  sealed trait out extends js.Object
+  sealed trait out_ extends js.Object
   
   @js.native
   sealed trait overrideEscFullscreen extends UndocumentedPermissions
@@ -2206,10 +2635,10 @@ object chromeAppsStrings {
   sealed trait packaged_app extends js.Object
   
   @js.native
-  sealed trait page extends ContextType
+  sealed trait page_ extends ContextType
   
   @js.native
-  sealed trait page_action extends js.Object
+  sealed trait page_action_ extends js.Object
   
   @js.native
   sealed trait panel extends js.Object
@@ -2224,7 +2653,7 @@ object chromeAppsStrings {
   sealed trait pause extends js.Object
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending_ extends js.Object
   
   @js.native
   sealed trait `per-origin` extends ZoomMode
@@ -2233,7 +2662,7 @@ object chromeAppsStrings {
   sealed trait `per-view` extends ZoomMode
   
   @js.native
-  sealed trait periodic extends js.Object
+  sealed trait periodic_ extends js.Object
   
   @js.native
   sealed trait peripheral
@@ -2244,7 +2673,7 @@ object chromeAppsStrings {
   sealed trait permissionrequest extends js.Object
   
   @js.native
-  sealed trait permissions_increase extends js.Object
+  sealed trait permissions_increase_ extends js.Object
   
   @js.native
   sealed trait phone
@@ -2314,7 +2743,7 @@ object chromeAppsStrings {
        with Permission
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress_ extends js.Object
   
   @js.native
   sealed trait prompt extends DialogMessageType
@@ -2348,7 +2777,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait radio extends js.Object
+  sealed trait radio_ extends js.Object
   
   @js.native
   sealed trait ratechange extends js.Object
@@ -2369,19 +2798,19 @@ object chromeAppsStrings {
        with Scope
   
   @js.native
-  sealed trait rejected extends js.Object
+  sealed trait rejected_ extends js.Object
   
   @js.native
   sealed trait reliableWrite extends CharacteristicProperties
   
   @js.native
-  sealed trait reload extends js.Object
+  sealed trait reload_ extends js.Object
   
   @js.native
-  sealed trait remote_to_local extends js.Object
+  sealed trait remote_to_local_ extends js.Object
   
   @js.native
-  sealed trait removable extends js.Object
+  sealed trait removable_ extends js.Object
   
   @js.native
   sealed trait removed extends js.Object
@@ -2390,7 +2819,7 @@ object chromeAppsStrings {
   sealed trait requestFileSystem extends js.Object
   
   @js.native
-  sealed trait reserved extends js.Object
+  sealed trait reserved_ extends js.Object
   
   @js.native
   sealed trait reset extends js.Object
@@ -2402,16 +2831,16 @@ object chromeAppsStrings {
   sealed trait responsive extends js.Object
   
   @js.native
-  sealed trait restart extends js.Object
+  sealed trait restart_ extends js.Object
   
   @js.native
-  sealed trait resume extends js.Object
+  sealed trait resume_ extends js.Object
   
   @js.native
   sealed trait retainEntries extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right_ extends js.Object
   
   @js.native
   sealed trait rm
@@ -2432,7 +2861,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait running extends js.Object
+  sealed trait running_ extends js.Object
   
   @js.native
   sealed trait runtime
@@ -2446,7 +2875,7 @@ object chromeAppsStrings {
   sealed trait save_to_disk extends WindowOpenDisposition
   
   @js.native
-  sealed trait screen extends js.Object
+  sealed trait screen_ extends js.Object
   
   @js.native
   sealed trait script extends ResourceType
@@ -2472,7 +2901,7 @@ object chromeAppsStrings {
   sealed trait select extends js.Object
   
   @js.native
-  sealed trait selection extends ContextType
+  sealed trait selection_ extends ContextType
   
   @js.native
   sealed trait selectionchange extends js.Object
@@ -2481,7 +2910,7 @@ object chromeAppsStrings {
   sealed trait selectstart extends js.Object
   
   @js.native
-  sealed trait separator extends js.Object
+  sealed trait separator_ extends js.Object
   
   @js.native
   sealed trait serial
@@ -2500,7 +2929,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait shared_module_update extends js.Object
+  sealed trait shared_module_update_ extends js.Object
   
   @js.native
   sealed trait shell extends js.Object
@@ -2517,7 +2946,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait sideload extends js.Object
+  sealed trait sideload_ extends js.Object
   
   @js.native
   sealed trait signedInDevices extends DevOnly
@@ -2596,7 +3025,7 @@ object chromeAppsStrings {
   sealed trait stalled extends js.Object
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard_ extends js.Object
   
   @js.native
   sealed trait start extends ScanProgressType
@@ -2624,13 +3053,13 @@ object chromeAppsStrings {
   sealed trait submit extends js.Object
   
   @js.native
-  sealed trait succeeded extends js.Object
+  sealed trait succeeded_ extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success_ extends js.Object
   
   @js.native
-  sealed trait suspend extends js.Object
+  sealed trait suspend_ extends js.Object
   
   @js.native
   sealed trait sv
@@ -2651,13 +3080,10 @@ object chromeAppsStrings {
        with Permission
   
   @js.native
-  sealed trait synced extends js.Object
+  sealed trait synced_ extends js.Object
   
   @js.native
-  sealed trait synchronous extends js.Object
-  
-  @js.native
-  sealed trait system extends js.Object
+  sealed trait synchronous_ extends js.Object
   
   @js.native
   sealed trait systemDotcpu
@@ -2690,12 +3116,15 @@ object chromeAppsStrings {
        with Permission
   
   @js.native
+  sealed trait system_ extends js.Object
+  
+  @js.native
   sealed trait system_error
     extends OnAcceptErrorCode
        with OnReceiveErrorCode
   
   @js.native
-  sealed trait system_tray extends js.Object
+  sealed trait system_tray_ extends js.Object
   
   @js.native
   sealed trait ta
@@ -2703,7 +3132,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait tab extends js.Object
+  sealed trait tab_ extends js.Object
   
   @js.native
   sealed trait tablet
@@ -2716,10 +3145,10 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait temporary_unavailable extends js.Object
+  sealed trait temporary_unavailable_ extends js.Object
   
   @js.native
-  sealed trait test extends js.Object
+  sealed trait test_ extends js.Object
   
   @js.native
   sealed trait textHtml extends js.Object
@@ -2741,7 +3170,7 @@ object chromeAppsStrings {
   sealed trait theme extends js.Object
   
   @js.native
-  sealed trait throttled extends js.Object
+  sealed trait throttled_ extends js.Object
   
   @js.native
   sealed trait ti
@@ -2749,7 +3178,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait timeout_error extends js.Object
+  sealed trait timeout_error_ extends js.Object
   
   @js.native
   sealed trait timeupdate extends js.Object
@@ -2780,7 +3209,7 @@ object chromeAppsStrings {
   sealed trait toggle extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top_ extends js.Object
   
   @js.native
   sealed trait touchcancel extends js.Object
@@ -2840,10 +3269,10 @@ object chromeAppsStrings {
   sealed trait und extends LanguageCode
   
   @js.native
-  sealed trait unhandled extends js.Object
+  sealed trait unhandled_ extends js.Object
   
   @js.native
-  sealed trait unknown_
+  sealed trait unknown__
     extends typings.chromeApps.chrome.signedInDevices.DeviceType
        with OS
        with ObjectFunction
@@ -2863,16 +3292,16 @@ object chromeAppsStrings {
   sealed trait unresponsive extends js.Object
   
   @js.native
-  sealed trait untracked extends js.Object
+  sealed trait untracked_ extends js.Object
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update_ extends js.Object
   
   @js.native
-  sealed trait update_available extends js.Object
+  sealed trait update_available_ extends js.Object
   
   @js.native
-  sealed trait updated extends js.Object
+  sealed trait updated_ extends js.Object
   
   @js.native
   sealed trait ur
@@ -2880,7 +3309,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait url_handler extends js.Object
+  sealed trait url_handler_ extends js.Object
   
   @js.native
   sealed trait usbDevices
@@ -2902,7 +3331,7 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait vendor extends js.Object
+  sealed trait vendor_ extends js.Object
   
   @js.native
   sealed trait vi
@@ -2910,15 +3339,15 @@ object chromeAppsStrings {
        with kLanguageInfoTable
   
   @js.native
-  sealed trait video
-    extends ContextType
-       with typings.chromeApps.chrome.bluetooth.DeviceType
-       with MediaType
-  
-  @js.native
   sealed trait videoCapture
     extends OptionalPermission
        with Permission
+  
+  @js.native
+  sealed trait video_
+    extends ContextType
+       with typings.chromeApps.chrome.bluetooth.DeviceType
+       with MediaType
   
   @js.native
   sealed trait virtualKeyboard
@@ -2964,10 +3393,10 @@ object chromeAppsStrings {
   sealed trait wheel extends js.Object
   
   @js.native
-  sealed trait win extends OS
+  sealed trait win_ extends OS
   
   @js.native
-  sealed trait window extends js.Object
+  sealed trait window_ extends js.Object
   
   @js.native
   sealed trait writableAuxiliaries extends CharacteristicProperties
@@ -3065,7 +3494,31 @@ object chromeAppsStrings {
   @scala.inline
   def ABORT: ABORT = "ABORT".asInstanceOf[ABORT]
   @scala.inline
+  def ABOUT_PAGE: ABOUT_PAGE = "ABOUT_PAGE".asInstanceOf[ABOUT_PAGE]
+  @scala.inline
   def ACCESS_DENIED: ACCESS_DENIED = "ACCESS_DENIED".asInstanceOf[ACCESS_DENIED]
+  @scala.inline
+  def ADAPTIVE: ADAPTIVE = "ADAPTIVE".asInstanceOf[ADAPTIVE]
+  @scala.inline
+  def ADDED: ADDED = "ADDED".asInstanceOf[ADDED]
+  @scala.inline
+  def ADMIN: ADMIN = "ADMIN".asInstanceOf[ADMIN]
+  @scala.inline
+  def ALL: ALL = "ALL".asInstanceOf[ALL]
+  @scala.inline
+  def ANDROID: ANDROID = "ANDROID".asInstanceOf[ANDROID]
+  @scala.inline
+  def APP_LAUNCHER: APP_LAUNCHER = "APP_LAUNCHER".asInstanceOf[APP_LAUNCHER]
+  @scala.inline
+  def APP_UPDATE: APP_UPDATE = "APP_UPDATE".asInstanceOf[APP_UPDATE]
+  @scala.inline
+  def ARM: ARM = "ARM".asInstanceOf[ARM]
+  @scala.inline
+  def ASYNCHRONOUS: ASYNCHRONOUS = "ASYNCHRONOUS".asInstanceOf[ASYNCHRONOUS]
+  @scala.inline
+  def AUDIO: AUDIO = "AUDIO".asInstanceOf[AUDIO]
+  @scala.inline
+  def AUTHENTICATION_REQUIRED: AUTHENTICATION_REQUIRED = "AUTHENTICATION_REQUIRED".asInstanceOf[AUTHENTICATION_REQUIRED]
   @scala.inline
   def Activated: Activated = "Activated".asInstanceOf[Activated]
   @scala.inline
@@ -3077,11 +3530,23 @@ object chromeAppsStrings {
   @scala.inline
   def AddResponseHeader: AddResponseHeader = "AddResponseHeader".asInstanceOf[AddResponseHeader]
   @scala.inline
-  def All: All = "All".asInstanceOf[All]
+  def All_ : All_ = "All".asInstanceOf[All_]
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
+  def BACKGROUND: BACKGROUND = "BACKGROUND".asInstanceOf[BACKGROUND]
+  @scala.inline
+  def BASIC: BASIC = "BASIC".asInstanceOf[BASIC]
+  @scala.inline
   def BLUETOOTH: BLUETOOTH = "BLUETOOTH".asInstanceOf[BLUETOOTH]
+  @scala.inline
+  def BOTTOM: BOTTOM = "BOTTOM".asInstanceOf[BOTTOM]
+  @scala.inline
+  def BROWSER_ACTION: BROWSER_ACTION = "BROWSER_ACTION".asInstanceOf[BROWSER_ACTION]
+  @scala.inline
+  def BULK: BULK = "BULK".asInstanceOf[BULK]
+  @scala.inline
+  def CAPABILITIES_NEGOTIATION_ERROR: CAPABILITIES_NEGOTIATION_ERROR = "CAPABILITIES_NEGOTIATION_ERROR".asInstanceOf[CAPABILITIES_NEGOTIATION_ERROR]
   @scala.inline
   def CDMA: CDMA = "CDMA".asInstanceOf[CDMA]
   @scala.inline
@@ -3091,27 +3556,75 @@ object chromeAppsStrings {
   @scala.inline
   def CHANGED: CHANGED = "CHANGED".asInstanceOf[CHANGED]
   @scala.inline
+  def CHECKBOX: CHECKBOX = "CHECKBOX".asInstanceOf[CHECKBOX]
+  @scala.inline
+  def CHROME_INTERNAL: CHROME_INTERNAL = "CHROME_INTERNAL".asInstanceOf[CHROME_INTERNAL]
+  @scala.inline
+  def CHROME_UPDATE: CHROME_UPDATE = "CHROME_UPDATE".asInstanceOf[CHROME_UPDATE]
+  @scala.inline
+  def CLASS: CLASS = "CLASS".asInstanceOf[CLASS]
+  @scala.inline
+  def COMMAND_LINE: COMMAND_LINE = "COMMAND_LINE".asInstanceOf[COMMAND_LINE]
+  @scala.inline
+  def CONFLICTING: CONFLICTING = "CONFLICTING".asInstanceOf[CONFLICTING]
+  @scala.inline
+  def CONNECTED: CONNECTED = "CONNECTED".asInstanceOf[CONNECTED]
+  @scala.inline
+  def CONNECTING: CONNECTING = "CONNECTING".asInstanceOf[CONNECTING]
+  @scala.inline
+  def CONNECTION_ERROR: CONNECTION_ERROR = "CONNECTION_ERROR".asInstanceOf[CONNECTION_ERROR]
+  @scala.inline
+  def CONTEXT_MENU: CONTEXT_MENU = "CONTEXT_MENU".asInstanceOf[CONTEXT_MENU]
+  @scala.inline
+  def CONTROL: CONTROL = "CONTROL".asInstanceOf[CONTROL]
+  @scala.inline
+  def CROS: CROS = "CROS".asInstanceOf[CROS]
+  @scala.inline
   def CancelRequest: CancelRequest = "CancelRequest".asInstanceOf[CancelRequest]
   @scala.inline
   def Cellular: Cellular = "Cellular".asInstanceOf[Cellular]
   @scala.inline
-  def Connected: Connected = "Connected".asInstanceOf[Connected]
+  def Connected_ : Connected_ = "Connected".asInstanceOf[Connected_]
   @scala.inline
-  def Connecting: Connecting = "Connecting".asInstanceOf[Connecting]
+  def Connecting_ : Connecting_ = "Connecting".asInstanceOf[Connecting_]
+  @scala.inline
+  def DATA: DATA = "DATA".asInstanceOf[DATA]
   @scala.inline
   def DELETED: DELETED = "DELETED".asInstanceOf[DELETED]
   @scala.inline
+  def DENIED: DENIED = "DENIED".asInstanceOf[DENIED]
+  @scala.inline
+  def DEVELOPMENT: DEVELOPMENT = "DEVELOPMENT".asInstanceOf[DEVELOPMENT]
+  @scala.inline
+  def DEVICE: DEVICE = "DEVICE".asInstanceOf[DEVICE]
+  @scala.inline
   def DHCP: DHCP = "DHCP".asInstanceOf[DHCP]
   @scala.inline
-  def Device: Device = "Device".asInstanceOf[Device]
+  def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
+  @scala.inline
+  def DISCONNECTED: DISCONNECTED = "DISCONNECTED".asInstanceOf[DISCONNECTED]
+  @scala.inline
+  def DISPLAY: DISPLAY = "DISPLAY".asInstanceOf[DISPLAY]
   @scala.inline
   def DevicePolicy: DevicePolicy = "DevicePolicy".asInstanceOf[DevicePolicy]
   @scala.inline
+  def Device_ : Device_ = "Device".asInstanceOf[Device_]
+  @scala.inline
   def Direct: Direct = "Direct".asInstanceOf[Direct]
   @scala.inline
-  def Disabled: Disabled = "Disabled".asInstanceOf[Disabled]
+  def Disabled_ : Disabled_ = "Disabled".asInstanceOf[Disabled_]
   @scala.inline
-  def Disconnected: Disconnected = "Disconnected".asInstanceOf[Disconnected]
+  def Disconnected_ : Disconnected_ = "Disconnected".asInstanceOf[Disconnected_]
+  @scala.inline
+  def ECDSA_SIGN: ECDSA_SIGN = "ECDSA_SIGN".asInstanceOf[ECDSA_SIGN]
+  @scala.inline
+  def EDITABLE: EDITABLE = "EDITABLE".asInstanceOf[EDITABLE]
+  @scala.inline
+  def ENDPOINT: ENDPOINT = "ENDPOINT".asInstanceOf[ENDPOINT]
+  @scala.inline
+  def EPHEMERAL_APP: EPHEMERAL_APP = "EPHEMERAL_APP".asInstanceOf[EPHEMERAL_APP]
+  @scala.inline
+  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   @scala.inline
   def ERR_ABORTED: ERR_ABORTED = "ERR_ABORTED".asInstanceOf[ERR_ABORTED]
   @scala.inline
@@ -3131,6 +3644,10 @@ object chromeAppsStrings {
   @scala.inline
   def EXISTS: EXISTS = "EXISTS".asInstanceOf[EXISTS]
   @scala.inline
+  def EXPLICIT_FEEDBACK: EXPLICIT_FEEDBACK = "EXPLICIT_FEEDBACK".asInstanceOf[EXPLICIT_FEEDBACK]
+  @scala.inline
+  def EXTENSIONS_PAGE: EXTENSIONS_PAGE = "EXTENSIONS_PAGE".asInstanceOf[EXTENSIONS_PAGE]
+  @scala.inline
   def EditRequestCookie: EditRequestCookie = "EditRequestCookie".asInstanceOf[EditRequestCookie]
   @scala.inline
   def EditResponseCookie: EditResponseCookie = "EditResponseCookie".asInstanceOf[EditResponseCookie]
@@ -3143,13 +3660,27 @@ object chromeAppsStrings {
   @scala.inline
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   @scala.inline
+  def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
+  @scala.inline
+  def FEEDBACK: FEEDBACK = "FEEDBACK".asInstanceOf[FEEDBACK]
+  @scala.inline
+  def FILE_HANDLER: FILE_HANDLER = "FILE_HANDLER".asInstanceOf[FILE_HANDLER]
+  @scala.inline
+  def FIXED: FIXED = "FIXED".asInstanceOf[FIXED]
+  @scala.inline
+  def FRAME: FRAME = "FRAME".asInstanceOf[FRAME]
+  @scala.inline
   def FRONT_MIC: FRONT_MIC = "FRONT_MIC".asInstanceOf[FRONT_MIC]
+  @scala.inline
+  def FULLSCREEN: FULLSCREEN = "FULLSCREEN".asInstanceOf[FULLSCREEN]
   @scala.inline
   def GOOG: GOOG = "GOOG".asInstanceOf[GOOG]
   @scala.inline
   def GOOGDot: GOOGDot = "GOOG.".asInstanceOf[GOOGDot]
   @scala.inline
   def GOOGLE: GOOGLE = "GOOGLE".asInstanceOf[GOOGLE]
+  @scala.inline
+  def GRANTED: GRANTED = "GRANTED".asInstanceOf[GRANTED]
   @scala.inline
   def GSM: GSM = "GSM".asInstanceOf[GSM]
   @scala.inline
@@ -3159,11 +3690,25 @@ object chromeAppsStrings {
   @scala.inline
   def HOTWORD: HOTWORD = "HOTWORD".asInstanceOf[HOTWORD]
   @scala.inline
+  def IMAGE: IMAGE = "IMAGE".asInstanceOf[IMAGE]
+  @scala.inline
+  def IN: IN = "IN".asInstanceOf[IN]
+  @scala.inline
+  def INITIALIZING: INITIALIZING = "INITIALIZING".asInstanceOf[INITIALIZING]
+  @scala.inline
   def INPUT: INPUT = "INPUT".asInstanceOf[INPUT]
+  @scala.inline
+  def INSTALL: INSTALL = "INSTALL".asInstanceOf[INSTALL]
+  @scala.inline
+  def INSTALLED_NOTIFICATION: INSTALLED_NOTIFICATION = "INSTALLED_NOTIFICATION".asInstanceOf[INSTALLED_NOTIFICATION]
+  @scala.inline
+  def INTERFACE: INTERFACE = "INTERFACE".asInstanceOf[INTERFACE]
   @scala.inline
   def INTERNAL_MIC: INTERNAL_MIC = "INTERNAL_MIC".asInstanceOf[INTERNAL_MIC]
   @scala.inline
   def INTERNAL_SPEAKER: INTERNAL_SPEAKER = "INTERNAL_SPEAKER".asInstanceOf[INTERNAL_SPEAKER]
+  @scala.inline
+  def INTERRUPT: INTERRUPT = "INTERRUPT".asInstanceOf[INTERRUPT]
   @scala.inline
   def INVALID_OPERATION: INVALID_OPERATION = "INVALID_OPERATION".asInstanceOf[INVALID_OPERATION]
   @scala.inline
@@ -3181,21 +3726,73 @@ object chromeAppsStrings {
   @scala.inline
   def IPv6: IPv6 = "IPv6".asInstanceOf[IPv6]
   @scala.inline
+  def ISOCHRONOUS: ISOCHRONOUS = "ISOCHRONOUS".asInstanceOf[ISOCHRONOUS]
+  @scala.inline
   def IgnoreRules: IgnoreRules = "IgnoreRules".asInstanceOf[IgnoreRules]
+  @scala.inline
+  def KEYBOARD: KEYBOARD = "KEYBOARD".asInstanceOf[KEYBOARD]
   @scala.inline
   def KEYBOARD_MIC: KEYBOARD_MIC = "KEYBOARD_MIC".asInstanceOf[KEYBOARD_MIC]
   @scala.inline
+  def KIOSK: KIOSK = "KIOSK".asInstanceOf[KIOSK]
+  @scala.inline
+  def LAST_WRITE_WIN: LAST_WRITE_WIN = "LAST_WRITE_WIN".asInstanceOf[LAST_WRITE_WIN]
+  @scala.inline
+  def LAUNCHER: LAUNCHER = "LAUNCHER".asInstanceOf[LAUNCHER]
+  @scala.inline
+  def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
+  @scala.inline
   def LINEOUT: LINEOUT = "LINEOUT".asInstanceOf[LINEOUT]
   @scala.inline
+  def LINK: LINK = "LINK".asInstanceOf[LINK]
+  @scala.inline
+  def LINK_CHANGED: LINK_CHANGED = "LINK_CHANGED".asInstanceOf[LINK_CHANGED]
+  @scala.inline
+  def LINK_DOWN: LINK_DOWN = "LINK_DOWN".asInstanceOf[LINK_DOWN]
+  @scala.inline
+  def LINK_UP: LINK_UP = "LINK_UP".asInstanceOf[LINK_UP]
+  @scala.inline
+  def LINUX: LINUX = "LINUX".asInstanceOf[LINUX]
+  @scala.inline
+  def LIST: LIST = "LIST".asInstanceOf[LIST]
+  @scala.inline
+  def LOAD_AND_LAUNCH: LOAD_AND_LAUNCH = "LOAD_AND_LAUNCH".asInstanceOf[LOAD_AND_LAUNCH]
+  @scala.inline
+  def LOCAL_TO_REMOTE: LOCAL_TO_REMOTE = "LOCAL_TO_REMOTE".asInstanceOf[LOCAL_TO_REMOTE]
+  @scala.inline
   def Lessthansignall_urlsGreaterthansign: Lessthansignall_urlsGreaterthansign = "<all_urls>".asInstanceOf[Lessthansignall_urlsGreaterthansign]
+  @scala.inline
+  def MAC: MAC = "MAC".asInstanceOf[MAC]
+  @scala.inline
+  def MANAGEMENT_API: MANAGEMENT_API = "MANAGEMENT_API".asInstanceOf[MANAGEMENT_API]
+  @scala.inline
+  def MANUAL: MANUAL = "MANUAL".asInstanceOf[MANUAL]
+  @scala.inline
+  def MAXIMIZED: MAXIMIZED = "MAXIMIZED".asInstanceOf[MAXIMIZED]
   @scala.inline
   def MAX_ATTEMPTS_EXCEEDED: MAX_ATTEMPTS_EXCEEDED = "MAX_ATTEMPTS_EXCEEDED".asInstanceOf[MAX_ATTEMPTS_EXCEEDED]
   @scala.inline
   def MD5_SHA1: MD5_SHA1 = "MD5_SHA1".asInstanceOf[MD5_SHA1]
   @scala.inline
+  def MEDIA_PIPELINE_ERROR: MEDIA_PIPELINE_ERROR = "MEDIA_PIPELINE_ERROR".asInstanceOf[MEDIA_PIPELINE_ERROR]
+  @scala.inline
   def MIC: MIC = "MIC".asInstanceOf[MIC]
   @scala.inline
-  def Manual: Manual = "Manual".asInstanceOf[Manual]
+  def MINIMIZED: MINIMIZED = "MINIMIZED".asInstanceOf[MINIMIZED]
+  @scala.inline
+  def MIPS: MIPS = "MIPS".asInstanceOf[MIPS]
+  @scala.inline
+  def MIPS64: MIPS64 = "MIPS64".asInstanceOf[MIPS64]
+  @scala.inline
+  def Manual_ : Manual_ = "Manual".asInstanceOf[Manual_]
+  @scala.inline
+  def NEW_NOTE: NEW_NOTE = "NEW_NOTE".asInstanceOf[NEW_NOTE]
+  @scala.inline
+  def NEW_TAB_PAGE: NEW_TAB_PAGE = "NEW_TAB_PAGE".asInstanceOf[NEW_TAB_PAGE]
+  @scala.inline
+  def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
+  @scala.inline
+  def NOTIFICATION: NOTIFICATION = "NOTIFICATION".asInstanceOf[NOTIFICATION]
   @scala.inline
   def NOT_A_DIRECTORY: NOT_A_DIRECTORY = "NOT_A_DIRECTORY".asInstanceOf[NOT_A_DIRECTORY]
   @scala.inline
@@ -3209,6 +3806,10 @@ object chromeAppsStrings {
   @scala.inline
   def NO_SPACE: NO_SPACE = "NO_SPACE".asInstanceOf[NO_SPACE]
   @scala.inline
+  def NO_SUCH_DEVICE: NO_SUCH_DEVICE = "NO_SUCH_DEVICE".asInstanceOf[NO_SUCH_DEVICE]
+  @scala.inline
+  def NO_UPDATE: NO_UPDATE = "NO_UPDATE".asInstanceOf[NO_UPDATE]
+  @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
   def NotActivated: NotActivated = "NotActivated".asInstanceOf[NotActivated]
@@ -3219,6 +3820,8 @@ object chromeAppsStrings {
   @scala.inline
   def OK: OK = "OK".asInstanceOf[OK]
   @scala.inline
+  def OPENBSD: OPENBSD = "OPENBSD".asInstanceOf[OPENBSD]
+  @scala.inline
   def OPEN_AS_PINNED_TAB: OPEN_AS_PINNED_TAB = "OPEN_AS_PINNED_TAB".asInstanceOf[OPEN_AS_PINNED_TAB]
   @scala.inline
   def OPEN_AS_REGULAR_TAB: OPEN_AS_REGULAR_TAB = "OPEN_AS_REGULAR_TAB".asInstanceOf[OPEN_AS_REGULAR_TAB]
@@ -3227,7 +3830,11 @@ object chromeAppsStrings {
   @scala.inline
   def OPEN_FULL_SCREEN: OPEN_FULL_SCREEN = "OPEN_FULL_SCREEN".asInstanceOf[OPEN_FULL_SCREEN]
   @scala.inline
+  def OS_UPDATE: OS_UPDATE = "OS_UPDATE".asInstanceOf[OS_UPDATE]
+  @scala.inline
   def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
+  @scala.inline
+  def OUT: OUT = "OUT".asInstanceOf[OUT]
   @scala.inline
   def OUTPUT: OUTPUT = "OUTPUT".asInstanceOf[OUTPUT]
   @scala.inline
@@ -3237,7 +3844,17 @@ object chromeAppsStrings {
   @scala.inline
   def PAC: PAC = "PAC".asInstanceOf[PAC]
   @scala.inline
+  def PAGE: PAGE = "PAGE".asInstanceOf[PAGE]
+  @scala.inline
+  def PAGE_ACTION: PAGE_ACTION = "PAGE_ACTION".asInstanceOf[PAGE_ACTION]
+  @scala.inline
   def PBC: PBC = "PBC".asInstanceOf[PBC]
+  @scala.inline
+  def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
+  @scala.inline
+  def PERIODIC: PERIODIC = "PERIODIC".asInstanceOf[PERIODIC]
+  @scala.inline
+  def PERMISSIONS_INCREASE: PERMISSIONS_INCREASE = "PERMISSIONS_INCREASE".asInstanceOf[PERMISSIONS_INCREASE]
   @scala.inline
   def PIN: PIN = "PIN".asInstanceOf[PIN]
   @scala.inline
@@ -3246,6 +3863,8 @@ object chromeAppsStrings {
   def POST_DSP_LOOPBACK: POST_DSP_LOOPBACK = "POST_DSP_LOOPBACK".asInstanceOf[POST_DSP_LOOPBACK]
   @scala.inline
   def POST_MIX_LOOPBACK: POST_MIX_LOOPBACK = "POST_MIX_LOOPBACK".asInstanceOf[POST_MIX_LOOPBACK]
+  @scala.inline
+  def PROGRESS: PROGRESS = "PROGRESS".asInstanceOf[PROGRESS]
   @scala.inline
   def PUK: PUK = "PUK".asInstanceOf[PUK]
   @scala.inline
@@ -3259,9 +3878,31 @@ object chromeAppsStrings {
   @scala.inline
   def ProxyAuthRequired: ProxyAuthRequired = "ProxyAuthRequired".asInstanceOf[ProxyAuthRequired]
   @scala.inline
+  def RADIO: RADIO = "RADIO".asInstanceOf[RADIO]
+  @scala.inline
   def READ: READ = "READ".asInstanceOf[READ]
   @scala.inline
   def REAR_MIC: REAR_MIC = "REAR_MIC".asInstanceOf[REAR_MIC]
+  @scala.inline
+  def REJECTED: REJECTED = "REJECTED".asInstanceOf[REJECTED]
+  @scala.inline
+  def RELOAD: RELOAD = "RELOAD".asInstanceOf[RELOAD]
+  @scala.inline
+  def REMOTE_TO_LOCAL: REMOTE_TO_LOCAL = "REMOTE_TO_LOCAL".asInstanceOf[REMOTE_TO_LOCAL]
+  @scala.inline
+  def REMOVABLE: REMOVABLE = "REMOVABLE".asInstanceOf[REMOVABLE]
+  @scala.inline
+  def RESERVED: RESERVED = "RESERVED".asInstanceOf[RESERVED]
+  @scala.inline
+  def RESTART: RESTART = "RESTART".asInstanceOf[RESTART]
+  @scala.inline
+  def RESUME: RESUME = "RESUME".asInstanceOf[RESUME]
+  @scala.inline
+  def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
+  @scala.inline
+  def RSA_SIGN: RSA_SIGN = "RSA_SIGN".asInstanceOf[RSA_SIGN]
+  @scala.inline
+  def RUNNING: RUNNING = "RUNNING".asInstanceOf[RUNNING]
   @scala.inline
   def ReadOnly: ReadOnly = "ReadOnly".asInstanceOf[ReadOnly]
   @scala.inline
@@ -3289,7 +3930,13 @@ object chromeAppsStrings {
   @scala.inline
   def SAVE_FOR_OFFLINE: SAVE_FOR_OFFLINE = "SAVE_FOR_OFFLINE".asInstanceOf[SAVE_FOR_OFFLINE]
   @scala.inline
+  def SCREEN: SCREEN = "SCREEN".asInstanceOf[SCREEN]
+  @scala.inline
   def SECURITY: SECURITY = "SECURITY".asInstanceOf[SECURITY]
+  @scala.inline
+  def SELECTION: SELECTION = "SELECTION".asInstanceOf[SELECTION]
+  @scala.inline
+  def SEPARATOR: SEPARATOR = "SEPARATOR".asInstanceOf[SEPARATOR]
   @scala.inline
   def SHA1: SHA1 = "SHA1".asInstanceOf[SHA1]
   @scala.inline
@@ -3301,7 +3948,31 @@ object chromeAppsStrings {
   @scala.inline
   def SHARE: SHARE = "SHARE".asInstanceOf[SHARE]
   @scala.inline
+  def SHARED_MODULE_UPDATE: SHARED_MODULE_UPDATE = "SHARED_MODULE_UPDATE".asInstanceOf[SHARED_MODULE_UPDATE]
+  @scala.inline
+  def SHOW_ADD_DIALOG: SHOW_ADD_DIALOG = "SHOW_ADD_DIALOG".asInstanceOf[SHOW_ADD_DIALOG]
+  @scala.inline
+  def SHOW_CONFIGURE_DIALOG: SHOW_CONFIGURE_DIALOG = "SHOW_CONFIGURE_DIALOG".asInstanceOf[SHOW_CONFIGURE_DIALOG]
+  @scala.inline
+  def SIDELOAD: SIDELOAD = "SIDELOAD".asInstanceOf[SIDELOAD]
+  @scala.inline
+  def STANDARD: STANDARD = "STANDARD".asInstanceOf[STANDARD]
+  @scala.inline
   def STRETCH: STRETCH = "STRETCH".asInstanceOf[STRETCH]
+  @scala.inline
+  def SUCCEEDED: SUCCEEDED = "SUCCEEDED".asInstanceOf[SUCCEEDED]
+  @scala.inline
+  def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  @scala.inline
+  def SUSPEND: SUSPEND = "SUSPEND".asInstanceOf[SUSPEND]
+  @scala.inline
+  def SYNCED: SYNCED = "SYNCED".asInstanceOf[SYNCED]
+  @scala.inline
+  def SYNCHRONOUS: SYNCHRONOUS = "SYNCHRONOUS".asInstanceOf[SYNCHRONOUS]
+  @scala.inline
+  def SYSTEM: SYSTEM = "SYSTEM".asInstanceOf[SYSTEM]
+  @scala.inline
+  def SYSTEM_TRAY: SYSTEM_TRAY = "SYSTEM_TRAY".asInstanceOf[SYSTEM_TRAY]
   @scala.inline
   def SendMessageToExtension: SendMessageToExtension = "SendMessageToExtension".asInstanceOf[SendMessageToExtension]
   @scala.inline
@@ -3309,23 +3980,63 @@ object chromeAppsStrings {
   @scala.inline
   def Static: Static = "Static".asInstanceOf[Static]
   @scala.inline
+  def TAB: TAB = "TAB".asInstanceOf[TAB]
+  @scala.inline
+  def TEMPORARY_UNAVAILABLE: TEMPORARY_UNAVAILABLE = "TEMPORARY_UNAVAILABLE".asInstanceOf[TEMPORARY_UNAVAILABLE]
+  @scala.inline
+  def TEST: TEST = "TEST".asInstanceOf[TEST]
+  @scala.inline
+  def TEXT_HTML: TEXT_HTML = "TEXT_HTML".asInstanceOf[TEXT_HTML]
+  @scala.inline
+  def TEXT_PLAIN: TEXT_PLAIN = "TEXT_PLAIN".asInstanceOf[TEXT_PLAIN]
+  @scala.inline
+  def THROTTLED: THROTTLED = "THROTTLED".asInstanceOf[THROTTLED]
+  @scala.inline
+  def TIMEOUT_ERROR: TIMEOUT_ERROR = "TIMEOUT_ERROR".asInstanceOf[TIMEOUT_ERROR]
+  @scala.inline
   def TOO_MANY_OPENED: TOO_MANY_OPENED = "TOO_MANY_OPENED".asInstanceOf[TOO_MANY_OPENED]
   @scala.inline
+  def TOP: TOP = "TOP".asInstanceOf[TOP]
+  @scala.inline
+  def UNHANDLED: UNHANDLED = "UNHANDLED".asInstanceOf[UNHANDLED]
+  @scala.inline
+  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
+  @scala.inline
   def UNKNOWN_ERROR: UNKNOWN_ERROR = "UNKNOWN_ERROR".asInstanceOf[UNKNOWN_ERROR]
+  @scala.inline
+  def UNTRACKED: UNTRACKED = "UNTRACKED".asInstanceOf[UNTRACKED]
+  @scala.inline
+  def UPDATE: UPDATE = "UPDATE".asInstanceOf[UPDATE]
+  @scala.inline
+  def UPDATED: UPDATED = "UPDATED".asInstanceOf[UPDATED]
+  @scala.inline
+  def UPDATE_AVAILABLE: UPDATE_AVAILABLE = "UPDATE_AVAILABLE".asInstanceOf[UPDATE_AVAILABLE]
+  @scala.inline
+  def URL_HANDLER: URL_HANDLER = "URL_HANDLER".asInstanceOf[URL_HANDLER]
   @scala.inline
   def USB: USB = "USB".asInstanceOf[USB]
   @scala.inline
   def Uninitialized: Uninitialized = "Uninitialized".asInstanceOf[Uninitialized]
   @scala.inline
-  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  def Unknown_ : Unknown_ = "Unknown".asInstanceOf[Unknown_]
   @scala.inline
   def User: User = "User".asInstanceOf[User]
   @scala.inline
   def UserPolicy: UserPolicy = "UserPolicy".asInstanceOf[UserPolicy]
   @scala.inline
+  def VENDOR: VENDOR = "VENDOR".asInstanceOf[VENDOR]
+  @scala.inline
+  def VIDEO: VIDEO = "VIDEO".asInstanceOf[VIDEO]
+  @scala.inline
   def VPN: VPN = "VPN".asInstanceOf[VPN]
   @scala.inline
   def `WEP-PSK`: `WEP-PSK` = "WEP-PSK".asInstanceOf[`WEP-PSK`]
+  @scala.inline
+  def WIN: WIN = "WIN".asInstanceOf[WIN]
+  @scala.inline
+  def WINDOW: WINDOW = "WINDOW".asInstanceOf[WINDOW]
+  @scala.inline
+  def WI_FI: WI_FI = "WI_FI".asInstanceOf[WI_FI]
   @scala.inline
   def `WPA-EAP`: `WPA-EAP` = "WPA-EAP".asInstanceOf[`WPA-EAP`]
   @scala.inline
@@ -3341,23 +4052,27 @@ object chromeAppsStrings {
   @scala.inline
   def Wireless: Wireless = "Wireless".asInstanceOf[Wireless]
   @scala.inline
+  def X86_32: X86_32 = "X86_32".asInstanceOf[X86_32]
+  @scala.inline
+  def X86_64: X86_64 = "X86_64".asInstanceOf[X86_64]
+  @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def abnormal: abnormal = "abnormal".asInstanceOf[abnormal]
   @scala.inline
   def abort_ : abort_ = "abort".asInstanceOf[abort_]
   @scala.inline
-  def about_page: about_page = "about_page".asInstanceOf[about_page]
+  def about_page_ : about_page_ = "about_page".asInstanceOf[about_page_]
   @scala.inline
   def activate: activate = "activate".asInstanceOf[activate]
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline
-  def adaptive: adaptive = "adaptive".asInstanceOf[adaptive]
+  def adaptive_ : adaptive_ = "adaptive".asInstanceOf[adaptive_]
   @scala.inline
-  def added: added = "added".asInstanceOf[added]
+  def added_ : added_ = "added".asInstanceOf[added_]
   @scala.inline
-  def admin: admin = "admin".asInstanceOf[admin]
+  def admin_ : admin_ = "admin".asInstanceOf[admin_]
   @scala.inline
   def af: af = "af".asInstanceOf[af]
   @scala.inline
@@ -3367,7 +4082,7 @@ object chromeAppsStrings {
   @scala.inline
   def allAutoDetected: allAutoDetected = "allAutoDetected".asInstanceOf[allAutoDetected]
   @scala.inline
-  def all_ : all_ = "all".asInstanceOf[all_]
+  def all__ : all__ = "all".asInstanceOf[all__]
   @scala.inline
   def alwaysOnTopWindows: alwaysOnTopWindows = "alwaysOnTopWindows".asInstanceOf[alwaysOnTopWindows]
   @scala.inline
@@ -3375,7 +4090,7 @@ object chromeAppsStrings {
   @scala.inline
   def an: an = "an".asInstanceOf[an]
   @scala.inline
-  def android: android = "android".asInstanceOf[android]
+  def android_ : android_ = "android".asInstanceOf[android_]
   @scala.inline
   def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
   @scala.inline
@@ -3397,9 +4112,9 @@ object chromeAppsStrings {
   @scala.inline
   def appDotwindowDotshape: appDotwindowDotshape = "app.window.shape".asInstanceOf[appDotwindowDotshape]
   @scala.inline
-  def app_launcher: app_launcher = "app_launcher".asInstanceOf[app_launcher]
+  def app_launcher_ : app_launcher_ = "app_launcher".asInstanceOf[app_launcher_]
   @scala.inline
-  def app_update: app_update = "app_update".asInstanceOf[app_update]
+  def app_update_ : app_update_ = "app_update".asInstanceOf[app_update_]
   @scala.inline
   def appview: appview = "appview".asInstanceOf[appview]
   @scala.inline
@@ -3407,21 +4122,21 @@ object chromeAppsStrings {
   @scala.inline
   def ar_001: ar_001 = "ar_001".asInstanceOf[ar_001]
   @scala.inline
-  def arm: arm = "arm".asInstanceOf[arm]
+  def arm_ : arm_ = "arm".asInstanceOf[arm_]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   @scala.inline
   def ast: ast = "ast".asInstanceOf[ast]
   @scala.inline
-  def asynchronous: asynchronous = "asynchronous".asInstanceOf[asynchronous]
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
+  def asynchronous_ : asynchronous_ = "asynchronous".asInstanceOf[asynchronous_]
   @scala.inline
   def audioCapture: audioCapture = "audioCapture".asInstanceOf[audioCapture]
   @scala.inline
+  def audio_ : audio_ = "audio".asInstanceOf[audio_]
+  @scala.inline
   def authenticatedSignedWrites: authenticatedSignedWrites = "authenticatedSignedWrites".asInstanceOf[authenticatedSignedWrites]
   @scala.inline
-  def authentication_required: authentication_required = "authentication_required".asInstanceOf[authentication_required]
+  def authentication_required_ : authentication_required_ = "authentication_required".asInstanceOf[authentication_required_]
   @scala.inline
   def author: author = "author".asInstanceOf[author]
   @scala.inline
@@ -3433,9 +4148,9 @@ object chromeAppsStrings {
   @scala.inline
   def az: az = "az".asInstanceOf[az]
   @scala.inline
-  def background: background = "background".asInstanceOf[background]
+  def background_ : background_ = "background".asInstanceOf[background_]
   @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
+  def basic_ : basic_ = "basic".asInstanceOf[basic_]
   @scala.inline
   def be: be = "be".asInstanceOf[be]
   @scala.inline
@@ -3449,7 +4164,7 @@ object chromeAppsStrings {
   @scala.inline
   def bn: bn = "bn".asInstanceOf[bn]
   @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  def bottom_ : bottom_ = "bottom".asInstanceOf[bottom_]
   @scala.inline
   def br: br = "br".asInstanceOf[br]
   @scala.inline
@@ -3457,11 +4172,11 @@ object chromeAppsStrings {
   @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
   @scala.inline
-  def browser_action: browser_action = "browser_action".asInstanceOf[browser_action]
+  def browser_action_ : browser_action_ = "browser_action".asInstanceOf[browser_action_]
   @scala.inline
   def bs: bs = "bs".asInstanceOf[bs]
   @scala.inline
-  def bulk: bulk = "bulk".asInstanceOf[bulk]
+  def bulk_ : bulk_ = "bulk".asInstanceOf[bulk_]
   @scala.inline
   def ca: ca = "ca".asInstanceOf[ca]
   @scala.inline
@@ -3471,7 +4186,7 @@ object chromeAppsStrings {
   @scala.inline
   def canplaythrough: canplaythrough = "canplaythrough".asInstanceOf[canplaythrough]
   @scala.inline
-  def capabilities_negotiation_error: capabilities_negotiation_error = "capabilities_negotiation_error".asInstanceOf[capabilities_negotiation_error]
+  def capabilities_negotiation_error_ : capabilities_negotiation_error_ = "capabilities_negotiation_error".asInstanceOf[capabilities_negotiation_error_]
   @scala.inline
   def carAudio: carAudio = "carAudio".asInstanceOf[carAudio]
   @scala.inline
@@ -3483,21 +4198,21 @@ object chromeAppsStrings {
   @scala.inline
   def changed_ : changed_ = "changed".asInstanceOf[changed_]
   @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  def checkbox_ : checkbox_ = "checkbox".asInstanceOf[checkbox_]
   @scala.inline
   def chrome: chrome = "chrome".asInstanceOf[chrome]
   @scala.inline
   def chromeColonSlashSlashfaviconSlash: chromeColonSlashSlashfaviconSlash = "chrome://favicon/".asInstanceOf[chromeColonSlashSlashfaviconSlash]
   @scala.inline
-  def chrome_internal: chrome_internal = "chrome_internal".asInstanceOf[chrome_internal]
+  def chrome_internal_ : chrome_internal_ = "chrome_internal".asInstanceOf[chrome_internal_]
   @scala.inline
   def chrome_os: chrome_os = "chrome_os".asInstanceOf[chrome_os]
   @scala.inline
-  def chrome_update: chrome_update = "chrome_update".asInstanceOf[chrome_update]
+  def chrome_update_ : chrome_update_ = "chrome_update".asInstanceOf[chrome_update_]
   @scala.inline
   def ckb: ckb = "ckb".asInstanceOf[ckb]
   @scala.inline
-  def `class`: `class` = "class".asInstanceOf[`class`]
+  def class_ : class_ = "class".asInstanceOf[class_]
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
@@ -3515,17 +4230,17 @@ object chromeAppsStrings {
   @scala.inline
   def collapse_key: collapse_key = "collapse_key".asInstanceOf[collapse_key]
   @scala.inline
-  def command_line: command_line = "command_line".asInstanceOf[command_line]
+  def command_line_ : command_line_ = "command_line".asInstanceOf[command_line_]
   @scala.inline
   def computer: computer = "computer".asInstanceOf[computer]
   @scala.inline
   def confirm: confirm = "confirm".asInstanceOf[confirm]
   @scala.inline
-  def conflicting: conflicting = "conflicting".asInstanceOf[conflicting]
+  def conflicting_ : conflicting_ = "conflicting".asInstanceOf[conflicting_]
   @scala.inline
-  def connected_ : connected_ = "connected".asInstanceOf[connected_]
+  def connected__ : connected__ = "connected".asInstanceOf[connected__]
   @scala.inline
-  def connection_error: connection_error = "connection_error".asInstanceOf[connection_error]
+  def connection_error_ : connection_error_ = "connection_error".asInstanceOf[connection_error_]
   @scala.inline
   def consolemessage: consolemessage = "consolemessage".asInstanceOf[consolemessage]
   @scala.inline
@@ -3535,11 +4250,11 @@ object chromeAppsStrings {
   @scala.inline
   def contextMenus: contextMenus = "contextMenus".asInstanceOf[contextMenus]
   @scala.inline
-  def context_menu: context_menu = "context_menu".asInstanceOf[context_menu]
+  def context_menu_ : context_menu_ = "context_menu".asInstanceOf[context_menu_]
   @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   @scala.inline
-  def control: control = "control".asInstanceOf[control]
+  def control_ : control_ = "control".asInstanceOf[control_]
   @scala.inline
   def controllable_by_this_extension: controllable_by_this_extension = "controllable_by_this_extension".asInstanceOf[controllable_by_this_extension]
   @scala.inline
@@ -3553,7 +4268,7 @@ object chromeAppsStrings {
   @scala.inline
   def created: created = "created".asInstanceOf[created]
   @scala.inline
-  def cros: cros = "cros".asInstanceOf[cros]
+  def cros_ : cros_ = "cros".asInstanceOf[cros_]
   @scala.inline
   def cs: cs = "cs".asInstanceOf[cs]
   @scala.inline
@@ -3569,7 +4284,7 @@ object chromeAppsStrings {
   @scala.inline
   def da: da = "da".asInstanceOf[da]
   @scala.inline
-  def data: data = "data".asInstanceOf[data]
+  def data_ : data_ = "data".asInstanceOf[data_]
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   @scala.inline
@@ -3645,15 +4360,15 @@ object chromeAppsStrings {
   @scala.inline
   def deleted_ : deleted_ = "deleted".asInstanceOf[deleted_]
   @scala.inline
-  def denied: denied = "denied".asInstanceOf[denied]
+  def denied_ : denied_ = "denied".asInstanceOf[denied_]
   @scala.inline
   def desktopCapture: desktopCapture = "desktopCapture".asInstanceOf[desktopCapture]
   @scala.inline
   def desktop_or_laptop: desktop_or_laptop = "desktop_or_laptop".asInstanceOf[desktop_or_laptop]
   @scala.inline
-  def development: development = "development".asInstanceOf[development]
+  def development_ : development_ = "development".asInstanceOf[development_]
   @scala.inline
-  def device_ : device_ = "device".asInstanceOf[device_]
+  def device__ : device__ = "device".asInstanceOf[device__]
   @scala.inline
   def diagnostics: diagnostics = "diagnostics".asInstanceOf[diagnostics]
   @scala.inline
@@ -3661,13 +4376,13 @@ object chromeAppsStrings {
   @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
   @scala.inline
-  def disabled_ : disabled_ = "disabled".asInstanceOf[disabled_]
+  def disabled__ : disabled__ = "disabled".asInstanceOf[disabled__]
   @scala.inline
-  def disconnected_ : disconnected_ = "disconnected".asInstanceOf[disconnected_]
-  @scala.inline
-  def display: display = "display".asInstanceOf[display]
+  def disconnected__ : disconnected__ = "disconnected".asInstanceOf[disconnected__]
   @scala.inline
   def displaySource: displaySource = "displaySource".asInstanceOf[displaySource]
+  @scala.inline
+  def display_ : display_ = "display".asInstanceOf[display_]
   @scala.inline
   def dns: dns = "dns".asInstanceOf[dns]
   @scala.inline
@@ -3701,7 +4416,7 @@ object chromeAppsStrings {
   @scala.inline
   def ecdsaSign: ecdsaSign = "ecdsaSign".asInstanceOf[ecdsaSign]
   @scala.inline
-  def editable: editable = "editable".asInstanceOf[editable]
+  def editable_ : editable_ = "editable".asInstanceOf[editable_]
   @scala.inline
   def el: el = "el".asInstanceOf[el]
   @scala.inline
@@ -3747,7 +4462,7 @@ object chromeAppsStrings {
   @scala.inline
   def ended: ended = "ended".asInstanceOf[ended]
   @scala.inline
-  def endpoint: endpoint = "endpoint".asInstanceOf[endpoint]
+  def endpoint_ : endpoint_ = "endpoint".asInstanceOf[endpoint_]
   @scala.inline
   def enterpriseDotdeviceAttributes: enterpriseDotdeviceAttributes = "enterprise.deviceAttributes".asInstanceOf[enterpriseDotdeviceAttributes]
   @scala.inline
@@ -3755,9 +4470,9 @@ object chromeAppsStrings {
   @scala.inline
   def eo: eo = "eo".asInstanceOf[eo]
   @scala.inline
-  def ephemeral_app: ephemeral_app = "ephemeral_app".asInstanceOf[ephemeral_app]
+  def ephemeral_app_ : ephemeral_app_ = "ephemeral_app".asInstanceOf[ephemeral_app_]
   @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  def error_ : error_ = "error".asInstanceOf[error_]
   @scala.inline
   def es: es = "es".asInstanceOf[es]
   @scala.inline
@@ -3799,15 +4514,15 @@ object chromeAppsStrings {
   @scala.inline
   def extension: extension = "extension".asInstanceOf[extension]
   @scala.inline
-  def extensions_page: extensions_page = "extensions_page".asInstanceOf[extensions_page]
+  def extensions_page_ : extensions_page_ = "extensions_page".asInstanceOf[extensions_page_]
   @scala.inline
   def fa: fa = "fa".asInstanceOf[fa]
   @scala.inline
   def failed_ : failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
+  def failure_ : failure_ = "failure".asInstanceOf[failure_]
   @scala.inline
-  def feedback: feedback = "feedback".asInstanceOf[feedback]
+  def feedback_ : feedback_ = "feedback".asInstanceOf[feedback_]
   @scala.inline
   def female: female = "female".asInstanceOf[female]
   @scala.inline
@@ -3823,7 +4538,7 @@ object chromeAppsStrings {
   @scala.inline
   def fileSystemProvider: fileSystemProvider = "fileSystemProvider".asInstanceOf[fileSystemProvider]
   @scala.inline
-  def file_handler: file_handler = "file_handler".asInstanceOf[file_handler]
+  def file_handler_ : file_handler_ = "file_handler".asInstanceOf[file_handler_]
   @scala.inline
   def filesystem_ : filesystem_ = "filesystem".asInstanceOf[filesystem_]
   @scala.inline
@@ -3831,7 +4546,7 @@ object chromeAppsStrings {
   @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
   @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  def fixed_ : fixed_ = "fixed".asInstanceOf[fixed_]
   @scala.inline
   def fo: fo = "fo".asInstanceOf[fo]
   @scala.inline
@@ -3851,11 +4566,11 @@ object chromeAppsStrings {
   @scala.inline
   def `fr-FR`: `fr-FR` = "fr-FR".asInstanceOf[`fr-FR`]
   @scala.inline
-  def frame: frame = "frame".asInstanceOf[frame]
+  def frame_ : frame_ = "frame".asInstanceOf[frame_]
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   @scala.inline
-  def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
+  def fullscreen_ : fullscreen_ = "fullscreen".asInstanceOf[fullscreen_]
   @scala.inline
   def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   @scala.inline
@@ -3887,7 +4602,7 @@ object chromeAppsStrings {
   @scala.inline
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   @scala.inline
-  def granted: granted = "granted".asInstanceOf[granted]
+  def granted_ : granted_ = "granted".asInstanceOf[granted_]
   @scala.inline
   def gu: gu = "gu".asInstanceOf[gu]
   @scala.inline
@@ -3935,9 +4650,9 @@ object chromeAppsStrings {
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   @scala.inline
-  def image: image = "image".asInstanceOf[image]
+  def image_ : image_ = "image".asInstanceOf[image_]
   @scala.inline
-  def in: in = "in".asInstanceOf[in]
+  def in_ : in_ = "in".asInstanceOf[in_]
   @scala.inline
   def in_use_ : in_use_ = "in_use".asInstanceOf[in_use_]
   @scala.inline
@@ -3947,19 +4662,19 @@ object chromeAppsStrings {
   @scala.inline
   def indicate: indicate = "indicate".asInstanceOf[indicate]
   @scala.inline
-  def initializing: initializing = "initializing".asInstanceOf[initializing]
+  def initializing_ : initializing_ = "initializing".asInstanceOf[initializing_]
   @scala.inline
   def input_ : input_ = "input".asInstanceOf[input_]
   @scala.inline
-  def install: install = "install".asInstanceOf[install]
+  def install_ : install_ = "install".asInstanceOf[install_]
   @scala.inline
-  def installed_notification: installed_notification = "installed_notification".asInstanceOf[installed_notification]
+  def installed_notification_ : installed_notification_ = "installed_notification".asInstanceOf[installed_notification_]
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
-  def interface: interface = "interface".asInstanceOf[interface]
+  def interface_ : interface_ = "interface".asInstanceOf[interface_]
   @scala.inline
-  def interrupt: interrupt = "interrupt".asInstanceOf[interrupt]
+  def interrupt_ : interrupt_ = "interrupt".asInstanceOf[interrupt_]
   @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
   @scala.inline
@@ -3967,7 +4682,7 @@ object chromeAppsStrings {
   @scala.inline
   def is: is = "is".asInstanceOf[is]
   @scala.inline
-  def isochronous: isochronous = "isochronous".asInstanceOf[isochronous]
+  def isochronous_ : isochronous_ = "isochronous".asInstanceOf[isochronous_]
   @scala.inline
   def it: it = "it".asInstanceOf[it]
   @scala.inline
@@ -3987,9 +4702,9 @@ object chromeAppsStrings {
   @scala.inline
   def keep: keep = "keep".asInstanceOf[keep]
   @scala.inline
-  def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
-  @scala.inline
   def keyboardMouseCombo: keyboardMouseCombo = "keyboardMouseCombo".asInstanceOf[keyboardMouseCombo]
+  @scala.inline
+  def keyboard_ : keyboard_ = "keyboard".asInstanceOf[keyboard_]
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
   @scala.inline
@@ -3999,7 +4714,7 @@ object chromeAppsStrings {
   @scala.inline
   def kill: kill = "kill".asInstanceOf[kill]
   @scala.inline
-  def kiosk: kiosk = "kiosk".asInstanceOf[kiosk]
+  def kiosk_ : kiosk_ = "kiosk".asInstanceOf[kiosk_]
   @scala.inline
   def kk: kk = "kk".asInstanceOf[kk]
   @scala.inline
@@ -4017,17 +4732,15 @@ object chromeAppsStrings {
   @scala.inline
   def la: la = "la".asInstanceOf[la]
   @scala.inline
-  def last_write_win: last_write_win = "last_write_win".asInstanceOf[last_write_win]
+  def last_write_win_ : last_write_win_ = "last_write_win".asInstanceOf[last_write_win_]
   @scala.inline
-  def launcher: launcher = "launcher".asInstanceOf[launcher]
+  def launcher_ : launcher_ = "launcher".asInstanceOf[launcher_]
   @scala.inline
   def lb: lb = "lb".asInstanceOf[lb]
   @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  def left_ : left_ = "left".asInstanceOf[left_]
   @scala.inline
   def legacy_packaged_app: legacy_packaged_app = "legacy_packaged_app".asInstanceOf[legacy_packaged_app]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
   @scala.inline
   def linkChanged: linkChanged = "linkChanged".asInstanceOf[linkChanged]
   @scala.inline
@@ -4035,9 +4748,11 @@ object chromeAppsStrings {
   @scala.inline
   def linkUp: linkUp = "linkUp".asInstanceOf[linkUp]
   @scala.inline
-  def linux: linux = "linux".asInstanceOf[linux]
+  def link_ : link_ = "link".asInstanceOf[link_]
   @scala.inline
-  def list: list = "list".asInstanceOf[list]
+  def linux_ : linux_ = "linux".asInstanceOf[linux_]
+  @scala.inline
+  def list_ : list_ = "list".asInstanceOf[list_]
   @scala.inline
   def ln: ln = "ln".asInstanceOf[ln]
   @scala.inline
@@ -4045,7 +4760,7 @@ object chromeAppsStrings {
   @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
-  def load_and_launch: load_and_launch = "load_and_launch".asInstanceOf[load_and_launch]
+  def load_and_launch_ : load_and_launch_ = "load_and_launch".asInstanceOf[load_and_launch_]
   @scala.inline
   def loadabort: loadabort = "loadabort".asInstanceOf[loadabort]
   @scala.inline
@@ -4065,7 +4780,7 @@ object chromeAppsStrings {
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   @scala.inline
-  def local_to_remote: local_to_remote = "local_to_remote".asInstanceOf[local_to_remote]
+  def local_to_remote_ : local_to_remote_ = "local_to_remote".asInstanceOf[local_to_remote_]
   @scala.inline
   def locked: locked = "locked".asInstanceOf[locked]
   @scala.inline
@@ -4075,7 +4790,7 @@ object chromeAppsStrings {
   @scala.inline
   def lv: lv = "lv".asInstanceOf[lv]
   @scala.inline
-  def mac: mac = "mac".asInstanceOf[mac]
+  def mac_ : mac_ = "mac".asInstanceOf[mac_]
   @scala.inline
   def main_frame: main_frame = "main_frame".asInstanceOf[main_frame]
   @scala.inline
@@ -4083,11 +4798,11 @@ object chromeAppsStrings {
   @scala.inline
   def managed: managed = "managed".asInstanceOf[managed]
   @scala.inline
-  def management_api: management_api = "management_api".asInstanceOf[management_api]
+  def management_api_ : management_api_ = "management_api".asInstanceOf[management_api_]
   @scala.inline
-  def manual_ : manual_ = "manual".asInstanceOf[manual_]
+  def manual__ : manual__ = "manual".asInstanceOf[manual__]
   @scala.inline
-  def maximized: maximized = "maximized".asInstanceOf[maximized]
+  def maximized_ : maximized_ = "maximized".asInstanceOf[maximized_]
   @scala.inline
   def mdns: mdns = "mdns".asInstanceOf[mdns]
   @scala.inline
@@ -4095,7 +4810,7 @@ object chromeAppsStrings {
   @scala.inline
   def mediaGalleries: mediaGalleries = "mediaGalleries".asInstanceOf[mediaGalleries]
   @scala.inline
-  def media_pipeline_error: media_pipeline_error = "media_pipeline_error".asInstanceOf[media_pipeline_error]
+  def media_pipeline_error_ : media_pipeline_error_ = "media_pipeline_error".asInstanceOf[media_pipeline_error_]
   @scala.inline
   def mg: mg = "mg".asInstanceOf[mg]
   @scala.inline
@@ -4105,11 +4820,11 @@ object chromeAppsStrings {
   @scala.inline
   def mimeTypeOnly: mimeTypeOnly = "mimeTypeOnly".asInstanceOf[mimeTypeOnly]
   @scala.inline
-  def minimized: minimized = "minimized".asInstanceOf[minimized]
+  def minimized_ : minimized_ = "minimized".asInstanceOf[minimized_]
   @scala.inline
-  def mips: mips = "mips".asInstanceOf[mips]
+  def mips64_ : mips64_ = "mips64".asInstanceOf[mips64_]
   @scala.inline
-  def mips64: mips64 = "mips64".asInstanceOf[mips64]
+  def mips_ : mips_ = "mips".asInstanceOf[mips_]
   @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
@@ -4165,11 +4880,11 @@ object chromeAppsStrings {
   @scala.inline
   def new_foreground_tab: new_foreground_tab = "new_foreground_tab".asInstanceOf[new_foreground_tab]
   @scala.inline
-  def new_note: new_note = "new_note".asInstanceOf[new_note]
+  def new_note_ : new_note_ = "new_note".asInstanceOf[new_note_]
   @scala.inline
   def new_popup: new_popup = "new_popup".asInstanceOf[new_popup]
   @scala.inline
-  def new_tab_page: new_tab_page = "new_tab_page".asInstanceOf[new_tab_page]
+  def new_tab_page_ : new_tab_page_ = "new_tab_page".asInstanceOf[new_tab_page_]
   @scala.inline
   def new_window: new_window = "new_window".asInstanceOf[new_window]
   @scala.inline
@@ -4181,13 +4896,13 @@ object chromeAppsStrings {
   @scala.inline
   def no: no = "no".asInstanceOf[no]
   @scala.inline
-  def no_such_device: no_such_device = "no_such_device".asInstanceOf[no_such_device]
+  def no_such_device_ : no_such_device_ = "no_such_device".asInstanceOf[no_such_device_]
   @scala.inline
-  def no_update: no_update = "no_update".asInstanceOf[no_update]
+  def no_update_ : no_update_ = "no_update".asInstanceOf[no_update_]
   @scala.inline
   def none_ : none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  def normal_ : normal_ = "normal".asInstanceOf[normal_]
   @scala.inline
   def not_connected: not_connected = "not_connected".asInstanceOf[not_connected]
   @scala.inline
@@ -4195,7 +4910,7 @@ object chromeAppsStrings {
   @scala.inline
   def not_listening: not_listening = "not_listening".asInstanceOf[not_listening]
   @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
+  def notification_ : notification_ = "notification".asInstanceOf[notification_]
   @scala.inline
   def notifications: notifications = "notifications".asInstanceOf[notifications]
   @scala.inline
@@ -4227,15 +4942,15 @@ object chromeAppsStrings {
   @scala.inline
   def openWritableFile: openWritableFile = "openWritableFile".asInstanceOf[openWritableFile]
   @scala.inline
-  def openbsd: openbsd = "openbsd".asInstanceOf[openbsd]
+  def openbsd_ : openbsd_ = "openbsd".asInstanceOf[openbsd_]
   @scala.inline
   def or: or = "or".asInstanceOf[or]
   @scala.inline
-  def os_update: os_update = "os_update".asInstanceOf[os_update]
+  def os_update_ : os_update_ = "os_update".asInstanceOf[os_update_]
   @scala.inline
   def other_ : other_ = "other".asInstanceOf[other_]
   @scala.inline
-  def out: out = "out".asInstanceOf[out]
+  def out_ : out_ = "out".asInstanceOf[out_]
   @scala.inline
   def overrideEscFullscreen: overrideEscFullscreen = "overrideEscFullscreen".asInstanceOf[overrideEscFullscreen]
   @scala.inline
@@ -4243,9 +4958,9 @@ object chromeAppsStrings {
   @scala.inline
   def packaged_app: packaged_app = "packaged_app".asInstanceOf[packaged_app]
   @scala.inline
-  def page: page = "page".asInstanceOf[page]
+  def page_ : page_ = "page".asInstanceOf[page_]
   @scala.inline
-  def page_action: page_action = "page_action".asInstanceOf[page_action]
+  def page_action_ : page_action_ = "page_action".asInstanceOf[page_action_]
   @scala.inline
   def panel: panel = "panel".asInstanceOf[panel]
   @scala.inline
@@ -4255,19 +4970,19 @@ object chromeAppsStrings {
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  def pending_ : pending_ = "pending".asInstanceOf[pending_]
   @scala.inline
   def `per-origin`: `per-origin` = "per-origin".asInstanceOf[`per-origin`]
   @scala.inline
   def `per-view`: `per-view` = "per-view".asInstanceOf[`per-view`]
   @scala.inline
-  def periodic: periodic = "periodic".asInstanceOf[periodic]
+  def periodic_ : periodic_ = "periodic".asInstanceOf[periodic_]
   @scala.inline
   def peripheral: peripheral = "peripheral".asInstanceOf[peripheral]
   @scala.inline
   def permissionrequest: permissionrequest = "permissionrequest".asInstanceOf[permissionrequest]
   @scala.inline
-  def permissions_increase: permissions_increase = "permissions_increase".asInstanceOf[permissions_increase]
+  def permissions_increase_ : permissions_increase_ = "permissions_increase".asInstanceOf[permissions_increase_]
   @scala.inline
   def phone: phone = "phone".asInstanceOf[phone]
   @scala.inline
@@ -4305,7 +5020,7 @@ object chromeAppsStrings {
   @scala.inline
   def printerProvider: printerProvider = "printerProvider".asInstanceOf[printerProvider]
   @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
+  def progress_ : progress_ = "progress".asInstanceOf[progress_]
   @scala.inline
   def prompt: prompt = "prompt".asInstanceOf[prompt]
   @scala.inline
@@ -4321,7 +5036,7 @@ object chromeAppsStrings {
   @scala.inline
   def qu: qu = "qu".asInstanceOf[qu]
   @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
+  def radio_ : radio_ = "radio".asInstanceOf[radio_]
   @scala.inline
   def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
   @scala.inline
@@ -4331,21 +5046,21 @@ object chromeAppsStrings {
   @scala.inline
   def regular_only: regular_only = "regular_only".asInstanceOf[regular_only]
   @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  def rejected_ : rejected_ = "rejected".asInstanceOf[rejected_]
   @scala.inline
   def reliableWrite: reliableWrite = "reliableWrite".asInstanceOf[reliableWrite]
   @scala.inline
-  def reload: reload = "reload".asInstanceOf[reload]
+  def reload_ : reload_ = "reload".asInstanceOf[reload_]
   @scala.inline
-  def remote_to_local: remote_to_local = "remote_to_local".asInstanceOf[remote_to_local]
+  def remote_to_local_ : remote_to_local_ = "remote_to_local".asInstanceOf[remote_to_local_]
   @scala.inline
-  def removable: removable = "removable".asInstanceOf[removable]
+  def removable_ : removable_ = "removable".asInstanceOf[removable_]
   @scala.inline
   def removed: removed = "removed".asInstanceOf[removed]
   @scala.inline
   def requestFileSystem: requestFileSystem = "requestFileSystem".asInstanceOf[requestFileSystem]
   @scala.inline
-  def reserved: reserved = "reserved".asInstanceOf[reserved]
+  def reserved_ : reserved_ = "reserved".asInstanceOf[reserved_]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
@@ -4353,13 +5068,13 @@ object chromeAppsStrings {
   @scala.inline
   def responsive: responsive = "responsive".asInstanceOf[responsive]
   @scala.inline
-  def restart: restart = "restart".asInstanceOf[restart]
+  def restart_ : restart_ = "restart".asInstanceOf[restart_]
   @scala.inline
-  def resume: resume = "resume".asInstanceOf[resume]
+  def resume_ : resume_ = "resume".asInstanceOf[resume_]
   @scala.inline
   def retainEntries: retainEntries = "retainEntries".asInstanceOf[retainEntries]
   @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  def right_ : right_ = "right".asInstanceOf[right_]
   @scala.inline
   def rm: rm = "rm".asInstanceOf[rm]
   @scala.inline
@@ -4369,7 +5084,7 @@ object chromeAppsStrings {
   @scala.inline
   def ru: ru = "ru".asInstanceOf[ru]
   @scala.inline
-  def running: running = "running".asInstanceOf[running]
+  def running_ : running_ = "running".asInstanceOf[running_]
   @scala.inline
   def runtime: runtime = "runtime".asInstanceOf[runtime]
   @scala.inline
@@ -4377,7 +5092,7 @@ object chromeAppsStrings {
   @scala.inline
   def save_to_disk: save_to_disk = "save_to_disk".asInstanceOf[save_to_disk]
   @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
+  def screen_ : screen_ = "screen".asInstanceOf[screen_]
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   @scala.inline
@@ -4393,13 +5108,13 @@ object chromeAppsStrings {
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline
-  def selection: selection = "selection".asInstanceOf[selection]
+  def selection_ : selection_ = "selection".asInstanceOf[selection_]
   @scala.inline
   def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
   @scala.inline
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
-  def separator: separator = "separator".asInstanceOf[separator]
+  def separator_ : separator_ = "separator".asInstanceOf[separator_]
   @scala.inline
   def serial: serial = "serial".asInstanceOf[serial]
   @scala.inline
@@ -4409,7 +5124,7 @@ object chromeAppsStrings {
   @scala.inline
   def sh: sh = "sh".asInstanceOf[sh]
   @scala.inline
-  def shared_module_update: shared_module_update = "shared_module_update".asInstanceOf[shared_module_update]
+  def shared_module_update_ : shared_module_update_ = "shared_module_update".asInstanceOf[shared_module_update_]
   @scala.inline
   def shell: shell = "shell".asInstanceOf[shell]
   @scala.inline
@@ -4419,7 +5134,7 @@ object chromeAppsStrings {
   @scala.inline
   def si: si = "si".asInstanceOf[si]
   @scala.inline
-  def sideload: sideload = "sideload".asInstanceOf[sideload]
+  def sideload_ : sideload_ = "sideload".asInstanceOf[sideload_]
   @scala.inline
   def signedInDevices: signedInDevices = "signedInDevices".asInstanceOf[signedInDevices]
   @scala.inline
@@ -4461,7 +5176,7 @@ object chromeAppsStrings {
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
+  def standard_ : standard_ = "standard".asInstanceOf[standard_]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline
@@ -4477,11 +5192,11 @@ object chromeAppsStrings {
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
-  def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
+  def succeeded_ : succeeded_ = "succeeded".asInstanceOf[succeeded_]
   @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  def success_ : success_ = "success".asInstanceOf[success_]
   @scala.inline
-  def suspend: suspend = "suspend".asInstanceOf[suspend]
+  def suspend_ : suspend_ = "suspend".asInstanceOf[suspend_]
   @scala.inline
   def sv: sv = "sv".asInstanceOf[sv]
   @scala.inline
@@ -4491,11 +5206,9 @@ object chromeAppsStrings {
   @scala.inline
   def syncFileSystem: syncFileSystem = "syncFileSystem".asInstanceOf[syncFileSystem]
   @scala.inline
-  def synced: synced = "synced".asInstanceOf[synced]
+  def synced_ : synced_ = "synced".asInstanceOf[synced_]
   @scala.inline
-  def synchronous: synchronous = "synchronous".asInstanceOf[synchronous]
-  @scala.inline
-  def system: system = "system".asInstanceOf[system]
+  def synchronous_ : synchronous_ = "synchronous".asInstanceOf[synchronous_]
   @scala.inline
   def systemDotcpu: systemDotcpu = "system.cpu".asInstanceOf[systemDotcpu]
   @scala.inline
@@ -4509,21 +5222,23 @@ object chromeAppsStrings {
   @scala.inline
   def systemDotstorage: systemDotstorage = "system.storage".asInstanceOf[systemDotstorage]
   @scala.inline
+  def system_ : system_ = "system".asInstanceOf[system_]
+  @scala.inline
   def system_error: system_error = "system_error".asInstanceOf[system_error]
   @scala.inline
-  def system_tray: system_tray = "system_tray".asInstanceOf[system_tray]
+  def system_tray_ : system_tray_ = "system_tray".asInstanceOf[system_tray_]
   @scala.inline
   def ta: ta = "ta".asInstanceOf[ta]
   @scala.inline
-  def tab: tab = "tab".asInstanceOf[tab]
+  def tab_ : tab_ = "tab".asInstanceOf[tab_]
   @scala.inline
   def tablet: tablet = "tablet".asInstanceOf[tablet]
   @scala.inline
   def te: te = "te".asInstanceOf[te]
   @scala.inline
-  def temporary_unavailable: temporary_unavailable = "temporary_unavailable".asInstanceOf[temporary_unavailable]
+  def temporary_unavailable_ : temporary_unavailable_ = "temporary_unavailable".asInstanceOf[temporary_unavailable_]
   @scala.inline
-  def test: test = "test".asInstanceOf[test]
+  def test_ : test_ = "test".asInstanceOf[test_]
   @scala.inline
   def textHtml: textHtml = "textHtml".asInstanceOf[textHtml]
   @scala.inline
@@ -4535,11 +5250,11 @@ object chromeAppsStrings {
   @scala.inline
   def theme: theme = "theme".asInstanceOf[theme]
   @scala.inline
-  def throttled: throttled = "throttled".asInstanceOf[throttled]
+  def throttled_ : throttled_ = "throttled".asInstanceOf[throttled_]
   @scala.inline
   def ti: ti = "ti".asInstanceOf[ti]
   @scala.inline
-  def timeout_error: timeout_error = "timeout_error".asInstanceOf[timeout_error]
+  def timeout_error_ : timeout_error_ = "timeout_error".asInstanceOf[timeout_error_]
   @scala.inline
   def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
   @scala.inline
@@ -4557,7 +5272,7 @@ object chromeAppsStrings {
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
   @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  def top_ : top_ = "top".asInstanceOf[top_]
   @scala.inline
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   @scala.inline
@@ -4589,9 +5304,9 @@ object chromeAppsStrings {
   @scala.inline
   def und: und = "und".asInstanceOf[und]
   @scala.inline
-  def unhandled: unhandled = "unhandled".asInstanceOf[unhandled]
+  def unhandled_ : unhandled_ = "unhandled".asInstanceOf[unhandled_]
   @scala.inline
-  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
+  def unknown__ : unknown__ = "unknown".asInstanceOf[unknown__]
   @scala.inline
   def unknown_error_ : unknown_error_ = "unknown_error".asInstanceOf[unknown_error_]
   @scala.inline
@@ -4601,17 +5316,17 @@ object chromeAppsStrings {
   @scala.inline
   def unresponsive: unresponsive = "unresponsive".asInstanceOf[unresponsive]
   @scala.inline
-  def untracked: untracked = "untracked".asInstanceOf[untracked]
+  def untracked_ : untracked_ = "untracked".asInstanceOf[untracked_]
   @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  def update_ : update_ = "update".asInstanceOf[update_]
   @scala.inline
-  def update_available: update_available = "update_available".asInstanceOf[update_available]
+  def update_available_ : update_available_ = "update_available".asInstanceOf[update_available_]
   @scala.inline
-  def updated: updated = "updated".asInstanceOf[updated]
+  def updated_ : updated_ = "updated".asInstanceOf[updated_]
   @scala.inline
   def ur: ur = "ur".asInstanceOf[ur]
   @scala.inline
-  def url_handler: url_handler = "url_handler".asInstanceOf[url_handler]
+  def url_handler_ : url_handler_ = "url_handler".asInstanceOf[url_handler_]
   @scala.inline
   def usbDevices: usbDevices = "usbDevices".asInstanceOf[usbDevices]
   @scala.inline
@@ -4621,13 +5336,13 @@ object chromeAppsStrings {
   @scala.inline
   def uz: uz = "uz".asInstanceOf[uz]
   @scala.inline
-  def vendor: vendor = "vendor".asInstanceOf[vendor]
+  def vendor_ : vendor_ = "vendor".asInstanceOf[vendor_]
   @scala.inline
   def vi: vi = "vi".asInstanceOf[vi]
   @scala.inline
-  def video: video = "video".asInstanceOf[video]
-  @scala.inline
   def videoCapture: videoCapture = "videoCapture".asInstanceOf[videoCapture]
+  @scala.inline
+  def video_ : video_ = "video".asInstanceOf[video_]
   @scala.inline
   def virtualKeyboard: virtualKeyboard = "virtualKeyboard".asInstanceOf[virtualKeyboard]
   @scala.inline
@@ -4651,9 +5366,9 @@ object chromeAppsStrings {
   @scala.inline
   def wheel: wheel = "wheel".asInstanceOf[wheel]
   @scala.inline
-  def win: win = "win".asInstanceOf[win]
+  def win_ : win_ = "win".asInstanceOf[win_]
   @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  def window_ : window_ = "window".asInstanceOf[window_]
   @scala.inline
   def writableAuxiliaries: writableAuxiliaries = "writableAuxiliaries".asInstanceOf[writableAuxiliaries]
   @scala.inline

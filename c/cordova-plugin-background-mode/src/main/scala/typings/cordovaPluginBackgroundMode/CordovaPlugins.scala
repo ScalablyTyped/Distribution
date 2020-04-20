@@ -12,7 +12,6 @@ object CordovaPlugins {
   @scala.inline
   def apply(backgroundMode: CordovaPluginBackgroundMode): CordovaPlugins = {
     val __obj = js.Dynamic.literal(backgroundMode = backgroundMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

@@ -14,14 +14,12 @@ trait DialogEvents extends js.Object
 
 object DialogEvents {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def create: typings.a11yDialog.a11yDialogStrings.create = "create".asInstanceOf[typings.a11yDialog.a11yDialogStrings.create]
   @scala.inline
-  def create: typings.a11yDialog.a11yDialogStrings.create = this.cast("create")
+  def destroy: typings.a11yDialog.a11yDialogStrings.destroy = "destroy".asInstanceOf[typings.a11yDialog.a11yDialogStrings.destroy]
   @scala.inline
-  def destroy: typings.a11yDialog.a11yDialogStrings.destroy = this.cast("destroy")
+  def hide: typings.a11yDialog.a11yDialogStrings.hide = "hide".asInstanceOf[typings.a11yDialog.a11yDialogStrings.hide]
   @scala.inline
-  def hide: typings.a11yDialog.a11yDialogStrings.hide = this.cast("hide")
-  @scala.inline
-  def show: typings.a11yDialog.a11yDialogStrings.show = this.cast("show")
+  def show: typings.a11yDialog.a11yDialogStrings.show = "show".asInstanceOf[typings.a11yDialog.a11yDialogStrings.show]
 }
 

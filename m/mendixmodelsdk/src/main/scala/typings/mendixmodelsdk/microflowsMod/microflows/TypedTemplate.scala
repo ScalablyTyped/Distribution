@@ -27,9 +27,9 @@ class TypedTemplate protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FTypedTemplate: IModel = js.native
-  def arguments(): IList[TypedTemplateArgument] = js.native
-  def containerAsStringTemplateParameterValue(): StringTemplateParameterValue = js.native
-  def text(): String = js.native
+  def arguments: IList[TypedTemplateArgument] = js.native
+  def containerAsStringTemplateParameterValue: StringTemplateParameterValue = js.native
+  def text: String = js.native
   def text(newValue: String): js.Any = js.native
 }
 

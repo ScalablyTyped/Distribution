@@ -12,10 +12,8 @@ trait USBDirection extends js.Object
 
 object USBDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def in: typings.w3cWebUsb.w3cWebUsbStrings.in = "in".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.in]
   @scala.inline
-  def in: typings.w3cWebUsb.w3cWebUsbStrings.in = this.cast("in")
-  @scala.inline
-  def out: typings.w3cWebUsb.w3cWebUsbStrings.out = this.cast("out")
+  def out: typings.w3cWebUsb.w3cWebUsbStrings.out = "out".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.out]
 }
 

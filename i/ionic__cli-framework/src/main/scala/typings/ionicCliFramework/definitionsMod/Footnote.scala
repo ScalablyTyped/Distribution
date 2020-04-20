@@ -14,7 +14,6 @@ object Footnote {
   @scala.inline
   def TextFootnote(id: String | Double, text: String): Footnote = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Footnote]
   }
   @scala.inline

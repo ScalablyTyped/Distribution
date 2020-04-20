@@ -7,30 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Argument passed to the [getCurrentHeading](Titanium.Geolocation.getCurrentHeading) callback.
   */
-trait HeadingResponse extends js.Object {
-  /**
-  	 * Error code.
-  	 */
-  var code: js.UndefOr[Double] = js.undefined
-  /**
-  	 * Error message, if any returned.
-  	 */
-  var error: js.UndefOr[String] = js.undefined
+trait HeadingResponse extends ErrorResponse {
   /**
   	 * If `success` is true, the actual heading data.
   	 */
   var heading: js.UndefOr[HeadingData] = js.undefined
-  /**
-  	 * Indicates a successful operation.
-  	 */
-  var success: js.UndefOr[Boolean] = js.undefined
 }
 
 object HeadingResponse {
   @scala.inline
   def apply(
     code: Int | Double = null,
-    error: String = null,
+    error: java.lang.String = null,
     heading: HeadingData = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): HeadingResponse = {

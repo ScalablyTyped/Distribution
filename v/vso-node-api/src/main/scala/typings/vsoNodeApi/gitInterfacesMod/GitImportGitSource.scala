@@ -19,7 +19,6 @@ object GitImportGitSource {
   @scala.inline
   def apply(overwrite: Boolean, url: String): GitImportGitSource = {
     val __obj = js.Dynamic.literal(overwrite = overwrite.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitImportGitSource]
   }
 }

@@ -19,7 +19,6 @@ object ReplicationReplicaSyncOnInfo {
     master_sync_left_bytes: String
   ): ReplicationReplicaSyncOnInfo = {
     val __obj = js.Dynamic.literal(master_sync_in_progress = master_sync_in_progress.asInstanceOf[js.Any], master_sync_last_io_seconds_ago = master_sync_last_io_seconds_ago.asInstanceOf[js.Any], master_sync_left_bytes = master_sync_left_bytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplicationReplicaSyncOnInfo]
   }
 }

@@ -20,7 +20,6 @@ object InsightsServiceAccountResponseStoriesUnit {
     week_over_week_stories_delta: Double
   ): InsightsServiceAccountResponseStoriesUnit = {
     val __obj = js.Dynamic.literal(last_week_stories_count = last_week_stories_count.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], summary_stories = summary_stories.asInstanceOf[js.Any], week_over_week_stories_delta = week_over_week_stories_delta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponseStoriesUnit]
   }
 }

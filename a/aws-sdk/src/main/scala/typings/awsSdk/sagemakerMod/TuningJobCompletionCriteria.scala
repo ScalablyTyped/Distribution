@@ -16,7 +16,6 @@ object TuningJobCompletionCriteria {
   @scala.inline
   def apply(TargetObjectiveMetricValue: TargetObjectiveMetricValue): TuningJobCompletionCriteria = {
     val __obj = js.Dynamic.literal(TargetObjectiveMetricValue = TargetObjectiveMetricValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TuningJobCompletionCriteria]
   }
 }

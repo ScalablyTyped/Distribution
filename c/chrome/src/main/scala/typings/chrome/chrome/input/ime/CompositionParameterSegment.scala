@@ -17,7 +17,6 @@ object CompositionParameterSegment {
   @scala.inline
   def apply(end: Double, start: Double, style: String): CompositionParameterSegment = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompositionParameterSegment]
   }
 }

@@ -16,7 +16,6 @@ object IStorageStreamTransaction {
   @scala.inline
   def apply(close: () => Unit, commitAsync: () => IAsyncAction, stream: IRandomAccessStream): IStorageStreamTransaction = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), commitAsync = js.Any.fromFunction0(commitAsync), stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStorageStreamTransaction]
   }
 }

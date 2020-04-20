@@ -33,7 +33,6 @@ object AnalyticsApplicationReferenceDataSources {
     tableName: String
   ): AnalyticsApplicationReferenceDataSources = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], s3 = s3.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSources]
   }
 }

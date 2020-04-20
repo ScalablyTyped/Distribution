@@ -84,11 +84,11 @@ trait PopupTemplateProperties extends js.Object {
     */
   var relatedRecordsInfo: js.UndefOr[RelatedRecordsInfoProperties] = js.undefined
   /**
-    * The template for defining how to format the title used in a popup. You can format the title by specifying either a string value or a JavaScript function that returns a simple string.  If using a function, the defined content returns a string value. When the feature is clicked, the feature is passed as an argument to the function and provides access to the feature's graphic and attributes. The function then executes and returns a value to display in the popup template's title.
+    * The template for defining how to format the title used in a popup. You can format the title by specifying either a string value or a JavaScript function that returns a simple string or a promise (since 4.15) that resolves to a string.  If using a function, the defined content returns a string value. When the feature is clicked, the feature is passed as an argument to the function and provides access to the feature's graphic and attributes. The function then executes and returns a value to display in the popup template's title.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#title)
     */
-  var title: js.UndefOr[String | js.Function] = js.undefined
+  var title: js.UndefOr[String | js.Function | js.Promise[_]] = js.undefined
 }
 
 object PopupTemplateProperties {
@@ -103,7 +103,7 @@ object PopupTemplateProperties {
     outFields: js.Array[String] = null,
     overwriteActions: js.UndefOr[Boolean] = js.undefined,
     relatedRecordsInfo: RelatedRecordsInfoProperties = null,
-    title: String | js.Function = null
+    title: String | js.Function | js.Promise[_] = null
   ): PopupTemplateProperties = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])

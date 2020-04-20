@@ -15,7 +15,6 @@ object AnonContentloc {
   @scala.inline
   def apply(content_loc: String, description: String, thumbnail_loc: String, title: String): AnonContentloc = {
     val __obj = js.Dynamic.literal(content_loc = content_loc.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], thumbnail_loc = thumbnail_loc.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentloc]
   }
 }

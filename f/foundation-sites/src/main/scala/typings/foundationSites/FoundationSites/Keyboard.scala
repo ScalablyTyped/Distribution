@@ -18,7 +18,6 @@ object Keyboard {
     parseKey: js.Any => String
   ): Keyboard = {
     val __obj = js.Dynamic.literal(findFocusable = js.Any.fromFunction1(findFocusable), handleKey = js.Any.fromFunction3(handleKey), parseKey = js.Any.fromFunction1(parseKey))
-  
     __obj.asInstanceOf[Keyboard]
   }
 }

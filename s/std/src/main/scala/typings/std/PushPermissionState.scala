@@ -13,12 +13,10 @@ trait PushPermissionState extends js.Object
 
 object PushPermissionState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def denied: typings.std.stdStrings.denied = "denied".asInstanceOf[typings.std.stdStrings.denied]
   @scala.inline
-  def denied: typings.std.stdStrings.denied = this.cast("denied")
+  def granted: typings.std.stdStrings.granted = "granted".asInstanceOf[typings.std.stdStrings.granted]
   @scala.inline
-  def granted: typings.std.stdStrings.granted = this.cast("granted")
-  @scala.inline
-  def prompt: typings.std.stdStrings.prompt = this.cast("prompt")
+  def prompt: typings.std.stdStrings.prompt = "prompt".asInstanceOf[typings.std.stdStrings.prompt]
 }
 

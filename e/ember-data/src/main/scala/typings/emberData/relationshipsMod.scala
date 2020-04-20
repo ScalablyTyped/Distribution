@@ -16,13 +16,13 @@ import scala.scalajs.js.annotation._
 object relationshipsMod extends js.Object {
   @js.native
   object belongsTo extends js.Object {
-    def apply[K /* <: String */](modelName: K): ComputedProperty[
+    def apply[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): ComputedProperty[
         (/* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) with (PromiseObject[
           /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
         ]), 
         /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
       ] = js.native
-    def apply[K /* <: String */](
+    def apply[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
       modelName: K,
       options: (RelationshipOptions[
           /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
@@ -37,7 +37,7 @@ object relationshipsMod extends js.Object {
   
   @js.native
   object hasMany extends js.Object {
-    def apply[K /* <: String */](`type`: K): ComputedProperty[
+    def apply[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](`type`: K): ComputedProperty[
         PromiseManyArray[
           /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
         ], 
@@ -45,7 +45,7 @@ object relationshipsMod extends js.Object {
           /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
         ]
       ] = js.native
-    def apply[K /* <: String */](
+    def apply[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
       `type`: K,
       options: (RelationshipOptions[
           /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any

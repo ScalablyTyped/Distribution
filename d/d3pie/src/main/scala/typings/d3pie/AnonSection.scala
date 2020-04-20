@@ -16,7 +16,6 @@ object AnonSection {
   @scala.inline
   def apply(label: String, section: outer | inner, value: Double): AnonSection = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSection]
   }
 }

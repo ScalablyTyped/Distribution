@@ -259,7 +259,7 @@ trait TableHeaderColumnProps extends Props[TableHeaderColumn] {
       /* a */ js.Object, 
       /* b */ js.Object, 
       /* order */ SortOrder, 
-      /* sortField */ String, 
+      /* keyof object */ /* sortField */ String, 
       /* extraData */ js.Any, 
       Double
     ]
@@ -376,7 +376,7 @@ object TableHeaderColumnProps {
     row: Int | Double = null,
     rowSpan: Int | Double = null,
     searchable: js.UndefOr[Boolean] = js.undefined,
-    sortFunc: (/* a */ js.Object, /* b */ js.Object, /* order */ SortOrder, /* sortField */ String, /* extraData */ js.Any) => Double = null,
+    sortFunc: (/* a */ js.Object, /* b */ js.Object, /* order */ SortOrder, /* keyof object */ /* sortField */ String, /* extraData */ js.Any) => Double = null,
     sortFuncExtraData: js.Any = null,
     sortHeaderColumnClassName: String | (js.Function2[/* order */ SortOrder, /* dataField */ String, String]) = null,
     tdAttr: CustomAttrs = null,

@@ -1,6 +1,7 @@
 package typings.angularCore
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.mod.ChangeDetectionStrategy
 import typings.angularCore.mod.ComponentDefFeature
 import typings.angularCore.mod.ComponentTemplate
@@ -161,7 +162,7 @@ trait AnonChangeDetection[T] extends js.Object {
   var inputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string]}
-    */ typings.angularCore.angularCoreStrings.AnonChangeDetection with js.Any
+    */ typings.angularCore.angularCoreStrings.AnonChangeDetection with TopLevel[js.Any]
   ] = js.native
   /**
     * An array of `ngContent[selector]` values that were found in the template.
@@ -180,7 +181,7 @@ trait AnonChangeDetection[T] extends js.Object {
   var outputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
-    */ typings.angularCore.angularCoreStrings.AnonChangeDetection with js.Any
+    */ typings.angularCore.angularCoreStrings.AnonChangeDetection with TopLevel[js.Any]
   ] = js.native
   /**
     * Registry of pipes that may be found in this component's view.

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait reactAriaLiveProps {
   @scala.inline
-  def LiveMessageProps: AnonArialive.type = typings.reactAriaLive.AnonArialive
+  def LiveMessageProps: AnonArialive.type = AnonArialive
   type LiveMessageProps = AnonArialive
   @scala.inline
-  def LiveMessengerProps: AnonChildren.type = typings.reactAriaLive.AnonChildren
+  def LiveMessengerProps: AnonChildren.type = AnonChildren
   type LiveMessengerProps = AnonChildren
 }
 

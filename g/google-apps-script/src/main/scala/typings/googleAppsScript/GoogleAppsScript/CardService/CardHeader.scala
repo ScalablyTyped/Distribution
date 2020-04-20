@@ -31,7 +31,6 @@ object CardHeader {
     setTitle: String => CardHeader
   ): CardHeader = {
     val __obj = js.Dynamic.literal(setImageAltText = js.Any.fromFunction1(setImageAltText), setImageStyle = js.Any.fromFunction1(setImageStyle), setImageUrl = js.Any.fromFunction1(setImageUrl), setSubtitle = js.Any.fromFunction1(setSubtitle), setTitle = js.Any.fromFunction1(setTitle))
-  
     __obj.asInstanceOf[CardHeader]
   }
 }

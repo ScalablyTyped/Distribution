@@ -16,7 +16,6 @@ object DescribeBatchInferenceJobRequest {
   @scala.inline
   def apply(batchInferenceJobArn: Arn): DescribeBatchInferenceJobRequest = {
     val __obj = js.Dynamic.literal(batchInferenceJobArn = batchInferenceJobArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeBatchInferenceJobRequest]
   }
 }

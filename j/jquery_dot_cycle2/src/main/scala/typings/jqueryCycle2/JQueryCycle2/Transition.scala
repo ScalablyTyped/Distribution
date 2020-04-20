@@ -13,7 +13,6 @@ object Transition {
   @scala.inline
   def apply(before: (Options, Element, Element, Boolean) => Unit): Transition = {
     val __obj = js.Dynamic.literal(before = js.Any.fromFunction4(before))
-  
     __obj.asInstanceOf[Transition]
   }
 }

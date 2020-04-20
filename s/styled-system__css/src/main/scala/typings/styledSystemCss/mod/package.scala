@@ -10,7 +10,7 @@ package object mod {
     * Omit exists in TypeScript >= v3.5, we're putting this here so typings can be
     * used with earlier versions of TypeScript.
     */
-  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type ResponsiveStyleValue[T] = T | (js.Array[T | scala.Null])
   type StandardCSSProperties = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String]
   /* Rewritten from type alias, can be one of: 

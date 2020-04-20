@@ -38,7 +38,6 @@ object ReactiveSocket {
     requestStream: Payload[D, M] => Flowable[Payload[D, M]]
   ): ReactiveSocket[D, M] = {
     val __obj = js.Dynamic.literal(availability = js.Any.fromFunction0(availability), close = js.Any.fromFunction0(close), connectionStatus = js.Any.fromFunction0(connectionStatus), fireAndForget = js.Any.fromFunction1(fireAndForget), metadataPush = js.Any.fromFunction1(metadataPush), requestChannel = js.Any.fromFunction1(requestChannel), requestResponse = js.Any.fromFunction1(requestResponse), requestStream = js.Any.fromFunction1(requestStream))
-  
     __obj.asInstanceOf[ReactiveSocket[D, M]]
   }
 }

@@ -13,7 +13,6 @@ object PathAction {
   @scala.inline
   def apply(action: PathActions, args: js.Any): PathAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PathAction]
   }
 }

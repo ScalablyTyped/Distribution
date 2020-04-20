@@ -13,7 +13,6 @@ object AnonRememberUser {
   @scala.inline
   def apply(rememberUser: Boolean, scope: String): AnonRememberUser = {
     val __obj = js.Dynamic.literal(rememberUser = rememberUser.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRememberUser]
   }
 }

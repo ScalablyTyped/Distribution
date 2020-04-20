@@ -16,12 +16,10 @@ trait OlAppointmentCopyOptions extends js.Object
 
 object OlAppointmentCopyOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olCopyAsAccept: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olCopyAsAccept: `2` = this.cast(2)
+  def olCreateAppointment: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olCreateAppointment: `1` = this.cast(1)
-  @scala.inline
-  def olPromptUser: `0` = this.cast(0)
+  def olPromptUser: `0` = 0.asInstanceOf[`0`]
 }
 

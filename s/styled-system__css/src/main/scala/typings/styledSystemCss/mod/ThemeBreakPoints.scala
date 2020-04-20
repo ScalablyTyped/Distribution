@@ -12,7 +12,6 @@ object ThemeBreakPoints {
   @scala.inline
   def apply(breakpoints: js.Array[Double | String]): ThemeBreakPoints = {
     val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThemeBreakPoints]
   }
 }

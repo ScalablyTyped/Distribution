@@ -13,7 +13,6 @@ object AnonSourceIPAddress {
   @scala.inline
   def apply(sourceIPAddress: String): AnonSourceIPAddress = {
     val __obj = js.Dynamic.literal(sourceIPAddress = sourceIPAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSourceIPAddress]
   }
 }

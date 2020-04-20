@@ -31,10 +31,10 @@ object EngineStore extends js.Object {
   /**
     * Gets the latest created engine
     */
-  def LastCreatedEngine(): Nullable[typings.babylonjs.engineMod.Engine] = js.native
+  def LastCreatedEngine: Nullable[typings.babylonjs.engineMod.Engine] = js.native
   /**
     * Gets the latest created scene
     */
-  def LastCreatedScene(): Nullable[typings.babylonjs.sceneMod.Scene] = js.native
+  def LastCreatedScene: Nullable[typings.babylonjs.sceneMod.Scene] = js.native
 }
 

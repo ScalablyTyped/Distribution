@@ -20,7 +20,6 @@ object ReorderReceiptRuleSetRequest {
   @scala.inline
   def apply(RuleNames: ReceiptRuleNamesList, RuleSetName: ReceiptRuleSetName): ReorderReceiptRuleSetRequest = {
     val __obj = js.Dynamic.literal(RuleNames = RuleNames.asInstanceOf[js.Any], RuleSetName = RuleSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReorderReceiptRuleSetRequest]
   }
 }

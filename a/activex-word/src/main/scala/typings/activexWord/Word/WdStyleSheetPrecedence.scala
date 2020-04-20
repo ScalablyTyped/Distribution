@@ -18,14 +18,12 @@ trait WdStyleSheetPrecedence extends js.Object
 
 object WdStyleSheetPrecedence {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdStyleSheetPrecedenceHigher: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdStyleSheetPrecedenceHigher: `-1` = this.cast(-1)
+  def wdStyleSheetPrecedenceHighest: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdStyleSheetPrecedenceHighest: `1` = this.cast(1)
+  def wdStyleSheetPrecedenceLower: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def wdStyleSheetPrecedenceLower: `-2` = this.cast(-2)
-  @scala.inline
-  def wdStyleSheetPrecedenceLowest: `0` = this.cast(0)
+  def wdStyleSheetPrecedenceLowest: `0` = 0.asInstanceOf[`0`]
 }
 

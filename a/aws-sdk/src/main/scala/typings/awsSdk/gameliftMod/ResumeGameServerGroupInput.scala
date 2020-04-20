@@ -20,7 +20,6 @@ object ResumeGameServerGroupInput {
   @scala.inline
   def apply(GameServerGroupName: GameServerGroupNameOrArn, ResumeActions: GameServerGroupActions): ResumeGameServerGroupInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any], ResumeActions = ResumeActions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResumeGameServerGroupInput]
   }
 }

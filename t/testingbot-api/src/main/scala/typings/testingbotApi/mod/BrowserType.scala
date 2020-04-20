@@ -12,10 +12,8 @@ trait BrowserType extends js.Object
 
 object BrowserType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def rc: typings.testingbotApi.testingbotApiStrings.rc = "rc".asInstanceOf[typings.testingbotApi.testingbotApiStrings.rc]
   @scala.inline
-  def rc: typings.testingbotApi.testingbotApiStrings.rc = this.cast("rc")
-  @scala.inline
-  def webdriver: typings.testingbotApi.testingbotApiStrings.webdriver = this.cast("webdriver")
+  def webdriver: typings.testingbotApi.testingbotApiStrings.webdriver = "webdriver".asInstanceOf[typings.testingbotApi.testingbotApiStrings.webdriver]
 }
 

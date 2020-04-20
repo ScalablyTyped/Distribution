@@ -16,7 +16,6 @@ object AnonCodeActionKind {
   @scala.inline
   def apply(codeActionKind: Anon2): AnonCodeActionKind = {
     val __obj = js.Dynamic.literal(codeActionKind = codeActionKind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCodeActionKind]
   }
 }

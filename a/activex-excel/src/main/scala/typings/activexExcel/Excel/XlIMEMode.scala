@@ -32,28 +32,26 @@ trait XlIMEMode extends js.Object
 
 object XlIMEMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlIMEModeAlpha: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlIMEModeAlpha: `8` = this.cast(8)
+  def xlIMEModeAlphaFull: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlIMEModeAlphaFull: `7` = this.cast(7)
+  def xlIMEModeDisable: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlIMEModeDisable: `3` = this.cast(3)
+  def xlIMEModeHangul: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlIMEModeHangul: `10` = this.cast(10)
+  def xlIMEModeHangulFull: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlIMEModeHangulFull: `9` = this.cast(9)
+  def xlIMEModeHiragana: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlIMEModeHiragana: `4` = this.cast(4)
+  def xlIMEModeKatakana: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlIMEModeKatakana: `5` = this.cast(5)
+  def xlIMEModeKatakanaHalf: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlIMEModeKatakanaHalf: `6` = this.cast(6)
+  def xlIMEModeNoControl: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlIMEModeNoControl: `0` = this.cast(0)
+  def xlIMEModeOff: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlIMEModeOff: `2` = this.cast(2)
-  @scala.inline
-  def xlIMEModeOn: `1` = this.cast(1)
+  def xlIMEModeOn: `1` = 1.asInstanceOf[`1`]
 }
 

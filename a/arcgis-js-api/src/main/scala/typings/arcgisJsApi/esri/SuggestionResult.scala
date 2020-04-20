@@ -38,7 +38,6 @@ object SuggestionResult {
     text: String
   ): SuggestionResult = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isCollection = isCollection.asInstanceOf[js.Any], magicKey = magicKey.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuggestionResult]
   }
 }

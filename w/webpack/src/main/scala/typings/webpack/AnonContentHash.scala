@@ -14,7 +14,6 @@ object AnonContentHash {
   @scala.inline
   def apply(contentHash: js.Any, hash: js.Any, name: js.Any): AnonContentHash = {
     val __obj = js.Dynamic.literal(contentHash = contentHash.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentHash]
   }
 }

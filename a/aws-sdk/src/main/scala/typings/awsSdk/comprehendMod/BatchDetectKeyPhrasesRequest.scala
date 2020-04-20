@@ -20,7 +20,6 @@ object BatchDetectKeyPhrasesRequest {
   @scala.inline
   def apply(LanguageCode: LanguageCode, TextList: StringList): BatchDetectKeyPhrasesRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], TextList = TextList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDetectKeyPhrasesRequest]
   }
 }

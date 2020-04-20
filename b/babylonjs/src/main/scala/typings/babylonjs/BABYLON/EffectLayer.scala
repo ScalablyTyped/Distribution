@@ -177,7 +177,7 @@ abstract class EffectLayer protected () extends js.Object {
   /**
     * Gets the camera attached to the layer.
     */
-  def camera(): Nullable[Camera] = js.native
+  def camera: Nullable[Camera] = js.native
   /**
     * Dispose the highlight layer and free resources.
     */
@@ -217,7 +217,7 @@ abstract class EffectLayer protected () extends js.Object {
   /**
     * Gets the rendering group id the layer should render in.
     */
-  def renderingGroupId(): Double = js.native
+  def renderingGroupId: Double = js.native
   def renderingGroupId(renderingGroupId: Double): js.Any = js.native
   /**
     * Returns true if the layer contains information to display, otherwise false.

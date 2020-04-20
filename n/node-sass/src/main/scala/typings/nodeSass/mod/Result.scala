@@ -16,7 +16,6 @@ object Result {
   @scala.inline
   def apply(css: Buffer, map: Buffer, stats: AnonDuration): Result = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

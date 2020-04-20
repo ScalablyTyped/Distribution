@@ -13,12 +13,10 @@ trait DisallowedTagsModes extends js.Object
 
 object DisallowedTagsModes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def discard: typings.sanitizeHtml.sanitizeHtmlStrings.discard = "discard".asInstanceOf[typings.sanitizeHtml.sanitizeHtmlStrings.discard]
   @scala.inline
-  def discard: typings.sanitizeHtml.sanitizeHtmlStrings.discard = this.cast("discard")
+  def escape: typings.sanitizeHtml.sanitizeHtmlStrings.escape = "escape".asInstanceOf[typings.sanitizeHtml.sanitizeHtmlStrings.escape]
   @scala.inline
-  def escape: typings.sanitizeHtml.sanitizeHtmlStrings.escape = this.cast("escape")
-  @scala.inline
-  def recursiveEscape: typings.sanitizeHtml.sanitizeHtmlStrings.recursiveEscape = this.cast("recursiveEscape")
+  def recursiveEscape: typings.sanitizeHtml.sanitizeHtmlStrings.recursiveEscape = "recursiveEscape".asInstanceOf[typings.sanitizeHtml.sanitizeHtmlStrings.recursiveEscape]
 }
 

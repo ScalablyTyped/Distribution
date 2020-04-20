@@ -10,23 +10,11 @@ import scala.scalajs.js.annotation._
   * [requestThumbnailImagesAtTimes](Titanium.Media.VideoPlayer.requestThumbnailImagesAtTimes)
   * method.
   */
-trait ThumbnailResponse extends js.Object {
-  /**
-  	 * Error code. Returns 0 if `success` is `true`.
-  	 */
-  var code: js.UndefOr[Double] = js.undefined
-  /**
-  	 * Error message, if any returned.
-  	 */
-  var error: js.UndefOr[String] = js.undefined
+trait ThumbnailResponse extends ErrorResponse {
   /**
   	 * Thumbnail image, as a `Blob`.
   	 */
   var image: js.UndefOr[Blob] = js.undefined
-  /**
-  	 * Indicates if the operation succeeded.
-  	 */
-  var success: js.UndefOr[Boolean] = js.undefined
   /**
   	 * Time offset for the thumbnail, in seconds.
   	 */
@@ -37,7 +25,7 @@ object ThumbnailResponse {
   @scala.inline
   def apply(
     code: Int | Double = null,
-    error: String = null,
+    error: java.lang.String = null,
     image: Blob = null,
     success: js.UndefOr[Boolean] = js.undefined,
     time: Int | Double = null

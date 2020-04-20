@@ -95,7 +95,6 @@ object Widget {
     remove: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[js.Any], Boolean) => Unit
   ): Widget[TElement] = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction4(format), id = id.asInstanceOf[js.Any], init = js.Any.fromFunction4(init), options = options.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], remove = js.Any.fromFunction4(remove))
-  
     __obj.asInstanceOf[Widget[TElement]]
   }
 }

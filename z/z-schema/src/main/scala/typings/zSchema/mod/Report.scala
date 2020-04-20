@@ -29,7 +29,6 @@ object Report {
   @scala.inline
   def apply(addCustomError: (String, String, js.Array[String], String, String) => Unit): Report = {
     val __obj = js.Dynamic.literal(addCustomError = js.Any.fromFunction5(addCustomError))
-  
     __obj.asInstanceOf[Report]
   }
 }

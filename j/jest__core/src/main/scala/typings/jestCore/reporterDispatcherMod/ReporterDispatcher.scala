@@ -38,7 +38,6 @@ object ReporterDispatcher {
     unregister: js.Function => Unit
   ): ReporterDispatcher = {
     val __obj = js.Dynamic.literal(_reporters = _reporters.asInstanceOf[js.Any], getErrors = js.Any.fromFunction0(getErrors), hasErrors = js.Any.fromFunction0(hasErrors), onRunComplete = js.Any.fromFunction2(onRunComplete), onRunStart = js.Any.fromFunction2(onRunStart), onTestResult = js.Any.fromFunction3(onTestResult), onTestStart = js.Any.fromFunction1(onTestStart), register = js.Any.fromFunction1(register), unregister = js.Any.fromFunction1(unregister))
-  
     __obj.asInstanceOf[ReporterDispatcher]
   }
 }

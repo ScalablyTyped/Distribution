@@ -28,42 +28,40 @@ trait ConsoleMessageType extends js.Object
 
 object ConsoleMessageType {
   @scala.inline
-  def assert: typings.puppeteer.puppeteerStrings.assert = this.cast("assert")
+  def assert: typings.puppeteer.puppeteerStrings.assert = "assert".asInstanceOf[typings.puppeteer.puppeteerStrings.assert]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clear: typings.puppeteer.puppeteerStrings.clear = "clear".asInstanceOf[typings.puppeteer.puppeteerStrings.clear]
   @scala.inline
-  def clear: typings.puppeteer.puppeteerStrings.clear = this.cast("clear")
+  def count: typings.puppeteer.puppeteerStrings.count = "count".asInstanceOf[typings.puppeteer.puppeteerStrings.count]
   @scala.inline
-  def count: typings.puppeteer.puppeteerStrings.count = this.cast("count")
+  def debug: typings.puppeteer.puppeteerStrings.debug = "debug".asInstanceOf[typings.puppeteer.puppeteerStrings.debug]
   @scala.inline
-  def debug: typings.puppeteer.puppeteerStrings.debug = this.cast("debug")
+  def dir: typings.puppeteer.puppeteerStrings.dir = "dir".asInstanceOf[typings.puppeteer.puppeteerStrings.dir]
   @scala.inline
-  def dir: typings.puppeteer.puppeteerStrings.dir = this.cast("dir")
+  def dirxml: typings.puppeteer.puppeteerStrings.dirxml = "dirxml".asInstanceOf[typings.puppeteer.puppeteerStrings.dirxml]
   @scala.inline
-  def dirxml: typings.puppeteer.puppeteerStrings.dirxml = this.cast("dirxml")
+  def endGroup: typings.puppeteer.puppeteerStrings.endGroup = "endGroup".asInstanceOf[typings.puppeteer.puppeteerStrings.endGroup]
   @scala.inline
-  def endGroup: typings.puppeteer.puppeteerStrings.endGroup = this.cast("endGroup")
+  def error: typings.puppeteer.puppeteerStrings.error = "error".asInstanceOf[typings.puppeteer.puppeteerStrings.error]
   @scala.inline
-  def error: typings.puppeteer.puppeteerStrings.error = this.cast("error")
+  def info: typings.puppeteer.puppeteerStrings.info = "info".asInstanceOf[typings.puppeteer.puppeteerStrings.info]
   @scala.inline
-  def info: typings.puppeteer.puppeteerStrings.info = this.cast("info")
+  def log: typings.puppeteer.puppeteerStrings.log = "log".asInstanceOf[typings.puppeteer.puppeteerStrings.log]
   @scala.inline
-  def log: typings.puppeteer.puppeteerStrings.log = this.cast("log")
+  def profile: typings.puppeteer.puppeteerStrings.profile = "profile".asInstanceOf[typings.puppeteer.puppeteerStrings.profile]
   @scala.inline
-  def profile: typings.puppeteer.puppeteerStrings.profile = this.cast("profile")
+  def profileEnd: typings.puppeteer.puppeteerStrings.profileEnd = "profileEnd".asInstanceOf[typings.puppeteer.puppeteerStrings.profileEnd]
   @scala.inline
-  def profileEnd: typings.puppeteer.puppeteerStrings.profileEnd = this.cast("profileEnd")
+  def startGroup: typings.puppeteer.puppeteerStrings.startGroup = "startGroup".asInstanceOf[typings.puppeteer.puppeteerStrings.startGroup]
   @scala.inline
-  def startGroup: typings.puppeteer.puppeteerStrings.startGroup = this.cast("startGroup")
+  def startGroupCollapsed: typings.puppeteer.puppeteerStrings.startGroupCollapsed = "startGroupCollapsed".asInstanceOf[typings.puppeteer.puppeteerStrings.startGroupCollapsed]
   @scala.inline
-  def startGroupCollapsed: typings.puppeteer.puppeteerStrings.startGroupCollapsed = this.cast("startGroupCollapsed")
+  def table: typings.puppeteer.puppeteerStrings.table = "table".asInstanceOf[typings.puppeteer.puppeteerStrings.table]
   @scala.inline
-  def table: typings.puppeteer.puppeteerStrings.table = this.cast("table")
+  def timeEnd: typings.puppeteer.puppeteerStrings.timeEnd = "timeEnd".asInstanceOf[typings.puppeteer.puppeteerStrings.timeEnd]
   @scala.inline
-  def timeEnd: typings.puppeteer.puppeteerStrings.timeEnd = this.cast("timeEnd")
+  def trace: typings.puppeteer.puppeteerStrings.trace = "trace".asInstanceOf[typings.puppeteer.puppeteerStrings.trace]
   @scala.inline
-  def trace: typings.puppeteer.puppeteerStrings.trace = this.cast("trace")
-  @scala.inline
-  def warning: typings.puppeteer.puppeteerStrings.warning = this.cast("warning")
+  def warning: typings.puppeteer.puppeteerStrings.warning = "warning".asInstanceOf[typings.puppeteer.puppeteerStrings.warning]
 }
 

@@ -15,7 +15,6 @@ object CacheMap {
   @scala.inline
   def apply[K, V](clear: () => js.Any, delete: K => js.Any, get: K => V | Unit, set: (K, V) => js.Any): CacheMap[K, V] = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[CacheMap[K, V]]
   }
 }

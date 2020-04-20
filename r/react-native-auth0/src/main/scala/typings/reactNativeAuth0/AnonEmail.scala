@@ -26,7 +26,6 @@ object AnonEmail {
     updatedAt: String
   ): AnonEmail = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmail]
   }
 }

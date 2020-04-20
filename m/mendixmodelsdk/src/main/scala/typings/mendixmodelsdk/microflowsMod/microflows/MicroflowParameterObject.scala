@@ -23,21 +23,21 @@ class MicroflowParameterObject protected () extends MicroflowObject {
   ) = this()
   @JSName("model")
   var model_FMicroflowParameterObject: IModel = js.native
-  def documentation(): String = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
-  def `type`(): String = js.native
+  def `type`: String = js.native
   def `type`(newValue: String): js.Any = js.native
   /**
     * In version 7.9.0: introduced
     */
-  def variableType(): DataType = js.native
+  def variableType: DataType = js.native
   def variableType(newValue: DataType): js.Any = js.native
 }
 

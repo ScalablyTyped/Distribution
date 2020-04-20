@@ -13,7 +13,6 @@ object ITouchCapabilities {
   @scala.inline
   def apply(contacts: Double, touchPresent: Double): ITouchCapabilities = {
     val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], touchPresent = touchPresent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITouchCapabilities]
   }
 }

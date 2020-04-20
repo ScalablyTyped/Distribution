@@ -32,7 +32,6 @@ object TileRange {
     intersects: TileRange => Boolean
   ): TileRange = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), containsTileRange = js.Any.fromFunction1(containsTileRange), containsXY = js.Any.fromFunction2(containsXY), equals = js.Any.fromFunction1(equals), extend = js.Any.fromFunction1(extend), getHeight = js.Any.fromFunction0(getHeight), getSize = js.Any.fromFunction0(getSize), getWidth = js.Any.fromFunction0(getWidth), intersects = js.Any.fromFunction1(intersects))
-  
     __obj.asInstanceOf[TileRange]
   }
 }

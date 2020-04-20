@@ -12,7 +12,6 @@ object BinParam {
   @scala.inline
   def apply(bin: String): BinParam = {
     val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BinParam]
   }
 }

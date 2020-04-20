@@ -13,12 +13,10 @@ trait ModalSize extends js.Object
 
 object ModalSize {
   @scala.inline
-  def alpha: typings.reactElemental.reactElementalStrings.alpha = this.cast("alpha")
+  def alpha: typings.reactElemental.reactElementalStrings.alpha = "alpha".asInstanceOf[typings.reactElemental.reactElementalStrings.alpha]
   @scala.inline
-  def beta: typings.reactElemental.reactElementalStrings.beta = this.cast("beta")
+  def beta: typings.reactElemental.reactElementalStrings.beta = "beta".asInstanceOf[typings.reactElemental.reactElementalStrings.beta]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def gamma: typings.reactElemental.reactElementalStrings.gamma = this.cast("gamma")
+  def gamma: typings.reactElemental.reactElementalStrings.gamma = "gamma".asInstanceOf[typings.reactElemental.reactElementalStrings.gamma]
 }
 

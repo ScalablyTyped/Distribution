@@ -13,7 +13,6 @@ object AnonOldPosition {
   @scala.inline
   def apply(oldPosition: Double, oldWindowId: Double): AnonOldPosition = {
     val __obj = js.Dynamic.literal(oldPosition = oldPosition.asInstanceOf[js.Any], oldWindowId = oldWindowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOldPosition]
   }
 }

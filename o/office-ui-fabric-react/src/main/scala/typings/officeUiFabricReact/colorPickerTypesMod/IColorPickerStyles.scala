@@ -43,6 +43,10 @@ trait IColorPickerStyles extends js.Object {
     */
   var table: js.UndefOr[IStyle] = js.undefined
   /**
+    * Style set for the table cell that contains the alpha or transparency label.
+    */
+  var tableAlphaCell: js.UndefOr[IStyle] = js.undefined
+  /**
     * Style set for the table header that contains the labels.
     */
   var tableHeader: js.UndefOr[IStyle] = js.undefined
@@ -64,6 +68,7 @@ object IColorPickerStyles {
     panel: IStyle = null,
     root: IStyle = null,
     table: IStyle = null,
+    tableAlphaCell: IStyle = null,
     tableHeader: IStyle = null,
     tableHexCell: IStyle = null
   ): IColorPickerStyles = {
@@ -77,6 +82,7 @@ object IColorPickerStyles {
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (tableAlphaCell != null) __obj.updateDynamic("tableAlphaCell")(tableAlphaCell.asInstanceOf[js.Any])
     if (tableHeader != null) __obj.updateDynamic("tableHeader")(tableHeader.asInstanceOf[js.Any])
     if (tableHexCell != null) __obj.updateDynamic("tableHexCell")(tableHexCell.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPickerStyles]

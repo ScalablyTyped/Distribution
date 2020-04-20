@@ -15,7 +15,6 @@ object AnonKey {
   @scala.inline
   def apply(key: String, quoted: Boolean, value: Expression): AnonKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKey]
   }
 }

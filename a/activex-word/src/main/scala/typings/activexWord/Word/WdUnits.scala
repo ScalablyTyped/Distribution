@@ -42,38 +42,36 @@ trait WdUnits extends js.Object
 
 object WdUnits {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCell: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdCell: `12` = this.cast(12)
+  def wdCharacter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdCharacter: `1` = this.cast(1)
+  def wdCharacterFormatting: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdCharacterFormatting: `13` = this.cast(13)
+  def wdColumn: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdColumn: `9` = this.cast(9)
+  def wdItem: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdItem: `16` = this.cast(16)
+  def wdLine: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdLine: `5` = this.cast(5)
+  def wdParagraph: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdParagraph: `4` = this.cast(4)
+  def wdParagraphFormatting: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdParagraphFormatting: `14` = this.cast(14)
+  def wdRow: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdRow: `10` = this.cast(10)
+  def wdScreen: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdScreen: `7` = this.cast(7)
+  def wdSection: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdSection: `8` = this.cast(8)
+  def wdSentence: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdSentence: `3` = this.cast(3)
+  def wdStory: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdStory: `6` = this.cast(6)
+  def wdTable: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdTable: `15` = this.cast(15)
+  def wdWindow: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdWindow: `11` = this.cast(11)
-  @scala.inline
-  def wdWord: `2` = this.cast(2)
+  def wdWord: `2` = 2.asInstanceOf[`2`]
 }
 

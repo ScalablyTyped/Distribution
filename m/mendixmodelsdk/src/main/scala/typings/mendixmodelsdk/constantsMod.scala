@@ -47,25 +47,25 @@ object constantsMod extends js.Object {
       @JSName("model")
       var model_FConstant: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MConstant(): FolderBase = js.native
+      def containerAsFolderBase_MConstant: FolderBase = js.native
       /**
         * The value of this property is conceptually of type dataTypes.LegacyDataType.
         *
         * In version 7.9.0: deleted
         */
-      def dataType(): String = js.native
+      def dataType: String = js.native
       def dataType(newValue: String): js.Any = js.native
-      def defaultValue(): String = js.native
+      def defaultValue: String = js.native
       def defaultValue(newValue: String): js.Any = js.native
       /**
         * In version 8.2.0: introduced
         */
-      def exposedToClient(): Boolean = js.native
+      def exposedToClient: Boolean = js.native
       def exposedToClient(newValue: Boolean): js.Any = js.native
       /**
         * In version 7.9.0: introduced
         */
-      def `type`(): DataType = js.native
+      def `type`: DataType = js.native
       def `type`(newValue: DataType): js.Any = js.native
     }
     

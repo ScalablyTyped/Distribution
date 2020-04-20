@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactRndComponents extends reactRndProps {
   @scala.inline
-  def Rnd: ComponentType[RndProps] = js.constructorOf[typings.reactRnd.mod.Rnd].asInstanceOf[typings.react.mod.ComponentType[RndProps]]
+  def Rnd: ComponentType[RndProps] = js.constructorOf[typings.reactRnd.mod.Rnd].asInstanceOf[ComponentType[RndProps]]
 }
 

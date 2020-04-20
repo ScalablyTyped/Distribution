@@ -14,7 +14,6 @@ object GetTableServerSideEncryption {
   @scala.inline
   def apply(enabled: Boolean, kmsKeyArn: String): GetTableServerSideEncryption = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], kmsKeyArn = kmsKeyArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTableServerSideEncryption]
   }
 }

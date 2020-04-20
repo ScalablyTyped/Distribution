@@ -12,7 +12,6 @@ object AnonOnChange {
   @scala.inline
   def apply(onChange: String => Unit): AnonOnChange = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
-  
     __obj.asInstanceOf[AnonOnChange]
   }
 }

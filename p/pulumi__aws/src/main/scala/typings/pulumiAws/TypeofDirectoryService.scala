@@ -13,7 +13,6 @@ object TypeofDirectoryService {
   @scala.inline
   def apply(Types: TypeofDirectoryService): TypeofDirectoryService = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDirectoryService]
   }
 }

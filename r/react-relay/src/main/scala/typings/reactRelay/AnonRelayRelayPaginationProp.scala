@@ -13,7 +13,6 @@ object AnonRelayRelayPaginationProp {
   @scala.inline
   def apply(relay: RelayPaginationProp): AnonRelayRelayPaginationProp = {
     val __obj = js.Dynamic.literal(relay = relay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRelayRelayPaginationProp]
   }
 }

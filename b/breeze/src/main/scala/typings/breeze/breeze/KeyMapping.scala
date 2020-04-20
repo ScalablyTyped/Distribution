@@ -14,7 +14,6 @@ object KeyMapping {
   @scala.inline
   def apply(entityTypeName: String, realValue: js.Any, tempValue: js.Any): KeyMapping = {
     val __obj = js.Dynamic.literal(entityTypeName = entityTypeName.asInstanceOf[js.Any], realValue = realValue.asInstanceOf[js.Any], tempValue = tempValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyMapping]
   }
 }

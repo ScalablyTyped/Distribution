@@ -12,7 +12,6 @@ object WebGLShader {
   @scala.inline
   def apply(__WebGLShader: Unit): WebGLShader = {
     val __obj = js.Dynamic.literal(__WebGLShader = __WebGLShader.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebGLShader]
   }
 }

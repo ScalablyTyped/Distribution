@@ -12,7 +12,6 @@ object Spec {
   @scala.inline
   def apply(addMatchers: AsyncCustomMatcherFactories => Unit): Spec = {
     val __obj = js.Dynamic.literal(addMatchers = js.Any.fromFunction1(addMatchers))
-  
     __obj.asInstanceOf[Spec]
   }
 }

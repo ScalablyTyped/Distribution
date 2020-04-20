@@ -1,6 +1,7 @@
 package typings.rsvp.mod
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.rsvp.Anon0
 import typings.rsvp.Anon1
 import typings.rsvp.Anon2
@@ -238,7 +239,7 @@ object default extends js.Object {
     typings.rsvp.mod.RSVP.Promise[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in K1 ]: T}
-    */ typings.rsvp.rsvpStrings.denodeify with js.Any
+    */ typings.rsvp.rsvpStrings.denodeify with TopLevel[js.Any]
     ]
   ] = js.native
   def denodeify[T1, T2, A, K1 /* <: String */, K2 /* <: String */](
@@ -250,7 +251,7 @@ object default extends js.Object {
     options: js.Tuple2[K1, K2]
   ): js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify with js.Any]
+    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify with TopLevel[js.Any]]
   ] = js.native
   def denodeify[T1, T2, T3, A, K1 /* <: String */, K2 /* <: String */, K3 /* <: String */](
     nodeFunc: js.Function2[
@@ -261,7 +262,7 @@ object default extends js.Object {
     options: js.Tuple3[K1, K2, K3]
   ): js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify with js.Any]
+    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify with TopLevel[js.Any]]
   ] = js.native
   @JSName("denodeify")
   def denodeify_T1T2A[T1, T2, A](
@@ -426,32 +427,32 @@ object default extends js.Object {
   def hash[T](
     `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-    */ typings.rsvp.rsvpStrings.hash with T
+    */ typings.rsvp.rsvpStrings.hash with TopLevel[T]
   ): typings.rsvp.mod.RSVP.Promise[T] = js.native
   def hash[T](
     `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-    */ typings.rsvp.rsvpStrings.hash with T,
+    */ typings.rsvp.rsvpStrings.hash with TopLevel[T],
     label: String
   ): typings.rsvp.mod.RSVP.Promise[T] = js.native
   def hashSettled[T](
     `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-    */ typings.rsvp.rsvpStrings.hashSettled with T
+    */ typings.rsvp.rsvpStrings.hashSettled with TopLevel[T]
   ): typings.rsvp.mod.RSVP.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-    */ typings.rsvp.rsvpStrings.hashSettled with T
+    */ typings.rsvp.rsvpStrings.hashSettled with TopLevel[T]
   ] = js.native
   def hashSettled[T](
     `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-    */ typings.rsvp.rsvpStrings.hashSettled with T,
+    */ typings.rsvp.rsvpStrings.hashSettled with TopLevel[T],
     label: String
   ): typings.rsvp.mod.RSVP.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-    */ typings.rsvp.rsvpStrings.hashSettled with T
+    */ typings.rsvp.rsvpStrings.hashSettled with TopLevel[T]
   ] = js.native
   def map[T, U](entries: js.Array[Arg[T]], mapFn: js.Function1[/* item */ T, U]): typings.rsvp.mod.RSVP.Promise[js.Array[U] with Anon8] = js.native
   def map[T, U](entries: js.Array[Arg[T]], mapFn: js.Function1[/* item */ T, U], label: String): typings.rsvp.mod.RSVP.Promise[js.Array[U] with Anon8] = js.native

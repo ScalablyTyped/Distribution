@@ -16,7 +16,6 @@ object DeleteDestinationRequest {
   @scala.inline
   def apply(destinationName: DestinationName): DeleteDestinationRequest = {
     val __obj = js.Dynamic.literal(destinationName = destinationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDestinationRequest]
   }
 }

@@ -14,14 +14,12 @@ trait MeydaWindowingFunction extends js.Object
 
 object MeydaWindowingFunction {
   @scala.inline
-  def blackman: typings.meyda.meydaStrings.blackman = this.cast("blackman")
+  def blackman: typings.meyda.meydaStrings.blackman = "blackman".asInstanceOf[typings.meyda.meydaStrings.blackman]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hamming: typings.meyda.meydaStrings.hamming = "hamming".asInstanceOf[typings.meyda.meydaStrings.hamming]
   @scala.inline
-  def hamming: typings.meyda.meydaStrings.hamming = this.cast("hamming")
+  def hanning: typings.meyda.meydaStrings.hanning = "hanning".asInstanceOf[typings.meyda.meydaStrings.hanning]
   @scala.inline
-  def hanning: typings.meyda.meydaStrings.hanning = this.cast("hanning")
-  @scala.inline
-  def sine: typings.meyda.meydaStrings.sine = this.cast("sine")
+  def sine: typings.meyda.meydaStrings.sine = "sine".asInstanceOf[typings.meyda.meydaStrings.sine]
 }
 

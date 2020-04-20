@@ -24,7 +24,6 @@ object Clustering {
   @scala.inline
   def apply(options: Zoom => ClusteringOptions, rowToDataPoint: Row => DataPoint): Clustering = {
     val __obj = js.Dynamic.literal(options = js.Any.fromFunction1(options), rowToDataPoint = js.Any.fromFunction1(rowToDataPoint))
-  
     __obj.asInstanceOf[Clustering]
   }
 }

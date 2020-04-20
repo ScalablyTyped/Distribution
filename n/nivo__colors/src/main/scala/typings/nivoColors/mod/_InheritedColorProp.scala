@@ -10,7 +10,6 @@ object _InheritedColorProp {
   @scala.inline
   def AnonTheme[D](theme: String): _InheritedColorProp[D] = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_InheritedColorProp[D]]
   }
   @scala.inline

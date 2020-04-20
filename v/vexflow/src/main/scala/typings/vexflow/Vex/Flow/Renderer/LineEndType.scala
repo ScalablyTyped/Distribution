@@ -14,12 +14,10 @@ trait LineEndType extends js.Object
 
 object LineEndType {
   @scala.inline
-  def DOWN: `1` = this.cast(1)
+  def DOWN: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def NONE: `1` = this.cast(1)
+  def NONE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def UP: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UP: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -26,7 +26,6 @@ object Tx {
     time: Double
   ): Tx = {
     val __obj = js.Dynamic.literal(auth_list = auth_list.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], gas_limit = gas_limit.asInstanceOf[js.Any], gas_ratio = gas_ratio.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Tx]
   }
 }

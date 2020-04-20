@@ -16,7 +16,6 @@ object AnonCheckedOriginalEvent {
   @scala.inline
   def apply(checked: Boolean, originalEvent: Event_, target: AnonChecked, value: js.Any): AnonCheckedOriginalEvent = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCheckedOriginalEvent]
   }
 }

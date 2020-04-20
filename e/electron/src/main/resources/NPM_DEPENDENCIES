@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron" : "8.2.1"
+      "electron" : "8.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "electron" : "8.2.1"
+      "electron" : "8.2.3"
     }
   ],
   "compile-devDependencies" : [

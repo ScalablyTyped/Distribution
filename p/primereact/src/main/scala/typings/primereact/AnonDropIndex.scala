@@ -14,7 +14,6 @@ object AnonDropIndex {
   @scala.inline
   def apply(columns: js.Any, dragIndex: Double, dropIndex: Double): AnonDropIndex = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], dragIndex = dragIndex.asInstanceOf[js.Any], dropIndex = dropIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDropIndex]
   }
 }

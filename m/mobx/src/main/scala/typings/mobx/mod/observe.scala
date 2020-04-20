@@ -53,7 +53,7 @@ object observe extends js.Object {
     listener: js.Function1[/* change */ IValueDidChange[T], Unit],
     fireImmediately: Boolean
   ): Lambda = js.native
-  def apply[T, K /* <: String */](
+  def apply[T, K /* <: /* keyof T */ String */](
     `object`: T,
     property: K,
     listener: js.Function1[
@@ -63,7 +63,7 @@ object observe extends js.Object {
       Unit
     ]
   ): Lambda = js.native
-  def apply[T, K /* <: String */](
+  def apply[T, K /* <: /* keyof T */ String */](
     `object`: T,
     property: K,
     listener: js.Function1[

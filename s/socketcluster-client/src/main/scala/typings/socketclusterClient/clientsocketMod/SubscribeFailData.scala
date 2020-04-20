@@ -15,7 +15,6 @@ object SubscribeFailData {
   @scala.inline
   def apply(channel: String, error: Error, subscriptionOptions: SubscribeOptions): SubscribeFailData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], subscriptionOptions = subscriptionOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscribeFailData]
   }
 }

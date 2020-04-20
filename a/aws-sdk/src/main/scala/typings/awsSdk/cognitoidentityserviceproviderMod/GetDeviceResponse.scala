@@ -16,7 +16,6 @@ object GetDeviceResponse {
   @scala.inline
   def apply(Device: DeviceType): GetDeviceResponse = {
     val __obj = js.Dynamic.literal(Device = Device.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDeviceResponse]
   }
 }

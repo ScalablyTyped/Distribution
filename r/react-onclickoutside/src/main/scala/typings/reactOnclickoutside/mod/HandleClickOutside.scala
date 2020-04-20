@@ -15,7 +15,6 @@ object HandleClickOutside {
   @scala.inline
   def apply[T](handleClickOutside: MouseEvent[T, NativeMouseEvent] => Unit): HandleClickOutside[T] = {
     val __obj = js.Dynamic.literal(handleClickOutside = js.Any.fromFunction1(handleClickOutside))
-  
     __obj.asInstanceOf[HandleClickOutside[T]]
   }
 }

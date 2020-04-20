@@ -14,14 +14,12 @@ trait SubscriptionState extends js.Object
 
 object SubscriptionState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def established: typings.twilioSync.twilioSyncStrings.established = "established".asInstanceOf[typings.twilioSync.twilioSyncStrings.established]
   @scala.inline
-  def established: typings.twilioSync.twilioSyncStrings.established = this.cast("established")
+  def none: typings.twilioSync.twilioSyncStrings.none = "none".asInstanceOf[typings.twilioSync.twilioSyncStrings.none]
   @scala.inline
-  def none: typings.twilioSync.twilioSyncStrings.none = this.cast("none")
+  def request_in_flight: typings.twilioSync.twilioSyncStrings.request_in_flight = "request_in_flight".asInstanceOf[typings.twilioSync.twilioSyncStrings.request_in_flight]
   @scala.inline
-  def request_in_flight: typings.twilioSync.twilioSyncStrings.request_in_flight = this.cast("request_in_flight")
-  @scala.inline
-  def response_in_flight: typings.twilioSync.twilioSyncStrings.response_in_flight = this.cast("response_in_flight")
+  def response_in_flight: typings.twilioSync.twilioSyncStrings.response_in_flight = "response_in_flight".asInstanceOf[typings.twilioSync.twilioSyncStrings.response_in_flight]
 }
 

@@ -24,7 +24,6 @@ object Condition {
   @scala.inline
   def apply(Key: String, Type: String, Value: String): Condition = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Condition]
   }
 }

@@ -24,7 +24,6 @@ object Predicate {
   @scala.inline
   def apply(DataId: ResourceId, Negated: Negated, Type: PredicateType): Predicate = {
     val __obj = js.Dynamic.literal(DataId = DataId.asInstanceOf[js.Any], Negated = Negated.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Predicate]
   }
 }

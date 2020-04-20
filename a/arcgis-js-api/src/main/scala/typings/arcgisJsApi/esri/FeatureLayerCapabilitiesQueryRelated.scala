@@ -38,7 +38,6 @@ object FeatureLayerCapabilitiesQueryRelated {
     supportsPagination: Boolean
   ): FeatureLayerCapabilitiesQueryRelated = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCount = supportsCount.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatureLayerCapabilitiesQueryRelated]
   }
 }

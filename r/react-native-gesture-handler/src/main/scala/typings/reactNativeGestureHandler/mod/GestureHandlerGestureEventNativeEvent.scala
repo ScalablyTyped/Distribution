@@ -14,7 +14,6 @@ object GestureHandlerGestureEventNativeEvent {
   @scala.inline
   def apply(handlerTag: Double, numberOfPointers: Double, state: State): GestureHandlerGestureEventNativeEvent = {
     val __obj = js.Dynamic.literal(handlerTag = handlerTag.asInstanceOf[js.Any], numberOfPointers = numberOfPointers.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GestureHandlerGestureEventNativeEvent]
   }
 }

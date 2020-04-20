@@ -23,20 +23,18 @@ trait SelfPosition
 
 object SelfPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.csstype.csstypeStrings.center = "center".asInstanceOf[typings.csstype.csstypeStrings.center]
   @scala.inline
-  def center: typings.csstype.csstypeStrings.center = this.cast("center")
+  def end: typings.csstype.csstypeStrings.end = "end".asInstanceOf[typings.csstype.csstypeStrings.end]
   @scala.inline
-  def end: typings.csstype.csstypeStrings.end = this.cast("end")
+  def `flex-end`: typings.csstype.csstypeStrings.`flex-end` = "flex-end".asInstanceOf[typings.csstype.csstypeStrings.`flex-end`]
   @scala.inline
-  def `flex-end`: typings.csstype.csstypeStrings.`flex-end` = this.cast("flex-end")
+  def `flex-start`: typings.csstype.csstypeStrings.`flex-start` = "flex-start".asInstanceOf[typings.csstype.csstypeStrings.`flex-start`]
   @scala.inline
-  def `flex-start`: typings.csstype.csstypeStrings.`flex-start` = this.cast("flex-start")
+  def `self-end`: typings.csstype.csstypeStrings.`self-end` = "self-end".asInstanceOf[typings.csstype.csstypeStrings.`self-end`]
   @scala.inline
-  def `self-end`: typings.csstype.csstypeStrings.`self-end` = this.cast("self-end")
+  def `self-start`: typings.csstype.csstypeStrings.`self-start` = "self-start".asInstanceOf[typings.csstype.csstypeStrings.`self-start`]
   @scala.inline
-  def `self-start`: typings.csstype.csstypeStrings.`self-start` = this.cast("self-start")
-  @scala.inline
-  def start: typings.csstype.csstypeStrings.start = this.cast("start")
+  def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
 }
 

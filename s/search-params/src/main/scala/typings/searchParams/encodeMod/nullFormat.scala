@@ -13,12 +13,10 @@ trait nullFormat extends js.Object
 
 object nullFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.searchParams.searchParamsStrings.default = "default".asInstanceOf[typings.searchParams.searchParamsStrings.default]
   @scala.inline
-  def default: typings.searchParams.searchParamsStrings.default = this.cast("default")
+  def hidden: typings.searchParams.searchParamsStrings.hidden = "hidden".asInstanceOf[typings.searchParams.searchParamsStrings.hidden]
   @scala.inline
-  def hidden: typings.searchParams.searchParamsStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def string: typings.searchParams.searchParamsStrings.string = this.cast("string")
+  def string: typings.searchParams.searchParamsStrings.string = "string".asInstanceOf[typings.searchParams.searchParamsStrings.string]
 }
 

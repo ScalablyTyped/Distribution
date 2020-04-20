@@ -12,10 +12,8 @@ trait UnifiedNumberFormatOptionsCurrencySign extends js.Object
 
 object UnifiedNumberFormatOptionsCurrencySign {
   @scala.inline
-  def accounting: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.accounting = this.cast("accounting")
+  def accounting: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.accounting = "accounting".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.accounting]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def standard: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.standard = this.cast("standard")
+  def standard: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.standard = "standard".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.standard]
 }
 

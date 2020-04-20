@@ -16,7 +16,6 @@ object OrganizationConfiguration {
   @scala.inline
   def apply(EnableIntegration: Boolean): OrganizationConfiguration = {
     val __obj = js.Dynamic.literal(EnableIntegration = EnableIntegration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OrganizationConfiguration]
   }
 }

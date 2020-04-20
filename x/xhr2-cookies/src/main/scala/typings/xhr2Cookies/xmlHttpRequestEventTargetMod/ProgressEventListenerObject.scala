@@ -13,7 +13,6 @@ object ProgressEventListenerObject {
   @scala.inline
   def apply(handleEvent: ProgressEvent => Unit): ProgressEventListenerObject = {
     val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
-  
     __obj.asInstanceOf[ProgressEventListenerObject]
   }
 }

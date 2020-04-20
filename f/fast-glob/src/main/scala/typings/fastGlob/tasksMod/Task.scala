@@ -23,7 +23,6 @@ object Task {
     positive: js.Array[Pattern]
   ): Task = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], dynamic = dynamic.asInstanceOf[js.Any], negative = negative.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], positive = positive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Task]
   }
 }

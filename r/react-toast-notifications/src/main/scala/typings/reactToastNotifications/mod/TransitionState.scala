@@ -14,14 +14,12 @@ trait TransitionState extends js.Object
 
 object TransitionState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def entered: typings.reactToastNotifications.reactToastNotificationsStrings.entered = "entered".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.entered]
   @scala.inline
-  def entered: typings.reactToastNotifications.reactToastNotificationsStrings.entered = this.cast("entered")
+  def entering: typings.reactToastNotifications.reactToastNotificationsStrings.entering = "entering".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.entering]
   @scala.inline
-  def entering: typings.reactToastNotifications.reactToastNotificationsStrings.entering = this.cast("entering")
+  def exited: typings.reactToastNotifications.reactToastNotificationsStrings.exited = "exited".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.exited]
   @scala.inline
-  def exited: typings.reactToastNotifications.reactToastNotificationsStrings.exited = this.cast("exited")
-  @scala.inline
-  def exiting: typings.reactToastNotifications.reactToastNotificationsStrings.exiting = this.cast("exiting")
+  def exiting: typings.reactToastNotifications.reactToastNotificationsStrings.exiting = "exiting".asInstanceOf[typings.reactToastNotifications.reactToastNotificationsStrings.exiting]
 }
 

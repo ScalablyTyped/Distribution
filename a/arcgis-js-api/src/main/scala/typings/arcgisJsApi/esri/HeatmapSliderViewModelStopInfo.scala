@@ -31,7 +31,6 @@ object HeatmapSliderViewModelStopInfo {
     propertyIsEnumerable: PropertyKey => Boolean
   ): HeatmapSliderViewModelStopInfo = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), offset = offset.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[HeatmapSliderViewModelStopInfo]
   }
 }

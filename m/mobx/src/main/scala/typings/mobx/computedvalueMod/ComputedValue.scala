@@ -68,7 +68,7 @@ class ComputedValue[T] protected ()
   var runId: Double = js.native
   var scope: js.UndefOr[js.Object] = js.native
   var setter: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
-  @JSName(scala.scalajs.js.Symbol.toPrimitive)
+  @JSName(js.Symbol.toPrimitive)
   var toPrimitive: js.Function0[T] = js.native
   var trackAndCompute: js.Any = js.native
   var triggeredBy: js.UndefOr[String] = js.native

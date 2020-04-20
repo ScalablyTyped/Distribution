@@ -12,7 +12,6 @@ object GetOption {
   @scala.inline
   def apply(signed: Boolean): GetOption = {
     val __obj = js.Dynamic.literal(signed = signed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOption]
   }
 }

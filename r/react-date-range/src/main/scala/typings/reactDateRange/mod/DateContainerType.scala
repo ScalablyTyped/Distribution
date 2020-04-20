@@ -13,7 +13,6 @@ object DateContainerType {
   @scala.inline
   def apply(date: Moment): DateContainerType = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DateContainerType]
   }
 }

@@ -14,7 +14,6 @@ object AnonProgress {
     progress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any
   ): AnonProgress = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProgress]
   }
 }

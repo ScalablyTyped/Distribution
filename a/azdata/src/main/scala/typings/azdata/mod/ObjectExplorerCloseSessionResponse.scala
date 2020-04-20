@@ -13,7 +13,6 @@ object ObjectExplorerCloseSessionResponse {
   @scala.inline
   def apply(sessionId: String, success: Boolean): ObjectExplorerCloseSessionResponse = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectExplorerCloseSessionResponse]
   }
 }

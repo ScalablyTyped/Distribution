@@ -13,7 +13,6 @@ object ZoomOptionsLevel {
   @scala.inline
   def apply(level: Double): ZoomOptionsLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ZoomOptionsLevel]
   }
 }

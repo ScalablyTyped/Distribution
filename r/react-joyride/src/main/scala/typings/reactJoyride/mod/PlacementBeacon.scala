@@ -14,14 +14,12 @@ trait PlacementBeacon extends js.Object
 
 object PlacementBeacon {
   @scala.inline
-  def bottom: typings.reactJoyride.reactJoyrideStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactJoyride.reactJoyrideStrings.bottom = "bottom".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.reactJoyride.reactJoyrideStrings.left = "left".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.left]
   @scala.inline
-  def left: typings.reactJoyride.reactJoyrideStrings.left = this.cast("left")
+  def right: typings.reactJoyride.reactJoyrideStrings.right = "right".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.right]
   @scala.inline
-  def right: typings.reactJoyride.reactJoyrideStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.reactJoyride.reactJoyrideStrings.top = this.cast("top")
+  def top: typings.reactJoyride.reactJoyrideStrings.top = "top".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.top]
 }
 

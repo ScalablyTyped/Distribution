@@ -17,12 +17,10 @@ trait DraftInsertionType extends js.Object
 
 object DraftInsertionType {
   @scala.inline
-  def after: typings.draftJs.draftJsStrings.after = this.cast("after")
+  def after: typings.draftJs.draftJsStrings.after = "after".asInstanceOf[typings.draftJs.draftJsStrings.after]
   @scala.inline
-  def before: typings.draftJs.draftJsStrings.before = this.cast("before")
+  def before: typings.draftJs.draftJsStrings.before = "before".asInstanceOf[typings.draftJs.draftJsStrings.before]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def replace: typings.draftJs.draftJsStrings.replace = this.cast("replace")
+  def replace: typings.draftJs.draftJsStrings.replace = "replace".asInstanceOf[typings.draftJs.draftJsStrings.replace]
 }
 

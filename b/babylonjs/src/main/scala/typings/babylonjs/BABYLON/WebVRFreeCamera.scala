@@ -109,7 +109,7 @@ class WebVRFreeCamera protected () extends FreeCamera {
   /**
     * The controller corresponding to the users left hand.
     */
-  def leftController(): Nullable[WebVRController] = js.native
+  def leftController: Nullable[WebVRController] = js.native
   /**
     * Calls resetPose on the vrDisplay
     * See: https://developer.mozilla.org/en-US/docs/Web/API/VRDisplay/resetPose
@@ -118,7 +118,7 @@ class WebVRFreeCamera protected () extends FreeCamera {
   /**
     * The controller corresponding to the users right hand.
     */
-  def rightController(): Nullable[WebVRController] = js.native
+  def rightController: Nullable[WebVRController] = js.native
   /**
     * Updates the poseControlled values based on the input device pose.
     * @param poseData Pose coming from the device

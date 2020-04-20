@@ -16,7 +16,6 @@ object GetChangeRequest {
   @scala.inline
   def apply(Id: ResourceId): GetChangeRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetChangeRequest]
   }
 }

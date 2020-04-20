@@ -25,7 +25,6 @@ object SmokeTestCase {
   @scala.inline
   def apply(errorExpectedFromService: Boolean, input: js.Object, operationName: String): SmokeTestCase = {
     val __obj = js.Dynamic.literal(errorExpectedFromService = errorExpectedFromService.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], operationName = operationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmokeTestCase]
   }
 }

@@ -14,7 +14,6 @@ object AnonLeftDataSource {
   @scala.inline
   def apply(leftDataSource: js.Array[TransferItem], rightDataSource: js.Array[TransferItem]): AnonLeftDataSource = {
     val __obj = js.Dynamic.literal(leftDataSource = leftDataSource.asInstanceOf[js.Any], rightDataSource = rightDataSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLeftDataSource]
   }
 }

@@ -28,7 +28,6 @@ object Option {
     toArray: () => js.Array[V]
   ): Option[V] = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction0(get), getOrElse = js.Any.fromFunction1(getOrElse), inspect = js.Any.fromFunction0(inspect), isDefined = isDefined.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), toArray = js.Any.fromFunction0(toArray))
-  
     __obj.asInstanceOf[Option[V]]
   }
 }

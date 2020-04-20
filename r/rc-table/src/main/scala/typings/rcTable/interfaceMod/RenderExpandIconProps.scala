@@ -25,7 +25,6 @@ object RenderExpandIconProps {
     record: RecordType
   ): RenderExpandIconProps[RecordType] = {
     val __obj = js.Dynamic.literal(expandable = expandable.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], onExpand = js.Any.fromFunction2(onExpand), prefixCls = prefixCls.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderExpandIconProps[RecordType]]
   }
 }

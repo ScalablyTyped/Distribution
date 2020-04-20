@@ -20,7 +20,6 @@ object SubmitJobResponse {
   @scala.inline
   def apply(jobId: String, jobName: String): SubmitJobResponse = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubmitJobResponse]
   }
 }

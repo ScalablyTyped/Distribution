@@ -12,7 +12,6 @@ object AnonMeta {
   @scala.inline
   def apply(meta: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): AnonMeta = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMeta]
   }
 }

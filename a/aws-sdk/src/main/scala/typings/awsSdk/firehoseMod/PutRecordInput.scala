@@ -20,7 +20,6 @@ object PutRecordInput {
   @scala.inline
   def apply(DeliveryStreamName: DeliveryStreamName, Record: Record): PutRecordInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any], Record = Record.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutRecordInput]
   }
 }

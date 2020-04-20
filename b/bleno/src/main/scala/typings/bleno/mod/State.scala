@@ -16,18 +16,16 @@ trait State extends js.Object
 
 object State {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def poweredOff: typings.bleno.blenoStrings.poweredOff = "poweredOff".asInstanceOf[typings.bleno.blenoStrings.poweredOff]
   @scala.inline
-  def poweredOff: typings.bleno.blenoStrings.poweredOff = this.cast("poweredOff")
+  def poweredOn: typings.bleno.blenoStrings.poweredOn = "poweredOn".asInstanceOf[typings.bleno.blenoStrings.poweredOn]
   @scala.inline
-  def poweredOn: typings.bleno.blenoStrings.poweredOn = this.cast("poweredOn")
+  def resetting: typings.bleno.blenoStrings.resetting = "resetting".asInstanceOf[typings.bleno.blenoStrings.resetting]
   @scala.inline
-  def resetting: typings.bleno.blenoStrings.resetting = this.cast("resetting")
+  def unauthorized: typings.bleno.blenoStrings.unauthorized = "unauthorized".asInstanceOf[typings.bleno.blenoStrings.unauthorized]
   @scala.inline
-  def unauthorized: typings.bleno.blenoStrings.unauthorized = this.cast("unauthorized")
+  def unknown: typings.bleno.blenoStrings.unknown = "unknown".asInstanceOf[typings.bleno.blenoStrings.unknown]
   @scala.inline
-  def unknown: typings.bleno.blenoStrings.unknown = this.cast("unknown")
-  @scala.inline
-  def unsupported: typings.bleno.blenoStrings.unsupported = this.cast("unsupported")
+  def unsupported: typings.bleno.blenoStrings.unsupported = "unsupported".asInstanceOf[typings.bleno.blenoStrings.unsupported]
 }
 

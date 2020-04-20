@@ -20,26 +20,24 @@ trait GeocodeQueryType extends js.Object
 
 object GeocodeQueryType {
   @scala.inline
-  def address: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.address = this.cast("address")
+  def address: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.address = "address".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.address]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def country: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.country = "country".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.country]
   @scala.inline
-  def country: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.country = this.cast("country")
+  def district: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.district = "district".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.district]
   @scala.inline
-  def district: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.district = this.cast("district")
+  def locality: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.locality = "locality".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.locality]
   @scala.inline
-  def locality: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.locality = this.cast("locality")
+  def neighborhood: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.neighborhood = "neighborhood".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.neighborhood]
   @scala.inline
-  def neighborhood: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.neighborhood = this.cast("neighborhood")
+  def place: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.place = "place".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.place]
   @scala.inline
-  def place: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.place = this.cast("place")
+  def poi: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poi = "poi".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poi]
   @scala.inline
-  def poi: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poi = this.cast("poi")
+  def poiDotlandmark: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poiDotlandmark = "poi.landmark".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poiDotlandmark]
   @scala.inline
-  def poiDotlandmark: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poiDotlandmark = this.cast("poi.landmark")
+  def postcode: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.postcode = "postcode".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.postcode]
   @scala.inline
-  def postcode: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.postcode = this.cast("postcode")
-  @scala.inline
-  def region: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.region = this.cast("region")
+  def region: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.region = "region".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.region]
 }
 

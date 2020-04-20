@@ -1,5 +1,6 @@
 package typings.reactRouterConfig.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.history.mod.LocationState
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 trait RouteConfigComponentProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof Params ]:? string}
-  */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with js.Any */] extends RouteComponentProps[Params, StaticContext, LocationState] {
+  */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with TopLevel[js.Any] */] extends RouteComponentProps[Params, StaticContext, LocationState] {
   var route: js.UndefOr[RouteConfig] = js.undefined
 }
 
@@ -20,7 +21,7 @@ object RouteConfigComponentProps {
   @scala.inline
   def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with js.Any */](
+    */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with TopLevel[js.Any] */](
     history: History[LocationState],
     location: Location[LocationState],
     `match`: `match`[Params],

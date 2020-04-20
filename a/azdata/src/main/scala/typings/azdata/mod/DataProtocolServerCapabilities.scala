@@ -24,7 +24,6 @@ object DataProtocolServerCapabilities {
     providerName: String
   ): DataProtocolServerCapabilities = {
     val __obj = js.Dynamic.literal(adminServicesProvider = adminServicesProvider.asInstanceOf[js.Any], connectionProvider = connectionProvider.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], protocolVersion = protocolVersion.asInstanceOf[js.Any], providerDisplayName = providerDisplayName.asInstanceOf[js.Any], providerName = providerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataProtocolServerCapabilities]
   }
 }

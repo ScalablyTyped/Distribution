@@ -18,7 +18,6 @@ object EncryptionAtRest {
   @scala.inline
   def apply(DataVolumeKMSKeyId: string): EncryptionAtRest = {
     val __obj = js.Dynamic.literal(DataVolumeKMSKeyId = DataVolumeKMSKeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptionAtRest]
   }
 }

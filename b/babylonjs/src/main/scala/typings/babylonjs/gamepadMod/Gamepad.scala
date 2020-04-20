@@ -140,11 +140,11 @@ class Gamepad protected () extends js.Object {
   /**
     * Specifies if the gamepad has been connected
     */
-  def isConnected(): Boolean = js.native
+  def isConnected: Boolean = js.native
   /**
     * Gets the left joystick
     */
-  def leftStick(): StickValues = js.native
+  def leftStick: StickValues = js.native
   /**
     * Sets the left joystick values
     */
@@ -162,7 +162,7 @@ class Gamepad protected () extends js.Object {
   /**
     * Gets the right joystick
     */
-  def rightStick(): StickValues = js.native
+  def rightStick: StickValues = js.native
   /**
     * Sets the right joystick value
     */

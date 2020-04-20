@@ -43,7 +43,6 @@ object ExtensionRequestEvent {
     updateType: ExtensionRequestUpdateType
   ): ExtensionRequestEvent = {
     val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostName = hostName.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], updateType = updateType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionRequestEvent]
   }
 }

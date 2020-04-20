@@ -26,7 +26,6 @@ object ScrollSyncChildProps {
     scrollWidth: Double
   ): ScrollSyncChildProps = {
     val __obj = js.Dynamic.literal(clientHeight = clientHeight.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], onScroll = js.Any.fromFunction1(onScroll), scrollHeight = scrollHeight.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any], scrollWidth = scrollWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollSyncChildProps]
   }
 }

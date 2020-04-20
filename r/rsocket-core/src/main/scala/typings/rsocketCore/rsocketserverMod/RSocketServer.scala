@@ -13,7 +13,6 @@ object RSocketServer {
   @scala.inline
   def apply[D, M](start: () => Unit, stop: () => Unit): RSocketServer[D, M] = {
     val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[RSocketServer[D, M]]
   }
 }

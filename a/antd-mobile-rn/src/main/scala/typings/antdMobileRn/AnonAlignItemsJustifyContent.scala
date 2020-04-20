@@ -13,7 +13,6 @@ object AnonAlignItemsJustifyContent {
   @scala.inline
   def apply(alignItems: String, justifyContent: String): AnonAlignItemsJustifyContent = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlignItemsJustifyContent]
   }
 }

@@ -27,7 +27,6 @@ object InputFilterCondition {
   @scala.inline
   def apply(caseSensitive: Boolean, inputId: String, inputValue: String, operator: InputFilterOperator): InputFilterCondition = {
     val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], inputId = inputId.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputFilterCondition]
   }
 }

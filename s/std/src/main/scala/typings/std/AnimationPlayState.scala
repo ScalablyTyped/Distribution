@@ -14,14 +14,12 @@ trait AnimationPlayState extends js.Object
 
 object AnimationPlayState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def finished: typings.std.stdStrings.finished = "finished".asInstanceOf[typings.std.stdStrings.finished]
   @scala.inline
-  def finished: typings.std.stdStrings.finished = this.cast("finished")
+  def idle: typings.std.stdStrings.idle = "idle".asInstanceOf[typings.std.stdStrings.idle]
   @scala.inline
-  def idle: typings.std.stdStrings.idle = this.cast("idle")
+  def paused: typings.std.stdStrings.paused = "paused".asInstanceOf[typings.std.stdStrings.paused]
   @scala.inline
-  def paused: typings.std.stdStrings.paused = this.cast("paused")
-  @scala.inline
-  def running: typings.std.stdStrings.running = this.cast("running")
+  def running: typings.std.stdStrings.running = "running".asInstanceOf[typings.std.stdStrings.running]
 }
 

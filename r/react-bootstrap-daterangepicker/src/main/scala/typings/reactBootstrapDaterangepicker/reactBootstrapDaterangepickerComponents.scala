@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactBootstrapDaterangepickerComponents extends reactBootstrapDaterangepickerProps {
   @scala.inline
-  def DateRangePicker: ComponentType[DateRangePickerProps] = js.constructorOf[typings.reactBootstrapDaterangepicker.ReactBootstrapDaterangepicker.DateRangePicker].asInstanceOf[typings.react.mod.ComponentType[DateRangePickerProps]]
+  def DateRangePicker: ComponentType[DateRangePickerProps] = js.constructorOf[typings.reactBootstrapDaterangepicker.ReactBootstrapDaterangepicker.DateRangePicker].asInstanceOf[ComponentType[DateRangePickerProps]]
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactUserTourProps {
   @scala.inline
-  def ReactUserTourProps: TourProps.type = typings.reactUserTour.mod.TourProps
+  def ReactUserTourProps: TourProps.type = TourProps
   type ReactUserTourProps = TourProps
 }
 

@@ -32,7 +32,6 @@ object DeveloperMetadataFinder {
     withVisibility: DeveloperMetadataVisibility => DeveloperMetadataFinder
   ): DeveloperMetadataFinder = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction0(find), onIntersectingLocations = js.Any.fromFunction0(onIntersectingLocations), withId = js.Any.fromFunction1(withId), withKey = js.Any.fromFunction1(withKey), withLocationType = js.Any.fromFunction1(withLocationType), withValue = js.Any.fromFunction1(withValue), withVisibility = js.Any.fromFunction1(withVisibility))
-  
     __obj.asInstanceOf[DeveloperMetadataFinder]
   }
 }

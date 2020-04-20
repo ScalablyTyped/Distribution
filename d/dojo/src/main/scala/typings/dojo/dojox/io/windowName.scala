@@ -56,7 +56,6 @@ object windowName {
   @scala.inline
   def apply(send: (String, js.Object) => js.Any): windowName = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction2(send))
-  
     __obj.asInstanceOf[windowName]
   }
 }

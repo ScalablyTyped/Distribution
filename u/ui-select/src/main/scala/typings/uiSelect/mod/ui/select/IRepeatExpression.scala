@@ -26,7 +26,6 @@ object IRepeatExpression {
     trackByExp: String
   ): IRepeatExpression = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], itemName = itemName.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], modelMapper = modelMapper.asInstanceOf[js.Any], repeatExpression = js.Any.fromFunction1(repeatExpression), source = source.asInstanceOf[js.Any], trackByExp = trackByExp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRepeatExpression]
   }
 }

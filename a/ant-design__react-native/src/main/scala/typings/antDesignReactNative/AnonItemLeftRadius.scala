@@ -25,7 +25,6 @@ object AnonItemLeftRadius {
     segment: RegisteredStyle[ViewStyle]
   ): AnonItemLeftRadius = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], itemLeftRadius = itemLeftRadius.asInstanceOf[js.Any], itemRightRadius = itemRightRadius.asInstanceOf[js.Any], itemText = itemText.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemLeftRadius]
   }
 }

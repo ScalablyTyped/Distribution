@@ -33,52 +33,50 @@ trait TestNodesUnion extends js.Object
 
 object TestNodesUnion {
   @scala.inline
-  def blockquote: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.blockquote = this.cast("blockquote")
+  def blockquote: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.blockquote = "blockquote".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.blockquote]
   @scala.inline
-  def br: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.br = this.cast("br")
+  def br: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.br = "br".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.br]
   @scala.inline
-  def bullet_list: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.bullet_list = this.cast("bullet_list")
+  def bullet_list: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.bullet_list = "bullet_list".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.bullet_list]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code_block: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code_block = "code_block".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code_block]
   @scala.inline
-  def code_block: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code_block = this.cast("code_block")
+  def doc: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.doc = "doc".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.doc]
   @scala.inline
-  def doc: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.doc = this.cast("doc")
+  def h1: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h1 = "h1".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h1]
   @scala.inline
-  def h1: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h1 = this.cast("h1")
+  def h2: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h2 = "h2".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h2]
   @scala.inline
-  def h2: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h2 = this.cast("h2")
+  def h3: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h3 = "h3".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h3]
   @scala.inline
-  def h3: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h3 = this.cast("h3")
+  def hard_break: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hard_break = "hard_break".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hard_break]
   @scala.inline
-  def hard_break: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hard_break = this.cast("hard_break")
+  def heading: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.heading = "heading".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.heading]
   @scala.inline
-  def heading: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.heading = this.cast("heading")
+  def horizontal_rule: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.horizontal_rule = "horizontal_rule".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.horizontal_rule]
   @scala.inline
-  def horizontal_rule: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.horizontal_rule = this.cast("horizontal_rule")
+  def hr: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hr = "hr".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hr]
   @scala.inline
-  def hr: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hr = this.cast("hr")
+  def image: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.image = "image".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.image]
   @scala.inline
-  def image: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.image = this.cast("image")
+  def img: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.img = "img".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.img]
   @scala.inline
-  def img: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.img = this.cast("img")
+  def li: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.li = "li".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.li]
   @scala.inline
-  def li: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.li = this.cast("li")
+  def list_item: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.list_item = "list_item".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.list_item]
   @scala.inline
-  def list_item: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.list_item = this.cast("list_item")
+  def ol: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ol = "ol".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ol]
   @scala.inline
-  def ol: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ol = this.cast("ol")
+  def ordered_list: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ordered_list = "ordered_list".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ordered_list]
   @scala.inline
-  def ordered_list: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ordered_list = this.cast("ordered_list")
+  def p: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.p = "p".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.p]
   @scala.inline
-  def p: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.p = this.cast("p")
+  def paragraph: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.paragraph = "paragraph".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.paragraph]
   @scala.inline
-  def paragraph: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.paragraph = this.cast("paragraph")
+  def pre: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.pre = "pre".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.pre]
   @scala.inline
-  def pre: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.pre = this.cast("pre")
+  def text: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.text = "text".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.text]
   @scala.inline
-  def text: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.text = this.cast("text")
-  @scala.inline
-  def ul: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ul = this.cast("ul")
+  def ul: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ul = "ul".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ul]
 }
 

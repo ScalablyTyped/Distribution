@@ -15,7 +15,6 @@ object ReaderInlineDataFragment {
   @scala.inline
   def apply(kind: InlineDataFragment, name: String): ReaderInlineDataFragment = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReaderInlineDataFragment]
   }
 }

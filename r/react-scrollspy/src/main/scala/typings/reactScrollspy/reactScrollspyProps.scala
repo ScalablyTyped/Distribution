@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactScrollspyProps {
   @scala.inline
-  def ReactScrollspyProps: ScrollspyProps.type = typings.reactScrollspy.mod.ScrollspyProps
+  def ReactScrollspyProps: ScrollspyProps.type = ScrollspyProps
   type ReactScrollspyProps = ScrollspyProps
 }
 

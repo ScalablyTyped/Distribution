@@ -19,7 +19,6 @@ object OnDoubleTapListener {
     onSingleTapConfirmed: MotionEvent => Boolean
   ): OnDoubleTapListener = {
     val __obj = js.Dynamic.literal(onDoubleTap = js.Any.fromFunction1(onDoubleTap), onDoubleTapEvent = js.Any.fromFunction1(onDoubleTapEvent), onSingleTapConfirmed = js.Any.fromFunction1(onSingleTapConfirmed))
-  
     __obj.asInstanceOf[OnDoubleTapListener]
   }
 }

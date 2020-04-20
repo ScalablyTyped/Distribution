@@ -14,7 +14,6 @@ object ISeriesData {
   @scala.inline
   def apply(labels: js.Array[String], source: js.Any, values: js.Array[Double]): ISeriesData = {
     val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISeriesData]
   }
 }

@@ -16,7 +16,6 @@ object OnReceiveErrorInfo {
   @scala.inline
   def apply(connectionId: Double, error: ArrayBuffer): OnReceiveErrorInfo = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnReceiveErrorInfo]
   }
 }

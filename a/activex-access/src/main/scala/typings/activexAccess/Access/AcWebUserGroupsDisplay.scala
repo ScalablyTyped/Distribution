@@ -14,10 +14,8 @@ trait AcWebUserGroupsDisplay extends js.Object
 
 object AcWebUserGroupsDisplay {
   @scala.inline
-  def acWebUserGroupID: `0` = this.cast(0)
+  def acWebUserGroupID: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acWebUserGroupName: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acWebUserGroupName: `1` = 1.asInstanceOf[`1`]
 }
 

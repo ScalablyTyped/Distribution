@@ -20,7 +20,6 @@ object HITLayoutParameter {
   @scala.inline
   def apply(Name: String, Value: String): HITLayoutParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HITLayoutParameter]
   }
 }

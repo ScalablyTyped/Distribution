@@ -16,7 +16,6 @@ object DeleteWorkflowRequest {
   @scala.inline
   def apply(Name: NameString): DeleteWorkflowRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteWorkflowRequest]
   }
 }

@@ -16,7 +16,6 @@ object EndpointBatchRequest {
   @scala.inline
   def apply(Item: ListOfEndpointBatchItem): EndpointBatchRequest = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EndpointBatchRequest]
   }
 }

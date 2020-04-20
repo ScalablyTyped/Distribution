@@ -14,10 +14,8 @@ trait SearchDirectionEnum extends js.Object
 
 object SearchDirectionEnum {
   @scala.inline
-  def adSearchBackward: `-1` = this.cast(-1)
+  def adSearchBackward: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def adSearchForward: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adSearchForward: `1` = 1.asInstanceOf[`1`]
 }
 

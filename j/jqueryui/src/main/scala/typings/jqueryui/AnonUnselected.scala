@@ -13,7 +13,6 @@ object AnonUnselected {
   @scala.inline
   def apply(unselected: Element): AnonUnselected = {
     val __obj = js.Dynamic.literal(unselected = unselected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUnselected]
   }
 }

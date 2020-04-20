@@ -15,7 +15,6 @@ object ReadonlyRangeTree {
   @scala.inline
   def apply(children: js.Array[ReadonlyRangeTree], count: Double, end: Double, start: Double): ReadonlyRangeTree = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyRangeTree]
   }
 }

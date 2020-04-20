@@ -20,7 +20,6 @@ object TableResource {
   @scala.inline
   def apply(DatabaseName: NameString, Name: NameString): TableResource = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableResource]
   }
 }

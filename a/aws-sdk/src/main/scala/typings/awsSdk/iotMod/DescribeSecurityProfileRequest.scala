@@ -16,7 +16,6 @@ object DescribeSecurityProfileRequest {
   @scala.inline
   def apply(securityProfileName: SecurityProfileName): DescribeSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSecurityProfileRequest]
   }
 }

@@ -11,7 +11,7 @@ trait DescribeIamInstanceProfileAssociationsRequest extends js.Object {
     */
   var AssociationIds: js.UndefOr[AssociationIdList] = js.native
   /**
-    * The filters.    instance-id - The ID of the instance.    state - The state of the association (associating | associated | disassociating | disassociated).  
+    * The filters.    instance-id - The ID of the instance.    state - The state of the association (associating | associated | disassociating).  
     */
   var Filters: js.UndefOr[FilterList] = js.native
   /**

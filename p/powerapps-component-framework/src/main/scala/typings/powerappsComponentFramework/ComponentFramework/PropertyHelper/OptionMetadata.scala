@@ -17,7 +17,6 @@ object OptionMetadata {
   @scala.inline
   def apply(Color: String, Label: String, Value: Double): OptionMetadata = {
     val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OptionMetadata]
   }
 }

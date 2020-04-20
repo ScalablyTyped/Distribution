@@ -15,16 +15,14 @@ trait ModalEvent extends js.Object
 
 object ModalEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hiddenDotbsDotmodal: typings.bootstrap.bootstrapStrings.hiddenDotbsDotmodal = "hidden.bs.modal".asInstanceOf[typings.bootstrap.bootstrapStrings.hiddenDotbsDotmodal]
   @scala.inline
-  def hiddenDotbsDotmodal: typings.bootstrap.bootstrapStrings.hiddenDotbsDotmodal = this.cast("hidden.bs.modal")
+  def hideDotbsDotmodal: typings.bootstrap.bootstrapStrings.hideDotbsDotmodal = "hide.bs.modal".asInstanceOf[typings.bootstrap.bootstrapStrings.hideDotbsDotmodal]
   @scala.inline
-  def hideDotbsDotmodal: typings.bootstrap.bootstrapStrings.hideDotbsDotmodal = this.cast("hide.bs.modal")
+  def hidePreventedDotbsDotmodal: typings.bootstrap.bootstrapStrings.hidePreventedDotbsDotmodal = "hidePrevented.bs.modal".asInstanceOf[typings.bootstrap.bootstrapStrings.hidePreventedDotbsDotmodal]
   @scala.inline
-  def hidePreventedDotbsDotmodal: typings.bootstrap.bootstrapStrings.hidePreventedDotbsDotmodal = this.cast("hidePrevented.bs.modal")
+  def showDotbsDotmodal: typings.bootstrap.bootstrapStrings.showDotbsDotmodal = "show.bs.modal".asInstanceOf[typings.bootstrap.bootstrapStrings.showDotbsDotmodal]
   @scala.inline
-  def showDotbsDotmodal: typings.bootstrap.bootstrapStrings.showDotbsDotmodal = this.cast("show.bs.modal")
-  @scala.inline
-  def shownDotbsDotmodal: typings.bootstrap.bootstrapStrings.shownDotbsDotmodal = this.cast("shown.bs.modal")
+  def shownDotbsDotmodal: typings.bootstrap.bootstrapStrings.shownDotbsDotmodal = "shown.bs.modal".asInstanceOf[typings.bootstrap.bootstrapStrings.shownDotbsDotmodal]
 }
 

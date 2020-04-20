@@ -15,7 +15,6 @@ object GetDataInput {
   @scala.inline
   def apply(finish: String, limit: Double, start: String, uuid: String): GetDataInput = {
     val __obj = js.Dynamic.literal(finish = finish.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDataInput]
   }
 }

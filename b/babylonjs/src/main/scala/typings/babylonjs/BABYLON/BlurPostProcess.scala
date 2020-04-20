@@ -88,7 +88,7 @@ class BlurPostProcess protected () extends PostProcess {
   /**
     * Gets the length in pixels of the blur sample region
     */
-  def kernel(): Double = js.native
+  def kernel: Double = js.native
   /**
     * Sets the length in pixels of the blur sample region
     */
@@ -96,7 +96,7 @@ class BlurPostProcess protected () extends PostProcess {
   /**
     * Gets wether or not the blur is unpacking/repacking floats
     */
-  def packedFloat(): Boolean = js.native
+  def packedFloat: Boolean = js.native
   /**
     * Sets wether or not the blur needs to unpack/repack floats
     */

@@ -21,7 +21,6 @@ object Source {
     receiveProps: js.Any => Unit
   ): Source = {
     val __obj = js.Dynamic.literal(beginDrag = js.Any.fromFunction2(beginDrag), canDrag = js.Any.fromFunction2(canDrag), endDrag = js.Any.fromFunction2(endDrag), isDragging = js.Any.fromFunction2(isDragging), receiveProps = js.Any.fromFunction1(receiveProps))
-  
     __obj.asInstanceOf[Source]
   }
 }

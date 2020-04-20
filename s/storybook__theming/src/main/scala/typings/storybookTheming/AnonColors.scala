@@ -14,7 +14,6 @@ object AnonColors {
   @scala.inline
   def apply(colors: ColorsHash, mono: String): AnonColors = {
     val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], mono = mono.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColors]
   }
 }

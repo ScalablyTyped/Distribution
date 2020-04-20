@@ -12,7 +12,6 @@ object DiscoverFeedResponseSuggestedUsers {
   @scala.inline
   def apply(suggestions: js.Array[DiscoverFeedResponseSuggestionsItem]): DiscoverFeedResponseSuggestedUsers = {
     val __obj = js.Dynamic.literal(suggestions = suggestions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DiscoverFeedResponseSuggestedUsers]
   }
 }

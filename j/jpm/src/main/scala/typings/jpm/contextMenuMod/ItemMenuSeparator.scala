@@ -50,7 +50,6 @@ object ItemMenuSeparator {
   @scala.inline
   def Separator(destroy: () => Unit, parentMenu: Menu): ItemMenuSeparator = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), parentMenu = parentMenu.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ItemMenuSeparator]
   }
 }

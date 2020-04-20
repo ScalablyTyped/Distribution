@@ -24,7 +24,6 @@ object AccordionMenu {
     up: JQuery => Unit
   ): AccordionMenu = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), down = js.Any.fromFunction2(down), hideAll = js.Any.fromFunction0(hideAll), toggle = js.Any.fromFunction1(toggle), up = js.Any.fromFunction1(up))
-  
     __obj.asInstanceOf[AccordionMenu]
   }
 }

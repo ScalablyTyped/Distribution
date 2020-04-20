@@ -24,7 +24,6 @@ object ChangePasswordRequest {
   @scala.inline
   def apply(AccessToken: TokenModelType, PreviousPassword: PasswordType, ProposedPassword: PasswordType): ChangePasswordRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any], PreviousPassword = PreviousPassword.asInstanceOf[js.Any], ProposedPassword = ProposedPassword.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangePasswordRequest]
   }
 }

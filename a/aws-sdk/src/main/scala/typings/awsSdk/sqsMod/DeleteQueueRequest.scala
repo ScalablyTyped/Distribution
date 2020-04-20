@@ -16,7 +16,6 @@ object DeleteQueueRequest {
   @scala.inline
   def apply(QueueUrl: String): DeleteQueueRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteQueueRequest]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait pdfViewerReactjsProps {
   @scala.inline
-  def PdfViewerReactjsProps: PDFViewerProps.type = typings.pdfViewerReactjs.mod.PDFViewerProps
+  def PdfViewerReactjsProps: PDFViewerProps.type = PDFViewerProps
   type PdfViewerReactjsProps = PDFViewerProps
 }
 

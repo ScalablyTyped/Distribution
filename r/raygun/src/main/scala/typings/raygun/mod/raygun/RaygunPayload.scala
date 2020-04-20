@@ -15,7 +15,6 @@ object RaygunPayload {
   @scala.inline
   def apply(details: AnonClient, occurredOn: Date): RaygunPayload = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], occurredOn = occurredOn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaygunPayload]
   }
 }

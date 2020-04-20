@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 object getVersion extends js.Object {
   /**
   	 * Gets the value of the <Titanium.version> property.
+  	 * @deprecated Access <Titanium.version> instead.
   	 */
   def apply(): String = js.native
 }

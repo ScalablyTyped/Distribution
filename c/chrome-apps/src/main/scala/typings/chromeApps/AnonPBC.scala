@@ -15,7 +15,6 @@ object AnonPBC {
   @scala.inline
   def apply(PBC: PBC, PIN: PIN): AnonPBC = {
     val __obj = js.Dynamic.literal(PBC = PBC.asInstanceOf[js.Any], PIN = PIN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPBC]
   }
 }

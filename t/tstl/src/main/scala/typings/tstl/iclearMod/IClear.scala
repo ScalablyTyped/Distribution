@@ -15,7 +15,6 @@ object IClear {
   @scala.inline
   def apply(clear: () => Unit): IClear = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
-  
     __obj.asInstanceOf[IClear]
   }
 }

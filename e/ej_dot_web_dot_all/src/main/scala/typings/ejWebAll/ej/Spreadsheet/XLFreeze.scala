@@ -46,7 +46,6 @@ object XLFreeze {
     unfreezePanes: () => Unit
   ): XLFreeze = {
     val __obj = js.Dynamic.literal(freezeColumns = js.Any.fromFunction1(freezeColumns), freezeLeftColumn = js.Any.fromFunction0(freezeLeftColumn), freezePanes = js.Any.fromFunction2(freezePanes), freezeRows = js.Any.fromFunction1(freezeRows), freezeTopRow = js.Any.fromFunction0(freezeTopRow), unfreezePanes = js.Any.fromFunction0(unfreezePanes))
-  
     __obj.asInstanceOf[XLFreeze]
   }
 }

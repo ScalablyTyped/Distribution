@@ -15,7 +15,6 @@ object DetectIdentifyResponse {
   @scala.inline
   def apply(log_id: Double, result: AnonHeight): DetectIdentifyResponse = {
     val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectIdentifyResponse]
   }
 }

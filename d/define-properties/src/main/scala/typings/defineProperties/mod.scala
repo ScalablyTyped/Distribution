@@ -26,7 +26,7 @@ object mod extends js.Object {
   def apply[M /* <: js.Object */](
     `object`: js.Object,
     map: M with ThisType[_],
-    predicates: Partial[Record[String, js.Function0[Boolean]]]
+    predicates: Partial[Record[/* keyof M */ String, js.Function0[Boolean]]]
   ): Unit = js.native
 }
 

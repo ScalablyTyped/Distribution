@@ -12,7 +12,6 @@ object AnonGeoFenceMaxNumber {
   @scala.inline
   def apply(geoFenceMaxNumber: Double): AnonGeoFenceMaxNumber = {
     val __obj = js.Dynamic.literal(geoFenceMaxNumber = geoFenceMaxNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGeoFenceMaxNumber]
   }
 }

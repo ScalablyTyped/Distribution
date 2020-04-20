@@ -12,7 +12,6 @@ object SetTimeZoneOptions {
   @scala.inline
   def apply(useUTC: Boolean): SetTimeZoneOptions = {
     val __obj = js.Dynamic.literal(useUTC = useUTC.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetTimeZoneOptions]
   }
 }

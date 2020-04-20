@@ -21,7 +21,6 @@ object Typeofclipboard {
   @scala.inline
   def apply(setImageData: (ArrayBuffer, _SetImageData) => js.Promise[Unit]): Typeofclipboard = {
     val __obj = js.Dynamic.literal(setImageData = js.Any.fromFunction2(setImageData))
-  
     __obj.asInstanceOf[Typeofclipboard]
   }
 }

@@ -16,7 +16,6 @@ object IDracoCompressionConfiguration {
   @scala.inline
   def apply(decoder: AnonFallbackUrl): IDracoCompressionConfiguration = {
     val __obj = js.Dynamic.literal(decoder = decoder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDracoCompressionConfiguration]
   }
 }

@@ -18,7 +18,6 @@ object AuthorizationAction {
   @scala.inline
   def apply(setAuthorizationUrl: String => AuthorizationAction): AuthorizationAction = {
     val __obj = js.Dynamic.literal(setAuthorizationUrl = js.Any.fromFunction1(setAuthorizationUrl))
-  
     __obj.asInstanceOf[AuthorizationAction]
   }
 }

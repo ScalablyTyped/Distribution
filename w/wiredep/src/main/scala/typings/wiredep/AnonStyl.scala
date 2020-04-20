@@ -22,7 +22,6 @@ object AnonStyl {
   @scala.inline
   def apply(css: RegExp, styl: RegExp): AnonStyl = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], styl = styl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStyl]
   }
 }

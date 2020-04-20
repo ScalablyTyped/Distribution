@@ -16,7 +16,6 @@ object GetAssignmentRequest {
   @scala.inline
   def apply(AssignmentId: EntityId): GetAssignmentRequest = {
     val __obj = js.Dynamic.literal(AssignmentId = AssignmentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAssignmentRequest]
   }
 }

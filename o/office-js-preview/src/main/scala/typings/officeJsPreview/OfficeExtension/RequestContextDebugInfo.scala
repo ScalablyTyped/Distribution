@@ -18,7 +18,6 @@ object RequestContextDebugInfo {
   @scala.inline
   def apply(pendingStatements: js.Array[String]): RequestContextDebugInfo = {
     val __obj = js.Dynamic.literal(pendingStatements = pendingStatements.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestContextDebugInfo]
   }
 }

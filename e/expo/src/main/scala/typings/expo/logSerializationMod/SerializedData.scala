@@ -14,7 +14,6 @@ object SerializedData {
   @scala.inline
   def apply(body: js.Array[LogData], includesStack: Boolean): SerializedData = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], includesStack = includesStack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerializedData]
   }
 }

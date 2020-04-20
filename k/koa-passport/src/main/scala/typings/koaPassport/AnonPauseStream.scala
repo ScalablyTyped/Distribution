@@ -12,7 +12,6 @@ object AnonPauseStream {
   @scala.inline
   def apply(pauseStream: Boolean): AnonPauseStream = {
     val __obj = js.Dynamic.literal(pauseStream = pauseStream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPauseStream]
   }
 }

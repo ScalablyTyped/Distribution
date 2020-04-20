@@ -45,7 +45,6 @@ object IdentityManagerSetRedirectionHandlerHandlerFunction {
     signInPage: String
   ): IdentityManagerSetRedirectionHandlerHandlerFunction = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resourceUrl = resourceUrl.asInstanceOf[js.Any], returnUrlParamName = returnUrlParamName.asInstanceOf[js.Any], serverInfo = serverInfo.asInstanceOf[js.Any], signInPage = signInPage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdentityManagerSetRedirectionHandlerHandlerFunction]
   }
 }

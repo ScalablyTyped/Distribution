@@ -11,7 +11,7 @@ trait CreateStackSetInput extends js.Object {
     */
   var AdministrationRoleARN: js.UndefOr[RoleARN_] = js.native
   /**
-    * Describes whether StackSets automatically deploys to AWS Organizations accounts that are added to the target organization or organizational unit (OU). Specify only if PermissionModel is SERVICE_MANAGED. If you specify AutoDeployment, do not specify DeploymentTargets or Regions.
+    * Describes whether StackSets automatically deploys to AWS Organizations accounts that are added to the target organization or organizational unit (OU). Specify only if PermissionModel is SERVICE_MANAGED.
     */
   var AutoDeployment: js.UndefOr[typings.awsSdk.cloudformationMod.AutoDeployment] = js.native
   /**
@@ -39,7 +39,7 @@ trait CreateStackSetInput extends js.Object {
     */
   var PermissionModel: js.UndefOr[PermissionModels] = js.native
   /**
-    * The name to associate with the stack set. The name must be unique in the region where you create your stack set.  A stack name can contain only alphanumeric characters (case-sensitive) and hyphens. It must start with an alphabetic character and can't be longer than 128 characters. 
+    * The name to associate with the stack set. The name must be unique in the Region where you create your stack set.  A stack name can contain only alphanumeric characters (case-sensitive) and hyphens. It must start with an alphabetic character and can't be longer than 128 characters. 
     */
   var StackSetName: typings.awsSdk.cloudformationMod.StackSetName = js.native
   /**

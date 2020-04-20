@@ -256,7 +256,7 @@ object jwplayerStrings {
   @scala.inline
   def idle: idle = "idle".asInstanceOf[idle]
   @scala.inline
-  def `initial choice`: `initial choice` = "initial choice".asInstanceOf[`initial choice`]
+  def `initial choice`: `initial choice` = ("initial choice").asInstanceOf[`initial choice`]
   @scala.inline
   def levels: levels = "levels".asInstanceOf[levels]
   @scala.inline

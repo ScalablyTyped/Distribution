@@ -20,7 +20,6 @@ object DateTimeParameter {
   @scala.inline
   def apply(Name: NonEmptyString, Values: TimestampList): DateTimeParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DateTimeParameter]
   }
 }

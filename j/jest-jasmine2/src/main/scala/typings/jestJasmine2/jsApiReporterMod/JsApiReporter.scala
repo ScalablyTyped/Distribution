@@ -41,7 +41,6 @@ object JsApiReporter {
     suites: () => Record[String, SuiteResult]
   ): JsApiReporter = {
     val __obj = js.Dynamic.literal(executionTime = js.Any.fromFunction0(executionTime), finished = finished.asInstanceOf[js.Any], jasmineDone = js.Any.fromFunction1(jasmineDone), jasmineStarted = js.Any.fromFunction1(jasmineStarted), runDetails = runDetails.asInstanceOf[js.Any], specDone = js.Any.fromFunction1(specDone), specResults = js.Any.fromFunction2(specResults), specStarted = js.Any.fromFunction1(specStarted), specs = js.Any.fromFunction0(specs), started = started.asInstanceOf[js.Any], status = js.Any.fromFunction0(status), suiteDone = js.Any.fromFunction1(suiteDone), suiteResults = js.Any.fromFunction2(suiteResults), suiteStarted = js.Any.fromFunction1(suiteStarted), suites = js.Any.fromFunction0(suites))
-  
     __obj.asInstanceOf[JsApiReporter]
   }
 }

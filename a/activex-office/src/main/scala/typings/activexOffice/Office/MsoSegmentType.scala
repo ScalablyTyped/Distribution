@@ -14,10 +14,8 @@ trait MsoSegmentType extends js.Object
 
 object MsoSegmentType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSegmentCurve: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoSegmentCurve: `1` = this.cast(1)
-  @scala.inline
-  def msoSegmentLine: `0` = this.cast(0)
+  def msoSegmentLine: `0` = 0.asInstanceOf[`0`]
 }
 

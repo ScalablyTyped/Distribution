@@ -19,7 +19,6 @@ object AnonPlacement {
   @scala.inline
   def apply($placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top): AnonPlacement = {
     val __obj = js.Dynamic.literal($placement = $placement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPlacement]
   }
 }

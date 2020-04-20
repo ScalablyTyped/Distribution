@@ -13,7 +13,6 @@ object AnonReversible {
   @scala.inline
   def apply(reversible: `false`): AnonReversible = {
     val __obj = js.Dynamic.literal(reversible = reversible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReversible]
   }
 }

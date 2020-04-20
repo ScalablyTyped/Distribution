@@ -20,7 +20,6 @@ object RemoveTagsFromStreamInput {
   @scala.inline
   def apply(StreamName: StreamName, TagKeys: TagKeyList): RemoveTagsFromStreamInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveTagsFromStreamInput]
   }
 }

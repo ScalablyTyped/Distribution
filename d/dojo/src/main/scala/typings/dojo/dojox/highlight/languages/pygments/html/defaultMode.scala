@@ -20,7 +20,6 @@ object defaultMode {
   @scala.inline
   def apply(contains: js.Array[_]): defaultMode = {
     val __obj = js.Dynamic.literal(contains = contains.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[defaultMode]
   }
 }

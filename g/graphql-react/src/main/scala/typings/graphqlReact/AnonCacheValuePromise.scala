@@ -15,7 +15,6 @@ object AnonCacheValuePromise {
   @scala.inline
   def apply(cacheKey: GraphQLCacheKey, cacheValuePromise: js.Promise[GraphQLCacheValue[_]]): AnonCacheValuePromise = {
     val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValuePromise = cacheValuePromise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCacheValuePromise]
   }
 }

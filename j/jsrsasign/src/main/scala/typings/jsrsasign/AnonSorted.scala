@@ -12,7 +12,6 @@ object AnonSorted {
   @scala.inline
   def apply(sorted: Boolean): AnonSorted = {
     val __obj = js.Dynamic.literal(sorted = sorted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSorted]
   }
 }

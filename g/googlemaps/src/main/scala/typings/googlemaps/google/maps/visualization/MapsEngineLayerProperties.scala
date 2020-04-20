@@ -12,7 +12,6 @@ object MapsEngineLayerProperties {
   @scala.inline
   def apply(name: String): MapsEngineLayerProperties = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapsEngineLayerProperties]
   }
 }

@@ -36,28 +36,26 @@ trait AttributeType extends js.Object
 
 object AttributeType {
   @scala.inline
-  def Boolean: boolean = this.cast("boolean")
+  def Boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
-  def DateTime: datetime = this.cast("datetime")
+  def DateTime: datetime = "datetime".asInstanceOf[datetime]
   @scala.inline
-  def Decimal: decimal = this.cast("decimal")
+  def Decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
-  def Double: double = this.cast("double")
+  def Double: double = "double".asInstanceOf[double]
   @scala.inline
-  def Integer: integer = this.cast("integer")
+  def Integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
-  def Lookup: lookup = this.cast("lookup")
+  def Lookup: lookup = "lookup".asInstanceOf[lookup]
   @scala.inline
-  def Memo: memo = this.cast("memo")
+  def Memo: memo = "memo".asInstanceOf[memo]
   @scala.inline
-  def Money: money = this.cast("money")
+  def Money: money = "money".asInstanceOf[money]
   @scala.inline
-  def MultiOptionSet: multioptionset = this.cast("multioptionset")
+  def MultiOptionSet: multioptionset = "multioptionset".asInstanceOf[multioptionset]
   @scala.inline
-  def OptionSet: optionset = this.cast("optionset")
+  def OptionSet: optionset = "optionset".asInstanceOf[optionset]
   @scala.inline
-  def String: string = this.cast("string")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def String: string = "string".asInstanceOf[string]
 }
 

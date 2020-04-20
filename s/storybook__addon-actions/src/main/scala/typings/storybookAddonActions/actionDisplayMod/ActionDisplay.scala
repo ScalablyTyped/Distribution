@@ -17,7 +17,6 @@ object ActionDisplay {
   @scala.inline
   def apply(count: Double, data: AnonArgs, id: String, options: ActionOptions): ActionDisplay = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionDisplay]
   }
 }

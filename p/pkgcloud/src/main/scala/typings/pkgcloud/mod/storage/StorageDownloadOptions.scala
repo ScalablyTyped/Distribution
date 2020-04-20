@@ -13,7 +13,6 @@ object StorageDownloadOptions {
   @scala.inline
   def apply(container: String, remote: String): StorageDownloadOptions = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StorageDownloadOptions]
   }
 }

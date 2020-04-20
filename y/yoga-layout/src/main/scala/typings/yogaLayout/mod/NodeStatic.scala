@@ -20,7 +20,6 @@ object NodeStatic {
     destroy: YogaNode => js.Any
   ): NodeStatic = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), createDefault = js.Any.fromFunction0(createDefault), createWithConfig = js.Any.fromFunction1(createWithConfig), destroy = js.Any.fromFunction1(destroy))
-  
     __obj.asInstanceOf[NodeStatic]
   }
 }

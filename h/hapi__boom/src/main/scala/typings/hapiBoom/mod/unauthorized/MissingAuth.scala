@@ -15,7 +15,6 @@ object MissingAuth {
   @scala.inline
   def apply(isMissing: Boolean): MissingAuth = {
     val __obj = js.Dynamic.literal(isMissing = isMissing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MissingAuth]
   }
 }

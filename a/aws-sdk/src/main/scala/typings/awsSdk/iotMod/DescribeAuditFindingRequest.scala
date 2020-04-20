@@ -16,7 +16,6 @@ object DescribeAuditFindingRequest {
   @scala.inline
   def apply(findingId: FindingId): DescribeAuditFindingRequest = {
     val __obj = js.Dynamic.literal(findingId = findingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAuditFindingRequest]
   }
 }

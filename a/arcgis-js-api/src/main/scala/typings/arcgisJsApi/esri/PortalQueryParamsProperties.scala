@@ -4,9 +4,9 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`avg-rating`
 import typings.arcgisJsApi.arcgisJsApiStrings.`num-comments`
 import typings.arcgisJsApi.arcgisJsApiStrings.`num-ratings`
 import typings.arcgisJsApi.arcgisJsApiStrings.`num-views`
-import typings.arcgisJsApi.arcgisJsApiStrings.asc
+import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.created
-import typings.arcgisJsApi.arcgisJsApiStrings.desc
+import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import typings.arcgisJsApi.arcgisJsApiStrings.modified
 import typings.arcgisJsApi.arcgisJsApiStrings.owner
 import typings.arcgisJsApi.arcgisJsApiStrings.title
@@ -85,7 +85,7 @@ trait PortalQueryParamsProperties extends js.Object {
     *
     * @default asc
     */
-  var sortOrder: js.UndefOr[asc | desc] = js.undefined
+  var sortOrder: js.UndefOr[asc_ | desc_] = js.undefined
   /**
     * The index of the first entry in the result set response. The index is 1-based. The [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#start) property, along with the [num](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#num) property can be used to paginate the search results.
     *
@@ -104,7 +104,7 @@ object PortalQueryParamsProperties {
     num: Int | Double = null,
     query: String = null,
     sortField: title | uploaded | modified | username | created | typings.arcgisJsApi.arcgisJsApiStrings.`type` | owner | `avg-rating` | `num-ratings` | `num-comments` | `num-views` = null,
-    sortOrder: asc | desc = null,
+    sortOrder: asc_ | desc_ = null,
     start: Int | Double = null
   ): PortalQueryParamsProperties = {
     val __obj = js.Dynamic.literal()

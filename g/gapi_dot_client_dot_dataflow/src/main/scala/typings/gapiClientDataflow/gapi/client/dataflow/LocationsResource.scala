@@ -21,7 +21,6 @@ object LocationsResource {
     workerMessages: AnonQuotaUser => Request_[SendWorkerMessagesResponse]
   ): LocationsResource = {
     val __obj = js.Dynamic.literal(jobs = jobs.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], workerMessages = js.Any.fromFunction1(workerMessages))
-  
     __obj.asInstanceOf[LocationsResource]
   }
 }

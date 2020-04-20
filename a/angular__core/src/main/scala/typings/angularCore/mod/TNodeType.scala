@@ -28,33 +28,31 @@ object TNodeType {
     * The TNode contains information about an {@link LContainer} for embedded views.
     */
   @scala.inline
-  def Container: `0` = this.cast(0)
+  def Container: `0` = 0.asInstanceOf[`0`]
   /**
     * The TNode contains information about a DOM element aka {@link RNode}.
     */
   @scala.inline
-  def Element: `3` = this.cast(3)
+  def Element: `3` = 3.asInstanceOf[`3`]
   /**
     * The TNode contains information about an `<ng-container>` element {@link RNode}.
     */
   @scala.inline
-  def ElementContainer: `4` = this.cast(4)
+  def ElementContainer: `4` = 4.asInstanceOf[`4`]
   /**
     * The TNode contains information about an ICU comment used in `i18n`.
     */
   @scala.inline
-  def IcuContainer: `5` = this.cast(5)
+  def IcuContainer: `5` = 5.asInstanceOf[`5`]
   /**
     * The TNode contains information about an `<ng-content>` projection
     */
   @scala.inline
-  def Projection: `1` = this.cast(1)
+  def Projection: `1` = 1.asInstanceOf[`1`]
   /**
     * The TNode contains information about an {@link LView}
     */
   @scala.inline
-  def View: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def View: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -13,7 +13,6 @@ object AnonHighSurrogate {
   @scala.inline
   def apply(highSurrogate: String, lowSurrogate: String): AnonHighSurrogate = {
     val __obj = js.Dynamic.literal(highSurrogate = highSurrogate.asInstanceOf[js.Any], lowSurrogate = lowSurrogate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHighSurrogate]
   }
 }

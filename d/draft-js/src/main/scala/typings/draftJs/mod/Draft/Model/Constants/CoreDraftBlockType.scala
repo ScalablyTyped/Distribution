@@ -26,32 +26,30 @@ trait CoreDraftBlockType extends js.Object
 
 object CoreDraftBlockType {
   @scala.inline
-  def atomic: typings.draftJs.draftJsStrings.atomic = this.cast("atomic")
+  def atomic: typings.draftJs.draftJsStrings.atomic = "atomic".asInstanceOf[typings.draftJs.draftJsStrings.atomic]
   @scala.inline
-  def blockquote: typings.draftJs.draftJsStrings.blockquote = this.cast("blockquote")
+  def blockquote: typings.draftJs.draftJsStrings.blockquote = "blockquote".asInstanceOf[typings.draftJs.draftJsStrings.blockquote]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `code-block`: typings.draftJs.draftJsStrings.`code-block` = "code-block".asInstanceOf[typings.draftJs.draftJsStrings.`code-block`]
   @scala.inline
-  def `code-block`: typings.draftJs.draftJsStrings.`code-block` = this.cast("code-block")
+  def `header-five`: typings.draftJs.draftJsStrings.`header-five` = "header-five".asInstanceOf[typings.draftJs.draftJsStrings.`header-five`]
   @scala.inline
-  def `header-five`: typings.draftJs.draftJsStrings.`header-five` = this.cast("header-five")
+  def `header-four`: typings.draftJs.draftJsStrings.`header-four` = "header-four".asInstanceOf[typings.draftJs.draftJsStrings.`header-four`]
   @scala.inline
-  def `header-four`: typings.draftJs.draftJsStrings.`header-four` = this.cast("header-four")
+  def `header-one`: typings.draftJs.draftJsStrings.`header-one` = "header-one".asInstanceOf[typings.draftJs.draftJsStrings.`header-one`]
   @scala.inline
-  def `header-one`: typings.draftJs.draftJsStrings.`header-one` = this.cast("header-one")
+  def `header-six`: typings.draftJs.draftJsStrings.`header-six` = "header-six".asInstanceOf[typings.draftJs.draftJsStrings.`header-six`]
   @scala.inline
-  def `header-six`: typings.draftJs.draftJsStrings.`header-six` = this.cast("header-six")
+  def `header-three`: typings.draftJs.draftJsStrings.`header-three` = "header-three".asInstanceOf[typings.draftJs.draftJsStrings.`header-three`]
   @scala.inline
-  def `header-three`: typings.draftJs.draftJsStrings.`header-three` = this.cast("header-three")
+  def `header-two`: typings.draftJs.draftJsStrings.`header-two` = "header-two".asInstanceOf[typings.draftJs.draftJsStrings.`header-two`]
   @scala.inline
-  def `header-two`: typings.draftJs.draftJsStrings.`header-two` = this.cast("header-two")
+  def `ordered-list-item`: typings.draftJs.draftJsStrings.`ordered-list-item` = "ordered-list-item".asInstanceOf[typings.draftJs.draftJsStrings.`ordered-list-item`]
   @scala.inline
-  def `ordered-list-item`: typings.draftJs.draftJsStrings.`ordered-list-item` = this.cast("ordered-list-item")
+  def paragraph: typings.draftJs.draftJsStrings.paragraph = "paragraph".asInstanceOf[typings.draftJs.draftJsStrings.paragraph]
   @scala.inline
-  def paragraph: typings.draftJs.draftJsStrings.paragraph = this.cast("paragraph")
+  def `unordered-list-item`: typings.draftJs.draftJsStrings.`unordered-list-item` = "unordered-list-item".asInstanceOf[typings.draftJs.draftJsStrings.`unordered-list-item`]
   @scala.inline
-  def `unordered-list-item`: typings.draftJs.draftJsStrings.`unordered-list-item` = this.cast("unordered-list-item")
-  @scala.inline
-  def unstyled: typings.draftJs.draftJsStrings.unstyled = this.cast("unstyled")
+  def unstyled: typings.draftJs.draftJsStrings.unstyled = "unstyled".asInstanceOf[typings.draftJs.draftJsStrings.unstyled]
 }
 

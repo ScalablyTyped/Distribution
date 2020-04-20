@@ -14,14 +14,12 @@ trait ChatType extends js.Object
 
 object ChatType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def channel: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel = "channel".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel]
   @scala.inline
-  def channel: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel = this.cast("channel")
+  def group: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.group = "group".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.group]
   @scala.inline
-  def group: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.group = this.cast("group")
+  def `private`: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.`private` = "private".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.`private`]
   @scala.inline
-  def `private`: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.`private` = this.cast("private")
-  @scala.inline
-  def supergroup: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.supergroup = this.cast("supergroup")
+  def supergroup: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.supergroup = "supergroup".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.supergroup]
 }
 

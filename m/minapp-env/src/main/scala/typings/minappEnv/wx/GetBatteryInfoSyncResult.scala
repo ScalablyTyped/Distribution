@@ -15,7 +15,6 @@ object GetBatteryInfoSyncResult {
   @scala.inline
   def apply(isCharging: Boolean, level: String): GetBatteryInfoSyncResult = {
     val __obj = js.Dynamic.literal(isCharging = isCharging.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBatteryInfoSyncResult]
   }
 }

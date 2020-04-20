@@ -13,12 +13,10 @@ trait UnorderedListType extends js.Object
 
 object UnorderedListType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.pdfmake.pdfmakeStrings.circle = "circle".asInstanceOf[typings.pdfmake.pdfmakeStrings.circle]
   @scala.inline
-  def circle: typings.pdfmake.pdfmakeStrings.circle = this.cast("circle")
+  def none: typings.pdfmake.pdfmakeStrings.none = "none".asInstanceOf[typings.pdfmake.pdfmakeStrings.none]
   @scala.inline
-  def none: typings.pdfmake.pdfmakeStrings.none = this.cast("none")
-  @scala.inline
-  def square: typings.pdfmake.pdfmakeStrings.square = this.cast("square")
+  def square: typings.pdfmake.pdfmakeStrings.square = "square".asInstanceOf[typings.pdfmake.pdfmakeStrings.square]
 }
 

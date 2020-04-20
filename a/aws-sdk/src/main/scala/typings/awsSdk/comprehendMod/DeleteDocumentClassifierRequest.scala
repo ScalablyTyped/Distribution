@@ -16,7 +16,6 @@ object DeleteDocumentClassifierRequest {
   @scala.inline
   def apply(DocumentClassifierArn: DocumentClassifierArn): DeleteDocumentClassifierRequest = {
     val __obj = js.Dynamic.literal(DocumentClassifierArn = DocumentClassifierArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDocumentClassifierRequest]
   }
 }

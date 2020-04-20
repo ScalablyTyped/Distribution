@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait fluentuiReactFocusProps {
   @scala.inline
-  def FocusZoneProps: IFocusZoneProps.type = typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
+  def FocusZoneProps: IFocusZoneProps.type = IFocusZoneProps
   type FocusZoneProps = IFocusZoneProps
 }
 

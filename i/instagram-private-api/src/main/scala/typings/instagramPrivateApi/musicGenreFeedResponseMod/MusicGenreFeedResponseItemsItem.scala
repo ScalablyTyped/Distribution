@@ -12,7 +12,6 @@ object MusicGenreFeedResponseItemsItem {
   @scala.inline
   def apply(track: MusicGenreFeedResponseTrack): MusicGenreFeedResponseItemsItem = {
     val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MusicGenreFeedResponseItemsItem]
   }
 }

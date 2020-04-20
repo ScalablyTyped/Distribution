@@ -20,7 +20,6 @@ object DeleteGatewayResponseRequest {
   @scala.inline
   def apply(responseType: GatewayResponseType, restApiId: String): DeleteGatewayResponseRequest = {
     val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGatewayResponseRequest]
   }
 }

@@ -13,12 +13,10 @@ trait DateTimeHumanReadable extends js.Object
 
 object DateTimeHumanReadable {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def long: typings.vueI18n.vueI18nStrings.long = "long".asInstanceOf[typings.vueI18n.vueI18nStrings.long]
   @scala.inline
-  def long: typings.vueI18n.vueI18nStrings.long = this.cast("long")
+  def narrow: typings.vueI18n.vueI18nStrings.narrow = "narrow".asInstanceOf[typings.vueI18n.vueI18nStrings.narrow]
   @scala.inline
-  def narrow: typings.vueI18n.vueI18nStrings.narrow = this.cast("narrow")
-  @scala.inline
-  def short: typings.vueI18n.vueI18nStrings.short = this.cast("short")
+  def short: typings.vueI18n.vueI18nStrings.short = "short".asInstanceOf[typings.vueI18n.vueI18nStrings.short]
 }
 

@@ -21,7 +21,6 @@ object AttachmentArgs {
   @scala.inline
   def apply(elb: Input[String], instance: Input[String]): AttachmentArgs = {
     val __obj = js.Dynamic.literal(elb = elb.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachmentArgs]
   }
 }

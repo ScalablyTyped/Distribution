@@ -40,7 +40,7 @@ object Options {
     finishCondition: Condition = null,
     freehand: js.UndefOr[Boolean] = js.undefined,
     freehandCondition: Condition = null,
-    geometryFunction: (/* p0 */ SketchCoordType, /* p1 */ js.UndefOr[typings.ol.simpleGeometryMod.default], /* p2 */ typings.ol.projectionMod.default) => typings.ol.simpleGeometryMod.default = null,
+    geometryFunction: (/* p0 */ SketchCoordType, /* p1 */ js.UndefOr[typings.ol.simpleGeometryMod.default], /* p2 */ js.UndefOr[typings.ol.projectionMod.default]) => typings.ol.simpleGeometryMod.default = null,
     geometryName: String = null,
     maxPoints: Int | Double = null,
     minPoints: Int | Double = null,

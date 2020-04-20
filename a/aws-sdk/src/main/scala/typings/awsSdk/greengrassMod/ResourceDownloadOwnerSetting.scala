@@ -20,7 +20,6 @@ object ResourceDownloadOwnerSetting {
   @scala.inline
   def apply(GroupOwner: string, GroupPermission: Permission): ResourceDownloadOwnerSetting = {
     val __obj = js.Dynamic.literal(GroupOwner = GroupOwner.asInstanceOf[js.Any], GroupPermission = GroupPermission.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceDownloadOwnerSetting]
   }
 }

@@ -20,7 +20,6 @@ object QueueInfo {
   @scala.inline
   def apply(QueuedIngestion: java.lang.String, WaitingOnIngestion: java.lang.String): QueueInfo = {
     val __obj = js.Dynamic.literal(QueuedIngestion = QueuedIngestion.asInstanceOf[js.Any], WaitingOnIngestion = WaitingOnIngestion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueueInfo]
   }
 }

@@ -14,7 +14,6 @@ object ErrorWithRange {
   @scala.inline
   def apply(end: Double, msg: String, start: Double): ErrorWithRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorWithRange]
   }
 }

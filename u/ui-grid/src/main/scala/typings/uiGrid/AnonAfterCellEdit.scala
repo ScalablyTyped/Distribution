@@ -37,7 +37,6 @@ object AnonAfterCellEdit {
     cancelCellEdit: (IScope, cancelCellEditHandler[TEntity]) => Unit
   ): AnonAfterCellEdit[TEntity] = {
     val __obj = js.Dynamic.literal(afterCellEdit = js.Any.fromFunction2(afterCellEdit), beginCellEdit = js.Any.fromFunction2(beginCellEdit), cancelCellEdit = js.Any.fromFunction2(cancelCellEdit))
-  
     __obj.asInstanceOf[AnonAfterCellEdit[TEntity]]
   }
 }

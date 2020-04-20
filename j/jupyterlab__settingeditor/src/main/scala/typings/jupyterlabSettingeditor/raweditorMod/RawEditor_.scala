@@ -43,19 +43,19 @@ class RawEditor_ protected () extends SplitPanel {
   /**
     * Whether the raw editor revert functionality is enabled.
     */
-  def canRevert(): Boolean = js.native
+  def canRevert: Boolean = js.native
   /**
     * Whether the raw editor save functionality is enabled.
     */
-  def canSave(): Boolean = js.native
+  def canSave: Boolean = js.native
   /**
     * Emits when the commands passed in at instantiation change.
     */
-  def commandsChanged(): ISignal[_, js.Array[String]] = js.native
+  def commandsChanged: ISignal[_, js.Array[String]] = js.native
   /**
     * Tests whether the settings have been modified and need saving.
     */
-  def isDirty(): Boolean = js.native
+  def isDirty: Boolean = js.native
   /**
     * Revert the editor back to original settings.
     */
@@ -70,15 +70,15 @@ class RawEditor_ protected () extends SplitPanel {
     * The plugin settings being edited.
     */
   @JSName("settings")
-  def settings_Union(): ISettings | Null = js.native
+  def settings_Union: ISettings | Null = js.native
   /**
     * Get the relative sizes of the two editor panels.
     */
-  def sizes(): js.Array[Double] = js.native
+  def sizes: js.Array[Double] = js.native
   def sizes(sizes: js.Array[Double]): js.Any = js.native
   /**
     * The inspectable source editor for user input.
     */
-  def source(): IEditor = js.native
+  def source: IEditor = js.native
 }
 

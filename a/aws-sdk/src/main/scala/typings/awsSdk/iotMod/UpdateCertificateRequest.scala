@@ -20,7 +20,6 @@ object UpdateCertificateRequest {
   @scala.inline
   def apply(certificateId: CertificateId, newStatus: CertificateStatus): UpdateCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any], newStatus = newStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateCertificateRequest]
   }
 }

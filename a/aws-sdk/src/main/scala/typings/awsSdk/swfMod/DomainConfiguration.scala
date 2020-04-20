@@ -16,7 +16,6 @@ object DomainConfiguration {
   @scala.inline
   def apply(workflowExecutionRetentionPeriodInDays: DurationInDays): DomainConfiguration = {
     val __obj = js.Dynamic.literal(workflowExecutionRetentionPeriodInDays = workflowExecutionRetentionPeriodInDays.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainConfiguration]
   }
 }

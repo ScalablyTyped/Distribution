@@ -27,7 +27,6 @@ object ICommandBundle {
   @scala.inline
   def apply(registry: CommandRegistry, revert: String, save: String): ICommandBundle = {
     val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any], revert = revert.asInstanceOf[js.Any], save = save.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICommandBundle]
   }
 }

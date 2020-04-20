@@ -33,7 +33,6 @@ object InsightRule {
     State: InsightRuleState
   ): InsightRule = {
     val __obj = js.Dynamic.literal(Definition = Definition.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Schema = Schema.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightRule]
   }
 }

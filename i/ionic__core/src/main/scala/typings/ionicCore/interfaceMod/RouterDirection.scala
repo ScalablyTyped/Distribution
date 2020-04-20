@@ -13,12 +13,10 @@ trait RouterDirection extends js.Object
 
 object RouterDirection {
   @scala.inline
-  def back: typings.ionicCore.ionicCoreStrings.back = this.cast("back")
+  def back: typings.ionicCore.ionicCoreStrings.back = "back".asInstanceOf[typings.ionicCore.ionicCoreStrings.back]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def forward: typings.ionicCore.ionicCoreStrings.forward = "forward".asInstanceOf[typings.ionicCore.ionicCoreStrings.forward]
   @scala.inline
-  def forward: typings.ionicCore.ionicCoreStrings.forward = this.cast("forward")
-  @scala.inline
-  def root: typings.ionicCore.ionicCoreStrings.root = this.cast("root")
+  def root: typings.ionicCore.ionicCoreStrings.root = "root".asInstanceOf[typings.ionicCore.ionicCoreStrings.root]
 }
 

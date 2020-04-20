@@ -21,7 +21,6 @@ object CsvReadOptions {
     sheetName: String
   ): CsvReadOptions = {
     val __obj = js.Dynamic.literal(dateFormats = dateFormats.asInstanceOf[js.Any], map = js.Any.fromFunction2(map), parserOptions = parserOptions.asInstanceOf[js.Any], sheetName = sheetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CsvReadOptions]
   }
 }

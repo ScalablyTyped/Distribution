@@ -13,7 +13,6 @@ object SQL {
   @scala.inline
   def apply(functions: AnonLOWER): SQL = {
     val __obj = js.Dynamic.literal(functions = functions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SQL]
   }
 }

@@ -66,7 +66,6 @@ object VisualVariablesResult {
     statistics: SummaryStatisticsResult
   ): VisualVariablesResult = {
     val __obj = js.Dynamic.literal(authoringInfo = authoringInfo.asInstanceOf[js.Any], basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], defaultValuesUsed = defaultValuesUsed.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VisualVariablesResult]
   }
 }

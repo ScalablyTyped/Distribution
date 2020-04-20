@@ -16,7 +16,6 @@ object DeleteConfigRuleRequest {
   @scala.inline
   def apply(ConfigRuleName: ConfigRuleName): DeleteConfigRuleRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConfigRuleRequest]
   }
 }

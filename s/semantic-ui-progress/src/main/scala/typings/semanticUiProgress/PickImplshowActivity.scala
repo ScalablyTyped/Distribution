@@ -13,7 +13,6 @@ object PickImplshowActivity {
   @scala.inline
   def apply(showActivity: Boolean): PickImplshowActivity = {
     val __obj = js.Dynamic.literal(showActivity = showActivity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplshowActivity]
   }
 }

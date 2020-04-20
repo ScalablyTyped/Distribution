@@ -13,7 +13,6 @@ object ITimeTrigger {
   @scala.inline
   def apply(freshnessTime: Double, oneShot: Boolean): ITimeTrigger = {
     val __obj = js.Dynamic.literal(freshnessTime = freshnessTime.asInstanceOf[js.Any], oneShot = oneShot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITimeTrigger]
   }
 }

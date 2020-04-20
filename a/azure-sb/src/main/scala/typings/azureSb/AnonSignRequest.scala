@@ -12,7 +12,6 @@ object AnonSignRequest {
   @scala.inline
   def apply(signRequest: (js.Any, js.Function0[Unit]) => Unit): AnonSignRequest = {
     val __obj = js.Dynamic.literal(signRequest = js.Any.fromFunction2(signRequest))
-  
     __obj.asInstanceOf[AnonSignRequest]
   }
 }

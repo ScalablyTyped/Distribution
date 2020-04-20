@@ -12,7 +12,6 @@ object IWebUINavigatedDeferral {
   @scala.inline
   def apply(complete: () => Unit): IWebUINavigatedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
-  
     __obj.asInstanceOf[IWebUINavigatedDeferral]
   }
 }

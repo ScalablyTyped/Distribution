@@ -16,7 +16,6 @@ object GetRegexMatchSetRequest {
   @scala.inline
   def apply(RegexMatchSetId: ResourceId): GetRegexMatchSetRequest = {
     val __obj = js.Dynamic.literal(RegexMatchSetId = RegexMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRegexMatchSetRequest]
   }
 }

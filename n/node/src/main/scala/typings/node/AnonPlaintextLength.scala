@@ -12,7 +12,6 @@ object AnonPlaintextLength {
   @scala.inline
   def apply(plaintextLength: Double): AnonPlaintextLength = {
     val __obj = js.Dynamic.literal(plaintextLength = plaintextLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPlaintextLength]
   }
 }

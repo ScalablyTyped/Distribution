@@ -13,7 +13,6 @@ object GetCampaignDateRangeKpiResponse {
   @scala.inline
   def apply(CampaignDateRangeKpiResponse: CampaignDateRangeKpiResponse): GetCampaignDateRangeKpiResponse = {
     val __obj = js.Dynamic.literal(CampaignDateRangeKpiResponse = CampaignDateRangeKpiResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCampaignDateRangeKpiResponse]
   }
 }

@@ -16,7 +16,6 @@ object BatchGetRepositoriesInput {
   @scala.inline
   def apply(repositoryNames: RepositoryNameList): BatchGetRepositoriesInput = {
     val __obj = js.Dynamic.literal(repositoryNames = repositoryNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetRepositoriesInput]
   }
 }

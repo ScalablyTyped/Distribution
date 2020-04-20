@@ -15,7 +15,6 @@ object Template {
   @scala.inline
   def apply(htmlToXlsx: AnonHtmlEngine, recipe: `html-to-xlsx` | String): Template = {
     val __obj = js.Dynamic.literal(htmlToXlsx = htmlToXlsx.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Template]
   }
 }

@@ -28,7 +28,6 @@ object UpdateConfigurationSetEventDestinationRequest {
     EventDestinationName: EventDestinationName
   ): UpdateConfigurationSetEventDestinationRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any], EventDestination = EventDestination.asInstanceOf[js.Any], EventDestinationName = EventDestinationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateConfigurationSetEventDestinationRequest]
   }
 }

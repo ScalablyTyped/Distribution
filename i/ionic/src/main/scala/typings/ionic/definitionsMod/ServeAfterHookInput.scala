@@ -17,7 +17,6 @@ object ServeAfterHookInput {
     serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) with ServeDetails
   ): ServeAfterHookInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serve = serve.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServeAfterHookInput]
   }
 }

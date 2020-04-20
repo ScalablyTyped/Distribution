@@ -25,7 +25,6 @@ object CarouselStyle {
     spaceStyle: ViewStyle
   ): CarouselStyle = {
     val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], paginationX = paginationX.asInstanceOf[js.Any], paginationY = paginationY.asInstanceOf[js.Any], pointActiveStyle = pointActiveStyle.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], spaceStyle = spaceStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CarouselStyle]
   }
 }

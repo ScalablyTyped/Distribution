@@ -21,26 +21,24 @@ trait Scope extends js.Object
 
 object Scope {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def scopeDotaddress: typings.weixinApp.weixinAppStrings.scopeDotaddress = "scope.address".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotaddress]
   @scala.inline
-  def scopeDotaddress: typings.weixinApp.weixinAppStrings.scopeDotaddress = this.cast("scope.address")
+  def scopeDotcamera: typings.weixinApp.weixinAppStrings.scopeDotcamera = "scope.camera".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotcamera]
   @scala.inline
-  def scopeDotcamera: typings.weixinApp.weixinAppStrings.scopeDotcamera = this.cast("scope.camera")
+  def scopeDotinvoice: typings.weixinApp.weixinAppStrings.scopeDotinvoice = "scope.invoice".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotinvoice]
   @scala.inline
-  def scopeDotinvoice: typings.weixinApp.weixinAppStrings.scopeDotinvoice = this.cast("scope.invoice")
+  def scopeDotinvoiceTitle: typings.weixinApp.weixinAppStrings.scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotinvoiceTitle]
   @scala.inline
-  def scopeDotinvoiceTitle: typings.weixinApp.weixinAppStrings.scopeDotinvoiceTitle = this.cast("scope.invoiceTitle")
+  def scopeDotrecord: typings.weixinApp.weixinAppStrings.scopeDotrecord = "scope.record".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotrecord]
   @scala.inline
-  def scopeDotrecord: typings.weixinApp.weixinAppStrings.scopeDotrecord = this.cast("scope.record")
+  def scopeDotuserInfo: typings.weixinApp.weixinAppStrings.scopeDotuserInfo = "scope.userInfo".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotuserInfo]
   @scala.inline
-  def scopeDotuserInfo: typings.weixinApp.weixinAppStrings.scopeDotuserInfo = this.cast("scope.userInfo")
+  def scopeDotuserLocation: typings.weixinApp.weixinAppStrings.scopeDotuserLocation = "scope.userLocation".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotuserLocation]
   @scala.inline
-  def scopeDotuserLocation: typings.weixinApp.weixinAppStrings.scopeDotuserLocation = this.cast("scope.userLocation")
+  def scopeDotuserLocationBackground: typings.weixinApp.weixinAppStrings.scopeDotuserLocationBackground = "scope.userLocationBackground".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotuserLocationBackground]
   @scala.inline
-  def scopeDotuserLocationBackground: typings.weixinApp.weixinAppStrings.scopeDotuserLocationBackground = this.cast("scope.userLocationBackground")
+  def scopeDotwerun: typings.weixinApp.weixinAppStrings.scopeDotwerun = "scope.werun".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotwerun]
   @scala.inline
-  def scopeDotwerun: typings.weixinApp.weixinAppStrings.scopeDotwerun = this.cast("scope.werun")
-  @scala.inline
-  def scopeDotwritePhotosAlbum: typings.weixinApp.weixinAppStrings.scopeDotwritePhotosAlbum = this.cast("scope.writePhotosAlbum")
+  def scopeDotwritePhotosAlbum: typings.weixinApp.weixinAppStrings.scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotwritePhotosAlbum]
 }
 

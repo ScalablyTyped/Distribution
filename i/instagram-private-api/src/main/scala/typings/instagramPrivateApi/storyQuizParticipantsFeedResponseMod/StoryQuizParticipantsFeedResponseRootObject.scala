@@ -13,7 +13,6 @@ object StoryQuizParticipantsFeedResponseRootObject {
   @scala.inline
   def apply(participant_info: StoryQuizParticipantsFeedResponseParticipantInfo, status: String): StoryQuizParticipantsFeedResponseRootObject = {
     val __obj = js.Dynamic.literal(participant_info = participant_info.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StoryQuizParticipantsFeedResponseRootObject]
   }
 }

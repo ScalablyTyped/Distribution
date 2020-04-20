@@ -16,7 +16,6 @@ object DescribeRoleAliasRequest {
   @scala.inline
   def apply(roleAlias: RoleAlias): DescribeRoleAliasRequest = {
     val __obj = js.Dynamic.literal(roleAlias = roleAlias.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeRoleAliasRequest]
   }
 }

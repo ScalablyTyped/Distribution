@@ -16,7 +16,6 @@ object AnonContent {
   @scala.inline
   def apply(content: String, contentType: PlainText | SSML | CustomPayload): AnonContent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContent]
   }
 }

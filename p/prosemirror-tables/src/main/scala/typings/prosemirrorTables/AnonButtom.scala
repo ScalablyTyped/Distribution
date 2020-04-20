@@ -15,7 +15,6 @@ object AnonButtom {
   @scala.inline
   def apply(buttom: Double, left: Double, right: Double, top: Double): AnonButtom = {
     val __obj = js.Dynamic.literal(buttom = buttom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonButtom]
   }
 }

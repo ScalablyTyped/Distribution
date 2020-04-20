@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Date
 import typings.std.Object
 import typings.std.PropertyKey
@@ -20,6 +21,12 @@ trait summaryStatisticsForAgeSummaryStatisticsForAgeParams extends Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
   var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   /**
     * The start time for the age calculation. This can be a field name or a date value, such as `Date.now()`. If a `Date` is provided, then the `endTime` parameter must be a field name.
     *
@@ -50,9 +57,11 @@ object summaryStatisticsForAgeSummaryStatisticsForAgeParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     startTime: Date | String | Double,
     unit: String,
+    signal: AbortSignal = null,
     view: MapView | SceneView = null
   ): summaryStatisticsForAgeSummaryStatisticsForAgeParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startTime = startTime.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[summaryStatisticsForAgeSummaryStatisticsForAgeParams]
   }

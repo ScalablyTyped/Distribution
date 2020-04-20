@@ -12,7 +12,6 @@ object AnonEnumValuesAnonDisabledAsDuplicateOfDefault {
   @scala.inline
   def apply(enumValues: AnonDisabledAsDuplicateOfDefault): AnonEnumValuesAnonDisabledAsDuplicateOfDefault = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonDisabledAsDuplicateOfDefault]
   }
 }

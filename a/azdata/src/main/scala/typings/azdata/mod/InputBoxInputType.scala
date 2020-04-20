@@ -23,32 +23,30 @@ trait InputBoxInputType extends js.Object
 
 object InputBoxInputType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def color: typings.azdata.azdataStrings.color = "color".asInstanceOf[typings.azdata.azdataStrings.color]
   @scala.inline
-  def color: typings.azdata.azdataStrings.color = this.cast("color")
+  def date: typings.azdata.azdataStrings.date = "date".asInstanceOf[typings.azdata.azdataStrings.date]
   @scala.inline
-  def date: typings.azdata.azdataStrings.date = this.cast("date")
+  def `datetime-local`: typings.azdata.azdataStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.azdata.azdataStrings.`datetime-local`]
   @scala.inline
-  def `datetime-local`: typings.azdata.azdataStrings.`datetime-local` = this.cast("datetime-local")
+  def email: typings.azdata.azdataStrings.email = "email".asInstanceOf[typings.azdata.azdataStrings.email]
   @scala.inline
-  def email: typings.azdata.azdataStrings.email = this.cast("email")
+  def month: typings.azdata.azdataStrings.month = "month".asInstanceOf[typings.azdata.azdataStrings.month]
   @scala.inline
-  def month: typings.azdata.azdataStrings.month = this.cast("month")
+  def number: typings.azdata.azdataStrings.number = "number".asInstanceOf[typings.azdata.azdataStrings.number]
   @scala.inline
-  def number: typings.azdata.azdataStrings.number = this.cast("number")
+  def password: typings.azdata.azdataStrings.password = "password".asInstanceOf[typings.azdata.azdataStrings.password]
   @scala.inline
-  def password: typings.azdata.azdataStrings.password = this.cast("password")
+  def range: typings.azdata.azdataStrings.range = "range".asInstanceOf[typings.azdata.azdataStrings.range]
   @scala.inline
-  def range: typings.azdata.azdataStrings.range = this.cast("range")
+  def search: typings.azdata.azdataStrings.search = "search".asInstanceOf[typings.azdata.azdataStrings.search]
   @scala.inline
-  def search: typings.azdata.azdataStrings.search = this.cast("search")
+  def text: typings.azdata.azdataStrings.text = "text".asInstanceOf[typings.azdata.azdataStrings.text]
   @scala.inline
-  def text: typings.azdata.azdataStrings.text = this.cast("text")
+  def time: typings.azdata.azdataStrings.time = "time".asInstanceOf[typings.azdata.azdataStrings.time]
   @scala.inline
-  def time: typings.azdata.azdataStrings.time = this.cast("time")
+  def url: typings.azdata.azdataStrings.url = "url".asInstanceOf[typings.azdata.azdataStrings.url]
   @scala.inline
-  def url: typings.azdata.azdataStrings.url = this.cast("url")
-  @scala.inline
-  def week: typings.azdata.azdataStrings.week = this.cast("week")
+  def week: typings.azdata.azdataStrings.week = "week".asInstanceOf[typings.azdata.azdataStrings.week]
 }
 

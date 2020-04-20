@@ -14,7 +14,6 @@ object IPropertyDefs {
   @scala.inline
   def apply(Clone: () => IPropertyDefs, Count: Double, Item: Double => IPropertyDef): IPropertyDefs = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
-  
     __obj.asInstanceOf[IPropertyDefs]
   }
 }

@@ -14,7 +14,6 @@ object PickImpldisplayType {
   @scala.inline
   def apply(displayType: `false` | String): PickImpldisplayType = {
     val __obj = js.Dynamic.literal(displayType = displayType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldisplayType]
   }
 }

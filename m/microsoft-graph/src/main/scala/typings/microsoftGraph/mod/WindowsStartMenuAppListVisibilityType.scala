@@ -14,14 +14,12 @@ trait WindowsStartMenuAppListVisibilityType extends js.Object
 
 object WindowsStartMenuAppListVisibilityType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def collapse: typings.microsoftGraph.microsoftGraphStrings.collapse = "collapse".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.collapse]
   @scala.inline
-  def collapse: typings.microsoftGraph.microsoftGraphStrings.collapse = this.cast("collapse")
+  def disableSettingsApp: typings.microsoftGraph.microsoftGraphStrings.disableSettingsApp = "disableSettingsApp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disableSettingsApp]
   @scala.inline
-  def disableSettingsApp: typings.microsoftGraph.microsoftGraphStrings.disableSettingsApp = this.cast("disableSettingsApp")
+  def remove: typings.microsoftGraph.microsoftGraphStrings.remove = "remove".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.remove]
   @scala.inline
-  def remove: typings.microsoftGraph.microsoftGraphStrings.remove = this.cast("remove")
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }
 

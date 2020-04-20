@@ -1,5 +1,6 @@
 package typings.firebaseUtil.errorsMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
-  */ typings.firebaseUtil.firebaseUtilStrings.ErrorFactory with js.Any */] protected () extends js.Object {
+  */ typings.firebaseUtil.firebaseUtilStrings.ErrorFactory with TopLevel[js.Any] */] protected () extends js.Object {
   def this(service: String, serviceName: String, errors: ErrorMap[ErrorCode]) = this()
   val errors: js.Any = js.native
   val service: js.Any = js.native

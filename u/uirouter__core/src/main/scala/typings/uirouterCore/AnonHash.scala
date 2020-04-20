@@ -15,7 +15,6 @@ object AnonHash {
   @scala.inline
   def apply(hash: js.Any, path: js.Any, search: js.Any, url: String): AnonHash = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHash]
   }
 }

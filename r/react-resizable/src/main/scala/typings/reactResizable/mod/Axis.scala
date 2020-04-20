@@ -14,14 +14,12 @@ trait Axis extends js.Object
 
 object Axis {
   @scala.inline
-  def both: typings.reactResizable.reactResizableStrings.both = this.cast("both")
+  def both: typings.reactResizable.reactResizableStrings.both = "both".asInstanceOf[typings.reactResizable.reactResizableStrings.both]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.reactResizable.reactResizableStrings.none = "none".asInstanceOf[typings.reactResizable.reactResizableStrings.none]
   @scala.inline
-  def none: typings.reactResizable.reactResizableStrings.none = this.cast("none")
+  def x: typings.reactResizable.reactResizableStrings.x = "x".asInstanceOf[typings.reactResizable.reactResizableStrings.x]
   @scala.inline
-  def x: typings.reactResizable.reactResizableStrings.x = this.cast("x")
-  @scala.inline
-  def y: typings.reactResizable.reactResizableStrings.y = this.cast("y")
+  def y: typings.reactResizable.reactResizableStrings.y = "y".asInstanceOf[typings.reactResizable.reactResizableStrings.y]
 }
 

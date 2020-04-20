@@ -12,7 +12,6 @@ object IObjectComparer {
   @scala.inline
   def apply(Compare: (IObjectVersion, IObjectVersion) => Double): IObjectComparer = {
     val __obj = js.Dynamic.literal(Compare = js.Any.fromFunction2(Compare))
-  
     __obj.asInstanceOf[IObjectComparer]
   }
 }

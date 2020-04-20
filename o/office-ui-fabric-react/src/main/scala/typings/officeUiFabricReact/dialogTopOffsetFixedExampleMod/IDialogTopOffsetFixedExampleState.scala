@@ -13,7 +13,6 @@ object IDialogTopOffsetFixedExampleState {
   @scala.inline
   def apply(hideDialog: Boolean, optionSelected: String): IDialogTopOffsetFixedExampleState = {
     val __obj = js.Dynamic.literal(hideDialog = hideDialog.asInstanceOf[js.Any], optionSelected = optionSelected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDialogTopOffsetFixedExampleState]
   }
 }

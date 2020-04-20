@@ -17,20 +17,18 @@ trait Protocol extends js.Object
 
 object Protocol {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def file: typings.requiresPort.requiresPortStrings.file = "file".asInstanceOf[typings.requiresPort.requiresPortStrings.file]
   @scala.inline
-  def file: typings.requiresPort.requiresPortStrings.file = this.cast("file")
+  def ftp: typings.requiresPort.requiresPortStrings.ftp = "ftp".asInstanceOf[typings.requiresPort.requiresPortStrings.ftp]
   @scala.inline
-  def ftp: typings.requiresPort.requiresPortStrings.ftp = this.cast("ftp")
+  def gopher: typings.requiresPort.requiresPortStrings.gopher = "gopher".asInstanceOf[typings.requiresPort.requiresPortStrings.gopher]
   @scala.inline
-  def gopher: typings.requiresPort.requiresPortStrings.gopher = this.cast("gopher")
+  def http: typings.requiresPort.requiresPortStrings.http = "http".asInstanceOf[typings.requiresPort.requiresPortStrings.http]
   @scala.inline
-  def http: typings.requiresPort.requiresPortStrings.http = this.cast("http")
+  def https: typings.requiresPort.requiresPortStrings.https = "https".asInstanceOf[typings.requiresPort.requiresPortStrings.https]
   @scala.inline
-  def https: typings.requiresPort.requiresPortStrings.https = this.cast("https")
+  def ws: typings.requiresPort.requiresPortStrings.ws = "ws".asInstanceOf[typings.requiresPort.requiresPortStrings.ws]
   @scala.inline
-  def ws: typings.requiresPort.requiresPortStrings.ws = this.cast("ws")
-  @scala.inline
-  def wss: typings.requiresPort.requiresPortStrings.wss = this.cast("wss")
+  def wss: typings.requiresPort.requiresPortStrings.wss = "wss".asInstanceOf[typings.requiresPort.requiresPortStrings.wss]
 }
 

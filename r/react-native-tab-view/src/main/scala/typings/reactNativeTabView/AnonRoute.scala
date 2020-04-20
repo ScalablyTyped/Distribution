@@ -13,7 +13,6 @@ object AnonRoute {
   @scala.inline
   def apply[T /* <: Route */](route: T): AnonRoute[T] = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRoute[T]]
   }
 }

@@ -21,7 +21,6 @@ object IUserNaturalCapacity {
   @scala.inline
   def apply(Declarative: DECLARATIVE, Normal: NORMAL): IUserNaturalCapacity = {
     val __obj = js.Dynamic.literal(Declarative = Declarative.asInstanceOf[js.Any], Normal = Normal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUserNaturalCapacity]
   }
 }

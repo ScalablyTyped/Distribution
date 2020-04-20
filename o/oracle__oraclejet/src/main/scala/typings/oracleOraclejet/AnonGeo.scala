@@ -13,7 +13,6 @@ object AnonGeo {
   @scala.inline
   def apply(geo: js.Object, propertiesKeys: AnonLongLabel): AnonGeo = {
     val __obj = js.Dynamic.literal(geo = geo.asInstanceOf[js.Any], propertiesKeys = propertiesKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGeo]
   }
 }

@@ -16,18 +16,16 @@ trait ErrorCategoryType extends js.Object
 
 object ErrorCategoryType {
   @scala.inline
-  def API_ERROR: typings.squareConnect.squareConnectStrings.API_ERROR = this.cast("API_ERROR")
+  def API_ERROR: typings.squareConnect.squareConnectStrings.API_ERROR = "API_ERROR".asInstanceOf[typings.squareConnect.squareConnectStrings.API_ERROR]
   @scala.inline
-  def AUTHENTICATION_ERROR: typings.squareConnect.squareConnectStrings.AUTHENTICATION_ERROR = this.cast("AUTHENTICATION_ERROR")
+  def AUTHENTICATION_ERROR: typings.squareConnect.squareConnectStrings.AUTHENTICATION_ERROR = "AUTHENTICATION_ERROR".asInstanceOf[typings.squareConnect.squareConnectStrings.AUTHENTICATION_ERROR]
   @scala.inline
-  def INVALID_REQUEST_ERROR: typings.squareConnect.squareConnectStrings.INVALID_REQUEST_ERROR = this.cast("INVALID_REQUEST_ERROR")
+  def INVALID_REQUEST_ERROR: typings.squareConnect.squareConnectStrings.INVALID_REQUEST_ERROR = "INVALID_REQUEST_ERROR".asInstanceOf[typings.squareConnect.squareConnectStrings.INVALID_REQUEST_ERROR]
   @scala.inline
-  def PAYMENT_METHOD_ERROR: typings.squareConnect.squareConnectStrings.PAYMENT_METHOD_ERROR = this.cast("PAYMENT_METHOD_ERROR")
+  def PAYMENT_METHOD_ERROR: typings.squareConnect.squareConnectStrings.PAYMENT_METHOD_ERROR = "PAYMENT_METHOD_ERROR".asInstanceOf[typings.squareConnect.squareConnectStrings.PAYMENT_METHOD_ERROR]
   @scala.inline
-  def RATE_LIMIT_ERROR: typings.squareConnect.squareConnectStrings.RATE_LIMIT_ERROR = this.cast("RATE_LIMIT_ERROR")
+  def RATE_LIMIT_ERROR: typings.squareConnect.squareConnectStrings.RATE_LIMIT_ERROR = "RATE_LIMIT_ERROR".asInstanceOf[typings.squareConnect.squareConnectStrings.RATE_LIMIT_ERROR]
   @scala.inline
-  def REFUND_ERROR: typings.squareConnect.squareConnectStrings.REFUND_ERROR = this.cast("REFUND_ERROR")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def REFUND_ERROR: typings.squareConnect.squareConnectStrings.REFUND_ERROR = "REFUND_ERROR".asInstanceOf[typings.squareConnect.squareConnectStrings.REFUND_ERROR]
 }
 

@@ -20,7 +20,6 @@ object EncryptionAlgorithmOptions {
   @scala.inline
   def apply(allowedValues: EncryptionAlgorithms, defaultValue: EncryptionAlgorithm): EncryptionAlgorithmOptions = {
     val __obj = js.Dynamic.literal(allowedValues = allowedValues.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptionAlgorithmOptions]
   }
 }

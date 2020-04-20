@@ -14,7 +14,6 @@ object AnonOnPageChangeCancel {
   @scala.inline
   def apply(onPageChangeCancel: () => Unit, onPageChangeConfirm: () => Unit, onPageChangeStart: () => Unit): AnonOnPageChangeCancel = {
     val __obj = js.Dynamic.literal(onPageChangeCancel = js.Any.fromFunction0(onPageChangeCancel), onPageChangeConfirm = js.Any.fromFunction0(onPageChangeConfirm), onPageChangeStart = js.Any.fromFunction0(onPageChangeStart))
-  
     __obj.asInstanceOf[AnonOnPageChangeCancel]
   }
 }

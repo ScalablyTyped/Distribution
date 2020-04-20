@@ -26,7 +26,7 @@ class FormDataRequestHandling protected () extends RequestHandling {
   ) = this()
   @JSName("model")
   var model_FFormDataRequestHandling: IModel = js.native
-  def parts(): IList[FormDataPart] = js.native
+  def parts: IList[FormDataPart] = js.native
 }
 
 /* static members */

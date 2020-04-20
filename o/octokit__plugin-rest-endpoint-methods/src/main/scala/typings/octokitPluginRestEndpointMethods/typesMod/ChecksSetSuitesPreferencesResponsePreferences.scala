@@ -12,7 +12,6 @@ object ChecksSetSuitesPreferencesResponsePreferences {
   @scala.inline
   def apply(auto_trigger_checks: js.Array[ChecksSetSuitesPreferencesResponsePreferencesAutoTriggerChecksItem]): ChecksSetSuitesPreferencesResponsePreferences = {
     val __obj = js.Dynamic.literal(auto_trigger_checks = auto_trigger_checks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChecksSetSuitesPreferencesResponsePreferences]
   }
 }

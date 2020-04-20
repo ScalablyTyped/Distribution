@@ -21,7 +21,6 @@ object AnonInputSchemaPath {
     schema: GraphQLSchema
   ): AnonInputSchemaPath = {
     val __obj = js.Dynamic.literal(inputSchemaPath = inputSchemaPath.asInstanceOf[js.Any], isDefaultExport = isDefaultExport.asInstanceOf[js.Any], outputBindingPath = outputBindingPath.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInputSchemaPath]
   }
 }

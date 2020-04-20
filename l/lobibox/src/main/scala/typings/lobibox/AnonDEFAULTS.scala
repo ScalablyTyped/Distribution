@@ -15,7 +15,6 @@ object AnonDEFAULTS {
   @scala.inline
   def apply(DEFAULTS: MessageBoxesDefault, OPTIONS: MessageBoxesOptions): AnonDEFAULTS = {
     val __obj = js.Dynamic.literal(DEFAULTS = DEFAULTS.asInstanceOf[js.Any], OPTIONS = OPTIONS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDEFAULTS]
   }
 }

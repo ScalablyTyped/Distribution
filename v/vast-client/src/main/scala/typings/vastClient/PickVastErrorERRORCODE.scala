@@ -13,7 +13,6 @@ object PickVastErrorERRORCODE {
   @scala.inline
   def apply(ERRORCODE: String | Double): PickVastErrorERRORCODE = {
     val __obj = js.Dynamic.literal(ERRORCODE = ERRORCODE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickVastErrorERRORCODE]
   }
 }

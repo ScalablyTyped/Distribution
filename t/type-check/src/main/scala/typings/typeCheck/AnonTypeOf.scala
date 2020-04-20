@@ -13,7 +13,6 @@ object AnonTypeOf {
   @scala.inline
   def apply(typeOf: String, validate: js.Any => js.Any): AnonTypeOf = {
     val __obj = js.Dynamic.literal(typeOf = typeOf.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate))
-  
     __obj.asInstanceOf[AnonTypeOf]
   }
 }

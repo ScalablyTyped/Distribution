@@ -16,7 +16,6 @@ object DeleteListenerInput {
   @scala.inline
   def apply(ListenerArn: ListenerArn): DeleteListenerInput = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteListenerInput]
   }
 }

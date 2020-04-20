@@ -15,7 +15,6 @@ object ClientHubInvocation {
   @scala.inline
   def apply(Args: String, Hub: String, Method: String, State: String): ClientHubInvocation = {
     val __obj = js.Dynamic.literal(Args = Args.asInstanceOf[js.Any], Hub = Hub.asInstanceOf[js.Any], Method = Method.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientHubInvocation]
   }
 }

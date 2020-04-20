@@ -12,7 +12,6 @@ object AnonSecureLockIcon {
   @scala.inline
   def apply(SecureLockIcon: Double): AnonSecureLockIcon = {
     val __obj = js.Dynamic.literal(SecureLockIcon = SecureLockIcon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSecureLockIcon]
   }
 }

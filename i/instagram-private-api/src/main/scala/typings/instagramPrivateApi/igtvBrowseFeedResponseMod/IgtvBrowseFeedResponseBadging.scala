@@ -13,7 +13,6 @@ object IgtvBrowseFeedResponseBadging {
   @scala.inline
   def apply(ids: js.Array[_], items: js.Array[_]): IgtvBrowseFeedResponseBadging = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IgtvBrowseFeedResponseBadging]
   }
 }

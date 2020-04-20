@@ -20,7 +20,6 @@ object BatchAttachPolicy {
   @scala.inline
   def apply(ObjectReference: ObjectReference, PolicyReference: ObjectReference): BatchAttachPolicy = {
     val __obj = js.Dynamic.literal(ObjectReference = ObjectReference.asInstanceOf[js.Any], PolicyReference = PolicyReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchAttachPolicy]
   }
 }

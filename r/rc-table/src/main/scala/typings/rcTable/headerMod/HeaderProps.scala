@@ -26,7 +26,6 @@ object HeaderProps {
     stickyOffsets: StickyOffsets
   ): HeaderProps[RecordType] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], flattenColumns = flattenColumns.asInstanceOf[js.Any], onHeaderRow = js.Any.fromFunction2(onHeaderRow), stickyOffsets = stickyOffsets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeaderProps[RecordType]]
   }
 }

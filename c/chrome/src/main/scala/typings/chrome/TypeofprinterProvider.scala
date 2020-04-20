@@ -24,7 +24,6 @@ object TypeofprinterProvider {
     onPrintRequested: PrintRequestedEvent
   ): TypeofprinterProvider = {
     val __obj = js.Dynamic.literal(onGetCapabilityRequested = onGetCapabilityRequested.asInstanceOf[js.Any], onGetPrintersRequested = onGetPrintersRequested.asInstanceOf[js.Any], onGetUsbPrinterInfoRequested = onGetUsbPrinterInfoRequested.asInstanceOf[js.Any], onPrintRequested = onPrintRequested.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofprinterProvider]
   }
 }

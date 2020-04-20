@@ -14,7 +14,6 @@ object AnonFilterElement {
   @scala.inline
   def apply(filterElement: Element, sortElement: Element): AnonFilterElement = {
     val __obj = js.Dynamic.literal(filterElement = filterElement.asInstanceOf[js.Any], sortElement = sortElement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFilterElement]
   }
 }

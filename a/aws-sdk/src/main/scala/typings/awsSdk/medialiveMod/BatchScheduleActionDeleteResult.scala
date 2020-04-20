@@ -16,7 +16,6 @@ object BatchScheduleActionDeleteResult {
   @scala.inline
   def apply(ScheduleActions: listOfScheduleAction): BatchScheduleActionDeleteResult = {
     val __obj = js.Dynamic.literal(ScheduleActions = ScheduleActions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchScheduleActionDeleteResult]
   }
 }

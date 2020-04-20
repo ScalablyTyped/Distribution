@@ -32,28 +32,26 @@ trait DELTA extends js.Object
 
 object DELTA {
   @scala.inline
-  def ADDED: `1` = this.cast(1)
+  def ADDED: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def CONFLICTED: `10` = this.cast(10)
+  def CONFLICTED: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def COPIED: `5` = this.cast(5)
+  def COPIED: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def DELETED: `2` = this.cast(2)
+  def DELETED: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def IGNORED: `6` = this.cast(6)
+  def IGNORED: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def MODIFIED: `3` = this.cast(3)
+  def MODIFIED: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def RENAMED: `4` = this.cast(4)
+  def RENAMED: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def TYPECHANGE: `8` = this.cast(8)
+  def TYPECHANGE: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def UNMODIFIED: `0` = this.cast(0)
+  def UNMODIFIED: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def UNREADABLE: `9` = this.cast(9)
+  def UNREADABLE: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def UNTRACKED: `7` = this.cast(7)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNTRACKED: `7` = 7.asInstanceOf[`7`]
 }
 

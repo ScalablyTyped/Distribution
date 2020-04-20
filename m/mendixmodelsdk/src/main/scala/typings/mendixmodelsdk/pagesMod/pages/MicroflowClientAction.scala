@@ -25,7 +25,7 @@ class MicroflowClientAction protected () extends ClientAction {
   ) = this()
   @JSName("model")
   var model_FMicroflowClientAction: IModel = js.native
-  def microflowSettings(): MicroflowSettings = js.native
+  def microflowSettings: MicroflowSettings = js.native
   def microflowSettings(newValue: MicroflowSettings): js.Any = js.native
 }
 

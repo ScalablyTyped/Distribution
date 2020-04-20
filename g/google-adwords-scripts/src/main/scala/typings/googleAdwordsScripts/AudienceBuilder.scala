@@ -22,7 +22,6 @@ object AudienceBuilder {
     withCpm: Double => AudienceBuilder[Audience]
   ): AudienceBuilder[Audience] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withAudience = js.Any.fromFunction1(withAudience), withAudienceId = js.Any.fromFunction1(withAudienceId), withAudienceType = js.Any.fromFunction1(withAudienceType), withCpc = js.Any.fromFunction1(withCpc), withCpm = js.Any.fromFunction1(withCpm))
-  
     __obj.asInstanceOf[AudienceBuilder[Audience]]
   }
 }

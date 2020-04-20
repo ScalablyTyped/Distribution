@@ -16,7 +16,6 @@ object RebootInstanceRequest {
   @scala.inline
   def apply(InstanceId: String): RebootInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RebootInstanceRequest]
   }
 }

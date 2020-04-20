@@ -13,7 +13,6 @@ object TeamFieldValue {
   @scala.inline
   def apply(includeChildren: Boolean, value: String): TeamFieldValue = {
     val __obj = js.Dynamic.literal(includeChildren = includeChildren.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamFieldValue]
   }
 }

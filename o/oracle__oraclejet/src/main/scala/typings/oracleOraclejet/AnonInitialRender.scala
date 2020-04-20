@@ -12,7 +12,6 @@ object AnonInitialRender {
   @scala.inline
   def apply(initialRender: Boolean): AnonInitialRender = {
     val __obj = js.Dynamic.literal(initialRender = initialRender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInitialRender]
   }
 }

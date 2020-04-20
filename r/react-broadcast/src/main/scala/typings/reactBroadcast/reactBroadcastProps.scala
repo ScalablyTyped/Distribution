@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactBroadcastProps {
   @scala.inline
-  def BroadcastProps: Props.type = typings.reactBroadcast.mod.Broadcast.Props
+  def BroadcastProps: Props.type = Props
   type BroadcastProps[T] = Props[T]
   @scala.inline
   def SubscriberProps: typings.reactBroadcast.mod.Subscriber.Props.type = typings.reactBroadcast.mod.Subscriber.Props

@@ -13,7 +13,6 @@ object PickImplanimateChildren {
   @scala.inline
   def apply(animateChildren: Boolean): PickImplanimateChildren = {
     val __obj = js.Dynamic.literal(animateChildren = animateChildren.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplanimateChildren]
   }
 }

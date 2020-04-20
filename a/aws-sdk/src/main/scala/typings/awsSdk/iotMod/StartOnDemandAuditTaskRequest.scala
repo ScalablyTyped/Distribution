@@ -16,7 +16,6 @@ object StartOnDemandAuditTaskRequest {
   @scala.inline
   def apply(targetCheckNames: TargetAuditCheckNames): StartOnDemandAuditTaskRequest = {
     val __obj = js.Dynamic.literal(targetCheckNames = targetCheckNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartOnDemandAuditTaskRequest]
   }
 }

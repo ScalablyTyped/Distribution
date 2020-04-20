@@ -16,7 +16,6 @@ object GetNetworkInput {
   @scala.inline
   def apply(NetworkId: ResourceIdString): GetNetworkInput = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetNetworkInput]
   }
 }

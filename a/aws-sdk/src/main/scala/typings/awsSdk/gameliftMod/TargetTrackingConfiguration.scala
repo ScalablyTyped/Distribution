@@ -16,7 +16,6 @@ object TargetTrackingConfiguration {
   @scala.inline
   def apply(TargetValue: NonNegativeDouble): TargetTrackingConfiguration = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TargetTrackingConfiguration]
   }
 }

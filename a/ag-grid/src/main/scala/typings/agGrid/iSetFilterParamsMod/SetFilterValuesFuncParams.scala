@@ -14,7 +14,6 @@ object SetFilterValuesFuncParams {
   @scala.inline
   def apply(colDef: ColDef, success: js.Array[String] => Unit): SetFilterValuesFuncParams = {
     val __obj = js.Dynamic.literal(colDef = colDef.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
-  
     __obj.asInstanceOf[SetFilterValuesFuncParams]
   }
 }

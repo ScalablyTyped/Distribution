@@ -13,7 +13,6 @@ object AnonPagination {
   @scala.inline
   def apply(pagination: Pagination): AnonPagination = {
     val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPagination]
   }
 }

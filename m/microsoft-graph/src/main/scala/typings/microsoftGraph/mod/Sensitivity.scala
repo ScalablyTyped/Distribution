@@ -14,14 +14,12 @@ trait Sensitivity extends js.Object
 
 object Sensitivity {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def confidential: typings.microsoftGraph.microsoftGraphStrings.confidential = "confidential".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.confidential]
   @scala.inline
-  def confidential: typings.microsoftGraph.microsoftGraphStrings.confidential = this.cast("confidential")
+  def normal: typings.microsoftGraph.microsoftGraphStrings.normal = "normal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.normal]
   @scala.inline
-  def normal: typings.microsoftGraph.microsoftGraphStrings.normal = this.cast("normal")
+  def personal: typings.microsoftGraph.microsoftGraphStrings.personal = "personal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.personal]
   @scala.inline
-  def personal: typings.microsoftGraph.microsoftGraphStrings.personal = this.cast("personal")
-  @scala.inline
-  def `private`: typings.microsoftGraph.microsoftGraphStrings.`private` = this.cast("private")
+  def `private`: typings.microsoftGraph.microsoftGraphStrings.`private` = "private".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.`private`]
 }
 

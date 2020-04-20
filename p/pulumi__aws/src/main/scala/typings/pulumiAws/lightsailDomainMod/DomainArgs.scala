@@ -17,7 +17,6 @@ object DomainArgs {
   @scala.inline
   def apply(domainName: Input[String]): DomainArgs = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainArgs]
   }
 }

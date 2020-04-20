@@ -27,7 +27,6 @@ object SortOver {
     oldIndex: Double
   ): SortOver = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], helper = helper.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isKeySorting = isKeySorting.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SortOver]
   }
 }

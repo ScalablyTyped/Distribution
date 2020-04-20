@@ -15,7 +15,6 @@ object AnonMillion {
   @scala.inline
   def apply(billion: String, million: String, thousand: String, trillion: String): AnonMillion = {
     val __obj = js.Dynamic.literal(billion = billion.asInstanceOf[js.Any], million = million.asInstanceOf[js.Any], thousand = thousand.asInstanceOf[js.Any], trillion = trillion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMillion]
   }
 }

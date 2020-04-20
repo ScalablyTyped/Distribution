@@ -14,7 +14,6 @@ object GmePersisted {
   @scala.inline
   def apply(objects: StringDictionary[DataObject], rootHash: ObjectHash): GmePersisted = {
     val __obj = js.Dynamic.literal(objects = objects.asInstanceOf[js.Any], rootHash = rootHash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GmePersisted]
   }
 }

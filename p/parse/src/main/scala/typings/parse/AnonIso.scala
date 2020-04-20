@@ -16,7 +16,6 @@ object AnonIso {
   @scala.inline
   def apply(__type: Date, iso: String): AnonIso = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], iso = iso.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIso]
   }
 }

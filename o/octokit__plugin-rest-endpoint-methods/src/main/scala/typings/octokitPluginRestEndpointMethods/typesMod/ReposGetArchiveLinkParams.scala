@@ -15,7 +15,6 @@ object ReposGetArchiveLinkParams {
   @scala.inline
   def apply(archive_format: String, owner: String, ref: String, repo: String): ReposGetArchiveLinkParams = {
     val __obj = js.Dynamic.literal(archive_format = archive_format.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetArchiveLinkParams]
   }
 }

@@ -14,7 +14,6 @@ object TrackedEmailCounts {
   @scala.inline
   def apply(Days: js.Array[AnonTracked], Tracked: Double): TrackedEmailCounts = {
     val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Tracked = Tracked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrackedEmailCounts]
   }
 }

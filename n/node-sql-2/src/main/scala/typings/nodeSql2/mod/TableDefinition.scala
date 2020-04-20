@@ -1,5 +1,6 @@
 package typings.nodeSql2.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.nodeSql2.AnonColumns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TableDefinition[Name /* <: String */, Row] extends js.Object {
   var columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
-    */ typings.nodeSql2.nodeSql2Strings.TableDefinition with Row
+    */ typings.nodeSql2.nodeSql2Strings.TableDefinition with TopLevel[Row]
   var dialect: js.UndefOr[SQLDialects] = js.undefined
   var foreignKeys: js.UndefOr[AnonColumns[Row]] = js.undefined
   var isTemporary: js.UndefOr[Boolean] = js.undefined
@@ -21,7 +22,7 @@ object TableDefinition {
   def apply[Name /* <: String */, Row](
     columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
-    */ typings.nodeSql2.nodeSql2Strings.TableDefinition with Row,
+    */ typings.nodeSql2.nodeSql2Strings.TableDefinition with TopLevel[Row],
     name: Name,
     schema: String,
     dialect: SQLDialects = null,

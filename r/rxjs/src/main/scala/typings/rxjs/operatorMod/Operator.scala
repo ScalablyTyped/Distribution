@@ -14,7 +14,6 @@ object Operator {
   @scala.inline
   def apply[T, R](call: (Subscriber[R], js.Any) => TeardownLogic): Operator[T, R] = {
     val __obj = js.Dynamic.literal(call = js.Any.fromFunction2(call))
-  
     __obj.asInstanceOf[Operator[T, R]]
   }
 }

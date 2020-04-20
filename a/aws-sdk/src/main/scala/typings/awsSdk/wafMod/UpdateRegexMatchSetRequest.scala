@@ -24,7 +24,6 @@ object UpdateRegexMatchSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, RegexMatchSetId: ResourceId, Updates: RegexMatchSetUpdates): UpdateRegexMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], RegexMatchSetId = RegexMatchSetId.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateRegexMatchSetRequest]
   }
 }

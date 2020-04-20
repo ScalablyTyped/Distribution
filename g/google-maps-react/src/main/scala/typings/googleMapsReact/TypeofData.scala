@@ -76,7 +76,6 @@ object TypeofData {
     Polygon: Instantiable1[/* elements */ js.Array[LinearRing | (js.Array[LatLng | LatLngLiteral])], Polygon]
   ): TypeofData = {
     val __obj = js.Dynamic.literal(Feature = Feature.asInstanceOf[js.Any], Geometry = Geometry.asInstanceOf[js.Any], GeometryCollection = GeometryCollection.asInstanceOf[js.Any], LineString = LineString.asInstanceOf[js.Any], LinearRing = LinearRing.asInstanceOf[js.Any], MultiLineString = MultiLineString.asInstanceOf[js.Any], MultiPoint = MultiPoint.asInstanceOf[js.Any], MultiPolygon = MultiPolygon.asInstanceOf[js.Any], Point = Point.asInstanceOf[js.Any], Polygon = Polygon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofData]
   }
 }

@@ -12,7 +12,6 @@ object UserBlocks {
   @scala.inline
   def apply(blocked_for: js.Array[BlockedForEntry]): UserBlocks = {
     val __obj = js.Dynamic.literal(blocked_for = blocked_for.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserBlocks]
   }
 }

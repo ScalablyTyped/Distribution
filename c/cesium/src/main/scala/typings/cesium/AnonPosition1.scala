@@ -14,7 +14,6 @@ object AnonPosition1 {
   @scala.inline
   def apply(position1: Cartesian2, position2: Cartesian2): AnonPosition1 = {
     val __obj = js.Dynamic.literal(position1 = position1.asInstanceOf[js.Any], position2 = position2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPosition1]
   }
 }

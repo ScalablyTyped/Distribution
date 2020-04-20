@@ -38,7 +38,6 @@ object CommentsResource {
     update: AnonAlt => Request_[Comment]
   ): CommentsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), markAsSpam = js.Any.fromFunction1(markAsSpam), setModerationStatus = js.Any.fromFunction1(setModerationStatus), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[CommentsResource]
   }
 }

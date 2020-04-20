@@ -23,7 +23,6 @@ object ReadonlyRequiredOptions {
     template: String
   ): ReadonlyRequiredOptions = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], promptOnNonTargetBrowser = promptOnNonTargetBrowser.asInstanceOf[js.Any], promptOnUnknownBrowser = promptOnUnknownBrowser.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyRequiredOptions]
   }
 }

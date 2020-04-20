@@ -13,7 +13,6 @@ object Response {
   @scala.inline
   def apply[T /* <: js.Object */](data: T, meta: APIResponseMeta): Response[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Response[T]]
   }
 }

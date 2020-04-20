@@ -16,7 +16,6 @@ object GetVocabularyFilterRequest {
   @scala.inline
   def apply(VocabularyFilterName: VocabularyFilterName): GetVocabularyFilterRequest = {
     val __obj = js.Dynamic.literal(VocabularyFilterName = VocabularyFilterName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVocabularyFilterRequest]
   }
 }

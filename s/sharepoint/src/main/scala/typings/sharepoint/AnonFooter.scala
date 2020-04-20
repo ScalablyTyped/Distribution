@@ -15,7 +15,6 @@ object AnonFooter {
   @scala.inline
   def apply(Footer: Double, Loading: Double, Option: Double, Separator: Double): AnonFooter = {
     val __obj = js.Dynamic.literal(Footer = Footer.asInstanceOf[js.Any], Loading = Loading.asInstanceOf[js.Any], Option = Option.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFooter]
   }
 }

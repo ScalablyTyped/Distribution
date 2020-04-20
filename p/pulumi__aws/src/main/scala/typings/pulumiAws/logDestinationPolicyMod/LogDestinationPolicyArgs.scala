@@ -21,7 +21,6 @@ object LogDestinationPolicyArgs {
   @scala.inline
   def apply(accessPolicy: Input[String], destinationName: Input[String]): LogDestinationPolicyArgs = {
     val __obj = js.Dynamic.literal(accessPolicy = accessPolicy.asInstanceOf[js.Any], destinationName = destinationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogDestinationPolicyArgs]
   }
 }

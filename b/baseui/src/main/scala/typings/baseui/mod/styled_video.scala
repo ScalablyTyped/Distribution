@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_video extends js.Object {
-  def apply[P /* <: js.Object */, T](component: video, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[video], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: video, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[video], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: video, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[video], 
+      Exclude[/* keyof react.react.ComponentProps<'video'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: video, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[video], 
+      Exclude[/* keyof react.react.ComponentProps<'video'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

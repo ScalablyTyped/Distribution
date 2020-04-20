@@ -28,7 +28,6 @@ object IAxes {
     visible: Boolean
   ): IAxes = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), bottom = bottom.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAxes]
   }
 }

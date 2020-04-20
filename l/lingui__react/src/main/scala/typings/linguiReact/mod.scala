@@ -67,11 +67,11 @@ object mod extends js.Object {
   def i18nMark(id: String): String = js.native
   def withI18n(): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[String, i18n | i18nHash]], ComponentState]
+    ComponentClass[Pick[_, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
   ] = js.native
   def withI18n(options: withI18nOptions): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[String, i18n | i18nHash]], ComponentState]
+    ComponentClass[Pick[_, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
   ] = js.native
   @js.native
   object DateFormat extends TopLevel[

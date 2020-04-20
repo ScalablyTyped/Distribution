@@ -13,7 +13,6 @@ object PickObjectTypeKnobanyvalu {
   @scala.inline
   def apply(value: js.Any): PickObjectTypeKnobanyvalu = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickObjectTypeKnobanyvalu]
   }
 }

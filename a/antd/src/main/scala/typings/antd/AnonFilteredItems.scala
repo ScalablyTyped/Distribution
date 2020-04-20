@@ -15,7 +15,6 @@ object AnonFilteredItems {
   @scala.inline
   def apply(filteredItems: js.Array[TransferItem], filteredRenderItems: js.Array[RenderedItem]): AnonFilteredItems = {
     val __obj = js.Dynamic.literal(filteredItems = filteredItems.asInstanceOf[js.Any], filteredRenderItems = filteredRenderItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFilteredItems]
   }
 }

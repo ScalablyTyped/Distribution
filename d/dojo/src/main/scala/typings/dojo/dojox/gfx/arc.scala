@@ -58,7 +58,6 @@ object arc {
     unitArcAsBezier: Double => Unit
   ): arc = {
     val __obj = js.Dynamic.literal(arcAsBezier = js.Any.fromFunction8(arcAsBezier), curvePI4 = curvePI4.asInstanceOf[js.Any], unitArcAsBezier = js.Any.fromFunction1(unitArcAsBezier))
-  
     __obj.asInstanceOf[arc]
   }
 }

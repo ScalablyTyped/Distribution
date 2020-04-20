@@ -33,7 +33,6 @@ object Input {
   @scala.inline
   def apply(gamepads: Boolean, mspointer: Boolean, touch: Boolean, wheelType: String): Input = {
     val __obj = js.Dynamic.literal(gamepads = gamepads.asInstanceOf[js.Any], mspointer = mspointer.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], wheelType = wheelType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Input]
   }
 }

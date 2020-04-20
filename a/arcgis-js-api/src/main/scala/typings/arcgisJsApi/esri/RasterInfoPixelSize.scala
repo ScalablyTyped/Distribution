@@ -1,0 +1,37 @@
+package typings.arcgisJsApi.esri
+
+import typings.std.Object
+import typings.std.PropertyKey
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RasterInfoPixelSize extends Object {
+  /**
+    * Pixel size along the x axis.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
+    */
+  var x: Double
+  /**
+    * Pixel size along the y axis.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
+    */
+  var y: Double
+}
+
+object RasterInfoPixelSize {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    x: Double,
+    y: Double
+  ): RasterInfoPixelSize = {
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RasterInfoPixelSize]
+  }
+}
+

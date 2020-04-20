@@ -12,10 +12,8 @@ trait RefresherAnimationType extends js.Object
 
 object RefresherAnimationType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def scale: typings.ionicCore.ionicCoreStrings.scale = "scale".asInstanceOf[typings.ionicCore.ionicCoreStrings.scale]
   @scala.inline
-  def scale: typings.ionicCore.ionicCoreStrings.scale = this.cast("scale")
-  @scala.inline
-  def translate: typings.ionicCore.ionicCoreStrings.translate = this.cast("translate")
+  def translate: typings.ionicCore.ionicCoreStrings.translate = "translate".asInstanceOf[typings.ionicCore.ionicCoreStrings.translate]
 }
 

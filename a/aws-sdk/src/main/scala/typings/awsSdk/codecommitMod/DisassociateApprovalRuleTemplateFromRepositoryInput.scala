@@ -20,7 +20,6 @@ object DisassociateApprovalRuleTemplateFromRepositoryInput {
   @scala.inline
   def apply(approvalRuleTemplateName: ApprovalRuleTemplateName, repositoryName: RepositoryName): DisassociateApprovalRuleTemplateFromRepositoryInput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplateName = approvalRuleTemplateName.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateApprovalRuleTemplateFromRepositoryInput]
   }
 }

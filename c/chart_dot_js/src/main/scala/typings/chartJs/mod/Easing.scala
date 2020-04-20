@@ -41,68 +41,66 @@ trait Easing extends js.Object
 
 object Easing {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def easeInBack: typings.chartJs.chartJsStrings.easeInBack = "easeInBack".asInstanceOf[typings.chartJs.chartJsStrings.easeInBack]
   @scala.inline
-  def easeInBack: typings.chartJs.chartJsStrings.easeInBack = this.cast("easeInBack")
+  def easeInBounce: typings.chartJs.chartJsStrings.easeInBounce = "easeInBounce".asInstanceOf[typings.chartJs.chartJsStrings.easeInBounce]
   @scala.inline
-  def easeInBounce: typings.chartJs.chartJsStrings.easeInBounce = this.cast("easeInBounce")
+  def easeInCirc: typings.chartJs.chartJsStrings.easeInCirc = "easeInCirc".asInstanceOf[typings.chartJs.chartJsStrings.easeInCirc]
   @scala.inline
-  def easeInCirc: typings.chartJs.chartJsStrings.easeInCirc = this.cast("easeInCirc")
+  def easeInCubic: typings.chartJs.chartJsStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.chartJs.chartJsStrings.easeInCubic]
   @scala.inline
-  def easeInCubic: typings.chartJs.chartJsStrings.easeInCubic = this.cast("easeInCubic")
+  def easeInElastic: typings.chartJs.chartJsStrings.easeInElastic = "easeInElastic".asInstanceOf[typings.chartJs.chartJsStrings.easeInElastic]
   @scala.inline
-  def easeInElastic: typings.chartJs.chartJsStrings.easeInElastic = this.cast("easeInElastic")
+  def easeInExpo: typings.chartJs.chartJsStrings.easeInExpo = "easeInExpo".asInstanceOf[typings.chartJs.chartJsStrings.easeInExpo]
   @scala.inline
-  def easeInExpo: typings.chartJs.chartJsStrings.easeInExpo = this.cast("easeInExpo")
+  def easeInOutBack: typings.chartJs.chartJsStrings.easeInOutBack = "easeInOutBack".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutBack]
   @scala.inline
-  def easeInOutBack: typings.chartJs.chartJsStrings.easeInOutBack = this.cast("easeInOutBack")
+  def easeInOutBounce: typings.chartJs.chartJsStrings.easeInOutBounce = "easeInOutBounce".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutBounce]
   @scala.inline
-  def easeInOutBounce: typings.chartJs.chartJsStrings.easeInOutBounce = this.cast("easeInOutBounce")
+  def easeInOutCirc: typings.chartJs.chartJsStrings.easeInOutCirc = "easeInOutCirc".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutCirc]
   @scala.inline
-  def easeInOutCirc: typings.chartJs.chartJsStrings.easeInOutCirc = this.cast("easeInOutCirc")
+  def easeInOutCubic: typings.chartJs.chartJsStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutCubic]
   @scala.inline
-  def easeInOutCubic: typings.chartJs.chartJsStrings.easeInOutCubic = this.cast("easeInOutCubic")
+  def easeInOutElastic: typings.chartJs.chartJsStrings.easeInOutElastic = "easeInOutElastic".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutElastic]
   @scala.inline
-  def easeInOutElastic: typings.chartJs.chartJsStrings.easeInOutElastic = this.cast("easeInOutElastic")
+  def easeInOutExpo: typings.chartJs.chartJsStrings.easeInOutExpo = "easeInOutExpo".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutExpo]
   @scala.inline
-  def easeInOutExpo: typings.chartJs.chartJsStrings.easeInOutExpo = this.cast("easeInOutExpo")
+  def easeInOutQuad: typings.chartJs.chartJsStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutQuad]
   @scala.inline
-  def easeInOutQuad: typings.chartJs.chartJsStrings.easeInOutQuad = this.cast("easeInOutQuad")
+  def easeInOutQuart: typings.chartJs.chartJsStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutQuart]
   @scala.inline
-  def easeInOutQuart: typings.chartJs.chartJsStrings.easeInOutQuart = this.cast("easeInOutQuart")
+  def easeInOutQuint: typings.chartJs.chartJsStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutQuint]
   @scala.inline
-  def easeInOutQuint: typings.chartJs.chartJsStrings.easeInOutQuint = this.cast("easeInOutQuint")
+  def easeInOutSine: typings.chartJs.chartJsStrings.easeInOutSine = "easeInOutSine".asInstanceOf[typings.chartJs.chartJsStrings.easeInOutSine]
   @scala.inline
-  def easeInOutSine: typings.chartJs.chartJsStrings.easeInOutSine = this.cast("easeInOutSine")
+  def easeInQuad: typings.chartJs.chartJsStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.chartJs.chartJsStrings.easeInQuad]
   @scala.inline
-  def easeInQuad: typings.chartJs.chartJsStrings.easeInQuad = this.cast("easeInQuad")
+  def easeInQuart: typings.chartJs.chartJsStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.chartJs.chartJsStrings.easeInQuart]
   @scala.inline
-  def easeInQuart: typings.chartJs.chartJsStrings.easeInQuart = this.cast("easeInQuart")
+  def easeInQuint: typings.chartJs.chartJsStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.chartJs.chartJsStrings.easeInQuint]
   @scala.inline
-  def easeInQuint: typings.chartJs.chartJsStrings.easeInQuint = this.cast("easeInQuint")
+  def easeInSine: typings.chartJs.chartJsStrings.easeInSine = "easeInSine".asInstanceOf[typings.chartJs.chartJsStrings.easeInSine]
   @scala.inline
-  def easeInSine: typings.chartJs.chartJsStrings.easeInSine = this.cast("easeInSine")
+  def easeOutBack: typings.chartJs.chartJsStrings.easeOutBack = "easeOutBack".asInstanceOf[typings.chartJs.chartJsStrings.easeOutBack]
   @scala.inline
-  def easeOutBack: typings.chartJs.chartJsStrings.easeOutBack = this.cast("easeOutBack")
+  def easeOutBounce: typings.chartJs.chartJsStrings.easeOutBounce = "easeOutBounce".asInstanceOf[typings.chartJs.chartJsStrings.easeOutBounce]
   @scala.inline
-  def easeOutBounce: typings.chartJs.chartJsStrings.easeOutBounce = this.cast("easeOutBounce")
+  def easeOutCirc: typings.chartJs.chartJsStrings.easeOutCirc = "easeOutCirc".asInstanceOf[typings.chartJs.chartJsStrings.easeOutCirc]
   @scala.inline
-  def easeOutCirc: typings.chartJs.chartJsStrings.easeOutCirc = this.cast("easeOutCirc")
+  def easeOutCubic: typings.chartJs.chartJsStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.chartJs.chartJsStrings.easeOutCubic]
   @scala.inline
-  def easeOutCubic: typings.chartJs.chartJsStrings.easeOutCubic = this.cast("easeOutCubic")
+  def easeOutElastic: typings.chartJs.chartJsStrings.easeOutElastic = "easeOutElastic".asInstanceOf[typings.chartJs.chartJsStrings.easeOutElastic]
   @scala.inline
-  def easeOutElastic: typings.chartJs.chartJsStrings.easeOutElastic = this.cast("easeOutElastic")
+  def easeOutExpo: typings.chartJs.chartJsStrings.easeOutExpo = "easeOutExpo".asInstanceOf[typings.chartJs.chartJsStrings.easeOutExpo]
   @scala.inline
-  def easeOutExpo: typings.chartJs.chartJsStrings.easeOutExpo = this.cast("easeOutExpo")
+  def easeOutQuad: typings.chartJs.chartJsStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.chartJs.chartJsStrings.easeOutQuad]
   @scala.inline
-  def easeOutQuad: typings.chartJs.chartJsStrings.easeOutQuad = this.cast("easeOutQuad")
+  def easeOutQuart: typings.chartJs.chartJsStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.chartJs.chartJsStrings.easeOutQuart]
   @scala.inline
-  def easeOutQuart: typings.chartJs.chartJsStrings.easeOutQuart = this.cast("easeOutQuart")
+  def easeOutQuint: typings.chartJs.chartJsStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.chartJs.chartJsStrings.easeOutQuint]
   @scala.inline
-  def easeOutQuint: typings.chartJs.chartJsStrings.easeOutQuint = this.cast("easeOutQuint")
+  def easeOutSine: typings.chartJs.chartJsStrings.easeOutSine = "easeOutSine".asInstanceOf[typings.chartJs.chartJsStrings.easeOutSine]
   @scala.inline
-  def easeOutSine: typings.chartJs.chartJsStrings.easeOutSine = this.cast("easeOutSine")
-  @scala.inline
-  def linear: typings.chartJs.chartJsStrings.linear = this.cast("linear")
+  def linear: typings.chartJs.chartJsStrings.linear = "linear".asInstanceOf[typings.chartJs.chartJsStrings.linear]
 }
 

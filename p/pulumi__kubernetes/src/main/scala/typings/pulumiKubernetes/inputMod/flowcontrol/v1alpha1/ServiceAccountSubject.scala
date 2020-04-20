@@ -24,7 +24,6 @@ object ServiceAccountSubject {
   @scala.inline
   def apply(name: Input[String], namespace: Input[String]): ServiceAccountSubject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceAccountSubject]
   }
 }

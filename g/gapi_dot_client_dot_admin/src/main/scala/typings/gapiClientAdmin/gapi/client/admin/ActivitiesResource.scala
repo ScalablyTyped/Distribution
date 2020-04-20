@@ -17,7 +17,6 @@ object ActivitiesResource {
   @scala.inline
   def apply(list: AnonActorIpAddress => Request_[Activities], watch: AnonActorIpAddress => Request_[Channel]): ActivitiesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), watch = js.Any.fromFunction1(watch))
-  
     __obj.asInstanceOf[ActivitiesResource]
   }
 }

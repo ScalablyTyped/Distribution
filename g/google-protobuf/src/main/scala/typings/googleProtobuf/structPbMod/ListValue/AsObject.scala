@@ -12,7 +12,6 @@ object AsObject {
   @scala.inline
   def apply(valuesList: js.Array[typings.googleProtobuf.structPbMod.Value.AsObject]): AsObject = {
     val __obj = js.Dynamic.literal(valuesList = valuesList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

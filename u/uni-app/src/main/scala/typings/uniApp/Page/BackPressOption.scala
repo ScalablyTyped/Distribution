@@ -18,7 +18,6 @@ object BackPressOption {
   @scala.inline
   def apply(from: backbutton | navigateBack): BackPressOption = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BackPressOption]
   }
 }

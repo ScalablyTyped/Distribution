@@ -13,7 +13,6 @@ object ContextConfigData {
   @scala.inline
   def apply(options: AnonAlpha): ContextConfigData = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContextConfigData]
   }
 }

@@ -18,7 +18,6 @@ object ILogService {
   @scala.inline
   def apply(assertEmpty: () => Unit, reset: () => Unit): ILogService = {
     val __obj = js.Dynamic.literal(assertEmpty = js.Any.fromFunction0(assertEmpty), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[ILogService]
   }
 }

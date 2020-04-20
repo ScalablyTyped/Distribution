@@ -20,7 +20,6 @@ object FlushStageCacheRequest {
   @scala.inline
   def apply(restApiId: String, stageName: String): FlushStageCacheRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FlushStageCacheRequest]
   }
 }

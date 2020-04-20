@@ -16,18 +16,16 @@ trait ResponseType extends js.Object
 
 object ResponseType {
   @scala.inline
-  def basic: typings.std.stdStrings.basic = this.cast("basic")
+  def basic: typings.std.stdStrings.basic = "basic".asInstanceOf[typings.std.stdStrings.basic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cors: typings.std.stdStrings.cors = "cors".asInstanceOf[typings.std.stdStrings.cors]
   @scala.inline
-  def cors: typings.std.stdStrings.cors = this.cast("cors")
+  def default: typings.std.stdStrings.default = "default".asInstanceOf[typings.std.stdStrings.default]
   @scala.inline
-  def default: typings.std.stdStrings.default = this.cast("default")
+  def error: typings.std.stdStrings.error = "error".asInstanceOf[typings.std.stdStrings.error]
   @scala.inline
-  def error: typings.std.stdStrings.error = this.cast("error")
+  def opaque: typings.std.stdStrings.opaque = "opaque".asInstanceOf[typings.std.stdStrings.opaque]
   @scala.inline
-  def opaque: typings.std.stdStrings.opaque = this.cast("opaque")
-  @scala.inline
-  def opaqueredirect: typings.std.stdStrings.opaqueredirect = this.cast("opaqueredirect")
+  def opaqueredirect: typings.std.stdStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.std.stdStrings.opaqueredirect]
 }
 

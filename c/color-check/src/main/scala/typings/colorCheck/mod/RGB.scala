@@ -14,7 +14,6 @@ object RGB {
   @scala.inline
   def apply(b: String | Double, g: String | Double, r: String | Double): RGB = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RGB]
   }
 }

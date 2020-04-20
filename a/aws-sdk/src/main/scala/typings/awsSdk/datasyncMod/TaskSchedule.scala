@@ -16,7 +16,6 @@ object TaskSchedule {
   @scala.inline
   def apply(ScheduleExpression: ScheduleExpressionCron): TaskSchedule = {
     val __obj = js.Dynamic.literal(ScheduleExpression = ScheduleExpression.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskSchedule]
   }
 }

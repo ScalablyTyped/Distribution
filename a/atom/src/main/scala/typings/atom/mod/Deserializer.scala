@@ -13,7 +13,6 @@ object Deserializer {
   @scala.inline
   def apply(deserialize: js.Object => js.Object, name: String): Deserializer = {
     val __obj = js.Dynamic.literal(deserialize = js.Any.fromFunction1(deserialize), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Deserializer]
   }
 }

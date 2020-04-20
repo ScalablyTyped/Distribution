@@ -18,14 +18,12 @@ trait XlSpecialCellsValue extends js.Object
 
 object XlSpecialCellsValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlErrors: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlErrors: `16` = this.cast(16)
+  def xlLogical: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlLogical: `4` = this.cast(4)
+  def xlNumbers: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlNumbers: `1` = this.cast(1)
-  @scala.inline
-  def xlTextValues: `2` = this.cast(2)
+  def xlTextValues: `2` = 2.asInstanceOf[`2`]
 }
 

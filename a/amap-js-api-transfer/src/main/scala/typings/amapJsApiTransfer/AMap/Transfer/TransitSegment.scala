@@ -30,7 +30,6 @@ object TransitSegment {
     transit_mode: SUBWAY | METRO_RAIL | BUS
   ): TransitSegment = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitSegment]
   }
 }

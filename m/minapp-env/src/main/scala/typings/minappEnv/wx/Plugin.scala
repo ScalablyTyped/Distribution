@@ -16,7 +16,6 @@ object Plugin {
   @scala.inline
   def apply(appId: String, version: String): Plugin = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Plugin]
   }
 }

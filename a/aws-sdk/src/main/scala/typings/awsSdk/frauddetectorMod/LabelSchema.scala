@@ -20,7 +20,6 @@ object LabelSchema {
   @scala.inline
   def apply(labelKey: String, labelMapper: LabelMapper): LabelSchema = {
     val __obj = js.Dynamic.literal(labelKey = labelKey.asInstanceOf[js.Any], labelMapper = labelMapper.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LabelSchema]
   }
 }

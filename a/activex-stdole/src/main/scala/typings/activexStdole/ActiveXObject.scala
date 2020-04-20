@@ -22,7 +22,6 @@ object ActiveXObject {
     on: (StdFont, FontChanged, js.Array[PropertyName], js.ThisFunction1[/* this */ StdFont, /* parameter */ AnonPropertyName, Unit]) => Unit
   ): ActiveXObject = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on))
-  
     __obj.asInstanceOf[ActiveXObject]
   }
 }

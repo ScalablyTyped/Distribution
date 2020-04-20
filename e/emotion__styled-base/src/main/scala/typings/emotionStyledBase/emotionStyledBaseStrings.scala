@@ -1,5 +1,6 @@
 package typings.emotionStyledBase
 
+import typings.emotionStyledBase.mod.ReactClassPropKeys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -285,6 +286,9 @@ object emotionStyledBaseStrings {
   sealed trait kbd extends js.Object
   
   @js.native
+  sealed trait key extends ReactClassPropKeys
+  
+  @js.native
   sealed trait keygen extends js.Object
   
   @js.native
@@ -397,6 +401,9 @@ object emotionStyledBaseStrings {
   
   @js.native
   sealed trait rect extends js.Object
+  
+  @js.native
+  sealed trait ref extends ReactClassPropKeys
   
   @js.native
   sealed trait rp extends js.Object
@@ -717,6 +724,8 @@ object emotionStyledBaseStrings {
   @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
   @scala.inline
+  def key: key = "key".asInstanceOf[key]
+  @scala.inline
   def keygen: keygen = "keygen".asInstanceOf[keygen]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
@@ -792,6 +801,8 @@ object emotionStyledBaseStrings {
   def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
+  @scala.inline
+  def ref: ref = "ref".asInstanceOf[ref]
   @scala.inline
   def rp: rp = "rp".asInstanceOf[rp]
   @scala.inline

@@ -16,18 +16,16 @@ trait OptionsOperatorValue extends js.Object
 
 object OptionsOperatorValue {
   @scala.inline
-  def EqualssignEqualssign: typings.highcharts.highchartsStrings.EqualssignEqualssign = this.cast("==")
+  def EqualssignEqualssign: typings.highcharts.highchartsStrings.EqualssignEqualssign = "==".asInstanceOf[typings.highcharts.highchartsStrings.EqualssignEqualssign]
   @scala.inline
-  def EqualssignEqualssignEqualssign: typings.highcharts.highchartsStrings.EqualssignEqualssignEqualssign = this.cast("===")
+  def EqualssignEqualssignEqualssign: typings.highcharts.highchartsStrings.EqualssignEqualssignEqualssign = "===".asInstanceOf[typings.highcharts.highchartsStrings.EqualssignEqualssignEqualssign]
   @scala.inline
-  def Greaterthansign: typings.highcharts.highchartsStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.highcharts.highchartsStrings.Greaterthansign = ">".asInstanceOf[typings.highcharts.highchartsStrings.Greaterthansign]
   @scala.inline
-  def GreaterthansignEqualssign: typings.highcharts.highchartsStrings.GreaterthansignEqualssign = this.cast(">=")
+  def GreaterthansignEqualssign: typings.highcharts.highchartsStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.highcharts.highchartsStrings.GreaterthansignEqualssign]
   @scala.inline
-  def Lessthansign: typings.highcharts.highchartsStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.highcharts.highchartsStrings.Lessthansign = "<".asInstanceOf[typings.highcharts.highchartsStrings.Lessthansign]
   @scala.inline
-  def LessthansignEqualssign: typings.highcharts.highchartsStrings.LessthansignEqualssign = this.cast("<=")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def LessthansignEqualssign: typings.highcharts.highchartsStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.highcharts.highchartsStrings.LessthansignEqualssign]
 }
 

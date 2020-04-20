@@ -9,7 +9,7 @@ package object stateManagerMod {
   type StateProps[T /* <: typings.reactSelect.selectMod.Props[_] */] = typings.std.Pick[
     T, 
     typings.std.Exclude[
-      java.lang.String, 
+      /* keyof T */ java.lang.String, 
       typings.reactSelect.reactSelectStrings.inputValue | typings.reactSelect.reactSelectStrings.value | typings.reactSelect.reactSelectStrings.menuIsOpen | typings.reactSelect.reactSelectStrings.onChange | typings.reactSelect.reactSelectStrings.onInputChange | typings.reactSelect.reactSelectStrings.onMenuClose | typings.reactSelect.reactSelectStrings.onMenuOpen
     ]
   ]

@@ -12,7 +12,6 @@ object GeneralCallbackResult {
   @scala.inline
   def apply(errMsg: String): GeneralCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeneralCallbackResult]
   }
 }

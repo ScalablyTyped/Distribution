@@ -13,7 +13,6 @@ object ScrollIndices {
   @scala.inline
   def apply(scrollToColumn: Double, scrollToRow: Double): ScrollIndices = {
     val __obj = js.Dynamic.literal(scrollToColumn = scrollToColumn.asInstanceOf[js.Any], scrollToRow = scrollToRow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollIndices]
   }
 }

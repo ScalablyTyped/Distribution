@@ -19,7 +19,6 @@ object EncodedTokensProvider {
   @scala.inline
   def apply(getInitialState: () => IState, tokenizeEncoded: (String, IState) => IEncodedLineTokens): EncodedTokensProvider = {
     val __obj = js.Dynamic.literal(getInitialState = js.Any.fromFunction0(getInitialState), tokenizeEncoded = js.Any.fromFunction2(tokenizeEncoded))
-  
     __obj.asInstanceOf[EncodedTokensProvider]
   }
 }

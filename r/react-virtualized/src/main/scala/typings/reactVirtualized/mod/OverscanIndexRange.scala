@@ -13,7 +13,6 @@ object OverscanIndexRange {
   @scala.inline
   def apply(overscanStartIndex: Double, overscanStopIndex: Double): OverscanIndexRange = {
     val __obj = js.Dynamic.literal(overscanStartIndex = overscanStartIndex.asInstanceOf[js.Any], overscanStopIndex = overscanStopIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OverscanIndexRange]
   }
 }

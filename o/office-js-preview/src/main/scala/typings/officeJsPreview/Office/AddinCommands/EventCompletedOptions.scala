@@ -20,7 +20,6 @@ object EventCompletedOptions {
   @scala.inline
   def apply(allowEvent: Boolean): EventCompletedOptions = {
     val __obj = js.Dynamic.literal(allowEvent = allowEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventCompletedOptions]
   }
 }

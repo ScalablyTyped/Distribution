@@ -2,6 +2,7 @@ package typings.istanbulMiddleware
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +18,9 @@ object mod extends js.Object {
   def hookLoader(matcherOrRoot: String, opts: AnonPostLoadHook): Unit = js.native
   def hookLoader(matcherOrRoot: Matcher): Unit = js.native
   def hookLoader(matcherOrRoot: Matcher, opts: AnonPostLoadHook): Unit = js.native
-  type ClientMatcher = js.Function1[/* req */ Request_[ParamsDictionary], Boolean]
+  type ClientMatcher = js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Boolean]
   type Matcher = js.Function1[/* file */ String, Boolean]
-  type PathTransformer = js.Function1[/* req */ Request_[ParamsDictionary], String]
+  type PathTransformer = js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
   type PostLoadHook = js.Function3[
     /* matcherfn */ Matcher, 
     /* transformer */ js.Any, 

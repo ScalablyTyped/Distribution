@@ -38,7 +38,6 @@ object CaptionsResource {
     update: AnonKey => Request_[Caption]
   ): CaptionsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), download = js.Any.fromFunction1(download), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[CaptionsResource]
   }
 }

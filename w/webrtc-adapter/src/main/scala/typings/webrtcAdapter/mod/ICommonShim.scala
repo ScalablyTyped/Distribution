@@ -23,7 +23,6 @@ object ICommonShim {
     shimSendThrowTypeError: Window_ => Unit
   ): ICommonShim = {
     val __obj = js.Dynamic.literal(removeAllowExtmapMixed = js.Any.fromFunction1(removeAllowExtmapMixed), shimConnectionState = js.Any.fromFunction1(shimConnectionState), shimMaxMessageSize = js.Any.fromFunction1(shimMaxMessageSize), shimRTCIceCandidate = js.Any.fromFunction1(shimRTCIceCandidate), shimSendThrowTypeError = js.Any.fromFunction1(shimSendThrowTypeError))
-  
     __obj.asInstanceOf[ICommonShim]
   }
 }

@@ -14,7 +14,6 @@ object AnonBillingPeriodEndDate {
   @scala.inline
   def apply(billingPeriodEndDate: Date, billingPeriodStartDate: Date): AnonBillingPeriodEndDate = {
     val __obj = js.Dynamic.literal(billingPeriodEndDate = billingPeriodEndDate.asInstanceOf[js.Any], billingPeriodStartDate = billingPeriodStartDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBillingPeriodEndDate]
   }
 }

@@ -40,24 +40,24 @@ class ScaleGizmo () extends Gizmo {
     */
   var zGizmo: AxisScaleGizmo = js.native
   @JSName("scaleRatio")
-  def scaleRatio_MScaleGizmo(): Double = js.native
+  def scaleRatio_MScaleGizmo: Double = js.native
   /**
     * Ratio for the scale of the gizmo (Default: 1)
     */
   @JSName("scaleRatio")
   def scaleRatio_MScaleGizmo(value: Double): js.Any = js.native
-  def sensitivity(): Double = js.native
+  def sensitivity: Double = js.native
   /**
     * Sensitivity factor for dragging (Default: 1)
     */
   def sensitivity(value: Double): js.Any = js.native
-  def snapDistance(): Double = js.native
+  def snapDistance: Double = js.native
   /**
     * Drag distance in babylon units that the gizmo will snap to when dragged (Default: 0)
     */
   def snapDistance(value: Double): js.Any = js.native
   @JSName("updateGizmoRotationToMatchAttachedMesh")
-  def updateGizmoRotationToMatchAttachedMesh_MScaleGizmo(): Boolean = js.native
+  def updateGizmoRotationToMatchAttachedMesh_MScaleGizmo: Boolean = js.native
   @JSName("updateGizmoRotationToMatchAttachedMesh")
   def updateGizmoRotationToMatchAttachedMesh_MScaleGizmo(value: Boolean): js.Any = js.native
 }

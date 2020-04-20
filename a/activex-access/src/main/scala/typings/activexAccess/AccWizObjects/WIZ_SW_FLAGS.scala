@@ -16,12 +16,10 @@ trait WIZ_SW_FLAGS extends js.Object
 
 object WIZ_SW_FLAGS {
   @scala.inline
-  def WIZ_SW_MAXIMIZE: `3` = this.cast(3)
+  def WIZ_SW_MAXIMIZE: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def WIZ_SW_MINIMIZE: `7` = this.cast(7)
+  def WIZ_SW_MINIMIZE: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def WIZ_SW_NORMAL: `5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WIZ_SW_NORMAL: `5` = 5.asInstanceOf[`5`]
 }
 

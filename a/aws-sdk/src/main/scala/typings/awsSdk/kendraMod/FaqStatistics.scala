@@ -16,7 +16,6 @@ object FaqStatistics {
   @scala.inline
   def apply(IndexedQuestionAnswersCount: IndexedQuestionAnswersCount): FaqStatistics = {
     val __obj = js.Dynamic.literal(IndexedQuestionAnswersCount = IndexedQuestionAnswersCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FaqStatistics]
   }
 }

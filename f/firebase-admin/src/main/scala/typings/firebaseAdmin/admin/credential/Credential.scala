@@ -32,7 +32,6 @@ object Credential {
   @scala.inline
   def apply(getAccessToken: () => js.Promise[GoogleOAuthAccessToken]): Credential = {
     val __obj = js.Dynamic.literal(getAccessToken = js.Any.fromFunction0(getAccessToken))
-  
     __obj.asInstanceOf[Credential]
   }
 }

@@ -28,34 +28,34 @@ class SelectorXPathSource protected () extends SelectorSource {
   /**
     * In version 8.0.0: deleted
     */
-  def applyContext(): Boolean = js.native
+  def applyContext: Boolean = js.native
   def applyContext(newValue: Boolean): js.Any = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyEntityPath.
     *
     * In version 7.11.0: deleted
     */
-  def constrainedBy(): IList[String] = js.native
+  def constrainedBy: IList[String] = js.native
   /**
     * In version 7.11.0: introduced
     */
-  def constrainedByRefs(): IList[EntityRef] = js.native
+  def constrainedByRefs: IList[EntityRef] = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def removeAllFromContext(): Boolean = js.native
+  def removeAllFromContext: Boolean = js.native
   def removeAllFromContext(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def removeFromContextEntities(): IList[IEntity] = js.native
-  def removeFromContextEntitiesQualifiedNames(): js.Array[String] = js.native
-  def sortBar(): GridSortBar = js.native
+  def removeFromContextEntities: IList[IEntity] = js.native
+  def removeFromContextEntitiesQualifiedNames: js.Array[String] = js.native
+  def sortBar: GridSortBar = js.native
   def sortBar(newValue: GridSortBar): js.Any = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  def xPathConstraint(): String = js.native
+  def xPathConstraint: String = js.native
   def xPathConstraint(newValue: String): js.Any = js.native
 }
 

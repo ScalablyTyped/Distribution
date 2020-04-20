@@ -13,7 +13,6 @@ object State {
   @scala.inline
   def apply(data: js.Array[_], originalData: js.Array[_]): State = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalData = originalData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

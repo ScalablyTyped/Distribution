@@ -12,10 +12,8 @@ trait KDEResolve extends js.Object
 
 object KDEResolve {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def independent: typings.vegaTypings.vegaTypingsStrings.independent = "independent".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.independent]
   @scala.inline
-  def independent: typings.vegaTypings.vegaTypingsStrings.independent = this.cast("independent")
-  @scala.inline
-  def shared: typings.vegaTypings.vegaTypingsStrings.shared = this.cast("shared")
+  def shared: typings.vegaTypings.vegaTypingsStrings.shared = "shared".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.shared]
 }
 

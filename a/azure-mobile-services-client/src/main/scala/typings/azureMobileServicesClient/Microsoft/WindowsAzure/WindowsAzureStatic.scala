@@ -12,7 +12,6 @@ object WindowsAzureStatic {
   @scala.inline
   def apply(MobileServiceClient: MobileServiceClient): WindowsAzureStatic = {
     val __obj = js.Dynamic.literal(MobileServiceClient = MobileServiceClient.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WindowsAzureStatic]
   }
 }

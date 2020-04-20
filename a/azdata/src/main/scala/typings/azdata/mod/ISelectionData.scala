@@ -15,7 +15,6 @@ object ISelectionData {
   @scala.inline
   def apply(endColumn: Double, endLine: Double, startColumn: Double, startLine: Double): ISelectionData = {
     val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], endLine = endLine.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISelectionData]
   }
 }

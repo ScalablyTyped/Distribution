@@ -22,30 +22,28 @@ trait FontVariantCapsProperty extends js.Object
 
 object FontVariantCapsProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  def `all-petite-caps`: typings.csstype.csstypeStrings.`all-petite-caps` = this.cast("all-petite-caps")
+  def `all-petite-caps`: typings.csstype.csstypeStrings.`all-petite-caps` = "all-petite-caps".asInstanceOf[typings.csstype.csstypeStrings.`all-petite-caps`]
   @scala.inline
-  def `all-small-caps`: typings.csstype.csstypeStrings.`all-small-caps` = this.cast("all-small-caps")
+  def `all-small-caps`: typings.csstype.csstypeStrings.`all-small-caps` = "all-small-caps".asInstanceOf[typings.csstype.csstypeStrings.`all-small-caps`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
   @scala.inline
-  def normal: typings.csstype.csstypeStrings.normal = this.cast("normal")
+  def `petite-caps`: typings.csstype.csstypeStrings.`petite-caps` = "petite-caps".asInstanceOf[typings.csstype.csstypeStrings.`petite-caps`]
   @scala.inline
-  def `petite-caps`: typings.csstype.csstypeStrings.`petite-caps` = this.cast("petite-caps")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def `small-caps`: typings.csstype.csstypeStrings.`small-caps` = "small-caps".asInstanceOf[typings.csstype.csstypeStrings.`small-caps`]
   @scala.inline
-  def `small-caps`: typings.csstype.csstypeStrings.`small-caps` = this.cast("small-caps")
+  def `titling-caps`: typings.csstype.csstypeStrings.`titling-caps` = "titling-caps".asInstanceOf[typings.csstype.csstypeStrings.`titling-caps`]
   @scala.inline
-  def `titling-caps`: typings.csstype.csstypeStrings.`titling-caps` = this.cast("titling-caps")
+  def unicase: typings.csstype.csstypeStrings.unicase = "unicase".asInstanceOf[typings.csstype.csstypeStrings.unicase]
   @scala.inline
-  def unicase: typings.csstype.csstypeStrings.unicase = this.cast("unicase")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

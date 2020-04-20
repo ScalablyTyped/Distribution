@@ -14,10 +14,8 @@ trait StreamReadEnum extends js.Object
 
 object StreamReadEnum {
   @scala.inline
-  def adReadAll: `-1` = this.cast(-1)
+  def adReadAll: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def adReadLine: `-2` = this.cast(-2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adReadLine: `-2` = -2.asInstanceOf[`-2`]
 }
 

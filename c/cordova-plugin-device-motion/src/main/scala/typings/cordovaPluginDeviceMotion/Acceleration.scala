@@ -24,7 +24,6 @@ object Acceleration {
   @scala.inline
   def apply(timestamp: Double, x: Double, y: Double, z: Double): Acceleration = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Acceleration]
   }
 }

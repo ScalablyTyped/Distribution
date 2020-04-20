@@ -20,7 +20,6 @@ object IOptions {
   @scala.inline
   def apply(editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor): IOptions = {
     val __obj = js.Dynamic.literal(editorFactory = js.Any.fromFunction1(editorFactory))
-  
     __obj.asInstanceOf[IOptions]
   }
 }

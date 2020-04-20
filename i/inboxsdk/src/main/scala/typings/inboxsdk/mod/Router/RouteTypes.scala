@@ -16,18 +16,16 @@ trait RouteTypes extends js.Object
 
 object RouteTypes {
   @scala.inline
-  def CHAT: typings.inboxsdk.inboxsdkStrings.CHAT = this.cast("CHAT")
+  def CHAT: typings.inboxsdk.inboxsdkStrings.CHAT = "CHAT".asInstanceOf[typings.inboxsdk.inboxsdkStrings.CHAT]
   @scala.inline
-  def CUSTOM: typings.inboxsdk.inboxsdkStrings.CUSTOM = this.cast("CUSTOM")
+  def CUSTOM: typings.inboxsdk.inboxsdkStrings.CUSTOM = "CUSTOM".asInstanceOf[typings.inboxsdk.inboxsdkStrings.CUSTOM]
   @scala.inline
-  def LIST: typings.inboxsdk.inboxsdkStrings.LIST = this.cast("LIST")
+  def LIST: typings.inboxsdk.inboxsdkStrings.LIST = "LIST".asInstanceOf[typings.inboxsdk.inboxsdkStrings.LIST]
   @scala.inline
-  def SETTINGS: typings.inboxsdk.inboxsdkStrings.SETTINGS = this.cast("SETTINGS")
+  def SETTINGS: typings.inboxsdk.inboxsdkStrings.SETTINGS = "SETTINGS".asInstanceOf[typings.inboxsdk.inboxsdkStrings.SETTINGS]
   @scala.inline
-  def THREAD: typings.inboxsdk.inboxsdkStrings.THREAD = this.cast("THREAD")
+  def THREAD: typings.inboxsdk.inboxsdkStrings.THREAD = "THREAD".asInstanceOf[typings.inboxsdk.inboxsdkStrings.THREAD]
   @scala.inline
-  def UNKNOWN: typings.inboxsdk.inboxsdkStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNKNOWN: typings.inboxsdk.inboxsdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.inboxsdk.inboxsdkStrings.UNKNOWN]
 }
 

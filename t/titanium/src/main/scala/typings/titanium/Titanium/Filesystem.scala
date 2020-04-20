@@ -1,11 +1,9 @@
 package typings.titanium.Titanium
 
 import typings.std.Date
-import typings.titanium.ReadCallbackArgs
 import typings.titanium.RequestStorageAccessResult
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
-import typings.titanium.WriteCallbackArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +13,20 @@ import scala.scalajs.js.annotation._
 	 */
 @JSGlobal("Titanium.Filesystem")
 @js.native
+class Filesystem () extends Module
+
+/**
+	 * The top level filesystem module, used to access files and directories on the device.
+	 */
+/* static members */
+@JSGlobal("Titanium.Filesystem")
+@js.native
 object Filesystem extends js.Object {
   /**
   		 * Object representing a path to a file or directory in the device's persistent storage.
   		 */
   @js.native
-  trait File extends Proxy {
+  class File () extends Proxy {
     /**
     			 * `true` if the file is executable.
     			 */
@@ -62,20 +68,10 @@ object Filesystem extends js.Object {
     			 */
     val writable: Boolean = js.native
     /**
-    			 * `true` if the file identified by this object is writable.
-    			 */
-    val writeable: Boolean = js.native
-    /**
     			 * Appends data to the file identified by this file object.
     			 */
     def append(data: String): Boolean = js.native
-    /**
-    			 * Appends data to the file identified by this file object.
-    			 */
     def append(data: Blob): Boolean = js.native
-    /**
-    			 * Appends data to the file identified by this file object.
-    			 */
     def append(data: File): Boolean = js.native
     /**
     			 * Copies the file identified by this file object to a new path.
@@ -92,6 +88,7 @@ object Filesystem extends js.Object {
     def createFile(): Boolean = js.native
     /**
     			 * Returns the creation timestamp for the file identified by this file object.
+    			 * @deprecated Use [createdAt](Titanium.Filesystem.File.createdAt) instead.
     			 */
     def createTimestamp(): Double = js.native
     /**
@@ -122,23 +119,31 @@ object Filesystem extends js.Object {
     def getDirectoryListing(): js.Array[String] = js.native
     /**
     			 * Gets the value of the <Titanium.Filesystem.File.executable> property.
+    			 * @deprecated Access <Titanium.Filesystem.File.executable> instead.
     			 */
     def getExecutable(): Boolean = js.native
     /**
     			 * Gets the value of the <Titanium.Filesystem.File.hidden> property.
+    			 * @deprecated Access <Titanium.Filesystem.File.hidden> instead.
     			 */
     def getHidden(): Boolean = js.native
     /**
     			 * Gets the value of the <Titanium.Filesystem.File.name> property.
+    			 * @deprecated Access <Titanium.Filesystem.File.name> instead.
     			 */
     def getName(): String = js.native
     /**
     			 * Gets the value of the <Titanium.Filesystem.File.nativePath> property.
+    			 * @deprecated Access <Titanium.Filesystem.File.nativePath> instead.
     			 */
     def getNativePath(): String = js.native
     /**
     			 * Returns the path of the parent directory holding the file identified by this
     			 * file object, as a String (deprecated) **or** as a `File` object.
+    			 * @deprecated Use the [Titanium.Filesystem.File.parent](Titanium.Filesystem.File.parent) property to receive a `File`
+    			 * reference instead. If you wish to receive the path, use the `nativePath`
+    			 * property of that reference instead.
+    			 *
     			 */
     def getParent(): String | File = js.native
     /**
@@ -148,28 +153,29 @@ object Filesystem extends js.Object {
     def getProtectionKey(): String = js.native
     /**
     			 * Gets the value of the <Titanium.Filesystem.File.readonly> property.
+    			 * @deprecated Access <Titanium.Filesystem.File.readonly> instead.
     			 */
     def getReadonly(): Boolean = js.native
     /**
     			 * Gets the value of the <Titanium.Filesystem.File.remoteBackup> property.
+    			 * @deprecated Access <Titanium.Filesystem.File.remoteBackup> instead.
     			 */
     def getRemoteBackup(): Boolean = js.native
     /**
     			 * Gets the value of the <Titanium.Filesystem.File.size> property.
+    			 * @deprecated Access <Titanium.Filesystem.File.size> instead.
     			 */
     def getSize(): Double = js.native
     /**
     			 * Gets the value of the <Titanium.Filesystem.File.symbolicLink> property.
+    			 * @deprecated Access <Titanium.Filesystem.File.symbolicLink> instead.
     			 */
     def getSymbolicLink(): Boolean = js.native
     /**
     			 * Gets the value of the <Titanium.Filesystem.File.writable> property.
+    			 * @deprecated Access <Titanium.Filesystem.File.writable> instead.
     			 */
     def getWritable(): Boolean = js.native
-    /**
-    			 * Gets the value of the <Titanium.Filesystem.File.writeable> property.
-    			 */
-    def getWriteable(): Boolean = js.native
     /**
     			 * Returns `true` if this file object represents a directory.
     			 */
@@ -180,6 +186,7 @@ object Filesystem extends js.Object {
     def isFile(): Boolean = js.native
     /**
     			 * Returns the last modification time for this file.
+    			 * @deprecated Use [Titanium.Filesystem.File.modifiedAt](Titanium.Filesystem.File.modifiedAt) instead.
     			 */
     def modificationTimestamp(): Double = js.native
     /**
@@ -208,6 +215,7 @@ object Filesystem extends js.Object {
     def resolve(): String = js.native
     /**
     			 * Sets the value of the <Titanium.Filesystem.File.hidden> property.
+    			 * @deprecated Set the value using <Titanium.Filesystem.File.hidden> instead.
     			 */
     def setHidden(hidden: Boolean): Unit = js.native
     /**
@@ -216,6 +224,7 @@ object Filesystem extends js.Object {
     def setProtectionKey(fileProtectionType: String): Boolean = js.native
     /**
     			 * Sets the value of the <Titanium.Filesystem.File.remoteBackup> property.
+    			 * @deprecated Set the value using <Titanium.Filesystem.File.remoteBackup> instead.
     			 */
     def setRemoteBackup(remoteBackup: Boolean): Unit = js.native
     /**
@@ -227,14 +236,8 @@ object Filesystem extends js.Object {
     			 */
     def write(data: String): Boolean = js.native
     def write(data: String, append: Boolean): Boolean = js.native
-    /**
-    			 * Writes the specified data to the file identified by this file object.
-    			 */
     def write(data: Blob): Boolean = js.native
     def write(data: Blob, append: Boolean): Boolean = js.native
-    /**
-    			 * Writes the specified data to the file identified by this file object.
-    			 */
     def write(data: File): Boolean = js.native
     def write(data: File, append: Boolean): Boolean = js.native
   }
@@ -243,44 +246,7 @@ object Filesystem extends js.Object {
   		 * Wrapper around `Titanium.Filesystem.File` that implements the `Titanium.IOStream` interface
   		 */
   @js.native
-  trait FileStream extends Proxy {
-    /**
-    			 * closes file stream, exception is thrown on error
-    			 */
-    def close(): Unit = js.native
-    /**
-    			 * Indicates whether this stream is readable.
-    			 */
-    def isReadable(): Boolean = js.native
-    /**
-    			 * Indicates whether this stream is writable.
-    			 */
-    def isWritable(): Boolean = js.native
-    /**
-    			 * Reads data from this stream into a buffer.
-    			 */
-    def read(buffer: Buffer): Double = js.native
-    def read(buffer: Buffer, offset: Double): Double = js.native
-    def read(buffer: Buffer, offset: Double, length: Double): Double = js.native
-    def read(
-      buffer: Buffer,
-      offset: Double,
-      length: Double,
-      resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, _]
-    ): Double = js.native
-    /**
-    			 * Writes data from a buffer to this stream.
-    			 */
-    def write(buffer: Buffer): Double = js.native
-    def write(buffer: Buffer, offset: Double): Double = js.native
-    def write(buffer: Buffer, offset: Double, length: Double): Double = js.native
-    def write(
-      buffer: Buffer,
-      offset: Double,
-      length: Double,
-      resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, _]
-    ): Double = js.native
-  }
+  class FileStream () extends IOStream
   
   /**
   		 * Constant used to set protection key to NSFileProtectionComplete in file attributes.
@@ -365,7 +331,7 @@ object Filesystem extends js.Object {
   /**
   		 * Adds the specified callback as an event listener for the named event.
   		 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Applies the properties to the proxy.
   		 */
@@ -385,65 +351,83 @@ object Filesystem extends js.Object {
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.apiName> property.
+  		 * @deprecated Access <Titanium.Filesystem.apiName> instead.
   		 */
   def getApiName(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.applicationCacheDirectory> property.
+  		 * @deprecated Access <Titanium.Filesystem.applicationCacheDirectory> instead.
   		 */
   def getApplicationCacheDirectory(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.applicationDataDirectory> property.
+  		 * @deprecated Access <Titanium.Filesystem.applicationDataDirectory> instead.
   		 */
   def getApplicationDataDirectory(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.applicationDirectory> property.
+  		 * @deprecated Access <Titanium.Filesystem.applicationDirectory> instead.
   		 */
   def getApplicationDirectory(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.applicationSupportDirectory> property.
+  		 * @deprecated Access <Titanium.Filesystem.applicationSupportDirectory> instead.
   		 */
   def getApplicationSupportDirectory(): String = js.native
   /**
   		 * Returns a `Blob` object representing the asset catalog image identified by the path arguments.
   		 */
-  def getAsset(path: String): Blob = js.native
+  def getAsset(path: String*): Blob = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.bubbleParent> property.
+  		 * @deprecated Access <Titanium.Filesystem.bubbleParent> instead.
   		 */
   def getBubbleParent(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.externalStorageDirectory> property.
+  		 * @deprecated Access <Titanium.Filesystem.externalStorageDirectory> instead.
   		 */
   def getExternalStorageDirectory(): String = js.native
   /**
   		 * Returns a `File` object representing the file identified by the path arguments.
   		 */
-  def getFile(paths: String*): File = js.native
+  def getFile(path: String*): File = js.native
+  /**
+  		 * Returns a `File` object representing the file identified by the path arguments.
+  		 */
+  def getFile(path: js.Array[String]): File = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.lifecycleContainer> property.
+  		 * @deprecated Access <Titanium.Filesystem.lifecycleContainer> instead.
   		 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.lineEnding> property.
+  		 * @deprecated Access <Titanium.Filesystem.lineEnding> instead.
   		 */
   def getLineEnding(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.resRawDirectory> property.
+  		 * @deprecated Access <Titanium.Filesystem.resRawDirectory> instead.
   		 */
   def getResRawDirectory(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.resourcesDirectory> property.
+  		 * @deprecated Access <Titanium.Filesystem.resourcesDirectory> instead.
   		 */
   def getResourcesDirectory(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.separator> property.
+  		 * @deprecated Access <Titanium.Filesystem.separator> instead.
   		 */
   def getSeparator(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Filesystem.tempDirectory> property.
+  		 * @deprecated Access <Titanium.Filesystem.tempDirectory> instead.
   		 */
   def getTempDirectory(): String = js.native
   /**
@@ -461,21 +445,20 @@ object Filesystem extends js.Object {
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Requests for storage permissions
   		 */
-  def requestStoragePermissions(callback: js.Function1[/* param0 */ RequestStorageAccessResult, _]): Unit = js.native
+  def requestStoragePermissions(callback: js.Function1[/* param0 */ RequestStorageAccessResult, Unit]): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Filesystem.bubbleParent> property.
+  		 * @deprecated Set the value using <Titanium.Filesystem.bubbleParent> instead.
   		 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  		 * Sets the value of the <Titanium.Filesystem.lifecycleContainer> property.
-  		 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Filesystem.lifecycleContainer> property.
+  		 * @deprecated Set the value using <Titanium.Filesystem.lifecycleContainer> instead.
   		 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }

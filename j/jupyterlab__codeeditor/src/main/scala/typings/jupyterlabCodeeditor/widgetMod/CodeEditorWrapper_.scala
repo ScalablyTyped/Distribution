@@ -57,7 +57,7 @@ class CodeEditorWrapper_ protected () extends Widget {
   /**
     * Get the model used by the widget.
     */
-  def model(): IModel = js.native
+  def model: IModel = js.native
   /**
     * A message handler invoked on a `'resize'` message.
     */

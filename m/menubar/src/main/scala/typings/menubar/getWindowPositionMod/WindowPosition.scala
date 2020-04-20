@@ -15,16 +15,14 @@ trait WindowPosition extends js.Object
 
 object WindowPosition {
   @scala.inline
-  def bottomRight: typings.menubar.menubarStrings.bottomRight = this.cast("bottomRight")
+  def bottomRight: typings.menubar.menubarStrings.bottomRight = "bottomRight".asInstanceOf[typings.menubar.menubarStrings.bottomRight]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def topRight: typings.menubar.menubarStrings.topRight = "topRight".asInstanceOf[typings.menubar.menubarStrings.topRight]
   @scala.inline
-  def topRight: typings.menubar.menubarStrings.topRight = this.cast("topRight")
+  def trayBottomCenter: typings.menubar.menubarStrings.trayBottomCenter = "trayBottomCenter".asInstanceOf[typings.menubar.menubarStrings.trayBottomCenter]
   @scala.inline
-  def trayBottomCenter: typings.menubar.menubarStrings.trayBottomCenter = this.cast("trayBottomCenter")
+  def trayBottomLeft: typings.menubar.menubarStrings.trayBottomLeft = "trayBottomLeft".asInstanceOf[typings.menubar.menubarStrings.trayBottomLeft]
   @scala.inline
-  def trayBottomLeft: typings.menubar.menubarStrings.trayBottomLeft = this.cast("trayBottomLeft")
-  @scala.inline
-  def trayCenter: typings.menubar.menubarStrings.trayCenter = this.cast("trayCenter")
+  def trayCenter: typings.menubar.menubarStrings.trayCenter = "trayCenter".asInstanceOf[typings.menubar.menubarStrings.trayCenter]
 }
 

@@ -13,7 +13,6 @@ object AnonVideo {
   @scala.inline
   def apply(video: VideoMediaConfiguration): AnonVideo = {
     val __obj = js.Dynamic.literal(video = video.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVideo]
   }
 }

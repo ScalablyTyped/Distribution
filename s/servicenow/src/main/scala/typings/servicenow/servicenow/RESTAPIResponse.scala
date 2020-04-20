@@ -28,7 +28,6 @@ object RESTAPIResponse {
     setStatus: Double => Unit
   ): RESTAPIResponse = {
     val __obj = js.Dynamic.literal(getStreamWriter = js.Any.fromFunction0(getStreamWriter), setBody = js.Any.fromFunction1(setBody), setContentType = js.Any.fromFunction1(setContentType), setError = js.Any.fromFunction1(setError), setHeader = js.Any.fromFunction2(setHeader), setHeaders = js.Any.fromFunction1(setHeaders), setLocation = js.Any.fromFunction1(setLocation), setStatus = js.Any.fromFunction1(setStatus))
-  
     __obj.asInstanceOf[RESTAPIResponse]
   }
 }

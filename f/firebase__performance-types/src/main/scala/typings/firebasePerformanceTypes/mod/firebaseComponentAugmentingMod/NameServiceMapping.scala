@@ -13,7 +13,6 @@ object NameServiceMapping {
   @scala.inline
   def apply(performance: FirebasePerformance): NameServiceMapping = {
     val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NameServiceMapping]
   }
 }

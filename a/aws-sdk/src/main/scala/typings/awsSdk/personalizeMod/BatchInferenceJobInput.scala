@@ -16,7 +16,6 @@ object BatchInferenceJobInput {
   @scala.inline
   def apply(s3DataSource: S3DataConfig): BatchInferenceJobInput = {
     val __obj = js.Dynamic.literal(s3DataSource = s3DataSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchInferenceJobInput]
   }
 }

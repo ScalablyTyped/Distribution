@@ -26,7 +26,6 @@ object Typeofsqlops {
     sql_xquery: (String, String, String) => Double
   ): Typeofsqlops = {
     val __obj = js.Dynamic.literal(sql_is_null = js.Any.fromFunction3(sql_is_null), sql_num_columns = js.Any.fromFunction1(sql_num_columns), sql_num_rows = js.Any.fromFunction1(sql_num_rows), sql_query = js.Any.fromFunction3(sql_query), sql_query_async = js.Any.fromFunction2(sql_query_async), sql_result_free = js.Any.fromFunction1(sql_result_free), sql_xquery = js.Any.fromFunction3(sql_xquery))
-  
     __obj.asInstanceOf[Typeofsqlops]
   }
 }

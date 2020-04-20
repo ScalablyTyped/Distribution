@@ -22,18 +22,16 @@ trait styleFlexDirection extends js.Object
 
 object styleFlexDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleFlexDirectionColumn: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleFlexDirectionColumn: `2` = this.cast(2)
+  def styleFlexDirectionColumnReverse: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleFlexDirectionColumnReverse: `3` = this.cast(3)
+  def styleFlexDirectionNotSet: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleFlexDirectionNotSet: `4` = this.cast(4)
+  def styleFlexDirectionRow: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleFlexDirectionRow: `0` = this.cast(0)
+  def styleFlexDirectionRowReverse: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleFlexDirectionRowReverse: `1` = this.cast(1)
-  @scala.inline
-  def styleFlexDirection_Max: `2147483647` = this.cast(2147483647)
+  def styleFlexDirection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

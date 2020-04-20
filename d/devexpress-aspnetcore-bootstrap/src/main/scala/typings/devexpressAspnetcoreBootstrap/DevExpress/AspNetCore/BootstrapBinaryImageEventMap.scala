@@ -25,7 +25,6 @@ object BootstrapBinaryImageEventMap {
     valueChanged: ProcessingModeEventArgs
   ): BootstrapBinaryImageEventMap = {
     val __obj = js.Dynamic.literal(beginCallback = beginCallback.asInstanceOf[js.Any], callbackError = callbackError.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], endCallback = endCallback.asInstanceOf[js.Any], gotFocus = gotFocus.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapBinaryImageEventMap]
   }
 }

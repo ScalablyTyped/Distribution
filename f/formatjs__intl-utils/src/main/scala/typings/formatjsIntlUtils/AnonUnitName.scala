@@ -19,7 +19,6 @@ object AnonUnitName {
     unitSymbol: LDMLPluralRuleMap[js.Array[String]]
   ): AnonUnitName = {
     val __obj = js.Dynamic.literal(unitName = unitName.asInstanceOf[js.Any], unitNarrowSymbol = unitNarrowSymbol.asInstanceOf[js.Any], unitSymbol = unitSymbol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUnitName]
   }
 }

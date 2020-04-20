@@ -43,7 +43,6 @@ object PutExternalModelRequest {
     role: Role
   ): PutExternalModelRequest = {
     val __obj = js.Dynamic.literal(inputConfiguration = inputConfiguration.asInstanceOf[js.Any], modelEndpoint = modelEndpoint.asInstanceOf[js.Any], modelEndpointStatus = modelEndpointStatus.asInstanceOf[js.Any], modelSource = modelSource.asInstanceOf[js.Any], outputConfiguration = outputConfiguration.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutExternalModelRequest]
   }
 }

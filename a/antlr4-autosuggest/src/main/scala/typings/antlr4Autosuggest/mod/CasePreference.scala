@@ -13,12 +13,10 @@ trait CasePreference extends js.Object
 
 object CasePreference {
   @scala.inline
-  def BOTH: typings.antlr4Autosuggest.antlr4AutosuggestStrings.BOTH = this.cast("BOTH")
+  def BOTH: typings.antlr4Autosuggest.antlr4AutosuggestStrings.BOTH = "BOTH".asInstanceOf[typings.antlr4Autosuggest.antlr4AutosuggestStrings.BOTH]
   @scala.inline
-  def LOWER: typings.antlr4Autosuggest.antlr4AutosuggestStrings.LOWER = this.cast("LOWER")
+  def LOWER: typings.antlr4Autosuggest.antlr4AutosuggestStrings.LOWER = "LOWER".asInstanceOf[typings.antlr4Autosuggest.antlr4AutosuggestStrings.LOWER]
   @scala.inline
-  def UPPER: typings.antlr4Autosuggest.antlr4AutosuggestStrings.UPPER = this.cast("UPPER")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UPPER: typings.antlr4Autosuggest.antlr4AutosuggestStrings.UPPER = "UPPER".asInstanceOf[typings.antlr4Autosuggest.antlr4AutosuggestStrings.UPPER]
 }
 

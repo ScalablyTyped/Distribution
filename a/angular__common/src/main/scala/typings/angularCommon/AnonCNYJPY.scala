@@ -20,7 +20,6 @@ object AnonCNYJPY {
     XXX: js.Array[scala.Nothing]
   ): AnonCNYJPY = {
     val __obj = js.Dynamic.literal(CNY = CNY.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCNYJPY]
   }
 }

@@ -12,7 +12,6 @@ object MouseWrapperMethods {
   @scala.inline
   def apply(destroy: () => Unit): MouseWrapperMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
-  
     __obj.asInstanceOf[MouseWrapperMethods]
   }
 }

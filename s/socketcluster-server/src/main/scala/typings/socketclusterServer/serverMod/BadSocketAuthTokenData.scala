@@ -14,7 +14,6 @@ object BadSocketAuthTokenData {
   @scala.inline
   def apply(authError: Error, signedAuthToken: String, socket: typings.socketclusterServer.serversocketMod.^): BadSocketAuthTokenData = {
     val __obj = js.Dynamic.literal(authError = authError.asInstanceOf[js.Any], signedAuthToken = signedAuthToken.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BadSocketAuthTokenData]
   }
 }

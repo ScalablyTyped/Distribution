@@ -16,7 +16,6 @@ object StopDataCollectionByAgentIdsRequest {
   @scala.inline
   def apply(agentIds: AgentIds): StopDataCollectionByAgentIdsRequest = {
     val __obj = js.Dynamic.literal(agentIds = agentIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopDataCollectionByAgentIdsRequest]
   }
 }

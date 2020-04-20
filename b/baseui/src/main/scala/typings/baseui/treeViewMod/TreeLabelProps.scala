@@ -1,6 +1,6 @@
 package typings.baseui.treeViewMod
 
-import typings.std.Node
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait TreeLabelProps extends js.Object {
   var hasChildren: Boolean
   var isExpanded: js.UndefOr[Boolean] = js.undefined
-  var label: (js.Function1[/* node */ TreeNode, Node]) | String
-  var node: TreeNode
+  var label: (js.Function1[/* node */ TreeNode[_], ReactNode]) | String
+  var node: TreeNode[_]
   var overrides: js.UndefOr[TreeLabelOverrides] = js.undefined
 }
 
@@ -17,8 +17,8 @@ object TreeLabelProps {
   @scala.inline
   def apply(
     hasChildren: Boolean,
-    label: (js.Function1[/* node */ TreeNode, Node]) | String,
-    node: TreeNode,
+    label: (js.Function1[/* node */ TreeNode[_], ReactNode]) | String,
+    node: TreeNode[_],
     isExpanded: js.UndefOr[Boolean] = js.undefined,
     overrides: TreeLabelOverrides = null
   ): TreeLabelProps = {

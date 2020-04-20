@@ -13,7 +13,6 @@ object Datum {
   @scala.inline
   def apply(x: Value, y: Value): Datum = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Datum]
   }
 }

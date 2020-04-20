@@ -30,7 +30,6 @@ object UserPrompted {
     set: js.Function0[Unit] => Unit
   ): UserPrompted = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), get = js.Any.fromFunction1(get), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[UserPrompted]
   }
 }

@@ -18,7 +18,6 @@ object AnonBackground {
   @scala.inline
   def apply(background: String, height: Double, position: none | right | left, width: Double): AnonBackground = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackground]
   }
 }

@@ -19,7 +19,6 @@ object BuiltinConverterFactory {
     createPipeConverter: (String, Double) => BuiltinConverter
   ): BuiltinConverterFactory = {
     val __obj = js.Dynamic.literal(createLiteralArrayConverter = js.Any.fromFunction1(createLiteralArrayConverter), createLiteralMapConverter = js.Any.fromFunction1(createLiteralMapConverter), createPipeConverter = js.Any.fromFunction2(createPipeConverter))
-  
     __obj.asInstanceOf[BuiltinConverterFactory]
   }
 }

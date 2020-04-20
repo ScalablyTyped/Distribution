@@ -37,7 +37,6 @@ object AclResource {
     watch: AnonFields => Request_[Channel]
   ): AclResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update), watch = js.Any.fromFunction1(watch))
-  
     __obj.asInstanceOf[AclResource]
   }
 }

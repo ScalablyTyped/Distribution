@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait QuickLRU[KeyType, ValueType]
   extends Iterable[js.Tuple2[KeyType, ValueType]] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator_QuickLRU: js.Function0[IterableIterator[js.Tuple2[KeyType, ValueType]]] = js.native
   /**
   	The stored item count.

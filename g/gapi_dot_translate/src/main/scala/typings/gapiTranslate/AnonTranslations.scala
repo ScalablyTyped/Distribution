@@ -12,7 +12,6 @@ object AnonTranslations {
   @scala.inline
   def apply(translations: js.Array[AnonDetectedSourceLanguage]): AnonTranslations = {
     val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTranslations]
   }
 }

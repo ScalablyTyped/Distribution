@@ -16,7 +16,6 @@ object AnonAnimations {
   @scala.inline
   def apply(animations: js.Array[RuntimeAnimation], originalValue: Matrix, totalWeight: Double): AnonAnimations = {
     val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], totalWeight = totalWeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimations]
   }
 }

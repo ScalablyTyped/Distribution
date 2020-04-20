@@ -89,7 +89,6 @@ object ILogResource {
     getUserLog: (LogType, Date) => IPromise[IResourcePromise]
   ): ILogResource = {
     val __obj = js.Dynamic.literal(getEntityLog = js.Any.fromFunction1(getEntityLog), getLog = js.Any.fromFunction2(getLog), getUserLog = js.Any.fromFunction2(getUserLog))
-  
     __obj.asInstanceOf[ILogResource]
   }
 }

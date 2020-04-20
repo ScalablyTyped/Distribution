@@ -14,7 +14,6 @@ object TitleEventEntity {
   @scala.inline
   def apply(domEvent: Event_, key: String): TitleEventEntity = {
     val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TitleEventEntity]
   }
 }

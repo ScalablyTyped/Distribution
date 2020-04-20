@@ -16,7 +16,6 @@ object Observable {
     thenDo: js.Function1[/* item1 */ T, js.Any] => Plan[js.Any]
   ): Observable[T] = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
-  
     __obj.asInstanceOf[Observable[T]]
   }
 }

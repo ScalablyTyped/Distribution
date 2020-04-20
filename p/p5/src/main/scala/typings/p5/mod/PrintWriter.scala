@@ -33,7 +33,6 @@ object PrintWriter {
   @scala.inline
   def apply(clear: () => Unit, close: () => Unit, print: js.Array[_] => Unit, write: js.Array[_] => Unit): PrintWriter = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), close = js.Any.fromFunction0(close), print = js.Any.fromFunction1(print), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[PrintWriter]
   }
 }

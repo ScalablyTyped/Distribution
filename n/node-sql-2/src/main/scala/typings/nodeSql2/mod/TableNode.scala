@@ -13,7 +13,6 @@ object TableNode {
   @scala.inline
   def apply(join: TableNode => JoinTableNode, leftJoin: TableNode => JoinTableNode): TableNode = {
     val __obj = js.Dynamic.literal(join = js.Any.fromFunction1(join), leftJoin = js.Any.fromFunction1(leftJoin))
-  
     __obj.asInstanceOf[TableNode]
   }
 }

@@ -24,20 +24,18 @@ trait OSLogLevel extends js.Object
 
 object OSLogLevel {
   @scala.inline
-  def Debug: `5` = this.cast(5)
+  def Debug: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def Errors: `2` = this.cast(2)
+  def Errors: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Fatal: `1` = this.cast(1)
+  def Fatal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Info: `4` = this.cast(4)
+  def Info: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Verbose: `6` = this.cast(6)
+  def Verbose: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def Warnings: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Warnings: `3` = 3.asInstanceOf[`3`]
 }
 

@@ -24,7 +24,6 @@ object GlideEmailOutbound {
     setSubject: String => Unit
   ): GlideEmailOutbound = {
     val __obj = js.Dynamic.literal(addAddress = js.Any.fromFunction3(addAddress), getSubject = js.Any.fromFunction0(getSubject), setBody = js.Any.fromFunction1(setBody), setFrom = js.Any.fromFunction1(setFrom), setReplyTo = js.Any.fromFunction1(setReplyTo), setSubject = js.Any.fromFunction1(setSubject))
-  
     __obj.asInstanceOf[GlideEmailOutbound]
   }
 }

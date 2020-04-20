@@ -19,7 +19,6 @@ object IOptions {
   @scala.inline
   def apply(registry: DocumentRegistry): IOptions = {
     val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

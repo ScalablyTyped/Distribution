@@ -16,7 +16,6 @@ object DeleteGatewayGroupRequest {
   @scala.inline
   def apply(GatewayGroupArn: Arn): DeleteGatewayGroupRequest = {
     val __obj = js.Dynamic.literal(GatewayGroupArn = GatewayGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGatewayGroupRequest]
   }
 }

@@ -13,7 +13,6 @@ object AnonNewGroup {
   @scala.inline
   def apply(NewGroup: OutlookBarGroup): AnonNewGroup = {
     val __obj = js.Dynamic.literal(NewGroup = NewGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNewGroup]
   }
 }

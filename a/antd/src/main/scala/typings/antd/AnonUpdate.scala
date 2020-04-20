@@ -14,7 +14,6 @@ object AnonUpdate {
   @scala.inline
   def apply(destroy: /* repeated */ js.Any => Unit, update: ModalFuncProps => Unit): AnonUpdate = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction1(destroy), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[AnonUpdate]
   }
 }

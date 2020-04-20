@@ -13,7 +13,6 @@ object CertificateInfo {
   @scala.inline
   def apply(bloodyMicrosoftSubjectDn: String, commonName: String): CertificateInfo = {
     val __obj = js.Dynamic.literal(bloodyMicrosoftSubjectDn = bloodyMicrosoftSubjectDn.asInstanceOf[js.Any], commonName = commonName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateInfo]
   }
 }

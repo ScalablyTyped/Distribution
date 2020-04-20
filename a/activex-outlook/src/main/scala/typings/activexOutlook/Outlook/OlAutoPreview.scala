@@ -16,12 +16,10 @@ trait OlAutoPreview extends js.Object
 
 object OlAutoPreview {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAutoPreviewAll: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olAutoPreviewAll: `0` = this.cast(0)
+  def olAutoPreviewNone: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olAutoPreviewNone: `2` = this.cast(2)
-  @scala.inline
-  def olAutoPreviewUnread: `1` = this.cast(1)
+  def olAutoPreviewUnread: `1` = 1.asInstanceOf[`1`]
 }
 

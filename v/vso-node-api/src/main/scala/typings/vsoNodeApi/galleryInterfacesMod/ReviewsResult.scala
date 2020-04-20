@@ -23,7 +23,6 @@ object ReviewsResult {
   @scala.inline
   def apply(hasMoreReviews: Boolean, reviews: js.Array[Review], totalReviewCount: Double): ReviewsResult = {
     val __obj = js.Dynamic.literal(hasMoreReviews = hasMoreReviews.asInstanceOf[js.Any], reviews = reviews.asInstanceOf[js.Any], totalReviewCount = totalReviewCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReviewsResult]
   }
 }

@@ -12,10 +12,8 @@ trait OptionsTickmarkPlacementValue extends js.Object
 
 object OptionsTickmarkPlacementValue {
   @scala.inline
-  def between: typings.highcharts.highchartsStrings.between = this.cast("between")
+  def between: typings.highcharts.highchartsStrings.between = "between".asInstanceOf[typings.highcharts.highchartsStrings.between]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def on: typings.highcharts.highchartsStrings.on = this.cast("on")
+  def on: typings.highcharts.highchartsStrings.on = "on".asInstanceOf[typings.highcharts.highchartsStrings.on]
 }
 

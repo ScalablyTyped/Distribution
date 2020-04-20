@@ -12,7 +12,6 @@ object AnonDestroy {
   @scala.inline
   def apply(destroy: () => Unit | Null | js.Promise[_]): AnonDestroy = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
-  
     __obj.asInstanceOf[AnonDestroy]
   }
 }

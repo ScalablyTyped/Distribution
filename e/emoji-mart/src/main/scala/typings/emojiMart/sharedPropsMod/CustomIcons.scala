@@ -13,7 +13,6 @@ object CustomIcons {
   @scala.inline
   def apply(categories: RecordCategoryNameReactNo): CustomIcons = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomIcons]
   }
 }

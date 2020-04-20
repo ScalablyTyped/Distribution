@@ -32,7 +32,6 @@ object FirewallManagerRuleGroup {
     VisibilityConfig: VisibilityConfig
   ): FirewallManagerRuleGroup = {
     val __obj = js.Dynamic.literal(FirewallManagerStatement = FirewallManagerStatement.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OverrideAction = OverrideAction.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], VisibilityConfig = VisibilityConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirewallManagerRuleGroup]
   }
 }

@@ -27,7 +27,6 @@ object ResolvedNgModule {
     staticMethodsWithoutType: js.Array[MethodDeclaration]
   ): ResolvedNgModule = {
     val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], staticMethodsWithoutType = staticMethodsWithoutType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolvedNgModule]
   }
 }

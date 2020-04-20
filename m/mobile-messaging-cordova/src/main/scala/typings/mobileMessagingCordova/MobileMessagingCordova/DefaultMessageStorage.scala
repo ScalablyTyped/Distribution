@@ -20,7 +20,6 @@ object DefaultMessageStorage {
     findAll: js.Function1[/* messages */ js.Array[Message], Unit] => Unit
   ): DefaultMessageStorage = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction2(delete), deleteAll = js.Any.fromFunction1(deleteAll), find = js.Any.fromFunction2(find), findAll = js.Any.fromFunction1(findAll))
-  
     __obj.asInstanceOf[DefaultMessageStorage]
   }
 }

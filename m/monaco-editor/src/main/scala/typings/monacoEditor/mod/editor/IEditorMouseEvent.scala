@@ -14,7 +14,6 @@ object IEditorMouseEvent {
   @scala.inline
   def apply(event: IMouseEvent, target: IMouseTarget): IEditorMouseEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEditorMouseEvent]
   }
 }

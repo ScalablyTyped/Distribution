@@ -14,7 +14,6 @@ object PDFMetadata {
   @scala.inline
   def apply(get: String => String, has: String => Boolean, parse: () => Unit): PDFMetadata = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), parse = js.Any.fromFunction0(parse))
-  
     __obj.asInstanceOf[PDFMetadata]
   }
 }

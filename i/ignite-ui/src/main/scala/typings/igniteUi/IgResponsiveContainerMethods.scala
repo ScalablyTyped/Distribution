@@ -44,7 +44,6 @@ object IgResponsiveContainerMethods {
     stopPoller: () => Unit
   ): IgResponsiveContainerMethods = {
     val __obj = js.Dynamic.literal(addCallback = js.Any.fromFunction4(addCallback), destroy = js.Any.fromFunction0(destroy), removeCallback = js.Any.fromFunction1(removeCallback), startPoller = js.Any.fromFunction0(startPoller), stopPoller = js.Any.fromFunction0(stopPoller))
-  
     __obj.asInstanceOf[IgResponsiveContainerMethods]
   }
 }

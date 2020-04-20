@@ -30,7 +30,6 @@ object RowTransformerValidator {
     transformAndValidate: (Row, RowValidatorCallback) => Unit
   ): RowTransformerValidator = {
     val __obj = js.Dynamic.literal(_rowTransform = _rowTransform.asInstanceOf[js.Any], _rowValidator = _rowValidator.asInstanceOf[js.Any], callTransformer = callTransformer.asInstanceOf[js.Any], callValidator = callValidator.asInstanceOf[js.Any], rowTransform = js.Any.fromFunction1(rowTransform), rowValidator = js.Any.fromFunction1(rowValidator), transformAndValidate = js.Any.fromFunction2(transformAndValidate))
-  
     __obj.asInstanceOf[RowTransformerValidator]
   }
 }

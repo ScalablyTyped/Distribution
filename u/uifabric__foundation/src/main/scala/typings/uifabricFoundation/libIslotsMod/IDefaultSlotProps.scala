@@ -13,7 +13,6 @@ object IDefaultSlotProps {
   @scala.inline
   def apply[TSlots](_defaultStyles: IComponentStyles[TSlots]): IDefaultSlotProps[TSlots] = {
     val __obj = js.Dynamic.literal(_defaultStyles = _defaultStyles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDefaultSlotProps[TSlots]]
   }
 }

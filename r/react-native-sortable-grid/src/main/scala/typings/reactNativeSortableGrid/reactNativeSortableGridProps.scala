@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeSortableGridProps {
   @scala.inline
-  def DefaultProps: SortableGridProps.type = typings.reactNativeSortableGrid.mod.SortableGridProps
+  def DefaultProps: SortableGridProps.type = SortableGridProps
   type DefaultProps = SortableGridProps
   @scala.inline
-  def ReactNativeSortableGridProps: SortableGridProps.type = typings.reactNativeSortableGrid.mod.SortableGridProps
+  def ReactNativeSortableGridProps: SortableGridProps.type = SortableGridProps
   type ReactNativeSortableGridProps = SortableGridProps
 }
 

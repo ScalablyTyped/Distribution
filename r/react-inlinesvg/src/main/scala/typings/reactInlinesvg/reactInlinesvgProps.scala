@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactInlinesvgProps {
   @scala.inline
-  def ReactInlinesvgProps: IProps.type = typings.reactInlinesvg.mod.IProps
+  def ReactInlinesvgProps: IProps.type = IProps
   type ReactInlinesvgProps = IProps
 }
 

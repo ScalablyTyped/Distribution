@@ -14,14 +14,12 @@ trait ObservableType extends js.Object
 
 object ObservableType {
   @scala.inline
-  def List: typings.jupyterlabObservables.jupyterlabObservablesStrings.List = this.cast("List")
+  def List: typings.jupyterlabObservables.jupyterlabObservablesStrings.List = "List".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.List]
   @scala.inline
-  def Map: typings.jupyterlabObservables.jupyterlabObservablesStrings.Map = this.cast("Map")
+  def Map: typings.jupyterlabObservables.jupyterlabObservablesStrings.Map = "Map".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.Map]
   @scala.inline
-  def String: typings.jupyterlabObservables.jupyterlabObservablesStrings.String = this.cast("String")
+  def String: typings.jupyterlabObservables.jupyterlabObservablesStrings.String = "String".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.String]
   @scala.inline
-  def Value: typings.jupyterlabObservables.jupyterlabObservablesStrings.Value = this.cast("Value")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Value: typings.jupyterlabObservables.jupyterlabObservablesStrings.Value = "Value".asInstanceOf[typings.jupyterlabObservables.jupyterlabObservablesStrings.Value]
 }
 

@@ -20,7 +20,7 @@ object feedMod extends js.Object {
     def isMoreAvailable(): Boolean = js.native
     def items(): js.Promise[js.Array[Item]] = js.native
     @JSName("items$")
-    def items$(): Observable_[js.Array[Item]] = js.native
+    def items$: Observable_[js.Array[Item]] = js.native
     def observable(): Observable_[js.Array[Item]] = js.native
     def observable(semaphore: js.Function0[js.Promise[_]]): Observable_[js.Array[Item]] = js.native
     def observable(semaphore: js.Function0[js.Promise[_]], attemptOptions: PartialAttemptOptionsany): Observable_[js.Array[Item]] = js.native

@@ -22,7 +22,6 @@ object AnonBorderColorBorderStyle {
     height: Double
   ): AnonBorderColorBorderStyle = {
     val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderStyle = borderStyle.asInstanceOf[js.Any], borderTopWidth = borderTopWidth.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderColorBorderStyle]
   }
 }

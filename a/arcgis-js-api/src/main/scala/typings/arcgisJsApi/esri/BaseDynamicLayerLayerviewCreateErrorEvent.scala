@@ -13,7 +13,6 @@ object BaseDynamicLayerLayerviewCreateErrorEvent {
   @scala.inline
   def apply(error: Error, view: View): BaseDynamicLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseDynamicLayerLayerviewCreateErrorEvent]
   }
 }

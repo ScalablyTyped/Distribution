@@ -12,7 +12,6 @@ object AnonTheaterMode {
   @scala.inline
   def apply(TheaterMode: Boolean): AnonTheaterMode = {
     val __obj = js.Dynamic.literal(TheaterMode = TheaterMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTheaterMode]
   }
 }

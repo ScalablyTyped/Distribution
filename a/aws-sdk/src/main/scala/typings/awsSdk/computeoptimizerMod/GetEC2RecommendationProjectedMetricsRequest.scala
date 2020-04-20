@@ -38,7 +38,6 @@ object GetEC2RecommendationProjectedMetricsRequest {
     stat: MetricStatistic
   ): GetEC2RecommendationProjectedMetricsRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], instanceArn = instanceArn.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEC2RecommendationProjectedMetricsRequest]
   }
 }

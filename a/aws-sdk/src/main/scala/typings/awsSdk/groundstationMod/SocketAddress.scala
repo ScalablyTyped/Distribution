@@ -20,7 +20,6 @@ object SocketAddress {
   @scala.inline
   def apply(name: String, port: Integer): SocketAddress = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SocketAddress]
   }
 }

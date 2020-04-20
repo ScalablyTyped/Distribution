@@ -16,12 +16,10 @@ trait PpPrintColorType extends js.Object
 
 object PpPrintColorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppPrintBlackAndWhite: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppPrintBlackAndWhite: `2` = this.cast(2)
+  def ppPrintColor: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppPrintColor: `1` = this.cast(1)
-  @scala.inline
-  def ppPrintPureBlackAndWhite: `3` = this.cast(3)
+  def ppPrintPureBlackAndWhite: `3` = 3.asInstanceOf[`3`]
 }
 

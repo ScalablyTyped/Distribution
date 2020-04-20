@@ -20,7 +20,6 @@ object Navigation {
   @scala.inline
   def apply(items: ItemCollection[NavigationItem]): Navigation = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Navigation]
   }
 }

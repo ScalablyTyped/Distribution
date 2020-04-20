@@ -13,7 +13,6 @@ object AnonGELJPY {
   @scala.inline
   def apply(GEL: js.Array[String], JPY: js.Array[String]): AnonGELJPY = {
     val __obj = js.Dynamic.literal(GEL = GEL.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGELJPY]
   }
 }

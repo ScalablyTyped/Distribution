@@ -24,7 +24,6 @@ object RangeReference {
   @scala.inline
   def apply(address: String): RangeReference = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RangeReference]
   }
 }

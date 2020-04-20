@@ -38,7 +38,7 @@ package object miniprogramWxs {
   /**
     * Construct a type with the properties of T except for those in type K.
     */
-  type Omit[T, K /* <: java.lang.String */] = typings.miniprogramWxs.Pick[T, typings.miniprogramWxs.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.miniprogramWxs.Pick[T, typings.miniprogramWxs.Exclude[/* keyof T */ java.lang.String, K]]
   /**
     * Removes the 'this' parameter from a function type.
     */
@@ -58,13 +58,13 @@ package object miniprogramWxs {
     */
   type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
-    */ typings.miniprogramWxs.miniprogramWxsStrings.Partial with T
+    */ typings.miniprogramWxs.miniprogramWxsStrings.Partial with org.scalablytyped.runtime.TopLevel[T]
   /**
     * From T, pick a set of properties whose keys are in the union K
     */
-  type Pick[T, K /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type Pick[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: T[P]}
-    */ typings.miniprogramWxs.miniprogramWxsStrings.Pick with T
+    */ typings.miniprogramWxs.miniprogramWxsStrings.Pick with org.scalablytyped.runtime.TopLevel[T]
   type PromiseConstructorLike = org.scalablytyped.runtime.Instantiable1[
     /* executor */ js.Function2[
       /* resolve */ js.Function1[
@@ -88,19 +88,19 @@ package object miniprogramWxs {
     */
   type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ P in keyof T ]: T[P]}
-    */ typings.miniprogramWxs.miniprogramWxsStrings.Readonly with T
+    */ typings.miniprogramWxs.miniprogramWxsStrings.Readonly with org.scalablytyped.runtime.TopLevel[T]
   /**
     * Construct a type with a set of properties K of type T
     */
-  type Record[K /* <: java.lang.String */, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type Record[K /* <: /* keyof any */ java.lang.String */, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: T}
-    */ typings.miniprogramWxs.miniprogramWxsStrings.Record with js.Any
+    */ typings.miniprogramWxs.miniprogramWxsStrings.Record with org.scalablytyped.runtime.TopLevel[js.Any]
   /**
     * Make all properties in T required
     */
   type Required[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: -? T[P]}
-    */ typings.miniprogramWxs.miniprogramWxsStrings.Required with T
+    */ typings.miniprogramWxs.miniprogramWxsStrings.Required with org.scalablytyped.runtime.TopLevel[T]
   /**
     * Obtain the return type of a function type
     */

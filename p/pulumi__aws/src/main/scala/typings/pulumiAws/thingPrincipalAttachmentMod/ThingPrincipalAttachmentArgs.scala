@@ -22,7 +22,6 @@ object ThingPrincipalAttachmentArgs {
   @scala.inline
   def apply(principal: Input[ARN], thing: Input[String]): ThingPrincipalAttachmentArgs = {
     val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any], thing = thing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThingPrincipalAttachmentArgs]
   }
 }

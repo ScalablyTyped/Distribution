@@ -36,22 +36,22 @@ class Header protected () extends Widget {
     * In version 7.15.0: deleted
     */
   @JSName("leftWidget")
-  def leftWidget_Union(): Widget | Null = js.native
+  def leftWidget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def leftWidgets(): IList[Widget] = js.native
+  def leftWidgets: IList[Widget] = js.native
   def rightWidget(): js.Any = js.native
   def rightWidget(newValue: Widget): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
   @JSName("rightWidget")
-  def rightWidget_Union(): Widget | Null = js.native
+  def rightWidget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def rightWidgets(): IList[Widget] = js.native
+  def rightWidgets: IList[Widget] = js.native
 }
 
 /* static members */

@@ -23,7 +23,6 @@ object Dom_ {
     exposedProperties: js.Tuple3[window, navigator, document]
   ): Dom_ = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction0(destroy), exposedProperties = exposedProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Dom_]
   }
 }

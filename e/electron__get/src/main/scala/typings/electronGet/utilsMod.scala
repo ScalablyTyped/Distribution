@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@electron/get/dist/cjs/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
-  def ensureIsTruthyString[T, K /* <: String */](obj: T, key: K): Unit = js.native
+  def ensureIsTruthyString[T, K /* <: /* keyof T */ String */](obj: T, key: K): Unit = js.native
   def getHostArch(): String = js.native
   def getNodeArch(arch: String): String = js.native
   def isOfficialLinuxIA32Download(platform: String, arch: String, version: String): Boolean = js.native

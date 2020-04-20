@@ -24,9 +24,9 @@ trait Typeofpower extends js.Object {
   def requestKeepAwake(
     level: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof Level */ js.Any, 
-      String, 
+      /* keyof typeof Level */ String, 
       Exclude[
-        String, 
+        /* keyof typeof Level */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
       ]
     ]
@@ -40,15 +40,14 @@ object Typeofpower {
     releaseKeepAwake: () => Unit,
     requestKeepAwake: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof Level */ js.Any, 
-      String, 
+      /* keyof typeof Level */ String, 
       Exclude[
-        String, 
+        /* keyof typeof Level */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
       ]
     ] => Unit
   ): Typeofpower = {
     val __obj = js.Dynamic.literal(Level = Level.asInstanceOf[js.Any], releaseKeepAwake = js.Any.fromFunction0(releaseKeepAwake), requestKeepAwake = js.Any.fromFunction1(requestKeepAwake))
-  
     __obj.asInstanceOf[Typeofpower]
   }
 }

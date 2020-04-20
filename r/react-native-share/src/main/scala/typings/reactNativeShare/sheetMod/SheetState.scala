@@ -13,7 +13,6 @@ object SheetState {
   @scala.inline
   def apply(bottom: Value): SheetState = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SheetState]
   }
 }

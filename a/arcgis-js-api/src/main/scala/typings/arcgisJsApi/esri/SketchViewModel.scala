@@ -23,10 +23,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait SketchViewModel
-  extends Accessor
-     with Evented {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.arcgisJsApi.esri.Evented because Inheritance from two classes. Inlined emit, emit, hasEventListener, on, on */ @js.native
+trait SketchViewModel extends Accessor {
   /**
     * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create) has been called), this property reflects the create tool being used. When updating graphics (for example after [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) has been called), this property reflects the update tool being used. If no create or update operation is in progress, this is `null`.
     *
@@ -129,7 +128,7 @@ trait SketchViewModel
     */
   var view: MapView | SceneView = js.native
   /**
-    * Cancels the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-update) event and changes the event's state to `cancel`. If called in the middle of a create operation, `cancel()` discards the partially created graphic.
+    * Cancels the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-update) event If called in the middle of a create operation, `cancel()` discards the partially created graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#cancel)
     *
@@ -159,6 +158,8 @@ trait SketchViewModel
     * hybrid | Vertices are added while the pointer is clicked or dragged. Applies to and is the default for `polygon` and `polyline`.
     * freehand | Vertices are added while the pointer is dragged. Applies to `polygon`, `polyline` `rectangle` and `circle`. Default for `rectangle` and `circle`.
     * click | Vertices are added when the pointer is clicked.
+    * @param createOptions.hasZ Controls whether the created geometry has z-values or not.
+    * @param createOptions.defaultZ The default z-value of the newly created geometry. Ignored when `hasZ` is `false` or the layer's elevation mode is set to `absolute-height`.
     *
     */
   def create(tool: String): Unit = js.native
@@ -171,6 +172,37 @@ trait SketchViewModel
     *
     */
   def delete(): Unit = js.native
+  /**
+    * Emits an event on the instance. This method should only be used when creating subclasses of this class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
+    *
+    * @param type The name of the event.
+    * @param event The event payload.
+    *
+    */
+  def emit(`type`: String): Boolean = js.native
+  def emit(`type`: String, event: js.Any): Boolean = js.native
+  /**
+    * Indicates whether there is an event listener on the instance that matches the provided event name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#hasEventListener)
+    *
+    * @param type The name of the event.
+    *
+    */
+  def hasEventListener(`type`: String): Boolean = js.native
+  /**
+    * Registers an event handler on the instance. Call this method to hook an event with a listener.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#on)
+    *
+    * @param type A event type, or an array of event types, to listen for.
+    * @param listener The function to call when the event is fired.
+    *
+    */
+  def on(`type`: String, listener: EventHandler): IHandle = js.native
+  def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
   @JSName("on")
   def on_create(name: create, eventHandler: SketchViewModelCreateEventHandler): IHandle = js.native
   @JSName("on")
@@ -216,6 +248,8 @@ trait SketchViewModel
     * move | This is the *default* tool for graphics with a [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometry that do not use a [3D object symbol layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html). It should be used for specific cases where you just want to move selected `polygon` and `polyline` graphics without additional options. Additionally, the `move` tool does not support toggling to different modes, since the `move` operation is built into both the `transform` and `reshape` tools by default.
     * @param updateOptions.enableRotation Indicates if the `rotation` operation will be enabled when updating graphics. Only applies if `tool` is `transform`.
     * @param updateOptions.enableScaling Indicates if the `scale` operation will be enabled when updating graphics. Only applies if `tool` is `transform`.
+    * @param updateOptions.enableZ Indicates if z-values can be modified when updating the graphic. When enabled, the height handle manipulator is displayed.
+    * @param updateOptions.multipleSelectionEnabled Indicates whether more than one selection can be made at once. This applies to the shift+click interaction with the `transform` tool.
     * @param updateOptions.preserveAspectRatio Indicates if the uniform scale operation will be enabled when updating graphics. `enableScaling` must be set `true` when setting this property to `true`. Only applies if `tool` is `transform` and is always `true` when transforming points that use a [3D object symbol layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html).
     * @param updateOptions.toggleToolOnClick Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
     *

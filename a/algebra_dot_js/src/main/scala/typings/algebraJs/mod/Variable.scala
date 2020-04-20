@@ -12,7 +12,6 @@ object Variable {
   @scala.inline
   def apply(variable: String): Variable = {
     val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Variable]
   }
 }

@@ -16,7 +16,6 @@ object AnonC {
     V: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): AnonC = {
     val __obj = js.Dynamic.literal(C = C.asInstanceOf[js.Any], V = V.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonC]
   }
 }

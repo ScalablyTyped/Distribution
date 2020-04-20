@@ -12,7 +12,6 @@ object AnonInitialSlideWidth {
   @scala.inline
   def apply(initialSlideWidth: Double): AnonInitialSlideWidth = {
     val __obj = js.Dynamic.literal(initialSlideWidth = initialSlideWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInitialSlideWidth]
   }
 }

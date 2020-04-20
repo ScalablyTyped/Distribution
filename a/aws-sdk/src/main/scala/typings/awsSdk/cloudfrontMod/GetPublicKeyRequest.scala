@@ -16,7 +16,6 @@ object GetPublicKeyRequest {
   @scala.inline
   def apply(Id: String): GetPublicKeyRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPublicKeyRequest]
   }
 }

@@ -18,22 +18,20 @@ trait WhereFilterOp extends js.Object
 
 object WhereFilterOp {
   @scala.inline
-  def EqualssignEqualssign: typings.googleCloudFirestore.googleCloudFirestoreStrings.EqualssignEqualssign = this.cast("==")
+  def EqualssignEqualssign: typings.googleCloudFirestore.googleCloudFirestoreStrings.EqualssignEqualssign = "==".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.EqualssignEqualssign]
   @scala.inline
-  def Greaterthansign: typings.googleCloudFirestore.googleCloudFirestoreStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.googleCloudFirestore.googleCloudFirestoreStrings.Greaterthansign = ">".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.Greaterthansign]
   @scala.inline
-  def GreaterthansignEqualssign: typings.googleCloudFirestore.googleCloudFirestoreStrings.GreaterthansignEqualssign = this.cast(">=")
+  def GreaterthansignEqualssign: typings.googleCloudFirestore.googleCloudFirestoreStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.GreaterthansignEqualssign]
   @scala.inline
-  def Lessthansign: typings.googleCloudFirestore.googleCloudFirestoreStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.googleCloudFirestore.googleCloudFirestoreStrings.Lessthansign = "<".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.Lessthansign]
   @scala.inline
-  def LessthansignEqualssign: typings.googleCloudFirestore.googleCloudFirestoreStrings.LessthansignEqualssign = this.cast("<=")
+  def LessthansignEqualssign: typings.googleCloudFirestore.googleCloudFirestoreStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.LessthansignEqualssign]
   @scala.inline
-  def `array-contains`: typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains` = this.cast("array-contains")
+  def `array-contains`: typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains` = "array-contains".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains`]
   @scala.inline
-  def `array-contains-any`: typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains-any` = this.cast("array-contains-any")
+  def `array-contains-any`: typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains-any` = "array-contains-any".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains-any`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def in: typings.googleCloudFirestore.googleCloudFirestoreStrings.in = this.cast("in")
+  def in: typings.googleCloudFirestore.googleCloudFirestoreStrings.in = "in".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.in]
 }
 

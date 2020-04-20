@@ -19,7 +19,6 @@ object PointerAxisCoordinatesObject {
   @scala.inline
   def apply(xAxis: js.Array[PointerAxisCoordinateObject], yAxis: js.Array[PointerAxisCoordinateObject]): PointerAxisCoordinatesObject = {
     val __obj = js.Dynamic.literal(xAxis = xAxis.asInstanceOf[js.Any], yAxis = yAxis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PointerAxisCoordinatesObject]
   }
 }

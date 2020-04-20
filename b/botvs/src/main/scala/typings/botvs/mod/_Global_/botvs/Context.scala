@@ -13,7 +13,6 @@ object Context {
   @scala.inline
   def apply(init: () => Unit, main: () => Unit): Context = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), main = js.Any.fromFunction0(main))
-  
     __obj.asInstanceOf[Context]
   }
 }

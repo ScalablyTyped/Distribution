@@ -13,7 +13,6 @@ object FileSystemManagerSaveFileSuccessCallbackResult {
   @scala.inline
   def apply(savedFilePath: Double): FileSystemManagerSaveFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(savedFilePath = savedFilePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileSystemManagerSaveFileSuccessCallbackResult]
   }
 }

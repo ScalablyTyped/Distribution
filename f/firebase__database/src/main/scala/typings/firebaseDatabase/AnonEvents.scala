@@ -15,7 +15,6 @@ object AnonEvents {
   @scala.inline
   def apply(events: js.Array[Event], removed: js.Array[Query]): AnonEvents = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEvents]
   }
 }

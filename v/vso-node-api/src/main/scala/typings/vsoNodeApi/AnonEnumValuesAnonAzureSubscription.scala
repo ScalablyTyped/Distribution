@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAzureSubscription {
   @scala.inline
   def apply(enumValues: AnonAzureSubscription): AnonEnumValuesAnonAzureSubscription = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAzureSubscription]
   }
 }

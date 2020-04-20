@@ -16,7 +16,6 @@ object StartStackRequest {
   @scala.inline
   def apply(StackId: String): StartStackRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartStackRequest]
   }
 }

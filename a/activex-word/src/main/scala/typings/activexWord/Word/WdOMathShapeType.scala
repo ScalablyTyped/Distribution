@@ -14,10 +14,8 @@ trait WdOMathShapeType extends js.Object
 
 object WdOMathShapeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdOMathShapeCentered: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdOMathShapeCentered: `0` = this.cast(0)
-  @scala.inline
-  def wdOMathShapeMatch: `1` = this.cast(1)
+  def wdOMathShapeMatch: `1` = 1.asInstanceOf[`1`]
 }
 

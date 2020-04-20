@@ -43,7 +43,6 @@ object CertificatePrincipal {
     state: String
   ): CertificatePrincipal = {
     val __obj = js.Dynamic.literal(commonName = commonName.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], organizationUnits = organizationUnits.asInstanceOf[js.Any], organizations = organizations.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificatePrincipal]
   }
 }

@@ -15,7 +15,6 @@ object AnonExtConfig {
   @scala.inline
   def apply(extConfig: js.Any): AnonExtConfig = {
     val __obj = js.Dynamic.literal(extConfig = extConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtConfig]
   }
 }

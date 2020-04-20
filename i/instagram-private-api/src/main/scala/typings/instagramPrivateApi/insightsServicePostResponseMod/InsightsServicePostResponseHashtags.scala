@@ -13,7 +13,6 @@ object InsightsServicePostResponseHashtags {
   @scala.inline
   def apply(count: Double, nodes: js.Array[_]): InsightsServicePostResponseHashtags = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServicePostResponseHashtags]
   }
 }

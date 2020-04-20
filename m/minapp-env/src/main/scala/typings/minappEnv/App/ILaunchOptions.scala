@@ -12,7 +12,6 @@ object ILaunchOptions {
   @scala.inline
   def apply(query: Double): ILaunchOptions = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILaunchOptions]
   }
 }

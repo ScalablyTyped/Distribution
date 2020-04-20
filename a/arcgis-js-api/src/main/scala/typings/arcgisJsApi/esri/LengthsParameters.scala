@@ -9,7 +9,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LengthsParameters extends Accessor {
+trait LengthsParameters
+  extends Accessor
+     with JSONSupport {
   /**
     * Defines the type of calculation for the geometry. The type can be one of the following:
     *
@@ -41,14 +43,6 @@ trait LengthsParameters extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LengthsParameters.html#polylines)
     */
   var polylines: js.Array[Polyline] = js.native
-  /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LengthsParameters.html#toJSON)
-    *
-    *
-    */
-  def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("__esri.LengthsParameters")

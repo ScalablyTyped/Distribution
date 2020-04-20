@@ -15,7 +15,6 @@ object PermissionsResource {
   @scala.inline
   def apply(get: AnonLanguage => Request_[Permission]): PermissionsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[PermissionsResource]
   }
 }

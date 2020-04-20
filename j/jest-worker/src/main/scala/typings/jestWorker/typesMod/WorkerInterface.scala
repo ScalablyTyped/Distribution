@@ -25,7 +25,6 @@ object WorkerInterface {
     send: (ChildMessage, OnStart, OnEnd) => Unit
   ): WorkerInterface = {
     val __obj = js.Dynamic.literal(getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout), getWorkerId = js.Any.fromFunction0(getWorkerId), onExit = js.Any.fromFunction1(onExit), onMessage = js.Any.fromFunction1(onMessage), send = js.Any.fromFunction3(send))
-  
     __obj.asInstanceOf[WorkerInterface]
   }
 }

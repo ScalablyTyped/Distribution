@@ -28,7 +28,6 @@ object ISaxHandler {
     startTag: (String, js.Array[String], js.Any) => Unit
   ): ISaxHandler = {
     val __obj = js.Dynamic.literal(cdata = js.Any.fromFunction2(cdata), comment = js.Any.fromFunction2(comment), endDoc = js.Any.fromFunction1(endDoc), endTag = js.Any.fromFunction2(endTag), pcdata = js.Any.fromFunction2(pcdata), rcdata = js.Any.fromFunction2(rcdata), startDoc = js.Any.fromFunction1(startDoc), startTag = js.Any.fromFunction3(startTag))
-  
     __obj.asInstanceOf[ISaxHandler]
   }
 }

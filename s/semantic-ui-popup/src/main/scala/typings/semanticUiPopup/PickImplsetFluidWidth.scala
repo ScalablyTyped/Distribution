@@ -13,7 +13,6 @@ object PickImplsetFluidWidth {
   @scala.inline
   def apply(setFluidWidth: Boolean): PickImplsetFluidWidth = {
     val __obj = js.Dynamic.literal(setFluidWidth = setFluidWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsetFluidWidth]
   }
 }

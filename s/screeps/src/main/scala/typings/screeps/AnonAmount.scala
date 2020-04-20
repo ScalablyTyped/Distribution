@@ -14,7 +14,6 @@ object AnonAmount {
   @scala.inline
   def apply(amount: Double, components: RecordDepositConstantComm, cooldown: Double): AnonAmount = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAmount]
   }
 }

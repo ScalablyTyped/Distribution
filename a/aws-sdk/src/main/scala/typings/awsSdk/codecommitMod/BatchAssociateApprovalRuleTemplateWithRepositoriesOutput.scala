@@ -23,7 +23,6 @@ object BatchAssociateApprovalRuleTemplateWithRepositoriesOutput {
     errors: BatchAssociateApprovalRuleTemplateWithRepositoriesErrorsList
   ): BatchAssociateApprovalRuleTemplateWithRepositoriesOutput = {
     val __obj = js.Dynamic.literal(associatedRepositoryNames = associatedRepositoryNames.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchAssociateApprovalRuleTemplateWithRepositoriesOutput]
   }
 }

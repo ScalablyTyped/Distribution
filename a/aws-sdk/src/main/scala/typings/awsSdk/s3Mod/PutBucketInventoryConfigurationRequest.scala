@@ -24,7 +24,6 @@ object PutBucketInventoryConfigurationRequest {
   @scala.inline
   def apply(Bucket: BucketName, Id: InventoryId, InventoryConfiguration: InventoryConfiguration): PutBucketInventoryConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InventoryConfiguration = InventoryConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutBucketInventoryConfigurationRequest]
   }
 }

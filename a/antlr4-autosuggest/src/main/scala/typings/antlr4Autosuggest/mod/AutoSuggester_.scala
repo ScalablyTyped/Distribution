@@ -12,7 +12,6 @@ object AutoSuggester_ {
   @scala.inline
   def apply(autosuggest: String => js.Array[String]): AutoSuggester_ = {
     val __obj = js.Dynamic.literal(autosuggest = js.Any.fromFunction1(autosuggest))
-  
     __obj.asInstanceOf[AutoSuggester_]
   }
 }

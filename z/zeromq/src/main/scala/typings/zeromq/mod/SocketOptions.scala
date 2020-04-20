@@ -66,7 +66,6 @@ object SocketOptions {
     zap_domain: Double
   ): SocketOptions = {
     val __obj = js.Dynamic.literal(_fd = _fd.asInstanceOf[js.Any], _ioevents = _ioevents.asInstanceOf[js.Any], _receiveMore = _receiveMore.asInstanceOf[js.Any], _subscribe = _subscribe.asInstanceOf[js.Any], _unsubscribe = _unsubscribe.asInstanceOf[js.Any], affinity = affinity.asInstanceOf[js.Any], backlog = backlog.asInstanceOf[js.Any], curve_publickey = curve_publickey.asInstanceOf[js.Any], curve_secretkey = curve_secretkey.asInstanceOf[js.Any], curve_server = curve_server.asInstanceOf[js.Any], curve_serverkey = curve_serverkey.asInstanceOf[js.Any], hwm = hwm.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], last_endpoint = last_endpoint.asInstanceOf[js.Any], linger = linger.asInstanceOf[js.Any], mcast_loop = mcast_loop.asInstanceOf[js.Any], mechanism = mechanism.asInstanceOf[js.Any], plain_password = plain_password.asInstanceOf[js.Any], plain_server = plain_server.asInstanceOf[js.Any], plain_username = plain_username.asInstanceOf[js.Any], rate = rate.asInstanceOf[js.Any], rcvbuf = rcvbuf.asInstanceOf[js.Any], reconnect_ivl = reconnect_ivl.asInstanceOf[js.Any], recovery_ivl = recovery_ivl.asInstanceOf[js.Any], sndbuf = sndbuf.asInstanceOf[js.Any], swap = swap.asInstanceOf[js.Any], zap_domain = zap_domain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SocketOptions]
   }
 }

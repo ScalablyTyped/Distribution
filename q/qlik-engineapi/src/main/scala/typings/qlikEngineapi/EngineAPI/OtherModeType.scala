@@ -16,18 +16,16 @@ trait OtherModeType extends js.Object
 
 object OtherModeType {
   @scala.inline
-  def OTHER_ABS_ACC_TARGET: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_ABS_ACC_TARGET = this.cast("OTHER_ABS_ACC_TARGET")
+  def OTHER_ABS_ACC_TARGET: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_ABS_ACC_TARGET = "OTHER_ABS_ACC_TARGET".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_ABS_ACC_TARGET]
   @scala.inline
-  def OTHER_ABS_LIMITED: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_ABS_LIMITED = this.cast("OTHER_ABS_LIMITED")
+  def OTHER_ABS_LIMITED: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_ABS_LIMITED = "OTHER_ABS_LIMITED".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_ABS_LIMITED]
   @scala.inline
-  def OTHER_COUNTED: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_COUNTED = this.cast("OTHER_COUNTED")
+  def OTHER_COUNTED: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_COUNTED = "OTHER_COUNTED".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_COUNTED]
   @scala.inline
-  def OTHER_OFF: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_OFF = this.cast("OTHER_OFF")
+  def OTHER_OFF: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_OFF = "OTHER_OFF".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_OFF]
   @scala.inline
-  def OTHER_REL_ACC_TARGET: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_REL_ACC_TARGET = this.cast("OTHER_REL_ACC_TARGET")
+  def OTHER_REL_ACC_TARGET: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_REL_ACC_TARGET = "OTHER_REL_ACC_TARGET".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_REL_ACC_TARGET]
   @scala.inline
-  def OTHER_REL_LIMITED: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_REL_LIMITED = this.cast("OTHER_REL_LIMITED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OTHER_REL_LIMITED: typings.qlikEngineapi.qlikEngineapiStrings.OTHER_REL_LIMITED = "OTHER_REL_LIMITED".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER_REL_LIMITED]
 }
 

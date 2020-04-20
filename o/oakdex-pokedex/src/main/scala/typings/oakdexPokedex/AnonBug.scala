@@ -48,7 +48,6 @@ object AnonBug {
     Water: Double
   ): AnonBug = {
     val __obj = js.Dynamic.literal(Bug = Bug.asInstanceOf[js.Any], Dark = Dark.asInstanceOf[js.Any], Dragon = Dragon.asInstanceOf[js.Any], Electric = Electric.asInstanceOf[js.Any], Fairy = Fairy.asInstanceOf[js.Any], Fighting = Fighting.asInstanceOf[js.Any], Fire = Fire.asInstanceOf[js.Any], Flying = Flying.asInstanceOf[js.Any], Ghost = Ghost.asInstanceOf[js.Any], Grass = Grass.asInstanceOf[js.Any], Ground = Ground.asInstanceOf[js.Any], Ice = Ice.asInstanceOf[js.Any], Normal = Normal.asInstanceOf[js.Any], Poison = Poison.asInstanceOf[js.Any], Psychic = Psychic.asInstanceOf[js.Any], Rock = Rock.asInstanceOf[js.Any], Steel = Steel.asInstanceOf[js.Any], Water = Water.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBug]
   }
 }

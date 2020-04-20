@@ -18,22 +18,20 @@ trait MobileStepperClassKey extends js.Object
 
 object MobileStepperClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dot: typings.materialUiCore.materialUiCoreStrings.dot = "dot".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dot]
   @scala.inline
-  def dot: typings.materialUiCore.materialUiCoreStrings.dot = this.cast("dot")
+  def dotActive: typings.materialUiCore.materialUiCoreStrings.dotActive = "dotActive".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dotActive]
   @scala.inline
-  def dotActive: typings.materialUiCore.materialUiCoreStrings.dotActive = this.cast("dotActive")
+  def dots: typings.materialUiCore.materialUiCoreStrings.dots = "dots".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dots]
   @scala.inline
-  def dots: typings.materialUiCore.materialUiCoreStrings.dots = this.cast("dots")
+  def positionBottom: typings.materialUiCore.materialUiCoreStrings.positionBottom = "positionBottom".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.positionBottom]
   @scala.inline
-  def positionBottom: typings.materialUiCore.materialUiCoreStrings.positionBottom = this.cast("positionBottom")
+  def positionStatic: typings.materialUiCore.materialUiCoreStrings.positionStatic = "positionStatic".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.positionStatic]
   @scala.inline
-  def positionStatic: typings.materialUiCore.materialUiCoreStrings.positionStatic = this.cast("positionStatic")
+  def positionTop: typings.materialUiCore.materialUiCoreStrings.positionTop = "positionTop".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.positionTop]
   @scala.inline
-  def positionTop: typings.materialUiCore.materialUiCoreStrings.positionTop = this.cast("positionTop")
+  def progress: typings.materialUiCore.materialUiCoreStrings.progress = "progress".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.progress]
   @scala.inline
-  def progress: typings.materialUiCore.materialUiCoreStrings.progress = this.cast("progress")
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

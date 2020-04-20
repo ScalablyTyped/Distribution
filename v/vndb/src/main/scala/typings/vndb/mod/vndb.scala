@@ -25,7 +25,6 @@ object vndb {
   @scala.inline
   def apply(end: () => js.Promise[Unit], socket: TLSSocket, write: String => js.Promise[String]): vndb = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), socket = socket.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[vndb]
   }
 }

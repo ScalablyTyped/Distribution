@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class StringType ()
   extends Type_[String, String, js.Any] {
+  /**
+    * @since 1.0.0
+    */
   val _tag: typings.ioTs.ioTsStrings.StringType = js.native
 }
 

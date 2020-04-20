@@ -20,16 +20,14 @@ trait CommandLocation extends js.Object
 
 object CommandLocation {
   @scala.inline
-  def All: `268435455` = this.cast(268435455)
+  def All: `268435455` = 268435455.asInstanceOf[`268435455`]
   @scala.inline
-  def ContextMenu: `2` = this.cast(2)
+  def ContextMenu: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def MainMenu: `1` = this.cast(1)
+  def MainMenu: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def TaskPane: `4` = this.cast(4)
+  def TaskPane: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Undefined: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Undefined: `0` = 0.asInstanceOf[`0`]
 }
 

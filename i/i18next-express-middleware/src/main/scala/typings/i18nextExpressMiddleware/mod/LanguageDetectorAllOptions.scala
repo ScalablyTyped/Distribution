@@ -12,7 +12,6 @@ object LanguageDetectorAllOptions {
   @scala.inline
   def apply(fallbackLng: Boolean | String | js.Array[String]): LanguageDetectorAllOptions = {
     val __obj = js.Dynamic.literal(fallbackLng = fallbackLng.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LanguageDetectorAllOptions]
   }
 }

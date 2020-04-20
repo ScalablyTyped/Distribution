@@ -12,7 +12,6 @@ object AnonPropTypes {
   @scala.inline
   def apply(propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): AnonPropTypes = {
     val __obj = js.Dynamic.literal(propTypes = propTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPropTypes]
   }
 }

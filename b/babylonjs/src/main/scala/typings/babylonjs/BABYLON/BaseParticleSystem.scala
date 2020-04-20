@@ -354,13 +354,13 @@ class BaseParticleSystem protected () extends js.Object {
     * Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.
     * This only works when particleEmitterTyps is a BoxParticleEmitter
     */
-  def direction1(): Vector3 = js.native
+  def direction1: Vector3 = js.native
   def direction1(value: Vector3): js.Any = js.native
   /**
     * Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.
     * This only works when particleEmitterTyps is a BoxParticleEmitter
     */
-  def direction2(): Vector3 = js.native
+  def direction2: Vector3 = js.native
   def direction2(value: Vector3): js.Any = js.native
   /**
     * Gets the current list of alpha remap gradients.
@@ -436,7 +436,7 @@ class BaseParticleSystem protected () extends js.Object {
   /**
     * Gets the image processing configuration used either in this material.
     */
-  def imageProcessingConfiguration(): ImageProcessingConfiguration = js.native
+  def imageProcessingConfiguration: ImageProcessingConfiguration = js.native
   /**
     * Sets the Default image processing configuration used either in the this material.
     *
@@ -446,29 +446,29 @@ class BaseParticleSystem protected () extends js.Object {
   /**
     * Gets or sets whether an animation sprite sheet is enabled or not on the particle system
     */
-  def isAnimationSheetEnabled(): Boolean = js.native
+  def isAnimationSheetEnabled: Boolean = js.native
   def isAnimationSheetEnabled(value: Boolean): js.Any = js.native
   /**
     * Gets or sets a boolean indicating if the particles must be rendered as billboard or aligned with the direction
     */
-  def isBillboardBased(): Boolean = js.native
+  def isBillboardBased: Boolean = js.native
   def isBillboardBased(value: Boolean): js.Any = js.native
   /**
     * Maximum box point around our emitter. Our emitter is the center of particles source, but if you want your particles to emit from more than one point, then you can tell it to do so.
     * This only works when particleEmitterTyps is a BoxParticleEmitter
     */
-  def maxEmitBox(): Vector3 = js.native
+  def maxEmitBox: Vector3 = js.native
   def maxEmitBox(value: Vector3): js.Any = js.native
   /**
     * Minimum box point around our emitter. Our emitter is the center of particles source, but if you want your particles to emit from more than one point, then you can tell it to do so.
     * This only works when particleEmitterTyps is a BoxParticleEmitter
     */
-  def minEmitBox(): Vector3 = js.native
+  def minEmitBox: Vector3 = js.native
   def minEmitBox(value: Vector3): js.Any = js.native
   /**
     * Gets or sets a texture used to add random noise to particle positions
     */
-  def noiseTexture(): Nullable[ProceduralTexture] = js.native
+  def noiseTexture: Nullable[ProceduralTexture] = js.native
   def noiseTexture(value: Nullable[ProceduralTexture]): js.Any = js.native
 }
 

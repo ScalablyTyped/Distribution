@@ -14,7 +14,6 @@ object ReposGetBranchParams {
   @scala.inline
   def apply(branch: String, owner: String, repo: String): ReposGetBranchParams = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetBranchParams]
   }
 }

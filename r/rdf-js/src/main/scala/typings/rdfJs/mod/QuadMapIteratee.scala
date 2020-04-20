@@ -17,7 +17,6 @@ object QuadMapIteratee {
   @scala.inline
   def apply[Q /* <: BaseQuad */](map: (Q, Dataset[Q, Q]) => Q): QuadMapIteratee[Q] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
-  
     __obj.asInstanceOf[QuadMapIteratee[Q]]
   }
 }

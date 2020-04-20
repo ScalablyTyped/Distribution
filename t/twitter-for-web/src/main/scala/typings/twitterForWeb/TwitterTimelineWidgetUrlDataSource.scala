@@ -14,7 +14,6 @@ object TwitterTimelineWidgetUrlDataSource {
   @scala.inline
   def apply(sourceType: url, url: String): TwitterTimelineWidgetUrlDataSource = {
     val __obj = js.Dynamic.literal(sourceType = sourceType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TwitterTimelineWidgetUrlDataSource]
   }
 }

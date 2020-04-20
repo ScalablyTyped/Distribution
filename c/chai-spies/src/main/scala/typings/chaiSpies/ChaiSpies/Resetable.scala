@@ -18,7 +18,6 @@ object Resetable {
   @scala.inline
   def apply(reset: () => Resetable): Resetable = {
     val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[Resetable]
   }
 }

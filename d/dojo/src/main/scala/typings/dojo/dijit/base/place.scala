@@ -89,7 +89,6 @@ object place {
     placeOnScreenAroundRectangle: (js.Any, js.Any, js.Any, js.Any) => Unit
   ): place = {
     val __obj = js.Dynamic.literal(getPopupAroundAlignment = js.Any.fromFunction2(getPopupAroundAlignment), getViewport = js.Any.fromFunction0(getViewport), placeOnScreen = js.Any.fromFunction5(placeOnScreen), placeOnScreenAroundElement = js.Any.fromFunction4(placeOnScreenAroundElement), placeOnScreenAroundNode = js.Any.fromFunction4(placeOnScreenAroundNode), placeOnScreenAroundRectangle = js.Any.fromFunction4(placeOnScreenAroundRectangle))
-  
     __obj.asInstanceOf[place]
   }
 }

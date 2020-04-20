@@ -12,10 +12,8 @@ trait OrderByDirection extends js.Object
 
 object OrderByDirection {
   @scala.inline
-  def asc: typings.googleCloudFirestore.googleCloudFirestoreStrings.asc = this.cast("asc")
+  def asc: typings.googleCloudFirestore.googleCloudFirestoreStrings.asc = "asc".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.asc]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def desc: typings.googleCloudFirestore.googleCloudFirestoreStrings.desc = this.cast("desc")
+  def desc: typings.googleCloudFirestore.googleCloudFirestoreStrings.desc = "desc".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.desc]
 }
 

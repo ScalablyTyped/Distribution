@@ -13,7 +13,6 @@ object ShellDeps {
   @scala.inline
   def apply(log: ILogger): ShellDeps = {
     val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShellDeps]
   }
 }

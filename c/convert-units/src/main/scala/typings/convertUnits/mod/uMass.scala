@@ -18,22 +18,20 @@ trait uMass extends js.Object
 
 object uMass {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def g: typings.convertUnits.convertUnitsStrings.g = "g".asInstanceOf[typings.convertUnits.convertUnitsStrings.g]
   @scala.inline
-  def g: typings.convertUnits.convertUnitsStrings.g = this.cast("g")
+  def kg: typings.convertUnits.convertUnitsStrings.kg = "kg".asInstanceOf[typings.convertUnits.convertUnitsStrings.kg]
   @scala.inline
-  def kg: typings.convertUnits.convertUnitsStrings.kg = this.cast("kg")
+  def lb: typings.convertUnits.convertUnitsStrings.lb = "lb".asInstanceOf[typings.convertUnits.convertUnitsStrings.lb]
   @scala.inline
-  def lb: typings.convertUnits.convertUnitsStrings.lb = this.cast("lb")
+  def mcg: typings.convertUnits.convertUnitsStrings.mcg = "mcg".asInstanceOf[typings.convertUnits.convertUnitsStrings.mcg]
   @scala.inline
-  def mcg: typings.convertUnits.convertUnitsStrings.mcg = this.cast("mcg")
+  def mg: typings.convertUnits.convertUnitsStrings.mg = "mg".asInstanceOf[typings.convertUnits.convertUnitsStrings.mg]
   @scala.inline
-  def mg: typings.convertUnits.convertUnitsStrings.mg = this.cast("mg")
+  def mt: typings.convertUnits.convertUnitsStrings.mt = "mt".asInstanceOf[typings.convertUnits.convertUnitsStrings.mt]
   @scala.inline
-  def mt: typings.convertUnits.convertUnitsStrings.mt = this.cast("mt")
+  def oz: typings.convertUnits.convertUnitsStrings.oz = "oz".asInstanceOf[typings.convertUnits.convertUnitsStrings.oz]
   @scala.inline
-  def oz: typings.convertUnits.convertUnitsStrings.oz = this.cast("oz")
-  @scala.inline
-  def t: typings.convertUnits.convertUnitsStrings.t = this.cast("t")
+  def t: typings.convertUnits.convertUnitsStrings.t = "t".asInstanceOf[typings.convertUnits.convertUnitsStrings.t]
 }
 

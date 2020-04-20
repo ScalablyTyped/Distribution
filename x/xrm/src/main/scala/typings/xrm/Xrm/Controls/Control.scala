@@ -63,7 +63,6 @@ object Control {
     setLabel: String => Unit
   ): Control = {
     val __obj = js.Dynamic.literal(getControlType = js.Any.fromFunction0(getControlType), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getVisible = js.Any.fromFunction0(getVisible), setLabel = js.Any.fromFunction1(setLabel))
-  
     __obj.asInstanceOf[Control]
   }
 }

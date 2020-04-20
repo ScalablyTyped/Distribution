@@ -20,26 +20,24 @@ trait GeoProjectionType extends js.Object
 
 object GeoProjectionType {
   @scala.inline
-  def azimuthalEqualArea: typings.nivoGeo.nivoGeoStrings.azimuthalEqualArea = this.cast("azimuthalEqualArea")
+  def azimuthalEqualArea: typings.nivoGeo.nivoGeoStrings.azimuthalEqualArea = "azimuthalEqualArea".asInstanceOf[typings.nivoGeo.nivoGeoStrings.azimuthalEqualArea]
   @scala.inline
-  def azimuthalEquidistant: typings.nivoGeo.nivoGeoStrings.azimuthalEquidistant = this.cast("azimuthalEquidistant")
+  def azimuthalEquidistant: typings.nivoGeo.nivoGeoStrings.azimuthalEquidistant = "azimuthalEquidistant".asInstanceOf[typings.nivoGeo.nivoGeoStrings.azimuthalEquidistant]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def equalEarth: typings.nivoGeo.nivoGeoStrings.equalEarth = "equalEarth".asInstanceOf[typings.nivoGeo.nivoGeoStrings.equalEarth]
   @scala.inline
-  def equalEarth: typings.nivoGeo.nivoGeoStrings.equalEarth = this.cast("equalEarth")
+  def equirectangular: typings.nivoGeo.nivoGeoStrings.equirectangular = "equirectangular".asInstanceOf[typings.nivoGeo.nivoGeoStrings.equirectangular]
   @scala.inline
-  def equirectangular: typings.nivoGeo.nivoGeoStrings.equirectangular = this.cast("equirectangular")
+  def gnomonic: typings.nivoGeo.nivoGeoStrings.gnomonic = "gnomonic".asInstanceOf[typings.nivoGeo.nivoGeoStrings.gnomonic]
   @scala.inline
-  def gnomonic: typings.nivoGeo.nivoGeoStrings.gnomonic = this.cast("gnomonic")
+  def mercator: typings.nivoGeo.nivoGeoStrings.mercator = "mercator".asInstanceOf[typings.nivoGeo.nivoGeoStrings.mercator]
   @scala.inline
-  def mercator: typings.nivoGeo.nivoGeoStrings.mercator = this.cast("mercator")
+  def naturalEarth1: typings.nivoGeo.nivoGeoStrings.naturalEarth1 = "naturalEarth1".asInstanceOf[typings.nivoGeo.nivoGeoStrings.naturalEarth1]
   @scala.inline
-  def naturalEarth1: typings.nivoGeo.nivoGeoStrings.naturalEarth1 = this.cast("naturalEarth1")
+  def orthographic: typings.nivoGeo.nivoGeoStrings.orthographic = "orthographic".asInstanceOf[typings.nivoGeo.nivoGeoStrings.orthographic]
   @scala.inline
-  def orthographic: typings.nivoGeo.nivoGeoStrings.orthographic = this.cast("orthographic")
+  def stereographic: typings.nivoGeo.nivoGeoStrings.stereographic = "stereographic".asInstanceOf[typings.nivoGeo.nivoGeoStrings.stereographic]
   @scala.inline
-  def stereographic: typings.nivoGeo.nivoGeoStrings.stereographic = this.cast("stereographic")
-  @scala.inline
-  def transverseMercator: typings.nivoGeo.nivoGeoStrings.transverseMercator = this.cast("transverseMercator")
+  def transverseMercator: typings.nivoGeo.nivoGeoStrings.transverseMercator = "transverseMercator".asInstanceOf[typings.nivoGeo.nivoGeoStrings.transverseMercator]
 }
 

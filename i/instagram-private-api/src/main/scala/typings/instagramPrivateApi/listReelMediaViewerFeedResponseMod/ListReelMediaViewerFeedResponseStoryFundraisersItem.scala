@@ -32,7 +32,6 @@ object ListReelMediaViewerFeedResponseStoryFundraisersItem {
     z: Double
   ): ListReelMediaViewerFeedResponseStoryFundraisersItem = {
     val __obj = js.Dynamic.literal(fundraiser_sticker = fundraiser_sticker.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], is_hidden = is_hidden.asInstanceOf[js.Any], is_pinned = is_pinned.asInstanceOf[js.Any], is_sticker = is_sticker.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseStoryFundraisersItem]
   }
 }

@@ -12,7 +12,6 @@ object AnonIsauto {
   @scala.inline
   def apply(is_auto: Boolean): AnonIsauto = {
     val __obj = js.Dynamic.literal(is_auto = is_auto.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsauto]
   }
 }

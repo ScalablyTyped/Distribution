@@ -32,12 +32,12 @@ package object typesMod {
     * `ESS` means EndSubState
     * `S` means State
     */
-  type TransformInbound[SS, ESS, S] = js.Function3[/* subState */ SS, /* key */ java.lang.String, /* state */ S, ESS]
+  type TransformInbound[SS, ESS, S] = js.Function3[/* subState */ SS, /* keyof S */ /* key */ java.lang.String, /* state */ S, ESS]
   /**
     * @desc
     * `SS` means SubState
     * `HSS` means HydratedSubState
     * `RS` means RawState
     */
-  type TransformOutbound[SS, HSS, RS] = js.Function3[/* state */ SS, /* key */ java.lang.String, /* rawState */ RS, HSS]
+  type TransformOutbound[SS, HSS, RS] = js.Function3[/* state */ SS, /* keyof RS */ /* key */ java.lang.String, /* rawState */ RS, HSS]
 }

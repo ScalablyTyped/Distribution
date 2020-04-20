@@ -22,7 +22,6 @@ object AnonItemUnit {
     titles: js.Array[String]
   ): AnonItemUnit = {
     val __obj = js.Dynamic.literal(itemUnit = itemUnit.asInstanceOf[js.Any], itemsUnit = itemsUnit.asInstanceOf[js.Any], notFoundContent = notFoundContent.asInstanceOf[js.Any], searchPlaceholder = searchPlaceholder.asInstanceOf[js.Any], titles = titles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemUnit]
   }
 }

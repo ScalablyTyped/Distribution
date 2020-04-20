@@ -13,7 +13,6 @@ object PickImplsilent {
   @scala.inline
   def apply(silent: Boolean): PickImplsilent = {
     val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsilent]
   }
 }

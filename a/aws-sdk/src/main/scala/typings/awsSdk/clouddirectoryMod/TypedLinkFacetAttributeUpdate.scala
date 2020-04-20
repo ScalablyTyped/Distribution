@@ -20,7 +20,6 @@ object TypedLinkFacetAttributeUpdate {
   @scala.inline
   def apply(Action: UpdateActionType, Attribute: TypedLinkAttributeDefinition): TypedLinkFacetAttributeUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Attribute = Attribute.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypedLinkFacetAttributeUpdate]
   }
 }

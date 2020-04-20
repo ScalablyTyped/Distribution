@@ -15,7 +15,6 @@ object PullsDeletePendingReviewParams {
   @scala.inline
   def apply(owner: String, pull_number: Double, repo: String, review_id: Double): PullsDeletePendingReviewParams = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], review_id = review_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsDeletePendingReviewParams]
   }
 }

@@ -15,7 +15,6 @@ object AnonNIndexesWas {
   @scala.inline
   def apply(nIndexesWas: Double, ok: `1` | `0`): AnonNIndexesWas = {
     val __obj = js.Dynamic.literal(nIndexesWas = nIndexesWas.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNIndexesWas]
   }
 }

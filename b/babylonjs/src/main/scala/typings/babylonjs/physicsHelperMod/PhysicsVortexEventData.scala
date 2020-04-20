@@ -16,7 +16,6 @@ object PhysicsVortexEventData {
   @scala.inline
   def apply(cylinder: Mesh): PhysicsVortexEventData = {
     val __obj = js.Dynamic.literal(cylinder = cylinder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhysicsVortexEventData]
   }
 }

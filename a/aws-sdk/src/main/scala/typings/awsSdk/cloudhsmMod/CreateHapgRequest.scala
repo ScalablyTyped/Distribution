@@ -16,7 +16,6 @@ object CreateHapgRequest {
   @scala.inline
   def apply(Label: Label): CreateHapgRequest = {
     val __obj = js.Dynamic.literal(Label = Label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateHapgRequest]
   }
 }

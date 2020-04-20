@@ -14,10 +14,8 @@ trait FORMAT_EMAIL_FLAGS extends js.Object
 
 object FORMAT_EMAIL_FLAGS {
   @scala.inline
-  def FORMAT_EMAIL_EXCLUDE_SUBJECT_PATCH_MARKER: `1` = this.cast(1)
+  def FORMAT_EMAIL_EXCLUDE_SUBJECT_PATCH_MARKER: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def FORMAT_EMAIL_NONE: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def FORMAT_EMAIL_NONE: `0` = 0.asInstanceOf[`0`]
 }
 

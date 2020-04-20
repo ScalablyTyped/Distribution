@@ -16,7 +16,6 @@ object DeleteNamespaceRequest {
   @scala.inline
   def apply(Id: ResourceId): DeleteNamespaceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNamespaceRequest]
   }
 }

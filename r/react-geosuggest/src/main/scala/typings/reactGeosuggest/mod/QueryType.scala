@@ -15,16 +15,14 @@ trait QueryType extends js.Object
 
 object QueryType {
   @scala.inline
-  def LeftparenthesiscitiesRightparenthesis: typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesiscitiesRightparenthesis = this.cast("(cities)")
+  def LeftparenthesiscitiesRightparenthesis: typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesiscitiesRightparenthesis = "(cities)".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesiscitiesRightparenthesis]
   @scala.inline
-  def LeftparenthesisregionsRightparenthesis: typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesisregionsRightparenthesis = this.cast("(regions)")
+  def LeftparenthesisregionsRightparenthesis: typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesisregionsRightparenthesis = "(regions)".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesisregionsRightparenthesis]
   @scala.inline
-  def address: typings.reactGeosuggest.reactGeosuggestStrings.address = this.cast("address")
+  def address: typings.reactGeosuggest.reactGeosuggestStrings.address = "address".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.address]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def establishment: typings.reactGeosuggest.reactGeosuggestStrings.establishment = "establishment".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.establishment]
   @scala.inline
-  def establishment: typings.reactGeosuggest.reactGeosuggestStrings.establishment = this.cast("establishment")
-  @scala.inline
-  def geocode: typings.reactGeosuggest.reactGeosuggestStrings.geocode = this.cast("geocode")
+  def geocode: typings.reactGeosuggest.reactGeosuggestStrings.geocode = "geocode".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.geocode]
 }
 

@@ -15,7 +15,7 @@ class Replacement protected () extends js.Object {
   val text: String = js.native
   @JSName("apply")
   def apply(content: String): String = js.native
-  def end(): Double = js.native
+  def end: Double = js.native
   def toJson(): ReplacementJson = js.native
 }
 

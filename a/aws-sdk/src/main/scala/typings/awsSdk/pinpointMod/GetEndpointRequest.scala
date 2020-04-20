@@ -20,7 +20,6 @@ object GetEndpointRequest {
   @scala.inline
   def apply(ApplicationId: string, EndpointId: string): GetEndpointRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointId = EndpointId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEndpointRequest]
   }
 }

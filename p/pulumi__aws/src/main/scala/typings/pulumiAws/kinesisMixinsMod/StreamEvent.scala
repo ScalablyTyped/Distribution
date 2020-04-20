@@ -13,7 +13,6 @@ object StreamEvent {
   @scala.inline
   def apply(Records: js.Array[StreamEventRecord]): StreamEvent = {
     val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreamEvent]
   }
 }

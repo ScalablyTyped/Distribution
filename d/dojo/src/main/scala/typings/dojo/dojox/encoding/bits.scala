@@ -26,7 +26,6 @@ object bits {
   @scala.inline
   def apply(InputStream: (js.Any, js.Any) => Unit, OutputStream: () => Unit): bits = {
     val __obj = js.Dynamic.literal(InputStream = js.Any.fromFunction2(InputStream), OutputStream = js.Any.fromFunction0(OutputStream))
-  
     __obj.asInstanceOf[bits]
   }
 }

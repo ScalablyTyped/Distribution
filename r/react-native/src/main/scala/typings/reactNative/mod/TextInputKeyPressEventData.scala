@@ -12,7 +12,6 @@ object TextInputKeyPressEventData {
   @scala.inline
   def apply(key: String): TextInputKeyPressEventData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextInputKeyPressEventData]
   }
 }

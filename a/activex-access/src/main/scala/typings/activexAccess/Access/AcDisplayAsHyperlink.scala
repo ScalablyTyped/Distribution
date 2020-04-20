@@ -16,12 +16,10 @@ trait AcDisplayAsHyperlink extends js.Object
 
 object AcDisplayAsHyperlink {
   @scala.inline
-  def acDisplayAsHyperlinkAlways: `1` = this.cast(1)
+  def acDisplayAsHyperlinkAlways: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acDisplayAsHyperlinkIfHyperlink: `0` = this.cast(0)
+  def acDisplayAsHyperlinkIfHyperlink: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acDisplayAsHyperlinkOnScreenOnly: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acDisplayAsHyperlinkOnScreenOnly: `2` = 2.asInstanceOf[`2`]
 }
 

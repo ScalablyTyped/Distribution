@@ -14,10 +14,8 @@ trait fmBorderStyle extends js.Object
 
 object fmBorderStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmBorderStyleNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmBorderStyleNone: `0` = this.cast(0)
-  @scala.inline
-  def fmBorderStyleSingle: `1` = this.cast(1)
+  def fmBorderStyleSingle: `1` = 1.asInstanceOf[`1`]
 }
 

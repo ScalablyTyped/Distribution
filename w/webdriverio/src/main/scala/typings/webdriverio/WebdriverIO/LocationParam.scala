@@ -12,10 +12,8 @@ trait LocationParam extends js.Object
 
 object LocationParam {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def x: typings.webdriverio.webdriverioStrings.x = "x".asInstanceOf[typings.webdriverio.webdriverioStrings.x]
   @scala.inline
-  def x: typings.webdriverio.webdriverioStrings.x = this.cast("x")
-  @scala.inline
-  def y: typings.webdriverio.webdriverioStrings.y = this.cast("y")
+  def y: typings.webdriverio.webdriverioStrings.y = "y".asInstanceOf[typings.webdriverio.webdriverioStrings.y]
 }
 

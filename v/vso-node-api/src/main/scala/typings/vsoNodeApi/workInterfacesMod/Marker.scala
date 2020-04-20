@@ -24,7 +24,6 @@ object Marker {
   @scala.inline
   def apply(color: String, date: Date, label: String): Marker = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Marker]
   }
 }

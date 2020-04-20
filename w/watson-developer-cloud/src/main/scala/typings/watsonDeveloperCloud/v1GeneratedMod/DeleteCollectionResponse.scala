@@ -16,7 +16,6 @@ object DeleteCollectionResponse {
   @scala.inline
   def apply(collection_id: String, status: String): DeleteCollectionResponse = {
     val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCollectionResponse]
   }
 }

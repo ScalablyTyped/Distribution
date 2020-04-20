@@ -146,142 +146,140 @@ trait WdCompatibility extends js.Object
 
 object WdCompatibility {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAlignTablesRowByRow: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def wdAlignTablesRowByRow: `39` = this.cast(39)
+  def wdAllowSpaceOfSameStyleInTable: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def wdAllowSpaceOfSameStyleInTable: `54` = this.cast(54)
+  def wdApplyBreakingRules: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def wdApplyBreakingRules: `46` = this.cast(46)
+  def wdAutofitLikeWW11: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def wdAutofitLikeWW11: `57` = this.cast(57)
+  def wdAutospaceLikeWW7: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def wdAutospaceLikeWW7: `38` = this.cast(38)
+  def wdCachedColBalance: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def wdCachedColBalance: `65` = this.cast(65)
+  def wdConvMailMergeEsc: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdConvMailMergeEsc: `6` = this.cast(6)
+  def wdDisableOTKerning: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def wdDisableOTKerning: `66` = this.cast(66)
+  def wdDontAdjustLineHeightInTable: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def wdDontAdjustLineHeightInTable: `36` = this.cast(36)
+  def wdDontAutofitConstrainedTables: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def wdDontAutofitConstrainedTables: `56` = this.cast(56)
+  def wdDontBalanceSingleByteDoubleByteWidth: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdDontBalanceSingleByteDoubleByteWidth: `16` = this.cast(16)
+  def wdDontBreakConstrainedForcedTables: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def wdDontBreakConstrainedForcedTables: `62` = this.cast(62)
+  def wdDontBreakWrappedTables: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def wdDontBreakWrappedTables: `43` = this.cast(43)
+  def wdDontOverrideTableStyleFontSzAndJustification: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def wdDontOverrideTableStyleFontSzAndJustification: `68` = this.cast(68)
+  def wdDontSnapTextToGridInTableWithObjects: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def wdDontSnapTextToGridInTableWithObjects: `44` = this.cast(44)
+  def wdDontULTrailSpace: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdDontULTrailSpace: `15` = this.cast(15)
+  def wdDontUseAsianBreakRulesInGrid: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def wdDontUseAsianBreakRulesInGrid: `48` = this.cast(48)
+  def wdDontUseHTMLParagraphAutoSpacing: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def wdDontUseHTMLParagraphAutoSpacing: `35` = this.cast(35)
+  def wdDontUseIndentAsNumberingTabStop: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def wdDontUseIndentAsNumberingTabStop: `52` = this.cast(52)
+  def wdDontVertAlignCellWithShape: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def wdDontVertAlignCellWithShape: `61` = this.cast(61)
+  def wdDontVertAlignInTextbox: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def wdDontVertAlignInTextbox: `63` = this.cast(63)
+  def wdDontWrapTextWithPunctuation: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def wdDontWrapTextWithPunctuation: `47` = this.cast(47)
+  def wdExactOnTop: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def wdExactOnTop: `28` = this.cast(28)
+  def wdExpandShiftReturn: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdExpandShiftReturn: `14` = this.cast(14)
+  def wdFELineBreak11: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def wdFELineBreak11: `53` = this.cast(53)
+  def wdFlipMirrorIndents: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def wdFlipMirrorIndents: `67` = this.cast(67)
+  def wdFootnoteLayoutLikeWW8: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def wdFootnoteLayoutLikeWW8: `34` = this.cast(34)
+  def wdForgetLastTabAlignment: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def wdForgetLastTabAlignment: `37` = this.cast(37)
+  def wdGrowAutofit: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def wdGrowAutofit: `50` = this.cast(50)
+  def wdHangulWidthLikeWW11: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def wdHangulWidthLikeWW11: `59` = this.cast(59)
+  def wdLayoutRawTableWidth: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def wdLayoutRawTableWidth: `40` = this.cast(40)
+  def wdLayoutTableRowsApart: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def wdLayoutTableRowsApart: `41` = this.cast(41)
+  def wdLeaveBackslashAlone: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdLeaveBackslashAlone: `13` = this.cast(13)
+  def wdLineWrapLikeWord6: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def wdLineWrapLikeWord6: `32` = this.cast(32)
+  def wdMWSmallCaps: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def wdMWSmallCaps: `22` = this.cast(22)
+  def wdNoColumnBalance: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdNoColumnBalance: `5` = this.cast(5)
+  def wdNoExtraLineSpacing: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def wdNoExtraLineSpacing: `23` = this.cast(23)
+  def wdNoLeading: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdNoLeading: `20` = this.cast(20)
+  def wdNoSpaceForUL: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def wdNoSpaceForUL: `21` = this.cast(21)
+  def wdNoSpaceRaiseLower: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdNoSpaceRaiseLower: `2` = this.cast(2)
+  def wdNoTabHangIndent: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdNoTabHangIndent: `1` = this.cast(1)
+  def wdOrigWordTableRules: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdOrigWordTableRules: `9` = this.cast(9)
+  def wdPrintBodyTextBeforeHeader: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdPrintBodyTextBeforeHeader: `19` = this.cast(19)
+  def wdPrintColBlack: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdPrintColBlack: `3` = this.cast(3)
+  def wdSelectFieldWithFirstOrLastCharacter: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def wdSelectFieldWithFirstOrLastCharacter: `45` = this.cast(45)
+  def wdShapeLayoutLikeWW8: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def wdShapeLayoutLikeWW8: `33` = this.cast(33)
+  def wdShowBreaksInFrames: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdShowBreaksInFrames: `11` = this.cast(11)
+  def wdSpacingInWholePoints: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdSpacingInWholePoints: `18` = this.cast(18)
+  def wdSplitPgBreakAndParaMark: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def wdSplitPgBreakAndParaMark: `60` = this.cast(60)
+  def wdSubFontBySize: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def wdSubFontBySize: `25` = this.cast(25)
+  def wdSuppressBottomSpacing: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def wdSuppressBottomSpacing: `29` = this.cast(29)
+  def wdSuppressSpBfAfterPgBrk: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdSuppressSpBfAfterPgBrk: `7` = this.cast(7)
+  def wdSuppressTopSpacing: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdSuppressTopSpacing: `8` = this.cast(8)
+  def wdSuppressTopSpacingMac5: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdSuppressTopSpacingMac5: `17` = this.cast(17)
+  def wdSwapBordersFacingPages: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdSwapBordersFacingPages: `12` = this.cast(12)
+  def wdTransparentMetafiles: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdTransparentMetafiles: `10` = this.cast(10)
+  def wdTruncateFontHeight: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def wdTruncateFontHeight: `24` = this.cast(24)
+  def wdUnderlineTabInNumList: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def wdUnderlineTabInNumList: `58` = this.cast(58)
+  def wdUseNormalStyleForList: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def wdUseNormalStyleForList: `51` = this.cast(51)
+  def wdUsePrinterMetrics: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def wdUsePrinterMetrics: `26` = this.cast(26)
+  def wdUseWord2002TableStyleRules: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdUseWord2002TableStyleRules: `49` = this.cast(49)
+  def wdUseWord97LineBreakingRules: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def wdUseWord97LineBreakingRules: `42` = this.cast(42)
+  def wdWPJustification: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def wdWPJustification: `31` = this.cast(31)
+  def wdWPSpaceWidth: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def wdWPSpaceWidth: `30` = this.cast(30)
+  def wdWW11IndentRules: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def wdWW11IndentRules: `55` = this.cast(55)
+  def wdWW6BorderRules: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def wdWW6BorderRules: `27` = this.cast(27)
+  def wdWord11KerningPairs: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def wdWord11KerningPairs: `64` = this.cast(64)
-  @scala.inline
-  def wdWrapTrailSpaces: `4` = this.cast(4)
+  def wdWrapTrailSpaces: `4` = 4.asInstanceOf[`4`]
 }
 

@@ -28,11 +28,11 @@ class ConditionSettings protected () extends Element {
   var model_FConditionSettings: IModel = js.native
   def attribute(): js.Any = js.native
   def attribute(newValue: IAttribute): js.Any = js.native
-  def attributeQualifiedName(): String | Null = js.native
+  def attributeQualifiedName: String | Null = js.native
   @JSName("attribute")
-  def attribute_Union(): IAttribute | Null = js.native
-  def conditions(): IList[Condition] = js.native
-  def containerAsTableRow(): TableRow = js.native
+  def attribute_Union: IAttribute | Null = js.native
+  def conditions: IList[Condition] = js.native
+  def containerAsTableRow: TableRow = js.native
 }
 
 /* static members */

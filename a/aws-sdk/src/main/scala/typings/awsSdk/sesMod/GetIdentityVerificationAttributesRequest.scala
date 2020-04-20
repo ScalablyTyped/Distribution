@@ -16,7 +16,6 @@ object GetIdentityVerificationAttributesRequest {
   @scala.inline
   def apply(Identities: IdentityList): GetIdentityVerificationAttributesRequest = {
     val __obj = js.Dynamic.literal(Identities = Identities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIdentityVerificationAttributesRequest]
   }
 }

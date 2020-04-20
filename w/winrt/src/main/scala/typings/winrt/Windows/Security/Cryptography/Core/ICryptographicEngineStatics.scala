@@ -33,7 +33,6 @@ object ICryptographicEngineStatics {
     verifySignature: (CryptographicKey, IBuffer, IBuffer) => Boolean
   ): ICryptographicEngineStatics = {
     val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction3(decrypt), decryptAndAuthenticate = js.Any.fromFunction5(decryptAndAuthenticate), deriveKeyMaterial = js.Any.fromFunction3(deriveKeyMaterial), encrypt = js.Any.fromFunction3(encrypt), encryptAndAuthenticate = js.Any.fromFunction4(encryptAndAuthenticate), sign = js.Any.fromFunction2(sign), verifySignature = js.Any.fromFunction3(verifySignature))
-  
     __obj.asInstanceOf[ICryptographicEngineStatics]
   }
 }

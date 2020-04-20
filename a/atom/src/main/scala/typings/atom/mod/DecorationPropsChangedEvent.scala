@@ -15,7 +15,6 @@ object DecorationPropsChangedEvent {
   @scala.inline
   def apply(newProperties: DecorationOptions, oldProperties: DecorationOptions): DecorationPropsChangedEvent = {
     val __obj = js.Dynamic.literal(newProperties = newProperties.asInstanceOf[js.Any], oldProperties = oldProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecorationPropsChangedEvent]
   }
 }

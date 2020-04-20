@@ -50,7 +50,6 @@ object RSASSAPSSParams {
     trailerField: Double
   ): RSASSAPSSParams = {
     val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], maskGenAlgorithm = maskGenAlgorithm.asInstanceOf[js.Any], saltLength = saltLength.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), trailerField = trailerField.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RSASSAPSSParams]
   }
 }

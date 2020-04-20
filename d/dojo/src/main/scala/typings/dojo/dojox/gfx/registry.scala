@@ -36,7 +36,6 @@ object registry {
   @scala.inline
   def apply(byId: String => Shape, dispose: (Shape, Boolean) => Unit, register: Shape => Double): registry = {
     val __obj = js.Dynamic.literal(byId = js.Any.fromFunction1(byId), dispose = js.Any.fromFunction2(dispose), register = js.Any.fromFunction1(register))
-  
     __obj.asInstanceOf[registry]
   }
 }

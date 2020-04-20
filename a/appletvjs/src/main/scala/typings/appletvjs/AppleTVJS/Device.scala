@@ -30,7 +30,6 @@ object Device {
     vendorIdentifier: String
   ): Device = {
     val __obj = js.Dynamic.literal(appIdentifier = appIdentifier.asInstanceOf[js.Any], appVersion = appVersion.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], productType = productType.asInstanceOf[js.Any], systemVersion = systemVersion.asInstanceOf[js.Any], vendorIdentifier = vendorIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Device]
   }
 }

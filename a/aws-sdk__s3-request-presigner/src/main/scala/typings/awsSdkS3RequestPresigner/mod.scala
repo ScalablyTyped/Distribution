@@ -21,7 +21,7 @@ object mod extends js.Object {
     * PartialBy<T, K> makes properties specified in K optional in interface T
     * see: https://stackoverflow.com/questions/43159887/make-a-single-property-optional-in-typescript
     * */
-  type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
-  type PartialBy[T, K /* <: String */] = (Omit[T, K]) with (Partial[Pick[T, K]])
+  type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
+  type PartialBy[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) with (Partial[Pick[T, K]])
 }
 

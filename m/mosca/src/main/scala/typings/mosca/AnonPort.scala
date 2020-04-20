@@ -12,7 +12,6 @@ object AnonPort {
   @scala.inline
   def apply(port: Double): AnonPort = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPort]
   }
 }

@@ -14,7 +14,6 @@ object Header_ {
   @scala.inline
   def apply(artifacts: Artifacts, header: String): Header_ = {
     val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Header_]
   }
 }

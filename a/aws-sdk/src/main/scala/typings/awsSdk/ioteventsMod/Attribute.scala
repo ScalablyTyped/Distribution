@@ -16,7 +16,6 @@ object Attribute {
   @scala.inline
   def apply(jsonPath: AttributeJsonPath): Attribute = {
     val __obj = js.Dynamic.literal(jsonPath = jsonPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Attribute]
   }
 }

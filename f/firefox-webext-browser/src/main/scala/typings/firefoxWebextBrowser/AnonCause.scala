@@ -19,7 +19,6 @@ object AnonCause {
   @scala.inline
   def apply(cause: OnChangedCause, cookie: Cookie, removed: Boolean): AnonCause = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], cookie = cookie.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCause]
   }
 }

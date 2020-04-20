@@ -77,7 +77,6 @@ object IFormHelper {
     submitForm: /* repeated */ js.Any => Unit
   ): IFormHelper = {
     val __obj = js.Dynamic.literal(handleError = js.Any.fromFunction1(handleError), handleServerValidation = js.Any.fromFunction1(handleServerValidation), resetForm = js.Any.fromFunction1(resetForm), submitForm = js.Any.fromFunction1(submitForm))
-  
     __obj.asInstanceOf[IFormHelper]
   }
 }

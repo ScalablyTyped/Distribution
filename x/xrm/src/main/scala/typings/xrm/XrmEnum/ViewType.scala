@@ -17,10 +17,8 @@ trait ViewType extends js.Object
 
 object ViewType {
   @scala.inline
-  def SystemView: `1039` = this.cast(1039)
+  def SystemView: `1039` = 1039.asInstanceOf[`1039`]
   @scala.inline
-  def UserView: `4230` = this.cast(4230)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UserView: `4230` = 4230.asInstanceOf[`4230`]
 }
 

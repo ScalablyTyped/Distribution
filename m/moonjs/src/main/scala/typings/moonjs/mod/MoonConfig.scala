@@ -23,7 +23,6 @@ object MoonConfig {
     version: String
   ): MoonConfig = {
     val __obj = js.Dynamic.literal(delimiters = delimiters.asInstanceOf[js.Any], keycodes = js.Any.fromFunction1(keycodes), prefix = prefix.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MoonConfig]
   }
 }

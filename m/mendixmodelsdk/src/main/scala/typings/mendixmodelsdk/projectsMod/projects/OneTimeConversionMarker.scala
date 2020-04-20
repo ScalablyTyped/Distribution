@@ -23,8 +23,8 @@ class OneTimeConversionMarker protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FOneTimeConversionMarker: IModel = js.native
-  def containerAsProjectConversion(): ProjectConversion = js.native
-  def name(): String = js.native
+  def containerAsProjectConversion: ProjectConversion = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
 }
 

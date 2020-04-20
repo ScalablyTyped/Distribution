@@ -46,7 +46,6 @@ object Typeoftextopsx {
     remove_hf_value2: (String, String) => Double
   ): Typeoftextopsx = {
     val __obj = js.Dynamic.literal(append_hf_value = js.Any.fromFunction2(append_hf_value), assign_hf_value = js.Any.fromFunction2(assign_hf_value), assign_hf_value2 = js.Any.fromFunction2(assign_hf_value2), change_reply_status = js.Any.fromFunction2(change_reply_status), exclude_hf_value = js.Any.fromFunction2(exclude_hf_value), fnmatch = js.Any.fromFunction2(fnmatch), fnmatch_ex = js.Any.fromFunction3(fnmatch_ex), hf_value_exists = js.Any.fromFunction2(hf_value_exists), include_hf_value = js.Any.fromFunction2(include_hf_value), insert_hf_value = js.Any.fromFunction2(insert_hf_value), keep_hf = js.Any.fromFunction0(keep_hf), keep_hf_re = js.Any.fromFunction1(keep_hf_re), msg_apply_changes = js.Any.fromFunction0(msg_apply_changes), msg_set_buffer = js.Any.fromFunction1(msg_set_buffer), remove_body = js.Any.fromFunction0(remove_body), remove_hf_value = js.Any.fromFunction1(remove_hf_value), remove_hf_value2 = js.Any.fromFunction2(remove_hf_value2))
-  
     __obj.asInstanceOf[Typeoftextopsx]
   }
 }

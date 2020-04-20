@@ -18,7 +18,6 @@ object ImageFile {
   @scala.inline
   def apply(path: String, size: Double): ImageFile = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageFile]
   }
 }

@@ -14,7 +14,6 @@ object AnonComparator {
   @scala.inline
   def apply(comparator: Comparator, number: Double): AnonComparator = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComparator]
   }
 }

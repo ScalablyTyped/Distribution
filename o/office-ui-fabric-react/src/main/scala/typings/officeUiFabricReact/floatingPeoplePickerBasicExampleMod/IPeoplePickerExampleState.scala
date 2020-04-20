@@ -14,7 +14,6 @@ object IPeoplePickerExampleState {
   @scala.inline
   def apply(peopleList: js.Array[IPersonaProps], searchValue: String): IPeoplePickerExampleState = {
     val __obj = js.Dynamic.literal(peopleList = peopleList.asInstanceOf[js.Any], searchValue = searchValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPeoplePickerExampleState]
   }
 }

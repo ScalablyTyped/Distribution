@@ -17,7 +17,6 @@ object Version {
     upgrade: js.Function1[/* trans */ Transaction, Unit] => Version
   ): Version = {
     val __obj = js.Dynamic.literal(stores = js.Any.fromFunction1(stores), upgrade = js.Any.fromFunction1(upgrade))
-  
     __obj.asInstanceOf[Version]
   }
 }

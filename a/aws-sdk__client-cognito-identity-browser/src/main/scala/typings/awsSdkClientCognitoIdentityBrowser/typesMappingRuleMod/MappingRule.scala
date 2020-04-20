@@ -36,7 +36,6 @@ object MappingRule {
     Value: String
   ): MappingRule = {
     val __obj = js.Dynamic.literal(Claim = Claim.asInstanceOf[js.Any], MatchType = MatchType.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MappingRule]
   }
 }

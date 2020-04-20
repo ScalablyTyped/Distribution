@@ -55,7 +55,6 @@ object IPoll_ {
     ticked: ISignal[IPoll[T, U, V], State[T, U, V]]
   ): IPoll_[T, U, V] = {
     val __obj = js.Dynamic.literal(disposed = disposed.asInstanceOf[js.Any], frequency = frequency.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any], ticked = ticked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPoll_[T, U, V]]
   }
 }

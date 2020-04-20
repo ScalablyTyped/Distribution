@@ -14,7 +14,6 @@ object AnonFaces {
   @scala.inline
   def apply(faces: js.Array[Face3], vertices: js.Array[_]): AnonFaces = {
     val __obj = js.Dynamic.literal(faces = faces.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFaces]
   }
 }

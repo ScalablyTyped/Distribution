@@ -131,7 +131,6 @@ object xip_ {
     xipClientUrl: js.Object
   ): xip_ = {
     val __obj = js.Dynamic.literal(XhrIframeFacade = js.Any.fromFunction1(XhrIframeFacade), createFacade = js.Any.fromFunction0(createFacade), destroyState = js.Any.fromFunction1(destroyState), fragmentReceived = js.Any.fromFunction1(fragmentReceived), fragmentReceivedEvent = js.Any.fromFunction1(fragmentReceivedEvent), frameLoaded = js.Any.fromFunction1(frameLoaded), makeServerUrl = js.Any.fromFunction3(makeServerUrl), receive = js.Any.fromFunction2(receive), send = js.Any.fromFunction1(send), sendRequest = js.Any.fromFunction2(sendRequest), sendRequestPart = js.Any.fromFunction1(sendRequestPart), sendRequestStart = js.Any.fromFunction1(sendRequestStart), setServerUrl = js.Any.fromFunction3(setServerUrl), unpackMessage = js.Any.fromFunction1(unpackMessage), urlLimit = urlLimit.asInstanceOf[js.Any], xipClientUrl = xipClientUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[xip_]
   }
 }

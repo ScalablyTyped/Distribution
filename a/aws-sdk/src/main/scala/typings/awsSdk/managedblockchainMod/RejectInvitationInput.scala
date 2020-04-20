@@ -16,7 +16,6 @@ object RejectInvitationInput {
   @scala.inline
   def apply(InvitationId: ResourceIdString): RejectInvitationInput = {
     val __obj = js.Dynamic.literal(InvitationId = InvitationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RejectInvitationInput]
   }
 }

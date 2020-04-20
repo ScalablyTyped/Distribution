@@ -1,5 +1,6 @@
 package typings.jupyterlabServices
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jupyterlabServices.jupyterlabServicesStrings.apiSlashsessions
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabServices.sessionSessionMod.IModel
@@ -25,6 +26,6 @@ object sessionRestapiMod extends js.Object {
   def updateSession(model: PickIModelidDeepPartialOm, settings: ISettings): js.Promise[IModel] = js.native
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @jupyterlab/services.@jupyterlab/services/lib/session/restapi.DeepPartial<T[P]> * / object}
-    */ typings.jupyterlabServices.jupyterlabServicesStrings.DeepPartial with js.Any
+    */ typings.jupyterlabServices.jupyterlabServicesStrings.DeepPartial with TopLevel[js.Any]
 }
 

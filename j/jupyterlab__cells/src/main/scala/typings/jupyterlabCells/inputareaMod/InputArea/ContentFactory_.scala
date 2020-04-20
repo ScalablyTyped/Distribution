@@ -36,6 +36,6 @@ class ContentFactory_ () extends IContentFactory {
     * Return the `CodeEditor.Factory` being used.
     */
   @JSName("editorFactory")
-  def editorFactory_MContentFactory_(): Factory = js.native
+  def editorFactory_MContentFactory_ : Factory = js.native
 }
 

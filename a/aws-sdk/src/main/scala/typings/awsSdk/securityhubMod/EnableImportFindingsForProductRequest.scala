@@ -16,7 +16,6 @@ object EnableImportFindingsForProductRequest {
   @scala.inline
   def apply(ProductArn: NonEmptyString): EnableImportFindingsForProductRequest = {
     val __obj = js.Dynamic.literal(ProductArn = ProductArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableImportFindingsForProductRequest]
   }
 }

@@ -38,7 +38,6 @@ object IMenuItemClassNames {
     subMenuIcon: String
   ): IMenuItemClassNames = {
     val __obj = js.Dynamic.literal(checkmarkIcon = checkmarkIcon.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], linkContent = linkContent.asInstanceOf[js.Any], linkContentMenu = linkContentMenu.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], secondaryText = secondaryText.asInstanceOf[js.Any], splitContainer = splitContainer.asInstanceOf[js.Any], splitMenu = splitMenu.asInstanceOf[js.Any], splitPrimary = splitPrimary.asInstanceOf[js.Any], subMenuIcon = subMenuIcon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMenuItemClassNames]
   }
 }

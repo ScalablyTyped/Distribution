@@ -19,7 +19,6 @@ object IToken {
   @scala.inline
   def apply[T](get: (Buffer, Double) => T, len: Double, put: (Buffer, Double, T) => Double): IToken[T] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), len = len.asInstanceOf[js.Any], put = js.Any.fromFunction3(put))
-  
     __obj.asInstanceOf[IToken[T]]
   }
 }

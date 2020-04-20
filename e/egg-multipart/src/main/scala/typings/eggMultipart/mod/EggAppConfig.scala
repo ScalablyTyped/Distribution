@@ -13,7 +13,6 @@ object EggAppConfig {
   @scala.inline
   def apply(multipart: AnonAutoFields): EggAppConfig = {
     val __obj = js.Dynamic.literal(multipart = multipart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EggAppConfig]
   }
 }

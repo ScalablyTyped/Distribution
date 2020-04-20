@@ -12,7 +12,6 @@ object SliderState {
   @scala.inline
   def apply(value: Double): SliderState = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SliderState]
   }
 }

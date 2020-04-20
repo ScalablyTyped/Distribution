@@ -13,7 +13,6 @@ object CollapseProps {
   @scala.inline
   def apply(children: js.Any, in: Boolean): CollapseProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CollapseProps]
   }
 }

@@ -13,7 +13,6 @@ object LTV_ {
   @scala.inline
   def apply(date: String, ltv: Double): LTV_ = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], ltv = ltv.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LTV_]
   }
 }

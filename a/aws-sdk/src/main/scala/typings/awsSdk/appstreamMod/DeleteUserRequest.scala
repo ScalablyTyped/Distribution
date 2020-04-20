@@ -20,7 +20,6 @@ object DeleteUserRequest {
   @scala.inline
   def apply(AuthenticationType: AuthenticationType, UserName: Username): DeleteUserRequest = {
     val __obj = js.Dynamic.literal(AuthenticationType = AuthenticationType.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUserRequest]
   }
 }

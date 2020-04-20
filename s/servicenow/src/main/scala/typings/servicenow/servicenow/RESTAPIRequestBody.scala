@@ -22,7 +22,6 @@ object RESTAPIRequestBody {
     nextEntry: () => js.Any
   ): RESTAPIRequestBody[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataStream = dataStream.asInstanceOf[js.Any], dataString = dataString.asInstanceOf[js.Any], hasNext = js.Any.fromFunction0(hasNext), nextEntry = js.Any.fromFunction0(nextEntry))
-  
     __obj.asInstanceOf[RESTAPIRequestBody[T]]
   }
 }

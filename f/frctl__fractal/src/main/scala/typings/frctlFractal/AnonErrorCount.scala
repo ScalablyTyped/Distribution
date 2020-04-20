@@ -12,7 +12,6 @@ object AnonErrorCount {
   @scala.inline
   def apply(errorCount: Double): AnonErrorCount = {
     val __obj = js.Dynamic.literal(errorCount = errorCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonErrorCount]
   }
 }

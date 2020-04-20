@@ -23,7 +23,6 @@ object DeleteAppOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ApplicationResponse: UnmarshalledApplicationResponse): DeleteAppOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationResponse = ApplicationResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAppOutput]
   }
 }

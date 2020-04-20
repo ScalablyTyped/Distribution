@@ -12,7 +12,6 @@ object FileReference {
   @scala.inline
   def apply(end: Double, fileName: java.lang.String, pos: Double): FileReference = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileReference]
   }
 }

@@ -23,7 +23,7 @@ abstract class DatabaseSourceBase protected () extends SortableEntityPathSource 
   ) = this()
   @JSName("model")
   var model_FDatabaseSourceBase: IModel = js.native
-  def databaseConstraints(): IList[DatabaseConstraint] = js.native
+  def databaseConstraints: IList[DatabaseConstraint] = js.native
 }
 
 /* static members */

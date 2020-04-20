@@ -68,7 +68,6 @@ object StreamingDistributionSummary {
     TrustedSigners: TrustedSigners
   ): StreamingDistributionSummary = {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], Aliases = Aliases.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], PriceClass = PriceClass.asInstanceOf[js.Any], S3Origin = S3Origin.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], TrustedSigners = TrustedSigners.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreamingDistributionSummary]
   }
 }

@@ -13,7 +13,7 @@ trait ArrayConstructor
       (/* arrayLength */ Double) | (/* items (repeated) */ js.Object), 
       js.Array[js.Any | js.Object]
     ] {
-  @JSName(scala.scalajs.js.Symbol.species)
+  @JSName(js.Symbol.species)
   val species: ArrayConstructor = js.native
   def apply(): js.Array[_] = js.native
   def apply(arrayLength: Double): js.Array[_] = js.native

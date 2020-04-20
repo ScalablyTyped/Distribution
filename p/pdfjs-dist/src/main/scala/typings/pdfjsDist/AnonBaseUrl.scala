@@ -13,7 +13,6 @@ object AnonBaseUrl {
   @scala.inline
   def apply(baseUrl: String, isCompressed: Boolean): AnonBaseUrl = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], isCompressed = isCompressed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBaseUrl]
   }
 }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ImportComponentRequest extends js.Object {
   /**
-    *  The change description of the component. Describes what change has been made in this version, or what makes this version different from other versions of this component. 
+    * The change description of the component. Describes what change has been made in this version, or what makes this version different from other versions of this component. 
     */
   var changeDescription: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The idempotency token of the component. 
+    * The idempotency token of the component. 
     */
   var clientToken: ClientToken = js.native
   /**
@@ -23,11 +23,11 @@ trait ImportComponentRequest extends js.Object {
     */
   var description: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The format of the resource that you want to import as a component. 
+    * The format of the resource that you want to import as a component. 
     */
   var format: ComponentFormat = js.native
   /**
-    *  The ID of the KMS key that should be used to encrypt this component. 
+    * The ID of the KMS key that should be used to encrypt this component. 
     */
   var kmsKeyId: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -35,7 +35,7 @@ trait ImportComponentRequest extends js.Object {
     */
   var name: ResourceName = js.native
   /**
-    *  The platform of the component. 
+    * The platform of the component. 
     */
   var platform: Platform = js.native
   /**
@@ -43,7 +43,7 @@ trait ImportComponentRequest extends js.Object {
     */
   var semanticVersion: VersionNumber = js.native
   /**
-    *  The tags of the component. 
+    * The tags of the component. 
     */
   var tags: js.UndefOr[TagMap] = js.native
   /**

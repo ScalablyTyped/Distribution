@@ -24,7 +24,6 @@ object AggregatedDataForResultTrend {
     totalTests: Double
   ): AggregatedDataForResultTrend = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], resultsByOutcome = resultsByOutcome.asInstanceOf[js.Any], testResultsContext = testResultsContext.asInstanceOf[js.Any], totalTests = totalTests.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AggregatedDataForResultTrend]
   }
 }

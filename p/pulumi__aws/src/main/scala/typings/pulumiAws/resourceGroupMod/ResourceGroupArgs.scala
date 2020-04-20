@@ -18,7 +18,6 @@ object ResourceGroupArgs {
   @scala.inline
   def apply(tags: Input[StringDictionary[_]]): ResourceGroupArgs = {
     val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceGroupArgs]
   }
 }

@@ -44,14 +44,14 @@ class User_ protected () extends EventEmitter {
   def _fetch(): js.Promise[User] = js.native
   def _update(key: String, value: js.Any): Unit = js.native
   def _updateReachabilityInfo(map: js.Any, update: js.Any): js.Any = js.native
-  def attributes(): js.Object = js.native
+  def attributes: js.Object = js.native
   def entityName(name: String): js.Any = js.native
-  def friendlyName(): String = js.native
-  def identity(): String = js.native
+  def friendlyName: String = js.native
+  def identity: String = js.native
   def identity(identity: String): js.Any = js.native
-  def isSubscribed(): Boolean = js.native
-  def notifiable(): Boolean = js.native
-  def online(): Boolean = js.native
+  def isSubscribed: Boolean = js.native
+  def notifiable: Boolean = js.native
+  def online: Boolean = js.native
   /**
     * Removes User from subscription list.
     * @returns {Promise<void>} Promise of completion

@@ -15,7 +15,6 @@ object AnonDate {
   @scala.inline
   def apply(comparator: Comparator, date: Date): AnonDate = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDate]
   }
 }

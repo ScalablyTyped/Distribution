@@ -32,7 +32,6 @@ object AnonXmlDecryptionTransform {
     XmlLicenseTransform: String
   ): AnonXmlDecryptionTransform = {
     val __obj = js.Dynamic.literal(XmlDecryptionTransform = XmlDecryptionTransform.asInstanceOf[js.Any], XmlDsigBase64Transform = XmlDsigBase64Transform.asInstanceOf[js.Any], XmlDsigC14NTransform = XmlDsigC14NTransform.asInstanceOf[js.Any], XmlDsigC14NWithCommentsTransform = XmlDsigC14NWithCommentsTransform.asInstanceOf[js.Any], XmlDsigEnvelopedSignatureTransform = XmlDsigEnvelopedSignatureTransform.asInstanceOf[js.Any], XmlDsigExcC14NTransform = XmlDsigExcC14NTransform.asInstanceOf[js.Any], XmlDsigExcC14NWithCommentsTransform = XmlDsigExcC14NWithCommentsTransform.asInstanceOf[js.Any], XmlDsigXPathTransform = XmlDsigXPathTransform.asInstanceOf[js.Any], XmlDsigXsltTransform = XmlDsigXsltTransform.asInstanceOf[js.Any], XmlLicenseTransform = XmlLicenseTransform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonXmlDecryptionTransform]
   }
 }

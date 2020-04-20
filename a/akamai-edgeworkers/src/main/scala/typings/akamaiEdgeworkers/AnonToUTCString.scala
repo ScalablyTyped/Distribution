@@ -12,7 +12,6 @@ object AnonToUTCString {
   @scala.inline
   def apply(toUTCString: () => String): AnonToUTCString = {
     val __obj = js.Dynamic.literal(toUTCString = js.Any.fromFunction0(toUTCString))
-  
     __obj.asInstanceOf[AnonToUTCString]
   }
 }

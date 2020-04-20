@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NamedRegExp extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.`match`)
+  @JSName(js.Symbol.`match`)
   var `match`: js.Function1[/* str */ String, NamedRegExpExecArray] = js.native
-  @JSName(scala.scalajs.js.Symbol.replace)
+  @JSName(js.Symbol.replace)
   var replace: js.Function2[
     /* str */ String, 
     /* replacement */ String | (js.Function2[/* match */ String, /* repeated */ String, String]), 
     String
   ] = js.native
-  @JSName(scala.scalajs.js.Symbol.search)
+  @JSName(js.Symbol.search)
   var search: js.Function1[/* str */ String, Double] = js.native
-  @JSName(scala.scalajs.js.Symbol.split)
+  @JSName(js.Symbol.split)
   var split: js.Function1[/* str */ String, js.Array[String]] = js.native
   /**
     * Executes a search on a string using a regular expression pattern, and returns an array containing the results of that search.

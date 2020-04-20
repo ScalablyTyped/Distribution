@@ -14,7 +14,6 @@ object PositionedColorInput {
   @scala.inline
   def apply(color: ColorInput, pos: Double): PositionedColorInput = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PositionedColorInput]
   }
 }

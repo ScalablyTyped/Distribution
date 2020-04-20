@@ -12,7 +12,6 @@ object CordovaPlugins {
   @scala.inline
   def apply(notification: AnonBadge): CordovaPlugins = {
     val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

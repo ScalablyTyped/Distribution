@@ -20,16 +20,14 @@ trait stylePerspectiveOriginY extends js.Object
 
 object stylePerspectiveOriginY {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def stylePerspectiveOriginYBottom: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def stylePerspectiveOriginYBottom: `3` = this.cast(3)
+  def stylePerspectiveOriginYCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def stylePerspectiveOriginYCenter: `2` = this.cast(2)
+  def stylePerspectiveOriginYNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def stylePerspectiveOriginYNotSet: `0` = this.cast(0)
+  def stylePerspectiveOriginYTop: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def stylePerspectiveOriginYTop: `1` = this.cast(1)
-  @scala.inline
-  def stylePerspectiveOriginY_Max: `2147483647` = this.cast(2147483647)
+  def stylePerspectiveOriginY_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

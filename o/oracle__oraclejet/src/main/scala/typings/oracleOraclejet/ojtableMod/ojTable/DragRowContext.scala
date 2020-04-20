@@ -14,7 +14,6 @@ object DragRowContext {
   @scala.inline
   def apply[K, D](rows: js.Array[AnonDataIndex[D, K]]): DragRowContext[K, D] = {
     val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DragRowContext[K, D]]
   }
 }

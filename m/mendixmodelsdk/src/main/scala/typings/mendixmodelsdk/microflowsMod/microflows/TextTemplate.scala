@@ -23,7 +23,7 @@ class TextTemplate protected () extends Template {
   ) = this()
   @JSName("model")
   var model_FTextTemplate: IModel = js.native
-  def text(): Text = js.native
+  def text: Text = js.native
   def text(newValue: Text): js.Any = js.native
 }
 

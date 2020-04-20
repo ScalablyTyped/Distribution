@@ -36,32 +36,30 @@ trait stylePointerEvents extends js.Object
 
 object stylePointerEvents {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def stylePointerEventsAll: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def stylePointerEventsAll: `8` = this.cast(8)
+  def stylePointerEventsAuto: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def stylePointerEventsAuto: `11` = this.cast(11)
+  def stylePointerEventsFill: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def stylePointerEventsFill: `6` = this.cast(6)
+  def stylePointerEventsInitial: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def stylePointerEventsInitial: `10` = this.cast(10)
+  def stylePointerEventsNone: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def stylePointerEventsNone: `9` = this.cast(9)
+  def stylePointerEventsNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def stylePointerEventsNotSet: `0` = this.cast(0)
+  def stylePointerEventsPainted: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def stylePointerEventsPainted: `5` = this.cast(5)
+  def stylePointerEventsStroke: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def stylePointerEventsStroke: `7` = this.cast(7)
+  def stylePointerEventsVisible: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def stylePointerEventsVisible: `4` = this.cast(4)
+  def stylePointerEventsVisibleFill: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def stylePointerEventsVisibleFill: `2` = this.cast(2)
+  def stylePointerEventsVisiblePainted: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def stylePointerEventsVisiblePainted: `1` = this.cast(1)
+  def stylePointerEventsVisibleStroke: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def stylePointerEventsVisibleStroke: `3` = this.cast(3)
-  @scala.inline
-  def stylePointerEvents_Max: `2147483647` = this.cast(2147483647)
+  def stylePointerEvents_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

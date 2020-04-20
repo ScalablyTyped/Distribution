@@ -24,7 +24,6 @@ object Controllers {
     update: UpdateController
   ): Controllers = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Controllers]
   }
 }

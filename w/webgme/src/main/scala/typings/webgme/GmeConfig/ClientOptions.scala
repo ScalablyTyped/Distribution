@@ -54,7 +54,6 @@ object ClientOptions {
     log: AnonLevelString
   ): ClientOptions = {
     val __obj = js.Dynamic.literal(appDir = appDir.asInstanceOf[js.Any], defaultConnectionRouter = defaultConnectionRouter.asInstanceOf[js.Any], errorReporting = errorReporting.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientOptions]
   }
 }

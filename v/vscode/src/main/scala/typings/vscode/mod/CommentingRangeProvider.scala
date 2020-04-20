@@ -15,7 +15,6 @@ object CommentingRangeProvider {
   @scala.inline
   def apply(provideCommentingRanges: (TextDocument, CancellationToken) => ProviderResult[js.Array[Range]]): CommentingRangeProvider = {
     val __obj = js.Dynamic.literal(provideCommentingRanges = js.Any.fromFunction2(provideCommentingRanges))
-  
     __obj.asInstanceOf[CommentingRangeProvider]
   }
 }

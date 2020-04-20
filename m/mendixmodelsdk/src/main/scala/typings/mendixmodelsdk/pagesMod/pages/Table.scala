@@ -30,10 +30,10 @@ class Table protected () extends ConditionallyVisibleWidget {
   ) = this()
   @JSName("model")
   var model_FTable: IModel = js.native
-  def cells(): IList[TableCell] = js.native
-  def columns(): IList[TableColumn] = js.native
-  def rows(): IList[TableRow] = js.native
-  def widthUnit(): UnitEnum = js.native
+  def cells: IList[TableCell] = js.native
+  def columns: IList[TableColumn] = js.native
+  def rows: IList[TableRow] = js.native
+  def widthUnit: UnitEnum = js.native
   def widthUnit(newValue: UnitEnum): js.Any = js.native
 }
 

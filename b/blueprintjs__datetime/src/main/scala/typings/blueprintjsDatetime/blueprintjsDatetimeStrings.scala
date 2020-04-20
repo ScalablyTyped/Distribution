@@ -564,7 +564,7 @@ object blueprintjsDatetimeStrings {
   @scala.inline
   def `DayPicker-Day`: `DayPicker-Day` = "DayPicker-Day".asInstanceOf[`DayPicker-Day`]
   @scala.inline
-  def `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot`: `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot` = "<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if defined.".asInstanceOf[`LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot`]
+  def `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot`: `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot` = ("<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if defined.").asInstanceOf[`LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot`]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

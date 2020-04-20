@@ -58,10 +58,10 @@ object DracoCompression extends js.Object {
   /**
     * Returns true if the decoder configuration is available.
     */
-  def DecoderAvailable(): Boolean = js.native
+  def DecoderAvailable: Boolean = js.native
   /**
     * Default instance for the draco compression object.
     */
-  def Default(): DracoCompression = js.native
+  def Default: DracoCompression = js.native
 }
 

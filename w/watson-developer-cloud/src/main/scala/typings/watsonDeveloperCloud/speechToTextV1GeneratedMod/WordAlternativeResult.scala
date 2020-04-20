@@ -16,7 +16,6 @@ object WordAlternativeResult {
   @scala.inline
   def apply(confidence: Double, word: String): WordAlternativeResult = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WordAlternativeResult]
   }
 }

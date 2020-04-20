@@ -24,7 +24,6 @@ object GetSnapshotBlockRequest {
   @scala.inline
   def apply(BlockIndex: BlockIndex, BlockToken: BlockToken, SnapshotId: SnapshotId): GetSnapshotBlockRequest = {
     val __obj = js.Dynamic.literal(BlockIndex = BlockIndex.asInstanceOf[js.Any], BlockToken = BlockToken.asInstanceOf[js.Any], SnapshotId = SnapshotId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSnapshotBlockRequest]
   }
 }

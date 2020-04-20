@@ -13,7 +13,6 @@ object IPlayToConnectionStateChangedEventArgs {
   @scala.inline
   def apply(currentState: PlayToConnectionState, previousState: PlayToConnectionState): IPlayToConnectionStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(currentState = currentState.asInstanceOf[js.Any], previousState = previousState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPlayToConnectionStateChangedEventArgs]
   }
 }

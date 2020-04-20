@@ -33,7 +33,6 @@ object ListingsResource {
     update: AnonKey => Request_[Listing]
   ): ListingsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), deleteall = js.Any.fromFunction1(deleteall), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[ListingsResource]
   }
 }

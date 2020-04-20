@@ -26,7 +26,6 @@ object PhysicsInterface {
     stop: () => Unit
   ): PhysicsInterface = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set), setAcceleration = js.Any.fromFunction1(setAcceleration), setFriction = js.Any.fromFunction1(setFriction), setSpringStrength = js.Any.fromFunction1(setSpringStrength), setSpringTarget = js.Any.fromFunction1(setSpringTarget), setVelocity = js.Any.fromFunction1(setVelocity), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[PhysicsInterface]
   }
 }

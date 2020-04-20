@@ -37,7 +37,6 @@ object Typeofcursor {
     show: () => Unit
   ): Typeofcursor = {
     val __obj = js.Dynamic.literal(CR = js.Any.fromFunction0(CR), beginningOfLine = js.Any.fromFunction0(beginningOfLine), deleteLine = js.Any.fromFunction0(deleteLine), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[Typeofcursor]
   }
 }

@@ -16,7 +16,6 @@ object BatchUpdatePhoneNumberRequest {
   @scala.inline
   def apply(UpdatePhoneNumberRequestItems: UpdatePhoneNumberRequestItemList): BatchUpdatePhoneNumberRequest = {
     val __obj = js.Dynamic.literal(UpdatePhoneNumberRequestItems = UpdatePhoneNumberRequestItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchUpdatePhoneNumberRequest]
   }
 }

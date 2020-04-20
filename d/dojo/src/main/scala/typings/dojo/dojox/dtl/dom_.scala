@@ -27,7 +27,6 @@ object dom_ {
   @scala.inline
   def apply(getTemplate: js.Any => js.Object, tokenize: HTMLElement => js.Array[_]): dom_ = {
     val __obj = js.Dynamic.literal(getTemplate = js.Any.fromFunction1(getTemplate), tokenize = js.Any.fromFunction1(tokenize))
-  
     __obj.asInstanceOf[dom_]
   }
 }

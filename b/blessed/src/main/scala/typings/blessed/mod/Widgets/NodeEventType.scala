@@ -15,16 +15,14 @@ trait NodeEventType extends js.Object
 
 object NodeEventType {
   @scala.inline
-  def adopt: typings.blessed.blessedStrings.adopt = this.cast("adopt")
+  def adopt: typings.blessed.blessedStrings.adopt = "adopt".asInstanceOf[typings.blessed.blessedStrings.adopt]
   @scala.inline
-  def attach: typings.blessed.blessedStrings.attach = this.cast("attach")
+  def attach: typings.blessed.blessedStrings.attach = "attach".asInstanceOf[typings.blessed.blessedStrings.attach]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def detach: typings.blessed.blessedStrings.detach = "detach".asInstanceOf[typings.blessed.blessedStrings.detach]
   @scala.inline
-  def detach: typings.blessed.blessedStrings.detach = this.cast("detach")
+  def remove: typings.blessed.blessedStrings.remove = "remove".asInstanceOf[typings.blessed.blessedStrings.remove]
   @scala.inline
-  def remove: typings.blessed.blessedStrings.remove = this.cast("remove")
-  @scala.inline
-  def reparent: typings.blessed.blessedStrings.reparent = this.cast("reparent")
+  def reparent: typings.blessed.blessedStrings.reparent = "reparent".asInstanceOf[typings.blessed.blessedStrings.reparent]
 }
 

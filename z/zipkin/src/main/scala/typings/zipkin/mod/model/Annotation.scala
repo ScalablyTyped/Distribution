@@ -13,7 +13,6 @@ object Annotation {
   @scala.inline
   def apply(timestamp: Double, value: String): Annotation = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Annotation]
   }
 }

@@ -15,7 +15,6 @@ object ExcludedPlacementListBuilder {
     withName: String => ExcludedPlacementListBuilder[ExcludedPlacementList]
   ): ExcludedPlacementListBuilder[ExcludedPlacementList] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withName = js.Any.fromFunction1(withName))
-  
     __obj.asInstanceOf[ExcludedPlacementListBuilder[ExcludedPlacementList]]
   }
 }

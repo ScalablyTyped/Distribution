@@ -22,7 +22,6 @@ object Color_ {
   @scala.inline
   def apply(displayable: () => Boolean, hex: () => String): Color_ = {
     val __obj = js.Dynamic.literal(displayable = js.Any.fromFunction0(displayable), hex = js.Any.fromFunction0(hex))
-  
     __obj.asInstanceOf[Color_]
   }
 }

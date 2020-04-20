@@ -39,62 +39,60 @@ trait EasingType extends js.Object
 
 object EasingType {
   @scala.inline
-  def EaseInBack: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInBack = this.cast("EaseInBack")
+  def EaseInBack: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInBack = "EaseInBack".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInBack]
   @scala.inline
-  def EaseInBounce: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInBounce = this.cast("EaseInBounce")
+  def EaseInBounce: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInBounce = "EaseInBounce".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInBounce]
   @scala.inline
-  def EaseInCirc: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInCirc = this.cast("EaseInCirc")
+  def EaseInCirc: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInCirc = "EaseInCirc".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInCirc]
   @scala.inline
-  def EaseInCubic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInCubic = this.cast("EaseInCubic")
+  def EaseInCubic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInCubic = "EaseInCubic".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInCubic]
   @scala.inline
-  def EaseInElastic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInElastic = this.cast("EaseInElastic")
+  def EaseInElastic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInElastic = "EaseInElastic".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInElastic]
   @scala.inline
-  def EaseInExpo: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInExpo = this.cast("EaseInExpo")
+  def EaseInExpo: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInExpo = "EaseInExpo".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInExpo]
   @scala.inline
-  def EaseInOutBack: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutBack = this.cast("EaseInOutBack")
+  def EaseInOutBack: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutBack = "EaseInOutBack".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutBack]
   @scala.inline
-  def EaseInOutBounce: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutBounce = this.cast("EaseInOutBounce")
+  def EaseInOutBounce: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutBounce = "EaseInOutBounce".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutBounce]
   @scala.inline
-  def EaseInOutCirc: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutCirc = this.cast("EaseInOutCirc")
+  def EaseInOutCirc: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutCirc = "EaseInOutCirc".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutCirc]
   @scala.inline
-  def EaseInOutCubic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutCubic = this.cast("EaseInOutCubic")
+  def EaseInOutCubic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutCubic = "EaseInOutCubic".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutCubic]
   @scala.inline
-  def EaseInOutElastic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutElastic = this.cast("EaseInOutElastic")
+  def EaseInOutElastic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutElastic = "EaseInOutElastic".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutElastic]
   @scala.inline
-  def EaseInOutExpo: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutExpo = this.cast("EaseInOutExpo")
+  def EaseInOutExpo: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutExpo = "EaseInOutExpo".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutExpo]
   @scala.inline
-  def EaseInOutQuad: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutQuad = this.cast("EaseInOutQuad")
+  def EaseInOutQuad: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutQuad = "EaseInOutQuad".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutQuad]
   @scala.inline
-  def EaseInOutQuart: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutQuart = this.cast("EaseInOutQuart")
+  def EaseInOutQuart: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutQuart = "EaseInOutQuart".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutQuart]
   @scala.inline
-  def EaseInOutSine: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutSine = this.cast("EaseInOutSine")
+  def EaseInOutSine: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutSine = "EaseInOutSine".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInOutSine]
   @scala.inline
-  def EaseInQuad: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInQuad = this.cast("EaseInQuad")
+  def EaseInQuad: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInQuad = "EaseInQuad".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInQuad]
   @scala.inline
-  def EaseInQuart: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInQuart = this.cast("EaseInQuart")
+  def EaseInQuart: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInQuart = "EaseInQuart".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInQuart]
   @scala.inline
-  def EaseInSine: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInSine = this.cast("EaseInSine")
+  def EaseInSine: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInSine = "EaseInSine".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseInSine]
   @scala.inline
-  def EaseOutBack: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutBack = this.cast("EaseOutBack")
+  def EaseOutBack: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutBack = "EaseOutBack".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutBack]
   @scala.inline
-  def EaseOutBounce: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutBounce = this.cast("EaseOutBounce")
+  def EaseOutBounce: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutBounce = "EaseOutBounce".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutBounce]
   @scala.inline
-  def EaseOutCirc: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutCirc = this.cast("EaseOutCirc")
+  def EaseOutCirc: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutCirc = "EaseOutCirc".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutCirc]
   @scala.inline
-  def EaseOutCubic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutCubic = this.cast("EaseOutCubic")
+  def EaseOutCubic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutCubic = "EaseOutCubic".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutCubic]
   @scala.inline
-  def EaseOutElastic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutElastic = this.cast("EaseOutElastic")
+  def EaseOutElastic: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutElastic = "EaseOutElastic".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutElastic]
   @scala.inline
-  def EaseOutExpo: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutExpo = this.cast("EaseOutExpo")
+  def EaseOutExpo: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutExpo = "EaseOutExpo".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutExpo]
   @scala.inline
-  def EaseOutQuad: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutQuad = this.cast("EaseOutQuad")
+  def EaseOutQuad: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutQuad = "EaseOutQuad".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutQuad]
   @scala.inline
-  def EaseOutQuart: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutQuart = this.cast("EaseOutQuart")
+  def EaseOutQuart: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutQuart = "EaseOutQuart".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutQuart]
   @scala.inline
-  def EaseOutSine: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutSine = this.cast("EaseOutSine")
+  def EaseOutSine: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutSine = "EaseOutSine".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.EaseOutSine]
   @scala.inline
-  def Linear: Linear_ = this.cast("Linear")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Linear: Linear_ = "Linear".asInstanceOf[Linear_]
 }
 

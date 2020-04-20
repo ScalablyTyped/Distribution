@@ -6,6 +6,7 @@ import typings.uglifyJs.mod.MangleOptions
 import typings.uglifyJs.mod.MinifyOptions
 import typings.uglifyJs.mod.OutputOptions
 import typings.uglifyJs.mod.ParseOptions
+import typings.uglifyJs.uglifyJsBooleans.`false`
 import typings.uglifyJs.uglifyJsStrings.verbose
 import typings.webpack.AnonCache
 import typings.webpack.mod.Condition
@@ -30,7 +31,7 @@ object Options {
   def apply(
     beautify: js.UndefOr[Boolean] = js.undefined,
     comments: Boolean | RegExp | CommentFilter = null,
-    compress: Boolean | CompressOptions = null,
+    compress: `false` | CompressOptions = null,
     exclude: Condition | js.Array[Condition] = null,
     ie8: js.UndefOr[Boolean] = js.undefined,
     include: Condition | js.Array[Condition] = null,

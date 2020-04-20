@@ -20,7 +20,6 @@ object ProductInformation {
   @scala.inline
   def apply(ProductInformationFilterList: ProductInformationFilterList, ResourceType: String): ProductInformation = {
     val __obj = js.Dynamic.literal(ProductInformationFilterList = ProductInformationFilterList.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProductInformation]
   }
 }

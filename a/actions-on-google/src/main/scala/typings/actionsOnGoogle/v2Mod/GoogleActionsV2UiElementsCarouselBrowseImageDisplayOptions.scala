@@ -13,12 +13,10 @@ trait GoogleActionsV2UiElementsCarouselBrowseImageDisplayOptions extends js.Obje
 
 object GoogleActionsV2UiElementsCarouselBrowseImageDisplayOptions {
   @scala.inline
-  def CROPPED: typings.actionsOnGoogle.actionsOnGoogleStrings.CROPPED = this.cast("CROPPED")
+  def CROPPED: typings.actionsOnGoogle.actionsOnGoogleStrings.CROPPED = "CROPPED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CROPPED]
   @scala.inline
-  def DEFAULT: typings.actionsOnGoogle.actionsOnGoogleStrings.DEFAULT = this.cast("DEFAULT")
+  def DEFAULT: typings.actionsOnGoogle.actionsOnGoogleStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DEFAULT]
   @scala.inline
-  def WHITE: typings.actionsOnGoogle.actionsOnGoogleStrings.WHITE = this.cast("WHITE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WHITE: typings.actionsOnGoogle.actionsOnGoogleStrings.WHITE = "WHITE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.WHITE]
 }
 

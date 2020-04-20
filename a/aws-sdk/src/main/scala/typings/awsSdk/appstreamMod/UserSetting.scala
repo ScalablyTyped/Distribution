@@ -20,7 +20,6 @@ object UserSetting {
   @scala.inline
   def apply(Action: Action, Permission: Permission): UserSetting = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Permission = Permission.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserSetting]
   }
 }

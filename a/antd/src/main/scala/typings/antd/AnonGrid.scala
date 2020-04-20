@@ -14,7 +14,6 @@ object AnonGrid {
   @scala.inline
   def apply(grid: Requireable[_], itemLayout: Requireable[String]): AnonGrid = {
     val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any], itemLayout = itemLayout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGrid]
   }
 }

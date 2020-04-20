@@ -20,7 +20,6 @@ object DetectSentimentRequest {
   @scala.inline
   def apply(LanguageCode: LanguageCode, Text: String): DetectSentimentRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectSentimentRequest]
   }
 }

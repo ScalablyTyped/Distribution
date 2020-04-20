@@ -17,7 +17,6 @@ object KerasFileSerialization {
     training_config: TrainingConfig
   ): KerasFileSerialization = {
     val __obj = js.Dynamic.literal(model_config = model_config.asInstanceOf[js.Any], training_config = training_config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KerasFileSerialization]
   }
 }

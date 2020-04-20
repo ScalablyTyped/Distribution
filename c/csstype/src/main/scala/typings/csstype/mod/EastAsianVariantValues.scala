@@ -19,18 +19,16 @@ trait EastAsianVariantValues
 
 object EastAsianVariantValues {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def jis04: typings.csstype.csstypeStrings.jis04 = "jis04".asInstanceOf[typings.csstype.csstypeStrings.jis04]
   @scala.inline
-  def jis04: typings.csstype.csstypeStrings.jis04 = this.cast("jis04")
+  def jis78: typings.csstype.csstypeStrings.jis78 = "jis78".asInstanceOf[typings.csstype.csstypeStrings.jis78]
   @scala.inline
-  def jis78: typings.csstype.csstypeStrings.jis78 = this.cast("jis78")
+  def jis83: typings.csstype.csstypeStrings.jis83 = "jis83".asInstanceOf[typings.csstype.csstypeStrings.jis83]
   @scala.inline
-  def jis83: typings.csstype.csstypeStrings.jis83 = this.cast("jis83")
+  def jis90: typings.csstype.csstypeStrings.jis90 = "jis90".asInstanceOf[typings.csstype.csstypeStrings.jis90]
   @scala.inline
-  def jis90: typings.csstype.csstypeStrings.jis90 = this.cast("jis90")
+  def simplified: typings.csstype.csstypeStrings.simplified = "simplified".asInstanceOf[typings.csstype.csstypeStrings.simplified]
   @scala.inline
-  def simplified: typings.csstype.csstypeStrings.simplified = this.cast("simplified")
-  @scala.inline
-  def traditional: typings.csstype.csstypeStrings.traditional = this.cast("traditional")
+  def traditional: typings.csstype.csstypeStrings.traditional = "traditional".asInstanceOf[typings.csstype.csstypeStrings.traditional]
 }
 

@@ -23,7 +23,6 @@ object IConverter {
   @scala.inline
   def apply[T](get: T => js.UndefOr[String], set: String => T): IConverter[T] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[IConverter[T]]
   }
 }

@@ -16,7 +16,6 @@ object CreateServerResponse {
   @scala.inline
   def apply(ServerId: ServerId): CreateServerResponse = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateServerResponse]
   }
 }

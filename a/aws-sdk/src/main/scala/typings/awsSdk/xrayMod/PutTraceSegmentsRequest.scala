@@ -16,7 +16,6 @@ object PutTraceSegmentsRequest {
   @scala.inline
   def apply(TraceSegmentDocuments: TraceSegmentDocumentList): PutTraceSegmentsRequest = {
     val __obj = js.Dynamic.literal(TraceSegmentDocuments = TraceSegmentDocuments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutTraceSegmentsRequest]
   }
 }

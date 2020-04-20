@@ -49,7 +49,6 @@ object AzureDiskVolumeSource {
     readOnly: Boolean
   ): AzureDiskVolumeSource = {
     val __obj = js.Dynamic.literal(cachingMode = cachingMode.asInstanceOf[js.Any], diskName = diskName.asInstanceOf[js.Any], diskURI = diskURI.asInstanceOf[js.Any], fsType = fsType.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AzureDiskVolumeSource]
   }
 }

@@ -13,7 +13,6 @@ object LatLngBounds {
   @scala.inline
   def apply(northeast: LatLngLiteral, southwest: LatLngLiteral): LatLngBounds = {
     val __obj = js.Dynamic.literal(northeast = northeast.asInstanceOf[js.Any], southwest = southwest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LatLngBounds]
   }
 }

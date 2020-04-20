@@ -15,7 +15,6 @@ object AnonData {
   @scala.inline
   def apply(data: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): AnonData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], specs = specs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonData]
   }
 }

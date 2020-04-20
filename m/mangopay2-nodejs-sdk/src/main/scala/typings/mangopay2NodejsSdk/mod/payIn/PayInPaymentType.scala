@@ -16,16 +16,14 @@ trait PayInPaymentType extends js.Object
 
 object PayInPaymentType {
   @scala.inline
-  def BANK_WIRE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANK_WIRE = this.cast("BANK_WIRE")
+  def BANK_WIRE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANK_WIRE = "BANK_WIRE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANK_WIRE]
   @scala.inline
-  def CARD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CARD = this.cast("CARD")
+  def CARD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CARD = "CARD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CARD]
   @scala.inline
-  def DIRECT_DEBIT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT_DEBIT = this.cast("DIRECT_DEBIT")
+  def DIRECT_DEBIT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT_DEBIT = "DIRECT_DEBIT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT_DEBIT]
   @scala.inline
-  def PAYPAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYPAL = this.cast("PAYPAL")
+  def PAYPAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYPAL = "PAYPAL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYPAL]
   @scala.inline
-  def PREAUTHORIZED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZED = this.cast("PREAUTHORIZED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PREAUTHORIZED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZED = "PREAUTHORIZED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZED]
 }
 

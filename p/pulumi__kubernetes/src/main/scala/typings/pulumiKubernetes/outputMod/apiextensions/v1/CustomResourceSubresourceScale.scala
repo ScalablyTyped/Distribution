@@ -40,7 +40,6 @@ object CustomResourceSubresourceScale {
   @scala.inline
   def apply(labelSelectorPath: String, specReplicasPath: String, statusReplicasPath: String): CustomResourceSubresourceScale = {
     val __obj = js.Dynamic.literal(labelSelectorPath = labelSelectorPath.asInstanceOf[js.Any], specReplicasPath = specReplicasPath.asInstanceOf[js.Any], statusReplicasPath = statusReplicasPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomResourceSubresourceScale]
   }
 }

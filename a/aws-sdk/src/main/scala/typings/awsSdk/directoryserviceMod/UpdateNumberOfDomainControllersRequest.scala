@@ -20,7 +20,6 @@ object UpdateNumberOfDomainControllersRequest {
   @scala.inline
   def apply(DesiredNumber: DesiredNumberOfDomainControllers, DirectoryId: DirectoryId): UpdateNumberOfDomainControllersRequest = {
     val __obj = js.Dynamic.literal(DesiredNumber = DesiredNumber.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateNumberOfDomainControllersRequest]
   }
 }

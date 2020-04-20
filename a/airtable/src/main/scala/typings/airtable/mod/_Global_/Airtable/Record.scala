@@ -13,7 +13,6 @@ object Record {
   @scala.inline
   def apply[TFields](fields: TFields, id: String): Record[TFields] = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Record[TFields]]
   }
 }

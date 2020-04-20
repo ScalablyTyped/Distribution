@@ -12,10 +12,8 @@ trait AppGroupPrivacy extends js.Object
 
 object AppGroupPrivacy {
   @scala.inline
-  def Closed: typings.reactNativeFbsdk.reactNativeFbsdkStrings.Closed = this.cast("Closed")
+  def Closed: typings.reactNativeFbsdk.reactNativeFbsdkStrings.Closed = "Closed".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.Closed]
   @scala.inline
-  def Open: typings.reactNativeFbsdk.reactNativeFbsdkStrings.Open = this.cast("Open")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Open: typings.reactNativeFbsdk.reactNativeFbsdkStrings.Open = "Open".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.Open]
 }
 

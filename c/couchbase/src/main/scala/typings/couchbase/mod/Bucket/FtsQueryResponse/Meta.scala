@@ -40,7 +40,6 @@ object Meta {
   @scala.inline
   def apply(errors: js.Any, facets: js.Any, maxScore: Double, status: js.Any, took: Double, totalHits: Double): Meta = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], facets = facets.asInstanceOf[js.Any], maxScore = maxScore.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], took = took.asInstanceOf[js.Any], totalHits = totalHits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Meta]
   }
 }

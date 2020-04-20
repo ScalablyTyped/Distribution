@@ -32,28 +32,26 @@ trait MsoBlackWhiteMode extends js.Object
 
 object MsoBlackWhiteMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBlackWhiteAutomatic: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoBlackWhiteAutomatic: `1` = this.cast(1)
+  def msoBlackWhiteBlack: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoBlackWhiteBlack: `8` = this.cast(8)
+  def msoBlackWhiteBlackTextAndLine: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoBlackWhiteBlackTextAndLine: `6` = this.cast(6)
+  def msoBlackWhiteDontShow: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoBlackWhiteDontShow: `10` = this.cast(10)
+  def msoBlackWhiteGrayOutline: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoBlackWhiteGrayOutline: `5` = this.cast(5)
+  def msoBlackWhiteGrayScale: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoBlackWhiteGrayScale: `2` = this.cast(2)
+  def msoBlackWhiteHighContrast: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoBlackWhiteHighContrast: `7` = this.cast(7)
+  def msoBlackWhiteInverseGrayScale: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoBlackWhiteInverseGrayScale: `4` = this.cast(4)
+  def msoBlackWhiteLightGrayScale: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoBlackWhiteLightGrayScale: `3` = this.cast(3)
+  def msoBlackWhiteMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoBlackWhiteMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoBlackWhiteWhite: `9` = this.cast(9)
+  def msoBlackWhiteWhite: `9` = 9.asInstanceOf[`9`]
 }
 

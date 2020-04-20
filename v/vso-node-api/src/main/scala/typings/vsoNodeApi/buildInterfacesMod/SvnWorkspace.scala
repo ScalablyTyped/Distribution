@@ -12,7 +12,6 @@ object SvnWorkspace {
   @scala.inline
   def apply(mappings: js.Array[SvnMappingDetails]): SvnWorkspace = {
     val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SvnWorkspace]
   }
 }

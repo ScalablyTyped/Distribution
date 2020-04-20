@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_header extends js.Object {
-  def apply[P /* <: js.Object */, T](component: header, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[header], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: header, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[header], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: header, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[header], 
+      Exclude[/* keyof react.react.ComponentProps<'header'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: header, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[header], 
+      Exclude[/* keyof react.react.ComponentProps<'header'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

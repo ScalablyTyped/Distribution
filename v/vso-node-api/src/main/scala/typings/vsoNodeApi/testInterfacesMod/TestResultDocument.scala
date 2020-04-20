@@ -13,7 +13,6 @@ object TestResultDocument {
   @scala.inline
   def apply(operationReference: TestOperationReference, payload: TestResultPayload): TestResultDocument = {
     val __obj = js.Dynamic.literal(operationReference = operationReference.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestResultDocument]
   }
 }

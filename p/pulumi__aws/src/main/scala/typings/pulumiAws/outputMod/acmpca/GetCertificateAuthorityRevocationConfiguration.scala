@@ -13,7 +13,6 @@ object GetCertificateAuthorityRevocationConfiguration {
   @scala.inline
   def apply(crlConfigurations: js.Array[GetCertificateAuthorityRevocationConfigurationCrlConfiguration]): GetCertificateAuthorityRevocationConfiguration = {
     val __obj = js.Dynamic.literal(crlConfigurations = crlConfigurations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCertificateAuthorityRevocationConfiguration]
   }
 }

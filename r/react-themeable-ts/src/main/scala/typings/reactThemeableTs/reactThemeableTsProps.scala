@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactThemeableTsProps {
   @scala.inline
-  def ThemeProviderProps: IThemeProviderProps.type = typings.reactThemeableTs.themeProviderMod.IThemeProviderProps
+  def ThemeProviderProps: IThemeProviderProps.type = IThemeProviderProps
   type ThemeProviderProps = IThemeProviderProps
 }
 

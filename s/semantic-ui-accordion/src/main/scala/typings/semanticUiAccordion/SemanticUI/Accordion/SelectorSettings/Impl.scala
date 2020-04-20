@@ -27,7 +27,6 @@ object Impl {
   @scala.inline
   def apply(accordion: String, content: String, title: String, trigger: String): Impl = {
     val __obj = js.Dynamic.literal(accordion = accordion.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

@@ -25,7 +25,6 @@ object WorkerPoolInterface {
     send: (Double, ChildMessage, OnStart, OnEnd) => Unit
   ): WorkerPoolInterface = {
     val __obj = js.Dynamic.literal(createWorker = js.Any.fromFunction1(createWorker), end = js.Any.fromFunction0(end), getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout), getWorkers = js.Any.fromFunction0(getWorkers), send = js.Any.fromFunction4(send))
-  
     __obj.asInstanceOf[WorkerPoolInterface]
   }
 }

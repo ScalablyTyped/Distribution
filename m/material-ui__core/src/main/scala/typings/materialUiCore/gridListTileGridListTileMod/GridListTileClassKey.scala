@@ -14,14 +14,12 @@ trait GridListTileClassKey extends js.Object
 
 object GridListTileClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def imgFullHeight: typings.materialUiCore.materialUiCoreStrings.imgFullHeight = "imgFullHeight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.imgFullHeight]
   @scala.inline
-  def imgFullHeight: typings.materialUiCore.materialUiCoreStrings.imgFullHeight = this.cast("imgFullHeight")
+  def imgFullWidth: typings.materialUiCore.materialUiCoreStrings.imgFullWidth = "imgFullWidth".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.imgFullWidth]
   @scala.inline
-  def imgFullWidth: typings.materialUiCore.materialUiCoreStrings.imgFullWidth = this.cast("imgFullWidth")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
-  @scala.inline
-  def tile: typings.materialUiCore.materialUiCoreStrings.tile = this.cast("tile")
+  def tile: typings.materialUiCore.materialUiCoreStrings.tile = "tile".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.tile]
 }
 

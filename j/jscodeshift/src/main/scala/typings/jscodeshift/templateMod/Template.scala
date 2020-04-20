@@ -21,7 +21,6 @@ object Template {
     statements: /* repeated */ js.Any => js.Any
   ): Template = {
     val __obj = js.Dynamic.literal(expression = js.Any.fromFunction1(expression), statement = js.Any.fromFunction1(statement), statements = js.Any.fromFunction1(statements))
-  
     __obj.asInstanceOf[Template]
   }
 }

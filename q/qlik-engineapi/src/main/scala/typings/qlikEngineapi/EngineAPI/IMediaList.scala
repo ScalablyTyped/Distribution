@@ -27,7 +27,6 @@ object IMediaList {
   @scala.inline
   def apply(qItems: js.Array[IMediaListItem]): IMediaList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMediaList]
   }
 }

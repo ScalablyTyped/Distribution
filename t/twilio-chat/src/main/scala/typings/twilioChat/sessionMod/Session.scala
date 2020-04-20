@@ -46,8 +46,8 @@ class Session protected () extends js.Object {
   def getMyChannelsId(): js.Promise[String] = js.native
   def getSessionLinks(): js.Promise[SessionLinks] = js.native
   def getUsersData(): js.Promise[AnonIdentity] = js.native
-  def identity(): String = js.native
+  def identity: String = js.native
   def initialize(): js.Promise[Session] = js.native
-  def reachabilityEnabled(): Boolean = js.native
+  def reachabilityEnabled: Boolean = js.native
 }
 

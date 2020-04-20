@@ -40,7 +40,6 @@ object AnonEncryptedData {
     userInfo: UserInfo
   ): AnonEncryptedData = {
     val __obj = js.Dynamic.literal(encryptedData = encryptedData.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEncryptedData]
   }
 }

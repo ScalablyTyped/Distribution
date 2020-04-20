@@ -20,7 +20,6 @@ object AssociateDeviceWithNetworkProfileRequest {
   @scala.inline
   def apply(DeviceArn: Arn, NetworkProfileArn: Arn): AssociateDeviceWithNetworkProfileRequest = {
     val __obj = js.Dynamic.literal(DeviceArn = DeviceArn.asInstanceOf[js.Any], NetworkProfileArn = NetworkProfileArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateDeviceWithNetworkProfileRequest]
   }
 }

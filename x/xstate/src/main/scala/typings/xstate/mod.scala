@@ -6,12 +6,15 @@ import typings.xstate.actorMod.Actor
 import typings.xstate.interpreterMod.SpawnOptions
 import typings.xstate.matchMod.StatePatternTuple
 import typings.xstate.matchMod.ValueFromStateGetter
+import typings.xstate.typesMod.ActionObject
 import typings.xstate.typesMod.ActivityActionObject
 import typings.xstate.typesMod.ActivityDefinition
 import typings.xstate.typesMod.AnyEventObject
 import typings.xstate.typesMod.AssignAction
 import typings.xstate.typesMod.Assigner
 import typings.xstate.typesMod.CancelAction
+import typings.xstate.typesMod.ChooseAction
+import typings.xstate.typesMod.ChooseConditon
 import typings.xstate.typesMod.DoneEvent
 import typings.xstate.typesMod.DoneEventObject
 import typings.xstate.typesMod.Event
@@ -23,10 +26,12 @@ import typings.xstate.typesMod.LogExpr
 import typings.xstate.typesMod.MachineConfig
 import typings.xstate.typesMod.MachineOptions
 import typings.xstate.typesMod.PropertyAssigner
+import typings.xstate.typesMod.PureAction
 import typings.xstate.typesMod.RaiseAction
 import typings.xstate.typesMod.SendAction
 import typings.xstate.typesMod.SendActionOptions
 import typings.xstate.typesMod.SendExpr
+import typings.xstate.typesMod.SingleOrArray
 import typings.xstate.typesMod.Spawnable
 import typings.xstate.typesMod.StateConfig
 import typings.xstate.typesMod.StateMachine
@@ -175,6 +180,7 @@ object mod extends js.Object {
     /* "xstate.after" */ val After: typings.xstate.typesMod.ActionTypes.After with String = js.native
     /* "xstate.assign" */ val Assign: typings.xstate.typesMod.ActionTypes.Assign with String = js.native
     /* "xstate.cancel" */ val Cancel: typings.xstate.typesMod.ActionTypes.Cancel with String = js.native
+    /* "xstate.choose" */ val Choose: typings.xstate.typesMod.ActionTypes.Choose with String = js.native
     /* "done.invoke" */ val DoneInvoke: typings.xstate.typesMod.ActionTypes.DoneInvoke with String = js.native
     /* "done.state" */ val DoneState: typings.xstate.typesMod.ActionTypes.DoneState with String = js.native
     /* "error.communication" */ val ErrorCommunication: typings.xstate.typesMod.ActionTypes.ErrorCommunication with String = js.native
@@ -252,6 +258,8 @@ object mod extends js.Object {
   object actions extends js.Object {
     @JSName("after")
     var after_Original: js.Function2[/* delayRef */ Double | String, /* id */ js.UndefOr[String], String] = js.native
+    @JSName("choose")
+    var choose_Original: FnCallConds = js.native
     @JSName("done")
     var done_Original: js.Function2[/* id */ String, /* data */ js.UndefOr[js.Any], DoneEventObject] = js.native
     @JSName("escalate")
@@ -260,6 +268,8 @@ object mod extends js.Object {
     var forwardTo_Original: FnCallTargetOptions = js.native
     @JSName("log")
     var log_Original: FnCallExprLabel = js.native
+    @JSName("pure")
+    var pure_Original: FnCallGetActions = js.native
     @JSName("raise")
     var raise_Original: FnCall = js.native
     @JSName("respond")
@@ -282,6 +292,7 @@ object mod extends js.Object {
     def assign[TContext, TEvent /* <: EventObject */](assignment: PropertyAssigner[TContext, TEvent]): AssignAction[TContext, TEvent] = js.native
     def cancel(sendId: String): CancelAction = js.native
     def cancel(sendId: Double): CancelAction = js.native
+    def choose[TContext, TEvent /* <: EventObject */](conds: js.Array[ChooseConditon[TContext, TEvent]]): ChooseAction[TContext, TEvent] = js.native
     def done(id: String): DoneEventObject = js.native
     def done(id: String, data: js.Any): DoneEventObject = js.native
     def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: TErrorData): SendAction[TContext, TEvent] = js.native
@@ -305,6 +316,13 @@ object mod extends js.Object {
     def log[TContext, TEvent /* <: EventObject */](expr: String, label: String): LogAction[TContext, TEvent] = js.native
     def log[TContext, TEvent /* <: EventObject */](expr: LogExpr[TContext, TEvent]): LogAction[TContext, TEvent] = js.native
     def log[TContext, TEvent /* <: EventObject */](expr: LogExpr[TContext, TEvent], label: String): LogAction[TContext, TEvent] = js.native
+    def pure[TContext, TEvent /* <: EventObject */](
+      getActions: js.Function2[
+          /* context */ TContext, 
+          /* event */ TEvent, 
+          js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]]
+        ]
+    ): PureAction[TContext, TEvent] = js.native
     def raise[TContext, TEvent /* <: EventObject */](event: Event[TEvent]): RaiseAction[TEvent] | (SendAction[TContext, TEvent]) = js.native
     def respond[TContext, TEvent /* <: EventObject */](event: Event[TEvent]): SendAction[TContext, TEvent] = js.native
     def respond[TContext, TEvent /* <: EventObject */](event: Event[TEvent], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent] = js.native

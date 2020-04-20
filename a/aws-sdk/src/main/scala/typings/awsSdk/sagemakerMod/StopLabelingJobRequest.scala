@@ -16,7 +16,6 @@ object StopLabelingJobRequest {
   @scala.inline
   def apply(LabelingJobName: LabelingJobName): StopLabelingJobRequest = {
     val __obj = js.Dynamic.literal(LabelingJobName = LabelingJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopLabelingJobRequest]
   }
 }

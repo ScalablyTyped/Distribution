@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait googleMapReactProps {
   @scala.inline
-  def GoogleMapReactProps: Props.type = typings.googleMapReact.mod.Props
+  def GoogleMapReactProps: Props.type = Props
   type GoogleMapReactProps = Props
 }
 

@@ -12,10 +12,8 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def media: typings.twilioChat.twilioChatStrings.media = "media".asInstanceOf[typings.twilioChat.twilioChatStrings.media]
   @scala.inline
-  def media: typings.twilioChat.twilioChatStrings.media = this.cast("media")
-  @scala.inline
-  def text: typings.twilioChat.twilioChatStrings.text = this.cast("text")
+  def text: typings.twilioChat.twilioChatStrings.text = "text".asInstanceOf[typings.twilioChat.twilioChatStrings.text]
 }
 

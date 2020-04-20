@@ -31,7 +31,6 @@ object VsphereVirtualDiskVolumeSource {
   @scala.inline
   def apply(fsType: String, storagePolicyID: String, storagePolicyName: String, volumePath: String): VsphereVirtualDiskVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], storagePolicyID = storagePolicyID.asInstanceOf[js.Any], storagePolicyName = storagePolicyName.asInstanceOf[js.Any], volumePath = volumePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VsphereVirtualDiskVolumeSource]
   }
 }

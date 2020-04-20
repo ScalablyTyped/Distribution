@@ -21,7 +21,6 @@ object Navigator {
     webkitGetGamepads: () => GamepadList
   ): Navigator = {
     val __obj = js.Dynamic.literal(getGamepads = js.Any.fromFunction0(getGamepads), webkitGetGamepads = js.Any.fromFunction0(webkitGetGamepads))
-  
     __obj.asInstanceOf[Navigator]
   }
 }

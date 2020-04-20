@@ -12,7 +12,6 @@ object ValidateCustomResponse {
   @scala.inline
   def apply(response: js.Any): ValidateCustomResponse = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidateCustomResponse]
   }
 }

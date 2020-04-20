@@ -13,7 +13,6 @@ object AnonScrollLeft {
   @scala.inline
   def apply(scrollLeft: Double, scrollTop: Double): AnonScrollLeft = {
     val __obj = js.Dynamic.literal(scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScrollLeft]
   }
 }

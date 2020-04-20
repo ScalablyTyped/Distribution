@@ -12,7 +12,6 @@ object Factory {
   @scala.inline
   def apply(create: js.Any => Control): Factory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[Factory]
   }
 }

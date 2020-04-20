@@ -13,7 +13,6 @@ object PickImplinterruptRequests {
   @scala.inline
   def apply(interruptRequests: Boolean): PickImplinterruptRequests = {
     val __obj = js.Dynamic.literal(interruptRequests = interruptRequests.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplinterruptRequests]
   }
 }

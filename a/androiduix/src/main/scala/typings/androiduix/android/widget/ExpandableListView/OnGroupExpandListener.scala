@@ -12,7 +12,6 @@ object OnGroupExpandListener {
   @scala.inline
   def apply(onGroupExpand: Double => Unit): OnGroupExpandListener = {
     val __obj = js.Dynamic.literal(onGroupExpand = js.Any.fromFunction1(onGroupExpand))
-  
     __obj.asInstanceOf[OnGroupExpandListener]
   }
 }

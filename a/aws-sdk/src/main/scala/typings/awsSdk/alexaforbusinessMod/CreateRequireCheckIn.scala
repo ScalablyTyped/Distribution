@@ -20,7 +20,6 @@ object CreateRequireCheckIn {
   @scala.inline
   def apply(Enabled: Boolean, ReleaseAfterMinutes: Minutes): CreateRequireCheckIn = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], ReleaseAfterMinutes = ReleaseAfterMinutes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateRequireCheckIn]
   }
 }

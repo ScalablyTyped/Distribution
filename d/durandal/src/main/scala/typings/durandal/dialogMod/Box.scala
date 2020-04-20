@@ -26,7 +26,6 @@ object Box {
   @scala.inline
   def apply(getView: () => HTMLElement, selectOption: String => Unit): Box = {
     val __obj = js.Dynamic.literal(getView = js.Any.fromFunction0(getView), selectOption = js.Any.fromFunction1(selectOption))
-  
     __obj.asInstanceOf[Box]
   }
 }

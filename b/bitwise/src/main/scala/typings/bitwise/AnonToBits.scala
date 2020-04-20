@@ -13,7 +13,6 @@ object AnonToBits {
   @scala.inline
   def apply(toBits: String => js.Array[Bit]): AnonToBits = {
     val __obj = js.Dynamic.literal(toBits = js.Any.fromFunction1(toBits))
-  
     __obj.asInstanceOf[AnonToBits]
   }
 }

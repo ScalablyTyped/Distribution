@@ -83,7 +83,6 @@ object fx {
     wipeOut: js.Object => js.Any
   ): fx = {
     val __obj = js.Dynamic.literal(Toggler = js.Any.fromFunction0(Toggler), chain = js.Any.fromFunction1(chain), combine = js.Any.fromFunction1(combine), easing = easing.asInstanceOf[js.Any], slideTo = js.Any.fromFunction1(slideTo), wipeIn = js.Any.fromFunction1(wipeIn), wipeOut = js.Any.fromFunction1(wipeOut))
-  
     __obj.asInstanceOf[fx]
   }
 }

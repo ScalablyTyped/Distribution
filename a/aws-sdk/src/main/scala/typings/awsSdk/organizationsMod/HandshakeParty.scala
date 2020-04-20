@@ -20,7 +20,6 @@ object HandshakeParty {
   @scala.inline
   def apply(Id: HandshakePartyId, Type: HandshakePartyType): HandshakeParty = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HandshakeParty]
   }
 }

@@ -12,10 +12,8 @@ trait SafeAreaViewForceInsetValue extends js.Object
 
 object SafeAreaViewForceInsetValue {
   @scala.inline
-  def always: typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.always = this.cast("always")
+  def always: typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.always = "always".asInstanceOf[typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.always]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def never: typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.never = this.cast("never")
+  def never: typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.never = "never".asInstanceOf[typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.never]
 }
 

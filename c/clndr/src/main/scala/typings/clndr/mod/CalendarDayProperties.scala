@@ -14,7 +14,6 @@ object CalendarDayProperties {
   @scala.inline
   def apply(isAdjacentMonth: Boolean, isInactive: Boolean, isToday: Boolean): CalendarDayProperties = {
     val __obj = js.Dynamic.literal(isAdjacentMonth = isAdjacentMonth.asInstanceOf[js.Any], isInactive = isInactive.asInstanceOf[js.Any], isToday = isToday.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CalendarDayProperties]
   }
 }

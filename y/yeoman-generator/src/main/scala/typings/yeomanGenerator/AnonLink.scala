@@ -15,7 +15,6 @@ object AnonLink {
   @scala.inline
   def apply(link: weak | strong, local: String): AnonLink = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLink]
   }
 }

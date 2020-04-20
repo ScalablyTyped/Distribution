@@ -12,7 +12,6 @@ object AnonUtf8 {
   @scala.inline
   def apply(utf8: String): AnonUtf8 = {
     val __obj = js.Dynamic.literal(utf8 = utf8.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUtf8]
   }
 }

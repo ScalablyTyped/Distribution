@@ -21,7 +21,6 @@ object IColumnDragDropDetails {
   @scala.inline
   def apply(draggedIndex: Double, targetIndex: Double): IColumnDragDropDetails = {
     val __obj = js.Dynamic.literal(draggedIndex = draggedIndex.asInstanceOf[js.Any], targetIndex = targetIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IColumnDragDropDetails]
   }
 }

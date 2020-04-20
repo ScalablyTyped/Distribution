@@ -13,7 +13,6 @@ object HasAttributes {
   @scala.inline
   def apply(get: String => js.Any, set: (String, js.Any) => Unit): HasAttributes = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[HasAttributes]
   }
 }

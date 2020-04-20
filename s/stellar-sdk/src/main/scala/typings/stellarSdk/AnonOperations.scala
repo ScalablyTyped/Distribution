@@ -14,7 +14,6 @@ object AnonOperations {
   @scala.inline
   def apply(operations: js.Array[String], transaction: TransactionFailedResultCodes): AnonOperations = {
     val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any], transaction = transaction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOperations]
   }
 }

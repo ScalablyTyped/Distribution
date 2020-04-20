@@ -13,7 +13,6 @@ object Autosave {
   @scala.inline
   def apply(preview_link: String): Autosave = {
     val __obj = js.Dynamic.literal(preview_link = preview_link.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Autosave]
   }
 }

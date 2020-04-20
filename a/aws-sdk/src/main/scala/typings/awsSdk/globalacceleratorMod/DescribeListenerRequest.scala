@@ -16,7 +16,6 @@ object DescribeListenerRequest {
   @scala.inline
   def apply(ListenerArn: GenericString): DescribeListenerRequest = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeListenerRequest]
   }
 }

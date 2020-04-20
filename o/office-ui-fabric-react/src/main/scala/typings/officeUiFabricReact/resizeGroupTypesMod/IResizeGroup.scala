@@ -15,7 +15,6 @@ object IResizeGroup {
   @scala.inline
   def apply(remeasure: () => Unit): IResizeGroup = {
     val __obj = js.Dynamic.literal(remeasure = js.Any.fromFunction0(remeasure))
-  
     __obj.asInstanceOf[IResizeGroup]
   }
 }

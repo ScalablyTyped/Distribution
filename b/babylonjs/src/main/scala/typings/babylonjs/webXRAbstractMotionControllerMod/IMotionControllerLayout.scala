@@ -47,7 +47,6 @@ object IMotionControllerLayout {
     selectComponentId: String
   ): IMotionControllerLayout = {
     val __obj = js.Dynamic.literal(assetPath = assetPath.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], gamepadMapping = gamepadMapping.asInstanceOf[js.Any], rootNodeName = rootNodeName.asInstanceOf[js.Any], selectComponentId = selectComponentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMotionControllerLayout]
   }
 }

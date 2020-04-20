@@ -16,7 +16,6 @@ object CompositionTransation {
   @scala.inline
   def apply(complete: js.Function => Unit): CompositionTransation = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
-  
     __obj.asInstanceOf[CompositionTransation]
   }
 }

@@ -52,6 +52,10 @@ trait ClusterState extends js.Object {
     */
   val dbSubnetGroupName: js.UndefOr[Input[String]] = js.native
   /**
+    * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.
+    */
+  val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
+  /**
     * List of log types to export to cloudwatch. If omitted, no logs will be exported.
     * The following log types are supported: `audit`, `profiler`.
     */
@@ -141,6 +145,7 @@ object ClusterState {
     clusterResourceId: Input[String] = null,
     dbClusterParameterGroupName: Input[String] = null,
     dbSubnetGroupName: Input[String] = null,
+    deletionProtection: Input[Boolean] = null,
     enabledCloudwatchLogsExports: Input[js.Array[Input[String]]] = null,
     endpoint: Input[String] = null,
     engine: Input[String] = null,
@@ -171,6 +176,7 @@ object ClusterState {
     if (clusterResourceId != null) __obj.updateDynamic("clusterResourceId")(clusterResourceId.asInstanceOf[js.Any])
     if (dbClusterParameterGroupName != null) __obj.updateDynamic("dbClusterParameterGroupName")(dbClusterParameterGroupName.asInstanceOf[js.Any])
     if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
+    if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
     if (enabledCloudwatchLogsExports != null) __obj.updateDynamic("enabledCloudwatchLogsExports")(enabledCloudwatchLogsExports.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])

@@ -17,20 +17,18 @@ trait CommonType extends js.Object
 
 object CommonType {
   @scala.inline
-  def array: typings.iobroker.iobrokerStrings.array = this.cast("array")
+  def array: typings.iobroker.iobrokerStrings.array = "array".asInstanceOf[typings.iobroker.iobrokerStrings.array]
   @scala.inline
-  def boolean: typings.iobroker.iobrokerStrings.boolean = this.cast("boolean")
+  def boolean: typings.iobroker.iobrokerStrings.boolean = "boolean".asInstanceOf[typings.iobroker.iobrokerStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def file: typings.iobroker.iobrokerStrings.file = "file".asInstanceOf[typings.iobroker.iobrokerStrings.file]
   @scala.inline
-  def file: typings.iobroker.iobrokerStrings.file = this.cast("file")
+  def mixed: typings.iobroker.iobrokerStrings.mixed = "mixed".asInstanceOf[typings.iobroker.iobrokerStrings.mixed]
   @scala.inline
-  def mixed: typings.iobroker.iobrokerStrings.mixed = this.cast("mixed")
+  def number: typings.iobroker.iobrokerStrings.number = "number".asInstanceOf[typings.iobroker.iobrokerStrings.number]
   @scala.inline
-  def number: typings.iobroker.iobrokerStrings.number = this.cast("number")
+  def `object`: typings.iobroker.iobrokerStrings.`object` = "object".asInstanceOf[typings.iobroker.iobrokerStrings.`object`]
   @scala.inline
-  def `object`: typings.iobroker.iobrokerStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.iobroker.iobrokerStrings.string = this.cast("string")
+  def string: typings.iobroker.iobrokerStrings.string = "string".asInstanceOf[typings.iobroker.iobrokerStrings.string]
 }
 

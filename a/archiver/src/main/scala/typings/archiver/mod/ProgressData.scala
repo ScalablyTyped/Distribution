@@ -15,7 +15,6 @@ object ProgressData {
   @scala.inline
   def apply(entries: AnonProcessed, fs: AnonProcessedBytes): ProgressData = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], fs = fs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProgressData]
   }
 }

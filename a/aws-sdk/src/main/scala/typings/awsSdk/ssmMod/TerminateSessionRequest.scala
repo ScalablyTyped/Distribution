@@ -16,7 +16,6 @@ object TerminateSessionRequest {
   @scala.inline
   def apply(SessionId: SessionId): TerminateSessionRequest = {
     val __obj = js.Dynamic.literal(SessionId = SessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TerminateSessionRequest]
   }
 }

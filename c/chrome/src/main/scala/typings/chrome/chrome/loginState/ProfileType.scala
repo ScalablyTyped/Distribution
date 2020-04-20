@@ -12,10 +12,8 @@ trait ProfileType extends js.Object
 
 object ProfileType {
   @scala.inline
-  def SIGNIN_PROFILE: typings.chrome.chromeStrings.SIGNIN_PROFILE = this.cast("SIGNIN_PROFILE")
+  def SIGNIN_PROFILE: typings.chrome.chromeStrings.SIGNIN_PROFILE = "SIGNIN_PROFILE".asInstanceOf[typings.chrome.chromeStrings.SIGNIN_PROFILE]
   @scala.inline
-  def USER_PROFILE: typings.chrome.chromeStrings.USER_PROFILE = this.cast("USER_PROFILE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def USER_PROFILE: typings.chrome.chromeStrings.USER_PROFILE = "USER_PROFILE".asInstanceOf[typings.chrome.chromeStrings.USER_PROFILE]
 }
 

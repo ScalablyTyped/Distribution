@@ -36,7 +36,6 @@ object Codec_ {
     addExtUnpacker: (Double, js.Function1[/* data */ Buffer | Uint8Array, js.Any]) => Unit
   ): Codec_ = {
     val __obj = js.Dynamic.literal(addExtPacker = js.Any.fromFunction3(addExtPacker), addExtUnpacker = js.Any.fromFunction2(addExtUnpacker))
-  
     __obj.asInstanceOf[Codec_]
   }
 }

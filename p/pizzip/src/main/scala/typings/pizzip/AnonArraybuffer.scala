@@ -27,7 +27,6 @@ object AnonArraybuffer {
   @scala.inline
   def apply(arraybuffer: Boolean, blob: Boolean, nodebuffer: Boolean, uint8array: Boolean): AnonArraybuffer = {
     val __obj = js.Dynamic.literal(arraybuffer = arraybuffer.asInstanceOf[js.Any], blob = blob.asInstanceOf[js.Any], nodebuffer = nodebuffer.asInstanceOf[js.Any], uint8array = uint8array.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArraybuffer]
   }
 }

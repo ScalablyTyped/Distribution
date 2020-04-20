@@ -21,7 +21,6 @@ object AvailabilityZoneGroupArgs {
   @scala.inline
   def apply(groupName: Input[String], optInStatus: Input[String]): AvailabilityZoneGroupArgs = {
     val __obj = js.Dynamic.literal(groupName = groupName.asInstanceOf[js.Any], optInStatus = optInStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AvailabilityZoneGroupArgs]
   }
 }

@@ -12,7 +12,6 @@ object IStreamedFileDataRequest {
   @scala.inline
   def apply(failAndClose: StreamedFileFailureMode => Unit): IStreamedFileDataRequest = {
     val __obj = js.Dynamic.literal(failAndClose = js.Any.fromFunction1(failAndClose))
-  
     __obj.asInstanceOf[IStreamedFileDataRequest]
   }
 }

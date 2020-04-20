@@ -15,7 +15,6 @@ object ToolbarModeHandler {
   @scala.inline
   def apply(enabled: Boolean, handler: Handler, title: String): ToolbarModeHandler = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToolbarModeHandler]
   }
 }

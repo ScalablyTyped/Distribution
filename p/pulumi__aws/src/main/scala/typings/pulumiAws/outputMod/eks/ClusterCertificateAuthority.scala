@@ -16,7 +16,6 @@ object ClusterCertificateAuthority {
   @scala.inline
   def apply(data: String): ClusterCertificateAuthority = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterCertificateAuthority]
   }
 }

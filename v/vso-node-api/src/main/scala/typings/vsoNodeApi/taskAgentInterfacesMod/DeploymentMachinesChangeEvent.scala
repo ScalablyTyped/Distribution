@@ -13,7 +13,6 @@ object DeploymentMachinesChangeEvent {
   @scala.inline
   def apply(machineGroupReference: DeploymentGroupReference, machines: js.Array[DeploymentMachine]): DeploymentMachinesChangeEvent = {
     val __obj = js.Dynamic.literal(machineGroupReference = machineGroupReference.asInstanceOf[js.Any], machines = machines.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentMachinesChangeEvent]
   }
 }

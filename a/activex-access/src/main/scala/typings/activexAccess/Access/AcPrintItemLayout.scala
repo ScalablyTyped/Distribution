@@ -14,10 +14,8 @@ trait AcPrintItemLayout extends js.Object
 
 object AcPrintItemLayout {
   @scala.inline
-  def acPRHorizontalColumnLayout: `1953` = this.cast(1953)
+  def acPRHorizontalColumnLayout: `1953` = 1953.asInstanceOf[`1953`]
   @scala.inline
-  def acPRVerticalColumnLayout: `1954` = this.cast(1954)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acPRVerticalColumnLayout: `1954` = 1954.asInstanceOf[`1954`]
 }
 

@@ -23,7 +23,6 @@ object IDataTable {
   @scala.inline
   def apply(qName: String, qType: String): IDataTable = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDataTable]
   }
 }

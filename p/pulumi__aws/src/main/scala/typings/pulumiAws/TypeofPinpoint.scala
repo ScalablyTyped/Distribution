@@ -13,7 +13,6 @@ object TypeofPinpoint {
   @scala.inline
   def apply(Types: TypeofPinpoint): TypeofPinpoint = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofPinpoint]
   }
 }

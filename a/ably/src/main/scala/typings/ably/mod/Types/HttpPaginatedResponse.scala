@@ -31,7 +31,6 @@ object HttpPaginatedResponse {
     success: Boolean
   ): HttpPaginatedResponse = {
     val __obj = js.Dynamic.literal(current = js.Any.fromFunction1(current), errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], first = js.Any.fromFunction1(first), hasNext = js.Any.fromFunction0(hasNext), headers = headers.asInstanceOf[js.Any], isLast = js.Any.fromFunction0(isLast), items = items.asInstanceOf[js.Any], next = js.Any.fromFunction1(next), statusCode = statusCode.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HttpPaginatedResponse]
   }
 }

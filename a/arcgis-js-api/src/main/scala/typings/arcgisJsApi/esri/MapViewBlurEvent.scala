@@ -13,7 +13,6 @@ object MapViewBlurEvent {
   @scala.inline
   def apply(native: js.Any, target: View): MapViewBlurEvent = {
     val __obj = js.Dynamic.literal(native = native.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapViewBlurEvent]
   }
 }

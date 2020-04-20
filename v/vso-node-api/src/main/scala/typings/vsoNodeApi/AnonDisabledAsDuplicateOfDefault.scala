@@ -38,7 +38,6 @@ object AnonDisabledAsDuplicateOfDefault {
     pendingDeletion: Double
   ): AnonDisabledAsDuplicateOfDefault = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], disabledAsDuplicateOfDefault = disabledAsDuplicateOfDefault.asInstanceOf[js.Any], disabledByAdmin = disabledByAdmin.asInstanceOf[js.Any], disabledBySystem = disabledBySystem.asInstanceOf[js.Any], disabledInactiveIdentity = disabledInactiveIdentity.asInstanceOf[js.Any], disabledInvalidPathClause = disabledInvalidPathClause.asInstanceOf[js.Any], disabledInvalidRoleExpression = disabledInvalidRoleExpression.asInstanceOf[js.Any], disabledMessageQueueNotSupported = disabledMessageQueueNotSupported.asInstanceOf[js.Any], disabledMissingIdentity = disabledMissingIdentity.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], enabledOnProbation = enabledOnProbation.asInstanceOf[js.Any], jailedByNotificationsVolume = jailedByNotificationsVolume.asInstanceOf[js.Any], pendingDeletion = pendingDeletion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisabledAsDuplicateOfDefault]
   }
 }

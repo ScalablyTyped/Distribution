@@ -15,7 +15,6 @@ object AnonLabel {
   @scala.inline
   def apply(label: String, onClick: () => Unit, onMouseEnter: () => Unit, onMouseLeave: () => Unit): AnonLabel = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave))
-  
     __obj.asInstanceOf[AnonLabel]
   }
 }

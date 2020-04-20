@@ -19,7 +19,6 @@ object AnonPut {
     put: (/* import warning: importer.ImportType#apply Failed type conversion: infer K */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: infer V */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any, js.Any) => Unit
   ): AnonPut = {
     val __obj = js.Dynamic.literal(put = js.Any.fromFunction4(put))
-  
     __obj.asInstanceOf[AnonPut]
   }
 }

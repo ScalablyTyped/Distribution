@@ -14,7 +14,6 @@ object TestPlanCloneRequest {
   @scala.inline
   def apply(destinationTestPlan: TestPlan, options: CloneOptions, suiteIds: js.Array[Double]): TestPlanCloneRequest = {
     val __obj = js.Dynamic.literal(destinationTestPlan = destinationTestPlan.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], suiteIds = suiteIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestPlanCloneRequest]
   }
 }

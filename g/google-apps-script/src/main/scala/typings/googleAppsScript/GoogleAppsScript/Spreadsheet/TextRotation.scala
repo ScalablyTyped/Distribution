@@ -17,7 +17,6 @@ object TextRotation {
   @scala.inline
   def apply(getDegrees: () => Integer, isVertical: () => Boolean): TextRotation = {
     val __obj = js.Dynamic.literal(getDegrees = js.Any.fromFunction0(getDegrees), isVertical = js.Any.fromFunction0(isVertical))
-  
     __obj.asInstanceOf[TextRotation]
   }
 }

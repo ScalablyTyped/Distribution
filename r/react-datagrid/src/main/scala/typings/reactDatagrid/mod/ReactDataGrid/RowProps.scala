@@ -27,7 +27,6 @@ object RowProps {
   @scala.inline
   def apply(className: String, index: Double, overClassName: String, selectedClassName: String): RowProps = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], overClassName = overClassName.asInstanceOf[js.Any], selectedClassName = selectedClassName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowProps]
   }
 }

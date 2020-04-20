@@ -56,7 +56,6 @@ object DaemonSetSpec {
     updateStrategy: DaemonSetUpdateStrategy
   ): DaemonSetSpec = {
     val __obj = js.Dynamic.literal(minReadySeconds = minReadySeconds.asInstanceOf[js.Any], revisionHistoryLimit = revisionHistoryLimit.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], templateGeneration = templateGeneration.asInstanceOf[js.Any], updateStrategy = updateStrategy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DaemonSetSpec]
   }
 }

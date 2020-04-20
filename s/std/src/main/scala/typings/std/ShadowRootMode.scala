@@ -12,10 +12,8 @@ trait ShadowRootMode extends js.Object
 
 object ShadowRootMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   @scala.inline
-  def closed: typings.std.stdStrings.closed = this.cast("closed")
-  @scala.inline
-  def open: typings.std.stdStrings.open = this.cast("open")
+  def open: typings.std.stdStrings.open = "open".asInstanceOf[typings.std.stdStrings.open]
 }
 

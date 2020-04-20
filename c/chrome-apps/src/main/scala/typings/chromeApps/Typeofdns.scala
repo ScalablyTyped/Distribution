@@ -18,7 +18,6 @@ object Typeofdns {
   @scala.inline
   def apply(resolve: (String, js.Function1[/* resolveInfo */ ResolveCallbackResolveInfo, Unit]) => Unit): Typeofdns = {
     val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction2(resolve))
-  
     __obj.asInstanceOf[Typeofdns]
   }
 }

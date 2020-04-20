@@ -14,7 +14,6 @@ object AnonChild {
   @scala.inline
   def apply(child: Node, parent: Node): AnonChild = {
     val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChild]
   }
 }

@@ -13,12 +13,10 @@ trait QueryScreen extends js.Object
 
 object QueryScreen {
   @scala.inline
-  def Application: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Application = this.cast("Application")
+  def Application: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Application = "Application".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Application]
   @scala.inline
-  def Screen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Screen = this.cast("Screen")
+  def Screen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Screen = "Screen".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Screen]
   @scala.inline
-  def Window: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Window = this.cast("Window")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Window: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Window = "Window".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Window]
 }
 

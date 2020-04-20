@@ -16,7 +16,6 @@ object GetDataSetRequest {
   @scala.inline
   def apply(DataSetId: string): GetDataSetRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDataSetRequest]
   }
 }

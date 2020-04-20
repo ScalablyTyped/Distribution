@@ -39,11 +39,11 @@ object loremIpsumStrings {
   sealed trait words extends js.Object
   
   @scala.inline
-  def `3 words [options]`: `3 words [options]` = "3 words [options]".asInstanceOf[`3 words [options]`]
+  def `3 words [options]`: `3 words [options]` = ("3 words [options]").asInstanceOf[`3 words [options]`]
   @scala.inline
-  def `Could not determine host operating systemDot`: `Could not determine host operating systemDot` = "Could not determine host operating system.".asInstanceOf[`Could not determine host operating systemDot`]
+  def `Could not determine host operating systemDot`: `Could not determine host operating systemDot` = ("Could not determine host operating system.").asInstanceOf[`Could not determine host operating systemDot`]
   @scala.inline
-  def `Generates one or more wordsVerticallinesentencesVerticallineparagraphs`: `Generates one or more wordsVerticallinesentencesVerticallineparagraphs` = "Generates one or more words|sentences|paragraphs".asInstanceOf[`Generates one or more wordsVerticallinesentencesVerticallineparagraphs`]
+  def `Generates one or more wordsVerticallinesentencesVerticallineparagraphs`: `Generates one or more wordsVerticallinesentencesVerticallineparagraphs` = ("Generates one or more words|sentences|paragraphs").asInstanceOf[`Generates one or more wordsVerticallinesentencesVerticallineparagraphs`]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline

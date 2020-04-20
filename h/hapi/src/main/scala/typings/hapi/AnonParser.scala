@@ -17,7 +17,6 @@ object AnonParser {
   @scala.inline
   def apply(parser: Dictionary[String] => Dictionary[_]): AnonParser = {
     val __obj = js.Dynamic.literal(parser = js.Any.fromFunction1(parser))
-  
     __obj.asInstanceOf[AnonParser]
   }
 }

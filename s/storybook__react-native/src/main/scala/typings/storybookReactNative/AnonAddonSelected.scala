@@ -12,7 +12,6 @@ object AnonAddonSelected {
   @scala.inline
   def apply(addonSelected: String): AnonAddonSelected = {
     val __obj = js.Dynamic.literal(addonSelected = addonSelected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddonSelected]
   }
 }

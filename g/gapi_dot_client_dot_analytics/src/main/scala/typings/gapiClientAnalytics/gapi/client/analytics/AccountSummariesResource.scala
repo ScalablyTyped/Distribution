@@ -15,7 +15,6 @@ object AccountSummariesResource {
   @scala.inline
   def apply(list: AnonKey => Request_[AccountSummaries]): AccountSummariesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AccountSummariesResource]
   }
 }

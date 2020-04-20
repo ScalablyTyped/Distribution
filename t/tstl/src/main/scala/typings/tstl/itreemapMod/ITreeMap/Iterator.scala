@@ -39,7 +39,6 @@ object Iterator {
     value: Entry[Key, T]
   ): Iterator[Key, T, Unique, Source, IteratorT, ReverseT] = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), reverse = js.Any.fromFunction0(reverse), second = second.asInstanceOf[js.Any], source = js.Any.fromFunction0(source), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Iterator[Key, T, Unique, Source, IteratorT, ReverseT]]
   }
 }

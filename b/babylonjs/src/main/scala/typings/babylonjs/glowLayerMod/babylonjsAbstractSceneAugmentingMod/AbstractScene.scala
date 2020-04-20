@@ -19,7 +19,6 @@ object AbstractScene {
   @scala.inline
   def apply(getGlowLayerByName: String => Nullable[GlowLayer]): AbstractScene = {
     val __obj = js.Dynamic.literal(getGlowLayerByName = js.Any.fromFunction1(getGlowLayerByName))
-  
     __obj.asInstanceOf[AbstractScene]
   }
 }

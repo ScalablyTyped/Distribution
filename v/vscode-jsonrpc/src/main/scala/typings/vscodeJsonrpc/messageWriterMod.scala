@@ -26,8 +26,8 @@ object messageWriterMod extends js.Object {
     /* protected */ def fireError(error: js.Any): Unit = js.native
     /* protected */ def fireError(error: js.Any, message: Message): Unit = js.native
     /* protected */ def fireError(error: js.Any, message: Message, count: Double): Unit = js.native
-    def onClose(): Event[Unit] = js.native
-    def onError(): Event[js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]]] = js.native
+    def onClose: Event[Unit] = js.native
+    def onError: Event[js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]]] = js.native
   }
   
   @js.native

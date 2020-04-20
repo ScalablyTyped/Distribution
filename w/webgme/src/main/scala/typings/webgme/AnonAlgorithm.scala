@@ -61,7 +61,6 @@ object AnonAlgorithm {
     tokenGenerator: String
   ): AnonAlgorithm = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], cookieId = cookieId.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], renewBeforeExpires = renewBeforeExpires.asInstanceOf[js.Any], tokenGenerator = tokenGenerator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlgorithm]
   }
 }

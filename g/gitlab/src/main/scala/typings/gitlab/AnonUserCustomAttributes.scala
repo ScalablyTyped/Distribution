@@ -33,7 +33,6 @@ object AnonUserCustomAttributes {
     Users: Instantiable0[Users]
   ): AnonUserCustomAttributes = {
     val __obj = js.Dynamic.literal(UserCustomAttributes = UserCustomAttributes.asInstanceOf[js.Any], UserEmails = UserEmails.asInstanceOf[js.Any], UserGPGKeys = UserGPGKeys.asInstanceOf[js.Any], UserImpersonationTokens = UserImpersonationTokens.asInstanceOf[js.Any], UserKeys = UserKeys.asInstanceOf[js.Any], Users = Users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUserCustomAttributes]
   }
 }

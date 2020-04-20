@@ -12,7 +12,6 @@ object BackgroundGridParameters {
   @scala.inline
   def apply(cellSize: Double): BackgroundGridParameters = {
     val __obj = js.Dynamic.literal(cellSize = cellSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BackgroundGridParameters]
   }
 }

@@ -15,7 +15,6 @@ object ActionsListSelfHostedRunnersForRepoResponseRunnersItem {
   @scala.inline
   def apply(id: Double, name: String, os: String, status: String): ActionsListSelfHostedRunnersForRepoResponseRunnersItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionsListSelfHostedRunnersForRepoResponseRunnersItem]
   }
 }

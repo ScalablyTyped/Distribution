@@ -34,7 +34,6 @@ object ReturnTypePaginationFragment {
     refetch: RefetchFnDynamic[TQuery, TKey, Options]
   ): ReturnTypePaginationFragment[TQuery, TKey, TFragmentData] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], isLoadingNext = isLoadingNext.asInstanceOf[js.Any], isLoadingPrevious = isLoadingPrevious.asInstanceOf[js.Any], loadNext = js.Any.fromFunction2(loadNext), loadPrevious = js.Any.fromFunction2(loadPrevious), refetch = refetch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReturnTypePaginationFragment[TQuery, TKey, TFragmentData]]
   }
 }

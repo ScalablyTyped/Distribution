@@ -20,7 +20,6 @@ object widget {
   @scala.inline
   def apply(Map: () => Unit): widget = {
     val __obj = js.Dynamic.literal(Map = js.Any.fromFunction0(Map))
-  
     __obj.asInstanceOf[widget]
   }
 }

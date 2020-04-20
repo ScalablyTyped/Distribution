@@ -25,9 +25,9 @@ class InheritanceCase protected () extends CaseValue {
   var model_FInheritanceCase: IModel = js.native
   def value(): js.Any = js.native
   def value(newValue: IEntity): js.Any = js.native
-  def valueQualifiedName(): String | Null = js.native
+  def valueQualifiedName: String | Null = js.native
   @JSName("value")
-  def value_Union(): IEntity | Null = js.native
+  def value_Union: IEntity | Null = js.native
 }
 
 /* static members */

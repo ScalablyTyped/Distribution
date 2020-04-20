@@ -19,7 +19,6 @@ object Impl {
   @scala.inline
   def apply(active: String, scrolling: String): Impl = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

@@ -17,7 +17,6 @@ object DataSourceParameter {
   @scala.inline
   def apply(getName: () => String, getSourceCell: () => String | Null, getType: () => DataSourceParameterType): DataSourceParameter = {
     val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName), getSourceCell = js.Any.fromFunction0(getSourceCell), getType = js.Any.fromFunction0(getType))
-  
     __obj.asInstanceOf[DataSourceParameter]
   }
 }

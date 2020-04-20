@@ -13,7 +13,6 @@ object MapMatchingService {
   @scala.inline
   def apply(getMatching: MapMatchingRequest => MapiRequest): MapMatchingService = {
     val __obj = js.Dynamic.literal(getMatching = js.Any.fromFunction1(getMatching))
-  
     __obj.asInstanceOf[MapMatchingService]
   }
 }

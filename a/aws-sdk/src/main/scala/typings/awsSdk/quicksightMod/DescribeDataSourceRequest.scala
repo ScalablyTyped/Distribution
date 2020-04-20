@@ -20,7 +20,6 @@ object DescribeDataSourceRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, DataSourceId: ResourceId): DescribeDataSourceRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSourceId = DataSourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDataSourceRequest]
   }
 }

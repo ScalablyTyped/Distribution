@@ -17,7 +17,6 @@ object UpdateEmailChannelRequest {
   @scala.inline
   def apply(ApplicationId: string, EmailChannelRequest: EmailChannelRequest): UpdateEmailChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EmailChannelRequest = EmailChannelRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateEmailChannelRequest]
   }
 }

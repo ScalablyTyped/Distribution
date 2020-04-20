@@ -12,7 +12,6 @@ object ApprovalLayoutInfo {
   @scala.inline
   def apply(approvalLayouts: js.Array[js.Object]): ApprovalLayoutInfo = {
     val __obj = js.Dynamic.literal(approvalLayouts = approvalLayouts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApprovalLayoutInfo]
   }
 }

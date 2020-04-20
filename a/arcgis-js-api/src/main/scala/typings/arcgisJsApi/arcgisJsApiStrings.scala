@@ -22,6 +22,9 @@ object arcgisJsApiStrings {
   sealed trait AR extends SupportedRegion
   
   @js.native
+  sealed trait ASC extends js.Object
+  
+  @js.native
   sealed trait AT extends SupportedRegion
   
   @js.native
@@ -65,6 +68,9 @@ object arcgisJsApiStrings {
   
   @js.native
   sealed trait DE extends SupportedRegion
+  
+  @js.native
+  sealed trait DESC extends js.Object
   
   @js.native
   sealed trait DK extends SupportedRegion
@@ -304,6 +310,9 @@ object arcgisJsApiStrings {
   sealed trait active extends js.Object
   
   @js.native
+  sealed trait add extends js.Object
+  
+  @js.native
   sealed trait added extends js.Object
   
   @js.native
@@ -352,7 +361,7 @@ object arcgisJsApiStrings {
   sealed trait arrow extends js.Object
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc_ extends js.Object
   
   @js.native
   sealed trait async extends js.Object
@@ -493,10 +502,16 @@ object arcgisJsApiStrings {
   sealed trait `bottom-center` extends js.Object
   
   @js.native
+  sealed trait `bottom-leading` extends js.Object
+  
+  @js.native
   sealed trait `bottom-left` extends js.Object
   
   @js.native
   sealed trait `bottom-right` extends js.Object
+  
+  @js.native
+  sealed trait `bottom-trailing` extends js.Object
   
   @js.native
   sealed trait `building-component` extends js.Object
@@ -751,7 +766,7 @@ object arcgisJsApiStrings {
   sealed trait depth extends js.Object
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc_ extends js.Object
   
   @js.native
   sealed trait description extends js.Object
@@ -1090,10 +1105,16 @@ object arcgisJsApiStrings {
   sealed trait imagery extends js.Object
   
   @js.native
+  sealed trait `imagery-tile` extends js.Object
+  
+  @js.native
   sealed trait immediate extends js.Object
   
   @js.native
   sealed trait `immediate-click` extends js.Object
+  
+  @js.native
+  sealed trait `immediate-double-click` extends js.Object
   
   @js.native
   sealed trait imperial extends js.Object
@@ -1720,6 +1741,12 @@ object arcgisJsApiStrings {
   sealed trait `percentage-or-ratio` extends js.Object
   
   @js.native
+  sealed trait `percentile-continuous` extends js.Object
+  
+  @js.native
+  sealed trait `percentile-discrete` extends js.Object
+  
+  @js.native
   sealed trait `picture-fill` extends js.Object
   
   @js.native
@@ -1957,6 +1984,9 @@ object arcgisJsApiStrings {
   sealed trait rounded extends js.Object
   
   @js.native
+  sealed trait route extends js.Object
+  
+  @js.native
   sealed trait ruler extends js.Object
   
   @js.native
@@ -2039,6 +2069,9 @@ object arcgisJsApiStrings {
   
   @js.native
   sealed trait selection extends js.Object
+  
+  @js.native
+  sealed trait `selection-change` extends js.Object
   
   @js.native
   sealed trait `shield-label-symbol` extends js.Object
@@ -2302,10 +2335,16 @@ object arcgisJsApiStrings {
   sealed trait `top-center` extends js.Object
   
   @js.native
+  sealed trait `top-leading` extends js.Object
+  
+  @js.native
   sealed trait `top-left` extends js.Object
   
   @js.native
   sealed trait `top-right` extends js.Object
+  
+  @js.native
+  sealed trait `top-trailing` extends js.Object
   
   @js.native
   sealed trait touch extends js.Object
@@ -2500,6 +2539,9 @@ object arcgisJsApiStrings {
   sealed trait x extends js.Object
   
   @js.native
+  sealed trait `x-ray` extends js.Object
+  
+  @js.native
   sealed trait xlarge extends js.Object
   
   @js.native
@@ -2531,6 +2573,8 @@ object arcgisJsApiStrings {
   @scala.inline
   def AR: AR = "AR".asInstanceOf[AR]
   @scala.inline
+  def ASC: ASC = "ASC".asInstanceOf[ASC]
+  @scala.inline
   def AT: AT = "AT".asInstanceOf[AT]
   @scala.inline
   def AU: AU = "AU".asInstanceOf[AU]
@@ -2560,6 +2604,8 @@ object arcgisJsApiStrings {
   def CZ: CZ = "CZ".asInstanceOf[CZ]
   @scala.inline
   def DE: DE = "DE".asInstanceOf[DE]
+  @scala.inline
+  def DESC: DESC = "DESC".asInstanceOf[DESC]
   @scala.inline
   def DK: DK = "DK".asInstanceOf[DK]
   @scala.inline
@@ -2719,6 +2765,8 @@ object arcgisJsApiStrings {
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  @scala.inline
   def added: added = "added".asInstanceOf[added]
   @scala.inline
   def admin: admin = "admin".asInstanceOf[admin]
@@ -2751,7 +2799,7 @@ object arcgisJsApiStrings {
   @scala.inline
   def arrow: arrow = "arrow".asInstanceOf[arrow]
   @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  def asc_ : asc_ = "asc".asInstanceOf[asc_]
   @scala.inline
   def async: async = "async".asInstanceOf[async]
   @scala.inline
@@ -2845,9 +2893,13 @@ object arcgisJsApiStrings {
   @scala.inline
   def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
   @scala.inline
+  def `bottom-leading`: `bottom-leading` = "bottom-leading".asInstanceOf[`bottom-leading`]
+  @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  @scala.inline
+  def `bottom-trailing`: `bottom-trailing` = "bottom-trailing".asInstanceOf[`bottom-trailing`]
   @scala.inline
   def `building-component`: `building-component` = "building-component".asInstanceOf[`building-component`]
   @scala.inline
@@ -3017,7 +3069,7 @@ object arcgisJsApiStrings {
   @scala.inline
   def depth: depth = "depth".asInstanceOf[depth]
   @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  def desc_ : desc_ = "desc".asInstanceOf[desc_]
   @scala.inline
   def description: description = "description".asInstanceOf[description]
   @scala.inline
@@ -3243,9 +3295,13 @@ object arcgisJsApiStrings {
   @scala.inline
   def imagery: imagery = "imagery".asInstanceOf[imagery]
   @scala.inline
+  def `imagery-tile`: `imagery-tile` = "imagery-tile".asInstanceOf[`imagery-tile`]
+  @scala.inline
   def immediate: immediate = "immediate".asInstanceOf[immediate]
   @scala.inline
   def `immediate-click`: `immediate-click` = "immediate-click".asInstanceOf[`immediate-click`]
+  @scala.inline
+  def `immediate-double-click`: `immediate-double-click` = "immediate-double-click".asInstanceOf[`immediate-double-click`]
   @scala.inline
   def imperial: imperial = "imperial".asInstanceOf[imperial]
   @scala.inline
@@ -3663,6 +3719,10 @@ object arcgisJsApiStrings {
   @scala.inline
   def `percentage-or-ratio`: `percentage-or-ratio` = "percentage-or-ratio".asInstanceOf[`percentage-or-ratio`]
   @scala.inline
+  def `percentile-continuous`: `percentile-continuous` = "percentile-continuous".asInstanceOf[`percentile-continuous`]
+  @scala.inline
+  def `percentile-discrete`: `percentile-discrete` = "percentile-discrete".asInstanceOf[`percentile-discrete`]
+  @scala.inline
   def `picture-fill`: `picture-fill` = "picture-fill".asInstanceOf[`picture-fill`]
   @scala.inline
   def `picture-marker`: `picture-marker` = "picture-marker".asInstanceOf[`picture-marker`]
@@ -3821,6 +3881,8 @@ object arcgisJsApiStrings {
   @scala.inline
   def rounded: rounded = "rounded".asInstanceOf[rounded]
   @scala.inline
+  def route: route = "route".asInstanceOf[route]
+  @scala.inline
   def ruler: ruler = "ruler".asInstanceOf[ruler]
   @scala.inline
   def running: running = "running".asInstanceOf[running]
@@ -3876,6 +3938,8 @@ object arcgisJsApiStrings {
   def `select-result`: `select-result` = "select-result".asInstanceOf[`select-result`]
   @scala.inline
   def selection: selection = "selection".asInstanceOf[selection]
+  @scala.inline
+  def `selection-change`: `selection-change` = "selection-change".asInstanceOf[`selection-change`]
   @scala.inline
   def `shield-label-symbol`: `shield-label-symbol` = "shield-label-symbol".asInstanceOf[`shield-label-symbol`]
   @scala.inline
@@ -4051,9 +4115,13 @@ object arcgisJsApiStrings {
   @scala.inline
   def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
   @scala.inline
+  def `top-leading`: `top-leading` = "top-leading".asInstanceOf[`top-leading`]
+  @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  @scala.inline
+  def `top-trailing`: `top-trailing` = "top-trailing".asInstanceOf[`top-trailing`]
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
   @scala.inline
@@ -4182,6 +4250,8 @@ object arcgisJsApiStrings {
   def wmts: wmts = "wmts".asInstanceOf[wmts]
   @scala.inline
   def x: x = "x".asInstanceOf[x]
+  @scala.inline
+  def `x-ray`: `x-ray` = "x-ray".asInstanceOf[`x-ray`]
   @scala.inline
   def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
   @scala.inline

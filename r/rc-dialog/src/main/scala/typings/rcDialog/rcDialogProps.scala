@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait rcDialogProps {
   @scala.inline
-  def DialogProps: IDialogChildProps.type = typings.rcDialog.dialogMod.IDialogChildProps
+  def DialogProps: IDialogChildProps.type = IDialogChildProps
   type DialogProps = IDialogChildProps
   @scala.inline
-  def LazyRenderBoxProps: ILazyRenderBoxPropTypes.type = typings.rcDialog.lazyRenderBoxMod.ILazyRenderBoxPropTypes
+  def LazyRenderBoxProps: ILazyRenderBoxPropTypes.type = ILazyRenderBoxPropTypes
   type LazyRenderBoxProps = ILazyRenderBoxPropTypes
 }
 

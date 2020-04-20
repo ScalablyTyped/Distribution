@@ -91,7 +91,6 @@ object Options {
     ajaxURLGenerator: (/* url */ String, /* config */ js.Any, /* params */ js.Any) => String = null,
     autoColumns: js.UndefOr[Boolean] = js.undefined,
     autoResize: js.UndefOr[Boolean] = js.undefined,
-    blockRedraw: () => Unit = null,
     cellClick: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellContext: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellDblClick: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
@@ -264,7 +263,6 @@ object Options {
     responsiveLayoutCollapseFormatter: /* data */ js.Array[_] => _ = null,
     responsiveLayoutCollapseStartOpen: js.UndefOr[Boolean] = js.undefined,
     responsiveLayoutCollapseUseFormatters: js.UndefOr[Boolean] = js.undefined,
-    restoreRedraw: () => Unit = null,
     rowAdded: /* row */ RowComponent => Unit = null,
     rowClick: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowContext: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
@@ -312,7 +310,7 @@ object Options {
     tooltipsHeader: js.UndefOr[Boolean] = js.undefined,
     validationFailed: (/* cell */ CellComponent, /* value */ js.Any, /* validators */ js.Array[StandardValidatorType | Validator]) => Unit = null,
     virtualDom: js.UndefOr[Boolean] = js.undefined,
-    virtualDomBuffer: js.UndefOr[Boolean] = js.undefined
+    virtualDomBuffer: Boolean | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (addRowPos != null) __obj.updateDynamic("addRowPos")(addRowPos.asInstanceOf[js.Any])
@@ -335,7 +333,6 @@ object Options {
     if (ajaxURLGenerator != null) __obj.updateDynamic("ajaxURLGenerator")(js.Any.fromFunction3(ajaxURLGenerator))
     if (!js.isUndefined(autoColumns)) __obj.updateDynamic("autoColumns")(autoColumns.asInstanceOf[js.Any])
     if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
-    if (blockRedraw != null) __obj.updateDynamic("blockRedraw")(js.Any.fromFunction0(blockRedraw))
     if (cellClick != null) __obj.updateDynamic("cellClick")(js.Any.fromFunction2(cellClick))
     if (cellContext != null) __obj.updateDynamic("cellContext")(js.Any.fromFunction2(cellContext))
     if (cellDblClick != null) __obj.updateDynamic("cellDblClick")(js.Any.fromFunction2(cellDblClick))
@@ -486,7 +483,6 @@ object Options {
     if (responsiveLayoutCollapseFormatter != null) __obj.updateDynamic("responsiveLayoutCollapseFormatter")(js.Any.fromFunction1(responsiveLayoutCollapseFormatter))
     if (!js.isUndefined(responsiveLayoutCollapseStartOpen)) __obj.updateDynamic("responsiveLayoutCollapseStartOpen")(responsiveLayoutCollapseStartOpen.asInstanceOf[js.Any])
     if (!js.isUndefined(responsiveLayoutCollapseUseFormatters)) __obj.updateDynamic("responsiveLayoutCollapseUseFormatters")(responsiveLayoutCollapseUseFormatters.asInstanceOf[js.Any])
-    if (restoreRedraw != null) __obj.updateDynamic("restoreRedraw")(js.Any.fromFunction0(restoreRedraw))
     if (rowAdded != null) __obj.updateDynamic("rowAdded")(js.Any.fromFunction1(rowAdded))
     if (rowClick != null) __obj.updateDynamic("rowClick")(js.Any.fromFunction2(rowClick))
     if (rowContext != null) __obj.updateDynamic("rowContext")(js.Any.fromFunction2(rowContext))
@@ -531,7 +527,7 @@ object Options {
     if (!js.isUndefined(tooltipsHeader)) __obj.updateDynamic("tooltipsHeader")(tooltipsHeader.asInstanceOf[js.Any])
     if (validationFailed != null) __obj.updateDynamic("validationFailed")(js.Any.fromFunction3(validationFailed))
     if (!js.isUndefined(virtualDom)) __obj.updateDynamic("virtualDom")(virtualDom.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtualDomBuffer)) __obj.updateDynamic("virtualDomBuffer")(virtualDomBuffer.asInstanceOf[js.Any])
+    if (virtualDomBuffer != null) __obj.updateDynamic("virtualDomBuffer")(virtualDomBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

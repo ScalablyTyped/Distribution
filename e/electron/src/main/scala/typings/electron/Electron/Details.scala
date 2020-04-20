@@ -35,7 +35,6 @@ object Details {
     securityOrigin: String
   ): Details = {
     val __obj = js.Dynamic.literal(isMainFrame = isMainFrame.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], requestingUrl = requestingUrl.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Details]
   }
 }

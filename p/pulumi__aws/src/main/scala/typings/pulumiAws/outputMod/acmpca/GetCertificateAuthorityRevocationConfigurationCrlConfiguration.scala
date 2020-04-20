@@ -16,7 +16,6 @@ object GetCertificateAuthorityRevocationConfigurationCrlConfiguration {
   @scala.inline
   def apply(customCname: String, enabled: Boolean, expirationInDays: Double, s3BucketName: String): GetCertificateAuthorityRevocationConfigurationCrlConfiguration = {
     val __obj = js.Dynamic.literal(customCname = customCname.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], expirationInDays = expirationInDays.asInstanceOf[js.Any], s3BucketName = s3BucketName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCertificateAuthorityRevocationConfigurationCrlConfiguration]
   }
 }

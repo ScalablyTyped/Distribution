@@ -20,7 +20,6 @@ object UpdateSchemaRequest {
   @scala.inline
   def apply(Name: SchemaName, SchemaArn: Arn): UpdateSchemaRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSchemaRequest]
   }
 }

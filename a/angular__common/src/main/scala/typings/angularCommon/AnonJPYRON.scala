@@ -22,7 +22,6 @@ object AnonJPYRON {
     XXX: js.Array[scala.Nothing]
   ): AnonJPYRON = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonJPYRON]
   }
 }

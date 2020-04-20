@@ -13,7 +13,6 @@ object TypeofMTurk {
   @scala.inline
   def apply(Types: TypeofMTurk): TypeofMTurk = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofMTurk]
   }
 }

@@ -12,7 +12,6 @@ object AnonLight {
   @scala.inline
   def apply(light: Double): AnonLight = {
     val __obj = js.Dynamic.literal(light = light.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLight]
   }
 }

@@ -7,6 +7,7 @@ import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +28,7 @@ object AuthenticationMiddlewareOptions {
     tokenInfoEndpoint: String,
     getTokenInfo: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[js.Object]] = null,
     logger: Logger = null,
-    onNotAuthenticatedHandler: (/* request */ Request_[ParamsDictionary], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* logger */ Logger) => Unit = null,
+    onNotAuthenticatedHandler: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* logger */ Logger) => Unit = null,
     publicEndpoints: js.Array[String] = null
   ): AuthenticationMiddlewareOptions = {
     val __obj = js.Dynamic.literal(tokenInfoEndpoint = tokenInfoEndpoint.asInstanceOf[js.Any])

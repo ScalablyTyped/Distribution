@@ -12,7 +12,6 @@ object OnShowListener {
   @scala.inline
   def apply(onShow: typings.androiduix.android.content.DialogInterface => Unit): OnShowListener = {
     val __obj = js.Dynamic.literal(onShow = js.Any.fromFunction1(onShow))
-  
     __obj.asInstanceOf[OnShowListener]
   }
 }

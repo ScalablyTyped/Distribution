@@ -12,7 +12,6 @@ object AnonResolvers {
   @scala.inline
   def apply(resolvers: js.Array[AnonDuration]): AnonResolvers = {
     val __obj = js.Dynamic.literal(resolvers = resolvers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResolvers]
   }
 }

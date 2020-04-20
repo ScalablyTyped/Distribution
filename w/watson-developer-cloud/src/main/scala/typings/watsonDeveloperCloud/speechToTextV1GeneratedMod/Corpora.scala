@@ -14,7 +14,6 @@ object Corpora {
   @scala.inline
   def apply(corpora: js.Array[Corpus]): Corpora = {
     val __obj = js.Dynamic.literal(corpora = corpora.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Corpora]
   }
 }

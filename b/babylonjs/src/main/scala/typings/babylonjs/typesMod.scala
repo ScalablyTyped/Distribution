@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.Float32Array
@@ -22,7 +23,7 @@ object typesMod extends js.Object {
   type DeepImmutable[T] = DeepImmutableObject[T] | DeepImmutableArray[js.Any] | T
   type DeepImmutableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: babylonjs.babylonjs/types.DeepImmutable<T[K]>}
-    */ typings.babylonjs.babylonjsStrings.DeepImmutableObject with T
+    */ typings.babylonjs.babylonjsStrings.DeepImmutableObject with TopLevel[T]
   type FloatArray = js.Array[Double] | Float32Array
   type Immutable[T] = DeepImmutable[T] | js.Array[js.Any] | T
   type IndicesArray = js.Array[Double] | Int32Array | Uint32Array | Uint16Array

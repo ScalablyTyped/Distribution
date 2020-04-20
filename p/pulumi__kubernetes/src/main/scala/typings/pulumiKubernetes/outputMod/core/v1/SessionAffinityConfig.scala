@@ -18,7 +18,6 @@ object SessionAffinityConfig {
   @scala.inline
   def apply(clientIP: ClientIPConfig): SessionAffinityConfig = {
     val __obj = js.Dynamic.literal(clientIP = clientIP.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionAffinityConfig]
   }
 }

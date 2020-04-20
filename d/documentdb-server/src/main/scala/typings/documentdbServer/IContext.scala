@@ -20,7 +20,6 @@ object IContext {
   @scala.inline
   def apply(getCollection: () => ICollection, getRequest: () => IRequest, getResponse: () => IResponse): IContext = {
     val __obj = js.Dynamic.literal(getCollection = js.Any.fromFunction0(getCollection), getRequest = js.Any.fromFunction0(getRequest), getResponse = js.Any.fromFunction0(getResponse))
-  
     __obj.asInstanceOf[IContext]
   }
 }

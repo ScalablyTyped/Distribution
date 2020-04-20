@@ -12,7 +12,6 @@ object UpsertRet {
   @scala.inline
   def apply(insert: js.Any => UpsertRetInsertRet): UpsertRet = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
-  
     __obj.asInstanceOf[UpsertRet]
   }
 }

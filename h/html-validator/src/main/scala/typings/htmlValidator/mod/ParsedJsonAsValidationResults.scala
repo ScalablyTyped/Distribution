@@ -12,7 +12,6 @@ object ParsedJsonAsValidationResults {
   @scala.inline
   def apply(messages: js.Array[ValidationMessageObject]): ParsedJsonAsValidationResults = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedJsonAsValidationResults]
   }
 }

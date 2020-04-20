@@ -78,74 +78,72 @@ trait XlDynamicFilterCriteria extends js.Object
 
 object XlDynamicFilterCriteria {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlFilterAboveAverage: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def xlFilterAboveAverage: `33` = this.cast(33)
+  def xlFilterAllDatesInPeriodApril: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def xlFilterAllDatesInPeriodApril: `24` = this.cast(24)
+  def xlFilterAllDatesInPeriodAugust: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def xlFilterAllDatesInPeriodAugust: `28` = this.cast(28)
+  def xlFilterAllDatesInPeriodDecember: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def xlFilterAllDatesInPeriodDecember: `32` = this.cast(32)
+  def xlFilterAllDatesInPeriodFebruray: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def xlFilterAllDatesInPeriodFebruray: `22` = this.cast(22)
+  def xlFilterAllDatesInPeriodJanuary: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def xlFilterAllDatesInPeriodJanuary: `21` = this.cast(21)
+  def xlFilterAllDatesInPeriodJuly: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def xlFilterAllDatesInPeriodJuly: `27` = this.cast(27)
+  def xlFilterAllDatesInPeriodJune: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def xlFilterAllDatesInPeriodJune: `26` = this.cast(26)
+  def xlFilterAllDatesInPeriodMarch: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def xlFilterAllDatesInPeriodMarch: `23` = this.cast(23)
+  def xlFilterAllDatesInPeriodMay: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def xlFilterAllDatesInPeriodMay: `25` = this.cast(25)
+  def xlFilterAllDatesInPeriodNovember: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def xlFilterAllDatesInPeriodNovember: `31` = this.cast(31)
+  def xlFilterAllDatesInPeriodOctober: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def xlFilterAllDatesInPeriodOctober: `30` = this.cast(30)
+  def xlFilterAllDatesInPeriodQuarter1: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xlFilterAllDatesInPeriodQuarter1: `17` = this.cast(17)
+  def xlFilterAllDatesInPeriodQuarter2: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def xlFilterAllDatesInPeriodQuarter2: `18` = this.cast(18)
+  def xlFilterAllDatesInPeriodQuarter3: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def xlFilterAllDatesInPeriodQuarter3: `19` = this.cast(19)
+  def xlFilterAllDatesInPeriodQuarter4: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def xlFilterAllDatesInPeriodQuarter4: `20` = this.cast(20)
+  def xlFilterAllDatesInPeriodSeptember: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def xlFilterAllDatesInPeriodSeptember: `29` = this.cast(29)
+  def xlFilterBelowAverage: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def xlFilterBelowAverage: `34` = this.cast(34)
+  def xlFilterLastMonth: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlFilterLastMonth: `8` = this.cast(8)
+  def xlFilterLastQuarter: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlFilterLastQuarter: `11` = this.cast(11)
+  def xlFilterLastWeek: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlFilterLastWeek: `5` = this.cast(5)
+  def xlFilterLastYear: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlFilterLastYear: `14` = this.cast(14)
+  def xlFilterNextMonth: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlFilterNextMonth: `9` = this.cast(9)
+  def xlFilterNextQuarter: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlFilterNextQuarter: `12` = this.cast(12)
+  def xlFilterNextWeek: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlFilterNextWeek: `6` = this.cast(6)
+  def xlFilterNextYear: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlFilterNextYear: `15` = this.cast(15)
+  def xlFilterThisMonth: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlFilterThisMonth: `7` = this.cast(7)
+  def xlFilterThisQuarter: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlFilterThisQuarter: `10` = this.cast(10)
+  def xlFilterThisWeek: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlFilterThisWeek: `4` = this.cast(4)
+  def xlFilterThisYear: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlFilterThisYear: `13` = this.cast(13)
+  def xlFilterToday: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlFilterToday: `1` = this.cast(1)
+  def xlFilterTomorrow: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlFilterTomorrow: `3` = this.cast(3)
+  def xlFilterYearToDate: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlFilterYearToDate: `16` = this.cast(16)
-  @scala.inline
-  def xlFilterYesterday: `2` = this.cast(2)
+  def xlFilterYesterday: `2` = 2.asInstanceOf[`2`]
 }
 

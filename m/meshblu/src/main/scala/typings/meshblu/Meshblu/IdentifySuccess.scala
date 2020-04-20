@@ -14,7 +14,6 @@ object IdentifySuccess {
   @scala.inline
   def apply(status: String, token: String, uuid: String): IdentifySuccess = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdentifySuccess]
   }
 }

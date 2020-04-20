@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 
 object nivoChordComponents extends nivoChordProps {
   @scala.inline
-  def Chord: ComponentType[ChordProps with Dimensions] = js.constructorOf[typings.nivoChord.mod.Chord].asInstanceOf[typings.react.mod.ComponentType[typings.nivoChord.mod.ChordProps with typings.nivoCore.mod.Dimensions]]
+  def Chord: ComponentType[ChordProps with Dimensions] = js.constructorOf[typings.nivoChord.mod.Chord].asInstanceOf[ComponentType[ChordProps with Dimensions]]
   @scala.inline
-  def ChordCanvas: ComponentType[ChordCanvasProps with Dimensions] = js.constructorOf[typings.nivoChord.mod.ChordCanvas].asInstanceOf[typings.react.mod.ComponentType[typings.nivoChord.mod.ChordCanvasProps with typings.nivoCore.mod.Dimensions]]
+  def ChordCanvas: ComponentType[ChordCanvasProps with Dimensions] = js.constructorOf[typings.nivoChord.mod.ChordCanvas].asInstanceOf[ComponentType[ChordCanvasProps with Dimensions]]
   @scala.inline
-  def ResponsiveChord: ComponentType[ResponsiveChordProps] = js.constructorOf[typings.nivoChord.mod.ResponsiveChord].asInstanceOf[typings.react.mod.ComponentType[ResponsiveChordProps]]
+  def ResponsiveChord: ComponentType[ResponsiveChordProps] = js.constructorOf[typings.nivoChord.mod.ResponsiveChord].asInstanceOf[ComponentType[ResponsiveChordProps]]
   @scala.inline
-  def ResponsiveChordCanvas: ComponentType[ResponsiveChordCanvasProps] = js.constructorOf[typings.nivoChord.mod.ResponsiveChordCanvas].asInstanceOf[typings.react.mod.ComponentType[ResponsiveChordCanvasProps]]
+  def ResponsiveChordCanvas: ComponentType[ResponsiveChordCanvasProps] = js.constructorOf[typings.nivoChord.mod.ResponsiveChordCanvas].asInstanceOf[ComponentType[ResponsiveChordCanvasProps]]
 }
 

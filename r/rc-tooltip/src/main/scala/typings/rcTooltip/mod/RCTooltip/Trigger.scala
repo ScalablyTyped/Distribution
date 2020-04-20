@@ -13,12 +13,10 @@ trait Trigger extends js.Object
 
 object Trigger {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.rcTooltip.rcTooltipStrings.click = "click".asInstanceOf[typings.rcTooltip.rcTooltipStrings.click]
   @scala.inline
-  def click: typings.rcTooltip.rcTooltipStrings.click = this.cast("click")
+  def focus: typings.rcTooltip.rcTooltipStrings.focus = "focus".asInstanceOf[typings.rcTooltip.rcTooltipStrings.focus]
   @scala.inline
-  def focus: typings.rcTooltip.rcTooltipStrings.focus = this.cast("focus")
-  @scala.inline
-  def hover: typings.rcTooltip.rcTooltipStrings.hover = this.cast("hover")
+  def hover: typings.rcTooltip.rcTooltipStrings.hover = "hover".asInstanceOf[typings.rcTooltip.rcTooltipStrings.hover]
 }
 

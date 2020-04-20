@@ -16,7 +16,6 @@ object CancelExportTaskMessage {
   @scala.inline
   def apply(ExportTaskIdentifier: String): CancelExportTaskMessage = {
     val __obj = js.Dynamic.literal(ExportTaskIdentifier = ExportTaskIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelExportTaskMessage]
   }
 }

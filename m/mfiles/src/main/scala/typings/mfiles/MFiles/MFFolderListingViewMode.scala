@@ -26,22 +26,20 @@ trait MFFolderListingViewMode extends js.Object
 
 object MFFolderListingViewMode {
   @scala.inline
-  def Content: `8` = this.cast(8)
+  def Content: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def Details: `4` = this.cast(4)
+  def Details: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Icon: `1` = this.cast(1)
+  def Icon: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def List: `3` = this.cast(3)
+  def List: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def SmallIcon: `2` = this.cast(2)
+  def SmallIcon: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Thumbnail: `5` = this.cast(5)
+  def Thumbnail: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def Thumbstrip: `7` = this.cast(7)
+  def Thumbstrip: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def Tile: `6` = this.cast(6)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Tile: `6` = 6.asInstanceOf[`6`]
 }
 

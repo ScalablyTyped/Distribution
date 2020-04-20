@@ -256,15 +256,15 @@ object Engine extends js.Object {
     */
   def DefaultLoadingScreenFactory(canvas: HTMLCanvasElement): ILoadingScreen = js.native
   /** Gets the list of created engines */
-  def Instances(): js.Array[typings.babylonjs.engineMod.Engine] = js.native
+  def Instances: js.Array[typings.babylonjs.engineMod.Engine] = js.native
   /**
     * Gets the latest created engine
     */
-  def LastCreatedEngine(): Nullable[typings.babylonjs.engineMod.Engine] = js.native
+  def LastCreatedEngine: Nullable[typings.babylonjs.engineMod.Engine] = js.native
   /**
     * Gets the latest created scene
     */
-  def LastCreatedScene(): Nullable[Scene] = js.native
+  def LastCreatedScene: Nullable[Scene] = js.native
   /**
     * Will flag all materials in all scenes in all engines as dirty to trigger new shader compilation
     * @param flag defines which part of the materials must be marked as dirty
@@ -275,7 +275,7 @@ object Engine extends js.Object {
   /**
     * Returns the current npm package of the sdk
     */
-  def NpmPackage(): String = js.native
+  def NpmPackage: String = js.native
   /**
     * Default offline support factory responsible of creating a tool used to store data locally.
     * By default, this will create a Database object if the workload has been embedded.
@@ -288,7 +288,7 @@ object Engine extends js.Object {
   /**
     * Returns the current version of the framework
     */
-  def Version(): String = js.native
+  def Version: String = js.native
   /**
     * Asks the browser to exit fullscreen mode
     */

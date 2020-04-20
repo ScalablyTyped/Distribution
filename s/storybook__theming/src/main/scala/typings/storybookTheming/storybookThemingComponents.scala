@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 
 object storybookThemingComponents extends storybookThemingProps {
   @scala.inline
-  def CacheProvider: ComponentType[CacheProviderProps[EmotionCache]] = typings.storybookTheming.mod.CacheProvider.asInstanceOf[typings.react.mod.ComponentType[CacheProviderProps[typings.emotionUtils.mod.EmotionCache]]]
+  def CacheProvider: ComponentType[CacheProviderProps[EmotionCache]] = typings.storybookTheming.mod.CacheProvider.asInstanceOf[ComponentType[CacheProviderProps[EmotionCache]]]
   @scala.inline
-  def ClassNames[Theme]: ComponentType[ClassNamesProps[Theme]] = typings.storybookTheming.mod.ClassNames.asInstanceOf[typings.react.mod.ComponentType[ClassNamesProps[Theme]]]
+  def ClassNames[Theme]: ComponentType[ClassNamesProps[Theme]] = typings.storybookTheming.mod.ClassNames.asInstanceOf[ComponentType[ClassNamesProps[Theme]]]
   @scala.inline
-  def Global[Theme]: ComponentType[GlobalProps[Theme]] = typings.storybookTheming.mod.Global.asInstanceOf[typings.react.mod.ComponentType[GlobalProps[Theme]]]
+  def Global[Theme]: ComponentType[GlobalProps[Theme]] = typings.storybookTheming.mod.Global.asInstanceOf[ComponentType[GlobalProps[Theme]]]
   @scala.inline
-  def ThemeProvider[Theme]: ComponentType[ThemeProviderProps[Theme]] = typings.storybookTheming.mod.ThemeProvider.asInstanceOf[typings.react.mod.ComponentType[ThemeProviderProps[Theme]]]
+  def ThemeProvider[Theme]: ComponentType[ThemeProviderProps[Theme]] = typings.storybookTheming.mod.ThemeProvider.asInstanceOf[ComponentType[ThemeProviderProps[Theme]]]
 }
 

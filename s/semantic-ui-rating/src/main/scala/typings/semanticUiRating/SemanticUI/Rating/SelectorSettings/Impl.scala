@@ -15,7 +15,6 @@ object Impl {
   @scala.inline
   def apply(icon: String): Impl = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

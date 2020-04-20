@@ -24,7 +24,6 @@ object IndexingPolicy {
     indexingMode: IndexingMode
   ): IndexingPolicy = {
     val __obj = js.Dynamic.literal(ExcludedPaths = ExcludedPaths.asInstanceOf[js.Any], IncludedPaths = IncludedPaths.asInstanceOf[js.Any], automatic = automatic.asInstanceOf[js.Any], indexingMode = indexingMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IndexingPolicy]
   }
 }

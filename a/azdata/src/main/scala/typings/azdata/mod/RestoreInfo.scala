@@ -14,7 +14,6 @@ object RestoreInfo {
   @scala.inline
   def apply(options: StringDictionary[js.Any], taskExecutionMode: TaskExecutionMode): RestoreInfo = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], taskExecutionMode = taskExecutionMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestoreInfo]
   }
 }

@@ -21,7 +21,6 @@ object Row {
   @scala.inline
   def apply(getPosition: () => Point, isCluster: () => Boolean, lat: Double, lng: Double): Row = {
     val __obj = js.Dynamic.literal(getPosition = js.Any.fromFunction0(getPosition), isCluster = js.Any.fromFunction0(isCluster), lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Row]
   }
 }

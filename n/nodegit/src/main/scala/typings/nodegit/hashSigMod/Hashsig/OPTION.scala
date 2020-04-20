@@ -18,14 +18,12 @@ trait OPTION extends js.Object
 
 object OPTION {
   @scala.inline
-  def ALLOW_SMALL_FILES: `4` = this.cast(4)
+  def ALLOW_SMALL_FILES: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def IGNORE_WHITESPACE: `1` = this.cast(1)
+  def IGNORE_WHITESPACE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def NORMAL: `0` = this.cast(0)
+  def NORMAL: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SMART_WHITESPACE: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SMART_WHITESPACE: `2` = 2.asInstanceOf[`2`]
 }
 

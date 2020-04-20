@@ -28,7 +28,7 @@ abstract class NumericAttributeTypeBase protected () extends AttributeType {
   @JSName("model")
   var model_FNumericAttributeTypeBase: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MNumericAttributeTypeBase(): Attribute = js.native
+  def containerAsAttribute_MNumericAttributeTypeBase: Attribute = js.native
 }
 
 /* static members */

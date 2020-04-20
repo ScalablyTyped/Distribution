@@ -18,7 +18,6 @@ object ojMessageSettableProperties {
   @scala.inline
   def apply(displayOptions: DisplayOptions, message: Message, translations: AnonCategoriesLabelCloseIcon): ojMessageSettableProperties = {
     val __obj = js.Dynamic.literal(displayOptions = displayOptions.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ojMessageSettableProperties]
   }
 }

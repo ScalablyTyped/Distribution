@@ -55,7 +55,7 @@ class DateTime () extends js.Object {
   def diffNow(unit: DurationUnit, options: DiffOptions): Duration = js.native
   def endOf(unit: DurationUnit): DateTime = js.native
   def equals(other: DateTime): Boolean = js.native
-  def get(unit: String): Double = js.native
+  def get(unit: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 110 */ js.Any): Double = js.native
   def hasSame(other: DateTime, unit: DurationUnit): Boolean = js.native
   def minus(duration: Double): DateTime = js.native
   def minus(duration: Duration): DateTime = js.native

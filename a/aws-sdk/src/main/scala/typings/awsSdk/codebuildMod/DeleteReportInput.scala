@@ -16,7 +16,6 @@ object DeleteReportInput {
   @scala.inline
   def apply(arn: NonEmptyString): DeleteReportInput = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteReportInput]
   }
 }

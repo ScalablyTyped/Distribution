@@ -12,7 +12,6 @@ object AnonHeader {
   @scala.inline
   def apply(header: String): AnonHeader = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHeader]
   }
 }

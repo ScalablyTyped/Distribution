@@ -22,7 +22,6 @@ object ParseTrackNameResults {
     propertyName: String
   ): ParseTrackNameResults = {
     val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any], objectIndex = objectIndex.asInstanceOf[js.Any], objectName = objectName.asInstanceOf[js.Any], propertyIndex = propertyIndex.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParseTrackNameResults]
   }
 }

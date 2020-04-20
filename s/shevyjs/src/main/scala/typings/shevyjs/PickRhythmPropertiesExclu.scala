@@ -14,7 +14,6 @@ object PickRhythmPropertiesExclu {
   @scala.inline
   def apply(fontSize: String, lineHeight: Double): PickRhythmPropertiesExclu = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickRhythmPropertiesExclu]
   }
 }

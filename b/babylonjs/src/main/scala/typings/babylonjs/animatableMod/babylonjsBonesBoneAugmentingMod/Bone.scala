@@ -29,7 +29,6 @@ object Bone {
   @scala.inline
   def apply(copyAnimationRange: (Bone, String, Double, Boolean, Nullable[Vector3]) => Boolean): Bone = {
     val __obj = js.Dynamic.literal(copyAnimationRange = js.Any.fromFunction5(copyAnimationRange))
-  
     __obj.asInstanceOf[Bone]
   }
 }

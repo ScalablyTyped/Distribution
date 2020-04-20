@@ -28,11 +28,11 @@ class GridControlBar protected () extends ControlBar {
   def defaultButton(): js.Any = js.native
   def defaultButton(newValue: ControlBarItem): js.Any = js.native
   @JSName("defaultButton")
-  def defaultButton_Union(): ControlBarItem | Null = js.native
+  def defaultButton_Union: ControlBarItem | Null = js.native
   /**
     * In version 7.13.0: deleted
     */
-  def searchButton(): GridSearchButton = js.native
+  def searchButton: GridSearchButton = js.native
   def searchButton(newValue: GridSearchButton): js.Any = js.native
 }
 

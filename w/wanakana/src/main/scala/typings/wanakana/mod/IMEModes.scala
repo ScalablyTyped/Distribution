@@ -14,14 +14,12 @@ trait IMEModes extends js.Object
 
 object IMEModes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `false`: typings.wanakana.wanakanaBooleans.`false` = false.asInstanceOf[typings.wanakana.wanakanaBooleans.`false`]
   @scala.inline
-  def `false`: typings.wanakana.wanakanaBooleans.`false` = this.cast(false)
+  def toHiragana: typings.wanakana.wanakanaStrings.toHiragana = "toHiragana".asInstanceOf[typings.wanakana.wanakanaStrings.toHiragana]
   @scala.inline
-  def toHiragana: typings.wanakana.wanakanaStrings.toHiragana = this.cast("toHiragana")
+  def toKatakana: typings.wanakana.wanakanaStrings.toKatakana = "toKatakana".asInstanceOf[typings.wanakana.wanakanaStrings.toKatakana]
   @scala.inline
-  def toKatakana: typings.wanakana.wanakanaStrings.toKatakana = this.cast("toKatakana")
-  @scala.inline
-  def `true`: typings.wanakana.wanakanaBooleans.`true` = this.cast(true)
+  def `true`: typings.wanakana.wanakanaBooleans.`true` = true.asInstanceOf[typings.wanakana.wanakanaBooleans.`true`]
 }
 

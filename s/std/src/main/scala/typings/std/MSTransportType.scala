@@ -14,14 +14,12 @@ trait MSTransportType extends js.Object
 
 object MSTransportType {
   @scala.inline
-  def BT: typings.std.stdStrings.BT = this.cast("BT")
+  def BT: typings.std.stdStrings.BT = "BT".asInstanceOf[typings.std.stdStrings.BT]
   @scala.inline
-  def Embedded: typings.std.stdStrings.Embedded = this.cast("Embedded")
+  def Embedded: typings.std.stdStrings.Embedded = "Embedded".asInstanceOf[typings.std.stdStrings.Embedded]
   @scala.inline
-  def NFC: typings.std.stdStrings.NFC = this.cast("NFC")
+  def NFC: typings.std.stdStrings.NFC = "NFC".asInstanceOf[typings.std.stdStrings.NFC]
   @scala.inline
-  def USB: typings.std.stdStrings.USB = this.cast("USB")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def USB: typings.std.stdStrings.USB = "USB".asInstanceOf[typings.std.stdStrings.USB]
 }
 

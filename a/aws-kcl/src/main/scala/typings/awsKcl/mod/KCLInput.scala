@@ -13,7 +13,6 @@ object KCLInput {
   @scala.inline
   def apply(recordProcessor: RecordProcessor, version: js.Symbol): KCLInput = {
     val __obj = js.Dynamic.literal(recordProcessor = recordProcessor.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KCLInput]
   }
 }

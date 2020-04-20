@@ -26,7 +26,6 @@ object IScrollDatasource {
   @scala.inline
   def apply[T](get: (Double, Double, js.Function1[/* results */ js.Array[T], _]) => Unit): IScrollDatasource[T] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get))
-  
     __obj.asInstanceOf[IScrollDatasource[T]]
   }
 }

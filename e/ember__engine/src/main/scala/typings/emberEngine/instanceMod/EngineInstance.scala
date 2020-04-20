@@ -21,7 +21,6 @@ object EngineInstance {
   @scala.inline
   def apply(boot: () => js.Promise[EngineInstance], unregister: String => js.Any): EngineInstance = {
     val __obj = js.Dynamic.literal(boot = js.Any.fromFunction0(boot), unregister = js.Any.fromFunction1(unregister))
-  
     __obj.asInstanceOf[EngineInstance]
   }
 }

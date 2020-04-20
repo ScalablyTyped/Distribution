@@ -23,7 +23,6 @@ object FormLayout {
   @scala.inline
   def apply(extensions: js.Array[Extension], pages: js.Array[Page], systemControls: js.Array[Control]): FormLayout = {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], systemControls = systemControls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FormLayout]
   }
 }

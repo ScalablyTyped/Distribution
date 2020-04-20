@@ -16,12 +16,10 @@ trait LineSeparatorEnum extends js.Object
 
 object LineSeparatorEnum {
   @scala.inline
-  def adCR: `13` = this.cast(13)
+  def adCR: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def adCRLF: `-1` = this.cast(-1)
+  def adCRLF: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def adLF: `10` = this.cast(10)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adLF: `10` = 10.asInstanceOf[`10`]
 }
 

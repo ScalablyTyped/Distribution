@@ -26,7 +26,6 @@ object TypeofappJsdt {
     runstring: String => Double
   ): TypeofappJsdt = {
     val __obj = js.Dynamic.literal(dofile = js.Any.fromFunction1(dofile), dostring = js.Any.fromFunction1(dostring), run = js.Any.fromFunction1(run), run_p1 = js.Any.fromFunction2(run_p1), run_p2 = js.Any.fromFunction3(run_p2), run_p3 = js.Any.fromFunction4(run_p3), runstring = js.Any.fromFunction1(runstring))
-  
     __obj.asInstanceOf[TypeofappJsdt]
   }
 }

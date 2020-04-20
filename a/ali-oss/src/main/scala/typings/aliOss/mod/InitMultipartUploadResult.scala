@@ -18,7 +18,6 @@ object InitMultipartUploadResult {
   @scala.inline
   def apply(bucket: String, name: String, res: AnonHeaders, uploadId: String): InitMultipartUploadResult = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InitMultipartUploadResult]
   }
 }

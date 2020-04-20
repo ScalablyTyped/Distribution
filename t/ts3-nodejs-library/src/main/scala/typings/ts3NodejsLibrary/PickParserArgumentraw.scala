@@ -13,7 +13,6 @@ object PickParserArgumentraw {
   @scala.inline
   def apply(raw: String): PickParserArgumentraw = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickParserArgumentraw]
   }
 }

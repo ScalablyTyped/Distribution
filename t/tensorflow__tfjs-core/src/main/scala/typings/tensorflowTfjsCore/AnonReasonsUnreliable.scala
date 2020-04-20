@@ -13,7 +13,6 @@ object AnonReasonsUnreliable {
   @scala.inline
   def apply(reasons: js.Array[String], unreliable: Boolean): AnonReasonsUnreliable = {
     val __obj = js.Dynamic.literal(reasons = reasons.asInstanceOf[js.Any], unreliable = unreliable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReasonsUnreliable]
   }
 }

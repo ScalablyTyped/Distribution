@@ -16,7 +16,6 @@ object BatchGetCrawlersRequest {
   @scala.inline
   def apply(CrawlerNames: CrawlerNameList): BatchGetCrawlersRequest = {
     val __obj = js.Dynamic.literal(CrawlerNames = CrawlerNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetCrawlersRequest]
   }
 }

@@ -16,7 +16,6 @@ object IgTreeGridTooltipsMethods {
   @scala.inline
   def apply(destroy: () => Unit, id: () => String): IgTreeGridTooltipsMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), id = js.Any.fromFunction0(id))
-  
     __obj.asInstanceOf[IgTreeGridTooltipsMethods]
   }
 }

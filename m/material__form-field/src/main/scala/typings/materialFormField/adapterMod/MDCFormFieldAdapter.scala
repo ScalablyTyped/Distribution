@@ -21,7 +21,6 @@ object MDCFormFieldAdapter {
     registerInteractionHandler: (String, EventListener) => Unit
   ): MDCFormFieldAdapter = {
     val __obj = js.Dynamic.literal(activateInputRipple = js.Any.fromFunction0(activateInputRipple), deactivateInputRipple = js.Any.fromFunction0(deactivateInputRipple), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler))
-  
     __obj.asInstanceOf[MDCFormFieldAdapter]
   }
 }

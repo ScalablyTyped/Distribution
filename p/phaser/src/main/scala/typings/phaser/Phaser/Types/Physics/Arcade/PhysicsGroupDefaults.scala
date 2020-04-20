@@ -128,7 +128,6 @@ object PhysicsGroupDefaults {
     setVelocityY: Double
   ): PhysicsGroupDefaults = {
     val __obj = js.Dynamic.literal(setAccelerationX = setAccelerationX.asInstanceOf[js.Any], setAccelerationY = setAccelerationY.asInstanceOf[js.Any], setAllowDrag = setAllowDrag.asInstanceOf[js.Any], setAllowGravity = setAllowGravity.asInstanceOf[js.Any], setAllowRotation = setAllowRotation.asInstanceOf[js.Any], setAngularAcceleration = setAngularAcceleration.asInstanceOf[js.Any], setAngularDrag = setAngularDrag.asInstanceOf[js.Any], setAngularVelocity = setAngularVelocity.asInstanceOf[js.Any], setBounceX = setBounceX.asInstanceOf[js.Any], setBounceY = setBounceY.asInstanceOf[js.Any], setBoundsRectangle = setBoundsRectangle.asInstanceOf[js.Any], setCollideWorldBounds = setCollideWorldBounds.asInstanceOf[js.Any], setDragX = setDragX.asInstanceOf[js.Any], setDragY = setDragY.asInstanceOf[js.Any], setEnable = setEnable.asInstanceOf[js.Any], setFrictionX = setFrictionX.asInstanceOf[js.Any], setFrictionY = setFrictionY.asInstanceOf[js.Any], setGravityX = setGravityX.asInstanceOf[js.Any], setGravityY = setGravityY.asInstanceOf[js.Any], setImmovable = setImmovable.asInstanceOf[js.Any], setMass = setMass.asInstanceOf[js.Any], setVelocityX = setVelocityX.asInstanceOf[js.Any], setVelocityY = setVelocityY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhysicsGroupDefaults]
   }
 }

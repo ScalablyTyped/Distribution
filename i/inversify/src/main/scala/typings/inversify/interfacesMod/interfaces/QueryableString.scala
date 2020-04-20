@@ -22,7 +22,6 @@ object QueryableString {
     value: () => String
   ): QueryableString = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), endsWith = js.Any.fromFunction1(endsWith), equals = js.Any.fromFunction1(equals), startsWith = js.Any.fromFunction1(startsWith), value = js.Any.fromFunction0(value))
-  
     __obj.asInstanceOf[QueryableString]
   }
 }

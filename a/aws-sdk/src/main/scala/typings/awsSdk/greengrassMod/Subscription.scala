@@ -28,7 +28,6 @@ object Subscription {
   @scala.inline
   def apply(Id: string, Source: string, Subject: string, Target: string): Subscription = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Subscription]
   }
 }

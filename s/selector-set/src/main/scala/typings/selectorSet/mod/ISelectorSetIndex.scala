@@ -15,7 +15,6 @@ object ISelectorSetIndex {
   @scala.inline
   def apply(element: Element => js.Array[String] | Unit, name: String, selector: String => String | Unit): ISelectorSetIndex = {
     val __obj = js.Dynamic.literal(element = js.Any.fromFunction1(element), name = name.asInstanceOf[js.Any], selector = js.Any.fromFunction1(selector))
-  
     __obj.asInstanceOf[ISelectorSetIndex]
   }
 }

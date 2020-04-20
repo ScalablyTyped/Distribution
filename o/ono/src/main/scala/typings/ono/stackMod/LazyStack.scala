@@ -20,7 +20,6 @@ object LazyStack {
   @scala.inline
   def apply(configurable: `true`, get: () => js.UndefOr[String]): LazyStack = {
     val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], get = js.Any.fromFunction0(get))
-  
     __obj.asInstanceOf[LazyStack]
   }
 }

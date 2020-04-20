@@ -20,7 +20,6 @@ object DeleteBranchInput {
   @scala.inline
   def apply(branchName: BranchName, repositoryName: RepositoryName): DeleteBranchInput = {
     val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBranchInput]
   }
 }

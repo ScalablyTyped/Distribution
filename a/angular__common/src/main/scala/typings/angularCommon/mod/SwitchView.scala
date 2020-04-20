@@ -24,7 +24,6 @@ object SwitchView {
     enforceState: Boolean => Unit
   ): SwitchView = {
     val __obj = js.Dynamic.literal(_created = _created.asInstanceOf[js.Any], _templateRef = _templateRef.asInstanceOf[js.Any], _viewContainerRef = _viewContainerRef.asInstanceOf[js.Any], create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction0(destroy), enforceState = js.Any.fromFunction1(enforceState))
-  
     __obj.asInstanceOf[SwitchView]
   }
 }

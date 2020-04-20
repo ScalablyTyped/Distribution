@@ -40,7 +40,6 @@ object GetRepositoryResult {
     repositoryName: String
   ): GetRepositoryResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], cloneUrlHttp = cloneUrlHttp.asInstanceOf[js.Any], cloneUrlSsh = cloneUrlSsh.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], repositoryId = repositoryId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRepositoryResult]
   }
 }

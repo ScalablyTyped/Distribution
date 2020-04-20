@@ -16,7 +16,6 @@ object VirtualServiceStatus {
   @scala.inline
   def apply(status: VirtualServiceStatusCode): VirtualServiceStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualServiceStatus]
   }
 }

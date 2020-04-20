@@ -20,7 +20,6 @@ object AttachLoadBalancerTlsCertificateRequest {
   @scala.inline
   def apply(certificateName: ResourceName, loadBalancerName: ResourceName): AttachLoadBalancerTlsCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateName = certificateName.asInstanceOf[js.Any], loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachLoadBalancerTlsCertificateRequest]
   }
 }

@@ -70,7 +70,6 @@ object CryptoKeyVersionsResource {
     restore: AnonAlt => Request_[CryptoKeyVersion]
   ): CryptoKeyVersionsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), destroy = js.Any.fromFunction1(destroy), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), restore = js.Any.fromFunction1(restore))
-  
     __obj.asInstanceOf[CryptoKeyVersionsResource]
   }
 }

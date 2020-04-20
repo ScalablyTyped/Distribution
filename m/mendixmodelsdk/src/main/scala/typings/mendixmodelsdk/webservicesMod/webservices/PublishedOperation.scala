@@ -26,48 +26,48 @@ class PublishedOperation protected () extends PublishedResource {
   ) = this()
   @JSName("model")
   var model_FPublishedOperation: IModel = js.native
-  def description(): String = js.native
+  def description: String = js.native
   def description(newValue: String): js.Any = js.native
-  def documentation(): String = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def entityExposedName(): String = js.native
+  def entityExposedName: String = js.native
   def entityExposedName(newValue: String): js.Any = js.native
-  def entityExposedNameByContract(): String = js.native
+  def entityExposedNameByContract: String = js.native
   def entityExposedNameByContract(newValue: String): js.Any = js.native
   def image(): js.Any = js.native
   def image(newValue: IImage): js.Any = js.native
-  def imageQualifiedName(): String | Null = js.native
+  def imageQualifiedName: String | Null = js.native
   @JSName("image")
-  def image_Union(): IImage | Null = js.native
-  def isLockedByContract(): Boolean = js.native
+  def image_Union: IImage | Null = js.native
+  def isLockedByContract: Boolean = js.native
   def isLockedByContract(newValue: Boolean): js.Any = js.native
   def microflow(): js.Any = js.native
   def microflow(newValue: IMicroflow): js.Any = js.native
-  def microflowQualifiedName(): String | Null = js.native
+  def microflowQualifiedName: String | Null = js.native
   @JSName("microflow")
-  def microflow_Union(): IMicroflow | Null = js.native
-  def name(): String = js.native
+  def microflow_Union: IMicroflow | Null = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   /**
     * In version 7.9.0: introduced
     */
-  def operationReturnType(): DataType = js.native
+  def operationReturnType: DataType = js.native
   def operationReturnType(newValue: DataType): js.Any = js.native
-  def parameters(): IList[PublishedParameter] = js.native
+  def parameters: IList[PublishedParameter] = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
-  def returnType(): String = js.native
+  def returnType: String = js.native
   def returnType(newValue: String): js.Any = js.native
-  def returnTypeIsNillable(): Boolean = js.native
+  def returnTypeIsNillable: Boolean = js.native
   def returnTypeIsNillable(newValue: Boolean): js.Any = js.native
-  def returnTypeIsOptional(): Boolean = js.native
+  def returnTypeIsOptional: Boolean = js.native
   def returnTypeIsOptional(newValue: Boolean): js.Any = js.native
-  def returnTypeNameByContract(): String = js.native
+  def returnTypeNameByContract: String = js.native
   def returnTypeNameByContract(newValue: String): js.Any = js.native
-  def returnTypeSpecificationByContract(): String = js.native
+  def returnTypeSpecificationByContract: String = js.native
   def returnTypeSpecificationByContract(newValue: String): js.Any = js.native
 }
 

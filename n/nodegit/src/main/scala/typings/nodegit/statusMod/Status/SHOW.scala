@@ -16,12 +16,10 @@ trait SHOW extends js.Object
 
 object SHOW {
   @scala.inline
-  def INDEX_AND_WORKDIR: `0` = this.cast(0)
+  def INDEX_AND_WORKDIR: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def INDEX_ONLY: `1` = this.cast(1)
+  def INDEX_ONLY: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def WORKDIR_ONLY: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WORKDIR_ONLY: `2` = 2.asInstanceOf[`2`]
 }
 

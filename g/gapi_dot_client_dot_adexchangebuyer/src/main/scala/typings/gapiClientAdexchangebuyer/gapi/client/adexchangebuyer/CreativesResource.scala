@@ -35,7 +35,6 @@ object CreativesResource {
     removeDeal: AnonBuyerCreativeId => Request_[Unit]
   ): CreativesResource = {
     val __obj = js.Dynamic.literal(addDeal = js.Any.fromFunction1(addDeal), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), listDeals = js.Any.fromFunction1(listDeals), removeDeal = js.Any.fromFunction1(removeDeal))
-  
     __obj.asInstanceOf[CreativesResource]
   }
 }

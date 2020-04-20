@@ -19,7 +19,6 @@ object TimeseriesDescriptorsResource {
   @scala.inline
   def apply(list: AnonAggregator => Request_[ListTimeseriesDescriptorsResponse]): TimeseriesDescriptorsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[TimeseriesDescriptorsResource]
   }
 }

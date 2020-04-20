@@ -22,30 +22,28 @@ trait AnybarStatus extends js.Object
 
 object AnybarStatus {
   @scala.inline
-  def black: typings.anybar.anybarStrings.black = this.cast("black")
+  def black: typings.anybar.anybarStrings.black = "black".asInstanceOf[typings.anybar.anybarStrings.black]
   @scala.inline
-  def blue: typings.anybar.anybarStrings.blue = this.cast("blue")
+  def blue: typings.anybar.anybarStrings.blue = "blue".asInstanceOf[typings.anybar.anybarStrings.blue]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cyan: typings.anybar.anybarStrings.cyan = "cyan".asInstanceOf[typings.anybar.anybarStrings.cyan]
   @scala.inline
-  def cyan: typings.anybar.anybarStrings.cyan = this.cast("cyan")
+  def exclamation: typings.anybar.anybarStrings.exclamation = "exclamation".asInstanceOf[typings.anybar.anybarStrings.exclamation]
   @scala.inline
-  def exclamation: typings.anybar.anybarStrings.exclamation = this.cast("exclamation")
+  def green: typings.anybar.anybarStrings.green = "green".asInstanceOf[typings.anybar.anybarStrings.green]
   @scala.inline
-  def green: typings.anybar.anybarStrings.green = this.cast("green")
+  def orange: typings.anybar.anybarStrings.orange = "orange".asInstanceOf[typings.anybar.anybarStrings.orange]
   @scala.inline
-  def orange: typings.anybar.anybarStrings.orange = this.cast("orange")
+  def purple: typings.anybar.anybarStrings.purple = "purple".asInstanceOf[typings.anybar.anybarStrings.purple]
   @scala.inline
-  def purple: typings.anybar.anybarStrings.purple = this.cast("purple")
+  def question: typings.anybar.anybarStrings.question = "question".asInstanceOf[typings.anybar.anybarStrings.question]
   @scala.inline
-  def question: typings.anybar.anybarStrings.question = this.cast("question")
+  def quit: typings.anybar.anybarStrings.quit = "quit".asInstanceOf[typings.anybar.anybarStrings.quit]
   @scala.inline
-  def quit: typings.anybar.anybarStrings.quit = this.cast("quit")
+  def red: typings.anybar.anybarStrings.red = "red".asInstanceOf[typings.anybar.anybarStrings.red]
   @scala.inline
-  def red: typings.anybar.anybarStrings.red = this.cast("red")
+  def white: typings.anybar.anybarStrings.white = "white".asInstanceOf[typings.anybar.anybarStrings.white]
   @scala.inline
-  def white: typings.anybar.anybarStrings.white = this.cast("white")
-  @scala.inline
-  def yellow: typings.anybar.anybarStrings.yellow = this.cast("yellow")
+  def yellow: typings.anybar.anybarStrings.yellow = "yellow".asInstanceOf[typings.anybar.anybarStrings.yellow]
 }
 

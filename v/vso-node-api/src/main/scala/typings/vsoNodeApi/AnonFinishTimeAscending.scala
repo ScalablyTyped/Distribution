@@ -24,7 +24,6 @@ object AnonFinishTimeAscending {
     startTimeDescending: Double
   ): AnonFinishTimeAscending = {
     val __obj = js.Dynamic.literal(finishTimeAscending = finishTimeAscending.asInstanceOf[js.Any], finishTimeDescending = finishTimeDescending.asInstanceOf[js.Any], queueTimeAscending = queueTimeAscending.asInstanceOf[js.Any], queueTimeDescending = queueTimeDescending.asInstanceOf[js.Any], startTimeAscending = startTimeAscending.asInstanceOf[js.Any], startTimeDescending = startTimeDescending.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFinishTimeAscending]
   }
 }

@@ -13,7 +13,6 @@ object AnonPrintCount {
   @scala.inline
   def apply(Cancel: Double, PrintCount: Double): AnonPrintCount = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], PrintCount = PrintCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrintCount]
   }
 }

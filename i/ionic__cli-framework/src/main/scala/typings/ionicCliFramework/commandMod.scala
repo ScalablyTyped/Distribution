@@ -41,7 +41,7 @@ object commandMod extends js.Object {
   abstract class BaseNamespace[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends INamespace[C, N, M, I, O] {
     def this(parent: N) = this()
     @JSName("root")
-    def root_MBaseNamespace(): N = js.native
+    def root_MBaseNamespace: N = js.native
   }
   
   @js.native

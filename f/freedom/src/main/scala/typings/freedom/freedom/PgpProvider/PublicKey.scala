@@ -14,7 +14,6 @@ object PublicKey {
   @scala.inline
   def apply(fingerprint: String, key: String, words: js.Array[String]): PublicKey = {
     val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PublicKey]
   }
 }

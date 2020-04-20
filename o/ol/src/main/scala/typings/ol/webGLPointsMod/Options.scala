@@ -11,7 +11,9 @@ trait Options extends js.Object {
   var disableHitDetection: js.UndefOr[Boolean] = js.undefined
   var extent: js.UndefOr[Extent] = js.undefined
   var maxResolution: js.UndefOr[Double] = js.undefined
+  var maxZoom: js.UndefOr[Double] = js.undefined
   var minResolution: js.UndefOr[Double] = js.undefined
+  var minZoom: js.UndefOr[Double] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.undefined
   var style: LiteralStyle
@@ -27,7 +29,9 @@ object Options {
     disableHitDetection: js.UndefOr[Boolean] = js.undefined,
     extent: Extent = null,
     maxResolution: Int | Double = null,
+    maxZoom: Int | Double = null,
     minResolution: Int | Double = null,
+    minZoom: Int | Double = null,
     opacity: Int | Double = null,
     source: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] = null,
     visible: js.UndefOr[Boolean] = js.undefined,
@@ -38,7 +42,9 @@ object Options {
     if (!js.isUndefined(disableHitDetection)) __obj.updateDynamic("disableHitDetection")(disableHitDetection.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])

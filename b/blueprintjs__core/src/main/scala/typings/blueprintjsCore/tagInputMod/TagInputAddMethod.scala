@@ -13,12 +13,10 @@ trait TagInputAddMethod extends js.Object
 
 object TagInputAddMethod {
   @scala.inline
-  def blur: typings.blueprintjsCore.blueprintjsCoreStrings.blur = this.cast("blur")
+  def blur: typings.blueprintjsCore.blueprintjsCoreStrings.blur = "blur".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.blur]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.blueprintjsCore.blueprintjsCoreStrings.default = "default".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.default]
   @scala.inline
-  def default: typings.blueprintjsCore.blueprintjsCoreStrings.default = this.cast("default")
-  @scala.inline
-  def paste: typings.blueprintjsCore.blueprintjsCoreStrings.paste = this.cast("paste")
+  def paste: typings.blueprintjsCore.blueprintjsCoreStrings.paste = "paste".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.paste]
 }
 

@@ -12,7 +12,6 @@ object EventListenerObject {
   @scala.inline
   def apply[T /* <: ZeroClipboardEvent */](handleEvent: T => Unit): EventListenerObject[T] = {
     val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
-  
     __obj.asInstanceOf[EventListenerObject[T]]
   }
 }

@@ -12,7 +12,6 @@ object LazyComponentProps {
   @scala.inline
   def apply(scrollPosition: ScrollPosition): LazyComponentProps = {
     val __obj = js.Dynamic.literal(scrollPosition = scrollPosition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LazyComponentProps]
   }
 }

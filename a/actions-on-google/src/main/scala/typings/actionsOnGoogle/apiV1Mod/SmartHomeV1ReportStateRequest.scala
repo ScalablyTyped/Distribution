@@ -15,7 +15,6 @@ object SmartHomeV1ReportStateRequest {
   @scala.inline
   def apply(agentUserId: String, payload: AnonDevices, requestId: String): SmartHomeV1ReportStateRequest = {
     val __obj = js.Dynamic.literal(agentUserId = agentUserId.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1ReportStateRequest]
   }
 }

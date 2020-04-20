@@ -12,7 +12,6 @@ object calendarsSettings {
   @scala.inline
   def apply(standard: standardSettings): calendarsSettings = {
     val __obj = js.Dynamic.literal(standard = standard.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[calendarsSettings]
   }
 }

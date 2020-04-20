@@ -18,7 +18,6 @@ object Options {
   @scala.inline
   def apply(concurrency: Double): Options = {
     val __obj = js.Dynamic.literal(concurrency = concurrency.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

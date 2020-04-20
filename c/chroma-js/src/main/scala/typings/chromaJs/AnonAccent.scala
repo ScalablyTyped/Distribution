@@ -82,7 +82,6 @@ object AnonAccent {
     YlOrRd: js.Array[String]
   ): AnonAccent = {
     val __obj = js.Dynamic.literal(Accent = Accent.asInstanceOf[js.Any], Blues = Blues.asInstanceOf[js.Any], BrBG = BrBG.asInstanceOf[js.Any], BuGn = BuGn.asInstanceOf[js.Any], BuPu = BuPu.asInstanceOf[js.Any], Dark2 = Dark2.asInstanceOf[js.Any], GnBu = GnBu.asInstanceOf[js.Any], Greens = Greens.asInstanceOf[js.Any], Greys = Greys.asInstanceOf[js.Any], OrRd = OrRd.asInstanceOf[js.Any], Oranges = Oranges.asInstanceOf[js.Any], PRGn = PRGn.asInstanceOf[js.Any], Paired = Paired.asInstanceOf[js.Any], Pastel1 = Pastel1.asInstanceOf[js.Any], Pastel2 = Pastel2.asInstanceOf[js.Any], PiYG = PiYG.asInstanceOf[js.Any], PuBu = PuBu.asInstanceOf[js.Any], PuBuGn = PuBuGn.asInstanceOf[js.Any], PuOr = PuOr.asInstanceOf[js.Any], PuRd = PuRd.asInstanceOf[js.Any], Purples = Purples.asInstanceOf[js.Any], RdBu = RdBu.asInstanceOf[js.Any], RdGy = RdGy.asInstanceOf[js.Any], RdPu = RdPu.asInstanceOf[js.Any], RdYlBu = RdYlBu.asInstanceOf[js.Any], RdYlGn = RdYlGn.asInstanceOf[js.Any], Reds = Reds.asInstanceOf[js.Any], Set1 = Set1.asInstanceOf[js.Any], Set2 = Set2.asInstanceOf[js.Any], Set3 = Set3.asInstanceOf[js.Any], Spectral = Spectral.asInstanceOf[js.Any], YlGn = YlGn.asInstanceOf[js.Any], YlGnBu = YlGnBu.asInstanceOf[js.Any], YlOrBr = YlOrBr.asInstanceOf[js.Any], YlOrRd = YlOrRd.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccent]
   }
 }

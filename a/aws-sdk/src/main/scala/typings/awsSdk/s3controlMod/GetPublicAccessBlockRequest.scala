@@ -16,7 +16,6 @@ object GetPublicAccessBlockRequest {
   @scala.inline
   def apply(AccountId: AccountId): GetPublicAccessBlockRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPublicAccessBlockRequest]
   }
 }

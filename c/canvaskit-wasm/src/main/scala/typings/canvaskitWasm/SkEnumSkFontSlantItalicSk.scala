@@ -17,7 +17,6 @@ object SkEnumSkFontSlantItalicSk {
   @scala.inline
   def apply(Italic: SkFontSlant, Oblique: SkFontSlant, Upright: SkFontSlant, values: js.Array[SkFontSlant]): SkEnumSkFontSlantItalicSk = {
     val __obj = js.Dynamic.literal(Italic = Italic.asInstanceOf[js.Any], Oblique = Oblique.asInstanceOf[js.Any], Upright = Upright.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkFontSlantItalicSk]
   }
 }

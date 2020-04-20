@@ -33,7 +33,6 @@ object GetDomainVpcOption {
     vpcId: String
   ): GetDomainVpcOption = {
     val __obj = js.Dynamic.literal(availabilityZones = availabilityZones.asInstanceOf[js.Any], securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainVpcOption]
   }
 }

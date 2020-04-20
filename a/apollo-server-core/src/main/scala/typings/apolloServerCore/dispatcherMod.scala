@@ -14,7 +14,7 @@ object dispatcherMod extends js.Object {
   class Dispatcher[T /* <: GraphQLRequestListener[Record[String, _]] */] protected () extends js.Object {
     def this(targets: js.Array[T]) = this()
     var targets: js.Array[T] = js.native
-    def invokeDidStartHook[TMethodName /* <: String */, TEndHookArgs /* <: Args[
+    def invokeDidStartHook[TMethodName /* <: /* keyof T */ String */, TEndHookArgs /* <: Args[
         ReturnType[
           AsFunction[
             /* import warning: importer.ImportType#apply Failed type conversion: T[TMethodName] */ js.Any
@@ -26,7 +26,7 @@ object dispatcherMod extends js.Object {
           /* import warning: importer.ImportType#apply Failed type conversion: T[TMethodName] */ js.Any
         ]
     ): DidEndHook[TEndHookArgs] = js.native
-    def invokeHookAsync[TMethodName /* <: String */](
+    def invokeHookAsync[TMethodName /* <: /* keyof T */ String */](
       methodName: TMethodName,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<T[TMethodName]> is not an array type */ args: Args[
           /* import warning: importer.ImportType#apply Failed type conversion: T[TMethodName] */ js.Any
@@ -42,7 +42,7 @@ object dispatcherMod extends js.Object {
           ]
         ]
       ] = js.native
-    def invokeHooksUntilNonNull[TMethodName /* <: String */](
+    def invokeHooksUntilNonNull[TMethodName /* <: /* keyof T */ String */](
       methodName: TMethodName,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<T[TMethodName]> is not an array type */ args: Args[
           /* import warning: importer.ImportType#apply Failed type conversion: T[TMethodName] */ js.Any

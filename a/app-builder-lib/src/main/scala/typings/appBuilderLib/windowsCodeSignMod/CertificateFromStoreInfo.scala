@@ -15,7 +15,6 @@ object CertificateFromStoreInfo {
   @scala.inline
   def apply(isLocalMachineStore: Boolean, store: String, subject: String, thumbprint: String): CertificateFromStoreInfo = {
     val __obj = js.Dynamic.literal(isLocalMachineStore = isLocalMachineStore.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], thumbprint = thumbprint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateFromStoreInfo]
   }
 }

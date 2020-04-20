@@ -14,7 +14,6 @@ object Anon1 {
   @scala.inline
   def apply(removed: `0` | `1`): Anon1 = {
     val __obj = js.Dynamic.literal(removed = removed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon1]
   }
 }

@@ -129,7 +129,7 @@ object intlRelativeformatStrings {
        with SUPPORTED_FIELD
   
   @scala.inline
-  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
+  def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline

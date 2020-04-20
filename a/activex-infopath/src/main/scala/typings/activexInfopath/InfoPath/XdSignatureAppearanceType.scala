@@ -14,10 +14,8 @@ trait XdSignatureAppearanceType extends js.Object
 
 object XdSignatureAppearanceType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xdSignatureAppearanceTypeLine: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xdSignatureAppearanceTypeLine: `0` = this.cast(0)
-  @scala.inline
-  def xdSignatureAppearanceTypeStamp: `1` = this.cast(1)
+  def xdSignatureAppearanceTypeStamp: `1` = 1.asInstanceOf[`1`]
 }
 

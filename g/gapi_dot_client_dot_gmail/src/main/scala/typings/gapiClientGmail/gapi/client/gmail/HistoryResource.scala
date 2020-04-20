@@ -15,7 +15,6 @@ object HistoryResource {
   @scala.inline
   def apply(list: AnonHistoryTypes => Request_[ListHistoryResponse]): HistoryResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[HistoryResource]
   }
 }

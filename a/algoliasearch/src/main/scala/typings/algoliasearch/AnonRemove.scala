@@ -16,7 +16,6 @@ object AnonRemove {
   @scala.inline
   def apply(remove: js.Array[String]): AnonRemove = {
     val __obj = js.Dynamic.literal(remove = remove.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRemove]
   }
 }

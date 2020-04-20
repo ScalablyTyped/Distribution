@@ -22,7 +22,6 @@ object AnonAnimationDuration {
     promotedLink: AnonStartConnectorType
   ): AnonAnimationDuration = {
     val __obj = js.Dynamic.literal(animationDuration = animationDuration.asInstanceOf[js.Any], hoverBehaviorDelay = hoverBehaviorDelay.asInstanceOf[js.Any], linkDefaults = linkDefaults.asInstanceOf[js.Any], nodeDefaults = nodeDefaults.asInstanceOf[js.Any], promotedLink = promotedLink.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimationDuration]
   }
 }

@@ -22,7 +22,6 @@ object ObjectExplorerContext {
   @scala.inline
   def apply(connectionProfile: IConnectionProfile, isConnectionNode: Boolean, nodeInfo: NodeInfo): ObjectExplorerContext = {
     val __obj = js.Dynamic.literal(connectionProfile = connectionProfile.asInstanceOf[js.Any], isConnectionNode = isConnectionNode.asInstanceOf[js.Any], nodeInfo = nodeInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectExplorerContext]
   }
 }

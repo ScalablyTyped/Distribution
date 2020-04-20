@@ -16,12 +16,10 @@ trait XlThemeFont extends js.Object
 
 object XlThemeFont {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlThemeFontMajor: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlThemeFontMajor: `1` = this.cast(1)
+  def xlThemeFontMinor: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlThemeFontMinor: `2` = this.cast(2)
-  @scala.inline
-  def xlThemeFontNone: `0` = this.cast(0)
+  def xlThemeFontNone: `0` = 0.asInstanceOf[`0`]
 }
 

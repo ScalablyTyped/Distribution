@@ -13,7 +13,6 @@ object ResolvedUserAgent {
   @scala.inline
   def apply(family: String, version: String): ResolvedUserAgent = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolvedUserAgent]
   }
 }

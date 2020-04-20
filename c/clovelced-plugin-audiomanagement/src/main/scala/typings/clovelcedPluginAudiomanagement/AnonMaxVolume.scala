@@ -12,7 +12,6 @@ object AnonMaxVolume {
   @scala.inline
   def apply(maxVolume: Double): AnonMaxVolume = {
     val __obj = js.Dynamic.literal(maxVolume = maxVolume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaxVolume]
   }
 }

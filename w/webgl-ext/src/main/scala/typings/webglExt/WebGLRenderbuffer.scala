@@ -12,7 +12,6 @@ object WebGLRenderbuffer {
   @scala.inline
   def apply(__WebGLRenderbuffer: Unit): WebGLRenderbuffer = {
     val __obj = js.Dynamic.literal(__WebGLRenderbuffer = __WebGLRenderbuffer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebGLRenderbuffer]
   }
 }

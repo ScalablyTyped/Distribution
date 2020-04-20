@@ -33,7 +33,6 @@ object UpdateNotificationRequest {
     OldNotification: Notification
   ): UpdateNotificationRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any], NewNotification = NewNotification.asInstanceOf[js.Any], OldNotification = OldNotification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateNotificationRequest]
   }
 }

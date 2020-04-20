@@ -134,13 +134,13 @@ object semanticUiModalStrings {
   @scala.inline
   def allowMultiple: allowMultiple = "allowMultiple".asInstanceOf[allowMultiple]
   @scala.inline
-  def `attach events`: `attach events` = "attach events".asInstanceOf[`attach events`]
+  def `attach events`: `attach events` = ("attach events").asInstanceOf[`attach events`]
   @scala.inline
   def autofocus: autofocus = "autofocus".asInstanceOf[autofocus]
   @scala.inline
-  def `cache sizes`: `cache sizes` = "cache sizes".asInstanceOf[`cache sizes`]
+  def `cache sizes`: `cache sizes` = ("cache sizes").asInstanceOf[`cache sizes`]
   @scala.inline
-  def `can fit`: `can fit` = "can fit".asInstanceOf[`can fit`]
+  def `can fit`: `can fit` = ("can fit").asInstanceOf[`can fit`]
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
@@ -162,13 +162,13 @@ object semanticUiModalStrings {
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
-  def `hide all`: `hide all` = "hide all".asInstanceOf[`hide all`]
+  def `hide all`: `hide all` = ("hide all").asInstanceOf[`hide all`]
   @scala.inline
-  def `hide dimmer`: `hide dimmer` = "hide dimmer".asInstanceOf[`hide dimmer`]
+  def `hide dimmer`: `hide dimmer` = ("hide dimmer").asInstanceOf[`hide dimmer`]
   @scala.inline
-  def `hide others`: `hide others` = "hide others".asInstanceOf[`hide others`]
+  def `hide others`: `hide others` = ("hide others").asInstanceOf[`hide others`]
   @scala.inline
-  def `is active`: `is active` = "is active".asInstanceOf[`is active`]
+  def `is active`: `is active` = ("is active").asInstanceOf[`is active`]
   @scala.inline
   def keyboardShortcuts: keyboardShortcuts = "keyboardShortcuts".asInstanceOf[keyboardShortcuts]
   @scala.inline
@@ -200,13 +200,13 @@ object semanticUiModalStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set active`: `set active` = "set active".asInstanceOf[`set active`]
+  def `set active`: `set active` = ("set active").asInstanceOf[`set active`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   @scala.inline
-  def `show dimmer`: `show dimmer` = "show dimmer".asInstanceOf[`show dimmer`]
+  def `show dimmer`: `show dimmer` = ("show dimmer").asInstanceOf[`show dimmer`]
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline

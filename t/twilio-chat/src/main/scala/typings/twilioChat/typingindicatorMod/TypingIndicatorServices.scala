@@ -15,7 +15,6 @@ object TypingIndicatorServices {
   @scala.inline
   def apply(notificationClient: Notifications, transport: Transport): TypingIndicatorServices = {
     val __obj = js.Dynamic.literal(notificationClient = notificationClient.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypingIndicatorServices]
   }
 }

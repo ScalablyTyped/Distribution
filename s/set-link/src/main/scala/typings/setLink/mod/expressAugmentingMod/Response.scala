@@ -12,7 +12,6 @@ object Response {
   @scala.inline
   def apply(setLink: (String, String) => Unit): Response = {
     val __obj = js.Dynamic.literal(setLink = js.Any.fromFunction2(setLink))
-  
     __obj.asInstanceOf[Response]
   }
 }

@@ -15,7 +15,6 @@ object CacheKey {
   @scala.inline
   def apply(id: String, segment: String): CacheKey = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CacheKey]
   }
 }

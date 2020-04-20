@@ -20,7 +20,6 @@ object TypeofauthRadius {
     www_authorize_user: (String, String) => Double
   ): TypeofauthRadius = {
     val __obj = js.Dynamic.literal(proxy_authorize = js.Any.fromFunction1(proxy_authorize), proxy_authorize_user = js.Any.fromFunction2(proxy_authorize_user), www_authorize = js.Any.fromFunction1(www_authorize), www_authorize_user = js.Any.fromFunction2(www_authorize_user))
-  
     __obj.asInstanceOf[TypeofauthRadius]
   }
 }

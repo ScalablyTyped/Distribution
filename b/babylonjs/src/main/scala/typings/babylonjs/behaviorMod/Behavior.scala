@@ -26,7 +26,6 @@ object Behavior {
   @scala.inline
   def apply[T](attach: T => Unit, detach: () => Unit, init: () => Unit, name: String): Behavior[T] = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), detach = js.Any.fromFunction0(detach), init = js.Any.fromFunction0(init), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Behavior[T]]
   }
 }

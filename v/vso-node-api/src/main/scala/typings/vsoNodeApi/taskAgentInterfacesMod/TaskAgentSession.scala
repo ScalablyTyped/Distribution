@@ -35,7 +35,6 @@ object TaskAgentSession {
     systemCapabilities: StringDictionary[String]
   ): TaskAgentSession = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], encryptionKey = encryptionKey.asInstanceOf[js.Any], ownerName = ownerName.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], systemCapabilities = systemCapabilities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskAgentSession]
   }
 }

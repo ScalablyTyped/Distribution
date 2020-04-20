@@ -13,7 +13,6 @@ object Deployer_ {
   @scala.inline
   def apply(register: (String, js.Function1[/* args */ Config, Unit]) => Unit): Deployer_ = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
-  
     __obj.asInstanceOf[Deployer_]
   }
 }

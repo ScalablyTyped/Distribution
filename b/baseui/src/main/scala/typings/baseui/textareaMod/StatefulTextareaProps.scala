@@ -29,6 +29,7 @@ import scala.scalajs.js.annotation._
 trait StatefulTextareaProps extends js.Object {
   var adjoined: js.UndefOr[none | left | right | both] = js.undefined
   var `aria-describedby`: js.UndefOr[String] = js.undefined
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   var `aria-label`: js.UndefOr[String] = js.undefined
   var `aria-labelledby`: js.UndefOr[String] = js.undefined
   var autoComplete: js.UndefOr[String] = js.undefined
@@ -52,6 +53,7 @@ trait StatefulTextareaProps extends js.Object {
   var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] = js.undefined
   var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] = js.undefined
   var overrides: js.UndefOr[BaseInputOverrides[SharedProps]] = js.undefined
+  var pattern: js.UndefOr[String] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var positive: js.UndefOr[Boolean] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
@@ -67,6 +69,7 @@ object StatefulTextareaProps {
   def apply(
     adjoined: none | left | right | both = null,
     `aria-describedby`: String = null,
+    `aria-errormessage`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
     autoComplete: String = null,
@@ -90,6 +93,7 @@ object StatefulTextareaProps {
     onKeyPress: KeyboardEvent[HTMLTextAreaElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLTextAreaElement] => Unit = null,
     overrides: BaseInputOverrides[SharedProps] = null,
+    pattern: String = null,
     placeholder: String = null,
     positive: js.UndefOr[Boolean] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,
@@ -102,6 +106,7 @@ object StatefulTextareaProps {
     val __obj = js.Dynamic.literal()
     if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
+    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
@@ -125,6 +130,7 @@ object StatefulTextareaProps {
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])

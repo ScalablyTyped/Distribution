@@ -16,7 +16,6 @@ object VerifyDomainIdentityResponse {
   @scala.inline
   def apply(VerificationToken: VerificationToken): VerifyDomainIdentityResponse = {
     val __obj = js.Dynamic.literal(VerificationToken = VerificationToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyDomainIdentityResponse]
   }
 }

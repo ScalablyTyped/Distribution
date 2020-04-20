@@ -19,7 +19,6 @@ object PerfMetricsSummaryResource {
   @scala.inline
   def apply(create: AnonFields => Request_[PerfMetricsSummary]): PerfMetricsSummaryResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[PerfMetricsSummaryResource]
   }
 }

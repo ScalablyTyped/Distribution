@@ -19,7 +19,6 @@ object RunFilter {
   @scala.inline
   def apply(sourceFilter: String, testCaseFilter: String): RunFilter = {
     val __obj = js.Dynamic.literal(sourceFilter = sourceFilter.asInstanceOf[js.Any], testCaseFilter = testCaseFilter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunFilter]
   }
 }

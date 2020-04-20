@@ -36,7 +36,6 @@ object GitForkSyncRequest {
     status: GitAsyncOperationStatus
   ): GitForkSyncRequest = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], detailedStatus = detailedStatus.asInstanceOf[js.Any], operationId = operationId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceToTargetRefs = sourceToTargetRefs.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitForkSyncRequest]
   }
 }

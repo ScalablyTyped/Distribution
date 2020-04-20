@@ -19,7 +19,6 @@ object ReplaceComponentRendererArgs {
     props: PageProps[js.Object, js.Object]
   ): ReplaceComponentRendererArgs = {
     val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname.asInstanceOf[js.Any], getResourcesForPathname = getResourcesForPathname.asInstanceOf[js.Any], getResourcesForPathnameSync = getResourcesForPathnameSync.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplaceComponentRendererArgs]
   }
 }

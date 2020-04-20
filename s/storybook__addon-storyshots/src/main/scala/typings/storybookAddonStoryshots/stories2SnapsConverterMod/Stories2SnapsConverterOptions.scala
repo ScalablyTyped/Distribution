@@ -14,7 +14,6 @@ object Stories2SnapsConverterOptions {
   @scala.inline
   def apply(snapshotExtension: String, snapshotsDirName: String, storiesExtensions: js.Array[String]): Stories2SnapsConverterOptions = {
     val __obj = js.Dynamic.literal(snapshotExtension = snapshotExtension.asInstanceOf[js.Any], snapshotsDirName = snapshotsDirName.asInstanceOf[js.Any], storiesExtensions = storiesExtensions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Stories2SnapsConverterOptions]
   }
 }

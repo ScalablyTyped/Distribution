@@ -20,7 +20,6 @@ object DeleteMessageBatchRequest {
   @scala.inline
   def apply(Entries: DeleteMessageBatchRequestEntryList, QueueUrl: String): DeleteMessageBatchRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMessageBatchRequest]
   }
 }

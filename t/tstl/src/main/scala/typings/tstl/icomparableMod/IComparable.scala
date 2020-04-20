@@ -18,7 +18,6 @@ object IComparable {
   @scala.inline
   def apply[T](less: T => Boolean): IComparable[T] = {
     val __obj = js.Dynamic.literal(less = js.Any.fromFunction1(less))
-  
     __obj.asInstanceOf[IComparable[T]]
   }
 }

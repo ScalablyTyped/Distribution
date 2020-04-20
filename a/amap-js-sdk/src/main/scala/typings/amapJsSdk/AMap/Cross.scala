@@ -26,7 +26,6 @@ object Cross {
     second_name: String
   ): Cross = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], first_id = first_id.asInstanceOf[js.Any], first_name = first_name.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], second_id = second_id.asInstanceOf[js.Any], second_name = second_name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Cross]
   }
 }

@@ -14,7 +14,6 @@ object AnonCancelPvWindow {
   @scala.inline
   def apply(Cancel: Boolean, PvWindow: ProtectedViewWindow): AnonCancelPvWindow = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], PvWindow = PvWindow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelPvWindow]
   }
 }

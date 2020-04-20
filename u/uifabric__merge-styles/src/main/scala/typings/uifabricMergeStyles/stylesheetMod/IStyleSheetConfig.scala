@@ -1,10 +1,15 @@
 package typings.uifabricMergeStyles.stylesheetMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IStyleSheetConfig extends js.Object {
+  /**
+    * Initial value for classnames cache. Key is serialized css rules associated with a classname.
+    */
+  var classNameCache: js.UndefOr[StringDictionary[String]] = js.undefined
   /**
     * CSP settings
     */
@@ -38,6 +43,7 @@ trait IStyleSheetConfig extends js.Object {
 object IStyleSheetConfig {
   @scala.inline
   def apply(
+    classNameCache: StringDictionary[String] = null,
     cspSettings: ICSPSettings = null,
     defaultPrefix: String = null,
     injectionMode: InjectionMode = null,
@@ -46,6 +52,7 @@ object IStyleSheetConfig {
     rtl: js.UndefOr[Boolean] = js.undefined
   ): IStyleSheetConfig = {
     val __obj = js.Dynamic.literal()
+    if (classNameCache != null) __obj.updateDynamic("classNameCache")(classNameCache.asInstanceOf[js.Any])
     if (cspSettings != null) __obj.updateDynamic("cspSettings")(cspSettings.asInstanceOf[js.Any])
     if (defaultPrefix != null) __obj.updateDynamic("defaultPrefix")(defaultPrefix.asInstanceOf[js.Any])
     if (injectionMode != null) __obj.updateDynamic("injectionMode")(injectionMode.asInstanceOf[js.Any])

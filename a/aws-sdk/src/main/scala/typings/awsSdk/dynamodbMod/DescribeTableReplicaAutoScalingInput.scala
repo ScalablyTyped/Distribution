@@ -16,7 +16,6 @@ object DescribeTableReplicaAutoScalingInput {
   @scala.inline
   def apply(TableName: TableName): DescribeTableReplicaAutoScalingInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTableReplicaAutoScalingInput]
   }
 }

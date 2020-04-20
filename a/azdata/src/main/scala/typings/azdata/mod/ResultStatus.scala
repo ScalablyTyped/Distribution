@@ -13,7 +13,6 @@ object ResultStatus {
   @scala.inline
   def apply(errorMessage: String, success: Boolean): ResultStatus = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultStatus]
   }
 }

@@ -14,7 +14,6 @@ object OpaqueFileSizes {
   @scala.inline
   def apply(root: String, sizes: Record[String, Double]): OpaqueFileSizes = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpaqueFileSizes]
   }
 }

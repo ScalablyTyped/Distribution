@@ -15,7 +15,6 @@ object MergeTag {
   @scala.inline
   def SimpleMergeTag(name: String, value: String): MergeTag = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MergeTag]
   }
   @scala.inline
@@ -27,7 +26,6 @@ object MergeTag {
   @scala.inline
   def GroupedMergeTag(mergeTags: js.Array[SimpleMergeTag | typings.reactEmailEditor.mod.GroupedMergeTag], name: String): MergeTag = {
     val __obj = js.Dynamic.literal(mergeTags = mergeTags.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MergeTag]
   }
 }

@@ -15,7 +15,6 @@ object LocationsResource {
   @scala.inline
   def apply(list: AnonBearertoken => Request_[ListLocationsResponse]): LocationsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[LocationsResource]
   }
 }

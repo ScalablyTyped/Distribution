@@ -22,7 +22,6 @@ object ResponseParser {
   @scala.inline
   def apply[StreamType](parse: (OperationModel, HttpResponse[StreamType]) => js.Promise[js.Any]): ResponseParser[StreamType] = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction2(parse))
-  
     __obj.asInstanceOf[ResponseParser[StreamType]]
   }
 }

@@ -14,7 +14,6 @@ object AnonFrameBuffer {
   @scala.inline
   def apply(frameBuffer: ArrayBuffer, isLastFrame: Boolean): AnonFrameBuffer = {
     val __obj = js.Dynamic.literal(frameBuffer = frameBuffer.asInstanceOf[js.Any], isLastFrame = isLastFrame.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFrameBuffer]
   }
 }

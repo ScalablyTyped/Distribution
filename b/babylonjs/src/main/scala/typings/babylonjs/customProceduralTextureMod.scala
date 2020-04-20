@@ -42,7 +42,7 @@ object customProceduralTextureMod extends js.Object {
     /**
       * Define if the texture animates or not.
       */
-    def animate(): Boolean = js.native
+    def animate: Boolean = js.native
     def animate(value: Boolean): js.Any = js.native
     /**
       * Update the uniform values of the procedural texture in the shader.

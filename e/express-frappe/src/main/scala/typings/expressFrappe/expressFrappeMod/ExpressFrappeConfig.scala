@@ -9,6 +9,7 @@ import typings.expressRouters.expressRoutersMod.RouteConfig
 import typings.expressRouters.expressRoutersMod.RouteConfigAlternative
 import typings.expressServeStaticCore.mod.NextFunction
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import scala.scalajs.js
@@ -18,9 +19,9 @@ import scala.scalajs.js.annotation._
 trait ExpressFrappeConfig extends js.Object {
   var bodyParser: js.UndefOr[Boolean | AnonJson] = js.undefined
   var cors: js.UndefOr[Boolean | CorsOptions] = js.undefined
-  var errorHandler: js.UndefOr[ErrorRequestHandler[ParamsDictionary]] = js.undefined
+  var errorHandler: js.UndefOr[ErrorRequestHandler[ParamsDictionary, _, _, Query]] = js.undefined
   var io: js.UndefOr[ExpressFrappeSocketIOConfig] = js.undefined
-  var middleware: js.UndefOr[js.Array[RequestHandler[ParamsDictionary]]] = js.undefined
+  var middleware: js.UndefOr[js.Array[RequestHandler[ParamsDictionary, _, _, Query]]] = js.undefined
   var morgan: js.UndefOr[Boolean] = js.undefined
   var routes: js.UndefOr[js.Array[RouteConfig] | RouteConfigAlternative] = js.undefined
   var static: js.UndefOr[String | AnonOptions] = js.undefined
@@ -31,9 +32,9 @@ object ExpressFrappeConfig {
   def apply(
     bodyParser: Boolean | AnonJson = null,
     cors: Boolean | CorsOptions = null,
-    errorHandler: (/* err */ js.Any, /* req */ Request[ParamsDictionary, js.Any, js.Any], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
+    errorHandler: (/* err */ js.Any, /* req */ Request[ParamsDictionary, _, _, Query], /* res */ Response[_], /* next */ NextFunction) => js.Any = null,
     io: ExpressFrappeSocketIOConfig = null,
-    middleware: js.Array[RequestHandler[ParamsDictionary]] = null,
+    middleware: js.Array[RequestHandler[ParamsDictionary, _, _, Query]] = null,
     morgan: js.UndefOr[Boolean] = js.undefined,
     routes: js.Array[RouteConfig] | RouteConfigAlternative = null,
     static: String | AnonOptions = null

@@ -20,7 +20,6 @@ object DeleteLinkRequest {
   @scala.inline
   def apply(GlobalNetworkId: String, LinkId: String): DeleteLinkRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any], LinkId = LinkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLinkRequest]
   }
 }

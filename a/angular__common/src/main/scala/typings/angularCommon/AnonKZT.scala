@@ -22,7 +22,6 @@ object AnonKZT {
     TWD: js.Array[String]
   ): AnonKZT = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], KZT = KZT.asInstanceOf[js.Any], RUB = RUB.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKZT]
   }
 }

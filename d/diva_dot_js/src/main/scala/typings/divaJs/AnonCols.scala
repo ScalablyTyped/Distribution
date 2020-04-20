@@ -15,7 +15,6 @@ object AnonCols {
   @scala.inline
   def apply(cols: Double, rows: Double, tiles: AnonCol, zoomLevel: Double): AnonCols = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], tiles = tiles.asInstanceOf[js.Any], zoomLevel = zoomLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCols]
   }
 }

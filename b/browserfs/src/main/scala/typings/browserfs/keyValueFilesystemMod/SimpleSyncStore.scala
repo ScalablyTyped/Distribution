@@ -15,7 +15,6 @@ object SimpleSyncStore {
   @scala.inline
   def apply(del: String => Unit, get: String => js.UndefOr[Buffer], put: (String, Buffer, Boolean) => Boolean): SimpleSyncStore = {
     val __obj = js.Dynamic.literal(del = js.Any.fromFunction1(del), get = js.Any.fromFunction1(get), put = js.Any.fromFunction3(put))
-  
     __obj.asInstanceOf[SimpleSyncStore]
   }
 }

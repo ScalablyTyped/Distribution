@@ -15,7 +15,6 @@ object AnonAnd {
   @scala.inline
   def apply($and: js.Any, $or: js.Any): AnonAnd = {
     val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any], $or = $or.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnd]
   }
 }

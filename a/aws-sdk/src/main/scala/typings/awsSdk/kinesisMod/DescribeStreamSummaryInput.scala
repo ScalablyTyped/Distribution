@@ -16,7 +16,6 @@ object DescribeStreamSummaryInput {
   @scala.inline
   def apply(StreamName: StreamName): DescribeStreamSummaryInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStreamSummaryInput]
   }
 }

@@ -13,7 +13,6 @@ object IColorRectangleState {
   @scala.inline
   def apply(color: IColor): IColorRectangleState = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IColorRectangleState]
   }
 }

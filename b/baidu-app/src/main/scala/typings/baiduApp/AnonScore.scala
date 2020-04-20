@@ -15,7 +15,6 @@ object AnonScore {
   @scala.inline
   def apply(name: Double, score: Double): AnonScore = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScore]
   }
 }

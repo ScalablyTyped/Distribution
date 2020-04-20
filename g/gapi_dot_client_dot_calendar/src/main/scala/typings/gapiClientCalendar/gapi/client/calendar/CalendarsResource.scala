@@ -33,7 +33,6 @@ object CalendarsResource {
     update: AnonCalendarId => Request_[Calendar]
   ): CalendarsResource = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[CalendarsResource]
   }
 }

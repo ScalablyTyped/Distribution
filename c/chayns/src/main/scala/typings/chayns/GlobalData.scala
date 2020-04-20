@@ -12,7 +12,6 @@ object GlobalData {
   @scala.inline
   def apply(_result: js.Any): GlobalData = {
     val __obj = js.Dynamic.literal(_result = _result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlobalData]
   }
 }

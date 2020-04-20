@@ -33,7 +33,7 @@ object applicationMod extends js.Object {
     var renderer: Renderer = js.native
     var serializer: Serializer = js.native
     @JSName("application")
-    def application_MApplication(): Application = js.native
+    def application_MApplication: Application = js.native
     def bootstrap(): AnonHasErrors = js.native
     def bootstrap(options: Partial[TypeDocAndTSOptions]): AnonHasErrors = js.native
     def convert(src: js.Array[String]): js.UndefOr[ProjectReflection] = js.native

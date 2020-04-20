@@ -17,20 +17,18 @@ trait DeviceManagementSubscriptionState extends js.Object
 
 object DeviceManagementSubscriptionState {
   @scala.inline
-  def active: typings.microsoftGraph.microsoftGraphStrings.active = this.cast("active")
+  def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
   @scala.inline
-  def blocked: typings.microsoftGraph.microsoftGraphStrings.blocked = this.cast("blocked")
+  def blocked: typings.microsoftGraph.microsoftGraphStrings.blocked = "blocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blocked]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = "deleted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deleted]
   @scala.inline
-  def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = this.cast("deleted")
+  def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
   @scala.inline
-  def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = this.cast("disabled")
+  def lockedOut: typings.microsoftGraph.microsoftGraphStrings.lockedOut = "lockedOut".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lockedOut]
   @scala.inline
-  def lockedOut: typings.microsoftGraph.microsoftGraphStrings.lockedOut = this.cast("lockedOut")
+  def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
   @scala.inline
-  def pending: typings.microsoftGraph.microsoftGraphStrings.pending = this.cast("pending")
-  @scala.inline
-  def warning: typings.microsoftGraph.microsoftGraphStrings.warning = this.cast("warning")
+  def warning: typings.microsoftGraph.microsoftGraphStrings.warning = "warning".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.warning]
 }
 

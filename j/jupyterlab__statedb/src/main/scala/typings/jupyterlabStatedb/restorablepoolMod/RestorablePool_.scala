@@ -101,12 +101,12 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     * It will not fire if an object injected into the pool.
     */
   @JSName("added")
-  def added_MRestorablePool_(): ISignal[this.type, T] = js.native
+  def added_MRestorablePool_ : ISignal[this.type, T] = js.native
   /**
     * A signal emitted when the current widget changes.
     */
   @JSName("currentChanged")
-  def currentChanged_MRestorablePool_(): ISignal[this.type, T | Null] = js.native
+  def currentChanged_MRestorablePool_ : ISignal[this.type, T | Null] = js.native
   @JSName("current")
   def current_MRestorablePool_(): js.Any = js.native
   @JSName("current")
@@ -121,7 +121,7 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     * no-op.
     */
   @JSName("current")
-  def current_Union(): T | Null = js.native
+  def current_Union: T | Null = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -177,7 +177,7 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     * Test whether the pool is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MRestorablePool_(): Boolean = js.native
+  def isDisposed_MRestorablePool_ : Boolean = js.native
   /**
     * Restore the objects in this restorable collection.
     *
@@ -192,7 +192,7 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     * A promise resolved when the restorable pool has been restored.
     */
   @JSName("restored")
-  def restored_MRestorablePool_(): js.Promise[Unit] = js.native
+  def restored_MRestorablePool_ : js.Promise[Unit] = js.native
   /**
     * Save the restore data for a given object.
     *
@@ -203,11 +203,11 @@ class RestorablePool_[T /* <: IObservableDisposable */] protected ()
     * The number of objects held by the pool.
     */
   @JSName("size")
-  def size_MRestorablePool_(): Double = js.native
+  def size_MRestorablePool_ : Double = js.native
   /**
     * A signal emitted when an object is updated.
     */
   @JSName("updated")
-  def updated_MRestorablePool_(): ISignal[this.type, T] = js.native
+  def updated_MRestorablePool_ : ISignal[this.type, T] = js.native
 }
 

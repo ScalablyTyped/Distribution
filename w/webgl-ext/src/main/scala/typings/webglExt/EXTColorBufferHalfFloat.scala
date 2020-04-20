@@ -21,7 +21,6 @@ object EXTColorBufferHalfFloat {
     UNSIGNED_NORMALIZED_EXT: Double
   ): EXTColorBufferHalfFloat = {
     val __obj = js.Dynamic.literal(FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT = FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT.asInstanceOf[js.Any], RGB16F_EXT = RGB16F_EXT.asInstanceOf[js.Any], RGBA16F_EXT = RGBA16F_EXT.asInstanceOf[js.Any], UNSIGNED_NORMALIZED_EXT = UNSIGNED_NORMALIZED_EXT.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EXTColorBufferHalfFloat]
   }
 }

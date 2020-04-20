@@ -16,7 +16,6 @@ object GetTestGridProjectRequest {
   @scala.inline
   def apply(projectArn: DeviceFarmArn): GetTestGridProjectRequest = {
     val __obj = js.Dynamic.literal(projectArn = projectArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTestGridProjectRequest]
   }
 }

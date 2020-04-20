@@ -20,7 +20,6 @@ object EnableIoTLoggingParams {
   @scala.inline
   def apply(logLevel: LogLevel, roleArnForLogging: RoleArn): EnableIoTLoggingParams = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any], roleArnForLogging = roleArnForLogging.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableIoTLoggingParams]
   }
 }

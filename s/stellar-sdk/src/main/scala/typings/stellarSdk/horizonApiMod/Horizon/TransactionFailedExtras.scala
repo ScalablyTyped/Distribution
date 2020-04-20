@@ -15,7 +15,6 @@ object TransactionFailedExtras {
   @scala.inline
   def apply(envelope_xdr: String, result_codes: AnonOperations, result_xdr: String): TransactionFailedExtras = {
     val __obj = js.Dynamic.literal(envelope_xdr = envelope_xdr.asInstanceOf[js.Any], result_codes = result_codes.asInstanceOf[js.Any], result_xdr = result_xdr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransactionFailedExtras]
   }
 }

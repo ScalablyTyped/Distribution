@@ -16,12 +16,10 @@ trait XlPivotFieldDataType extends js.Object
 
 object XlPivotFieldDataType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlDate: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlDate: `2` = this.cast(2)
+  def xlNumber: `-4145` = -4145.asInstanceOf[`-4145`]
   @scala.inline
-  def xlNumber: `-4145` = this.cast(-4145)
-  @scala.inline
-  def xlText: `-4158` = this.cast(-4158)
+  def xlText: `-4158` = -4158.asInstanceOf[`-4158`]
 }
 

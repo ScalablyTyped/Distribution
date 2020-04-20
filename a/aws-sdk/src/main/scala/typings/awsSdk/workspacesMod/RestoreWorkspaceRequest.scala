@@ -16,7 +16,6 @@ object RestoreWorkspaceRequest {
   @scala.inline
   def apply(WorkspaceId: WorkspaceId): RestoreWorkspaceRequest = {
     val __obj = js.Dynamic.literal(WorkspaceId = WorkspaceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestoreWorkspaceRequest]
   }
 }

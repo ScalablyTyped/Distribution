@@ -24,7 +24,6 @@ object TypeofCache {
     remove: String => Unit
   ): TypeofCache = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), enabled = enabled.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[TypeofCache]
   }
 }

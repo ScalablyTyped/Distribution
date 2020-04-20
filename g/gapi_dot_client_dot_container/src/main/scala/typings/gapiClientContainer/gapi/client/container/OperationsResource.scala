@@ -24,7 +24,6 @@ object OperationsResource {
     list: AnonBearertoken => Request_[ListOperationsResponse]
   ): OperationsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[OperationsResource]
   }
 }

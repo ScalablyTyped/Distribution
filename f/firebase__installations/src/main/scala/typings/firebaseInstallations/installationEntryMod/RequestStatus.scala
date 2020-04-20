@@ -16,12 +16,10 @@ trait RequestStatus extends js.Object
 
 object RequestStatus {
   @scala.inline
-  def COMPLETED: `2` = this.cast(2)
+  def COMPLETED: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def IN_PROGRESS: `1` = this.cast(1)
+  def IN_PROGRESS: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def NOT_STARTED: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NOT_STARTED: `0` = 0.asInstanceOf[`0`]
 }
 

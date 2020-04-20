@@ -24,7 +24,6 @@ object Job {
     task: Task
   ): Job = {
     val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], handle = js.Any.fromFunction1(handle), reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve), task = task.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Job]
   }
 }

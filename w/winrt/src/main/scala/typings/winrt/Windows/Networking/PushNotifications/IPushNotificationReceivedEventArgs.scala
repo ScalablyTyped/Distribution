@@ -27,7 +27,6 @@ object IPushNotificationReceivedEventArgs {
     toastNotification: ToastNotification
   ): IPushNotificationReceivedEventArgs = {
     val __obj = js.Dynamic.literal(badgeNotification = badgeNotification.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any], rawNotification = rawNotification.asInstanceOf[js.Any], tileNotification = tileNotification.asInstanceOf[js.Any], toastNotification = toastNotification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPushNotificationReceivedEventArgs]
   }
 }

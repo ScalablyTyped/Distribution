@@ -13,7 +13,6 @@ object AnonFiltered {
   @scala.inline
   def apply(filtered: js.Array[FilterResult]): AnonFiltered = {
     val __obj = js.Dynamic.literal(filtered = filtered.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFiltered]
   }
 }

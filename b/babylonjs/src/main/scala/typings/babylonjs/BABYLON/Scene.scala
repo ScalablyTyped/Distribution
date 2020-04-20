@@ -1054,15 +1054,15 @@ class Scene protected () extends AbstractScene {
     * Gets the performance counter for active bones
     * @see http://doc.babylonjs.com/how_to/optimizing_your_scene#instrumentation
     */
-  def activeBonesPerfCounter(): PerfCounter = js.native
+  def activeBonesPerfCounter: PerfCounter = js.native
   /** Gets or sets the current active camera */
-  def activeCamera(): Nullable[Camera] = js.native
+  def activeCamera: Nullable[Camera] = js.native
   def activeCamera(value: Nullable[Camera]): js.Any = js.native
   /**
     * Gets the performance counter for active particles
     * @see http://doc.babylonjs.com/how_to/optimizing_your_scene#instrumentation
     */
-  def activeParticlesPerfCounter(): PerfCounter = js.native
+  def activeParticlesPerfCounter: PerfCounter = js.native
   /**
     * Adds the given action manager to this scene
     * @param newActionManager The action manager to add
@@ -1151,13 +1151,13 @@ class Scene protected () extends AbstractScene {
   /**
     * Gets all animatable attached to the scene
     */
-  def animatables(): js.Array[Animatable] = js.native
+  def animatables: js.Array[Animatable] = js.native
   /** Execute all animations (for a frame) */
   def animate(): Unit = js.native
   /**
     * Gets or sets the animation properties override
     */
-  def animationPropertiesOverride(): Nullable[AnimationPropertiesOverride] = js.native
+  def animationPropertiesOverride: Nullable[AnimationPropertiesOverride] = js.native
   def animationPropertiesOverride(value: Nullable[AnimationPropertiesOverride]): js.Any = js.native
   /**
     * Attach events to the canvas (To handle actionManagers triggers and raise onPointerMove, onPointerDown and onPointerUp
@@ -1353,14 +1353,14 @@ class Scene protected () extends AbstractScene {
     onAnimationLoop: js.UndefOr[js.Function0[Unit]]
   ): Animatable = js.native
   /** Gets or sets a boolean blocking all the calls to markAllMaterialsAsDirty (ie. the materials won't be updated if they are out of sync) */
-  def blockMaterialDirtyMechanism(): Boolean = js.native
+  def blockMaterialDirtyMechanism: Boolean = js.native
   def blockMaterialDirtyMechanism(value: Boolean): js.Any = js.native
   /** Gets or sets a boolean blocking all the calls to freeActiveMeshes and freeRenderingGroups
     * It can be used in order to prevent going through methods freeRenderingGroups and freeActiveMeshes several times to improve performance
     * when disposing several meshes in a row or a hierarchy of meshes.
     * When used, it is the responsability of the user to blockfreeActiveMeshesAndRenderingGroups back to false.
     */
-  def blockfreeActiveMeshesAndRenderingGroups(): Boolean = js.native
+  def blockfreeActiveMeshesAndRenderingGroups: Boolean = js.native
   def blockfreeActiveMeshesAndRenderingGroups(value: Boolean): js.Any = js.native
   /**
     * This function will remove the local cached buffer data from texture.
@@ -1373,7 +1373,7 @@ class Scene protected () extends AbstractScene {
     */
   def clearCachedVertexData(): Unit = js.native
   /** @hidden */
-  def collisionCoordinator(): ICollisionCoordinator = js.native
+  def collisionCoordinator: ICollisionCoordinator = js.native
   /**
     * Creates a default camera for the scene.
     * @see http://doc.babylonjs.com/How_To/Fast_Build#create-default-camera
@@ -1513,7 +1513,7 @@ class Scene protected () extends AbstractScene {
     */
   def customLODSelector(mesh: AbstractMesh, camera: Camera): Nullable[AbstractMesh] = js.native
   /** The default material used on meshes when no material is affected */
-  def defaultMaterial(): Material = js.native
+  def defaultMaterial: Material = js.native
   /** The default material used on meshes when no material is affected */
   def defaultMaterial(value: Material): js.Any = js.native
   /**
@@ -1571,7 +1571,7 @@ class Scene protected () extends AbstractScene {
     * As in the majority of the scene they are the same (exception for multi room and so on),
     * this is easier to reference from here than from all the materials.
     */
-  def environmentIntensity(): Double = js.native
+  def environmentIntensity: Double = js.native
   /**
     * Intensity of the environment in all pbr material.
     * This dims or reinforces the IBL lighting overall (reflection and diffuse).
@@ -1585,7 +1585,7 @@ class Scene protected () extends AbstractScene {
     * this is easier to reference from here than from all the materials.
     */
   @JSName("environmentTexture")
-  def environmentTexture_MScene(): Nullable[BaseTexture] = js.native
+  def environmentTexture_MScene: Nullable[BaseTexture] = js.native
   /**
     * Texture used in all pbr material as the reflection texture.
     * As in the majority of the scene they are the same (exception for multi room and so on),
@@ -1607,14 +1607,14 @@ class Scene protected () extends AbstractScene {
     * @param {Function} func - the function to be executed
     */
   def executeWhenReady(func: js.Function0[Unit]): Unit = js.native
-  def fogEnabled(): Boolean = js.native
+  def fogEnabled: Boolean = js.native
   /**
     * Gets or sets a boolean indicating if fog is enabled on this scene
     * @see http://doc.babylonjs.com/babylon101/environment#fog
     * (Default is true)
     */
   def fogEnabled(value: Boolean): js.Any = js.native
-  def fogMode(): Double = js.native
+  def fogMode: Double = js.native
   /**
     * Gets or sets the fog mode to use
     * @see http://doc.babylonjs.com/babylon101/environment#fog
@@ -1626,12 +1626,12 @@ class Scene protected () extends AbstractScene {
     * | FOGMODE_LINEAR | 3 |
     */
   def fogMode(value: Double): js.Any = js.native
-  def forcePointsCloud(): Boolean = js.native
+  def forcePointsCloud: Boolean = js.native
   /**
     * Gets or sets a boolean indicating if all rendering must be done in point cloud
     */
   def forcePointsCloud(value: Boolean): js.Any = js.native
-  def forceWireframe(): Boolean = js.native
+  def forceWireframe: Boolean = js.native
   /**
     * Gets or sets a boolean indicating if all rendering must be done in wireframe
     */
@@ -1663,7 +1663,7 @@ class Scene protected () extends AbstractScene {
   /**
     * Gets the list of frustum planes (built from the active camera)
     */
-  def frustumPlanes(): js.Array[Plane] = js.native
+  def frustumPlanes: js.Array[Plane] = js.native
   /**
     * Gets the total number of active bones rendered per frame
     * @returns the total number of active bones rendered per frame
@@ -2111,7 +2111,7 @@ class Scene protected () extends AbstractScene {
     *
     * No setter as we it is a shared configuration, you can set the values instead.
     */
-  def imageProcessingConfiguration(): ImageProcessingConfiguration = js.native
+  def imageProcessingConfiguration: ImageProcessingConfiguration = js.native
   /** Call this function if you want to manually increment the render Id*/
   def incrementRenderId(): Unit = js.native
   /**
@@ -2132,11 +2132,11 @@ class Scene protected () extends AbstractScene {
   /**
     * Gets if the scene is already disposed
     */
-  def isDisposed(): Boolean = js.native
+  def isDisposed: Boolean = js.native
   /**
     * Returns a boolean indicating if the scene is still loading data
     */
-  def isLoading(): Boolean = js.native
+  def isLoading: Boolean = js.native
   /**
     * Gets a boolean indicating if there is an active physics engine
     * @returns a boolean indicating if there is an active physics engine
@@ -2155,7 +2155,7 @@ class Scene protected () extends AbstractScene {
     * @return true if all required resources are ready
     */
   def isReady(): Boolean = js.native
-  def lightsEnabled(): Boolean = js.native
+  def lightsEnabled: Boolean = js.native
   /**
     * Gets or sets a boolean indicating if lights are enabled on this scene
     */
@@ -2170,7 +2170,7 @@ class Scene protected () extends AbstractScene {
   /**
     * Gets the mesh that is currently under the pointer
     */
-  def meshUnderPointer(): Nullable[AbstractMesh] = js.native
+  def meshUnderPointer: Nullable[AbstractMesh] = js.native
   /**
     * Launch a ray to try to pick a mesh in the scene
     * @param x X position on screen
@@ -2329,12 +2329,12 @@ class Scene protected () extends AbstractScene {
   /**
     * Gets or sets the current on-screen X position of the pointer
     */
-  def pointerX(): Double = js.native
+  def pointerX: Double = js.native
   def pointerX(value: Double): js.Any = js.native
   /**
     * Gets or sets the current on-screen Y position of the pointer
     */
-  def pointerY(): Double = js.native
+  def pointerY: Double = js.native
   def pointerY(value: Double): js.Any = js.native
   /**
     * Add a new geometry to this scene
@@ -2541,7 +2541,7 @@ class Scene protected () extends AbstractScene {
   def setTransformMatrix(viewL: Matrix, projectionL: Matrix): Unit = js.native
   def setTransformMatrix(viewL: Matrix, projectionL: Matrix, viewR: Matrix): Unit = js.native
   def setTransformMatrix(viewL: Matrix, projectionL: Matrix, viewR: Matrix, projectionR: Matrix): Unit = js.native
-  def shadowsEnabled(): Boolean = js.native
+  def shadowsEnabled: Boolean = js.native
   /**
     * Gets or sets a boolean indicating if shadows are enabled on this scene
     */
@@ -2575,12 +2575,12 @@ class Scene protected () extends AbstractScene {
   def simulatePointerUp(pickResult: PickingInfo): Scene = js.native
   def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: PointerEventInit): Scene = js.native
   def simulatePointerUp(pickResult: PickingInfo, pointerEventInit: PointerEventInit, doubleTap: Boolean): Scene = js.native
-  def skeletonsEnabled(): Boolean = js.native
+  def skeletonsEnabled: Boolean = js.native
   /**
     * Gets or sets a boolean indicating if skeletons are enabled on this scene
     */
   def skeletonsEnabled(value: Boolean): js.Any = js.native
-  def skipFrustumClipping(): Boolean = js.native
+  def skipFrustumClipping: Boolean = js.native
   /**
     * Gets or sets a boolean indicating if we should skip the frustum clipping part of the active meshes selection
     */
@@ -2609,7 +2609,7 @@ class Scene protected () extends AbstractScene {
     */
   def switchActiveCamera(newCamera: Camera): Unit = js.native
   def switchActiveCamera(newCamera: Camera, attachControl: Boolean): Unit = js.native
-  def texturesEnabled(): Boolean = js.native
+  def texturesEnabled: Boolean = js.native
   /**
     * Gets or sets a boolean indicating if textures are enabled on this scene
     */
@@ -2618,20 +2618,20 @@ class Scene protected () extends AbstractScene {
     * Gets the performance counter for active indices
     * @see http://doc.babylonjs.com/how_to/optimizing_your_scene#instrumentation
     */
-  def totalActiveIndicesPerfCounter(): PerfCounter = js.native
+  def totalActiveIndicesPerfCounter: PerfCounter = js.native
   /**
     * Gets the performance counter for total vertices
     * @see http://doc.babylonjs.com/how_to/optimizing_your_scene#instrumentation
     */
-  def totalVerticesPerfCounter(): PerfCounter = js.native
+  def totalVerticesPerfCounter: PerfCounter = js.native
   /**
     * Return a unique id as a string which can serve as an identifier for the scene
     */
-  def uid(): String = js.native
+  def uid: String = js.native
   /**
     * Gets the pointer coordinates without any translation (ie. straight out of the pointer event)
     */
-  def unTranslatedPointer(): Vector2 = js.native
+  def unTranslatedPointer: Vector2 = js.native
   /**
     * Use this function to restart evaluating active meshes on every frame
     * @returns the current scene
@@ -2658,7 +2658,7 @@ class Scene protected () extends AbstractScene {
     */
   def updateTransformMatrix(): Unit = js.native
   def updateTransformMatrix(force: Boolean): Unit = js.native
-  def useRightHandedSystem(): Boolean = js.native
+  def useRightHandedSystem: Boolean = js.native
   /**
     * Gets or sets a boolean indicating if the scene must use right-handed coordinates system
     */
@@ -2707,20 +2707,20 @@ object Scene extends js.Object {
   /**
     * Time in milliseconds to wait to raise long press events if button is still pressed. Default is 300 ms
     */
-  def DoubleClickDelay(): Double = js.native
+  def DoubleClickDelay: Double = js.native
   def DoubleClickDelay(value: Double): js.Any = js.native
   /**
     * Gets or sets the distance in pixel that you have to move to prevent some events. Default is 10 pixels
     */
-  def DragMovementThreshold(): Double = js.native
+  def DragMovementThreshold: Double = js.native
   def DragMovementThreshold(value: Double): js.Any = js.native
   /** If you need to check double click without raising a single click at first click, enable this flag */
-  def ExclusiveDoubleClickMode(): Boolean = js.native
+  def ExclusiveDoubleClickMode: Boolean = js.native
   def ExclusiveDoubleClickMode(value: Boolean): js.Any = js.native
   /**
     * Time in milliseconds to wait to raise long press events if button is still pressed. Default is 500 ms
     */
-  def LongPressDelay(): Double = js.native
+  def LongPressDelay: Double = js.native
   def LongPressDelay(value: Double): js.Any = js.native
 }
 

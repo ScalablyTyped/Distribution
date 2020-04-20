@@ -21,7 +21,6 @@ object AnonClientOptions {
   @scala.inline
   def apply(clientOptions: js.Any, serverOptions: js.Any): AnonClientOptions = {
     val __obj = js.Dynamic.literal(clientOptions = clientOptions.asInstanceOf[js.Any], serverOptions = serverOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClientOptions]
   }
 }

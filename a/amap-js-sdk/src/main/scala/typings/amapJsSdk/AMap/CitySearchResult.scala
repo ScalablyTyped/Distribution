@@ -13,7 +13,6 @@ object CitySearchResult {
   @scala.inline
   def apply(bounds: Bounds, city: String): CitySearchResult = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CitySearchResult]
   }
 }

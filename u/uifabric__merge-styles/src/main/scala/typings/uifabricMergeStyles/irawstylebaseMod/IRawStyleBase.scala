@@ -93,6 +93,11 @@ trait IRawStyleBase extends IRawFontStyle {
     */
   var WebkitTapHighlightColor: js.UndefOr[String] = js.undefined
   /**
+    * (Webkit specific) controls the text inflation algorithm used on some smartphones and tablets.
+    * Other browsers will ignore this property.
+    */
+  var WebkitTextSizeAdjust: js.UndefOr[none | auto | ICSSPercentageRule | ICSSRule] = js.undefined
+  /**
     * Aligns a flex container's lines within the flex container when there is extra space
     * in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
     */
@@ -1380,6 +1385,11 @@ trait IRawStyleBase extends IRawFontStyle {
     */
   var textShadow: js.UndefOr[ICSSRule | String] = js.undefined
   /**
+    * The text-size-adjust CSS property controls the text inflation algorithm used
+    * on some smartphones and tablets. Other browsers will ignore this property.
+    */
+  var textSizeAdjust: js.UndefOr[none | auto | ICSSPercentageRule | ICSSRule] = js.undefined
+  /**
     * This property transforms text for styling purposes. (It has no effect on the
     * underlying content.)
     */
@@ -1609,6 +1619,7 @@ object IRawStyleBase {
     WebkitFontSmoothing: none | antialiased | grayscale | `subpixel-antialiased` = null,
     WebkitOverflowScrolling: auto | touch = null,
     WebkitTapHighlightColor: String = null,
+    WebkitTextSizeAdjust: none | auto | ICSSPercentageRule | ICSSRule = null,
     alignContent: ICSSRule | `flex-start` | `flex-end` | center | `space-between` | `space-around` | stretch = null,
     alignItems: ICSSRule | `flex-start` | `flex-end` | center | baseline | stretch = null,
     alignSelf: ICSSRule | auto | normal | stretch | ICSSBaselinePositionRule | ICSSOverflowAndSelfPositionRule = null,
@@ -1829,6 +1840,7 @@ object IRawStyleBase {
     textOverlineWidth: ICSSRule | ICSSPixelUnitRule = null,
     textRendering: ICSSRule | String = null,
     textShadow: ICSSRule | String = null,
+    textSizeAdjust: none | auto | ICSSPercentageRule | ICSSRule = null,
     textTransform: ICSSRule | String = null,
     textUnderlinePosition: ICSSRule | String = null,
     textUnderlineStyle: ICSSRule | String = null,
@@ -1852,9 +1864,7 @@ object IRawStyleBase {
     voiceBalance: ICSSRule | String = null,
     voiceDuration: ICSSRule | String = null,
     voiceFamily: ICSSRule | String = null,
-    voicePitch: ICSSRule | String = null,
-    voiceRange: ICSSRule | String = null,
-    voiceRate: ICSSRule | String = null
+    voicePitch: ICSSRule | String = null
   ): IRawStyleBase = {
     val __obj = js.Dynamic.literal()
     if (IRawFontStyle != null) js.Dynamic.global.Object.assign(__obj, IRawFontStyle)
@@ -1865,6 +1875,7 @@ object IRawStyleBase {
     if (WebkitFontSmoothing != null) __obj.updateDynamic("WebkitFontSmoothing")(WebkitFontSmoothing.asInstanceOf[js.Any])
     if (WebkitOverflowScrolling != null) __obj.updateDynamic("WebkitOverflowScrolling")(WebkitOverflowScrolling.asInstanceOf[js.Any])
     if (WebkitTapHighlightColor != null) __obj.updateDynamic("WebkitTapHighlightColor")(WebkitTapHighlightColor.asInstanceOf[js.Any])
+    if (WebkitTextSizeAdjust != null) __obj.updateDynamic("WebkitTextSizeAdjust")(WebkitTextSizeAdjust.asInstanceOf[js.Any])
     if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
     if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
@@ -2085,6 +2096,7 @@ object IRawStyleBase {
     if (textOverlineWidth != null) __obj.updateDynamic("textOverlineWidth")(textOverlineWidth.asInstanceOf[js.Any])
     if (textRendering != null) __obj.updateDynamic("textRendering")(textRendering.asInstanceOf[js.Any])
     if (textShadow != null) __obj.updateDynamic("textShadow")(textShadow.asInstanceOf[js.Any])
+    if (textSizeAdjust != null) __obj.updateDynamic("textSizeAdjust")(textSizeAdjust.asInstanceOf[js.Any])
     if (textTransform != null) __obj.updateDynamic("textTransform")(textTransform.asInstanceOf[js.Any])
     if (textUnderlinePosition != null) __obj.updateDynamic("textUnderlinePosition")(textUnderlinePosition.asInstanceOf[js.Any])
     if (textUnderlineStyle != null) __obj.updateDynamic("textUnderlineStyle")(textUnderlineStyle.asInstanceOf[js.Any])
@@ -2109,8 +2121,6 @@ object IRawStyleBase {
     if (voiceDuration != null) __obj.updateDynamic("voiceDuration")(voiceDuration.asInstanceOf[js.Any])
     if (voiceFamily != null) __obj.updateDynamic("voiceFamily")(voiceFamily.asInstanceOf[js.Any])
     if (voicePitch != null) __obj.updateDynamic("voicePitch")(voicePitch.asInstanceOf[js.Any])
-    if (voiceRange != null) __obj.updateDynamic("voiceRange")(voiceRange.asInstanceOf[js.Any])
-    if (voiceRate != null) __obj.updateDynamic("voiceRate")(voiceRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRawStyleBase]
   }
 }

@@ -13,7 +13,6 @@ object ISearchResult {
   @scala.inline
   def apply(id: String, score: Double): ISearchResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchResult]
   }
 }

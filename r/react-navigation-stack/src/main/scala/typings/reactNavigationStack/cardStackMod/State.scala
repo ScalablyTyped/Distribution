@@ -29,7 +29,6 @@ object State {
     scenes: js.Array[Scene[Route[String]]]
   ): State = {
     val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], gestures = gestures.asInstanceOf[js.Any], headerHeights = headerHeights.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], scenes = scenes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

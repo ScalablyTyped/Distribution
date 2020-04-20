@@ -22,30 +22,28 @@ trait GoogleActionsV2OrdersOrderUpdateActionType extends js.Object
 
 object GoogleActionsV2OrdersOrderUpdateActionType {
   @scala.inline
-  def CALL: typings.actionsOnGoogle.actionsOnGoogleStrings.CALL = this.cast("CALL")
+  def CALL: typings.actionsOnGoogle.actionsOnGoogleStrings.CALL = "CALL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CALL]
   @scala.inline
-  def CANCEL: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCEL = this.cast("CANCEL")
+  def CANCEL: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCEL = "CANCEL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANCEL]
   @scala.inline
-  def CUSTOMER_SERVICE: typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_SERVICE = this.cast("CUSTOMER_SERVICE")
+  def CUSTOMER_SERVICE: typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_SERVICE = "CUSTOMER_SERVICE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_SERVICE]
   @scala.inline
-  def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = this.cast("EMAIL")
+  def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = "EMAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL]
   @scala.inline
-  def EXCHANGE: typings.actionsOnGoogle.actionsOnGoogleStrings.EXCHANGE = this.cast("EXCHANGE")
+  def EXCHANGE: typings.actionsOnGoogle.actionsOnGoogleStrings.EXCHANGE = "EXCHANGE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EXCHANGE]
   @scala.inline
-  def FIX_ISSUE: typings.actionsOnGoogle.actionsOnGoogleStrings.FIX_ISSUE = this.cast("FIX_ISSUE")
+  def FIX_ISSUE: typings.actionsOnGoogle.actionsOnGoogleStrings.FIX_ISSUE = "FIX_ISSUE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FIX_ISSUE]
   @scala.inline
-  def MODIFY: typings.actionsOnGoogle.actionsOnGoogleStrings.MODIFY = this.cast("MODIFY")
+  def MODIFY: typings.actionsOnGoogle.actionsOnGoogleStrings.MODIFY = "MODIFY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.MODIFY]
   @scala.inline
-  def REORDER: typings.actionsOnGoogle.actionsOnGoogleStrings.REORDER = this.cast("REORDER")
+  def REORDER: typings.actionsOnGoogle.actionsOnGoogleStrings.REORDER = "REORDER".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REORDER]
   @scala.inline
-  def RETURN: typings.actionsOnGoogle.actionsOnGoogleStrings.RETURN = this.cast("RETURN")
+  def RETURN: typings.actionsOnGoogle.actionsOnGoogleStrings.RETURN = "RETURN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RETURN]
   @scala.inline
-  def REVIEW: typings.actionsOnGoogle.actionsOnGoogleStrings.REVIEW = this.cast("REVIEW")
+  def REVIEW: typings.actionsOnGoogle.actionsOnGoogleStrings.REVIEW = "REVIEW".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REVIEW]
   @scala.inline
-  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = this.cast("UNKNOWN")
+  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
   @scala.inline
-  def VIEW_DETAILS: typings.actionsOnGoogle.actionsOnGoogleStrings.VIEW_DETAILS = this.cast("VIEW_DETAILS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VIEW_DETAILS: typings.actionsOnGoogle.actionsOnGoogleStrings.VIEW_DETAILS = "VIEW_DETAILS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VIEW_DETAILS]
 }
 

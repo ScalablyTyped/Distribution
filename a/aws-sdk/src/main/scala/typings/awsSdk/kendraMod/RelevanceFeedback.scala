@@ -20,7 +20,6 @@ object RelevanceFeedback {
   @scala.inline
   def apply(RelevanceValue: RelevanceType, ResultId: ResultId): RelevanceFeedback = {
     val __obj = js.Dynamic.literal(RelevanceValue = RelevanceValue.asInstanceOf[js.Any], ResultId = ResultId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RelevanceFeedback]
   }
 }

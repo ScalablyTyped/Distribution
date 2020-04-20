@@ -16,7 +16,6 @@ object UploadEntityDefinitionsResponse {
   @scala.inline
   def apply(uploadId: UploadId): UploadEntityDefinitionsResponse = {
     val __obj = js.Dynamic.literal(uploadId = uploadId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadEntityDefinitionsResponse]
   }
 }

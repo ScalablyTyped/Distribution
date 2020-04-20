@@ -25,7 +25,6 @@ object Emitter {
     value: V => Boolean
   ): Emitter[V, E] = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), emitEvent = js.Any.fromFunction1(emitEvent), end = js.Any.fromFunction0(end), error = js.Any.fromFunction1(error), event = js.Any.fromFunction1(event), value = js.Any.fromFunction1(value))
-  
     __obj.asInstanceOf[Emitter[V, E]]
   }
 }

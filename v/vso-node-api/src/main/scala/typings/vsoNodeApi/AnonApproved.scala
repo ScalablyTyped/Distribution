@@ -15,7 +15,6 @@ object AnonApproved {
   @scala.inline
   def apply(approved: Double, created: Double, deleted: Double, rejected: Double): AnonApproved = {
     val __obj = js.Dynamic.literal(approved = approved.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonApproved]
   }
 }

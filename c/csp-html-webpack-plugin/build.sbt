@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "csp-html-webpack-plugin"
-version := "3.0-dt-20190926Z-e81ea1"
+version := "3.0-dt-20190926Z-3a06c7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-d40bf1",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20200226Z-113153",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20200226Z-c9396c",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20200129Z-2a8c9f",
-  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
-  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20200227Z-1f7c6a",
-  "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20200225Z-4dbc49",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-020e14",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20200225Z-acd615",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20200331Z-e61abf",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200331Z-f1543a",
-  "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20200323Z-7d5534")
+  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-1bb4ae",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20200226Z-82d5f8",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20200226Z-9657dc",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20200129Z-7262ad",
+  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
+  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20200227Z-b1a021",
+  "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20200225Z-0c1f94",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-61a869",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470",
+  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20200225Z-7c6f60",
+  "org.scalablytyped" %%% "uglify-js" % "3.9-dt-20200413Z-ae3cf4",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20200418Z-3147f9",
+  "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20200323Z-81ab5f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

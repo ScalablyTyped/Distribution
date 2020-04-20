@@ -15,16 +15,14 @@ trait AnimationFill extends js.Object
 
 object AnimationFill {
   @scala.inline
-  def auto: typings.ionicCore.ionicCoreStrings.auto = this.cast("auto")
+  def auto: typings.ionicCore.ionicCoreStrings.auto = "auto".asInstanceOf[typings.ionicCore.ionicCoreStrings.auto]
   @scala.inline
-  def backwards: typings.ionicCore.ionicCoreStrings.backwards = this.cast("backwards")
+  def backwards: typings.ionicCore.ionicCoreStrings.backwards = "backwards".asInstanceOf[typings.ionicCore.ionicCoreStrings.backwards]
   @scala.inline
-  def both: typings.ionicCore.ionicCoreStrings.both = this.cast("both")
+  def both: typings.ionicCore.ionicCoreStrings.both = "both".asInstanceOf[typings.ionicCore.ionicCoreStrings.both]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def forwards: typings.ionicCore.ionicCoreStrings.forwards = "forwards".asInstanceOf[typings.ionicCore.ionicCoreStrings.forwards]
   @scala.inline
-  def forwards: typings.ionicCore.ionicCoreStrings.forwards = this.cast("forwards")
-  @scala.inline
-  def none: typings.ionicCore.ionicCoreStrings.none = this.cast("none")
+  def none: typings.ionicCore.ionicCoreStrings.none = "none".asInstanceOf[typings.ionicCore.ionicCoreStrings.none]
 }
 

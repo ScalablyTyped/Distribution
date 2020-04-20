@@ -22,7 +22,7 @@ object applicationMod extends js.Object {
     /**
       * Gets the crypto module from the Application
       */
-    def crypto(): CryptoEx = js.native
+    def crypto: CryptoEx = js.native
     def isNodePlugin(): Boolean = js.native
     /**
       * Sets crypto engine for the current Application

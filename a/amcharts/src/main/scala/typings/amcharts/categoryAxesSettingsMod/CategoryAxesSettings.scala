@@ -164,7 +164,6 @@ object CategoryAxesSettings {
     tickLength: Double
   ): CategoryAxesSettings = {
     val __obj = js.Dynamic.literal(autoGridCount = autoGridCount.asInstanceOf[js.Any], axisAlpha = axisAlpha.asInstanceOf[js.Any], axisColor = axisColor.asInstanceOf[js.Any], axisHeight = axisHeight.asInstanceOf[js.Any], axisThickness = axisThickness.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], dashLength = dashLength.asInstanceOf[js.Any], dateFormats = dateFormats.asInstanceOf[js.Any], equalSpacing = equalSpacing.asInstanceOf[js.Any], fillAlpha = fillAlpha.asInstanceOf[js.Any], fillColor = fillColor.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], gridAlpha = gridAlpha.asInstanceOf[js.Any], gridColor = gridColor.asInstanceOf[js.Any], gridCount = gridCount.asInstanceOf[js.Any], gridThickness = gridThickness.asInstanceOf[js.Any], groupToPeriods = groupToPeriods.asInstanceOf[js.Any], inside = inside.asInstanceOf[js.Any], labelRotation = labelRotation.asInstanceOf[js.Any], maxSeries = maxSeries.asInstanceOf[js.Any], minPeriod = minPeriod.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], startOnAxis = startOnAxis.asInstanceOf[js.Any], tickLength = tickLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CategoryAxesSettings]
   }
 }

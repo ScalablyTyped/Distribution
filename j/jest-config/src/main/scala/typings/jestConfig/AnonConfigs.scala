@@ -16,7 +16,6 @@ object AnonConfigs {
   @scala.inline
   def apply(configs: js.Array[ProjectConfig], globalConfig: GlobalConfig, hasDeprecationWarnings: Boolean): AnonConfigs = {
     val __obj = js.Dynamic.literal(configs = configs.asInstanceOf[js.Any], globalConfig = globalConfig.asInstanceOf[js.Any], hasDeprecationWarnings = hasDeprecationWarnings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfigs]
   }
 }

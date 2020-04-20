@@ -17,7 +17,6 @@ object Plugin {
     test: /* arg0 */ js.Any => Boolean
   ): Plugin = {
     val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction6(serialize), test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[Plugin]
   }
   @scala.inline
@@ -26,7 +25,6 @@ object Plugin {
     test: /* arg0 */ js.Any => Boolean
   ): Plugin = {
     val __obj = js.Dynamic.literal(print = js.Any.fromFunction5(print), test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[Plugin]
   }
 }

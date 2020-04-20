@@ -20,7 +20,6 @@ object AppsCreateContentAttachmentParams {
   @scala.inline
   def apply(body: String, content_reference_id: Double, title: String): AppsCreateContentAttachmentParams = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], content_reference_id = content_reference_id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppsCreateContentAttachmentParams]
   }
 }

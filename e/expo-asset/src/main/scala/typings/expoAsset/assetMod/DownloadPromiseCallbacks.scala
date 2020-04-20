@@ -14,7 +14,6 @@ object DownloadPromiseCallbacks {
   @scala.inline
   def apply(reject: Error => Unit, resolve: () => Unit): DownloadPromiseCallbacks = {
     val __obj = js.Dynamic.literal(reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction0(resolve))
-  
     __obj.asInstanceOf[DownloadPromiseCallbacks]
   }
 }

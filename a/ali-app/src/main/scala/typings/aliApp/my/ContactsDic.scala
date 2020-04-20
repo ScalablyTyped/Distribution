@@ -31,7 +31,6 @@ object ContactsDic {
   @scala.inline
   def apply(avatar: String, displayName: String, mobile: String, realName: String, userId: String): ContactsDic = {
     val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], realName = realName.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContactsDic]
   }
 }

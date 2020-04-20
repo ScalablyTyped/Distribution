@@ -24,10 +24,19 @@ object ioTsStrings {
   sealed trait BooleanType extends js.Object
   
   @js.native
+  sealed trait Codec extends js.Object
+  
+  @js.native
   sealed trait Compact extends js.Object
   
   @js.native
+  sealed trait Decoder extends js.Object
+  
+  @js.native
   sealed trait DictionaryType extends js.Object
+  
+  @js.native
+  sealed trait Encoder extends js.Object
   
   @js.native
   sealed trait Exact extends js.Object
@@ -37,6 +46,9 @@ object ioTsStrings {
   
   @js.native
   sealed trait FunctionType extends js.Object
+  
+  @js.native
+  sealed trait Guard extends js.Object
   
   @js.native
   sealed trait InterfaceType extends js.Object
@@ -96,6 +108,9 @@ object ioTsStrings {
   sealed trait RefinementType extends js.Object
   
   @js.native
+  sealed trait Schemable extends js.Object
+  
+  @js.native
   sealed trait StrictC extends js.Object
   
   @js.native
@@ -135,7 +150,25 @@ object ioTsStrings {
   sealed trait VoidType extends js.Object
   
   @js.native
+  sealed trait WithUnion extends js.Object
+  
+  @js.native
   sealed trait brand extends js.Object
+  
+  @js.native
+  sealed trait partial extends js.Object
+  
+  @js.native
+  sealed trait sum extends js.Object
+  
+  @js.native
+  sealed trait tuple extends js.Object
+  
+  @js.native
+  sealed trait `type` extends js.Object
+  
+  @js.native
+  sealed trait union extends js.Object
   
   @scala.inline
   def AnyArrayType: AnyArrayType = "AnyArrayType".asInstanceOf[AnyArrayType]
@@ -150,15 +183,23 @@ object ioTsStrings {
   @scala.inline
   def BooleanType: BooleanType = "BooleanType".asInstanceOf[BooleanType]
   @scala.inline
+  def Codec: Codec = "Codec".asInstanceOf[Codec]
+  @scala.inline
   def Compact: Compact = "Compact".asInstanceOf[Compact]
   @scala.inline
+  def Decoder: Decoder = "Decoder".asInstanceOf[Decoder]
+  @scala.inline
   def DictionaryType: DictionaryType = "DictionaryType".asInstanceOf[DictionaryType]
+  @scala.inline
+  def Encoder: Encoder = "Encoder".asInstanceOf[Encoder]
   @scala.inline
   def Exact: Exact = "Exact".asInstanceOf[Exact]
   @scala.inline
   def ExactType: ExactType = "ExactType".asInstanceOf[ExactType]
   @scala.inline
   def FunctionType: FunctionType = "FunctionType".asInstanceOf[FunctionType]
+  @scala.inline
+  def Guard: Guard = "Guard".asInstanceOf[Guard]
   @scala.inline
   def InterfaceType: InterfaceType = "InterfaceType".asInstanceOf[InterfaceType]
   @scala.inline
@@ -198,6 +239,8 @@ object ioTsStrings {
   @scala.inline
   def RefinementType: RefinementType = "RefinementType".asInstanceOf[RefinementType]
   @scala.inline
+  def Schemable: Schemable = "Schemable".asInstanceOf[Schemable]
+  @scala.inline
   def StrictC: StrictC = "StrictC".asInstanceOf[StrictC]
   @scala.inline
   def StrictType: StrictType = "StrictType".asInstanceOf[StrictType]
@@ -224,6 +267,18 @@ object ioTsStrings {
   @scala.inline
   def VoidType: VoidType = "VoidType".asInstanceOf[VoidType]
   @scala.inline
+  def WithUnion: WithUnion = "WithUnion".asInstanceOf[WithUnion]
+  @scala.inline
   def brand: brand = "brand".asInstanceOf[brand]
+  @scala.inline
+  def partial: partial = "partial".asInstanceOf[partial]
+  @scala.inline
+  def sum: sum = "sum".asInstanceOf[sum]
+  @scala.inline
+  def tuple: tuple = "tuple".asInstanceOf[tuple]
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  @scala.inline
+  def union: union = "union".asInstanceOf[union]
 }
 

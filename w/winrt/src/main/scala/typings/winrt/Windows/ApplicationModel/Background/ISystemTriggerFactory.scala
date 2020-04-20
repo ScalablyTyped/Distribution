@@ -12,7 +12,6 @@ object ISystemTriggerFactory {
   @scala.inline
   def apply(create: (SystemTriggerType, Boolean) => SystemTrigger): ISystemTriggerFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
-  
     __obj.asInstanceOf[ISystemTriggerFactory]
   }
 }

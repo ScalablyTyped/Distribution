@@ -16,7 +16,6 @@ object AnonOnloadT {
   @scala.inline
   def apply(onloadT: integer, pageT: integer, startE: integer, tran: integer): AnonOnloadT = {
     val __obj = js.Dynamic.literal(onloadT = onloadT.asInstanceOf[js.Any], pageT = pageT.asInstanceOf[js.Any], startE = startE.asInstanceOf[js.Any], tran = tran.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnloadT]
   }
 }

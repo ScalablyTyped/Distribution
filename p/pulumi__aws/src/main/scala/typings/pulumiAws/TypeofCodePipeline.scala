@@ -13,7 +13,6 @@ object TypeofCodePipeline {
   @scala.inline
   def apply(Types: TypeofCodePipeline): TypeofCodePipeline = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCodePipeline]
   }
 }

@@ -14,7 +14,6 @@ object ValidatableModel {
   @scala.inline
   def apply[T](end: () => T, name: String => PropertyValidationState[T]): ValidatableModel[T] = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), name = js.Any.fromFunction1(name))
-  
     __obj.asInstanceOf[ValidatableModel[T]]
   }
 }

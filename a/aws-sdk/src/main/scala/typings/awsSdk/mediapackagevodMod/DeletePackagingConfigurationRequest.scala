@@ -16,7 +16,6 @@ object DeletePackagingConfigurationRequest {
   @scala.inline
   def apply(Id: string): DeletePackagingConfigurationRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePackagingConfigurationRequest]
   }
 }

@@ -17,20 +17,18 @@ trait State extends js.Object
 
 object State {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def connected: typings.twilsock.twilsockStrings.connected = "connected".asInstanceOf[typings.twilsock.twilsockStrings.connected]
   @scala.inline
-  def connected: typings.twilsock.twilsockStrings.connected = this.cast("connected")
+  def connecting: typings.twilsock.twilsockStrings.connecting = "connecting".asInstanceOf[typings.twilsock.twilsockStrings.connecting]
   @scala.inline
-  def connecting: typings.twilsock.twilsockStrings.connecting = this.cast("connecting")
+  def disconnected: typings.twilsock.twilsockStrings.disconnected = "disconnected".asInstanceOf[typings.twilsock.twilsockStrings.disconnected]
   @scala.inline
-  def disconnected: typings.twilsock.twilsockStrings.disconnected = this.cast("disconnected")
+  def disconnecting: typings.twilsock.twilsockStrings.disconnecting = "disconnecting".asInstanceOf[typings.twilsock.twilsockStrings.disconnecting]
   @scala.inline
-  def disconnecting: typings.twilsock.twilsockStrings.disconnecting = this.cast("disconnecting")
+  def error: typings.twilsock.twilsockStrings.error = "error".asInstanceOf[typings.twilsock.twilsockStrings.error]
   @scala.inline
-  def error: typings.twilsock.twilsockStrings.error = this.cast("error")
+  def rejected: typings.twilsock.twilsockStrings.rejected = "rejected".asInstanceOf[typings.twilsock.twilsockStrings.rejected]
   @scala.inline
-  def rejected: typings.twilsock.twilsockStrings.rejected = this.cast("rejected")
-  @scala.inline
-  def unknown: typings.twilsock.twilsockStrings.unknown = this.cast("unknown")
+  def unknown: typings.twilsock.twilsockStrings.unknown = "unknown".asInstanceOf[typings.twilsock.twilsockStrings.unknown]
 }
 

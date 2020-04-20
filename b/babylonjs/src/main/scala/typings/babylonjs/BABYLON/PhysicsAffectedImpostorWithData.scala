@@ -19,7 +19,6 @@ object PhysicsAffectedImpostorWithData {
   @scala.inline
   def apply(hitData: PhysicsHitData, impostor: PhysicsImpostor): PhysicsAffectedImpostorWithData = {
     val __obj = js.Dynamic.literal(hitData = hitData.asInstanceOf[js.Any], impostor = impostor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhysicsAffectedImpostorWithData]
   }
 }

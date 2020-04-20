@@ -17,20 +17,18 @@ trait SearchImageSize extends js.Object
 
 object SearchImageSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def huge: typings.googleImages.googleImagesStrings.huge = "huge".asInstanceOf[typings.googleImages.googleImagesStrings.huge]
   @scala.inline
-  def huge: typings.googleImages.googleImagesStrings.huge = this.cast("huge")
+  def icon: typings.googleImages.googleImagesStrings.icon = "icon".asInstanceOf[typings.googleImages.googleImagesStrings.icon]
   @scala.inline
-  def icon: typings.googleImages.googleImagesStrings.icon = this.cast("icon")
+  def large: typings.googleImages.googleImagesStrings.large = "large".asInstanceOf[typings.googleImages.googleImagesStrings.large]
   @scala.inline
-  def large: typings.googleImages.googleImagesStrings.large = this.cast("large")
+  def medium: typings.googleImages.googleImagesStrings.medium = "medium".asInstanceOf[typings.googleImages.googleImagesStrings.medium]
   @scala.inline
-  def medium: typings.googleImages.googleImagesStrings.medium = this.cast("medium")
+  def small: typings.googleImages.googleImagesStrings.small = "small".asInstanceOf[typings.googleImages.googleImagesStrings.small]
   @scala.inline
-  def small: typings.googleImages.googleImagesStrings.small = this.cast("small")
+  def xlarge: typings.googleImages.googleImagesStrings.xlarge = "xlarge".asInstanceOf[typings.googleImages.googleImagesStrings.xlarge]
   @scala.inline
-  def xlarge: typings.googleImages.googleImagesStrings.xlarge = this.cast("xlarge")
-  @scala.inline
-  def xxlarge: typings.googleImages.googleImagesStrings.xxlarge = this.cast("xxlarge")
+  def xxlarge: typings.googleImages.googleImagesStrings.xxlarge = "xxlarge".asInstanceOf[typings.googleImages.googleImagesStrings.xxlarge]
 }
 

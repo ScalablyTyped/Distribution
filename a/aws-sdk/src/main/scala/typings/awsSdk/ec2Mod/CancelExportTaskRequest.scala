@@ -16,7 +16,6 @@ object CancelExportTaskRequest {
   @scala.inline
   def apply(ExportTaskId: ExportVmTaskId): CancelExportTaskRequest = {
     val __obj = js.Dynamic.literal(ExportTaskId = ExportTaskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelExportTaskRequest]
   }
 }

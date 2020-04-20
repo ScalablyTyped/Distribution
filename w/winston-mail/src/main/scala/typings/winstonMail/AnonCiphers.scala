@@ -12,7 +12,6 @@ object AnonCiphers {
   @scala.inline
   def apply(ciphers: String): AnonCiphers = {
     val __obj = js.Dynamic.literal(ciphers = ciphers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCiphers]
   }
 }

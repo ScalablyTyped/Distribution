@@ -13,7 +13,6 @@ object PickImplbackspace {
   @scala.inline
   def apply(backspace: Double): PickImplbackspace = {
     val __obj = js.Dynamic.literal(backspace = backspace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplbackspace]
   }
 }

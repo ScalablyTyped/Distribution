@@ -29,9 +29,9 @@ package object mod {
   type PlainObject[T] = org.scalablytyped.runtime.StringDictionary[T]
   type PowerPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ U in keyof T ]:? T[U] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias egg.egg.PowerPartial<T[U]> * / object : T[U]}
-    */ typings.egg.eggStrings.PowerPartial with js.Any
+    */ typings.egg.eggStrings.PowerPartial with org.scalablytyped.runtime.TopLevel[js.Any]
   // Remove specific property from the specific class
-  type RemoveSpecProp[T, P] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, P]]
+  type RemoveSpecProp[T, P] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, P]]
   type RequestArrayBody = js.Array[js.Any]
   type RequestObjectBody = typings.egg.mod.PlainObject[js.Any]
   type RouterPath = java.lang.String | typings.std.RegExp

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait TreeNodeProps extends js.Object {
   var indentGuides: js.UndefOr[Boolean] = js.undefined
-  var node: TreeNode
-  var onToggle: js.UndefOr[js.Function1[/* node */ TreeNode, Unit]] = js.undefined
+  var node: TreeNode[_]
+  var onToggle: js.UndefOr[js.Function1[/* node */ TreeNode[_], Unit]] = js.undefined
   var overrides: js.UndefOr[TreeViewOverrides] = js.undefined
 }
 
 object TreeNodeProps {
   @scala.inline
   def apply(
-    node: TreeNode,
+    node: TreeNode[_],
     indentGuides: js.UndefOr[Boolean] = js.undefined,
-    onToggle: /* node */ TreeNode => Unit = null,
+    onToggle: /* node */ TreeNode[_] => Unit = null,
     overrides: TreeViewOverrides = null
   ): TreeNodeProps = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])

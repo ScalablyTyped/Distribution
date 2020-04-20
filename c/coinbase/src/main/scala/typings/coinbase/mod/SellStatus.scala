@@ -13,12 +13,10 @@ trait SellStatus extends js.Object
 
 object SellStatus {
   @scala.inline
-  def canceled: typings.coinbase.coinbaseStrings.canceled = this.cast("canceled")
+  def canceled: typings.coinbase.coinbaseStrings.canceled = "canceled".asInstanceOf[typings.coinbase.coinbaseStrings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def completed: typings.coinbase.coinbaseStrings.completed = "completed".asInstanceOf[typings.coinbase.coinbaseStrings.completed]
   @scala.inline
-  def completed: typings.coinbase.coinbaseStrings.completed = this.cast("completed")
-  @scala.inline
-  def created: typings.coinbase.coinbaseStrings.created = this.cast("created")
+  def created: typings.coinbase.coinbaseStrings.created = "created".asInstanceOf[typings.coinbase.coinbaseStrings.created]
 }
 

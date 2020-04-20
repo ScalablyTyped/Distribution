@@ -18,7 +18,6 @@ object Typeofgeometry {
   @scala.inline
   def apply(encoding: Typeofencoding, poly: Typeofpoly, spherical: Typeofspherical): Typeofgeometry = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], spherical = spherical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofgeometry]
   }
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PromiseIncomingMessagereq extends js.Object {
   var req: ClientRequest = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: String = js.native
   /**
     * Attaches a callback for only the rejection of the Promise.

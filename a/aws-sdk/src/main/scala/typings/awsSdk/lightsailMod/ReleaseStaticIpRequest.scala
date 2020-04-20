@@ -16,7 +16,6 @@ object ReleaseStaticIpRequest {
   @scala.inline
   def apply(staticIpName: ResourceName): ReleaseStaticIpRequest = {
     val __obj = js.Dynamic.literal(staticIpName = staticIpName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseStaticIpRequest]
   }
 }

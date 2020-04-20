@@ -15,16 +15,14 @@ trait esriGeometryType extends js.Object
 
 object esriGeometryType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def esriGeometryEnvelope: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryEnvelope = "esriGeometryEnvelope".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryEnvelope]
   @scala.inline
-  def esriGeometryEnvelope: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryEnvelope = this.cast("esriGeometryEnvelope")
+  def esriGeometryMultipoint: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryMultipoint = "esriGeometryMultipoint".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryMultipoint]
   @scala.inline
-  def esriGeometryMultipoint: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryMultipoint = this.cast("esriGeometryMultipoint")
+  def esriGeometryPoint: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryPoint = "esriGeometryPoint".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryPoint]
   @scala.inline
-  def esriGeometryPoint: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryPoint = this.cast("esriGeometryPoint")
+  def esriGeometryPolygon: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryPolygon = "esriGeometryPolygon".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryPolygon]
   @scala.inline
-  def esriGeometryPolygon: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryPolygon = this.cast("esriGeometryPolygon")
-  @scala.inline
-  def esriGeometryPolyline: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryPolyline = this.cast("esriGeometryPolyline")
+  def esriGeometryPolyline: typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryPolyline = "esriGeometryPolyline".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriGeometryPolyline]
 }
 

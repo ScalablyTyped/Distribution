@@ -14,7 +14,6 @@ object GitChanges {
   @scala.inline
   def apply(added: Double, deleted: Double, total: Double): GitChanges = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitChanges]
   }
 }

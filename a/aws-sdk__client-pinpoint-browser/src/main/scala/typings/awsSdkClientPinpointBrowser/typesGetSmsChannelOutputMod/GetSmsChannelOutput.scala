@@ -23,7 +23,6 @@ object GetSmsChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, SMSChannelResponse: UnmarshalledSMSChannelResponse): GetSmsChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SMSChannelResponse = SMSChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSmsChannelOutput]
   }
 }

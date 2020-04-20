@@ -15,16 +15,14 @@ trait uSpeed extends js.Object
 
 object uSpeed {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ftSlashs: typings.convertUnits.convertUnitsStrings.ftSlashs = "ft/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.ftSlashs]
   @scala.inline
-  def ftSlashs: typings.convertUnits.convertUnitsStrings.ftSlashs = this.cast("ft/s")
+  def kmSlashh: typings.convertUnits.convertUnitsStrings.kmSlashh = "km/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.kmSlashh]
   @scala.inline
-  def kmSlashh: typings.convertUnits.convertUnitsStrings.kmSlashh = this.cast("km/h")
+  def knot: typings.convertUnits.convertUnitsStrings.knot = "knot".asInstanceOf[typings.convertUnits.convertUnitsStrings.knot]
   @scala.inline
-  def knot: typings.convertUnits.convertUnitsStrings.knot = this.cast("knot")
+  def mSlashh: typings.convertUnits.convertUnitsStrings.mSlashh = "m/h".asInstanceOf[typings.convertUnits.convertUnitsStrings.mSlashh]
   @scala.inline
-  def mSlashh: typings.convertUnits.convertUnitsStrings.mSlashh = this.cast("m/h")
-  @scala.inline
-  def mSlashs: typings.convertUnits.convertUnitsStrings.mSlashs = this.cast("m/s")
+  def mSlashs: typings.convertUnits.convertUnitsStrings.mSlashs = "m/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.mSlashs]
 }
 

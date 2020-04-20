@@ -24,7 +24,7 @@ class WorkspaceFoldersFeature protected ()
   /* protected */ def initializeWithFolders(): Unit = js.native
   /* protected */ def initializeWithFolders(currentWorkspaceFolders: js.Array[WorkspaceFolder]): Unit = js.native
   @JSName("messages")
-  def messages_MWorkspaceFoldersFeature(): MessageType = js.native
+  def messages_MWorkspaceFoldersFeature: MessageType = js.native
   /* protected */ def sendInitialEvent(): Unit = js.native
   /* protected */ def sendInitialEvent(currentWorkspaceFolders: js.Array[WorkspaceFolder]): Unit = js.native
 }

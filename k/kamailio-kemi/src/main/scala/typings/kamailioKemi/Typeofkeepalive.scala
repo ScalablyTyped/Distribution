@@ -12,7 +12,6 @@ object Typeofkeepalive {
   @scala.inline
   def apply(is_alive: String => Double): Typeofkeepalive = {
     val __obj = js.Dynamic.literal(is_alive = js.Any.fromFunction1(is_alive))
-  
     __obj.asInstanceOf[Typeofkeepalive]
   }
 }

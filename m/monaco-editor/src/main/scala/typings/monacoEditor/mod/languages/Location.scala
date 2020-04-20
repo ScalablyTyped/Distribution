@@ -21,7 +21,6 @@ object Location {
   @scala.inline
   def apply(range: IRange, uri: Uri): Location = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Location]
   }
 }

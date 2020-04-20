@@ -75,7 +75,7 @@ object pbrBaseSimpleMaterialMod extends js.Object {
     /**
       * Gets the current double sided mode.
       */
-    def doubleSided(): Boolean = js.native
+    def doubleSided: Boolean = js.native
     /**
       * If sets to true and backfaceCulling is false, normals will be flipped on the backside.
       */

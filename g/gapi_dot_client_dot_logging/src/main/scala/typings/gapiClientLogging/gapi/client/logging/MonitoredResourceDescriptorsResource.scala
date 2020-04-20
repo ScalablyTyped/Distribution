@@ -15,7 +15,6 @@ object MonitoredResourceDescriptorsResource {
   @scala.inline
   def apply(list: AnonPageSize => Request_[ListMonitoredResourceDescriptorsResponse]): MonitoredResourceDescriptorsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[MonitoredResourceDescriptorsResource]
   }
 }

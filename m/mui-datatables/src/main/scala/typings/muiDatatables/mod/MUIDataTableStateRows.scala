@@ -13,7 +13,6 @@ object MUIDataTableStateRows {
   @scala.inline
   def apply(data: js.Array[String], lookup: js.Any): MUIDataTableStateRows = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MUIDataTableStateRows]
   }
 }

@@ -19,7 +19,6 @@ object AnonEntries {
   @scala.inline
   def apply(entries: js.Array[IListEntry], mode: white | black | default | invalid, uris: js.Array[String]): AnonEntries = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], uris = uris.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEntries]
   }
 }

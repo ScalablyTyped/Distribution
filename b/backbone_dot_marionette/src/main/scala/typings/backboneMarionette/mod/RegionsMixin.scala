@@ -36,7 +36,6 @@ object RegionsMixin {
     showChildView: js.Any
   ): RegionsMixin = {
     val __obj = js.Dynamic.literal(addRegion = addRegion.asInstanceOf[js.Any], addRegions = addRegions.asInstanceOf[js.Any], detachChildView = detachChildView.asInstanceOf[js.Any], emptyRegions = emptyRegions.asInstanceOf[js.Any], getChildView = getChildView.asInstanceOf[js.Any], getRegion = getRegion.asInstanceOf[js.Any], getRegions = getRegions.asInstanceOf[js.Any], hasRegion = hasRegion.asInstanceOf[js.Any], regionClass = regionClass.asInstanceOf[js.Any], removeRegion = removeRegion.asInstanceOf[js.Any], removeRegions = removeRegions.asInstanceOf[js.Any], showChildView = showChildView.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegionsMixin]
   }
 }

@@ -54,7 +54,6 @@ object Subscriber {
     onWorkStopped: (Set[Interaction], Double) => Unit
   ): Subscriber = {
     val __obj = js.Dynamic.literal(onInteractionScheduledWorkCompleted = js.Any.fromFunction1(onInteractionScheduledWorkCompleted), onInteractionTraced = js.Any.fromFunction1(onInteractionTraced), onWorkCanceled = js.Any.fromFunction2(onWorkCanceled), onWorkScheduled = js.Any.fromFunction2(onWorkScheduled), onWorkStarted = js.Any.fromFunction2(onWorkStarted), onWorkStopped = js.Any.fromFunction2(onWorkStopped))
-  
     __obj.asInstanceOf[Subscriber]
   }
 }

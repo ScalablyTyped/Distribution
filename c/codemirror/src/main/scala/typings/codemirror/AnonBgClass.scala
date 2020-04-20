@@ -30,7 +30,6 @@ object AnonBgClass {
     wrapClass: String
   ): AnonBgClass = {
     val __obj = js.Dynamic.literal(bgClass = bgClass.asInstanceOf[js.Any], gutterMarkers = gutterMarkers.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textClass = textClass.asInstanceOf[js.Any], widgets = widgets.asInstanceOf[js.Any], wrapClass = wrapClass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBgClass]
   }
 }

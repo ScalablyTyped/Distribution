@@ -12,7 +12,6 @@ object OnTouchModeChangeListener {
   @scala.inline
   def apply(onTouchModeChanged: Boolean => js.Any): OnTouchModeChangeListener = {
     val __obj = js.Dynamic.literal(onTouchModeChanged = js.Any.fromFunction1(onTouchModeChanged))
-  
     __obj.asInstanceOf[OnTouchModeChangeListener]
   }
 }

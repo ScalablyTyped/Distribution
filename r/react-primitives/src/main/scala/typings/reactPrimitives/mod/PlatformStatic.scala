@@ -1,5 +1,6 @@
 package typings.reactPrimitives.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait PlatformStatic extends js.Object {
   def select_default[T](
     specifics: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
-    */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic with js.Any
+    */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic with TopLevel[js.Any]
   ): T
 }
 
@@ -22,10 +23,9 @@ object PlatformStatic {
     Version: Double | String,
     select: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
-    */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic with js.Any => js.Any
+    */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic with TopLevel[js.Any] => js.Any
   ): PlatformStatic = {
     val __obj = js.Dynamic.literal(OS = OS.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], select = js.Any.fromFunction1(select))
-  
     __obj.asInstanceOf[PlatformStatic]
   }
 }

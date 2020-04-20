@@ -12,7 +12,6 @@ object ICompassStatics {
   @scala.inline
   def apply(getDefault: () => Compass): ICompassStatics = {
     val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
-  
     __obj.asInstanceOf[ICompassStatics]
   }
 }

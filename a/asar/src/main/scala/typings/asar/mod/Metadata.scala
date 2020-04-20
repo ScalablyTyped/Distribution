@@ -17,7 +17,6 @@ object Metadata {
   @scala.inline
   def DirectoryMetadata(files: StringDictionary[EntryMetadata], unpacked: Boolean): Metadata = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], unpacked = unpacked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Metadata]
   }
   @scala.inline
@@ -36,7 +35,6 @@ object Metadata {
   @scala.inline
   def LinkMetadata(link: String): Metadata = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Metadata]
   }
 }

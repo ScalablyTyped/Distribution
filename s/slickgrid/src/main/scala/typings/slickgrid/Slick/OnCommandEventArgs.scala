@@ -15,7 +15,6 @@ object OnCommandEventArgs {
   @scala.inline
   def apply[T /* <: SlickData */](button: HeaderButton, column: Column[T], command: String, grid: Grid[T]): OnCommandEventArgs[T] = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnCommandEventArgs[T]]
   }
 }

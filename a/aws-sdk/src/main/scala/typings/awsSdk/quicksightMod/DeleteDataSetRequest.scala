@@ -20,7 +20,6 @@ object DeleteDataSetRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, DataSetId: ResourceId): DeleteDataSetRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDataSetRequest]
   }
 }

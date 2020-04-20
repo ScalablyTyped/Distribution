@@ -24,7 +24,6 @@ object OverridePullRequestApprovalRulesInput {
   @scala.inline
   def apply(overrideStatus: OverrideStatus, pullRequestId: PullRequestId, revisionId: RevisionId): OverridePullRequestApprovalRulesInput = {
     val __obj = js.Dynamic.literal(overrideStatus = overrideStatus.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any], revisionId = revisionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OverridePullRequestApprovalRulesInput]
   }
 }

@@ -27,7 +27,6 @@ object AccountstatusesResource {
     list: AnonMaxResults => Request_[AccountstatusesListResponse]
   ): AccountstatusesResource = {
     val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AccountstatusesResource]
   }
 }

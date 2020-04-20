@@ -60,6 +60,9 @@ object iobrokerStrings {
   sealed trait file extends CommonType
   
   @js.native
+  sealed trait folder extends js.Object
+  
+  @js.native
   sealed trait group extends js.Object
   
   @js.native
@@ -186,6 +189,8 @@ object iobrokerStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
+  def folder: folder = "folder".asInstanceOf[folder]
   @scala.inline
   def group: group = "group".asInstanceOf[group]
   @scala.inline

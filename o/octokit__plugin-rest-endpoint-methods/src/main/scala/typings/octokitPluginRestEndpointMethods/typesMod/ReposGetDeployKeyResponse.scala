@@ -26,7 +26,6 @@ object ReposGetDeployKeyResponse {
     verified: Boolean
   ): ReposGetDeployKeyResponse = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], read_only = read_only.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetDeployKeyResponse]
   }
 }

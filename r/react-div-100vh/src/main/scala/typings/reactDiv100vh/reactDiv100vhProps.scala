@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDiv100vhProps {
   @scala.inline
-  def ReactDiv100vhProps: Div100vhProps.type = typings.reactDiv100vh.mod.Div100vhProps
+  def ReactDiv100vhProps: Div100vhProps.type = Div100vhProps
   type ReactDiv100vhProps = Div100vhProps
 }
 

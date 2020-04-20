@@ -20,22 +20,20 @@ trait HitType extends js.Object
 
 object HitType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def event: typings.googleAnalytics.googleAnalyticsStrings.event = "event".asInstanceOf[typings.googleAnalytics.googleAnalyticsStrings.event]
   @scala.inline
-  def event: typings.googleAnalytics.googleAnalyticsStrings.event = this.cast("event")
+  def exception: typings.googleAnalytics.googleAnalyticsStrings.exception = "exception".asInstanceOf[typings.googleAnalytics.googleAnalyticsStrings.exception]
   @scala.inline
-  def exception: typings.googleAnalytics.googleAnalyticsStrings.exception = this.cast("exception")
+  def item: typings.googleAnalytics.googleAnalyticsStrings.item = "item".asInstanceOf[typings.googleAnalytics.googleAnalyticsStrings.item]
   @scala.inline
-  def item: typings.googleAnalytics.googleAnalyticsStrings.item = this.cast("item")
+  def pageview: typings.googleAnalytics.googleAnalyticsStrings.pageview = "pageview".asInstanceOf[typings.googleAnalytics.googleAnalyticsStrings.pageview]
   @scala.inline
-  def pageview: typings.googleAnalytics.googleAnalyticsStrings.pageview = this.cast("pageview")
+  def screenview: typings.googleAnalytics.googleAnalyticsStrings.screenview = "screenview".asInstanceOf[typings.googleAnalytics.googleAnalyticsStrings.screenview]
   @scala.inline
-  def screenview: typings.googleAnalytics.googleAnalyticsStrings.screenview = this.cast("screenview")
+  def social: typings.googleAnalytics.googleAnalyticsStrings.social = "social".asInstanceOf[typings.googleAnalytics.googleAnalyticsStrings.social]
   @scala.inline
-  def social: typings.googleAnalytics.googleAnalyticsStrings.social = this.cast("social")
+  def timing: typings.googleAnalytics.googleAnalyticsStrings.timing = "timing".asInstanceOf[typings.googleAnalytics.googleAnalyticsStrings.timing]
   @scala.inline
-  def timing: typings.googleAnalytics.googleAnalyticsStrings.timing = this.cast("timing")
-  @scala.inline
-  def transaction: typings.googleAnalytics.googleAnalyticsStrings.transaction = this.cast("transaction")
+  def transaction: typings.googleAnalytics.googleAnalyticsStrings.transaction = "transaction".asInstanceOf[typings.googleAnalytics.googleAnalyticsStrings.transaction]
 }
 

@@ -13,7 +13,6 @@ object Metadata {
   @scala.inline
   def apply(currentFile: String, percent: Double): Metadata = {
     val __obj = js.Dynamic.literal(currentFile = currentFile.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Metadata]
   }
 }

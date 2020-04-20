@@ -31,7 +31,6 @@ object AttributeConverter {
   @scala.inline
   def apply(convert: (String, js.Any) => String, test: (String, js.Any) => Boolean): AttributeConverter = {
     val __obj = js.Dynamic.literal(convert = js.Any.fromFunction2(convert), test = js.Any.fromFunction2(test))
-  
     __obj.asInstanceOf[AttributeConverter]
   }
 }

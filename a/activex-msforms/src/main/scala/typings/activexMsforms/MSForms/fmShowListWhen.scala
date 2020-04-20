@@ -18,14 +18,12 @@ trait fmShowListWhen extends js.Object
 
 object fmShowListWhen {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmShowListWhenAlways: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def fmShowListWhenAlways: `3` = this.cast(3)
+  def fmShowListWhenButton: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmShowListWhenButton: `1` = this.cast(1)
+  def fmShowListWhenFocus: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fmShowListWhenFocus: `2` = this.cast(2)
-  @scala.inline
-  def fmShowListWhenNever: `0` = this.cast(0)
+  def fmShowListWhenNever: `0` = 0.asInstanceOf[`0`]
 }
 

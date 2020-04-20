@@ -15,7 +15,6 @@ object RulesConfig {
   @scala.inline
   def apply(key: String): RulesConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RulesConfig]
   }
 }

@@ -20,7 +20,6 @@ object AssociateTagOptionWithResourceInput {
   @scala.inline
   def apply(ResourceId: ResourceId, TagOptionId: TagOptionId): AssociateTagOptionWithResourceInput = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], TagOptionId = TagOptionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateTagOptionWithResourceInput]
   }
 }

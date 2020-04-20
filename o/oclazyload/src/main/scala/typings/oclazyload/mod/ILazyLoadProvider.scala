@@ -16,7 +16,6 @@ object ILazyLoadProvider {
   @scala.inline
   def apply(config: IProviderConfig => Unit): ILazyLoadProvider = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config))
-  
     __obj.asInstanceOf[ILazyLoadProvider]
   }
 }

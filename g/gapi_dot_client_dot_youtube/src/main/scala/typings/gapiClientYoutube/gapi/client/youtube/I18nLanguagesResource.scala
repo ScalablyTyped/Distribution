@@ -15,7 +15,6 @@ object I18nLanguagesResource {
   @scala.inline
   def apply(list: AnonUserIp => Request_[I18nLanguageListResponse]): I18nLanguagesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[I18nLanguagesResource]
   }
 }

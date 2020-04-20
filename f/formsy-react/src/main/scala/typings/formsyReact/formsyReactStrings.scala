@@ -42,6 +42,12 @@ object formsyReactStrings {
   sealed trait email extends js.Object
   
   @js.native
+  sealed trait errorMessage extends js.Object
+  
+  @js.native
+  sealed trait errorMessages extends js.Object
+  
+  @js.native
   sealed trait execute extends js.Object
   
   @js.native
@@ -51,6 +57,9 @@ object formsyReactStrings {
   sealed trait grid extends js.Object
   
   @js.native
+  sealed trait hasValue extends js.Object
+  
+  @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
@@ -58,6 +67,24 @@ object formsyReactStrings {
   
   @js.native
   sealed trait `inline` extends js.Object
+  
+  @js.native
+  sealed trait isFormDisabled extends js.Object
+  
+  @js.native
+  sealed trait isFormSubmitted extends js.Object
+  
+  @js.native
+  sealed trait isPristine extends js.Object
+  
+  @js.native
+  sealed trait isRequired extends js.Object
+  
+  @js.native
+  sealed trait isValid extends js.Object
+  
+  @js.native
+  sealed trait isValidValue extends js.Object
   
   @js.native
   sealed trait link extends js.Object
@@ -108,10 +135,28 @@ object formsyReactStrings {
   sealed trait popup extends js.Object
   
   @js.native
+  sealed trait ref extends js.Object
+  
+  @js.native
   sealed trait removals extends js.Object
   
   @js.native
+  sealed trait resetValue extends js.Object
+  
+  @js.native
   sealed trait search extends js.Object
+  
+  @js.native
+  sealed trait setValidations extends js.Object
+  
+  @js.native
+  sealed trait setValue extends js.Object
+  
+  @js.native
+  sealed trait showError extends js.Object
+  
+  @js.native
+  sealed trait showRequired extends js.Object
   
   @js.native
   sealed trait spelling extends js.Object
@@ -143,7 +188,7 @@ object formsyReactStrings {
   @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline
-  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
@@ -165,17 +210,35 @@ object formsyReactStrings {
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   @scala.inline
+  def errorMessage: errorMessage = "errorMessage".asInstanceOf[errorMessage]
+  @scala.inline
+  def errorMessages: errorMessages = "errorMessages".asInstanceOf[errorMessages]
+  @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
   @scala.inline
   def grammar: grammar = "grammar".asInstanceOf[grammar]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
+  def hasValue: hasValue = "hasValue".asInstanceOf[hasValue]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  @scala.inline
+  def isFormDisabled: isFormDisabled = "isFormDisabled".asInstanceOf[isFormDisabled]
+  @scala.inline
+  def isFormSubmitted: isFormSubmitted = "isFormSubmitted".asInstanceOf[isFormSubmitted]
+  @scala.inline
+  def isPristine: isPristine = "isPristine".asInstanceOf[isPristine]
+  @scala.inline
+  def isRequired: isRequired = "isRequired".asInstanceOf[isRequired]
+  @scala.inline
+  def isValid: isValid = "isValid".asInstanceOf[isValid]
+  @scala.inline
+  def isValidValue: isValidValue = "isValidValue".asInstanceOf[isValidValue]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
@@ -209,9 +272,21 @@ object formsyReactStrings {
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
+  def ref: ref = "ref".asInstanceOf[ref]
+  @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
+  def resetValue: resetValue = "resetValue".asInstanceOf[resetValue]
+  @scala.inline
   def search: search = "search".asInstanceOf[search]
+  @scala.inline
+  def setValidations: setValidations = "setValidations".asInstanceOf[setValidations]
+  @scala.inline
+  def setValue: setValue = "setValue".asInstanceOf[setValue]
+  @scala.inline
+  def showError: showError = "showError".asInstanceOf[showError]
+  @scala.inline
+  def showRequired: showRequired = "showRequired".asInstanceOf[showRequired]
   @scala.inline
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   @scala.inline

@@ -15,7 +15,6 @@ object TabActiveInfo {
   @scala.inline
   def apply(tabId: Double, windowId: Double): TabActiveInfo = {
     val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabActiveInfo]
   }
 }

@@ -20,7 +20,6 @@ object AddTagsToResourceMessage {
   @scala.inline
   def apply(ResourceName: String, Tags: TagList): AddTagsToResourceMessage = {
     val __obj = js.Dynamic.literal(ResourceName = ResourceName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddTagsToResourceMessage]
   }
 }

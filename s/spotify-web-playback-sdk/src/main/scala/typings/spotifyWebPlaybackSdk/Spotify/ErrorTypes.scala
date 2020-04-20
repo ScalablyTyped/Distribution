@@ -14,14 +14,12 @@ trait ErrorTypes extends js.Object
 
 object ErrorTypes {
   @scala.inline
-  def account_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error = this.cast("account_error")
+  def account_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error = "account_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error]
   @scala.inline
-  def authentication_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error = this.cast("authentication_error")
+  def authentication_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error = "authentication_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def initialization_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error = "initialization_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error]
   @scala.inline
-  def initialization_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error = this.cast("initialization_error")
-  @scala.inline
-  def playback_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error = this.cast("playback_error")
+  def playback_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error = "playback_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error]
 }
 

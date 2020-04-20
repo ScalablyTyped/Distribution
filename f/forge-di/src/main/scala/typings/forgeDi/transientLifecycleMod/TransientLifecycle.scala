@@ -14,7 +14,6 @@ object TransientLifecycle {
     resolve: (typings.forgeDi.resolverMod.default, typings.forgeDi.contextMod.default, Arguments) => js.Any
   ): TransientLifecycle = {
     val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve))
-  
     __obj.asInstanceOf[TransientLifecycle]
   }
 }

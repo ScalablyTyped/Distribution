@@ -21,7 +21,6 @@ object MetagameResource {
     listCategoriesByPlayer: AnonCollection => Request_[CategoryListResponse]
   ): MetagameResource = {
     val __obj = js.Dynamic.literal(getMetagameConfig = js.Any.fromFunction1(getMetagameConfig), listCategoriesByPlayer = js.Any.fromFunction1(listCategoriesByPlayer))
-  
     __obj.asInstanceOf[MetagameResource]
   }
 }

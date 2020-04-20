@@ -12,7 +12,6 @@ object TransportRequestCallback {
   @scala.inline
   def apply(abort: () => Unit): TransportRequestCallback = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
-  
     __obj.asInstanceOf[TransportRequestCallback]
   }
 }

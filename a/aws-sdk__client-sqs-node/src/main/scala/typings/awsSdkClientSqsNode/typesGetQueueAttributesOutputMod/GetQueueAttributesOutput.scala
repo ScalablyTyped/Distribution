@@ -1,5 +1,6 @@
 package typings.awsSdkClientSqsNode.typesGetQueueAttributesOutputMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.awsSdkClientSqsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import scala.scalajs.js
@@ -18,7 +19,7 @@ trait GetQueueAttributesOutput extends OutputTypesUnion {
   var Attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
-    */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.GetQueueAttributesOutput with js.Any
+    */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.GetQueueAttributesOutput with TopLevel[js.Any]
   ] = js.undefined
 }
 
@@ -28,7 +29,7 @@ object GetQueueAttributesOutput {
     $metadata: ResponseMetadata,
     Attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
-    */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.GetQueueAttributesOutput with js.Any = null
+    */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.GetQueueAttributesOutput with TopLevel[js.Any] = null
   ): GetQueueAttributesOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])

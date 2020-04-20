@@ -22,7 +22,6 @@ object SkEnumSkVertexModeTriangl {
     values: js.Array[SkVertexMode]
   ): SkEnumSkVertexModeTriangl = {
     val __obj = js.Dynamic.literal(TriangleFan = TriangleFan.asInstanceOf[js.Any], Triangles = Triangles.asInstanceOf[js.Any], TrianglesStrip = TrianglesStrip.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkVertexModeTriangl]
   }
 }

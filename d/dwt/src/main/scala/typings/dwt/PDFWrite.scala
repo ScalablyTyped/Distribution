@@ -18,7 +18,6 @@ object PDFWrite {
   @scala.inline
   def apply(Setup: js.Any => Unit): PDFWrite = {
     val __obj = js.Dynamic.literal(Setup = js.Any.fromFunction1(Setup))
-  
     __obj.asInstanceOf[PDFWrite]
   }
 }

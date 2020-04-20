@@ -13,12 +13,10 @@ trait InputMetadataType extends js.Object
 
 object InputMetadataType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def directory: typings.asar.asarStrings.directory = "directory".asInstanceOf[typings.asar.asarStrings.directory]
   @scala.inline
-  def directory: typings.asar.asarStrings.directory = this.cast("directory")
+  def file: typings.asar.asarStrings.file = "file".asInstanceOf[typings.asar.asarStrings.file]
   @scala.inline
-  def file: typings.asar.asarStrings.file = this.cast("file")
-  @scala.inline
-  def link: typings.asar.asarStrings.link = this.cast("link")
+  def link: typings.asar.asarStrings.link = "link".asInstanceOf[typings.asar.asarStrings.link]
 }
 

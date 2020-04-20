@@ -13,12 +13,10 @@ trait SuspenseListRevealOrder extends js.Object
 
 object SuspenseListRevealOrder {
   @scala.inline
-  def backwards: typings.react.reactStrings.backwards = this.cast("backwards")
+  def backwards: typings.react.reactStrings.backwards = "backwards".asInstanceOf[typings.react.reactStrings.backwards]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def forwards: typings.react.reactStrings.forwards = "forwards".asInstanceOf[typings.react.reactStrings.forwards]
   @scala.inline
-  def forwards: typings.react.reactStrings.forwards = this.cast("forwards")
-  @scala.inline
-  def together: typings.react.reactStrings.together = this.cast("together")
+  def together: typings.react.reactStrings.together = "together".asInstanceOf[typings.react.reactStrings.together]
 }
 

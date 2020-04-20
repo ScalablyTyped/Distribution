@@ -13,7 +13,6 @@ object AnonScrollOrigin {
   @scala.inline
   def apply(scrollOrigin: SketchMSCurvePoint, zoomValue: Double): AnonScrollOrigin = {
     val __obj = js.Dynamic.literal(scrollOrigin = scrollOrigin.asInstanceOf[js.Any], zoomValue = zoomValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScrollOrigin]
   }
 }

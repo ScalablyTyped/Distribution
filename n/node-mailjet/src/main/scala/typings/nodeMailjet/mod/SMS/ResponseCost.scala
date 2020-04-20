@@ -13,7 +13,6 @@ object ResponseCost {
   @scala.inline
   def apply(Currency: String, Value: Double): ResponseCost = {
     val __obj = js.Dynamic.literal(Currency = Currency.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResponseCost]
   }
 }

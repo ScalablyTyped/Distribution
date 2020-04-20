@@ -14,7 +14,6 @@ object Format {
   @scala.inline
   def apply(canDemux: Boolean, canMux: Boolean, description: String): Format = {
     val __obj = js.Dynamic.literal(canDemux = canDemux.asInstanceOf[js.Any], canMux = canMux.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Format]
   }
 }

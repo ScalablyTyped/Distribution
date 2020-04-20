@@ -24,7 +24,6 @@ object GetDomainSuggestionsRequest {
   @scala.inline
   def apply(DomainName: DomainName, OnlyAvailable: Boolean, SuggestionCount: Integer): GetDomainSuggestionsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], OnlyAvailable = OnlyAvailable.asInstanceOf[js.Any], SuggestionCount = SuggestionCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainSuggestionsRequest]
   }
 }

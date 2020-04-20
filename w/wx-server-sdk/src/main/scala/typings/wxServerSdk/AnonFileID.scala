@@ -12,7 +12,6 @@ object AnonFileID {
   @scala.inline
   def apply(fileID: String): AnonFileID = {
     val __obj = js.Dynamic.literal(fileID = fileID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFileID]
   }
 }

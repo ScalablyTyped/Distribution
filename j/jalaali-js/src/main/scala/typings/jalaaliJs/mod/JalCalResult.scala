@@ -17,7 +17,6 @@ object JalCalResult {
   @scala.inline
   def apply(gy: Double, leap: Double, march: Double): JalCalResult = {
     val __obj = js.Dynamic.literal(gy = gy.asInstanceOf[js.Any], leap = leap.asInstanceOf[js.Any], march = march.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JalCalResult]
   }
 }

@@ -10,7 +10,7 @@ trait reactSplitPaneProps {
   def PaneProps: typings.reactSplitPane.mod.PaneProps.type = typings.reactSplitPane.mod.PaneProps
   type PaneProps = typings.reactSplitPane.mod.PaneProps
   @scala.inline
-  def ReactSplitPaneProps: SplitPaneProps.type = typings.reactSplitPane.mod.SplitPaneProps
+  def ReactSplitPaneProps: SplitPaneProps.type = SplitPaneProps
   type ReactSplitPaneProps = SplitPaneProps
 }
 

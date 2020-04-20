@@ -14,11 +14,13 @@ class SurveyElement protected ()
   /* CompleteClass */
   override var containsErrors: Boolean = js.native
   val data: ISurveyData = js.native
+  var disableDesignActions: Boolean = js.native
   /**
     * The list of errors. It is created by callig hasErrors functions
     * @see hasErrors
     */
   var errors: js.Array[SurveyError] = js.native
+  var isContentElement: Boolean = js.native
   /**
     * Returns true if the question in design mode right now.
     */
@@ -78,12 +80,14 @@ class SurveyElement protected ()
   override def setVisibleIndex(value: Double): Double = js.native
   def updateContainsErrors(): Unit = js.native
   def updateCustomWidgets(): Unit = js.native
+  def updateElementCss(): Unit = js.native
 }
 
 /* static members */
 @JSImport("survey-knockout", "SurveyElement")
 @js.native
 object SurveyElement extends js.Object {
+  var CreateDisabledDesignElements: Boolean = js.native
   def FocusElement(elementId: String): Boolean = js.native
   def GetFirstNonTextElement(elements: js.Any): js.Any = js.native
   def GetFirstNonTextElement(elements: js.Any, removeSpaces: Boolean): js.Any = js.native

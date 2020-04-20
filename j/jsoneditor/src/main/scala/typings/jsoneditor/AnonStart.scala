@@ -15,7 +15,6 @@ object AnonStart {
   @scala.inline
   def apply(end: SelectionPosition, start: SelectionPosition, text: String): AnonStart = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStart]
   }
 }

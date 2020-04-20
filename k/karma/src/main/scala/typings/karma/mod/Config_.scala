@@ -24,7 +24,6 @@ object Config_ {
     set: ConfigOptions => Unit
   ): Config_ = {
     val __obj = js.Dynamic.literal(LOG_DEBUG = LOG_DEBUG.asInstanceOf[js.Any], LOG_DISABLE = LOG_DISABLE.asInstanceOf[js.Any], LOG_ERROR = LOG_ERROR.asInstanceOf[js.Any], LOG_INFO = LOG_INFO.asInstanceOf[js.Any], LOG_WARN = LOG_WARN.asInstanceOf[js.Any], set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[Config_]
   }
 }

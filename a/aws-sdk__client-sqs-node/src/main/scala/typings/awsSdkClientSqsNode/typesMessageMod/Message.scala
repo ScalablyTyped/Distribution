@@ -1,6 +1,7 @@
 package typings.awsSdkClientSqsNode.typesMessageMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.ApproximateFirstReceiveTimestamp
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.ApproximateReceiveCount
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.MessageDeduplicationId
@@ -22,7 +23,7 @@ trait Message extends js.Object {
   var Attributes: js.UndefOr[
     (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-    */ _Message with js.Any) | (Iterable[
+    */ _Message with TopLevel[js.Any]) | (Iterable[
       js.Tuple2[
         SenderId | SentTimestamp | ApproximateReceiveCount | ApproximateFirstReceiveTimestamp | SequenceNumber | MessageDeduplicationId | MessageGroupId | String, 
         String
@@ -62,7 +63,7 @@ object Message {
   def apply(
     Attributes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-    */ _Message with js.Any) | (Iterable[
+    */ _Message with TopLevel[js.Any]) | (Iterable[
       js.Tuple2[
         SenderId | SentTimestamp | ApproximateReceiveCount | ApproximateFirstReceiveTimestamp | SequenceNumber | MessageDeduplicationId | MessageGroupId | String, 
         String

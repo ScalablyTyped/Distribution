@@ -14,7 +14,6 @@ object AnonContentRangeHeaderValue {
   @scala.inline
   def apply(contentRangeHeaderValue: HttpContentRangeHeaderValue, returnValue: Boolean): AnonContentRangeHeaderValue = {
     val __obj = js.Dynamic.literal(contentRangeHeaderValue = contentRangeHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentRangeHeaderValue]
   }
 }

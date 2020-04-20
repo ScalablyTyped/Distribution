@@ -13,7 +13,6 @@ object ApplyCommand {
   @scala.inline
   def apply($apply: js.Function): ApplyCommand = {
     val __obj = js.Dynamic.literal($apply = $apply.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplyCommand]
   }
 }

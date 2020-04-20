@@ -13,7 +13,6 @@ object Data {
   @scala.inline
   def apply(password: String, username: String): Data = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Data]
   }
 }

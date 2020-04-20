@@ -3,6 +3,7 @@ package typings.officeUiFabricReact.teachingBubbleTypesMod
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.officeUiFabricReact.calloutTypesMod.Target
+import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
 import typings.officeUiFabricReact.iaccessiblepopuppropsMod.IAccessiblePopupProps
 import typings.officeUiFabricReact.imageTypesMod.IImageProps
 import typings.officeUiFabricReact.teachingBubbleBaseMod.TeachingBubbleBase
@@ -39,6 +40,10 @@ trait ITeachingBubbleProps
     * the public methods and properties of the component.
     */
   var componentRef: js.UndefOr[IRefObject[ITeachingBubble]] = js.undefined
+  /**
+    * Properties to pass through for FocusTrapZone, reference detail properties in IFocusTrapZoneProps
+    */
+  var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.undefined
   /**
     * Text that will be rendered in the footer of the TeachingBubble.
     * May be rendered alongside primary and secondary buttons.
@@ -115,6 +120,7 @@ object ITeachingBubbleProps {
     componentRef: IRefObject[ITeachingBubble] = null,
     elementToFocusOnDismiss: HTMLElement = null,
     firstFocusableSelector: String | js.Function0[String] = null,
+    focusTrapZoneProps: IFocusTrapZoneProps = null,
     footerContent: String | Element = null,
     forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined,
     hasCloseButton: js.UndefOr[Boolean] = js.undefined,
@@ -144,6 +150,7 @@ object ITeachingBubbleProps {
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (elementToFocusOnDismiss != null) __obj.updateDynamic("elementToFocusOnDismiss")(elementToFocusOnDismiss.asInstanceOf[js.Any])
     if (firstFocusableSelector != null) __obj.updateDynamic("firstFocusableSelector")(firstFocusableSelector.asInstanceOf[js.Any])
+    if (focusTrapZoneProps != null) __obj.updateDynamic("focusTrapZoneProps")(focusTrapZoneProps.asInstanceOf[js.Any])
     if (footerContent != null) __obj.updateDynamic("footerContent")(footerContent.asInstanceOf[js.Any])
     if (!js.isUndefined(forceFocusInsideTrap)) __obj.updateDynamic("forceFocusInsideTrap")(forceFocusInsideTrap.asInstanceOf[js.Any])
     if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton.asInstanceOf[js.Any])

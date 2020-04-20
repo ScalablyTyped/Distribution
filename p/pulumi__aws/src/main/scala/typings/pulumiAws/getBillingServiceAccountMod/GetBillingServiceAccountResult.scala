@@ -20,7 +20,6 @@ object GetBillingServiceAccountResult {
   @scala.inline
   def apply(arn: String, id: String): GetBillingServiceAccountResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBillingServiceAccountResult]
   }
 }

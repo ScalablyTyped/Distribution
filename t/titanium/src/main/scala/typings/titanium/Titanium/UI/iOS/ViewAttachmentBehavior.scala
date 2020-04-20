@@ -2,9 +2,7 @@ package typings.titanium.Titanium.UI.iOS
 
 import typings.titanium.Point
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.View
-import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,135 +10,106 @@ import scala.scalajs.js.annotation._
 /**
 			 * Dynamic behavior to support connections between two items.
 			 */
-trait ViewAttachmentBehavior extends Proxy {
+@JSGlobal("Titanium.UI.iOS.ViewAttachmentBehavior")
+@js.native
+class ViewAttachmentBehavior () extends Proxy {
   /**
   				 * Item to use as the anchor in this behavior.
   				 */
-  var anchorItem: View
+  var anchorItem: View = js.native
   /**
   				 * Offset from the center point of the anchor item for the attachment.
   				 */
-  var anchorOffset: Point
+  var anchorOffset: Point = js.native
   /**
   				 * Amount of damping to apply to the attachment behavior.
   				 */
-  var damping: Double
+  var damping: Double = js.native
   /**
   				 * Distance, in points, between the two attachment points.
   				 */
-  var distance: Double
+  var distance: Double = js.native
   /**
   				 * Frequency of oscillation for the behavior.
   				 */
-  var frequency: Double
+  var frequency: Double = js.native
   /**
   				 * Item to connect to use the attachment behavior.
   				 */
-  var item: View
+  var item: View = js.native
   /**
   				 * Offset from the center point of the item for the attachment.
   				 */
-  var itemOffset: Point
+  var itemOffset: Point = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.anchorItem> property.
+  				 * @deprecated Access <Titanium.UI.iOS.ViewAttachmentBehavior.anchorItem> instead.
   				 */
-  def getAnchorItem(): View
+  def getAnchorItem(): View = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.anchorOffset> property.
+  				 * @deprecated Access <Titanium.UI.iOS.ViewAttachmentBehavior.anchorOffset> instead.
   				 */
-  def getAnchorOffset(): Point
+  def getAnchorOffset(): Point = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.damping> property.
+  				 * @deprecated Access <Titanium.UI.iOS.ViewAttachmentBehavior.damping> instead.
   				 */
-  def getDamping(): Double
+  def getDamping(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.distance> property.
+  				 * @deprecated Access <Titanium.UI.iOS.ViewAttachmentBehavior.distance> instead.
   				 */
-  def getDistance(): Double
+  def getDistance(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.frequency> property.
+  				 * @deprecated Access <Titanium.UI.iOS.ViewAttachmentBehavior.frequency> instead.
   				 */
-  def getFrequency(): Double
+  def getFrequency(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.item> property.
+  				 * @deprecated Access <Titanium.UI.iOS.ViewAttachmentBehavior.item> instead.
   				 */
-  def getItem(): View
+  def getItem(): View = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.itemOffset> property.
+  				 * @deprecated Access <Titanium.UI.iOS.ViewAttachmentBehavior.itemOffset> instead.
   				 */
-  def getItemOffset(): Point
+  def getItemOffset(): Point = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.anchorItem> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.ViewAttachmentBehavior.anchorItem> instead.
   				 */
-  def setAnchorItem(anchorItem: js.Any): Unit
+  def setAnchorItem(anchorItem: View): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.anchorOffset> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.ViewAttachmentBehavior.anchorOffset> instead.
   				 */
-  def setAnchorOffset(anchorOffset: Point): Unit
+  def setAnchorOffset(anchorOffset: Point): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.damping> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.ViewAttachmentBehavior.damping> instead.
   				 */
-  def setDamping(damping: Double): Unit
+  def setDamping(damping: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.distance> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.ViewAttachmentBehavior.distance> instead.
   				 */
-  def setDistance(distance: Double): Unit
+  def setDistance(distance: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.frequency> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.ViewAttachmentBehavior.frequency> instead.
   				 */
-  def setFrequency(frequency: Double): Unit
+  def setFrequency(frequency: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.item> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.ViewAttachmentBehavior.item> instead.
   				 */
-  def setItem(item: js.Any): Unit
+  def setItem(item: View): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.ViewAttachmentBehavior.itemOffset> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.ViewAttachmentBehavior.itemOffset> instead.
   				 */
-  def setItemOffset(itemOffset: Point): Unit
-}
-
-object ViewAttachmentBehavior {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    anchorItem: View,
-    anchorOffset: Point,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    damping: Double,
-    distance: Double,
-    fireEvent: (String, js.Any) => Unit,
-    frequency: Double,
-    getAnchorItem: () => View,
-    getAnchorOffset: () => Point,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getDamping: () => Double,
-    getDistance: () => Double,
-    getFrequency: () => Double,
-    getItem: () => View,
-    getItemOffset: () => Point,
-    item: View,
-    itemOffset: Point,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setAnchorItem: js.Any => Unit,
-    setAnchorOffset: Point => Unit,
-    setBubbleParent: Boolean => Unit,
-    setDamping: Double => Unit,
-    setDistance: Double => Unit,
-    setFrequency: Double => Unit,
-    setItem: js.Any => Unit,
-    setItemOffset: Point => Unit,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): ViewAttachmentBehavior = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), anchorItem = anchorItem.asInstanceOf[js.Any], anchorOffset = anchorOffset.asInstanceOf[js.Any], apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], damping = damping.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), frequency = frequency.asInstanceOf[js.Any], getAnchorItem = js.Any.fromFunction0(getAnchorItem), getAnchorOffset = js.Any.fromFunction0(getAnchorOffset), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDamping = js.Any.fromFunction0(getDamping), getDistance = js.Any.fromFunction0(getDistance), getFrequency = js.Any.fromFunction0(getFrequency), getItem = js.Any.fromFunction0(getItem), getItemOffset = js.Any.fromFunction0(getItemOffset), item = item.asInstanceOf[js.Any], itemOffset = itemOffset.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), setAnchorItem = js.Any.fromFunction1(setAnchorItem), setAnchorOffset = js.Any.fromFunction1(setAnchorOffset), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setDamping = js.Any.fromFunction1(setDamping), setDistance = js.Any.fromFunction1(setDistance), setFrequency = js.Any.fromFunction1(setFrequency), setItem = js.Any.fromFunction1(setItem), setItemOffset = js.Any.fromFunction1(setItemOffset))
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ViewAttachmentBehavior]
-  }
+  def setItemOffset(itemOffset: Point): Unit = js.native
 }
 

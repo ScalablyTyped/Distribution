@@ -15,16 +15,14 @@ trait ContextFromPropsKey extends js.Object
 
 object ContextFromPropsKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
   @scala.inline
-  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = this.cast("disabled")
+  def error: typings.materialUiCore.materialUiCoreStrings.error = "error".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.error]
   @scala.inline
-  def error: typings.materialUiCore.materialUiCoreStrings.error = this.cast("error")
+  def margin: typings.materialUiCore.materialUiCoreStrings.margin = "margin".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.margin]
   @scala.inline
-  def margin: typings.materialUiCore.materialUiCoreStrings.margin = this.cast("margin")
+  def required: typings.materialUiCore.materialUiCoreStrings.required = "required".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.required]
   @scala.inline
-  def required: typings.materialUiCore.materialUiCoreStrings.required = this.cast("required")
-  @scala.inline
-  def variant: typings.materialUiCore.materialUiCoreStrings.variant = this.cast("variant")
+  def variant: typings.materialUiCore.materialUiCoreStrings.variant = "variant".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.variant]
 }
 

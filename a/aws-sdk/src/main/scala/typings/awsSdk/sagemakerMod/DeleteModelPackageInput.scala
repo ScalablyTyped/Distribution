@@ -16,7 +16,6 @@ object DeleteModelPackageInput {
   @scala.inline
   def apply(ModelPackageName: EntityName): DeleteModelPackageInput = {
     val __obj = js.Dynamic.literal(ModelPackageName = ModelPackageName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteModelPackageInput]
   }
 }

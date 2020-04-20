@@ -20,26 +20,24 @@ trait Event extends js.Object
 
 object Event {
   @scala.inline
-  def actionTapped: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.actionTapped = this.cast("actionTapped")
+  def actionTapped: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.actionTapped = "actionTapped".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.actionTapped]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def depersonalized: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.depersonalized = "depersonalized".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.depersonalized]
   @scala.inline
-  def depersonalized: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.depersonalized = this.cast("depersonalized")
+  def geofenceEntered: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.geofenceEntered = "geofenceEntered".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.geofenceEntered]
   @scala.inline
-  def geofenceEntered: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.geofenceEntered = this.cast("geofenceEntered")
+  def installationUpdated: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.installationUpdated = "installationUpdated".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.installationUpdated]
   @scala.inline
-  def installationUpdated: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.installationUpdated = this.cast("installationUpdated")
+  def messageReceived: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.messageReceived = "messageReceived".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.messageReceived]
   @scala.inline
-  def messageReceived: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.messageReceived = this.cast("messageReceived")
+  def notificationTapped: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.notificationTapped = "notificationTapped".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.notificationTapped]
   @scala.inline
-  def notificationTapped: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.notificationTapped = this.cast("notificationTapped")
+  def personalized: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.personalized = "personalized".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.personalized]
   @scala.inline
-  def personalized: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.personalized = this.cast("personalized")
+  def registrationUpdated: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.registrationUpdated = "registrationUpdated".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.registrationUpdated]
   @scala.inline
-  def registrationUpdated: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.registrationUpdated = this.cast("registrationUpdated")
+  def tokenReceived: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.tokenReceived = "tokenReceived".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.tokenReceived]
   @scala.inline
-  def tokenReceived: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.tokenReceived = this.cast("tokenReceived")
-  @scala.inline
-  def userUpdated: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.userUpdated = this.cast("userUpdated")
+  def userUpdated: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.userUpdated = "userUpdated".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.userUpdated]
 }
 

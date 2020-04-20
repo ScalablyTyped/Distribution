@@ -32,7 +32,6 @@ object StatementVisitor {
     visitTryCatchStmt: (TryCatchStmt, js.Any) => js.Any
   ): StatementVisitor = {
     val __obj = js.Dynamic.literal(visitCommentStmt = js.Any.fromFunction2(visitCommentStmt), visitDeclareClassStmt = js.Any.fromFunction2(visitDeclareClassStmt), visitDeclareFunctionStmt = js.Any.fromFunction2(visitDeclareFunctionStmt), visitDeclareVarStmt = js.Any.fromFunction2(visitDeclareVarStmt), visitExpressionStmt = js.Any.fromFunction2(visitExpressionStmt), visitIfStmt = js.Any.fromFunction2(visitIfStmt), visitJSDocCommentStmt = js.Any.fromFunction2(visitJSDocCommentStmt), visitReturnStmt = js.Any.fromFunction2(visitReturnStmt), visitThrowStmt = js.Any.fromFunction2(visitThrowStmt), visitTryCatchStmt = js.Any.fromFunction2(visitTryCatchStmt))
-  
     __obj.asInstanceOf[StatementVisitor]
   }
 }

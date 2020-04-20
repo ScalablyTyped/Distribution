@@ -46,7 +46,6 @@ object EmailTemplates {
     rewriteUrls: (JQueryStatic, js.Function1[/* href */ String, Unit]) => Unit
   ): EmailTemplates = {
     val __obj = js.Dynamic.literal(generateSubject = js.Any.fromFunction3(generateSubject), generateText = js.Any.fromFunction4(generateText), render = js.Any.fromFunction3(render), rewriteUrls = js.Any.fromFunction2(rewriteUrls))
-  
     __obj.asInstanceOf[EmailTemplates]
   }
 }

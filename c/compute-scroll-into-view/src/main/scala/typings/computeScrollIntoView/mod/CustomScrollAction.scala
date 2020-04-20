@@ -15,7 +15,6 @@ object CustomScrollAction {
   @scala.inline
   def apply(el: Element, left: Double, top: Double): CustomScrollAction = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomScrollAction]
   }
 }

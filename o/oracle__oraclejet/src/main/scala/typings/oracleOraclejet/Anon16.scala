@@ -13,7 +13,6 @@ object Anon16 {
   @scala.inline
   def apply[K, D](renderer: RootNodeContext[K, D] => AnonInsert): Anon16[K, D] = {
     val __obj = js.Dynamic.literal(renderer = js.Any.fromFunction1(renderer))
-  
     __obj.asInstanceOf[Anon16[K, D]]
   }
 }

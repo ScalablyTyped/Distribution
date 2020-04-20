@@ -25,7 +25,6 @@ object IEntity {
   @scala.inline
   def apply(__identifier__ : String, __type__ : entity | item_entity, id: Double): IEntity = {
     val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEntity]
   }
 }

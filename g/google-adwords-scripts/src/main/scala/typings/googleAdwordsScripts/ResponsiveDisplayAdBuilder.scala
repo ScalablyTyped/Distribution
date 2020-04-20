@@ -32,7 +32,6 @@ object ResponsiveDisplayAdBuilder {
     withTrackingTemplate: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
   ): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withBusinessName = js.Any.fromFunction1(withBusinessName), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withDescription = js.Any.fromFunction1(withDescription), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withLogoImage = js.Any.fromFunction1(withLogoImage), withLongHeadline = js.Any.fromFunction1(withLongHeadline), withMarketingImage = js.Any.fromFunction1(withMarketingImage), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withShortHeadline = js.Any.fromFunction1(withShortHeadline), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
-  
     __obj.asInstanceOf[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]
   }
 }

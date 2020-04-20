@@ -40,36 +40,34 @@ trait fmMousePointer extends js.Object
 
 object fmMousePointer {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmMousePointerAppStarting: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def fmMousePointerAppStarting: `13` = this.cast(13)
+  def fmMousePointerArrow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmMousePointerArrow: `1` = this.cast(1)
+  def fmMousePointerCross: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fmMousePointerCross: `2` = this.cast(2)
+  def fmMousePointerCustom: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def fmMousePointerCustom: `99` = this.cast(99)
+  def fmMousePointerDefault: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmMousePointerDefault: `0` = this.cast(0)
+  def fmMousePointerHelp: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def fmMousePointerHelp: `14` = this.cast(14)
+  def fmMousePointerHourGlass: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def fmMousePointerHourGlass: `11` = this.cast(11)
+  def fmMousePointerIBeam: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def fmMousePointerIBeam: `3` = this.cast(3)
+  def fmMousePointerNoDrop: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def fmMousePointerNoDrop: `12` = this.cast(12)
+  def fmMousePointerSizeAll: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def fmMousePointerSizeAll: `15` = this.cast(15)
+  def fmMousePointerSizeNESW: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def fmMousePointerSizeNESW: `6` = this.cast(6)
+  def fmMousePointerSizeNS: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def fmMousePointerSizeNS: `7` = this.cast(7)
+  def fmMousePointerSizeNWSE: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def fmMousePointerSizeNWSE: `8` = this.cast(8)
+  def fmMousePointerSizeWE: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def fmMousePointerSizeWE: `9` = this.cast(9)
-  @scala.inline
-  def fmMousePointerUpArrow: `10` = this.cast(10)
+  def fmMousePointerUpArrow: `10` = 10.asInstanceOf[`10`]
 }
 

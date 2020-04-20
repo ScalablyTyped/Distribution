@@ -12,10 +12,8 @@ trait HookStatus extends js.Object
 
 object HookStatus {
   @scala.inline
-  def DISABLED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DISABLED = this.cast("DISABLED")
+  def DISABLED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DISABLED = "DISABLED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DISABLED]
   @scala.inline
-  def ENABLED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ENABLED = this.cast("ENABLED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ENABLED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ENABLED = "ENABLED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ENABLED]
 }
 

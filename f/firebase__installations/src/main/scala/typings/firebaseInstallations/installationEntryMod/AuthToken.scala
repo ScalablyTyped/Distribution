@@ -18,19 +18,16 @@ object AuthToken {
   @scala.inline
   def NotStartedAuthToken(requestStatus: `0`): AuthToken = {
     val __obj = js.Dynamic.literal(requestStatus = requestStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthToken]
   }
   @scala.inline
   def InProgressAuthToken(requestStatus: `1`, requestTime: Double): AuthToken = {
     val __obj = js.Dynamic.literal(requestStatus = requestStatus.asInstanceOf[js.Any], requestTime = requestTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthToken]
   }
   @scala.inline
   def CompletedAuthToken(creationTime: Double, expiresIn: Double, requestStatus: `2`, token: String): AuthToken = {
     val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], requestStatus = requestStatus.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthToken]
   }
 }

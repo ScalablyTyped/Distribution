@@ -20,7 +20,7 @@ class OutputAudioConfig () extends IOutputAudioConfig {
   def this(properties: IOutputAudioConfig) = this()
   /** OutputAudioConfig audioEncoding. */
   @JSName("audioEncoding")
-  var audioEncoding_OutputAudioConfig: OutputAudioEncoding | String = js.native
+  var audioEncoding_OutputAudioConfig: OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.OutputAudioEncoding * / any */ String) = js.native
   /** OutputAudioConfig sampleRateHertz. */
   @JSName("sampleRateHertz")
   var sampleRateHertz_OutputAudioConfig: Double = js.native

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IControlledStateOptions[TProps, TProp /* <: String */, TDefaultProp /* <: String */] extends js.Object {
+trait IControlledStateOptions[TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */] extends js.Object {
   var defaultPropName: js.UndefOr[TDefaultProp] = js.undefined
   var defaultPropValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
@@ -13,7 +13,7 @@ trait IControlledStateOptions[TProps, TProp /* <: String */, TDefaultProp /* <: 
 
 object IControlledStateOptions {
   @scala.inline
-  def apply[TProps, TProp /* <: String */, TDefaultProp /* <: String */](
+  def apply[TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */](
     defaultPropName: TDefaultProp = null,
     defaultPropValue: /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any = null
   ): IControlledStateOptions[TProps, TProp, TDefaultProp] = {

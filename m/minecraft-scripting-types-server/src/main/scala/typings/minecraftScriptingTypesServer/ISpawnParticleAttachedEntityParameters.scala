@@ -30,7 +30,6 @@ object ISpawnParticleAttachedEntityParameters {
   @scala.inline
   def apply(effect: ParticleEffect, entity: IEntity, offset: VectorArray): ISpawnParticleAttachedEntityParameters = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], entity = entity.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISpawnParticleAttachedEntityParameters]
   }
 }

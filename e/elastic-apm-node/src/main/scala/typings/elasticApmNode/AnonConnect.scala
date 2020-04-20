@@ -13,7 +13,6 @@ object AnonConnect {
   @scala.inline
   def apply(connect: () => ErrorHandleFunction): AnonConnect = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect))
-  
     __obj.asInstanceOf[AnonConnect]
   }
 }

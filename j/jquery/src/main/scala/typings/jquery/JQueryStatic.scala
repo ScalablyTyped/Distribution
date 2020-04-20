@@ -167,6 +167,24 @@ trait JQueryStatic extends js.Object {
     */
   // tslint:disable-next-line:no-unnecessary-generics unified-signatures
   def apply[TElement](callback: js.ThisFunction1[/* this */ Document_, /* $ */ this.type, Unit]): JQuery_[TElement] = js.native
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+    * @param element_elementArray _&#x40;param_ `element_elementArray`
+    * <br>
+    * * `element` — A DOM element to wrap in a jQuery object. <br>
+    * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    * @example ​ ````Set the background color of the page to black.
+  ```javascript
+  $( document.body ).css( "background", "black" );
+  ```
+    * @example ​ ````Hide all the input elements within a form.
+  ```javascript
+  $( myForm.elements ).hide();
+  ```
+    */
+  def apply[T /* <: Element */](element_elementArray: T): JQuery_[T] = js.native
   def apply[T /* <: Element */](element_elementArray: ArrayLike[T]): JQuery_[T] = js.native
   /**
     * Creates DOM elements on the fly from the provided string of raw HTML.
@@ -201,13 +219,6 @@ trait JQueryStatic extends js.Object {
   def apply[TElement /* <: HTMLElement */](html: htmlString): JQuery_[TElement] = js.native
   def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[_]): JQuery_[TElement] = js.native
   def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document_): JQuery_[TElement] = js.native
-  /**
-    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-    * @param object A plain object to wrap in a jQuery object.
-    * @see \`{@link https://api.jquery.com/jQuery/ }\`
-    * @since 1.0
-    */
-  def apply[T /* <: PlainObject[_] */](`object`: T): JQuery_[T] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param selection An existing jQuery object to clone.
@@ -774,7 +785,7 @@ trait JQueryStatic extends js.Object {
   });
   ```
     */
-  def each[T, K /* <: String */](
+  def each[T, K /* <: /* keyof T */ String */](
     obj: T,
     callback: js.ThisFunction2[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* this */ js.Any, 
@@ -2491,7 +2502,7 @@ trait JQueryStatic extends js.Object {
   });
   ```
     */
-  def map[T, K /* <: String */, TReturn](
+  def map[T, K /* <: /* keyof T */ String */, TReturn](
     obj: T,
     callback: js.ThisFunction2[
       /* this */ Window_, 
@@ -2993,7 +3004,7 @@ trait JQueryStatic extends js.Object {
   </html>
   ```
     */
-  def proxy[TContext](context: TContext, name: String, additionalArguments: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
+  def proxy[TContext](context: TContext, name: /* keyof TContext */ String, additionalArguments: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.

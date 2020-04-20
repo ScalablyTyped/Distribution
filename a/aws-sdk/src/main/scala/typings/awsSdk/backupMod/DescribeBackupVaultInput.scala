@@ -16,7 +16,6 @@ object DescribeBackupVaultInput {
   @scala.inline
   def apply(BackupVaultName: String): DescribeBackupVaultInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeBackupVaultInput]
   }
 }

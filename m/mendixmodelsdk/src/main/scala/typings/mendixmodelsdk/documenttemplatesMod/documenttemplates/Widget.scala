@@ -26,9 +26,9 @@ abstract class Widget protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FWidget: IModel = js.native
-  def containerAsDocumentTemplate(): DocumentTemplate = js.native
-  def containerAsDropZone(): DropZone = js.native
-  def name(): String = js.native
+  def containerAsDocumentTemplate: DocumentTemplate = js.native
+  def containerAsDropZone: DropZone = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
 }
 

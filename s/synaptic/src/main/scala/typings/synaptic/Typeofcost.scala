@@ -18,7 +18,6 @@ object Typeofcost {
     MSE: (js.Array[Double], js.Array[Double]) => Double
   ): Typeofcost = {
     val __obj = js.Dynamic.literal(BINARY = js.Any.fromFunction2(BINARY), CROSS_ENTROPY = js.Any.fromFunction2(CROSS_ENTROPY), MSE = js.Any.fromFunction2(MSE))
-  
     __obj.asInstanceOf[Typeofcost]
   }
 }

@@ -16,7 +16,6 @@ object DeleteVPCEConfigurationRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): DeleteVPCEConfigurationRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVPCEConfigurationRequest]
   }
 }

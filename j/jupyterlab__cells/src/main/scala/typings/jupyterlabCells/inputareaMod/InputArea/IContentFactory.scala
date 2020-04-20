@@ -34,7 +34,6 @@ object IContentFactory {
     editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor
   ): IContentFactory = {
     val __obj = js.Dynamic.literal(createInputPrompt = js.Any.fromFunction0(createInputPrompt), editorFactory = js.Any.fromFunction1(editorFactory))
-  
     __obj.asInstanceOf[IContentFactory]
   }
 }

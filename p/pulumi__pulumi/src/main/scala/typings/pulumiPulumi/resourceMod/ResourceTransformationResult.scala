@@ -20,7 +20,6 @@ object ResourceTransformationResult {
   @scala.inline
   def apply(opts: ResourceOptions, props: Inputs): ResourceTransformationResult = {
     val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceTransformationResult]
   }
 }

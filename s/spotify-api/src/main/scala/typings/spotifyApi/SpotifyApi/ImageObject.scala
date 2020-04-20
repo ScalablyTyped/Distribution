@@ -9,8 +9,17 @@ import scala.scalajs.js.annotation._
   * [](https://developer.spotify.com/web-api/object-model/)
   */
 trait ImageObject extends js.Object {
+  /**
+    * The image height in pixels. If unknown: `null` or not returned.
+    */
   var height: js.UndefOr[Double] = js.undefined
+  /**
+    * The source URL of the image.
+    */
   var url: String
+  /**
+    * The image width in pixels. If unknown: null or not returned.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 

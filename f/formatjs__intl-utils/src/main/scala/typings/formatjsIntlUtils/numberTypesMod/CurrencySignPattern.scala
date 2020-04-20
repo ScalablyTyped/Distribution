@@ -13,7 +13,6 @@ object CurrencySignPattern {
   @scala.inline
   def apply(accounting: SignDisplayPattern, standard: SignDisplayPattern): CurrencySignPattern = {
     val __obj = js.Dynamic.literal(accounting = accounting.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CurrencySignPattern]
   }
 }

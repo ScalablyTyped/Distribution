@@ -13,7 +13,6 @@ object IAddOns {
   @scala.inline
   def apply(uses: addons): IAddOns = {
     val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAddOns]
   }
 }

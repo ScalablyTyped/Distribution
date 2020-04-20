@@ -66,7 +66,6 @@ object FeatureLayerCapabilities {
     queryRelated: FeatureLayerCapabilitiesQueryRelated
   ): FeatureLayerCapabilities = {
     val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), metadata = metadata.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatureLayerCapabilities]
   }
 }

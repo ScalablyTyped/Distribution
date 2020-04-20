@@ -51,7 +51,6 @@ object InstructionState {
   @scala.inline
   def apply(bindingsEnabled: Boolean, checkNoChangesMode: Boolean, lFrame: LFrame): InstructionState = {
     val __obj = js.Dynamic.literal(bindingsEnabled = bindingsEnabled.asInstanceOf[js.Any], checkNoChangesMode = checkNoChangesMode.asInstanceOf[js.Any], lFrame = lFrame.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstructionState]
   }
 }

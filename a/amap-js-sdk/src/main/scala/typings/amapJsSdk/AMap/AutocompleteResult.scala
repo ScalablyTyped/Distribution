@@ -14,7 +14,6 @@ object AutocompleteResult {
   @scala.inline
   def apply(count: Double, info: String, tips: js.Array[Tip]): AutocompleteResult = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AutocompleteResult]
   }
 }

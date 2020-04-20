@@ -13,7 +13,6 @@ object PullsUpdateBranchResponse {
   @scala.inline
   def apply(message: String, url: String): PullsUpdateBranchResponse = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsUpdateBranchResponse]
   }
 }

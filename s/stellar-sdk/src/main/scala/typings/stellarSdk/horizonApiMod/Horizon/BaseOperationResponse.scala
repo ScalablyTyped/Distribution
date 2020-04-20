@@ -1,5 +1,6 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
+import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.stellarSdkStrings.effects
 import typings.stellarSdk.stellarSdkStrings.precedes
 import typings.stellarSdk.stellarSdkStrings.succeeds
@@ -23,7 +24,7 @@ object BaseOperationResponse {
   def apply[T /* <: OperationResponseType */, TI /* <: OperationResponseTypeI */](
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
-    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with js.Any,
+    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],
     created_at: String,
     id: String,
     paging_token: String,

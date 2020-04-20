@@ -20,7 +20,6 @@ object Path {
   @scala.inline
   def apply(getValueFrom: (js.Any, js.Any) => js.Any): Path = {
     val __obj = js.Dynamic.literal(getValueFrom = js.Any.fromFunction2(getValueFrom))
-  
     __obj.asInstanceOf[Path]
   }
 }

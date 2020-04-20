@@ -24,7 +24,6 @@ object DirectThreadRepositoryApproveParticipantRequestResponseStoryShare {
     text: Null
   ): DirectThreadRepositoryApproveParticipantRequestResponseStoryShare = {
     val __obj = js.Dynamic.literal(is_reel_persisted = is_reel_persisted.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], reel_id = reel_id.asInstanceOf[js.Any], reel_type = reel_type.asInstanceOf[js.Any], story_share_type = story_share_type.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseStoryShare]
   }
 }

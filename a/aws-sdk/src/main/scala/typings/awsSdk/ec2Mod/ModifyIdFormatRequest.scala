@@ -20,7 +20,6 @@ object ModifyIdFormatRequest {
   @scala.inline
   def apply(Resource: String, UseLongIds: Boolean): ModifyIdFormatRequest = {
     val __obj = js.Dynamic.literal(Resource = Resource.asInstanceOf[js.Any], UseLongIds = UseLongIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyIdFormatRequest]
   }
 }

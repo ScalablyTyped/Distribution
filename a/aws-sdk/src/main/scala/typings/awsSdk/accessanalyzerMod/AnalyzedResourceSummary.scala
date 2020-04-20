@@ -24,7 +24,6 @@ object AnalyzedResourceSummary {
   @scala.inline
   def apply(resourceArn: ResourceArn, resourceOwnerAccount: String, resourceType: ResourceType): AnalyzedResourceSummary = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], resourceOwnerAccount = resourceOwnerAccount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyzedResourceSummary]
   }
 }

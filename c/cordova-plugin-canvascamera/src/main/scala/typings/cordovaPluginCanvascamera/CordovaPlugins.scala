@@ -15,7 +15,6 @@ object CordovaPlugins {
   @scala.inline
   def apply(CanvasCamera: CanvasCamera): CordovaPlugins = {
     val __obj = js.Dynamic.literal(CanvasCamera = CanvasCamera.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

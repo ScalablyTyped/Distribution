@@ -13,7 +13,6 @@ object TypeofForecastService {
   @scala.inline
   def apply(Types: TypeofForecastService): TypeofForecastService = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofForecastService]
   }
 }

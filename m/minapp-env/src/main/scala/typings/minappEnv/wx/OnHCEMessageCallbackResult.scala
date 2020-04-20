@@ -24,7 +24,6 @@ object OnHCEMessageCallbackResult {
   @scala.inline
   def apply(data: ArrayBuffer, messageType: `1` | `2`, reason: Double): OnHCEMessageCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnHCEMessageCallbackResult]
   }
 }

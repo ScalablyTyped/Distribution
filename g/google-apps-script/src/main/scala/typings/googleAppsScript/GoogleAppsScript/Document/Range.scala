@@ -39,7 +39,6 @@ object Range {
   @scala.inline
   def apply(getRangeElements: () => js.Array[RangeElement], getSelectedElements: () => js.Array[RangeElement]): Range = {
     val __obj = js.Dynamic.literal(getRangeElements = js.Any.fromFunction0(getRangeElements), getSelectedElements = js.Any.fromFunction0(getSelectedElements))
-  
     __obj.asInstanceOf[Range]
   }
 }

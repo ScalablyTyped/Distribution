@@ -17,16 +17,14 @@ trait IPHandlingPolicy extends js.Object
 
 object IPHandlingPolicy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default = "default".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default]
   @scala.inline
-  def default: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default = this.cast("default")
+  def default_public_and_private_interfaces: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_and_private_interfaces = "default_public_and_private_interfaces".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_and_private_interfaces]
   @scala.inline
-  def default_public_and_private_interfaces: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_and_private_interfaces = this.cast("default_public_and_private_interfaces")
+  def default_public_interface_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_interface_only = "default_public_interface_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_interface_only]
   @scala.inline
-  def default_public_interface_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.default_public_interface_only = this.cast("default_public_interface_only")
+  def disable_non_proxied_udp: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disable_non_proxied_udp = "disable_non_proxied_udp".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disable_non_proxied_udp]
   @scala.inline
-  def disable_non_proxied_udp: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disable_non_proxied_udp = this.cast("disable_non_proxied_udp")
-  @scala.inline
-  def proxy_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.proxy_only = this.cast("proxy_only")
+  def proxy_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.proxy_only = "proxy_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.proxy_only]
 }
 

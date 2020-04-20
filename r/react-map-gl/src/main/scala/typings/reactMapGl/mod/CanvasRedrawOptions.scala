@@ -19,7 +19,6 @@ object CanvasRedrawOptions {
     width: Double
   ): CanvasRedrawOptions = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], project = js.Any.fromFunction1(project), unproject = js.Any.fromFunction1(unproject), width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CanvasRedrawOptions]
   }
 }

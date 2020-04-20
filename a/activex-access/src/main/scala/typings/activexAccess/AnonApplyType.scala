@@ -13,7 +13,6 @@ object AnonApplyType {
   @scala.inline
   def apply(ApplyType: Double, Cancel: Double): AnonApplyType = {
     val __obj = js.Dynamic.literal(ApplyType = ApplyType.asInstanceOf[js.Any], Cancel = Cancel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonApplyType]
   }
 }

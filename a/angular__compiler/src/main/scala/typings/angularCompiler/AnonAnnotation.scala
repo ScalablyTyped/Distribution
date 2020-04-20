@@ -15,7 +15,6 @@ object AnonAnnotation {
   @scala.inline
   def apply(annotation: Directive, metadata: CompileDirectiveMetadata): AnonAnnotation = {
     val __obj = js.Dynamic.literal(annotation = annotation.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnnotation]
   }
 }

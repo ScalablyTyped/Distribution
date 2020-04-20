@@ -22,7 +22,6 @@ object PrintJob {
   @scala.inline
   def apply(contentType: String, document: Blob, printerId: String, ticket: js.Object, title: String): PrintJob = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], printerId = printerId.asInstanceOf[js.Any], ticket = ticket.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrintJob]
   }
 }

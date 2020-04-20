@@ -15,16 +15,14 @@ trait OnClickDataModifiers extends js.Object
 
 object OnClickDataModifiers {
   @scala.inline
-  def Alt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Alt = this.cast("Alt")
+  def Alt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Alt = "Alt".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Alt]
   @scala.inline
-  def Command: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Command = this.cast("Command")
+  def Command: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Command = "Command".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Command]
   @scala.inline
-  def Ctrl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Ctrl = this.cast("Ctrl")
+  def Ctrl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Ctrl = "Ctrl".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Ctrl]
   @scala.inline
-  def MacCtrl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.MacCtrl = this.cast("MacCtrl")
+  def MacCtrl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.MacCtrl = "MacCtrl".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.MacCtrl]
   @scala.inline
-  def Shift: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Shift = this.cast("Shift")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Shift: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Shift = "Shift".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Shift]
 }
 

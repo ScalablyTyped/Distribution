@@ -26,7 +26,6 @@ object AnonGetAccessibilityLabel {
     renderIndicator: Props[Route] => Element
   ): AnonGetAccessibilityLabel = {
     val __obj = js.Dynamic.literal(getAccessibilityLabel = js.Any.fromFunction1(getAccessibilityLabel), getAccessible = js.Any.fromFunction1(getAccessible), getLabelText = js.Any.fromFunction1(getLabelText), getTestID = js.Any.fromFunction1(getTestID), renderIndicator = js.Any.fromFunction1(renderIndicator))
-  
     __obj.asInstanceOf[AnonGetAccessibilityLabel]
   }
 }

@@ -94,90 +94,88 @@ trait MsoNumberedBulletStyle extends js.Object
 
 object MsoNumberedBulletStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBulletAlphaLCParenBoth: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoBulletAlphaLCParenBoth: `8` = this.cast(8)
+  def msoBulletAlphaLCParenRight: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoBulletAlphaLCParenRight: `9` = this.cast(9)
+  def msoBulletAlphaLCPeriod: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoBulletAlphaLCPeriod: `0` = this.cast(0)
+  def msoBulletAlphaUCParenBoth: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoBulletAlphaUCParenBoth: `10` = this.cast(10)
+  def msoBulletAlphaUCParenRight: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoBulletAlphaUCParenRight: `11` = this.cast(11)
+  def msoBulletAlphaUCPeriod: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoBulletAlphaUCPeriod: `1` = this.cast(1)
+  def msoBulletArabicAbjadDash: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoBulletArabicAbjadDash: `24` = this.cast(24)
+  def msoBulletArabicAlphaDash: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoBulletArabicAlphaDash: `23` = this.cast(23)
+  def msoBulletArabicDBPeriod: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def msoBulletArabicDBPeriod: `29` = this.cast(29)
+  def msoBulletArabicDBPlain: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def msoBulletArabicDBPlain: `28` = this.cast(28)
+  def msoBulletArabicParenBoth: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoBulletArabicParenBoth: `12` = this.cast(12)
+  def msoBulletArabicParenRight: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoBulletArabicParenRight: `2` = this.cast(2)
+  def msoBulletArabicPeriod: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoBulletArabicPeriod: `3` = this.cast(3)
+  def msoBulletArabicPlain: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoBulletArabicPlain: `13` = this.cast(13)
+  def msoBulletCircleNumDBPlain: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoBulletCircleNumDBPlain: `18` = this.cast(18)
+  def msoBulletCircleNumWDBlackPlain: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoBulletCircleNumWDBlackPlain: `20` = this.cast(20)
+  def msoBulletCircleNumWDWhitePlain: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoBulletCircleNumWDWhitePlain: `19` = this.cast(19)
+  def msoBulletHebrewAlphaDash: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def msoBulletHebrewAlphaDash: `25` = this.cast(25)
+  def msoBulletHindiAlpha1Period: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def msoBulletHindiAlpha1Period: `40` = this.cast(40)
+  def msoBulletHindiAlphaPeriod: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def msoBulletHindiAlphaPeriod: `36` = this.cast(36)
+  def msoBulletHindiNumParenRight: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def msoBulletHindiNumParenRight: `39` = this.cast(39)
+  def msoBulletHindiNumPeriod: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def msoBulletHindiNumPeriod: `37` = this.cast(37)
+  def msoBulletKanjiKoreanPeriod: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def msoBulletKanjiKoreanPeriod: `27` = this.cast(27)
+  def msoBulletKanjiKoreanPlain: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoBulletKanjiKoreanPlain: `26` = this.cast(26)
+  def msoBulletKanjiSimpChinDBPeriod: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def msoBulletKanjiSimpChinDBPeriod: `38` = this.cast(38)
+  def msoBulletRomanLCParenBoth: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoBulletRomanLCParenBoth: `4` = this.cast(4)
+  def msoBulletRomanLCParenRight: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoBulletRomanLCParenRight: `5` = this.cast(5)
+  def msoBulletRomanLCPeriod: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoBulletRomanLCPeriod: `6` = this.cast(6)
+  def msoBulletRomanUCParenBoth: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoBulletRomanUCParenBoth: `14` = this.cast(14)
+  def msoBulletRomanUCParenRight: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoBulletRomanUCParenRight: `15` = this.cast(15)
+  def msoBulletRomanUCPeriod: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoBulletRomanUCPeriod: `7` = this.cast(7)
+  def msoBulletSimpChinPeriod: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoBulletSimpChinPeriod: `17` = this.cast(17)
+  def msoBulletSimpChinPlain: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoBulletSimpChinPlain: `16` = this.cast(16)
+  def msoBulletStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoBulletStyleMixed: `-2` = this.cast(-2)
+  def msoBulletThaiAlphaParenBoth: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def msoBulletThaiAlphaParenBoth: `32` = this.cast(32)
+  def msoBulletThaiAlphaParenRight: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def msoBulletThaiAlphaParenRight: `31` = this.cast(31)
+  def msoBulletThaiAlphaPeriod: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def msoBulletThaiAlphaPeriod: `30` = this.cast(30)
+  def msoBulletThaiNumParenBoth: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def msoBulletThaiNumParenBoth: `35` = this.cast(35)
+  def msoBulletThaiNumParenRight: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def msoBulletThaiNumParenRight: `34` = this.cast(34)
+  def msoBulletThaiNumPeriod: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def msoBulletThaiNumPeriod: `33` = this.cast(33)
+  def msoBulletTradChinPeriod: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoBulletTradChinPeriod: `22` = this.cast(22)
-  @scala.inline
-  def msoBulletTradChinPlain: `21` = this.cast(21)
+  def msoBulletTradChinPlain: `21` = 21.asInstanceOf[`21`]
 }
 

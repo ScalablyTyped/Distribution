@@ -20,7 +20,6 @@ object Sub {
   @scala.inline
   def apply(components: js.Array[Component], text: String): Sub = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Sub]
   }
 }

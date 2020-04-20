@@ -13,7 +13,6 @@ object GetStorageSuccessCallbackResult {
   @scala.inline
   def apply(data: js.Any): GetStorageSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetStorageSuccessCallbackResult]
   }
 }

@@ -12,7 +12,6 @@ object CreateThreadOptions {
   @scala.inline
   def apply(userIds: (js.Array[String | Double]) | String | Double): CreateThreadOptions = {
     val __obj = js.Dynamic.literal(userIds = userIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateThreadOptions]
   }
 }

@@ -13,7 +13,6 @@ object AnonGit {
   @scala.inline
   def apply(git: Double, tfvc: Double): AnonGit = {
     val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], tfvc = tfvc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGit]
   }
 }

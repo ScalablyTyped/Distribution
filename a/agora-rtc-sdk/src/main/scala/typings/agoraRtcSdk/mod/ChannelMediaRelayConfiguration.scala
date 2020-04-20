@@ -76,7 +76,6 @@ object ChannelMediaRelayConfiguration {
     setSrcChannelInfo: js.Any => Unit
   ): ChannelMediaRelayConfiguration = {
     val __obj = js.Dynamic.literal(removeDestChannelInfo = js.Any.fromFunction1(removeDestChannelInfo), setDestChannelInfo = js.Any.fromFunction2(setDestChannelInfo), setSrcChannelInfo = js.Any.fromFunction1(setSrcChannelInfo))
-  
     __obj.asInstanceOf[ChannelMediaRelayConfiguration]
   }
 }

@@ -21,7 +21,6 @@ object GetLaunchTemplateBlockDeviceMapping {
     virtualName: String
   ): GetLaunchTemplateBlockDeviceMapping = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], ebs = ebs.asInstanceOf[js.Any], noDevice = noDevice.asInstanceOf[js.Any], virtualName = virtualName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchTemplateBlockDeviceMapping]
   }
 }

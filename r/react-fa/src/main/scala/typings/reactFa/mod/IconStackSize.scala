@@ -12,10 +12,8 @@ trait IconStackSize extends js.Object
 
 object IconStackSize {
   @scala.inline
-  def `1x`: typings.reactFa.reactFaStrings.`1x` = this.cast("1x")
+  def `1x`: typings.reactFa.reactFaStrings.`1x` = "1x".asInstanceOf[typings.reactFa.reactFaStrings.`1x`]
   @scala.inline
-  def `2x`: typings.reactFa.reactFaStrings.`2x` = this.cast("2x")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `2x`: typings.reactFa.reactFaStrings.`2x` = "2x".asInstanceOf[typings.reactFa.reactFaStrings.`2x`]
 }
 

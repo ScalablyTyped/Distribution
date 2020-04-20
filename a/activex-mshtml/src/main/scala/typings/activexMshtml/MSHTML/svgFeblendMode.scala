@@ -24,20 +24,18 @@ trait svgFeblendMode extends js.Object
 
 object svgFeblendMode {
   @scala.inline
-  def SVG_FEBLEND_MODE_DARKEN: `4` = this.cast(4)
+  def SVG_FEBLEND_MODE_DARKEN: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def SVG_FEBLEND_MODE_LIGHTEN: `5` = this.cast(5)
+  def SVG_FEBLEND_MODE_LIGHTEN: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def SVG_FEBLEND_MODE_MULTIPLY: `2` = this.cast(2)
+  def SVG_FEBLEND_MODE_MULTIPLY: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SVG_FEBLEND_MODE_NORMAL: `1` = this.cast(1)
+  def SVG_FEBLEND_MODE_NORMAL: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SVG_FEBLEND_MODE_SCREEN: `3` = this.cast(3)
+  def SVG_FEBLEND_MODE_SCREEN: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def SVG_FEBLEND_MODE_UNKNOWN: `0` = this.cast(0)
+  def SVG_FEBLEND_MODE_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def svgFeblendMode_Max: `2147483647` = this.cast(2147483647)
+  def svgFeblendMode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

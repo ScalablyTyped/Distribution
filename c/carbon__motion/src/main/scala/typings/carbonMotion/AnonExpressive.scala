@@ -13,7 +13,6 @@ object AnonExpressive {
   @scala.inline
   def apply(expressive: String, productive: String): AnonExpressive = {
     val __obj = js.Dynamic.literal(expressive = expressive.asInstanceOf[js.Any], productive = productive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExpressive]
   }
 }

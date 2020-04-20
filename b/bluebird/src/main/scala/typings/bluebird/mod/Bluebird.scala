@@ -25,7 +25,7 @@ trait Bluebird[R]
   var caught_Original: FnCall[R] = js.native
   @JSName("lastly")
   var lastly_Original: js.Function1[/* handler */ js.Function0[Resolvable[_]], Bluebird[R]] = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: Object = js.native
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
@@ -64,7 +64,7 @@ trait Bluebird[R]
     * });
     * </code>
     */
-  def call[U /* <: String */, Q](propertyName: U, args: js.Any*): Bluebird[
+  def call[U /* <: /* keyof Q */ String */, Q](propertyName: U, args: js.Any*): Bluebird[
     ReturnType[
       /* import warning: importer.ImportType#apply Failed type conversion: Q[U] */ js.Any
     ]
@@ -956,7 +956,7 @@ trait Bluebird[R]
     * });
     * </code>
     */
-  def get[U /* <: String */](key: U): Bluebird[
+  def get[U /* <: /* keyof R */ String */](key: U): Bluebird[
     /* import warning: importer.ImportType#apply Failed type conversion: R[U] */ js.Any
   ] = js.native
   /**

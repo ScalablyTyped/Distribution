@@ -16,7 +16,6 @@ object DeleteComputeEnvironmentRequest {
   @scala.inline
   def apply(computeEnvironment: String): DeleteComputeEnvironmentRequest = {
     val __obj = js.Dynamic.literal(computeEnvironment = computeEnvironment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteComputeEnvironmentRequest]
   }
 }

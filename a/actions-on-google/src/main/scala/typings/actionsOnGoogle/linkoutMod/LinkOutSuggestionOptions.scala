@@ -21,7 +21,6 @@ object LinkOutSuggestionOptions {
   @scala.inline
   def apply(name: String, url: String): LinkOutSuggestionOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LinkOutSuggestionOptions]
   }
 }

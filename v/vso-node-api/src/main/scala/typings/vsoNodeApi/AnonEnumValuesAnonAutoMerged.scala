@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAutoMerged {
   @scala.inline
   def apply(enumValues: AnonAutoMerged): AnonEnumValuesAnonAutoMerged = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAutoMerged]
   }
 }

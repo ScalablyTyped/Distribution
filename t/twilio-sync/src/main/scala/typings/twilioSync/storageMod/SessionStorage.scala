@@ -15,10 +15,10 @@ class SessionStorage protected () extends Storage {
   var _read: js.Any = js.native
   var _store: js.Any = js.native
   val config: js.Any = js.native
-  val isReady: js.Any = js.native
   val storage: js.Any = js.native
   var storageId: js.Any = js.native
   var storageKey: js.Any = js.native
+  /* private */ def isReady: js.Any = js.native
   /* CompleteClass */
   override def read(`type`: String, id: String): js.Object = js.native
   /* CompleteClass */

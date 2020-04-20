@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "fhir-kit-client"
-version := "1.1-dt-20200225Z-09d57f"
+version := "1.1-dt-20200409Z-2afcc2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-31fe0d",
-  "org.scalablytyped" %%% "fhir" % "0.0-unknown-dt-20200226Z-b0ae89",
-  "org.scalablytyped" %%% "form-data" % "3.0.0-c2310a",
-  "org.scalablytyped" %%% "json-patch" % "0.0-unknown-dt-20200226Z-979013",
-  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20191217Z-146f98",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20200331Z-3578e6")
+  "org.scalablytyped" %%% "fhir" % "0.0-unknown-dt-20200226Z-68339a",
+  "org.scalablytyped" %%% "form-data" % "3.0.0-b3cc63",
+  "org.scalablytyped" %%% "json-patch" % "0.0-unknown-dt-20200226Z-79c31f",
+  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20191217Z-1ebdc6",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470",
+  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20200331Z-cf9c87")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -32,7 +32,6 @@ object LeadingMarginSpan_ {
     getLeadingMargin: Boolean => Double
   ): LeadingMarginSpan_ = {
     val __obj = js.Dynamic.literal(drawLeadingMargin = js.Any.fromFunction12(drawLeadingMargin), getLeadingMargin = js.Any.fromFunction1(getLeadingMargin))
-  
     __obj.asInstanceOf[LeadingMarginSpan_]
   }
 }

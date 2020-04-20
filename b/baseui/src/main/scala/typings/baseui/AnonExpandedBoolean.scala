@@ -12,7 +12,6 @@ object AnonExpandedBoolean {
   @scala.inline
   def apply(expanded: Boolean): AnonExpandedBoolean = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExpandedBoolean]
   }
 }

@@ -16,7 +16,6 @@ object AccelerationSettings {
   @scala.inline
   def apply(Mode: AccelerationMode): AccelerationSettings = {
     val __obj = js.Dynamic.literal(Mode = Mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccelerationSettings]
   }
 }

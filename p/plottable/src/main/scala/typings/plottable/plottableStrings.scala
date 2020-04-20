@@ -1,237 +1,272 @@
 package typings.plottable
 
+import typings.plottable.axisMod.AxisOrientation
+import typings.plottable.barPlotMod.BarAlignment
+import typings.plottable.barPlotMod.BarOrientation
+import typings.plottable.barPlotMod.LabelsPosition
+import typings.plottable.componentMod.XAlignment
+import typings.plottable.componentMod.YAlignment
+import typings.plottable.easingAnimatorMod.EaseName
+import typings.plottable.linePlotMod.CurveName
+import typings.plottable.plotMod.Renderer
+import typings.plottable.renderControllerMod.Policy
+import typings.plottable.stackingUtilsMod.IStackingOrder
+import typings.plottable.timeAxisMod.TierLabelPosition
+import typings.plottable.timeAxisMod.TimeAxisOrientation
+import typings.plottable.timeAxisMod.TimeInterval
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object plottableStrings {
   @js.native
-  sealed trait animationFrame extends js.Object
+  sealed trait animationFrame extends Policy
   
   @js.native
-  sealed trait back extends js.Object
+  sealed trait back extends EaseName
   
   @js.native
-  sealed trait backIn extends js.Object
+  sealed trait backIn extends EaseName
   
   @js.native
-  sealed trait backInOut extends js.Object
+  sealed trait backInOut extends EaseName
   
   @js.native
-  sealed trait backOut extends js.Object
+  sealed trait backOut extends EaseName
   
   @js.native
-  sealed trait basis extends js.Object
+  sealed trait basis extends CurveName
   
   @js.native
-  sealed trait basisClosed extends js.Object
+  sealed trait basisClosed extends CurveName
   
   @js.native
-  sealed trait basisOpen extends js.Object
+  sealed trait basisOpen extends CurveName
   
   @js.native
-  sealed trait between extends js.Object
+  sealed trait between extends TierLabelPosition
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends AxisOrientation
+       with TimeAxisOrientation
+       with YAlignment
   
   @js.native
-  sealed trait bottomup extends js.Object
+  sealed trait bottomup extends IStackingOrder
   
   @js.native
-  sealed trait bounce extends js.Object
+  sealed trait bounce extends EaseName
   
   @js.native
-  sealed trait bounceIn extends js.Object
+  sealed trait bounceIn extends EaseName
   
   @js.native
-  sealed trait bounceInOut extends js.Object
+  sealed trait bounceInOut extends EaseName
   
   @js.native
-  sealed trait bounceOut extends js.Object
+  sealed trait bounceOut extends EaseName
   
   @js.native
-  sealed trait bundle extends js.Object
+  sealed trait bundle extends CurveName
   
   @js.native
-  sealed trait canvas extends js.Object
+  sealed trait canvas extends Renderer
   
   @js.native
-  sealed trait cardinal extends js.Object
+  sealed trait cardinal extends CurveName
   
   @js.native
-  sealed trait cardinalClosed extends js.Object
+  sealed trait cardinalClosed extends CurveName
   
   @js.native
-  sealed trait cardinalOpen extends js.Object
+  sealed trait cardinalOpen extends CurveName
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends TierLabelPosition
+       with XAlignment
+       with YAlignment
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle extends EaseName
   
   @js.native
-  sealed trait circleIn extends js.Object
+  sealed trait circleIn extends EaseName
   
   @js.native
-  sealed trait circleInOut extends js.Object
+  sealed trait circleInOut extends EaseName
   
   @js.native
-  sealed trait circleOut extends js.Object
+  sealed trait circleOut extends EaseName
   
   @js.native
-  sealed trait cubic extends js.Object
+  sealed trait cubic extends EaseName
   
   @js.native
-  sealed trait cubicIn extends js.Object
+  sealed trait cubicIn extends EaseName
   
   @js.native
-  sealed trait cubicInOut extends js.Object
+  sealed trait cubicInOut extends EaseName
   
   @js.native
-  sealed trait cubicOut extends js.Object
+  sealed trait cubicOut extends EaseName
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day extends TimeInterval
   
   @js.native
-  sealed trait elastic extends js.Object
+  sealed trait elastic extends EaseName
   
   @js.native
-  sealed trait elasticIn extends js.Object
+  sealed trait elasticIn extends EaseName
   
   @js.native
-  sealed trait elasticInOut extends js.Object
+  sealed trait elasticInOut extends EaseName
   
   @js.native
-  sealed trait elasticOut extends js.Object
+  sealed trait elasticOut extends EaseName
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends BarAlignment
+       with LabelsPosition
   
   @js.native
-  sealed trait exp extends js.Object
+  sealed trait exp extends EaseName
   
   @js.native
-  sealed trait expIn extends js.Object
+  sealed trait expIn extends EaseName
   
   @js.native
-  sealed trait expInOut extends js.Object
+  sealed trait expInOut extends EaseName
   
   @js.native
-  sealed trait expOut extends js.Object
+  sealed trait expOut extends EaseName
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal extends BarOrientation
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait hour extends TimeInterval
   
   @js.native
-  sealed trait immediate extends js.Object
+  sealed trait immediate extends Policy
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends AxisOrientation
+       with XAlignment
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends CurveName
+       with EaseName
   
   @js.native
-  sealed trait linearClosed extends js.Object
+  sealed trait linearClosed extends CurveName
   
   @js.native
   sealed trait makeEnum extends js.Object
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle
+    extends BarAlignment
+       with LabelsPosition
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait minute extends TimeInterval
   
   @js.native
-  sealed trait monotone extends js.Object
+  sealed trait monotone extends CurveName
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month extends TimeInterval
   
   @js.native
-  sealed trait outside extends js.Object
+  sealed trait outside extends LabelsPosition
   
   @js.native
-  sealed trait poly extends js.Object
+  sealed trait poly extends EaseName
   
   @js.native
-  sealed trait polyIn extends js.Object
+  sealed trait polyIn extends EaseName
   
   @js.native
-  sealed trait polyInOut extends js.Object
+  sealed trait polyInOut extends EaseName
   
   @js.native
-  sealed trait polyOut extends js.Object
+  sealed trait polyOut extends EaseName
   
   @js.native
-  sealed trait quad extends js.Object
+  sealed trait quad extends EaseName
   
   @js.native
-  sealed trait quadIn extends js.Object
+  sealed trait quadIn extends EaseName
   
   @js.native
-  sealed trait quadInOut extends js.Object
+  sealed trait quadInOut extends EaseName
   
   @js.native
-  sealed trait quadOut extends js.Object
+  sealed trait quadOut extends EaseName
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends AxisOrientation
+       with XAlignment
   
   @js.native
-  sealed trait second extends js.Object
+  sealed trait second extends TimeInterval
   
   @js.native
-  sealed trait sin extends js.Object
+  sealed trait sin extends EaseName
   
   @js.native
-  sealed trait sinIn extends js.Object
+  sealed trait sinIn extends EaseName
   
   @js.native
-  sealed trait sinInOut extends js.Object
+  sealed trait sinInOut extends EaseName
   
   @js.native
-  sealed trait sinOut extends js.Object
+  sealed trait sinOut extends EaseName
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends BarAlignment
+       with LabelsPosition
   
   @js.native
-  sealed trait step extends js.Object
+  sealed trait step extends CurveName
   
   @js.native
-  sealed trait stepAfter extends js.Object
+  sealed trait stepAfter extends CurveName
   
   @js.native
-  sealed trait stepBefore extends js.Object
+  sealed trait stepBefore extends CurveName
   
   @js.native
-  sealed trait svg extends js.Object
+  sealed trait svg extends Renderer
   
   @js.native
-  sealed trait timeout extends js.Object
+  sealed trait timeout extends Policy
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends AxisOrientation
+       with TimeAxisOrientation
+       with YAlignment
   
   @js.native
-  sealed trait topdown extends js.Object
+  sealed trait topdown extends IStackingOrder
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical extends BarOrientation
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week extends TimeInterval
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year extends TimeInterval
   
   @scala.inline
   def animationFrame: animationFrame = "animationFrame".asInstanceOf[animationFrame]

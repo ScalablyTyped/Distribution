@@ -15,16 +15,14 @@ trait RuleType extends js.Object
 
 object RuleType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def formatting: typings.tslint.tslintStrings.formatting = "formatting".asInstanceOf[typings.tslint.tslintStrings.formatting]
   @scala.inline
-  def formatting: typings.tslint.tslintStrings.formatting = this.cast("formatting")
+  def functionality: typings.tslint.tslintStrings.functionality = "functionality".asInstanceOf[typings.tslint.tslintStrings.functionality]
   @scala.inline
-  def functionality: typings.tslint.tslintStrings.functionality = this.cast("functionality")
+  def maintainability: typings.tslint.tslintStrings.maintainability = "maintainability".asInstanceOf[typings.tslint.tslintStrings.maintainability]
   @scala.inline
-  def maintainability: typings.tslint.tslintStrings.maintainability = this.cast("maintainability")
+  def style: typings.tslint.tslintStrings.style = "style".asInstanceOf[typings.tslint.tslintStrings.style]
   @scala.inline
-  def style: typings.tslint.tslintStrings.style = this.cast("style")
-  @scala.inline
-  def typescript: typings.tslint.tslintStrings.typescript = this.cast("typescript")
+  def typescript: typings.tslint.tslintStrings.typescript = "typescript".asInstanceOf[typings.tslint.tslintStrings.typescript]
 }
 

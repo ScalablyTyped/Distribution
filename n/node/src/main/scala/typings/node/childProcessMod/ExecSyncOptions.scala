@@ -1,6 +1,6 @@
 package typings.node.childProcessMod
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.Signals
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object ExecSyncOptions {
   def apply(
     cwd: String = null,
     encoding: String = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     input: String | Uint8Array = null,
     killSignal: Signals | Double = null,

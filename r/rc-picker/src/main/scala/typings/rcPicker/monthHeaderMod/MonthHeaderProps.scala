@@ -28,7 +28,6 @@ object MonthHeaderProps {
     viewDate: DateType
   ): MonthHeaderProps[DateType] = {
     val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], onNextYear = js.Any.fromFunction0(onNextYear), onPrevYear = js.Any.fromFunction0(onPrevYear), onYearClick = js.Any.fromFunction0(onYearClick), prefixCls = prefixCls.asInstanceOf[js.Any], viewDate = viewDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MonthHeaderProps[DateType]]
   }
 }

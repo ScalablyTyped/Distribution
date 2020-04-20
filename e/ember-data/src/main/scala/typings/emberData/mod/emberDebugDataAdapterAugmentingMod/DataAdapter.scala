@@ -13,7 +13,6 @@ object DataAdapter {
   @scala.inline
   def apply(store: Store): DataAdapter = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataAdapter]
   }
 }

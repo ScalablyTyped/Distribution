@@ -13,7 +13,6 @@ object PersistPackageVersionsDeps {
   @scala.inline
   def apply(config: IConfig): PersistPackageVersionsDeps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PersistPackageVersionsDeps]
   }
 }

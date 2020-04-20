@@ -15,16 +15,14 @@ trait ExchangeIdFormat extends js.Object
 
 object ExchangeIdFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def entryId: typings.microsoftGraph.microsoftGraphStrings.entryId = "entryId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.entryId]
   @scala.inline
-  def entryId: typings.microsoftGraph.microsoftGraphStrings.entryId = this.cast("entryId")
+  def ewsId: typings.microsoftGraph.microsoftGraphStrings.ewsId = "ewsId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ewsId]
   @scala.inline
-  def ewsId: typings.microsoftGraph.microsoftGraphStrings.ewsId = this.cast("ewsId")
+  def immutableEntryId: typings.microsoftGraph.microsoftGraphStrings.immutableEntryId = "immutableEntryId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.immutableEntryId]
   @scala.inline
-  def immutableEntryId: typings.microsoftGraph.microsoftGraphStrings.immutableEntryId = this.cast("immutableEntryId")
+  def restId: typings.microsoftGraph.microsoftGraphStrings.restId = "restId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.restId]
   @scala.inline
-  def restId: typings.microsoftGraph.microsoftGraphStrings.restId = this.cast("restId")
-  @scala.inline
-  def restImmutableEntryId: typings.microsoftGraph.microsoftGraphStrings.restImmutableEntryId = this.cast("restImmutableEntryId")
+  def restImmutableEntryId: typings.microsoftGraph.microsoftGraphStrings.restImmutableEntryId = "restImmutableEntryId".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.restImmutableEntryId]
 }
 

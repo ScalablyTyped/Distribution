@@ -13,12 +13,10 @@ trait HistoryAction extends js.Object
 
 object HistoryAction {
   @scala.inline
-  def POP: typings.reduxLittleRouter.reduxLittleRouterStrings.POP = this.cast("POP")
+  def POP: typings.reduxLittleRouter.reduxLittleRouterStrings.POP = "POP".asInstanceOf[typings.reduxLittleRouter.reduxLittleRouterStrings.POP]
   @scala.inline
-  def PUSH: typings.reduxLittleRouter.reduxLittleRouterStrings.PUSH = this.cast("PUSH")
+  def PUSH: typings.reduxLittleRouter.reduxLittleRouterStrings.PUSH = "PUSH".asInstanceOf[typings.reduxLittleRouter.reduxLittleRouterStrings.PUSH]
   @scala.inline
-  def REPLACE: typings.reduxLittleRouter.reduxLittleRouterStrings.REPLACE = this.cast("REPLACE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def REPLACE: typings.reduxLittleRouter.reduxLittleRouterStrings.REPLACE = "REPLACE".asInstanceOf[typings.reduxLittleRouter.reduxLittleRouterStrings.REPLACE]
 }
 

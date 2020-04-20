@@ -20,7 +20,6 @@ object Result {
     mediaTypes: js.Array[String]
   ): Result = {
     val __obj = js.Dynamic.literal(charsets = charsets.asInstanceOf[js.Any], encodings = encodings.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], mediaTypes = mediaTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

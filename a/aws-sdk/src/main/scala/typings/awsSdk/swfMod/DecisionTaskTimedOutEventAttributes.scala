@@ -24,7 +24,6 @@ object DecisionTaskTimedOutEventAttributes {
   @scala.inline
   def apply(scheduledEventId: EventId, startedEventId: EventId, timeoutType: DecisionTaskTimeoutType): DecisionTaskTimedOutEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any], timeoutType = timeoutType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecisionTaskTimedOutEventAttributes]
   }
 }

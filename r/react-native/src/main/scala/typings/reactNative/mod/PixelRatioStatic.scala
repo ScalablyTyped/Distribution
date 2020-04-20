@@ -62,7 +62,6 @@ object PixelRatioStatic {
     startDetecting: () => Unit
   ): PixelRatioStatic = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), getFontScale = js.Any.fromFunction0(getFontScale), getPixelSizeForLayoutSize = js.Any.fromFunction1(getPixelSizeForLayoutSize), roundToNearestPixel = js.Any.fromFunction1(roundToNearestPixel), startDetecting = js.Any.fromFunction0(startDetecting))
-  
     __obj.asInstanceOf[PixelRatioStatic]
   }
 }

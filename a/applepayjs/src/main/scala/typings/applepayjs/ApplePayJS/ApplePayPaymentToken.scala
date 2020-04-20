@@ -26,7 +26,6 @@ object ApplePayPaymentToken {
   @scala.inline
   def apply(paymentData: js.Any, paymentMethod: ApplePayPaymentMethod, transactionIdentifier: String): ApplePayPaymentToken = {
     val __obj = js.Dynamic.literal(paymentData = paymentData.asInstanceOf[js.Any], paymentMethod = paymentMethod.asInstanceOf[js.Any], transactionIdentifier = transactionIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplePayPaymentToken]
   }
 }

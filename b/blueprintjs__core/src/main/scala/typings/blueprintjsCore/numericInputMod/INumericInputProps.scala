@@ -76,7 +76,14 @@ trait INumericInputProps
   /** The callback invoked when the value changes due to a button click. */
   var onButtonClick: js.UndefOr[js.Function2[/* valueAsNumber */ Double, /* valueAsString */ String, Unit]] = js.undefined
   /** The callback invoked when the value changes due to typing, arrow keys, or button clicks. */
-  var onValueChange: js.UndefOr[js.Function2[/* valueAsNumber */ Double, /* valueAsString */ String, Unit]] = js.undefined
+  var onValueChange: js.UndefOr[
+    js.Function3[
+      /* valueAsNumber */ Double, 
+      /* valueAsString */ String, 
+      /* inputElement */ HTMLInputElement | Null, 
+      Unit
+    ]
+  ] = js.undefined
   /** The placeholder text in the absence of any value. */
   var placeholder: js.UndefOr[String] = js.undefined
   /**
@@ -121,7 +128,7 @@ object INumericInputProps {
     min: Int | Double = null,
     minorStepSize: Int | Double = null,
     onButtonClick: (/* valueAsNumber */ Double, /* valueAsString */ String) => Unit = null,
-    onValueChange: (/* valueAsNumber */ Double, /* valueAsString */ String) => Unit = null,
+    onValueChange: (/* valueAsNumber */ Double, /* valueAsString */ String, /* inputElement */ HTMLInputElement | Null) => Unit = null,
     placeholder: String = null,
     rightElement: Element = null,
     selectAllOnFocus: js.UndefOr[Boolean] = js.undefined,
@@ -145,7 +152,7 @@ object INumericInputProps {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minorStepSize != null) __obj.updateDynamic("minorStepSize")(minorStepSize.asInstanceOf[js.Any])
     if (onButtonClick != null) __obj.updateDynamic("onButtonClick")(js.Any.fromFunction2(onButtonClick))
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction2(onValueChange))
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction3(onValueChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
     if (!js.isUndefined(selectAllOnFocus)) __obj.updateDynamic("selectAllOnFocus")(selectAllOnFocus.asInstanceOf[js.Any])

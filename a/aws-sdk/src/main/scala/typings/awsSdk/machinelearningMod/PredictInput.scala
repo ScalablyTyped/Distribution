@@ -18,7 +18,6 @@ object PredictInput {
   @scala.inline
   def apply(MLModelId: EntityId, PredictEndpoint: VipURL, Record: Record): PredictInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId.asInstanceOf[js.Any], PredictEndpoint = PredictEndpoint.asInstanceOf[js.Any], Record = Record.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PredictInput]
   }
 }

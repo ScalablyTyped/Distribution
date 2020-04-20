@@ -14,7 +14,6 @@ object MappingDetails {
   @scala.inline
   def apply(mappings: StringDictionary[InputValue]): MappingDetails = {
     val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MappingDetails]
   }
 }

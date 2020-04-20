@@ -20,7 +20,6 @@ object AssociateSubnetCidrBlockRequest {
   @scala.inline
   def apply(Ipv6CidrBlock: String, SubnetId: SubnetId): AssociateSubnetCidrBlockRequest = {
     val __obj = js.Dynamic.literal(Ipv6CidrBlock = Ipv6CidrBlock.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateSubnetCidrBlockRequest]
   }
 }

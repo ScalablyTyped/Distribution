@@ -13,7 +13,6 @@ object ExternalPromise {
   @scala.inline
   def apply[T](promise: Promise[T], resolve: T => Unit): ExternalPromise[T] = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], resolve = js.Any.fromFunction1(resolve))
-  
     __obj.asInstanceOf[ExternalPromise[T]]
   }
 }

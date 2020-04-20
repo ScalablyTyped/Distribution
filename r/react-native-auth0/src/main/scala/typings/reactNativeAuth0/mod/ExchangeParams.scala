@@ -14,7 +14,6 @@ object ExchangeParams {
   @scala.inline
   def apply(code: String, redirectUri: String, verifier: String): ExchangeParams = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any], verifier = verifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExchangeParams]
   }
 }

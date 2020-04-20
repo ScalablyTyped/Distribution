@@ -25,34 +25,32 @@ trait IPaymentMethodType extends js.Object
 
 object IPaymentMethodType {
   @scala.inline
-  def ach_credit_transfer: typings.stripe.stripeStrings.ach_credit_transfer = this.cast("ach_credit_transfer")
+  def ach_credit_transfer: typings.stripe.stripeStrings.ach_credit_transfer = "ach_credit_transfer".asInstanceOf[typings.stripe.stripeStrings.ach_credit_transfer]
   @scala.inline
-  def ach_debit: typings.stripe.stripeStrings.ach_debit = this.cast("ach_debit")
+  def ach_debit: typings.stripe.stripeStrings.ach_debit = "ach_debit".asInstanceOf[typings.stripe.stripeStrings.ach_debit]
   @scala.inline
-  def alipay: typings.stripe.stripeStrings.alipay = this.cast("alipay")
+  def alipay: typings.stripe.stripeStrings.alipay = "alipay".asInstanceOf[typings.stripe.stripeStrings.alipay]
   @scala.inline
-  def bancontact: typings.stripe.stripeStrings.bancontact = this.cast("bancontact")
+  def bancontact: typings.stripe.stripeStrings.bancontact = "bancontact".asInstanceOf[typings.stripe.stripeStrings.bancontact]
   @scala.inline
-  def card: typings.stripe.stripeStrings.card = this.cast("card")
+  def card: typings.stripe.stripeStrings.card = "card".asInstanceOf[typings.stripe.stripeStrings.card]
   @scala.inline
-  def card_present: typings.stripe.stripeStrings.card_present = this.cast("card_present")
+  def card_present: typings.stripe.stripeStrings.card_present = "card_present".asInstanceOf[typings.stripe.stripeStrings.card_present]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def eps: typings.stripe.stripeStrings.eps = "eps".asInstanceOf[typings.stripe.stripeStrings.eps]
   @scala.inline
-  def eps: typings.stripe.stripeStrings.eps = this.cast("eps")
+  def giropay: typings.stripe.stripeStrings.giropay = "giropay".asInstanceOf[typings.stripe.stripeStrings.giropay]
   @scala.inline
-  def giropay: typings.stripe.stripeStrings.giropay = this.cast("giropay")
+  def ideal: typings.stripe.stripeStrings.ideal = "ideal".asInstanceOf[typings.stripe.stripeStrings.ideal]
   @scala.inline
-  def ideal: typings.stripe.stripeStrings.ideal = this.cast("ideal")
+  def klarna: typings.stripe.stripeStrings.klarna = "klarna".asInstanceOf[typings.stripe.stripeStrings.klarna]
   @scala.inline
-  def klarna: typings.stripe.stripeStrings.klarna = this.cast("klarna")
+  def p24: typings.stripe.stripeStrings.p24 = "p24".asInstanceOf[typings.stripe.stripeStrings.p24]
   @scala.inline
-  def p24: typings.stripe.stripeStrings.p24 = this.cast("p24")
+  def sofort: typings.stripe.stripeStrings.sofort = "sofort".asInstanceOf[typings.stripe.stripeStrings.sofort]
   @scala.inline
-  def sofort: typings.stripe.stripeStrings.sofort = this.cast("sofort")
+  def stripe_account: typings.stripe.stripeStrings.stripe_account = "stripe_account".asInstanceOf[typings.stripe.stripeStrings.stripe_account]
   @scala.inline
-  def stripe_account: typings.stripe.stripeStrings.stripe_account = this.cast("stripe_account")
-  @scala.inline
-  def wechat: typings.stripe.stripeStrings.wechat = this.cast("wechat")
+  def wechat: typings.stripe.stripeStrings.wechat = "wechat".asInstanceOf[typings.stripe.stripeStrings.wechat]
 }
 

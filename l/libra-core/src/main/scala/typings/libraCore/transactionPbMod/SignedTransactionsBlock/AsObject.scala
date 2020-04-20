@@ -19,7 +19,6 @@ object AsObject {
     validatorSignature: Uint8Array | String
   ): AsObject = {
     val __obj = js.Dynamic.literal(transactionsList = transactionsList.asInstanceOf[js.Any], validatorPublicKey = validatorPublicKey.asInstanceOf[js.Any], validatorSignature = validatorSignature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

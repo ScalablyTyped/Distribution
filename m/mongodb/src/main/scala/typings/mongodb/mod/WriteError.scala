@@ -17,7 +17,6 @@ object WriteError {
   @scala.inline
   def apply(code: scala.Double, errmsg: String, index: scala.Double): WriteError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errmsg = errmsg.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WriteError]
   }
 }

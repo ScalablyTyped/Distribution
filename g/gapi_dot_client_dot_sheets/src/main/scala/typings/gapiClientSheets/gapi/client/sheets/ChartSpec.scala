@@ -16,6 +16,12 @@ trait ChartSpec extends js.Object {
     */
   var backgroundColor: js.UndefOr[Color] = js.undefined
   /**
+    * The background color of the entire chart.
+    * Not applicable to Org charts.
+    * If background_color is also set, this field takes precedence.
+    */
+  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
+  /**
     * A basic chart specification, can be one of many kinds of charts.
     * See BasicChartType for the list of all
     * charts this supports.
@@ -82,6 +88,7 @@ object ChartSpec {
   def apply(
     altText: String = null,
     backgroundColor: Color = null,
+    backgroundColorStyle: ColorStyle = null,
     basicChart: BasicChartSpec = null,
     bubbleChart: BubbleChartSpec = null,
     candlestickChart: CandlestickChartSpec = null,
@@ -104,6 +111,7 @@ object ChartSpec {
     val __obj = js.Dynamic.literal()
     if (altText != null) __obj.updateDynamic("altText")(altText.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (backgroundColorStyle != null) __obj.updateDynamic("backgroundColorStyle")(backgroundColorStyle.asInstanceOf[js.Any])
     if (basicChart != null) __obj.updateDynamic("basicChart")(basicChart.asInstanceOf[js.Any])
     if (bubbleChart != null) __obj.updateDynamic("bubbleChart")(bubbleChart.asInstanceOf[js.Any])
     if (candlestickChart != null) __obj.updateDynamic("candlestickChart")(candlestickChart.asInstanceOf[js.Any])

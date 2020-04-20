@@ -28,7 +28,6 @@ object FieldLevelEncryptionProfile {
     LastModifiedTime: timestamp
   ): FieldLevelEncryptionProfile = {
     val __obj = js.Dynamic.literal(FieldLevelEncryptionProfileConfig = FieldLevelEncryptionProfileConfig.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldLevelEncryptionProfile]
   }
 }

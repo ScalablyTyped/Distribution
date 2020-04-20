@@ -20,7 +20,6 @@ object BatchWriteRequest {
   @scala.inline
   def apply(DirectoryArn: Arn, Operations: BatchWriteOperationList): BatchWriteRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], Operations = Operations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchWriteRequest]
   }
 }

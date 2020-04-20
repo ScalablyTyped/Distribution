@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IVueI18n extends js.Object {
   val dateTimeFormats: typings.vueI18n.mod.VueI18n.DateTimeFormats = js.native
-  var fallbackLocale: typings.vueI18n.mod.VueI18n.Locale = js.native
+  var fallbackLocale: typings.vueI18n.mod.VueI18n.FallbackLocale = js.native
   var formatFallbackMessages: Boolean = js.native
   var formatter: typings.vueI18n.mod.VueI18n.Formatter = js.native
   var locale: typings.vueI18n.mod.VueI18n.Locale = js.native

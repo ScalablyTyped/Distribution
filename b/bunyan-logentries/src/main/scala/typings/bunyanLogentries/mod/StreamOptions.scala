@@ -12,7 +12,6 @@ object StreamOptions {
   @scala.inline
   def apply(token: String): StreamOptions = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreamOptions]
   }
 }

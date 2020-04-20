@@ -41,7 +41,7 @@ object incomingMod extends js.Object {
       *
       * @public
       */
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[IncomingMessage]] = js.native
     /** @public */
     var parsed: js.Array[IncomingMessage] = js.native

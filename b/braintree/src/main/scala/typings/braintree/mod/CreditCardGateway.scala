@@ -23,7 +23,6 @@ object CreditCardGateway {
     update: (String, CreditCardUpdateRequest) => js.Promise[ValidatedResponse[CreditCard]]
   ): CreditCardGateway = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), expiringBetween = js.Any.fromFunction2(expiringBetween), find = js.Any.fromFunction1(find), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[CreditCardGateway]
   }
 }

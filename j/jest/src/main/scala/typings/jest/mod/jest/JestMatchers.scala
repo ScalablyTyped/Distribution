@@ -1,5 +1,6 @@
 package typings.jest.mod.jest
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import typings.std.Partial
 import typings.std.RegExp
@@ -276,10 +277,10 @@ trait JestMatchers[T] extends js.Object {
     */
   def toMatchInlineSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.jest.jestStrings.JestMatchers with js.Any */](propertyMatchers: Partial[U]): Unit = js.native
+    */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U]): Unit = js.native
   def toMatchInlineSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.jest.jestStrings.JestMatchers with js.Any */](propertyMatchers: Partial[U], snapshot: String): Unit = js.native
+    */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U], snapshot: String): Unit = js.native
   /**
     * Used to check that a JavaScript object matches a subset of the properties of an object
     *
@@ -313,10 +314,10 @@ trait JestMatchers[T] extends js.Object {
     */
   def toMatchSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.jest.jestStrings.JestMatchers with js.Any */](propertyMatchers: Partial[U]): Unit = js.native
+    */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U]): Unit = js.native
   def toMatchSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.jest.jestStrings.JestMatchers with js.Any */](propertyMatchers: Partial[U], snapshotName: String): Unit = js.native
+    */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U], snapshotName: String): Unit = js.native
   /**
     * Ensure that a mock function has returned (as opposed to thrown) at least once.
     */

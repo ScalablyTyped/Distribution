@@ -19,7 +19,6 @@ object DirectionFinderEnums {
     Mode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Mode */ js.Any
   ): DirectionFinderEnums = {
     val __obj = js.Dynamic.literal(Avoid = Avoid.asInstanceOf[js.Any], Mode = Mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectionFinderEnums]
   }
 }

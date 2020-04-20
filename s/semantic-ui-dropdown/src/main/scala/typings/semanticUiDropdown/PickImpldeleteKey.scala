@@ -13,7 +13,6 @@ object PickImpldeleteKey {
   @scala.inline
   def apply(deleteKey: Double): PickImpldeleteKey = {
     val __obj = js.Dynamic.literal(deleteKey = deleteKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldeleteKey]
   }
 }

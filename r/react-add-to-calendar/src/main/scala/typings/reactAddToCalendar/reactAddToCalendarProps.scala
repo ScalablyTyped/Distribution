@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactAddToCalendarProps {
   @scala.inline
-  def ReactAddToCalendarProps: AddToCalendarProps.type = typings.reactAddToCalendar.mod.AddToCalendarProps
+  def ReactAddToCalendarProps: AddToCalendarProps.type = AddToCalendarProps
   type ReactAddToCalendarProps = AddToCalendarProps
 }
 

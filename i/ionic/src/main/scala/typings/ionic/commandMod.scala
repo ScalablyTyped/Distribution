@@ -30,10 +30,10 @@ object commandMod extends js.Object {
     val project_FCommand: js.UndefOr[IProject] = js.native
     val taskChains: js.Array[TaskChain] = js.native
     def createTaskChain(): TaskChain = js.native
-    def env(): IonicEnvironment = js.native
+    def env: IonicEnvironment = js.native
     def execute(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     def getCleanInputsForTelemetry(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[js.Array[String]] = js.native
-    def project(): js.UndefOr[IProject] = js.native
+    def project: js.UndefOr[IProject] = js.native
   }
   
 }

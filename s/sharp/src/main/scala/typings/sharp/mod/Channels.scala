@@ -13,10 +13,8 @@ trait Channels extends js.Object
 
 object Channels {
   @scala.inline
-  def `3`: typings.sharp.sharpNumbers.`3` = this.cast(3)
+  def `3`: typings.sharp.sharpNumbers.`3` = 3.asInstanceOf[typings.sharp.sharpNumbers.`3`]
   @scala.inline
-  def `4`: typings.sharp.sharpNumbers.`4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `4`: typings.sharp.sharpNumbers.`4` = 4.asInstanceOf[typings.sharp.sharpNumbers.`4`]
 }
 

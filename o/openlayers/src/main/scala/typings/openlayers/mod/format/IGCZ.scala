@@ -16,12 +16,10 @@ trait IGCZ extends js.Object
 
 object IGCZ {
   @scala.inline
-  def barometric: typings.openlayers.openlayersStrings.barometric = this.cast("barometric")
+  def barometric: typings.openlayers.openlayersStrings.barometric = "barometric".asInstanceOf[typings.openlayers.openlayersStrings.barometric]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def gps: typings.openlayers.openlayersStrings.gps = "gps".asInstanceOf[typings.openlayers.openlayersStrings.gps]
   @scala.inline
-  def gps: typings.openlayers.openlayersStrings.gps = this.cast("gps")
-  @scala.inline
-  def none: typings.openlayers.openlayersStrings.none = this.cast("none")
+  def none: typings.openlayers.openlayersStrings.none = "none".asInstanceOf[typings.openlayers.openlayersStrings.none]
 }
 

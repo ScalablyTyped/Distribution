@@ -23,7 +23,6 @@ object OpenTracking {
     toJSON: () => AnonSubstitutiontag
   ): OpenTracking = {
     val __obj = js.Dynamic.literal(getEnable = js.Any.fromFunction0(getEnable), getSubscriptionTag = js.Any.fromFunction0(getSubscriptionTag), setEnable = js.Any.fromFunction1(setEnable), setSubscriptionTag = js.Any.fromFunction1(setSubscriptionTag), toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[OpenTracking]
   }
 }

@@ -12,7 +12,6 @@ object DistanceMatrixRow {
   @scala.inline
   def apply(elements: js.Array[DistanceMatrixRowElement]): DistanceMatrixRow = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DistanceMatrixRow]
   }
 }

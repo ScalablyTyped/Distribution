@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonListItemProfile extends js.Object {
+  var ChildMenuPopover: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+  ] = js.undefined
   var ListItemProfile: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
   ] = js.undefined
@@ -31,6 +34,7 @@ trait AnonListItemProfile extends js.Object {
 object AnonListItemProfile {
   @scala.inline
   def apply(
+    ChildMenuPopover: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     ListItemProfile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     ProfileBody: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     ProfileImg: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
@@ -40,6 +44,7 @@ object AnonListItemProfile {
     ProfileTitle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null
   ): AnonListItemProfile = {
     val __obj = js.Dynamic.literal()
+    if (ChildMenuPopover != null) __obj.updateDynamic("ChildMenuPopover")(ChildMenuPopover.asInstanceOf[js.Any])
     if (ListItemProfile != null) __obj.updateDynamic("ListItemProfile")(ListItemProfile.asInstanceOf[js.Any])
     if (ProfileBody != null) __obj.updateDynamic("ProfileBody")(ProfileBody.asInstanceOf[js.Any])
     if (ProfileImg != null) __obj.updateDynamic("ProfileImg")(ProfileImg.asInstanceOf[js.Any])

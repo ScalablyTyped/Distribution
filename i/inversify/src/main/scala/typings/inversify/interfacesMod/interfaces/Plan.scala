@@ -13,7 +13,6 @@ object Plan {
   @scala.inline
   def apply(parentContext: Context, rootRequest: Request): Plan = {
     val __obj = js.Dynamic.literal(parentContext = parentContext.asInstanceOf[js.Any], rootRequest = rootRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Plan]
   }
 }

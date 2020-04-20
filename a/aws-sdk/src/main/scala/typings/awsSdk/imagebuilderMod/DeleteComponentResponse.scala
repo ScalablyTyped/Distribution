@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteComponentResponse extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the component build version that was deleted. 
+    * The Amazon Resource Name (ARN) of the component build version that was deleted. 
     */
   var componentBuildVersionArn: js.UndefOr[ComponentBuildVersionArn] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

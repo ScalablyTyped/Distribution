@@ -12,7 +12,6 @@ object HistoryHandler {
   @scala.inline
   def apply(uiCache: Boolean): HistoryHandler = {
     val __obj = js.Dynamic.literal(uiCache = uiCache.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HistoryHandler]
   }
 }

@@ -16,18 +16,16 @@ trait LogLevelString extends js.Object
 
 object LogLevelString {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.bunyan.bunyanStrings.debug = "debug".asInstanceOf[typings.bunyan.bunyanStrings.debug]
   @scala.inline
-  def debug: typings.bunyan.bunyanStrings.debug = this.cast("debug")
+  def error: typings.bunyan.bunyanStrings.error = "error".asInstanceOf[typings.bunyan.bunyanStrings.error]
   @scala.inline
-  def error: typings.bunyan.bunyanStrings.error = this.cast("error")
+  def fatal: typings.bunyan.bunyanStrings.fatal = "fatal".asInstanceOf[typings.bunyan.bunyanStrings.fatal]
   @scala.inline
-  def fatal: typings.bunyan.bunyanStrings.fatal = this.cast("fatal")
+  def info: typings.bunyan.bunyanStrings.info = "info".asInstanceOf[typings.bunyan.bunyanStrings.info]
   @scala.inline
-  def info: typings.bunyan.bunyanStrings.info = this.cast("info")
+  def trace: typings.bunyan.bunyanStrings.trace = "trace".asInstanceOf[typings.bunyan.bunyanStrings.trace]
   @scala.inline
-  def trace: typings.bunyan.bunyanStrings.trace = this.cast("trace")
-  @scala.inline
-  def warn: typings.bunyan.bunyanStrings.warn = this.cast("warn")
+  def warn: typings.bunyan.bunyanStrings.warn = "warn".asInstanceOf[typings.bunyan.bunyanStrings.warn]
 }
 

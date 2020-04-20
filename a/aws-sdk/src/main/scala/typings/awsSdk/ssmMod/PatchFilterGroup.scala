@@ -16,7 +16,6 @@ object PatchFilterGroup {
   @scala.inline
   def apply(PatchFilters: PatchFilterList): PatchFilterGroup = {
     val __obj = js.Dynamic.literal(PatchFilters = PatchFilters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatchFilterGroup]
   }
 }

@@ -13,7 +13,6 @@ object AnonActions {
   @scala.inline
   def apply(actions: js.Array[IndicesUpdateAliasesParamsAction]): AnonActions = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActions]
   }
 }

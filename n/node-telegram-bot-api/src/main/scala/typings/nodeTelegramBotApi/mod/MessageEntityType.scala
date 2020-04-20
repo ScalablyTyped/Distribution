@@ -21,28 +21,26 @@ trait MessageEntityType extends js.Object
 
 object MessageEntityType {
   @scala.inline
-  def bold: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.bold = this.cast("bold")
+  def bold: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.bold = "bold".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.bold]
   @scala.inline
-  def bot_command: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.bot_command = this.cast("bot_command")
+  def bot_command: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.bot_command = "bot_command".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.bot_command]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.code = "code".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.code]
   @scala.inline
-  def code: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.code = this.cast("code")
+  def email: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.email = "email".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.email]
   @scala.inline
-  def email: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.email = this.cast("email")
+  def hashtag: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.hashtag = "hashtag".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.hashtag]
   @scala.inline
-  def hashtag: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.hashtag = this.cast("hashtag")
+  def italic: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.italic = "italic".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.italic]
   @scala.inline
-  def italic: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.italic = this.cast("italic")
+  def mention: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.mention = "mention".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.mention]
   @scala.inline
-  def mention: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.mention = this.cast("mention")
+  def pre: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.pre = "pre".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.pre]
   @scala.inline
-  def pre: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.pre = this.cast("pre")
+  def text_link: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.text_link = "text_link".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.text_link]
   @scala.inline
-  def text_link: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.text_link = this.cast("text_link")
+  def text_mention: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.text_mention = "text_mention".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.text_mention]
   @scala.inline
-  def text_mention: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.text_mention = this.cast("text_mention")
-  @scala.inline
-  def url: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.url = this.cast("url")
+  def url: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.url = "url".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.url]
 }
 

@@ -14,14 +14,12 @@ trait TimelineFeedReason extends js.Object
 
 object TimelineFeedReason {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cold_start_fetch: typings.instagramPrivateApi.instagramPrivateApiStrings.cold_start_fetch = "cold_start_fetch".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.cold_start_fetch]
   @scala.inline
-  def cold_start_fetch: typings.instagramPrivateApi.instagramPrivateApiStrings.cold_start_fetch = this.cast("cold_start_fetch")
+  def pagination: typings.instagramPrivateApi.instagramPrivateApiStrings.pagination = "pagination".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.pagination]
   @scala.inline
-  def pagination: typings.instagramPrivateApi.instagramPrivateApiStrings.pagination = this.cast("pagination")
+  def pull_to_refresh: typings.instagramPrivateApi.instagramPrivateApiStrings.pull_to_refresh = "pull_to_refresh".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.pull_to_refresh]
   @scala.inline
-  def pull_to_refresh: typings.instagramPrivateApi.instagramPrivateApiStrings.pull_to_refresh = this.cast("pull_to_refresh")
-  @scala.inline
-  def warm_start_fetch: typings.instagramPrivateApi.instagramPrivateApiStrings.warm_start_fetch = this.cast("warm_start_fetch")
+  def warm_start_fetch: typings.instagramPrivateApi.instagramPrivateApiStrings.warm_start_fetch = "warm_start_fetch".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.warm_start_fetch]
 }
 

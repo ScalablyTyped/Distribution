@@ -14,12 +14,10 @@ trait FilenameConflictAction extends js.Object
 
 object FilenameConflictAction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def overwrite: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.overwrite = "overwrite".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.overwrite]
   @scala.inline
-  def overwrite: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.overwrite = this.cast("overwrite")
+  def prompt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.prompt = "prompt".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.prompt]
   @scala.inline
-  def prompt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.prompt = this.cast("prompt")
-  @scala.inline
-  def uniquify: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uniquify = this.cast("uniquify")
+  def uniquify: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uniquify = "uniquify".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uniquify]
 }
 

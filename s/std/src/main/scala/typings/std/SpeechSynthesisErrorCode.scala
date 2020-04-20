@@ -22,30 +22,28 @@ trait SpeechSynthesisErrorCode extends js.Object
 
 object SpeechSynthesisErrorCode {
   @scala.inline
-  def `audio-busy`: typings.std.stdStrings.`audio-busy` = this.cast("audio-busy")
+  def `audio-busy`: typings.std.stdStrings.`audio-busy` = "audio-busy".asInstanceOf[typings.std.stdStrings.`audio-busy`]
   @scala.inline
-  def `audio-hardware`: typings.std.stdStrings.`audio-hardware` = this.cast("audio-hardware")
+  def `audio-hardware`: typings.std.stdStrings.`audio-hardware` = "audio-hardware".asInstanceOf[typings.std.stdStrings.`audio-hardware`]
   @scala.inline
-  def canceled: typings.std.stdStrings.canceled = this.cast("canceled")
+  def canceled: typings.std.stdStrings.canceled = "canceled".asInstanceOf[typings.std.stdStrings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def interrupted: typings.std.stdStrings.interrupted = "interrupted".asInstanceOf[typings.std.stdStrings.interrupted]
   @scala.inline
-  def interrupted: typings.std.stdStrings.interrupted = this.cast("interrupted")
+  def `invalid-argument`: typings.std.stdStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.std.stdStrings.`invalid-argument`]
   @scala.inline
-  def `invalid-argument`: typings.std.stdStrings.`invalid-argument` = this.cast("invalid-argument")
+  def `language-unavailable`: typings.std.stdStrings.`language-unavailable` = "language-unavailable".asInstanceOf[typings.std.stdStrings.`language-unavailable`]
   @scala.inline
-  def `language-unavailable`: typings.std.stdStrings.`language-unavailable` = this.cast("language-unavailable")
+  def network: typings.std.stdStrings.network = "network".asInstanceOf[typings.std.stdStrings.network]
   @scala.inline
-  def network: typings.std.stdStrings.network = this.cast("network")
+  def `not-allowed`: typings.std.stdStrings.`not-allowed` = "not-allowed".asInstanceOf[typings.std.stdStrings.`not-allowed`]
   @scala.inline
-  def `not-allowed`: typings.std.stdStrings.`not-allowed` = this.cast("not-allowed")
+  def `synthesis-failed`: typings.std.stdStrings.`synthesis-failed` = "synthesis-failed".asInstanceOf[typings.std.stdStrings.`synthesis-failed`]
   @scala.inline
-  def `synthesis-failed`: typings.std.stdStrings.`synthesis-failed` = this.cast("synthesis-failed")
+  def `synthesis-unavailable`: typings.std.stdStrings.`synthesis-unavailable` = "synthesis-unavailable".asInstanceOf[typings.std.stdStrings.`synthesis-unavailable`]
   @scala.inline
-  def `synthesis-unavailable`: typings.std.stdStrings.`synthesis-unavailable` = this.cast("synthesis-unavailable")
+  def `text-too-long`: typings.std.stdStrings.`text-too-long` = "text-too-long".asInstanceOf[typings.std.stdStrings.`text-too-long`]
   @scala.inline
-  def `text-too-long`: typings.std.stdStrings.`text-too-long` = this.cast("text-too-long")
-  @scala.inline
-  def `voice-unavailable`: typings.std.stdStrings.`voice-unavailable` = this.cast("voice-unavailable")
+  def `voice-unavailable`: typings.std.stdStrings.`voice-unavailable` = "voice-unavailable".asInstanceOf[typings.std.stdStrings.`voice-unavailable`]
 }
 

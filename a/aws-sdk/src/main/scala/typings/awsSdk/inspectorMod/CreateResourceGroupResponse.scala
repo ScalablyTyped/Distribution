@@ -16,7 +16,6 @@ object CreateResourceGroupResponse {
   @scala.inline
   def apply(resourceGroupArn: Arn): CreateResourceGroupResponse = {
     val __obj = js.Dynamic.literal(resourceGroupArn = resourceGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateResourceGroupResponse]
   }
 }

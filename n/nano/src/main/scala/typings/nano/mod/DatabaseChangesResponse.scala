@@ -18,7 +18,6 @@ object DatabaseChangesResponse {
   @scala.inline
   def apply(last_seq: js.Any, pending: Double, results: js.Array[DatabaseChangesResultItem]): DatabaseChangesResponse = {
     val __obj = js.Dynamic.literal(last_seq = last_seq.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatabaseChangesResponse]
   }
 }

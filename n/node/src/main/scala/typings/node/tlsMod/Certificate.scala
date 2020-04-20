@@ -35,7 +35,6 @@ object Certificate {
   @scala.inline
   def apply(C: String, CN: String, L: String, O: String, OU: String, ST: String): Certificate = {
     val __obj = js.Dynamic.literal(C = C.asInstanceOf[js.Any], CN = CN.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any], OU = OU.asInstanceOf[js.Any], ST = ST.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Certificate]
   }
 }

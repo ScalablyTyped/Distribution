@@ -16,7 +16,6 @@ object CreateDistributionRequest {
   @scala.inline
   def apply(DistributionConfig: DistributionConfig): CreateDistributionRequest = {
     val __obj = js.Dynamic.literal(DistributionConfig = DistributionConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDistributionRequest]
   }
 }

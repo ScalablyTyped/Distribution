@@ -20,7 +20,6 @@ object AnonChannelIdDescription {
     title: String
   ): AnonChannelIdDescription = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], thumbnails = thumbnails.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChannelIdDescription]
   }
 }

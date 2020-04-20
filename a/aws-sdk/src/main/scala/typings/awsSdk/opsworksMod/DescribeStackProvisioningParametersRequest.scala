@@ -16,7 +16,6 @@ object DescribeStackProvisioningParametersRequest {
   @scala.inline
   def apply(StackId: String): DescribeStackProvisioningParametersRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStackProvisioningParametersRequest]
   }
 }

@@ -20,7 +20,6 @@ object TagResourceInput {
   @scala.inline
   def apply(Resource: ContainerARN, Tags: TagList): TagResourceInput = {
     val __obj = js.Dynamic.literal(Resource = Resource.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagResourceInput]
   }
 }

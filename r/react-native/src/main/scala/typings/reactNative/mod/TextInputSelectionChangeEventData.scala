@@ -13,7 +13,6 @@ object TextInputSelectionChangeEventData {
   @scala.inline
   def apply(selection: AnonEnd, target: Double): TextInputSelectionChangeEventData = {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextInputSelectionChangeEventData]
   }
 }

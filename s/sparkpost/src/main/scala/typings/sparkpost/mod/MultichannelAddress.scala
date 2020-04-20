@@ -23,7 +23,6 @@ object MultichannelAddress {
   @scala.inline
   def apply(app_id: String, channel: String, email: String, header_to: String, name: String, token: String): MultichannelAddress = {
     val __obj = js.Dynamic.literal(app_id = app_id.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], header_to = header_to.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultichannelAddress]
   }
 }

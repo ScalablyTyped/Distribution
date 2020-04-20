@@ -16,7 +16,6 @@ object CreateProjectRequest {
   @scala.inline
   def apply(ProjectName: ProjectName): CreateProjectRequest = {
     val __obj = js.Dynamic.literal(ProjectName = ProjectName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateProjectRequest]
   }
 }

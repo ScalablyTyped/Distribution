@@ -13,7 +13,6 @@ object AnonPointIndex {
   @scala.inline
   def apply(PointIndex: Double, SeriesIndex: Double): AnonPointIndex = {
     val __obj = js.Dynamic.literal(PointIndex = PointIndex.asInstanceOf[js.Any], SeriesIndex = SeriesIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPointIndex]
   }
 }

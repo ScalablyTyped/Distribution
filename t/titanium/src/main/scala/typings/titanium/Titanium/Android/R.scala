@@ -1,17 +1,17 @@
 package typings.titanium.Titanium.Android
 
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
+import org.scalablytyped.runtime.TopLevel
+import typings.titanium.Titanium.Proxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * The Titanium binding of the Android system-wide resources class.
+		 * The Titanium binding of the native Android `R` class, giving access to
+		 * Android system-wide resources or application resources.
 		 */
-@JSGlobal("Titanium.Android.R")
 @js.native
-object R extends js.Object {
+trait R extends Proxy {
   /**
   			 * Animation resources. See
   			 * [R.anim](https://developer.android.com/reference/android/R.anim.html)
@@ -24,10 +24,6 @@ object R extends js.Object {
   			 * in the Android Developer Reference.
   			 */
   val animator: js.Any = js.native
-  /**
-  			 * The name of the API that this proxy corresponds to.
-  			 */
-  val apiName: String = js.native
   /**
   			 * Array resources. See [R.array](https://developer.android.com/reference/android/R.array.html)
   			 * in the Android Developer Reference.
@@ -45,10 +41,6 @@ object R extends js.Object {
   			 * in the Android Developer Reference.
   			 */
   val bool: js.Any = js.native
-  /**
-  			 * Indicates if the proxy will bubble an event to its parent.
-  			 */
-  var bubbleParent: Boolean = js.native
   /**
   			 * Color resources. See
   			 * [R.color](https://developer.android.com/reference/android/R.color.html)
@@ -74,12 +66,6 @@ object R extends js.Object {
   			 */
   val fraction: js.Any = js.native
   /**
-  			 * ID resources.  See
-  			 * [R.id](https://developer.android.com/reference/android/R.id.html)
-  			 * in the Android Developer Reference.
-  			 */
-  val id: js.Any = js.native
-  /**
   			 * Integer resources. See
   			 * [R.integer](https://developer.android.com/reference/android/R.integer.html)
   			 * in the Android Developer Reference.
@@ -97,10 +83,6 @@ object R extends js.Object {
   			 * in the Android Developer Reference.
   			 */
   val layout: js.Any = js.native
-  /**
-  			 * The Window or TabGroup whose Activity lifecycle should be triggered on the proxy.
-  			 */
-  var lifecycleContainer: Window | TabGroup = js.native
   /**
   			 * Menu resources. See
   			 * [R.menu](https://developer.android.com/reference/android/R.menu.html)
@@ -155,45 +137,12 @@ object R extends js.Object {
   			 * in the Android Developer Reference.
   			 */
   val xml: js.Any = js.native
-  /**
-  			 * Adds the specified callback as an event listener for the named event.
-  			 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
-  /**
-  			 * Applies the properties to the proxy.
-  			 */
-  def applyProperties(props: js.Any): Unit = js.native
-  /**
-  			 * Fires a synthesized event to any registered listeners.
-  			 */
-  def fireEvent(name: String, event: js.Any): Unit = js.native
-  /**
-  			 * Gets the value of the <Titanium.Android.R.apiName> property.
-  			 */
-  def getApiName(): String = js.native
-  /**
-  			 * Gets the value of the <Titanium.Android.R.bubbleParent> property.
-  			 */
-  def getBubbleParent(): Boolean = js.native
-  /**
-  			 * Gets the value of the <Titanium.Android.R.lifecycleContainer> property.
-  			 */
-  def getLifecycleContainer(): Window | TabGroup = js.native
-  /**
-  			 * Removes the specified callback as an event listener for the named event.
-  			 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.Android.R.bubbleParent> property.
-  			 */
-  def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.Android.R.lifecycleContainer> property.
-  			 */
-  def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.Android.R.lifecycleContainer> property.
-  			 */
-  def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }
+
+/**
+		 * Accessor for Android system resources.
+		 */
+@JSGlobal("Titanium.Android.R")
+@js.native
+object R extends TopLevel[R]
 

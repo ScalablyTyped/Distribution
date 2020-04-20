@@ -13,12 +13,10 @@ trait SharedPCAccountDeletionPolicyType extends js.Object
 
 object SharedPCAccountDeletionPolicyType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def diskSpaceThreshold: typings.microsoftGraph.microsoftGraphStrings.diskSpaceThreshold = "diskSpaceThreshold".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.diskSpaceThreshold]
   @scala.inline
-  def diskSpaceThreshold: typings.microsoftGraph.microsoftGraphStrings.diskSpaceThreshold = this.cast("diskSpaceThreshold")
+  def diskSpaceThresholdOrInactiveThreshold: typings.microsoftGraph.microsoftGraphStrings.diskSpaceThresholdOrInactiveThreshold = "diskSpaceThresholdOrInactiveThreshold".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.diskSpaceThresholdOrInactiveThreshold]
   @scala.inline
-  def diskSpaceThresholdOrInactiveThreshold: typings.microsoftGraph.microsoftGraphStrings.diskSpaceThresholdOrInactiveThreshold = this.cast("diskSpaceThresholdOrInactiveThreshold")
-  @scala.inline
-  def immediate: typings.microsoftGraph.microsoftGraphStrings.immediate = this.cast("immediate")
+  def immediate: typings.microsoftGraph.microsoftGraphStrings.immediate = "immediate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.immediate]
 }
 

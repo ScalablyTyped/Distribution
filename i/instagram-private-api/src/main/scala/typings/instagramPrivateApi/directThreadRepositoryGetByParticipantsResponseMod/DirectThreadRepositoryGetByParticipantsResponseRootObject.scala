@@ -13,7 +13,6 @@ object DirectThreadRepositoryGetByParticipantsResponseRootObject {
   @scala.inline
   def apply(status: String, thread: DirectThreadRepositoryGetByParticipantsResponseThread): DirectThreadRepositoryGetByParticipantsResponseRootObject = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], thread = thread.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectThreadRepositoryGetByParticipantsResponseRootObject]
   }
 }

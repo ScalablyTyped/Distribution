@@ -14,10 +14,8 @@ trait WdBookmarkSortBy extends js.Object
 
 object WdBookmarkSortBy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdSortByLocation: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdSortByLocation: `1` = this.cast(1)
-  @scala.inline
-  def wdSortByName: `0` = this.cast(0)
+  def wdSortByName: `0` = 0.asInstanceOf[`0`]
 }
 

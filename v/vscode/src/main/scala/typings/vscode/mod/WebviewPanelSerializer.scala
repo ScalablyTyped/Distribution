@@ -55,7 +55,6 @@ object WebviewPanelSerializer {
   @scala.inline
   def apply(deserializeWebviewPanel: (WebviewPanel, js.Any) => Thenable[Unit]): WebviewPanelSerializer = {
     val __obj = js.Dynamic.literal(deserializeWebviewPanel = js.Any.fromFunction2(deserializeWebviewPanel))
-  
     __obj.asInstanceOf[WebviewPanelSerializer]
   }
 }

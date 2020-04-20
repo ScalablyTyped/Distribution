@@ -17,7 +17,6 @@ object Options {
   @scala.inline
   def apply(filter: `false` | String): Options = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

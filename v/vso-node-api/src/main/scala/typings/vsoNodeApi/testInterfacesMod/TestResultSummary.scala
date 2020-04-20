@@ -21,7 +21,6 @@ object TestResultSummary {
     testResultsContext: TestResultsContext
   ): TestResultSummary = {
     val __obj = js.Dynamic.literal(aggregatedResultsAnalysis = aggregatedResultsAnalysis.asInstanceOf[js.Any], teamProject = teamProject.asInstanceOf[js.Any], testFailures = testFailures.asInstanceOf[js.Any], testResultsContext = testResultsContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestResultSummary]
   }
 }

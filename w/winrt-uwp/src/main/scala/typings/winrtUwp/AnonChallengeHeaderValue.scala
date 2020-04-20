@@ -14,7 +14,6 @@ object AnonChallengeHeaderValue {
   @scala.inline
   def apply(challengeHeaderValue: HttpChallengeHeaderValue, returnValue: Boolean): AnonChallengeHeaderValue = {
     val __obj = js.Dynamic.literal(challengeHeaderValue = challengeHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChallengeHeaderValue]
   }
 }

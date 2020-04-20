@@ -14,7 +14,6 @@ object UserDeletionRequestCollection {
   @scala.inline
   def apply(upsert: UserDeletionRequest => UserDeletionRequest): UserDeletionRequestCollection = {
     val __obj = js.Dynamic.literal(upsert = js.Any.fromFunction1(upsert))
-  
     __obj.asInstanceOf[UserDeletionRequestCollection]
   }
 }

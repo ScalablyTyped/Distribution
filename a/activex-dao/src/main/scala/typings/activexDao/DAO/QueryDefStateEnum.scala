@@ -14,10 +14,8 @@ trait QueryDefStateEnum extends js.Object
 
 object QueryDefStateEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbQPrepare: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbQPrepare: `1` = this.cast(1)
-  @scala.inline
-  def dbQUnprepare: `2` = this.cast(2)
+  def dbQUnprepare: `2` = 2.asInstanceOf[`2`]
 }
 

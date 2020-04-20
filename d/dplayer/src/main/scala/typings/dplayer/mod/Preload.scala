@@ -13,12 +13,10 @@ trait Preload extends js.Object
 
 object Preload {
   @scala.inline
-  def auto: typings.dplayer.dplayerStrings.auto = this.cast("auto")
+  def auto: typings.dplayer.dplayerStrings.auto = "auto".asInstanceOf[typings.dplayer.dplayerStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def metadata: typings.dplayer.dplayerStrings.metadata = "metadata".asInstanceOf[typings.dplayer.dplayerStrings.metadata]
   @scala.inline
-  def metadata: typings.dplayer.dplayerStrings.metadata = this.cast("metadata")
-  @scala.inline
-  def none: typings.dplayer.dplayerStrings.none = this.cast("none")
+  def none: typings.dplayer.dplayerStrings.none = "none".asInstanceOf[typings.dplayer.dplayerStrings.none]
 }
 

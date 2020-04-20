@@ -13,7 +13,6 @@ object AnonTheme {
   @scala.inline
   def apply(theme: TReactCSSThemrTheme): AnonTheme = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTheme]
   }
 }

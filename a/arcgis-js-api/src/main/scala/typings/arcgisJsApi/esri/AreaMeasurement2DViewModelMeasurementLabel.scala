@@ -31,7 +31,6 @@ object AreaMeasurement2DViewModelMeasurementLabel {
     propertyIsEnumerable: PropertyKey => Boolean
   ): AreaMeasurement2DViewModelMeasurementLabel = {
     val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), perimeter = perimeter.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[AreaMeasurement2DViewModelMeasurementLabel]
   }
 }

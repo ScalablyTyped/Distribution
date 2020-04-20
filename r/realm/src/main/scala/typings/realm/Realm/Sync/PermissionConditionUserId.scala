@@ -12,7 +12,6 @@ object PermissionConditionUserId {
   @scala.inline
   def apply(userId: String): PermissionConditionUserId = {
     val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PermissionConditionUserId]
   }
 }

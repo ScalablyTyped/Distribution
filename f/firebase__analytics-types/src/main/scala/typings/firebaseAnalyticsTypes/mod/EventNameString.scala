@@ -37,60 +37,58 @@ trait EventNameString extends js.Object
 
 object EventNameString {
   @scala.inline
-  def add_payment_info: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_payment_info = this.cast("add_payment_info")
+  def add_payment_info: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_payment_info = "add_payment_info".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_payment_info]
   @scala.inline
-  def add_shipping_info: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_shipping_info = this.cast("add_shipping_info")
+  def add_shipping_info: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_shipping_info = "add_shipping_info".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_shipping_info]
   @scala.inline
-  def add_to_cart: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_cart = this.cast("add_to_cart")
+  def add_to_cart: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_cart = "add_to_cart".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_cart]
   @scala.inline
-  def add_to_wishlist: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_wishlist = this.cast("add_to_wishlist")
+  def add_to_wishlist: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_wishlist = "add_to_wishlist".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_wishlist]
   @scala.inline
-  def begin_checkout: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.begin_checkout = this.cast("begin_checkout")
+  def begin_checkout: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.begin_checkout = "begin_checkout".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.begin_checkout]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkout_progress: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.checkout_progress = "checkout_progress".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.checkout_progress]
   @scala.inline
-  def checkout_progress: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.checkout_progress = this.cast("checkout_progress")
+  def exception: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.exception = "exception".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.exception]
   @scala.inline
-  def exception: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.exception = this.cast("exception")
+  def generate_lead: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.generate_lead = "generate_lead".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.generate_lead]
   @scala.inline
-  def generate_lead: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.generate_lead = this.cast("generate_lead")
+  def login: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.login = "login".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.login]
   @scala.inline
-  def login: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.login = this.cast("login")
+  def page_view: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.page_view = "page_view".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.page_view]
   @scala.inline
-  def page_view: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.page_view = this.cast("page_view")
+  def purchase: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.purchase = "purchase".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.purchase]
   @scala.inline
-  def purchase: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.purchase = this.cast("purchase")
+  def refund: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.refund = "refund".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.refund]
   @scala.inline
-  def refund: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.refund = this.cast("refund")
+  def remove_from_cart: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.remove_from_cart = "remove_from_cart".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.remove_from_cart]
   @scala.inline
-  def remove_from_cart: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.remove_from_cart = this.cast("remove_from_cart")
+  def screen_view: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.screen_view = "screen_view".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.screen_view]
   @scala.inline
-  def screen_view: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.screen_view = this.cast("screen_view")
+  def search: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.search = "search".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.search]
   @scala.inline
-  def search: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.search = this.cast("search")
+  def select_content: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_content = "select_content".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_content]
   @scala.inline
-  def select_content: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_content = this.cast("select_content")
+  def select_item: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_item = "select_item".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_item]
   @scala.inline
-  def select_item: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_item = this.cast("select_item")
+  def select_promotion: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_promotion = "select_promotion".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_promotion]
   @scala.inline
-  def select_promotion: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_promotion = this.cast("select_promotion")
+  def set_checkout_option: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set_checkout_option = "set_checkout_option".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set_checkout_option]
   @scala.inline
-  def set_checkout_option: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set_checkout_option = this.cast("set_checkout_option")
+  def share: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.share = "share".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.share]
   @scala.inline
-  def share: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.share = this.cast("share")
+  def sign_up: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.sign_up = "sign_up".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.sign_up]
   @scala.inline
-  def sign_up: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.sign_up = this.cast("sign_up")
+  def timing_complete: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.timing_complete = "timing_complete".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.timing_complete]
   @scala.inline
-  def timing_complete: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.timing_complete = this.cast("timing_complete")
+  def view_cart: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_cart = "view_cart".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_cart]
   @scala.inline
-  def view_cart: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_cart = this.cast("view_cart")
+  def view_item: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item = "view_item".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item]
   @scala.inline
-  def view_item: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item = this.cast("view_item")
+  def view_item_list: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item_list = "view_item_list".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item_list]
   @scala.inline
-  def view_item_list: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item_list = this.cast("view_item_list")
+  def view_promotion: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_promotion = "view_promotion".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_promotion]
   @scala.inline
-  def view_promotion: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_promotion = this.cast("view_promotion")
-  @scala.inline
-  def view_search_results: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_search_results = this.cast("view_search_results")
+  def view_search_results: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_search_results = "view_search_results".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_search_results]
 }
 

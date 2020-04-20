@@ -22,7 +22,6 @@ object JQueryNotifyInstance {
     options: JQueryNotifyOptions
   ): JQueryNotifyInstance = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), element = element.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryNotifyInstance]
   }
 }

@@ -22,7 +22,6 @@ object OrderBySettings {
     reset: () => Unit
   ): OrderBySettings = {
     val __obj = js.Dynamic.literal(DefaultOrder = DefaultOrder.asInstanceOf[js.Any], DefaultProperty = DefaultProperty.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], Property = Property.asInstanceOf[js.Any], isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[OrderBySettings]
   }
 }

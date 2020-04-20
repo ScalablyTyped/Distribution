@@ -17,7 +17,6 @@ object ISchedule {
   @scala.inline
   def apply(command: AnonAddress, description: String, name: String, time: Date): ISchedule = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISchedule]
   }
 }

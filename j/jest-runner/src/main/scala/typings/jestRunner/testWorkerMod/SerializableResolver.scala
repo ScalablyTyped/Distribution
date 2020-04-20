@@ -15,7 +15,6 @@ object SerializableResolver {
   @scala.inline
   def apply(config: ProjectConfig, serializableModuleMap: SerializableModuleMap): SerializableResolver = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], serializableModuleMap = serializableModuleMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerializableResolver]
   }
 }

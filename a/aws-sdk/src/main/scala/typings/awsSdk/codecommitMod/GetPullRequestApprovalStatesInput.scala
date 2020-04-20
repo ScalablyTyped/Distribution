@@ -20,7 +20,6 @@ object GetPullRequestApprovalStatesInput {
   @scala.inline
   def apply(pullRequestId: PullRequestId, revisionId: RevisionId): GetPullRequestApprovalStatesInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any], revisionId = revisionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPullRequestApprovalStatesInput]
   }
 }

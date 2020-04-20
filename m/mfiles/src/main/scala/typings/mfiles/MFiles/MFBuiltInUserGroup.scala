@@ -14,10 +14,8 @@ trait MFBuiltInUserGroup extends js.Object
 
 object MFBuiltInUserGroup {
   @scala.inline
-  def AndExternalUsers: `2` = this.cast(2)
+  def AndExternalUsers: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Users: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Users: `1` = 1.asInstanceOf[`1`]
 }
 

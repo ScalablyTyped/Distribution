@@ -13,7 +13,6 @@ object PickImplnoContent {
   @scala.inline
   def apply(noContent: String): PickImplnoContent = {
     val __obj = js.Dynamic.literal(noContent = noContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnoContent]
   }
 }

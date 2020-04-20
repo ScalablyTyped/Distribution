@@ -20,7 +20,6 @@ object FilterMethods {
   @scala.inline
   def apply(hasAttributes: StringDictionary[js.Any] => Filter, hasChildren: String => Filter): FilterMethods = {
     val __obj = js.Dynamic.literal(hasAttributes = js.Any.fromFunction1(hasAttributes), hasChildren = js.Any.fromFunction1(hasChildren))
-  
     __obj.asInstanceOf[FilterMethods]
   }
 }

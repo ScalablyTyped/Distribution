@@ -24,20 +24,18 @@ trait OlViewType extends js.Object
 
 object OlViewType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olBusinessCardView: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olBusinessCardView: `5` = this.cast(5)
+  def olCalendarView: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olCalendarView: `2` = this.cast(2)
+  def olCardView: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olCardView: `1` = this.cast(1)
+  def olDailyTaskListView: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olDailyTaskListView: `6` = this.cast(6)
+  def olIconView: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olIconView: `3` = this.cast(3)
+  def olTableView: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olTableView: `0` = this.cast(0)
-  @scala.inline
-  def olTimelineView: `4` = this.cast(4)
+  def olTimelineView: `4` = 4.asInstanceOf[`4`]
 }
 

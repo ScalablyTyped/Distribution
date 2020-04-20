@@ -24,7 +24,6 @@ object ServicesData {
     startmode: String
   ): ServicesData = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pcpu = pcpu.asInstanceOf[js.Any], pids = pids.asInstanceOf[js.Any], pmem = pmem.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], startmode = startmode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServicesData]
   }
 }

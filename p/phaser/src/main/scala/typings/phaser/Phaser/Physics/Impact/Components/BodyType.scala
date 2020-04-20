@@ -37,7 +37,6 @@ object BodyType {
     setTypeNone: () => GameObject
   ): BodyType = {
     val __obj = js.Dynamic.literal(getBodyType = js.Any.fromFunction0(getBodyType), setTypeA = js.Any.fromFunction0(setTypeA), setTypeB = js.Any.fromFunction0(setTypeB), setTypeNone = js.Any.fromFunction0(setTypeNone))
-  
     __obj.asInstanceOf[BodyType]
   }
 }

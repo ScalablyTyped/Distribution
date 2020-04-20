@@ -15,7 +15,6 @@ object AnonBorderRadius {
   @scala.inline
   def apply(borderRadius: Double, height: Double, slipDisplacement: Double, width: Double): AnonBorderRadius = {
     val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], slipDisplacement = slipDisplacement.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderRadius]
   }
 }

@@ -17,7 +17,6 @@ object ReposReplaceAllTopicsParams {
   @scala.inline
   def apply(names: js.Array[String], owner: String, repo: String): ReposReplaceAllTopicsParams = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposReplaceAllTopicsParams]
   }
 }

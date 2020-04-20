@@ -12,10 +12,8 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ltr: typings.materialUiCore.materialUiCoreStrings.ltr = "ltr".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.ltr]
   @scala.inline
-  def ltr: typings.materialUiCore.materialUiCoreStrings.ltr = this.cast("ltr")
-  @scala.inline
-  def rtl: typings.materialUiCore.materialUiCoreStrings.rtl = this.cast("rtl")
+  def rtl: typings.materialUiCore.materialUiCoreStrings.rtl = "rtl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rtl]
 }
 

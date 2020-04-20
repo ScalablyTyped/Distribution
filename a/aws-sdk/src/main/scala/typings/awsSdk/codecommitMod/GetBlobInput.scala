@@ -20,7 +20,6 @@ object GetBlobInput {
   @scala.inline
   def apply(blobId: ObjectId, repositoryName: RepositoryName): GetBlobInput = {
     val __obj = js.Dynamic.literal(blobId = blobId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBlobInput]
   }
 }

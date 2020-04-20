@@ -20,7 +20,6 @@ object DescribeTemplatePermissionsRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, TemplateId: RestrictiveResourceId): DescribeTemplatePermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTemplatePermissionsRequest]
   }
 }

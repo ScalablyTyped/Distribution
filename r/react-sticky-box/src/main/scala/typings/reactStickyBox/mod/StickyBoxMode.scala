@@ -13,12 +13,10 @@ trait StickyBoxMode extends js.Object
 
 object StickyBoxMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def relative: typings.reactStickyBox.reactStickyBoxStrings.relative = "relative".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.relative]
   @scala.inline
-  def relative: typings.reactStickyBox.reactStickyBoxStrings.relative = this.cast("relative")
+  def stickyBottom: typings.reactStickyBox.reactStickyBoxStrings.stickyBottom = "stickyBottom".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.stickyBottom]
   @scala.inline
-  def stickyBottom: typings.reactStickyBox.reactStickyBoxStrings.stickyBottom = this.cast("stickyBottom")
-  @scala.inline
-  def stickyTop: typings.reactStickyBox.reactStickyBoxStrings.stickyTop = this.cast("stickyTop")
+  def stickyTop: typings.reactStickyBox.reactStickyBoxStrings.stickyTop = "stickyTop".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.stickyTop]
 }
 

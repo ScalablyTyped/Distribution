@@ -21,7 +21,6 @@ object ParameterValue {
   @scala.inline
   def apply(Name: string, Value: string): ParameterValue = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParameterValue]
   }
 }

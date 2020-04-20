@@ -15,7 +15,6 @@ object AnonCell {
   @scala.inline
   def apply(cell: Cell, notebook: Notebook): AnonCell = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], notebook = notebook.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCell]
   }
 }

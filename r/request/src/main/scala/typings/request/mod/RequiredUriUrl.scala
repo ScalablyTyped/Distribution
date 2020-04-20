@@ -15,13 +15,11 @@ object RequiredUriUrl {
   @scala.inline
   def UriOptions(uri: String | Url): RequiredUriUrl = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredUriUrl]
   }
   @scala.inline
   def UrlOptions(url: String | Url): RequiredUriUrl = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredUriUrl]
   }
 }

@@ -28,7 +28,6 @@ object DeleteApplicationReferenceDataSourceRequest {
     ReferenceId: Id
   ): DeleteApplicationReferenceDataSourceRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], ReferenceId = ReferenceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApplicationReferenceDataSourceRequest]
   }
 }

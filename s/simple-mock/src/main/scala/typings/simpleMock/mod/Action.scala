@@ -19,7 +19,6 @@ object Action {
   @scala.inline
   def apply[T](cbArgs: ArrayLike[_], returnValue: T, throwError: Error): Action[T] = {
     val __obj = js.Dynamic.literal(cbArgs = cbArgs.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], throwError = throwError.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Action[T]]
   }
 }

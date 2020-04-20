@@ -15,7 +15,6 @@ object QuadRunIteratee {
   @scala.inline
   def apply[Q /* <: BaseQuad */](run: (Q, Dataset[Q, Q]) => Unit): QuadRunIteratee[Q] = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction2(run))
-  
     __obj.asInstanceOf[QuadRunIteratee[Q]]
   }
 }

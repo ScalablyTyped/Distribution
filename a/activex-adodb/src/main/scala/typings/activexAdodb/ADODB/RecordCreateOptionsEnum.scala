@@ -22,18 +22,16 @@ trait RecordCreateOptionsEnum extends js.Object
 
 object RecordCreateOptionsEnum {
   @scala.inline
-  def adCreateCollection: `8192` = this.cast(8192)
+  def adCreateCollection: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def adCreateNonCollection: `0` = this.cast(0)
+  def adCreateNonCollection: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adCreateOverwrite: `67108864` = this.cast(67108864)
+  def adCreateOverwrite: `67108864` = 67108864.asInstanceOf[`67108864`]
   @scala.inline
-  def adCreateStructDoc: `-2147483648` = this.cast(-2147483648)
+  def adCreateStructDoc: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
   @scala.inline
-  def adFailIfNotExists: `-1` = this.cast(-1)
+  def adFailIfNotExists: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def adOpenIfExists: `33554432` = this.cast(33554432)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adOpenIfExists: `33554432` = 33554432.asInstanceOf[`33554432`]
 }
 

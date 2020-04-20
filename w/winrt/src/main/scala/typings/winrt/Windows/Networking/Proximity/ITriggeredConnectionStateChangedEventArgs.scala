@@ -15,7 +15,6 @@ object ITriggeredConnectionStateChangedEventArgs {
   @scala.inline
   def apply(id: Double, socket: StreamSocket, state: TriggeredConnectState): ITriggeredConnectionStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITriggeredConnectionStateChangedEventArgs]
   }
 }

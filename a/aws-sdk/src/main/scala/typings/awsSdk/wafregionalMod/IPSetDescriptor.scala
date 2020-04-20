@@ -20,7 +20,6 @@ object IPSetDescriptor {
   @scala.inline
   def apply(Type: IPSetDescriptorType, Value: IPSetDescriptorValue): IPSetDescriptor = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPSetDescriptor]
   }
 }

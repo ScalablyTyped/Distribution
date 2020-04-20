@@ -12,7 +12,6 @@ object UntilOptions {
   @scala.inline
   def apply(maxDepth: Double): UntilOptions = {
     val __obj = js.Dynamic.literal(maxDepth = maxDepth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntilOptions]
   }
 }

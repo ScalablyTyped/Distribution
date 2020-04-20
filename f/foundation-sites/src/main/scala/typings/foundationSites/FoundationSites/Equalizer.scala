@@ -23,7 +23,6 @@ object Equalizer {
     getHeightsByRow: js.Function => js.Array[_]
   ): Equalizer = {
     val __obj = js.Dynamic.literal(applyHeight = js.Any.fromFunction1(applyHeight), applyHeightByRow = js.Any.fromFunction1(applyHeightByRow), destroy = js.Any.fromFunction0(destroy), getHeights = js.Any.fromFunction1(getHeights), getHeightsByRow = js.Any.fromFunction1(getHeightsByRow))
-  
     __obj.asInstanceOf[Equalizer]
   }
 }

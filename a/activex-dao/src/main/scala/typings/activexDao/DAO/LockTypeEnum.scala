@@ -18,14 +18,12 @@ trait LockTypeEnum extends js.Object
 
 object LockTypeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbOptimistic: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def dbOptimistic: `3` = this.cast(3)
+  def dbOptimisticBatch: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def dbOptimisticBatch: `5` = this.cast(5)
+  def dbOptimisticValue: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbOptimisticValue: `1` = this.cast(1)
-  @scala.inline
-  def dbPessimistic: `2` = this.cast(2)
+  def dbPessimistic: `2` = 2.asInstanceOf[`2`]
 }
 

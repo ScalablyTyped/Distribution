@@ -20,7 +20,6 @@ object DisassociateIpGroupsRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, GroupIds: IpGroupIdList): DisassociateIpGroupsRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], GroupIds = GroupIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateIpGroupsRequest]
   }
 }

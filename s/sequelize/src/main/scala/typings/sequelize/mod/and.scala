@@ -12,7 +12,6 @@ object and {
   @scala.inline
   def apply(args: js.Array[_]): and = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[and]
   }
 }

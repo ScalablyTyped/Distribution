@@ -20,22 +20,20 @@ trait RangeEnum
 
 object RangeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def category: typings.vegaTypings.vegaTypingsStrings.category = "category".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.category]
   @scala.inline
-  def category: typings.vegaTypings.vegaTypingsStrings.category = this.cast("category")
+  def diverging: typings.vegaTypings.vegaTypingsStrings.diverging = "diverging".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.diverging]
   @scala.inline
-  def diverging: typings.vegaTypings.vegaTypingsStrings.diverging = this.cast("diverging")
+  def heatmap: typings.vegaTypings.vegaTypingsStrings.heatmap = "heatmap".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.heatmap]
   @scala.inline
-  def heatmap: typings.vegaTypings.vegaTypingsStrings.heatmap = this.cast("heatmap")
+  def height: typings.vegaTypings.vegaTypingsStrings.height = "height".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.height]
   @scala.inline
-  def height: typings.vegaTypings.vegaTypingsStrings.height = this.cast("height")
+  def ordinal: typings.vegaTypings.vegaTypingsStrings.ordinal = "ordinal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ordinal]
   @scala.inline
-  def ordinal: typings.vegaTypings.vegaTypingsStrings.ordinal = this.cast("ordinal")
+  def ramp: typings.vegaTypings.vegaTypingsStrings.ramp = "ramp".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ramp]
   @scala.inline
-  def ramp: typings.vegaTypings.vegaTypingsStrings.ramp = this.cast("ramp")
+  def symbol: typings.vegaTypings.vegaTypingsStrings.symbol = "symbol".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.symbol]
   @scala.inline
-  def symbol: typings.vegaTypings.vegaTypingsStrings.symbol = this.cast("symbol")
-  @scala.inline
-  def width: typings.vegaTypings.vegaTypingsStrings.width = this.cast("width")
+  def width: typings.vegaTypings.vegaTypingsStrings.width = "width".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.width]
 }
 

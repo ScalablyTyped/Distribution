@@ -16,7 +16,6 @@ object DescribeUserPoolRequest {
   @scala.inline
   def apply(UserPoolId: UserPoolIdType): DescribeUserPoolRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeUserPoolRequest]
   }
 }

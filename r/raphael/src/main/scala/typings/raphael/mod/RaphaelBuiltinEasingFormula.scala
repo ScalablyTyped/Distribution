@@ -26,38 +26,36 @@ trait RaphaelBuiltinEasingFormula extends js.Object
 
 object RaphaelBuiltinEasingFormula {
   @scala.inline
-  def Greaterthansign: typings.raphael.raphaelStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.raphael.raphaelStrings.Greaterthansign = ">".asInstanceOf[typings.raphael.raphaelStrings.Greaterthansign]
   @scala.inline
-  def Lessthansign: typings.raphael.raphaelStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.raphael.raphaelStrings.Lessthansign = "<".asInstanceOf[typings.raphael.raphaelStrings.Lessthansign]
   @scala.inline
-  def LessthansignGreaterthansign: typings.raphael.raphaelStrings.LessthansignGreaterthansign = this.cast("<>")
+  def LessthansignGreaterthansign: typings.raphael.raphaelStrings.LessthansignGreaterthansign = "<>".asInstanceOf[typings.raphael.raphaelStrings.LessthansignGreaterthansign]
   @scala.inline
-  def `back-in`: typings.raphael.raphaelStrings.`back-in` = this.cast("back-in")
+  def `back-in`: typings.raphael.raphaelStrings.`back-in` = "back-in".asInstanceOf[typings.raphael.raphaelStrings.`back-in`]
   @scala.inline
-  def `back-out`: typings.raphael.raphaelStrings.`back-out` = this.cast("back-out")
+  def `back-out`: typings.raphael.raphaelStrings.`back-out` = "back-out".asInstanceOf[typings.raphael.raphaelStrings.`back-out`]
   @scala.inline
-  def backIn: typings.raphael.raphaelStrings.backIn = this.cast("backIn")
+  def backIn: typings.raphael.raphaelStrings.backIn = "backIn".asInstanceOf[typings.raphael.raphaelStrings.backIn]
   @scala.inline
-  def backOut: typings.raphael.raphaelStrings.backOut = this.cast("backOut")
+  def backOut: typings.raphael.raphaelStrings.backOut = "backOut".asInstanceOf[typings.raphael.raphaelStrings.backOut]
   @scala.inline
-  def bounce: typings.raphael.raphaelStrings.bounce = this.cast("bounce")
+  def bounce: typings.raphael.raphaelStrings.bounce = "bounce".asInstanceOf[typings.raphael.raphaelStrings.bounce]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `ease-in`: typings.raphael.raphaelStrings.`ease-in` = "ease-in".asInstanceOf[typings.raphael.raphaelStrings.`ease-in`]
   @scala.inline
-  def `ease-in`: typings.raphael.raphaelStrings.`ease-in` = this.cast("ease-in")
+  def `ease-in-out`: typings.raphael.raphaelStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.raphael.raphaelStrings.`ease-in-out`]
   @scala.inline
-  def `ease-in-out`: typings.raphael.raphaelStrings.`ease-in-out` = this.cast("ease-in-out")
+  def `ease-out`: typings.raphael.raphaelStrings.`ease-out` = "ease-out".asInstanceOf[typings.raphael.raphaelStrings.`ease-out`]
   @scala.inline
-  def `ease-out`: typings.raphael.raphaelStrings.`ease-out` = this.cast("ease-out")
+  def easeIn: typings.raphael.raphaelStrings.easeIn = "easeIn".asInstanceOf[typings.raphael.raphaelStrings.easeIn]
   @scala.inline
-  def easeIn: typings.raphael.raphaelStrings.easeIn = this.cast("easeIn")
+  def easeInOut: typings.raphael.raphaelStrings.easeInOut = "easeInOut".asInstanceOf[typings.raphael.raphaelStrings.easeInOut]
   @scala.inline
-  def easeInOut: typings.raphael.raphaelStrings.easeInOut = this.cast("easeInOut")
+  def easeOut: typings.raphael.raphaelStrings.easeOut = "easeOut".asInstanceOf[typings.raphael.raphaelStrings.easeOut]
   @scala.inline
-  def easeOut: typings.raphael.raphaelStrings.easeOut = this.cast("easeOut")
+  def elastic: typings.raphael.raphaelStrings.elastic = "elastic".asInstanceOf[typings.raphael.raphaelStrings.elastic]
   @scala.inline
-  def elastic: typings.raphael.raphaelStrings.elastic = this.cast("elastic")
-  @scala.inline
-  def linear: typings.raphael.raphaelStrings.linear = this.cast("linear")
+  def linear: typings.raphael.raphaelStrings.linear = "linear".asInstanceOf[typings.raphael.raphaelStrings.linear]
 }
 

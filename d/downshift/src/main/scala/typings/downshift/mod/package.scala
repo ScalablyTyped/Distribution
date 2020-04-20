@@ -17,5 +17,6 @@ package object mod {
     typings.std.Partial[typings.downshift.mod.StateChangeOptions[Item]]
   ]
   type UseComboboxReturnValue[Item] = typings.downshift.mod.UseComboboxState[Item] with typings.downshift.mod.UseComboboxPropGetters[Item] with typings.downshift.mod.UseComboboxActions[Item]
+  type UseMultipleSelectionReturnValue[Item] = typings.downshift.mod.UseMultipleSelectionState[Item] with typings.downshift.mod.UseMultipleSelectionPropGetters[Item] with typings.downshift.mod.UseMultipleSelectionActions[Item]
   type UseSelectReturnValue[Item] = typings.downshift.mod.UseSelectState[Item] with typings.downshift.mod.UseSelectPropGetters[Item] with typings.downshift.mod.UseSelectActions[Item]
 }

@@ -28,7 +28,6 @@ object ScheduleAction {
     ScheduleActionStartSettings: ScheduleActionStartSettings
   ): ScheduleAction = {
     val __obj = js.Dynamic.literal(ActionName = ActionName.asInstanceOf[js.Any], ScheduleActionSettings = ScheduleActionSettings.asInstanceOf[js.Any], ScheduleActionStartSettings = ScheduleActionStartSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScheduleAction]
   }
 }

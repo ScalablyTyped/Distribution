@@ -12,10 +12,8 @@ trait LayoutTitleAnchor extends js.Object
 
 object LayoutTitleAnchor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def end: typings.vegaTypings.vegaTypingsStrings.end = "end".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.end]
   @scala.inline
-  def end: typings.vegaTypings.vegaTypingsStrings.end = this.cast("end")
-  @scala.inline
-  def start: typings.vegaTypings.vegaTypingsStrings.start = this.cast("start")
+  def start: typings.vegaTypings.vegaTypingsStrings.start = "start".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.start]
 }
 

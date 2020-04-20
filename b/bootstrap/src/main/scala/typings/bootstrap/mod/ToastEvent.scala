@@ -14,14 +14,12 @@ trait ToastEvent extends js.Object
 
 object ToastEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hiddenDotbsDottoast: typings.bootstrap.bootstrapStrings.hiddenDotbsDottoast = "hidden.bs.toast".asInstanceOf[typings.bootstrap.bootstrapStrings.hiddenDotbsDottoast]
   @scala.inline
-  def hiddenDotbsDottoast: typings.bootstrap.bootstrapStrings.hiddenDotbsDottoast = this.cast("hidden.bs.toast")
+  def hideDotbsDottoast: typings.bootstrap.bootstrapStrings.hideDotbsDottoast = "hide.bs.toast".asInstanceOf[typings.bootstrap.bootstrapStrings.hideDotbsDottoast]
   @scala.inline
-  def hideDotbsDottoast: typings.bootstrap.bootstrapStrings.hideDotbsDottoast = this.cast("hide.bs.toast")
+  def showDotbsDottoast: typings.bootstrap.bootstrapStrings.showDotbsDottoast = "show.bs.toast".asInstanceOf[typings.bootstrap.bootstrapStrings.showDotbsDottoast]
   @scala.inline
-  def showDotbsDottoast: typings.bootstrap.bootstrapStrings.showDotbsDottoast = this.cast("show.bs.toast")
-  @scala.inline
-  def shownDotbsDottoast: typings.bootstrap.bootstrapStrings.shownDotbsDottoast = this.cast("shown.bs.toast")
+  def shownDotbsDottoast: typings.bootstrap.bootstrapStrings.shownDotbsDottoast = "shown.bs.toast".asInstanceOf[typings.bootstrap.bootstrapStrings.shownDotbsDottoast]
 }
 

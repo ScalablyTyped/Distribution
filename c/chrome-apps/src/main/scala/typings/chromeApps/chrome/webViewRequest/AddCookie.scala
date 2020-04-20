@@ -21,7 +21,6 @@ object AddCookie {
   @scala.inline
   def apply[T](cookie: T): AddCookie[T] = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddCookie[T]]
   }
 }

@@ -20,7 +20,6 @@ object UpdateCommentInput {
   @scala.inline
   def apply(commentId: CommentId, content: Content): UpdateCommentInput = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateCommentInput]
   }
 }

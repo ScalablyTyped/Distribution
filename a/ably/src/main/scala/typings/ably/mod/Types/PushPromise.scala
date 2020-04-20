@@ -12,7 +12,6 @@ object PushPromise {
   @scala.inline
   def apply(admin: PushAdminPromise): PushPromise = {
     val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PushPromise]
   }
 }

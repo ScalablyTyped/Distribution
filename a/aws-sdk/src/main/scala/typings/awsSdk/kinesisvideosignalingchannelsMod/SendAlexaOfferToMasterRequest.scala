@@ -24,7 +24,6 @@ object SendAlexaOfferToMasterRequest {
   @scala.inline
   def apply(ChannelARN: ResourceARN, MessagePayload: MessagePayload, SenderClientId: ClientId): SendAlexaOfferToMasterRequest = {
     val __obj = js.Dynamic.literal(ChannelARN = ChannelARN.asInstanceOf[js.Any], MessagePayload = MessagePayload.asInstanceOf[js.Any], SenderClientId = SenderClientId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendAlexaOfferToMasterRequest]
   }
 }

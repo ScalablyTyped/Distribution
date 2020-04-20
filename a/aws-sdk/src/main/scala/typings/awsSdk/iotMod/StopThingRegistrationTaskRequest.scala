@@ -16,7 +16,6 @@ object StopThingRegistrationTaskRequest {
   @scala.inline
   def apply(taskId: TaskId): StopThingRegistrationTaskRequest = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopThingRegistrationTaskRequest]
   }
 }

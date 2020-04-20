@@ -13,7 +13,6 @@ object AnonFontSizeMargin {
   @scala.inline
   def apply(fontSize: String, margin: js.Array[js.Array[String]]): AnonFontSizeMargin = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontSizeMargin]
   }
 }

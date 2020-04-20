@@ -15,7 +15,6 @@ object RowsMethods {
   @scala.inline
   def apply(recalcHeight: () => Api): RowsMethods = {
     val __obj = js.Dynamic.literal(recalcHeight = js.Any.fromFunction0(recalcHeight))
-  
     __obj.asInstanceOf[RowsMethods]
   }
 }

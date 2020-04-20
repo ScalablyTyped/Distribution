@@ -46,7 +46,6 @@ object DataSetSelector {
     width: Double
   ): DataSetSelector = {
     val __obj = js.Dynamic.literal(comboBoxSelectText = comboBoxSelectText.asInstanceOf[js.Any], compareText = compareText.asInstanceOf[js.Any], listHeight = listHeight.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selectText = selectText.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataSetSelector]
   }
 }

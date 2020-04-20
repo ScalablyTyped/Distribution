@@ -13,7 +13,6 @@ object KnockoutStatic {
   @scala.inline
   def apply(mapping: KnockoutMapping): KnockoutStatic = {
     val __obj = js.Dynamic.literal(mapping = mapping.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutStatic]
   }
 }

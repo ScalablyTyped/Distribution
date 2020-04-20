@@ -18,7 +18,6 @@ object AnonIsRefresh {
   @scala.inline
   def apply(IsRefresh: Boolean, Map: XmlMap, Result: XlXmlImportResult, Wb: Workbook): AnonIsRefresh = {
     val __obj = js.Dynamic.literal(IsRefresh = IsRefresh.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsRefresh]
   }
 }

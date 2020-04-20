@@ -22,7 +22,6 @@ object MainRouteTableAssociationArgs {
   @scala.inline
   def apply(routeTableId: Input[String], vpcId: Input[String]): MainRouteTableAssociationArgs = {
     val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MainRouteTableAssociationArgs]
   }
 }

@@ -20,7 +20,6 @@ object OnGroupClickListener {
     onGroupClick: (typings.androiduix.android.widget.ExpandableListView, View, Double, Double) => Boolean
   ): OnGroupClickListener = {
     val __obj = js.Dynamic.literal(onGroupClick = js.Any.fromFunction4(onGroupClick))
-  
     __obj.asInstanceOf[OnGroupClickListener]
   }
 }

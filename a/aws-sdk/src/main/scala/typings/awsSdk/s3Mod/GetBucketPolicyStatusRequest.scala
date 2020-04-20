@@ -16,7 +16,6 @@ object GetBucketPolicyStatusRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketPolicyStatusRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketPolicyStatusRequest]
   }
 }

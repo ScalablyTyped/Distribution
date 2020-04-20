@@ -26,30 +26,28 @@ trait toolbarFontGroupOptions extends js.Object
 
 object toolbarFontGroupOptions {
   @scala.inline
-  def backcolor: backcolor_ = this.cast("backcolor")
+  def backcolor: backcolor_ = "backcolor".asInstanceOf[backcolor_]
   @scala.inline
-  def bold: typings.summernote.summernoteStrings.bold = this.cast("bold")
+  def bold: typings.summernote.summernoteStrings.bold = "bold".asInstanceOf[typings.summernote.summernoteStrings.bold]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clear: typings.summernote.summernoteStrings.clear = "clear".asInstanceOf[typings.summernote.summernoteStrings.clear]
   @scala.inline
-  def clear: typings.summernote.summernoteStrings.clear = this.cast("clear")
+  def color: typings.summernote.summernoteStrings.color = "color".asInstanceOf[typings.summernote.summernoteStrings.color]
   @scala.inline
-  def color: typings.summernote.summernoteStrings.color = this.cast("color")
+  def fontname: fontname_ = "fontname".asInstanceOf[fontname_]
   @scala.inline
-  def fontname: fontname_ = this.cast("fontname")
+  def fontsize: fontsize_ = "fontsize".asInstanceOf[fontsize_]
   @scala.inline
-  def fontsize: fontsize_ = this.cast("fontsize")
+  def forecolor: forecolor_ = "forecolor".asInstanceOf[forecolor_]
   @scala.inline
-  def forecolor: forecolor_ = this.cast("forecolor")
+  def italic: typings.summernote.summernoteStrings.italic = "italic".asInstanceOf[typings.summernote.summernoteStrings.italic]
   @scala.inline
-  def italic: typings.summernote.summernoteStrings.italic = this.cast("italic")
+  def strikethrough: typings.summernote.summernoteStrings.strikethrough = "strikethrough".asInstanceOf[typings.summernote.summernoteStrings.strikethrough]
   @scala.inline
-  def strikethrough: typings.summernote.summernoteStrings.strikethrough = this.cast("strikethrough")
+  def subscript: typings.summernote.summernoteStrings.subscript = "subscript".asInstanceOf[typings.summernote.summernoteStrings.subscript]
   @scala.inline
-  def subscript: typings.summernote.summernoteStrings.subscript = this.cast("subscript")
+  def superscript: typings.summernote.summernoteStrings.superscript = "superscript".asInstanceOf[typings.summernote.summernoteStrings.superscript]
   @scala.inline
-  def superscript: typings.summernote.summernoteStrings.superscript = this.cast("superscript")
-  @scala.inline
-  def underline: typings.summernote.summernoteStrings.underline = this.cast("underline")
+  def underline: typings.summernote.summernoteStrings.underline = "underline".asInstanceOf[typings.summernote.summernoteStrings.underline]
 }
 

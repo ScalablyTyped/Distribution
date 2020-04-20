@@ -20,7 +20,6 @@ object FieldSchema {
   @scala.inline
   def apply(AllowGridEditing: Boolean, FieldType: String, Name: String, Type: String): FieldSchema = {
     val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing.asInstanceOf[js.Any], FieldType = FieldType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldSchema]
   }
 }

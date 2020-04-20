@@ -30,7 +30,6 @@ object positioning {
   @scala.inline
   def apply(angle: (js.Object, js.Object) => js.Object, label: (js.Object, js.Object) => js.Object): positioning = {
     val __obj = js.Dynamic.literal(angle = js.Any.fromFunction2(angle), label = js.Any.fromFunction2(label))
-  
     __obj.asInstanceOf[positioning]
   }
 }

@@ -119,9 +119,9 @@ object jupyterlabUiComponentsStrings {
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
-  def `bottom left`: `bottom left` = "bottom left".asInstanceOf[`bottom left`]
+  def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
   @scala.inline
-  def `bottom right`: `bottom right` = "bottom right".asInstanceOf[`bottom right`]
+  def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
   @scala.inline
   def breadCrumb: breadCrumb = "breadCrumb".asInstanceOf[breadCrumb]
   @scala.inline
@@ -183,9 +183,9 @@ object jupyterlabUiComponentsStrings {
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
-  def `top left`: `top left` = "top left".asInstanceOf[`top left`]
+  def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
   @scala.inline
-  def `top right`: `top right` = "top right".asInstanceOf[`top right`]
+  def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
   @scala.inline
   def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
 }

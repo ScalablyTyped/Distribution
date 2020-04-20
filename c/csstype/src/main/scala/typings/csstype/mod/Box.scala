@@ -21,12 +21,10 @@ trait Box
 
 object Box {
   @scala.inline
-  def `border-box`: typings.csstype.csstypeStrings.`border-box` = this.cast("border-box")
+  def `border-box`: typings.csstype.csstypeStrings.`border-box` = "border-box".asInstanceOf[typings.csstype.csstypeStrings.`border-box`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `content-box`: typings.csstype.csstypeStrings.`content-box` = "content-box".asInstanceOf[typings.csstype.csstypeStrings.`content-box`]
   @scala.inline
-  def `content-box`: typings.csstype.csstypeStrings.`content-box` = this.cast("content-box")
-  @scala.inline
-  def `padding-box`: typings.csstype.csstypeStrings.`padding-box` = this.cast("padding-box")
+  def `padding-box`: typings.csstype.csstypeStrings.`padding-box` = "padding-box".asInstanceOf[typings.csstype.csstypeStrings.`padding-box`]
 }
 

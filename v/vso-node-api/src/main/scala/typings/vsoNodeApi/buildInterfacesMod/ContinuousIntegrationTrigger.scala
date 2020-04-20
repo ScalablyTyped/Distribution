@@ -37,7 +37,6 @@ object ContinuousIntegrationTrigger {
     triggerType: DefinitionTriggerType
   ): ContinuousIntegrationTrigger = {
     val __obj = js.Dynamic.literal(batchChanges = batchChanges.asInstanceOf[js.Any], branchFilters = branchFilters.asInstanceOf[js.Any], maxConcurrentBuildsPerBranch = maxConcurrentBuildsPerBranch.asInstanceOf[js.Any], pathFilters = pathFilters.asInstanceOf[js.Any], pollingInterval = pollingInterval.asInstanceOf[js.Any], pollingJobId = pollingJobId.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContinuousIntegrationTrigger]
   }
 }

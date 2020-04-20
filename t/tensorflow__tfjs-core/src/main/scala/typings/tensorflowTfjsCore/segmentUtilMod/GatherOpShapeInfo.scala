@@ -15,7 +15,6 @@ object GatherOpShapeInfo {
   @scala.inline
   def apply(batchSize: Double, dimSize: Double, outputShape: js.Array[Double], sliceSize: Double): GatherOpShapeInfo = {
     val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], dimSize = dimSize.asInstanceOf[js.Any], outputShape = outputShape.asInstanceOf[js.Any], sliceSize = sliceSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GatherOpShapeInfo]
   }
 }

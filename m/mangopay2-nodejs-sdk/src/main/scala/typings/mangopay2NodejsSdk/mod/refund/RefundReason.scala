@@ -12,7 +12,6 @@ object RefundReason {
   @scala.inline
   def apply(RefundReasonType: RefundReasonType): RefundReason = {
     val __obj = js.Dynamic.literal(RefundReasonType = RefundReasonType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RefundReason]
   }
 }

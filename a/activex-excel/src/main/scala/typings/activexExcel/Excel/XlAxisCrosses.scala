@@ -18,14 +18,12 @@ trait XlAxisCrosses extends js.Object
 
 object XlAxisCrosses {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAxisCrossesAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   @scala.inline
-  def xlAxisCrossesAutomatic: `-4105` = this.cast(-4105)
+  def xlAxisCrossesCustom: `-4114` = -4114.asInstanceOf[`-4114`]
   @scala.inline
-  def xlAxisCrossesCustom: `-4114` = this.cast(-4114)
+  def xlAxisCrossesMaximum: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlAxisCrossesMaximum: `2` = this.cast(2)
-  @scala.inline
-  def xlAxisCrossesMinimum: `4` = this.cast(4)
+  def xlAxisCrossesMinimum: `4` = 4.asInstanceOf[`4`]
 }
 

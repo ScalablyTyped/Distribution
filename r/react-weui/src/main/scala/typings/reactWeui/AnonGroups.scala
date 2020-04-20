@@ -15,7 +15,6 @@ object AnonGroups {
   @scala.inline
   def apply(actions: js.Array[_], groups: js.Array[_], lang: AnonLeftBtn, show: Boolean): AnonGroups = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGroups]
   }
 }

@@ -14,14 +14,12 @@ trait types extends js.Object
 
 object types {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wnsSlashbadge: typings.azureSb.azureSbStrings.wnsSlashbadge = "wns/badge".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashbadge]
   @scala.inline
-  def wnsSlashbadge: typings.azureSb.azureSbStrings.wnsSlashbadge = this.cast("wns/badge")
+  def wnsSlashraw: typings.azureSb.azureSbStrings.wnsSlashraw = "wns/raw".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashraw]
   @scala.inline
-  def wnsSlashraw: typings.azureSb.azureSbStrings.wnsSlashraw = this.cast("wns/raw")
+  def wnsSlashtile: typings.azureSb.azureSbStrings.wnsSlashtile = "wns/tile".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashtile]
   @scala.inline
-  def wnsSlashtile: typings.azureSb.azureSbStrings.wnsSlashtile = this.cast("wns/tile")
-  @scala.inline
-  def wnsSlashtoast: typings.azureSb.azureSbStrings.wnsSlashtoast = this.cast("wns/toast")
+  def wnsSlashtoast: typings.azureSb.azureSbStrings.wnsSlashtoast = "wns/toast".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashtoast]
 }
 

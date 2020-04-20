@@ -20,7 +20,6 @@ object UpdateKeyDescriptionRequest {
   @scala.inline
   def apply(Description: DescriptionType, KeyId: KeyIdType): UpdateKeyDescriptionRequest = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateKeyDescriptionRequest]
   }
 }

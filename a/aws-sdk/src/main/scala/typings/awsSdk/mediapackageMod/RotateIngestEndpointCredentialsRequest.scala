@@ -20,7 +20,6 @@ object RotateIngestEndpointCredentialsRequest {
   @scala.inline
   def apply(Id: string, IngestEndpointId: string): RotateIngestEndpointCredentialsRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IngestEndpointId = IngestEndpointId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RotateIngestEndpointCredentialsRequest]
   }
 }

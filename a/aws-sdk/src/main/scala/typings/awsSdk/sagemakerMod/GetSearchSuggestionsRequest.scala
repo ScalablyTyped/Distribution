@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetSearchSuggestionsRequest extends js.Object {
   /**
-    * The name of the Amazon SageMaker resource to Search for.
+    * The name of the Amazon SageMaker resource to search for.
     */
   var Resource: ResourceType = js.native
   /**

@@ -13,7 +13,6 @@ object AnonPopup {
   @scala.inline
   def apply[E /* <: Popup_ */](popup: E): AnonPopup[E] = {
     val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPopup[E]]
   }
 }

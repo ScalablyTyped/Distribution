@@ -13,7 +13,6 @@ object AnonAppearance {
   @scala.inline
   def apply(appearance: String, font: String): AnonAppearance = {
     val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppearance]
   }
 }

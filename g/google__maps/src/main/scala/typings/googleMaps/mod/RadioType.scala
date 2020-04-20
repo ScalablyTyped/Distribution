@@ -14,14 +14,12 @@ trait RadioType extends js.Object
 
 object RadioType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cdma: typings.googleMaps.googleMapsStrings.cdma = "cdma".asInstanceOf[typings.googleMaps.googleMapsStrings.cdma]
   @scala.inline
-  def cdma: typings.googleMaps.googleMapsStrings.cdma = this.cast("cdma")
+  def gsm: typings.googleMaps.googleMapsStrings.gsm = "gsm".asInstanceOf[typings.googleMaps.googleMapsStrings.gsm]
   @scala.inline
-  def gsm: typings.googleMaps.googleMapsStrings.gsm = this.cast("gsm")
+  def lte: typings.googleMaps.googleMapsStrings.lte = "lte".asInstanceOf[typings.googleMaps.googleMapsStrings.lte]
   @scala.inline
-  def lte: typings.googleMaps.googleMapsStrings.lte = this.cast("lte")
-  @scala.inline
-  def wcdma: typings.googleMaps.googleMapsStrings.wcdma = this.cast("wcdma")
+  def wcdma: typings.googleMaps.googleMapsStrings.wcdma = "wcdma".asInstanceOf[typings.googleMaps.googleMapsStrings.wcdma]
 }
 

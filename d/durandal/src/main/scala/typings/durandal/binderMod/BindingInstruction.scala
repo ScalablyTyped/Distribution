@@ -12,7 +12,6 @@ object BindingInstruction {
   @scala.inline
   def apply(applyBindings: Boolean): BindingInstruction = {
     val __obj = js.Dynamic.literal(applyBindings = applyBindings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BindingInstruction]
   }
 }

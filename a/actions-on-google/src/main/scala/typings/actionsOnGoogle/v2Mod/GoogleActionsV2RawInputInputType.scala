@@ -15,16 +15,14 @@ trait GoogleActionsV2RawInputInputType extends js.Object
 
 object GoogleActionsV2RawInputInputType {
   @scala.inline
-  def KEYBOARD: typings.actionsOnGoogle.actionsOnGoogleStrings.KEYBOARD = this.cast("KEYBOARD")
+  def KEYBOARD: typings.actionsOnGoogle.actionsOnGoogleStrings.KEYBOARD = "KEYBOARD".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.KEYBOARD]
   @scala.inline
-  def TOUCH: typings.actionsOnGoogle.actionsOnGoogleStrings.TOUCH = this.cast("TOUCH")
+  def TOUCH: typings.actionsOnGoogle.actionsOnGoogleStrings.TOUCH = "TOUCH".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TOUCH]
   @scala.inline
-  def UNSPECIFIED_INPUT_TYPE: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_INPUT_TYPE = this.cast("UNSPECIFIED_INPUT_TYPE")
+  def UNSPECIFIED_INPUT_TYPE: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_INPUT_TYPE = "UNSPECIFIED_INPUT_TYPE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_INPUT_TYPE]
   @scala.inline
-  def URL: typings.actionsOnGoogle.actionsOnGoogleStrings.URL = this.cast("URL")
+  def URL: typings.actionsOnGoogle.actionsOnGoogleStrings.URL = "URL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.URL]
   @scala.inline
-  def VOICE: typings.actionsOnGoogle.actionsOnGoogleStrings.VOICE = this.cast("VOICE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VOICE: typings.actionsOnGoogle.actionsOnGoogleStrings.VOICE = "VOICE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VOICE]
 }
 

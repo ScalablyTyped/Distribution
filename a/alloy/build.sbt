@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "alloy"
-version := "1.14-dt-20191119Z-c726fa"
+version := "1.14-dt-20191119Z-3aebf2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "backbone" % "1.4-dt-20190619Z-79e106",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200204Z-2d3992",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "titanium" % "8.0-dt-20191202Z-079a51",
-  "org.scalablytyped" %%% "underscore" % "1.9-dt-20191118Z-ec5a0d")
+  "org.scalablytyped" %%% "backbone" % "1.4-dt-20200225Z-6fdc37",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200415Z-e1b00b",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-ca8578",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470",
+  "org.scalablytyped" %%% "titanium" % "9.0-dt-20200306Z-236769",
+  "org.scalablytyped" %%% "underscore" % "1.9-dt-20200225Z-0eb5d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

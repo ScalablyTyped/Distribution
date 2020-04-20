@@ -13,7 +13,6 @@ object PickImplhtml {
   @scala.inline
   def apply(html: String | JQuery): PickImplhtml = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplhtml]
   }
 }

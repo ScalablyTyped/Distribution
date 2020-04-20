@@ -36,7 +36,6 @@ object RollingUpdateDeployment {
   @scala.inline
   def apply(maxSurge: Double | String, maxUnavailable: Double | String): RollingUpdateDeployment = {
     val __obj = js.Dynamic.literal(maxSurge = maxSurge.asInstanceOf[js.Any], maxUnavailable = maxUnavailable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollingUpdateDeployment]
   }
 }

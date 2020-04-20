@@ -14,7 +14,6 @@ object Classes {
   @scala.inline
   def apply(afterOpen: String, base: String, beforeClose: String): Classes = {
     val __obj = js.Dynamic.literal(afterOpen = afterOpen.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], beforeClose = beforeClose.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Classes]
   }
 }

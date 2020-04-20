@@ -14,7 +14,6 @@ object RateLimitGetResponseResourcesCore {
   @scala.inline
   def apply(limit: Double, remaining: Double, reset: Double): RateLimitGetResponseResourcesCore = {
     val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], remaining = remaining.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RateLimitGetResponseResourcesCore]
   }
 }

@@ -18,22 +18,20 @@ trait Trigger extends js.Object
 
 object Trigger {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.bootstrap.bootstrapStrings.click = "click".asInstanceOf[typings.bootstrap.bootstrapStrings.click]
   @scala.inline
-  def click: typings.bootstrap.bootstrapStrings.click = this.cast("click")
+  def `click focus`: typings.bootstrap.bootstrapStrings.`click focus` = ("click focus").asInstanceOf[typings.bootstrap.bootstrapStrings.`click focus`]
   @scala.inline
-  def `click focus`: typings.bootstrap.bootstrapStrings.`click focus` = this.cast("click focus")
+  def `click hover`: typings.bootstrap.bootstrapStrings.`click hover` = ("click hover").asInstanceOf[typings.bootstrap.bootstrapStrings.`click hover`]
   @scala.inline
-  def `click hover`: typings.bootstrap.bootstrapStrings.`click hover` = this.cast("click hover")
+  def `click hover focus`: typings.bootstrap.bootstrapStrings.`click hover focus` = ("click hover focus").asInstanceOf[typings.bootstrap.bootstrapStrings.`click hover focus`]
   @scala.inline
-  def `click hover focus`: typings.bootstrap.bootstrapStrings.`click hover focus` = this.cast("click hover focus")
+  def focus: typings.bootstrap.bootstrapStrings.focus = "focus".asInstanceOf[typings.bootstrap.bootstrapStrings.focus]
   @scala.inline
-  def focus: typings.bootstrap.bootstrapStrings.focus = this.cast("focus")
+  def hover: typings.bootstrap.bootstrapStrings.hover = "hover".asInstanceOf[typings.bootstrap.bootstrapStrings.hover]
   @scala.inline
-  def hover: typings.bootstrap.bootstrapStrings.hover = this.cast("hover")
+  def `hover focus`: typings.bootstrap.bootstrapStrings.`hover focus` = ("hover focus").asInstanceOf[typings.bootstrap.bootstrapStrings.`hover focus`]
   @scala.inline
-  def `hover focus`: typings.bootstrap.bootstrapStrings.`hover focus` = this.cast("hover focus")
-  @scala.inline
-  def manual: typings.bootstrap.bootstrapStrings.manual = this.cast("manual")
+  def manual: typings.bootstrap.bootstrapStrings.manual = "manual".asInstanceOf[typings.bootstrap.bootstrapStrings.manual]
 }
 

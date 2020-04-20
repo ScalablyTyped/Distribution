@@ -16,18 +16,16 @@ trait LoggerLevel extends js.Object
 
 object LoggerLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.nodemailer.nodemailerStrings.debug = "debug".asInstanceOf[typings.nodemailer.nodemailerStrings.debug]
   @scala.inline
-  def debug: typings.nodemailer.nodemailerStrings.debug = this.cast("debug")
+  def error: typings.nodemailer.nodemailerStrings.error = "error".asInstanceOf[typings.nodemailer.nodemailerStrings.error]
   @scala.inline
-  def error: typings.nodemailer.nodemailerStrings.error = this.cast("error")
+  def fatal: typings.nodemailer.nodemailerStrings.fatal = "fatal".asInstanceOf[typings.nodemailer.nodemailerStrings.fatal]
   @scala.inline
-  def fatal: typings.nodemailer.nodemailerStrings.fatal = this.cast("fatal")
+  def info: typings.nodemailer.nodemailerStrings.info = "info".asInstanceOf[typings.nodemailer.nodemailerStrings.info]
   @scala.inline
-  def info: typings.nodemailer.nodemailerStrings.info = this.cast("info")
+  def trace: typings.nodemailer.nodemailerStrings.trace = "trace".asInstanceOf[typings.nodemailer.nodemailerStrings.trace]
   @scala.inline
-  def trace: typings.nodemailer.nodemailerStrings.trace = this.cast("trace")
-  @scala.inline
-  def warn: typings.nodemailer.nodemailerStrings.warn = this.cast("warn")
+  def warn: typings.nodemailer.nodemailerStrings.warn = "warn".asInstanceOf[typings.nodemailer.nodemailerStrings.warn]
 }
 

@@ -20,7 +20,6 @@ object AddTagsToStreamInput {
   @scala.inline
   def apply(StreamName: StreamName, Tags: TagMap): AddTagsToStreamInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddTagsToStreamInput]
   }
 }

@@ -13,12 +13,10 @@ trait SearchStatus extends js.Object
 
 object SearchStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complete: typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.complete = "complete".asInstanceOf[typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.complete]
   @scala.inline
-  def complete: typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.complete = this.cast("complete")
+  def error: typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.error = "error".asInstanceOf[typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.error]
   @scala.inline
-  def error: typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.error = this.cast("error")
-  @scala.inline
-  def no_data: typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.no_data = this.cast("no_data")
+  def no_data: typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiGeocoder.amapJsApiGeocoderStrings.no_data]
 }
 

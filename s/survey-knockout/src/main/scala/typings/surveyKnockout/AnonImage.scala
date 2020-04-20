@@ -13,7 +13,6 @@ object AnonImage {
   @scala.inline
   def apply(image: String, root: String): AnonImage = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonImage]
   }
 }

@@ -14,7 +14,6 @@ object FfprobeData {
   @scala.inline
   def apply(chapters: js.Array[_], format: FfprobeFormat, streams: js.Array[FfprobeStream]): FfprobeData = {
     val __obj = js.Dynamic.literal(chapters = chapters.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], streams = streams.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FfprobeData]
   }
 }

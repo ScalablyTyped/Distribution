@@ -123,21 +123,21 @@ object _Handsontable extends js.Object {
     var rootElement: HTMLElement = js.native
     var rootWindow: Window_ = js.native
     var table: HTMLTableElement = js.native
-    def addHook[K /* <: String */](
+    def addHook[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161 */ js.Any */](
       key: K,
       callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ): Unit = js.native
-    def addHook[K /* <: String */](
+    def addHook[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161 */ js.Any */](
       key: K,
       callback: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
         ]
     ): Unit = js.native
-    def addHookOnce[K /* <: String */](
+    def addHookOnce[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161 */ js.Any */](
       key: K,
       callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ): Unit = js.native
-    def addHookOnce[K /* <: String */](
+    def addHookOnce[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161 */ js.Any */](
       key: K,
       callback: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
@@ -387,7 +387,7 @@ object _Handsontable extends js.Object {
     def getTranslatedPhrase(dictionaryKey: String, extraArguments: js.Any): String | Null = js.native
     def getValue(): CellValue = js.native
     def hasColHeaders(): Boolean = js.native
-    def hasHook(key: String): Boolean = js.native
+    def hasHook(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161 */ js.Any): Boolean = js.native
     def hasRowHeaders(): Boolean = js.native
     def init(): js.Function0[Unit] = js.native
     def isColumnModificationAllowed(): Boolean = js.native
@@ -421,14 +421,14 @@ object _Handsontable extends js.Object {
     def removeCellMeta_skipRowOnPaste(row: Double, col: Double, key: skipRowOnPaste): Unit = js.native
     @JSName("removeCellMeta")
     def removeCellMeta_valid(row: Double, col: Double, key: valid): Unit = js.native
-    def removeHook[K /* <: String */](
+    def removeHook[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161 */ js.Any */](
       key: K,
       callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ): Unit = js.native
     def render(): Unit = js.native
     def rowOffset(): Double = js.native
     def runHooks(
-      key: String,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161 */ js.Any,
       p1: js.UndefOr[js.Any],
       p2: js.UndefOr[js.Any],
       p3: js.UndefOr[js.Any],

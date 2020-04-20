@@ -17,7 +17,6 @@ object TransformMethods {
   @scala.inline
   def apply[N](renameTo: String => Collection[N]): TransformMethods[N] = {
     val __obj = js.Dynamic.literal(renameTo = js.Any.fromFunction1(renameTo))
-  
     __obj.asInstanceOf[TransformMethods[N]]
   }
 }

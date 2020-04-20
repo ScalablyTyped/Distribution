@@ -13,7 +13,6 @@ object IMultiRouteModelJson {
   @scala.inline
   def apply(params: IMultiRouteParams, referencePoints: js.Array[IMultiRouteReferencePoint]): IMultiRouteModelJson = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], referencePoints = referencePoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMultiRouteModelJson]
   }
 }

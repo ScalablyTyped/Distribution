@@ -107,11 +107,11 @@ class LabShell () extends IShell {
   /**
     * A signal emitted when main area's active focus changes.
     */
-  def activeChanged(): ISignal[this.type, IChangedArgs] = js.native
+  def activeChanged: ISignal[this.type, IChangedArgs] = js.native
   /**
     * The active widget in the shell's main area.
     */
-  def activeWidget(): Widget | Null = js.native
+  def activeWidget: Widget | Null = js.native
   def add(widget: Widget, area: Area): Unit = js.native
   def add(widget: Widget, area: Area, options: IOpenOptions): Unit = js.native
   /**
@@ -129,12 +129,12 @@ class LabShell () extends IShell {
   /**
     * A signal emitted when main area's current focus changes.
     */
-  def currentChanged(): ISignal[this.type, IChangedArgs] = js.native
+  def currentChanged: ISignal[this.type, IChangedArgs] = js.native
   /**
     * The current widget in the shell's main area.
     */
   @JSName("currentWidget")
-  def currentWidget_MLabShell(): Widget | Null = js.native
+  def currentWidget_MLabShell: Widget | Null = js.native
   /**
     * Expand the left area.
     *
@@ -158,21 +158,21 @@ class LabShell () extends IShell {
   /**
     * A signal emitted when the main area's layout is modified.
     */
-  def layoutModified(): ISignal[this.type, Unit] = js.native
+  def layoutModified: ISignal[this.type, Unit] = js.native
   /**
     * Whether the left area is collapsed.
     */
-  def leftCollapsed(): Boolean = js.native
+  def leftCollapsed: Boolean = js.native
   /**
     * The main dock area's user interface mode.
     */
-  def mode(): Mode = js.native
+  def mode: Mode = js.native
   def mode(mode: Mode): js.Any = js.native
   /**
     * Whether JupyterLab is in presentation mode with the
     * `jp-mod-presentationMode` CSS class.
     */
-  def presentationMode(): Boolean = js.native
+  def presentationMode: Boolean = js.native
   /**
     * Enable/disable presentation mode (`jp-mod-presentationMode` CSS class) with
     * a boolean.
@@ -186,11 +186,11 @@ class LabShell () extends IShell {
     * Promise that resolves when state is first restored, returning layout
     * description.
     */
-  def restored(): js.Promise[ILayout] = js.native
+  def restored: js.Promise[ILayout] = js.native
   /**
     * Whether the left area is collapsed.
     */
-  def rightCollapsed(): Boolean = js.native
+  def rightCollapsed: Boolean = js.native
   /**
     * Save the dehydrated state of the application shell.
     */

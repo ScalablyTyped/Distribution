@@ -13,7 +13,6 @@ object AnonBase64Encoded {
   @scala.inline
   def apply(base64Encoded: Double, rawText: Double): AnonBase64Encoded = {
     val __obj = js.Dynamic.literal(base64Encoded = base64Encoded.asInstanceOf[js.Any], rawText = rawText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBase64Encoded]
   }
 }

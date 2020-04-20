@@ -31,20 +31,20 @@ class RetrievalSchema protected () extends Element {
   /**
     * In version 7.4.0: deleted
     */
-  def entity(): String = js.native
+  def entity: String = js.native
   def entity(newValue: String): js.Any = js.native
   /**
     * In version 7.2.0: introduced
     */
-  def usedAssociations(): IList[String] = js.native
+  def usedAssociations: IList[String] = js.native
   /**
     * In version 7.2.0: deleted
     */
-  def usedAttributes(): IList[String] = js.native
+  def usedAttributes: IList[String] = js.native
   /**
     * In version 7.14.0: introduced
     */
-  def widgetName(): String = js.native
+  def widgetName: String = js.native
   def widgetName(newValue: String): js.Any = js.native
 }
 

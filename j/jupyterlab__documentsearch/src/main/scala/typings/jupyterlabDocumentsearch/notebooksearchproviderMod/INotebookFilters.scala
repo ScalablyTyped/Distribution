@@ -15,7 +15,6 @@ object INotebookFilters {
   @scala.inline
   def apply(output: Boolean): INotebookFilters = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INotebookFilters]
   }
 }

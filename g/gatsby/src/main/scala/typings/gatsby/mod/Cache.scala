@@ -16,7 +16,6 @@ object Cache {
   @scala.inline
   def apply(cache: AnonDel, name: String, store: AnonCreate): Cache = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Cache]
   }
 }

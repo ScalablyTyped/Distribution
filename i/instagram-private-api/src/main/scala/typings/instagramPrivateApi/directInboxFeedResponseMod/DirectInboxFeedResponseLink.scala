@@ -20,7 +20,6 @@ object DirectInboxFeedResponseLink {
     text: String
   ): DirectInboxFeedResponseLink = {
     val __obj = js.Dynamic.literal(client_context = client_context.asInstanceOf[js.Any], link_context = link_context.asInstanceOf[js.Any], mutation_token = mutation_token.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectInboxFeedResponseLink]
   }
 }

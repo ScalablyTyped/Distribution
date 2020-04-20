@@ -16,7 +16,6 @@ object TlsValidationContextFileTrust {
   @scala.inline
   def apply(certificateChain: FilePath): TlsValidationContextFileTrust = {
     val __obj = js.Dynamic.literal(certificateChain = certificateChain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TlsValidationContextFileTrust]
   }
 }

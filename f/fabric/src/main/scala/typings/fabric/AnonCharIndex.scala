@@ -13,7 +13,6 @@ object AnonCharIndex {
   @scala.inline
   def apply(charIndex: Double, lineIndex: Double): AnonCharIndex = {
     val __obj = js.Dynamic.literal(charIndex = charIndex.asInstanceOf[js.Any], lineIndex = lineIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCharIndex]
   }
 }

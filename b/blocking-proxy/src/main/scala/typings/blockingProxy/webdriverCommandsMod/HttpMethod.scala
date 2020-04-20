@@ -13,12 +13,10 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  def DELETE: typings.blockingProxy.blockingProxyStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.blockingProxy.blockingProxyStrings.DELETE = "DELETE".asInstanceOf[typings.blockingProxy.blockingProxyStrings.DELETE]
   @scala.inline
-  def GET: typings.blockingProxy.blockingProxyStrings.GET = this.cast("GET")
+  def GET: typings.blockingProxy.blockingProxyStrings.GET = "GET".asInstanceOf[typings.blockingProxy.blockingProxyStrings.GET]
   @scala.inline
-  def POST: typings.blockingProxy.blockingProxyStrings.POST = this.cast("POST")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def POST: typings.blockingProxy.blockingProxyStrings.POST = "POST".asInstanceOf[typings.blockingProxy.blockingProxyStrings.POST]
 }
 

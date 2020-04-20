@@ -52,18 +52,31 @@ trait SecurityHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchEnableStandardsResponse, Unit]
   ): Request[BatchEnableStandardsResponse, AWSError] = js.native
   /**
-    * Imports security findings generated from an integrated third-party product into Security Hub. This action is requested by the integrated product to import its findings into Security Hub. The maximum allowed size for a finding is 240 Kb. An error is returned for any finding larger than 240 Kb.
+    * Imports security findings generated from an integrated third-party product into Security Hub. This action is requested by the integrated product to import its findings into Security Hub. The maximum allowed size for a finding is 240 Kb. An error is returned for any finding larger than 240 Kb. After a finding is created, BatchImportFindings cannot be used to update the following finding fields and objects, which Security Hub customers use to manage their investigation workflow.    Confidence     Criticality     Note     RelatedFindings     Severity     Types     UserDefinedFields     VerificationState     Workflow   
     */
   def batchImportFindings(): Request[BatchImportFindingsResponse, AWSError] = js.native
   def batchImportFindings(callback: js.Function2[/* err */ AWSError, /* data */ BatchImportFindingsResponse, Unit]): Request[BatchImportFindingsResponse, AWSError] = js.native
   /**
-    * Imports security findings generated from an integrated third-party product into Security Hub. This action is requested by the integrated product to import its findings into Security Hub. The maximum allowed size for a finding is 240 Kb. An error is returned for any finding larger than 240 Kb.
+    * Imports security findings generated from an integrated third-party product into Security Hub. This action is requested by the integrated product to import its findings into Security Hub. The maximum allowed size for a finding is 240 Kb. An error is returned for any finding larger than 240 Kb. After a finding is created, BatchImportFindings cannot be used to update the following finding fields and objects, which Security Hub customers use to manage their investigation workflow.    Confidence     Criticality     Note     RelatedFindings     Severity     Types     UserDefinedFields     VerificationState     Workflow   
     */
   def batchImportFindings(params: BatchImportFindingsRequest): Request[BatchImportFindingsResponse, AWSError] = js.native
   def batchImportFindings(
     params: BatchImportFindingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchImportFindingsResponse, Unit]
   ): Request[BatchImportFindingsResponse, AWSError] = js.native
+  /**
+    * Used by Security Hub customers to update information about their investigation into a finding. Requested by master accounts or member accounts. Master accounts can update findings for their account and their member accounts. Member accounts can update findings for their account. Updates from BatchUpdateFindings do not affect the value of UpdatedAt for a finding. Master accounts can use BatchUpdateFindings to update the following finding fields and objects.    Confidence     Criticality     Note     RelatedFindings     Severity     Types     UserDefinedFields     VerificationState     Workflow    Member accounts can only use BatchUpdateFindings to update the Note object.
+    */
+  def batchUpdateFindings(): Request[BatchUpdateFindingsResponse, AWSError] = js.native
+  def batchUpdateFindings(callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdateFindingsResponse, Unit]): Request[BatchUpdateFindingsResponse, AWSError] = js.native
+  /**
+    * Used by Security Hub customers to update information about their investigation into a finding. Requested by master accounts or member accounts. Master accounts can update findings for their account and their member accounts. Member accounts can update findings for their account. Updates from BatchUpdateFindings do not affect the value of UpdatedAt for a finding. Master accounts can use BatchUpdateFindings to update the following finding fields and objects.    Confidence     Criticality     Note     RelatedFindings     Severity     Types     UserDefinedFields     VerificationState     Workflow    Member accounts can only use BatchUpdateFindings to update the Note object.
+    */
+  def batchUpdateFindings(params: BatchUpdateFindingsRequest): Request[BatchUpdateFindingsResponse, AWSError] = js.native
+  def batchUpdateFindings(
+    params: BatchUpdateFindingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdateFindingsResponse, Unit]
+  ): Request[BatchUpdateFindingsResponse, AWSError] = js.native
   /**
     * Creates a custom action target in Security Hub. You can use custom actions on findings and insights in Security Hub to trigger target actions in Amazon CloudWatch Events.
     */
@@ -511,12 +524,12 @@ trait SecurityHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateActionTargetResponse, Unit]
   ): Request[UpdateActionTargetResponse, AWSError] = js.native
   /**
-    * Updates the Note and RecordState of the Security Hub-aggregated findings that the filter attributes specify. Any member account that can view the finding also sees the update to the finding.
+    *  UpdateFindings is deprecated. Instead of UpdateFindings, use BatchUpdateFindings. Updates the Note and RecordState of the Security Hub-aggregated findings that the filter attributes specify. Any member account that can view the finding also sees the update to the finding.
     */
   def updateFindings(): Request[UpdateFindingsResponse, AWSError] = js.native
   def updateFindings(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFindingsResponse, Unit]): Request[UpdateFindingsResponse, AWSError] = js.native
   /**
-    * Updates the Note and RecordState of the Security Hub-aggregated findings that the filter attributes specify. Any member account that can view the finding also sees the update to the finding.
+    *  UpdateFindings is deprecated. Instead of UpdateFindings, use BatchUpdateFindings. Updates the Note and RecordState of the Security Hub-aggregated findings that the filter attributes specify. Any member account that can view the finding also sees the update to the finding.
     */
   def updateFindings(params: UpdateFindingsRequest): Request[UpdateFindingsResponse, AWSError] = js.native
   def updateFindings(

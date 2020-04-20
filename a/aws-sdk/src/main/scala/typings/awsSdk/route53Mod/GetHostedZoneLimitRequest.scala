@@ -20,7 +20,6 @@ object GetHostedZoneLimitRequest {
   @scala.inline
   def apply(HostedZoneId: ResourceId, Type: HostedZoneLimitType): GetHostedZoneLimitRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHostedZoneLimitRequest]
   }
 }

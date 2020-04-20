@@ -16,12 +16,10 @@ trait XlEnableSelection extends js.Object
 
 object XlEnableSelection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlNoRestrictions: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlNoRestrictions: `0` = this.cast(0)
+  def xlNoSelection: `-4142` = -4142.asInstanceOf[`-4142`]
   @scala.inline
-  def xlNoSelection: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlUnlockedCells: `1` = this.cast(1)
+  def xlUnlockedCells: `1` = 1.asInstanceOf[`1`]
 }
 

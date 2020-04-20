@@ -15,7 +15,6 @@ object AnonEncrypted {
   @scala.inline
   def apply(encrypted: Buffer, key: Key): AnonEncrypted = {
     val __obj = js.Dynamic.literal(encrypted = encrypted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEncrypted]
   }
 }

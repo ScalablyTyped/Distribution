@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactVirtualizedAutoSizerProps {
   @scala.inline
-  def ReactVirtualizedAutoSizerProps: AutoSizerProps.type = typings.reactVirtualizedAutoSizer.mod.AutoSizerProps
+  def ReactVirtualizedAutoSizerProps: AutoSizerProps.type = AutoSizerProps
   type ReactVirtualizedAutoSizerProps = AutoSizerProps
 }
 

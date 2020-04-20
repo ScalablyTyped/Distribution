@@ -34,7 +34,6 @@ object RellaxInstance {
     refresh: () => Unit
   ): RellaxInstance = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), elms = elms.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], refresh = js.Any.fromFunction0(refresh))
-  
     __obj.asInstanceOf[RellaxInstance]
   }
 }

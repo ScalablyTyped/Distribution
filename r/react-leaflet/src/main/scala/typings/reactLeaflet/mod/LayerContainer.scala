@@ -17,7 +17,6 @@ object LayerContainer {
     removeLayer: /* layer */ Layer => Unit
   ): LayerContainer = {
     val __obj = js.Dynamic.literal(addLayer = js.Any.fromFunction3(addLayer), removeLayer = js.Any.fromFunction1(removeLayer))
-  
     __obj.asInstanceOf[LayerContainer]
   }
 }

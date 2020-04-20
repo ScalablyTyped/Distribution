@@ -12,7 +12,6 @@ object AsObject {
   @scala.inline
   def apply(locationList: js.Array[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]): AsObject = {
     val __obj = js.Dynamic.literal(locationList = locationList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

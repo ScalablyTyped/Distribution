@@ -10,6 +10,7 @@ object actionTypesMod extends js.Object {
   val after: String | Double = js.native
   val assign: String | Double = js.native
   val cancel: String | Double = js.native
+  val choose: String | Double = js.native
   val doneState: String | Double = js.native
   val error: String | Double = js.native
   val errorExecution: String | Double = js.native

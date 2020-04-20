@@ -16,7 +16,6 @@ object KinesisStreamsOutput {
   @scala.inline
   def apply(ResourceARN: ResourceARN): KinesisStreamsOutput = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinesisStreamsOutput]
   }
 }

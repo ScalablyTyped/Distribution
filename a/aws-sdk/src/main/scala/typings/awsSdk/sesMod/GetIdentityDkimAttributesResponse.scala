@@ -16,7 +16,6 @@ object GetIdentityDkimAttributesResponse {
   @scala.inline
   def apply(DkimAttributes: DkimAttributes): GetIdentityDkimAttributesResponse = {
     val __obj = js.Dynamic.literal(DkimAttributes = DkimAttributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIdentityDkimAttributesResponse]
   }
 }

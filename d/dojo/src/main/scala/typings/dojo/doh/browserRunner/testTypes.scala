@@ -23,7 +23,6 @@ object testTypes {
   @scala.inline
   def apply(perf: (js.Any, js.Any, js.Any) => Unit): testTypes = {
     val __obj = js.Dynamic.literal(perf = js.Any.fromFunction3(perf))
-  
     __obj.asInstanceOf[testTypes]
   }
 }

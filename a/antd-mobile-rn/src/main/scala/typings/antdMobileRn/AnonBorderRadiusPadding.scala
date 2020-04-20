@@ -13,7 +13,6 @@ object AnonBorderRadiusPadding {
   @scala.inline
   def apply(borderRadius: Double, padding: Double): AnonBorderRadiusPadding = {
     val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderRadiusPadding]
   }
 }

@@ -20,7 +20,6 @@ object CreateSchemaRequest {
   @scala.inline
   def apply(name: Name, schema: AvroSchema): CreateSchemaRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSchemaRequest]
   }
 }

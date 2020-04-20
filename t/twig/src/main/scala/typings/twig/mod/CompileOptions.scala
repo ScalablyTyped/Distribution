@@ -13,7 +13,6 @@ object CompileOptions {
   @scala.inline
   def apply(filename: String, settings: js.Any): CompileOptions = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompileOptions]
   }
 }

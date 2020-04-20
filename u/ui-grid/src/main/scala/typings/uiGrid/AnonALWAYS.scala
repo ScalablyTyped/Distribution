@@ -14,7 +14,6 @@ object AnonALWAYS {
   @scala.inline
   def apply(ALWAYS: Double, NEVER: Double, WHEN_NEEDED: Double): AnonALWAYS = {
     val __obj = js.Dynamic.literal(ALWAYS = ALWAYS.asInstanceOf[js.Any], NEVER = NEVER.asInstanceOf[js.Any], WHEN_NEEDED = WHEN_NEEDED.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonALWAYS]
   }
 }

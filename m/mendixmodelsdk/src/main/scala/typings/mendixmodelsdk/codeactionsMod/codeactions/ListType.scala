@@ -36,10 +36,10 @@ class ListType protected () extends Type {
   @JSName("parameter")
   val parameter_FListType: IEntityType = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MListType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MListType: BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  def containerAsCodeAction_MListType(): CodeAction = js.native
-  def parameter(): EntityType = js.native
+  def containerAsCodeAction_MListType: CodeAction = js.native
+  def parameter: EntityType = js.native
   def parameter(newValue: EntityType): js.Any = js.native
 }
 

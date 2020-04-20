@@ -13,7 +13,6 @@ object PickImpldistanceAway {
   @scala.inline
   def apply(distanceAway: Double): PickImpldistanceAway = {
     val __obj = js.Dynamic.literal(distanceAway = distanceAway.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldistanceAway]
   }
 }

@@ -13,7 +13,6 @@ object AnonHostIp {
   @scala.inline
   def apply(HostIp: String, HostPort: String): AnonHostIp = {
     val __obj = js.Dynamic.literal(HostIp = HostIp.asInstanceOf[js.Any], HostPort = HostPort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHostIp]
   }
 }

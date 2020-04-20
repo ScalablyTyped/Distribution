@@ -16,7 +16,6 @@ object DescribeAssessmentTargetsRequest {
   @scala.inline
   def apply(assessmentTargetArns: BatchDescribeArnList): DescribeAssessmentTargetsRequest = {
     val __obj = js.Dynamic.literal(assessmentTargetArns = assessmentTargetArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAssessmentTargetsRequest]
   }
 }

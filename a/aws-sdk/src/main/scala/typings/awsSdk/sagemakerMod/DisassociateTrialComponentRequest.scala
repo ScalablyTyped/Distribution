@@ -20,7 +20,6 @@ object DisassociateTrialComponentRequest {
   @scala.inline
   def apply(TrialComponentName: ExperimentEntityName, TrialName: ExperimentEntityName): DisassociateTrialComponentRequest = {
     val __obj = js.Dynamic.literal(TrialComponentName = TrialComponentName.asInstanceOf[js.Any], TrialName = TrialName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateTrialComponentRequest]
   }
 }

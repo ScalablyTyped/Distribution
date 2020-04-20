@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-background-mode"
-version := "0.0-unknown-dt-20200226Z-ef441d"
+version := "0.0-unknown-dt-20200226Z-aecaed"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

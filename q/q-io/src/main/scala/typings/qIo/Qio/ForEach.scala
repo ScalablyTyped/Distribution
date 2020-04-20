@@ -13,7 +13,6 @@ object ForEach {
   @scala.inline
   def apply(forEach: ForEachCallback => Promise[Unit]): ForEach = {
     val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach))
-  
     __obj.asInstanceOf[ForEach]
   }
 }

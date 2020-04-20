@@ -13,7 +13,6 @@ object LoadError {
   @scala.inline
   def apply(error: Anon): LoadError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoadError]
   }
 }

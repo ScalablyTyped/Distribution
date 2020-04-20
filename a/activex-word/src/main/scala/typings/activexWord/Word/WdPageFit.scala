@@ -18,14 +18,12 @@ trait WdPageFit extends js.Object
 
 object WdPageFit {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdPageFitBestFit: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPageFitBestFit: `2` = this.cast(2)
+  def wdPageFitFullPage: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdPageFitFullPage: `1` = this.cast(1)
+  def wdPageFitNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdPageFitNone: `0` = this.cast(0)
-  @scala.inline
-  def wdPageFitTextFit: `3` = this.cast(3)
+  def wdPageFitTextFit: `3` = 3.asInstanceOf[`3`]
 }
 

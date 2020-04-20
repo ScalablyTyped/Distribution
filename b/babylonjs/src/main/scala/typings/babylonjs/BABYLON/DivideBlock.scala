@@ -15,14 +15,14 @@ class DivideBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the left operand input component
     */
-  def left(): NodeMaterialConnectionPoint = js.native
+  def left: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the output component
     */
-  def output(): NodeMaterialConnectionPoint = js.native
+  def output: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the right operand input component
     */
-  def right(): NodeMaterialConnectionPoint = js.native
+  def right: NodeMaterialConnectionPoint = js.native
 }
 

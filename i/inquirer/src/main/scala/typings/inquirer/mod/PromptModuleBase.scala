@@ -29,7 +29,6 @@ object PromptModuleBase {
   @scala.inline
   def apply(registerPrompt: (String, PromptConstructor) => Unit, restoreDefaultPrompts: () => Unit): PromptModuleBase = {
     val __obj = js.Dynamic.literal(registerPrompt = js.Any.fromFunction2(registerPrompt), restoreDefaultPrompts = js.Any.fromFunction0(restoreDefaultPrompts))
-  
     __obj.asInstanceOf[PromptModuleBase]
   }
 }

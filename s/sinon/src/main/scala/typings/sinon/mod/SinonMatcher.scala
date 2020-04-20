@@ -26,7 +26,6 @@ object SinonMatcher {
   @scala.inline
   def apply(and: SinonMatcher => SinonMatcher, or: SinonMatcher => SinonMatcher, test: js.Any => Boolean): SinonMatcher = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), or = js.Any.fromFunction1(or), test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[SinonMatcher]
   }
 }

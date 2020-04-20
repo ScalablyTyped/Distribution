@@ -42,7 +42,6 @@ object Geometry {
     normalize: () => Geometry
   ): Geometry = {
     val __obj = js.Dynamic.literal(averageNormals = js.Any.fromFunction0(averageNormals), averagePoleNormals = js.Any.fromFunction0(averagePoleNormals), computeFaces = js.Any.fromFunction0(computeFaces), computeNormals = js.Any.fromFunction0(computeNormals), normalize = js.Any.fromFunction0(normalize))
-  
     __obj.asInstanceOf[Geometry]
   }
 }

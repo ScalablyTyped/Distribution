@@ -13,7 +13,6 @@ object AnonCache {
   @scala.inline
   def apply(cache: js.Array[js.Tuple2[String, String]], styles: String): AnonCache = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCache]
   }
 }

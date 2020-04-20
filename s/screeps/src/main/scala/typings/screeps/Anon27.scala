@@ -13,7 +13,6 @@ object Anon27 {
   @scala.inline
   def apply(capacity: `4`): Anon27 = {
     val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon27]
   }
 }

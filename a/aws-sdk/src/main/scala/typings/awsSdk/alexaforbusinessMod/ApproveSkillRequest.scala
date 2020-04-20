@@ -16,7 +16,6 @@ object ApproveSkillRequest {
   @scala.inline
   def apply(SkillId: SkillId): ApproveSkillRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApproveSkillRequest]
   }
 }

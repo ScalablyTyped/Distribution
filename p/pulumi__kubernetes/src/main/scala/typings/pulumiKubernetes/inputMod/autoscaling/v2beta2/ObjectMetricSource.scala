@@ -29,7 +29,6 @@ object ObjectMetricSource {
     target: Input[MetricTarget]
   ): ObjectMetricSource = {
     val __obj = js.Dynamic.literal(describedObject = describedObject.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectMetricSource]
   }
 }

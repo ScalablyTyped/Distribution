@@ -14,7 +14,6 @@ object INamespace {
   @scala.inline
   def apply(declared: Boolean, prefix: String, uri: String): INamespace = {
     val __obj = js.Dynamic.literal(declared = declared.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INamespace]
   }
 }

@@ -13,7 +13,6 @@ object LayoutContextProps {
   @scala.inline
   def apply(siderHook: AnonAddSider): LayoutContextProps = {
     val __obj = js.Dynamic.literal(siderHook = siderHook.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LayoutContextProps]
   }
 }

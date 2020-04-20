@@ -13,7 +13,6 @@ object DefaultImportedComponent {
   @scala.inline
   def apply[P](default: ComponentType[P]): DefaultImportedComponent[P] = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultImportedComponent[P]]
   }
 }

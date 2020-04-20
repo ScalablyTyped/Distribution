@@ -14,7 +14,6 @@ object PropRowProps {
   @scala.inline
   def apply(row: PropDef): PropRowProps = {
     val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PropRowProps]
   }
 }

@@ -15,7 +15,6 @@ object IFileEncodedOption {
   @scala.inline
   def apply(encoding: String): IFileEncodedOption = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFileEncodedOption]
   }
 }

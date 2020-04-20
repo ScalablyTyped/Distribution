@@ -13,7 +13,6 @@ object ListLocalDisksInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN): ListLocalDisksInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListLocalDisksInput]
   }
 }

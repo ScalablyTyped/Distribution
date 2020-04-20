@@ -69,9 +69,9 @@ trait TypeofruntimeConnect extends js.Object {
     js.Function1[
       /* reason */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof OnRestartRequiredReason */ js.Any, 
-        String, 
+        /* keyof typeof OnRestartRequiredReason */ String, 
         Exclude[
-          String, 
+          /* keyof typeof OnRestartRequiredReason */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof OnRestartRequiredReason[keyof typeof OnRestartRequiredReason] */ js.Any
         ]
       ], 
@@ -169,9 +169,9 @@ trait TypeofruntimeConnect extends js.Object {
     callback: js.Function2[
       /* status */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof RequestUpdateCheckStatus */ js.Any, 
-        String, 
+        /* keyof typeof RequestUpdateCheckStatus */ String, 
         Exclude[
-          String, 
+          /* keyof typeof RequestUpdateCheckStatus */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof RequestUpdateCheckStatus[keyof typeof RequestUpdateCheckStatus] */ js.Any
         ]
       ], 

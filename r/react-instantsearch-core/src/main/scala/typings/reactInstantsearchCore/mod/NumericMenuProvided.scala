@@ -29,7 +29,6 @@ object NumericMenuProvided {
     refine: /* repeated */ js.Any => js.Any
   ): NumericMenuProvided = {
     val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine))
-  
     __obj.asInstanceOf[NumericMenuProvided]
   }
 }

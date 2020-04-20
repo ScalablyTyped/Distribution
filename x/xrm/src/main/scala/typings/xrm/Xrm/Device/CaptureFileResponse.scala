@@ -30,7 +30,6 @@ object CaptureFileResponse {
   @scala.inline
   def apply(fileContent: String, fileName: String, fileSize: Double, mimeType: String): CaptureFileResponse = {
     val __obj = js.Dynamic.literal(fileContent = fileContent.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CaptureFileResponse]
   }
 }

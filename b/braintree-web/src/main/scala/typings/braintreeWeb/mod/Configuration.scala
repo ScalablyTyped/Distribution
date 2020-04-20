@@ -14,7 +14,6 @@ object Configuration {
   @scala.inline
   def apply(analyticsMetadata: ClientAnalyticsMetadata, client: Client_, gatewayConfiguration: js.Any): Configuration = {
     val __obj = js.Dynamic.literal(analyticsMetadata = analyticsMetadata.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], gatewayConfiguration = gatewayConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Configuration]
   }
 }

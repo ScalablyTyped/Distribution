@@ -27,7 +27,6 @@ object TiltValues {
   @scala.inline
   def apply(percentageX: Double, percentageY: Double, tiltX: Double, tiltY: Double): TiltValues = {
     val __obj = js.Dynamic.literal(percentageX = percentageX.asInstanceOf[js.Any], percentageY = percentageY.asInstanceOf[js.Any], tiltX = tiltX.asInstanceOf[js.Any], tiltY = tiltY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TiltValues]
   }
 }

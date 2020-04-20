@@ -13,7 +13,6 @@ object MessageType {
   @scala.inline
   def apply(method: String, numberOfParams: Double): MessageType = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], numberOfParams = numberOfParams.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageType]
   }
 }

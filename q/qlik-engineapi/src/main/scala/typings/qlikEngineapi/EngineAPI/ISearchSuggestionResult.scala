@@ -22,7 +22,6 @@ object ISearchSuggestionResult {
   @scala.inline
   def apply(qFieldNames: js.Array[String], qSuggestions: js.Array[ISearchSuggestItem]): ISearchSuggestionResult = {
     val __obj = js.Dynamic.literal(qFieldNames = qFieldNames.asInstanceOf[js.Any], qSuggestions = qSuggestions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchSuggestionResult]
   }
 }

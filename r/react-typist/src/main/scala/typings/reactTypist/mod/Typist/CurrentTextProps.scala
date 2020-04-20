@@ -22,7 +22,6 @@ object CurrentTextProps {
     lineIdx: Double
   ): CurrentTextProps = {
     val __obj = js.Dynamic.literal(charIdx = charIdx.asInstanceOf[js.Any], character = character.asInstanceOf[js.Any], defDelayGenerator = js.Any.fromFunction2(defDelayGenerator), line = line.asInstanceOf[js.Any], lineIdx = lineIdx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CurrentTextProps]
   }
 }

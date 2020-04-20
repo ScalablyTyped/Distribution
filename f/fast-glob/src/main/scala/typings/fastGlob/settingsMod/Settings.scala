@@ -62,7 +62,6 @@ object Settings {
     unique: Boolean
   ): Settings = {
     val __obj = js.Dynamic.literal(_getFileSystemMethods = _getFileSystemMethods.asInstanceOf[js.Any], _getValue = _getValue.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], absolute = absolute.asInstanceOf[js.Any], baseNameMatch = baseNameMatch.asInstanceOf[js.Any], braceExpansion = braceExpansion.asInstanceOf[js.Any], caseSensitiveMatch = caseSensitiveMatch.asInstanceOf[js.Any], concurrency = concurrency.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], deep = deep.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], extglob = extglob.asInstanceOf[js.Any], followSymbolicLinks = followSymbolicLinks.asInstanceOf[js.Any], fs = fs.asInstanceOf[js.Any], globstar = globstar.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], markDirectories = markDirectories.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any], onlyDirectories = onlyDirectories.asInstanceOf[js.Any], onlyFiles = onlyFiles.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], suppressErrors = suppressErrors.asInstanceOf[js.Any], throwErrorOnBrokenSymbolicLink = throwErrorOnBrokenSymbolicLink.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Settings]
   }
 }

@@ -13,7 +13,6 @@ object Sorter {
   @scala.inline
   def apply(column: String, dir: SortDirection): Sorter = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Sorter]
   }
 }

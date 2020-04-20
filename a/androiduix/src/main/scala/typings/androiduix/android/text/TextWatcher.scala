@@ -18,7 +18,6 @@ object TextWatcher {
     onTextChanged: (String, Double, Double, Double) => Unit
   ): TextWatcher = {
     val __obj = js.Dynamic.literal(afterTextChanged = js.Any.fromFunction1(afterTextChanged), beforeTextChanged = js.Any.fromFunction4(beforeTextChanged), onTextChanged = js.Any.fromFunction4(onTextChanged))
-  
     __obj.asInstanceOf[TextWatcher]
   }
 }

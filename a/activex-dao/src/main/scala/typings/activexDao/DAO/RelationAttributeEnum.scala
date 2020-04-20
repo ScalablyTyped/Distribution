@@ -24,20 +24,18 @@ trait RelationAttributeEnum extends js.Object
 
 object RelationAttributeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbRelationDeleteCascade: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def dbRelationDeleteCascade: `4096` = this.cast(4096)
+  def dbRelationDontEnforce: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbRelationDontEnforce: `2` = this.cast(2)
+  def dbRelationInherited: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def dbRelationInherited: `4` = this.cast(4)
+  def dbRelationLeft: `16777216` = 16777216.asInstanceOf[`16777216`]
   @scala.inline
-  def dbRelationLeft: `16777216` = this.cast(16777216)
+  def dbRelationRight: `33554432` = 33554432.asInstanceOf[`33554432`]
   @scala.inline
-  def dbRelationRight: `33554432` = this.cast(33554432)
+  def dbRelationUnique: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbRelationUnique: `1` = this.cast(1)
-  @scala.inline
-  def dbRelationUpdateCascade: `256` = this.cast(256)
+  def dbRelationUpdateCascade: `256` = 256.asInstanceOf[`256`]
 }
 

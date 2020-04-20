@@ -14,13 +14,17 @@ trait CreateAttendeeRequest extends js.Object {
     * The Amazon Chime SDK meeting ID.
     */
   var MeetingId: GuidString = js.native
+  /**
+    * The tag key-value pairs.
+    */
+  var Tags: js.UndefOr[AttendeeTagList] = js.native
 }
 
 object CreateAttendeeRequest {
   @scala.inline
-  def apply(ExternalUserId: ExternalUserIdType, MeetingId: GuidString): CreateAttendeeRequest = {
+  def apply(ExternalUserId: ExternalUserIdType, MeetingId: GuidString, Tags: AttendeeTagList = null): CreateAttendeeRequest = {
     val __obj = js.Dynamic.literal(ExternalUserId = ExternalUserId.asInstanceOf[js.Any], MeetingId = MeetingId.asInstanceOf[js.Any])
-  
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAttendeeRequest]
   }
 }

@@ -19,7 +19,6 @@ object FadeProps {
   @scala.inline
   def apply(component: ComponentType[_], duration: Double, in: Boolean, onExited: () => Unit): FadeProps = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], onExited = js.Any.fromFunction0(onExited))
-  
     __obj.asInstanceOf[FadeProps]
   }
 }

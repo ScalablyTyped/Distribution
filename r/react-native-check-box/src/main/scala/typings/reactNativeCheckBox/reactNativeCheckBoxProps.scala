@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeCheckBoxProps {
   @scala.inline
-  def ReactNativeCheckBoxProps: CheckBoxProps.type = typings.reactNativeCheckBox.mod.CheckBoxProps
+  def ReactNativeCheckBoxProps: CheckBoxProps.type = CheckBoxProps
   type ReactNativeCheckBoxProps = CheckBoxProps
 }
 

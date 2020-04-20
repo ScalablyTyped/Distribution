@@ -12,7 +12,6 @@ object VolumeParam {
   @scala.inline
   def apply(volume: Boolean): VolumeParam = {
     val __obj = js.Dynamic.literal(volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VolumeParam]
   }
 }

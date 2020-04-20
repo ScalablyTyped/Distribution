@@ -51,7 +51,6 @@ object GetInstanceProfileResult {
     roleName: String
   ): GetInstanceProfileResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createDate = createDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], roleId = roleId.asInstanceOf[js.Any], roleName = roleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInstanceProfileResult]
   }
 }

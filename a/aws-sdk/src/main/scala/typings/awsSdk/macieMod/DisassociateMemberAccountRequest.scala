@@ -16,7 +16,6 @@ object DisassociateMemberAccountRequest {
   @scala.inline
   def apply(memberAccountId: AWSAccountId): DisassociateMemberAccountRequest = {
     val __obj = js.Dynamic.literal(memberAccountId = memberAccountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateMemberAccountRequest]
   }
 }

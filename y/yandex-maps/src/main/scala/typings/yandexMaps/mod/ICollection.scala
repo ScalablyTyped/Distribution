@@ -19,7 +19,6 @@ object ICollection {
     remove: js.Object => ICollection
   ): ICollection = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), events = events.asInstanceOf[js.Any], getIterator = js.Any.fromFunction0(getIterator), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[ICollection]
   }
 }

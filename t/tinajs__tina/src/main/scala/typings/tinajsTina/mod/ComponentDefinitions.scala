@@ -29,7 +29,6 @@ object ComponentDefinitions {
     ready: () => Unit
   ): ComponentDefinitions = {
     val __obj = js.Dynamic.literal(attached = js.Any.fromFunction0(attached), compute = js.Any.fromFunction1(compute), created = js.Any.fromFunction0(created), data = data.asInstanceOf[js.Any], detached = js.Any.fromFunction0(detached), methods = methods.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], moved = js.Any.fromFunction0(moved), properties = properties.asInstanceOf[js.Any], ready = js.Any.fromFunction0(ready))
-  
     __obj.asInstanceOf[ComponentDefinitions]
   }
 }

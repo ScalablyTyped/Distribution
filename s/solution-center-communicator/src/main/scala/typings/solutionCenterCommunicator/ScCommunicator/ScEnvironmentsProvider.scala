@@ -45,7 +45,6 @@ object ScEnvironmentsProvider {
     setCurrentEnvironment: js.Any => Environment
   ): ScEnvironmentsProvider = {
     val __obj = js.Dynamic.literal($get = js.Any.fromFunction0($get), getCurrentEnvironment = js.Any.fromFunction0(getCurrentEnvironment), getSpecificEnvironment = js.Any.fromFunction1(getSpecificEnvironment), setCurrentEnvironment = js.Any.fromFunction1(setCurrentEnvironment))
-  
     __obj.asInstanceOf[ScEnvironmentsProvider]
   }
 }

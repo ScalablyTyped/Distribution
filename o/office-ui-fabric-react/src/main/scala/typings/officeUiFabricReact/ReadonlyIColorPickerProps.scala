@@ -5,6 +5,9 @@ import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerStrings
 import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerStyleProps
 import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerStyles
 import typings.officeUiFabricReact.interfacesMod.IColor
+import typings.officeUiFabricReact.officeUiFabricReactStrings.alpha
+import typings.officeUiFabricReact.officeUiFabricReactStrings.none
+import typings.officeUiFabricReact.officeUiFabricReactStrings.transparency
 import typings.react.mod.SyntheticEvent
 import typings.std.Event_
 import typings.std.HTMLElement
@@ -19,6 +22,7 @@ import scala.scalajs.js.annotation._
 trait ReadonlyIColorPickerProps extends js.Object {
   val alphaLabel: js.UndefOr[String] = js.undefined
   val alphaSliderHidden: js.UndefOr[Boolean] = js.undefined
+  val alphaType: js.UndefOr[alpha | transparency | none] = js.undefined
   val blueLabel: js.UndefOr[String] = js.undefined
   val className: js.UndefOr[String] = js.undefined
   val color: IColor | String
@@ -41,6 +45,7 @@ object ReadonlyIColorPickerProps {
     color: IColor | String,
     alphaLabel: String = null,
     alphaSliderHidden: js.UndefOr[Boolean] = js.undefined,
+    alphaType: alpha | transparency | none = null,
     blueLabel: String = null,
     className: String = null,
     componentRef: IRefObject[IColorPicker] = null,
@@ -56,6 +61,7 @@ object ReadonlyIColorPickerProps {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     if (alphaLabel != null) __obj.updateDynamic("alphaLabel")(alphaLabel.asInstanceOf[js.Any])
     if (!js.isUndefined(alphaSliderHidden)) __obj.updateDynamic("alphaSliderHidden")(alphaSliderHidden.asInstanceOf[js.Any])
+    if (alphaType != null) __obj.updateDynamic("alphaType")(alphaType.asInstanceOf[js.Any])
     if (blueLabel != null) __obj.updateDynamic("blueLabel")(blueLabel.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])

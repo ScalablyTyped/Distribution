@@ -20,26 +20,24 @@ trait ManeuverModifier extends js.Object
 
 object ManeuverModifier {
   @scala.inline
-  def arrive: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.arrive = this.cast("arrive")
+  def arrive: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.arrive = "arrive".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.arrive]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def depart: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.depart = "depart".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.depart]
   @scala.inline
-  def depart: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.depart = this.cast("depart")
+  def left: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left = "left".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left]
   @scala.inline
-  def left: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left = this.cast("left")
+  def right: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right = "right".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right]
   @scala.inline
-  def right: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right = this.cast("right")
+  def `sharp left`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`sharp left` = ("sharp left").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`sharp left`]
   @scala.inline
-  def `sharp left`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`sharp left` = this.cast("sharp left")
+  def `sharp right`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`sharp right` = ("sharp right").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`sharp right`]
   @scala.inline
-  def `sharp right`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`sharp right` = this.cast("sharp right")
+  def `slight left`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`slight left` = ("slight left").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`slight left`]
   @scala.inline
-  def `slight left`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`slight left` = this.cast("slight left")
+  def `slight right`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`slight right` = ("slight right").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`slight right`]
   @scala.inline
-  def `slight right`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`slight right` = this.cast("slight right")
+  def straight: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.straight = "straight".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.straight]
   @scala.inline
-  def straight: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.straight = this.cast("straight")
-  @scala.inline
-  def uturn: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.uturn = this.cast("uturn")
+  def uturn: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.uturn = "uturn".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.uturn]
 }
 

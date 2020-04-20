@@ -16,7 +16,6 @@ object Tablelvl2ContextProps {
   @scala.inline
   def apply(variant: head | body | footer): Tablelvl2ContextProps = {
     val __obj = js.Dynamic.literal(variant = variant.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Tablelvl2ContextProps]
   }
 }

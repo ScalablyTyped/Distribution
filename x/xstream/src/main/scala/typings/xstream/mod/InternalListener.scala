@@ -14,7 +14,6 @@ object InternalListener {
   @scala.inline
   def apply[T](_c: () => Unit, _e: js.Any => Unit, _n: T => Unit): InternalListener[T] = {
     val __obj = js.Dynamic.literal(_c = js.Any.fromFunction0(_c), _e = js.Any.fromFunction1(_e), _n = js.Any.fromFunction1(_n))
-  
     __obj.asInstanceOf[InternalListener[T]]
   }
 }

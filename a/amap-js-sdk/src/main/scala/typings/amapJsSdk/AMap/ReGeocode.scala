@@ -22,7 +22,6 @@ object ReGeocode {
     roads: js.Array[Road]
   ): ReGeocode = {
     val __obj = js.Dynamic.literal(addressComponent = addressComponent.asInstanceOf[js.Any], crosses = crosses.asInstanceOf[js.Any], formattedAddress = formattedAddress.asInstanceOf[js.Any], pois = pois.asInstanceOf[js.Any], roads = roads.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReGeocode]
   }
 }

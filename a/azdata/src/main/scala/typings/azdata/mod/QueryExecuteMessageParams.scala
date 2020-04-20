@@ -13,7 +13,6 @@ object QueryExecuteMessageParams {
   @scala.inline
   def apply(message: IResultMessage, ownerUri: String): QueryExecuteMessageParams = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryExecuteMessageParams]
   }
 }

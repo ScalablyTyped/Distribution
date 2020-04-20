@@ -58,7 +58,6 @@ object Typeofethers {
     wordlists: Typeofwordlists
   ): Typeofethers = {
     val __obj = js.Dynamic.literal(Contract = Contract.asInstanceOf[js.Any], HDNode = HDNode.asInstanceOf[js.Any], Interface = Interface.asInstanceOf[js.Any], SigningKey = SigningKey.asInstanceOf[js.Any], Wallet = Wallet.asInstanceOf[js.Any], constants = constants.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], wordlists = wordlists.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofethers]
   }
 }

@@ -13,7 +13,6 @@ object TokenizerBuilder {
   @scala.inline
   def apply[T](build: js.Function2[/* err */ Error, /* tokenizer */ Tokenizer[T], Unit] => Unit): TokenizerBuilder[T] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction1(build))
-  
     __obj.asInstanceOf[TokenizerBuilder[T]]
   }
 }

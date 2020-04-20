@@ -19,7 +19,6 @@ object AdBuilder {
     withTrackingTemplate: String => T
   ): AdBuilder[T] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
-  
     __obj.asInstanceOf[AdBuilder[T]]
   }
 }

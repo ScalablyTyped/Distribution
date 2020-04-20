@@ -22,7 +22,6 @@ object OnMouseData {
   @scala.inline
   def apply(e: JQueryEventObject, key: String, options: AreaRenderingOptions, selected: Boolean): OnMouseData = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnMouseData]
   }
 }

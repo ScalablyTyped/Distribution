@@ -68,122 +68,120 @@ trait UnlinkAccountsParamsProvider extends js.Object
 
 object UnlinkAccountsParamsProvider {
   @scala.inline
-  def ad: typings.auth0.auth0Strings.ad = this.cast("ad")
+  def ad: typings.auth0.auth0Strings.ad = "ad".asInstanceOf[typings.auth0.auth0Strings.ad]
   @scala.inline
-  def adfs: typings.auth0.auth0Strings.adfs = this.cast("adfs")
+  def adfs: typings.auth0.auth0Strings.adfs = "adfs".asInstanceOf[typings.auth0.auth0Strings.adfs]
   @scala.inline
-  def amazon: typings.auth0.auth0Strings.amazon = this.cast("amazon")
+  def amazon: typings.auth0.auth0Strings.amazon = "amazon".asInstanceOf[typings.auth0.auth0Strings.amazon]
   @scala.inline
-  def aol: typings.auth0.auth0Strings.aol = this.cast("aol")
+  def aol: typings.auth0.auth0Strings.aol = "aol".asInstanceOf[typings.auth0.auth0Strings.aol]
   @scala.inline
-  def auth0: typings.auth0.auth0Strings.auth0 = this.cast("auth0")
+  def auth0: typings.auth0.auth0Strings.auth0 = "auth0".asInstanceOf[typings.auth0.auth0Strings.auth0]
   @scala.inline
-  def `auth0-adldap`: typings.auth0.auth0Strings.`auth0-adldap` = this.cast("auth0-adldap")
+  def `auth0-adldap`: typings.auth0.auth0Strings.`auth0-adldap` = "auth0-adldap".asInstanceOf[typings.auth0.auth0Strings.`auth0-adldap`]
   @scala.inline
-  def `auth0-oidc`: typings.auth0.auth0Strings.`auth0-oidc` = this.cast("auth0-oidc")
+  def `auth0-oidc`: typings.auth0.auth0Strings.`auth0-oidc` = "auth0-oidc".asInstanceOf[typings.auth0.auth0Strings.`auth0-oidc`]
   @scala.inline
-  def baidu: typings.auth0.auth0Strings.baidu = this.cast("baidu")
+  def baidu: typings.auth0.auth0Strings.baidu = "baidu".asInstanceOf[typings.auth0.auth0Strings.baidu]
   @scala.inline
-  def bitbucket: typings.auth0.auth0Strings.bitbucket = this.cast("bitbucket")
+  def bitbucket: typings.auth0.auth0Strings.bitbucket = "bitbucket".asInstanceOf[typings.auth0.auth0Strings.bitbucket]
   @scala.inline
-  def bitly: typings.auth0.auth0Strings.bitly = this.cast("bitly")
+  def bitly: typings.auth0.auth0Strings.bitly = "bitly".asInstanceOf[typings.auth0.auth0Strings.bitly]
   @scala.inline
-  def box: typings.auth0.auth0Strings.box = this.cast("box")
+  def box: typings.auth0.auth0Strings.box = "box".asInstanceOf[typings.auth0.auth0Strings.box]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def custom: typings.auth0.auth0Strings.custom = "custom".asInstanceOf[typings.auth0.auth0Strings.custom]
   @scala.inline
-  def custom: typings.auth0.auth0Strings.custom = this.cast("custom")
+  def dropbox: typings.auth0.auth0Strings.dropbox = "dropbox".asInstanceOf[typings.auth0.auth0Strings.dropbox]
   @scala.inline
-  def dropbox: typings.auth0.auth0Strings.dropbox = this.cast("dropbox")
+  def dwolla: typings.auth0.auth0Strings.dwolla = "dwolla".asInstanceOf[typings.auth0.auth0Strings.dwolla]
   @scala.inline
-  def dwolla: typings.auth0.auth0Strings.dwolla = this.cast("dwolla")
+  def email: typings.auth0.auth0Strings.email = "email".asInstanceOf[typings.auth0.auth0Strings.email]
   @scala.inline
-  def email: typings.auth0.auth0Strings.email = this.cast("email")
+  def evernote: typings.auth0.auth0Strings.evernote = "evernote".asInstanceOf[typings.auth0.auth0Strings.evernote]
   @scala.inline
-  def evernote: typings.auth0.auth0Strings.evernote = this.cast("evernote")
+  def `evernote-sandbox`: typings.auth0.auth0Strings.`evernote-sandbox` = "evernote-sandbox".asInstanceOf[typings.auth0.auth0Strings.`evernote-sandbox`]
   @scala.inline
-  def `evernote-sandbox`: typings.auth0.auth0Strings.`evernote-sandbox` = this.cast("evernote-sandbox")
+  def exact: typings.auth0.auth0Strings.exact = "exact".asInstanceOf[typings.auth0.auth0Strings.exact]
   @scala.inline
-  def exact: typings.auth0.auth0Strings.exact = this.cast("exact")
+  def facebook: typings.auth0.auth0Strings.facebook = "facebook".asInstanceOf[typings.auth0.auth0Strings.facebook]
   @scala.inline
-  def facebook: typings.auth0.auth0Strings.facebook = this.cast("facebook")
+  def fitbit: typings.auth0.auth0Strings.fitbit = "fitbit".asInstanceOf[typings.auth0.auth0Strings.fitbit]
   @scala.inline
-  def fitbit: typings.auth0.auth0Strings.fitbit = this.cast("fitbit")
+  def flickr: typings.auth0.auth0Strings.flickr = "flickr".asInstanceOf[typings.auth0.auth0Strings.flickr]
   @scala.inline
-  def flickr: typings.auth0.auth0Strings.flickr = this.cast("flickr")
+  def github: typings.auth0.auth0Strings.github = "github".asInstanceOf[typings.auth0.auth0Strings.github]
   @scala.inline
-  def github: typings.auth0.auth0Strings.github = this.cast("github")
+  def `google-apps`: typings.auth0.auth0Strings.`google-apps` = "google-apps".asInstanceOf[typings.auth0.auth0Strings.`google-apps`]
   @scala.inline
-  def `google-apps`: typings.auth0.auth0Strings.`google-apps` = this.cast("google-apps")
+  def `google-oauth2`: typings.auth0.auth0Strings.`google-oauth2` = "google-oauth2".asInstanceOf[typings.auth0.auth0Strings.`google-oauth2`]
   @scala.inline
-  def `google-oauth2`: typings.auth0.auth0Strings.`google-oauth2` = this.cast("google-oauth2")
+  def guardian: typings.auth0.auth0Strings.guardian = "guardian".asInstanceOf[typings.auth0.auth0Strings.guardian]
   @scala.inline
-  def guardian: typings.auth0.auth0Strings.guardian = this.cast("guardian")
+  def instagram: typings.auth0.auth0Strings.instagram = "instagram".asInstanceOf[typings.auth0.auth0Strings.instagram]
   @scala.inline
-  def instagram: typings.auth0.auth0Strings.instagram = this.cast("instagram")
+  def ip: typings.auth0.auth0Strings.ip = "ip".asInstanceOf[typings.auth0.auth0Strings.ip]
   @scala.inline
-  def ip: typings.auth0.auth0Strings.ip = this.cast("ip")
+  def linkedin: typings.auth0.auth0Strings.linkedin = "linkedin".asInstanceOf[typings.auth0.auth0Strings.linkedin]
   @scala.inline
-  def linkedin: typings.auth0.auth0Strings.linkedin = this.cast("linkedin")
+  def miicard: typings.auth0.auth0Strings.miicard = "miicard".asInstanceOf[typings.auth0.auth0Strings.miicard]
   @scala.inline
-  def miicard: typings.auth0.auth0Strings.miicard = this.cast("miicard")
+  def oauth1: typings.auth0.auth0Strings.oauth1 = "oauth1".asInstanceOf[typings.auth0.auth0Strings.oauth1]
   @scala.inline
-  def oauth1: typings.auth0.auth0Strings.oauth1 = this.cast("oauth1")
+  def oauth2: typings.auth0.auth0Strings.oauth2 = "oauth2".asInstanceOf[typings.auth0.auth0Strings.oauth2]
   @scala.inline
-  def oauth2: typings.auth0.auth0Strings.oauth2 = this.cast("oauth2")
+  def office365: typings.auth0.auth0Strings.office365 = "office365".asInstanceOf[typings.auth0.auth0Strings.office365]
   @scala.inline
-  def office365: typings.auth0.auth0Strings.office365 = this.cast("office365")
+  def paypal: typings.auth0.auth0Strings.paypal = "paypal".asInstanceOf[typings.auth0.auth0Strings.paypal]
   @scala.inline
-  def paypal: typings.auth0.auth0Strings.paypal = this.cast("paypal")
+  def `paypal-sandbox`: typings.auth0.auth0Strings.`paypal-sandbox` = "paypal-sandbox".asInstanceOf[typings.auth0.auth0Strings.`paypal-sandbox`]
   @scala.inline
-  def `paypal-sandbox`: typings.auth0.auth0Strings.`paypal-sandbox` = this.cast("paypal-sandbox")
+  def pingfederate: typings.auth0.auth0Strings.pingfederate = "pingfederate".asInstanceOf[typings.auth0.auth0Strings.pingfederate]
   @scala.inline
-  def pingfederate: typings.auth0.auth0Strings.pingfederate = this.cast("pingfederate")
+  def planningcenter: typings.auth0.auth0Strings.planningcenter = "planningcenter".asInstanceOf[typings.auth0.auth0Strings.planningcenter]
   @scala.inline
-  def planningcenter: typings.auth0.auth0Strings.planningcenter = this.cast("planningcenter")
+  def renren: typings.auth0.auth0Strings.renren = "renren".asInstanceOf[typings.auth0.auth0Strings.renren]
   @scala.inline
-  def renren: typings.auth0.auth0Strings.renren = this.cast("renren")
+  def salesforce: typings.auth0.auth0Strings.salesforce = "salesforce".asInstanceOf[typings.auth0.auth0Strings.salesforce]
   @scala.inline
-  def salesforce: typings.auth0.auth0Strings.salesforce = this.cast("salesforce")
+  def `salesforce-community`: typings.auth0.auth0Strings.`salesforce-community` = "salesforce-community".asInstanceOf[typings.auth0.auth0Strings.`salesforce-community`]
   @scala.inline
-  def `salesforce-community`: typings.auth0.auth0Strings.`salesforce-community` = this.cast("salesforce-community")
+  def `salesforce-sandbox`: typings.auth0.auth0Strings.`salesforce-sandbox` = "salesforce-sandbox".asInstanceOf[typings.auth0.auth0Strings.`salesforce-sandbox`]
   @scala.inline
-  def `salesforce-sandbox`: typings.auth0.auth0Strings.`salesforce-sandbox` = this.cast("salesforce-sandbox")
+  def samlp: typings.auth0.auth0Strings.samlp = "samlp".asInstanceOf[typings.auth0.auth0Strings.samlp]
   @scala.inline
-  def samlp: typings.auth0.auth0Strings.samlp = this.cast("samlp")
+  def sharepoint: typings.auth0.auth0Strings.sharepoint = "sharepoint".asInstanceOf[typings.auth0.auth0Strings.sharepoint]
   @scala.inline
-  def sharepoint: typings.auth0.auth0Strings.sharepoint = this.cast("sharepoint")
+  def shopify: typings.auth0.auth0Strings.shopify = "shopify".asInstanceOf[typings.auth0.auth0Strings.shopify]
   @scala.inline
-  def shopify: typings.auth0.auth0Strings.shopify = this.cast("shopify")
+  def sms: typings.auth0.auth0Strings.sms = "sms".asInstanceOf[typings.auth0.auth0Strings.sms]
   @scala.inline
-  def sms: typings.auth0.auth0Strings.sms = this.cast("sms")
+  def soundcloud: typings.auth0.auth0Strings.soundcloud = "soundcloud".asInstanceOf[typings.auth0.auth0Strings.soundcloud]
   @scala.inline
-  def soundcloud: typings.auth0.auth0Strings.soundcloud = this.cast("soundcloud")
+  def thecity: typings.auth0.auth0Strings.thecity = "thecity".asInstanceOf[typings.auth0.auth0Strings.thecity]
   @scala.inline
-  def thecity: typings.auth0.auth0Strings.thecity = this.cast("thecity")
+  def `thecity-sandbox`: typings.auth0.auth0Strings.`thecity-sandbox` = "thecity-sandbox".asInstanceOf[typings.auth0.auth0Strings.`thecity-sandbox`]
   @scala.inline
-  def `thecity-sandbox`: typings.auth0.auth0Strings.`thecity-sandbox` = this.cast("thecity-sandbox")
+  def thirtysevensignals: typings.auth0.auth0Strings.thirtysevensignals = "thirtysevensignals".asInstanceOf[typings.auth0.auth0Strings.thirtysevensignals]
   @scala.inline
-  def thirtysevensignals: typings.auth0.auth0Strings.thirtysevensignals = this.cast("thirtysevensignals")
+  def twitter: typings.auth0.auth0Strings.twitter = "twitter".asInstanceOf[typings.auth0.auth0Strings.twitter]
   @scala.inline
-  def twitter: typings.auth0.auth0Strings.twitter = this.cast("twitter")
+  def untappd: typings.auth0.auth0Strings.untappd = "untappd".asInstanceOf[typings.auth0.auth0Strings.untappd]
   @scala.inline
-  def untappd: typings.auth0.auth0Strings.untappd = this.cast("untappd")
+  def vkontakte: typings.auth0.auth0Strings.vkontakte = "vkontakte".asInstanceOf[typings.auth0.auth0Strings.vkontakte]
   @scala.inline
-  def vkontakte: typings.auth0.auth0Strings.vkontakte = this.cast("vkontakte")
+  def waad: typings.auth0.auth0Strings.waad = "waad".asInstanceOf[typings.auth0.auth0Strings.waad]
   @scala.inline
-  def waad: typings.auth0.auth0Strings.waad = this.cast("waad")
+  def weibo: typings.auth0.auth0Strings.weibo = "weibo".asInstanceOf[typings.auth0.auth0Strings.weibo]
   @scala.inline
-  def weibo: typings.auth0.auth0Strings.weibo = this.cast("weibo")
+  def windowslive: typings.auth0.auth0Strings.windowslive = "windowslive".asInstanceOf[typings.auth0.auth0Strings.windowslive]
   @scala.inline
-  def windowslive: typings.auth0.auth0Strings.windowslive = this.cast("windowslive")
+  def wordpress: typings.auth0.auth0Strings.wordpress = "wordpress".asInstanceOf[typings.auth0.auth0Strings.wordpress]
   @scala.inline
-  def wordpress: typings.auth0.auth0Strings.wordpress = this.cast("wordpress")
+  def yahoo: typings.auth0.auth0Strings.yahoo = "yahoo".asInstanceOf[typings.auth0.auth0Strings.yahoo]
   @scala.inline
-  def yahoo: typings.auth0.auth0Strings.yahoo = this.cast("yahoo")
+  def yammer: typings.auth0.auth0Strings.yammer = "yammer".asInstanceOf[typings.auth0.auth0Strings.yammer]
   @scala.inline
-  def yammer: typings.auth0.auth0Strings.yammer = this.cast("yammer")
-  @scala.inline
-  def yandex: typings.auth0.auth0Strings.yandex = this.cast("yandex")
+  def yandex: typings.auth0.auth0Strings.yandex = "yandex".asInstanceOf[typings.auth0.auth0Strings.yandex]
 }
 

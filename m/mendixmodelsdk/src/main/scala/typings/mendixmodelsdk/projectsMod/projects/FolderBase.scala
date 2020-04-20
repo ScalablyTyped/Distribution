@@ -39,10 +39,10 @@ abstract class FolderBase protected () extends StructuralUnit {
   var folders_FFolderBase: IList[IFolder] = js.native
   @JSName("model")
   var model_FFolderBase: IModel = js.native
-  def containerAsFolderBase(): FolderBase = js.native
-  def containerAsProject(): Project = js.native
-  def documents(): IList[IDocument] = js.native
-  def folders(): IList[IFolder] = js.native
+  def containerAsFolderBase: FolderBase = js.native
+  def containerAsProject: Project = js.native
+  def documents: IList[IDocument] = js.native
+  def folders: IList[IFolder] = js.native
 }
 
 /* static members */

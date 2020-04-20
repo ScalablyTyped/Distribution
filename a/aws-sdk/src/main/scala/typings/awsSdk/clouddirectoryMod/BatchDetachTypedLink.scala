@@ -16,7 +16,6 @@ object BatchDetachTypedLink {
   @scala.inline
   def apply(TypedLinkSpecifier: TypedLinkSpecifier): BatchDetachTypedLink = {
     val __obj = js.Dynamic.literal(TypedLinkSpecifier = TypedLinkSpecifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDetachTypedLink]
   }
 }

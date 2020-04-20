@@ -16,7 +16,6 @@ object DeleteRetentionConfigurationRequest {
   @scala.inline
   def apply(RetentionConfigurationName: RetentionConfigurationName): DeleteRetentionConfigurationRequest = {
     val __obj = js.Dynamic.literal(RetentionConfigurationName = RetentionConfigurationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRetentionConfigurationRequest]
   }
 }

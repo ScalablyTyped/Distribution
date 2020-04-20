@@ -20,7 +20,6 @@ object GetEncryptionByDefaultResult {
   @scala.inline
   def apply(enabled: Boolean, id: String): GetEncryptionByDefaultResult = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEncryptionByDefaultResult]
   }
 }

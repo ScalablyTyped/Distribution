@@ -16,7 +16,6 @@ object GetHostnameSuggestionRequest {
   @scala.inline
   def apply(LayerId: String): GetHostnameSuggestionRequest = {
     val __obj = js.Dynamic.literal(LayerId = LayerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHostnameSuggestionRequest]
   }
 }

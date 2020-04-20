@@ -12,7 +12,6 @@ object TimeoutResults {
   @scala.inline
   def apply(waitTime: Double): TimeoutResults = {
     val __obj = js.Dynamic.literal(waitTime = waitTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimeoutResults]
   }
 }

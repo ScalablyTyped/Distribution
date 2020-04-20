@@ -16,7 +16,6 @@ object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParamete
   @scala.inline
   def apply(recordRowPath: String): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson = {
     val __obj = js.Dynamic.literal(recordRowPath = recordRowPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson]
   }
 }

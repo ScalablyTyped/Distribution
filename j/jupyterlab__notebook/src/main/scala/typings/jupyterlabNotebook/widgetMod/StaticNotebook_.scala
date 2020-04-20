@@ -89,34 +89,34 @@ class StaticNotebook_ protected () extends Widget {
   /**
     * Get the mimetype for code cells.
     */
-  def codeMimetype(): String = js.native
+  def codeMimetype: String = js.native
   /**
     * A configuration object for cell editor settings.
     */
-  def editorConfig(): IEditorConfig = js.native
+  def editorConfig: IEditorConfig = js.native
   def editorConfig(value: IEditorConfig): js.Any = js.native
   def model(): js.Any = js.native
   def model(newValue: INotebookModel): js.Any = js.native
   /**
     * A signal emitted when the model of the notebook changes.
     */
-  def modelChanged(): ISignal[this.type, Unit] = js.native
+  def modelChanged: ISignal[this.type, Unit] = js.native
   /**
     * A signal emitted when the model content changes.
     *
     * #### Notes
     * This is a convenience signal that follows the current model.
     */
-  def modelContentChanged(): ISignal[this.type, Unit] = js.native
+  def modelContentChanged: ISignal[this.type, Unit] = js.native
   /**
     * The model for the widget.
     */
   @JSName("model")
-  def model_Union(): INotebookModel | Null = js.native
+  def model_Union: INotebookModel | Null = js.native
   /**
     * A configuration object for notebook settings.
     */
-  def notebookConfig(): INotebookConfig = js.native
+  def notebookConfig: INotebookConfig = js.native
   def notebookConfig(value: INotebookConfig): js.Any = js.native
   /**
     * Handle a cell being inserted.
@@ -169,6 +169,6 @@ class StaticNotebook_ protected () extends Widget {
   /**
     * A read-only sequence of the widgets in the notebook.
     */
-  def widgets(): js.Array[Cell] = js.native
+  def widgets: js.Array[Cell] = js.native
 }
 

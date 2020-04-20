@@ -13,7 +13,6 @@ object PickImplsearch {
   @scala.inline
   def apply(search: Double): PickImplsearch = {
     val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsearch]
   }
 }

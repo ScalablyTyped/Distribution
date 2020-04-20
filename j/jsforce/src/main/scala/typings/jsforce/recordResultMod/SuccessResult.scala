@@ -15,7 +15,6 @@ object SuccessResult {
   @scala.inline
   def apply(id: SalesforceId, success: `true`): SuccessResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuccessResult]
   }
 }

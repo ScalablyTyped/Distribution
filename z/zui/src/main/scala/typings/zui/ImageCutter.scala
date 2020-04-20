@@ -13,7 +13,6 @@ object ImageCutter {
   @scala.inline
   def apply(getData: () => ImageData, resetImage: String => js.Any): ImageCutter = {
     val __obj = js.Dynamic.literal(getData = js.Any.fromFunction0(getData), resetImage = js.Any.fromFunction1(resetImage))
-  
     __obj.asInstanceOf[ImageCutter]
   }
 }

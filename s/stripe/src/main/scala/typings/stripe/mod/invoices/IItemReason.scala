@@ -19,7 +19,6 @@ object IItemReason {
   @scala.inline
   def apply(line_item_ids: js.Array[String], usage_gte: Double): IItemReason = {
     val __obj = js.Dynamic.literal(line_item_ids = line_item_ids.asInstanceOf[js.Any], usage_gte = usage_gte.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IItemReason]
   }
 }

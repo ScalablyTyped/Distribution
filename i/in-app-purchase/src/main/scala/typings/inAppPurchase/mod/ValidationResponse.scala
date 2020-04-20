@@ -13,7 +13,6 @@ object ValidationResponse {
   @scala.inline
   def apply(service: Service, status: Double): ValidationResponse = {
     val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidationResponse]
   }
 }

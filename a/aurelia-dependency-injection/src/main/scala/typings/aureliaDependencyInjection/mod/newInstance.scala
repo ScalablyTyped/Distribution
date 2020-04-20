@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object newInstance extends js.Object {
   def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](): js.Function3[
-    /* target */ (DependencyCtor[TBase, TImpl, TArgs]) with AnonInject[TArgs], 
+    /* target */ (DependencyCtor[TBase, TImpl, TArgs]) with (AnonInject[TArgs, TBase]), 
     /* _key */ js.Any, 
     /* index */ Double, 
     Unit
   ] = js.native
   def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
-    asKeyOrTarget: (PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) with AnonInject[TArgs],
+    asKeyOrTarget: (PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) with (AnonInject[TArgs, TBase]),
     dynamicDependencies: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
   ): js.Function3[
-    /* target */ (DependencyCtor[TBase, TImpl, TArgs]) with AnonInject[TArgs], 
+    /* target */ (DependencyCtor[TBase, TImpl, TArgs]) with (AnonInject[TArgs, TBase]), 
     /* _key */ js.Any, 
     /* index */ Double, 
     Unit

@@ -15,7 +15,6 @@ object UseruploadedResource {
   @scala.inline
   def apply(list: AnonStartIndex => Request_[Volumes]): UseruploadedResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[UseruploadedResource]
   }
 }

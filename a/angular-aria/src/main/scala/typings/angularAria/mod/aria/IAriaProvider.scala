@@ -15,7 +15,6 @@ object IAriaProvider {
   @scala.inline
   def apply(config: IAriaProviderOptions => Unit): IAriaProvider = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config))
-  
     __obj.asInstanceOf[IAriaProvider]
   }
 }

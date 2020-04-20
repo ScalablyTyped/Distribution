@@ -15,7 +15,6 @@ object ArchiveResource {
   @scala.inline
   def apply(insert: AnonAlt => Request_[Groups]): ArchiveResource = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
-  
     __obj.asInstanceOf[ArchiveResource]
   }
 }

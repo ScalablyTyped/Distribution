@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 trait BubbleChartSpec extends js.Object {
   /** The bubble border color. */
   var bubbleBorderColor: js.UndefOr[Color] = js.undefined
+  /**
+    * The bubble border color.
+    * If bubble_border_color is also set, this field takes precedence.
+    */
+  var bubbleBorderColorStyle: js.UndefOr[ColorStyle] = js.undefined
   /** The data containing the bubble labels.  These do not need to be unique. */
   var bubbleLabels: js.UndefOr[ChartData] = js.undefined
   /**
@@ -61,6 +66,7 @@ object BubbleChartSpec {
   @scala.inline
   def apply(
     bubbleBorderColor: Color = null,
+    bubbleBorderColorStyle: ColorStyle = null,
     bubbleLabels: ChartData = null,
     bubbleMaxRadiusSize: Int | Double = null,
     bubbleMinRadiusSize: Int | Double = null,
@@ -74,6 +80,7 @@ object BubbleChartSpec {
   ): BubbleChartSpec = {
     val __obj = js.Dynamic.literal()
     if (bubbleBorderColor != null) __obj.updateDynamic("bubbleBorderColor")(bubbleBorderColor.asInstanceOf[js.Any])
+    if (bubbleBorderColorStyle != null) __obj.updateDynamic("bubbleBorderColorStyle")(bubbleBorderColorStyle.asInstanceOf[js.Any])
     if (bubbleLabels != null) __obj.updateDynamic("bubbleLabels")(bubbleLabels.asInstanceOf[js.Any])
     if (bubbleMaxRadiusSize != null) __obj.updateDynamic("bubbleMaxRadiusSize")(bubbleMaxRadiusSize.asInstanceOf[js.Any])
     if (bubbleMinRadiusSize != null) __obj.updateDynamic("bubbleMinRadiusSize")(bubbleMinRadiusSize.asInstanceOf[js.Any])

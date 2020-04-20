@@ -29,7 +29,6 @@ object CompositeUnsubscribe {
     unsubscribed: Boolean
   ): CompositeUnsubscribe = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), count = js.Any.fromFunction0(count), empty = js.Any.fromFunction0(empty), remove = js.Any.fromFunction1(remove), starting = starting.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe), unsubscribed = unsubscribed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompositeUnsubscribe]
   }
 }

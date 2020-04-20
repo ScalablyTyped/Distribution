@@ -18,7 +18,6 @@ object OnPageChangeListener {
     onPageSelected: Double => Unit
   ): OnPageChangeListener = {
     val __obj = js.Dynamic.literal(onPageScrollStateChanged = js.Any.fromFunction1(onPageScrollStateChanged), onPageScrolled = js.Any.fromFunction3(onPageScrolled), onPageSelected = js.Any.fromFunction1(onPageSelected))
-  
     __obj.asInstanceOf[OnPageChangeListener]
   }
 }

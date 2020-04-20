@@ -36,7 +36,6 @@ object ImageView2Options {
     w: Double
   ): ImageView2Options = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageView2Options]
   }
 }

@@ -16,12 +16,10 @@ trait XlObjectSize extends js.Object
 
 object XlObjectSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlFitToPage: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlFitToPage: `2` = this.cast(2)
+  def xlFullPage: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlFullPage: `3` = this.cast(3)
-  @scala.inline
-  def xlScreenSize: `1` = this.cast(1)
+  def xlScreenSize: `1` = 1.asInstanceOf[`1`]
 }
 

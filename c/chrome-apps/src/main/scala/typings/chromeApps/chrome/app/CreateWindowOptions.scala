@@ -3,12 +3,16 @@ package typings.chromeApps.chrome.app
 import typings.chromeApps.AnonFULLSCREEN
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
+import typings.chromeApps.chromeAppsStrings.FULLSCREEN
+import typings.chromeApps.chromeAppsStrings.MAXIMIZED
+import typings.chromeApps.chromeAppsStrings.MINIMIZED
+import typings.chromeApps.chromeAppsStrings.NORMAL
 import typings.chromeApps.chromeAppsStrings.chrome
-import typings.chromeApps.chromeAppsStrings.fullscreen
-import typings.chromeApps.chromeAppsStrings.maximized
-import typings.chromeApps.chromeAppsStrings.minimized
+import typings.chromeApps.chromeAppsStrings.fullscreen_
+import typings.chromeApps.chromeAppsStrings.maximized_
+import typings.chromeApps.chromeAppsStrings.minimized_
 import typings.chromeApps.chromeAppsStrings.none_
-import typings.chromeApps.chromeAppsStrings.normal
+import typings.chromeApps.chromeAppsStrings.normal_
 import typings.chromeApps.chromeAppsStrings.shell
 import typings.std.Exclude
 import scala.scalajs.js
@@ -134,7 +138,14 @@ trait CreateWindowOptions extends ContentBounds {
     * The initial state of the window, allowing it to be created already fullscreen, maximized, or minimized. Defaults to 'normal'.
     */
   var state: js.UndefOr[
-    ToStringLiteral[AnonFULLSCREEN, String, Exclude[String, normal | fullscreen | maximized | minimized]]
+    ToStringLiteral[
+      AnonFULLSCREEN, 
+      NORMAL | FULLSCREEN | MAXIMIZED | MINIMIZED, 
+      Exclude[
+        NORMAL | FULLSCREEN | MAXIMIZED | MINIMIZED, 
+        normal_ | fullscreen_ | maximized_ | minimized_
+      ]
+    ]
   ] = js.undefined
   /**
     * @deprecated Deprecated since Chrome 69. All app windows use the 'shell' window type.
@@ -171,7 +182,14 @@ object CreateWindowOptions {
     resizable: js.UndefOr[Boolean] = js.undefined,
     showInShelf: js.UndefOr[Boolean] = js.undefined,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    state: ToStringLiteral[AnonFULLSCREEN, String, Exclude[String, normal | fullscreen | maximized | minimized]] = null,
+    state: ToStringLiteral[
+      AnonFULLSCREEN, 
+      NORMAL | FULLSCREEN | MAXIMIZED | MINIMIZED, 
+      Exclude[
+        NORMAL | FULLSCREEN | MAXIMIZED | MINIMIZED, 
+        normal_ | fullscreen_ | maximized_ | minimized_
+      ]
+    ] = null,
     top: Int | Double = null,
     `type`: shell = null,
     visibleOnAllWorkspaces: js.UndefOr[Boolean] = js.undefined,

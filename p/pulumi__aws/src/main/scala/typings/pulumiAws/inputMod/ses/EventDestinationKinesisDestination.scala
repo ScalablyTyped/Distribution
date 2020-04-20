@@ -21,7 +21,6 @@ object EventDestinationKinesisDestination {
   @scala.inline
   def apply(roleArn: Input[String], streamArn: Input[String]): EventDestinationKinesisDestination = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], streamArn = streamArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventDestinationKinesisDestination]
   }
 }

@@ -15,7 +15,6 @@ object VideoCategoriesResource {
   @scala.inline
   def apply(list: AnonRegionCode => Request_[VideoCategoryListResponse]): VideoCategoriesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[VideoCategoriesResource]
   }
 }

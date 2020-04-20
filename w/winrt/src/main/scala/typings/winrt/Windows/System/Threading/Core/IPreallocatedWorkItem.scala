@@ -13,7 +13,6 @@ object IPreallocatedWorkItem {
   @scala.inline
   def apply(runAsync: () => IAsyncAction): IPreallocatedWorkItem = {
     val __obj = js.Dynamic.literal(runAsync = js.Any.fromFunction0(runAsync))
-  
     __obj.asInstanceOf[IPreallocatedWorkItem]
   }
 }

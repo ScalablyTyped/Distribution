@@ -13,7 +13,6 @@ object AnonChChart {
   @scala.inline
   def apply(Ch: Chart): AnonChChart = {
     val __obj = js.Dynamic.literal(Ch = Ch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChChart]
   }
 }

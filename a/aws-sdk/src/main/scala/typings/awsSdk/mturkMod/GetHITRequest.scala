@@ -16,7 +16,6 @@ object GetHITRequest {
   @scala.inline
   def apply(HITId: EntityId): GetHITRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHITRequest]
   }
 }

@@ -13,7 +13,6 @@ object AnonUntil {
   @scala.inline
   def apply(until: reload): AnonUntil = {
     val __obj = js.Dynamic.literal(until = until.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUntil]
   }
 }

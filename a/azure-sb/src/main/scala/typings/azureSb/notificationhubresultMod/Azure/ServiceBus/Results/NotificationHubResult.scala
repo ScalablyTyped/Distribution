@@ -17,7 +17,6 @@ object NotificationHubResult {
     serialize: CreateNotificationHubOptions => String
   ): NotificationHubResult = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction1(serialize))
-  
     __obj.asInstanceOf[NotificationHubResult]
   }
 }

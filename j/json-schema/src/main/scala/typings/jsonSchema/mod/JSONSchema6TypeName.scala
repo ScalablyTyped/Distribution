@@ -18,22 +18,20 @@ trait JSONSchema6TypeName extends js.Object
 
 object JSONSchema6TypeName {
   @scala.inline
-  def any: typings.jsonSchema.jsonSchemaStrings.any = this.cast("any")
+  def any: typings.jsonSchema.jsonSchemaStrings.any = "any".asInstanceOf[typings.jsonSchema.jsonSchemaStrings.any]
   @scala.inline
-  def array: typings.jsonSchema.jsonSchemaStrings.array = this.cast("array")
+  def array: typings.jsonSchema.jsonSchemaStrings.array = "array".asInstanceOf[typings.jsonSchema.jsonSchemaStrings.array]
   @scala.inline
-  def boolean: typings.jsonSchema.jsonSchemaStrings.boolean = this.cast("boolean")
+  def boolean: typings.jsonSchema.jsonSchemaStrings.boolean = "boolean".asInstanceOf[typings.jsonSchema.jsonSchemaStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def integer: typings.jsonSchema.jsonSchemaStrings.integer = "integer".asInstanceOf[typings.jsonSchema.jsonSchemaStrings.integer]
   @scala.inline
-  def integer: typings.jsonSchema.jsonSchemaStrings.integer = this.cast("integer")
+  def `null`: typings.jsonSchema.jsonSchemaStrings.`null` = "null".asInstanceOf[typings.jsonSchema.jsonSchemaStrings.`null`]
   @scala.inline
-  def `null`: typings.jsonSchema.jsonSchemaStrings.`null` = this.cast("null")
+  def number: typings.jsonSchema.jsonSchemaStrings.number = "number".asInstanceOf[typings.jsonSchema.jsonSchemaStrings.number]
   @scala.inline
-  def number: typings.jsonSchema.jsonSchemaStrings.number = this.cast("number")
+  def `object`: typings.jsonSchema.jsonSchemaStrings.`object` = "object".asInstanceOf[typings.jsonSchema.jsonSchemaStrings.`object`]
   @scala.inline
-  def `object`: typings.jsonSchema.jsonSchemaStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.jsonSchema.jsonSchemaStrings.string = this.cast("string")
+  def string: typings.jsonSchema.jsonSchemaStrings.string = "string".asInstanceOf[typings.jsonSchema.jsonSchemaStrings.string]
 }
 

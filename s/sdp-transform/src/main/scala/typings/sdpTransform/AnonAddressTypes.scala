@@ -24,7 +24,6 @@ object AnonAddressTypes {
     srcList: String
   ): AnonAddressTypes = {
     val __obj = js.Dynamic.literal(addressTypes = addressTypes.asInstanceOf[js.Any], destAddress = destAddress.asInstanceOf[js.Any], filterMode = filterMode.asInstanceOf[js.Any], netType = netType.asInstanceOf[js.Any], srcList = srcList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddressTypes]
   }
 }

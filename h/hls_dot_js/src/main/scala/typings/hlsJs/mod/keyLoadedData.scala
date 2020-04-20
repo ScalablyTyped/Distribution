@@ -12,7 +12,6 @@ object keyLoadedData {
   @scala.inline
   def apply(frag: Fragment): keyLoadedData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[keyLoadedData]
   }
 }

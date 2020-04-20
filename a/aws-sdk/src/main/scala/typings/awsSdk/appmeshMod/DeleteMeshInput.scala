@@ -16,7 +16,6 @@ object DeleteMeshInput {
   @scala.inline
   def apply(meshName: ResourceName): DeleteMeshInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMeshInput]
   }
 }

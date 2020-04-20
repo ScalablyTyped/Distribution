@@ -14,12 +14,10 @@ trait TextTranformation extends js.Object
 
 object TextTranformation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lowercase: typings.cytoscape.cytoscapeStrings.lowercase = "lowercase".asInstanceOf[typings.cytoscape.cytoscapeStrings.lowercase]
   @scala.inline
-  def lowercase: typings.cytoscape.cytoscapeStrings.lowercase = this.cast("lowercase")
+  def none: typings.cytoscape.cytoscapeStrings.none = "none".asInstanceOf[typings.cytoscape.cytoscapeStrings.none]
   @scala.inline
-  def none: typings.cytoscape.cytoscapeStrings.none = this.cast("none")
-  @scala.inline
-  def uppercase: typings.cytoscape.cytoscapeStrings.uppercase = this.cast("uppercase")
+  def uppercase: typings.cytoscape.cytoscapeStrings.uppercase = "uppercase".asInstanceOf[typings.cytoscape.cytoscapeStrings.uppercase]
 }
 

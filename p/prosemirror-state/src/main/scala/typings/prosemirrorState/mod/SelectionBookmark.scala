@@ -25,7 +25,6 @@ object SelectionBookmark {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](map: Mapping => SelectionBookmark[S], resolve: Node[S] => Selection[S]): SelectionBookmark[S] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), resolve = js.Any.fromFunction1(resolve))
-  
     __obj.asInstanceOf[SelectionBookmark[S]]
   }
 }

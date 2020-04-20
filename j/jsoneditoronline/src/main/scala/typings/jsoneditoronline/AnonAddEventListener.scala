@@ -32,7 +32,6 @@ object AnonAddEventListener {
     stopPropagation: Event_ => Unit
   ): AnonAddEventListener = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction4(addEventListener), preventDefault = js.Any.fromFunction1(preventDefault), removeEventListener = js.Any.fromFunction4(removeEventListener), stopPropagation = js.Any.fromFunction1(stopPropagation))
-  
     __obj.asInstanceOf[AnonAddEventListener]
   }
 }

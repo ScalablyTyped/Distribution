@@ -26,7 +26,6 @@ object WzStep {
     wzTitle: String
   ): WzStep = {
     val __obj = js.Dynamic.literal(canenter = js.Any.fromFunction1(canenter), canexit = js.Any.fromFunction1(canexit), description = description.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], wzData = wzData.asInstanceOf[js.Any], wzTitle = wzTitle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WzStep]
   }
 }

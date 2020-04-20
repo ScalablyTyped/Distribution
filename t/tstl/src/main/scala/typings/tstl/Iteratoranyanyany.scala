@@ -48,6 +48,6 @@ trait Iteratoranyanyany extends js.Object {
   /**
     * @inheritDoc
     */
-  def value(): js.Any = js.native
+  def value: js.Any = js.native
 }
 

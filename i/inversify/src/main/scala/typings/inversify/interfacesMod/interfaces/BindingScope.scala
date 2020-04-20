@@ -13,12 +13,10 @@ trait BindingScope extends js.Object
 
 object BindingScope {
   @scala.inline
-  def Request: typings.inversify.inversifyStrings.Request = this.cast("Request")
+  def Request: typings.inversify.inversifyStrings.Request = "Request".asInstanceOf[typings.inversify.inversifyStrings.Request]
   @scala.inline
-  def Singleton: typings.inversify.inversifyStrings.Singleton = this.cast("Singleton")
+  def Singleton: typings.inversify.inversifyStrings.Singleton = "Singleton".asInstanceOf[typings.inversify.inversifyStrings.Singleton]
   @scala.inline
-  def Transient: typings.inversify.inversifyStrings.Transient = this.cast("Transient")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Transient: typings.inversify.inversifyStrings.Transient = "Transient".asInstanceOf[typings.inversify.inversifyStrings.Transient]
 }
 

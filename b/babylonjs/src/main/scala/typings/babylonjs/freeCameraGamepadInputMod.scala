@@ -47,7 +47,7 @@ object freeCameraGamepadInputMod extends js.Object {
     /**
       * Gets or sets a boolean indicating that Yaxis (for right stick) should be inverted
       */
-    def invertYAxis(): Boolean = js.native
+    def invertYAxis: Boolean = js.native
     def invertYAxis(value: Boolean): js.Any = js.native
   }
   

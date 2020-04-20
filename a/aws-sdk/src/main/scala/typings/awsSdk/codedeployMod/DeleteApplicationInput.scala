@@ -16,7 +16,6 @@ object DeleteApplicationInput {
   @scala.inline
   def apply(applicationName: ApplicationName): DeleteApplicationInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApplicationInput]
   }
 }

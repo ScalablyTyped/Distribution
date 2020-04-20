@@ -43,7 +43,6 @@ object ComponentStatus {
     metadata: ObjectMeta
   ): ComponentStatus = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComponentStatus]
   }
 }

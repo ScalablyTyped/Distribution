@@ -27,7 +27,6 @@ object SitesResource {
     list: AnonKey => Request_[SitesListResponse]
   ): SitesResource = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[SitesResource]
   }
 }

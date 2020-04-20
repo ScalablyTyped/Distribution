@@ -20,7 +20,6 @@ object AnonPercpuusage {
     usage_in_usermode: Double
   ): AnonPercpuusage = {
     val __obj = js.Dynamic.literal(percpu_usage = percpu_usage.asInstanceOf[js.Any], total_usage = total_usage.asInstanceOf[js.Any], usage_in_kernelmode = usage_in_kernelmode.asInstanceOf[js.Any], usage_in_usermode = usage_in_usermode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPercpuusage]
   }
 }

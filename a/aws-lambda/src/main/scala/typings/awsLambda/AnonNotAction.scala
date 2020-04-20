@@ -13,7 +13,6 @@ object AnonNotAction {
   @scala.inline
   def apply(NotAction: String | js.Array[String]): AnonNotAction = {
     val __obj = js.Dynamic.literal(NotAction = NotAction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNotAction]
   }
 }

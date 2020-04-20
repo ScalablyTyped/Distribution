@@ -53,7 +53,6 @@ object OpenTok {
     stopArchive: (String, js.Function2[/* error */ Error | Null, /* archive */ js.UndefOr[Archive], Unit]) => Unit
   ): OpenTok = {
     val __obj = js.Dynamic.literal(createSession = js.Any.fromFunction2(createSession), deleteArchive = js.Any.fromFunction2(deleteArchive), generateToken = js.Any.fromFunction2(generateToken), getArchive = js.Any.fromFunction2(getArchive), listArchives = js.Any.fromFunction2(listArchives), startArchive = js.Any.fromFunction3(startArchive), stopArchive = js.Any.fromFunction2(stopArchive))
-  
     __obj.asInstanceOf[OpenTok]
   }
 }

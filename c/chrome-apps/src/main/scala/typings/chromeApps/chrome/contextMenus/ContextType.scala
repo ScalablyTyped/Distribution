@@ -1,17 +1,17 @@
 package typings.chromeApps.chrome.contextMenus
 
-import typings.chromeApps.chromeAppsStrings.all_
-import typings.chromeApps.chromeAppsStrings.audio
-import typings.chromeApps.chromeAppsStrings.browser_action
-import typings.chromeApps.chromeAppsStrings.editable
-import typings.chromeApps.chromeAppsStrings.frame
-import typings.chromeApps.chromeAppsStrings.image
-import typings.chromeApps.chromeAppsStrings.launcher
-import typings.chromeApps.chromeAppsStrings.link
-import typings.chromeApps.chromeAppsStrings.page
-import typings.chromeApps.chromeAppsStrings.page_action
-import typings.chromeApps.chromeAppsStrings.selection
-import typings.chromeApps.chromeAppsStrings.video
+import typings.chromeApps.chromeAppsStrings.all__
+import typings.chromeApps.chromeAppsStrings.audio_
+import typings.chromeApps.chromeAppsStrings.browser_action_
+import typings.chromeApps.chromeAppsStrings.editable_
+import typings.chromeApps.chromeAppsStrings.frame_
+import typings.chromeApps.chromeAppsStrings.image_
+import typings.chromeApps.chromeAppsStrings.launcher_
+import typings.chromeApps.chromeAppsStrings.link_
+import typings.chromeApps.chromeAppsStrings.page_
+import typings.chromeApps.chromeAppsStrings.page_action_
+import typings.chromeApps.chromeAppsStrings.selection_
+import typings.chromeApps.chromeAppsStrings.video_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,17 +25,17 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.contextMenus.ContextType")
 @js.native
 object ContextType extends js.Object {
-  var ALL: all_ = js.native
-  var AUDIO: audio = js.native
-  var BROWSER_ACTION: browser_action = js.native
-  var EDITABLE: editable = js.native
-  var FRAME: frame = js.native
-  var IMAGE: image = js.native
-  var LAUNCHER: launcher = js.native
-  var LINK: link = js.native
-  var PAGE: page = js.native
-  var PAGE_ACTION: page_action = js.native
-  var SELECTION: selection = js.native
-  var VIDEO: video = js.native
+  var ALL: all__ = js.native
+  var AUDIO: audio_ = js.native
+  var BROWSER_ACTION: browser_action_ = js.native
+  var EDITABLE: editable_ = js.native
+  var FRAME: frame_ = js.native
+  var IMAGE: image_ = js.native
+  var LAUNCHER: launcher_ = js.native
+  var LINK: link_ = js.native
+  var PAGE: page_ = js.native
+  var PAGE_ACTION: page_action_ = js.native
+  var SELECTION: selection_ = js.native
+  var VIDEO: video_ = js.native
 }
 

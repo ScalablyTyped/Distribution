@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-util
 
-Typings are for version 0.14.0
+Typings are for version 0.14.1
 
 ## Library description:
 Useful utilities for Electron apps and modules

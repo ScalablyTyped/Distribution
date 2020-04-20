@@ -14,7 +14,6 @@ object IStorageDeviceStatics {
   @scala.inline
   def apply(fromId: String => StorageFolder, getDeviceSelector: () => String): IStorageDeviceStatics = {
     val __obj = js.Dynamic.literal(fromId = js.Any.fromFunction1(fromId), getDeviceSelector = js.Any.fromFunction0(getDeviceSelector))
-  
     __obj.asInstanceOf[IStorageDeviceStatics]
   }
 }

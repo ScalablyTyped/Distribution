@@ -14,7 +14,6 @@ object AnonRequestEnum {
   @scala.inline
   def apply(requestEnum: String, result: Record[String, _]): AnonRequestEnum = {
     val __obj = js.Dynamic.literal(requestEnum = requestEnum.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRequestEnum]
   }
 }

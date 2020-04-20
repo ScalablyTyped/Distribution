@@ -13,7 +13,6 @@ object AnonHtmlEngine {
   @scala.inline
   def apply(htmlEngine: htmlEngine): AnonHtmlEngine = {
     val __obj = js.Dynamic.literal(htmlEngine = htmlEngine.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHtmlEngine]
   }
 }

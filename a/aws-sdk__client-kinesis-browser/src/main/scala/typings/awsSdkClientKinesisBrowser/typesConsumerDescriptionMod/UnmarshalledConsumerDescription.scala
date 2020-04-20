@@ -26,7 +26,6 @@ object UnmarshalledConsumerDescription {
     StreamARN: String
   ): UnmarshalledConsumerDescription = {
     val __obj = js.Dynamic.literal(ConsumerARN = ConsumerARN.asInstanceOf[js.Any], ConsumerCreationTimestamp = ConsumerCreationTimestamp.asInstanceOf[js.Any], ConsumerName = ConsumerName.asInstanceOf[js.Any], ConsumerStatus = ConsumerStatus.asInstanceOf[js.Any], StreamARN = StreamARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledConsumerDescription]
   }
 }

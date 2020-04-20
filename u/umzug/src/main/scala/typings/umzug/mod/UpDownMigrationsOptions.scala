@@ -16,7 +16,6 @@ object UpDownMigrationsOptions {
   @scala.inline
   def apply(migrations: js.Array[String]): UpDownMigrationsOptions = {
     val __obj = js.Dynamic.literal(migrations = migrations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpDownMigrationsOptions]
   }
 }

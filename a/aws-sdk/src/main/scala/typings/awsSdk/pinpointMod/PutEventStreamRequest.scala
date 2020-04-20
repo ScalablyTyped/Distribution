@@ -17,7 +17,6 @@ object PutEventStreamRequest {
   @scala.inline
   def apply(ApplicationId: string, WriteEventStream: WriteEventStream): PutEventStreamRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteEventStream = WriteEventStream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutEventStreamRequest]
   }
 }

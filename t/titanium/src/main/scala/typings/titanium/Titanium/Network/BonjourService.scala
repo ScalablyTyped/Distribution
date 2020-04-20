@@ -1,8 +1,11 @@
 package typings.titanium.Titanium.Network
 
+import typings.std.Error
+import typings.titanium.Titanium.Network.Socket.TCP
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
+import typings.titanium.titaniumStrings.publish
+import typings.titanium.titaniumStrings.resolve
+import typings.titanium.titaniumStrings.stop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,121 +13,145 @@ import scala.scalajs.js.annotation._
 /**
 		 * Describes a service on the network which is published by Bonjour.
 		 */
-trait BonjourService extends Proxy {
+@JSGlobal("Titanium.Network.BonjourService")
+@js.native
+class BonjourService () extends Proxy {
   /**
   			 * the domain of the service
   			 */
-  var domain: String
+  var domain: String = js.native
   /**
   			 * whether or not the service is local to the device
   			 */
-  var isLocal: Boolean
+  var isLocal: Boolean = js.native
   /**
   			 * the name of the service
   			 */
-  var name: String
+  var name: String = js.native
   /**
   			 * the TCPSocket object that is used to connect to the service
   			 */
-  var socket: js.Any
+  var socket: TCP = js.native
   /**
   			 * the type of the service
   			 */
-  var `type`: String
+  var `type`: String = js.native
+  /**
+  			 * Adds the specified callback as an event listener for the named event.
+  			 */
+  @JSName("addEventListener")
+  def addEventListener_publish(
+    name: publish,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ BonjourServicePublishEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_resolve(
+    name: resolve,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ BonjourServiceResolveEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_stop(
+    name: stop,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ BonjourServiceStopEvent, Unit]
+  ): Unit = js.native
+  /**
+  			 * Fires a synthesized event to any registered listeners.
+  			 */
+  @JSName("fireEvent")
+  def fireEvent_publish(name: publish): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_publish(name: publish, event: BonjourServicePublishEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_resolve(name: resolve): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_resolve(name: resolve, event: BonjourServiceResolveEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_stop(name: stop): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_stop(name: stop, event: BonjourServiceStopEvent): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.Network.BonjourService.domain> property.
+  			 * @deprecated Access <Titanium.Network.BonjourService.domain> instead.
   			 */
-  def getDomain(): String
+  def getDomain(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.BonjourService.isLocal> property.
+  			 * @deprecated Access <Titanium.Network.BonjourService.isLocal> instead.
   			 */
-  def getIsLocal(): Boolean
+  def getIsLocal(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Network.BonjourService.name> property.
+  			 * @deprecated Access <Titanium.Network.BonjourService.name> instead.
   			 */
-  def getName(): String
+  def getName(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.BonjourService.socket> property.
+  			 * @deprecated Access <Titanium.Network.BonjourService.socket> instead.
   			 */
-  def getSocket(): js.Any
+  def getSocket(): TCP = js.native
   /**
   			 * Gets the value of the <Titanium.Network.BonjourService.type> property.
+  			 * @deprecated Access <Titanium.Network.BonjourService.type> instead.
   			 */
-  def getType(): String
+  def getType(): String = js.native
   /**
-  			 * Publish a Bonjour service to the network.  Only works if isLocal is TRUE
+  			 * Asynchronously publish a Bonjour service to the network.  Only works if isLocal is TRUE
   			 */
-  def publish(socket: js.Any): Unit
+  def publish(socket: TCP): Unit = js.native
+  def publish(socket: TCP, callback: js.Function2[/* param0 */ Error, /* param1 */ Boolean, Unit]): Unit = js.native
   /**
-  			 * Resolve a Bonjour service from the network.  Must be done before attempting to access the service's socket information, if a remote service.  You cannot resolve a locally published service.
+  			 * Removes the specified callback as an event listener for the named event.
   			 */
-  def resolve(timeout: Double): Unit
+  @JSName("removeEventListener")
+  def removeEventListener_publish(
+    name: publish,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ BonjourServicePublishEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_resolve(
+    name: resolve,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ BonjourServiceResolveEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_stop(
+    name: stop,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ BonjourServiceStopEvent, Unit]
+  ): Unit = js.native
+  /**
+  			 * Asynchronously resolve a Bonjour service from the network.  Must be done before attempting to access the service's socket information, if a remote service.  You cannot resolve a locally published service.
+  			 */
+  def resolve(): Unit = js.native
+  def resolve(timeout: Double): Unit = js.native
+  def resolve(timeout: Double, callback: js.Function2[/* param0 */ Error, /* param1 */ Boolean, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.BonjourService.domain> property.
+  			 * @deprecated Set the value using <Titanium.Network.BonjourService.domain> instead.
   			 */
-  def setDomain(domain: String): Unit
+  def setDomain(domain: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.BonjourService.isLocal> property.
+  			 * @deprecated Set the value using <Titanium.Network.BonjourService.isLocal> instead.
   			 */
-  def setIsLocal(isLocal: Boolean): Unit
+  def setIsLocal(isLocal: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.BonjourService.name> property.
+  			 * @deprecated Set the value using <Titanium.Network.BonjourService.name> instead.
   			 */
-  def setName(name: String): Unit
+  def setName(name: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.BonjourService.socket> property.
+  			 * @deprecated Set the value using <Titanium.Network.BonjourService.socket> instead.
   			 */
-  def setSocket(socket: js.Any): Unit
+  def setSocket(socket: TCP): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.BonjourService.type> property.
+  			 * @deprecated Set the value using <Titanium.Network.BonjourService.type> instead.
   			 */
-  def setType(`type`: String): Unit
+  def setType(`type`: String): Unit = js.native
   /**
-  			 * Halts publication of a service.
+  			 * Asynchronously halts a currently running attempt to publish or resolve a service.
   			 */
-  def stop(): Unit
-}
-
-object BonjourService {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    domain: String,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getDomain: () => String,
-    getIsLocal: () => Boolean,
-    getName: () => String,
-    getSocket: () => js.Any,
-    getType: () => String,
-    isLocal: Boolean,
-    name: String,
-    publish: js.Any => Unit,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    resolve: Double => Unit,
-    setBubbleParent: Boolean => Unit,
-    setDomain: String => Unit,
-    setIsLocal: Boolean => Unit,
-    setName: String => Unit,
-    setSocket: js.Any => Unit,
-    setType: String => Unit,
-    socket: js.Any,
-    stop: () => Unit,
-    `type`: String,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): BonjourService = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDomain = js.Any.fromFunction0(getDomain), getIsLocal = js.Any.fromFunction0(getIsLocal), getName = js.Any.fromFunction0(getName), getSocket = js.Any.fromFunction0(getSocket), getType = js.Any.fromFunction0(getType), isLocal = isLocal.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publish = js.Any.fromFunction1(publish), removeEventListener = js.Any.fromFunction2(removeEventListener), resolve = js.Any.fromFunction1(resolve), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setDomain = js.Any.fromFunction1(setDomain), setIsLocal = js.Any.fromFunction1(setIsLocal), setName = js.Any.fromFunction1(setName), setSocket = js.Any.fromFunction1(setSocket), setType = js.Any.fromFunction1(setType), socket = socket.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BonjourService]
-  }
+  def stop(): Unit = js.native
+  def stop(callback: js.Function2[/* param0 */ Error, /* param1 */ Boolean, Unit]): Unit = js.native
 }
 

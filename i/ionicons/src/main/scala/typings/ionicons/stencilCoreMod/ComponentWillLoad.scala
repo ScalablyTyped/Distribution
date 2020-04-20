@@ -21,7 +21,6 @@ object ComponentWillLoad {
   @scala.inline
   def apply(componentWillLoad: () => js.Promise[Unit] | Unit): ComponentWillLoad = {
     val __obj = js.Dynamic.literal(componentWillLoad = js.Any.fromFunction0(componentWillLoad))
-  
     __obj.asInstanceOf[ComponentWillLoad]
   }
 }

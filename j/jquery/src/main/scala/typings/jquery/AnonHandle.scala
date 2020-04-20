@@ -22,7 +22,6 @@ object AnonHandle {
     handle: ((TriggeredEvent[TTarget, TData, _, _]) with (AnonHandleObj[TTarget, TData]), /* repeated */ TData) => Unit
   ): AnonHandle[TTarget, TData] = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
-  
     __obj.asInstanceOf[AnonHandle[TTarget, TData]]
   }
 }

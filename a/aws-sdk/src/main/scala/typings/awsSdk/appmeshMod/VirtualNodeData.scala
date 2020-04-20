@@ -38,7 +38,6 @@ object VirtualNodeData {
     virtualNodeName: ResourceName
   ): VirtualNodeData = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], virtualNodeName = virtualNodeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualNodeData]
   }
 }

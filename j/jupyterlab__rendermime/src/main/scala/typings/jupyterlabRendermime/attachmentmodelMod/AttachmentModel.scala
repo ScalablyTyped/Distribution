@@ -52,12 +52,12 @@ class AttachmentModel protected () extends IAttachmentModel {
     * A signal emitted when the attachment model changes.
     */
   @JSName("changed")
-  def changed_MAttachmentModel(): ISignal[this.type, Unit] = js.native
+  def changed_MAttachmentModel: ISignal[this.type, Unit] = js.native
   /**
     * The data associated with the model.
     */
   @JSName("data")
-  def data_MAttachmentModel(): ReadonlyPartialJSONObject = js.native
+  def data_MAttachmentModel: ReadonlyPartialJSONObject = js.native
   /**
     * Dispose of the resources used by the attachment model.
     */
@@ -67,7 +67,7 @@ class AttachmentModel protected () extends IAttachmentModel {
     * The metadata associated with the model.
     */
   @JSName("metadata")
-  def metadata_MAttachmentModel(): ReadonlyPartialJSONObject = js.native
+  def metadata_MAttachmentModel: ReadonlyPartialJSONObject = js.native
   /**
     * Set the data associated with the model.
     *

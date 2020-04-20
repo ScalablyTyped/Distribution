@@ -1,7 +1,7 @@
 package typings.node.childProcessMod
 
 import typings.node.BufferEncoding
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.Signals
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -18,7 +18,7 @@ object ExecSyncOptionsWithStringEncoding {
   def apply(
     encoding: BufferEncoding,
     cwd: String = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     input: String | Uint8Array = null,
     killSignal: Signals | Double = null,

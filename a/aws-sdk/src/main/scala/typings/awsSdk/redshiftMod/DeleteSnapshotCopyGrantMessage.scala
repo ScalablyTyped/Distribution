@@ -16,7 +16,6 @@ object DeleteSnapshotCopyGrantMessage {
   @scala.inline
   def apply(SnapshotCopyGrantName: String): DeleteSnapshotCopyGrantMessage = {
     val __obj = js.Dynamic.literal(SnapshotCopyGrantName = SnapshotCopyGrantName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSnapshotCopyGrantMessage]
   }
 }

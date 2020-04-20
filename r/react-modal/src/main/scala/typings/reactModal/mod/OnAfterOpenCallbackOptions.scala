@@ -18,7 +18,6 @@ object OnAfterOpenCallbackOptions {
   @scala.inline
   def apply(contentEl: HTMLDivElement, overlayEl: Element): OnAfterOpenCallbackOptions = {
     val __obj = js.Dynamic.literal(contentEl = contentEl.asInstanceOf[js.Any], overlayEl = overlayEl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnAfterOpenCallbackOptions]
   }
 }

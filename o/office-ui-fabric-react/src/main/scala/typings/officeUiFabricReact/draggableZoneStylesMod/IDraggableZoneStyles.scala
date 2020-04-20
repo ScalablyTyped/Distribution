@@ -12,7 +12,6 @@ object IDraggableZoneStyles {
   @scala.inline
   def apply(root: String): IDraggableZoneStyles = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDraggableZoneStyles]
   }
 }

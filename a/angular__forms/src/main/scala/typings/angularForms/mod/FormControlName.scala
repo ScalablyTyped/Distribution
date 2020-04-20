@@ -45,7 +45,7 @@ class FormControlName protected ()
     * @description
     * The top-level directive for this group if present, otherwise null.
     */
-  def formDirective(): js.Any = js.native
+  def formDirective: js.Any = js.native
   /**
     * @description
     * Triggers a warning that this input should not be used with reactive forms.

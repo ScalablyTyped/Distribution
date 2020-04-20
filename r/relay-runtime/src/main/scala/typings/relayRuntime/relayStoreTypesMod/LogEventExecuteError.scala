@@ -16,7 +16,6 @@ object LogEventExecuteError {
   @scala.inline
   def apply(error: Error, name: executeDoterror, transactionID: Double): LogEventExecuteError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogEventExecuteError]
   }
 }

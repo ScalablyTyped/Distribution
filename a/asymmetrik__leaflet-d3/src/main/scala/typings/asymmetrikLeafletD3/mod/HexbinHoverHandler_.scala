@@ -13,7 +13,6 @@ object HexbinHoverHandler_ {
   @scala.inline
   def apply(mouseout: (HexbinLayer_, js.Any) => Unit, mouseover: (HexbinLayer_, js.Any) => Unit): HexbinHoverHandler_ = {
     val __obj = js.Dynamic.literal(mouseout = js.Any.fromFunction2(mouseout), mouseover = js.Any.fromFunction2(mouseover))
-  
     __obj.asInstanceOf[HexbinHoverHandler_]
   }
 }

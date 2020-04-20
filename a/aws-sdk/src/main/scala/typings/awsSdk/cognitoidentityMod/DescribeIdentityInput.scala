@@ -16,7 +16,6 @@ object DescribeIdentityInput {
   @scala.inline
   def apply(IdentityId: IdentityId): DescribeIdentityInput = {
     val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeIdentityInput]
   }
 }

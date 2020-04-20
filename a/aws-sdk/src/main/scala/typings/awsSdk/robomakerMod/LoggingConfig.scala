@@ -16,7 +16,6 @@ object LoggingConfig {
   @scala.inline
   def apply(recordAllRosTopics: BoxedBoolean): LoggingConfig = {
     val __obj = js.Dynamic.literal(recordAllRosTopics = recordAllRosTopics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoggingConfig]
   }
 }

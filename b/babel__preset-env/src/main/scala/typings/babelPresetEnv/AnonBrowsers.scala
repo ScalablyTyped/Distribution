@@ -13,7 +13,6 @@ object AnonBrowsers {
   @scala.inline
   def apply(browsers: String | js.Array[String]): AnonBrowsers = {
     val __obj = js.Dynamic.literal(browsers = browsers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBrowsers]
   }
 }

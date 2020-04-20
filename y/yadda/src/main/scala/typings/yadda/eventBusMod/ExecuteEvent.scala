@@ -14,7 +14,6 @@ object ExecuteEvent {
   @scala.inline
   def apply(data: ExecuteEventData, name: __ON_EXECUTE__): ExecuteEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecuteEvent]
   }
 }

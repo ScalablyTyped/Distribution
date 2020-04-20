@@ -24,7 +24,6 @@ object Instance {
   @scala.inline
   def apply(rerender: ReactElement => Unit, unmount: () => Unit, waitUntilExit: () => js.Promise[Unit]): Instance = {
     val __obj = js.Dynamic.literal(rerender = js.Any.fromFunction1(rerender), unmount = js.Any.fromFunction0(unmount), waitUntilExit = js.Any.fromFunction0(waitUntilExit))
-  
     __obj.asInstanceOf[Instance]
   }
 }

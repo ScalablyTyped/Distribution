@@ -18,7 +18,6 @@ object RawDraftInlineStyleRange {
   @scala.inline
   def apply(length: Double, offset: Double, style: DraftInlineStyleType): RawDraftInlineStyleRange = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RawDraftInlineStyleRange]
   }
 }

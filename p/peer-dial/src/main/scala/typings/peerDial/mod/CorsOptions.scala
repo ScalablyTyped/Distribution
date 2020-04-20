@@ -14,7 +14,6 @@ object CorsOptions {
   @scala.inline
   def apply(exposedHeaders: js.Array[String], methods: js.Array[String], origin: Boolean): CorsOptions = {
     val __obj = js.Dynamic.literal(exposedHeaders = exposedHeaders.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CorsOptions]
   }
 }

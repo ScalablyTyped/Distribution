@@ -16,7 +16,6 @@ object CreateResourceGroupRequest {
   @scala.inline
   def apply(resourceGroupTags: ResourceGroupTags): CreateResourceGroupRequest = {
     val __obj = js.Dynamic.literal(resourceGroupTags = resourceGroupTags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateResourceGroupRequest]
   }
 }

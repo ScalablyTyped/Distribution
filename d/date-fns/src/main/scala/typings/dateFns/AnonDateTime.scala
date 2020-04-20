@@ -18,7 +18,6 @@ object AnonDateTime {
     time: /* repeated */ js.Any => js.Any
   ): AnonDateTime = {
     val __obj = js.Dynamic.literal(date = js.Any.fromFunction1(date), dateTime = js.Any.fromFunction1(dateTime), time = js.Any.fromFunction1(time))
-  
     __obj.asInstanceOf[AnonDateTime]
   }
 }

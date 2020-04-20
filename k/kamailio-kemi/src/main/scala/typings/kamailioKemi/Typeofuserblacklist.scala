@@ -24,7 +24,6 @@ object Typeofuserblacklist {
     check_user_whitelist_table: (String, String, String, String) => Double
   ): Typeofuserblacklist = {
     val __obj = js.Dynamic.literal(check_user_blacklist = js.Any.fromFunction2(check_user_blacklist), check_user_blacklist_number = js.Any.fromFunction3(check_user_blacklist_number), check_user_blacklist_table = js.Any.fromFunction4(check_user_blacklist_table), check_user_whitelist = js.Any.fromFunction2(check_user_whitelist), check_user_whitelist_number = js.Any.fromFunction3(check_user_whitelist_number), check_user_whitelist_table = js.Any.fromFunction4(check_user_whitelist_table))
-  
     __obj.asInstanceOf[Typeofuserblacklist]
   }
 }

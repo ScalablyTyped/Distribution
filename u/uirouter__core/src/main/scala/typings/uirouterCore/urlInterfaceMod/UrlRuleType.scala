@@ -15,16 +15,14 @@ trait UrlRuleType extends js.Object
 
 object UrlRuleType {
   @scala.inline
-  def OTHER: typings.uirouterCore.uirouterCoreStrings.OTHER = this.cast("OTHER")
+  def OTHER: typings.uirouterCore.uirouterCoreStrings.OTHER = "OTHER".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.OTHER]
   @scala.inline
-  def RAW: typings.uirouterCore.uirouterCoreStrings.RAW = this.cast("RAW")
+  def RAW: typings.uirouterCore.uirouterCoreStrings.RAW = "RAW".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.RAW]
   @scala.inline
-  def REGEXP: typings.uirouterCore.uirouterCoreStrings.REGEXP = this.cast("REGEXP")
+  def REGEXP: typings.uirouterCore.uirouterCoreStrings.REGEXP = "REGEXP".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.REGEXP]
   @scala.inline
-  def STATE: typings.uirouterCore.uirouterCoreStrings.STATE = this.cast("STATE")
+  def STATE: typings.uirouterCore.uirouterCoreStrings.STATE = "STATE".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.STATE]
   @scala.inline
-  def URLMATCHER: typings.uirouterCore.uirouterCoreStrings.URLMATCHER = this.cast("URLMATCHER")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def URLMATCHER: typings.uirouterCore.uirouterCoreStrings.URLMATCHER = "URLMATCHER".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.URLMATCHER]
 }
 

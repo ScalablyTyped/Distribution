@@ -18,14 +18,12 @@ trait styleBorderCollapse extends js.Object
 
 object styleBorderCollapse {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleBorderCollapseCollapse: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleBorderCollapseCollapse: `2` = this.cast(2)
+  def styleBorderCollapseNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleBorderCollapseNotSet: `0` = this.cast(0)
+  def styleBorderCollapseSeparate: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleBorderCollapseSeparate: `1` = this.cast(1)
-  @scala.inline
-  def styleBorderCollapse_Max: `2147483647` = this.cast(2147483647)
+  def styleBorderCollapse_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

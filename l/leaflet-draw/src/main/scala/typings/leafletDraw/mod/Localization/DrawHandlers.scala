@@ -31,7 +31,6 @@ object DrawHandlers {
     simpleshape: AnonTooltipAnonEnd
   ): DrawHandlers = {
     val __obj = js.Dynamic.literal(circle = circle.asInstanceOf[js.Any], circlemarker = circlemarker.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], rectangle = rectangle.asInstanceOf[js.Any], simpleshape = simpleshape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DrawHandlers]
   }
 }

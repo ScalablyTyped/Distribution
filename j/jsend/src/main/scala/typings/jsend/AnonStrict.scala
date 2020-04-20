@@ -12,7 +12,6 @@ object AnonStrict {
   @scala.inline
   def apply(strict: Boolean): AnonStrict = {
     val __obj = js.Dynamic.literal(strict = strict.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStrict]
   }
 }

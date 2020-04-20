@@ -12,7 +12,6 @@ object AnonData {
   @scala.inline
   def apply[T /* <: js.Object */](data: js.Array[T]): AnonData[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonData[T]]
   }
 }

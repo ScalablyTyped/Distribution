@@ -13,7 +13,6 @@ object PickImplprogress {
   @scala.inline
   def apply(progress: String): PickImplprogress = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplprogress]
   }
 }

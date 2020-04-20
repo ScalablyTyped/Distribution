@@ -12,10 +12,8 @@ trait Gender extends js.Object
 
 object Gender {
   @scala.inline
-  def Female: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.Female = this.cast("Female")
+  def Female: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.Female = "Female".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.Female]
   @scala.inline
-  def Male: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.Male = this.cast("Male")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Male: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.Male = "Male".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.Male]
 }
 

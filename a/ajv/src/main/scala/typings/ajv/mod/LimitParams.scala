@@ -12,7 +12,6 @@ object LimitParams {
   @scala.inline
   def apply(limit: Double): LimitParams = {
     val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LimitParams]
   }
 }

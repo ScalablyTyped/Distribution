@@ -38,7 +38,6 @@ object ICollaborator {
   @scala.inline
   def apply(color: String, displayName: String, sessionId: String, shortName: String, userId: String): ICollaborator = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICollaborator]
   }
 }

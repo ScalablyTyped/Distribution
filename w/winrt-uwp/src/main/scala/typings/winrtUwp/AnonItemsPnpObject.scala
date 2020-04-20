@@ -14,7 +14,6 @@ object AnonItemsPnpObject {
   @scala.inline
   def apply(items: PnpObject, returnValue: Double): AnonItemsPnpObject = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsPnpObject]
   }
 }

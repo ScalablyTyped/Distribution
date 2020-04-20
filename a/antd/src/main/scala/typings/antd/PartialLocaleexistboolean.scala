@@ -16,6 +16,7 @@ trait PartialLocaleexistboolean extends js.Object {
   var Calendar: js.UndefOr[js.Object] = js.undefined
   var DatePicker: js.UndefOr[PickerLocale] = js.undefined
   var Empty: js.UndefOr[TransferLocale] = js.undefined
+  var Form: js.UndefOr[AnonDefaultValidateMessages] = js.undefined
   var Icon: js.UndefOr[js.Object] = js.undefined
   var Modal: js.UndefOr[ModalLocale] = js.undefined
   var PageHeader: js.UndefOr[js.Object] = js.undefined
@@ -38,6 +39,7 @@ object PartialLocaleexistboolean {
     Calendar: js.Object = null,
     DatePicker: PickerLocale = null,
     Empty: TransferLocale = null,
+    Form: AnonDefaultValidateMessages = null,
     Icon: js.Object = null,
     Modal: ModalLocale = null,
     PageHeader: js.Object = null,
@@ -57,6 +59,7 @@ object PartialLocaleexistboolean {
     if (Calendar != null) __obj.updateDynamic("Calendar")(Calendar.asInstanceOf[js.Any])
     if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker.asInstanceOf[js.Any])
     if (Empty != null) __obj.updateDynamic("Empty")(Empty.asInstanceOf[js.Any])
+    if (Form != null) __obj.updateDynamic("Form")(Form.asInstanceOf[js.Any])
     if (Icon != null) __obj.updateDynamic("Icon")(Icon.asInstanceOf[js.Any])
     if (Modal != null) __obj.updateDynamic("Modal")(Modal.asInstanceOf[js.Any])
     if (PageHeader != null) __obj.updateDynamic("PageHeader")(PageHeader.asInstanceOf[js.Any])

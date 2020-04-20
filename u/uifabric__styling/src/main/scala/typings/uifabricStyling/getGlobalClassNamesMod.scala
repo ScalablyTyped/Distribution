@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 object getGlobalClassNamesMod extends js.Object {
   def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): Partial[GlobalClassNames[T]] = js.native
   def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): Partial[GlobalClassNames[T]] = js.native
-  type GlobalClassNames[IStyles] = Record[String, String]
+  type GlobalClassNames[IStyles] = Record[/* keyof IStyles */ String, String]
 }
 

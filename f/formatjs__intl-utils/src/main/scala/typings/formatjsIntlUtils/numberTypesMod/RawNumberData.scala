@@ -24,7 +24,6 @@ object RawNumberData {
     symbols: Record[NumberingSystem, SymbolsData]
   ): RawNumberData = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], nu = nu.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RawNumberData]
   }
 }

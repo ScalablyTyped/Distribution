@@ -17,7 +17,6 @@ object UriHandler {
   @scala.inline
   def apply(handleUri: Uri => ProviderResult[Unit]): UriHandler = {
     val __obj = js.Dynamic.literal(handleUri = js.Any.fromFunction1(handleUri))
-  
     __obj.asInstanceOf[UriHandler]
   }
 }

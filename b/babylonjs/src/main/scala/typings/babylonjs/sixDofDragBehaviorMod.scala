@@ -62,7 +62,7 @@ object sixDofDragBehaviorMod extends js.Object {
     /**
       * In the case of multiplea active cameras, the cameraToUseForPointers should be used if set instead of active camera
       */
-    /* private */ def _pointerCamera(): js.Any = js.native
+    /* private */ def _pointerCamera: js.Any = js.native
     /**
       * Called when the behavior is attached to a target
       * @param target defines the target where the behavior is attached to
@@ -83,7 +83,7 @@ object sixDofDragBehaviorMod extends js.Object {
       *  The name of the behavior
       */
     @JSName("name")
-    def name_MSixDofDragBehavior(): String = js.native
+    def name_MSixDofDragBehavior: String = js.native
   }
   
   /* static members */

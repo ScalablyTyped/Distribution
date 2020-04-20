@@ -16,7 +16,6 @@ object DeleteBucketTaggingRequest {
   @scala.inline
   def apply(Bucket: BucketName): DeleteBucketTaggingRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBucketTaggingRequest]
   }
 }

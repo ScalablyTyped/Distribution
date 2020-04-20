@@ -18,14 +18,12 @@ trait styleMsScrollChaining extends js.Object
 
 object styleMsScrollChaining {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleMsScrollChainingChained: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleMsScrollChainingChained: `2` = this.cast(2)
+  def styleMsScrollChainingNone: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleMsScrollChainingNone: `1` = this.cast(1)
+  def styleMsScrollChainingNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleMsScrollChainingNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleMsScrollChaining_Max: `2147483647` = this.cast(2147483647)
+  def styleMsScrollChaining_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

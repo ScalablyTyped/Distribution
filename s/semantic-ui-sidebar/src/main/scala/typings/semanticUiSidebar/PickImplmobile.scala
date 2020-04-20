@@ -14,7 +14,6 @@ object PickImplmobile {
   @scala.inline
   def apply(mobile: MobileSettings): PickImplmobile = {
     val __obj = js.Dynamic.literal(mobile = mobile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmobile]
   }
 }

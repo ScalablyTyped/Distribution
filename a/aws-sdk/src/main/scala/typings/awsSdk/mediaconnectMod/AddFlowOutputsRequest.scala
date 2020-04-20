@@ -20,7 +20,6 @@ object AddFlowOutputsRequest {
   @scala.inline
   def apply(FlowArn: string, Outputs: listOfAddOutputRequest): AddFlowOutputsRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddFlowOutputsRequest]
   }
 }

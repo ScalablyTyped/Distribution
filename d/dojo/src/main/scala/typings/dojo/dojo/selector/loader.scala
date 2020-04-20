@@ -25,7 +25,6 @@ object loader {
   @scala.inline
   def apply(load: (js.Any, js.Any, js.Any, js.Any) => js.Any): loader = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction4(load))
-  
     __obj.asInstanceOf[loader]
   }
 }

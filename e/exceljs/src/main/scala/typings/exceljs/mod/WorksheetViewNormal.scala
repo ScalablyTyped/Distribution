@@ -22,7 +22,6 @@ object WorksheetViewNormal {
   @scala.inline
   def apply(state: normal, style: pageBreakPreview | pageLayout): WorksheetViewNormal = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorksheetViewNormal]
   }
 }

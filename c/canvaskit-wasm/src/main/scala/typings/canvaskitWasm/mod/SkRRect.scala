@@ -30,7 +30,6 @@ object SkRRect {
     ry4: Double
   ): SkRRect = {
     val __obj = js.Dynamic.literal(rect = rect.asInstanceOf[js.Any], rx1 = rx1.asInstanceOf[js.Any], rx2 = rx2.asInstanceOf[js.Any], rx3 = rx3.asInstanceOf[js.Any], rx4 = rx4.asInstanceOf[js.Any], ry1 = ry1.asInstanceOf[js.Any], ry2 = ry2.asInstanceOf[js.Any], ry3 = ry3.asInstanceOf[js.Any], ry4 = ry4.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkRRect]
   }
 }

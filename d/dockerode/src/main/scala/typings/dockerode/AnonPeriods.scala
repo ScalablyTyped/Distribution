@@ -14,7 +14,6 @@ object AnonPeriods {
   @scala.inline
   def apply(periods: Double, throttled_periods: Double, throttled_time: Double): AnonPeriods = {
     val __obj = js.Dynamic.literal(periods = periods.asInstanceOf[js.Any], throttled_periods = throttled_periods.asInstanceOf[js.Any], throttled_time = throttled_time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPeriods]
   }
 }

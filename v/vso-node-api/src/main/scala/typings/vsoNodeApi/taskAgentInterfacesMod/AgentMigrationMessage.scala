@@ -12,7 +12,6 @@ object AgentMigrationMessage {
   @scala.inline
   def apply(accessToken: String): AgentMigrationMessage = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentMigrationMessage]
   }
 }

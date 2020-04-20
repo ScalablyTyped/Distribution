@@ -14,7 +14,6 @@ object AnonProtocol {
   @scala.inline
   def apply(protocol: String, rest: String, slashes: Boolean): AnonProtocol = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any], slashes = slashes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProtocol]
   }
 }

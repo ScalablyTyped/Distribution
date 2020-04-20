@@ -12,7 +12,6 @@ object AnonToJSON {
   @scala.inline
   def apply(toJSON: () => js.Any): AnonToJSON = {
     val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[AnonToJSON]
   }
 }

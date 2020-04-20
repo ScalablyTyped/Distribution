@@ -16,7 +16,6 @@ object ExportProjectRequest {
   @scala.inline
   def apply(projectId: ProjectId): ExportProjectRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportProjectRequest]
   }
 }

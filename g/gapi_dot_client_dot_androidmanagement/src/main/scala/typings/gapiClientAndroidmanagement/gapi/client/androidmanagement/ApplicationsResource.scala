@@ -15,7 +15,6 @@ object ApplicationsResource {
   @scala.inline
   def apply(get: AnonAccesstoken => Request_[Application]): ApplicationsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[ApplicationsResource]
   }
 }

@@ -14,12 +14,10 @@ trait Step extends js.Object
 
 object Step {
   @scala.inline
-  def build: typings.awsSdkTypes.awsSdkTypesStrings.build = this.cast("build")
+  def build: typings.awsSdkTypes.awsSdkTypesStrings.build = "build".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.build]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def initialize: typings.awsSdkTypes.awsSdkTypesStrings.initialize = "initialize".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.initialize]
   @scala.inline
-  def initialize: typings.awsSdkTypes.awsSdkTypesStrings.initialize = this.cast("initialize")
-  @scala.inline
-  def serialize: typings.awsSdkTypes.awsSdkTypesStrings.serialize = this.cast("serialize")
+  def serialize: typings.awsSdkTypes.awsSdkTypesStrings.serialize = "serialize".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.serialize]
 }
 

@@ -23,7 +23,6 @@ object PrerenderManifest {
     version: `2`
   ): PrerenderManifest = {
     val __obj = js.Dynamic.literal(dynamicRoutes = dynamicRoutes.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrerenderManifest]
   }
 }

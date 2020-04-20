@@ -20,7 +20,6 @@ object StartProjectVersionRequest {
   @scala.inline
   def apply(MinInferenceUnits: InferenceUnits, ProjectVersionArn: ProjectVersionArn): StartProjectVersionRequest = {
     val __obj = js.Dynamic.literal(MinInferenceUnits = MinInferenceUnits.asInstanceOf[js.Any], ProjectVersionArn = ProjectVersionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartProjectVersionRequest]
   }
 }

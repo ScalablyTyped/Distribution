@@ -16,7 +16,6 @@ object GlobalErrorHandlers {
     unhandledRejection: js.Array[js.Function2[/* exception */ Exception, /* promise */ js.Promise[_], Unit]]
   ): GlobalErrorHandlers = {
     val __obj = js.Dynamic.literal(uncaughtException = uncaughtException.asInstanceOf[js.Any], unhandledRejection = unhandledRejection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlobalErrorHandlers]
   }
 }

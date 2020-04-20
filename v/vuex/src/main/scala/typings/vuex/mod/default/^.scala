@@ -1,6 +1,7 @@
 package typings.vuex.mod.default
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.vuex.helpersMod.ActionMethod
 import typings.vuex.helpersMod.Computed
@@ -48,87 +49,87 @@ object ^ extends js.Object {
   def install(Vue: /* import warning: importer.ImportType#apply Failed type conversion: typeof _Vue */ js.Any): Unit = js.native
   def mapActions[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   def mapActions[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   def mapActions[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   def mapActions[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   @JSName("mapActions")
   def mapActions_Map_RecordStringThisFunction2CustomVueDispatchWildcardWildcard[Map /* <: Record[
     String, 
     js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ _, _]
   ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.^  with Map = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[Map] = js.native
   @JSName("mapActions")
   def mapActions_Map_RecordStringThisFunction2CustomVueDispatchWildcardWildcard[Map /* <: Record[
     String, 
     js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ _, _]
   ] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.^  with Map = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[Map] = js.native
   def mapGetters[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   def mapGetters[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   def mapGetters[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   def mapGetters[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
-  def mapMutations[Map /* <: Record[
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
+  def mapMutations[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
+  def mapMutations[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
+  def mapMutations[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
+  def mapMutations[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
+  @JSName("mapMutations")
+  def mapMutations_Map_RecordStringThisFunction2CustomVueCommitWildcardWildcard[Map /* <: Record[
     String, 
     js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ _, _]
   ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.^  with Map = js.native
-  def mapMutations[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
-  def mapMutations[Map /* <: Record[
+    */ typings.vuex.vuexStrings.^  with TopLevel[Map] = js.native
+  @JSName("mapMutations")
+  def mapMutations_Map_RecordStringThisFunction2CustomVueCommitWildcardWildcard[Map /* <: Record[
     String, 
     js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ _, _]
   ] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.^  with Map = js.native
-  def mapMutations[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
-  @JSName("mapMutations")
-  def mapMutations_Map_RecordStringString[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
-  @JSName("mapMutations")
-  def mapMutations_Map_RecordStringString[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[Map] = js.native
   def mapState[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   def mapState[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   def mapState[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   def mapState[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-    */ typings.vuex.vuexStrings.^  with js.Any = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[js.Any] = js.native
   @JSName("mapState")
   def mapState_SMap_RecordStringThisFunction2CustomVueSWildcardWildcard[S, Map /* <: Record[String, js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ _, _]] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>}
-    */ typings.vuex.vuexStrings.^  with Map = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[Map] = js.native
   @JSName("mapState")
   def mapState_SMap_RecordStringThisFunction2CustomVueSWildcardWildcard[S, Map /* <: Record[String, js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ _, _]] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>}
-    */ typings.vuex.vuexStrings.^  with Map = js.native
+    */ typings.vuex.vuexStrings.^  with TopLevel[Map] = js.native
 }
 

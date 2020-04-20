@@ -35,7 +35,6 @@ object ObjectConstructor {
     setPrototypeOf: (js.Any, js.Any) => js.Any
   ): ObjectConstructor = {
     val __obj = js.Dynamic.literal(assign = js.Any.fromFunction2(assign), is = js.Any.fromFunction2(is), setPrototypeOf = js.Any.fromFunction2(setPrototypeOf))
-  
     __obj.asInstanceOf[ObjectConstructor]
   }
 }

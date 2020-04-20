@@ -28,7 +28,6 @@ object AnonScaling {
     tooltipLabel: String
   ): AnonScaling = {
     val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any], tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], tooltipLabel = tooltipLabel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScaling]
   }
 }

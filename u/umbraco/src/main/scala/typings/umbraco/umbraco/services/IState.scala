@@ -53,7 +53,6 @@ object IState {
   @scala.inline
   def apply(getCurrent: () => js.Any, reset: () => Unit, set: js.Object => Unit): IState = {
     val __obj = js.Dynamic.literal(getCurrent = js.Any.fromFunction0(getCurrent), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[IState]
   }
 }

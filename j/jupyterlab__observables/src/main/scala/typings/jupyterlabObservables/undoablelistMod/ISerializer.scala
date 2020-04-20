@@ -20,7 +20,6 @@ object ISerializer {
   @scala.inline
   def apply[T](fromJSON: JSONValue => T, toJSON: T => JSONValue): ISerializer[T] = {
     val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON), toJSON = js.Any.fromFunction1(toJSON))
-  
     __obj.asInstanceOf[ISerializer[T]]
   }
 }

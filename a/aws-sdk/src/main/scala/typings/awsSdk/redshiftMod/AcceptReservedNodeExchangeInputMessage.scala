@@ -20,7 +20,6 @@ object AcceptReservedNodeExchangeInputMessage {
   @scala.inline
   def apply(ReservedNodeId: String, TargetReservedNodeOfferingId: String): AcceptReservedNodeExchangeInputMessage = {
     val __obj = js.Dynamic.literal(ReservedNodeId = ReservedNodeId.asInstanceOf[js.Any], TargetReservedNodeOfferingId = TargetReservedNodeOfferingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AcceptReservedNodeExchangeInputMessage]
   }
 }

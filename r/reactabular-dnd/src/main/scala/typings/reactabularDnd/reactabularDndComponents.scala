@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactabularDndComponents extends reactabularDndProps {
   @scala.inline
-  def Header: ComponentType[js.Any] = typings.reactabularDnd.mod.Header.asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def Header: ComponentType[js.Any] = typings.reactabularDnd.mod.Header.asInstanceOf[ComponentType[js.Any]]
 }
 

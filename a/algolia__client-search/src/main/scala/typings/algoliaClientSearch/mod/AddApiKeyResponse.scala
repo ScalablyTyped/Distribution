@@ -19,7 +19,6 @@ object AddApiKeyResponse {
   @scala.inline
   def apply(createdAt: String, key: String): AddApiKeyResponse = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddApiKeyResponse]
   }
 }

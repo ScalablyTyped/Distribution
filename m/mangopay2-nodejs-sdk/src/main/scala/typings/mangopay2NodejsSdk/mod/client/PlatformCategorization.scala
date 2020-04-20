@@ -13,7 +13,6 @@ object PlatformCategorization {
   @scala.inline
   def apply(BusinessType: BusinessType, Sector: Sector): PlatformCategorization = {
     val __obj = js.Dynamic.literal(BusinessType = BusinessType.asInstanceOf[js.Any], Sector = Sector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlatformCategorization]
   }
 }

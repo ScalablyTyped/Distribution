@@ -16,7 +16,6 @@ object DescribeBillingGroupRequest {
   @scala.inline
   def apply(billingGroupName: BillingGroupName): DescribeBillingGroupRequest = {
     val __obj = js.Dynamic.literal(billingGroupName = billingGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeBillingGroupRequest]
   }
 }

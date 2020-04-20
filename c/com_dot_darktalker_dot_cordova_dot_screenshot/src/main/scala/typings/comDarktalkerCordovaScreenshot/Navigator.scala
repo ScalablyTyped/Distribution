@@ -13,7 +13,6 @@ object Navigator {
   @scala.inline
   def apply(screenshot: Plugin): Navigator = {
     val __obj = js.Dynamic.literal(screenshot = screenshot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Navigator]
   }
 }

@@ -20,7 +20,6 @@ object CancelJobRequest {
   @scala.inline
   def apply(jobId: String, reason: String): CancelJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelJobRequest]
   }
 }

@@ -19,7 +19,6 @@ object MetadataItem {
   @scala.inline
   def apply(count: Double, name: String): MetadataItem = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetadataItem]
   }
 }

@@ -17,20 +17,18 @@ trait MediaType extends js.Object
 
 object MediaType {
   @scala.inline
-  def AUDIO: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.AUDIO = this.cast("AUDIO")
+  def AUDIO: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.AUDIO = "AUDIO".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.AUDIO]
   @scala.inline
-  def DYNAMIC_IMAGE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.DYNAMIC_IMAGE = this.cast("DYNAMIC_IMAGE")
+  def DYNAMIC_IMAGE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.DYNAMIC_IMAGE = "DYNAMIC_IMAGE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.DYNAMIC_IMAGE]
   @scala.inline
-  def ICON: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ICON = this.cast("ICON")
+  def ICON: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ICON = "ICON".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ICON]
   @scala.inline
-  def IMAGE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.IMAGE = this.cast("IMAGE")
+  def IMAGE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.IMAGE = "IMAGE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.IMAGE]
   @scala.inline
-  def MEDIA_BUNDLE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MEDIA_BUNDLE = this.cast("MEDIA_BUNDLE")
+  def MEDIA_BUNDLE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MEDIA_BUNDLE = "MEDIA_BUNDLE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MEDIA_BUNDLE]
   @scala.inline
-  def STANDARD_ICON: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.STANDARD_ICON = this.cast("STANDARD_ICON")
+  def STANDARD_ICON: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.STANDARD_ICON = "STANDARD_ICON".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.STANDARD_ICON]
   @scala.inline
-  def VIDEO: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.VIDEO = this.cast("VIDEO")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VIDEO: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.VIDEO = "VIDEO".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.VIDEO]
 }
 

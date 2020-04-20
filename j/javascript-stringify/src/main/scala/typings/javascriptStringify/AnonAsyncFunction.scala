@@ -15,7 +15,6 @@ object AnonAsyncFunction {
   @scala.inline
   def apply(AsyncFunction: String, AsyncGeneratorFunction: String, Function: String, GeneratorFunction: String): AnonAsyncFunction = {
     val __obj = js.Dynamic.literal(AsyncFunction = AsyncFunction.asInstanceOf[js.Any], AsyncGeneratorFunction = AsyncGeneratorFunction.asInstanceOf[js.Any], Function = Function.asInstanceOf[js.Any], GeneratorFunction = GeneratorFunction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAsyncFunction]
   }
 }

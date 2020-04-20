@@ -16,7 +16,6 @@ object DescribePortfolioShareStatusInput {
   @scala.inline
   def apply(PortfolioShareToken: Id): DescribePortfolioShareStatusInput = {
     val __obj = js.Dynamic.literal(PortfolioShareToken = PortfolioShareToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePortfolioShareStatusInput]
   }
 }

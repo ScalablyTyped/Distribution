@@ -24,7 +24,6 @@ object RegexMatchTuple {
   @scala.inline
   def apply(FieldToMatch: FieldToMatch, RegexPatternSetId: ResourceId, TextTransformation: TextTransformation): RegexMatchTuple = {
     val __obj = js.Dynamic.literal(FieldToMatch = FieldToMatch.asInstanceOf[js.Any], RegexPatternSetId = RegexPatternSetId.asInstanceOf[js.Any], TextTransformation = TextTransformation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegexMatchTuple]
   }
 }

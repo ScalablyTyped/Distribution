@@ -31,7 +31,6 @@ object BootstrapUploadControlEventMap {
     validationErrorOccurred: UploadControlValidationErrorOccurredEventArgs
   ): BootstrapUploadControlEventMap = {
     val __obj = js.Dynamic.literal(dropZoneEnter = dropZoneEnter.asInstanceOf[js.Any], dropZoneLeave = dropZoneLeave.asInstanceOf[js.Any], fileInputCountChanged = fileInputCountChanged.asInstanceOf[js.Any], fileUploadComplete = fileUploadComplete.asInstanceOf[js.Any], filesUploadComplete = filesUploadComplete.asInstanceOf[js.Any], filesUploadStart = filesUploadStart.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], textChanged = textChanged.asInstanceOf[js.Any], uploadingProgressChanged = uploadingProgressChanged.asInstanceOf[js.Any], validationErrorOccurred = validationErrorOccurred.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapUploadControlEventMap]
   }
 }

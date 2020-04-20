@@ -19,7 +19,7 @@ object vertexOutputBlockMod extends js.Object {
     /**
       * Gets the vector input component
       */
-    def vector(): NodeMaterialConnectionPoint = js.native
+    def vector: NodeMaterialConnectionPoint = js.native
   }
   
 }

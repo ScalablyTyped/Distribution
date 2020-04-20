@@ -16,7 +16,6 @@ object RequireModule {
   @scala.inline
   def apply(config: () => js.Object): RequireModule = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction0(config))
-  
     __obj.asInstanceOf[RequireModule]
   }
 }

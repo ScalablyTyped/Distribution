@@ -12,10 +12,8 @@ trait DirectionsOverview extends js.Object
 
 object DirectionsOverview {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def full: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.full = "full".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.full]
   @scala.inline
-  def full: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.full = this.cast("full")
-  @scala.inline
-  def simplified: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.simplified = this.cast("simplified")
+  def simplified: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.simplified = "simplified".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.simplified]
 }
 

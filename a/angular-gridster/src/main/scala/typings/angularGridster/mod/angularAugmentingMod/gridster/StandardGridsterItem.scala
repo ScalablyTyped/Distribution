@@ -19,7 +19,6 @@ object StandardGridsterItem {
   @scala.inline
   def apply(col: Double, row: Double, sizeX: Double, sizeY: Double): StandardGridsterItem = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], sizeX = sizeX.asInstanceOf[js.Any], sizeY = sizeY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StandardGridsterItem]
   }
 }

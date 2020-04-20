@@ -16,7 +16,6 @@ object FilterOperation {
   @scala.inline
   def apply(ConditionExpression: Expression): FilterOperation = {
     val __obj = js.Dynamic.literal(ConditionExpression = ConditionExpression.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilterOperation]
   }
 }

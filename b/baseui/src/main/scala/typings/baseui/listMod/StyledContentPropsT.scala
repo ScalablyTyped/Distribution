@@ -15,7 +15,6 @@ object StyledContentPropsT {
   @scala.inline
   def apply($mLeft: Boolean, $sublist: Boolean): StyledContentPropsT = {
     val __obj = js.Dynamic.literal($mLeft = $mLeft.asInstanceOf[js.Any], $sublist = $sublist.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StyledContentPropsT]
   }
 }

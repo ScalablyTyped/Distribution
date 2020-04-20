@@ -13,7 +13,6 @@ object AnonOpacityOpacityType {
   @scala.inline
   def apply(opacity: OpacityType): AnonOpacityOpacityType = {
     val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOpacityOpacityType]
   }
 }

@@ -14,7 +14,6 @@ object AnonContentCodingHeaderValue {
   @scala.inline
   def apply(contentCodingHeaderValue: HttpContentCodingHeaderValue, returnValue: Boolean): AnonContentCodingHeaderValue = {
     val __obj = js.Dynamic.literal(contentCodingHeaderValue = contentCodingHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentCodingHeaderValue]
   }
 }

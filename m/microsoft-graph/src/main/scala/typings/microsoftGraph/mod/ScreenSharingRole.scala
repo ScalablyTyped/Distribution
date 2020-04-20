@@ -12,10 +12,8 @@ trait ScreenSharingRole extends js.Object
 
 object ScreenSharingRole {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def sharer: typings.microsoftGraph.microsoftGraphStrings.sharer = "sharer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharer]
   @scala.inline
-  def sharer: typings.microsoftGraph.microsoftGraphStrings.sharer = this.cast("sharer")
-  @scala.inline
-  def viewer: typings.microsoftGraph.microsoftGraphStrings.viewer = this.cast("viewer")
+  def viewer: typings.microsoftGraph.microsoftGraphStrings.viewer = "viewer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.viewer]
 }
 

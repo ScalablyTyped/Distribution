@@ -14,7 +14,6 @@ object AnonShift {
   @scala.inline
   def apply(FieldList: Double, KeyCode: Double, Shift: Double): AnonShift = {
     val __obj = js.Dynamic.literal(FieldList = FieldList.asInstanceOf[js.Any], KeyCode = KeyCode.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShift]
   }
 }

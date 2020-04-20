@@ -51,7 +51,6 @@ object DataLoader {
     prime: (K, V) => DataLoader[K, V]
   ): DataLoader[K, V] = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), clearAll = js.Any.fromFunction0(clearAll), load = js.Any.fromFunction1(load), loadMany = js.Any.fromFunction1(loadMany), prime = js.Any.fromFunction2(prime))
-  
     __obj.asInstanceOf[DataLoader[K, V]]
   }
 }

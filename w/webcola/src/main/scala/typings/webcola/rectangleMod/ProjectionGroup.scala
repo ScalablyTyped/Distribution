@@ -27,7 +27,6 @@ object ProjectionGroup {
     stiffness: Double
   ): ProjectionGroup = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], leaves = leaves.asInstanceOf[js.Any], maxVar = maxVar.asInstanceOf[js.Any], minVar = minVar.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], stiffness = stiffness.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectionGroup]
   }
 }

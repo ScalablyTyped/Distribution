@@ -1,8 +1,12 @@
 package typings.dva
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dva.dvaStrings.`@@routerSlashCALL_HISTORY_METHOD`
 import typings.dva.dvaStrings.`@@routerSlashLOCATION_CHANGE`
+import typings.dva.dvaStrings.history
+import typings.dva.dvaStrings.location
+import typings.dva.dvaStrings.staticContext
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.history.mod.LocationDescriptor
@@ -11,6 +15,8 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
+import typings.react.mod.PropsWithoutRef
+import typings.react.mod.RefAttributes
 import typings.reactRouter.mod.MemoryRouterProps
 import typings.reactRouter.mod.Omit
 import typings.reactRouter.mod.PromptProps
@@ -36,6 +42,8 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
 import typings.redux.mod.Reducer
+import typings.std.HTMLAnchorElement
+import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,16 +60,8 @@ object routerMod extends js.Object {
     extends Component[HashRouterProps, js.Any, js.Any]
   
   @js.native
-  class Link[S] ()
-    extends Component[LinkProps[S], js.Any, js.Any]
-  
-  @js.native
   class MemoryRouter ()
     extends Component[MemoryRouterProps, js.Any, js.Any]
-  
-  @js.native
-  class NavLink[S] ()
-    extends Component[NavLinkProps[S], js.Any, js.Any]
   
   @js.native
   class Prompt ()
@@ -87,46 +87,57 @@ object routerMod extends js.Object {
   class Switch ()
     extends Component[SwitchProps, js.Any, js.Any]
   
+  def Link[S](
+    // TODO: Define this as ...params: Parameters<Link<S>> when only TypeScript >= 3.1 support is needed.
+  props: PropsWithoutRef[LinkProps[S]] with RefAttributes[HTMLAnchorElement]
+  ): ReturnType[typings.reactRouterDom.mod.Link[S]] = js.native
+  def NavLink[S](
+    // TODO: Define this as ...params: Parameters<NavLink<S>> when only TypeScript >= 3.1 support is needed.
+  props: PropsWithoutRef[NavLinkProps[S]] with RefAttributes[HTMLAnchorElement]
+  ): ReturnType[typings.reactRouterDom.mod.NavLink[S]] = js.native
   def generatePath(pattern: String): String = js.native
   def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = js.native
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: String): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String): `match`[Params] | Null = js.native
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = js.native
   def useHistory[HistoryLocationState](): History[HistoryLocationState] = js.native
   def useLocation[S](): Location[S] = js.native
   def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useParams with js.Any */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.dva.dvaStrings.useParams with TopLevel[js.Any] */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ p in keyof Params ]: keyof Params[p] extends undefined? string | undefined : string}
-    */ typings.dva.dvaStrings.useParams with js.Any = js.native
+    */ typings.dva.dvaStrings.useParams with TopLevel[js.Any] = js.native
   def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with js.Any */](): `match`[Params] = js.native
+    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](): `match`[Params] = js.native
   def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with js.Any */](path: String): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: String): `match`[Params] | Null = js.native
   def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with js.Any */](path: js.Array[String]): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: js.Array[String]): `match`[Params] | Null = js.native
   def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with js.Any */](path: RouteProps): `match`[Params] | Null = js.native
-  def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[(Omit[P, String]) with WithRouterProps[C], ComponentState]) with WithRouterStatics[C] = js.native
+    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = js.native
+  def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[
+    (Omit[P, history | location | typings.dva.dvaStrings.`match` | staticContext]) with WithRouterProps[C], 
+    ComponentState
+  ]) with WithRouterStatics[C] = js.native
   @js.native
   object routerRedux extends js.Object {
     @js.native

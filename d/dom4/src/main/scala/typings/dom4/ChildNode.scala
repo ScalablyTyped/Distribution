@@ -36,7 +36,6 @@ object ChildNode {
     replaceWith: /* repeated */ Node | String => Unit
   ): ChildNode = {
     val __obj = js.Dynamic.literal(after = js.Any.fromFunction1(after), before = js.Any.fromFunction1(before), remove = js.Any.fromFunction0(remove), replaceWith = js.Any.fromFunction1(replaceWith))
-  
     __obj.asInstanceOf[ChildNode]
   }
 }

@@ -34,7 +34,6 @@ object TabsOptions {
   @scala.inline
   def apply(duration: Double, onShow: Element => Unit, responsiveThreshold: Double, swipeable: Boolean): TabsOptions = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], onShow = js.Any.fromFunction1(onShow), responsiveThreshold = responsiveThreshold.asInstanceOf[js.Any], swipeable = swipeable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabsOptions]
   }
 }

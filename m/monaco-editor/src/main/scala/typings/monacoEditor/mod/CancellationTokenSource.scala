@@ -11,6 +11,6 @@ class CancellationTokenSource () extends js.Object {
   def cancel(): Unit = js.native
   def dispose(): Unit = js.native
   def dispose(cancel: Boolean): Unit = js.native
-  def token(): CancellationToken = js.native
+  def token: CancellationToken = js.native
 }
 

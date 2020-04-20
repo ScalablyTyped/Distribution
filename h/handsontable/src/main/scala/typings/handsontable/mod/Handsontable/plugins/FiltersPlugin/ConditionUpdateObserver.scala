@@ -32,7 +32,6 @@ object ConditionUpdateObserver {
     updateStatesAtColumn: (Double, js.Object) => Unit
   ): ConditionUpdateObserver = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], columnDataFactory = js.Any.fromFunction1(columnDataFactory), conditionCollection = conditionCollection.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), flush = js.Any.fromFunction0(flush), groupChanges = js.Any.fromFunction0(groupChanges), grouping = grouping.asInstanceOf[js.Any], latestEditedColumnPosition = latestEditedColumnPosition.asInstanceOf[js.Any], latestOrderStack = latestOrderStack.asInstanceOf[js.Any], updateStatesAtColumn = js.Any.fromFunction2(updateStatesAtColumn))
-  
     __obj.asInstanceOf[ConditionUpdateObserver]
   }
 }

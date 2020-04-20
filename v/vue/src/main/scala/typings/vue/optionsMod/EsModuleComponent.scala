@@ -24,7 +24,6 @@ object EsModuleComponent {
     ]
   ): EsModuleComponent = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EsModuleComponent]
   }
 }

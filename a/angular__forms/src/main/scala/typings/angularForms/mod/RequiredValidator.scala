@@ -21,7 +21,7 @@ class RequiredValidator () extends Validator {
     * @description
     * Tracks changes to the required attribute bound to this directive.
     */
-  def required(): Boolean | String = js.native
+  def required: Boolean | String = js.native
   def required(value: String): js.Any = js.native
   def required(value: Boolean): js.Any = js.native
   /**

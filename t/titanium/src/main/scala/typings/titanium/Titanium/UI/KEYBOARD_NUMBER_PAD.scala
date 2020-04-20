@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 /**
 		 * Use a keyboard with a number pad only, with the pad keyboard layout.
+		 * @deprecated Use [Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD](Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD) instead.
 		 */
 @JSGlobal("Titanium.UI.KEYBOARD_NUMBER_PAD")
 @js.native
-object KEYBOARD_NUMBER_PAD extends TopLevel[Double]
+object KEYBOARD_NUMBER_PAD
+  extends TopLevel[scala.Nothing]
 

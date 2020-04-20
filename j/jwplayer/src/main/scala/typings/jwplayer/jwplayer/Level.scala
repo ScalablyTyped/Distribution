@@ -15,7 +15,6 @@ object Level {
   @scala.inline
   def apply(bitrate: Double, height: Double, label: String, width: Double): Level = {
     val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Level]
   }
 }

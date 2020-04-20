@@ -14,10 +14,8 @@ trait OlTaskRecipientType extends js.Object
 
 object OlTaskRecipientType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFinalStatus: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olFinalStatus: `3` = this.cast(3)
-  @scala.inline
-  def olUpdate: `2` = this.cast(2)
+  def olUpdate: `2` = 2.asInstanceOf[`2`]
 }
 

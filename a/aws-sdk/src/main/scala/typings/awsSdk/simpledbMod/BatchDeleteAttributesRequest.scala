@@ -20,7 +20,6 @@ object BatchDeleteAttributesRequest {
   @scala.inline
   def apply(DomainName: String, Items: DeletableItemList): BatchDeleteAttributesRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], Items = Items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDeleteAttributesRequest]
   }
 }

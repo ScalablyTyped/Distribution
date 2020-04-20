@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -42,6 +43,12 @@ trait colorCreatePCContinuousRendererParams extends Object {
     */
   var layer: PointCloudLayer
   /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController). query to the server.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  /**
     * The size of each point expressed as a percentage. This value will determine point sizes scaled based on the given `density` of points. When the value is `100%`, the size of each point is set so that it minimizes the number of gaps between neighboring points. Any value above `100%` will allow for points to overlap neighboring points scaled to the given value. Values below `100%` scale point sizes smaller so there appear to be more gaps between points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
@@ -50,7 +57,7 @@ trait colorCreatePCContinuousRendererParams extends Object {
     */
   var size: js.UndefOr[String] = js.undefined
   /**
-    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) function. If statistics for the field have already been generated, then pass the stats object here to avoid making a second statistics query to the server.
+    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) function. If statistics for the field have already been generated, then pass the stats object here to avoid making a second statistics
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
     */
@@ -68,6 +75,7 @@ object colorCreatePCContinuousRendererParams {
     basemap: String | Basemap = null,
     colorScheme: ColorScheme = null,
     density: Int | Double = null,
+    signal: AbortSignal = null,
     size: String = null,
     statistics: SummaryStatisticsResult = null
   ): colorCreatePCContinuousRendererParams = {
@@ -75,6 +83,7 @@ object colorCreatePCContinuousRendererParams {
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[colorCreatePCContinuousRendererParams]

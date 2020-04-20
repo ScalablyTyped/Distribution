@@ -14,14 +14,12 @@ trait AndroidWorkProfileDefaultAppPermissionPolicyType extends js.Object
 
 object AndroidWorkProfileDefaultAppPermissionPolicyType {
   @scala.inline
-  def autoDeny: typings.microsoftGraph.microsoftGraphStrings.autoDeny = this.cast("autoDeny")
+  def autoDeny: typings.microsoftGraph.microsoftGraphStrings.autoDeny = "autoDeny".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoDeny]
   @scala.inline
-  def autoGrant: typings.microsoftGraph.microsoftGraphStrings.autoGrant = this.cast("autoGrant")
+  def autoGrant: typings.microsoftGraph.microsoftGraphStrings.autoGrant = "autoGrant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoGrant]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = this.cast("deviceDefault")
-  @scala.inline
-  def prompt: typings.microsoftGraph.microsoftGraphStrings.prompt = this.cast("prompt")
+  def prompt: typings.microsoftGraph.microsoftGraphStrings.prompt = "prompt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.prompt]
 }
 

@@ -20,16 +20,14 @@ trait PropertyAttributesEnum extends js.Object
 
 object PropertyAttributesEnum {
   @scala.inline
-  def adPropNotSupported: `0` = this.cast(0)
+  def adPropNotSupported: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adPropOptional: `2` = this.cast(2)
+  def adPropOptional: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adPropRead: `512` = this.cast(512)
+  def adPropRead: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def adPropRequired: `1` = this.cast(1)
+  def adPropRequired: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adPropWrite: `1024` = this.cast(1024)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adPropWrite: `1024` = 1024.asInstanceOf[`1024`]
 }
 

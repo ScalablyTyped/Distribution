@@ -14,7 +14,6 @@ object ReposDeleteInvitationParams {
   @scala.inline
   def apply(invitation_id: Double, owner: String, repo: String): ReposDeleteInvitationParams = {
     val __obj = js.Dynamic.literal(invitation_id = invitation_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposDeleteInvitationParams]
   }
 }

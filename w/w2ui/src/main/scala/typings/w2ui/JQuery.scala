@@ -33,7 +33,6 @@ object JQuery {
     w2toolbar: js.Object => W2Toolbar
   ): JQuery = {
     val __obj = js.Dynamic.literal(w2form = js.Any.fromFunction1(w2form), w2grid = js.Any.fromFunction1(w2grid), w2layout = js.Any.fromFunction1(w2layout), w2popup = js.Any.fromFunction1(w2popup), w2sidebar = js.Any.fromFunction1(w2sidebar), w2tabs = js.Any.fromFunction1(w2tabs), w2toolbar = js.Any.fromFunction1(w2toolbar))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

@@ -16,12 +16,10 @@ trait XlAxisType extends js.Object
 
 object XlAxisType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCategory: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlCategory: `1` = this.cast(1)
+  def xlSeriesAxis: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlSeriesAxis: `3` = this.cast(3)
-  @scala.inline
-  def xlValue: `2` = this.cast(2)
+  def xlValue: `2` = 2.asInstanceOf[`2`]
 }
 

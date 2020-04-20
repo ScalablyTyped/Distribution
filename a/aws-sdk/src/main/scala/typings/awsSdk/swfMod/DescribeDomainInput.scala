@@ -16,7 +16,6 @@ object DescribeDomainInput {
   @scala.inline
   def apply(name: DomainName): DescribeDomainInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDomainInput]
   }
 }

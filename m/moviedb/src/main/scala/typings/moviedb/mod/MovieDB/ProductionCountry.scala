@@ -13,7 +13,6 @@ object ProductionCountry {
   @scala.inline
   def apply(iso_3166_1: Double, name: String): ProductionCountry = {
     val __obj = js.Dynamic.literal(iso_3166_1 = iso_3166_1.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProductionCountry]
   }
 }

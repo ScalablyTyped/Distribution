@@ -15,7 +15,6 @@ object AnonConfig {
   @scala.inline
   def apply(config: ProjectConfig, testPaths: js.Array[Path]): AnonConfig = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], testPaths = testPaths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfig]
   }
 }

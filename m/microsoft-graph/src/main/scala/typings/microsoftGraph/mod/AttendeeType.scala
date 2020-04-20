@@ -13,12 +13,10 @@ trait AttendeeType extends js.Object
 
 object AttendeeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def optional: typings.microsoftGraph.microsoftGraphStrings.optional = "optional".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.optional]
   @scala.inline
-  def optional: typings.microsoftGraph.microsoftGraphStrings.optional = this.cast("optional")
+  def required: typings.microsoftGraph.microsoftGraphStrings.required = "required".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.required]
   @scala.inline
-  def required: typings.microsoftGraph.microsoftGraphStrings.required = this.cast("required")
-  @scala.inline
-  def resource: typings.microsoftGraph.microsoftGraphStrings.resource = this.cast("resource")
+  def resource: typings.microsoftGraph.microsoftGraphStrings.resource = "resource".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.resource]
 }
 

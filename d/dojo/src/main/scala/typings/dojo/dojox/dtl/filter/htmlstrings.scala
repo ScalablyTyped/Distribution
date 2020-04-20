@@ -46,7 +46,6 @@ object htmlstrings {
     striptags: js.Any => js.Any
   ): htmlstrings = {
     val __obj = js.Dynamic.literal(linebreaks = js.Any.fromFunction1(linebreaks), linebreaksbr = js.Any.fromFunction1(linebreaksbr), removetags = js.Any.fromFunction2(removetags), striptags = js.Any.fromFunction1(striptags))
-  
     __obj.asInstanceOf[htmlstrings]
   }
 }

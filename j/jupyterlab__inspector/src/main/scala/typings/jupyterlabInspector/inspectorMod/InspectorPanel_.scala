@@ -349,7 +349,7 @@ class InspectorPanel_ ()
     * The source of events the inspector panel listens for.
     */
   @JSName("source")
-  def source_Union(): IInspectable | Null = js.native
+  def source_Union: IInspectable | Null = js.native
   /**
     * Test whether the given widget flag is set.
     *

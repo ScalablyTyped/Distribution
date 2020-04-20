@@ -39,8 +39,8 @@ class MessageDefinitionCollection protected () extends Document {
   @JSName("model")
   var model_FMessageDefinitionCollection: IModel = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MMessageDefinitionCollection(): FolderBase = js.native
-  def messageDefinitions(): IList[MessageDefinition] = js.native
+  def containerAsFolderBase_MMessageDefinitionCollection: FolderBase = js.native
+  def messageDefinitions: IList[MessageDefinition] = js.native
 }
 
 /* static members */

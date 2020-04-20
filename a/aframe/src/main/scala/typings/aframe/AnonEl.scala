@@ -17,7 +17,6 @@ object AnonEl {
   @scala.inline
   def apply(el: Element | (Entity[ObjectMap[Component[_, System[_]]]])): AnonEl = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEl]
   }
 }

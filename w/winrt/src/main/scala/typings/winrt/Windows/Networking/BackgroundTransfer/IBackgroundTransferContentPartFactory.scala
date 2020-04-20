@@ -16,7 +16,6 @@ object IBackgroundTransferContentPartFactory {
     createWithNameAndFileName: (String, String) => BackgroundTransferContentPart
   ): IBackgroundTransferContentPartFactory = {
     val __obj = js.Dynamic.literal(createWithName = js.Any.fromFunction1(createWithName), createWithNameAndFileName = js.Any.fromFunction2(createWithNameAndFileName))
-  
     __obj.asInstanceOf[IBackgroundTransferContentPartFactory]
   }
 }

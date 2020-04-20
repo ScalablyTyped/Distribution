@@ -16,7 +16,6 @@ object DescribeEndpointGroupRequest {
   @scala.inline
   def apply(EndpointGroupArn: GenericString): DescribeEndpointGroupRequest = {
     val __obj = js.Dynamic.literal(EndpointGroupArn = EndpointGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeEndpointGroupRequest]
   }
 }

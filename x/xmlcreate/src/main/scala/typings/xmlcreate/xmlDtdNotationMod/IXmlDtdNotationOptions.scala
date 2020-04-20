@@ -15,7 +15,6 @@ object IXmlDtdNotationOptions {
   @scala.inline
   def apply(charData: String): IXmlDtdNotationOptions = {
     val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IXmlDtdNotationOptions]
   }
 }

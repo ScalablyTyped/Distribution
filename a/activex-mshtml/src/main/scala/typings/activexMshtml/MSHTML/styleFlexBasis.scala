@@ -16,12 +16,10 @@ trait styleFlexBasis extends js.Object
 
 object styleFlexBasis {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleFlexBasisAuto: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleFlexBasisAuto: `0` = this.cast(0)
+  def styleFlexBasisNotSet: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleFlexBasisNotSet: `1` = this.cast(1)
-  @scala.inline
-  def styleFlexBasis_Max: `2147483647` = this.cast(2147483647)
+  def styleFlexBasis_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

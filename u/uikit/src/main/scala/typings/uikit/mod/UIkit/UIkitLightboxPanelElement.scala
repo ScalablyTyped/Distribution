@@ -15,7 +15,6 @@ object UIkitLightboxPanelElement {
   @scala.inline
   def apply(hide: () => Unit, show: Double => Unit, startAutoplay: () => Unit, stopAutoplay: () => Unit): UIkitLightboxPanelElement = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction1(show), startAutoplay = js.Any.fromFunction0(startAutoplay), stopAutoplay = js.Any.fromFunction0(stopAutoplay))
-  
     __obj.asInstanceOf[UIkitLightboxPanelElement]
   }
 }

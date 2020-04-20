@@ -23,7 +23,6 @@ object BasicConstraints {
     toSchema: () => js.Any
   ): BasicConstraints = {
     val __obj = js.Dynamic.literal(cA = cA.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), pathLenConstraint = pathLenConstraint.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-  
     __obj.asInstanceOf[BasicConstraints]
   }
 }

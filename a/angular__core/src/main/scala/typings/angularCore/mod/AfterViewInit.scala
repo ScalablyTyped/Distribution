@@ -18,7 +18,6 @@ object AfterViewInit {
   @scala.inline
   def apply(ngAfterViewInit: () => Unit): AfterViewInit = {
     val __obj = js.Dynamic.literal(ngAfterViewInit = js.Any.fromFunction0(ngAfterViewInit))
-  
     __obj.asInstanceOf[AfterViewInit]
   }
 }

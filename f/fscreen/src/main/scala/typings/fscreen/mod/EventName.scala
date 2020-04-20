@@ -16,18 +16,16 @@ trait EventName extends js.Object
 
 object EventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def exitFullscreen: typings.fscreen.fscreenStrings.exitFullscreen = "exitFullscreen".asInstanceOf[typings.fscreen.fscreenStrings.exitFullscreen]
   @scala.inline
-  def exitFullscreen: typings.fscreen.fscreenStrings.exitFullscreen = this.cast("exitFullscreen")
+  def fullscreenElement: typings.fscreen.fscreenStrings.fullscreenElement = "fullscreenElement".asInstanceOf[typings.fscreen.fscreenStrings.fullscreenElement]
   @scala.inline
-  def fullscreenElement: typings.fscreen.fscreenStrings.fullscreenElement = this.cast("fullscreenElement")
+  def fullscreenEnabled: typings.fscreen.fscreenStrings.fullscreenEnabled = "fullscreenEnabled".asInstanceOf[typings.fscreen.fscreenStrings.fullscreenEnabled]
   @scala.inline
-  def fullscreenEnabled: typings.fscreen.fscreenStrings.fullscreenEnabled = this.cast("fullscreenEnabled")
+  def fullscreenchange: typings.fscreen.fscreenStrings.fullscreenchange = "fullscreenchange".asInstanceOf[typings.fscreen.fscreenStrings.fullscreenchange]
   @scala.inline
-  def fullscreenchange: typings.fscreen.fscreenStrings.fullscreenchange = this.cast("fullscreenchange")
+  def fullscreenerror: typings.fscreen.fscreenStrings.fullscreenerror = "fullscreenerror".asInstanceOf[typings.fscreen.fscreenStrings.fullscreenerror]
   @scala.inline
-  def fullscreenerror: typings.fscreen.fscreenStrings.fullscreenerror = this.cast("fullscreenerror")
-  @scala.inline
-  def requestFullscreen: typings.fscreen.fscreenStrings.requestFullscreen = this.cast("requestFullscreen")
+  def requestFullscreen: typings.fscreen.fscreenStrings.requestFullscreen = "requestFullscreen".asInstanceOf[typings.fscreen.fscreenStrings.requestFullscreen]
 }
 

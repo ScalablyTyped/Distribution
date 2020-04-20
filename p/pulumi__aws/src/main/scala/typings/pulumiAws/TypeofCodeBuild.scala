@@ -13,7 +13,6 @@ object TypeofCodeBuild {
   @scala.inline
   def apply(Types: TypeofCodeBuild): TypeofCodeBuild = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCodeBuild]
   }
 }

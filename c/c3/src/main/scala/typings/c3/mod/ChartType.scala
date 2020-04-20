@@ -22,30 +22,28 @@ trait ChartType extends js.Object
 
 object ChartType {
   @scala.inline
-  def area: typings.c3.c3Strings.area = this.cast("area")
+  def area: typings.c3.c3Strings.area = "area".asInstanceOf[typings.c3.c3Strings.area]
   @scala.inline
-  def `area-spline`: typings.c3.c3Strings.`area-spline` = this.cast("area-spline")
+  def `area-spline`: typings.c3.c3Strings.`area-spline` = "area-spline".asInstanceOf[typings.c3.c3Strings.`area-spline`]
   @scala.inline
-  def `area-step`: typings.c3.c3Strings.`area-step` = this.cast("area-step")
+  def `area-step`: typings.c3.c3Strings.`area-step` = "area-step".asInstanceOf[typings.c3.c3Strings.`area-step`]
   @scala.inline
-  def bar: typings.c3.c3Strings.bar = this.cast("bar")
+  def bar: typings.c3.c3Strings.bar = "bar".asInstanceOf[typings.c3.c3Strings.bar]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def donut: typings.c3.c3Strings.donut = "donut".asInstanceOf[typings.c3.c3Strings.donut]
   @scala.inline
-  def donut: typings.c3.c3Strings.donut = this.cast("donut")
+  def gauge: typings.c3.c3Strings.gauge = "gauge".asInstanceOf[typings.c3.c3Strings.gauge]
   @scala.inline
-  def gauge: typings.c3.c3Strings.gauge = this.cast("gauge")
+  def line: typings.c3.c3Strings.line = "line".asInstanceOf[typings.c3.c3Strings.line]
   @scala.inline
-  def line: typings.c3.c3Strings.line = this.cast("line")
+  def pie: typings.c3.c3Strings.pie = "pie".asInstanceOf[typings.c3.c3Strings.pie]
   @scala.inline
-  def pie: typings.c3.c3Strings.pie = this.cast("pie")
+  def scatter: typings.c3.c3Strings.scatter = "scatter".asInstanceOf[typings.c3.c3Strings.scatter]
   @scala.inline
-  def scatter: typings.c3.c3Strings.scatter = this.cast("scatter")
+  def spline: typings.c3.c3Strings.spline = "spline".asInstanceOf[typings.c3.c3Strings.spline]
   @scala.inline
-  def spline: typings.c3.c3Strings.spline = this.cast("spline")
+  def stanford: typings.c3.c3Strings.stanford = "stanford".asInstanceOf[typings.c3.c3Strings.stanford]
   @scala.inline
-  def stanford: typings.c3.c3Strings.stanford = this.cast("stanford")
-  @scala.inline
-  def step: typings.c3.c3Strings.step = this.cast("step")
+  def step: typings.c3.c3Strings.step = "step".asInstanceOf[typings.c3.c3Strings.step]
 }
 

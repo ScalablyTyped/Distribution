@@ -22,18 +22,16 @@ trait styleBidi extends js.Object
 
 object styleBidi {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleBidiEmbed: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleBidiEmbed: `2` = this.cast(2)
+  def styleBidiInherit: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleBidiInherit: `4` = this.cast(4)
+  def styleBidiNormal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleBidiNormal: `1` = this.cast(1)
+  def styleBidiNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleBidiNotSet: `0` = this.cast(0)
+  def styleBidiOverride: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleBidiOverride: `3` = this.cast(3)
-  @scala.inline
-  def styleBidi_Max: `2147483647` = this.cast(2147483647)
+  def styleBidi_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

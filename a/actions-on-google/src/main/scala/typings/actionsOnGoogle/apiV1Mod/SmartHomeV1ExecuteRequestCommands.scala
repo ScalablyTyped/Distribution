@@ -16,7 +16,6 @@ object SmartHomeV1ExecuteRequestCommands {
     execution: js.Array[SmartHomeV1ExecuteRequestExecution]
   ): SmartHomeV1ExecuteRequestCommands = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any], execution = execution.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1ExecuteRequestCommands]
   }
 }

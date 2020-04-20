@@ -17,7 +17,6 @@ object AnonEnclosingTypeWalkerState1 {
     enclosingTypeWalkerState2: EnclosingTypeWalkerState
   ): AnonEnclosingTypeWalkerState1 = {
     val __obj = js.Dynamic.literal(enclosingTypeWalkerState1 = enclosingTypeWalkerState1.asInstanceOf[js.Any], enclosingTypeWalkerState2 = enclosingTypeWalkerState2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnclosingTypeWalkerState1]
   }
 }

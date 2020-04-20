@@ -28,7 +28,6 @@ object VpcInterfaceRequest {
   @scala.inline
   def apply(Name: string, RoleArn: string, SecurityGroupIds: listOfString, SubnetId: string): VpcInterfaceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], SecurityGroupIds = SecurityGroupIds.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcInterfaceRequest]
   }
 }

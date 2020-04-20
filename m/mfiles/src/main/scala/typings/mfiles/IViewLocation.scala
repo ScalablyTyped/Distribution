@@ -20,7 +20,6 @@ object IViewLocation {
     ParentFolder: IFolderDefs
   ): IViewLocation = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), OverlappedFolder = OverlappedFolder.asInstanceOf[js.Any], Overlapping = Overlapping.asInstanceOf[js.Any], ParentFolder = ParentFolder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IViewLocation]
   }
 }

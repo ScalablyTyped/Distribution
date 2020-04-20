@@ -49,7 +49,7 @@ class PhotoDome protected () extends TransformNode {
     * The current fov(field of view) multiplier, 0.0 - 2.0. Defaults to 1.0. Lower values "zoom in" and higher values "zoom out".
     * Also see the options.resolution property.
     */
-  def fovMultiplier(): Double = js.native
+  def fovMultiplier: Double = js.native
   def fovMultiplier(value: Double): js.Any = js.native
   /**
     * Gets or set the current video mode for the video. It can be:
@@ -57,16 +57,16 @@ class PhotoDome protected () extends TransformNode {
     * * PhotoDome.MODE_TOPBOTTOM  : Define the image as a Stereoscopic TopBottom/OverUnder panoramic 360 image.
     * * PhotoDome.MODE_SIDEBYSIDE : Define the image as a Stereoscopic Side by Side panoramic 360 image.
     */
-  def imageMode(): Double = js.native
+  def imageMode: Double = js.native
   def imageMode(value: Double): js.Any = js.native
   /**
     * Gets the mesh used for the skybox.
     */
-  def mesh(): Mesh = js.native
+  def mesh: Mesh = js.native
   /**
     * Gets or sets the texture being displayed on the sphere
     */
-  def photoTexture(): Texture = js.native
+  def photoTexture: Texture = js.native
   def photoTexture(value: Texture): js.Any = js.native
 }
 

@@ -14,7 +14,6 @@ object Typeofdrawing {
   @scala.inline
   def apply(DrawingManager: Instantiable0[DrawingManager]): Typeofdrawing = {
     val __obj = js.Dynamic.literal(DrawingManager = DrawingManager.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofdrawing]
   }
 }

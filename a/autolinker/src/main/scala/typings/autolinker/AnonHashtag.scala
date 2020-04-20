@@ -37,7 +37,6 @@ object AnonHashtag {
     Url: Instantiable1[/* cfg */ UrlMatchConfig, UrlMatch]
   ): AnonHashtag = {
     val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], Hashtag = Hashtag.asInstanceOf[js.Any], Match = Match.asInstanceOf[js.Any], Mention = Mention.asInstanceOf[js.Any], Phone = Phone.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHashtag]
   }
 }

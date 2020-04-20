@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactFlipMoveProps {
   @scala.inline
-  def ReactFlipMoveProps: FlipMoveProps.type = typings.reactFlipMove.mod.FlipMove.FlipMoveProps
+  def ReactFlipMoveProps: FlipMoveProps.type = FlipMoveProps
   type ReactFlipMoveProps = FlipMoveProps
 }
 

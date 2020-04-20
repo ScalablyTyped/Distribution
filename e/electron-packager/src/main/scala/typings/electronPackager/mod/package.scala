@@ -10,7 +10,7 @@ package object mod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotarizeOptions */ js.Any, 
     typings.electronPackager.electronPackagerStrings.appBundleId | typings.electronPackager.electronPackagerStrings.appPath
   ]
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   /**
     * Callback which is called when electron-packager is done.
     *

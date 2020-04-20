@@ -86,7 +86,6 @@ object Component {
     willUpdate: () => Unit
   ): Component = {
     val __obj = js.Dynamic.literal(ariaRole = ariaRole.asInstanceOf[js.Any], didReceiveAttrs = js.Any.fromFunction0(didReceiveAttrs), didRender = js.Any.fromFunction0(didRender), didUpdate = js.Any.fromFunction0(didUpdate), didUpdateAttrs = js.Any.fromFunction0(didUpdateAttrs), elementId = elementId.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], readDOMAttr = js.Any.fromFunction1(readDOMAttr), willRender = js.Any.fromFunction0(willRender), willUpdate = js.Any.fromFunction0(willUpdate))
-  
     __obj.asInstanceOf[Component]
   }
 }

@@ -12,10 +12,8 @@ trait LogonType extends js.Object
 
 object LogonType {
   @scala.inline
-  def LOG_ON_CURRENT_USER: typings.qlikEngineapi.qlikEngineapiStrings.LOG_ON_CURRENT_USER = this.cast("LOG_ON_CURRENT_USER")
+  def LOG_ON_CURRENT_USER: typings.qlikEngineapi.qlikEngineapiStrings.LOG_ON_CURRENT_USER = "LOG_ON_CURRENT_USER".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.LOG_ON_CURRENT_USER]
   @scala.inline
-  def LOG_ON_SERVICE_USER: typings.qlikEngineapi.qlikEngineapiStrings.LOG_ON_SERVICE_USER = this.cast("LOG_ON_SERVICE_USER")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def LOG_ON_SERVICE_USER: typings.qlikEngineapi.qlikEngineapiStrings.LOG_ON_SERVICE_USER = "LOG_ON_SERVICE_USER".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.LOG_ON_SERVICE_USER]
 }
 

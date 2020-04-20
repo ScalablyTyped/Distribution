@@ -12,10 +12,8 @@ trait PaneMode extends js.Object
 
 object PaneMode {
   @scala.inline
-  def add: typings.reactSortablePane.reactSortablePaneStrings.add = this.cast("add")
+  def add: typings.reactSortablePane.reactSortablePaneStrings.add = "add".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.add]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def remove: typings.reactSortablePane.reactSortablePaneStrings.remove = this.cast("remove")
+  def remove: typings.reactSortablePane.reactSortablePaneStrings.remove = "remove".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.remove]
 }
 

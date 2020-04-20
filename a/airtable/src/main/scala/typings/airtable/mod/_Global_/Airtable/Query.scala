@@ -18,7 +18,6 @@ object Query {
     firstPage: () => js.Promise[Records[TFields]]
   ): Query[TFields] = {
     val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), eachPage = js.Any.fromFunction1(eachPage), firstPage = js.Any.fromFunction0(firstPage))
-  
     __obj.asInstanceOf[Query[TFields]]
   }
 }

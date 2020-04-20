@@ -12,10 +12,8 @@ trait Dutch extends _ALL
 
 object Dutch {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def nl: typings.qlik.qlikStrings.nl = "nl".asInstanceOf[typings.qlik.qlikStrings.nl]
   @scala.inline
-  def nl: typings.qlik.qlikStrings.nl = this.cast("nl")
-  @scala.inline
-  def `nl-NL`: typings.qlik.qlikStrings.`nl-NL` = this.cast("nl-NL")
+  def `nl-NL`: typings.qlik.qlikStrings.`nl-NL` = "nl-NL".asInstanceOf[typings.qlik.qlikStrings.`nl-NL`]
 }
 

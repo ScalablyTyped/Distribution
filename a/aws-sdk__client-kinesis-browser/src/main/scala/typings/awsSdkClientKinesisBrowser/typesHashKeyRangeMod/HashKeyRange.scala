@@ -19,7 +19,6 @@ object HashKeyRange {
   @scala.inline
   def apply(EndingHashKey: String, StartingHashKey: String): HashKeyRange = {
     val __obj = js.Dynamic.literal(EndingHashKey = EndingHashKey.asInstanceOf[js.Any], StartingHashKey = StartingHashKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HashKeyRange]
   }
 }

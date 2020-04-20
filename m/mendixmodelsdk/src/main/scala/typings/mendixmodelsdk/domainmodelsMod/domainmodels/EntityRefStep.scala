@@ -26,13 +26,13 @@ class EntityRefStep protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FEntityRefStep: IModel = js.native
-  def association(): IAssociationBase = js.native
+  def association: IAssociationBase = js.native
   def association(newValue: IAssociationBase): js.Any = js.native
-  def associationQualifiedName(): String = js.native
-  def containerAsIndirectEntityRef(): IndirectEntityRef = js.native
-  def destinationEntity(): IEntity = js.native
+  def associationQualifiedName: String = js.native
+  def containerAsIndirectEntityRef: IndirectEntityRef = js.native
+  def destinationEntity: IEntity = js.native
   def destinationEntity(newValue: IEntity): js.Any = js.native
-  def destinationEntityQualifiedName(): String = js.native
+  def destinationEntityQualifiedName: String = js.native
 }
 
 /* static members */

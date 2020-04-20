@@ -12,7 +12,6 @@ object HasRoomPosition {
   @scala.inline
   def apply(pos: RoomPosition): HasRoomPosition = {
     val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HasRoomPosition]
   }
 }

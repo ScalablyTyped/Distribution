@@ -44,7 +44,6 @@ object getPlainValueOptions {
     getType: js.Any => String
   ): getPlainValueOptions = {
     val __obj = js.Dynamic.literal(getPlainArray = js.Any.fromFunction1(getPlainArray), getPlainObject = js.Any.fromFunction1(getPlainObject), getPlainValue = js.Any.fromFunction1(getPlainValue), getType = js.Any.fromFunction1(getType))
-  
     __obj.asInstanceOf[getPlainValueOptions]
   }
 }

@@ -12,7 +12,6 @@ object TranslatableProvided {
   @scala.inline
   def apply(translate: (String, /* repeated */ js.Any) => String): TranslatableProvided = {
     val __obj = js.Dynamic.literal(translate = js.Any.fromFunction2(translate))
-  
     __obj.asInstanceOf[TranslatableProvided]
   }
 }

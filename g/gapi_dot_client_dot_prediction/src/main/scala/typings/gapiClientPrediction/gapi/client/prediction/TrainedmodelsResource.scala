@@ -37,7 +37,6 @@ object TrainedmodelsResource {
     update: AnonFields => Request_[Insert2]
   ): TrainedmodelsResource = {
     val __obj = js.Dynamic.literal(analyze = js.Any.fromFunction1(analyze), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), predict = js.Any.fromFunction1(predict), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[TrainedmodelsResource]
   }
 }

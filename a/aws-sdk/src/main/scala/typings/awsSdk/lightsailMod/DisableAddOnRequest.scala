@@ -20,7 +20,6 @@ object DisableAddOnRequest {
   @scala.inline
   def apply(addOnType: AddOnType, resourceName: ResourceName): DisableAddOnRequest = {
     val __obj = js.Dynamic.literal(addOnType = addOnType.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableAddOnRequest]
   }
 }

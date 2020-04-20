@@ -16,7 +16,6 @@ object DeleteDataSetRequest {
   @scala.inline
   def apply(DataSetId: string): DeleteDataSetRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDataSetRequest]
   }
 }

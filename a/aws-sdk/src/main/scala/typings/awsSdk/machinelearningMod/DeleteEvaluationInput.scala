@@ -16,7 +16,6 @@ object DeleteEvaluationInput {
   @scala.inline
   def apply(EvaluationId: EntityId): DeleteEvaluationInput = {
     val __obj = js.Dynamic.literal(EvaluationId = EvaluationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEvaluationInput]
   }
 }

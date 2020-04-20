@@ -26,7 +26,6 @@ object RowAxisLabelRendererContext {
     rowData: Row[K2]
   ): RowAxisLabelRendererContext[K2, D2] = {
     val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowAxisLabelRendererContext[K2, D2]]
   }
 }

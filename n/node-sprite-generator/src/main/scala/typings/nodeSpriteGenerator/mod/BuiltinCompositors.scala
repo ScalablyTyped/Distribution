@@ -13,12 +13,10 @@ trait BuiltinCompositors extends js.Object
 
 object BuiltinCompositors {
   @scala.inline
-  def canvas: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.canvas = this.cast("canvas")
+  def canvas: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.canvas = "canvas".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.canvas]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def gm: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.gm = "gm".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.gm]
   @scala.inline
-  def gm: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.gm = this.cast("gm")
-  @scala.inline
-  def jimp: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.jimp = this.cast("jimp")
+  def jimp: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.jimp = "jimp".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.jimp]
 }
 

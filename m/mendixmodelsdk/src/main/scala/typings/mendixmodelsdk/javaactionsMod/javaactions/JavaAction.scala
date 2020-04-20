@@ -73,12 +73,12 @@ class JavaAction protected () extends CodeAction {
   @JSName("useLegacyCodeGeneration")
   val useLegacyCodeGeneration_FJavaAction: Boolean = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MJavaAction(): FolderBase = js.native
+  def containerAsFolderBase_MJavaAction: FolderBase = js.native
   /**
     * In version 7.21.0: deleted
     * In version 6.6.0: introduced
     */
-  def javaReturnType(): Type = js.native
+  def javaReturnType: Type = js.native
   def javaReturnType(newValue: Type): js.Any = js.native
   def microflowActionInfo(): js.Any = js.native
   def microflowActionInfo(newValue: MicroflowActionInfo): js.Any = js.native
@@ -87,27 +87,27 @@ class JavaAction protected () extends CodeAction {
     * In version 6.6.0: introduced
     */
   @JSName("microflowActionInfo")
-  def microflowActionInfo_Union(): MicroflowActionInfo | Null = js.native
+  def microflowActionInfo_Union: MicroflowActionInfo | Null = js.native
   /**
     * In version 7.21.0: deleted
     */
-  def parameters(): IList[JavaActionParameter] = js.native
+  def parameters: IList[JavaActionParameter] = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 6.6.0: deleted
     */
-  def returnType(): String = js.native
+  def returnType: String = js.native
   def returnType(newValue: String): js.Any = js.native
   /**
     * In version 7.21.0: deleted
     * In version 6.6.0: introduced
     */
-  def typeParameters(): IList[TypeParameter] = js.native
+  def typeParameters: IList[TypeParameter] = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def useLegacyCodeGeneration(): Boolean = js.native
+  def useLegacyCodeGeneration: Boolean = js.native
   def useLegacyCodeGeneration(newValue: Boolean): js.Any = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCurrencyFormatterProps {
   @scala.inline
-  def ReactCurrencyFormatterProps: CurrencyFormatterProps.type = typings.reactCurrencyFormatter.mod.CurrencyFormatterProps
+  def ReactCurrencyFormatterProps: CurrencyFormatterProps.type = CurrencyFormatterProps
   type ReactCurrencyFormatterProps = CurrencyFormatterProps
 }
 

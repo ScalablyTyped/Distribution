@@ -17,7 +17,6 @@ object PrefixOptions {
   @scala.inline
   def apply(full: Boolean, gender: male | female | all): PrefixOptions = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrefixOptions]
   }
 }

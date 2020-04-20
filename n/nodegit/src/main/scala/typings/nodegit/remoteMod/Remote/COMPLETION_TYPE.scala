@@ -16,12 +16,10 @@ trait COMPLETION_TYPE extends js.Object
 
 object COMPLETION_TYPE {
   @scala.inline
-  def COMPLETION_DOWNLOAD: `0` = this.cast(0)
+  def COMPLETION_DOWNLOAD: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def COMPLETION_ERROR: `2` = this.cast(2)
+  def COMPLETION_ERROR: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def COMPLETION_INDEXING: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def COMPLETION_INDEXING: `1` = 1.asInstanceOf[`1`]
 }
 

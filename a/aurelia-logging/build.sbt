@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aurelia-logging"
-version := "1.5.2-a6ea0a"
+version := "1.5.2-5ab118"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

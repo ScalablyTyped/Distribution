@@ -3,8 +3,10 @@ package typings.chromeApps.chrome.usb
 import typings.chromeApps.AnonIN
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
-import typings.chromeApps.chromeAppsStrings.in
-import typings.chromeApps.chromeAppsStrings.out
+import typings.chromeApps.chromeAppsStrings.IN
+import typings.chromeApps.chromeAppsStrings.OUT
+import typings.chromeApps.chromeAppsStrings.in_
+import typings.chromeApps.chromeAppsStrings.out_
 import typings.std.ArrayBuffer
 import typings.std.Exclude
 import scala.scalajs.js
@@ -18,7 +20,7 @@ trait GenericTransferInfo extends js.Object {
     * The transfer direction ('in' or 'out').
     * @see Direction
     */
-  var direction: ToStringLiteral[AnonIN, String, Exclude[String, in | out]]
+  var direction: ToStringLiteral[AnonIN, IN | OUT, Exclude[IN | OUT, in_ | out_]]
   /** The target endpoint address. The interface containing this endpoint must be claimed. */
   var endpoint: integer
   /** The maximum number of bytes to receive (required only by input transfers). */
@@ -34,7 +36,7 @@ trait GenericTransferInfo extends js.Object {
 object GenericTransferInfo {
   @scala.inline
   def apply(
-    direction: ToStringLiteral[AnonIN, String, Exclude[String, in | out]],
+    direction: ToStringLiteral[AnonIN, IN | OUT, Exclude[IN | OUT, in_ | out_]],
     endpoint: integer,
     data: ArrayBuffer = null,
     length: Int | Double = null,

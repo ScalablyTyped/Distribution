@@ -17,7 +17,6 @@ object PsbtAttributes {
   @scala.inline
   def apply(globalMap: PsbtGlobal, inputs: js.Array[PsbtInput], outputs: js.Array[PsbtOutput]): PsbtAttributes = {
     val __obj = js.Dynamic.literal(globalMap = globalMap.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PsbtAttributes]
   }
 }

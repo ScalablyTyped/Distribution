@@ -44,7 +44,6 @@ object LimitRange {
     spec: LimitRangeSpec
   ): LimitRange = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LimitRange]
   }
 }

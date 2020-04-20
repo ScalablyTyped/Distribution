@@ -28,7 +28,6 @@ object TypeofLinkDialog {
   @scala.inline
   def apply(ImgLinkDialog: Instantiable1[js.UndefOr[/* args */ js.Object], ImgLinkDialog]): TypeofLinkDialog = {
     val __obj = js.Dynamic.literal(ImgLinkDialog = ImgLinkDialog.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofLinkDialog]
   }
 }

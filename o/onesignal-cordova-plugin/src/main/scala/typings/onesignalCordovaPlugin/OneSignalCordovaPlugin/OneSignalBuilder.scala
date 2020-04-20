@@ -23,7 +23,6 @@ object OneSignalBuilder {
     inFocusDisplaying: OSDisplayType => OneSignalBuilder
   ): OneSignalBuilder = {
     val __obj = js.Dynamic.literal(endInit = js.Any.fromFunction0(endInit), handleNotificationOpened = js.Any.fromFunction1(handleNotificationOpened), handleNotificationReceived = js.Any.fromFunction1(handleNotificationReceived), iOSSettings = js.Any.fromFunction1(iOSSettings), inFocusDisplaying = js.Any.fromFunction1(inFocusDisplaying))
-  
     __obj.asInstanceOf[OneSignalBuilder]
   }
 }

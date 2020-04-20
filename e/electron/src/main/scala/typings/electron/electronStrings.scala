@@ -1775,11 +1775,11 @@ object electronStrings {
   @scala.inline
   def MHTML: MHTML = "MHTML".asInstanceOf[MHTML]
   @scala.inline
-  def `Pepper Plugin`: `Pepper Plugin` = "Pepper Plugin".asInstanceOf[`Pepper Plugin`]
+  def `Pepper Plugin`: `Pepper Plugin` = ("Pepper Plugin").asInstanceOf[`Pepper Plugin`]
   @scala.inline
-  def `Pepper Plugin Broker`: `Pepper Plugin Broker` = "Pepper Plugin Broker".asInstanceOf[`Pepper Plugin Broker`]
+  def `Pepper Plugin Broker`: `Pepper Plugin Broker` = ("Pepper Plugin Broker").asInstanceOf[`Pepper Plugin Broker`]
   @scala.inline
-  def `Sandbox helper`: `Sandbox helper` = "Sandbox helper".asInstanceOf[`Sandbox helper`]
+  def `Sandbox helper`: `Sandbox helper` = ("Sandbox helper").asInstanceOf[`Sandbox helper`]
   @scala.inline
   def Tab: Tab = "Tab".asInstanceOf[Tab]
   @scala.inline

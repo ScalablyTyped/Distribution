@@ -20,7 +20,6 @@ object DeleteConnectionMessage {
   @scala.inline
   def apply(EndpointArn: String, ReplicationInstanceArn: String): DeleteConnectionMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any], ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConnectionMessage]
   }
 }

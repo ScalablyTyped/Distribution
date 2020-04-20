@@ -47,7 +47,6 @@ object AnonEmbeddable {
     uploadStatus: String
   ): AnonEmbeddable = {
     val __obj = js.Dynamic.literal(embeddable = embeddable.asInstanceOf[js.Any], failureReason = failureReason.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], privacyStatus = privacyStatus.asInstanceOf[js.Any], publicStatsViewable = publicStatsViewable.asInstanceOf[js.Any], rejectionReason = rejectionReason.asInstanceOf[js.Any], uploadStatus = uploadStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmbeddable]
   }
 }

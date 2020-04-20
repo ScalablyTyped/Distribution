@@ -14,7 +14,6 @@ object Registry {
   @scala.inline
   def apply(router: default): Registry = {
     val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Registry]
   }
 }

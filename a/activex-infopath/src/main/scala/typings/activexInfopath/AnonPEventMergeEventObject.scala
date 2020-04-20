@@ -13,7 +13,6 @@ object AnonPEventMergeEventObject {
   @scala.inline
   def apply(pEvent: MergeEventObject): AnonPEventMergeEventObject = {
     val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPEventMergeEventObject]
   }
 }

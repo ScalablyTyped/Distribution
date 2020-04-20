@@ -19,7 +19,6 @@ object DiffView {
   @scala.inline
   def apply(forceUpdate: () => js.Function1[/* mode */ String, Unit], setShowDifferences: Boolean => Unit): DiffView = {
     val __obj = js.Dynamic.literal(forceUpdate = js.Any.fromFunction0(forceUpdate), setShowDifferences = js.Any.fromFunction1(setShowDifferences))
-  
     __obj.asInstanceOf[DiffView]
   }
 }

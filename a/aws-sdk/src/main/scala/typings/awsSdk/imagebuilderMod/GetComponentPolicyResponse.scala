@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetComponentPolicyResponse extends js.Object {
   /**
-    *  The component policy. 
+    * The component policy. 
     */
   var policy: js.UndefOr[ResourcePolicyDocument] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

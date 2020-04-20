@@ -62,7 +62,6 @@ object Force {
     thrustRight: Double => GameObject
   ): Force = {
     val __obj = js.Dynamic.literal(applyForce = js.Any.fromFunction1(applyForce), applyForceFrom = js.Any.fromFunction2(applyForceFrom), thrust = js.Any.fromFunction1(thrust), thrustBack = js.Any.fromFunction1(thrustBack), thrustLeft = js.Any.fromFunction1(thrustLeft), thrustRight = js.Any.fromFunction1(thrustRight))
-  
     __obj.asInstanceOf[Force]
   }
 }

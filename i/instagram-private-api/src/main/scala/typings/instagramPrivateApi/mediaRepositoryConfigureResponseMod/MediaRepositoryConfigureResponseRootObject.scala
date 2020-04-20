@@ -14,7 +14,6 @@ object MediaRepositoryConfigureResponseRootObject {
   @scala.inline
   def apply(media: MediaRepositoryConfigureResponseMedia, status: String, upload_id: String): MediaRepositoryConfigureResponseRootObject = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaRepositoryConfigureResponseRootObject]
   }
 }

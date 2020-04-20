@@ -49,7 +49,6 @@ object AddPresignedUrlParameters {
     utf8Decoder: /* input */ String => Uint8Array
   ): AddPresignedUrlParameters = {
     val __obj = js.Dynamic.literal(base64Encoder = js.Any.fromFunction1(base64Encoder), credentials = js.Any.fromFunction0(credentials), endpoint = js.Any.fromFunction0(endpoint), region = js.Any.fromFunction0(region), sha256 = sha256.asInstanceOf[js.Any], utf8Decoder = js.Any.fromFunction1(utf8Decoder))
-  
     __obj.asInstanceOf[AddPresignedUrlParameters]
   }
 }

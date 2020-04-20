@@ -46,7 +46,6 @@ object ReactNativeThemedStyledComponentsModule {
     ]
   ): ReactNativeThemedStyledComponentsModule[T, U] = {
     val __obj = js.Dynamic.literal(ThemeConsumer = ThemeConsumer.asInstanceOf[js.Any], ThemeContext = ThemeContext.asInstanceOf[js.Any], ThemeProvider = ThemeProvider.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], isStyledComponent = js.Any.fromFunction1(isStyledComponent), useTheme = js.Any.fromFunction0(useTheme), withTheme = js.Any.fromFunction1(withTheme))
-  
     __obj.asInstanceOf[ReactNativeThemedStyledComponentsModule[T, U]]
   }
 }

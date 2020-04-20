@@ -12,7 +12,6 @@ object TweenPlugin {
   @scala.inline
   def apply(activate: js.Array[_] => Boolean): TweenPlugin = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate))
-  
     __obj.asInstanceOf[TweenPlugin]
   }
 }

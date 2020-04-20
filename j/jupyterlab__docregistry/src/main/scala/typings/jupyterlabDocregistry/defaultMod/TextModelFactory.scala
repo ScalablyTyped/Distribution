@@ -27,7 +27,7 @@ class TextModelFactory () extends IModelFactory[ICodeModel] {
     * This is a read-only property.
     */
   @JSName("contentType")
-  def contentType_MTextModelFactory(): ContentType = js.native
+  def contentType_MTextModelFactory: ContentType = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -47,12 +47,12 @@ class TextModelFactory () extends IModelFactory[ICodeModel] {
     * This is a read-only property.
     */
   @JSName("fileFormat")
-  def fileFormat_MTextModelFactory(): FileFormat = js.native
+  def fileFormat_MTextModelFactory: FileFormat = js.native
   /**
     * Get whether the model factory has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MTextModelFactory(): Boolean = js.native
+  def isDisposed_MTextModelFactory: Boolean = js.native
   /**
     * The name of the model type.
     *
@@ -60,6 +60,6 @@ class TextModelFactory () extends IModelFactory[ICodeModel] {
     * This is a read-only property.
     */
   @JSName("name")
-  def name_MTextModelFactory(): String = js.native
+  def name_MTextModelFactory: String = js.native
 }
 

@@ -12,7 +12,6 @@ object IAnimationDescriptionFactory {
   @scala.inline
   def apply(createInstance: (AnimationEffect, AnimationEffectTarget) => AnimationDescription): IAnimationDescriptionFactory = {
     val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction2(createInstance))
-  
     __obj.asInstanceOf[IAnimationDescriptionFactory]
   }
 }

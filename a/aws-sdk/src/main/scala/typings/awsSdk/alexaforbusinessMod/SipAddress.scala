@@ -20,7 +20,6 @@ object SipAddress {
   @scala.inline
   def apply(Type: SipType, Uri: SipUri): SipAddress = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Uri = Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SipAddress]
   }
 }

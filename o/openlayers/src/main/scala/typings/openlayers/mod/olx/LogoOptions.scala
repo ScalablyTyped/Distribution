@@ -16,7 +16,6 @@ object LogoOptions {
   @scala.inline
   def apply(href: String, src: String): LogoOptions = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogoOptions]
   }
 }

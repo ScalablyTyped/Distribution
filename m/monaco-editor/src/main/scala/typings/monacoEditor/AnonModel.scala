@@ -14,7 +14,6 @@ object AnonModel {
   @scala.inline
   def apply(model: ITextModel, oldLanguage: String): AnonModel = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], oldLanguage = oldLanguage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonModel]
   }
 }

@@ -22,7 +22,6 @@ object LocationError {
   @scala.inline
   def apply(code: LocationErrorCode, message: String): LocationError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocationError]
   }
 }

@@ -18,14 +18,12 @@ trait WdSubscriberFormats extends js.Object
 
 object WdSubscriberFormats {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdSubscriberBestFormat: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdSubscriberBestFormat: `0` = this.cast(0)
+  def wdSubscriberPict: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdSubscriberPict: `4` = this.cast(4)
+  def wdSubscriberRTF: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdSubscriberRTF: `1` = this.cast(1)
-  @scala.inline
-  def wdSubscriberText: `2` = this.cast(2)
+  def wdSubscriberText: `2` = 2.asInstanceOf[`2`]
 }
 

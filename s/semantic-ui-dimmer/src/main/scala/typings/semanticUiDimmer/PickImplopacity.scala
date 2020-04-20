@@ -14,7 +14,6 @@ object PickImplopacity {
   @scala.inline
   def apply(opacity: auto | Double): PickImplopacity = {
     val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplopacity]
   }
 }

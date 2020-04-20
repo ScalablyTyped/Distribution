@@ -23,7 +23,6 @@ object ExternalMetricStatus {
   @scala.inline
   def apply(current: MetricValueStatus, metric: MetricIdentifier): ExternalMetricStatus = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExternalMetricStatus]
   }
 }

@@ -33,8 +33,8 @@ object namespaceMod extends js.Object {
     var env_FNamespace: IonicEnvironment = js.native
     @JSName("project")
     var project_FNamespace: js.UndefOr[IProject] = js.native
-    def env(): IonicEnvironment = js.native
-    def project(): js.UndefOr[IProject] = js.native
+    def env: IonicEnvironment = js.native
+    def project: js.UndefOr[IProject] = js.native
   }
   
   @js.native

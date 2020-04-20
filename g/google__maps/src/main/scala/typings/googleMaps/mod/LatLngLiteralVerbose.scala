@@ -13,7 +13,6 @@ object LatLngLiteralVerbose {
   @scala.inline
   def apply(latitude: Double, longitude: Double): LatLngLiteralVerbose = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LatLngLiteralVerbose]
   }
 }

@@ -16,7 +16,6 @@ object DisassociateSkillFromUsersRequest {
   @scala.inline
   def apply(SkillId: SkillId): DisassociateSkillFromUsersRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateSkillFromUsersRequest]
   }
 }

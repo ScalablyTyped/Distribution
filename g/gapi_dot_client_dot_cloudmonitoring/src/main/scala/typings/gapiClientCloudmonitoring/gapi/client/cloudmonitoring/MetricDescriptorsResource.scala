@@ -29,7 +29,6 @@ object MetricDescriptorsResource {
     list: AnonCount => Request_[ListMetricDescriptorsResponse]
   ): MetricDescriptorsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[MetricDescriptorsResource]
   }
 }

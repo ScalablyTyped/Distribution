@@ -16,7 +16,6 @@ object ReadonlyArrayTypeProps {
   @scala.inline
   def apply(knob: ArrayTypeKnob, onChange: /* value */ ArrayTypeKnobValue => ArrayTypeKnobValue): ReadonlyArrayTypeProps = {
     val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
-  
     __obj.asInstanceOf[ReadonlyArrayTypeProps]
   }
 }

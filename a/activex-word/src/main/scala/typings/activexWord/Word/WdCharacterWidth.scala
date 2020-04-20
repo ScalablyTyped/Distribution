@@ -14,10 +14,8 @@ trait WdCharacterWidth extends js.Object
 
 object WdCharacterWidth {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdWidthFullWidth: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdWidthFullWidth: `7` = this.cast(7)
-  @scala.inline
-  def wdWidthHalfWidth: `6` = this.cast(6)
+  def wdWidthHalfWidth: `6` = 6.asInstanceOf[`6`]
 }
 

@@ -32,7 +32,6 @@ object Node {
     visit: js.Function1[Node, Unit] => Unit
   ): Node = {
     val __obj = js.Dynamic.literal(getAttribute = js.Any.fromFunction2(getAttribute), path = js.Any.fromFunction2(path), visit = js.Any.fromFunction1(visit))
-  
     __obj.asInstanceOf[Node]
   }
 }

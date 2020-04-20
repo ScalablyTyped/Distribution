@@ -16,12 +16,10 @@ trait MFRelationshipsMode extends js.Object
 
 object MFRelationshipsMode {
   @scala.inline
-  def All: `3` = this.cast(3)
+  def All: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def FromThisObject: `1` = this.cast(1)
+  def FromThisObject: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ToThisObject: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ToThisObject: `2` = 2.asInstanceOf[`2`]
 }
 

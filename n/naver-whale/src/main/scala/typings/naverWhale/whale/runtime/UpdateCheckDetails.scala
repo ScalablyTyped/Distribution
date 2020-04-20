@@ -13,7 +13,6 @@ object UpdateCheckDetails {
   @scala.inline
   def apply(version: String): UpdateCheckDetails = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateCheckDetails]
   }
 }

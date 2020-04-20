@@ -29,7 +29,6 @@ object AllowedHostPath {
   @scala.inline
   def apply(pathPrefix: String, readOnly: Boolean): AllowedHostPath = {
     val __obj = js.Dynamic.literal(pathPrefix = pathPrefix.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AllowedHostPath]
   }
 }

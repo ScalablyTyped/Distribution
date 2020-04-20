@@ -17,7 +17,6 @@ object User {
   @scala.inline
   def apply(acl: ObjectPermissions, groups: js.Array[UserGroup]): User = {
     val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[User]
   }
 }

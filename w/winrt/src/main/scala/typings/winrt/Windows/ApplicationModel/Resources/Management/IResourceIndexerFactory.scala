@@ -13,7 +13,6 @@ object IResourceIndexerFactory {
   @scala.inline
   def apply(createResourceIndexer: Uri => ResourceIndexer): IResourceIndexerFactory = {
     val __obj = js.Dynamic.literal(createResourceIndexer = js.Any.fromFunction1(createResourceIndexer))
-  
     __obj.asInstanceOf[IResourceIndexerFactory]
   }
 }

@@ -20,10 +20,8 @@ trait EntitySaveMode extends js.Object
 
 object EntitySaveMode {
   @scala.inline
-  def SaveAndClose: saveandclose = this.cast("saveandclose")
+  def SaveAndClose: saveandclose = "saveandclose".asInstanceOf[saveandclose]
   @scala.inline
-  def SaveAndNew: saveandnew = this.cast("saveandnew")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SaveAndNew: saveandnew = "saveandnew".asInstanceOf[saveandnew]
 }
 

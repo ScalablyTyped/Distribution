@@ -132,7 +132,7 @@ class VideoTexture protected () extends Texture {
     * Event triggerd when a dom action is required by the user to play the video.
     * This happens due to recent changes in browser policies preventing video to auto start.
     */
-  def onUserActionRequestedObservable(): Observable[Texture] = js.native
+  def onUserActionRequestedObservable: Observable[Texture] = js.native
   /**
     * Update Texture in the `auto` mode. Does not do anything if `settings.autoUpdateTexture` is false.
     */

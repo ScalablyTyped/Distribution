@@ -24,7 +24,6 @@ object CreateCacheSubnetGroupMessage {
   @scala.inline
   def apply(CacheSubnetGroupDescription: String, CacheSubnetGroupName: String, SubnetIds: SubnetIdentifierList): CreateCacheSubnetGroupMessage = {
     val __obj = js.Dynamic.literal(CacheSubnetGroupDescription = CacheSubnetGroupDescription.asInstanceOf[js.Any], CacheSubnetGroupName = CacheSubnetGroupName.asInstanceOf[js.Any], SubnetIds = SubnetIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCacheSubnetGroupMessage]
   }
 }

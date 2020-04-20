@@ -12,7 +12,6 @@ object DriveAPIFileResource {
   @scala.inline
   def apply(id: String): DriveAPIFileResource = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DriveAPIFileResource]
   }
 }

@@ -20,7 +20,6 @@ object PutResourcePolicyInput {
   @scala.inline
   def apply(policy: NonEmptyString, resourceArn: NonEmptyString): PutResourcePolicyInput = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutResourcePolicyInput]
   }
 }

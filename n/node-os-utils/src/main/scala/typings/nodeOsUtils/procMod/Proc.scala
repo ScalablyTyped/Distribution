@@ -16,7 +16,6 @@ object Proc {
     zombieProcesses: () => js.Promise[Double | String]
   ): Proc = {
     val __obj = js.Dynamic.literal(totalProcesses = js.Any.fromFunction0(totalProcesses), zombieProcesses = js.Any.fromFunction0(zombieProcesses))
-  
     __obj.asInstanceOf[Proc]
   }
 }

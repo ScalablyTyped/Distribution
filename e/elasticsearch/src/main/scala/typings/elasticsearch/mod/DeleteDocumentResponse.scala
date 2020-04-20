@@ -26,7 +26,6 @@ object DeleteDocumentResponse {
     result: String
   ): DeleteDocumentResponse = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _index = _index.asInstanceOf[js.Any], _shards = _shards.asInstanceOf[js.Any], _type = _type.asInstanceOf[js.Any], _version = _version.asInstanceOf[js.Any], found = found.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDocumentResponse]
   }
 }

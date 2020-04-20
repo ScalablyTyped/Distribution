@@ -13,7 +13,6 @@ object ActionBarProps {
   @scala.inline
   def apply(actionItems: js.Array[ActionItem]): ActionBarProps = {
     val __obj = js.Dynamic.literal(actionItems = actionItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionBarProps]
   }
 }

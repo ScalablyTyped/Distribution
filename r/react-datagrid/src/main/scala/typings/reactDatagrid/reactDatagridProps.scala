@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDatagridProps {
   @scala.inline
-  def ReactDatagridProps: DataGridProps.type = typings.reactDatagrid.mod.ReactDataGrid.DataGridProps
+  def ReactDatagridProps: DataGridProps.type = DataGridProps
   type ReactDatagridProps = DataGridProps
 }
 

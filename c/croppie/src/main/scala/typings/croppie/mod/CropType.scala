@@ -12,10 +12,8 @@ trait CropType extends js.Object
 
 object CropType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.croppie.croppieStrings.circle = "circle".asInstanceOf[typings.croppie.croppieStrings.circle]
   @scala.inline
-  def circle: typings.croppie.croppieStrings.circle = this.cast("circle")
-  @scala.inline
-  def square: typings.croppie.croppieStrings.square = this.cast("square")
+  def square: typings.croppie.croppieStrings.square = "square".asInstanceOf[typings.croppie.croppieStrings.square]
 }
 

@@ -24,7 +24,6 @@ object StopDeploymentRequest {
   @scala.inline
   def apply(ApplicationId: Id, DeploymentNumber: Integer, EnvironmentId: Id): StopDeploymentRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], DeploymentNumber = DeploymentNumber.asInstanceOf[js.Any], EnvironmentId = EnvironmentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopDeploymentRequest]
   }
 }

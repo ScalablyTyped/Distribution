@@ -15,7 +15,6 @@ object INotificationEvent {
   @scala.inline
   def apply(closeNotification: js.Any => Unit, event: close | show | click, id: Double): INotificationEvent = {
     val __obj = js.Dynamic.literal(closeNotification = js.Any.fromFunction1(closeNotification), event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INotificationEvent]
   }
 }

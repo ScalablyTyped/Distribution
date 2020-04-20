@@ -22,30 +22,28 @@ trait PromptType extends js.Object
 
 object PromptType {
   @scala.inline
-  def autocomplete: typings.prompts.promptsStrings.autocomplete = this.cast("autocomplete")
+  def autocomplete: typings.prompts.promptsStrings.autocomplete = "autocomplete".asInstanceOf[typings.prompts.promptsStrings.autocomplete]
   @scala.inline
-  def autocompleteMultiselect: typings.prompts.promptsStrings.autocompleteMultiselect = this.cast("autocompleteMultiselect")
+  def autocompleteMultiselect: typings.prompts.promptsStrings.autocompleteMultiselect = "autocompleteMultiselect".asInstanceOf[typings.prompts.promptsStrings.autocompleteMultiselect]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def confirm: typings.prompts.promptsStrings.confirm = "confirm".asInstanceOf[typings.prompts.promptsStrings.confirm]
   @scala.inline
-  def confirm: typings.prompts.promptsStrings.confirm = this.cast("confirm")
+  def date: typings.prompts.promptsStrings.date = "date".asInstanceOf[typings.prompts.promptsStrings.date]
   @scala.inline
-  def date: typings.prompts.promptsStrings.date = this.cast("date")
+  def invisible: typings.prompts.promptsStrings.invisible = "invisible".asInstanceOf[typings.prompts.promptsStrings.invisible]
   @scala.inline
-  def invisible: typings.prompts.promptsStrings.invisible = this.cast("invisible")
+  def list: typings.prompts.promptsStrings.list = "list".asInstanceOf[typings.prompts.promptsStrings.list]
   @scala.inline
-  def list: typings.prompts.promptsStrings.list = this.cast("list")
+  def multiselect: typings.prompts.promptsStrings.multiselect = "multiselect".asInstanceOf[typings.prompts.promptsStrings.multiselect]
   @scala.inline
-  def multiselect: typings.prompts.promptsStrings.multiselect = this.cast("multiselect")
+  def number: typings.prompts.promptsStrings.number = "number".asInstanceOf[typings.prompts.promptsStrings.number]
   @scala.inline
-  def number: typings.prompts.promptsStrings.number = this.cast("number")
+  def password: typings.prompts.promptsStrings.password = "password".asInstanceOf[typings.prompts.promptsStrings.password]
   @scala.inline
-  def password: typings.prompts.promptsStrings.password = this.cast("password")
+  def select: typings.prompts.promptsStrings.select = "select".asInstanceOf[typings.prompts.promptsStrings.select]
   @scala.inline
-  def select: typings.prompts.promptsStrings.select = this.cast("select")
+  def text: typings.prompts.promptsStrings.text = "text".asInstanceOf[typings.prompts.promptsStrings.text]
   @scala.inline
-  def text: typings.prompts.promptsStrings.text = this.cast("text")
-  @scala.inline
-  def toggle: typings.prompts.promptsStrings.toggle = this.cast("toggle")
+  def toggle: typings.prompts.promptsStrings.toggle = "toggle".asInstanceOf[typings.prompts.promptsStrings.toggle]
 }
 

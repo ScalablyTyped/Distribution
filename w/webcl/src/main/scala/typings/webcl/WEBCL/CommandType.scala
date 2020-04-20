@@ -41,42 +41,40 @@ trait CommandType extends js.Object
 
 object CommandType {
   @scala.inline
-  def COMMAND_COPY_BUFFER: `0x11F5` = this.cast(0x11F5)
+  def COMMAND_COPY_BUFFER: `0x11F5` = 0x11F5.asInstanceOf[`0x11F5`]
   @scala.inline
-  def COMMAND_COPY_BUFFER_RECT: `0x1203` = this.cast(0x1203)
+  def COMMAND_COPY_BUFFER_RECT: `0x1203` = 0x1203.asInstanceOf[`0x1203`]
   @scala.inline
-  def COMMAND_COPY_BUFFER_TO_IMAGE: `0x11FA` = this.cast(0x11FA)
+  def COMMAND_COPY_BUFFER_TO_IMAGE: `0x11FA` = 0x11FA.asInstanceOf[`0x11FA`]
   @scala.inline
-  def COMMAND_COPY_IMAGE: `0x11F8` = this.cast(0x11F8)
+  def COMMAND_COPY_IMAGE: `0x11F8` = 0x11F8.asInstanceOf[`0x11F8`]
   @scala.inline
-  def COMMAND_COPY_IMAGE_TO_BUFFER: `0x11F9` = this.cast(0x11F9)
+  def COMMAND_COPY_IMAGE_TO_BUFFER: `0x11F9` = 0x11F9.asInstanceOf[`0x11F9`]
   //COMMAND_MAP_BUFFER                        = 0x11FB, // disallowed
   //COMMAND_MAP_IMAGE                         = 0x11FC, // disallowed
   //COMMAND_UNMAP_MEM_OBJECT                  = 0x11FD, // disallowed
   @scala.inline
-  def COMMAND_MARKER: `0x11FE` = this.cast(0x11FE)
+  def COMMAND_MARKER: `0x11FE` = 0x11FE.asInstanceOf[`0x11FE`]
   @scala.inline
-  def COMMAND_NDRANGE_KERNEL: `0x11F0` = this.cast(0x11F0)
+  def COMMAND_NDRANGE_KERNEL: `0x11F0` = 0x11F0.asInstanceOf[`0x11F0`]
   //COMMAND_NATIVE_KERNEL                     = 0x11F2, // disallowed
   @scala.inline
-  def COMMAND_READ_BUFFER: `0x11F3` = this.cast(0x11F3)
+  def COMMAND_READ_BUFFER: `0x11F3` = 0x11F3.asInstanceOf[`0x11F3`]
   //COMMAND_ACQUIRE_GL_OBJECTS                = 0x11FF, // moved to extension
   //COMMAND_RELEASE_GL_OBJECTS                = 0x1200, // moved to extension
   @scala.inline
-  def COMMAND_READ_BUFFER_RECT: `0x1201` = this.cast(0x1201)
+  def COMMAND_READ_BUFFER_RECT: `0x1201` = 0x1201.asInstanceOf[`0x1201`]
   @scala.inline
-  def COMMAND_READ_IMAGE: `0x11F6` = this.cast(0x11F6)
+  def COMMAND_READ_IMAGE: `0x11F6` = 0x11F6.asInstanceOf[`0x11F6`]
   @scala.inline
-  def COMMAND_TASK: `0x11F1` = this.cast(0x11F1)
+  def COMMAND_TASK: `0x11F1` = 0x11F1.asInstanceOf[`0x11F1`]
   @scala.inline
-  def COMMAND_USER: `0x1204` = this.cast(0x1204)
+  def COMMAND_USER: `0x1204` = 0x1204.asInstanceOf[`0x1204`]
   @scala.inline
-  def COMMAND_WRITE_BUFFER: `0x11F4` = this.cast(0x11F4)
+  def COMMAND_WRITE_BUFFER: `0x11F4` = 0x11F4.asInstanceOf[`0x11F4`]
   @scala.inline
-  def COMMAND_WRITE_BUFFER_RECT: `0x1202` = this.cast(0x1202)
+  def COMMAND_WRITE_BUFFER_RECT: `0x1202` = 0x1202.asInstanceOf[`0x1202`]
   @scala.inline
-  def COMMAND_WRITE_IMAGE: `0x11F7` = this.cast(0x11F7)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def COMMAND_WRITE_IMAGE: `0x11F7` = 0x11F7.asInstanceOf[`0x11F7`]
 }
 

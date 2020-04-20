@@ -71,128 +71,126 @@ trait Language extends js.Object
 
 object Language {
   @scala.inline
-  def ar: typings.googleMaps.googleMapsStrings.ar = this.cast("ar")
+  def ar: typings.googleMaps.googleMapsStrings.ar = "ar".asInstanceOf[typings.googleMaps.googleMapsStrings.ar]
   @scala.inline
-  def be: typings.googleMaps.googleMapsStrings.be = this.cast("be")
+  def be: typings.googleMaps.googleMapsStrings.be = "be".asInstanceOf[typings.googleMaps.googleMapsStrings.be]
   @scala.inline
-  def bg: typings.googleMaps.googleMapsStrings.bg = this.cast("bg")
+  def bg: typings.googleMaps.googleMapsStrings.bg = "bg".asInstanceOf[typings.googleMaps.googleMapsStrings.bg]
   @scala.inline
-  def bn: typings.googleMaps.googleMapsStrings.bn = this.cast("bn")
+  def bn: typings.googleMaps.googleMapsStrings.bn = "bn".asInstanceOf[typings.googleMaps.googleMapsStrings.bn]
   @scala.inline
-  def ca: typings.googleMaps.googleMapsStrings.ca = this.cast("ca")
+  def ca: typings.googleMaps.googleMapsStrings.ca = "ca".asInstanceOf[typings.googleMaps.googleMapsStrings.ca]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cs: typings.googleMaps.googleMapsStrings.cs = "cs".asInstanceOf[typings.googleMaps.googleMapsStrings.cs]
   @scala.inline
-  def cs: typings.googleMaps.googleMapsStrings.cs = this.cast("cs")
+  def da: typings.googleMaps.googleMapsStrings.da = "da".asInstanceOf[typings.googleMaps.googleMapsStrings.da]
   @scala.inline
-  def da: typings.googleMaps.googleMapsStrings.da = this.cast("da")
+  def de: typings.googleMaps.googleMapsStrings.de = "de".asInstanceOf[typings.googleMaps.googleMapsStrings.de]
   @scala.inline
-  def de: typings.googleMaps.googleMapsStrings.de = this.cast("de")
+  def el: typings.googleMaps.googleMapsStrings.el = "el".asInstanceOf[typings.googleMaps.googleMapsStrings.el]
   @scala.inline
-  def el: typings.googleMaps.googleMapsStrings.el = this.cast("el")
+  def en: typings.googleMaps.googleMapsStrings.en = "en".asInstanceOf[typings.googleMaps.googleMapsStrings.en]
   @scala.inline
-  def en: typings.googleMaps.googleMapsStrings.en = this.cast("en")
+  def `en-Au`: typings.googleMaps.googleMapsStrings.`en-Au` = "en-Au".asInstanceOf[typings.googleMaps.googleMapsStrings.`en-Au`]
   @scala.inline
-  def `en-Au`: typings.googleMaps.googleMapsStrings.`en-Au` = this.cast("en-Au")
+  def `en-GB`: typings.googleMaps.googleMapsStrings.`en-GB` = "en-GB".asInstanceOf[typings.googleMaps.googleMapsStrings.`en-GB`]
   @scala.inline
-  def `en-GB`: typings.googleMaps.googleMapsStrings.`en-GB` = this.cast("en-GB")
+  def es: typings.googleMaps.googleMapsStrings.es = "es".asInstanceOf[typings.googleMaps.googleMapsStrings.es]
   @scala.inline
-  def es: typings.googleMaps.googleMapsStrings.es = this.cast("es")
+  def eu: typings.googleMaps.googleMapsStrings.eu = "eu".asInstanceOf[typings.googleMaps.googleMapsStrings.eu]
   @scala.inline
-  def eu: typings.googleMaps.googleMapsStrings.eu = this.cast("eu")
+  def fa: typings.googleMaps.googleMapsStrings.fa = "fa".asInstanceOf[typings.googleMaps.googleMapsStrings.fa]
   @scala.inline
-  def fa: typings.googleMaps.googleMapsStrings.fa = this.cast("fa")
+  def fi: typings.googleMaps.googleMapsStrings.fi = "fi".asInstanceOf[typings.googleMaps.googleMapsStrings.fi]
   @scala.inline
-  def fi: typings.googleMaps.googleMapsStrings.fi = this.cast("fi")
+  def fil: typings.googleMaps.googleMapsStrings.fil = "fil".asInstanceOf[typings.googleMaps.googleMapsStrings.fil]
   @scala.inline
-  def fil: typings.googleMaps.googleMapsStrings.fil = this.cast("fil")
+  def fr: typings.googleMaps.googleMapsStrings.fr = "fr".asInstanceOf[typings.googleMaps.googleMapsStrings.fr]
   @scala.inline
-  def fr: typings.googleMaps.googleMapsStrings.fr = this.cast("fr")
+  def gl: typings.googleMaps.googleMapsStrings.gl = "gl".asInstanceOf[typings.googleMaps.googleMapsStrings.gl]
   @scala.inline
-  def gl: typings.googleMaps.googleMapsStrings.gl = this.cast("gl")
+  def gu: typings.googleMaps.googleMapsStrings.gu = "gu".asInstanceOf[typings.googleMaps.googleMapsStrings.gu]
   @scala.inline
-  def gu: typings.googleMaps.googleMapsStrings.gu = this.cast("gu")
+  def hi: typings.googleMaps.googleMapsStrings.hi = "hi".asInstanceOf[typings.googleMaps.googleMapsStrings.hi]
   @scala.inline
-  def hi: typings.googleMaps.googleMapsStrings.hi = this.cast("hi")
+  def hr: typings.googleMaps.googleMapsStrings.hr = "hr".asInstanceOf[typings.googleMaps.googleMapsStrings.hr]
   @scala.inline
-  def hr: typings.googleMaps.googleMapsStrings.hr = this.cast("hr")
+  def hu: typings.googleMaps.googleMapsStrings.hu = "hu".asInstanceOf[typings.googleMaps.googleMapsStrings.hu]
   @scala.inline
-  def hu: typings.googleMaps.googleMapsStrings.hu = this.cast("hu")
+  def id: typings.googleMaps.googleMapsStrings.id = "id".asInstanceOf[typings.googleMaps.googleMapsStrings.id]
   @scala.inline
-  def id: typings.googleMaps.googleMapsStrings.id = this.cast("id")
+  def it: typings.googleMaps.googleMapsStrings.it = "it".asInstanceOf[typings.googleMaps.googleMapsStrings.it]
   @scala.inline
-  def it: typings.googleMaps.googleMapsStrings.it = this.cast("it")
+  def iw: typings.googleMaps.googleMapsStrings.iw = "iw".asInstanceOf[typings.googleMaps.googleMapsStrings.iw]
   @scala.inline
-  def iw: typings.googleMaps.googleMapsStrings.iw = this.cast("iw")
+  def ja: typings.googleMaps.googleMapsStrings.ja = "ja".asInstanceOf[typings.googleMaps.googleMapsStrings.ja]
   @scala.inline
-  def ja: typings.googleMaps.googleMapsStrings.ja = this.cast("ja")
+  def kk: typings.googleMaps.googleMapsStrings.kk = "kk".asInstanceOf[typings.googleMaps.googleMapsStrings.kk]
   @scala.inline
-  def kk: typings.googleMaps.googleMapsStrings.kk = this.cast("kk")
+  def kn: typings.googleMaps.googleMapsStrings.kn = "kn".asInstanceOf[typings.googleMaps.googleMapsStrings.kn]
   @scala.inline
-  def kn: typings.googleMaps.googleMapsStrings.kn = this.cast("kn")
+  def ko: typings.googleMaps.googleMapsStrings.ko = "ko".asInstanceOf[typings.googleMaps.googleMapsStrings.ko]
   @scala.inline
-  def ko: typings.googleMaps.googleMapsStrings.ko = this.cast("ko")
+  def ky: typings.googleMaps.googleMapsStrings.ky = "ky".asInstanceOf[typings.googleMaps.googleMapsStrings.ky]
   @scala.inline
-  def ky: typings.googleMaps.googleMapsStrings.ky = this.cast("ky")
+  def lt: typings.googleMaps.googleMapsStrings.lt = "lt".asInstanceOf[typings.googleMaps.googleMapsStrings.lt]
   @scala.inline
-  def lt: typings.googleMaps.googleMapsStrings.lt = this.cast("lt")
+  def lv: typings.googleMaps.googleMapsStrings.lv = "lv".asInstanceOf[typings.googleMaps.googleMapsStrings.lv]
   @scala.inline
-  def lv: typings.googleMaps.googleMapsStrings.lv = this.cast("lv")
+  def mk: typings.googleMaps.googleMapsStrings.mk = "mk".asInstanceOf[typings.googleMaps.googleMapsStrings.mk]
   @scala.inline
-  def mk: typings.googleMaps.googleMapsStrings.mk = this.cast("mk")
+  def ml: typings.googleMaps.googleMapsStrings.ml = "ml".asInstanceOf[typings.googleMaps.googleMapsStrings.ml]
   @scala.inline
-  def ml: typings.googleMaps.googleMapsStrings.ml = this.cast("ml")
+  def mr: typings.googleMaps.googleMapsStrings.mr = "mr".asInstanceOf[typings.googleMaps.googleMapsStrings.mr]
   @scala.inline
-  def mr: typings.googleMaps.googleMapsStrings.mr = this.cast("mr")
+  def my: typings.googleMaps.googleMapsStrings.my = "my".asInstanceOf[typings.googleMaps.googleMapsStrings.my]
   @scala.inline
-  def my: typings.googleMaps.googleMapsStrings.my = this.cast("my")
+  def nl: typings.googleMaps.googleMapsStrings.nl = "nl".asInstanceOf[typings.googleMaps.googleMapsStrings.nl]
   @scala.inline
-  def nl: typings.googleMaps.googleMapsStrings.nl = this.cast("nl")
+  def no: typings.googleMaps.googleMapsStrings.no = "no".asInstanceOf[typings.googleMaps.googleMapsStrings.no]
   @scala.inline
-  def no: typings.googleMaps.googleMapsStrings.no = this.cast("no")
+  def pa: typings.googleMaps.googleMapsStrings.pa = "pa".asInstanceOf[typings.googleMaps.googleMapsStrings.pa]
   @scala.inline
-  def pa: typings.googleMaps.googleMapsStrings.pa = this.cast("pa")
+  def pl: typings.googleMaps.googleMapsStrings.pl = "pl".asInstanceOf[typings.googleMaps.googleMapsStrings.pl]
   @scala.inline
-  def pl: typings.googleMaps.googleMapsStrings.pl = this.cast("pl")
+  def pt: typings.googleMaps.googleMapsStrings.pt = "pt".asInstanceOf[typings.googleMaps.googleMapsStrings.pt]
   @scala.inline
-  def pt: typings.googleMaps.googleMapsStrings.pt = this.cast("pt")
+  def `pt-BR`: typings.googleMaps.googleMapsStrings.`pt-BR` = "pt-BR".asInstanceOf[typings.googleMaps.googleMapsStrings.`pt-BR`]
   @scala.inline
-  def `pt-BR`: typings.googleMaps.googleMapsStrings.`pt-BR` = this.cast("pt-BR")
+  def `pt-PT`: typings.googleMaps.googleMapsStrings.`pt-PT` = "pt-PT".asInstanceOf[typings.googleMaps.googleMapsStrings.`pt-PT`]
   @scala.inline
-  def `pt-PT`: typings.googleMaps.googleMapsStrings.`pt-PT` = this.cast("pt-PT")
+  def ro: typings.googleMaps.googleMapsStrings.ro = "ro".asInstanceOf[typings.googleMaps.googleMapsStrings.ro]
   @scala.inline
-  def ro: typings.googleMaps.googleMapsStrings.ro = this.cast("ro")
+  def ru: typings.googleMaps.googleMapsStrings.ru = "ru".asInstanceOf[typings.googleMaps.googleMapsStrings.ru]
   @scala.inline
-  def ru: typings.googleMaps.googleMapsStrings.ru = this.cast("ru")
+  def sk: typings.googleMaps.googleMapsStrings.sk = "sk".asInstanceOf[typings.googleMaps.googleMapsStrings.sk]
   @scala.inline
-  def sk: typings.googleMaps.googleMapsStrings.sk = this.cast("sk")
+  def sl: typings.googleMaps.googleMapsStrings.sl = "sl".asInstanceOf[typings.googleMaps.googleMapsStrings.sl]
   @scala.inline
-  def sl: typings.googleMaps.googleMapsStrings.sl = this.cast("sl")
+  def sq: typings.googleMaps.googleMapsStrings.sq = "sq".asInstanceOf[typings.googleMaps.googleMapsStrings.sq]
   @scala.inline
-  def sq: typings.googleMaps.googleMapsStrings.sq = this.cast("sq")
+  def sr: typings.googleMaps.googleMapsStrings.sr = "sr".asInstanceOf[typings.googleMaps.googleMapsStrings.sr]
   @scala.inline
-  def sr: typings.googleMaps.googleMapsStrings.sr = this.cast("sr")
+  def sv: typings.googleMaps.googleMapsStrings.sv = "sv".asInstanceOf[typings.googleMaps.googleMapsStrings.sv]
   @scala.inline
-  def sv: typings.googleMaps.googleMapsStrings.sv = this.cast("sv")
+  def ta: typings.googleMaps.googleMapsStrings.ta = "ta".asInstanceOf[typings.googleMaps.googleMapsStrings.ta]
   @scala.inline
-  def ta: typings.googleMaps.googleMapsStrings.ta = this.cast("ta")
+  def te: typings.googleMaps.googleMapsStrings.te = "te".asInstanceOf[typings.googleMaps.googleMapsStrings.te]
   @scala.inline
-  def te: typings.googleMaps.googleMapsStrings.te = this.cast("te")
+  def th: typings.googleMaps.googleMapsStrings.th = "th".asInstanceOf[typings.googleMaps.googleMapsStrings.th]
   @scala.inline
-  def th: typings.googleMaps.googleMapsStrings.th = this.cast("th")
+  def tl: typings.googleMaps.googleMapsStrings.tl = "tl".asInstanceOf[typings.googleMaps.googleMapsStrings.tl]
   @scala.inline
-  def tl: typings.googleMaps.googleMapsStrings.tl = this.cast("tl")
+  def tr: typings.googleMaps.googleMapsStrings.tr = "tr".asInstanceOf[typings.googleMaps.googleMapsStrings.tr]
   @scala.inline
-  def tr: typings.googleMaps.googleMapsStrings.tr = this.cast("tr")
+  def uk: typings.googleMaps.googleMapsStrings.uk = "uk".asInstanceOf[typings.googleMaps.googleMapsStrings.uk]
   @scala.inline
-  def uk: typings.googleMaps.googleMapsStrings.uk = this.cast("uk")
+  def uz: typings.googleMaps.googleMapsStrings.uz = "uz".asInstanceOf[typings.googleMaps.googleMapsStrings.uz]
   @scala.inline
-  def uz: typings.googleMaps.googleMapsStrings.uz = this.cast("uz")
+  def vi: typings.googleMaps.googleMapsStrings.vi = "vi".asInstanceOf[typings.googleMaps.googleMapsStrings.vi]
   @scala.inline
-  def vi: typings.googleMaps.googleMapsStrings.vi = this.cast("vi")
+  def `zh-CN`: typings.googleMaps.googleMapsStrings.`zh-CN` = "zh-CN".asInstanceOf[typings.googleMaps.googleMapsStrings.`zh-CN`]
   @scala.inline
-  def `zh-CN`: typings.googleMaps.googleMapsStrings.`zh-CN` = this.cast("zh-CN")
-  @scala.inline
-  def `zh-TW`: typings.googleMaps.googleMapsStrings.`zh-TW` = this.cast("zh-TW")
+  def `zh-TW`: typings.googleMaps.googleMapsStrings.`zh-TW` = "zh-TW".asInstanceOf[typings.googleMaps.googleMapsStrings.`zh-TW`]
 }
 

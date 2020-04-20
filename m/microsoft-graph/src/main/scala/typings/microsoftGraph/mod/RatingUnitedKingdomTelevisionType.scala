@@ -13,12 +13,10 @@ trait RatingUnitedKingdomTelevisionType extends js.Object
 
 object RatingUnitedKingdomTelevisionType {
   @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = this.cast("allAllowed")
+  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = this.cast("allBlocked")
+  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def caution: typings.microsoftGraph.microsoftGraphStrings.caution = this.cast("caution")
+  def caution: typings.microsoftGraph.microsoftGraphStrings.caution = "caution".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.caution]
 }
 

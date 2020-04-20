@@ -13,7 +13,6 @@ object AnonContainer {
   @scala.inline
   def apply(container: String, script: String): AnonContainer = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContainer]
   }
 }

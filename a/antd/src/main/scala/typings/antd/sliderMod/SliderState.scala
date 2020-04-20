@@ -13,7 +13,6 @@ object SliderState {
   @scala.inline
   def apply(visibles: NumberDictionary[Boolean]): SliderState = {
     val __obj = js.Dynamic.literal(visibles = visibles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SliderState]
   }
 }

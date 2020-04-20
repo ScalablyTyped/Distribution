@@ -20,7 +20,6 @@ object RemovalCallback {
     elements: Callback | js.Array[String]
   ): RemovalCallback = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], docTypes = docTypes.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemovalCallback]
   }
 }

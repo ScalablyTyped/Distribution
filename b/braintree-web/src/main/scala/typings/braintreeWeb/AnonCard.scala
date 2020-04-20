@@ -14,7 +14,6 @@ object AnonCard {
   @scala.inline
   def apply(card: js.Any, hostedFields: HostedFields_): AnonCard = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], hostedFields = hostedFields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCard]
   }
 }

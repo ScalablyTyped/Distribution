@@ -1,5 +1,6 @@
 package typings.routeParser.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.routeParser.routeParserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +30,7 @@ class ^[TParams /* <: js.Object */] protected () extends Route[TParams] {
   /* CompleteClass */
   override def `match`(pathname: String): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof TParams ]: string}
-    */ typings.routeParser.routeParserStrings.Route with js.Any) | `false` = js.native
+    */ typings.routeParser.routeParserStrings.Route with TopLevel[js.Any]) | `false` = js.native
   /**
     * Reverse a route specification to a path, returning false if it can't be
     * fulfilled

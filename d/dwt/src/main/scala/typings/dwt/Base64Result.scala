@@ -17,7 +17,6 @@ object Base64Result {
   @scala.inline
   def apply(getData: (Double, Double) => String, getLength: () => Double, getMD5: () => String): Base64Result = {
     val __obj = js.Dynamic.literal(getData = js.Any.fromFunction2(getData), getLength = js.Any.fromFunction0(getLength), getMD5 = js.Any.fromFunction0(getMD5))
-  
     __obj.asInstanceOf[Base64Result]
   }
 }

@@ -13,7 +13,6 @@ object TypeofMQ {
   @scala.inline
   def apply(Types: TypeofMQ): TypeofMQ = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofMQ]
   }
 }

@@ -23,7 +23,6 @@ object TokenRequestStatus {
   @scala.inline
   def apply(expirationTimestamp: Input[String], token: Input[String]): TokenRequestStatus = {
     val __obj = js.Dynamic.literal(expirationTimestamp = expirationTimestamp.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TokenRequestStatus]
   }
 }

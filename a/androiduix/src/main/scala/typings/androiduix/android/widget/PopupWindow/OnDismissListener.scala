@@ -12,7 +12,6 @@ object OnDismissListener {
   @scala.inline
   def apply(onDismiss: () => Unit): OnDismissListener = {
     val __obj = js.Dynamic.literal(onDismiss = js.Any.fromFunction0(onDismiss))
-  
     __obj.asInstanceOf[OnDismissListener]
   }
 }

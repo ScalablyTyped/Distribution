@@ -15,7 +15,6 @@ object ViewTuple {
   @scala.inline
   def apply(uiView: ActiveUIView, viewConfig: ViewConfig): ViewTuple = {
     val __obj = js.Dynamic.literal(uiView = uiView.asInstanceOf[js.Any], viewConfig = viewConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViewTuple]
   }
 }

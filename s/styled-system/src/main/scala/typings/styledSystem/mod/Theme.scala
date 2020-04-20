@@ -22,49 +22,51 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Theme[TLength] extends js.Object {
-  var borderStyles: js.UndefOr[ObjectOrArray[BorderProperty[js.Object], String]] = js.undefined
-  var borderWidths: js.UndefOr[ObjectOrArray[BorderWidthProperty[TLength], String]] = js.undefined
-  var borders: js.UndefOr[ObjectOrArray[BorderProperty[js.Object], String]] = js.undefined
-  var breakpoints: js.UndefOr[ObjectOrArray[Double | String | js.Symbol, String]] = js.undefined
-  var buttons: js.UndefOr[ObjectOrArray[StandardProperties[String | `0`], String]] = js.undefined
-  var colorStyles: js.UndefOr[ObjectOrArray[StandardProperties[String | `0`], String]] = js.undefined
-  var colors: js.UndefOr[ObjectOrArray[ColorProperty, String]] = js.undefined
-  var fontSizes: js.UndefOr[ObjectOrArray[FontSizeProperty[Double], String]] = js.undefined
-  var fontWeights: js.UndefOr[ObjectOrArray[FontWeightProperty, String]] = js.undefined
-  var fonts: js.UndefOr[ObjectOrArray[FontFamilyProperty, String]] = js.undefined
-  var letterSpacings: js.UndefOr[ObjectOrArray[LetterSpacingProperty[TLength], String]] = js.undefined
-  var lineHeights: js.UndefOr[ObjectOrArray[LineHeightProperty[TLength], String]] = js.undefined
+  var borderStyles: js.UndefOr[ObjectOrArray[BorderProperty[js.Object], /* keyof any */ String]] = js.undefined
+  var borderWidths: js.UndefOr[ObjectOrArray[BorderWidthProperty[TLength], /* keyof any */ String]] = js.undefined
+  var borders: js.UndefOr[ObjectOrArray[BorderProperty[js.Object], /* keyof any */ String]] = js.undefined
+  var breakpoints: js.UndefOr[ObjectOrArray[Double | String | js.Symbol, /* keyof any */ String]] = js.undefined
+  var buttons: js.UndefOr[ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]] = js.undefined
+  var colorStyles: js.UndefOr[ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]] = js.undefined
+  var colors: js.UndefOr[ObjectOrArray[ColorProperty, /* keyof any */ String]] = js.undefined
+  var fontSizes: js.UndefOr[ObjectOrArray[FontSizeProperty[Double], /* keyof any */ String]] = js.undefined
+  var fontWeights: js.UndefOr[ObjectOrArray[FontWeightProperty, /* keyof any */ String]] = js.undefined
+  var fonts: js.UndefOr[ObjectOrArray[FontFamilyProperty, /* keyof any */ String]] = js.undefined
+  var letterSpacings: js.UndefOr[ObjectOrArray[LetterSpacingProperty[TLength], /* keyof any */ String]] = js.undefined
+  var lineHeights: js.UndefOr[ObjectOrArray[LineHeightProperty[TLength], /* keyof any */ String]] = js.undefined
   var mediaQueries: js.UndefOr[StringDictionary[String]] = js.undefined
-  var radii: js.UndefOr[ObjectOrArray[BorderRadiusProperty[TLength], String]] = js.undefined
-  var shadows: js.UndefOr[ObjectOrArray[BoxShadowProperty, String]] = js.undefined
-  var sizes: js.UndefOr[ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object], String]] = js.undefined
-  var space: js.UndefOr[ObjectOrArray[MarginProperty[Double | String], String]] = js.undefined
-  var textStyles: js.UndefOr[ObjectOrArray[StandardProperties[String | `0`], String]] = js.undefined
-  var zIndices: js.UndefOr[ObjectOrArray[ZIndexProperty, String]] = js.undefined
+  var radii: js.UndefOr[ObjectOrArray[BorderRadiusProperty[TLength], /* keyof any */ String]] = js.undefined
+  var shadows: js.UndefOr[ObjectOrArray[BoxShadowProperty, /* keyof any */ String]] = js.undefined
+  var sizes: js.UndefOr[
+    ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object], /* keyof any */ String]
+  ] = js.undefined
+  var space: js.UndefOr[ObjectOrArray[MarginProperty[Double | String], /* keyof any */ String]] = js.undefined
+  var textStyles: js.UndefOr[ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]] = js.undefined
+  var zIndices: js.UndefOr[ObjectOrArray[ZIndexProperty, /* keyof any */ String]] = js.undefined
 }
 
 object Theme {
   @scala.inline
   def apply[TLength](
-    borderStyles: ObjectOrArray[BorderProperty[js.Object], String] = null,
-    borderWidths: ObjectOrArray[BorderWidthProperty[TLength], String] = null,
-    borders: ObjectOrArray[BorderProperty[js.Object], String] = null,
-    breakpoints: ObjectOrArray[Double | String | js.Symbol, String] = null,
-    buttons: ObjectOrArray[StandardProperties[String | `0`], String] = null,
-    colorStyles: ObjectOrArray[StandardProperties[String | `0`], String] = null,
-    colors: ObjectOrArray[ColorProperty, String] = null,
-    fontSizes: ObjectOrArray[FontSizeProperty[Double], String] = null,
-    fontWeights: ObjectOrArray[FontWeightProperty, String] = null,
-    fonts: ObjectOrArray[FontFamilyProperty, String] = null,
-    letterSpacings: ObjectOrArray[LetterSpacingProperty[TLength], String] = null,
-    lineHeights: ObjectOrArray[LineHeightProperty[TLength], String] = null,
+    borderStyles: ObjectOrArray[BorderProperty[js.Object], /* keyof any */ String] = null,
+    borderWidths: ObjectOrArray[BorderWidthProperty[TLength], /* keyof any */ String] = null,
+    borders: ObjectOrArray[BorderProperty[js.Object], /* keyof any */ String] = null,
+    breakpoints: ObjectOrArray[Double | String | js.Symbol, /* keyof any */ String] = null,
+    buttons: ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String] = null,
+    colorStyles: ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String] = null,
+    colors: ObjectOrArray[ColorProperty, /* keyof any */ String] = null,
+    fontSizes: ObjectOrArray[FontSizeProperty[Double], /* keyof any */ String] = null,
+    fontWeights: ObjectOrArray[FontWeightProperty, /* keyof any */ String] = null,
+    fonts: ObjectOrArray[FontFamilyProperty, /* keyof any */ String] = null,
+    letterSpacings: ObjectOrArray[LetterSpacingProperty[TLength], /* keyof any */ String] = null,
+    lineHeights: ObjectOrArray[LineHeightProperty[TLength], /* keyof any */ String] = null,
     mediaQueries: StringDictionary[String] = null,
-    radii: ObjectOrArray[BorderRadiusProperty[TLength], String] = null,
-    shadows: ObjectOrArray[BoxShadowProperty, String] = null,
-    sizes: ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object], String] = null,
-    space: ObjectOrArray[MarginProperty[Double | String], String] = null,
-    textStyles: ObjectOrArray[StandardProperties[String | `0`], String] = null,
-    zIndices: ObjectOrArray[ZIndexProperty, String] = null
+    radii: ObjectOrArray[BorderRadiusProperty[TLength], /* keyof any */ String] = null,
+    shadows: ObjectOrArray[BoxShadowProperty, /* keyof any */ String] = null,
+    sizes: ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object], /* keyof any */ String] = null,
+    space: ObjectOrArray[MarginProperty[Double | String], /* keyof any */ String] = null,
+    textStyles: ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String] = null,
+    zIndices: ObjectOrArray[ZIndexProperty, /* keyof any */ String] = null
   ): Theme[TLength] = {
     val __obj = js.Dynamic.literal()
     if (borderStyles != null) __obj.updateDynamic("borderStyles")(borderStyles.asInstanceOf[js.Any])

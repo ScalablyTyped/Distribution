@@ -27,7 +27,6 @@ object ListTagsForStreamOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, HasMoreTags: Boolean, Tags: js.Array[UnmarshalledTag]): ListTagsForStreamOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], HasMoreTags = HasMoreTags.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTagsForStreamOutput]
   }
 }

@@ -28,7 +28,6 @@ object default {
   @scala.inline
   def apply(getPlatformDefaultId: () => Unit, load: (js.Any, js.Any, js.Any, js.Any) => Unit): default = {
     val __obj = js.Dynamic.literal(getPlatformDefaultId = js.Any.fromFunction0(getPlatformDefaultId), load = js.Any.fromFunction4(load))
-  
     __obj.asInstanceOf[default]
   }
 }

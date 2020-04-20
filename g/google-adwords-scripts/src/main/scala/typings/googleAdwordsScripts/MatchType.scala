@@ -13,12 +13,10 @@ trait MatchType extends js.Object
 
 object MatchType {
   @scala.inline
-  def BROAD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.BROAD = this.cast("BROAD")
+  def BROAD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.BROAD = "BROAD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.BROAD]
   @scala.inline
-  def EXACT: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXACT = this.cast("EXACT")
+  def EXACT: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXACT = "EXACT".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXACT]
   @scala.inline
-  def PHRASE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHRASE = this.cast("PHRASE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PHRASE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHRASE = "PHRASE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHRASE]
 }
 

@@ -107,7 +107,7 @@ class Context_[T /* <: IModel */] protected () extends IContext[T] {
     * It will have an  empty `contents` field.
     */
   @JSName("contentsModel")
-  def contentsModel_MContext_(): typings.jupyterlabServices.contentsMod.Contents.IModel | Null = js.native
+  def contentsModel_MContext_ : typings.jupyterlabServices.contentsMod.Contents.IModel | Null = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -125,19 +125,19 @@ class Context_[T /* <: IModel */] protected () extends IContext[T] {
     * A signal emitted when the context is disposed.
     */
   @JSName("disposed")
-  def disposed_MContext_(): ISignal[this.type, Unit] = js.native
+  def disposed_MContext_ : ISignal[this.type, Unit] = js.native
   /**
     * Get the model factory name.
     *
     * #### Notes
     * This is not part of the `IContext` API.
     */
-  def factoryName(): String = js.native
+  def factoryName: String = js.native
   /**
     * A signal emitted when the model is saved or reverted.
     */
   @JSName("fileChanged")
-  def fileChanged_MContext_(): ISignal[this.type, typings.jupyterlabServices.contentsMod.Contents.IModel] = js.native
+  def fileChanged_MContext_ : ISignal[this.type, typings.jupyterlabServices.contentsMod.Contents.IModel] = js.native
   /**
     * Initialize the context.
     *
@@ -150,43 +150,43 @@ class Context_[T /* <: IModel */] protected () extends IContext[T] {
     * Test whether the context is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MContext_(): Boolean = js.native
+  def isDisposed_MContext_ : Boolean = js.native
   /**
     * Whether the context is ready.
     */
   @JSName("isReady")
-  def isReady_MContext_(): Boolean = js.native
+  def isReady_MContext_ : Boolean = js.native
   /**
     * The current local path associated with the document.
     * If the document is in the default notebook file browser,
     * this is the same as the path.
     */
   @JSName("localPath")
-  def localPath_MContext_(): String = js.native
+  def localPath_MContext_ : String = js.native
   /**
     * Get the model associated with the document.
     */
   @JSName("model")
-  def model_MContext_(): T = js.native
+  def model_MContext_ : T = js.native
   /**
     * A signal emitted when the path changes.
     */
   @JSName("pathChanged")
-  def pathChanged_MContext_(): ISignal[this.type, String] = js.native
+  def pathChanged_MContext_ : ISignal[this.type, String] = js.native
   /**
     * The current path associated with the document.
     */
   @JSName("path")
-  def path_MContext_(): String = js.native
+  def path_MContext_ : String = js.native
   /**
     * A promise that is fulfilled when the context is ready.
     */
   @JSName("ready")
-  def ready_MContext_(): js.Promise[Unit] = js.native
+  def ready_MContext_ : js.Promise[Unit] = js.native
   /**
     * A signal emitted on the start and end of a saving operation.
     */
   @JSName("saveState")
-  def saveState_MContext_(): ISignal[this.type, SaveState] = js.native
+  def saveState_MContext_ : ISignal[this.type, SaveState] = js.native
 }
 

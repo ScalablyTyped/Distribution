@@ -30,7 +30,6 @@ object IRoute {
     stack: js.Any
   ): IRoute = {
     val __obj = js.Dynamic.literal(all = js.Any.fromFunction1(all), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), options = js.Any.fromFunction1(options), patch = js.Any.fromFunction1(patch), path = path.asInstanceOf[js.Any], post = js.Any.fromFunction1(post), put = js.Any.fromFunction1(put), stack = stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRoute]
   }
 }

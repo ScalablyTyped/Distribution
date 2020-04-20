@@ -14,7 +14,6 @@ object GetBrokerEncryptionOption {
   @scala.inline
   def apply(kmsKeyId: String, useAwsOwnedKey: Boolean): GetBrokerEncryptionOption = {
     val __obj = js.Dynamic.literal(kmsKeyId = kmsKeyId.asInstanceOf[js.Any], useAwsOwnedKey = useAwsOwnedKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBrokerEncryptionOption]
   }
 }

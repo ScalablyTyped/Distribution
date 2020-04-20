@@ -42,7 +42,6 @@ object IEntityAcquiredItemEventData {
     secondary_entity: IEntity
   ): IEntityAcquiredItemEventData = {
     val __obj = js.Dynamic.literal(acquired_amount = acquired_amount.asInstanceOf[js.Any], acquisition_method = acquisition_method.asInstanceOf[js.Any], entity = entity.asInstanceOf[js.Any], item_stack = item_stack.asInstanceOf[js.Any], secondary_entity = secondary_entity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEntityAcquiredItemEventData]
   }
 }

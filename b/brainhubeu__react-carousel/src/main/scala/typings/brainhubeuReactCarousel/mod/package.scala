@@ -10,7 +10,7 @@ package object mod {
     typings.std.Pick[
       typings.react.mod.ComponentProps[typings.brainhubeuReactCarousel.brainhubeuReactCarouselStrings.img], 
       typings.std.Exclude[
-        java.lang.String, 
+        /* keyof react.react.ComponentProps<'img'> */ java.lang.String, 
         typings.brainhubeuReactCarousel.brainhubeuReactCarouselStrings.key | typings.brainhubeuReactCarousel.brainhubeuReactCarouselStrings.ref
       ]
     ]

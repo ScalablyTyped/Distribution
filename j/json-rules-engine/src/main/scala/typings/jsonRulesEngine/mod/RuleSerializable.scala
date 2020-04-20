@@ -16,7 +16,6 @@ object RuleSerializable {
   @scala.inline
   def apply(conditions: TopLevelCondition, event: Event, name: String, priority: Double): RuleSerializable = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuleSerializable]
   }
 }

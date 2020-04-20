@@ -12,7 +12,6 @@ object Extension {
   @scala.inline
   def apply(id: String): Extension = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Extension]
   }
 }

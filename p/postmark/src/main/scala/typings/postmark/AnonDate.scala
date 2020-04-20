@@ -13,7 +13,6 @@ object AnonDate {
   @scala.inline
   def apply(Date: String, Sent: Double): AnonDate = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], Sent = Sent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDate]
   }
 }

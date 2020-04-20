@@ -13,10 +13,8 @@ trait AvailableWidths_ extends js.Object
 
 object AvailableWidths_ {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def grow: typings.higButton.higButtonStrings.grow = "grow".asInstanceOf[typings.higButton.higButtonStrings.grow]
   @scala.inline
-  def grow: typings.higButton.higButtonStrings.grow = this.cast("grow")
-  @scala.inline
-  def shrink: typings.higButton.higButtonStrings.shrink = this.cast("shrink")
+  def shrink: typings.higButton.higButtonStrings.shrink = "shrink".asInstanceOf[typings.higButton.higButtonStrings.shrink]
 }
 

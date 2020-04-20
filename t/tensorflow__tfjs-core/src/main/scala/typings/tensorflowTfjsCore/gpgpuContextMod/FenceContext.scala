@@ -15,7 +15,6 @@ object FenceContext {
   @scala.inline
   def apply(isFencePassed: () => Boolean, query: WebGLQuery | WebGLSync): FenceContext = {
     val __obj = js.Dynamic.literal(isFencePassed = js.Any.fromFunction0(isFencePassed), query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FenceContext]
   }
 }

@@ -24,7 +24,6 @@ object UpdateDetectorVersionStatusRequest {
   @scala.inline
   def apply(detectorId: identifier, detectorVersionId: nonEmptyString, status: DetectorVersionStatus): UpdateDetectorVersionStatusRequest = {
     val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any], detectorVersionId = detectorVersionId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDetectorVersionStatusRequest]
   }
 }

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -43,6 +44,12 @@ trait opacityCreateVisualVariableParams extends Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-opacity.html#createVisualVariable)
     */
   var normalizationField: js.UndefOr[String] = js.undefined
+  /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-opacity.html#createVisualVariable)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   /**
     * A SQL expression evaluating to a number.
     *
@@ -93,6 +100,7 @@ object opacityCreateVisualVariableParams {
     maxValue: Int | Double = null,
     minValue: Int | Double = null,
     normalizationField: String = null,
+    signal: AbortSignal = null,
     sqlExpression: String = null,
     sqlWhere: String = null,
     statistics: SummaryStatisticsResult = null,
@@ -106,6 +114,7 @@ object opacityCreateVisualVariableParams {
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
     if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])

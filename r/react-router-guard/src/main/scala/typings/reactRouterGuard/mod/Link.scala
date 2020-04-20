@@ -1,13 +1,20 @@
 package typings.reactRouterGuard.mod
 
-import typings.react.mod.Component
+import typings.react.mod.PropsWithoutRef
+import typings.react.mod.RefAttributes
 import typings.reactRouterDom.mod.LinkProps
+import typings.std.HTMLAnchorElement
+import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-router-guard", "Link")
 @js.native
-class Link[S] ()
-  extends Component[LinkProps[S], js.Any, js.Any]
+object Link extends js.Object {
+  def apply[S](
+    // TODO: Define this as ...params: Parameters<Link<S>> when only TypeScript >= 3.1 support is needed.
+  props: PropsWithoutRef[LinkProps[S]] with RefAttributes[HTMLAnchorElement]
+  ): ReturnType[typings.reactRouterDom.mod.Link[S]] = js.native
+}
 

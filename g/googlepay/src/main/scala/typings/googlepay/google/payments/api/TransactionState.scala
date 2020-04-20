@@ -27,10 +27,8 @@ trait TransactionState extends js.Object
 
 object TransactionState {
   @scala.inline
-  def ERROR: typings.googlepay.googlepayStrings.ERROR = this.cast("ERROR")
+  def ERROR: typings.googlepay.googlepayStrings.ERROR = "ERROR".asInstanceOf[typings.googlepay.googlepayStrings.ERROR]
   @scala.inline
-  def SUCCESS: typings.googlepay.googlepayStrings.SUCCESS = this.cast("SUCCESS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SUCCESS: typings.googlepay.googlepayStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.googlepay.googlepayStrings.SUCCESS]
 }
 

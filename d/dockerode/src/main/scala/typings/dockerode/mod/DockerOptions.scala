@@ -2,6 +2,7 @@ package typings.dockerode.mod
 
 import typings.dockerode.dockerodeStrings.http
 import typings.dockerode.dockerodeStrings.https
+import typings.dockerode.dockerodeStrings.ssh
 import typings.node.Buffer
 import typings.std.PromiseConstructor
 import scala.scalajs.js
@@ -15,9 +16,11 @@ trait DockerOptions extends js.Object {
   var host: js.UndefOr[String] = js.undefined
   var key: js.UndefOr[String | (js.Array[Buffer | KeyObject | String]) | Buffer] = js.undefined
   var port: js.UndefOr[Double | String] = js.undefined
-  var protocol: js.UndefOr[https | http] = js.undefined
+  var protocol: js.UndefOr[https | http | ssh] = js.undefined
   var socketPath: js.UndefOr[String] = js.undefined
+  var sshAuthAgent: js.UndefOr[String] = js.undefined
   var timeout: js.UndefOr[Double] = js.undefined
+  var username: js.UndefOr[String] = js.undefined
   var version: js.UndefOr[String] = js.undefined
 }
 
@@ -30,9 +33,11 @@ object DockerOptions {
     host: String = null,
     key: String | (js.Array[Buffer | KeyObject | String]) | Buffer = null,
     port: Double | String = null,
-    protocol: https | http = null,
+    protocol: https | http | ssh = null,
     socketPath: String = null,
+    sshAuthAgent: String = null,
     timeout: Int | Double = null,
+    username: String = null,
     version: String = null
   ): DockerOptions = {
     val __obj = js.Dynamic.literal()
@@ -44,7 +49,9 @@ object DockerOptions {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
+    if (sshAuthAgent != null) __obj.updateDynamic("sshAuthAgent")(sshAuthAgent.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DockerOptions]
   }

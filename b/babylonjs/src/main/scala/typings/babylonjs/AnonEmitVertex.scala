@@ -19,7 +19,6 @@ object AnonEmitVertex {
     notConnectedNonOptionalInputs: js.Array[NodeMaterialConnectionPoint]
   ): AnonEmitVertex = {
     val __obj = js.Dynamic.literal(emitFragment = emitFragment.asInstanceOf[js.Any], emitVertex = emitVertex.asInstanceOf[js.Any], notConnectedNonOptionalInputs = notConnectedNonOptionalInputs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmitVertex]
   }
 }

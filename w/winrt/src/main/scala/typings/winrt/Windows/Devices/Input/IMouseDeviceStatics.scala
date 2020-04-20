@@ -12,7 +12,6 @@ object IMouseDeviceStatics {
   @scala.inline
   def apply(getForCurrentView: () => MouseDevice): IMouseDeviceStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView))
-  
     __obj.asInstanceOf[IMouseDeviceStatics]
   }
 }

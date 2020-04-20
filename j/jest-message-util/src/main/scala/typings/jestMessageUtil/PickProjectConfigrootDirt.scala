@@ -16,7 +16,6 @@ object PickProjectConfigrootDirt {
   @scala.inline
   def apply(rootDir: Path, testMatch: js.Array[Glob]): PickProjectConfigrootDirt = {
     val __obj = js.Dynamic.literal(rootDir = rootDir.asInstanceOf[js.Any], testMatch = testMatch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickProjectConfigrootDirt]
   }
 }

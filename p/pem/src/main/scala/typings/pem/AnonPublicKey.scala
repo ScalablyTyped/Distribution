@@ -12,7 +12,6 @@ object AnonPublicKey {
   @scala.inline
   def apply(publicKey: String): AnonPublicKey = {
     val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPublicKey]
   }
 }

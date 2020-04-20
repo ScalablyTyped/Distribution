@@ -13,7 +13,6 @@ object FetchMoreOptions {
   @scala.inline
   def apply[TData, TVariables](updateQuery: (TData, AnonFetchMoreResult[TData, TVariables]) => TData): FetchMoreOptions[TData, TVariables] = {
     val __obj = js.Dynamic.literal(updateQuery = js.Any.fromFunction2(updateQuery))
-  
     __obj.asInstanceOf[FetchMoreOptions[TData, TVariables]]
   }
 }

@@ -44,7 +44,6 @@ object GroupsResource {
     testIamPermissions: AnonOauthtoken => Request_[TestPermissionsResponse]
   ): GroupsResource = {
     val __obj = js.Dynamic.literal(addMember = js.Any.fromFunction1(addMember), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), removeMember = js.Any.fromFunction1(removeMember), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
-  
     __obj.asInstanceOf[GroupsResource]
   }
 }

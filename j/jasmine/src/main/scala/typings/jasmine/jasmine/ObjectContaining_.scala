@@ -1,5 +1,6 @@
 package typings.jasmine.jasmine
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jasmine.jasmineStrings.ObjectContaining
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,10 +13,10 @@ trait ObjectContaining_[T]
     js.Function1[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? any}
-    */ /* sample */ ObjectContaining with js.Any, 
+    */ /* sample */ ObjectContaining with TopLevel[js.Any], 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? any}
-    */ ObjectContaining with js.Any
+    */ ObjectContaining with TopLevel[js.Any]
     ]
   ] = js.undefined
   def jasmineMatches(other: js.Any, mismatchKeys: js.Array[_], mismatchValues: js.Array[_]): Boolean
@@ -29,9 +30,9 @@ object ObjectContaining_ {
     jasmineToString: () => String = null,
     `new`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? any}
-    */ /* sample */ ObjectContaining with js.Any => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ /* sample */ ObjectContaining with TopLevel[js.Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? any}
-    */ ObjectContaining with js.Any = null
+    */ ObjectContaining with TopLevel[js.Any] = null
   ): ObjectContaining_[T] = {
     val __obj = js.Dynamic.literal(asymmetricMatch = js.Any.fromFunction2(asymmetricMatch), jasmineMatches = js.Any.fromFunction3(jasmineMatches))
     if (jasmineToString != null) __obj.updateDynamic("jasmineToString")(js.Any.fromFunction0(jasmineToString))

@@ -16,7 +16,6 @@ object GetHealthCheckStatusRequest {
   @scala.inline
   def apply(HealthCheckId: HealthCheckId): GetHealthCheckStatusRequest = {
     val __obj = js.Dynamic.literal(HealthCheckId = HealthCheckId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHealthCheckStatusRequest]
   }
 }

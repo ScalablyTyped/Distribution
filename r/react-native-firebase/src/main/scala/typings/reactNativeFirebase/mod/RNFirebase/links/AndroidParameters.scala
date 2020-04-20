@@ -18,7 +18,6 @@ object AndroidParameters {
     setPackageName: String => DynamicLink
   ): AndroidParameters = {
     val __obj = js.Dynamic.literal(setFallbackUrl = js.Any.fromFunction1(setFallbackUrl), setMinimumVersion = js.Any.fromFunction1(setMinimumVersion), setPackageName = js.Any.fromFunction1(setPackageName))
-  
     __obj.asInstanceOf[AndroidParameters]
   }
 }

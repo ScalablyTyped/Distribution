@@ -20,7 +20,6 @@ object IndexStatistics {
   @scala.inline
   def apply(FaqStatistics: FaqStatistics, TextDocumentStatistics: TextDocumentStatistics): IndexStatistics = {
     val __obj = js.Dynamic.literal(FaqStatistics = FaqStatistics.asInstanceOf[js.Any], TextDocumentStatistics = TextDocumentStatistics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IndexStatistics]
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait Bluebird[R]
   extends PromiseLike[R]
      with Inspection[R] {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   var toStringTag: js.Any = js.native
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.

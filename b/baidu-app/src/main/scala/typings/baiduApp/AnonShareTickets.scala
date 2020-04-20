@@ -13,7 +13,6 @@ object AnonShareTickets {
   @scala.inline
   def apply(shareTickets: js.Array[String]): AnonShareTickets = {
     val __obj = js.Dynamic.literal(shareTickets = shareTickets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShareTickets]
   }
 }

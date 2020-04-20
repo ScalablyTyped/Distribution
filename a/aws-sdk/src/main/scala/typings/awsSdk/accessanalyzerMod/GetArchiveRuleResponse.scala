@@ -13,7 +13,6 @@ object GetArchiveRuleResponse {
   @scala.inline
   def apply(archiveRule: ArchiveRuleSummary): GetArchiveRuleResponse = {
     val __obj = js.Dynamic.literal(archiveRule = archiveRule.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetArchiveRuleResponse]
   }
 }

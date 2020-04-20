@@ -45,7 +45,6 @@ object Node {
     touch: /* repeated */ js.Any => Unit
   ): Node[T] = {
     val __obj = js.Dynamic.literal(checkIntegrity = js.Any.fromFunction1(checkIntegrity), getNext = js.Any.fromFunction1(getNext), getPrevious = js.Any.fromFunction1(getPrevious), log = js.Any.fromFunction4(log), reduce = js.Any.fromFunction6(reduce), summary = js.Any.fromFunction1(summary), touch = js.Any.fromFunction1(touch))
-  
     __obj.asInstanceOf[Node[T]]
   }
 }

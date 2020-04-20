@@ -17,20 +17,18 @@ trait Engine extends js.Object
 
 object Engine {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circo: typings.d3Graphviz.d3GraphvizStrings.circo = "circo".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.circo]
   @scala.inline
-  def circo: typings.d3Graphviz.d3GraphvizStrings.circo = this.cast("circo")
+  def dot: typings.d3Graphviz.d3GraphvizStrings.dot = "dot".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.dot]
   @scala.inline
-  def dot: typings.d3Graphviz.d3GraphvizStrings.dot = this.cast("dot")
+  def fdp: typings.d3Graphviz.d3GraphvizStrings.fdp = "fdp".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.fdp]
   @scala.inline
-  def fdp: typings.d3Graphviz.d3GraphvizStrings.fdp = this.cast("fdp")
+  def neato: typings.d3Graphviz.d3GraphvizStrings.neato = "neato".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.neato]
   @scala.inline
-  def neato: typings.d3Graphviz.d3GraphvizStrings.neato = this.cast("neato")
+  def osage: typings.d3Graphviz.d3GraphvizStrings.osage = "osage".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.osage]
   @scala.inline
-  def osage: typings.d3Graphviz.d3GraphvizStrings.osage = this.cast("osage")
+  def patchwork: typings.d3Graphviz.d3GraphvizStrings.patchwork = "patchwork".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.patchwork]
   @scala.inline
-  def patchwork: typings.d3Graphviz.d3GraphvizStrings.patchwork = this.cast("patchwork")
-  @scala.inline
-  def twopi: typings.d3Graphviz.d3GraphvizStrings.twopi = this.cast("twopi")
+  def twopi: typings.d3Graphviz.d3GraphvizStrings.twopi = "twopi".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.twopi]
 }
 

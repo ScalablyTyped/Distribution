@@ -13,7 +13,6 @@ object AnonInsertElement {
   @scala.inline
   def apply(insert: Element): AnonInsertElement = {
     val __obj = js.Dynamic.literal(insert = insert.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInsertElement]
   }
 }

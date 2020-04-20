@@ -44,6 +44,6 @@ object FilesInput extends js.Object {
   /**
     * List of files ready to be loaded
     */
-  def FilesToLoad(): org.scalablytyped.runtime.StringDictionary[File] = js.native
+  def FilesToLoad: org.scalablytyped.runtime.StringDictionary[File] = js.native
 }
 

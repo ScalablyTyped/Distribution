@@ -13,7 +13,6 @@ object PickImplunspecifiedField {
   @scala.inline
   def apply(unspecifiedField: String): PickImplunspecifiedField = {
     val __obj = js.Dynamic.literal(unspecifiedField = unspecifiedField.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplunspecifiedField]
   }
 }

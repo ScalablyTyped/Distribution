@@ -18,7 +18,6 @@ object IPositioningContext {
     toClientPixels: js.Array[Double] => js.Array[Double]
   ): IPositioningContext = {
     val __obj = js.Dynamic.literal(fromClientPixels = js.Any.fromFunction1(fromClientPixels), getZoom = js.Any.fromFunction0(getZoom), toClientPixels = js.Any.fromFunction1(toClientPixels))
-  
     __obj.asInstanceOf[IPositioningContext]
   }
 }

@@ -13,7 +13,6 @@ object TaskLogReference {
   @scala.inline
   def apply(id: Double, location: String): TaskLogReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskLogReference]
   }
 }

@@ -15,7 +15,6 @@ object ConnectionErrorContext {
   @scala.inline
   def apply(readyState: Double, responseText: String, status: Double, statusText: String): ConnectionErrorContext = {
     val __obj = js.Dynamic.literal(readyState = readyState.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionErrorContext]
   }
 }

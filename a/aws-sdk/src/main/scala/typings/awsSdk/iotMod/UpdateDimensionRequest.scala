@@ -20,7 +20,6 @@ object UpdateDimensionRequest {
   @scala.inline
   def apply(name: DimensionName, stringValues: DimensionStringValues): UpdateDimensionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], stringValues = stringValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDimensionRequest]
   }
 }

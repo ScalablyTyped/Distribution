@@ -22,7 +22,6 @@ object HttpDeployment {
   @scala.inline
   def apply(customDomainNames: js.Array[Output_[String]], url: Output_[String]): HttpDeployment = {
     val __obj = js.Dynamic.literal(customDomainNames = customDomainNames.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HttpDeployment]
   }
 }

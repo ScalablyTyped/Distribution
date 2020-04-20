@@ -20,26 +20,24 @@ trait TypeNameIdentifierType extends js.Object
 
 object TypeNameIdentifierType {
   @scala.inline
-  def bool: typings.slonik.slonikStrings.bool = this.cast("bool")
+  def bool: typings.slonik.slonikStrings.bool = "bool".asInstanceOf[typings.slonik.slonikStrings.bool]
   @scala.inline
-  def bytea: typings.slonik.slonikStrings.bytea = this.cast("bytea")
+  def bytea: typings.slonik.slonikStrings.bytea = "bytea".asInstanceOf[typings.slonik.slonikStrings.bytea]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def float4: typings.slonik.slonikStrings.float4 = "float4".asInstanceOf[typings.slonik.slonikStrings.float4]
   @scala.inline
-  def float4: typings.slonik.slonikStrings.float4 = this.cast("float4")
+  def float8: typings.slonik.slonikStrings.float8 = "float8".asInstanceOf[typings.slonik.slonikStrings.float8]
   @scala.inline
-  def float8: typings.slonik.slonikStrings.float8 = this.cast("float8")
+  def int2: typings.slonik.slonikStrings.int2 = "int2".asInstanceOf[typings.slonik.slonikStrings.int2]
   @scala.inline
-  def int2: typings.slonik.slonikStrings.int2 = this.cast("int2")
+  def int4: typings.slonik.slonikStrings.int4 = "int4".asInstanceOf[typings.slonik.slonikStrings.int4]
   @scala.inline
-  def int4: typings.slonik.slonikStrings.int4 = this.cast("int4")
+  def json: typings.slonik.slonikStrings.json = "json".asInstanceOf[typings.slonik.slonikStrings.json]
   @scala.inline
-  def json: typings.slonik.slonikStrings.json = this.cast("json")
+  def text: typings.slonik.slonikStrings.text = "text".asInstanceOf[typings.slonik.slonikStrings.text]
   @scala.inline
-  def text: typings.slonik.slonikStrings.text = this.cast("text")
+  def timestamptz: typings.slonik.slonikStrings.timestamptz = "timestamptz".asInstanceOf[typings.slonik.slonikStrings.timestamptz]
   @scala.inline
-  def timestamptz: typings.slonik.slonikStrings.timestamptz = this.cast("timestamptz")
-  @scala.inline
-  def uuid: typings.slonik.slonikStrings.uuid = this.cast("uuid")
+  def uuid: typings.slonik.slonikStrings.uuid = "uuid".asInstanceOf[typings.slonik.slonikStrings.uuid]
 }
 

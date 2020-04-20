@@ -22,6 +22,7 @@ object InspectOptionsStylized {
     depth: Int | Double = null,
     getters: get | set | Boolean = null,
     maxArrayLength: Int | Double = null,
+    maxStringLength: Int | Double = null,
     showHidden: js.UndefOr[Boolean] = js.undefined,
     showProxy: js.UndefOr[Boolean] = js.undefined,
     sorted: Boolean | (js.Function2[/* a */ String, /* b */ String, Double]) = null
@@ -34,6 +35,7 @@ object InspectOptionsStylized {
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
     if (maxArrayLength != null) __obj.updateDynamic("maxArrayLength")(maxArrayLength.asInstanceOf[js.Any])
+    if (maxStringLength != null) __obj.updateDynamic("maxStringLength")(maxStringLength.asInstanceOf[js.Any])
     if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.asInstanceOf[js.Any])
     if (!js.isUndefined(showProxy)) __obj.updateDynamic("showProxy")(showProxy.asInstanceOf[js.Any])
     if (sorted != null) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])

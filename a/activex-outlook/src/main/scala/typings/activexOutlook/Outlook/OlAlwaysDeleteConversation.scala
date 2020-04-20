@@ -16,12 +16,10 @@ trait OlAlwaysDeleteConversation extends js.Object
 
 object OlAlwaysDeleteConversation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAlwaysDelete: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olAlwaysDelete: `1` = this.cast(1)
+  def olAlwaysDeleteUnsupported: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olAlwaysDeleteUnsupported: `2` = this.cast(2)
-  @scala.inline
-  def olDoNotDelete: `0` = this.cast(0)
+  def olDoNotDelete: `0` = 0.asInstanceOf[`0`]
 }
 

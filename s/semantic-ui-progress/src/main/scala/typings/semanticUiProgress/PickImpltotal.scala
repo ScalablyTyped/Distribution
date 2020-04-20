@@ -14,7 +14,6 @@ object PickImpltotal {
   @scala.inline
   def apply(total: `false` | Double): PickImpltotal = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpltotal]
   }
 }

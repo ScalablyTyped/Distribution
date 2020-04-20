@@ -11,7 +11,7 @@ trait rmcPickerProps {
   type NativePickerDotiosProps = PickerProps
   type NativePickerDotiosItemProps = PickerItemProps
   @scala.inline
-  def PickerDotnativeProps: IPickerProps.type = typings.rmcPicker.pickerTypesMod.IPickerProps
+  def PickerDotnativeProps: IPickerProps.type = IPickerProps
   type PickerDotnativeProps = IPickerProps
 }
 

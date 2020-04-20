@@ -20,7 +20,6 @@ object DomainDetail {
   @scala.inline
   def apply(configuration: DomainConfiguration, domainInfo: DomainInfo): DomainDetail = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], domainInfo = domainInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainDetail]
   }
 }

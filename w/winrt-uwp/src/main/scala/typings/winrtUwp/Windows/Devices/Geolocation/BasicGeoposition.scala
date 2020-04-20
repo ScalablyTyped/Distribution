@@ -18,7 +18,6 @@ object BasicGeoposition {
   @scala.inline
   def apply(altitude: Double, latitude: Double, longitude: Double): BasicGeoposition = {
     val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasicGeoposition]
   }
 }

@@ -12,7 +12,6 @@ object KnockoutStatic {
   @scala.inline
   def apply(secureBindingsProvider: AnonInstantiable): KnockoutStatic = {
     val __obj = js.Dynamic.literal(secureBindingsProvider = secureBindingsProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutStatic]
   }
 }

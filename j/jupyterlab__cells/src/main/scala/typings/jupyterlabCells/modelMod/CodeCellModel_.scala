@@ -41,16 +41,16 @@ class CodeCellModel_ protected () extends CellModel {
   /**
     * The execution count of the cell.
     */
-  def executionCount(): ExecutionCount = js.native
+  def executionCount: ExecutionCount = js.native
   def executionCount(newValue: ExecutionCount): js.Any = js.native
   /**
     * The cell outputs.
     */
-  def outputs(): IOutputAreaModel = js.native
+  def outputs: IOutputAreaModel = js.native
   /**
     * The type of the cell.
     */
   @JSName("type")
-  def type_MCodeCellModel_(): code = js.native
+  def type_MCodeCellModel_ : code = js.native
 }
 

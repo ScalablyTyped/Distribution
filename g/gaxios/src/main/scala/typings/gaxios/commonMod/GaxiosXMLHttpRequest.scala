@@ -12,7 +12,6 @@ object GaxiosXMLHttpRequest {
   @scala.inline
   def apply(responseURL: String): GaxiosXMLHttpRequest = {
     val __obj = js.Dynamic.literal(responseURL = responseURL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GaxiosXMLHttpRequest]
   }
 }

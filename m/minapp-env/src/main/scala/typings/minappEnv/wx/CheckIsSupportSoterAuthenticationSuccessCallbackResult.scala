@@ -22,7 +22,6 @@ object CheckIsSupportSoterAuthenticationSuccessCallbackResult {
   @scala.inline
   def apply(supportMode: Array[fingerPrint | facial | speech]): CheckIsSupportSoterAuthenticationSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(supportMode = supportMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckIsSupportSoterAuthenticationSuccessCallbackResult]
   }
 }

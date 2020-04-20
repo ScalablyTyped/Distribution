@@ -13,7 +13,6 @@ object ResizeArgs_ {
   @scala.inline
   def apply(args: js.Array[String], opt: Options): ResizeArgs_ = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], opt = opt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResizeArgs_]
   }
 }

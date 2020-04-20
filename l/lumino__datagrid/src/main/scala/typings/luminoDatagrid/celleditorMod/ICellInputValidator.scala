@@ -22,7 +22,6 @@ object ICellInputValidator {
   @scala.inline
   def apply(validate: (CellConfig, js.Any) => ICellInputValidatorResponse): ICellInputValidator = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction2(validate))
-  
     __obj.asInstanceOf[ICellInputValidator]
   }
 }

@@ -15,7 +15,6 @@ object ManifestItem {
   @scala.inline
   def apply(file: String, id: Double | String, name: String, publicPath: String): ManifestItem = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ManifestItem]
   }
 }

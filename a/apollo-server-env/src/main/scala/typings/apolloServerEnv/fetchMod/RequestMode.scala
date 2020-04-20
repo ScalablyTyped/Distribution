@@ -14,14 +14,12 @@ trait RequestMode extends js.Object
 
 object RequestMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cors: typings.apolloServerEnv.apolloServerEnvStrings.cors = "cors".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.cors]
   @scala.inline
-  def cors: typings.apolloServerEnv.apolloServerEnvStrings.cors = this.cast("cors")
+  def navigate: typings.apolloServerEnv.apolloServerEnvStrings.navigate = "navigate".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.navigate]
   @scala.inline
-  def navigate: typings.apolloServerEnv.apolloServerEnvStrings.navigate = this.cast("navigate")
+  def `no-cors`: typings.apolloServerEnv.apolloServerEnvStrings.`no-cors` = "no-cors".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-cors`]
   @scala.inline
-  def `no-cors`: typings.apolloServerEnv.apolloServerEnvStrings.`no-cors` = this.cast("no-cors")
-  @scala.inline
-  def `same-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`same-origin` = this.cast("same-origin")
+  def `same-origin`: typings.apolloServerEnv.apolloServerEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`same-origin`]
 }
 

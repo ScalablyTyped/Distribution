@@ -20,7 +20,6 @@ object AdWordsReport {
     rows: () => AdWordsReportRowIterator
   ): AdWordsReport = {
     val __obj = js.Dynamic.literal(exportToSheet = js.Any.fromFunction1(exportToSheet), getColumnHeader = js.Any.fromFunction1(getColumnHeader), rows = js.Any.fromFunction0(rows))
-  
     __obj.asInstanceOf[AdWordsReport]
   }
 }

@@ -20,16 +20,14 @@ trait MsoCTPDockPosition extends js.Object
 
 object MsoCTPDockPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoCTPDockPositionBottom: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoCTPDockPositionBottom: `3` = this.cast(3)
+  def msoCTPDockPositionFloating: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoCTPDockPositionFloating: `4` = this.cast(4)
+  def msoCTPDockPositionLeft: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoCTPDockPositionLeft: `0` = this.cast(0)
+  def msoCTPDockPositionRight: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoCTPDockPositionRight: `2` = this.cast(2)
-  @scala.inline
-  def msoCTPDockPositionTop: `1` = this.cast(1)
+  def msoCTPDockPositionTop: `1` = 1.asInstanceOf[`1`]
 }
 

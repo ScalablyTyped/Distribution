@@ -18,7 +18,6 @@ object ValidatorsProviderProps {
     ]
   ): ValidatorsProviderProps = {
     val __obj = js.Dynamic.literal(validators = validators.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidatorsProviderProps]
   }
 }

@@ -25,7 +25,6 @@ object Encoders {
     resumeToken: Encoder[T]
   ): Encoders[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataMimeType = dataMimeType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], metadataMimeType = metadataMimeType.asInstanceOf[js.Any], resumeToken = resumeToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Encoders[T]]
   }
 }

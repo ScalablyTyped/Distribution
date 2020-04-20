@@ -22,7 +22,6 @@ object AnonOnMouseDown {
     onTouchStart: TouchEvent[Element] => Unit
   ): AnonOnMouseDown = {
     val __obj = js.Dynamic.literal(onMouseDown = js.Any.fromFunction1(onMouseDown), onTouchStart = js.Any.fromFunction1(onTouchStart))
-  
     __obj.asInstanceOf[AnonOnMouseDown]
   }
 }

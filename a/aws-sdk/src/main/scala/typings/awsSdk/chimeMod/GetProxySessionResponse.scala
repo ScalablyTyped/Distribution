@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GetProxySessionResponse extends js.Object {
+  /**
+    * The proxy session details.
+    */
   var ProxySession: js.UndefOr[typings.awsSdk.chimeMod.ProxySession] = js.native
 }
 

@@ -19,7 +19,6 @@ object AsyncHook {
   @scala.inline
   def apply(disable: () => AsyncHook, enable: () => AsyncHook): AsyncHook = {
     val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
-  
     __obj.asInstanceOf[AsyncHook]
   }
 }

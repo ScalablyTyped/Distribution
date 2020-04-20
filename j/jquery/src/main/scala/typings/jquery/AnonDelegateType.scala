@@ -18,7 +18,6 @@ object AnonDelegateType {
   @scala.inline
   def apply(delegateType: String): AnonDelegateType = {
     val __obj = js.Dynamic.literal(delegateType = delegateType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDelegateType]
   }
 }

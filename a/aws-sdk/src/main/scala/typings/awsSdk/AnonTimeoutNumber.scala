@@ -16,7 +16,6 @@ object AnonTimeoutNumber {
   @scala.inline
   def apply(timeout: Double): AnonTimeoutNumber = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTimeoutNumber]
   }
 }

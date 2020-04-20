@@ -16,7 +16,6 @@ object AsObject {
     requestedItemsList: js.Array[typings.libraCore.getWithProofPbMod.RequestItem.AsObject]
   ): AsObject = {
     val __obj = js.Dynamic.literal(clientKnownVersion = clientKnownVersion.asInstanceOf[js.Any], requestedItemsList = requestedItemsList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

@@ -12,7 +12,6 @@ object PluginRemoveXMLNS {
   @scala.inline
   def apply(removeXMLNS: Boolean | js.Object): PluginRemoveXMLNS = {
     val __obj = js.Dynamic.literal(removeXMLNS = removeXMLNS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveXMLNS]
   }
 }

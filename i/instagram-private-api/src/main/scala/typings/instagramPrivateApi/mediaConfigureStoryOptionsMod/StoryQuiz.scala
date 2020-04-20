@@ -34,7 +34,6 @@ object StoryQuiz {
     y: Double
   ): StoryQuiz = {
     val __obj = js.Dynamic.literal(correct_answer = correct_answer.asInstanceOf[js.Any], end_background_color = end_background_color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], start_background_color = start_background_color.asInstanceOf[js.Any], text_color = text_color.asInstanceOf[js.Any], viewer_answer = viewer_answer.asInstanceOf[js.Any], viewer_can_answer = viewer_can_answer.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StoryQuiz]
   }
 }

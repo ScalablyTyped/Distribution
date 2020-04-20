@@ -15,7 +15,6 @@ object ProjectsResource {
   @scala.inline
   def apply(exclusions: ExclusionsResource, logs: LogsResource, metrics: MetricsResource, sinks: SinksResource): ProjectsResource = {
     val __obj = js.Dynamic.literal(exclusions = exclusions.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], sinks = sinks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

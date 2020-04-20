@@ -15,7 +15,6 @@ object AnonDriverConfig {
   @scala.inline
   def apply(DriverConfig: AnonName, Labels: StringDictionary[String], NoCopy: Boolean): AnonDriverConfig = {
     val __obj = js.Dynamic.literal(DriverConfig = DriverConfig.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], NoCopy = NoCopy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDriverConfig]
   }
 }

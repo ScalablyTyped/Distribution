@@ -85,7 +85,8 @@ trait Dialog_ extends js.Object {
     * It returns the index of the clicked button.
     *
     * The `browserWindow` argument allows the dialog to attach itself to a parent
-    * window, making it modal.
+    * window, making it modal. If `browserWindow` is not shown dialog will not be
+    * attached to it. In such case It will be displayed as independed window.
     */
   def showMessageBoxSync(browserWindow: BrowserWindow, options: MessageBoxSyncOptions): Double = js.native
   /**
@@ -95,7 +96,8 @@ trait Dialog_ extends js.Object {
     * It returns the index of the clicked button.
     *
     * The `browserWindow` argument allows the dialog to attach itself to a parent
-    * window, making it modal.
+    * window, making it modal. If `browserWindow` is not shown dialog will not be
+    * attached to it. In such case It will be displayed as independed window.
     */
   def showMessageBoxSync(options: MessageBoxSyncOptions): Double = js.native
   /**

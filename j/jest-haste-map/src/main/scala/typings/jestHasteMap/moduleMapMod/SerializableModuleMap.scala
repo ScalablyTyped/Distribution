@@ -27,7 +27,6 @@ object SerializableModuleMap {
     rootDir: Path
   ): SerializableModuleMap = {
     val __obj = js.Dynamic.literal(duplicates = duplicates.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mocks = mocks.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerializableModuleMap]
   }
 }

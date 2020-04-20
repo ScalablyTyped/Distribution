@@ -17,7 +17,6 @@ object FromPixelsInputs {
   @scala.inline
   def apply(pixels: PixelData | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement): FromPixelsInputs = {
     val __obj = js.Dynamic.literal(pixels = pixels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FromPixelsInputs]
   }
 }

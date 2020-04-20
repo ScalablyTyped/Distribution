@@ -12,7 +12,6 @@ object ClientDBFind {
   @scala.inline
   def apply(cldbid: Double): ClientDBFind = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientDBFind]
   }
 }

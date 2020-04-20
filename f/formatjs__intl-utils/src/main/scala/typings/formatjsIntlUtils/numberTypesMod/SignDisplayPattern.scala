@@ -20,7 +20,6 @@ object SignDisplayPattern {
     never: NotationPattern
   ): SignDisplayPattern = {
     val __obj = js.Dynamic.literal(always = always.asInstanceOf[js.Any], auto = auto.asInstanceOf[js.Any], exceptZero = exceptZero.asInstanceOf[js.Any], never = never.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignDisplayPattern]
   }
 }

@@ -16,7 +16,6 @@ object SegmentCondition {
   @scala.inline
   def apply(SegmentId: string): SegmentCondition = {
     val __obj = js.Dynamic.literal(SegmentId = SegmentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SegmentCondition]
   }
 }

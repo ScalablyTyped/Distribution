@@ -38,7 +38,7 @@ trait Promise[T] extends js.Object {
   @JSName("call")
   var call_Original: js.ThisFunction2[
     /* this */ Bluebird[_], 
-    /* propertyName */ String, 
+    /* keyof any */ /* propertyName */ String, 
     /* repeated */ js.Any, 
     Bluebird[
       ReturnType[
@@ -69,7 +69,7 @@ trait Promise[T] extends js.Object {
   // finally: Bluebird<T>["finally"]; // Provided by lib.es2018.promise.d.ts
   @JSName("get")
   var get_Original: js.Function1[
-    /* key */ String, 
+    /* keyof T */ /* key */ String, 
     Bluebird[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
@@ -125,7 +125,7 @@ trait Promise[T] extends js.Object {
   def asCallback(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[T], Unit], options: SpreadOption): this.type = js.native
   def asCallback(sink: js.Any*): this.type = js.native
   def bind(thisArg: js.Any): Bluebird[T] = js.native
-  def call[U /* <: String */, Q](propertyName: U, args: js.Any*): Bluebird[
+  def call[U /* <: /* keyof Q */ String */, Q](propertyName: U, args: js.Any*): Bluebird[
     ReturnType[
       /* import warning: importer.ImportType#apply Failed type conversion: Q[U] */ js.Any
     ]
@@ -750,7 +750,7 @@ trait Promise[T] extends js.Object {
   def `finally`(): Promise[T] = js.native
   def `finally`(onfinally: js.Function0[Unit]): Promise[T] = js.native
   // finally: Bluebird<T>["finally"]; // Provided by lib.es2018.promise.d.ts
-  def get[U /* <: String */](key: U): Bluebird[
+  def get[U /* <: /* keyof T */ String */](key: U): Bluebird[
     /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any
   ] = js.native
   def isCancelled(): Boolean = js.native

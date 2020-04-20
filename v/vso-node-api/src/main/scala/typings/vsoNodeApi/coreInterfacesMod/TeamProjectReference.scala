@@ -52,7 +52,6 @@ object TeamProjectReference {
     visibility: ProjectVisibility
   ): TeamProjectReference = {
     val __obj = js.Dynamic.literal(abbreviation = abbreviation.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamProjectReference]
   }
 }

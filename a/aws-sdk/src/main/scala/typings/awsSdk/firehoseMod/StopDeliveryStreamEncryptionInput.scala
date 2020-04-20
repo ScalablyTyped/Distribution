@@ -16,7 +16,6 @@ object StopDeliveryStreamEncryptionInput {
   @scala.inline
   def apply(DeliveryStreamName: DeliveryStreamName): StopDeliveryStreamEncryptionInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopDeliveryStreamEncryptionInput]
   }
 }

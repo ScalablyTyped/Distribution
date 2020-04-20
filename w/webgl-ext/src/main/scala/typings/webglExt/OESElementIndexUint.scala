@@ -12,7 +12,6 @@ object OESElementIndexUint {
   @scala.inline
   def apply(__OESElementIndexUint: Unit): OESElementIndexUint = {
     val __obj = js.Dynamic.literal(__OESElementIndexUint = __OESElementIndexUint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OESElementIndexUint]
   }
 }

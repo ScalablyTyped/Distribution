@@ -41,7 +41,6 @@ object Setting {
     set: AnonScope => js.Promise[Unit]
   ): Setting = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), get = js.Any.fromFunction1(get), onChange = onChange.asInstanceOf[js.Any], set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[Setting]
   }
 }

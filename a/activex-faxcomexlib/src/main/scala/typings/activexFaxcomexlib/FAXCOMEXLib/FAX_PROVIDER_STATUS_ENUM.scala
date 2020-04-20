@@ -25,20 +25,18 @@ trait FAX_PROVIDER_STATUS_ENUM extends js.Object
 
 object FAX_PROVIDER_STATUS_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fpsBAD_GUID: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fpsBAD_GUID: `2` = this.cast(2)
+  def fpsBAD_VERSION: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def fpsBAD_VERSION: `3` = this.cast(3)
+  def fpsCANT_INIT: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def fpsCANT_INIT: `6` = this.cast(6)
+  def fpsCANT_LINK: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def fpsCANT_LINK: `5` = this.cast(5)
+  def fpsCANT_LOAD: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def fpsCANT_LOAD: `4` = this.cast(4)
+  def fpsSERVER_ERROR: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fpsSERVER_ERROR: `1` = this.cast(1)
-  @scala.inline
-  def fpsSUCCESS: `0` = this.cast(0)
+  def fpsSUCCESS: `0` = 0.asInstanceOf[`0`]
 }
 

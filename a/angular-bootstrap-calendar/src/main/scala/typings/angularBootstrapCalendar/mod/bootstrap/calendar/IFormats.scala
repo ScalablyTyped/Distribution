@@ -13,7 +13,6 @@ object IFormats {
   @scala.inline
   def apply(date: IDateFormats, title: ITitleFormats): IFormats = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFormats]
   }
 }

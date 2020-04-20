@@ -31,34 +31,32 @@ trait HTTP_METHODS extends js.Object
 
 object HTTP_METHODS {
   @scala.inline
-  def DELETE: typings.hapiHapi.hapiHapiStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.hapiHapi.hapiHapiStrings.DELETE = "DELETE".asInstanceOf[typings.hapiHapi.hapiHapiStrings.DELETE]
   @scala.inline
-  def GET: typings.hapiHapi.hapiHapiStrings.GET = this.cast("GET")
+  def GET: typings.hapiHapi.hapiHapiStrings.GET = "GET".asInstanceOf[typings.hapiHapi.hapiHapiStrings.GET]
   @scala.inline
-  def HEAD: typings.hapiHapi.hapiHapiStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.hapiHapi.hapiHapiStrings.HEAD = "HEAD".asInstanceOf[typings.hapiHapi.hapiHapiStrings.HEAD]
   @scala.inline
-  def OPTIONS: typings.hapiHapi.hapiHapiStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.hapiHapi.hapiHapiStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.hapiHapi.hapiHapiStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.hapiHapi.hapiHapiStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.hapiHapi.hapiHapiStrings.PATCH = "PATCH".asInstanceOf[typings.hapiHapi.hapiHapiStrings.PATCH]
   @scala.inline
-  def POST: typings.hapiHapi.hapiHapiStrings.POST = this.cast("POST")
+  def POST: typings.hapiHapi.hapiHapiStrings.POST = "POST".asInstanceOf[typings.hapiHapi.hapiHapiStrings.POST]
   @scala.inline
-  def PUT: typings.hapiHapi.hapiHapiStrings.PUT = this.cast("PUT")
+  def PUT: typings.hapiHapi.hapiHapiStrings.PUT = "PUT".asInstanceOf[typings.hapiHapi.hapiHapiStrings.PUT]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def delete: delete_ = this.cast("delete")
+  def get: get_ = "get".asInstanceOf[get_]
   @scala.inline
-  def get: get_ = this.cast("get")
+  def head: head_ = "head".asInstanceOf[head_]
   @scala.inline
-  def head: head_ = this.cast("head")
+  def options: options_ = "options".asInstanceOf[options_]
   @scala.inline
-  def options: options_ = this.cast("options")
+  def patch: patch_ = "patch".asInstanceOf[patch_]
   @scala.inline
-  def patch: patch_ = this.cast("patch")
+  def post: post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def post: post_ = this.cast("post")
-  @scala.inline
-  def put: put_ = this.cast("put")
+  def put: put_ = "put".asInstanceOf[put_]
 }
 

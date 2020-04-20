@@ -21,7 +21,6 @@ object AnonListElements {
     result: js.Array[SelectChangeEventData]
   ): AnonListElements = {
     val __obj = js.Dynamic.literal(listElements = listElements.asInstanceOf[js.Any], markers = markers.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonListElements]
   }
 }

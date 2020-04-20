@@ -15,7 +15,9 @@ trait IFieldDescriptorProto extends js.Object {
   /** FieldDescriptorProto jsonName */
   var jsonName: js.UndefOr[String | Null] = js.undefined
   /** FieldDescriptorProto label */
-  var label: js.UndefOr[Label | String | Null] = js.undefined
+  var label: js.UndefOr[
+    Label | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Label * / any */ String) | Null
+  ] = js.undefined
   /** FieldDescriptorProto name */
   var name: js.UndefOr[String | Null] = js.undefined
   /** FieldDescriptorProto number */
@@ -25,7 +27,9 @@ trait IFieldDescriptorProto extends js.Object {
   /** FieldDescriptorProto options */
   var options: js.UndefOr[IFieldOptions | Null] = js.undefined
   /** FieldDescriptorProto type */
-  var `type`: js.UndefOr[Type | String | Null] = js.undefined
+  var `type`: js.UndefOr[
+    Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Type * / any */ String) | Null
+  ] = js.undefined
   /** FieldDescriptorProto typeName */
   var typeName: js.UndefOr[String | Null] = js.undefined
 }
@@ -36,12 +40,12 @@ object IFieldDescriptorProto {
     defaultValue: String = null,
     extendee: String = null,
     jsonName: String = null,
-    label: Label | String = null,
+    label: Label | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Label * / any */ String) = null,
     name: String = null,
     number: Int | Double = null,
     oneofIndex: Int | Double = null,
     options: IFieldOptions = null,
-    `type`: Type | String = null,
+    `type`: Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Type * / any */ String) = null,
     typeName: String = null
   ): IFieldDescriptorProto = {
     val __obj = js.Dynamic.literal()

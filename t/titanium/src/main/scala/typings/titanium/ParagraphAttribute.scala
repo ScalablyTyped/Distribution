@@ -20,11 +20,11 @@ trait ParagraphAttribute extends js.Object {
   /**
   	 * The indentation of the first line of the receiver.
   	 */
-  var firstLineHeadIndent: js.UndefOr[Double | String] = js.undefined
+  var firstLineHeadIndent: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * The indentation of the lines of lines other than the first.
   	 */
-  var headIndent: js.UndefOr[Double | String] = js.undefined
+  var headIndent: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * The threshold of paragraph for hyphenation.
   	 */
@@ -40,27 +40,27 @@ trait ParagraphAttribute extends js.Object {
   /**
   	 * The distance in points between the bottom of one line fragment and the top of the next.
   	 */
-  var lineSpacing: js.UndefOr[Double | String] = js.undefined
+  var lineSpacing: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * The maximum line height of receiver.
   	 */
-  var maximumLineHeight: js.UndefOr[Double | String] = js.undefined
+  var maximumLineHeight: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * The minimum height of receiver.
   	 */
-  var minimumLineHeight: js.UndefOr[Double | String] = js.undefined
+  var minimumLineHeight: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * The space after the end of the paragraph.
   	 */
-  var paragraphSpacingAfter: js.UndefOr[Double | String] = js.undefined
+  var paragraphSpacingAfter: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * The distance between the top of paragraph and the beginning of its text content.
   	 */
-  var paragraphSpacingBefore: js.UndefOr[Double | String] = js.undefined
+  var paragraphSpacingBefore: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * The trailing indentation of the receiver.
   	 */
-  var tailIndent: js.UndefOr[Double | String] = js.undefined
+  var tailIndent: js.UndefOr[Double | java.lang.String] = js.undefined
 }
 
 object ParagraphAttribute {
@@ -68,17 +68,17 @@ object ParagraphAttribute {
   def apply(
     alignment: Int | Double = null,
     allowsDefaultTighteningForTruncation: js.UndefOr[Boolean] = js.undefined,
-    firstLineHeadIndent: Double | String = null,
-    headIndent: Double | String = null,
+    firstLineHeadIndent: Double | java.lang.String = null,
+    headIndent: Double | java.lang.String = null,
     hyphenationFactor: Int | Double = null,
     lineBreakMode: Int | Double = null,
     lineHeightMultiple: Int | Double = null,
-    lineSpacing: Double | String = null,
-    maximumLineHeight: Double | String = null,
-    minimumLineHeight: Double | String = null,
-    paragraphSpacingAfter: Double | String = null,
-    paragraphSpacingBefore: Double | String = null,
-    tailIndent: Double | String = null
+    lineSpacing: Double | java.lang.String = null,
+    maximumLineHeight: Double | java.lang.String = null,
+    minimumLineHeight: Double | java.lang.String = null,
+    paragraphSpacingAfter: Double | java.lang.String = null,
+    paragraphSpacingBefore: Double | java.lang.String = null,
+    tailIndent: Double | java.lang.String = null
   ): ParagraphAttribute = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])

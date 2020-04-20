@@ -28,7 +28,6 @@ object Token {
   @scala.inline
   def apply(id: String, subtleCrypto: SubtleCrypto): Token = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], subtleCrypto = subtleCrypto.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Token]
   }
 }

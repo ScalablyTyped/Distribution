@@ -25,7 +25,6 @@ object SubscriptionConfig {
   @scala.inline
   def apply[S, T](getCurrentValue: S => T, subscribe: (S, js.Function1[/* newValue */ T, Unit]) => Unsubscribe): SubscriptionConfig[S, T] = {
     val __obj = js.Dynamic.literal(getCurrentValue = js.Any.fromFunction1(getCurrentValue), subscribe = js.Any.fromFunction2(subscribe))
-  
     __obj.asInstanceOf[SubscriptionConfig[S, T]]
   }
 }

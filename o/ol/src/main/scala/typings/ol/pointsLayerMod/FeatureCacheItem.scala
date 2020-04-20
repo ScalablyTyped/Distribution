@@ -19,7 +19,6 @@ object FeatureCacheItem {
     properties: StringDictionary[js.Any]
   ): FeatureCacheItem = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatureCacheItem]
   }
 }

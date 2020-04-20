@@ -22,7 +22,6 @@ object AnonPastdue {
   @scala.inline
   def apply(disabled_reason: listed | rejectedDotlisted | under_review, past_due: js.Array[String]): AnonPastdue = {
     val __obj = js.Dynamic.literal(disabled_reason = disabled_reason.asInstanceOf[js.Any], past_due = past_due.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPastdue]
   }
 }

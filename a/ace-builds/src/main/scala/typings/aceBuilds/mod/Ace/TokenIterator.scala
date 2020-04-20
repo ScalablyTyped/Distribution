@@ -26,7 +26,6 @@ object TokenIterator {
     stepForward: () => Token
   ): TokenIterator = {
     val __obj = js.Dynamic.literal(getCurrentToken = js.Any.fromFunction0(getCurrentToken), getCurrentTokenColumn = js.Any.fromFunction0(getCurrentTokenColumn), getCurrentTokenPosition = js.Any.fromFunction0(getCurrentTokenPosition), getCurrentTokenRange = js.Any.fromFunction0(getCurrentTokenRange), getCurrentTokenRow = js.Any.fromFunction0(getCurrentTokenRow), stepBackward = js.Any.fromFunction0(stepBackward), stepForward = js.Any.fromFunction0(stepForward))
-  
     __obj.asInstanceOf[TokenIterator]
   }
 }

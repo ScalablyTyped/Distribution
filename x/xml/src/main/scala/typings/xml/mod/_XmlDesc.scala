@@ -12,19 +12,16 @@ object _XmlDesc {
   @scala.inline
   def AnonAttr(_attr: XmlAttrs): _XmlDesc = {
     val __obj = js.Dynamic.literal(_attr = _attr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_XmlDesc]
   }
   @scala.inline
   def AnonCdata(_cdata: String): _XmlDesc = {
     val __obj = js.Dynamic.literal(_cdata = _cdata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_XmlDesc]
   }
   @scala.inline
   def AnonAttrCdata(_attr: XmlAttrs, _cdata: String): _XmlDesc = {
     val __obj = js.Dynamic.literal(_attr = _attr.asInstanceOf[js.Any], _cdata = _cdata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_XmlDesc]
   }
   @scala.inline

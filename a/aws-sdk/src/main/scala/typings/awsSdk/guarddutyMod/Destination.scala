@@ -24,7 +24,6 @@ object Destination {
   @scala.inline
   def apply(DestinationId: String, DestinationType: DestinationType, Status: PublishingStatus): Destination = {
     val __obj = js.Dynamic.literal(DestinationId = DestinationId.asInstanceOf[js.Any], DestinationType = DestinationType.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Destination]
   }
 }

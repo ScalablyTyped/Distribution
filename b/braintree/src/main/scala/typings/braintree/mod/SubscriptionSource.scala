@@ -15,12 +15,10 @@ trait SubscriptionSource extends js.Object
 
 object SubscriptionSource {
   @scala.inline
-  def api: api_ = this.cast("api")
+  def api: api_ = "api".asInstanceOf[api_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def control_panel: typings.braintree.braintreeStrings.control_panel = "control_panel".asInstanceOf[typings.braintree.braintreeStrings.control_panel]
   @scala.inline
-  def control_panel: typings.braintree.braintreeStrings.control_panel = this.cast("control_panel")
-  @scala.inline
-  def recurring: recurring_ = this.cast("recurring")
+  def recurring: recurring_ = "recurring".asInstanceOf[recurring_]
 }
 

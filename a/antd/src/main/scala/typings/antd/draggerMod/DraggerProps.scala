@@ -23,7 +23,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined antd.antd/lib/upload/interface.UploadProps & {  height ? :number} */
+/* Inlined antd.antd/lib/upload/interface.UploadProps<any> & {  height ? :number} */
 trait DraggerProps extends js.Object {
   var accept: js.UndefOr[String] = js.undefined
   var action: js.UndefOr[String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]])] = js.undefined

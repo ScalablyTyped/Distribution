@@ -16,7 +16,6 @@ object CancelRotateSecretRequest {
   @scala.inline
   def apply(SecretId: SecretIdType): CancelRotateSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelRotateSecretRequest]
   }
 }

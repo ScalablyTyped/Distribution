@@ -15,16 +15,14 @@ trait TRANSITION_STATUSES extends js.Object
 
 object TRANSITION_STATUSES {
   @scala.inline
-  def ENTERED: typings.semanticUiReact.semanticUiReactStrings.ENTERED = this.cast("ENTERED")
+  def ENTERED: typings.semanticUiReact.semanticUiReactStrings.ENTERED = "ENTERED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ENTERED]
   @scala.inline
-  def ENTERING: typings.semanticUiReact.semanticUiReactStrings.ENTERING = this.cast("ENTERING")
+  def ENTERING: typings.semanticUiReact.semanticUiReactStrings.ENTERING = "ENTERING".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ENTERING]
   @scala.inline
-  def EXITED: typings.semanticUiReact.semanticUiReactStrings.EXITED = this.cast("EXITED")
+  def EXITED: typings.semanticUiReact.semanticUiReactStrings.EXITED = "EXITED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.EXITED]
   @scala.inline
-  def EXITING: typings.semanticUiReact.semanticUiReactStrings.EXITING = this.cast("EXITING")
+  def EXITING: typings.semanticUiReact.semanticUiReactStrings.EXITING = "EXITING".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.EXITING]
   @scala.inline
-  def UNMOUNTED: typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED = this.cast("UNMOUNTED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNMOUNTED: typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED = "UNMOUNTED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED]
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 /** A list of DataTransferItem objects representing items being dragged. During a drag operation, each DragEvent has a dataTransfer property and that property is a DataTransferItemList. */
 @js.native
 trait DataTransferItemList extends /* name */ NumberDictionary[DataTransferItem] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[DataTransferItem]] = js.native
   /**
     * Returns the number of items in the drag data store.

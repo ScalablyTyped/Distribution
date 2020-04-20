@@ -13,7 +13,6 @@ object AnonAppApiKey {
   @scala.inline
   def apply(appApiKey: String, appId: String): AnonAppApiKey = {
     val __obj = js.Dynamic.literal(appApiKey = appApiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppApiKey]
   }
 }

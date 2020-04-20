@@ -15,7 +15,6 @@ object AnonFail {
   @scala.inline
   def apply(fail: String, incomplete: String | StringDictionary[String], pass: String): AnonFail = {
     val __obj = js.Dynamic.literal(fail = fail.asInstanceOf[js.Any], incomplete = incomplete.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFail]
   }
 }

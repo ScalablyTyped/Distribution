@@ -13,7 +13,6 @@ object RestoreConfigInfo {
   @scala.inline
   def apply(configInfo: StringDictionary[js.Any]): RestoreConfigInfo = {
     val __obj = js.Dynamic.literal(configInfo = configInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestoreConfigInfo]
   }
 }

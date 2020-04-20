@@ -18,7 +18,6 @@ object Recordcacheconfigdebugver {
   @scala.inline
   def apply(cache: Options, config: Options, debug: Options, version: Options, watchman: Options): Recordcacheconfigdebugver = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Recordcacheconfigdebugver]
   }
 }

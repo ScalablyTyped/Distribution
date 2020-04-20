@@ -19,7 +19,6 @@ object IDeviceActivatedEventArgs {
     verb: String
   ): IDeviceActivatedEventArgs = {
     val __obj = js.Dynamic.literal(deviceInformationId = deviceInformationId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDeviceActivatedEventArgs]
   }
 }

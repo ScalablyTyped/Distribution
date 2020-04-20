@@ -16,12 +16,10 @@ trait AcProjectType extends js.Object
 
 object AcProjectType {
   @scala.inline
-  def acADP: `1` = this.cast(1)
+  def acADP: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acMDB: `2` = this.cast(2)
+  def acMDB: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acNull: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acNull: `0` = 0.asInstanceOf[`0`]
 }
 

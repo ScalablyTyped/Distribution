@@ -26,7 +26,6 @@ object FlashCompiledClipInstance {
     tabIndex: Double
   ): FlashCompiledClipInstance = {
     val __obj = js.Dynamic.literal(accName = accName.asInstanceOf[js.Any], actionScript = actionScript.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], forceSimple = forceSimple.asInstanceOf[js.Any], shortcut = shortcut.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FlashCompiledClipInstance]
   }
 }

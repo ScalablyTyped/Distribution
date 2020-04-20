@@ -14,7 +14,6 @@ object AnonBarTintColor {
   @scala.inline
   def apply(barTintColor: String, tintColor: String, unselectedTintColor: String): AnonBarTintColor = {
     val __obj = js.Dynamic.literal(barTintColor = barTintColor.asInstanceOf[js.Any], tintColor = tintColor.asInstanceOf[js.Any], unselectedTintColor = unselectedTintColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBarTintColor]
   }
 }

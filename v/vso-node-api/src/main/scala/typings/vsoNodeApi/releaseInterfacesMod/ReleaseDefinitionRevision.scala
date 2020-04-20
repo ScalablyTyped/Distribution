@@ -54,7 +54,6 @@ object ReleaseDefinitionRevision {
     revision: Double
   ): ReleaseDefinitionRevision = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], changedBy = changedBy.asInstanceOf[js.Any], changedDate = changedDate.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], definitionId = definitionId.asInstanceOf[js.Any], definitionUrl = definitionUrl.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseDefinitionRevision]
   }
 }

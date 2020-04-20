@@ -12,7 +12,6 @@ object EcdsaParams {
   @scala.inline
   def apply(hash: HashAlgorithmIdentifier, name: java.lang.String): EcdsaParams = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EcdsaParams]
   }
 }

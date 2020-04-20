@@ -14,7 +14,6 @@ object IHttpClientResponse {
   @scala.inline
   def apply(message: IncomingMessage, readBody: () => js.Promise[String]): IHttpClientResponse = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], readBody = js.Any.fromFunction0(readBody))
-  
     __obj.asInstanceOf[IHttpClientResponse]
   }
 }

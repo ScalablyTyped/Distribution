@@ -20,7 +20,6 @@ object DisableEnhancedMonitoringInput {
   @scala.inline
   def apply(ShardLevelMetrics: MetricsNameList, StreamName: StreamName): DisableEnhancedMonitoringInput = {
     val __obj = js.Dynamic.literal(ShardLevelMetrics = ShardLevelMetrics.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableEnhancedMonitoringInput]
   }
 }

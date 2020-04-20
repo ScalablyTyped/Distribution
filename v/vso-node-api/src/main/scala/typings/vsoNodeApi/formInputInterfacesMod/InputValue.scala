@@ -24,7 +24,6 @@ object InputValue {
   @scala.inline
   def apply(data: StringDictionary[js.Any], displayValue: String, value: String): InputValue = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], displayValue = displayValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputValue]
   }
 }

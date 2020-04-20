@@ -14,14 +14,12 @@ trait TicketRestriction extends js.Object
 
 object TicketRestriction {
   @scala.inline
-  def assigned: typings.nodeZendesk.nodeZendeskStrings.assigned = this.cast("assigned")
+  def assigned: typings.nodeZendesk.nodeZendeskStrings.assigned = "assigned".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.assigned]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def groups: typings.nodeZendesk.nodeZendeskStrings.groups = "groups".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.groups]
   @scala.inline
-  def groups: typings.nodeZendesk.nodeZendeskStrings.groups = this.cast("groups")
+  def organization: typings.nodeZendesk.nodeZendeskStrings.organization = "organization".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.organization]
   @scala.inline
-  def organization: typings.nodeZendesk.nodeZendeskStrings.organization = this.cast("organization")
-  @scala.inline
-  def requested: typings.nodeZendesk.nodeZendeskStrings.requested = this.cast("requested")
+  def requested: typings.nodeZendesk.nodeZendeskStrings.requested = "requested".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.requested]
 }
 

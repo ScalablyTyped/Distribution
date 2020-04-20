@@ -16,12 +16,10 @@ trait XlCorruptLoad extends js.Object
 
 object XlCorruptLoad {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlExtractData: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlExtractData: `2` = this.cast(2)
+  def xlNormalLoad: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlNormalLoad: `0` = this.cast(0)
-  @scala.inline
-  def xlRepairFile: `1` = this.cast(1)
+  def xlRepairFile: `1` = 1.asInstanceOf[`1`]
 }
 

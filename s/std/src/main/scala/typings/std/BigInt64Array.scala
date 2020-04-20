@@ -20,11 +20,11 @@ trait BigInt64Array extends /* index */ NumberDictionary[BigInt] {
   val byteLength: Double = js.native
   /** The offset in bytes of the array. */
   val byteOffset: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[BigInt]] = js.native
   /** The length of the array. */
   val length: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.std.stdStrings.BigInt64Array = js.native
   /**
     * Returns the this object after copying a section of the array identified by start and end

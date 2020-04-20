@@ -20,7 +20,6 @@ object DescribeComponentRequest {
   @scala.inline
   def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName): DescribeComponentRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeComponentRequest]
   }
 }

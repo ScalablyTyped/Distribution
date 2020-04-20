@@ -13,7 +13,6 @@ object PostsInsightsFeedResponseTopPosts {
   @scala.inline
   def apply(edges: js.Array[PostsInsightsFeedResponseEdgesItem], page_info: PostsInsightsFeedResponsePageInfo): PostsInsightsFeedResponseTopPosts = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], page_info = page_info.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PostsInsightsFeedResponseTopPosts]
   }
 }

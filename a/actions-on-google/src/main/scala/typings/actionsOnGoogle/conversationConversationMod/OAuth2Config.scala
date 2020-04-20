@@ -13,7 +13,6 @@ object OAuth2Config {
   @scala.inline
   def apply(client: OAuth2ConfigClient): OAuth2Config = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OAuth2Config]
   }
 }

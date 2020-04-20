@@ -15,7 +15,6 @@ object AnonDoc {
   @scala.inline
   def apply(Cancel: Boolean, Doc: Document, SaveAsUI: Boolean): AnonDoc = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Doc = Doc.asInstanceOf[js.Any], SaveAsUI = SaveAsUI.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDoc]
   }
 }

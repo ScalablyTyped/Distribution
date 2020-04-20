@@ -59,7 +59,6 @@ object BacklogLevelConfiguration {
     workItemTypes: js.Array[WorkItemTypeReference]
   ): BacklogLevelConfiguration = {
     val __obj = js.Dynamic.literal(addPanelFields = addPanelFields.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], columnFields = columnFields.asInstanceOf[js.Any], defaultWorkItemType = defaultWorkItemType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], workItemCountLimit = workItemCountLimit.asInstanceOf[js.Any], workItemTypes = workItemTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BacklogLevelConfiguration]
   }
 }

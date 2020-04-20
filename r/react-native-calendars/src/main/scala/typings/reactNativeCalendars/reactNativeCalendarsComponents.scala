@@ -11,13 +11,10 @@ import scala.scalajs.js.annotation._
 
 object reactNativeCalendarsComponents extends reactNativeCalendarsProps {
   @scala.inline
-  def Agenda[TItem]: ComponentType[AgendaProps[TItem] with CalendarMarkingProps] = js.constructorOf[typings.reactNativeCalendars.mod.Agenda[TItem]].asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactNativeCalendars.mod.AgendaProps[TItem] with typings.reactNativeCalendars.mod.CalendarMarkingProps]]
+  def Agenda[TItem]: ComponentType[AgendaProps[TItem] with CalendarMarkingProps] = js.constructorOf[typings.reactNativeCalendars.mod.Agenda[TItem]].asInstanceOf[ComponentType[AgendaProps[TItem] with CalendarMarkingProps]]
   @scala.inline
-  def Calendar: ComponentType[CalendarMarkingProps with CalendarBaseProps] = js.constructorOf[typings.reactNativeCalendars.mod.Calendar].asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactNativeCalendars.mod.CalendarMarkingProps with typings.reactNativeCalendars.mod.CalendarBaseProps]]
+  def Calendar: ComponentType[CalendarMarkingProps with CalendarBaseProps] = js.constructorOf[typings.reactNativeCalendars.mod.Calendar].asInstanceOf[ComponentType[CalendarMarkingProps with CalendarBaseProps]]
   @scala.inline
-  def CalendarList: ComponentType[CalendarMarkingProps with CalendarListBaseProps] = js.constructorOf[typings.reactNativeCalendars.mod.CalendarList].asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactNativeCalendars.mod.CalendarMarkingProps with typings.reactNativeCalendars.mod.CalendarListBaseProps]]
+  def CalendarList: ComponentType[CalendarMarkingProps with CalendarListBaseProps] = js.constructorOf[typings.reactNativeCalendars.mod.CalendarList].asInstanceOf[ComponentType[CalendarMarkingProps with CalendarListBaseProps]]
 }
 

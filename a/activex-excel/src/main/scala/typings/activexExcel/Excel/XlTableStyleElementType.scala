@@ -82,82 +82,80 @@ trait XlTableStyleElementType extends js.Object
 
 object XlTableStyleElementType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlBlankRow: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def xlBlankRow: `19` = this.cast(19)
+  def xlColumnStripe1: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlColumnStripe1: `7` = this.cast(7)
+  def xlColumnStripe2: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlColumnStripe2: `8` = this.cast(8)
+  def xlColumnSubheading1: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def xlColumnSubheading1: `20` = this.cast(20)
+  def xlColumnSubheading2: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def xlColumnSubheading2: `21` = this.cast(21)
+  def xlColumnSubheading3: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def xlColumnSubheading3: `22` = this.cast(22)
+  def xlFirstColumn: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlFirstColumn: `3` = this.cast(3)
+  def xlFirstHeaderCell: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlFirstHeaderCell: `9` = this.cast(9)
+  def xlFirstTotalCell: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlFirstTotalCell: `11` = this.cast(11)
+  def xlGrandTotalColumn: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlGrandTotalColumn: `4` = this.cast(4)
+  def xlGrandTotalRow: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlGrandTotalRow: `2` = this.cast(2)
+  def xlHeaderRow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlHeaderRow: `1` = this.cast(1)
+  def xlLastColumn: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlLastColumn: `4` = this.cast(4)
+  def xlLastHeaderCell: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlLastHeaderCell: `10` = this.cast(10)
+  def xlLastTotalCell: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlLastTotalCell: `12` = this.cast(12)
+  def xlPageFieldLabels: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def xlPageFieldLabels: `26` = this.cast(26)
+  def xlPageFieldValues: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def xlPageFieldValues: `27` = this.cast(27)
+  def xlRowStripe1: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlRowStripe1: `5` = this.cast(5)
+  def xlRowStripe2: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlRowStripe2: `6` = this.cast(6)
+  def xlRowSubheading1: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def xlRowSubheading1: `23` = this.cast(23)
+  def xlRowSubheading2: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def xlRowSubheading2: `24` = this.cast(24)
+  def xlRowSubheading3: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def xlRowSubheading3: `25` = this.cast(25)
+  def xlSlicerHoveredSelectedItemWithData: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def xlSlicerHoveredSelectedItemWithData: `33` = this.cast(33)
+  def xlSlicerHoveredSelectedItemWithNoData: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def xlSlicerHoveredSelectedItemWithNoData: `35` = this.cast(35)
+  def xlSlicerHoveredUnselectedItemWithData: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def xlSlicerHoveredUnselectedItemWithData: `32` = this.cast(32)
+  def xlSlicerHoveredUnselectedItemWithNoData: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def xlSlicerHoveredUnselectedItemWithNoData: `34` = this.cast(34)
+  def xlSlicerSelectedItemWithData: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def xlSlicerSelectedItemWithData: `30` = this.cast(30)
+  def xlSlicerSelectedItemWithNoData: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def xlSlicerSelectedItemWithNoData: `31` = this.cast(31)
+  def xlSlicerUnselectedItemWithData: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def xlSlicerUnselectedItemWithData: `28` = this.cast(28)
+  def xlSlicerUnselectedItemWithNoData: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def xlSlicerUnselectedItemWithNoData: `29` = this.cast(29)
+  def xlSubtotalColumn1: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlSubtotalColumn1: `13` = this.cast(13)
+  def xlSubtotalColumn2: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlSubtotalColumn2: `14` = this.cast(14)
+  def xlSubtotalColumn3: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlSubtotalColumn3: `15` = this.cast(15)
+  def xlSubtotalRow1: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlSubtotalRow1: `16` = this.cast(16)
+  def xlSubtotalRow2: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xlSubtotalRow2: `17` = this.cast(17)
+  def xlSubtotalRow3: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def xlSubtotalRow3: `18` = this.cast(18)
+  def xlTotalRow: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlTotalRow: `2` = this.cast(2)
-  @scala.inline
-  def xlWholeTable: `0` = this.cast(0)
+  def xlWholeTable: `0` = 0.asInstanceOf[`0`]
 }
 

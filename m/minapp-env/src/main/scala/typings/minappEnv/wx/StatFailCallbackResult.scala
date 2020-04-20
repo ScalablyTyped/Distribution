@@ -17,7 +17,6 @@ object StatFailCallbackResult {
   @scala.inline
   def apply(errMsg: String): StatFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatFailCallbackResult]
   }
 }

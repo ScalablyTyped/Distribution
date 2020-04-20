@@ -13,7 +13,6 @@ object CreateEmailTemplateResponse {
   @scala.inline
   def apply(CreateTemplateMessageBody: CreateTemplateMessageBody): CreateEmailTemplateResponse = {
     val __obj = js.Dynamic.literal(CreateTemplateMessageBody = CreateTemplateMessageBody.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateEmailTemplateResponse]
   }
 }

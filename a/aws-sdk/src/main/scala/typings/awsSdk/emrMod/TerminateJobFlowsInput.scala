@@ -16,7 +16,6 @@ object TerminateJobFlowsInput {
   @scala.inline
   def apply(JobFlowIds: XmlStringList): TerminateJobFlowsInput = {
     val __obj = js.Dynamic.literal(JobFlowIds = JobFlowIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TerminateJobFlowsInput]
   }
 }

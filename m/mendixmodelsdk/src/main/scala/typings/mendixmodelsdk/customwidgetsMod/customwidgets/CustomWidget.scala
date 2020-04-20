@@ -60,18 +60,18 @@ class CustomWidget protected () extends Widget {
     * In version 8.1.0: introduced
     */
   @JSName("conditionalEditabilitySettings")
-  def conditionalEditabilitySettings_Union(): ConditionalEditabilitySettings | Null = js.native
+  def conditionalEditabilitySettings_Union: ConditionalEditabilitySettings | Null = js.native
   def conditionalVisibilitySettings(): js.Any = js.native
   def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
   /**
     * In version 8.1.0: introduced
     */
   @JSName("conditionalVisibilitySettings")
-  def conditionalVisibilitySettings_Union(): ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings_Union: ConditionalVisibilitySettings | Null = js.native
   /**
     * In version 8.1.0: introduced
     */
-  def editable(): EditableEnum = js.native
+  def editable: EditableEnum = js.native
   def editable(newValue: EditableEnum): js.Any = js.native
   def labelTemplate(): js.Any = js.native
   def labelTemplate(newValue: ClientTemplate): js.Any = js.native
@@ -79,15 +79,15 @@ class CustomWidget protected () extends Widget {
     * In version 8.1.0: introduced
     */
   @JSName("labelTemplate")
-  def labelTemplate_Union(): ClientTemplate | Null = js.native
+  def labelTemplate_Union: ClientTemplate | Null = js.native
   def `object`(): js.Any = js.native
   def `object`(newValue: WidgetObject): js.Any = js.native
   @JSName("object")
-  def object_Union(): WidgetObject | Null = js.native
+  def object_Union: WidgetObject | Null = js.native
   def `type`(): js.Any = js.native
   def `type`(newValue: CustomWidgetType): js.Any = js.native
   @JSName("type")
-  def type_Union(): CustomWidgetType | Null = js.native
+  def type_Union: CustomWidgetType | Null = js.native
 }
 
 /* static members */

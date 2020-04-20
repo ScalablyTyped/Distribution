@@ -15,7 +15,6 @@ object Types {
   @scala.inline
   def apply(Authentication: Authentication, StrategyOptions: Token): Types = {
     val __obj = js.Dynamic.literal(Authentication = Authentication.asInstanceOf[js.Any], StrategyOptions = StrategyOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Types]
   }
 }

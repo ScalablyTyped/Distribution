@@ -18,14 +18,12 @@ trait NORMALIZE extends js.Object
 
 object NORMALIZE {
   @scala.inline
-  def REF_FORMAT_ALLOW_ONELEVEL: `1` = this.cast(1)
+  def REF_FORMAT_ALLOW_ONELEVEL: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def REF_FORMAT_NORMAL: `0` = this.cast(0)
+  def REF_FORMAT_NORMAL: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def REF_FORMAT_REFSPEC_PATTERN: `2` = this.cast(2)
+  def REF_FORMAT_REFSPEC_PATTERN: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def REF_FORMAT_REFSPEC_SHORTHAND: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def REF_FORMAT_REFSPEC_SHORTHAND: `4` = 4.asInstanceOf[`4`]
 }
 

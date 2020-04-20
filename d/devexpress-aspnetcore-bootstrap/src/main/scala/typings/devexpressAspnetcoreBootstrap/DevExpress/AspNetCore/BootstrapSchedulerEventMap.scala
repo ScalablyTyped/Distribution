@@ -57,7 +57,6 @@ object BootstrapSchedulerEventMap {
     visibleIntervalChanged: EventArgs
   ): BootstrapSchedulerEventMap = {
     val __obj = js.Dynamic.literal(activeViewChanged = activeViewChanged.asInstanceOf[js.Any], activeViewChanging = activeViewChanging.asInstanceOf[js.Any], appointmentClick = appointmentClick.asInstanceOf[js.Any], appointmentDeleting = appointmentDeleting.asInstanceOf[js.Any], appointmentDoubleClick = appointmentDoubleClick.asInstanceOf[js.Any], appointmentDrag = appointmentDrag.asInstanceOf[js.Any], appointmentDrop = appointmentDrop.asInstanceOf[js.Any], appointmentResize = appointmentResize.asInstanceOf[js.Any], appointmentResizing = appointmentResizing.asInstanceOf[js.Any], appointmentToolTipShowing = appointmentToolTipShowing.asInstanceOf[js.Any], appointmentsSelectionChanged = appointmentsSelectionChanged.asInstanceOf[js.Any], beginCallback = beginCallback.asInstanceOf[js.Any], callbackError = callbackError.asInstanceOf[js.Any], cellClick = cellClick.asInstanceOf[js.Any], cellDoubleClick = cellDoubleClick.asInstanceOf[js.Any], endCallback = endCallback.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], menuItemClicked = menuItemClicked.asInstanceOf[js.Any], moreButtonClicked = moreButtonClicked.asInstanceOf[js.Any], selectionChanged = selectionChanged.asInstanceOf[js.Any], selectionChanging = selectionChanging.asInstanceOf[js.Any], shortcut = shortcut.asInstanceOf[js.Any], visibleIntervalChanged = visibleIntervalChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapSchedulerEventMap]
   }
 }

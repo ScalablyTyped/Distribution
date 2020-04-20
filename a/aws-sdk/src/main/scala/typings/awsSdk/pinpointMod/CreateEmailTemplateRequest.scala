@@ -17,7 +17,6 @@ object CreateEmailTemplateRequest {
   @scala.inline
   def apply(EmailTemplateRequest: EmailTemplateRequest, TemplateName: string): CreateEmailTemplateRequest = {
     val __obj = js.Dynamic.literal(EmailTemplateRequest = EmailTemplateRequest.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateEmailTemplateRequest]
   }
 }

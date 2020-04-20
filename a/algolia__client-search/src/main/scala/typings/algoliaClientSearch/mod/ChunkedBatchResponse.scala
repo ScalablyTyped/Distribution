@@ -19,7 +19,6 @@ object ChunkedBatchResponse {
   @scala.inline
   def apply(objectIDs: js.Array[String], taskIDs: js.Array[Double]): ChunkedBatchResponse = {
     val __obj = js.Dynamic.literal(objectIDs = objectIDs.asInstanceOf[js.Any], taskIDs = taskIDs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChunkedBatchResponse]
   }
 }

@@ -16,18 +16,16 @@ trait Dash extends js.Object
 
 object Dash {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dash: typings.plotlyJs.plotlyJsStrings.dash = "dash".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dash]
   @scala.inline
-  def dash: typings.plotlyJs.plotlyJsStrings.dash = this.cast("dash")
+  def dashdot: typings.plotlyJs.plotlyJsStrings.dashdot = "dashdot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dashdot]
   @scala.inline
-  def dashdot: typings.plotlyJs.plotlyJsStrings.dashdot = this.cast("dashdot")
+  def dot: typings.plotlyJs.plotlyJsStrings.dot = "dot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dot]
   @scala.inline
-  def dot: typings.plotlyJs.plotlyJsStrings.dot = this.cast("dot")
+  def longdash: typings.plotlyJs.plotlyJsStrings.longdash = "longdash".asInstanceOf[typings.plotlyJs.plotlyJsStrings.longdash]
   @scala.inline
-  def longdash: typings.plotlyJs.plotlyJsStrings.longdash = this.cast("longdash")
+  def longdashdot: typings.plotlyJs.plotlyJsStrings.longdashdot = "longdashdot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.longdashdot]
   @scala.inline
-  def longdashdot: typings.plotlyJs.plotlyJsStrings.longdashdot = this.cast("longdashdot")
-  @scala.inline
-  def solid: typings.plotlyJs.plotlyJsStrings.solid = this.cast("solid")
+  def solid: typings.plotlyJs.plotlyJsStrings.solid = "solid".asInstanceOf[typings.plotlyJs.plotlyJsStrings.solid]
 }
 

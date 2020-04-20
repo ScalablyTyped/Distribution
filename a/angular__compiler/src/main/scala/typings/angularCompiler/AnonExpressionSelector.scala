@@ -14,7 +14,6 @@ object AnonExpressionSelector {
   @scala.inline
   def apply(expression: Expression, selector: String): AnonExpressionSelector = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExpressionSelector]
   }
 }

@@ -16,7 +16,6 @@ object GetLoadBalancerAccessLogs {
   @scala.inline
   def apply(bucket: String, bucketPrefix: String, enabled: Boolean, interval: Double): GetLoadBalancerAccessLogs = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], bucketPrefix = bucketPrefix.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLoadBalancerAccessLogs]
   }
 }

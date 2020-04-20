@@ -33,7 +33,7 @@ trait StoreConfig[S] extends js.Object {
     *   persist: [ 'state-key-to-persist' ],
     * } );
     */
-  var persist: js.UndefOr[`true` | js.Array[String]] = js.undefined
+  var persist: js.UndefOr[`true` | (js.Array[/* keyof S */ String])] = js.undefined
   var reducer: Reducer[S, AnyAction]
   var resolvers: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, _]]] = js.undefined
   var selectors: js.UndefOr[StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, _]]] = js.undefined
@@ -46,7 +46,7 @@ object StoreConfig {
     actions: StringDictionary[js.Function1[/* repeated */ js.Any, AnyAction | (Generator[_, _, _])]] = null,
     controls: StringDictionary[js.Function1[/* action */ AnyAction, _]] = null,
     initialState: S = null,
-    persist: `true` | js.Array[String] = null,
+    persist: `true` | (js.Array[/* keyof S */ String]) = null,
     resolvers: StringDictionary[js.Function1[/* repeated */ js.Any, _]] = null,
     selectors: StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, _]] = null
   ): StoreConfig[S] = {

@@ -19,43 +19,43 @@ import scala.scalajs.js.annotation._
 
 trait griddleReactProps {
   @scala.inline
-  def ComponentsCellProps: CellProps.type = typings.griddleReact.mod.components.CellProps
+  def ComponentsCellProps: CellProps.type = CellProps
   type ComponentsCellProps = CellProps
   @scala.inline
-  def ComponentsColumnDefinitionProps: ColumnDefinitionProps.type = typings.griddleReact.mod.components.ColumnDefinitionProps
+  def ComponentsColumnDefinitionProps: ColumnDefinitionProps.type = ColumnDefinitionProps
   type ComponentsColumnDefinitionProps = ColumnDefinitionProps
   @scala.inline
-  def ComponentsFilterProps: FilterProps.type = typings.griddleReact.mod.components.FilterProps
+  def ComponentsFilterProps: FilterProps.type = FilterProps
   type ComponentsFilterProps = FilterProps
   @scala.inline
-  def ComponentsRowProps: RowProps.type = typings.griddleReact.mod.components.RowProps
+  def ComponentsRowProps: RowProps.type = RowProps
   type ComponentsRowProps = RowProps
   @scala.inline
-  def ComponentsRowDefinitionProps: RowDefinitionProps.type = typings.griddleReact.mod.components.RowDefinitionProps
+  def ComponentsRowDefinitionProps: RowDefinitionProps.type = RowDefinitionProps
   type ComponentsRowDefinitionProps = RowDefinitionProps
   @scala.inline
-  def ComponentsSettingsProps: SettingsProps.type = typings.griddleReact.mod.components.SettingsProps
+  def ComponentsSettingsProps: SettingsProps.type = SettingsProps
   type ComponentsSettingsProps = SettingsProps
   @scala.inline
-  def ComponentsSettingsToggleProps: SettingsToggleProps.type = typings.griddleReact.mod.components.SettingsToggleProps
+  def ComponentsSettingsToggleProps: SettingsToggleProps.type = SettingsToggleProps
   type ComponentsSettingsToggleProps = SettingsToggleProps
   @scala.inline
-  def ComponentsSettingsWrapperProps: SettingsWrapperProps.type = typings.griddleReact.mod.components.SettingsWrapperProps
+  def ComponentsSettingsWrapperProps: SettingsWrapperProps.type = SettingsWrapperProps
   type ComponentsSettingsWrapperProps = SettingsWrapperProps
   @scala.inline
-  def ComponentsTableProps: TableProps.type = typings.griddleReact.mod.components.TableProps
+  def ComponentsTableProps: TableProps.type = TableProps
   type ComponentsTableProps = TableProps
   @scala.inline
-  def ComponentsTableBodyProps: TableBodyProps.type = typings.griddleReact.mod.components.TableBodyProps
+  def ComponentsTableBodyProps: TableBodyProps.type = TableBodyProps
   type ComponentsTableBodyProps = TableBodyProps
   @scala.inline
-  def ComponentsTableHeadingProps: TableHeadingProps.type = typings.griddleReact.mod.components.TableHeadingProps
+  def ComponentsTableHeadingProps: TableHeadingProps.type = TableHeadingProps
   type ComponentsTableHeadingProps = TableHeadingProps
   @scala.inline
-  def ComponentsTableHeadingCellProps: TableHeadingCellProps.type = typings.griddleReact.mod.components.TableHeadingCellProps
+  def ComponentsTableHeadingCellProps: TableHeadingCellProps.type = TableHeadingCellProps
   type ComponentsTableHeadingCellProps = TableHeadingCellProps
   @scala.inline
-  def GriddleReactProps: GriddleProps.type = typings.griddleReact.mod.GriddleProps
+  def GriddleReactProps: GriddleProps.type = GriddleProps
   type GriddleReactProps[T] = GriddleProps[T]
 }
 

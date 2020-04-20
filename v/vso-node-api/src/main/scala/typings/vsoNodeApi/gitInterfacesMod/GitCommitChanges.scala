@@ -13,7 +13,6 @@ object GitCommitChanges {
   @scala.inline
   def apply(changeCounts: ChangeCountDictionary, changes: js.Array[GitChange]): GitCommitChanges = {
     val __obj = js.Dynamic.literal(changeCounts = changeCounts.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitCommitChanges]
   }
 }

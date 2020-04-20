@@ -10,7 +10,7 @@ trait Symbol extends js.Object {
     * Expose the [[Description]] internal slot of a symbol directly.
     */
   val description: js.UndefOr[java.lang.String] = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
 }
 

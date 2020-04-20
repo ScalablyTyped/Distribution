@@ -13,7 +13,6 @@ object AnonFormatCount {
   @scala.inline
   def apply(Cancel: Double, FormatCount: Double): AnonFormatCount = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], FormatCount = FormatCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFormatCount]
   }
 }

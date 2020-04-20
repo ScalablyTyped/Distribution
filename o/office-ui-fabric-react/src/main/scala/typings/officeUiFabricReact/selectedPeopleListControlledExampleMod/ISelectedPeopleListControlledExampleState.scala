@@ -14,7 +14,6 @@ object ISelectedPeopleListControlledExampleState {
   @scala.inline
   def apply(currentSelectedItems: js.Array[IExtendedPersonaProps], nextPersonIndex: Double): ISelectedPeopleListControlledExampleState = {
     val __obj = js.Dynamic.literal(currentSelectedItems = currentSelectedItems.asInstanceOf[js.Any], nextPersonIndex = nextPersonIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISelectedPeopleListControlledExampleState]
   }
 }

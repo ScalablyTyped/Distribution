@@ -18,7 +18,6 @@ object UseSortByInstanceProps {
     toggleSortBy: (IdType[D], Boolean, Boolean) => Unit
   ): UseSortByInstanceProps[D] = {
     val __obj = js.Dynamic.literal(preSortedRows = preSortedRows.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], toggleSortBy = js.Any.fromFunction3(toggleSortBy))
-  
     __obj.asInstanceOf[UseSortByInstanceProps[D]]
   }
 }

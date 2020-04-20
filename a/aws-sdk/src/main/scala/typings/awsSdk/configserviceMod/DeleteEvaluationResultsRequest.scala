@@ -16,7 +16,6 @@ object DeleteEvaluationResultsRequest {
   @scala.inline
   def apply(ConfigRuleName: StringWithCharLimit64): DeleteEvaluationResultsRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEvaluationResultsRequest]
   }
 }

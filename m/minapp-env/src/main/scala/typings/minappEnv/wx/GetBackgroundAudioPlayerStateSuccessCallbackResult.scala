@@ -35,7 +35,6 @@ object GetBackgroundAudioPlayerStateSuccessCallbackResult {
     status: `0` | `1` | `2`
   ): GetBackgroundAudioPlayerStateSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(currentPosition = currentPosition.asInstanceOf[js.Any], dataUrl = dataUrl.asInstanceOf[js.Any], downloadPercent = downloadPercent.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBackgroundAudioPlayerStateSuccessCallbackResult]
   }
 }

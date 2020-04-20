@@ -19,7 +19,6 @@ object AnonInsecure {
   @scala.inline
   def apply(insecure: Double, unstable: Boolean): AnonInsecure = {
     val __obj = js.Dynamic.literal(insecure = insecure.asInstanceOf[js.Any], unstable = unstable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInsecure]
   }
 }

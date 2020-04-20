@@ -27,7 +27,6 @@ object UserIDResponse {
   @scala.inline
   def apply(clusterName: String, dataSize: Double, nbRecords: Double, userID: String): UserIDResponse = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], dataSize = dataSize.asInstanceOf[js.Any], nbRecords = nbRecords.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserIDResponse]
   }
 }

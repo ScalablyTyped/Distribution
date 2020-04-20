@@ -19,7 +19,6 @@ object AnonStoreId {
   @scala.inline
   def apply(firstPartyDomain: String, name: String, storeId: String, url: String): AnonStoreId = {
     val __obj = js.Dynamic.literal(firstPartyDomain = firstPartyDomain.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], storeId = storeId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStoreId]
   }
 }

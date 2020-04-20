@@ -20,7 +20,6 @@ object Eirp {
   @scala.inline
   def apply(units: EirpUnits, value: Double): Eirp = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Eirp]
   }
 }

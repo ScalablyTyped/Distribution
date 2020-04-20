@@ -28,7 +28,6 @@ object SerializableInstructions {
     textStates: StringDictionary[TextState]
   ): SerializableInstructions = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], fillStates = fillStates.asInstanceOf[js.Any], hitDetectionInstructions = hitDetectionInstructions.asInstanceOf[js.Any], instructions = instructions.asInstanceOf[js.Any], strokeStates = strokeStates.asInstanceOf[js.Any], textStates = textStates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerializableInstructions]
   }
 }

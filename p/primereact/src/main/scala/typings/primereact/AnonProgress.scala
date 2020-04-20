@@ -14,7 +14,6 @@ object AnonProgress {
   @scala.inline
   def apply(originalEvent: Event_, progress: js.Any): AnonProgress = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProgress]
   }
 }

@@ -20,7 +20,6 @@ object DeleteUserAttributesRequest {
   @scala.inline
   def apply(AccessToken: TokenModelType, UserAttributeNames: AttributeNameListType): DeleteUserAttributesRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any], UserAttributeNames = UserAttributeNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUserAttributesRequest]
   }
 }

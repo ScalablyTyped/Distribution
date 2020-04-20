@@ -15,7 +15,6 @@ object MultipleQueriesResponse {
   @scala.inline
   def apply[TObject](results: js.Array[SearchResponse[TObject with ObjectWithObjectID]]): MultipleQueriesResponse[TObject] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultipleQueriesResponse[TObject]]
   }
 }

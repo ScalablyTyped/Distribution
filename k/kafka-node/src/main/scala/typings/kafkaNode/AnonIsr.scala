@@ -22,7 +22,6 @@ object AnonIsr {
     topic: String
   ): AnonIsr = {
     val __obj = js.Dynamic.literal(isr = isr.asInstanceOf[js.Any], leader = leader.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], replicas = replicas.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsr]
   }
 }

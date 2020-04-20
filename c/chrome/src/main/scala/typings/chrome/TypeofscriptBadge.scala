@@ -24,7 +24,6 @@ object TypeofscriptBadge {
     setPopup: SetPopupDetails => Unit
   ): TypeofscriptBadge = {
     val __obj = js.Dynamic.literal(getAttention = js.Any.fromFunction1(getAttention), getPopup = js.Any.fromFunction2(getPopup), onClicked = onClicked.asInstanceOf[js.Any], setPopup = js.Any.fromFunction1(setPopup))
-  
     __obj.asInstanceOf[TypeofscriptBadge]
   }
 }

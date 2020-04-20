@@ -22,7 +22,6 @@ object Observer {
     unAll: () => Unit
   ): Observer = {
     val __obj = js.Dynamic.literal(fireEvent = js.Any.fromFunction2(fireEvent), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), un = js.Any.fromFunction2(un), unAll = js.Any.fromFunction0(unAll))
-  
     __obj.asInstanceOf[Observer]
   }
 }

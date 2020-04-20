@@ -1,5 +1,7 @@
 package typings.formatjsIntlUnifiedNumberformat.dataMod
 
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.accounting
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.standard
 import typings.formatjsIntlUtils.numberTypesMod.CurrencyData
 import typings.formatjsIntlUtils.numberTypesMod.CurrencyPattern
 import typings.formatjsIntlUtils.numberTypesMod.NumberLocalePatternData
@@ -43,7 +45,7 @@ class Patterns protected () extends NumberLocalePatternData {
     numberingSystem: String,
     unit: String,
     currency: String,
-    currencySign: String
+    currencySign: standard | accounting
   ) = this()
   var _currency: js.UndefOr[js.Any] = js.native
   var _unit: js.UndefOr[js.Any] = js.native
@@ -65,12 +67,12 @@ class Patterns protected () extends NumberLocalePatternData {
   var unitPatterns: js.UndefOr[js.Any] = js.native
   var units: js.Any = js.native
   @JSName("currency")
-  def currency_MPatterns(): Record[String, CurrencyPatterns] = js.native
+  def currency_MPatterns: Record[String, CurrencyPatterns] = js.native
   @JSName("decimal")
-  def decimal_MPatterns(): DecimalPatterns = js.native
+  def decimal_MPatterns: DecimalPatterns = js.native
   @JSName("percent")
-  def percent_MPatterns(): PercentPatterns = js.native
+  def percent_MPatterns: PercentPatterns = js.native
   @JSName("unit")
-  def unit_MPatterns(): Record[String, UnitPatterns] = js.native
+  def unit_MPatterns: Record[String, UnitPatterns] = js.native
 }
 

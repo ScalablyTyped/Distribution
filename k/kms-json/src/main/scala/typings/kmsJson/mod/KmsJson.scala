@@ -13,7 +13,6 @@ object KmsJson {
   @scala.inline
   def apply(decrypt: String => js.Object, encrypt: js.Object => String): KmsJson = {
     val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt))
-  
     __obj.asInstanceOf[KmsJson]
   }
 }

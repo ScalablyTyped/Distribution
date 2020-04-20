@@ -14,7 +14,6 @@ object AnonFirst {
   @scala.inline
   def apply[K, V](first: IMapView[K, V], second: IMapView[K, V]): AnonFirst[K, V] = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFirst[K, V]]
   }
 }

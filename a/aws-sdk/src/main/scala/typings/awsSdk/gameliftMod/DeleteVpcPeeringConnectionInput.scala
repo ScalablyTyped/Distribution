@@ -20,7 +20,6 @@ object DeleteVpcPeeringConnectionInput {
   @scala.inline
   def apply(FleetId: FleetId, VpcPeeringConnectionId: NonZeroAndMaxString): DeleteVpcPeeringConnectionInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], VpcPeeringConnectionId = VpcPeeringConnectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVpcPeeringConnectionInput]
   }
 }

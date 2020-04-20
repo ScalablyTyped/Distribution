@@ -18,7 +18,6 @@ object IAttackComponent {
   @scala.inline
   def apply(damage: AnonRangemax): IAttackComponent = {
     val __obj = js.Dynamic.literal(damage = damage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAttackComponent]
   }
 }

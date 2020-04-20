@@ -53,14 +53,18 @@ package object ioBroker {
   ]
   type GetEnumCallback = js.Function3[
     /* err */ java.lang.String | scala.Null, 
-    /* enums */ typings.std.Record[java.lang.String, typings.iobroker.mod._Global_.ioBroker.Enum], 
-    /* requestedEnum */ java.lang.String, 
+    /* enums */ js.UndefOr[
+      typings.std.Record[java.lang.String, typings.iobroker.mod._Global_.ioBroker.Enum]
+    ], 
+    /* requestedEnum */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
   type GetEnumsCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
-    /* result */ org.scalablytyped.runtime.StringDictionary[
-      typings.std.Record[java.lang.String, typings.iobroker.mod._Global_.ioBroker.Enum]
+    /* result */ js.UndefOr[
+      org.scalablytyped.runtime.StringDictionary[
+        typings.std.Record[java.lang.String, typings.iobroker.mod._Global_.ioBroker.Enum]
+      ]
     ], 
     scala.Unit
   ]
@@ -82,6 +86,8 @@ package object ioBroker {
     /* result */ js.UndefOr[typings.iobroker.AnonRowsArray], 
     scala.Unit
   ]
+  /** Parameters for adapter.getObjectList */
+  type GetObjectListParams = typings.iobroker.mod._Global_.ioBroker.GetObjectViewParams
   type GetObjectViewCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
     /* result */ js.UndefOr[typings.iobroker.AnonRows], 
@@ -89,7 +95,9 @@ package object ioBroker {
   ]
   type GetObjectsCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
-    /* objects */ typings.std.Record[java.lang.String, typings.iobroker.mod._Global_.ioBroker.Object], 
+    /* objects */ js.UndefOr[
+      typings.std.Record[java.lang.String, typings.iobroker.mod._Global_.ioBroker.Object]
+    ], 
     scala.Unit
   ]
   // This is a version used by GetDevices/GetChannelsOf/GetStatesOf
@@ -129,6 +137,7 @@ package object ioBroker {
     /* obj */ js.UndefOr[typings.iobroker.mod._Global_.ioBroker.Object | scala.Null], 
     scala.Unit | js.Promise[scala.Unit]
   ]
+  type Plugin = typings.std.Record[java.lang.String, js.Any]
   type ReadDirCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
     /* entries */ js.UndefOr[js.Array[typings.iobroker.mod._Global_.ioBroker.ReadDirResult]], 
@@ -151,7 +160,7 @@ package object ioBroker {
   type Session = js.Any
   type SetObjectCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
-    /* obj */ typings.iobroker.AnonIdString, 
+    /* obj */ js.UndefOr[typings.iobroker.AnonIdString], 
     scala.Unit
   ]
   type SetStateCallback = js.Function2[
@@ -170,7 +179,7 @@ package object ioBroker {
   type SettableObjectWorker[T /* <: typings.iobroker.mod._Global_.ioBroker.Object */] = (typings.std.Pick[
     T, 
     typings.std.Exclude[
-      java.lang.String, 
+      /* keyof T */ java.lang.String, 
       typings.iobroker.iobrokerStrings._id | typings.iobroker.iobrokerStrings.acl
     ]
   ]) with typings.iobroker.AnonAcl[T]

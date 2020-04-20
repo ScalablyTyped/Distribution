@@ -20,7 +20,6 @@ object PutRolePermissionsBoundaryRequest {
   @scala.inline
   def apply(PermissionsBoundary: arnType, RoleName: roleNameType): PutRolePermissionsBoundaryRequest = {
     val __obj = js.Dynamic.literal(PermissionsBoundary = PermissionsBoundary.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutRolePermissionsBoundaryRequest]
   }
 }

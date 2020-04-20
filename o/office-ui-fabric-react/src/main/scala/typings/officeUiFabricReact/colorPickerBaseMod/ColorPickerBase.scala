@@ -18,12 +18,13 @@ class ColorPickerBase protected ()
      with IColorPicker {
   def this(props: IColorPickerProps) = this()
   var _getDisplayValue: js.Any = js.native
-  var _onAChanged: js.Any = js.native
+  /** Callback for when the alpha/transparency slider changes */
+  var _onATChanged: js.Any = js.native
   var _onBlur: js.Any = js.native
   var _onHChanged: js.Any = js.native
   var _onSVChanged: js.Any = js.native
   var _onTextChange: js.Any = js.native
-  /** Strings besides red/green/blue/alpha/hex */
+  /** Strings besides red/green/blue/alpha/hex, with defaults for all values except the deprecated `hue` */
   var _strings: js.Any = js.native
   var _textChangeHandlers: js.Any = js.native
   /**

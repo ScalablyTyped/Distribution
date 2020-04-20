@@ -26,22 +26,20 @@ trait MFTriggerWeekDay extends js.Object
 
 object MFTriggerWeekDay {
   @scala.inline
-  def EveryDay: `125` = this.cast(125)
+  def EveryDay: `125` = 125.asInstanceOf[`125`]
   @scala.inline
-  def Friday: `32` = this.cast(32)
+  def Friday: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def Monday: `2` = this.cast(2)
+  def Monday: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Saturday: `64` = this.cast(64)
+  def Saturday: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def Sunday: `1` = this.cast(1)
+  def Sunday: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Thursday: `16` = this.cast(16)
+  def Thursday: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def Tuesday: `4` = this.cast(4)
+  def Tuesday: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Wednesday: `8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Wednesday: `8` = 8.asInstanceOf[`8`]
 }
 

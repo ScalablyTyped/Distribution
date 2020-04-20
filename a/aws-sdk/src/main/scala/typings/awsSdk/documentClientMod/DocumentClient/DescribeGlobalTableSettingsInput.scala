@@ -16,7 +16,6 @@ object DescribeGlobalTableSettingsInput {
   @scala.inline
   def apply(GlobalTableName: TableName): DescribeGlobalTableSettingsInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeGlobalTableSettingsInput]
   }
 }

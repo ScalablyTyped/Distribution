@@ -32,7 +32,6 @@ object LeakInformation {
   @scala.inline
   def apply(end: Date, growth: Double, reason: String, start: Date): LeakInformation = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], growth = growth.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LeakInformation]
   }
 }

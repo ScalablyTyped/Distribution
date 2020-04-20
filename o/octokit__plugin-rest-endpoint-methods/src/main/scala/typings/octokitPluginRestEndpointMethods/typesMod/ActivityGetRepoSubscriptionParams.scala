@@ -13,7 +13,6 @@ object ActivityGetRepoSubscriptionParams {
   @scala.inline
   def apply(owner: String, repo: String): ActivityGetRepoSubscriptionParams = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActivityGetRepoSubscriptionParams]
   }
 }

@@ -30,7 +30,6 @@ object AnonCond {
     negate: Boolean
   ): AnonCond = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], cond = cond.asInstanceOf[js.Any], elses = elses.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCond]
   }
 }

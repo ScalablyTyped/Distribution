@@ -20,7 +20,6 @@ object ActivityTypeDetail {
   @scala.inline
   def apply(configuration: ActivityTypeConfiguration, typeInfo: ActivityTypeInfo): ActivityTypeDetail = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], typeInfo = typeInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActivityTypeDetail]
   }
 }

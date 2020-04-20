@@ -16,7 +16,6 @@ object DeleteDBClusterSnapshotMessage {
   @scala.inline
   def apply(DBClusterSnapshotIdentifier: String): DeleteDBClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(DBClusterSnapshotIdentifier = DBClusterSnapshotIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDBClusterSnapshotMessage]
   }
 }

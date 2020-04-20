@@ -84,80 +84,78 @@ trait PpSaveAsFileType extends js.Object
 
 object PpSaveAsFileType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppSaveAsAddIn: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ppSaveAsAddIn: `8` = this.cast(8)
+  def ppSaveAsBMP: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def ppSaveAsBMP: `19` = this.cast(19)
+  def ppSaveAsDefault: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def ppSaveAsDefault: `11` = this.cast(11)
+  def ppSaveAsEMF: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def ppSaveAsEMF: `23` = this.cast(23)
+  def ppSaveAsExternalConverter: `64000` = 64000.asInstanceOf[`64000`]
   @scala.inline
-  def ppSaveAsExternalConverter: `64000` = this.cast(64000)
+  def ppSaveAsGIF: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def ppSaveAsGIF: `16` = this.cast(16)
+  def ppSaveAsHTML: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def ppSaveAsHTML: `12` = this.cast(12)
+  def ppSaveAsHTMLDual: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def ppSaveAsHTMLDual: `14` = this.cast(14)
+  def ppSaveAsHTMLv3: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def ppSaveAsHTMLv3: `13` = this.cast(13)
+  def ppSaveAsJPG: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def ppSaveAsJPG: `17` = this.cast(17)
+  def ppSaveAsMetaFile: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def ppSaveAsMetaFile: `15` = this.cast(15)
+  def ppSaveAsOpenDocumentPresentation: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def ppSaveAsOpenDocumentPresentation: `35` = this.cast(35)
+  def ppSaveAsOpenXMLAddin: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def ppSaveAsOpenXMLAddin: `30` = this.cast(30)
+  def ppSaveAsOpenXMLPicturePresentation: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def ppSaveAsOpenXMLPicturePresentation: `36` = this.cast(36)
+  def ppSaveAsOpenXMLPresentation: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def ppSaveAsOpenXMLPresentation: `24` = this.cast(24)
+  def ppSaveAsOpenXMLPresentationMacroEnabled: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def ppSaveAsOpenXMLPresentationMacroEnabled: `25` = this.cast(25)
+  def ppSaveAsOpenXMLShow: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def ppSaveAsOpenXMLShow: `28` = this.cast(28)
+  def ppSaveAsOpenXMLShowMacroEnabled: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def ppSaveAsOpenXMLShowMacroEnabled: `29` = this.cast(29)
+  def ppSaveAsOpenXMLTemplate: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def ppSaveAsOpenXMLTemplate: `26` = this.cast(26)
+  def ppSaveAsOpenXMLTemplateMacroEnabled: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def ppSaveAsOpenXMLTemplateMacroEnabled: `27` = this.cast(27)
+  def ppSaveAsOpenXMLTheme: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def ppSaveAsOpenXMLTheme: `31` = this.cast(31)
+  def ppSaveAsPDF: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def ppSaveAsPDF: `32` = this.cast(32)
+  def ppSaveAsPNG: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def ppSaveAsPNG: `18` = this.cast(18)
+  def ppSaveAsPowerPoint3: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppSaveAsPowerPoint3: `4` = this.cast(4)
+  def ppSaveAsPowerPoint4: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppSaveAsPowerPoint4: `3` = this.cast(3)
+  def ppSaveAsPowerPoint4FarEast: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def ppSaveAsPowerPoint4FarEast: `10` = this.cast(10)
+  def ppSaveAsPowerPoint7: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppSaveAsPowerPoint7: `2` = this.cast(2)
+  def ppSaveAsPresForReview: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def ppSaveAsPresForReview: `22` = this.cast(22)
+  def ppSaveAsPresentation: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppSaveAsPresentation: `1` = this.cast(1)
+  def ppSaveAsRTF: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ppSaveAsRTF: `6` = this.cast(6)
+  def ppSaveAsShow: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ppSaveAsShow: `7` = this.cast(7)
+  def ppSaveAsTIF: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def ppSaveAsTIF: `21` = this.cast(21)
+  def ppSaveAsTemplate: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppSaveAsTemplate: `5` = this.cast(5)
+  def ppSaveAsWMV: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def ppSaveAsWMV: `37` = this.cast(37)
+  def ppSaveAsWebArchive: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def ppSaveAsWebArchive: `20` = this.cast(20)
+  def ppSaveAsXMLPresentation: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def ppSaveAsXMLPresentation: `34` = this.cast(34)
-  @scala.inline
-  def ppSaveAsXPS: `33` = this.cast(33)
+  def ppSaveAsXPS: `33` = 33.asInstanceOf[`33`]
 }
 

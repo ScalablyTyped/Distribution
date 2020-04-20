@@ -19,15 +19,15 @@ object posterizeBlockMod extends js.Object {
     /**
       * Gets the output component
       */
-    def output(): NodeMaterialConnectionPoint = js.native
+    def output: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the steps input component
       */
-    def steps(): NodeMaterialConnectionPoint = js.native
+    def steps: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the value input component
       */
-    def value(): NodeMaterialConnectionPoint = js.native
+    def value: NodeMaterialConnectionPoint = js.native
   }
   
 }

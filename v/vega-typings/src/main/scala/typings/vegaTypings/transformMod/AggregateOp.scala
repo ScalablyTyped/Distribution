@@ -33,52 +33,50 @@ trait AggregateOp extends js.Object
 
 object AggregateOp {
   @scala.inline
-  def argmax: typings.vegaTypings.vegaTypingsStrings.argmax = this.cast("argmax")
+  def argmax: typings.vegaTypings.vegaTypingsStrings.argmax = "argmax".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.argmax]
   @scala.inline
-  def argmin: typings.vegaTypings.vegaTypingsStrings.argmin = this.cast("argmin")
+  def argmin: typings.vegaTypings.vegaTypingsStrings.argmin = "argmin".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.argmin]
   @scala.inline
-  def average: typings.vegaTypings.vegaTypingsStrings.average = this.cast("average")
+  def average: typings.vegaTypings.vegaTypingsStrings.average = "average".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.average]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ci0: typings.vegaTypings.vegaTypingsStrings.ci0 = "ci0".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ci0]
   @scala.inline
-  def ci0: typings.vegaTypings.vegaTypingsStrings.ci0 = this.cast("ci0")
+  def ci1: typings.vegaTypings.vegaTypingsStrings.ci1 = "ci1".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.ci1]
   @scala.inline
-  def ci1: typings.vegaTypings.vegaTypingsStrings.ci1 = this.cast("ci1")
+  def count: typings.vegaTypings.vegaTypingsStrings.count = "count".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.count]
   @scala.inline
-  def count: typings.vegaTypings.vegaTypingsStrings.count = this.cast("count")
+  def distinct: typings.vegaTypings.vegaTypingsStrings.distinct = "distinct".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.distinct]
   @scala.inline
-  def distinct: typings.vegaTypings.vegaTypingsStrings.distinct = this.cast("distinct")
+  def max: typings.vegaTypings.vegaTypingsStrings.max = "max".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.max]
   @scala.inline
-  def max: typings.vegaTypings.vegaTypingsStrings.max = this.cast("max")
+  def mean: typings.vegaTypings.vegaTypingsStrings.mean = "mean".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mean]
   @scala.inline
-  def mean: typings.vegaTypings.vegaTypingsStrings.mean = this.cast("mean")
+  def median: typings.vegaTypings.vegaTypingsStrings.median = "median".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.median]
   @scala.inline
-  def median: typings.vegaTypings.vegaTypingsStrings.median = this.cast("median")
+  def min: typings.vegaTypings.vegaTypingsStrings.min = "min".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.min]
   @scala.inline
-  def min: typings.vegaTypings.vegaTypingsStrings.min = this.cast("min")
+  def missing: typings.vegaTypings.vegaTypingsStrings.missing = "missing".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.missing]
   @scala.inline
-  def missing: typings.vegaTypings.vegaTypingsStrings.missing = this.cast("missing")
+  def product: typings.vegaTypings.vegaTypingsStrings.product = "product".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.product]
   @scala.inline
-  def product: typings.vegaTypings.vegaTypingsStrings.product = this.cast("product")
+  def q1: typings.vegaTypings.vegaTypingsStrings.q1 = "q1".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.q1]
   @scala.inline
-  def q1: typings.vegaTypings.vegaTypingsStrings.q1 = this.cast("q1")
+  def q3: typings.vegaTypings.vegaTypingsStrings.q3 = "q3".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.q3]
   @scala.inline
-  def q3: typings.vegaTypings.vegaTypingsStrings.q3 = this.cast("q3")
+  def stderr: typings.vegaTypings.vegaTypingsStrings.stderr = "stderr".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.stderr]
   @scala.inline
-  def stderr: typings.vegaTypings.vegaTypingsStrings.stderr = this.cast("stderr")
+  def stdev: typings.vegaTypings.vegaTypingsStrings.stdev = "stdev".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.stdev]
   @scala.inline
-  def stdev: typings.vegaTypings.vegaTypingsStrings.stdev = this.cast("stdev")
+  def stdevp: typings.vegaTypings.vegaTypingsStrings.stdevp = "stdevp".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.stdevp]
   @scala.inline
-  def stdevp: typings.vegaTypings.vegaTypingsStrings.stdevp = this.cast("stdevp")
+  def sum: typings.vegaTypings.vegaTypingsStrings.sum = "sum".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.sum]
   @scala.inline
-  def sum: typings.vegaTypings.vegaTypingsStrings.sum = this.cast("sum")
+  def valid: typings.vegaTypings.vegaTypingsStrings.valid = "valid".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.valid]
   @scala.inline
-  def valid: typings.vegaTypings.vegaTypingsStrings.valid = this.cast("valid")
+  def values: typings.vegaTypings.vegaTypingsStrings.values = "values".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.values]
   @scala.inline
-  def values: typings.vegaTypings.vegaTypingsStrings.values = this.cast("values")
+  def variance: typings.vegaTypings.vegaTypingsStrings.variance = "variance".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.variance]
   @scala.inline
-  def variance: typings.vegaTypings.vegaTypingsStrings.variance = this.cast("variance")
-  @scala.inline
-  def variancep: typings.vegaTypings.vegaTypingsStrings.variancep = this.cast("variancep")
+  def variancep: typings.vegaTypings.vegaTypingsStrings.variancep = "variancep".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.variancep]
 }
 

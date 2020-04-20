@@ -16,7 +16,6 @@ object fn {
   @scala.inline
   def apply(clone: fnStatic): fn = {
     val __obj = js.Dynamic.literal(clone = clone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[fn]
   }
 }

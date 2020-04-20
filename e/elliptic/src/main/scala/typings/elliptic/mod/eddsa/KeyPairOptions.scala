@@ -14,7 +14,6 @@ object KeyPairOptions {
   @scala.inline
   def apply(pub: Buffer | Point, secret: Buffer): KeyPairOptions = {
     val __obj = js.Dynamic.literal(pub = pub.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyPairOptions]
   }
 }

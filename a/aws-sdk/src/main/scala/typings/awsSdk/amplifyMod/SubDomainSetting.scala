@@ -20,7 +20,6 @@ object SubDomainSetting {
   @scala.inline
   def apply(branchName: BranchName, prefix: DomainPrefix): SubDomainSetting = {
     val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubDomainSetting]
   }
 }

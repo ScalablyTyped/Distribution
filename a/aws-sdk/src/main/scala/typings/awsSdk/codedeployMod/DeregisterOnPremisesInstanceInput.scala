@@ -16,7 +16,6 @@ object DeregisterOnPremisesInstanceInput {
   @scala.inline
   def apply(instanceName: InstanceName): DeregisterOnPremisesInstanceInput = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterOnPremisesInstanceInput]
   }
 }

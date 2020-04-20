@@ -16,7 +16,6 @@ object DeleteAssessmentRunRequest {
   @scala.inline
   def apply(assessmentRunArn: Arn): DeleteAssessmentRunRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArn = assessmentRunArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAssessmentRunRequest]
   }
 }

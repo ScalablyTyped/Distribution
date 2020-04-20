@@ -12,7 +12,6 @@ object ISystemConditionFactory {
   @scala.inline
   def apply(create: SystemConditionType => SystemCondition): ISystemConditionFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[ISystemConditionFactory]
   }
 }

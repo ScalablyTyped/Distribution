@@ -23,7 +23,6 @@ object Stats {
   @scala.inline
   def apply(ok: Boolean, req: AnonBytes, res: AnonHeaders, time: Double): Stats = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Stats]
   }
 }

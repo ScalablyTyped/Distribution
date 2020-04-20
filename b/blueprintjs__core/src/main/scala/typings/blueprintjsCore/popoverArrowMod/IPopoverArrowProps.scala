@@ -15,7 +15,6 @@ object IPopoverArrowProps {
   @scala.inline
   def apply(arrowProps: PopperArrowProps, placement: Placement): IPopoverArrowProps = {
     val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPopoverArrowProps]
   }
 }

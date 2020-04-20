@@ -41,7 +41,7 @@ class ListItem[T] () extends SecurableObject {
   /** Gets id of the item */
   def get_id(): Double = js.native
   /** Gets the specified field value for the list item. Field value is returned as string, but it can be casted to a specific field value type, e.g. SP.LookupFieldValue, etc. */
-  def get_item[K /* <: String */](fieldInternalName: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def get_item[K /* <: /* keyof T */ String */](fieldInternalName: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   /** Get the list in which the item resides. */
   def get_parentList(): List[_] = js.native
   /** Sets the value of the field for the list item based on an implementation specific transformation of the value. */
@@ -49,7 +49,7 @@ class ListItem[T] () extends SecurableObject {
   /** Moves the list item to the Recycle Bin and returns the identifier of the new Recycle Bin item. */
   def recycle(): GuidResult = js.native
   /** Sets the specified field value for the list item. Consider using parseAndSetFieldValue instead. */
-  def set_item[K /* <: String */](
+  def set_item[K /* <: /* keyof T */ String */](
     fieldInternalName: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): Unit = js.native

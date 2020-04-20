@@ -16,7 +16,6 @@ object IAjaxFileStatic {
     send: IOption => IAjaxFilePromise[js.Any]
   ): IAjaxFileStatic = {
     val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any], send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[IAjaxFileStatic]
   }
 }

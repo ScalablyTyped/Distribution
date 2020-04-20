@@ -20,7 +20,6 @@ object FacetAttributeReference {
   @scala.inline
   def apply(TargetAttributeName: AttributeName, TargetFacetName: FacetName): FacetAttributeReference = {
     val __obj = js.Dynamic.literal(TargetAttributeName = TargetAttributeName.asInstanceOf[js.Any], TargetFacetName = TargetFacetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FacetAttributeReference]
   }
 }

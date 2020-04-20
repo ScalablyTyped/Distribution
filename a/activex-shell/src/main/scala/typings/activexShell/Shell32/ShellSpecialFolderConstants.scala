@@ -88,82 +88,80 @@ trait ShellSpecialFolderConstants extends js.Object
 
 object ShellSpecialFolderConstants {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ssfALTSTARTUP: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def ssfALTSTARTUP: `29` = this.cast(29)
+  def ssfAPPDATA: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def ssfAPPDATA: `26` = this.cast(26)
+  def ssfBITBUCKET: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def ssfBITBUCKET: `10` = this.cast(10)
+  def ssfCOMMONALTSTARTUP: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def ssfCOMMONALTSTARTUP: `30` = this.cast(30)
+  def ssfCOMMONAPPDATA: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def ssfCOMMONAPPDATA: `35` = this.cast(35)
+  def ssfCOMMONDESKTOPDIR: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def ssfCOMMONDESKTOPDIR: `25` = this.cast(25)
+  def ssfCOMMONFAVORITES: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def ssfCOMMONFAVORITES: `31` = this.cast(31)
+  def ssfCOMMONPROGRAMS: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def ssfCOMMONPROGRAMS: `23` = this.cast(23)
+  def ssfCOMMONSTARTMENU: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def ssfCOMMONSTARTMENU: `22` = this.cast(22)
+  def ssfCOMMONSTARTUP: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def ssfCOMMONSTARTUP: `24` = this.cast(24)
+  def ssfCONTROLS: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ssfCONTROLS: `3` = this.cast(3)
+  def ssfCOOKIES: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def ssfCOOKIES: `33` = this.cast(33)
+  def ssfDESKTOP: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ssfDESKTOP: `0` = this.cast(0)
+  def ssfDESKTOPDIRECTORY: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def ssfDESKTOPDIRECTORY: `16` = this.cast(16)
+  def ssfDRIVES: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def ssfDRIVES: `17` = this.cast(17)
+  def ssfFAVORITES: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ssfFAVORITES: `6` = this.cast(6)
+  def ssfFONTS: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def ssfFONTS: `20` = this.cast(20)
+  def ssfHISTORY: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def ssfHISTORY: `34` = this.cast(34)
+  def ssfINTERNETCACHE: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def ssfINTERNETCACHE: `32` = this.cast(32)
+  def ssfLOCALAPPDATA: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def ssfLOCALAPPDATA: `28` = this.cast(28)
+  def ssfMYPICTURES: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def ssfMYPICTURES: `39` = this.cast(39)
+  def ssfNETHOOD: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def ssfNETHOOD: `19` = this.cast(19)
+  def ssfNETWORK: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def ssfNETWORK: `18` = this.cast(18)
+  def ssfPERSONAL: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ssfPERSONAL: `5` = this.cast(5)
+  def ssfPRINTERS: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ssfPRINTERS: `4` = this.cast(4)
+  def ssfPRINTHOOD: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def ssfPRINTHOOD: `27` = this.cast(27)
+  def ssfPROFILE: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def ssfPROFILE: `40` = this.cast(40)
+  def ssfPROGRAMFILES: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def ssfPROGRAMFILES: `38` = this.cast(38)
+  def ssfPROGRAMFILESx86: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def ssfPROGRAMFILESx86: `48` = this.cast(48)
+  def ssfPROGRAMS: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ssfPROGRAMS: `2` = this.cast(2)
+  def ssfRECENT: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ssfRECENT: `8` = this.cast(8)
+  def ssfSENDTO: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def ssfSENDTO: `9` = this.cast(9)
+  def ssfSTARTMENU: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def ssfSTARTMENU: `11` = this.cast(11)
+  def ssfSTARTUP: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ssfSTARTUP: `7` = this.cast(7)
+  def ssfSYSTEM: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def ssfSYSTEM: `37` = this.cast(37)
+  def ssfSYSTEMx86: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def ssfSYSTEMx86: `41` = this.cast(41)
+  def ssfTEMPLATES: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def ssfTEMPLATES: `21` = this.cast(21)
-  @scala.inline
-  def ssfWINDOWS: `36` = this.cast(36)
+  def ssfWINDOWS: `36` = 36.asInstanceOf[`36`]
 }
 

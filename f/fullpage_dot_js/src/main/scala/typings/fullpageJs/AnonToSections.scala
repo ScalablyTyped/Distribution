@@ -22,7 +22,6 @@ object AnonToSections {
   @scala.inline
   def apply(toSections: () => Unit, toSlides: () => Unit): AnonToSections = {
     val __obj = js.Dynamic.literal(toSections = js.Any.fromFunction0(toSections), toSlides = js.Any.fromFunction0(toSlides))
-  
     __obj.asInstanceOf[AnonToSections]
   }
 }

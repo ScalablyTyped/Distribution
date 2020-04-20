@@ -1,5 +1,6 @@
 package typings.parse.mod._Global_.Parse.Cloud
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Parameters
 import typings.std.ReturnType
 import scala.scalajs.js
@@ -12,7 +13,7 @@ object define_0 extends js.Object {
   def apply[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ typings.parse.parseStrings.define with Parameters[T], 
+    */ /* param */ typings.parse.parseStrings.define with TopLevel[Parameters[T]], 
     _
   ] */](
     name: String,

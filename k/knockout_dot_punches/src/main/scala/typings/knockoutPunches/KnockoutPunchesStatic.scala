@@ -12,7 +12,6 @@ object KnockoutPunchesStatic {
   @scala.inline
   def apply(enableAll: () => Unit): KnockoutPunchesStatic = {
     val __obj = js.Dynamic.literal(enableAll = js.Any.fromFunction0(enableAll))
-  
     __obj.asInstanceOf[KnockoutPunchesStatic]
   }
 }

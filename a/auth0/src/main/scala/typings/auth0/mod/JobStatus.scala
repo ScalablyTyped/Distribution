@@ -14,14 +14,12 @@ trait JobStatus extends js.Object
 
 object JobStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def completed: typings.auth0.auth0Strings.completed = "completed".asInstanceOf[typings.auth0.auth0Strings.completed]
   @scala.inline
-  def completed: typings.auth0.auth0Strings.completed = this.cast("completed")
+  def failed: typings.auth0.auth0Strings.failed = "failed".asInstanceOf[typings.auth0.auth0Strings.failed]
   @scala.inline
-  def failed: typings.auth0.auth0Strings.failed = this.cast("failed")
+  def pending: typings.auth0.auth0Strings.pending = "pending".asInstanceOf[typings.auth0.auth0Strings.pending]
   @scala.inline
-  def pending: typings.auth0.auth0Strings.pending = this.cast("pending")
-  @scala.inline
-  def processing: typings.auth0.auth0Strings.processing = this.cast("processing")
+  def processing: typings.auth0.auth0Strings.processing = "processing".asInstanceOf[typings.auth0.auth0Strings.processing]
 }
 

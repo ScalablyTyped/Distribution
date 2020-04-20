@@ -14,10 +14,8 @@ trait WdCursorMovement extends js.Object
 
 object WdCursorMovement {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCursorMovementLogical: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdCursorMovementLogical: `0` = this.cast(0)
-  @scala.inline
-  def wdCursorMovementVisual: `1` = this.cast(1)
+  def wdCursorMovementVisual: `1` = 1.asInstanceOf[`1`]
 }
 

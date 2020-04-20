@@ -18,22 +18,20 @@ trait ArmOperandType extends js.Object
 
 object ArmOperandType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cimm: typings.fridaGum.fridaGumStrings.cimm = "cimm".asInstanceOf[typings.fridaGum.fridaGumStrings.cimm]
   @scala.inline
-  def cimm: typings.fridaGum.fridaGumStrings.cimm = this.cast("cimm")
+  def fp: typings.fridaGum.fridaGumStrings.fp = "fp".asInstanceOf[typings.fridaGum.fridaGumStrings.fp]
   @scala.inline
-  def fp: typings.fridaGum.fridaGumStrings.fp = this.cast("fp")
+  def imm: typings.fridaGum.fridaGumStrings.imm = "imm".asInstanceOf[typings.fridaGum.fridaGumStrings.imm]
   @scala.inline
-  def imm: typings.fridaGum.fridaGumStrings.imm = this.cast("imm")
+  def mem: typings.fridaGum.fridaGumStrings.mem = "mem".asInstanceOf[typings.fridaGum.fridaGumStrings.mem]
   @scala.inline
-  def mem: typings.fridaGum.fridaGumStrings.mem = this.cast("mem")
+  def pimm: typings.fridaGum.fridaGumStrings.pimm = "pimm".asInstanceOf[typings.fridaGum.fridaGumStrings.pimm]
   @scala.inline
-  def pimm: typings.fridaGum.fridaGumStrings.pimm = this.cast("pimm")
+  def reg: typings.fridaGum.fridaGumStrings.reg = "reg".asInstanceOf[typings.fridaGum.fridaGumStrings.reg]
   @scala.inline
-  def reg: typings.fridaGum.fridaGumStrings.reg = this.cast("reg")
+  def setend: typings.fridaGum.fridaGumStrings.setend = "setend".asInstanceOf[typings.fridaGum.fridaGumStrings.setend]
   @scala.inline
-  def setend: typings.fridaGum.fridaGumStrings.setend = this.cast("setend")
-  @scala.inline
-  def sysreg: typings.fridaGum.fridaGumStrings.sysreg = this.cast("sysreg")
+  def sysreg: typings.fridaGum.fridaGumStrings.sysreg = "sysreg".asInstanceOf[typings.fridaGum.fridaGumStrings.sysreg]
 }
 

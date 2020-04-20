@@ -19,7 +19,6 @@ object TokensProvider {
   @scala.inline
   def apply(getInitialState: () => IState, tokenize: (String, IState) => ILineTokens): TokensProvider = {
     val __obj = js.Dynamic.literal(getInitialState = js.Any.fromFunction0(getInitialState), tokenize = js.Any.fromFunction2(tokenize))
-  
     __obj.asInstanceOf[TokensProvider]
   }
 }

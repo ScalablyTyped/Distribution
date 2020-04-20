@@ -96,92 +96,90 @@ trait XlRangeAutoFormat extends js.Object
 
 object XlRangeAutoFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlRangeAutoFormat3DEffects1: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlRangeAutoFormat3DEffects1: `13` = this.cast(13)
+  def xlRangeAutoFormat3DEffects2: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlRangeAutoFormat3DEffects2: `14` = this.cast(14)
+  def xlRangeAutoFormatAccounting1: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlRangeAutoFormatAccounting1: `4` = this.cast(4)
+  def xlRangeAutoFormatAccounting2: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlRangeAutoFormatAccounting2: `5` = this.cast(5)
+  def xlRangeAutoFormatAccounting3: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlRangeAutoFormatAccounting3: `6` = this.cast(6)
+  def xlRangeAutoFormatAccounting4: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xlRangeAutoFormatAccounting4: `17` = this.cast(17)
+  def xlRangeAutoFormatClassic1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlRangeAutoFormatClassic1: `1` = this.cast(1)
+  def xlRangeAutoFormatClassic2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlRangeAutoFormatClassic2: `2` = this.cast(2)
+  def xlRangeAutoFormatClassic3: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlRangeAutoFormatClassic3: `3` = this.cast(3)
+  def xlRangeAutoFormatClassicPivotTable: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def xlRangeAutoFormatClassicPivotTable: `31` = this.cast(31)
+  def xlRangeAutoFormatColor1: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlRangeAutoFormatColor1: `7` = this.cast(7)
+  def xlRangeAutoFormatColor2: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlRangeAutoFormatColor2: `8` = this.cast(8)
+  def xlRangeAutoFormatColor3: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlRangeAutoFormatColor3: `9` = this.cast(9)
+  def xlRangeAutoFormatList1: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlRangeAutoFormatList1: `10` = this.cast(10)
+  def xlRangeAutoFormatList2: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlRangeAutoFormatList2: `11` = this.cast(11)
+  def xlRangeAutoFormatList3: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlRangeAutoFormatList3: `12` = this.cast(12)
+  def xlRangeAutoFormatLocalFormat1: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlRangeAutoFormatLocalFormat1: `15` = this.cast(15)
+  def xlRangeAutoFormatLocalFormat2: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlRangeAutoFormatLocalFormat2: `16` = this.cast(16)
+  def xlRangeAutoFormatLocalFormat3: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def xlRangeAutoFormatLocalFormat3: `19` = this.cast(19)
+  def xlRangeAutoFormatLocalFormat4: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def xlRangeAutoFormatLocalFormat4: `20` = this.cast(20)
+  def xlRangeAutoFormatNone: `-4142` = -4142.asInstanceOf[`-4142`]
   @scala.inline
-  def xlRangeAutoFormatNone: `-4142` = this.cast(-4142)
+  def xlRangeAutoFormatPTNone: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def xlRangeAutoFormatPTNone: `42` = this.cast(42)
+  def xlRangeAutoFormatReport1: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def xlRangeAutoFormatReport1: `21` = this.cast(21)
+  def xlRangeAutoFormatReport10: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def xlRangeAutoFormatReport10: `30` = this.cast(30)
+  def xlRangeAutoFormatReport2: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def xlRangeAutoFormatReport2: `22` = this.cast(22)
+  def xlRangeAutoFormatReport3: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def xlRangeAutoFormatReport3: `23` = this.cast(23)
+  def xlRangeAutoFormatReport4: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def xlRangeAutoFormatReport4: `24` = this.cast(24)
+  def xlRangeAutoFormatReport5: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def xlRangeAutoFormatReport5: `25` = this.cast(25)
+  def xlRangeAutoFormatReport6: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def xlRangeAutoFormatReport6: `26` = this.cast(26)
+  def xlRangeAutoFormatReport7: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def xlRangeAutoFormatReport7: `27` = this.cast(27)
+  def xlRangeAutoFormatReport8: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def xlRangeAutoFormatReport8: `28` = this.cast(28)
+  def xlRangeAutoFormatReport9: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def xlRangeAutoFormatReport9: `29` = this.cast(29)
+  def xlRangeAutoFormatSimple: `-4154` = -4154.asInstanceOf[`-4154`]
   @scala.inline
-  def xlRangeAutoFormatSimple: `-4154` = this.cast(-4154)
+  def xlRangeAutoFormatTable1: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def xlRangeAutoFormatTable1: `32` = this.cast(32)
+  def xlRangeAutoFormatTable10: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def xlRangeAutoFormatTable10: `41` = this.cast(41)
+  def xlRangeAutoFormatTable2: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def xlRangeAutoFormatTable2: `33` = this.cast(33)
+  def xlRangeAutoFormatTable3: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def xlRangeAutoFormatTable3: `34` = this.cast(34)
+  def xlRangeAutoFormatTable4: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def xlRangeAutoFormatTable4: `35` = this.cast(35)
+  def xlRangeAutoFormatTable5: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def xlRangeAutoFormatTable5: `36` = this.cast(36)
+  def xlRangeAutoFormatTable6: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def xlRangeAutoFormatTable6: `37` = this.cast(37)
+  def xlRangeAutoFormatTable7: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def xlRangeAutoFormatTable7: `38` = this.cast(38)
+  def xlRangeAutoFormatTable8: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def xlRangeAutoFormatTable8: `39` = this.cast(39)
-  @scala.inline
-  def xlRangeAutoFormatTable9: `40` = this.cast(40)
+  def xlRangeAutoFormatTable9: `40` = 40.asInstanceOf[`40`]
 }
 

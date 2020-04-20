@@ -22,7 +22,6 @@ object SubAPI {
     setQueryParams: QueryParams => Unit
   ): SubAPI = {
     val __obj = js.Dynamic.literal(getQueryParam = js.Any.fromFunction1(getQueryParam), getUrlState = js.Any.fromFunction0(getUrlState), navigateUrl = js.Any.fromFunction2(navigateUrl), setQueryParams = js.Any.fromFunction1(setQueryParams))
-  
     __obj.asInstanceOf[SubAPI]
   }
 }

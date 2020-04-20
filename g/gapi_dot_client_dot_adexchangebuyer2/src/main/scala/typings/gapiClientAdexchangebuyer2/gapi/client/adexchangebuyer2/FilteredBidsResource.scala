@@ -24,7 +24,6 @@ object FilteredBidsResource {
     list: AnonFilterSetId => Request_[ListFilteredBidsResponse]
   ): FilteredBidsResource = {
     val __obj = js.Dynamic.literal(creatives = creatives.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[FilteredBidsResource]
   }
 }

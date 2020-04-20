@@ -16,7 +16,6 @@ object AnonNetworkAvailable {
   @scala.inline
   def apply(networkAvailable: Boolean, networkType: NetworkType): AnonNetworkAvailable = {
     val __obj = js.Dynamic.literal(networkAvailable = networkAvailable.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNetworkAvailable]
   }
 }

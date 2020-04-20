@@ -27,7 +27,6 @@ object SignRequest {
   @scala.inline
   def apply(certificate: ArrayBuffer, digest: ArrayBuffer, hash: Hash, signRequestId: integer): SignRequest = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], signRequestId = signRequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignRequest]
   }
 }

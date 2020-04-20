@@ -14,7 +14,6 @@ object StatsRequestCount {
   @scala.inline
   def apply(failed: Double, refused: Double, succeeded: Double): StatsRequestCount = {
     val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], refused = refused.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatsRequestCount]
   }
 }

@@ -12,10 +12,8 @@ trait StrategyType extends js.Object
 
 object StrategyType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.algoliaClientSearch.algoliaClientSearchStrings.none = "none".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.none]
   @scala.inline
-  def none: typings.algoliaClientSearch.algoliaClientSearchStrings.none = this.cast("none")
-  @scala.inline
-  def stopIfEnoughMatches: typings.algoliaClientSearch.algoliaClientSearchStrings.stopIfEnoughMatches = this.cast("stopIfEnoughMatches")
+  def stopIfEnoughMatches: typings.algoliaClientSearch.algoliaClientSearchStrings.stopIfEnoughMatches = "stopIfEnoughMatches".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.stopIfEnoughMatches]
 }
 

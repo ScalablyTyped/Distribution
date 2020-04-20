@@ -13,7 +13,6 @@ object HtmlPluginDataHookV4 {
   @scala.inline
   def apply[T](beforeEmit: AsyncSeriesWaterfallHook[T, _, _]): HtmlPluginDataHookV4[T] = {
     val __obj = js.Dynamic.literal(beforeEmit = beforeEmit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HtmlPluginDataHookV4[T]]
   }
 }

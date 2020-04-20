@@ -16,7 +16,6 @@ object CreateWebhookResult {
   @scala.inline
   def apply(webhook: Webhook): CreateWebhookResult = {
     val __obj = js.Dynamic.literal(webhook = webhook.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateWebhookResult]
   }
 }

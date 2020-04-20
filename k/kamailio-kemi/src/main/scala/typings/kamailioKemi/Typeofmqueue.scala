@@ -20,7 +20,6 @@ object Typeofmqueue {
     mq_size: String => Double
   ): Typeofmqueue = {
     val __obj = js.Dynamic.literal(mq_add = js.Any.fromFunction3(mq_add), mq_fetch = js.Any.fromFunction1(mq_fetch), mq_pv_free = js.Any.fromFunction1(mq_pv_free), mq_size = js.Any.fromFunction1(mq_size))
-  
     __obj.asInstanceOf[Typeofmqueue]
   }
 }

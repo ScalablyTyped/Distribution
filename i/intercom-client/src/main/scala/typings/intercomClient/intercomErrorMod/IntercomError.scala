@@ -16,7 +16,6 @@ object IntercomError {
   @scala.inline
   def apply(body: AnonErrors, headers: AnonDictk, statusCode: Double): IntercomError = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntercomError]
   }
 }

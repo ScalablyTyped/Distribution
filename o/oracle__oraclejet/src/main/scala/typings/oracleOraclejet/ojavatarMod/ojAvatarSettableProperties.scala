@@ -22,7 +22,6 @@ object ojAvatarSettableProperties {
   @scala.inline
   def apply(initials: String, size: xxs | xs | sm | md | lg | xl | xxl, src: String): ojAvatarSettableProperties = {
     val __obj = js.Dynamic.literal(initials = initials.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ojAvatarSettableProperties]
   }
 }

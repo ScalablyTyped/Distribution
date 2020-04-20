@@ -16,7 +16,6 @@ object DescribeStackSetInput {
   @scala.inline
   def apply(StackSetName: StackSetName): DescribeStackSetInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStackSetInput]
   }
 }

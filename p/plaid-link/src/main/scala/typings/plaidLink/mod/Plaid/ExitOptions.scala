@@ -12,7 +12,6 @@ object ExitOptions {
   @scala.inline
   def apply(force: Boolean): ExitOptions = {
     val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExitOptions]
   }
 }

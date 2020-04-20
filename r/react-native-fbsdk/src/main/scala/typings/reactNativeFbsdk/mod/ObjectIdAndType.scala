@@ -20,7 +20,6 @@ object ObjectIdAndType {
   @scala.inline
   def apply(objectId: String, objectType: ObjectIdActionType): ObjectIdAndType = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectIdAndType]
   }
 }

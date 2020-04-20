@@ -22,7 +22,6 @@ object INxFieldSelectionInfo {
   @scala.inline
   def apply(qFieldSelectionMode: FieldSelectionModeType, qName: String): INxFieldSelectionInfo = {
     val __obj = js.Dynamic.literal(qFieldSelectionMode = qFieldSelectionMode.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxFieldSelectionInfo]
   }
 }

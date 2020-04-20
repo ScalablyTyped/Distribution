@@ -13,12 +13,10 @@ trait ChannelSortingCriteria extends js.Object
 
 object ChannelSortingCriteria {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = "friendlyName".asInstanceOf[typings.twilioChat.twilioChatStrings.friendlyName]
   @scala.inline
-  def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = this.cast("friendlyName")
+  def lastMessage: typings.twilioChat.twilioChatStrings.lastMessage = "lastMessage".asInstanceOf[typings.twilioChat.twilioChatStrings.lastMessage]
   @scala.inline
-  def lastMessage: typings.twilioChat.twilioChatStrings.lastMessage = this.cast("lastMessage")
-  @scala.inline
-  def uniqueName: typings.twilioChat.twilioChatStrings.uniqueName = this.cast("uniqueName")
+  def uniqueName: typings.twilioChat.twilioChatStrings.uniqueName = "uniqueName".asInstanceOf[typings.twilioChat.twilioChatStrings.uniqueName]
 }
 

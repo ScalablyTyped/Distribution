@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Lexer extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[Iterator[Token, _, js.UndefOr[scala.Nothing]]] = js.native
   /**
     * Returns a string with a pretty error message.

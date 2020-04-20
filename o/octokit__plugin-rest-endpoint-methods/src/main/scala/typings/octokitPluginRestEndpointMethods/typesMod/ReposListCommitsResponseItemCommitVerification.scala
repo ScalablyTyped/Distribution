@@ -15,7 +15,6 @@ object ReposListCommitsResponseItemCommitVerification {
   @scala.inline
   def apply(payload: Null, reason: String, signature: Null, verified: Boolean): ReposListCommitsResponseItemCommitVerification = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposListCommitsResponseItemCommitVerification]
   }
 }

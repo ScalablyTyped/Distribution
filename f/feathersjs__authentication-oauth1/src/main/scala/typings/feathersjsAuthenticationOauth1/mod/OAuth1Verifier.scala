@@ -2,6 +2,7 @@ package typings.feathersjsAuthenticationOauth1.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.feathersjsAuthenticationOauth1.AnonAccessToken
 import typings.feathersjsFeathers.mod.Application
 import typings.feathersjsFeathers.mod.Paginated
@@ -22,7 +23,7 @@ class OAuth1Verifier protected () extends js.Object {
   def _updateEntity(entity: js.Any, data: AnonAccessToken): js.Promise[_] = js.native
    // normalizes result from service to account for pagination
   def verify(
-    req: Request_[ParamsDictionary],
+    req: Request_[ParamsDictionary, _, _, Query],
     accessToken: String,
     refreshToken: String,
     profile: js.Any,

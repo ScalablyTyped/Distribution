@@ -1,7 +1,7 @@
 
 # Scala.js typings for ua-string
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Get the user agent of a recent Chrome version to pretend to be a browser in network requests

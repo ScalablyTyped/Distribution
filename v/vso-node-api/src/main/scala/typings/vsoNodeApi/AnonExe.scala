@@ -15,7 +15,6 @@ object AnonExe {
   @scala.inline
   def apply(exe: Double, msi: Double, referralLink: Double, vsix: Double): AnonExe = {
     val __obj = js.Dynamic.literal(exe = exe.asInstanceOf[js.Any], msi = msi.asInstanceOf[js.Any], referralLink = referralLink.asInstanceOf[js.Any], vsix = vsix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExe]
   }
 }

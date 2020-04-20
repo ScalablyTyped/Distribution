@@ -12,10 +12,8 @@ trait EditionUpgradeLicenseType extends js.Object
 
 object EditionUpgradeLicenseType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def licenseFile: typings.microsoftGraph.microsoftGraphStrings.licenseFile = "licenseFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.licenseFile]
   @scala.inline
-  def licenseFile: typings.microsoftGraph.microsoftGraphStrings.licenseFile = this.cast("licenseFile")
-  @scala.inline
-  def productKey: typings.microsoftGraph.microsoftGraphStrings.productKey = this.cast("productKey")
+  def productKey: typings.microsoftGraph.microsoftGraphStrings.productKey = "productKey".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.productKey]
 }
 

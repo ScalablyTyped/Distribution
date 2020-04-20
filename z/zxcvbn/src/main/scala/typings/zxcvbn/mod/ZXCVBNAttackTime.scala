@@ -39,7 +39,6 @@ object ZXCVBNAttackTime {
     online_throttling_100_per_hour: String | Double
   ): ZXCVBNAttackTime = {
     val __obj = js.Dynamic.literal(offline_fast_hashing_1e10_per_second = offline_fast_hashing_1e10_per_second.asInstanceOf[js.Any], offline_slow_hashing_1e4_per_second = offline_slow_hashing_1e4_per_second.asInstanceOf[js.Any], online_no_throttling_10_per_second = online_no_throttling_10_per_second.asInstanceOf[js.Any], online_throttling_100_per_hour = online_throttling_100_per_hour.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ZXCVBNAttackTime]
   }
 }

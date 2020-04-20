@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-cleanup"
-version := "2.1-dt-20190826Z-07ecd4"
+version := "2.1-dt-20190826Z-5f2439"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

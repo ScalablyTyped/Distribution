@@ -13,7 +13,6 @@ object SketchAssetCollection {
   @scala.inline
   def apply(colors: () => js.Array[MSColor], gradients: () => js.Array[MSGradient]): SketchAssetCollection = {
     val __obj = js.Dynamic.literal(colors = js.Any.fromFunction0(colors), gradients = js.Any.fromFunction0(gradients))
-  
     __obj.asInstanceOf[SketchAssetCollection]
   }
 }

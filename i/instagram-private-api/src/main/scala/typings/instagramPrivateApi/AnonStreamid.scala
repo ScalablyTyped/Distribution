@@ -12,7 +12,6 @@ object AnonStreamid {
   @scala.inline
   def apply(stream_id: String): AnonStreamid = {
     val __obj = js.Dynamic.literal(stream_id = stream_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStreamid]
   }
 }

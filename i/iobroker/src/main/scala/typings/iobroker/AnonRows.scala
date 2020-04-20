@@ -13,7 +13,6 @@ object AnonRows {
   @scala.inline
   def apply(rows: js.Array[GetObjectViewItem]): AnonRows = {
     val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRows]
   }
 }

@@ -16,7 +16,6 @@ object GetInstanceProfileRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): GetInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInstanceProfileRequest]
   }
 }

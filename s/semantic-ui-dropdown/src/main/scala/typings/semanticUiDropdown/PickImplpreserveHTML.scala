@@ -13,7 +13,6 @@ object PickImplpreserveHTML {
   @scala.inline
   def apply(preserveHTML: Boolean): PickImplpreserveHTML = {
     val __obj = js.Dynamic.literal(preserveHTML = preserveHTML.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpreserveHTML]
   }
 }

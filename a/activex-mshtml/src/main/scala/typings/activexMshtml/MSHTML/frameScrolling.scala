@@ -18,14 +18,12 @@ trait frameScrolling extends js.Object
 
 object frameScrolling {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def frameScrolling_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def frameScrolling_Max: `2147483647` = this.cast(2147483647)
+  def frameScrollingauto: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def frameScrollingauto: `4` = this.cast(4)
+  def frameScrollingno: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def frameScrollingno: `2` = this.cast(2)
-  @scala.inline
-  def frameScrollingyes: `1` = this.cast(1)
+  def frameScrollingyes: `1` = 1.asInstanceOf[`1`]
 }
 

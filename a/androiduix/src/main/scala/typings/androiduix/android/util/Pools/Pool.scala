@@ -13,7 +13,6 @@ object Pool {
   @scala.inline
   def apply[T](acquire: () => T, release: T => Boolean): Pool[T] = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), release = js.Any.fromFunction1(release))
-  
     __obj.asInstanceOf[Pool[T]]
   }
 }

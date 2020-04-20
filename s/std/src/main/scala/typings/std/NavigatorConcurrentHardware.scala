@@ -12,7 +12,6 @@ object NavigatorConcurrentHardware {
   @scala.inline
   def apply(hardwareConcurrency: Double): NavigatorConcurrentHardware = {
     val __obj = js.Dynamic.literal(hardwareConcurrency = hardwareConcurrency.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigatorConcurrentHardware]
   }
 }

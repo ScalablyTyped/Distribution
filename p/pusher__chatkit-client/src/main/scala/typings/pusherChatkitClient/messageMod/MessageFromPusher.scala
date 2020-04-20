@@ -17,7 +17,6 @@ object MessageFromPusher {
   @scala.inline
   def apply(createdAt: Date, id: String, parts: js.Array[MessagePart], sender: PusherUser): MessageFromPusher = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageFromPusher]
   }
 }

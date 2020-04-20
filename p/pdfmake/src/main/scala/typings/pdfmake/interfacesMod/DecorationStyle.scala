@@ -14,14 +14,12 @@ trait DecorationStyle extends js.Object
 
 object DecorationStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dashed: typings.pdfmake.pdfmakeStrings.dashed = "dashed".asInstanceOf[typings.pdfmake.pdfmakeStrings.dashed]
   @scala.inline
-  def dashed: typings.pdfmake.pdfmakeStrings.dashed = this.cast("dashed")
+  def dotted: typings.pdfmake.pdfmakeStrings.dotted = "dotted".asInstanceOf[typings.pdfmake.pdfmakeStrings.dotted]
   @scala.inline
-  def dotted: typings.pdfmake.pdfmakeStrings.dotted = this.cast("dotted")
+  def double: typings.pdfmake.pdfmakeStrings.double = "double".asInstanceOf[typings.pdfmake.pdfmakeStrings.double]
   @scala.inline
-  def double: typings.pdfmake.pdfmakeStrings.double = this.cast("double")
-  @scala.inline
-  def wavy: typings.pdfmake.pdfmakeStrings.wavy = this.cast("wavy")
+  def wavy: typings.pdfmake.pdfmakeStrings.wavy = "wavy".asInstanceOf[typings.pdfmake.pdfmakeStrings.wavy]
 }
 

@@ -16,7 +16,6 @@ object DisassociateMembersResponse {
   @scala.inline
   def apply(UnprocessedAccounts: UnprocessedAccounts): DisassociateMembersResponse = {
     val __obj = js.Dynamic.literal(UnprocessedAccounts = UnprocessedAccounts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateMembersResponse]
   }
 }

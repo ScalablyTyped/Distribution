@@ -16,7 +16,6 @@ object AnonTriggerNameSmsRecipientResponseMissed {
   @scala.inline
   def apply(triggerId: `14`, triggerName: SmsRecipientResponseMissed): AnonTriggerNameSmsRecipientResponseMissed = {
     val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTriggerNameSmsRecipientResponseMissed]
   }
 }

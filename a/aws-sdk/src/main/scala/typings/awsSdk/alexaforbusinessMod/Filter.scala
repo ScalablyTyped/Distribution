@@ -20,7 +20,6 @@ object Filter {
   @scala.inline
   def apply(Key: FilterKey, Values: FilterValueList): Filter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Filter]
   }
 }

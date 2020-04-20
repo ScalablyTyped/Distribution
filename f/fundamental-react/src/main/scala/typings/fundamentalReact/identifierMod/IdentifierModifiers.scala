@@ -12,10 +12,8 @@ trait IdentifierModifiers extends js.Object
 
 object IdentifierModifiers {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.fundamentalReact.fundamentalReactStrings.circle = "circle".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.circle]
   @scala.inline
-  def circle: typings.fundamentalReact.fundamentalReactStrings.circle = this.cast("circle")
-  @scala.inline
-  def transparent: typings.fundamentalReact.fundamentalReactStrings.transparent = this.cast("transparent")
+  def transparent: typings.fundamentalReact.fundamentalReactStrings.transparent = "transparent".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.transparent]
 }
 

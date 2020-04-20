@@ -13,7 +13,6 @@ object Container {
   @scala.inline
   def apply[T](getStyles: () => String, id: String): Container[T] = {
     val __obj = js.Dynamic.literal(getStyles = js.Any.fromFunction0(getStyles), id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Container[T]]
   }
 }

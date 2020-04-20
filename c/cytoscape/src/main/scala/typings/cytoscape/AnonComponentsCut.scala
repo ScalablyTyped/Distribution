@@ -15,7 +15,6 @@ object AnonComponentsCut {
   @scala.inline
   def apply(components: CollectionReturnValue, cut: EdgeCollection): AnonComponentsCut = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComponentsCut]
   }
 }

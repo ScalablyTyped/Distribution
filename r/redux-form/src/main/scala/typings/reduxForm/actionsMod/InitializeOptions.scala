@@ -20,7 +20,6 @@ object InitializeOptions {
     updateUnregisteredFields: Boolean
   ): InitializeOptions = {
     val __obj = js.Dynamic.literal(keepDirty = keepDirty.asInstanceOf[js.Any], keepSubmitSucceeded = keepSubmitSucceeded.asInstanceOf[js.Any], keepValues = keepValues.asInstanceOf[js.Any], updateUnregisteredFields = updateUnregisteredFields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InitializeOptions]
   }
 }

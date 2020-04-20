@@ -16,7 +16,6 @@ object DeleteInstanceSnapshotRequest {
   @scala.inline
   def apply(instanceSnapshotName: ResourceName): DeleteInstanceSnapshotRequest = {
     val __obj = js.Dynamic.literal(instanceSnapshotName = instanceSnapshotName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteInstanceSnapshotRequest]
   }
 }

@@ -24,7 +24,6 @@ object ValidateConfigurationRequest {
   @scala.inline
   def apply(ApplicationId: Id, ConfigurationProfileId: Id, ConfigurationVersion: Version): ValidateConfigurationRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ConfigurationProfileId = ConfigurationProfileId.asInstanceOf[js.Any], ConfigurationVersion = ConfigurationVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidateConfigurationRequest]
   }
 }

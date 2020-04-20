@@ -28,7 +28,6 @@ object SkEnumSkTextAlignCenterSk {
     values: js.Array[SkTextAlign]
   ): SkEnumSkTextAlignCenterSk = {
     val __obj = js.Dynamic.literal(Center = Center.asInstanceOf[js.Any], End = End.asInstanceOf[js.Any], Justify = Justify.asInstanceOf[js.Any], Left = Left.asInstanceOf[js.Any], Right = Right.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkTextAlignCenterSk]
   }
 }

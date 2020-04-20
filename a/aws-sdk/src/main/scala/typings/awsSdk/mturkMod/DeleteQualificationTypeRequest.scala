@@ -16,7 +16,6 @@ object DeleteQualificationTypeRequest {
   @scala.inline
   def apply(QualificationTypeId: EntityId): DeleteQualificationTypeRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteQualificationTypeRequest]
   }
 }

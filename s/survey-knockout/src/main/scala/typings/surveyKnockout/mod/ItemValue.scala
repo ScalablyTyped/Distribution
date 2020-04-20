@@ -19,6 +19,7 @@ class ItemValue protected ()
   val isVisible: Boolean = js.native
   var locOwner: ILocalizableOwner = js.native
   val locText: LocalizableString = js.native
+  var ownerPropertyName: String = js.native
   var text: String = js.native
   var value: js.Any = js.native
   var visibleIf: String = js.native

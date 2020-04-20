@@ -20,7 +20,6 @@ object RecommendationClient {
   @scala.inline
   def apply(appId: String, transporter: Transporter): RecommendationClient = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], transporter = transporter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecommendationClient]
   }
 }

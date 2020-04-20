@@ -24,7 +24,6 @@ object DeploymentApplicationConfig {
   @scala.inline
   def apply(application: Arn, applicationVersion: DeploymentVersion, launchConfig: DeploymentLaunchConfig): DeploymentApplicationConfig = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], applicationVersion = applicationVersion.asInstanceOf[js.Any], launchConfig = launchConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentApplicationConfig]
   }
 }

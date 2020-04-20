@@ -15,7 +15,6 @@ object AnonAlign {
   @scala.inline
   def apply(align: String, direction: String, justify: String, wrap: String): AnonAlign = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], justify = justify.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlign]
   }
 }

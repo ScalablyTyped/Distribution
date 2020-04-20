@@ -13,7 +13,6 @@ object NumberSkeletonToken {
   @scala.inline
   def apply(options: js.Array[String], stem: String): NumberSkeletonToken = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], stem = stem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NumberSkeletonToken]
   }
 }

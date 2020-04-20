@@ -13,7 +13,6 @@ object INetworkItem {
   @scala.inline
   def apply(getNetworkTypes: () => NetworkTypes, networkId: String): INetworkItem = {
     val __obj = js.Dynamic.literal(getNetworkTypes = js.Any.fromFunction0(getNetworkTypes), networkId = networkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INetworkItem]
   }
 }

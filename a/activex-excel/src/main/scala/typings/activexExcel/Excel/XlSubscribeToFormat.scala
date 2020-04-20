@@ -14,10 +14,8 @@ trait XlSubscribeToFormat extends js.Object
 
 object XlSubscribeToFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlSubscribeToPicture: `-4147` = -4147.asInstanceOf[`-4147`]
   @scala.inline
-  def xlSubscribeToPicture: `-4147` = this.cast(-4147)
-  @scala.inline
-  def xlSubscribeToText: `-4158` = this.cast(-4158)
+  def xlSubscribeToText: `-4158` = -4158.asInstanceOf[`-4158`]
 }
 

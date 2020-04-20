@@ -15,7 +15,6 @@ object NativeEventSubscription {
   @scala.inline
   def apply(remove: () => Unit): NativeEventSubscription = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[NativeEventSubscription]
   }
 }

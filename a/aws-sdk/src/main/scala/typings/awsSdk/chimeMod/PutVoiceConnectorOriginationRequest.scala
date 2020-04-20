@@ -20,7 +20,6 @@ object PutVoiceConnectorOriginationRequest {
   @scala.inline
   def apply(Origination: Origination, VoiceConnectorId: NonEmptyString): PutVoiceConnectorOriginationRequest = {
     val __obj = js.Dynamic.literal(Origination = Origination.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutVoiceConnectorOriginationRequest]
   }
 }

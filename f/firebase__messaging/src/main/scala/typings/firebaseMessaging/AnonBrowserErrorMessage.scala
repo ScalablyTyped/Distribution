@@ -12,7 +12,6 @@ object AnonBrowserErrorMessage {
   @scala.inline
   def apply(browserErrorMessage: String): AnonBrowserErrorMessage = {
     val __obj = js.Dynamic.literal(browserErrorMessage = browserErrorMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBrowserErrorMessage]
   }
 }

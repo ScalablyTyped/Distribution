@@ -26,14 +26,14 @@ class StaticImageViewer protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FStaticImageViewer: IModel = js.native
-  def height(): Double = js.native
+  def height: Double = js.native
   def height(newValue: Double): js.Any = js.native
   def image(): js.Any = js.native
   def image(newValue: IImage): js.Any = js.native
-  def imageQualifiedName(): String | Null = js.native
+  def imageQualifiedName: String | Null = js.native
   @JSName("image")
-  def image_Union(): IImage | Null = js.native
-  def width(): Double = js.native
+  def image_Union: IImage | Null = js.native
+  def width: Double = js.native
   def width(newValue: Double): js.Any = js.native
 }
 

@@ -20,7 +20,6 @@ object Admin {
     update: (String, UpdateAdminProps) => js.Promise[OnfleetAdmin]
   ): Admin = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), deleteOne = js.Any.fromFunction1(deleteOne), get = js.Any.fromFunction0(get), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[Admin]
   }
 }

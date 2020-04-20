@@ -13,12 +13,10 @@ trait CardholderStatus extends js.Object
 
 object CardholderStatus {
   @scala.inline
-  def active: typings.stripe.stripeStrings.active = this.cast("active")
+  def active: typings.stripe.stripeStrings.active = "active".asInstanceOf[typings.stripe.stripeStrings.active]
   @scala.inline
-  def blocked: typings.stripe.stripeStrings.blocked = this.cast("blocked")
+  def blocked: typings.stripe.stripeStrings.blocked = "blocked".asInstanceOf[typings.stripe.stripeStrings.blocked]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def inactive: typings.stripe.stripeStrings.inactive = this.cast("inactive")
+  def inactive: typings.stripe.stripeStrings.inactive = "inactive".asInstanceOf[typings.stripe.stripeStrings.inactive]
 }
 

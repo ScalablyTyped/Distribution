@@ -12,7 +12,6 @@ object ITestUrlDescriptor {
   @scala.inline
   def apply(url: String): ITestUrlDescriptor = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITestUrlDescriptor]
   }
 }

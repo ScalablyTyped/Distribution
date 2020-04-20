@@ -13,7 +13,6 @@ object TypeofMediaStore {
   @scala.inline
   def apply(Types: TypeofMediaStore): TypeofMediaStore = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofMediaStore]
   }
 }

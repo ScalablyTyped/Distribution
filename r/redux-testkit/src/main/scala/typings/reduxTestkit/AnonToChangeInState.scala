@@ -14,7 +14,6 @@ object AnonToChangeInState {
   @scala.inline
   def apply(toChangeInState: js.Any => Unit, toReturnState: js.Any => Unit, toStayTheSame: () => Unit): AnonToChangeInState = {
     val __obj = js.Dynamic.literal(toChangeInState = js.Any.fromFunction1(toChangeInState), toReturnState = js.Any.fromFunction1(toReturnState), toStayTheSame = js.Any.fromFunction0(toStayTheSame))
-  
     __obj.asInstanceOf[AnonToChangeInState]
   }
 }

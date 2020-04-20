@@ -39,64 +39,62 @@ trait BuiltInControlType extends ControlType
 
 object BuiltInControlType {
   @scala.inline
-  def blockquote: typings.braftEditor.braftEditorStrings.blockquote = this.cast("blockquote")
+  def blockquote: typings.braftEditor.braftEditorStrings.blockquote = "blockquote".asInstanceOf[typings.braftEditor.braftEditorStrings.blockquote]
   @scala.inline
-  def bold: typings.braftEditor.braftEditorStrings.bold = this.cast("bold")
+  def bold: typings.braftEditor.braftEditorStrings.bold = "bold".asInstanceOf[typings.braftEditor.braftEditorStrings.bold]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clear: typings.braftEditor.braftEditorStrings.clear = "clear".asInstanceOf[typings.braftEditor.braftEditorStrings.clear]
   @scala.inline
-  def clear: typings.braftEditor.braftEditorStrings.clear = this.cast("clear")
+  def code: typings.braftEditor.braftEditorStrings.code = "code".asInstanceOf[typings.braftEditor.braftEditorStrings.code]
   @scala.inline
-  def code: typings.braftEditor.braftEditorStrings.code = this.cast("code")
+  def emoji: typings.braftEditor.braftEditorStrings.emoji = "emoji".asInstanceOf[typings.braftEditor.braftEditorStrings.emoji]
   @scala.inline
-  def emoji: typings.braftEditor.braftEditorStrings.emoji = this.cast("emoji")
+  def `font-family`: typings.braftEditor.braftEditorStrings.`font-family` = "font-family".asInstanceOf[typings.braftEditor.braftEditorStrings.`font-family`]
   @scala.inline
-  def `font-family`: typings.braftEditor.braftEditorStrings.`font-family` = this.cast("font-family")
+  def `font-size`: typings.braftEditor.braftEditorStrings.`font-size` = "font-size".asInstanceOf[typings.braftEditor.braftEditorStrings.`font-size`]
   @scala.inline
-  def `font-size`: typings.braftEditor.braftEditorStrings.`font-size` = this.cast("font-size")
+  def fullscreen: typings.braftEditor.braftEditorStrings.fullscreen = "fullscreen".asInstanceOf[typings.braftEditor.braftEditorStrings.fullscreen]
   @scala.inline
-  def fullscreen: typings.braftEditor.braftEditorStrings.fullscreen = this.cast("fullscreen")
+  def headings: typings.braftEditor.braftEditorStrings.headings = "headings".asInstanceOf[typings.braftEditor.braftEditorStrings.headings]
   @scala.inline
-  def headings: typings.braftEditor.braftEditorStrings.headings = this.cast("headings")
+  def hr: typings.braftEditor.braftEditorStrings.hr = "hr".asInstanceOf[typings.braftEditor.braftEditorStrings.hr]
   @scala.inline
-  def hr: typings.braftEditor.braftEditorStrings.hr = this.cast("hr")
+  def italic: typings.braftEditor.braftEditorStrings.italic = "italic".asInstanceOf[typings.braftEditor.braftEditorStrings.italic]
   @scala.inline
-  def italic: typings.braftEditor.braftEditorStrings.italic = this.cast("italic")
+  def `letter-spacing`: typings.braftEditor.braftEditorStrings.`letter-spacing` = "letter-spacing".asInstanceOf[typings.braftEditor.braftEditorStrings.`letter-spacing`]
   @scala.inline
-  def `letter-spacing`: typings.braftEditor.braftEditorStrings.`letter-spacing` = this.cast("letter-spacing")
+  def `line-height`: typings.braftEditor.braftEditorStrings.`line-height` = "line-height".asInstanceOf[typings.braftEditor.braftEditorStrings.`line-height`]
   @scala.inline
-  def `line-height`: typings.braftEditor.braftEditorStrings.`line-height` = this.cast("line-height")
+  def link: typings.braftEditor.braftEditorStrings.link = "link".asInstanceOf[typings.braftEditor.braftEditorStrings.link]
   @scala.inline
-  def link: typings.braftEditor.braftEditorStrings.link = this.cast("link")
+  def `list-ol`: typings.braftEditor.braftEditorStrings.`list-ol` = "list-ol".asInstanceOf[typings.braftEditor.braftEditorStrings.`list-ol`]
   @scala.inline
-  def `list-ol`: typings.braftEditor.braftEditorStrings.`list-ol` = this.cast("list-ol")
+  def `list-ul`: typings.braftEditor.braftEditorStrings.`list-ul` = "list-ul".asInstanceOf[typings.braftEditor.braftEditorStrings.`list-ul`]
   @scala.inline
-  def `list-ul`: typings.braftEditor.braftEditorStrings.`list-ul` = this.cast("list-ul")
+  def media: typings.braftEditor.braftEditorStrings.media = "media".asInstanceOf[typings.braftEditor.braftEditorStrings.media]
   @scala.inline
-  def media: typings.braftEditor.braftEditorStrings.media = this.cast("media")
+  def redo: typings.braftEditor.braftEditorStrings.redo = "redo".asInstanceOf[typings.braftEditor.braftEditorStrings.redo]
   @scala.inline
-  def redo: typings.braftEditor.braftEditorStrings.redo = this.cast("redo")
+  def `remove-styles`: typings.braftEditor.braftEditorStrings.`remove-styles` = "remove-styles".asInstanceOf[typings.braftEditor.braftEditorStrings.`remove-styles`]
   @scala.inline
-  def `remove-styles`: typings.braftEditor.braftEditorStrings.`remove-styles` = this.cast("remove-styles")
+  def separator: typings.braftEditor.braftEditorStrings.separator = "separator".asInstanceOf[typings.braftEditor.braftEditorStrings.separator]
   @scala.inline
-  def separator: typings.braftEditor.braftEditorStrings.separator = this.cast("separator")
+  def `strike-through`: typings.braftEditor.braftEditorStrings.`strike-through` = "strike-through".asInstanceOf[typings.braftEditor.braftEditorStrings.`strike-through`]
   @scala.inline
-  def `strike-through`: typings.braftEditor.braftEditorStrings.`strike-through` = this.cast("strike-through")
+  def subscript: typings.braftEditor.braftEditorStrings.subscript = "subscript".asInstanceOf[typings.braftEditor.braftEditorStrings.subscript]
   @scala.inline
-  def subscript: typings.braftEditor.braftEditorStrings.subscript = this.cast("subscript")
+  def superscript: typings.braftEditor.braftEditorStrings.superscript = "superscript".asInstanceOf[typings.braftEditor.braftEditorStrings.superscript]
   @scala.inline
-  def superscript: typings.braftEditor.braftEditorStrings.superscript = this.cast("superscript")
+  def table: typings.braftEditor.braftEditorStrings.table = "table".asInstanceOf[typings.braftEditor.braftEditorStrings.table]
   @scala.inline
-  def table: typings.braftEditor.braftEditorStrings.table = this.cast("table")
+  def `text-align`: typings.braftEditor.braftEditorStrings.`text-align` = "text-align".asInstanceOf[typings.braftEditor.braftEditorStrings.`text-align`]
   @scala.inline
-  def `text-align`: typings.braftEditor.braftEditorStrings.`text-align` = this.cast("text-align")
+  def `text-color`: typings.braftEditor.braftEditorStrings.`text-color` = "text-color".asInstanceOf[typings.braftEditor.braftEditorStrings.`text-color`]
   @scala.inline
-  def `text-color`: typings.braftEditor.braftEditorStrings.`text-color` = this.cast("text-color")
+  def `text-indent`: typings.braftEditor.braftEditorStrings.`text-indent` = "text-indent".asInstanceOf[typings.braftEditor.braftEditorStrings.`text-indent`]
   @scala.inline
-  def `text-indent`: typings.braftEditor.braftEditorStrings.`text-indent` = this.cast("text-indent")
+  def underline: typings.braftEditor.braftEditorStrings.underline = "underline".asInstanceOf[typings.braftEditor.braftEditorStrings.underline]
   @scala.inline
-  def underline: typings.braftEditor.braftEditorStrings.underline = this.cast("underline")
-  @scala.inline
-  def undo: typings.braftEditor.braftEditorStrings.undo = this.cast("undo")
+  def undo: typings.braftEditor.braftEditorStrings.undo = "undo".asInstanceOf[typings.braftEditor.braftEditorStrings.undo]
 }
 

@@ -22,7 +22,6 @@ object FirehoseRecordMetadata {
     subsequenceNumber: String
   ): FirehoseRecordMetadata = {
     val __obj = js.Dynamic.literal(approximateArrivalTimestamp = approximateArrivalTimestamp.asInstanceOf[js.Any], partitionKey = partitionKey.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any], shardId = shardId.asInstanceOf[js.Any], subsequenceNumber = subsequenceNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirehoseRecordMetadata]
   }
 }

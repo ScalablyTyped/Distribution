@@ -22,7 +22,6 @@ object Location {
   @scala.inline
   def apply(toOffset: AnonColumn => Double, toPosition: Double => AnonLine): Location = {
     val __obj = js.Dynamic.literal(toOffset = js.Any.fromFunction1(toOffset), toPosition = js.Any.fromFunction1(toPosition))
-  
     __obj.asInstanceOf[Location]
   }
 }

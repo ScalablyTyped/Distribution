@@ -28,7 +28,6 @@ object ApplicationCacheEventMap {
     updateready: Event_
   ): ApplicationCacheEventMap = {
     val __obj = js.Dynamic.literal(cached = cached.asInstanceOf[js.Any], checking = checking.asInstanceOf[js.Any], downloading = downloading.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], noupdate = noupdate.asInstanceOf[js.Any], obsolete = obsolete.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], updateready = updateready.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplicationCacheEventMap]
   }
 }

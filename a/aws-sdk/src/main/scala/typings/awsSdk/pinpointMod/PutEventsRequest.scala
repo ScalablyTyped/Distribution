@@ -17,7 +17,6 @@ object PutEventsRequest {
   @scala.inline
   def apply(ApplicationId: string, EventsRequest: EventsRequest): PutEventsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EventsRequest = EventsRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutEventsRequest]
   }
 }

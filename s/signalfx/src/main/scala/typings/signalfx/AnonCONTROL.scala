@@ -15,7 +15,6 @@ object AnonCONTROL {
   @scala.inline
   def apply(CONTROL: String, DATA: String, EVENT: String, METADATA: String): AnonCONTROL = {
     val __obj = js.Dynamic.literal(CONTROL = CONTROL.asInstanceOf[js.Any], DATA = DATA.asInstanceOf[js.Any], EVENT = EVENT.asInstanceOf[js.Any], METADATA = METADATA.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCONTROL]
   }
 }

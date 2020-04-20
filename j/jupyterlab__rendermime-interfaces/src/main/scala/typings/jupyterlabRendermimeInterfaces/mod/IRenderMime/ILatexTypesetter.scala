@@ -28,7 +28,6 @@ object ILatexTypesetter {
   @scala.inline
   def apply(typeset: HTMLElement => Unit): ILatexTypesetter = {
     val __obj = js.Dynamic.literal(typeset = js.Any.fromFunction1(typeset))
-  
     __obj.asInstanceOf[ILatexTypesetter]
   }
 }

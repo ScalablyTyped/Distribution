@@ -23,7 +23,6 @@ object BitArray {
     toJSON: () => BitArrayJSON
   ): BitArray = {
     val __obj = js.Dynamic.literal(bits = bits.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), length = length.asInstanceOf[js.Any], set = js.Any.fromFunction2(set), toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[BitArray]
   }
 }

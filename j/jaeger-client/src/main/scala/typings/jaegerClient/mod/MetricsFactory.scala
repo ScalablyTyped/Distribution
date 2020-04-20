@@ -18,7 +18,6 @@ object MetricsFactory {
     createTimer: (String, js.Any) => Timer
   ): MetricsFactory = {
     val __obj = js.Dynamic.literal(createCounter = js.Any.fromFunction2(createCounter), createGauge = js.Any.fromFunction2(createGauge), createTimer = js.Any.fromFunction2(createTimer))
-  
     __obj.asInstanceOf[MetricsFactory]
   }
 }

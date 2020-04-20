@@ -14,7 +14,6 @@ object IBUDDY_ONLINE_STATE_CHANGE {
   @scala.inline
   def apply(buddy: SFSBuddy, isItMe: Boolean): IBUDDY_ONLINE_STATE_CHANGE = {
     val __obj = js.Dynamic.literal(buddy = buddy.asInstanceOf[js.Any], isItMe = isItMe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBUDDY_ONLINE_STATE_CHANGE]
   }
 }

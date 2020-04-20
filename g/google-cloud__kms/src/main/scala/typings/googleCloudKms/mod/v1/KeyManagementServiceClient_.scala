@@ -1,6 +1,9 @@
 package typings.googleCloudKms.mod.v1
 
 import typings.googleCloudKms.mod.GAX.CallOptions
+import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.AsymmetricSignCallback
+import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.AsymmetricSignRequest
+import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.AsymmetricSignResponse
 import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.ConfigurationObject
 import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.CreateCryptoKeyCallback
 import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.CreateCryptoKeyRequest
@@ -24,6 +27,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyManagementServiceClient_ () extends js.Object {
   def this(options: ConfigurationObject) = this()
+  def asymmetricSign(request: AsymmetricSignRequest): js.Promise[js.Tuple3[AsymmetricSignResponse, _, _]] = js.native
+  def asymmetricSign(request: AsymmetricSignRequest, callback: AsymmetricSignCallback): Unit = js.native
+  def asymmetricSign(request: AsymmetricSignRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[AsymmetricSignResponse, _, _]] = js.native
+  def asymmetricSign(request: AsymmetricSignRequest, gaxOpts: CallOptions, callback: AsymmetricSignCallback): Unit = js.native
   // This needs to be after the declaration that has callback but not options.
   def createCryptoKey(request: CreateCryptoKeyRequest): js.Promise[js.Tuple3[CryptoKey, _, _]] = js.native
   def createCryptoKey(request: CreateCryptoKeyRequest, callback: CreateCryptoKeyCallback): Unit = js.native

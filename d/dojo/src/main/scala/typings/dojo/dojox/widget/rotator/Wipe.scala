@@ -45,7 +45,6 @@ object Wipe {
     wipeUp: js.Object => js.Any
   ): Wipe = {
     val __obj = js.Dynamic.literal(wipeDown = js.Any.fromFunction1(wipeDown), wipeLeft = js.Any.fromFunction1(wipeLeft), wipeRight = js.Any.fromFunction1(wipeRight), wipeUp = js.Any.fromFunction1(wipeUp))
-  
     __obj.asInstanceOf[Wipe]
   }
 }

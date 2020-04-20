@@ -29,7 +29,7 @@ abstract class Ailment protected () extends IAilment {
   val project: IProject = js.native
   val session: ISession = js.native
   val shell: IShell = js.native
-  def debug(): Debugger = js.native
+  def debug: Debugger = js.native
   /* CompleteClass */
   override def detected(): js.Promise[Boolean] = js.native
   def getLocalPackageJson(pkgName: String): js.Promise[js.UndefOr[PackageJson]] = js.native

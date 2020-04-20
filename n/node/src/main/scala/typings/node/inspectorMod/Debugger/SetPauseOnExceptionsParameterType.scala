@@ -15,7 +15,6 @@ object SetPauseOnExceptionsParameterType {
   @scala.inline
   def apply(state: String): SetPauseOnExceptionsParameterType = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetPauseOnExceptionsParameterType]
   }
 }

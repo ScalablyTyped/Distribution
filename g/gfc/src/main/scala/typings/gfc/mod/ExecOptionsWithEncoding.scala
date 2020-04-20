@@ -2,7 +2,7 @@ package typings.gfc.mod
 
 import typings.gfc.gfcStrings.buffer
 import typings.node.BufferEncoding
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait ExecOptionsWithEncoding extends js.Object {
   var cwd: js.UndefOr[String] = js.undefined
   var encoding: js.UndefOr[BufferEncoding | buffer | Null] = js.undefined
-  var env: js.UndefOr[ProcessEnv] = js.undefined
+  var env: js.UndefOr[Dict[String]] = js.undefined
   var gid: js.UndefOr[Double] = js.undefined
   var killSignal: js.UndefOr[Signals | Double] = js.undefined
   var maxBuffer: js.UndefOr[Double] = js.undefined
@@ -33,7 +33,7 @@ object ExecOptionsWithEncoding {
   def apply(
     cwd: String = null,
     encoding: BufferEncoding | buffer = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,

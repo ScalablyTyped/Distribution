@@ -19,7 +19,6 @@ object TreeViewNodeClickEventArgs {
     sender: Control
   ): TreeViewNodeClickEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TreeViewNodeClickEventArgs]
   }
 }

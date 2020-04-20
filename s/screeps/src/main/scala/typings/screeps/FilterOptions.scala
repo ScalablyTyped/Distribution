@@ -13,7 +13,6 @@ object FilterOptions {
   @scala.inline
   def apply[T /* <: FindConstant */](filter: FilterFunction[T] | FilterObject | String): FilterOptions[T] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilterOptions[T]]
   }
 }

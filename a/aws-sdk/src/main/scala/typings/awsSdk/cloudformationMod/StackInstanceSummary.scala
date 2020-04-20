@@ -19,11 +19,11 @@ trait StackInstanceSummary extends js.Object {
     */
   var LastDriftCheckTimestamp: js.UndefOr[Timestamp] = js.native
   /**
-    * [Service-managed permissions] The organization root ID or organizational unit (OU) ID that the stack instance is associated with.
+    * Reserved for internal use. No data returned.
     */
   var OrganizationalUnitId: js.UndefOr[typings.awsSdk.cloudformationMod.OrganizationalUnitId] = js.native
   /**
-    * The name of the AWS region that the stack instance is associated with.
+    * The name of the AWS Region that the stack instance is associated with.
     */
   var Region: js.UndefOr[typings.awsSdk.cloudformationMod.Region] = js.native
   /**

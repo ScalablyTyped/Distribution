@@ -33,7 +33,6 @@ object AnonGameswon {
     win_rate: js.Array[HeroWinRate]
   ): AnonGameswon = {
     val __obj = js.Dynamic.literal(eliminations_per_life = eliminations_per_life.asInstanceOf[js.Any], games_won = games_won.asInstanceOf[js.Any], multikill_best = multikill_best.asInstanceOf[js.Any], objective_kills_average = objective_kills_average.asInstanceOf[js.Any], played = played.asInstanceOf[js.Any], weapon_accuracy = weapon_accuracy.asInstanceOf[js.Any], win_rate = win_rate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGameswon]
   }
 }

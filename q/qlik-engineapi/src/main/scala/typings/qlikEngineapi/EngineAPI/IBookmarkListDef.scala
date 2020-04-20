@@ -23,7 +23,6 @@ object IBookmarkListDef {
   @scala.inline
   def apply(qData: js.Any, qType: bookmark): IBookmarkListDef = {
     val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBookmarkListDef]
   }
 }

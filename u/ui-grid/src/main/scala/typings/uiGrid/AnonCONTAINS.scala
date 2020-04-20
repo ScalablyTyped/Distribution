@@ -34,7 +34,6 @@ object AnonCONTAINS {
     STARTS_WITH: Double
   ): AnonCONTAINS = {
     val __obj = js.Dynamic.literal(CONTAINS = CONTAINS.asInstanceOf[js.Any], ENDS_WITH = ENDS_WITH.asInstanceOf[js.Any], EXACT = EXACT.asInstanceOf[js.Any], GREATER_THAN = GREATER_THAN.asInstanceOf[js.Any], GREATER_THAN_OR_EQUAL = GREATER_THAN_OR_EQUAL.asInstanceOf[js.Any], INPUT = INPUT.asInstanceOf[js.Any], LESS_THAN = LESS_THAN.asInstanceOf[js.Any], LESS_THAN_OR_EQUAL = LESS_THAN_OR_EQUAL.asInstanceOf[js.Any], NOT_EQUAL = NOT_EQUAL.asInstanceOf[js.Any], SELECT = SELECT.asInstanceOf[js.Any], STARTS_WITH = STARTS_WITH.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCONTAINS]
   }
 }

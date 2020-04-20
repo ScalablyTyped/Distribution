@@ -21,7 +21,6 @@ object WEBGLCompressedTextureS3tc {
     COMPRESSED_RGB_S3TC_DXT1_EXT: GLenum
   ): WEBGLCompressedTextureS3tc = {
     val __obj = js.Dynamic.literal(COMPRESSED_RGBA_S3TC_DXT1_EXT = COMPRESSED_RGBA_S3TC_DXT1_EXT.asInstanceOf[js.Any], COMPRESSED_RGBA_S3TC_DXT3_EXT = COMPRESSED_RGBA_S3TC_DXT3_EXT.asInstanceOf[js.Any], COMPRESSED_RGBA_S3TC_DXT5_EXT = COMPRESSED_RGBA_S3TC_DXT5_EXT.asInstanceOf[js.Any], COMPRESSED_RGB_S3TC_DXT1_EXT = COMPRESSED_RGB_S3TC_DXT1_EXT.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WEBGLCompressedTextureS3tc]
   }
 }

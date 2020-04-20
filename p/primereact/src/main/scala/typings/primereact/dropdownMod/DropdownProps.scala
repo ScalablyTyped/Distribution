@@ -21,6 +21,7 @@ trait DropdownProps extends js.Object {
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterBy: js.UndefOr[String] = js.undefined
   var filterInputAutoFocus: js.UndefOr[Boolean] = js.undefined
+  var filterLocale: js.UndefOr[String] = js.undefined
   var filterMatchMode: js.UndefOr[String] = js.undefined
   var filterPlaceholder: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -65,6 +66,7 @@ object DropdownProps {
     filter: js.UndefOr[Boolean] = js.undefined,
     filterBy: String = null,
     filterInputAutoFocus: js.UndefOr[Boolean] = js.undefined,
+    filterLocale: String = null,
     filterMatchMode: String = null,
     filterPlaceholder: String = null,
     id: String = null,
@@ -106,6 +108,7 @@ object DropdownProps {
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy.asInstanceOf[js.Any])
     if (!js.isUndefined(filterInputAutoFocus)) __obj.updateDynamic("filterInputAutoFocus")(filterInputAutoFocus.asInstanceOf[js.Any])
+    if (filterLocale != null) __obj.updateDynamic("filterLocale")(filterLocale.asInstanceOf[js.Any])
     if (filterMatchMode != null) __obj.updateDynamic("filterMatchMode")(filterMatchMode.asInstanceOf[js.Any])
     if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

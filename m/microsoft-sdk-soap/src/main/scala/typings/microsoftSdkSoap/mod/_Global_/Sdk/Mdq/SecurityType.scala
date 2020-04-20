@@ -15,16 +15,14 @@ trait SecurityType extends js.Object
 
 object SecurityType {
   @scala.inline
-  def Append: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Append = this.cast("Append")
+  def Append: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Append = "Append".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Append]
   @scala.inline
-  def Inheritance: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Inheritance = this.cast("Inheritance")
+  def Inheritance: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Inheritance = "Inheritance".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Inheritance]
   @scala.inline
-  def None: typings.microsoftSdkSoap.microsoftSdkSoapStrings.None = this.cast("None")
+  def None: typings.microsoftSdkSoap.microsoftSdkSoapStrings.None = "None".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.None]
   @scala.inline
-  def ParentChild: typings.microsoftSdkSoap.microsoftSdkSoapStrings.ParentChild = this.cast("ParentChild")
+  def ParentChild: typings.microsoftSdkSoap.microsoftSdkSoapStrings.ParentChild = "ParentChild".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.ParentChild]
   @scala.inline
-  def Pointer: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Pointer = this.cast("Pointer")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Pointer: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Pointer = "Pointer".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Pointer]
 }
 

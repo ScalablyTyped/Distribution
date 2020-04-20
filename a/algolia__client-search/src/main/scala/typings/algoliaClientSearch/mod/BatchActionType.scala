@@ -15,16 +15,14 @@ trait BatchActionType extends js.Object
 
 object BatchActionType {
   @scala.inline
-  def addObject: typings.algoliaClientSearch.algoliaClientSearchStrings.addObject = this.cast("addObject")
+  def addObject: typings.algoliaClientSearch.algoliaClientSearchStrings.addObject = "addObject".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.addObject]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deleteObject: typings.algoliaClientSearch.algoliaClientSearchStrings.deleteObject = "deleteObject".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.deleteObject]
   @scala.inline
-  def deleteObject: typings.algoliaClientSearch.algoliaClientSearchStrings.deleteObject = this.cast("deleteObject")
+  def partialUpdateObject: typings.algoliaClientSearch.algoliaClientSearchStrings.partialUpdateObject = "partialUpdateObject".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.partialUpdateObject]
   @scala.inline
-  def partialUpdateObject: typings.algoliaClientSearch.algoliaClientSearchStrings.partialUpdateObject = this.cast("partialUpdateObject")
+  def partialUpdateObjectNoCreate: typings.algoliaClientSearch.algoliaClientSearchStrings.partialUpdateObjectNoCreate = "partialUpdateObjectNoCreate".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.partialUpdateObjectNoCreate]
   @scala.inline
-  def partialUpdateObjectNoCreate: typings.algoliaClientSearch.algoliaClientSearchStrings.partialUpdateObjectNoCreate = this.cast("partialUpdateObjectNoCreate")
-  @scala.inline
-  def updateObject: typings.algoliaClientSearch.algoliaClientSearchStrings.updateObject = this.cast("updateObject")
+  def updateObject: typings.algoliaClientSearch.algoliaClientSearchStrings.updateObject = "updateObject".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.updateObject]
 }
 

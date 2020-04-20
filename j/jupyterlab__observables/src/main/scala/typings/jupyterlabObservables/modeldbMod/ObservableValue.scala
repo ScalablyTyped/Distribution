@@ -49,7 +49,7 @@ class ObservableValue () extends IObservableValue {
     * The changed signal.
     */
   @JSName("changed")
-  def changed_MObservableValue(): ISignal[this.type, IChangedArgs] = js.native
+  def changed_MObservableValue: ISignal[this.type, IChangedArgs] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -72,7 +72,7 @@ class ObservableValue () extends IObservableValue {
     * Whether the value has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MObservableValue(): Boolean = js.native
+  def isDisposed_MObservableValue: Boolean = js.native
   /**
     * Set the value.
     */
@@ -82,7 +82,7 @@ class ObservableValue () extends IObservableValue {
     * The observable type.
     */
   @JSName("type")
-  def type_MObservableValue(): Value = js.native
+  def type_MObservableValue: Value = js.native
 }
 
 @JSImport("@jupyterlab/observables/lib/modeldb", "ObservableValue")

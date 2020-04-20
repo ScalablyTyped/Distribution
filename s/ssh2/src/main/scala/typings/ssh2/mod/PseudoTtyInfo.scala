@@ -21,7 +21,6 @@ object PseudoTtyInfo {
   @scala.inline
   def apply(cols: Double, height: Double, modes: TerminalModes, rows: Double, width: Double): PseudoTtyInfo = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PseudoTtyInfo]
   }
 }

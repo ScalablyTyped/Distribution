@@ -19,7 +19,6 @@ object DeleteSurroundingTextParameters {
   @scala.inline
   def apply(contextID: Double, engineID: String, length: Double, offset: Double): DeleteSurroundingTextParameters = {
     val __obj = js.Dynamic.literal(contextID = contextID.asInstanceOf[js.Any], engineID = engineID.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSurroundingTextParameters]
   }
 }

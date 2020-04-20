@@ -22,7 +22,6 @@ object AnonConnected {
     ssl_only: () => Unit
   ): AnonConnected = {
     val __obj = js.Dynamic.literal(backoff = js.Any.fromFunction0(backoff), connected = js.Any.fromFunction1(connected), refused = js.Any.fromFunction0(refused), retry = js.Any.fromFunction0(retry), ssl_only = js.Any.fromFunction0(ssl_only))
-  
     __obj.asInstanceOf[AnonConnected]
   }
 }

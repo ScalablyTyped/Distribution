@@ -15,12 +15,12 @@ trait _ReactLifeCycleFunctionsThisArguments[TProps, TState] extends js.Object {
   var state: TState = js.native
   def forceUpdate(): Unit = js.native
   def forceUpdate(callBack: js.Function0[_]): Unit = js.native
-  def setState[TKeyOfState /* <: String */](f: js.Function2[/* prevState */ TState, /* props */ TProps, Pick[TState, TKeyOfState]]): Unit = js.native
-  def setState[TKeyOfState /* <: String */](
+  def setState[TKeyOfState /* <: /* keyof TState */ String */](f: js.Function2[/* prevState */ TState, /* props */ TProps, Pick[TState, TKeyOfState]]): Unit = js.native
+  def setState[TKeyOfState /* <: /* keyof TState */ String */](
     f: js.Function2[/* prevState */ TState, /* props */ TProps, Pick[TState, TKeyOfState]],
     callback: js.Function0[_]
   ): Unit = js.native
-  def setState[TKeyOfState /* <: String */](state: Pick[TState, TKeyOfState]): Unit = js.native
-  def setState[TKeyOfState /* <: String */](state: Pick[TState, TKeyOfState], callback: js.Function0[_]): Unit = js.native
+  def setState[TKeyOfState /* <: /* keyof TState */ String */](state: Pick[TState, TKeyOfState]): Unit = js.native
+  def setState[TKeyOfState /* <: /* keyof TState */ String */](state: Pick[TState, TKeyOfState], callback: js.Function0[_]): Unit = js.native
 }
 

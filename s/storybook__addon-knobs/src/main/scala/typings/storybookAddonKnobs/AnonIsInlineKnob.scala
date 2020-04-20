@@ -24,7 +24,6 @@ object AnonIsInlineKnob {
     ]
   ): AnonIsInlineKnob = {
     val __obj = js.Dynamic.literal(isInline = isInline.asInstanceOf[js.Any], knob = knob.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsInlineKnob]
   }
 }

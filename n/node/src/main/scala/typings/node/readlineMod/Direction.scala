@@ -13,12 +13,10 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  def `-1`: typings.node.nodeNumbers.`-1` = this.cast(-1)
+  def `-1`: typings.node.nodeNumbers.`-1` = -1.asInstanceOf[typings.node.nodeNumbers.`-1`]
   @scala.inline
-  def `0`: typings.node.nodeNumbers.`0` = this.cast(0)
+  def `0`: typings.node.nodeNumbers.`0` = 0.asInstanceOf[typings.node.nodeNumbers.`0`]
   @scala.inline
-  def `1`: typings.node.nodeNumbers.`1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `1`: typings.node.nodeNumbers.`1` = 1.asInstanceOf[typings.node.nodeNumbers.`1`]
 }
 

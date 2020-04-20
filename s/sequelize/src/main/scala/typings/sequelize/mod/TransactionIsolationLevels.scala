@@ -28,7 +28,6 @@ object TransactionIsolationLevels {
     SERIALIZABLE: TransactionIsolationLevelSerializable
   ): TransactionIsolationLevels = {
     val __obj = js.Dynamic.literal(READ_COMMITTED = READ_COMMITTED.asInstanceOf[js.Any], READ_UNCOMMITTED = READ_UNCOMMITTED.asInstanceOf[js.Any], REPEATABLE_READ = REPEATABLE_READ.asInstanceOf[js.Any], SERIALIZABLE = SERIALIZABLE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransactionIsolationLevels]
   }
 }

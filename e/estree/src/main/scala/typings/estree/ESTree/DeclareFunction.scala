@@ -15,7 +15,6 @@ object DeclareFunction {
     id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
   ): DeclareFunction = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeclareFunction]
   }
 }

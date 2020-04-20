@@ -12,10 +12,8 @@ trait OverlayEventType extends js.Object
 
 object OverlayEventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deselect: typings.appleMapkitJs.appleMapkitJsStrings.deselect = "deselect".asInstanceOf[typings.appleMapkitJs.appleMapkitJsStrings.deselect]
   @scala.inline
-  def deselect: typings.appleMapkitJs.appleMapkitJsStrings.deselect = this.cast("deselect")
-  @scala.inline
-  def select: typings.appleMapkitJs.appleMapkitJsStrings.select = this.cast("select")
+  def select: typings.appleMapkitJs.appleMapkitJsStrings.select = "select".asInstanceOf[typings.appleMapkitJs.appleMapkitJsStrings.select]
 }
 

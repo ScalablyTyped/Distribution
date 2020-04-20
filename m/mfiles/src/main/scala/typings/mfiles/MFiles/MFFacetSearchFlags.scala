@@ -24,20 +24,18 @@ trait MFFacetSearchFlags extends js.Object
 
 object MFFacetSearchFlags {
   @scala.inline
-  def AscendingOrder: `32` = this.cast(32)
+  def AscendingOrder: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def IgnoreFacetGroupPermissions: `4` = this.cast(4)
+  def IgnoreFacetGroupPermissions: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def IgnoreFacetValuePermissions: `8` = this.cast(8)
+  def IgnoreFacetValuePermissions: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def IgnoreSearchPermissions: `2` = this.cast(2)
+  def IgnoreSearchPermissions: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def OverrideByConfiguration: `64` = this.cast(64)
+  def OverrideByConfiguration: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def SortFacetValues: `16` = this.cast(16)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SortFacetValues: `16` = 16.asInstanceOf[`16`]
 }
 

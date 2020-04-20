@@ -16,7 +16,6 @@ object PhysicsGravitationalFieldEventData {
   @scala.inline
   def apply(sphere: Mesh): PhysicsGravitationalFieldEventData = {
     val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhysicsGravitationalFieldEventData]
   }
 }

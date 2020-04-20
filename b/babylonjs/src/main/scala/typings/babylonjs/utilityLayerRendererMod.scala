@@ -101,11 +101,11 @@ object utilityLayerRendererMod extends js.Object {
     /**
       * A shared utility layer that can be used to embed objects into a scene (Depth map of the previous scene is not cleared before drawing on top of it)
       */
-    def DefaultKeepDepthUtilityLayer(): UtilityLayerRenderer = js.native
+    def DefaultKeepDepthUtilityLayer: UtilityLayerRenderer = js.native
     /**
       * A shared utility layer that can be used to overlay objects into a scene (Depth map of the previous scene is cleared before drawing on top of it)
       */
-    def DefaultUtilityLayer(): UtilityLayerRenderer = js.native
+    def DefaultUtilityLayer: UtilityLayerRenderer = js.native
   }
   
 }

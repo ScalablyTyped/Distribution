@@ -21,7 +21,6 @@ object MenuElement {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](render: EditorView[S] => AnonDom[S]): MenuElement[S] = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
-  
     __obj.asInstanceOf[MenuElement[S]]
   }
 }

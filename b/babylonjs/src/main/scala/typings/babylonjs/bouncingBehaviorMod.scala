@@ -59,7 +59,7 @@ object bouncingBehaviorMod extends js.Object {
     /**
       * Gets a value indicating if the lowerRadiusTransitionRange and upperRadiusTransitionRange are defined automatically
       */
-    def autoTransitionRange(): Boolean = js.native
+    def autoTransitionRange: Boolean = js.native
     /**
       * Sets a value indicating if the lowerRadiusTransitionRange and upperRadiusTransitionRange are defined automatically
       * Transition ranges will be set to 5% of the bounding box diagonal in world space
@@ -79,7 +79,7 @@ object bouncingBehaviorMod extends js.Object {
       * Gets the name of the behavior.
       */
     @JSName("name")
-    def name_MBouncingBehavior(): String = js.native
+    def name_MBouncingBehavior: String = js.native
     /**
       * Stops and removes all animations that have been applied to the camera
       */

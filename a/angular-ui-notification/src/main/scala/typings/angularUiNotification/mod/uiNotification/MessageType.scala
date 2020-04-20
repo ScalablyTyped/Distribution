@@ -15,16 +15,14 @@ trait MessageType extends js.Object
 
 object MessageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.angularUiNotification.angularUiNotificationStrings.error = "error".asInstanceOf[typings.angularUiNotification.angularUiNotificationStrings.error]
   @scala.inline
-  def error: typings.angularUiNotification.angularUiNotificationStrings.error = this.cast("error")
+  def info: typings.angularUiNotification.angularUiNotificationStrings.info = "info".asInstanceOf[typings.angularUiNotification.angularUiNotificationStrings.info]
   @scala.inline
-  def info: typings.angularUiNotification.angularUiNotificationStrings.info = this.cast("info")
+  def primary: typings.angularUiNotification.angularUiNotificationStrings.primary = "primary".asInstanceOf[typings.angularUiNotification.angularUiNotificationStrings.primary]
   @scala.inline
-  def primary: typings.angularUiNotification.angularUiNotificationStrings.primary = this.cast("primary")
+  def success: typings.angularUiNotification.angularUiNotificationStrings.success = "success".asInstanceOf[typings.angularUiNotification.angularUiNotificationStrings.success]
   @scala.inline
-  def success: typings.angularUiNotification.angularUiNotificationStrings.success = this.cast("success")
-  @scala.inline
-  def warning: typings.angularUiNotification.angularUiNotificationStrings.warning = this.cast("warning")
+  def warning: typings.angularUiNotification.angularUiNotificationStrings.warning = "warning".asInstanceOf[typings.angularUiNotification.angularUiNotificationStrings.warning]
 }
 

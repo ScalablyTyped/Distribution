@@ -19,7 +19,6 @@ object ExtensionUrls {
   @scala.inline
   def apply(extensionIcon: String, extensionPage: String): ExtensionUrls = {
     val __obj = js.Dynamic.literal(extensionIcon = extensionIcon.asInstanceOf[js.Any], extensionPage = extensionPage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionUrls]
   }
 }

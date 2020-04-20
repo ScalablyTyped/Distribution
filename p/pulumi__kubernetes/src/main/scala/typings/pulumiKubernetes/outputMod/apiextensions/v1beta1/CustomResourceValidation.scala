@@ -18,7 +18,6 @@ object CustomResourceValidation {
   @scala.inline
   def apply(openAPIV3Schema: JSONSchemaProps): CustomResourceValidation = {
     val __obj = js.Dynamic.literal(openAPIV3Schema = openAPIV3Schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomResourceValidation]
   }
 }

@@ -15,7 +15,6 @@ object LogDescription {
   @scala.inline
   def apply(name: String, signature: String, topic: String, values: js.Array[_]): LogDescription = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogDescription]
   }
 }

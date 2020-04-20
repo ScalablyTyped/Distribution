@@ -30,7 +30,7 @@ object syncpaginatorMod extends js.Object {
     override var items: js.Array[T] = js.native
     var state: js.Any = js.native
     @JSName("items")
-    def items_MSyncPaginator(): js.Array[T] = js.native
+    def items_MSyncPaginator: js.Array[T] = js.native
     /**
       * Request next page.
       * Does not modify existing object.

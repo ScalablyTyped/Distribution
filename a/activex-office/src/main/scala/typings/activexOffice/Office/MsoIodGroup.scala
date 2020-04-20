@@ -16,12 +16,10 @@ trait MsoIodGroup extends js.Object
 
 object MsoIodGroup {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoIodGroupPIAs: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoIodGroupPIAs: `0` = this.cast(0)
+  def msoIodGroupVSTOR35Mgd: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoIodGroupVSTOR35Mgd: `1` = this.cast(1)
-  @scala.inline
-  def msoIodGroupVSTOR40Mgd: `2` = this.cast(2)
+  def msoIodGroupVSTOR40Mgd: `2` = 2.asInstanceOf[`2`]
 }
 

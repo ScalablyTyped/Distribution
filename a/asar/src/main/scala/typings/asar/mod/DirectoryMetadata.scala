@@ -15,7 +15,6 @@ object DirectoryMetadata {
   @scala.inline
   def apply(files: StringDictionary[EntryMetadata], unpacked: Boolean): DirectoryMetadata = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], unpacked = unpacked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectoryMetadata]
   }
 }

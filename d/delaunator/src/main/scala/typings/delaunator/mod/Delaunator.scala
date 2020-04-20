@@ -41,7 +41,6 @@ object Delaunator {
     triangles: Uint32Array
   ): Delaunator[P] = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], halfedges = halfedges.asInstanceOf[js.Any], hull = hull.asInstanceOf[js.Any], triangles = triangles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delaunator[P]]
   }
 }

@@ -12,7 +12,6 @@ object OrgsGetMembershipForAuthenticatedUserParams {
   @scala.inline
   def apply(org: String): OrgsGetMembershipForAuthenticatedUserParams = {
     val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OrgsGetMembershipForAuthenticatedUserParams]
   }
 }

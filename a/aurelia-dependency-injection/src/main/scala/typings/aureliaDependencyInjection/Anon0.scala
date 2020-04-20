@@ -16,7 +16,6 @@ object Anon0 {
   @scala.inline
   def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](get: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) => TImpl): Anon0[TBase, TImpl, TArgs] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-  
     __obj.asInstanceOf[Anon0[TBase, TImpl, TArgs]]
   }
 }

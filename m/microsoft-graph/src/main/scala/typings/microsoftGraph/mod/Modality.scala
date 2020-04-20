@@ -15,16 +15,14 @@ trait Modality extends js.Object
 
 object Modality {
   @scala.inline
-  def audio: typings.microsoftGraph.microsoftGraphStrings.audio = this.cast("audio")
+  def audio: typings.microsoftGraph.microsoftGraphStrings.audio = "audio".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.audio]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def data: typings.microsoftGraph.microsoftGraphStrings.data = "data".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.data]
   @scala.inline
-  def data: typings.microsoftGraph.microsoftGraphStrings.data = this.cast("data")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def video: typings.microsoftGraph.microsoftGraphStrings.video = "video".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.video]
   @scala.inline
-  def video: typings.microsoftGraph.microsoftGraphStrings.video = this.cast("video")
-  @scala.inline
-  def videoBasedScreenSharing: typings.microsoftGraph.microsoftGraphStrings.videoBasedScreenSharing = this.cast("videoBasedScreenSharing")
+  def videoBasedScreenSharing: typings.microsoftGraph.microsoftGraphStrings.videoBasedScreenSharing = "videoBasedScreenSharing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.videoBasedScreenSharing]
 }
 

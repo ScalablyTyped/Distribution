@@ -15,7 +15,6 @@ object Instance {
   @scala.inline
   def apply(file: AnonFromUrl, files: AnonRemove): Instance = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Instance]
   }
 }

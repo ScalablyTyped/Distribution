@@ -20,16 +20,14 @@ trait XlArrowHeadStyle extends js.Object
 
 object XlArrowHeadStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlArrowHeadStyleClosed: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlArrowHeadStyleClosed: `3` = this.cast(3)
+  def xlArrowHeadStyleDoubleClosed: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlArrowHeadStyleDoubleClosed: `5` = this.cast(5)
+  def xlArrowHeadStyleDoubleOpen: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlArrowHeadStyleDoubleOpen: `4` = this.cast(4)
+  def xlArrowHeadStyleNone: `-4142` = -4142.asInstanceOf[`-4142`]
   @scala.inline
-  def xlArrowHeadStyleNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlArrowHeadStyleOpen: `2` = this.cast(2)
+  def xlArrowHeadStyleOpen: `2` = 2.asInstanceOf[`2`]
 }
 

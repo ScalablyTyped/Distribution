@@ -13,12 +13,10 @@ trait Format extends js.Object
 
 object Format {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deflate: typings.nodeZopfliEs.nodeZopfliEsStrings.deflate = "deflate".asInstanceOf[typings.nodeZopfliEs.nodeZopfliEsStrings.deflate]
   @scala.inline
-  def deflate: typings.nodeZopfliEs.nodeZopfliEsStrings.deflate = this.cast("deflate")
+  def gzip: typings.nodeZopfliEs.nodeZopfliEsStrings.gzip = "gzip".asInstanceOf[typings.nodeZopfliEs.nodeZopfliEsStrings.gzip]
   @scala.inline
-  def gzip: typings.nodeZopfliEs.nodeZopfliEsStrings.gzip = this.cast("gzip")
-  @scala.inline
-  def zlib: typings.nodeZopfliEs.nodeZopfliEsStrings.zlib = this.cast("zlib")
+  def zlib: typings.nodeZopfliEs.nodeZopfliEsStrings.zlib = "zlib".asInstanceOf[typings.nodeZopfliEs.nodeZopfliEsStrings.zlib]
 }
 

@@ -12,7 +12,6 @@ object TakeableChannel {
   @scala.inline
   def apply[T](take: js.Function1[/* message */ T | END, Unit] => Unit): TakeableChannel[T] = {
     val __obj = js.Dynamic.literal(take = js.Any.fromFunction1(take))
-  
     __obj.asInstanceOf[TakeableChannel[T]]
   }
 }

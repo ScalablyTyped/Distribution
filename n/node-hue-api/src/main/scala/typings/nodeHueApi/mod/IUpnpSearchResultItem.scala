@@ -13,7 +13,6 @@ object IUpnpSearchResultItem {
   @scala.inline
   def apply(id: String, ipaddress: String): IUpnpSearchResultItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ipaddress = ipaddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUpnpSearchResultItem]
   }
 }

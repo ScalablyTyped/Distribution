@@ -19,7 +19,6 @@ object MovingComponent {
   @scala.inline
   def apply(isNew: Boolean, mapUniqueKey: String, source: String, uniqueKey: String): MovingComponent = {
     val __obj = js.Dynamic.literal(isNew = isNew.asInstanceOf[js.Any], mapUniqueKey = mapUniqueKey.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], uniqueKey = uniqueKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MovingComponent]
   }
 }

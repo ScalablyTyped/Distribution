@@ -13,7 +13,6 @@ object AnonWaypoints {
   @scala.inline
   def apply(waypoints: js.Array[LngLat]): AnonWaypoints = {
     val __obj = js.Dynamic.literal(waypoints = waypoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWaypoints]
   }
 }

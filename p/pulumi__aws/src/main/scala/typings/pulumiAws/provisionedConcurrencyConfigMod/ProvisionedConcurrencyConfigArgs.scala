@@ -29,7 +29,6 @@ object ProvisionedConcurrencyConfigArgs {
     qualifier: Input[String]
   ): ProvisionedConcurrencyConfigArgs = {
     val __obj = js.Dynamic.literal(functionName = functionName.asInstanceOf[js.Any], provisionedConcurrentExecutions = provisionedConcurrentExecutions.asInstanceOf[js.Any], qualifier = qualifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProvisionedConcurrencyConfigArgs]
   }
 }

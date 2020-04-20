@@ -45,7 +45,6 @@ object ObjectMetricSource {
     targetValue: String
   ): ObjectMetricSource = {
     val __obj = js.Dynamic.literal(averageValue = averageValue.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetValue = targetValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectMetricSource]
   }
 }

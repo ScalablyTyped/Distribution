@@ -16,7 +16,6 @@ object DescribeClientPropertiesRequest {
   @scala.inline
   def apply(ResourceIds: ResourceIdList): DescribeClientPropertiesRequest = {
     val __obj = js.Dynamic.literal(ResourceIds = ResourceIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeClientPropertiesRequest]
   }
 }

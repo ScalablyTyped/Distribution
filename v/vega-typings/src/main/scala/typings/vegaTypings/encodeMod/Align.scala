@@ -13,12 +13,10 @@ trait Align extends js.Object
 
 object Align {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.vegaTypings.vegaTypingsStrings.center = "center".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.center]
   @scala.inline
-  def center: typings.vegaTypings.vegaTypingsStrings.center = this.cast("center")
+  def left: typings.vegaTypings.vegaTypingsStrings.left = "left".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.left]
   @scala.inline
-  def left: typings.vegaTypings.vegaTypingsStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.vegaTypings.vegaTypingsStrings.right = this.cast("right")
+  def right: typings.vegaTypings.vegaTypingsStrings.right = "right".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.right]
 }
 

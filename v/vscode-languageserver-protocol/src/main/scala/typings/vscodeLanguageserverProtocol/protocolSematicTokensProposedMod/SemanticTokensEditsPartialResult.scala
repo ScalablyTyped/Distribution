@@ -12,7 +12,6 @@ object SemanticTokensEditsPartialResult {
   @scala.inline
   def apply(edits: js.Array[SemanticTokensEdit]): SemanticTokensEditsPartialResult = {
     val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SemanticTokensEditsPartialResult]
   }
 }

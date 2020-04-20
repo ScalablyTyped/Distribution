@@ -25,7 +25,6 @@ object Trigger {
     getUniqueId: () => String
   ): Trigger = {
     val __obj = js.Dynamic.literal(getEventType = js.Any.fromFunction0(getEventType), getHandlerFunction = js.Any.fromFunction0(getHandlerFunction), getTriggerSource = js.Any.fromFunction0(getTriggerSource), getTriggerSourceId = js.Any.fromFunction0(getTriggerSourceId), getUniqueId = js.Any.fromFunction0(getUniqueId))
-  
     __obj.asInstanceOf[Trigger]
   }
 }

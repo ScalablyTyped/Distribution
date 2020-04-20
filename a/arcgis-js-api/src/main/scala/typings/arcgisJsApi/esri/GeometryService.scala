@@ -201,8 +201,8 @@ trait GeometryService extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def reshape(targetGeometry: Geometry_, reshaper: Geometry_): js.Promise[Geometry_] = js.native
-  def reshape(targetGeometry: Geometry_, reshaper: Geometry_, requestOptions: js.Any): js.Promise[Geometry_] = js.native
+  def reshape(targetGeometry: Geometry_, reshaper: Polyline): js.Promise[Geometry_] = js.native
+  def reshape(targetGeometry: Geometry_, reshaper: Polyline, requestOptions: js.Any): js.Promise[Geometry_] = js.native
   /**
     * Alters the given geometries to make their definitions topologically legal with respect to their geometry type.
     *
@@ -241,8 +241,8 @@ trait GeometryService extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def trimExtend(params: TrimExtendParameters): js.Promise[js.Array[Geometry_]] = js.native
-  def trimExtend(params: TrimExtendParameters, requestOptions: js.Any): js.Promise[js.Array[Geometry_]] = js.native
+  def trimExtend(params: TrimExtendParameters): js.Promise[js.Array[Polyline]] = js.native
+  def trimExtend(params: TrimExtendParameters, requestOptions: js.Any): js.Promise[js.Array[Polyline]] = js.native
   /**
     * The union operation is performed on a geometry service resource. This operation constructs the set-theoretic union of the geometries in the input array. All inputs must be of the same type.
     *

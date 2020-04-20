@@ -135,256 +135,254 @@ trait FileExtension extends js.Object
 
 object FileExtension {
   @scala.inline
-  def `3g2`: typings.fileType.fileTypeStrings.`3g2` = this.cast("3g2")
+  def `3g2`: typings.fileType.fileTypeStrings.`3g2` = "3g2".asInstanceOf[typings.fileType.fileTypeStrings.`3g2`]
   @scala.inline
-  def `3gp`: typings.fileType.fileTypeStrings.`3gp` = this.cast("3gp")
+  def `3gp`: typings.fileType.fileTypeStrings.`3gp` = "3gp".asInstanceOf[typings.fileType.fileTypeStrings.`3gp`]
   @scala.inline
-  def `7z`: typings.fileType.fileTypeStrings.`7z` = this.cast("7z")
+  def `7z`: typings.fileType.fileTypeStrings.`7z` = "7z".asInstanceOf[typings.fileType.fileTypeStrings.`7z`]
   @scala.inline
-  def Z: typings.fileType.fileTypeStrings.Z = this.cast("Z")
+  def Z: typings.fileType.fileTypeStrings.Z = "Z".asInstanceOf[typings.fileType.fileTypeStrings.Z]
   @scala.inline
-  def aac: typings.fileType.fileTypeStrings.aac = this.cast("aac")
+  def aac: typings.fileType.fileTypeStrings.aac = "aac".asInstanceOf[typings.fileType.fileTypeStrings.aac]
   @scala.inline
-  def ac3: typings.fileType.fileTypeStrings.ac3 = this.cast("ac3")
+  def ac3: typings.fileType.fileTypeStrings.ac3 = "ac3".asInstanceOf[typings.fileType.fileTypeStrings.ac3]
   @scala.inline
-  def ai: typings.fileType.fileTypeStrings.ai = this.cast("ai")
+  def ai: typings.fileType.fileTypeStrings.ai = "ai".asInstanceOf[typings.fileType.fileTypeStrings.ai]
   @scala.inline
-  def aif: typings.fileType.fileTypeStrings.aif = this.cast("aif")
+  def aif: typings.fileType.fileTypeStrings.aif = "aif".asInstanceOf[typings.fileType.fileTypeStrings.aif]
   @scala.inline
-  def alias: typings.fileType.fileTypeStrings.alias = this.cast("alias")
+  def alias: typings.fileType.fileTypeStrings.alias = "alias".asInstanceOf[typings.fileType.fileTypeStrings.alias]
   @scala.inline
-  def amr: typings.fileType.fileTypeStrings.amr = this.cast("amr")
+  def amr: typings.fileType.fileTypeStrings.amr = "amr".asInstanceOf[typings.fileType.fileTypeStrings.amr]
   @scala.inline
-  def ape: typings.fileType.fileTypeStrings.ape = this.cast("ape")
+  def ape: typings.fileType.fileTypeStrings.ape = "ape".asInstanceOf[typings.fileType.fileTypeStrings.ape]
   @scala.inline
-  def apng: typings.fileType.fileTypeStrings.apng = this.cast("apng")
+  def apng: typings.fileType.fileTypeStrings.apng = "apng".asInstanceOf[typings.fileType.fileTypeStrings.apng]
   @scala.inline
-  def ar: typings.fileType.fileTypeStrings.ar = this.cast("ar")
+  def ar: typings.fileType.fileTypeStrings.ar = "ar".asInstanceOf[typings.fileType.fileTypeStrings.ar]
   @scala.inline
-  def arrow: typings.fileType.fileTypeStrings.arrow = this.cast("arrow")
+  def arrow: typings.fileType.fileTypeStrings.arrow = "arrow".asInstanceOf[typings.fileType.fileTypeStrings.arrow]
   @scala.inline
-  def arw: typings.fileType.fileTypeStrings.arw = this.cast("arw")
+  def arw: typings.fileType.fileTypeStrings.arw = "arw".asInstanceOf[typings.fileType.fileTypeStrings.arw]
   @scala.inline
-  def asf: typings.fileType.fileTypeStrings.asf = this.cast("asf")
+  def asf: typings.fileType.fileTypeStrings.asf = "asf".asInstanceOf[typings.fileType.fileTypeStrings.asf]
   @scala.inline
-  def avi: typings.fileType.fileTypeStrings.avi = this.cast("avi")
+  def avi: typings.fileType.fileTypeStrings.avi = "avi".asInstanceOf[typings.fileType.fileTypeStrings.avi]
   @scala.inline
-  def blend: typings.fileType.fileTypeStrings.blend = this.cast("blend")
+  def blend: typings.fileType.fileTypeStrings.blend = "blend".asInstanceOf[typings.fileType.fileTypeStrings.blend]
   @scala.inline
-  def bmp: typings.fileType.fileTypeStrings.bmp = this.cast("bmp")
+  def bmp: typings.fileType.fileTypeStrings.bmp = "bmp".asInstanceOf[typings.fileType.fileTypeStrings.bmp]
   @scala.inline
-  def bpg: typings.fileType.fileTypeStrings.bpg = this.cast("bpg")
+  def bpg: typings.fileType.fileTypeStrings.bpg = "bpg".asInstanceOf[typings.fileType.fileTypeStrings.bpg]
   @scala.inline
-  def bz2: typings.fileType.fileTypeStrings.bz2 = this.cast("bz2")
+  def bz2: typings.fileType.fileTypeStrings.bz2 = "bz2".asInstanceOf[typings.fileType.fileTypeStrings.bz2]
   @scala.inline
-  def cab: typings.fileType.fileTypeStrings.cab = this.cast("cab")
+  def cab: typings.fileType.fileTypeStrings.cab = "cab".asInstanceOf[typings.fileType.fileTypeStrings.cab]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cr2: typings.fileType.fileTypeStrings.cr2 = "cr2".asInstanceOf[typings.fileType.fileTypeStrings.cr2]
   @scala.inline
-  def cr2: typings.fileType.fileTypeStrings.cr2 = this.cast("cr2")
+  def cr3: typings.fileType.fileTypeStrings.cr3 = "cr3".asInstanceOf[typings.fileType.fileTypeStrings.cr3]
   @scala.inline
-  def cr3: typings.fileType.fileTypeStrings.cr3 = this.cast("cr3")
+  def crx: typings.fileType.fileTypeStrings.crx = "crx".asInstanceOf[typings.fileType.fileTypeStrings.crx]
   @scala.inline
-  def crx: typings.fileType.fileTypeStrings.crx = this.cast("crx")
+  def cur: typings.fileType.fileTypeStrings.cur = "cur".asInstanceOf[typings.fileType.fileTypeStrings.cur]
   @scala.inline
-  def cur: typings.fileType.fileTypeStrings.cur = this.cast("cur")
+  def dcm: typings.fileType.fileTypeStrings.dcm = "dcm".asInstanceOf[typings.fileType.fileTypeStrings.dcm]
   @scala.inline
-  def dcm: typings.fileType.fileTypeStrings.dcm = this.cast("dcm")
+  def deb: typings.fileType.fileTypeStrings.deb = "deb".asInstanceOf[typings.fileType.fileTypeStrings.deb]
   @scala.inline
-  def deb: typings.fileType.fileTypeStrings.deb = this.cast("deb")
+  def dmg: typings.fileType.fileTypeStrings.dmg = "dmg".asInstanceOf[typings.fileType.fileTypeStrings.dmg]
   @scala.inline
-  def dmg: typings.fileType.fileTypeStrings.dmg = this.cast("dmg")
+  def dng: typings.fileType.fileTypeStrings.dng = "dng".asInstanceOf[typings.fileType.fileTypeStrings.dng]
   @scala.inline
-  def dng: typings.fileType.fileTypeStrings.dng = this.cast("dng")
+  def docx: typings.fileType.fileTypeStrings.docx = "docx".asInstanceOf[typings.fileType.fileTypeStrings.docx]
   @scala.inline
-  def docx: typings.fileType.fileTypeStrings.docx = this.cast("docx")
+  def dsf: typings.fileType.fileTypeStrings.dsf = "dsf".asInstanceOf[typings.fileType.fileTypeStrings.dsf]
   @scala.inline
-  def dsf: typings.fileType.fileTypeStrings.dsf = this.cast("dsf")
+  def eot: typings.fileType.fileTypeStrings.eot = "eot".asInstanceOf[typings.fileType.fileTypeStrings.eot]
   @scala.inline
-  def eot: typings.fileType.fileTypeStrings.eot = this.cast("eot")
+  def epub: typings.fileType.fileTypeStrings.epub = "epub".asInstanceOf[typings.fileType.fileTypeStrings.epub]
   @scala.inline
-  def epub: typings.fileType.fileTypeStrings.epub = this.cast("epub")
+  def exe: typings.fileType.fileTypeStrings.exe = "exe".asInstanceOf[typings.fileType.fileTypeStrings.exe]
   @scala.inline
-  def exe: typings.fileType.fileTypeStrings.exe = this.cast("exe")
+  def f4a: typings.fileType.fileTypeStrings.f4a = "f4a".asInstanceOf[typings.fileType.fileTypeStrings.f4a]
   @scala.inline
-  def f4a: typings.fileType.fileTypeStrings.f4a = this.cast("f4a")
+  def f4b: typings.fileType.fileTypeStrings.f4b = "f4b".asInstanceOf[typings.fileType.fileTypeStrings.f4b]
   @scala.inline
-  def f4b: typings.fileType.fileTypeStrings.f4b = this.cast("f4b")
+  def f4p: typings.fileType.fileTypeStrings.f4p = "f4p".asInstanceOf[typings.fileType.fileTypeStrings.f4p]
   @scala.inline
-  def f4p: typings.fileType.fileTypeStrings.f4p = this.cast("f4p")
+  def f4v: typings.fileType.fileTypeStrings.f4v = "f4v".asInstanceOf[typings.fileType.fileTypeStrings.f4v]
   @scala.inline
-  def f4v: typings.fileType.fileTypeStrings.f4v = this.cast("f4v")
+  def flac: typings.fileType.fileTypeStrings.flac = "flac".asInstanceOf[typings.fileType.fileTypeStrings.flac]
   @scala.inline
-  def flac: typings.fileType.fileTypeStrings.flac = this.cast("flac")
+  def flif: typings.fileType.fileTypeStrings.flif = "flif".asInstanceOf[typings.fileType.fileTypeStrings.flif]
   @scala.inline
-  def flif: typings.fileType.fileTypeStrings.flif = this.cast("flif")
+  def flv: typings.fileType.fileTypeStrings.flv = "flv".asInstanceOf[typings.fileType.fileTypeStrings.flv]
   @scala.inline
-  def flv: typings.fileType.fileTypeStrings.flv = this.cast("flv")
+  def gif: typings.fileType.fileTypeStrings.gif = "gif".asInstanceOf[typings.fileType.fileTypeStrings.gif]
   @scala.inline
-  def gif: typings.fileType.fileTypeStrings.gif = this.cast("gif")
+  def glb: typings.fileType.fileTypeStrings.glb = "glb".asInstanceOf[typings.fileType.fileTypeStrings.glb]
   @scala.inline
-  def glb: typings.fileType.fileTypeStrings.glb = this.cast("glb")
+  def gz: typings.fileType.fileTypeStrings.gz = "gz".asInstanceOf[typings.fileType.fileTypeStrings.gz]
   @scala.inline
-  def gz: typings.fileType.fileTypeStrings.gz = this.cast("gz")
+  def heic: typings.fileType.fileTypeStrings.heic = "heic".asInstanceOf[typings.fileType.fileTypeStrings.heic]
   @scala.inline
-  def heic: typings.fileType.fileTypeStrings.heic = this.cast("heic")
+  def ico: typings.fileType.fileTypeStrings.ico = "ico".asInstanceOf[typings.fileType.fileTypeStrings.ico]
   @scala.inline
-  def ico: typings.fileType.fileTypeStrings.ico = this.cast("ico")
+  def ics: typings.fileType.fileTypeStrings.ics = "ics".asInstanceOf[typings.fileType.fileTypeStrings.ics]
   @scala.inline
-  def ics: typings.fileType.fileTypeStrings.ics = this.cast("ics")
+  def it: typings.fileType.fileTypeStrings.it = "it".asInstanceOf[typings.fileType.fileTypeStrings.it]
   @scala.inline
-  def it: typings.fileType.fileTypeStrings.it = this.cast("it")
+  def jp2: typings.fileType.fileTypeStrings.jp2 = "jp2".asInstanceOf[typings.fileType.fileTypeStrings.jp2]
   @scala.inline
-  def jp2: typings.fileType.fileTypeStrings.jp2 = this.cast("jp2")
+  def jpg: typings.fileType.fileTypeStrings.jpg = "jpg".asInstanceOf[typings.fileType.fileTypeStrings.jpg]
   @scala.inline
-  def jpg: typings.fileType.fileTypeStrings.jpg = this.cast("jpg")
+  def jpm: typings.fileType.fileTypeStrings.jpm = "jpm".asInstanceOf[typings.fileType.fileTypeStrings.jpm]
   @scala.inline
-  def jpm: typings.fileType.fileTypeStrings.jpm = this.cast("jpm")
+  def jpx: typings.fileType.fileTypeStrings.jpx = "jpx".asInstanceOf[typings.fileType.fileTypeStrings.jpx]
   @scala.inline
-  def jpx: typings.fileType.fileTypeStrings.jpx = this.cast("jpx")
+  def jxr: typings.fileType.fileTypeStrings.jxr = "jxr".asInstanceOf[typings.fileType.fileTypeStrings.jxr]
   @scala.inline
-  def jxr: typings.fileType.fileTypeStrings.jxr = this.cast("jxr")
+  def ktx: typings.fileType.fileTypeStrings.ktx = "ktx".asInstanceOf[typings.fileType.fileTypeStrings.ktx]
   @scala.inline
-  def ktx: typings.fileType.fileTypeStrings.ktx = this.cast("ktx")
+  def lnk: typings.fileType.fileTypeStrings.lnk = "lnk".asInstanceOf[typings.fileType.fileTypeStrings.lnk]
   @scala.inline
-  def lnk: typings.fileType.fileTypeStrings.lnk = this.cast("lnk")
+  def lz: typings.fileType.fileTypeStrings.lz = "lz".asInstanceOf[typings.fileType.fileTypeStrings.lz]
   @scala.inline
-  def lz: typings.fileType.fileTypeStrings.lz = this.cast("lz")
+  def m4a: typings.fileType.fileTypeStrings.m4a = "m4a".asInstanceOf[typings.fileType.fileTypeStrings.m4a]
   @scala.inline
-  def m4a: typings.fileType.fileTypeStrings.m4a = this.cast("m4a")
+  def m4b: typings.fileType.fileTypeStrings.m4b = "m4b".asInstanceOf[typings.fileType.fileTypeStrings.m4b]
   @scala.inline
-  def m4b: typings.fileType.fileTypeStrings.m4b = this.cast("m4b")
+  def m4p: typings.fileType.fileTypeStrings.m4p = "m4p".asInstanceOf[typings.fileType.fileTypeStrings.m4p]
   @scala.inline
-  def m4p: typings.fileType.fileTypeStrings.m4p = this.cast("m4p")
+  def m4v: typings.fileType.fileTypeStrings.m4v = "m4v".asInstanceOf[typings.fileType.fileTypeStrings.m4v]
   @scala.inline
-  def m4v: typings.fileType.fileTypeStrings.m4v = this.cast("m4v")
+  def mid: typings.fileType.fileTypeStrings.mid = "mid".asInstanceOf[typings.fileType.fileTypeStrings.mid]
   @scala.inline
-  def mid: typings.fileType.fileTypeStrings.mid = this.cast("mid")
+  def mie: typings.fileType.fileTypeStrings.mie = "mie".asInstanceOf[typings.fileType.fileTypeStrings.mie]
   @scala.inline
-  def mie: typings.fileType.fileTypeStrings.mie = this.cast("mie")
+  def mj2: typings.fileType.fileTypeStrings.mj2 = "mj2".asInstanceOf[typings.fileType.fileTypeStrings.mj2]
   @scala.inline
-  def mj2: typings.fileType.fileTypeStrings.mj2 = this.cast("mj2")
+  def mkv: typings.fileType.fileTypeStrings.mkv = "mkv".asInstanceOf[typings.fileType.fileTypeStrings.mkv]
   @scala.inline
-  def mkv: typings.fileType.fileTypeStrings.mkv = this.cast("mkv")
+  def mobi: typings.fileType.fileTypeStrings.mobi = "mobi".asInstanceOf[typings.fileType.fileTypeStrings.mobi]
   @scala.inline
-  def mobi: typings.fileType.fileTypeStrings.mobi = this.cast("mobi")
+  def mov: typings.fileType.fileTypeStrings.mov = "mov".asInstanceOf[typings.fileType.fileTypeStrings.mov]
   @scala.inline
-  def mov: typings.fileType.fileTypeStrings.mov = this.cast("mov")
+  def mp1: typings.fileType.fileTypeStrings.mp1 = "mp1".asInstanceOf[typings.fileType.fileTypeStrings.mp1]
   @scala.inline
-  def mp1: typings.fileType.fileTypeStrings.mp1 = this.cast("mp1")
+  def mp2: typings.fileType.fileTypeStrings.mp2 = "mp2".asInstanceOf[typings.fileType.fileTypeStrings.mp2]
   @scala.inline
-  def mp2: typings.fileType.fileTypeStrings.mp2 = this.cast("mp2")
+  def mp3: typings.fileType.fileTypeStrings.mp3 = "mp3".asInstanceOf[typings.fileType.fileTypeStrings.mp3]
   @scala.inline
-  def mp3: typings.fileType.fileTypeStrings.mp3 = this.cast("mp3")
+  def mp4: typings.fileType.fileTypeStrings.mp4 = "mp4".asInstanceOf[typings.fileType.fileTypeStrings.mp4]
   @scala.inline
-  def mp4: typings.fileType.fileTypeStrings.mp4 = this.cast("mp4")
+  def mpc: typings.fileType.fileTypeStrings.mpc = "mpc".asInstanceOf[typings.fileType.fileTypeStrings.mpc]
   @scala.inline
-  def mpc: typings.fileType.fileTypeStrings.mpc = this.cast("mpc")
+  def mpg: typings.fileType.fileTypeStrings.mpg = "mpg".asInstanceOf[typings.fileType.fileTypeStrings.mpg]
   @scala.inline
-  def mpg: typings.fileType.fileTypeStrings.mpg = this.cast("mpg")
+  def msi: typings.fileType.fileTypeStrings.msi = "msi".asInstanceOf[typings.fileType.fileTypeStrings.msi]
   @scala.inline
-  def msi: typings.fileType.fileTypeStrings.msi = this.cast("msi")
+  def mts: typings.fileType.fileTypeStrings.mts = "mts".asInstanceOf[typings.fileType.fileTypeStrings.mts]
   @scala.inline
-  def mts: typings.fileType.fileTypeStrings.mts = this.cast("mts")
+  def mxf: typings.fileType.fileTypeStrings.mxf = "mxf".asInstanceOf[typings.fileType.fileTypeStrings.mxf]
   @scala.inline
-  def mxf: typings.fileType.fileTypeStrings.mxf = this.cast("mxf")
+  def nef: typings.fileType.fileTypeStrings.nef = "nef".asInstanceOf[typings.fileType.fileTypeStrings.nef]
   @scala.inline
-  def nef: typings.fileType.fileTypeStrings.nef = this.cast("nef")
+  def nes: typings.fileType.fileTypeStrings.nes = "nes".asInstanceOf[typings.fileType.fileTypeStrings.nes]
   @scala.inline
-  def nes: typings.fileType.fileTypeStrings.nes = this.cast("nes")
+  def odp: typings.fileType.fileTypeStrings.odp = "odp".asInstanceOf[typings.fileType.fileTypeStrings.odp]
   @scala.inline
-  def odp: typings.fileType.fileTypeStrings.odp = this.cast("odp")
+  def ods: typings.fileType.fileTypeStrings.ods = "ods".asInstanceOf[typings.fileType.fileTypeStrings.ods]
   @scala.inline
-  def ods: typings.fileType.fileTypeStrings.ods = this.cast("ods")
+  def odt: typings.fileType.fileTypeStrings.odt = "odt".asInstanceOf[typings.fileType.fileTypeStrings.odt]
   @scala.inline
-  def odt: typings.fileType.fileTypeStrings.odt = this.cast("odt")
+  def oga: typings.fileType.fileTypeStrings.oga = "oga".asInstanceOf[typings.fileType.fileTypeStrings.oga]
   @scala.inline
-  def oga: typings.fileType.fileTypeStrings.oga = this.cast("oga")
+  def ogg: typings.fileType.fileTypeStrings.ogg = "ogg".asInstanceOf[typings.fileType.fileTypeStrings.ogg]
   @scala.inline
-  def ogg: typings.fileType.fileTypeStrings.ogg = this.cast("ogg")
+  def ogm: typings.fileType.fileTypeStrings.ogm = "ogm".asInstanceOf[typings.fileType.fileTypeStrings.ogm]
   @scala.inline
-  def ogm: typings.fileType.fileTypeStrings.ogm = this.cast("ogm")
+  def ogv: typings.fileType.fileTypeStrings.ogv = "ogv".asInstanceOf[typings.fileType.fileTypeStrings.ogv]
   @scala.inline
-  def ogv: typings.fileType.fileTypeStrings.ogv = this.cast("ogv")
+  def ogx: typings.fileType.fileTypeStrings.ogx = "ogx".asInstanceOf[typings.fileType.fileTypeStrings.ogx]
   @scala.inline
-  def ogx: typings.fileType.fileTypeStrings.ogx = this.cast("ogx")
+  def opus: typings.fileType.fileTypeStrings.opus = "opus".asInstanceOf[typings.fileType.fileTypeStrings.opus]
   @scala.inline
-  def opus: typings.fileType.fileTypeStrings.opus = this.cast("opus")
+  def orf: typings.fileType.fileTypeStrings.orf = "orf".asInstanceOf[typings.fileType.fileTypeStrings.orf]
   @scala.inline
-  def orf: typings.fileType.fileTypeStrings.orf = this.cast("orf")
+  def otf: typings.fileType.fileTypeStrings.otf = "otf".asInstanceOf[typings.fileType.fileTypeStrings.otf]
   @scala.inline
-  def otf: typings.fileType.fileTypeStrings.otf = this.cast("otf")
+  def pcap: typings.fileType.fileTypeStrings.pcap = "pcap".asInstanceOf[typings.fileType.fileTypeStrings.pcap]
   @scala.inline
-  def pcap: typings.fileType.fileTypeStrings.pcap = this.cast("pcap")
+  def pdf: typings.fileType.fileTypeStrings.pdf = "pdf".asInstanceOf[typings.fileType.fileTypeStrings.pdf]
   @scala.inline
-  def pdf: typings.fileType.fileTypeStrings.pdf = this.cast("pdf")
+  def png: typings.fileType.fileTypeStrings.png = "png".asInstanceOf[typings.fileType.fileTypeStrings.png]
   @scala.inline
-  def png: typings.fileType.fileTypeStrings.png = this.cast("png")
+  def pptx: typings.fileType.fileTypeStrings.pptx = "pptx".asInstanceOf[typings.fileType.fileTypeStrings.pptx]
   @scala.inline
-  def pptx: typings.fileType.fileTypeStrings.pptx = this.cast("pptx")
+  def ps: typings.fileType.fileTypeStrings.ps = "ps".asInstanceOf[typings.fileType.fileTypeStrings.ps]
   @scala.inline
-  def ps: typings.fileType.fileTypeStrings.ps = this.cast("ps")
+  def psd: typings.fileType.fileTypeStrings.psd = "psd".asInstanceOf[typings.fileType.fileTypeStrings.psd]
   @scala.inline
-  def psd: typings.fileType.fileTypeStrings.psd = this.cast("psd")
+  def qcp: typings.fileType.fileTypeStrings.qcp = "qcp".asInstanceOf[typings.fileType.fileTypeStrings.qcp]
   @scala.inline
-  def qcp: typings.fileType.fileTypeStrings.qcp = this.cast("qcp")
+  def raf: typings.fileType.fileTypeStrings.raf = "raf".asInstanceOf[typings.fileType.fileTypeStrings.raf]
   @scala.inline
-  def raf: typings.fileType.fileTypeStrings.raf = this.cast("raf")
+  def rar: typings.fileType.fileTypeStrings.rar = "rar".asInstanceOf[typings.fileType.fileTypeStrings.rar]
   @scala.inline
-  def rar: typings.fileType.fileTypeStrings.rar = this.cast("rar")
+  def rpm: typings.fileType.fileTypeStrings.rpm = "rpm".asInstanceOf[typings.fileType.fileTypeStrings.rpm]
   @scala.inline
-  def rpm: typings.fileType.fileTypeStrings.rpm = this.cast("rpm")
+  def rtf: typings.fileType.fileTypeStrings.rtf = "rtf".asInstanceOf[typings.fileType.fileTypeStrings.rtf]
   @scala.inline
-  def rtf: typings.fileType.fileTypeStrings.rtf = this.cast("rtf")
+  def rw2: typings.fileType.fileTypeStrings.rw2 = "rw2".asInstanceOf[typings.fileType.fileTypeStrings.rw2]
   @scala.inline
-  def rw2: typings.fileType.fileTypeStrings.rw2 = this.cast("rw2")
+  def s3m: typings.fileType.fileTypeStrings.s3m = "s3m".asInstanceOf[typings.fileType.fileTypeStrings.s3m]
   @scala.inline
-  def s3m: typings.fileType.fileTypeStrings.s3m = this.cast("s3m")
+  def shp: typings.fileType.fileTypeStrings.shp = "shp".asInstanceOf[typings.fileType.fileTypeStrings.shp]
   @scala.inline
-  def shp: typings.fileType.fileTypeStrings.shp = this.cast("shp")
+  def spx: typings.fileType.fileTypeStrings.spx = "spx".asInstanceOf[typings.fileType.fileTypeStrings.spx]
   @scala.inline
-  def spx: typings.fileType.fileTypeStrings.spx = this.cast("spx")
+  def sqlite: typings.fileType.fileTypeStrings.sqlite = "sqlite".asInstanceOf[typings.fileType.fileTypeStrings.sqlite]
   @scala.inline
-  def sqlite: typings.fileType.fileTypeStrings.sqlite = this.cast("sqlite")
+  def swf: typings.fileType.fileTypeStrings.swf = "swf".asInstanceOf[typings.fileType.fileTypeStrings.swf]
   @scala.inline
-  def swf: typings.fileType.fileTypeStrings.swf = this.cast("swf")
+  def tar: typings.fileType.fileTypeStrings.tar = "tar".asInstanceOf[typings.fileType.fileTypeStrings.tar]
   @scala.inline
-  def tar: typings.fileType.fileTypeStrings.tar = this.cast("tar")
+  def tif: typings.fileType.fileTypeStrings.tif = "tif".asInstanceOf[typings.fileType.fileTypeStrings.tif]
   @scala.inline
-  def tif: typings.fileType.fileTypeStrings.tif = this.cast("tif")
+  def ttf: typings.fileType.fileTypeStrings.ttf = "ttf".asInstanceOf[typings.fileType.fileTypeStrings.ttf]
   @scala.inline
-  def ttf: typings.fileType.fileTypeStrings.ttf = this.cast("ttf")
+  def voc: typings.fileType.fileTypeStrings.voc = "voc".asInstanceOf[typings.fileType.fileTypeStrings.voc]
   @scala.inline
-  def voc: typings.fileType.fileTypeStrings.voc = this.cast("voc")
+  def wasm: typings.fileType.fileTypeStrings.wasm = "wasm".asInstanceOf[typings.fileType.fileTypeStrings.wasm]
   @scala.inline
-  def wasm: typings.fileType.fileTypeStrings.wasm = this.cast("wasm")
+  def wav: typings.fileType.fileTypeStrings.wav = "wav".asInstanceOf[typings.fileType.fileTypeStrings.wav]
   @scala.inline
-  def wav: typings.fileType.fileTypeStrings.wav = this.cast("wav")
+  def webm: typings.fileType.fileTypeStrings.webm = "webm".asInstanceOf[typings.fileType.fileTypeStrings.webm]
   @scala.inline
-  def webm: typings.fileType.fileTypeStrings.webm = this.cast("webm")
+  def webp: typings.fileType.fileTypeStrings.webp = "webp".asInstanceOf[typings.fileType.fileTypeStrings.webp]
   @scala.inline
-  def webp: typings.fileType.fileTypeStrings.webp = this.cast("webp")
+  def wma: typings.fileType.fileTypeStrings.wma = "wma".asInstanceOf[typings.fileType.fileTypeStrings.wma]
   @scala.inline
-  def wma: typings.fileType.fileTypeStrings.wma = this.cast("wma")
+  def wmv: typings.fileType.fileTypeStrings.wmv = "wmv".asInstanceOf[typings.fileType.fileTypeStrings.wmv]
   @scala.inline
-  def wmv: typings.fileType.fileTypeStrings.wmv = this.cast("wmv")
+  def woff: typings.fileType.fileTypeStrings.woff = "woff".asInstanceOf[typings.fileType.fileTypeStrings.woff]
   @scala.inline
-  def woff: typings.fileType.fileTypeStrings.woff = this.cast("woff")
+  def woff2: typings.fileType.fileTypeStrings.woff2 = "woff2".asInstanceOf[typings.fileType.fileTypeStrings.woff2]
   @scala.inline
-  def woff2: typings.fileType.fileTypeStrings.woff2 = this.cast("woff2")
+  def wv: typings.fileType.fileTypeStrings.wv = "wv".asInstanceOf[typings.fileType.fileTypeStrings.wv]
   @scala.inline
-  def wv: typings.fileType.fileTypeStrings.wv = this.cast("wv")
+  def xlsx: typings.fileType.fileTypeStrings.xlsx = "xlsx".asInstanceOf[typings.fileType.fileTypeStrings.xlsx]
   @scala.inline
-  def xlsx: typings.fileType.fileTypeStrings.xlsx = this.cast("xlsx")
+  def xm: typings.fileType.fileTypeStrings.xm = "xm".asInstanceOf[typings.fileType.fileTypeStrings.xm]
   @scala.inline
-  def xm: typings.fileType.fileTypeStrings.xm = this.cast("xm")
+  def xml: typings.fileType.fileTypeStrings.xml = "xml".asInstanceOf[typings.fileType.fileTypeStrings.xml]
   @scala.inline
-  def xml: typings.fileType.fileTypeStrings.xml = this.cast("xml")
+  def xpi: typings.fileType.fileTypeStrings.xpi = "xpi".asInstanceOf[typings.fileType.fileTypeStrings.xpi]
   @scala.inline
-  def xpi: typings.fileType.fileTypeStrings.xpi = this.cast("xpi")
+  def xz: typings.fileType.fileTypeStrings.xz = "xz".asInstanceOf[typings.fileType.fileTypeStrings.xz]
   @scala.inline
-  def xz: typings.fileType.fileTypeStrings.xz = this.cast("xz")
-  @scala.inline
-  def zip: typings.fileType.fileTypeStrings.zip = this.cast("zip")
+  def zip: typings.fileType.fileTypeStrings.zip = "zip".asInstanceOf[typings.fileType.fileTypeStrings.zip]
 }
 

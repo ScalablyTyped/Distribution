@@ -14,14 +14,12 @@ trait BlockBehavior extends js.Object
 
 object BlockBehavior {
   @scala.inline
-  def begin: typings.overlayscrollbars.overlayscrollbarsStrings.begin = this.cast("begin")
+  def begin: typings.overlayscrollbars.overlayscrollbarsStrings.begin = "begin".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.begin]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.overlayscrollbars.overlayscrollbarsStrings.center = "center".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.center]
   @scala.inline
-  def center: typings.overlayscrollbars.overlayscrollbarsStrings.center = this.cast("center")
+  def end: typings.overlayscrollbars.overlayscrollbarsStrings.end = "end".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.end]
   @scala.inline
-  def end: typings.overlayscrollbars.overlayscrollbarsStrings.end = this.cast("end")
-  @scala.inline
-  def nearest: typings.overlayscrollbars.overlayscrollbarsStrings.nearest = this.cast("nearest")
+  def nearest: typings.overlayscrollbars.overlayscrollbarsStrings.nearest = "nearest".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.nearest]
 }
 

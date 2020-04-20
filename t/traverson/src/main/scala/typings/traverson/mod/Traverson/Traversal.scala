@@ -12,7 +12,6 @@ object Traversal {
   @scala.inline
   def apply(continue: () => Builder): Traversal = {
     val __obj = js.Dynamic.literal(continue = js.Any.fromFunction0(continue))
-  
     __obj.asInstanceOf[Traversal]
   }
 }

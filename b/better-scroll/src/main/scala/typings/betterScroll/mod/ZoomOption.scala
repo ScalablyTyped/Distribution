@@ -14,7 +14,6 @@ object ZoomOption {
   @scala.inline
   def apply(max: Double, min: Double, start: Double): ZoomOption = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ZoomOption]
   }
 }

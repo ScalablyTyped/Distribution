@@ -16,7 +16,6 @@ object BluetoothDeviceInfo {
   @scala.inline
   def apply(deviceId: String, name: String): BluetoothDeviceInfo = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BluetoothDeviceInfo]
   }
 }

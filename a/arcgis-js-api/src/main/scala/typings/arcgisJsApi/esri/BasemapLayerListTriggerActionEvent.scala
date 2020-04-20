@@ -13,7 +13,6 @@ object BasemapLayerListTriggerActionEvent {
   @scala.inline
   def apply(action: ActionButton | ActionToggle, item: ListItem): BasemapLayerListTriggerActionEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasemapLayerListTriggerActionEvent]
   }
 }

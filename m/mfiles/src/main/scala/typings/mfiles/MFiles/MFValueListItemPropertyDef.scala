@@ -24,20 +24,18 @@ trait MFValueListItemPropertyDef extends js.Object
 
 object MFValueListItemPropertyDef {
   @scala.inline
-  def Deleted: `5` = this.cast(5)
+  def Deleted: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ExtID: `7` = this.cast(7)
+  def ExtID: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ID: `1` = this.cast(1)
+  def ID: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Name: `2` = this.cast(2)
+  def Name: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ObjectType: `6` = this.cast(6)
+  def ObjectType: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def Owner: `3` = this.cast(3)
+  def Owner: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Parent: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Parent: `4` = 4.asInstanceOf[`4`]
 }
 

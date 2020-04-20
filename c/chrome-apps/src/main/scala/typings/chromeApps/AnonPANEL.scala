@@ -15,7 +15,6 @@ object AnonPANEL {
   @scala.inline
   def apply(PANEL: panel, SHELL: shell): AnonPANEL = {
     val __obj = js.Dynamic.literal(PANEL = PANEL.asInstanceOf[js.Any], SHELL = SHELL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPANEL]
   }
 }

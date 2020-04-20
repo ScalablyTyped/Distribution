@@ -18,7 +18,6 @@ object IMeasureWithCenter {
   @scala.inline
   def apply(center: IPoint, high: IPoint, low: IPoint): IMeasureWithCenter = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMeasureWithCenter]
   }
 }

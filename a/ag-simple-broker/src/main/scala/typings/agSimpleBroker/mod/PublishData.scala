@@ -13,7 +13,6 @@ object PublishData {
   @scala.inline
   def apply(channel: String, date: js.Any): PublishData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PublishData]
   }
 }

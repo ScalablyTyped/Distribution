@@ -12,7 +12,6 @@ object TranslateYTransform {
   @scala.inline
   def apply(translateY: Double): TranslateYTransform = {
     val __obj = js.Dynamic.literal(translateY = translateY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TranslateYTransform]
   }
 }

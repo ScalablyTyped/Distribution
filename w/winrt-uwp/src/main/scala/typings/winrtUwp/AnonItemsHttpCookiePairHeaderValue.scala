@@ -14,7 +14,6 @@ object AnonItemsHttpCookiePairHeaderValue {
   @scala.inline
   def apply(items: HttpCookiePairHeaderValue, returnValue: Double): AnonItemsHttpCookiePairHeaderValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsHttpCookiePairHeaderValue]
   }
 }

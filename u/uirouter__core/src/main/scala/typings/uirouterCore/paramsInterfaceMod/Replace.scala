@@ -25,7 +25,6 @@ object Replace {
   @scala.inline
   def apply(from: String, to: String): Replace = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Replace]
   }
 }

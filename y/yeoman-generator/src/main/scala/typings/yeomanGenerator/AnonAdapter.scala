@@ -14,7 +14,6 @@ object AnonAdapter {
   @scala.inline
   def apply(adapter: AnonPromptModule, error: /* repeated */ Error => Unit): AnonAdapter = {
     val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], error = js.Any.fromFunction1(error))
-  
     __obj.asInstanceOf[AnonAdapter]
   }
 }

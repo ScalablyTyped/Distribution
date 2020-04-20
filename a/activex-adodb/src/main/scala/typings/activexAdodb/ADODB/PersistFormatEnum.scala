@@ -14,10 +14,8 @@ trait PersistFormatEnum extends js.Object
 
 object PersistFormatEnum {
   @scala.inline
-  def adPersistADTG: `0` = this.cast(0)
+  def adPersistADTG: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adPersistXML: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adPersistXML: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -20,7 +20,6 @@ object AnonText {
     ]
   ): AnonText[TParams] = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonText[TParams]]
   }
 }

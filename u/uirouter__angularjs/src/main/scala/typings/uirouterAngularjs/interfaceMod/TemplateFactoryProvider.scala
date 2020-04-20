@@ -33,7 +33,6 @@ object TemplateFactoryProvider {
   @scala.inline
   def apply(useHttpService: Boolean => js.Any): TemplateFactoryProvider = {
     val __obj = js.Dynamic.literal(useHttpService = js.Any.fromFunction1(useHttpService))
-  
     __obj.asInstanceOf[TemplateFactoryProvider]
   }
 }

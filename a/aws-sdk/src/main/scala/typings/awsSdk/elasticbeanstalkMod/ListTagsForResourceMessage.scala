@@ -16,7 +16,6 @@ object ListTagsForResourceMessage {
   @scala.inline
   def apply(ResourceArn: ResourceArn): ListTagsForResourceMessage = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTagsForResourceMessage]
   }
 }

@@ -13,7 +13,6 @@ object Resolve {
   @scala.inline
   def apply[T](resolve: (ActivatedRouteSnapshot, RouterStateSnapshot) => Observable_[T] | js.Promise[T] | T): Resolve[T] = {
     val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction2(resolve))
-  
     __obj.asInstanceOf[Resolve[T]]
   }
 }

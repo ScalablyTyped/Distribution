@@ -13,7 +13,6 @@ object AnonEncrypted {
   @scala.inline
   def apply(encrypted: String, time: String): AnonEncrypted = {
     val __obj = js.Dynamic.literal(encrypted = encrypted.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEncrypted]
   }
 }

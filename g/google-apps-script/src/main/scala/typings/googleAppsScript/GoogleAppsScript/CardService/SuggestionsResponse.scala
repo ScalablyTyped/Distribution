@@ -22,7 +22,6 @@ object SuggestionsResponse {
   @scala.inline
   def apply(printJson: () => String): SuggestionsResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
-  
     __obj.asInstanceOf[SuggestionsResponse]
   }
 }

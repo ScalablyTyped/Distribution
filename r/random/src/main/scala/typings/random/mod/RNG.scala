@@ -20,7 +20,6 @@ object RNG {
     seed: (Double, js.Object) => Unit
   ): RNG = {
     val __obj = js.Dynamic.literal(clone = js.Any.fromFunction2(clone), name = name.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), seed = js.Any.fromFunction2(seed))
-  
     __obj.asInstanceOf[RNG]
   }
 }

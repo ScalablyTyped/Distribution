@@ -12,7 +12,6 @@ object AnonRejectOnFailedDelivery {
   @scala.inline
   def apply(rejectOnFailedDelivery: Boolean): AnonRejectOnFailedDelivery = {
     val __obj = js.Dynamic.literal(rejectOnFailedDelivery = rejectOnFailedDelivery.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRejectOnFailedDelivery]
   }
 }

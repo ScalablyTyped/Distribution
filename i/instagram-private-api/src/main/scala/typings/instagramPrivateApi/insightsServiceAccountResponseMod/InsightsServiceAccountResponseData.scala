@@ -12,7 +12,6 @@ object InsightsServiceAccountResponseData {
   @scala.inline
   def apply(user: InsightsServiceAccountResponseUser): InsightsServiceAccountResponseData = {
     val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponseData]
   }
 }

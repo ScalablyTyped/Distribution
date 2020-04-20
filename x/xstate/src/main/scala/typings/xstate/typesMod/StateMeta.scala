@@ -14,7 +14,6 @@ object StateMeta {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](_event: typings.xstate.typesMod.SCXML.Event[TEvent], state: State[TContext, TEvent, _, _]): StateMeta[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StateMeta[TContext, TEvent]]
   }
 }

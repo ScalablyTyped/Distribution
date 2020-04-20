@@ -31,7 +31,6 @@ object HttpProgress {
     totalBytesToSend: Double
   ): HttpProgress = {
     val __obj = js.Dynamic.literal(bytesReceived = bytesReceived.asInstanceOf[js.Any], bytesSent = bytesSent.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], totalBytesToReceive = totalBytesToReceive.asInstanceOf[js.Any], totalBytesToSend = totalBytesToSend.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HttpProgress]
   }
 }

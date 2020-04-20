@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashXorWith extends js.Object {
-  def apply[T](comparator: Comparator[T]): LodashXorWith1x1[T] = js.native
+  def apply[T](comparator: Comparator[T]): js.Array[T] = js.native
   def apply[T](comparator: Comparator[T], arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def apply[T](comparator: Comparator[T], arrays: Null, arrays2: List[T]): js.Array[T] = js.native
   def apply[T](comparator: Comparator[T], arrays: List[T]): js.Array[T] = js.native

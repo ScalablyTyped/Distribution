@@ -24,7 +24,6 @@ object PaymentsError {
   @scala.inline
   def apply(statusCode: PaymentsErrorStatusCode | String, statusMessage: String): PaymentsError = {
     val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PaymentsError]
   }
 }

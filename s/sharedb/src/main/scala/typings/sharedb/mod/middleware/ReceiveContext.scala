@@ -31,7 +31,6 @@ object ReceiveContext {
     data: StringDictionary[js.Any]
   ): ReceiveContext = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReceiveContext]
   }
 }

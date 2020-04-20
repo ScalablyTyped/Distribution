@@ -20,7 +20,6 @@ object SessionCookieOptions {
   @scala.inline
   def apply(expiresIn: Double): SessionCookieOptions = {
     val __obj = js.Dynamic.literal(expiresIn = expiresIn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionCookieOptions]
   }
 }

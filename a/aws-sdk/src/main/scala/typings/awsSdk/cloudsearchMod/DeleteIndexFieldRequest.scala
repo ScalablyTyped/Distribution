@@ -17,7 +17,6 @@ object DeleteIndexFieldRequest {
   @scala.inline
   def apply(DomainName: DomainName, IndexFieldName: DynamicFieldName): DeleteIndexFieldRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], IndexFieldName = IndexFieldName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIndexFieldRequest]
   }
 }

@@ -20,7 +20,6 @@ object ReadonlyIForwardIteratorb {
     value: Boolean
   ): ReadonlyIForwardIteratorb = {
     val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), next = js.Any.fromFunction0(next), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyIForwardIteratorb]
   }
 }

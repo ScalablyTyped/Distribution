@@ -13,7 +13,6 @@ object ALBEventRequestContext {
   @scala.inline
   def apply(elb: AnonTargetGroupArn): ALBEventRequestContext = {
     val __obj = js.Dynamic.literal(elb = elb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ALBEventRequestContext]
   }
 }

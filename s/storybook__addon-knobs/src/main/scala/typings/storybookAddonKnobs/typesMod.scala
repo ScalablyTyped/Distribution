@@ -20,6 +20,22 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/addon-knobs/dist/components/types", JSImport.Namespace)
 @js.native
 object typesMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.text
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.number
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.color
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.boolean
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.`object`
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.select
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.radios
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.array
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.date
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.button
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.files
+    - typings.storybookAddonKnobs.storybookAddonKnobsStrings.options
+  */
+  trait KnobType extends js.Object
+  
   def getKnobControl(
     `type`: number | boolean | `object` | color | button | select | text | date | options | radios | array | files
   ): KnobControlType = js.native
@@ -40,6 +56,5 @@ object typesMod extends js.Object {
   }
   
   type KnobControlType = ComponentType[_] with AnonDeserialize
-  type KnobType = String
 }
 

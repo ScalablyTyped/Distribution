@@ -13,7 +13,6 @@ object KnockoutUtils {
   @scala.inline
   def apply(uniqueId: String => String, unwrapProperties: js.Any => js.Any): KnockoutUtils = {
     val __obj = js.Dynamic.literal(uniqueId = js.Any.fromFunction1(uniqueId), unwrapProperties = js.Any.fromFunction1(unwrapProperties))
-  
     __obj.asInstanceOf[KnockoutUtils]
   }
 }

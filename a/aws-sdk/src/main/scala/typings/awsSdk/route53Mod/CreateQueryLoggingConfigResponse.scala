@@ -20,7 +20,6 @@ object CreateQueryLoggingConfigResponse {
   @scala.inline
   def apply(Location: ResourceURI, QueryLoggingConfig: QueryLoggingConfig): CreateQueryLoggingConfigResponse = {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], QueryLoggingConfig = QueryLoggingConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateQueryLoggingConfigResponse]
   }
 }

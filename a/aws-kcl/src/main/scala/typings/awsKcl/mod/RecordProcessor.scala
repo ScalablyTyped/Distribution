@@ -66,7 +66,6 @@ object RecordProcessor {
     shardEnded: (ShardEndedInput, Callback) => Unit
   ): RecordProcessor = {
     val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction2(initialize), leaseLost = js.Any.fromFunction2(leaseLost), processRecords = js.Any.fromFunction2(processRecords), shardEnded = js.Any.fromFunction2(shardEnded))
-  
     __obj.asInstanceOf[RecordProcessor]
   }
 }

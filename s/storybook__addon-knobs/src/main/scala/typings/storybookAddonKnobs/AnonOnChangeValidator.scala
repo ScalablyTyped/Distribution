@@ -15,7 +15,6 @@ object AnonOnChangeValidator {
   @scala.inline
   def apply(knob: Validator[KnobControlConfig[_]], onChange: Validator[js.Function1[/* value */ _, _]]): AnonOnChangeValidator = {
     val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnChangeValidator]
   }
 }

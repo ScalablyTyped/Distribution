@@ -35,16 +35,14 @@ trait DisplayItemType extends js.Object
 
 object DisplayItemType {
   @scala.inline
-  def DISCOUNT: typings.googlepay.googlepayStrings.DISCOUNT = this.cast("DISCOUNT")
+  def DISCOUNT: typings.googlepay.googlepayStrings.DISCOUNT = "DISCOUNT".asInstanceOf[typings.googlepay.googlepayStrings.DISCOUNT]
   @scala.inline
-  def LINE_ITEM: typings.googlepay.googlepayStrings.LINE_ITEM = this.cast("LINE_ITEM")
+  def LINE_ITEM: typings.googlepay.googlepayStrings.LINE_ITEM = "LINE_ITEM".asInstanceOf[typings.googlepay.googlepayStrings.LINE_ITEM]
   @scala.inline
-  def SHIPPING_OPTION: typings.googlepay.googlepayStrings.SHIPPING_OPTION = this.cast("SHIPPING_OPTION")
+  def SHIPPING_OPTION: typings.googlepay.googlepayStrings.SHIPPING_OPTION = "SHIPPING_OPTION".asInstanceOf[typings.googlepay.googlepayStrings.SHIPPING_OPTION]
   @scala.inline
-  def SUBTOTAL: typings.googlepay.googlepayStrings.SUBTOTAL = this.cast("SUBTOTAL")
+  def SUBTOTAL: typings.googlepay.googlepayStrings.SUBTOTAL = "SUBTOTAL".asInstanceOf[typings.googlepay.googlepayStrings.SUBTOTAL]
   @scala.inline
-  def TAX: typings.googlepay.googlepayStrings.TAX = this.cast("TAX")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TAX: typings.googlepay.googlepayStrings.TAX = "TAX".asInstanceOf[typings.googlepay.googlepayStrings.TAX]
 }
 

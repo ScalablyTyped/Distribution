@@ -28,7 +28,6 @@ object AnonIcon {
     wrapper: RegisteredStyle[ViewStyle]
   ): AnonIcon = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], radioItem = radioItem.asInstanceOf[js.Any], radioItemContent = radioItemContent.asInstanceOf[js.Any], radioItemContentDisable = radioItemContentDisable.asInstanceOf[js.Any], radioItemRadio = radioItemRadio.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIcon]
   }
 }

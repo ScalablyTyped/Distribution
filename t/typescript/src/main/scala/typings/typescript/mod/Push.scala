@@ -13,7 +13,6 @@ object Push {
   @scala.inline
   def apply[T](push: /* repeated */ T => Unit): Push[T] = {
     val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
-  
     __obj.asInstanceOf[Push[T]]
   }
 }

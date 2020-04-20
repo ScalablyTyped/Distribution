@@ -8,7 +8,7 @@ trait Index[T /* <: js.Object */] extends js.Object {
   var code: Double
   var deduplicate: Boolean
   var expireAfter: js.UndefOr[Double] = js.undefined
-  var fields: js.Array[String]
+  var fields: js.Array[/* keyof T */ String]
   var id: String
   var isNewlyCreated: Boolean
   var name: String
@@ -23,7 +23,7 @@ object Index {
   def apply[T /* <: js.Object */](
     code: Double,
     deduplicate: Boolean,
-    fields: js.Array[String],
+    fields: js.Array[/* keyof T */ String],
     id: String,
     isNewlyCreated: Boolean,
     name: String,

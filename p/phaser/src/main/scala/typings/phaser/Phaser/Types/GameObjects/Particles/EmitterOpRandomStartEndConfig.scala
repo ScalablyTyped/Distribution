@@ -26,7 +26,6 @@ object EmitterOpRandomStartEndConfig {
   @scala.inline
   def apply(end: Double, random: Boolean, start: Double): EmitterOpRandomStartEndConfig = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], random = random.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EmitterOpRandomStartEndConfig]
   }
 }

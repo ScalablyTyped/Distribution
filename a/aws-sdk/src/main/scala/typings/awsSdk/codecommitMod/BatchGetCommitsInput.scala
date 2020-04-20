@@ -20,7 +20,6 @@ object BatchGetCommitsInput {
   @scala.inline
   def apply(commitIds: CommitIdsInputList, repositoryName: RepositoryName): BatchGetCommitsInput = {
     val __obj = js.Dynamic.literal(commitIds = commitIds.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetCommitsInput]
   }
 }

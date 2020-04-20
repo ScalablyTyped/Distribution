@@ -27,7 +27,6 @@ object WorkItemNextStateOnTransition {
   @scala.inline
   def apply(errorCode: String, id: Double, message: String, stateOnTransition: String): WorkItemNextStateOnTransition = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], stateOnTransition = stateOnTransition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemNextStateOnTransition]
   }
 }

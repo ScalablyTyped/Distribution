@@ -36,7 +36,6 @@ object GridSerializingSession {
     prepare: js.Array[Column] => Unit
   ): GridSerializingSession[T] = {
     val __obj = js.Dynamic.literal(addCustomFooter = js.Any.fromFunction1(addCustomFooter), addCustomHeader = js.Any.fromFunction1(addCustomHeader), onNewBodyRow = js.Any.fromFunction0(onNewBodyRow), onNewHeaderGroupingRow = js.Any.fromFunction0(onNewHeaderGroupingRow), onNewHeaderRow = js.Any.fromFunction0(onNewHeaderRow), parse = js.Any.fromFunction0(parse), prepare = js.Any.fromFunction1(prepare))
-  
     __obj.asInstanceOf[GridSerializingSession[T]]
   }
 }

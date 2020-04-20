@@ -13,12 +13,10 @@ trait LIFECYCLEValues extends js.Object
 
 object LIFECYCLEValues {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def failure: typings.reduxPack.reduxPackStrings.failure = "failure".asInstanceOf[typings.reduxPack.reduxPackStrings.failure]
   @scala.inline
-  def failure: typings.reduxPack.reduxPackStrings.failure = this.cast("failure")
+  def start: typings.reduxPack.reduxPackStrings.start = "start".asInstanceOf[typings.reduxPack.reduxPackStrings.start]
   @scala.inline
-  def start: typings.reduxPack.reduxPackStrings.start = this.cast("start")
-  @scala.inline
-  def succes: typings.reduxPack.reduxPackStrings.succes = this.cast("succes")
+  def succes: typings.reduxPack.reduxPackStrings.succes = "succes".asInstanceOf[typings.reduxPack.reduxPackStrings.succes]
 }
 

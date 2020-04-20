@@ -16,7 +16,6 @@ object ProcessType {
   @scala.inline
   def apply(ProcessName: XmlStringMaxLen255): ProcessType = {
     val __obj = js.Dynamic.literal(ProcessName = ProcessName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessType]
   }
 }

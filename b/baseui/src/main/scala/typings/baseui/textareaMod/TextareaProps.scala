@@ -27,6 +27,7 @@ object TextareaProps {
   def apply(
     adjoined: none | left | right | both = null,
     `aria-describedby`: String = null,
+    `aria-errormessage`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
     autoComplete: String = null,
@@ -48,6 +49,7 @@ object TextareaProps {
     onKeyPress: KeyboardEvent[HTMLTextAreaElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLTextAreaElement] => Unit = null,
     overrides: BaseInputOverrides[SharedProps] = null,
+    pattern: String = null,
     placeholder: String = null,
     positive: js.UndefOr[Boolean] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,
@@ -59,6 +61,7 @@ object TextareaProps {
     val __obj = js.Dynamic.literal()
     if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
+    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
@@ -80,6 +83,7 @@ object TextareaProps {
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])

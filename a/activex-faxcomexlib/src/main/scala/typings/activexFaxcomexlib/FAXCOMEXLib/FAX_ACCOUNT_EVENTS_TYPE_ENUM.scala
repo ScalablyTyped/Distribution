@@ -23,18 +23,16 @@ trait FAX_ACCOUNT_EVENTS_TYPE_ENUM extends js.Object
 
 object FAX_ACCOUNT_EVENTS_TYPE_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def faetFXSSVC_ENDED: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def faetFXSSVC_ENDED: `16` = this.cast(16)
+  def faetIN_ARCHIVE: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def faetIN_ARCHIVE: `4` = this.cast(4)
+  def faetIN_QUEUE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def faetIN_QUEUE: `1` = this.cast(1)
+  def faetNONE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def faetNONE: `0` = this.cast(0)
+  def faetOUT_ARCHIVE: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def faetOUT_ARCHIVE: `8` = this.cast(8)
-  @scala.inline
-  def faetOUT_QUEUE: `2` = this.cast(2)
+  def faetOUT_QUEUE: `2` = 2.asInstanceOf[`2`]
 }
 

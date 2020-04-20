@@ -14,7 +14,6 @@ object AnonPublicKey {
   @scala.inline
   def apply(publicKey: BinaryBuffer, signature: BinaryBuffer): AnonPublicKey = {
     val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPublicKey]
   }
 }

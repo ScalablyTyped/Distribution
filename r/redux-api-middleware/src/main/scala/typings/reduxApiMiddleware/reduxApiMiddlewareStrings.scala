@@ -57,7 +57,7 @@ object reduxApiMiddlewareStrings {
   @scala.inline
   def InternalError: InternalError = "InternalError".asInstanceOf[InternalError]
   @scala.inline
-  def `Invalid RSAA`: `Invalid RSAA` = "Invalid RSAA".asInstanceOf[`Invalid RSAA`]
+  def `Invalid RSAA`: `Invalid RSAA` = ("Invalid RSAA").asInstanceOf[`Invalid RSAA`]
   @scala.inline
   def InvalidRSAA: InvalidRSAA = "InvalidRSAA".asInstanceOf[InvalidRSAA]
   @scala.inline

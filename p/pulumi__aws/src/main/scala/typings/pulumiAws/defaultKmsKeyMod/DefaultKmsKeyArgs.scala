@@ -17,7 +17,6 @@ object DefaultKmsKeyArgs {
   @scala.inline
   def apply(keyArn: Input[String]): DefaultKmsKeyArgs = {
     val __obj = js.Dynamic.literal(keyArn = keyArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultKmsKeyArgs]
   }
 }

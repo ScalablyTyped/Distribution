@@ -19,7 +19,6 @@ object NodeContentContext {
   @scala.inline
   def apply[K, D](bounds: AnonWidthX, componentElement: Element, data: js.Object, id: K, itemData: D): NodeContentContext[K, D] = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeContentContext[K, D]]
   }
 }

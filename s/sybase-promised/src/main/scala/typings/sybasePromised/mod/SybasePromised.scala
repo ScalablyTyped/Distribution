@@ -18,7 +18,6 @@ object SybasePromised {
     query: String => js.Promise[js.Array[_]]
   ): SybasePromised = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), disconnect = js.Any.fromFunction0(disconnect), query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[SybasePromised]
   }
 }

@@ -46,7 +46,7 @@ trait AutoCompleteProps extends js.Object {
   var placeholder: js.UndefOr[String] = js.undefined
   var readonly: js.UndefOr[Boolean] = js.undefined
   var scrollHeight: js.UndefOr[String] = js.undefined
-  var selectedItemTemplate: js.UndefOr[js.Function1[/* data */ js.Any, js.UndefOr[Element]]] = js.undefined
+  var selectedItemTemplate: js.UndefOr[js.Function1[/* data */ js.Any, String]] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var suggestions: js.UndefOr[js.Array[_]] = js.undefined
@@ -95,7 +95,7 @@ object AutoCompleteProps {
     placeholder: String = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
     scrollHeight: String = null,
-    selectedItemTemplate: /* data */ js.Any => js.UndefOr[Element] = null,
+    selectedItemTemplate: /* data */ js.Any => String = null,
     size: Int | Double = null,
     style: js.Object = null,
     suggestions: js.Array[_] = null,

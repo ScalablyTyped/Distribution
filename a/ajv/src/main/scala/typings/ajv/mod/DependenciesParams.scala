@@ -15,7 +15,6 @@ object DependenciesParams {
   @scala.inline
   def apply(deps: String, depsCount: Double, missingProperty: String, property: String): DependenciesParams = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], depsCount = depsCount.asInstanceOf[js.Any], missingProperty = missingProperty.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DependenciesParams]
   }
 }

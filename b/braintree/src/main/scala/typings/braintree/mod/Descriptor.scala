@@ -14,7 +14,6 @@ object Descriptor {
   @scala.inline
   def apply(name: String, phone: String, url: String): Descriptor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Descriptor]
   }
 }

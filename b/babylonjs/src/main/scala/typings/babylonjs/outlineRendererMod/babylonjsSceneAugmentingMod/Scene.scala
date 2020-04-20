@@ -19,7 +19,6 @@ object Scene {
   @scala.inline
   def apply(_outlineRenderer: OutlineRenderer, getOutlineRenderer: () => OutlineRenderer): Scene = {
     val __obj = js.Dynamic.literal(_outlineRenderer = _outlineRenderer.asInstanceOf[js.Any], getOutlineRenderer = js.Any.fromFunction0(getOutlineRenderer))
-  
     __obj.asInstanceOf[Scene]
   }
 }

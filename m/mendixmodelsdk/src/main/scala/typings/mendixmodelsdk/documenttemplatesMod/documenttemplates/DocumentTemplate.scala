@@ -34,37 +34,37 @@ class DocumentTemplate protected () extends Document {
   ) = this()
   @JSName("model")
   var model_FDocumentTemplate: IModel = js.native
-  def canvasWidth(): Double = js.native
+  def canvasWidth: Double = js.native
   def canvasWidth(newValue: Double): js.Any = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MDocumentTemplate(): FolderBase = js.native
+  def containerAsFolderBase_MDocumentTemplate: FolderBase = js.native
   def footer(): js.Any = js.native
   def footer(newValue: Footer): js.Any = js.native
   @JSName("footer")
-  def footer_Union(): Footer | Null = js.native
+  def footer_Union: Footer | Null = js.native
   def header(): js.Any = js.native
   def header(newValue: Header): js.Any = js.native
   @JSName("header")
-  def header_Union(): Header | Null = js.native
-  def marginBottomInInch(): Double = js.native
+  def header_Union: Header | Null = js.native
+  def marginBottomInInch: Double = js.native
   def marginBottomInInch(newValue: Double): js.Any = js.native
-  def marginLeftInInch(): Double = js.native
+  def marginLeftInInch: Double = js.native
   def marginLeftInInch(newValue: Double): js.Any = js.native
-  def marginRightInInch(): Double = js.native
+  def marginRightInInch: Double = js.native
   def marginRightInInch(newValue: Double): js.Any = js.native
-  def marginTopInInch(): Double = js.native
+  def marginTopInInch: Double = js.native
   def marginTopInInch(newValue: Double): js.Any = js.native
-  def pageHeight(): String = js.native
+  def pageHeight: String = js.native
   def pageHeight(newValue: String): js.Any = js.native
-  def pageWidth(): String = js.native
+  def pageWidth: String = js.native
   def pageWidth(newValue: String): js.Any = js.native
-  def ppi(): Double = js.native
+  def ppi: Double = js.native
   def ppi(newValue: Double): js.Any = js.native
-  def showHeaderAndFooterOnFirstPage(): Boolean = js.native
+  def showHeaderAndFooterOnFirstPage: Boolean = js.native
   def showHeaderAndFooterOnFirstPage(newValue: Boolean): js.Any = js.native
-  def style(): Style = js.native
+  def style: Style = js.native
   def style(newValue: Style): js.Any = js.native
-  def toplevels(): IList[Widget] = js.native
+  def toplevels: IList[Widget] = js.native
 }
 
 /* static members */

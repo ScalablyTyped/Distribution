@@ -14,7 +14,6 @@ object AnonMaxNodeName {
   @scala.inline
   def apply(maxNodeName: String, minNodeName: String, valueNodeName: String): AnonMaxNodeName = {
     val __obj = js.Dynamic.literal(maxNodeName = maxNodeName.asInstanceOf[js.Any], minNodeName = minNodeName.asInstanceOf[js.Any], valueNodeName = valueNodeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaxNodeName]
   }
 }

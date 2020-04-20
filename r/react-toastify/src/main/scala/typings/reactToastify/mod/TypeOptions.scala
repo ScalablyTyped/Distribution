@@ -15,16 +15,14 @@ trait TypeOptions extends js.Object
 
 object TypeOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.reactToastify.reactToastifyStrings.default = "default".asInstanceOf[typings.reactToastify.reactToastifyStrings.default]
   @scala.inline
-  def default: typings.reactToastify.reactToastifyStrings.default = this.cast("default")
+  def error: typings.reactToastify.reactToastifyStrings.error = "error".asInstanceOf[typings.reactToastify.reactToastifyStrings.error]
   @scala.inline
-  def error: typings.reactToastify.reactToastifyStrings.error = this.cast("error")
+  def info: typings.reactToastify.reactToastifyStrings.info = "info".asInstanceOf[typings.reactToastify.reactToastifyStrings.info]
   @scala.inline
-  def info: typings.reactToastify.reactToastifyStrings.info = this.cast("info")
+  def success: typings.reactToastify.reactToastifyStrings.success = "success".asInstanceOf[typings.reactToastify.reactToastifyStrings.success]
   @scala.inline
-  def success: typings.reactToastify.reactToastifyStrings.success = this.cast("success")
-  @scala.inline
-  def warning: typings.reactToastify.reactToastifyStrings.warning = this.cast("warning")
+  def warning: typings.reactToastify.reactToastifyStrings.warning = "warning".asInstanceOf[typings.reactToastify.reactToastifyStrings.warning]
 }
 

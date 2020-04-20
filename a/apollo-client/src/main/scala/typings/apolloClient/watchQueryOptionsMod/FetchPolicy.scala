@@ -15,16 +15,14 @@ trait FetchPolicy extends js.Object
 
 object FetchPolicy {
   @scala.inline
-  def `cache-first`: typings.apolloClient.apolloClientStrings.`cache-first` = this.cast("cache-first")
+  def `cache-first`: typings.apolloClient.apolloClientStrings.`cache-first` = "cache-first".asInstanceOf[typings.apolloClient.apolloClientStrings.`cache-first`]
   @scala.inline
-  def `cache-only`: typings.apolloClient.apolloClientStrings.`cache-only` = this.cast("cache-only")
+  def `cache-only`: typings.apolloClient.apolloClientStrings.`cache-only` = "cache-only".asInstanceOf[typings.apolloClient.apolloClientStrings.`cache-only`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `network-only`: typings.apolloClient.apolloClientStrings.`network-only` = "network-only".asInstanceOf[typings.apolloClient.apolloClientStrings.`network-only`]
   @scala.inline
-  def `network-only`: typings.apolloClient.apolloClientStrings.`network-only` = this.cast("network-only")
+  def `no-cache`: typings.apolloClient.apolloClientStrings.`no-cache` = "no-cache".asInstanceOf[typings.apolloClient.apolloClientStrings.`no-cache`]
   @scala.inline
-  def `no-cache`: typings.apolloClient.apolloClientStrings.`no-cache` = this.cast("no-cache")
-  @scala.inline
-  def standby: typings.apolloClient.apolloClientStrings.standby = this.cast("standby")
+  def standby: typings.apolloClient.apolloClientStrings.standby = "standby".asInstanceOf[typings.apolloClient.apolloClientStrings.standby]
 }
 

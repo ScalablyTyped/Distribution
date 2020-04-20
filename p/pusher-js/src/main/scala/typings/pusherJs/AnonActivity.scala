@@ -22,7 +22,6 @@ object AnonActivity {
     ping: () => Unit
   ): AnonActivity = {
     val __obj = js.Dynamic.literal(activity = js.Any.fromFunction0(activity), closed = js.Any.fromFunction0(closed), error = js.Any.fromFunction1(error), message = js.Any.fromFunction1(message), ping = js.Any.fromFunction0(ping))
-  
     __obj.asInstanceOf[AnonActivity]
   }
 }

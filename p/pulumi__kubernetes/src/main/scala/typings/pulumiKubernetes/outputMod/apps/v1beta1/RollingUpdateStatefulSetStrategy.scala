@@ -19,7 +19,6 @@ object RollingUpdateStatefulSetStrategy {
   @scala.inline
   def apply(partition: Double): RollingUpdateStatefulSetStrategy = {
     val __obj = js.Dynamic.literal(partition = partition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollingUpdateStatefulSetStrategy]
   }
 }

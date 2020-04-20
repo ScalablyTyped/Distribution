@@ -14,7 +14,6 @@ object AnonComments {
   @scala.inline
   def apply(comments: String, pragmas: Pragmas): AnonComments = {
     val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], pragmas = pragmas.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComments]
   }
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactNativeGoogleSigninComponents extends reactNativeGoogleSigninProps {
   @scala.inline
-  def GoogleSigninButton: ComponentType[GoogleSigninButtonProps] = js.constructorOf[typings.reactNativeGoogleSignin.mod.GoogleSigninButton].asInstanceOf[typings.react.mod.ComponentType[GoogleSigninButtonProps]]
+  def GoogleSigninButton: ComponentType[GoogleSigninButtonProps] = js.constructorOf[typings.reactNativeGoogleSignin.mod.GoogleSigninButton].asInstanceOf[ComponentType[GoogleSigninButtonProps]]
 }
 

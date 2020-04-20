@@ -30,7 +30,6 @@ object IEditActorCellContext {
     record: IRecord
   ): IEditActorCellContext = {
     val __obj = js.Dynamic.literal(SetCurrentValue = js.Any.fromFunction1(SetCurrentValue), cellExpandSpace = cellExpandSpace.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], propType = propType.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEditActorCellContext]
   }
 }

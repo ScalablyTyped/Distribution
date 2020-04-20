@@ -16,7 +16,6 @@ object BusStop {
   @scala.inline
   def apply(id: String, location: LngLat, name: String, sequence: Double): BusStop = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BusStop]
   }
 }

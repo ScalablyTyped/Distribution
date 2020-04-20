@@ -12,7 +12,6 @@ object ViewModelSharedInstance {
   @scala.inline
   def apply(instance: js.Any): ViewModelSharedInstance = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViewModelSharedInstance]
   }
 }

@@ -15,17 +15,28 @@ trait FilterCriteria extends js.Object {
   var hiddenValues: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * The background fill color to filter by; only cells with this fill color are
-    * shown. Mutually exclusive with all other filter criteria. Requests to set
-    * this field will fail with a 400 error if any other filter criteria field is
-    * set.
+    * shown. Mutually exclusive with visible_foreground_color.
     */
   var visibleBackgroundColor: js.UndefOr[Color] = js.undefined
   /**
-    * The text color to filter by; only cells with this text color are shown.
-    * Mutually exclusive with all other filter criteria. Requests to set this
-    * field will fail with a 400 error if any other filter criteria field is set.
+    * The background fill color to filter by; only cells with this fill color are
+    * shown. This field is mutually exclusive with visible_foreground_color,
+    * and must be set to an RGB-type color. If visible_background_color is
+    * also set, this field takes precedence.
+    */
+  var visibleBackgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
+  /**
+    * The foreground color to filter by; only cells with this foreground color
+    * are shown. Mutually exclusive with visible_background_color.
     */
   var visibleForegroundColor: js.UndefOr[Color] = js.undefined
+  /**
+    * The foreground color to filter by; only cells with this foreground color
+    * are shown. This field is mutually exclusive with
+    * visible_background_color, and must be set to an RGB-type color. If
+    * visible_foreground_color is also set, this field takes precedence.
+    */
+  var visibleForegroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
 }
 
 object FilterCriteria {
@@ -34,13 +45,17 @@ object FilterCriteria {
     condition: BooleanCondition = null,
     hiddenValues: js.Array[String] = null,
     visibleBackgroundColor: Color = null,
-    visibleForegroundColor: Color = null
+    visibleBackgroundColorStyle: ColorStyle = null,
+    visibleForegroundColor: Color = null,
+    visibleForegroundColorStyle: ColorStyle = null
   ): FilterCriteria = {
     val __obj = js.Dynamic.literal()
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     if (hiddenValues != null) __obj.updateDynamic("hiddenValues")(hiddenValues.asInstanceOf[js.Any])
     if (visibleBackgroundColor != null) __obj.updateDynamic("visibleBackgroundColor")(visibleBackgroundColor.asInstanceOf[js.Any])
+    if (visibleBackgroundColorStyle != null) __obj.updateDynamic("visibleBackgroundColorStyle")(visibleBackgroundColorStyle.asInstanceOf[js.Any])
     if (visibleForegroundColor != null) __obj.updateDynamic("visibleForegroundColor")(visibleForegroundColor.asInstanceOf[js.Any])
+    if (visibleForegroundColorStyle != null) __obj.updateDynamic("visibleForegroundColorStyle")(visibleForegroundColorStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterCriteria]
   }
 }

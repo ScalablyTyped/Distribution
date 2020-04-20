@@ -53,7 +53,6 @@ object TextEditChange {
     replace: (Range, String) => Unit
   ): TextEditChange = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), all = js.Any.fromFunction0(all), clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction2(insert), replace = js.Any.fromFunction2(replace))
-  
     __obj.asInstanceOf[TextEditChange]
   }
 }

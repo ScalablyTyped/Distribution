@@ -13,7 +13,6 @@ object AnonReqSuperAgentRequest {
   @scala.inline
   def apply(req: SuperAgentRequest): AnonReqSuperAgentRequest = {
     val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReqSuperAgentRequest]
   }
 }

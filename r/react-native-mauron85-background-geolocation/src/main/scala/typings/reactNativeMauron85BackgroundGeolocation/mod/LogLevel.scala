@@ -15,16 +15,14 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  def DEBUG: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.DEBUG = this.cast("DEBUG")
+  def DEBUG: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.DEBUG = "DEBUG".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.DEBUG]
   @scala.inline
-  def ERROR: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.ERROR = this.cast("ERROR")
+  def ERROR: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.ERROR = "ERROR".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.ERROR]
   @scala.inline
-  def INFO: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.INFO = this.cast("INFO")
+  def INFO: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.INFO = "INFO".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.INFO]
   @scala.inline
-  def TRACE: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.TRACE = this.cast("TRACE")
+  def TRACE: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.TRACE = "TRACE".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.TRACE]
   @scala.inline
-  def WARN: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.WARN = this.cast("WARN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WARN: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.WARN = "WARN".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.WARN]
 }
 

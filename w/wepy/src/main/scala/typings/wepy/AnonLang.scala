@@ -14,7 +14,6 @@ object AnonLang {
   @scala.inline
   def apply(lang: String, timeout: Double, withCredentials: Boolean): AnonLang = {
     val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLang]
   }
 }

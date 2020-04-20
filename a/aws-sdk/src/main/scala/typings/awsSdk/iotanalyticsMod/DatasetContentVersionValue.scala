@@ -16,7 +16,6 @@ object DatasetContentVersionValue {
   @scala.inline
   def apply(datasetName: DatasetName): DatasetContentVersionValue = {
     val __obj = js.Dynamic.literal(datasetName = datasetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatasetContentVersionValue]
   }
 }

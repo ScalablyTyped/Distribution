@@ -32,28 +32,26 @@ trait XlLinkStatus extends js.Object
 
 object XlLinkStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlLinkStatusCopiedValues: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlLinkStatusCopiedValues: `10` = this.cast(10)
+  def xlLinkStatusIndeterminate: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlLinkStatusIndeterminate: `5` = this.cast(5)
+  def xlLinkStatusInvalidName: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlLinkStatusInvalidName: `7` = this.cast(7)
+  def xlLinkStatusMissingFile: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlLinkStatusMissingFile: `1` = this.cast(1)
+  def xlLinkStatusMissingSheet: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlLinkStatusMissingSheet: `2` = this.cast(2)
+  def xlLinkStatusNotStarted: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlLinkStatusNotStarted: `6` = this.cast(6)
+  def xlLinkStatusOK: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlLinkStatusOK: `0` = this.cast(0)
+  def xlLinkStatusOld: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlLinkStatusOld: `3` = this.cast(3)
+  def xlLinkStatusSourceNotCalculated: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlLinkStatusSourceNotCalculated: `4` = this.cast(4)
+  def xlLinkStatusSourceNotOpen: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlLinkStatusSourceNotOpen: `8` = this.cast(8)
-  @scala.inline
-  def xlLinkStatusSourceOpen: `9` = this.cast(9)
+  def xlLinkStatusSourceOpen: `9` = 9.asInstanceOf[`9`]
 }
 

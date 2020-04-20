@@ -13,12 +13,10 @@ trait Badge extends js.Object
 
 object Badge {
   @scala.inline
-  def bottomleft: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomleft = this.cast("bottomleft")
+  def bottomleft: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomleft = "bottomleft".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomleft]
   @scala.inline
-  def bottomright: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomright = this.cast("bottomright")
+  def bottomright: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomright = "bottomright".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomright]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `inline`: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.`inline` = this.cast("inline")
+  def `inline`: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.`inline` = "inline".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.`inline`]
 }
 

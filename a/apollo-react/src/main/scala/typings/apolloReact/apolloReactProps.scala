@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait apolloReactProps {
   @scala.inline
-  def ApolloProviderProps: ProviderProps.type = typings.apolloReact.apolloProviderMod.ProviderProps
+  def ApolloProviderProps: ProviderProps.type = ProviderProps
   type ApolloProviderProps = ProviderProps
 }
 

@@ -38,7 +38,6 @@ object dateArithmeticStatic {
     subtract: (Date, Double, Unit) => Date
   ): dateArithmeticStatic = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), eq = js.Any.fromFunction2(eq), gt = js.Any.fromFunction2(gt), gte = js.Any.fromFunction2(gte), lt = js.Any.fromFunction2(lt), lte = js.Any.fromFunction2(lte), neq = js.Any.fromFunction2(neq), subtract = js.Any.fromFunction3(subtract))
-  
     __obj.asInstanceOf[dateArithmeticStatic]
   }
 }

@@ -18,7 +18,6 @@ object Term {
     variables: js.Array[Variable]
   ): Term = {
     val __obj = js.Dynamic.literal(coefficient = js.Any.fromFunction0(coefficient), coefficients = coefficients.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Term]
   }
 }

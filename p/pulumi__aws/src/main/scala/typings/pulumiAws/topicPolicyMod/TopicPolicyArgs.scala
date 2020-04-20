@@ -21,7 +21,6 @@ object TopicPolicyArgs {
   @scala.inline
   def apply(arn: Input[String], policy: Input[String]): TopicPolicyArgs = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TopicPolicyArgs]
   }
 }

@@ -16,7 +16,6 @@ object DescribePHIDetectionJobRequest {
   @scala.inline
   def apply(JobId: JobId): DescribePHIDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePHIDetectionJobRequest]
   }
 }

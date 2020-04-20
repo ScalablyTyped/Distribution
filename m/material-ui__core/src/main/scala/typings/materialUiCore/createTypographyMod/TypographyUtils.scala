@@ -13,7 +13,6 @@ object TypographyUtils {
   @scala.inline
   def apply(pxToRem: Double => String): TypographyUtils = {
     val __obj = js.Dynamic.literal(pxToRem = js.Any.fromFunction1(pxToRem))
-  
     __obj.asInstanceOf[TypographyUtils]
   }
 }

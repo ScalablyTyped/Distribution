@@ -13,7 +13,6 @@ object AnonGet {
   @scala.inline
   def apply(get: Double => String, size: () => Double): AnonGet = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), size = js.Any.fromFunction0(size))
-  
     __obj.asInstanceOf[AnonGet]
   }
 }

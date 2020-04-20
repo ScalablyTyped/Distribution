@@ -16,7 +16,6 @@ object ReferrerInfoOption {
   @scala.inline
   def apply(appId: String, extraData: js.Object): ReferrerInfoOption = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReferrerInfoOption]
   }
 }

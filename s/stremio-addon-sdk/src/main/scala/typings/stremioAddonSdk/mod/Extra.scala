@@ -13,12 +13,10 @@ trait Extra extends js.Object
 
 object Extra {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def genre: typings.stremioAddonSdk.stremioAddonSdkStrings.genre = "genre".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.genre]
   @scala.inline
-  def genre: typings.stremioAddonSdk.stremioAddonSdkStrings.genre = this.cast("genre")
+  def search: typings.stremioAddonSdk.stremioAddonSdkStrings.search = "search".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.search]
   @scala.inline
-  def search: typings.stremioAddonSdk.stremioAddonSdkStrings.search = this.cast("search")
-  @scala.inline
-  def skip: typings.stremioAddonSdk.stremioAddonSdkStrings.skip = this.cast("skip")
+  def skip: typings.stremioAddonSdk.stremioAddonSdkStrings.skip = "skip".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.skip]
 }
 

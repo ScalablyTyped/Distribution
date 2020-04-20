@@ -48,7 +48,7 @@ object commMod extends js.Object {
       * The unique id for the comm channel.
       */
     @JSName("commId")
-    def commId_MCommHandler(): String = js.native
+    def commId_MCommHandler: String = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -71,7 +71,7 @@ object commMod extends js.Object {
       *
       * **See also:** [[ICommClose]], [[close]]
       */
-    def onClose(): js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | js.Thenable[Unit]] = js.native
+    def onClose: js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | js.Thenable[Unit]] = js.native
     /**
       * Set the callback for a comm close event.
       *
@@ -87,7 +87,7 @@ object commMod extends js.Object {
     /**
       * Get the callback for a comm message received event.
       */
-    def onMsg(): js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | js.Thenable[Unit]] = js.native
+    def onMsg: js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | js.Thenable[Unit]] = js.native
     /**
       * Set the callback for a comm message received event.
       *
@@ -120,7 +120,7 @@ object commMod extends js.Object {
       * The target name for the comm channel.
       */
     @JSName("targetName")
-    def targetName_MCommHandler(): String = js.native
+    def targetName_MCommHandler: String = js.native
   }
   
 }

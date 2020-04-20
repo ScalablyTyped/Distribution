@@ -35,25 +35,25 @@ class CallNanoflowClientAction protected () extends ClientAction {
   def confirmationInfo(): js.Any = js.native
   def confirmationInfo(newValue: ConfirmationInfo): js.Any = js.native
   @JSName("confirmationInfo")
-  def confirmationInfo_Union(): ConfirmationInfo | Null = js.native
+  def confirmationInfo_Union: ConfirmationInfo | Null = js.native
   def nanoflow(): js.Any = js.native
   def nanoflow(newValue: INanoflow): js.Any = js.native
-  def nanoflowQualifiedName(): String | Null = js.native
+  def nanoflowQualifiedName: String | Null = js.native
   /**
     * In version 7.10.0: introduced
     */
   @JSName("nanoflow")
-  def nanoflow_Union(): INanoflow | Null = js.native
+  def nanoflow_Union: INanoflow | Null = js.native
   /**
     * In version 7.19.0: introduced
     */
-  def parameterMappings(): IList[NanoflowParameterMapping] = js.native
-  def progressBar(): ProgressBarType = js.native
+  def parameterMappings: IList[NanoflowParameterMapping] = js.native
+  def progressBar: ProgressBarType = js.native
   def progressBar(newValue: ProgressBarType): js.Any = js.native
   def progressMessage(): js.Any = js.native
   def progressMessage(newValue: Text): js.Any = js.native
   @JSName("progressMessage")
-  def progressMessage_Union(): Text | Null = js.native
+  def progressMessage_Union: Text | Null = js.native
 }
 
 /* static members */

@@ -16,7 +16,6 @@ object DescribeStreamConsumerOutput {
   @scala.inline
   def apply(ConsumerDescription: ConsumerDescription): DescribeStreamConsumerOutput = {
     val __obj = js.Dynamic.literal(ConsumerDescription = ConsumerDescription.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStreamConsumerOutput]
   }
 }

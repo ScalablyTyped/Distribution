@@ -29,7 +29,6 @@ object SafariExtensionContextMenuItemValidateEvent {
     userInfo: js.Any
   ): SafariExtensionContextMenuItemValidateEvent = {
     val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SafariExtensionContextMenuItemValidateEvent]
   }
 }

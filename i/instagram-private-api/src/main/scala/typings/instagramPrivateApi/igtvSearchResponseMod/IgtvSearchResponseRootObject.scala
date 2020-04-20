@@ -22,7 +22,6 @@ object IgtvSearchResponseRootObject {
     status: String
   ): IgtvSearchResponseRootObject = {
     val __obj = js.Dynamic.literal(has_more = has_more.asInstanceOf[js.Any], num_results = num_results.asInstanceOf[js.Any], rank_token = rank_token.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IgtvSearchResponseRootObject]
   }
 }

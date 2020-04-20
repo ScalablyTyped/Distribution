@@ -14,7 +14,6 @@ object VerifyDecryptResult {
   @scala.inline
   def apply(data: ArrayBuffer, signedBy: js.Array[String]): VerifyDecryptResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], signedBy = signedBy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyDecryptResult]
   }
 }

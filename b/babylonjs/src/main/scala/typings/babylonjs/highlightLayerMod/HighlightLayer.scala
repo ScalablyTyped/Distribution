@@ -72,7 +72,7 @@ class HighlightLayer protected () extends EffectLayer {
   /**
     * Gets the horizontal size of the blur.
     */
-  def blurHorizontalSize(): Double = js.native
+  def blurHorizontalSize: Double = js.native
   /**
     * Specifies the horizontal size of the blur.
     */
@@ -80,7 +80,7 @@ class HighlightLayer protected () extends EffectLayer {
   /**
     * Gets the vertical size of the blur.
     */
-  def blurVerticalSize(): Double = js.native
+  def blurVerticalSize: Double = js.native
   /**
     * Specifies the vertical size of the blur.
     */

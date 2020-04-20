@@ -25,20 +25,18 @@ trait DeviceFPConfigBits extends js.Object
 
 object DeviceFPConfigBits {
   @scala.inline
-  def FP_DENORM: `0x1` = this.cast(0x1)
+  def FP_DENORM: `0x1` = 0x1.asInstanceOf[`0x1`]
   @scala.inline
-  def FP_FMA: `0x20` = this.cast(0x20)
+  def FP_FMA: `0x20` = 0x20.asInstanceOf[`0x20`]
   @scala.inline
-  def FP_INF_NAN: `0x2` = this.cast(0x2)
+  def FP_INF_NAN: `0x2` = 0x2.asInstanceOf[`0x2`]
   @scala.inline
-  def FP_ROUND_TO_INF: `0x10` = this.cast(0x10)
+  def FP_ROUND_TO_INF: `0x10` = 0x10.asInstanceOf[`0x10`]
   @scala.inline
-  def FP_ROUND_TO_NEAREST: `0x4` = this.cast(0x4)
+  def FP_ROUND_TO_NEAREST: `0x4` = 0x4.asInstanceOf[`0x4`]
   @scala.inline
-  def FP_ROUND_TO_ZERO: `0x8` = this.cast(0x8)
+  def FP_ROUND_TO_ZERO: `0x8` = 0x8.asInstanceOf[`0x8`]
   @scala.inline
-  def FP_SOFT_FLOAT: `0x40` = this.cast(0x40)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def FP_SOFT_FLOAT: `0x40` = 0x40.asInstanceOf[`0x40`]
 }
 

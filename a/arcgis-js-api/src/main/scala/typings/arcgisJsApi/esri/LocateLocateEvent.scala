@@ -12,7 +12,6 @@ object LocateLocateEvent {
   @scala.inline
   def apply(position: js.Any): LocateLocateEvent = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocateLocateEvent]
   }
 }

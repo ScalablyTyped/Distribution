@@ -38,7 +38,6 @@ object DateFormatI18n {
   @scala.inline
   def apply(dayNames: js.Array[String], monthNames: js.Array[String], timeNames: js.Array[String]): DateFormatI18n = {
     val __obj = js.Dynamic.literal(dayNames = dayNames.asInstanceOf[js.Any], monthNames = monthNames.asInstanceOf[js.Any], timeNames = timeNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DateFormatI18n]
   }
 }

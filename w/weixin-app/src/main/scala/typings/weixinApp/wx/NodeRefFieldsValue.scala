@@ -30,7 +30,6 @@ object NodeRefFieldsValue {
     size: AnonHeight
   ): NodeRefFieldsValue = {
     val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], scrollOffset = scrollOffset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeRefFieldsValue]
   }
 }

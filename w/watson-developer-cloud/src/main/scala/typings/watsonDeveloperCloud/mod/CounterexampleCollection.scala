@@ -16,7 +16,6 @@ object CounterexampleCollection {
   @scala.inline
   def apply(counterexamples: js.Array[Counterexample], pagination: Pagination): CounterexampleCollection = {
     val __obj = js.Dynamic.literal(counterexamples = counterexamples.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CounterexampleCollection]
   }
 }

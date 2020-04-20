@@ -14,7 +14,6 @@ object SocketTransport {
   @scala.inline
   def apply(kind: socket, port: Double): SocketTransport = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SocketTransport]
   }
 }

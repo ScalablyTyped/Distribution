@@ -112,7 +112,6 @@ object Dictionary {
     values: () => js.Array[V]
   ): Dictionary[K, V] = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), containsKey = js.Any.fromFunction1(containsKey), forEach = js.Any.fromFunction1(forEach), getValue = js.Any.fromFunction1(getValue), isEmpty = js.Any.fromFunction0(isEmpty), keys = js.Any.fromFunction0(keys), nElements = nElements.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), setValue = js.Any.fromFunction2(setValue), size = js.Any.fromFunction0(size), table = table.asInstanceOf[js.Any], toStr = js.Any.fromFunction1(toStr), values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[Dictionary[K, V]]
   }
 }

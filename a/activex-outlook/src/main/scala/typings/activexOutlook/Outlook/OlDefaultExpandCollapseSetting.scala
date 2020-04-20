@@ -16,12 +16,10 @@ trait OlDefaultExpandCollapseSetting extends js.Object
 
 object OlDefaultExpandCollapseSetting {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAllCollapsed: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olAllCollapsed: `1` = this.cast(1)
+  def olAllExpanded: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olAllExpanded: `0` = this.cast(0)
-  @scala.inline
-  def olLastViewed: `2` = this.cast(2)
+  def olLastViewed: `2` = 2.asInstanceOf[`2`]
 }
 

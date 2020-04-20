@@ -20,20 +20,18 @@ trait _BEHAVIOR_RELATION extends js.Object
 
 object _BEHAVIOR_RELATION {
   @scala.inline
-  def BEHAVIOR_CHILD: `2` = this.cast(2)
+  def BEHAVIOR_CHILD: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def BEHAVIOR_FIRSTRELATION: `0` = this.cast(0)
+  def BEHAVIOR_FIRSTRELATION: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def BEHAVIOR_LASTRELATION: `3` = this.cast(3)
+  def BEHAVIOR_LASTRELATION: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def BEHAVIOR_PARENT: `1` = this.cast(1)
+  def BEHAVIOR_PARENT: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def BEHAVIOR_RELATION_Max: `2147483647` = this.cast(2147483647)
+  def BEHAVIOR_RELATION_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def BEHAVIOR_SAMEELEMENT: `0` = this.cast(0)
+  def BEHAVIOR_SAMEELEMENT: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def BEHAVIOR_SIBLING: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def BEHAVIOR_SIBLING: `3` = 3.asInstanceOf[`3`]
 }
 

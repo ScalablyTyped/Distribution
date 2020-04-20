@@ -14,7 +14,6 @@ object AnonDelta {
   @scala.inline
   def apply(delta: Double, element: HTMLElement): AnonDelta = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDelta]
   }
 }

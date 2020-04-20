@@ -17,7 +17,6 @@ object UpdateSMBSecurityStrategyInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN, SMBSecurityStrategy: SMBSecurityStrategy): UpdateSMBSecurityStrategyInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], SMBSecurityStrategy = SMBSecurityStrategy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSMBSecurityStrategyInput]
   }
 }

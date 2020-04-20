@@ -16,7 +16,6 @@ object GetBucketLoggingRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketLoggingRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketLoggingRequest]
   }
 }

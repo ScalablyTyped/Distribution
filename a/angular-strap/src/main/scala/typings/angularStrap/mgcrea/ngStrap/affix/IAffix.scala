@@ -20,7 +20,6 @@ object IAffix {
     init: () => Unit
   ): IAffix = {
     val __obj = js.Dynamic.literal(checkPosition = js.Any.fromFunction0(checkPosition), checkPositionWithEventLoop = js.Any.fromFunction0(checkPositionWithEventLoop), destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction0(init))
-  
     __obj.asInstanceOf[IAffix]
   }
 }

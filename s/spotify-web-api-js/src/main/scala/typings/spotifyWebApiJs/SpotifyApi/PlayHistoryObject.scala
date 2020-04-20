@@ -18,7 +18,6 @@ object PlayHistoryObject {
   @scala.inline
   def apply(context: ContextObject, played_at: String, track: TrackObjectSimplified): PlayHistoryObject = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], played_at = played_at.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlayHistoryObject]
   }
 }

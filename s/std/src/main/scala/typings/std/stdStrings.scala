@@ -3300,7 +3300,7 @@ object stdStrings {
   @scala.inline
   def VRDisplayEvent: VRDisplayEvent = "VRDisplayEvent".asInstanceOf[VRDisplayEvent]
   @scala.inline
-  def `VRDisplayEvent `: `VRDisplayEvent ` = "VRDisplayEvent ".asInstanceOf[`VRDisplayEvent `]
+  def `VRDisplayEvent `: `VRDisplayEvent ` = ("VRDisplayEvent ").asInstanceOf[`VRDisplayEvent `]
   @scala.inline
   def WEBGL_color_buffer_float: WEBGL_color_buffer_float = "WEBGL_color_buffer_float".asInstanceOf[WEBGL_color_buffer_float]
   @scala.inline
@@ -3462,7 +3462,7 @@ object stdStrings {
   @scala.inline
   def beforeunload: beforeunload = "beforeunload".asInstanceOf[beforeunload]
   @scala.inline
-  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
+  def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   @scala.inline

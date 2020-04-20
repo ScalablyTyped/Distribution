@@ -15,7 +15,6 @@ object UseSortByHooks {
     getSortByToggleProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
   ): UseSortByHooks[D] = {
     val __obj = js.Dynamic.literal(getSortByToggleProps = getSortByToggleProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseSortByHooks[D]]
   }
 }

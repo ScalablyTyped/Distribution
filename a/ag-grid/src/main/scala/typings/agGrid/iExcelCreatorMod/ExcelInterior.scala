@@ -14,7 +14,6 @@ object ExcelInterior {
   @scala.inline
   def apply(color: String, pattern: String, patternColor: String): ExcelInterior = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], patternColor = patternColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExcelInterior]
   }
 }

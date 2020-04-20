@@ -17,7 +17,6 @@ object ITooltipsterGeoHelper {
   @scala.inline
   def apply(document: AnonSize, origin: AnonFixedLineage, window: AnonScroll): ITooltipsterGeoHelper = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITooltipsterGeoHelper]
   }
 }

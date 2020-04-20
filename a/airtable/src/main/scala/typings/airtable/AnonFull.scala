@@ -15,7 +15,6 @@ object AnonFull {
   @scala.inline
   def apply(full: Thumbnail, large: Thumbnail, small: Thumbnail): AnonFull = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], large = large.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFull]
   }
 }

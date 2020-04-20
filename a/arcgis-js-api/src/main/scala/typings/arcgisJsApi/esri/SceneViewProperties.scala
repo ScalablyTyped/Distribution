@@ -112,9 +112,6 @@ trait SceneViewProperties
     *   * `low` for Internet Explorer 11 and certain mobile devices
     *   * `medium` for any other browser
     *
-    *
-    * Overriding the default value is best done in the constructor (see example below). If the value is modified after construction, only a subset of the quality aspects are affected.
-    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#qualityProfile)
     */
   var qualityProfile: js.UndefOr[low | medium | high] = js.undefined

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactAnimateOnScrollProps {
   @scala.inline
-  def ReactAnimateOnScrollProps: ScrollAnimationProps.type = typings.reactAnimateOnScroll.mod.ScrollAnimationProps
+  def ReactAnimateOnScrollProps: ScrollAnimationProps.type = ScrollAnimationProps
   type ReactAnimateOnScrollProps = ScrollAnimationProps
 }
 

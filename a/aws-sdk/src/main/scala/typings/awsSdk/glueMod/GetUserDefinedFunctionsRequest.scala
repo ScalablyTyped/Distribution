@@ -13,7 +13,7 @@ trait GetUserDefinedFunctionsRequest extends js.Object {
   /**
     * The name of the catalog database where the functions are located.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: js.UndefOr[NameString] = js.native
   /**
     * The maximum number of functions to return in one response.
     */
@@ -31,14 +31,15 @@ trait GetUserDefinedFunctionsRequest extends js.Object {
 object GetUserDefinedFunctionsRequest {
   @scala.inline
   def apply(
-    DatabaseName: NameString,
     Pattern: NameString,
     CatalogId: CatalogIdString = null,
+    DatabaseName: NameString = null,
     MaxResults: Int | Double = null,
     NextToken: Token = null
   ): GetUserDefinedFunctionsRequest = {
-    val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Pattern = Pattern.asInstanceOf[js.Any])
     if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
+    if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserDefinedFunctionsRequest]

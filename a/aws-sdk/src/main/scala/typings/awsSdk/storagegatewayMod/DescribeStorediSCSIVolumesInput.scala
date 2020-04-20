@@ -16,7 +16,6 @@ object DescribeStorediSCSIVolumesInput {
   @scala.inline
   def apply(VolumeARNs: VolumeARNs): DescribeStorediSCSIVolumesInput = {
     val __obj = js.Dynamic.literal(VolumeARNs = VolumeARNs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStorediSCSIVolumesInput]
   }
 }

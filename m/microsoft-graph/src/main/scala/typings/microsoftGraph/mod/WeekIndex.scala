@@ -15,16 +15,14 @@ trait WeekIndex extends js.Object
 
 object WeekIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def first: typings.microsoftGraph.microsoftGraphStrings.first = "first".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.first]
   @scala.inline
-  def first: typings.microsoftGraph.microsoftGraphStrings.first = this.cast("first")
+  def fourth: typings.microsoftGraph.microsoftGraphStrings.fourth = "fourth".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.fourth]
   @scala.inline
-  def fourth: typings.microsoftGraph.microsoftGraphStrings.fourth = this.cast("fourth")
+  def last: typings.microsoftGraph.microsoftGraphStrings.last = "last".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.last]
   @scala.inline
-  def last: typings.microsoftGraph.microsoftGraphStrings.last = this.cast("last")
+  def second: typings.microsoftGraph.microsoftGraphStrings.second = "second".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.second]
   @scala.inline
-  def second: typings.microsoftGraph.microsoftGraphStrings.second = this.cast("second")
-  @scala.inline
-  def third: typings.microsoftGraph.microsoftGraphStrings.third = this.cast("third")
+  def third: typings.microsoftGraph.microsoftGraphStrings.third = "third".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.third]
 }
 

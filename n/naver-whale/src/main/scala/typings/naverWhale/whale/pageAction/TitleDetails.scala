@@ -15,7 +15,6 @@ object TitleDetails {
   @scala.inline
   def apply(tabId: Double, title: String): TitleDetails = {
     val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TitleDetails]
   }
 }

@@ -14,7 +14,6 @@ object MaintenanceWindowTargetTarget {
   @scala.inline
   def apply(key: String, values: js.Array[String]): MaintenanceWindowTargetTarget = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MaintenanceWindowTargetTarget]
   }
 }

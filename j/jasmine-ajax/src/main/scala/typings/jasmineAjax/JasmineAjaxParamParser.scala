@@ -14,7 +14,6 @@ object JasmineAjaxParamParser {
   @scala.inline
   def apply(parse: String => js.Any, test: XMLHttpRequest => Boolean): JasmineAjaxParamParser = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[JasmineAjaxParamParser]
   }
 }

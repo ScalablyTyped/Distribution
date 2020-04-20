@@ -18,7 +18,6 @@ object Changes {
     remove: (Container[_], Double) => Unit
   ): Changes = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), change = js.Any.fromFunction3(change), remove = js.Any.fromFunction2(remove))
-  
     __obj.asInstanceOf[Changes]
   }
 }

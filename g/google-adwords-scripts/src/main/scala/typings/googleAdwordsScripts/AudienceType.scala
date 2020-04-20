@@ -12,10 +12,8 @@ trait AudienceType extends js.Object
 
 object AudienceType {
   @scala.inline
-  def USER_INTEREST: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_INTEREST = this.cast("USER_INTEREST")
+  def USER_INTEREST: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_INTEREST = "USER_INTEREST".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_INTEREST]
   @scala.inline
-  def USER_LIST: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_LIST = this.cast("USER_LIST")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def USER_LIST: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_LIST = "USER_LIST".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_LIST]
 }
 

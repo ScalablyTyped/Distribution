@@ -54,50 +54,48 @@ trait htmlInput extends js.Object
 
 object htmlInput {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlInputButton: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlInputButton: `1` = this.cast(1)
+  def htmlInputCheckbox: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlInputCheckbox: `2` = this.cast(2)
+  def htmlInputEmail: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def htmlInputEmail: `17` = this.cast(17)
+  def htmlInputFile: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlInputFile: `3` = this.cast(3)
+  def htmlInputHidden: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def htmlInputHidden: `4` = this.cast(4)
+  def htmlInputImage: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def htmlInputImage: `5` = this.cast(5)
+  def htmlInputNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlInputNotSet: `0` = this.cast(0)
+  def htmlInputNumber: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def htmlInputNumber: `18` = this.cast(18)
+  def htmlInputPassword: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def htmlInputPassword: `6` = this.cast(6)
+  def htmlInputRadio: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def htmlInputRadio: `7` = this.cast(7)
+  def htmlInputRange: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def htmlInputRange: `15` = this.cast(15)
+  def htmlInputReset: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def htmlInputReset: `8` = this.cast(8)
+  def htmlInputRichtext: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def htmlInputRichtext: `14` = this.cast(14)
+  def htmlInputSearch: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def htmlInputSearch: `20` = this.cast(20)
+  def htmlInputSelectMultiple: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def htmlInputSelectMultiple: `10` = this.cast(10)
+  def htmlInputSelectOne: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def htmlInputSelectOne: `9` = this.cast(9)
+  def htmlInputSubmit: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def htmlInputSubmit: `11` = this.cast(11)
+  def htmlInputTel: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def htmlInputTel: `19` = this.cast(19)
+  def htmlInputText: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def htmlInputText: `12` = this.cast(12)
+  def htmlInputTextarea: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def htmlInputTextarea: `13` = this.cast(13)
+  def htmlInputUrl: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def htmlInputUrl: `16` = this.cast(16)
-  @scala.inline
-  def htmlInput_Max: `2147483647` = this.cast(2147483647)
+  def htmlInput_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

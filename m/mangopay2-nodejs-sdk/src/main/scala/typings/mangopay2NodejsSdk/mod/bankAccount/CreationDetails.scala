@@ -31,7 +31,6 @@ object CreationDetails {
     Type: CA
   ): CreationDetails = {
     val __obj = js.Dynamic.literal(AccountNumber = AccountNumber.asInstanceOf[js.Any], BankName = BankName.asInstanceOf[js.Any], BranchCode = BranchCode.asInstanceOf[js.Any], InstitutionNumber = InstitutionNumber.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreationDetails]
   }
   @scala.inline
@@ -43,7 +42,6 @@ object CreationDetails {
   @scala.inline
   def GBDetails(AccountNumber: String, OwnerAddress: AddressType, OwnerName: String, SortCode: String, Type: GB): CreationDetails = {
     val __obj = js.Dynamic.literal(AccountNumber = AccountNumber.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], SortCode = SortCode.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreationDetails]
   }
   @scala.inline
@@ -56,7 +54,6 @@ object CreationDetails {
     Type: OTHER
   ): CreationDetails = {
     val __obj = js.Dynamic.literal(AccountNumber = AccountNumber.asInstanceOf[js.Any], BIC = BIC.asInstanceOf[js.Any], Country = Country.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreationDetails]
   }
   @scala.inline

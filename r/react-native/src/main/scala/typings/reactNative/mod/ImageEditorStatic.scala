@@ -29,7 +29,6 @@ object ImageEditorStatic {
     cropImage: (String, ImageCropData, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Object, Unit]) => Unit
   ): ImageEditorStatic = {
     val __obj = js.Dynamic.literal(cropImage = js.Any.fromFunction4(cropImage))
-  
     __obj.asInstanceOf[ImageEditorStatic]
   }
 }

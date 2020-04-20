@@ -14,7 +14,6 @@ object AnonAlignItemsHeight {
   @scala.inline
   def apply(alignItems: String, height: Double, justifyContent: String): AnonAlignItemsHeight = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlignItemsHeight]
   }
 }

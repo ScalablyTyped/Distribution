@@ -16,7 +16,6 @@ object ProfileAttributeBase {
   @scala.inline
   def apply[T](descriptor: AttributeDescriptor, revision: Double, timeStamp: Date, value: T): ProfileAttributeBase[T] = {
     val __obj = js.Dynamic.literal(descriptor = descriptor.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProfileAttributeBase[T]]
   }
 }

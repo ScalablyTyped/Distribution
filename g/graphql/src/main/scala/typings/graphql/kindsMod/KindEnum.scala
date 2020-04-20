@@ -55,92 +55,90 @@ trait KindEnum extends js.Object
 
 object KindEnum {
   @scala.inline
-  def Argument: typings.graphql.graphqlStrings.Argument = this.cast("Argument")
+  def Argument: typings.graphql.graphqlStrings.Argument = "Argument".asInstanceOf[typings.graphql.graphqlStrings.Argument]
   @scala.inline
-  def BooleanValue: typings.graphql.graphqlStrings.BooleanValue = this.cast("BooleanValue")
+  def BooleanValue: typings.graphql.graphqlStrings.BooleanValue = "BooleanValue".asInstanceOf[typings.graphql.graphqlStrings.BooleanValue]
   @scala.inline
-  def Directive: typings.graphql.graphqlStrings.Directive = this.cast("Directive")
+  def Directive: typings.graphql.graphqlStrings.Directive = "Directive".asInstanceOf[typings.graphql.graphqlStrings.Directive]
   @scala.inline
-  def DirectiveDefinition: typings.graphql.graphqlStrings.DirectiveDefinition = this.cast("DirectiveDefinition")
+  def DirectiveDefinition: typings.graphql.graphqlStrings.DirectiveDefinition = "DirectiveDefinition".asInstanceOf[typings.graphql.graphqlStrings.DirectiveDefinition]
   @scala.inline
-  def Document: typings.graphql.graphqlStrings.Document = this.cast("Document")
+  def Document: typings.graphql.graphqlStrings.Document = "Document".asInstanceOf[typings.graphql.graphqlStrings.Document]
   @scala.inline
-  def EnumTypeDefinition: typings.graphql.graphqlStrings.EnumTypeDefinition = this.cast("EnumTypeDefinition")
+  def EnumTypeDefinition: typings.graphql.graphqlStrings.EnumTypeDefinition = "EnumTypeDefinition".asInstanceOf[typings.graphql.graphqlStrings.EnumTypeDefinition]
   @scala.inline
-  def EnumTypeExtension: typings.graphql.graphqlStrings.EnumTypeExtension = this.cast("EnumTypeExtension")
+  def EnumTypeExtension: typings.graphql.graphqlStrings.EnumTypeExtension = "EnumTypeExtension".asInstanceOf[typings.graphql.graphqlStrings.EnumTypeExtension]
   @scala.inline
-  def EnumValue: typings.graphql.graphqlStrings.EnumValue = this.cast("EnumValue")
+  def EnumValue: typings.graphql.graphqlStrings.EnumValue = "EnumValue".asInstanceOf[typings.graphql.graphqlStrings.EnumValue]
   @scala.inline
-  def EnumValueDefinition: typings.graphql.graphqlStrings.EnumValueDefinition = this.cast("EnumValueDefinition")
+  def EnumValueDefinition: typings.graphql.graphqlStrings.EnumValueDefinition = "EnumValueDefinition".asInstanceOf[typings.graphql.graphqlStrings.EnumValueDefinition]
   @scala.inline
-  def Field: Field_ = this.cast("Field")
+  def Field: Field_ = "Field".asInstanceOf[Field_]
   @scala.inline
-  def FieldDefinition: typings.graphql.graphqlStrings.FieldDefinition = this.cast("FieldDefinition")
+  def FieldDefinition: typings.graphql.graphqlStrings.FieldDefinition = "FieldDefinition".asInstanceOf[typings.graphql.graphqlStrings.FieldDefinition]
   @scala.inline
-  def FloatValue: typings.graphql.graphqlStrings.FloatValue = this.cast("FloatValue")
+  def FloatValue: typings.graphql.graphqlStrings.FloatValue = "FloatValue".asInstanceOf[typings.graphql.graphqlStrings.FloatValue]
   @scala.inline
-  def FragmentDefinition: typings.graphql.graphqlStrings.FragmentDefinition = this.cast("FragmentDefinition")
+  def FragmentDefinition: typings.graphql.graphqlStrings.FragmentDefinition = "FragmentDefinition".asInstanceOf[typings.graphql.graphqlStrings.FragmentDefinition]
   @scala.inline
-  def FragmentSpread: typings.graphql.graphqlStrings.FragmentSpread = this.cast("FragmentSpread")
+  def FragmentSpread: typings.graphql.graphqlStrings.FragmentSpread = "FragmentSpread".asInstanceOf[typings.graphql.graphqlStrings.FragmentSpread]
   @scala.inline
-  def InlineFragment: typings.graphql.graphqlStrings.InlineFragment = this.cast("InlineFragment")
+  def InlineFragment: typings.graphql.graphqlStrings.InlineFragment = "InlineFragment".asInstanceOf[typings.graphql.graphqlStrings.InlineFragment]
   @scala.inline
-  def InputObjectTypeDefinition: typings.graphql.graphqlStrings.InputObjectTypeDefinition = this.cast("InputObjectTypeDefinition")
+  def InputObjectTypeDefinition: typings.graphql.graphqlStrings.InputObjectTypeDefinition = "InputObjectTypeDefinition".asInstanceOf[typings.graphql.graphqlStrings.InputObjectTypeDefinition]
   @scala.inline
-  def InputObjectTypeExtension: typings.graphql.graphqlStrings.InputObjectTypeExtension = this.cast("InputObjectTypeExtension")
+  def InputObjectTypeExtension: typings.graphql.graphqlStrings.InputObjectTypeExtension = "InputObjectTypeExtension".asInstanceOf[typings.graphql.graphqlStrings.InputObjectTypeExtension]
   @scala.inline
-  def InputValueDefinition: typings.graphql.graphqlStrings.InputValueDefinition = this.cast("InputValueDefinition")
+  def InputValueDefinition: typings.graphql.graphqlStrings.InputValueDefinition = "InputValueDefinition".asInstanceOf[typings.graphql.graphqlStrings.InputValueDefinition]
   @scala.inline
-  def IntValue: typings.graphql.graphqlStrings.IntValue = this.cast("IntValue")
+  def IntValue: typings.graphql.graphqlStrings.IntValue = "IntValue".asInstanceOf[typings.graphql.graphqlStrings.IntValue]
   @scala.inline
-  def InterfaceTypeDefinition: typings.graphql.graphqlStrings.InterfaceTypeDefinition = this.cast("InterfaceTypeDefinition")
+  def InterfaceTypeDefinition: typings.graphql.graphqlStrings.InterfaceTypeDefinition = "InterfaceTypeDefinition".asInstanceOf[typings.graphql.graphqlStrings.InterfaceTypeDefinition]
   @scala.inline
-  def InterfaceTypeExtension: typings.graphql.graphqlStrings.InterfaceTypeExtension = this.cast("InterfaceTypeExtension")
+  def InterfaceTypeExtension: typings.graphql.graphqlStrings.InterfaceTypeExtension = "InterfaceTypeExtension".asInstanceOf[typings.graphql.graphqlStrings.InterfaceTypeExtension]
   @scala.inline
-  def ListType: typings.graphql.graphqlStrings.ListType = this.cast("ListType")
+  def ListType: typings.graphql.graphqlStrings.ListType = "ListType".asInstanceOf[typings.graphql.graphqlStrings.ListType]
   @scala.inline
-  def ListValue: typings.graphql.graphqlStrings.ListValue = this.cast("ListValue")
+  def ListValue: typings.graphql.graphqlStrings.ListValue = "ListValue".asInstanceOf[typings.graphql.graphqlStrings.ListValue]
   @scala.inline
-  def Name: typings.graphql.graphqlStrings.Name = this.cast("Name")
+  def Name: typings.graphql.graphqlStrings.Name = "Name".asInstanceOf[typings.graphql.graphqlStrings.Name]
   @scala.inline
-  def NamedType: typings.graphql.graphqlStrings.NamedType = this.cast("NamedType")
+  def NamedType: typings.graphql.graphqlStrings.NamedType = "NamedType".asInstanceOf[typings.graphql.graphqlStrings.NamedType]
   @scala.inline
-  def NonNullType: typings.graphql.graphqlStrings.NonNullType = this.cast("NonNullType")
+  def NonNullType: typings.graphql.graphqlStrings.NonNullType = "NonNullType".asInstanceOf[typings.graphql.graphqlStrings.NonNullType]
   @scala.inline
-  def NullValue: typings.graphql.graphqlStrings.NullValue = this.cast("NullValue")
+  def NullValue: typings.graphql.graphqlStrings.NullValue = "NullValue".asInstanceOf[typings.graphql.graphqlStrings.NullValue]
   @scala.inline
-  def ObjectField: typings.graphql.graphqlStrings.ObjectField = this.cast("ObjectField")
+  def ObjectField: typings.graphql.graphqlStrings.ObjectField = "ObjectField".asInstanceOf[typings.graphql.graphqlStrings.ObjectField]
   @scala.inline
-  def ObjectTypeDefinition: typings.graphql.graphqlStrings.ObjectTypeDefinition = this.cast("ObjectTypeDefinition")
+  def ObjectTypeDefinition: typings.graphql.graphqlStrings.ObjectTypeDefinition = "ObjectTypeDefinition".asInstanceOf[typings.graphql.graphqlStrings.ObjectTypeDefinition]
   @scala.inline
-  def ObjectTypeExtension: typings.graphql.graphqlStrings.ObjectTypeExtension = this.cast("ObjectTypeExtension")
+  def ObjectTypeExtension: typings.graphql.graphqlStrings.ObjectTypeExtension = "ObjectTypeExtension".asInstanceOf[typings.graphql.graphqlStrings.ObjectTypeExtension]
   @scala.inline
-  def ObjectValue: typings.graphql.graphqlStrings.ObjectValue = this.cast("ObjectValue")
+  def ObjectValue: typings.graphql.graphqlStrings.ObjectValue = "ObjectValue".asInstanceOf[typings.graphql.graphqlStrings.ObjectValue]
   @scala.inline
-  def OperationDefinition: typings.graphql.graphqlStrings.OperationDefinition = this.cast("OperationDefinition")
+  def OperationDefinition: typings.graphql.graphqlStrings.OperationDefinition = "OperationDefinition".asInstanceOf[typings.graphql.graphqlStrings.OperationDefinition]
   @scala.inline
-  def OperationTypeDefinition: typings.graphql.graphqlStrings.OperationTypeDefinition = this.cast("OperationTypeDefinition")
+  def OperationTypeDefinition: typings.graphql.graphqlStrings.OperationTypeDefinition = "OperationTypeDefinition".asInstanceOf[typings.graphql.graphqlStrings.OperationTypeDefinition]
   @scala.inline
-  def ScalarTypeDefinition: typings.graphql.graphqlStrings.ScalarTypeDefinition = this.cast("ScalarTypeDefinition")
+  def ScalarTypeDefinition: typings.graphql.graphqlStrings.ScalarTypeDefinition = "ScalarTypeDefinition".asInstanceOf[typings.graphql.graphqlStrings.ScalarTypeDefinition]
   @scala.inline
-  def ScalarTypeExtension: typings.graphql.graphqlStrings.ScalarTypeExtension = this.cast("ScalarTypeExtension")
+  def ScalarTypeExtension: typings.graphql.graphqlStrings.ScalarTypeExtension = "ScalarTypeExtension".asInstanceOf[typings.graphql.graphqlStrings.ScalarTypeExtension]
   @scala.inline
-  def SchemaDefinition: typings.graphql.graphqlStrings.SchemaDefinition = this.cast("SchemaDefinition")
+  def SchemaDefinition: typings.graphql.graphqlStrings.SchemaDefinition = "SchemaDefinition".asInstanceOf[typings.graphql.graphqlStrings.SchemaDefinition]
   @scala.inline
-  def SchemaExtension: typings.graphql.graphqlStrings.SchemaExtension = this.cast("SchemaExtension")
+  def SchemaExtension: typings.graphql.graphqlStrings.SchemaExtension = "SchemaExtension".asInstanceOf[typings.graphql.graphqlStrings.SchemaExtension]
   @scala.inline
-  def SelectionSet: typings.graphql.graphqlStrings.SelectionSet = this.cast("SelectionSet")
+  def SelectionSet: typings.graphql.graphqlStrings.SelectionSet = "SelectionSet".asInstanceOf[typings.graphql.graphqlStrings.SelectionSet]
   @scala.inline
-  def StringValue: typings.graphql.graphqlStrings.StringValue = this.cast("StringValue")
+  def StringValue: typings.graphql.graphqlStrings.StringValue = "StringValue".asInstanceOf[typings.graphql.graphqlStrings.StringValue]
   @scala.inline
-  def UnionTypeDefinition: typings.graphql.graphqlStrings.UnionTypeDefinition = this.cast("UnionTypeDefinition")
+  def UnionTypeDefinition: typings.graphql.graphqlStrings.UnionTypeDefinition = "UnionTypeDefinition".asInstanceOf[typings.graphql.graphqlStrings.UnionTypeDefinition]
   @scala.inline
-  def UnionTypeExtension: typings.graphql.graphqlStrings.UnionTypeExtension = this.cast("UnionTypeExtension")
+  def UnionTypeExtension: typings.graphql.graphqlStrings.UnionTypeExtension = "UnionTypeExtension".asInstanceOf[typings.graphql.graphqlStrings.UnionTypeExtension]
   @scala.inline
-  def Variable: typings.graphql.graphqlStrings.Variable = this.cast("Variable")
+  def Variable: typings.graphql.graphqlStrings.Variable = "Variable".asInstanceOf[typings.graphql.graphqlStrings.Variable]
   @scala.inline
-  def VariableDefinition: typings.graphql.graphqlStrings.VariableDefinition = this.cast("VariableDefinition")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VariableDefinition: typings.graphql.graphqlStrings.VariableDefinition = "VariableDefinition".asInstanceOf[typings.graphql.graphqlStrings.VariableDefinition]
 }
 

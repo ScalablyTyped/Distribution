@@ -70,7 +70,6 @@ object AnonGroup {
     ]
   ): AnonGroup = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGroup]
   }
 }

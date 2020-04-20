@@ -13,7 +13,6 @@ object CredentialsAuthData {
   @scala.inline
   def apply(login: String, password: String): CredentialsAuthData = {
     val __obj = js.Dynamic.literal(login = login.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CredentialsAuthData]
   }
 }

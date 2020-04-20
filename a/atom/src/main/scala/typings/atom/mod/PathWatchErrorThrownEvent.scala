@@ -19,7 +19,6 @@ object PathWatchErrorThrownEvent {
   @scala.inline
   def apply(error: Error, handle: () => Unit): PathWatchErrorThrownEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], handle = js.Any.fromFunction0(handle))
-  
     __obj.asInstanceOf[PathWatchErrorThrownEvent]
   }
 }

@@ -18,7 +18,6 @@ object AndroidApi {
   @scala.inline
   def apply(actionViewIntent: (String, String) => js.Promise[_]): AndroidApi = {
     val __obj = js.Dynamic.literal(actionViewIntent = js.Any.fromFunction2(actionViewIntent))
-  
     __obj.asInstanceOf[AndroidApi]
   }
 }

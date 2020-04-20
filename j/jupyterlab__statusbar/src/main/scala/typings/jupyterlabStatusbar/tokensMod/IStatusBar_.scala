@@ -23,7 +23,6 @@ object IStatusBar_ {
   @scala.inline
   def apply(registerStatusItem: (String, IItem) => IDisposable): IStatusBar_ = {
     val __obj = js.Dynamic.literal(registerStatusItem = js.Any.fromFunction2(registerStatusItem))
-  
     __obj.asInstanceOf[IStatusBar_]
   }
 }

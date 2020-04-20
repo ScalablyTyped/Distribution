@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactBeforeunloadComponents extends reactBeforeunloadProps {
   @scala.inline
-  def Beforeunload: ComponentType[BeforeunloadProps] = typings.reactBeforeunload.mod.Beforeunload.asInstanceOf[typings.react.mod.ComponentType[BeforeunloadProps]]
+  def Beforeunload: ComponentType[BeforeunloadProps] = typings.reactBeforeunload.mod.Beforeunload.asInstanceOf[ComponentType[BeforeunloadProps]]
 }
 

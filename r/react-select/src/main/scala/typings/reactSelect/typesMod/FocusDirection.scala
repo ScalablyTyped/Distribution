@@ -16,18 +16,16 @@ trait FocusDirection extends js.Object
 
 object FocusDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def down: typings.reactSelect.reactSelectStrings.down = "down".asInstanceOf[typings.reactSelect.reactSelectStrings.down]
   @scala.inline
-  def down: typings.reactSelect.reactSelectStrings.down = this.cast("down")
+  def first: typings.reactSelect.reactSelectStrings.first = "first".asInstanceOf[typings.reactSelect.reactSelectStrings.first]
   @scala.inline
-  def first: typings.reactSelect.reactSelectStrings.first = this.cast("first")
+  def last: typings.reactSelect.reactSelectStrings.last = "last".asInstanceOf[typings.reactSelect.reactSelectStrings.last]
   @scala.inline
-  def last: typings.reactSelect.reactSelectStrings.last = this.cast("last")
+  def pagedown: typings.reactSelect.reactSelectStrings.pagedown = "pagedown".asInstanceOf[typings.reactSelect.reactSelectStrings.pagedown]
   @scala.inline
-  def pagedown: typings.reactSelect.reactSelectStrings.pagedown = this.cast("pagedown")
+  def pageup: typings.reactSelect.reactSelectStrings.pageup = "pageup".asInstanceOf[typings.reactSelect.reactSelectStrings.pageup]
   @scala.inline
-  def pageup: typings.reactSelect.reactSelectStrings.pageup = this.cast("pageup")
-  @scala.inline
-  def up: typings.reactSelect.reactSelectStrings.up = this.cast("up")
+  def up: typings.reactSelect.reactSelectStrings.up = "up".asInstanceOf[typings.reactSelect.reactSelectStrings.up]
 }
 

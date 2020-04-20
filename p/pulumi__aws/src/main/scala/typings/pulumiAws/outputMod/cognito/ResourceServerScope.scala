@@ -20,7 +20,6 @@ object ResourceServerScope {
   @scala.inline
   def apply(scopeDescription: String, scopeName: String): ResourceServerScope = {
     val __obj = js.Dynamic.literal(scopeDescription = scopeDescription.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceServerScope]
   }
 }

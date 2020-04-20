@@ -14,14 +14,12 @@ trait OptionsPanKeyValue extends js.Object
 
 object OptionsPanKeyValue {
   @scala.inline
-  def alt: typings.highcharts.highchartsStrings.alt = this.cast("alt")
+  def alt: typings.highcharts.highchartsStrings.alt = "alt".asInstanceOf[typings.highcharts.highchartsStrings.alt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ctrl: typings.highcharts.highchartsStrings.ctrl = "ctrl".asInstanceOf[typings.highcharts.highchartsStrings.ctrl]
   @scala.inline
-  def ctrl: typings.highcharts.highchartsStrings.ctrl = this.cast("ctrl")
+  def meta: typings.highcharts.highchartsStrings.meta = "meta".asInstanceOf[typings.highcharts.highchartsStrings.meta]
   @scala.inline
-  def meta: typings.highcharts.highchartsStrings.meta = this.cast("meta")
-  @scala.inline
-  def shift: typings.highcharts.highchartsStrings.shift = this.cast("shift")
+  def shift: typings.highcharts.highchartsStrings.shift = "shift".asInstanceOf[typings.highcharts.highchartsStrings.shift]
 }
 

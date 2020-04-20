@@ -17,7 +17,6 @@ object IMemoryBuffer {
   @scala.inline
   def apply(close: () => Unit, createReference: () => IMemoryBufferReference): IMemoryBuffer = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), createReference = js.Any.fromFunction0(createReference))
-  
     __obj.asInstanceOf[IMemoryBuffer]
   }
 }

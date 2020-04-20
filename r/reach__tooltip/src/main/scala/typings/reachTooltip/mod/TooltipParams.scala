@@ -15,7 +15,6 @@ object TooltipParams {
   @scala.inline
   def apply(id: String, isVisible: Boolean, triggerRect: DOMRect): TooltipParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], triggerRect = triggerRect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TooltipParams]
   }
 }

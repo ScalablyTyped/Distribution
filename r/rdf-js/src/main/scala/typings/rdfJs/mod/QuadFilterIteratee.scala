@@ -15,7 +15,6 @@ object QuadFilterIteratee {
   @scala.inline
   def apply[Q /* <: BaseQuad */](test: (Q, Dataset[Q, Q]) => Boolean): QuadFilterIteratee[Q] = {
     val __obj = js.Dynamic.literal(test = js.Any.fromFunction2(test))
-  
     __obj.asInstanceOf[QuadFilterIteratee[Q]]
   }
 }

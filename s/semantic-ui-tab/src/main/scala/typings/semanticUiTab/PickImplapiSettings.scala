@@ -14,7 +14,6 @@ object PickImplapiSettings {
   @scala.inline
   def apply(apiSettings: ApiSettings): PickImplapiSettings = {
     val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplapiSettings]
   }
 }

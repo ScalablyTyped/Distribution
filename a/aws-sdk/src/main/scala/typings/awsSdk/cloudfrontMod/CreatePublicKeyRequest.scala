@@ -16,7 +16,6 @@ object CreatePublicKeyRequest {
   @scala.inline
   def apply(PublicKeyConfig: PublicKeyConfig): CreatePublicKeyRequest = {
     val __obj = js.Dynamic.literal(PublicKeyConfig = PublicKeyConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePublicKeyRequest]
   }
 }

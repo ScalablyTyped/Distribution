@@ -133,7 +133,7 @@ class ThemeManager_ protected () extends IThemeManager {
     * A signal fired when the application theme changes.
     */
   @JSName("themeChanged")
-  def themeChanged_MThemeManager_(): ISignal[this.type, IChangedArgs[String, String | Null, String]] = js.native
+  def themeChanged_MThemeManager_ : ISignal[this.type, IChangedArgs[String, String | Null, String]] = js.native
   /**
     * Test whether a given theme styles scrollbars,
     * and if the user has scrollbar styling enabled.
@@ -144,12 +144,12 @@ class ThemeManager_ protected () extends IThemeManager {
     * Get the name of the current theme.
     */
   @JSName("theme")
-  def theme_MThemeManager_(): String | Null = js.native
+  def theme_MThemeManager_ : String | Null = js.native
   /**
     * The names of the registered themes.
     */
   @JSName("themes")
-  def themes_MThemeManager_(): js.Array[String] = js.native
+  def themes_MThemeManager_ : js.Array[String] = js.native
   /**
     * Toggle the `theme-scrollbbars` setting.
     */

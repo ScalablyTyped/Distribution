@@ -42,7 +42,6 @@ object MDCTextFieldHelperTextAdapter {
     setContent: String => Unit
   ): MDCTextFieldHelperTextAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), hasClass = js.Any.fromFunction1(hasClass), removeAttr = js.Any.fromFunction1(removeAttr), removeClass = js.Any.fromFunction1(removeClass), setAttr = js.Any.fromFunction2(setAttr), setContent = js.Any.fromFunction1(setContent))
-  
     __obj.asInstanceOf[MDCTextFieldHelperTextAdapter]
   }
 }

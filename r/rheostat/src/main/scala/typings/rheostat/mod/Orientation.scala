@@ -12,10 +12,8 @@ trait Orientation extends js.Object
 
 object Orientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.rheostat.rheostatStrings.horizontal = "horizontal".asInstanceOf[typings.rheostat.rheostatStrings.horizontal]
   @scala.inline
-  def horizontal: typings.rheostat.rheostatStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.rheostat.rheostatStrings.vertical = this.cast("vertical")
+  def vertical: typings.rheostat.rheostatStrings.vertical = "vertical".asInstanceOf[typings.rheostat.rheostatStrings.vertical]
 }
 

@@ -16,34 +16,34 @@ import scala.scalajs.js.annotation._
 
 trait storybookAddonKnobsProps {
   @scala.inline
-  def ArrayProps: ArrayTypeProps.type = typings.storybookAddonKnobs.arrayMod.ArrayTypeProps
+  def ArrayProps: ArrayTypeProps.type = ArrayTypeProps
   type ArrayProps = ArrayTypeProps
   @scala.inline
-  def CheckboxesProps: CheckboxesTypeProps.type = typings.storybookAddonKnobs.checkboxesMod.CheckboxesTypeProps
+  def CheckboxesProps: CheckboxesTypeProps.type = CheckboxesTypeProps
   type CheckboxesProps = CheckboxesTypeProps
   @scala.inline
-  def ColorProps: KnobControlProps.type = typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
+  def ColorProps: KnobControlProps.type = KnobControlProps
   type ColorProps = ColorTypeProps
   @scala.inline
-  def DateProps: KnobControlProps.type = typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
+  def DateProps: KnobControlProps.type = KnobControlProps
   type DateProps = DateTypeProps
   @scala.inline
-  def NumberProps: NumberTypeProps.type = typings.storybookAddonKnobs.numberMod.NumberTypeProps
+  def NumberProps: NumberTypeProps.type = NumberTypeProps
   type NumberProps = NumberTypeProps
   @scala.inline
-  def ObjectProps: KnobControlProps.type = typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
+  def ObjectProps: KnobControlProps.type = KnobControlProps
   type ObjectProps[T] = ObjectTypeProps[T]
   @scala.inline
-  def PanelProps: KnobPanelProps.type = typings.storybookAddonKnobs.panelMod.KnobPanelProps
+  def PanelProps: KnobPanelProps.type = KnobPanelProps
   type PanelProps = KnobPanelProps
   @scala.inline
   def PropFormProps: typings.storybookAddonKnobs.propFormMod.PropFormProps.type = typings.storybookAddonKnobs.propFormMod.PropFormProps
   type PropFormProps = typings.storybookAddonKnobs.propFormMod.PropFormProps
   @scala.inline
-  def RadioProps: RadiosTypeProps.type = typings.storybookAddonKnobs.radioMod.RadiosTypeProps
+  def RadioProps: RadiosTypeProps.type = RadiosTypeProps
   type RadioProps = RadiosTypeProps
   @scala.inline
-  def TextProps: KnobControlProps.type = typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
+  def TextProps: KnobControlProps.type = KnobControlProps
   type TextProps = TextTypeProps
 }
 

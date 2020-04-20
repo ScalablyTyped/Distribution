@@ -12,7 +12,6 @@ object BookmarkReorderInfo {
   @scala.inline
   def apply(childIds: js.Array[String]): BookmarkReorderInfo = {
     val __obj = js.Dynamic.literal(childIds = childIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BookmarkReorderInfo]
   }
 }

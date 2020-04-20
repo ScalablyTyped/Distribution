@@ -13,7 +13,6 @@ object TypeofBatch {
   @scala.inline
   def apply(Types: TypeofBatch): TypeofBatch = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofBatch]
   }
 }

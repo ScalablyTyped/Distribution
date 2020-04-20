@@ -378,374 +378,372 @@ trait MsoAutoShapeType extends js.Object
 
 object MsoAutoShapeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoShape10pointStar: `149` = 149.asInstanceOf[`149`]
   @scala.inline
-  def msoShape10pointStar: `149` = this.cast(149)
+  def msoShape12pointStar: `150` = 150.asInstanceOf[`150`]
   @scala.inline
-  def msoShape12pointStar: `150` = this.cast(150)
+  def msoShape16pointStar: `94` = 94.asInstanceOf[`94`]
   @scala.inline
-  def msoShape16pointStar: `94` = this.cast(94)
+  def msoShape24pointStar: `95` = 95.asInstanceOf[`95`]
   @scala.inline
-  def msoShape24pointStar: `95` = this.cast(95)
+  def msoShape32pointStar: `96` = 96.asInstanceOf[`96`]
   @scala.inline
-  def msoShape32pointStar: `96` = this.cast(96)
+  def msoShape4pointStar: `91` = 91.asInstanceOf[`91`]
   @scala.inline
-  def msoShape4pointStar: `91` = this.cast(91)
+  def msoShape5pointStar: `92` = 92.asInstanceOf[`92`]
   @scala.inline
-  def msoShape5pointStar: `92` = this.cast(92)
+  def msoShape6pointStar: `147` = 147.asInstanceOf[`147`]
   @scala.inline
-  def msoShape6pointStar: `147` = this.cast(147)
+  def msoShape7pointStar: `148` = 148.asInstanceOf[`148`]
   @scala.inline
-  def msoShape7pointStar: `148` = this.cast(148)
+  def msoShape8pointStar: `93` = 93.asInstanceOf[`93`]
   @scala.inline
-  def msoShape8pointStar: `93` = this.cast(93)
+  def msoShapeActionButtonBackorPrevious: `129` = 129.asInstanceOf[`129`]
   @scala.inline
-  def msoShapeActionButtonBackorPrevious: `129` = this.cast(129)
+  def msoShapeActionButtonBeginning: `131` = 131.asInstanceOf[`131`]
   @scala.inline
-  def msoShapeActionButtonBeginning: `131` = this.cast(131)
+  def msoShapeActionButtonCustom: `125` = 125.asInstanceOf[`125`]
   @scala.inline
-  def msoShapeActionButtonCustom: `125` = this.cast(125)
+  def msoShapeActionButtonDocument: `134` = 134.asInstanceOf[`134`]
   @scala.inline
-  def msoShapeActionButtonDocument: `134` = this.cast(134)
+  def msoShapeActionButtonEnd: `132` = 132.asInstanceOf[`132`]
   @scala.inline
-  def msoShapeActionButtonEnd: `132` = this.cast(132)
+  def msoShapeActionButtonForwardorNext: `130` = 130.asInstanceOf[`130`]
   @scala.inline
-  def msoShapeActionButtonForwardorNext: `130` = this.cast(130)
+  def msoShapeActionButtonHelp: `127` = 127.asInstanceOf[`127`]
   @scala.inline
-  def msoShapeActionButtonHelp: `127` = this.cast(127)
+  def msoShapeActionButtonHome: `126` = 126.asInstanceOf[`126`]
   @scala.inline
-  def msoShapeActionButtonHome: `126` = this.cast(126)
+  def msoShapeActionButtonInformation: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def msoShapeActionButtonInformation: `128` = this.cast(128)
+  def msoShapeActionButtonMovie: `136` = 136.asInstanceOf[`136`]
   @scala.inline
-  def msoShapeActionButtonMovie: `136` = this.cast(136)
+  def msoShapeActionButtonReturn: `133` = 133.asInstanceOf[`133`]
   @scala.inline
-  def msoShapeActionButtonReturn: `133` = this.cast(133)
+  def msoShapeActionButtonSound: `135` = 135.asInstanceOf[`135`]
   @scala.inline
-  def msoShapeActionButtonSound: `135` = this.cast(135)
+  def msoShapeArc: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def msoShapeArc: `25` = this.cast(25)
+  def msoShapeBalloon: `137` = 137.asInstanceOf[`137`]
   @scala.inline
-  def msoShapeBalloon: `137` = this.cast(137)
+  def msoShapeBentArrow: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def msoShapeBentArrow: `41` = this.cast(41)
+  def msoShapeBentUpArrow: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def msoShapeBentUpArrow: `44` = this.cast(44)
+  def msoShapeBevel: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoShapeBevel: `15` = this.cast(15)
+  def msoShapeBlockArc: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoShapeBlockArc: `20` = this.cast(20)
+  def msoShapeCan: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoShapeCan: `13` = this.cast(13)
+  def msoShapeChartPlus: `182` = 182.asInstanceOf[`182`]
   @scala.inline
-  def msoShapeChartPlus: `182` = this.cast(182)
+  def msoShapeChartStar: `181` = 181.asInstanceOf[`181`]
   @scala.inline
-  def msoShapeChartStar: `181` = this.cast(181)
+  def msoShapeChartX: `180` = 180.asInstanceOf[`180`]
   @scala.inline
-  def msoShapeChartX: `180` = this.cast(180)
+  def msoShapeChevron: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def msoShapeChevron: `52` = this.cast(52)
+  def msoShapeChord: `161` = 161.asInstanceOf[`161`]
   @scala.inline
-  def msoShapeChord: `161` = this.cast(161)
+  def msoShapeCircularArrow: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def msoShapeCircularArrow: `60` = this.cast(60)
+  def msoShapeCloud: `179` = 179.asInstanceOf[`179`]
   @scala.inline
-  def msoShapeCloud: `179` = this.cast(179)
+  def msoShapeCloudCallout: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def msoShapeCloudCallout: `108` = this.cast(108)
+  def msoShapeCorner: `162` = 162.asInstanceOf[`162`]
   @scala.inline
-  def msoShapeCorner: `162` = this.cast(162)
+  def msoShapeCornerTabs: `169` = 169.asInstanceOf[`169`]
   @scala.inline
-  def msoShapeCornerTabs: `169` = this.cast(169)
+  def msoShapeCross: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoShapeCross: `11` = this.cast(11)
+  def msoShapeCube: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoShapeCube: `14` = this.cast(14)
+  def msoShapeCurvedDownArrow: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def msoShapeCurvedDownArrow: `48` = this.cast(48)
+  def msoShapeCurvedDownRibbon: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def msoShapeCurvedDownRibbon: `100` = this.cast(100)
+  def msoShapeCurvedLeftArrow: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def msoShapeCurvedLeftArrow: `46` = this.cast(46)
+  def msoShapeCurvedRightArrow: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def msoShapeCurvedRightArrow: `45` = this.cast(45)
+  def msoShapeCurvedUpArrow: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def msoShapeCurvedUpArrow: `47` = this.cast(47)
+  def msoShapeCurvedUpRibbon: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def msoShapeCurvedUpRibbon: `99` = this.cast(99)
+  def msoShapeDecagon: `144` = 144.asInstanceOf[`144`]
   @scala.inline
-  def msoShapeDecagon: `144` = this.cast(144)
+  def msoShapeDiagonalStripe: `141` = 141.asInstanceOf[`141`]
   @scala.inline
-  def msoShapeDiagonalStripe: `141` = this.cast(141)
+  def msoShapeDiamond: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoShapeDiamond: `4` = this.cast(4)
+  def msoShapeDodecagon: `146` = 146.asInstanceOf[`146`]
   @scala.inline
-  def msoShapeDodecagon: `146` = this.cast(146)
+  def msoShapeDonut: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoShapeDonut: `18` = this.cast(18)
+  def msoShapeDoubleBrace: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def msoShapeDoubleBrace: `27` = this.cast(27)
+  def msoShapeDoubleBracket: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoShapeDoubleBracket: `26` = this.cast(26)
+  def msoShapeDoubleWave: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def msoShapeDoubleWave: `104` = this.cast(104)
+  def msoShapeDownArrow: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def msoShapeDownArrow: `36` = this.cast(36)
+  def msoShapeDownArrowCallout: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def msoShapeDownArrowCallout: `56` = this.cast(56)
+  def msoShapeDownRibbon: `98` = 98.asInstanceOf[`98`]
   @scala.inline
-  def msoShapeDownRibbon: `98` = this.cast(98)
+  def msoShapeExplosion1: `89` = 89.asInstanceOf[`89`]
   @scala.inline
-  def msoShapeExplosion1: `89` = this.cast(89)
+  def msoShapeExplosion2: `90` = 90.asInstanceOf[`90`]
   @scala.inline
-  def msoShapeExplosion2: `90` = this.cast(90)
+  def msoShapeFlowchartAlternateProcess: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def msoShapeFlowchartAlternateProcess: `62` = this.cast(62)
+  def msoShapeFlowchartCard: `75` = 75.asInstanceOf[`75`]
   @scala.inline
-  def msoShapeFlowchartCard: `75` = this.cast(75)
+  def msoShapeFlowchartCollate: `79` = 79.asInstanceOf[`79`]
   @scala.inline
-  def msoShapeFlowchartCollate: `79` = this.cast(79)
+  def msoShapeFlowchartConnector: `73` = 73.asInstanceOf[`73`]
   @scala.inline
-  def msoShapeFlowchartConnector: `73` = this.cast(73)
+  def msoShapeFlowchartData: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def msoShapeFlowchartData: `64` = this.cast(64)
+  def msoShapeFlowchartDecision: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def msoShapeFlowchartDecision: `63` = this.cast(63)
+  def msoShapeFlowchartDelay: `84` = 84.asInstanceOf[`84`]
   @scala.inline
-  def msoShapeFlowchartDelay: `84` = this.cast(84)
+  def msoShapeFlowchartDirectAccessStorage: `87` = 87.asInstanceOf[`87`]
   @scala.inline
-  def msoShapeFlowchartDirectAccessStorage: `87` = this.cast(87)
+  def msoShapeFlowchartDisplay: `88` = 88.asInstanceOf[`88`]
   @scala.inline
-  def msoShapeFlowchartDisplay: `88` = this.cast(88)
+  def msoShapeFlowchartDocument: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def msoShapeFlowchartDocument: `67` = this.cast(67)
+  def msoShapeFlowchartExtract: `81` = 81.asInstanceOf[`81`]
   @scala.inline
-  def msoShapeFlowchartExtract: `81` = this.cast(81)
+  def msoShapeFlowchartInternalStorage: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def msoShapeFlowchartInternalStorage: `66` = this.cast(66)
+  def msoShapeFlowchartMagneticDisk: `86` = 86.asInstanceOf[`86`]
   @scala.inline
-  def msoShapeFlowchartMagneticDisk: `86` = this.cast(86)
+  def msoShapeFlowchartManualInput: `71` = 71.asInstanceOf[`71`]
   @scala.inline
-  def msoShapeFlowchartManualInput: `71` = this.cast(71)
+  def msoShapeFlowchartManualOperation: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def msoShapeFlowchartManualOperation: `72` = this.cast(72)
+  def msoShapeFlowchartMerge: `82` = 82.asInstanceOf[`82`]
   @scala.inline
-  def msoShapeFlowchartMerge: `82` = this.cast(82)
+  def msoShapeFlowchartMultidocument: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def msoShapeFlowchartMultidocument: `68` = this.cast(68)
+  def msoShapeFlowchartOfflineStorage: `139` = 139.asInstanceOf[`139`]
   @scala.inline
-  def msoShapeFlowchartOfflineStorage: `139` = this.cast(139)
+  def msoShapeFlowchartOffpageConnector: `74` = 74.asInstanceOf[`74`]
   @scala.inline
-  def msoShapeFlowchartOffpageConnector: `74` = this.cast(74)
+  def msoShapeFlowchartOr: `78` = 78.asInstanceOf[`78`]
   @scala.inline
-  def msoShapeFlowchartOr: `78` = this.cast(78)
+  def msoShapeFlowchartPredefinedProcess: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def msoShapeFlowchartPredefinedProcess: `65` = this.cast(65)
+  def msoShapeFlowchartPreparation: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def msoShapeFlowchartPreparation: `70` = this.cast(70)
+  def msoShapeFlowchartProcess: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def msoShapeFlowchartProcess: `61` = this.cast(61)
+  def msoShapeFlowchartPunchedTape: `76` = 76.asInstanceOf[`76`]
   @scala.inline
-  def msoShapeFlowchartPunchedTape: `76` = this.cast(76)
+  def msoShapeFlowchartSequentialAccessStorage: `85` = 85.asInstanceOf[`85`]
   @scala.inline
-  def msoShapeFlowchartSequentialAccessStorage: `85` = this.cast(85)
+  def msoShapeFlowchartSort: `80` = 80.asInstanceOf[`80`]
   @scala.inline
-  def msoShapeFlowchartSort: `80` = this.cast(80)
+  def msoShapeFlowchartStoredData: `83` = 83.asInstanceOf[`83`]
   @scala.inline
-  def msoShapeFlowchartStoredData: `83` = this.cast(83)
+  def msoShapeFlowchartSummingJunction: `77` = 77.asInstanceOf[`77`]
   @scala.inline
-  def msoShapeFlowchartSummingJunction: `77` = this.cast(77)
+  def msoShapeFlowchartTerminator: `69` = 69.asInstanceOf[`69`]
   @scala.inline
-  def msoShapeFlowchartTerminator: `69` = this.cast(69)
+  def msoShapeFoldedCorner: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoShapeFoldedCorner: `16` = this.cast(16)
+  def msoShapeFrame: `158` = 158.asInstanceOf[`158`]
   @scala.inline
-  def msoShapeFrame: `158` = this.cast(158)
+  def msoShapeFunnel: `174` = 174.asInstanceOf[`174`]
   @scala.inline
-  def msoShapeFunnel: `174` = this.cast(174)
+  def msoShapeGear6: `172` = 172.asInstanceOf[`172`]
   @scala.inline
-  def msoShapeGear6: `172` = this.cast(172)
+  def msoShapeGear9: `173` = 173.asInstanceOf[`173`]
   @scala.inline
-  def msoShapeGear9: `173` = this.cast(173)
+  def msoShapeHalfFrame: `159` = 159.asInstanceOf[`159`]
   @scala.inline
-  def msoShapeHalfFrame: `159` = this.cast(159)
+  def msoShapeHeart: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoShapeHeart: `21` = this.cast(21)
+  def msoShapeHeptagon: `145` = 145.asInstanceOf[`145`]
   @scala.inline
-  def msoShapeHeptagon: `145` = this.cast(145)
+  def msoShapeHexagon: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoShapeHexagon: `10` = this.cast(10)
+  def msoShapeHorizontalScroll: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def msoShapeHorizontalScroll: `102` = this.cast(102)
+  def msoShapeIsoscelesTriangle: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoShapeIsoscelesTriangle: `7` = this.cast(7)
+  def msoShapeLeftArrow: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def msoShapeLeftArrow: `34` = this.cast(34)
+  def msoShapeLeftArrowCallout: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def msoShapeLeftArrowCallout: `54` = this.cast(54)
+  def msoShapeLeftBrace: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def msoShapeLeftBrace: `31` = this.cast(31)
+  def msoShapeLeftBracket: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def msoShapeLeftBracket: `29` = this.cast(29)
+  def msoShapeLeftCircularArrow: `176` = 176.asInstanceOf[`176`]
   @scala.inline
-  def msoShapeLeftCircularArrow: `176` = this.cast(176)
+  def msoShapeLeftRightArrow: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def msoShapeLeftRightArrow: `37` = this.cast(37)
+  def msoShapeLeftRightArrowCallout: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def msoShapeLeftRightArrowCallout: `57` = this.cast(57)
+  def msoShapeLeftRightCircularArrow: `177` = 177.asInstanceOf[`177`]
   @scala.inline
-  def msoShapeLeftRightCircularArrow: `177` = this.cast(177)
+  def msoShapeLeftRightRibbon: `140` = 140.asInstanceOf[`140`]
   @scala.inline
-  def msoShapeLeftRightRibbon: `140` = this.cast(140)
+  def msoShapeLeftRightUpArrow: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def msoShapeLeftRightUpArrow: `40` = this.cast(40)
+  def msoShapeLeftUpArrow: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def msoShapeLeftUpArrow: `43` = this.cast(43)
+  def msoShapeLightningBolt: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoShapeLightningBolt: `22` = this.cast(22)
+  def msoShapeLineCallout1: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def msoShapeLineCallout1: `109` = this.cast(109)
+  def msoShapeLineCallout1AccentBar: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def msoShapeLineCallout1AccentBar: `113` = this.cast(113)
+  def msoShapeLineCallout1BorderandAccentBar: `121` = 121.asInstanceOf[`121`]
   @scala.inline
-  def msoShapeLineCallout1BorderandAccentBar: `121` = this.cast(121)
+  def msoShapeLineCallout1NoBorder: `117` = 117.asInstanceOf[`117`]
   @scala.inline
-  def msoShapeLineCallout1NoBorder: `117` = this.cast(117)
+  def msoShapeLineCallout2: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def msoShapeLineCallout2: `110` = this.cast(110)
+  def msoShapeLineCallout2AccentBar: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def msoShapeLineCallout2AccentBar: `114` = this.cast(114)
+  def msoShapeLineCallout2BorderandAccentBar: `122` = 122.asInstanceOf[`122`]
   @scala.inline
-  def msoShapeLineCallout2BorderandAccentBar: `122` = this.cast(122)
+  def msoShapeLineCallout2NoBorder: `118` = 118.asInstanceOf[`118`]
   @scala.inline
-  def msoShapeLineCallout2NoBorder: `118` = this.cast(118)
+  def msoShapeLineCallout3: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def msoShapeLineCallout3: `111` = this.cast(111)
+  def msoShapeLineCallout3AccentBar: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def msoShapeLineCallout3AccentBar: `115` = this.cast(115)
+  def msoShapeLineCallout3BorderandAccentBar: `123` = 123.asInstanceOf[`123`]
   @scala.inline
-  def msoShapeLineCallout3BorderandAccentBar: `123` = this.cast(123)
+  def msoShapeLineCallout3NoBorder: `119` = 119.asInstanceOf[`119`]
   @scala.inline
-  def msoShapeLineCallout3NoBorder: `119` = this.cast(119)
+  def msoShapeLineCallout4: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def msoShapeLineCallout4: `112` = this.cast(112)
+  def msoShapeLineCallout4AccentBar: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def msoShapeLineCallout4AccentBar: `116` = this.cast(116)
+  def msoShapeLineCallout4BorderandAccentBar: `124` = 124.asInstanceOf[`124`]
   @scala.inline
-  def msoShapeLineCallout4BorderandAccentBar: `124` = this.cast(124)
+  def msoShapeLineCallout4NoBorder: `120` = 120.asInstanceOf[`120`]
   @scala.inline
-  def msoShapeLineCallout4NoBorder: `120` = this.cast(120)
+  def msoShapeLineInverse: `183` = 183.asInstanceOf[`183`]
   @scala.inline
-  def msoShapeLineInverse: `183` = this.cast(183)
+  def msoShapeMathDivide: `166` = 166.asInstanceOf[`166`]
   @scala.inline
-  def msoShapeMathDivide: `166` = this.cast(166)
+  def msoShapeMathEqual: `167` = 167.asInstanceOf[`167`]
   @scala.inline
-  def msoShapeMathEqual: `167` = this.cast(167)
+  def msoShapeMathMinus: `164` = 164.asInstanceOf[`164`]
   @scala.inline
-  def msoShapeMathMinus: `164` = this.cast(164)
+  def msoShapeMathMultiply: `165` = 165.asInstanceOf[`165`]
   @scala.inline
-  def msoShapeMathMultiply: `165` = this.cast(165)
+  def msoShapeMathNotEqual: `168` = 168.asInstanceOf[`168`]
   @scala.inline
-  def msoShapeMathNotEqual: `168` = this.cast(168)
+  def msoShapeMathPlus: `163` = 163.asInstanceOf[`163`]
   @scala.inline
-  def msoShapeMathPlus: `163` = this.cast(163)
+  def msoShapeMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoShapeMixed: `-2` = this.cast(-2)
+  def msoShapeMoon: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoShapeMoon: `24` = this.cast(24)
+  def msoShapeNoSymbol: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoShapeNoSymbol: `19` = this.cast(19)
+  def msoShapeNonIsoscelesTrapezoid: `143` = 143.asInstanceOf[`143`]
   @scala.inline
-  def msoShapeNonIsoscelesTrapezoid: `143` = this.cast(143)
+  def msoShapeNotPrimitive: `138` = 138.asInstanceOf[`138`]
   @scala.inline
-  def msoShapeNotPrimitive: `138` = this.cast(138)
+  def msoShapeNotchedRightArrow: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def msoShapeNotchedRightArrow: `50` = this.cast(50)
+  def msoShapeOctagon: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoShapeOctagon: `6` = this.cast(6)
+  def msoShapeOval: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoShapeOval: `9` = this.cast(9)
+  def msoShapeOvalCallout: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def msoShapeOvalCallout: `107` = this.cast(107)
+  def msoShapeParallelogram: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoShapeParallelogram: `2` = this.cast(2)
+  def msoShapePentagon: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def msoShapePentagon: `51` = this.cast(51)
+  def msoShapePie: `142` = 142.asInstanceOf[`142`]
   @scala.inline
-  def msoShapePie: `142` = this.cast(142)
+  def msoShapePieWedge: `175` = 175.asInstanceOf[`175`]
   @scala.inline
-  def msoShapePieWedge: `175` = this.cast(175)
+  def msoShapePlaque: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def msoShapePlaque: `28` = this.cast(28)
+  def msoShapePlaqueTabs: `171` = 171.asInstanceOf[`171`]
   @scala.inline
-  def msoShapePlaqueTabs: `171` = this.cast(171)
+  def msoShapeQuadArrow: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def msoShapeQuadArrow: `39` = this.cast(39)
+  def msoShapeQuadArrowCallout: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def msoShapeQuadArrowCallout: `59` = this.cast(59)
+  def msoShapeRectangle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoShapeRectangle: `1` = this.cast(1)
+  def msoShapeRectangularCallout: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def msoShapeRectangularCallout: `105` = this.cast(105)
+  def msoShapeRegularPentagon: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoShapeRegularPentagon: `12` = this.cast(12)
+  def msoShapeRightArrow: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def msoShapeRightArrow: `33` = this.cast(33)
+  def msoShapeRightArrowCallout: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def msoShapeRightArrowCallout: `53` = this.cast(53)
+  def msoShapeRightBrace: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def msoShapeRightBrace: `32` = this.cast(32)
+  def msoShapeRightBracket: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def msoShapeRightBracket: `30` = this.cast(30)
+  def msoShapeRightTriangle: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoShapeRightTriangle: `8` = this.cast(8)
+  def msoShapeRound1Rectangle: `151` = 151.asInstanceOf[`151`]
   @scala.inline
-  def msoShapeRound1Rectangle: `151` = this.cast(151)
+  def msoShapeRound2DiagRectangle: `153` = 153.asInstanceOf[`153`]
   @scala.inline
-  def msoShapeRound2DiagRectangle: `153` = this.cast(153)
+  def msoShapeRound2SameRectangle: `152` = 152.asInstanceOf[`152`]
   @scala.inline
-  def msoShapeRound2SameRectangle: `152` = this.cast(152)
+  def msoShapeRoundedRectangle: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoShapeRoundedRectangle: `5` = this.cast(5)
+  def msoShapeRoundedRectangularCallout: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def msoShapeRoundedRectangularCallout: `106` = this.cast(106)
+  def msoShapeSmileyFace: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoShapeSmileyFace: `17` = this.cast(17)
+  def msoShapeSnip1Rectangle: `155` = 155.asInstanceOf[`155`]
   @scala.inline
-  def msoShapeSnip1Rectangle: `155` = this.cast(155)
+  def msoShapeSnip2DiagRectangle: `157` = 157.asInstanceOf[`157`]
   @scala.inline
-  def msoShapeSnip2DiagRectangle: `157` = this.cast(157)
+  def msoShapeSnip2SameRectangle: `156` = 156.asInstanceOf[`156`]
   @scala.inline
-  def msoShapeSnip2SameRectangle: `156` = this.cast(156)
+  def msoShapeSnipRoundRectangle: `154` = 154.asInstanceOf[`154`]
   @scala.inline
-  def msoShapeSnipRoundRectangle: `154` = this.cast(154)
+  def msoShapeSquareTabs: `170` = 170.asInstanceOf[`170`]
   @scala.inline
-  def msoShapeSquareTabs: `170` = this.cast(170)
+  def msoShapeStripedRightArrow: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def msoShapeStripedRightArrow: `49` = this.cast(49)
+  def msoShapeSun: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoShapeSun: `23` = this.cast(23)
+  def msoShapeSwooshArrow: `178` = 178.asInstanceOf[`178`]
   @scala.inline
-  def msoShapeSwooshArrow: `178` = this.cast(178)
+  def msoShapeTear: `160` = 160.asInstanceOf[`160`]
   @scala.inline
-  def msoShapeTear: `160` = this.cast(160)
+  def msoShapeTrapezoid: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoShapeTrapezoid: `3` = this.cast(3)
+  def msoShapeUTurnArrow: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def msoShapeUTurnArrow: `42` = this.cast(42)
+  def msoShapeUpArrow: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def msoShapeUpArrow: `35` = this.cast(35)
+  def msoShapeUpArrowCallout: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def msoShapeUpArrowCallout: `55` = this.cast(55)
+  def msoShapeUpDownArrow: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def msoShapeUpDownArrow: `38` = this.cast(38)
+  def msoShapeUpDownArrowCallout: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def msoShapeUpDownArrowCallout: `58` = this.cast(58)
+  def msoShapeUpRibbon: `97` = 97.asInstanceOf[`97`]
   @scala.inline
-  def msoShapeUpRibbon: `97` = this.cast(97)
+  def msoShapeVerticalScroll: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def msoShapeVerticalScroll: `101` = this.cast(101)
-  @scala.inline
-  def msoShapeWave: `103` = this.cast(103)
+  def msoShapeWave: `103` = 103.asInstanceOf[`103`]
 }
 

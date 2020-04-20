@@ -12,7 +12,6 @@ object CanvasRenderingContext2D {
   @scala.inline
   def apply(msImageSmoothingEnabled: Boolean): CanvasRenderingContext2D = {
     val __obj = js.Dynamic.literal(msImageSmoothingEnabled = msImageSmoothingEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CanvasRenderingContext2D]
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@uifabric/utilities" : "7.15.4"
+      "@uifabric/utilities" : "7.15.10"
     }
   ],
   "test-dependencies" : [
     {
-      "@uifabric/utilities" : "7.15.4"
+      "@uifabric/utilities" : "7.15.10"
     }
   ],
   "compile-devDependencies" : [

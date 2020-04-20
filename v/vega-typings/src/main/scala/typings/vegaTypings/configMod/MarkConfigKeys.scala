@@ -24,32 +24,30 @@ trait MarkConfigKeys extends js.Object
 
 object MarkConfigKeys {
   @scala.inline
-  def arc: typings.vegaTypings.vegaTypingsStrings.arc = this.cast("arc")
+  def arc: typings.vegaTypings.vegaTypingsStrings.arc = "arc".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.arc]
   @scala.inline
-  def area: typings.vegaTypings.vegaTypingsStrings.area = this.cast("area")
+  def area: typings.vegaTypings.vegaTypingsStrings.area = "area".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.area]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def group: typings.vegaTypings.vegaTypingsStrings.group = "group".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.group]
   @scala.inline
-  def group: typings.vegaTypings.vegaTypingsStrings.group = this.cast("group")
+  def image: typings.vegaTypings.vegaTypingsStrings.image = "image".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.image]
   @scala.inline
-  def image: typings.vegaTypings.vegaTypingsStrings.image = this.cast("image")
+  def line: typings.vegaTypings.vegaTypingsStrings.line = "line".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.line]
   @scala.inline
-  def line: typings.vegaTypings.vegaTypingsStrings.line = this.cast("line")
+  def mark: typings.vegaTypings.vegaTypingsStrings.mark = "mark".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mark]
   @scala.inline
-  def mark: typings.vegaTypings.vegaTypingsStrings.mark = this.cast("mark")
+  def path: typings.vegaTypings.vegaTypingsStrings.path = "path".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.path]
   @scala.inline
-  def path: typings.vegaTypings.vegaTypingsStrings.path = this.cast("path")
+  def rect: typings.vegaTypings.vegaTypingsStrings.rect = "rect".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rect]
   @scala.inline
-  def rect: typings.vegaTypings.vegaTypingsStrings.rect = this.cast("rect")
+  def rule: typings.vegaTypings.vegaTypingsStrings.rule = "rule".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rule]
   @scala.inline
-  def rule: typings.vegaTypings.vegaTypingsStrings.rule = this.cast("rule")
+  def shape: typings.vegaTypings.vegaTypingsStrings.shape = "shape".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.shape]
   @scala.inline
-  def shape: typings.vegaTypings.vegaTypingsStrings.shape = this.cast("shape")
+  def symbol: typings.vegaTypings.vegaTypingsStrings.symbol = "symbol".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.symbol]
   @scala.inline
-  def symbol: typings.vegaTypings.vegaTypingsStrings.symbol = this.cast("symbol")
+  def text: typings.vegaTypings.vegaTypingsStrings.text = "text".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.text]
   @scala.inline
-  def text: typings.vegaTypings.vegaTypingsStrings.text = this.cast("text")
-  @scala.inline
-  def trail: typings.vegaTypings.vegaTypingsStrings.trail = this.cast("trail")
+  def trail: typings.vegaTypings.vegaTypingsStrings.trail = "trail".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.trail]
 }
 

@@ -24,7 +24,6 @@ object RowParser {
     shouldSkipColumnParse: js.Any
   ): RowParser = {
     val __obj = js.Dynamic.literal(columnParser = columnParser.asInstanceOf[js.Any], getStartToken = getStartToken.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), parserOptions = parserOptions.asInstanceOf[js.Any], shouldSkipColumnParse = shouldSkipColumnParse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowParser]
   }
 }

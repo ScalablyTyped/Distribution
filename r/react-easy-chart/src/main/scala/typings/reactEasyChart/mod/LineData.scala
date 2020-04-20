@@ -14,7 +14,6 @@ object LineData {
   @scala.inline
   def apply(x: Double | Date | String, y: Double | Date | String): LineData = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LineData]
   }
 }

@@ -24,7 +24,6 @@ object DeleteRouteSettingsRequest {
   @scala.inline
   def apply(ApiId: string, RouteKey: string, StageName: string): DeleteRouteSettingsRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], RouteKey = RouteKey.asInstanceOf[js.Any], StageName = StageName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRouteSettingsRequest]
   }
 }

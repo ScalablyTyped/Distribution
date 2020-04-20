@@ -26,7 +26,6 @@ object topic {
   @scala.inline
   def apply(failOn: js.Any => Unit, from: js.Any => Unit): topic = {
     val __obj = js.Dynamic.literal(failOn = js.Any.fromFunction1(failOn), from = js.Any.fromFunction1(from))
-  
     __obj.asInstanceOf[topic]
   }
 }

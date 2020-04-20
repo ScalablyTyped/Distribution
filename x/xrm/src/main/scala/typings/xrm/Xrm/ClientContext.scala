@@ -38,7 +38,6 @@ object ClientContext {
     isOffline: () => Boolean
   ): ClientContext = {
     val __obj = js.Dynamic.literal(getClient = js.Any.fromFunction0(getClient), getClientState = js.Any.fromFunction0(getClientState), getFormFactor = js.Any.fromFunction0(getFormFactor), isOffline = js.Any.fromFunction0(isOffline))
-  
     __obj.asInstanceOf[ClientContext]
   }
 }

@@ -23,7 +23,6 @@ object IBackgroundTaskRegistration {
   @scala.inline
   def apply(name: String, taskId: String, trigger: IBackgroundTrigger, unregister: Boolean => Unit): IBackgroundTaskRegistration = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], unregister = js.Any.fromFunction1(unregister))
-  
     __obj.asInstanceOf[IBackgroundTaskRegistration]
   }
 }

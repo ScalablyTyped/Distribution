@@ -13,7 +13,6 @@ object AnonShow {
   @scala.inline
   def apply(icon: String, show: Boolean): AnonShow = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShow]
   }
 }

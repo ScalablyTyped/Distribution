@@ -16,7 +16,6 @@ object DescribeTrustedAdvisorChecksResponse {
   @scala.inline
   def apply(checks: TrustedAdvisorCheckList): DescribeTrustedAdvisorChecksResponse = {
     val __obj = js.Dynamic.literal(checks = checks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTrustedAdvisorChecksResponse]
   }
 }

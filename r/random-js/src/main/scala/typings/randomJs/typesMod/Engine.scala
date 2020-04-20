@@ -12,7 +12,6 @@ object Engine {
   @scala.inline
   def apply(next: () => Double): Engine = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
-  
     __obj.asInstanceOf[Engine]
   }
 }

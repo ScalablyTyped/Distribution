@@ -12,7 +12,6 @@ object Typeofsipdump {
   @scala.inline
   def apply(send: String => Double): Typeofsipdump = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[Typeofsipdump]
   }
 }

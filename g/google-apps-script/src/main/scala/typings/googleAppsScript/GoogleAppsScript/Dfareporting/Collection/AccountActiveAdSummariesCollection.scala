@@ -14,7 +14,6 @@ object AccountActiveAdSummariesCollection {
   @scala.inline
   def apply(get: (String, String) => AccountActiveAdSummary): AccountActiveAdSummariesCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-  
     __obj.asInstanceOf[AccountActiveAdSummariesCollection]
   }
 }

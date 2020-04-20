@@ -39,15 +39,15 @@ abstract class Document protected ()
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MDocument(): FolderBase = js.native
-  def documentation(): String = js.native
+  def containerAsFolderBase_MDocument: FolderBase = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def excluded(): Boolean = js.native
+  def excluded: Boolean = js.native
   def excluded(newValue: Boolean): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MDocument(): String | Null = js.native
+  def qualifiedName_MDocument: String | Null = js.native
 }
 
 /* static members */

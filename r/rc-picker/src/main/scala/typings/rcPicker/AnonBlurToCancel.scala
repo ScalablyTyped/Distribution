@@ -18,7 +18,7 @@ trait AnonBlurToCancel extends js.Object {
   def isClickOutside(): Boolean = js.native
   def isClickOutside(clickElement: EventTarget): Boolean = js.native
   def onCancel(): Unit = js.native
-  def onSubmit(): Unit = js.native
+  def onSubmit(): Unit | Boolean = js.native
   def triggerOpen(open: Boolean): Unit = js.native
 }
 

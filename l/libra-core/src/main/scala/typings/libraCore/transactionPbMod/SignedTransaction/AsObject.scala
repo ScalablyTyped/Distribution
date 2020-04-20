@@ -19,7 +19,6 @@ object AsObject {
     senderSignature: Uint8Array | String
   ): AsObject = {
     val __obj = js.Dynamic.literal(rawTxnBytes = rawTxnBytes.asInstanceOf[js.Any], senderPublicKey = senderPublicKey.asInstanceOf[js.Any], senderSignature = senderSignature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

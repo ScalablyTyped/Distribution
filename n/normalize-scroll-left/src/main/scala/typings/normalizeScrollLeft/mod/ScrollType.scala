@@ -14,14 +14,12 @@ trait ScrollType extends js.Object
 
 object ScrollType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.normalizeScrollLeft.normalizeScrollLeftStrings.default = "default".asInstanceOf[typings.normalizeScrollLeft.normalizeScrollLeftStrings.default]
   @scala.inline
-  def default: typings.normalizeScrollLeft.normalizeScrollLeftStrings.default = this.cast("default")
+  def indeterminate: typings.normalizeScrollLeft.normalizeScrollLeftStrings.indeterminate = "indeterminate".asInstanceOf[typings.normalizeScrollLeft.normalizeScrollLeftStrings.indeterminate]
   @scala.inline
-  def indeterminate: typings.normalizeScrollLeft.normalizeScrollLeftStrings.indeterminate = this.cast("indeterminate")
+  def negative: typings.normalizeScrollLeft.normalizeScrollLeftStrings.negative = "negative".asInstanceOf[typings.normalizeScrollLeft.normalizeScrollLeftStrings.negative]
   @scala.inline
-  def negative: typings.normalizeScrollLeft.normalizeScrollLeftStrings.negative = this.cast("negative")
-  @scala.inline
-  def reverse: typings.normalizeScrollLeft.normalizeScrollLeftStrings.reverse = this.cast("reverse")
+  def reverse: typings.normalizeScrollLeft.normalizeScrollLeftStrings.reverse = "reverse".asInstanceOf[typings.normalizeScrollLeft.normalizeScrollLeftStrings.reverse]
 }
 

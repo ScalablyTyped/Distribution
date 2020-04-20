@@ -14,7 +14,6 @@ object AnonCalls {
   @scala.inline
   def apply(calls: Double, usec: Double, usec_per_call: Double): AnonCalls = {
     val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], usec = usec.asInstanceOf[js.Any], usec_per_call = usec_per_call.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCalls]
   }
 }

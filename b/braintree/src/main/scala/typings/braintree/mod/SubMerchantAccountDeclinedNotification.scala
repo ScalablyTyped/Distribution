@@ -21,7 +21,6 @@ object SubMerchantAccountDeclinedNotification {
     timestamp: Date
   ): SubMerchantAccountDeclinedNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], merchantAccount = merchantAccount.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubMerchantAccountDeclinedNotification]
   }
 }

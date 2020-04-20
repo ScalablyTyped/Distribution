@@ -20,7 +20,6 @@ object SetUserSettingsRequest {
   @scala.inline
   def apply(AccessToken: TokenModelType, MFAOptions: MFAOptionListType): SetUserSettingsRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any], MFAOptions = MFAOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetUserSettingsRequest]
   }
 }

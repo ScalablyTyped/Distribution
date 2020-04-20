@@ -14,7 +14,6 @@ object AnonEsmodules {
   @scala.inline
   def apply(esmodules: `true`): AnonEsmodules = {
     val __obj = js.Dynamic.literal(esmodules = esmodules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEsmodules]
   }
 }

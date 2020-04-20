@@ -28,7 +28,6 @@ object CloudWatchDimensionConfiguration {
     DimensionValueSource: DimensionValueSource
   ): CloudWatchDimensionConfiguration = {
     val __obj = js.Dynamic.literal(DefaultDimensionValue = DefaultDimensionValue.asInstanceOf[js.Any], DimensionName = DimensionName.asInstanceOf[js.Any], DimensionValueSource = DimensionValueSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudWatchDimensionConfiguration]
   }
 }

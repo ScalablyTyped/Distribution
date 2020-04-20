@@ -18,7 +18,6 @@ object INxAxisData {
   @scala.inline
   def apply(qAxis: js.Array[INxAxisTicks]): INxAxisData = {
     val __obj = js.Dynamic.literal(qAxis = qAxis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxAxisData]
   }
 }

@@ -15,7 +15,6 @@ object GetDomainsReturnType {
   @scala.inline
   def apply(domains: js.Array[Domain]): GetDomainsReturnType = {
     val __obj = js.Dynamic.literal(domains = domains.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainsReturnType]
   }
 }

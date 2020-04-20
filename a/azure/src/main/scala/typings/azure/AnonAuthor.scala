@@ -26,7 +26,6 @@ object AnonAuthor {
     updated: String
   ): AnonAuthor = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuthor]
   }
 }

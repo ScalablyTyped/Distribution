@@ -23,7 +23,6 @@ object UpdateBaiduChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, BaiduChannelResponse: UnmarshalledBaiduChannelResponse): UpdateBaiduChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], BaiduChannelResponse = BaiduChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateBaiduChannelOutput]
   }
 }

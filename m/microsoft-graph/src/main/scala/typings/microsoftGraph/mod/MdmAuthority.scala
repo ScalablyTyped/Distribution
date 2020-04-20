@@ -15,14 +15,12 @@ trait MdmAuthority extends js.Object
 
 object MdmAuthority {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def intune: typings.microsoftGraph.microsoftGraphStrings.intune = "intune".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.intune]
   @scala.inline
-  def intune: typings.microsoftGraph.microsoftGraphStrings.intune = this.cast("intune")
+  def office365: typings.microsoftGraph.microsoftGraphStrings.office365 = "office365".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.office365]
   @scala.inline
-  def office365: typings.microsoftGraph.microsoftGraphStrings.office365 = this.cast("office365")
+  def sccm: typings.microsoftGraph.microsoftGraphStrings.sccm = "sccm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sccm]
   @scala.inline
-  def sccm: typings.microsoftGraph.microsoftGraphStrings.sccm = this.cast("sccm")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

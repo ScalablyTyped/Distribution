@@ -49,7 +49,6 @@ object IContainer {
     removeComponent: Component => Unit
   ): IContainer = {
     val __obj = js.Dynamic.literal(addComponent = js.Any.fromFunction1(addComponent), findComponent = js.Any.fromFunction1(findComponent), getComponents = js.Any.fromFunction0(getComponents), removeComponent = js.Any.fromFunction1(removeComponent))
-  
     __obj.asInstanceOf[IContainer]
   }
 }

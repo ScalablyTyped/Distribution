@@ -21,7 +21,6 @@ object RoleInstance {
     updateDomain: String
   ): RoleInstance = {
     val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], faultDomain = faultDomain.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updateDomain = updateDomain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoleInstance]
   }
 }

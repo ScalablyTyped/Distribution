@@ -13,10 +13,8 @@ trait ListItemObjectStatus extends js.Object
 
 object ListItemObjectStatus {
   @scala.inline
-  def active: typings.alexaSdk.alexaSdkStrings.active = this.cast("active")
+  def active: typings.alexaSdk.alexaSdkStrings.active = "active".asInstanceOf[typings.alexaSdk.alexaSdkStrings.active]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def completed: completed_ = this.cast("completed")
+  def completed: completed_ = "completed".asInstanceOf[completed_]
 }
 

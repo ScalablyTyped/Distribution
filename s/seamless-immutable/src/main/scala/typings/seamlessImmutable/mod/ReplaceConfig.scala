@@ -12,7 +12,6 @@ object ReplaceConfig {
   @scala.inline
   def apply(deep: Boolean): ReplaceConfig = {
     val __obj = js.Dynamic.literal(deep = deep.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplaceConfig]
   }
 }

@@ -15,7 +15,6 @@ object QueryResultBase {
   @scala.inline
   def apply(command: String, fields: js.Array[FieldDef], oid: Double, rowCount: Double): QueryResultBase = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryResultBase]
   }
 }

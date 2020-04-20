@@ -13,12 +13,10 @@ trait TMouseAction extends js.Object
 
 object TMouseAction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def mousedown: typings.blessed.blessedStrings.mousedown = "mousedown".asInstanceOf[typings.blessed.blessedStrings.mousedown]
   @scala.inline
-  def mousedown: typings.blessed.blessedStrings.mousedown = this.cast("mousedown")
+  def mousemove: typings.blessed.blessedStrings.mousemove = "mousemove".asInstanceOf[typings.blessed.blessedStrings.mousemove]
   @scala.inline
-  def mousemove: typings.blessed.blessedStrings.mousemove = this.cast("mousemove")
-  @scala.inline
-  def mouseup: typings.blessed.blessedStrings.mouseup = this.cast("mouseup")
+  def mouseup: typings.blessed.blessedStrings.mouseup = "mouseup".asInstanceOf[typings.blessed.blessedStrings.mouseup]
 }
 

@@ -28,7 +28,6 @@ object JobEnvironment {
     variables: StringDictionary[String]
   ): JobEnvironment = {
     val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], secureFiles = secureFiles.asInstanceOf[js.Any], systemConnection = systemConnection.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JobEnvironment]
   }
 }

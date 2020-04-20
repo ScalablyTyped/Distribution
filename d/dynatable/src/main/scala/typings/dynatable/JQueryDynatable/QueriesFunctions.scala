@@ -19,7 +19,6 @@ object QueriesFunctions {
   @scala.inline
   def apply(search: (js.Any, String) => Boolean): QueriesFunctions = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction2(search))
-  
     __obj.asInstanceOf[QueriesFunctions]
   }
 }

@@ -65,7 +65,6 @@ object hash {
     getTarget: (String, String) => js.Any
   ): hash = {
     val __obj = js.Dynamic.literal(addViewParams = js.Any.fromFunction3(addViewParams), buildWithParams = js.Any.fromFunction2(buildWithParams), getParamObj = js.Any.fromFunction2(getParamObj), getParamString = js.Any.fromFunction1(getParamString), getParams = js.Any.fromFunction1(getParams), getTarget = js.Any.fromFunction2(getTarget))
-  
     __obj.asInstanceOf[hash]
   }
 }

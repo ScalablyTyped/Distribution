@@ -13,7 +13,6 @@ object CustomFilterParameters {
   @scala.inline
   def apply[Params /* <: js.Object */](callback: (js.Any, Params) => Boolean, callbackParameters: Params): CustomFilterParameters[Params] = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), callbackParameters = callbackParameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomFilterParameters[Params]]
   }
 }

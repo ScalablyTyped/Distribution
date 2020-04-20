@@ -29,7 +29,6 @@ object IGridExporterApi {
   @scala.inline
   def apply(csvExport: (String, String) => Unit, pdfExport: (String, String) => Unit): IGridExporterApi = {
     val __obj = js.Dynamic.literal(csvExport = js.Any.fromFunction2(csvExport), pdfExport = js.Any.fromFunction2(pdfExport))
-  
     __obj.asInstanceOf[IGridExporterApi]
   }
 }

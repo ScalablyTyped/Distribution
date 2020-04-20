@@ -13,12 +13,10 @@ trait OptionsBoostBlendingValue extends js.Object
 
 object OptionsBoostBlendingValue {
   @scala.inline
-  def add: typings.highcharts.highchartsStrings.add = this.cast("add")
+  def add: typings.highcharts.highchartsStrings.add = "add".asInstanceOf[typings.highcharts.highchartsStrings.add]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def darken: typings.highcharts.highchartsStrings.darken = "darken".asInstanceOf[typings.highcharts.highchartsStrings.darken]
   @scala.inline
-  def darken: typings.highcharts.highchartsStrings.darken = this.cast("darken")
-  @scala.inline
-  def multiply: typings.highcharts.highchartsStrings.multiply = this.cast("multiply")
+  def multiply: typings.highcharts.highchartsStrings.multiply = "multiply".asInstanceOf[typings.highcharts.highchartsStrings.multiply]
 }
 

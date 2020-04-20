@@ -4,6 +4,7 @@ import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +20,7 @@ trait Options extends js.Object {
     */
   var handler: js.UndefOr[
     js.Function3[
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* res */ Response_[_], 
       /* next */ NextFunction, 
       _
@@ -35,7 +36,7 @@ trait Options extends js.Object {
     * Default: `(req, res) => req.ip`
     */
   var keyGenerator: js.UndefOr[
-    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], String]
+    js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], String]
   ] = js.undefined
   /**
     * Max number of connections during `windowMs` before sending a 429 response. May be a `number` or
@@ -55,7 +56,7 @@ trait Options extends js.Object {
     */
   var onLimitReached: js.UndefOr[
     js.Function3[
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* res */ Response_[_], 
       /* optionsUsed */ this.type, 
       Unit
@@ -67,7 +68,7 @@ trait Options extends js.Object {
     * Default: `(req, res) => false`
     */
   var skip: js.UndefOr[
-    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Boolean]
+    js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Boolean]
   ] = js.undefined
   /**
     * When set to `true`, failed requests (status >= 400, request canceled or errored) won't be counted. Defaults to `false`.
@@ -94,13 +95,13 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    handler: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_], /* next */ NextFunction) => _ = null,
+    handler: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ NextFunction) => _ = null,
     headers: js.UndefOr[Boolean] = js.undefined,
-    keyGenerator: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => String = null,
+    keyGenerator: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => String = null,
     max: Double | MaxValueFn = null,
     message: String | Buffer | Message = null,
-    onLimitReached: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Options) => Unit = null,
-    skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => Boolean = null,
+    onLimitReached: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Options) => Unit = null,
+    skip: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean = null,
     skipFailedRequests: js.UndefOr[Boolean] = js.undefined,
     skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined,
     statusCode: Int | Double = null,

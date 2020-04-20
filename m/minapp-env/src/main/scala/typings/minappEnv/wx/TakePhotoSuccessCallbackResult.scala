@@ -13,7 +13,6 @@ object TakePhotoSuccessCallbackResult {
   @scala.inline
   def apply(tempImagePath: String): TakePhotoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(tempImagePath = tempImagePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TakePhotoSuccessCallbackResult]
   }
 }

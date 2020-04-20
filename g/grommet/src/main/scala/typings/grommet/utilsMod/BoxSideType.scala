@@ -21,26 +21,24 @@ trait BoxSideType extends _BorderType
 
 object BoxSideType {
   @scala.inline
-  def all: typings.grommet.grommetStrings.all = this.cast("all")
+  def all: typings.grommet.grommetStrings.all = "all".asInstanceOf[typings.grommet.grommetStrings.all]
   @scala.inline
-  def between: typings.grommet.grommetStrings.between = this.cast("between")
+  def between: typings.grommet.grommetStrings.between = "between".asInstanceOf[typings.grommet.grommetStrings.between]
   @scala.inline
-  def bottom: typings.grommet.grommetStrings.bottom = this.cast("bottom")
+  def bottom: typings.grommet.grommetStrings.bottom = "bottom".asInstanceOf[typings.grommet.grommetStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
   @scala.inline
-  def end: typings.grommet.grommetStrings.end = this.cast("end")
+  def horizontal: typings.grommet.grommetStrings.horizontal = "horizontal".asInstanceOf[typings.grommet.grommetStrings.horizontal]
   @scala.inline
-  def horizontal: typings.grommet.grommetStrings.horizontal = this.cast("horizontal")
+  def left: typings.grommet.grommetStrings.left = "left".asInstanceOf[typings.grommet.grommetStrings.left]
   @scala.inline
-  def left: typings.grommet.grommetStrings.left = this.cast("left")
+  def right: typings.grommet.grommetStrings.right = "right".asInstanceOf[typings.grommet.grommetStrings.right]
   @scala.inline
-  def right: typings.grommet.grommetStrings.right = this.cast("right")
+  def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
   @scala.inline
-  def start: typings.grommet.grommetStrings.start = this.cast("start")
+  def top: typings.grommet.grommetStrings.top = "top".asInstanceOf[typings.grommet.grommetStrings.top]
   @scala.inline
-  def top: typings.grommet.grommetStrings.top = this.cast("top")
-  @scala.inline
-  def vertical: typings.grommet.grommetStrings.vertical = this.cast("vertical")
+  def vertical: typings.grommet.grommetStrings.vertical = "vertical".asInstanceOf[typings.grommet.grommetStrings.vertical]
 }
 

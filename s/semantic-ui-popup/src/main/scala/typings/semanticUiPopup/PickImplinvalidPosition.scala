@@ -13,7 +13,6 @@ object PickImplinvalidPosition {
   @scala.inline
   def apply(invalidPosition: String): PickImplinvalidPosition = {
     val __obj = js.Dynamic.literal(invalidPosition = invalidPosition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplinvalidPosition]
   }
 }

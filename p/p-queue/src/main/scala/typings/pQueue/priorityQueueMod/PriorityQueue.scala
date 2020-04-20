@@ -13,6 +13,6 @@ trait PriorityQueue extends Queue[RunFunction, PriorityQueueOptions] {
   def enqueue(run: RunFunction, options: PartialPriorityQueueOptio): Unit = js.native
   def filter(options: PartialPriorityQueueOptio): js.Array[RunFunction] = js.native
   @JSName("size")
-  def size_MPriorityQueue(): Double = js.native
+  def size_MPriorityQueue: Double = js.native
 }
 

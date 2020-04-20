@@ -36,7 +36,7 @@ class MarkdownViewer_ protected () extends Widget {
   /**
     * A promise that resolves when the markdown viewer is ready.
     */
-  def ready(): js.Promise[Unit] = js.native
+  def ready: js.Promise[Unit] = js.native
   /**
     * Set URI fragment identifier.
     */

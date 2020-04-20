@@ -14,14 +14,12 @@ trait TextareaElementEventType extends js.Object
 
 object TextareaElementEventType {
   @scala.inline
-  def action: typings.blessed.blessedStrings.action = this.cast("action")
+  def action: typings.blessed.blessedStrings.action = "action".asInstanceOf[typings.blessed.blessedStrings.action]
   @scala.inline
-  def cancel: typings.blessed.blessedStrings.cancel = this.cast("cancel")
+  def cancel: typings.blessed.blessedStrings.cancel = "cancel".asInstanceOf[typings.blessed.blessedStrings.cancel]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.blessed.blessedStrings.error = "error".asInstanceOf[typings.blessed.blessedStrings.error]
   @scala.inline
-  def error: typings.blessed.blessedStrings.error = this.cast("error")
-  @scala.inline
-  def submit: typings.blessed.blessedStrings.submit = this.cast("submit")
+  def submit: typings.blessed.blessedStrings.submit = "submit".asInstanceOf[typings.blessed.blessedStrings.submit]
 }
 

@@ -73,6 +73,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TransButtonProps extends HTMLAttributes[HTMLDivElement] {
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   var noStyle: js.UndefOr[Boolean] = js.undefined
   @JSName("onClick")
   var onClick_TransButtonProps: js.UndefOr[
@@ -135,6 +136,7 @@ object TransButtonProps {
     `aria-valuetext`: String = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
+    autoFocus: js.UndefOr[Boolean] = js.undefined,
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
@@ -311,6 +313,7 @@ object TransButtonProps {
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])

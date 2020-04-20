@@ -30,26 +30,24 @@ trait XlCubeFieldSubType extends js.Object
 
 object XlCubeFieldSubType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCubeAttribute: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlCubeAttribute: `4` = this.cast(4)
+  def xlCubeCalculatedMeasure: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlCubeCalculatedMeasure: `5` = this.cast(5)
+  def xlCubeHierarchy: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlCubeHierarchy: `1` = this.cast(1)
+  def xlCubeKPIGoal: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlCubeKPIGoal: `7` = this.cast(7)
+  def xlCubeKPIStatus: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlCubeKPIStatus: `8` = this.cast(8)
+  def xlCubeKPITrend: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlCubeKPITrend: `9` = this.cast(9)
+  def xlCubeKPIValue: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlCubeKPIValue: `6` = this.cast(6)
+  def xlCubeKPIWeight: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlCubeKPIWeight: `10` = this.cast(10)
+  def xlCubeMeasure: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlCubeMeasure: `2` = this.cast(2)
-  @scala.inline
-  def xlCubeSet: `3` = this.cast(3)
+  def xlCubeSet: `3` = 3.asInstanceOf[`3`]
 }
 

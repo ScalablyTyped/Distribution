@@ -96,92 +96,90 @@ trait WdTableFormat extends js.Object
 
 object WdTableFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTableFormat3DEffects1: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def wdTableFormat3DEffects1: `32` = this.cast(32)
+  def wdTableFormat3DEffects2: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def wdTableFormat3DEffects2: `33` = this.cast(33)
+  def wdTableFormat3DEffects3: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def wdTableFormat3DEffects3: `34` = this.cast(34)
+  def wdTableFormatClassic1: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdTableFormatClassic1: `4` = this.cast(4)
+  def wdTableFormatClassic2: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdTableFormatClassic2: `5` = this.cast(5)
+  def wdTableFormatClassic3: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdTableFormatClassic3: `6` = this.cast(6)
+  def wdTableFormatClassic4: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdTableFormatClassic4: `7` = this.cast(7)
+  def wdTableFormatColorful1: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdTableFormatColorful1: `8` = this.cast(8)
+  def wdTableFormatColorful2: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdTableFormatColorful2: `9` = this.cast(9)
+  def wdTableFormatColorful3: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdTableFormatColorful3: `10` = this.cast(10)
+  def wdTableFormatColumns1: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdTableFormatColumns1: `11` = this.cast(11)
+  def wdTableFormatColumns2: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdTableFormatColumns2: `12` = this.cast(12)
+  def wdTableFormatColumns3: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdTableFormatColumns3: `13` = this.cast(13)
+  def wdTableFormatColumns4: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdTableFormatColumns4: `14` = this.cast(14)
+  def wdTableFormatColumns5: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdTableFormatColumns5: `15` = this.cast(15)
+  def wdTableFormatContemporary: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def wdTableFormatContemporary: `35` = this.cast(35)
+  def wdTableFormatElegant: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def wdTableFormatElegant: `36` = this.cast(36)
+  def wdTableFormatGrid1: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdTableFormatGrid1: `16` = this.cast(16)
+  def wdTableFormatGrid2: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdTableFormatGrid2: `17` = this.cast(17)
+  def wdTableFormatGrid3: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdTableFormatGrid3: `18` = this.cast(18)
+  def wdTableFormatGrid4: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdTableFormatGrid4: `19` = this.cast(19)
+  def wdTableFormatGrid5: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdTableFormatGrid5: `20` = this.cast(20)
+  def wdTableFormatGrid6: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def wdTableFormatGrid6: `21` = this.cast(21)
+  def wdTableFormatGrid7: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def wdTableFormatGrid7: `22` = this.cast(22)
+  def wdTableFormatGrid8: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def wdTableFormatGrid8: `23` = this.cast(23)
+  def wdTableFormatList1: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def wdTableFormatList1: `24` = this.cast(24)
+  def wdTableFormatList2: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def wdTableFormatList2: `25` = this.cast(25)
+  def wdTableFormatList3: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def wdTableFormatList3: `26` = this.cast(26)
+  def wdTableFormatList4: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def wdTableFormatList4: `27` = this.cast(27)
+  def wdTableFormatList5: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def wdTableFormatList5: `28` = this.cast(28)
+  def wdTableFormatList6: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def wdTableFormatList6: `29` = this.cast(29)
+  def wdTableFormatList7: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def wdTableFormatList7: `30` = this.cast(30)
+  def wdTableFormatList8: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def wdTableFormatList8: `31` = this.cast(31)
+  def wdTableFormatNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdTableFormatNone: `0` = this.cast(0)
+  def wdTableFormatProfessional: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def wdTableFormatProfessional: `37` = this.cast(37)
+  def wdTableFormatSimple1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdTableFormatSimple1: `1` = this.cast(1)
+  def wdTableFormatSimple2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdTableFormatSimple2: `2` = this.cast(2)
+  def wdTableFormatSimple3: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdTableFormatSimple3: `3` = this.cast(3)
+  def wdTableFormatSubtle1: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def wdTableFormatSubtle1: `38` = this.cast(38)
+  def wdTableFormatSubtle2: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def wdTableFormatSubtle2: `39` = this.cast(39)
+  def wdTableFormatWeb1: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def wdTableFormatWeb1: `40` = this.cast(40)
+  def wdTableFormatWeb2: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def wdTableFormatWeb2: `41` = this.cast(41)
-  @scala.inline
-  def wdTableFormatWeb3: `42` = this.cast(42)
+  def wdTableFormatWeb3: `42` = 42.asInstanceOf[`42`]
 }
 

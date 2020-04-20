@@ -13,12 +13,10 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  def GET: typings.googleapisCommon.googleapisCommonStrings.GET = this.cast("GET")
+  def GET: typings.googleapisCommon.googleapisCommonStrings.GET = "GET".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.GET]
   @scala.inline
-  def PATCH: typings.googleapisCommon.googleapisCommonStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.googleapisCommon.googleapisCommonStrings.PATCH = "PATCH".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.PATCH]
   @scala.inline
-  def PUT: typings.googleapisCommon.googleapisCommonStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUT: typings.googleapisCommon.googleapisCommonStrings.PUT = "PUT".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.PUT]
 }
 

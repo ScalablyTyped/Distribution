@@ -15,7 +15,6 @@ object NegativeKeywordListBuilder {
     withName: String => NegativeKeywordListBuilder[NegativeKeywordList]
   ): NegativeKeywordListBuilder[NegativeKeywordList] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withName = js.Any.fromFunction1(withName))
-  
     __obj.asInstanceOf[NegativeKeywordListBuilder[NegativeKeywordList]]
   }
 }

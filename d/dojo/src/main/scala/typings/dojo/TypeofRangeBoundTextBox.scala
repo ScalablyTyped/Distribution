@@ -19,7 +19,6 @@ object TypeofRangeBoundTextBox {
   @scala.inline
   def apply(__Constraints: Instantiable0[Constraints]): TypeofRangeBoundTextBox = {
     val __obj = js.Dynamic.literal(__Constraints = __Constraints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofRangeBoundTextBox]
   }
 }

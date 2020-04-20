@@ -13,7 +13,6 @@ object AnonLnglat {
   @scala.inline
   def apply(lnglat: LngLat): AnonLnglat = {
     val __obj = js.Dynamic.literal(lnglat = lnglat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLnglat]
   }
 }

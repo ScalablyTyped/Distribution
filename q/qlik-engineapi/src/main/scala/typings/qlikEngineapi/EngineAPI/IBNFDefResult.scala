@@ -22,7 +22,6 @@ object IBNFDefResult {
   @scala.inline
   def apply(qBnfDefs: js.Array[IBNFDef], qBnfHash: String): IBNFDefResult = {
     val __obj = js.Dynamic.literal(qBnfDefs = qBnfDefs.asInstanceOf[js.Any], qBnfHash = qBnfHash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBNFDefResult]
   }
 }

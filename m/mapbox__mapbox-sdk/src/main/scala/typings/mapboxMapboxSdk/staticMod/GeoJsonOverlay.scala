@@ -13,7 +13,6 @@ object GeoJsonOverlay {
   @scala.inline
   def apply(geoJson: GeoJSON): GeoJsonOverlay = {
     val __obj = js.Dynamic.literal(geoJson = geoJson.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeoJsonOverlay]
   }
 }

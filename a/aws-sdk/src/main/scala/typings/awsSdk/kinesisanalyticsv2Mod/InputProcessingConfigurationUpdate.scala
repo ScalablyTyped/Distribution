@@ -16,7 +16,6 @@ object InputProcessingConfigurationUpdate {
   @scala.inline
   def apply(InputLambdaProcessorUpdate: InputLambdaProcessorUpdate): InputProcessingConfigurationUpdate = {
     val __obj = js.Dynamic.literal(InputLambdaProcessorUpdate = InputLambdaProcessorUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputProcessingConfigurationUpdate]
   }
 }

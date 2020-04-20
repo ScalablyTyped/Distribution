@@ -31,7 +31,6 @@ object CreativesResource {
     update: AnonKey => Request_[Creative]
   ): CreativesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[CreativesResource]
   }
 }

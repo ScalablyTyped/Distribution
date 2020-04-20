@@ -22,7 +22,6 @@ object AnonBufferFlushDelay {
     trackExceptions: Boolean
   ): AnonBufferFlushDelay = {
     val __obj = js.Dynamic.literal(bufferFlushDelay = bufferFlushDelay.asInstanceOf[js.Any], developerMode = developerMode.asInstanceOf[js.Any], optOut = optOut.asInstanceOf[js.Any], pageTracking = pageTracking.asInstanceOf[js.Any], trackExceptions = trackExceptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBufferFlushDelay]
   }
 }

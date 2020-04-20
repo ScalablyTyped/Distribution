@@ -31,7 +31,6 @@ object AnonFavorites {
   @scala.inline
   def apply(favorites: String, likes: String, uploads: String, watchHistory: String, watchLater: String): AnonFavorites = {
     val __obj = js.Dynamic.literal(favorites = favorites.asInstanceOf[js.Any], likes = likes.asInstanceOf[js.Any], uploads = uploads.asInstanceOf[js.Any], watchHistory = watchHistory.asInstanceOf[js.Any], watchLater = watchLater.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFavorites]
   }
 }

@@ -27,7 +27,6 @@ object ISearchResult {
   @scala.inline
   def apply(objects: js.Array[AnonFlags], time: String, total: Double): ISearchResult = {
     val __obj = js.Dynamic.literal(objects = objects.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchResult]
   }
 }

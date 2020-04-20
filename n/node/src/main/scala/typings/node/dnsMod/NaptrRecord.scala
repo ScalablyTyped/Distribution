@@ -24,7 +24,6 @@ object NaptrRecord {
     service: String
   ): NaptrRecord = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], preference = preference.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NaptrRecord]
   }
 }

@@ -13,7 +13,6 @@ object TriggerClass {
   @scala.inline
   def apply(Create: (String, TriggerCreateOptions, CbCallback) => Unit, Fetch: (String, CbCallback) => Unit): TriggerClass = {
     val __obj = js.Dynamic.literal(Create = js.Any.fromFunction3(Create), Fetch = js.Any.fromFunction2(Fetch))
-  
     __obj.asInstanceOf[TriggerClass]
   }
 }

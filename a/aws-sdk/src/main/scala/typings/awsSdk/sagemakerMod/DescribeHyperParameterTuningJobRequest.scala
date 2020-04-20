@@ -16,7 +16,6 @@ object DescribeHyperParameterTuningJobRequest {
   @scala.inline
   def apply(HyperParameterTuningJobName: HyperParameterTuningJobName): DescribeHyperParameterTuningJobRequest = {
     val __obj = js.Dynamic.literal(HyperParameterTuningJobName = HyperParameterTuningJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeHyperParameterTuningJobRequest]
   }
 }

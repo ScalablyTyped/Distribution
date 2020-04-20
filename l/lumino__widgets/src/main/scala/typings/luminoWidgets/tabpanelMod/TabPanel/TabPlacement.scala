@@ -17,14 +17,12 @@ trait TabPlacement extends js.Object
 
 object TabPlacement {
   @scala.inline
-  def bottom: typings.luminoWidgets.luminoWidgetsStrings.bottom = this.cast("bottom")
+  def bottom: typings.luminoWidgets.luminoWidgetsStrings.bottom = "bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.luminoWidgets.luminoWidgetsStrings.left = "left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.left]
   @scala.inline
-  def left: typings.luminoWidgets.luminoWidgetsStrings.left = this.cast("left")
+  def right: typings.luminoWidgets.luminoWidgetsStrings.right = "right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.right]
   @scala.inline
-  def right: typings.luminoWidgets.luminoWidgetsStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.luminoWidgets.luminoWidgetsStrings.top = this.cast("top")
+  def top: typings.luminoWidgets.luminoWidgetsStrings.top = "top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.top]
 }
 

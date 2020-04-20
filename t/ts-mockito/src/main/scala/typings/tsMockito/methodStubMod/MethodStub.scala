@@ -20,7 +20,6 @@ object MethodStub {
     isApplicable: js.Array[_] => Boolean
   ): MethodStub = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getGroupIndex = js.Any.fromFunction0(getGroupIndex), getValue = js.Any.fromFunction0(getValue), isApplicable = js.Any.fromFunction1(isApplicable))
-  
     __obj.asInstanceOf[MethodStub]
   }
 }

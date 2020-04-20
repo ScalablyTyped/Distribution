@@ -12,7 +12,6 @@ object AnonSend {
   @scala.inline
   def apply[T /* <: js.Function */](send: T): AnonSend[T] = {
     val __obj = js.Dynamic.literal(send = send.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSend[T]]
   }
 }

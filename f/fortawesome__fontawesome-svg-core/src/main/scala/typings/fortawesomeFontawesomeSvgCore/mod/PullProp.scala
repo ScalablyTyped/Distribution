@@ -12,10 +12,8 @@ trait PullProp extends js.Object
 
 object PullProp {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.left = "left".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.left]
   @scala.inline
-  def left: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.right = this.cast("right")
+  def right: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.right = "right".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.right]
 }
 

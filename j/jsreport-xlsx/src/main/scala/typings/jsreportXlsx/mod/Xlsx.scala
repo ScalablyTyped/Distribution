@@ -12,7 +12,6 @@ object Xlsx {
   @scala.inline
   def apply(shortid: String): Xlsx = {
     val __obj = js.Dynamic.literal(shortid = shortid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Xlsx]
   }
 }

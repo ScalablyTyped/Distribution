@@ -75,12 +75,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStackOutput, Unit]
   ): Request[CreateStackOutput, AWSError] = js.native
   /**
-    * Creates stack instances for the specified accounts, within the specified regions. A stack instance refers to a stack in a specific account and region. You must specify at least one value for either Accounts or DeploymentTargets, and you must specify at least one value for Regions.
+    * Creates stack instances for the specified accounts, within the specified Regions. A stack instance refers to a stack in a specific account and Region. You must specify at least one value for either Accounts or DeploymentTargets, and you must specify at least one value for Regions.
     */
   def createStackInstances(): Request[CreateStackInstancesOutput, AWSError] = js.native
   def createStackInstances(callback: js.Function2[/* err */ AWSError, /* data */ CreateStackInstancesOutput, Unit]): Request[CreateStackInstancesOutput, AWSError] = js.native
   /**
-    * Creates stack instances for the specified accounts, within the specified regions. A stack instance refers to a stack in a specific account and region. You must specify at least one value for either Accounts or DeploymentTargets, and you must specify at least one value for Regions.
+    * Creates stack instances for the specified accounts, within the specified Regions. A stack instance refers to a stack in a specific account and Region. You must specify at least one value for either Accounts or DeploymentTargets, and you must specify at least one value for Regions.
     */
   def createStackInstances(params: CreateStackInstancesInput): Request[CreateStackInstancesOutput, AWSError] = js.native
   def createStackInstances(
@@ -124,12 +124,12 @@ trait CloudFormation extends Service {
   def deleteStack(params: DeleteStackInput): Request[js.Object, AWSError] = js.native
   def deleteStack(params: DeleteStackInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes stack instances for the specified accounts, in the specified regions. 
+    * Deletes stack instances for the specified accounts, in the specified Regions. 
     */
   def deleteStackInstances(): Request[DeleteStackInstancesOutput, AWSError] = js.native
   def deleteStackInstances(callback: js.Function2[/* err */ AWSError, /* data */ DeleteStackInstancesOutput, Unit]): Request[DeleteStackInstancesOutput, AWSError] = js.native
   /**
-    * Deletes stack instances for the specified accounts, in the specified regions. 
+    * Deletes stack instances for the specified accounts, in the specified Regions. 
     */
   def deleteStackInstances(params: DeleteStackInstancesInput): Request[DeleteStackInstancesOutput, AWSError] = js.native
   def deleteStackInstances(
@@ -217,12 +217,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStackEventsOutput, Unit]
   ): Request[DescribeStackEventsOutput, AWSError] = js.native
   /**
-    * Returns the stack instance that's associated with the specified stack set, AWS account, and region. For a list of stack instances that are associated with a specific stack set, use ListStackInstances.
+    * Returns the stack instance that's associated with the specified stack set, AWS account, and Region. For a list of stack instances that are associated with a specific stack set, use ListStackInstances.
     */
   def describeStackInstance(): Request[DescribeStackInstanceOutput, AWSError] = js.native
   def describeStackInstance(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStackInstanceOutput, Unit]): Request[DescribeStackInstanceOutput, AWSError] = js.native
   /**
-    * Returns the stack instance that's associated with the specified stack set, AWS account, and region. For a list of stack instances that are associated with a specific stack set, use ListStackInstances.
+    * Returns the stack instance that's associated with the specified stack set, AWS account, and Region. For a list of stack instances that are associated with a specific stack set, use ListStackInstances.
     */
   def describeStackInstance(params: DescribeStackInstanceInput): Request[DescribeStackInstanceOutput, AWSError] = js.native
   def describeStackInstance(
@@ -451,12 +451,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListChangeSetsOutput, Unit]
   ): Request[ListChangeSetsOutput, AWSError] = js.native
   /**
-    * Lists all exported output values in the account and region in which you call this action. Use this action to see the exported output values that you can import into other stacks. To import values, use the  Fn::ImportValue  function.  For more information, see  AWS CloudFormation Export Stack Output Values.
+    * Lists all exported output values in the account and Region in which you call this action. Use this action to see the exported output values that you can import into other stacks. To import values, use the  Fn::ImportValue  function.  For more information, see  AWS CloudFormation Export Stack Output Values.
     */
   def listExports(): Request[ListExportsOutput, AWSError] = js.native
   def listExports(callback: js.Function2[/* err */ AWSError, /* data */ ListExportsOutput, Unit]): Request[ListExportsOutput, AWSError] = js.native
   /**
-    * Lists all exported output values in the account and region in which you call this action. Use this action to see the exported output values that you can import into other stacks. To import values, use the  Fn::ImportValue  function.  For more information, see  AWS CloudFormation Export Stack Output Values.
+    * Lists all exported output values in the account and Region in which you call this action. Use this action to see the exported output values that you can import into other stacks. To import values, use the  Fn::ImportValue  function.  For more information, see  AWS CloudFormation Export Stack Output Values.
     */
   def listExports(params: ListExportsInput): Request[ListExportsOutput, AWSError] = js.native
   def listExports(
@@ -477,12 +477,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListImportsOutput, Unit]
   ): Request[ListImportsOutput, AWSError] = js.native
   /**
-    * Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or region.
+    * Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or Region.
     */
   def listStackInstances(): Request[ListStackInstancesOutput, AWSError] = js.native
   def listStackInstances(callback: js.Function2[/* err */ AWSError, /* data */ ListStackInstancesOutput, Unit]): Request[ListStackInstancesOutput, AWSError] = js.native
   /**
-    * Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or region.
+    * Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or Region.
     */
   def listStackInstances(params: ListStackInstancesInput): Request[ListStackInstancesOutput, AWSError] = js.native
   def listStackInstances(
@@ -607,12 +607,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RecordHandlerProgressOutput, Unit]
   ): Request[RecordHandlerProgressOutput, AWSError] = js.native
   /**
-    * Registers a type with the CloudFormation service. Registering a type makes it available for use in CloudFormation templates in your AWS account, and includes:   Validating the resource schema   Determining which handlers have been specified for the resource   Making the resource type available for use in your account   For more information on how to develop types and ready them for registeration, see Creating Resource Providers in the CloudFormation CLI User Guide. Once you have initiated a registration request using  RegisterType , you can use  DescribeTypeRegistration  to monitor the progress of the registration request.
+    * Registers a type with the CloudFormation service. Registering a type makes it available for use in CloudFormation templates in your AWS account, and includes:   Validating the resource schema   Determining which handlers have been specified for the resource   Making the resource type available for use in your account   For more information on how to develop types and ready them for registeration, see Creating Resource Providers in the CloudFormation CLI User Guide. You can have a maximum of 50 resource type versions registered at a time. This maximum is per account and per region. Use DeregisterType to deregister specific resource type versions if necessary. Once you have initiated a registration request using  RegisterType , you can use  DescribeTypeRegistration  to monitor the progress of the registration request.
     */
   def registerType(): Request[RegisterTypeOutput, AWSError] = js.native
   def registerType(callback: js.Function2[/* err */ AWSError, /* data */ RegisterTypeOutput, Unit]): Request[RegisterTypeOutput, AWSError] = js.native
   /**
-    * Registers a type with the CloudFormation service. Registering a type makes it available for use in CloudFormation templates in your AWS account, and includes:   Validating the resource schema   Determining which handlers have been specified for the resource   Making the resource type available for use in your account   For more information on how to develop types and ready them for registeration, see Creating Resource Providers in the CloudFormation CLI User Guide. Once you have initiated a registration request using  RegisterType , you can use  DescribeTypeRegistration  to monitor the progress of the registration request.
+    * Registers a type with the CloudFormation service. Registering a type makes it available for use in CloudFormation templates in your AWS account, and includes:   Validating the resource schema   Determining which handlers have been specified for the resource   Making the resource type available for use in your account   For more information on how to develop types and ready them for registeration, see Creating Resource Providers in the CloudFormation CLI User Guide. You can have a maximum of 50 resource type versions registered at a time. This maximum is per account and per region. Use DeregisterType to deregister specific resource type versions if necessary. Once you have initiated a registration request using  RegisterType , you can use  DescribeTypeRegistration  to monitor the progress of the registration request.
     */
   def registerType(params: RegisterTypeInput): Request[RegisterTypeOutput, AWSError] = js.native
   def registerType(
@@ -685,12 +685,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateStackOutput, Unit]
   ): Request[UpdateStackOutput, AWSError] = js.native
   /**
-    * Updates the parameter values for stack instances for the specified accounts, within the specified regions. A stack instance refers to a stack in a specific account and region.  You can only update stack instances in regions and accounts where they already exist; to create additional stack instances, use CreateStackInstances.  During stack set updates, any parameters overridden for a stack instance are not updated, but retain their overridden value. You can only update the parameter values that are specified in the stack set; to add or delete a parameter itself, use UpdateStackSet to update the stack set template. If you add a parameter to a template, before you can override the parameter value specified in the stack set you must first use UpdateStackSet to update all stack instances with the updated template and parameter value specified in the stack set. Once a stack instance has been updated with the new parameter, you can then override the parameter value using UpdateStackInstances.
+    * Updates the parameter values for stack instances for the specified accounts, within the specified Regions. A stack instance refers to a stack in a specific account and Region.  You can only update stack instances in Regions and accounts where they already exist; to create additional stack instances, use CreateStackInstances.  During stack set updates, any parameters overridden for a stack instance are not updated, but retain their overridden value. You can only update the parameter values that are specified in the stack set; to add or delete a parameter itself, use UpdateStackSet to update the stack set template. If you add a parameter to a template, before you can override the parameter value specified in the stack set you must first use UpdateStackSet to update all stack instances with the updated template and parameter value specified in the stack set. Once a stack instance has been updated with the new parameter, you can then override the parameter value using UpdateStackInstances.
     */
   def updateStackInstances(): Request[UpdateStackInstancesOutput, AWSError] = js.native
   def updateStackInstances(callback: js.Function2[/* err */ AWSError, /* data */ UpdateStackInstancesOutput, Unit]): Request[UpdateStackInstancesOutput, AWSError] = js.native
   /**
-    * Updates the parameter values for stack instances for the specified accounts, within the specified regions. A stack instance refers to a stack in a specific account and region.  You can only update stack instances in regions and accounts where they already exist; to create additional stack instances, use CreateStackInstances.  During stack set updates, any parameters overridden for a stack instance are not updated, but retain their overridden value. You can only update the parameter values that are specified in the stack set; to add or delete a parameter itself, use UpdateStackSet to update the stack set template. If you add a parameter to a template, before you can override the parameter value specified in the stack set you must first use UpdateStackSet to update all stack instances with the updated template and parameter value specified in the stack set. Once a stack instance has been updated with the new parameter, you can then override the parameter value using UpdateStackInstances.
+    * Updates the parameter values for stack instances for the specified accounts, within the specified Regions. A stack instance refers to a stack in a specific account and Region.  You can only update stack instances in Regions and accounts where they already exist; to create additional stack instances, use CreateStackInstances.  During stack set updates, any parameters overridden for a stack instance are not updated, but retain their overridden value. You can only update the parameter values that are specified in the stack set; to add or delete a parameter itself, use UpdateStackSet to update the stack set template. If you add a parameter to a template, before you can override the parameter value specified in the stack set you must first use UpdateStackSet to update all stack instances with the updated template and parameter value specified in the stack set. Once a stack instance has been updated with the new parameter, you can then override the parameter value using UpdateStackInstances.
     */
   def updateStackInstances(params: UpdateStackInstancesInput): Request[UpdateStackInstancesOutput, AWSError] = js.native
   def updateStackInstances(
@@ -698,12 +698,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateStackInstancesOutput, Unit]
   ): Request[UpdateStackInstancesOutput, AWSError] = js.native
   /**
-    * Updates the stack set, and associated stack instances in the specified accounts and regions. Even if the stack set operation created by updating the stack set fails (completely or partially, below or above a specified failure tolerance), the stack set is updated with your changes. Subsequent CreateStackInstances calls on the specified stack set use the updated stack set.
+    * Updates the stack set, and associated stack instances in the specified accounts and Regions. Even if the stack set operation created by updating the stack set fails (completely or partially, below or above a specified failure tolerance), the stack set is updated with your changes. Subsequent CreateStackInstances calls on the specified stack set use the updated stack set.
     */
   def updateStackSet(): Request[UpdateStackSetOutput, AWSError] = js.native
   def updateStackSet(callback: js.Function2[/* err */ AWSError, /* data */ UpdateStackSetOutput, Unit]): Request[UpdateStackSetOutput, AWSError] = js.native
   /**
-    * Updates the stack set, and associated stack instances in the specified accounts and regions. Even if the stack set operation created by updating the stack set fails (completely or partially, below or above a specified failure tolerance), the stack set is updated with your changes. Subsequent CreateStackInstances calls on the specified stack set use the updated stack set.
+    * Updates the stack set, and associated stack instances in the specified accounts and Regions. Even if the stack set operation created by updating the stack set fails (completely or partially, below or above a specified failure tolerance), the stack set is updated with your changes. Subsequent CreateStackInstances calls on the specified stack set use the updated stack set.
     */
   def updateStackSet(params: UpdateStackSetInput): Request[UpdateStackSetOutput, AWSError] = js.native
   def updateStackSet(

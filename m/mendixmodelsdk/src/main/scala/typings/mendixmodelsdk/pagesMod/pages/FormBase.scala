@@ -33,12 +33,12 @@ abstract class FormBase protected () extends Document {
   ) = this()
   @JSName("model")
   var model_FFormBase: IModel = js.native
-  def canvasHeight(): Double = js.native
+  def canvasHeight: Double = js.native
   def canvasHeight(newValue: Double): js.Any = js.native
-  def canvasWidth(): Double = js.native
+  def canvasWidth: Double = js.native
   def canvasWidth(newValue: Double): js.Any = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MFormBase(): FolderBase = js.native
+  def containerAsFolderBase_MFormBase: FolderBase = js.native
 }
 
 /* static members */

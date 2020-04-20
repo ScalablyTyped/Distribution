@@ -33,7 +33,6 @@ object ScheduleActivityTaskFailedEventAttributes {
     decisionTaskCompletedEventId: EventId
   ): ScheduleActivityTaskFailedEventAttributes = {
     val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], activityType = activityType.asInstanceOf[js.Any], cause = cause.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScheduleActivityTaskFailedEventAttributes]
   }
 }

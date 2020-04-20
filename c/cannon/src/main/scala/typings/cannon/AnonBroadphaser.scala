@@ -22,7 +22,6 @@ object AnonBroadphaser {
     solve: Double
   ): AnonBroadphaser = {
     val __obj = js.Dynamic.literal(broadphaser = broadphaser.asInstanceOf[js.Any], integrate = integrate.asInstanceOf[js.Any], makeContactConstraints = makeContactConstraints.asInstanceOf[js.Any], narrowphase = narrowphase.asInstanceOf[js.Any], solve = solve.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBroadphaser]
   }
 }

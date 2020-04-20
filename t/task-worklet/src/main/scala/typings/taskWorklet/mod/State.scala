@@ -15,16 +15,14 @@ trait State extends js.Object
 
 object State {
   @scala.inline
-  def cancelled: typings.taskWorklet.taskWorkletStrings.cancelled = this.cast("cancelled")
+  def cancelled: typings.taskWorklet.taskWorkletStrings.cancelled = "cancelled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.cancelled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def completed: typings.taskWorklet.taskWorkletStrings.completed = "completed".asInstanceOf[typings.taskWorklet.taskWorkletStrings.completed]
   @scala.inline
-  def completed: typings.taskWorklet.taskWorkletStrings.completed = this.cast("completed")
+  def fulfilled: typings.taskWorklet.taskWorkletStrings.fulfilled = "fulfilled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.fulfilled]
   @scala.inline
-  def fulfilled: typings.taskWorklet.taskWorkletStrings.fulfilled = this.cast("fulfilled")
+  def pending: typings.taskWorklet.taskWorkletStrings.pending = "pending".asInstanceOf[typings.taskWorklet.taskWorkletStrings.pending]
   @scala.inline
-  def pending: typings.taskWorklet.taskWorkletStrings.pending = this.cast("pending")
-  @scala.inline
-  def scheduled: typings.taskWorklet.taskWorkletStrings.scheduled = this.cast("scheduled")
+  def scheduled: typings.taskWorklet.taskWorkletStrings.scheduled = "scheduled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.scheduled]
 }
 

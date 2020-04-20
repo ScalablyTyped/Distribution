@@ -19,7 +19,6 @@ object HkdfCtrParams {
     name: java.lang.String
   ): HkdfCtrParams = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HkdfCtrParams]
   }
 }

@@ -13,7 +13,6 @@ object AnonQEndIndex {
   @scala.inline
   def apply(qEndIndex: Double, qStartIndex: Double): AnonQEndIndex = {
     val __obj = js.Dynamic.literal(qEndIndex = qEndIndex.asInstanceOf[js.Any], qStartIndex = qStartIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQEndIndex]
   }
 }

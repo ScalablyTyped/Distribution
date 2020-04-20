@@ -14,14 +14,12 @@ trait NavigateAction extends js.Object
 
 object NavigateAction {
   @scala.inline
-  def DATE: typings.reactBigCalendar.reactBigCalendarStrings.DATE = this.cast("DATE")
+  def DATE: typings.reactBigCalendar.reactBigCalendarStrings.DATE = "DATE".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.DATE]
   @scala.inline
-  def NEXT: typings.reactBigCalendar.reactBigCalendarStrings.NEXT = this.cast("NEXT")
+  def NEXT: typings.reactBigCalendar.reactBigCalendarStrings.NEXT = "NEXT".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.NEXT]
   @scala.inline
-  def PREV: typings.reactBigCalendar.reactBigCalendarStrings.PREV = this.cast("PREV")
+  def PREV: typings.reactBigCalendar.reactBigCalendarStrings.PREV = "PREV".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.PREV]
   @scala.inline
-  def TODAY: typings.reactBigCalendar.reactBigCalendarStrings.TODAY = this.cast("TODAY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TODAY: typings.reactBigCalendar.reactBigCalendarStrings.TODAY = "TODAY".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.TODAY]
 }
 

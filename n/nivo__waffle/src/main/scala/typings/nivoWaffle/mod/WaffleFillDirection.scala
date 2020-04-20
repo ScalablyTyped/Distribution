@@ -14,14 +14,12 @@ trait WaffleFillDirection extends js.Object
 
 object WaffleFillDirection {
   @scala.inline
-  def bottom: typings.nivoWaffle.nivoWaffleStrings.bottom = this.cast("bottom")
+  def bottom: typings.nivoWaffle.nivoWaffleStrings.bottom = "bottom".asInstanceOf[typings.nivoWaffle.nivoWaffleStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.nivoWaffle.nivoWaffleStrings.left = "left".asInstanceOf[typings.nivoWaffle.nivoWaffleStrings.left]
   @scala.inline
-  def left: typings.nivoWaffle.nivoWaffleStrings.left = this.cast("left")
+  def right: typings.nivoWaffle.nivoWaffleStrings.right = "right".asInstanceOf[typings.nivoWaffle.nivoWaffleStrings.right]
   @scala.inline
-  def right: typings.nivoWaffle.nivoWaffleStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.nivoWaffle.nivoWaffleStrings.top = this.cast("top")
+  def top: typings.nivoWaffle.nivoWaffleStrings.top = "top".asInstanceOf[typings.nivoWaffle.nivoWaffleStrings.top]
 }
 

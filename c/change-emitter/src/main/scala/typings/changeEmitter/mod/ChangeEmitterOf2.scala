@@ -13,7 +13,6 @@ object ChangeEmitterOf2 {
   @scala.inline
   def apply[T1, T2](emit: (T1, T2) => Unit, listen: ListenerOf2[T1, T2] => Unlisten): ChangeEmitterOf2[T1, T2] = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), listen = js.Any.fromFunction1(listen))
-  
     __obj.asInstanceOf[ChangeEmitterOf2[T1, T2]]
   }
 }

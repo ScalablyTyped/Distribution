@@ -56,7 +56,6 @@ object EdgeSingularPoints {
     targetEndpoint: () => Position
   ): EdgeSingularPoints = {
     val __obj = js.Dynamic.literal(controlPoints = js.Any.fromFunction0(controlPoints), midpoint = js.Any.fromFunction0(midpoint), segmentPoints = js.Any.fromFunction0(segmentPoints), sourceEndpoint = js.Any.fromFunction0(sourceEndpoint), targetEndpoint = js.Any.fromFunction0(targetEndpoint))
-  
     __obj.asInstanceOf[EdgeSingularPoints]
   }
 }

@@ -16,6 +16,23 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/plots/linePlot", JSImport.Namespace)
 @js.native
 object linePlotMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableStrings.linear
+    - typings.plottable.plottableStrings.linearClosed
+    - typings.plottable.plottableStrings.step
+    - typings.plottable.plottableStrings.stepBefore
+    - typings.plottable.plottableStrings.stepAfter
+    - typings.plottable.plottableStrings.basis
+    - typings.plottable.plottableStrings.basisOpen
+    - typings.plottable.plottableStrings.basisClosed
+    - typings.plottable.plottableStrings.bundle
+    - typings.plottable.plottableStrings.cardinal
+    - typings.plottable.plottableStrings.cardinalOpen
+    - typings.plottable.plottableStrings.cardinalClosed
+    - typings.plottable.plottableStrings.monotone
+  */
+  trait CurveName extends js.Object
+  
   @js.native
   /**
     * A Line Plot draws line segments starting from the first data point to the next.
@@ -158,6 +175,5 @@ object linePlotMod extends js.Object {
     var stepBefore: typings.plottable.plottableStrings.stepBefore = js.native
   }
   
-  type CurveName = String
 }
 

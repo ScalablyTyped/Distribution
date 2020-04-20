@@ -12,7 +12,6 @@ object ApplicationEvent {
   @scala.inline
   def apply(sender: Application): ApplicationEvent = {
     val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplicationEvent]
   }
 }

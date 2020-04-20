@@ -12,7 +12,6 @@ object Request {
   @scala.inline
   def apply(session: js.Any): Request = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Request]
   }
 }

@@ -14,7 +14,6 @@ object ComputedDatum {
   @scala.inline
   def apply(data: Datum, position: AnonX): ComputedDatum = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComputedDatum]
   }
 }

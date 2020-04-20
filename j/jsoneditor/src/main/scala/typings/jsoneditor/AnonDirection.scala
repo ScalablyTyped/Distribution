@@ -16,7 +16,6 @@ object AnonDirection {
   @scala.inline
   def apply(direction: asc | desc, field: String | `@`): AnonDirection = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDirection]
   }
 }

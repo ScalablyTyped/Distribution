@@ -28,24 +28,22 @@ trait WdEnvelopeOrientation extends js.Object
 
 object WdEnvelopeOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCenterClockwise: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdCenterClockwise: `7` = this.cast(7)
+  def wdCenterLandscape: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdCenterLandscape: `4` = this.cast(4)
+  def wdCenterPortrait: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdCenterPortrait: `1` = this.cast(1)
+  def wdLeftClockwise: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdLeftClockwise: `6` = this.cast(6)
+  def wdLeftLandscape: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdLeftLandscape: `3` = this.cast(3)
+  def wdLeftPortrait: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdLeftPortrait: `0` = this.cast(0)
+  def wdRightClockwise: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdRightClockwise: `8` = this.cast(8)
+  def wdRightLandscape: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdRightLandscape: `5` = this.cast(5)
-  @scala.inline
-  def wdRightPortrait: `2` = this.cast(2)
+  def wdRightPortrait: `2` = 2.asInstanceOf[`2`]
 }
 

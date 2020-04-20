@@ -16,7 +16,6 @@ object CreateAssessmentTargetResponse {
   @scala.inline
   def apply(assessmentTargetArn: Arn): CreateAssessmentTargetResponse = {
     val __obj = js.Dynamic.literal(assessmentTargetArn = assessmentTargetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAssessmentTargetResponse]
   }
 }

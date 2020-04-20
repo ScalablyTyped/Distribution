@@ -13,7 +13,6 @@ object AnonDiv {
   @scala.inline
   def apply(div: Double, mod: Double): AnonDiv = {
     val __obj = js.Dynamic.literal(div = div.asInstanceOf[js.Any], mod = mod.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDiv]
   }
 }

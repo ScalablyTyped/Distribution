@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactSmoothScrollbarProps {
   @scala.inline
-  def ReactSmoothScrollbarProps: ScrollbarProps.type = typings.reactSmoothScrollbar.mod.ScrollbarProps
+  def ReactSmoothScrollbarProps: ScrollbarProps.type = ScrollbarProps
   type ReactSmoothScrollbarProps = ScrollbarProps
 }
 

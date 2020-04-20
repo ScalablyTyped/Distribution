@@ -57,21 +57,21 @@ class Attribute protected ()
     */
   @JSName("value")
   val value_FAttribute: IValueType = js.native
-  def containerAsEntity(): Entity = js.native
-  def dataStorageGuid(): String = js.native
+  def containerAsEntity: Entity = js.native
+  def dataStorageGuid: String = js.native
   def dataStorageGuid(newValue: String): js.Any = js.native
-  def documentation(): String = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MAttribute(): String | Null = js.native
-  def `type`(): AttributeType = js.native
+  def qualifiedName_MAttribute: String | Null = js.native
+  def `type`: AttributeType = js.native
   def `type`(newValue: AttributeType): js.Any = js.native
   /**
     * In version 6.6.0: added public
     */
-  def value(): ValueType = js.native
+  def value: ValueType = js.native
   def value(newValue: ValueType): js.Any = js.native
 }
 

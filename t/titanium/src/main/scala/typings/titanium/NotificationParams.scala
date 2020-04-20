@@ -14,23 +14,23 @@ trait NotificationParams extends js.Object {
   	 * Alert button text ('Open', by default) or home text ('Press Home to unlock', by default)
   	 * to display.
   	 */
-  var alertAction: js.UndefOr[String] = js.undefined
+  var alertAction: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Alert message to display.
   	 */
-  var alertBody: js.UndefOr[String] = js.undefined
+  var alertBody: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Image to display instead of `Default.png` when launching the application.
   	 */
-  var alertLaunchImage: js.UndefOr[String] = js.undefined
+  var alertLaunchImage: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Alert subtitle to display.
   	 */
-  var alertSubtitle: js.UndefOr[String] = js.undefined
+  var alertSubtitle: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Alert title to display.
   	 */
-  var alertTitle: js.UndefOr[String] = js.undefined
+  var alertTitle: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Notification attachments to display.
   	 */
@@ -42,7 +42,7 @@ trait NotificationParams extends js.Object {
   /**
   	 * String identifier of category of actions to be displayed for an interactive notification.
   	 */
-  var category: js.UndefOr[String] = js.undefined
+  var category: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Date and time for the notification to occur.
   	 */
@@ -50,7 +50,7 @@ trait NotificationParams extends js.Object {
   /**
   	 * The notification identifier.
   	 */
-  var identifier: String
+  var identifier: java.lang.String
   /**
   	 * Region the notification will be triggered in. Allowed parameter are:
   	 * - `latitude`: Latitude of the location center, in decimal degrees (required).
@@ -61,23 +61,23 @@ trait NotificationParams extends js.Object {
   /**
   	 * Interval to repeat the notification. One of `weekly`, `daily`, `yearly,` `monthly`.
   	 */
-  var repeat: js.UndefOr[String] = js.undefined
+  var repeat: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Path to the sound file to play when notification occurs, relative to the `Resources` folder.
   	 */
-  var sound: js.UndefOr[String] = js.undefined
+  var sound: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * The string the notification adds to the category's summary format string.
   	 */
-  var summaryArgument: js.UndefOr[String] = js.undefined
+  var summaryArgument: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * The number of items the notification adds to the category's summary format string.
   	 */
-  var summaryArgumentCount: js.UndefOr[String] = js.undefined
+  var summaryArgumentCount: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Timezone of the date configured for the notification. If not set, the system timezone is used.
   	 */
-  var timezone: js.UndefOr[String] = js.undefined
+  var timezone: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Data to pass to the application with the notification event.
   	 */
@@ -87,22 +87,22 @@ trait NotificationParams extends js.Object {
 object NotificationParams {
   @scala.inline
   def apply(
-    identifier: String,
-    alertAction: String = null,
-    alertBody: String = null,
-    alertLaunchImage: String = null,
-    alertSubtitle: String = null,
-    alertTitle: String = null,
+    identifier: java.lang.String,
+    alertAction: java.lang.String = null,
+    alertBody: java.lang.String = null,
+    alertLaunchImage: java.lang.String = null,
+    alertSubtitle: java.lang.String = null,
+    alertTitle: java.lang.String = null,
     attachments: js.Array[UserNotificationAttachment] = null,
     badge: Int | Double = null,
-    category: String = null,
+    category: java.lang.String = null,
     date: Date = null,
     region: js.Any = null,
-    repeat: String = null,
-    sound: String = null,
-    summaryArgument: String = null,
-    summaryArgumentCount: String = null,
-    timezone: String = null,
+    repeat: java.lang.String = null,
+    sound: java.lang.String = null,
+    summaryArgument: java.lang.String = null,
+    summaryArgumentCount: java.lang.String = null,
+    timezone: java.lang.String = null,
     userInfo: js.Any = null
   ): NotificationParams = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])

@@ -12,7 +12,6 @@ object AnonPaddingVerticalNumber {
   @scala.inline
   def apply(paddingVertical: Double): AnonPaddingVerticalNumber = {
     val __obj = js.Dynamic.literal(paddingVertical = paddingVertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPaddingVerticalNumber]
   }
 }

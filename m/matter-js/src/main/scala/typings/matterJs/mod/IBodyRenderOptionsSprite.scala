@@ -34,7 +34,6 @@ object IBodyRenderOptionsSprite {
   @scala.inline
   def apply(texture: String, xScale: Double, yScale: Double): IBodyRenderOptionsSprite = {
     val __obj = js.Dynamic.literal(texture = texture.asInstanceOf[js.Any], xScale = xScale.asInstanceOf[js.Any], yScale = yScale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBodyRenderOptionsSprite]
   }
 }

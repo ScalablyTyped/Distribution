@@ -31,7 +31,6 @@ object ConversionResource {
     updateAvailability: AnonAlt => Request_[UpdateAvailabilityResponse]
   ): ConversionResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update), updateAvailability = js.Any.fromFunction1(updateAvailability))
-  
     __obj.asInstanceOf[ConversionResource]
   }
 }

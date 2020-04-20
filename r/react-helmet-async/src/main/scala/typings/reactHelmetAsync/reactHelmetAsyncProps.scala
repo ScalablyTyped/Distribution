@@ -6,9 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactHelmetAsyncProps {
-  type HelmetProps = typings.reactHelmet.mod.HelmetProps
   @scala.inline
-  def HelmetProviderProps: ProviderProps.type = typings.reactHelmetAsync.mod.ProviderProps
+  def HelmetProps: typings.reactHelmetAsync.mod.HelmetProps.type = typings.reactHelmetAsync.mod.HelmetProps
+  type HelmetProps = typings.reactHelmetAsync.mod.HelmetProps
+  @scala.inline
+  def HelmetProviderProps: ProviderProps.type = ProviderProps
   type HelmetProviderProps = ProviderProps
 }
 

@@ -13,7 +13,6 @@ object SuiteTestCase {
   @scala.inline
   def apply(pointAssignments: js.Array[PointAssignment], testCase: WorkItemReference): SuiteTestCase = {
     val __obj = js.Dynamic.literal(pointAssignments = pointAssignments.asInstanceOf[js.Any], testCase = testCase.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuiteTestCase]
   }
 }

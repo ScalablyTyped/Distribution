@@ -21,28 +21,26 @@ trait Types extends js.Object
 
 object Types {
   @scala.inline
-  def alternatives: typings.joi.joiStrings.alternatives = this.cast("alternatives")
+  def alternatives: typings.joi.joiStrings.alternatives = "alternatives".asInstanceOf[typings.joi.joiStrings.alternatives]
   @scala.inline
-  def any: typings.joi.joiStrings.any = this.cast("any")
+  def any: typings.joi.joiStrings.any = "any".asInstanceOf[typings.joi.joiStrings.any]
   @scala.inline
-  def array: typings.joi.joiStrings.array = this.cast("array")
+  def array: typings.joi.joiStrings.array = "array".asInstanceOf[typings.joi.joiStrings.array]
   @scala.inline
-  def binary: typings.joi.joiStrings.binary = this.cast("binary")
+  def binary: typings.joi.joiStrings.binary = "binary".asInstanceOf[typings.joi.joiStrings.binary]
   @scala.inline
-  def boolean: typings.joi.joiStrings.boolean = this.cast("boolean")
+  def boolean: typings.joi.joiStrings.boolean = "boolean".asInstanceOf[typings.joi.joiStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.joi.joiStrings.date = "date".asInstanceOf[typings.joi.joiStrings.date]
   @scala.inline
-  def date: typings.joi.joiStrings.date = this.cast("date")
+  def function: typings.joi.joiStrings.function = "function".asInstanceOf[typings.joi.joiStrings.function]
   @scala.inline
-  def function: typings.joi.joiStrings.function = this.cast("function")
+  def `lazy`: typings.joi.joiStrings.`lazy` = "lazy".asInstanceOf[typings.joi.joiStrings.`lazy`]
   @scala.inline
-  def `lazy`: typings.joi.joiStrings.`lazy` = this.cast("lazy")
+  def number: typings.joi.joiStrings.number = "number".asInstanceOf[typings.joi.joiStrings.number]
   @scala.inline
-  def number: typings.joi.joiStrings.number = this.cast("number")
+  def `object`: typings.joi.joiStrings.`object` = "object".asInstanceOf[typings.joi.joiStrings.`object`]
   @scala.inline
-  def `object`: typings.joi.joiStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.joi.joiStrings.string = this.cast("string")
+  def string: typings.joi.joiStrings.string = "string".asInstanceOf[typings.joi.joiStrings.string]
 }
 

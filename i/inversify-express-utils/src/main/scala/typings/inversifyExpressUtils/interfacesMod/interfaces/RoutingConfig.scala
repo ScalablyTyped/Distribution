@@ -12,7 +12,6 @@ object RoutingConfig {
   @scala.inline
   def apply(rootPath: String): RoutingConfig = {
     val __obj = js.Dynamic.literal(rootPath = rootPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoutingConfig]
   }
 }

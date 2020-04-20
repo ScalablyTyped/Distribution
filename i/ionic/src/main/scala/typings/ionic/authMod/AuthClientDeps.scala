@@ -13,7 +13,6 @@ object AuthClientDeps {
   @scala.inline
   def apply(client: IClient): AuthClientDeps = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthClientDeps]
   }
 }

@@ -22,18 +22,16 @@ trait WdTabAlignment extends js.Object
 
 object WdTabAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAlignTabBar: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdAlignTabBar: `4` = this.cast(4)
+  def wdAlignTabCenter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdAlignTabCenter: `1` = this.cast(1)
+  def wdAlignTabDecimal: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdAlignTabDecimal: `3` = this.cast(3)
+  def wdAlignTabLeft: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdAlignTabLeft: `0` = this.cast(0)
+  def wdAlignTabList: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdAlignTabList: `6` = this.cast(6)
-  @scala.inline
-  def wdAlignTabRight: `2` = this.cast(2)
+  def wdAlignTabRight: `2` = 2.asInstanceOf[`2`]
 }
 

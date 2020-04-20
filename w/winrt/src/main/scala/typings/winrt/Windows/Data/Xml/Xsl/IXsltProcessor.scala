@@ -13,7 +13,6 @@ object IXsltProcessor {
   @scala.inline
   def apply(transformToString: IXmlNode => String): IXsltProcessor = {
     val __obj = js.Dynamic.literal(transformToString = js.Any.fromFunction1(transformToString))
-  
     __obj.asInstanceOf[IXsltProcessor]
   }
 }

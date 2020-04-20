@@ -20,7 +20,6 @@ object WorkflowTypeDetail {
   @scala.inline
   def apply(configuration: WorkflowTypeConfiguration, typeInfo: WorkflowTypeInfo): WorkflowTypeDetail = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], typeInfo = typeInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkflowTypeDetail]
   }
 }

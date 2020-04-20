@@ -15,16 +15,14 @@ trait Status extends js.Object
 
 object Status {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def connected: typings.cometd.cometdStrings.connected = "connected".asInstanceOf[typings.cometd.cometdStrings.connected]
   @scala.inline
-  def connected: typings.cometd.cometdStrings.connected = this.cast("connected")
+  def connecting: typings.cometd.cometdStrings.connecting = "connecting".asInstanceOf[typings.cometd.cometdStrings.connecting]
   @scala.inline
-  def connecting: typings.cometd.cometdStrings.connecting = this.cast("connecting")
+  def disconnected: typings.cometd.cometdStrings.disconnected = "disconnected".asInstanceOf[typings.cometd.cometdStrings.disconnected]
   @scala.inline
-  def disconnected: typings.cometd.cometdStrings.disconnected = this.cast("disconnected")
+  def disconnecting: typings.cometd.cometdStrings.disconnecting = "disconnecting".asInstanceOf[typings.cometd.cometdStrings.disconnecting]
   @scala.inline
-  def disconnecting: typings.cometd.cometdStrings.disconnecting = this.cast("disconnecting")
-  @scala.inline
-  def handshaking: typings.cometd.cometdStrings.handshaking = this.cast("handshaking")
+  def handshaking: typings.cometd.cometdStrings.handshaking = "handshaking".asInstanceOf[typings.cometd.cometdStrings.handshaking]
 }
 

@@ -16,7 +16,6 @@ object Tooltip {
   @scala.inline
   def apply(destroy: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit): Tooltip = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
-  
     __obj.asInstanceOf[Tooltip]
   }
 }

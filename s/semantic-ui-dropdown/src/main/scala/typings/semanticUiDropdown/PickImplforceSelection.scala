@@ -13,7 +13,6 @@ object PickImplforceSelection {
   @scala.inline
   def apply(forceSelection: Boolean): PickImplforceSelection = {
     val __obj = js.Dynamic.literal(forceSelection = forceSelection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplforceSelection]
   }
 }

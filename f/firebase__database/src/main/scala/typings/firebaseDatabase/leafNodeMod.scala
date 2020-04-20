@@ -67,7 +67,7 @@ object leafNodeMod extends js.Object {
       * @const
       */
     var VALUE_TYPE_ORDER: js.Array[String] = js.native
-    def __childrenNodeConstructor(): ChildrenNodeConstructor = js.native
+    def __childrenNodeConstructor: ChildrenNodeConstructor = js.native
     def __childrenNodeConstructor(`val`: ChildrenNodeConstructor): js.Any = js.native
   }
   

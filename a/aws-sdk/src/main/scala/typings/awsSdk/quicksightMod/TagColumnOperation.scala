@@ -20,7 +20,6 @@ object TagColumnOperation {
   @scala.inline
   def apply(ColumnName: ColumnName, Tags: ColumnTagList): TagColumnOperation = {
     val __obj = js.Dynamic.literal(ColumnName = ColumnName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagColumnOperation]
   }
 }

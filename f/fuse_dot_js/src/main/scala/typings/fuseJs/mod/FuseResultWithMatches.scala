@@ -13,7 +13,6 @@ object FuseResultWithMatches {
   @scala.inline
   def apply[T](item: T, matches: js.Any): FuseResultWithMatches[T] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FuseResultWithMatches[T]]
   }
 }

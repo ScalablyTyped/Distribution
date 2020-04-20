@@ -16,7 +16,6 @@ object DescribeAuditTaskRequest {
   @scala.inline
   def apply(taskId: AuditTaskId): DescribeAuditTaskRequest = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAuditTaskRequest]
   }
 }

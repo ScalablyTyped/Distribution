@@ -20,23 +20,21 @@ trait UUIDVersion extends js.Object
 
 object UUIDVersion {
   @scala.inline
-  def `3`: typings.validator.validatorNumbers.`3` = this.cast(3)
+  def `3`: typings.validator.validatorNumbers.`3` = 3.asInstanceOf[typings.validator.validatorNumbers.`3`]
   @JSName("3")
   @scala.inline
-  def `3_3`: `3` = this.cast("3")
+  def `3_3`: `3` = "3".asInstanceOf[`3`]
   @scala.inline
-  def `4`: typings.validator.validatorStrings.`4` = this.cast("4")
+  def `4`: typings.validator.validatorStrings.`4` = "4".asInstanceOf[typings.validator.validatorStrings.`4`]
   @JSName("4")
   @scala.inline
-  def `4_4`: `4` = this.cast(4)
+  def `4_4`: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def `5`: typings.validator.validatorNumbers.`5` = this.cast(5)
+  def `5`: typings.validator.validatorNumbers.`5` = 5.asInstanceOf[typings.validator.validatorNumbers.`5`]
   @JSName("5")
   @scala.inline
-  def `5_5`: `5` = this.cast("5")
+  def `5_5`: `5` = "5".asInstanceOf[`5`]
   @scala.inline
-  def all: typings.validator.validatorStrings.all = this.cast("all")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def all: typings.validator.validatorStrings.all = "all".asInstanceOf[typings.validator.validatorStrings.all]
 }
 

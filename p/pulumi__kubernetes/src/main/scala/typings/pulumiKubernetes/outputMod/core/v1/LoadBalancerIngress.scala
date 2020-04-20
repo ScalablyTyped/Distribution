@@ -25,7 +25,6 @@ object LoadBalancerIngress {
   @scala.inline
   def apply(hostname: String, ip: String): LoadBalancerIngress = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoadBalancerIngress]
   }
 }

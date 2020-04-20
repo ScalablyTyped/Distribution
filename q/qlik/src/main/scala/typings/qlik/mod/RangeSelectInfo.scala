@@ -14,7 +14,6 @@ object RangeSelectInfo {
   @scala.inline
   def apply(qMeasure: String, qRangeHi: Double, qRangeLo: Double): RangeSelectInfo = {
     val __obj = js.Dynamic.literal(qMeasure = qMeasure.asInstanceOf[js.Any], qRangeHi = qRangeHi.asInstanceOf[js.Any], qRangeLo = qRangeLo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RangeSelectInfo]
   }
 }

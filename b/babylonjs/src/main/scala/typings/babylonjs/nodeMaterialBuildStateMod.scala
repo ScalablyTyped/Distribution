@@ -104,7 +104,7 @@ object nodeMaterialBuildStateMod extends js.Object {
     /** @hidden */
     def _registerTempVariable(name: String): Boolean = js.native
     /** @hidden */
-    def _repeatableContentAnchor(): String = js.native
+    def _repeatableContentAnchor: String = js.native
     /**
       * Finalize the compilation strings
       * @param state defines the current compilation state

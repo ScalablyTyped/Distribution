@@ -16,12 +16,10 @@ trait WdHorizontalInVerticalType extends js.Object
 
 object WdHorizontalInVerticalType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdHorizontalInVerticalFitInLine: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdHorizontalInVerticalFitInLine: `1` = this.cast(1)
+  def wdHorizontalInVerticalNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdHorizontalInVerticalNone: `0` = this.cast(0)
-  @scala.inline
-  def wdHorizontalInVerticalResizeLine: `2` = this.cast(2)
+  def wdHorizontalInVerticalResizeLine: `2` = 2.asInstanceOf[`2`]
 }
 

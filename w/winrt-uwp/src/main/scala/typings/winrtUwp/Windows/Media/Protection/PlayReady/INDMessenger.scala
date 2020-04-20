@@ -60,7 +60,6 @@ object INDMessenger {
     sendRegistrationRequestAsync: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]
   ): INDMessenger = {
     val __obj = js.Dynamic.literal(sendLicenseFetchRequestAsync = js.Any.fromFunction2(sendLicenseFetchRequestAsync), sendProximityDetectionResponseAsync = js.Any.fromFunction4(sendProximityDetectionResponseAsync), sendProximityDetectionStartAsync = js.Any.fromFunction4(sendProximityDetectionStartAsync), sendRegistrationRequestAsync = js.Any.fromFunction2(sendRegistrationRequestAsync))
-  
     __obj.asInstanceOf[INDMessenger]
   }
 }

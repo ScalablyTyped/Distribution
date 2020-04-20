@@ -13,7 +13,6 @@ object NewsRepositoryInboxResponseTimeBucket {
   @scala.inline
   def apply(headers: js.Array[String], indices: js.Array[Double]): NewsRepositoryInboxResponseTimeBucket = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NewsRepositoryInboxResponseTimeBucket]
   }
 }

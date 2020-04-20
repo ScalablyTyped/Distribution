@@ -12,7 +12,6 @@ object SpringInterface {
   @scala.inline
   def apply(stop: () => Unit): SpringInterface = {
     val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[SpringInterface]
   }
 }

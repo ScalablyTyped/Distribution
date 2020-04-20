@@ -21,7 +21,6 @@ object RequestSerializer {
   @scala.inline
   def apply[StreamType](serialize: (OperationModel, js.Any) => HttpRequest[StreamType]): RequestSerializer[StreamType] = {
     val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction2(serialize))
-  
     __obj.asInstanceOf[RequestSerializer[StreamType]]
   }
 }

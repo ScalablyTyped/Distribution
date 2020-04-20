@@ -17,7 +17,6 @@ object AnonLabel {
   @scala.inline
   def apply(axis: ChartAxisYOptions, chart: Chart, label: String, value: Double): AnonLabel = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLabel]
   }
 }

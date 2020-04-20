@@ -46,6 +46,6 @@ class VDomModel () extends IModel {
     * Test whether the model is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MVDomModel(): Boolean = js.native
+  def isDisposed_MVDomModel: Boolean = js.native
 }
 

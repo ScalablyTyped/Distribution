@@ -17,7 +17,6 @@ object TestMetricFilterRequest {
   @scala.inline
   def apply(filterPattern: FilterPattern, logEventMessages: TestEventMessages): TestMetricFilterRequest = {
     val __obj = js.Dynamic.literal(filterPattern = filterPattern.asInstanceOf[js.Any], logEventMessages = logEventMessages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestMetricFilterRequest]
   }
 }

@@ -14,7 +14,6 @@ object AnonShouldRetry {
   @scala.inline
   def apply(config: GaxiosOptions, shouldRetry: Boolean): AnonShouldRetry = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], shouldRetry = shouldRetry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShouldRetry]
   }
 }

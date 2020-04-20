@@ -12,7 +12,6 @@ object IColorHelperStatics {
   @scala.inline
   def apply(fromArgb: (Double, Double, Double, Double) => Color): IColorHelperStatics = {
     val __obj = js.Dynamic.literal(fromArgb = js.Any.fromFunction4(fromArgb))
-  
     __obj.asInstanceOf[IColorHelperStatics]
   }
 }

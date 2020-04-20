@@ -19,7 +19,6 @@ object ActionCodeInfo {
   @scala.inline
   def apply(data: AnonEmail, operation: PASSWORD_RESET | VERIFY_EMAIL | RECOVER_EMAIL | EMAIL_SIGNIN | ERROR): ActionCodeInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionCodeInfo]
   }
 }

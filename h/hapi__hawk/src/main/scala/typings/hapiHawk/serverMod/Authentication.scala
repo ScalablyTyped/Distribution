@@ -14,7 +14,6 @@ object Authentication {
   @scala.inline
   def apply(artifacts: Artifacts, credentials: Credentials): Authentication = {
     val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], credentials = credentials.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Authentication]
   }
 }

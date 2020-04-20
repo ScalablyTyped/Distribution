@@ -36,7 +36,6 @@ object BaseWorkerPool {
     getWorkers: () => js.Array[WorkerInterface]
   ): BaseWorkerPool = {
     val __obj = js.Dynamic.literal(_options = _options.asInstanceOf[js.Any], _stderr = _stderr.asInstanceOf[js.Any], _stdout = _stdout.asInstanceOf[js.Any], _workers = _workers.asInstanceOf[js.Any], createWorker = js.Any.fromFunction1(createWorker), end = js.Any.fromFunction0(end), getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout), getWorkerById = js.Any.fromFunction1(getWorkerById), getWorkers = js.Any.fromFunction0(getWorkers))
-  
     __obj.asInstanceOf[BaseWorkerPool]
   }
 }

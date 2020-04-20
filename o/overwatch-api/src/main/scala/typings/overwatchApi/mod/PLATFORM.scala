@@ -13,12 +13,10 @@ trait PLATFORM extends js.Object
 
 object PLATFORM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def pc: typings.overwatchApi.overwatchApiStrings.pc = "pc".asInstanceOf[typings.overwatchApi.overwatchApiStrings.pc]
   @scala.inline
-  def pc: typings.overwatchApi.overwatchApiStrings.pc = this.cast("pc")
+  def psn: typings.overwatchApi.overwatchApiStrings.psn = "psn".asInstanceOf[typings.overwatchApi.overwatchApiStrings.psn]
   @scala.inline
-  def psn: typings.overwatchApi.overwatchApiStrings.psn = this.cast("psn")
-  @scala.inline
-  def xbl: typings.overwatchApi.overwatchApiStrings.xbl = this.cast("xbl")
+  def xbl: typings.overwatchApi.overwatchApiStrings.xbl = "xbl".asInstanceOf[typings.overwatchApi.overwatchApiStrings.xbl]
 }
 

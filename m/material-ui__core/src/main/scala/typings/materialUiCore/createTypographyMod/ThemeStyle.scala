@@ -30,46 +30,44 @@ trait ThemeStyle extends js.Object
 
 object ThemeStyle {
   @scala.inline
-  def body1: typings.materialUiCore.materialUiCoreStrings.body1 = this.cast("body1")
+  def body1: typings.materialUiCore.materialUiCoreStrings.body1 = "body1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body1]
   @scala.inline
-  def body2: typings.materialUiCore.materialUiCoreStrings.body2 = this.cast("body2")
+  def body2: typings.materialUiCore.materialUiCoreStrings.body2 = "body2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body2]
   @scala.inline
-  def button: typings.materialUiCore.materialUiCoreStrings.button = this.cast("button")
+  def button: typings.materialUiCore.materialUiCoreStrings.button = "button".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.button]
   @scala.inline
-  def caption: typings.materialUiCore.materialUiCoreStrings.caption = this.cast("caption")
+  def caption: typings.materialUiCore.materialUiCoreStrings.caption = "caption".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.caption]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def display1: typings.materialUiCore.materialUiCoreStrings.display1 = "display1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display1]
   @scala.inline
-  def display1: typings.materialUiCore.materialUiCoreStrings.display1 = this.cast("display1")
+  def display2: typings.materialUiCore.materialUiCoreStrings.display2 = "display2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display2]
   @scala.inline
-  def display2: typings.materialUiCore.materialUiCoreStrings.display2 = this.cast("display2")
+  def display3: typings.materialUiCore.materialUiCoreStrings.display3 = "display3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display3]
   @scala.inline
-  def display3: typings.materialUiCore.materialUiCoreStrings.display3 = this.cast("display3")
+  def display4: typings.materialUiCore.materialUiCoreStrings.display4 = "display4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display4]
   @scala.inline
-  def display4: typings.materialUiCore.materialUiCoreStrings.display4 = this.cast("display4")
+  def h1: typings.materialUiCore.materialUiCoreStrings.h1 = "h1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h1]
   @scala.inline
-  def h1: typings.materialUiCore.materialUiCoreStrings.h1 = this.cast("h1")
+  def h2: typings.materialUiCore.materialUiCoreStrings.h2 = "h2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h2]
   @scala.inline
-  def h2: typings.materialUiCore.materialUiCoreStrings.h2 = this.cast("h2")
+  def h3: typings.materialUiCore.materialUiCoreStrings.h3 = "h3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h3]
   @scala.inline
-  def h3: typings.materialUiCore.materialUiCoreStrings.h3 = this.cast("h3")
+  def h4: typings.materialUiCore.materialUiCoreStrings.h4 = "h4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h4]
   @scala.inline
-  def h4: typings.materialUiCore.materialUiCoreStrings.h4 = this.cast("h4")
+  def h5: typings.materialUiCore.materialUiCoreStrings.h5 = "h5".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h5]
   @scala.inline
-  def h5: typings.materialUiCore.materialUiCoreStrings.h5 = this.cast("h5")
+  def h6: typings.materialUiCore.materialUiCoreStrings.h6 = "h6".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h6]
   @scala.inline
-  def h6: typings.materialUiCore.materialUiCoreStrings.h6 = this.cast("h6")
+  def headline: typings.materialUiCore.materialUiCoreStrings.headline = "headline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.headline]
   @scala.inline
-  def headline: typings.materialUiCore.materialUiCoreStrings.headline = this.cast("headline")
+  def overline: typings.materialUiCore.materialUiCoreStrings.overline = "overline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.overline]
   @scala.inline
-  def overline: typings.materialUiCore.materialUiCoreStrings.overline = this.cast("overline")
+  def subheading: typings.materialUiCore.materialUiCoreStrings.subheading = "subheading".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subheading]
   @scala.inline
-  def subheading: typings.materialUiCore.materialUiCoreStrings.subheading = this.cast("subheading")
+  def subtitle1: typings.materialUiCore.materialUiCoreStrings.subtitle1 = "subtitle1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle1]
   @scala.inline
-  def subtitle1: typings.materialUiCore.materialUiCoreStrings.subtitle1 = this.cast("subtitle1")
+  def subtitle2: typings.materialUiCore.materialUiCoreStrings.subtitle2 = "subtitle2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle2]
   @scala.inline
-  def subtitle2: typings.materialUiCore.materialUiCoreStrings.subtitle2 = this.cast("subtitle2")
-  @scala.inline
-  def title: typings.materialUiCore.materialUiCoreStrings.title = this.cast("title")
+  def title: typings.materialUiCore.materialUiCoreStrings.title = "title".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.title]
 }
 

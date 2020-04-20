@@ -25,7 +25,6 @@ object AnonArrowPointAtCenter {
     transitionName: String
   ): AnonArrowPointAtCenter = {
     val __obj = js.Dynamic.literal(arrowPointAtCenter = arrowPointAtCenter.asInstanceOf[js.Any], autoAdjustOverflow = autoAdjustOverflow.asInstanceOf[js.Any], mouseEnterDelay = mouseEnterDelay.asInstanceOf[js.Any], mouseLeaveDelay = mouseLeaveDelay.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArrowPointAtCenter]
   }
 }

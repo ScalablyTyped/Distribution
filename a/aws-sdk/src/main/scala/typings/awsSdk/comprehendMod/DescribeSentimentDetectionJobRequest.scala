@@ -16,7 +16,6 @@ object DescribeSentimentDetectionJobRequest {
   @scala.inline
   def apply(JobId: JobId): DescribeSentimentDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSentimentDetectionJobRequest]
   }
 }

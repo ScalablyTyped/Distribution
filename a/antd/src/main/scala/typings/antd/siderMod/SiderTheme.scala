@@ -12,10 +12,8 @@ trait SiderTheme extends js.Object
 
 object SiderTheme {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dark: typings.antd.antdStrings.dark = "dark".asInstanceOf[typings.antd.antdStrings.dark]
   @scala.inline
-  def dark: typings.antd.antdStrings.dark = this.cast("dark")
-  @scala.inline
-  def light: typings.antd.antdStrings.light = this.cast("light")
+  def light: typings.antd.antdStrings.light = "light".asInstanceOf[typings.antd.antdStrings.light]
 }
 

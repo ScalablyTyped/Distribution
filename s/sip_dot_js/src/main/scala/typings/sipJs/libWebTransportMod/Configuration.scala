@@ -26,7 +26,6 @@ object Configuration {
     wsServers: js.Array[WsServer]
   ): Configuration = {
     val __obj = js.Dynamic.literal(connectionTimeout = connectionTimeout.asInstanceOf[js.Any], keepAliveDebounce = keepAliveDebounce.asInstanceOf[js.Any], keepAliveInterval = keepAliveInterval.asInstanceOf[js.Any], maxReconnectionAttempts = maxReconnectionAttempts.asInstanceOf[js.Any], reconnectionTimeout = reconnectionTimeout.asInstanceOf[js.Any], traceSip = traceSip.asInstanceOf[js.Any], wsServers = wsServers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Configuration]
   }
 }

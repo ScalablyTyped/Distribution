@@ -20,7 +20,6 @@ object DeleteMessageRequest {
   @scala.inline
   def apply(QueueUrl: String, ReceiptHandle: String): DeleteMessageRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMessageRequest]
   }
 }

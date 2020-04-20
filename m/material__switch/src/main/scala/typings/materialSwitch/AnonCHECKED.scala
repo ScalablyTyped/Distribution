@@ -13,7 +13,6 @@ object AnonCHECKED {
   @scala.inline
   def apply(CHECKED: String, DISABLED: String): AnonCHECKED = {
     val __obj = js.Dynamic.literal(CHECKED = CHECKED.asInstanceOf[js.Any], DISABLED = DISABLED.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCHECKED]
   }
 }

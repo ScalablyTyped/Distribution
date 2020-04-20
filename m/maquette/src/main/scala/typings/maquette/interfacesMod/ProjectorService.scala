@@ -25,7 +25,6 @@ object ProjectorService {
   @scala.inline
   def apply(renderNow: () => Unit, scheduleRender: () => Unit): ProjectorService = {
     val __obj = js.Dynamic.literal(renderNow = js.Any.fromFunction0(renderNow), scheduleRender = js.Any.fromFunction0(scheduleRender))
-  
     __obj.asInstanceOf[ProjectorService]
   }
 }

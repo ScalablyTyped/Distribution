@@ -20,7 +20,6 @@ object BatchDeleteDocumentRequest {
   @scala.inline
   def apply(DocumentIdList: DocumentIdList, IndexId: IndexId): BatchDeleteDocumentRequest = {
     val __obj = js.Dynamic.literal(DocumentIdList = DocumentIdList.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDeleteDocumentRequest]
   }
 }

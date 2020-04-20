@@ -15,7 +15,6 @@ object DeleteApiKeyResponse {
   @scala.inline
   def apply(deletedAt: String): DeleteApiKeyResponse = {
     val __obj = js.Dynamic.literal(deletedAt = deletedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApiKeyResponse]
   }
 }

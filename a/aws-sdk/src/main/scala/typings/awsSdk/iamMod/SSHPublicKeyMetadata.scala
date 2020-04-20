@@ -28,7 +28,6 @@ object SSHPublicKeyMetadata {
   @scala.inline
   def apply(SSHPublicKeyId: publicKeyIdType, Status: statusType, UploadDate: dateType, UserName: userNameType): SSHPublicKeyMetadata = {
     val __obj = js.Dynamic.literal(SSHPublicKeyId = SSHPublicKeyId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UploadDate = UploadDate.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SSHPublicKeyMetadata]
   }
 }

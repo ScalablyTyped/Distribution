@@ -12,7 +12,6 @@ object FeedbackType {
   @scala.inline
   def apply(fields: js.Array[FieldType]): FeedbackType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeedbackType]
   }
 }

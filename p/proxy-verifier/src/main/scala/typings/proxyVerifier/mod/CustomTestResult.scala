@@ -17,13 +17,11 @@ object CustomTestResult {
   @scala.inline
   def CustomTestWorkingResult(data: String, headers: Headers, ok: `true`, status: Double): CustomTestResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomTestResult]
   }
   @scala.inline
   def CustomTestNotWorkingResult(data: String, error: AnonCode, headers: Headers, ok: `false`, status: Double): CustomTestResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomTestResult]
   }
 }

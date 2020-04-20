@@ -19,24 +19,22 @@ trait hardfork extends js.Object
 
 object hardfork {
   @scala.inline
-  def byzantium: typings.web3Core.web3CoreStrings.byzantium = this.cast("byzantium")
+  def byzantium: typings.web3Core.web3CoreStrings.byzantium = "byzantium".asInstanceOf[typings.web3Core.web3CoreStrings.byzantium]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chainstart: typings.web3Core.web3CoreStrings.chainstart = "chainstart".asInstanceOf[typings.web3Core.web3CoreStrings.chainstart]
   @scala.inline
-  def chainstart: typings.web3Core.web3CoreStrings.chainstart = this.cast("chainstart")
+  def constantinople: typings.web3Core.web3CoreStrings.constantinople = "constantinople".asInstanceOf[typings.web3Core.web3CoreStrings.constantinople]
   @scala.inline
-  def constantinople: typings.web3Core.web3CoreStrings.constantinople = this.cast("constantinople")
+  def dao: typings.web3Core.web3CoreStrings.dao = "dao".asInstanceOf[typings.web3Core.web3CoreStrings.dao]
   @scala.inline
-  def dao: typings.web3Core.web3CoreStrings.dao = this.cast("dao")
+  def homestead: typings.web3Core.web3CoreStrings.homestead = "homestead".asInstanceOf[typings.web3Core.web3CoreStrings.homestead]
   @scala.inline
-  def homestead: typings.web3Core.web3CoreStrings.homestead = this.cast("homestead")
+  def istanbul: typings.web3Core.web3CoreStrings.istanbul = "istanbul".asInstanceOf[typings.web3Core.web3CoreStrings.istanbul]
   @scala.inline
-  def istanbul: typings.web3Core.web3CoreStrings.istanbul = this.cast("istanbul")
+  def petersburg: typings.web3Core.web3CoreStrings.petersburg = "petersburg".asInstanceOf[typings.web3Core.web3CoreStrings.petersburg]
   @scala.inline
-  def petersburg: typings.web3Core.web3CoreStrings.petersburg = this.cast("petersburg")
+  def spuriousDragon: typings.web3Core.web3CoreStrings.spuriousDragon = "spuriousDragon".asInstanceOf[typings.web3Core.web3CoreStrings.spuriousDragon]
   @scala.inline
-  def spuriousDragon: typings.web3Core.web3CoreStrings.spuriousDragon = this.cast("spuriousDragon")
-  @scala.inline
-  def tangerineWhistle: typings.web3Core.web3CoreStrings.tangerineWhistle = this.cast("tangerineWhistle")
+  def tangerineWhistle: typings.web3Core.web3CoreStrings.tangerineWhistle = "tangerineWhistle".asInstanceOf[typings.web3Core.web3CoreStrings.tangerineWhistle]
 }
 

@@ -13,7 +13,6 @@ object AnonEvent {
   @scala.inline
   def apply(event: String, params: js.Any): AnonEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEvent]
   }
 }

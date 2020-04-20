@@ -19,7 +19,6 @@ object AnonPartRequestBody {
   @scala.inline
   def apply(RequestBody: String, part: String): AnonPartRequestBody = {
     val __obj = js.Dynamic.literal(RequestBody = RequestBody.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPartRequestBody]
   }
 }

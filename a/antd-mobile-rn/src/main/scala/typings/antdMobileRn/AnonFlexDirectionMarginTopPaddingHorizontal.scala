@@ -14,7 +14,6 @@ object AnonFlexDirectionMarginTopPaddingHorizontal {
   @scala.inline
   def apply(flexDirection: String, marginTop: Double, paddingHorizontal: Double): AnonFlexDirectionMarginTopPaddingHorizontal = {
     val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlexDirectionMarginTopPaddingHorizontal]
   }
 }

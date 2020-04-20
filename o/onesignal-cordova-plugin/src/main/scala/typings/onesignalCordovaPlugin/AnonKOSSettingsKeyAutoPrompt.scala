@@ -13,7 +13,6 @@ object AnonKOSSettingsKeyAutoPrompt {
   @scala.inline
   def apply(kOSSettingsKeyAutoPrompt: Boolean, kOSSettingsKeyInAppLaunchURL: Boolean): AnonKOSSettingsKeyAutoPrompt = {
     val __obj = js.Dynamic.literal(kOSSettingsKeyAutoPrompt = kOSSettingsKeyAutoPrompt.asInstanceOf[js.Any], kOSSettingsKeyInAppLaunchURL = kOSSettingsKeyInAppLaunchURL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKOSSettingsKeyAutoPrompt]
   }
 }

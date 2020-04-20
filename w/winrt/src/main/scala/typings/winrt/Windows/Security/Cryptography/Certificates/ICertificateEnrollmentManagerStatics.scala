@@ -27,7 +27,6 @@ object ICertificateEnrollmentManagerStatics {
     installCertificateAsync: (String, InstallOptions) => IAsyncAction
   ): ICertificateEnrollmentManagerStatics = {
     val __obj = js.Dynamic.literal(createRequestAsync = js.Any.fromFunction1(createRequestAsync), importPfxDataAsync = js.Any.fromFunction6(importPfxDataAsync), installCertificateAsync = js.Any.fromFunction2(installCertificateAsync))
-  
     __obj.asInstanceOf[ICertificateEnrollmentManagerStatics]
   }
 }

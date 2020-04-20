@@ -12,10 +12,8 @@ trait DigestAlgorithmType extends js.Object
 
 object DigestAlgorithmType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def sha1: typings.samlp.samlpStrings.sha1 = "sha1".asInstanceOf[typings.samlp.samlpStrings.sha1]
   @scala.inline
-  def sha1: typings.samlp.samlpStrings.sha1 = this.cast("sha1")
-  @scala.inline
-  def sha256: typings.samlp.samlpStrings.sha256 = this.cast("sha256")
+  def sha256: typings.samlp.samlpStrings.sha256 = "sha256".asInstanceOf[typings.samlp.samlpStrings.sha256]
 }
 

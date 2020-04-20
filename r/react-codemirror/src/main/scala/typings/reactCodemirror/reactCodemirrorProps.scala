@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCodemirrorProps {
   @scala.inline
-  def ReactCodemirrorProps: ReactCodeMirrorProps.type = typings.reactCodemirror.ReactCodeMirror.ReactCodeMirrorProps
+  def ReactCodemirrorProps: ReactCodeMirrorProps.type = ReactCodeMirrorProps
   type ReactCodemirrorProps = ReactCodeMirrorProps
 }
 

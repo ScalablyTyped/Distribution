@@ -14,7 +14,6 @@ object ITeachingBubbleSubComponentStyles {
   @scala.inline
   def apply(callout: IStyleFunctionOrObject[_, _]): ITeachingBubbleSubComponentStyles = {
     val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITeachingBubbleSubComponentStyles]
   }
 }

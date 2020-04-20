@@ -22,7 +22,6 @@ object ScatterShapeInfo {
     strides: js.Array[Double]
   ): ScatterShapeInfo = {
     val __obj = js.Dynamic.literal(numUpdates = numUpdates.asInstanceOf[js.Any], outputSize = outputSize.asInstanceOf[js.Any], sliceRank = sliceRank.asInstanceOf[js.Any], sliceSize = sliceSize.asInstanceOf[js.Any], strides = strides.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScatterShapeInfo]
   }
 }

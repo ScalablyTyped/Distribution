@@ -23,18 +23,16 @@ trait OLECMDF extends js.Object
 
 object OLECMDF {
   @scala.inline
-  def OLECMDF_DEFHIDEONCTXTMENU: `32` = this.cast(32)
+  def OLECMDF_DEFHIDEONCTXTMENU: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def OLECMDF_ENABLED: `2` = this.cast(2)
+  def OLECMDF_ENABLED: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def OLECMDF_INVISIBLE: `16` = this.cast(16)
+  def OLECMDF_INVISIBLE: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def OLECMDF_LATCHED: `4` = this.cast(4)
+  def OLECMDF_LATCHED: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def OLECMDF_NINCHED: `8` = this.cast(8)
+  def OLECMDF_NINCHED: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def OLECMDF_SUPPORTED: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OLECMDF_SUPPORTED: `1` = 1.asInstanceOf[`1`]
 }
 

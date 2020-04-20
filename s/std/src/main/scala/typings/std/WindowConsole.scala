@@ -12,7 +12,6 @@ object WindowConsole {
   @scala.inline
   def apply(console: Console_): WindowConsole = {
     val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WindowConsole]
   }
 }

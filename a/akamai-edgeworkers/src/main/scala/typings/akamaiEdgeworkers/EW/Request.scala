@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait Request extends js.Object {
   /**
-    * The cpcode used for reporting.
+    * The CP code used for reporting.
     */
   val cpCode: Double
   /**
-    * Object containing properties specifying the device characteristics. This
+    * Object containing properties specifying the device characteristics. The
     * value of this property will be null if the contract associated with the
     * request does not have entitlements for EDC.
     */
@@ -37,7 +37,7 @@ trait Request extends js.Object {
     */
   val scheme: String
   /**
-    * The Relative URL of the incoming request. This includes the path as well
+    * The relative URL of the incoming request. This includes the path as well
     * as the query string.
     */
   val url: String

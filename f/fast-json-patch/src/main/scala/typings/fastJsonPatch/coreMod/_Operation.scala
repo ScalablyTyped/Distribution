@@ -13,19 +13,16 @@ object _Operation {
   @scala.inline
   def RemoveOperation(op: remove, path: String): _Operation = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_Operation]
   }
   @scala.inline
   def MoveOperation(from: String, op: move, path: String): _Operation = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_Operation]
   }
   @scala.inline
   def CopyOperation(from: String, op: copy, path: String): _Operation = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_Operation]
   }
 }

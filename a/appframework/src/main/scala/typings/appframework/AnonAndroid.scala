@@ -48,7 +48,6 @@ object AnonAndroid {
     webos: Boolean
   ): AnonAndroid = {
     val __obj = js.Dynamic.literal(android = android.asInstanceOf[js.Any], androidICS = androidICS.asInstanceOf[js.Any], blackberry = blackberry.asInstanceOf[js.Any], blackberry10 = blackberry10.asInstanceOf[js.Any], chrome = chrome.asInstanceOf[js.Any], fennec = fennec.asInstanceOf[js.Any], ie = ie.asInstanceOf[js.Any], ieTouch = ieTouch.asInstanceOf[js.Any], ios = ios.asInstanceOf[js.Any], ios7 = ios7.asInstanceOf[js.Any], ipad = ipad.asInstanceOf[js.Any], iphone = iphone.asInstanceOf[js.Any], opera = opera.asInstanceOf[js.Any], playbook = playbook.asInstanceOf[js.Any], supportsTouch = supportsTouch.asInstanceOf[js.Any], touchpad = touchpad.asInstanceOf[js.Any], webkit = webkit.asInstanceOf[js.Any], webos = webos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAndroid]
   }
 }

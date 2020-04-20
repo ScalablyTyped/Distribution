@@ -15,7 +15,6 @@ object AnonMove {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](move: Boolean, slice: Slice[S]): AnonMove[S] = {
     val __obj = js.Dynamic.literal(move = move.asInstanceOf[js.Any], slice = slice.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMove[S]]
   }
 }

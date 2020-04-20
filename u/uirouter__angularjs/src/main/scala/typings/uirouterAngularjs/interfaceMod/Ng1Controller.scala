@@ -93,7 +93,6 @@ object Ng1Controller {
     uiOnParamsChanged: (js.Any, Transition) => Unit
   ): Ng1Controller = {
     val __obj = js.Dynamic.literal($onInit = js.Any.fromFunction0($onInit), uiCanExit = js.Any.fromFunction1(uiCanExit), uiOnParamsChanged = js.Any.fromFunction2(uiOnParamsChanged))
-  
     __obj.asInstanceOf[Ng1Controller]
   }
 }

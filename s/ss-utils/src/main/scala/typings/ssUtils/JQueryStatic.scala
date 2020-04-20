@@ -13,7 +13,6 @@ object JQueryStatic {
   @scala.inline
   def apply(ss: Static): JQueryStatic = {
     val __obj = js.Dynamic.literal(ss = ss.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

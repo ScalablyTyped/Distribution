@@ -15,16 +15,14 @@ trait FontVariant extends js.Object
 
 object FontVariant {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `lining-nums`: typings.reactNative.reactNativeStrings.`lining-nums` = "lining-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`lining-nums`]
   @scala.inline
-  def `lining-nums`: typings.reactNative.reactNativeStrings.`lining-nums` = this.cast("lining-nums")
+  def `oldstyle-nums`: typings.reactNative.reactNativeStrings.`oldstyle-nums` = "oldstyle-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`oldstyle-nums`]
   @scala.inline
-  def `oldstyle-nums`: typings.reactNative.reactNativeStrings.`oldstyle-nums` = this.cast("oldstyle-nums")
+  def `proportional-nums`: typings.reactNative.reactNativeStrings.`proportional-nums` = "proportional-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`proportional-nums`]
   @scala.inline
-  def `proportional-nums`: typings.reactNative.reactNativeStrings.`proportional-nums` = this.cast("proportional-nums")
+  def `small-caps`: typings.reactNative.reactNativeStrings.`small-caps` = "small-caps".asInstanceOf[typings.reactNative.reactNativeStrings.`small-caps`]
   @scala.inline
-  def `small-caps`: typings.reactNative.reactNativeStrings.`small-caps` = this.cast("small-caps")
-  @scala.inline
-  def `tabular-nums`: typings.reactNative.reactNativeStrings.`tabular-nums` = this.cast("tabular-nums")
+  def `tabular-nums`: typings.reactNative.reactNativeStrings.`tabular-nums` = "tabular-nums".asInstanceOf[typings.reactNative.reactNativeStrings.`tabular-nums`]
 }
 

@@ -16,7 +16,6 @@ object AcceptInvitationRequest {
   @scala.inline
   def apply(GraphArn: GraphArn): AcceptInvitationRequest = {
     val __obj = js.Dynamic.literal(GraphArn = GraphArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AcceptInvitationRequest]
   }
 }

@@ -13,7 +13,6 @@ object AnonHost {
   @scala.inline
   def apply(host: String, protocol: String): AnonHost = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHost]
   }
 }

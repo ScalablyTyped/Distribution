@@ -13,12 +13,10 @@ trait IAnchor extends js.Object
 
 object IAnchor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def end: typings.typesettable.typesettableStrings.end = "end".asInstanceOf[typings.typesettable.typesettableStrings.end]
   @scala.inline
-  def end: typings.typesettable.typesettableStrings.end = this.cast("end")
+  def middle: typings.typesettable.typesettableStrings.middle = "middle".asInstanceOf[typings.typesettable.typesettableStrings.middle]
   @scala.inline
-  def middle: typings.typesettable.typesettableStrings.middle = this.cast("middle")
-  @scala.inline
-  def start: typings.typesettable.typesettableStrings.start = this.cast("start")
+  def start: typings.typesettable.typesettableStrings.start = "start".asInstanceOf[typings.typesettable.typesettableStrings.start]
 }
 

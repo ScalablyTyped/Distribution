@@ -20,7 +20,6 @@ object AudioChannelMapping {
   @scala.inline
   def apply(InputChannelLevels: listOfInputChannelLevel, OutputChannel: integerMin0Max7): AudioChannelMapping = {
     val __obj = js.Dynamic.literal(InputChannelLevels = InputChannelLevels.asInstanceOf[js.Any], OutputChannel = OutputChannel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AudioChannelMapping]
   }
 }

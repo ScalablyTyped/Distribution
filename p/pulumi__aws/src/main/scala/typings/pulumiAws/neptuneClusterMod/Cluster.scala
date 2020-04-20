@@ -55,6 +55,9 @@ class Cluster protected () extends CustomResource {
     * The Neptune Cluster Resource ID
     */
   val clusterResourceId: Output_[String] = js.native
+  /**
+    * A value that indicates whether the DB cluster has deletion protection enabled.The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.
+    */
   val deletionProtection: Output_[js.UndefOr[Boolean]] = js.native
   /**
     * A list of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports `audit`.

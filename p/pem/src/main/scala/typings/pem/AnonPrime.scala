@@ -13,7 +13,6 @@ object AnonPrime {
   @scala.inline
   def apply(prime: js.Any, size: js.Any): AnonPrime = {
     val __obj = js.Dynamic.literal(prime = prime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrime]
   }
 }

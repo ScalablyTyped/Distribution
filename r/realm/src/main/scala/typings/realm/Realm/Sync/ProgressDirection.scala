@@ -12,10 +12,8 @@ trait ProgressDirection extends js.Object
 
 object ProgressDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def download: typings.realm.realmStrings.download = "download".asInstanceOf[typings.realm.realmStrings.download]
   @scala.inline
-  def download: typings.realm.realmStrings.download = this.cast("download")
-  @scala.inline
-  def upload: typings.realm.realmStrings.upload = this.cast("upload")
+  def upload: typings.realm.realmStrings.upload = "upload".asInstanceOf[typings.realm.realmStrings.upload]
 }
 

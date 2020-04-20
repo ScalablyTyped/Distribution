@@ -19,7 +19,6 @@ object ExecuteActionRequestedOptions {
   @scala.inline
   def apply(actionId: String, entryPath: String, fileSystemId: String, requestId: Double): ExecuteActionRequestedOptions = {
     val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecuteActionRequestedOptions]
   }
 }

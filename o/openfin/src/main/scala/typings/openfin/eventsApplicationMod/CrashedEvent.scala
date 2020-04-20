@@ -21,7 +21,6 @@ object CrashedEvent {
     reason: `normal-termination` | `abnormal-termination` | killed | crashed | `still-running` | `launch-failed` | `out-of-memory`
   ): CrashedEvent = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CrashedEvent]
   }
 }

@@ -1,5 +1,6 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
+import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.setOptions
 import typings.stellarSdk.stellarSdkNumbers.`1`
 import typings.stellarSdk.stellarSdkNumbers.`2`
@@ -32,7 +33,7 @@ object SetOptionsOperationResponse {
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
-    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with js.Any,
+    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],
     clear_flags: js.Array[`1` | `2`],
     clear_flags_s: js.Array[auth_required_flag | auth_revocable_flag],
     created_at: String,

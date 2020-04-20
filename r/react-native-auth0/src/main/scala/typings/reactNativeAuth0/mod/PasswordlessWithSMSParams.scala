@@ -12,7 +12,6 @@ object PasswordlessWithSMSParams {
   @scala.inline
   def apply(phoneNumber: String): PasswordlessWithSMSParams = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PasswordlessWithSMSParams]
   }
 }

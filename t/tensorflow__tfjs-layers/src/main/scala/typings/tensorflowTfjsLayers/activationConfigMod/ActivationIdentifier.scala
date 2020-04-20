@@ -24,28 +24,26 @@ trait ActivationIdentifier extends js.Object
 
 object ActivationIdentifier {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def elu: elu_ = "elu".asInstanceOf[elu_]
   @scala.inline
-  def elu: elu_ = this.cast("elu")
+  def hardSigmoid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.hardSigmoid = "hardSigmoid".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.hardSigmoid]
   @scala.inline
-  def hardSigmoid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.hardSigmoid = this.cast("hardSigmoid")
+  def linear: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.linear = "linear".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.linear]
   @scala.inline
-  def linear: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.linear = this.cast("linear")
+  def relu: relu_ = "relu".asInstanceOf[relu_]
   @scala.inline
-  def relu: relu_ = this.cast("relu")
+  def relu6: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.relu6 = "relu6".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.relu6]
   @scala.inline
-  def relu6: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.relu6 = this.cast("relu6")
+  def selu: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.selu = "selu".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.selu]
   @scala.inline
-  def selu: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.selu = this.cast("selu")
+  def sigmoid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sigmoid = "sigmoid".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sigmoid]
   @scala.inline
-  def sigmoid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sigmoid = this.cast("sigmoid")
+  def softmax: softmax_ = "softmax".asInstanceOf[softmax_]
   @scala.inline
-  def softmax: softmax_ = this.cast("softmax")
+  def softplus: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softplus = "softplus".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softplus]
   @scala.inline
-  def softplus: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softplus = this.cast("softplus")
+  def softsign: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softsign = "softsign".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softsign]
   @scala.inline
-  def softsign: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softsign = this.cast("softsign")
-  @scala.inline
-  def tanh: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.tanh = this.cast("tanh")
+  def tanh: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.tanh = "tanh".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.tanh]
 }
 

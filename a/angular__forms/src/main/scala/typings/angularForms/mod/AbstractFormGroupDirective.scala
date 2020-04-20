@@ -16,7 +16,7 @@ class AbstractFormGroupDirective ()
     * @description
     * The async validators registered with this group.
     */
-  def asyncValidator(): AsyncValidatorFn | Null = js.native
+  def asyncValidator: AsyncValidatorFn | Null = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately
     * before a directive, pipe, or service instance is destroyed.
@@ -36,6 +36,6 @@ class AbstractFormGroupDirective ()
     * @description
     * The synchronous validators registered with this group.
     */
-  def validator(): ValidatorFn | Null = js.native
+  def validator: ValidatorFn | Null = js.native
 }
 

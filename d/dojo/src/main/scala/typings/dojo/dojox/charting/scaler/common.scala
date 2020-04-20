@@ -33,7 +33,6 @@ object common {
     getNumericLabel: (Double, Double, js.Object) => js.Any
   ): common = {
     val __obj = js.Dynamic.literal(doIfLoaded = js.Any.fromFunction3(doIfLoaded), getNumericLabel = js.Any.fromFunction3(getNumericLabel))
-  
     __obj.asInstanceOf[common]
   }
 }

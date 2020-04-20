@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deep-equal"
-version := "1.0-dt-20180214Z-c3d0fb"
+version := "1.0-dt-20180214Z-128465"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

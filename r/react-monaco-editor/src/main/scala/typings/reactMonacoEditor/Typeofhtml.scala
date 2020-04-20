@@ -19,7 +19,6 @@ object Typeofhtml {
     razorDefaults: LanguageServiceDefaults
   ): Typeofhtml = {
     val __obj = js.Dynamic.literal(handlebarDefaults = handlebarDefaults.asInstanceOf[js.Any], htmlDefaults = htmlDefaults.asInstanceOf[js.Any], razorDefaults = razorDefaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofhtml]
   }
 }

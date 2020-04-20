@@ -13,7 +13,6 @@ object FullScreen {
   @scala.inline
   def apply(cancel: FullScreenType => Unit, request: FullScreenType => Unit): FullScreen = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), request = js.Any.fromFunction1(request))
-  
     __obj.asInstanceOf[FullScreen]
   }
 }

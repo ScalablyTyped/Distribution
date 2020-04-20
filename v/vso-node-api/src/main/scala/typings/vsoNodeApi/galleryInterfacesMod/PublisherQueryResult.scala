@@ -15,7 +15,6 @@ object PublisherQueryResult {
   @scala.inline
   def apply(results: js.Array[PublisherFilterResult]): PublisherQueryResult = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PublisherQueryResult]
   }
 }

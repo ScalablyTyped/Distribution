@@ -13,12 +13,10 @@ trait ThemeTypeUpperCase extends js.Object
 
 object ThemeTypeUpperCase {
   @scala.inline
-  def Filled: typings.antDesignIconsSvg.antDesignIconsSvgStrings.Filled = this.cast("Filled")
+  def Filled: typings.antDesignIconsSvg.antDesignIconsSvgStrings.Filled = "Filled".asInstanceOf[typings.antDesignIconsSvg.antDesignIconsSvgStrings.Filled]
   @scala.inline
-  def Outlined: typings.antDesignIconsSvg.antDesignIconsSvgStrings.Outlined = this.cast("Outlined")
+  def Outlined: typings.antDesignIconsSvg.antDesignIconsSvgStrings.Outlined = "Outlined".asInstanceOf[typings.antDesignIconsSvg.antDesignIconsSvgStrings.Outlined]
   @scala.inline
-  def TwoTone: typings.antDesignIconsSvg.antDesignIconsSvgStrings.TwoTone = this.cast("TwoTone")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TwoTone: typings.antDesignIconsSvg.antDesignIconsSvgStrings.TwoTone = "TwoTone".asInstanceOf[typings.antDesignIconsSvg.antDesignIconsSvgStrings.TwoTone]
 }
 

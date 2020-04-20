@@ -15,7 +15,6 @@ object IScrollablePane {
   @scala.inline
   def apply(forceLayoutUpdate: () => Unit, getScrollPosition: () => Double): IScrollablePane = {
     val __obj = js.Dynamic.literal(forceLayoutUpdate = js.Any.fromFunction0(forceLayoutUpdate), getScrollPosition = js.Any.fromFunction0(getScrollPosition))
-  
     __obj.asInstanceOf[IScrollablePane]
   }
 }

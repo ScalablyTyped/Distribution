@@ -29,7 +29,6 @@ object DisputeGateway {
     search: js.Any => Readable
   ): DisputeGateway = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), addFileEvidence = js.Any.fromFunction2(addFileEvidence), addTextEvidence = js.Any.fromFunction2(addTextEvidence), finalize = js.Any.fromFunction1(finalize), find = js.Any.fromFunction1(find), removeEvidence = js.Any.fromFunction2(removeEvidence), search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[DisputeGateway]
   }
 }

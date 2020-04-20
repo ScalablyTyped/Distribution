@@ -20,7 +20,6 @@ object SourceReference {
     line: ModelToObject[Double] | Double
   ): SourceReference = {
     val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceReference]
   }
 }

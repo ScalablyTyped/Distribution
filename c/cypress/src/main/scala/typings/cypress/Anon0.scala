@@ -1,20 +1,18 @@
 package typings.cypress
 
-import typings.cypress.JQuery_._ValHook
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon0[TElement] extends _ValHook[TElement] {
-  def get(elem: TElement): js.Any
+trait Anon0 extends js.Object {
+  def defaults(options: PartialScreenshotDefaults): Unit
 }
 
 object Anon0 {
   @scala.inline
-  def apply[TElement](get: TElement => js.Any): Anon0[TElement] = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
-    __obj.asInstanceOf[Anon0[TElement]]
+  def apply(defaults: PartialScreenshotDefaults => Unit): Anon0 = {
+    val __obj = js.Dynamic.literal(defaults = js.Any.fromFunction1(defaults))
+    __obj.asInstanceOf[Anon0]
   }
 }
 

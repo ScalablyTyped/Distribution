@@ -23,28 +23,28 @@ class ICollection[T] () extends js.Object {
   val middlewares: js.Array[TMiddleware] = js.native
   val name: String = js.native
   var options: js.Object = js.native
-  def aggregate[U](stages: js.Array[_]): Unit = js.native
-  def aggregate[U](stages: js.Array[_], options: js.Object): Unit = js.native
+  def aggregate[U](stages: js.Array[_]): js.Promise[U] = js.native
+  def aggregate[U](stages: js.Array[_], options: js.Object): js.Promise[U] = js.native
   def aggregate[U](
     stages: js.Array[_],
     options: js.Object,
     callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
   ): Unit = js.native
   @JSName("aggregate")
-  def aggregate_U_Promise[U](stages: js.Array[_]): js.Promise[U] = js.native
+  def aggregate_U_Unit[U](stages: js.Array[_]): Unit = js.native
   @JSName("aggregate")
-  def aggregate_U_Promise[U](stages: js.Array[_], options: js.Object): js.Promise[U] = js.native
-  def bulkWrite[U](operations: js.Array[_]): Unit = js.native
-  def bulkWrite[U](operations: js.Array[_], options: js.Object): Unit = js.native
+  def aggregate_U_Unit[U](stages: js.Array[_], options: js.Object): Unit = js.native
+  def bulkWrite[U](operations: js.Array[_]): js.Promise[U] = js.native
+  def bulkWrite[U](operations: js.Array[_], options: js.Object): js.Promise[U] = js.native
   def bulkWrite[U](
     operations: js.Array[_],
     options: js.Object,
     callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
   ): Unit = js.native
   @JSName("bulkWrite")
-  def bulkWrite_U_Promise[U](operations: js.Array[_]): js.Promise[U] = js.native
+  def bulkWrite_U_Unit[U](operations: js.Array[_]): Unit = js.native
   @JSName("bulkWrite")
-  def bulkWrite_U_Promise[U](operations: js.Array[_], options: js.Object): js.Promise[U] = js.native
+  def bulkWrite_U_Unit[U](operations: js.Array[_], options: js.Object): Unit = js.native
   def count(): Unit = js.native
   def count(query: TQuery): Unit = js.native
   def count(query: TQuery, options: js.Object): Unit = js.native
@@ -121,38 +121,38 @@ class ICollection[T] () extends js.Object {
   def dropIndexes_Promise(): js.Promise[AnonMsg] = js.native
   @JSName("drop")
   def drop_Promise(): js.Promise[(`ns not found`) | `true`] = js.native
-  def find[U](): js.Promise[js.Array[U]] with AnonEach[U] = js.native
-  def find[U](query: TQuery): js.Promise[js.Array[U]] with AnonEach[U] = js.native
-  def find[U](query: TQuery, options: js.Object): js.Promise[js.Array[U]] with AnonEach[U] = js.native
+  def find[U](): Unit = js.native
+  def find[U](query: TQuery): Unit = js.native
+  def find[U](query: TQuery, options: js.Object): Unit = js.native
   def find[U](
     query: TQuery,
     options: js.Object,
     callback: js.Function2[/* err */ Error | Null, /* data */ js.Array[U] with AnonEach[U], Unit]
   ): Unit = js.native
-  def findOne[U](): Unit = js.native
-  def findOne[U](query: TQuery): Unit = js.native
-  def findOne[U](query: TQuery, options: js.Object): Unit = js.native
+  def findOne[U](): js.Promise[js.UndefOr[U]] = js.native
+  def findOne[U](query: TQuery): js.Promise[js.UndefOr[U]] = js.native
+  def findOne[U](query: TQuery, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
   def findOne[U](
     query: TQuery,
     options: js.Object,
     callback: js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[U], Unit]
   ): Unit = js.native
-  def findOneAndDelete[U](): Unit = js.native
-  def findOneAndDelete[U](query: TQuery): Unit = js.native
-  def findOneAndDelete[U](query: TQuery, options: js.Object): Unit = js.native
+  def findOneAndDelete[U](): js.Promise[js.UndefOr[U]] = js.native
+  def findOneAndDelete[U](query: TQuery): js.Promise[js.UndefOr[U]] = js.native
+  def findOneAndDelete[U](query: TQuery, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
   def findOneAndDelete[U](
     query: TQuery,
     options: js.Object,
     callback: js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[U], Unit]
   ): Unit = js.native
   @JSName("findOneAndDelete")
-  def findOneAndDelete_U_Promise[U](): js.Promise[js.UndefOr[U]] = js.native
+  def findOneAndDelete_U_Unit[U](): Unit = js.native
   @JSName("findOneAndDelete")
-  def findOneAndDelete_U_Promise[U](query: TQuery): js.Promise[js.UndefOr[U]] = js.native
+  def findOneAndDelete_U_Unit[U](query: TQuery): Unit = js.native
   @JSName("findOneAndDelete")
-  def findOneAndDelete_U_Promise[U](query: TQuery, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
-  def findOneAndUpdate[U](query: TQuery, update: js.Object): Unit = js.native
-  def findOneAndUpdate[U](query: TQuery, update: js.Object, options: js.Object): Unit = js.native
+  def findOneAndDelete_U_Unit[U](query: TQuery, options: js.Object): Unit = js.native
+  def findOneAndUpdate[U](query: TQuery, update: js.Object): js.Promise[js.UndefOr[U]] = js.native
+  def findOneAndUpdate[U](query: TQuery, update: js.Object, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
   def findOneAndUpdate[U](
     query: TQuery,
     update: js.Object,
@@ -160,22 +160,22 @@ class ICollection[T] () extends js.Object {
     callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
   ): Unit = js.native
   @JSName("findOneAndUpdate")
-  def findOneAndUpdate_U_Promise[U](query: TQuery, update: js.Object): js.Promise[js.UndefOr[U]] = js.native
+  def findOneAndUpdate_U_Unit[U](query: TQuery, update: js.Object): Unit = js.native
   @JSName("findOneAndUpdate")
-  def findOneAndUpdate_U_Promise[U](query: TQuery, update: js.Object, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
+  def findOneAndUpdate_U_Unit[U](query: TQuery, update: js.Object, options: js.Object): Unit = js.native
   @JSName("findOne")
-  def findOne_U_Promise[U](): js.Promise[js.UndefOr[U]] = js.native
+  def findOne_U_Unit[U](): Unit = js.native
   @JSName("findOne")
-  def findOne_U_Promise[U](query: TQuery): js.Promise[js.UndefOr[U]] = js.native
+  def findOne_U_Unit[U](query: TQuery): Unit = js.native
   @JSName("findOne")
-  def findOne_U_Promise[U](query: TQuery, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
+  def findOne_U_Unit[U](query: TQuery, options: js.Object): Unit = js.native
   @JSName("find")
-  def find_U_Unit[U](): Unit = js.native
+  def find_U_Intersection[U](): js.Promise[js.Array[U]] with AnonEach[U] = js.native
   @JSName("find")
-  def find_U_Unit[U](query: TQuery): Unit = js.native
+  def find_U_Intersection[U](query: TQuery): js.Promise[js.Array[U]] with AnonEach[U] = js.native
   @JSName("find")
-  def find_U_Unit[U](query: TQuery, options: js.Object): Unit = js.native
-  def geoHaystackSearch[U](x: Double, y: Double, options: js.Object): Unit = js.native
+  def find_U_Intersection[U](query: TQuery, options: js.Object): js.Promise[js.Array[U]] with AnonEach[U] = js.native
+  def geoHaystackSearch[U](x: Double, y: Double, options: js.Object): js.Promise[js.Array[U]] = js.native
   def geoHaystackSearch[U](
     x: Double,
     y: Double,
@@ -183,7 +183,7 @@ class ICollection[T] () extends js.Object {
     callback: js.Function2[/* err */ Error | Null, /* data */ js.Array[U], Unit]
   ): Unit = js.native
   @JSName("geoHaystackSearch")
-  def geoHaystackSearch_U_Promise[U](x: Double, y: Double, options: js.Object): js.Promise[js.Array[U]] = js.native
+  def geoHaystackSearch_U_Unit[U](x: Double, y: Double, options: js.Object): Unit = js.native
   def group[U](
     keys: js.Any,
     condition: js.Any,
@@ -191,7 +191,7 @@ class ICollection[T] () extends js.Object {
     reduce: js.Any,
     finalize: js.Any,
     command: js.Any
-  ): Unit = js.native
+  ): js.Promise[_] = js.native
   def group[U](
     keys: js.Any,
     condition: js.Any,
@@ -200,7 +200,7 @@ class ICollection[T] () extends js.Object {
     finalize: js.Any,
     command: js.Any,
     options: js.Object
-  ): Unit = js.native
+  ): js.Promise[_] = js.native
   def group[U](
     keys: js.Any,
     condition: js.Any,
@@ -212,16 +212,16 @@ class ICollection[T] () extends js.Object {
     callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
   ): Unit = js.native
   @JSName("group")
-  def group_U_Promise[U](
+  def group_U_Unit[U](
     keys: js.Any,
     condition: js.Any,
     initial: js.Any,
     reduce: js.Any,
     finalize: js.Any,
     command: js.Any
-  ): js.Promise[_] = js.native
+  ): Unit = js.native
   @JSName("group")
-  def group_U_Promise[U](
+  def group_U_Unit[U](
     keys: js.Any,
     condition: js.Any,
     initial: js.Any,
@@ -229,7 +229,7 @@ class ICollection[T] () extends js.Object {
     finalize: js.Any,
     command: js.Any,
     options: js.Object
-  ): js.Promise[_] = js.native
+  ): Unit = js.native
   def indexes(): Unit = js.native
   def indexes(
     callback: js.Function2[
@@ -240,28 +240,28 @@ class ICollection[T] () extends js.Object {
   ): Unit = js.native
   @JSName("indexes")
   def indexes_Promise(): js.Promise[js.Array[StringDictionary[js.Array[js.Tuple2[String, `1` | `-1`]]]]] = js.native
-  def insert[U](data: js.Array[js.Object]): Unit = js.native
-  def insert[U](data: js.Array[js.Object], options: js.Object): Unit = js.native
+  def insert[U](data: js.Array[js.Object]): js.Promise[U] = js.native
+  def insert[U](data: js.Array[js.Object], options: js.Object): js.Promise[U] = js.native
   def insert[U](
     data: js.Array[js.Object],
     options: js.Object,
     callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
   ): Unit = js.native
-  def insert[U](data: js.Object): Unit = js.native
-  def insert[U](data: js.Object, options: js.Object): Unit = js.native
+  def insert[U](data: js.Object): js.Promise[U] = js.native
+  def insert[U](data: js.Object, options: js.Object): js.Promise[U] = js.native
   def insert[U](
     data: js.Object,
     options: js.Object,
     callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
   ): Unit = js.native
   @JSName("insert")
-  def insert_U_Promise[U](data: js.Array[js.Object]): js.Promise[U] = js.native
+  def insert_U_Unit[U](data: js.Array[js.Object]): Unit = js.native
   @JSName("insert")
-  def insert_U_Promise[U](data: js.Array[js.Object], options: js.Object): js.Promise[U] = js.native
+  def insert_U_Unit[U](data: js.Array[js.Object], options: js.Object): Unit = js.native
   @JSName("insert")
-  def insert_U_Promise[U](data: js.Object): js.Promise[U] = js.native
+  def insert_U_Unit[U](data: js.Object): Unit = js.native
   @JSName("insert")
-  def insert_U_Promise[U](data: js.Object, options: js.Object): js.Promise[U] = js.native
+  def insert_U_Unit[U](data: js.Object, options: js.Object): Unit = js.native
   def mapReduce(
     map: js.Function0[_],
     reduce: js.Function2[/* key */ String, /* values */ js.Array[_], _],

@@ -17,7 +17,6 @@ object PickStoragegetItemsetItem {
     setItem: (/* key */ String, /* value */ String) => Unit
   ): PickStoragegetItemsetItem = {
     val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), setItem = js.Any.fromFunction2(setItem))
-  
     __obj.asInstanceOf[PickStoragegetItemsetItem]
   }
 }

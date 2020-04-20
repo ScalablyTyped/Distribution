@@ -19,15 +19,15 @@ trait ListHumanLoopsRequest extends js.Object {
     */
   var FlowDefinitionArn: typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn = js.native
   /**
-    * The total number of items to return. If the total number of available items is more than the value specified in MaxResults, then a NextToken will be provided in the output that you can use to resume pagination.
+    * The total number of items to return. If the total number of available items is more than the value specified in MaxResults, then a NextToken is returned in the output. You can use this token to display the next page of results. 
     */
   var MaxResults: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.MaxResults] = js.native
   /**
-    * A token to resume pagination.
+    * A token to display the next page of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.NextToken] = js.native
   /**
-    * An optional value that specifies whether you want the results sorted in Ascending or Descending order.
+    * Optional. The order for displaying results. Valid values: Ascending and Descending.
     */
   var SortOrder: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.SortOrder] = js.native
 }

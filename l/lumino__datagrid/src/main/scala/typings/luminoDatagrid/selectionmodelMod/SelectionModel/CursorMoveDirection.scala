@@ -18,16 +18,14 @@ trait CursorMoveDirection extends js.Object
 
 object CursorMoveDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def down: typings.luminoDatagrid.luminoDatagridStrings.down = "down".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.down]
   @scala.inline
-  def down: typings.luminoDatagrid.luminoDatagridStrings.down = this.cast("down")
+  def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
   @scala.inline
-  def left: typings.luminoDatagrid.luminoDatagridStrings.left = this.cast("left")
+  def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
   @scala.inline
-  def none: typings.luminoDatagrid.luminoDatagridStrings.none = this.cast("none")
+  def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
   @scala.inline
-  def right: typings.luminoDatagrid.luminoDatagridStrings.right = this.cast("right")
-  @scala.inline
-  def up: typings.luminoDatagrid.luminoDatagridStrings.up = this.cast("up")
+  def up: typings.luminoDatagrid.luminoDatagridStrings.up = "up".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.up]
 }
 

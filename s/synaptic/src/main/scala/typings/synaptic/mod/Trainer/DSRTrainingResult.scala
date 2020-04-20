@@ -15,7 +15,6 @@ object DSRTrainingResult {
   @scala.inline
   def apply(error: Double, iterations: Double, success: js.Any, time: Double): DSRTrainingResult = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DSRTrainingResult]
   }
 }

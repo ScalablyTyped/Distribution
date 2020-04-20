@@ -29,7 +29,6 @@ object StringConstructor {
     localeFormat: (java.lang.String, /* repeated */ js.Any) => java.lang.String
   ): StringConstructor = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), localeFormat = js.Any.fromFunction2(localeFormat))
-  
     __obj.asInstanceOf[StringConstructor]
   }
 }

@@ -14,7 +14,6 @@ object PickDirectInboxFeedRespon {
   @scala.inline
   def apply(oldest_cursor: String, thread_id: String): PickDirectInboxFeedRespon = {
     val __obj = js.Dynamic.literal(oldest_cursor = oldest_cursor.asInstanceOf[js.Any], thread_id = thread_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickDirectInboxFeedRespon]
   }
 }

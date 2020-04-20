@@ -14,7 +14,6 @@ object RowHeaderStyle {
   @scala.inline
   def apply(backgroundColor: js.Any, innerBorderColor: js.Any, outerBorderColor: js.Any): RowHeaderStyle = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], innerBorderColor = innerBorderColor.asInstanceOf[js.Any], outerBorderColor = outerBorderColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowHeaderStyle]
   }
 }

@@ -16,7 +16,6 @@ object PublishFindingToSnsParams {
   @scala.inline
   def apply(topicArn: SnsTopicArn): PublishFindingToSnsParams = {
     val __obj = js.Dynamic.literal(topicArn = topicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PublishFindingToSnsParams]
   }
 }

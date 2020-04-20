@@ -20,7 +20,6 @@ object SetTerminationProtectionInput {
   @scala.inline
   def apply(JobFlowIds: XmlStringList, TerminationProtected: Boolean): SetTerminationProtectionInput = {
     val __obj = js.Dynamic.literal(JobFlowIds = JobFlowIds.asInstanceOf[js.Any], TerminationProtected = TerminationProtected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetTerminationProtectionInput]
   }
 }

@@ -14,7 +14,6 @@ object IInsert {
   @scala.inline
   def apply[Iterator /* <: IForwardIterator[ValueType[Iterator], Iterator] */](insert: (Iterator, ValueType[Iterator]) => Iterator): IInsert[Iterator] = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction2(insert))
-  
     __obj.asInstanceOf[IInsert[Iterator]]
   }
 }

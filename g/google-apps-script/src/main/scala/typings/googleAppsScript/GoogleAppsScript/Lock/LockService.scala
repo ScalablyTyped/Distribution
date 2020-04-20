@@ -22,7 +22,6 @@ object LockService {
     getUserLock: () => typings.googleAppsScript.GoogleAppsScript.Lock.Lock
   ): LockService = {
     val __obj = js.Dynamic.literal(getDocumentLock = js.Any.fromFunction0(getDocumentLock), getScriptLock = js.Any.fromFunction0(getScriptLock), getUserLock = js.Any.fromFunction0(getUserLock))
-  
     __obj.asInstanceOf[LockService]
   }
 }

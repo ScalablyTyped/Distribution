@@ -17,18 +17,16 @@ trait AlertSeverity extends js.Object
 
 object AlertSeverity {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = this.cast("high")
+  def informational: typings.microsoftGraph.microsoftGraphStrings.informational = "informational".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.informational]
   @scala.inline
-  def informational: typings.microsoftGraph.microsoftGraphStrings.informational = this.cast("informational")
+  def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
   @scala.inline
-  def low: typings.microsoftGraph.microsoftGraphStrings.low = this.cast("low")
+  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
   @scala.inline
-  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = this.cast("medium")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

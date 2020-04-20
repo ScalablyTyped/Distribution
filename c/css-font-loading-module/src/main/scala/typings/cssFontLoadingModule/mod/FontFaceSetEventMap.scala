@@ -19,7 +19,6 @@ object FontFaceSetEventMap {
     loadingerror: FontFaceSetLoadEvent => js.Any
   ): FontFaceSetEventMap = {
     val __obj = js.Dynamic.literal(loading = js.Any.fromFunction1(loading), loadingdone = js.Any.fromFunction1(loadingdone), loadingerror = js.Any.fromFunction1(loadingerror))
-  
     __obj.asInstanceOf[FontFaceSetEventMap]
   }
 }

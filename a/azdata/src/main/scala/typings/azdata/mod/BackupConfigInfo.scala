@@ -13,7 +13,6 @@ object BackupConfigInfo {
   @scala.inline
   def apply(defaultBackupFolder: String, recoveryModel: String): BackupConfigInfo = {
     val __obj = js.Dynamic.literal(defaultBackupFolder = defaultBackupFolder.asInstanceOf[js.Any], recoveryModel = recoveryModel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BackupConfigInfo]
   }
 }

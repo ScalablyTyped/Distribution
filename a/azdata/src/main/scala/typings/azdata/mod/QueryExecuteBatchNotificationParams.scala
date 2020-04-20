@@ -13,7 +13,6 @@ object QueryExecuteBatchNotificationParams {
   @scala.inline
   def apply(batchSummary: BatchSummary, ownerUri: String): QueryExecuteBatchNotificationParams = {
     val __obj = js.Dynamic.literal(batchSummary = batchSummary.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryExecuteBatchNotificationParams]
   }
 }

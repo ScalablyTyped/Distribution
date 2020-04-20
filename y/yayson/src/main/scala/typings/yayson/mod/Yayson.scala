@@ -16,7 +16,6 @@ object Yayson {
   @scala.inline
   def apply(Adapter: Adapter, Presenter: TypeofPresenter, Store: Instantiable0[Store]): Yayson = {
     val __obj = js.Dynamic.literal(Adapter = Adapter.asInstanceOf[js.Any], Presenter = Presenter.asInstanceOf[js.Any], Store = Store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Yayson]
   }
 }

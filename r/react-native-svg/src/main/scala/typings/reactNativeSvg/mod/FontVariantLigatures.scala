@@ -12,10 +12,8 @@ trait FontVariantLigatures extends js.Object
 
 object FontVariantLigatures {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.reactNativeSvg.reactNativeSvgStrings.none = "none".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.none]
   @scala.inline
-  def none: typings.reactNativeSvg.reactNativeSvgStrings.none = this.cast("none")
-  @scala.inline
-  def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = this.cast("normal")
+  def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = "normal".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.normal]
 }
 

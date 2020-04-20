@@ -17,7 +17,6 @@ object EntryExitStateArrays {
     exit: js.Array[StateNode[TContext, _, EventObject, _]]
   ): EntryExitStateArrays[TContext] = {
     val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntryExitStateArrays[TContext]]
   }
 }

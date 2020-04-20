@@ -12,10 +12,8 @@ trait OnBeforeSendHeadersOptions extends js.Object
 
 object OnBeforeSendHeadersOptions {
   @scala.inline
-  def blocking: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking = this.cast("blocking")
+  def blocking: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking = "blocking".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def requestHeaders: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestHeaders = this.cast("requestHeaders")
+  def requestHeaders: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestHeaders = "requestHeaders".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestHeaders]
 }
 

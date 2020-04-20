@@ -16,12 +16,10 @@ trait XlDataBarAxisPosition extends js.Object
 
 object XlDataBarAxisPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlDataBarAxisAutomatic: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlDataBarAxisAutomatic: `0` = this.cast(0)
+  def xlDataBarAxisMidpoint: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlDataBarAxisMidpoint: `1` = this.cast(1)
-  @scala.inline
-  def xlDataBarAxisNone: `2` = this.cast(2)
+  def xlDataBarAxisNone: `2` = 2.asInstanceOf[`2`]
 }
 

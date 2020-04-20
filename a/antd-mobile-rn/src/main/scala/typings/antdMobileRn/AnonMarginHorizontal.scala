@@ -13,7 +13,6 @@ object AnonMarginHorizontal {
   @scala.inline
   def apply(marginHorizontal: Double, marginVertical: Double): AnonMarginHorizontal = {
     val __obj = js.Dynamic.literal(marginHorizontal = marginHorizontal.asInstanceOf[js.Any], marginVertical = marginVertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMarginHorizontal]
   }
 }

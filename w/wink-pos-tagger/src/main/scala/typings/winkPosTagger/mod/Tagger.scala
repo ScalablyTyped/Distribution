@@ -54,7 +54,6 @@ object Tagger {
     updateLexicon: js.Object => Unit
   ): Tagger = {
     val __obj = js.Dynamic.literal(defineConfig = js.Any.fromFunction1(defineConfig), tag = js.Any.fromFunction1(tag), tagRawTokens = js.Any.fromFunction1(tagRawTokens), tagSentence = js.Any.fromFunction1(tagSentence), updateLexicon = js.Any.fromFunction1(updateLexicon))
-  
     __obj.asInstanceOf[Tagger]
   }
 }

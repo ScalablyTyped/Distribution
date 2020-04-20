@@ -16,7 +16,6 @@ object LintResult {
   @scala.inline
   def apply(col: Double, evidence: String, line: Double, message: String, rule: Rule): LintResult = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], evidence = evidence.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LintResult]
   }
 }

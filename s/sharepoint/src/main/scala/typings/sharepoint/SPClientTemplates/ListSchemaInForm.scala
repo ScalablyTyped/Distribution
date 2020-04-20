@@ -13,7 +13,6 @@ object ListSchemaInForm {
   @scala.inline
   def apply(Field: js.Array[FieldSchemaInForm]): ListSchemaInForm = {
     val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListSchemaInForm]
   }
 }

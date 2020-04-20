@@ -17,7 +17,6 @@ object reports {
   @scala.inline
   def apply(query: AnonDimensions => HttpRequest[_]): reports = {
     val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[reports]
   }
 }

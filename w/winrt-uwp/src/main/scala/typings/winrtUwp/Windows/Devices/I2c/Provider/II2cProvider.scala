@@ -13,7 +13,6 @@ object II2cProvider {
   @scala.inline
   def apply(getControllersAsync: js.Any): II2cProvider = {
     val __obj = js.Dynamic.literal(getControllersAsync = getControllersAsync.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[II2cProvider]
   }
 }

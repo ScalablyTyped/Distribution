@@ -13,7 +13,6 @@ object IFinalizableToString {
   @scala.inline
   def apply(ToString: () => String): IFinalizableToString = {
     val __obj = js.Dynamic.literal(ToString = js.Any.fromFunction0(ToString))
-  
     __obj.asInstanceOf[IFinalizableToString]
   }
 }

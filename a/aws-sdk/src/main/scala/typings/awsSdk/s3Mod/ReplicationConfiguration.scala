@@ -20,7 +20,6 @@ object ReplicationConfiguration {
   @scala.inline
   def apply(Role: Role, Rules: ReplicationRules): ReplicationConfiguration = {
     val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplicationConfiguration]
   }
 }

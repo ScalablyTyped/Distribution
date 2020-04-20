@@ -15,16 +15,14 @@ trait Interpolation extends js.Object
 
 object Interpolation {
   @scala.inline
-  def accelerate: typings.reactNativeNavigation.reactNativeNavigationStrings.accelerate = this.cast("accelerate")
+  def accelerate: typings.reactNativeNavigation.reactNativeNavigationStrings.accelerate = "accelerate".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.accelerate]
   @scala.inline
-  def accelerateDecelerate: typings.reactNativeNavigation.reactNativeNavigationStrings.accelerateDecelerate = this.cast("accelerateDecelerate")
+  def accelerateDecelerate: typings.reactNativeNavigation.reactNativeNavigationStrings.accelerateDecelerate = "accelerateDecelerate".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.accelerateDecelerate]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def decelerate: typings.reactNativeNavigation.reactNativeNavigationStrings.decelerate = "decelerate".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.decelerate]
   @scala.inline
-  def decelerate: typings.reactNativeNavigation.reactNativeNavigationStrings.decelerate = this.cast("decelerate")
+  def decelerateAccelerate: typings.reactNativeNavigation.reactNativeNavigationStrings.decelerateAccelerate = "decelerateAccelerate".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.decelerateAccelerate]
   @scala.inline
-  def decelerateAccelerate: typings.reactNativeNavigation.reactNativeNavigationStrings.decelerateAccelerate = this.cast("decelerateAccelerate")
-  @scala.inline
-  def linear: typings.reactNativeNavigation.reactNativeNavigationStrings.linear = this.cast("linear")
+  def linear: typings.reactNativeNavigation.reactNativeNavigationStrings.linear = "linear".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.linear]
 }
 

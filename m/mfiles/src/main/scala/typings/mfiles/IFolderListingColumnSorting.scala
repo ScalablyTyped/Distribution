@@ -15,7 +15,6 @@ object IFolderListingColumnSorting {
   @scala.inline
   def apply(Clone: () => IFolderListingColumnSorting, ID: Double, Index: Double, SortAscending: Boolean): IFolderListingColumnSorting = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ID = ID.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], SortAscending = SortAscending.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFolderListingColumnSorting]
   }
 }

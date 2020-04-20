@@ -13,12 +13,10 @@ trait NotificationPermission extends js.Object
 
 object NotificationPermission {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.std.stdStrings.default = "default".asInstanceOf[typings.std.stdStrings.default]
   @scala.inline
-  def default: typings.std.stdStrings.default = this.cast("default")
+  def denied: typings.std.stdStrings.denied = "denied".asInstanceOf[typings.std.stdStrings.denied]
   @scala.inline
-  def denied: typings.std.stdStrings.denied = this.cast("denied")
-  @scala.inline
-  def granted: typings.std.stdStrings.granted = this.cast("granted")
+  def granted: typings.std.stdStrings.granted = "granted".asInstanceOf[typings.std.stdStrings.granted]
 }
 

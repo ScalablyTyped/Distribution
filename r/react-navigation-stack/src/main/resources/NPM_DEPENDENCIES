@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-navigation-stack" : "2.3.11"
+      "react-navigation-stack" : "2.3.12"
     }
   ],
   "test-dependencies" : [
     {
-      "react-navigation-stack" : "2.3.11"
+      "react-navigation-stack" : "2.3.12"
     }
   ],
   "compile-devDependencies" : [

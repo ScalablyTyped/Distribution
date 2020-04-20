@@ -20,7 +20,6 @@ object AddClientIDToOpenIDConnectProviderRequest {
   @scala.inline
   def apply(ClientID: clientIDType, OpenIDConnectProviderArn: arnType): AddClientIDToOpenIDConnectProviderRequest = {
     val __obj = js.Dynamic.literal(ClientID = ClientID.asInstanceOf[js.Any], OpenIDConnectProviderArn = OpenIDConnectProviderArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddClientIDToOpenIDConnectProviderRequest]
   }
 }

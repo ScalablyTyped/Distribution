@@ -21,7 +21,6 @@ object FoldingRangeProvider {
     provideFoldingRanges: (TextDocument, FoldingContext, CancellationToken) => ProviderResult[js.Array[FoldingRange]]
   ): FoldingRangeProvider = {
     val __obj = js.Dynamic.literal(provideFoldingRanges = js.Any.fromFunction3(provideFoldingRanges))
-  
     __obj.asInstanceOf[FoldingRangeProvider]
   }
 }

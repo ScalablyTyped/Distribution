@@ -45,13 +45,13 @@ abstract class MessageDefinition protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
-  def containerAsMessageDefinitionCollection(): MessageDefinitionCollection = js.native
-  def documentation(): String = js.native
+  def containerAsMessageDefinitionCollection: MessageDefinitionCollection = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MMessageDefinition(): String | Null = js.native
+  def qualifiedName_MMessageDefinition: String | Null = js.native
 }
 
 /* static members */

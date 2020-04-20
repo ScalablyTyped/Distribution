@@ -18,7 +18,6 @@ object IPrintTaskSettingsActivatedEventArgs {
     splashScreen: SplashScreen
   ): IPrintTaskSettingsActivatedEventArgs = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPrintTaskSettingsActivatedEventArgs]
   }
 }

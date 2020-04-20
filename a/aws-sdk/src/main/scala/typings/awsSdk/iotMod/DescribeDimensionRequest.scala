@@ -16,7 +16,6 @@ object DescribeDimensionRequest {
   @scala.inline
   def apply(name: DimensionName): DescribeDimensionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDimensionRequest]
   }
 }

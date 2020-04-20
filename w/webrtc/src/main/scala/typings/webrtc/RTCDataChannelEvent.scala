@@ -13,7 +13,6 @@ object RTCDataChannelEvent {
   @scala.inline
   def apply(channel: RTCDataChannel): RTCDataChannelEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RTCDataChannelEvent]
   }
 }

@@ -15,7 +15,6 @@ object AnonBorderRadiusFlexDirection {
   @scala.inline
   def apply(backgroundColor: String, borderRadius: Double, flexDirection: String, overflow: String): AnonBorderRadiusFlexDirection = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderRadiusFlexDirection]
   }
 }

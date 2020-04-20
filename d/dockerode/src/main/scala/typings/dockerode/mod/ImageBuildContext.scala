@@ -13,7 +13,6 @@ object ImageBuildContext {
   @scala.inline
   def apply(context: String, src: js.Array[String]): ImageBuildContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageBuildContext]
   }
 }

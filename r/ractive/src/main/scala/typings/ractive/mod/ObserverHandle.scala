@@ -27,7 +27,6 @@ object ObserverHandle {
   @scala.inline
   def apply(cancel: () => Unit, isSilenced: () => Boolean, resume: () => Unit, silence: () => Unit): ObserverHandle = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), isSilenced = js.Any.fromFunction0(isSilenced), resume = js.Any.fromFunction0(resume), silence = js.Any.fromFunction0(silence))
-  
     __obj.asInstanceOf[ObserverHandle]
   }
 }

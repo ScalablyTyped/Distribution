@@ -39,7 +39,6 @@ object EntityRecord {
     getValue: String => String | Date | Double | (js.Array[Double | EntityReference]) | Boolean | EntityReference
   ): EntityRecord = {
     val __obj = js.Dynamic.literal(getFormattedValue = js.Any.fromFunction1(getFormattedValue), getNamedReference = js.Any.fromFunction0(getNamedReference), getRecordId = js.Any.fromFunction0(getRecordId), getValue = js.Any.fromFunction1(getValue))
-  
     __obj.asInstanceOf[EntityRecord]
   }
 }

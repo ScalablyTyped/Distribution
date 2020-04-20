@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.cardCalloutMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.officeUiFabricReact.baseCardTypesMod.IBaseCardProps
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.officeUiFabricReact.directionalHintMod.DirectionalHint
@@ -268,7 +269,7 @@ object ICardCalloutProps {
       js.Object, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TStyles ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps with js.Any
+    */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps with TopLevel[js.Any]
     ] = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,

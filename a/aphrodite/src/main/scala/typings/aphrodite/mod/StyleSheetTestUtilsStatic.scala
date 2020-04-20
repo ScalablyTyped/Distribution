@@ -37,7 +37,6 @@ object StyleSheetTestUtilsStatic {
     suppressStyleInjection: () => Unit
   ): StyleSheetTestUtilsStatic = {
     val __obj = js.Dynamic.literal(clearBufferAndResumeStyleInjection = js.Any.fromFunction0(clearBufferAndResumeStyleInjection), getBufferedStyles = js.Any.fromFunction0(getBufferedStyles), suppressStyleInjection = js.Any.fromFunction0(suppressStyleInjection))
-  
     __obj.asInstanceOf[StyleSheetTestUtilsStatic]
   }
 }

@@ -19,7 +19,6 @@ object AnonComplete {
   @scala.inline
   def apply(complete: String, loading: String): AnonComplete = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComplete]
   }
 }

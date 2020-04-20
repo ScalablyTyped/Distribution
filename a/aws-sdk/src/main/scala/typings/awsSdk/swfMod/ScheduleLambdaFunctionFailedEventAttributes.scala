@@ -33,7 +33,6 @@ object ScheduleLambdaFunctionFailedEventAttributes {
     name: FunctionName
   ): ScheduleLambdaFunctionFailedEventAttributes = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScheduleLambdaFunctionFailedEventAttributes]
   }
 }

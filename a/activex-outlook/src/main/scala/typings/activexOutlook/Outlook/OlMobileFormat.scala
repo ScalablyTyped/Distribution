@@ -14,10 +14,8 @@ trait OlMobileFormat extends js.Object
 
 object OlMobileFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olMMS: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olMMS: `1` = this.cast(1)
-  @scala.inline
-  def olSMS: `0` = this.cast(0)
+  def olSMS: `0` = 0.asInstanceOf[`0`]
 }
 

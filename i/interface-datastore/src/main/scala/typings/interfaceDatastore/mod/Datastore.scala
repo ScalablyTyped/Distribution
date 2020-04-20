@@ -29,7 +29,6 @@ object Datastore {
     query: Query[Value] => AsyncIterable[Result[Value]]
   ): Datastore[Value] = {
     val __obj = js.Dynamic.literal(batch = js.Any.fromFunction0(batch), close = js.Any.fromFunction0(close), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), open = js.Any.fromFunction0(open), put = js.Any.fromFunction2(put), query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[Datastore[Value]]
   }
 }

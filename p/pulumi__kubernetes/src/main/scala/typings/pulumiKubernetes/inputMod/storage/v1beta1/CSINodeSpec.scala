@@ -20,7 +20,6 @@ object CSINodeSpec {
   @scala.inline
   def apply(drivers: Input[js.Array[Input[CSINodeDriver]]]): CSINodeSpec = {
     val __obj = js.Dynamic.literal(drivers = drivers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CSINodeSpec]
   }
 }

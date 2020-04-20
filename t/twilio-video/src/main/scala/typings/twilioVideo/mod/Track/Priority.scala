@@ -13,12 +13,10 @@ trait Priority extends js.Object
 
 object Priority {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.twilioVideo.twilioVideoStrings.high = "high".asInstanceOf[typings.twilioVideo.twilioVideoStrings.high]
   @scala.inline
-  def high: typings.twilioVideo.twilioVideoStrings.high = this.cast("high")
+  def low: typings.twilioVideo.twilioVideoStrings.low = "low".asInstanceOf[typings.twilioVideo.twilioVideoStrings.low]
   @scala.inline
-  def low: typings.twilioVideo.twilioVideoStrings.low = this.cast("low")
-  @scala.inline
-  def standard: typings.twilioVideo.twilioVideoStrings.standard = this.cast("standard")
+  def standard: typings.twilioVideo.twilioVideoStrings.standard = "standard".asInstanceOf[typings.twilioVideo.twilioVideoStrings.standard]
 }
 

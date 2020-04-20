@@ -12,10 +12,8 @@ trait CodeSigningPolicy extends js.Object
 
 object CodeSigningPolicy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def optional: typings.fridaGum.fridaGumStrings.optional = "optional".asInstanceOf[typings.fridaGum.fridaGumStrings.optional]
   @scala.inline
-  def optional: typings.fridaGum.fridaGumStrings.optional = this.cast("optional")
-  @scala.inline
-  def required: typings.fridaGum.fridaGumStrings.required = this.cast("required")
+  def required: typings.fridaGum.fridaGumStrings.required = "required".asInstanceOf[typings.fridaGum.fridaGumStrings.required]
 }
 

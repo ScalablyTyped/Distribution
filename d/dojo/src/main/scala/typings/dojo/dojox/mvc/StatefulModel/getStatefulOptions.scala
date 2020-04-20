@@ -46,7 +46,6 @@ object getStatefulOptions {
     getType: js.Any => String
   ): getStatefulOptions = {
     val __obj = js.Dynamic.literal(getStatefulArray = js.Any.fromFunction1(getStatefulArray), getStatefulObject = js.Any.fromFunction1(getStatefulObject), getStatefulValue = js.Any.fromFunction1(getStatefulValue), getType = js.Any.fromFunction1(getType))
-  
     __obj.asInstanceOf[getStatefulOptions]
   }
 }

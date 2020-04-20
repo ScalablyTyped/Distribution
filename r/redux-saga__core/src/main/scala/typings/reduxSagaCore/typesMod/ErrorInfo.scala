@@ -12,7 +12,6 @@ object ErrorInfo {
   @scala.inline
   def apply(sagaStack: String): ErrorInfo = {
     val __obj = js.Dynamic.literal(sagaStack = sagaStack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorInfo]
   }
 }

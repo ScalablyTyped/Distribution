@@ -16,7 +16,6 @@ object NotStatement {
   @scala.inline
   def apply(Statement: Statement): NotStatement = {
     val __obj = js.Dynamic.literal(Statement = Statement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotStatement]
   }
 }

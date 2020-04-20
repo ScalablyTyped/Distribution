@@ -15,7 +15,6 @@ object AnonFullPattern {
   @scala.inline
   def apply(fullPattern: RegExp, shortPattern: RegExp, tabletPattern: RegExp): AnonFullPattern = {
     val __obj = js.Dynamic.literal(fullPattern = fullPattern.asInstanceOf[js.Any], shortPattern = shortPattern.asInstanceOf[js.Any], tabletPattern = tabletPattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFullPattern]
   }
 }

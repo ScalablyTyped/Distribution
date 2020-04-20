@@ -15,16 +15,14 @@ trait specificOrientation extends js.Object
 
 object specificOrientation {
   @scala.inline
-  def `LANDSCAPE-LEFT`: typings.reactNativeOrientation.reactNativeOrientationStrings.`LANDSCAPE-LEFT` = this.cast("LANDSCAPE-LEFT")
+  def `LANDSCAPE-LEFT`: typings.reactNativeOrientation.reactNativeOrientationStrings.`LANDSCAPE-LEFT` = "LANDSCAPE-LEFT".asInstanceOf[typings.reactNativeOrientation.reactNativeOrientationStrings.`LANDSCAPE-LEFT`]
   @scala.inline
-  def `LANDSCAPE-RIGHT`: typings.reactNativeOrientation.reactNativeOrientationStrings.`LANDSCAPE-RIGHT` = this.cast("LANDSCAPE-RIGHT")
+  def `LANDSCAPE-RIGHT`: typings.reactNativeOrientation.reactNativeOrientationStrings.`LANDSCAPE-RIGHT` = "LANDSCAPE-RIGHT".asInstanceOf[typings.reactNativeOrientation.reactNativeOrientationStrings.`LANDSCAPE-RIGHT`]
   @scala.inline
-  def PORTRAIT: typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAIT = this.cast("PORTRAIT")
+  def PORTRAIT: typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAIT = "PORTRAIT".asInstanceOf[typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAIT]
   @scala.inline
-  def PORTRAITUPSIDEDOWN: typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAITUPSIDEDOWN = this.cast("PORTRAITUPSIDEDOWN")
+  def PORTRAITUPSIDEDOWN: typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAITUPSIDEDOWN = "PORTRAITUPSIDEDOWN".asInstanceOf[typings.reactNativeOrientation.reactNativeOrientationStrings.PORTRAITUPSIDEDOWN]
   @scala.inline
-  def UNKNOWN: typings.reactNativeOrientation.reactNativeOrientationStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNKNOWN: typings.reactNativeOrientation.reactNativeOrientationStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.reactNativeOrientation.reactNativeOrientationStrings.UNKNOWN]
 }
 

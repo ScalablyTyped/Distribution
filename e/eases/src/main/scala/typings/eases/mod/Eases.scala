@@ -74,7 +74,6 @@ object Eases {
     sineOut: Double => Double
   ): Eases = {
     val __obj = js.Dynamic.literal(backIn = js.Any.fromFunction1(backIn), backInOut = js.Any.fromFunction1(backInOut), backOut = js.Any.fromFunction1(backOut), bounceIn = js.Any.fromFunction1(bounceIn), bounceInOut = js.Any.fromFunction1(bounceInOut), bounceOut = js.Any.fromFunction1(bounceOut), circIn = js.Any.fromFunction1(circIn), circInOut = js.Any.fromFunction1(circInOut), circOut = js.Any.fromFunction1(circOut), cubicIn = js.Any.fromFunction1(cubicIn), cubicInOut = js.Any.fromFunction1(cubicInOut), cubicOut = js.Any.fromFunction1(cubicOut), elasticIn = js.Any.fromFunction1(elasticIn), elasticInOut = js.Any.fromFunction1(elasticInOut), elasticOut = js.Any.fromFunction1(elasticOut), expoIn = js.Any.fromFunction1(expoIn), expoInOut = js.Any.fromFunction1(expoInOut), expoOut = js.Any.fromFunction1(expoOut), linear = js.Any.fromFunction1(linear), quadIn = js.Any.fromFunction1(quadIn), quadInOut = js.Any.fromFunction1(quadInOut), quadOut = js.Any.fromFunction1(quadOut), quartIn = js.Any.fromFunction1(quartIn), quartInOut = js.Any.fromFunction1(quartInOut), quartOut = js.Any.fromFunction1(quartOut), quintIn = js.Any.fromFunction1(quintIn), quintInOut = js.Any.fromFunction1(quintInOut), quintOut = js.Any.fromFunction1(quintOut), sineIn = js.Any.fromFunction1(sineIn), sineInOut = js.Any.fromFunction1(sineInOut), sineOut = js.Any.fromFunction1(sineOut))
-  
     __obj.asInstanceOf[Eases]
   }
 }

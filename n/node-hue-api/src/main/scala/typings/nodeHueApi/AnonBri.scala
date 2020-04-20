@@ -30,7 +30,6 @@ object AnonBri {
     xy: js.Tuple2[Double, Double]
   ): AnonBri = {
     val __obj = js.Dynamic.literal(bri = bri.asInstanceOf[js.Any], colormode = colormode.asInstanceOf[js.Any], ct = ct.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], hue = hue.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], sat = sat.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBri]
   }
 }

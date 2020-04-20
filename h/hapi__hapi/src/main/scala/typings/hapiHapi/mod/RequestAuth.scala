@@ -37,7 +37,6 @@ object RequestAuth {
     strategy: String
   ): RequestAuth = {
     val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], credentials = credentials.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any], isAuthorized = isAuthorized.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestAuth]
   }
 }

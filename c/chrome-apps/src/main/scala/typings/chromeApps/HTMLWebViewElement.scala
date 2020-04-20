@@ -64,7 +64,7 @@ import typings.chromeApps.chromeAppsStrings.drop
 import typings.chromeApps.chromeAppsStrings.durationchange
 import typings.chromeApps.chromeAppsStrings.emptied
 import typings.chromeApps.chromeAppsStrings.ended
-import typings.chromeApps.chromeAppsStrings.error
+import typings.chromeApps.chromeAppsStrings.error_
 import typings.chromeApps.chromeAppsStrings.exit
 import typings.chromeApps.chromeAppsStrings.findupdate
 import typings.chromeApps.chromeAppsStrings.focus
@@ -110,7 +110,7 @@ import typings.chromeApps.chromeAppsStrings.pointermove
 import typings.chromeApps.chromeAppsStrings.pointerout
 import typings.chromeApps.chromeAppsStrings.pointerover
 import typings.chromeApps.chromeAppsStrings.pointerup
-import typings.chromeApps.chromeAppsStrings.progress
+import typings.chromeApps.chromeAppsStrings.progress_
 import typings.chromeApps.chromeAppsStrings.ratechange
 import typings.chromeApps.chromeAppsStrings.reset
 import typings.chromeApps.chromeAppsStrings.resize
@@ -125,7 +125,7 @@ import typings.chromeApps.chromeAppsStrings.selectstart
 import typings.chromeApps.chromeAppsStrings.sizechanged
 import typings.chromeApps.chromeAppsStrings.stalled
 import typings.chromeApps.chromeAppsStrings.submit
-import typings.chromeApps.chromeAppsStrings.suspend
+import typings.chromeApps.chromeAppsStrings.suspend_
 import typings.chromeApps.chromeAppsStrings.timeupdate
 import typings.chromeApps.chromeAppsStrings.toggle
 import typings.chromeApps.chromeAppsStrings.touchcancel
@@ -855,16 +855,16 @@ class HTMLWebViewElement () extends HTMLElement {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _]): Unit = js.native
+  def addEventListener_error(`type`: error_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
-    `type`: error,
+    `type`: error_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
-    `type`: error,
+    `type`: error_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -1493,18 +1493,18 @@ class HTMLWebViewElement () extends HTMLElement {
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
-    `type`: progress,
+    `type`: progress_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
-    `type`: progress,
+    `type`: progress_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(
-    `type`: progress,
+    `type`: progress_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -1714,16 +1714,16 @@ class HTMLWebViewElement () extends HTMLElement {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]): Unit = js.native
+  def addEventListener_suspend(`type`: suspend_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_suspend(
-    `type`: suspend,
+    `type`: suspend_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_suspend(
-    `type`: suspend,
+    `type`: suspend_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -2605,16 +2605,16 @@ class HTMLWebViewElement () extends HTMLElement {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _]): Unit = js.native
+  def removeEventListener_error(`type`: error_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
-    `type`: error,
+    `type`: error_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
-    `type`: error,
+    `type`: error_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
@@ -3243,18 +3243,18 @@ class HTMLWebViewElement () extends HTMLElement {
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
-    `type`: progress,
+    `type`: progress_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
-    `type`: progress,
+    `type`: progress_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(
-    `type`: progress,
+    `type`: progress_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], _],
     options: EventListenerOptions
   ): Unit = js.native
@@ -3464,16 +3464,16 @@ class HTMLWebViewElement () extends HTMLElement {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]): Unit = js.native
+  def removeEventListener_suspend(`type`: suspend_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_suspend(
-    `type`: suspend,
+    `type`: suspend_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_suspend(
-    `type`: suspend,
+    `type`: suspend_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native

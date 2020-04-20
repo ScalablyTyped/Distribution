@@ -21,7 +21,6 @@ object CapacityProviderAutoScalingGroupProviderManagedScaling {
     targetCapacity: Double
   ): CapacityProviderAutoScalingGroupProviderManagedScaling = {
     val __obj = js.Dynamic.literal(maximumScalingStepSize = maximumScalingStepSize.asInstanceOf[js.Any], minimumScalingStepSize = minimumScalingStepSize.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], targetCapacity = targetCapacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CapacityProviderAutoScalingGroupProviderManagedScaling]
   }
 }

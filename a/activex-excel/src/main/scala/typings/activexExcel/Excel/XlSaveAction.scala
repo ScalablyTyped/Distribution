@@ -14,10 +14,8 @@ trait XlSaveAction extends js.Object
 
 object XlSaveAction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlDoNotSaveChanges: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlDoNotSaveChanges: `2` = this.cast(2)
-  @scala.inline
-  def xlSaveChanges: `1` = this.cast(1)
+  def xlSaveChanges: `1` = 1.asInstanceOf[`1`]
 }
 

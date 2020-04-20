@@ -18,22 +18,20 @@ trait DocEvent extends js.Object
 
 object DocEvent {
   @scala.inline
-  def `before op`: typings.sharedb.sharedbStrings.`before op` = this.cast("before op")
+  def `before op`: typings.sharedb.sharedbStrings.`before op` = ("before op").asInstanceOf[typings.sharedb.sharedbStrings.`before op`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def create: typings.sharedb.sharedbStrings.create = "create".asInstanceOf[typings.sharedb.sharedbStrings.create]
   @scala.inline
-  def create: typings.sharedb.sharedbStrings.create = this.cast("create")
+  def del: typings.sharedb.sharedbStrings.del = "del".asInstanceOf[typings.sharedb.sharedbStrings.del]
   @scala.inline
-  def del: typings.sharedb.sharedbStrings.del = this.cast("del")
+  def error: typings.sharedb.sharedbStrings.error = "error".asInstanceOf[typings.sharedb.sharedbStrings.error]
   @scala.inline
-  def error: typings.sharedb.sharedbStrings.error = this.cast("error")
+  def load: typings.sharedb.sharedbStrings.load = "load".asInstanceOf[typings.sharedb.sharedbStrings.load]
   @scala.inline
-  def load: typings.sharedb.sharedbStrings.load = this.cast("load")
+  def `no write pending`: typings.sharedb.sharedbStrings.`no write pending` = ("no write pending").asInstanceOf[typings.sharedb.sharedbStrings.`no write pending`]
   @scala.inline
-  def `no write pending`: typings.sharedb.sharedbStrings.`no write pending` = this.cast("no write pending")
+  def `nothing pending`: typings.sharedb.sharedbStrings.`nothing pending` = ("nothing pending").asInstanceOf[typings.sharedb.sharedbStrings.`nothing pending`]
   @scala.inline
-  def `nothing pending`: typings.sharedb.sharedbStrings.`nothing pending` = this.cast("nothing pending")
-  @scala.inline
-  def op: typings.sharedb.sharedbStrings.op = this.cast("op")
+  def op: typings.sharedb.sharedbStrings.op = "op".asInstanceOf[typings.sharedb.sharedbStrings.op]
 }
 

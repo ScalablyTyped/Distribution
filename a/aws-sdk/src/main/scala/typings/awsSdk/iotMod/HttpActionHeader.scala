@@ -20,7 +20,6 @@ object HttpActionHeader {
   @scala.inline
   def apply(key: HeaderKey, value: HeaderValue): HttpActionHeader = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HttpActionHeader]
   }
 }

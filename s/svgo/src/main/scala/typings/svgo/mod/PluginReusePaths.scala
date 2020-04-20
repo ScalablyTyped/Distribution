@@ -12,7 +12,6 @@ object PluginReusePaths {
   @scala.inline
   def apply(reusePaths: Boolean | js.Object): PluginReusePaths = {
     val __obj = js.Dynamic.literal(reusePaths = reusePaths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginReusePaths]
   }
 }

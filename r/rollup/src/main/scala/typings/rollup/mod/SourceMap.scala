@@ -26,7 +26,6 @@ object SourceMap {
     version: Double
   ): SourceMap = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], mappings = mappings.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], sourcesContent = sourcesContent.asInstanceOf[js.Any], toUrl = js.Any.fromFunction0(toUrl), version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceMap]
   }
 }

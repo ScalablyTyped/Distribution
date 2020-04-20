@@ -21,7 +21,6 @@ object VpcDhcpOptionsAssociationArgs {
   @scala.inline
   def apply(dhcpOptionsId: Input[String], vpcId: Input[String]): VpcDhcpOptionsAssociationArgs = {
     val __obj = js.Dynamic.literal(dhcpOptionsId = dhcpOptionsId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcDhcpOptionsAssociationArgs]
   }
 }

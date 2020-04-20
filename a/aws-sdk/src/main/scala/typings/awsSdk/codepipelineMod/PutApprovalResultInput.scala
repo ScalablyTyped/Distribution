@@ -38,7 +38,6 @@ object PutApprovalResultInput {
     token: ApprovalToken
   ): PutApprovalResultInput = {
     val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutApprovalResultInput]
   }
 }

@@ -16,7 +16,6 @@ object AnonTriggerNameTaskDelayed {
   @scala.inline
   def apply(triggerId: `12`, triggerName: TaskDelayed): AnonTriggerNameTaskDelayed = {
     val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTriggerNameTaskDelayed]
   }
 }

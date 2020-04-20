@@ -58,15 +58,15 @@ class MorphTargetManager () extends js.Object {
   /**
     * Gets the list of influences (one per target)
     */
-  def influences(): Float32Array = js.native
+  def influences: Float32Array = js.native
   /**
     * Gets the number of influencers (ie. the number of targets with influences > 0)
     */
-  def numInfluencers(): Double = js.native
+  def numInfluencers: Double = js.native
   /**
     * Gets the number of targets stored in this manager
     */
-  def numTargets(): Double = js.native
+  def numTargets: Double = js.native
   /**
     * Removes a target from the manager
     * @param target defines the target to remove
@@ -80,15 +80,15 @@ class MorphTargetManager () extends js.Object {
   /**
     * Gets a boolean indicating if this manager supports morphing of normals
     */
-  def supportsNormals(): Boolean = js.native
+  def supportsNormals: Boolean = js.native
   /**
     * Gets a boolean indicating if this manager supports morphing of tangents
     */
-  def supportsTangents(): Boolean = js.native
+  def supportsTangents: Boolean = js.native
   /**
     * Gets a boolean indicating if this manager supports morphing of texture coordinates
     */
-  def supportsUVs(): Boolean = js.native
+  def supportsUVs: Boolean = js.native
   /**
     * Syncrhonize the targets with all the meshes using this morph target manager
     */
@@ -96,11 +96,11 @@ class MorphTargetManager () extends js.Object {
   /**
     * Gets the unique ID of this manager
     */
-  def uniqueId(): Double = js.native
+  def uniqueId: Double = js.native
   /**
     * Gets the number of vertices handled by this manager
     */
-  def vertexCount(): Double = js.native
+  def vertexCount: Double = js.native
 }
 
 /* static members */

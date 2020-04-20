@@ -16,12 +16,10 @@ trait WdListApplyTo extends js.Object
 
 object WdListApplyTo {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdListApplyToSelection: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdListApplyToSelection: `2` = this.cast(2)
+  def wdListApplyToThisPointForward: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdListApplyToThisPointForward: `1` = this.cast(1)
-  @scala.inline
-  def wdListApplyToWholeList: `0` = this.cast(0)
+  def wdListApplyToWholeList: `0` = 0.asInstanceOf[`0`]
 }
 

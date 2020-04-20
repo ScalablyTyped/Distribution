@@ -15,7 +15,6 @@ object StylingInstruction {
   @scala.inline
   def apply(calls: js.Array[StylingInstructionCall], reference: ExternalReference): StylingInstruction = {
     val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StylingInstruction]
   }
 }

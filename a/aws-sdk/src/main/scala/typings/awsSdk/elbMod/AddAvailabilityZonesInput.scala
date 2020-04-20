@@ -20,7 +20,6 @@ object AddAvailabilityZonesInput {
   @scala.inline
   def apply(AvailabilityZones: AvailabilityZones, LoadBalancerName: AccessPointName): AddAvailabilityZonesInput = {
     val __obj = js.Dynamic.literal(AvailabilityZones = AvailabilityZones.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddAvailabilityZonesInput]
   }
 }

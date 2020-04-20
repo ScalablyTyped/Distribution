@@ -13,7 +13,6 @@ object AnonSTATECHANGED {
   @scala.inline
   def apply(STATE_CHANGED: TaskEvent): AnonSTATECHANGED = {
     val __obj = js.Dynamic.literal(STATE_CHANGED = STATE_CHANGED.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSTATECHANGED]
   }
 }

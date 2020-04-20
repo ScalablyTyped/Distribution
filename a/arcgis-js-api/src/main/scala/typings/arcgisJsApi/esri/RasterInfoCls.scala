@@ -71,6 +71,13 @@ class RasterInfoCls () extends RasterInfo {
   /* CompleteClass */
   override var extent: Extent = js.native
   /**
+    * Raster height (row count) in pixels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#height)
+    */
+  /* CompleteClass */
+  override var height: Double = js.native
+  /**
     * Raster histograms return basic name-value pairs for number of bins, min and max bounding values, counts of pixels in each bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
@@ -92,12 +99,19 @@ class RasterInfoCls () extends RasterInfo {
   /* CompleteClass */
   override var multidimensionalInfo: js.Any = js.native
   /**
+    * The pixel value representing no available information. Can be a number (same value for all bands) or array (specific value for each band).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#noDataValue)
+    */
+  /* CompleteClass */
+  override var noDataValue: Double | js.Array[Double] = js.native
+  /**
     * Raster pixel size. Specifies the pixel size being identified on the x and y axis. Defaults to the base resolution of the dataset when not specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
   /* CompleteClass */
-  override var pixelSize: Point = js.native
+  override var pixelSize: RasterInfoPixelSize = js.native
   /**
     * Pixel type for the raster data source.
     *
@@ -132,6 +146,13 @@ class RasterInfoCls () extends RasterInfo {
     */
   /* CompleteClass */
   override var statistics: js.Array[RasterInfoStatistics] = js.native
+  /**
+    * Raster width (column count) in pixels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#width)
+    */
+  /* CompleteClass */
+  override var width: Double = js.native
   /**
     * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.
     *

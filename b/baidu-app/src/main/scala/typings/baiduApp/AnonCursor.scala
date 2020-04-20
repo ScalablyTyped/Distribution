@@ -13,7 +13,6 @@ object AnonCursor {
   @scala.inline
   def apply(cursor: Double, value: String): AnonCursor = {
     val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCursor]
   }
 }

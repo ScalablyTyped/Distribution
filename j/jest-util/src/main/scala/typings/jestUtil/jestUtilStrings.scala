@@ -9,6 +9,6 @@ object jestUtilStrings {
   sealed trait `SpaceSinglerightpointinganglequotationmark ` extends js.Object
   
   @scala.inline
-  def `SpaceSinglerightpointinganglequotationmark `: `SpaceSinglerightpointinganglequotationmark ` = " \u203A ".asInstanceOf[`SpaceSinglerightpointinganglequotationmark `]
+  def `SpaceSinglerightpointinganglequotationmark `: `SpaceSinglerightpointinganglequotationmark ` = (" \u203A ").asInstanceOf[`SpaceSinglerightpointinganglequotationmark `]
 }
 

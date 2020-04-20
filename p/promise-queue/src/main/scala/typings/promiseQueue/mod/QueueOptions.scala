@@ -15,7 +15,6 @@ object QueueOptions {
   @scala.inline
   def apply(onEmpty: () => Unit): QueueOptions = {
     val __obj = js.Dynamic.literal(onEmpty = js.Any.fromFunction0(onEmpty))
-  
     __obj.asInstanceOf[QueueOptions]
   }
 }

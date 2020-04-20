@@ -39,7 +39,7 @@ package object mod {
   */
   type Easing = typings.reactNativeAnimatable.mod._Easing | typings.reactNativeAnimatable.mod.EasingFunction
   type EasingFunction = js.Function1[/* t */ scala.Double, scala.Double]
-  type GetPropertyType[B, K /* <: java.lang.String */] = /* import warning: importer.ImportType#apply Failed type conversion: B[K] */ js.Any
+  type GetPropertyType[B, K /* <: /* keyof B */ java.lang.String */] = /* import warning: importer.ImportType#apply Failed type conversion: B[K] */ js.Any
   type Image = typings.reactNativeAnimatable.mod.AnimatableComponent[typings.reactNative.mod.ImageProperties, typings.reactNative.mod.ImageStyle]
   type Text = typings.reactNativeAnimatable.mod.AnimatableComponent[typings.reactNative.mod.TextProperties, typings.reactNative.mod.TextStyle]
   type View = typings.reactNativeAnimatable.mod.AnimatableComponent[typings.reactNative.mod.ViewProperties, typings.reactNative.mod.ViewStyle]

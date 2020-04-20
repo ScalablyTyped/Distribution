@@ -12,7 +12,7 @@ trait XmlDtdEntity[Parent] extends js.Object {
   /**
     * Gets the text of this entity declaration.
     */
-  def charData(): String = js.native
+  def charData: String = js.native
   /**
     * Sets the text of this entity declaration.
     */

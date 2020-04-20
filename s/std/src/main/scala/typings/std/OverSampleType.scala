@@ -13,12 +13,10 @@ trait OverSampleType extends js.Object
 
 object OverSampleType {
   @scala.inline
-  def `2x`: typings.std.stdStrings.`2x` = this.cast("2x")
+  def `2x`: typings.std.stdStrings.`2x` = "2x".asInstanceOf[typings.std.stdStrings.`2x`]
   @scala.inline
-  def `4x`: typings.std.stdStrings.`4x` = this.cast("4x")
+  def `4x`: typings.std.stdStrings.`4x` = "4x".asInstanceOf[typings.std.stdStrings.`4x`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def none: typings.std.stdStrings.none = this.cast("none")
+  def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
 }
 

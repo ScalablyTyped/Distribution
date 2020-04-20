@@ -13,12 +13,10 @@ trait GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType e
 
 object GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType {
   @scala.inline
-  def DIRECT: typings.actionsOnGoogle.actionsOnGoogleStrings.DIRECT = this.cast("DIRECT")
+  def DIRECT: typings.actionsOnGoogle.actionsOnGoogleStrings.DIRECT = "DIRECT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DIRECT]
   @scala.inline
-  def PAYMENT_GATEWAY: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_GATEWAY = this.cast("PAYMENT_GATEWAY")
+  def PAYMENT_GATEWAY: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_GATEWAY = "PAYMENT_GATEWAY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_GATEWAY]
   @scala.inline
-  def UNSPECIFIED_TOKENIZATION_TYPE: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_TOKENIZATION_TYPE = this.cast("UNSPECIFIED_TOKENIZATION_TYPE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNSPECIFIED_TOKENIZATION_TYPE: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_TOKENIZATION_TYPE = "UNSPECIFIED_TOKENIZATION_TYPE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_TOKENIZATION_TYPE]
 }
 

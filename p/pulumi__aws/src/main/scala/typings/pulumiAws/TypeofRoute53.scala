@@ -13,7 +13,6 @@ object TypeofRoute53 {
   @scala.inline
   def apply(Types: TypeofRoute53): TypeofRoute53 = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofRoute53]
   }
 }

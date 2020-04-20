@@ -13,7 +13,6 @@ object AnonStateNavigator {
   @scala.inline
   def apply(stateNavigator: StateNavigator): AnonStateNavigator = {
     val __obj = js.Dynamic.literal(stateNavigator = stateNavigator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStateNavigator]
   }
 }

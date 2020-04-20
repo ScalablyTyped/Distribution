@@ -190,7 +190,6 @@ object Context_ {
     ui: UI
   ): Context_ = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], commerceAllowed = commerceAllowed.asInstanceOf[js.Any], contentLanguage = contentLanguage.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], displayLanguage = displayLanguage.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], mailbox = mailbox.asInstanceOf[js.Any], officeTheme = officeTheme.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], requirements = requirements.asInstanceOf[js.Any], roamingSettings = roamingSettings.asInstanceOf[js.Any], touchEnabled = touchEnabled.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Context_]
   }
 }

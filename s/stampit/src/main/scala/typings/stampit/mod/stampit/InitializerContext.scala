@@ -24,7 +24,6 @@ object InitializerContext {
   @scala.inline
   def apply[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](args: js.Array[_], instance: Obj, stamp: S̤t̤a̤m̤p̤): InitializerContext[Obj, S̤t̤a̤m̤p̤] = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], stamp = stamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InitializerContext[Obj, S̤t̤a̤m̤p̤]]
   }
 }

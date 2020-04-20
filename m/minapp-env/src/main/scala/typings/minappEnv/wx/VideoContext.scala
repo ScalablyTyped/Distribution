@@ -77,7 +77,6 @@ object VideoContext {
     stop: () => Unit
   ): VideoContext = {
     val __obj = js.Dynamic.literal(exitFullScreen = js.Any.fromFunction0(exitFullScreen), hideStatusBar = js.Any.fromFunction0(hideStatusBar), pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play), playbackRate = js.Any.fromFunction1(playbackRate), requestFullScreen = js.Any.fromFunction1(requestFullScreen), seek = js.Any.fromFunction1(seek), sendDanmu = js.Any.fromFunction1(sendDanmu), showStatusBar = js.Any.fromFunction0(showStatusBar), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[VideoContext]
   }
 }

@@ -18,7 +18,6 @@ object UpdateDefaultBranchOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): UpdateDefaultBranchOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDefaultBranchOutput]
   }
 }

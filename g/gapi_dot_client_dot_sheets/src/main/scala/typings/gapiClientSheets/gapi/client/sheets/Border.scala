@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 trait Border extends js.Object {
   /** The color of the border. */
   var color: js.UndefOr[Color] = js.undefined
+  /**
+    * The color of the border.
+    * If color is also set, this field takes precedence.
+    */
+  var colorStyle: js.UndefOr[ColorStyle] = js.undefined
   /** The style of the border. */
   var style: js.UndefOr[String] = js.undefined
   /**
@@ -18,9 +23,15 @@ trait Border extends js.Object {
 
 object Border {
   @scala.inline
-  def apply(color: Color = null, style: String = null, width: Int | Double = null): Border = {
+  def apply(
+    color: Color = null,
+    colorStyle: ColorStyle = null,
+    style: String = null,
+    width: Int | Double = null
+  ): Border = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (colorStyle != null) __obj.updateDynamic("colorStyle")(colorStyle.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Border]

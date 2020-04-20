@@ -14,10 +14,8 @@ trait AcModuleType extends js.Object
 
 object AcModuleType {
   @scala.inline
-  def acClassModule: `1` = this.cast(1)
+  def acClassModule: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acStandardModule: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acStandardModule: `0` = 0.asInstanceOf[`0`]
 }
 

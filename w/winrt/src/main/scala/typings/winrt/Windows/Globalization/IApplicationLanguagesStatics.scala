@@ -19,7 +19,6 @@ object IApplicationLanguagesStatics {
     primaryLanguageOverride: String
   ): IApplicationLanguagesStatics = {
     val __obj = js.Dynamic.literal(languages = languages.asInstanceOf[js.Any], manifestLanguages = manifestLanguages.asInstanceOf[js.Any], primaryLanguageOverride = primaryLanguageOverride.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IApplicationLanguagesStatics]
   }
 }

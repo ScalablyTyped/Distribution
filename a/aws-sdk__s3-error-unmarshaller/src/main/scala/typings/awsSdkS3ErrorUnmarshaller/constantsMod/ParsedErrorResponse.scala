@@ -16,7 +16,6 @@ object ParsedErrorResponse {
   @scala.inline
   def apply($metadata: AnonRequestId, Code: String, Message: String): ParsedErrorResponse = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Code = Code.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedErrorResponse]
   }
 }

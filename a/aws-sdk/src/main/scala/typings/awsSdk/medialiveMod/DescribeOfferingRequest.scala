@@ -16,7 +16,6 @@ object DescribeOfferingRequest {
   @scala.inline
   def apply(OfferingId: string): DescribeOfferingRequest = {
     val __obj = js.Dynamic.literal(OfferingId = OfferingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeOfferingRequest]
   }
 }

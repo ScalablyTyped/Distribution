@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateDistributionConfigurationRequest extends js.Object {
   /**
-    *  The idempotency token of the distribution configuration. 
+    * The idempotency token of the distribution configuration. 
     */
   var clientToken: ClientToken = js.native
   /**
-    *  The description of the distribution configuration. 
+    * The description of the distribution configuration. 
     */
   var description: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The Amazon Resource Name (ARN) of the distribution configuration that you want to update. 
+    * The Amazon Resource Name (ARN) of the distribution configuration that you want to update. 
     */
   var distributionConfigurationArn: DistributionConfigurationArn = js.native
   /**
-    *  The distributions of the distribution configuration. 
+    * The distributions of the distribution configuration. 
     */
   var distributions: DistributionList = js.native
 }

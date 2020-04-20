@@ -13,7 +13,6 @@ object ValidatorProps {
   @scala.inline
   def apply(path: String, value: js.Any): ValidatorProps = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidatorProps]
   }
 }

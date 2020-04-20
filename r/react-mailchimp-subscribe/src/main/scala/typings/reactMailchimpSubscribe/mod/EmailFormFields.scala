@@ -12,7 +12,6 @@ object EmailFormFields {
   @scala.inline
   def apply(EMAIL: String): EmailFormFields = {
     val __obj = js.Dynamic.literal(EMAIL = EMAIL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EmailFormFields]
   }
 }

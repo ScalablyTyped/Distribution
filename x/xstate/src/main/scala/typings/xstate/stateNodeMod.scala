@@ -96,7 +96,6 @@ object stateNodeMod extends js.Object {
       * this state node, it does not escape.
       */
     var escapes: js.Any = js.native
-    var evaluateGuard: js.Any = js.native
     var formatTransition: js.Any = js.native
     var formatTransitions: js.Any = js.native
     var getActions: js.Any = js.native
@@ -202,15 +201,15 @@ object stateNodeMod extends js.Object {
       * The machine's own version.
       */
     var version: js.UndefOr[String] = js.native
-    def after(): js.Array[DelayedTransitionDefinition[TContext, TEvent]] = js.native
+    def after: js.Array[DelayedTransitionDefinition[TContext, TEvent]] = js.native
     /**
       * The well-structured state node definition.
       */
-    def definition(): StateNodeDefinition[TContext, TStateSchema, TEvent] = js.native
+    def definition: StateNodeDefinition[TContext, TStateSchema, TEvent] = js.native
     /**
       * All the event types accepted by this state node and its descendants.
       */
-    def events(): js.Array[
+    def events: js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
       ] = js.native
     /**
@@ -266,19 +265,19 @@ object stateNodeMod extends js.Object {
       * The initial State instance, which includes all actions to be executed from
       * entering the initial state.
       */
-    def initialState(): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
-    def initialStateNodes(): js.Array[StateNode[TContext, _, TEvent, _]] = js.native
-    /* private */ def initialStateValue(): js.Any = js.native
+    def initialState: State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def initialStateNodes: js.Array[StateNode[TContext, _, TEvent, _]] = js.native
+    /* private */ def initialStateValue: js.Any = js.native
     /**
       * The mapping of events to transitions.
       */
-    def on(): TransitionDefinitionMap[TContext, TEvent] = js.native
+    def on: TransitionDefinitionMap[TContext, TEvent] = js.native
     /**
       * All the events that have transitions directly from this state node.
       *
       * Excludes any inert events.
       */
-    def ownEvents(): js.Array[
+    def ownEvents: js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
       ] = js.native
     /**
@@ -298,12 +297,12 @@ object stateNodeMod extends js.Object {
     /**
       * All the state node IDs of this state node and its descendant state nodes.
       */
-    def stateIds(): js.Array[String] = js.native
+    def stateIds: js.Array[String] = js.native
     /**
       * The target state value of the history state node, if it exists. This represents the
       * default state value to transition to if no history value exists yet.
       */
-    def target(): js.UndefOr[StateValue] = js.native
+    def target: js.UndefOr[StateValue] = js.native
     def toJSON(): StateNodeDefinition[TContext, TStateSchema, TEvent] = js.native
     def transition(state: js.UndefOr[scala.Nothing], event: Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     def transition(state: js.UndefOr[scala.Nothing], event: Event[TEvent], context: TContext): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
@@ -339,15 +338,15 @@ object stateNodeMod extends js.Object {
     /**
       * All the transitions that can be taken from this state node.
       */
-    def transitions(): js.Array[TransitionDefinition[TContext, TEvent]] = js.native
+    def transitions: js.Array[TransitionDefinition[TContext, TEvent]] = js.native
     /**
       * Clones this state machine with custom options and context.
       *
       * @param options Options (actions, guards, activities, services) to recursively merge with the existing options.
       * @param context Custom context (will override predefined context)
       */
-    def withConfig(options: Partial[MachineOptions[TContext, TEvent]]): StateNode[TContext, TStateSchema, TEvent, _] = js.native
-    def withConfig(options: Partial[MachineOptions[TContext, TEvent]], context: TContext): StateNode[TContext, TStateSchema, TEvent, _] = js.native
+    def withConfig(options: Partial[MachineOptions[TContext, TEvent]]): StateNode[TContext, TStateSchema, TEvent, TTypestate] = js.native
+    def withConfig(options: Partial[MachineOptions[TContext, TEvent]], context: TContext): StateNode[TContext, TStateSchema, TEvent, TTypestate] = js.native
     /**
       * Clones this state machine with custom context.
       *

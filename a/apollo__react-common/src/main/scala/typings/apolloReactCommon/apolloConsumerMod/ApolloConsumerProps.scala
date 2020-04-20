@@ -14,7 +14,6 @@ object ApolloConsumerProps {
   @scala.inline
   def apply(children: default[js.Object] => ReactChild | Null): ApolloConsumerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[ApolloConsumerProps]
   }
 }

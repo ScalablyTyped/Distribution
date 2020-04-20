@@ -16,7 +16,6 @@ object DeleteInstanceProfileRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): DeleteInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteInstanceProfileRequest]
   }
 }

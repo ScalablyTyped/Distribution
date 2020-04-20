@@ -15,7 +15,6 @@ object Bip32Derivation {
   @scala.inline
   def apply(masterFingerprint: Buffer, path: String, pubkey: Buffer): Bip32Derivation = {
     val __obj = js.Dynamic.literal(masterFingerprint = masterFingerprint.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pubkey = pubkey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Bip32Derivation]
   }
 }

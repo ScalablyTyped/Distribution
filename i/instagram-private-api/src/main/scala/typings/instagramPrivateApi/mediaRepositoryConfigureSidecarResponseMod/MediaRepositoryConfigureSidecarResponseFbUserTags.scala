@@ -12,7 +12,6 @@ object MediaRepositoryConfigureSidecarResponseFbUserTags {
   @scala.inline
   def apply(in: js.Array[_]): MediaRepositoryConfigureSidecarResponseFbUserTags = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaRepositoryConfigureSidecarResponseFbUserTags]
   }
 }

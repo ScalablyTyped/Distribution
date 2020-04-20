@@ -19,7 +19,6 @@ object ICodeEditorViewState {
     viewState: IViewState
   ): ICodeEditorViewState = {
     val __obj = js.Dynamic.literal(contributionsState = contributionsState.asInstanceOf[js.Any], cursorState = cursorState.asInstanceOf[js.Any], viewState = viewState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICodeEditorViewState]
   }
 }

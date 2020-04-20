@@ -30,7 +30,6 @@ object TimelineKeys {
     itemTitleKey: String
   ): TimelineKeys = {
     val __obj = js.Dynamic.literal(groupIdKey = groupIdKey.asInstanceOf[js.Any], groupRightTitleKey = groupRightTitleKey.asInstanceOf[js.Any], groupTitleKey = groupTitleKey.asInstanceOf[js.Any], itemDivTitleKey = itemDivTitleKey.asInstanceOf[js.Any], itemGroupKey = itemGroupKey.asInstanceOf[js.Any], itemIdKey = itemIdKey.asInstanceOf[js.Any], itemTimeEndKey = itemTimeEndKey.asInstanceOf[js.Any], itemTimeStartKey = itemTimeStartKey.asInstanceOf[js.Any], itemTitleKey = itemTitleKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimelineKeys]
   }
 }

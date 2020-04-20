@@ -14,7 +14,6 @@ object LogEventExecuteUnsubscribe {
   @scala.inline
   def apply(name: executeDotunsubscribe, transactionID: Double): LogEventExecuteUnsubscribe = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogEventExecuteUnsubscribe]
   }
 }

@@ -38,7 +38,6 @@ object MDCFloatingLabelAdapter {
     removeClass: String => Unit
   ): MDCFloatingLabelAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), getWidth = js.Any.fromFunction0(getWidth), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), removeClass = js.Any.fromFunction1(removeClass))
-  
     __obj.asInstanceOf[MDCFloatingLabelAdapter]
   }
 }

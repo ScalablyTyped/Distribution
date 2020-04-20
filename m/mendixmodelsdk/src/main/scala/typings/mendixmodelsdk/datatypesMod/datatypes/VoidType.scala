@@ -47,21 +47,21 @@ class VoidType protected () extends DataType {
   @JSName("model")
   var model_FVoidType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  def containerAsAppServiceActionParameter_MVoidType(): AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MVoidType: AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  def containerAsAppServiceAction_MVoidType(): AppServiceAction = js.native
+  def containerAsAppServiceAction_MVoidType: AppServiceAction = js.native
   @JSName("containerAsConstant")
-  def containerAsConstant_MVoidType(): Constant = js.native
+  def containerAsConstant_MVoidType: Constant = js.native
   @JSName("containerAsDataSetParameter")
-  def containerAsDataSetParameter_MVoidType(): DataSetParameter = js.native
+  def containerAsDataSetParameter_MVoidType: DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  def containerAsDocumentTemplateParameter_MVoidType(): DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MVoidType: DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  def containerAsImportMapping_MVoidType(): ImportMapping = js.native
+  def containerAsImportMapping_MVoidType: ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  def containerAsMicroflowBase_MVoidType(): MicroflowBase = js.native
+  def containerAsMicroflowBase_MVoidType: MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  def containerAsMicroflowParameterBase_MVoidType(): MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterBase_MVoidType: MicroflowParameterBase = js.native
 }
 
 /* static members */

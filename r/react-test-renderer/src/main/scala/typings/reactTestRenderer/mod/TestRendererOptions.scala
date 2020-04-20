@@ -13,7 +13,6 @@ object TestRendererOptions {
   @scala.inline
   def apply(createNodeMock: ReactElement => js.Any): TestRendererOptions = {
     val __obj = js.Dynamic.literal(createNodeMock = js.Any.fromFunction1(createNodeMock))
-  
     __obj.asInstanceOf[TestRendererOptions]
   }
 }

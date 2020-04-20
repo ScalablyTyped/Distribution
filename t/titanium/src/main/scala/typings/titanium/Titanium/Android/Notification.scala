@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 /**
 		 * UI notifications that can be sent while the application is in the background.
 		 */
+@JSGlobal("Titanium.Android.Notification")
 @js.native
-trait Notification extends Proxy {
+class Notification () extends Proxy {
   /**
   			 * The audio stream type to use when playing the sound.
   			 */
@@ -108,22 +109,19 @@ trait Notification extends Proxy {
   			 * Will wake up the device for the given time (in milliseconds) when the notification is shown.
   			 * The application needs to also set the `android.permission.WAKE_LOCK` permission
   			 * in the Android manifest section of the `tiapp.xml` file.
-  			 * <ti:app>
-  			 *     <android>
-  			 *         <manifest>
-  			 *             <uses-permission android:name="android.permission.WAKE_LOCK" />
-  			 *         </manifest>
-  			 *     </android>
-  			 * </ti:app>
+  			 *     <ti:app>
+  			 *         <android>
+  			 *             <manifest>
+  			 *                 <uses-permission android:name="android.permission.WAKE_LOCK" />
+  			 *             </manifest>
+  			 *         </android>
+  			 *     </ti:app>
   			 */
   var wakeLock: wakeLockOptions = js.native
   /**
   			 * The timestamp for the notification (defaults to the current time).
   			 */
   var when: Date | Double = js.native
-  /**
-  			 * Add an action button to the notification
-  			 */
   def addAction(icon: String, title: String, intent: PendingIntent): Unit = js.native
   /**
   			 * Add an action button to the notification
@@ -131,162 +129,194 @@ trait Notification extends Proxy {
   def addAction(icon: Double, title: String, intent: PendingIntent): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.audioStreamType> property.
+  			 * @deprecated Access <Titanium.Android.Notification.audioStreamType> instead.
   			 */
   def getAudioStreamType(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.category> property.
+  			 * @deprecated Access <Titanium.Android.Notification.category> instead.
   			 */
   def getCategory(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.color> property.
+  			 * @deprecated Access <Titanium.Android.Notification.color> instead.
   			 */
   def getColor(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.contentIntent> property.
+  			 * @deprecated Access <Titanium.Android.Notification.contentIntent> instead.
   			 */
   def getContentIntent(): PendingIntent = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.contentText> property.
+  			 * @deprecated Access <Titanium.Android.Notification.contentText> instead.
   			 */
   def getContentText(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.contentTitle> property.
+  			 * @deprecated Access <Titanium.Android.Notification.contentTitle> instead.
   			 */
   def getContentTitle(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.defaults> property.
+  			 * @deprecated Access <Titanium.Android.Notification.defaults> instead.
   			 */
   def getDefaults(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.deleteIntent> property.
+  			 * @deprecated Access <Titanium.Android.Notification.deleteIntent> instead.
   			 */
   def getDeleteIntent(): PendingIntent = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.flags> property.
+  			 * @deprecated Access <Titanium.Android.Notification.flags> instead.
   			 */
   def getFlags(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.groupKey> property.
+  			 * @deprecated Access <Titanium.Android.Notification.groupKey> instead.
   			 */
   def getGroupKey(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.groupSummary> property.
+  			 * @deprecated Access <Titanium.Android.Notification.groupSummary> instead.
   			 */
   def getGroupSummary(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.icon> property.
+  			 * @deprecated Access <Titanium.Android.Notification.icon> instead.
   			 */
   def getIcon(): Double | String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.largeIcon> property.
+  			 * @deprecated Access <Titanium.Android.Notification.largeIcon> instead.
   			 */
   def getLargeIcon(): Double | String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.ledARGB> property.
+  			 * @deprecated Access <Titanium.Android.Notification.ledARGB> instead.
   			 */
   def getLedARGB(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.ledOffMS> property.
+  			 * @deprecated Access <Titanium.Android.Notification.ledOffMS> instead.
   			 */
   def getLedOffMS(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.ledOnMS> property.
+  			 * @deprecated Access <Titanium.Android.Notification.ledOnMS> instead.
   			 */
   def getLedOnMS(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.number> property.
+  			 * @deprecated Access <Titanium.Android.Notification.number> instead.
   			 */
   def getNumber(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.priority> property.
+  			 * @deprecated Access <Titanium.Android.Notification.priority> instead.
   			 */
   def getPriority(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.sound> property.
+  			 * @deprecated Access <Titanium.Android.Notification.sound> instead.
   			 */
   def getSound(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.style> property.
+  			 * @deprecated Access <Titanium.Android.Notification.style> instead.
   			 */
   def getStyle(): BigTextStyle | BigPictureStyle = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.tickerText> property.
+  			 * @deprecated Access <Titanium.Android.Notification.tickerText> instead.
   			 */
   def getTickerText(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.visibility> property.
+  			 * @deprecated Access <Titanium.Android.Notification.visibility> instead.
   			 */
   def getVisibility(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.wakeLock> property.
+  			 * @deprecated Access <Titanium.Android.Notification.wakeLock> instead.
   			 */
   def getWakeLock(): wakeLockOptions = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Notification.when> property.
+  			 * @deprecated Access <Titanium.Android.Notification.when> instead.
   			 */
   def getWhen(): Date | Double = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.audioStreamType> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.audioStreamType> instead.
   			 */
   def setAudioStreamType(audioStreamType: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.category> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.category> instead.
   			 */
   def setCategory(category: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.color> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.color> instead.
   			 */
   def setColor(color: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.contentIntent> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.contentIntent> instead.
   			 */
   def setContentIntent(contentIntent: PendingIntent): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.contentText> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.contentText> instead.
   			 */
   def setContentText(contentText: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.contentTitle> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.contentTitle> instead.
   			 */
   def setContentTitle(contentTitle: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.contentView> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.contentView> instead.
   			 */
   def setContentView(contentView: RemoteViews): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.defaults> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.defaults> instead.
   			 */
   def setDefaults(defaults: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.deleteIntent> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.deleteIntent> instead.
   			 */
   def setDeleteIntent(deleteIntent: PendingIntent): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.flags> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.flags> instead.
   			 */
   def setFlags(flags: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.groupKey> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.groupKey> instead.
   			 */
   def setGroupKey(groupKey: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.groupSummary> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.groupSummary> instead.
   			 */
   def setGroupSummary(groupSummary: Boolean): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.Android.Notification.icon> property.
-  			 */
   def setIcon(icon: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.icon> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.icon> instead.
   			 */
   def setIcon(icon: Double): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.Android.Notification.largeIcon> property.
-  			 */
   def setLargeIcon(largeIcon: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.largeIcon> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.largeIcon> instead.
   			 */
   def setLargeIcon(largeIcon: Double): Unit = js.native
   /**
@@ -295,22 +325,27 @@ trait Notification extends Proxy {
   def setLatestEventInfo(contentTitle: String, contentText: String, contentIntent: PendingIntent): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.ledARGB> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.ledARGB> instead.
   			 */
   def setLedARGB(ledARGB: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.ledOffMS> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.ledOffMS> instead.
   			 */
   def setLedOffMS(ledOffMS: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.ledOnMS> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.ledOnMS> instead.
   			 */
   def setLedOnMS(ledOnMS: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.number> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.number> instead.
   			 */
   def setNumber(number: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.priority> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.priority> instead.
   			 */
   def setPriority(priority: Double): Unit = js.native
   /**
@@ -319,34 +354,34 @@ trait Notification extends Proxy {
   def setProgress(max: Double, progress: Double, indeterminate: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.sound> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.sound> instead.
   			 */
   def setSound(sound: String): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.Android.Notification.style> property.
-  			 */
   def setStyle(style: BigPictureStyle): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.style> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.style> instead.
   			 */
   def setStyle(style: BigTextStyle): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.tickerText> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.tickerText> instead.
   			 */
   def setTickerText(tickerText: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.visibility> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.visibility> instead.
   			 */
   def setVisibility(visibility: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.wakeLock> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.wakeLock> instead.
   			 */
   def setWakeLock(wakeLock: wakeLockOptions): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.Android.Notification.when> property.
-  			 */
   def setWhen(when: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Notification.when> property.
+  			 * @deprecated Set the value using <Titanium.Android.Notification.when> instead.
   			 */
   def setWhen(when: Date): Unit = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "conf" : "6.2.3"
+      "conf" : "6.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "conf" : "6.2.3"
+      "conf" : "6.2.4"
     }
   ],
   "compile-devDependencies" : [

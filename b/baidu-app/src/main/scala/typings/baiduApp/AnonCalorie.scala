@@ -17,7 +17,6 @@ object AnonCalorie {
   @scala.inline
   def apply(calorie: Double, name: String, probability: Double): AnonCalorie = {
     val __obj = js.Dynamic.literal(calorie = calorie.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], probability = probability.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCalorie]
   }
 }

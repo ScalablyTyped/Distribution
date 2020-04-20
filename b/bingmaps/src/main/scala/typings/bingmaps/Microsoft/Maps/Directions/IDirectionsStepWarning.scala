@@ -21,7 +21,6 @@ object IDirectionsStepWarning {
   @scala.inline
   def apply(origin: String, severity: String, text: String, to: String, warningType: String): IDirectionsStepWarning = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], warningType = warningType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDirectionsStepWarning]
   }
 }

@@ -21,7 +21,6 @@ object TypeofloginState {
     onSessionStateChanged: SessionStateChangedEvent
   ): TypeofloginState = {
     val __obj = js.Dynamic.literal(getProfileType = js.Any.fromFunction1(getProfileType), getSessionState = js.Any.fromFunction1(getSessionState), onSessionStateChanged = onSessionStateChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofloginState]
   }
 }

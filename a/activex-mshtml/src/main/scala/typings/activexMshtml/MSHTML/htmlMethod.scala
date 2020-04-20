@@ -18,14 +18,12 @@ trait htmlMethod extends js.Object
 
 object htmlMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlMethodGet: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlMethodGet: `1` = this.cast(1)
+  def htmlMethodNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlMethodNotSet: `0` = this.cast(0)
+  def htmlMethodPost: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlMethodPost: `2` = this.cast(2)
-  @scala.inline
-  def htmlMethod_Max: `2147483647` = this.cast(2147483647)
+  def htmlMethod_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

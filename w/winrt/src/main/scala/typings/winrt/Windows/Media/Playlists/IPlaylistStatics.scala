@@ -14,7 +14,6 @@ object IPlaylistStatics {
   @scala.inline
   def apply(loadAsync: IStorageFile => IAsyncOperation[Playlist]): IPlaylistStatics = {
     val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction1(loadAsync))
-  
     __obj.asInstanceOf[IPlaylistStatics]
   }
 }

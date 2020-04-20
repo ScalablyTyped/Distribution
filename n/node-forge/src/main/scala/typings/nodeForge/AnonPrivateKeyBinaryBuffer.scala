@@ -13,7 +13,6 @@ object AnonPrivateKeyBinaryBuffer {
   @scala.inline
   def apply(privateKey: BinaryBuffer): AnonPrivateKeyBinaryBuffer = {
     val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrivateKeyBinaryBuffer]
   }
 }

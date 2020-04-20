@@ -26,7 +26,6 @@ object GetProof {
     storageProof: js.Array[StorageProof]
   ): GetProof = {
     val __obj = js.Dynamic.literal(accountProof = accountProof.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], codeHash = codeHash.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], storageHash = storageHash.asInstanceOf[js.Any], storageProof = storageProof.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetProof]
   }
 }

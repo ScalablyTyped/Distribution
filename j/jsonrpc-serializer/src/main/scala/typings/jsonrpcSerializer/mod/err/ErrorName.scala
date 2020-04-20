@@ -15,16 +15,14 @@ trait ErrorName extends js.Object
 
 object ErrorName {
   @scala.inline
-  def InvalidParamsError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.InvalidParamsError = this.cast("InvalidParamsError")
+  def InvalidParamsError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.InvalidParamsError = "InvalidParamsError".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.InvalidParamsError]
   @scala.inline
-  def InvalidRequestError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.InvalidRequestError = this.cast("InvalidRequestError")
+  def InvalidRequestError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.InvalidRequestError = "InvalidRequestError".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.InvalidRequestError]
   @scala.inline
-  def JsonRpcError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.JsonRpcError = this.cast("JsonRpcError")
+  def JsonRpcError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.JsonRpcError = "JsonRpcError".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.JsonRpcError]
   @scala.inline
-  def MethodNotFoundError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.MethodNotFoundError = this.cast("MethodNotFoundError")
+  def MethodNotFoundError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.MethodNotFoundError = "MethodNotFoundError".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.MethodNotFoundError]
   @scala.inline
-  def ParseError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.ParseError = this.cast("ParseError")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ParseError: typings.jsonrpcSerializer.jsonrpcSerializerStrings.ParseError = "ParseError".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.ParseError]
 }
 

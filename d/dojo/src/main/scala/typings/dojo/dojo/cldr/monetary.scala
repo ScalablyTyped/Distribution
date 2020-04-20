@@ -23,7 +23,6 @@ object monetary {
   @scala.inline
   def apply(getData: String => js.Object): monetary = {
     val __obj = js.Dynamic.literal(getData = js.Any.fromFunction1(getData))
-  
     __obj.asInstanceOf[monetary]
   }
 }

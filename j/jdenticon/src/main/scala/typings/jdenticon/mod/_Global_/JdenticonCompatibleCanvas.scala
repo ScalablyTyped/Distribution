@@ -25,7 +25,6 @@ object JdenticonCompatibleCanvas {
     width: Double
   ): JdenticonCompatibleCanvas = {
     val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction1(getContext), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JdenticonCompatibleCanvas]
   }
 }

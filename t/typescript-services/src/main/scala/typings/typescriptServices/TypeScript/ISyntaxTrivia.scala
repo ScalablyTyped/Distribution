@@ -28,7 +28,6 @@ object ISyntaxTrivia {
     skippedToken: () => ISyntaxToken
   ): ISyntaxTrivia = {
     val __obj = js.Dynamic.literal(fullText = js.Any.fromFunction0(fullText), fullWidth = js.Any.fromFunction0(fullWidth), isComment = js.Any.fromFunction0(isComment), isNewLine = js.Any.fromFunction0(isNewLine), isSkippedToken = js.Any.fromFunction0(isSkippedToken), isWhitespace = js.Any.fromFunction0(isWhitespace), kind = js.Any.fromFunction0(kind), skippedToken = js.Any.fromFunction0(skippedToken))
-  
     __obj.asInstanceOf[ISyntaxTrivia]
   }
 }

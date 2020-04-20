@@ -23,7 +23,6 @@ object PullsCreateReviewParamsComments {
   @scala.inline
   def apply(body: String, path: String, position: Double): PullsCreateReviewParamsComments = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsCreateReviewParamsComments]
   }
 }

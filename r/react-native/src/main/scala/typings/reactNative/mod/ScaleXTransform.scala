@@ -12,7 +12,6 @@ object ScaleXTransform {
   @scala.inline
   def apply(scaleX: Double): ScaleXTransform = {
     val __obj = js.Dynamic.literal(scaleX = scaleX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScaleXTransform]
   }
 }

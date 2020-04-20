@@ -13,7 +13,6 @@ object IFocusTrapZoneNestedExampleState {
   @scala.inline
   def apply(activeStates: NumberDictionary[Boolean]): IFocusTrapZoneNestedExampleState = {
     val __obj = js.Dynamic.literal(activeStates = activeStates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFocusTrapZoneNestedExampleState]
   }
 }

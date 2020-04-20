@@ -12,7 +12,6 @@ object AttentionDetails {
   @scala.inline
   def apply(tabId: Double): AttentionDetails = {
     val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttentionDetails]
   }
 }

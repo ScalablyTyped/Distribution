@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequireExtensions
-  extends /* ext */ StringDictionary[js.Function2[/* m */ Module, /* filename */ String, _]] {
+  extends Dict[js.Function2[/* m */ Module, /* filename */ String, js.Any]] {
   @JSName(".js")
   def Dotjs(m: Module, filename: String): js.Any
   @JSName(".json")
@@ -21,7 +21,7 @@ object RequireExtensions {
     Dotjs: (Module, String) => js.Any,
     Dotjson: (Module, String) => js.Any,
     Dotnode: (Module, String) => js.Any,
-    StringDictionary: /* ext */ StringDictionary[js.Function2[/* m */ Module, /* filename */ String, _]] = null
+    StringDictionary: StringDictionary[js.UndefOr[js.Function2[/* m */ Module, /* filename */ String, js.Any]]] = null
   ): RequireExtensions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic(".js")(js.Any.fromFunction2(Dotjs))

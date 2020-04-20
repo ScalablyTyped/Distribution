@@ -2,6 +2,7 @@ package typings.apolloEnv
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloEnv.arrayMod._Global_.Array
+import typings.node.NodeJS.Dict
 import typings.node.urlMod.URL_
 import typings.std.Iterable
 import scala.scalajs.js
@@ -23,7 +24,7 @@ object urlMod extends js.Object {
     extends typings.node.urlMod.URLSearchParams {
     def this(init: String) = this()
     def this(init: js.Array[js.Tuple2[String, String]]) = this()
-    def this(init: StringDictionary[js.UndefOr[String | js.Array[String]]]) = this()
+    def this(init: Dict[String | js.Array[String]]) = this()
     def this(init: typings.node.urlMod.URLSearchParams) = this()
     def this(init: Iterable[js.Tuple2[String, String]]) = this()
   }

@@ -159,15 +159,15 @@ object semanticUiTabStrings {
   @scala.inline
   def cache: cache = "cache".asInstanceOf[cache]
   @scala.inline
-  def `cache add`: `cache add` = "cache add".asInstanceOf[`cache add`]
+  def `cache add`: `cache add` = ("cache add").asInstanceOf[`cache add`]
   @scala.inline
-  def `cache read`: `cache read` = "cache read".asInstanceOf[`cache read`]
+  def `cache read`: `cache read` = ("cache read").asInstanceOf[`cache read`]
   @scala.inline
-  def `cache remove`: `cache remove` = "cache remove".asInstanceOf[`cache remove`]
+  def `cache remove`: `cache remove` = ("cache remove").asInstanceOf[`cache remove`]
   @scala.inline
   def cacheType: cacheType = "cacheType".asInstanceOf[cacheType]
   @scala.inline
-  def `change tab`: `change tab` = "change tab".asInstanceOf[`change tab`]
+  def `change tab`: `change tab` = ("change tab").asInstanceOf[`change tab`]
   @scala.inline
   def childrenOnly: childrenOnly = "childrenOnly".asInstanceOf[childrenOnly]
   @scala.inline
@@ -185,7 +185,7 @@ object semanticUiTabStrings {
   @scala.inline
   def evaluateScripts: evaluateScripts = "evaluateScripts".asInstanceOf[evaluateScripts]
   @scala.inline
-  def `get path`: `get path` = "get path".asInstanceOf[`get path`]
+  def `get path`: `get path` = ("get path").asInstanceOf[`get path`]
   @scala.inline
   def hash: hash = "hash".asInstanceOf[hash]
   @scala.inline
@@ -197,7 +197,7 @@ object semanticUiTabStrings {
   @scala.inline
   def ignoreFirstLoad: ignoreFirstLoad = "ignoreFirstLoad".asInstanceOf[ignoreFirstLoad]
   @scala.inline
-  def `is tab`: `is tab` = "is tab".asInstanceOf[`is tab`]
+  def `is tab`: `is tab` = ("is tab").asInstanceOf[`is tab`]
   @scala.inline
   def loadOnce: loadOnce = "loadOnce".asInstanceOf[loadOnce]
   @scala.inline
@@ -227,7 +227,7 @@ object semanticUiTabStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set state`: `set state` = "set state".asInstanceOf[`set state`]
+  def `set state`: `set state` = ("set state").asInstanceOf[`set state`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline

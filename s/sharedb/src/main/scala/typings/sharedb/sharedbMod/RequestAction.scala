@@ -22,30 +22,28 @@ trait RequestAction extends js.Object
 
 object RequestAction {
   @scala.inline
-  def bf: typings.sharedb.sharedbStrings.bf = this.cast("bf")
+  def bf: typings.sharedb.sharedbStrings.bf = "bf".asInstanceOf[typings.sharedb.sharedbStrings.bf]
   @scala.inline
-  def bs: typings.sharedb.sharedbStrings.bs = this.cast("bs")
+  def bs: typings.sharedb.sharedbStrings.bs = "bs".asInstanceOf[typings.sharedb.sharedbStrings.bs]
   @scala.inline
-  def bu: typings.sharedb.sharedbStrings.bu = this.cast("bu")
+  def bu: typings.sharedb.sharedbStrings.bu = "bu".asInstanceOf[typings.sharedb.sharedbStrings.bu]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def f: typings.sharedb.sharedbStrings.f = "f".asInstanceOf[typings.sharedb.sharedbStrings.f]
   @scala.inline
-  def f: typings.sharedb.sharedbStrings.f = this.cast("f")
+  def nf: typings.sharedb.sharedbStrings.nf = "nf".asInstanceOf[typings.sharedb.sharedbStrings.nf]
   @scala.inline
-  def nf: typings.sharedb.sharedbStrings.nf = this.cast("nf")
+  def nt: typings.sharedb.sharedbStrings.nt = "nt".asInstanceOf[typings.sharedb.sharedbStrings.nt]
   @scala.inline
-  def nt: typings.sharedb.sharedbStrings.nt = this.cast("nt")
+  def op: typings.sharedb.sharedbStrings.op = "op".asInstanceOf[typings.sharedb.sharedbStrings.op]
   @scala.inline
-  def op: typings.sharedb.sharedbStrings.op = this.cast("op")
+  def qf: typings.sharedb.sharedbStrings.qf = "qf".asInstanceOf[typings.sharedb.sharedbStrings.qf]
   @scala.inline
-  def qf: typings.sharedb.sharedbStrings.qf = this.cast("qf")
+  def qs: typings.sharedb.sharedbStrings.qs = "qs".asInstanceOf[typings.sharedb.sharedbStrings.qs]
   @scala.inline
-  def qs: typings.sharedb.sharedbStrings.qs = this.cast("qs")
+  def qu: typings.sharedb.sharedbStrings.qu = "qu".asInstanceOf[typings.sharedb.sharedbStrings.qu]
   @scala.inline
-  def qu: typings.sharedb.sharedbStrings.qu = this.cast("qu")
+  def s: typings.sharedb.sharedbStrings.s = "s".asInstanceOf[typings.sharedb.sharedbStrings.s]
   @scala.inline
-  def s: typings.sharedb.sharedbStrings.s = this.cast("s")
-  @scala.inline
-  def u: typings.sharedb.sharedbStrings.u = this.cast("u")
+  def u: typings.sharedb.sharedbStrings.u = "u".asInstanceOf[typings.sharedb.sharedbStrings.u]
 }
 

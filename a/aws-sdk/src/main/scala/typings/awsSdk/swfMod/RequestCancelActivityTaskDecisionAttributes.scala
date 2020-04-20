@@ -16,7 +16,6 @@ object RequestCancelActivityTaskDecisionAttributes {
   @scala.inline
   def apply(activityId: ActivityId): RequestCancelActivityTaskDecisionAttributes = {
     val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestCancelActivityTaskDecisionAttributes]
   }
 }

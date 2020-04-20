@@ -16,7 +16,6 @@ object DeleteContainerInput {
   @scala.inline
   def apply(ContainerName: ContainerName): DeleteContainerInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteContainerInput]
   }
 }

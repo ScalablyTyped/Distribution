@@ -20,7 +20,6 @@ object CreateLogStreamRequest {
   @scala.inline
   def apply(logGroupName: LogGroupName, logStreamName: LogStreamName): CreateLogStreamRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], logStreamName = logStreamName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateLogStreamRequest]
   }
 }

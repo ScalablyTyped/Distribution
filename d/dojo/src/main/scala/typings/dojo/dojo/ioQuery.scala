@@ -31,7 +31,6 @@ object ioQuery {
   @scala.inline
   def apply(objectToQuery: js.Object => js.Any, queryToObject: String => js.Object): ioQuery = {
     val __obj = js.Dynamic.literal(objectToQuery = js.Any.fromFunction1(objectToQuery), queryToObject = js.Any.fromFunction1(queryToObject))
-  
     __obj.asInstanceOf[ioQuery]
   }
 }

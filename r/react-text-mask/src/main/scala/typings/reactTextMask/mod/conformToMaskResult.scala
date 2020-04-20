@@ -14,7 +14,6 @@ object conformToMaskResult {
   @scala.inline
   def apply(conformedValue: String, meta: AnonSomeCharsRejected): conformToMaskResult = {
     val __obj = js.Dynamic.literal(conformedValue = conformedValue.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[conformToMaskResult]
   }
 }

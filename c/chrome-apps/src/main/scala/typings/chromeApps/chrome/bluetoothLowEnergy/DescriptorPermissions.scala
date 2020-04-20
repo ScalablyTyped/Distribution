@@ -18,18 +18,16 @@ trait DescriptorPermissions extends js.Object
 
 object DescriptorPermissions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def encryptedAuthenticatedRead: typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedRead = "encryptedAuthenticatedRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedRead]
   @scala.inline
-  def encryptedAuthenticatedRead: typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedRead = this.cast("encryptedAuthenticatedRead")
+  def encryptedAuthenticatedWrite: typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedWrite = "encryptedAuthenticatedWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedWrite]
   @scala.inline
-  def encryptedAuthenticatedWrite: typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedWrite = this.cast("encryptedAuthenticatedWrite")
+  def encryptedRead: typings.chromeApps.chromeAppsStrings.encryptedRead = "encryptedRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedRead]
   @scala.inline
-  def encryptedRead: typings.chromeApps.chromeAppsStrings.encryptedRead = this.cast("encryptedRead")
+  def encryptedWrite: typings.chromeApps.chromeAppsStrings.encryptedWrite = "encryptedWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedWrite]
   @scala.inline
-  def encryptedWrite: typings.chromeApps.chromeAppsStrings.encryptedWrite = this.cast("encryptedWrite")
+  def read: read_ = "read".asInstanceOf[read_]
   @scala.inline
-  def read: read_ = this.cast("read")
-  @scala.inline
-  def write: write_ = this.cast("write")
+  def write: write_ = "write".asInstanceOf[write_]
 }
 

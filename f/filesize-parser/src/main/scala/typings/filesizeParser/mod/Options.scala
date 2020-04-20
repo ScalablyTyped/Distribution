@@ -14,7 +14,6 @@ object Options {
   @scala.inline
   def apply(base: `2` | `10`): Options = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

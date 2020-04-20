@@ -14,7 +14,6 @@ object ScandalResult {
   @scala.inline
   def apply(filePath: String, matches: js.Array[AnonLeadingContextLines]): ScandalResult = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScandalResult]
   }
 }

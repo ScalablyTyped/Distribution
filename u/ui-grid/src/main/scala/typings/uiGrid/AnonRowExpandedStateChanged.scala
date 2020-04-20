@@ -19,7 +19,6 @@ object AnonRowExpandedStateChanged {
   @scala.inline
   def apply[TEntity](rowExpandedStateChanged: (IScope, rowExpandedStateChangedHandler[TEntity]) => Unit): AnonRowExpandedStateChanged[TEntity] = {
     val __obj = js.Dynamic.literal(rowExpandedStateChanged = js.Any.fromFunction2(rowExpandedStateChanged))
-  
     __obj.asInstanceOf[AnonRowExpandedStateChanged[TEntity]]
   }
 }

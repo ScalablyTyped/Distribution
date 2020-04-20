@@ -13,7 +13,6 @@ object IAccelerometerShakenEventArgs {
   @scala.inline
   def apply(timestamp: Date): IAccelerometerShakenEventArgs = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAccelerometerShakenEventArgs]
   }
 }

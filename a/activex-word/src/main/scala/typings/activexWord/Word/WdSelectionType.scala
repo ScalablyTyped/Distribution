@@ -28,24 +28,22 @@ trait WdSelectionType extends js.Object
 
 object WdSelectionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdNoSelection: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdNoSelection: `0` = this.cast(0)
+  def wdSelectionBlock: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdSelectionBlock: `6` = this.cast(6)
+  def wdSelectionColumn: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdSelectionColumn: `4` = this.cast(4)
+  def wdSelectionFrame: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdSelectionFrame: `3` = this.cast(3)
+  def wdSelectionIP: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdSelectionIP: `1` = this.cast(1)
+  def wdSelectionInlineShape: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdSelectionInlineShape: `7` = this.cast(7)
+  def wdSelectionNormal: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdSelectionNormal: `2` = this.cast(2)
+  def wdSelectionRow: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdSelectionRow: `5` = this.cast(5)
-  @scala.inline
-  def wdSelectionShape: `8` = this.cast(8)
+  def wdSelectionShape: `8` = 8.asInstanceOf[`8`]
 }
 

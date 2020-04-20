@@ -13,7 +13,6 @@ object PickImplleftArrow {
   @scala.inline
   def apply(leftArrow: Double): PickImplleftArrow = {
     val __obj = js.Dynamic.literal(leftArrow = leftArrow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplleftArrow]
   }
 }

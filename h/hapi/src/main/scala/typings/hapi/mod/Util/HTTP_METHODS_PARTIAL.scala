@@ -28,30 +28,28 @@ trait HTTP_METHODS_PARTIAL extends js.Object
 
 object HTTP_METHODS_PARTIAL {
   @scala.inline
-  def DELETE: typings.hapi.hapiStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.hapi.hapiStrings.DELETE = "DELETE".asInstanceOf[typings.hapi.hapiStrings.DELETE]
   @scala.inline
-  def GET: typings.hapi.hapiStrings.GET = this.cast("GET")
+  def GET: typings.hapi.hapiStrings.GET = "GET".asInstanceOf[typings.hapi.hapiStrings.GET]
   @scala.inline
-  def OPTIONS: typings.hapi.hapiStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.hapi.hapiStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.hapi.hapiStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.hapi.hapiStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.hapi.hapiStrings.PATCH = "PATCH".asInstanceOf[typings.hapi.hapiStrings.PATCH]
   @scala.inline
-  def POST: typings.hapi.hapiStrings.POST = this.cast("POST")
+  def POST: typings.hapi.hapiStrings.POST = "POST".asInstanceOf[typings.hapi.hapiStrings.POST]
   @scala.inline
-  def PUT: typings.hapi.hapiStrings.PUT = this.cast("PUT")
+  def PUT: typings.hapi.hapiStrings.PUT = "PUT".asInstanceOf[typings.hapi.hapiStrings.PUT]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def delete: delete_ = this.cast("delete")
+  def get: get_ = "get".asInstanceOf[get_]
   @scala.inline
-  def get: get_ = this.cast("get")
+  def options: options_ = "options".asInstanceOf[options_]
   @scala.inline
-  def options: options_ = this.cast("options")
+  def patch: patch_ = "patch".asInstanceOf[patch_]
   @scala.inline
-  def patch: patch_ = this.cast("patch")
+  def post: post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def post: post_ = this.cast("post")
-  @scala.inline
-  def put: put_ = this.cast("put")
+  def put: put_ = "put".asInstanceOf[put_]
 }
 

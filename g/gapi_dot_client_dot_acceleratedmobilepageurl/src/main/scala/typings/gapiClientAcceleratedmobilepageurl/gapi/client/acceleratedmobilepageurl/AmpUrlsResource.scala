@@ -18,7 +18,6 @@ object AmpUrlsResource {
   @scala.inline
   def apply(batchGet: AnonAccesstoken => Request_[BatchGetAmpUrlsResponse]): AmpUrlsResource = {
     val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet))
-  
     __obj.asInstanceOf[AmpUrlsResource]
   }
 }

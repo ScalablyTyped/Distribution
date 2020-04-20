@@ -13,6 +13,11 @@ trait TextFormat extends js.Object {
   var fontSize: js.UndefOr[Double] = js.undefined
   /** The foreground color of the text. */
   var foregroundColor: js.UndefOr[Color] = js.undefined
+  /**
+    * The foreground color of the text.
+    * If foreground_color is also set, this field takes precedence.
+    */
+  var foregroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   /** True if the text is italicized. */
   var italic: js.UndefOr[Boolean] = js.undefined
   /** True if the text has a strikethrough. */
@@ -28,6 +33,7 @@ object TextFormat {
     fontFamily: String = null,
     fontSize: Int | Double = null,
     foregroundColor: Color = null,
+    foregroundColorStyle: ColorStyle = null,
     italic: js.UndefOr[Boolean] = js.undefined,
     strikethrough: js.UndefOr[Boolean] = js.undefined,
     underline: js.UndefOr[Boolean] = js.undefined
@@ -37,6 +43,7 @@ object TextFormat {
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
+    if (foregroundColorStyle != null) __obj.updateDynamic("foregroundColorStyle")(foregroundColorStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
     if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
     if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])

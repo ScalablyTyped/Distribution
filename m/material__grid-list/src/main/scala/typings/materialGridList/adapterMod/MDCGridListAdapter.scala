@@ -25,7 +25,6 @@ object MDCGridListAdapter {
     setStyleForTilesElement: (String, String) => Unit
   ): MDCGridListAdapter = {
     val __obj = js.Dynamic.literal(deregisterResizeHandler = js.Any.fromFunction1(deregisterResizeHandler), getNumberOfTiles = js.Any.fromFunction0(getNumberOfTiles), getOffsetWidth = js.Any.fromFunction0(getOffsetWidth), getOffsetWidthForTileAtIndex = js.Any.fromFunction1(getOffsetWidthForTileAtIndex), registerResizeHandler = js.Any.fromFunction1(registerResizeHandler), setStyleForTilesElement = js.Any.fromFunction2(setStyleForTilesElement))
-  
     __obj.asInstanceOf[MDCGridListAdapter]
   }
 }

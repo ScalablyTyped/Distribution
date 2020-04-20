@@ -33,7 +33,6 @@ object PickImplaction {
     ])
   ): PickImplaction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplaction]
   }
 }

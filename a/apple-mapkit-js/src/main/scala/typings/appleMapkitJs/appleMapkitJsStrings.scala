@@ -86,7 +86,7 @@ object appleMapkitJsStrings {
   @scala.inline
   def Refreshed: Refreshed = "Refreshed".asInstanceOf[Refreshed]
   @scala.inline
-  def `Too Many Requests`: `Too Many Requests` = "Too Many Requests".asInstanceOf[`Too Many Requests`]
+  def `Too Many Requests`: `Too Many Requests` = ("Too Many Requests").asInstanceOf[`Too Many Requests`]
   @scala.inline
   def Unauthorized: Unauthorized = "Unauthorized".asInstanceOf[Unauthorized]
   @scala.inline

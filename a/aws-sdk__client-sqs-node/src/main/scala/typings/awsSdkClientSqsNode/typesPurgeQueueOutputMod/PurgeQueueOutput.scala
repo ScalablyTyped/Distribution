@@ -18,7 +18,6 @@ object PurgeQueueOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): PurgeQueueOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PurgeQueueOutput]
   }
 }

@@ -24,7 +24,6 @@ object OnLayoutChangeListener {
     onLayoutChange: (typings.androiduix.android.view.View, Double, Double, Double, Double, Double, Double, Double, Double) => Unit
   ): OnLayoutChangeListener = {
     val __obj = js.Dynamic.literal(onLayoutChange = js.Any.fromFunction9(onLayoutChange))
-  
     __obj.asInstanceOf[OnLayoutChangeListener]
   }
 }

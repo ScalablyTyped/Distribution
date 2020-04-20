@@ -20,7 +20,6 @@ object BatchUpdateObjectAttributes {
   @scala.inline
   def apply(AttributeUpdates: ObjectAttributeUpdateList, ObjectReference: ObjectReference): BatchUpdateObjectAttributes = {
     val __obj = js.Dynamic.literal(AttributeUpdates = AttributeUpdates.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchUpdateObjectAttributes]
   }
 }

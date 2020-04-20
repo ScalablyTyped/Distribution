@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 
 trait reactAceProps {
   @scala.inline
-  def AceProps: IAceEditorProps.type = typings.reactAce.aceMod.IAceEditorProps
+  def AceProps: IAceEditorProps.type = IAceEditorProps
   type AceProps = IAceEditorProps
   @scala.inline
-  def DiffProps: IDiffEditorProps.type = typings.reactAce.diffMod.IDiffEditorProps
+  def DiffProps: IDiffEditorProps.type = IDiffEditorProps
   type DiffProps = IDiffEditorProps
   @scala.inline
-  def ReactAceProps: IAceEditorProps.type = typings.reactAce.aceMod.IAceEditorProps
+  def ReactAceProps: IAceEditorProps.type = IAceEditorProps
   type ReactAceProps = IAceEditorProps
   @scala.inline
-  def SplitProps: ISplitEditorProps.type = typings.reactAce.splitMod.ISplitEditorProps
+  def SplitProps: ISplitEditorProps.type = ISplitEditorProps
   type SplitProps = ISplitEditorProps
 }
 

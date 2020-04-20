@@ -13,12 +13,10 @@ trait AuthorizeRequestStatus extends js.Object
 
 object AuthorizeRequestStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complete: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.complete = "complete".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.complete]
   @scala.inline
-  def complete: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.complete = this.cast("complete")
+  def in_progress: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.in_progress = "in_progress".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.in_progress]
   @scala.inline
-  def in_progress: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.in_progress = this.cast("in_progress")
-  @scala.inline
-  def queued: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.queued = this.cast("queued")
+  def queued: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.queued = "queued".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.queued]
 }
 

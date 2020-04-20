@@ -13,7 +13,6 @@ object AnonPropagation {
   @scala.inline
   def apply(Propagation: MountPropagation): AnonPropagation = {
     val __obj = js.Dynamic.literal(Propagation = Propagation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPropagation]
   }
 }

@@ -42,7 +42,11 @@ class Question protected ()
     * @see SurveyModel.updateQuestionCssClasses
     */
   val cssClasses: js.Any = js.native
-  val cssMainRoot: js.Any = js.native
+  val cssContent: String = js.native
+  val cssError: String = js.native
+  val cssHeader: String = js.native
+  val cssRoot: String = js.native
+  val cssTitle: String = js.native
   /**
     * Returns the validation errors count.
     */
@@ -101,6 +105,12 @@ class Question protected ()
   val hasTitleOnLeft: Boolean = js.native
   val hasTitleOnLeftTop: Boolean = js.native
   val hasTitleOnTop: Boolean = js.native
+  /**
+    * Set hideNumber to true to stop showing the number for this question. The question will not be counter
+    * @see visibleIndex
+    * @see titleLocation
+    */
+  var hideNumber: Boolean = js.native
   /**
     * The unique identificator. It is generated automatically.
     */
@@ -243,6 +253,9 @@ class Question protected ()
   var visibleIf: String = js.native
   /**
     * Returns the visible index of the question in the survey. It can be from 0 to all visible questions count - 1
+    * The visibleIndex is -1 if the title is 'hidden' or hideNumber is true
+    * @see titleLocation
+    * @see hideNumber
     */
   val visibleIndex: Double = js.native
   /**
@@ -305,6 +318,12 @@ class Question protected ()
   def getConditionJson(operator: String): js.Any = js.native
   def getConditionJson(operator: String, path: String): js.Any = js.native
   /* protected */ def getCorrectAnswerCount(): Double = js.native
+  /* protected */ def getCssContent(cssClasses: js.Any): String = js.native
+  /* protected */ def getCssError(cssClasses: js.Any): String = js.native
+  /* protected */ def getCssHeader(cssClasses: js.Any): String = js.native
+  /* protected */ def getCssRoot(cssClasses: js.Any): String = js.native
+  /* protected */ def getCssTitle(cssClasses: js.Any): String = js.native
+  /* protected */ def getCssType(): String = js.native
   /* CompleteClass */
   override def getDataFilteredProperties(): js.Any = js.native
   /* CompleteClass */
@@ -344,7 +363,7 @@ class Question protected ()
   /* protected */ def getQuestionComment(): String = js.native
   def getQuestionFromArray(name: String, index: Double): IQuestion = js.native
   /* protected */ def getQuizQuestionCount(): Double = js.native
-  /* protected */ def getRootCss(classes: js.Any): js.Any = js.native
+  /* protected */ def getStartIndex(): String = js.native
   def getSupportedValidators(): js.Array[String] = js.native
   /**
     * Return the title location based on question titleLocation property and QuestionTitleLocation of it's parents
@@ -418,6 +437,11 @@ class Question protected ()
   /* CompleteClass */
   override def runCondition(values: HashTable[_], properties: HashTable[_]): js.Any = js.native
   /* protected */ def runValidators(): js.Array[SurveyError] = js.native
+  /* protected */ def setCssContent(`val`: String): Unit = js.native
+  /* protected */ def setCssError(`val`: String): Unit = js.native
+  /* protected */ def setCssHeader(`val`: String): Unit = js.native
+  /* protected */ def setCssRoot(`val`: String): Unit = js.native
+  /* protected */ def setCssTitle(`val`: String): Unit = js.native
   /* protected */ def setDefaultValue(): Unit = js.native
   /* protected */ def setNewComment(newValue: String): Unit = js.native
   /* protected */ def setNewValue(newValue: js.Any): Unit = js.native
@@ -434,6 +458,7 @@ class Question protected ()
   /* protected */ def updateCssClasses(res: js.Any, css: js.Any): Unit = js.native
   def updateCustomWidget(): Unit = js.native
   /* protected */ def updateDisplayValue(): js.Any = js.native
+  /* protected */ def updateElementCssCore(cssClasses: js.Any): Unit = js.native
   /* protected */ def updateIsAnswered(): Unit = js.native
   def updateValueFromSurvey(newValue: js.Any): js.Any = js.native
   @JSName("updateValueFromSurvey")

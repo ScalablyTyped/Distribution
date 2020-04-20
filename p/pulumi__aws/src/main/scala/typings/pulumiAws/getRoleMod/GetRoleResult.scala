@@ -66,7 +66,6 @@ object GetRoleResult {
     uniqueId: String
   ): GetRoleResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], assumeRolePolicy = assumeRolePolicy.asInstanceOf[js.Any], createDate = createDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maxSessionDuration = maxSessionDuration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], permissionsBoundary = permissionsBoundary.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], uniqueId = uniqueId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRoleResult]
   }
 }

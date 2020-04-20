@@ -1,5 +1,6 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
+import org.scalablytyped.runtime.TopLevel
 import typings.stellarBase.mod.AssetType
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.payment
 import scala.scalajs.js
@@ -21,7 +22,7 @@ object PaymentOperationResponse {
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
-    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with js.Any,
+    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],
     amount: String,
     asset_type: AssetType,
     created_at: String,

@@ -16,7 +16,6 @@ object IFeedCallbackError {
   @scala.inline
   def apply(body: String, number: Double): IFeedCallbackError = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFeedCallbackError]
   }
 }

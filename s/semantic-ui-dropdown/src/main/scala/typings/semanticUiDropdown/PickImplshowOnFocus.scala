@@ -13,7 +13,6 @@ object PickImplshowOnFocus {
   @scala.inline
   def apply(showOnFocus: Boolean): PickImplshowOnFocus = {
     val __obj = js.Dynamic.literal(showOnFocus = showOnFocus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplshowOnFocus]
   }
 }

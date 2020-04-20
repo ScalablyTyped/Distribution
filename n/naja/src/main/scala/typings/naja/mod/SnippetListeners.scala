@@ -13,7 +13,6 @@ object SnippetListeners {
   @scala.inline
   def apply(afterUpdate: SnippetUpdateListener, beforeUpdate: SnippetUpdateListener): SnippetListeners = {
     val __obj = js.Dynamic.literal(afterUpdate = afterUpdate.asInstanceOf[js.Any], beforeUpdate = beforeUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SnippetListeners]
   }
 }

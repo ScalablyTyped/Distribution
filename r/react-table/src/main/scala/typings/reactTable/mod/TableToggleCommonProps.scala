@@ -19,6 +19,7 @@ object TableToggleCommonProps {
     className: String = null,
     indeterminate: js.UndefOr[Boolean] = js.undefined,
     onChange: () => Unit = null,
+    role: String = null,
     style: CSSProperties = null,
     title: String = null
   ): TableToggleCommonProps = {
@@ -27,6 +28,7 @@ object TableToggleCommonProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction0(onChange))
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableToggleCommonProps]

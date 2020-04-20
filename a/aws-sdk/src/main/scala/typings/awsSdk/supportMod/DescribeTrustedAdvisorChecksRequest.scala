@@ -16,7 +16,6 @@ object DescribeTrustedAdvisorChecksRequest {
   @scala.inline
   def apply(language: String): DescribeTrustedAdvisorChecksRequest = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTrustedAdvisorChecksRequest]
   }
 }

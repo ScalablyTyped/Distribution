@@ -2,6 +2,7 @@ package typings.hubot.mod
 
 import typings.express.mod.Express
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.hubot.AnonListener
 import typings.node.NodeJS.Timeout
@@ -82,8 +83,8 @@ class Robot[A /* <: Adapter */] protected () extends js.Object {
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def router(req: Request[ParamsDictionary, _, _], res: typings.expressServeStaticCore.mod.Response[_]): js.Any = js.native
-  def router(req: Request[ParamsDictionary, _, _], res: ServerResponse): js.Any = js.native
+  def router(req: Request[ParamsDictionary, _, _, Query], res: typings.expressServeStaticCore.mod.Response[_]): js.Any = js.native
+  def router(req: Request[ParamsDictionary, _, _, Query], res: ServerResponse): js.Any = js.native
   def router(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[_]): js.Any = js.native
   def router(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   def run(): Unit = js.native

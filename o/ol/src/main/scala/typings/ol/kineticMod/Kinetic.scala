@@ -22,7 +22,6 @@ object Kinetic {
     update: (Double, Double) => Unit
   ): Kinetic = {
     val __obj = js.Dynamic.literal(begin = js.Any.fromFunction0(begin), end = js.Any.fromFunction0(end), getAngle = js.Any.fromFunction0(getAngle), getDistance = js.Any.fromFunction0(getDistance), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[Kinetic]
   }
 }

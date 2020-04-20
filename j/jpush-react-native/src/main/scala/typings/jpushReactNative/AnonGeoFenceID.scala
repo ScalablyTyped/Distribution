@@ -12,7 +12,6 @@ object AnonGeoFenceID {
   @scala.inline
   def apply(geoFenceID: String): AnonGeoFenceID = {
     val __obj = js.Dynamic.literal(geoFenceID = geoFenceID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGeoFenceID]
   }
 }

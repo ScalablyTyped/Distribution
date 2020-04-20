@@ -15,7 +15,7 @@ trait LocationProviderDict extends js.Object {
   /**
   	 * Name of the location provider.
   	 */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Power consumption for this provider, either low (1), medium (2), or high (3).
   	 */
@@ -24,7 +24,7 @@ trait LocationProviderDict extends js.Object {
 
 object LocationProviderDict {
   @scala.inline
-  def apply(accuracy: Int | Double = null, name: String = null, power: Int | Double = null): LocationProviderDict = {
+  def apply(accuracy: Int | Double = null, name: java.lang.String = null, power: Int | Double = null): LocationProviderDict = {
     val __obj = js.Dynamic.literal()
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

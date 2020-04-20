@@ -13,7 +13,6 @@ object AnonRuntime {
   @scala.inline
   def apply(Runtime: Runtime_): AnonRuntime = {
     val __obj = js.Dynamic.literal(Runtime = Runtime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRuntime]
   }
 }

@@ -14,7 +14,6 @@ object Observer {
   @scala.inline
   def apply[Ev](complete: () => js.Any, error: js.Any => js.Any, next: Ev => js.Any): Observer[Ev] = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
-  
     __obj.asInstanceOf[Observer[Ev]]
   }
 }

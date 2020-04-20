@@ -17,7 +17,6 @@ object IOpenAPISchemaValidator {
   @scala.inline
   def apply(validate: Document => OpenAPISchemaValidatorResult): IOpenAPISchemaValidator = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate))
-  
     __obj.asInstanceOf[IOpenAPISchemaValidator]
   }
 }

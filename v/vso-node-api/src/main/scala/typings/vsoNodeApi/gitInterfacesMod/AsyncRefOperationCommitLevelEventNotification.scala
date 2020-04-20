@@ -12,7 +12,6 @@ object AsyncRefOperationCommitLevelEventNotification {
   @scala.inline
   def apply(commitId: String, operationId: Double): AsyncRefOperationCommitLevelEventNotification = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], operationId = operationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsyncRefOperationCommitLevelEventNotification]
   }
 }

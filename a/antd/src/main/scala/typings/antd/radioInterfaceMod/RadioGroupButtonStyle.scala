@@ -12,10 +12,8 @@ trait RadioGroupButtonStyle extends js.Object
 
 object RadioGroupButtonStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def outline: typings.antd.antdStrings.outline = "outline".asInstanceOf[typings.antd.antdStrings.outline]
   @scala.inline
-  def outline: typings.antd.antdStrings.outline = this.cast("outline")
-  @scala.inline
-  def solid: typings.antd.antdStrings.solid = this.cast("solid")
+  def solid: typings.antd.antdStrings.solid = "solid".asInstanceOf[typings.antd.antdStrings.solid]
 }
 

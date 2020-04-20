@@ -96,7 +96,6 @@ object IgUploadMethods {
     widget: () => Unit
   ): IgUploadMethods = {
     val __obj = js.Dynamic.literal(addDataField = js.Any.fromFunction2(addDataField), addDataFields = js.Any.fromFunction2(addDataFields), cancelAll = js.Any.fromFunction0(cancelAll), cancelUpload = js.Any.fromFunction1(cancelUpload), changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction0(changeLocale), clearAll = js.Any.fromFunction0(clearAll), container = js.Any.fromFunction0(container), destroy = js.Any.fromFunction0(destroy), getFileInfo = js.Any.fromFunction1(getFileInfo), getFileInfoData = js.Any.fromFunction0(getFileInfoData), startUpload = js.Any.fromFunction1(startUpload), widget = js.Any.fromFunction0(widget))
-  
     __obj.asInstanceOf[IgUploadMethods]
   }
 }

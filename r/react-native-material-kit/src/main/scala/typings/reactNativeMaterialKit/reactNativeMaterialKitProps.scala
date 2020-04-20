@@ -18,40 +18,40 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeMaterialKitProps {
   @scala.inline
-  def MKButtonProps: MKButtonProperties.type = typings.reactNativeMaterialKit.mod.MKButtonProperties
+  def MKButtonProps: MKButtonProperties.type = MKButtonProperties
   type MKButtonProps = MKButtonProperties
   @scala.inline
-  def MKCheckboxProps: MKCheckboxProperties.type = typings.reactNativeMaterialKit.mod.MKCheckboxProperties
+  def MKCheckboxProps: MKCheckboxProperties.type = MKCheckboxProperties
   type MKCheckboxProps = MKCheckboxProperties
   @scala.inline
-  def MKIconToggleProps: MKIconToggleProperties.type = typings.reactNativeMaterialKit.mod.MKIconToggleProperties
+  def MKIconToggleProps: MKIconToggleProperties.type = MKIconToggleProperties
   type MKIconToggleProps = MKIconToggleProperties
   @scala.inline
-  def MKProgressProps: MKProgressProperties.type = typings.reactNativeMaterialKit.mod.MKProgressProperties
+  def MKProgressProps: MKProgressProperties.type = MKProgressProperties
   type MKProgressProps = MKProgressProperties
   @scala.inline
-  def MKProgressIndeterminateProps: IndeterminateProgressProperties.type = typings.reactNativeMaterialKit.mod.IndeterminateProgressProperties
+  def MKProgressIndeterminateProps: IndeterminateProgressProperties.type = IndeterminateProgressProperties
   type MKProgressIndeterminateProps = IndeterminateProgressProperties
   @scala.inline
-  def MKRadioButtonProps: MKRadioButtonProperties.type = typings.reactNativeMaterialKit.mod.MKRadioButtonProperties
+  def MKRadioButtonProps: MKRadioButtonProperties.type = MKRadioButtonProperties
   type MKRadioButtonProps = MKRadioButtonProperties
   @scala.inline
-  def MKRangeSliderProps: MKRangeSliderProperties.type = typings.reactNativeMaterialKit.mod.MKRangeSliderProperties
+  def MKRangeSliderProps: MKRangeSliderProperties.type = MKRangeSliderProperties
   type MKRangeSliderProps = MKRangeSliderProperties
   @scala.inline
-  def MKRippleProps: MKRippleProperties.type = typings.reactNativeMaterialKit.mod.MKRippleProperties
+  def MKRippleProps: MKRippleProperties.type = MKRippleProperties
   type MKRippleProps = MKRippleProperties
   @scala.inline
-  def MKSliderProps: MKSliderProperties.type = typings.reactNativeMaterialKit.mod.MKSliderProperties
+  def MKSliderProps: MKSliderProperties.type = MKSliderProperties
   type MKSliderProps = MKSliderProperties
   @scala.inline
-  def MKSpinnerProps: MKSpinnerProperties.type = typings.reactNativeMaterialKit.mod.MKSpinnerProperties
+  def MKSpinnerProps: MKSpinnerProperties.type = MKSpinnerProperties
   type MKSpinnerProps = MKSpinnerProperties
   @scala.inline
-  def MKSwitchProps: MKSwitchProperties.type = typings.reactNativeMaterialKit.mod.MKSwitchProperties
+  def MKSwitchProps: MKSwitchProperties.type = MKSwitchProperties
   type MKSwitchProps = MKSwitchProperties
   @scala.inline
-  def MKTextFieldProps: MKTextFieldProperties.type = typings.reactNativeMaterialKit.mod.MKTextFieldProperties
+  def MKTextFieldProps: MKTextFieldProperties.type = MKTextFieldProperties
   type MKTextFieldProps = MKTextFieldProperties
 }
 

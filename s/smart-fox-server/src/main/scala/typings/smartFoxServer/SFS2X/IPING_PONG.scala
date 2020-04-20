@@ -12,7 +12,6 @@ object IPING_PONG {
   @scala.inline
   def apply(lagValue: Double): IPING_PONG = {
     val __obj = js.Dynamic.literal(lagValue = lagValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPING_PONG]
   }
 }

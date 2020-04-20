@@ -54,7 +54,7 @@ object axisDragGizmoMod extends js.Object {
       * Drag distance in babylon units that the gizmo will snap to when dragged (Default: 0)
       */
     var snapDistance: Double = js.native
-    def isEnabled(): Boolean = js.native
+    def isEnabled: Boolean = js.native
     /**
       * If the gizmo is enabled
       */

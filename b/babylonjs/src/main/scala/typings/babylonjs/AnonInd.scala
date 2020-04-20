@@ -13,7 +13,6 @@ object AnonInd {
   @scala.inline
   def apply(ind: Double, sqDistance: Double): AnonInd = {
     val __obj = js.Dynamic.literal(ind = ind.asInstanceOf[js.Any], sqDistance = sqDistance.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInd]
   }
 }

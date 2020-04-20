@@ -41,7 +41,6 @@ object JSTreeStaticDefaultsState {
   @scala.inline
   def apply(events: String, filter: js.Any, key: String, preserve_loaded: Boolean, ttl: js.Any): JSTreeStaticDefaultsState = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], preserve_loaded = preserve_loaded.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSTreeStaticDefaultsState]
   }
 }

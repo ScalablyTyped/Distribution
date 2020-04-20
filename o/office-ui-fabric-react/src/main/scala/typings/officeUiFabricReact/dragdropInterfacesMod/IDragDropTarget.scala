@@ -15,7 +15,6 @@ object IDragDropTarget {
   @scala.inline
   def apply(key: String, options: IDragDropOptions, root: ReactInstance): IDragDropTarget = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDragDropTarget]
   }
 }

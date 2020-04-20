@@ -18,7 +18,6 @@ object RectContext {
   @scala.inline
   def apply(rect: (Double, Double, Double, Double) => Unit): RectContext = {
     val __obj = js.Dynamic.literal(rect = js.Any.fromFunction4(rect))
-  
     __obj.asInstanceOf[RectContext]
   }
 }

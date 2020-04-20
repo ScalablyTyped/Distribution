@@ -12,7 +12,6 @@ object AnonGravity {
   @scala.inline
   def apply(gravity: js.Array[Double]): AnonGravity = {
     val __obj = js.Dynamic.literal(gravity = gravity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGravity]
   }
 }

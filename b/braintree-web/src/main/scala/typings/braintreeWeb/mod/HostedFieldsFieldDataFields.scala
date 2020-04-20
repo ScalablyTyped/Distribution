@@ -25,7 +25,6 @@ object HostedFieldsFieldDataFields {
     postalCode: HostedFieldsHostedFieldsFieldData
   ): HostedFieldsFieldDataFields = {
     val __obj = js.Dynamic.literal(cvv = cvv.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], expirationMonth = expirationMonth.asInstanceOf[js.Any], expirationYear = expirationYear.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HostedFieldsFieldDataFields]
   }
 }

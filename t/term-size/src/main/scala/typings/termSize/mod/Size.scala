@@ -13,7 +13,6 @@ object Size {
   @scala.inline
   def apply(columns: Double, rows: Double): Size = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Size]
   }
 }

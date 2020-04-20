@@ -12,7 +12,6 @@ object ReposListPullRequestsAssociatedWithCommitResponseItemLinksIssue {
   @scala.inline
   def apply(href: String): ReposListPullRequestsAssociatedWithCommitResponseItemLinksIssue = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposListPullRequestsAssociatedWithCommitResponseItemLinksIssue]
   }
 }

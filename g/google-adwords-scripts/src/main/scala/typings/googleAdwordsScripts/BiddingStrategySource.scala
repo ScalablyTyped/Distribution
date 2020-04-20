@@ -13,12 +13,10 @@ trait BiddingStrategySource extends js.Object
 
 object BiddingStrategySource {
   @scala.inline
-  def ADGROUP: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ADGROUP = this.cast("ADGROUP")
+  def ADGROUP: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ADGROUP = "ADGROUP".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ADGROUP]
   @scala.inline
-  def CAMPAIGN: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CAMPAIGN = this.cast("CAMPAIGN")
+  def CAMPAIGN: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CAMPAIGN = "CAMPAIGN".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CAMPAIGN]
   @scala.inline
-  def CRITERION: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CRITERION = this.cast("CRITERION")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def CRITERION: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CRITERION = "CRITERION".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CRITERION]
 }
 

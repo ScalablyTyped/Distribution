@@ -15,7 +15,6 @@ object CanActivate {
     canActivate: (ActivatedRouteSnapshot, RouterStateSnapshot) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
   ): CanActivate = {
     val __obj = js.Dynamic.literal(canActivate = js.Any.fromFunction2(canActivate))
-  
     __obj.asInstanceOf[CanActivate]
   }
 }

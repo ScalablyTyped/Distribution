@@ -49,11 +49,12 @@ object AnonFULFILL {
     if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonFULFILL[
-  TTriggerMetaCreator, 
-  TRequestMetaCreator, 
-  TSuccessMetaCreator, 
-  TFailureMetaCreator, 
-  TFulfillMetaCreator]]
+      TTriggerMetaCreator, 
+      TRequestMetaCreator, 
+      TSuccessMetaCreator, 
+      TFailureMetaCreator, 
+      TFulfillMetaCreator
+    ]]
   }
 }
 

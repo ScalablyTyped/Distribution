@@ -3,6 +3,7 @@ package typings.epilogue.mod
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.sequelize.mod.DataTypeAbstract
 import typings.sequelize.mod.DataTypeArray
 import typings.sequelize.mod.DataTypeBigInt
@@ -44,6 +45,6 @@ class ListController () extends BaseController {
     `type`: DataTypeAbstract | DataTypeString | DataTypeChar | DataTypeText | DataTypeNumber | DataTypeInteger | DataTypeBigInt | DataTypeFloat | DataTypeTime | DataTypeDate | DataTypeDateOnly | DataTypeBoolean | DataTypeNow | DataTypeBlob | DataTypeDecimal | DataTypeUUID | DataTypeUUIDv1 | DataTypeUUIDv4 | DataTypeHStore | DataTypeJSONType | DataTypeJSONB | DataTypeVirtual | DataTypeArray | DataTypeEnum | DataTypeRange | DataTypeReal | DataTypeDouble | DataTypeGeometry,
     sequelize: Sequelize
   ): js.Any = js.native
-  def fetch(req: Request_[ParamsDictionary], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
+  def fetch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
 }
 

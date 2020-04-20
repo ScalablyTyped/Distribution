@@ -13,7 +13,6 @@ object State {
   @scala.inline
   def apply(isDisabled: Boolean): State = {
     val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

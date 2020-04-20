@@ -16,7 +16,6 @@ object RecvFromInfo {
   @scala.inline
   def apply(address: String, data: ArrayBuffer, port: Double, resultCode: Double): RecvFromInfo = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecvFromInfo]
   }
 }

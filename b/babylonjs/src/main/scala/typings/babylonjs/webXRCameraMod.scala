@@ -41,7 +41,7 @@ object webXRCameraMod extends js.Object {
       * Return the user's height, unrelated to the current ground.
       * This will be the y position of this camera, when ground level is 0.
       */
-    def realWorldHeight(): Double = js.native
+    def realWorldHeight: Double = js.native
     /**
       * Sets this camera's transformation based on a non-vr camera
       * @param otherCamera the non-vr camera to copy the transformation from

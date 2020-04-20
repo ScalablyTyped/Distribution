@@ -22,18 +22,16 @@ trait XlTrendlineType extends js.Object
 
 object XlTrendlineType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlExponential: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlExponential: `5` = this.cast(5)
+  def xlLinear: `-4132` = -4132.asInstanceOf[`-4132`]
   @scala.inline
-  def xlLinear: `-4132` = this.cast(-4132)
+  def xlLogarithmic: `-4133` = -4133.asInstanceOf[`-4133`]
   @scala.inline
-  def xlLogarithmic: `-4133` = this.cast(-4133)
+  def xlMovingAvg: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlMovingAvg: `6` = this.cast(6)
+  def xlPolynomial: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlPolynomial: `3` = this.cast(3)
-  @scala.inline
-  def xlPower: `4` = this.cast(4)
+  def xlPower: `4` = 4.asInstanceOf[`4`]
 }
 

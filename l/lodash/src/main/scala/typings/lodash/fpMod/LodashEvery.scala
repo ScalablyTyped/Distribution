@@ -23,7 +23,7 @@ trait LodashEvery extends js.Object {
     collection: T
   ): Boolean = js.native
   def apply[T](predicate: ValueIterateeCustom[T, Boolean], collection: List[T]): Boolean = js.native
-  def apply[T /* <: js.Object */](predicate: __): LodashEvery2x2[T] = js.native
+  def apply[T](predicate: __): LodashEvery1x2[T] = js.native
   def apply[T /* <: js.Object */](predicate: __, collection: T): LodashEvery2x2[T] = js.native
   def apply[T](predicate: __, collection: List[T]): LodashEvery1x2[T] = js.native
 }

@@ -16,7 +16,6 @@ object EvaluatedFileACL {
   @scala.inline
   def apply(owner: String, ownerGroup: String, permissions: Double, read: Boolean, write: Boolean): EvaluatedFileACL = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ownerGroup = ownerGroup.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EvaluatedFileACL]
   }
 }

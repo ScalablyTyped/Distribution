@@ -57,7 +57,6 @@ object AnonEpicDiscussions {
     Groups: Instantiable0[Groups]
   ): AnonEpicDiscussions = {
     val __obj = js.Dynamic.literal(EpicDiscussions = EpicDiscussions.asInstanceOf[js.Any], EpicIssues = EpicIssues.asInstanceOf[js.Any], EpicNotes = EpicNotes.asInstanceOf[js.Any], Epics = Epics.asInstanceOf[js.Any], GroupAccessRequests = GroupAccessRequests.asInstanceOf[js.Any], GroupBadges = GroupBadges.asInstanceOf[js.Any], GroupCustomAttributes = GroupCustomAttributes.asInstanceOf[js.Any], GroupIssueBoards = GroupIssueBoards.asInstanceOf[js.Any], GroupLabels = GroupLabels.asInstanceOf[js.Any], GroupMembers = GroupMembers.asInstanceOf[js.Any], GroupMilestones = GroupMilestones.asInstanceOf[js.Any], GroupProjects = GroupProjects.asInstanceOf[js.Any], GroupVariables = GroupVariables.asInstanceOf[js.Any], Groups = Groups.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEpicDiscussions]
   }
 }

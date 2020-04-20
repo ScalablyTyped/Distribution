@@ -16,7 +16,6 @@ object AnonEmptyLeft {
   @scala.inline
   def apply[Right /* <: js.Array[_] */, Left /* <: js.Array[_] */](emptyLeft: Right, infiniteLeft: AnonERROR, multiLeft: js.Any, singleLeft: Prepend[Right, _]): AnonEmptyLeft[Right, Left] = {
     val __obj = js.Dynamic.literal(emptyLeft = emptyLeft.asInstanceOf[js.Any], infiniteLeft = infiniteLeft.asInstanceOf[js.Any], multiLeft = multiLeft.asInstanceOf[js.Any], singleLeft = singleLeft.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmptyLeft[Right, Left]]
   }
 }

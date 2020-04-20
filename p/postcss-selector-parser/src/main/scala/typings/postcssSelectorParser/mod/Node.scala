@@ -28,40 +28,38 @@ trait Node extends js.Object
 
 object Node {
   @scala.inline
-  def attribute: typings.postcssSelectorParser.postcssSelectorParserStrings.attribute = this.cast("attribute")
+  def attribute: typings.postcssSelectorParser.postcssSelectorParserStrings.attribute = "attribute".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.attribute]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.postcssSelectorParser.postcssSelectorParserStrings.error = "error".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.error]
   @scala.inline
-  def error: typings.postcssSelectorParser.postcssSelectorParserStrings.error = this.cast("error")
+  def getQuotedValue: typings.postcssSelectorParser.postcssSelectorParserStrings.getQuotedValue = "getQuotedValue".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.getQuotedValue]
   @scala.inline
-  def getQuotedValue: typings.postcssSelectorParser.postcssSelectorParserStrings.getQuotedValue = this.cast("getQuotedValue")
+  def insensitive: typings.postcssSelectorParser.postcssSelectorParserStrings.insensitive = "insensitive".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.insensitive]
   @scala.inline
-  def insensitive: typings.postcssSelectorParser.postcssSelectorParserStrings.insensitive = this.cast("insensitive")
+  def insensitiveFlag: typings.postcssSelectorParser.postcssSelectorParserStrings.insensitiveFlag = "insensitiveFlag".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.insensitiveFlag]
   @scala.inline
-  def insensitiveFlag: typings.postcssSelectorParser.postcssSelectorParserStrings.insensitiveFlag = this.cast("insensitiveFlag")
+  def nodeAt: typings.postcssSelectorParser.postcssSelectorParserStrings.nodeAt = "nodeAt".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.nodeAt]
   @scala.inline
-  def nodeAt: typings.postcssSelectorParser.postcssSelectorParserStrings.nodeAt = this.cast("nodeAt")
+  def offsetOf: typings.postcssSelectorParser.postcssSelectorParserStrings.offsetOf = "offsetOf".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.offsetOf]
   @scala.inline
-  def offsetOf: typings.postcssSelectorParser.postcssSelectorParserStrings.offsetOf = this.cast("offsetOf")
+  def operator: typings.postcssSelectorParser.postcssSelectorParserStrings.operator = "operator".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.operator]
   @scala.inline
-  def operator: typings.postcssSelectorParser.postcssSelectorParserStrings.operator = this.cast("operator")
+  def preferredQuoteMark: typings.postcssSelectorParser.postcssSelectorParserStrings.preferredQuoteMark = "preferredQuoteMark".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.preferredQuoteMark]
   @scala.inline
-  def preferredQuoteMark: typings.postcssSelectorParser.postcssSelectorParserStrings.preferredQuoteMark = this.cast("preferredQuoteMark")
+  def qualifiedAttribute: typings.postcssSelectorParser.postcssSelectorParserStrings.qualifiedAttribute = "qualifiedAttribute".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.qualifiedAttribute]
   @scala.inline
-  def qualifiedAttribute: typings.postcssSelectorParser.postcssSelectorParserStrings.qualifiedAttribute = this.cast("qualifiedAttribute")
+  def quoteMark: typings.postcssSelectorParser.postcssSelectorParserStrings.quoteMark = "quoteMark".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.quoteMark]
   @scala.inline
-  def quoteMark: typings.postcssSelectorParser.postcssSelectorParserStrings.quoteMark = this.cast("quoteMark")
+  def quoted: typings.postcssSelectorParser.postcssSelectorParserStrings.quoted = "quoted".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.quoted]
   @scala.inline
-  def quoted: typings.postcssSelectorParser.postcssSelectorParserStrings.quoted = this.cast("quoted")
+  def raws: typings.postcssSelectorParser.postcssSelectorParserStrings.raws = "raws".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.raws]
   @scala.inline
-  def raws: typings.postcssSelectorParser.postcssSelectorParserStrings.raws = this.cast("raws")
+  def setValue: typings.postcssSelectorParser.postcssSelectorParserStrings.setValue = "setValue".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.setValue]
   @scala.inline
-  def setValue: typings.postcssSelectorParser.postcssSelectorParserStrings.setValue = this.cast("setValue")
+  def smartQuoteMark: typings.postcssSelectorParser.postcssSelectorParserStrings.smartQuoteMark = "smartQuoteMark".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.smartQuoteMark]
   @scala.inline
-  def smartQuoteMark: typings.postcssSelectorParser.postcssSelectorParserStrings.smartQuoteMark = this.cast("smartQuoteMark")
+  def spaces: typings.postcssSelectorParser.postcssSelectorParserStrings.spaces = "spaces".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.spaces]
   @scala.inline
-  def spaces: typings.postcssSelectorParser.postcssSelectorParserStrings.spaces = this.cast("spaces")
-  @scala.inline
-  def `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.`type` = this.cast("type")
+  def `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.`type` = "type".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.`type`]
 }
 

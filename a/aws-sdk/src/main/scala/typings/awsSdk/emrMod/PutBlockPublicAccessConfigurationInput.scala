@@ -16,7 +16,6 @@ object PutBlockPublicAccessConfigurationInput {
   @scala.inline
   def apply(BlockPublicAccessConfiguration: BlockPublicAccessConfiguration): PutBlockPublicAccessConfigurationInput = {
     val __obj = js.Dynamic.literal(BlockPublicAccessConfiguration = BlockPublicAccessConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutBlockPublicAccessConfigurationInput]
   }
 }

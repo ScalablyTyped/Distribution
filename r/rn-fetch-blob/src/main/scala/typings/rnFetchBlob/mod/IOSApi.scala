@@ -22,7 +22,6 @@ object IOSApi {
   @scala.inline
   def apply(openDocument: String => Unit, previewDocument: String => Unit): IOSApi = {
     val __obj = js.Dynamic.literal(openDocument = js.Any.fromFunction1(openDocument), previewDocument = js.Any.fromFunction1(previewDocument))
-  
     __obj.asInstanceOf[IOSApi]
   }
 }

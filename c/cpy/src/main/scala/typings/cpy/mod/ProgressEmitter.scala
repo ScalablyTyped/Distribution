@@ -14,7 +14,6 @@ object ProgressEmitter {
   @scala.inline
   def apply(on: (progress, js.Function1[/* progress */ ProgressData, Unit]) => js.Promise[js.Array[String]]): ProgressEmitter = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
-  
     __obj.asInstanceOf[ProgressEmitter]
   }
 }

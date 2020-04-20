@@ -12,7 +12,6 @@ object AnonNormal {
   @scala.inline
   def apply(normal: AnonMap): AnonNormal = {
     val __obj = js.Dynamic.literal(normal = normal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNormal]
   }
 }

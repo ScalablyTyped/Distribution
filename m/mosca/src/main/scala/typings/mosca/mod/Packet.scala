@@ -16,7 +16,6 @@ object Packet {
   @scala.inline
   def apply(messageId: String, payload: js.Any, qos: Double, retain: Boolean, topic: String): Packet = {
     val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], retain = retain.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Packet]
   }
 }

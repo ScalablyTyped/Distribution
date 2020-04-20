@@ -35,28 +35,28 @@ class ODataEntity protected () extends Element {
     *
     * In version 8.0.0: introduced
     */
-  def attributes(): IList[ODataAttribute] = js.native
-  def containerAsConsumedODataService(): ConsumedODataService = js.native
-  def entity(): IEntity = js.native
+  def attributes: IList[ODataAttribute] = js.native
+  def containerAsConsumedODataService: ConsumedODataService = js.native
+  def entity: IEntity = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String = js.native
+  def entityQualifiedName: String = js.native
   /**
     * In version 7.19.0: introduced
     */
-  def entitySet(): String = js.native
+  def entitySet: String = js.native
   def entitySet(newValue: String): js.Any = js.native
   /**
     * In version 7.22.0: introduced
     */
-  def keyNames(): IList[String] = js.native
-  def name(): String = js.native
+  def keyNames: IList[String] = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.22.0: introduced
     */
-  def navigationProperties(): IList[ODataNavigationProperty] = js.native
+  def navigationProperties: IList[ODataNavigationProperty] = js.native
 }
 
 /* static members */

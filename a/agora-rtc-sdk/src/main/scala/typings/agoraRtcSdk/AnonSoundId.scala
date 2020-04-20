@@ -13,7 +13,6 @@ object AnonSoundId {
   @scala.inline
   def apply(soundId: Double, volume: Double): AnonSoundId = {
     val __obj = js.Dynamic.literal(soundId = soundId.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSoundId]
   }
 }

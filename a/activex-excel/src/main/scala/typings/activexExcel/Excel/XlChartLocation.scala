@@ -16,12 +16,10 @@ trait XlChartLocation extends js.Object
 
 object XlChartLocation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlLocationAsNewSheet: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlLocationAsNewSheet: `1` = this.cast(1)
+  def xlLocationAsObject: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlLocationAsObject: `2` = this.cast(2)
-  @scala.inline
-  def xlLocationAutomatic: `3` = this.cast(3)
+  def xlLocationAutomatic: `3` = 3.asInstanceOf[`3`]
 }
 

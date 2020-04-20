@@ -22,7 +22,6 @@ object SkEnumSkPaintStyleFillSkP {
     values: js.Array[SkPaintStyle]
   ): SkEnumSkPaintStyleFillSkP = {
     val __obj = js.Dynamic.literal(Fill = Fill.asInstanceOf[js.Any], Stroke = Stroke.asInstanceOf[js.Any], StrokeAndFill = StrokeAndFill.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkPaintStyleFillSkP]
   }
 }

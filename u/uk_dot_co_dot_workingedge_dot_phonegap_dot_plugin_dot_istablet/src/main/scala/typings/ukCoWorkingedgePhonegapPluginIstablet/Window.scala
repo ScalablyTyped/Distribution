@@ -16,7 +16,6 @@ object Window {
   @scala.inline
   def apply(isTablet: Boolean): Window = {
     val __obj = js.Dynamic.literal(isTablet = isTablet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

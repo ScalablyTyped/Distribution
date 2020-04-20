@@ -24,7 +24,6 @@ object InsertOneWriteOpResult {
     result: AnonOk
   ): InsertOneWriteOpResult[TSchema] = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], insertedCount = insertedCount.asInstanceOf[js.Any], insertedId = insertedId.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsertOneWriteOpResult[TSchema]]
   }
 }

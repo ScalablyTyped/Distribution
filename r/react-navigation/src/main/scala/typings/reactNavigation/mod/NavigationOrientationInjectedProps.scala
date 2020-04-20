@@ -12,7 +12,6 @@ object NavigationOrientationInjectedProps {
   @scala.inline
   def apply(isLandscape: Boolean): NavigationOrientationInjectedProps = {
     val __obj = js.Dynamic.literal(isLandscape = isLandscape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigationOrientationInjectedProps]
   }
 }

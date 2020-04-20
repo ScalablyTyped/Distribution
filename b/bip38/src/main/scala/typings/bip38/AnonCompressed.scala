@@ -14,7 +14,6 @@ object AnonCompressed {
   @scala.inline
   def apply(compressed: Boolean, privateKey: Buffer): AnonCompressed = {
     val __obj = js.Dynamic.literal(compressed = compressed.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCompressed]
   }
 }

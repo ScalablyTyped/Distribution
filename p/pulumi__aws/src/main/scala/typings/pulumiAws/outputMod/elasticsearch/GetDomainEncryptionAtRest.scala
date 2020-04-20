@@ -20,7 +20,6 @@ object GetDomainEncryptionAtRest {
   @scala.inline
   def apply(enabled: Boolean, kmsKeyId: String): GetDomainEncryptionAtRest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], kmsKeyId = kmsKeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainEncryptionAtRest]
   }
 }

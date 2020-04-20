@@ -12,7 +12,6 @@ object ParseOptions {
   @scala.inline
   def apply(includeComments: Boolean): ParseOptions = {
     val __obj = js.Dynamic.literal(includeComments = includeComments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParseOptions]
   }
 }

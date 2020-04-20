@@ -19,7 +19,6 @@ object TypeofMenuBarItem {
   @scala.inline
   def apply(_MenuBarItemMixin: Instantiable0[MenuBarItemMixin]): TypeofMenuBarItem = {
     val __obj = js.Dynamic.literal(_MenuBarItemMixin = _MenuBarItemMixin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofMenuBarItem]
   }
 }

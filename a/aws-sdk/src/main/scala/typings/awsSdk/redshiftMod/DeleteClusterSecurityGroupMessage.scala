@@ -16,7 +16,6 @@ object DeleteClusterSecurityGroupMessage {
   @scala.inline
   def apply(ClusterSecurityGroupName: String): DeleteClusterSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(ClusterSecurityGroupName = ClusterSecurityGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteClusterSecurityGroupMessage]
   }
 }

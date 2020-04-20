@@ -20,7 +20,6 @@ object CPUInfo {
     used_cpu_user_children: String
   ): CPUInfo = {
     val __obj = js.Dynamic.literal(used_cpu_sys = used_cpu_sys.asInstanceOf[js.Any], used_cpu_sys_children = used_cpu_sys_children.asInstanceOf[js.Any], used_cpu_user = used_cpu_user.asInstanceOf[js.Any], used_cpu_user_children = used_cpu_user_children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CPUInfo]
   }
 }

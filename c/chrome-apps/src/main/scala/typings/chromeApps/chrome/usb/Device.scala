@@ -49,7 +49,6 @@ object Device {
     version: integer
   ): Device = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], manufacturerName = manufacturerName.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], productName = productName.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any], vendorId = vendorId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Device]
   }
 }

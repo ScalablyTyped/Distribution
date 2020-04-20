@@ -15,7 +15,6 @@ object AnonChildren {
   @scala.inline
   def apply(children: (StandardEngine, DebugEngine, Boolean) => ReactNode): AnonChildren = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction3(children))
-  
     __obj.asInstanceOf[AnonChildren]
   }
 }

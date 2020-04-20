@@ -19,7 +19,6 @@ object DynatreeNamespace {
     version: Double
   ): DynatreeNamespace = {
     val __obj = js.Dynamic.literal(getNode = js.Any.fromFunction1(getNode), getPersistData = js.Any.fromFunction2(getPersistData), version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DynatreeNamespace]
   }
 }

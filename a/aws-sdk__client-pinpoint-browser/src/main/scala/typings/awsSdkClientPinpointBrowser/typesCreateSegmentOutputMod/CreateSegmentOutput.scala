@@ -23,7 +23,6 @@ object CreateSegmentOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, SegmentResponse: UnmarshalledSegmentResponse): CreateSegmentOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SegmentResponse = SegmentResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSegmentOutput]
   }
 }

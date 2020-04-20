@@ -16,12 +16,10 @@ trait Theme extends js.Object
 
 object Theme {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dark: typings.jupyterlabTerminal.jupyterlabTerminalStrings.dark = "dark".asInstanceOf[typings.jupyterlabTerminal.jupyterlabTerminalStrings.dark]
   @scala.inline
-  def dark: typings.jupyterlabTerminal.jupyterlabTerminalStrings.dark = this.cast("dark")
+  def inherit: typings.jupyterlabTerminal.jupyterlabTerminalStrings.inherit = "inherit".asInstanceOf[typings.jupyterlabTerminal.jupyterlabTerminalStrings.inherit]
   @scala.inline
-  def inherit: typings.jupyterlabTerminal.jupyterlabTerminalStrings.inherit = this.cast("inherit")
-  @scala.inline
-  def light: typings.jupyterlabTerminal.jupyterlabTerminalStrings.light = this.cast("light")
+  def light: typings.jupyterlabTerminal.jupyterlabTerminalStrings.light = "light".asInstanceOf[typings.jupyterlabTerminal.jupyterlabTerminalStrings.light]
 }
 

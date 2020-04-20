@@ -33,7 +33,6 @@ object IUserMultiFieldExpression {
     NotIncludes: js.Any => IExpression
   ): IUserMultiFieldExpression = {
     val __obj = js.Dynamic.literal(EqualTo = js.Any.fromFunction1(EqualTo), Includes = js.Any.fromFunction1(Includes), IncludesSuchItemThat = js.Any.fromFunction0(IncludesSuchItemThat), IsNotNull = js.Any.fromFunction0(IsNotNull), IsNull = js.Any.fromFunction0(IsNull), NotEqualTo = js.Any.fromFunction1(NotEqualTo), NotIncludes = js.Any.fromFunction1(NotIncludes))
-  
     __obj.asInstanceOf[IUserMultiFieldExpression]
   }
 }

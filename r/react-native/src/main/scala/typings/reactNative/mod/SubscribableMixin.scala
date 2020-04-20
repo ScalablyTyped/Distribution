@@ -25,7 +25,6 @@ object SubscribableMixin {
   @scala.inline
   def apply(addListenerOn: (js.Any, String, js.Function0[_], js.Any) => Unit): SubscribableMixin = {
     val __obj = js.Dynamic.literal(addListenerOn = js.Any.fromFunction4(addListenerOn))
-  
     __obj.asInstanceOf[SubscribableMixin]
   }
 }

@@ -22,13 +22,13 @@ class DataSetNumericConstraint protected () extends DataSetParameterConstraint {
   ) = this()
   @JSName("model")
   var model_FDataSetNumericConstraint: IModel = js.native
-  def applyBegin(): Boolean = js.native
+  def applyBegin: Boolean = js.native
   def applyBegin(newValue: Boolean): js.Any = js.native
-  def applyEnd(): Boolean = js.native
+  def applyEnd: Boolean = js.native
   def applyEnd(newValue: Boolean): js.Any = js.native
-  def begin(): String = js.native
+  def begin: String = js.native
   def begin(newValue: String): js.Any = js.native
-  def end(): String = js.native
+  def end: String = js.native
   def end(newValue: String): js.Any = js.native
 }
 

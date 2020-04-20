@@ -24,34 +24,32 @@ trait PluginName extends js.Object
 
 object PluginName {
   @scala.inline
-  def asyncGenerators: typings.babylon.babylonStrings.asyncGenerators = this.cast("asyncGenerators")
+  def asyncGenerators: typings.babylon.babylonStrings.asyncGenerators = "asyncGenerators".asInstanceOf[typings.babylon.babylonStrings.asyncGenerators]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def classConstructorCall: typings.babylon.babylonStrings.classConstructorCall = "classConstructorCall".asInstanceOf[typings.babylon.babylonStrings.classConstructorCall]
   @scala.inline
-  def classConstructorCall: typings.babylon.babylonStrings.classConstructorCall = this.cast("classConstructorCall")
+  def classProperties: typings.babylon.babylonStrings.classProperties = "classProperties".asInstanceOf[typings.babylon.babylonStrings.classProperties]
   @scala.inline
-  def classProperties: typings.babylon.babylonStrings.classProperties = this.cast("classProperties")
+  def decorators: typings.babylon.babylonStrings.decorators = "decorators".asInstanceOf[typings.babylon.babylonStrings.decorators]
   @scala.inline
-  def decorators: typings.babylon.babylonStrings.decorators = this.cast("decorators")
+  def doExpressions: typings.babylon.babylonStrings.doExpressions = "doExpressions".asInstanceOf[typings.babylon.babylonStrings.doExpressions]
   @scala.inline
-  def doExpressions: typings.babylon.babylonStrings.doExpressions = this.cast("doExpressions")
+  def dynamicImport: typings.babylon.babylonStrings.dynamicImport = "dynamicImport".asInstanceOf[typings.babylon.babylonStrings.dynamicImport]
   @scala.inline
-  def dynamicImport: typings.babylon.babylonStrings.dynamicImport = this.cast("dynamicImport")
+  def estree: typings.babylon.babylonStrings.estree = "estree".asInstanceOf[typings.babylon.babylonStrings.estree]
   @scala.inline
-  def estree: typings.babylon.babylonStrings.estree = this.cast("estree")
+  def exportExtensions: typings.babylon.babylonStrings.exportExtensions = "exportExtensions".asInstanceOf[typings.babylon.babylonStrings.exportExtensions]
   @scala.inline
-  def exportExtensions: typings.babylon.babylonStrings.exportExtensions = this.cast("exportExtensions")
+  def flow: typings.babylon.babylonStrings.flow = "flow".asInstanceOf[typings.babylon.babylonStrings.flow]
   @scala.inline
-  def flow: typings.babylon.babylonStrings.flow = this.cast("flow")
+  def functionBind: typings.babylon.babylonStrings.functionBind = "functionBind".asInstanceOf[typings.babylon.babylonStrings.functionBind]
   @scala.inline
-  def functionBind: typings.babylon.babylonStrings.functionBind = this.cast("functionBind")
+  def functionSent: typings.babylon.babylonStrings.functionSent = "functionSent".asInstanceOf[typings.babylon.babylonStrings.functionSent]
   @scala.inline
-  def functionSent: typings.babylon.babylonStrings.functionSent = this.cast("functionSent")
+  def jsx: typings.babylon.babylonStrings.jsx = "jsx".asInstanceOf[typings.babylon.babylonStrings.jsx]
   @scala.inline
-  def jsx: typings.babylon.babylonStrings.jsx = this.cast("jsx")
+  def objectRestSpread: typings.babylon.babylonStrings.objectRestSpread = "objectRestSpread".asInstanceOf[typings.babylon.babylonStrings.objectRestSpread]
   @scala.inline
-  def objectRestSpread: typings.babylon.babylonStrings.objectRestSpread = this.cast("objectRestSpread")
-  @scala.inline
-  def typescript: typings.babylon.babylonStrings.typescript = this.cast("typescript")
+  def typescript: typings.babylon.babylonStrings.typescript = "typescript".asInstanceOf[typings.babylon.babylonStrings.typescript]
 }
 

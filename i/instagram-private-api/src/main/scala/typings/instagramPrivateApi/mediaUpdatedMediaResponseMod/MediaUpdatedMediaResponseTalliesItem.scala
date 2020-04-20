@@ -14,7 +14,6 @@ object MediaUpdatedMediaResponseTalliesItem {
   @scala.inline
   def apply(count: Double, font_size: Double, text: String): MediaUpdatedMediaResponseTalliesItem = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], font_size = font_size.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaUpdatedMediaResponseTalliesItem]
   }
 }

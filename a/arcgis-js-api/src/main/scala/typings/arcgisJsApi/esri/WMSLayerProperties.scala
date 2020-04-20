@@ -69,7 +69,7 @@ trait WMSLayerProperties
     */
   var imageMaxHeight: js.UndefOr[Double] = js.undefined
   /**
-    * Indicates the maximum height of the image exported by the service.
+    * Indicates the maximum width of the image exported by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageMaxWidth)
     *

@@ -14,14 +14,12 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.browserSync.browserSyncStrings.debug = "debug".asInstanceOf[typings.browserSync.browserSyncStrings.debug]
   @scala.inline
-  def debug: typings.browserSync.browserSyncStrings.debug = this.cast("debug")
+  def info: typings.browserSync.browserSyncStrings.info = "info".asInstanceOf[typings.browserSync.browserSyncStrings.info]
   @scala.inline
-  def info: typings.browserSync.browserSyncStrings.info = this.cast("info")
+  def silent: typings.browserSync.browserSyncStrings.silent = "silent".asInstanceOf[typings.browserSync.browserSyncStrings.silent]
   @scala.inline
-  def silent: typings.browserSync.browserSyncStrings.silent = this.cast("silent")
-  @scala.inline
-  def warn: typings.browserSync.browserSyncStrings.warn = this.cast("warn")
+  def warn: typings.browserSync.browserSyncStrings.warn = "warn".asInstanceOf[typings.browserSync.browserSyncStrings.warn]
 }
 

@@ -14,10 +14,8 @@ trait XlFileAccess extends js.Object
 
 object XlFileAccess {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlReadOnly: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlReadOnly: `3` = this.cast(3)
-  @scala.inline
-  def xlReadWrite: `2` = this.cast(2)
+  def xlReadWrite: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -13,7 +13,6 @@ object GetLaunchTemplateHibernationOption {
   @scala.inline
   def apply(configured: Boolean): GetLaunchTemplateHibernationOption = {
     val __obj = js.Dynamic.literal(configured = configured.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchTemplateHibernationOption]
   }
 }

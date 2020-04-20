@@ -13,7 +13,6 @@ object AnonRef {
   @scala.inline
   def apply(ref: RefObject[_]): AnonRef = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRef]
   }
 }

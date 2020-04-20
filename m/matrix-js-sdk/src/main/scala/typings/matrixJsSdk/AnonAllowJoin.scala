@@ -14,7 +14,6 @@ object AnonAllowJoin {
   @scala.inline
   def apply(allowJoin: Boolean, allowRead: Boolean): AnonAllowJoin = {
     val __obj = js.Dynamic.literal(allowJoin = allowJoin.asInstanceOf[js.Any], allowRead = allowRead.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllowJoin]
   }
 }

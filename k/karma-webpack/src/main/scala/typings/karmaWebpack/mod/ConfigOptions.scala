@@ -14,7 +14,6 @@ object ConfigOptions {
   @scala.inline
   def apply(webpack: Configuration, webpackMiddleware: KarmaWebpackMiddlewareOptions): ConfigOptions = {
     val __obj = js.Dynamic.literal(webpack = webpack.asInstanceOf[js.Any], webpackMiddleware = webpackMiddleware.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigOptions]
   }
 }

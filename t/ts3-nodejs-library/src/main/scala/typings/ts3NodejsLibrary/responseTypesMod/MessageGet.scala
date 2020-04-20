@@ -16,7 +16,6 @@ object MessageGet {
   @scala.inline
   def apply(cluid: String, message: String, msgid: Double, subject: String, timestamp: Double): MessageGet = {
     val __obj = js.Dynamic.literal(cluid = cluid.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], msgid = msgid.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageGet]
   }
 }

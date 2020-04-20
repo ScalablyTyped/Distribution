@@ -12,7 +12,6 @@ object AnonFlex {
   @scala.inline
   def apply(flex: Double): AnonFlex = {
     val __obj = js.Dynamic.literal(flex = flex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlex]
   }
 }

@@ -25,7 +25,6 @@ object EnvironmentVars {
   @scala.inline
   def apply(slot: HTMLElement, videoSlot: HTMLVideoElement, videoSlotCanAutoPlay: Boolean): EnvironmentVars = {
     val __obj = js.Dynamic.literal(slot = slot.asInstanceOf[js.Any], videoSlot = videoSlot.asInstanceOf[js.Any], videoSlotCanAutoPlay = videoSlotCanAutoPlay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnvironmentVars]
   }
 }

@@ -12,7 +12,6 @@ object AnonRegister {
   @scala.inline
   def apply(register: AnonDictkey => Unit): AnonRegister = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
-  
     __obj.asInstanceOf[AnonRegister]
   }
 }

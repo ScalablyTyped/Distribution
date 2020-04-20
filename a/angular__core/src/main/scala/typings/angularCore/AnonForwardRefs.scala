@@ -24,7 +24,6 @@ object AnonForwardRefs {
     typedNodes: Set[ParameterDeclaration | PropertyDeclaration | AsExpression]
   ): AnonForwardRefs = {
     val __obj = js.Dynamic.literal(forwardRefs = forwardRefs.asInstanceOf[js.Any], methodCalls = methodCalls.asInstanceOf[js.Any], typedNodes = typedNodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonForwardRefs]
   }
 }

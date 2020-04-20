@@ -12,7 +12,6 @@ object IParentOnMap {
   @scala.inline
   def apply(getMap: () => Map_): IParentOnMap = {
     val __obj = js.Dynamic.literal(getMap = js.Any.fromFunction0(getMap))
-  
     __obj.asInstanceOf[IParentOnMap]
   }
 }

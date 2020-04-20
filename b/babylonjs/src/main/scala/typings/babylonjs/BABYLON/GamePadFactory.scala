@@ -23,7 +23,6 @@ object GamePadFactory {
   @scala.inline
   def apply(canCreate: js.Any => Boolean, create: js.Any => Gamepad): GamePadFactory = {
     val __obj = js.Dynamic.literal(canCreate = js.Any.fromFunction1(canCreate), create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[GamePadFactory]
   }
 }

@@ -16,12 +16,10 @@ trait Status extends js.Object
 
 object Status {
   @scala.inline
-  def FatalError: `1` = this.cast(1)
+  def FatalError: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def LintError: `2` = this.cast(2)
+  def LintError: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Ok: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Ok: `0` = 0.asInstanceOf[`0`]
 }
 

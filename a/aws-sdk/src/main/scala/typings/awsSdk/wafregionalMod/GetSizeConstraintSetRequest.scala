@@ -16,7 +16,6 @@ object GetSizeConstraintSetRequest {
   @scala.inline
   def apply(SizeConstraintSetId: ResourceId): GetSizeConstraintSetRequest = {
     val __obj = js.Dynamic.literal(SizeConstraintSetId = SizeConstraintSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSizeConstraintSetRequest]
   }
 }

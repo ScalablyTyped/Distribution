@@ -33,7 +33,7 @@ class FileEditor_ protected () extends Widget {
   /**
     * Get the context for the editor widget.
     */
-  def context(): Context = js.native
+  def context: Context = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -48,6 +48,6 @@ class FileEditor_ protected () extends Widget {
   /**
     * A promise that resolves when the file editor is ready.
     */
-  def ready(): js.Promise[Unit] = js.native
+  def ready: js.Promise[Unit] = js.native
 }
 

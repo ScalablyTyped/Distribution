@@ -20,7 +20,6 @@ object PanRecognizer {
     start: (Double, Double) => Unit
   ): PanRecognizer = {
     val __obj = js.Dynamic.literal(detect = js.Any.fromFunction2(detect), getDirection = js.Any.fromFunction0(getDirection), isGesture = js.Any.fromFunction0(isGesture), start = js.Any.fromFunction2(start))
-  
     __obj.asInstanceOf[PanRecognizer]
   }
 }

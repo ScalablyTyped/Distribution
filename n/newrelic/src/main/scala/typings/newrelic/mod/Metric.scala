@@ -16,7 +16,6 @@ object Metric {
   @scala.inline
   def apply(count: Double, max: Double, min: Double, sumOfSquares: Double, total: Double): Metric = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], sumOfSquares = sumOfSquares.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Metric]
   }
 }

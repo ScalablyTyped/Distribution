@@ -14,10 +14,8 @@ trait WdEnableCancelKey extends js.Object
 
 object WdEnableCancelKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCancelDisabled: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdCancelDisabled: `0` = this.cast(0)
-  @scala.inline
-  def wdCancelInterrupt: `1` = this.cast(1)
+  def wdCancelInterrupt: `1` = 1.asInstanceOf[`1`]
 }
 

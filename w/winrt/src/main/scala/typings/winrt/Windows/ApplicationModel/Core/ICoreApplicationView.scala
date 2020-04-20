@@ -16,7 +16,6 @@ object ICoreApplicationView {
   @scala.inline
   def apply(coreWindow: CoreWindow, isHosted: Boolean, isMain: Boolean, onactivated: js.Any): ICoreApplicationView = {
     val __obj = js.Dynamic.literal(coreWindow = coreWindow.asInstanceOf[js.Any], isHosted = isHosted.asInstanceOf[js.Any], isMain = isMain.asInstanceOf[js.Any], onactivated = onactivated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICoreApplicationView]
   }
 }

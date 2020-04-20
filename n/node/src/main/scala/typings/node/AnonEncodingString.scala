@@ -12,7 +12,6 @@ object AnonEncodingString {
   @scala.inline
   def apply(encoding: java.lang.String): AnonEncodingString = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEncodingString]
   }
 }

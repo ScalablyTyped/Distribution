@@ -14,7 +14,6 @@ object TilesetsService {
   @scala.inline
   def apply(listTilesets: AnonOwnerIdString => MapiRequest): TilesetsService = {
     val __obj = js.Dynamic.literal(listTilesets = js.Any.fromFunction1(listTilesets))
-  
     __obj.asInstanceOf[TilesetsService]
   }
 }

@@ -16,12 +16,10 @@ trait OlImportance extends js.Object
 
 object OlImportance {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olImportanceHigh: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olImportanceHigh: `2` = this.cast(2)
+  def olImportanceLow: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olImportanceLow: `0` = this.cast(0)
-  @scala.inline
-  def olImportanceNormal: `1` = this.cast(1)
+  def olImportanceNormal: `1` = 1.asInstanceOf[`1`]
 }
 

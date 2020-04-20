@@ -20,7 +20,6 @@ object Types_ {
     UPDATE_NOTIFICATION: UPDATE_NOTIFICATION
   ): Types_ = {
     val __obj = js.Dynamic.literal(ADD_NOTIFICATION = ADD_NOTIFICATION.asInstanceOf[js.Any], REMOVE_NOTIFICATION = REMOVE_NOTIFICATION.asInstanceOf[js.Any], REMOVE_NOTIFICATIONS = REMOVE_NOTIFICATIONS.asInstanceOf[js.Any], UPDATE_NOTIFICATION = UPDATE_NOTIFICATION.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Types_]
   }
 }

@@ -13,7 +13,6 @@ object AnonRadius {
   @scala.inline
   def apply(radius: String, tooltip: AnonStart): AnonRadius = {
     val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRadius]
   }
 }

@@ -20,7 +20,6 @@ object ImplementationProvider {
     provideImplementation: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]
   ): ImplementationProvider = {
     val __obj = js.Dynamic.literal(provideImplementation = js.Any.fromFunction3(provideImplementation))
-  
     __obj.asInstanceOf[ImplementationProvider]
   }
 }

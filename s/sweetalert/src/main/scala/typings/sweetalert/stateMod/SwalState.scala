@@ -18,7 +18,6 @@ object SwalState {
   @scala.inline
   def apply(actions: StringDictionary[AnonCloseModal], isOpen: Boolean, promise: AnonReject, timer: Double): SwalState = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], timer = timer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SwalState]
   }
 }

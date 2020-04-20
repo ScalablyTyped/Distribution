@@ -13,7 +13,6 @@ object IAstWalker {
   @scala.inline
   def apply(options: AstWalkOptions, state: js.Any): IAstWalker = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAstWalker]
   }
 }

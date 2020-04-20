@@ -16,7 +16,6 @@ object GetSamplingTargetsRequest {
   @scala.inline
   def apply(SamplingStatisticsDocuments: SamplingStatisticsDocumentList): GetSamplingTargetsRequest = {
     val __obj = js.Dynamic.literal(SamplingStatisticsDocuments = SamplingStatisticsDocuments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSamplingTargetsRequest]
   }
 }

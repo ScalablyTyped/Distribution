@@ -32,7 +32,6 @@ object Checkbox {
     setName: String => Checkbox
   ): Checkbox = {
     val __obj = js.Dynamic.literal(setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setIsDynamic = js.Any.fromFunction1(setIsDynamic), setName = js.Any.fromFunction1(setName))
-  
     __obj.asInstanceOf[Checkbox]
   }
 }

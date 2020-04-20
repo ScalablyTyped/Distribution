@@ -34,7 +34,6 @@ object AnonActiveUnzonedRange {
     validUnzonedRange: js.Any
   ): AnonActiveUnzonedRange = {
     val __obj = js.Dynamic.literal(activeUnzonedRange = activeUnzonedRange.asInstanceOf[js.Any], currentRangeUnit = currentRangeUnit.asInstanceOf[js.Any], currentUnzonedRange = currentUnzonedRange.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], dateIncrement = dateIncrement.asInstanceOf[js.Any], isRangeAllDay = isRangeAllDay.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], maxTime = maxTime.asInstanceOf[js.Any], minTime = minTime.asInstanceOf[js.Any], renderUnzonedRange = renderUnzonedRange.asInstanceOf[js.Any], validUnzonedRange = validUnzonedRange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveUnzonedRange]
   }
 }

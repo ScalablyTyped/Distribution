@@ -27,7 +27,6 @@ object AnonLoadedTabs {
     tabsHistory: NumberDictionary[js.Array[Location[LocationState]]]
   ): AnonLoadedTabs = {
     val __obj = js.Dynamic.literal(loadedTabs = loadedTabs.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], rootIndex = rootIndex.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], tabsHistory = tabsHistory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLoadedTabs]
   }
 }

@@ -13,7 +13,6 @@ object AnonAngleAndHeight {
   @scala.inline
   def apply(angleAndHeight: AnonEndPosition, distance: AnonEndPosition): AnonAngleAndHeight = {
     val __obj = js.Dynamic.literal(angleAndHeight = angleAndHeight.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAngleAndHeight]
   }
 }

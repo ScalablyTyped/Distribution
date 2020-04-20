@@ -20,7 +20,6 @@ object Display {
     topics: () => AdWordsSelector[Topic]
   ): Display = {
     val __obj = js.Dynamic.literal(audiences = js.Any.fromFunction0(audiences), keywords = js.Any.fromFunction0(keywords), placements = js.Any.fromFunction0(placements), topics = js.Any.fromFunction0(topics))
-  
     __obj.asInstanceOf[Display]
   }
 }

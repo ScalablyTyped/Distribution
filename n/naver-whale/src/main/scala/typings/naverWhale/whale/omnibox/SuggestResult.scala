@@ -15,7 +15,6 @@ object SuggestResult {
   @scala.inline
   def apply(content: String, description: String): SuggestResult = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuggestResult]
   }
 }

@@ -18,14 +18,12 @@ trait OlFormatPercent extends js.Object
 
 object OlFormatPercent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFormatPercent1Decimal: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFormatPercent1Decimal: `2` = this.cast(2)
+  def olFormatPercent2Decimal: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olFormatPercent2Decimal: `3` = this.cast(3)
+  def olFormatPercentAllDigits: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olFormatPercentAllDigits: `4` = this.cast(4)
-  @scala.inline
-  def olFormatPercentRounded: `1` = this.cast(1)
+  def olFormatPercentRounded: `1` = 1.asInstanceOf[`1`]
 }
 

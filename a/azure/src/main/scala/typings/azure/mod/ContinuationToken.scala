@@ -13,7 +13,6 @@ object ContinuationToken {
   @scala.inline
   def apply(nextMarker: String, targetLocation: String): ContinuationToken = {
     val __obj = js.Dynamic.literal(nextMarker = nextMarker.asInstanceOf[js.Any], targetLocation = targetLocation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContinuationToken]
   }
 }

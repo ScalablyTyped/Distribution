@@ -12,7 +12,6 @@ object ICoreWindowResizeManager {
   @scala.inline
   def apply(notifyLayoutCompleted: () => Unit): ICoreWindowResizeManager = {
     val __obj = js.Dynamic.literal(notifyLayoutCompleted = js.Any.fromFunction0(notifyLayoutCompleted))
-  
     __obj.asInstanceOf[ICoreWindowResizeManager]
   }
 }

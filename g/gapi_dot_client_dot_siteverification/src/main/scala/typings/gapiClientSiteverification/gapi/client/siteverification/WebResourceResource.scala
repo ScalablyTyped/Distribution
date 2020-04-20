@@ -37,7 +37,6 @@ object WebResourceResource {
     update: AnonAlt => Request_[SiteVerificationWebResourceResource]
   ): WebResourceResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getToken = js.Any.fromFunction1(getToken), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[WebResourceResource]
   }
 }

@@ -126,7 +126,6 @@ object IAuthResource {
     performLogout: () => IPromise[IResourcePromise]
   ): IAuthResource = {
     val __obj = js.Dynamic.literal(getCurrentUser = js.Any.fromFunction0(getCurrentUser), getRemainingTimeoutSeconds = js.Any.fromFunction0(getRemainingTimeoutSeconds), isAuthenticated = js.Any.fromFunction0(isAuthenticated), performLogin = js.Any.fromFunction2(performLogin), performLogout = js.Any.fromFunction0(performLogout))
-  
     __obj.asInstanceOf[IAuthResource]
   }
 }

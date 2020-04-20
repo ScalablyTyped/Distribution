@@ -78,7 +78,6 @@ object TwitchExtBits {
     useBits: String => Unit
   ): TwitchExtBits = {
     val __obj = js.Dynamic.literal(getProducts = js.Any.fromFunction0(getProducts), onTransactionCancelled = js.Any.fromFunction1(onTransactionCancelled), onTransactionComplete = js.Any.fromFunction1(onTransactionComplete), setUseLoopback = js.Any.fromFunction1(setUseLoopback), showBitsBalance = js.Any.fromFunction0(showBitsBalance), useBits = js.Any.fromFunction1(useBits))
-  
     __obj.asInstanceOf[TwitchExtBits]
   }
 }

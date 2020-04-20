@@ -16,7 +16,6 @@ object DeleteSecurityConfigurationInput {
   @scala.inline
   def apply(Name: XmlString): DeleteSecurityConfigurationInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSecurityConfigurationInput]
   }
 }

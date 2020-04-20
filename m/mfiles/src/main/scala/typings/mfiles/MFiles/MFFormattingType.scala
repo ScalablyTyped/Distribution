@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 object MFFormattingType {
   @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def None: `0` = 0.asInstanceOf[`0`]
 }
 

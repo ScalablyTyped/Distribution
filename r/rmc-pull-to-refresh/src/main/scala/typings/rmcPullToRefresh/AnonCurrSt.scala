@@ -13,7 +13,6 @@ object AnonCurrSt {
   @scala.inline
   def apply(currSt: String, dragOnEdge: Boolean): AnonCurrSt = {
     val __obj = js.Dynamic.literal(currSt = currSt.asInstanceOf[js.Any], dragOnEdge = dragOnEdge.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCurrSt]
   }
 }

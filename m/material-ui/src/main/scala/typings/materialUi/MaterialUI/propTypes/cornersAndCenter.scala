@@ -16,18 +16,16 @@ trait cornersAndCenter extends js.Object
 
 object cornersAndCenter {
   @scala.inline
-  def `bottom-center`: typings.materialUi.materialUiStrings.`bottom-center` = this.cast("bottom-center")
+  def `bottom-center`: typings.materialUi.materialUiStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.materialUi.materialUiStrings.`bottom-center`]
   @scala.inline
-  def `bottom-left`: typings.materialUi.materialUiStrings.`bottom-left` = this.cast("bottom-left")
+  def `bottom-left`: typings.materialUi.materialUiStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.materialUi.materialUiStrings.`bottom-left`]
   @scala.inline
-  def `bottom-right`: typings.materialUi.materialUiStrings.`bottom-right` = this.cast("bottom-right")
+  def `bottom-right`: typings.materialUi.materialUiStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.materialUi.materialUiStrings.`bottom-right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `top-center`: typings.materialUi.materialUiStrings.`top-center` = "top-center".asInstanceOf[typings.materialUi.materialUiStrings.`top-center`]
   @scala.inline
-  def `top-center`: typings.materialUi.materialUiStrings.`top-center` = this.cast("top-center")
+  def `top-left`: typings.materialUi.materialUiStrings.`top-left` = "top-left".asInstanceOf[typings.materialUi.materialUiStrings.`top-left`]
   @scala.inline
-  def `top-left`: typings.materialUi.materialUiStrings.`top-left` = this.cast("top-left")
-  @scala.inline
-  def `top-right`: typings.materialUi.materialUiStrings.`top-right` = this.cast("top-right")
+  def `top-right`: typings.materialUi.materialUiStrings.`top-right` = "top-right".asInstanceOf[typings.materialUi.materialUiStrings.`top-right`]
 }
 

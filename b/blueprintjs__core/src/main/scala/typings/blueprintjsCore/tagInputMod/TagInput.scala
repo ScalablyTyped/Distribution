@@ -25,6 +25,7 @@ class TagInput ()
   var handleBackspaceToRemove: js.Any = js.native
   var handleContainerBlur: js.Any = js.native
   var handleContainerClick: js.Any = js.native
+  var handleDeleteToRemove: js.Any = js.native
   var handleInputChange: js.Any = js.native
   var handleInputFocus: js.Any = js.native
   var handleInputKeyDown: js.Any = js.native

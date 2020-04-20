@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactLottieProps {
   @scala.inline
-  def ReactLottieProps: LottieProps.type = typings.reactLottie.mod.LottieProps
+  def ReactLottieProps: LottieProps.type = LottieProps
   type ReactLottieProps = LottieProps
 }
 

@@ -23,7 +23,6 @@ object DataProviderExceptionDetails {
   @scala.inline
   def apply(exceptionType: String, message: String, stackTrace: String): DataProviderExceptionDetails = {
     val __obj = js.Dynamic.literal(exceptionType = exceptionType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], stackTrace = stackTrace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataProviderExceptionDetails]
   }
 }

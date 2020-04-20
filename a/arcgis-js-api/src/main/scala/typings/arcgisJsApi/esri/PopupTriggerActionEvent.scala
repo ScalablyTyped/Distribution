@@ -12,7 +12,6 @@ object PopupTriggerActionEvent {
   @scala.inline
   def apply(action: ActionButton | ActionToggle): PopupTriggerActionEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PopupTriggerActionEvent]
   }
 }

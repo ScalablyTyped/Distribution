@@ -13,7 +13,6 @@ object AnonCode {
   @scala.inline
   def apply(code: String, message: String): AnonCode = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCode]
   }
 }

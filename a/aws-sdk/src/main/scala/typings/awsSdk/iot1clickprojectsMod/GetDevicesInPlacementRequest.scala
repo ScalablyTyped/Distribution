@@ -20,7 +20,6 @@ object GetDevicesInPlacementRequest {
   @scala.inline
   def apply(placementName: PlacementName, projectName: ProjectName): GetDevicesInPlacementRequest = {
     val __obj = js.Dynamic.literal(placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDevicesInPlacementRequest]
   }
 }

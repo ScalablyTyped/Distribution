@@ -49,7 +49,6 @@ object FoldersResource {
     setOrgPolicy: AnonAccesstoken => Request_[OrgPolicy]
   ): FoldersResource = {
     val __obj = js.Dynamic.literal(clearOrgPolicy = js.Any.fromFunction1(clearOrgPolicy), getEffectiveOrgPolicy = js.Any.fromFunction1(getEffectiveOrgPolicy), getOrgPolicy = js.Any.fromFunction1(getOrgPolicy), listAvailableOrgPolicyConstraints = js.Any.fromFunction1(listAvailableOrgPolicyConstraints), listOrgPolicies = js.Any.fromFunction1(listOrgPolicies), setOrgPolicy = js.Any.fromFunction1(setOrgPolicy))
-  
     __obj.asInstanceOf[FoldersResource]
   }
 }

@@ -22,7 +22,6 @@ object WriteEventStream {
   @scala.inline
   def apply(DestinationStreamArn: string, RoleArn: string): WriteEventStream = {
     val __obj = js.Dynamic.literal(DestinationStreamArn = DestinationStreamArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WriteEventStream]
   }
 }

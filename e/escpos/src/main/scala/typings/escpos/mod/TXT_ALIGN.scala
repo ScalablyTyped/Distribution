@@ -13,12 +13,10 @@ trait TXT_ALIGN extends js.Object
 
 object TXT_ALIGN {
   @scala.inline
-  def CT: typings.escpos.escposStrings.CT = this.cast("CT")
+  def CT: typings.escpos.escposStrings.CT = "CT".asInstanceOf[typings.escpos.escposStrings.CT]
   @scala.inline
-  def LT: typings.escpos.escposStrings.LT = this.cast("LT")
+  def LT: typings.escpos.escposStrings.LT = "LT".asInstanceOf[typings.escpos.escposStrings.LT]
   @scala.inline
-  def RT: typings.escpos.escposStrings.RT = this.cast("RT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RT: typings.escpos.escposStrings.RT = "RT".asInstanceOf[typings.escpos.escposStrings.RT]
 }
 

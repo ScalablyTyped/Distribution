@@ -14,7 +14,6 @@ object DatabaseStatics {
   @scala.inline
   def apply(ServerValue: AnonTIMESTAMP): DatabaseStatics = {
     val __obj = js.Dynamic.literal(ServerValue = ServerValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatabaseStatics]
   }
 }

@@ -124,7 +124,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
   /**
     * Gets the bias: offset applied on the depth preventing acnea (in light direction).
     */
-  def bias(): Double = js.native
+  def bias: Double = js.native
   /**
     * Sets the bias: offset applied on the depth preventing acnea (in light direction).
     */
@@ -133,7 +133,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
     * Gets the blur box offset: offset applied during the blur pass.
     * Only useful if useKernelBlur = false
     */
-  def blurBoxOffset(): Double = js.native
+  def blurBoxOffset: Double = js.native
   /**
     * Sets the blur box offset: offset applied during the blur pass.
     * Only useful if useKernelBlur = false
@@ -143,7 +143,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
     * Gets the blur kernel: kernel size of the blur pass.
     * Only useful if useKernelBlur = true
     */
-  def blurKernel(): Double = js.native
+  def blurKernel: Double = js.native
   /**
     * Sets the blur kernel: kernel size of the blur pass.
     * Only useful if useKernelBlur = true
@@ -153,7 +153,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
     * Gets the blur scale: scale of the blurred texture compared to the main shadow map.
     * 2 means half of the size.
     */
-  def blurScale(): Double = js.native
+  def blurScale: Double = js.native
   /**
     * Sets the blur scale: scale of the blurred texture compared to the main shadow map.
     * 2 means half of the size.
@@ -168,7 +168,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
     *
     * Only valid if useContactHardeningShadow is true.
     */
-  def contactHardeningLightSizeUVRatio(): Double = js.native
+  def contactHardeningLightSizeUVRatio: Double = js.native
   /**
     * Sets the Light Size (in shadow map uv unit) used in PCSS to determine the blocker search area and the penumbra size.
     * Using a ratio helps keeping shape stability independently of the map size.
@@ -180,12 +180,12 @@ class ShadowGenerator protected () extends IShadowGenerator {
     */
   def contactHardeningLightSizeUVRatio(contactHardeningLightSizeUVRatio: Double): js.Any = js.native
   /** Gets or sets the actual darkness of a shadow */
-  def darkness(): Double = js.native
+  def darkness: Double = js.native
   def darkness(value: Double): js.Any = js.native
   /**
     * Gets the depth scale used in ESM mode.
     */
-  def depthScale(): Double = js.native
+  def depthScale: Double = js.native
   /**
     * Sets the depth scale used in ESM mode.
     * This can override the scale stored on the light.
@@ -195,7 +195,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
     * Gets the current mode of the shadow generator (normal, PCF, ESM...).
     * The returned value is a number equal to one of the available mode defined in ShadowMap.FILTER_x like _FILTER_NONE
     */
-  def filter(): Double = js.native
+  def filter: Double = js.native
   /**
     * Sets the current mode of the shadow generator (normal, PCF, ESM...).
     * The returned value is a number equal to one of the available mode defined in ShadowMap.FILTER_x like _FILTER_NONE
@@ -205,7 +205,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
     * Gets the PCF or PCSS Quality.
     * Only valid if usePercentageCloserFiltering or usePercentageCloserFiltering is true.
     */
-  def filteringQuality(): Double = js.native
+  def filteringQuality: Double = js.native
   /**
     * Sets the PCF or PCSS Quality.
     * Only valid if usePercentageCloserFiltering or usePercentageCloserFiltering is true.
@@ -235,7 +235,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
   /**
     * Gets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportinal to the light/normal angle).
     */
-  def normalBias(): Double = js.native
+  def normalBias: Double = js.native
   /**
     * Sets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportinal to the light/normal angle).
     */
@@ -267,13 +267,13 @@ class ShadowGenerator protected () extends IShadowGenerator {
     */
   def setTransparencyShadow(transparent: Boolean): ShadowGenerator = js.native
   /** Gets or sets the ability to have transparent shadow  */
-  def transparencyShadow(): Boolean = js.native
+  def transparencyShadow: Boolean = js.native
   def transparencyShadow(value: Boolean): js.Any = js.native
   /**
     * Gets if the current filter is set to filtered "close ESM" (using the inverse of the
     * exponential to prevent steep falloff artifacts).
     */
-  def useBlurCloseExponentialShadowMap(): Boolean = js.native
+  def useBlurCloseExponentialShadowMap: Boolean = js.native
   /**
     * Sets the current filter to filtered "close ESM" (using the inverse of the
     * exponential to prevent steep falloff artifacts).
@@ -282,7 +282,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
   /**
     * Gets if the current filter is set to filtered ESM.
     */
-  def useBlurExponentialShadowMap(): Boolean = js.native
+  def useBlurExponentialShadowMap: Boolean = js.native
   /**
     * Gets if the current filter is set to filtered  ESM.
     */
@@ -291,7 +291,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
     * Gets if the current filter is set to "close ESM" (using the inverse of the
     * exponential to prevent steep falloff artifacts).
     */
-  def useCloseExponentialShadowMap(): Boolean = js.native
+  def useCloseExponentialShadowMap: Boolean = js.native
   /**
     * Sets the current filter to "close ESM" (using the inverse of the
     * exponential to prevent steep falloff artifacts).
@@ -300,7 +300,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
   /**
     * Gets if the current filter is set to "PCSS" (contact hardening).
     */
-  def useContactHardeningShadow(): Boolean = js.native
+  def useContactHardeningShadow: Boolean = js.native
   /**
     * Sets the current filter to "PCSS" (contact hardening).
     */
@@ -308,7 +308,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
   /**
     * Gets if the current filter is set to ESM.
     */
-  def useExponentialShadowMap(): Boolean = js.native
+  def useExponentialShadowMap: Boolean = js.native
   /**
     * Sets the current filter is to ESM.
     */
@@ -317,7 +317,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
     * Gets whether the blur pass is a kernel blur (if true) or box blur.
     * Only useful in filtered mode (useBlurExponentialShadowMap...)
     */
-  def useKernelBlur(): Boolean = js.native
+  def useKernelBlur: Boolean = js.native
   /**
     * Sets whether the blur pass is a kernel blur (if true) or box blur.
     * Only useful in filtered mode (useBlurExponentialShadowMap...)
@@ -326,7 +326,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
   /**
     * Gets if the current filter is set to "PCF" (percentage closer filtering).
     */
-  def usePercentageCloserFiltering(): Boolean = js.native
+  def usePercentageCloserFiltering: Boolean = js.native
   /**
     * Sets the current filter to "PCF" (percentage closer filtering).
     */
@@ -334,7 +334,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
   /**
     * Gets if the current filter is set to Poisson Sampling.
     */
-  def usePoissonSampling(): Boolean = js.native
+  def usePoissonSampling: Boolean = js.native
   /**
     * Sets the current filter to Poisson Sampling.
     */

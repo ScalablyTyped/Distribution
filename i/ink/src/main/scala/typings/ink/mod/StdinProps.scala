@@ -25,7 +25,6 @@ object StdinProps {
   @scala.inline
   def apply(isRawModeSupported: Boolean, setRawMode: /* mode */ Boolean => StdinProps, stdin: ReadStream): StdinProps = {
     val __obj = js.Dynamic.literal(isRawModeSupported = isRawModeSupported.asInstanceOf[js.Any], setRawMode = js.Any.fromFunction1(setRawMode), stdin = stdin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StdinProps]
   }
 }

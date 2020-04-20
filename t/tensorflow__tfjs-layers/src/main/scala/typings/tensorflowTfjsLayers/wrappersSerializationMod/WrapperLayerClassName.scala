@@ -13,10 +13,8 @@ trait WrapperLayerClassName extends js.Object
 
 object WrapperLayerClassName {
   @scala.inline
-  def Bidirectional: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Bidirectional = this.cast("Bidirectional")
+  def Bidirectional: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Bidirectional = "Bidirectional".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Bidirectional]
   @scala.inline
-  def TimeDistributed: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TimeDistributed = this.cast("TimeDistributed")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TimeDistributed: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TimeDistributed = "TimeDistributed".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TimeDistributed]
 }
 

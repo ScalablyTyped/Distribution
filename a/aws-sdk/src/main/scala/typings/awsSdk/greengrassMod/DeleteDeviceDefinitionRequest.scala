@@ -16,7 +16,6 @@ object DeleteDeviceDefinitionRequest {
   @scala.inline
   def apply(DeviceDefinitionId: string): DeleteDeviceDefinitionRequest = {
     val __obj = js.Dynamic.literal(DeviceDefinitionId = DeviceDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDeviceDefinitionRequest]
   }
 }

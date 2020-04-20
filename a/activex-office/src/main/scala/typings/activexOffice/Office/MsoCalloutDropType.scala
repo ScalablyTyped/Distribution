@@ -20,16 +20,14 @@ trait MsoCalloutDropType extends js.Object
 
 object MsoCalloutDropType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoCalloutDropBottom: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoCalloutDropBottom: `4` = this.cast(4)
+  def msoCalloutDropCenter: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoCalloutDropCenter: `3` = this.cast(3)
+  def msoCalloutDropCustom: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoCalloutDropCustom: `1` = this.cast(1)
+  def msoCalloutDropMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoCalloutDropMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoCalloutDropTop: `2` = this.cast(2)
+  def msoCalloutDropTop: `2` = 2.asInstanceOf[`2`]
 }
 

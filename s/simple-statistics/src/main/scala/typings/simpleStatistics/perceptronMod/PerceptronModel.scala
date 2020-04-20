@@ -20,7 +20,6 @@ object PerceptronModel {
     weights: js.Array[Double]
   ): PerceptronModel = {
     val __obj = js.Dynamic.literal(bias = bias.asInstanceOf[js.Any], predict = js.Any.fromFunction1(predict), train = js.Any.fromFunction2(train), weights = weights.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PerceptronModel]
   }
 }

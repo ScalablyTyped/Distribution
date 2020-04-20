@@ -16,7 +16,6 @@ object LambdaFunctionStartedEventAttributes {
   @scala.inline
   def apply(scheduledEventId: EventId): LambdaFunctionStartedEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LambdaFunctionStartedEventAttributes]
   }
 }

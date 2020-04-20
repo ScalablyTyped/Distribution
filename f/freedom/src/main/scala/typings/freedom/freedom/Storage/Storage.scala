@@ -28,7 +28,6 @@ object Storage {
     set: (String, String) => js.Promise[String]
   ): Storage = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), keys = js.Any.fromFunction0(keys), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[Storage]
   }
 }

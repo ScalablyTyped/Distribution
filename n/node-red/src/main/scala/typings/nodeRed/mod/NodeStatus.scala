@@ -17,7 +17,6 @@ object NodeStatus {
   @scala.inline
   def apply(fill: StatusFill, shape: StatusShape, text: String): NodeStatus = {
     val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeStatus]
   }
 }

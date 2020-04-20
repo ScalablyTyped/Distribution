@@ -22,7 +22,6 @@ object AnonSOS {
     USD: js.Array[String]
   ): AnonSOS = {
     val __obj = js.Dynamic.literal(BBD = BBD.asInstanceOf[js.Any], DJF = DJF.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], SOS = SOS.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSOS]
   }
 }

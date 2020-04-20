@@ -20,7 +20,6 @@ object NodeSelector {
   @scala.inline
   def apply(nodeSelectorTerms: js.Array[NodeSelectorTerm]): NodeSelector = {
     val __obj = js.Dynamic.literal(nodeSelectorTerms = nodeSelectorTerms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeSelector]
   }
 }

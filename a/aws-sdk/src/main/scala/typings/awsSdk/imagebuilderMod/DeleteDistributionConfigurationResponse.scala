@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteDistributionConfigurationResponse extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the distribution configuration that was deleted. 
+    * The Amazon Resource Name (ARN) of the distribution configuration that was deleted. 
     */
   var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

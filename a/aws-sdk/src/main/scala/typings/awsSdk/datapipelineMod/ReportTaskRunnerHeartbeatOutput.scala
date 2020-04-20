@@ -16,7 +16,6 @@ object ReportTaskRunnerHeartbeatOutput {
   @scala.inline
   def apply(terminate: Boolean): ReportTaskRunnerHeartbeatOutput = {
     val __obj = js.Dynamic.literal(terminate = terminate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReportTaskRunnerHeartbeatOutput]
   }
 }

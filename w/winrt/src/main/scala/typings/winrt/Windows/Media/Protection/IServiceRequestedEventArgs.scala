@@ -13,7 +13,6 @@ object IServiceRequestedEventArgs {
   @scala.inline
   def apply(completion: MediaProtectionServiceCompletion, request: IMediaProtectionServiceRequest): IServiceRequestedEventArgs = {
     val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IServiceRequestedEventArgs]
   }
 }

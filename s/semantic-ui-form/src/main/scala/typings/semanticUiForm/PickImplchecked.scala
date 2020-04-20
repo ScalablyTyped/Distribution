@@ -13,7 +13,6 @@ object PickImplchecked {
   @scala.inline
   def apply(checked: String): PickImplchecked = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplchecked]
   }
 }

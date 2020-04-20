@@ -34,30 +34,28 @@ trait RecordsetOptionEnum extends js.Object
 
 object RecordsetOptionEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbAppendOnly: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def dbAppendOnly: `8` = this.cast(8)
+  def dbConsistent: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def dbConsistent: `32` = this.cast(32)
+  def dbDenyRead: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbDenyRead: `2` = this.cast(2)
+  def dbDenyWrite: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbDenyWrite: `1` = this.cast(1)
+  def dbExecDirect: `2048` = 2048.asInstanceOf[`2048`]
   @scala.inline
-  def dbExecDirect: `2048` = this.cast(2048)
+  def dbFailOnError: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def dbFailOnError: `128` = this.cast(128)
+  def dbForwardOnly: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def dbForwardOnly: `256` = this.cast(256)
+  def dbInconsistent: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def dbInconsistent: `16` = this.cast(16)
+  def dbReadOnly: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def dbReadOnly: `4` = this.cast(4)
+  def dbRunAsync: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def dbRunAsync: `1024` = this.cast(1024)
+  def dbSQLPassThrough: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def dbSQLPassThrough: `64` = this.cast(64)
-  @scala.inline
-  def dbSeeChanges: `512` = this.cast(512)
+  def dbSeeChanges: `512` = 512.asInstanceOf[`512`]
 }
 

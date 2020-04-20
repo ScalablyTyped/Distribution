@@ -14,7 +14,6 @@ object PickImplmobileMobile {
   @scala.inline
   def apply(mobile: RegExp): PickImplmobileMobile = {
     val __obj = js.Dynamic.literal(mobile = mobile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmobileMobile]
   }
 }

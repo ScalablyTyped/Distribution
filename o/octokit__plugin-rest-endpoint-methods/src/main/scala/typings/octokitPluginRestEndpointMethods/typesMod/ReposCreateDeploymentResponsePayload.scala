@@ -12,7 +12,6 @@ object ReposCreateDeploymentResponsePayload {
   @scala.inline
   def apply(deploy: String): ReposCreateDeploymentResponsePayload = {
     val __obj = js.Dynamic.literal(deploy = deploy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposCreateDeploymentResponsePayload]
   }
 }

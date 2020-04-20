@@ -18,7 +18,7 @@ object quizStickerMod extends js.Object {
     var textColor: js.UndefOr[String] = js.native
     var viewerAnswer: js.UndefOr[Double] = js.native
     var viewerCanAnswer: js.UndefOr[Boolean] = js.native
-    def options(): js.Array[String] | Options = js.native
+    def options: js.Array[String] | Options = js.native
     def options(value: js.Array[String] | Options): js.Any = js.native
   }
   

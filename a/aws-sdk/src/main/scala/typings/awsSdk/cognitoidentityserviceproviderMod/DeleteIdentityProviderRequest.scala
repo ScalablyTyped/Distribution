@@ -20,7 +20,6 @@ object DeleteIdentityProviderRequest {
   @scala.inline
   def apply(ProviderName: ProviderNameType, UserPoolId: UserPoolIdType): DeleteIdentityProviderRequest = {
     val __obj = js.Dynamic.literal(ProviderName = ProviderName.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIdentityProviderRequest]
   }
 }

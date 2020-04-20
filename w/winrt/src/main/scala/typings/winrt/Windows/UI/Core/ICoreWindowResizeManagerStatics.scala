@@ -12,7 +12,6 @@ object ICoreWindowResizeManagerStatics {
   @scala.inline
   def apply(getForCurrentView: () => CoreWindowResizeManager): ICoreWindowResizeManagerStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView))
-  
     __obj.asInstanceOf[ICoreWindowResizeManagerStatics]
   }
 }

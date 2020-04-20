@@ -20,7 +20,6 @@ object UntagInput {
   @scala.inline
   def apply(Arn: GroupArn, Keys: TagKeyList): UntagInput = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], Keys = Keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntagInput]
   }
 }

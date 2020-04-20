@@ -47,7 +47,20 @@ package object mod {
   // Undeclared default props are augmented into the resulting allowable attributes
   // If declared props have indexed properties, ignore default props entirely as keyof gets widened
   // Wrap in an outer-level conditional type to allow distribution over props that are unions
-  type Defaultize[P, D] = ((typings.std.Pick[P, typings.std.Exclude[java.lang.String, java.lang.String]]) with (typings.std.Partial[typings.std.Pick[P, typings.std.Extract[java.lang.String, java.lang.String]]]) with (typings.std.Partial[typings.std.Pick[D, typings.std.Exclude[java.lang.String, java.lang.String]]])) | P
+  type Defaultize[P, D] = ((typings.std.Pick[
+    P, 
+    typings.std.Exclude[/* keyof P */ java.lang.String, /* keyof D */ java.lang.String]
+  ]) with (typings.std.Partial[
+    typings.std.Pick[
+      P, 
+      typings.std.Extract[/* keyof P */ java.lang.String, /* keyof D */ java.lang.String]
+    ]
+  ]) with (typings.std.Partial[
+    typings.std.Pick[
+      D, 
+      typings.std.Exclude[/* keyof D */ java.lang.String, /* keyof P */ java.lang.String]
+    ]
+  ])) | P
   // The identity check is done with the SameValue algorithm (Object.is), which is stricter than ===
   // TODO (TypeScript 3.0): ReadonlyArray<unknown>
   type DependencyList = js.Array[js.Any]
@@ -175,9 +188,12 @@ package object mod {
   type MergePropTypes[P, T] = ((typings.std.Pick[P, typings.rax.mod.NotExactlyAnyPropertyKeys[P]]) with (// For props which are exactly any, use the type inferred from propTypes if present
   typings.std.Pick[
     T, 
-    typings.std.Exclude[java.lang.String, typings.rax.mod.NotExactlyAnyPropertyKeys[P]]
+    typings.std.Exclude[/* keyof T */ java.lang.String, typings.rax.mod.NotExactlyAnyPropertyKeys[P]]
   ]) with (// Keep leftover props not specified in propTypes
-  typings.std.Pick[P, typings.std.Exclude[java.lang.String, java.lang.String]])) | P | T
+  typings.std.Pick[
+    P, 
+    typings.std.Exclude[/* keyof P */ java.lang.String, /* keyof T */ java.lang.String]
+  ])) | P | T
   type MouseEventHandler[T] = typings.rax.mod.EventHandler[typings.rax.mod.MouseEvent[T, typings.rax.mod.NativeMouseEvent]]
   type NativeAnimationEvent = typings.std.AnimationEvent
   type NativeClipboardEvent = typings.std.ClipboardEvent
@@ -191,13 +207,13 @@ package object mod {
   type NativeTransitionEvent = typings.std.TransitionEvent
   type NativeUIEvent = typings.std.UIEvent
   type NativeWheelEvent = typings.std.WheelEvent
-  type NotExactlyAnyPropertyKeys[T] = typings.std.Exclude[java.lang.String, typings.rax.mod.ExactlyAnyPropertyKeys[T]]
+  type NotExactlyAnyPropertyKeys[T] = typings.std.Exclude[/* keyof T */ java.lang.String, typings.rax.mod.ExactlyAnyPropertyKeys[T]]
   type PointerEventHandler[T] = typings.rax.mod.EventHandler[typings.rax.mod.PointerEvent[T]]
   type PropsWithChildren[P] = P with typings.rax.AnonChildren
   /** Ensures that the props do not include string ref, which cannot be forwarded */
   type PropsWithRef[P] = P | (typings.rax.mod.PropsWithoutRef[P] with typings.rax.AnonRefExclude)
   /** Ensures that the props do not include ref at all */
-  type PropsWithoutRef[P] = P | (typings.std.Pick[P, typings.std.Exclude[java.lang.String, typings.rax.raxStrings.ref]])
+  type PropsWithoutRef[P] = P | (typings.std.Pick[P, typings.std.Exclude[/* keyof P */ java.lang.String, typings.rax.raxStrings.ref]])
   type Provider[T] = typings.rax.mod.ProviderExoticComponent[typings.rax.mod.ProviderProps[T]]
   type RaxChild = (typings.rax.mod.RaxElement[js.Any, java.lang.String | typings.rax.mod.JSXElementConstructor[js.Any]]) | typings.rax.mod.RaxText
   type RaxComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 209 */ js.Any */, P] = typings.rax.mod.RaxElement[P, T]
@@ -312,6 +328,6 @@ package object mod {
   type Validator[T] = typings.propTypes.mod.Validator[T]
   type WeakValidationMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? null extends T[K]? rax.rax.Validator<T[K] | null | undefined> : undefined extends T[K]? rax.rax.Validator<T[K] | null | undefined> : rax.rax.Validator<T[K]>}
-    */ typings.rax.raxStrings.WeakValidationMap with js.Any
+    */ typings.rax.raxStrings.WeakValidationMap with org.scalablytyped.runtime.TopLevel[js.Any]
   type WheelEventHandler[T] = typings.rax.mod.EventHandler[typings.rax.mod.WheelEvent[T]]
 }

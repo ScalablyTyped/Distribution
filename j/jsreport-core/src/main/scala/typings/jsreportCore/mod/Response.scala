@@ -17,7 +17,6 @@ object Response {
   @scala.inline
   def apply(content: Buffer, headers: StringDictionary[String | Double | Boolean], stream: ReadableStream): Response = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Response]
   }
 }

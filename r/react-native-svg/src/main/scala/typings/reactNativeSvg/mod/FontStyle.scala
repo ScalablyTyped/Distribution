@@ -13,12 +13,10 @@ trait FontStyle extends js.Object
 
 object FontStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def italic: typings.reactNativeSvg.reactNativeSvgStrings.italic = "italic".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.italic]
   @scala.inline
-  def italic: typings.reactNativeSvg.reactNativeSvgStrings.italic = this.cast("italic")
+  def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = "normal".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.normal]
   @scala.inline
-  def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = this.cast("normal")
-  @scala.inline
-  def oblique: typings.reactNativeSvg.reactNativeSvgStrings.oblique = this.cast("oblique")
+  def oblique: typings.reactNativeSvg.reactNativeSvgStrings.oblique = "oblique".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.oblique]
 }
 

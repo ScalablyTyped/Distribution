@@ -35,6 +35,10 @@ trait GetDetectorVersionResult extends js.Object {
     */
   var modelVersions: js.UndefOr[ListOfModelVersions] = js.native
   /**
+    * The execution mode of the rule in the dectector  FIRST_MATCHED indicates that Amazon Fraud Detector evaluates rules sequentially, first to last, stopping at the first matched rule. Amazon Fraud dectector then provides the outcomes for that single rule.  ALL_MATCHED indicates that Amazon Fraud Detector evaluates all rules and returns the outcomes for all matched rules. You can define and edit the rule mode at the detector version level, when it is in draft status.
+    */
+  var ruleExecutionMode: js.UndefOr[RuleExecutionMode] = js.native
+  /**
     * The rules included in the detector version.
     */
   var rules: js.UndefOr[RuleList] = js.native
@@ -54,6 +58,7 @@ object GetDetectorVersionResult {
     externalModelEndpoints: ListOfStrings = null,
     lastUpdatedTime: time = null,
     modelVersions: ListOfModelVersions = null,
+    ruleExecutionMode: RuleExecutionMode = null,
     rules: RuleList = null,
     status: DetectorVersionStatus = null
   ): GetDetectorVersionResult = {
@@ -65,6 +70,7 @@ object GetDetectorVersionResult {
     if (externalModelEndpoints != null) __obj.updateDynamic("externalModelEndpoints")(externalModelEndpoints.asInstanceOf[js.Any])
     if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
     if (modelVersions != null) __obj.updateDynamic("modelVersions")(modelVersions.asInstanceOf[js.Any])
+    if (ruleExecutionMode != null) __obj.updateDynamic("ruleExecutionMode")(ruleExecutionMode.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDetectorVersionResult]

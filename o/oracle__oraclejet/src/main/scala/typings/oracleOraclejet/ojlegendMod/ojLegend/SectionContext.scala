@@ -25,7 +25,6 @@ object SectionContext {
     title: String
   ): SectionContext = {
     val __obj = js.Dynamic.literal(getItems = getItems.asInstanceOf[js.Any], getSection = getSection.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SectionContext]
   }
 }

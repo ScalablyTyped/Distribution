@@ -15,7 +15,6 @@ object ImageSize {
   @scala.inline
   def apply(height: Double, naturalHeight: Double, naturalWidth: Double, width: Double): ImageSize = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], naturalHeight = naturalHeight.asInstanceOf[js.Any], naturalWidth = naturalWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageSize]
   }
 }

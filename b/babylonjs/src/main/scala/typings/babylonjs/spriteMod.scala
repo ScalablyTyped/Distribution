@@ -81,7 +81,7 @@ object spriteMod extends js.Object {
     /**
       * Gets or sets the sprite size
       */
-    def size(): Double = js.native
+    def size: Double = js.native
     def size(value: Double): js.Any = js.native
     /** Stops current animation (if any) */
     def stopAnimation(): Unit = js.native

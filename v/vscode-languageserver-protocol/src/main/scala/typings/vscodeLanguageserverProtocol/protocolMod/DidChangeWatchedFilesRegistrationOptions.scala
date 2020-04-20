@@ -15,7 +15,6 @@ object DidChangeWatchedFilesRegistrationOptions {
   @scala.inline
   def apply(watchers: js.Array[FileSystemWatcher]): DidChangeWatchedFilesRegistrationOptions = {
     val __obj = js.Dynamic.literal(watchers = watchers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DidChangeWatchedFilesRegistrationOptions]
   }
 }

@@ -19,7 +19,6 @@ object IWorkerContext {
   @scala.inline
   def apply[H](getMirrorModels: () => js.Array[IMirrorModel], host: H): IWorkerContext[H] = {
     val __obj = js.Dynamic.literal(getMirrorModels = js.Any.fromFunction0(getMirrorModels), host = host.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWorkerContext[H]]
   }
 }

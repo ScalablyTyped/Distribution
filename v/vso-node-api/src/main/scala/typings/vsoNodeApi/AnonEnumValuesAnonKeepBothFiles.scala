@@ -12,7 +12,6 @@ object AnonEnumValuesAnonKeepBothFiles {
   @scala.inline
   def apply(enumValues: AnonKeepBothFiles): AnonEnumValuesAnonKeepBothFiles = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonKeepBothFiles]
   }
 }

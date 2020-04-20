@@ -33,11 +33,11 @@ class CSVViewer_ protected () extends Widget {
   /**
     * The CSV widget's context.
     */
-  def context(): Context = js.native
+  def context: Context = js.native
   /**
     * The delimiter for the file.
     */
-  def delimiter(): String = js.native
+  def delimiter: String = js.native
   def delimiter(value: String): js.Any = js.native
   /**
     * Go to line
@@ -50,15 +50,15 @@ class CSVViewer_ protected () extends Widget {
   /**
     * A promise that resolves when the csv viewer is ready to be revealed.
     */
-  def revealed(): js.Promise[Unit] = js.native
+  def revealed: js.Promise[Unit] = js.native
   /**
     * The search service
     */
-  def searchService(): GridSearchService = js.native
+  def searchService: GridSearchService = js.native
   /**
     * The style used by the data grid.
     */
-  def style(): Style = js.native
+  def style: Style = js.native
   def style(value: Style): js.Any = js.native
 }
 

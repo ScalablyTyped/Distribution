@@ -12,7 +12,9 @@ trait IBatchUpdateIntentsRequest extends js.Object {
   /** BatchUpdateIntentsRequest intentBatchUri */
   var intentBatchUri: js.UndefOr[String | Null] = js.undefined
   /** BatchUpdateIntentsRequest intentView */
-  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
+  var intentView: js.UndefOr[
+    IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) | Null
+  ] = js.undefined
   /** BatchUpdateIntentsRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** BatchUpdateIntentsRequest parent */
@@ -26,7 +28,7 @@ object IBatchUpdateIntentsRequest {
   def apply(
     intentBatchInline: IIntentBatch = null,
     intentBatchUri: String = null,
-    intentView: IntentView | String = null,
+    intentView: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) = null,
     languageCode: String = null,
     parent: String = null,
     updateMask: IFieldMask = null

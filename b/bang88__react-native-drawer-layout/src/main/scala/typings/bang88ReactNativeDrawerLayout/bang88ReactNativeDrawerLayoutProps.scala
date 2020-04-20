@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait bang88ReactNativeDrawerLayoutProps {
   @scala.inline
-  def ReactNativeDrawerLayoutProps: DrawerLayoutProperties.type = typings.bang88ReactNativeDrawerLayout.mod.DrawerLayoutProperties
+  def ReactNativeDrawerLayoutProps: DrawerLayoutProperties.type = DrawerLayoutProperties
   type ReactNativeDrawerLayoutProps = DrawerLayoutProperties
 }
 

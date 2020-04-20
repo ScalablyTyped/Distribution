@@ -36,7 +36,6 @@ object node {
   @scala.inline
   def apply(load: (String, js.Function, js.Function) => Unit, normalize: (String, js.Function) => js.Any): node = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction3(load), normalize = js.Any.fromFunction2(normalize))
-  
     __obj.asInstanceOf[node]
   }
 }

@@ -14,7 +14,6 @@ object IDropdown {
   @scala.inline
   def apply(destroy: () => Unit, hide: () => Unit, show: () => Unit): IDropdown = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[IDropdown]
   }
 }

@@ -35,7 +35,6 @@ object StreamPlayError {
   @scala.inline
   def apply(reason: String, status: String): StreamPlayError = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreamPlayError]
   }
 }

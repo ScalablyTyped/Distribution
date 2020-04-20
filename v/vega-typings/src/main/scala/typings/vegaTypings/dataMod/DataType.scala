@@ -15,14 +15,12 @@ trait DataType extends TypeInference
 
 object DataType {
   @scala.inline
-  def boolean: typings.vegaTypings.vegaTypingsStrings.boolean = this.cast("boolean")
+  def boolean: typings.vegaTypings.vegaTypingsStrings.boolean = "boolean".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.vegaTypings.vegaTypingsStrings.date = "date".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.date]
   @scala.inline
-  def date: typings.vegaTypings.vegaTypingsStrings.date = this.cast("date")
+  def number: typings.vegaTypings.vegaTypingsStrings.number = "number".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.number]
   @scala.inline
-  def number: typings.vegaTypings.vegaTypingsStrings.number = this.cast("number")
-  @scala.inline
-  def string: typings.vegaTypings.vegaTypingsStrings.string = this.cast("string")
+  def string: typings.vegaTypings.vegaTypingsStrings.string = "string".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.string]
 }
 

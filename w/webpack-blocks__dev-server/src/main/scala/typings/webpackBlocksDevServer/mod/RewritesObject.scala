@@ -14,7 +14,6 @@ object RewritesObject {
   @scala.inline
   def apply(from: RegExp, to: String | RewritesToFunction): RewritesObject = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RewritesObject]
   }
 }

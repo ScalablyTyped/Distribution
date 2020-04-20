@@ -49,7 +49,6 @@ object BacklogConfiguration {
     workItemTypeMappedStates: js.Array[WorkItemTypeStateInfo]
   ): BacklogConfiguration = {
     val __obj = js.Dynamic.literal(backlogFields = backlogFields.asInstanceOf[js.Any], bugsBehavior = bugsBehavior.asInstanceOf[js.Any], hiddenBacklogs = hiddenBacklogs.asInstanceOf[js.Any], portfolioBacklogs = portfolioBacklogs.asInstanceOf[js.Any], requirementBacklog = requirementBacklog.asInstanceOf[js.Any], taskBacklog = taskBacklog.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], workItemTypeMappedStates = workItemTypeMappedStates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BacklogConfiguration]
   }
 }

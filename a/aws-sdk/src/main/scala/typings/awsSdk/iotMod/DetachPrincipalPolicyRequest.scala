@@ -20,7 +20,6 @@ object DetachPrincipalPolicyRequest {
   @scala.inline
   def apply(policyName: PolicyName, principal: Principal): DetachPrincipalPolicyRequest = {
     val __obj = js.Dynamic.literal(policyName = policyName.asInstanceOf[js.Any], principal = principal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachPrincipalPolicyRequest]
   }
 }

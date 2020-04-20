@@ -12,7 +12,6 @@ object IResourceLoader {
   @scala.inline
   def apply(getString: String => String): IResourceLoader = {
     val __obj = js.Dynamic.literal(getString = js.Any.fromFunction1(getString))
-  
     __obj.asInstanceOf[IResourceLoader]
   }
 }

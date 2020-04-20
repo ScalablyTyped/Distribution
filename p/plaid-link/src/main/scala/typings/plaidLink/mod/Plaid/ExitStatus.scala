@@ -16,18 +16,16 @@ trait ExitStatus extends js.Object
 
 object ExitStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def choose_device: typings.plaidLink.plaidLinkStrings.choose_device = "choose_device".asInstanceOf[typings.plaidLink.plaidLinkStrings.choose_device]
   @scala.inline
-  def choose_device: typings.plaidLink.plaidLinkStrings.choose_device = this.cast("choose_device")
+  def institution_not_found: typings.plaidLink.plaidLinkStrings.institution_not_found = "institution_not_found".asInstanceOf[typings.plaidLink.plaidLinkStrings.institution_not_found]
   @scala.inline
-  def institution_not_found: typings.plaidLink.plaidLinkStrings.institution_not_found = this.cast("institution_not_found")
+  def requires_code: typings.plaidLink.plaidLinkStrings.requires_code = "requires_code".asInstanceOf[typings.plaidLink.plaidLinkStrings.requires_code]
   @scala.inline
-  def requires_code: typings.plaidLink.plaidLinkStrings.requires_code = this.cast("requires_code")
+  def requires_credentials: typings.plaidLink.plaidLinkStrings.requires_credentials = "requires_credentials".asInstanceOf[typings.plaidLink.plaidLinkStrings.requires_credentials]
   @scala.inline
-  def requires_credentials: typings.plaidLink.plaidLinkStrings.requires_credentials = this.cast("requires_credentials")
+  def requires_questions: typings.plaidLink.plaidLinkStrings.requires_questions = "requires_questions".asInstanceOf[typings.plaidLink.plaidLinkStrings.requires_questions]
   @scala.inline
-  def requires_questions: typings.plaidLink.plaidLinkStrings.requires_questions = this.cast("requires_questions")
-  @scala.inline
-  def requires_selections: typings.plaidLink.plaidLinkStrings.requires_selections = this.cast("requires_selections")
+  def requires_selections: typings.plaidLink.plaidLinkStrings.requires_selections = "requires_selections".asInstanceOf[typings.plaidLink.plaidLinkStrings.requires_selections]
 }
 

@@ -14,7 +14,6 @@ object WebViewContext {
   @scala.inline
   def apply(postMessage: js.Any => Unit): WebViewContext = {
     val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction1(postMessage))
-  
     __obj.asInstanceOf[WebViewContext]
   }
 }

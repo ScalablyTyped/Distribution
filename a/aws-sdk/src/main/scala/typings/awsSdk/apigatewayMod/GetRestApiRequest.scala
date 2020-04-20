@@ -16,7 +16,6 @@ object GetRestApiRequest {
   @scala.inline
   def apply(restApiId: String): GetRestApiRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRestApiRequest]
   }
 }

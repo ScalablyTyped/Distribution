@@ -17,7 +17,6 @@ object ReadonlyFrameAnimationEve {
   @scala.inline
   def apply(animation: AnonFrame, frame: Frame, name: String): ReadonlyFrameAnimationEve = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyFrameAnimationEve]
   }
 }

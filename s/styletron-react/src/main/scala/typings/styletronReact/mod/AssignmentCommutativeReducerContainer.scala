@@ -22,7 +22,6 @@ object AssignmentCommutativeReducerContainer {
     style: StyleObject
   ): AssignmentCommutativeReducerContainer = {
     val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative.asInstanceOf[js.Any], factory = js.Any.fromFunction1(factory), reducer = js.Any.fromFunction2(reducer), style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssignmentCommutativeReducerContainer]
   }
 }

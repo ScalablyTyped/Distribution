@@ -16,6 +16,7 @@ trait AnonChallengeAnswer extends js.Object {
   var privateChallengeParameters: js.UndefOr[StringDictionary[String]] = js.undefined
   var session: js.UndefOr[js.Array[AnonChallengeMetadata]] = js.undefined
   var userAttributes: StringDictionary[String]
+  var userNotFound: js.UndefOr[Boolean] = js.undefined
   var usernameParameter: js.UndefOr[String] = js.undefined
   var validationData: js.UndefOr[StringDictionary[String]] = js.undefined
 }
@@ -33,6 +34,7 @@ object AnonChallengeAnswer {
     password: String = null,
     privateChallengeParameters: StringDictionary[String] = null,
     session: js.Array[AnonChallengeMetadata] = null,
+    userNotFound: js.UndefOr[Boolean] = js.undefined,
     usernameParameter: String = null,
     validationData: StringDictionary[String] = null
   ): AnonChallengeAnswer = {
@@ -46,6 +48,7 @@ object AnonChallengeAnswer {
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (privateChallengeParameters != null) __obj.updateDynamic("privateChallengeParameters")(privateChallengeParameters.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(userNotFound)) __obj.updateDynamic("userNotFound")(userNotFound.asInstanceOf[js.Any])
     if (usernameParameter != null) __obj.updateDynamic("usernameParameter")(usernameParameter.asInstanceOf[js.Any])
     if (validationData != null) __obj.updateDynamic("validationData")(validationData.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonChallengeAnswer]

@@ -18,7 +18,6 @@ object NodeCollectionLayout {
   @scala.inline
   def apply(layoutPositions: (String, LayoutPositionOptions, ElementPositionFunction) => Unit): NodeCollectionLayout = {
     val __obj = js.Dynamic.literal(layoutPositions = js.Any.fromFunction3(layoutPositions))
-  
     __obj.asInstanceOf[NodeCollectionLayout]
   }
 }

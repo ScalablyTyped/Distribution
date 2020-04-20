@@ -47,7 +47,6 @@ object Chunk {
     write: String => Chunk
   ): Chunk = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction1(end), map = js.Any.fromFunction1(map), render = js.Any.fromFunction2(render), setError = js.Any.fromFunction1(setError), tap = js.Any.fromFunction1(tap), untap = js.Any.fromFunction0(untap), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[Chunk]
   }
 }

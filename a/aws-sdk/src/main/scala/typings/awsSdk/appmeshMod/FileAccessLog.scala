@@ -24,7 +24,6 @@ object FileAccessLog {
   @scala.inline
   def apply(path: FilePath): FileAccessLog = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileAccessLog]
   }
 }

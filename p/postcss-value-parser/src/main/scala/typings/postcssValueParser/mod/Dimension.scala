@@ -16,7 +16,6 @@ object Dimension {
   @scala.inline
   def apply(number: String, unit: String): Dimension = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Dimension]
   }
 }

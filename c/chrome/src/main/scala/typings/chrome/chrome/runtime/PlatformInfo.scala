@@ -26,7 +26,6 @@ object PlatformInfo {
   @scala.inline
   def apply(arch: String, nacl_arch: String, os: String): PlatformInfo = {
     val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], nacl_arch = nacl_arch.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlatformInfo]
   }
 }

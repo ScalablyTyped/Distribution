@@ -20,7 +20,6 @@ object IWebXRHitResult {
   @scala.inline
   def apply(transformationMatrix: Matrix, xrHitResult: XRHitResult): IWebXRHitResult = {
     val __obj = js.Dynamic.literal(transformationMatrix = transformationMatrix.asInstanceOf[js.Any], xrHitResult = xrHitResult.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWebXRHitResult]
   }
 }

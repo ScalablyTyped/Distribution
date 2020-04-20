@@ -13,7 +13,6 @@ object Gantt {
   @scala.inline
   def apply(change_view_mode: viewMode => Unit, refresh: js.Array[Task] => Unit): Gantt = {
     val __obj = js.Dynamic.literal(change_view_mode = js.Any.fromFunction1(change_view_mode), refresh = js.Any.fromFunction1(refresh))
-  
     __obj.asInstanceOf[Gantt]
   }
 }

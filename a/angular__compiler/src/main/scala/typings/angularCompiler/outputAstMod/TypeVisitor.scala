@@ -20,7 +20,6 @@ object TypeVisitor {
     visitMapType: (MapType, js.Any) => js.Any
   ): TypeVisitor = {
     val __obj = js.Dynamic.literal(visitArrayType = js.Any.fromFunction2(visitArrayType), visitBuiltinType = js.Any.fromFunction2(visitBuiltinType), visitExpressionType = js.Any.fromFunction2(visitExpressionType), visitMapType = js.Any.fromFunction2(visitMapType))
-  
     __obj.asInstanceOf[TypeVisitor]
   }
 }

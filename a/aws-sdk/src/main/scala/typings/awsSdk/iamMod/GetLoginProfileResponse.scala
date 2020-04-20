@@ -16,7 +16,6 @@ object GetLoginProfileResponse {
   @scala.inline
   def apply(LoginProfile: LoginProfile): GetLoginProfileResponse = {
     val __obj = js.Dynamic.literal(LoginProfile = LoginProfile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLoginProfileResponse]
   }
 }

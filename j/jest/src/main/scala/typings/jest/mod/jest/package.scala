@@ -15,7 +15,7 @@ package object jest {
   ]
   type CustomAsyncMatchers[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in jest.jest.jest.NonAsyncMatchers<TMatchers> ]: jest.jest.jest.CustomAsymmetricMatcher<TMatchers[K]>}
-    */ typings.jest.jestStrings.CustomAsyncMatchers with TMatchers
+    */ typings.jest.jestStrings.CustomAsyncMatchers with org.scalablytyped.runtime.TopLevel[TMatchers]
   // should be TMatcherReturn extends void|Promise<void> but getting dtslint error
   type CustomJestMatcher[TMatcher /* <: js.Function1[/* repeated */ js.Any, _] */, TMatcherReturn] = js.Function1[
     /* args */ typings.jest.mod.jest.RemoveFirstFromTuple[typings.jest.mod.jest.Parameters[TMatcher]], 
@@ -36,7 +36,7 @@ package object jest {
   // should be TMatcherReturn extends void|Promise<void> but getting dtslint error
   // Use the `void` type for return types only. Otherwise, use `undefined`. See: https://github.com/Microsoft/dtslint/blob/master/docs/void-return.md
   // have added issue https://github.com/microsoft/dtslint/issues/256 - Cannot have type union containing void ( to be used as return type only
-  type ExtendedMatchers[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */, TMatcherReturn, TActual] = (typings.jest.mod.jest.Matchers[TMatcherReturn, TActual]) with typings.jest.jestStrings.ExtendedMatchers with TMatchers
+  type ExtendedMatchers[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */, TMatcherReturn, TActual] = (typings.jest.mod.jest.Matchers[TMatcherReturn, TActual]) with typings.jest.jestStrings.ExtendedMatchers with org.scalablytyped.runtime.TopLevel[TMatchers]
   type FunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? K : never}[keyof T] */ js.Any) with java.lang.String
   type JestExtendedMatchers[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */, TActual] = typings.jest.mod.jest.JestMatchersShape[
     typings.jest.mod.jest.ExtendedMatchers[TMatchers, scala.Unit, TActual], 
@@ -60,7 +60,7 @@ package object jest {
     *  const mockApi = api as jest.Mocked<typeof api>;
     *  api.MyApi.prototype.myApiMethod.mockImplementation(() => "test");
     */
-  type Mocked[T] = typings.jest.jestStrings.Mocked with js.Any with T
+  type Mocked[T] = typings.jest.jestStrings.Mocked with org.scalablytyped.runtime.TopLevel[js.Any] with T
   /**
     * Wrap a class with mock definitions
     *
@@ -97,7 +97,7 @@ package object jest {
   /**
     * Construct a type with the properties of T except for those in type K.
     */
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   type PrintLabel = js.Function1[/* string */ java.lang.String, java.lang.String]
   type PromiseMatchers[T /* <: typings.jest.JestMatchersShape */] = typings.jest.mod.jest.Omit[

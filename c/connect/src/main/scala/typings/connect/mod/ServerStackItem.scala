@@ -13,7 +13,6 @@ object ServerStackItem {
   @scala.inline
   def apply(handle: ServerHandle, route: String): ServerStackItem = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerStackItem]
   }
 }

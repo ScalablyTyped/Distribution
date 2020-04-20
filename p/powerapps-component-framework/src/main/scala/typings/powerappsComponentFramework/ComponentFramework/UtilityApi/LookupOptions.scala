@@ -40,7 +40,6 @@ object LookupOptions {
     viewIds: js.Array[String]
   ): LookupOptions = {
     val __obj = js.Dynamic.literal(allowMultiSelect = allowMultiSelect.asInstanceOf[js.Any], defaultEntityType = defaultEntityType.asInstanceOf[js.Any], defaultViewId = defaultViewId.asInstanceOf[js.Any], entityTypes = entityTypes.asInstanceOf[js.Any], viewIds = viewIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LookupOptions]
   }
 }

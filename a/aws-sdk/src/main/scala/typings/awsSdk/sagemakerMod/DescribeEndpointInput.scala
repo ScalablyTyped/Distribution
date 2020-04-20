@@ -16,7 +16,6 @@ object DescribeEndpointInput {
   @scala.inline
   def apply(EndpointName: EndpointName): DescribeEndpointInput = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeEndpointInput]
   }
 }

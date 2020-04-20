@@ -1,15 +1,19 @@
 package typings.simonwepSelectionJs.mod
 
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.`class`
+import typings.simonwepSelectionJs.simonwepSelectionJsStrings.beforestart
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.boundaries
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.disableTouch
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.mode
+import typings.simonwepSelectionJs.simonwepSelectionJsStrings.move
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.scrollSpeedDivider
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.selectables
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.selectionAreaContainer
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.singleClick
+import typings.simonwepSelectionJs.simonwepSelectionJsStrings.start
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.startThreshold
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.startareas
+import typings.simonwepSelectionJs.simonwepSelectionJsStrings.stop
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -26,11 +30,11 @@ trait Selection extends js.Object {
   def enable(): Unit = js.native
   def getSelection(): js.Array[Element] = js.native
   def keepSelection(): Unit = js.native
-  def off[E /* <: String */](
+  def off[E /* <: beforestart | start | move | stop */](
     ev: E,
     cb: /* import warning: importer.ImportType#apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
   ): this.type = js.native
-  def on[E /* <: String */](
+  def on[E /* <: beforestart | start | move | stop */](
     ev: E,
     cb: /* import warning: importer.ImportType#apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
   ): this.type = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeSnackbarComponentProps {
   @scala.inline
-  def ReactNativeSnackbarComponentProps: SnackbarComponentProps.type = typings.reactNativeSnackbarComponent.mod.SnackbarComponentProps
+  def ReactNativeSnackbarComponentProps: SnackbarComponentProps.type = SnackbarComponentProps
   type ReactNativeSnackbarComponentProps = SnackbarComponentProps
 }
 

@@ -27,7 +27,6 @@ object PrepareApplicationStageDirectoryOptions {
     version: String
   ): PrepareApplicationStageDirectoryOptions = {
     val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], arch = arch.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], platformName = platformName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrepareApplicationStageDirectoryOptions]
   }
 }

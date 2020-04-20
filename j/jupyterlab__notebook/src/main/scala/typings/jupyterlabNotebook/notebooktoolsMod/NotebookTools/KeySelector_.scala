@@ -51,6 +51,6 @@ class KeySelector_ protected () extends Tool {
   /**
     * The select node for the widget.
     */
-  def selectNode(): HTMLSelectElement = js.native
+  def selectNode: HTMLSelectElement = js.native
 }
 

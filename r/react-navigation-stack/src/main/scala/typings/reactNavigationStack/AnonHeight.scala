@@ -14,7 +14,6 @@ object AnonHeight {
   @scala.inline
   def apply(height: Double, route: Route[String]): AnonHeight = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHeight]
   }
 }

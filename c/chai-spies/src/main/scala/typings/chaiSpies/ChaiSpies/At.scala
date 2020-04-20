@@ -34,7 +34,6 @@ object At {
   @scala.inline
   def apply(least: Double => Assertion, most: Double => Assertion): At = {
     val __obj = js.Dynamic.literal(least = js.Any.fromFunction1(least), most = js.Any.fromFunction1(most))
-  
     __obj.asInstanceOf[At]
   }
 }

@@ -14,7 +14,6 @@ object AnonDegree {
   @scala.inline
   def apply(degree: Double, mode: Mode): AnonDegree = {
     val __obj = js.Dynamic.literal(degree = degree.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDegree]
   }
 }

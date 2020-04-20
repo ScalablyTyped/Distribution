@@ -16,7 +16,6 @@ object RestoreBackupRequest {
   @scala.inline
   def apply(BackupId: BackupId): RestoreBackupRequest = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestoreBackupRequest]
   }
 }

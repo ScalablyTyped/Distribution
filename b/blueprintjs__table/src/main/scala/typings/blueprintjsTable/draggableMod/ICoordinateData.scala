@@ -37,7 +37,6 @@ object ICoordinateData {
     offset: IClientCoordinates
   ): ICoordinateData = {
     val __obj = js.Dynamic.literal(activation = activation.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICoordinateData]
   }
 }

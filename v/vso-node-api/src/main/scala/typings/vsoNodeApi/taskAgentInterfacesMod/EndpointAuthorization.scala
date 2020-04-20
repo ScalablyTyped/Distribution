@@ -14,7 +14,6 @@ object EndpointAuthorization {
   @scala.inline
   def apply(parameters: StringDictionary[String], scheme: String): EndpointAuthorization = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EndpointAuthorization]
   }
 }

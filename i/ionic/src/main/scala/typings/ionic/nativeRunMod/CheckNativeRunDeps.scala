@@ -13,7 +13,6 @@ object CheckNativeRunDeps {
   @scala.inline
   def apply(config: IConfig): CheckNativeRunDeps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckNativeRunDeps]
   }
 }

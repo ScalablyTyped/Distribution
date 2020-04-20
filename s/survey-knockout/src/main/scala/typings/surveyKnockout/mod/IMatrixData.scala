@@ -12,7 +12,6 @@ object IMatrixData {
   @scala.inline
   def apply(onMatrixRowChanged: MatrixRowModel => Unit): IMatrixData = {
     val __obj = js.Dynamic.literal(onMatrixRowChanged = js.Any.fromFunction1(onMatrixRowChanged))
-  
     __obj.asInstanceOf[IMatrixData]
   }
 }

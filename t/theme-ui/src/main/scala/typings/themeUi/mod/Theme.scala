@@ -25,40 +25,60 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent theme-ui.theme-ui.Omit<styled-system.styled-system.Theme<styled-system.styled-system.TLengthStyledSystem>, 'colors'> */
 trait Theme extends js.Object {
-  var borderStyles: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object], String]] = js.undefined
-  var borderWidths: js.UndefOr[
-    typings.styledSystem.mod.ObjectOrArray[BorderWidthProperty[TLengthStyledSystem], String]
+  var borderStyles: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object], /* keyof any */ String]
   ] = js.undefined
-  var borders: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object], String]] = js.undefined
-  var breakpoints: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[Double | String | js.Symbol, String]] = js.undefined
-  var buttons: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], String]] = js.undefined
-  var colorStyles: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], String]] = js.undefined
+  var borderWidths: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[BorderWidthProperty[TLengthStyledSystem], /* keyof any */ String]
+  ] = js.undefined
+  var borders: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object], /* keyof any */ String]
+  ] = js.undefined
+  var breakpoints: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[Double | String | js.Symbol, /* keyof any */ String]
+  ] = js.undefined
+  var buttons: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]
+  ] = js.undefined
+  var colorStyles: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]
+  ] = js.undefined
   /**
     * Define the colors that are available through this theme
     */
   var colors: js.UndefOr[ColorModemodeskstringColo] = js.undefined
-  var fontSizes: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[FontSizeProperty[Double], String]] = js.undefined
-  var fontWeights: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[FontWeightProperty, String]] = js.undefined
-  var fonts: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[FontFamilyProperty, String]] = js.undefined
+  var fontSizes: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[FontSizeProperty[Double], /* keyof any */ String]
+  ] = js.undefined
+  var fontWeights: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[FontWeightProperty, /* keyof any */ String]
+  ] = js.undefined
+  var fonts: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[FontFamilyProperty, /* keyof any */ String]
+  ] = js.undefined
   /**
     * Provide a value here to enable color modes
     */
   var initialColorModeName: js.UndefOr[String] = js.undefined
   var letterSpacings: js.UndefOr[
-    typings.styledSystem.mod.ObjectOrArray[LetterSpacingProperty[TLengthStyledSystem], String]
+    typings.styledSystem.mod.ObjectOrArray[LetterSpacingProperty[TLengthStyledSystem], /* keyof any */ String]
   ] = js.undefined
   var lineHeights: js.UndefOr[
-    typings.styledSystem.mod.ObjectOrArray[LineHeightProperty[TLengthStyledSystem], String]
+    typings.styledSystem.mod.ObjectOrArray[LineHeightProperty[TLengthStyledSystem], /* keyof any */ String]
   ] = js.undefined
   var mediaQueries: js.UndefOr[StringDictionary[String]] = js.undefined
   var radii: js.UndefOr[
-    typings.styledSystem.mod.ObjectOrArray[BorderRadiusProperty[TLengthStyledSystem], String]
+    typings.styledSystem.mod.ObjectOrArray[BorderRadiusProperty[TLengthStyledSystem], /* keyof any */ String]
   ] = js.undefined
-  var shadows: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[BoxShadowProperty, String]] = js.undefined
+  var shadows: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[BoxShadowProperty, /* keyof any */ String]
+  ] = js.undefined
   var sizes: js.UndefOr[
-    typings.styledSystem.mod.ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object], String]
+    typings.styledSystem.mod.ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object], /* keyof any */ String]
   ] = js.undefined
-  var space: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[MarginProperty[Double | String], String]] = js.undefined
+  var space: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[MarginProperty[Double | String], /* keyof any */ String]
+  ] = js.undefined
   /**
     * Styles for elements rendered in MDX can be added to the theme.styles
     * object. This is the primary, low-level way to control typographic and
@@ -67,7 +87,9 @@ trait Theme extends js.Object {
     * fonts, etc.
     */
   var styles: js.UndefOr[PinStyledTagsSystemStyleO] = js.undefined
-  var textStyles: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], String]] = js.undefined
+  var textStyles: js.UndefOr[
+    typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]
+  ] = js.undefined
   /**
     * Enable/disable custom CSS properties/variables if lower browser
     * support is required (for eg. IE 11).
@@ -75,34 +97,34 @@ trait Theme extends js.Object {
     * References: https://theme-ui.com/color-modes/#turn-off-custom-properties
     */
   var useCustomProperties: js.UndefOr[Boolean] = js.undefined
-  var zIndices: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[ZIndexProperty, String]] = js.undefined
+  var zIndices: js.UndefOr[typings.styledSystem.mod.ObjectOrArray[ZIndexProperty, /* keyof any */ String]] = js.undefined
 }
 
 object Theme {
   @scala.inline
   def apply(
-    borderStyles: typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object], String] = null,
-    borderWidths: typings.styledSystem.mod.ObjectOrArray[BorderWidthProperty[TLengthStyledSystem], String] = null,
-    borders: typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object], String] = null,
-    breakpoints: typings.styledSystem.mod.ObjectOrArray[Double | String | js.Symbol, String] = null,
-    buttons: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], String] = null,
-    colorStyles: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], String] = null,
+    borderStyles: typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object], /* keyof any */ String] = null,
+    borderWidths: typings.styledSystem.mod.ObjectOrArray[BorderWidthProperty[TLengthStyledSystem], /* keyof any */ String] = null,
+    borders: typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object], /* keyof any */ String] = null,
+    breakpoints: typings.styledSystem.mod.ObjectOrArray[Double | String | js.Symbol, /* keyof any */ String] = null,
+    buttons: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String] = null,
+    colorStyles: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String] = null,
     colors: ColorModemodeskstringColo = null,
-    fontSizes: typings.styledSystem.mod.ObjectOrArray[FontSizeProperty[Double], String] = null,
-    fontWeights: typings.styledSystem.mod.ObjectOrArray[FontWeightProperty, String] = null,
-    fonts: typings.styledSystem.mod.ObjectOrArray[FontFamilyProperty, String] = null,
+    fontSizes: typings.styledSystem.mod.ObjectOrArray[FontSizeProperty[Double], /* keyof any */ String] = null,
+    fontWeights: typings.styledSystem.mod.ObjectOrArray[FontWeightProperty, /* keyof any */ String] = null,
+    fonts: typings.styledSystem.mod.ObjectOrArray[FontFamilyProperty, /* keyof any */ String] = null,
     initialColorModeName: String = null,
-    letterSpacings: typings.styledSystem.mod.ObjectOrArray[LetterSpacingProperty[TLengthStyledSystem], String] = null,
-    lineHeights: typings.styledSystem.mod.ObjectOrArray[LineHeightProperty[TLengthStyledSystem], String] = null,
+    letterSpacings: typings.styledSystem.mod.ObjectOrArray[LetterSpacingProperty[TLengthStyledSystem], /* keyof any */ String] = null,
+    lineHeights: typings.styledSystem.mod.ObjectOrArray[LineHeightProperty[TLengthStyledSystem], /* keyof any */ String] = null,
     mediaQueries: StringDictionary[String] = null,
-    radii: typings.styledSystem.mod.ObjectOrArray[BorderRadiusProperty[TLengthStyledSystem], String] = null,
-    shadows: typings.styledSystem.mod.ObjectOrArray[BoxShadowProperty, String] = null,
-    sizes: typings.styledSystem.mod.ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object], String] = null,
-    space: typings.styledSystem.mod.ObjectOrArray[MarginProperty[Double | String], String] = null,
+    radii: typings.styledSystem.mod.ObjectOrArray[BorderRadiusProperty[TLengthStyledSystem], /* keyof any */ String] = null,
+    shadows: typings.styledSystem.mod.ObjectOrArray[BoxShadowProperty, /* keyof any */ String] = null,
+    sizes: typings.styledSystem.mod.ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object], /* keyof any */ String] = null,
+    space: typings.styledSystem.mod.ObjectOrArray[MarginProperty[Double | String], /* keyof any */ String] = null,
     styles: PinStyledTagsSystemStyleO = null,
-    textStyles: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], String] = null,
+    textStyles: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String] = null,
     useCustomProperties: js.UndefOr[Boolean] = js.undefined,
-    zIndices: typings.styledSystem.mod.ObjectOrArray[ZIndexProperty, String] = null
+    zIndices: typings.styledSystem.mod.ObjectOrArray[ZIndexProperty, /* keyof any */ String] = null
   ): Theme = {
     val __obj = js.Dynamic.literal()
     if (borderStyles != null) __obj.updateDynamic("borderStyles")(borderStyles.asInstanceOf[js.Any])

@@ -14,7 +14,6 @@ object PluginInterfaceType {
   @scala.inline
   def apply(Capability: String, Prefix: String, Version: String): PluginInterfaceType = {
     val __obj = js.Dynamic.literal(Capability = Capability.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginInterfaceType]
   }
 }

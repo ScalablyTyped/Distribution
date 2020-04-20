@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_canvas extends js.Object {
-  def apply[P /* <: js.Object */, T](component: canvas, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[canvas], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: canvas, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[canvas], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: canvas, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[canvas], 
+      Exclude[/* keyof react.react.ComponentProps<'canvas'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: canvas, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[canvas], 
+      Exclude[/* keyof react.react.ComponentProps<'canvas'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

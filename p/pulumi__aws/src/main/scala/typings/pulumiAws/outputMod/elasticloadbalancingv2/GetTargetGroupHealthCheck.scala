@@ -31,7 +31,6 @@ object GetTargetGroupHealthCheck {
     unhealthyThreshold: Double
   ): GetTargetGroupHealthCheck = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], healthyThreshold = healthyThreshold.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], matcher = matcher.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], unhealthyThreshold = unhealthyThreshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTargetGroupHealthCheck]
   }
 }

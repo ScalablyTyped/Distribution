@@ -22,30 +22,28 @@ trait placeholderNumberType extends js.Object
 
 object placeholderNumberType {
   @scala.inline
-  def FIXED_LINE: typings.intlTelInput.intlTelInputStrings.FIXED_LINE = this.cast("FIXED_LINE")
+  def FIXED_LINE: typings.intlTelInput.intlTelInputStrings.FIXED_LINE = "FIXED_LINE".asInstanceOf[typings.intlTelInput.intlTelInputStrings.FIXED_LINE]
   @scala.inline
-  def FIXED_LINE_OR_MOBILE: typings.intlTelInput.intlTelInputStrings.FIXED_LINE_OR_MOBILE = this.cast("FIXED_LINE_OR_MOBILE")
+  def FIXED_LINE_OR_MOBILE: typings.intlTelInput.intlTelInputStrings.FIXED_LINE_OR_MOBILE = "FIXED_LINE_OR_MOBILE".asInstanceOf[typings.intlTelInput.intlTelInputStrings.FIXED_LINE_OR_MOBILE]
   @scala.inline
-  def MOBILE: typings.intlTelInput.intlTelInputStrings.MOBILE = this.cast("MOBILE")
+  def MOBILE: typings.intlTelInput.intlTelInputStrings.MOBILE = "MOBILE".asInstanceOf[typings.intlTelInput.intlTelInputStrings.MOBILE]
   @scala.inline
-  def PAGER: typings.intlTelInput.intlTelInputStrings.PAGER = this.cast("PAGER")
+  def PAGER: typings.intlTelInput.intlTelInputStrings.PAGER = "PAGER".asInstanceOf[typings.intlTelInput.intlTelInputStrings.PAGER]
   @scala.inline
-  def PERSONAL_NUMBER: typings.intlTelInput.intlTelInputStrings.PERSONAL_NUMBER = this.cast("PERSONAL_NUMBER")
+  def PERSONAL_NUMBER: typings.intlTelInput.intlTelInputStrings.PERSONAL_NUMBER = "PERSONAL_NUMBER".asInstanceOf[typings.intlTelInput.intlTelInputStrings.PERSONAL_NUMBER]
   @scala.inline
-  def PREMIUM_RATE: typings.intlTelInput.intlTelInputStrings.PREMIUM_RATE = this.cast("PREMIUM_RATE")
+  def PREMIUM_RATE: typings.intlTelInput.intlTelInputStrings.PREMIUM_RATE = "PREMIUM_RATE".asInstanceOf[typings.intlTelInput.intlTelInputStrings.PREMIUM_RATE]
   @scala.inline
-  def SHARED_COST: typings.intlTelInput.intlTelInputStrings.SHARED_COST = this.cast("SHARED_COST")
+  def SHARED_COST: typings.intlTelInput.intlTelInputStrings.SHARED_COST = "SHARED_COST".asInstanceOf[typings.intlTelInput.intlTelInputStrings.SHARED_COST]
   @scala.inline
-  def TOLL_FREE: typings.intlTelInput.intlTelInputStrings.TOLL_FREE = this.cast("TOLL_FREE")
+  def TOLL_FREE: typings.intlTelInput.intlTelInputStrings.TOLL_FREE = "TOLL_FREE".asInstanceOf[typings.intlTelInput.intlTelInputStrings.TOLL_FREE]
   @scala.inline
-  def UAN: typings.intlTelInput.intlTelInputStrings.UAN = this.cast("UAN")
+  def UAN: typings.intlTelInput.intlTelInputStrings.UAN = "UAN".asInstanceOf[typings.intlTelInput.intlTelInputStrings.UAN]
   @scala.inline
-  def UNKNOWN: typings.intlTelInput.intlTelInputStrings.UNKNOWN = this.cast("UNKNOWN")
+  def UNKNOWN: typings.intlTelInput.intlTelInputStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.intlTelInput.intlTelInputStrings.UNKNOWN]
   @scala.inline
-  def VOICEMAIL: typings.intlTelInput.intlTelInputStrings.VOICEMAIL = this.cast("VOICEMAIL")
+  def VOICEMAIL: typings.intlTelInput.intlTelInputStrings.VOICEMAIL = "VOICEMAIL".asInstanceOf[typings.intlTelInput.intlTelInputStrings.VOICEMAIL]
   @scala.inline
-  def VOIP: typings.intlTelInput.intlTelInputStrings.VOIP = this.cast("VOIP")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VOIP: typings.intlTelInput.intlTelInputStrings.VOIP = "VOIP".asInstanceOf[typings.intlTelInput.intlTelInputStrings.VOIP]
 }
 

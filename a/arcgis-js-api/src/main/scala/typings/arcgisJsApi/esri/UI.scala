@@ -1,6 +1,15 @@
 package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-leading`
+import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-left`
+import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-right`
+import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-trailing`
+import typings.arcgisJsApi.arcgisJsApiStrings.`top-leading`
+import typings.arcgisJsApi.arcgisJsApiStrings.`top-left`
+import typings.arcgisJsApi.arcgisJsApiStrings.`top-right`
+import typings.arcgisJsApi.arcgisJsApiStrings.`top-trailing`
+import typings.arcgisJsApi.arcgisJsApiStrings.manual
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,10 +65,10 @@ trait UI extends Accessor {
     *
     * @param component The component(s) to add to the UI. This can be a widget instance, HTML element, a string value representing a DOM node ID, or an array containing a combination of any of those types. See the example snippets below for code examples. Alternatively, you can pass an array of objects with the following specification.
     * @param component.component The component to add to the UI. This can be a widget instance, HTML element, a string value representing a DOM node ID.
-    * @param component.position The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
+    * @param component.position The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left.
     * @param component.index The placement index of the component. This index shows where to place the component relative to other components. For example a value of `0` would place it topmost when position is top-*, leftmost for bottom-left and right most for bottom-right.
-    * @param position The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
-    * @param position.position The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
+    * @param position The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left.
+    * @param position.position The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left.
     * @param position.index The placement index of the component(s). This index shows where to place the component relative to other components. For example a value of `0` would place it topmost when position is top-*, leftmost for bottom-left and right most for bottom-right.
     *
     */
@@ -74,26 +83,46 @@ trait UI extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#empty)
     *
-    * @param position The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
+    * @param position The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left.
     *
     */
   def empty(): Unit = js.native
-  def empty(position: String): Unit = js.native
+  @JSName("empty")
+  def empty_bottomleading(position: `bottom-leading`): Unit = js.native
+  @JSName("empty")
+  def empty_bottomleft(position: `bottom-left`): Unit = js.native
+  @JSName("empty")
+  def empty_bottomright(position: `bottom-right`): Unit = js.native
+  @JSName("empty")
+  def empty_bottomtrailing(position: `bottom-trailing`): Unit = js.native
+  @JSName("empty")
+  def empty_manual(position: manual): Unit = js.native
+  @JSName("empty")
+  def empty_topleading(position: `top-leading`): Unit = js.native
+  @JSName("empty")
+  def empty_topleft(position: `top-left`): Unit = js.native
+  @JSName("empty")
+  def empty_topright(position: `top-right`): Unit = js.native
+  @JSName("empty")
+  def empty_toptrailing(position: `top-trailing`): Unit = js.native
   /**
     * Find a component by widget or DOM ID.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#find)
     *
-    * @param the component's ID
+    * @param id The component's ID.
     *
     */
-  def find(the: String): HTMLElement | Widget_ = js.native
+  def find(id: String): HTMLElement | Widget_ = js.native
   def move(component: String): Unit = js.native
   def move(component: String, position: String): Unit = js.native
+  def move(component: String, position: UIMovePosition): Unit = js.native
   def move(component: js.Array[_]): Unit = js.native
   def move(component: js.Array[_], position: String): Unit = js.native
+  def move(component: js.Array[_], position: UIMovePosition): Unit = js.native
   def move(component: UIMoveComponent): Unit = js.native
   def move(component: UIMoveComponent, position: String): Unit = js.native
+  def move(component: UIMoveComponent, position: UIMovePosition): Unit = js.native
   /**
     * Moves one or more UI component(s) to the specified position.
     *
@@ -101,14 +130,19 @@ trait UI extends Accessor {
     *
     * @param component The component(s) to move. This value can be a widget instance, HTML element, a string value representing a DOM node ID, or an array containing a combination of any of those types. See the example snippets below for code examples. Alternatively, you can pass an array of objects with the following specification.
     * @param component.component The component to move. This can be a widget instance, HTML element, a string value representing a DOM node ID.
-    * @param component.position The destination position. The component will be placed in the UI [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container) when not provided. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
-    * @param position The destination position. The component will be placed in the UI [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container) when not provided. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
+    * @param component.position The destination position. The component will be placed in the UI [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container) when not provided. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS.
+    * @param component.index The placement index of the component. This index shows where to place the component relative to other components. For example a value of 0 would place it topmost when position is top-*, leftmost for bottom-left and right most for bottom-right.
+    * @param position The destination position. The component will be placed in the UI [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container) when not provided.
+    * @param position.position The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS.
+    * @param position.index The placement index of the component(s). This index shows where to place the component relative to other components. For example a value of `0` would place it topmost when position is top-*, leftmost for bottom-left and right most for bottom-right.
     *
     */
   def move(component: Widget_): Unit = js.native
   def move(component: Widget_, position: String): Unit = js.native
+  def move(component: Widget_, position: UIMovePosition): Unit = js.native
   def move(component: HTMLElement): Unit = js.native
   def move(component: HTMLElement, position: String): Unit = js.native
+  def move(component: HTMLElement, position: UIMovePosition): Unit = js.native
   def remove(component: String): Unit = js.native
   def remove(component: js.Array[_]): Unit = js.native
   /**

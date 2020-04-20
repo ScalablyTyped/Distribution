@@ -12,7 +12,6 @@ object AnonTemplateidString {
   @scala.inline
   def apply(template_id: String): AnonTemplateidString = {
     val __obj = js.Dynamic.literal(template_id = template_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTemplateidString]
   }
 }

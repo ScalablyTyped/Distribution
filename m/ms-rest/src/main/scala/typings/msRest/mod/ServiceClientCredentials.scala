@@ -19,7 +19,6 @@ object ServiceClientCredentials {
   @scala.inline
   def apply(signRequest: (WebResource, js.Function1[/* err */ Error, Unit]) => Unit): ServiceClientCredentials = {
     val __obj = js.Dynamic.literal(signRequest = js.Any.fromFunction2(signRequest))
-  
     __obj.asInstanceOf[ServiceClientCredentials]
   }
 }

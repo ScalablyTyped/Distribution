@@ -13,7 +13,6 @@ object ConnectionStyle {
   @scala.inline
   def apply(endArrow: String, startArrow: String): ConnectionStyle = {
     val __obj = js.Dynamic.literal(endArrow = endArrow.asInstanceOf[js.Any], startArrow = startArrow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionStyle]
   }
 }

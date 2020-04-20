@@ -20,7 +20,6 @@ object AttachGroupPolicyRequest {
   @scala.inline
   def apply(GroupName: groupNameType, PolicyArn: arnType): AttachGroupPolicyRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], PolicyArn = PolicyArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachGroupPolicyRequest]
   }
 }

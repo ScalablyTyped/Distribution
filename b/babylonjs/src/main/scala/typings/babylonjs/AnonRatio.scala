@@ -12,7 +12,6 @@ object AnonRatio {
   @scala.inline
   def apply(ratio: Double): AnonRatio = {
     val __obj = js.Dynamic.literal(ratio = ratio.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRatio]
   }
 }

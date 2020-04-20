@@ -21,28 +21,26 @@ trait Types extends js.Object
 
 object Types {
   @scala.inline
-  def alternatives: typings.reactNativeJoi.reactNativeJoiStrings.alternatives = this.cast("alternatives")
+  def alternatives: typings.reactNativeJoi.reactNativeJoiStrings.alternatives = "alternatives".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.alternatives]
   @scala.inline
-  def any: typings.reactNativeJoi.reactNativeJoiStrings.any = this.cast("any")
+  def any: typings.reactNativeJoi.reactNativeJoiStrings.any = "any".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.any]
   @scala.inline
-  def array: typings.reactNativeJoi.reactNativeJoiStrings.array = this.cast("array")
+  def array: typings.reactNativeJoi.reactNativeJoiStrings.array = "array".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.array]
   @scala.inline
-  def binary: typings.reactNativeJoi.reactNativeJoiStrings.binary = this.cast("binary")
+  def binary: typings.reactNativeJoi.reactNativeJoiStrings.binary = "binary".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.binary]
   @scala.inline
-  def boolean: typings.reactNativeJoi.reactNativeJoiStrings.boolean = this.cast("boolean")
+  def boolean: typings.reactNativeJoi.reactNativeJoiStrings.boolean = "boolean".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.reactNativeJoi.reactNativeJoiStrings.date = "date".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.date]
   @scala.inline
-  def date: typings.reactNativeJoi.reactNativeJoiStrings.date = this.cast("date")
+  def function: typings.reactNativeJoi.reactNativeJoiStrings.function = "function".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.function]
   @scala.inline
-  def function: typings.reactNativeJoi.reactNativeJoiStrings.function = this.cast("function")
+  def `lazy`: typings.reactNativeJoi.reactNativeJoiStrings.`lazy` = "lazy".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.`lazy`]
   @scala.inline
-  def `lazy`: typings.reactNativeJoi.reactNativeJoiStrings.`lazy` = this.cast("lazy")
+  def number: typings.reactNativeJoi.reactNativeJoiStrings.number = "number".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.number]
   @scala.inline
-  def number: typings.reactNativeJoi.reactNativeJoiStrings.number = this.cast("number")
+  def `object`: typings.reactNativeJoi.reactNativeJoiStrings.`object` = "object".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.`object`]
   @scala.inline
-  def `object`: typings.reactNativeJoi.reactNativeJoiStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.reactNativeJoi.reactNativeJoiStrings.string = this.cast("string")
+  def string: typings.reactNativeJoi.reactNativeJoiStrings.string = "string".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.string]
 }
 

@@ -21,26 +21,24 @@ trait MozWindowShadowProperty extends js.Object
 
 object MozWindowShadowProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.csstype.csstypeStrings.default = "default".asInstanceOf[typings.csstype.csstypeStrings.default]
   @scala.inline
-  def default: typings.csstype.csstypeStrings.default = this.cast("default")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def menu: menu_ = "menu".asInstanceOf[menu_]
   @scala.inline
-  def menu: menu_ = this.cast("menu")
+  def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
   @scala.inline
-  def none: typings.csstype.csstypeStrings.none = this.cast("none")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def sheet: typings.csstype.csstypeStrings.sheet = "sheet".asInstanceOf[typings.csstype.csstypeStrings.sheet]
   @scala.inline
-  def sheet: typings.csstype.csstypeStrings.sheet = this.cast("sheet")
+  def tooltip: typings.csstype.csstypeStrings.tooltip = "tooltip".asInstanceOf[typings.csstype.csstypeStrings.tooltip]
   @scala.inline
-  def tooltip: typings.csstype.csstypeStrings.tooltip = this.cast("tooltip")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

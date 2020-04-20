@@ -15,16 +15,14 @@ trait Types extends js.Object
 
 object Types {
   @scala.inline
-  def CUSTOMER: typings.braintreeWeb.braintreeWebStrings.CUSTOMER = this.cast("CUSTOMER")
+  def CUSTOMER: typings.braintreeWeb.braintreeWebStrings.CUSTOMER = "CUSTOMER".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.CUSTOMER]
   @scala.inline
-  def INTERNAL: typings.braintreeWeb.braintreeWebStrings.INTERNAL = this.cast("INTERNAL")
+  def INTERNAL: typings.braintreeWeb.braintreeWebStrings.INTERNAL = "INTERNAL".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.INTERNAL]
   @scala.inline
-  def MERCHANT: typings.braintreeWeb.braintreeWebStrings.MERCHANT = this.cast("MERCHANT")
+  def MERCHANT: typings.braintreeWeb.braintreeWebStrings.MERCHANT = "MERCHANT".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.MERCHANT]
   @scala.inline
-  def NETWORK: typings.braintreeWeb.braintreeWebStrings.NETWORK = this.cast("NETWORK")
+  def NETWORK: typings.braintreeWeb.braintreeWebStrings.NETWORK = "NETWORK".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.NETWORK]
   @scala.inline
-  def UNKNOWN: typings.braintreeWeb.braintreeWebStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNKNOWN: typings.braintreeWeb.braintreeWebStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.UNKNOWN]
 }
 

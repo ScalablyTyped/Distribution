@@ -14,10 +14,8 @@ trait AcSharePointListTransferType extends js.Object
 
 object AcSharePointListTransferType {
   @scala.inline
-  def acImportSharePointList: `0` = this.cast(0)
+  def acImportSharePointList: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acLinkSharePointList: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acLinkSharePointList: `1` = 1.asInstanceOf[`1`]
 }
 

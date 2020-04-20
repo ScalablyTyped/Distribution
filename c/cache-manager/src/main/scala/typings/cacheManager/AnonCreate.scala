@@ -13,7 +13,6 @@ object AnonCreate {
   @scala.inline
   def apply(create: /* repeated */ js.Any => Store): AnonCreate = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[AnonCreate]
   }
 }

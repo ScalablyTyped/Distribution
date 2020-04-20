@@ -14,7 +14,6 @@ object AnonBuildUndefinedNode {
   @scala.inline
   def apply(buildUndefinedNode: () => Node, push: AnonId => Unit): AnonBuildUndefinedNode = {
     val __obj = js.Dynamic.literal(buildUndefinedNode = js.Any.fromFunction0(buildUndefinedNode), push = js.Any.fromFunction1(push))
-  
     __obj.asInstanceOf[AnonBuildUndefinedNode]
   }
 }

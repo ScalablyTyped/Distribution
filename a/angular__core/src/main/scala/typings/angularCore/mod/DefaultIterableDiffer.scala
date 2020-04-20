@@ -32,8 +32,10 @@ class DefaultIterableDiffer[V] ()
   /** Iterate over all added items. */
   /* CompleteClass */
   override def forEachAddedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
-  /** Iterate over all items which had their identity (as computed by the `TrackByFunction`)
-    * changed. */
+  /**
+    * Iterate over all items which had their identity (as computed by the `TrackByFunction`)
+    * changed.
+    */
   /* CompleteClass */
   override def forEachIdentityChange(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
   /**
@@ -79,7 +81,7 @@ class DefaultIterableDiffer[V] ()
   /** Iterate over all removed items. */
   /* CompleteClass */
   override def forEachRemovedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
-  def isDirty(): Boolean = js.native
+  def isDirty: Boolean = js.native
   def onDestroy(): Unit = js.native
 }
 

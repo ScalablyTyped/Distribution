@@ -16,7 +16,6 @@ object DeleteVirtualMFADeviceRequest {
   @scala.inline
   def apply(SerialNumber: serialNumberType): DeleteVirtualMFADeviceRequest = {
     val __obj = js.Dynamic.literal(SerialNumber = SerialNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVirtualMFADeviceRequest]
   }
 }

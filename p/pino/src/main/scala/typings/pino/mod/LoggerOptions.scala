@@ -2,6 +2,7 @@ package typings.pino.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pino.AnonAsObject
+import typings.pino.AnonBindings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,6 +29,13 @@ trait LoggerOptions extends js.Object {
     * Enables logging. Default: `true`.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * An object containing functions for formatting the shape of the log lines.
+    * These functions should return a JSONifiable object and should never throw.
+    * These functions allow for full customization of the resulting log lines.
+    * For example, they can be used to change the level key name or to enrich the default metadata.
+    */
+  var formatters: js.UndefOr[AnonBindings] = js.undefined
   /**
     * One of the supported levels or `silent` to disable logging. Any other value defines a custom level and
     * requires supplying a level value via `levelVal`. Default: 'info'.
@@ -120,6 +128,7 @@ object LoggerOptions {
     changeLevelName: String = null,
     customLevels: StringDictionary[Double] = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
+    formatters: AnonBindings = null,
     level: LevelWithSilent | String = null,
     levelKey: String = null,
     levelVal: Int | Double = null,
@@ -142,6 +151,7 @@ object LoggerOptions {
     if (changeLevelName != null) __obj.updateDynamic("changeLevelName")(changeLevelName.asInstanceOf[js.Any])
     if (customLevels != null) __obj.updateDynamic("customLevels")(customLevels.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (formatters != null) __obj.updateDynamic("formatters")(formatters.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (levelKey != null) __obj.updateDynamic("levelKey")(levelKey.asInstanceOf[js.Any])
     if (levelVal != null) __obj.updateDynamic("levelVal")(levelVal.asInstanceOf[js.Any])

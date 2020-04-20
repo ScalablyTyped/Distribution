@@ -19,24 +19,22 @@ trait Anchor extends js.Object
 
 object Anchor {
   @scala.inline
-  def bottom: typings.mapboxGl.mapboxGlStrings.bottom = this.cast("bottom")
+  def bottom: typings.mapboxGl.mapboxGlStrings.bottom = "bottom".asInstanceOf[typings.mapboxGl.mapboxGlStrings.bottom]
   @scala.inline
-  def `bottom-left`: typings.mapboxGl.mapboxGlStrings.`bottom-left` = this.cast("bottom-left")
+  def `bottom-left`: typings.mapboxGl.mapboxGlStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`bottom-left`]
   @scala.inline
-  def `bottom-right`: typings.mapboxGl.mapboxGlStrings.`bottom-right` = this.cast("bottom-right")
+  def `bottom-right`: typings.mapboxGl.mapboxGlStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`bottom-right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.mapboxGl.mapboxGlStrings.center = "center".asInstanceOf[typings.mapboxGl.mapboxGlStrings.center]
   @scala.inline
-  def center: typings.mapboxGl.mapboxGlStrings.center = this.cast("center")
+  def left: typings.mapboxGl.mapboxGlStrings.left = "left".asInstanceOf[typings.mapboxGl.mapboxGlStrings.left]
   @scala.inline
-  def left: typings.mapboxGl.mapboxGlStrings.left = this.cast("left")
+  def right: typings.mapboxGl.mapboxGlStrings.right = "right".asInstanceOf[typings.mapboxGl.mapboxGlStrings.right]
   @scala.inline
-  def right: typings.mapboxGl.mapboxGlStrings.right = this.cast("right")
+  def top: typings.mapboxGl.mapboxGlStrings.top = "top".asInstanceOf[typings.mapboxGl.mapboxGlStrings.top]
   @scala.inline
-  def top: typings.mapboxGl.mapboxGlStrings.top = this.cast("top")
+  def `top-left`: typings.mapboxGl.mapboxGlStrings.`top-left` = "top-left".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`top-left`]
   @scala.inline
-  def `top-left`: typings.mapboxGl.mapboxGlStrings.`top-left` = this.cast("top-left")
-  @scala.inline
-  def `top-right`: typings.mapboxGl.mapboxGlStrings.`top-right` = this.cast("top-right")
+  def `top-right`: typings.mapboxGl.mapboxGlStrings.`top-right` = "top-right".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`top-right`]
 }
 

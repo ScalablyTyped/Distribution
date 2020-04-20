@@ -23,18 +23,16 @@ trait FileSystemDetails extends js.Object
 
 object FileSystemDetails {
   @scala.inline
-  def Attributes: `4` = this.cast(4)
+  def Attributes: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def InfoTip: `-1` = this.cast(-1)
+  def InfoTip: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def LastModified: `3` = this.cast(3)
+  def LastModified: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Name: `0` = this.cast(0)
+  def Name: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Size: `1` = this.cast(1)
+  def Size: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Type: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Type: `2` = 2.asInstanceOf[`2`]
 }
 

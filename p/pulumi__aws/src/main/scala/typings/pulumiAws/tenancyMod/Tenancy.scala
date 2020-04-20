@@ -12,10 +12,8 @@ trait Tenancy extends js.Object
 
 object Tenancy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dedicated: typings.pulumiAws.pulumiAwsStrings.dedicated = "dedicated".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.dedicated]
   @scala.inline
-  def dedicated: typings.pulumiAws.pulumiAwsStrings.dedicated = this.cast("dedicated")
-  @scala.inline
-  def default: typings.pulumiAws.pulumiAwsStrings.default = this.cast("default")
+  def default: typings.pulumiAws.pulumiAwsStrings.default = "default".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.default]
 }
 

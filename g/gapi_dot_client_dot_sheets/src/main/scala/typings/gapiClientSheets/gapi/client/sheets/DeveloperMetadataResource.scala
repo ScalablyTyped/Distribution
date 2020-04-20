@@ -15,6 +15,7 @@ trait DeveloperMetadataResource extends js.Object {
     * The caller must specify the spreadsheet ID and the developer metadata's
     * unique metadataId.
     */
+  def get(): Request_[DeveloperMetadata] = js.native
   def get(request: AnonAccesstoken): Request_[DeveloperMetadata] = js.native
   /**
     * Returns all developer metadata matching the specified DataFilter.

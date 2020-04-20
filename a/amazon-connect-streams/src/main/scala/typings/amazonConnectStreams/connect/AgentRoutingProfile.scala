@@ -23,7 +23,6 @@ object AgentRoutingProfile {
   @scala.inline
   def apply(defaultOutboundQueue: String, name: String, queues: String): AgentRoutingProfile = {
     val __obj = js.Dynamic.literal(defaultOutboundQueue = defaultOutboundQueue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], queues = queues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentRoutingProfile]
   }
 }

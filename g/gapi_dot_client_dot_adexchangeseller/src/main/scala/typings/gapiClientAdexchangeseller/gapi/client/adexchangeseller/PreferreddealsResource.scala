@@ -18,7 +18,6 @@ object PreferreddealsResource {
   @scala.inline
   def apply(get: AnonDealId => Request_[PreferredDeal], list: AnonKey => Request_[PreferredDeals]): PreferreddealsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[PreferreddealsResource]
   }
 }

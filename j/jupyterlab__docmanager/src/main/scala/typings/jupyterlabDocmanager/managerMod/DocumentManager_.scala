@@ -74,19 +74,19 @@ class DocumentManager_ protected () extends IDocumentManager {
     * A signal emitted when one of the documents is activated.
     */
   @JSName("activateRequested")
-  def activateRequested_MDocumentManager_(): ISignal[this.type, String] = js.native
+  def activateRequested_MDocumentManager_ : ISignal[this.type, String] = js.native
   /**
     * Determines the time interval for autosave in seconds.
     */
   @JSName("autosaveInterval")
-  def autosaveInterval_MDocumentManager_(): Double = js.native
+  def autosaveInterval_MDocumentManager_ : Double = js.native
   @JSName("autosaveInterval")
   def autosaveInterval_MDocumentManager_(value: Double): js.Any = js.native
   /**
     * Whether to autosave documents.
     */
   @JSName("autosave")
-  def autosave_MDocumentManager_(): Boolean = js.native
+  def autosave_MDocumentManager_ : Boolean = js.native
   @JSName("autosave")
   def autosave_MDocumentManager_(value: Boolean): js.Any = js.native
   /**
@@ -106,6 +106,6 @@ class DocumentManager_ protected () extends IDocumentManager {
     * Get whether the document manager has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MDocumentManager_(): Boolean = js.native
+  def isDisposed_MDocumentManager_ : Boolean = js.native
 }
 

@@ -25,7 +25,6 @@ object MultiSortReturn {
   @scala.inline
   def apply(sort: SortParams => Unit, sortBy: js.Array[String], sortDirection: SortDirectionMap): MultiSortReturn = {
     val __obj = js.Dynamic.literal(sort = js.Any.fromFunction1(sort), sortBy = sortBy.asInstanceOf[js.Any], sortDirection = sortDirection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultiSortReturn]
   }
 }

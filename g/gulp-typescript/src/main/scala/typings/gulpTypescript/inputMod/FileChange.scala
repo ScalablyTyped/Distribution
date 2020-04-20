@@ -14,7 +14,6 @@ object FileChange {
   @scala.inline
   def apply(current: File, previous: File, state: FileChangeState): FileChange = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileChange]
   }
 }

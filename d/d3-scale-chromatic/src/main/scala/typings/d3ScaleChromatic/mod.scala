@@ -39,6 +39,7 @@ object mod extends js.Object {
   val schemeSet2: js.Array[String] = js.native
   val schemeSet3: js.Array[String] = js.native
   val schemeSpectral: js.Array[js.Array[String]] = js.native
+  val schemeTableau10: js.Array[String] = js.native
   val schemeYlGn: js.Array[js.Array[String]] = js.native
   val schemeYlGnBu: js.Array[js.Array[String]] = js.native
   val schemeYlOrBr: js.Array[js.Array[String]] = js.native
@@ -47,6 +48,7 @@ object mod extends js.Object {
   def interpolateBrBG(t: Double): String = js.native
   def interpolateBuGn(t: Double): String = js.native
   def interpolateBuPu(t: Double): String = js.native
+  def interpolateCividis(t: Double): String = js.native
   def interpolateCool(t: Double): String = js.native
   def interpolateCubehelixDefault(t: Double): String = js.native
   def interpolateGnBu(t: Double): String = js.native
@@ -73,6 +75,7 @@ object mod extends js.Object {
   def interpolateReds(t: Double): String = js.native
   def interpolateSinebow(t: Double): String = js.native
   def interpolateSpectral(t: Double): String = js.native
+  def interpolateTurbo(t: Double): String = js.native
   def interpolateViridis(t: Double): String = js.native
   def interpolateWarm(t: Double): String = js.native
   def interpolateYlGn(t: Double): String = js.native

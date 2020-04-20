@@ -16,7 +16,6 @@ object DeleteAgentRequest {
   @scala.inline
   def apply(AgentArn: AgentArn): DeleteAgentRequest = {
     val __obj = js.Dynamic.literal(AgentArn = AgentArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAgentRequest]
   }
 }

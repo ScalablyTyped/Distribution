@@ -24,7 +24,6 @@ object UiLabelElement {
   @scala.inline
   def apply(getLabel: () => String, setLabel: String => Unit): UiLabelElement = {
     val __obj = js.Dynamic.literal(getLabel = js.Any.fromFunction0(getLabel), setLabel = js.Any.fromFunction1(setLabel))
-  
     __obj.asInstanceOf[UiLabelElement]
   }
 }

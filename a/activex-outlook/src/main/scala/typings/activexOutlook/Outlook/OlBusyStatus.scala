@@ -18,14 +18,12 @@ trait OlBusyStatus extends js.Object
 
 object OlBusyStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olBusy: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olBusy: `2` = this.cast(2)
+  def olFree: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olFree: `0` = this.cast(0)
+  def olOutOfOffice: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olOutOfOffice: `3` = this.cast(3)
-  @scala.inline
-  def olTentative: `1` = this.cast(1)
+  def olTentative: `1` = 1.asInstanceOf[`1`]
 }
 

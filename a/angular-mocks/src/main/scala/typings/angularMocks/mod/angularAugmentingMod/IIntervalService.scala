@@ -23,7 +23,6 @@ object IIntervalService {
   @scala.inline
   def apply(flush: Double => Double): IIntervalService = {
     val __obj = js.Dynamic.literal(flush = js.Any.fromFunction1(flush))
-  
     __obj.asInstanceOf[IIntervalService]
   }
 }

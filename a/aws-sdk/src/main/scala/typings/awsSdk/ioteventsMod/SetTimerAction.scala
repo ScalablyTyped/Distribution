@@ -11,7 +11,7 @@ trait SetTimerAction extends js.Object {
     */
   var durationExpression: js.UndefOr[VariableValue] = js.native
   /**
-    * The number of seconds until the timer expires. The minimum value is 60 seconds to ensure accuracy.
+    * The number of seconds until the timer expires. The minimum value is 60 seconds to ensure accuracy. The maximum value is 31622400 seconds. 
     */
   var seconds: js.UndefOr[Seconds] = js.native
   /**

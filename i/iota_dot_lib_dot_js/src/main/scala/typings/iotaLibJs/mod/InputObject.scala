@@ -15,7 +15,6 @@ object InputObject {
   @scala.inline
   def apply(address: String, balance: Double, keyIndex: Double, security: Security): InputObject = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], keyIndex = keyIndex.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputObject]
   }
 }

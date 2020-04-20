@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactChatWidgetComponents extends reactChatWidgetProps {
   @scala.inline
-  def Widget: ComponentType[WidgetProps] = js.constructorOf[typings.reactChatWidget.mod.Widget].asInstanceOf[typings.react.mod.ComponentType[WidgetProps]]
+  def Widget: ComponentType[WidgetProps] = js.constructorOf[typings.reactChatWidget.mod.Widget].asInstanceOf[ComponentType[WidgetProps]]
 }
 

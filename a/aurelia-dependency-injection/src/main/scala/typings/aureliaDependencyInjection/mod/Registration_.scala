@@ -18,7 +18,6 @@ object Registration_ {
     registerResolver: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], DependencyCtorOrFunctor[TBase, TImpl, TArgs]) => Resolver_
   ): Registration_[TBase, TImpl, TArgs] = {
     val __obj = js.Dynamic.literal(registerResolver = js.Any.fromFunction3(registerResolver))
-  
     __obj.asInstanceOf[Registration_[TBase, TImpl, TArgs]]
   }
 }

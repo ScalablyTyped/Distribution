@@ -13,7 +13,6 @@ object BroadcastToInputs {
   @scala.inline
   def apply(x: js.Any): BroadcastToInputs = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BroadcastToInputs]
   }
 }

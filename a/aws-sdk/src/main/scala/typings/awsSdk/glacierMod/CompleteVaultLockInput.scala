@@ -24,7 +24,6 @@ object CompleteVaultLockInput {
   @scala.inline
   def apply(accountId: String, lockId: String, vaultName: String): CompleteVaultLockInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], lockId = lockId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompleteVaultLockInput]
   }
 }

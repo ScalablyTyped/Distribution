@@ -18,7 +18,6 @@ object AnonymousMechanism {
   @scala.inline
   def apply(challenge: String => Unit, clientFirst: `true`, name: ANONYMOUS, response: Credentials => String): AnonymousMechanism = {
     val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
-  
     __obj.asInstanceOf[AnonymousMechanism]
   }
 }

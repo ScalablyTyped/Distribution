@@ -14,7 +14,6 @@ object ClickEvent {
   @scala.inline
   def apply(Details: AnonClickLocation, ReceivedAt: String, Recipient: String, Type: String): ClickEvent = {
     val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], ReceivedAt = ReceivedAt.asInstanceOf[js.Any], Recipient = Recipient.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClickEvent]
   }
 }

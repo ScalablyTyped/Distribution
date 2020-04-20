@@ -18,14 +18,12 @@ trait styleViewportSize extends js.Object
 
 object styleViewportSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleViewportSizeAuto: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleViewportSizeAuto: `0` = this.cast(0)
+  def styleViewportSizeDeviceHeight: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleViewportSizeDeviceHeight: `2` = this.cast(2)
+  def styleViewportSizeDeviceWidth: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleViewportSizeDeviceWidth: `1` = this.cast(1)
-  @scala.inline
-  def styleViewportSize_Max: `2147483647` = this.cast(2147483647)
+  def styleViewportSize_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

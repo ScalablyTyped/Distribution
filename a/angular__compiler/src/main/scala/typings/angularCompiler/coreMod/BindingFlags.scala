@@ -26,22 +26,20 @@ trait BindingFlags extends js.Object
 
 object BindingFlags {
   @scala.inline
-  def CatSyntheticProperty: `48` = this.cast(48)
+  def CatSyntheticProperty: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def SyntheticHostProperty: `32` = this.cast(32)
+  def SyntheticHostProperty: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def SyntheticProperty: `16` = this.cast(16)
+  def SyntheticProperty: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def TypeElementAttribute: `1` = this.cast(1)
+  def TypeElementAttribute: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def TypeElementClass: `2` = this.cast(2)
+  def TypeElementClass: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def TypeElementStyle: `4` = this.cast(4)
+  def TypeElementStyle: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def TypeProperty: `8` = this.cast(8)
+  def TypeProperty: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def Types: `15` = this.cast(15)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Types: `15` = 15.asInstanceOf[`15`]
 }
 

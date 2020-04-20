@@ -13,7 +13,6 @@ object VastResponse {
   @scala.inline
   def apply(ads: js.Array[VastAd], errorURLTemplates: js.Array[String]): VastResponse = {
     val __obj = js.Dynamic.literal(ads = ads.asInstanceOf[js.Any], errorURLTemplates = errorURLTemplates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VastResponse]
   }
 }

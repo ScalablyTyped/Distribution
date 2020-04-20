@@ -15,7 +15,6 @@ object NotWorkingResult {
   @scala.inline
   def apply(error: AnonCode, ok: `false`): NotWorkingResult = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotWorkingResult]
   }
 }

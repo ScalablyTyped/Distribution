@@ -1,6 +1,7 @@
 package typings.multer
 
 import typings.node.Buffer
+import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,7 @@ trait PartialFile extends js.Object {
   var originalname: js.UndefOr[String] = js.undefined
   var path: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
+  var stream: js.UndefOr[Readable] = js.undefined
 }
 
 object PartialFile {
@@ -29,7 +31,8 @@ object PartialFile {
     mimetype: String = null,
     originalname: String = null,
     path: String = null,
-    size: Int | Double = null
+    size: Int | Double = null,
+    stream: Readable = null
   ): PartialFile = {
     val __obj = js.Dynamic.literal()
     if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
@@ -41,6 +44,7 @@ object PartialFile {
     if (originalname != null) __obj.updateDynamic("originalname")(originalname.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialFile]
   }
 }

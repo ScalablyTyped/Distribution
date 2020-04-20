@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeAutocompleteInputProps {
   @scala.inline
-  def ReactNativeAutocompleteInputProps: AutocompleteProps.type = typings.reactNativeAutocompleteInput.mod.AutocompleteProps
+  def ReactNativeAutocompleteInputProps: AutocompleteProps.type = AutocompleteProps
   type ReactNativeAutocompleteInputProps[T] = AutocompleteProps[T]
 }
 

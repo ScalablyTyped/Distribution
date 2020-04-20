@@ -13,7 +13,6 @@ object KnobControlProps {
   @scala.inline
   def apply[T](knob: KnobControlConfig[T], onChange: T => T): KnobControlProps[T] = {
     val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
-  
     __obj.asInstanceOf[KnobControlProps[T]]
   }
 }

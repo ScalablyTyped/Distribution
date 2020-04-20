@@ -14,10 +14,8 @@ trait XlRoutingSlipDelivery extends js.Object
 
 object XlRoutingSlipDelivery {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAllAtOnce: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlAllAtOnce: `2` = this.cast(2)
-  @scala.inline
-  def xlOneAfterAnother: `1` = this.cast(1)
+  def xlOneAfterAnother: `1` = 1.asInstanceOf[`1`]
 }
 

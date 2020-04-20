@@ -24,12 +24,12 @@ class MsdEnumeration protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMsdEnumeration: IModel = js.native
-  def containerAsMsdEnumerationContainer(): MsdEnumerationContainer = js.native
-  def guid(): String = js.native
+  def containerAsMsdEnumerationContainer: MsdEnumerationContainer = js.native
+  def guid: String = js.native
   def guid(newValue: String): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
-  def values(): IList[MsdEnumerationValue] = js.native
+  def values: IList[MsdEnumerationValue] = js.native
 }
 
 /* static members */

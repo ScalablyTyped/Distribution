@@ -52,7 +52,6 @@ object TokensService {
     updateToken: UpdateDeleteTokenRequest => MapiRequest
   ): TokensService = {
     val __obj = js.Dynamic.literal(createTemporaryToken = js.Any.fromFunction1(createTemporaryToken), createToken = js.Any.fromFunction1(createToken), deleteToken = js.Any.fromFunction1(deleteToken), getToken = js.Any.fromFunction0(getToken), listScopes = js.Any.fromFunction0(listScopes), listTokens = js.Any.fromFunction0(listTokens), updateToken = js.Any.fromFunction1(updateToken))
-  
     __obj.asInstanceOf[TokensService]
   }
 }

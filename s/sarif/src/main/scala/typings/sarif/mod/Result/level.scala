@@ -14,14 +14,12 @@ trait level extends js.Object
 
 object level {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.sarif.sarifStrings.error = "error".asInstanceOf[typings.sarif.sarifStrings.error]
   @scala.inline
-  def error: typings.sarif.sarifStrings.error = this.cast("error")
+  def none: typings.sarif.sarifStrings.none = "none".asInstanceOf[typings.sarif.sarifStrings.none]
   @scala.inline
-  def none: typings.sarif.sarifStrings.none = this.cast("none")
+  def note: typings.sarif.sarifStrings.note = "note".asInstanceOf[typings.sarif.sarifStrings.note]
   @scala.inline
-  def note: typings.sarif.sarifStrings.note = this.cast("note")
-  @scala.inline
-  def warning: typings.sarif.sarifStrings.warning = this.cast("warning")
+  def warning: typings.sarif.sarifStrings.warning = "warning".asInstanceOf[typings.sarif.sarifStrings.warning]
 }
 

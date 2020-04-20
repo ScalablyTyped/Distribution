@@ -14,7 +14,6 @@ object RuleTesterResult {
   @scala.inline
   def apply(actual: Double, description: String, expected: Double): RuleTesterResult = {
     val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuleTesterResult]
   }
 }

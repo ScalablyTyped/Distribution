@@ -18,7 +18,6 @@ object NetworkInfo {
   @scala.inline
   def apply(packetLoss: Double): NetworkInfo = {
     val __obj = js.Dynamic.literal(packetLoss = packetLoss.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkInfo]
   }
 }

@@ -13,7 +13,6 @@ object MuiMediaQueryListEvent {
   @scala.inline
   def apply(matches: Boolean): MuiMediaQueryListEvent = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MuiMediaQueryListEvent]
   }
 }

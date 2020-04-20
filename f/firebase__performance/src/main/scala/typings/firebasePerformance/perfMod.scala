@@ -25,11 +25,11 @@ object perfMod extends js.Object {
     /* CompleteClass */
     override var instrumentationEnabled: Boolean = js.native
     @JSName("dataCollectionEnabled")
-    def dataCollectionEnabled_MPerformanceController(): Boolean = js.native
+    def dataCollectionEnabled_MPerformanceController: Boolean = js.native
     @JSName("dataCollectionEnabled")
     def dataCollectionEnabled_MPerformanceController(`val`: Boolean): js.Any = js.native
     @JSName("instrumentationEnabled")
-    def instrumentationEnabled_MPerformanceController(): Boolean = js.native
+    def instrumentationEnabled_MPerformanceController: Boolean = js.native
     @JSName("instrumentationEnabled")
     def instrumentationEnabled_MPerformanceController(`val`: Boolean): js.Any = js.native
     /**

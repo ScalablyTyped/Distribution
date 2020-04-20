@@ -12,7 +12,6 @@ object WebhookTrigger {
   @scala.inline
   def apply(Enabled: Boolean): WebhookTrigger = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebhookTrigger]
   }
 }

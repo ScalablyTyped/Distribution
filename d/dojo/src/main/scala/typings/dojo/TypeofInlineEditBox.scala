@@ -37,7 +37,6 @@ object TypeofInlineEditBox {
     ]
   ): TypeofInlineEditBox = {
     val __obj = js.Dynamic.literal(_InlineEditor = _InlineEditor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofInlineEditBox]
   }
 }

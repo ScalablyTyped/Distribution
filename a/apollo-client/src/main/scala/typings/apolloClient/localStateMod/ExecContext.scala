@@ -28,7 +28,6 @@ object ExecContext {
     variables: VariableMap
   ): ExecContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], defaultOperationType = defaultOperationType.asInstanceOf[js.Any], exportedVariables = exportedVariables.asInstanceOf[js.Any], fragmentMap = fragmentMap.asInstanceOf[js.Any], fragmentMatcher = js.Any.fromFunction3(fragmentMatcher), onlyRunForcedResolvers = onlyRunForcedResolvers.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecContext]
   }
 }

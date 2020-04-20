@@ -12,7 +12,6 @@ object PluginRemoveDoctype {
   @scala.inline
   def apply(removeDoctype: Boolean | js.Object): PluginRemoveDoctype = {
     val __obj = js.Dynamic.literal(removeDoctype = removeDoctype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveDoctype]
   }
 }

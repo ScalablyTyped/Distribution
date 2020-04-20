@@ -21,7 +21,6 @@ object ElectionsResource {
     voterInfoQuery: AnonAddress => Request_[VoterInfoResponse]
   ): ElectionsResource = {
     val __obj = js.Dynamic.literal(electionQuery = js.Any.fromFunction1(electionQuery), voterInfoQuery = js.Any.fromFunction1(voterInfoQuery))
-  
     __obj.asInstanceOf[ElectionsResource]
   }
 }

@@ -27,7 +27,6 @@ object ReadonlyMap {
     values: () => Iterator[T]
   ): ReadonlyMap[T] = {
     val __obj = js.Dynamic.literal(entries = js.Any.fromFunction0(entries), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), size = size.asInstanceOf[js.Any], values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[ReadonlyMap[T]]
   }
 }

@@ -16,7 +16,6 @@ object DeleteIdentityRequest {
   @scala.inline
   def apply(Identity: Identity): DeleteIdentityRequest = {
     val __obj = js.Dynamic.literal(Identity = Identity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIdentityRequest]
   }
 }

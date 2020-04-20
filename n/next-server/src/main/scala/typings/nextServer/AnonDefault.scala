@@ -13,7 +13,6 @@ object AnonDefault {
   @scala.inline
   def apply[P](default: ComponentType[P]): AnonDefault[P] = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefault[P]]
   }
 }

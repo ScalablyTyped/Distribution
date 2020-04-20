@@ -34,30 +34,28 @@ trait XlConsolidationFunction extends js.Object
 
 object XlConsolidationFunction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAverage: `-4106` = -4106.asInstanceOf[`-4106`]
   @scala.inline
-  def xlAverage: `-4106` = this.cast(-4106)
+  def xlCount: `-4112` = -4112.asInstanceOf[`-4112`]
   @scala.inline
-  def xlCount: `-4112` = this.cast(-4112)
+  def xlCountNums: `-4113` = -4113.asInstanceOf[`-4113`]
   @scala.inline
-  def xlCountNums: `-4113` = this.cast(-4113)
+  def xlMax: `-4136` = -4136.asInstanceOf[`-4136`]
   @scala.inline
-  def xlMax: `-4136` = this.cast(-4136)
+  def xlMin: `-4139` = -4139.asInstanceOf[`-4139`]
   @scala.inline
-  def xlMin: `-4139` = this.cast(-4139)
+  def xlProduct: `-4149` = -4149.asInstanceOf[`-4149`]
   @scala.inline
-  def xlProduct: `-4149` = this.cast(-4149)
+  def xlStDev: `-4155` = -4155.asInstanceOf[`-4155`]
   @scala.inline
-  def xlStDev: `-4155` = this.cast(-4155)
+  def xlStDevP: `-4156` = -4156.asInstanceOf[`-4156`]
   @scala.inline
-  def xlStDevP: `-4156` = this.cast(-4156)
+  def xlSum: `-4157` = -4157.asInstanceOf[`-4157`]
   @scala.inline
-  def xlSum: `-4157` = this.cast(-4157)
+  def xlUnknown: `1000` = 1000.asInstanceOf[`1000`]
   @scala.inline
-  def xlUnknown: `1000` = this.cast(1000)
+  def xlVar: `-4164` = -4164.asInstanceOf[`-4164`]
   @scala.inline
-  def xlVar: `-4164` = this.cast(-4164)
-  @scala.inline
-  def xlVarP: `-4165` = this.cast(-4165)
+  def xlVarP: `-4165` = -4165.asInstanceOf[`-4165`]
 }
 

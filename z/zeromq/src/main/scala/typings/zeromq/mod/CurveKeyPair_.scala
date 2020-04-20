@@ -21,7 +21,6 @@ object CurveKeyPair_ {
   @scala.inline
   def apply(public: String, secret: String): CurveKeyPair_ = {
     val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CurveKeyPair_]
   }
 }

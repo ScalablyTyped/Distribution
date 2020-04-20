@@ -17,7 +17,6 @@ object TorrentRecord {
   @scala.inline
   def apply(connected: Boolean, filters: AnonState, stats: DelugeStats, torrents: StringDictionary[Torrent]): TorrentRecord = {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], torrents = torrents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TorrentRecord]
   }
 }

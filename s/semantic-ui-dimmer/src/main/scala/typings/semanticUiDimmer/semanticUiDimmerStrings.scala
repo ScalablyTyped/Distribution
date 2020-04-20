@@ -150,7 +150,7 @@ object semanticUiDimmerStrings {
   sealed trait verbose extends js.Object
   
   @scala.inline
-  def `add content`: `add content` = "add content".asInstanceOf[`add content`]
+  def `add content`: `add content` = ("add content").asInstanceOf[`add content`]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
@@ -172,31 +172,31 @@ object semanticUiDimmerStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def `get dimmer`: `get dimmer` = "get dimmer".asInstanceOf[`get dimmer`]
+  def `get dimmer`: `get dimmer` = ("get dimmer").asInstanceOf[`get dimmer`]
   @scala.inline
-  def `get duration`: `get duration` = "get duration".asInstanceOf[`get duration`]
+  def `get duration`: `get duration` = ("get duration").asInstanceOf[`get duration`]
   @scala.inline
-  def `has dimmer`: `has dimmer` = "has dimmer".asInstanceOf[`has dimmer`]
+  def `has dimmer`: `has dimmer` = ("has dimmer").asInstanceOf[`has dimmer`]
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
-  def `is active`: `is active` = "is active".asInstanceOf[`is active`]
+  def `is active`: `is active` = ("is active").asInstanceOf[`is active`]
   @scala.inline
-  def `is animating`: `is animating` = "is animating".asInstanceOf[`is animating`]
+  def `is animating`: `is animating` = ("is animating").asInstanceOf[`is animating`]
   @scala.inline
-  def `is dimmable`: `is dimmable` = "is dimmable".asInstanceOf[`is dimmable`]
+  def `is dimmable`: `is dimmable` = ("is dimmable").asInstanceOf[`is dimmable`]
   @scala.inline
-  def `is dimmer`: `is dimmer` = "is dimmer".asInstanceOf[`is dimmer`]
+  def `is dimmer`: `is dimmer` = ("is dimmer").asInstanceOf[`is dimmer`]
   @scala.inline
-  def `is disabled`: `is disabled` = "is disabled".asInstanceOf[`is disabled`]
+  def `is disabled`: `is disabled` = ("is disabled").asInstanceOf[`is disabled`]
   @scala.inline
-  def `is enabled`: `is enabled` = "is enabled".asInstanceOf[`is enabled`]
+  def `is enabled`: `is enabled` = ("is enabled").asInstanceOf[`is enabled`]
   @scala.inline
-  def `is page`: `is page` = "is page".asInstanceOf[`is page`]
+  def `is page`: `is page` = ("is page").asInstanceOf[`is page`]
   @scala.inline
-  def `is page dimmer`: `is page dimmer` = "is page dimmer".asInstanceOf[`is page dimmer`]
+  def `is page dimmer`: `is page dimmer` = ("is page dimmer").asInstanceOf[`is page dimmer`]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -216,17 +216,17 @@ object semanticUiDimmerStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set active`: `set active` = "set active".asInstanceOf[`set active`]
+  def `set active`: `set active` = ("set active").asInstanceOf[`set active`]
   @scala.inline
-  def `set dimmable`: `set dimmable` = "set dimmable".asInstanceOf[`set dimmable`]
+  def `set dimmable`: `set dimmable` = ("set dimmable").asInstanceOf[`set dimmable`]
   @scala.inline
-  def `set dimmed`: `set dimmed` = "set dimmed".asInstanceOf[`set dimmed`]
+  def `set dimmed`: `set dimmed` = ("set dimmed").asInstanceOf[`set dimmed`]
   @scala.inline
-  def `set disabled`: `set disabled` = "set disabled".asInstanceOf[`set disabled`]
+  def `set disabled`: `set disabled` = ("set disabled").asInstanceOf[`set disabled`]
   @scala.inline
-  def `set opacity`: `set opacity` = "set opacity".asInstanceOf[`set opacity`]
+  def `set opacity`: `set opacity` = ("set opacity").asInstanceOf[`set opacity`]
   @scala.inline
-  def `set page dimmer`: `set page dimmer` = "set page dimmer".asInstanceOf[`set page dimmer`]
+  def `set page dimmer`: `set page dimmer` = ("set page dimmer").asInstanceOf[`set page dimmer`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline

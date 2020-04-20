@@ -14,7 +14,6 @@ object PickCoordinatesleft {
   @scala.inline
   def apply(left: Double): PickCoordinatesleft = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickCoordinatesleft]
   }
 }

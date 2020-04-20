@@ -11,7 +11,7 @@ trait reactFrameComponentProps {
   type FrameContextConsumerProps[T] = ConsumerProps[T]
   type FrameContextProviderProps[T] = ProviderProps[T]
   @scala.inline
-  def ReactFrameComponentProps: FrameComponentProps.type = typings.reactFrameComponent.mod.FrameComponentProps
+  def ReactFrameComponentProps: FrameComponentProps.type = FrameComponentProps
   type ReactFrameComponentProps = FrameComponentProps
 }
 

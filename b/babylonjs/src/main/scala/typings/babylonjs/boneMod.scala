@@ -118,7 +118,7 @@ object boneMod extends js.Object {
     /** @hidden */
     def _markAsDirtyAndCompose(): Unit = js.native
     /** @hidden */
-    def _matrix(): Matrix = js.native
+    def _matrix: Matrix = js.native
     /** @hidden */
     def _matrix(value: Matrix): js.Any = js.native
     /** @hidden */
@@ -351,7 +351,7 @@ object boneMod extends js.Object {
       */
     def markAsDirty(): Unit = js.native
     /** Gets or sets current position (in local space) */
-    def position(): Vector3 = js.native
+    def position: Vector3 = js.native
     def position(newPosition: Vector3): js.Any = js.native
     /**
       * Sets the local matrix to rest pose matrix
@@ -368,10 +368,10 @@ object boneMod extends js.Object {
     def rotate(axis: Vector3, amount: Double, space: Space): Unit = js.native
     def rotate(axis: Vector3, amount: Double, space: Space, mesh: AbstractMesh): Unit = js.native
     /** Gets or sets current rotation (in local space) */
-    def rotation(): Vector3 = js.native
+    def rotation: Vector3 = js.native
     def rotation(newRotation: Vector3): js.Any = js.native
     /** Gets or sets current rotation quaternion (in local space) */
-    def rotationQuaternion(): Quaternion = js.native
+    def rotationQuaternion: Quaternion = js.native
     def rotationQuaternion(newRotation: Quaternion): js.Any = js.native
     /**
       * Scale the bone on the x, y and z axes (in local space)
@@ -383,7 +383,7 @@ object boneMod extends js.Object {
     def scale(x: Double, y: Double, z: Double): Unit = js.native
     def scale(x: Double, y: Double, z: Double, scaleChildren: Boolean): Unit = js.native
     /** Gets or sets current scaling (in local space) */
-    def scaling(): Vector3 = js.native
+    def scaling: Vector3 = js.native
     def scaling(newScaling: Vector3): js.Any = js.native
     /**
       * Set the absolute position of the bone (world space)

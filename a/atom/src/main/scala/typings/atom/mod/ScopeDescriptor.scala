@@ -13,7 +13,6 @@ object ScopeDescriptor {
   @scala.inline
   def apply(getScopesArray: () => js.Array[String]): ScopeDescriptor = {
     val __obj = js.Dynamic.literal(getScopesArray = js.Any.fromFunction0(getScopesArray))
-  
     __obj.asInstanceOf[ScopeDescriptor]
   }
 }

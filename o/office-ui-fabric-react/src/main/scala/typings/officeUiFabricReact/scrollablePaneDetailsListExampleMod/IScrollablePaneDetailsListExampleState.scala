@@ -12,7 +12,6 @@ object IScrollablePaneDetailsListExampleState {
   @scala.inline
   def apply(items: js.Array[IScrollablePaneDetailsListExampleItem]): IScrollablePaneDetailsListExampleState = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IScrollablePaneDetailsListExampleState]
   }
 }

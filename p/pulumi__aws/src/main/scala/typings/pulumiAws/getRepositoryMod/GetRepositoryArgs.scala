@@ -16,7 +16,6 @@ object GetRepositoryArgs {
   @scala.inline
   def apply(repositoryName: String): GetRepositoryArgs = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRepositoryArgs]
   }
 }

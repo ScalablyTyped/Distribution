@@ -24,7 +24,6 @@ object GetDeploymentRequest {
   @scala.inline
   def apply(ApplicationId: Id, DeploymentNumber: Integer, EnvironmentId: Id): GetDeploymentRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], DeploymentNumber = DeploymentNumber.asInstanceOf[js.Any], EnvironmentId = EnvironmentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDeploymentRequest]
   }
 }

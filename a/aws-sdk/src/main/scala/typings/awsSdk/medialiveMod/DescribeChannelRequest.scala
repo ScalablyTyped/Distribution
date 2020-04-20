@@ -16,7 +16,6 @@ object DescribeChannelRequest {
   @scala.inline
   def apply(ChannelId: string): DescribeChannelRequest = {
     val __obj = js.Dynamic.literal(ChannelId = ChannelId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeChannelRequest]
   }
 }

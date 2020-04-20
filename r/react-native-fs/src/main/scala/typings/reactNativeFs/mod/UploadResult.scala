@@ -18,7 +18,6 @@ object UploadResult {
   @scala.inline
   def apply(body: String, headers: Headers, jobId: Double, statusCode: Double): UploadResult = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadResult]
   }
 }

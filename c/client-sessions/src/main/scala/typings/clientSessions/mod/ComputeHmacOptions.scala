@@ -14,7 +14,6 @@ object ComputeHmacOptions {
   @scala.inline
   def apply(signatureAlgorithm: String, signatureKey: Buffer): ComputeHmacOptions = {
     val __obj = js.Dynamic.literal(signatureAlgorithm = signatureAlgorithm.asInstanceOf[js.Any], signatureKey = signatureKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComputeHmacOptions]
   }
 }

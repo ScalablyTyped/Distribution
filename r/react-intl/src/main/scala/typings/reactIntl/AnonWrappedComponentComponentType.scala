@@ -1,21 +1,20 @@
 package typings.reactIntl
 
 import typings.react.mod.ComponentType
-import typings.reactIntl.mod.WrappedComponentProps
+import typings.reactIntl.injectIntlMod.WrappedComponentProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonWrappedComponentComponentType[P /* <: WrappedComponentProps[IntlPropName] */] extends js.Object {
+trait AnonWrappedComponentComponentType[P /* <: WrappedComponentProps[IntlPropName] */, IntlPropName /* <: String */] extends js.Object {
   var WrappedComponent: ComponentType[P]
 }
 
 object AnonWrappedComponentComponentType {
   @scala.inline
-  def apply[P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): AnonWrappedComponentComponentType[P] = {
+  def apply[P /* <: WrappedComponentProps[IntlPropName] */, IntlPropName /* <: String */](WrappedComponent: ComponentType[P]): AnonWrappedComponentComponentType[P, IntlPropName] = {
     val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[AnonWrappedComponentComponentType[P]]
+    __obj.asInstanceOf[AnonWrappedComponentComponentType[P, IntlPropName]]
   }
 }
 

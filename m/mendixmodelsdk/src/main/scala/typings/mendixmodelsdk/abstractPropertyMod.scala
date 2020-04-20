@@ -39,7 +39,7 @@ object abstractPropertyMod extends js.Object {
     def get(): T = js.native
     def reportAvailabilityIssues(): Unit = js.native
     def updateWithRawValue(value: js.Any): Unit = js.native
-    def versionInfo(): PropertyVersionInfo = js.native
+    def versionInfo: PropertyVersionInfo = js.native
   }
   
 }

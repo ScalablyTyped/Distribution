@@ -64,7 +64,9 @@ object listItemsPropsMod extends js.Object {
       * simply provide the name of a boolean property on the item that exposes
       * its disabled state.
       */
-    var itemDisabled: js.UndefOr[String | (js.Function2[/* item */ T, /* index */ Double, Boolean])] = js.native
+    var itemDisabled: js.UndefOr[
+        (/* keyof T */ String) | (js.Function2[/* item */ T, /* index */ Double, Boolean])
+      ] = js.native
     /**
       * Customize querying of entire `items` array. Return new list of items.
       * This method can reorder, add, or remove items at will.
@@ -196,6 +198,6 @@ object listItemsPropsMod extends js.Object {
   def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: Null, itemB: T): Boolean = js.native
   def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T]): Boolean = js.native
   type ItemsEqualComparator[T] = js.Function2[/* itemA */ T, /* itemB */ T, Boolean]
-  type ItemsEqualProp[T] = ItemsEqualComparator[T] | String
+  type ItemsEqualProp[T] = ItemsEqualComparator[T] | (/* keyof T */ String)
 }
 

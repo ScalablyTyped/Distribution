@@ -22,7 +22,6 @@ object AnonId {
     show: Boolean
   ): AnonId = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonId]
   }
 }

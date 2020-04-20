@@ -16,18 +16,16 @@ trait RTCPeerConnectionState extends js.Object
 
 object RTCPeerConnectionState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   @scala.inline
-  def closed: typings.std.stdStrings.closed = this.cast("closed")
+  def connected: typings.std.stdStrings.connected = "connected".asInstanceOf[typings.std.stdStrings.connected]
   @scala.inline
-  def connected: typings.std.stdStrings.connected = this.cast("connected")
+  def connecting: typings.std.stdStrings.connecting = "connecting".asInstanceOf[typings.std.stdStrings.connecting]
   @scala.inline
-  def connecting: typings.std.stdStrings.connecting = this.cast("connecting")
+  def disconnected: typings.std.stdStrings.disconnected = "disconnected".asInstanceOf[typings.std.stdStrings.disconnected]
   @scala.inline
-  def disconnected: typings.std.stdStrings.disconnected = this.cast("disconnected")
+  def failed: typings.std.stdStrings.failed = "failed".asInstanceOf[typings.std.stdStrings.failed]
   @scala.inline
-  def failed: typings.std.stdStrings.failed = this.cast("failed")
-  @scala.inline
-  def `new`: typings.std.stdStrings.`new` = this.cast("new")
+  def `new`: typings.std.stdStrings.`new` = "new".asInstanceOf[typings.std.stdStrings.`new`]
 }
 

@@ -25,7 +25,6 @@ object Rtm {
     stopServer: String => Unit
   ): Rtm[T] = {
     val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], clients = clients.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send), startServer = js.Any.fromFunction1(startServer), stopServer = js.Any.fromFunction1(stopServer))
-  
     __obj.asInstanceOf[Rtm[T]]
   }
 }

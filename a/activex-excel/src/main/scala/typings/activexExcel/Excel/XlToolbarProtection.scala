@@ -20,16 +20,14 @@ trait XlToolbarProtection extends js.Object
 
 object XlToolbarProtection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlNoButtonChanges: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlNoButtonChanges: `1` = this.cast(1)
+  def xlNoChanges: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlNoChanges: `4` = this.cast(4)
+  def xlNoDockingChanges: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlNoDockingChanges: `3` = this.cast(3)
+  def xlNoShapeChanges: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlNoShapeChanges: `2` = this.cast(2)
-  @scala.inline
-  def xlToolbarProtectionNone: `-4143` = this.cast(-4143)
+  def xlToolbarProtectionNone: `-4143` = -4143.asInstanceOf[`-4143`]
 }
 

@@ -32,6 +32,6 @@ class Stdin_ protected () extends IStdin {
     * The value of the widget.
     */
   @JSName("value")
-  def value_MStdin_(): js.Promise[String] = js.native
+  def value_MStdin_ : js.Promise[String] = js.native
 }
 

@@ -27,7 +27,6 @@ object IPayInPaymentType {
     Preauthorized: PREAUTHORIZED
   ): IPayInPaymentType = {
     val __obj = js.Dynamic.literal(BankWire = BankWire.asInstanceOf[js.Any], Card = Card.asInstanceOf[js.Any], DirectDebit = DirectDebit.asInstanceOf[js.Any], PayPal = PayPal.asInstanceOf[js.Any], Preauthorized = Preauthorized.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPayInPaymentType]
   }
 }

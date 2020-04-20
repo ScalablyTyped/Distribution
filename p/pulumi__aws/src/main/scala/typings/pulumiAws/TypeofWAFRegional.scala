@@ -13,7 +13,6 @@ object TypeofWAFRegional {
   @scala.inline
   def apply(Types: TypeofWAFRegional): TypeofWAFRegional = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofWAFRegional]
   }
 }

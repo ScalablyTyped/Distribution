@@ -14,10 +14,8 @@ trait XlAllocationMethod extends js.Object
 
 object XlAllocationMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlEqualAllocation: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlEqualAllocation: `1` = this.cast(1)
-  @scala.inline
-  def xlWeightedAllocation: `2` = this.cast(2)
+  def xlWeightedAllocation: `2` = 2.asInstanceOf[`2`]
 }
 

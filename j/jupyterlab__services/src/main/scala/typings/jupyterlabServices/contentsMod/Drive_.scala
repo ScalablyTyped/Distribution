@@ -49,11 +49,11 @@ class Drive_ () extends IDrive {
     * A signal emitted when a file operation takes place.
     */
   @JSName("fileChanged")
-  def fileChanged_MDrive_(): ISignal[this.type, IChangedArgs] = js.native
+  def fileChanged_MDrive_ : ISignal[this.type, IChangedArgs] = js.native
   /**
     * Test whether the manager has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MDrive_(): Boolean = js.native
+  def isDisposed_MDrive_ : Boolean = js.native
 }
 

@@ -14,7 +14,6 @@ object PickImplduration {
   @scala.inline
   def apply(duration: Double | DurationSettings): PickImplduration = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplduration]
   }
 }

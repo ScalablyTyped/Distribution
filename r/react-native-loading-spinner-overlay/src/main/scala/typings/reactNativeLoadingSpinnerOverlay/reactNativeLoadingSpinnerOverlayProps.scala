@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeLoadingSpinnerOverlayProps {
   @scala.inline
-  def ReactNativeLoadingSpinnerOverlayProps: SpinnerProps.type = typings.reactNativeLoadingSpinnerOverlay.mod.SpinnerProps
+  def ReactNativeLoadingSpinnerOverlayProps: SpinnerProps.type = SpinnerProps
   type ReactNativeLoadingSpinnerOverlayProps = SpinnerProps
 }
 

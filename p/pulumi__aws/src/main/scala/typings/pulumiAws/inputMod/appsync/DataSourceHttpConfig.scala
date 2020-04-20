@@ -17,7 +17,6 @@ object DataSourceHttpConfig {
   @scala.inline
   def apply(endpoint: Input[String]): DataSourceHttpConfig = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataSourceHttpConfig]
   }
 }

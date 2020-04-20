@@ -19,7 +19,6 @@ object CancelSignal {
   @scala.inline
   def apply(signaled: Boolean, subscribe: js.Function0[Unit] => CancelSubscription): CancelSignal = {
     val __obj = js.Dynamic.literal(signaled = signaled.asInstanceOf[js.Any], subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[CancelSignal]
   }
 }

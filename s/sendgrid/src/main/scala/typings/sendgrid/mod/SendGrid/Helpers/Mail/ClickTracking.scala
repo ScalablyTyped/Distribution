@@ -23,7 +23,6 @@ object ClickTracking {
     toJSON: () => AnonEnable
   ): ClickTracking = {
     val __obj = js.Dynamic.literal(getEnable = js.Any.fromFunction0(getEnable), getEnableText = js.Any.fromFunction0(getEnableText), setEnable = js.Any.fromFunction1(setEnable), setEnableText = js.Any.fromFunction1(setEnableText), toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[ClickTracking]
   }
 }

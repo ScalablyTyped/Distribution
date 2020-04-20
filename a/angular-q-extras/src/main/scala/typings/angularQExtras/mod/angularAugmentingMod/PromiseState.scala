@@ -12,10 +12,8 @@ trait PromiseState extends js.Object
 
 object PromiseState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fulfilled: typings.angularQExtras.angularQExtrasStrings.fulfilled = "fulfilled".asInstanceOf[typings.angularQExtras.angularQExtrasStrings.fulfilled]
   @scala.inline
-  def fulfilled: typings.angularQExtras.angularQExtrasStrings.fulfilled = this.cast("fulfilled")
-  @scala.inline
-  def rejected: typings.angularQExtras.angularQExtrasStrings.rejected = this.cast("rejected")
+  def rejected: typings.angularQExtras.angularQExtrasStrings.rejected = "rejected".asInstanceOf[typings.angularQExtras.angularQExtrasStrings.rejected]
 }
 

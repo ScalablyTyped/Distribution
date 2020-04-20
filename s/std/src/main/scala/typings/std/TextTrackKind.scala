@@ -15,16 +15,14 @@ trait TextTrackKind extends js.Object
 
 object TextTrackKind {
   @scala.inline
-  def captions: typings.std.stdStrings.captions = this.cast("captions")
+  def captions: typings.std.stdStrings.captions = "captions".asInstanceOf[typings.std.stdStrings.captions]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chapters: typings.std.stdStrings.chapters = "chapters".asInstanceOf[typings.std.stdStrings.chapters]
   @scala.inline
-  def chapters: typings.std.stdStrings.chapters = this.cast("chapters")
+  def descriptions: typings.std.stdStrings.descriptions = "descriptions".asInstanceOf[typings.std.stdStrings.descriptions]
   @scala.inline
-  def descriptions: typings.std.stdStrings.descriptions = this.cast("descriptions")
+  def metadata: typings.std.stdStrings.metadata = "metadata".asInstanceOf[typings.std.stdStrings.metadata]
   @scala.inline
-  def metadata: typings.std.stdStrings.metadata = this.cast("metadata")
-  @scala.inline
-  def subtitles: typings.std.stdStrings.subtitles = this.cast("subtitles")
+  def subtitles: typings.std.stdStrings.subtitles = "subtitles".asInstanceOf[typings.std.stdStrings.subtitles]
 }
 

@@ -102,7 +102,7 @@ trait IdentifyParametersProperties extends js.Object {
     */
   var returnUnformattedValues: js.UndefOr[Boolean] = js.undefined
   /**
-    * When `true`, indicates that Z values will be returned.
+    * When `true`, indicates that z-values will be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#returnZ)
     *

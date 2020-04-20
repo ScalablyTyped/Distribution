@@ -12,7 +12,6 @@ object PluginAddAttributesToSVGElement {
   @scala.inline
   def apply(addAttributesToSVGElement: Boolean | js.Object): PluginAddAttributesToSVGElement = {
     val __obj = js.Dynamic.literal(addAttributesToSVGElement = addAttributesToSVGElement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginAddAttributesToSVGElement]
   }
 }

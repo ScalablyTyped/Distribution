@@ -57,7 +57,6 @@ object NativeTouchEvent {
     touches: js.Array[NativeTouchEvent]
   ): NativeTouchEvent = {
     val __obj = js.Dynamic.literal(changedTouches = changedTouches.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], locationX = locationX.asInstanceOf[js.Any], locationY = locationY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeTouchEvent]
   }
 }

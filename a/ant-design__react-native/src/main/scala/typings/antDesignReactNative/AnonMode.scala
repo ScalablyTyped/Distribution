@@ -14,7 +14,6 @@ object AnonMode {
   @scala.inline
   def apply(minuteStep: Double, mode: String, triggerType: String): AnonMode = {
     val __obj = js.Dynamic.literal(minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMode]
   }
 }

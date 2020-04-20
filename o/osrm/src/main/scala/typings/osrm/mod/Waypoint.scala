@@ -31,7 +31,6 @@ object Waypoint {
   @scala.inline
   def apply(distance: Double, hint: String, location: Coordinate, name: String): Waypoint = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Waypoint]
   }
 }

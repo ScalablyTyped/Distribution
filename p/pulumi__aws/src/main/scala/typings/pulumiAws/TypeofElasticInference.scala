@@ -13,7 +13,6 @@ object TypeofElasticInference {
   @scala.inline
   def apply(Types: TypeofElasticInference): TypeofElasticInference = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofElasticInference]
   }
 }

@@ -20,7 +20,6 @@ object BulkUpload {
     setFileName: String => T
   ): BulkUpload[T] = {
     val __obj = js.Dynamic.literal(forCampaignManagement = js.Any.fromFunction0(forCampaignManagement), forOfflineConversions = js.Any.fromFunction0(forOfflineConversions), preview = js.Any.fromFunction0(preview), setFileName = js.Any.fromFunction1(setFileName))
-  
     __obj.asInstanceOf[BulkUpload[T]]
   }
 }

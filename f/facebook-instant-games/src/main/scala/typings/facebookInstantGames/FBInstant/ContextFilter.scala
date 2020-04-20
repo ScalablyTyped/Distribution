@@ -19,12 +19,10 @@ trait ContextFilter extends js.Object
 
 object ContextFilter {
   @scala.inline
-  def INCLUDE_EXISTING_CHALLENGES: typings.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES = this.cast("INCLUDE_EXISTING_CHALLENGES")
+  def INCLUDE_EXISTING_CHALLENGES: typings.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES = "INCLUDE_EXISTING_CHALLENGES".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES]
   @scala.inline
-  def NEW_CONTEXT_ONLY: typings.facebookInstantGames.facebookInstantGamesStrings.NEW_CONTEXT_ONLY = this.cast("NEW_CONTEXT_ONLY")
+  def NEW_CONTEXT_ONLY: typings.facebookInstantGames.facebookInstantGamesStrings.NEW_CONTEXT_ONLY = "NEW_CONTEXT_ONLY".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.NEW_CONTEXT_ONLY]
   @scala.inline
-  def NEW_PLAYERS_ONLY: typings.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY = this.cast("NEW_PLAYERS_ONLY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NEW_PLAYERS_ONLY: typings.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY = "NEW_PLAYERS_ONLY".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY]
 }
 

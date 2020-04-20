@@ -15,7 +15,6 @@ object OnWifiConnectedCallbackResult {
   @scala.inline
   def apply(wifi: WifiInfo): OnWifiConnectedCallbackResult = {
     val __obj = js.Dynamic.literal(wifi = wifi.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnWifiConnectedCallbackResult]
   }
 }

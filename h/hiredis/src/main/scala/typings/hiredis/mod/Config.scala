@@ -12,7 +12,6 @@ object Config {
   @scala.inline
   def apply(return_buffers: Boolean): Config = {
     val __obj = js.Dynamic.literal(return_buffers = return_buffers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Config]
   }
 }

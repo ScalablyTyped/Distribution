@@ -15,7 +15,6 @@ object ResourceRecordSetsResource {
   @scala.inline
   def apply(list: AnonManagedZone => Request_[ResourceRecordSetsListResponse]): ResourceRecordSetsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ResourceRecordSetsResource]
   }
 }

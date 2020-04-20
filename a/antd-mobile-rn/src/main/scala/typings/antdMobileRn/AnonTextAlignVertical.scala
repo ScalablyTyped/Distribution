@@ -15,7 +15,6 @@ object AnonTextAlignVertical {
   @scala.inline
   def apply(color: String, fontSize: Double, marginRight: Double, textAlignVertical: String): AnonTextAlignVertical = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], textAlignVertical = textAlignVertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTextAlignVertical]
   }
 }

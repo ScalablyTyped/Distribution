@@ -13,7 +13,6 @@ object KeyPair {
   @scala.inline
   def apply(privateKey: Handle, publicKey: Handle): KeyPair = {
     val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyPair]
   }
 }

@@ -23,7 +23,6 @@ object AnonCount {
   @scala.inline
   def apply(adUnitId: String, count: Double, style: js.Array[AnonAppNameHidden]): AnonCount = {
     val __obj = js.Dynamic.literal(adUnitId = adUnitId.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCount]
   }
 }

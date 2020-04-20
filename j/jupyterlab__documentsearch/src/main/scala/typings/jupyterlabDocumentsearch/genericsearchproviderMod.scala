@@ -62,14 +62,14 @@ object genericsearchproviderMod extends js.Object {
       * Signal indicating that something in the search has changed, so the UI should update
       */
     @JSName("changed")
-    def changed_MGenericSearchProvider(): ISignal[this.type, Unit] = js.native
+    def changed_MGenericSearchProvider: ISignal[this.type, Unit] = js.native
     def clearSelection(): Unit = js.native
-    def currentMatch(): ISearchMatch | Null = js.native
+    def currentMatch: ISearchMatch | Null = js.native
     /**
       * The current index of the selected match.
       */
     @JSName("currentMatchIndex")
-    def currentMatchIndex_MGenericSearchProvider(): Double | Null = js.native
+    def currentMatchIndex_MGenericSearchProvider: Double | Null = js.native
     /**
       * Clears state of a search provider to prepare for startQuery to be called
       * in order to start a new query or refresh an existing one.
@@ -116,7 +116,7 @@ object genericsearchproviderMod extends js.Object {
       * The same list of matches provided by the startQuery promise resolution
       */
     @JSName("matches")
-    def matches_MGenericSearchProvider(): js.Array[ISearchMatch] = js.native
+    def matches_MGenericSearchProvider: js.Array[ISearchMatch] = js.native
     def refreshOverlay(): Unit = js.native
     /**
       * Replace all matches in the notebook with the provided text

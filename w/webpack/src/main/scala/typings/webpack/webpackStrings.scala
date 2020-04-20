@@ -481,19 +481,19 @@ object webpackStrings {
   @scala.inline
   def `Numbersignsource-map`: `Numbersignsource-map` = "#source-map".asInstanceOf[`Numbersignsource-map`]
   @scala.inline
-  def `accepted harmony modules`: `accepted harmony modules` = "accepted harmony modules".asInstanceOf[`accepted harmony modules`]
+  def `accepted harmony modules`: `accepted harmony modules` = ("accepted harmony modules").asInstanceOf[`accepted harmony modules`]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
   def amd: amd = "amd".asInstanceOf[amd]
   @scala.inline
-  def `amd define`: `amd define` = "amd define".asInstanceOf[`amd define`]
+  def `amd define`: `amd define` = ("amd define").asInstanceOf[`amd define`]
   @scala.inline
-  def `amd require`: `amd require` = "amd require".asInstanceOf[`amd require`]
+  def `amd require`: `amd require` = ("amd require").asInstanceOf[`amd require`]
   @scala.inline
-  def `amd require array`: `amd require array` = "amd require array".asInstanceOf[`amd require array`]
+  def `amd require array`: `amd require array` = ("amd require array").asInstanceOf[`amd require array`]
   @scala.inline
-  def `amd require context`: `amd require context` = "amd require context".asInstanceOf[`amd require context`]
+  def `amd require context`: `amd require context` = ("amd require context").asInstanceOf[`amd require context`]
   @scala.inline
   def assign: assign = "assign".asInstanceOf[assign]
   @scala.inline
@@ -513,23 +513,23 @@ object webpackStrings {
   @scala.inline
   def `cheap-source-map`: `cheap-source-map` = "cheap-source-map".asInstanceOf[`cheap-source-map`]
   @scala.inline
-  def `cjs require`: `cjs require` = "cjs require".asInstanceOf[`cjs require`]
+  def `cjs require`: `cjs require` = ("cjs require").asInstanceOf[`cjs require`]
   @scala.inline
-  def `cjs require context`: `cjs require context` = "cjs require context".asInstanceOf[`cjs require context`]
+  def `cjs require context`: `cjs require context` = ("cjs require context").asInstanceOf[`cjs require context`]
   @scala.inline
   def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
   @scala.inline
   def commonjs2: commonjs2 = "commonjs2".asInstanceOf[commonjs2]
   @scala.inline
-  def `context element`: `context element` = "context element".asInstanceOf[`context element`]
+  def `context element`: `context element` = ("context element").asInstanceOf[`context element`]
   @scala.inline
-  def `delegated exports`: `delegated exports` = "delegated exports".asInstanceOf[`delegated exports`]
+  def `delegated exports`: `delegated exports` = ("delegated exports").asInstanceOf[`delegated exports`]
   @scala.inline
-  def `delegated source`: `delegated source` = "delegated source".asInstanceOf[`delegated source`]
+  def `delegated source`: `delegated source` = ("delegated source").asInstanceOf[`delegated source`]
   @scala.inline
   def development: development = "development".asInstanceOf[development]
   @scala.inline
-  def `dll entry`: `dll entry` = "dll entry".asInstanceOf[`dll entry`]
+  def `dll entry`: `dll entry` = ("dll entry").asInstanceOf[`dll entry`]
   @scala.inline
   def electron: electron = "electron".asInstanceOf[electron]
   @scala.inline
@@ -555,21 +555,21 @@ object webpackStrings {
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   @scala.inline
-  def `harmony accept`: `harmony accept` = "harmony accept".asInstanceOf[`harmony accept`]
+  def `harmony accept`: `harmony accept` = ("harmony accept").asInstanceOf[`harmony accept`]
   @scala.inline
-  def `harmony export expression`: `harmony export expression` = "harmony export expression".asInstanceOf[`harmony export expression`]
+  def `harmony export expression`: `harmony export expression` = ("harmony export expression").asInstanceOf[`harmony export expression`]
   @scala.inline
-  def `harmony export header`: `harmony export header` = "harmony export header".asInstanceOf[`harmony export header`]
+  def `harmony export header`: `harmony export header` = ("harmony export header").asInstanceOf[`harmony export header`]
   @scala.inline
-  def `harmony export imported specifier`: `harmony export imported specifier` = "harmony export imported specifier".asInstanceOf[`harmony export imported specifier`]
+  def `harmony export imported specifier`: `harmony export imported specifier` = ("harmony export imported specifier").asInstanceOf[`harmony export imported specifier`]
   @scala.inline
-  def `harmony export specifier`: `harmony export specifier` = "harmony export specifier".asInstanceOf[`harmony export specifier`]
+  def `harmony export specifier`: `harmony export specifier` = ("harmony export specifier").asInstanceOf[`harmony export specifier`]
   @scala.inline
-  def `harmony import specifier`: `harmony import specifier` = "harmony import specifier".asInstanceOf[`harmony import specifier`]
+  def `harmony import specifier`: `harmony import specifier` = ("harmony import specifier").asInstanceOf[`harmony import specifier`]
   @scala.inline
-  def `harmony init`: `harmony init` = "harmony init".asInstanceOf[`harmony init`]
+  def `harmony init`: `harmony init` = ("harmony init").asInstanceOf[`harmony init`]
   @scala.inline
-  def `harmony side effect evaluation`: `harmony side effect evaluation` = "harmony side effect evaluation".asInstanceOf[`harmony side effect evaluation`]
+  def `harmony side effect evaluation`: `harmony side effect evaluation` = ("harmony side effect evaluation").asInstanceOf[`harmony side effect evaluation`]
   @scala.inline
   def hashed: hashed = "hashed".asInstanceOf[hashed]
   @scala.inline
@@ -579,13 +579,13 @@ object webpackStrings {
   @scala.inline
   def importLeftparenthesisRightparenthesis: importLeftparenthesisRightparenthesis = "import()".asInstanceOf[importLeftparenthesisRightparenthesis]
   @scala.inline
-  def `importLeftparenthesisRightparenthesis context development`: `importLeftparenthesisRightparenthesis context development` = "import() context development".asInstanceOf[`importLeftparenthesisRightparenthesis context development`]
+  def `importLeftparenthesisRightparenthesis context development`: `importLeftparenthesisRightparenthesis context development` = ("import() context development").asInstanceOf[`importLeftparenthesisRightparenthesis context development`]
   @scala.inline
-  def `importLeftparenthesisRightparenthesis context production`: `importLeftparenthesisRightparenthesis context production` = "import() context production".asInstanceOf[`importLeftparenthesisRightparenthesis context production`]
+  def `importLeftparenthesisRightparenthesis context production`: `importLeftparenthesisRightparenthesis context production` = ("import() context production").asInstanceOf[`importLeftparenthesisRightparenthesis context production`]
   @scala.inline
-  def `importLeftparenthesisRightparenthesis eager`: `importLeftparenthesisRightparenthesis eager` = "import() eager".asInstanceOf[`importLeftparenthesisRightparenthesis eager`]
+  def `importLeftparenthesisRightparenthesis eager`: `importLeftparenthesisRightparenthesis eager` = ("import() eager").asInstanceOf[`importLeftparenthesisRightparenthesis eager`]
   @scala.inline
-  def `importLeftparenthesisRightparenthesis weak`: `importLeftparenthesisRightparenthesis weak` = "import() weak".asInstanceOf[`importLeftparenthesisRightparenthesis weak`]
+  def `importLeftparenthesisRightparenthesis weak`: `importLeftparenthesisRightparenthesis weak` = ("import() weak").asInstanceOf[`importLeftparenthesisRightparenthesis weak`]
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
@@ -603,7 +603,7 @@ object webpackStrings {
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
-  def `json exports`: `json exports` = "json exports".asInstanceOf[`json exports`]
+  def `json exports`: `json exports` = ("json exports").asInstanceOf[`json exports`]
   @scala.inline
   def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
   @scala.inline
@@ -621,7 +621,7 @@ object webpackStrings {
   @scala.inline
   def moduleDothotDotdecline: moduleDothotDotdecline = "module.hot.decline".asInstanceOf[moduleDothotDotdecline]
   @scala.inline
-  def `multi entry`: `multi entry` = "multi entry".asInstanceOf[`multi entry`]
+  def `multi entry`: `multi entry` = ("multi entry").asInstanceOf[`multi entry`]
   @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   @scala.inline
@@ -653,7 +653,7 @@ object webpackStrings {
   @scala.inline
   def requireDotensure: requireDotensure = "require.ensure".asInstanceOf[requireDotensure]
   @scala.inline
-  def `requireDotensure item`: `requireDotensure item` = "require.ensure item".asInstanceOf[`requireDotensure item`]
+  def `requireDotensure item`: `requireDotensure item` = ("require.ensure item").asInstanceOf[`requireDotensure item`]
   @scala.inline
   def requireDotinclude: requireDotinclude = "require.include".asInstanceOf[requireDotinclude]
   @scala.inline
@@ -661,7 +661,7 @@ object webpackStrings {
   @scala.inline
   def single: single = "single".asInstanceOf[single]
   @scala.inline
-  def `single entry`: `single entry` = "single entry".asInstanceOf[`single entry`]
+  def `single entry`: `single entry` = ("single entry").asInstanceOf[`single entry`]
   @scala.inline
   def size: size = "size".asInstanceOf[size]
   @scala.inline
@@ -683,9 +683,9 @@ object webpackStrings {
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline
-  def `wasm export import`: `wasm export import` = "wasm export import".asInstanceOf[`wasm export import`]
+  def `wasm export import`: `wasm export import` = ("wasm export import").asInstanceOf[`wasm export import`]
   @scala.inline
-  def `wasm import`: `wasm import` = "wasm import".asInstanceOf[`wasm import`]
+  def `wasm import`: `wasm import` = ("wasm import").asInstanceOf[`wasm import`]
   @scala.inline
   def web: web = "web".asInstanceOf[web]
   @scala.inline

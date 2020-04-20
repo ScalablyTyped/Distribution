@@ -17,7 +17,6 @@ object AnonTitle {
   @scala.inline
   def apply(title: String, titleHalign: center | end | start, titleStyle: js.Object): AnonTitle = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTitle]
   }
 }

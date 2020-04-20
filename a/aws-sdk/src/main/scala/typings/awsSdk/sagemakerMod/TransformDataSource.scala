@@ -16,7 +16,6 @@ object TransformDataSource {
   @scala.inline
   def apply(S3DataSource: TransformS3DataSource): TransformDataSource = {
     val __obj = js.Dynamic.literal(S3DataSource = S3DataSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransformDataSource]
   }
 }

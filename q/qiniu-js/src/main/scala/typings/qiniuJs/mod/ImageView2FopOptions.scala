@@ -29,7 +29,6 @@ object ImageView2FopOptions {
     w: Double
   ): ImageView2FopOptions = {
     val __obj = js.Dynamic.literal(fop = fop.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageView2FopOptions]
   }
 }

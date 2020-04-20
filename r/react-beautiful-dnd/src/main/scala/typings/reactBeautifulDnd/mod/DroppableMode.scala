@@ -12,10 +12,8 @@ trait DroppableMode extends js.Object
 
 object DroppableMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def standard: typings.reactBeautifulDnd.reactBeautifulDndStrings.standard = "standard".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.standard]
   @scala.inline
-  def standard: typings.reactBeautifulDnd.reactBeautifulDndStrings.standard = this.cast("standard")
-  @scala.inline
-  def virtual: typings.reactBeautifulDnd.reactBeautifulDndStrings.virtual = this.cast("virtual")
+  def virtual: typings.reactBeautifulDnd.reactBeautifulDndStrings.virtual = "virtual".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.virtual]
 }
 

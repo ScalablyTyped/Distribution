@@ -16,7 +16,6 @@ object AttackVectorDescription {
   @scala.inline
   def apply(VectorType: String): AttackVectorDescription = {
     val __obj = js.Dynamic.literal(VectorType = VectorType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttackVectorDescription]
   }
 }

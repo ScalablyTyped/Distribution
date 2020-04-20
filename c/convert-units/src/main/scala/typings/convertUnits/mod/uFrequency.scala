@@ -20,24 +20,22 @@ trait uFrequency extends js.Object
 
 object uFrequency {
   @scala.inline
-  def GHz: typings.convertUnits.convertUnitsStrings.GHz = this.cast("GHz")
+  def GHz: typings.convertUnits.convertUnitsStrings.GHz = "GHz".asInstanceOf[typings.convertUnits.convertUnitsStrings.GHz]
   @scala.inline
-  def Hz: typings.convertUnits.convertUnitsStrings.Hz = this.cast("Hz")
+  def Hz: typings.convertUnits.convertUnitsStrings.Hz = "Hz".asInstanceOf[typings.convertUnits.convertUnitsStrings.Hz]
   @scala.inline
-  def MHz: typings.convertUnits.convertUnitsStrings.MHz = this.cast("MHz")
+  def MHz: typings.convertUnits.convertUnitsStrings.MHz = "MHz".asInstanceOf[typings.convertUnits.convertUnitsStrings.MHz]
   @scala.inline
-  def THz: typings.convertUnits.convertUnitsStrings.THz = this.cast("THz")
+  def THz: typings.convertUnits.convertUnitsStrings.THz = "THz".asInstanceOf[typings.convertUnits.convertUnitsStrings.THz]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def degSlashs: typings.convertUnits.convertUnitsStrings.degSlashs = "deg/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.degSlashs]
   @scala.inline
-  def degSlashs: typings.convertUnits.convertUnitsStrings.degSlashs = this.cast("deg/s")
+  def kHz: typings.convertUnits.convertUnitsStrings.kHz = "kHz".asInstanceOf[typings.convertUnits.convertUnitsStrings.kHz]
   @scala.inline
-  def kHz: typings.convertUnits.convertUnitsStrings.kHz = this.cast("kHz")
+  def mHz: mHz_ = "mHz".asInstanceOf[mHz_]
   @scala.inline
-  def mHz: mHz_ = this.cast("mHz")
+  def radSlashs: typings.convertUnits.convertUnitsStrings.radSlashs = "rad/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.radSlashs]
   @scala.inline
-  def radSlashs: typings.convertUnits.convertUnitsStrings.radSlashs = this.cast("rad/s")
-  @scala.inline
-  def rpm: typings.convertUnits.convertUnitsStrings.rpm = this.cast("rpm")
+  def rpm: typings.convertUnits.convertUnitsStrings.rpm = "rpm".asInstanceOf[typings.convertUnits.convertUnitsStrings.rpm]
 }
 

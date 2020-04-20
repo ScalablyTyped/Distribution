@@ -13,7 +13,6 @@ object positionTypes {
   @scala.inline
   def apply(x: Double, y: Double): positionTypes = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[positionTypes]
   }
 }

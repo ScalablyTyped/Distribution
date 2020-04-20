@@ -24,7 +24,6 @@ object AppToolbarButtonView {
     remove: () => Unit
   ): AppToolbarButtonView = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroyed = destroyed.asInstanceOf[js.Any], on = js.Any.fromFunction2(on), open = js.Any.fromFunction0(open), remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[AppToolbarButtonView]
   }
 }

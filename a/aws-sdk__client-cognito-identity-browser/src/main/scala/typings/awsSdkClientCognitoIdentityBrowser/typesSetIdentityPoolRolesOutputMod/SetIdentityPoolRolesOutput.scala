@@ -18,7 +18,6 @@ object SetIdentityPoolRolesOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): SetIdentityPoolRolesOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetIdentityPoolRolesOutput]
   }
 }

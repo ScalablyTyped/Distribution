@@ -29,7 +29,7 @@ class DatePicker protected () extends AttributeWidgetWithPlaceholder {
   ) = this()
   @JSName("model")
   var model_FDatePicker: IModel = js.native
-  def formattingInfo(): FormattingInfo = js.native
+  def formattingInfo: FormattingInfo = js.native
   def formattingInfo(newValue: FormattingInfo): js.Any = js.native
 }
 

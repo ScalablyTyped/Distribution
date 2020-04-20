@@ -22,7 +22,6 @@ object Migration {
     up: () => js.Promise[_]
   ): Migration = {
     val __obj = js.Dynamic.literal(down = js.Any.fromFunction0(down), file = file.asInstanceOf[js.Any], migration = js.Any.fromFunction0(migration), testFileName = js.Any.fromFunction1(testFileName), up = js.Any.fromFunction0(up))
-  
     __obj.asInstanceOf[Migration]
   }
 }

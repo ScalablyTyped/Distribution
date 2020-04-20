@@ -13,7 +13,6 @@ object MasteryTreeItemDto {
   @scala.inline
   def apply(masteryId: Double, prereq: String): MasteryTreeItemDto = {
     val __obj = js.Dynamic.literal(masteryId = masteryId.asInstanceOf[js.Any], prereq = prereq.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MasteryTreeItemDto]
   }
 }

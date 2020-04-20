@@ -15,16 +15,14 @@ trait OutputTypeName extends js.Object
 
 object OutputTypeName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def display_data: typings.azdata.azdataStrings.display_data = "display_data".asInstanceOf[typings.azdata.azdataStrings.display_data]
   @scala.inline
-  def display_data: typings.azdata.azdataStrings.display_data = this.cast("display_data")
+  def error: typings.azdata.azdataStrings.error = "error".asInstanceOf[typings.azdata.azdataStrings.error]
   @scala.inline
-  def error: typings.azdata.azdataStrings.error = this.cast("error")
+  def execute_result: typings.azdata.azdataStrings.execute_result = "execute_result".asInstanceOf[typings.azdata.azdataStrings.execute_result]
   @scala.inline
-  def execute_result: typings.azdata.azdataStrings.execute_result = this.cast("execute_result")
+  def stream: typings.azdata.azdataStrings.stream = "stream".asInstanceOf[typings.azdata.azdataStrings.stream]
   @scala.inline
-  def stream: typings.azdata.azdataStrings.stream = this.cast("stream")
-  @scala.inline
-  def update_display_data: typings.azdata.azdataStrings.update_display_data = this.cast("update_display_data")
+  def update_display_data: typings.azdata.azdataStrings.update_display_data = "update_display_data".asInstanceOf[typings.azdata.azdataStrings.update_display_data]
 }
 

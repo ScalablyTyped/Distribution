@@ -19,7 +19,6 @@ object WorkItemStateTransition {
   @scala.inline
   def apply(actions: js.Array[String], to: String): WorkItemStateTransition = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemStateTransition]
   }
 }

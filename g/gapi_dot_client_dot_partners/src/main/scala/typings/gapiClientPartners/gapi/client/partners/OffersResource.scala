@@ -16,7 +16,6 @@ object OffersResource {
   @scala.inline
   def apply(history: HistoryResource, list: AnonFields => Request_[ListOffersResponse]): OffersResource = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[OffersResource]
   }
 }

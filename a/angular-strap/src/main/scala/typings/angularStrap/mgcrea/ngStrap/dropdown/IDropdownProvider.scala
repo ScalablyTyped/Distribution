@@ -12,7 +12,6 @@ object IDropdownProvider {
   @scala.inline
   def apply(defaults: IDropdownOptions): IDropdownProvider = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDropdownProvider]
   }
 }

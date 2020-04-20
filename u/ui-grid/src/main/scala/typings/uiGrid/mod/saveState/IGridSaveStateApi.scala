@@ -24,7 +24,6 @@ object IGridSaveStateApi {
   @scala.inline
   def apply(restore: (IScope, IGridSavedState) => Unit, save: () => IGridSavedState): IGridSaveStateApi = {
     val __obj = js.Dynamic.literal(restore = js.Any.fromFunction2(restore), save = js.Any.fromFunction0(save))
-  
     __obj.asInstanceOf[IGridSaveStateApi]
   }
 }

@@ -36,8 +36,8 @@ abstract class ModuleDocument protected () extends ModelUnit {
   val containerAsModule_FModuleDocument: IModule = js.native
   @JSName("model")
   var model_FModuleDocument: IModel = js.native
-  def containerAsFolderBase(): FolderBase = js.native
-  def containerAsModule(): Module = js.native
+  def containerAsFolderBase: FolderBase = js.native
+  def containerAsModule: Module = js.native
 }
 
 /* static members */

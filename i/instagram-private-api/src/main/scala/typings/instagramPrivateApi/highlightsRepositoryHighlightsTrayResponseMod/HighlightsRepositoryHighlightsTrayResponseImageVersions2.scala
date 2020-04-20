@@ -12,7 +12,6 @@ object HighlightsRepositoryHighlightsTrayResponseImageVersions2 {
   @scala.inline
   def apply(candidates: js.Array[HighlightsRepositoryHighlightsTrayResponseCandidatesItem]): HighlightsRepositoryHighlightsTrayResponseImageVersions2 = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseImageVersions2]
   }
 }

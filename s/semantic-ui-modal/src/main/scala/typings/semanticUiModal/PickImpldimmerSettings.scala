@@ -14,7 +14,6 @@ object PickImpldimmerSettings {
   @scala.inline
   def apply(dimmerSettings: DimmerSettings): PickImpldimmerSettings = {
     val __obj = js.Dynamic.literal(dimmerSettings = dimmerSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldimmerSettings]
   }
 }

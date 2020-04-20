@@ -12,7 +12,6 @@ object PluginRemoveOffCanvasPaths {
   @scala.inline
   def apply(removeOffCanvasPaths: Boolean | js.Object): PluginRemoveOffCanvasPaths = {
     val __obj = js.Dynamic.literal(removeOffCanvasPaths = removeOffCanvasPaths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveOffCanvasPaths]
   }
 }

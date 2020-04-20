@@ -14,14 +14,12 @@ trait PayloadType extends js.Object
 
 object PayloadType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.jsonrpcSerializer.jsonrpcSerializerStrings.error = "error".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.error]
   @scala.inline
-  def error: typings.jsonrpcSerializer.jsonrpcSerializerStrings.error = this.cast("error")
+  def notification: typings.jsonrpcSerializer.jsonrpcSerializerStrings.notification = "notification".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.notification]
   @scala.inline
-  def notification: typings.jsonrpcSerializer.jsonrpcSerializerStrings.notification = this.cast("notification")
+  def request: typings.jsonrpcSerializer.jsonrpcSerializerStrings.request = "request".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.request]
   @scala.inline
-  def request: typings.jsonrpcSerializer.jsonrpcSerializerStrings.request = this.cast("request")
-  @scala.inline
-  def success: typings.jsonrpcSerializer.jsonrpcSerializerStrings.success = this.cast("success")
+  def success: typings.jsonrpcSerializer.jsonrpcSerializerStrings.success = "success".asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerStrings.success]
 }
 

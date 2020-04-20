@@ -28,7 +28,6 @@ object ReelsTrayFeedResponseRootObject {
     tray: js.Array[ReelsTrayFeedResponseTrayItem]
   ): ReelsTrayFeedResponseRootObject = {
     val __obj = js.Dynamic.literal(broadcasts = broadcasts.asInstanceOf[js.Any], face_filter_nux_version = face_filter_nux_version.asInstanceOf[js.Any], has_new_nux_story = has_new_nux_story.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], sticker_version = sticker_version.asInstanceOf[js.Any], stories_viewer_gestures_nux_eligible = stories_viewer_gestures_nux_eligible.asInstanceOf[js.Any], story_ranking_token = story_ranking_token.asInstanceOf[js.Any], tray = tray.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReelsTrayFeedResponseRootObject]
   }
 }

@@ -13,12 +13,10 @@ trait TAlign extends js.Object
 
 object TAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.blessed.blessedStrings.center = "center".asInstanceOf[typings.blessed.blessedStrings.center]
   @scala.inline
-  def center: typings.blessed.blessedStrings.center = this.cast("center")
+  def left: typings.blessed.blessedStrings.left = "left".asInstanceOf[typings.blessed.blessedStrings.left]
   @scala.inline
-  def left: typings.blessed.blessedStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.blessed.blessedStrings.right = this.cast("right")
+  def right: typings.blessed.blessedStrings.right = "right".asInstanceOf[typings.blessed.blessedStrings.right]
 }
 

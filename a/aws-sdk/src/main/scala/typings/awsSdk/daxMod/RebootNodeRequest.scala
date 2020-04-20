@@ -20,7 +20,6 @@ object RebootNodeRequest {
   @scala.inline
   def apply(ClusterName: String, NodeId: String): RebootNodeRequest = {
     val __obj = js.Dynamic.literal(ClusterName = ClusterName.asInstanceOf[js.Any], NodeId = NodeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RebootNodeRequest]
   }
 }

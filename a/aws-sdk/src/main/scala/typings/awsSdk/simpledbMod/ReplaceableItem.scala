@@ -20,7 +20,6 @@ object ReplaceableItem {
   @scala.inline
   def apply(Attributes: ReplaceableAttributeList, Name: String): ReplaceableItem = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplaceableItem]
   }
 }

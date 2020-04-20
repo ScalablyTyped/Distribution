@@ -21,7 +21,6 @@ object NumberLocalePatternData {
     unit: Record[String, UnitPattern]
   ): NumberLocalePatternData = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NumberLocalePatternData]
   }
 }

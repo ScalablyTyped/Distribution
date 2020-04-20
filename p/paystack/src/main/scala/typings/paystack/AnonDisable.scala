@@ -23,7 +23,6 @@ object AnonDisable {
     list: () => js.Promise[ResponsedataArrayanymetaaDictothers]
   ): AnonDisable = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), disable = js.Any.fromFunction1(disable), enable = js.Any.fromFunction1(enable), get = js.Any.fromFunction1(get), list = js.Any.fromFunction0(list))
-  
     __obj.asInstanceOf[AnonDisable]
   }
 }

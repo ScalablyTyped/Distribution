@@ -134,11 +134,11 @@ class PointerDragBehavior () extends Behavior[AbstractMesh] {
     *  The name of the behavior
     */
   @JSName("name")
-  def name_MPointerDragBehavior(): String = js.native
+  def name_MPointerDragBehavior: String = js.native
   /**
     * Gets the options used by the behavior
     */
-  def options(): AnonDragAxisDragPlaneNormal = js.native
+  def options: AnonDragAxisDragPlaneNormal = js.native
   /**
     * Sets the options used by the behavior
     */

@@ -14,7 +14,6 @@ object RealtimeBase {
   @scala.inline
   def apply(clientId: String, close: () => Unit, connect: () => Unit): RealtimeBase = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), connect = js.Any.fromFunction0(connect))
-  
     __obj.asInstanceOf[RealtimeBase]
   }
 }

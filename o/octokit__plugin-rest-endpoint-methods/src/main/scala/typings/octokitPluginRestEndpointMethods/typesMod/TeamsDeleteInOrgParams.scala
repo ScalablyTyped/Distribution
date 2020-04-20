@@ -13,7 +13,6 @@ object TeamsDeleteInOrgParams {
   @scala.inline
   def apply(org: String, team_slug: String): TeamsDeleteInOrgParams = {
     val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamsDeleteInOrgParams]
   }
 }

@@ -13,7 +13,6 @@ object CheckboxState {
   @scala.inline
   def apply(isFocus: Boolean, isHover: Boolean): CheckboxState = {
     val __obj = js.Dynamic.literal(isFocus = isFocus.asInstanceOf[js.Any], isHover = isHover.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckboxState]
   }
 }

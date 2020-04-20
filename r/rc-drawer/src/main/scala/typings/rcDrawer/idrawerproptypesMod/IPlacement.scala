@@ -14,14 +14,12 @@ trait IPlacement extends js.Object
 
 object IPlacement {
   @scala.inline
-  def bottom: typings.rcDrawer.rcDrawerStrings.bottom = this.cast("bottom")
+  def bottom: typings.rcDrawer.rcDrawerStrings.bottom = "bottom".asInstanceOf[typings.rcDrawer.rcDrawerStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.rcDrawer.rcDrawerStrings.left = "left".asInstanceOf[typings.rcDrawer.rcDrawerStrings.left]
   @scala.inline
-  def left: typings.rcDrawer.rcDrawerStrings.left = this.cast("left")
+  def right: typings.rcDrawer.rcDrawerStrings.right = "right".asInstanceOf[typings.rcDrawer.rcDrawerStrings.right]
   @scala.inline
-  def right: typings.rcDrawer.rcDrawerStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.rcDrawer.rcDrawerStrings.top = this.cast("top")
+  def top: typings.rcDrawer.rcDrawerStrings.top = "top".asInstanceOf[typings.rcDrawer.rcDrawerStrings.top]
 }
 

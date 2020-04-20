@@ -13,7 +13,6 @@ object AnonMax {
   @scala.inline
   def apply(current: Double, max: Double): AnonMax = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMax]
   }
 }

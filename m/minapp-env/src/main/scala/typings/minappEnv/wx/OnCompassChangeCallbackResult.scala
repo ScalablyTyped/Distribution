@@ -17,7 +17,6 @@ object OnCompassChangeCallbackResult {
   @scala.inline
   def apply(accuracy: Double | String, direction: Double): OnCompassChangeCallbackResult = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnCompassChangeCallbackResult]
   }
 }

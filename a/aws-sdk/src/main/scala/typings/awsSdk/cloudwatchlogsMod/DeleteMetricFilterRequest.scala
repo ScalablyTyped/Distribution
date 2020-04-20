@@ -20,7 +20,6 @@ object DeleteMetricFilterRequest {
   @scala.inline
   def apply(filterName: FilterName, logGroupName: LogGroupName): DeleteMetricFilterRequest = {
     val __obj = js.Dynamic.literal(filterName = filterName.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMetricFilterRequest]
   }
 }

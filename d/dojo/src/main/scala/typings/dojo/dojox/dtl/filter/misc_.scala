@@ -49,7 +49,6 @@ object misc_ {
     pprint: js.Any => js.Any
   ): misc_ = {
     val __obj = js.Dynamic.literal(filesizeformat = js.Any.fromFunction1(filesizeformat), phone2numeric = js.Any.fromFunction1(phone2numeric), pluralize = js.Any.fromFunction2(pluralize), pprint = js.Any.fromFunction1(pprint))
-  
     __obj.asInstanceOf[misc_]
   }
 }

@@ -78,7 +78,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFocusZoneProps extends HTMLAttributes[HTMLElement | FocusZone] {
-  /** Allow focus to move to root */
+  /** Allows focus to park on root when focus is in the `FocusZone` at render time. */
   var allowFocusRoot: js.UndefOr[Boolean] = js.undefined
   /**
     * Allows tab key to be handled to tab through a list of items in the focus zone,
@@ -179,6 +179,11 @@ trait IFocusZoneProps extends HTMLAttributes[HTMLElement | FocusZone] {
     * @deprecated DIV props provided to the FocusZone will be mixed into the root element.
     */
   var rootProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
+  /**
+    * Determines if a default tabbable element should be force focused on FocusZone mount.
+    * @default false
+    */
+  var shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined
   /**
     * A callback method to determine if the input element should lose focus on arrow keys
     *  @param inputElement - The input element which is to loose focus.
@@ -371,6 +376,7 @@ object IFocusZoneProps {
     role: String = null,
     rootProps: HTMLAttributes[HTMLDivElement] = null,
     security: String = null,
+    shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined,
     shouldInputLoseFocusOnArrowKey: /* inputElement */ HTMLInputElement => Boolean = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
@@ -566,6 +572,7 @@ object IFocusZoneProps {
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (rootProps != null) __obj.updateDynamic("rootProps")(rootProps.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldFocusOnMount)) __obj.updateDynamic("shouldFocusOnMount")(shouldFocusOnMount.asInstanceOf[js.Any])
     if (shouldInputLoseFocusOnArrowKey != null) __obj.updateDynamic("shouldInputLoseFocusOnArrowKey")(js.Any.fromFunction1(shouldInputLoseFocusOnArrowKey))
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])

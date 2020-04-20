@@ -21,7 +21,6 @@ object AccountUpdaterNotification {
     timestamp: Date
   ): AccountUpdaterNotification = {
     val __obj = js.Dynamic.literal(accountUpdaterDailyReport = accountUpdaterDailyReport.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountUpdaterNotification]
   }
 }

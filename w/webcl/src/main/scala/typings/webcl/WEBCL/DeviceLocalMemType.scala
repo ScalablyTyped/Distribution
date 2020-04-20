@@ -15,10 +15,8 @@ trait DeviceLocalMemType extends js.Object
 
 object DeviceLocalMemType {
   @scala.inline
-  def GLOBAL: `0x2` = this.cast(0x2)
+  def GLOBAL: `0x2` = 0x2.asInstanceOf[`0x2`]
   @scala.inline
-  def LOCAL: `0x1` = this.cast(0x1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def LOCAL: `0x1` = 0x1.asInstanceOf[`0x1`]
 }
 

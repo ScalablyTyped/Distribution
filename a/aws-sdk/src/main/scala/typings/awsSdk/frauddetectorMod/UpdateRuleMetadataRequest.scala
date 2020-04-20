@@ -20,7 +20,6 @@ object UpdateRuleMetadataRequest {
   @scala.inline
   def apply(description: description, rule: Rule): UpdateRuleMetadataRequest = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateRuleMetadataRequest]
   }
 }

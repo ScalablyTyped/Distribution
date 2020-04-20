@@ -17,7 +17,6 @@ object IStoreProvider {
   @scala.inline
   def apply(setStore: String => Unit): IStoreProvider = {
     val __obj = js.Dynamic.literal(setStore = js.Any.fromFunction1(setStore))
-  
     __obj.asInstanceOf[IStoreProvider]
   }
 }

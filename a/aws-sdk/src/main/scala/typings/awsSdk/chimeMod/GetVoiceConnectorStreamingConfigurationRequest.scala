@@ -16,7 +16,6 @@ object GetVoiceConnectorStreamingConfigurationRequest {
   @scala.inline
   def apply(VoiceConnectorId: NonEmptyString): GetVoiceConnectorStreamingConfigurationRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVoiceConnectorStreamingConfigurationRequest]
   }
 }

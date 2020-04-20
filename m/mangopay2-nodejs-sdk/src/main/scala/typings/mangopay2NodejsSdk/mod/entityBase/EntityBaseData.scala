@@ -14,7 +14,6 @@ object EntityBaseData {
   @scala.inline
   def apply(CreationDate: Double, Id: String, Tag: String): EntityBaseData = {
     val __obj = js.Dynamic.literal(CreationDate = CreationDate.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntityBaseData]
   }
 }

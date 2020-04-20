@@ -17,20 +17,18 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  def DELETE: typings.arangodb.arangodbStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.arangodb.arangodbStrings.DELETE = "DELETE".asInstanceOf[typings.arangodb.arangodbStrings.DELETE]
   @scala.inline
-  def GET: typings.arangodb.arangodbStrings.GET = this.cast("GET")
+  def GET: typings.arangodb.arangodbStrings.GET = "GET".asInstanceOf[typings.arangodb.arangodbStrings.GET]
   @scala.inline
-  def HEAD: typings.arangodb.arangodbStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.arangodb.arangodbStrings.HEAD = "HEAD".asInstanceOf[typings.arangodb.arangodbStrings.HEAD]
   @scala.inline
-  def OPTIONS: typings.arangodb.arangodbStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.arangodb.arangodbStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.arangodb.arangodbStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.arangodb.arangodbStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.arangodb.arangodbStrings.PATCH = "PATCH".asInstanceOf[typings.arangodb.arangodbStrings.PATCH]
   @scala.inline
-  def POST: typings.arangodb.arangodbStrings.POST = this.cast("POST")
+  def POST: typings.arangodb.arangodbStrings.POST = "POST".asInstanceOf[typings.arangodb.arangodbStrings.POST]
   @scala.inline
-  def PUT: typings.arangodb.arangodbStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUT: typings.arangodb.arangodbStrings.PUT = "PUT".asInstanceOf[typings.arangodb.arangodbStrings.PUT]
 }
 

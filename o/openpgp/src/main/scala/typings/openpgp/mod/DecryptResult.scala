@@ -20,7 +20,6 @@ object DecryptResult {
     signatures: js.Array[AnonValid]
   ): DecryptResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecryptResult]
   }
 }

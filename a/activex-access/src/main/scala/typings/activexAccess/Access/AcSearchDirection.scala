@@ -16,12 +16,10 @@ trait AcSearchDirection extends js.Object
 
 object AcSearchDirection {
   @scala.inline
-  def acDown: `1` = this.cast(1)
+  def acDown: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acSearchAll: `2` = this.cast(2)
+  def acSearchAll: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acUp: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acUp: `0` = 0.asInstanceOf[`0`]
 }
 

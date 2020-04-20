@@ -18,7 +18,6 @@ object TabRemoveInfo {
   @scala.inline
   def apply(isWindowClosing: Boolean, windowId: Double): TabRemoveInfo = {
     val __obj = js.Dynamic.literal(isWindowClosing = isWindowClosing.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabRemoveInfo]
   }
 }

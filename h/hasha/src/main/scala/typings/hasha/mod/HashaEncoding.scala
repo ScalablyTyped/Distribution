@@ -14,14 +14,12 @@ trait HashaEncoding extends js.Object
 
 object HashaEncoding {
   @scala.inline
-  def base64: typings.hasha.hashaStrings.base64 = this.cast("base64")
+  def base64: typings.hasha.hashaStrings.base64 = "base64".asInstanceOf[typings.hasha.hashaStrings.base64]
   @scala.inline
-  def buffer: typings.hasha.hashaStrings.buffer = this.cast("buffer")
+  def buffer: typings.hasha.hashaStrings.buffer = "buffer".asInstanceOf[typings.hasha.hashaStrings.buffer]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hex: typings.hasha.hashaStrings.hex = "hex".asInstanceOf[typings.hasha.hashaStrings.hex]
   @scala.inline
-  def hex: typings.hasha.hashaStrings.hex = this.cast("hex")
-  @scala.inline
-  def latin1: typings.hasha.hashaStrings.latin1 = this.cast("latin1")
+  def latin1: typings.hasha.hashaStrings.latin1 = "latin1".asInstanceOf[typings.hasha.hashaStrings.latin1]
 }
 

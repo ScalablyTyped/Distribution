@@ -58,7 +58,7 @@ object nodeSql2Strings {
   @scala.inline
   def mysql: mysql = "mysql".asInstanceOf[mysql]
   @scala.inline
-  def `no action`: `no action` = "no action".asInstanceOf[`no action`]
+  def `no action`: `no action` = ("no action").asInstanceOf[`no action`]
   @scala.inline
   def oracle: oracle = "oracle".asInstanceOf[oracle]
   @scala.inline
@@ -66,9 +66,9 @@ object nodeSql2Strings {
   @scala.inline
   def restrict: restrict = "restrict".asInstanceOf[restrict]
   @scala.inline
-  def `set default`: `set default` = "set default".asInstanceOf[`set default`]
+  def `set default`: `set default` = ("set default").asInstanceOf[`set default`]
   @scala.inline
-  def `set null`: `set null` = "set null".asInstanceOf[`set null`]
+  def `set null`: `set null` = ("set null").asInstanceOf[`set null`]
   @scala.inline
   def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
 }

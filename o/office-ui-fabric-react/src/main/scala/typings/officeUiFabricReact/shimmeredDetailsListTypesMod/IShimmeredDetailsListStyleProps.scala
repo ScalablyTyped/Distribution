@@ -13,7 +13,6 @@ object IShimmeredDetailsListStyleProps {
   @scala.inline
   def apply(theme: js.Any): IShimmeredDetailsListStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IShimmeredDetailsListStyleProps]
   }
 }

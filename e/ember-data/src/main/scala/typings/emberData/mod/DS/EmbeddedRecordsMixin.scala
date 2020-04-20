@@ -19,14 +19,14 @@ class EmbeddedRecordsMixin () extends js.Object {
     * When serializing an embedded record, modify the property (in the json payload)
     * that refers to the parent record (foreign key for relationship).
     */
-  def removeEmbeddedForeignKey[K /* <: String */](snapshot: Snapshot[K], embeddedSnapshot: Snapshot[K], relationship: js.Object, json: js.Object): js.Any = js.native
+  def removeEmbeddedForeignKey[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], embeddedSnapshot: Snapshot[K], relationship: js.Object, json: js.Object): js.Any = js.native
   /**
     * Serialize `belongsTo` relationship when it is configured as an embedded object.
     */
-  def serializeBelongsTo[K /* <: String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
+  def serializeBelongsTo[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
   /**
     * Serializes `hasMany` relationships when it is configured as embedded objects.
     */
-  def serializeHasMany[K /* <: String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
+  def serializeHasMany[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
 }
 

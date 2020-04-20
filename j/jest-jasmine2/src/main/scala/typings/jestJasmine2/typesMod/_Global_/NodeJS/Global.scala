@@ -13,7 +13,6 @@ object Global {
   @scala.inline
   def apply(expect: Expect): Global = {
     val __obj = js.Dynamic.literal(expect = expect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Global]
   }
 }

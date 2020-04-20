@@ -13,7 +13,6 @@ object PickImplexitConditions {
   @scala.inline
   def apply(exitConditions: String): PickImplexitConditions = {
     val __obj = js.Dynamic.literal(exitConditions = exitConditions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplexitConditions]
   }
 }

@@ -37,7 +37,7 @@ class MimeContent_ protected () extends Widget {
   /**
     * A promise that resolves when the widget is ready.
     */
-  def ready(): js.Promise[Unit] = js.native
+  def ready: js.Promise[Unit] = js.native
   /**
     * Set URI fragment identifier.
     */

@@ -13,7 +13,6 @@ object AnonPublicKey {
   @scala.inline
   def apply(privateKey: Buffer, publicKey: java.lang.String): AnonPublicKey = {
     val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPublicKey]
   }
 }

@@ -13,12 +13,10 @@ trait MediaSessionPlaybackState extends js.Object
 
 object MediaSessionPlaybackState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.wicgMediasession.wicgMediasessionStrings.none = "none".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.none]
   @scala.inline
-  def none: typings.wicgMediasession.wicgMediasessionStrings.none = this.cast("none")
+  def paused: typings.wicgMediasession.wicgMediasessionStrings.paused = "paused".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.paused]
   @scala.inline
-  def paused: typings.wicgMediasession.wicgMediasessionStrings.paused = this.cast("paused")
-  @scala.inline
-  def playing: typings.wicgMediasession.wicgMediasessionStrings.playing = this.cast("playing")
+  def playing: typings.wicgMediasession.wicgMediasessionStrings.playing = "playing".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.playing]
 }
 

@@ -50,7 +50,6 @@ object SkEnumSkColorTypeA16float {
     values: js.Array[SkColorType]
   ): SkEnumSkColorTypeA16float = {
     val __obj = js.Dynamic.literal(A16_float = A16_float.asInstanceOf[js.Any], A16_unorm = A16_unorm.asInstanceOf[js.Any], ARGB_4444 = ARGB_4444.asInstanceOf[js.Any], Alpha_8 = Alpha_8.asInstanceOf[js.Any], BGRA_8888 = BGRA_8888.asInstanceOf[js.Any], Gray_8 = Gray_8.asInstanceOf[js.Any], R16G16B16A16_unorm = R16G16B16A16_unorm.asInstanceOf[js.Any], R16G16_float = R16G16_float.asInstanceOf[js.Any], R16G16_unorm = R16G16_unorm.asInstanceOf[js.Any], R8G8_unorm = R8G8_unorm.asInstanceOf[js.Any], RGBA_1010102 = RGBA_1010102.asInstanceOf[js.Any], RGBA_8888 = RGBA_8888.asInstanceOf[js.Any], RGBA_F16 = RGBA_F16.asInstanceOf[js.Any], RGBA_F32 = RGBA_F32.asInstanceOf[js.Any], RGB_101010x = RGB_101010x.asInstanceOf[js.Any], RGB_565 = RGB_565.asInstanceOf[js.Any], RGB_888x = RGB_888x.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkColorTypeA16float]
   }
 }

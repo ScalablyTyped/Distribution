@@ -15,7 +15,6 @@ object FreebusyResource {
   @scala.inline
   def apply(query: AnonPrettyPrint => Request_[FreeBusyResponse]): FreebusyResource = {
     val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[FreebusyResource]
   }
 }

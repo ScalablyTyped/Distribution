@@ -42,7 +42,6 @@ object Printer {
     printNode: (EmitHint, Node, SourceFile) => java.lang.String
   ): Printer = {
     val __obj = js.Dynamic.literal(printBundle = js.Any.fromFunction1(printBundle), printFile = js.Any.fromFunction1(printFile), printList = js.Any.fromFunction3(printList), printNode = js.Any.fromFunction3(printNode))
-  
     __obj.asInstanceOf[Printer]
   }
 }

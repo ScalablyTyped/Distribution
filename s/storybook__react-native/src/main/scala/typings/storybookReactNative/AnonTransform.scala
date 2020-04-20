@@ -13,7 +13,6 @@ object AnonTransform {
   @scala.inline
   def apply(transform: js.Array[AnonTranslateX], width: Double): AnonTransform = {
     val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTransform]
   }
 }

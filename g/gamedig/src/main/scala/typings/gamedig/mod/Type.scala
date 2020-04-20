@@ -251,488 +251,486 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  def `7d2d`: typings.gamedig.gamedigStrings.`7d2d` = this.cast("7d2d")
+  def `7d2d`: typings.gamedig.gamedigStrings.`7d2d` = "7d2d".asInstanceOf[typings.gamedig.gamedigStrings.`7d2d`]
   @scala.inline
-  def ageofchivalry: typings.gamedig.gamedigStrings.ageofchivalry = this.cast("ageofchivalry")
+  def ageofchivalry: typings.gamedig.gamedigStrings.ageofchivalry = "ageofchivalry".asInstanceOf[typings.gamedig.gamedigStrings.ageofchivalry]
   @scala.inline
-  def alienarena: typings.gamedig.gamedigStrings.alienarena = this.cast("alienarena")
+  def alienarena: typings.gamedig.gamedigStrings.alienarena = "alienarena".asInstanceOf[typings.gamedig.gamedigStrings.alienarena]
   @scala.inline
-  def alienswarm: typings.gamedig.gamedigStrings.alienswarm = this.cast("alienswarm")
+  def alienswarm: typings.gamedig.gamedigStrings.alienswarm = "alienswarm".asInstanceOf[typings.gamedig.gamedigStrings.alienswarm]
   @scala.inline
-  def americasarmy: typings.gamedig.gamedigStrings.americasarmy = this.cast("americasarmy")
+  def americasarmy: typings.gamedig.gamedigStrings.americasarmy = "americasarmy".asInstanceOf[typings.gamedig.gamedigStrings.americasarmy]
   @scala.inline
-  def americasarmy2: typings.gamedig.gamedigStrings.americasarmy2 = this.cast("americasarmy2")
+  def americasarmy2: typings.gamedig.gamedigStrings.americasarmy2 = "americasarmy2".asInstanceOf[typings.gamedig.gamedigStrings.americasarmy2]
   @scala.inline
-  def americasarmy3: typings.gamedig.gamedigStrings.americasarmy3 = this.cast("americasarmy3")
+  def americasarmy3: typings.gamedig.gamedigStrings.americasarmy3 = "americasarmy3".asInstanceOf[typings.gamedig.gamedigStrings.americasarmy3]
   @scala.inline
-  def americasarmypg: typings.gamedig.gamedigStrings.americasarmypg = this.cast("americasarmypg")
+  def americasarmypg: typings.gamedig.gamedigStrings.americasarmypg = "americasarmypg".asInstanceOf[typings.gamedig.gamedigStrings.americasarmypg]
   @scala.inline
-  def aoe2: typings.gamedig.gamedigStrings.aoe2 = this.cast("aoe2")
+  def aoe2: typings.gamedig.gamedigStrings.aoe2 = "aoe2".asInstanceOf[typings.gamedig.gamedigStrings.aoe2]
   @scala.inline
-  def arkse: typings.gamedig.gamedigStrings.arkse = this.cast("arkse")
+  def arkse: typings.gamedig.gamedigStrings.arkse = "arkse".asInstanceOf[typings.gamedig.gamedigStrings.arkse]
   @scala.inline
-  def arma: typings.gamedig.gamedigStrings.arma = this.cast("arma")
+  def arma: typings.gamedig.gamedigStrings.arma = "arma".asInstanceOf[typings.gamedig.gamedigStrings.arma]
   @scala.inline
-  def arma2: typings.gamedig.gamedigStrings.arma2 = this.cast("arma2")
+  def arma2: typings.gamedig.gamedigStrings.arma2 = "arma2".asInstanceOf[typings.gamedig.gamedigStrings.arma2]
   @scala.inline
-  def arma3: typings.gamedig.gamedigStrings.arma3 = this.cast("arma3")
+  def arma3: typings.gamedig.gamedigStrings.arma3 = "arma3".asInstanceOf[typings.gamedig.gamedigStrings.arma3]
   @scala.inline
-  def armagetron: typings.gamedig.gamedigStrings.armagetron = this.cast("armagetron")
+  def armagetron: typings.gamedig.gamedigStrings.armagetron = "armagetron".asInstanceOf[typings.gamedig.gamedigStrings.armagetron]
   @scala.inline
-  def avp2: typings.gamedig.gamedigStrings.avp2 = this.cast("avp2")
+  def avp2: typings.gamedig.gamedigStrings.avp2 = "avp2".asInstanceOf[typings.gamedig.gamedigStrings.avp2]
   @scala.inline
-  def avp2010: typings.gamedig.gamedigStrings.avp2010 = this.cast("avp2010")
+  def avp2010: typings.gamedig.gamedigStrings.avp2010 = "avp2010".asInstanceOf[typings.gamedig.gamedigStrings.avp2010]
   @scala.inline
-  def baldursgate: typings.gamedig.gamedigStrings.baldursgate = this.cast("baldursgate")
+  def baldursgate: typings.gamedig.gamedigStrings.baldursgate = "baldursgate".asInstanceOf[typings.gamedig.gamedigStrings.baldursgate]
   @scala.inline
-  def bat1944: typings.gamedig.gamedigStrings.bat1944 = this.cast("bat1944")
+  def bat1944: typings.gamedig.gamedigStrings.bat1944 = "bat1944".asInstanceOf[typings.gamedig.gamedigStrings.bat1944]
   @scala.inline
-  def bf1942: typings.gamedig.gamedigStrings.bf1942 = this.cast("bf1942")
+  def bf1942: typings.gamedig.gamedigStrings.bf1942 = "bf1942".asInstanceOf[typings.gamedig.gamedigStrings.bf1942]
   @scala.inline
-  def bf2: typings.gamedig.gamedigStrings.bf2 = this.cast("bf2")
+  def bf2: typings.gamedig.gamedigStrings.bf2 = "bf2".asInstanceOf[typings.gamedig.gamedigStrings.bf2]
   @scala.inline
-  def bf2142: typings.gamedig.gamedigStrings.bf2142 = this.cast("bf2142")
+  def bf2142: typings.gamedig.gamedigStrings.bf2142 = "bf2142".asInstanceOf[typings.gamedig.gamedigStrings.bf2142]
   @scala.inline
-  def bf3: typings.gamedig.gamedigStrings.bf3 = this.cast("bf3")
+  def bf3: typings.gamedig.gamedigStrings.bf3 = "bf3".asInstanceOf[typings.gamedig.gamedigStrings.bf3]
   @scala.inline
-  def bf4: typings.gamedig.gamedigStrings.bf4 = this.cast("bf4")
+  def bf4: typings.gamedig.gamedigStrings.bf4 = "bf4".asInstanceOf[typings.gamedig.gamedigStrings.bf4]
   @scala.inline
-  def bfbc2: typings.gamedig.gamedigStrings.bfbc2 = this.cast("bfbc2")
+  def bfbc2: typings.gamedig.gamedigStrings.bfbc2 = "bfbc2".asInstanceOf[typings.gamedig.gamedigStrings.bfbc2]
   @scala.inline
-  def bfh: typings.gamedig.gamedigStrings.bfh = this.cast("bfh")
+  def bfh: typings.gamedig.gamedigStrings.bfh = "bfh".asInstanceOf[typings.gamedig.gamedigStrings.bfh]
   @scala.inline
-  def bfv: typings.gamedig.gamedigStrings.bfv = this.cast("bfv")
+  def bfv: typings.gamedig.gamedigStrings.bfv = "bfv".asInstanceOf[typings.gamedig.gamedigStrings.bfv]
   @scala.inline
-  def breach: typings.gamedig.gamedigStrings.breach = this.cast("breach")
+  def breach: typings.gamedig.gamedigStrings.breach = "breach".asInstanceOf[typings.gamedig.gamedigStrings.breach]
   @scala.inline
-  def breed: typings.gamedig.gamedigStrings.breed = this.cast("breed")
+  def breed: typings.gamedig.gamedigStrings.breed = "breed".asInstanceOf[typings.gamedig.gamedigStrings.breed]
   @scala.inline
-  def brink: typings.gamedig.gamedigStrings.brink = this.cast("brink")
+  def brink: typings.gamedig.gamedigStrings.brink = "brink".asInstanceOf[typings.gamedig.gamedigStrings.brink]
   @scala.inline
-  def buildandshoot: typings.gamedig.gamedigStrings.buildandshoot = this.cast("buildandshoot")
+  def buildandshoot: typings.gamedig.gamedigStrings.buildandshoot = "buildandshoot".asInstanceOf[typings.gamedig.gamedigStrings.buildandshoot]
   @scala.inline
-  def cacrenegade: typings.gamedig.gamedigStrings.cacrenegade = this.cast("cacrenegade")
+  def cacrenegade: typings.gamedig.gamedigStrings.cacrenegade = "cacrenegade".asInstanceOf[typings.gamedig.gamedigStrings.cacrenegade]
   @scala.inline
-  def callofjuarez: typings.gamedig.gamedigStrings.callofjuarez = this.cast("callofjuarez")
+  def callofjuarez: typings.gamedig.gamedigStrings.callofjuarez = "callofjuarez".asInstanceOf[typings.gamedig.gamedigStrings.callofjuarez]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chaser: typings.gamedig.gamedigStrings.chaser = "chaser".asInstanceOf[typings.gamedig.gamedigStrings.chaser]
   @scala.inline
-  def chaser: typings.gamedig.gamedigStrings.chaser = this.cast("chaser")
+  def chrome: typings.gamedig.gamedigStrings.chrome = "chrome".asInstanceOf[typings.gamedig.gamedigStrings.chrome]
   @scala.inline
-  def chrome: typings.gamedig.gamedigStrings.chrome = this.cast("chrome")
+  def cod: typings.gamedig.gamedigStrings.cod = "cod".asInstanceOf[typings.gamedig.gamedigStrings.cod]
   @scala.inline
-  def cod: typings.gamedig.gamedigStrings.cod = this.cast("cod")
+  def cod2: typings.gamedig.gamedigStrings.cod2 = "cod2".asInstanceOf[typings.gamedig.gamedigStrings.cod2]
   @scala.inline
-  def cod2: typings.gamedig.gamedigStrings.cod2 = this.cast("cod2")
+  def cod3: typings.gamedig.gamedigStrings.cod3 = "cod3".asInstanceOf[typings.gamedig.gamedigStrings.cod3]
   @scala.inline
-  def cod3: typings.gamedig.gamedigStrings.cod3 = this.cast("cod3")
+  def cod4: typings.gamedig.gamedigStrings.cod4 = "cod4".asInstanceOf[typings.gamedig.gamedigStrings.cod4]
   @scala.inline
-  def cod4: typings.gamedig.gamedigStrings.cod4 = this.cast("cod4")
+  def codenameeagle: typings.gamedig.gamedigStrings.codenameeagle = "codenameeagle".asInstanceOf[typings.gamedig.gamedigStrings.codenameeagle]
   @scala.inline
-  def codenameeagle: typings.gamedig.gamedigStrings.codenameeagle = this.cast("codenameeagle")
+  def codmw2: typings.gamedig.gamedigStrings.codmw2 = "codmw2".asInstanceOf[typings.gamedig.gamedigStrings.codmw2]
   @scala.inline
-  def codmw2: typings.gamedig.gamedigStrings.codmw2 = this.cast("codmw2")
+  def codmw3: typings.gamedig.gamedigStrings.codmw3 = "codmw3".asInstanceOf[typings.gamedig.gamedigStrings.codmw3]
   @scala.inline
-  def codmw3: typings.gamedig.gamedigStrings.codmw3 = this.cast("codmw3")
+  def coduo: typings.gamedig.gamedigStrings.coduo = "coduo".asInstanceOf[typings.gamedig.gamedigStrings.coduo]
   @scala.inline
-  def coduo: typings.gamedig.gamedigStrings.coduo = this.cast("coduo")
+  def codwaw: typings.gamedig.gamedigStrings.codwaw = "codwaw".asInstanceOf[typings.gamedig.gamedigStrings.codwaw]
   @scala.inline
-  def codwaw: typings.gamedig.gamedigStrings.codwaw = this.cast("codwaw")
+  def commandos3: typings.gamedig.gamedigStrings.commandos3 = "commandos3".asInstanceOf[typings.gamedig.gamedigStrings.commandos3]
   @scala.inline
-  def commandos3: typings.gamedig.gamedigStrings.commandos3 = this.cast("commandos3")
+  def conanexiles: typings.gamedig.gamedigStrings.conanexiles = "conanexiles".asInstanceOf[typings.gamedig.gamedigStrings.conanexiles]
   @scala.inline
-  def conanexiles: typings.gamedig.gamedigStrings.conanexiles = this.cast("conanexiles")
+  def contactjack: typings.gamedig.gamedigStrings.contactjack = "contactjack".asInstanceOf[typings.gamedig.gamedigStrings.contactjack]
   @scala.inline
-  def contactjack: typings.gamedig.gamedigStrings.contactjack = this.cast("contactjack")
+  def crossracing: typings.gamedig.gamedigStrings.crossracing = "crossracing".asInstanceOf[typings.gamedig.gamedigStrings.crossracing]
   @scala.inline
-  def crossracing: typings.gamedig.gamedigStrings.crossracing = this.cast("crossracing")
+  def crysis: typings.gamedig.gamedigStrings.crysis = "crysis".asInstanceOf[typings.gamedig.gamedigStrings.crysis]
   @scala.inline
-  def crysis: typings.gamedig.gamedigStrings.crysis = this.cast("crysis")
+  def crysis2: typings.gamedig.gamedigStrings.crysis2 = "crysis2".asInstanceOf[typings.gamedig.gamedigStrings.crysis2]
   @scala.inline
-  def crysis2: typings.gamedig.gamedigStrings.crysis2 = this.cast("crysis2")
+  def crysiswars: typings.gamedig.gamedigStrings.crysiswars = "crysiswars".asInstanceOf[typings.gamedig.gamedigStrings.crysiswars]
   @scala.inline
-  def crysiswars: typings.gamedig.gamedigStrings.crysiswars = this.cast("crysiswars")
+  def cs16: typings.gamedig.gamedigStrings.cs16 = "cs16".asInstanceOf[typings.gamedig.gamedigStrings.cs16]
   @scala.inline
-  def cs16: typings.gamedig.gamedigStrings.cs16 = this.cast("cs16")
+  def cscz: typings.gamedig.gamedigStrings.cscz = "cscz".asInstanceOf[typings.gamedig.gamedigStrings.cscz]
   @scala.inline
-  def cscz: typings.gamedig.gamedigStrings.cscz = this.cast("cscz")
+  def csgo: typings.gamedig.gamedigStrings.csgo = "csgo".asInstanceOf[typings.gamedig.gamedigStrings.csgo]
   @scala.inline
-  def csgo: typings.gamedig.gamedigStrings.csgo = this.cast("csgo")
+  def css: typings.gamedig.gamedigStrings.css = "css".asInstanceOf[typings.gamedig.gamedigStrings.css]
   @scala.inline
-  def css: typings.gamedig.gamedigStrings.css = this.cast("css")
+  def daikatana: typings.gamedig.gamedigStrings.daikatana = "daikatana".asInstanceOf[typings.gamedig.gamedigStrings.daikatana]
   @scala.inline
-  def daikatana: typings.gamedig.gamedigStrings.daikatana = this.cast("daikatana")
+  def darkesthour: typings.gamedig.gamedigStrings.darkesthour = "darkesthour".asInstanceOf[typings.gamedig.gamedigStrings.darkesthour]
   @scala.inline
-  def darkesthour: typings.gamedig.gamedigStrings.darkesthour = this.cast("darkesthour")
+  def dayz: typings.gamedig.gamedigStrings.dayz = "dayz".asInstanceOf[typings.gamedig.gamedigStrings.dayz]
   @scala.inline
-  def dayz: typings.gamedig.gamedigStrings.dayz = this.cast("dayz")
+  def dayzmod: typings.gamedig.gamedigStrings.dayzmod = "dayzmod".asInstanceOf[typings.gamedig.gamedigStrings.dayzmod]
   @scala.inline
-  def dayzmod: typings.gamedig.gamedigStrings.dayzmod = this.cast("dayzmod")
+  def deadlydozenpt: typings.gamedig.gamedigStrings.deadlydozenpt = "deadlydozenpt".asInstanceOf[typings.gamedig.gamedigStrings.deadlydozenpt]
   @scala.inline
-  def deadlydozenpt: typings.gamedig.gamedigStrings.deadlydozenpt = this.cast("deadlydozenpt")
+  def descent3: typings.gamedig.gamedigStrings.descent3 = "descent3".asInstanceOf[typings.gamedig.gamedigStrings.descent3]
   @scala.inline
-  def descent3: typings.gamedig.gamedigStrings.descent3 = this.cast("descent3")
+  def deusex: typings.gamedig.gamedigStrings.deusex = "deusex".asInstanceOf[typings.gamedig.gamedigStrings.deusex]
   @scala.inline
-  def deusex: typings.gamedig.gamedigStrings.deusex = this.cast("deusex")
+  def devastation: typings.gamedig.gamedigStrings.devastation = "devastation".asInstanceOf[typings.gamedig.gamedigStrings.devastation]
   @scala.inline
-  def devastation: typings.gamedig.gamedigStrings.devastation = this.cast("devastation")
+  def dh2005: typings.gamedig.gamedigStrings.dh2005 = "dh2005".asInstanceOf[typings.gamedig.gamedigStrings.dh2005]
   @scala.inline
-  def dh2005: typings.gamedig.gamedigStrings.dh2005 = this.cast("dh2005")
+  def dinodday: typings.gamedig.gamedigStrings.dinodday = "dinodday".asInstanceOf[typings.gamedig.gamedigStrings.dinodday]
   @scala.inline
-  def dinodday: typings.gamedig.gamedigStrings.dinodday = this.cast("dinodday")
+  def dirttrackracing2: typings.gamedig.gamedigStrings.dirttrackracing2 = "dirttrackracing2".asInstanceOf[typings.gamedig.gamedigStrings.dirttrackracing2]
   @scala.inline
-  def dirttrackracing2: typings.gamedig.gamedigStrings.dirttrackracing2 = this.cast("dirttrackracing2")
+  def dmomam: typings.gamedig.gamedigStrings.dmomam = "dmomam".asInstanceOf[typings.gamedig.gamedigStrings.dmomam]
   @scala.inline
-  def dmomam: typings.gamedig.gamedigStrings.dmomam = this.cast("dmomam")
+  def dnl: typings.gamedig.gamedigStrings.dnl = "dnl".asInstanceOf[typings.gamedig.gamedigStrings.dnl]
   @scala.inline
-  def dnl: typings.gamedig.gamedigStrings.dnl = this.cast("dnl")
+  def dod: typings.gamedig.gamedigStrings.dod = "dod".asInstanceOf[typings.gamedig.gamedigStrings.dod]
   @scala.inline
-  def dod: typings.gamedig.gamedigStrings.dod = this.cast("dod")
+  def dods: typings.gamedig.gamedigStrings.dods = "dods".asInstanceOf[typings.gamedig.gamedigStrings.dods]
   @scala.inline
-  def dods: typings.gamedig.gamedigStrings.dods = this.cast("dods")
+  def doi: typings.gamedig.gamedigStrings.doi = "doi".asInstanceOf[typings.gamedig.gamedigStrings.doi]
   @scala.inline
-  def doi: typings.gamedig.gamedigStrings.doi = this.cast("doi")
+  def doom3: typings.gamedig.gamedigStrings.doom3 = "doom3".asInstanceOf[typings.gamedig.gamedigStrings.doom3]
   @scala.inline
-  def doom3: typings.gamedig.gamedigStrings.doom3 = this.cast("doom3")
+  def dota2: typings.gamedig.gamedigStrings.dota2 = "dota2".asInstanceOf[typings.gamedig.gamedigStrings.dota2]
   @scala.inline
-  def dota2: typings.gamedig.gamedigStrings.dota2 = this.cast("dota2")
+  def drakan: typings.gamedig.gamedigStrings.drakan = "drakan".asInstanceOf[typings.gamedig.gamedigStrings.drakan]
   @scala.inline
-  def drakan: typings.gamedig.gamedigStrings.drakan = this.cast("drakan")
+  def etqw: typings.gamedig.gamedigStrings.etqw = "etqw".asInstanceOf[typings.gamedig.gamedigStrings.etqw]
   @scala.inline
-  def etqw: typings.gamedig.gamedigStrings.etqw = this.cast("etqw")
+  def f12002: typings.gamedig.gamedigStrings.f12002 = "f12002".asInstanceOf[typings.gamedig.gamedigStrings.f12002]
   @scala.inline
-  def f12002: typings.gamedig.gamedigStrings.f12002 = this.cast("f12002")
+  def f1c9902: typings.gamedig.gamedigStrings.f1c9902 = "f1c9902".asInstanceOf[typings.gamedig.gamedigStrings.f1c9902]
   @scala.inline
-  def f1c9902: typings.gamedig.gamedigStrings.f1c9902 = this.cast("f1c9902")
+  def farcry: typings.gamedig.gamedigStrings.farcry = "farcry".asInstanceOf[typings.gamedig.gamedigStrings.farcry]
   @scala.inline
-  def farcry: typings.gamedig.gamedigStrings.farcry = this.cast("farcry")
+  def farcry2: typings.gamedig.gamedigStrings.farcry2 = "farcry2".asInstanceOf[typings.gamedig.gamedigStrings.farcry2]
   @scala.inline
-  def farcry2: typings.gamedig.gamedigStrings.farcry2 = this.cast("farcry2")
+  def fear: typings.gamedig.gamedigStrings.fear = "fear".asInstanceOf[typings.gamedig.gamedigStrings.fear]
   @scala.inline
-  def fear: typings.gamedig.gamedigStrings.fear = this.cast("fear")
+  def ffow: typings.gamedig.gamedigStrings.ffow = "ffow".asInstanceOf[typings.gamedig.gamedigStrings.ffow]
   @scala.inline
-  def ffow: typings.gamedig.gamedigStrings.ffow = this.cast("ffow")
+  def fivem: typings.gamedig.gamedigStrings.fivem = "fivem".asInstanceOf[typings.gamedig.gamedigStrings.fivem]
   @scala.inline
-  def fivem: typings.gamedig.gamedigStrings.fivem = this.cast("fivem")
+  def flashpoint: typings.gamedig.gamedigStrings.flashpoint = "flashpoint".asInstanceOf[typings.gamedig.gamedigStrings.flashpoint]
   @scala.inline
-  def flashpoint: typings.gamedig.gamedigStrings.flashpoint = this.cast("flashpoint")
+  def fortressforever: typings.gamedig.gamedigStrings.fortressforever = "fortressforever".asInstanceOf[typings.gamedig.gamedigStrings.fortressforever]
   @scala.inline
-  def fortressforever: typings.gamedig.gamedigStrings.fortressforever = this.cast("fortressforever")
+  def garrysmod: typings.gamedig.gamedigStrings.garrysmod = "garrysmod".asInstanceOf[typings.gamedig.gamedigStrings.garrysmod]
   @scala.inline
-  def garrysmod: typings.gamedig.gamedigStrings.garrysmod = this.cast("garrysmod")
+  def geneshift: typings.gamedig.gamedigStrings.geneshift = "geneshift".asInstanceOf[typings.gamedig.gamedigStrings.geneshift]
   @scala.inline
-  def geneshift: typings.gamedig.gamedigStrings.geneshift = this.cast("geneshift")
+  def ges: typings.gamedig.gamedigStrings.ges = "ges".asInstanceOf[typings.gamedig.gamedigStrings.ges]
   @scala.inline
-  def ges: typings.gamedig.gamedigStrings.ges = this.cast("ges")
+  def giantscitizenkabuto: typings.gamedig.gamedigStrings.giantscitizenkabuto = "giantscitizenkabuto".asInstanceOf[typings.gamedig.gamedigStrings.giantscitizenkabuto]
   @scala.inline
-  def giantscitizenkabuto: typings.gamedig.gamedigStrings.giantscitizenkabuto = this.cast("giantscitizenkabuto")
+  def globaloperations: typings.gamedig.gamedigStrings.globaloperations = "globaloperations".asInstanceOf[typings.gamedig.gamedigStrings.globaloperations]
   @scala.inline
-  def globaloperations: typings.gamedig.gamedigStrings.globaloperations = this.cast("globaloperations")
+  def gore: typings.gamedig.gamedigStrings.gore = "gore".asInstanceOf[typings.gamedig.gamedigStrings.gore]
   @scala.inline
-  def gore: typings.gamedig.gamedigStrings.gore = this.cast("gore")
+  def graw: typings.gamedig.gamedigStrings.graw = "graw".asInstanceOf[typings.gamedig.gamedigStrings.graw]
   @scala.inline
-  def graw: typings.gamedig.gamedigStrings.graw = this.cast("graw")
+  def graw2: typings.gamedig.gamedigStrings.graw2 = "graw2".asInstanceOf[typings.gamedig.gamedigStrings.graw2]
   @scala.inline
-  def graw2: typings.gamedig.gamedigStrings.graw2 = this.cast("graw2")
+  def gunmanchronicles: typings.gamedig.gamedigStrings.gunmanchronicles = "gunmanchronicles".asInstanceOf[typings.gamedig.gamedigStrings.gunmanchronicles]
   @scala.inline
-  def gunmanchronicles: typings.gamedig.gamedigStrings.gunmanchronicles = this.cast("gunmanchronicles")
+  def had2: typings.gamedig.gamedigStrings.had2 = "had2".asInstanceOf[typings.gamedig.gamedigStrings.had2]
   @scala.inline
-  def had2: typings.gamedig.gamedigStrings.had2 = this.cast("had2")
+  def halo: typings.gamedig.gamedigStrings.halo = "halo".asInstanceOf[typings.gamedig.gamedigStrings.halo]
   @scala.inline
-  def halo: typings.gamedig.gamedigStrings.halo = this.cast("halo")
+  def halo2: typings.gamedig.gamedigStrings.halo2 = "halo2".asInstanceOf[typings.gamedig.gamedigStrings.halo2]
   @scala.inline
-  def halo2: typings.gamedig.gamedigStrings.halo2 = this.cast("halo2")
+  def heretic2: typings.gamedig.gamedigStrings.heretic2 = "heretic2".asInstanceOf[typings.gamedig.gamedigStrings.heretic2]
   @scala.inline
-  def heretic2: typings.gamedig.gamedigStrings.heretic2 = this.cast("heretic2")
+  def hexen2: typings.gamedig.gamedigStrings.hexen2 = "hexen2".asInstanceOf[typings.gamedig.gamedigStrings.hexen2]
   @scala.inline
-  def hexen2: typings.gamedig.gamedigStrings.hexen2 = this.cast("hexen2")
+  def hidden: typings.gamedig.gamedigStrings.hidden = "hidden".asInstanceOf[typings.gamedig.gamedigStrings.hidden]
   @scala.inline
-  def hidden: typings.gamedig.gamedigStrings.hidden = this.cast("hidden")
+  def hl2dm: typings.gamedig.gamedigStrings.hl2dm = "hl2dm".asInstanceOf[typings.gamedig.gamedigStrings.hl2dm]
   @scala.inline
-  def hl2dm: typings.gamedig.gamedigStrings.hl2dm = this.cast("hl2dm")
+  def hldm: typings.gamedig.gamedigStrings.hldm = "hldm".asInstanceOf[typings.gamedig.gamedigStrings.hldm]
   @scala.inline
-  def hldm: typings.gamedig.gamedigStrings.hldm = this.cast("hldm")
+  def homefront: typings.gamedig.gamedigStrings.homefront = "homefront".asInstanceOf[typings.gamedig.gamedigStrings.homefront]
   @scala.inline
-  def homefront: typings.gamedig.gamedigStrings.homefront = this.cast("homefront")
+  def homeworld2: typings.gamedig.gamedigStrings.homeworld2 = "homeworld2".asInstanceOf[typings.gamedig.gamedigStrings.homeworld2]
   @scala.inline
-  def homeworld2: typings.gamedig.gamedigStrings.homeworld2 = this.cast("homeworld2")
+  def hurtworld: typings.gamedig.gamedigStrings.hurtworld = "hurtworld".asInstanceOf[typings.gamedig.gamedigStrings.hurtworld]
   @scala.inline
-  def hurtworld: typings.gamedig.gamedigStrings.hurtworld = this.cast("hurtworld")
+  def igi2: typings.gamedig.gamedigStrings.igi2 = "igi2".asInstanceOf[typings.gamedig.gamedigStrings.igi2]
   @scala.inline
-  def igi2: typings.gamedig.gamedigStrings.igi2 = this.cast("igi2")
+  def il2: typings.gamedig.gamedigStrings.il2 = "il2".asInstanceOf[typings.gamedig.gamedigStrings.il2]
   @scala.inline
-  def il2: typings.gamedig.gamedigStrings.il2 = this.cast("il2")
+  def insurgency: typings.gamedig.gamedigStrings.insurgency = "insurgency".asInstanceOf[typings.gamedig.gamedigStrings.insurgency]
   @scala.inline
-  def insurgency: typings.gamedig.gamedigStrings.insurgency = this.cast("insurgency")
+  def ironstorm: typings.gamedig.gamedigStrings.ironstorm = "ironstorm".asInstanceOf[typings.gamedig.gamedigStrings.ironstorm]
   @scala.inline
-  def ironstorm: typings.gamedig.gamedigStrings.ironstorm = this.cast("ironstorm")
+  def jamesbondnightfire: typings.gamedig.gamedigStrings.jamesbondnightfire = "jamesbondnightfire".asInstanceOf[typings.gamedig.gamedigStrings.jamesbondnightfire]
   @scala.inline
-  def jamesbondnightfire: typings.gamedig.gamedigStrings.jamesbondnightfire = this.cast("jamesbondnightfire")
+  def jc2mp: typings.gamedig.gamedigStrings.jc2mp = "jc2mp".asInstanceOf[typings.gamedig.gamedigStrings.jc2mp]
   @scala.inline
-  def jc2mp: typings.gamedig.gamedigStrings.jc2mp = this.cast("jc2mp")
+  def killingfloor: typings.gamedig.gamedigStrings.killingfloor = "killingfloor".asInstanceOf[typings.gamedig.gamedigStrings.killingfloor]
   @scala.inline
-  def killingfloor: typings.gamedig.gamedigStrings.killingfloor = this.cast("killingfloor")
+  def killingfloor2: typings.gamedig.gamedigStrings.killingfloor2 = "killingfloor2".asInstanceOf[typings.gamedig.gamedigStrings.killingfloor2]
   @scala.inline
-  def killingfloor2: typings.gamedig.gamedigStrings.killingfloor2 = this.cast("killingfloor2")
+  def kingpin: typings.gamedig.gamedigStrings.kingpin = "kingpin".asInstanceOf[typings.gamedig.gamedigStrings.kingpin]
   @scala.inline
-  def kingpin: typings.gamedig.gamedigStrings.kingpin = this.cast("kingpin")
+  def kisspc: typings.gamedig.gamedigStrings.kisspc = "kisspc".asInstanceOf[typings.gamedig.gamedigStrings.kisspc]
   @scala.inline
-  def kisspc: typings.gamedig.gamedigStrings.kisspc = this.cast("kisspc")
+  def kspdmp: typings.gamedig.gamedigStrings.kspdmp = "kspdmp".asInstanceOf[typings.gamedig.gamedigStrings.kspdmp]
   @scala.inline
-  def kspdmp: typings.gamedig.gamedigStrings.kspdmp = this.cast("kspdmp")
+  def kzmod: typings.gamedig.gamedigStrings.kzmod = "kzmod".asInstanceOf[typings.gamedig.gamedigStrings.kzmod]
   @scala.inline
-  def kzmod: typings.gamedig.gamedigStrings.kzmod = this.cast("kzmod")
+  def left4dead: typings.gamedig.gamedigStrings.left4dead = "left4dead".asInstanceOf[typings.gamedig.gamedigStrings.left4dead]
   @scala.inline
-  def left4dead: typings.gamedig.gamedigStrings.left4dead = this.cast("left4dead")
+  def left4dead2: typings.gamedig.gamedigStrings.left4dead2 = "left4dead2".asInstanceOf[typings.gamedig.gamedigStrings.left4dead2]
   @scala.inline
-  def left4dead2: typings.gamedig.gamedigStrings.left4dead2 = this.cast("left4dead2")
+  def m2mp: typings.gamedig.gamedigStrings.m2mp = "m2mp".asInstanceOf[typings.gamedig.gamedigStrings.m2mp]
   @scala.inline
-  def m2mp: typings.gamedig.gamedigStrings.m2mp = this.cast("m2mp")
+  def medievalengineers: typings.gamedig.gamedigStrings.medievalengineers = "medievalengineers".asInstanceOf[typings.gamedig.gamedigStrings.medievalengineers]
   @scala.inline
-  def medievalengineers: typings.gamedig.gamedigStrings.medievalengineers = this.cast("medievalengineers")
+  def minecraft: typings.gamedig.gamedigStrings.minecraft = "minecraft".asInstanceOf[typings.gamedig.gamedigStrings.minecraft]
   @scala.inline
-  def minecraft: typings.gamedig.gamedigStrings.minecraft = this.cast("minecraft")
+  def minecraftpe: typings.gamedig.gamedigStrings.minecraftpe = "minecraftpe".asInstanceOf[typings.gamedig.gamedigStrings.minecraftpe]
   @scala.inline
-  def minecraftpe: typings.gamedig.gamedigStrings.minecraftpe = this.cast("minecraftpe")
+  def minecraftping: typings.gamedig.gamedigStrings.minecraftping = "minecraftping".asInstanceOf[typings.gamedig.gamedigStrings.minecraftping]
   @scala.inline
-  def minecraftping: typings.gamedig.gamedigStrings.minecraftping = this.cast("minecraftping")
+  def mnc: typings.gamedig.gamedigStrings.mnc = "mnc".asInstanceOf[typings.gamedig.gamedigStrings.mnc]
   @scala.inline
-  def mnc: typings.gamedig.gamedigStrings.mnc = this.cast("mnc")
+  def moh2010: typings.gamedig.gamedigStrings.moh2010 = "moh2010".asInstanceOf[typings.gamedig.gamedigStrings.moh2010]
   @scala.inline
-  def moh2010: typings.gamedig.gamedigStrings.moh2010 = this.cast("moh2010")
+  def mohaa: typings.gamedig.gamedigStrings.mohaa = "mohaa".asInstanceOf[typings.gamedig.gamedigStrings.mohaa]
   @scala.inline
-  def mohaa: typings.gamedig.gamedigStrings.mohaa = this.cast("mohaa")
+  def mohab: typings.gamedig.gamedigStrings.mohab = "mohab".asInstanceOf[typings.gamedig.gamedigStrings.mohab]
   @scala.inline
-  def mohab: typings.gamedig.gamedigStrings.mohab = this.cast("mohab")
+  def mohbt: typings.gamedig.gamedigStrings.mohbt = "mohbt".asInstanceOf[typings.gamedig.gamedigStrings.mohbt]
   @scala.inline
-  def mohbt: typings.gamedig.gamedigStrings.mohbt = this.cast("mohbt")
+  def mohpa: typings.gamedig.gamedigStrings.mohpa = "mohpa".asInstanceOf[typings.gamedig.gamedigStrings.mohpa]
   @scala.inline
-  def mohpa: typings.gamedig.gamedigStrings.mohpa = this.cast("mohpa")
+  def mohsh: typings.gamedig.gamedigStrings.mohsh = "mohsh".asInstanceOf[typings.gamedig.gamedigStrings.mohsh]
   @scala.inline
-  def mohsh: typings.gamedig.gamedigStrings.mohsh = this.cast("mohsh")
+  def mohwf: typings.gamedig.gamedigStrings.mohwf = "mohwf".asInstanceOf[typings.gamedig.gamedigStrings.mohwf]
   @scala.inline
-  def mohwf: typings.gamedig.gamedigStrings.mohwf = this.cast("mohwf")
+  def mtasa: typings.gamedig.gamedigStrings.mtasa = "mtasa".asInstanceOf[typings.gamedig.gamedigStrings.mtasa]
   @scala.inline
-  def mtasa: typings.gamedig.gamedigStrings.mtasa = this.cast("mtasa")
+  def mtavc: typings.gamedig.gamedigStrings.mtavc = "mtavc".asInstanceOf[typings.gamedig.gamedigStrings.mtavc]
   @scala.inline
-  def mtavc: typings.gamedig.gamedigStrings.mtavc = this.cast("mtavc")
+  def mumble: typings.gamedig.gamedigStrings.mumble = "mumble".asInstanceOf[typings.gamedig.gamedigStrings.mumble]
   @scala.inline
-  def mumble: typings.gamedig.gamedigStrings.mumble = this.cast("mumble")
+  def mumbleping: typings.gamedig.gamedigStrings.mumbleping = "mumbleping".asInstanceOf[typings.gamedig.gamedigStrings.mumbleping]
   @scala.inline
-  def mumbleping: typings.gamedig.gamedigStrings.mumbleping = this.cast("mumbleping")
+  def mutantfactions: typings.gamedig.gamedigStrings.mutantfactions = "mutantfactions".asInstanceOf[typings.gamedig.gamedigStrings.mutantfactions]
   @scala.inline
-  def mutantfactions: typings.gamedig.gamedigStrings.mutantfactions = this.cast("mutantfactions")
+  def nab: typings.gamedig.gamedigStrings.nab = "nab".asInstanceOf[typings.gamedig.gamedigStrings.nab]
   @scala.inline
-  def nab: typings.gamedig.gamedigStrings.nab = this.cast("nab")
+  def nascarthunder2004: typings.gamedig.gamedigStrings.nascarthunder2004 = "nascarthunder2004".asInstanceOf[typings.gamedig.gamedigStrings.nascarthunder2004]
   @scala.inline
-  def nascarthunder2004: typings.gamedig.gamedigStrings.nascarthunder2004 = this.cast("nascarthunder2004")
+  def netpanzer: typings.gamedig.gamedigStrings.netpanzer = "netpanzer".asInstanceOf[typings.gamedig.gamedigStrings.netpanzer]
   @scala.inline
-  def netpanzer: typings.gamedig.gamedigStrings.netpanzer = this.cast("netpanzer")
+  def nexuiz: typings.gamedig.gamedigStrings.nexuiz = "nexuiz".asInstanceOf[typings.gamedig.gamedigStrings.nexuiz]
   @scala.inline
-  def nexuiz: typings.gamedig.gamedigStrings.nexuiz = this.cast("nexuiz")
+  def nfshp2: typings.gamedig.gamedigStrings.nfshp2 = "nfshp2".asInstanceOf[typings.gamedig.gamedigStrings.nfshp2]
   @scala.inline
-  def nfshp2: typings.gamedig.gamedigStrings.nfshp2 = this.cast("nfshp2")
+  def nitrofamily: typings.gamedig.gamedigStrings.nitrofamily = "nitrofamily".asInstanceOf[typings.gamedig.gamedigStrings.nitrofamily]
   @scala.inline
-  def nitrofamily: typings.gamedig.gamedigStrings.nitrofamily = this.cast("nitrofamily")
+  def nmrih: typings.gamedig.gamedigStrings.nmrih = "nmrih".asInstanceOf[typings.gamedig.gamedigStrings.nmrih]
   @scala.inline
-  def nmrih: typings.gamedig.gamedigStrings.nmrih = this.cast("nmrih")
+  def nolf: typings.gamedig.gamedigStrings.nolf = "nolf".asInstanceOf[typings.gamedig.gamedigStrings.nolf]
   @scala.inline
-  def nolf: typings.gamedig.gamedigStrings.nolf = this.cast("nolf")
+  def nolf2: typings.gamedig.gamedigStrings.nolf2 = "nolf2".asInstanceOf[typings.gamedig.gamedigStrings.nolf2]
   @scala.inline
-  def nolf2: typings.gamedig.gamedigStrings.nolf2 = this.cast("nolf2")
+  def ns: typings.gamedig.gamedigStrings.ns = "ns".asInstanceOf[typings.gamedig.gamedigStrings.ns]
   @scala.inline
-  def ns: typings.gamedig.gamedigStrings.ns = this.cast("ns")
+  def ns2: typings.gamedig.gamedigStrings.ns2 = "ns2".asInstanceOf[typings.gamedig.gamedigStrings.ns2]
   @scala.inline
-  def ns2: typings.gamedig.gamedigStrings.ns2 = this.cast("ns2")
+  def nucleardawn: typings.gamedig.gamedigStrings.nucleardawn = "nucleardawn".asInstanceOf[typings.gamedig.gamedigStrings.nucleardawn]
   @scala.inline
-  def nucleardawn: typings.gamedig.gamedigStrings.nucleardawn = this.cast("nucleardawn")
+  def nwn: typings.gamedig.gamedigStrings.nwn = "nwn".asInstanceOf[typings.gamedig.gamedigStrings.nwn]
   @scala.inline
-  def nwn: typings.gamedig.gamedigStrings.nwn = this.cast("nwn")
+  def nwn2: typings.gamedig.gamedigStrings.nwn2 = "nwn2".asInstanceOf[typings.gamedig.gamedigStrings.nwn2]
   @scala.inline
-  def nwn2: typings.gamedig.gamedigStrings.nwn2 = this.cast("nwn2")
+  def openarena: typings.gamedig.gamedigStrings.openarena = "openarena".asInstanceOf[typings.gamedig.gamedigStrings.openarena]
   @scala.inline
-  def openarena: typings.gamedig.gamedigStrings.openarena = this.cast("openarena")
+  def openttd: typings.gamedig.gamedigStrings.openttd = "openttd".asInstanceOf[typings.gamedig.gamedigStrings.openttd]
   @scala.inline
-  def openttd: typings.gamedig.gamedigStrings.openttd = this.cast("openttd")
+  def operationflashpoint: typings.gamedig.gamedigStrings.operationflashpoint = "operationflashpoint".asInstanceOf[typings.gamedig.gamedigStrings.operationflashpoint]
   @scala.inline
-  def operationflashpoint: typings.gamedig.gamedigStrings.operationflashpoint = this.cast("operationflashpoint")
+  def painkiller: typings.gamedig.gamedigStrings.painkiller = "painkiller".asInstanceOf[typings.gamedig.gamedigStrings.painkiller]
   @scala.inline
-  def painkiller: typings.gamedig.gamedigStrings.painkiller = this.cast("painkiller")
+  def postal2: typings.gamedig.gamedigStrings.postal2 = "postal2".asInstanceOf[typings.gamedig.gamedigStrings.postal2]
   @scala.inline
-  def postal2: typings.gamedig.gamedigStrings.postal2 = this.cast("postal2")
+  def prey: typings.gamedig.gamedigStrings.prey = "prey".asInstanceOf[typings.gamedig.gamedigStrings.prey]
   @scala.inline
-  def prey: typings.gamedig.gamedigStrings.prey = this.cast("prey")
+  def primalcarnage: typings.gamedig.gamedigStrings.primalcarnage = "primalcarnage".asInstanceOf[typings.gamedig.gamedigStrings.primalcarnage]
   @scala.inline
-  def primalcarnage: typings.gamedig.gamedigStrings.primalcarnage = this.cast("primalcarnage")
+  def quake1: typings.gamedig.gamedigStrings.quake1 = "quake1".asInstanceOf[typings.gamedig.gamedigStrings.quake1]
   @scala.inline
-  def quake1: typings.gamedig.gamedigStrings.quake1 = this.cast("quake1")
+  def quake2: typings.gamedig.gamedigStrings.quake2 = "quake2".asInstanceOf[typings.gamedig.gamedigStrings.quake2]
   @scala.inline
-  def quake2: typings.gamedig.gamedigStrings.quake2 = this.cast("quake2")
+  def quake3: typings.gamedig.gamedigStrings.quake3 = "quake3".asInstanceOf[typings.gamedig.gamedigStrings.quake3]
   @scala.inline
-  def quake3: typings.gamedig.gamedigStrings.quake3 = this.cast("quake3")
+  def quake4: typings.gamedig.gamedigStrings.quake4 = "quake4".asInstanceOf[typings.gamedig.gamedigStrings.quake4]
   @scala.inline
-  def quake4: typings.gamedig.gamedigStrings.quake4 = this.cast("quake4")
+  def r6: typings.gamedig.gamedigStrings.r6 = "r6".asInstanceOf[typings.gamedig.gamedigStrings.r6]
   @scala.inline
-  def r6: typings.gamedig.gamedigStrings.r6 = this.cast("r6")
+  def r6ravenshield: typings.gamedig.gamedigStrings.r6ravenshield = "r6ravenshield".asInstanceOf[typings.gamedig.gamedigStrings.r6ravenshield]
   @scala.inline
-  def r6ravenshield: typings.gamedig.gamedigStrings.r6ravenshield = this.cast("r6ravenshield")
+  def r6roguespear: typings.gamedig.gamedigStrings.r6roguespear = "r6roguespear".asInstanceOf[typings.gamedig.gamedigStrings.r6roguespear]
   @scala.inline
-  def r6roguespear: typings.gamedig.gamedigStrings.r6roguespear = this.cast("r6roguespear")
+  def ragdollkungfu: typings.gamedig.gamedigStrings.ragdollkungfu = "ragdollkungfu".asInstanceOf[typings.gamedig.gamedigStrings.ragdollkungfu]
   @scala.inline
-  def ragdollkungfu: typings.gamedig.gamedigStrings.ragdollkungfu = this.cast("ragdollkungfu")
+  def rallisportchallenge: typings.gamedig.gamedigStrings.rallisportchallenge = "rallisportchallenge".asInstanceOf[typings.gamedig.gamedigStrings.rallisportchallenge]
   @scala.inline
-  def rallisportchallenge: typings.gamedig.gamedigStrings.rallisportchallenge = this.cast("rallisportchallenge")
+  def rallymasters: typings.gamedig.gamedigStrings.rallymasters = "rallymasters".asInstanceOf[typings.gamedig.gamedigStrings.rallymasters]
   @scala.inline
-  def rallymasters: typings.gamedig.gamedigStrings.rallymasters = this.cast("rallymasters")
+  def redline: typings.gamedig.gamedigStrings.redline = "redline".asInstanceOf[typings.gamedig.gamedigStrings.redline]
   @scala.inline
-  def redline: typings.gamedig.gamedigStrings.redline = this.cast("redline")
+  def redorchestra: typings.gamedig.gamedigStrings.redorchestra = "redorchestra".asInstanceOf[typings.gamedig.gamedigStrings.redorchestra]
   @scala.inline
-  def redorchestra: typings.gamedig.gamedigStrings.redorchestra = this.cast("redorchestra")
+  def redorchestra2: typings.gamedig.gamedigStrings.redorchestra2 = "redorchestra2".asInstanceOf[typings.gamedig.gamedigStrings.redorchestra2]
   @scala.inline
-  def redorchestra2: typings.gamedig.gamedigStrings.redorchestra2 = this.cast("redorchestra2")
+  def redorchestraost: typings.gamedig.gamedigStrings.redorchestraost = "redorchestraost".asInstanceOf[typings.gamedig.gamedigStrings.redorchestraost]
   @scala.inline
-  def redorchestraost: typings.gamedig.gamedigStrings.redorchestraost = this.cast("redorchestraost")
+  def ricochet: typings.gamedig.gamedigStrings.ricochet = "ricochet".asInstanceOf[typings.gamedig.gamedigStrings.ricochet]
   @scala.inline
-  def ricochet: typings.gamedig.gamedigStrings.ricochet = this.cast("ricochet")
+  def riseofnations: typings.gamedig.gamedigStrings.riseofnations = "riseofnations".asInstanceOf[typings.gamedig.gamedigStrings.riseofnations]
   @scala.inline
-  def riseofnations: typings.gamedig.gamedigStrings.riseofnations = this.cast("riseofnations")
+  def rtcw: typings.gamedig.gamedigStrings.rtcw = "rtcw".asInstanceOf[typings.gamedig.gamedigStrings.rtcw]
   @scala.inline
-  def rtcw: typings.gamedig.gamedigStrings.rtcw = this.cast("rtcw")
+  def rune: typings.gamedig.gamedigStrings.rune = "rune".asInstanceOf[typings.gamedig.gamedigStrings.rune]
   @scala.inline
-  def rune: typings.gamedig.gamedigStrings.rune = this.cast("rune")
+  def rust: typings.gamedig.gamedigStrings.rust = "rust".asInstanceOf[typings.gamedig.gamedigStrings.rust]
   @scala.inline
-  def rust: typings.gamedig.gamedigStrings.rust = this.cast("rust")
+  def samp: typings.gamedig.gamedigStrings.samp = "samp".asInstanceOf[typings.gamedig.gamedigStrings.samp]
   @scala.inline
-  def samp: typings.gamedig.gamedigStrings.samp = this.cast("samp")
+  def shatteredhorizon: typings.gamedig.gamedigStrings.shatteredhorizon = "shatteredhorizon".asInstanceOf[typings.gamedig.gamedigStrings.shatteredhorizon]
   @scala.inline
-  def shatteredhorizon: typings.gamedig.gamedigStrings.shatteredhorizon = this.cast("shatteredhorizon")
+  def ship: typings.gamedig.gamedigStrings.ship = "ship".asInstanceOf[typings.gamedig.gamedigStrings.ship]
   @scala.inline
-  def ship: typings.gamedig.gamedigStrings.ship = this.cast("ship")
+  def shogo: typings.gamedig.gamedigStrings.shogo = "shogo".asInstanceOf[typings.gamedig.gamedigStrings.shogo]
   @scala.inline
-  def shogo: typings.gamedig.gamedigStrings.shogo = this.cast("shogo")
+  def shootmania: typings.gamedig.gamedigStrings.shootmania = "shootmania".asInstanceOf[typings.gamedig.gamedigStrings.shootmania]
   @scala.inline
-  def shootmania: typings.gamedig.gamedigStrings.shootmania = this.cast("shootmania")
+  def sin: typings.gamedig.gamedigStrings.sin = "sin".asInstanceOf[typings.gamedig.gamedigStrings.sin]
   @scala.inline
-  def sin: typings.gamedig.gamedigStrings.sin = this.cast("sin")
+  def sinep: typings.gamedig.gamedigStrings.sinep = "sinep".asInstanceOf[typings.gamedig.gamedigStrings.sinep]
   @scala.inline
-  def sinep: typings.gamedig.gamedigStrings.sinep = this.cast("sinep")
+  def sof: typings.gamedig.gamedigStrings.sof = "sof".asInstanceOf[typings.gamedig.gamedigStrings.sof]
   @scala.inline
-  def sof: typings.gamedig.gamedigStrings.sof = this.cast("sof")
+  def sof2: typings.gamedig.gamedigStrings.sof2 = "sof2".asInstanceOf[typings.gamedig.gamedigStrings.sof2]
   @scala.inline
-  def sof2: typings.gamedig.gamedigStrings.sof2 = this.cast("sof2")
+  def soldat: typings.gamedig.gamedigStrings.soldat = "soldat".asInstanceOf[typings.gamedig.gamedigStrings.soldat]
   @scala.inline
-  def soldat: typings.gamedig.gamedigStrings.soldat = this.cast("soldat")
+  def spaceengineers: typings.gamedig.gamedigStrings.spaceengineers = "spaceengineers".asInstanceOf[typings.gamedig.gamedigStrings.spaceengineers]
   @scala.inline
-  def spaceengineers: typings.gamedig.gamedigStrings.spaceengineers = this.cast("spaceengineers")
+  def ss: typings.gamedig.gamedigStrings.ss = "ss".asInstanceOf[typings.gamedig.gamedigStrings.ss]
   @scala.inline
-  def ss: typings.gamedig.gamedigStrings.ss = this.cast("ss")
+  def ss2: typings.gamedig.gamedigStrings.ss2 = "ss2".asInstanceOf[typings.gamedig.gamedigStrings.ss2]
   @scala.inline
-  def ss2: typings.gamedig.gamedigStrings.ss2 = this.cast("ss2")
+  def stalker: typings.gamedig.gamedigStrings.stalker = "stalker".asInstanceOf[typings.gamedig.gamedigStrings.stalker]
   @scala.inline
-  def stalker: typings.gamedig.gamedigStrings.stalker = this.cast("stalker")
+  def starbound: typings.gamedig.gamedigStrings.starbound = "starbound".asInstanceOf[typings.gamedig.gamedigStrings.starbound]
   @scala.inline
-  def starbound: typings.gamedig.gamedigStrings.starbound = this.cast("starbound")
+  def starmade: typings.gamedig.gamedigStrings.starmade = "starmade".asInstanceOf[typings.gamedig.gamedigStrings.starmade]
   @scala.inline
-  def starmade: typings.gamedig.gamedigStrings.starmade = this.cast("starmade")
+  def stbc: typings.gamedig.gamedigStrings.stbc = "stbc".asInstanceOf[typings.gamedig.gamedigStrings.stbc]
   @scala.inline
-  def stbc: typings.gamedig.gamedigStrings.stbc = this.cast("stbc")
+  def stvef: typings.gamedig.gamedigStrings.stvef = "stvef".asInstanceOf[typings.gamedig.gamedigStrings.stvef]
   @scala.inline
-  def stvef: typings.gamedig.gamedigStrings.stvef = this.cast("stvef")
+  def stvef2: typings.gamedig.gamedigStrings.stvef2 = "stvef2".asInstanceOf[typings.gamedig.gamedigStrings.stvef2]
   @scala.inline
-  def stvef2: typings.gamedig.gamedigStrings.stvef2 = this.cast("stvef2")
+  def suicidesurvival: typings.gamedig.gamedigStrings.suicidesurvival = "suicidesurvival".asInstanceOf[typings.gamedig.gamedigStrings.suicidesurvival]
   @scala.inline
-  def suicidesurvival: typings.gamedig.gamedigStrings.suicidesurvival = this.cast("suicidesurvival")
+  def svencoop: typings.gamedig.gamedigStrings.svencoop = "svencoop".asInstanceOf[typings.gamedig.gamedigStrings.svencoop]
   @scala.inline
-  def svencoop: typings.gamedig.gamedigStrings.svencoop = this.cast("svencoop")
+  def swat4: typings.gamedig.gamedigStrings.swat4 = "swat4".asInstanceOf[typings.gamedig.gamedigStrings.swat4]
   @scala.inline
-  def swat4: typings.gamedig.gamedigStrings.swat4 = this.cast("swat4")
+  def swbf: typings.gamedig.gamedigStrings.swbf = "swbf".asInstanceOf[typings.gamedig.gamedigStrings.swbf]
   @scala.inline
-  def swbf: typings.gamedig.gamedigStrings.swbf = this.cast("swbf")
+  def swbf2: typings.gamedig.gamedigStrings.swbf2 = "swbf2".asInstanceOf[typings.gamedig.gamedigStrings.swbf2]
   @scala.inline
-  def swbf2: typings.gamedig.gamedigStrings.swbf2 = this.cast("swbf2")
+  def swjk: typings.gamedig.gamedigStrings.swjk = "swjk".asInstanceOf[typings.gamedig.gamedigStrings.swjk]
   @scala.inline
-  def swjk: typings.gamedig.gamedigStrings.swjk = this.cast("swjk")
+  def swjk2: typings.gamedig.gamedigStrings.swjk2 = "swjk2".asInstanceOf[typings.gamedig.gamedigStrings.swjk2]
   @scala.inline
-  def swjk2: typings.gamedig.gamedigStrings.swjk2 = this.cast("swjk2")
+  def swrc: typings.gamedig.gamedigStrings.swrc = "swrc".asInstanceOf[typings.gamedig.gamedigStrings.swrc]
   @scala.inline
-  def swrc: typings.gamedig.gamedigStrings.swrc = this.cast("swrc")
+  def synergy: typings.gamedig.gamedigStrings.synergy = "synergy".asInstanceOf[typings.gamedig.gamedigStrings.synergy]
   @scala.inline
-  def synergy: typings.gamedig.gamedigStrings.synergy = this.cast("synergy")
+  def tacticalops: typings.gamedig.gamedigStrings.tacticalops = "tacticalops".asInstanceOf[typings.gamedig.gamedigStrings.tacticalops]
   @scala.inline
-  def tacticalops: typings.gamedig.gamedigStrings.tacticalops = this.cast("tacticalops")
+  def teamfactor: typings.gamedig.gamedigStrings.teamfactor = "teamfactor".asInstanceOf[typings.gamedig.gamedigStrings.teamfactor]
   @scala.inline
-  def teamfactor: typings.gamedig.gamedigStrings.teamfactor = this.cast("teamfactor")
+  def teamspeak2: typings.gamedig.gamedigStrings.teamspeak2 = "teamspeak2".asInstanceOf[typings.gamedig.gamedigStrings.teamspeak2]
   @scala.inline
-  def teamspeak2: typings.gamedig.gamedigStrings.teamspeak2 = this.cast("teamspeak2")
+  def teamspeak3: typings.gamedig.gamedigStrings.teamspeak3 = "teamspeak3".asInstanceOf[typings.gamedig.gamedigStrings.teamspeak3]
   @scala.inline
-  def teamspeak3: typings.gamedig.gamedigStrings.teamspeak3 = this.cast("teamspeak3")
+  def terminus: typings.gamedig.gamedigStrings.terminus = "terminus".asInstanceOf[typings.gamedig.gamedigStrings.terminus]
   @scala.inline
-  def terminus: typings.gamedig.gamedigStrings.terminus = this.cast("terminus")
+  def terraria: typings.gamedig.gamedigStrings.terraria = "terraria".asInstanceOf[typings.gamedig.gamedigStrings.terraria]
   @scala.inline
-  def terraria: typings.gamedig.gamedigStrings.terraria = this.cast("terraria")
+  def tf2: typings.gamedig.gamedigStrings.tf2 = "tf2".asInstanceOf[typings.gamedig.gamedigStrings.tf2]
   @scala.inline
-  def tf2: typings.gamedig.gamedigStrings.tf2 = this.cast("tf2")
+  def tfc: typings.gamedig.gamedigStrings.tfc = "tfc".asInstanceOf[typings.gamedig.gamedigStrings.tfc]
   @scala.inline
-  def tfc: typings.gamedig.gamedigStrings.tfc = this.cast("tfc")
+  def thps3: typings.gamedig.gamedigStrings.thps3 = "thps3".asInstanceOf[typings.gamedig.gamedigStrings.thps3]
   @scala.inline
-  def thps3: typings.gamedig.gamedigStrings.thps3 = this.cast("thps3")
+  def thps4: typings.gamedig.gamedigStrings.thps4 = "thps4".asInstanceOf[typings.gamedig.gamedigStrings.thps4]
   @scala.inline
-  def thps4: typings.gamedig.gamedigStrings.thps4 = this.cast("thps4")
+  def thu2: typings.gamedig.gamedigStrings.thu2 = "thu2".asInstanceOf[typings.gamedig.gamedigStrings.thu2]
   @scala.inline
-  def thu2: typings.gamedig.gamedigStrings.thu2 = this.cast("thu2")
+  def towerunite: typings.gamedig.gamedigStrings.towerunite = "towerunite".asInstanceOf[typings.gamedig.gamedigStrings.towerunite]
   @scala.inline
-  def towerunite: typings.gamedig.gamedigStrings.towerunite = this.cast("towerunite")
+  def trackmania2: typings.gamedig.gamedigStrings.trackmania2 = "trackmania2".asInstanceOf[typings.gamedig.gamedigStrings.trackmania2]
   @scala.inline
-  def trackmania2: typings.gamedig.gamedigStrings.trackmania2 = this.cast("trackmania2")
+  def trackmaniaforever: typings.gamedig.gamedigStrings.trackmaniaforever = "trackmaniaforever".asInstanceOf[typings.gamedig.gamedigStrings.trackmaniaforever]
   @scala.inline
-  def trackmaniaforever: typings.gamedig.gamedigStrings.trackmaniaforever = this.cast("trackmaniaforever")
+  def tremulous: typings.gamedig.gamedigStrings.tremulous = "tremulous".asInstanceOf[typings.gamedig.gamedigStrings.tremulous]
   @scala.inline
-  def tremulous: typings.gamedig.gamedigStrings.tremulous = this.cast("tremulous")
+  def tribes1: typings.gamedig.gamedigStrings.tribes1 = "tribes1".asInstanceOf[typings.gamedig.gamedigStrings.tribes1]
   @scala.inline
-  def tribes1: typings.gamedig.gamedigStrings.tribes1 = this.cast("tribes1")
+  def tribesvengeance: typings.gamedig.gamedigStrings.tribesvengeance = "tribesvengeance".asInstanceOf[typings.gamedig.gamedigStrings.tribesvengeance]
   @scala.inline
-  def tribesvengeance: typings.gamedig.gamedigStrings.tribesvengeance = this.cast("tribesvengeance")
+  def tron20: typings.gamedig.gamedigStrings.tron20 = "tron20".asInstanceOf[typings.gamedig.gamedigStrings.tron20]
   @scala.inline
-  def tron20: typings.gamedig.gamedigStrings.tron20 = this.cast("tron20")
+  def turok2: typings.gamedig.gamedigStrings.turok2 = "turok2".asInstanceOf[typings.gamedig.gamedigStrings.turok2]
   @scala.inline
-  def turok2: typings.gamedig.gamedigStrings.turok2 = this.cast("turok2")
+  def universalcombat: typings.gamedig.gamedigStrings.universalcombat = "universalcombat".asInstanceOf[typings.gamedig.gamedigStrings.universalcombat]
   @scala.inline
-  def universalcombat: typings.gamedig.gamedigStrings.universalcombat = this.cast("universalcombat")
+  def unreal: typings.gamedig.gamedigStrings.unreal = "unreal".asInstanceOf[typings.gamedig.gamedigStrings.unreal]
   @scala.inline
-  def unreal: typings.gamedig.gamedigStrings.unreal = this.cast("unreal")
+  def unturned: typings.gamedig.gamedigStrings.unturned = "unturned".asInstanceOf[typings.gamedig.gamedigStrings.unturned]
   @scala.inline
-  def unturned: typings.gamedig.gamedigStrings.unturned = this.cast("unturned")
+  def urbanterror: typings.gamedig.gamedigStrings.urbanterror = "urbanterror".asInstanceOf[typings.gamedig.gamedigStrings.urbanterror]
   @scala.inline
-  def urbanterror: typings.gamedig.gamedigStrings.urbanterror = this.cast("urbanterror")
+  def ut: typings.gamedig.gamedigStrings.ut = "ut".asInstanceOf[typings.gamedig.gamedigStrings.ut]
   @scala.inline
-  def ut: typings.gamedig.gamedigStrings.ut = this.cast("ut")
+  def ut2003: typings.gamedig.gamedigStrings.ut2003 = "ut2003".asInstanceOf[typings.gamedig.gamedigStrings.ut2003]
   @scala.inline
-  def ut2003: typings.gamedig.gamedigStrings.ut2003 = this.cast("ut2003")
+  def ut2004: typings.gamedig.gamedigStrings.ut2004 = "ut2004".asInstanceOf[typings.gamedig.gamedigStrings.ut2004]
   @scala.inline
-  def ut2004: typings.gamedig.gamedigStrings.ut2004 = this.cast("ut2004")
+  def ut3: typings.gamedig.gamedigStrings.ut3 = "ut3".asInstanceOf[typings.gamedig.gamedigStrings.ut3]
   @scala.inline
-  def ut3: typings.gamedig.gamedigStrings.ut3 = this.cast("ut3")
+  def v8supercar: typings.gamedig.gamedigStrings.v8supercar = "v8supercar".asInstanceOf[typings.gamedig.gamedigStrings.v8supercar]
   @scala.inline
-  def v8supercar: typings.gamedig.gamedigStrings.v8supercar = this.cast("v8supercar")
+  def ventrilo: typings.gamedig.gamedigStrings.ventrilo = "ventrilo".asInstanceOf[typings.gamedig.gamedigStrings.ventrilo]
   @scala.inline
-  def ventrilo: typings.gamedig.gamedigStrings.ventrilo = this.cast("ventrilo")
+  def vietcong: typings.gamedig.gamedigStrings.vietcong = "vietcong".asInstanceOf[typings.gamedig.gamedigStrings.vietcong]
   @scala.inline
-  def vietcong: typings.gamedig.gamedigStrings.vietcong = this.cast("vietcong")
+  def vietcong2: typings.gamedig.gamedigStrings.vietcong2 = "vietcong2".asInstanceOf[typings.gamedig.gamedigStrings.vietcong2]
   @scala.inline
-  def vietcong2: typings.gamedig.gamedigStrings.vietcong2 = this.cast("vietcong2")
+  def warsow: typings.gamedig.gamedigStrings.warsow = "warsow".asInstanceOf[typings.gamedig.gamedigStrings.warsow]
   @scala.inline
-  def warsow: typings.gamedig.gamedigStrings.warsow = this.cast("warsow")
+  def wheeloftime: typings.gamedig.gamedigStrings.wheeloftime = "wheeloftime".asInstanceOf[typings.gamedig.gamedigStrings.wheeloftime]
   @scala.inline
-  def wheeloftime: typings.gamedig.gamedigStrings.wheeloftime = this.cast("wheeloftime")
+  def wolfenstein2009: typings.gamedig.gamedigStrings.wolfenstein2009 = "wolfenstein2009".asInstanceOf[typings.gamedig.gamedigStrings.wolfenstein2009]
   @scala.inline
-  def wolfenstein2009: typings.gamedig.gamedigStrings.wolfenstein2009 = this.cast("wolfenstein2009")
+  def wolfensteinet: typings.gamedig.gamedigStrings.wolfensteinet = "wolfensteinet".asInstanceOf[typings.gamedig.gamedigStrings.wolfensteinet]
   @scala.inline
-  def wolfensteinet: typings.gamedig.gamedigStrings.wolfensteinet = this.cast("wolfensteinet")
+  def xpandrally: typings.gamedig.gamedigStrings.xpandrally = "xpandrally".asInstanceOf[typings.gamedig.gamedigStrings.xpandrally]
   @scala.inline
-  def xpandrally: typings.gamedig.gamedigStrings.xpandrally = this.cast("xpandrally")
+  def zombiemaster: typings.gamedig.gamedigStrings.zombiemaster = "zombiemaster".asInstanceOf[typings.gamedig.gamedigStrings.zombiemaster]
   @scala.inline
-  def zombiemaster: typings.gamedig.gamedigStrings.zombiemaster = this.cast("zombiemaster")
-  @scala.inline
-  def zps: typings.gamedig.gamedigStrings.zps = this.cast("zps")
+  def zps: typings.gamedig.gamedigStrings.zps = "zps".asInstanceOf[typings.gamedig.gamedigStrings.zps]
 }
 

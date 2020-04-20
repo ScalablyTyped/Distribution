@@ -12,7 +12,6 @@ object AnonBadge {
   @scala.inline
   def apply(badge: CordovaPluginBadge): AnonBadge = {
     val __obj = js.Dynamic.literal(badge = badge.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBadge]
   }
 }

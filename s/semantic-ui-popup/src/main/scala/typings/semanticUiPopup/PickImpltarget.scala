@@ -14,7 +14,6 @@ object PickImpltarget {
   @scala.inline
   def apply(target: `false` | String | JQuery): PickImpltarget = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpltarget]
   }
 }

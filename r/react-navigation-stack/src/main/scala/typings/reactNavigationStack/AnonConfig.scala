@@ -15,7 +15,6 @@ object AnonConfig {
   @scala.inline
   def apply(animation: timing, config: OmitTimingAnimationConfig): AnonConfig = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfig]
   }
 }

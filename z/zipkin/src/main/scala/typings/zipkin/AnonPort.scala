@@ -14,7 +14,6 @@ object AnonPort {
   @scala.inline
   def apply(host: InetAddress, port: Double): AnonPort = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPort]
   }
 }

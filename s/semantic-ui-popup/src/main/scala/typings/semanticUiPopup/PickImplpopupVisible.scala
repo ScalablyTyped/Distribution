@@ -13,7 +13,6 @@ object PickImplpopupVisible {
   @scala.inline
   def apply(popupVisible: String): PickImplpopupVisible = {
     val __obj = js.Dynamic.literal(popupVisible = popupVisible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpopupVisible]
   }
 }

@@ -1,6 +1,6 @@
 package typings.cypress
 
-import typings.cypress.cypressMod.Cypress.Encodings
+import typings.cypress.mod.Cypress.Encodings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

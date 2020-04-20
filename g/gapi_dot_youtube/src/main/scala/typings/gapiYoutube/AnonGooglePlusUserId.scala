@@ -19,7 +19,6 @@ object AnonGooglePlusUserId {
   @scala.inline
   def apply(googlePlusUserId: String, relatedPlaylists: AnonFavorites): AnonGooglePlusUserId = {
     val __obj = js.Dynamic.literal(googlePlusUserId = googlePlusUserId.asInstanceOf[js.Any], relatedPlaylists = relatedPlaylists.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGooglePlusUserId]
   }
 }

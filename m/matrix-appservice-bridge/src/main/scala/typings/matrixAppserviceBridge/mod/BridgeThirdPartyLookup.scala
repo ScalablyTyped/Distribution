@@ -29,7 +29,6 @@ object BridgeThirdPartyLookup {
     protocols: js.Array[String]
   ): BridgeThirdPartyLookup = {
     val __obj = js.Dynamic.literal(getLocation = getLocation.asInstanceOf[js.Any], getProtocol = getProtocol.asInstanceOf[js.Any], getUser = getUser.asInstanceOf[js.Any], parseLocation = parseLocation.asInstanceOf[js.Any], parseUser = parseUser.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BridgeThirdPartyLookup]
   }
 }

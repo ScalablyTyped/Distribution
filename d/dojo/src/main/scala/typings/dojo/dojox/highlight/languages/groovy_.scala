@@ -29,7 +29,6 @@ object groovy_ {
   @scala.inline
   def apply(GROOVY_KEYWORDS: js.Object, defaultMode: js.Object, modes: js.Array[_]): groovy_ = {
     val __obj = js.Dynamic.literal(GROOVY_KEYWORDS = GROOVY_KEYWORDS.asInstanceOf[js.Any], defaultMode = defaultMode.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[groovy_]
   }
 }

@@ -14,10 +14,8 @@ trait WALK_MODE extends js.Object
 
 object WALK_MODE {
   @scala.inline
-  def WALK_POST: `1` = this.cast(1)
+  def WALK_POST: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def WALK_PRE: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WALK_PRE: `0` = 0.asInstanceOf[`0`]
 }
 

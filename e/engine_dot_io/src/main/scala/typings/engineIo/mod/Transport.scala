@@ -12,10 +12,8 @@ trait Transport extends js.Object
 
 object Transport {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def polling: typings.engineIo.engineIoStrings.polling = "polling".asInstanceOf[typings.engineIo.engineIoStrings.polling]
   @scala.inline
-  def polling: typings.engineIo.engineIoStrings.polling = this.cast("polling")
-  @scala.inline
-  def websocket: typings.engineIo.engineIoStrings.websocket = this.cast("websocket")
+  def websocket: typings.engineIo.engineIoStrings.websocket = "websocket".asInstanceOf[typings.engineIo.engineIoStrings.websocket]
 }
 

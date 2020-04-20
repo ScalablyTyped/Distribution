@@ -15,7 +15,6 @@ object UserActivityCollection {
   @scala.inline
   def apply(search: SearchUserActivityRequest => SearchUserActivityResponse): UserActivityCollection = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[UserActivityCollection]
   }
 }

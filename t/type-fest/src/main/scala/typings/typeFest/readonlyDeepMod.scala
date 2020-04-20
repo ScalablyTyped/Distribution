@@ -1,5 +1,6 @@
 package typings.typeFest
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.ReadonlyMap
 import typings.std.ReadonlySet
 import scala.scalajs.js
@@ -27,6 +28,6 @@ object readonlyDeepMod extends js.Object {
   */
   type ReadonlyObjectDeep[ObjectType /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ KeyType in keyof ObjectType ]: type-fest.type-fest/source/readonly-deep.ReadonlyDeep<ObjectType[KeyType]>}
-    */ typings.typeFest.typeFestStrings.ReadonlyObjectDeep with ObjectType
+    */ typings.typeFest.typeFestStrings.ReadonlyObjectDeep with TopLevel[ObjectType]
 }
 

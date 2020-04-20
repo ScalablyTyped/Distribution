@@ -15,7 +15,6 @@ object CPConv {
   @scala.inline
   def apply(dec: NumberDictionary[String], enc: StringDictionary[Double]): CPConv = {
     val __obj = js.Dynamic.literal(dec = dec.asInstanceOf[js.Any], enc = enc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CPConv]
   }
 }

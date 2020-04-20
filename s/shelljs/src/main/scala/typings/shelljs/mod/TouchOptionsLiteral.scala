@@ -15,16 +15,14 @@ trait TouchOptionsLiteral extends js.Object
 
 object TouchOptionsLiteral {
   @scala.inline
-  def `-a`: typings.shelljs.shelljsStrings.`-a` = this.cast("-a")
+  def `-a`: typings.shelljs.shelljsStrings.`-a` = "-a".asInstanceOf[typings.shelljs.shelljsStrings.`-a`]
   @scala.inline
-  def `-c`: typings.shelljs.shelljsStrings.`-c` = this.cast("-c")
+  def `-c`: typings.shelljs.shelljsStrings.`-c` = "-c".asInstanceOf[typings.shelljs.shelljsStrings.`-c`]
   @scala.inline
-  def `-d`: typings.shelljs.shelljsStrings.`-d` = this.cast("-d")
+  def `-d`: typings.shelljs.shelljsStrings.`-d` = "-d".asInstanceOf[typings.shelljs.shelljsStrings.`-d`]
   @scala.inline
-  def `-m`: typings.shelljs.shelljsStrings.`-m` = this.cast("-m")
+  def `-m`: typings.shelljs.shelljsStrings.`-m` = "-m".asInstanceOf[typings.shelljs.shelljsStrings.`-m`]
   @scala.inline
-  def `-r`: typings.shelljs.shelljsStrings.`-r` = this.cast("-r")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `-r`: typings.shelljs.shelljsStrings.`-r` = "-r".asInstanceOf[typings.shelljs.shelljsStrings.`-r`]
 }
 

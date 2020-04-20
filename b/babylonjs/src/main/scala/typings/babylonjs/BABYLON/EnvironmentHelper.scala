@@ -89,28 +89,28 @@ class EnvironmentHelper protected () extends js.Object {
   /**
     * Gets the ground mesh created by the helper.
     */
-  def ground(): Nullable[Mesh] = js.native
+  def ground: Nullable[Mesh] = js.native
   /**
     * Gets the ground material created by the helper.
     */
-  def groundMaterial(): Nullable[BackgroundMaterial] = js.native
+  def groundMaterial: Nullable[BackgroundMaterial] = js.native
   /**
     * Gets the ground mirror created by the helper.
     */
-  def groundMirror(): Nullable[MirrorTexture] = js.native
+  def groundMirror: Nullable[MirrorTexture] = js.native
   /**
     * Gets the ground mirror render list to helps pushing the meshes
     * you wish in the ground reflection.
     */
-  def groundMirrorRenderList(): Nullable[js.Array[AbstractMesh]] = js.native
+  def groundMirrorRenderList: Nullable[js.Array[AbstractMesh]] = js.native
   /**
     * Gets the ground texture created by the helper.
     */
-  def groundTexture(): Nullable[BaseTexture] = js.native
+  def groundTexture: Nullable[BaseTexture] = js.native
   /**
     * Gets the root mesh created by the helper.
     */
-  def rootMesh(): Mesh = js.native
+  def rootMesh: Mesh = js.native
   /**
     * Sets the primary color of all the available elements.
     * @param color the main color to affect to the ground and the background
@@ -119,15 +119,15 @@ class EnvironmentHelper protected () extends js.Object {
   /**
     * Gets the skybox created by the helper.
     */
-  def skybox(): Nullable[Mesh] = js.native
+  def skybox: Nullable[Mesh] = js.native
   /**
     * Gets the skybox material created by the helper.
     */
-  def skyboxMaterial(): Nullable[BackgroundMaterial] = js.native
+  def skyboxMaterial: Nullable[BackgroundMaterial] = js.native
   /**
     * Gets the skybox texture created by the helper.
     */
-  def skyboxTexture(): Nullable[BaseTexture] = js.native
+  def skyboxTexture: Nullable[BaseTexture] = js.native
   /**
     * Updates the background according to the new options
     * @param options

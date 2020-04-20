@@ -26,7 +26,6 @@ object IManager {
     shutdownAll: () => Unit
   ): IManager = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], refreshRunning = js.Any.fromFunction0(refreshRunning), running = js.Any.fromFunction0(running), runningChanged = runningChanged.asInstanceOf[js.Any], shutdownAll = js.Any.fromFunction0(shutdownAll))
-  
     __obj.asInstanceOf[IManager]
   }
 }

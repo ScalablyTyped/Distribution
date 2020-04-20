@@ -16,7 +16,6 @@ object PutRetentionConfigurationRequest {
   @scala.inline
   def apply(RetentionPeriodInDays: RetentionPeriodInDays): PutRetentionConfigurationRequest = {
     val __obj = js.Dynamic.literal(RetentionPeriodInDays = RetentionPeriodInDays.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutRetentionConfigurationRequest]
   }
 }

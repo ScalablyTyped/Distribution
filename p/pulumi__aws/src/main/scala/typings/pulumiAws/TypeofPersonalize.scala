@@ -13,7 +13,6 @@ object TypeofPersonalize {
   @scala.inline
   def apply(Types: TypeofPersonalize): TypeofPersonalize = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofPersonalize]
   }
 }

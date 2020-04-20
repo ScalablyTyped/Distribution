@@ -13,7 +13,6 @@ object CreateFolderDataAttributes {
   @scala.inline
   def apply(extension: BaseAttributesExtensionObject, name: String): CreateFolderDataAttributes = {
     val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateFolderDataAttributes]
   }
 }

@@ -15,7 +15,6 @@ object Response {
   @scala.inline
   def apply[T](body: T, headers: Record[String, String], statusCode: Double): Response[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Response[T]]
   }
 }

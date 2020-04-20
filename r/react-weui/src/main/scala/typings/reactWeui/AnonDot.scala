@@ -13,7 +13,6 @@ object AnonDot {
   @scala.inline
   def apply(dot: Boolean, preset: String): AnonDot = {
     val __obj = js.Dynamic.literal(dot = dot.asInstanceOf[js.Any], preset = preset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDot]
   }
 }

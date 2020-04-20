@@ -24,7 +24,6 @@ object AnonConverterHint {
     validatorHint: (js.Array[notewindow | none]) | notewindow | none
   ): AnonConverterHint = {
     val __obj = js.Dynamic.literal(converterHint = converterHint.asInstanceOf[js.Any], helpInstruction = helpInstruction.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], validatorHint = validatorHint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConverterHint]
   }
 }

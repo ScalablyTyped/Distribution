@@ -12,7 +12,6 @@ object AnonTargetGroupArn {
   @scala.inline
   def apply(targetGroupArn: String): AnonTargetGroupArn = {
     val __obj = js.Dynamic.literal(targetGroupArn = targetGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTargetGroupArn]
   }
 }

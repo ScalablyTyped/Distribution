@@ -12,7 +12,6 @@ object AnonReloaded {
   @scala.inline
   def apply(reloaded: Boolean): AnonReloaded = {
     val __obj = js.Dynamic.literal(reloaded = reloaded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReloaded]
   }
 }

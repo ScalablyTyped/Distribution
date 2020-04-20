@@ -13,7 +13,6 @@ object AnonXpath {
   @scala.inline
   def apply(xpath: String): AnonXpath = {
     val __obj = js.Dynamic.literal(xpath = xpath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonXpath]
   }
 }

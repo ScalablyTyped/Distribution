@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactOutsideClickHandlerProps {
   @scala.inline
-  def ReactOutsideClickHandlerProps: Props.type = typings.reactOutsideClickHandler.mod.Props
+  def ReactOutsideClickHandlerProps: Props.type = Props
   type ReactOutsideClickHandlerProps = Props
 }
 

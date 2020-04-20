@@ -42,7 +42,7 @@ object foundationMod extends js.Object {
   ): FunctionComponent[TComponentProps] with TStatics = js.native
   def createFactory[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](DefaultComponent: ComponentType[TProps]): ISlotFactory[TProps, TShorthandProp] = js.native
   def createFactory[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](DefaultComponent: ComponentType[TProps], options: IFactoryOptions[TProps]): ISlotFactory[TProps, TShorthandProp] = js.native
-  def getControlledDerivedProps[TProps, TProp /* <: String */](
+  def getControlledDerivedProps[TProps, TProp /* <: /* keyof TProps */ String */](
     props: TProps,
     propName: TProp,
     derivedValue: /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
@@ -92,7 +92,7 @@ object foundationMod extends js.Object {
     customizable: ICustomizableProps,
     pure: Boolean
   ): FunctionComponent[TComponentProps] = js.native
-  def useControlledState[TProps, TProp /* <: String */, TDefaultProp /* <: String */](props: TProps, propName: TProp): js.Tuple2[
+  def useControlledState[TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */](props: TProps, propName: TProp): js.Tuple2[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
     ], 
@@ -102,7 +102,7 @@ object foundationMod extends js.Object {
       ]
     ]
   ] = js.native
-  def useControlledState[TProps, TProp /* <: String */, TDefaultProp /* <: String */](props: TProps, propName: TProp, options: IControlledStateOptions[TProps, TProp, TDefaultProp]): js.Tuple2[
+  def useControlledState[TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */](props: TProps, propName: TProp, options: IControlledStateOptions[TProps, TProp, TDefaultProp]): js.Tuple2[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
     ], 

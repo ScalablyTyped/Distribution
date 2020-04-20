@@ -14,14 +14,12 @@ trait BITMAP_FORMAT_TYPE extends js.Object
 
 object BITMAP_FORMAT_TYPE {
   @scala.inline
-  def D24: typings.escpos.escposStrings.D24 = this.cast("D24")
+  def D24: typings.escpos.escposStrings.D24 = "D24".asInstanceOf[typings.escpos.escposStrings.D24]
   @scala.inline
-  def D8: typings.escpos.escposStrings.D8 = this.cast("D8")
+  def D8: typings.escpos.escposStrings.D8 = "D8".asInstanceOf[typings.escpos.escposStrings.D8]
   @scala.inline
-  def S24: typings.escpos.escposStrings.S24 = this.cast("S24")
+  def S24: typings.escpos.escposStrings.S24 = "S24".asInstanceOf[typings.escpos.escposStrings.S24]
   @scala.inline
-  def S8: typings.escpos.escposStrings.S8 = this.cast("S8")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def S8: typings.escpos.escposStrings.S8 = "S8".asInstanceOf[typings.escpos.escposStrings.S8]
 }
 

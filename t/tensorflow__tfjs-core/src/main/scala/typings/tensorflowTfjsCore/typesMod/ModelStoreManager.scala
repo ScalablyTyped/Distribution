@@ -32,7 +32,6 @@ object ModelStoreManager {
     removeModel: String => js.Promise[ModelArtifactsInfo]
   ): ModelStoreManager = {
     val __obj = js.Dynamic.literal(listModels = js.Any.fromFunction0(listModels), removeModel = js.Any.fromFunction1(removeModel))
-  
     __obj.asInstanceOf[ModelStoreManager]
   }
 }

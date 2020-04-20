@@ -15,7 +15,6 @@ object AsyncQueueAction {
   @scala.inline
   def apply[T /* <: Action[_] */](callback: (js.Function0[Unit], Dispatch[T]) => Unit, queue: String): AsyncQueueAction[T] = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), queue = queue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsyncQueueAction[T]]
   }
 }

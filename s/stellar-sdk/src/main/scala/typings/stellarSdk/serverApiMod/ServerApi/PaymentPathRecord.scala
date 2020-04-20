@@ -1,5 +1,6 @@
 package typings.stellarSdk.serverApiMod.ServerApi
 
+import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.AnonAssetissuer
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
 import scala.scalajs.js
@@ -24,7 +25,7 @@ object PaymentPathRecord {
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
-    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with js.Any,
+    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],
     destination_amount: String,
     destination_asset_code: String,
     destination_asset_issuer: String,
@@ -36,7 +37,6 @@ object PaymentPathRecord {
     source_asset_type: String
   ): PaymentPathRecord = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], destination_amount = destination_amount.asInstanceOf[js.Any], destination_asset_code = destination_asset_code.asInstanceOf[js.Any], destination_asset_issuer = destination_asset_issuer.asInstanceOf[js.Any], destination_asset_type = destination_asset_type.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], source_amount = source_amount.asInstanceOf[js.Any], source_asset_code = source_asset_code.asInstanceOf[js.Any], source_asset_issuer = source_asset_issuer.asInstanceOf[js.Any], source_asset_type = source_asset_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PaymentPathRecord]
   }
 }

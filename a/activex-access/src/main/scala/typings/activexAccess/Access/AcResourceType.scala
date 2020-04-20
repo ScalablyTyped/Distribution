@@ -14,10 +14,8 @@ trait AcResourceType extends js.Object
 
 object AcResourceType {
   @scala.inline
-  def acResourceImage: `1` = this.cast(1)
+  def acResourceImage: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acResourceTheme: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acResourceTheme: `0` = 0.asInstanceOf[`0`]
 }
 

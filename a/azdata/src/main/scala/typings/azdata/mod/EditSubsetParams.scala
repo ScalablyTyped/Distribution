@@ -13,7 +13,6 @@ object EditSubsetParams {
   @scala.inline
   def apply(ownerUri: String, rowCount: Double, rowStartIndex: Double): EditSubsetParams = {
     val __obj = js.Dynamic.literal(ownerUri = ownerUri.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rowStartIndex = rowStartIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditSubsetParams]
   }
 }

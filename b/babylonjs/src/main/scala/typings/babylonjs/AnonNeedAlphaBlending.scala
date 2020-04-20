@@ -20,7 +20,6 @@ object AnonNeedAlphaBlending {
     needWorldViewProjectionMatrix: Boolean
   ): AnonNeedAlphaBlending = {
     val __obj = js.Dynamic.literal(needAlphaBlending = needAlphaBlending.asInstanceOf[js.Any], needAlphaTesting = needAlphaTesting.asInstanceOf[js.Any], needWorldViewMatrix = needWorldViewMatrix.asInstanceOf[js.Any], needWorldViewProjectionMatrix = needWorldViewProjectionMatrix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNeedAlphaBlending]
   }
 }

@@ -18,7 +18,6 @@ object IMediaEncodingProfile {
     video: VideoEncodingProperties
   ): IMediaEncodingProfile = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMediaEncodingProfile]
   }
 }

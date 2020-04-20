@@ -13,7 +13,6 @@ object AnonNOWAIT {
   @scala.inline
   def apply(NOWAIT: String, WAIT: String): AnonNOWAIT = {
     val __obj = js.Dynamic.literal(NOWAIT = NOWAIT.asInstanceOf[js.Any], WAIT = WAIT.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNOWAIT]
   }
 }

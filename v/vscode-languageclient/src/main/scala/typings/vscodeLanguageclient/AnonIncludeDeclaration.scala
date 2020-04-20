@@ -12,7 +12,6 @@ object AnonIncludeDeclaration {
   @scala.inline
   def apply(includeDeclaration: Boolean): AnonIncludeDeclaration = {
     val __obj = js.Dynamic.literal(includeDeclaration = includeDeclaration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIncludeDeclaration]
   }
 }

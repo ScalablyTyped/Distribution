@@ -14,7 +14,6 @@ object AnonSystem {
   @scala.inline
   def apply(none: Double, system: Double, user: Double): AnonSystem = {
     val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSystem]
   }
 }

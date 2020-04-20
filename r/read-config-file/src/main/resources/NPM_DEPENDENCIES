@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "read-config-file" : "5.0.2"
+      "read-config-file" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "read-config-file" : "5.0.2"
+      "read-config-file" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

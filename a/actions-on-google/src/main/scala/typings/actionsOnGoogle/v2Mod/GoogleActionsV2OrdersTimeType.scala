@@ -14,14 +14,12 @@ trait GoogleActionsV2OrdersTimeType extends js.Object
 
 object GoogleActionsV2OrdersTimeType {
   @scala.inline
-  def DELIVERY_DATE: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_DATE = this.cast("DELIVERY_DATE")
+  def DELIVERY_DATE: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_DATE = "DELIVERY_DATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_DATE]
   @scala.inline
-  def ETA: typings.actionsOnGoogle.actionsOnGoogleStrings.ETA = this.cast("ETA")
+  def ETA: typings.actionsOnGoogle.actionsOnGoogleStrings.ETA = "ETA".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ETA]
   @scala.inline
-  def RESERVATION_SLOT: typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_SLOT = this.cast("RESERVATION_SLOT")
+  def RESERVATION_SLOT: typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_SLOT = "RESERVATION_SLOT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_SLOT]
   @scala.inline
-  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
 }
 

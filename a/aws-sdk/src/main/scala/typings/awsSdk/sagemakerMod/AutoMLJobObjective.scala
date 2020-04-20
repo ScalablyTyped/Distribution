@@ -16,7 +16,6 @@ object AutoMLJobObjective {
   @scala.inline
   def apply(MetricName: AutoMLMetricEnum): AutoMLJobObjective = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AutoMLJobObjective]
   }
 }

@@ -16,7 +16,6 @@ object GetNetworkInterfaceAttachment {
   @scala.inline
   def apply(attachmentId: String, deviceIndex: Double, instanceId: String, instanceOwnerId: String): GetNetworkInterfaceAttachment = {
     val __obj = js.Dynamic.literal(attachmentId = attachmentId.asInstanceOf[js.Any], deviceIndex = deviceIndex.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], instanceOwnerId = instanceOwnerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetNetworkInterfaceAttachment]
   }
 }

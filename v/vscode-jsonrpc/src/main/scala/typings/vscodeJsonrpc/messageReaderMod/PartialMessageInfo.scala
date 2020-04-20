@@ -13,7 +13,6 @@ object PartialMessageInfo {
   @scala.inline
   def apply(messageToken: Double, waitingTime: Double): PartialMessageInfo = {
     val __obj = js.Dynamic.literal(messageToken = messageToken.asInstanceOf[js.Any], waitingTime = waitingTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PartialMessageInfo]
   }
 }

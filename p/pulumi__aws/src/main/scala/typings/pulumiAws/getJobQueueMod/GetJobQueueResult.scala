@@ -56,7 +56,6 @@ object GetJobQueueResult {
     statusReason: String
   ): GetJobQueueResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], computeEnvironmentOrders = computeEnvironmentOrders.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusReason = statusReason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetJobQueueResult]
   }
 }

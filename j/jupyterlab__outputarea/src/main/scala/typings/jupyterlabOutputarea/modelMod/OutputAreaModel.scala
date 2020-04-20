@@ -62,7 +62,7 @@ class OutputAreaModel () extends IOutputAreaModel {
     * A signal emitted when the model changes.
     */
   @JSName("changed")
-  def changed_MOutputAreaModel(): ISignal[this.type, ChangedArgs] = js.native
+  def changed_MOutputAreaModel: ISignal[this.type, ChangedArgs] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -80,12 +80,12 @@ class OutputAreaModel () extends IOutputAreaModel {
     * Test whether the model is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MOutputAreaModel(): Boolean = js.native
+  def isDisposed_MOutputAreaModel: Boolean = js.native
   /**
     * Get the length of the items in the model.
     */
   @JSName("length")
-  def length_MOutputAreaModel(): Double = js.native
+  def length_MOutputAreaModel: Double = js.native
   /**
     * Whether a new value should be consolidated with the previous output.
     *
@@ -97,12 +97,12 @@ class OutputAreaModel () extends IOutputAreaModel {
     * A signal emitted when the model state changes.
     */
   @JSName("stateChanged")
-  def stateChanged_MOutputAreaModel(): ISignal[IOutputAreaModel, Unit] = js.native
+  def stateChanged_MOutputAreaModel: ISignal[IOutputAreaModel, Unit] = js.native
   /**
     * Get whether the model is trusted.
     */
   @JSName("trusted")
-  def trusted_MOutputAreaModel(): Boolean = js.native
+  def trusted_MOutputAreaModel: Boolean = js.native
   /**
     * Set whether the model is trusted.
     *

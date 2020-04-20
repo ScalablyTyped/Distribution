@@ -81,7 +81,6 @@ object String {
     zebra: java.lang.String
   ): String = {
     val __obj = js.Dynamic.literal(america = america.asInstanceOf[js.Any], bgBlack = bgBlack.asInstanceOf[js.Any], bgBlue = bgBlue.asInstanceOf[js.Any], bgCyan = bgCyan.asInstanceOf[js.Any], bgGreen = bgGreen.asInstanceOf[js.Any], bgMagenta = bgMagenta.asInstanceOf[js.Any], bgRed = bgRed.asInstanceOf[js.Any], bgWhite = bgWhite.asInstanceOf[js.Any], bgYellow = bgYellow.asInstanceOf[js.Any], black = black.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], dim = dim.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], grey = grey.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], italic = italic.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], rainbow = rainbow.asInstanceOf[js.Any], random = random.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], strikethrough = strikethrough.asInstanceOf[js.Any], strip = strip.asInstanceOf[js.Any], stripColors = stripColors.asInstanceOf[js.Any], trap = trap.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any], zalgo = zalgo.asInstanceOf[js.Any], zebra = zebra.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[String]
   }
 }

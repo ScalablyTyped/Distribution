@@ -14,14 +14,12 @@ trait Protocol extends js.Object
 
 object Protocol {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def http: typings.proxyLists.proxyListsStrings.http = "http".asInstanceOf[typings.proxyLists.proxyListsStrings.http]
   @scala.inline
-  def http: typings.proxyLists.proxyListsStrings.http = this.cast("http")
+  def https: typings.proxyLists.proxyListsStrings.https = "https".asInstanceOf[typings.proxyLists.proxyListsStrings.https]
   @scala.inline
-  def https: typings.proxyLists.proxyListsStrings.https = this.cast("https")
+  def socks4: typings.proxyLists.proxyListsStrings.socks4 = "socks4".asInstanceOf[typings.proxyLists.proxyListsStrings.socks4]
   @scala.inline
-  def socks4: typings.proxyLists.proxyListsStrings.socks4 = this.cast("socks4")
-  @scala.inline
-  def socks5: typings.proxyLists.proxyListsStrings.socks5 = this.cast("socks5")
+  def socks5: typings.proxyLists.proxyListsStrings.socks5 = "socks5".asInstanceOf[typings.proxyLists.proxyListsStrings.socks5]
 }
 

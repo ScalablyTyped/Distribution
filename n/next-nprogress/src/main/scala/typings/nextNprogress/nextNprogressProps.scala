@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait nextNprogressProps {
   @scala.inline
-  def ComponentProps: NProgressProps.type = typings.nextNprogress.componentMod.NProgressProps
+  def ComponentProps: NProgressProps.type = NProgressProps
   type ComponentProps = NProgressProps
 }
 

@@ -13,7 +13,6 @@ object TypeofWAF {
   @scala.inline
   def apply(Types: TypeofWAF): TypeofWAF = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofWAF]
   }
 }

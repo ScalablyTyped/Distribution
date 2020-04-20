@@ -14,7 +14,6 @@ object AnonReaddirSync {
   @scala.inline
   def apply(readdirSync: String => js.Array[String], statSync: String => Stats): AnonReaddirSync = {
     val __obj = js.Dynamic.literal(readdirSync = js.Any.fromFunction1(readdirSync), statSync = js.Any.fromFunction1(statSync))
-  
     __obj.asInstanceOf[AnonReaddirSync]
   }
 }

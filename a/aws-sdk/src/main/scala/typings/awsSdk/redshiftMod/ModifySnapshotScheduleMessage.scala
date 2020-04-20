@@ -20,7 +20,6 @@ object ModifySnapshotScheduleMessage {
   @scala.inline
   def apply(ScheduleDefinitions: ScheduleDefinitionList, ScheduleIdentifier: String): ModifySnapshotScheduleMessage = {
     val __obj = js.Dynamic.literal(ScheduleDefinitions = ScheduleDefinitions.asInstanceOf[js.Any], ScheduleIdentifier = ScheduleIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifySnapshotScheduleMessage]
   }
 }

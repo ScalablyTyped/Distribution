@@ -13,7 +13,6 @@ object SocketTaskOnErrorCallbackResult {
   @scala.inline
   def apply(errMsg: String): SocketTaskOnErrorCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SocketTaskOnErrorCallbackResult]
   }
 }

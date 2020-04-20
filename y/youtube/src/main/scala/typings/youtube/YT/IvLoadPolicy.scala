@@ -17,13 +17,11 @@ object IvLoadPolicy {
   		 * Video annotations will not be shown.
   		 */
   @scala.inline
-  def Hide: `3` = this.cast(3)
+  def Hide: `3` = 3.asInstanceOf[`3`]
   /**
   		 * Video annotations will be shown.
   		 */
   @scala.inline
-  def Show: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Show: `1` = 1.asInstanceOf[`1`]
 }
 

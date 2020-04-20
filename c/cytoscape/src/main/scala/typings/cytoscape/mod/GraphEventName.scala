@@ -23,24 +23,22 @@ trait GraphEventName extends js.Object
 
 object GraphEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def destroy: typings.cytoscape.cytoscapeStrings.destroy = "destroy".asInstanceOf[typings.cytoscape.cytoscapeStrings.destroy]
   @scala.inline
-  def destroy: typings.cytoscape.cytoscapeStrings.destroy = this.cast("destroy")
+  def layoutready: typings.cytoscape.cytoscapeStrings.layoutready = "layoutready".asInstanceOf[typings.cytoscape.cytoscapeStrings.layoutready]
   @scala.inline
-  def layoutready: typings.cytoscape.cytoscapeStrings.layoutready = this.cast("layoutready")
+  def layoutstart: typings.cytoscape.cytoscapeStrings.layoutstart = "layoutstart".asInstanceOf[typings.cytoscape.cytoscapeStrings.layoutstart]
   @scala.inline
-  def layoutstart: typings.cytoscape.cytoscapeStrings.layoutstart = this.cast("layoutstart")
+  def layoutstop: typings.cytoscape.cytoscapeStrings.layoutstop = "layoutstop".asInstanceOf[typings.cytoscape.cytoscapeStrings.layoutstop]
   @scala.inline
-  def layoutstop: typings.cytoscape.cytoscapeStrings.layoutstop = this.cast("layoutstop")
+  def pan: typings.cytoscape.cytoscapeStrings.pan = "pan".asInstanceOf[typings.cytoscape.cytoscapeStrings.pan]
   @scala.inline
-  def pan: typings.cytoscape.cytoscapeStrings.pan = this.cast("pan")
+  def ready: typings.cytoscape.cytoscapeStrings.ready = "ready".asInstanceOf[typings.cytoscape.cytoscapeStrings.ready]
   @scala.inline
-  def ready: typings.cytoscape.cytoscapeStrings.ready = this.cast("ready")
+  def render: typings.cytoscape.cytoscapeStrings.render = "render".asInstanceOf[typings.cytoscape.cytoscapeStrings.render]
   @scala.inline
-  def render: typings.cytoscape.cytoscapeStrings.render = this.cast("render")
+  def resize: typings.cytoscape.cytoscapeStrings.resize = "resize".asInstanceOf[typings.cytoscape.cytoscapeStrings.resize]
   @scala.inline
-  def resize: typings.cytoscape.cytoscapeStrings.resize = this.cast("resize")
-  @scala.inline
-  def zoom: typings.cytoscape.cytoscapeStrings.zoom = this.cast("zoom")
+  def zoom: typings.cytoscape.cytoscapeStrings.zoom = "zoom".asInstanceOf[typings.cytoscape.cytoscapeStrings.zoom]
 }
 

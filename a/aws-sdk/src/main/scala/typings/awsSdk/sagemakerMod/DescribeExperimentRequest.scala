@@ -16,7 +16,6 @@ object DescribeExperimentRequest {
   @scala.inline
   def apply(ExperimentName: ExperimentEntityName): DescribeExperimentRequest = {
     val __obj = js.Dynamic.literal(ExperimentName = ExperimentName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeExperimentRequest]
   }
 }

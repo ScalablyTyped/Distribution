@@ -16,7 +16,6 @@ object SetReturnValueParameterType {
   @scala.inline
   def apply(newValue: CallArgument): SetReturnValueParameterType = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetReturnValueParameterType]
   }
 }

@@ -13,7 +13,6 @@ object AnonAlert {
   @scala.inline
   def apply(alert: AlertManager): AnonAlert = {
     val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlert]
   }
 }

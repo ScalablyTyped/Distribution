@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 /** Properties of an Agent. */
 trait IAgent extends js.Object {
   /** Agent apiVersion */
-  var apiVersion: js.UndefOr[ApiVersion | String | Null] = js.undefined
+  var apiVersion: js.UndefOr[
+    ApiVersion | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.ApiVersion * / any */ String) | Null
+  ] = js.undefined
   /** Agent avatarUri */
   var avatarUri: js.UndefOr[String | Null] = js.undefined
   /** Agent classificationThreshold */
@@ -24,13 +26,17 @@ trait IAgent extends js.Object {
   /** Agent enableLogging */
   var enableLogging: js.UndefOr[Boolean | Null] = js.undefined
   /** Agent matchMode */
-  var matchMode: js.UndefOr[MatchMode | String | Null] = js.undefined
+  var matchMode: js.UndefOr[
+    MatchMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.MatchMode * / any */ String) | Null
+  ] = js.undefined
   /** Agent parent */
   var parent: js.UndefOr[String | Null] = js.undefined
   /** Agent supportedLanguageCodes */
   var supportedLanguageCodes: js.UndefOr[js.Array[String] | Null] = js.undefined
   /** Agent tier */
-  var tier: js.UndefOr[Tier | String | Null] = js.undefined
+  var tier: js.UndefOr[
+    Tier | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.Tier * / any */ String) | Null
+  ] = js.undefined
   /** Agent timeZone */
   var timeZone: js.UndefOr[String | Null] = js.undefined
 }
@@ -38,17 +44,17 @@ trait IAgent extends js.Object {
 object IAgent {
   @scala.inline
   def apply(
-    apiVersion: ApiVersion | String = null,
+    apiVersion: ApiVersion | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.ApiVersion * / any */ String) = null,
     avatarUri: String = null,
     classificationThreshold: Int | Double = null,
     defaultLanguageCode: String = null,
     description: String = null,
     displayName: String = null,
     enableLogging: js.UndefOr[Boolean] = js.undefined,
-    matchMode: MatchMode | String = null,
+    matchMode: MatchMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.MatchMode * / any */ String) = null,
     parent: String = null,
     supportedLanguageCodes: js.Array[String] = null,
-    tier: Tier | String = null,
+    tier: Tier | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.Tier * / any */ String) = null,
     timeZone: String = null
   ): IAgent = {
     val __obj = js.Dynamic.literal()

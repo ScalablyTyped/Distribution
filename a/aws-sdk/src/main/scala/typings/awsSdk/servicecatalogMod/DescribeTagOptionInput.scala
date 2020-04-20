@@ -16,7 +16,6 @@ object DescribeTagOptionInput {
   @scala.inline
   def apply(Id: TagOptionId): DescribeTagOptionInput = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTagOptionInput]
   }
 }

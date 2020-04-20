@@ -13,7 +13,6 @@ object Anon30 {
   @scala.inline
   def apply(name: categoryOrder): Anon30 = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon30]
   }
 }

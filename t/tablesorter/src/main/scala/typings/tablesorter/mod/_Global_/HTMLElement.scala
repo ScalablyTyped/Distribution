@@ -20,7 +20,6 @@ object HTMLElement {
   @scala.inline
   def apply(config: TablesorterConfigurationStore[HTMLElement], hasInitialized: Boolean): HTMLElement = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], hasInitialized = hasInitialized.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HTMLElement]
   }
 }

@@ -15,7 +15,6 @@ object CompatibleFieldsCollection {
   @scala.inline
   def apply(query: (Report, String) => CompatibleFields): CompatibleFieldsCollection = {
     val __obj = js.Dynamic.literal(query = js.Any.fromFunction2(query))
-  
     __obj.asInstanceOf[CompatibleFieldsCollection]
   }
 }

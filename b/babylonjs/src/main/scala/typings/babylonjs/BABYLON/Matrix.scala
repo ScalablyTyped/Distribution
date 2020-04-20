@@ -165,7 +165,7 @@ class Matrix () extends js.Object {
   /**
     * Gets the internal data of the matrix
     */
-  def m(): DeepImmutable[Float32Array] = js.native
+  def m: DeepImmutable[Float32Array] = js.native
   /**
     * Multiply two matrices
     * @param other defines the second operand
@@ -501,7 +501,7 @@ object Matrix extends js.Object {
   /**
     * Gets an identity matrix that must not be updated
     */
-  def IdentityReadOnly(): DeepImmutable[Matrix] = js.native
+  def IdentityReadOnly: DeepImmutable[Matrix] = js.native
   /**
     * Creates a new identity matrix and stores the result in a given matrix
     * @param result defines the target matrix

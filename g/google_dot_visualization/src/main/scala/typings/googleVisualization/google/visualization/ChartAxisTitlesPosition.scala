@@ -13,12 +13,10 @@ trait ChartAxisTitlesPosition extends js.Object
 
 object ChartAxisTitlesPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def in: typings.googleVisualization.googleVisualizationStrings.in = "in".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.in]
   @scala.inline
-  def in: typings.googleVisualization.googleVisualizationStrings.in = this.cast("in")
+  def none: typings.googleVisualization.googleVisualizationStrings.none = "none".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.none]
   @scala.inline
-  def none: typings.googleVisualization.googleVisualizationStrings.none = this.cast("none")
-  @scala.inline
-  def out: typings.googleVisualization.googleVisualizationStrings.out = this.cast("out")
+  def out: typings.googleVisualization.googleVisualizationStrings.out = "out".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.out]
 }
 

@@ -20,7 +20,6 @@ object SendTestEventNotificationRequest {
   @scala.inline
   def apply(Notification: NotificationSpecification, TestEventType: EventType): SendTestEventNotificationRequest = {
     val __obj = js.Dynamic.literal(Notification = Notification.asInstanceOf[js.Any], TestEventType = TestEventType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendTestEventNotificationRequest]
   }
 }

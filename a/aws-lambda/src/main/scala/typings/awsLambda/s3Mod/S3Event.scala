@@ -12,7 +12,6 @@ object S3Event {
   @scala.inline
   def apply(Records: js.Array[S3EventRecord]): S3Event = {
     val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3Event]
   }
 }

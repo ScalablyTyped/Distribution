@@ -12,7 +12,6 @@ object CertificateRequestList {
   @scala.inline
   def apply(reqList: js.Array[CertificateRequest]): CertificateRequestList = {
     val __obj = js.Dynamic.literal(reqList = reqList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateRequestList]
   }
 }

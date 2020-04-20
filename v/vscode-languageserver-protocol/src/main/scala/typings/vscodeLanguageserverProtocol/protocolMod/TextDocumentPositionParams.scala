@@ -21,7 +21,6 @@ object TextDocumentPositionParams {
   @scala.inline
   def apply(position: Position, textDocument: TextDocumentIdentifier): TextDocumentPositionParams = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextDocumentPositionParams]
   }
 }

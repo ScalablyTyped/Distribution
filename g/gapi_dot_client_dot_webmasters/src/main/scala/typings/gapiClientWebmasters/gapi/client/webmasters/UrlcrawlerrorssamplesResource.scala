@@ -24,7 +24,6 @@ object UrlcrawlerrorssamplesResource {
     markAsFixed: AnonOauthtoken => Request_[Unit]
   ): UrlcrawlerrorssamplesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), markAsFixed = js.Any.fromFunction1(markAsFixed))
-  
     __obj.asInstanceOf[UrlcrawlerrorssamplesResource]
   }
 }

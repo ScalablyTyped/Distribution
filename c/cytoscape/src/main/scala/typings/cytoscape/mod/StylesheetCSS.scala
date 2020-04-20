@@ -18,7 +18,6 @@ object StylesheetCSS {
   @scala.inline
   def apply(css: Node | Edge | typings.cytoscape.mod.Css.Core, selector: String): StylesheetCSS = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StylesheetCSS]
   }
 }

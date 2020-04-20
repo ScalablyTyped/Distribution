@@ -16,7 +16,6 @@ object PickListStyleBriefBriefTe {
   @scala.inline
   def apply(Brief: ViewStyle, BriefText: TextStyle): PickListStyleBriefBriefTe = {
     val __obj = js.Dynamic.literal(Brief = Brief.asInstanceOf[js.Any], BriefText = BriefText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickListStyleBriefBriefTe]
   }
 }

@@ -18,7 +18,6 @@ object TempFilesData {
   @scala.inline
   def apply(tempFilePaths: String, tempFiles: js.Array[TempFile]): TempFilesData = {
     val __obj = js.Dynamic.literal(tempFilePaths = tempFilePaths.asInstanceOf[js.Any], tempFiles = tempFiles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TempFilesData]
   }
 }

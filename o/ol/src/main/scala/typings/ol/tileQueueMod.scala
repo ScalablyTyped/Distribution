@@ -1,6 +1,7 @@
 package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
+import typings.ol.pluggableMapMod.FrameState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +22,13 @@ object tileQueueMod extends js.Object {
     def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[_]) = this()
   }
   
+  def getTilePriority(
+    frameState: FrameState,
+    tile: typings.ol.olTileMod.default,
+    tileSourceKey: String,
+    tileCenter: Coordinate,
+    tileResolution: Double
+  ): Double = js.native
   type PriorityFunction = js.Function4[
     /* p0 */ typings.ol.olTileMod.default, 
     /* p1 */ String, 

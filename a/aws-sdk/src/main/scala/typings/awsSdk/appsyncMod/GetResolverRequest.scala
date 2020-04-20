@@ -24,7 +24,6 @@ object GetResolverRequest {
   @scala.inline
   def apply(apiId: String, fieldName: ResourceName, typeName: ResourceName): GetResolverRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetResolverRequest]
   }
 }

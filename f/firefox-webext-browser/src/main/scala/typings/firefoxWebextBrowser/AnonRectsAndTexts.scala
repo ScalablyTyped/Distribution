@@ -13,7 +13,6 @@ object AnonRectsAndTexts {
   @scala.inline
   def apply(rectsAndTexts: AnonRectList, textList: String): AnonRectsAndTexts = {
     val __obj = js.Dynamic.literal(rectsAndTexts = rectsAndTexts.asInstanceOf[js.Any], textList = textList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRectsAndTexts]
   }
 }

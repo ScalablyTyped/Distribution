@@ -12,7 +12,6 @@ object SignBlobResponse {
   @scala.inline
   def apply(signature: String): SignBlobResponse = {
     val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignBlobResponse]
   }
 }

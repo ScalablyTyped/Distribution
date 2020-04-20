@@ -20,7 +20,6 @@ object InputChannelLevel {
   @scala.inline
   def apply(Gain: integerMinNegative60Max6, InputChannel: integerMin0Max15): InputChannelLevel = {
     val __obj = js.Dynamic.literal(Gain = Gain.asInstanceOf[js.Any], InputChannel = InputChannel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputChannelLevel]
   }
 }

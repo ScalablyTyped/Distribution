@@ -12,7 +12,6 @@ object String {
   @scala.inline
   def apply(encodeHTML: () => java.lang.String): String = {
     val __obj = js.Dynamic.literal(encodeHTML = js.Any.fromFunction0(encodeHTML))
-  
     __obj.asInstanceOf[String]
   }
 }

@@ -69,7 +69,6 @@ object DataSourceTable {
     waitForCompletion: Integer => DataExecutionStatus
   ): DataSourceTable = {
     val __obj = js.Dynamic.literal(forceRefreshData = js.Any.fromFunction0(forceRefreshData), getDataSource = js.Any.fromFunction0(getDataSource), getRange = js.Any.fromFunction0(getRange), getStatus = js.Any.fromFunction0(getStatus), refreshData = js.Any.fromFunction0(refreshData), waitForCompletion = js.Any.fromFunction1(waitForCompletion))
-  
     __obj.asInstanceOf[DataSourceTable]
   }
 }

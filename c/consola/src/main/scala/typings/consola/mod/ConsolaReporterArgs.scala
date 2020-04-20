@@ -14,7 +14,6 @@ object ConsolaReporterArgs {
   @scala.inline
   def apply(async: Boolean, stderr: js.Any, stdout: js.Any): ConsolaReporterArgs = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConsolaReporterArgs]
   }
 }

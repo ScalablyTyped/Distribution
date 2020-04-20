@@ -16,7 +16,6 @@ object EnableInsightRulesInput {
   @scala.inline
   def apply(RuleNames: InsightRuleNames): EnableInsightRulesInput = {
     val __obj = js.Dynamic.literal(RuleNames = RuleNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableInsightRulesInput]
   }
 }

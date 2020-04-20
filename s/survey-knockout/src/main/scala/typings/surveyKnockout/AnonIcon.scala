@@ -16,7 +16,6 @@ object AnonIcon {
   @scala.inline
   def apply(icon: String, item: String, locationBottom: String, locationTop: String, root: String): AnonIcon = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], locationBottom = locationBottom.asInstanceOf[js.Any], locationTop = locationTop.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIcon]
   }
 }

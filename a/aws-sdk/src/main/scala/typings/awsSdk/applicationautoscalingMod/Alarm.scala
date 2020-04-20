@@ -20,7 +20,6 @@ object Alarm {
   @scala.inline
   def apply(AlarmARN: ResourceId, AlarmName: ResourceId): Alarm = {
     val __obj = js.Dynamic.literal(AlarmARN = AlarmARN.asInstanceOf[js.Any], AlarmName = AlarmName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Alarm]
   }
 }

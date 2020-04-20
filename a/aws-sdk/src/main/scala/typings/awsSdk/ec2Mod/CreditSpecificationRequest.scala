@@ -16,7 +16,6 @@ object CreditSpecificationRequest {
   @scala.inline
   def apply(CpuCredits: String): CreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(CpuCredits = CpuCredits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreditSpecificationRequest]
   }
 }

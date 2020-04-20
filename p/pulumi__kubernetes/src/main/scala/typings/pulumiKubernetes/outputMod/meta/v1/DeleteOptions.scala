@@ -70,7 +70,6 @@ object DeleteOptions {
     propagationPolicy: String
   ): DeleteOptions = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], dryRun = dryRun.asInstanceOf[js.Any], gracePeriodSeconds = gracePeriodSeconds.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], orphanDependents = orphanDependents.asInstanceOf[js.Any], preconditions = preconditions.asInstanceOf[js.Any], propagationPolicy = propagationPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteOptions]
   }
 }

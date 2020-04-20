@@ -62,7 +62,6 @@ object ImageStoreStatic {
     removeImageForTag: String => Unit
   ): ImageStoreStatic = {
     val __obj = js.Dynamic.literal(addImageFromBase64 = js.Any.fromFunction3(addImageFromBase64), getBase64ForTag = js.Any.fromFunction3(getBase64ForTag), hasImageForTag = js.Any.fromFunction2(hasImageForTag), removeImageForTag = js.Any.fromFunction1(removeImageForTag))
-  
     __obj.asInstanceOf[ImageStoreStatic]
   }
 }

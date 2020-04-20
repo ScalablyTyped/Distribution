@@ -20,7 +20,6 @@ object IWidgetExtension {
   @scala.inline
   def apply[T /* <: Widget */, U /* <: IModel */](createNew: (T, IContext[U]) => IDisposable): IWidgetExtension[T, U] = {
     val __obj = js.Dynamic.literal(createNew = js.Any.fromFunction2(createNew))
-  
     __obj.asInstanceOf[IWidgetExtension[T, U]]
   }
 }

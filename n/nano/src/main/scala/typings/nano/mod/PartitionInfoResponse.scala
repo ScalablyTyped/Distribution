@@ -23,7 +23,6 @@ object PartitionInfoResponse {
   @scala.inline
   def apply(db_name: String, doc_count: Double, doc_del_count: Double, partition: String, sizes: AnonExternal): PartitionInfoResponse = {
     val __obj = js.Dynamic.literal(db_name = db_name.asInstanceOf[js.Any], doc_count = doc_count.asInstanceOf[js.Any], doc_del_count = doc_del_count.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PartitionInfoResponse]
   }
 }

@@ -12,7 +12,6 @@ object PostResponse {
   @scala.inline
   def apply(body: PostResponseData): PostResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PostResponse]
   }
 }

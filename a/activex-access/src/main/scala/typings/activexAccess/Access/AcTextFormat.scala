@@ -14,10 +14,8 @@ trait AcTextFormat extends js.Object
 
 object AcTextFormat {
   @scala.inline
-  def acTextFormatHTMLRichText: `1` = this.cast(1)
+  def acTextFormatHTMLRichText: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acTextFormatPlain: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acTextFormatPlain: `0` = 0.asInstanceOf[`0`]
 }
 

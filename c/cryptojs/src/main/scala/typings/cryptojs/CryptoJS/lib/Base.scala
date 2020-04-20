@@ -21,7 +21,6 @@ object Base {
     mixIn: js.Object => Unit
   ): Base = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), extend = js.Any.fromFunction1(extend), init = js.Any.fromFunction1(init), mixIn = js.Any.fromFunction1(mixIn))
-  
     __obj.asInstanceOf[Base]
   }
 }

@@ -1,9 +1,9 @@
 package typings.chromeApps.chrome.usb
 
-import typings.chromeApps.chromeAppsStrings.`class`
-import typings.chromeApps.chromeAppsStrings.reserved
-import typings.chromeApps.chromeAppsStrings.standard
-import typings.chromeApps.chromeAppsStrings.vendor
+import typings.chromeApps.chromeAppsStrings.class_
+import typings.chromeApps.chromeAppsStrings.reserved_
+import typings.chromeApps.chromeAppsStrings.standard_
+import typings.chromeApps.chromeAppsStrings.vendor_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.usb.RequestType")
 @js.native
 object RequestType extends js.Object {
-  var CLASS: `class` = js.native
-  var RESERVED: reserved = js.native
-  var STANDARD: standard = js.native
-  var VENDOR: vendor = js.native
+  var CLASS: class_ = js.native
+  var RESERVED: reserved_ = js.native
+  var STANDARD: standard_ = js.native
+  var VENDOR: vendor_ = js.native
 }
 

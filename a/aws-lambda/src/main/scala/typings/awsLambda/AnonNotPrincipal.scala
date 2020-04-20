@@ -13,7 +13,6 @@ object AnonNotPrincipal {
   @scala.inline
   def apply(NotPrincipal: PrincipalValue): AnonNotPrincipal = {
     val __obj = js.Dynamic.literal(NotPrincipal = NotPrincipal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNotPrincipal]
   }
 }

@@ -24,8 +24,8 @@ class DataSetAccess protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FDataSetAccess: IModel = js.native
-  def containerAsDataSet(): DataSet = js.native
-  def moduleRoleAccessList(): IList[DataSetModuleRoleAccess] = js.native
+  def containerAsDataSet: DataSet = js.native
+  def moduleRoleAccessList: IList[DataSetModuleRoleAccess] = js.native
 }
 
 /* static members */

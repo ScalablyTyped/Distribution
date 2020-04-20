@@ -28,7 +28,6 @@ object ArtyomGlobalEvents {
     TEXT_RECOGNIZED: String
   ): ArtyomGlobalEvents = {
     val __obj = js.Dynamic.literal(COMMAND_MATCHED = COMMAND_MATCHED.asInstanceOf[js.Any], COMMAND_RECOGNITION_END = COMMAND_RECOGNITION_END.asInstanceOf[js.Any], COMMAND_RECOGNITION_START = COMMAND_RECOGNITION_START.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], NOT_COMMAND_MATCHED = NOT_COMMAND_MATCHED.asInstanceOf[js.Any], SPEECH_SYNTHESIS_END = SPEECH_SYNTHESIS_END.asInstanceOf[js.Any], SPEECH_SYNTHESIS_START = SPEECH_SYNTHESIS_START.asInstanceOf[js.Any], TEXT_RECOGNIZED = TEXT_RECOGNIZED.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArtyomGlobalEvents]
   }
 }

@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 /** Properties of a GetIntentRequest. */
 trait IGetIntentRequest extends js.Object {
   /** GetIntentRequest intentView */
-  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
+  var intentView: js.UndefOr[
+    IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.IntentView * / any */ String) | Null
+  ] = js.undefined
   /** GetIntentRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** GetIntentRequest name */
@@ -16,7 +18,11 @@ trait IGetIntentRequest extends js.Object {
 
 object IGetIntentRequest {
   @scala.inline
-  def apply(intentView: IntentView | String = null, languageCode: String = null, name: String = null): IGetIntentRequest = {
+  def apply(
+    intentView: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.IntentView * / any */ String) = null,
+    languageCode: String = null,
+    name: String = null
+  ): IGetIntentRequest = {
     val __obj = js.Dynamic.literal()
     if (intentView != null) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])

@@ -12,10 +12,8 @@ trait GeocodeMode extends js.Object
 
 object GeocodeMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def mapboxDotplaces: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.mapboxDotplaces = "mapbox.places".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.mapboxDotplaces]
   @scala.inline
-  def mapboxDotplaces: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.mapboxDotplaces = this.cast("mapbox.places")
-  @scala.inline
-  def `mapboxDotplaces-permanent`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`mapboxDotplaces-permanent` = this.cast("mapbox.places-permanent")
+  def `mapboxDotplaces-permanent`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`mapboxDotplaces-permanent` = "mapbox.places-permanent".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`mapboxDotplaces-permanent`]
 }
 

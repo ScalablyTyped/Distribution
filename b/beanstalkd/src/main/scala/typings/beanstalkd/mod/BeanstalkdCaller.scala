@@ -36,7 +36,6 @@ object BeanstalkdCaller {
     ]) with BeanstalkdCaller
   ): BeanstalkdCaller = {
     val __obj = js.Dynamic.literal(call = js.Any.fromFunction2(call))
-  
     __obj.asInstanceOf[BeanstalkdCaller]
   }
 }

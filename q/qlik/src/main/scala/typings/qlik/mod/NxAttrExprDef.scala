@@ -13,7 +13,6 @@ object NxAttrExprDef {
   @scala.inline
   def apply(qExpression: String, qLibraryId: String): NxAttrExprDef = {
     val __obj = js.Dynamic.literal(qExpression = qExpression.asInstanceOf[js.Any], qLibraryId = qLibraryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NxAttrExprDef]
   }
 }

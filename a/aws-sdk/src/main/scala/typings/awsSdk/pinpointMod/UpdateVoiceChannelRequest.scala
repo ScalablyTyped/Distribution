@@ -17,7 +17,6 @@ object UpdateVoiceChannelRequest {
   @scala.inline
   def apply(ApplicationId: string, VoiceChannelRequest: VoiceChannelRequest): UpdateVoiceChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], VoiceChannelRequest = VoiceChannelRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateVoiceChannelRequest]
   }
 }

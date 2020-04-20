@@ -12,10 +12,8 @@ trait StdinMessageType extends js.Object
 
 object StdinMessageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def input_reply: typings.jupyterlabServices.jupyterlabServicesStrings.input_reply = "input_reply".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.input_reply]
   @scala.inline
-  def input_reply: typings.jupyterlabServices.jupyterlabServicesStrings.input_reply = this.cast("input_reply")
-  @scala.inline
-  def input_request: typings.jupyterlabServices.jupyterlabServicesStrings.input_request = this.cast("input_request")
+  def input_request: typings.jupyterlabServices.jupyterlabServicesStrings.input_request = "input_request".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.input_request]
 }
 

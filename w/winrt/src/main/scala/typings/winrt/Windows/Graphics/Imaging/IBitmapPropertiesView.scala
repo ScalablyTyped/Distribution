@@ -14,7 +14,6 @@ object IBitmapPropertiesView {
   @scala.inline
   def apply(getPropertiesAsync: IIterable[String] => IAsyncOperation[BitmapPropertySet]): IBitmapPropertiesView = {
     val __obj = js.Dynamic.literal(getPropertiesAsync = js.Any.fromFunction1(getPropertiesAsync))
-  
     __obj.asInstanceOf[IBitmapPropertiesView]
   }
 }

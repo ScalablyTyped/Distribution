@@ -16,7 +16,6 @@ object DescribeProfilingGroupResponse {
   @scala.inline
   def apply(profilingGroup: ProfilingGroupDescription): DescribeProfilingGroupResponse = {
     val __obj = js.Dynamic.literal(profilingGroup = profilingGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeProfilingGroupResponse]
   }
 }

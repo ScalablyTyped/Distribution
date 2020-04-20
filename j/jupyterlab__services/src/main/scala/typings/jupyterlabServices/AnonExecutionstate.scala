@@ -13,7 +13,6 @@ object AnonExecutionstate {
   @scala.inline
   def apply(execution_state: Status): AnonExecutionstate = {
     val __obj = js.Dynamic.literal(execution_state = execution_state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExecutionstate]
   }
 }

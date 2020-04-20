@@ -34,7 +34,6 @@ object LaunchOptions {
   @scala.inline
   def apply(path: String, query: js.Object, referrerInfo: AnonExtraData, scene: Double, shareTicket: String): LaunchOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], referrerInfo = referrerInfo.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LaunchOptions]
   }
 }

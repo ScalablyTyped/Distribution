@@ -21,7 +21,6 @@ object BillingAccount {
     getSecondaryBillingId: () => String
   ): BillingAccount = {
     val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getPrimaryBillingId = js.Any.fromFunction0(getPrimaryBillingId), getSecondaryBillingId = js.Any.fromFunction0(getSecondaryBillingId))
-  
     __obj.asInstanceOf[BillingAccount]
   }
 }

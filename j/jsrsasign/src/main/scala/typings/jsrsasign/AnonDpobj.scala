@@ -13,7 +13,6 @@ object AnonDpobj {
   @scala.inline
   def apply(dpobj: ASN1Object): AnonDpobj = {
     val __obj = js.Dynamic.literal(dpobj = dpobj.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDpobj]
   }
 }

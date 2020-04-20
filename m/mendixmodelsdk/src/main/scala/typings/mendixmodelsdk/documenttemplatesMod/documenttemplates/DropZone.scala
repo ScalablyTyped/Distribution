@@ -23,14 +23,14 @@ abstract class DropZone protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FDropZone: IModel = js.native
-  def containerAsDataView(): DataView = js.native
-  def containerAsDocumentTemplate(): DocumentTemplate = js.native
-  def containerAsTableRow(): TableRow = js.native
-  def containerAsTemplateGrid(): TemplateGrid = js.native
+  def containerAsDataView: DataView = js.native
+  def containerAsDocumentTemplate: DocumentTemplate = js.native
+  def containerAsTableRow: TableRow = js.native
+  def containerAsTemplateGrid: TemplateGrid = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
 }
 
 /* static members */

@@ -15,7 +15,6 @@ object RequestJSON {
   @scala.inline
   def apply(header: IncomingHttpHeaders, method: String, url: String): RequestJSON = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestJSON]
   }
 }

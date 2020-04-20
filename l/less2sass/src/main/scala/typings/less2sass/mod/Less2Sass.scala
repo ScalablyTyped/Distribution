@@ -12,7 +12,6 @@ object Less2Sass {
   @scala.inline
   def apply(convert: String => String): Less2Sass = {
     val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert))
-  
     __obj.asInstanceOf[Less2Sass]
   }
 }

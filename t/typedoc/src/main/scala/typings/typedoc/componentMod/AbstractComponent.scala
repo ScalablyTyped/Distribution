@@ -22,12 +22,12 @@ abstract class AbstractComponent[O /* <: ComponentHost */] protected ()
   override val application: Application = js.native
   var componentName: String = js.native
   @JSName("application")
-  def application_MAbstractComponent(): Application = js.native
+  def application_MAbstractComponent: Application = js.native
   /* protected */ def bubble(name: String, args: js.Any*): this.type = js.native
   /* protected */ def bubble(name: EventMap, args: js.Any*): this.type = js.native
   /* protected */ def bubble(name: Event, args: js.Any*): this.type = js.native
   def getOptionDeclarations(): js.Array[DeclarationOption] = js.native
   /* protected */ def initialize(): Unit = js.native
-  def owner(): O = js.native
+  def owner: O = js.native
 }
 

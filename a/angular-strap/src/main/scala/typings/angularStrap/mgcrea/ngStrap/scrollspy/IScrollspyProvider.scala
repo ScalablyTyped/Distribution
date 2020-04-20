@@ -12,7 +12,6 @@ object IScrollspyProvider {
   @scala.inline
   def apply(defaults: IScrollspyOptions): IScrollspyProvider = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IScrollspyProvider]
   }
 }

@@ -29,7 +29,7 @@ class SnippetCallWidget protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FSnippetCallWidget: IModel = js.native
-  def snippetCall(): SnippetCall = js.native
+  def snippetCall: SnippetCall = js.native
   def snippetCall(newValue: SnippetCall): js.Any = js.native
 }
 

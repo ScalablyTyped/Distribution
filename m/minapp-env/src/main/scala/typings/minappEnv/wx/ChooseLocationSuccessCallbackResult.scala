@@ -19,7 +19,6 @@ object ChooseLocationSuccessCallbackResult {
   @scala.inline
   def apply(address: String, latitude: String, longitude: String, name: String): ChooseLocationSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChooseLocationSuccessCallbackResult]
   }
 }

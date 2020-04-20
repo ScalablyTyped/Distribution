@@ -19,7 +19,6 @@ object DexFile {
   @scala.inline
   def apply(getClassNames: () => js.Array[String], load: () => Unit): DexFile = {
     val __obj = js.Dynamic.literal(getClassNames = js.Any.fromFunction0(getClassNames), load = js.Any.fromFunction0(load))
-  
     __obj.asInstanceOf[DexFile]
   }
 }

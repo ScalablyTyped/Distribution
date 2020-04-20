@@ -30,39 +30,39 @@ class ListView protected () extends ListenTargetWidget {
   ) = this()
   @JSName("model")
   var model_FListView: IModel = js.native
-  def clickAction(): ClientAction = js.native
+  def clickAction: ClientAction = js.native
   def clickAction(newValue: ClientAction): js.Any = js.native
-  def editable(): Boolean = js.native
+  def editable: Boolean = js.native
   def editable(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def numberOfColumns(): Double = js.native
+  def numberOfColumns: Double = js.native
   def numberOfColumns(newValue: Double): js.Any = js.native
-  def pageSize(): Double = js.native
+  def pageSize: Double = js.native
   def pageSize(newValue: Double): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def pullDownAction(): ClientAction = js.native
+  def pullDownAction: ClientAction = js.native
   def pullDownAction(newValue: ClientAction): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def scrollDirection(): ScrollDirection = js.native
+  def scrollDirection: ScrollDirection = js.native
   def scrollDirection(newValue: ScrollDirection): js.Any = js.native
-  def templates(): IList[ListViewTemplate] = js.native
+  def templates: IList[ListViewTemplate] = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def widgets(): IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

@@ -12,7 +12,6 @@ object AnonQLineage {
   @scala.inline
   def apply(qLineage: js.Array[AnonQDiscriminator]): AnonQLineage = {
     val __obj = js.Dynamic.literal(qLineage = qLineage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQLineage]
   }
 }

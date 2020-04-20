@@ -17,7 +17,6 @@ object QuantizeResult {
   @scala.inline
   def apply(abuf: ArrayBuffer, inds: Uint8Array, plte: js.Array[_]): QuantizeResult = {
     val __obj = js.Dynamic.literal(abuf = abuf.asInstanceOf[js.Any], inds = inds.asInstanceOf[js.Any], plte = plte.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QuantizeResult]
   }
 }

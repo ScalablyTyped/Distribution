@@ -16,7 +16,6 @@ object TaskReference {
   @scala.inline
   def apply(id: String, inputs: StringDictionary[String], name: String, version: String): TaskReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskReference]
   }
 }

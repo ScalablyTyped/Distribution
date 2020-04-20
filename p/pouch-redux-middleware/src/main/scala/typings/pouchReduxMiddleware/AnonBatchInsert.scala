@@ -22,7 +22,6 @@ object AnonBatchInsert {
     update: Document[T] => Action[_]
   ): AnonBatchInsert[T] = {
     val __obj = js.Dynamic.literal(batchInsert = js.Any.fromFunction1(batchInsert), insert = js.Any.fromFunction1(insert), remove = js.Any.fromFunction1(remove), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[AnonBatchInsert[T]]
   }
 }

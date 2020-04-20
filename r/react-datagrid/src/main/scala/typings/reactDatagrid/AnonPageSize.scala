@@ -13,7 +13,6 @@ object AnonPageSize {
   @scala.inline
   def apply(pageSize: Double, skip: Double): AnonPageSize = {
     val __obj = js.Dynamic.literal(pageSize = pageSize.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPageSize]
   }
 }

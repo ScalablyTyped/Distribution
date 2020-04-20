@@ -42,7 +42,6 @@ object json {
   @scala.inline
   def apply(parse: (js.Any, js.Any) => Unit, stringify: (js.Any, js.Any, js.Any) => Unit): json = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction2(parse), stringify = js.Any.fromFunction3(stringify))
-  
     __obj.asInstanceOf[json]
   }
 }

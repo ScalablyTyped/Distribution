@@ -32,7 +32,6 @@ object DecorateHandlerArgs {
     registerHandler: js.Any
   ): DecorateHandlerArgs[Props, ItemIdType] = {
     val __obj = js.Dynamic.literal(DecoratedComponent = DecoratedComponent.asInstanceOf[js.Any], collect = collect.asInstanceOf[js.Any], containerDisplayName = containerDisplayName.asInstanceOf[js.Any], createConnector = createConnector.asInstanceOf[js.Any], createHandler = js.Any.fromFunction2(createHandler), createMonitor = js.Any.fromFunction1(createMonitor), getType = js.Any.fromFunction1(getType), options = options.asInstanceOf[js.Any], registerHandler = registerHandler.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecorateHandlerArgs[Props, ItemIdType]]
   }
 }

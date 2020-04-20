@@ -13,7 +13,6 @@ object AnonTextures {
   @scala.inline
   def apply(geometries: Double, textures: Double): AnonTextures = {
     val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any], textures = textures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTextures]
   }
 }

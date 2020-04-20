@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 abstract class NgModuleFactory[T] () extends js.Object {
   def create(): NgModuleRef[T] = js.native
   def create(parentInjector: Injector): NgModuleRef[T] = js.native
-  def moduleType(): Type[T] = js.native
+  def moduleType: Type[T] = js.native
 }
 

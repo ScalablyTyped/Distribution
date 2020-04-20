@@ -13,12 +13,10 @@ trait AuxiliaryViewPosition extends js.Object
 
 object AuxiliaryViewPosition {
   @scala.inline
-  def bottom: typings.reactNativeFbsdk.reactNativeFbsdkStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactNativeFbsdk.reactNativeFbsdkStrings.bottom = "bottom".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `inline`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`inline` = "inline".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.`inline`]
   @scala.inline
-  def `inline`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`inline` = this.cast("inline")
-  @scala.inline
-  def top: typings.reactNativeFbsdk.reactNativeFbsdkStrings.top = this.cast("top")
+  def top: typings.reactNativeFbsdk.reactNativeFbsdkStrings.top = "top".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.top]
 }
 

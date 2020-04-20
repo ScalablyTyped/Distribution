@@ -837,7 +837,7 @@ object Collection extends js.Object {
   @js.native
   trait Indexed[T]
     extends typings.immutable.Immutable.Collection[Double, T] {
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[T]] = js.native
     /**
       * Returns a new Collection with only the values for which the `predicate`
@@ -1023,7 +1023,7 @@ object Collection extends js.Object {
   @js.native
   trait Keyed[K, V]
     extends typings.immutable.Immutable.Collection[K, V] {
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[js.Tuple2[K, V]]] = js.native
     /**
       * Returns a new Collection with other collections concatenated to this one.
@@ -1110,7 +1110,7 @@ object Collection extends js.Object {
   @js.native
   trait Set[T]
     extends typings.immutable.Immutable.Collection[T, T] {
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[T]] = js.native
     /**
       * Returns a new Collection with only the values for which the `predicate`

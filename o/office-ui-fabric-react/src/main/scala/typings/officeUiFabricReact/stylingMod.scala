@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1024`
@@ -138,7 +139,7 @@ object stylingMod extends js.Object {
   val normalize: IRawStyle = js.native
   def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? string}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.buildClassMap with js.Any = js.native
+    */ typings.officeUiFabricReact.officeUiFabricReactStrings.buildClassMap with TopLevel[js.Any] = js.native
   def concatStyleSets[TStyleSet /* <: IStyleSet[TStyleSet] */](): IConcatenatedStyleSet[TStyleSet] = js.native
   def concatStyleSets[TStyleSet /* <: IStyleSet[TStyleSet] */](styleSet: TStyleSet): IConcatenatedStyleSet[TStyleSet] = js.native
   def concatStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native

@@ -16,7 +16,6 @@ object DisableKeyRequest {
   @scala.inline
   def apply(KeyId: KeyIdType): DisableKeyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableKeyRequest]
   }
 }

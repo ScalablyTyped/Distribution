@@ -13,7 +13,6 @@ object ICoreServicesHost {
   @scala.inline
   def apply(logger: ILogger): ICoreServicesHost = {
     val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICoreServicesHost]
   }
 }

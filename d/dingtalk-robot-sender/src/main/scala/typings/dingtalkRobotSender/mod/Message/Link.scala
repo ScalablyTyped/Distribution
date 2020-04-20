@@ -16,7 +16,6 @@ object Link {
   @scala.inline
   def apply(link: AnonMessageUrl, msgtype: link): Link = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Link]
   }
 }

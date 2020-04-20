@@ -18,13 +18,11 @@ object PatternSegment {
   @scala.inline
   def StaticPatternSegment(dynamic: `false`, pattern: Pattern): PatternSegment = {
     val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatternSegment]
   }
   @scala.inline
   def DynamicPatternSegment(dynamic: `true`, pattern: Pattern, patternRe: PatternRe): PatternSegment = {
     val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], patternRe = patternRe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatternSegment]
   }
 }

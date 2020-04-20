@@ -16,7 +16,6 @@ object ExportJournalToS3Response {
   @scala.inline
   def apply(ExportId: UniqueId): ExportJournalToS3Response = {
     val __obj = js.Dynamic.literal(ExportId = ExportId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportJournalToS3Response]
   }
 }

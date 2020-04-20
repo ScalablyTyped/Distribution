@@ -18,14 +18,12 @@ trait styleTextOverflow extends js.Object
 
 object styleTextOverflow {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleTextOverflowClip: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleTextOverflowClip: `0` = this.cast(0)
+  def styleTextOverflowEllipsis: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleTextOverflowEllipsis: `1` = this.cast(1)
+  def styleTextOverflowNotSet: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleTextOverflowNotSet: `2` = this.cast(2)
-  @scala.inline
-  def styleTextOverflow_Max: `2147483647` = this.cast(2147483647)
+  def styleTextOverflow_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

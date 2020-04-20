@@ -24,7 +24,6 @@ object Stream {
   @scala.inline
   def apply[T](subscribe: (String, js.Function1[/* item */ T, js.Promise[Unit]]) => Unit): Stream[T] = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction2(subscribe))
-  
     __obj.asInstanceOf[Stream[T]]
   }
 }

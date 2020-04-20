@@ -13,7 +13,6 @@ object TypeofAutoScaling {
   @scala.inline
   def apply(Types: TypeofAutoScaling): TypeofAutoScaling = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofAutoScaling]
   }
 }

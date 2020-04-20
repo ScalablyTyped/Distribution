@@ -15,7 +15,6 @@ object PersonalizedstreamResource {
   @scala.inline
   def apply(get: AnonMaxAllowedMaturityRating => Request_[Discoveryclusters]): PersonalizedstreamResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[PersonalizedstreamResource]
   }
 }

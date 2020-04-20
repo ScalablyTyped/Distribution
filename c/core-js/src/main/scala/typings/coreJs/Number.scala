@@ -14,7 +14,7 @@ trait Number extends js.Object {
   /**
     * Non-standard.
     */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Double]] = js.native
 }
 

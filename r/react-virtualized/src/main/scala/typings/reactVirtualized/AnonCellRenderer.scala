@@ -31,7 +31,6 @@ object AnonCellRenderer {
     headerRenderer: /* props */ TableHeaderProps => ReactNode
   ): AnonCellRenderer = {
     val __obj = js.Dynamic.literal(cellDataGetter = js.Any.fromFunction1(cellDataGetter), cellRenderer = js.Any.fromFunction1(cellRenderer), flexGrow = flexGrow.asInstanceOf[js.Any], flexShrink = flexShrink.asInstanceOf[js.Any], headerRenderer = js.Any.fromFunction1(headerRenderer))
-  
     __obj.asInstanceOf[AnonCellRenderer]
   }
 }

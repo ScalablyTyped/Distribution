@@ -21,7 +21,6 @@ object StoreInfosResource {
   @scala.inline
   def apply(country: CountryResource, list: AnonCountries => Request_[ListStoreInfosResponse]): StoreInfosResource = {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[StoreInfosResource]
   }
 }

@@ -17,20 +17,18 @@ trait IconRotation extends js.Object
 
 object IconRotation {
   @scala.inline
-  def `135`: typings.reactFa.reactFaStrings.`135` = this.cast("135")
+  def `135`: typings.reactFa.reactFaStrings.`135` = "135".asInstanceOf[typings.reactFa.reactFaStrings.`135`]
   @scala.inline
-  def `180`: typings.reactFa.reactFaStrings.`180` = this.cast("180")
+  def `180`: typings.reactFa.reactFaStrings.`180` = "180".asInstanceOf[typings.reactFa.reactFaStrings.`180`]
   @scala.inline
-  def `225`: typings.reactFa.reactFaStrings.`225` = this.cast("225")
+  def `225`: typings.reactFa.reactFaStrings.`225` = "225".asInstanceOf[typings.reactFa.reactFaStrings.`225`]
   @scala.inline
-  def `270`: typings.reactFa.reactFaStrings.`270` = this.cast("270")
+  def `270`: typings.reactFa.reactFaStrings.`270` = "270".asInstanceOf[typings.reactFa.reactFaStrings.`270`]
   @scala.inline
-  def `315`: typings.reactFa.reactFaStrings.`315` = this.cast("315")
+  def `315`: typings.reactFa.reactFaStrings.`315` = "315".asInstanceOf[typings.reactFa.reactFaStrings.`315`]
   @scala.inline
-  def `45`: typings.reactFa.reactFaStrings.`45` = this.cast("45")
+  def `45`: typings.reactFa.reactFaStrings.`45` = "45".asInstanceOf[typings.reactFa.reactFaStrings.`45`]
   @scala.inline
-  def `90`: typings.reactFa.reactFaStrings.`90` = this.cast("90")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `90`: typings.reactFa.reactFaStrings.`90` = "90".asInstanceOf[typings.reactFa.reactFaStrings.`90`]
 }
 

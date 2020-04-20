@@ -16,7 +16,6 @@ object SockettyServer {
   @scala.inline
   def apply(connection: js.Function1[/* socket */ SockettySocket, Unit] => Unit): SockettyServer = {
     val __obj = js.Dynamic.literal(connection = js.Any.fromFunction1(connection))
-  
     __obj.asInstanceOf[SockettyServer]
   }
 }

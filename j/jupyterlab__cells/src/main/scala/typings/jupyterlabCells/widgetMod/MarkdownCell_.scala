@@ -40,7 +40,7 @@ class MarkdownCell_ protected () extends AttachmentsCell {
   /**
     * Whether the cell is rendered.
     */
-  def rendered(): Boolean = js.native
+  def rendered: Boolean = js.native
   def rendered(value: Boolean): js.Any = js.native
   /**
     * Show the text editor instead of rendered input.

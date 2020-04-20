@@ -22,7 +22,6 @@ object SVGFilterPrimitiveStandardAttributes {
     y: SVGAnimatedLength
   ): SVGFilterPrimitiveStandardAttributes = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SVGFilterPrimitiveStandardAttributes]
   }
 }

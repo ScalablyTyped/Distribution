@@ -27,7 +27,6 @@ object RequiredGetIntervalPropsk {
     style: CSSProperties
   ): RequiredGetIntervalPropsk = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredGetIntervalPropsk]
   }
 }

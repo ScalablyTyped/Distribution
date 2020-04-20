@@ -24,7 +24,6 @@ object JQueryStatic {
     postAsObservable: (String, js.Any, String) => Observable[RxJQueryAjaxResult[js.Any]]
   ): JQueryStatic = {
     val __obj = js.Dynamic.literal(ajaxAsObservable = js.Any.fromFunction1(ajaxAsObservable), getAsObservable = js.Any.fromFunction3(getAsObservable), getJSONAsObservable = js.Any.fromFunction2(getJSONAsObservable), getScriptAsObservable = js.Any.fromFunction2(getScriptAsObservable), postAsObservable = js.Any.fromFunction3(postAsObservable))
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

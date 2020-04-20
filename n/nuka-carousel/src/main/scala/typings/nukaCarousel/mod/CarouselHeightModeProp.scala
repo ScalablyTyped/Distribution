@@ -13,12 +13,10 @@ trait CarouselHeightModeProp extends js.Object
 
 object CarouselHeightModeProp {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def current: typings.nukaCarousel.nukaCarouselStrings.current = "current".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.current]
   @scala.inline
-  def current: typings.nukaCarousel.nukaCarouselStrings.current = this.cast("current")
+  def first: typings.nukaCarousel.nukaCarouselStrings.first = "first".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.first]
   @scala.inline
-  def first: typings.nukaCarousel.nukaCarouselStrings.first = this.cast("first")
-  @scala.inline
-  def max: typings.nukaCarousel.nukaCarouselStrings.max = this.cast("max")
+  def max: typings.nukaCarousel.nukaCarouselStrings.max = "max".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.max]
 }
 

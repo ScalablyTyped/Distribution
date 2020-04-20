@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactBootstrapTableNextProps {
   @scala.inline
-  def ReactBootstrapTableNextProps: BootstrapTableProps.type = typings.reactBootstrapTableNext.mod.BootstrapTableProps
+  def ReactBootstrapTableNextProps: BootstrapTableProps.type = BootstrapTableProps
   type ReactBootstrapTableNextProps[T /* <: js.Object */] = BootstrapTableProps[T]
 }
 

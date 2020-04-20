@@ -18,7 +18,6 @@ object AnonAllTests {
   @scala.inline
   def apply(allTests: js.Array[Test], globalConfig: GlobalConfig, moduleName: globalSetup | globalTeardown): AnonAllTests = {
     val __obj = js.Dynamic.literal(allTests = allTests.asInstanceOf[js.Any], globalConfig = globalConfig.asInstanceOf[js.Any], moduleName = moduleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllTests]
   }
 }

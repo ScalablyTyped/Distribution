@@ -27,6 +27,10 @@ trait UpdateDetectorVersionRequest extends js.Object {
     */
   var modelVersions: js.UndefOr[ListOfModelVersions] = js.native
   /**
+    * The rule execution mode to add to the detector. If you specify FIRST_MATCHED, Amazon Fraud Detector evaluates rules sequentially, first to last, stopping at the first matched rule. Amazon Fraud dectector then provides the outcomes for that single rule. If you specifiy ALL_MATCHED, Amazon Fraud Detector evaluates all rules and returns the outcomes for all matched rules. You can define and edit the rule mode at the detector version level, when it is in draft status. The default behavior is FIRST_MATCHED.
+    */
+  var ruleExecutionMode: js.UndefOr[RuleExecutionMode] = js.native
+  /**
     * The rules to include in the detector version.
     */
   var rules: RuleList = js.native
@@ -40,11 +44,13 @@ object UpdateDetectorVersionRequest {
     externalModelEndpoints: ListOfStrings,
     rules: RuleList,
     description: description = null,
-    modelVersions: ListOfModelVersions = null
+    modelVersions: ListOfModelVersions = null,
+    ruleExecutionMode: RuleExecutionMode = null
   ): UpdateDetectorVersionRequest = {
     val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any], detectorVersionId = detectorVersionId.asInstanceOf[js.Any], externalModelEndpoints = externalModelEndpoints.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (modelVersions != null) __obj.updateDynamic("modelVersions")(modelVersions.asInstanceOf[js.Any])
+    if (ruleExecutionMode != null) __obj.updateDynamic("ruleExecutionMode")(ruleExecutionMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDetectorVersionRequest]
   }
 }

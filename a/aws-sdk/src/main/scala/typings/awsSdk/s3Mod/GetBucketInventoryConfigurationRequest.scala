@@ -20,7 +20,6 @@ object GetBucketInventoryConfigurationRequest {
   @scala.inline
   def apply(Bucket: BucketName, Id: InventoryId): GetBucketInventoryConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketInventoryConfigurationRequest]
   }
 }

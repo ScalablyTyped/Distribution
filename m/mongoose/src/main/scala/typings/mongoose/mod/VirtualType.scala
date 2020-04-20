@@ -28,7 +28,6 @@ object VirtualType {
     set: js.Function => VirtualType
   ): VirtualType = {
     val __obj = js.Dynamic.literal(applyGetters = js.Any.fromFunction2(applyGetters), applySetters = js.Any.fromFunction2(applySetters), get = js.Any.fromFunction1(get), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[VirtualType]
   }
 }

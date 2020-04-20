@@ -13,7 +13,6 @@ object AnonNewShortcut {
   @scala.inline
   def apply(NewShortcut: OutlookBarShortcut): AnonNewShortcut = {
     val __obj = js.Dynamic.literal(NewShortcut = NewShortcut.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNewShortcut]
   }
 }

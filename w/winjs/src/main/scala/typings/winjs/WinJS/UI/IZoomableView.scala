@@ -71,7 +71,6 @@ object IZoomableView {
     setCurrentItem: (Double, Double) => Unit
   ): IZoomableView[T] = {
     val __obj = js.Dynamic.literal(beginZoom = js.Any.fromFunction0(beginZoom), configureForZoom = js.Any.fromFunction4(configureForZoom), endZoom = js.Any.fromFunction1(endZoom), getCurrentItem = js.Any.fromFunction0(getCurrentItem), getPanAxis = js.Any.fromFunction0(getPanAxis), handlePointer = js.Any.fromFunction1(handlePointer), positionItem = js.Any.fromFunction2(positionItem), setCurrentItem = js.Any.fromFunction2(setCurrentItem))
-  
     __obj.asInstanceOf[IZoomableView[T]]
   }
 }

@@ -16,7 +16,6 @@ object VirtualNodeSpecServiceDiscoveryDns {
   @scala.inline
   def apply(hostname: String): VirtualNodeSpecServiceDiscoveryDns = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualNodeSpecServiceDiscoveryDns]
   }
 }

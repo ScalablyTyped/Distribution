@@ -24,7 +24,6 @@ object OperationLoader {
     load: js.Any => js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]
   ): OperationLoader = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), load = js.Any.fromFunction1(load))
-  
     __obj.asInstanceOf[OperationLoader]
   }
 }

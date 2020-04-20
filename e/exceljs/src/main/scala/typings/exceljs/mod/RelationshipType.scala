@@ -26,22 +26,20 @@ trait RelationshipType extends js.Object
 
 object RelationshipType {
   @scala.inline
-  def CalcChain: `3` = this.cast(3)
+  def CalcChain: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Hyperlink: `7` = this.cast(7)
+  def Hyperlink: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def OfficeDocument: `1` = this.cast(1)
+  def OfficeDocument: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SharedStrings: `4` = this.cast(4)
+  def SharedStrings: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Styles: `5` = this.cast(5)
+  def Styles: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def Theme: `6` = this.cast(6)
+  def Theme: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def Worksheet: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Worksheet: `2` = 2.asInstanceOf[`2`]
 }
 

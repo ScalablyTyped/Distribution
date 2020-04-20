@@ -20,16 +20,14 @@ trait EventStatusEnum extends js.Object
 
 object EventStatusEnum {
   @scala.inline
-  def adStatusCancel: `4` = this.cast(4)
+  def adStatusCancel: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adStatusCantDeny: `3` = this.cast(3)
+  def adStatusCantDeny: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def adStatusErrorsOccurred: `2` = this.cast(2)
+  def adStatusErrorsOccurred: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adStatusOK: `1` = this.cast(1)
+  def adStatusOK: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adStatusUnwantedEvent: `5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adStatusUnwantedEvent: `5` = 5.asInstanceOf[`5`]
 }
 

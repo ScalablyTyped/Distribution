@@ -24,7 +24,6 @@ object TestMessageLogDetails {
   @scala.inline
   def apply(dateCreated: Date, entryId: Double, message: String): TestMessageLogDetails = {
     val __obj = js.Dynamic.literal(dateCreated = dateCreated.asInstanceOf[js.Any], entryId = entryId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestMessageLogDetails]
   }
 }

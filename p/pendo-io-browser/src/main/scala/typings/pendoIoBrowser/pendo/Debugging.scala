@@ -24,7 +24,6 @@ object Debugging {
     getLauncherGuides: () => js.Array[Guide]
   ): Debugging = {
     val __obj = js.Dynamic.literal(getAllGuides = js.Any.fromFunction0(getAllGuides), getAutoGuides = js.Any.fromFunction0(getAutoGuides), getBadgeGuides = js.Any.fromFunction0(getBadgeGuides), getEventCache = js.Any.fromFunction0(getEventCache), getLauncherGuides = js.Any.fromFunction0(getLauncherGuides))
-  
     __obj.asInstanceOf[Debugging]
   }
 }

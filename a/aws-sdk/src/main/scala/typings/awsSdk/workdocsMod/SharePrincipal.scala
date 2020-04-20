@@ -24,7 +24,6 @@ object SharePrincipal {
   @scala.inline
   def apply(Id: IdType, Role: RoleType, Type: PrincipalType): SharePrincipal = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SharePrincipal]
   }
 }

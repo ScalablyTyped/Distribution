@@ -23,7 +23,6 @@ object TransactionStatusHistory {
     user: String
   ): TransactionStatusHistory = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transactionsource = transactionsource.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransactionStatusHistory]
   }
 }

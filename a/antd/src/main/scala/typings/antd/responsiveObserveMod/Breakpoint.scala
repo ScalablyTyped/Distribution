@@ -16,18 +16,16 @@ trait Breakpoint extends js.Object
 
 object Breakpoint {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lg: typings.antd.antdStrings.lg = "lg".asInstanceOf[typings.antd.antdStrings.lg]
   @scala.inline
-  def lg: typings.antd.antdStrings.lg = this.cast("lg")
+  def md: typings.antd.antdStrings.md = "md".asInstanceOf[typings.antd.antdStrings.md]
   @scala.inline
-  def md: typings.antd.antdStrings.md = this.cast("md")
+  def sm: typings.antd.antdStrings.sm = "sm".asInstanceOf[typings.antd.antdStrings.sm]
   @scala.inline
-  def sm: typings.antd.antdStrings.sm = this.cast("sm")
+  def xl: typings.antd.antdStrings.xl = "xl".asInstanceOf[typings.antd.antdStrings.xl]
   @scala.inline
-  def xl: typings.antd.antdStrings.xl = this.cast("xl")
+  def xs: typings.antd.antdStrings.xs = "xs".asInstanceOf[typings.antd.antdStrings.xs]
   @scala.inline
-  def xs: typings.antd.antdStrings.xs = this.cast("xs")
-  @scala.inline
-  def xxl: typings.antd.antdStrings.xxl = this.cast("xxl")
+  def xxl: typings.antd.antdStrings.xxl = "xxl".asInstanceOf[typings.antd.antdStrings.xxl]
 }
 

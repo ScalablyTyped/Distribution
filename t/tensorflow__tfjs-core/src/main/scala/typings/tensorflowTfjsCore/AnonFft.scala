@@ -22,7 +22,6 @@ object AnonFft {
     rfft: Tensor[Rank] => Tensor[Rank]
   ): AnonFft = {
     val __obj = js.Dynamic.literal(fft = js.Any.fromFunction1(fft), ifft = js.Any.fromFunction1(ifft), irfft = js.Any.fromFunction1(irfft), rfft = js.Any.fromFunction1(rfft))
-  
     __obj.asInstanceOf[AnonFft]
   }
 }

@@ -12,7 +12,6 @@ object AnonDelay {
   @scala.inline
   def apply(delay: Double): AnonDelay = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDelay]
   }
 }

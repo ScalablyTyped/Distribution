@@ -12,7 +12,6 @@ object AnonUnwatch {
   @scala.inline
   def apply(unwatch: () => Unit): AnonUnwatch = {
     val __obj = js.Dynamic.literal(unwatch = js.Any.fromFunction0(unwatch))
-  
     __obj.asInstanceOf[AnonUnwatch]
   }
 }

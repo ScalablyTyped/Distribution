@@ -14,7 +14,6 @@ object Action {
   @scala.inline
   def apply(action: advance | replace): Action = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Action]
   }
 }

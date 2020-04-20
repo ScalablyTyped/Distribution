@@ -12,7 +12,6 @@ object ITimepickerProvider {
   @scala.inline
   def apply(defaults: ITimepickerOptions): ITimepickerProvider = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITimepickerProvider]
   }
 }

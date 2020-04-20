@@ -13,7 +13,6 @@ object ModalState {
   @scala.inline
   def apply(isVisible: Boolean, mounted: Boolean): ModalState = {
     val __obj = js.Dynamic.literal(isVisible = isVisible.asInstanceOf[js.Any], mounted = mounted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModalState]
   }
 }

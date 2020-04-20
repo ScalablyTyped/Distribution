@@ -30,7 +30,7 @@ class LongAttributeType protected () extends IntegerAttributeTypeBase {
   @JSName("model")
   var model_FLongAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MLongAttributeType(): Attribute = js.native
+  def containerAsAttribute_MLongAttributeType: Attribute = js.native
 }
 
 /* static members */

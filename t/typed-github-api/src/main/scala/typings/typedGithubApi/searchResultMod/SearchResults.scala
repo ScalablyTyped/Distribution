@@ -14,7 +14,6 @@ object SearchResults {
   @scala.inline
   def apply[T](incomplete_results: Boolean, items: js.Array[T with SearchResult], total_count: Double): SearchResults[T] = {
     val __obj = js.Dynamic.literal(incomplete_results = incomplete_results.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchResults[T]]
   }
 }

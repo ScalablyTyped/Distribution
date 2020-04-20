@@ -23,7 +23,6 @@ object BootstrapChartExportEventArgs {
     sender: Control
   ): BootstrapChartExportEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapChartExportEventArgs]
   }
 }

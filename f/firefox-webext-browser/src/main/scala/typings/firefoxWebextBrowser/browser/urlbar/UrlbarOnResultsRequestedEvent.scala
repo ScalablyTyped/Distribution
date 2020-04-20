@@ -18,7 +18,6 @@ object UrlbarOnResultsRequestedEvent {
     removeListener: TCallback => Unit
   ): UrlbarOnResultsRequestedEvent[TCallback] = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), hasListener = js.Any.fromFunction1(hasListener), removeListener = js.Any.fromFunction1(removeListener))
-  
     __obj.asInstanceOf[UrlbarOnResultsRequestedEvent[TCallback]]
   }
 }

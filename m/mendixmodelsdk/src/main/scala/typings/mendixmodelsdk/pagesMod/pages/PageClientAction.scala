@@ -26,12 +26,12 @@ class PageClientAction protected () extends ClientAction {
   ) = this()
   @JSName("model")
   var model_FPageClientAction: IModel = js.native
-  def pageSettings(): PageSettings = js.native
+  def pageSettings: PageSettings = js.native
   def pageSettings(newValue: PageSettings): js.Any = js.native
   /**
     * In version 7.17.0: introduced
     */
-  def pagesForSpecializations(): IList[PageForSpecialization] = js.native
+  def pagesForSpecializations: IList[PageForSpecialization] = js.native
 }
 
 /* static members */

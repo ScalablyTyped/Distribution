@@ -1,8 +1,22 @@
 package typings.titanium.Titanium.UI.iPad
 
-import typings.titanium.PopoverParams
-import typings.titanium.Titanium.Proxy
+import typings.titanium.ShowPopoverParams
 import typings.titanium.Titanium.UI.View
+import typings.titanium.titaniumStrings.click
+import typings.titanium.titaniumStrings.dblclick
+import typings.titanium.titaniumStrings.doubletap
+import typings.titanium.titaniumStrings.hide
+import typings.titanium.titaniumStrings.keypressed
+import typings.titanium.titaniumStrings.longpress
+import typings.titanium.titaniumStrings.pinch
+import typings.titanium.titaniumStrings.postlayout
+import typings.titanium.titaniumStrings.singletap
+import typings.titanium.titaniumStrings.swipe
+import typings.titanium.titaniumStrings.touchcancel
+import typings.titanium.titaniumStrings.touchend
+import typings.titanium.titaniumStrings.touchmove
+import typings.titanium.titaniumStrings.touchstart
+import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,177 +24,90 @@ import scala.scalajs.js.annotation._
 /**
 			 * A Popover is used to manage the presentation of content in a popover.
 			 */
+@JSGlobal("Titanium.UI.iPad.Popover")
 @js.native
-trait Popover extends Proxy {
+class Popover () extends View {
   /**
   				 * Indicates the arrow direction of the popover.
   				 */
   var arrowDirection: Double = js.native
   /**
-  				 * Sets the background color of the popover.
-  				 */
-  var backgroundColor: String = js.native
-  /**
   				 * View to use for the popover content. Must be set before calling the `show()` method.
   				 */
   var contentView: View = js.native
   /**
-  				 * Height of the popover.
-  				 */
-  var height: Double | String = js.native
-  /**
-  				 * Adds a horizontal parallax effect to the view
-  				 */
-  var horizontalMotionEffect: js.Any = js.native
-  /**
-  				 * Left button in the navigation area of the popover.
-  				 */
-  var leftNavButton: js.Any = js.native
-  /**
   				 * Passthrough views to use when the popover is shown.
   				 */
   var passthroughViews: js.Array[View] = js.native
-  /**
-  				 * Right button in the navigation area of the popover.
-  				 */
-  var rightNavButton: js.Any = js.native
-  /**
-  				 * Title of the navigation area of the popover.
-  				 */
-  var title: String = js.native
-  /**
-  				 * Adds a vertical parallax effect to the view
-  				 */
-  var verticalMotionEffect: js.Any = js.native
-  /**
-  				 * Width of the popover.
-  				 */
-  var width: Double | String = js.native
-  /**
-  				 * Finishes a batch update of the View's layout properties and schedules a layout pass of the
-  				 * view tree.
-  				 */
-  def finishLayout(): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_hide(name: hide, callback: js.ThisFunction1[/* this */ this.type, /* event */ PopoverHideEvent, Unit]): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_click(name: click, event: PopoverClickEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_dblclick(name: dblclick, event: PopoverDblclickEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_doubletap(name: doubletap, event: PopoverDoubletapEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_hide(name: hide): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_hide(name: hide, event: PopoverHideEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_keypressed(name: keypressed, event: PopoverKeypressedEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_longpress(name: longpress, event: PopoverLongpressEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_pinch(name: pinch, event: PopoverPinchEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_postlayout(name: postlayout, event: PopoverPostlayoutEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_singletap(name: singletap, event: PopoverSingletapEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_swipe(name: swipe, event: PopoverSwipeEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchcancel(name: touchcancel, event: PopoverTouchcancelEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchend(name: touchend, event: PopoverTouchendEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchmove(name: touchmove, event: PopoverTouchmoveEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchstart(name: touchstart, event: PopoverTouchstartEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_twofingertap(name: twofingertap, event: PopoverTwofingertapEvent): Unit = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iPad.Popover.arrowDirection> property.
+  				 * @deprecated Access <Titanium.UI.iPad.Popover.arrowDirection> instead.
   				 */
   def getArrowDirection(): Double = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iPad.Popover.backgroundColor> property.
-  				 */
-  def getBackgroundColor(): String = js.native
-  /**
   				 * Gets the value of the <Titanium.UI.iPad.Popover.contentView> property.
+  				 * @deprecated Access <Titanium.UI.iPad.Popover.contentView> instead.
   				 */
   def getContentView(): View = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iPad.Popover.height> property.
-  				 */
-  def getHeight(): Double | String = js.native
-  /**
-  				 * Gets the value of the <Titanium.UI.iPad.Popover.horizontalMotionEffect> property.
-  				 */
-  def getHorizontalMotionEffect(): js.Any = js.native
-  /**
-  				 * Gets the value of the <Titanium.UI.iPad.Popover.leftNavButton> property.
-  				 */
-  def getLeftNavButton(): js.Any = js.native
-  /**
   				 * Gets the value of the <Titanium.UI.iPad.Popover.passthroughViews> property.
+  				 * @deprecated Access <Titanium.UI.iPad.Popover.passthroughViews> instead.
   				 */
   def getPassthroughViews(): js.Array[View] = js.native
-  /**
-  				 * Gets the value of the <Titanium.UI.iPad.Popover.rightNavButton> property.
-  				 */
-  def getRightNavButton(): js.Any = js.native
-  /**
-  				 * Gets the value of the <Titanium.UI.iPad.Popover.title> property.
-  				 */
-  def getTitle(): String = js.native
-  /**
-  				 * Gets the value of the <Titanium.UI.iPad.Popover.verticalMotionEffect> property.
-  				 */
-  def getVerticalMotionEffect(): js.Any = js.native
-  /**
-  				 * Returns the matching view of a given view ID.
-  				 */
-  def getViewById(id: String): View = js.native
-  /**
-  				 * Gets the value of the <Titanium.UI.iPad.Popover.width> property.
-  				 */
-  def getWidth(): Double | String = js.native
-  /**
-  				 * Hides the popover.
-  				 */
-  def hide(options: PopoverParams): Unit = js.native
-  /**
-  				 * Inserts a view at the specified position in the [children](Titanium.UI.View.children) array.
-  				 */
-  def insertAt(params: js.Any): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_hide(name: hide, callback: js.ThisFunction1[/* this */ this.type, /* event */ PopoverHideEvent, Unit]): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iPad.Popover.arrowDirection> property.
+  				 * @deprecated Set the value using <Titanium.UI.iPad.Popover.arrowDirection> instead.
   				 */
   def setArrowDirection(arrowDirection: Double): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.backgroundColor> property.
-  				 */
-  def setBackgroundColor(backgroundColor: String): Unit = js.native
-  /**
   				 * Sets the value of the <Titanium.UI.iPad.Popover.contentView> property.
+  				 * @deprecated Set the value using <Titanium.UI.iPad.Popover.contentView> instead.
   				 */
-  def setContentView(contentView: js.Any): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.height> property.
-  				 */
-  def setHeight(height: String): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.height> property.
-  				 */
-  def setHeight(height: Double): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.horizontalMotionEffect> property.
-  				 */
-  def setHorizontalMotionEffect(horizontalMotionEffect: js.Any): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.leftNavButton> property.
-  				 */
-  def setLeftNavButton(leftNavButton: js.Any): Unit = js.native
+  def setContentView(contentView: View): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iPad.Popover.passthroughViews> property.
+  				 * @deprecated Set the value using <Titanium.UI.iPad.Popover.passthroughViews> instead.
   				 */
-  def setPassthroughViews(passthroughViews: js.Array[_]): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.rightNavButton> property.
-  				 */
-  def setRightNavButton(rightNavButton: js.Any): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.title> property.
-  				 */
-  def setTitle(title: String): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.verticalMotionEffect> property.
-  				 */
-  def setVerticalMotionEffect(verticalMotionEffect: js.Any): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.width> property.
-  				 */
-  def setWidth(width: String): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.Popover.width> property.
-  				 */
-  def setWidth(width: Double): Unit = js.native
+  def setPassthroughViews(passthroughViews: js.Array[View]): Unit = js.native
   /**
   				 * Displays the popover.
   				 */
-  def show(params: PopoverParams): Unit = js.native
-  /**
-  				 * Starts a batch update of this view's layout properties.
-  				 */
-  def startLayout(): Unit = js.native
-  /**
-  				 * Performs a batch update of all supplied layout properties and schedules a layout pass after
-  				 * they have been updated.
-  				 */
-  def updateLayout(params: js.Any): Unit = js.native
+  def show(options: ShowPopoverParams): Unit = js.native
 }
 

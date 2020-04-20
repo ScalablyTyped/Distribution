@@ -49,7 +49,6 @@ object MemoryAccessDetails {
     rangeIndex: Double
   ): MemoryAccessDetails = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], pageIndex = pageIndex.asInstanceOf[js.Any], pagesCompleted = pagesCompleted.asInstanceOf[js.Any], pagesTotal = pagesTotal.asInstanceOf[js.Any], rangeIndex = rangeIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MemoryAccessDetails]
   }
 }

@@ -18,7 +18,6 @@ object MergeShardsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): MergeShardsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MergeShardsOutput]
   }
 }

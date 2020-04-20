@@ -98,7 +98,7 @@ object dogapiStrings {
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   @scala.inline
-  def `my apps`: `my apps` = "my apps".asInstanceOf[`my apps`]
+  def `my apps`: `my apps` = ("my apps").asInstanceOf[`my apps`]
   @scala.inline
   def nagios: nagios = "nagios".asInstanceOf[nagios]
   @scala.inline

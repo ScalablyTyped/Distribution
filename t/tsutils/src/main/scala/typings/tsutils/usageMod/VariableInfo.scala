@@ -23,7 +23,6 @@ object VariableInfo {
     uses: js.Array[VariableUse]
   ): VariableInfo = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], inGlobalScope = inGlobalScope.asInstanceOf[js.Any], uses = uses.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VariableInfo]
   }
 }

@@ -24,7 +24,6 @@ object KanbanSwimlane {
   @scala.inline
   def apply(collapseAll: () => Unit, expandAll: () => Unit, toggle: js.Any => Unit): KanbanSwimlane = {
     val __obj = js.Dynamic.literal(collapseAll = js.Any.fromFunction0(collapseAll), expandAll = js.Any.fromFunction0(expandAll), toggle = js.Any.fromFunction1(toggle))
-  
     __obj.asInstanceOf[KanbanSwimlane]
   }
 }

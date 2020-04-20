@@ -79,7 +79,6 @@ object dnd {
     move: js.Object
   ): dnd = {
     val __obj = js.Dynamic.literal(AutoSource = js.Any.fromFunction0(AutoSource), Avatar = js.Any.fromFunction0(Avatar), Container = js.Any.fromFunction0(Container), Manager = js.Any.fromFunction0(Manager), Moveable = js.Any.fromFunction0(Moveable), Mover = js.Any.fromFunction0(Mover), Selector = js.Any.fromFunction0(Selector), Source = js.Any.fromFunction0(Source), Target = js.Any.fromFunction0(Target), TimedMoveable = js.Any.fromFunction0(TimedMoveable), autoscroll = autoscroll.asInstanceOf[js.Any], move = move.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[dnd]
   }
 }

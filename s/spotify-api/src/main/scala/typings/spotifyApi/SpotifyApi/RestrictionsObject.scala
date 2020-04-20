@@ -12,7 +12,6 @@ object RestrictionsObject {
   @scala.inline
   def apply(reason: String): RestrictionsObject = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestrictionsObject]
   }
 }

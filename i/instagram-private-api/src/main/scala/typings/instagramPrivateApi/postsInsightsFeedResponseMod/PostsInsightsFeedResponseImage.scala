@@ -12,7 +12,6 @@ object PostsInsightsFeedResponseImage {
   @scala.inline
   def apply(uri: String): PostsInsightsFeedResponseImage = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PostsInsightsFeedResponseImage]
   }
 }

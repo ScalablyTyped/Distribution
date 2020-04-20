@@ -16,7 +16,6 @@ object GrpcRouteAction {
   @scala.inline
   def apply(weightedTargets: WeightedTargets): GrpcRouteAction = {
     val __obj = js.Dynamic.literal(weightedTargets = weightedTargets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GrpcRouteAction]
   }
 }

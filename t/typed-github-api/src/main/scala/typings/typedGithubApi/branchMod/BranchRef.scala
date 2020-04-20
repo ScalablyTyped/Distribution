@@ -14,7 +14,6 @@ object BranchRef {
   @scala.inline
   def apply(commit: GitRef, name: String): BranchRef = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BranchRef]
   }
 }

@@ -16,7 +16,6 @@ object Token {
   @scala.inline
   def apply(end: Double, kind: Double, start: Double, value: String): Token = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Token]
   }
 }

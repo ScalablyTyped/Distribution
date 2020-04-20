@@ -13,7 +13,6 @@ object AnonFrozen {
   @scala.inline
   def apply(frozen: Boolean, reversed: Boolean): AnonFrozen = {
     val __obj = js.Dynamic.literal(frozen = frozen.asInstanceOf[js.Any], reversed = reversed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFrozen]
   }
 }

@@ -14,7 +14,6 @@ object Extension {
   @scala.inline
   def apply(parse: (js.Any, js.Any, js.Any) => js.Any, tags: js.Array[String]): Extension = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction3(parse), tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Extension]
   }
 }

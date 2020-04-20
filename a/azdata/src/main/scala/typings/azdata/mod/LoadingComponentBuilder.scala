@@ -21,7 +21,6 @@ object LoadingComponentBuilder {
     withValidation: js.Function1[LoadingComponent, Boolean] => ComponentBuilder[LoadingComponent]
   ): LoadingComponentBuilder = {
     val __obj = js.Dynamic.literal(component = js.Any.fromFunction0(component), withItem = js.Any.fromFunction1(withItem), withProperties = js.Any.fromFunction1(withProperties), withValidation = js.Any.fromFunction1(withValidation))
-  
     __obj.asInstanceOf[LoadingComponentBuilder]
   }
 }

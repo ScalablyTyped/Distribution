@@ -18,7 +18,6 @@ object Message {
   @scala.inline
   def apply(action: String, method: String, parameters: ParameterListOrMap): Message = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Message]
   }
 }

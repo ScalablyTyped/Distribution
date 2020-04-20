@@ -20,7 +20,6 @@ object TypedLinkSchemaAndFacetName {
   @scala.inline
   def apply(SchemaArn: Arn, TypedLinkName: TypedLinkName): TypedLinkSchemaAndFacetName = {
     val __obj = js.Dynamic.literal(SchemaArn = SchemaArn.asInstanceOf[js.Any], TypedLinkName = TypedLinkName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypedLinkSchemaAndFacetName]
   }
 }

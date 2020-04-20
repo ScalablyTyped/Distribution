@@ -15,7 +15,6 @@ object IColumnDescriptor {
   @scala.inline
   def apply(exists: Boolean, name: String, source: js.Any, value: js.Any): IColumnDescriptor = {
     val __obj = js.Dynamic.literal(exists = exists.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IColumnDescriptor]
   }
 }

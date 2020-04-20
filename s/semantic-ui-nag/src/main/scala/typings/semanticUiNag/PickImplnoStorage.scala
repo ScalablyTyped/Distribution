@@ -13,7 +13,6 @@ object PickImplnoStorage {
   @scala.inline
   def apply(noStorage: String): PickImplnoStorage = {
     val __obj = js.Dynamic.literal(noStorage = noStorage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnoStorage]
   }
 }

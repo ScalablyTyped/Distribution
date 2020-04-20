@@ -29,33 +29,33 @@ class ScrollContainer protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FScrollContainer: IModel = js.native
-  def alignment(): AlignmentEnum = js.native
+  def alignment: AlignmentEnum = js.native
   def alignment(newValue: AlignmentEnum): js.Any = js.native
   def bottom(): js.Any = js.native
   def bottom(newValue: ScrollContainerRegion): js.Any = js.native
   @JSName("bottom")
-  def bottom_Union(): ScrollContainerRegion | Null = js.native
-  def center(): ScrollContainerRegion = js.native
+  def bottom_Union: ScrollContainerRegion | Null = js.native
+  def center: ScrollContainerRegion = js.native
   def center(newValue: ScrollContainerRegion): js.Any = js.native
-  def layoutMode(): LayoutModeType = js.native
+  def layoutMode: LayoutModeType = js.native
   def layoutMode(newValue: LayoutModeType): js.Any = js.native
   def left(): js.Any = js.native
   def left(newValue: ScrollContainerRegion): js.Any = js.native
   @JSName("left")
-  def left_Union(): ScrollContainerRegion | Null = js.native
+  def left_Union: ScrollContainerRegion | Null = js.native
   def right(): js.Any = js.native
   def right(newValue: ScrollContainerRegion): js.Any = js.native
   @JSName("right")
-  def right_Union(): ScrollContainerRegion | Null = js.native
-  def scrollBehavior(): ScrollBehavior = js.native
+  def right_Union: ScrollContainerRegion | Null = js.native
+  def scrollBehavior: ScrollBehavior = js.native
   def scrollBehavior(newValue: ScrollBehavior): js.Any = js.native
   def top(): js.Any = js.native
   def top(newValue: ScrollContainerRegion): js.Any = js.native
   @JSName("top")
-  def top_Union(): ScrollContainerRegion | Null = js.native
-  def width(): Double = js.native
+  def top_Union: ScrollContainerRegion | Null = js.native
+  def width: Double = js.native
   def width(newValue: Double): js.Any = js.native
-  def widthMode(): SizeMode = js.native
+  def widthMode: SizeMode = js.native
   def widthMode(newValue: SizeMode): js.Any = js.native
 }
 

@@ -23,7 +23,6 @@ object IGetToken {
   @scala.inline
   def apply[T](get: (Buffer, Double) => T, len: Double): IGetToken[T] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), len = len.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGetToken[T]]
   }
 }

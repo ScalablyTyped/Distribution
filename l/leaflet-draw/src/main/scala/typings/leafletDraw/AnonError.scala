@@ -13,7 +13,6 @@ object AnonError {
   @scala.inline
   def apply(error: String, tooltip: AnonCont): AnonError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonError]
   }
 }

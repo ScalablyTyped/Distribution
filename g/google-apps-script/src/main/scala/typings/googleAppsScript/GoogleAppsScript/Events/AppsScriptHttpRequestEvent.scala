@@ -22,7 +22,6 @@ object AppsScriptHttpRequestEvent {
     queryString: String
   ): AppsScriptHttpRequestEvent = {
     val __obj = js.Dynamic.literal(contentLength = contentLength.asInstanceOf[js.Any], contextPath = contextPath.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppsScriptHttpRequestEvent]
   }
 }

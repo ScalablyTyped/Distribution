@@ -17,7 +17,6 @@ object PlatformTypesCollection {
   @scala.inline
   def apply(get: (String, String) => PlatformType, list: String => PlatformTypesListResponse): PlatformTypesCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[PlatformTypesCollection]
   }
 }

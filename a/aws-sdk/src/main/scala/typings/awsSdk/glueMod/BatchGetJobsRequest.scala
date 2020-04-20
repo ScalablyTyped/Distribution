@@ -16,7 +16,6 @@ object BatchGetJobsRequest {
   @scala.inline
   def apply(JobNames: JobNameList): BatchGetJobsRequest = {
     val __obj = js.Dynamic.literal(JobNames = JobNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetJobsRequest]
   }
 }

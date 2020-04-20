@@ -13,7 +13,6 @@ object ListField {
   @scala.inline
   def apply(key: Double, name: Double): ListField = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListField]
   }
 }

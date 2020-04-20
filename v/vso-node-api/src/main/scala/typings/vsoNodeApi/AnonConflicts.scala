@@ -24,7 +24,6 @@ object AnonConflicts {
     succeeded: Double
   ): AnonConflicts = {
     val __obj = js.Dynamic.literal(conflicts = conflicts.asInstanceOf[js.Any], failure = failure.asInstanceOf[js.Any], notSet = notSet.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], rejectedByPolicy = rejectedByPolicy.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConflicts]
   }
 }

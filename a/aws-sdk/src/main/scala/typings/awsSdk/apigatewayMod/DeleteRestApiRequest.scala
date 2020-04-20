@@ -16,7 +16,6 @@ object DeleteRestApiRequest {
   @scala.inline
   def apply(restApiId: String): DeleteRestApiRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRestApiRequest]
   }
 }

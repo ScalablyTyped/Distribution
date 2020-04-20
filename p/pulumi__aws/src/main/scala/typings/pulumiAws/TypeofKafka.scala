@@ -13,7 +13,6 @@ object TypeofKafka {
   @scala.inline
   def apply(Types: TypeofKafka): TypeofKafka = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofKafka]
   }
 }

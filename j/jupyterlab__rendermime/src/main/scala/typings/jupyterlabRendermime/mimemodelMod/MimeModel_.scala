@@ -40,12 +40,12 @@ class MimeModel_ () extends IMimeModel {
     * The data associated with the model.
     */
   @JSName("data")
-  def data_MMimeModel_(): ReadonlyPartialJSONObject = js.native
+  def data_MMimeModel_ : ReadonlyPartialJSONObject = js.native
   /**
     * The metadata associated with the model.
     */
   @JSName("metadata")
-  def metadata_MMimeModel_(): ReadonlyPartialJSONObject = js.native
+  def metadata_MMimeModel_ : ReadonlyPartialJSONObject = js.native
   /**
     * Set the data associated with the model.
     *

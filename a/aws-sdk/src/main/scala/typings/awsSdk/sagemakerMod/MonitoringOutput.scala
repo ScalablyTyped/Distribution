@@ -16,7 +16,6 @@ object MonitoringOutput {
   @scala.inline
   def apply(S3Output: MonitoringS3Output): MonitoringOutput = {
     val __obj = js.Dynamic.literal(S3Output = S3Output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MonitoringOutput]
   }
 }

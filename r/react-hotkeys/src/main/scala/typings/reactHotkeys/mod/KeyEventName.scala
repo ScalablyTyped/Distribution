@@ -13,12 +13,10 @@ trait KeyEventName extends js.Object
 
 object KeyEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def keydown: typings.reactHotkeys.reactHotkeysStrings.keydown = "keydown".asInstanceOf[typings.reactHotkeys.reactHotkeysStrings.keydown]
   @scala.inline
-  def keydown: typings.reactHotkeys.reactHotkeysStrings.keydown = this.cast("keydown")
+  def keypress: typings.reactHotkeys.reactHotkeysStrings.keypress = "keypress".asInstanceOf[typings.reactHotkeys.reactHotkeysStrings.keypress]
   @scala.inline
-  def keypress: typings.reactHotkeys.reactHotkeysStrings.keypress = this.cast("keypress")
-  @scala.inline
-  def keyup: typings.reactHotkeys.reactHotkeysStrings.keyup = this.cast("keyup")
+  def keyup: typings.reactHotkeys.reactHotkeysStrings.keyup = "keyup".asInstanceOf[typings.reactHotkeys.reactHotkeysStrings.keyup]
 }
 

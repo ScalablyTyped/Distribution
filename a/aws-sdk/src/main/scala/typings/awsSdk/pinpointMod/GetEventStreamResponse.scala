@@ -13,7 +13,6 @@ object GetEventStreamResponse {
   @scala.inline
   def apply(EventStream: EventStream): GetEventStreamResponse = {
     val __obj = js.Dynamic.literal(EventStream = EventStream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEventStreamResponse]
   }
 }

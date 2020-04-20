@@ -60,56 +60,54 @@ trait WdLineStyle extends js.Object
 
 object WdLineStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdLineStyleDashDot: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdLineStyleDashDot: `5` = this.cast(5)
+  def wdLineStyleDashDotDot: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdLineStyleDashDotDot: `6` = this.cast(6)
+  def wdLineStyleDashDotStroked: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdLineStyleDashDotStroked: `20` = this.cast(20)
+  def wdLineStyleDashLargeGap: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdLineStyleDashLargeGap: `4` = this.cast(4)
+  def wdLineStyleDashSmallGap: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdLineStyleDashSmallGap: `3` = this.cast(3)
+  def wdLineStyleDot: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdLineStyleDot: `2` = this.cast(2)
+  def wdLineStyleDouble: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdLineStyleDouble: `7` = this.cast(7)
+  def wdLineStyleDoubleWavy: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdLineStyleDoubleWavy: `19` = this.cast(19)
+  def wdLineStyleEmboss3D: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def wdLineStyleEmboss3D: `21` = this.cast(21)
+  def wdLineStyleEngrave3D: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def wdLineStyleEngrave3D: `22` = this.cast(22)
+  def wdLineStyleInset: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def wdLineStyleInset: `24` = this.cast(24)
+  def wdLineStyleNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdLineStyleNone: `0` = this.cast(0)
+  def wdLineStyleOutset: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def wdLineStyleOutset: `23` = this.cast(23)
+  def wdLineStyleSingle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdLineStyleSingle: `1` = this.cast(1)
+  def wdLineStyleSingleWavy: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdLineStyleSingleWavy: `18` = this.cast(18)
+  def wdLineStyleThickThinLargeGap: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdLineStyleThickThinLargeGap: `16` = this.cast(16)
+  def wdLineStyleThickThinMedGap: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdLineStyleThickThinMedGap: `13` = this.cast(13)
+  def wdLineStyleThickThinSmallGap: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdLineStyleThickThinSmallGap: `10` = this.cast(10)
+  def wdLineStyleThinThickLargeGap: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdLineStyleThinThickLargeGap: `15` = this.cast(15)
+  def wdLineStyleThinThickMedGap: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdLineStyleThinThickMedGap: `12` = this.cast(12)
+  def wdLineStyleThinThickSmallGap: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdLineStyleThinThickSmallGap: `9` = this.cast(9)
+  def wdLineStyleThinThickThinLargeGap: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdLineStyleThinThickThinLargeGap: `17` = this.cast(17)
+  def wdLineStyleThinThickThinMedGap: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdLineStyleThinThickThinMedGap: `14` = this.cast(14)
+  def wdLineStyleThinThickThinSmallGap: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdLineStyleThinThickThinSmallGap: `11` = this.cast(11)
-  @scala.inline
-  def wdLineStyleTriple: `8` = this.cast(8)
+  def wdLineStyleTriple: `8` = 8.asInstanceOf[`8`]
 }
 

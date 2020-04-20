@@ -15,7 +15,6 @@ object LogLevels {
   @scala.inline
   def apply(default: LogLevel, media: LogLevel, signaling: LogLevel, webrtc: LogLevel): LogLevels = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], signaling = signaling.asInstanceOf[js.Any], webrtc = webrtc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogLevels]
   }
 }

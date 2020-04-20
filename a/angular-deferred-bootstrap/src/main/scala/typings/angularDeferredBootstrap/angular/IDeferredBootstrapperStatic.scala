@@ -13,7 +13,6 @@ object IDeferredBootstrapperStatic {
   @scala.inline
   def apply(bootstrap: IConfigParam => IPromise[Boolean]): IDeferredBootstrapperStatic = {
     val __obj = js.Dynamic.literal(bootstrap = js.Any.fromFunction1(bootstrap))
-  
     __obj.asInstanceOf[IDeferredBootstrapperStatic]
   }
 }

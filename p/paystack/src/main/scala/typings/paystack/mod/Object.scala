@@ -33,7 +33,6 @@ object Object {
     transaction: AnonCharge
   ): Object = {
     val __obj = js.Dynamic.literal(customer = customer.asInstanceOf[js.Any], misc = misc.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], subaccount = subaccount.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], transaction = transaction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Object]
   }
 }

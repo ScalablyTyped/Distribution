@@ -189,8 +189,8 @@ class VRExperienceHelper protected () extends js.Object {
     * If this is true and no this.xr, xr exists but is not supported, using WebVR.
     */
   var xrTestDone: Boolean = js.native
-  /* private */ def _noControllerIsActive(): js.Any = js.native
-  /* private */ def _teleportationRequestInitiated(): js.Any = js.native
+  /* private */ def _noControllerIsActive: js.Any = js.native
+  /* private */ def _teleportationRequestInitiated: js.Any = js.native
   /**
     * Adds a floor mesh to be used for teleportation.
     * @param floorMesh the mesh to be used for teleportation.
@@ -209,15 +209,15 @@ class VRExperienceHelper protected () extends js.Object {
   /**
     * Based on the current WebVR support, returns the current VR camera used.
     */
-  def currentVRCamera(): Nullable[Camera] = js.native
+  def currentVRCamera: Nullable[Camera] = js.native
   /**
     * The deviceOrientationCamera used as the camera when not in VR.
     */
-  def deviceOrientationCamera(): Nullable[DeviceOrientationCamera] = js.native
+  def deviceOrientationCamera: Nullable[DeviceOrientationCamera] = js.native
   /**
     * If the ray of the gaze should be displayed.
     */
-  def displayGaze(): Boolean = js.native
+  def displayGaze: Boolean = js.native
   /**
     * Sets if the ray of the gaze should be displayed.
     */
@@ -225,7 +225,7 @@ class VRExperienceHelper protected () extends js.Object {
   /**
     * If the ray of the LaserPointer should be displayed.
     */
-  def displayLaserPointer(): Boolean = js.native
+  def displayLaserPointer: Boolean = js.native
   /**
     * Sets if the ray of the LaserPointer should be displayed.
     */
@@ -258,7 +258,7 @@ class VRExperienceHelper protected () extends js.Object {
     * when set bakeCurrentTransformIntoVertices will be called on the mesh.
     * See http://doc.babylonjs.com/resources/baking_transformations
     */
-  def gazeTrackerMesh(): Mesh = js.native
+  def gazeTrackerMesh: Mesh = js.native
   def gazeTrackerMesh(value: Mesh): js.Any = js.native
   /**
     * Gets the name of the VRExperienceHelper class
@@ -268,11 +268,11 @@ class VRExperienceHelper protected () extends js.Object {
   /**
     * Gets a value indicating if we are currently in VR mode.
     */
-  def isInVRMode(): Boolean = js.native
+  def isInVRMode: Boolean = js.native
   /**
     * The gaze tracking mesh corresponding to the left controller
     */
-  def leftControllerGazeTrackerMesh(): Nullable[Mesh] = js.native
+  def leftControllerGazeTrackerMesh: Nullable[Mesh] = js.native
   /**
     * To be optionaly changed by user to define custom selection logic (after ray selection)
     */
@@ -280,19 +280,19 @@ class VRExperienceHelper protected () extends js.Object {
   /** Return this.onControllerMeshLoadedObservable
     * Note: This one is for backward compatibility. Please use onControllerMeshLoadedObservable directly
     */
-  def onControllerMeshLoaded(): Observable[WebVRController] = js.native
+  def onControllerMeshLoaded: Observable[WebVRController] = js.native
   /** Return this.onEnteringVRObservable
     * Note: This one is for backward compatibility. Please use onEnteringVRObservable directly
     */
-  def onEnteringVR(): Observable[VRExperienceHelper] = js.native
+  def onEnteringVR: Observable[VRExperienceHelper] = js.native
   /** Return this.onExitingVRObservable
     * Note: This one is for backward compatibility. Please use onExitingVRObservable directly
     */
-  def onExitingVR(): Observable[VRExperienceHelper] = js.native
+  def onExitingVR: Observable[VRExperienceHelper] = js.native
   /**
     * The position of the vr experience helper.
     */
-  def position(): Vector3 = js.native
+  def position: Vector3 = js.native
   /**
     * Sets the position of the vr experience helper.
     */
@@ -309,7 +309,7 @@ class VRExperienceHelper protected () extends js.Object {
   /**
     * The gaze tracking mesh corresponding to the right controller
     */
-  def rightControllerGazeTrackerMesh(): Nullable[Mesh] = js.native
+  def rightControllerGazeTrackerMesh: Nullable[Mesh] = js.native
   /**
     * Permanently set new colors for the gaze pointer
     * @param color the new gaze color
@@ -338,7 +338,7 @@ class VRExperienceHelper protected () extends js.Object {
   /**
     * The mesh used to display where the user is going to teleport.
     */
-  def teleportationTarget(): Mesh = js.native
+  def teleportationTarget: Mesh = js.native
   /**
     * Sets the mesh to be used to display where the user is going to teleport.
     */
@@ -346,15 +346,15 @@ class VRExperienceHelper protected () extends js.Object {
   /**
     * The html button that is used to trigger entering into VR.
     */
-  def vrButton(): Nullable[HTMLButtonElement] = js.native
+  def vrButton: Nullable[HTMLButtonElement] = js.native
   /**
     * The deviceOrientationCamera that is used as a fallback when vr device is not connected.
     */
-  def vrDeviceOrientationCamera(): Nullable[VRDeviceOrientationFreeCamera] = js.native
+  def vrDeviceOrientationCamera: Nullable[VRDeviceOrientationFreeCamera] = js.native
   /**
     * The webVRCamera which is used when in VR.
     */
-  def webVRCamera(): WebVRFreeCamera = js.native
+  def webVRCamera: WebVRFreeCamera = js.native
 }
 
 /* static members */

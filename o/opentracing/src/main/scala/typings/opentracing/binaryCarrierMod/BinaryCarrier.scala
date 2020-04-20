@@ -13,7 +13,6 @@ object BinaryCarrier {
   @scala.inline
   def apply(buffer: ArrayLike[Double]): BinaryCarrier = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BinaryCarrier]
   }
 }

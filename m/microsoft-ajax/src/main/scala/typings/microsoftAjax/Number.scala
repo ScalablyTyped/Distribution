@@ -24,7 +24,6 @@ object Number {
   @scala.inline
   def apply(format: java.lang.String => java.lang.String, localeFormat: java.lang.String => java.lang.String): Number = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), localeFormat = js.Any.fromFunction1(localeFormat))
-  
     __obj.asInstanceOf[Number]
   }
 }

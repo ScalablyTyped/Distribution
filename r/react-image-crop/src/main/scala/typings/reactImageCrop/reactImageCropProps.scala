@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactImageCropProps {
   @scala.inline
-  def ReactImageCropProps: ReactCropProps.type = typings.reactImageCrop.mod.ReactCropProps
+  def ReactImageCropProps: ReactCropProps.type = ReactCropProps
   type ReactImageCropProps = ReactCropProps
 }
 

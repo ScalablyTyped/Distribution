@@ -15,7 +15,6 @@ object IFacepileBasicExampleState {
   @scala.inline
   def apply(imagesFadeIn: Boolean, numberOfFaces: js.Any, personaSize: PersonaSize): IFacepileBasicExampleState = {
     val __obj = js.Dynamic.literal(imagesFadeIn = imagesFadeIn.asInstanceOf[js.Any], numberOfFaces = numberOfFaces.asInstanceOf[js.Any], personaSize = personaSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFacepileBasicExampleState]
   }
 }

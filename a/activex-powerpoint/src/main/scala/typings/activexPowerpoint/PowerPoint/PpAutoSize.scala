@@ -16,12 +16,10 @@ trait PpAutoSize extends js.Object
 
 object PpAutoSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppAutoSizeMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppAutoSizeMixed: `-2` = this.cast(-2)
+  def ppAutoSizeNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ppAutoSizeNone: `0` = this.cast(0)
-  @scala.inline
-  def ppAutoSizeShapeToFitText: `1` = this.cast(1)
+  def ppAutoSizeShapeToFitText: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -12,7 +12,6 @@ object CreatePayload {
   @scala.inline
   def apply(identity: CreateModel): CreatePayload = {
     val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePayload]
   }
 }

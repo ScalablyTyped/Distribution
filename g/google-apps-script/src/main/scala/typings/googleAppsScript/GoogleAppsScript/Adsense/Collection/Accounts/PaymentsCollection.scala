@@ -14,7 +14,6 @@ object PaymentsCollection {
   @scala.inline
   def apply(list: String => Payments): PaymentsCollection = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[PaymentsCollection]
   }
 }

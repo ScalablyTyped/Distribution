@@ -112,12 +112,12 @@ class QueryCollection[T] () extends Array[T] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("map")
-  def map_U_Tuple4[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple4[U, U, U, U] = js.native
+  def map_U_Tuple3[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple3[U, U, U] = js.native
   @JSName("map")
-  def map_U_Tuple4[U](
+  def map_U_Tuple3[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
     thisArg: js.Any
-  ): js.Tuple4[U, U, U, U] = js.native
+  ): js.Tuple3[U, U, U] = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
     * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.

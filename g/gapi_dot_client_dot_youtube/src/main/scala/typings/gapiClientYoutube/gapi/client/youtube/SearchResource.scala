@@ -18,7 +18,6 @@ object SearchResource {
   @scala.inline
   def apply(list: AnonChannelType => Request_[SearchListResponse]): SearchResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[SearchResource]
   }
 }

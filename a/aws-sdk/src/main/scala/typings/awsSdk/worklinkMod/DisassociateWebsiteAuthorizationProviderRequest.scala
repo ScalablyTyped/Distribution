@@ -20,7 +20,6 @@ object DisassociateWebsiteAuthorizationProviderRequest {
   @scala.inline
   def apply(AuthorizationProviderId: Id, FleetArn: FleetArn): DisassociateWebsiteAuthorizationProviderRequest = {
     val __obj = js.Dynamic.literal(AuthorizationProviderId = AuthorizationProviderId.asInstanceOf[js.Any], FleetArn = FleetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateWebsiteAuthorizationProviderRequest]
   }
 }

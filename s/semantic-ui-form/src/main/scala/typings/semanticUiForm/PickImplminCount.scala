@@ -13,7 +13,6 @@ object PickImplminCount {
   @scala.inline
   def apply(minCount: String): PickImplminCount = {
     val __obj = js.Dynamic.literal(minCount = minCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplminCount]
   }
 }

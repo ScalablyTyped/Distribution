@@ -13,7 +13,6 @@ object VideoPropertySetting {
   @scala.inline
   def apply(GetIfAuto: () => Boolean, GetValue: () => Double): VideoPropertySetting = {
     val __obj = js.Dynamic.literal(GetIfAuto = js.Any.fromFunction0(GetIfAuto), GetValue = js.Any.fromFunction0(GetValue))
-  
     __obj.asInstanceOf[VideoPropertySetting]
   }
 }

@@ -21,47 +21,47 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeGestureHandlerProps {
   @scala.inline
-  def BaseButtonProps: BaseButtonProperties.type = typings.reactNativeGestureHandler.mod.BaseButtonProperties
+  def BaseButtonProps: BaseButtonProperties.type = BaseButtonProperties
   type BaseButtonProps = BaseButtonProperties
   @scala.inline
-  def BorderlessButtonProps: BorderlessButtonProperties.type = typings.reactNativeGestureHandler.mod.BorderlessButtonProperties
+  def BorderlessButtonProps: BorderlessButtonProperties.type = BorderlessButtonProperties
   type BorderlessButtonProps = BorderlessButtonProperties
   @scala.inline
-  def DrawerLayoutProps: DrawerLayoutProperties.type = typings.reactNativeGestureHandler.drawerLayoutMod.DrawerLayoutProperties
+  def DrawerLayoutProps: DrawerLayoutProperties.type = DrawerLayoutProperties
   type DrawerLayoutProps = DrawerLayoutProperties
   @scala.inline
-  def FlingGestureHandlerProps: FlingGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.FlingGestureHandlerProperties
+  def FlingGestureHandlerProps: FlingGestureHandlerProperties.type = FlingGestureHandlerProperties
   type FlingGestureHandlerProps = FlingGestureHandlerProperties
   @scala.inline
-  def ForceTouchGestureHandlerProps: ForceTouchGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.ForceTouchGestureHandlerProperties
+  def ForceTouchGestureHandlerProps: ForceTouchGestureHandlerProperties.type = ForceTouchGestureHandlerProperties
   type ForceTouchGestureHandlerProps = ForceTouchGestureHandlerProperties
   type GestureHandlerRootViewProps = ViewProps
   @scala.inline
-  def LongPressGestureHandlerProps: LongPressGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.LongPressGestureHandlerProperties
+  def LongPressGestureHandlerProps: LongPressGestureHandlerProperties.type = LongPressGestureHandlerProperties
   type LongPressGestureHandlerProps = LongPressGestureHandlerProperties
   @scala.inline
-  def NativeViewGestureHandlerProps: NativeViewGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.NativeViewGestureHandlerProperties
+  def NativeViewGestureHandlerProps: NativeViewGestureHandlerProperties.type = NativeViewGestureHandlerProperties
   type NativeViewGestureHandlerProps = NativeViewGestureHandlerProperties
   @scala.inline
-  def PanGestureHandlerProps: PanGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.PanGestureHandlerProperties
+  def PanGestureHandlerProps: PanGestureHandlerProperties.type = PanGestureHandlerProperties
   type PanGestureHandlerProps = PanGestureHandlerProperties
   @scala.inline
-  def PinchGestureHandlerProps: PinchGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.PinchGestureHandlerProperties
+  def PinchGestureHandlerProps: PinchGestureHandlerProperties.type = PinchGestureHandlerProperties
   type PinchGestureHandlerProps = PinchGestureHandlerProperties
   @scala.inline
-  def RawButtonProps: RawButtonProperties.type = typings.reactNativeGestureHandler.mod.RawButtonProperties
+  def RawButtonProps: RawButtonProperties.type = RawButtonProperties
   type RawButtonProps = RawButtonProperties
   @scala.inline
-  def RectButtonProps: RectButtonProperties.type = typings.reactNativeGestureHandler.mod.RectButtonProperties
+  def RectButtonProps: RectButtonProperties.type = RectButtonProperties
   type RectButtonProps = RectButtonProperties
   @scala.inline
-  def RotationGestureHandlerProps: RotationGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.RotationGestureHandlerProperties
+  def RotationGestureHandlerProps: RotationGestureHandlerProperties.type = RotationGestureHandlerProperties
   type RotationGestureHandlerProps = RotationGestureHandlerProperties
   @scala.inline
-  def SwipeableProps: SwipeableProperties.type = typings.reactNativeGestureHandler.swipeableMod.SwipeableProperties
+  def SwipeableProps: SwipeableProperties.type = SwipeableProperties
   type SwipeableProps = SwipeableProperties
   @scala.inline
-  def TapGestureHandlerProps: TapGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.TapGestureHandlerProperties
+  def TapGestureHandlerProps: TapGestureHandlerProperties.type = TapGestureHandlerProperties
   type TapGestureHandlerProps = TapGestureHandlerProperties
 }
 

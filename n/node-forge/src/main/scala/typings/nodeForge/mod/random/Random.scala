@@ -13,7 +13,6 @@ object Random {
   @scala.inline
   def apply(seedFile: (Double, CB) => Unit, seedFileSync: Double => String): Random = {
     val __obj = js.Dynamic.literal(seedFile = js.Any.fromFunction2(seedFile), seedFileSync = js.Any.fromFunction1(seedFileSync))
-  
     __obj.asInstanceOf[Random]
   }
 }

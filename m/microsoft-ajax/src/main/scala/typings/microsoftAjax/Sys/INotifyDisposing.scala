@@ -28,7 +28,6 @@ object INotifyDisposing {
   @scala.inline
   def apply(add_disposing: js.Function => Unit, remove_disposing: js.Function => Unit): INotifyDisposing = {
     val __obj = js.Dynamic.literal(add_disposing = js.Any.fromFunction1(add_disposing), remove_disposing = js.Any.fromFunction1(remove_disposing))
-  
     __obj.asInstanceOf[INotifyDisposing]
   }
 }

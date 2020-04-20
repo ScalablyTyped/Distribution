@@ -12,7 +12,6 @@ object TooltipOptions {
   @scala.inline
   def apply(tooltipContent: js.Any => String): TooltipOptions = {
     val __obj = js.Dynamic.literal(tooltipContent = js.Any.fromFunction1(tooltipContent))
-  
     __obj.asInstanceOf[TooltipOptions]
   }
 }

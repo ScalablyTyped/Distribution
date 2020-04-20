@@ -16,7 +16,6 @@ object GetFindingsResponse {
   @scala.inline
   def apply(Findings: Findings): GetFindingsResponse = {
     val __obj = js.Dynamic.literal(Findings = Findings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFindingsResponse]
   }
 }

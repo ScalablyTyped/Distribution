@@ -30,7 +30,6 @@ object ProcessingInstruction {
     getValue: () => String
   ): ProcessingInstruction = {
     val __obj = js.Dynamic.literal(asCdata = js.Any.fromFunction0(asCdata), asComment = js.Any.fromFunction0(asComment), asDocType = js.Any.fromFunction0(asDocType), asElement = js.Any.fromFunction0(asElement), asEntityRef = js.Any.fromFunction0(asEntityRef), asProcessingInstruction = js.Any.fromFunction0(asProcessingInstruction), asText = js.Any.fromFunction0(asText), detach = js.Any.fromFunction0(detach), getData = js.Any.fromFunction0(getData), getParentElement = js.Any.fromFunction0(getParentElement), getTarget = js.Any.fromFunction0(getTarget), getType = js.Any.fromFunction0(getType), getValue = js.Any.fromFunction0(getValue))
-  
     __obj.asInstanceOf[ProcessingInstruction]
   }
 }

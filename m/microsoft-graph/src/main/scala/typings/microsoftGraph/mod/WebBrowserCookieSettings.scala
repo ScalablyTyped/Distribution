@@ -15,16 +15,14 @@ trait WebBrowserCookieSettings extends js.Object
 
 object WebBrowserCookieSettings {
   @scala.inline
-  def allowAlways: typings.microsoftGraph.microsoftGraphStrings.allowAlways = this.cast("allowAlways")
+  def allowAlways: typings.microsoftGraph.microsoftGraphStrings.allowAlways = "allowAlways".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowAlways]
   @scala.inline
-  def allowCurrentWebSite: typings.microsoftGraph.microsoftGraphStrings.allowCurrentWebSite = this.cast("allowCurrentWebSite")
+  def allowCurrentWebSite: typings.microsoftGraph.microsoftGraphStrings.allowCurrentWebSite = "allowCurrentWebSite".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowCurrentWebSite]
   @scala.inline
-  def allowFromWebsitesVisited: typings.microsoftGraph.microsoftGraphStrings.allowFromWebsitesVisited = this.cast("allowFromWebsitesVisited")
+  def allowFromWebsitesVisited: typings.microsoftGraph.microsoftGraphStrings.allowFromWebsitesVisited = "allowFromWebsitesVisited".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowFromWebsitesVisited]
   @scala.inline
-  def blockAlways: typings.microsoftGraph.microsoftGraphStrings.blockAlways = this.cast("blockAlways")
+  def blockAlways: typings.microsoftGraph.microsoftGraphStrings.blockAlways = "blockAlways".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockAlways]
   @scala.inline
-  def browserDefault: typings.microsoftGraph.microsoftGraphStrings.browserDefault = this.cast("browserDefault")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def browserDefault: typings.microsoftGraph.microsoftGraphStrings.browserDefault = "browserDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.browserDefault]
 }
 

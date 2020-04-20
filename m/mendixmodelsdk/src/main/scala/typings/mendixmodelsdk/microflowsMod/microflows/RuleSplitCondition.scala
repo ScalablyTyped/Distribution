@@ -22,7 +22,7 @@ class RuleSplitCondition protected () extends SplitCondition {
   ) = this()
   @JSName("model")
   var model_FRuleSplitCondition: IModel = js.native
-  def ruleCall(): RuleCall = js.native
+  def ruleCall: RuleCall = js.native
   def ruleCall(newValue: RuleCall): js.Any = js.native
 }
 

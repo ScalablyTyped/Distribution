@@ -16,7 +16,6 @@ object GetDataflowEndpointGroupRequest {
   @scala.inline
   def apply(dataflowEndpointGroupId: String): GetDataflowEndpointGroupRequest = {
     val __obj = js.Dynamic.literal(dataflowEndpointGroupId = dataflowEndpointGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDataflowEndpointGroupRequest]
   }
 }

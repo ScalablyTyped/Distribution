@@ -12,7 +12,6 @@ object AnonOptionsAnonGroupedimports {
   @scala.inline
   def apply(options: AnonGroupedimports): AnonOptionsAnonGroupedimports = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOptionsAnonGroupedimports]
   }
 }

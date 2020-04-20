@@ -13,7 +13,6 @@ object Taggable {
   @scala.inline
   def apply(addLabels: Labels => Boolean, setLabel: (String, LabelValue) => Boolean): Taggable = {
     val __obj = js.Dynamic.literal(addLabels = js.Any.fromFunction1(addLabels), setLabel = js.Any.fromFunction2(setLabel))
-  
     __obj.asInstanceOf[Taggable]
   }
 }

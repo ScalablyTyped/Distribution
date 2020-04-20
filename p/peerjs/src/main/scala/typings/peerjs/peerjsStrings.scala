@@ -48,9 +48,9 @@ object peerjsStrings {
   sealed trait stream extends js.Object
   
   @scala.inline
-  def `Not a browserDot`: `Not a browserDot` = "Not a browser.".asInstanceOf[`Not a browserDot`]
+  def `Not a browserDot`: `Not a browserDot` = ("Not a browser.").asInstanceOf[`Not a browserDot`]
   @scala.inline
-  def `Not a supported browserDot`: `Not a supported browserDot` = "Not a supported browser.".asInstanceOf[`Not a supported browserDot`]
+  def `Not a supported browserDot`: `Not a supported browserDot` = ("Not a supported browser.").asInstanceOf[`Not a supported browserDot`]
   @scala.inline
   def call: call = "call".asInstanceOf[call]
   @scala.inline

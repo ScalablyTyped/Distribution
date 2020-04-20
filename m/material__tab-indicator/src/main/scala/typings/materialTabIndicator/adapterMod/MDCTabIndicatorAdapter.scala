@@ -37,7 +37,6 @@ object MDCTabIndicatorAdapter {
     setContentStyleProperty: (String, String) => Unit
   ): MDCTabIndicatorAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), computeContentClientRect = js.Any.fromFunction0(computeContentClientRect), removeClass = js.Any.fromFunction1(removeClass), setContentStyleProperty = js.Any.fromFunction2(setContentStyleProperty))
-  
     __obj.asInstanceOf[MDCTabIndicatorAdapter]
   }
 }

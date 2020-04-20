@@ -16,7 +16,6 @@ object MemoryInfo {
   @scala.inline
   def apply(availableCapacity: double, capacity: double): MemoryInfo = {
     val __obj = js.Dynamic.literal(availableCapacity = availableCapacity.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MemoryInfo]
   }
 }

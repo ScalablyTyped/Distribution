@@ -16,7 +16,6 @@ object InventoryDestination {
   @scala.inline
   def apply(bucket: InventoryDestinationBucket): InventoryDestination = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InventoryDestination]
   }
 }

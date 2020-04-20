@@ -14,7 +14,6 @@ object Month {
   @scala.inline
   def apply(days: js.Array[CalendarDay], month: Moment): Month = {
     val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Month]
   }
 }

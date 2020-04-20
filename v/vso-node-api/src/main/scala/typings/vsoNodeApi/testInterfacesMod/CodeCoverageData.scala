@@ -23,7 +23,6 @@ object CodeCoverageData {
   @scala.inline
   def apply(buildFlavor: String, buildPlatform: String, coverageStats: js.Array[CodeCoverageStatistics]): CodeCoverageData = {
     val __obj = js.Dynamic.literal(buildFlavor = buildFlavor.asInstanceOf[js.Any], buildPlatform = buildPlatform.asInstanceOf[js.Any], coverageStats = coverageStats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CodeCoverageData]
   }
 }

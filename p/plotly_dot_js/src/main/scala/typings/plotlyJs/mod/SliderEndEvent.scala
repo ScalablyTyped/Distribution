@@ -13,7 +13,6 @@ object SliderEndEvent {
   @scala.inline
   def apply(slider: Slider, step: SliderStep): SliderEndEvent = {
     val __obj = js.Dynamic.literal(slider = slider.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SliderEndEvent]
   }
 }

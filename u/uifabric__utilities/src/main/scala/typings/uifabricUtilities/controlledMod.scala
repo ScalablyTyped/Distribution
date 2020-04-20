@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/controlled", JSImport.Namespace)
 @js.native
 object controlledMod extends js.Object {
-  def isControlled[P](props: P, valueProp: String): Boolean = js.native
+  def isControlled[P](props: P, valueProp: /* keyof P */ String): Boolean = js.native
 }
 

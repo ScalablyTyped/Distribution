@@ -13,7 +13,6 @@ object AnonPUser {
   @scala.inline
   def apply(pUser: DIDiskQuotaUser): AnonPUser = {
     val __obj = js.Dynamic.literal(pUser = pUser.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPUser]
   }
 }

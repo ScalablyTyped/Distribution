@@ -12,7 +12,6 @@ object ConsumerConfig {
   @scala.inline
   def apply(prefixCls: String): ConsumerConfig = {
     val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConsumerConfig]
   }
 }

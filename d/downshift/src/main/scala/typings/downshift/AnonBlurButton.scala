@@ -57,7 +57,6 @@ object AnonBlurButton {
     unknown: unknown
   ): AnonBlurButton = {
     val __obj = js.Dynamic.literal(blurButton = blurButton.asInstanceOf[js.Any], blurInput = blurInput.asInstanceOf[js.Any], changeInput = changeInput.asInstanceOf[js.Any], clickButton = clickButton.asInstanceOf[js.Any], clickItem = clickItem.asInstanceOf[js.Any], controlledPropUpdatedSelectedItem = controlledPropUpdatedSelectedItem.asInstanceOf[js.Any], itemMouseEnter = itemMouseEnter.asInstanceOf[js.Any], keyDownArrowDown = keyDownArrowDown.asInstanceOf[js.Any], keyDownArrowUp = keyDownArrowUp.asInstanceOf[js.Any], keyDownEnter = keyDownEnter.asInstanceOf[js.Any], keyDownEscape = keyDownEscape.asInstanceOf[js.Any], keyDownSpaceButton = keyDownSpaceButton.asInstanceOf[js.Any], mouseUp = mouseUp.asInstanceOf[js.Any], touchEnd = touchEnd.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBlurButton]
   }
 }

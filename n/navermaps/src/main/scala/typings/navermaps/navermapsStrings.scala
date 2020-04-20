@@ -80,7 +80,7 @@ object navermapsStrings {
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
-  def `round `: `round ` = "round ".asInstanceOf[`round `]
+  def `round `: `round ` = ("round ").asInstanceOf[`round `]
   @scala.inline
   def shortdash: shortdash = "shortdash".asInstanceOf[shortdash]
   @scala.inline

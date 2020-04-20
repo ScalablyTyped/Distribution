@@ -15,7 +15,6 @@ object ActiveXObject {
   @scala.inline
   def apply(set: (WshEnvironment, Item, js.Array[String], String) => Unit): ActiveXObject = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction4(set))
-  
     __obj.asInstanceOf[ActiveXObject]
   }
 }

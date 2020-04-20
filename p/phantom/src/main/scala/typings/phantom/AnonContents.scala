@@ -14,7 +14,6 @@ object AnonContents {
   @scala.inline
   def apply(contents: IPhantomCallback, height: String): AnonContents = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContents]
   }
 }

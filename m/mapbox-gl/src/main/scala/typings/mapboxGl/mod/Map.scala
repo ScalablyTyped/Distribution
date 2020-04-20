@@ -81,6 +81,16 @@ class Map () extends Evented {
   var repaint: Boolean = js.native
   var scrollZoom: ScrollZoomHandler = js.native
   var showCollisionBoxes: Boolean = js.native
+  /**
+    * Gets and sets a Boolean indicating whether the map will visualize
+    * the padding offsets.
+    *
+    * @name showPadding
+    * @type {boolean}
+    * @instance
+    * @memberof Map
+    */
+  var showPadding: Boolean = js.native
   var showTileBoundaries: Boolean = js.native
   var touchZoomRotate: TouchZoomRotateHandler = js.native
   def addControl(control: Control): this.type = js.native
@@ -148,6 +158,13 @@ class Map () extends Evented {
   def getMaxBounds(): LngLatBounds | Null = js.native
   def getMaxZoom(): Double = js.native
   def getMinZoom(): Double = js.native
+  /**
+    * Returns the current padding applied around the map viewport.
+    *
+    * @memberof Map#
+    * @returns The current padding around the map viewport.
+    */
+  def getPadding(): PaddingOptions = js.native
   def getPaintProperty(layer: String, name: String): js.Any = js.native
   def getPitch(): Double = js.native
   def getRenderWorldCopies(): Boolean = js.native
@@ -1000,6 +1017,23 @@ class Map () extends Evented {
   def setMaxZoom(maxZoom: Double): this.type = js.native
   def setMinZoom(): this.type = js.native
   def setMinZoom(minZoom: Double): this.type = js.native
+  /**
+    * Sets the padding in pixels around the viewport.
+    *
+    * Equivalent to `jumpTo({padding: padding})`.
+    *
+    * @memberof Map#
+    * @param padding The desired padding. Format: { left: number, right: number, top: number, bottom: number }
+    * @param eventData Additional properties to be added to event objects of events triggered by this method.
+    * @fires movestart
+    * @fires moveend
+    * @returns {Map} `this`
+    * @example
+    * // Sets a left padding of 300px, and a top padding of 50px
+    * map.setPadding({ left: 300, top: 50 });
+    */
+  def setPadding(padding: PaddingOptions): this.type = js.native
+  def setPadding(padding: PaddingOptions, eventData: EventData): this.type = js.native
   def setPaintProperty(layer: String, name: String, value: js.Any): this.type = js.native
   def setPaintProperty(layer: String, name: String, value: js.Any, klass: String): this.type = js.native
   def setPitch(pitch: Double): this.type = js.native

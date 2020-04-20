@@ -12,7 +12,6 @@ object IconToggleEvent {
   @scala.inline
   def apply(isOn: Boolean): IconToggleEvent = {
     val __obj = js.Dynamic.literal(isOn = isOn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IconToggleEvent]
   }
 }

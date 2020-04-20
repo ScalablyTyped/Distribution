@@ -38,34 +38,32 @@ trait WdCustomLabelPageSize extends js.Object
 
 object WdCustomLabelPageSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCustomLabelA4: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdCustomLabelA4: `2` = this.cast(2)
+  def wdCustomLabelA4LS: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdCustomLabelA4LS: `3` = this.cast(3)
+  def wdCustomLabelA5: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdCustomLabelA5: `4` = this.cast(4)
+  def wdCustomLabelA5LS: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdCustomLabelA5LS: `5` = this.cast(5)
+  def wdCustomLabelB4JIS: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdCustomLabelB4JIS: `13` = this.cast(13)
+  def wdCustomLabelB5: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdCustomLabelB5: `6` = this.cast(6)
+  def wdCustomLabelFanfold: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdCustomLabelFanfold: `8` = this.cast(8)
+  def wdCustomLabelHigaki: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdCustomLabelHigaki: `11` = this.cast(11)
+  def wdCustomLabelHigakiLS: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdCustomLabelHigakiLS: `12` = this.cast(12)
+  def wdCustomLabelLetter: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdCustomLabelLetter: `0` = this.cast(0)
+  def wdCustomLabelLetterLS: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdCustomLabelLetterLS: `1` = this.cast(1)
+  def wdCustomLabelMini: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdCustomLabelMini: `7` = this.cast(7)
+  def wdCustomLabelVertHalfSheet: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdCustomLabelVertHalfSheet: `9` = this.cast(9)
-  @scala.inline
-  def wdCustomLabelVertHalfSheetLS: `10` = this.cast(10)
+  def wdCustomLabelVertHalfSheetLS: `10` = 10.asInstanceOf[`10`]
 }
 

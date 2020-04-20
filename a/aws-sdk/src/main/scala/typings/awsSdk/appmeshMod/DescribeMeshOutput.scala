@@ -16,7 +16,6 @@ object DescribeMeshOutput {
   @scala.inline
   def apply(mesh: MeshData): DescribeMeshOutput = {
     val __obj = js.Dynamic.literal(mesh = mesh.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeMeshOutput]
   }
 }

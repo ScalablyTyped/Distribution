@@ -13,7 +13,6 @@ object AnonHide {
   @scala.inline
   def apply(hide: Double, show: Double): AnonHide = {
     val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHide]
   }
 }

@@ -13,7 +13,6 @@ object AnonSchema {
   @scala.inline
   def apply(schema: GraphQLSchema): AnonSchema = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSchema]
   }
 }

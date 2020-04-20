@@ -51,7 +51,6 @@ object IGenericDerivedFields {
     getProperties: () => js.Promise[IGenericDerivedFieldProperties]
   ): IGenericDerivedFields = {
     val __obj = js.Dynamic.literal(getDerivedField = js.Any.fromFunction1(getDerivedField), getDerivedFieldData = js.Any.fromFunction0(getDerivedFieldData), getDerivedFields = js.Any.fromFunction0(getDerivedFields), getDerivedGroups = js.Any.fromFunction0(getDerivedGroups), getInfo = js.Any.fromFunction0(getInfo), getListData = js.Any.fromFunction0(getListData), getProperties = js.Any.fromFunction0(getProperties))
-  
     __obj.asInstanceOf[IGenericDerivedFields]
   }
 }

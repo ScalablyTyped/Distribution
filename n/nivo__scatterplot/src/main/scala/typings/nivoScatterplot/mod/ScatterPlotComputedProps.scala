@@ -26,7 +26,6 @@ object ScatterPlotComputedProps {
     yScale: /* value */ Value => Double
   ): ScatterPlotComputedProps = {
     val __obj = js.Dynamic.literal(innerHeight = innerHeight.asInstanceOf[js.Any], innerWidth = innerWidth.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], outerHeight = outerHeight.asInstanceOf[js.Any], outerWidth = outerWidth.asInstanceOf[js.Any], xScale = js.Any.fromFunction1(xScale), yScale = js.Any.fromFunction1(yScale))
-  
     __obj.asInstanceOf[ScatterPlotComputedProps]
   }
 }

@@ -1,5 +1,6 @@
 package typings.serverlessJestPlugin.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.awsLambda.handlerMod.Callback
 import typings.lambdaWrapper.AnonHandler
 import typings.lambdaWrapper.AnonLambdaFunction
@@ -20,12 +21,12 @@ object lambdaWrapper extends js.Object {
   def wrap[TEvent, TResult, THandlerName /* <: String */](
     mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
-    */ typings.serverlessJestPlugin.serverlessJestPluginStrings.lambdaWrapper with js.Any
+    */ typings.serverlessJestPlugin.serverlessJestPluginStrings.lambdaWrapper with TopLevel[js.Any]
   ): Wrapped[TEvent, TResult] = js.native
   def wrap[TEvent, TResult, THandlerName /* <: String */](
     mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
-    */ typings.serverlessJestPlugin.serverlessJestPluginStrings.lambdaWrapper with js.Any,
+    */ typings.serverlessJestPlugin.serverlessJestPluginStrings.lambdaWrapper with TopLevel[js.Any],
     options: AnonHandler[THandlerName]
   ): Wrapped[TEvent, TResult] = js.native
 }

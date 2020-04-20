@@ -20,7 +20,6 @@ object CreateTestGridUrlRequest {
   @scala.inline
   def apply(expiresInSeconds: TestGridUrlExpiresInSecondsInput, projectArn: DeviceFarmArn): CreateTestGridUrlRequest = {
     val __obj = js.Dynamic.literal(expiresInSeconds = expiresInSeconds.asInstanceOf[js.Any], projectArn = projectArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTestGridUrlRequest]
   }
 }

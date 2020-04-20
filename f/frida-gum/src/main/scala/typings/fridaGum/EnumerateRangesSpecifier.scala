@@ -19,7 +19,6 @@ object EnumerateRangesSpecifier {
   @scala.inline
   def apply(coalesce: Boolean, protection: PageProtection): EnumerateRangesSpecifier = {
     val __obj = js.Dynamic.literal(coalesce = coalesce.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnumerateRangesSpecifier]
   }
 }

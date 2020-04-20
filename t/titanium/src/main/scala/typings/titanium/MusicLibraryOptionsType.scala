@@ -23,11 +23,11 @@ trait MusicLibraryOptionsType extends js.Object {
   /**
   	 * Function to call if the user presses the cancel button.
   	 */
-  var cancel: js.UndefOr[js.Function1[/* param0 */ FailureResponse, _]] = js.undefined
+  var cancel: js.UndefOr[js.Function1[/* param0 */ FailureResponse, Unit]] = js.undefined
   /**
   	 * Function to call upon receiving an error.
   	 */
-  var error: js.UndefOr[js.Function1[/* param0 */ FailureResponse, _]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* param0 */ FailureResponse, Unit]] = js.undefined
   /**
   	 * An array of media type constants defining selectable media.
   	 */
@@ -35,7 +35,7 @@ trait MusicLibraryOptionsType extends js.Object {
   /**
   	 * Function to call when the music library selection is made.
   	 */
-  var success: js.UndefOr[js.Function1[/* param0 */ MusicLibraryResponseType, _]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* param0 */ MusicLibraryResponseType, Unit]] = js.undefined
 }
 
 object MusicLibraryOptionsType {
@@ -44,10 +44,10 @@ object MusicLibraryOptionsType {
     allowMultipleSelections: js.UndefOr[Boolean] = js.undefined,
     animated: js.UndefOr[Boolean] = js.undefined,
     autohide: js.UndefOr[Boolean] = js.undefined,
-    cancel: /* param0 */ FailureResponse => _ = null,
-    error: /* param0 */ FailureResponse => _ = null,
+    cancel: /* param0 */ FailureResponse => Unit = null,
+    error: /* param0 */ FailureResponse => Unit = null,
     mediaTypes: Double | js.Array[Double] = null,
-    success: /* param0 */ MusicLibraryResponseType => _ = null
+    success: /* param0 */ MusicLibraryResponseType => Unit = null
   ): MusicLibraryOptionsType = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowMultipleSelections)) __obj.updateDynamic("allowMultipleSelections")(allowMultipleSelections.asInstanceOf[js.Any])

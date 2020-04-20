@@ -16,7 +16,6 @@ object characteristicsArraychara {
   @scala.inline
   def apply(characteristics: js.Array[AnonProperties], errMsg: ok | String): characteristicsArraychara = {
     val __obj = js.Dynamic.literal(characteristics = characteristics.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[characteristicsArraychara]
   }
 }

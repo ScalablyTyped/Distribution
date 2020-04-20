@@ -23,7 +23,6 @@ object AnonNone {
   @scala.inline
   def apply(none: String, primary: String, secondary: String): AnonNone = {
     val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], secondary = secondary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNone]
   }
 }

@@ -18,7 +18,6 @@ object PaymentMethodNotification {
   @scala.inline
   def apply(kind: PaymentMethodNotificationKind, revokedPaymentMethodMetadata: AnonCustomerId, timestamp: Date): PaymentMethodNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], revokedPaymentMethodMetadata = revokedPaymentMethodMetadata.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PaymentMethodNotification]
   }
 }

@@ -28,7 +28,6 @@ object OperationSummary {
   @scala.inline
   def apply(OperationId: OperationId, Status: OperationStatus, SubmittedDate: Timestamp, Type: OperationType): OperationSummary = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], SubmittedDate = SubmittedDate.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OperationSummary]
   }
 }

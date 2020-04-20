@@ -37,29 +37,29 @@ class ConsumedAppService protected () extends Document {
   val actions_FConsumedAppService: IList[IAppServiceAction] = js.native
   @JSName("model")
   var model_FConsumedAppService: IModel = js.native
-  def actions(): IList[AppServiceAction] = js.native
-  def appServiceLocation(): AppServiceLocationEnum = js.native
+  def actions: IList[AppServiceAction] = js.native
+  def appServiceLocation: AppServiceLocationEnum = js.native
   def appServiceLocation(newValue: AppServiceLocationEnum): js.Any = js.native
-  def appStoreGuid(): String = js.native
+  def appStoreGuid: String = js.native
   def appStoreGuid(newValue: String): js.Any = js.native
-  def appStoreVersion(): String = js.native
+  def appStoreVersion: String = js.native
   def appStoreVersion(newValue: String): js.Any = js.native
-  def appStoreVersionGuid(): String = js.native
+  def appStoreVersionGuid: String = js.native
   def appStoreVersionGuid(newValue: String): js.Any = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MConsumedAppService(): FolderBase = js.native
-  def fromAppStore(): Boolean = js.native
+  def containerAsFolderBase_MConsumedAppService: FolderBase = js.native
+  def fromAppStore: Boolean = js.native
   def fromAppStore(newValue: Boolean): js.Any = js.native
   def locationConstant(): js.Any = js.native
   def locationConstant(newValue: IConstant): js.Any = js.native
-  def locationConstantQualifiedName(): String | Null = js.native
+  def locationConstantQualifiedName: String | Null = js.native
   @JSName("locationConstant")
-  def locationConstant_Union(): IConstant | Null = js.native
-  def msd(): Msd = js.native
+  def locationConstant_Union: IConstant | Null = js.native
+  def msd: Msd = js.native
   def msd(newValue: Msd): js.Any = js.native
-  def timeOut(): Double = js.native
+  def timeOut: Double = js.native
   def timeOut(newValue: Double): js.Any = js.native
-  def useTimeOut(): Boolean = js.native
+  def useTimeOut: Boolean = js.native
   def useTimeOut(newValue: Boolean): js.Any = js.native
 }
 

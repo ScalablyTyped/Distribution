@@ -174,6 +174,7 @@ trait WeakValidationMapTimePick extends js.Object {
   var open: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var pickerRef: js.UndefOr[Validator[js.UndefOr[MutableRefObject[PickerRefConfig] | Null]]] = js.undefined
   var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var popupClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var popupStyle: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
   var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var ref: js.UndefOr[Validator[js.UndefOr[Null | Ref[_]]]] = js.undefined
@@ -295,6 +296,7 @@ object WeakValidationMapTimePick {
     open: Validator[js.UndefOr[Boolean | Null]] = null,
     pickerRef: Validator[js.UndefOr[MutableRefObject[PickerRefConfig] | Null]] = null,
     placeholder: Validator[js.UndefOr[Null | String]] = null,
+    popupClassName: Validator[js.UndefOr[Null | String]] = null,
     popupStyle: Validator[js.UndefOr[CSSProperties | Null]] = null,
     prefixCls: Validator[js.UndefOr[Null | String]] = null,
     ref: Validator[js.UndefOr[Null | Ref[_]]] = null,
@@ -407,6 +409,7 @@ object WeakValidationMapTimePick {
     if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName.asInstanceOf[js.Any])
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

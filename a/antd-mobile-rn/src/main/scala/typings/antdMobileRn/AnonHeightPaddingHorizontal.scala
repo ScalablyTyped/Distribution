@@ -15,7 +15,6 @@ object AnonHeightPaddingHorizontal {
   @scala.inline
   def apply(fontSize: Double, height: Double, paddingHorizontal: Double, paddingVertical: Double): AnonHeightPaddingHorizontal = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHeightPaddingHorizontal]
   }
 }

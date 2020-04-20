@@ -28,7 +28,6 @@ object AnonFilterOption {
     validateSearch: (/* text */ String, /* props */ MentionsProps) => Boolean
   ): AnonFilterOption = {
     val __obj = js.Dynamic.literal(filterOption = js.Any.fromFunction2(filterOption), notFoundContent = notFoundContent.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], split = split.asInstanceOf[js.Any], validateSearch = js.Any.fromFunction2(validateSearch))
-  
     __obj.asInstanceOf[AnonFilterOption]
   }
 }

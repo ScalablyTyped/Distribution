@@ -13,7 +13,6 @@ object AnonTargetdefaults {
   @scala.inline
   def apply(target_defaults: AnonCflags, variables: AnonClang): AnonTargetdefaults = {
     val __obj = js.Dynamic.literal(target_defaults = target_defaults.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTargetdefaults]
   }
 }

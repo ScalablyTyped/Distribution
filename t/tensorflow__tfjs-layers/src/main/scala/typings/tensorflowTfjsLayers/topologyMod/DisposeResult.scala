@@ -19,7 +19,6 @@ object DisposeResult {
   @scala.inline
   def apply(numDisposedVariables: Double, refCountAfterDispose: Double): DisposeResult = {
     val __obj = js.Dynamic.literal(numDisposedVariables = numDisposedVariables.asInstanceOf[js.Any], refCountAfterDispose = refCountAfterDispose.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisposeResult]
   }
 }

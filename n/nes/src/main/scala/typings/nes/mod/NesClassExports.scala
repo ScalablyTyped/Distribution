@@ -13,7 +13,6 @@ object NesClassExports {
   @scala.inline
   def apply(Client: AnonInstantiable): NesClassExports = {
     val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NesClassExports]
   }
 }

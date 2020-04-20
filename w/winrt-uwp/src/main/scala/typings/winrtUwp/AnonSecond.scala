@@ -14,7 +14,6 @@ object AnonSecond {
   @scala.inline
   def apply(first: IMapView[String, _], second: IMapView[String, _]): AnonSecond = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSecond]
   }
 }

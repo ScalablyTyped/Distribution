@@ -2,6 +2,7 @@ package typings.multer.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.multer.mod._Global_.Express.Multer.File
 import typings.std.Error
 import scala.scalajs.js
@@ -21,7 +22,7 @@ trait DiskStorageOptions extends js.Object {
     */
   var destination: js.UndefOr[
     String | (js.Function3[
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* file */ File, 
       /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit], 
       Unit
@@ -38,7 +39,7 @@ trait DiskStorageOptions extends js.Object {
     */
   var filename: js.UndefOr[
     js.Function3[
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* file */ File, 
       /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit], 
       Unit
@@ -50,12 +51,12 @@ object DiskStorageOptions {
   @scala.inline
   def apply(
     destination: String | (js.Function3[
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* file */ File, 
       /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit], 
       Unit
     ]) = null,
-    filename: (/* req */ Request_[ParamsDictionary], /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit]) => Unit = null
+    filename: (/* req */ Request_[ParamsDictionary, _, _, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit]) => Unit = null
   ): DiskStorageOptions = {
     val __obj = js.Dynamic.literal()
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])

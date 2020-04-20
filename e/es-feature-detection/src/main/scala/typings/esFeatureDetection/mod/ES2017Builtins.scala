@@ -18,22 +18,20 @@ trait ES2017Builtins extends js.Object
 
 object ES2017Builtins {
   @scala.inline
-  def Atomics: typings.esFeatureDetection.esFeatureDetectionStrings.Atomics = this.cast("Atomics")
+  def Atomics: typings.esFeatureDetection.esFeatureDetectionStrings.Atomics = "Atomics".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.Atomics]
   @scala.inline
-  def ObjectDotentries: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotentries = this.cast("Object.entries")
+  def ObjectDotentries: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotentries = "Object.entries".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotentries]
   @scala.inline
-  def ObjectDotgetOwnPropertyDescriptors: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotgetOwnPropertyDescriptors = this.cast("Object.getOwnPropertyDescriptors")
+  def ObjectDotgetOwnPropertyDescriptors: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotgetOwnPropertyDescriptors = "Object.getOwnPropertyDescriptors".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotgetOwnPropertyDescriptors]
   @scala.inline
-  def ObjectDotvalues: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotvalues = this.cast("Object.values")
+  def ObjectDotvalues: typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotvalues = "Object.values".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.ObjectDotvalues]
   @scala.inline
-  def SharedArrayBuffer: typings.esFeatureDetection.esFeatureDetectionStrings.SharedArrayBuffer = this.cast("SharedArrayBuffer")
+  def SharedArrayBuffer: typings.esFeatureDetection.esFeatureDetectionStrings.SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.SharedArrayBuffer]
   @scala.inline
-  def StringDotprototypeDotpadEnd: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotpadEnd = this.cast("String.prototype.padEnd")
+  def StringDotprototypeDotpadEnd: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotpadEnd = "String.prototype.padEnd".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotpadEnd]
   @scala.inline
-  def StringDotprototypeDotpadStart: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotpadStart = this.cast("String.prototype.padStart")
+  def StringDotprototypeDotpadStart: typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotpadStart = "String.prototype.padStart".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.StringDotprototypeDotpadStart]
   @scala.inline
-  def __all: typings.esFeatureDetection.esFeatureDetectionStrings.__all = this.cast("__all")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def __all: typings.esFeatureDetection.esFeatureDetectionStrings.__all = "__all".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.__all]
 }
 

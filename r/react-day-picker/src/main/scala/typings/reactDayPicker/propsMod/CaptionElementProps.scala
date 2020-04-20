@@ -3,7 +3,8 @@ package typings.reactDayPicker.propsMod
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
-import typings.reactDayPicker.commonMod.ClassNames
+import typings.reactDayPicker.classNamesMod.ClassNames
+import typings.reactDayPicker.localeUtilsMod.LocaleUtils
 import typings.std.Date
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -14,7 +15,7 @@ trait CaptionElementProps extends js.Object {
   var classNames: ClassNames
   var date: Date
   var locale: String
-  var localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
+  var localeUtils: LocaleUtils
   var months: js.UndefOr[js.Array[String]] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
 }
@@ -25,7 +26,7 @@ object CaptionElementProps {
     classNames: ClassNames,
     date: Date,
     locale: String,
-    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any,
+    localeUtils: LocaleUtils,
     months: js.Array[String] = null,
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null
   ): CaptionElementProps = {

@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait UseTableCellProps[D /* <: js.Object */] extends js.Object {
+trait UseTableCellProps[D /* <: js.Object */, V] extends js.Object {
   var column: ColumnInstance[D] = js.native
   var row: Row[D] = js.native
-  var value: CellValue = js.native
+  var value: CellValue[V] = js.native
   def getCellProps(): TableCellProps = js.native
   def getCellProps(propGetter: CellPropGetter[D]): TableCellProps = js.native
   def render(`type`: String): ReactNode = js.native

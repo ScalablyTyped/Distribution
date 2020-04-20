@@ -14,14 +14,12 @@ trait MetadataSubType extends js.Object
 
 object MetadataSubType {
   @scala.inline
-  def boolean: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.boolean = this.cast("boolean")
+  def boolean: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.boolean = "boolean".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def number: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.number = "number".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.number]
   @scala.inline
-  def number: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.number = this.cast("number")
+  def `object`: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.`object` = "object".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.`object`]
   @scala.inline
-  def `object`: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.string = this.cast("string")
+  def string: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.string = "string".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.string]
 }
 

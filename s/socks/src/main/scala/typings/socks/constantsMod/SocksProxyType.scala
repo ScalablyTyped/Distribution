@@ -12,10 +12,8 @@ trait SocksProxyType extends js.Object
 
 object SocksProxyType {
   @scala.inline
-  def `4`: typings.socks.socksNumbers.`4` = this.cast(4)
+  def `4`: typings.socks.socksNumbers.`4` = 4.asInstanceOf[typings.socks.socksNumbers.`4`]
   @scala.inline
-  def `5`: typings.socks.socksNumbers.`5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `5`: typings.socks.socksNumbers.`5` = 5.asInstanceOf[typings.socks.socksNumbers.`5`]
 }
 

@@ -70,66 +70,64 @@ trait DataTypeEnum extends js.Object
 
 object DataTypeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbAttachment: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def dbAttachment: `101` = this.cast(101)
+  def dbBigInt: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def dbBigInt: `16` = this.cast(16)
+  def dbBinary: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def dbBinary: `9` = this.cast(9)
+  def dbBoolean: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbBoolean: `1` = this.cast(1)
+  def dbByte: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbByte: `2` = this.cast(2)
+  def dbChar: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def dbChar: `18` = this.cast(18)
+  def dbComplexByte: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def dbComplexByte: `102` = this.cast(102)
+  def dbComplexDecimal: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def dbComplexDecimal: `108` = this.cast(108)
+  def dbComplexDouble: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def dbComplexDouble: `106` = this.cast(106)
+  def dbComplexGUID: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def dbComplexGUID: `107` = this.cast(107)
+  def dbComplexInteger: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def dbComplexInteger: `103` = this.cast(103)
+  def dbComplexLong: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def dbComplexLong: `104` = this.cast(104)
+  def dbComplexSingle: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def dbComplexSingle: `105` = this.cast(105)
+  def dbComplexText: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def dbComplexText: `109` = this.cast(109)
+  def dbCurrency: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def dbCurrency: `5` = this.cast(5)
+  def dbDate: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def dbDate: `8` = this.cast(8)
+  def dbDecimal: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def dbDecimal: `20` = this.cast(20)
+  def dbDouble: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def dbDouble: `7` = this.cast(7)
+  def dbFloat: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def dbFloat: `21` = this.cast(21)
+  def dbGUID: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def dbGUID: `15` = this.cast(15)
+  def dbInteger: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def dbInteger: `3` = this.cast(3)
+  def dbLong: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def dbLong: `4` = this.cast(4)
+  def dbLongBinary: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def dbLongBinary: `11` = this.cast(11)
+  def dbMemo: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def dbMemo: `12` = this.cast(12)
+  def dbNumeric: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def dbNumeric: `19` = this.cast(19)
+  def dbSingle: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def dbSingle: `6` = this.cast(6)
+  def dbText: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def dbText: `10` = this.cast(10)
+  def dbTime: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def dbTime: `22` = this.cast(22)
+  def dbTimeStamp: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def dbTimeStamp: `23` = this.cast(23)
-  @scala.inline
-  def dbVarBinary: `17` = this.cast(17)
+  def dbVarBinary: `17` = 17.asInstanceOf[`17`]
 }
 

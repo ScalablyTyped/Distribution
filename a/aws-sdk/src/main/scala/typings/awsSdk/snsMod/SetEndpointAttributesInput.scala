@@ -20,7 +20,6 @@ object SetEndpointAttributesInput {
   @scala.inline
   def apply(Attributes: MapStringToString, EndpointArn: String): SetEndpointAttributesInput = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], EndpointArn = EndpointArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetEndpointAttributesInput]
   }
 }

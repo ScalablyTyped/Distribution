@@ -16,7 +16,6 @@ object ProjectOperation {
   @scala.inline
   def apply(ProjectedColumns: ProjectedColumnList): ProjectOperation = {
     val __obj = js.Dynamic.literal(ProjectedColumns = ProjectedColumns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectOperation]
   }
 }

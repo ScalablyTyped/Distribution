@@ -16,7 +16,6 @@ object GetQueryLoggingConfigRequest {
   @scala.inline
   def apply(Id: QueryLoggingConfigId): GetQueryLoggingConfigRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetQueryLoggingConfigRequest]
   }
 }

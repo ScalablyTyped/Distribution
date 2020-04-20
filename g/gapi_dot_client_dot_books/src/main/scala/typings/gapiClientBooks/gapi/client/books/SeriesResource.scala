@@ -16,7 +16,6 @@ object SeriesResource {
   @scala.inline
   def apply(get: AnonSeriesid => Request_[Series], membership: MembershipResource): SeriesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), membership = membership.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SeriesResource]
   }
 }

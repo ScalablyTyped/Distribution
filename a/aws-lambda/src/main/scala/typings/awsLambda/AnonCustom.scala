@@ -14,7 +14,6 @@ object AnonCustom {
   @scala.inline
   def apply(custom: CloudFrontCustomOrigin): AnonCustom = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCustom]
   }
 }

@@ -13,7 +13,6 @@ object AnonRenderMode {
   @scala.inline
   def apply(renderMode: RenderMode): AnonRenderMode = {
     val __obj = js.Dynamic.literal(renderMode = renderMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRenderMode]
   }
 }

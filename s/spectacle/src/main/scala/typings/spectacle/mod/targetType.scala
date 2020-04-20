@@ -17,14 +17,12 @@ trait targetType extends js.Object
 
 object targetType {
   @scala.inline
-  def _blank: typings.spectacle.spectacleStrings._blank = this.cast("_blank")
+  def _blank: typings.spectacle.spectacleStrings._blank = "_blank".asInstanceOf[typings.spectacle.spectacleStrings._blank]
   @scala.inline
-  def _parent: typings.spectacle.spectacleStrings._parent = this.cast("_parent")
+  def _parent: typings.spectacle.spectacleStrings._parent = "_parent".asInstanceOf[typings.spectacle.spectacleStrings._parent]
   @scala.inline
-  def _self: typings.spectacle.spectacleStrings._self = this.cast("_self")
+  def _self: typings.spectacle.spectacleStrings._self = "_self".asInstanceOf[typings.spectacle.spectacleStrings._self]
   @scala.inline
-  def _top: typings.spectacle.spectacleStrings._top = this.cast("_top")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def _top: typings.spectacle.spectacleStrings._top = "_top".asInstanceOf[typings.spectacle.spectacleStrings._top]
 }
 

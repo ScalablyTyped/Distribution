@@ -12,7 +12,6 @@ object DelayProperties {
   @scala.inline
   def apply(ms: Double): DelayProperties = {
     val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DelayProperties]
   }
 }

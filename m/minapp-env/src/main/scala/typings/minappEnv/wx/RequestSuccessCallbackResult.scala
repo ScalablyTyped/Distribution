@@ -20,7 +20,6 @@ object RequestSuccessCallbackResult {
   @scala.inline
   def apply(data: String | js.Object | ArrayBuffer, header: js.Object, statusCode: Double): RequestSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestSuccessCallbackResult]
   }
 }

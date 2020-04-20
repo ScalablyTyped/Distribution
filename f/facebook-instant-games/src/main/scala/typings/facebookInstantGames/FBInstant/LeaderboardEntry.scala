@@ -50,7 +50,6 @@ object LeaderboardEntry {
     getTimestamp: () => Double
   ): LeaderboardEntry = {
     val __obj = js.Dynamic.literal(getExtraData = js.Any.fromFunction0(getExtraData), getFormattedScore = js.Any.fromFunction0(getFormattedScore), getPlayer = js.Any.fromFunction0(getPlayer), getRank = js.Any.fromFunction0(getRank), getScore = js.Any.fromFunction0(getScore), getTimestamp = js.Any.fromFunction0(getTimestamp))
-  
     __obj.asInstanceOf[LeaderboardEntry]
   }
 }

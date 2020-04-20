@@ -2,6 +2,7 @@ package typings.commonErrors.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +24,7 @@ class HttpStatusError protected () extends ErrorConstructor {
     * @param message     any message
     */
   def this(status_code: Double) = this()
-  def this(err: Error, req: Request_[ParamsDictionary]) = this()
+  def this(err: Error, req: Request_[ParamsDictionary, _, _, Query]) = this()
   def this(status_code: Double, message: String) = this()
   /**
     * Status code for this error.

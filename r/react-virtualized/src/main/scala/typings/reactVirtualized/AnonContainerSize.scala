@@ -15,7 +15,6 @@ object AnonContainerSize {
   @scala.inline
   def apply(align: String, containerSize: Double, currentOffset: Double, targetIndex: Double): AnonContainerSize = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], containerSize = containerSize.asInstanceOf[js.Any], currentOffset = currentOffset.asInstanceOf[js.Any], targetIndex = targetIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContainerSize]
   }
 }

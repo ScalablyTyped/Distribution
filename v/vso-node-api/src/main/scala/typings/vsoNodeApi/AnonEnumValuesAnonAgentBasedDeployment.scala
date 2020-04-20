@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAgentBasedDeployment {
   @scala.inline
   def apply(enumValues: AnonAgentBasedDeployment): AnonEnumValuesAnonAgentBasedDeployment = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAgentBasedDeployment]
   }
 }

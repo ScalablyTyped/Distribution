@@ -23,7 +23,7 @@ trait LaunchTemplateBlockDeviceMappingEbs extends js.Object {
     */
   var iops: js.UndefOr[Input[Double]] = js.native
   /**
-    * AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
+    * The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
     * `encrypted` must be set to `true` when this is set.
     */
   var kmsKeyId: js.UndefOr[Input[String]] = js.native

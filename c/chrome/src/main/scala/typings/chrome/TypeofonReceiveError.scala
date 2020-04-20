@@ -17,7 +17,6 @@ object TypeofonReceiveError {
     addListener: js.Function1[/* info */ OnReceiveErrorInfo, Unit] => Unit
   ): TypeofonReceiveError = {
     val __obj = js.Dynamic.literal(OnReceiveErrorEnum = OnReceiveErrorEnum.asInstanceOf[js.Any], addListener = js.Any.fromFunction1(addListener))
-  
     __obj.asInstanceOf[TypeofonReceiveError]
   }
 }

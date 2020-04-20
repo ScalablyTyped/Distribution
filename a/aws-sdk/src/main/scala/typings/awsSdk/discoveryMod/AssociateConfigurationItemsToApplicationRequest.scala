@@ -20,7 +20,6 @@ object AssociateConfigurationItemsToApplicationRequest {
   @scala.inline
   def apply(applicationConfigurationId: ApplicationId, configurationIds: ConfigurationIdList): AssociateConfigurationItemsToApplicationRequest = {
     val __obj = js.Dynamic.literal(applicationConfigurationId = applicationConfigurationId.asInstanceOf[js.Any], configurationIds = configurationIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateConfigurationItemsToApplicationRequest]
   }
 }

@@ -13,7 +13,6 @@ object BoardCardSettings {
   @scala.inline
   def apply(cards: StringDictionary[js.Array[FieldSetting]]): BoardCardSettings = {
     val __obj = js.Dynamic.literal(cards = cards.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BoardCardSettings]
   }
 }

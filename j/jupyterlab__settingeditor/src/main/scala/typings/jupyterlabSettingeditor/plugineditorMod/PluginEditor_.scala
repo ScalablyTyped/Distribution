@@ -37,22 +37,22 @@ class PluginEditor_ protected () extends Widget {
   /**
     * Tests whether the settings have been modified and need saving.
     */
-  def isDirty(): Boolean = js.native
+  def isDirty: Boolean = js.native
   def settings(): js.Any = js.native
   def settings(settings: ISettings): js.Any = js.native
   /**
     * The plugin settings being edited.
     */
   @JSName("settings")
-  def settings_Union(): ISettings | Null = js.native
+  def settings_Union: ISettings | Null = js.native
   /**
     * The plugin editor layout state.
     */
-  def state(): IPluginLayout = js.native
+  def state: IPluginLayout = js.native
   def state(state: IPluginLayout): js.Any = js.native
   /**
     * A signal that emits when editor layout state changes and needs to be saved.
     */
-  def stateChanged(): ISignal[this.type, Unit] = js.native
+  def stateChanged: ISignal[this.type, Unit] = js.native
 }
 

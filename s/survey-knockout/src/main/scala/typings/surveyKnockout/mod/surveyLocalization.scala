@@ -15,6 +15,8 @@ object surveyLocalization extends js.Object {
   var localeNames: StringDictionary[js.Any] = js.native
   var locales: StringDictionary[js.Any] = js.native
   var supportedLocales: js.Array[_] = js.native
+  def getCurrentStrings(): js.Any = js.native
+  def getLocaleStrings(loc: String): js.Any = js.native
   def getLocales(): js.Array[String] = js.native
   def getString(strName: String): js.Any = js.native
 }

@@ -42,38 +42,36 @@ trait AcColorIndex extends js.Object
 
 object AcColorIndex {
   @scala.inline
-  def acColorIndexAqua: `14` = this.cast(14)
+  def acColorIndexAqua: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def acColorIndexBlack: `0` = this.cast(0)
+  def acColorIndexBlack: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acColorIndexBlue: `12` = this.cast(12)
+  def acColorIndexBlue: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def acColorIndexBrightGreen: `10` = this.cast(10)
+  def acColorIndexBrightGreen: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def acColorIndexDarkBlue: `4` = this.cast(4)
+  def acColorIndexDarkBlue: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def acColorIndexFuschia: `13` = this.cast(13)
+  def acColorIndexFuschia: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def acColorIndexGray: `7` = this.cast(7)
+  def acColorIndexGray: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def acColorIndexGreen: `2` = this.cast(2)
+  def acColorIndexGreen: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acColorIndexMaroon: `1` = this.cast(1)
+  def acColorIndexMaroon: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acColorIndexOlive: `3` = this.cast(3)
+  def acColorIndexOlive: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acColorIndexRed: `9` = this.cast(9)
+  def acColorIndexRed: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def acColorIndexSilver: `8` = this.cast(8)
+  def acColorIndexSilver: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def acColorIndexTeal: `6` = this.cast(6)
+  def acColorIndexTeal: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def acColorIndexViolet: `5` = this.cast(5)
+  def acColorIndexViolet: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def acColorIndexWhite: `15` = this.cast(15)
+  def acColorIndexWhite: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def acColorIndexYellow: `11` = this.cast(11)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acColorIndexYellow: `11` = 11.asInstanceOf[`11`]
 }
 

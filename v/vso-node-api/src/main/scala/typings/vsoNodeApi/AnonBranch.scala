@@ -14,7 +14,6 @@ object AnonBranch {
   @scala.inline
   def apply(branch: Double, commit: Double, tag: Double): AnonBranch = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBranch]
   }
 }

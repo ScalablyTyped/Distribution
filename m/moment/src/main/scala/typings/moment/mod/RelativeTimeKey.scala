@@ -25,30 +25,28 @@ trait RelativeTimeKey extends js.Object
 
 object RelativeTimeKey {
   @scala.inline
-  def M: typings.moment.momentStrings.M = this.cast("M")
+  def M: typings.moment.momentStrings.M = "M".asInstanceOf[typings.moment.momentStrings.M]
   @scala.inline
-  def MM: typings.moment.momentStrings.MM = this.cast("MM")
+  def MM: typings.moment.momentStrings.MM = "MM".asInstanceOf[typings.moment.momentStrings.MM]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def d: d_ = "d".asInstanceOf[d_]
   @scala.inline
-  def d: d_ = this.cast("d")
+  def dd: typings.moment.momentStrings.dd = "dd".asInstanceOf[typings.moment.momentStrings.dd]
   @scala.inline
-  def dd: typings.moment.momentStrings.dd = this.cast("dd")
+  def h: typings.moment.momentStrings.h = "h".asInstanceOf[typings.moment.momentStrings.h]
   @scala.inline
-  def h: typings.moment.momentStrings.h = this.cast("h")
+  def hh: typings.moment.momentStrings.hh = "hh".asInstanceOf[typings.moment.momentStrings.hh]
   @scala.inline
-  def hh: typings.moment.momentStrings.hh = this.cast("hh")
+  def m: m_ = "m".asInstanceOf[m_]
   @scala.inline
-  def m: m_ = this.cast("m")
+  def mm: mm_ = "mm".asInstanceOf[mm_]
   @scala.inline
-  def mm: mm_ = this.cast("mm")
+  def s: typings.moment.momentStrings.s = "s".asInstanceOf[typings.moment.momentStrings.s]
   @scala.inline
-  def s: typings.moment.momentStrings.s = this.cast("s")
+  def ss: typings.moment.momentStrings.ss = "ss".asInstanceOf[typings.moment.momentStrings.ss]
   @scala.inline
-  def ss: typings.moment.momentStrings.ss = this.cast("ss")
+  def y: typings.moment.momentStrings.y = "y".asInstanceOf[typings.moment.momentStrings.y]
   @scala.inline
-  def y: typings.moment.momentStrings.y = this.cast("y")
-  @scala.inline
-  def yy: typings.moment.momentStrings.yy = this.cast("yy")
+  def yy: typings.moment.momentStrings.yy = "yy".asInstanceOf[typings.moment.momentStrings.yy]
 }
 

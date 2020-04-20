@@ -104,15 +104,15 @@ object sequelizeStrings {
   @scala.inline
   def IMMEDIATE: IMMEDIATE = "IMMEDIATE".asInstanceOf[IMMEDIATE]
   @scala.inline
-  def `KEY SHARE`: `KEY SHARE` = "KEY SHARE".asInstanceOf[`KEY SHARE`]
+  def `KEY SHARE`: `KEY SHARE` = ("KEY SHARE").asInstanceOf[`KEY SHARE`]
   @scala.inline
-  def `NO KEY UPDATE`: `NO KEY UPDATE` = "NO KEY UPDATE".asInstanceOf[`NO KEY UPDATE`]
+  def `NO KEY UPDATE`: `NO KEY UPDATE` = ("NO KEY UPDATE").asInstanceOf[`NO KEY UPDATE`]
   @scala.inline
-  def `READ COMMITTED`: `READ COMMITTED` = "READ COMMITTED".asInstanceOf[`READ COMMITTED`]
+  def `READ COMMITTED`: `READ COMMITTED` = ("READ COMMITTED").asInstanceOf[`READ COMMITTED`]
   @scala.inline
-  def `READ UNCOMMITTED`: `READ UNCOMMITTED` = "READ UNCOMMITTED".asInstanceOf[`READ UNCOMMITTED`]
+  def `READ UNCOMMITTED`: `READ UNCOMMITTED` = ("READ UNCOMMITTED").asInstanceOf[`READ UNCOMMITTED`]
   @scala.inline
-  def `REPEATABLE READ`: `REPEATABLE READ` = "REPEATABLE READ".asInstanceOf[`REPEATABLE READ`]
+  def `REPEATABLE READ`: `REPEATABLE READ` = ("REPEATABLE READ").asInstanceOf[`REPEATABLE READ`]
   @scala.inline
   def SERIALIZABLE: SERIALIZABLE = "SERIALIZABLE".asInstanceOf[SERIALIZABLE]
   @scala.inline
@@ -134,9 +134,9 @@ object sequelizeStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def `foreign key`: `foreign key` = "foreign key".asInstanceOf[`foreign key`]
+  def `foreign key`: `foreign key` = ("foreign key").asInstanceOf[`foreign key`]
   @scala.inline
-  def `primary key`: `primary key` = "primary key".asInstanceOf[`primary key`]
+  def `primary key`: `primary key` = ("primary key").asInstanceOf[`primary key`]
   @scala.inline
   def unique_ : unique_ = "unique".asInstanceOf[unique_]
   @scala.inline

@@ -19,7 +19,6 @@ object FunctionDeadLetterConfig {
   @scala.inline
   def apply(targetArn: String): FunctionDeadLetterConfig = {
     val __obj = js.Dynamic.literal(targetArn = targetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FunctionDeadLetterConfig]
   }
 }

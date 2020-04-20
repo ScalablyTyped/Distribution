@@ -12,10 +12,8 @@ trait LoaderColor extends js.Object
 
 object LoaderColor {
   @scala.inline
-  def blue: typings.wixStyleReact.wixStyleReactStrings.blue = this.cast("blue")
+  def blue: typings.wixStyleReact.wixStyleReactStrings.blue = "blue".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.blue]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def white: typings.wixStyleReact.wixStyleReactStrings.white = this.cast("white")
+  def white: typings.wixStyleReact.wixStyleReactStrings.white = "white".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.white]
 }
 

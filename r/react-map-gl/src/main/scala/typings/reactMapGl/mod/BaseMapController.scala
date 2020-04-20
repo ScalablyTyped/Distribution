@@ -13,7 +13,6 @@ object BaseMapController {
   @scala.inline
   def apply(events: js.Array[String], handleEvent: MapControlEvent => Unit): BaseMapController = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], handleEvent = js.Any.fromFunction1(handleEvent))
-  
     __obj.asInstanceOf[BaseMapController]
   }
 }

@@ -16,7 +16,6 @@ object DisassociateMembershipRequest {
   @scala.inline
   def apply(GraphArn: GraphArn): DisassociateMembershipRequest = {
     val __obj = js.Dynamic.literal(GraphArn = GraphArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateMembershipRequest]
   }
 }

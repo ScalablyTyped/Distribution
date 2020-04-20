@@ -14,7 +14,6 @@ object ObjectConstructor {
   @scala.inline
   def apply(fromEntries: Array[js.Tuple2[js.Any, js.Any]] => Record[js.Any, js.Any]): ObjectConstructor = {
     val __obj = js.Dynamic.literal(fromEntries = js.Any.fromFunction1(fromEntries))
-  
     __obj.asInstanceOf[ObjectConstructor]
   }
 }

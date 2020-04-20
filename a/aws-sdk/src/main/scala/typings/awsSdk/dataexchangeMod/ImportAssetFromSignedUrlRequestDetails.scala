@@ -33,7 +33,6 @@ object ImportAssetFromSignedUrlRequestDetails {
     RevisionId: Id
   ): ImportAssetFromSignedUrlRequestDetails = {
     val __obj = js.Dynamic.literal(AssetName = AssetName.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], Md5Hash = Md5Hash.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImportAssetFromSignedUrlRequestDetails]
   }
 }

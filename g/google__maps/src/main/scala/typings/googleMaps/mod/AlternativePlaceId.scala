@@ -22,7 +22,6 @@ object AlternativePlaceId {
   @scala.inline
   def apply(place_id: String, scope: APP): AlternativePlaceId = {
     val __obj = js.Dynamic.literal(place_id = place_id.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AlternativePlaceId]
   }
 }

@@ -14,7 +14,6 @@ object AnonCallback {
   @scala.inline
   def apply(callback: () => Unit, icon: String, text: String): AnonCallback = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), icon = icon.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCallback]
   }
 }

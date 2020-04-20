@@ -26,22 +26,20 @@ trait PpTextLevelEffect extends js.Object
 
 object PpTextLevelEffect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppAnimateByAllLevels: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def ppAnimateByAllLevels: `16` = this.cast(16)
+  def ppAnimateByFifthLevel: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppAnimateByFifthLevel: `5` = this.cast(5)
+  def ppAnimateByFirstLevel: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppAnimateByFirstLevel: `1` = this.cast(1)
+  def ppAnimateByFourthLevel: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppAnimateByFourthLevel: `4` = this.cast(4)
+  def ppAnimateBySecondLevel: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppAnimateBySecondLevel: `2` = this.cast(2)
+  def ppAnimateByThirdLevel: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppAnimateByThirdLevel: `3` = this.cast(3)
+  def ppAnimateLevelMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppAnimateLevelMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def ppAnimateLevelNone: `0` = this.cast(0)
+  def ppAnimateLevelNone: `0` = 0.asInstanceOf[`0`]
 }
 

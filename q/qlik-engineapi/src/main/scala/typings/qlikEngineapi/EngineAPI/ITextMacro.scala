@@ -47,7 +47,6 @@ object ITextMacro {
     qTag: String
   ): ITextMacro = {
     val __obj = js.Dynamic.literal(qDisplayString = qDisplayString.asInstanceOf[js.Any], qIsReserved = qIsReserved.asInstanceOf[js.Any], qIsSystem = qIsSystem.asInstanceOf[js.Any], qRefSeqNo = qRefSeqNo.asInstanceOf[js.Any], qSetSeqNo = qSetSeqNo.asInstanceOf[js.Any], qTag = qTag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITextMacro]
   }
 }

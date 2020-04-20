@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 object storybookRouterComponents extends storybookRouterProps {
   @scala.inline
-  def Link: ComponentType[LinkProps] = typings.storybookRouter.mod.Link.asInstanceOf[typings.react.mod.ComponentType[LinkProps]]
+  def Link: ComponentType[LinkProps] = typings.storybookRouter.mod.Link.asInstanceOf[ComponentType[LinkProps]]
   @scala.inline
-  def Location: ComponentType[LocationProps] = typings.storybookRouter.mod.Location.asInstanceOf[typings.react.mod.ComponentType[LocationProps]]
+  def Location: ComponentType[LocationProps] = typings.storybookRouter.mod.Location.asInstanceOf[ComponentType[LocationProps]]
   @scala.inline
-  def LocationProvider: ComponentType[LocationProviderProps] = js.constructorOf[typings.storybookRouter.mod.LocationProvider].asInstanceOf[typings.react.mod.ComponentType[LocationProviderProps]]
+  def LocationProvider: ComponentType[LocationProviderProps] = js.constructorOf[typings.storybookRouter.mod.LocationProvider].asInstanceOf[ComponentType[LocationProviderProps]]
   @scala.inline
-  def Match: ComponentType[MatchProps] = typings.storybookRouter.mod.Match.asInstanceOf[typings.react.mod.ComponentType[MatchProps]]
+  def Match: ComponentType[MatchProps] = typings.storybookRouter.mod.Match.asInstanceOf[ComponentType[MatchProps]]
   @scala.inline
-  def Route: ComponentType[RouteProps] = typings.storybookRouter.mod.Route.asInstanceOf[typings.react.mod.ComponentType[RouteProps]]
+  def Route: ComponentType[RouteProps] = typings.storybookRouter.mod.Route.asInstanceOf[ComponentType[RouteProps]]
   @scala.inline
-  def ToggleVisibility: ComponentType[ToggleVisibilityProps] = typings.storybookRouter.visibilityMod.ToggleVisibility.asInstanceOf[typings.react.mod.ComponentType[ToggleVisibilityProps]]
+  def ToggleVisibility: ComponentType[ToggleVisibilityProps] = typings.storybookRouter.visibilityMod.ToggleVisibility.asInstanceOf[ComponentType[ToggleVisibilityProps]]
 }
 

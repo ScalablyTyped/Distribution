@@ -24,20 +24,18 @@ trait AcView extends js.Object
 
 object AcView {
   @scala.inline
-  def acViewDesign: `1` = this.cast(1)
+  def acViewDesign: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acViewLayout: `6` = this.cast(6)
+  def acViewLayout: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def acViewNormal: `0` = this.cast(0)
+  def acViewNormal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acViewPivotChart: `4` = this.cast(4)
+  def acViewPivotChart: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def acViewPivotTable: `3` = this.cast(3)
+  def acViewPivotTable: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acViewPreview: `2` = this.cast(2)
+  def acViewPreview: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acViewReport: `5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acViewReport: `5` = 5.asInstanceOf[`5`]
 }
 

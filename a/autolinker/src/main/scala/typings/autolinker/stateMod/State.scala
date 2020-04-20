@@ -52,48 +52,46 @@ trait State extends js.Object
 
 object State {
   @scala.inline
-  def AfterAttributeName: `6` = this.cast(6)
+  def AfterAttributeName: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def AfterAttributeValueQuoted: `11` = this.cast(11)
+  def AfterAttributeValueQuoted: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def AttributeName: `5` = this.cast(5)
+  def AttributeName: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def AttributeValueDoubleQuoted: `8` = this.cast(8)
+  def AttributeValueDoubleQuoted: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def AttributeValueSingleQuoted: `9` = this.cast(9)
+  def AttributeValueSingleQuoted: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def AttributeValueUnquoted: `10` = this.cast(10)
+  def AttributeValueUnquoted: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def BeforeAttributeName: `4` = this.cast(4)
+  def BeforeAttributeName: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def BeforeAttributeValue: `7` = this.cast(7)
+  def BeforeAttributeValue: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def Comment: `16` = this.cast(16)
+  def Comment: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def CommentEnd: `18` = this.cast(18)
+  def CommentEnd: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def CommentEndBang: `19` = this.cast(19)
+  def CommentEndBang: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def CommentEndDash: `17` = this.cast(17)
+  def CommentEndDash: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def CommentStart: `14` = this.cast(14)
+  def CommentStart: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def CommentStartDash: `15` = this.cast(15)
+  def CommentStartDash: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def Data: `0` = this.cast(0)
+  def Data: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Doctype: `20` = this.cast(20)
+  def Doctype: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def EndTagOpen: `2` = this.cast(2)
+  def EndTagOpen: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def MarkupDeclarationOpenState: `13` = this.cast(13)
+  def MarkupDeclarationOpenState: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def SelfClosingStartTag: `12` = this.cast(12)
+  def SelfClosingStartTag: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def TagName: `3` = this.cast(3)
+  def TagName: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def TagOpen: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TagOpen: `1` = 1.asInstanceOf[`1`]
 }
 

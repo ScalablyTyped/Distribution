@@ -13,12 +13,10 @@ trait HttpFrameworkSelection extends js.Object
 
 object HttpFrameworkSelection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def express: typings.overloadProtection.overloadProtectionStrings.express = "express".asInstanceOf[typings.overloadProtection.overloadProtectionStrings.express]
   @scala.inline
-  def express: typings.overloadProtection.overloadProtectionStrings.express = this.cast("express")
+  def http: typings.overloadProtection.overloadProtectionStrings.http = "http".asInstanceOf[typings.overloadProtection.overloadProtectionStrings.http]
   @scala.inline
-  def http: typings.overloadProtection.overloadProtectionStrings.http = this.cast("http")
-  @scala.inline
-  def restify: typings.overloadProtection.overloadProtectionStrings.restify = this.cast("restify")
+  def restify: typings.overloadProtection.overloadProtectionStrings.restify = "restify".asInstanceOf[typings.overloadProtection.overloadProtectionStrings.restify]
 }
 

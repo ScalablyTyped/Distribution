@@ -41,7 +41,6 @@ object RoomsResource {
     reportStatus: AnonQuotaUser => Request_[RoomStatus]
   ): RoomsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), decline = js.Any.fromFunction1(decline), dismiss = js.Any.fromFunction1(dismiss), get = js.Any.fromFunction1(get), join = js.Any.fromFunction1(join), leave = js.Any.fromFunction1(leave), list = js.Any.fromFunction1(list), reportStatus = js.Any.fromFunction1(reportStatus))
-  
     __obj.asInstanceOf[RoomsResource]
   }
 }

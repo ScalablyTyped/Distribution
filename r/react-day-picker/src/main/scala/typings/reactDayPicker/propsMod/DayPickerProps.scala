@@ -14,9 +14,10 @@ import typings.react.mod.SFC
 import typings.react.mod.TouchEvent
 import typings.reactDayPicker.AnonNextMonth
 import typings.reactDayPicker.PartialModifiers
-import typings.reactDayPicker.commonMod.ClassNames
-import typings.reactDayPicker.commonMod.DayModifiers
-import typings.reactDayPicker.commonMod.Modifier
+import typings.reactDayPicker.classNamesMod.ClassNames
+import typings.reactDayPicker.localeUtilsMod.LocaleUtils
+import typings.reactDayPicker.modifiersMod.DayModifiers
+import typings.reactDayPicker.modifiersMod.Modifier
 import typings.std.Date
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
@@ -41,9 +42,7 @@ trait DayPickerProps extends js.Object {
   var initialMonth: js.UndefOr[Date] = js.undefined
   var labels: js.UndefOr[AnonNextMonth] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
-  var localeUtils: js.UndefOr[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
-  ] = js.undefined
+  var localeUtils: js.UndefOr[LocaleUtils] = js.undefined
   var modifiers: js.UndefOr[PartialModifiers] = js.undefined
   var modifiersStyles: js.UndefOr[js.Object] = js.undefined
   var month: js.UndefOr[Date] = js.undefined
@@ -166,7 +165,7 @@ object DayPickerProps {
     initialMonth: Date = null,
     labels: AnonNextMonth = null,
     locale: String = null,
-    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
+    localeUtils: LocaleUtils = null,
     modifiers: PartialModifiers = null,
     modifiersStyles: js.Object = null,
     month: Date = null,

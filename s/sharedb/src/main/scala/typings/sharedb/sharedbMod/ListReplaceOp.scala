@@ -14,7 +14,6 @@ object ListReplaceOp {
   @scala.inline
   def apply(ld: js.Any, li: js.Any, p: Path): ListReplaceOp = {
     val __obj = js.Dynamic.literal(ld = ld.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListReplaceOp]
   }
 }

@@ -13,7 +13,6 @@ object PickImpllogging {
   @scala.inline
   def apply(logging: String): PickImpllogging = {
     val __obj = js.Dynamic.literal(logging = logging.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpllogging]
   }
 }

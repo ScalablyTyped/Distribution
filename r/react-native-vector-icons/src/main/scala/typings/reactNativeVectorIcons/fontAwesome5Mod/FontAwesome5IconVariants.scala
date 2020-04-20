@@ -14,12 +14,10 @@ trait FontAwesome5IconVariants extends js.Object
 
 object FontAwesome5IconVariants {
   @scala.inline
-  def brand: typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.brand = this.cast("brand")
+  def brand: typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.brand = "brand".asInstanceOf[typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.brand]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def light: typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.light = "light".asInstanceOf[typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.light]
   @scala.inline
-  def light: typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.light = this.cast("light")
-  @scala.inline
-  def solid: typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.solid = this.cast("solid")
+  def solid: typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.solid = "solid".asInstanceOf[typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.solid]
 }
 

@@ -20,7 +20,6 @@ object TopicRuleRepublish {
   @scala.inline
   def apply(roleArn: String, topic: String): TopicRuleRepublish = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TopicRuleRepublish]
   }
 }

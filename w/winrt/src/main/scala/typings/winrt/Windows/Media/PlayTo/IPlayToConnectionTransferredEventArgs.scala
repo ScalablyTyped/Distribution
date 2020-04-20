@@ -13,7 +13,6 @@ object IPlayToConnectionTransferredEventArgs {
   @scala.inline
   def apply(currentSource: PlayToSource, previousSource: PlayToSource): IPlayToConnectionTransferredEventArgs = {
     val __obj = js.Dynamic.literal(currentSource = currentSource.asInstanceOf[js.Any], previousSource = previousSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPlayToConnectionTransferredEventArgs]
   }
 }

@@ -15,7 +15,6 @@ object ImageConfigurationsResource {
   @scala.inline
   def apply(upload: AnonFields => Request_[ImageConfiguration]): ImageConfigurationsResource = {
     val __obj = js.Dynamic.literal(upload = js.Any.fromFunction1(upload))
-  
     __obj.asInstanceOf[ImageConfigurationsResource]
   }
 }

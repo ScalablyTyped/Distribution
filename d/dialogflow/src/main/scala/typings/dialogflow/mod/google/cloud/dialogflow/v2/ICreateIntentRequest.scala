@@ -9,7 +9,9 @@ trait ICreateIntentRequest extends js.Object {
   /** CreateIntentRequest intent */
   var intent: js.UndefOr[IIntent | Null] = js.undefined
   /** CreateIntentRequest intentView */
-  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
+  var intentView: js.UndefOr[
+    IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) | Null
+  ] = js.undefined
   /** CreateIntentRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** CreateIntentRequest parent */
@@ -20,7 +22,7 @@ object ICreateIntentRequest {
   @scala.inline
   def apply(
     intent: IIntent = null,
-    intentView: IntentView | String = null,
+    intentView: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) = null,
     languageCode: String = null,
     parent: String = null
   ): ICreateIntentRequest = {

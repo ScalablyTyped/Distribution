@@ -20,7 +20,6 @@ object Code {
   @scala.inline
   def apply(destination: CodeDestination, source: CodeSource): Code = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Code]
   }
 }

@@ -24,7 +24,6 @@ object SystemError {
   @scala.inline
   def apply(errorData: js.Object, errorType: IMErrorType): SystemError = {
     val __obj = js.Dynamic.literal(errorData = errorData.asInstanceOf[js.Any], errorType = errorType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SystemError]
   }
 }

@@ -23,7 +23,6 @@ object AnonGetElement {
     getElement: (InsertModalColumnDescription[_], EditableAttrs, String, Boolean, js.Any) => ReactElement | Boolean
   ): AnonGetElement = {
     val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction5(getElement))
-  
     __obj.asInstanceOf[AnonGetElement]
   }
 }

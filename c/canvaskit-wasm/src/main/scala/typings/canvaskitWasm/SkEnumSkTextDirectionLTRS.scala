@@ -16,7 +16,6 @@ object SkEnumSkTextDirectionLTRS {
   @scala.inline
   def apply(LTR: SkTextDirection, RTL: SkTextDirection, values: js.Array[SkTextDirection]): SkEnumSkTextDirectionLTRS = {
     val __obj = js.Dynamic.literal(LTR = LTR.asInstanceOf[js.Any], RTL = RTL.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkTextDirectionLTRS]
   }
 }

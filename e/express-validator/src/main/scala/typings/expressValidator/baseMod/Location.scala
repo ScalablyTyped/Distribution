@@ -15,16 +15,14 @@ trait Location extends js.Object
 
 object Location {
   @scala.inline
-  def body: typings.expressValidator.expressValidatorStrings.body = this.cast("body")
+  def body: typings.expressValidator.expressValidatorStrings.body = "body".asInstanceOf[typings.expressValidator.expressValidatorStrings.body]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cookies: typings.expressValidator.expressValidatorStrings.cookies = "cookies".asInstanceOf[typings.expressValidator.expressValidatorStrings.cookies]
   @scala.inline
-  def cookies: typings.expressValidator.expressValidatorStrings.cookies = this.cast("cookies")
+  def headers: typings.expressValidator.expressValidatorStrings.headers = "headers".asInstanceOf[typings.expressValidator.expressValidatorStrings.headers]
   @scala.inline
-  def headers: typings.expressValidator.expressValidatorStrings.headers = this.cast("headers")
+  def params: typings.expressValidator.expressValidatorStrings.params = "params".asInstanceOf[typings.expressValidator.expressValidatorStrings.params]
   @scala.inline
-  def params: typings.expressValidator.expressValidatorStrings.params = this.cast("params")
-  @scala.inline
-  def query: typings.expressValidator.expressValidatorStrings.query = this.cast("query")
+  def query: typings.expressValidator.expressValidatorStrings.query = "query".asInstanceOf[typings.expressValidator.expressValidatorStrings.query]
 }
 

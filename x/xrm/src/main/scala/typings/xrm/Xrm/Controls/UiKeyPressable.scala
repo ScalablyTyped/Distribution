@@ -40,7 +40,6 @@ object UiKeyPressable {
     removeOnKeyPress: ContextSensitiveHandler => Unit
   ): UiKeyPressable = {
     val __obj = js.Dynamic.literal(addOnKeyPress = js.Any.fromFunction1(addOnKeyPress), fireOnKeyPress = js.Any.fromFunction0(fireOnKeyPress), removeOnKeyPress = js.Any.fromFunction1(removeOnKeyPress))
-  
     __obj.asInstanceOf[UiKeyPressable]
   }
 }

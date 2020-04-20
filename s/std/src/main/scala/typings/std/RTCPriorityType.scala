@@ -14,14 +14,12 @@ trait RTCPriorityType extends js.Object
 
 object RTCPriorityType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.std.stdStrings.high = "high".asInstanceOf[typings.std.stdStrings.high]
   @scala.inline
-  def high: typings.std.stdStrings.high = this.cast("high")
+  def low: typings.std.stdStrings.low = "low".asInstanceOf[typings.std.stdStrings.low]
   @scala.inline
-  def low: typings.std.stdStrings.low = this.cast("low")
+  def medium: typings.std.stdStrings.medium = "medium".asInstanceOf[typings.std.stdStrings.medium]
   @scala.inline
-  def medium: typings.std.stdStrings.medium = this.cast("medium")
-  @scala.inline
-  def `very-low`: typings.std.stdStrings.`very-low` = this.cast("very-low")
+  def `very-low`: typings.std.stdStrings.`very-low` = "very-low".asInstanceOf[typings.std.stdStrings.`very-low`]
 }
 

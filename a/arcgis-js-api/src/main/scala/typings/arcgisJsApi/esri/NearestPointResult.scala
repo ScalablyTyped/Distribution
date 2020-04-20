@@ -26,12 +26,6 @@ trait NearestPointResult extends Object {
     */
   var isEmpty: Boolean
   /**
-    * Indicates if the vertex is on the right side of the `geometry`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
-    */
-  var isRightSide: Boolean
-  /**
     * The index of the vertex within the geometry's rings or paths.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
@@ -47,12 +41,10 @@ object NearestPointResult {
     distance: Double,
     hasOwnProperty: PropertyKey => Boolean,
     isEmpty: Boolean,
-    isRightSide: Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     vertexIndex: Double
   ): NearestPointResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isEmpty = isEmpty.asInstanceOf[js.Any], isRightSide = isRightSide.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertexIndex = vertexIndex.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isEmpty = isEmpty.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertexIndex = vertexIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[NearestPointResult]
   }
 }

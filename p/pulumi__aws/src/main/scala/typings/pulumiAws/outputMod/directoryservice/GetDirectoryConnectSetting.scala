@@ -33,7 +33,6 @@ object GetDirectoryConnectSetting {
     vpcId: String
   ): GetDirectoryConnectSetting = {
     val __obj = js.Dynamic.literal(customerDnsIps = customerDnsIps.asInstanceOf[js.Any], customerUsername = customerUsername.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDirectoryConnectSetting]
   }
 }

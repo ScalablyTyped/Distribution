@@ -16,12 +16,10 @@ trait XlCommentDisplayMode extends js.Object
 
 object XlCommentDisplayMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCommentAndIndicator: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlCommentAndIndicator: `1` = this.cast(1)
+  def xlCommentIndicatorOnly: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def xlCommentIndicatorOnly: `-1` = this.cast(-1)
-  @scala.inline
-  def xlNoIndicator: `0` = this.cast(0)
+  def xlNoIndicator: `0` = 0.asInstanceOf[`0`]
 }
 

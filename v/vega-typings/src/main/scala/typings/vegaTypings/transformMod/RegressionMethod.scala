@@ -16,18 +16,16 @@ trait RegressionMethod extends js.Object
 
 object RegressionMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def exp: typings.vegaTypings.vegaTypingsStrings.exp = "exp".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.exp]
   @scala.inline
-  def exp: typings.vegaTypings.vegaTypingsStrings.exp = this.cast("exp")
+  def linear: typings.vegaTypings.vegaTypingsStrings.linear = "linear".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.linear]
   @scala.inline
-  def linear: typings.vegaTypings.vegaTypingsStrings.linear = this.cast("linear")
+  def log: typings.vegaTypings.vegaTypingsStrings.log = "log".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.log]
   @scala.inline
-  def log: typings.vegaTypings.vegaTypingsStrings.log = this.cast("log")
+  def poly: typings.vegaTypings.vegaTypingsStrings.poly = "poly".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.poly]
   @scala.inline
-  def poly: typings.vegaTypings.vegaTypingsStrings.poly = this.cast("poly")
+  def pow: typings.vegaTypings.vegaTypingsStrings.pow = "pow".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.pow]
   @scala.inline
-  def pow: typings.vegaTypings.vegaTypingsStrings.pow = this.cast("pow")
-  @scala.inline
-  def quad: typings.vegaTypings.vegaTypingsStrings.quad = this.cast("quad")
+  def quad: typings.vegaTypings.vegaTypingsStrings.quad = "quad".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.quad]
 }
 

@@ -15,7 +15,7 @@ class DocumentFragment protected () extends _NodeSet {
   protected def this(children: Iterable[Node]) = this()
   val childCount: Double = js.native
   val isEmpty: Boolean = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[Iterator[Node, _, js.UndefOr[scala.Nothing]]] = js.native
   val markers: Map[String, Range] = js.native
   val maxOffset: Double = js.native

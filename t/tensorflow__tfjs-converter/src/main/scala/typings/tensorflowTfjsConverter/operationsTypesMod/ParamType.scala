@@ -22,30 +22,28 @@ trait ParamType extends js.Object
 
 object ParamType {
   @scala.inline
-  def bool: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.bool = this.cast("bool")
+  def bool: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.bool = "bool".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.bool]
   @scala.inline
-  def `bool[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`bool[]` = this.cast("bool[]")
+  def `bool[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`bool[]` = "bool[]".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`bool[]`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dtype: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.dtype = "dtype".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.dtype]
   @scala.inline
-  def dtype: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.dtype = this.cast("dtype")
+  def `dtype[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`dtype[]` = "dtype[]".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`dtype[]`]
   @scala.inline
-  def `dtype[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`dtype[]` = this.cast("dtype[]")
+  def number: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.number = "number".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.number]
   @scala.inline
-  def number: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.number = this.cast("number")
+  def `number[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`number[]` = "number[]".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`number[]`]
   @scala.inline
-  def `number[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`number[]` = this.cast("number[]")
+  def shape: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.shape = "shape".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.shape]
   @scala.inline
-  def shape: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.shape = this.cast("shape")
+  def `shape[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`shape[]` = "shape[]".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`shape[]`]
   @scala.inline
-  def `shape[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`shape[]` = this.cast("shape[]")
+  def string: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.string = "string".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.string]
   @scala.inline
-  def string: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.string = this.cast("string")
+  def `string[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`string[]` = "string[]".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`string[]`]
   @scala.inline
-  def `string[]`: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`string[]` = this.cast("string[]")
+  def tensor: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.tensor = "tensor".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.tensor]
   @scala.inline
-  def tensor: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.tensor = this.cast("tensor")
-  @scala.inline
-  def tensors: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.tensors = this.cast("tensors")
+  def tensors: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.tensors = "tensors".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.tensors]
 }
 

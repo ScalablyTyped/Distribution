@@ -13,7 +13,6 @@ object AlternativeServiceOptions {
   @scala.inline
   def apply(origin: Double | String | URL_): AlternativeServiceOptions = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AlternativeServiceOptions]
   }
 }

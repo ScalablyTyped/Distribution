@@ -12,7 +12,6 @@ object DataOptions {
   @scala.inline
   def apply(dataPath: String): DataOptions = {
     val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataOptions]
   }
 }

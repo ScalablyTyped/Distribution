@@ -19,7 +19,6 @@ object TaskOrchestrationPlanGroupReference {
   @scala.inline
   def apply(planGroup: String, projectId: String): TaskOrchestrationPlanGroupReference = {
     val __obj = js.Dynamic.literal(planGroup = planGroup.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskOrchestrationPlanGroupReference]
   }
 }

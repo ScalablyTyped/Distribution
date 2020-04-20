@@ -12,7 +12,6 @@ object Typeofsst {
   @scala.inline
   def apply(sst_check_min: Double => Double): Typeofsst = {
     val __obj = js.Dynamic.literal(sst_check_min = js.Any.fromFunction1(sst_check_min))
-  
     __obj.asInstanceOf[Typeofsst]
   }
 }

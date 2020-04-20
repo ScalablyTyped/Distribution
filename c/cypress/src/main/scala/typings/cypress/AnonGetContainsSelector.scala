@@ -1,9 +1,10 @@
 package typings.cypress
 
-import typings.cypress.JQuery_.Selector
-import typings.cypress.JQuery_.htmlString
-import typings.cypress.cypressMod.Cypress.ElementCoordinates
-import typings.cypress.cypressMod.Cypress.ElementPositioning
+import typings.cypress.mod.Cypress.ElementCoordinates
+import typings.cypress.mod.Cypress.ElementPositioning
+import typings.jquery.JQuery_
+import typings.jquery.JQuery_.Selector
+import typings.jquery.JQuery_.htmlString
 import typings.std.Document_
 import typings.std.Element
 import typings.std.HTMLElement

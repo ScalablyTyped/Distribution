@@ -4,6 +4,10 @@ import typings.plotlyJs.mod.AxisName
 import typings.plotlyJs.mod.AxisType
 import typings.plotlyJs.mod.Calendar
 import typings.plotlyJs.mod.Color
+import typings.plotlyJs.mod.DataTitle
+import typings.plotlyJs.mod.Font
+import typings.plotlyJs.mod.RangeSelector
+import typings.plotlyJs.mod.RangeSlider
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
 import typings.plotlyJs.plotlyJsStrings.B
@@ -55,6 +59,7 @@ import typings.plotlyJs.plotlyJsStrings.ticks
 import typings.plotlyJs.plotlyJsStrings.top
 import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,8 +95,8 @@ trait PartialLayoutAxisAngle extends js.Object {
   var position: js.UndefOr[Double] = js.undefined
   var range: js.UndefOr[js.Array[_]] = js.undefined
   var rangemode: js.UndefOr[normal | tozero | nonnegative] = js.undefined
-  var rangeselector: js.UndefOr[PartialRangeSelectorActivecolor] = js.undefined
-  var rangeslider: js.UndefOr[PartialRangeSlider] = js.undefined
+  var rangeselector: js.UndefOr[Partial[RangeSelector]] = js.undefined
+  var rangeslider: js.UndefOr[Partial[RangeSlider]] = js.undefined
   var scaleanchor: js.UndefOr[AxisName] = js.undefined
   var scaleratio: js.UndefOr[Double] = js.undefined
   var separatethousands: js.UndefOr[Boolean] = js.undefined
@@ -110,7 +115,7 @@ trait PartialLayoutAxisAngle extends js.Object {
   var tick0: js.UndefOr[Double | String] = js.undefined
   var tickangle: js.UndefOr[Double] = js.undefined
   var tickcolor: js.UndefOr[Color] = js.undefined
-  var tickfont: js.UndefOr[PartialFont] = js.undefined
+  var tickfont: js.UndefOr[Partial[Font]] = js.undefined
   var tickformat: js.UndefOr[String] = js.undefined
   var ticklen: js.UndefOr[Double] = js.undefined
   var tickmode: js.UndefOr[auto | linear | array] = js.undefined
@@ -120,8 +125,8 @@ trait PartialLayoutAxisAngle extends js.Object {
   var ticktext: js.UndefOr[js.Array[String]] = js.undefined
   var tickvals: js.UndefOr[js.Array[_]] = js.undefined
   var tickwidth: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String | PartialDataTitleFont] = js.undefined
-  var titlefont: js.UndefOr[PartialFont] = js.undefined
+  var title: js.UndefOr[String | Partial[DataTitle]] = js.undefined
+  var titlefont: js.UndefOr[Partial[Font]] = js.undefined
   var `type`: js.UndefOr[AxisType] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
   var zeroline: js.UndefOr[Boolean] = js.undefined
@@ -159,8 +164,8 @@ object PartialLayoutAxisAngle {
     position: Int | Double = null,
     range: js.Array[_] = null,
     rangemode: normal | tozero | nonnegative = null,
-    rangeselector: PartialRangeSelectorActivecolor = null,
-    rangeslider: PartialRangeSlider = null,
+    rangeselector: Partial[RangeSelector] = null,
+    rangeslider: Partial[RangeSlider] = null,
     scaleanchor: AxisName = null,
     scaleratio: Int | Double = null,
     separatethousands: js.UndefOr[Boolean] = js.undefined,
@@ -179,7 +184,7 @@ object PartialLayoutAxisAngle {
     tick0: Double | String = null,
     tickangle: Int | Double = null,
     tickcolor: Color = null,
-    tickfont: PartialFont = null,
+    tickfont: Partial[Font] = null,
     tickformat: String = null,
     ticklen: Int | Double = null,
     tickmode: auto | linear | array = null,
@@ -189,8 +194,8 @@ object PartialLayoutAxisAngle {
     ticktext: js.Array[String] = null,
     tickvals: js.Array[_] = null,
     tickwidth: Int | Double = null,
-    title: String | PartialDataTitleFont = null,
-    titlefont: PartialFont = null,
+    title: String | Partial[DataTitle] = null,
+    titlefont: Partial[Font] = null,
     `type`: AxisType = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zeroline: js.UndefOr[Boolean] = js.undefined,

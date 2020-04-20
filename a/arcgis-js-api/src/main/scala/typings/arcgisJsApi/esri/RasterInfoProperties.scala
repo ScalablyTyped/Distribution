@@ -65,6 +65,12 @@ trait RasterInfoProperties extends js.Object {
     */
   var extent: js.UndefOr[ExtentProperties] = js.undefined
   /**
+    * Raster height (row count) in pixels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#height)
+    */
+  var height: js.UndefOr[Double] = js.undefined
+  /**
     * Raster histograms return basic name-value pairs for number of bins, min and max bounding values, counts of pixels in each bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
@@ -83,11 +89,17 @@ trait RasterInfoProperties extends js.Object {
     */
   var multidimensionalInfo: js.UndefOr[js.Any] = js.undefined
   /**
+    * The pixel value representing no available information. Can be a number (same value for all bands) or array (specific value for each band).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#noDataValue)
+    */
+  var noDataValue: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  /**
     * Raster pixel size. Specifies the pixel size being identified on the x and y axis. Defaults to the base resolution of the dataset when not specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
-  var pixelSize: js.UndefOr[PointProperties] = js.undefined
+  var pixelSize: js.UndefOr[RasterInfoPixelSize] = js.undefined
   /**
     * Pixel type for the raster data source.
     *
@@ -119,6 +131,12 @@ trait RasterInfoProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
     */
   var statistics: js.UndefOr[js.Array[RasterInfoStatistics]] = js.undefined
+  /**
+    * Raster width (column count) in pixels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#width)
+    */
+  var width: js.UndefOr[Double] = js.undefined
 }
 
 object RasterInfoProperties {
@@ -129,13 +147,16 @@ object RasterInfoProperties {
     colormap: js.Array[js.Array[Double]] = null,
     dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir` = null,
     extent: ExtentProperties = null,
+    height: Int | Double = null,
     histograms: js.Array[_] = null,
     keyProperties: js.Any = null,
     multidimensionalInfo: js.Any = null,
-    pixelSize: PointProperties = null,
+    noDataValue: Double | js.Array[Double] = null,
+    pixelSize: RasterInfoPixelSize = null,
     pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = null,
     spatialReference: SpatialReferenceProperties = null,
-    statistics: js.Array[RasterInfoStatistics] = null
+    statistics: js.Array[RasterInfoStatistics] = null,
+    width: Int | Double = null
   ): RasterInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (attributeTable != null) __obj.updateDynamic("attributeTable")(attributeTable.asInstanceOf[js.Any])
@@ -143,13 +164,16 @@ object RasterInfoProperties {
     if (colormap != null) __obj.updateDynamic("colormap")(colormap.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (histograms != null) __obj.updateDynamic("histograms")(histograms.asInstanceOf[js.Any])
     if (keyProperties != null) __obj.updateDynamic("keyProperties")(keyProperties.asInstanceOf[js.Any])
     if (multidimensionalInfo != null) __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo.asInstanceOf[js.Any])
+    if (noDataValue != null) __obj.updateDynamic("noDataValue")(noDataValue.asInstanceOf[js.Any])
     if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize.asInstanceOf[js.Any])
     if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterInfoProperties]
   }
 }

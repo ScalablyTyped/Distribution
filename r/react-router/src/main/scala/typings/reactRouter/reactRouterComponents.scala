@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 
 object reactRouterComponents extends reactRouterProps {
   @scala.inline
-  def MemoryRouter: ComponentType[MemoryRouterProps] = js.constructorOf[typings.reactRouter.mod.MemoryRouter].asInstanceOf[typings.react.mod.ComponentType[MemoryRouterProps]]
+  def MemoryRouter: ComponentType[MemoryRouterProps] = js.constructorOf[typings.reactRouter.mod.MemoryRouter].asInstanceOf[ComponentType[MemoryRouterProps]]
   @scala.inline
-  def Prompt: ComponentType[PromptProps] = js.constructorOf[typings.reactRouter.mod.Prompt].asInstanceOf[typings.react.mod.ComponentType[PromptProps]]
+  def Prompt: ComponentType[PromptProps] = js.constructorOf[typings.reactRouter.mod.Prompt].asInstanceOf[ComponentType[PromptProps]]
   @scala.inline
-  def Redirect: ComponentType[RedirectProps] = js.constructorOf[typings.reactRouter.mod.Redirect].asInstanceOf[typings.react.mod.ComponentType[RedirectProps]]
+  def Redirect: ComponentType[RedirectProps] = js.constructorOf[typings.reactRouter.mod.Redirect].asInstanceOf[ComponentType[RedirectProps]]
   @scala.inline
-  def Route[T /* <: RouteProps */]: ComponentType[T] = js.constructorOf[typings.reactRouter.mod.Route[T]].asInstanceOf[typings.react.mod.ComponentType[T]]
+  def Route[T /* <: RouteProps */]: ComponentType[T] = js.constructorOf[typings.reactRouter.mod.Route[T]].asInstanceOf[ComponentType[T]]
   @scala.inline
-  def Router: ComponentType[RouterProps] = js.constructorOf[typings.reactRouter.mod.Router].asInstanceOf[typings.react.mod.ComponentType[RouterProps]]
+  def Router: ComponentType[RouterProps] = js.constructorOf[typings.reactRouter.mod.Router].asInstanceOf[ComponentType[RouterProps]]
   @scala.inline
-  def StaticRouter: ComponentType[StaticRouterProps] = js.constructorOf[typings.reactRouter.mod.StaticRouter].asInstanceOf[typings.react.mod.ComponentType[StaticRouterProps]]
+  def StaticRouter: ComponentType[StaticRouterProps] = js.constructorOf[typings.reactRouter.mod.StaticRouter].asInstanceOf[ComponentType[StaticRouterProps]]
   @scala.inline
-  def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.reactRouter.mod.Switch].asInstanceOf[typings.react.mod.ComponentType[SwitchProps]]
+  def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.reactRouter.mod.Switch].asInstanceOf[ComponentType[SwitchProps]]
 }
 

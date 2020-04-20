@@ -19,10 +19,8 @@ trait TextPlacement extends js.Object
 
 object TextPlacement {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def line: typings.openlayers.openlayersStrings.line = "line".asInstanceOf[typings.openlayers.openlayersStrings.line]
   @scala.inline
-  def line: typings.openlayers.openlayersStrings.line = this.cast("line")
-  @scala.inline
-  def point: point_ = this.cast("point")
+  def point: point_ = "point".asInstanceOf[point_]
 }
 

@@ -25,7 +25,6 @@ object ICartesianProductGenerator {
     toArray: () => js.Array[T]
   ): ICartesianProductGenerator[T] = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), next = js.Any.fromFunction0(next), nth = js.Any.fromFunction1(nth), toArray = js.Any.fromFunction0(toArray))
-  
     __obj.asInstanceOf[ICartesianProductGenerator[T]]
   }
 }

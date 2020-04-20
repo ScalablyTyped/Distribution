@@ -24,7 +24,6 @@ object ReferenceProvider {
     provideReferences: (TextDocument, Position, ReferenceContext, CancellationToken) => ProviderResult[js.Array[Location]]
   ): ReferenceProvider = {
     val __obj = js.Dynamic.literal(provideReferences = js.Any.fromFunction4(provideReferences))
-  
     __obj.asInstanceOf[ReferenceProvider]
   }
 }

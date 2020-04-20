@@ -1,6 +1,7 @@
 
 # Scala.js typings for redux-promise-middleware
 
+Typings are for version 6.1.2
 
 ## Library description:
 Enables simple, yet robust handling of async action creators in Redux
@@ -9,9 +10,9 @@ Enables simple, yet robust handling of async action creators in Redux
 | ------------------ | :-------------: |
 | Full name          | redux-promise-middleware |
 | Keywords           | redux, middleware, middlewares, promise, promises, optimistic update, optimistic updates, async, async functions |
-| # releases         | 15 |
-| # dependents       | 120 |
-| # downloads        | 2741131 |
+| # releases         | 10 |
+| # dependents       | 131 |
+| # downloads        | 4038754 |
 | # stars            | 17 |
 
 ## Links
@@ -23,7 +24,7 @@ Enables simple, yet robust handling of async action creators in Redux
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

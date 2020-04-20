@@ -39,7 +39,6 @@ object IngressRule {
   @scala.inline
   def apply(host: String, http: HTTPIngressRuleValue): IngressRule = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IngressRule]
   }
 }

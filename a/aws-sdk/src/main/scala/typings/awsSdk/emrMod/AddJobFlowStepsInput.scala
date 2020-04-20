@@ -20,7 +20,6 @@ object AddJobFlowStepsInput {
   @scala.inline
   def apply(JobFlowId: XmlStringMaxLen256, Steps: StepConfigList): AddJobFlowStepsInput = {
     val __obj = js.Dynamic.literal(JobFlowId = JobFlowId.asInstanceOf[js.Any], Steps = Steps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddJobFlowStepsInput]
   }
 }

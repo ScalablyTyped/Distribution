@@ -19,7 +19,6 @@ object Mass {
   @scala.inline
   def apply(setMass: Double => Mass): Mass = {
     val __obj = js.Dynamic.literal(setMass = js.Any.fromFunction1(setMass))
-  
     __obj.asInstanceOf[Mass]
   }
 }

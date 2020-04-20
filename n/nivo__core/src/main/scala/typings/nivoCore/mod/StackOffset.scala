@@ -15,16 +15,14 @@ trait StackOffset extends js.Object
 
 object StackOffset {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def diverging: typings.nivoCore.nivoCoreStrings.diverging = "diverging".asInstanceOf[typings.nivoCore.nivoCoreStrings.diverging]
   @scala.inline
-  def diverging: typings.nivoCore.nivoCoreStrings.diverging = this.cast("diverging")
+  def expand: typings.nivoCore.nivoCoreStrings.expand = "expand".asInstanceOf[typings.nivoCore.nivoCoreStrings.expand]
   @scala.inline
-  def expand: typings.nivoCore.nivoCoreStrings.expand = this.cast("expand")
+  def none: typings.nivoCore.nivoCoreStrings.none = "none".asInstanceOf[typings.nivoCore.nivoCoreStrings.none]
   @scala.inline
-  def none: typings.nivoCore.nivoCoreStrings.none = this.cast("none")
+  def silhouette: typings.nivoCore.nivoCoreStrings.silhouette = "silhouette".asInstanceOf[typings.nivoCore.nivoCoreStrings.silhouette]
   @scala.inline
-  def silhouette: typings.nivoCore.nivoCoreStrings.silhouette = this.cast("silhouette")
-  @scala.inline
-  def wiggle: typings.nivoCore.nivoCoreStrings.wiggle = this.cast("wiggle")
+  def wiggle: typings.nivoCore.nivoCoreStrings.wiggle = "wiggle".asInstanceOf[typings.nivoCore.nivoCoreStrings.wiggle]
 }
 

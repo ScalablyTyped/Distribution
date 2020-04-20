@@ -15,7 +15,6 @@ object HeaderResizeOptions {
   @scala.inline
   def apply(timer: Double): HeaderResizeOptions = {
     val __obj = js.Dynamic.literal(timer = timer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeaderResizeOptions]
   }
 }

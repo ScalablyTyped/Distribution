@@ -13,7 +13,6 @@ object PublicChannelServices {
   @scala.inline
   def apply(network: Network): PublicChannelServices = {
     val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PublicChannelServices]
   }
 }

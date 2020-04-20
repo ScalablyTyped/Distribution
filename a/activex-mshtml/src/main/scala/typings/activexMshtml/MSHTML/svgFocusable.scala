@@ -20,16 +20,14 @@ trait svgFocusable extends js.Object
 
 object svgFocusable {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def svgFocusableAuto: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def svgFocusableAuto: `1` = this.cast(1)
+  def svgFocusableFalse: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def svgFocusableFalse: `3` = this.cast(3)
+  def svgFocusableNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def svgFocusableNotSet: `0` = this.cast(0)
+  def svgFocusableTrue: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def svgFocusableTrue: `2` = this.cast(2)
-  @scala.inline
-  def svgFocusable_Max: `2147483647` = this.cast(2147483647)
+  def svgFocusable_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

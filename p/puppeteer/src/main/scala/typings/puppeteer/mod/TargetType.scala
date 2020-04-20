@@ -16,18 +16,16 @@ trait TargetType extends js.Object
 
 object TargetType {
   @scala.inline
-  def background_page: typings.puppeteer.puppeteerStrings.background_page = this.cast("background_page")
+  def background_page: typings.puppeteer.puppeteerStrings.background_page = "background_page".asInstanceOf[typings.puppeteer.puppeteerStrings.background_page]
   @scala.inline
-  def browser: typings.puppeteer.puppeteerStrings.browser = this.cast("browser")
+  def browser: typings.puppeteer.puppeteerStrings.browser = "browser".asInstanceOf[typings.puppeteer.puppeteerStrings.browser]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def other: typings.puppeteer.puppeteerStrings.other = "other".asInstanceOf[typings.puppeteer.puppeteerStrings.other]
   @scala.inline
-  def other: typings.puppeteer.puppeteerStrings.other = this.cast("other")
+  def page: typings.puppeteer.puppeteerStrings.page = "page".asInstanceOf[typings.puppeteer.puppeteerStrings.page]
   @scala.inline
-  def page: typings.puppeteer.puppeteerStrings.page = this.cast("page")
+  def service_worker: typings.puppeteer.puppeteerStrings.service_worker = "service_worker".asInstanceOf[typings.puppeteer.puppeteerStrings.service_worker]
   @scala.inline
-  def service_worker: typings.puppeteer.puppeteerStrings.service_worker = this.cast("service_worker")
-  @scala.inline
-  def shared_worker: typings.puppeteer.puppeteerStrings.shared_worker = this.cast("shared_worker")
+  def shared_worker: typings.puppeteer.puppeteerStrings.shared_worker = "shared_worker".asInstanceOf[typings.puppeteer.puppeteerStrings.shared_worker]
 }
 

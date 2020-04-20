@@ -31,7 +31,6 @@ object BoxModel {
     paddingBox: Rect
   ): BoxModel = {
     val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any], borderBox = borderBox.asInstanceOf[js.Any], contentBox = contentBox.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], marginBox = marginBox.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], paddingBox = paddingBox.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BoxModel]
   }
 }

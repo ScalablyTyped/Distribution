@@ -12,7 +12,6 @@ object UserAgentRegisteredEvent {
   @scala.inline
   def apply(response: IncomingResponse): UserAgentRegisteredEvent = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserAgentRegisteredEvent]
   }
 }

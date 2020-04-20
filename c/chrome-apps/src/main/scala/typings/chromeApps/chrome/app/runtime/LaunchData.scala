@@ -3,28 +3,50 @@ package typings.chromeApps.chrome.app.runtime
 import typings.chromeApps.AnonABOUTPAGE
 import typings.chromeApps.AnonNEWNOTE
 import typings.chromeApps.chrome.ToStringLiteral
-import typings.chromeApps.chromeAppsStrings.about_page
-import typings.chromeApps.chromeAppsStrings.app_launcher
-import typings.chromeApps.chromeAppsStrings.background
-import typings.chromeApps.chromeAppsStrings.chrome_internal
-import typings.chromeApps.chromeAppsStrings.command_line
-import typings.chromeApps.chromeAppsStrings.context_menu
-import typings.chromeApps.chromeAppsStrings.ephemeral_app
-import typings.chromeApps.chromeAppsStrings.extensions_page
-import typings.chromeApps.chromeAppsStrings.file_handler
-import typings.chromeApps.chromeAppsStrings.installed_notification
-import typings.chromeApps.chromeAppsStrings.keyboard
-import typings.chromeApps.chromeAppsStrings.kiosk
-import typings.chromeApps.chromeAppsStrings.load_and_launch
-import typings.chromeApps.chromeAppsStrings.management_api
-import typings.chromeApps.chromeAppsStrings.new_note
-import typings.chromeApps.chromeAppsStrings.new_tab_page
-import typings.chromeApps.chromeAppsStrings.reload
-import typings.chromeApps.chromeAppsStrings.restart
-import typings.chromeApps.chromeAppsStrings.system_tray
-import typings.chromeApps.chromeAppsStrings.test
-import typings.chromeApps.chromeAppsStrings.untracked
-import typings.chromeApps.chromeAppsStrings.url_handler
+import typings.chromeApps.chromeAppsStrings.ABOUT_PAGE
+import typings.chromeApps.chromeAppsStrings.APP_LAUNCHER
+import typings.chromeApps.chromeAppsStrings.BACKGROUND
+import typings.chromeApps.chromeAppsStrings.CHROME_INTERNAL
+import typings.chromeApps.chromeAppsStrings.COMMAND_LINE
+import typings.chromeApps.chromeAppsStrings.CONTEXT_MENU
+import typings.chromeApps.chromeAppsStrings.EPHEMERAL_APP
+import typings.chromeApps.chromeAppsStrings.EXTENSIONS_PAGE
+import typings.chromeApps.chromeAppsStrings.FILE_HANDLER
+import typings.chromeApps.chromeAppsStrings.INSTALLED_NOTIFICATION
+import typings.chromeApps.chromeAppsStrings.KEYBOARD
+import typings.chromeApps.chromeAppsStrings.KIOSK
+import typings.chromeApps.chromeAppsStrings.LOAD_AND_LAUNCH
+import typings.chromeApps.chromeAppsStrings.MANAGEMENT_API
+import typings.chromeApps.chromeAppsStrings.NEW_NOTE
+import typings.chromeApps.chromeAppsStrings.NEW_TAB_PAGE
+import typings.chromeApps.chromeAppsStrings.RELOAD
+import typings.chromeApps.chromeAppsStrings.RESTART
+import typings.chromeApps.chromeAppsStrings.SYSTEM_TRAY
+import typings.chromeApps.chromeAppsStrings.TEST
+import typings.chromeApps.chromeAppsStrings.UNTRACKED
+import typings.chromeApps.chromeAppsStrings.URL_HANDLER
+import typings.chromeApps.chromeAppsStrings.about_page_
+import typings.chromeApps.chromeAppsStrings.app_launcher_
+import typings.chromeApps.chromeAppsStrings.background_
+import typings.chromeApps.chromeAppsStrings.chrome_internal_
+import typings.chromeApps.chromeAppsStrings.command_line_
+import typings.chromeApps.chromeAppsStrings.context_menu_
+import typings.chromeApps.chromeAppsStrings.ephemeral_app_
+import typings.chromeApps.chromeAppsStrings.extensions_page_
+import typings.chromeApps.chromeAppsStrings.file_handler_
+import typings.chromeApps.chromeAppsStrings.installed_notification_
+import typings.chromeApps.chromeAppsStrings.keyboard_
+import typings.chromeApps.chromeAppsStrings.kiosk_
+import typings.chromeApps.chromeAppsStrings.load_and_launch_
+import typings.chromeApps.chromeAppsStrings.management_api_
+import typings.chromeApps.chromeAppsStrings.new_note_
+import typings.chromeApps.chromeAppsStrings.new_tab_page_
+import typings.chromeApps.chromeAppsStrings.reload_
+import typings.chromeApps.chromeAppsStrings.restart_
+import typings.chromeApps.chromeAppsStrings.system_tray_
+import typings.chromeApps.chromeAppsStrings.test_
+import typings.chromeApps.chromeAppsStrings.untracked_
+import typings.chromeApps.chromeAppsStrings.url_handler_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +61,7 @@ trait LaunchData extends js.Object {
     * |____________________|____________|____________________________________________|
     * @since Chrome 54.
     */
-  var actionData: js.UndefOr[ToStringLiteral[AnonNEWNOTE, String, Exclude[String, new_note]]] = js.undefined
+  var actionData: js.UndefOr[ToStringLiteral[AnonNEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]] = js.undefined
   /**
     * The ID of the file or URL handler that the app is being invoked with.
     * Handler IDs are the top-level keys in the file_handlers and/or url_handlers dictionaries in the manifest.
@@ -69,10 +91,10 @@ trait LaunchData extends js.Object {
   var source: js.UndefOr[
     ToStringLiteral[
       AnonABOUTPAGE, 
-      String, 
+      ABOUT_PAGE | APP_LAUNCHER | BACKGROUND | CHROME_INTERNAL | COMMAND_LINE | CONTEXT_MENU | EPHEMERAL_APP | EXTENSIONS_PAGE | FILE_HANDLER | INSTALLED_NOTIFICATION | KEYBOARD | KIOSK | LOAD_AND_LAUNCH | MANAGEMENT_API | NEW_TAB_PAGE | RELOAD | RESTART | SYSTEM_TRAY | TEST | UNTRACKED | URL_HANDLER, 
       Exclude[
-        String, 
-        command_line | background | url_handler | system_tray | context_menu | chrome_internal | installed_notification | kiosk | restart | reload | new_tab_page | test | extensions_page | file_handler | management_api | about_page | load_and_launch | untracked | app_launcher | keyboard | ephemeral_app
+        ABOUT_PAGE | APP_LAUNCHER | BACKGROUND | CHROME_INTERNAL | COMMAND_LINE | CONTEXT_MENU | EPHEMERAL_APP | EXTENSIONS_PAGE | FILE_HANDLER | INSTALLED_NOTIFICATION | KEYBOARD | KIOSK | LOAD_AND_LAUNCH | MANAGEMENT_API | NEW_TAB_PAGE | RELOAD | RESTART | SYSTEM_TRAY | TEST | UNTRACKED | URL_HANDLER, 
+        command_line_ | background_ | url_handler_ | system_tray_ | context_menu_ | chrome_internal_ | installed_notification_ | kiosk_ | restart_ | reload_ | new_tab_page_ | test_ | extensions_page_ | file_handler_ | management_api_ | about_page_ | load_and_launch_ | untracked_ | app_launcher_ | keyboard_ | ephemeral_app_
       ]
     ]
   ] = js.undefined
@@ -85,7 +107,7 @@ trait LaunchData extends js.Object {
 object LaunchData {
   @scala.inline
   def apply(
-    actionData: ToStringLiteral[AnonNEWNOTE, String, Exclude[String, new_note]] = null,
+    actionData: ToStringLiteral[AnonNEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]] = null,
     id: String = null,
     isKioskSession: js.UndefOr[Boolean] = js.undefined,
     isPublicSession: js.UndefOr[Boolean] = js.undefined,
@@ -93,10 +115,10 @@ object LaunchData {
     referrerUrl: String = null,
     source: ToStringLiteral[
       AnonABOUTPAGE, 
-      String, 
+      ABOUT_PAGE | APP_LAUNCHER | BACKGROUND | CHROME_INTERNAL | COMMAND_LINE | CONTEXT_MENU | EPHEMERAL_APP | EXTENSIONS_PAGE | FILE_HANDLER | INSTALLED_NOTIFICATION | KEYBOARD | KIOSK | LOAD_AND_LAUNCH | MANAGEMENT_API | NEW_TAB_PAGE | RELOAD | RESTART | SYSTEM_TRAY | TEST | UNTRACKED | URL_HANDLER, 
       Exclude[
-        String, 
-        command_line | background | url_handler | system_tray | context_menu | chrome_internal | installed_notification | kiosk | restart | reload | new_tab_page | test | extensions_page | file_handler | management_api | about_page | load_and_launch | untracked | app_launcher | keyboard | ephemeral_app
+        ABOUT_PAGE | APP_LAUNCHER | BACKGROUND | CHROME_INTERNAL | COMMAND_LINE | CONTEXT_MENU | EPHEMERAL_APP | EXTENSIONS_PAGE | FILE_HANDLER | INSTALLED_NOTIFICATION | KEYBOARD | KIOSK | LOAD_AND_LAUNCH | MANAGEMENT_API | NEW_TAB_PAGE | RELOAD | RESTART | SYSTEM_TRAY | TEST | UNTRACKED | URL_HANDLER, 
+        command_line_ | background_ | url_handler_ | system_tray_ | context_menu_ | chrome_internal_ | installed_notification_ | kiosk_ | restart_ | reload_ | new_tab_page_ | test_ | extensions_page_ | file_handler_ | management_api_ | about_page_ | load_and_launch_ | untracked_ | app_launcher_ | keyboard_ | ephemeral_app_
       ]
     ] = null,
     url: String = null

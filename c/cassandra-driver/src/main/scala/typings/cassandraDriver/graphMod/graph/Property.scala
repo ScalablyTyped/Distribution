@@ -13,7 +13,6 @@ object Property {
   @scala.inline
   def apply(key: js.Any, value: js.Any): Property = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Property]
   }
 }

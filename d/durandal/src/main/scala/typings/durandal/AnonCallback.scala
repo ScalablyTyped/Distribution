@@ -14,7 +14,6 @@ object AnonCallback {
   @scala.inline
   def apply(callback: String => Unit, routePattern: RegExp): AnonCallback = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), routePattern = routePattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCallback]
   }
 }

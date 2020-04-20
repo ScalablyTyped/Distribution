@@ -20,7 +20,6 @@ object IPrintCustomOptionDetails {
     value: js.Any
   ): IPrintCustomOptionDetails = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], optionId = optionId.asInstanceOf[js.Any], optionType = optionType.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], trySetValue = js.Any.fromFunction1(trySetValue), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPrintCustomOptionDetails]
   }
 }

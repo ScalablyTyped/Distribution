@@ -27,7 +27,6 @@ object DraggableDimension {
     placeholder: Placeholder
   ): DraggableDimension = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], descriptor = descriptor.asInstanceOf[js.Any], displaceBy = displaceBy.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DraggableDimension]
   }
 }

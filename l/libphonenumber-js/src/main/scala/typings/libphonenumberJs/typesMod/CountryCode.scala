@@ -256,498 +256,496 @@ trait CountryCode extends js.Object
 
 object CountryCode {
   @scala.inline
-  def `001`: typings.libphonenumberJs.libphonenumberJsStrings.`001` = this.cast("001")
+  def `001`: typings.libphonenumberJs.libphonenumberJsStrings.`001` = "001".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.`001`]
   @scala.inline
-  def AC: typings.libphonenumberJs.libphonenumberJsStrings.AC = this.cast("AC")
+  def AC: typings.libphonenumberJs.libphonenumberJsStrings.AC = "AC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AC]
   @scala.inline
-  def AD: typings.libphonenumberJs.libphonenumberJsStrings.AD = this.cast("AD")
+  def AD: typings.libphonenumberJs.libphonenumberJsStrings.AD = "AD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AD]
   @scala.inline
-  def AE: typings.libphonenumberJs.libphonenumberJsStrings.AE = this.cast("AE")
+  def AE: typings.libphonenumberJs.libphonenumberJsStrings.AE = "AE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AE]
   @scala.inline
-  def AF: typings.libphonenumberJs.libphonenumberJsStrings.AF = this.cast("AF")
+  def AF: typings.libphonenumberJs.libphonenumberJsStrings.AF = "AF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AF]
   @scala.inline
-  def AG: typings.libphonenumberJs.libphonenumberJsStrings.AG = this.cast("AG")
+  def AG: typings.libphonenumberJs.libphonenumberJsStrings.AG = "AG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AG]
   @scala.inline
-  def AI: typings.libphonenumberJs.libphonenumberJsStrings.AI = this.cast("AI")
+  def AI: typings.libphonenumberJs.libphonenumberJsStrings.AI = "AI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AI]
   @scala.inline
-  def AL: typings.libphonenumberJs.libphonenumberJsStrings.AL = this.cast("AL")
+  def AL: typings.libphonenumberJs.libphonenumberJsStrings.AL = "AL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AL]
   @scala.inline
-  def AM: typings.libphonenumberJs.libphonenumberJsStrings.AM = this.cast("AM")
+  def AM: typings.libphonenumberJs.libphonenumberJsStrings.AM = "AM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AM]
   @scala.inline
-  def AO: typings.libphonenumberJs.libphonenumberJsStrings.AO = this.cast("AO")
+  def AO: typings.libphonenumberJs.libphonenumberJsStrings.AO = "AO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AO]
   @scala.inline
-  def AR: typings.libphonenumberJs.libphonenumberJsStrings.AR = this.cast("AR")
+  def AR: typings.libphonenumberJs.libphonenumberJsStrings.AR = "AR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AR]
   @scala.inline
-  def AS: typings.libphonenumberJs.libphonenumberJsStrings.AS = this.cast("AS")
+  def AS: typings.libphonenumberJs.libphonenumberJsStrings.AS = "AS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AS]
   @scala.inline
-  def AT: typings.libphonenumberJs.libphonenumberJsStrings.AT = this.cast("AT")
+  def AT: typings.libphonenumberJs.libphonenumberJsStrings.AT = "AT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AT]
   @scala.inline
-  def AU: typings.libphonenumberJs.libphonenumberJsStrings.AU = this.cast("AU")
+  def AU: typings.libphonenumberJs.libphonenumberJsStrings.AU = "AU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AU]
   @scala.inline
-  def AW: typings.libphonenumberJs.libphonenumberJsStrings.AW = this.cast("AW")
+  def AW: typings.libphonenumberJs.libphonenumberJsStrings.AW = "AW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AW]
   @scala.inline
-  def AX: typings.libphonenumberJs.libphonenumberJsStrings.AX = this.cast("AX")
+  def AX: typings.libphonenumberJs.libphonenumberJsStrings.AX = "AX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AX]
   @scala.inline
-  def AZ: typings.libphonenumberJs.libphonenumberJsStrings.AZ = this.cast("AZ")
+  def AZ: typings.libphonenumberJs.libphonenumberJsStrings.AZ = "AZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AZ]
   @scala.inline
-  def BA: typings.libphonenumberJs.libphonenumberJsStrings.BA = this.cast("BA")
+  def BA: typings.libphonenumberJs.libphonenumberJsStrings.BA = "BA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BA]
   @scala.inline
-  def BB: typings.libphonenumberJs.libphonenumberJsStrings.BB = this.cast("BB")
+  def BB: typings.libphonenumberJs.libphonenumberJsStrings.BB = "BB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BB]
   @scala.inline
-  def BD: typings.libphonenumberJs.libphonenumberJsStrings.BD = this.cast("BD")
+  def BD: typings.libphonenumberJs.libphonenumberJsStrings.BD = "BD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BD]
   @scala.inline
-  def BE: typings.libphonenumberJs.libphonenumberJsStrings.BE = this.cast("BE")
+  def BE: typings.libphonenumberJs.libphonenumberJsStrings.BE = "BE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BE]
   @scala.inline
-  def BF: typings.libphonenumberJs.libphonenumberJsStrings.BF = this.cast("BF")
+  def BF: typings.libphonenumberJs.libphonenumberJsStrings.BF = "BF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BF]
   @scala.inline
-  def BG: typings.libphonenumberJs.libphonenumberJsStrings.BG = this.cast("BG")
+  def BG: typings.libphonenumberJs.libphonenumberJsStrings.BG = "BG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BG]
   @scala.inline
-  def BH: typings.libphonenumberJs.libphonenumberJsStrings.BH = this.cast("BH")
+  def BH: typings.libphonenumberJs.libphonenumberJsStrings.BH = "BH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BH]
   @scala.inline
-  def BI: typings.libphonenumberJs.libphonenumberJsStrings.BI = this.cast("BI")
+  def BI: typings.libphonenumberJs.libphonenumberJsStrings.BI = "BI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BI]
   @scala.inline
-  def BJ: typings.libphonenumberJs.libphonenumberJsStrings.BJ = this.cast("BJ")
+  def BJ: typings.libphonenumberJs.libphonenumberJsStrings.BJ = "BJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BJ]
   @scala.inline
-  def BL: typings.libphonenumberJs.libphonenumberJsStrings.BL = this.cast("BL")
+  def BL: typings.libphonenumberJs.libphonenumberJsStrings.BL = "BL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BL]
   @scala.inline
-  def BM: typings.libphonenumberJs.libphonenumberJsStrings.BM = this.cast("BM")
+  def BM: typings.libphonenumberJs.libphonenumberJsStrings.BM = "BM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BM]
   @scala.inline
-  def BN: typings.libphonenumberJs.libphonenumberJsStrings.BN = this.cast("BN")
+  def BN: typings.libphonenumberJs.libphonenumberJsStrings.BN = "BN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BN]
   @scala.inline
-  def BO: typings.libphonenumberJs.libphonenumberJsStrings.BO = this.cast("BO")
+  def BO: typings.libphonenumberJs.libphonenumberJsStrings.BO = "BO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BO]
   @scala.inline
-  def BQ: typings.libphonenumberJs.libphonenumberJsStrings.BQ = this.cast("BQ")
+  def BQ: typings.libphonenumberJs.libphonenumberJsStrings.BQ = "BQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BQ]
   @scala.inline
-  def BR: typings.libphonenumberJs.libphonenumberJsStrings.BR = this.cast("BR")
+  def BR: typings.libphonenumberJs.libphonenumberJsStrings.BR = "BR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BR]
   @scala.inline
-  def BS: typings.libphonenumberJs.libphonenumberJsStrings.BS = this.cast("BS")
+  def BS: typings.libphonenumberJs.libphonenumberJsStrings.BS = "BS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BS]
   @scala.inline
-  def BT: typings.libphonenumberJs.libphonenumberJsStrings.BT = this.cast("BT")
+  def BT: typings.libphonenumberJs.libphonenumberJsStrings.BT = "BT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BT]
   @scala.inline
-  def BW: typings.libphonenumberJs.libphonenumberJsStrings.BW = this.cast("BW")
+  def BW: typings.libphonenumberJs.libphonenumberJsStrings.BW = "BW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BW]
   @scala.inline
-  def BY: typings.libphonenumberJs.libphonenumberJsStrings.BY = this.cast("BY")
+  def BY: typings.libphonenumberJs.libphonenumberJsStrings.BY = "BY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BY]
   @scala.inline
-  def BZ: typings.libphonenumberJs.libphonenumberJsStrings.BZ = this.cast("BZ")
+  def BZ: typings.libphonenumberJs.libphonenumberJsStrings.BZ = "BZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BZ]
   @scala.inline
-  def CA: typings.libphonenumberJs.libphonenumberJsStrings.CA = this.cast("CA")
+  def CA: typings.libphonenumberJs.libphonenumberJsStrings.CA = "CA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CA]
   @scala.inline
-  def CC: typings.libphonenumberJs.libphonenumberJsStrings.CC = this.cast("CC")
+  def CC: typings.libphonenumberJs.libphonenumberJsStrings.CC = "CC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CC]
   @scala.inline
-  def CD: typings.libphonenumberJs.libphonenumberJsStrings.CD = this.cast("CD")
+  def CD: typings.libphonenumberJs.libphonenumberJsStrings.CD = "CD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CD]
   @scala.inline
-  def CF: typings.libphonenumberJs.libphonenumberJsStrings.CF = this.cast("CF")
+  def CF: typings.libphonenumberJs.libphonenumberJsStrings.CF = "CF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CF]
   @scala.inline
-  def CG: typings.libphonenumberJs.libphonenumberJsStrings.CG = this.cast("CG")
+  def CG: typings.libphonenumberJs.libphonenumberJsStrings.CG = "CG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CG]
   @scala.inline
-  def CH: typings.libphonenumberJs.libphonenumberJsStrings.CH = this.cast("CH")
+  def CH: typings.libphonenumberJs.libphonenumberJsStrings.CH = "CH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CH]
   @scala.inline
-  def CI: typings.libphonenumberJs.libphonenumberJsStrings.CI = this.cast("CI")
+  def CI: typings.libphonenumberJs.libphonenumberJsStrings.CI = "CI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CI]
   @scala.inline
-  def CK: typings.libphonenumberJs.libphonenumberJsStrings.CK = this.cast("CK")
+  def CK: typings.libphonenumberJs.libphonenumberJsStrings.CK = "CK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CK]
   @scala.inline
-  def CL: typings.libphonenumberJs.libphonenumberJsStrings.CL = this.cast("CL")
+  def CL: typings.libphonenumberJs.libphonenumberJsStrings.CL = "CL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CL]
   @scala.inline
-  def CM: typings.libphonenumberJs.libphonenumberJsStrings.CM = this.cast("CM")
+  def CM: typings.libphonenumberJs.libphonenumberJsStrings.CM = "CM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CM]
   @scala.inline
-  def CN: typings.libphonenumberJs.libphonenumberJsStrings.CN = this.cast("CN")
+  def CN: typings.libphonenumberJs.libphonenumberJsStrings.CN = "CN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CN]
   @scala.inline
-  def CO: typings.libphonenumberJs.libphonenumberJsStrings.CO = this.cast("CO")
+  def CO: typings.libphonenumberJs.libphonenumberJsStrings.CO = "CO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CO]
   @scala.inline
-  def CR: typings.libphonenumberJs.libphonenumberJsStrings.CR = this.cast("CR")
+  def CR: typings.libphonenumberJs.libphonenumberJsStrings.CR = "CR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CR]
   @scala.inline
-  def CU: typings.libphonenumberJs.libphonenumberJsStrings.CU = this.cast("CU")
+  def CU: typings.libphonenumberJs.libphonenumberJsStrings.CU = "CU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CU]
   @scala.inline
-  def CV: typings.libphonenumberJs.libphonenumberJsStrings.CV = this.cast("CV")
+  def CV: typings.libphonenumberJs.libphonenumberJsStrings.CV = "CV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CV]
   @scala.inline
-  def CW: typings.libphonenumberJs.libphonenumberJsStrings.CW = this.cast("CW")
+  def CW: typings.libphonenumberJs.libphonenumberJsStrings.CW = "CW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CW]
   @scala.inline
-  def CX: typings.libphonenumberJs.libphonenumberJsStrings.CX = this.cast("CX")
+  def CX: typings.libphonenumberJs.libphonenumberJsStrings.CX = "CX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CX]
   @scala.inline
-  def CY: typings.libphonenumberJs.libphonenumberJsStrings.CY = this.cast("CY")
+  def CY: typings.libphonenumberJs.libphonenumberJsStrings.CY = "CY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CY]
   @scala.inline
-  def CZ: typings.libphonenumberJs.libphonenumberJsStrings.CZ = this.cast("CZ")
+  def CZ: typings.libphonenumberJs.libphonenumberJsStrings.CZ = "CZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CZ]
   @scala.inline
-  def DE: typings.libphonenumberJs.libphonenumberJsStrings.DE = this.cast("DE")
+  def DE: typings.libphonenumberJs.libphonenumberJsStrings.DE = "DE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DE]
   @scala.inline
-  def DJ: typings.libphonenumberJs.libphonenumberJsStrings.DJ = this.cast("DJ")
+  def DJ: typings.libphonenumberJs.libphonenumberJsStrings.DJ = "DJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DJ]
   @scala.inline
-  def DK: typings.libphonenumberJs.libphonenumberJsStrings.DK = this.cast("DK")
+  def DK: typings.libphonenumberJs.libphonenumberJsStrings.DK = "DK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DK]
   @scala.inline
-  def DM: typings.libphonenumberJs.libphonenumberJsStrings.DM = this.cast("DM")
+  def DM: typings.libphonenumberJs.libphonenumberJsStrings.DM = "DM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DM]
   @scala.inline
-  def DO: typings.libphonenumberJs.libphonenumberJsStrings.DO = this.cast("DO")
+  def DO: typings.libphonenumberJs.libphonenumberJsStrings.DO = "DO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DO]
   @scala.inline
-  def DZ: typings.libphonenumberJs.libphonenumberJsStrings.DZ = this.cast("DZ")
+  def DZ: typings.libphonenumberJs.libphonenumberJsStrings.DZ = "DZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DZ]
   @scala.inline
-  def EC: typings.libphonenumberJs.libphonenumberJsStrings.EC = this.cast("EC")
+  def EC: typings.libphonenumberJs.libphonenumberJsStrings.EC = "EC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EC]
   @scala.inline
-  def EE: typings.libphonenumberJs.libphonenumberJsStrings.EE = this.cast("EE")
+  def EE: typings.libphonenumberJs.libphonenumberJsStrings.EE = "EE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EE]
   @scala.inline
-  def EG: typings.libphonenumberJs.libphonenumberJsStrings.EG = this.cast("EG")
+  def EG: typings.libphonenumberJs.libphonenumberJsStrings.EG = "EG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EG]
   @scala.inline
-  def EH: typings.libphonenumberJs.libphonenumberJsStrings.EH = this.cast("EH")
+  def EH: typings.libphonenumberJs.libphonenumberJsStrings.EH = "EH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EH]
   @scala.inline
-  def ER: typings.libphonenumberJs.libphonenumberJsStrings.ER = this.cast("ER")
+  def ER: typings.libphonenumberJs.libphonenumberJsStrings.ER = "ER".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ER]
   @scala.inline
-  def ES: typings.libphonenumberJs.libphonenumberJsStrings.ES = this.cast("ES")
+  def ES: typings.libphonenumberJs.libphonenumberJsStrings.ES = "ES".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ES]
   @scala.inline
-  def ET: typings.libphonenumberJs.libphonenumberJsStrings.ET = this.cast("ET")
+  def ET: typings.libphonenumberJs.libphonenumberJsStrings.ET = "ET".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ET]
   @scala.inline
-  def FI: typings.libphonenumberJs.libphonenumberJsStrings.FI = this.cast("FI")
+  def FI: typings.libphonenumberJs.libphonenumberJsStrings.FI = "FI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FI]
   @scala.inline
-  def FJ: typings.libphonenumberJs.libphonenumberJsStrings.FJ = this.cast("FJ")
+  def FJ: typings.libphonenumberJs.libphonenumberJsStrings.FJ = "FJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FJ]
   @scala.inline
-  def FK: typings.libphonenumberJs.libphonenumberJsStrings.FK = this.cast("FK")
+  def FK: typings.libphonenumberJs.libphonenumberJsStrings.FK = "FK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FK]
   @scala.inline
-  def FM: typings.libphonenumberJs.libphonenumberJsStrings.FM = this.cast("FM")
+  def FM: typings.libphonenumberJs.libphonenumberJsStrings.FM = "FM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FM]
   @scala.inline
-  def FO: typings.libphonenumberJs.libphonenumberJsStrings.FO = this.cast("FO")
+  def FO: typings.libphonenumberJs.libphonenumberJsStrings.FO = "FO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FO]
   @scala.inline
-  def FR: typings.libphonenumberJs.libphonenumberJsStrings.FR = this.cast("FR")
+  def FR: typings.libphonenumberJs.libphonenumberJsStrings.FR = "FR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FR]
   @scala.inline
-  def GA: typings.libphonenumberJs.libphonenumberJsStrings.GA = this.cast("GA")
+  def GA: typings.libphonenumberJs.libphonenumberJsStrings.GA = "GA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GA]
   @scala.inline
-  def GB: typings.libphonenumberJs.libphonenumberJsStrings.GB = this.cast("GB")
+  def GB: typings.libphonenumberJs.libphonenumberJsStrings.GB = "GB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GB]
   @scala.inline
-  def GD: typings.libphonenumberJs.libphonenumberJsStrings.GD = this.cast("GD")
+  def GD: typings.libphonenumberJs.libphonenumberJsStrings.GD = "GD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GD]
   @scala.inline
-  def GE: typings.libphonenumberJs.libphonenumberJsStrings.GE = this.cast("GE")
+  def GE: typings.libphonenumberJs.libphonenumberJsStrings.GE = "GE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GE]
   @scala.inline
-  def GF: typings.libphonenumberJs.libphonenumberJsStrings.GF = this.cast("GF")
+  def GF: typings.libphonenumberJs.libphonenumberJsStrings.GF = "GF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GF]
   @scala.inline
-  def GG: typings.libphonenumberJs.libphonenumberJsStrings.GG = this.cast("GG")
+  def GG: typings.libphonenumberJs.libphonenumberJsStrings.GG = "GG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GG]
   @scala.inline
-  def GH: typings.libphonenumberJs.libphonenumberJsStrings.GH = this.cast("GH")
+  def GH: typings.libphonenumberJs.libphonenumberJsStrings.GH = "GH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GH]
   @scala.inline
-  def GI: typings.libphonenumberJs.libphonenumberJsStrings.GI = this.cast("GI")
+  def GI: typings.libphonenumberJs.libphonenumberJsStrings.GI = "GI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GI]
   @scala.inline
-  def GL: typings.libphonenumberJs.libphonenumberJsStrings.GL = this.cast("GL")
+  def GL: typings.libphonenumberJs.libphonenumberJsStrings.GL = "GL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GL]
   @scala.inline
-  def GM: typings.libphonenumberJs.libphonenumberJsStrings.GM = this.cast("GM")
+  def GM: typings.libphonenumberJs.libphonenumberJsStrings.GM = "GM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GM]
   @scala.inline
-  def GN: typings.libphonenumberJs.libphonenumberJsStrings.GN = this.cast("GN")
+  def GN: typings.libphonenumberJs.libphonenumberJsStrings.GN = "GN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GN]
   @scala.inline
-  def GP: typings.libphonenumberJs.libphonenumberJsStrings.GP = this.cast("GP")
+  def GP: typings.libphonenumberJs.libphonenumberJsStrings.GP = "GP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GP]
   @scala.inline
-  def GQ: typings.libphonenumberJs.libphonenumberJsStrings.GQ = this.cast("GQ")
+  def GQ: typings.libphonenumberJs.libphonenumberJsStrings.GQ = "GQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GQ]
   @scala.inline
-  def GR: typings.libphonenumberJs.libphonenumberJsStrings.GR = this.cast("GR")
+  def GR: typings.libphonenumberJs.libphonenumberJsStrings.GR = "GR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GR]
   @scala.inline
-  def GT: typings.libphonenumberJs.libphonenumberJsStrings.GT = this.cast("GT")
+  def GT: typings.libphonenumberJs.libphonenumberJsStrings.GT = "GT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GT]
   @scala.inline
-  def GU: typings.libphonenumberJs.libphonenumberJsStrings.GU = this.cast("GU")
+  def GU: typings.libphonenumberJs.libphonenumberJsStrings.GU = "GU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GU]
   @scala.inline
-  def GW: typings.libphonenumberJs.libphonenumberJsStrings.GW = this.cast("GW")
+  def GW: typings.libphonenumberJs.libphonenumberJsStrings.GW = "GW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GW]
   @scala.inline
-  def GY: typings.libphonenumberJs.libphonenumberJsStrings.GY = this.cast("GY")
+  def GY: typings.libphonenumberJs.libphonenumberJsStrings.GY = "GY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GY]
   @scala.inline
-  def HK: typings.libphonenumberJs.libphonenumberJsStrings.HK = this.cast("HK")
+  def HK: typings.libphonenumberJs.libphonenumberJsStrings.HK = "HK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HK]
   @scala.inline
-  def HN: typings.libphonenumberJs.libphonenumberJsStrings.HN = this.cast("HN")
+  def HN: typings.libphonenumberJs.libphonenumberJsStrings.HN = "HN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HN]
   @scala.inline
-  def HR: typings.libphonenumberJs.libphonenumberJsStrings.HR = this.cast("HR")
+  def HR: typings.libphonenumberJs.libphonenumberJsStrings.HR = "HR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HR]
   @scala.inline
-  def HT: typings.libphonenumberJs.libphonenumberJsStrings.HT = this.cast("HT")
+  def HT: typings.libphonenumberJs.libphonenumberJsStrings.HT = "HT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HT]
   @scala.inline
-  def HU: typings.libphonenumberJs.libphonenumberJsStrings.HU = this.cast("HU")
+  def HU: typings.libphonenumberJs.libphonenumberJsStrings.HU = "HU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HU]
   @scala.inline
-  def ID: typings.libphonenumberJs.libphonenumberJsStrings.ID = this.cast("ID")
+  def ID: typings.libphonenumberJs.libphonenumberJsStrings.ID = "ID".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ID]
   @scala.inline
-  def IE: typings.libphonenumberJs.libphonenumberJsStrings.IE = this.cast("IE")
+  def IE: typings.libphonenumberJs.libphonenumberJsStrings.IE = "IE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IE]
   @scala.inline
-  def IL: typings.libphonenumberJs.libphonenumberJsStrings.IL = this.cast("IL")
+  def IL: typings.libphonenumberJs.libphonenumberJsStrings.IL = "IL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IL]
   @scala.inline
-  def IM: typings.libphonenumberJs.libphonenumberJsStrings.IM = this.cast("IM")
+  def IM: typings.libphonenumberJs.libphonenumberJsStrings.IM = "IM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IM]
   @scala.inline
-  def IN: typings.libphonenumberJs.libphonenumberJsStrings.IN = this.cast("IN")
+  def IN: typings.libphonenumberJs.libphonenumberJsStrings.IN = "IN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IN]
   @scala.inline
-  def IO: typings.libphonenumberJs.libphonenumberJsStrings.IO = this.cast("IO")
+  def IO: typings.libphonenumberJs.libphonenumberJsStrings.IO = "IO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IO]
   @scala.inline
-  def IQ: typings.libphonenumberJs.libphonenumberJsStrings.IQ = this.cast("IQ")
+  def IQ: typings.libphonenumberJs.libphonenumberJsStrings.IQ = "IQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IQ]
   @scala.inline
-  def IR: typings.libphonenumberJs.libphonenumberJsStrings.IR = this.cast("IR")
+  def IR: typings.libphonenumberJs.libphonenumberJsStrings.IR = "IR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IR]
   @scala.inline
-  def IS: typings.libphonenumberJs.libphonenumberJsStrings.IS = this.cast("IS")
+  def IS: typings.libphonenumberJs.libphonenumberJsStrings.IS = "IS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IS]
   @scala.inline
-  def IT: typings.libphonenumberJs.libphonenumberJsStrings.IT = this.cast("IT")
+  def IT: typings.libphonenumberJs.libphonenumberJsStrings.IT = "IT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IT]
   @scala.inline
-  def JE: typings.libphonenumberJs.libphonenumberJsStrings.JE = this.cast("JE")
+  def JE: typings.libphonenumberJs.libphonenumberJsStrings.JE = "JE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JE]
   @scala.inline
-  def JM: typings.libphonenumberJs.libphonenumberJsStrings.JM = this.cast("JM")
+  def JM: typings.libphonenumberJs.libphonenumberJsStrings.JM = "JM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JM]
   @scala.inline
-  def JO: typings.libphonenumberJs.libphonenumberJsStrings.JO = this.cast("JO")
+  def JO: typings.libphonenumberJs.libphonenumberJsStrings.JO = "JO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JO]
   @scala.inline
-  def JP: typings.libphonenumberJs.libphonenumberJsStrings.JP = this.cast("JP")
+  def JP: typings.libphonenumberJs.libphonenumberJsStrings.JP = "JP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JP]
   @scala.inline
-  def KE: typings.libphonenumberJs.libphonenumberJsStrings.KE = this.cast("KE")
+  def KE: typings.libphonenumberJs.libphonenumberJsStrings.KE = "KE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KE]
   @scala.inline
-  def KG: typings.libphonenumberJs.libphonenumberJsStrings.KG = this.cast("KG")
+  def KG: typings.libphonenumberJs.libphonenumberJsStrings.KG = "KG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KG]
   @scala.inline
-  def KH: typings.libphonenumberJs.libphonenumberJsStrings.KH = this.cast("KH")
+  def KH: typings.libphonenumberJs.libphonenumberJsStrings.KH = "KH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KH]
   @scala.inline
-  def KI: typings.libphonenumberJs.libphonenumberJsStrings.KI = this.cast("KI")
+  def KI: typings.libphonenumberJs.libphonenumberJsStrings.KI = "KI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KI]
   @scala.inline
-  def KM: typings.libphonenumberJs.libphonenumberJsStrings.KM = this.cast("KM")
+  def KM: typings.libphonenumberJs.libphonenumberJsStrings.KM = "KM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KM]
   @scala.inline
-  def KN: typings.libphonenumberJs.libphonenumberJsStrings.KN = this.cast("KN")
+  def KN: typings.libphonenumberJs.libphonenumberJsStrings.KN = "KN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KN]
   @scala.inline
-  def KP: typings.libphonenumberJs.libphonenumberJsStrings.KP = this.cast("KP")
+  def KP: typings.libphonenumberJs.libphonenumberJsStrings.KP = "KP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KP]
   @scala.inline
-  def KR: typings.libphonenumberJs.libphonenumberJsStrings.KR = this.cast("KR")
+  def KR: typings.libphonenumberJs.libphonenumberJsStrings.KR = "KR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KR]
   @scala.inline
-  def KW: typings.libphonenumberJs.libphonenumberJsStrings.KW = this.cast("KW")
+  def KW: typings.libphonenumberJs.libphonenumberJsStrings.KW = "KW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KW]
   @scala.inline
-  def KY: typings.libphonenumberJs.libphonenumberJsStrings.KY = this.cast("KY")
+  def KY: typings.libphonenumberJs.libphonenumberJsStrings.KY = "KY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KY]
   @scala.inline
-  def KZ: typings.libphonenumberJs.libphonenumberJsStrings.KZ = this.cast("KZ")
+  def KZ: typings.libphonenumberJs.libphonenumberJsStrings.KZ = "KZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KZ]
   @scala.inline
-  def LA: typings.libphonenumberJs.libphonenumberJsStrings.LA = this.cast("LA")
+  def LA: typings.libphonenumberJs.libphonenumberJsStrings.LA = "LA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LA]
   @scala.inline
-  def LB: typings.libphonenumberJs.libphonenumberJsStrings.LB = this.cast("LB")
+  def LB: typings.libphonenumberJs.libphonenumberJsStrings.LB = "LB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LB]
   @scala.inline
-  def LC: typings.libphonenumberJs.libphonenumberJsStrings.LC = this.cast("LC")
+  def LC: typings.libphonenumberJs.libphonenumberJsStrings.LC = "LC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LC]
   @scala.inline
-  def LI: typings.libphonenumberJs.libphonenumberJsStrings.LI = this.cast("LI")
+  def LI: typings.libphonenumberJs.libphonenumberJsStrings.LI = "LI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LI]
   @scala.inline
-  def LK: typings.libphonenumberJs.libphonenumberJsStrings.LK = this.cast("LK")
+  def LK: typings.libphonenumberJs.libphonenumberJsStrings.LK = "LK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LK]
   @scala.inline
-  def LR: typings.libphonenumberJs.libphonenumberJsStrings.LR = this.cast("LR")
+  def LR: typings.libphonenumberJs.libphonenumberJsStrings.LR = "LR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LR]
   @scala.inline
-  def LS: typings.libphonenumberJs.libphonenumberJsStrings.LS = this.cast("LS")
+  def LS: typings.libphonenumberJs.libphonenumberJsStrings.LS = "LS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LS]
   @scala.inline
-  def LT: typings.libphonenumberJs.libphonenumberJsStrings.LT = this.cast("LT")
+  def LT: typings.libphonenumberJs.libphonenumberJsStrings.LT = "LT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LT]
   @scala.inline
-  def LU: typings.libphonenumberJs.libphonenumberJsStrings.LU = this.cast("LU")
+  def LU: typings.libphonenumberJs.libphonenumberJsStrings.LU = "LU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LU]
   @scala.inline
-  def LV: typings.libphonenumberJs.libphonenumberJsStrings.LV = this.cast("LV")
+  def LV: typings.libphonenumberJs.libphonenumberJsStrings.LV = "LV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LV]
   @scala.inline
-  def LY: typings.libphonenumberJs.libphonenumberJsStrings.LY = this.cast("LY")
+  def LY: typings.libphonenumberJs.libphonenumberJsStrings.LY = "LY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LY]
   @scala.inline
-  def MA: typings.libphonenumberJs.libphonenumberJsStrings.MA = this.cast("MA")
+  def MA: typings.libphonenumberJs.libphonenumberJsStrings.MA = "MA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MA]
   @scala.inline
-  def MC: typings.libphonenumberJs.libphonenumberJsStrings.MC = this.cast("MC")
+  def MC: typings.libphonenumberJs.libphonenumberJsStrings.MC = "MC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MC]
   @scala.inline
-  def MD: typings.libphonenumberJs.libphonenumberJsStrings.MD = this.cast("MD")
+  def MD: typings.libphonenumberJs.libphonenumberJsStrings.MD = "MD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MD]
   @scala.inline
-  def ME: typings.libphonenumberJs.libphonenumberJsStrings.ME = this.cast("ME")
+  def ME: typings.libphonenumberJs.libphonenumberJsStrings.ME = "ME".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ME]
   @scala.inline
-  def MF: typings.libphonenumberJs.libphonenumberJsStrings.MF = this.cast("MF")
+  def MF: typings.libphonenumberJs.libphonenumberJsStrings.MF = "MF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MF]
   @scala.inline
-  def MG: typings.libphonenumberJs.libphonenumberJsStrings.MG = this.cast("MG")
+  def MG: typings.libphonenumberJs.libphonenumberJsStrings.MG = "MG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MG]
   @scala.inline
-  def MH: typings.libphonenumberJs.libphonenumberJsStrings.MH = this.cast("MH")
+  def MH: typings.libphonenumberJs.libphonenumberJsStrings.MH = "MH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MH]
   @scala.inline
-  def MK: typings.libphonenumberJs.libphonenumberJsStrings.MK = this.cast("MK")
+  def MK: typings.libphonenumberJs.libphonenumberJsStrings.MK = "MK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MK]
   @scala.inline
-  def ML: typings.libphonenumberJs.libphonenumberJsStrings.ML = this.cast("ML")
+  def ML: typings.libphonenumberJs.libphonenumberJsStrings.ML = "ML".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ML]
   @scala.inline
-  def MM: typings.libphonenumberJs.libphonenumberJsStrings.MM = this.cast("MM")
+  def MM: typings.libphonenumberJs.libphonenumberJsStrings.MM = "MM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MM]
   @scala.inline
-  def MN: typings.libphonenumberJs.libphonenumberJsStrings.MN = this.cast("MN")
+  def MN: typings.libphonenumberJs.libphonenumberJsStrings.MN = "MN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MN]
   @scala.inline
-  def MO: typings.libphonenumberJs.libphonenumberJsStrings.MO = this.cast("MO")
+  def MO: typings.libphonenumberJs.libphonenumberJsStrings.MO = "MO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MO]
   @scala.inline
-  def MP: typings.libphonenumberJs.libphonenumberJsStrings.MP = this.cast("MP")
+  def MP: typings.libphonenumberJs.libphonenumberJsStrings.MP = "MP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MP]
   @scala.inline
-  def MQ: typings.libphonenumberJs.libphonenumberJsStrings.MQ = this.cast("MQ")
+  def MQ: typings.libphonenumberJs.libphonenumberJsStrings.MQ = "MQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MQ]
   @scala.inline
-  def MR: typings.libphonenumberJs.libphonenumberJsStrings.MR = this.cast("MR")
+  def MR: typings.libphonenumberJs.libphonenumberJsStrings.MR = "MR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MR]
   @scala.inline
-  def MS: typings.libphonenumberJs.libphonenumberJsStrings.MS = this.cast("MS")
+  def MS: typings.libphonenumberJs.libphonenumberJsStrings.MS = "MS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MS]
   @scala.inline
-  def MT: typings.libphonenumberJs.libphonenumberJsStrings.MT = this.cast("MT")
+  def MT: typings.libphonenumberJs.libphonenumberJsStrings.MT = "MT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MT]
   @scala.inline
-  def MU: typings.libphonenumberJs.libphonenumberJsStrings.MU = this.cast("MU")
+  def MU: typings.libphonenumberJs.libphonenumberJsStrings.MU = "MU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MU]
   @scala.inline
-  def MV: typings.libphonenumberJs.libphonenumberJsStrings.MV = this.cast("MV")
+  def MV: typings.libphonenumberJs.libphonenumberJsStrings.MV = "MV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MV]
   @scala.inline
-  def MW: typings.libphonenumberJs.libphonenumberJsStrings.MW = this.cast("MW")
+  def MW: typings.libphonenumberJs.libphonenumberJsStrings.MW = "MW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MW]
   @scala.inline
-  def MX: typings.libphonenumberJs.libphonenumberJsStrings.MX = this.cast("MX")
+  def MX: typings.libphonenumberJs.libphonenumberJsStrings.MX = "MX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MX]
   @scala.inline
-  def MY: typings.libphonenumberJs.libphonenumberJsStrings.MY = this.cast("MY")
+  def MY: typings.libphonenumberJs.libphonenumberJsStrings.MY = "MY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MY]
   @scala.inline
-  def MZ: typings.libphonenumberJs.libphonenumberJsStrings.MZ = this.cast("MZ")
+  def MZ: typings.libphonenumberJs.libphonenumberJsStrings.MZ = "MZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MZ]
   @scala.inline
-  def NA: typings.libphonenumberJs.libphonenumberJsStrings.NA = this.cast("NA")
+  def NA: typings.libphonenumberJs.libphonenumberJsStrings.NA = "NA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NA]
   @scala.inline
-  def NC: typings.libphonenumberJs.libphonenumberJsStrings.NC = this.cast("NC")
+  def NC: typings.libphonenumberJs.libphonenumberJsStrings.NC = "NC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NC]
   @scala.inline
-  def NE: typings.libphonenumberJs.libphonenumberJsStrings.NE = this.cast("NE")
+  def NE: typings.libphonenumberJs.libphonenumberJsStrings.NE = "NE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NE]
   @scala.inline
-  def NF: typings.libphonenumberJs.libphonenumberJsStrings.NF = this.cast("NF")
+  def NF: typings.libphonenumberJs.libphonenumberJsStrings.NF = "NF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NF]
   @scala.inline
-  def NG: typings.libphonenumberJs.libphonenumberJsStrings.NG = this.cast("NG")
+  def NG: typings.libphonenumberJs.libphonenumberJsStrings.NG = "NG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NG]
   @scala.inline
-  def NI: typings.libphonenumberJs.libphonenumberJsStrings.NI = this.cast("NI")
+  def NI: typings.libphonenumberJs.libphonenumberJsStrings.NI = "NI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NI]
   @scala.inline
-  def NL: typings.libphonenumberJs.libphonenumberJsStrings.NL = this.cast("NL")
+  def NL: typings.libphonenumberJs.libphonenumberJsStrings.NL = "NL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NL]
   @scala.inline
-  def NO: typings.libphonenumberJs.libphonenumberJsStrings.NO = this.cast("NO")
+  def NO: typings.libphonenumberJs.libphonenumberJsStrings.NO = "NO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NO]
   @scala.inline
-  def NP: typings.libphonenumberJs.libphonenumberJsStrings.NP = this.cast("NP")
+  def NP: typings.libphonenumberJs.libphonenumberJsStrings.NP = "NP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NP]
   @scala.inline
-  def NR: typings.libphonenumberJs.libphonenumberJsStrings.NR = this.cast("NR")
+  def NR: typings.libphonenumberJs.libphonenumberJsStrings.NR = "NR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NR]
   @scala.inline
-  def NU: typings.libphonenumberJs.libphonenumberJsStrings.NU = this.cast("NU")
+  def NU: typings.libphonenumberJs.libphonenumberJsStrings.NU = "NU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NU]
   @scala.inline
-  def NZ: typings.libphonenumberJs.libphonenumberJsStrings.NZ = this.cast("NZ")
+  def NZ: typings.libphonenumberJs.libphonenumberJsStrings.NZ = "NZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NZ]
   @scala.inline
-  def OM: typings.libphonenumberJs.libphonenumberJsStrings.OM = this.cast("OM")
+  def OM: typings.libphonenumberJs.libphonenumberJsStrings.OM = "OM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.OM]
   @scala.inline
-  def PA: typings.libphonenumberJs.libphonenumberJsStrings.PA = this.cast("PA")
+  def PA: typings.libphonenumberJs.libphonenumberJsStrings.PA = "PA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PA]
   @scala.inline
-  def PE: typings.libphonenumberJs.libphonenumberJsStrings.PE = this.cast("PE")
+  def PE: typings.libphonenumberJs.libphonenumberJsStrings.PE = "PE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PE]
   @scala.inline
-  def PF: typings.libphonenumberJs.libphonenumberJsStrings.PF = this.cast("PF")
+  def PF: typings.libphonenumberJs.libphonenumberJsStrings.PF = "PF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PF]
   @scala.inline
-  def PG: typings.libphonenumberJs.libphonenumberJsStrings.PG = this.cast("PG")
+  def PG: typings.libphonenumberJs.libphonenumberJsStrings.PG = "PG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PG]
   @scala.inline
-  def PH: typings.libphonenumberJs.libphonenumberJsStrings.PH = this.cast("PH")
+  def PH: typings.libphonenumberJs.libphonenumberJsStrings.PH = "PH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PH]
   @scala.inline
-  def PK: typings.libphonenumberJs.libphonenumberJsStrings.PK = this.cast("PK")
+  def PK: typings.libphonenumberJs.libphonenumberJsStrings.PK = "PK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PK]
   @scala.inline
-  def PL: typings.libphonenumberJs.libphonenumberJsStrings.PL = this.cast("PL")
+  def PL: typings.libphonenumberJs.libphonenumberJsStrings.PL = "PL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PL]
   @scala.inline
-  def PM: typings.libphonenumberJs.libphonenumberJsStrings.PM = this.cast("PM")
+  def PM: typings.libphonenumberJs.libphonenumberJsStrings.PM = "PM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PM]
   @scala.inline
-  def PR: typings.libphonenumberJs.libphonenumberJsStrings.PR = this.cast("PR")
+  def PR: typings.libphonenumberJs.libphonenumberJsStrings.PR = "PR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PR]
   @scala.inline
-  def PS: typings.libphonenumberJs.libphonenumberJsStrings.PS = this.cast("PS")
+  def PS: typings.libphonenumberJs.libphonenumberJsStrings.PS = "PS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PS]
   @scala.inline
-  def PT: typings.libphonenumberJs.libphonenumberJsStrings.PT = this.cast("PT")
+  def PT: typings.libphonenumberJs.libphonenumberJsStrings.PT = "PT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PT]
   @scala.inline
-  def PW: typings.libphonenumberJs.libphonenumberJsStrings.PW = this.cast("PW")
+  def PW: typings.libphonenumberJs.libphonenumberJsStrings.PW = "PW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PW]
   @scala.inline
-  def PY: typings.libphonenumberJs.libphonenumberJsStrings.PY = this.cast("PY")
+  def PY: typings.libphonenumberJs.libphonenumberJsStrings.PY = "PY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PY]
   @scala.inline
-  def QA: typings.libphonenumberJs.libphonenumberJsStrings.QA = this.cast("QA")
+  def QA: typings.libphonenumberJs.libphonenumberJsStrings.QA = "QA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.QA]
   @scala.inline
-  def RE: typings.libphonenumberJs.libphonenumberJsStrings.RE = this.cast("RE")
+  def RE: typings.libphonenumberJs.libphonenumberJsStrings.RE = "RE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RE]
   @scala.inline
-  def RO: typings.libphonenumberJs.libphonenumberJsStrings.RO = this.cast("RO")
+  def RO: typings.libphonenumberJs.libphonenumberJsStrings.RO = "RO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RO]
   @scala.inline
-  def RS: typings.libphonenumberJs.libphonenumberJsStrings.RS = this.cast("RS")
+  def RS: typings.libphonenumberJs.libphonenumberJsStrings.RS = "RS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RS]
   @scala.inline
-  def RU: typings.libphonenumberJs.libphonenumberJsStrings.RU = this.cast("RU")
+  def RU: typings.libphonenumberJs.libphonenumberJsStrings.RU = "RU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RU]
   @scala.inline
-  def RW: typings.libphonenumberJs.libphonenumberJsStrings.RW = this.cast("RW")
+  def RW: typings.libphonenumberJs.libphonenumberJsStrings.RW = "RW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RW]
   @scala.inline
-  def SA: typings.libphonenumberJs.libphonenumberJsStrings.SA = this.cast("SA")
+  def SA: typings.libphonenumberJs.libphonenumberJsStrings.SA = "SA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SA]
   @scala.inline
-  def SB: typings.libphonenumberJs.libphonenumberJsStrings.SB = this.cast("SB")
+  def SB: typings.libphonenumberJs.libphonenumberJsStrings.SB = "SB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SB]
   @scala.inline
-  def SC: typings.libphonenumberJs.libphonenumberJsStrings.SC = this.cast("SC")
+  def SC: typings.libphonenumberJs.libphonenumberJsStrings.SC = "SC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SC]
   @scala.inline
-  def SD: typings.libphonenumberJs.libphonenumberJsStrings.SD = this.cast("SD")
+  def SD: typings.libphonenumberJs.libphonenumberJsStrings.SD = "SD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SD]
   @scala.inline
-  def SE: typings.libphonenumberJs.libphonenumberJsStrings.SE = this.cast("SE")
+  def SE: typings.libphonenumberJs.libphonenumberJsStrings.SE = "SE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SE]
   @scala.inline
-  def SG: typings.libphonenumberJs.libphonenumberJsStrings.SG = this.cast("SG")
+  def SG: typings.libphonenumberJs.libphonenumberJsStrings.SG = "SG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SG]
   @scala.inline
-  def SH: typings.libphonenumberJs.libphonenumberJsStrings.SH = this.cast("SH")
+  def SH: typings.libphonenumberJs.libphonenumberJsStrings.SH = "SH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SH]
   @scala.inline
-  def SI: typings.libphonenumberJs.libphonenumberJsStrings.SI = this.cast("SI")
+  def SI: typings.libphonenumberJs.libphonenumberJsStrings.SI = "SI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SI]
   @scala.inline
-  def SJ: typings.libphonenumberJs.libphonenumberJsStrings.SJ = this.cast("SJ")
+  def SJ: typings.libphonenumberJs.libphonenumberJsStrings.SJ = "SJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SJ]
   @scala.inline
-  def SK: typings.libphonenumberJs.libphonenumberJsStrings.SK = this.cast("SK")
+  def SK: typings.libphonenumberJs.libphonenumberJsStrings.SK = "SK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SK]
   @scala.inline
-  def SL: typings.libphonenumberJs.libphonenumberJsStrings.SL = this.cast("SL")
+  def SL: typings.libphonenumberJs.libphonenumberJsStrings.SL = "SL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SL]
   @scala.inline
-  def SM: typings.libphonenumberJs.libphonenumberJsStrings.SM = this.cast("SM")
+  def SM: typings.libphonenumberJs.libphonenumberJsStrings.SM = "SM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SM]
   @scala.inline
-  def SN: typings.libphonenumberJs.libphonenumberJsStrings.SN = this.cast("SN")
+  def SN: typings.libphonenumberJs.libphonenumberJsStrings.SN = "SN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SN]
   @scala.inline
-  def SO: typings.libphonenumberJs.libphonenumberJsStrings.SO = this.cast("SO")
+  def SO: typings.libphonenumberJs.libphonenumberJsStrings.SO = "SO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SO]
   @scala.inline
-  def SR: typings.libphonenumberJs.libphonenumberJsStrings.SR = this.cast("SR")
+  def SR: typings.libphonenumberJs.libphonenumberJsStrings.SR = "SR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SR]
   @scala.inline
-  def SS: typings.libphonenumberJs.libphonenumberJsStrings.SS = this.cast("SS")
+  def SS: typings.libphonenumberJs.libphonenumberJsStrings.SS = "SS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SS]
   @scala.inline
-  def ST: typings.libphonenumberJs.libphonenumberJsStrings.ST = this.cast("ST")
+  def ST: typings.libphonenumberJs.libphonenumberJsStrings.ST = "ST".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ST]
   @scala.inline
-  def SV: typings.libphonenumberJs.libphonenumberJsStrings.SV = this.cast("SV")
+  def SV: typings.libphonenumberJs.libphonenumberJsStrings.SV = "SV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SV]
   @scala.inline
-  def SX: typings.libphonenumberJs.libphonenumberJsStrings.SX = this.cast("SX")
+  def SX: typings.libphonenumberJs.libphonenumberJsStrings.SX = "SX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SX]
   @scala.inline
-  def SY: typings.libphonenumberJs.libphonenumberJsStrings.SY = this.cast("SY")
+  def SY: typings.libphonenumberJs.libphonenumberJsStrings.SY = "SY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SY]
   @scala.inline
-  def SZ: typings.libphonenumberJs.libphonenumberJsStrings.SZ = this.cast("SZ")
+  def SZ: typings.libphonenumberJs.libphonenumberJsStrings.SZ = "SZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SZ]
   @scala.inline
-  def TA: typings.libphonenumberJs.libphonenumberJsStrings.TA = this.cast("TA")
+  def TA: typings.libphonenumberJs.libphonenumberJsStrings.TA = "TA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TA]
   @scala.inline
-  def TC: typings.libphonenumberJs.libphonenumberJsStrings.TC = this.cast("TC")
+  def TC: typings.libphonenumberJs.libphonenumberJsStrings.TC = "TC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TC]
   @scala.inline
-  def TD: typings.libphonenumberJs.libphonenumberJsStrings.TD = this.cast("TD")
+  def TD: typings.libphonenumberJs.libphonenumberJsStrings.TD = "TD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TD]
   @scala.inline
-  def TG: typings.libphonenumberJs.libphonenumberJsStrings.TG = this.cast("TG")
+  def TG: typings.libphonenumberJs.libphonenumberJsStrings.TG = "TG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TG]
   @scala.inline
-  def TH: typings.libphonenumberJs.libphonenumberJsStrings.TH = this.cast("TH")
+  def TH: typings.libphonenumberJs.libphonenumberJsStrings.TH = "TH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TH]
   @scala.inline
-  def TJ: typings.libphonenumberJs.libphonenumberJsStrings.TJ = this.cast("TJ")
+  def TJ: typings.libphonenumberJs.libphonenumberJsStrings.TJ = "TJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TJ]
   @scala.inline
-  def TK: typings.libphonenumberJs.libphonenumberJsStrings.TK = this.cast("TK")
+  def TK: typings.libphonenumberJs.libphonenumberJsStrings.TK = "TK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TK]
   @scala.inline
-  def TL: typings.libphonenumberJs.libphonenumberJsStrings.TL = this.cast("TL")
+  def TL: typings.libphonenumberJs.libphonenumberJsStrings.TL = "TL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TL]
   @scala.inline
-  def TM: typings.libphonenumberJs.libphonenumberJsStrings.TM = this.cast("TM")
+  def TM: typings.libphonenumberJs.libphonenumberJsStrings.TM = "TM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TM]
   @scala.inline
-  def TN: typings.libphonenumberJs.libphonenumberJsStrings.TN = this.cast("TN")
+  def TN: typings.libphonenumberJs.libphonenumberJsStrings.TN = "TN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TN]
   @scala.inline
-  def TO: typings.libphonenumberJs.libphonenumberJsStrings.TO = this.cast("TO")
+  def TO: typings.libphonenumberJs.libphonenumberJsStrings.TO = "TO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TO]
   @scala.inline
-  def TR: typings.libphonenumberJs.libphonenumberJsStrings.TR = this.cast("TR")
+  def TR: typings.libphonenumberJs.libphonenumberJsStrings.TR = "TR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TR]
   @scala.inline
-  def TT: typings.libphonenumberJs.libphonenumberJsStrings.TT = this.cast("TT")
+  def TT: typings.libphonenumberJs.libphonenumberJsStrings.TT = "TT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TT]
   @scala.inline
-  def TV: typings.libphonenumberJs.libphonenumberJsStrings.TV = this.cast("TV")
+  def TV: typings.libphonenumberJs.libphonenumberJsStrings.TV = "TV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TV]
   @scala.inline
-  def TW: typings.libphonenumberJs.libphonenumberJsStrings.TW = this.cast("TW")
+  def TW: typings.libphonenumberJs.libphonenumberJsStrings.TW = "TW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TW]
   @scala.inline
-  def TZ: typings.libphonenumberJs.libphonenumberJsStrings.TZ = this.cast("TZ")
+  def TZ: typings.libphonenumberJs.libphonenumberJsStrings.TZ = "TZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TZ]
   @scala.inline
-  def UA: typings.libphonenumberJs.libphonenumberJsStrings.UA = this.cast("UA")
+  def UA: typings.libphonenumberJs.libphonenumberJsStrings.UA = "UA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UA]
   @scala.inline
-  def UG: typings.libphonenumberJs.libphonenumberJsStrings.UG = this.cast("UG")
+  def UG: typings.libphonenumberJs.libphonenumberJsStrings.UG = "UG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UG]
   @scala.inline
-  def US: typings.libphonenumberJs.libphonenumberJsStrings.US = this.cast("US")
+  def US: typings.libphonenumberJs.libphonenumberJsStrings.US = "US".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.US]
   @scala.inline
-  def UY: typings.libphonenumberJs.libphonenumberJsStrings.UY = this.cast("UY")
+  def UY: typings.libphonenumberJs.libphonenumberJsStrings.UY = "UY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UY]
   @scala.inline
-  def UZ: typings.libphonenumberJs.libphonenumberJsStrings.UZ = this.cast("UZ")
+  def UZ: typings.libphonenumberJs.libphonenumberJsStrings.UZ = "UZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UZ]
   @scala.inline
-  def VA: typings.libphonenumberJs.libphonenumberJsStrings.VA = this.cast("VA")
+  def VA: typings.libphonenumberJs.libphonenumberJsStrings.VA = "VA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VA]
   @scala.inline
-  def VC: typings.libphonenumberJs.libphonenumberJsStrings.VC = this.cast("VC")
+  def VC: typings.libphonenumberJs.libphonenumberJsStrings.VC = "VC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VC]
   @scala.inline
-  def VE: typings.libphonenumberJs.libphonenumberJsStrings.VE = this.cast("VE")
+  def VE: typings.libphonenumberJs.libphonenumberJsStrings.VE = "VE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VE]
   @scala.inline
-  def VG: typings.libphonenumberJs.libphonenumberJsStrings.VG = this.cast("VG")
+  def VG: typings.libphonenumberJs.libphonenumberJsStrings.VG = "VG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VG]
   @scala.inline
-  def VI: typings.libphonenumberJs.libphonenumberJsStrings.VI = this.cast("VI")
+  def VI: typings.libphonenumberJs.libphonenumberJsStrings.VI = "VI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VI]
   @scala.inline
-  def VN: typings.libphonenumberJs.libphonenumberJsStrings.VN = this.cast("VN")
+  def VN: typings.libphonenumberJs.libphonenumberJsStrings.VN = "VN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VN]
   @scala.inline
-  def VU: typings.libphonenumberJs.libphonenumberJsStrings.VU = this.cast("VU")
+  def VU: typings.libphonenumberJs.libphonenumberJsStrings.VU = "VU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VU]
   @scala.inline
-  def WF: typings.libphonenumberJs.libphonenumberJsStrings.WF = this.cast("WF")
+  def WF: typings.libphonenumberJs.libphonenumberJsStrings.WF = "WF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.WF]
   @scala.inline
-  def WS: typings.libphonenumberJs.libphonenumberJsStrings.WS = this.cast("WS")
+  def WS: typings.libphonenumberJs.libphonenumberJsStrings.WS = "WS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.WS]
   @scala.inline
-  def XK: typings.libphonenumberJs.libphonenumberJsStrings.XK = this.cast("XK")
+  def XK: typings.libphonenumberJs.libphonenumberJsStrings.XK = "XK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.XK]
   @scala.inline
-  def YE: typings.libphonenumberJs.libphonenumberJsStrings.YE = this.cast("YE")
+  def YE: typings.libphonenumberJs.libphonenumberJsStrings.YE = "YE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.YE]
   @scala.inline
-  def YT: typings.libphonenumberJs.libphonenumberJsStrings.YT = this.cast("YT")
+  def YT: typings.libphonenumberJs.libphonenumberJsStrings.YT = "YT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.YT]
   @scala.inline
-  def ZA: typings.libphonenumberJs.libphonenumberJsStrings.ZA = this.cast("ZA")
+  def ZA: typings.libphonenumberJs.libphonenumberJsStrings.ZA = "ZA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ZA]
   @scala.inline
-  def ZM: typings.libphonenumberJs.libphonenumberJsStrings.ZM = this.cast("ZM")
+  def ZM: typings.libphonenumberJs.libphonenumberJsStrings.ZM = "ZM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ZM]
   @scala.inline
-  def ZW: typings.libphonenumberJs.libphonenumberJsStrings.ZW = this.cast("ZW")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ZW: typings.libphonenumberJs.libphonenumberJsStrings.ZW = "ZW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ZW]
 }
 

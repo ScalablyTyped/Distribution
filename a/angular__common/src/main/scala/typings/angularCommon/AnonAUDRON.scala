@@ -22,7 +22,6 @@ object AnonAUDRON {
     TWD: js.Array[String]
   ): AnonAUDRON = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TRY = TRY.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAUDRON]
   }
 }

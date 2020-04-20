@@ -31,7 +31,6 @@ object StubAttachment {
   @scala.inline
   def apply(content_type: String, digest: String, length: Double, stub: `true`): StubAttachment = {
     val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], stub = stub.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StubAttachment]
   }
 }

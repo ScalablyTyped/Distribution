@@ -17,13 +17,11 @@ object Loop {
   		 * Video or playlist will be played over and over again.
   		 */
   @scala.inline
-  def Loop: `1` = this.cast(1)
+  def Loop: `1` = 1.asInstanceOf[`1`]
   /**
   		 * Video or playlist will be played only once.
   		 */
   @scala.inline
-  def SinglePlay: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SinglePlay: `0` = 0.asInstanceOf[`0`]
 }
 

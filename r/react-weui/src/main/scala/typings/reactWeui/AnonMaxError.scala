@@ -12,7 +12,6 @@ object AnonMaxError {
   @scala.inline
   def apply(maxError: js.Any): AnonMaxError = {
     val __obj = js.Dynamic.literal(maxError = maxError.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaxError]
   }
 }

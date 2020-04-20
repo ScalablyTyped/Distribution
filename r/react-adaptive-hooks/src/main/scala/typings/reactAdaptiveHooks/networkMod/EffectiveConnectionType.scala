@@ -14,14 +14,12 @@ trait EffectiveConnectionType extends js.Object
 
 object EffectiveConnectionType {
   @scala.inline
-  def `2g`: typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`2g` = this.cast("2g")
+  def `2g`: typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`2g` = "2g".asInstanceOf[typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`2g`]
   @scala.inline
-  def `3g`: typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`3g` = this.cast("3g")
+  def `3g`: typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`3g` = "3g".asInstanceOf[typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`3g`]
   @scala.inline
-  def `4g`: typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`4g` = this.cast("4g")
+  def `4g`: typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`4g` = "4g".asInstanceOf[typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`4g`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `slow-2g`: typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`slow-2g` = this.cast("slow-2g")
+  def `slow-2g`: typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`slow-2g` = "slow-2g".asInstanceOf[typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`slow-2g`]
 }
 

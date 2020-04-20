@@ -16,7 +16,6 @@ object CheckDomainTransferabilityResponse {
   @scala.inline
   def apply(Transferability: DomainTransferability): CheckDomainTransferabilityResponse = {
     val __obj = js.Dynamic.literal(Transferability = Transferability.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckDomainTransferabilityResponse]
   }
 }

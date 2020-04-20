@@ -16,7 +16,6 @@ object TypeofcontentScripts {
   @scala.inline
   def apply(register: RegisteredContentScriptOptions => js.Promise[RegisteredContentScript]): TypeofcontentScripts = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
-  
     __obj.asInstanceOf[TypeofcontentScripts]
   }
 }

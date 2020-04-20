@@ -20,16 +20,14 @@ trait XlCmdType extends js.Object
 
 object XlCmdType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCmdCube: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlCmdCube: `1` = this.cast(1)
+  def xlCmdDefault: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlCmdDefault: `4` = this.cast(4)
+  def xlCmdList: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlCmdList: `5` = this.cast(5)
+  def xlCmdSql: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlCmdSql: `2` = this.cast(2)
-  @scala.inline
-  def xlCmdTable: `3` = this.cast(3)
+  def xlCmdTable: `3` = 3.asInstanceOf[`3`]
 }
 

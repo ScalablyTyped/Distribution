@@ -18,7 +18,6 @@ object AnonAdd {
   @scala.inline
   def apply[TTarget, TData](add: HandleObject[TTarget, TData] => Unit): AnonAdd[TTarget, TData] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
-  
     __obj.asInstanceOf[AnonAdd[TTarget, TData]]
   }
 }

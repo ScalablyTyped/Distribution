@@ -13,7 +13,6 @@ object pluploadFiltersMimeTypes {
   @scala.inline
   def apply(extensions: String, title: String): pluploadFiltersMimeTypes = {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[pluploadFiltersMimeTypes]
   }
 }

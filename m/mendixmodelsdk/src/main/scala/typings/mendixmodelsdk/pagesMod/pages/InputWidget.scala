@@ -31,12 +31,12 @@ abstract class InputWidget protected () extends ConditionallyEditableWidget {
     * In version 7.18.0: introduced
     */
   @JSName("labelTemplate")
-  def labelTemplate_Union(): ClientTemplate | Null = js.native
+  def labelTemplate_Union: ClientTemplate | Null = js.native
   /**
     * In version 7.18.0: deleted
     */
   @JSName("label")
-  def label_Union(): Text | Null = js.native
+  def label_Union: Text | Null = js.native
 }
 
 /* static members */

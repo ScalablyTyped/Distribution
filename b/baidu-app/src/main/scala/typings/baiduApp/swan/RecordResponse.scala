@@ -13,7 +13,6 @@ object RecordResponse {
   @scala.inline
   def apply(tempThumbPath: String, tempVideoPath: String): RecordResponse = {
     val __obj = js.Dynamic.literal(tempThumbPath = tempThumbPath.asInstanceOf[js.Any], tempVideoPath = tempVideoPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordResponse]
   }
 }

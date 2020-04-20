@@ -12,7 +12,6 @@ object IThemeProviderContext {
   @scala.inline
   def apply(reactThemeable: js.Any): IThemeProviderContext = {
     val __obj = js.Dynamic.literal(reactThemeable = reactThemeable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IThemeProviderContext]
   }
 }

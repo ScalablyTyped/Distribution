@@ -26,7 +26,6 @@ object AgentJobStep {
     stepName: String
   ): AgentJobStep = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], runDate = runDate.asInstanceOf[js.Any], runStatus = runStatus.asInstanceOf[js.Any], stepDetails = stepDetails.asInstanceOf[js.Any], stepId = stepId.asInstanceOf[js.Any], stepName = stepName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentJobStep]
   }
 }

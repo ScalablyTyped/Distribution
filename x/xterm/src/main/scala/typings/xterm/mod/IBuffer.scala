@@ -1,5 +1,7 @@
 package typings.xterm.mod
 
+import typings.xterm.xtermStrings.alternate
+import typings.xterm.xtermStrings.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +17,7 @@ trait IBuffer extends js.Object {
   val baseY: Double
   /**
     * The x position of the cursor. This ranges between `0` (left side) and
-    * `Terminal.cols - 1` (right side).
+    * `Terminal.cols` (after last cell of the row).
     */
   val cursorX: Double
   /**
@@ -28,6 +30,10 @@ trait IBuffer extends js.Object {
     * The amount of lines in the buffer.
     */
   val length: Double
+  /**
+    * The type of the buffer.
+    */
+  val `type`: normal | alternate
   /**
     * The line within the buffer where the top of the viewport is.
     */
@@ -60,10 +66,11 @@ object IBuffer {
     getLine: Double => js.UndefOr[IBufferLine],
     getNullCell: () => IBufferCell,
     length: Double,
+    `type`: normal | alternate,
     viewportY: Double
   ): IBuffer = {
     val __obj = js.Dynamic.literal(baseY = baseY.asInstanceOf[js.Any], cursorX = cursorX.asInstanceOf[js.Any], cursorY = cursorY.asInstanceOf[js.Any], getLine = js.Any.fromFunction1(getLine), getNullCell = js.Any.fromFunction0(getNullCell), length = length.asInstanceOf[js.Any], viewportY = viewportY.asInstanceOf[js.Any])
-  
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBuffer]
   }
 }

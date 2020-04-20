@@ -12,10 +12,8 @@ trait InputGroupAddonPosition extends js.Object
 
 object InputGroupAddonPosition {
   @scala.inline
-  def after: typings.fundamentalReact.fundamentalReactStrings.after = this.cast("after")
+  def after: typings.fundamentalReact.fundamentalReactStrings.after = "after".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.after]
   @scala.inline
-  def before: typings.fundamentalReact.fundamentalReactStrings.before = this.cast("before")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def before: typings.fundamentalReact.fundamentalReactStrings.before = "before".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.before]
 }
 

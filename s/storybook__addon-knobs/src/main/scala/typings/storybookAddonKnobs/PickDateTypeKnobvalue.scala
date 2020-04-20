@@ -14,7 +14,6 @@ object PickDateTypeKnobvalue {
   @scala.inline
   def apply(value: DateTypeKnobValue): PickDateTypeKnobvalue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickDateTypeKnobvalue]
   }
 }

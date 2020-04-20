@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.Gauge> */
 trait PartialGaugeAxis extends js.Object {
-  var axis: js.UndefOr[PartialAxisAutorange] = js.undefined
+  var axis: js.UndefOr[PartialAxisCalendar] = js.undefined
   var bar: js.UndefOr[PartialGaugeBarColor] = js.undefined
   var bgcolor: js.UndefOr[Color] = js.undefined
   var bordercolor: js.UndefOr[Color] = js.undefined
@@ -22,7 +22,7 @@ trait PartialGaugeAxis extends js.Object {
 object PartialGaugeAxis {
   @scala.inline
   def apply(
-    axis: PartialAxisAutorange = null,
+    axis: PartialAxisCalendar = null,
     bar: PartialGaugeBarColor = null,
     bgcolor: Color = null,
     bordercolor: Color = null,

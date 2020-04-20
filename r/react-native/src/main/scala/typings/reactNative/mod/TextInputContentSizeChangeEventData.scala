@@ -13,7 +13,6 @@ object TextInputContentSizeChangeEventData {
   @scala.inline
   def apply(contentSize: AnonHeight): TextInputContentSizeChangeEventData = {
     val __obj = js.Dynamic.literal(contentSize = contentSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextInputContentSizeChangeEventData]
   }
 }

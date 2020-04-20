@@ -16,7 +16,6 @@ object StopBuildInput {
   @scala.inline
   def apply(id: NonEmptyString): StopBuildInput = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopBuildInput]
   }
 }

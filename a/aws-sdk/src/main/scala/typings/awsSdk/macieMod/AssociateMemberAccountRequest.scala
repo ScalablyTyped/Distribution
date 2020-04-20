@@ -16,7 +16,6 @@ object AssociateMemberAccountRequest {
   @scala.inline
   def apply(memberAccountId: AWSAccountId): AssociateMemberAccountRequest = {
     val __obj = js.Dynamic.literal(memberAccountId = memberAccountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateMemberAccountRequest]
   }
 }

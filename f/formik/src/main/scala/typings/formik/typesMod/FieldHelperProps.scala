@@ -17,7 +17,6 @@ object FieldHelperProps {
   @scala.inline
   def apply[Value](setError: Value => Unit, setTouched: Boolean => Unit, setValue: Value => Unit): FieldHelperProps[Value] = {
     val __obj = js.Dynamic.literal(setError = js.Any.fromFunction1(setError), setTouched = js.Any.fromFunction1(setTouched), setValue = js.Any.fromFunction1(setValue))
-  
     __obj.asInstanceOf[FieldHelperProps[Value]]
   }
 }

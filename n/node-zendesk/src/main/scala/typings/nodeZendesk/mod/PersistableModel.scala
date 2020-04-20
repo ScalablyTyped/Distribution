@@ -12,7 +12,6 @@ object PersistableModel {
   @scala.inline
   def apply(id: ZendeskID): PersistableModel = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PersistableModel]
   }
 }

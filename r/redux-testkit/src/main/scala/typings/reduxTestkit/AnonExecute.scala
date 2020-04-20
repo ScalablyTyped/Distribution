@@ -16,7 +16,6 @@ object AnonExecute {
     expect: (js.Any, /* repeated */ js.Any) => AnonToReturn
   ): AnonExecute = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), expect = js.Any.fromFunction2(expect))
-  
     __obj.asInstanceOf[AnonExecute]
   }
 }

@@ -14,7 +14,6 @@ object Settings {
   @scala.inline
   def apply(currency: CurrencySettings[_], number: NumberSettings): Settings = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Settings]
   }
 }

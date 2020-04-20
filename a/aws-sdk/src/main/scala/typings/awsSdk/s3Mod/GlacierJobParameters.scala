@@ -16,7 +16,6 @@ object GlacierJobParameters {
   @scala.inline
   def apply(Tier: Tier): GlacierJobParameters = {
     val __obj = js.Dynamic.literal(Tier = Tier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlacierJobParameters]
   }
 }

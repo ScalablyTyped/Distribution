@@ -25,7 +25,6 @@ object ServerAddressByClientCIDR {
   @scala.inline
   def apply(clientCIDR: String, serverAddress: String): ServerAddressByClientCIDR = {
     val __obj = js.Dynamic.literal(clientCIDR = clientCIDR.asInstanceOf[js.Any], serverAddress = serverAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerAddressByClientCIDR]
   }
 }

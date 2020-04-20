@@ -21,7 +21,6 @@ object IDataRequest {
     getDeferral: () => DataRequestDeferral
   ): IDataRequest = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], deadline = deadline.asInstanceOf[js.Any], failWithDisplayText = js.Any.fromFunction1(failWithDisplayText), getDeferral = js.Any.fromFunction0(getDeferral))
-  
     __obj.asInstanceOf[IDataRequest]
   }
 }

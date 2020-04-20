@@ -20,7 +20,6 @@ object BatchSuspendUserRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, UserIdList: UserIdList): BatchSuspendUserRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserIdList = UserIdList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchSuspendUserRequest]
   }
 }

@@ -188,7 +188,6 @@ object strings_ {
     wordwrap: (String, js.Any) => js.Any
   ): strings_ = {
     val __obj = js.Dynamic.literal(addslashes = js.Any.fromFunction1(addslashes), capfirst = js.Any.fromFunction1(capfirst), center = js.Any.fromFunction2(center), cut = js.Any.fromFunction2(cut), fix_ampersands = js.Any.fromFunction1(fix_ampersands), floatformat = js.Any.fromFunction2(floatformat), iriencode = js.Any.fromFunction1(iriencode), linenumbers = js.Any.fromFunction1(linenumbers), ljust = js.Any.fromFunction2(ljust), lower = js.Any.fromFunction1(lower), make_list = js.Any.fromFunction1(make_list), rjust = js.Any.fromFunction2(rjust), slugify = js.Any.fromFunction1(slugify), stringformat = js.Any.fromFunction2(stringformat), title = js.Any.fromFunction1(title), truncatewords = js.Any.fromFunction2(truncatewords), truncatewords_html = js.Any.fromFunction2(truncatewords_html), upper = js.Any.fromFunction1(upper), urlencode = js.Any.fromFunction1(urlencode), urlize = js.Any.fromFunction1(urlize), urlizetrunc = js.Any.fromFunction2(urlizetrunc), wordcount = js.Any.fromFunction1(wordcount), wordwrap = js.Any.fromFunction2(wordwrap))
-  
     __obj.asInstanceOf[strings_]
   }
 }

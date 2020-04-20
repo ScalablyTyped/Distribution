@@ -2993,9 +2993,9 @@ trait UnderscoreStatic extends js.Object {
     * @keys The key/value pairs to keep on `object`.
     * @return Copy of `object` with only the `keys` properties.
     **/
-  def pick[T, K /* <: String */](obj: T, keys: K*): Pick[T, K] = js.native
-  def pick[T, K /* <: String */](obj: T, keys: js.Array[K]): Pick[T, K] = js.native
-  def pick[T, K /* <: String */](
+  def pick[T, K /* <: /* keyof T */ String */](obj: T, keys: K*): Pick[T, K] = js.native
+  def pick[T, K /* <: /* keyof T */ String */](obj: T, keys: js.Array[K]): Pick[T, K] = js.native
+  def pick[T, K /* <: /* keyof T */ String */](
     obj: T,
     predicate: ObjectIterator[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
@@ -3010,7 +3010,7 @@ trait UnderscoreStatic extends js.Object {
     * @param propertyName The property to look for on each element within `list`.
     * @return The list of elements within `list` that have the property `propertyName`.
     **/
-  def pluck[T /* <: js.Object */, K /* <: String */](list: List[T], propertyName: K): js.Array[
+  def pluck[T /* <: js.Object */, K /* <: /* keyof T */ String */](list: List[T], propertyName: K): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ] = js.native
   /**

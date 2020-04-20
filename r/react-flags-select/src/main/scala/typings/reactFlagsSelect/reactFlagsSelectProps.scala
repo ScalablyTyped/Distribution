@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactFlagsSelectProps {
   @scala.inline
-  def ReactFlagsSelectProps: Props.type = typings.reactFlagsSelect.mod.Props
+  def ReactFlagsSelectProps: Props.type = Props
   type ReactFlagsSelectProps = Props
 }
 

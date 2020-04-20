@@ -16,7 +16,6 @@ object CreateContainerOutput {
   @scala.inline
   def apply(Container: Container): CreateContainerOutput = {
     val __obj = js.Dynamic.literal(Container = Container.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateContainerOutput]
   }
 }

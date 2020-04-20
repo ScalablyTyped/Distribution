@@ -13,7 +13,6 @@ object PickImplscrolling {
   @scala.inline
   def apply(scrolling: String): PickImplscrolling = {
     val __obj = js.Dynamic.literal(scrolling = scrolling.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplscrolling]
   }
 }

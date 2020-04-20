@@ -20,16 +20,14 @@ trait WdLineEndingType extends js.Object
 
 object WdLineEndingType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCRLF: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdCRLF: `0` = this.cast(0)
+  def wdCROnly: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdCROnly: `1` = this.cast(1)
+  def wdLFCR: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdLFCR: `3` = this.cast(3)
+  def wdLFOnly: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdLFOnly: `2` = this.cast(2)
-  @scala.inline
-  def wdLSPS: `4` = this.cast(4)
+  def wdLSPS: `4` = 4.asInstanceOf[`4`]
 }
 

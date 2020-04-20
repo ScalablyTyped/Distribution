@@ -14,11 +14,11 @@ package object mod {
   type MappedDict[B] = org.scalablytyped.runtime.StringDictionary[B]
   type SelectAsClause[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.cassanknex.cassanknexStrings.SelectAsClause with js.Any
+    */ typings.cassanknex.cassanknexStrings.SelectAsClause with org.scalablytyped.runtime.TopLevel[js.Any]
   type SelectQueryBuilder[T] = typings.cassanknex.mod.QueryBuilder with typings.cassanknex.mod.WhereableQueryBuilder[T] with typings.cassanknex.mod.LimitableQueryBuilder with typings.cassanknex.mod.FromableQueryBuilder
   /**
     * Will return the `never` type if `T[K]` is not a member of `Type`, for all `T[K]`.
     */
-  type TypeMatchedValue[T, K /* <: java.lang.String */, Type, This] = This
+  type TypeMatchedValue[T, K /* <: /* keyof T */ java.lang.String */, Type, This] = This
   type UpdateQueryBuilder[T] = typings.cassanknex.mod.QueryBuilder with typings.cassanknex.mod.WhereableQueryBuilder[T] with typings.cassanknex.mod.UpdateableQueryBuilder[T] with typings.cassanknex.mod.IfableQueryBuilder[T] with typings.cassanknex.mod.TtlableQueryBuilder
 }

@@ -13,7 +13,6 @@ object AnonCaCertPath {
   @scala.inline
   def apply(caCertPath: String, caKeyPath: String): AnonCaCertPath = {
     val __obj = js.Dynamic.literal(caCertPath = caCertPath.asInstanceOf[js.Any], caKeyPath = caKeyPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCaCertPath]
   }
 }

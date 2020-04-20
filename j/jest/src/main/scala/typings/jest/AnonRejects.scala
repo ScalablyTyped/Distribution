@@ -21,7 +21,6 @@ object AnonRejects {
   @scala.inline
   def apply[TPromise /* <: js.Object */](rejects: typings.jest.mod.jest.AndNot[TPromise], resolves: typings.jest.mod.jest.AndNot[TPromise]): AnonRejects[TPromise] = {
     val __obj = js.Dynamic.literal(rejects = rejects.asInstanceOf[js.Any], resolves = resolves.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRejects[TPromise]]
   }
 }

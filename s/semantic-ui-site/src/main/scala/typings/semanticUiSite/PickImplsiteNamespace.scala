@@ -13,7 +13,6 @@ object PickImplsiteNamespace {
   @scala.inline
   def apply(siteNamespace: String): PickImplsiteNamespace = {
     val __obj = js.Dynamic.literal(siteNamespace = siteNamespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsiteNamespace]
   }
 }

@@ -14,7 +14,6 @@ object AnonProcess {
   @scala.inline
   def apply(State: js.Any, process: js.Any, ruler: AnonAfter): AnonProcess = {
     val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any], ruler = ruler.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProcess]
   }
 }

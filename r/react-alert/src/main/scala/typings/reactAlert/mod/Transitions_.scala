@@ -15,7 +15,6 @@ object Transitions_ {
   @scala.inline
   def apply(FADE: fade, SCALE: scale): Transitions_ = {
     val __obj = js.Dynamic.literal(FADE = FADE.asInstanceOf[js.Any], SCALE = SCALE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Transitions_]
   }
 }

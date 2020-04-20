@@ -15,7 +15,6 @@ object Options {
   @scala.inline
   def apply(topology: `4` | `6` | `8`): Options = {
     val __obj = js.Dynamic.literal(topology = topology.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

@@ -16,7 +16,6 @@ object CheckDomainAvailabilityResponse {
   @scala.inline
   def apply(Availability: DomainAvailability): CheckDomainAvailabilityResponse = {
     val __obj = js.Dynamic.literal(Availability = Availability.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckDomainAvailabilityResponse]
   }
 }

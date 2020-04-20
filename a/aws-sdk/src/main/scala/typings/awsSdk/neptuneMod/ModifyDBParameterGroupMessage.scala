@@ -20,7 +20,6 @@ object ModifyDBParameterGroupMessage {
   @scala.inline
   def apply(DBParameterGroupName: String, Parameters: ParametersList): ModifyDBParameterGroupMessage = {
     val __obj = js.Dynamic.literal(DBParameterGroupName = DBParameterGroupName.asInstanceOf[js.Any], Parameters = Parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyDBParameterGroupMessage]
   }
 }

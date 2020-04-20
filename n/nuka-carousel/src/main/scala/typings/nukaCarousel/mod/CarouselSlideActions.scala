@@ -15,16 +15,14 @@ trait CarouselSlideActions extends js.Object
 
 object CarouselSlideActions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def firstSlide: typings.nukaCarousel.nukaCarouselStrings.firstSlide = "firstSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.firstSlide]
   @scala.inline
-  def firstSlide: typings.nukaCarousel.nukaCarouselStrings.firstSlide = this.cast("firstSlide")
+  def lastSlide: typings.nukaCarousel.nukaCarouselStrings.lastSlide = "lastSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.lastSlide]
   @scala.inline
-  def lastSlide: typings.nukaCarousel.nukaCarouselStrings.lastSlide = this.cast("lastSlide")
+  def nextSlide: typings.nukaCarousel.nukaCarouselStrings.nextSlide = "nextSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.nextSlide]
   @scala.inline
-  def nextSlide: typings.nukaCarousel.nukaCarouselStrings.nextSlide = this.cast("nextSlide")
+  def pause: typings.nukaCarousel.nukaCarouselStrings.pause = "pause".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.pause]
   @scala.inline
-  def pause: typings.nukaCarousel.nukaCarouselStrings.pause = this.cast("pause")
-  @scala.inline
-  def previousSlide: typings.nukaCarousel.nukaCarouselStrings.previousSlide = this.cast("previousSlide")
+  def previousSlide: typings.nukaCarousel.nukaCarouselStrings.previousSlide = "previousSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.previousSlide]
 }
 

@@ -13,7 +13,6 @@ object SpliceCommand {
   @scala.inline
   def apply($splice: js.Array[js.Array[_]]): SpliceCommand = {
     val __obj = js.Dynamic.literal($splice = $splice.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpliceCommand]
   }
 }

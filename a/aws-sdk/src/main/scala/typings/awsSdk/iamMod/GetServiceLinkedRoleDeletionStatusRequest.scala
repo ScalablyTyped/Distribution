@@ -16,7 +16,6 @@ object GetServiceLinkedRoleDeletionStatusRequest {
   @scala.inline
   def apply(DeletionTaskId: DeletionTaskIdType): GetServiceLinkedRoleDeletionStatusRequest = {
     val __obj = js.Dynamic.literal(DeletionTaskId = DeletionTaskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetServiceLinkedRoleDeletionStatusRequest]
   }
 }

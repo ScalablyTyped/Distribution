@@ -16,7 +16,6 @@ object IGetAppOption {
   @scala.inline
   def apply(allowDefault: Boolean): IGetAppOption = {
     val __obj = js.Dynamic.literal(allowDefault = allowDefault.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGetAppOption]
   }
 }

@@ -24,7 +24,6 @@ object BatchCreateRoomMembershipRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, MembershipItemList: MembershipItemList, RoomId: NonEmptyString): BatchCreateRoomMembershipRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], MembershipItemList = MembershipItemList.asInstanceOf[js.Any], RoomId = RoomId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchCreateRoomMembershipRequest]
   }
 }

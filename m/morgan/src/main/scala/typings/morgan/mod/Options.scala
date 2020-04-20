@@ -3,6 +3,7 @@ package typings.morgan.mod
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +29,7 @@ trait Options extends js.Object {
     * function will be called as skip(req, res).
     */
   var skip: js.UndefOr[
-    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Boolean]
+    js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Boolean]
   ] = js.undefined
   /***
     * Output stream for writing log lines, defaults to process.stdout.
@@ -42,7 +43,7 @@ object Options {
   def apply(
     buffer: js.UndefOr[Boolean] = js.undefined,
     immediate: js.UndefOr[Boolean] = js.undefined,
-    skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => Boolean = null,
+    skip: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean = null,
     stream: StreamOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal()

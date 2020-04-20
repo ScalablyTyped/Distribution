@@ -20,7 +20,6 @@ object FragmentSelector {
   @scala.inline
   def apply(FragmentSelectorType: FragmentSelectorType, TimestampRange: TimestampRange): FragmentSelector = {
     val __obj = js.Dynamic.literal(FragmentSelectorType = FragmentSelectorType.asInstanceOf[js.Any], TimestampRange = TimestampRange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FragmentSelector]
   }
 }

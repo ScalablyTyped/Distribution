@@ -15,6 +15,6 @@ class VertexOutputBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the vector input component
     */
-  def vector(): NodeMaterialConnectionPoint = js.native
+  def vector: NodeMaterialConnectionPoint = js.native
 }
 

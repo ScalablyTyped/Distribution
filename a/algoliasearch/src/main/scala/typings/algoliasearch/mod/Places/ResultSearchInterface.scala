@@ -52,7 +52,6 @@ object ResultSearchInterface {
     query: String
   ): ResultSearchInterface[T] = {
     val __obj = js.Dynamic.literal(degradedQuery = degradedQuery.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], nbHits = nbHits.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], processingTimeMS = processingTimeMS.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultSearchInterface[T]]
   }
 }

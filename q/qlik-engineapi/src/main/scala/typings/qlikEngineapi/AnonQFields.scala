@@ -14,7 +14,6 @@ object AnonQFields {
   @scala.inline
   def apply(qFields: js.Array[IDataField], qFormatSpec: String): AnonQFields = {
     val __obj = js.Dynamic.literal(qFields = qFields.asInstanceOf[js.Any], qFormatSpec = qFormatSpec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQFields]
   }
 }

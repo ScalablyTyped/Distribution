@@ -14,7 +14,6 @@ object AnonHref {
   @scala.inline
   def apply(href: String, status: ListItemObjectStatus): AnonHref = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHref]
   }
 }

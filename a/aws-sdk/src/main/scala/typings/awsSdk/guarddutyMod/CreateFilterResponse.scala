@@ -16,7 +16,6 @@ object CreateFilterResponse {
   @scala.inline
   def apply(Name: FilterName): CreateFilterResponse = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateFilterResponse]
   }
 }

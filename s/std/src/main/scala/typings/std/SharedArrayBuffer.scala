@@ -15,9 +15,9 @@ trait SharedArrayBuffer extends ArrayBufferLike {
     * The SharedArrayBuffer constructor's length property whose value is 1.
     */
   var length: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.species)
+  @JSName(js.Symbol.species)
   val species: SharedArrayBuffer = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.std.stdStrings.SharedArrayBuffer = js.native
   /**
     * Returns a section of an SharedArrayBuffer.

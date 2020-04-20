@@ -23,7 +23,6 @@ object PathWatcher {
     onDidError: js.Function1[/* error */ Error, Unit] => Disposable
   ): PathWatcher = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), getStartPromise = js.Any.fromFunction0(getStartPromise), onDidError = js.Any.fromFunction1(onDidError))
-  
     __obj.asInstanceOf[PathWatcher]
   }
 }

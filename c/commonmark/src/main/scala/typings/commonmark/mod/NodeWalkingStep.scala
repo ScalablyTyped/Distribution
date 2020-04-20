@@ -19,7 +19,6 @@ object NodeWalkingStep {
   @scala.inline
   def apply(entering: Boolean, node: Node): NodeWalkingStep = {
     val __obj = js.Dynamic.literal(entering = entering.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeWalkingStep]
   }
 }

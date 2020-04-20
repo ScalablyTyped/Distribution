@@ -23,7 +23,6 @@ object ExternalApplicationEvents {
     newListener: String
   ): ExternalApplicationEvents = {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], disconnected = disconnected.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExternalApplicationEvents]
   }
 }

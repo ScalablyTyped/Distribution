@@ -22,7 +22,6 @@ object QueryExecuteSubsetParams {
     rowsStartIndex: Double
   ): QueryExecuteSubsetParams = {
     val __obj = js.Dynamic.literal(batchIndex = batchIndex.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any], resultSetIndex = resultSetIndex.asInstanceOf[js.Any], rowsCount = rowsCount.asInstanceOf[js.Any], rowsStartIndex = rowsStartIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryExecuteSubsetParams]
   }
 }

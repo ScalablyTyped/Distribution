@@ -16,7 +16,6 @@ object VerifyTrustRequest {
   @scala.inline
   def apply(TrustId: TrustId): VerifyTrustRequest = {
     val __obj = js.Dynamic.literal(TrustId = TrustId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyTrustRequest]
   }
 }

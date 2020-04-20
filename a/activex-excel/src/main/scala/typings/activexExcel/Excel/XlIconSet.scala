@@ -52,48 +52,46 @@ trait XlIconSet extends js.Object
 
 object XlIconSet {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xl3Arrows: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xl3Arrows: `1` = this.cast(1)
+  def xl3ArrowsGray: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xl3ArrowsGray: `2` = this.cast(2)
+  def xl3Flags: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xl3Flags: `3` = this.cast(3)
+  def xl3Signs: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xl3Signs: `6` = this.cast(6)
+  def xl3Stars: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def xl3Stars: `18` = this.cast(18)
+  def xl3Symbols: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xl3Symbols: `7` = this.cast(7)
+  def xl3Symbols2: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xl3Symbols2: `8` = this.cast(8)
+  def xl3TrafficLights1: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xl3TrafficLights1: `4` = this.cast(4)
+  def xl3TrafficLights2: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xl3TrafficLights2: `5` = this.cast(5)
+  def xl3Triangles: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def xl3Triangles: `19` = this.cast(19)
+  def xl4Arrows: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xl4Arrows: `9` = this.cast(9)
+  def xl4ArrowsGray: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xl4ArrowsGray: `10` = this.cast(10)
+  def xl4CRV: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xl4CRV: `12` = this.cast(12)
+  def xl4RedToBlack: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xl4RedToBlack: `11` = this.cast(11)
+  def xl4TrafficLights: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xl4TrafficLights: `13` = this.cast(13)
+  def xl5Arrows: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xl5Arrows: `14` = this.cast(14)
+  def xl5ArrowsGray: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xl5ArrowsGray: `15` = this.cast(15)
+  def xl5Boxes: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def xl5Boxes: `20` = this.cast(20)
+  def xl5CRV: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xl5CRV: `16` = this.cast(16)
+  def xl5Quarters: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xl5Quarters: `17` = this.cast(17)
-  @scala.inline
-  def xlCustomSet: `-1` = this.cast(-1)
+  def xlCustomSet: `-1` = -1.asInstanceOf[`-1`]
 }
 

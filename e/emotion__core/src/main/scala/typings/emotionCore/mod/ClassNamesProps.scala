@@ -13,7 +13,6 @@ object ClassNamesProps {
   @scala.inline
   def apply[Theme](children: ClassNamesContent[Theme] => ReactNode): ClassNamesProps[Theme] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[ClassNamesProps[Theme]]
   }
 }

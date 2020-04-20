@@ -14,14 +14,12 @@ trait GestureDirection extends js.Object
 
 object GestureDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.reactNavigationStack.reactNavigationStackStrings.horizontal = "horizontal".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.horizontal]
   @scala.inline
-  def horizontal: typings.reactNavigationStack.reactNavigationStackStrings.horizontal = this.cast("horizontal")
+  def `horizontal-inverted`: typings.reactNavigationStack.reactNavigationStackStrings.`horizontal-inverted` = "horizontal-inverted".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.`horizontal-inverted`]
   @scala.inline
-  def `horizontal-inverted`: typings.reactNavigationStack.reactNavigationStackStrings.`horizontal-inverted` = this.cast("horizontal-inverted")
+  def vertical: typings.reactNavigationStack.reactNavigationStackStrings.vertical = "vertical".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.vertical]
   @scala.inline
-  def vertical: typings.reactNavigationStack.reactNavigationStackStrings.vertical = this.cast("vertical")
-  @scala.inline
-  def `vertical-inverted`: typings.reactNavigationStack.reactNavigationStackStrings.`vertical-inverted` = this.cast("vertical-inverted")
+  def `vertical-inverted`: typings.reactNavigationStack.reactNavigationStackStrings.`vertical-inverted` = "vertical-inverted".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.`vertical-inverted`]
 }
 

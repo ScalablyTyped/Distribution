@@ -35,8 +35,8 @@ class ModuleSecurity protected () extends ModelUnit {
   var model_FModuleSecurity: IModel = js.native
   @JSName("moduleRoles")
   val moduleRoles_FModuleSecurity: IList[IModuleRole] = js.native
-  def containerAsModule(): Module = js.native
-  def moduleRoles(): IList[ModuleRole] = js.native
+  def containerAsModule: Module = js.native
+  def moduleRoles: IList[ModuleRole] = js.native
 }
 
 /* static members */

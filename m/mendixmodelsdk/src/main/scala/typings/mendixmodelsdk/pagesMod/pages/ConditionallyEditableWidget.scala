@@ -25,8 +25,8 @@ abstract class ConditionallyEditableWidget protected () extends ConditionallyVis
   def conditionalEditabilitySettings(): js.Any = js.native
   def conditionalEditabilitySettings(newValue: ConditionalEditabilitySettings): js.Any = js.native
   @JSName("conditionalEditabilitySettings")
-  def conditionalEditabilitySettings_Union(): ConditionalEditabilitySettings | Null = js.native
-  def editable(): EditableEnum = js.native
+  def conditionalEditabilitySettings_Union: ConditionalEditabilitySettings | Null = js.native
+  def editable: EditableEnum = js.native
   def editable(newValue: EditableEnum): js.Any = js.native
 }
 

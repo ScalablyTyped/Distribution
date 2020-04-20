@@ -33,7 +33,7 @@ class DropDown protected () extends AttributeWidget {
   /**
     * In version 7.2.0: introduced
     */
-  def emptyOptionCaption(): Text = js.native
+  def emptyOptionCaption: Text = js.native
   def emptyOptionCaption(newValue: Text): js.Any = js.native
 }
 

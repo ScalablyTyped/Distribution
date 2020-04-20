@@ -31,10 +31,10 @@ class SignedXml ()
   /* protected */ def CreateQualifyingProperties(): Unit = js.native
   def LoadXml(value: String, useContainer: Boolean): Unit = js.native
   def LoadXml(value: Element, useContainer: Boolean): Unit = js.native
-  def Properties(): QualifyingProperties | Null = js.native
+  def Properties: QualifyingProperties | Null = js.native
   def Sign(algorithm: Algorithm, key: CryptoKey, data: Document_, options: OptionsXAdES): js.Promise[Signature] = js.native
-  def SignedProperties(): typings.xadesjs.xmlMod.SignedProperties = js.native
-  def UnsignedProperties(): typings.xadesjs.xmlMod.UnsignedProperties = js.native
+  def SignedProperties: typings.xadesjs.xmlMod.SignedProperties = js.native
+  def UnsignedProperties: typings.xadesjs.xmlMod.UnsignedProperties = js.native
   /* protected */ def VerifySigningCertificate(): js.Promise[X509Certificate | Null] = js.native
 }
 

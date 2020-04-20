@@ -15,10 +15,8 @@ trait Feature extends FeatureOptions
 
 object Feature {
   @scala.inline
-  def astral: typings.xregexp.xregexpStrings.astral = this.cast("astral")
+  def astral: typings.xregexp.xregexpStrings.astral = "astral".asInstanceOf[typings.xregexp.xregexpStrings.astral]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def namespacing: typings.xregexp.xregexpStrings.namespacing = this.cast("namespacing")
+  def namespacing: typings.xregexp.xregexpStrings.namespacing = "namespacing".asInstanceOf[typings.xregexp.xregexpStrings.namespacing]
 }
 

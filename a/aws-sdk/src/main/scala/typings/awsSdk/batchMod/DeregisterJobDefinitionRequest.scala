@@ -16,7 +16,6 @@ object DeregisterJobDefinitionRequest {
   @scala.inline
   def apply(jobDefinition: String): DeregisterJobDefinitionRequest = {
     val __obj = js.Dynamic.literal(jobDefinition = jobDefinition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterJobDefinitionRequest]
   }
 }

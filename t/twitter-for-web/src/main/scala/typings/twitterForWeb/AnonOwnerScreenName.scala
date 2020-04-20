@@ -15,7 +15,6 @@ object AnonOwnerScreenName {
   @scala.inline
   def apply(ownerScreenName: String, slug: String, sourceType: list): AnonOwnerScreenName = {
     val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOwnerScreenName]
   }
 }

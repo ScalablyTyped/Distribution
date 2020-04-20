@@ -13,7 +13,6 @@ object Handle {
   @scala.inline
   def apply(end: () => Unit, resume: () => Unit): Handle = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), resume = js.Any.fromFunction0(resume))
-  
     __obj.asInstanceOf[Handle]
   }
 }

@@ -31,7 +31,6 @@ object ContentManager {
     save: (Uri, INotebookContents) => Thenable[INotebookContents]
   ): ContentManager = {
     val __obj = js.Dynamic.literal(getNotebookContents = js.Any.fromFunction1(getNotebookContents), save = js.Any.fromFunction2(save))
-  
     __obj.asInstanceOf[ContentManager]
   }
 }

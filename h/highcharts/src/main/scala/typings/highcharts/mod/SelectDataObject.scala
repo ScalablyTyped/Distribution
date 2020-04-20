@@ -14,7 +14,6 @@ object SelectDataObject {
   @scala.inline
   def apply(axis: Axis, max: Double, min: Double): SelectDataObject = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectDataObject]
   }
 }

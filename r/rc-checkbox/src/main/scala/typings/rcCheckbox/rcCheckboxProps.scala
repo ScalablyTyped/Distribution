@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rcCheckboxProps {
   @scala.inline
-  def RcCheckboxProps: Props.type = typings.rcCheckbox.mod.Props
+  def RcCheckboxProps: Props.type = Props
   type RcCheckboxProps = Props
 }
 

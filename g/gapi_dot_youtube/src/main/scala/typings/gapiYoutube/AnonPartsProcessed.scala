@@ -23,7 +23,6 @@ object AnonPartsProcessed {
   @scala.inline
   def apply(partsProcessed: Double, partsTotal: Double, timeLeftMs: Double): AnonPartsProcessed = {
     val __obj = js.Dynamic.literal(partsProcessed = partsProcessed.asInstanceOf[js.Any], partsTotal = partsTotal.asInstanceOf[js.Any], timeLeftMs = timeLeftMs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPartsProcessed]
   }
 }

@@ -17,7 +17,6 @@ object AnonCNames {
   @scala.inline
   def apply(cNames: Double, lcid: Double, rgdispid: Double, rgszNames: Double, riid: GUID): AnonCNames = {
     val __obj = js.Dynamic.literal(cNames = cNames.asInstanceOf[js.Any], lcid = lcid.asInstanceOf[js.Any], rgdispid = rgdispid.asInstanceOf[js.Any], rgszNames = rgszNames.asInstanceOf[js.Any], riid = riid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCNames]
   }
 }

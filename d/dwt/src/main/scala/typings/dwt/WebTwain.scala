@@ -908,6 +908,11 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def ClearAllHTTPFormField(): Boolean = js.native
+  /**
+    * Clear the tags from the specified image
+    * @method WebTwain#ClearImageTags
+    * @param {number} sImageIndex specified a image
+    */
   def ClearImageTags(sImageIndex: Double): Boolean = js.native
   /**
     * Clears the content of all custom tiff tags.
@@ -933,6 +938,12 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def CloseWorkingProcess(): Boolean = js.native
+  /**
+    * Converts the specified image to black & white
+    * @method WebTwain#ConvertToBW
+    * @param {number} sImageIndex specifies an image
+    * @return {boolean}
+    */
   def ConvertToBW(sImageIndex: Double): Boolean = js.native
   /**
     * Converts the images specified by the indices to base64 synchronously.
@@ -1259,6 +1270,12 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def FeedPage(): Boolean = js.native
+  /**
+    * Specifies a tag and use it to filter images
+    * @method WebTwain#FilterImagesByTag     
+    * @param {string} tagName specifies a tag
+    * @return {boolean}
+    */
   def FilterImagesByTag(tagName: String): Boolean = js.native
   /**
     * Flips the image of a specified index in buffer.
@@ -1560,6 +1577,31 @@ trait WebTwain extends js.Object {
       /* errorCode */ Double, 
       /* errorString */ String, 
       /* httppostresponsestring */ String, 
+      Unit
+    ]
+  ): Boolean = js.native
+  /**
+    * Uploads the images specified by the indices to the HTTP server.
+    * @method WebTwain#HTTPUpload
+    * @param {string} url the url where the images are sent in a POST request.
+    * @param {Array} indices indices specifies which images are to be uploaded.
+    * @param {EnumDWT_ImageType} enumImageType the image format in which the images are to be uploaded.
+    * @param {EnumDWT_UploadDataFormat} dataFormat whether to upload the images as binary or a base64-based string.
+    * @param {string} fileName the name of the image to be uploaded.
+    * @param {function} asyncSuccessFunc the function to call when the upload succeeds. Please refer to the function prototype OnSuccess.
+    * @param {function} asyncFailureFunc the function to call when the upload fails. Please refer to the function prototype OnFailure.
+    */
+  def HTTPUpload(
+    url: String,
+    indices: js.Array[Double],
+    enumImageType: EnumDWTImageType,
+    dataFormat: EnumDWTUploadDataFormat,
+    fileName: String,
+    asyncSuccessFunc: js.Function1[/* httpPostResponseString */ String, Unit],
+    asyncFailureFunc: js.Function3[
+      /* errorCode */ Double, 
+      /* errorString */ String, 
+      /* httpPostResponseString */ String, 
       Unit
     ]
   ): Boolean = js.native
@@ -1946,6 +1988,12 @@ trait WebTwain extends js.Object {
     * @return {number}
     */
   def IndexToImageID(sImageIndex: Double): Double = js.native
+  /**
+    * Inverts the color of the pixels of the specified image
+    * @method WebTwain#Invert
+    * @param {number} sImageIndex specifies an image
+    * @return {boolean}
+    */
   def Invert(sImageIndex: Double): Boolean = js.native
   /**
     * [Deprecated.] Detects whether an image is blank.
@@ -2339,6 +2387,11 @@ trait WebTwain extends js.Object {
     * @return {number}
     */
   def SaveSelectedImagesToBytes(bufferSize: Double, buffer: js.Array[Double]): Double = js.native
+  /**
+    * Selects all images
+    * @method WebTwain#SelectAllImages
+    * @return {boolean}
+    */
   def SelectAllImages(): Boolean = js.native
   /**
     * Brings up the TWAIN Data Source Manager's Source Selection User Interface (UI)
@@ -2415,6 +2468,12 @@ trait WebTwain extends js.Object {
     bResampleImage: Boolean,
     newVal: EnumDWTInterpolationMethod
   ): Boolean = js.native
+  /**
+    * Sets a default tag that's applied to newly acquired images
+    * @method WebTwain#SetDefaultTag
+    * @param {string} tagName specifies a tag
+    * @return {boolean}
+    */
   def SetDefaultTag(tagName: String): Boolean = js.native
   /**
     * Sets file name and file format information used in File Transfer Mode.
@@ -2582,6 +2641,13 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def SwitchImage(sImageIndex1: Double, sImageIndex2: Double): Boolean = js.native
+  /**
+    * Tag specified images
+    * @method WebTwain#TagImages
+    * @param {number[]} aryImageIndices The indices of the images to tag
+    * @param {string} tagName specifies a tag
+    * @return {boolean}
+    */
   def TagImages(aryImageIndices: js.Array[Double], tagName: String): Boolean = js.native
   /**
     * Unbinds an event from the specified function, so that the function stops receiving notifications when the event fires.

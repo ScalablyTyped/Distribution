@@ -15,16 +15,14 @@ trait GenericFamily extends _FontFamilyProperty
 
 object GenericFamily {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cursive: typings.csstype.csstypeStrings.cursive = "cursive".asInstanceOf[typings.csstype.csstypeStrings.cursive]
   @scala.inline
-  def cursive: typings.csstype.csstypeStrings.cursive = this.cast("cursive")
+  def fantasy: typings.csstype.csstypeStrings.fantasy = "fantasy".asInstanceOf[typings.csstype.csstypeStrings.fantasy]
   @scala.inline
-  def fantasy: typings.csstype.csstypeStrings.fantasy = this.cast("fantasy")
+  def monospace: typings.csstype.csstypeStrings.monospace = "monospace".asInstanceOf[typings.csstype.csstypeStrings.monospace]
   @scala.inline
-  def monospace: typings.csstype.csstypeStrings.monospace = this.cast("monospace")
+  def `sans-serif`: typings.csstype.csstypeStrings.`sans-serif` = "sans-serif".asInstanceOf[typings.csstype.csstypeStrings.`sans-serif`]
   @scala.inline
-  def `sans-serif`: typings.csstype.csstypeStrings.`sans-serif` = this.cast("sans-serif")
-  @scala.inline
-  def serif: typings.csstype.csstypeStrings.serif = this.cast("serif")
+  def serif: typings.csstype.csstypeStrings.serif = "serif".asInstanceOf[typings.csstype.csstypeStrings.serif]
 }
 

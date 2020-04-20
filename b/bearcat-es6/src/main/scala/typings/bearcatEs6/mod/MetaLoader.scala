@@ -40,7 +40,6 @@ object MetaLoader {
     setMetaObject: (String, js.Object) => Unit
   ): MetaLoader = {
     val __obj = js.Dynamic.literal(getMetaObjects = js.Any.fromFunction0(getMetaObjects), load = js.Any.fromFunction1(load), metaObjects = metaObjects.asInstanceOf[js.Any], setMetaObject = js.Any.fromFunction2(setMetaObject))
-  
     __obj.asInstanceOf[MetaLoader]
   }
 }

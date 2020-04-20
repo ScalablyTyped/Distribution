@@ -18,20 +18,18 @@ trait LogonType extends js.Object
 
 object LogonType {
   @scala.inline
-  def batch: typings.microsoftGraph.microsoftGraphStrings.batch = this.cast("batch")
+  def batch: typings.microsoftGraph.microsoftGraphStrings.batch = "batch".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.batch]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def interactive: typings.microsoftGraph.microsoftGraphStrings.interactive = "interactive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.interactive]
   @scala.inline
-  def interactive: typings.microsoftGraph.microsoftGraphStrings.interactive = this.cast("interactive")
+  def network: typings.microsoftGraph.microsoftGraphStrings.network = "network".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.network]
   @scala.inline
-  def network: typings.microsoftGraph.microsoftGraphStrings.network = this.cast("network")
+  def remoteInteractive: typings.microsoftGraph.microsoftGraphStrings.remoteInteractive = "remoteInteractive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.remoteInteractive]
   @scala.inline
-  def remoteInteractive: typings.microsoftGraph.microsoftGraphStrings.remoteInteractive = this.cast("remoteInteractive")
+  def service: typings.microsoftGraph.microsoftGraphStrings.service = "service".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.service]
   @scala.inline
-  def service: typings.microsoftGraph.microsoftGraphStrings.service = this.cast("service")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

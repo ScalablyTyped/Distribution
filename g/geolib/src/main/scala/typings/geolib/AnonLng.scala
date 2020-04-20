@@ -14,7 +14,6 @@ object AnonLng {
   @scala.inline
   def apply(lng: GeolibLongitudeInputValue): AnonLng = {
     val __obj = js.Dynamic.literal(lng = lng.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLng]
   }
 }

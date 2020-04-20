@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_placeholder"
-version := "2.1.1-dt-20200226Z-f9d5d2"
+version := "2.1.1-dt-20200226Z-5d3dca"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

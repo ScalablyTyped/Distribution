@@ -16,7 +16,6 @@ object UnsubscribeInput {
   @scala.inline
   def apply(SubscriptionArn: subscriptionARN): UnsubscribeInput = {
     val __obj = js.Dynamic.literal(SubscriptionArn = SubscriptionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnsubscribeInput]
   }
 }

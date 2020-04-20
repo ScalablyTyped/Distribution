@@ -14,14 +14,12 @@ trait MODE extends js.Object
 
 object MODE {
   @scala.inline
-  def CLEAN: `1` = this.cast(1)
+  def CLEAN: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SMUDGE: `0` = this.cast(0)
+  def SMUDGE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def TO_ODB: `1` = this.cast(1)
+  def TO_ODB: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def TO_WORKTREE: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TO_WORKTREE: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -52,7 +52,6 @@ object StatsDto {
     spellblockperlevel: Double
   ): StatsDto = {
     val __obj = js.Dynamic.literal(armor = armor.asInstanceOf[js.Any], armorperlevel = armorperlevel.asInstanceOf[js.Any], attackdamage = attackdamage.asInstanceOf[js.Any], attackdamageperlevel = attackdamageperlevel.asInstanceOf[js.Any], attackrange = attackrange.asInstanceOf[js.Any], attackspeedoffset = attackspeedoffset.asInstanceOf[js.Any], attackspeedperlevel = attackspeedperlevel.asInstanceOf[js.Any], crit = crit.asInstanceOf[js.Any], critperlevel = critperlevel.asInstanceOf[js.Any], hp = hp.asInstanceOf[js.Any], hpperlevel = hpperlevel.asInstanceOf[js.Any], hpregen = hpregen.asInstanceOf[js.Any], hpregenperlevel = hpregenperlevel.asInstanceOf[js.Any], movespeed = movespeed.asInstanceOf[js.Any], mp = mp.asInstanceOf[js.Any], mpperlevel = mpperlevel.asInstanceOf[js.Any], mpregen = mpregen.asInstanceOf[js.Any], mpregenperlevel = mpregenperlevel.asInstanceOf[js.Any], spellblock = spellblock.asInstanceOf[js.Any], spellblockperlevel = spellblockperlevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatsDto]
   }
 }

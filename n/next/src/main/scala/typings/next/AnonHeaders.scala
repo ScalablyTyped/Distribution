@@ -17,7 +17,6 @@ object AnonHeaders {
   @scala.inline
   def apply(headers: js.Array[Header], redirects: js.Array[Redirect], rewrites: js.Array[Rewrite]): AnonHeaders = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], redirects = redirects.asInstanceOf[js.Any], rewrites = rewrites.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHeaders]
   }
 }

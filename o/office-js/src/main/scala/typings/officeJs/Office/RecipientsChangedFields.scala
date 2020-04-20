@@ -59,7 +59,6 @@ object RecipientsChangedFields {
     to: Boolean
   ): RecipientsChangedFields = {
     val __obj = js.Dynamic.literal(bcc = bcc.asInstanceOf[js.Any], cc = cc.asInstanceOf[js.Any], optionalAttendees = optionalAttendees.asInstanceOf[js.Any], requiredAttendees = requiredAttendees.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecipientsChangedFields]
   }
 }

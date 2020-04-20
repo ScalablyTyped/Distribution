@@ -16,7 +16,6 @@ object Matcher {
   @scala.inline
   def apply(HttpCode: HttpCode): Matcher = {
     val __obj = js.Dynamic.literal(HttpCode = HttpCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Matcher]
   }
 }

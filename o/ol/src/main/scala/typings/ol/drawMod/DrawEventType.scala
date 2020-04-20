@@ -12,6 +12,9 @@ sealed trait DrawEventType extends js.Object
 @js.native
 object DrawEventType extends js.Object {
   @js.native
+  sealed trait DRAWABORT extends DrawEventType
+  
+  @js.native
   sealed trait DRAWEND extends DrawEventType
   
   @js.native
@@ -19,6 +22,9 @@ object DrawEventType extends js.Object {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DrawEventType with String] = js.native
+  /* "drawabort" */ @js.native
+  object DRAWABORT extends TopLevel[DRAWABORT with String]
+  
   /* "drawend" */ @js.native
   object DRAWEND extends TopLevel[DRAWEND with String]
   

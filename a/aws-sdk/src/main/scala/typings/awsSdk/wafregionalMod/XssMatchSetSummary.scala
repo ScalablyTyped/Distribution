@@ -20,7 +20,6 @@ object XssMatchSetSummary {
   @scala.inline
   def apply(Name: ResourceName, XssMatchSetId: ResourceId): XssMatchSetSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], XssMatchSetId = XssMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XssMatchSetSummary]
   }
 }

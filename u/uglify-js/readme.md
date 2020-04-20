@@ -1,7 +1,7 @@
 
 # Scala.js typings for uglify-js
 
-Typings are for version 3.0
+Typings are for version 3.9
 
 ## Library description:
 JavaScript parser, mangler/compressor and beautifier toolkit

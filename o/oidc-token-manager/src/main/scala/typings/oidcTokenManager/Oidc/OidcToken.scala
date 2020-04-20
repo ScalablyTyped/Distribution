@@ -32,7 +32,6 @@ object OidcToken {
     toJSON: () => String
   ): OidcToken = {
     val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expired = expired.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], id_token = id_token.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], session_state = session_state.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[OidcToken]
   }
 }

@@ -39,7 +39,6 @@ object IPostalAddress {
   @scala.inline
   def apply(city: String, postal_code: String, region: String, state: String, street: String, street_2: String): IPostalAddress = {
     val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], postal_code = postal_code.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], street_2 = street_2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPostalAddress]
   }
 }

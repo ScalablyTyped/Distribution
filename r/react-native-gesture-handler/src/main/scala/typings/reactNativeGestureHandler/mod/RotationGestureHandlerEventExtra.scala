@@ -15,7 +15,6 @@ object RotationGestureHandlerEventExtra {
   @scala.inline
   def apply(anchorX: Double, anchorY: Double, rotation: Double, velocity: Double): RotationGestureHandlerEventExtra = {
     val __obj = js.Dynamic.literal(anchorX = anchorX.asInstanceOf[js.Any], anchorY = anchorY.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RotationGestureHandlerEventExtra]
   }
 }

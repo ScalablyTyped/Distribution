@@ -34,7 +34,6 @@ object SamplesResource {
     list: AnonKey => Request_[ListPerfSamplesResponse]
   ): SamplesResource = {
     val __obj = js.Dynamic.literal(batchCreate = js.Any.fromFunction1(batchCreate), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[SamplesResource]
   }
 }

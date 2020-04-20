@@ -20,7 +20,6 @@ object GetCoreDefinitionVersionRequest {
   @scala.inline
   def apply(CoreDefinitionId: string, CoreDefinitionVersionId: string): GetCoreDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(CoreDefinitionId = CoreDefinitionId.asInstanceOf[js.Any], CoreDefinitionVersionId = CoreDefinitionVersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCoreDefinitionVersionRequest]
   }
 }

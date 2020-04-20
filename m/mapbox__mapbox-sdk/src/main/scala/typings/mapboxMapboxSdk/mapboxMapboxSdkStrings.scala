@@ -283,11 +283,11 @@ object mapboxMapboxSdkStrings {
   @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
   @scala.inline
-  def `end of road`: `end of road` = "end of road".asInstanceOf[`end of road`]
+  def `end of road`: `end of road` = ("end of road").asInstanceOf[`end of road`]
   @scala.inline
-  def `exit rotary`: `exit rotary` = "exit rotary".asInstanceOf[`exit rotary`]
+  def `exit rotary`: `exit rotary` = ("exit rotary").asInstanceOf[`exit rotary`]
   @scala.inline
-  def `exit roundabout`: `exit roundabout` = "exit roundabout".asInstanceOf[`exit roundabout`]
+  def `exit roundabout`: `exit roundabout` = ("exit roundabout").asInstanceOf[`exit roundabout`]
   @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
   @scala.inline
@@ -325,13 +325,13 @@ object mapboxMapboxSdkStrings {
   @scala.inline
   def neighborhood: neighborhood = "neighborhood".asInstanceOf[neighborhood]
   @scala.inline
-  def `new name`: `new name` = "new name".asInstanceOf[`new name`]
+  def `new name`: `new name` = ("new name").asInstanceOf[`new name`]
   @scala.inline
   def notification: notification = "notification".asInstanceOf[notification]
   @scala.inline
-  def `off ramp`: `off ramp` = "off ramp".asInstanceOf[`off ramp`]
+  def `off ramp`: `off ramp` = ("off ramp").asInstanceOf[`off ramp`]
   @scala.inline
-  def `on ramp`: `on ramp` = "on ramp".asInstanceOf[`on ramp`]
+  def `on ramp`: `on ramp` = ("on ramp").asInstanceOf[`on ramp`]
   @scala.inline
   def place: place = "place".asInstanceOf[place]
   @scala.inline
@@ -361,17 +361,17 @@ object mapboxMapboxSdkStrings {
   @scala.inline
   def roundabout: roundabout = "roundabout".asInstanceOf[roundabout]
   @scala.inline
-  def `roundabout turn`: `roundabout turn` = "roundabout turn".asInstanceOf[`roundabout turn`]
+  def `roundabout turn`: `roundabout turn` = ("roundabout turn").asInstanceOf[`roundabout turn`]
   @scala.inline
-  def `sharp left`: `sharp left` = "sharp left".asInstanceOf[`sharp left`]
+  def `sharp left`: `sharp left` = ("sharp left").asInstanceOf[`sharp left`]
   @scala.inline
-  def `sharp right`: `sharp right` = "sharp right".asInstanceOf[`sharp right`]
+  def `sharp right`: `sharp right` = ("sharp right").asInstanceOf[`sharp right`]
   @scala.inline
   def simplified: simplified = "simplified".asInstanceOf[simplified]
   @scala.inline
-  def `slight left`: `slight left` = "slight left".asInstanceOf[`slight left`]
+  def `slight left`: `slight left` = ("slight left").asInstanceOf[`slight left`]
   @scala.inline
-  def `slight right`: `slight right` = "slight right".asInstanceOf[`slight right`]
+  def `slight right`: `slight right` = ("slight right").asInstanceOf[`slight right`]
   @scala.inline
   def speed: speed = "speed".asInstanceOf[speed]
   @scala.inline

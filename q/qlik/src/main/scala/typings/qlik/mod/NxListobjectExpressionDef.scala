@@ -13,7 +13,6 @@ object NxListobjectExpressionDef {
   @scala.inline
   def apply(qExpr: String, qLibraryId: String): NxListobjectExpressionDef = {
     val __obj = js.Dynamic.literal(qExpr = qExpr.asInstanceOf[js.Any], qLibraryId = qLibraryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NxListobjectExpressionDef]
   }
 }

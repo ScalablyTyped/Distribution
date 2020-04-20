@@ -66,62 +66,60 @@ trait styleAttrType extends js.Object
 
 object styleAttrType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleAttrTypeAngle: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def styleAttrTypeAngle: `20` = this.cast(20)
+  def styleAttrTypeCh: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def styleAttrTypeCh: `15` = this.cast(15)
+  def styleAttrTypeCm: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def styleAttrTypeCm: `10` = this.cast(10)
+  def styleAttrTypeColor: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleAttrTypeColor: `1` = this.cast(1)
+  def styleAttrTypeDeg: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def styleAttrTypeDeg: `21` = this.cast(21)
+  def styleAttrTypeEm: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleAttrTypeEm: `7` = this.cast(7)
+  def styleAttrTypeEx: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleAttrTypeEx: `8` = this.cast(8)
+  def styleAttrTypeGrad: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def styleAttrTypeGrad: `23` = this.cast(23)
+  def styleAttrTypeIn: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def styleAttrTypeIn: `9` = this.cast(9)
+  def styleAttrTypeInteger: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleAttrTypeInteger: `3` = this.cast(3)
+  def styleAttrTypeLength: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleAttrTypeLength: `5` = this.cast(5)
+  def styleAttrTypeMm: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def styleAttrTypeMm: `11` = this.cast(11)
+  def styleAttrTypeMs: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def styleAttrTypeMs: `26` = this.cast(26)
+  def styleAttrTypeNumber: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleAttrTypeNumber: `4` = this.cast(4)
+  def styleAttrTypePc: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def styleAttrTypePc: `13` = this.cast(13)
+  def styleAttrTypePercentage: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def styleAttrTypePercentage: `19` = this.cast(19)
+  def styleAttrTypePt: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def styleAttrTypePt: `12` = this.cast(12)
+  def styleAttrTypePx: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleAttrTypePx: `6` = this.cast(6)
+  def styleAttrTypeRad: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def styleAttrTypeRad: `22` = this.cast(22)
+  def styleAttrTypeRem: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def styleAttrTypeRem: `14` = this.cast(14)
+  def styleAttrTypeS: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def styleAttrTypeS: `25` = this.cast(25)
+  def styleAttrTypeString: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleAttrTypeString: `0` = this.cast(0)
+  def styleAttrTypeTime: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def styleAttrTypeTime: `24` = this.cast(24)
+  def styleAttrTypeUrl: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleAttrTypeUrl: `2` = this.cast(2)
+  def styleAttrTypeVh: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def styleAttrTypeVh: `16` = this.cast(16)
+  def styleAttrTypeVmin: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def styleAttrTypeVmin: `18` = this.cast(18)
+  def styleAttrTypeVw: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def styleAttrTypeVw: `17` = this.cast(17)
-  @scala.inline
-  def styleAttrType_Max: `2147483647` = this.cast(2147483647)
+  def styleAttrType_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -220,19 +220,137 @@ import typings.fhirKitClient.Anon187
 import typings.fhirKitClient.Anon188
 import typings.fhirKitClient.Anon189
 import typings.fhirKitClient.Anon19
+import typings.fhirKitClient.Anon190
+import typings.fhirKitClient.Anon191
+import typings.fhirKitClient.Anon192
+import typings.fhirKitClient.Anon193
+import typings.fhirKitClient.Anon194
+import typings.fhirKitClient.Anon195
+import typings.fhirKitClient.Anon196
+import typings.fhirKitClient.Anon197
+import typings.fhirKitClient.Anon198
+import typings.fhirKitClient.Anon199
 import typings.fhirKitClient.Anon2
 import typings.fhirKitClient.Anon20
+import typings.fhirKitClient.Anon200
+import typings.fhirKitClient.Anon201
+import typings.fhirKitClient.Anon202
+import typings.fhirKitClient.Anon203
+import typings.fhirKitClient.Anon204
+import typings.fhirKitClient.Anon205
+import typings.fhirKitClient.Anon206
+import typings.fhirKitClient.Anon207
+import typings.fhirKitClient.Anon208
+import typings.fhirKitClient.Anon209
 import typings.fhirKitClient.Anon21
+import typings.fhirKitClient.Anon210
+import typings.fhirKitClient.Anon211
+import typings.fhirKitClient.Anon212
+import typings.fhirKitClient.Anon213
+import typings.fhirKitClient.Anon214
+import typings.fhirKitClient.Anon215
+import typings.fhirKitClient.Anon216
+import typings.fhirKitClient.Anon217
+import typings.fhirKitClient.Anon218
+import typings.fhirKitClient.Anon219
 import typings.fhirKitClient.Anon22
+import typings.fhirKitClient.Anon220
+import typings.fhirKitClient.Anon221
+import typings.fhirKitClient.Anon222
+import typings.fhirKitClient.Anon223
+import typings.fhirKitClient.Anon224
+import typings.fhirKitClient.Anon225
+import typings.fhirKitClient.Anon226
+import typings.fhirKitClient.Anon227
+import typings.fhirKitClient.Anon228
+import typings.fhirKitClient.Anon229
 import typings.fhirKitClient.Anon23
+import typings.fhirKitClient.Anon230
+import typings.fhirKitClient.Anon231
+import typings.fhirKitClient.Anon232
+import typings.fhirKitClient.Anon233
+import typings.fhirKitClient.Anon234
+import typings.fhirKitClient.Anon235
+import typings.fhirKitClient.Anon236
+import typings.fhirKitClient.Anon237
+import typings.fhirKitClient.Anon238
+import typings.fhirKitClient.Anon239
 import typings.fhirKitClient.Anon24
+import typings.fhirKitClient.Anon240
+import typings.fhirKitClient.Anon241
+import typings.fhirKitClient.Anon242
+import typings.fhirKitClient.Anon243
+import typings.fhirKitClient.Anon244
+import typings.fhirKitClient.Anon245
+import typings.fhirKitClient.Anon246
+import typings.fhirKitClient.Anon247
+import typings.fhirKitClient.Anon248
+import typings.fhirKitClient.Anon249
 import typings.fhirKitClient.Anon25
+import typings.fhirKitClient.Anon250
+import typings.fhirKitClient.Anon251
+import typings.fhirKitClient.Anon252
+import typings.fhirKitClient.Anon253
+import typings.fhirKitClient.Anon254
+import typings.fhirKitClient.Anon255
+import typings.fhirKitClient.Anon256
+import typings.fhirKitClient.Anon257
+import typings.fhirKitClient.Anon258
+import typings.fhirKitClient.Anon259
 import typings.fhirKitClient.Anon26
+import typings.fhirKitClient.Anon260
+import typings.fhirKitClient.Anon261
+import typings.fhirKitClient.Anon262
+import typings.fhirKitClient.Anon263
+import typings.fhirKitClient.Anon264
+import typings.fhirKitClient.Anon265
+import typings.fhirKitClient.Anon266
+import typings.fhirKitClient.Anon267
+import typings.fhirKitClient.Anon268
+import typings.fhirKitClient.Anon269
 import typings.fhirKitClient.Anon27
+import typings.fhirKitClient.Anon270
+import typings.fhirKitClient.Anon271
+import typings.fhirKitClient.Anon272
+import typings.fhirKitClient.Anon273
+import typings.fhirKitClient.Anon274
+import typings.fhirKitClient.Anon275
+import typings.fhirKitClient.Anon276
+import typings.fhirKitClient.Anon277
+import typings.fhirKitClient.Anon278
+import typings.fhirKitClient.Anon279
 import typings.fhirKitClient.Anon28
+import typings.fhirKitClient.Anon280
+import typings.fhirKitClient.Anon281
+import typings.fhirKitClient.Anon282
+import typings.fhirKitClient.Anon283
+import typings.fhirKitClient.Anon284
+import typings.fhirKitClient.Anon285
+import typings.fhirKitClient.Anon286
+import typings.fhirKitClient.Anon287
+import typings.fhirKitClient.Anon288
+import typings.fhirKitClient.Anon289
 import typings.fhirKitClient.Anon29
+import typings.fhirKitClient.Anon290
+import typings.fhirKitClient.Anon291
+import typings.fhirKitClient.Anon292
+import typings.fhirKitClient.Anon293
+import typings.fhirKitClient.Anon294
+import typings.fhirKitClient.Anon295
+import typings.fhirKitClient.Anon296
+import typings.fhirKitClient.Anon297
+import typings.fhirKitClient.Anon298
+import typings.fhirKitClient.Anon299
 import typings.fhirKitClient.Anon3
 import typings.fhirKitClient.Anon30
+import typings.fhirKitClient.Anon300
+import typings.fhirKitClient.Anon301
+import typings.fhirKitClient.Anon302
+import typings.fhirKitClient.Anon303
+import typings.fhirKitClient.Anon304
+import typings.fhirKitClient.Anon305
+import typings.fhirKitClient.Anon306
+import typings.fhirKitClient.Anon307
 import typings.fhirKitClient.Anon31
 import typings.fhirKitClient.Anon32
 import typings.fhirKitClient.Anon33
@@ -587,6 +705,7 @@ import typings.fhirKitClient.AnonJSONPatch
 import typings.fhirKitClient.AnonJSONPatchArray
 import typings.fhirKitClient.AnonJSONPatchArrayOptionsOptions
 import typings.fhirKitClient.AnonJSONPatchArrayOptionsOptionsResourceType
+import typings.fhirKitClient.AnonJSONPatchArrayOptionsOptionsResourceTypeCustomResourceType
 import typings.fhirKitClient.AnonJSONPatchOptions
 import typings.fhirKitClient.AnonJSONPatchOptionsResourceType
 import typings.fhirKitClient.AnonOptions
@@ -968,106 +1087,106 @@ trait Client extends js.Object {
     */
   def nextPage[T /* <: String */](params: AnonBundle[T]): js.Promise[OperationOutcome | (Bundle with AnonType[T])] = js.native
   def nextPage[T /* <: String */](params: AnonBundle[T], headers: Headers): js.Promise[OperationOutcome | (Bundle with AnonType[T])] = js.native
-  def patch(params: Anon100): js.Promise[OperationOutcome | DataElement] = js.native
-  def patch(params: Anon101): js.Promise[OperationOutcome | DetectedIssue] = js.native
-  def patch(params: Anon102): js.Promise[OperationOutcome | Device] = js.native
-  def patch(params: Anon103): js.Promise[OperationOutcome | DeviceComponent] = js.native
-  def patch(params: Anon104): js.Promise[OperationOutcome | DeviceMetric] = js.native
-  def patch(params: Anon105): js.Promise[OperationOutcome | DeviceRequest] = js.native
-  def patch(params: Anon106): js.Promise[OperationOutcome | DeviceUseStatement] = js.native
-  def patch(params: Anon107): js.Promise[OperationOutcome | DiagnosticReport] = js.native
-  def patch(params: Anon108): js.Promise[OperationOutcome | DocumentManifest] = js.native
-  def patch(params: Anon109): js.Promise[OperationOutcome | DocumentReference] = js.native
-  def patch(params: Anon110): js.Promise[OperationOutcome | DomainResource] = js.native
-  def patch(params: Anon111): js.Promise[OperationOutcome | EligibilityRequest] = js.native
-  def patch(params: Anon112): js.Promise[OperationOutcome | EligibilityResponse] = js.native
-  def patch(params: Anon113): js.Promise[OperationOutcome | Encounter] = js.native
-  def patch(params: Anon114): js.Promise[OperationOutcome | Endpoint] = js.native
-  def patch(params: Anon115): js.Promise[OperationOutcome | EnrollmentRequest] = js.native
-  def patch(params: Anon116): js.Promise[OperationOutcome | EnrollmentResponse] = js.native
-  def patch(params: Anon117): js.Promise[OperationOutcome | EpisodeOfCare] = js.native
-  def patch(params: Anon118): js.Promise[OperationOutcome | ExpansionProfile] = js.native
-  def patch(params: Anon119): js.Promise[OperationOutcome | ExplanationOfBenefit] = js.native
-  def patch(params: Anon120): js.Promise[OperationOutcome | FamilyMemberHistory] = js.native
-  def patch(params: Anon121): js.Promise[OperationOutcome | Flag] = js.native
-  def patch(params: Anon122): js.Promise[OperationOutcome | Goal] = js.native
-  def patch(params: Anon123): js.Promise[OperationOutcome | GraphDefinition] = js.native
-  def patch(params: Anon124): js.Promise[OperationOutcome | Group] = js.native
-  def patch(params: Anon125): js.Promise[OperationOutcome | GuidanceResponse] = js.native
-  def patch(params: Anon126): js.Promise[OperationOutcome | HealthcareService] = js.native
-  def patch(params: Anon127): js.Promise[OperationOutcome | ImagingManifest] = js.native
-  def patch(params: Anon128): js.Promise[OperationOutcome | ImagingStudy] = js.native
-  def patch(params: Anon129): js.Promise[OperationOutcome | Immunization] = js.native
-  def patch(params: Anon130): js.Promise[OperationOutcome | ImmunizationRecommendation] = js.native
-  def patch(params: Anon131): js.Promise[OperationOutcome | ImplementationGuide] = js.native
-  def patch(params: Anon132): js.Promise[OperationOutcome | Library] = js.native
-  def patch(params: Anon133): js.Promise[OperationOutcome | Linkage] = js.native
-  def patch(params: Anon134): js.Promise[OperationOutcome | List] = js.native
-  def patch(params: Anon135): js.Promise[OperationOutcome | Location] = js.native
-  def patch(params: Anon136): js.Promise[OperationOutcome | Measure] = js.native
-  def patch(params: Anon137): js.Promise[OperationOutcome | MeasureReport] = js.native
-  def patch(params: Anon138): js.Promise[OperationOutcome | Media] = js.native
-  def patch(params: Anon139): js.Promise[OperationOutcome | Medication] = js.native
-  def patch(params: Anon140): js.Promise[OperationOutcome | MedicationAdministration] = js.native
-  def patch(params: Anon141): js.Promise[OperationOutcome | MedicationDispense] = js.native
-  def patch(params: Anon142): js.Promise[OperationOutcome | MedicationRequest] = js.native
-  def patch(params: Anon143): js.Promise[OperationOutcome | MedicationStatement] = js.native
-  def patch(params: Anon144): js.Promise[OperationOutcome | MessageDefinition] = js.native
-  def patch(params: Anon145): js.Promise[OperationOutcome | MessageHeader] = js.native
-  def patch(params: Anon146): js.Promise[OperationOutcome | NamingSystem] = js.native
-  def patch(params: Anon147): js.Promise[OperationOutcome | NutritionOrder] = js.native
-  def patch(params: Anon148): js.Promise[OperationOutcome | Observation] = js.native
-  def patch(params: Anon149): js.Promise[OperationOutcome | OperationDefinition] = js.native
-  def patch(params: Anon150): js.Promise[OperationOutcome] = js.native
-  def patch(params: Anon151): js.Promise[OperationOutcome | Organization] = js.native
-  def patch(params: Anon152): js.Promise[OperationOutcome | Parameters] = js.native
-  def patch(params: Anon153): js.Promise[OperationOutcome | Patient] = js.native
-  def patch(params: Anon154): js.Promise[OperationOutcome | PaymentNotice] = js.native
-  def patch(params: Anon155): js.Promise[OperationOutcome | PaymentReconciliation] = js.native
-  def patch(params: Anon156): js.Promise[OperationOutcome | Person] = js.native
-  def patch(params: Anon157): js.Promise[OperationOutcome | PlanDefinition] = js.native
-  def patch(params: Anon158): js.Promise[OperationOutcome | Practitioner] = js.native
-  def patch(params: Anon159): js.Promise[OperationOutcome | PractitionerRole] = js.native
-  def patch(params: Anon160): js.Promise[OperationOutcome | Procedure] = js.native
-  def patch(params: Anon161): js.Promise[OperationOutcome | ProcedureRequest] = js.native
-  def patch(params: Anon162): js.Promise[OperationOutcome | ProcessRequest] = js.native
-  def patch(params: Anon163): js.Promise[OperationOutcome | ProcessResponse] = js.native
-  def patch(params: Anon164): js.Promise[OperationOutcome | Provenance] = js.native
-  def patch(params: Anon165): js.Promise[OperationOutcome | Questionnaire] = js.native
-  def patch(params: Anon166): js.Promise[OperationOutcome | QuestionnaireResponse] = js.native
-  def patch(params: Anon167): js.Promise[OperationOutcome | ReferralRequest] = js.native
-  def patch(params: Anon168): js.Promise[OperationOutcome | RelatedPerson] = js.native
-  def patch(params: Anon169): js.Promise[OperationOutcome | RequestGroup] = js.native
-  def patch(params: Anon170): js.Promise[OperationOutcome | ResearchStudy] = js.native
-  def patch(params: Anon171): js.Promise[OperationOutcome | ResearchSubject] = js.native
-  def patch(params: Anon172): js.Promise[OperationOutcome | RiskAssessment] = js.native
-  def patch(params: Anon173): js.Promise[OperationOutcome | Schedule] = js.native
-  def patch(params: Anon174): js.Promise[OperationOutcome | SearchParameter] = js.native
-  def patch(params: Anon175): js.Promise[OperationOutcome | Sequence] = js.native
-  def patch(params: Anon176): js.Promise[OperationOutcome | ServiceDefinition] = js.native
-  def patch(params: Anon177): js.Promise[OperationOutcome | Slot] = js.native
-  def patch(params: Anon178): js.Promise[OperationOutcome | Specimen] = js.native
-  def patch(params: Anon179): js.Promise[OperationOutcome | StructureDefinition] = js.native
-  def patch(params: Anon180): js.Promise[OperationOutcome | StructureMap] = js.native
-  def patch(params: Anon181): js.Promise[OperationOutcome | Subscription] = js.native
-  def patch(params: Anon182): js.Promise[OperationOutcome | Substance] = js.native
-  def patch(params: Anon183): js.Promise[OperationOutcome | SupplyDelivery] = js.native
-  def patch(params: Anon184): js.Promise[OperationOutcome | SupplyRequest] = js.native
-  def patch(params: Anon185): js.Promise[OperationOutcome | Task] = js.native
-  def patch(params: Anon186): js.Promise[OperationOutcome | TestReport] = js.native
-  def patch(params: Anon187): js.Promise[OperationOutcome | TestScript] = js.native
-  def patch(params: Anon188): js.Promise[OperationOutcome | ValueSet] = js.native
-  def patch(params: Anon189): js.Promise[OperationOutcome | VisionPrescription] = js.native
-  def patch(params: Anon90): js.Promise[OperationOutcome | CodeSystem] = js.native
-  def patch(params: Anon91): js.Promise[OperationOutcome | Communication] = js.native
-  def patch(params: Anon92): js.Promise[OperationOutcome | CommunicationRequest] = js.native
-  def patch(params: Anon93): js.Promise[OperationOutcome | CompartmentDefinition] = js.native
-  def patch(params: Anon94): js.Promise[OperationOutcome | Composition] = js.native
-  def patch(params: Anon95): js.Promise[OperationOutcome | ConceptMap] = js.native
-  def patch(params: Anon96): js.Promise[OperationOutcome | Condition] = js.native
-  def patch(params: Anon97): js.Promise[OperationOutcome | Consent] = js.native
-  def patch(params: Anon98): js.Promise[OperationOutcome | Contract] = js.native
-  def patch(params: Anon99): js.Promise[OperationOutcome | Coverage] = js.native
+  def patch(params: Anon208): js.Promise[OperationOutcome | CodeSystem] = js.native
+  def patch(params: Anon209): js.Promise[OperationOutcome | Communication] = js.native
+  def patch(params: Anon210): js.Promise[OperationOutcome | CommunicationRequest] = js.native
+  def patch(params: Anon211): js.Promise[OperationOutcome | CompartmentDefinition] = js.native
+  def patch(params: Anon212): js.Promise[OperationOutcome | Composition] = js.native
+  def patch(params: Anon213): js.Promise[OperationOutcome | ConceptMap] = js.native
+  def patch(params: Anon214): js.Promise[OperationOutcome | Condition] = js.native
+  def patch(params: Anon215): js.Promise[OperationOutcome | Consent] = js.native
+  def patch(params: Anon216): js.Promise[OperationOutcome | Contract] = js.native
+  def patch(params: Anon217): js.Promise[OperationOutcome | Coverage] = js.native
+  def patch(params: Anon218): js.Promise[OperationOutcome | DataElement] = js.native
+  def patch(params: Anon219): js.Promise[OperationOutcome | DetectedIssue] = js.native
+  def patch(params: Anon220): js.Promise[OperationOutcome | Device] = js.native
+  def patch(params: Anon221): js.Promise[OperationOutcome | DeviceComponent] = js.native
+  def patch(params: Anon222): js.Promise[OperationOutcome | DeviceMetric] = js.native
+  def patch(params: Anon223): js.Promise[OperationOutcome | DeviceRequest] = js.native
+  def patch(params: Anon224): js.Promise[OperationOutcome | DeviceUseStatement] = js.native
+  def patch(params: Anon225): js.Promise[OperationOutcome | DiagnosticReport] = js.native
+  def patch(params: Anon226): js.Promise[OperationOutcome | DocumentManifest] = js.native
+  def patch(params: Anon227): js.Promise[OperationOutcome | DocumentReference] = js.native
+  def patch(params: Anon228): js.Promise[OperationOutcome | DomainResource] = js.native
+  def patch(params: Anon229): js.Promise[OperationOutcome | EligibilityRequest] = js.native
+  def patch(params: Anon230): js.Promise[OperationOutcome | EligibilityResponse] = js.native
+  def patch(params: Anon231): js.Promise[OperationOutcome | Encounter] = js.native
+  def patch(params: Anon232): js.Promise[OperationOutcome | Endpoint] = js.native
+  def patch(params: Anon233): js.Promise[OperationOutcome | EnrollmentRequest] = js.native
+  def patch(params: Anon234): js.Promise[OperationOutcome | EnrollmentResponse] = js.native
+  def patch(params: Anon235): js.Promise[OperationOutcome | EpisodeOfCare] = js.native
+  def patch(params: Anon236): js.Promise[OperationOutcome | ExpansionProfile] = js.native
+  def patch(params: Anon237): js.Promise[OperationOutcome | ExplanationOfBenefit] = js.native
+  def patch(params: Anon238): js.Promise[OperationOutcome | FamilyMemberHistory] = js.native
+  def patch(params: Anon239): js.Promise[OperationOutcome | Flag] = js.native
+  def patch(params: Anon240): js.Promise[OperationOutcome | Goal] = js.native
+  def patch(params: Anon241): js.Promise[OperationOutcome | GraphDefinition] = js.native
+  def patch(params: Anon242): js.Promise[OperationOutcome | Group] = js.native
+  def patch(params: Anon243): js.Promise[OperationOutcome | GuidanceResponse] = js.native
+  def patch(params: Anon244): js.Promise[OperationOutcome | HealthcareService] = js.native
+  def patch(params: Anon245): js.Promise[OperationOutcome | ImagingManifest] = js.native
+  def patch(params: Anon246): js.Promise[OperationOutcome | ImagingStudy] = js.native
+  def patch(params: Anon247): js.Promise[OperationOutcome | Immunization] = js.native
+  def patch(params: Anon248): js.Promise[OperationOutcome | ImmunizationRecommendation] = js.native
+  def patch(params: Anon249): js.Promise[OperationOutcome | ImplementationGuide] = js.native
+  def patch(params: Anon250): js.Promise[OperationOutcome | Library] = js.native
+  def patch(params: Anon251): js.Promise[OperationOutcome | Linkage] = js.native
+  def patch(params: Anon252): js.Promise[OperationOutcome | List] = js.native
+  def patch(params: Anon253): js.Promise[OperationOutcome | Location] = js.native
+  def patch(params: Anon254): js.Promise[OperationOutcome | Measure] = js.native
+  def patch(params: Anon255): js.Promise[OperationOutcome | MeasureReport] = js.native
+  def patch(params: Anon256): js.Promise[OperationOutcome | Media] = js.native
+  def patch(params: Anon257): js.Promise[OperationOutcome | Medication] = js.native
+  def patch(params: Anon258): js.Promise[OperationOutcome | MedicationAdministration] = js.native
+  def patch(params: Anon259): js.Promise[OperationOutcome | MedicationDispense] = js.native
+  def patch(params: Anon260): js.Promise[OperationOutcome | MedicationRequest] = js.native
+  def patch(params: Anon261): js.Promise[OperationOutcome | MedicationStatement] = js.native
+  def patch(params: Anon262): js.Promise[OperationOutcome | MessageDefinition] = js.native
+  def patch(params: Anon263): js.Promise[OperationOutcome | MessageHeader] = js.native
+  def patch(params: Anon264): js.Promise[OperationOutcome | NamingSystem] = js.native
+  def patch(params: Anon265): js.Promise[OperationOutcome | NutritionOrder] = js.native
+  def patch(params: Anon266): js.Promise[OperationOutcome | Observation] = js.native
+  def patch(params: Anon267): js.Promise[OperationOutcome | OperationDefinition] = js.native
+  def patch(params: Anon268): js.Promise[OperationOutcome] = js.native
+  def patch(params: Anon269): js.Promise[OperationOutcome | Organization] = js.native
+  def patch(params: Anon270): js.Promise[OperationOutcome | Parameters] = js.native
+  def patch(params: Anon271): js.Promise[OperationOutcome | Patient] = js.native
+  def patch(params: Anon272): js.Promise[OperationOutcome | PaymentNotice] = js.native
+  def patch(params: Anon273): js.Promise[OperationOutcome | PaymentReconciliation] = js.native
+  def patch(params: Anon274): js.Promise[OperationOutcome | Person] = js.native
+  def patch(params: Anon275): js.Promise[OperationOutcome | PlanDefinition] = js.native
+  def patch(params: Anon276): js.Promise[OperationOutcome | Practitioner] = js.native
+  def patch(params: Anon277): js.Promise[OperationOutcome | PractitionerRole] = js.native
+  def patch(params: Anon278): js.Promise[OperationOutcome | Procedure] = js.native
+  def patch(params: Anon279): js.Promise[OperationOutcome | ProcedureRequest] = js.native
+  def patch(params: Anon280): js.Promise[OperationOutcome | ProcessRequest] = js.native
+  def patch(params: Anon281): js.Promise[OperationOutcome | ProcessResponse] = js.native
+  def patch(params: Anon282): js.Promise[OperationOutcome | Provenance] = js.native
+  def patch(params: Anon283): js.Promise[OperationOutcome | Questionnaire] = js.native
+  def patch(params: Anon284): js.Promise[OperationOutcome | QuestionnaireResponse] = js.native
+  def patch(params: Anon285): js.Promise[OperationOutcome | ReferralRequest] = js.native
+  def patch(params: Anon286): js.Promise[OperationOutcome | RelatedPerson] = js.native
+  def patch(params: Anon287): js.Promise[OperationOutcome | RequestGroup] = js.native
+  def patch(params: Anon288): js.Promise[OperationOutcome | ResearchStudy] = js.native
+  def patch(params: Anon289): js.Promise[OperationOutcome | ResearchSubject] = js.native
+  def patch(params: Anon290): js.Promise[OperationOutcome | RiskAssessment] = js.native
+  def patch(params: Anon291): js.Promise[OperationOutcome | Schedule] = js.native
+  def patch(params: Anon292): js.Promise[OperationOutcome | SearchParameter] = js.native
+  def patch(params: Anon293): js.Promise[OperationOutcome | Sequence] = js.native
+  def patch(params: Anon294): js.Promise[OperationOutcome | ServiceDefinition] = js.native
+  def patch(params: Anon295): js.Promise[OperationOutcome | Slot] = js.native
+  def patch(params: Anon296): js.Promise[OperationOutcome | Specimen] = js.native
+  def patch(params: Anon297): js.Promise[OperationOutcome | StructureDefinition] = js.native
+  def patch(params: Anon298): js.Promise[OperationOutcome | StructureMap] = js.native
+  def patch(params: Anon299): js.Promise[OperationOutcome | Subscription] = js.native
+  def patch(params: Anon300): js.Promise[OperationOutcome | Substance] = js.native
+  def patch(params: Anon301): js.Promise[OperationOutcome | SupplyDelivery] = js.native
+  def patch(params: Anon302): js.Promise[OperationOutcome | SupplyRequest] = js.native
+  def patch(params: Anon303): js.Promise[OperationOutcome | Task] = js.native
+  def patch(params: Anon304): js.Promise[OperationOutcome | TestReport] = js.native
+  def patch(params: Anon305): js.Promise[OperationOutcome | TestScript] = js.native
+  def patch(params: Anon306): js.Promise[OperationOutcome | ValueSet] = js.native
+  def patch(params: Anon307): js.Promise[OperationOutcome | VisionPrescription] = js.native
   def patch(params: AnonHeadersHeadersIdStringJSONPatchArray): js.Promise[OperationOutcome | CarePlan] = js.native
   def patch(params: AnonHeadersHeadersIdStringJSONPatchArrayOptionsOptions): js.Promise[OperationOutcome | Claim] = js.native
   def patch(params: AnonHeadersHeadersIdStringJSONPatchArrayOptionsOptionsResourceType): js.Promise[OperationOutcome | ClinicalImpression] = js.native
@@ -1125,9 +1244,9 @@ trait Client extends js.Object {
   def patch(params: AnonJSONPatchArray): js.Promise[OperationOutcome | BodySite] = js.native
   def patch(params: AnonJSONPatchArrayOptionsOptions): js.Promise[OperationOutcome | CapabilityStatement] = js.native
   def patch(params: AnonJSONPatchArrayOptionsOptionsResourceType): js.Promise[OperationOutcome | ChargeItem] = js.native
+  def patch(params: AnonJSONPatchArrayOptionsOptionsResourceTypeCustomResourceType): js.Promise[OperationOutcome | CustomResource] = js.native
   def patch(params: AnonJSONPatchOptions): js.Promise[OperationOutcome | AdverseEvent] = js.native
   def patch(params: AnonJSONPatchOptionsResourceType): js.Promise[OperationOutcome | AppointmentResponse] = js.native
-  def patch(params: AnonOptionsOptionsResourceTypeCustomResourceType): js.Promise[OperationOutcome | CustomResource] = js.native
   /**
     * Return the previous page of results.
     *
@@ -1144,6 +1263,155 @@ trait Client extends js.Object {
     */
   def prevPage[T /* <: String */](params: AnonBundle[T]): js.Promise[OperationOutcome | (Bundle with AnonType[T])] = js.native
   def prevPage[T /* <: String */](params: AnonBundle[T], headers: Headers): js.Promise[OperationOutcome | (Bundle with AnonType[T])] = js.native
+  def read(params: Anon0): js.Promise[OperationOutcome | CodeSystem] = js.native
+  def read(params: Anon1): js.Promise[OperationOutcome | Communication] = js.native
+  def read(params: Anon10): js.Promise[OperationOutcome | DataElement] = js.native
+  def read(params: Anon11): js.Promise[OperationOutcome | DetectedIssue] = js.native
+  def read(params: Anon12): js.Promise[OperationOutcome | Device] = js.native
+  def read(params: Anon13): js.Promise[OperationOutcome | DeviceComponent] = js.native
+  def read(params: Anon14): js.Promise[OperationOutcome | DeviceMetric] = js.native
+  def read(params: Anon15): js.Promise[OperationOutcome | DeviceRequest] = js.native
+  def read(params: Anon16): js.Promise[OperationOutcome | DeviceUseStatement] = js.native
+  def read(params: Anon17): js.Promise[OperationOutcome | DiagnosticReport] = js.native
+  def read(params: Anon18): js.Promise[OperationOutcome | DocumentManifest] = js.native
+  def read(params: Anon19): js.Promise[OperationOutcome | DocumentReference] = js.native
+  def read(params: Anon2): js.Promise[OperationOutcome | CommunicationRequest] = js.native
+  def read(params: Anon20): js.Promise[OperationOutcome | DomainResource] = js.native
+  def read(params: Anon21): js.Promise[OperationOutcome | EligibilityRequest] = js.native
+  def read(params: Anon22): js.Promise[OperationOutcome | EligibilityResponse] = js.native
+  def read(params: Anon23): js.Promise[OperationOutcome | Encounter] = js.native
+  def read(params: Anon24): js.Promise[OperationOutcome | Endpoint] = js.native
+  def read(params: Anon25): js.Promise[OperationOutcome | EnrollmentRequest] = js.native
+  def read(params: Anon26): js.Promise[OperationOutcome | EnrollmentResponse] = js.native
+  def read(params: Anon27): js.Promise[OperationOutcome | EpisodeOfCare] = js.native
+  def read(params: Anon28): js.Promise[OperationOutcome | ExpansionProfile] = js.native
+  def read(params: Anon29): js.Promise[OperationOutcome | ExplanationOfBenefit] = js.native
+  def read(params: Anon3): js.Promise[OperationOutcome | CompartmentDefinition] = js.native
+  def read(params: Anon30): js.Promise[OperationOutcome | FamilyMemberHistory] = js.native
+  def read(params: Anon31): js.Promise[OperationOutcome | Flag] = js.native
+  def read(params: Anon32): js.Promise[OperationOutcome | Goal] = js.native
+  def read(params: Anon33): js.Promise[OperationOutcome | GraphDefinition] = js.native
+  def read(params: Anon34): js.Promise[OperationOutcome | Group] = js.native
+  def read(params: Anon35): js.Promise[OperationOutcome | GuidanceResponse] = js.native
+  def read(params: Anon36): js.Promise[OperationOutcome | HealthcareService] = js.native
+  def read(params: Anon37): js.Promise[OperationOutcome | ImagingManifest] = js.native
+  def read(params: Anon38): js.Promise[OperationOutcome | ImagingStudy] = js.native
+  def read(params: Anon39): js.Promise[OperationOutcome | Immunization] = js.native
+  def read(params: Anon4): js.Promise[OperationOutcome | Composition] = js.native
+  def read(params: Anon40): js.Promise[OperationOutcome | ImmunizationRecommendation] = js.native
+  def read(params: Anon41): js.Promise[OperationOutcome | ImplementationGuide] = js.native
+  def read(params: Anon42): js.Promise[OperationOutcome | Library] = js.native
+  def read(params: Anon43): js.Promise[OperationOutcome | Linkage] = js.native
+  def read(params: Anon44): js.Promise[OperationOutcome | List] = js.native
+  def read(params: Anon45): js.Promise[OperationOutcome | Location] = js.native
+  def read(params: Anon46): js.Promise[OperationOutcome | Measure] = js.native
+  def read(params: Anon47): js.Promise[OperationOutcome | MeasureReport] = js.native
+  def read(params: Anon48): js.Promise[OperationOutcome | Media] = js.native
+  def read(params: Anon49): js.Promise[OperationOutcome | Medication] = js.native
+  def read(params: Anon5): js.Promise[OperationOutcome | ConceptMap] = js.native
+  def read(params: Anon50): js.Promise[OperationOutcome | MedicationAdministration] = js.native
+  def read(params: Anon51): js.Promise[OperationOutcome | MedicationDispense] = js.native
+  def read(params: Anon52): js.Promise[OperationOutcome | MedicationRequest] = js.native
+  def read(params: Anon53): js.Promise[OperationOutcome | MedicationStatement] = js.native
+  def read(params: Anon54): js.Promise[OperationOutcome | MessageDefinition] = js.native
+  def read(params: Anon55): js.Promise[OperationOutcome | MessageHeader] = js.native
+  def read(params: Anon56): js.Promise[OperationOutcome | NamingSystem] = js.native
+  def read(params: Anon57): js.Promise[OperationOutcome | NutritionOrder] = js.native
+  def read(params: Anon58): js.Promise[OperationOutcome | Observation] = js.native
+  def read(params: Anon59): js.Promise[OperationOutcome | OperationDefinition] = js.native
+  def read(params: Anon6): js.Promise[OperationOutcome | Condition] = js.native
+  def read(params: Anon60): js.Promise[OperationOutcome] = js.native
+  def read(params: Anon61): js.Promise[OperationOutcome | Organization] = js.native
+  def read(params: Anon62): js.Promise[OperationOutcome | Parameters] = js.native
+  def read(params: Anon63): js.Promise[OperationOutcome | Patient] = js.native
+  def read(params: Anon64): js.Promise[OperationOutcome | PaymentNotice] = js.native
+  def read(params: Anon65): js.Promise[OperationOutcome | PaymentReconciliation] = js.native
+  def read(params: Anon66): js.Promise[OperationOutcome | Person] = js.native
+  def read(params: Anon67): js.Promise[OperationOutcome | PlanDefinition] = js.native
+  def read(params: Anon68): js.Promise[OperationOutcome | Practitioner] = js.native
+  def read(params: Anon69): js.Promise[OperationOutcome | PractitionerRole] = js.native
+  def read(params: Anon7): js.Promise[OperationOutcome | Consent] = js.native
+  def read(params: Anon70): js.Promise[OperationOutcome | Procedure] = js.native
+  def read(params: Anon71): js.Promise[OperationOutcome | ProcedureRequest] = js.native
+  def read(params: Anon72): js.Promise[OperationOutcome | ProcessRequest] = js.native
+  def read(params: Anon73): js.Promise[OperationOutcome | ProcessResponse] = js.native
+  def read(params: Anon74): js.Promise[OperationOutcome | Provenance] = js.native
+  def read(params: Anon75): js.Promise[OperationOutcome | Questionnaire] = js.native
+  def read(params: Anon76): js.Promise[OperationOutcome | QuestionnaireResponse] = js.native
+  def read(params: Anon77): js.Promise[OperationOutcome | ReferralRequest] = js.native
+  def read(params: Anon78): js.Promise[OperationOutcome | RelatedPerson] = js.native
+  def read(params: Anon79): js.Promise[OperationOutcome | RequestGroup] = js.native
+  def read(params: Anon8): js.Promise[OperationOutcome | Contract] = js.native
+  def read(params: Anon80): js.Promise[OperationOutcome | ResearchStudy] = js.native
+  def read(params: Anon81): js.Promise[OperationOutcome | ResearchSubject] = js.native
+  def read(params: Anon82): js.Promise[OperationOutcome | RiskAssessment] = js.native
+  def read(params: Anon83): js.Promise[OperationOutcome | Schedule] = js.native
+  def read(params: Anon84): js.Promise[OperationOutcome | SearchParameter] = js.native
+  def read(params: Anon85): js.Promise[OperationOutcome | Sequence] = js.native
+  def read(params: Anon86): js.Promise[OperationOutcome | ServiceDefinition] = js.native
+  def read(params: Anon87): js.Promise[OperationOutcome | Slot] = js.native
+  def read(params: Anon88): js.Promise[OperationOutcome | Specimen] = js.native
+  def read(params: Anon89): js.Promise[OperationOutcome | StructureDefinition] = js.native
+  def read(params: Anon9): js.Promise[OperationOutcome | Coverage] = js.native
+  def read(params: Anon90): js.Promise[OperationOutcome | StructureMap] = js.native
+  def read(params: Anon91): js.Promise[OperationOutcome | Subscription] = js.native
+  def read(params: Anon92): js.Promise[OperationOutcome | Substance] = js.native
+  def read(params: Anon93): js.Promise[OperationOutcome | SupplyDelivery] = js.native
+  def read(params: Anon94): js.Promise[OperationOutcome | SupplyRequest] = js.native
+  def read(params: Anon95): js.Promise[OperationOutcome | Task] = js.native
+  def read(params: Anon96): js.Promise[OperationOutcome | TestReport] = js.native
+  def read(params: Anon97): js.Promise[OperationOutcome | TestScript] = js.native
+  def read(params: Anon98): js.Promise[OperationOutcome | ValueSet] = js.native
+  def read(params: Anon99): js.Promise[OperationOutcome | VisionPrescription] = js.native
+  def read(params: AnonHeadersHeaders): js.Promise[OperationOutcome | BodySite] = js.native
+  def read(params: AnonHeadersHeadersIdString): js.Promise[OperationOutcome | CarePlan] = js.native
+  def read(params: AnonHeadersHeadersIdStringOptionsOptions): js.Promise[OperationOutcome | Claim] = js.native
+  def read(params: AnonHeadersHeadersIdStringOptionsOptionsResourceType): js.Promise[OperationOutcome | ClinicalImpression] = js.native
+  def read(params: AnonHeadersId): js.Promise[OperationOutcome | AllergyIntolerance] = js.native
+  def read(params: AnonHeadersIdOptions): js.Promise[OperationOutcome | AuditEvent] = js.native
+  def read(params: AnonHeadersIdOptionsResourceType): js.Promise[OperationOutcome | Binary] = js.native
+  /**
+    * Get a resource by id.
+    *
+    * @example
+    *
+    * // Using promises
+    * fhirClient.read({
+    *   resourceType: 'Patient',
+    *   id: '12345',
+    * }).then(data => console.log(data));
+    *
+    * // Using async
+    * let response = await fhirClient.read({
+    *   resourceType: 'Patient',
+    *   id: '12345',
+    * });
+    * console.log(response);
+    *
+    * @param {Object} params - The request parameters.
+    * @param {String} params.resourceType - The resource type (e.g. "Patient",
+    *   "Observation").
+    * @param {String} params.id - The FHIR id for the resource.
+    * @param {Object} [params.headers] - DEPRECATED Optional custom headers to
+    *   add to the request
+    * @param {Object} [params.options] - Optional options object
+    * @param {Object} [params.options.headers] - Optional headers to add to the
+    *   request
+    *
+    * @return {Promise<Object>} FHIR resource
+    */
+  def read(params: AnonId): js.Promise[OperationOutcome | Account] = js.native
+  def read(params: AnonIdOptions): js.Promise[OperationOutcome | Appointment] = js.native
+  def read(params: AnonIdOptionsResourceType): js.Promise[OperationOutcome | Basic] = js.native
+  def read(params: AnonIdString): js.Promise[OperationOutcome | Bundle] = js.native
+  def read(params: AnonIdStringOptionsOptions): js.Promise[OperationOutcome | CareTeam] = js.native
+  def read(params: AnonIdStringOptionsOptionsResourceType): js.Promise[OperationOutcome | ClaimResponse] = js.native
+  def read(params: AnonOptions): js.Promise[OperationOutcome | ActivityDefinition] = js.native
+  def read(params: AnonOptionsOptions): js.Promise[OperationOutcome | CapabilityStatement] = js.native
+  def read(params: AnonOptionsOptionsResourceType): js.Promise[OperationOutcome | ChargeItem] = js.native
+  def read(params: AnonOptionsResourceType): js.Promise[OperationOutcome | AppointmentResponse] = js.native
+  def read(params: AnonResourceType): js.Promise[OperationOutcome | AdverseEvent] = js.native
+  def read(params: AnonResourceTypeCustomResourceType): js.Promise[OperationOutcome | CustomResource] = js.native
   /**
     * Resolve a reference and return FHIR resource
     *
@@ -1608,105 +1876,123 @@ trait Client extends js.Object {
   def update(params: AnonBodyValueSetHeadersHeaders): js.Promise[OperationOutcome | ValueSet] = js.native
   def update(params: AnonBodyVisionPrescriptionHeadersHeaders): js.Promise[OperationOutcome | VisionPrescription] = js.native
   def update[T /* <: CustomResource */](params: AnonBodyTHeadersHeaders[T]): js.Promise[OperationOutcome | T] = js.native
-  def vread(params: Anon0): js.Promise[OperationOutcome | DataElement] = js.native
-  def vread(params: Anon1): js.Promise[OperationOutcome | DetectedIssue] = js.native
-  def vread(params: Anon10): js.Promise[OperationOutcome | DomainResource] = js.native
-  def vread(params: Anon11): js.Promise[OperationOutcome | EligibilityRequest] = js.native
-  def vread(params: Anon12): js.Promise[OperationOutcome | EligibilityResponse] = js.native
-  def vread(params: Anon13): js.Promise[OperationOutcome | Encounter] = js.native
-  def vread(params: Anon14): js.Promise[OperationOutcome | Endpoint] = js.native
-  def vread(params: Anon15): js.Promise[OperationOutcome | EnrollmentRequest] = js.native
-  def vread(params: Anon16): js.Promise[OperationOutcome | EnrollmentResponse] = js.native
-  def vread(params: Anon17): js.Promise[OperationOutcome | EpisodeOfCare] = js.native
-  def vread(params: Anon18): js.Promise[OperationOutcome | ExpansionProfile] = js.native
-  def vread(params: Anon19): js.Promise[OperationOutcome | ExplanationOfBenefit] = js.native
-  def vread(params: Anon2): js.Promise[OperationOutcome | Device] = js.native
-  def vread(params: Anon20): js.Promise[OperationOutcome | FamilyMemberHistory] = js.native
-  def vread(params: Anon21): js.Promise[OperationOutcome | Flag] = js.native
-  def vread(params: Anon22): js.Promise[OperationOutcome | Goal] = js.native
-  def vread(params: Anon23): js.Promise[OperationOutcome | GraphDefinition] = js.native
-  def vread(params: Anon24): js.Promise[OperationOutcome | Group] = js.native
-  def vread(params: Anon25): js.Promise[OperationOutcome | GuidanceResponse] = js.native
-  def vread(params: Anon26): js.Promise[OperationOutcome | HealthcareService] = js.native
-  def vread(params: Anon27): js.Promise[OperationOutcome | ImagingManifest] = js.native
-  def vread(params: Anon28): js.Promise[OperationOutcome | ImagingStudy] = js.native
-  def vread(params: Anon29): js.Promise[OperationOutcome | Immunization] = js.native
-  def vread(params: Anon3): js.Promise[OperationOutcome | DeviceComponent] = js.native
-  def vread(params: Anon30): js.Promise[OperationOutcome | ImmunizationRecommendation] = js.native
-  def vread(params: Anon31): js.Promise[OperationOutcome | ImplementationGuide] = js.native
-  def vread(params: Anon32): js.Promise[OperationOutcome | Library] = js.native
-  def vread(params: Anon33): js.Promise[OperationOutcome | Linkage] = js.native
-  def vread(params: Anon34): js.Promise[OperationOutcome | List] = js.native
-  def vread(params: Anon35): js.Promise[OperationOutcome | Location] = js.native
-  def vread(params: Anon36): js.Promise[OperationOutcome | Measure] = js.native
-  def vread(params: Anon37): js.Promise[OperationOutcome | MeasureReport] = js.native
-  def vread(params: Anon38): js.Promise[OperationOutcome | Media] = js.native
-  def vread(params: Anon39): js.Promise[OperationOutcome | Medication] = js.native
-  def vread(params: Anon4): js.Promise[OperationOutcome | DeviceMetric] = js.native
-  def vread(params: Anon40): js.Promise[OperationOutcome | MedicationAdministration] = js.native
-  def vread(params: Anon41): js.Promise[OperationOutcome | MedicationDispense] = js.native
-  def vread(params: Anon42): js.Promise[OperationOutcome | MedicationRequest] = js.native
-  def vread(params: Anon43): js.Promise[OperationOutcome | MedicationStatement] = js.native
-  def vread(params: Anon44): js.Promise[OperationOutcome | MessageDefinition] = js.native
-  def vread(params: Anon45): js.Promise[OperationOutcome | MessageHeader] = js.native
-  def vread(params: Anon46): js.Promise[OperationOutcome | NamingSystem] = js.native
-  def vread(params: Anon47): js.Promise[OperationOutcome | NutritionOrder] = js.native
-  def vread(params: Anon48): js.Promise[OperationOutcome | Observation] = js.native
-  def vread(params: Anon49): js.Promise[OperationOutcome | OperationDefinition] = js.native
-  def vread(params: Anon5): js.Promise[OperationOutcome | DeviceRequest] = js.native
-  def vread(params: Anon50): js.Promise[OperationOutcome] = js.native
-  def vread(params: Anon51): js.Promise[OperationOutcome | Organization] = js.native
-  def vread(params: Anon52): js.Promise[OperationOutcome | Parameters] = js.native
-  def vread(params: Anon53): js.Promise[OperationOutcome | Patient] = js.native
-  def vread(params: Anon54): js.Promise[OperationOutcome | PaymentNotice] = js.native
-  def vread(params: Anon55): js.Promise[OperationOutcome | PaymentReconciliation] = js.native
-  def vread(params: Anon56): js.Promise[OperationOutcome | Person] = js.native
-  def vread(params: Anon57): js.Promise[OperationOutcome | PlanDefinition] = js.native
-  def vread(params: Anon58): js.Promise[OperationOutcome | Practitioner] = js.native
-  def vread(params: Anon59): js.Promise[OperationOutcome | PractitionerRole] = js.native
-  def vread(params: Anon6): js.Promise[OperationOutcome | DeviceUseStatement] = js.native
-  def vread(params: Anon60): js.Promise[OperationOutcome | Procedure] = js.native
-  def vread(params: Anon61): js.Promise[OperationOutcome | ProcedureRequest] = js.native
-  def vread(params: Anon62): js.Promise[OperationOutcome | ProcessRequest] = js.native
-  def vread(params: Anon63): js.Promise[OperationOutcome | ProcessResponse] = js.native
-  def vread(params: Anon64): js.Promise[OperationOutcome | Provenance] = js.native
-  def vread(params: Anon65): js.Promise[OperationOutcome | Questionnaire] = js.native
-  def vread(params: Anon66): js.Promise[OperationOutcome | QuestionnaireResponse] = js.native
-  def vread(params: Anon67): js.Promise[OperationOutcome | ReferralRequest] = js.native
-  def vread(params: Anon68): js.Promise[OperationOutcome | RelatedPerson] = js.native
-  def vread(params: Anon69): js.Promise[OperationOutcome | RequestGroup] = js.native
-  def vread(params: Anon7): js.Promise[OperationOutcome | DiagnosticReport] = js.native
-  def vread(params: Anon70): js.Promise[OperationOutcome | ResearchStudy] = js.native
-  def vread(params: Anon71): js.Promise[OperationOutcome | ResearchSubject] = js.native
-  def vread(params: Anon72): js.Promise[OperationOutcome | RiskAssessment] = js.native
-  def vread(params: Anon73): js.Promise[OperationOutcome | Schedule] = js.native
-  def vread(params: Anon74): js.Promise[OperationOutcome | SearchParameter] = js.native
-  def vread(params: Anon75): js.Promise[OperationOutcome | Sequence] = js.native
-  def vread(params: Anon76): js.Promise[OperationOutcome | ServiceDefinition] = js.native
-  def vread(params: Anon77): js.Promise[OperationOutcome | Slot] = js.native
-  def vread(params: Anon78): js.Promise[OperationOutcome | Specimen] = js.native
-  def vread(params: Anon79): js.Promise[OperationOutcome | StructureDefinition] = js.native
-  def vread(params: Anon8): js.Promise[OperationOutcome | DocumentManifest] = js.native
-  def vread(params: Anon80): js.Promise[OperationOutcome | StructureMap] = js.native
-  def vread(params: Anon81): js.Promise[OperationOutcome | Subscription] = js.native
-  def vread(params: Anon82): js.Promise[OperationOutcome | Substance] = js.native
-  def vread(params: Anon83): js.Promise[OperationOutcome | SupplyDelivery] = js.native
-  def vread(params: Anon84): js.Promise[OperationOutcome | SupplyRequest] = js.native
-  def vread(params: Anon85): js.Promise[OperationOutcome | Task] = js.native
-  def vread(params: Anon86): js.Promise[OperationOutcome | TestReport] = js.native
-  def vread(params: Anon87): js.Promise[OperationOutcome | TestScript] = js.native
-  def vread(params: Anon88): js.Promise[OperationOutcome | ValueSet] = js.native
-  def vread(params: Anon89): js.Promise[OperationOutcome | VisionPrescription] = js.native
-  def vread(params: Anon9): js.Promise[OperationOutcome | DocumentReference] = js.native
-  def vread(params: AnonHeadersHeaders): js.Promise[OperationOutcome | ChargeItem] = js.native
-  def vread(params: AnonHeadersHeadersIdString): js.Promise[OperationOutcome | CodeSystem] = js.native
-  def vread(params: AnonHeadersHeadersIdStringOptionsOptions): js.Promise[OperationOutcome | Composition] = js.native
-  def vread(params: AnonHeadersHeadersIdStringOptionsOptionsResourceType): js.Promise[OperationOutcome | Consent] = js.native
-  def vread(params: AnonHeadersHeadersIdStringOptionsOptionsResourceTypeVersionString): js.Promise[OperationOutcome | Coverage] = js.native
-  def vread(params: AnonHeadersId): js.Promise[OperationOutcome | Appointment] = js.native
-  def vread(params: AnonHeadersIdOptions): js.Promise[OperationOutcome | Binary] = js.native
-  def vread(params: AnonHeadersIdOptionsResourceType): js.Promise[OperationOutcome | CapabilityStatement] = js.native
-  def vread(params: AnonHeadersIdOptionsResourceTypeVersion): js.Promise[OperationOutcome | CareTeam] = js.native
+  def vread(params: Anon100): js.Promise[OperationOutcome | Bundle] = js.native
+  def vread(params: Anon101): js.Promise[OperationOutcome | CapabilityStatement] = js.native
+  def vread(params: Anon102): js.Promise[OperationOutcome | CarePlan] = js.native
+  def vread(params: Anon103): js.Promise[OperationOutcome | CareTeam] = js.native
+  def vread(params: Anon104): js.Promise[OperationOutcome | ChargeItem] = js.native
+  def vread(params: Anon105): js.Promise[OperationOutcome | Claim] = js.native
+  def vread(params: Anon106): js.Promise[OperationOutcome | ClaimResponse] = js.native
+  def vread(params: Anon107): js.Promise[OperationOutcome | ClinicalImpression] = js.native
+  def vread(params: Anon108): js.Promise[OperationOutcome | CodeSystem] = js.native
+  def vread(params: Anon109): js.Promise[OperationOutcome | Communication] = js.native
+  def vread(params: Anon110): js.Promise[OperationOutcome | CommunicationRequest] = js.native
+  def vread(params: Anon111): js.Promise[OperationOutcome | CompartmentDefinition] = js.native
+  def vread(params: Anon112): js.Promise[OperationOutcome | Composition] = js.native
+  def vread(params: Anon113): js.Promise[OperationOutcome | ConceptMap] = js.native
+  def vread(params: Anon114): js.Promise[OperationOutcome | Condition] = js.native
+  def vread(params: Anon115): js.Promise[OperationOutcome | Consent] = js.native
+  def vread(params: Anon116): js.Promise[OperationOutcome | Contract] = js.native
+  def vread(params: Anon117): js.Promise[OperationOutcome | Coverage] = js.native
+  def vread(params: Anon118): js.Promise[OperationOutcome | DataElement] = js.native
+  def vread(params: Anon119): js.Promise[OperationOutcome | DetectedIssue] = js.native
+  def vread(params: Anon120): js.Promise[OperationOutcome | Device] = js.native
+  def vread(params: Anon121): js.Promise[OperationOutcome | DeviceComponent] = js.native
+  def vread(params: Anon122): js.Promise[OperationOutcome | DeviceMetric] = js.native
+  def vread(params: Anon123): js.Promise[OperationOutcome | DeviceRequest] = js.native
+  def vread(params: Anon124): js.Promise[OperationOutcome | DeviceUseStatement] = js.native
+  def vread(params: Anon125): js.Promise[OperationOutcome | DiagnosticReport] = js.native
+  def vread(params: Anon126): js.Promise[OperationOutcome | DocumentManifest] = js.native
+  def vread(params: Anon127): js.Promise[OperationOutcome | DocumentReference] = js.native
+  def vread(params: Anon128): js.Promise[OperationOutcome | DomainResource] = js.native
+  def vread(params: Anon129): js.Promise[OperationOutcome | EligibilityRequest] = js.native
+  def vread(params: Anon130): js.Promise[OperationOutcome | EligibilityResponse] = js.native
+  def vread(params: Anon131): js.Promise[OperationOutcome | Encounter] = js.native
+  def vread(params: Anon132): js.Promise[OperationOutcome | Endpoint] = js.native
+  def vread(params: Anon133): js.Promise[OperationOutcome | EnrollmentRequest] = js.native
+  def vread(params: Anon134): js.Promise[OperationOutcome | EnrollmentResponse] = js.native
+  def vread(params: Anon135): js.Promise[OperationOutcome | EpisodeOfCare] = js.native
+  def vread(params: Anon136): js.Promise[OperationOutcome | ExpansionProfile] = js.native
+  def vread(params: Anon137): js.Promise[OperationOutcome | ExplanationOfBenefit] = js.native
+  def vread(params: Anon138): js.Promise[OperationOutcome | FamilyMemberHistory] = js.native
+  def vread(params: Anon139): js.Promise[OperationOutcome | Flag] = js.native
+  def vread(params: Anon140): js.Promise[OperationOutcome | Goal] = js.native
+  def vread(params: Anon141): js.Promise[OperationOutcome | GraphDefinition] = js.native
+  def vread(params: Anon142): js.Promise[OperationOutcome | Group] = js.native
+  def vread(params: Anon143): js.Promise[OperationOutcome | GuidanceResponse] = js.native
+  def vread(params: Anon144): js.Promise[OperationOutcome | HealthcareService] = js.native
+  def vread(params: Anon145): js.Promise[OperationOutcome | ImagingManifest] = js.native
+  def vread(params: Anon146): js.Promise[OperationOutcome | ImagingStudy] = js.native
+  def vread(params: Anon147): js.Promise[OperationOutcome | Immunization] = js.native
+  def vread(params: Anon148): js.Promise[OperationOutcome | ImmunizationRecommendation] = js.native
+  def vread(params: Anon149): js.Promise[OperationOutcome | ImplementationGuide] = js.native
+  def vread(params: Anon150): js.Promise[OperationOutcome | Library] = js.native
+  def vread(params: Anon151): js.Promise[OperationOutcome | Linkage] = js.native
+  def vread(params: Anon152): js.Promise[OperationOutcome | List] = js.native
+  def vread(params: Anon153): js.Promise[OperationOutcome | Location] = js.native
+  def vread(params: Anon154): js.Promise[OperationOutcome | Measure] = js.native
+  def vread(params: Anon155): js.Promise[OperationOutcome | MeasureReport] = js.native
+  def vread(params: Anon156): js.Promise[OperationOutcome | Media] = js.native
+  def vread(params: Anon157): js.Promise[OperationOutcome | Medication] = js.native
+  def vread(params: Anon158): js.Promise[OperationOutcome | MedicationAdministration] = js.native
+  def vread(params: Anon159): js.Promise[OperationOutcome | MedicationDispense] = js.native
+  def vread(params: Anon160): js.Promise[OperationOutcome | MedicationRequest] = js.native
+  def vread(params: Anon161): js.Promise[OperationOutcome | MedicationStatement] = js.native
+  def vread(params: Anon162): js.Promise[OperationOutcome | MessageDefinition] = js.native
+  def vread(params: Anon163): js.Promise[OperationOutcome | MessageHeader] = js.native
+  def vread(params: Anon164): js.Promise[OperationOutcome | NamingSystem] = js.native
+  def vread(params: Anon165): js.Promise[OperationOutcome | NutritionOrder] = js.native
+  def vread(params: Anon166): js.Promise[OperationOutcome | Observation] = js.native
+  def vread(params: Anon167): js.Promise[OperationOutcome | OperationDefinition] = js.native
+  def vread(params: Anon168): js.Promise[OperationOutcome] = js.native
+  def vread(params: Anon169): js.Promise[OperationOutcome | Organization] = js.native
+  def vread(params: Anon170): js.Promise[OperationOutcome | Parameters] = js.native
+  def vread(params: Anon171): js.Promise[OperationOutcome | Patient] = js.native
+  def vread(params: Anon172): js.Promise[OperationOutcome | PaymentNotice] = js.native
+  def vread(params: Anon173): js.Promise[OperationOutcome | PaymentReconciliation] = js.native
+  def vread(params: Anon174): js.Promise[OperationOutcome | Person] = js.native
+  def vread(params: Anon175): js.Promise[OperationOutcome | PlanDefinition] = js.native
+  def vread(params: Anon176): js.Promise[OperationOutcome | Practitioner] = js.native
+  def vread(params: Anon177): js.Promise[OperationOutcome | PractitionerRole] = js.native
+  def vread(params: Anon178): js.Promise[OperationOutcome | Procedure] = js.native
+  def vread(params: Anon179): js.Promise[OperationOutcome | ProcedureRequest] = js.native
+  def vread(params: Anon180): js.Promise[OperationOutcome | ProcessRequest] = js.native
+  def vread(params: Anon181): js.Promise[OperationOutcome | ProcessResponse] = js.native
+  def vread(params: Anon182): js.Promise[OperationOutcome | Provenance] = js.native
+  def vread(params: Anon183): js.Promise[OperationOutcome | Questionnaire] = js.native
+  def vread(params: Anon184): js.Promise[OperationOutcome | QuestionnaireResponse] = js.native
+  def vread(params: Anon185): js.Promise[OperationOutcome | ReferralRequest] = js.native
+  def vread(params: Anon186): js.Promise[OperationOutcome | RelatedPerson] = js.native
+  def vread(params: Anon187): js.Promise[OperationOutcome | RequestGroup] = js.native
+  def vread(params: Anon188): js.Promise[OperationOutcome | ResearchStudy] = js.native
+  def vread(params: Anon189): js.Promise[OperationOutcome | ResearchSubject] = js.native
+  def vread(params: Anon190): js.Promise[OperationOutcome | RiskAssessment] = js.native
+  def vread(params: Anon191): js.Promise[OperationOutcome | Schedule] = js.native
+  def vread(params: Anon192): js.Promise[OperationOutcome | SearchParameter] = js.native
+  def vread(params: Anon193): js.Promise[OperationOutcome | Sequence] = js.native
+  def vread(params: Anon194): js.Promise[OperationOutcome | ServiceDefinition] = js.native
+  def vread(params: Anon195): js.Promise[OperationOutcome | Slot] = js.native
+  def vread(params: Anon196): js.Promise[OperationOutcome | Specimen] = js.native
+  def vread(params: Anon197): js.Promise[OperationOutcome | StructureDefinition] = js.native
+  def vread(params: Anon198): js.Promise[OperationOutcome | StructureMap] = js.native
+  def vread(params: Anon199): js.Promise[OperationOutcome | Subscription] = js.native
+  def vread(params: Anon200): js.Promise[OperationOutcome | Substance] = js.native
+  def vread(params: Anon201): js.Promise[OperationOutcome | SupplyDelivery] = js.native
+  def vread(params: Anon202): js.Promise[OperationOutcome | SupplyRequest] = js.native
+  def vread(params: Anon203): js.Promise[OperationOutcome | Task] = js.native
+  def vread(params: Anon204): js.Promise[OperationOutcome | TestReport] = js.native
+  def vread(params: Anon205): js.Promise[OperationOutcome | TestScript] = js.native
+  def vread(params: Anon206): js.Promise[OperationOutcome | ValueSet] = js.native
+  def vread(params: Anon207): js.Promise[OperationOutcome | VisionPrescription] = js.native
+  def vread(params: AnonHeadersHeadersIdStringOptionsOptionsResourceTypeVersionString): js.Promise[OperationOutcome | BodySite] = js.native
+  def vread(params: AnonHeadersIdOptionsResourceTypeVersion): js.Promise[OperationOutcome | Appointment] = js.native
+  def vread(params: AnonIdOptionsResourceTypeVersion): js.Promise[OperationOutcome | AllergyIntolerance] = js.native
+  def vread(params: AnonIdStringOptionsOptionsResourceTypeVersionString): js.Promise[OperationOutcome | Binary] = js.native
+  def vread(params: AnonOptionsOptionsResourceTypeCustomResourceType): js.Promise[OperationOutcome | CustomResource] = js.native
+  def vread(params: AnonOptionsOptionsResourceTypeVersionString): js.Promise[OperationOutcome | Basic] = js.native
+  def vread(params: AnonOptionsResourceTypeVersion): js.Promise[OperationOutcome | AdverseEvent] = js.native
+  def vread(params: AnonResourceTypeVersion): js.Promise[OperationOutcome | ActivityDefinition] = js.native
+  def vread(params: AnonResourceTypeVersionString): js.Promise[OperationOutcome | AuditEvent] = js.native
   /**
     * Get a resource by id and version.
     *
@@ -1740,25 +2026,7 @@ trait Client extends js.Object {
     *
     * @return {Promise<Object>} FHIR resource
     */
-  def vread(params: AnonId): js.Promise[OperationOutcome | Account] = js.native
-  def vread(params: AnonIdOptions): js.Promise[OperationOutcome | AppointmentResponse] = js.native
-  def vread(params: AnonIdOptionsResourceType): js.Promise[OperationOutcome | BodySite] = js.native
-  def vread(params: AnonIdOptionsResourceTypeVersion): js.Promise[OperationOutcome | CarePlan] = js.native
-  def vread(params: AnonIdString): js.Promise[OperationOutcome | Claim] = js.native
-  def vread(params: AnonIdStringOptionsOptions): js.Promise[OperationOutcome | Communication] = js.native
-  def vread(params: AnonIdStringOptionsOptionsResourceType): js.Promise[OperationOutcome | ConceptMap] = js.native
-  def vread(params: AnonIdStringOptionsOptionsResourceTypeVersionString): js.Promise[OperationOutcome | Contract] = js.native
-  def vread(params: AnonOptions): js.Promise[OperationOutcome | ActivityDefinition] = js.native
-  def vread(params: AnonOptionsOptions): js.Promise[OperationOutcome | ClaimResponse] = js.native
-  def vread(params: AnonOptionsOptionsResourceType): js.Promise[OperationOutcome | CommunicationRequest] = js.native
-  def vread(params: AnonOptionsOptionsResourceTypeVersionString): js.Promise[OperationOutcome | Condition] = js.native
-  def vread(params: AnonOptionsResourceType): js.Promise[OperationOutcome | AuditEvent] = js.native
-  def vread(params: AnonOptionsResourceTypeVersion): js.Promise[OperationOutcome | Bundle] = js.native
-  def vread(params: AnonResourceType): js.Promise[OperationOutcome | AdverseEvent] = js.native
-  def vread(params: AnonResourceTypeCustomResourceType): js.Promise[OperationOutcome | CustomResource] = js.native
-  def vread(params: AnonResourceTypeVersion): js.Promise[OperationOutcome | Basic] = js.native
-  def vread(params: AnonResourceTypeVersionString): js.Promise[OperationOutcome | CompartmentDefinition] = js.native
-  def vread(params: AnonVersion): js.Promise[OperationOutcome | AllergyIntolerance] = js.native
-  def vread(params: AnonVersionString): js.Promise[OperationOutcome | ClinicalImpression] = js.native
+  def vread(params: AnonVersion): js.Promise[OperationOutcome | Account] = js.native
+  def vread(params: AnonVersionString): js.Promise[OperationOutcome | AppointmentResponse] = js.native
 }
 

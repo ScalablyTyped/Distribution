@@ -14,7 +14,6 @@ object HookResult {
   @scala.inline
   def apply[R](current: R, error: Error): HookResult[R] = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HookResult[R]]
   }
 }

@@ -17,7 +17,6 @@ object ClusterMetadataResponse {
   @scala.inline
   def apply(clusterMetadata: AnonControllerId, metadata: StringDictionary[NumberDictionary[AnonIsr]]): ClusterMetadataResponse = {
     val __obj = js.Dynamic.literal(clusterMetadata = clusterMetadata.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterMetadataResponse]
   }
 }

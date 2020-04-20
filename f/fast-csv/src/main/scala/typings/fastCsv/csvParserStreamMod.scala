@@ -30,9 +30,9 @@ object csvParserStreamMod extends js.Object {
     val rowTransformerValidator: js.Any = js.native
     var transformRow: js.Any = js.native
     def _transform(data: Buffer, encoding: String, done: TransformCallback): Unit = js.native
-    /* private */ def hasHitRowLimit(): js.Any = js.native
-    /* private */ def shouldEmitRows(): js.Any = js.native
-    /* private */ def shouldSkipLine(): js.Any = js.native
+    /* private */ def hasHitRowLimit: js.Any = js.native
+    /* private */ def shouldEmitRows: js.Any = js.native
+    /* private */ def shouldSkipLine: js.Any = js.native
     def transform(transformFunction: RowTransformFunction): CsvParserStream = js.native
     def validate(validateFunction: RowValidate): CsvParserStream = js.native
   }

@@ -21,7 +21,6 @@ object VpcIpv4CidrBlockAssociationArgs {
   @scala.inline
   def apply(cidrBlock: Input[String], vpcId: Input[String]): VpcIpv4CidrBlockAssociationArgs = {
     val __obj = js.Dynamic.literal(cidrBlock = cidrBlock.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcIpv4CidrBlockAssociationArgs]
   }
 }

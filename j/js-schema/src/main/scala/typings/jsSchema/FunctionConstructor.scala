@@ -12,7 +12,6 @@ object FunctionConstructor {
   @scala.inline
   def apply(reference: js.Function => FunctionConstructor): FunctionConstructor = {
     val __obj = js.Dynamic.literal(reference = js.Any.fromFunction1(reference))
-  
     __obj.asInstanceOf[FunctionConstructor]
   }
 }

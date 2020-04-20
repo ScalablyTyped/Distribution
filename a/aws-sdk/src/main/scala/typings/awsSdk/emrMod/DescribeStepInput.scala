@@ -20,7 +20,6 @@ object DescribeStepInput {
   @scala.inline
   def apply(ClusterId: ClusterId, StepId: StepId): DescribeStepInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], StepId = StepId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStepInput]
   }
 }

@@ -13,7 +13,6 @@ object AgentPoolEvent {
   @scala.inline
   def apply(eventType: String, pool: TaskAgentPool): AgentPoolEvent = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentPoolEvent]
   }
 }

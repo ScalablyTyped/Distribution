@@ -15,7 +15,6 @@ object AnonIsSupportBLE {
   @scala.inline
   def apply(isSupportBLE: Boolean): AnonIsSupportBLE = {
     val __obj = js.Dynamic.literal(isSupportBLE = isSupportBLE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsSupportBLE]
   }
 }

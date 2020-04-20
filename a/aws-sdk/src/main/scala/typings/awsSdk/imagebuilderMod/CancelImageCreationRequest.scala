@@ -20,7 +20,6 @@ object CancelImageCreationRequest {
   @scala.inline
   def apply(clientToken: ClientToken, imageBuildVersionArn: ImageBuildVersionArn): CancelImageCreationRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], imageBuildVersionArn = imageBuildVersionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelImageCreationRequest]
   }
 }

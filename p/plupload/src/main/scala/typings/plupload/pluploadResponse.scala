@@ -14,7 +14,6 @@ object pluploadResponse {
   @scala.inline
   def apply(response: String, responseHeaders: String, status: Double): pluploadResponse = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[pluploadResponse]
   }
 }

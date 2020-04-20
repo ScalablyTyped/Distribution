@@ -1,8 +1,6 @@
 package typings.titanium.Titanium.Android
 
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,210 +8,177 @@ import scala.scalajs.js.annotation._
 /**
 		 * Module for notification channels.
 		 */
-trait NotificationChannel extends Proxy {
+@JSGlobal("Titanium.Android.NotificationChannel")
+@js.native
+class NotificationChannel () extends Proxy {
   /**
   			 * Whether or not notifications posted to this channel can interrupt the user.
   			 */
-  var bypassDnd: Boolean
+  var bypassDnd: Boolean = js.native
   /**
   			 * User visible description of this channel.
   			 */
-  var description: String
+  var description: String = js.native
   /**
   			 * Whether notifications posted to this channel should display notification lights
   			 */
-  var enableLights: Boolean
+  var enableLights: Boolean = js.native
   /**
   			 * Whether notification posted to this channel should vibrate.
   			 */
-  var enableVibration: Boolean
+  var enableVibration: Boolean = js.native
   /**
   			 * Group id this channel belongs to.
   			 */
-  var groupId: String
+  var groupId: String = js.native
   /**
   			 * The channel id specified for the notification channel.
   			 */
-  var id: String
+  @JSName("id")
+  var id_NotificationChannel: String = js.native
   /**
   			 * The audio stream type to use when playing the sound.
   			 */
-  var importance: Double
+  var importance: Double = js.native
   /**
   			 * The notification light color for notifications posted to this channel.
   			 */
-  var lightColor: Double
+  var lightColor: Double = js.native
   /**
   			 * Whether or not notifications posted to this channel are shown on the lockscreen in full or redacted form.
   			 */
-  var lockscreenVisibility: Double
+  var lockscreenVisibility: Double = js.native
   /**
   			 * Whether notifications posted to this channel can appear as application icon badges in a Launcher.
   			 */
-  var showBadge: Boolean
+  var showBadge: Boolean = js.native
   /**
   			 * A URL to the sound to play.
   			 */
-  var sound: String
+  var sound: String = js.native
   /**
   			 * The vibration pattern for notifications posted to this channel.
   			 */
-  var vibratePattern: js.Array[Double]
+  var vibratePattern: js.Array[Double] = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.bypassDnd> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.bypassDnd> instead.
   			 */
-  def getBypassDnd(): Boolean
+  def getBypassDnd(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.description> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.description> instead.
   			 */
-  def getDescription(): String
+  def getDescription(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.enableLights> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.enableLights> instead.
   			 */
-  def getEnableLights(): Boolean
+  def getEnableLights(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.enableVibration> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.enableVibration> instead.
   			 */
-  def getEnableVibration(): Boolean
+  def getEnableVibration(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.groupId> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.groupId> instead.
   			 */
-  def getGroupId(): String
+  def getGroupId(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.id> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.id> instead.
   			 */
-  def getId(): String
+  def getId(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.importance> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.importance> instead.
   			 */
-  def getImportance(): Double
+  def getImportance(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.lightColor> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.lightColor> instead.
   			 */
-  def getLightColor(): Double
+  def getLightColor(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.lockscreenVisibility> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.lockscreenVisibility> instead.
   			 */
-  def getLockscreenVisibility(): Double
+  def getLockscreenVisibility(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.showBadge> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.showBadge> instead.
   			 */
-  def getShowBadge(): Boolean
+  def getShowBadge(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.sound> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.sound> instead.
   			 */
-  def getSound(): String
+  def getSound(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.vibratePattern> property.
+  			 * @deprecated Access <Titanium.Android.NotificationChannel.vibratePattern> instead.
   			 */
-  def getVibratePattern(): js.Array[Double]
+  def getVibratePattern(): js.Array[Double] = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.bypassDnd> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.bypassDnd> instead.
   			 */
-  def setBypassDnd(bypassDnd: Boolean): Unit
+  def setBypassDnd(bypassDnd: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.description> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.description> instead.
   			 */
-  def setDescription(description: String): Unit
+  def setDescription(description: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.enableLights> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.enableLights> instead.
   			 */
-  def setEnableLights(enableLights: Boolean): Unit
+  def setEnableLights(enableLights: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.enableVibration> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.enableVibration> instead.
   			 */
-  def setEnableVibration(enableVibration: Boolean): Unit
+  def setEnableVibration(enableVibration: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.groupId> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.groupId> instead.
   			 */
-  def setGroupId(groupId: String): Unit
+  def setGroupId(groupId: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.id> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.id> instead.
   			 */
-  def setId(id: String): Unit
+  def setId(id: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.importance> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.importance> instead.
   			 */
-  def setImportance(importance: Double): Unit
+  def setImportance(importance: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.lightColor> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.lightColor> instead.
   			 */
-  def setLightColor(lightColor: Double): Unit
+  def setLightColor(lightColor: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.lockscreenVisibility> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.lockscreenVisibility> instead.
   			 */
-  def setLockscreenVisibility(lockscreenVisibility: Double): Unit
+  def setLockscreenVisibility(lockscreenVisibility: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.showBadge> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.showBadge> instead.
   			 */
-  def setShowBadge(showBadge: Boolean): Unit
+  def setShowBadge(showBadge: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.sound> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.sound> instead.
   			 */
-  def setSound(sound: String): Unit
+  def setSound(sound: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.vibratePattern> property.
+  			 * @deprecated Set the value using <Titanium.Android.NotificationChannel.vibratePattern> instead.
   			 */
-  def setVibratePattern(vibratePattern: js.Array[Double]): Unit
-}
-
-object NotificationChannel {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    bypassDnd: Boolean,
-    description: String,
-    enableLights: Boolean,
-    enableVibration: Boolean,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getBypassDnd: () => Boolean,
-    getDescription: () => String,
-    getEnableLights: () => Boolean,
-    getEnableVibration: () => Boolean,
-    getGroupId: () => String,
-    getId: () => String,
-    getImportance: () => Double,
-    getLightColor: () => Double,
-    getLockscreenVisibility: () => Double,
-    getShowBadge: () => Boolean,
-    getSound: () => String,
-    getVibratePattern: () => js.Array[Double],
-    groupId: String,
-    id: String,
-    importance: Double,
-    lightColor: Double,
-    lockscreenVisibility: Double,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setBubbleParent: Boolean => Unit,
-    setBypassDnd: Boolean => Unit,
-    setDescription: String => Unit,
-    setEnableLights: Boolean => Unit,
-    setEnableVibration: Boolean => Unit,
-    setGroupId: String => Unit,
-    setId: String => Unit,
-    setImportance: Double => Unit,
-    setLightColor: Double => Unit,
-    setLockscreenVisibility: Double => Unit,
-    setShowBadge: Boolean => Unit,
-    setSound: String => Unit,
-    setVibratePattern: js.Array[Double] => Unit,
-    showBadge: Boolean,
-    sound: String,
-    vibratePattern: js.Array[Double],
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): NotificationChannel = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], bypassDnd = bypassDnd.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enableLights = enableLights.asInstanceOf[js.Any], enableVibration = enableVibration.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getBypassDnd = js.Any.fromFunction0(getBypassDnd), getDescription = js.Any.fromFunction0(getDescription), getEnableLights = js.Any.fromFunction0(getEnableLights), getEnableVibration = js.Any.fromFunction0(getEnableVibration), getGroupId = js.Any.fromFunction0(getGroupId), getId = js.Any.fromFunction0(getId), getImportance = js.Any.fromFunction0(getImportance), getLightColor = js.Any.fromFunction0(getLightColor), getLockscreenVisibility = js.Any.fromFunction0(getLockscreenVisibility), getShowBadge = js.Any.fromFunction0(getShowBadge), getSound = js.Any.fromFunction0(getSound), getVibratePattern = js.Any.fromFunction0(getVibratePattern), groupId = groupId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], importance = importance.asInstanceOf[js.Any], lightColor = lightColor.asInstanceOf[js.Any], lockscreenVisibility = lockscreenVisibility.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setBypassDnd = js.Any.fromFunction1(setBypassDnd), setDescription = js.Any.fromFunction1(setDescription), setEnableLights = js.Any.fromFunction1(setEnableLights), setEnableVibration = js.Any.fromFunction1(setEnableVibration), setGroupId = js.Any.fromFunction1(setGroupId), setId = js.Any.fromFunction1(setId), setImportance = js.Any.fromFunction1(setImportance), setLightColor = js.Any.fromFunction1(setLightColor), setLockscreenVisibility = js.Any.fromFunction1(setLockscreenVisibility), setShowBadge = js.Any.fromFunction1(setShowBadge), setSound = js.Any.fromFunction1(setSound), setVibratePattern = js.Any.fromFunction1(setVibratePattern), showBadge = showBadge.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], vibratePattern = vibratePattern.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NotificationChannel]
-  }
+  def setVibratePattern(vibratePattern: js.Array[Double]): Unit = js.native
 }
 

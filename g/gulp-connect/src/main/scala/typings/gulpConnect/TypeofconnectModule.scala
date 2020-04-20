@@ -14,7 +14,6 @@ object TypeofconnectModule {
   @scala.inline
   def apply(IncomingMessage: Instantiable0[IncomingMessage]): TypeofconnectModule = {
     val __obj = js.Dynamic.literal(IncomingMessage = IncomingMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofconnectModule]
   }
 }

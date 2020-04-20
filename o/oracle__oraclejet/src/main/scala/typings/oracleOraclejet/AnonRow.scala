@@ -14,7 +14,6 @@ object AnonRow {
   @scala.inline
   def apply(row: enable | disable): AnonRow = {
     val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRow]
   }
 }

@@ -14,7 +14,6 @@ object PickImplid {
   @scala.inline
   def apply(id: `false` | String): PickImplid = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplid]
   }
 }

@@ -46,9 +46,9 @@ trait Typeofconfig extends js.Object {
     GUID: String,
     result: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult */ js.Any, 
-      String, 
+      /* keyof typeof AuthenticationResult */ String, 
       Exclude[
-        String, 
+        /* keyof typeof AuthenticationResult */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult[keyof typeof AuthenticationResult] */ js.Any
       ]
     ]
@@ -57,9 +57,9 @@ trait Typeofconfig extends js.Object {
     GUID: String,
     result: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult */ js.Any, 
-      String, 
+      /* keyof typeof AuthenticationResult */ String, 
       Exclude[
-        String, 
+        /* keyof typeof AuthenticationResult */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult[keyof typeof AuthenticationResult] */ js.Any
       ]
     ],

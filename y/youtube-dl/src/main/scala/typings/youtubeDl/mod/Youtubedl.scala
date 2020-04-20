@@ -14,7 +14,6 @@ object Youtubedl {
   @scala.inline
   def apply(on: (String, js.Function1[/* info */ Info, Unit]) => Youtubedl, pipe: WriteStream => Youtubedl): Youtubedl = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on), pipe = js.Any.fromFunction1(pipe))
-  
     __obj.asInstanceOf[Youtubedl]
   }
 }

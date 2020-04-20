@@ -4,6 +4,7 @@ import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.hostValidation.hostValidationStrings.both
 import typings.hostValidation.hostValidationStrings.either
 import typings.std.RegExp
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait config extends js.Object {
   var fail: js.UndefOr[
     js.Function3[
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* res */ Response_[_], 
       /* next */ NextFunction, 
       Unit
@@ -28,7 +29,7 @@ trait config extends js.Object {
 object config {
   @scala.inline
   def apply(
-    fail: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_], /* next */ NextFunction) => Unit = null,
+    fail: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ NextFunction) => Unit = null,
     hosts: js.Array[String | RegExp] = null,
     mode: both | either = null,
     referers: js.Array[String | RegExp] = null

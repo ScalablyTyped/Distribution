@@ -13,7 +13,6 @@ object GetSecretRotationRule {
   @scala.inline
   def apply(automaticallyAfterDays: Double): GetSecretRotationRule = {
     val __obj = js.Dynamic.literal(automaticallyAfterDays = automaticallyAfterDays.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSecretRotationRule]
   }
 }

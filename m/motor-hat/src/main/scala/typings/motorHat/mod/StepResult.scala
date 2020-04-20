@@ -27,7 +27,6 @@ object StepResult {
   @scala.inline
   def apply(dir: Direction, duration: Double, retried: Double, steps: Double): StepResult = {
     val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], retried = retried.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StepResult]
   }
 }

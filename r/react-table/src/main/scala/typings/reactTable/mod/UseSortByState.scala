@@ -12,7 +12,6 @@ object UseSortByState {
   @scala.inline
   def apply[D /* <: js.Object */](sortBy: js.Array[SortingRule[D]]): UseSortByState[D] = {
     val __obj = js.Dynamic.literal(sortBy = sortBy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseSortByState[D]]
   }
 }

@@ -12,7 +12,6 @@ object OnPreDrawListener {
   @scala.inline
   def apply(onPreDraw: () => Boolean): OnPreDrawListener = {
     val __obj = js.Dynamic.literal(onPreDraw = js.Any.fromFunction0(onPreDraw))
-  
     __obj.asInstanceOf[OnPreDrawListener]
   }
 }

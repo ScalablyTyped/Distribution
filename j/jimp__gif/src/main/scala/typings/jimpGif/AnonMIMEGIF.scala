@@ -13,7 +13,6 @@ object AnonMIMEGIF {
   @scala.inline
   def apply(MIME_GIF: imageSlashgif): AnonMIMEGIF = {
     val __obj = js.Dynamic.literal(MIME_GIF = MIME_GIF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMIMEGIF]
   }
 }

@@ -31,7 +31,6 @@ object MDCProgressIndicatorFoundation {
   @scala.inline
   def apply(close: () => Unit, open: () => Unit, setDeterminate: Boolean => Unit, setProgress: Double => Unit): MDCProgressIndicatorFoundation = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open), setDeterminate = js.Any.fromFunction1(setDeterminate), setProgress = js.Any.fromFunction1(setProgress))
-  
     __obj.asInstanceOf[MDCProgressIndicatorFoundation]
   }
 }

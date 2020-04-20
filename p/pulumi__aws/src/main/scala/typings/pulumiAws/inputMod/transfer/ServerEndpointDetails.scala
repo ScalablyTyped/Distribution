@@ -17,7 +17,6 @@ object ServerEndpointDetails {
   @scala.inline
   def apply(vpcEndpointId: Input[String]): ServerEndpointDetails = {
     val __obj = js.Dynamic.literal(vpcEndpointId = vpcEndpointId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerEndpointDetails]
   }
 }

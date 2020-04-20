@@ -20,7 +20,6 @@ object DescribeNodegroupRequest {
   @scala.inline
   def apply(clusterName: String, nodegroupName: String): DescribeNodegroupRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeNodegroupRequest]
   }
 }

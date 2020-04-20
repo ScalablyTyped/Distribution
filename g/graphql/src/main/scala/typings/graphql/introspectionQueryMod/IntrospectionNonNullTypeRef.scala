@@ -14,7 +14,6 @@ object IntrospectionNonNullTypeRef {
   @scala.inline
   def apply[T /* <: IntrospectionTypeRef */](kind: NON_NULL, ofType: T): IntrospectionNonNullTypeRef[T] = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], ofType = ofType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntrospectionNonNullTypeRef[T]]
   }
 }

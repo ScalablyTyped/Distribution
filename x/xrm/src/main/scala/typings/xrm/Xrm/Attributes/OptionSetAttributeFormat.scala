@@ -16,10 +16,8 @@ trait OptionSetAttributeFormat extends js.Object
 
 object OptionSetAttributeFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def language: typings.xrm.xrmStrings.language = "language".asInstanceOf[typings.xrm.xrmStrings.language]
   @scala.inline
-  def language: typings.xrm.xrmStrings.language = this.cast("language")
-  @scala.inline
-  def timezone: typings.xrm.xrmStrings.timezone = this.cast("timezone")
+  def timezone: typings.xrm.xrmStrings.timezone = "timezone".asInstanceOf[typings.xrm.xrmStrings.timezone]
 }
 

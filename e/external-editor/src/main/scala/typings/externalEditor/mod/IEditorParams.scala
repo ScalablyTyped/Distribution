@@ -13,7 +13,6 @@ object IEditorParams {
   @scala.inline
   def apply(args: js.Array[String], bin: String): IEditorParams = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], bin = bin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEditorParams]
   }
 }

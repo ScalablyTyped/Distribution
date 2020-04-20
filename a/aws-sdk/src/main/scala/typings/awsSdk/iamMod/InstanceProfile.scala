@@ -43,7 +43,6 @@ object InstanceProfile {
     Roles: roleListType
   ): InstanceProfile = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreateDate = CreateDate.asInstanceOf[js.Any], InstanceProfileId = InstanceProfileId.asInstanceOf[js.Any], InstanceProfileName = InstanceProfileName.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], Roles = Roles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstanceProfile]
   }
 }

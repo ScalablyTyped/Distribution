@@ -73,6 +73,7 @@ object colorMod extends js.Object {
   @JSName("updateRGB")
   def updateRGB_r(color: IColor, component: r, value: Double): IColor = js.native
   def updateSV(color: IColor, s: Double, v: Double): IColor = js.native
+  def updateT(color: IColor, t: Double): IColor = js.native
   @js.native
   object Shade extends js.Object {
     /* 1 */ val Shade1: typings.officeUiFabricReact.shadesMod.Shade.Shade1 with Double = js.native

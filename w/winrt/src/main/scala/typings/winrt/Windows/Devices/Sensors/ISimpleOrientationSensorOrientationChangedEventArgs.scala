@@ -14,7 +14,6 @@ object ISimpleOrientationSensorOrientationChangedEventArgs {
   @scala.inline
   def apply(orientation: SimpleOrientation, timestamp: Date): ISimpleOrientationSensorOrientationChangedEventArgs = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISimpleOrientationSensorOrientationChangedEventArgs]
   }
 }

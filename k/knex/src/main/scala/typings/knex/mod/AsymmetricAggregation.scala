@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 // is significant.
 @js.native
 trait AsymmetricAggregation[TRecord, TResult, TValue] extends js.Object {
-  def apply[TResult2](columnNames: (Raw[_] | (Record[String, String | js.Array[String] | Raw[_]]) | String)*): QueryBuilder[TRecord, TResult2] = js.native
+  def apply[TResult2](
+    columnNames: (Raw[_] | (Record[String, String | js.Array[String] | Raw[_]]) | (/* keyof TRecord */ String))*
+  ): QueryBuilder[TRecord, TResult2] = js.native
   def apply[TAliases /* <: js.Object */, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
 }
 

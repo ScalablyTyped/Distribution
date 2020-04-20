@@ -28,7 +28,6 @@ object ascii85 {
   @scala.inline
   def apply(decode: String => Unit, encode: js.Array[_] => Unit): ascii85 = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[ascii85]
   }
 }

@@ -20,7 +20,6 @@ object IEnum {
     getSymbols: () => js.Array[EnumSymbol]
   ): IEnum = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), fromName = js.Any.fromFunction1(fromName), getNames = js.Any.fromFunction0(getNames), getSymbols = js.Any.fromFunction0(getSymbols))
-  
     __obj.asInstanceOf[IEnum]
   }
 }

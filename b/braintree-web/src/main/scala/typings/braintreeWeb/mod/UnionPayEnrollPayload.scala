@@ -19,7 +19,6 @@ object UnionPayEnrollPayload {
   @scala.inline
   def apply(enrollmentId: String, smsCodeRequired: Boolean): UnionPayEnrollPayload = {
     val __obj = js.Dynamic.literal(enrollmentId = enrollmentId.asInstanceOf[js.Any], smsCodeRequired = smsCodeRequired.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnionPayEnrollPayload]
   }
 }

@@ -20,16 +20,14 @@ trait OlSelectionLocation extends js.Object
 
 object OlSelectionLocation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAttachmentWell: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olAttachmentWell: `4` = this.cast(4)
+  def olDailyTaskList: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olDailyTaskList: `3` = this.cast(3)
+  def olToDoBarAppointmentList: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olToDoBarAppointmentList: `2` = this.cast(2)
+  def olToDoBarTaskList: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olToDoBarTaskList: `1` = this.cast(1)
-  @scala.inline
-  def olViewList: `0` = this.cast(0)
+  def olViewList: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -28,7 +28,6 @@ object Typeofsipcapture {
     sip_capture_table: String => Double
   ): Typeofsipcapture = {
     val __obj = js.Dynamic.literal(float2int = js.Any.fromFunction2(float2int), report_capture = js.Any.fromFunction1(report_capture), report_capture_cid = js.Any.fromFunction2(report_capture_cid), report_capture_data = js.Any.fromFunction3(report_capture_data), sip_capture = js.Any.fromFunction0(sip_capture), sip_capture_forward = js.Any.fromFunction1(sip_capture_forward), sip_capture_mode = js.Any.fromFunction2(sip_capture_mode), sip_capture_table = js.Any.fromFunction1(sip_capture_table))
-  
     __obj.asInstanceOf[Typeofsipcapture]
   }
 }

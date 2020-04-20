@@ -19,7 +19,6 @@ object BaseOptions {
   @scala.inline
   def apply(qname: String): BaseOptions = {
     val __obj = js.Dynamic.literal(qname = qname.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseOptions]
   }
 }

@@ -16,7 +16,6 @@ object DescribeLedgerRequest {
   @scala.inline
   def apply(Name: LedgerName): DescribeLedgerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLedgerRequest]
   }
 }

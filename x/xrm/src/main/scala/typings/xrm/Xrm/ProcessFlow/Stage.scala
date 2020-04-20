@@ -54,7 +54,6 @@ object Stage {
     getSteps: () => js.Array[Step]
   ): Stage = {
     val __obj = js.Dynamic.literal(getCategory = js.Any.fromFunction0(getCategory), getEntityName = js.Any.fromFunction0(getEntityName), getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getStatus = js.Any.fromFunction0(getStatus), getSteps = js.Any.fromFunction0(getSteps))
-  
     __obj.asInstanceOf[Stage]
   }
 }

@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 
 object nivoLineComponents extends nivoLineProps {
   @scala.inline
-  def Line: ComponentType[LineSvgProps with Dimensions] = js.constructorOf[typings.nivoLine.mod.Line].asInstanceOf[typings.react.mod.ComponentType[typings.nivoLine.mod.LineSvgProps with typings.nivoCore.mod.Dimensions]]
+  def Line: ComponentType[LineSvgProps with Dimensions] = js.constructorOf[typings.nivoLine.mod.Line].asInstanceOf[ComponentType[LineSvgProps with Dimensions]]
   @scala.inline
-  def LineCanvas: ComponentType[LineCanvasProps with Dimensions] = js.constructorOf[typings.nivoLine.mod.LineCanvas].asInstanceOf[typings.react.mod.ComponentType[typings.nivoLine.mod.LineCanvasProps with typings.nivoCore.mod.Dimensions]]
+  def LineCanvas: ComponentType[LineCanvasProps with Dimensions] = js.constructorOf[typings.nivoLine.mod.LineCanvas].asInstanceOf[ComponentType[LineCanvasProps with Dimensions]]
   @scala.inline
-  def ResponsiveLine: ComponentType[ResponsiveLineProps] = js.constructorOf[typings.nivoLine.mod.ResponsiveLine].asInstanceOf[typings.react.mod.ComponentType[ResponsiveLineProps]]
+  def ResponsiveLine: ComponentType[ResponsiveLineProps] = js.constructorOf[typings.nivoLine.mod.ResponsiveLine].asInstanceOf[ComponentType[ResponsiveLineProps]]
   @scala.inline
-  def ResponsiveLineCanvas: ComponentType[ResponsiveLineCanvasProps] = js.constructorOf[typings.nivoLine.mod.ResponsiveLineCanvas].asInstanceOf[typings.react.mod.ComponentType[ResponsiveLineCanvasProps]]
+  def ResponsiveLineCanvas: ComponentType[ResponsiveLineCanvasProps] = js.constructorOf[typings.nivoLine.mod.ResponsiveLineCanvas].asInstanceOf[ComponentType[ResponsiveLineCanvasProps]]
 }
 

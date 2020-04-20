@@ -13,12 +13,10 @@ trait Importance extends js.Object
 
 object Importance {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = this.cast("high")
+  def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
   @scala.inline
-  def low: typings.microsoftGraph.microsoftGraphStrings.low = this.cast("low")
-  @scala.inline
-  def normal: typings.microsoftGraph.microsoftGraphStrings.normal = this.cast("normal")
+  def normal: typings.microsoftGraph.microsoftGraphStrings.normal = "normal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.normal]
 }
 

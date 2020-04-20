@@ -21,7 +21,6 @@ object AnonAmountgte {
   @scala.inline
   def apply(amount_gte: Double, reset_billing_cycle_anchor: Boolean): AnonAmountgte = {
     val __obj = js.Dynamic.literal(amount_gte = amount_gte.asInstanceOf[js.Any], reset_billing_cycle_anchor = reset_billing_cycle_anchor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAmountgte]
   }
 }

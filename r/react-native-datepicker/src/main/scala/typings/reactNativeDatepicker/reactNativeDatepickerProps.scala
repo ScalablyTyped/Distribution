@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeDatepickerProps {
   @scala.inline
-  def ReactNativeDatepickerProps: DatePickerProps.type = typings.reactNativeDatepicker.mod.DatePickerProps
+  def ReactNativeDatepickerProps: DatePickerProps.type = DatePickerProps
   type ReactNativeDatepickerProps = DatePickerProps
 }
 

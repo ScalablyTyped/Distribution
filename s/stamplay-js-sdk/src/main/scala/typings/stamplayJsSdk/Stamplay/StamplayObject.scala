@@ -13,7 +13,6 @@ object StamplayObject {
   @scala.inline
   def apply(Collection: js.Any, Model: Model): StamplayObject = {
     val __obj = js.Dynamic.literal(Collection = Collection.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StamplayObject]
   }
 }

@@ -24,7 +24,6 @@ object ChooseCallbacks {
   @scala.inline
   def apply(onComplete: () => Unit, onMatch: typings.fridaGum.Wrapper => Unit | EnumerateAction): ChooseCallbacks = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction1(onMatch))
-  
     __obj.asInstanceOf[ChooseCallbacks]
   }
 }

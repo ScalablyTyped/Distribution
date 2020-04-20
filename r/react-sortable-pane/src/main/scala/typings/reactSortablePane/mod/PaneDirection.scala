@@ -12,10 +12,8 @@ trait PaneDirection extends js.Object
 
 object PaneDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.reactSortablePane.reactSortablePaneStrings.horizontal = "horizontal".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.horizontal]
   @scala.inline
-  def horizontal: typings.reactSortablePane.reactSortablePaneStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.reactSortablePane.reactSortablePaneStrings.vertical = this.cast("vertical")
+  def vertical: typings.reactSortablePane.reactSortablePaneStrings.vertical = "vertical".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.vertical]
 }
 

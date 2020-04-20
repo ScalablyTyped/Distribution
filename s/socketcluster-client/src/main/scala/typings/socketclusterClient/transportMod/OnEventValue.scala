@@ -13,7 +13,6 @@ object OnEventValue {
   @scala.inline
   def apply(data: js.Any, event: String): OnEventValue = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnEventValue]
   }
 }

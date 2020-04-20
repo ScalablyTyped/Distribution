@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactFlatpickrProps {
   @scala.inline
-  def ReactFlatpickrProps: DateTimePickerProps.type = typings.reactFlatpickr.mod.DateTimePickerProps
+  def ReactFlatpickrProps: DateTimePickerProps.type = DateTimePickerProps
   type ReactFlatpickrProps = DateTimePickerProps
 }
 

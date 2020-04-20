@@ -18,14 +18,12 @@ trait MsoArrowheadLength extends js.Object
 
 object MsoArrowheadLength {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoArrowheadLengthMedium: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoArrowheadLengthMedium: `2` = this.cast(2)
+  def msoArrowheadLengthMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoArrowheadLengthMixed: `-2` = this.cast(-2)
+  def msoArrowheadLong: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoArrowheadLong: `3` = this.cast(3)
-  @scala.inline
-  def msoArrowheadShort: `1` = this.cast(1)
+  def msoArrowheadShort: `1` = 1.asInstanceOf[`1`]
 }
 

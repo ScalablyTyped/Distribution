@@ -14,7 +14,6 @@ object AnonDateOrDeltaHeaderValue {
   @scala.inline
   def apply(dateOrDeltaHeaderValue: HttpDateOrDeltaHeaderValue, returnValue: Boolean): AnonDateOrDeltaHeaderValue = {
     val __obj = js.Dynamic.literal(dateOrDeltaHeaderValue = dateOrDeltaHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDateOrDeltaHeaderValue]
   }
 }

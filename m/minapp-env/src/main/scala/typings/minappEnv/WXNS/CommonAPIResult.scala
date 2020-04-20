@@ -12,7 +12,6 @@ object CommonAPIResult {
   @scala.inline
   def apply(errMsg: String): CommonAPIResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommonAPIResult]
   }
 }

@@ -18,7 +18,6 @@ object Webhook {
     get: () => js.Promise[js.Array[GetWebhookResult]]
   ): Webhook = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), deleteOne = js.Any.fromFunction1(deleteOne), get = js.Any.fromFunction0(get))
-  
     __obj.asInstanceOf[Webhook]
   }
 }

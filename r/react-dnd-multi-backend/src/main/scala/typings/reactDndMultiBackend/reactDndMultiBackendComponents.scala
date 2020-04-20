@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDndMultiBackendComponents extends reactDndMultiBackendProps {
   @scala.inline
-  def Preview: ComponentType[PreviewProps] = js.constructorOf[typings.reactDndMultiBackend.mod.Preview].asInstanceOf[typings.react.mod.ComponentType[PreviewProps]]
+  def Preview: ComponentType[PreviewProps] = js.constructorOf[typings.reactDndMultiBackend.mod.Preview].asInstanceOf[ComponentType[PreviewProps]]
 }
 

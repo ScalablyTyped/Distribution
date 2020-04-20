@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Schedule extends js.Object {
   /**
-    *  The condition configures when the pipeline should trigger a new image build. When the pipelineExecutionStartCondition is set to EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE, EC2 Image Builder will build a new image only when there are known changes pending. When it is set to EXPRESSION_MATCH_ONLY, it will build a new image every time the CRON expression matches the current time.
+    * The condition configures when the pipeline should trigger a new image build. When the pipelineExecutionStartCondition is set to EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE, EC2 Image Builder will build a new image only when there are known changes pending. When it is set to EXPRESSION_MATCH_ONLY, it will build a new image every time the CRON expression matches the current time.
     */
   var pipelineExecutionStartCondition: js.UndefOr[PipelineExecutionStartCondition] = js.native
   /**
-    *  The expression determines how often EC2 Image Builder evaluates your pipelineExecutionStartCondition.
+    * The expression determines how often EC2 Image Builder evaluates your pipelineExecutionStartCondition.
     */
   var scheduleExpression: js.UndefOr[NonEmptyString] = js.native
 }

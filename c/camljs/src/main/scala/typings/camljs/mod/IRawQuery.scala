@@ -14,7 +14,6 @@ object IRawQuery {
   @scala.inline
   def apply(ModifyWhere: () => IRawQueryModify, ReplaceWhere: () => IFieldExpression): IRawQuery = {
     val __obj = js.Dynamic.literal(ModifyWhere = js.Any.fromFunction0(ModifyWhere), ReplaceWhere = js.Any.fromFunction0(ReplaceWhere))
-  
     __obj.asInstanceOf[IRawQuery]
   }
 }

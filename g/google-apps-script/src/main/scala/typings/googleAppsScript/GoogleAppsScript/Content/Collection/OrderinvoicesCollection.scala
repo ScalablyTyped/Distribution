@@ -22,7 +22,6 @@ object OrderinvoicesCollection {
     createrefundinvoice: (OrderinvoicesCreateRefundInvoiceRequest, String, String) => OrderinvoicesCreateRefundInvoiceResponse
   ): OrderinvoicesCollection = {
     val __obj = js.Dynamic.literal(createchargeinvoice = js.Any.fromFunction3(createchargeinvoice), createrefundinvoice = js.Any.fromFunction3(createrefundinvoice))
-  
     __obj.asInstanceOf[OrderinvoicesCollection]
   }
 }

@@ -13,7 +13,6 @@ object OnInboundTransmitValue {
   @scala.inline
   def apply(data: js.Any, event: String): OnInboundTransmitValue = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnInboundTransmitValue]
   }
 }

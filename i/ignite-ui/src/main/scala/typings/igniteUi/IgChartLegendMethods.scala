@@ -17,7 +17,6 @@ object IgChartLegendMethods {
   @scala.inline
   def apply(destroy: () => Unit, getLegend: () => Unit, id: () => String): IgChartLegendMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getLegend = js.Any.fromFunction0(getLegend), id = js.Any.fromFunction0(id))
-  
     __obj.asInstanceOf[IgChartLegendMethods]
   }
 }

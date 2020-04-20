@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Workflow extends Accessor {
   /**
-    * Shared workflow data.  Can be either a [CreateWorkflowData](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#CreateWorkflowData) or a [UpdateWorkflowData](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#UpdateWorkflowData).
+    * Shared workflow data.  Can be either [CreateWorkflowData](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflowData.html) or [UpdateWorkflowData](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#data)
     */

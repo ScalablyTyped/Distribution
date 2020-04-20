@@ -12,7 +12,6 @@ object BufferOptions {
   @scala.inline
   def apply(plugins: js.Array[Plugin]): BufferOptions = {
     val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BufferOptions]
   }
 }

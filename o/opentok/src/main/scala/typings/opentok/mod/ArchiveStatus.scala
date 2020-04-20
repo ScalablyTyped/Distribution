@@ -17,20 +17,18 @@ trait ArchiveStatus extends js.Object
 
 object ArchiveStatus {
   @scala.inline
-  def available: typings.opentok.opentokStrings.available = this.cast("available")
+  def available: typings.opentok.opentokStrings.available = "available".asInstanceOf[typings.opentok.opentokStrings.available]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def expired: typings.opentok.opentokStrings.expired = "expired".asInstanceOf[typings.opentok.opentokStrings.expired]
   @scala.inline
-  def expired: typings.opentok.opentokStrings.expired = this.cast("expired")
+  def failed: typings.opentok.opentokStrings.failed = "failed".asInstanceOf[typings.opentok.opentokStrings.failed]
   @scala.inline
-  def failed: typings.opentok.opentokStrings.failed = this.cast("failed")
+  def paused: typings.opentok.opentokStrings.paused = "paused".asInstanceOf[typings.opentok.opentokStrings.paused]
   @scala.inline
-  def paused: typings.opentok.opentokStrings.paused = this.cast("paused")
+  def started: typings.opentok.opentokStrings.started = "started".asInstanceOf[typings.opentok.opentokStrings.started]
   @scala.inline
-  def started: typings.opentok.opentokStrings.started = this.cast("started")
+  def stopped: typings.opentok.opentokStrings.stopped = "stopped".asInstanceOf[typings.opentok.opentokStrings.stopped]
   @scala.inline
-  def stopped: typings.opentok.opentokStrings.stopped = this.cast("stopped")
-  @scala.inline
-  def uploaded: typings.opentok.opentokStrings.uploaded = this.cast("uploaded")
+  def uploaded: typings.opentok.opentokStrings.uploaded = "uploaded".asInstanceOf[typings.opentok.opentokStrings.uploaded]
 }
 

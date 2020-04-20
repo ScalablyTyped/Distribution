@@ -21,7 +21,6 @@ object Data {
     emojis: StringDictionary[Emoji]
   ): Data = {
     val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], compressed = compressed.asInstanceOf[js.Any], emojis = emojis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Data]
   }
 }

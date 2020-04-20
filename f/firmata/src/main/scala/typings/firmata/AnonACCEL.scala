@@ -21,7 +21,6 @@ object AnonACCEL {
     STOP: STEPPER_RUN_STATE
   ): AnonACCEL = {
     val __obj = js.Dynamic.literal(ACCEL = ACCEL.asInstanceOf[js.Any], DECEL = DECEL.asInstanceOf[js.Any], RUN = RUN.asInstanceOf[js.Any], STOP = STOP.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonACCEL]
   }
 }

@@ -17,7 +17,6 @@ object ClientMetadata {
   @scala.inline
   def apply(application: AnonName, runtime: AnonOs, sdk: AnonType): ClientMetadata = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], sdk = sdk.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientMetadata]
   }
 }

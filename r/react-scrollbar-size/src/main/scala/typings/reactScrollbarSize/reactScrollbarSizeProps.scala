@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactScrollbarSizeProps {
   @scala.inline
-  def ReactScrollbarSizeProps: ScrollbarSizeProps.type = typings.reactScrollbarSize.mod.ScrollbarSizeProps
+  def ReactScrollbarSizeProps: ScrollbarSizeProps.type = ScrollbarSizeProps
   type ReactScrollbarSizeProps = ScrollbarSizeProps
 }
 

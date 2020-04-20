@@ -14,7 +14,6 @@ object AnonSpecific {
   @scala.inline
   def apply(specific: Float32Array, total: Double): AnonSpecific = {
     val __obj = js.Dynamic.literal(specific = specific.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSpecific]
   }
 }

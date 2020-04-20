@@ -7,6 +7,7 @@ import typings.node.nodeStrings.message
 import typings.node.nodeStrings.online
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
+import typings.node.urlMod.URL_
 import typings.node.vmMod.Context
 import typings.std.ArrayBuffer
 import typings.std.Error
@@ -17,8 +18,15 @@ import scala.scalajs.js.annotation._
 @JSImport("worker_threads", "Worker")
 @js.native
 class Worker protected () extends EventEmitter {
+  /**
+    * @param filename  The path to the Worker’s main script or module.
+    *                  Must be either an absolute path or a relative path (i.e. relative to the current working directory) starting with ./ or ../,
+    *                  or a WHATWG URL object using file: protocol. If options.eval is true, this is a string containing JavaScript code rather than a path.
+    */
   def this(filename: String) = this()
+  def this(filename: URL_) = this()
   def this(filename: String, options: WorkerOptions) = this()
+  def this(filename: URL_, options: WorkerOptions) = this()
   val resourceLimits: js.UndefOr[ResourceLimits] = js.native
   val stderr: Readable = js.native
   val stdin: Writable | Null = js.native

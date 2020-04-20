@@ -19,7 +19,6 @@ object JQueryStatic {
   @scala.inline
   def apply(dynatableSetup: Options => Unit): JQueryStatic = {
     val __obj = js.Dynamic.literal(dynatableSetup = js.Any.fromFunction1(dynatableSetup))
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

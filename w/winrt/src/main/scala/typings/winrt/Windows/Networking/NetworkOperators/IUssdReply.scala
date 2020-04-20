@@ -13,7 +13,6 @@ object IUssdReply {
   @scala.inline
   def apply(message: UssdMessage, resultCode: UssdResultCode): IUssdReply = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUssdReply]
   }
 }

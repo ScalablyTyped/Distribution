@@ -48,7 +48,7 @@ object assets extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - typings.frctlFractal.mod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @js.native
   trait AssetSourceCollection extends EventEmitter {
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[AssetSource]] = js.native
     val label: String = js.native
     val title: String = js.native
@@ -56,16 +56,16 @@ object assets extends js.Object {
     def config(): js.Any = js.native
     def config(config: js.Any): this.type = js.native
     def find(name: String): js.UndefOr[AssetSource] = js.native
-    def get[K /* <: String */, V](path: K): js.UndefOr[
+    def get[K /* <: /* keyof T */ String */, V](path: K): js.UndefOr[
         (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
-    def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
+    def get[K /* <: /* keyof T */ String */, V](path: K, defaultValue: V): js.UndefOr[
         (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def load(): js.Promise[Unit] = js.native
     def remove(name: String): this.type = js.native
-    def set[K /* <: String */](path: K): this.type = js.native
-    def set[K /* <: String */](
+    def set[K /* <: /* keyof T */ String */](path: K): this.type = js.native
+    def set[K /* <: /* keyof T */ String */](
       path: K,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ): this.type = js.native

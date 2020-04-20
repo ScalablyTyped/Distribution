@@ -1,8 +1,8 @@
 package typings.cypress
 
-import typings.cypress.cypressMod.Cypress.BrowserChannel
-import typings.cypress.cypressMod.Cypress.BrowserFamily
-import typings.cypress.cypressMod.Cypress.BrowserName
+import typings.cypress.mod.Cypress.BrowserChannel
+import typings.cypress.mod.Cypress.BrowserFamily
+import typings.cypress.mod.Cypress.BrowserName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

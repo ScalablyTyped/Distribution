@@ -12,7 +12,6 @@ object WrappedSketchDocument {
   @scala.inline
   def apply(sketchObject: SketchDocument | SketchDocumentData): WrappedSketchDocument = {
     val __obj = js.Dynamic.literal(sketchObject = sketchObject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WrappedSketchDocument]
   }
 }

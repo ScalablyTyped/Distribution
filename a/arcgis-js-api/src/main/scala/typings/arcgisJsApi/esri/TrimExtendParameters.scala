@@ -12,7 +12,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait TrimExtendParameters extends Accessor {
+trait TrimExtendParameters
+  extends Accessor
+     with JSONSupport {
   /**
     * A flag used with the `trimExtend` operation.
     *
@@ -43,14 +45,6 @@ trait TrimExtendParameters extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#trimExtendTo)
     */
   var trimExtendTo: Polyline = js.native
-  /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#toJSON)
-    *
-    *
-    */
-  def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("__esri.TrimExtendParameters")

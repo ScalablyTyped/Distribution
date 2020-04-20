@@ -33,7 +33,6 @@ object ViaStop {
   @scala.inline
   def apply(id: String, location: LngLat, name: String, time: Double, wait: Double): ViaStop = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], wait = wait.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViaStop]
   }
 }

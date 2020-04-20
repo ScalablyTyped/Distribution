@@ -14,7 +14,6 @@ object AnonOldSession {
   @scala.inline
   def apply(oldSession: EditSession, session: EditSession): AnonOldSession = {
     val __obj = js.Dynamic.literal(oldSession = oldSession.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOldSession]
   }
 }

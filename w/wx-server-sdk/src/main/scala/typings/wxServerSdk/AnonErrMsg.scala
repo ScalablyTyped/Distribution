@@ -15,7 +15,6 @@ object AnonErrMsg {
   @scala.inline
   def apply(errMsg: String, fileID: String, status: Double, tempFileURL: String): AnonErrMsg = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], fileID = fileID.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tempFileURL = tempFileURL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonErrMsg]
   }
 }

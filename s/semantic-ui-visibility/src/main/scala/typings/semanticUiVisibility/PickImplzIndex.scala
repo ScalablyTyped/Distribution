@@ -13,7 +13,6 @@ object PickImplzIndex {
   @scala.inline
   def apply(zIndex: Double): PickImplzIndex = {
     val __obj = js.Dynamic.literal(zIndex = zIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplzIndex]
   }
 }

@@ -20,7 +20,6 @@ object ReplaceTopicRuleRequest {
   @scala.inline
   def apply(ruleName: RuleName, topicRulePayload: TopicRulePayload): ReplaceTopicRuleRequest = {
     val __obj = js.Dynamic.literal(ruleName = ruleName.asInstanceOf[js.Any], topicRulePayload = topicRulePayload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplaceTopicRuleRequest]
   }
 }

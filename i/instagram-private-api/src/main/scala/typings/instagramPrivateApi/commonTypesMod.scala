@@ -1,8 +1,8 @@
 package typings.instagramPrivateApi
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.caseless.mod.Caseless
 import typings.instagramPrivateApi.instagramPrivateApiStrings.close
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.IncomingHttpHeaders
@@ -113,7 +113,7 @@ object commonTypesMod extends js.Object {
     var timings: js.UndefOr[AnonConnect] = js.native
     @JSName("toJSON")
     var toJSON_Original: js.Function0[ResponseAsJSON] = js.native
-    var trailers: StringDictionary[js.UndefOr[String]] = js.native
+    var trailers: Dict[String] = js.native
     @JSName("unpipe")
     var unpipe_Original: js.Function0[this.type] = js.native
     @JSName("unshift")

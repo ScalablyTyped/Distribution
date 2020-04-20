@@ -34,7 +34,6 @@ object AnonButton {
     titleText: RegisteredStyle[TextStyle]
   ): AnonButton = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttonWrap = buttonWrap.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], imgWrap = imgWrap.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleText = titleText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonButton]
   }
 }

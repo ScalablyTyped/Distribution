@@ -12,7 +12,6 @@ object ICloudMetaData {
   @scala.inline
   def apply(session_id: java.lang.String): ICloudMetaData = {
     val __obj = js.Dynamic.literal(session_id = session_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICloudMetaData]
   }
 }

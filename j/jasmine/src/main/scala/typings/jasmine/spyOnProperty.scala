@@ -14,6 +14,6 @@ object spyOnProperty extends js.Object {
     * @param property The name of the property to replace with a `Spy`.
     * @param accessType The access type (get|set) of the property to `Spy` on.
     */
-  def apply[T](`object`: T, property: String): Spy = js.native
+  def apply[T](`object`: T, property: /* keyof T */ String): Spy = js.native
 }
 

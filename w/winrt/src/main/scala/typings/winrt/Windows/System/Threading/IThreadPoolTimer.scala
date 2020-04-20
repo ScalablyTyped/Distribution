@@ -14,7 +14,6 @@ object IThreadPoolTimer {
   @scala.inline
   def apply(cancel: () => Unit, delay: Double, period: Double): IThreadPoolTimer = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), delay = delay.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IThreadPoolTimer]
   }
 }

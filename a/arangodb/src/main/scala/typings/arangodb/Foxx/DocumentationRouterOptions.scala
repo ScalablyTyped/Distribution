@@ -21,7 +21,6 @@ object DocumentationRouterOptions {
     swaggerRoot: String
   ): DocumentationRouterOptions = {
     val __obj = js.Dynamic.literal(before = js.Any.fromFunction2(before), indexFile = indexFile.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], swaggerRoot = swaggerRoot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocumentationRouterOptions]
   }
 }

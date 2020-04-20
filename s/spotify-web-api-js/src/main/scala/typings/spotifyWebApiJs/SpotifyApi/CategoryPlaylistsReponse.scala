@@ -18,7 +18,6 @@ object CategoryPlaylistsReponse {
   @scala.inline
   def apply(playlists: PagingObject[PlaylistObjectSimplified]): CategoryPlaylistsReponse = {
     val __obj = js.Dynamic.literal(playlists = playlists.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CategoryPlaylistsReponse]
   }
 }

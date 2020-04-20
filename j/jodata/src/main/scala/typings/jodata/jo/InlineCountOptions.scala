@@ -13,7 +13,6 @@ object InlineCountOptions {
   @scala.inline
   def apply(allPages: () => typings.jodata.jo, none: () => typings.jodata.jo): InlineCountOptions = {
     val __obj = js.Dynamic.literal(allPages = js.Any.fromFunction0(allPages), none = js.Any.fromFunction0(none))
-  
     __obj.asInstanceOf[InlineCountOptions]
   }
 }

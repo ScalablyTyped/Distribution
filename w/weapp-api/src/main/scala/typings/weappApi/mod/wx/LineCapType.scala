@@ -13,12 +13,10 @@ trait LineCapType extends js.Object
 
 object LineCapType {
   @scala.inline
-  def butt: typings.weappApi.weappApiStrings.butt = this.cast("butt")
+  def butt: typings.weappApi.weappApiStrings.butt = "butt".asInstanceOf[typings.weappApi.weappApiStrings.butt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def round: typings.weappApi.weappApiStrings.round = "round".asInstanceOf[typings.weappApi.weappApiStrings.round]
   @scala.inline
-  def round: typings.weappApi.weappApiStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.weappApi.weappApiStrings.square = this.cast("square")
+  def square: typings.weappApi.weappApiStrings.square = "square".asInstanceOf[typings.weappApi.weappApiStrings.square]
 }
 

@@ -29,22 +29,22 @@ class Model () extends VDomModel {
   /**
     * A display name for the activity.
     */
-  def activityName(): String = js.native
+  def activityName: String = js.native
   def activityName(`val`: String): js.Any = js.native
   /**
     * The name of the kernel.
     */
-  def kernelName(): String = js.native
+  def kernelName: String = js.native
   def sessionContext(): js.Any = js.native
   def sessionContext(sessionContext: ISessionContext): js.Any = js.native
   /**
     * The current client session associated with the kernel status indicator.
     */
   @JSName("sessionContext")
-  def sessionContext_Union(): ISessionContext | Null = js.native
+  def sessionContext_Union: ISessionContext | Null = js.native
   /**
     * The current status of the kernel.
     */
-  def status(): js.UndefOr[String] = js.native
+  def status: js.UndefOr[String] = js.native
 }
 

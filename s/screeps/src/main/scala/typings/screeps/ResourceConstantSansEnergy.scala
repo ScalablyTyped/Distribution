@@ -94,172 +94,170 @@ trait ResourceConstantSansEnergy extends js.Object
 
 object ResourceConstantSansEnergy {
   @scala.inline
-  def G: typings.screeps.screepsStrings.G = this.cast("G")
+  def G: typings.screeps.screepsStrings.G = "G".asInstanceOf[typings.screeps.screepsStrings.G]
   @scala.inline
-  def GH: typings.screeps.screepsStrings.GH = this.cast("GH")
+  def GH: typings.screeps.screepsStrings.GH = "GH".asInstanceOf[typings.screeps.screepsStrings.GH]
   @scala.inline
-  def GH2O: typings.screeps.screepsStrings.GH2O = this.cast("GH2O")
+  def GH2O: typings.screeps.screepsStrings.GH2O = "GH2O".asInstanceOf[typings.screeps.screepsStrings.GH2O]
   @scala.inline
-  def GHO2: typings.screeps.screepsStrings.GHO2 = this.cast("GHO2")
+  def GHO2: typings.screeps.screepsStrings.GHO2 = "GHO2".asInstanceOf[typings.screeps.screepsStrings.GHO2]
   @scala.inline
-  def GO: typings.screeps.screepsStrings.GO = this.cast("GO")
+  def GO: typings.screeps.screepsStrings.GO = "GO".asInstanceOf[typings.screeps.screepsStrings.GO]
   @scala.inline
-  def H: typings.screeps.screepsStrings.H = this.cast("H")
+  def H: typings.screeps.screepsStrings.H = "H".asInstanceOf[typings.screeps.screepsStrings.H]
   @scala.inline
-  def K: typings.screeps.screepsStrings.K = this.cast("K")
+  def K: typings.screeps.screepsStrings.K = "K".asInstanceOf[typings.screeps.screepsStrings.K]
   @scala.inline
-  def KH: typings.screeps.screepsStrings.KH = this.cast("KH")
+  def KH: typings.screeps.screepsStrings.KH = "KH".asInstanceOf[typings.screeps.screepsStrings.KH]
   @scala.inline
-  def KH2O: typings.screeps.screepsStrings.KH2O = this.cast("KH2O")
+  def KH2O: typings.screeps.screepsStrings.KH2O = "KH2O".asInstanceOf[typings.screeps.screepsStrings.KH2O]
   @scala.inline
-  def KHO2: typings.screeps.screepsStrings.KHO2 = this.cast("KHO2")
+  def KHO2: typings.screeps.screepsStrings.KHO2 = "KHO2".asInstanceOf[typings.screeps.screepsStrings.KHO2]
   @scala.inline
-  def KO: typings.screeps.screepsStrings.KO = this.cast("KO")
+  def KO: typings.screeps.screepsStrings.KO = "KO".asInstanceOf[typings.screeps.screepsStrings.KO]
   @scala.inline
-  def L: typings.screeps.screepsStrings.L = this.cast("L")
+  def L: typings.screeps.screepsStrings.L = "L".asInstanceOf[typings.screeps.screepsStrings.L]
   @scala.inline
-  def LH: typings.screeps.screepsStrings.LH = this.cast("LH")
+  def LH: typings.screeps.screepsStrings.LH = "LH".asInstanceOf[typings.screeps.screepsStrings.LH]
   @scala.inline
-  def LH2O: typings.screeps.screepsStrings.LH2O = this.cast("LH2O")
+  def LH2O: typings.screeps.screepsStrings.LH2O = "LH2O".asInstanceOf[typings.screeps.screepsStrings.LH2O]
   @scala.inline
-  def LHO2: typings.screeps.screepsStrings.LHO2 = this.cast("LHO2")
+  def LHO2: typings.screeps.screepsStrings.LHO2 = "LHO2".asInstanceOf[typings.screeps.screepsStrings.LHO2]
   @scala.inline
-  def LO: typings.screeps.screepsStrings.LO = this.cast("LO")
+  def LO: typings.screeps.screepsStrings.LO = "LO".asInstanceOf[typings.screeps.screepsStrings.LO]
   @scala.inline
-  def O: typings.screeps.screepsStrings.O = this.cast("O")
+  def O: typings.screeps.screepsStrings.O = "O".asInstanceOf[typings.screeps.screepsStrings.O]
   @scala.inline
-  def OH: typings.screeps.screepsStrings.OH = this.cast("OH")
+  def OH: typings.screeps.screepsStrings.OH = "OH".asInstanceOf[typings.screeps.screepsStrings.OH]
   @scala.inline
-  def U: typings.screeps.screepsStrings.U = this.cast("U")
+  def U: typings.screeps.screepsStrings.U = "U".asInstanceOf[typings.screeps.screepsStrings.U]
   @scala.inline
-  def UH: typings.screeps.screepsStrings.UH = this.cast("UH")
+  def UH: typings.screeps.screepsStrings.UH = "UH".asInstanceOf[typings.screeps.screepsStrings.UH]
   @scala.inline
-  def UH2O: typings.screeps.screepsStrings.UH2O = this.cast("UH2O")
+  def UH2O: typings.screeps.screepsStrings.UH2O = "UH2O".asInstanceOf[typings.screeps.screepsStrings.UH2O]
   @scala.inline
-  def UHO2: typings.screeps.screepsStrings.UHO2 = this.cast("UHO2")
+  def UHO2: typings.screeps.screepsStrings.UHO2 = "UHO2".asInstanceOf[typings.screeps.screepsStrings.UHO2]
   @scala.inline
-  def UL: typings.screeps.screepsStrings.UL = this.cast("UL")
+  def UL: typings.screeps.screepsStrings.UL = "UL".asInstanceOf[typings.screeps.screepsStrings.UL]
   @scala.inline
-  def UO: typings.screeps.screepsStrings.UO = this.cast("UO")
+  def UO: typings.screeps.screepsStrings.UO = "UO".asInstanceOf[typings.screeps.screepsStrings.UO]
   @scala.inline
-  def X: typings.screeps.screepsStrings.X = this.cast("X")
+  def X: typings.screeps.screepsStrings.X = "X".asInstanceOf[typings.screeps.screepsStrings.X]
   @scala.inline
-  def XGH2O: typings.screeps.screepsStrings.XGH2O = this.cast("XGH2O")
+  def XGH2O: typings.screeps.screepsStrings.XGH2O = "XGH2O".asInstanceOf[typings.screeps.screepsStrings.XGH2O]
   @scala.inline
-  def XGHO2: typings.screeps.screepsStrings.XGHO2 = this.cast("XGHO2")
+  def XGHO2: typings.screeps.screepsStrings.XGHO2 = "XGHO2".asInstanceOf[typings.screeps.screepsStrings.XGHO2]
   @scala.inline
-  def XKH2O: typings.screeps.screepsStrings.XKH2O = this.cast("XKH2O")
+  def XKH2O: typings.screeps.screepsStrings.XKH2O = "XKH2O".asInstanceOf[typings.screeps.screepsStrings.XKH2O]
   @scala.inline
-  def XKHO2: typings.screeps.screepsStrings.XKHO2 = this.cast("XKHO2")
+  def XKHO2: typings.screeps.screepsStrings.XKHO2 = "XKHO2".asInstanceOf[typings.screeps.screepsStrings.XKHO2]
   @scala.inline
-  def XLH2O: typings.screeps.screepsStrings.XLH2O = this.cast("XLH2O")
+  def XLH2O: typings.screeps.screepsStrings.XLH2O = "XLH2O".asInstanceOf[typings.screeps.screepsStrings.XLH2O]
   @scala.inline
-  def XLHO2: typings.screeps.screepsStrings.XLHO2 = this.cast("XLHO2")
+  def XLHO2: typings.screeps.screepsStrings.XLHO2 = "XLHO2".asInstanceOf[typings.screeps.screepsStrings.XLHO2]
   @scala.inline
-  def XUH2O: typings.screeps.screepsStrings.XUH2O = this.cast("XUH2O")
+  def XUH2O: typings.screeps.screepsStrings.XUH2O = "XUH2O".asInstanceOf[typings.screeps.screepsStrings.XUH2O]
   @scala.inline
-  def XUHO2: typings.screeps.screepsStrings.XUHO2 = this.cast("XUHO2")
+  def XUHO2: typings.screeps.screepsStrings.XUHO2 = "XUHO2".asInstanceOf[typings.screeps.screepsStrings.XUHO2]
   @scala.inline
-  def XZH2O: typings.screeps.screepsStrings.XZH2O = this.cast("XZH2O")
+  def XZH2O: typings.screeps.screepsStrings.XZH2O = "XZH2O".asInstanceOf[typings.screeps.screepsStrings.XZH2O]
   @scala.inline
-  def XZHO2: typings.screeps.screepsStrings.XZHO2 = this.cast("XZHO2")
+  def XZHO2: typings.screeps.screepsStrings.XZHO2 = "XZHO2".asInstanceOf[typings.screeps.screepsStrings.XZHO2]
   @scala.inline
-  def Z: typings.screeps.screepsStrings.Z = this.cast("Z")
+  def Z: typings.screeps.screepsStrings.Z = "Z".asInstanceOf[typings.screeps.screepsStrings.Z]
   @scala.inline
-  def ZH: typings.screeps.screepsStrings.ZH = this.cast("ZH")
+  def ZH: typings.screeps.screepsStrings.ZH = "ZH".asInstanceOf[typings.screeps.screepsStrings.ZH]
   @scala.inline
-  def ZH2O: typings.screeps.screepsStrings.ZH2O = this.cast("ZH2O")
+  def ZH2O: typings.screeps.screepsStrings.ZH2O = "ZH2O".asInstanceOf[typings.screeps.screepsStrings.ZH2O]
   @scala.inline
-  def ZHO2: typings.screeps.screepsStrings.ZHO2 = this.cast("ZHO2")
+  def ZHO2: typings.screeps.screepsStrings.ZHO2 = "ZHO2".asInstanceOf[typings.screeps.screepsStrings.ZHO2]
   @scala.inline
-  def ZK: typings.screeps.screepsStrings.ZK = this.cast("ZK")
+  def ZK: typings.screeps.screepsStrings.ZK = "ZK".asInstanceOf[typings.screeps.screepsStrings.ZK]
   @scala.inline
-  def ZO: typings.screeps.screepsStrings.ZO = this.cast("ZO")
+  def ZO: typings.screeps.screepsStrings.ZO = "ZO".asInstanceOf[typings.screeps.screepsStrings.ZO]
   @scala.inline
-  def alloy: typings.screeps.screepsStrings.alloy = this.cast("alloy")
+  def alloy: typings.screeps.screepsStrings.alloy = "alloy".asInstanceOf[typings.screeps.screepsStrings.alloy]
   @scala.inline
-  def battery: typings.screeps.screepsStrings.battery = this.cast("battery")
+  def battery: typings.screeps.screepsStrings.battery = "battery".asInstanceOf[typings.screeps.screepsStrings.battery]
   @scala.inline
-  def biomass: typings.screeps.screepsStrings.biomass = this.cast("biomass")
+  def biomass: typings.screeps.screepsStrings.biomass = "biomass".asInstanceOf[typings.screeps.screepsStrings.biomass]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cell: typings.screeps.screepsStrings.cell = "cell".asInstanceOf[typings.screeps.screepsStrings.cell]
   @scala.inline
-  def cell: typings.screeps.screepsStrings.cell = this.cast("cell")
+  def circuit: typings.screeps.screepsStrings.circuit = "circuit".asInstanceOf[typings.screeps.screepsStrings.circuit]
   @scala.inline
-  def circuit: typings.screeps.screepsStrings.circuit = this.cast("circuit")
+  def composite: typings.screeps.screepsStrings.composite = "composite".asInstanceOf[typings.screeps.screepsStrings.composite]
   @scala.inline
-  def composite: typings.screeps.screepsStrings.composite = this.cast("composite")
+  def concentrate: typings.screeps.screepsStrings.concentrate = "concentrate".asInstanceOf[typings.screeps.screepsStrings.concentrate]
   @scala.inline
-  def concentrate: typings.screeps.screepsStrings.concentrate = this.cast("concentrate")
+  def condensate: typings.screeps.screepsStrings.condensate = "condensate".asInstanceOf[typings.screeps.screepsStrings.condensate]
   @scala.inline
-  def condensate: typings.screeps.screepsStrings.condensate = this.cast("condensate")
+  def crystal: typings.screeps.screepsStrings.crystal = "crystal".asInstanceOf[typings.screeps.screepsStrings.crystal]
   @scala.inline
-  def crystal: typings.screeps.screepsStrings.crystal = this.cast("crystal")
+  def device: typings.screeps.screepsStrings.device = "device".asInstanceOf[typings.screeps.screepsStrings.device]
   @scala.inline
-  def device: typings.screeps.screepsStrings.device = this.cast("device")
+  def emanation: typings.screeps.screepsStrings.emanation = "emanation".asInstanceOf[typings.screeps.screepsStrings.emanation]
   @scala.inline
-  def emanation: typings.screeps.screepsStrings.emanation = this.cast("emanation")
+  def essence: typings.screeps.screepsStrings.essence = "essence".asInstanceOf[typings.screeps.screepsStrings.essence]
   @scala.inline
-  def essence: typings.screeps.screepsStrings.essence = this.cast("essence")
+  def extract: typings.screeps.screepsStrings.extract = "extract".asInstanceOf[typings.screeps.screepsStrings.extract]
   @scala.inline
-  def extract: typings.screeps.screepsStrings.extract = this.cast("extract")
+  def fixtures: typings.screeps.screepsStrings.fixtures = "fixtures".asInstanceOf[typings.screeps.screepsStrings.fixtures]
   @scala.inline
-  def fixtures: typings.screeps.screepsStrings.fixtures = this.cast("fixtures")
+  def frame: typings.screeps.screepsStrings.frame = "frame".asInstanceOf[typings.screeps.screepsStrings.frame]
   @scala.inline
-  def frame: typings.screeps.screepsStrings.frame = this.cast("frame")
+  def ghodium_melt: typings.screeps.screepsStrings.ghodium_melt = "ghodium_melt".asInstanceOf[typings.screeps.screepsStrings.ghodium_melt]
   @scala.inline
-  def ghodium_melt: typings.screeps.screepsStrings.ghodium_melt = this.cast("ghodium_melt")
+  def hydraulics: typings.screeps.screepsStrings.hydraulics = "hydraulics".asInstanceOf[typings.screeps.screepsStrings.hydraulics]
   @scala.inline
-  def hydraulics: typings.screeps.screepsStrings.hydraulics = this.cast("hydraulics")
+  def keanium_bar: typings.screeps.screepsStrings.keanium_bar = "keanium_bar".asInstanceOf[typings.screeps.screepsStrings.keanium_bar]
   @scala.inline
-  def keanium_bar: typings.screeps.screepsStrings.keanium_bar = this.cast("keanium_bar")
+  def lemergium_bar: typings.screeps.screepsStrings.lemergium_bar = "lemergium_bar".asInstanceOf[typings.screeps.screepsStrings.lemergium_bar]
   @scala.inline
-  def lemergium_bar: typings.screeps.screepsStrings.lemergium_bar = this.cast("lemergium_bar")
+  def liquid: typings.screeps.screepsStrings.liquid = "liquid".asInstanceOf[typings.screeps.screepsStrings.liquid]
   @scala.inline
-  def liquid: typings.screeps.screepsStrings.liquid = this.cast("liquid")
+  def machine: typings.screeps.screepsStrings.machine = "machine".asInstanceOf[typings.screeps.screepsStrings.machine]
   @scala.inline
-  def machine: typings.screeps.screepsStrings.machine = this.cast("machine")
+  def metal: typings.screeps.screepsStrings.metal = "metal".asInstanceOf[typings.screeps.screepsStrings.metal]
   @scala.inline
-  def metal: typings.screeps.screepsStrings.metal = this.cast("metal")
+  def microchip: typings.screeps.screepsStrings.microchip = "microchip".asInstanceOf[typings.screeps.screepsStrings.microchip]
   @scala.inline
-  def microchip: typings.screeps.screepsStrings.microchip = this.cast("microchip")
+  def mist: typings.screeps.screepsStrings.mist = "mist".asInstanceOf[typings.screeps.screepsStrings.mist]
   @scala.inline
-  def mist: typings.screeps.screepsStrings.mist = this.cast("mist")
+  def muscle: typings.screeps.screepsStrings.muscle = "muscle".asInstanceOf[typings.screeps.screepsStrings.muscle]
   @scala.inline
-  def muscle: typings.screeps.screepsStrings.muscle = this.cast("muscle")
+  def ops: typings.screeps.screepsStrings.ops = "ops".asInstanceOf[typings.screeps.screepsStrings.ops]
   @scala.inline
-  def ops: typings.screeps.screepsStrings.ops = this.cast("ops")
+  def organism: typings.screeps.screepsStrings.organism = "organism".asInstanceOf[typings.screeps.screepsStrings.organism]
   @scala.inline
-  def organism: typings.screeps.screepsStrings.organism = this.cast("organism")
+  def organoid: typings.screeps.screepsStrings.organoid = "organoid".asInstanceOf[typings.screeps.screepsStrings.organoid]
   @scala.inline
-  def organoid: typings.screeps.screepsStrings.organoid = this.cast("organoid")
+  def oxidant: typings.screeps.screepsStrings.oxidant = "oxidant".asInstanceOf[typings.screeps.screepsStrings.oxidant]
   @scala.inline
-  def oxidant: typings.screeps.screepsStrings.oxidant = this.cast("oxidant")
+  def phlegm: typings.screeps.screepsStrings.phlegm = "phlegm".asInstanceOf[typings.screeps.screepsStrings.phlegm]
   @scala.inline
-  def phlegm: typings.screeps.screepsStrings.phlegm = this.cast("phlegm")
+  def power: typings.screeps.screepsStrings.power = "power".asInstanceOf[typings.screeps.screepsStrings.power]
   @scala.inline
-  def power: typings.screeps.screepsStrings.power = this.cast("power")
+  def purifier: typings.screeps.screepsStrings.purifier = "purifier".asInstanceOf[typings.screeps.screepsStrings.purifier]
   @scala.inline
-  def purifier: typings.screeps.screepsStrings.purifier = this.cast("purifier")
+  def reductant: typings.screeps.screepsStrings.reductant = "reductant".asInstanceOf[typings.screeps.screepsStrings.reductant]
   @scala.inline
-  def reductant: typings.screeps.screepsStrings.reductant = this.cast("reductant")
+  def silicon: typings.screeps.screepsStrings.silicon = "silicon".asInstanceOf[typings.screeps.screepsStrings.silicon]
   @scala.inline
-  def silicon: typings.screeps.screepsStrings.silicon = this.cast("silicon")
+  def spirit: typings.screeps.screepsStrings.spirit = "spirit".asInstanceOf[typings.screeps.screepsStrings.spirit]
   @scala.inline
-  def spirit: typings.screeps.screepsStrings.spirit = this.cast("spirit")
+  def switch: typings.screeps.screepsStrings.switch = "switch".asInstanceOf[typings.screeps.screepsStrings.switch]
   @scala.inline
-  def switch: typings.screeps.screepsStrings.switch = this.cast("switch")
+  def tissue: typings.screeps.screepsStrings.tissue = "tissue".asInstanceOf[typings.screeps.screepsStrings.tissue]
   @scala.inline
-  def tissue: typings.screeps.screepsStrings.tissue = this.cast("tissue")
+  def transistor: typings.screeps.screepsStrings.transistor = "transistor".asInstanceOf[typings.screeps.screepsStrings.transistor]
   @scala.inline
-  def transistor: typings.screeps.screepsStrings.transistor = this.cast("transistor")
+  def tube: typings.screeps.screepsStrings.tube = "tube".asInstanceOf[typings.screeps.screepsStrings.tube]
   @scala.inline
-  def tube: typings.screeps.screepsStrings.tube = this.cast("tube")
+  def utrium_bar: typings.screeps.screepsStrings.utrium_bar = "utrium_bar".asInstanceOf[typings.screeps.screepsStrings.utrium_bar]
   @scala.inline
-  def utrium_bar: typings.screeps.screepsStrings.utrium_bar = this.cast("utrium_bar")
+  def wire: typings.screeps.screepsStrings.wire = "wire".asInstanceOf[typings.screeps.screepsStrings.wire]
   @scala.inline
-  def wire: typings.screeps.screepsStrings.wire = this.cast("wire")
-  @scala.inline
-  def zynthium_bar: typings.screeps.screepsStrings.zynthium_bar = this.cast("zynthium_bar")
+  def zynthium_bar: typings.screeps.screepsStrings.zynthium_bar = "zynthium_bar".asInstanceOf[typings.screeps.screepsStrings.zynthium_bar]
 }
 

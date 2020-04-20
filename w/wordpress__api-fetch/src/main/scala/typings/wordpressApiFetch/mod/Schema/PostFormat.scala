@@ -20,26 +20,24 @@ trait PostFormat extends js.Object
 
 object PostFormat {
   @scala.inline
-  def aside: typings.wordpressApiFetch.wordpressApiFetchStrings.aside = this.cast("aside")
+  def aside: typings.wordpressApiFetch.wordpressApiFetchStrings.aside = "aside".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.aside]
   @scala.inline
-  def audio: typings.wordpressApiFetch.wordpressApiFetchStrings.audio = this.cast("audio")
+  def audio: typings.wordpressApiFetch.wordpressApiFetchStrings.audio = "audio".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.audio]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chat: typings.wordpressApiFetch.wordpressApiFetchStrings.chat = "chat".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.chat]
   @scala.inline
-  def chat: typings.wordpressApiFetch.wordpressApiFetchStrings.chat = this.cast("chat")
+  def gallery: typings.wordpressApiFetch.wordpressApiFetchStrings.gallery = "gallery".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.gallery]
   @scala.inline
-  def gallery: typings.wordpressApiFetch.wordpressApiFetchStrings.gallery = this.cast("gallery")
+  def image: typings.wordpressApiFetch.wordpressApiFetchStrings.image = "image".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.image]
   @scala.inline
-  def image: typings.wordpressApiFetch.wordpressApiFetchStrings.image = this.cast("image")
+  def link: typings.wordpressApiFetch.wordpressApiFetchStrings.link = "link".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.link]
   @scala.inline
-  def link: typings.wordpressApiFetch.wordpressApiFetchStrings.link = this.cast("link")
+  def quote: typings.wordpressApiFetch.wordpressApiFetchStrings.quote = "quote".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.quote]
   @scala.inline
-  def quote: typings.wordpressApiFetch.wordpressApiFetchStrings.quote = this.cast("quote")
+  def standard: typings.wordpressApiFetch.wordpressApiFetchStrings.standard = "standard".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.standard]
   @scala.inline
-  def standard: typings.wordpressApiFetch.wordpressApiFetchStrings.standard = this.cast("standard")
+  def status: typings.wordpressApiFetch.wordpressApiFetchStrings.status = "status".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.status]
   @scala.inline
-  def status: typings.wordpressApiFetch.wordpressApiFetchStrings.status = this.cast("status")
-  @scala.inline
-  def video: typings.wordpressApiFetch.wordpressApiFetchStrings.video = this.cast("video")
+  def video: typings.wordpressApiFetch.wordpressApiFetchStrings.video = "video".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.video]
 }
 

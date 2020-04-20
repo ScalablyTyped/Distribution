@@ -1,5 +1,14 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-leading`
+import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-left`
+import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-right`
+import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-trailing`
+import typings.arcgisJsApi.arcgisJsApiStrings.`top-leading`
+import typings.arcgisJsApi.arcgisJsApiStrings.`top-left`
+import typings.arcgisJsApi.arcgisJsApiStrings.`top-right`
+import typings.arcgisJsApi.arcgisJsApiStrings.`top-trailing`
+import typings.arcgisJsApi.arcgisJsApiStrings.manual
 import typings.std.HTMLElement
 import typings.std.Object
 import typings.std.PropertyKey
@@ -21,11 +30,13 @@ trait UIAddComponent extends Object {
     */
   var index: js.UndefOr[Double] = js.undefined
   /**
-    * The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
+    * The position in the view at which to add the component. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. For the other possible values, "top", "bottom", "left", and "right" are consistent placements. The "leading" and "trailing" values depend on whether the browser is using right-to-left (RTL) or left-to-right (LTR). For LTR, "leading" is left and "trailing" is right. For RTL, "leading" is right and "trailing" is left.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
     */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[
+    `bottom-leading` | `bottom-left` | `bottom-right` | `bottom-trailing` | `top-leading` | `top-left` | `top-right` | `top-trailing` | manual
+  ] = js.undefined
 }
 
 object UIAddComponent {
@@ -36,7 +47,7 @@ object UIAddComponent {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     index: Int | Double = null,
-    position: String = null
+    position: `bottom-leading` | `bottom-left` | `bottom-right` | `bottom-trailing` | `top-leading` | `top-left` | `top-right` | `top-trailing` | manual = null
   ): UIAddComponent = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])

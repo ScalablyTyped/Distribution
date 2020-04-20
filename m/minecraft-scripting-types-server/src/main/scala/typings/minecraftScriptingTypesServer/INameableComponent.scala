@@ -43,7 +43,6 @@ object INameableComponent {
     name_actions: js.Array[AnonNamefilter]
   ): INameableComponent = {
     val __obj = js.Dynamic.literal(allowNameTagRenaming = allowNameTagRenaming.asInstanceOf[js.Any], alwaysShow = alwaysShow.asInstanceOf[js.Any], default_trigger = default_trigger.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], name_actions = name_actions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INameableComponent]
   }
 }

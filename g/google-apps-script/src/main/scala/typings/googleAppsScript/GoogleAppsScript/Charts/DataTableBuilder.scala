@@ -36,7 +36,6 @@ object DataTableBuilder {
     setValue: (Integer, Integer, js.Any) => DataTableBuilder
   ): DataTableBuilder = {
     val __obj = js.Dynamic.literal(addColumn = js.Any.fromFunction2(addColumn), addRow = js.Any.fromFunction1(addRow), build = js.Any.fromFunction0(build), setValue = js.Any.fromFunction3(setValue))
-  
     __obj.asInstanceOf[DataTableBuilder]
   }
 }

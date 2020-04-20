@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -32,6 +33,12 @@ trait heatmapStatisticsHeatmapStatisticsParams extends Object {
     */
   var layer: FeatureLayer | CSVLayer | GeoJSONLayer
   /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  /**
     * A [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance used to calculate pixel intensity values based on the features in the current view.
     *
     * [Read more...](global.html)
@@ -49,12 +56,14 @@ object heatmapStatisticsHeatmapStatisticsParams {
     view: MapView,
     blurRadius: Int | Double = null,
     features: js.Array[Graphic] = null,
-    field: String = null
+    field: String = null,
+    signal: AbortSignal = null
   ): heatmapStatisticsHeatmapStatisticsParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[heatmapStatisticsHeatmapStatisticsParams]
   }
 }

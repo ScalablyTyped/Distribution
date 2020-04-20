@@ -17,7 +17,6 @@ object AbstractScene {
   @scala.inline
   def apply(proceduralTextures: js.Array[ProceduralTexture]): AbstractScene = {
     val __obj = js.Dynamic.literal(proceduralTextures = proceduralTextures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbstractScene]
   }
 }

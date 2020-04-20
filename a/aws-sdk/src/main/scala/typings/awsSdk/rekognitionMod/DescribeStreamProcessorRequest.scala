@@ -16,7 +16,6 @@ object DescribeStreamProcessorRequest {
   @scala.inline
   def apply(Name: StreamProcessorName): DescribeStreamProcessorRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStreamProcessorRequest]
   }
 }

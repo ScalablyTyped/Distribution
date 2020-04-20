@@ -12,7 +12,6 @@ object Middleware {
   @scala.inline
   def apply(applyMiddleware: (OperationOptions, js.Function) => Unit): Middleware = {
     val __obj = js.Dynamic.literal(applyMiddleware = js.Any.fromFunction2(applyMiddleware))
-  
     __obj.asInstanceOf[Middleware]
   }
 }

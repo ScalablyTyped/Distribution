@@ -15,16 +15,14 @@ trait DefenderMonitorFileActivity extends js.Object
 
 object DefenderMonitorFileActivity {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disable: typings.microsoftGraph.microsoftGraphStrings.disable = "disable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disable]
   @scala.inline
-  def disable: typings.microsoftGraph.microsoftGraphStrings.disable = this.cast("disable")
+  def monitorAllFiles: typings.microsoftGraph.microsoftGraphStrings.monitorAllFiles = "monitorAllFiles".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorAllFiles]
   @scala.inline
-  def monitorAllFiles: typings.microsoftGraph.microsoftGraphStrings.monitorAllFiles = this.cast("monitorAllFiles")
+  def monitorIncomingFilesOnly: typings.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly = "monitorIncomingFilesOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly]
   @scala.inline
-  def monitorIncomingFilesOnly: typings.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly = this.cast("monitorIncomingFilesOnly")
+  def monitorOutgoingFilesOnly: typings.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly = "monitorOutgoingFilesOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly]
   @scala.inline
-  def monitorOutgoingFilesOnly: typings.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly = this.cast("monitorOutgoingFilesOnly")
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }
 

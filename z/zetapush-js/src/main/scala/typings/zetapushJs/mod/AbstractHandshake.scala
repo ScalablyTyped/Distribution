@@ -22,7 +22,6 @@ object AbstractHandshake {
     sandboxId: String
   ): AbstractHandshake = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], authVersion = authVersion.asInstanceOf[js.Any], deploymentId = deploymentId.asInstanceOf[js.Any], getHandshakeFields = js.Any.fromFunction1(getHandshakeFields), sandboxId = sandboxId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbstractHandshake]
   }
 }

@@ -12,7 +12,6 @@ object Keyframes_ {
   @scala.inline
   def apply(getName: () => String): Keyframes_ = {
     val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName))
-  
     __obj.asInstanceOf[Keyframes_]
   }
 }

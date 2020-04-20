@@ -20,7 +20,6 @@ object CreateStateMachineOutput {
   @scala.inline
   def apply(creationDate: Timestamp, stateMachineArn: Arn): CreateStateMachineOutput = {
     val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], stateMachineArn = stateMachineArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateStateMachineOutput]
   }
 }

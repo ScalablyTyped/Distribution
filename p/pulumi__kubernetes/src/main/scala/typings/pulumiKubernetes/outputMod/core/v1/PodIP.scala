@@ -19,7 +19,6 @@ object PodIP {
   @scala.inline
   def apply(ip: String): PodIP = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PodIP]
   }
 }

@@ -19,7 +19,6 @@ object NamespaceLocalObject {
   @scala.inline
   def apply(local: String, space: String): NamespaceLocalObject = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NamespaceLocalObject]
   }
 }

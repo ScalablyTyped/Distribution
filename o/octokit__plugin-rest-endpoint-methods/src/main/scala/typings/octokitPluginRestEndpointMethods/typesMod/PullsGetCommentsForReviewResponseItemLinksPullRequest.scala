@@ -12,7 +12,6 @@ object PullsGetCommentsForReviewResponseItemLinksPullRequest {
   @scala.inline
   def apply(href: String): PullsGetCommentsForReviewResponseItemLinksPullRequest = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsGetCommentsForReviewResponseItemLinksPullRequest]
   }
 }

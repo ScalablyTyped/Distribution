@@ -14,7 +14,6 @@ object SocialColor {
   @scala.inline
   def apply(facebook: String, facebookActive: String, facebookHover: String): SocialColor = {
     val __obj = js.Dynamic.literal(facebook = facebook.asInstanceOf[js.Any], facebookActive = facebookActive.asInstanceOf[js.Any], facebookHover = facebookHover.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SocialColor]
   }
 }

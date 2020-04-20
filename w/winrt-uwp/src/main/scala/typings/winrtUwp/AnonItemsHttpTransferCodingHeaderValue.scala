@@ -14,7 +14,6 @@ object AnonItemsHttpTransferCodingHeaderValue {
   @scala.inline
   def apply(items: HttpTransferCodingHeaderValue, returnValue: Double): AnonItemsHttpTransferCodingHeaderValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsHttpTransferCodingHeaderValue]
   }
 }

@@ -69,7 +69,6 @@ object TwitchExtClientQueryParams {
     state: testing | hosted_test | approved | released | ready_for_review | in_review | pending_action | uploading
   ): TwitchExtClientQueryParams = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], popout = popout.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TwitchExtClientQueryParams]
   }
 }

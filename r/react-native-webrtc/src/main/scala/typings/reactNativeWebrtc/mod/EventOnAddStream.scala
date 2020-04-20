@@ -12,7 +12,6 @@ object EventOnAddStream {
   @scala.inline
   def apply(stream: MediaStream): EventOnAddStream = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventOnAddStream]
   }
 }

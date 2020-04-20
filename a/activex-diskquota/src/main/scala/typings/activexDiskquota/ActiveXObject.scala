@@ -22,7 +22,6 @@ object ActiveXObject {
     on: (DiskQuotaControl, OnUserNameChanged, js.Array[pUser], js.ThisFunction1[/* this */ DiskQuotaControl, /* parameter */ AnonPUser, Unit]) => Unit
   ): ActiveXObject = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on))
-  
     __obj.asInstanceOf[ActiveXObject]
   }
 }

@@ -14,7 +14,6 @@ object Encryption {
   @scala.inline
   def apply(algorithm: String, ivLength: Double, key: String): Encryption = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], ivLength = ivLength.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Encryption]
   }
 }

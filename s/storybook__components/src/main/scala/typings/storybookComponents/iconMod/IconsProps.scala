@@ -14,7 +14,6 @@ object IconsProps {
   @scala.inline
   def apply(icon: IconKey): IconsProps = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IconsProps]
   }
 }

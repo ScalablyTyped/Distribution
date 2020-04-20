@@ -16,7 +16,6 @@ object GetTemplateRequest {
   @scala.inline
   def apply(TemplateName: TemplateName): GetTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTemplateRequest]
   }
 }

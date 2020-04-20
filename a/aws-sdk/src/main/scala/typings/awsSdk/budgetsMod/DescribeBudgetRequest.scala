@@ -20,7 +20,6 @@ object DescribeBudgetRequest {
   @scala.inline
   def apply(AccountId: AccountId, BudgetName: BudgetName): DescribeBudgetRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeBudgetRequest]
   }
 }

@@ -32,7 +32,7 @@ trait WaterlinePromise[T] extends js.Object {
   var caught_Original: FnCall[T] = js.native
   @JSName("lastly")
   var lastly_Original: js.Function1[/* handler */ js.Function0[Resolvable[_]], Bluebird[T]] = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: Object = js.native
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
@@ -71,7 +71,7 @@ trait WaterlinePromise[T] extends js.Object {
     * });
     * </code>
     */
-  def call[U /* <: String */, Q](propertyName: U, args: js.Any*): Bluebird[
+  def call[U /* <: /* keyof Q */ String */, Q](propertyName: U, args: js.Any*): Bluebird[
     ReturnType[
       /* import warning: importer.ImportType#apply Failed type conversion: Q[U] */ js.Any
     ]
@@ -1153,7 +1153,7 @@ trait WaterlinePromise[T] extends js.Object {
     * });
     * </code>
     */
-  def get[U /* <: String */](key: U): Bluebird[
+  def get[U /* <: /* keyof T */ String */](key: U): Bluebird[
     /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any
   ] = js.native
   /**

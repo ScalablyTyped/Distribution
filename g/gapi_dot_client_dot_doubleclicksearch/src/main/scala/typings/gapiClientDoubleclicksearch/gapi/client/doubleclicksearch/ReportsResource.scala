@@ -28,7 +28,6 @@ object ReportsResource {
     request: AnonAlt => Request_[Report]
   ): ReportsResource = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), get = js.Any.fromFunction1(get), getFile = js.Any.fromFunction1(getFile), request = js.Any.fromFunction1(request))
-  
     __obj.asInstanceOf[ReportsResource]
   }
 }

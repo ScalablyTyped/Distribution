@@ -16,7 +16,6 @@ object DeletePublicAccessBlockRequest {
   @scala.inline
   def apply(Bucket: BucketName): DeletePublicAccessBlockRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePublicAccessBlockRequest]
   }
 }

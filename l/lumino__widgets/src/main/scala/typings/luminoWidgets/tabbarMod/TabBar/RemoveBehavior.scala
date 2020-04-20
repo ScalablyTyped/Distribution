@@ -17,14 +17,12 @@ trait RemoveBehavior extends js.Object
 
 object RemoveBehavior {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.luminoWidgets.luminoWidgetsStrings.none = "none".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.none]
   @scala.inline
-  def none: typings.luminoWidgets.luminoWidgetsStrings.none = this.cast("none")
+  def `select-previous-tab`: typings.luminoWidgets.luminoWidgetsStrings.`select-previous-tab` = "select-previous-tab".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-previous-tab`]
   @scala.inline
-  def `select-previous-tab`: typings.luminoWidgets.luminoWidgetsStrings.`select-previous-tab` = this.cast("select-previous-tab")
+  def `select-tab-after`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-after` = "select-tab-after".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab-after`]
   @scala.inline
-  def `select-tab-after`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-after` = this.cast("select-tab-after")
-  @scala.inline
-  def `select-tab-before`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-before` = this.cast("select-tab-before")
+  def `select-tab-before`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-before` = "select-tab-before".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab-before`]
 }
 

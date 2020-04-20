@@ -16,12 +16,10 @@ trait MsoFileFindOptions extends js.Object
 
 object MsoFileFindOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoOptionsAdd: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoOptionsAdd: `2` = this.cast(2)
+  def msoOptionsNew: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoOptionsNew: `1` = this.cast(1)
-  @scala.inline
-  def msoOptionsWithin: `3` = this.cast(3)
+  def msoOptionsWithin: `3` = 3.asInstanceOf[`3`]
 }
 

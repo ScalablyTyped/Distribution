@@ -16,7 +16,6 @@ object AnonCrypto {
   @scala.inline
   def apply(crypto: Price[CryptoCurrency], local: Price[FiatCurrency]): AnonCrypto = {
     val __obj = js.Dynamic.literal(crypto = crypto.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCrypto]
   }
 }

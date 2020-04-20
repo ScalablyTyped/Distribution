@@ -18,7 +18,6 @@ object BindingInSyntax {
     inTransientScope: () => BindingWhenOnSyntax[T]
   ): BindingInSyntax[T] = {
     val __obj = js.Dynamic.literal(inRequestScope = js.Any.fromFunction0(inRequestScope), inSingletonScope = js.Any.fromFunction0(inSingletonScope), inTransientScope = js.Any.fromFunction0(inTransientScope))
-  
     __obj.asInstanceOf[BindingInSyntax[T]]
   }
 }

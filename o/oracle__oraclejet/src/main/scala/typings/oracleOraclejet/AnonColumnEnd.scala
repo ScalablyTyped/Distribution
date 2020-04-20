@@ -20,7 +20,6 @@ object AnonColumnEnd {
     rowEnd: AnonLabelRenderer[K, D]
   ): AnonColumnEnd[K, D] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnEnd = columnEnd.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowEnd = rowEnd.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColumnEnd[K, D]]
   }
 }

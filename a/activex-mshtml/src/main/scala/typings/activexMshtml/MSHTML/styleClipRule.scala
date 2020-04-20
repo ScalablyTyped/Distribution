@@ -18,14 +18,12 @@ trait styleClipRule extends js.Object
 
 object styleClipRule {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleClipRuleEvenOdd: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleClipRuleEvenOdd: `2` = this.cast(2)
+  def styleClipRuleNonZero: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleClipRuleNonZero: `1` = this.cast(1)
+  def styleClipRuleNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleClipRuleNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleClipRule_Max: `2147483647` = this.cast(2147483647)
+  def styleClipRule_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

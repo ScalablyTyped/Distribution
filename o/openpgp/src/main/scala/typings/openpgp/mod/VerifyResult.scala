@@ -18,7 +18,6 @@ object VerifyResult {
     signatures: js.Array[AnonValid]
   ): VerifyResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyResult]
   }
 }

@@ -1,5 +1,6 @@
 package typings.mobx.internalMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.mobx.modifiersMod.IEnhancer
 import typings.mobx.observableMod.CreateObservableOptions
 import typings.mobx.observablearrayMod.IObservableArray
@@ -47,13 +48,13 @@ object observable extends js.Object {
     value: T,
     decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? std.Function}
-    */ typings.mobx.mobxStrings.observable with js.Any
+    */ typings.mobx.mobxStrings.observable with TopLevel[js.Any]
   ): T with IObservableObject = js.native
   def apply[T /* <: js.Object */](
     value: T,
     decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? std.Function}
-    */ typings.mobx.mobxStrings.observable with js.Any,
+    */ typings.mobx.mobxStrings.observable with TopLevel[js.Any],
     options: CreateObservableOptions
   ): T with IObservableObject = js.native
   def apply[T](value: js.Array[T]): IObservableArray[T] = js.native
@@ -82,13 +83,13 @@ object observable extends js.Object {
     props: T,
     decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? std.Function}
-    */ typings.mobx.mobxStrings.observable with js.Any
+    */ typings.mobx.mobxStrings.observable with TopLevel[js.Any]
   ): T with IObservableObject = js.native
   def `object`[T](
     props: T,
     decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? std.Function}
-    */ typings.mobx.mobxStrings.observable with js.Any,
+    */ typings.mobx.mobxStrings.observable with TopLevel[js.Any],
     options: CreateObservableOptions
   ): T with IObservableObject = js.native
   /**

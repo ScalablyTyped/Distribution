@@ -13,7 +13,6 @@ object X64Static {
   @scala.inline
   def apply(Word: Word, WordArray: WordArray): X64Static = {
     val __obj = js.Dynamic.literal(Word = Word.asInstanceOf[js.Any], WordArray = WordArray.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[X64Static]
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-helmet-async" : "1.0.4"
+      "react-helmet-async" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "react-helmet-async" : "1.0.4"
+      "react-helmet-async" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

@@ -17,7 +17,6 @@ object InstalledMethods {
   @scala.inline
   def apply(methods: js.Array[FakeMethod], uninstall: () => Unit): InstalledMethods = {
     val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any], uninstall = js.Any.fromFunction0(uninstall))
-  
     __obj.asInstanceOf[InstalledMethods]
   }
 }

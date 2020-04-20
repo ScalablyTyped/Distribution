@@ -14,7 +14,6 @@ object Present {
   @scala.inline
   def apply[T](kind: present, value: T): Present[T] = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Present[T]]
   }
 }

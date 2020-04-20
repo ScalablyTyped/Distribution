@@ -20,7 +20,6 @@ object UpdateOpenIDConnectProviderThumbprintRequest {
   @scala.inline
   def apply(OpenIDConnectProviderArn: arnType, ThumbprintList: thumbprintListType): UpdateOpenIDConnectProviderThumbprintRequest = {
     val __obj = js.Dynamic.literal(OpenIDConnectProviderArn = OpenIDConnectProviderArn.asInstanceOf[js.Any], ThumbprintList = ThumbprintList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateOpenIDConnectProviderThumbprintRequest]
   }
 }

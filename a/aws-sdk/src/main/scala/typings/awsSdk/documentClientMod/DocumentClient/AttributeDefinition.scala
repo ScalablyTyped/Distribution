@@ -20,7 +20,6 @@ object AttributeDefinition {
   @scala.inline
   def apply(AttributeName: KeySchemaAttributeName, AttributeType: ScalarAttributeType): AttributeDefinition = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttributeDefinition]
   }
 }

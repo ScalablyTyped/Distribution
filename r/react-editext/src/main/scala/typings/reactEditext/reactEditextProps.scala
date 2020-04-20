@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactEditextProps {
   @scala.inline
-  def ReactEditextProps: EdiTextProps.type = typings.reactEditext.mod.EdiTextProps
+  def ReactEditextProps: EdiTextProps.type = EdiTextProps
   type ReactEditextProps = EdiTextProps
 }
 

@@ -12,7 +12,6 @@ object AnonIncludePadding {
   @scala.inline
   def apply(includePadding: Boolean): AnonIncludePadding = {
     val __obj = js.Dynamic.literal(includePadding = includePadding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIncludePadding]
   }
 }

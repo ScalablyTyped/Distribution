@@ -17,7 +17,6 @@ object RepoStatusChangedEvent {
   @scala.inline
   def apply(path: String, pathStatus: Double): RepoStatusChangedEvent = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], pathStatus = pathStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RepoStatusChangedEvent]
   }
 }

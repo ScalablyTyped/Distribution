@@ -26,7 +26,6 @@ object NavItemView {
     setCollapsed: Boolean => Unit
   ): NavItemView = {
     val __obj = js.Dynamic.literal(addNavItem = js.Any.fromFunction1(addNavItem), destroyed = destroyed.asInstanceOf[js.Any], isCollapsed = js.Any.fromFunction0(isCollapsed), on = js.Any.fromFunction2(on), remove = js.Any.fromFunction0(remove), setCollapsed = js.Any.fromFunction1(setCollapsed))
-  
     __obj.asInstanceOf[NavItemView]
   }
 }

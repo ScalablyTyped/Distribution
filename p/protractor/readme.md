@@ -1,7 +1,7 @@
 
 # Scala.js typings for protractor
 
-Typings are for version 5.4.3
+Typings are for version 5.4.4
 
 ## Library description:
 Webdriver E2E test wrapper for Angular.

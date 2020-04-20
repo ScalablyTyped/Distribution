@@ -56,7 +56,6 @@ object store {
     util: js.Object
   ): store = {
     val __obj = js.Dynamic.literal(Cache = js.Any.fromFunction3(Cache), DataStore = js.Any.fromFunction0(DataStore), JsonRest = js.Any.fromFunction0(JsonRest), Memory = js.Any.fromFunction0(Memory), Observable = js.Any.fromFunction1(Observable), util = util.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[store]
   }
 }

@@ -15,7 +15,6 @@ object IValueExpr {
   @scala.inline
   def apply(qv: String): IValueExpr = {
     val __obj = js.Dynamic.literal(qv = qv.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IValueExpr]
   }
 }

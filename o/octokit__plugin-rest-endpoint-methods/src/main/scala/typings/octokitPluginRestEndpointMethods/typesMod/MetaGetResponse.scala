@@ -28,7 +28,6 @@ object MetaGetResponse {
     web: js.Array[String]
   ): MetaGetResponse = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], importer = importer.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], ssh_key_fingerprints = ssh_key_fingerprints.asInstanceOf[js.Any], verifiable_password_authentication = verifiable_password_authentication.asInstanceOf[js.Any], web = web.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetaGetResponse]
   }
 }

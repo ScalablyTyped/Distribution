@@ -28,7 +28,6 @@ object Transport {
   @scala.inline
   def apply(protocol: String, send: String => js.Promise[Unit]): Transport = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[Transport]
   }
 }

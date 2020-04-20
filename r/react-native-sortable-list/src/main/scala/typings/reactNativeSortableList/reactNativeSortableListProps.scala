@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeSortableListProps {
   @scala.inline
-  def ReactNativeSortableListProps: SortableListProps.type = typings.reactNativeSortableList.mod.SortableListProps
+  def ReactNativeSortableListProps: SortableListProps.type = SortableListProps
   type ReactNativeSortableListProps[T, K] = SortableListProps[T, K]
 }
 

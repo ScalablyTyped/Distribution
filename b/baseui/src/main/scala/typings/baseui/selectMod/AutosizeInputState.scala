@@ -12,7 +12,6 @@ object AutosizeInputState {
   @scala.inline
   def apply(inputWidth: Double): AutosizeInputState = {
     val __obj = js.Dynamic.literal(inputWidth = inputWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AutosizeInputState]
   }
 }

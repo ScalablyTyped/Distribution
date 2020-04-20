@@ -45,7 +45,6 @@ object opacityVisualVariableResult {
     visualVariable: OpacityVariable
   ): opacityVisualVariableResult = {
     val __obj = js.Dynamic.literal(authoringInfo = authoringInfo.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], defaultValuesUsed = defaultValuesUsed.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statistics = statistics.asInstanceOf[js.Any], visualVariable = visualVariable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[opacityVisualVariableResult]
   }
 }

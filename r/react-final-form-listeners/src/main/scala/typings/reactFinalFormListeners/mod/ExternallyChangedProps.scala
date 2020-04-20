@@ -14,7 +14,6 @@ object ExternallyChangedProps {
   @scala.inline
   def apply(children: Boolean => ReactNode, name: String): ExternallyChangedProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExternallyChangedProps]
   }
 }

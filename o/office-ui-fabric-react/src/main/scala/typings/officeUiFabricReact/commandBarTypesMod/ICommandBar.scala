@@ -19,7 +19,6 @@ object ICommandBar {
   @scala.inline
   def apply(focus: () => Unit, remeasure: () => Unit): ICommandBar = {
     val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus), remeasure = js.Any.fromFunction0(remeasure))
-  
     __obj.asInstanceOf[ICommandBar]
   }
 }

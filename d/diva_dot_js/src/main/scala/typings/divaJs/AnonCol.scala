@@ -18,7 +18,6 @@ object AnonCol {
   @scala.inline
   def apply(col: Double, dimensions: Dimensions, offset: Offset, row: Double, url: String): AnonCol = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCol]
   }
 }

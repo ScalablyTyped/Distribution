@@ -159,15 +159,15 @@ object semanticUiFormStrings {
   sealed trait verbose extends js.Object
   
   @scala.inline
-  def `add errors`: `add errors` = "add errors".asInstanceOf[`add errors`]
+  def `add errors`: `add errors` = ("add errors").asInstanceOf[`add errors`]
   @scala.inline
-  def `add field`: `add field` = "add field".asInstanceOf[`add field`]
+  def `add field`: `add field` = ("add field").asInstanceOf[`add field`]
   @scala.inline
-  def `add fields`: `add fields` = "add fields".asInstanceOf[`add fields`]
+  def `add fields`: `add fields` = ("add fields").asInstanceOf[`add fields`]
   @scala.inline
-  def `add prompt`: `add prompt` = "add prompt".asInstanceOf[`add prompt`]
+  def `add prompt`: `add prompt` = ("add prompt").asInstanceOf[`add prompt`]
   @scala.inline
-  def `add rule`: `add rule` = "add rule".asInstanceOf[`add rule`]
+  def `add rule`: `add rule` = ("add rule").asInstanceOf[`add rule`]
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline
@@ -189,21 +189,21 @@ object semanticUiFormStrings {
   @scala.inline
   def fields: fields = "fields".asInstanceOf[fields]
   @scala.inline
-  def `get change event`: `get change event` = "get change event".asInstanceOf[`get change event`]
+  def `get change event`: `get change event` = ("get change event").asInstanceOf[`get change event`]
   @scala.inline
-  def `get field`: `get field` = "get field".asInstanceOf[`get field`]
+  def `get field`: `get field` = ("get field").asInstanceOf[`get field`]
   @scala.inline
-  def `get validation`: `get validation` = "get validation".asInstanceOf[`get validation`]
+  def `get validation`: `get validation` = ("get validation").asInstanceOf[`get validation`]
   @scala.inline
-  def `get value`: `get value` = "get value".asInstanceOf[`get value`]
+  def `get value`: `get value` = ("get value").asInstanceOf[`get value`]
   @scala.inline
-  def `get values`: `get values` = "get values".asInstanceOf[`get values`]
+  def `get values`: `get values` = ("get values").asInstanceOf[`get values`]
   @scala.inline
-  def `has field`: `has field` = "has field".asInstanceOf[`has field`]
+  def `has field`: `has field` = ("has field").asInstanceOf[`has field`]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
-  def `is valid`: `is valid` = "is valid".asInstanceOf[`is valid`]
+  def `is valid`: `is valid` = ("is valid").asInstanceOf[`is valid`]
   @scala.inline
   def keyboardShortcuts: keyboardShortcuts = "keyboardShortcuts".asInstanceOf[keyboardShortcuts]
   @scala.inline
@@ -227,13 +227,13 @@ object semanticUiFormStrings {
   @scala.inline
   def prompt: prompt = "prompt".asInstanceOf[prompt]
   @scala.inline
-  def `remove field`: `remove field` = "remove field".asInstanceOf[`remove field`]
+  def `remove field`: `remove field` = ("remove field").asInstanceOf[`remove field`]
   @scala.inline
-  def `remove fields`: `remove fields` = "remove fields".asInstanceOf[`remove fields`]
+  def `remove fields`: `remove fields` = ("remove fields").asInstanceOf[`remove fields`]
   @scala.inline
-  def `remove rule`: `remove rule` = "remove rule".asInstanceOf[`remove rule`]
+  def `remove rule`: `remove rule` = ("remove rule").asInstanceOf[`remove rule`]
   @scala.inline
-  def `remove rules`: `remove rules` = "remove rules".asInstanceOf[`remove rules`]
+  def `remove rules`: `remove rules` = ("remove rules").asInstanceOf[`remove rules`]
   @scala.inline
   def revalidate: revalidate = "revalidate".asInstanceOf[revalidate]
   @scala.inline
@@ -241,9 +241,9 @@ object semanticUiFormStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set value`: `set value` = "set value".asInstanceOf[`set value`]
+  def `set value`: `set value` = ("set value").asInstanceOf[`set value`]
   @scala.inline
-  def `set values`: `set values` = "set values".asInstanceOf[`set values`]
+  def `set values`: `set values` = ("set values").asInstanceOf[`set values`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline
@@ -257,7 +257,7 @@ object semanticUiFormStrings {
   @scala.inline
   def transition: transition = "transition".asInstanceOf[transition]
   @scala.inline
-  def `validate form`: `validate form` = "validate form".asInstanceOf[`validate form`]
+  def `validate form`: `validate form` = ("validate form").asInstanceOf[`validate form`]
   @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

@@ -27,22 +27,20 @@ trait _SCHEMADERIVATIONMETHOD extends js.Object
 
 object _SCHEMADERIVATIONMETHOD {
   @scala.inline
-  def SCHEMADERIVATIONMETHOD_ALL: `255` = this.cast(255)
+  def SCHEMADERIVATIONMETHOD_ALL: `255` = 255.asInstanceOf[`255`]
   @scala.inline
-  def SCHEMADERIVATIONMETHOD_EMPTY: `0` = this.cast(0)
+  def SCHEMADERIVATIONMETHOD_EMPTY: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SCHEMADERIVATIONMETHOD_EXTENSION: `2` = this.cast(2)
+  def SCHEMADERIVATIONMETHOD_EXTENSION: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SCHEMADERIVATIONMETHOD_LIST: `8` = this.cast(8)
+  def SCHEMADERIVATIONMETHOD_LIST: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def SCHEMADERIVATIONMETHOD_NONE: `256` = this.cast(256)
+  def SCHEMADERIVATIONMETHOD_NONE: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def SCHEMADERIVATIONMETHOD_RESTRICTION: `4` = this.cast(4)
+  def SCHEMADERIVATIONMETHOD_RESTRICTION: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def SCHEMADERIVATIONMETHOD_SUBSTITUTION: `1` = this.cast(1)
+  def SCHEMADERIVATIONMETHOD_SUBSTITUTION: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SCHEMADERIVATIONMETHOD_UNION: `16` = this.cast(16)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SCHEMADERIVATIONMETHOD_UNION: `16` = 16.asInstanceOf[`16`]
 }
 

@@ -13,7 +13,7 @@ class AilmentRegistry () extends IAilmentRegistry {
   /* CompleteClass */
   override var ailments: js.Array[IAilment] = js.native
   @JSName("ailments")
-  def ailments_MAilmentRegistry(): js.Array[IAilment] = js.native
+  def ailments_MAilmentRegistry: js.Array[IAilment] = js.native
   /* CompleteClass */
   override def get(id: String): js.UndefOr[IAilment] = js.native
   /* CompleteClass */

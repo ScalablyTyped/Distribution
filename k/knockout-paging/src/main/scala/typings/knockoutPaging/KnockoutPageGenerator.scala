@@ -12,7 +12,6 @@ object KnockoutPageGenerator {
   @scala.inline
   def apply(generate: KnockoutPagedObservableArray[js.Any] => js.Array[Double]): KnockoutPageGenerator = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate))
-  
     __obj.asInstanceOf[KnockoutPageGenerator]
   }
 }

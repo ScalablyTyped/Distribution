@@ -14,7 +14,6 @@ object AnonClasses {
   @scala.inline
   def apply(classes: js.Array[String], objects: IStyleBaseArray): AnonClasses = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClasses]
   }
 }

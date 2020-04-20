@@ -15,7 +15,6 @@ object FirstNameOptions {
   @scala.inline
   def apply(gender: male | female, nationality: FirstNameNationalities): FirstNameOptions = {
     val __obj = js.Dynamic.literal(gender = gender.asInstanceOf[js.Any], nationality = nationality.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirstNameOptions]
   }
 }

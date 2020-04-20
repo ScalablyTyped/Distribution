@@ -34,7 +34,6 @@ object ListenerTls {
   @scala.inline
   def apply(certificate: ListenerTlsCertificate, mode: ListenerTlsMode): ListenerTls = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListenerTls]
   }
 }

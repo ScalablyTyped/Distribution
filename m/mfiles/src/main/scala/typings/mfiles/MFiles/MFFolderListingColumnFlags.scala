@@ -14,10 +14,8 @@ trait MFFolderListingColumnFlags extends js.Object
 
 object MFFolderListingColumnFlags {
   @scala.inline
-  def HideColumnText: `2` = this.cast(2)
+  def HideColumnText: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SelectIfLeftOfSelectedMainColumn: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SelectIfLeftOfSelectedMainColumn: `1` = 1.asInstanceOf[`1`]
 }
 

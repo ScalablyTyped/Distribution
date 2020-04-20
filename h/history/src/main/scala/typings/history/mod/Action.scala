@@ -13,12 +13,10 @@ trait Action extends js.Object
 
 object Action {
   @scala.inline
-  def POP: typings.history.historyStrings.POP = this.cast("POP")
+  def POP: typings.history.historyStrings.POP = "POP".asInstanceOf[typings.history.historyStrings.POP]
   @scala.inline
-  def PUSH: typings.history.historyStrings.PUSH = this.cast("PUSH")
+  def PUSH: typings.history.historyStrings.PUSH = "PUSH".asInstanceOf[typings.history.historyStrings.PUSH]
   @scala.inline
-  def REPLACE: typings.history.historyStrings.REPLACE = this.cast("REPLACE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def REPLACE: typings.history.historyStrings.REPLACE = "REPLACE".asInstanceOf[typings.history.historyStrings.REPLACE]
 }
 

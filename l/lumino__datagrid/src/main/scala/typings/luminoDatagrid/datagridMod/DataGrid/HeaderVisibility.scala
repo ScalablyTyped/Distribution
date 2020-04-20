@@ -17,14 +17,12 @@ trait HeaderVisibility extends js.Object
 
 object HeaderVisibility {
   @scala.inline
-  def all: typings.luminoDatagrid.luminoDatagridStrings.all = this.cast("all")
+  def all: typings.luminoDatagrid.luminoDatagridStrings.all = "all".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def column: typings.luminoDatagrid.luminoDatagridStrings.column = "column".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.column]
   @scala.inline
-  def column: typings.luminoDatagrid.luminoDatagridStrings.column = this.cast("column")
+  def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
   @scala.inline
-  def none: typings.luminoDatagrid.luminoDatagridStrings.none = this.cast("none")
-  @scala.inline
-  def row: typings.luminoDatagrid.luminoDatagridStrings.row = this.cast("row")
+  def row: typings.luminoDatagrid.luminoDatagridStrings.row = "row".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.row]
 }
 

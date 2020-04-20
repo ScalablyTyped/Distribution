@@ -21,7 +21,6 @@ object ThinEngine {
   @scala.inline
   def apply(updateVideoTexture: (Nullable[InternalTexture], HTMLVideoElement, Boolean) => Unit): ThinEngine = {
     val __obj = js.Dynamic.literal(updateVideoTexture = js.Any.fromFunction3(updateVideoTexture))
-  
     __obj.asInstanceOf[ThinEngine]
   }
 }

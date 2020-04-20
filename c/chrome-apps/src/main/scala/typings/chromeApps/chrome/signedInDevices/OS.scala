@@ -1,37 +1,39 @@
 package typings.chromeApps.chrome.signedInDevices
 
-import typings.chromeApps.chromeAppsStrings.unknown_
+import typings.chromeApps.chromeAppsStrings.android_
+import typings.chromeApps.chromeAppsStrings.linux_
+import typings.chromeApps.chromeAppsStrings.mac_
+import typings.chromeApps.chromeAppsStrings.unknown__
+import typings.chromeApps.chromeAppsStrings.win_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.chromeApps.chromeAppsStrings.win
-  - typings.chromeApps.chromeAppsStrings.mac
-  - typings.chromeApps.chromeAppsStrings.linux
+  - typings.chromeApps.chromeAppsStrings.win_
+  - typings.chromeApps.chromeAppsStrings.mac_
+  - typings.chromeApps.chromeAppsStrings.linux_
   - typings.chromeApps.chromeAppsStrings.chrome_os
-  - typings.chromeApps.chromeAppsStrings.android
+  - typings.chromeApps.chromeAppsStrings.android_
   - typings.chromeApps.chromeAppsStrings.ios
-  - typings.chromeApps.chromeAppsStrings.unknown_
+  - typings.chromeApps.chromeAppsStrings.unknown__
 */
 trait OS extends js.Object
 
 object OS {
   @scala.inline
-  def android: typings.chromeApps.chromeAppsStrings.android = this.cast("android")
+  def android: android_ = "android".asInstanceOf[android_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chrome_os: typings.chromeApps.chromeAppsStrings.chrome_os = "chrome_os".asInstanceOf[typings.chromeApps.chromeAppsStrings.chrome_os]
   @scala.inline
-  def chrome_os: typings.chromeApps.chromeAppsStrings.chrome_os = this.cast("chrome_os")
+  def ios: typings.chromeApps.chromeAppsStrings.ios = "ios".asInstanceOf[typings.chromeApps.chromeAppsStrings.ios]
   @scala.inline
-  def ios: typings.chromeApps.chromeAppsStrings.ios = this.cast("ios")
+  def linux: linux_ = "linux".asInstanceOf[linux_]
   @scala.inline
-  def linux: typings.chromeApps.chromeAppsStrings.linux = this.cast("linux")
+  def mac: mac_ = "mac".asInstanceOf[mac_]
   @scala.inline
-  def mac: typings.chromeApps.chromeAppsStrings.mac = this.cast("mac")
+  def unknown: unknown__ = "unknown".asInstanceOf[unknown__]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def win: typings.chromeApps.chromeAppsStrings.win = this.cast("win")
+  def win: win_ = "win".asInstanceOf[win_]
 }
 

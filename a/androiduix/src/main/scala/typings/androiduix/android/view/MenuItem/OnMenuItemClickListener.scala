@@ -12,7 +12,6 @@ object OnMenuItemClickListener {
   @scala.inline
   def apply(onMenuItemClick: typings.androiduix.android.view.MenuItem => Boolean): OnMenuItemClickListener = {
     val __obj = js.Dynamic.literal(onMenuItemClick = js.Any.fromFunction1(onMenuItemClick))
-  
     __obj.asInstanceOf[OnMenuItemClickListener]
   }
 }

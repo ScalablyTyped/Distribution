@@ -40,7 +40,6 @@ object ProjectsResource {
     runQuery: AnonBearertoken => Request_[RunQueryResponse]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(allocateIds = js.Any.fromFunction1(allocateIds), beginTransaction = js.Any.fromFunction1(beginTransaction), commit = js.Any.fromFunction1(commit), lookup = js.Any.fromFunction1(lookup), operations = operations.asInstanceOf[js.Any], rollback = js.Any.fromFunction1(rollback), runQuery = js.Any.fromFunction1(runQuery))
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

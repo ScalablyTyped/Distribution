@@ -13,7 +13,6 @@ object PickImpldecimal {
   @scala.inline
   def apply(decimal: String): PickImpldecimal = {
     val __obj = js.Dynamic.literal(decimal = decimal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldecimal]
   }
 }

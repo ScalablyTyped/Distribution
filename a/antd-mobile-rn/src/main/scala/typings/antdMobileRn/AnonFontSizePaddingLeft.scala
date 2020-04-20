@@ -14,7 +14,6 @@ object AnonFontSizePaddingLeft {
   @scala.inline
   def apply(color: String, fontSize: Double, paddingLeft: Double): AnonFontSizePaddingLeft = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontSizePaddingLeft]
   }
 }

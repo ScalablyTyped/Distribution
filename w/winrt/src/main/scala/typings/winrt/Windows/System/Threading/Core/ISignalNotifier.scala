@@ -13,7 +13,6 @@ object ISignalNotifier {
   @scala.inline
   def apply(enable: () => Unit, terminate: () => Unit): ISignalNotifier = {
     val __obj = js.Dynamic.literal(enable = js.Any.fromFunction0(enable), terminate = js.Any.fromFunction0(terminate))
-  
     __obj.asInstanceOf[ISignalNotifier]
   }
 }

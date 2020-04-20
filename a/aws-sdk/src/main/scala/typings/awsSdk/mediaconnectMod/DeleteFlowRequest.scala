@@ -16,7 +16,6 @@ object DeleteFlowRequest {
   @scala.inline
   def apply(FlowArn: string): DeleteFlowRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFlowRequest]
   }
 }

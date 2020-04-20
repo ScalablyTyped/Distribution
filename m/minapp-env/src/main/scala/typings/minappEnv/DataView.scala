@@ -10,7 +10,7 @@ trait DataView extends js.Object {
   val buffer: ArrayBuffer = js.native
   val byteLength: Double = js.native
   val byteOffset: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.minappEnv.minappEnvStrings.DataView = js.native
   /**
     * Gets the Float32 value at the specified byte offset from the start of the view. There is

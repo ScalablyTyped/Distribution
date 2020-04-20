@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 object reactReduxComponents extends reactReduxProps {
   @scala.inline
-  def Provider[A /* <: Action[js.Any] */]: ComponentType[ProviderProps[A]] = js.constructorOf[typings.reactRedux.mod.Provider[A]].asInstanceOf[typings.react.mod.ComponentType[ProviderProps[A]]]
+  def Provider[A /* <: Action[js.Any] */]: ComponentType[ProviderProps[A]] = js.constructorOf[typings.reactRedux.mod.Provider[A]].asInstanceOf[ComponentType[ProviderProps[A]]]
 }
 

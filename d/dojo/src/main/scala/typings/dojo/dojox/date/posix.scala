@@ -62,7 +62,6 @@ object posix {
     strftime: (Date, String, String) => Unit
   ): posix = {
     val __obj = js.Dynamic.literal(getIsoWeekOfYear = js.Any.fromFunction1(getIsoWeekOfYear), getIsoWeeksInYear = js.Any.fromFunction1(getIsoWeeksInYear), getStartOfWeek = js.Any.fromFunction2(getStartOfWeek), setIsoWeekOfYear = js.Any.fromFunction2(setIsoWeekOfYear), strftime = js.Any.fromFunction3(strftime))
-  
     __obj.asInstanceOf[posix]
   }
 }

@@ -195,6 +195,10 @@ trait dateFns extends js.Object {
   def formatDistanceToNow(date: Double, options: AnonIncludeSeconds): String = js.native
   def formatDistanceToNow(date: Date): String = js.native
   def formatDistanceToNow(date: Date, options: AnonIncludeSeconds): String = js.native
+  def formatDistanceToNowStrict(date: Double): String = js.native
+  def formatDistanceToNowStrict(date: Double, options: AnonUnit): String = js.native
+  def formatDistanceToNowStrict(date: Date): String = js.native
+  def formatDistanceToNowStrict(date: Date, options: AnonUnit): String = js.native
   def formatISO(date: Double): String = js.native
   def formatISO(date: Double, options: AnonFormat): String = js.native
   def formatISO(date: Date): String = js.native

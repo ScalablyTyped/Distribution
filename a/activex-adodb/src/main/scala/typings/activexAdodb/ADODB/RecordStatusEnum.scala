@@ -46,42 +46,40 @@ trait RecordStatusEnum extends js.Object
 
 object RecordStatusEnum {
   @scala.inline
-  def adRecCanceled: `256` = this.cast(256)
+  def adRecCanceled: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def adRecCantRelease: `1024` = this.cast(1024)
+  def adRecCantRelease: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def adRecConcurrencyViolation: `2048` = this.cast(2048)
+  def adRecConcurrencyViolation: `2048` = 2048.asInstanceOf[`2048`]
   @scala.inline
-  def adRecDBDeleted: `262144` = this.cast(262144)
+  def adRecDBDeleted: `262144` = 262144.asInstanceOf[`262144`]
   @scala.inline
-  def adRecDeleted: `4` = this.cast(4)
+  def adRecDeleted: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adRecIntegrityViolation: `4096` = this.cast(4096)
+  def adRecIntegrityViolation: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def adRecInvalid: `16` = this.cast(16)
+  def adRecInvalid: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def adRecMaxChangesExceeded: `8192` = this.cast(8192)
+  def adRecMaxChangesExceeded: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def adRecModified: `2` = this.cast(2)
+  def adRecModified: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adRecMultipleChanges: `64` = this.cast(64)
+  def adRecMultipleChanges: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def adRecNew: `1` = this.cast(1)
+  def adRecNew: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adRecOK: `0` = this.cast(0)
+  def adRecOK: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adRecObjectOpen: `16384` = this.cast(16384)
+  def adRecObjectOpen: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
-  def adRecOutOfMemory: `32768` = this.cast(32768)
+  def adRecOutOfMemory: `32768` = 32768.asInstanceOf[`32768`]
   @scala.inline
-  def adRecPendingChanges: `128` = this.cast(128)
+  def adRecPendingChanges: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def adRecPermissionDenied: `65536` = this.cast(65536)
+  def adRecPermissionDenied: `65536` = 65536.asInstanceOf[`65536`]
   @scala.inline
-  def adRecSchemaViolation: `131072` = this.cast(131072)
+  def adRecSchemaViolation: `131072` = 131072.asInstanceOf[`131072`]
   @scala.inline
-  def adRecUnmodified: `8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adRecUnmodified: `8` = 8.asInstanceOf[`8`]
 }
 

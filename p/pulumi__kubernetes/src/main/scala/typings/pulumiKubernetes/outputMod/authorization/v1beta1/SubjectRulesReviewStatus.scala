@@ -44,7 +44,6 @@ object SubjectRulesReviewStatus {
     resourceRules: js.Array[ResourceRule]
   ): SubjectRulesReviewStatus = {
     val __obj = js.Dynamic.literal(evaluationError = evaluationError.asInstanceOf[js.Any], incomplete = incomplete.asInstanceOf[js.Any], nonResourceRules = nonResourceRules.asInstanceOf[js.Any], resourceRules = resourceRules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubjectRulesReviewStatus]
   }
 }

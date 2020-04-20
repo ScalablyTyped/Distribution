@@ -12,7 +12,6 @@ object LogOptions {
   @scala.inline
   def apply(level: LogLevelString): LogOptions = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogOptions]
   }
 }

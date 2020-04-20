@@ -18,22 +18,20 @@ trait HashingAlgorithm extends js.Object
 
 object HashingAlgorithm {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def md4: typings.nodeRsa.nodeRsaStrings.md4 = "md4".asInstanceOf[typings.nodeRsa.nodeRsaStrings.md4]
   @scala.inline
-  def md4: typings.nodeRsa.nodeRsaStrings.md4 = this.cast("md4")
+  def md5: typings.nodeRsa.nodeRsaStrings.md5 = "md5".asInstanceOf[typings.nodeRsa.nodeRsaStrings.md5]
   @scala.inline
-  def md5: typings.nodeRsa.nodeRsaStrings.md5 = this.cast("md5")
+  def ripemd160: typings.nodeRsa.nodeRsaStrings.ripemd160 = "ripemd160".asInstanceOf[typings.nodeRsa.nodeRsaStrings.ripemd160]
   @scala.inline
-  def ripemd160: typings.nodeRsa.nodeRsaStrings.ripemd160 = this.cast("ripemd160")
+  def sha1: typings.nodeRsa.nodeRsaStrings.sha1 = "sha1".asInstanceOf[typings.nodeRsa.nodeRsaStrings.sha1]
   @scala.inline
-  def sha1: typings.nodeRsa.nodeRsaStrings.sha1 = this.cast("sha1")
+  def sha224: typings.nodeRsa.nodeRsaStrings.sha224 = "sha224".asInstanceOf[typings.nodeRsa.nodeRsaStrings.sha224]
   @scala.inline
-  def sha224: typings.nodeRsa.nodeRsaStrings.sha224 = this.cast("sha224")
+  def sha256: typings.nodeRsa.nodeRsaStrings.sha256 = "sha256".asInstanceOf[typings.nodeRsa.nodeRsaStrings.sha256]
   @scala.inline
-  def sha256: typings.nodeRsa.nodeRsaStrings.sha256 = this.cast("sha256")
+  def sha384: typings.nodeRsa.nodeRsaStrings.sha384 = "sha384".asInstanceOf[typings.nodeRsa.nodeRsaStrings.sha384]
   @scala.inline
-  def sha384: typings.nodeRsa.nodeRsaStrings.sha384 = this.cast("sha384")
-  @scala.inline
-  def sha512: typings.nodeRsa.nodeRsaStrings.sha512 = this.cast("sha512")
+  def sha512: typings.nodeRsa.nodeRsaStrings.sha512 = "sha512".asInstanceOf[typings.nodeRsa.nodeRsaStrings.sha512]
 }
 

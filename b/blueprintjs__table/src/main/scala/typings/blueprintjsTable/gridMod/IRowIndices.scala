@@ -13,7 +13,6 @@ object IRowIndices {
   @scala.inline
   def apply(rowIndexEnd: Double, rowIndexStart: Double): IRowIndices = {
     val __obj = js.Dynamic.literal(rowIndexEnd = rowIndexEnd.asInstanceOf[js.Any], rowIndexStart = rowIndexStart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRowIndices]
   }
 }

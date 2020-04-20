@@ -13,7 +13,7 @@ trait reactNativeFlipCardProps {
   def FaceProps: typings.reactNativeFlipCard.mod.FaceProps.type = typings.reactNativeFlipCard.mod.FaceProps
   type FaceProps = typings.reactNativeFlipCard.mod.FaceProps
   @scala.inline
-  def ReactNativeFlipCardProps: FlipCardProps.type = typings.reactNativeFlipCard.mod.FlipCardProps
+  def ReactNativeFlipCardProps: FlipCardProps.type = FlipCardProps
   type ReactNativeFlipCardProps = FlipCardProps
 }
 

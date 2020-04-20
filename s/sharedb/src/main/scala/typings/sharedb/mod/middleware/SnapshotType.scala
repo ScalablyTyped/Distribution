@@ -13,12 +13,10 @@ trait SnapshotType extends js.Object
 
 object SnapshotType {
   @scala.inline
-  def byTimestamp: typings.sharedb.sharedbStrings.byTimestamp = this.cast("byTimestamp")
+  def byTimestamp: typings.sharedb.sharedbStrings.byTimestamp = "byTimestamp".asInstanceOf[typings.sharedb.sharedbStrings.byTimestamp]
   @scala.inline
-  def byVersion: typings.sharedb.sharedbStrings.byVersion = this.cast("byVersion")
+  def byVersion: typings.sharedb.sharedbStrings.byVersion = "byVersion".asInstanceOf[typings.sharedb.sharedbStrings.byVersion]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def current: typings.sharedb.sharedbStrings.current = this.cast("current")
+  def current: typings.sharedb.sharedbStrings.current = "current".asInstanceOf[typings.sharedb.sharedbStrings.current]
 }
 

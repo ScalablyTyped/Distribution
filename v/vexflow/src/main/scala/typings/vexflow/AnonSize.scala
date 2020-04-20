@@ -14,7 +14,6 @@ object AnonSize {
   @scala.inline
   def apply(family: String, size: Double, weight: String): AnonSize = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSize]
   }
 }

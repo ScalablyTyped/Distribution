@@ -13,7 +13,6 @@ object Next {
   @scala.inline
   def apply(total: AnonLoaded): Next = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Next]
   }
 }

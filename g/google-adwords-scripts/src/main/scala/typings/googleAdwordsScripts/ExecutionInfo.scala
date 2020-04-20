@@ -20,7 +20,6 @@ object ExecutionInfo {
     isPreview: () => Boolean
   ): ExecutionInfo = {
     val __obj = js.Dynamic.literal(getRemainingCreateQuota = js.Any.fromFunction0(getRemainingCreateQuota), getRemainingGetQuota = js.Any.fromFunction0(getRemainingGetQuota), getRemainingTime = js.Any.fromFunction0(getRemainingTime), isPreview = js.Any.fromFunction0(isPreview))
-  
     __obj.asInstanceOf[ExecutionInfo]
   }
 }

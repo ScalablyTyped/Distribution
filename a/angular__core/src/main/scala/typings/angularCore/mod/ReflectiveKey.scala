@@ -27,6 +27,6 @@ object ReflectiveKey extends js.Object {
   /**
     * @returns the number of keys registered in the system.
     */
-  def numberOfKeys(): Double = js.native
+  def numberOfKeys: Double = js.native
 }
 

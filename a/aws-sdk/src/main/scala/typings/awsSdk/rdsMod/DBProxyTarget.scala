@@ -23,6 +23,10 @@ trait DBProxyTarget extends js.Object {
     */
   var TargetArn: js.UndefOr[String] = js.native
   /**
+    * Information about the connection health of the RDS Proxy target.
+    */
+  var TargetHealth: js.UndefOr[typings.awsSdk.rdsMod.TargetHealth] = js.native
+  /**
     * The DB cluster identifier when the target represents an Aurora DB cluster. This field is blank when the target represents an RDS DB instance.
     */
   var TrackedClusterId: js.UndefOr[String] = js.native
@@ -39,6 +43,7 @@ object DBProxyTarget {
     Port: Int | scala.Double = null,
     RdsResourceId: String = null,
     TargetArn: String = null,
+    TargetHealth: TargetHealth = null,
     TrackedClusterId: String = null,
     Type: TargetType = null
   ): DBProxyTarget = {
@@ -47,6 +52,7 @@ object DBProxyTarget {
     if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (RdsResourceId != null) __obj.updateDynamic("RdsResourceId")(RdsResourceId.asInstanceOf[js.Any])
     if (TargetArn != null) __obj.updateDynamic("TargetArn")(TargetArn.asInstanceOf[js.Any])
+    if (TargetHealth != null) __obj.updateDynamic("TargetHealth")(TargetHealth.asInstanceOf[js.Any])
     if (TrackedClusterId != null) __obj.updateDynamic("TrackedClusterId")(TrackedClusterId.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBProxyTarget]

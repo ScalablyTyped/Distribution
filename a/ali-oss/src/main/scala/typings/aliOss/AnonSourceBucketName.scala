@@ -13,7 +13,6 @@ object AnonSourceBucketName {
   @scala.inline
   def apply(sourceBucketName: String, sourceKey: String): AnonSourceBucketName = {
     val __obj = js.Dynamic.literal(sourceBucketName = sourceBucketName.asInstanceOf[js.Any], sourceKey = sourceKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSourceBucketName]
   }
 }

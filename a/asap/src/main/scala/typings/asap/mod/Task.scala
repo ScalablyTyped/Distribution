@@ -12,7 +12,6 @@ object Task {
   @scala.inline
   def apply(call: /* repeated */ js.Any => js.Any): Task = {
     val __obj = js.Dynamic.literal(call = js.Any.fromFunction1(call))
-  
     __obj.asInstanceOf[Task]
   }
 }

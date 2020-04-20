@@ -14,7 +14,6 @@ object Video {
   @scala.inline
   def apply(data: Uint8Array, name: String): Video = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Video]
   }
 }

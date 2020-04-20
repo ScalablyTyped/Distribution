@@ -14,7 +14,6 @@ object IHashComputation {
   @scala.inline
   def apply(append: IBuffer => Unit, getValueAndReset: () => IBuffer): IHashComputation = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), getValueAndReset = js.Any.fromFunction0(getValueAndReset))
-  
     __obj.asInstanceOf[IHashComputation]
   }
 }

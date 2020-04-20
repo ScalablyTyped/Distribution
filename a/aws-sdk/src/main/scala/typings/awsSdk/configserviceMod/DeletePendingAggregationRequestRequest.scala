@@ -20,7 +20,6 @@ object DeletePendingAggregationRequestRequest {
   @scala.inline
   def apply(RequesterAccountId: AccountId, RequesterAwsRegion: AwsRegion): DeletePendingAggregationRequestRequest = {
     val __obj = js.Dynamic.literal(RequesterAccountId = RequesterAccountId.asInstanceOf[js.Any], RequesterAwsRegion = RequesterAwsRegion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePendingAggregationRequestRequest]
   }
 }

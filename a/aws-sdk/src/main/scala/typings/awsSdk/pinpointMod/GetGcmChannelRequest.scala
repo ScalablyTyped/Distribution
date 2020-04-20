@@ -16,7 +16,6 @@ object GetGcmChannelRequest {
   @scala.inline
   def apply(ApplicationId: string): GetGcmChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGcmChannelRequest]
   }
 }

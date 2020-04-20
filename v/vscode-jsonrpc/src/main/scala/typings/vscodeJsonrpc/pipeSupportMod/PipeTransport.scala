@@ -14,7 +14,6 @@ object PipeTransport {
   @scala.inline
   def apply(onConnected: () => js.Promise[js.Tuple2[MessageReader, MessageWriter]]): PipeTransport = {
     val __obj = js.Dynamic.literal(onConnected = js.Any.fromFunction0(onConnected))
-  
     __obj.asInstanceOf[PipeTransport]
   }
 }

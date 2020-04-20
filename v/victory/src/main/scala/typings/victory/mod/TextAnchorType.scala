@@ -17,14 +17,12 @@ trait TextAnchorType extends js.Object
 
 object TextAnchorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def end: typings.victory.victoryStrings.end = "end".asInstanceOf[typings.victory.victoryStrings.end]
   @scala.inline
-  def end: typings.victory.victoryStrings.end = this.cast("end")
+  def inherit: typings.victory.victoryStrings.inherit = "inherit".asInstanceOf[typings.victory.victoryStrings.inherit]
   @scala.inline
-  def inherit: typings.victory.victoryStrings.inherit = this.cast("inherit")
+  def middle: typings.victory.victoryStrings.middle = "middle".asInstanceOf[typings.victory.victoryStrings.middle]
   @scala.inline
-  def middle: typings.victory.victoryStrings.middle = this.cast("middle")
-  @scala.inline
-  def start: typings.victory.victoryStrings.start = this.cast("start")
+  def start: typings.victory.victoryStrings.start = "start".asInstanceOf[typings.victory.victoryStrings.start]
 }
 

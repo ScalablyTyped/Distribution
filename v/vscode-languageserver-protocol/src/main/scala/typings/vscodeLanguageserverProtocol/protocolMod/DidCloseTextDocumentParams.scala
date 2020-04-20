@@ -16,7 +16,6 @@ object DidCloseTextDocumentParams {
   @scala.inline
   def apply(textDocument: TextDocumentIdentifier): DidCloseTextDocumentParams = {
     val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DidCloseTextDocumentParams]
   }
 }

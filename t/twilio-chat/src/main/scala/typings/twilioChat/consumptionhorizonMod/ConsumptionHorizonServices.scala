@@ -13,7 +13,6 @@ object ConsumptionHorizonServices {
   @scala.inline
   def apply(session: Session): ConsumptionHorizonServices = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConsumptionHorizonServices]
   }
 }

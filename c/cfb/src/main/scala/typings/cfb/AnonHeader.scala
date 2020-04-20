@@ -14,7 +14,6 @@ object AnonHeader {
   @scala.inline
   def apply(header: CFBBlob, sectors: js.Array[CFBBlob]): AnonHeader = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], sectors = sectors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHeader]
   }
 }

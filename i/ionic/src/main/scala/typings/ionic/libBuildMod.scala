@@ -70,7 +70,7 @@ object libBuildMod extends js.Object {
     /* protected */ def promptToInstall(): js.Promise[Boolean] = js.native
     /* protected */ def resolveProgram(): js.Promise[String] = js.native
     def resolveScript(): js.Promise[js.UndefOr[String]] = js.native
-    def resolvedProgram(): String = js.native
+    def resolvedProgram: String = js.native
     /* protected */ def run(options: T): js.Promise[Unit] = js.native
     /* protected */ def runWrapper(options: T): js.Promise[Unit] = js.native
   }

@@ -15,7 +15,6 @@ object Meta {
   @scala.inline
   def apply(errors: js.Array[String], name: InternalNamePath, touched: Boolean, validating: Boolean): Meta = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Meta]
   }
 }

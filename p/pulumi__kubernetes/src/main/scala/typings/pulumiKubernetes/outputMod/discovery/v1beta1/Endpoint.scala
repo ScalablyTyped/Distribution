@@ -58,7 +58,6 @@ object Endpoint {
     topology: StringDictionary[String]
   ): Endpoint = {
     val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], targetRef = targetRef.asInstanceOf[js.Any], topology = topology.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Endpoint]
   }
 }

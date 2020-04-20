@@ -14,7 +14,6 @@ object Moment {
   @scala.inline
   def apply(isRange: js.Any => Boolean, within: DateRange => Boolean): Moment = {
     val __obj = js.Dynamic.literal(isRange = js.Any.fromFunction1(isRange), within = js.Any.fromFunction1(within))
-  
     __obj.asInstanceOf[Moment]
   }
 }

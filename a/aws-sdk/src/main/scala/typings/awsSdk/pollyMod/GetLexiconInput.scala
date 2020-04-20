@@ -16,7 +16,6 @@ object GetLexiconInput {
   @scala.inline
   def apply(Name: LexiconName): GetLexiconInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLexiconInput]
   }
 }

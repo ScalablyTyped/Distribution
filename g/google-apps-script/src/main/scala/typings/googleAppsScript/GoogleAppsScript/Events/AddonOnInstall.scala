@@ -13,7 +13,6 @@ object AddonOnInstall {
   @scala.inline
   def apply(authMode: AuthMode): AddonOnInstall = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddonOnInstall]
   }
 }

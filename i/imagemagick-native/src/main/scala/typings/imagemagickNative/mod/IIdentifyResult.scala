@@ -26,7 +26,6 @@ object IIdentifyResult {
     width: Double
   ): IIdentifyResult = {
     val __obj = js.Dynamic.literal(density = density.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], exif = exif.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IIdentifyResult]
   }
 }

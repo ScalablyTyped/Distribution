@@ -16,7 +16,6 @@ object DescribePackagingConfigurationRequest {
   @scala.inline
   def apply(Id: string): DescribePackagingConfigurationRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePackagingConfigurationRequest]
   }
 }
